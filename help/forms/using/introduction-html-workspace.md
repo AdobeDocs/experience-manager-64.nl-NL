@@ -1,0 +1,33 @@
+---
+title: Inleiding tot de werkruimte van AEM-formulieren
+seo-title: Inleiding tot de werkruimte van AEM-formulieren
+description: Verhoog de efficiëntie van de organisatie en maak kantoren zonder papieren door de automatisering van bedrijfsprocessen met LiveCycle AEM Forms-werkruimte.
+seo-description: Verhoog de efficiëntie van de organisatie en maak kantoren zonder papieren door de automatisering van bedrijfsprocessen met LiveCycle AEM Forms-werkruimte.
+uuid: 6171d1e7-8d1f-4adb-be8f-49521cd4cc6f
+contentOwner: robhagat
+content-type: reference
+products: SG_EXPERIENCEMANAGER/6.4/FORMS
+topic-tags: forms-workspace
+discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
+translation-type: tm+mt
+source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+
+---
+
+
+# Inleiding tot de werkruimte van AEM-formulieren {#introduction-to-aem-forms-workspace}
+
+De werkstroom van formulieren verhoogt organisatorische efficiency door kritieke document en vorm-verwante bedrijfsprocessen te automatiseren en te verstrekken. Met de module Process Management kunt u gestroomlijnde, end-to-end workflows maken, waaronder mensen, systemen, inhoud en bedrijfsregels, die online of offline toegankelijk zijn. De workflow Forms bevat de werkruimte van AEM Forms. De werkruimte van de Vormen van AEM voegt nieuwe mogelijkheden toe om werkruimte uit te breiden en te integreren en het gebruikersvriendelijker te maken.
+
+De werkruimte van AEM-formulieren is compatibel met meer apparaten en formulierfactoren. Hierdoor kan taakbeheer worden uitgevoerd op clients zonder Flash® Player en Adobe® Reader®. Hiermee kunt u naast PDF-formulieren ook HTML-formulieren weergeven.
+
+![html-ws](assets/html-ws.png)
+
+**Belangrijkste mogelijkheden**:
+
+* Overal deelnemers aan processen inschakelen met dynamische PDF-formulieren, mobiele interfaces en webtoepassingen.
+* U kunt de werkruimtecomponenten eenvoudig integreren met uw webtoepassingen. Aangezien de werkruimte van de Vormen AEM op componentengebaseerde software is, kan het gemakkelijk worden aangepast en worden opnieuw gebruikt.
+* Breid bedrijfsprocessen tot zowel online als off-line mobiele arbeiders met de AEM de werkruimte app van Vormen uit.
+* De rapporten van de mening om achterstand, werkrijen, en zeer belangrijke prestatiesindicatoren (KPIs) te controleren. U kunt API&#39;s gebruiken om gegevens te extraheren voor verdere analyse met behulp van rapportagetools van derden.
+
+**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
