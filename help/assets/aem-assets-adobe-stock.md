@@ -3,7 +3,7 @@ title: Adobe Stock Assets gebruiken in AEM Assets
 description: Adobe Stock Assets zoeken, ophalen, licentiëren en beheren in AEM. Behandel de in licentie gegeven activa als elk ander AEM-actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: ff098a599f1c5230ce12a9c5cdbd1b118030a5f8
 
 ---
 
@@ -16,7 +16,7 @@ De voorraadservice van Adobe biedt ontwerpers en bedrijven toegang tot miljoenen
 
 ## Vereisten {#prerequisites}
 
-Voor de integratie is een Adobe Stock- [ondernemingsplan](https://landing.adobe.com/en/na/products/creative-cloud/ctir-4625-stock-for-enterprise/index.html) en AEM 6.4 vereist met minimaal Service Pack 2 geïmplementeerd. Voor AEM 6.4 de details van het de dienstpak, zie deze [versienota&#39;s](/help/release-notes/sp-release-notes.md).
+Voor de integratie is een Adobe Stock- [ondernemingsplan](https://stockenterprise.adobe.com/) en AEM 6.4 vereist met minimaal Service Pack 2 geïmplementeerd. Voor AEM 6.4 de details van het de dienstpak, zie deze [versienota&#39;s](/help/release-notes/sp-release-notes.md).
 
 ## AEM en Adobe Stock integreren {#integrate-aem-and-adobe-stock}
 
