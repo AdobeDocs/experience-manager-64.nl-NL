@@ -3,7 +3,7 @@ title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
 
 ---
 
@@ -106,9 +106,8 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![Trapsgewijze metagegevens voor video-elementen](assets/video_asset.png)
 
-   **** Afbeelding: Metagegevens *trapsgewijs weergeven voor video-element*
+   *Afbeelding:Trapsgewijze metagegevens voor video-elementen*
 
    ![Trapsgewijze metagegevens voor documentelementen](assets/doc_type_fields.png)
 
-   **** Afbeelding: Trapsgewijze metagegevens voor documentelementen **
-
+   *Afbeelding:Trapsgewijze metagegevens voor documentelementen*
