@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
+source-git-commit: 1d02401f6b1946062eb238baa2fb70bbd47881a6
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: c703f4af30c2093d9600d0771dc1034cd6465c8c
 | Versie | 6.4.7.0 |
 | Type | Service Pack-release |
 | Date | 12 december 2019 |
-| URL downloaden | AEM 6.4.7.0 op [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0), de Distributie van de [Software](https://downloads.experiencecloud.adobe.com/content/software-distribution/en/aem.html#package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.7.zip) |
+| URL downloaden | AEM 6.4.7.0 op [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.7.0) |
 
 ## Wat is inbegrepen in AEM 6.4.7.0 {#what-s-included-in-aem}
 
@@ -2138,7 +2138,7 @@ Lijst met inhoudspakketten die zijn opgenomen in AEM 6.4.7.0
 * [AEM-productpagina](https://www.adobe.com/solutions/web-experience-management.html)
 * [Ondersteuning voor AEM-ontwikkelaars](https://docs.adobe.com/content/ddc/en.html)
 * [AEM 6.4-documentatie](https://helpx.adobe.com/support/experience-manager/6-4.html)
-* Abonneren op [Adobe Priority-productupdates](https://www.adobe.com/subscription/priority-product-update.html)
+* Abonneren op [Adobe-productupdates met prioriteit](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### Beperkte sites {#restricted-sites-new}
 
