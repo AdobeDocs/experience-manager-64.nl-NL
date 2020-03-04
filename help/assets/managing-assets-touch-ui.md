@@ -4,7 +4,7 @@ description: Meer informatie over verschillende taken voor middelenbeheer en -be
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 56e5fd252b860e95a81293407f51db9f5ae296c2
+source-git-commit: 174c100a55bd8b2f4d33b07683e359d77f13983d
 
 ---
 
@@ -21,7 +21,9 @@ Wanneer u een verzameling elementen indeelt, bijvoorbeeld alle `Nature` afbeeldi
 
 >[!NOTE]
 >
->Het delen van een map met middelen van dit type `sling:OrderedFolder` wordt niet ondersteund bij het delen naar de marketingcloud. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
+>* Het delen van een map met middelen van dit type `sling:OrderedFolder` wordt niet ondersteund bij het delen naar de marketingcloud. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
+>* Met Experience Manager kunt u geen `subassets` woord als naam voor een map gebruiken. Het is een gereserveerd sleutelwoord voor knoop die subassets voor samengestelde activa bevatten.
+
 
 1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken.
 1. Klik in het menu op **[!UICONTROL Maken]**. Selecteer **[!UICONTROL Nieuwe map]**.
