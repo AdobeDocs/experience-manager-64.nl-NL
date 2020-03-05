@@ -1,53 +1,53 @@
 ---
-title: Verzamelingen publiceren naar Brand Portal
-description: Leer hoe u verzamelingen publiceert en publiceert naar Brand Portal.
+title: Verzamelingen publiceren op Brand Portal
+description: Leer hoe te om inzamelingen aan het Portaal van het Merk te publiceren en unpublished.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
-# Verzamelingen publiceren naar Brand Portal {#publish-collections-to-brand-portal}
+# Verzamelingen publiceren op Brand Portal {#publish-collections-to-brand-portal}
 
-Als beheerder van Adobe Experience Manager (AEM)-middelen kunt u verzamelingen publiceren naar de AEM Assets Brand Portal-instantie voor uw organisatie. U moet echter eerst AEM-middelen integreren met Brand Portal. Zie AEM Assets-integratie [configureren met Brand Portal](brand-portal-configuring-integration.md)voor meer informatie.
+Als beheerder van de Activa van de Manager van de Ervaring van Adobe (AEM), kunt u inzamelingen aan de AEM de instantie van het Portaal van het Merk van Activa voor uw organisatie publiceren. Nochtans, moet u activa AEM met het Portaal van het Merk eerst integreren. Voor details, zie de Activa van AEM met het Portaal [van het Merk](configure-aem-assets-with-brand-portal.md)vormen.
 
-Als u verdere wijzigingen in de originele inzameling in Elementen AEM aanbrengt, worden de veranderingen niet weerspiegeld in het Portaal van het Merk tot u de inzameling opnieuw publiceert. Dit kenmerk zorgt ervoor dat wijzigingen in onderhanden werk niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
+Als u verdere wijzigingen in de originele inzameling in Activa AEM aanbrengt, worden de veranderingen niet weerspiegeld in het Portaal van het Merk tot u opnieuw de inzameling publiceert. Dit kenmerk zorgt ervoor dat de werk-in-vooruitgang veranderingen niet beschikbaar in het Portaal van het Merk zijn. Slechts zijn de goedgekeurde veranderingen die door een beheerder worden gepubliceerd beschikbaar in het Portaal van het Merk.
 
 >[!NOTE]
 >
->Inhoudsfragmenten kunnen niet worden gepubliceerd naar de Brand Portal. Als u daarom inhoudsfragment(en) selecteert op AEM-auteur, is de actie **[Publiceren naar Brand Portal]** niet beschikbaar.
+>De fragmenten van de inhoud kunnen niet aan het Portaal van het Merk worden gepubliceerd. Daarom als u inhoudsfragment(en) op AEM Auteur selecteert, dan **[publiceer aan de Portaal]** van het Merk actie niet beschikbaar is.
 >
->Als verzamelingen met inhoudsfragmenten van AEM-auteur naar Brand Portal worden gepubliceerd, wordt alle inhoud van de map behalve inhoudsfragmenten gerepliceerd naar de Brand Portal-interface.
+>Als de inzamelingen die inhoudsfragmenten bevatten van AEM Auteur aan het Portaal van het Merk worden gepubliceerd, dan worden alle inhoud van de omslag behalve inhoudsfragmenten herhaald aan de Portaalinterface van het Merk.
 
-## Een verzameling publiceren naar Brand Portal {#publish-a-collection-to-brand-portal}
+## Publiceer een inzameling aan het Portaal van het Merk {#publish-a-collection-to-brand-portal}
 
-1. Tik op het AEM-logo of klik op de interface voor AEM-middelen. Ga vervolgens naar **[!UICONTROL Middelen > Verzamelingen]** op de pagina **[!UICONTROL Navigatie]** .
-2. Van de console van Inzamelingen, selecteer de inzameling u aan het Portaal van de Merk wilt publiceren.
+1. Tik op/klik op het AEM-logo in de UI Assets-gebruikersinterface. Dan, ga naar **[!UICONTROL Activa > Inzamelingen]** van de pagina van de **[!UICONTROL Navigatie]** .
+2. Van de console van Inzamelingen, selecteer de inzameling u aan het Portaal van het Merk wilt publiceren.
 
    ![select_collection](assets/select_collection.png)
 
-3. Tik op of klik op **[!UICONTROL Publiceren naar Brand Portal]** op de werkbalk.
+3. Van de toolbar, **[!UICONTROL publiceer de Tik/de klik aan het Portaal]** van het Merk.
 
-   ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
+   ![public_to_bp_icon](assets/publish_to_bp_icon.png)
 
-4. Tik/klik op **[!UICONTROL Publiceren]** in het bevestigingsvenster.
+4. In de bevestigingsdialoog, **[!UICONTROL publiceer de kraan/de klik]**.
 5. Sluit het bevestigingsbericht.
-6. Meld u als beheerder aan bij Brand Portal. De gepubliceerde inzameling is beschikbaar in de console van Inzamelingen.
+6. Login aan het Portaal van het Merk als beheerder. De gepubliceerde inzameling is beschikbaar in de console van Inzamelingen.
 
-   ![published_collection](assets/published_collection.png)
+   ![published_Verzameling](assets/published_collection.png)
 
-## Publicatie van verzamelingen ongedaan maken {#unpublish-collections}
+## Verzamelingen niet publiceren {#unpublish-collections}
 
-U kunt de publicatie van verzamelingen die u publiceert van AEM Assets naar Brand Portal ongedaan maken. Nadat u de publicatie van de oorspronkelijke verzameling ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor gebruikers van het Brand Portal.
+U kunt inzamelingen unpublished die u van activa AEM aan het Portaal van het Merk publiceert. Nadat u de originele inzameling unpublished, is zijn exemplaar niet meer beschikbaar aan de Poortgebruikers van het Merk.
 
-1. Selecteer in de Collections console of your AEM Assets instance de verzameling die u ongedaan wilt maken.
+1. Van de console van Inzamelingen van uw instantie van Activa AEM, en selecteer de inzameling u wilt unpublished.
 
    ![select_collection-1](assets/select_collection-1.png)
 
-2. Tik op of klik op het pictogram **[!UICONTROL Verwijderen uit Brand Portal]** op de werkbalk.
+2. Tik op/klik op het pictogram **[!UICONTROL Verwijderen uit Brand Portal]** op de werkbalk.
 
-   ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
+   ![verwijderen_from_bp_icon](assets/remove_from_bp_icon.png)
 
-3. Tik/klik op **[!UICONTROL Publiceren]** ongedaan maken in het dialoogvenster.
-4. Sluit het bevestigingsbericht. De verzameling wordt verwijderd uit de interface Brand Portal.
+3. In de dialoog, tik/klik **[!UICONTROL Unpublished]**.
+4. Sluit het bevestigingsbericht. De inzameling wordt verwijderd uit de interface van het Portaal van het Merk.
