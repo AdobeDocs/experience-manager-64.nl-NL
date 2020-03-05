@@ -1,8 +1,8 @@
 ---
 title: Wat zijn AEM-schermen?
 seo-title: Wat zijn AEM-schermen?
-description: Deze pagina dient als inleiding op AEM-schermen - een Digital Signage-oplossing waarmee u dynamische en interactieve digitale ervaringen en interacties kunt publiceren met verschillende soorten schermen in combinatie met een uitgebreid digitaal marketingplatform. Het verstrekt een overzicht van de architectuur van de Schermen met diverse rollen betrokken bij de projectontwikkeling.
-seo-description: Deze pagina dient als inleiding op AEM-schermen - een Digital Signage-oplossing waarmee u dynamische en interactieve digitale ervaringen en interacties kunt publiceren met verschillende soorten schermen in combinatie met een uitgebreid digitaal marketingplatform. Het verstrekt een overzicht van de architectuur van de Schermen met diverse rollen betrokken bij de projectontwikkeling.
+description: Deze pagina fungeert als een inleiding op AEM-schermen - een digitale signaaloplossing waarmee u dynamische en interactieve digitale ervaringen en interacties met verschillende soorten schermen samen met een uitgebreid digitaal marketingplatform kunt publiceren. Het verstrekt een overzicht van de architectuur van de Schermen met diverse rollen betrokken bij de projectontwikkeling.
+seo-description: Deze pagina fungeert als een inleiding op AEM-schermen - een digitale signaaloplossing waarmee u dynamische en interactieve digitale ervaringen en interacties met verschillende soorten schermen samen met een uitgebreid digitaal marketingplatform kunt publiceren. Het verstrekt een overzicht van de architectuur van de Schermen met diverse rollen betrokken bij de projectontwikkeling.
 uuid: f94ca9d0-c368-4f80-a492-cf79f25ccf4a
 contentOwner: User
 content-type: reference
@@ -10,82 +10,78 @@ topic-tags: introduction
 products: SG_EXPERIENCEMANAGER/6.4/SCREENS
 discoiquuid: 920e9702-82f7-4495-a84e-22a1c8b0d559
 translation-type: tm+mt
-source-git-commit: 5f613cbae9dccbc277287e5e58c8f0648c4f3bed
+source-git-commit: 11d4d4c4aa633974df2047631cf92f3226aaf6ca
 
 ---
 
 
 # Wat zijn AEM-schermen? {#what-is-aem-screens}
 
-**AEM (Adobe Experience Manager)-schermen** - *een Digital Signage-oplossing* waarmee u dynamische en interactieve digitale ervaringen en interacties met verschillende soorten schermen kunt publiceren in combinatie met een uitgebreid digitaal marketingplatform.
+**AEM-schermen (Adobe Experience Manager)** - *een digitale signaaloplossing* waarmee u dynamische en interactieve digitale ervaringen en interacties kunt publiceren waarbij verschillende soorten schermen betrokken zijn, in combinatie met een uitgebreid digitaal marketingplatform.
 
-Met [Kickstart voor AEM-schermen](kickstart-for-aem-screens.md)kunt u aan de slag met een eenvoudige digitale handtekening.
+Aan de slag met een eenvoudige digitale signaalervaring, met behulp van [Kickstart voor AEM-schermen](kickstart-for-aem-screens.md).
 
 ## Overzicht {#overview}
 
-**AEM-schermen** zijn gebaseerd op de solide basis van ***AEM-sites*** en stellen marketers en IT-medewerkers in staat om ervaringen op te doen en te beheren op meerdere digitale schermen die van invloed zijn op de doelstellingen van de winkel/in-venue voor het opbouwen van merken en het aansturen van de vraag. Dankzij de integratie van AEM-schermen met sites kunt u bestaande inhoud opnieuw gebruiken en een coherente en consistente oplossing voor de klant bieden. Dit biedt een gestroomlijnde workflow voor het maken van speciale digitale ervaringen die zeer kosteneffectief en bruikbaar zijn. Het helpt ook de merkperceptie en invloed beslissingen te beïnvloeden die tot opleving in aankoop en betrokkenheid leiden.
+**AEM-schermen** zijn gebaseerd op de solide basis van de ***AEM-sites*** en stellen marketeers en IT-medewerkers in staat om ervaringen te creëren en te beheren met meerdere digitale schermen die van invloed zijn op de doelstellingen in de winkel/op de locatie voor het bouwen van merken en het aansturen van de vraag. Dankzij de integratie van AEM-schermen met sites kunt u bestaande content hergebruiken en effectief een coherente en consistente oplossing voor de klant bieden. Dit verstrekt een gestroomlijnde werkschema om specifieke digitale ervaringen tot stand te brengen die hoogst rendabel en bruikbaar zijn. Het helpt verder de perceptie van het merk en de invloed van beslissingen die leiden tot een opleving van de aankoop en betrokkenheid te beïnvloeden.
 
-AEM Screens is een krachtige web-based oplossing die u toestaat om specifieke digitale menageruimten, productadviseurs, achtergrond levensstijlbeelden te creëren om klanteninteractie uit te breiden en verenigde en nuttige merkervaringen in fysieke plaatsen, zoals winkels, hotels, banken, gezondheidszorg en onderwijsinstellingen, en vele meer - van het zelfde platform van AEM te leveren. De schermen verstrekken vele unieke toepassingen zoals interactieve vertoningen, het vinden, het brandmerken, en het toevoegen van ambience aan uw milieu voor klanten en werknemers die op het domein worden gebaseerd waar deze worden opgesteld.
+AEM-schermen is een krachtige, op internet gebaseerde oplossing waarmee u specifieke digitale menuborden, productadviseurs, achtergrondafbeeldingen in levensstijl kunt maken om de interactie tussen klanten uit te breiden en om unieke en nuttige merkervaringen te leveren op fysieke locaties, zoals winkels, hotels, banken, gezondheidszorg en onderwijsinstellingen, en nog veel meer - van hetzelfde AEM-platform. De schermen bieden vele unieke toepassingen zoals interactieve beeldschermen, het vinden, het brandmerken, en het toevoegen van ambience aan uw milieu voor klanten en werknemers die op het domein worden gebaseerd waar deze worden opgesteld.
 
-Het maken en beheren van een toepassing met behulp van rasters is eenvoudig en intuïtief. Een *toepassing* host webpagina&#39;s die door klanten of implementatiepartners voor AEM-schermen zijn gemaakt. *Locaties* beheren vooraf gedefinieerde hiërarchie en bevatten *weergaven*. Elke weergave heeft een dashboard waarop verschillende apparaten en schermen worden weergegeven. Inhoud voor AEM-schermen wordt beheerd in *kanalen*. AEM Screens Player rendert de inhoud die aanwezig is in kanalen op displays.
+Het creëren van en het leiden van een toepassing die de Schermen gebruikt is eenvoudig en intuïtief. Een *toepassings* gastheren Web-pagina&#39;s die voor de Schermen AEM door klanten of implementatiepartners worden gebouwd. *De plaatsen* beheren vooraf bepaalde hiërarchie en bevatten *vertoningen*. Elke vertoning heeft een dashboard dat verschillende apparaten en de schermen in bijlage toont. De inhoud voor AEM-schermen wordt beheerd in *kanalen*. De Speler van de Schermen van AEM geeft inhoud huidig binnen kanalen op vertoningen terug.
 
-*Zie[Verklarende woordenlijst](screens-glossary.md)voor meer informatie over de belangrijkste terminologieën die aan AEM-schermen zijn gekoppeld.*
+*Om de belangrijkste terminologieën te begrijpen verbonden aan de Schermen AEM, zie[Verklarende woordenlijst](screens-glossary.md).*
 
-## Architectuur van schermspeler {#architecture-of-screens-player}
+## Architectuur van de Speler van de Schermen {#architecture-of-screens-player}
 
-In het volgende diagram ziet u de algemene architectuur van de AEM Screens player:
+Het volgende diagram toont de algemene architectuur van de speler van het Scherm AEM:
 
 ![chlimage_1-40](assets/chlimage_1-40.png)
 
 ## Maak over 5 minuten een digitale signaalervaring {#create-a-digital-signage-experience-in-minutes}
 
-Zie [Kickstart voor AEM-schermen](kickstart-for-aem-screens.md)om een demo Screens-project te maken en uw inhoud te publiceren in de Screens-speler.
+Om een project van de manifestaties tot stand te brengen en uw inhoud in de speler van de Schermen te publiceren, zie [Kickstart voor de Schermen](kickstart-for-aem-screens.md)AEM.
 
 ## Een nieuw AEM-schermproject starten {#starting-a-new-aem-screens-project}
 
-Voor het starten van een nieuwe digitale handtekening is een samenhang van rollen vereist voordat deze klaar is voor consumptie. De volgende rollen bieden een beginpunt voor het maken van een nieuw project Screens:
+Voor het starten van een nieuwe digitale signage-ervaring is een samenhang van rollen vereist voordat deze klaar is voor consumptie.
 
-* [Author](authoring-screens.md)
-* [Ontwikkelaar](developing-screens.md)
-* [Systeembeheerder/technicus](administering-screens.md)
-
-In de volgende afbeelding worden de personen en hun rollen voor AEM-schermen gedefinieerd.
+Het volgende cijfer bepaalt de personen en hun rollen voor de Schermen van AEM.
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
 >[!NOTE]
 >
->*Als u bovendien verschillende taken wilt weergeven op basis van de rollen, klikt u op de hierboven vermelde personen.*
+>*Bovendien, om verschillende verantwoordelijkheden volgens de rollen te bekijken, klik de hierboven vermelde personen.*
 
-## Voorwaardelijke kennis {#prerequisite-knowledge}
+## Vooraf vereiste kennis {#prerequisite-knowledge}
 
-Voordat u met AEM-schermen aan een Digital Signage-project gaat werken, is kennis van Adobe Experience Manager (AEM) vereist en moet deze zijn voltooid voordat u aan een AEM Screens Project gaat werken.
+Alvorens u aan een Digitaal project begint te werken van de Signage gebruikend de Schermen AEM, wordt de kennis van de Ervaring van Adobe van de Manager (AEM) vereist en zou voorafgaand aan het werken aan een Project van de Schermen moeten worden voltooid AEM.
 
-Raadpleeg de volgende zelfstudies en bronnen om Adobe Experience Manager 6.4 en 6.5 te leren:
+Verwijs naar de volgende leerprogramma&#39;s en de middelen om Manager 6.4 en 6.5 van de Ervaring van Adobe te leren:
 
-* **[Aan de slag](https://helpx.adobe.com/experience-manager/get-started.html)**met Adobe Experience Manager: Ontdek aan de slag-artikelen en videozelfstudies voor Adobe Experience Manager.
-* **[AEM 6.5-zelfstudies en -video](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)**: Een verzameling zelfstudies en video&#39;s waarin de nieuwe en bijgewerkte mogelijkheden voor AEM-sites, -middelen, -formulieren, -schermen en -stichting worden benadrukt met de release van AEM 6.5.
-* **[AEM Core Concepts](https://docs.adobe.com/content/help/en/experience-manager-64/developing/introduction/the-basics.html)**: Een overzicht van de kernconcepten van hoe AEM wordt gestructureerd en hoe te om bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema&#39;s, en MSM.
+* **[De Manager die van de Ervaring van Adobe Begonnen](https://helpx.adobe.com/experience-manager/get-started.html)**wordt: Ontdek het krijgen begonnen artikelen en videoleerprogramma&#39;s voor de Manager van de Ervaring van Adobe.
+* **[AEM 6.5 Tutorials en video&#39;s](https://helpx.adobe.com/experience-manager/kt/index/aem-6-5-videos.html)**: Een inzameling van leerprogramma&#39;s en video&#39;s die zowel nieuwe als bijgewerkte mogelijkheden voor de Plaatsen van AEM, Activa, Vormen, Schermen, en Stichting benadrukken met de versie van AEM 6.5.
+* **[AEM-kernconcepten](https://docs.adobe.com/content/help/en/experience-manager-64/developing/introduction/the-basics.html)**: Een overzicht van de kernconcepten hoe AEM wordt gestructureerd en hoe te zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, het Sling, OSGi, de verzender, de werkschema&#39;s, en MSM.
 
-## Essentiële elementen voor implementatie met instructies {#implementation-essentials}
+## De geleide Hoofdzaak van de Implementatie {#implementation-essentials}
 
-Volg het geleide het leren wegAEM Schermen de Hoofdzaak van de Implementatie, die stichting evenals geavanceerde eigenschappen omvat die in de Schermen van AEM worden gesteund.
+Volg de geleide het leren weg de Hoofdzaak van de Implementatie van de Schermen van AEM, die fundamentele evenals geavanceerde eigenschappen behandelt die in AEM- Schermen worden gesteund.
 
-Bij het maken van een nieuw project kunnen verschillende functies elkaar overlappen, afhankelijk van uw organisatorische en zakelijke vereisten. U kunt naar de volgende bronnen voor gedetailleerde, stapsgewijze functies verwijzen waarmee u AEM Screens-projecten kunt maken en beheren:
+Terwijl het creëren van een nieuw project, kunnen de verschillende functies elkaar afhankelijk van uw organisatorische en bedrijfsvereisten overlappen. U kunt naar de volgende middelen voor gedetailleerde geleidelijke functies verwijzen die u zullen toestaan om het project van de Schermen te creëren en te beheren AEM:
 
 1. [Schermen installeren en configureren](configuring-screens-introduction.md)
 1. [Schermproject maken en beheren](creating-a-screens-project.md)
 1. [Apparaten toewijzen](managing-devices.md)
 1. [Kanalen maken en beheren](managing-channels.md)
 1. [Locaties maken en beheren](managing-locations.md)
-1. [Weergaven maken en beheren](managing-displays.md)
+1. [Vertoningen maken en beheren](managing-displays.md)
 1. [Kanalen toewijzen](channel-assignment.md)
 1. [Apparaten beheren](managing-devices.md)
 1. [Planningen maken en beheren](managing-schedules.md)
 1. [AEM-schermspeler](working-with-screens-player.md)
-1. [Apparaatbesturingscentrum problemen oplossen](monitoring-screens.md)
+1. [Problemen oplossen met Apparaatcontrolecentrum](monitoring-screens.md)
 
 
 ### Gerelateerde bronnen {#related-resources}
 
-U kunt AEM-schermen [](screens-concepts-feature-video-understand.md)weergeven als extra bron, inclusief video&#39;s, voor de introductie van verschillende gebieden van een AEM Screens-project.
+Bekijk het [begrijpen van AEM-schermen](screens-concepts-feature-video-understand.md)als extra bron, inclusief video&#39;s, om verschillende gebieden van een AEM-schermproject te introduceren.
