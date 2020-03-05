@@ -1,89 +1,89 @@
 ---
 title: Mappen publiceren naar Brand Portal
-description: Leer hoe u mappen naar Brand Portal publiceert en de publicatie ervan ongedaan maakt.
+description: Leer hoe te om omslagen aan het Portaal van het Merk te publiceren en unpublished.
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 33210032c45e38963aed429e70eec4095c5d75f1
 
 ---
 
 
 # Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal}
 
-Als beheerder van middelen van Adobe Experience Manager (AEM) kunt u elementen en mappen publiceren naar de AEM Assets Brand Portal-instantie (of de publicatieworkflow plannen op een latere datum/tijd) voor uw organisatie. U moet echter eerst AEM-middelen integreren met Brand Portal. Zie AEM Assets-integratie [configureren met Brand Portal](brand-portal-configuring-integration.md)voor meer informatie.
+Als beheerder van de Activa van de Manager van de Ervaring van Adobe (AEM), kunt u activa en omslagen aan de instantie van het Portaal van het Merk van de Middelen van AEM (of programma publiceren werkschema aan een recentere datum/tijd) voor uw organisatie publiceren. Nochtans, moet u activa AEM met het Portaal van het Merk eerst integreren. Voor details, zie de Activa van AEM met het Portaal [van het Merk](configure-aem-assets-with-brand-portal.md)vormen.
 
-Nadat u middelen of een omslag publiceert, is het beschikbaar aan gebruikers in het Portaal van het Merk.
+Nadat u activa of een omslag publiceert, is het beschikbaar aan gebruikers in het Portaal van het Merk.
 
-Als u de oorspronkelijke bron of map in AEM Assets wijzigt, worden de wijzigingen pas doorgevoerd in Brand Portal als u het element of de map opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
+Als u verdere wijzigingen aan de originele activa of de omslag in activa AEM aanbrengt, worden de veranderingen niet weerspiegeld in het Portaal van het Merk tot u de activa of de omslag opnieuw publiceert. Deze eigenschap zorgt ervoor dat de werk-in-vooruitgang veranderingen niet beschikbaar in het Portaal van het Merk zijn. Slechts zijn de goedgekeurde veranderingen die door een beheerder worden gepubliceerd beschikbaar in het Portaal van het Merk.
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Houd de muisaanwijzer boven de gewenste map in de interface AEM Assets en selecteer de optie **[!UICONTROL Publiceren]** in de snelle handelingen.
+1. Van de interface van Activa AEM, hang over de gewenste omslag en selecteer **[!UICONTROL publiceren]** optie van de snelle acties.
 
-   U kunt ook de gewenste map selecteren en de volgende stappen volgen.
+   Alternatief, selecteer de gewenste omslag en volg de verdere stappen.
 
    ![publish2bp](assets/publish2bp.png)
 
 2. **Mappen nu publiceren**
 
-   Voer een van de volgende twee handelingen uit om de geselecteerde mappen naar Brand Portal te publiceren:
+   De geselecteerde omslagen aan het Portaal van het Merk publiceren, doe één van beiden van het volgende:
 
-   * Selecteer **[!UICONTROL Snel publiceren]** op de werkbalk. Selecteer vervolgens in het menu **[!UICONTROL Publiceren naar Brand Portal]**.
-   * Selecteer Publicatie **[!UICONTROL beheren in de werkbalk]**.
+   * Van de toolbar, publiceert het uitgezochte **[!UICONTROL Snel]**. Dan van het uitgezochte menu, **[!UICONTROL publiceer aan het Portaal]** van het Merk.
+   * Van de uitgezochte toolbar, **[!UICONTROL beheer Publicatie]**.
 
-3. Kies vervolgens in de **[!UICONTROL Handeling]** de optie **[!UICONTROL Publiceren naar Brand Portal]** en **[!UICONTROL vervolgens]** Nu **[!UICONTROL in de planning]**. Tik op **[!UICONTROL Volgende].**
-4. Bevestig uw selectie binnen **[!UICONTROL bereik]** en tik op **[!UICONTROL Publiceren naar Brand Portal]**.
+3. Dan van de uitgezochte **[!UICONTROL Actie]** **[!UICONTROL publiceer aan het Portaal]** van het Merk, en van het **[!UICONTROL Plannen]** uitgezocht **[!UICONTROL nu]**. Tik op **[!UICONTROL Volgende].**
+4. Binnen **[!UICONTROL Reikwijdte]**, bevestig uw selectie en de Tik **[!UICONTROL publiceer aan het Portaal]** van het Merk.
 
-   Er wordt een bericht weergegeven met de mededeling dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de interface Brand Portal om de gepubliceerde map weer te geven.
+   Een bericht lijkt verklarend dat de omslag omhoog voor het publiceren aan het Portaal van het Merk een rij is gevormd. Login aan de interface van het Portaal van het Merk om de gepubliceerde omslag te zien.
 
    **Mappen later publiceren**
 
-   De workflow voor publiceren naar Brand Portal van mappen met elementen naar een latere datum of tijd plannen:
+   Om te plannen publiceer aan het Portaal van het Merk werkschema van activaomslagen aan een recentere datum of een tijd:
 
-   1. Als u middelen/mappen hebt geselecteerd om te publiceren, selecteert u Publicatie **** beheren in de werkbalk boven in het scherm.
-   2. Selecteer op de pagina Publicatie **** beheren de optie **[!UICONTROL Publiceren naar Brand Portal]** in **[!UICONTROL Actie]** en selecteer **[!UICONTROL Later]** in **[!UICONTROL Planning]**.
+   1. Zodra u te publiceren activa/omslagen hebt geselecteerd, selecteer **[!UICONTROL beheren Publicatie]** van de hulpmiddelbar bij de bovenkant.
+   2. Voor **[!UICONTROL Manage pagina van de Publicatie]** , uitgezocht **[!UICONTROL publiceer aan het Portaal]** van het Merk van **[!UICONTROL Actie]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Planning]**.
 
       ![uitgeverij](assets/publishlaterbp.png)
 
-   3. Selecteer een **[!UICONTROL activeringsdatum]** en geef de tijd op. Tik op **[!UICONTROL Volgende]**.
-   4. Bevestig uw selectie in **[!UICONTROL Bereik]**. Tik op **[!UICONTROL Volgende]**.
-   5. Geef een workflowtitel op onder **[!UICONTROL Workflows]**. Tik later op **[!UICONTROL Publiceren]**.
+   3. Selecteer een **[!UICONTROL activeringsdatum]** en geef tijd op. Tik op **[!UICONTROL Volgende]**.
+   4. Bevestig uw selectie in **[!UICONTROL Toepassingsgebied]**. Tik op **[!UICONTROL Volgende]**.
+   5. Specificeer een titel van het Werkschema onder **[!UICONTROL Werkschema]**. Tik **[!UICONTROL publiceer later]**.
 
-      ![manageplannulepub](assets/manageschedulepub.png)
+      ![beheerschema](assets/manageschedulepub.png)
 
-## Mappen van Brand Portal verwijderen {#unpublish-folders-from-brand-portal}
+## Mappen van Brand-portal verwijderen {#unpublish-folders-from-brand-portal}
 
-U kunt elke elementmap die naar Brand Portal is gepubliceerd, verwijderen door de publicatie ongedaan te maken van de instantie AEM-auteur. Nadat u de publicatie van de oorspronkelijke map ongedaan hebt gemaakt, is de kopie ervan niet meer beschikbaar voor gebruikers van het Brand Portal.
+U kunt om het even welke activaomslag verwijderen die aan het Portaal van het Merk wordt gepubliceerd door het uit de instantie van de Auteur van AEM te unpublishing. Nadat u de originele omslag unpublished, is zijn exemplaar niet meer beschikbaar aan de gebruikers van het Portaal van het Merk beschikbaar.
 
-U kunt de publicatie van mappen op Brand Portal snel ongedaan maken of deze later plannen. De publicatie van middelenmappen op Brand Portal ongedaan maken:
+U hebt de optie om omslagen van het Portaal van het Merk snel ongedaan te maken of het voor een recentere datum en een tijd te plannen. Om activaomslagen van het Portaal van het Merk unpublished:
 
-1. Selecteer in de AEM Assets-interface in de AEM Author-instantie de map die u wilt verwijderen.
+1. Van de interface van Activa AEM in de instantie van de Auteur AEM, selecteer de omslag u wilt unpublished.
 
    ![publish2bp-1](assets/publish2bp-1.png)
 
-2. Tik op de werkbalk of klik op Publicatie **[!UICONTROL beheren]**.
+2. Tik op/klik op Publicatie **[!UICONTROL beheren]** op de werkbalk.
 
-3. **Publiceren via Brand Portal nu ongedaan maken**
+3. **Maak nu van het Portaal van het Merk ongedaan**
 
-   U kunt de publicatie van de gewenste map snel ongedaan maken via Brand Portal:
+   Om de gewenste omslag van het Portaal van het Merk snel ongedaan te maken:
 
-   1. Selecteer op de pagina Publicatie **** beheren in **[!UICONTROL Handeling]** de optie **[!UICONTROL Publicatie ongedaan maken in Brand Portal]** en in **[!UICONTROL Planning]** de optie **[!UICONTROL Nu]**.
-   2. Tik/klik op **[!UICONTROL Volgende].**
-   3. Bevestig uw selectie binnen **[!UICONTROL bereik]** en tik op **[!UICONTROL Publiceren ongedaan maken via Brand Portal]**.
-   ![bevestigen-ongedaan maken](assets/confirm-unpublish.png)
+   1. Op **[!UICONTROL Manage pagina van de Publicatie]** , van uitgezochte **[!UICONTROL Actie]** **[!UICONTROL Unpublished van het Portaal]** van het Merk en van het **[!UICONTROL Plannen]** uitgezocht **[!UICONTROL nu]**.
+   2. Tik/ klik op **[!UICONTROL Volgende].**
+   3. Binnen **[!UICONTROL Reikwijdte]**, bevestig uw selectie en tik **[!UICONTROL Unpublished van het Portaal]** van het Merk.
+   ![bevestig-unpublished](assets/confirm-unpublish.png)
 
-   **Publiceren via Brand Portal later ongedaan maken**
+   **Maak van het Portaal van het Merk later ongedaan**
 
-   U kunt als volgt de publicatie van een map van Brand Portal naar een latere datum en tijd plannen:
+   Om het publiceren van een omslag van het Portaal van het Merk aan een recentere datum en een tijd te plannen:
 
-   1. Selecteer op de pagina Publicatie **** beheren in **[!UICONTROL Handeling]** de optie **[!UICONTROL Publiceren ongedaan maken in Brand Portal]** en in **[!UICONTROL Planning]** de optie **[!UICONTROL Later].**
+   1. Op **[!UICONTROL Manage pagina van de Publicatie]** , van uitgezochte **[!UICONTROL Actie]** **[!UICONTROL Unpublished van het Portaal]** van het Merk en van het **[!UICONTROL Plannen]** selecteer **[!UICONTROL Later].**
    2. Selecteer een **[!UICONTROL activeringsdatum]** en geef de tijd op. Tik op **[!UICONTROL Volgende]**.
-   3. Bevestig uw selectie binnen **[!UICONTROL bereik]** en tik op **[!UICONTROL Volgende]**.
-   4. Geef een **[!UICONTROL workflowtitel]** op onder **[!UICONTROL Workflows]**. Tik op **[!UICONTROL Later]publiceren ongedaan maken.**
+   3. Bevestig uw selectie binnen het **[!UICONTROL bereik]** en tik op **[!UICONTROL Volgende]**.
+   4. Geef een **[!UICONTROL werkstroomtitel]** op onder **[!UICONTROL Werkstromen]**. Tik **[!UICONTROL later]op Onpubliceren.**
 
-      ![unpublishworkflows](assets/unpublishworkflows.png)
+      ![unpublishing-workflows](assets/unpublishworkflows.png)
 
 
 >[!NOTE]
 >
->De procedure voor het publiceren/openbaar maken van een middel van/naar Brand Portal is vergelijkbaar met de procedure voor een map.
+>De procedure om een activa aan/van het Portaal van het Merk te publiceren/unpublished is gelijkaardig aan de overeenkomstige procedure voor een omslag.
