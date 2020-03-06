@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
+source-git-commit: 9f6da11b6fd5630dd2a81d1745f7f157ffb2bf34
 
 ---
 
@@ -23,7 +23,7 @@ source-git-commit: 3037d1e5c9f97778c55ee2734ded3c9ef668df4d
 | Versie | 6.4.8.0 |
 | Type | Service Pack Release |
 | Date | 05 maart 2020 |
-| URL downloaden | AEM 6.4.8.0 op [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0) |
+| URL downloaden | AEM 6.4.8.0 op [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), de Distributie van de [Software (Bèta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Wat is inbegrepen in AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -51,6 +51,9 @@ Enkele zeer belangrijke hoogtepunten van deze versie van het de dienstpak zijn:
 
 ### Sites {#sites}
 
+* Wanneer een URL van een pagina van de Plaatsen van AEM een dubbelpunt of percentagesymbool bevat, houdt onderliggende browser op antwoordend en de cycli van cpu tonen een punt (NPR-32368, NPR-31917).
+* Wanneer een pagina van Plaatsen AEM voor het uitgeven wordt geopend en een component wordt gekopieerd, blijft de deegactie niet beschikbaar voor sommige placeholders (NPR-32328).
+* Aanvraag voor een activeringswerkstroom omvat niet de desbetreffende activa (NPR-32304).
 * Wanneer een Blauwdruk wordt gecreeerd, als het aantal verslagen meer dan 80 is, slechts worden de eerste 80 verslagen getoond. De blauwdruk toont lege lijnen voor de rest van de verslagen (NPR-32058).
 * De gebruikers worden toegestaan om een Fragment van de Inhoud te bewaren zonder om het even welke informatie op de vereiste gebieden (NPR-31988) te verstrekken.
 * De automatische navigatie werkt niet voor weg die in een Component van het Fragment van de Ervaring van de Kern (NPR-31921) wordt gevormd.
@@ -58,7 +61,6 @@ Enkele zeer belangrijke hoogtepunten van deze versie van het de dienstpak zijn:
    `Error: No common ancestor found, cannot continue` (NPR-31916).
 * Wanneer de inhoud binnen de zelfde omslag wordt bewogen, is de optie van de paginabeweging gehandicapt (NPR-31841).
 * Toegevoegde ondersteuning voor het verdelen van Japanse taalzinnen volgens de BUNSETSU-methode en breuklijnen op de juiste positie (NPR-31836).
-* Wanneer URLs eindigt met `/_jcr_content/.html` of `/jcr:content/.html` wordt betreden, de pieken van cpu en AEM ophoudt antwoordend (NPR-31755).
 * Wanneer u een hyperlink in de Rijke Redacteur van de Tekst (RTE) uitgeeft, wordt de onlangs geselecteerde weg niet bewaard (NPR-31659).
 * Wanneer u een component met meerdere velden verwijdert en de verwijdering ongedaan maakt, wordt de component teruggezet, maar de gegevens worden niet teruggezet (NPR-31617).
 
@@ -109,10 +111,6 @@ Enkele zeer belangrijke hoogtepunten van deze versie van het de dienstpak zijn:
 ### Vertaling {#translation-6480}
 
 * De verwezenlijking van het vertaalproject voor veelvoudige talen produceert het project slechts voor enkele talen in plaats van allen en een fout (de redacteur van het middel is reeds gesloten) wordt waargenomen in het logboek (NPR-32212).
-
-### WCM-sjablooneditor {#wcm-template-editor-6480}
-
-* De pieken van cpu en de Manager van de Ervaring worden niet ontvankelijk wanneer URLs die met eindigt `/_jcr_content/.html` of `/jcr:content/.html` wordt betreden (CQ-4280770).
 
 ### WCM-MSM {#wcm-msm-6480}
 
@@ -689,7 +687,7 @@ De belangrijkste hoogtepunten voor vormen AEM 6.4.5.0 zijn:
 **Formulieren - Interactieve communicatie en formulieren - Correspondentiebeheer**
 
 * Creeer de Overeenstemming UI (CCR UI) er niet in slaagt om een vlotteraantal te behandelen.  NPR-29210: Hotfix voor CQ-4254201
-* Tooltip die op een variabele wordt geplaatst is niet zichtbaar op Create Correspondentie UI (CCR UI). NPR-29739: Hotfix voor CQ-4250533
+* Tooltip die op een variabele wordt geplaatst is niet zichtbaar op Create Correspondentie UI (CCR UI). NPR-29839: Hotfix voor CQ-4250533
 * Onbekwaam om van Onderzoek binnen brieven te kopiëren of te kleven. NPR-29808: Hotfix voor CQ-4270783
 
 **HTML5-formulieren**
@@ -1760,7 +1758,7 @@ AEM 6.4.1.0 kan worden geïnstalleerd op AEM 6.4 GA. Enkele zeer belangrijke hoo
 * (Klassieke UI) (Aanraking UI) De markeringsplukker toont en werpt geen uitzondering wanneer het proberen om voor markeringen via een markeringen te doorbladeren voorspelt in het schema van het Onderzoek van Activa. NPR-23049: Hotfix voor CQ-4239371
 * (Klassieke UI) Componenten die xtype=tags gebruiken keren ongeldig terug en kunnen niet uit de lijst van eth van markeringen worden geselecteerd. NPR-23050: Hotfix voor CQ-4239937
 * (het Brandmerken) de Opt-in dialoog noemt de Wolk van de Marketing van Adobe in plaats van de Wolk van de Ervaring van Adobe. NPR-23210: Hotfix voor CQ-4237799
-* De optie van de filter maakt AEM na bevordering van 6.3 tot 6.4 langzaam. NPR-23260: Hotfix voor CQ-4239847 (te controleren)
+* De optie van de filter maakt AEM na bevordering van 6.3 tot 6.4 langzaam. NPR-24260: Hotfix voor CQ-4239847 (te controleren)
 * Proactieve Backport voor granite.omnissearch.core fixes. NPR-23536
 * Pro-actieve Backport voor platform.clientlibs moeilijke situaties. NPR-23569
 * De overerving van Config van de Dienst van de Wolk gebroken wanneer het uitgeven van andere paginaeigenschappen. NPR-23216: Hotfix voor CQ-4239782
