@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 1c79deea23ad9c5ba1c4e2471f36a40f5dbafea9
 
 ---
 
@@ -19,10 +19,10 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Documentfragmenten zijn herbruikbare onderdelen/onderdelen van een correspondentie waarmee u letters/correspondentie kunt samenstellen. De documentfragmenten zijn van de volgende typen:
 
-* **Tekst**:Een tekstelement is een stuk inhoud dat bestaat uit een of meer tekstalinea&#39;s. Een alinea kan statisch of dynamisch zijn.
+* **Tekst**: Een tekstelement is een stuk inhoud dat bestaat uit een of meer tekstalinea&#39;s. Een alinea kan statisch of dynamisch zijn.
 * **Lijst**: List is een groep documentfragmenten, waaronder tekst, lijsten, voorwaarden en afbeeldingen. De volgorde van de lijstelementen kan vast of bewerkbaar zijn. Tijdens het maken van een letter kunt u enkele of alle lijstelementen gebruiken om een herbruikbaar patroon van elementen te repliceren.
-* **Voorwaarde**:De voorwaarden laten u toe om te bepalen welke inhoud inbegrepen bij de tijd van de brievenverwezenlijking wordt, die op de geleverde gegevens wordt gebaseerd. De voorwaarde wordt beschreven in termen van controlevariabelen. Een besturingsvariabele kan een gegevenswoordenboekelement of een plaatsaanduiding zijn.
-* **Lay-outfragment**:Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDP&#39;s) worden gemaakt in Designer en worden vervolgens geüpload naar AEM Forms.
+* **Voorwaarde**: De voorwaarden laten u toe om te bepalen welke inhoud inbegrepen bij de tijd van de brievenverwezenlijking wordt, die op de geleverde gegevens wordt gebaseerd. De voorwaarde wordt beschreven in termen van controlevariabelen. Een besturingsvariabele kan een gegevenswoordenboekelement of een plaatsaanduiding zijn.
+* **Lay-outfragment**: Een lay-outfragment is een lay-out die binnen één of meerdere letters kan worden gebruikt. Een lay-outfragment wordt gebruikt om herhaalbare patronen, vooral dynamische lijsten tot stand te brengen. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. De lay-outs (XDP&#39;s) worden gemaakt in Designer en worden vervolgens geüpload naar AEM Forms.
 
 ## Tekst {#text}
 
@@ -45,7 +45,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 1. Geef de volgende informatie op voor de tekst:
 
    * **Titel: (Optioneel)** Voer de titel in voor het tekstelement. Titels hoeven niet uniek te zijn en kunnen speciale tekens en niet-Engelse tekens bevatten. De teksten worden bedoeld door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
-   * **** Naam: De unieke naam voor het tekstelement. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
+   * **Naam:** De unieke naam voor het tekstelement. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Omschrijving**: Typ een beschrijving van het element.
    * **Gegevenswoordenboek**: Selecteer desgewenst het gegevenswoordenboek waarin u wilt toewijzen. Met dit kenmerk kunt u verwijzingen naar gegevenswoordenboekelementen in het tekstelement toevoegen.
    * **Tags**: Als u een aangepaste tag wilt maken, typt u een waarde in het tekstveld en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
@@ -61,9 +61,9 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    ![Werkbalk](assets/advancedediting.png)
 
-   **** Afbeelding: *Werkbalk*
+   **Afbeelding:** *Werkbalk*
 
-   * **Koppeling**: Hypertekstkoppeling invoegen in de tekst.
+   * **Koppeling**: Hypertekstkoppeling invoegen in de tekst. Tik op **[!UICONTROL Koppeling]**, geef de koppeling op in het veld **[!UICONTROL URL]** , verwijder de standaardobjectnaam uit het veld **[!UICONTROL Alt-tekst]** en tik op ![Opslaan](assets/save_icon.svg).
    * **Herhalen**: Met Herhalen wordt het verzamelingselement in het gegevenswoordenboek afgedrukt met een scheidingsteken.
    * **Voorwaarde**: Tik om een voorwaarde in te voegen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
    * **Beschrijving** toevoegen: Voeg een aantekening aan een stuk van tekst toe. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
@@ -72,19 +72,19 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    ![Type werkbalk selecteren](assets/toolbarselection.png)
 
-   **** Afbeelding: Type werkbalk *selecteren: Alinea, Uitlijning of Lijst*
+   **Afbeelding:** Type werkbalk *selecteren: Alinea, Uitlijning of Lijst*
 
    ![Alinea, werkbalk](assets/fonteditingtoolbar.png)
 
-   **** Afbeelding: De werkbalk *Alinea*
+   **Afbeelding:** De werkbalk *Alinea*
 
    ![Uitlijning, werkbalk](assets/paragrapheditingtoolbar.png)
 
-   **** Afbeelding: Werkbalk *Uitlijning*
+   **Afbeelding:** Werkbalk *Uitlijning*
 
    ![Aanbiedingswerkbalk](assets/bulleteditingtoolbar.png)
 
-   **** Afbeelding: Werkbalk *Aanbieding*
+   **Afbeelding:** Werkbalk *Aanbieding*
 
 1. Als u een of meer alinea&#39;s tekst die in een andere toepassing voorkomen, zoals MS Word- of HTML-pagina&#39;s, wilt hergebruiken, kopieert en plakt u de tekst in de teksteditor. De opmaak van de gekopieerde tekst blijft behouden in de teksteditor.
 
@@ -127,11 +127,11 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    * Voeg een plaatsaanduidingselement toe aan de tekst. Tik in het deelvenster Gegevenselementen op Nieuw maken, voer de details voor het nieuwe gegevenselement in en tik op Maken om het nieuwe element aan de lijst toe te voegen. De nieuwe plaatsaanduiding kan op dezelfde manier in de tekst worden ingevoegd als het gegevenswoordenboekelement. Als u een tijdelijke aanduiding wilt bewerken, selecteert u een tijdelijke aanduiding en tikt u op Bewerken.
    ![Plaatsaanduidingselementen](assets/placeholder_elements_in_xmldata.png)
 
-   **** Afbeelding: Elementen voor *plaatsaanduidingen zoals opgegeven in het bestand met voorbeeldgegevens van een gegevenswoordenboek*
+   **Afbeelding:** Elementen voor *plaatsaanduidingen zoals opgegeven in het bestand met voorbeeldgegevens van een gegevenswoordenboek*
 
    ![Plaatsaanduidingselementen in letter](assets/placeholder_elements_in_text.png)
 
-   **** Afbeelding: Waarden van *plaatsaanduidingselementen in de CCR-weergave die zijn gevuld met de variabelen van het gegevenswoordenboek, zoals opgegeven in het bestand met voorbeeldgegevens*
+   **Afbeelding:** Waarden van *plaatsaanduidingselementen in de CCR-weergave die zijn gevuld met de variabelen van het gegevenswoordenboek, zoals opgegeven in het bestand met voorbeeldgegevens*
 
 1. U kunt inline voorwaarden en herhalingen gebruiken om uw brief in hoge mate contextueel en goed gestructureerd te maken. Zie [Inline-voorwaarden en Herhaling in letters](/help/forms/using/cm-inline-condition.md)voor meer informatie over inline-voorwaarde en herhaling.
 1. Tik op **Opslaan**.
@@ -159,13 +159,13 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 
 #### Zoekopties {#search-options}
 
-**** Hoofdlettergebruik afstemmen: De zoekopdracht geeft alleen resultaten met hetzelfde hoofdlettergebruik.
+**Hoofdlettergebruik afstemmen:** De zoekopdracht geeft alleen resultaten met hetzelfde hoofdlettergebruik.
 
-**** Heel woord: Zoekopdracht retourneert alleen hele woorden.
+**Heel woord:** Zoekopdracht retourneert alleen hele woorden.
 
-**** Opmerking: Als u speciale tekens invoert in het tekstvak Zoeken, is de optie Heel woord uitgeschakeld.
+**Opmerking:** Als u speciale tekens invoert in het tekstvak Zoeken, is de optie Heel woord uitgeschakeld.
 
-**** Voorbeeld: Zoeken met reguliere expressies. Met de volgende reguliere expressie wordt bijvoorbeeld gezocht naar e-mailadressen in een tekstmodule:
+**Voorbeeld:** Zoeken met reguliere expressies. Met de volgende reguliere expressie wordt bijvoorbeeld gezocht naar e-mailadressen in een tekstmodule:
 
 `[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,4}`
 
@@ -190,10 +190,10 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 * Gebruik de juiste gegevenswoordenboekbinding in tekstmodules.
 * De volgende regels zijn van toepassing wanneer u de Teksteditor gebruikt bij het wijzigen van een tekstelement:
 
-   * **** Toevoeging van variabele: Toegestaan
-   * **** Verwijderen van variabele: Toegestaan
-   * **** Bijwerken van eigenschappen: Toegestaan
-   * **** Wijziging van gegevenswoordenboek: Toegestaan totdat het gegevenswoordenboekelement niet wordt gebruikt. U kunt het gegevenswoordenboek niet wijzigen tijdens het bijwerken.
+   * **Toevoeging van variabele:** Toegestaan
+   * **Verwijderen van variabele:** Toegestaan
+   * **Bijwerken van eigenschappen:** Toegestaan
+   * **Wijziging van gegevenswoordenboek:** Toegestaan totdat het gegevenswoordenboekelement niet wordt gebruikt. U kunt het gegevenswoordenboek niet wijzigen tijdens het bijwerken.
 
 ## Lijst {#list}
 
@@ -226,7 +226,7 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
 1. Geef de volgende informatie voor de lijst op:
 
    * **Titel (optioneel): Voer** de titel voor de lijst in. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Lijsten worden aangeduid door hun titels (indien beschikbaar), zoals in miniaturen en de eigenschappen van elementen.
-   * **** Naam: De unieke naam voor de lijst. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch gevuld met de waarde in het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
+   * **Naam:** De unieke naam voor de lijst. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch gevuld met de waarde in het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Beschrijving (optioneel)**: Typ een beschrijving van het element.
    * **Gegevenswoordenboek (optioneel)**: Selecteer eventueel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de lijst, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste lijst vinden.
    * **Tags (optioneel)**: Selecteer de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u op **Opslaan** tikt.)
@@ -253,14 +253,14 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
 
 1. U kunt de volgende opties selecteren om op te geven hoe elk element in de lijst zich gedraagt bij uitvoering:
 
-   * **** Bewerkbaar: Als deze optie is geselecteerd, kan de inhoud worden bewerkt in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor de modules Lijst en Afbeelding.)
-   * **** Verplicht: Als deze optie is geselecteerd, is de inhoud vereist in de gebruikersinterface Correspondentie maken.
-   * **** Geselecteerd: Als deze optie is geselecteerd, wordt de inhoud vooraf geselecteerd in de gebruikersinterface Correspondentie maken.
-   * **** Stijl overslaan: Als deze optie is geselecteerd, slaat de inhoud opsommingstekens en nummering over in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor afbeeldingsmodules. Tussen Stijl, Samenstelling en Lijststijl negeren kan bovendien slechts een van de opties worden toegepast op een module. Een van deze opties kan voor een module worden gebruikt wanneer u Opsommingstekens toevoegen voor een module selecteert.)
-   * **** Inspringing: U kunt het inspringingsniveau wijzigen van elke module of inhoud die als onderdeel van de lijst is geselecteerd. De inspringing wordt opgegeven in termen van niveaus (te beginnen met nul), zodat elk inspringingsniveau overeenkomt met een opvulling van 36 punten.
-   * **** Samengesteld: Als deze optie is geselecteerd, wordt de samengestelde nummering toegepast als een combinatie van de stijl van de buitenste (bovenliggende) lijst en is het een eigen stijl. De samengestelde nummering in deze geneste lijst is gebaseerd op de volgorde waarin deze geneste lijst wordt weergegeven in de buitenste lijst.
-   * **** Lijststijl negeren: Als de optie Samengestelde nummering is uitgeschakeld, is de optie Lijststijl negeren ingeschakeld. Bij deze selectie wordt de eigen stijl van de geneste lijst genegeerd. De nummering gaat verder vanaf de buitenste lijst. Daarom worden de modules van de genestelde lijst behandeld als deel van de buitenlijst zelf, die om het even welke stijlen veronachtzamen die op de genestelde Lijst worden gespecificeerd. Als de optie Lijststijl negeren is uitgeschakeld voor een geneste lijst, hebben de modules die deel uitmaken van die geneste lijst een eigen nummeringsstijl.
-   * **** Houden bij: Volgende Hiermee stelt u het pagina-einde in voor de elementen in een lijst. Als u de eigenschap Houden bij volgende van een element in een lijst instelt op **Aan**, blijven dat element en het volgende element op dezelfde pagina staan. Dit houdt in dat de inhoud van het geselecteerde element en het volgende element niet worden verdeeld over pagina&#39;s.
+   * **Bewerkbaar:** Als deze optie is geselecteerd, kan de inhoud worden bewerkt in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor de modules Lijst en Afbeelding.)
+   * **Verplicht:** Als deze optie is geselecteerd, is de inhoud vereist in de gebruikersinterface Correspondentie maken.
+   * **Geselecteerd:** Als deze optie is geselecteerd, wordt de inhoud vooraf geselecteerd in de gebruikersinterface Correspondentie maken.
+   * **Stijl overslaan:** Als deze optie is geselecteerd, slaat de inhoud opsommingstekens en nummering over in de gebruikersinterface Correspondentie maken. (Deze optie is niet beschikbaar voor afbeeldingsmodules. Tussen Stijl, Samenstelling en Lijststijl negeren kan bovendien slechts een van de opties worden toegepast op een module. Een van deze opties kan voor een module worden gebruikt wanneer u Opsommingstekens toevoegen voor een module selecteert.)
+   * **Inspringing:** U kunt het inspringingsniveau wijzigen van elke module of inhoud die als onderdeel van de lijst is geselecteerd. De inspringing wordt opgegeven in termen van niveaus (te beginnen met nul), zodat elk inspringingsniveau overeenkomt met een opvulling van 36 punten.
+   * **Samengesteld:** Als deze optie is geselecteerd, wordt de samengestelde nummering toegepast als een combinatie van de stijl van de buitenste (bovenliggende) lijst en is het een eigen stijl. De samengestelde nummering in deze geneste lijst is gebaseerd op de volgorde waarin deze geneste lijst wordt weergegeven in de buitenste lijst.
+   * **Lijststijl negeren:** Als de optie Samengestelde nummering is uitgeschakeld, is de optie Lijststijl negeren ingeschakeld. Bij deze selectie wordt de eigen stijl van de geneste lijst genegeerd. De nummering gaat verder vanaf de buitenste lijst. Daarom worden de modules van de genestelde lijst behandeld als deel van de buitenlijst zelf, die om het even welke stijlen veronachtzamen die op de genestelde Lijst worden gespecificeerd. Als de optie Lijststijl negeren is uitgeschakeld voor een geneste lijst, hebben de modules die deel uitmaken van die geneste lijst een eigen nummeringsstijl.
+   * **Houden bij: Volgende** Hiermee stelt u het pagina-einde in voor de elementen in een lijst. Als u de eigenschap Houden bij volgende van een element in een lijst instelt op **Aan**, blijven dat element en het volgende element op dezelfde pagina staan. Dit houdt in dat de inhoud van het geselecteerde element en het volgende element niet worden verdeeld over pagina&#39;s.
 
 1. Tik op **Opslaan**.
 
@@ -271,7 +271,7 @@ Een lijst is een groep gerelateerde inhoud die in een lettertypesjabloon als é�
 * De volgende regels zijn van toepassing wanneer u de List Editor gebruikt om een lijst te wijzigen:
 
    * Bijwerken van eigenschappen: Toegestaan
-   * **** Wijziging van gegevenswoordenboek: Toegestaan totdat er geen item is gekoppeld dat het gegevenswoordenboek gebruikt. U kunt het gegevenswoordenboek niet wijzigen tijdens het bijwerken.
+   * **Wijziging van gegevenswoordenboek:** Toegestaan totdat er geen item is gekoppeld dat het gegevenswoordenboek gebruikt. U kunt het gegevenswoordenboek niet wijzigen tijdens het bijwerken.
 
 ## Voorwaarden {#conditions}
 
@@ -288,7 +288,6 @@ Als de tekst van de voorwaarden in een brief bijvoorbeeld verschilt, afhankelijk
 ・ staat = NC, uitgezochte T&amp;C_NC tekstparagraaf
 
 Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde van de besturingsvariabelen niet overeenkomt met een van de voorwaarden, wordt de inhoud gebruikt die aan de standaardvoorwaarde is gekoppeld. In het volgende voorbeeld kunt u deze voorwaardenrij toevoegen:\
-
 ・ Standaard, selecteer T&amp;C_Rest
 
 ### Een voorwaarde maken {#create-a-condition}
@@ -297,8 +296,8 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 1. Selecteer **Maken > Voorwaarde**.
 1. Geef de volgende informatie voor de lijst op:
 
-   * **** Titel (optioneel): Voer de titel voor de voorwaarde in. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. De voorwaarden worden verwezen door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
-   * **** Naam: De unieke naam voor de voorwaarde. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
+   * **Titel (optioneel):** Voer de titel voor de voorwaarde in. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. De voorwaarden worden verwezen door hun titels (indien beschikbaar) zoals in duimnagels en activa eigenschappen.
+   * **Naam:** De unieke naam voor de voorwaarde. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
    * **Beschrijving (optioneel)** Typ een beschrijving van de voorwaarde.
    * **Gegevenswoordenboek (optioneel)**: Selecteer eventueel het gegevenswoordenboek waarmee u verbinding wilt maken. Alleen elementen die hetzelfde gegevenswoordenboek gebruiken als de voorwaarde, of elementen waaraan geen gegevenswoordenboek is toegewezen, kunnen aan de lijst worden toegevoegd. Door een gegevenswoordenboek aan een lijst toe te wijzen, kan de persoon die een lettertypesjabloon maakt, gemakkelijker de juiste voorwaarde vinden.
    * **Tags (optioneel)**: Selecteer eventueel de tags die u wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken. (De nieuwe tag wordt gemaakt wanneer u op **Opslaan** tikt.)
@@ -328,10 +327,10 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 * Gebruik de juiste gegevenswoordenboekbinding
 * De volgende regels zijn van toepassing wanneer u de Condition Editor gebruikt om een voorwaarde te bewerken:
 
-   * **** Toevoeging van variabele: Toegestaan
-   * **** Verwijderen van variabele: Toegestaan
-   * **** Bijwerken van eigenschappen: Toegestaan
-   * **** Wijziging van gegevenswoordenboek: Toegestaan totdat het gegevenswoordenboekelement niet wordt gebruikt.
+   * **Toevoeging van variabele:** Toegestaan
+   * **Verwijderen van variabele:** Toegestaan
+   * **Bijwerken van eigenschappen:** Toegestaan
+   * **Wijziging van gegevenswoordenboek:** Toegestaan totdat het gegevenswoordenboekelement niet wordt gebruikt.
 
 ## Lay-outfragmenten {#layoutfragments}
 
@@ -386,8 +385,8 @@ Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het g
 1. Correspondence Management geeft de beschikbare XDP&#39;s weer. Selecteer de XDP waarop u het lay-outfragment wilt baseren en tik op **Volgende**.
 1. Geef de volgende informatie op voor de indeling:
 
-   * **** Titel (optioneel): Voer de titel in voor het layoutfragment. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Indelingsfragmenten worden aangeduid met hun titels (indien beschikbaar), zoals miniaturen en elementeigenschappen.
-   * **** Naam: De unieke naam voor het lay-outfragment. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken. Deze naam wordt weergegeven in de lijst in de gebruikersinterface Middelen beheren.
+   * **Titel (optioneel):** Voer de titel in voor het layoutfragment. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Indelingsfragmenten worden aangeduid met hun titels (indien beschikbaar), zoals miniaturen en elementeigenschappen.
+   * **Naam:** De unieke naam voor het lay-outfragment. Er kunnen in geen enkele staat twee elementen (tekst, voorwaarde of lijst) bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken. Deze naam wordt weergegeven in de lijst in de gebruikersinterface Middelen beheren.
    * **Beschrijving (optioneel)**: Beschrijving die wordt weergegeven in de lijst in de gebruikersinterface Middelen beheren.
    * **Tags (optioneel)**: Selecteer eventueel de tags die u op de voorwaarde wilt toepassen. U kunt ook de naam van een nieuwe tag typen en deze maken.
 
@@ -401,7 +400,7 @@ Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het g
    * **Koptekst**: tekst die moet worden weergegeven voor de koptekst
    * **Voettekst**: tekst die moet worden weergegeven voor de voettekst
    * **Type**: type van extra kolom. Veld of doelgebied. Type is ingeschakeld voor statische plaatsaanduidingstabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dat geval is het type van de extra cellen in de uitgebreide kolom gelijk aan het type van de laatste kolom in die rij; en het type cel in een extra rij is hetzelfde als het type van de laatste cel in die kolom.
-   * **** Breedteverhouding: verhouding van de tabelkolombreedten.
+   * **Breedteverhouding:** verhouding van de tabelkolombreedten.
    Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten: statische en dynamische tabellen in een letter](#main-pars-header-28)gebruiken.
 
 1. Tik op **Opslaan**.
