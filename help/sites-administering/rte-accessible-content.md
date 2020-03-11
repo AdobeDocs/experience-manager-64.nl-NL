@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
-source-git-commit: 89f920203342a55280eaee4a89bbdb8497344b49
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -24,12 +24,8 @@ AEM ondersteunt beide:
 
 >[!NOTE]
 >
->Zie ook:
->
->* Onze [Snelle Gids aan WCAG 2.0](/help/managing/qg-wcag.md) voor meer details
+>* [Snelle gids aan WCAG 2.0](/help/managing/qg-wcag.md)
 >* [Toegankelijke inhoud maken (WCAG 2.0-conformiteit)](/help/sites-authoring/creating-accessible-content.md)
->
-
 
 
 Inhoudsauteurs kunnen functies van de RTE gebruiken om toegankelijkheidsinformatie te verstrekken terwijl ze inhoud aan een pagina toevoegen. Dit kan het toevoegen van structurele informatie door rubrieken en paragraafelementen omvatten.
@@ -196,7 +192,7 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
    }
    ```
 
-1. Wijzigingen opslaan met Alles **opslaan...**
+1. Wijzigingen opslaan met Alles **opslaan**
 
 >[!NOTE]
 >
@@ -206,5 +202,4 @@ In **Lijst** moet u de attributen aan/uit het element van DOM uitdrukkelijk plaa
 >
 >* De `itemId` eigenschap voor elk corresponderend veld wordt ingesteld op de naam van het juiste DOM-kenmerk (`TablePropertiesDialog`).
 >* Het kenmerk wordt expliciet ingesteld en/of verwijderd op het DOM-element (`Table`).
-
 
