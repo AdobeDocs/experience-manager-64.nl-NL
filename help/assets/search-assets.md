@@ -3,7 +3,7 @@ title: Middelen zoeken in AEM
 description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -26,6 +26,8 @@ U kunt zoeken op basis van de volgende opties (voorspelling):
 * Afdrukstand
 * Stijl
 * Inzichten
+
+<!-- TBD keystroke 65 article and port applicable changes here. This content goes. -->
 
 U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen/verwijderen met behulp van [zoekfacetten](search-facets.md). Voer de volgende stappen uit om het deelvenster Filters weer te geven:
 
