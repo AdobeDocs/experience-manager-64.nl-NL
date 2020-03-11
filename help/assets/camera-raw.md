@@ -3,7 +3,7 @@ title: Camera Raw-ondersteuning
 description: Leer hoe u ondersteuning voor Camera Raw inschakelt in Adobe Experience Manager-middelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -20,7 +20,7 @@ Voer de volgende stappen uit om Camera Raw-ondersteuning in Adobe Experience Man
 
 1. Download het [Camera Raw-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van het Delen van pakketten.
 
-1. Toegang `https://[aem_server]:[port]/workflow`. Open de workflow **[!UICONTROL DAM Update Asset]** .
+1. Ga naar `https://[aem_server]:[port]/workflow`. Open de workflow **[!UICONTROL DAM Update Asset]** .
 
 1. Open de stap Miniaturen **** verwerken.
 
@@ -57,11 +57,11 @@ U kunt nu Camera Raw-bestanden importeren in AEM-elementen. Nadat u het Camera R
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
-*Afbeelding: Opties in het zijpaneel.*
+*Afbeelding: Opties in het zijvenster*
 
-![chlimage_1-337](assets/chlimage_1-338.png)
+![chlimage_1-338](assets/chlimage_1-338.png)
 
-*Afbeelding: Gebruik deze optie om lichte bewerkingen uit te voeren op uw afbeeldingen.*
+*Afbeelding: Met deze optie kunt u lichte bewerkingen uitvoeren op uw afbeeldingen*
 
 Nadat u de bewerkingen in een Camera Raw-afbeelding hebt opgeslagen, `AdjustedPreview.jpg` wordt een nieuwe uitvoering voor de afbeelding gegenereerd. Voor andere afbeeldingstypen, behalve Camera Raw, worden de wijzigingen in alle uitvoeringen doorgevoerd.
 
