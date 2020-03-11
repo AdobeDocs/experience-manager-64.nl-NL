@@ -1,16 +1,9 @@
 ---
 title: De Rich Text Editor configureren
-seo-title: De Rich Text Editor configureren
 description: Leer om de Rich Text Editor van AEM te vormen.
-seo-description: Leer om de Rich Text Editor van AEM te vormen.
-uuid: 82d2fe41-676a-4a49-939f-13374b9d869f
-contentOwner: asgupta
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: 9248d09c-b749-4aca-9167-1707c1dd8a53
+contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 01a748a6f6f92c752fc6a14005f236fee304c2eb
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -25,26 +18,27 @@ Het volgende werkschema illustreert een geadviseerde orde om de de configuratiet
 
 ![Normale workflow voor het configureren van Rich Text Editor](assets/rte_workflow_v1.png)
 
-**** Afbeelding: De *typische werkstroom om de Rich Text Editor te vormen*
+*Afbeelding: Normale workflow voor het configureren van Rich Text Editor*
 
 ## Interface met aanraakbediening en klassieke gebruikersinterface {#understand-touch-enabled-ui-and-classic-ui}
 
-De interface met aanraakbediening is de standaardinterface voor AEM. Adobe introduceerde Touch UI met [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor ontwerpomgeving, in versie 5.6.De aanraakinterface is ontworpen voor touch- en desktopapparaten. De interface verschilt aanzienlijk van de oorspronkelijke klassieke interface.
+De interface met aanraakbediening is de standaardinterface voor AEM. Adobe introduceerde Touch UI met [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor ontwerpomgeving, in versie 5.6. De aanraakinterface is ontworpen voor touch- en desktopapparaten. De interface verschilt aanzienlijk van de oorspronkelijke klassieke interface.
 
 ![De rijke toolbar van de Redacteur van de Tekst in Touch-Toegelaten UI](assets/chlimage_1-404.png)
 
-**** Afbeelding: Werkbalk van de *Rich Text Editor in UI met aanraakbediening*
+*Afbeelding: De rijke toolbar van de Redacteur van de Tekst in Touch-Toegelaten UI*
 
 ![De Rich Text Editor-werkbalk in de klassieke gebruikersinterface](assets/rtedefault.png)
 
-**** Afbeelding: Werkbalk *van de Rich Text Editor in de klassieke gebruikersinterface*
+*Afbeelding: De Rich Text Editor-werkbalk in de klassieke gebruikersinterface*
 
-**Zie ook**:
+>[!MORELIKETHIS]
+>
+>* [UI-aanbevelingen](/help/sites-deploying/ui-recommendations.md)
+>* Informatie over het vervangen van de klassieke gebruikersinterface vindt u in [AEM 6.4 Release-notities](/help/release-notes/deprecated-removed-features.md)
+>* Zie [Aanraakinterface en Klassieke UI voor het verschil tussen de gebruikersinterface](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
+>* Zie [Concepten van AEM Touch-interface voor meer informatie over de interface met aanraakbediening](/help/sites-developing/touch-ui-concepts.md)
 
-* [UI-aanbevelingen](/help/sites-deploying/ui-recommendations.md)
-* Informatie over het vervangen van de klassieke gebruikersinterface vindt u in [AEM 6.4 Release-notities](/help/release-notes/deprecated-removed-features.md)
-* Zie [Aanraakinterface en Klassieke UI voor het verschil tussen de gebruikersinterface](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
-* Zie [Concepten van AEM Touch-interface voor meer informatie over de interface met aanraakbediening](/help/sites-developing/touch-ui-concepts.md)
 
 ## Verschillende bewerkingsmodi {#editingmodes}
 
@@ -100,7 +94,7 @@ Als u de inhoud opent (met een langzaam dubbeltikken/klikken), kan deze op de pa
 
 ![Inline bewerken met de standaardwerkbalk in Touch-gebruikersinterface](assets/chlimage_1-405.png)
 
-**** Afbeelding: Inline bewerken met de standaardwerkbalk in de gebruikersinterface voor *aanraakbediening*
+*Afbeelding: Inline bewerken met de standaardwerkbalk in Touch-gebruikersinterface*
 
 In de klassieke gebruikersinterface kunt u met een trage dubbelklik op de component inline bewerken en met een oranje omtrek de inhoud markeren. Als de Inhoudszoeker is geopend, wordt boven in het venster een werkbalk weergegeven met de beschikbare RTE-opmaakopties. Als de Inhoudszoeker niet is geopend, worden de opmaakopties niet weergegeven en kunt u alleen standaardtekstbewerkingen uitvoeren.
 
@@ -112,7 +106,7 @@ De modus Volledig scherm van het dialoogvenster bevat een gedetailleerde RTE-wer
 
 ![De gedetailleerde RTE-werkbalk wanneer u bewerkingen uitvoert in de modus Volledig scherm in de gebruikersinterface met aanraakbediening](assets/chlimage_1-406.png)
 
-**** Afbeelding: De gedetailleerde RTE-werkbalk wanneer u bewerkingen uitvoert in de modus Volledig scherm in de interface met aanraakbediening **
+*Afbeelding: De gedetailleerde RTE-werkbalk wanneer u bewerkingen uitvoert in de modus Volledig scherm in de gebruikersinterface met aanraakbediening*
 
 ### Dialoogbewerkingen {#dialog-editing}
 
@@ -120,11 +114,11 @@ Wanneer dubbelgeklikt wordt op een component in de klassieke gebruikersinterface
 
 ![Dialoogbewerkingsmodus in interface met aanraakbediening](assets/dialog_editing_modetouchui.png)
 
-**** Afbeelding: Bewerkingsmodus van *dialoogvenster in interface met aanraakbediening*
+*Afbeelding: Dialoogbewerkingsmodus in interface met aanraakbediening*
 
 ![Dialoogvenster in klassieke gebruikersinterface met gedetailleerde werkbalk voor bewerken](assets/chlimage_1-407.png)
 
-**** Afbeelding: Dialoogvenster in *klassieke gebruikersinterface met gedetailleerde werkbalk voor bewerken*
+*Afbeelding: Dialoogvenster in klassieke gebruikersinterface met gedetailleerde werkbalk voor bewerken*
 
 ## Informatie over RTE-plug-ins en de bijbehorende functies {#aboutplugins}
 
@@ -266,7 +260,7 @@ Configureer de volgende eigenschappen die alleen van toepassing zijn in de bewer
 
    Wanneer deze eigenschap true is, wordt het bewerken van Richtingstekst standaard gestart op de gebeurtenis &quot;foundation-contentloaded&quot;.
 
-   Om dit te verhinderen, plaats het bezit aan `customStart` `True`en teweegbrengt de gebeurtenis &quot;rte-start&quot;om RTE het uitgeven te beginnen. Wanneer deze eigenschap &#39;true&#39; is, werkt het standaardgedrag, het starten bij klikken.
+   Om dit te verhinderen, plaats het bezit aan `customStart` `True`en teweegbrengt de gebeurtenis &quot;rte-start&quot;om RTE het uitgeven te beginnen. Wanneer deze eigenschap &#39;true&#39; is, werkt het standaardgedrag bij klikken met de beginwaarde niet.
 
 * `customStart`: Plaats dit bezit Van Boole dat op de knoop RTE aan wordt bepaald, om te controleren wanneer om RTE te beginnen door de gebeurtenis te teweegbrengen `True``rte-start`.
 
