@@ -3,7 +3,7 @@ title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: e6c3254b1913f300f5c4bf99c75734c4a38cf021
+source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 ---
 
@@ -35,7 +35,7 @@ Overweeg een scenario waarin u trapsgewijze metagegevens wilt weergeven op basis
 Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verplicht veld.
 
 1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Middelen]** > **[!UICONTROL Metagegevensschema&#39;s]**.
-1. Selecteer op de pagina **[!UICONTROL Schema-formulieren]** een schema en tik op **[!UICONTROL Bewerken]** of klik op Bewerken op de werkbalk om het schema te bewerken.
+1. In the **[!UICONTROL Schema Forms]** page, select a schema form and then tap/click **[!UICONTROL Edit]** from the toolbar to edit the schema.
 
    ![select_form](assets/select_form.png)
 
@@ -76,7 +76,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
    ![select_dependentfield](assets/select_dependentfield.png)
 
 1. Kies onder **[!UICONTROL Vereiste]** de optie **[!UICONTROL Vereist op basis van de optie Nieuwe regel]** .
-1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik/klik op **[!UICONTROL Gereed]** om de wijzigingen op te slaan.
+1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
    ![define_rule](assets/define_rule.png)
 
@@ -86,7 +86,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
 1. Kies onder **[!UICONTROL Zichtbaarheid]** de optie **[!UICONTROL Zichtbaar op basis van de nieuwe regeloptie]** .
 
-1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. Kies in dit geval **[!UICONTROL Video]**. Tik/klik op **[!UICONTROL Gereed]** om de wijzigingen op te slaan.
+1. Tik/klik op **[!UICONTROL Regel]** toevoegen en kies het veld **[!UICONTROL Elementtype]** om een afhankelijkheid te maken. Kies ook de veldwaarde waarop u de afhankelijkheid wilt maken. In this case, choose **[!UICONTROL Video]**. Tap/click **[!UICONTROL Done]** to save the changes.
 
    ![define_visibilityrule](assets/define_visibilityrule.png)
 
@@ -96,7 +96,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    >[!NOTE]
    >
-   >U kunt **[!UICONTROL Vereiste]** - en **[!UICONTROL Zichtbaarheidsvoorwaarde]** onafhankelijk van elkaar toepassen.
+   >You can apply **[!UICONTROL Requirement]** condition and **[!UICONTROL Visibility]** condition independent of each other.
 
 1. Maak op dezelfde manier een afhankelijkheid tussen de waarde Video in het veld Type element en andere velden, zoals Codec en Duur.
 1. Herhaal de stappen om documentelementen (PDF en Word) afhankelijk te maken in het veld **[!UICONTROL Elementtype]** en in velden zoals Aantal pagina&#39;s en Auteur.
@@ -106,8 +106,8 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![Trapsgewijze metagegevens voor video-elementen](assets/video_asset.png)
 
-   *Afbeelding:Trapsgewijze metagegevens voor video-elementen*
+   *Afbeelding: Trapsgewijze metagegevens voor video-elementen*
 
    ![Trapsgewijze metagegevens voor documentelementen](assets/doc_type_fields.png)
 
-   *Afbeelding:Trapsgewijze metagegevens voor documentelementen*
+   *Afbeelding: Trapsgewijze metagegevens voor documentelementen*
