@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: c255e32f1a90df0b97a89b49f74468d4f7c0be34
+source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
 
 ---
 
@@ -35,7 +35,7 @@ De volgende OSGi configuratiemontages (die volgens bundel worden vermeld) zijn r
 
 >[!NOTE]
 >
->Het [hulpmiddel van de Details](https://www.aemstuff.com/osgi.html) van AEM OSGi Config kan worden gebruikt om van de standaardOSGi configuraties een lijst te maken.
+>Het hulpmiddel van Diff van de Configuratie OSGi, een deel van de Hulpmiddelen [van](https://helpx.adobe.com/experience-manager/kb/tools/aem-tools.html)AEM, kan worden gebruikt om van de standaardOSGi configuraties een lijst te maken.
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ Er zijn verschillende configuratie-eigenschappen beschikbaar:
 
 **De dag CQ zuivert filter** WCM Dit is nuttig wanneer het ontwikkelen aangezien het het gebruik van achtervoegsels zoals ?debug=layout toestaat wanneer het toegang tot van een pagina. Bijvoorbeeld, zal http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout lay-outinformatie verstrekken die van belang voor de ontwikkelaar kan zijn.
 
-* Schakel deze optie uit bij productie-instanties om de prestaties en beveiliging te garanderen.
+* Schakel deze optie uit op productieexemplaren om prestaties en beveiliging te garanderen.
 
 **Day CQ WCM-filter** configureren:
 
