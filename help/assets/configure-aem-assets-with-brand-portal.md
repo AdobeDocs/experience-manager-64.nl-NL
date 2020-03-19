@@ -3,7 +3,7 @@ title: AEM-middelen configureren met Brand Portal
 description: 'Leer hoe u AEM-middelen configureert met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: c269402e253ae71f51de5bf7c05970abb51ef192
+source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
 
 ---
 
@@ -195,7 +195,6 @@ Controleer of u de volgende stappen hebt uitgevoerd:
 >
 >Zorg ervoor dat de configuratie gezond is. Als de configuratie ongezond is, verwijdert u deze en maakt u een nieuwe, gezonde configuratie.
 
-<br/> <br/>
 
 ### Cloudservice configureren {#configure-the-cloud-service}
 
