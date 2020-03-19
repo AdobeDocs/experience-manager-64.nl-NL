@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 793305a07cc23e5e551871362e8898ee7bafc0c2
 
 ---
 
@@ -154,7 +154,7 @@ Zie ook
 * [Toegangsbeheer](/help/sites-administering/user-group-ac-admin.md#access-right-management)
 * De sectie van het Oplossen van problemen [wijzigt de Uitzondering van de Verrichting tijdens de Verwerking](#modify-operation-exception-during-response-processing)van de Reactie.
 
-### 3.Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
+### 3. Adobe Granite Distribution - Encrypted Password Transport Secret Provider {#adobegraniteencpasswrd}
 
 **Machtigingen configureren**
 
@@ -202,7 +202,7 @@ Zodra een geautoriseerde gebruiker, een lid van de **`administrators`**gebruiker
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### 5.Adobe Granite Distribution - Diff Observer Factory {#diffobserver}
+### 5. Adobe Granite Distribution - Diff Observer Factory {#diffobserver}
 
 **Groepssynchronisatie inschakelen**
 
@@ -350,7 +350,7 @@ Als het Verdelen identiteitskaart het zelfde voor veelvoudige publiceer instanti
 
 Om te controleren of alle waarden voor de Verschuivende id verschillen, publiceert u op elke publicatie-instantie:
 
-1. surf naar [https://*host:poort*/systeem/console/status-slingsettings](http://localhost:4503/system/console/status-slingsettings)
+1. bladeren naar `http://<host>:<port>/system/console/status-slingsettings`
 1. Controleer de waarde van de **verkoopID**
 
 ![chlimage_1-395](assets/chlimage_1-395.png)
@@ -482,7 +482,7 @@ In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnosti
 
 ### Configuratie onjuist toegevoegd {#improperconfig}
 
-Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou *existing *default configuratie *uitgegeven* moeten zijn.
+Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou de *existing *default configuratie *uitgegeven* moeten zijn.
 
 Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van het Web zouden moeten verschijnen. Als er meerdere exemplaren worden weergegeven, moet de toegevoegde configuratie worden verwijderd.
 
