@@ -3,7 +3,7 @@ title: Bulkmetagegevens importeren en exporteren
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 093524d47565f63c8179abee704720fe23b0d09a
 
 ---
 
@@ -14,33 +14,30 @@ Met AEM-middelen kunt u metagegevens van elementen in bulk importeren met behulp
 
 ## Metagegevens importeren {#import-metadata}
 
-De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan vanwege de terugzetactiviteit van XMP-gegevens bronintensief zijn als de werkstroommarkering wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
+De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan vanwege de terugzetactiviteit van XMP-gegevens bronintensief zijn als de werkstroommarkering wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server om te voorkomen dat de prestaties voor andere gebruikers worden beïnvloed.
 
 >[!NOTE]
 >
 >Registreer de naamruimten eerst om metagegevens in aangepaste naamruimten te importeren.
 
+Voer de volgende stappen uit om metagegevens in bulk te importeren:
+
 1. Navigeer naar de gebruikersinterface Middelen en tik op **[!UICONTROL Maken]** /klik op de werkbalk.
 1. Selecteer **[!UICONTROL Metagegevens]** in het menu.
-1. Tik op de pagina **[!UICONTROL Metagegevens importeren]** of klik op Bestand **** selecteren.  Selecteer het CSV-bestand met de metagegevens.
-1. Geef de volgende parameters op:
+1. Tik op de pagina **[!UICONTROL Metagegevens importeren]** of klik op Bestand **** selecteren.  Selecteer het CSV-bestand met de metadata.
+1. Controleer of het CSV-bestand de volgende parameters bevat:
 
    | Parameters voor het importeren van metagegevens | Beschrijving |
    |:---|:---|
    | [!UICONTROL Batchgrootte] | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
-   | [!UICONTROL Veldscheidingsteken] | De standaardwaarde is Komma. U kunt elk ander teken opgeven. |
-   | [!UICONTROL Meerdere waarden scheidingsteken] | Scheidingsteken voor metagegevenswaarden. Standaardwaarde is | . |
-   | [!UICONTROL Workflows starten] | Standaard false. Als deze zijn ingesteld op true en als de standaardinstellingen voor Launcher zijn ingesteld voor de DAM Metadata WriteBack Workflow (die metagegevens naar de binaire XMP-gegevens schrijft). Als u opstartworkflows inschakelt, wordt het systeem trager. |
+   | [!UICONTROL Veldscheidingsteken] | De standaardwaarde is `,` - een komma. U kunt elk ander teken opgeven. |
+   | [!UICONTROL Meerdere waarden scheidingsteken] | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|` - een pipe. |
+   | [!UICONTROL Workflows starten] | Standaard false. Als deze optie is ingesteld op true en als de standaardinstellingen voor Launcher zijn ingesteld, `DAM Metadata WriteBack Workflow` (er worden metagegevens naar de binaire XMP-gegevens geschreven). Het inschakelen van opstartworkflows heeft gevolgen voor de prestaties van het systeem. |
    | [!UICONTROL Kolomnaam elementpad] | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
 1. Tik/klik op **[!UICONTROL Importeren]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
 
-<!-- TBD: Format characters in the table using backticks and add UICONTROL after table is converted to MD
--->
-
 ## Metagegevens exporteren {#export-metadata}
-
-U kunt metada voor veelvoudige activa in een formaat CSV uitvoeren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt AEM de eigenschappen van het knooppunt Asset `jcr:content/metadata` en de onderliggende knooppunten en exporteert de eigenschappen van de metagegevens in een CSV-bestand.
 
 Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs exporteren:
 
@@ -49,9 +46,13 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 * Test of controleer de metagegevens op conformiteit.
 * De metagegevens extern maken voor afzonderlijke lokalisatie.
 
+U kunt metagegevens voor meerdere elementen in CSV-indeling exporteren. De metagegevens worden asynchroon geëxporteerd en hebben geen invloed op de prestaties van het systeem. Als u metagegevens wilt exporteren, doorloopt AEM de eigenschappen van het knooppunt Asset `jcr:content/metadata` en de onderliggende knooppunten en exporteert de eigenschappen van de metagegevens in een CSV-bestand.
+
+Voer de volgende stappen uit als u metagegevens van meerdere elementen bulksgewijs wilt exporteren:
+
 1. Selecteer de elementenmap die elementen bevat waarvoor u metagegevens wilt exporteren. Selecteer Metagegevens **** exporteren in de werkbalk.
 
-1. Geef in het dialoogvenster Metagegevens exporteren een naam op voor het CSV-bestand. Selecteer Elementen **[!UICONTROL opnemen in submappen]** als u metagegevens voor elementen in submappen wilt exporteren.
+1. Geef in het dialoogvenster [!UICONTROL Metagegevens exporteren] een naam op voor het CSV-bestand. Selecteer Elementen **[!UICONTROL opnemen in submappen]** als u metagegevens voor elementen in submappen wilt exporteren.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 
@@ -60,6 +61,6 @@ Hier volgen enkele voorbeelden van het gebruik van metagegevens voor bulksgewijs
 
 1. Tik op de werkbalk of klik op **[!UICONTROL Exporteren]**. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
 
-1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Openen]** op de werkbalk. Tik op of klik op **[!UICONTROL CSV-download]** op de werkbalk om het CSV-bestand met de metagegevens te downloaden. Click **[!UICONTROL Close]**.
+1. Open het bericht in het Postvak IN voor de exporttaak. Select the job and click **[!UICONTROL Open]** from the toolbar. To download the CSV file with the metadata, tap/click **[!UICONTROL CSV Download]** from the toolbar. Click **[!UICONTROL Close]**.
 
    ![csv_download](assets/csv_download.png)
