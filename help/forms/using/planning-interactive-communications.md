@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
 
 ---
 
@@ -40,8 +40,6 @@ Een interactieve communicatie omvat de volgende elementen:
 ## Anatomie van de interactieve communicatie {#anatomy-of-the-interactive-communication}
 
 Zodra u de inhoud en de elementen hebt voltooid die worden gebruikt om uw Interactieve Mededeling tot stand te brengen, kunt u een anatomie van de Interactieve Communicatie tot stand brengen. De anatomie moet de details hebben die in de sectie van de Overwegingen van de [Planning](/help/forms/using/planning-interactive-communications.md#planning-considerations) worden vermeld. Gebaseerd op ons gebruiksgeval, is het volgende een voorbeeld van een anatomie van de maandelijkse rekening die een telecomexploitant aan zijn klanten verzendt.
-
-Plaatsaanduiding voor de anatomische video
 
 De anatomie bevat gegevens met de volgende invoermodi:
 
@@ -133,7 +131,7 @@ De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van i
     <ul> 
      <li>Date</li> 
      <li>Time</li> 
-     <li> Getal</li> 
+     <li>Getal</li> 
      <li>Duur</li> 
      <li>Heffingen</li> 
     </ul> </td> 
