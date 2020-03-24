@@ -3,7 +3,7 @@ title: XMP-terugverwijzing naar uitvoeringen
 description: Leer hoe de functie XMP-schrijfback de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
 
 ---
 
@@ -16,7 +16,7 @@ Wanneer u de metagegevens voor een element wijzigt vanuit AEM-elementen of wanne
 
 De functie Terugschrijven XMP verspreidt de metagegevenswijzigingen in alle of specifieke uitvoeringen van het element.
 
-Overweeg een scenario waarin u de eigenschap Titel van het element &#39;**Klassiek leer**&#39; wijzigt in &#39;**Nylon**&#39;.
+Overweeg een scenario waar u het bezit van de [!UICONTROL Titel] van het element `Classic Leather` aan `Nylon`. wijzigt.
 
 ![metadata](assets/metadata.png)
 
@@ -32,7 +32,7 @@ Met de functie Terugschrijven XMP kunt u de wijzigingen in metagegevens doorgeve
 
 Om de meta-gegevensveranderingen toe te laten om aan de vertoningen van de activa worden verspreid wanneer het uploaden van het, wijzig de configuratie van de Maker **van de Vertoning van** Adobe CQ DAM in de Manager van de Configuratie.
 
-1. Open Configuratiebeheer vanuit `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Open Configuratiebeheer vanuit `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de configuratie van **[!UICONTROL Adobe CQ DAM Rendition Maker]** .
 1. Selecteer de optie **[!UICONTROL XMP]** doorgeven en sla de wijzigingen op.
 
@@ -44,21 +44,18 @@ Als u wilt dat de XMP-terugdraaifunctie metagegevenswijzigingen doorgeeft aan ge
 
 Voer de volgende stappen uit voor de functie Terugschrijven XMP om metagegevens door te geven aan de vertoningsminiaturen 140.100.png en 319.319.png.
 
-1. Tik/klik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen > Workflow > Modellen]**.
-1. Open vanaf de pagina Modellen het workflowmodel voor terugschrijven van **DAM-metagegevens** .
+1. Navigeer in Experience Manager naar **[!UICONTROL Extra > Workflow > Modellen]**.
+1. Open vanaf de pagina [!UICONTROL Modellen] het workflowmodel voor terugschrijven van **[!UICONTROL DAM-metagegevens]** .
 1. Open de stap **[!UICONTROL XMP-terugschrijfproces]** op de pagina met eigenschappen voor terugschrijven van metagegevens van **[!UICONTROL DAM]** .
-1. Tik in het dialoogvenster Step Properties op of klik op het tabblad **[!UICONTROL Process]** .
-1. Voeg in het vak **[!UICONTROL Argumenten]** `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`toe en tik/klik op **[!UICONTROL OK]**.
+1. Tik in het dialoogvenster **[!UICONTROL Step Properties]** op het tabblad **[!UICONTROL Process]** of klik op dit tabblad.
+1. In het **[!UICONTROL vakje van Argumenten]** , voeg toe `rendition:cq5dam.thumbnail.140.100.png,rendition:cq5dam.thumbnail.319.319.png`. Tik/klik op **[!UICONTROL OK]**.
 
    ![step_properties](assets/step_properties.png)
 
-1. Sla de wijzigingen op.
-1. Als u de TIF-piramide-uitvoeringen voor dynamische media-afbeeldingen opnieuw wilt genereren met de nieuwe kenmerken, voegt u de stap **[!UICONTROL Dynamische media-afbeeldingselementen]** verwerken toe aan de terugschrijfworkflow voor DAM-metagegevens.
-PTIFF-uitvoeringen worden alleen lokaal gemaakt en opgeslagen in een Dynamic Media Hybrid-implementatie.
+1. To regenerate the pyramid TIFF renditions for Dynamic Media images with the new attributes, add the **[!UICONTROL Dynamic Media Process Image Assets]** step to the DAM Metadata Writeback workflow.
+PTIFF-uitvoeringen worden alleen lokaal gemaakt en opgeslagen in de hybride modus Dynamische media. Sla de workflow op.
 
-1. Sla de workflow op.
-
-De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen miniatuur.140.100.png en miniatuur.319.319.png van het element, en niet aan de andere.
+De wijzigingen in de metagegevens worden doorgegeven aan de uitvoeringen `thumbnail.140.100.png` en `thumbnail.319.319.png` het element, en niet aan de andere.
 
 >[!NOTE]
 >
@@ -78,17 +75,14 @@ Door het filteren met whitelist van XMP-metagegevens wordt dit probleem opgelost
 >
 >Filteren werkt alleen voor de eigenschappen die zijn afgeleid van XMP-bronnen in binaire elementen. Voor de eigenschappen die van niet-XMP bronnen, zoals formaten EXIF en IPTC worden afgeleid, werkt het filtreren niet. De aanmaakdatum van elementen wordt bijvoorbeeld opgeslagen in een eigenschap met de naam EXIF TIFF. `CreateDate` Deze waarde wordt in het metagegevensveld genaamd `exif:DateTimeOriginal`. Aangezien de bron een niet-XMP-bron is, werkt het filteren niet op deze eigenschap.
 
-1. Open Configuratiebeheer vanuit `https://[AEM_server]:[port]/system/console/configMgr`.
+1. Open Configuratiebeheer vanuit `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL configuratie van Adobe CQ DAM XmpFilter]** .
 1. Als u witfilters wilt toepassen, selecteert u Whitelist **[!UICONTROL toepassen op XMP-eigenschappen]** en geeft u de eigenschappen op die moeten worden geïmporteerd in het vak **[!UICONTROL Whitelisted XML Names for XMP filtering]** .
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. Als u de op de zwarte lijst geplaatste XMP-eigenschappen wilt uitfilteren nadat u een whitelist-filter hebt toegepast, geeft u deze op in het vak XML-namen op de zwarte lijst voor het filteren **** van XMP.
+1. Als u de op de zwarte lijst geplaatste XMP-eigenschappen wilt uitfilteren nadat u een whitelist-filter hebt toegepast, geeft u deze op in het vak XML-namen op de zwarte lijst voor het filteren **** van XMP. Sla de wijzigingen op.
 
    >[!NOTE]
    >
-   >De optie Blacklist **[!UICONTROL toepassen op XMP-eigenschappen]** is standaard geselecteerd. Met andere woorden, filtering op zwarte lijsten is standaard ingeschakeld. Als u filteren op zwarte lijsten wilt uitschakelen, schakelt u de optie Blacklist **[!UICONTROL toepassen op XMP-eigenschappen]** uit.
-
-1. Sla de wijzigingen op.
-
+   >De optie Blacklist **[!UICONTROL toepassen op XMP-eigenschappen]** is standaard geselecteerd. Met andere woorden, filtering op zwarte lijsten is standaard ingeschakeld. Schakel Zwarte lijst **[!UICONTROL toepassen op XMP-eigenschappen]** uit om filteren op zwarte lijsten uit te schakelen.
