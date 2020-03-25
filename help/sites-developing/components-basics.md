@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: a8e5786731c24dc4c0122dbc75e59a6c3be82cf7
+source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
 
 ---
 
@@ -216,7 +216,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
-1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de [Coral UI-bibliotheek](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verwijst dat in de componentbrowser moet worden weergegeven
+1. `cq:icon` - Tekenreekseigenschap die verwijst naar een standaardpictogram in de [Coral UI-bibliotheek](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) dat moet worden weergegeven in de componentbrowser
 
    * Gebruik de waarde van het HTML-kenmerk van het pictogram Coral.
 
@@ -321,7 +321,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr> 
    <td><code>dialogPath</code></td> 
    <td><code>String</code></td> 
-   <td>Pad naar een dialoogvenster om het geval te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td> 
+   <td>Pad naar een dialoogvenster om het hoofdlettergebruik te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -586,7 +586,7 @@ Het bewerkingsgedrag van een component wordt geconfigureerd door een `cq:editCon
 * [ Eigenschappen `cq:editConfig` van](#configuring-with-cq-editconfig-properties)knooppunten:
 
    * `cq:actions` ( `String array`): definieert de handelingen die op de component kunnen worden uitgevoerd.
-   * `cq:layout` ( `String`):: definieert hoe de component wordt bewerkt in de klassieke UI.
+   * `cq:layout` ( `String`): : definieert hoe de component wordt bewerkt in de klassieke UI.
    * `cq:dialogMode` ( `String`): bepaalt hoe de componentendialoog in klassieke UI wordt geopend
 
       * In de interface met aanraakbediening zweven dialoogvensters altijd in de bureaubladmodus en worden ze automatisch geopend als volledig scherm in mobiele apparaten.
@@ -657,6 +657,10 @@ De `cq:actions` eigenschap ( `String array`) definieert een of meer handelingen 
    <td><code>edit</code></td> 
    <td>Hiermee voegt u een knop toe om de component te bewerken.</td> 
   </tr> 
+    <tr>
+    <td><code>editannotate</code></td>
+    <td>Hiermee voegt u een knop toe om de component te bewerken en <a href="/help/sites-authoring/annotations.md">annotaties</a>toe te staan.</td>
+   </tr>
   <tr> 
    <td><code>delete</code></td> 
    <td>Hiermee wordt een knop toegevoegd om de component te verwijderen</td> 
@@ -702,7 +706,7 @@ De `cq:layout` eigenschap ( `String`) definieert hoe de component kan worden bew
   </tr> 
   <tr> 
    <td><code>rollover</code></td> 
-   <td> Standaardwaarde. De componenteditie is via klikken en/of contextmenu toegankelijk "bij muisbeweging over".<br /> Houd er rekening mee dat het bijbehorende clientobject voor geavanceerd gebruik: <code>CQ.wcm.EditRollover</code>.</td> 
+   <td>Standaardwaarde. De componenteditie is via klikken en/of contextmenu toegankelijk "bij muisbeweging over".<br /> Houd er rekening mee dat het bijbehorende clientobject voor geavanceerd gebruik: <code>CQ.wcm.EditRollover</code>.</td> 
   </tr> 
   <tr> 
    <td><code>editbar</code></td> 
