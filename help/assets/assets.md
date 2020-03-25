@@ -3,7 +3,7 @@ title: AEM-elementen
 description: Leer wat het beheer van digitale middelen is, de gebruiksgevallen ervan en de AEM Asset-aanbieding van Adobe.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 077cc39c5ed47371a4e3fae1e991209c7bfe6b80
 
 ---
 
@@ -64,21 +64,21 @@ Een element is in wezen een binair plus metagegevens plus uitvoeringen plus sube
 
 Wanneer u met digitale middelen werkt in AEM, moet u de volgende terminologie begrijpen:
 
-* **** Verzameling: Een verzameling elementen op basis van de fysieke locatie (map), algemene eigenschappen (opgeslagen zoekmap) of gebruikersselectie (lichtbakmappen).
+* **Verzameling:** Een verzameling elementen op basis van de fysieke locatie (map), algemene eigenschappen (opgeslagen zoekmap) of gebruikersselectie (lichtbakmappen).
 
-* **** Metagegevens: Elementen hebben metagegevens; bijvoorbeeld auteur, vervaldatum, DRM-gegevens (Digital Rights Management) enzovoort. Metagegevens zijn toegankelijk. AEM Assets steunt de volgende diverse gemeenschappelijke meta-gegevensschema&#39;s uit de doos:
+* **Metagegevens:** Elementen hebben metagegevens; bijvoorbeeld auteur, vervaldatum, DRM-gegevens (Digital Rights Management) enzovoort. Metagegevens zijn toegankelijk. AEM Assets steunt de volgende diverse gemeenschappelijke meta-gegevensschema&#39;s uit de doos:
 
    * **Dublin Core**: inclusief auteur, beschrijving, datum, onderwerp, enzovoort.
    * **IPTC**: inclusief gebeurtenis, model, locatie, enzovoort.
    * **WCM**: inclusief pagina-eigenschappen, op tijd en uit, enzovoort.
 
-* **** Tags: Elementen kunnen worden gelabeld en geclassificeerd. Zie Tags gebruiken en Tags beheren.
+* **Tags:** Elementen kunnen worden gelabeld en geclassificeerd. Zie Tags gebruiken en Tags beheren.
 
-* **** Uitvoeringen:Een vertoning is de binaire representatie van een element. Elementen hebben altijd een primaire representatie, namelijk die van het geüploade bestand. Ze kunnen een willekeurig aantal aanvullende voorstellingen hebben die worden gemaakt, bijvoorbeeld door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
+* **Uitvoeringen:** Een vertoning is de binaire representatie van een element. Elementen hebben altijd een primaire representatie, namelijk die van het geüploade bestand. Ze kunnen een willekeurig aantal aanvullende voorstellingen hebben die worden gemaakt, bijvoorbeeld door aangepaste workflowstappen of wanneer een element wordt geüpload. Uitvoeringen kunnen een andere grootte hebben, met een andere resolutie, met een toegevoegd watermerk of een ander gewijzigd kenmerk.
 
-* **** Versies:Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie Versioning in AEM Assets.
+* **Versies:** Met Versioning maakt u een momentopname van digitale elementen op een bepaald tijdstip. U kunt middelen aan vorige versies herstellen. Zie [versioning in AEM Assets](managing-assets-touch-ui.md#asset-versioning).
 
-* **** Subactiva: Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een Adobe Photoshop-bestand of pagina&#39;s in een PDF-bestand. In AEM-middelen kunt u subelementen op dezelfde manier beheren als elementen.
+* **Subactiva:** Subelementen zijn elementen die een element vormen, bijvoorbeeld lagen in een Adobe Photoshop-bestand of pagina&#39;s in een PDF-bestand. In AEM-middelen kunt u subelementen op dezelfde manier beheren als elementen.
 
 ### Werken met middelen {#how-to-work-with-assets}
 
