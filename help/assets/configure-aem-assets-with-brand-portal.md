@@ -3,7 +3,7 @@ title: AEM-middelen configureren met Brand Portal
 description: 'Leer hoe u AEM-middelen configureert met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: bd6ae2ddf49091c3b25bac97761a593cdd0a56cc
+source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
 
 ---
 
@@ -17,12 +17,14 @@ Adobe Experience Manager-middelen (AEM) worden geconfigureerd met Brand Portal v
 >Het configureren van AEM-middelen met Brand Portal via Adobe I/O wordt ondersteund op AEM 6.4.8.0 en hoger.
 >
 >Eerder, werd het Portaal van het Merk gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning.
+
+
+>[!TIP]
 >
->Als u een bestaande gebruiker van het Portaal van het Merk met configuratie op erfenisOAuth Gateway bent, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op de I/O van Adobe tot stand te brengen.
+>***Alleen voor bestaande klanten***
 >
->Als u een bestaande gebruiker van het Portaal van het Merk met configuratie op erfenisOAuth Gateway bent, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op de I/O van Adobe tot stand te brengen.
->
->Nochtans, zal de bestaande configuratie blijven werken als u niet de configuraties wijzigt.
+>Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. Als er problemen optreden met de oudere OAuth Gateway-configuratie, verwijdert u de bestaande configuratie en maakt u een nieuwe configuratie via Adobe I/O.
+
 
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
 * [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe gebruiker van het Merk Portal bent en uw AEM Assets auteurinstantie met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie op de I/O van Adobe tot stand brengen.
