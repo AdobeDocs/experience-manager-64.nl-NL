@@ -3,7 +3,7 @@ title: Richtlijnen voor afstelling van middelenprestaties
 description: Belangrijke aandachtsgebieden rond AEM-configuratie, wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
 
 ---
 
@@ -39,7 +39,7 @@ mkfs -q /dev/ram1 800000
 
 In Windows OS moet u een stuurprogramma van een andere fabrikant gebruiken om een RAM-station te maken of gewoon krachtige opslagruimte zoals SSD gebruiken.
 
-Zodra het volume van de hoge prestatietemp klaar is, dan plaats de parameter JVM -Djava.io.tmpdir. U kunt bijvoorbeeld de JVM-parameter hieronder toevoegen aan de CQ_JVM_OPTS-variabele in het bin/start-script van AEM:
+Zodra het hoge prestaties tijdelijke volume klaar is, dan plaats de parameter JVM -Djava.io.tmpdir. U kunt bijvoorbeeld de JVM-parameter hieronder toevoegen aan de CQ_JVM_OPTS-variabele in het bin/start-script van AEM:
 
 `-Djava.io.tmpdir=/mnt/aem-tmp`
 
@@ -152,7 +152,7 @@ Standaard voert AEM een maximumaantal parallelle taken uit dat gelijk is aan het
 1. Klik op Bewerken in elke werkstroomwachtrij die relevant is voor uw implementatie, bijvoorbeeld de Granite Transient Workflow Queue.
 1. Wijzig de waarde van Maximale parallelle taken en klik op Opslaan.
 
-Het instellen van een wachtrij op de helft van de beschikbare processors is een werkbare oplossing om mee te beginnen. Het kan echter zijn dat u dit aantal moet verhogen of verlagen om een maximale doorvoer te bereiken en dat aantal aan te passen aan de omgeving. Er zijn afzonderlijke rijen voor tijdelijke en niet-tijdelijke werkstromen evenals andere processen, zoals externe werkschema&#39;s. Als meerdere wachtrijen die zijn ingesteld op 50% van de processors tegelijkertijd actief zijn, kan het systeem snel overbelast raken. De rijen die zwaar worden gebruikt variëren zeer over gebruikersimplementaties. Daarom kunt u hen voor maximumefficiency moeten zorgvuldig vormen zonder serverstabiliteit te offeren.
+Het instellen van een wachtrij op de helft van de beschikbare processors is een werkbare oplossing om mee te beginnen. Het kan echter zijn dat u dit aantal moet verhogen of verlagen om een maximale doorvoer te bereiken en dat aantal aan te passen aan de omgeving. Er zijn afzonderlijke rijen voor tijdelijke en niet-tijdelijke werkstromen evenals andere processen, zoals externe werkschema&#39;s. Als meerdere wachtrijen die zijn ingesteld op 50% van de processors tegelijkertijd actief zijn, kan het systeem snel overbelast raken. De rijen die zwaar worden gebruikt variëren zeer over gebruikersimplementaties. Daarom moet u ze mogelijk nauwkeurig configureren voor maximale efficiëntie zonder dat dit ten koste gaat van de stabiliteit van de server.
 
 ### Verschuiven {#offloading}
 
@@ -242,31 +242,33 @@ To disable Page Extraction:
 1. Click **[!UICONTROL OK]**
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents **workflow model 
 
---># Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
+-->
 
-Tijdens het uploaden van middelen maakt de workflow van AEM een afzonderlijk element voor elke pagina in PDF- en Office-documenten. Elk van deze pagina&#39;s is op zich al een middel dat extra schijfruimte verbruikt, versioning en extra werkstroomverwerking vereist. Als u geen afzonderlijke pagina&#39;s nodig hebt, schakelt u Subelement genereren en Pagina-uitname uit.
+<!--
+# Sub-asset generation and page extraction {#sub-asset-generation-and-page-extraction}
 
-Ga als volgt te werk om het genereren van subelementen uit te schakelen:
+During asset uploads, AEM's workflow creates a separate asset for each page in PDF and Office documents. Each of these pages is an asset by itself, which consumes additional disk space, requires versioning and additional workflow processing. If you do not require separate pages, disable Sub Asset Generation and Page Extraction.
 
-1. Open de **[!UICONTROL workflowconsole]** op */libs/cq/workflow/content/console.html*
+To disable Sub Asset generation, do the following:
 
-1. Selecteer het tabblad **[!UICONTROL Modellen]**
-1. Dubbelklik op het workflowmodel voor **[!UICONTROL DAM Update Asset]** .
-1. Verwijder stap Subelement **** verwerken uit workflowmodel van **[!UICONTROL DAM Update Asset]** .
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
 
-1. Klik op **[!UICONTROL Opslaan]**
+1. Select the **[!UICONTROL Models]** tab
+1. Double click the **[!UICONTROL DAM Update Asset]** workflow model
+1. Delete **[!UICONTROL Process Sub Asset]** step from **[!UICONTROL DAM Update Asset]** workflow model.
 
-Pagina-uitname uitschakelen:
+1. Click on **[!UICONTROL Save]**
 
-1. Open de **[!UICONTROL workflowconsole]** op */libs/cq/workflow/content/console.html*
+To disable Page Extraction:
 
-1. Het tabblad **[!UICONTROL Lanceerprogramma]** &#39;s selecteren
-1. Selecteer een startprogramma waarmee het workflowmodel voor **[!UICONTROL DAM Parse Word Documents]** wordt gestart
+1. Open the **[!UICONTROL Workflow Console]** tool by going to */libs/cq/workflow/content/console.html*
+
+1. Select the **[!UICONTROL Launchers]** tab
+1. Select a launcher that launches **[!UICONTROL DAM Parse Word Documents]** workflow model.
 1. Click **[!UICONTROL Edit]**
-1. Selecteer **[!UICONTROL Uitschakelen]**
+1. Select **[!UICONTROL Disable]**
 1. Click **[!UICONTROL OK]**
-1. Herhaal stap 3-6 voor andere opstartitems die **DAM de Documenten van Word **workflowmodel van de Parse van Word gebruiken
-
+1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
 ### XMP-schrijfback {#xmp-writeback}
@@ -283,7 +285,7 @@ Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve kr
 
 ## Replicatie {#replication}
 
-Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publicatieinstanties herhaalt, die de auteursinstantie vrijmaken.
+Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
 
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
@@ -345,12 +347,11 @@ Indexconfiguraties bijwerken om de herindexatietijd te verbeteren:
 
    type=&quot;String&quot;
 
-1. Stel in het knooppunt /oak:index/ntBaseLucene de eigenschap *reindex=true in*
+1. Stel de eigenschap in op het knooppunt /oak:index/ntBaseLucene `reindex=true`
 1. Klik op Alles **[!UICONTROL opslaan]**
 1. Controleer error.log om te zien wanneer het indexeren wordt voltooid:
 
-   
-Indexering voltooid voor indexen: [/ak:index/ntBaseLucene]
+   Indexering voltooid voor indexen: [/ak:index/ntBaseLucene]
 
 1. U kunt ook zien dat het indexeren door de /oak:index/ntBaseLucene knoop in CRXDe te verfrissen wordt voltooid aangezien het herindexbezit aan vals zou terugkeren
 1. Nadat het indexeren is voltooid, gaat u terug naar CRXDe en stelt u de eigenschap **[!UICONTROL type]** in op uitgeschakeld voor deze twee indexen
@@ -373,7 +374,7 @@ Als uw gebruikers niet de inhoud van activa hoeven te kunnen zoeken, bijvoorbeel
 
 Wanneer het creëren van vragen die grote resultaatreeksen produceren, gebruik de `guessTotal` parameter om zwaar geheugengebruik te vermijden wanneer u hen in werking stelt.
 
-## Bekende problemen {#known-issues}
+## Known issues {#known-issues}
 
 ### Grote bestanden {#large-files}
 
@@ -404,17 +405,17 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 
 ## Checklist voor prestaties van AEM-middelen {#aem-assets-performance-checklist}
 
-* HTTPS toestaan om rond om het even welke collectieve het verkeerssniffers van HTTP te krijgen
-* Een bekabelde verbinding gebruiken voor het uploaden van zware middelen
-* Implementeer in Java 8.
-* Optimale JVM-parameters instellen
-* Een FileSystem DataStore of een S3 DataStore configureren
-* Tijdelijke workflows inschakelen
-* Stem de workflowwachtrijen voor graniet af om gelijktijdige taken te beperken
-* Vorm ImageMagick om middelverbruik te beperken
-* Overbodige stappen verwijderen uit de DAM Update Asset-workflow
-* Workflow en versiebeheer configureren
-* De configuratie van de index van Lucene in versies voorafgaand aan 6.2 optimaliseren
+* Schakel HTTPS in om rondom eventuele bedrijfs-HTTP-verkeersfragmenten te komen.
+* Gebruik een bekabelde verbinding voor het uploaden van zware middelen.
+* Stel optimale JVM-parameters in.
+* Configureer een FileSystem DataStore of een S3 DataStore.
+* Genereren van subelementen uitschakelen. Als deze optie is ingeschakeld, maakt de workflow van AEM een afzonderlijk element voor elke pagina in een element van meerdere pagina&#39;s. Elk van deze pagina&#39;s is een individueel middel dat extra schijfruimte verbruikt, versioning, en extra werkschemaverwerking vereist. Als u geen afzonderlijke pagina&#39;s nodig hebt, schakelt u het genereren van subelementen en het uitnemen van pagina&#39;s uit.
+* Schakel tijdelijke workflows in.
+* Stem de wachtrijen voor de Granite-workflow af om gelijktijdige taken te beperken.
+* Vorm ImageMagick om middelconsumptie te beperken.
+* Verwijder overbodige stappen uit de DAM Update Asset-workflow.
+* Vorm werkschema en versie het zuiveren.
+* Optimaliseer de configuratie van de index van Lucene.
 * Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de Technische Ondersteuning van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik deze optie `guessTotal` om de queryprestaties te optimaliseren.
 * Als u AEM vormt om dossiertypes van de inhoud van de dossiers (door de Dienst [!UICONTROL van het Type van] Dag CQ DAM in de Console [!UICONTROL van het Web van]AEM te vormen) te ontdekken, upload vele dossiers in bulk tijdens niet piekuren aangezien de verrichting middel-intensief is.
