@@ -290,7 +290,7 @@ Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bij
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
 1. Voor elk van die replicatieagenten, laat **[!UICONTROL bij Ontvangen]** op het **[!UICONTROL lusje van Trekkers]** toe
 
 >[!NOTE]
