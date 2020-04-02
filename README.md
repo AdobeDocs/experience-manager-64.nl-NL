@@ -1,9 +1,9 @@
 ---
-source-git-commit: 56f859e9e6a31d81364b327e744749f8d5ff4da6
+source-git-commit: 56d3b9ccfa274ffb6305317bfe262060555b46a0
 translation-type: tm+mt
 
 ---
-# AEM 6.4-documentatie
+# Documentatie voor Adobe Experience Manager 6.4
 
 Dit is de opslagplaats voor documentatie van Adobe Experience Manager 6.4. In deze documentatie worden de installatie, het beheer, het ontwerpgebruik en het aanpassen van AEM besproken.
 
