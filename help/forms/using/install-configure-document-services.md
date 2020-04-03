@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: db1adfa79456ab856ec8bfe5d64ae6a128cb7360
 
 ---
 
@@ -66,7 +66,7 @@ Voordat u begint met het installeren en configureren van AEM Forms-documentservi
 * Er wordt een AEM-instantie uitgevoerd. In AEM-terminologie is een &quot;instantie&quot; een kopie van AEM die wordt uitgevoerd op een server in de auteur- of publicatiemodus. Over het algemeen hebt u slechts één AEM-instantie (auteur of publicatie) nodig om AEM Forms-documentservices uit te voeren:
 
    * **Auteur**: Een AEM-instantie die wordt gebruikt om inhoud te maken, te uploaden en te bewerken en om de website te beheren. Wanneer de inhoud gereed is om live te gaan, wordt deze gekopieerd naar de publicatie-instantie.
-   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek beschikbaar stelt.
+   * **Publiceren**: Een AEM-instantie die de gepubliceerde inhoud via internet of een intern netwerk aan het publiek levert.
 
 * Er wordt voldaan aan de geheugenvereisten. AEM Forms add-on package vereist:
 
@@ -189,7 +189,7 @@ Als u het op UNIX gebaseerde besturingssysteem gebruikt, installeert u de volgen
 
 ### Adobe Acrobat en toepassingen van derden installeren {#install-adobe-acrobat-and-third-party-applications}
 
-Als u de service PDF Generator gebruikt om eigen bestandsindelingen zoals Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 en Adobe Acrobat te converteren naar PDF-documenten, moet u ervoor zorgen dat deze toepassingen zijn geïnstalleerd op de AEM Forms-server.
+Als u de PDF Generator-service gaat gebruiken om eigen bestandsindelingen zoals Microsoft Word, Microsoft Excel, Microsoft PowerPoint, OpenOffice, WordPerfect X7 en Adobe Acrobat te converteren naar PDF-documenten, moet u ervoor zorgen dat deze toepassingen zijn geïnstalleerd op de AEM Forms-server.
 
 >[!NOTE]
 >
@@ -390,7 +390,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
 
    Als u het pakket handmatig downloadt via de directe koppeling in het [artikel met de release](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms, meldt u zich aan bij pakketbeheer, klikt u op Pakket **** uploaden, selecteert u het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u op **[!UICONTROL Installeren]**.
 
-1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer voorkomen in het bestand [AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
+1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Stop niet onmiddellijk de server.** Voordat u de AEM Forms-server stopt, wacht u tot de berichten ServiceEvent REGISTERED en ServiceEvent UNREGISTERED niet meer worden weergegeven in het bestand [AEM-Installation-Directory]/crx-quickstart/logs/error.log en het logbestand stabiel is.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
@@ -412,6 +412,7 @@ AEM Forms add-on package is een toepassing die op AEM wordt geïmplementeerd. He
    ```
    sling.bootdelegation.xerces=org.apache.xerces.*
    ```
+
 1. Sla het bestand op en sluit het.
 
 ### De service voor lettertypebeheer configureren {#configuring-the-font-manager-service}
@@ -572,11 +573,11 @@ De service Assembler is afhankelijk van de service Reader Extensions, de service
   </tr> 
   <tr> 
    <td>Forms Service</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-slaapstand-connector<br /> </td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector<br /> </td> 
   </tr> 
   <tr> 
    <td>Uitvoerservice</td> 
-   <td>com.adobe.livecycle.adobe-lc-forms-slaapstand-connector</td> 
+   <td>com.adobe.livecycle.adobe-lc-forms-bedrock-connector</td> 
   </tr> 
  </tbody> 
 </table>
