@@ -3,7 +3,7 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer om de stop-ins van de Redacteur van de Tekst te vormen AEM Rich om individuele functionaliteit toe te laten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
 
 ---
 
@@ -87,7 +87,9 @@ Nadat u een insteekmodule hebt geactiveerd, volgt u deze richtlijnen om de `feat
 
 ## Begrijp de findreplace plug-in {#understand--findreplace-plugin}
 
-Voor de `findreplace` insteekmodule is geen configuratie nodig. Het werkt zoals verwacht, buiten de doos.
+Voor de `findreplace` insteekmodule is geen configuratie nodig. Het werkt uit de doos.
+
+Wanneer u de vervangingsfunctie gebruikt, moet de te vervangen tekenreeks op hetzelfde moment worden ingevoerd als de zoektekenreeks. U kunt echter nog steeds op Zoeken klikken om de tekenreeks te zoeken voordat u deze vervangt. Als de vervangingstekenreeks wordt ingevoerd nadat op Zoeken is geklikt, wordt de zoekopdracht opnieuw ingesteld op het begin van de tekst.
 
 Het dialoogvenster Zoeken en vervangen wordt transparant wanneer op Zoeken wordt geklikt en wordt dekkend wanneer op Vervangen wordt geklikt. Hierdoor kan de auteur de tekst controleren die de auteur vervangt. Als gebruikers op Alles vervangen klikken, wordt het dialoogvenster gesloten en wordt het aantal aangebrachte vervangingen weergegeven.
 
@@ -286,7 +288,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 1. Voeg de eigenschap toe `externalStyleSheets` aan het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam**`externalStyleSheets`
-   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in (CRXDE)
+   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
    >[!NOTE]
    U kunt op elk later moment verwijzingen naar extra stijlbladen toevoegen.
