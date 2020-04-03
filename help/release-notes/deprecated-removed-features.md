@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 1ce49a86e954f48a7cd213558da93861794cfd33
+source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
 
 ---
 
@@ -53,7 +53,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
      <li>/libs/launches/content/admin.html</li> 
      <li>/libs/cq/workflow/content/console.html</li> 
     </ul> </td> 
-   <td><p>Klanten wordt aangeraden over te schakelen op de nieuwe AEM-gebruikersinterface.</p> <p> </p> </td> 
+   <td><p>Klanten wordt aangeraden over te schakelen op de nieuwe AEM-interface.</p> <p> </p> </td> 
   </tr>
   <tr>
    <td>Onderdelen</td> 
@@ -122,7 +122,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 ## Verwijderde functies {#removed-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit AEM 6.4. In eerdere versies waren deze mogelijkheden gemarkeerd als gedeactiveerd.
+Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit AEM 6.4. In eerdere versies waren deze mogelijkheden gemarkeerd als afgekeurd.
 
 <table> 
  <tbody>
@@ -185,6 +185,41 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
    <td>Formulieren</td> 
    <td>Ondersteuning voor afbeeldingen in documentfragmenten is verwijderd. </td> 
    <td>Interactieve communicatie biedt de mogelijkheid om afbeeldingen rechtstreeks in gedrukte en webkanalen te gebruiken.<br /> </td> 
+  </tr>
+    <tr>
+   <td>Formulieren</td> 
+   <td> Geen upgrade meer uitvoeren </td> 
+   <td>Er is geen ondersteuning beschikbaar voor het uitvoeren van een upgrade op een andere plaats <br/> </td> 
+  </tr>
+  <tr>
+   <td>Formulieren</td> 
+   <td> Sidegrade voor TarMK naar DocumentMK-migraties </td> 
+   <td> U kunt de gegevens van een ouder systeem exporteren en vervolgens importeren in een nieuw systeem. Voor gedetailleerde instructies, zie de Vormen van AEM op JEE verbeteringsdocumentatie <br/> </td> 
+  </tr>
+    <tr>
+   <td>Formulieren</td> 
+ <td>AEM Forms on JEE 32-bits installatieprogramma is niet beschikbaar.</td> 
+   <td>Adobe heeft het verzenden van AEM Forms gestopt in het 32-bits installatieprogramma van JEE. U kunt AEM Forms blijven installeren op JEE met het 64-bits installatieprogramma. </td>  
+  </tr>
+    <tr>
+    <td>Formulieren</td> 
+    <td>Verwijderde ondersteuning voor het gebruik van DAM-afbeeldingen in Document Fragment Component.</td> 
+    <td> U kunt de component van het Beeld en van het Grafiek in het de drukkanaal van interactieve mededeling gebruiken. Als u de documentfragmentcomponent van het adaptieve document in adaptieve formulieren gebruikt, werkt het niet meer nadat u de upgrade naar AEM 6.4 Forms hebt uitgevoerd. </td>  
+  </tr>
+  <tr>
+   <td>Formulieren</td> 
+   <td> De functie Adaptieve documenten is verwijderd</td> 
+   <td> Met de functie voor interactieve communicatie kunt u afgedrukte en webgebaseerde communicatie maken. <br/> </td> 
+  </tr>
+    <tr>
+    <td>Formulieren</td> 
+    <td>AEM-formulieren zijn verwijderd op JEE-specifieke bestemmingspagina.</td> 
+    <td>AEM Forms on JEE landing page is replace with AEM landing page (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Formulieren</td> 
+   <td>Verwijderde ondersteuning voor standaard Captcha</td> 
+   <td>Gebruik de reCAPTCHA-service van Google.</td> 
   </tr>
   <tr>
    <td>Gemeenschappen</td> 
