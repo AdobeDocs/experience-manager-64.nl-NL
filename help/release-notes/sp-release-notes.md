@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: a80f5bd7be1de577a46c8aae880d6713e2d50f30
+source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
 
 ---
 
@@ -302,7 +302,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 ##### Gemeenschappen {#communities-6470}
 
-* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer het e-mailbericht in berichtmontages wordt toegelaten, werpt het systeem een uitzondering in NotificationsActivityStreamProvider (NPR-31521).
+* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer e-mailberichten in meldingsinstellingen zijn ingeschakeld, genereert het systeem een uitzondering in de NotificationsActivityStreamProvider (NPR-31521).
 * Kan geen nieuwe leden maken. Er verschijnt een leeg scherm op het scherm Lid maken in de AEM-auteur-instantie (NPR-30951).
 * Gebruiker kan geen commentaar op een blog plaatsen in Internet Explorer 11 (NPR-30927).
 * De beheerder van een Beperkte Groep kan niet de Kaart van de Groep bekijken, kan om het even welke Snelle verrichtingen van de Verbinding (Edit/Publish/Delete groepen) in auteur AEM (NPR-30810) uitvoeren.
@@ -708,7 +708,7 @@ De belangrijkste kenmerken voor AEM 6.4.5.0-formulieren zijn:
 **Formulieren - Document Services**
 
 * Ongeldig PDF/A-bestand wordt gerapporteerd als geldig PDF/A met de bewerking isPDFA. NPR-29076: Hotfix voor CQ-4261541
-* PDF kan niet worden geconverteerd naar PDF/A-1b met formulierveld heeft geen weergavewoordenboek. NPR-29634: Hotfix voor CQ-4269618
+* PDF kan niet worden geconverteerd naar PDF/A-1b met formulierveld heeft geen weergavewoordenboek. NPR-29534: Hotfix voor CQ-4269618
 * PDF/A-conversie van een PDF die is gemaakt met de uitvoerservice gaat niet over tot validatie met Acrobat DC. NPR-29647: Hotfix voor CQ-4270448
 * Apache POI-bundel mislukt, met een uitzondering. NPR-27861, NPR-28048: Hotfix voor CQ-4245898, CQ-4244778
 
@@ -1694,6 +1694,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Extra ondersteuning voor ARIA voor Print en PrintDialog.
 * ARIA-ondersteuning voor e-mailvalidatie toegevoegd.
 * Proactieve back-up voor platform.clientlibs-oplossingen.
+* Preventie van automatische uitvoering van scripts wanneer er geen invoer is voor het expliciete dataType.
 
 **Assets**
 
@@ -1760,7 +1761,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * (Klassieke UI) (Aanraakinterface) De tagkiezer geeft geen uitzondering weer en genereert een uitzondering wanneer wordt geprobeerd naar tags te bladeren via een tagvoorspelling in het schema voor het zoeken naar middelen. NPR-23049: Hotfix voor CQ-4239371
 * (Klassieke UI) Componenten die xtype=tags gebruiken keren null terug en kunnen niet worden geselecteerd uit de 0e lijst met tags. NPR-23050: Hotfix voor CQ-4239937
 * (Branding) Het dialoogvenster Opt-in vermeldt Adobe Marketing Cloud in plaats van Adobe Experience Cloud. NPR-23210: Hotfix voor CQ-4237799
-* Met de filteroptie wordt AEM traag na de upgrade van 6.3 naar 6.4. NPR-23260: Hotfix voor CQ-4239847 (te controleren)
+* Met de filteroptie wordt AEM traag na de upgrade van 6.3 naar 6.4. NPR-24260: Hotfix voor CQ-4239847 (te controleren)
 * Proactieve Backport voor granite.omnissearch.core fixes. NPR-23536
 * Proactieve back-up voor platform.clientlibs-oplossingen. NPR-23569
 * De overerving van Cloud Service Config is verbroken tijdens het bewerken van andere pagina-eigenschappen. NPR-23216: Hotfix voor CQ-4239782
