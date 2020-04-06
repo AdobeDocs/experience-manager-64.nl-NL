@@ -3,12 +3,12 @@ title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 9674b07fa8ddaee1d77f5a171ca00745e7545d0b
 
 ---
 
 
-# Metagegevensschema&#39;s {#metadata-schemas}
+# Metadataschema&#39;s {#metadata-schemas}
 
 In de Elementen van de Manager van de Ervaring van Adobe (AEM), bepaalt een meta-gegevensschema de lay-out van de eigenschappen pagina en de meta-gegevenseigenschappen die voor activa worden getoond die het bepaalde schema gebruiken. Tot de metagegevenseigenschappen behoren titel, beschrijving, MIME-typen, tags, enzovoort.
 
@@ -28,36 +28,26 @@ U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om 
 
    Als u het MIME-type voor een element wilt wijzigen, gebruikt u een aangepast schema voor metagegevens of wijzigt u een bestaand formulier. Zie [Metagegevensschemaformulieren](metadata-schemas.md#editing-metadata-schema-forms) bewerken voor meer informatie. Als u het metagegevensschema voor een bepaald MIME-type wijzigt, worden de pagina-indeling van de eigenschappen voor elementen met het huidige MIME-type en alle elementsubtypen gewijzigd. Als u bijvoorbeeld een `jpeg` schema wijzigt in `default/image` plaats daarvan, wordt alleen de metagegevensindeling (eigenschappen van elementen) gewijzigd voor elementen met het MIME-type `IMAGE/JPEG`. Als u echter het standaardschema bewerkt, worden de wijzigingen doorgevoerd in de indeling van de metagegevens voor alle typen elementen.
 
-1. Als u een lijst met formulieren/sjablonen wilt weergeven, klikt u op het AEM-logo en navigeert u naar **[!UICONTROL Gereedschappen > Middelen > Metagegevensschema&#39;s]**.
+1. To view a list of forms/templates, click the AEM logo and then navigate to **[!UICONTROL Tools > Assets > Metadata Schemas]**.
 
-   ![chlimage_1-173](assets/chlimage_1-173.png)
+   ![chlimage_1-37](assets/chlimage_1-173.png)
 
    AEM verstrekt de volgende malplaatjes uit de doos:
-
    * **standaard**: Het basisschema voor metagegevens voor elementen.
-   De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
 
-   
-i. **afbeelding**: Schema-formulier voor elementen met het MIME-type `image`, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
+      De volgende onderliggende formulieren nemen de eigenschappen van het standaardformulier over:
 
-   Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
+      1. **afbeelding**: Schema-formulier voor elementen met het MIME-type &#39;image&#39;, bijvoorbeeld `image/jpeg`, `image/png`enzovoort.
 
-   
-a. **jpeg**: Schema voor activa met subtype jpeg.
-
-   b. **tiff**: Schema voor de elementen met subtype TIFF.
-
-   ii. **toepassing**: Schema-formulier voor elementen met bijvoorbeeld het MIME-type toepassing `application/pdf`, `application/zip`enzovoort.
-
-   
-a. **pdf**: Schemaformulier voor elementen met subtype PDF.
-
-   iii. **video**: Schemaformulier voor elementen met MIME-type video, zoals `video/avi`, `video/mp4` enzovoort.
-
-   * **verzameling**: Schemaformulier voor verzamelingen
-   * **** contentfragment: Schemaformulier voor inhoudsfragmenten
-   * **formulieren**: Dit schema-formulier heeft betrekking op [Adobe Experience Manager-formulieren](/help/forms/home.md)
-
+         Het &quot;afbeeldingsformulier&quot; heeft de volgende onderliggende formuliersjablonen:
+         * **jpeg**: Schema voor activa met subtype `jpeg`.
+         * **tiff**: Schema voor de activa met subtype `tiff`.
+      1. **toepassing**: Schema-formulier voor elementen van het type MIME `application`, `application/pdf`bijvoorbeeld `application/zip`enzovoort.
+         * **pdf**: Schema voor activa met subtype `pdf`.
+      1. **video**: Schema-formulier voor elementen met het MIME-type `video`, zoals `video/avi`, `video/mp4`enzovoort.
+   * **verzameling**: Schemaformulier voor verzamelingen.
+   * **contentfragment:** Schemaformulier voor inhoudsfragmenten.
+   * **formulieren**: Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md).
 
 >[!NOTE]
 >
@@ -86,11 +76,11 @@ U kunt deze formulieritems toewijzen/configureren aan een veld binnen een metage
 
 U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemaformulier. De tabbladen en formulieritems die van het bovenliggende element zijn afgeleid, bevinden zich in de vergrendelde status. U kunt deze niet wijzigen op het niveau van het kind.
 
-1. Schakel op de pagina **[!UICONTROL Schema-formulieren]** het selectievakje in vóór een formulier en klik vervolgens op **[!UICONTROL Bewerken]** op de werkbalk.
+1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
    ![chlimage_1-175](assets/chlimage_1-175.png)
 
-1. Pas de eigenschappenpagina van het element op de pagina **[!UICONTROL Metadata Schema Editor]** aan door een of meer componenten van de lijst met componenttypen op het tabblad **[!UICONTROL Formulier]** samenstellen naar het tabblad **[!UICONTROL Standaard]** te slepen.
+1. In the **[!UICONTROL Metadata Schema Editor]** page, customize the properties page of the asset by dragging one or more components from the list of component types in the **[!UICONTROL Build Form]** tab to the **[!UICONTROL Basic]** tab.
 
    ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -127,9 +117,9 @@ Als u de eigenschappen van een metagegevenscomponent in het formulier wilt bewer
 
 Hier volgen de geldige waarden voor deze eigenschap:
 
-* `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metagegevensknooppunt van het element opgeslagen als de eigenschap `dc:title`.
+* `./jcr:content/metadata/dc:title`: Hiermee wordt de waarde in het metadataknooppunt van de asset opgeslagen als de eigenschap `dc:title`.
 
-* `./jcr:created`: Geeft de JCR-eigenschap weer op het knooppunt van het element. Als u deze eigenschappen op meningseigenschappen vormt, adviseren wij dat u hen als onbruikbaar maakt uitgeeft, omdat zij beschermd zijn. Anders konden de resultaten van de fout- [!UICONTROL middelen niet worden gewijzigd] wanneer u de eigenschappen van het element opslaat.
+* `./jcr:created`: Geeft de JCR-eigenschap weer op het knooppunt van het element. Als u deze eigenschappen configureert op weergave-eigenschappen, raden wij aan deze te markeren als Bewerken uitschakelen, omdat deze beveiligd zijn. Otherwise, the error [!UICONTROL Asset(s) failed to modify] results when you save the asset&#39;s properties.
 
 Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevensschema wordt getoond, zou de bezitspad geen ruimten moeten omvatten.
 
@@ -155,7 +145,7 @@ Om ervoor te zorgen dat de component correct in de vorm van het meta-gegevenssch
 >
 >De component Verborgen veld bevat deze kenmerken niet. In plaats daarvan bevat de klasse eigenschappen, zoals Naam, Waarde, Veldlabel en Beschrijving. De waarden voor de component Verborgen veld worden als een POST-parameter verzonden wanneer het element wordt opgeslagen. Deze wordt niet opgeslagen als metagegevens voor het element.
 
-Als u de optie **[!UICONTROL Vereist]** selecteert, kunt u naar elementen zoeken waarin verplichte metagegevens ontbreken. Vouw in het deelvenster **[!UICONTROL Filters]** de voorspelling voor **[!UICONTROL metagegevensvalidatie]** uit en selecteer de optie **[!UICONTROL Ongeldig]** . In de zoekresultaten ontbreken de elementen die u via het schema hebt geconfigureerd.
+If you select the **[!UICONTROL Required]** option, you can search for assets missing mandatory metadata. Vouw in het deelvenster **[!UICONTROL Filters]** de voorspelling voor **[!UICONTROL metagegevensvalidatie]** uit en selecteer de optie **[!UICONTROL Ongeldig]** . In de zoekresultaten worden assets weergegeven waarvoor verplichte metadata ontbreken die u via het schemaformulier hebt geconfigureerd.
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -169,7 +159,7 @@ Als u een tabblad in de eigenschappenpagina wilt opnemen, naast het tabblad waar
 
 ### Eigenschappen in JSON-bestand opgeven {#specifying-properties-in-json-file}
 
-In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Instellingen]** op te geven, kunt u de opties in een JSON-bestand definiëren door corresponderende sleutel-waardeparen op te geven. Geef het pad van het JSON-bestand op in het veld **[!UICONTROL JSON-pad]** .
+Instead of specifying properties for the options in the **[!UICONTROL Settings]** tab, you can define the options in a JSON file by specifying corresponding key-value pairs. Specify the path of the JSON file in the **[!UICONTROL JSON Path]** field.
 
 ### Een tabblad toevoegen aan of verwijderen uit het schemaformulier {#adding-deleting-a-tab-in-the-schema-form}
 
@@ -201,7 +191,7 @@ AEM Assets biedt standaardformulieren voor verschillende MIME-typen uit het vak.
 
 ### Nieuwe formulieren toevoegen voor MIME-typen {#adding-new-forms-for-mime-types}
 
-Maak een nieuw formulier onder het juiste formuliertype. Als u bijvoorbeeld een nieuwe sjabloon voor het `image/png` subtype wilt toevoegen, maakt u het formulier onder de `image` formulieren. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel `png`.
+Maak een nieuw formulier onder het juiste formuliertype. For example, to add a new template for the `image/png` subtype, create the form under the `image` forms. De titel voor het schemaformulier is de naam van het subtype. In dit geval is de titel `png`.
 
 ### Een bestaande schemasjabloon gebruiken voor verschillende MIME-typen {#using-an-existing-schema-template-for-various-mime-types}
 
