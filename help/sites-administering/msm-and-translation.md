@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: fabaa3e8-1657-4ed4-abb2-990117bec39c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: d045065f530a643268a84276b067830b0547cbf9
 
 ---
 
@@ -50,7 +50,7 @@ In het volgende diagram ziet u hoe de hoofdconcepten elkaar snijden (maar niet a
 >In dit, en vergelijkbaar, scenario&#39;s MSM beheert niet de verschillende taalversies als dusdanig.
 >
 >* [MSM](/help/sites-administering/msm.md) beheert de plaatsing van vertaalde inhoud van een blauwdruk (b.v. een globale meester) aan de levende exemplaren (b.v. de lokale plaatsen), binnen de grenzen van een taal.
->* Met de [vertaalintegratiemogelijkheden](/help/sites-administering/translation.md) van AEM, in combinatie met vertaalbeheerservices van derden, worden de talen beheerd en wordt inhoud in deze verschillende talen vertaald.
+>* Met de [vertaalintegratiemogelijkheden](/help/sites-administering/translation.md) van AEM, in combinatie met vertaalbeheerservices van derden, worden de talen beheerd en wordt de inhoud in deze verschillende talen vertaald.
 >
 >
 Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden gebruikt.
@@ -61,10 +61,9 @@ Voor geavanceerdere gebruiksgevallen kan MSM ook voor alle taalmeesters worden g
 >
 >* [beste praktijken voor MSM](/help/sites-administering/msm-best-practices.md); met name:
    >
-   >  
-* [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
->  * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
-   >
-   >
-* [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md)
+   >   
+   * [Site maken](/help/sites-administering/msm-best-practices.md#create-site)
+   >   * [MSM- en meertalige websites](/help/sites-administering/msm-best-practices.md#msm-and-multilingual-websites)
+>
+>* [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md)
 
