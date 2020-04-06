@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 translation-type: tm+mt
-source-git-commit: fd7c589eed2977f3d06f07086008450e2e85a940
+source-git-commit: 340c267fc4e142a67ae5be3f1ab11f063417962e
 
 ---
 
@@ -78,7 +78,7 @@ U moet expliciet van deelvenster naar deelvenster gaan met de methoden `xfa.host
 
 Een auteur van een formulier geeft aan of een script op de server of de client wordt uitgevoerd. De dienst van Vormen leidt tot een verdeelde, gebeurtenisverwerkingsmilieu voor uitvoering van vormintelligentie die tussen de cliënt en de server door de `runAt` attributen te gebruiken kan worden verdeeld. Zie [Forms Designer voor meer informatie over dit kenmerk of over het maken van scripts in formulierontwerpen](https://www.adobe.com/go/learn_aemforms_designer_63)
 
-De Forms-service kan scripts uitvoeren terwijl het formulier wordt gegenereerd. Hierdoor kunt u een formulier vooraf invullen met gegevens door verbinding te maken met een database of met webservices die mogelijk niet beschikbaar zijn op de client. U kunt de `Click` gebeurtenis van een knoop ook plaatsen om op de server te lopen zodat de cliënt reisgegevens aan de server zal afronden. Hierdoor kan de client scripts uitvoeren waarvoor mogelijk serverbronnen nodig zijn, zoals een ondernemingsdatabase, terwijl een gebruiker communiceert met een formulier. Voor HTML-formulieren kunnen formele scripts alleen op de server worden uitgevoerd. Dit betekent dat u deze scripts moet markeren om te worden uitgevoerd bij `server` of `both`.
+De Forms-service kan scripts uitvoeren terwijl het formulier wordt gegenereerd. Hierdoor kunt u een formulier vooraf invullen met gegevens door verbinding te maken met een database of met webservices die mogelijk niet beschikbaar zijn op de client. U kunt de `Click` gebeurtenis van een knoop ook plaatsen om op de server te lopen zodat de cliënt reisgegevens aan de server zal afronden. Hierdoor kan de client scripts uitvoeren waarvoor mogelijk serverbronnen nodig zijn, zoals een ondernemingsdatabase, terwijl een gebruiker communiceert met een formulier. Voor HTML-formulieren kunnen formele scripts alleen op de server worden uitgevoerd. Als gevolg hiervan moet u deze scripts markeren om te worden uitgevoerd bij `server` of `both`.
 
 U kunt formulieren ontwerpen die tussen pagina&#39;s (deelvensters) bewegen door ze aan te roepen `xfa.host.pageUp` en `xfa.host.pageDown` methoden te gebruiken. Dit script wordt in de `Click` gebeurtenis van een knop geplaatst en het `runAt` kenmerk wordt ingesteld op `Both`. De reden die u kiest, `Both` is dat Adobe Reader of Acrobat (voor formulieren die als PDF worden gerenderd) pagina&#39;s kan wijzigen zonder naar de server te gaan en dat HTML-formulieren pagina&#39;s kunnen wijzigen door gegevens naar de server af te snijden. Een formulier wordt dus naar de service Forms verzonden en een formulier wordt als HTML weergegeven met de nieuwe pagina.
 
@@ -214,7 +214,7 @@ U stelt HTML-runtime-opties in wanneer u een HTML-formulier rendert. U kunt bijv
 
 Wanneer een HTML-werkbalk op een HTML-formulier wordt weergegeven, kan een gebruiker maximaal tien bestanden selecteren die samen met de formuliergegevens moeten worden verzonden. Nadat de bestanden zijn verzonden, kan de service Forms de bestanden ophalen.
 
-Bij het weergeven van een formulier als HTML kunt u een user-agent-waarde opgeven. Een gebruiker-agent waarde verstrekt browser en systeeminformatie. Dit is een optionele waarde en u kunt een lege tekenreekswaarde doorgeven. De weergave van een HTML-formulier met de snelle start van de Java API laat zien hoe u een gebruikersagent-waarde kunt verkrijgen en gebruiken om een formulier te genereren als HTML.
+Bij het weergeven van een formulier als HTML kunt u een user-agent-waarde opgeven. Een gebruiker-agent waarde verstrekt browser en systeeminformatie. Dit is een optionele waarde en u kunt een lege tekenreekswaarde doorgeven. De weergave van een HTML-formulier met de snelle start van de Java API laat zien hoe u een gebruikersagent-waarde ophaalt en gebruikt om een formulier te genereren als HTML.
 
 HTTP-URL&#39;s waarnaar formuliergegevens worden verzonden, kunnen worden opgegeven door de doel-URL in te stellen met de API voor de Forms Service Client of kunnen worden opgegeven in de knop Verzenden in het XDP-formulierontwerp. Als het doel-URL is opgegeven in het formulierontwerp, moet u geen waarde instellen met de API voor de Forms Service Client.
 
@@ -335,7 +335,7 @@ Een HTML-formulier renderen met de API voor formulieren (webservice):
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u controleren of u het volledige pad opgeeft, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Een `TransformTo` opsommingswaarde waarmee het HTML-voorkeurstype wordt opgegeven. Als u bijvoorbeeld een HTML-formulier wilt genereren dat compatibel is met dynamische HTML voor Internet Explorer 5.0 of hoger, geeft u op `TransformTo.MSDHTML`.
-   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Formulieren [vooraf invullen met stroombare indelingen](/help/forms/develop/rendering-forms-rendering-forms prepopulating-forms-flowable-layouts-prepopulating.md#prepopulating-forms-with-flowable-layouts).)
+   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Formulieren [vooraf invullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md#prepopulating-forms-with-flowable-layouts).)
    * Het `HTMLRenderSpec` object waarin de opties voor HTML-runtime worden opgeslagen.
    * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde opgeeft; bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. U kunt een lege tekenreeks doorgeven als u deze waarde niet wilt instellen.
    * Een `URLSpec` object dat URI-waarden opslaat die vereist zijn om een HTML-formulier te genereren. (Zie URI-waarden [](/help/forms/developing/rendering-interactive-pdf-forms.md)opgeven.)
