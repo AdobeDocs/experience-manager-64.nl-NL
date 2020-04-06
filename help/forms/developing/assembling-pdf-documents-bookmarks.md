@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9f4711a8-033c-4051-ab41-65a26838899b
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bc7fa8bd0464b9ae8c93349efb7e392de757c6a3
 
 ---
 
@@ -80,7 +80,7 @@ Wanneer een gebruiker op de *Open referentie Loan Details* klikt, wordt LoanDeta
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, is het raadzaam om vertrouwd te zijn met het samenstellen van PDF-documenten met de Assembler-service. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie PDF-documenten [programmatisch]samenstellen (/help/forms/develop/programmatically-assembling-pdf-documents-programmatically-assembling-pdf-documents-programmatically.md#programmatically-assembling-pdf-documents).)
+>Voordat u deze sectie leest, is het raadzaam om vertrouwd te zijn met het samenstellen van PDF-documenten met de Assembler-service. Deze sectie bespreekt geen concepten, zoals het creëren van een inzamelingsvoorwerp dat inputdocumenten of het leren hoe te om de resultaten uit het teruggekeerde inzamelingsvoorwerp te halen bevat. (Zie PDF-documenten [programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md#programmatically-assembling-pdf-documents).)
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ U kunt een PDF-document samenstellen met bladwijzers met behulp van de API (Java
 
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat zowel het invoer-PDF-document als het XML-bladwijzerdocument bevat.
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardniveau voor fonts en taaklogbestanden
+   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardniveau voor lettertypen en taaklogbestanden
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla het PDF-document met bladwijzers op.
