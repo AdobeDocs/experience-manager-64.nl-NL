@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
 
 ---
 
@@ -52,7 +52,7 @@ Dit DDX-document voegt twee PDF-documenten met de naam *map.pdf* en *direction.p
 
 ## Overwegingen bij het aanroepen van de Assembler-service met behulp van webservices {#considerations-when-invoking-assembler-service-using-web-services}
 
-Wanneer u kop- en voetteksten toevoegt tijdens het samenstellen van grote documenten, kan er een `OutOfMemory` fout optreden en worden de bestanden niet samengesteld. Om de kans te verminderen dat dit probleem voorkomt, voeg een `DDXProcessorSetting` element aan uw Ddx- document toe, zoals aangetoond in het volgende voorbeeld.
+Wanneer u kop- en voetteksten toevoegt tijdens het samenstellen van grote documenten, kan er een `OutOfMemory` fout optreden en worden de bestanden niet samengevoegd. Om de kans te verminderen dat dit probleem voorkomt, voeg een `DDXProcessorSetting` element aan uw Ddx- document toe, zoals aangetoond in het volgende voorbeeld.
 
 `<DDXProcessorSetting name="checkpoint" value="2000" />`
 
@@ -100,7 +100,7 @@ Zowel het bestand map.pdf als het bestand direction.pdf moeten in een verzamelin
 
 >[!NOTE]
 >
->Een `*AssemblerResult*` object dat een verzamelingsobject bevat, wordt geretourneerd wanneer u de `*invokeDDX*` bewerking activeert. Deze bewerking wordt gebruikt wanneer u twee of meer invoer-PDF-documenten doorgeeft aan de Assembler-service. Als u echter slechts één invoer-PDF doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de `*invokeOneDocument*` bewerking aan. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Zie Gecodeerde PDF-documenten []samenstellen (/help/forms/develop/assembling-encrypted-pdf-documents-assembling-encrypted-pdf-documents-assembling.md#assembling-encrypted-pdf-documents) voor informatie over het gebruik van deze bewerking.
+>Een `*AssemblerResult*` object dat een verzamelingsobject bevat, wordt geretourneerd wanneer u de `*invokeDDX*` bewerking activeert. Deze bewerking wordt gebruikt wanneer u twee of meer invoer-PDF-documenten doorgeeft aan de Assembler-service. Als u echter slechts één invoer-PDF doorgeeft aan de Assembler-service en slechts één retourdocument verwacht, roept u de `*invokeOneDocument*` bewerking aan. Bij het aanroepen van deze bewerking wordt één document geretourneerd. Zie Gecodeerde PDF-documenten [](/help/forms/developing/assembling-encrypted-pdf-documents.md#assembling-encrypted-pdf-documents)samenstellen voor informatie over het gebruik van deze bewerking.
 
 **Uitvoeringsopties instellen**
 
@@ -190,7 +190,7 @@ U kunt een PDF-document samenstellen met de API (Java) voor vergaderingsservice:
 
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
    * Een `java.util.Map` object dat de invoer-PDF-bestanden bevat die moeten worden samengevoegd
-   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardniveau voor fonts en taaklogbestanden
+   * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardniveau voor lettertypen en taaklogbestanden
    De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Extraheer de resultaten.
