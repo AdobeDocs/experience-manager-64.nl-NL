@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 3b26eacff87d3ce84cf5db6133b44c955055c737
 
 ---
 
@@ -88,7 +88,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 ### Algemene knooppunten {#common-nodes}
 
 | Node Name | Type | Standaardwaarden of Verwachte waarden | Beschrijving |
---- |--- |--- |--- |
+|--- |--- |--- |--- |
 | image | jcr:primaryType=nt:ongestructureerde <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entities {#entities}
