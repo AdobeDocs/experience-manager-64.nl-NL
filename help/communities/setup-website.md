@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: d18c0ece-4c4f-499c-ac94-a9aaa7f883c4
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd2eb8787a98fa9910cc540ba329466a0e72e0db
 
 ---
 
@@ -38,9 +38,9 @@ De code in deze zelfstudie vertrouwt erop dat de naam van de hoofdmap gelijk is 
 >* Node names may contain spaces, but when used in an URI, the space must be encoded either as &#39;%20&#39; or &#39;+&#39;
 >* Node-namen kunnen afbreekstreepjes en onderstrepingstekens bevatten, maar deze moeten worden gecodeerd als er in een Java-bestand naar wordt verwezen als een pakketnaam. Zowel koppeltekens als onderstrepingstekens worden overgeslagen met een onderstrepingsteken gevolgd door de Unicode-waarde:
    >
-   >  
-* afbreekstreepje wordt &#39;_002d&#39;
->  * onderstrepingsteken wordt &#39;_005f&#39;
+   >   
+   * afbreekstreepje wordt &#39;_002d&#39;
+   >   * onderstrepingsteken wordt &#39;_005f&#39;
 
 
 ## De toepassingsmap (/apps) instellen {#setup-the-application-directory-apps}
@@ -54,8 +54,8 @@ De map /apps is beveiligd en niet toegankelijk voor het publiek, net als de mapp
    Het gebruiken van **[!UICONTROL CRXDE Lite]**, in de verkenner ruit
 
    1. Selecteer de `/apps` map
-   1. **[!UICONTROL Klik met de rechtermuisknop op]** Maken **[!UICONTROL ... of trek het]** Create... menu
-   1. **[!UICONTROL Map]** maken selecteren... .
+   1. Klik met de rechtermuisknop op **[!UICONTROL Maken]**... of trek het **[!UICONTROL Create...]** menu
+   1. Map **[!UICONTROL maken selecteren...]** .
    1. Voer in het dialoogvenster Map **** maken `an-scf-sandbox`
    1. Click **[!UICONTROL OK]**
 
@@ -111,4 +111,4 @@ De map /etc/designs bevat de afbeeldingen, scripts en opmaakmodellen die samen m
 
 De map /content in de opslagmap is waar de website-inhoud zich bevindt. De paden onder /content bestaan uit de paden van de URL voor browserverzoeken.
 
-*Nadat* de [paginasjabloon](initial-app.md#createthepagetemplate) is gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon... . [****](initial-app.md)
+*Nadat* de [paginasjabloon](initial-app.md#createthepagetemplate) is gemaakt als onderdeel van de oorspronkelijke toepassing, kan de eerste pagina-inhoud worden gemaakt op basis van de sjabloon.... [****](initial-app.md)
