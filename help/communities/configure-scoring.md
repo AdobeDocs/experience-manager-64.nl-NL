@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
 
 ---
 
@@ -110,7 +110,7 @@ Logboekvermeldingen weergeven:
 * Op de lokale schijf van de server
 
    * Het logbestand bevindt zich op &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
-   * Bijvoorbeeld, `.../crx-quickstart/logs/scoring-debug.log`
+   * Bijvoorbeeld: `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -149,8 +149,10 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
       * `/content/sites/engage/en/forum/jcr:content`
    * Eigenschappen voor scoring en badges toevoegen
 
-      * scoringRules = [/etc/community/scoring/rules/comments-scoring,/etc/community/scoring/rules/forums-scoring]
-      * badgingRules =[/etc/community/badging/rules/comments-scoring,/etc/community/badging/rules/forums-scoring]
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
+/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
+/etc/community/badging/rules/forums-scoring]`
    * Zoek het knooppunt voor de forumcomponent
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
