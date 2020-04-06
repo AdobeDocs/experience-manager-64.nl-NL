@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
 
 ---
 
@@ -50,11 +50,11 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 1. Tik op Gegevenswoordenboek **maken**.
 1. Voeg het volgende toe in het scherm Eigenschappen:
 
-   * **** Titel: (Optioneel) Voer de titel in voor het gegevenswoordenboek. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Letters en andere documentfragmenten worden met hun titel bedoeld (indien beschikbaar), zoals in miniaturen en elementeigenschappen. Er wordt naar gegevenswoordenboeken verwezen met hun naam en niet met titels.
-   * **** Naam: De unieke naam voor het gegevenswoordenboek. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel en de speciale tekens, spaties, cijfers en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
+   * **Titel:** (Optioneel) Voer de titel in voor het gegevenswoordenboek. De titel mag niet uniek zijn en mag speciale tekens en niet-Engelse tekens bevatten. Letters en andere documentfragmenten worden met hun titel bedoeld (indien beschikbaar), zoals in miniaturen en elementeigenschappen. Er wordt naar gegevenswoordenboeken verwezen met hun naam en niet met titels.
+   * **Naam:** De unieke naam voor het gegevenswoordenboek. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel en de speciale tekens, spaties, cijfers en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
 
    * **Omschrijving**: (Optioneel) Beschrijving van het gegevenswoordenboek.
-   * **** Tags: (Optioneel) Als u een aangepaste tag wilt maken, voert u een waarde in het tekstveld in en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
+   * **Tags:** (Optioneel) Als u een aangepaste tag wilt maken, voert u een waarde in het tekstveld in en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
    * **Uitgebreide eigenschappen**: (Optioneel) Tik op Veld **** toevoegen om metagegevenskenmerken voor uw gegevenswoordenboek op te geven. Voer in de kolom Naam eigenschap een unieke eigenschapnaam in. Voer in de kolom Waarde een waarde in die u aan de eigenschap wilt koppelen.
    ![Eigenschappen voor gegevenswoordenboeken, zoals in het Duits gespecificeerd](do-not-localize/1_ddproperties.png)
 
@@ -424,19 +424,15 @@ Wanneer u dezelfde letter in verschillende talen naar uw klanten wilt verzenden,
 1. Tik op **OK** in de waarschuwing. Correspondence Management downloadt een zip-bestand met de naam DataDictionary-&lt;DDname>.zip naar de computer.
 1. Het Zip-bestand bevat een .properties-bestand. In dit bestand wordt het gedownloade gegevenswoordenboek gedefinieerd. De inhoud van het eigenschappenbestand is vergelijkbaar met het volgende:
 
-   # Woensdag 20 mei 16:06:23 BST 2015
-
+   ```
+   #Wed May 20 16:06:23 BST 2015
    DataDictionary.EmployeeDD.description=
-
    DataDictionary.EmployeeDD.displayName=EmployeeDataDictionary
-
    DataDictionaryElement.name.description=
-
    DataDictionaryElement.name.displayName=name
-
    DataDictionaryElement.person.description=
-
    DataDictionaryElement.person.displayName=person
+   ```
 
    In de structuur van het eigenschappenbestand wordt één regel gedefinieerd voor de beschrijving en de weergavenaam voor het gegevenswoordenboek en elk gegevenswoordenboekelement in het gegevenswoordenboek. Daarnaast definieert het eigenschappenbestand één regel voor een opsommingswaarde die is ingesteld voor elk gegevenswoordenboekelement. Net als bij een gegevenswoordenboek kan het corresponderende eigenschappenbestand meerdere definities van gegevenswoordenboekelementen bevatten. Bovendien kan het bestand de definities bevatten voor een of meer opsommingssets.
 
