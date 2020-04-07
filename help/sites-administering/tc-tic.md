@@ -10,7 +10,7 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
 translation-type: tm+mt
-source-git-commit: 70039d5f7d6f773e64402c3a3e88198bb52fb11f
+source-git-commit: 64d4362c933ed30c2b9474cafbcd9c318d9c52bd
 
 ---
 
@@ -77,7 +77,7 @@ Nadat u een vertaalintegratieframework hebt geconfigureerd, kunt u dit [koppelen
 **Opmerking:** Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md)voor een overzicht van de functies voor het vertalen van inhoud in AEM.
 
 Eén configuratie van het framework bepaalt hoe pagina-inhoud, community-inhoud en elementen moeten worden omgezet.
-![chlimage_1-386](assets/chlimage_1-386.png)
+![chlimage_1-386](assets/translation-config-64.jpg)
 
 ### Eigenschappen van siteconfiguratie {#sites-configuration-properties}
 
@@ -211,7 +211,7 @@ Verder, voor om het even welke gemeenschappen [SCF componenten](/help/communitie
 Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstammende pagina&#39;s te vertalen.
 
 1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik op Bewerken of tik op Bewerken en klik of tik op het tabblad Cloud Services.
+1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
 1. Selecteer de vertaalprovider die u wilt gebruiken en klik op Gereed of tik op Gereed.
 
@@ -220,7 +220,7 @@ Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstamme
 Koppel een pagina aan het vertaalintegratieframework dat definieert hoe u de vertaling van de pagina en afstammende pagina&#39;s wilt uitvoeren.
 
 1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik op Bewerken of tik op Bewerken en klik of tik op het tabblad Cloud Services.
+1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
 1. Selecteer het vertaalintegratieframework dat u wilt gebruiken en klik op Gereed of tik op Gereed.
 
