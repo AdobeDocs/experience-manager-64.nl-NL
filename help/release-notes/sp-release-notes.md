@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 9b372645792d3e9181c3c1c1e03f0b9cbb7ef14a
+source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
 
 ---
 
@@ -302,7 +302,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 ##### Gemeenschappen {#communities-6470}
 
-* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer e-mailberichten in meldingsinstellingen zijn ingeschakeld, genereert het systeem een uitzondering in de NotificationsActivityStreamProvider (NPR-31521).
+* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer het e-mailbericht in berichtmontages wordt toegelaten, werpt het systeem een uitzondering in NotificationsActivityStreamProvider (NPR-31521).
 * Kan geen nieuwe leden maken. Er verschijnt een leeg scherm op het scherm Lid maken in de AEM-auteur-instantie (NPR-30951).
 * Gebruiker kan geen commentaar op een blog plaatsen in Internet Explorer 11 (NPR-30927).
 * De beheerder van een Beperkte Groep kan niet de Kaart van de Groep bekijken, kan om het even welke Snelle verrichtingen van de Verbinding (Edit/Publish/Delete groepen) in auteur AEM (NPR-30810) uitvoeren.
@@ -689,7 +689,7 @@ De belangrijkste kenmerken voor AEM 6.4.5.0-formulieren zijn:
 **Formulieren - Interactieve communicatie en formulieren - Correspondentenbeheer**
 
 * CCR UI (Correspondence UI) maken kan een zwevend getal niet verwerken.  NPR-29210: Hotfix voor CQ-4254201
-* De tooltip die op een variabele wordt geplaatst is niet zichtbaar op Create Correspondence UI (CCR UI). NPR-29739: Hotfix voor CQ-4250533
+* De tooltip die op een variabele wordt geplaatst is niet zichtbaar op Create Correspondence UI (CCR UI). NPR-29839: Hotfix voor CQ-4250533
 * Kan niet kopiëren of plakken uit Omnsearch binnen letters. NPR-29808: Hotfix voor CQ-4270783
 
 **HTML5-formulieren**
@@ -1368,7 +1368,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 
 **Platform**
 
-* Lus opnieuw indexeren| NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op zijn plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
+* Lus opnieuw indexeren| NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
 * Grensoverschrijdende overschrijving van intern gemarkeerd pad /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Probleem tijdens het uitvoeren van patroondetector. NPR-25036: Hotfix voor CQ-4248597
 * Logboekvermeldingen die niet zijn geschreven vanwege NPE in LogEntryImpl. NPR-25627: Hotfix voor graniet-22383
 * Replicatie van gebeurtenis delete controleert niet op rechten. NPR-25679: Hotfix voor CQ-4241234
@@ -1694,7 +1694,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Extra ondersteuning voor ARIA voor Print en PrintDialog.
 * ARIA-ondersteuning voor e-mailvalidatie toegevoegd.
 * Proactieve back-up voor platform.clientlibs-oplossingen.
-* Preventie van automatische uitvoering van scripts wanneer er geen invoer is voor het expliciete dataType.
+* Preventie van automatische uitvoering van scripts wanneer er geen invoer is naar het expliciete dataType (verhelpt CVE-2015-9251).
 
 **Assets**
 
@@ -1761,7 +1761,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * (Klassieke UI) (Aanraakinterface) De tagkiezer geeft geen uitzondering weer en genereert een uitzondering wanneer wordt geprobeerd naar tags te bladeren via een tagvoorspelling in het schema voor het zoeken naar middelen. NPR-23049: Hotfix voor CQ-4239371
 * (Klassieke UI) Componenten die xtype=tags gebruiken keren null terug en kunnen niet worden geselecteerd uit de 0e lijst met tags. NPR-23050: Hotfix voor CQ-4239937
 * (Branding) Het dialoogvenster Opt-in vermeldt Adobe Marketing Cloud in plaats van Adobe Experience Cloud. NPR-23210: Hotfix voor CQ-4237799
-* Met de filteroptie wordt AEM traag na de upgrade van 6.3 naar 6.4. NPR-24260: Hotfix voor CQ-4239847 (te controleren)
+* Met de filteroptie wordt AEM traag na de upgrade van 6.3 naar 6.4. NPR-23260: Hotfix voor CQ-4239847 (te controleren)
 * Proactieve Backport voor granite.omnissearch.core fixes. NPR-23536
 * Proactieve back-up voor platform.clientlibs-oplossingen. NPR-23569
 * De overerving van Cloud Service Config is verbroken tijdens het bewerken van andere pagina-eigenschappen. NPR-23216: Hotfix voor CQ-4239782
@@ -2264,7 +2264,7 @@ Lijst met inhoudspakketten die zijn opgenomen in AEM 6.4.8.0
 
 * [Opmerkingen bij de release AEM 6.4](../release-notes/release-notes.md)
 * [AEM-productpagina](https://www.adobe.com/solutions/web-experience-management.html)
-* [AEM 6.4-documentatie](https://helpx.adobe.com/support/experience-manager/6-4.html)
+* [AEM 6.4-documentatie](https://helpx.adobe.com/nl/support/experience-manager/6-4.html)
 * Abonneren op [Adobe-productupdates met prioriteit](https://www.adobe.com/subscription/priority-product-update.html)
 
 ### Beperkte sites {#restricted-sites-new}
