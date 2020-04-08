@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
 
 ---
 
@@ -32,10 +32,10 @@ Als u de avatar niet naast elke geposte opmerking wilt weergeven:
    * Dubbelklik op knooppunt `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. Zoek de volgende regels en verwijder of verwijder deze of verwijder ze:
 
-```xml
-<aside class="scf-comment-author">
-        <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
-```
+   ```xml
+   <aside class="scf-comment-author">
+           <img class="scf-comment-avatar {{#if topLevel}}withTopLevel{{/if}}" src="{{author.avatarUrl}}"></img>
+   ```
 
 Verwijder de regels of omring ze met &#39;&lt;!—&#39; en &#39;—>&#39; om ze uit te lichten. Bovendien worden de tekens &#39;xxx&#39; toegevoegd als visuele indicator van waar de avatar zou zijn geweest.
 
