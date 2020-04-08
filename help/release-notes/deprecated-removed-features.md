@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: d79b5f7204cb7a00cef6d31a1fdd2cbe93a6cfbe
+source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
 
 ---
 
@@ -28,7 +28,7 @@ Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan e
 
 ## Verouderde functies {#deprecated-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.4. In het algemeen worden functies die in een toekomstige versie moeten worden verwijderd, eerst vervangen door een alternatief.
+Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.4. In het algemeen worden functies die in een toekomstige release verwijderd moeten worden, eerst vervangen, met een alternatief dat beschikbaar is.
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie/mogelijkheid en plannen te maken om hun implementatie te wijzigen en het geboden alternatief te gebruiken.
 
@@ -96,7 +96,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   </tr>
   <tr>
    <td>Portal Director</td> 
-   <td><p>De Portal Director is een reeks functies waarmee u AEM-inhoud via Portlet kunt hosten op servers van derden.</p> <p>Adobe is niet van plan om verdere verbeteringen aan te brengen in de functie Portal Director onder de hieronder vermelde locatie. AEM 6.4 heeft de Portaaldirecteur inbegrepen, en de klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Let erop dat Portal Direct volledig wordt ondersteund terwijl het wordt afgekeurd.</p> 
+   <td><p>De Portal Director is een reeks functies waarmee u AEM-inhoud via Portlet kunt hosten op servers van derden.</p> <p>Adobe is niet van plan om verdere verbeteringen aan de functie Portal Director aan te brengen onder de hieronder vermelde locatie. AEM 6.4 heeft de Portaaldirecteur inbegrepen, en de klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Let erop dat Portal Direct volledig wordt ondersteund terwijl het wordt afgekeurd.</p> 
     <ul> 
      <li>/libs/portal/director</li> 
     </ul> </td> 
@@ -110,7 +110,14 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
   <tr>
    <td>Formulieren</td> 
    <td><p>De ondersteuning voor de Adobe Central Migration Bridge-service is verouderd omdat het Adobe Central-product niet meer wordt ondersteund.</p> </td> 
-   <td> </td> 
+   <td>Geen vervanging </td> 
+  </tr>
+    <tr>
+   <td>Formulieren</td> 
+   <td><p>Vervangen gebruik van JSONObject in Vraag en OperationOptions. De volgende API's zijn afgekeurd:
+   <ul><li>setArguments(JSONObject arguments)</li><li>JSONObject getArguments()</li><li>OperationOptions(String operationId, JSONObject arguments</li><li>JSONObject getArguments()</li><li>void setArguments (JSONObject-argumenten)</li></ul>
+   </p> </td> 
+   <td>De IValueMap-API gebruiken </td> 
   </tr>
   <tr>
    <td>Assets</td> 
@@ -209,12 +216,17 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
   <tr>
    <td>Formulieren</td> 
    <td> De functie Adaptieve documenten is verwijderd</td> 
-   <td> Met de functie voor interactieve communicatie kunt u afgedrukte en webgebaseerde communicatie maken. <br/> </td> 
+   <td> Met de functie voor interactieve communicatie kunt u afgedrukte en webgebaseerde communicatie maken. Als u Adaptieve documenten gebruikt, installeert u het compatibiliteitspakket om door te gaan met het gebruik van bestaande adaptieve documenten<br/> </td> 
   </tr>
     <tr>
     <td>Formulieren</td> 
     <td>AEM-formulieren zijn verwijderd op JEE-specifieke bestemmingspagina.</td> 
     <td>AEM Forms on JEE landing page is replace with AEM landing page (/aem/start.html) </td>  
+  </tr>
+   <tr>
+   <td>Formulieren</td> 
+   <td>Verwijderde ondersteuning voor standaard Captcha</td> 
+   <td>Gebruik de reCAPTCHA-service van Google.</td> 
   </tr>
    <tr>
    <td>Formulieren</td> 
