@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -28,27 +28,27 @@ In het volgende diagram worden gegevens weergegeven die worden verzonden naar ee
 
 De volgende lijst verklaart de stappen in het diagram.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Stap</p></th> 
-   <th><p>Beschrijving</p></th> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Stap</p></th>
+   <th><p>Beschrijving</p></th>
   </tr>
- </thead> 
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>Een gebruiker vult een interactief formulier in en klikt op de knop Verzenden van het formulier.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>Gegevens worden als XML-gegevens naar de <code>HandleData</code> Java-server verzonden.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>De <code>HandleData</code> Java Server bevat toepassingslogica om de gegevens op te halen.</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>Een gebruiker vult een interactief formulier in en klikt op de knop Verzenden van het formulier.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>Gegevens worden als XML-gegevens naar de <code>HandleData</code> Java-server verzonden.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>De <code>HandleData</code> Java Server bevat toepassingslogica om de gegevens op te halen.</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Verzonden XML-gegevens verwerken {#handling-submitted-xml-data}
@@ -75,31 +75,31 @@ Neem bijvoorbeeld een webtoepassing die de service Forms aanroept. Nadat de Form
 
 In de volgende tabel worden de stappen in dit diagram beschreven.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Stap</p></th> 
-   <th><p>Beschrijving</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Stap</p></th>
+   <th><p>Beschrijving</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>1</p></td> 
-   <td><p>Een webpagina bevat een koppeling die toegang krijgt tot een Java Server die de service Forms aanroept.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>2</p></td> 
-   <td><p>Met de service Forms wordt een interactief PDF-formulier weergegeven in de webbrowser van de client.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>3</p></td> 
-   <td><p>De gebruiker vult een interactief formulier in en klikt op een verzendknop. Het formulier wordt als PDF-gegevens teruggestuurd naar de service Forms. Deze optie wordt ingesteld in Designer.</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>4</p></td> 
-   <td><p>De service Forms slaat de PDF-gegevens op als een PDF-bestand. </p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>1</p></td>
+   <td><p>Een webpagina bevat een koppeling die toegang krijgt tot een Java Server die de service Forms aanroept.</p></td>
+  </tr>
+  <tr>
+   <td><p>2</p></td>
+   <td><p>Met de service Forms wordt een interactief PDF-formulier weergegeven in de webbrowser van de client.</p></td>
+  </tr>
+  <tr>
+   <td><p>3</p></td>
+   <td><p>De gebruiker vult een interactief formulier in en klikt op een verzendknop. Het formulier wordt als PDF-gegevens teruggestuurd naar de service Forms. Deze optie wordt ingesteld in Designer.</p></td>
+  </tr>
+  <tr>
+   <td><p>4</p></td>
+   <td><p>De service Forms slaat de PDF-gegevens op als een PDF-bestand. </p></td>
+  </tr>
+ </tbody>
 </table>
 
 ## Verzonden URL UTF-16-gegevens verwerken {#handling-submitted-url-utf-16-data}
@@ -152,15 +152,15 @@ U haalt formuliergegevens op die naar de Forms-service zijn gepost en bepaalt de
 
 De service Forms retourneert de volgende waarden om aan te geven of de verwerking van de gegevens is voltooid:
 
-* **** 0 (Verzenden): De verzonden gegevens zijn klaar om te worden verwerkt.
-* **** 1 (berekenen): De Forms-service heeft de gegevens berekend en de resultaten moeten worden teruggestuurd naar de gebruiker.
-* **** 2 (Valideren): De door de Forms-service gevalideerde formuliergegevens en de resultaten moeten naar de gebruiker worden teruggestuurd.
-* **** 3 (Volgende): De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
+* **0 (Verzenden):** De verzonden gegevens zijn klaar om te worden verwerkt.
+* **1 (berekenen):** De Forms-service heeft de gegevens berekend en de resultaten moeten worden teruggegeven aan de gebruiker.
+* **2 (Valideren):** De door de Forms-service gevalideerde formuliergegevens en de resultaten moeten naar de gebruiker worden teruggestuurd.
+* **3 (Volgende):** De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
 * **4 (Vorige**): De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
 
 >[!NOTE]
 >
->Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie Formuliergegevens [berekenen](/help/forms/develop/rendering-forms-rendering-forms calculate-form-data-calculate-form calculate-form-data-calculate-form.md#calculate-form-data)*.)*
+>Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie Formuliergegevens [berekenen](/help/forms/developing/calculating-form-data.md#calculating-form-data).)
 
 **Bepalen of de formulierverzending bestandsbijlagen bevat**
 
