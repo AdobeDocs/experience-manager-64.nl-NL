@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
 
 # Gecontroleerde map in AEM-formulieren {#watched-folder-in-aem-forms}
 
-Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resultaatbestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4)voor meer informatie over workflow, service en script.
+Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4)voor meer informatie over workflow, service en script.
 
 ## Een gecontroleerde map maken {#create-a-watched-folder}
 
@@ -30,7 +30,7 @@ U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken
 
 >[!NOTE]
 >
->In een gegroepeerde omgeving moet de map die als gecontroleerde map wordt gebruikt, toegankelijk, schrijfbaar en gedeeld zijn op het bestandssysteem of het netwerk. Elke instantie van de toepassingsserver van de cluster moet toegang tot dezelfde gedeelde map hebben. In Windows maakt u een toegewezen netwerkstation op alle servers en geeft u het pad van de toegewezen netwerkschijf op in de eigenschap folderPath.
+>In een gegroepeerde omgeving moet de map die als gecontroleerde map wordt gebruikt, toegankelijk, beschrijfbaar en gedeeld zijn op het bestandssysteem of het netwerk. Elke instantie van de toepassingsserver van de cluster moet toegang tot dezelfde gedeelde map hebben. In Windows maakt u een toegewezen netwerkstation op alle servers en geeft u het pad van de toegewezen netwerkschijf op in de eigenschap folderPath.
 
 ## Configuratieknooppunt voor gecontroleerde map maken {#create-watched-folder-configuration-node}
 
@@ -84,17 +84,17 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
 
 * **stageFileExpirationDuration (lang, standaard -1)**: Het aantal seconden dat moet worden gewacht voordat een invoerbestand/map die al voor verwerking is opgepakt, wordt beschouwd als een time-out en gemarkeerd als een fout. Dit verloopmechanisme wordt alleen geactiveerd wanneer de waarde voor deze eigenschap een positief getal is.
 
-   **** Opmerking: *Zelfs wanneer een invoer wordt gemarkeerd als een time-out met behulp van dit mechanisme, kan het nog steeds op de achtergrond verwerken, maar neemt het gewoon meer tijd dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.*
+   **Opmerking:** *Zelfs wanneer een invoer wordt gemarkeerd als een time-out met behulp van dit mechanisme, kan het nog steeds op de achtergrond verwerken, maar neemt het gewoon meer tijd dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.*
 
 * 
-* **** deleteExpiredStageFileOnlyWhenThrottled (Boolean, standaard true): Hiermee wordt aangegeven of het verloopmechanisme alleen moet worden geactiveerd wanneer de controlemap wordt vertraagd. Het mechanisme is relevanter voor vertraagde controlemappen aangezien een klein aantal dossiers die zich in een onverwerkte staat (wegens intermitterende baan/werkschemafouten) rond blijven de mogelijkheid hebben om verwerking voor de volledige partij te onderdrukken wanneer het vertragen wordt toegelaten. Als deze eigenschap wordt ingesteld op true (de standaardwaarde), wordt het verloopmechanisme niet geactiveerd voor gecontroleerde mappen die niet worden vertraagd. Als de eigenschap false blijft, wordt het mechanisme altijd geactiveerd zolang de eigenschap stageFileExpirationDuration een positief getal is.
+* **deleteExpiredStageFileOnlyWhenThrottled (Boolean, standaard true):** Hiermee wordt aangegeven of het verloopmechanisme alleen moet worden geactiveerd wanneer de controlemap wordt vertraagd. Het mechanisme is relevanter voor vertraagde controlemappen aangezien een klein aantal dossiers die zich in een onverwerkte staat (wegens intermitterende baan/werkschemafouten) rond blijven de mogelijkheid hebben om verwerking voor de volledige partij te onderdrukken wanneer het vertragen wordt toegelaten. Als deze eigenschap wordt ingesteld op true (de standaardwaarde), wordt het verloopmechanisme niet geactiveerd voor gecontroleerde mappen die niet worden vertraagd. Als de eigenschap false blijft, wordt het mechanisme altijd geactiveerd zolang de eigenschap stageFileExpirationDuration een positief getal is.
 
 * **pollInterval (lang)**: Het interval in seconden voor het scannen van de gecontroleerde map op invoer. Tenzij de Throttle-instelling is ingeschakeld, moet het pollinterval langer zijn dan de tijd die nodig is om een gemiddelde taak te verwerken. anders kan het systeem overbelast raken . De standaardwaarde is 5. Zie de beschrijving bij Batchgrootte voor meer informatie. De waarde van het pollinterval moet groter dan of gelijk aan 1 zijn.
-* **** excludeFilePattern (String)**: een puntkomma**; Gescheiden lijst met patronen die een gecontroleerde map gebruikt om te bepalen welke bestanden en mappen worden gescand en opgehaald. Bestanden of mappen met dit patroon worden niet gescand voor verwerking. Deze instelling is handig wanneer de invoer een map met meerdere bestanden is. De inhoud van de map kan worden gekopieerd naar een map met een naam die wordt opgehaald door de gecontroleerde map. Hierdoor wordt voorkomen dat de gecontroleerde map een map opneemt die moet worden verwerkt voordat de map volledig is gekopieerd naar de invoermap. De standaardwaarde is null.
+* **excludeFilePattern (String)**: een puntkomma **;** Gescheiden lijst met patronen die een gecontroleerde map gebruikt om te bepalen welke bestanden en mappen worden gescand en opgehaald. Bestanden of mappen met dit patroon worden niet gescand voor verwerking. Deze instelling is handig wanneer de invoer een map met meerdere bestanden is. De inhoud van de map kan worden gekopieerd naar een map met een naam die wordt opgehaald door de gecontroleerde map. Hierdoor wordt voorkomen dat de gecontroleerde map een map opneemt die moet worden verwerkt voordat de map volledig is gekopieerd naar de invoermap. De standaardwaarde is null.
 
    U kunt [bestandspatronen](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) gebruiken om uit te sluiten:
 
-   * Bestanden met specifieke bestandsnaamextensies; bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;. &amp;ast;
+   * Bestanden met specifieke bestandsnaamextensies; bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
    * Bestanden met specifieke namen; bijvoorbeeld data&amp;ast; bestanden en mappen met de naam data1, data2 enzovoort uitsluiten.
    * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
@@ -104,10 +104,10 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
 
 Zie [Bestandspatronen](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p)voor meer informatie over bestandspatronen.
 
-* **** includeFilePattern (String)**: een puntkomma**; gescheiden lijst met patronen die de gecontroleerde map gebruikt om te bepalen welke mappen en bestanden moeten worden gescand en opgepakt. Als IncludeFilePattern bijvoorbeeld input&amp;ast; is, alle dossiers en omslagen die input&amp;amp aanpassen;ast; worden opgepakt. Dit omvat bestanden en mappen met de naam input1, input2, enzovoort. De standaardwaarde is &amp;ast; en geeft alle bestanden en mappen aan. U kunt bestandspatronen gebruiken om het volgende op te nemen:
+* **includeFilePattern (String)**: een puntkomma **;** gescheiden lijst met patronen die de gecontroleerde map gebruikt om te bepalen welke mappen en bestanden moeten worden gescand en opgepakt. Als IncludeFilePattern bijvoorbeeld input&amp;ast; is, alle dossiers en omslagen die input&amp;amp aanpassen;ast; worden opgepakt. Dit omvat bestanden en mappen met de naam input1, input2, enzovoort. De standaardwaarde is &amp;ast; en geeft alle bestanden en mappen aan. U kunt bestandspatronen gebruiken om het volgende op te nemen:
 
-   * Bestanden met specifieke bestandsnaamextensies; bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;. &amp;ast;
-   * Bestanden met specifieke namen; bijvoorbeeld gegevens. &amp;ast; omvat bestanden en mappen met de naam data1, data2, enzovoort.
+   * Bestanden met specifieke bestandsnaamextensies; bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
+   * Bestanden met specifieke namen; bijvoorbeeld gegevens.&amp;ast; omvat bestanden en mappen met de naam data1, data2, enzovoort.
 
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
@@ -145,7 +145,7 @@ Zie [Bestandspatronen voor meer informatie over bestandspatronen](/help/forms/us
 >Hoe kleiner de resultaatmappen, hoe beter Gecontroleerde map. Als de geschatte belasting voor de gecontroleerde map bijvoorbeeld 1000 bestanden per uur is, probeert u een patroon als resultaat/%Y%M%D%H, zodat er elk uur een nieuwe submap wordt gemaakt. Als het laden kleiner is (bijvoorbeeld 1000 bestanden per dag), kunt u een patroon gebruiken zoals result/%Y%M%D.
 
 * **failureFolderName (String)**: De map waarin bestanden met fouten worden opgeslagen. Deze locatie is altijd relatief ten opzichte van de gecontroleerde map. U kunt bestandspatronen gebruiken, zoals beschreven in Resultaatmap. Alleen-lezen bestanden worden niet verwerkt en opgeslagen in de map met foutmeldingen. De standaardwaarde is error/%Y/%M/%D/.
-* **** preserveFolderName (String): De locatie waar bestanden worden opgeslagen nadat de verwerking is voltooid. Het pad kan een absoluut, relatief of null-mappad zijn. U kunt bestandspatronen gebruiken, zoals beschreven in Resultaatmap. De standaardwaarde is preserve/%Y/%M/%D/.
+* **preserveFolderName (String):** De locatie waar bestanden worden opgeslagen nadat de verwerking is voltooid. Het pad kan een absoluut, relatief of null-mappad zijn. U kunt bestandspatronen gebruiken, zoals beschreven in Resultaatmap. De standaardwaarde is preserve/%Y/%M/%D/.
 * **batchSize (lang)**: Het aantal bestanden of mappen dat per scan moet worden opgehaald. gebruiken om overbelasting van het systeem te voorkomen; te veel bestanden tegelijk scannen kan ertoe leiden dat de toepassing vastloopt. De standaardwaarde is 2.
 
    Met de instellingen voor Opiniepeiling en Batchgrootte bepaalt u hoeveel bestanden gecontroleerde map worden opgehaald in elke scan. De gecontroleerde Omslag gebruikt een de draadpool van het Kwartz om de inputomslag af te tasten. De draadpool wordt gedeeld met andere diensten. Als het scaninterval klein is, scannen de threads de invoermap vaak. Als bestanden vaak in de gecontroleerde map worden neergezet, moet u het scaninterval klein houden. Als de dossiers niet vaak worden gelaten vallen, gebruik een groter aftasteninterval zodat de andere diensten de draden kunnen gebruiken.
@@ -159,17 +159,17 @@ Zie [Bestandspatronen voor meer informatie over bestandspatronen](/help/forms/us
 * **overwriteDuplicateFilename (Boolean)**: Als u de waarde True instelt, worden de bestanden in de map results en preserve overschreven. Wanneer ingesteld op Onwaar, worden bestanden en mappen met het numerieke indexachtervoegsel gebruikt voor de naam. De standaardwaarde is False.
 * **preserveOnFailed (Boolean)**: Invoerbestanden behouden als de bewerking niet op een service wordt uitgevoerd. De standaardwaarde is true.
 * **inputFilePattern (String)**: Hiermee geeft u het patroon op van de invoerbestanden voor een gecontroleerde map. Hiermee maakt u een whitelist van de bestanden.
-* **asynch (Boolean)**: Identificeert het aanroepingstype als asynchroon of synchroon. De standaardwaarde is true (asynchroon). De dossierverwerking is een middel verbruikende taak, houd de waarde van de asynchrone vlag aan waar om het onderdrukken van de belangrijkste draad van de aftastenbaan te verhinderen. In een gegroepeerd milieu, is het kritiek om de vlag waar te houden om lading-in evenwicht brengend voor de dossiers toe te laten die over de beschikbare servers worden verwerkt. Als de vlag vals is, probeert de aftastenbaan om verwerking voor elk top-level dossier/omslag opeenvolgend binnen zijn eigen draad uit te voeren. Stel de markering niet in op onwaar zonder een specifieke reden, zoals verwerking op basis van een workflow op een enkele server.
+* **asynch (Boolean)**: Identificeert het aanroepingstype als asynchroon of synchroon. De standaardwaarde is true (asynchroon). De dossierverwerking is een middel verbruikende taak, houd de waarde van de asynchrone vlag aan waar om het onderdrukken van de belangrijkste draad van de aftastenbaan te verhinderen. In een gegroepeerd milieu, is het kritiek om de vlag waar te houden om lading-in evenwicht brengend voor de dossiers toe te laten die over de beschikbare servers worden verwerkt. Als de vlag vals is, probeert de aftastenbaan om verwerking voor elk top-level dossier/omslag opeenvolgend binnen zijn eigen draad uit te voeren. Stel de markering niet in op onwaar zonder een specifieke reden, zoals verwerking op basis van een workflow op basis van één server.
 
 >[!NOTE]
 >
 >De workflows zijn per ontwerp asynchroon. Zelfs als u de waarde op false instelt, worden de workflows gestart in de asynchrone modus.
 
 * **enabled (Boolean)**: Hiermee wordt het scannen naar een gecontroleerde map gedeactiveerd en geactiveerd. Stel deze optie in op true als u de gecontroleerde map wilt scannen. De standaardwaarde is true.
-* **payloadMapperFilter**: Wanneer een map is geconfigureerd als controlemap, wordt een mapstructuur gemaakt in de controlemap. De structuur bevat mappen voor het leveren van invoer, het ontvangen van uitvoer (resultaten), het opslaan van gegevens voor fouten, het bewaren van gegevens voor langlevende processen en het opslaan van gegevens voor verschillende stadia. De mapstructuur van een gecontroleerde map kan dienen als een lading Forms-centric workflows. Met een payload-mapper kunt u de structuur definiëren van een lading die een gecontroleerde map gebruikt voor invoer, uitvoer en verwerking. Als u bijvoorbeeld de standaardmapper gebruikt, wordt de inhoud van de gecontroleerde map toegewezen aan de [payload]-\invoer- en [payload]\uitvoermap. Er zijn twee uitvoeringen beschikbaar voor de payload mapper box. Als u geen [aangepaste implementatie](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)hebt, gebruikt u een van de implementaties buiten de box:
+* **payloadMapperFilter**: Wanneer een map is geconfigureerd als controlemap, wordt een mapstructuur gemaakt in de controlemap. De structuur bevat mappen voor het leveren van invoer, het ontvangen van uitvoer (resultaten), het opslaan van gegevens voor fouten, het bewaren van gegevens voor langlevende processen en het opslaan van gegevens voor verschillende stadia. De mapstructuur van een gecontroleerde map kan dienen als een lading Forms-centric workflows. Met een payload-mapper kunt u de structuur definiëren van een lading die een gecontroleerde map gebruikt voor invoer, uitvoer en verwerking. Als u bijvoorbeeld de standaardmapper gebruikt, wordt de inhoud van de gecontroleerde map toegewezen aan de [payload]-\input- en [payload]\output-map. Er zijn twee uitvoeringen beschikbaar voor de payload mapper box. Als u geen [aangepaste implementatie](/help/forms/using/watched-folder-in-aem-forms.md#creating-a-custom-payload-mapper-filter)hebt, gebruikt u een van de implementaties buiten de box:
 
-   * **** Standaardmapper: Gebruik de standaard payload mapper om de invoer- en uitvoerinhoud van de gecontroleerde mappen in aparte invoer- en uitvoermappen in de payload te houden. Gebruik in het payload-pad van een workflow ook [payload]/input/- en [payload]/output-paden om inhoud op te halen en op te slaan.
-   * **** Simple File-based payload mapper: Gebruik de Simple File-based payload mapper om invoer- en uitvoerinhoud rechtstreeks in de payload-map te houden. Er wordt geen extra hiërarchie gemaakt, zoals de standaardmapper.
+   * **Standaardmapper:** Gebruik de standaard payload mapper om de invoer- en uitvoerinhoud van de gecontroleerde mappen in aparte invoer- en uitvoermappen in de payload te houden. Gebruik in het payload-pad van een workflow ook [payload]/input/- en [payload]/output-paden om inhoud op te halen en op te slaan.
+   * **Simple File-based payload mapper:** Gebruik de Simple File-based payload mapper om invoer- en uitvoerinhoud rechtstreeks in de payload-map te houden. Er wordt geen extra hiërarchie gemaakt, zoals de standaardmapper.
 
 ### Aangepaste configuratieparameters {#custom-configuration-parameters}
 
@@ -178,7 +178,7 @@ Samen met de bovengenoemde Gecontroleerde eigenschappen van de Mapconfiguratie, 
 1. Meld u aan bij CRXDE-Lite en navigeer naar het configuratieknooppunt Gecontroleerde map.
 1. Voeg een eigenschapsparam toe.&lt;property_name> aan de Gecontroleerde knoop van de Configuratie van de Omslag. Het type van de eigenschap kan alleen Boolean, Date, Decimaal, Double, Long en String zijn. U kunt eigenschappen voor één waarde en voor meerdere waarden opgeven.
 
-**** Opmerking: *If het gegevenstype van het bezit is Double, dan specificeer een decimaal punt in de waarde van dergelijke eigenschappen. Voor alle eigenschappen, waarbij het gegevenstype Dubbel is en er geen decimaalteken is opgegeven in de waarde, wordt het type omgezet in Lang. *
+**Opmerking:** *If het gegevenstype van het bezit is Double, dan specificeer een decimaal punt in de waarde van dergelijke eigenschappen. Voor alle eigenschappen, waarbij het gegevenstype Dubbel is en er geen decimaalteken is opgegeven in de waarde, wordt het type omgezet in Lang. *
 
 Deze eigenschappen worden overgegaan als onveranderlijke kaart van het type Map&lt;String, Object> aan de verwerkingscode. De verwerkingscode kan een ECMAScript, Workflow, of de Dienst zijn. De waarden die voor de eigenschappen worden verstrekt zijn beschikbaar als sleutel-waarde paren in de kaart. De sleutel is de naam van de eigenschap en de waarde is de waarde van de eigenschap. Zie de volgende afbeelding voor meer informatie over aangepaste configuratieparameters:
 
@@ -198,7 +198,7 @@ U kunt veranderbare variabelen voor werkschemagebaseerde dossierverwerkingsmetho
 
    >[!NOTE]
    >
-   > Als het gegevenstype van de eigenschap Double is, geeft u een decimaal punt op in de waarde van dergelijke eigenschappen. Voor alle eigenschappen, waarbij het gegevenstype Dubbel is en er geen decimaalteken is opgegeven in de waarde, wordt het type omgezet in Lang.
+   >Als het gegevenstype van de eigenschap Double is, geeft u een decimaal punt op in de waarde van dergelijke eigenschappen. Voor alle eigenschappen, waarbij het gegevenstype Dubbel is en er geen decimaalteken is opgegeven in de waarde, wordt het type omgezet in Lang.
 
 >[!NOTE]
 >
@@ -216,8 +216,7 @@ Een dienst is een douaneimplementatie van de `com.adobe.aemfd.watchfolder.servic
 
 #### Aangepaste implementatie van de ContentProcessor-interface {#custom-implementation-of-the-contentprocessor-interface}
 
-De aangepaste implementatie accepteert een verwerkingscontext (een object van het type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), leest invoerdocumenten en configuratieparameters van de context, verwerkt de invoer en voegt de uitvoer terug toe aan de\
-context. De ProcessorContext heeft de volgende API&#39;s:
+De aangepaste implementatie accepteert een verwerkingscontext (een object van het type com.adobe.aemfd.watchfolder.service.api.ProcessorContext), leest invoerdocumenten en configuratieparameters van de context, verwerkt de invoer en voegt de uitvoer terug toe aan de context. De ProcessorContext heeft de volgende API&#39;s:
 
 * **getWatchFolderId**: Retourneert de id van de gecontroleerde map.
 * **getInputMap**: Retourneert een kaart van het type Map. De kaarttoetsen zijn de bestandsnaam van het invoerbestand en een documentobject dat de inhoud van het bestand bevat. Gebruik de API getinputMap om de invoerbestanden te lezen.
@@ -273,7 +272,7 @@ var inputMap = processorContext.getInputMap();
 var params = processorContext.getConfigParameters();
 var entry = inputMap.entrySet().iterator().next();
 var tempFile = new Packages.java.io.File(params.get("tempDir"), params.get("outPrefix") + entry.getKey());
-entry.getValue().copyToFile(tempFile);    
+entry.getValue().copyToFile(tempFile);
 processorContext.setResult(tempFile.getName(), new Packages.com.adobe.aemfd.docmanager.Document(tempFile, true));
 ```
 
@@ -346,7 +345,7 @@ Overwegingen bij het gebruik van de setResult-API in workflows:
 >
 >Het aanroepen van de setResult-API met null-inhoud in andere scenario&#39;s zou resulteren in een fout.
 
-Het volgende voorbeeld wordt geïmplementeerd als een workflowstap. In het voorbeeld, gebruikt ECMAscript een veranderlijke stepCount om het aantal tijden te volgen een stap in de huidige werkschemainstantie wordt geroepen.\
+Het volgende voorbeeld wordt geïmplementeerd als een workflowstap. In het voorbeeld, gebruikt ECMAscript een veranderlijke stepCount om het aantal tijden te volgen een stap in de huidige werkschemainstantie wordt geroepen.
 De naam van de uitvoermap is een combinatie van het huidige stapnummer, de oorspronkelijke bestandsnaam en het voorvoegsel dat in de parameter outPrefix is opgegeven.
 
 ECMAScript krijgt een verwijzing van de dienst van de werkschemacontext en leidt tot een implementatie van de interface WorkflowContextProcessor. De WorkflowContextProcessor-implementatie accepteert invoerbestanden, kopieert het bestand naar een tijdelijke locatie en retourneert een document dat het gekopieerde bestand vertegenwoordigt. Gebaseerd op de waarde van de variabele purgePrevious Van Boole, schrapt de huidige stap de output die laatste tijd door de zelfde stap werd geproduceerd toen de stap in de huidige werkschemainstantie werd begonnen. Uiteindelijk wordt de methode wfSvc.execute aangeroepen om de WorkflowContextProcessor-implementatie uit te voeren. De inhoud van het uitvoerdocument wordt opgeslagen naar de resultaatmap op het fysieke pad dat wordt vermeld in het configuratieknooppunt Gecontroleerde map.
@@ -365,8 +364,8 @@ var impl = { processWorkflowContext: function (wfContext) {
     log.info("Inputs: " + inputMap); // Input map of type Map<String, Document>
     log.info("Params: " + paramMap); // Config params of type Map<String, Object>
     log.info("Old results: " + preResults);
-    log.info("Old variables: " + preVars);            
-    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);    
+    log.info("Old variables: " + preVars);
+    var currStepNumber = new Packages.java.lang.Long(new Packages.java.lang.Long(preVars.get("stepCount")).longValue() + 1);
     log.info("Current step number: " + currStepNumber);
     wfContext.setVariable("stepCount", currStepNumber);
     var entry = inputMap.entrySet().iterator().next();
@@ -377,7 +376,7 @@ var impl = { processWorkflowContext: function (wfContext) {
     wfContext.setResult(tempFile.getName(), outDoc);
     var prevStepOutName = paramMap.get("outPrefix") + "STEP-" + (currStepNumber - 1) + "-" + entry.getKey();
     if (preResults.containsKey(prevStepOutName) && paramMap.get("purgePrevious").booleanValue()) {
-        log.info("Purging previous step output " + prevStepOutName);        
+        log.info("Purging previous step output " + prevStepOutName);
         wfContext.setResult(prevStepOutName, null);
     }
 } }
@@ -387,7 +386,7 @@ log.info("Exiting workflow script!")
 
 ### Filter Payload Mapper maken om de structuur van een gecontroleerde map toe te wijzen aan de lading van een workflow {#create-payload-mapper-filter-to-map-structure-of-a-watched-folder-to-the-payload-of-a-workflow}
 
- Wanneer u een controlemap maakt, maakt deze een mappenstructuur in de map die wordt gecontroleerd. De mapstructuur heeft mappen voor werkgebied, resultaat, behoud, invoer en mislukking. De mappenstructuur kan dienen als invoerlading aan het werkschema en output van een werkschema goedkeuren. Het kan ook een lijst van mislukkingspunten maken, als om het even welk.
+Wanneer u een controlemap maakt, maakt deze een mappenstructuur in de map die wordt gecontroleerd. De mapstructuur heeft mappen voor werkgebied, resultaat, behoud, invoer en mislukking. De mappenstructuur kan dienen als invoerlading aan het werkschema en output van een werkschema goedkeuren. Het kan ook een lijst van mislukkingspunten maken, als om het even welk.
 
 Als de structuur van een payload anders is dan de structuur van de gecontroleerde map, kunt u aangepaste scripts schrijven om de structuur van de gecontroleerde map toe te wijzen aan de payload. Een dergelijk script wordt een payload mapfilter genoemd. AEM Forms beschikt over een payload mapfilter waarmee u de structuur van de gecontroleerde map kunt toewijzen aan een payload.
 
@@ -507,7 +506,7 @@ Door deze functie voorkomt u dat Gecontroleerde map nieuwe taken aanroept wannee
 
 * Controlemap is afhankelijk van het aantal bestanden in de werkgebiedmap om te bepalen hoeveel taken worden uitgevoerd. Als bestanden niet worden verwerkt in de werkgebiedmap, worden er geen taken meer aangeroepen in de gecontroleerde map. Als de batchgrootte bijvoorbeeld vier en drie taken is, wordt in Gecontroleerde map slechts één taak aangeroepen bij volgende aanroepen. Er zijn meerdere scenario&#39;s die ertoe kunnen leiden dat bestanden niet worden verwerkt in de werkgebiedmap. Wanneer taken zijn geïnstalleerd, kan de beheerder het proces op de beheerpagina van Process Management beëindigen, zodat de gecontroleerde map de bestanden uit de werkgebiedmap verplaatst.
 * Als de AEM Forms-server uitvalt voordat Gecontroleerde map de taken activeert, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)voor meer informatie.
-* Als de AEM Forms-server actief is maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen. Dit gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)voor meer informatie.
+* Als de AEM Forms-server wordt uitgevoerd maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen, wat gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)voor meer informatie.
 
 ### Foutpunten en herstelFoutpunten en herstel {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -554,8 +553,8 @@ De uitvoer van de eerste conversie gaat naar \path\result. De invoer voor de twe
 
 Beheerders kunnen het type bestand opgeven dat een service kan aanroepen. Voor elke gecontroleerde map kunnen meerdere bestandspatronen worden ingesteld. Een bestandspatroon kan een van de volgende bestandseigenschappen zijn:
 
-* Bestanden met specifieke bestandsextensies; bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;. &amp;ast;
-* Bestanden met specifieke namen; bijvoorbeeld gegevens. &amp;ast;
+* Bestanden met specifieke bestandsextensies; bijvoorbeeld &amp;ast;.dat, &amp;ast;.xml, .pdf, &amp;ast;.&amp;ast;
+* Bestanden met specifieke namen; bijvoorbeeld gegevens.&amp;ast;
 * Bestanden met samengestelde expressies in de naam en de extensie, zoals in de volgende voorbeelden:
 
    * Gegevens[0-9][0-9][0-9].[dD][aA][tT]
@@ -642,7 +641,7 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
 
 1. Verwijder de standaardworkflowstap. Sleep de processtap van de Sidetrap naar de workflow en zet deze neer.
 
-   ![create-a-workflow-pdf-(2)](assets/create-a-workflow-pdf-(2).png)
+   ![create-a-workflow-pdf2](assets/create-a-workflow-pdf2.png)
 
 1. Klik met de rechtermuisknop op de processtap en selecteer **Bewerken**. Het venster Step Properties wordt weergegeven.
 
