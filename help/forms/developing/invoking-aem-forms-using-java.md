@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 translation-type: tm+mt
-source-git-commit: c74b951194fd2fd723056679784ac2186f37a3e2
+source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
 
 ---
 
@@ -64,7 +64,9 @@ Als u een AEM Forms-service via programmacode wilt aanroepen met de Java API, ne
 * De AEM Forms-service die moet worden aangeroepen. Een cliënttoepassing kan één of meerdere diensten aanhalen.
 * De modus waarin u de service AEM Forms wilt activeren. U kunt de modus EJB of SOAP gebruiken. (Zie Verbindingseigenschappen [instellen](invoking-aem-forms-using-java.md#setting-connection-properties).)
 
->[!NOTE] (Alleen sleutel) Start de AEM Forms-server met de opdracht `standalone.bat -b <Server IP> -c lc_turnkey.xml` om een server-IP voor EJB op te geven
+>[!NOTE]
+>
+>(Alleen sleutel) Start de AEM Forms-server met de opdracht `standalone.bat -b <Server IP> -c lc_turnkey.xml` om een server-IP voor EJB op te geven.
 
 * De J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
@@ -72,329 +74,329 @@ Als u een AEM Forms-service via programmacode wilt aanroepen met de Java API, ne
 
 In de volgende tabel staan de JAR-bestanden die vereist zijn om AEM Forms-services aan te roepen.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Bestand</p></th> 
-   <th><p>Beschrijving</p></th> 
-   <th><p>Locatie</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Bestand</p></th>
+   <th><p>Beschrijving</p></th>
+   <th><p>Locatie</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p>adobe-livecycle-client.jar</p></td> 
-   <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-usermanager-client.jar</p></td> 
-   <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-utilities.jar</p></td> 
-   <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk//client-libs/&lt;toepassingsserver&gt;</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-applicationManager-client-sdk.jar</p></td> 
-   <td><p>Vereist om de dienst van de Manager van de Toepassing aan te halen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-assembler-client.jar</p></td> 
-   <td><p>Vereist om de dienst van de Assembler aan te halen. </p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-backup-restore-client-sdk.jar</p></td> 
-   <td><p>Vereist om de service-API voor back-up en herstel aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-barcodedforms-client.jar</p></td> 
-   <td><p>Vereist om de service voor formulieren met streepjescodes aan te roepen. </p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-convertpdf-client.jar</p></td> 
-   <td><p>De service PDF converteren is vereist. </p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-distiller-client.jar</p></td> 
-   <td><p>Vereist om de Distiller-service aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-docconverter-client.jar</p></td> 
-   <td><p>Vereist om de dienst DocConverter aan te halen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-contentservices-client.jar</p></td> 
-   <td><p>Vereist om de service Documentbeheer aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-encryption-client.jar</p></td> 
-   <td><p>Vereist om de dienst van de Encryptie aan te halen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-forms-client.jar</p></td> 
-   <td><p>Vereist om de service Forms aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-formdataIntegration-client.jar</p></td> 
-   <td><p>Vereist om de dienst van de Integratie van de Gegevens van de Vorm aan te halen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-generatepdf-client.jar</p></td> 
-   <td><p>Vereist om de service PDF genereren aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-generate3dpdf-client.jar</p></td> 
-   <td><p>Vereist om de service 3D-PDF genereren aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-jobmanager-client-sdk.jar</p></td> 
-   <td><p>Vereist om de service Taakbeheer aan te roepen. </p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-output-client.jar</p></td> 
-   <td><p>Vereist om de dienst van de Output aan te halen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-pdfutility-client.jar</p></td> 
-   <td><p>Vereist om de service PDF-hulpprogramma's of XMP-hulpprogramma's aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-reader-extensions-client.jar</p></td> 
-   <td><p>Vereist om de Acrobat Reader DC-extensieservice aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td> 
-   <td><p>Vereist om de dienst van de Bewaarplaats aan te halen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs\third</p></td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>adobe-rights management-client.jar</p></li> 
-     <li><p>namespace.jar</p></li> 
-     <li><p>jaxb-api.jar</p></li> 
-     <li><p>jaxb-impl.jar</p></li> 
-     <li><p>jaxb-libs.jar</p></li> 
-     <li><p>jaxb-xjc.jar</p></li> 
-     <li><p>relaxngDatatype.jar</p></li> 
-     <li><p>xsdlib.jar</p></li> 
-    </ul></td> 
-   <td><p>Vereist om de dienst van het Beheer van Rechten aan te halen.</p><p>Als AEM-formulieren worden geïmplementeerd op JBoss, neemt u al deze bestanden op. </p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p><p>JBoss-specifieke lib-map</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-signatures-client.jar</p></td> 
-   <td><p>Vereist om de service Handtekening aan te roepen.</p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-taskmanager-client-sdk.jar</p></td> 
-   <td><p>Vereist om de dienst van de Manager van de Taak aan te halen. </p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
-  <tr> 
-   <td><p>adobe-truststore-client.jar</p></td> 
-   <td><p>Vereist om de dienst van de Opslag van het Vertrouwen aan te halen. </p></td> 
-   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p>adobe-livecycle-client.jar</p></td>
+   <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-usermanager-client.jar</p></td>
+   <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-utilities.jar</p></td>
+   <td><p>Moet altijd worden opgenomen in het klassepad van een Java-clienttoepassing.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk//client-libs/&lt;toepassingsserver&gt;</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-applicationmanager-client-sdk.jar</p></td>
+   <td><p>Vereist om de dienst van de Manager van de Toepassing aan te halen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-assembler-client.jar</p></td>
+   <td><p>Vereist om de dienst van de Assembler aan te halen. </p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-backup-restore-client-sdk.jar</p></td>
+   <td><p>Vereist om de service-API voor back-up en herstel aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-barcodedforms-client.jar</p></td>
+   <td><p>Vereist om de service voor formulieren met streepjescodes aan te roepen. </p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-convertpdf-client.jar</p></td>
+   <td><p>De service PDF converteren is vereist. </p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-distiller-client.jar</p></td>
+   <td><p>Vereist om de Distiller-service aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-docconverter-client.jar</p></td>
+   <td><p>Vereist om de dienst DocConverter aan te halen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-contentservices-client.jar</p></td>
+   <td><p>Vereist om de service Documentbeheer aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-encryption-client.jar</p></td>
+   <td><p>Vereist om de dienst van de Encryptie aan te halen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-forms-client.jar</p></td>
+   <td><p>Vereist om de service Forms aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-formdataintegration-client.jar</p></td>
+   <td><p>Vereist om de dienst van de Integratie van de Gegevens van de Vorm aan te halen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-generatepdf-client.jar</p></td>
+   <td><p>Vereist om de service PDF genereren aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-generate3dpdf-client.jar</p></td>
+   <td><p>Vereist om de service 3D-PDF genereren aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-jobmanager-client-sdk.jar</p></td>
+   <td><p>Vereist om de service Taakbeheer aan te roepen. </p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-output-client.jar</p></td>
+   <td><p>Vereist om de dienst van de Output aan te halen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-pdfutility-client.jar</p></td>
+   <td><p>Vereist om de service PDF-hulpprogramma's of XMP-hulpprogramma's aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-reader-extensions-client.jar</p></td>
+   <td><p>Vereist om de Acrobat Reader DC-extensieservice aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-repository-client.jar</p><p>commons-codec-1.3.jar</p></td>
+   <td><p>Vereist om de dienst van de Bewaarplaats aan te halen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs\third</p></td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li><p>adobe-rightsmanagement-client.jar</p></li>
+     <li><p>namespace.jar</p></li>
+     <li><p>jaxb-api.jar</p></li>
+     <li><p>jaxb-impl.jar</p></li>
+     <li><p>jaxb-libs.jar</p></li>
+     <li><p>jaxb-xjc.jar</p></li>
+     <li><p>relaxngDatatype.jar</p></li>
+     <li><p>xsdlib.jar</p></li>
+    </ul></td>
+   <td><p>Vereist om de dienst van het Beheer van Rechten aan te halen.</p><p>Als AEM-formulieren worden geïmplementeerd op JBoss, neemt u al deze bestanden op. </p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p><p>JBoss-specifieke lib-map</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-signatures-client.jar</p></td>
+   <td><p>Vereist om de service Handtekening aan te roepen.</p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-taskmanager-client-sdk.jar</p></td>
+   <td><p>Vereist om de dienst van de Manager van de Taak aan te halen. </p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+  <tr>
+   <td><p>adobe-truststore-client.jar</p></td>
+   <td><p>Vereist om de dienst van de Opslag van het Vertrouwen aan te halen. </p></td>
+   <td><p>&lt;<i>installatiemap</i>&gt;/sdk/client-libs/common</p></td>
+  </tr>
+ </tbody>
 </table>
 
 ### Verbindingsmodus en JAR-bestanden voor J2EE-toepassing {#connection-mode-and-j2ee-application-jar-files}
 
 De volgende tabel bevat een lijst met JAR-bestanden die afhankelijk zijn van de verbindingsmodus en de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Bestand</p> </th> 
-   <th><p>Beschrijving</p> </th> 
-   <th><p>Locatie</p> </th> 
-  </tr> 
- &lt;/thead align="left"&gt; 
- <tbody> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>activation.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jaxen-1,1-bèta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saaj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>xercesImpl.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> <p> </p> </td> 
-   <td><p>Als AEM-formulieren wordt aangeroepen in de SOAP-modus, neemt u deze JAR-bestanden op.</p> </td> 
-   <td><p>&lt;<em>installatiemap</em>&gt;/sdk/client-libs/third-party</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p> jreliëf-client.jar</p> </td> 
-   <td><p>Als AEM Forms wordt geïmplementeerd op JBoss Application Server, neemt u dit JAR-bestand op.</p> <p>Vereiste klassen worden niet gevonden door de klasseleider als jreliëf-client.jar en de jars waarnaar wordt verwezen, zich niet op dezelfde locatie bevinden.</p> </td> 
-   <td><p>JBoss client lib directory</p> <p>Als u uw clienttoepassing op dezelfde J2EE-toepassingsserver implementeert, hoeft u dit bestand niet op te nemen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>wlclient.jar</p> </td> 
-   <td><p>Als AEM Forms wordt geïmplementeerd op BEA WebLogic Server®, neemt u dit JAR-bestand op.</p> </td> 
-   <td><p>WebLogic-specifieke lib-directory</p> <p>Als u uw clienttoepassing op dezelfde J2EE-toepassingsserver implementeert, hoeft u dit bestand niet op te nemen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td> 
-    <ul> 
-     <li><p>com.ibm.ws.admin.client_6.1.0.jar</p> </li> 
-     <li><p>com.ibm.ws.webservices.thinclient_6.1.0.jar</p> </li> 
-    </ul> </td> 
-   <td> 
-    <ul> 
-     <li><p>Als AEM Forms wordt opgesteld op de Server van de Toepassing WebSphere, omvat deze JAR dossiers.</p> </li> 
-     <li><p>(com.ibm.ws.webservices.thinclient_6.1.0.jar is vereist voor het oproepen van webservices).</p> </li> 
-    </ul> </td> 
-   <td><p>WebSphere-specifieke bibliotheekmap (<em>[WAS_HOME]</em>/runtimes)</p> <p>Als u uw clienttoepassing op dezelfde J2EE-toepassingsserver implementeert, hoeft u deze bestanden niet op te nemen.</p> </td> 
-  </tr> 
- </tbody> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Bestand</p> </th>
+   <th><p>Beschrijving</p> </th>
+   <th><p>Locatie</p> </th>
+  </tr>
+ &lt;/thead align="left"&gt;
+ <tbody>
+  <tr>
+   <td>
+    <ul>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jaxen-1,1-bèta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+    </ul>
+    <ul>
+     <li>xercesImpl.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul> <p> </p> </td>
+   <td><p>Als AEM-formulieren wordt aangeroepen in de SOAP-modus, neemt u deze JAR-bestanden op.</p> </td>
+   <td><p>&lt;<em>installatiemap</em>&gt;/sdk/client-libs/third-party</p> </td>
+  </tr>
+  <tr>
+   <td><p> jboss-client.jar</p> </td>
+   <td><p>Als AEM Forms wordt geïmplementeerd op JBoss Application Server, neemt u dit JAR-bestand op.</p> <p>Vereiste klassen worden niet gevonden door de klasseleider als jreliëf-client.jar en de jars waarnaar wordt verwezen, zich niet op dezelfde locatie bevinden.</p> </td>
+   <td><p>JBoss client lib directory</p> <p>Als u uw clienttoepassing op dezelfde J2EE-toepassingsserver implementeert, hoeft u dit bestand niet op te nemen.</p> </td>
+  </tr>
+  <tr>
+   <td><p>wlclient.jar</p> </td>
+   <td><p>Als AEM Forms wordt geïmplementeerd op BEA WebLogic Server®, neemt u dit JAR-bestand op.</p> </td>
+   <td><p>WebLogic-specifieke lib-directory</p> <p>Als u uw clienttoepassing op dezelfde J2EE-toepassingsserver implementeert, hoeft u dit bestand niet op te nemen.</p> </td>
+  </tr>
+  <tr>
+   <td>
+    <ul>
+     <li><p>com.ibm.ws.admin.client_6.1.0.jar</p> </li>
+     <li><p>com.ibm.ws.webservices.thinclient_6.1.0.jar</p> </li>
+    </ul> </td>
+   <td>
+    <ul>
+     <li><p>Als AEM Forms wordt opgesteld op de Server van de Toepassing WebSphere, omvat deze JAR dossiers.</p> </li>
+     <li><p>(com.ibm.ws.webservices.thinclient_6.1.0.jar is vereist voor het oproepen van webservices).</p> </li>
+    </ul> </td>
+   <td><p>WebSphere-specifieke bibliotheekmap (<em>[WAS_HOME]</em>/runtimes)</p> <p>Als u uw clienttoepassing op dezelfde J2EE-toepassingsserver implementeert, hoeft u deze bestanden niet op te nemen.</p> </td>
+  </tr>
+ </tbody>
 </table>
 
 ### Oproepen van scenario&#39;s {#invoking-scenarios}
 
 In de volgende tabel worden de aanroepingsscenario&#39;s aangegeven en worden de JAR-bestanden weergegeven die nodig zijn om AEM-formulieren aan te roepen.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>Services</p> </th> 
-   <th><p>Inroepmodus</p> </th> 
-   <th><p>J2EE-toepassingsserver</p> </th> 
-   <th><p>Vereiste JAR-bestanden</p> </th> 
-  </tr> 
- &lt;/thead align="left"&gt; 
- <tbody> 
-  <tr> 
-   <td><p>Forms-service</p> </td> 
-   <td><p>EJB</p> </td> 
-   <td><p>JBoss</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>jreliëf-client.jar</li> 
-    </ul> 
-    <ul> 
-     <li>adobe-forms-client.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Forms-service</p> <p>Acrobat Reader DC-extensieservice</p> <p>Handtekeningenservice</p> </td> 
-   <td><p>EJB</p> </td> 
-   <td><p>JBoss</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-    </ul> 
-    <ul> 
-     <li>jreliëf-client.jar<br /> </li> 
-     <li>commons-httpclient-3.1.jar</li> 
-    </ul> 
-    <ul> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-     <li><p>adobe-reader-extensions-client.jar</p> </li> 
-     <li><p>adobe-signatures-client.jar</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Forms-service</p> </td> 
-   <td><p>SOAP</p> </td> 
-   <td><p>WebLogic</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-     <li><p>wlclient.jar</p> </li> 
-     <li><p>activation.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jai_imageio.jar</p> </li> 
-     <li><p>jaxen-1,1-bèta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saaj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-     <li><p>xercesImpl.jar</p> </li> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><p>Forms-service</p> <p>Acrobat Reader DC-extensieservice</p> <p>Handtekeningenservice</p> </td> 
-   <td><p>SOAP</p> </td> 
-   <td><p>WebLogic</p> </td> 
-   <td> 
-    <ul> 
-     <li><p>adobe-livecycle-client.jar</p> </li> 
-     <li><p>adobe-usermanager-client.jar</p> </li> 
-     <li><p>wlclient.jar</p> </li> 
-     <li><p>activation.jar</p> </li> 
-     <li><p>axis.jar</p> </li> 
-     <li><p>commons-codec-1.3.jar</p> </li> 
-     <li><p>commons-collections-3.1.jar</p> </li> 
-     <li><p>commons-discovery.jar</p> </li> 
-     <li><p>commons-logging.jar</p> </li> 
-     <li><p>dom3-xml-apis-2.5.0.jar</p> </li> 
-     <li><p>jai_imageio.jar</p> </li> 
-     <li><p>jaxen-1,1-bèta-9.jar</p> </li> 
-     <li><p>jaxrpc.jar</p> </li> 
-     <li><p>log4j.jar</p> </li> 
-     <li><p>mail.jar</p> </li> 
-     <li><p>saaj.jar</p> </li> 
-     <li><p>wsdl4j.jar</p> </li> 
-     <li><p>xalan.jar</p> </li> 
-     <li><p>xbean.jar</p> </li> 
-     <li><p>xercesImpl.jar</p> </li> 
-     <li><p>adobe-forms-client.jar</p> </li> 
-     <li><p>adobe-reader-extensions-client.jar</p> </li> 
-     <li><p>adobe-signatures-client.jar</p> </li> 
-    </ul> </td> 
+<table>
+ <thead>
+  <tr>
+   <th><p>Services</p> </th>
+   <th><p>Inroepmodus</p> </th>
+   <th><p>J2EE-toepassingsserver</p> </th>
+   <th><p>Vereiste JAR-bestanden</p> </th>
+  </tr>
+ &lt;/thead align="left"&gt;
+ <tbody>
+  <tr>
+   <td><p>Forms-service</p> </td>
+   <td><p>EJB</p> </td>
+   <td><p>JBoss</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+    </ul>
+    <ul>
+     <li>jboss-client.jar</li>
+    </ul>
+    <ul>
+     <li>adobe-forms-client.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>Forms-service</p> <p>Acrobat Reader DC-extensieservice</p> <p>Handtekeningenservice</p> </td>
+   <td><p>EJB</p> </td>
+   <td><p>JBoss</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+    </ul>
+    <ul>
+     <li>jboss-client.jar<br /> </li>
+     <li>commons-httpclient-3.1.jar</li>
+    </ul>
+    <ul>
+     <li><p>adobe-forms-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>Forms-service</p> </td>
+   <td><p>SOAP</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+     <li><p>wlclient.jar</p> </li>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jai_imageio.jar</p> </li>
+     <li><p>jaxen-1,1-bèta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+     <li><p>xercesImpl.jar</p> </li>
+     <li><p>adobe-forms-client.jar</p> </li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><p>Forms-service</p> <p>Acrobat Reader DC-extensieservice</p> <p>Handtekeningenservice</p> </td>
+   <td><p>SOAP</p> </td>
+   <td><p>WebLogic</p> </td>
+   <td>
+    <ul>
+     <li><p>adobe-livecycle-client.jar</p> </li>
+     <li><p>adobe-usermanager-client.jar</p> </li>
+     <li><p>wlclient.jar</p> </li>
+     <li><p>activation.jar</p> </li>
+     <li><p>axis.jar</p> </li>
+     <li><p>commons-codec-1.3.jar</p> </li>
+     <li><p>commons-collections-3.1.jar</p> </li>
+     <li><p>commons-discovery.jar</p> </li>
+     <li><p>commons-logging.jar</p> </li>
+     <li><p>dom3-xml-apis-2.5.0.jar</p> </li>
+     <li><p>jai_imageio.jar</p> </li>
+     <li><p>jaxen-1,1-bèta-9.jar</p> </li>
+     <li><p>jaxrpc.jar</p> </li>
+     <li><p>log4j.jar</p> </li>
+     <li><p>mail.jar</p> </li>
+     <li><p>saaj.jar</p> </li>
+     <li><p>wsdl4j.jar</p> </li>
+     <li><p>xalan.jar</p> </li>
+     <li><p>xbean.jar</p> </li>
+     <li><p>xercesImpl.jar</p> </li>
+     <li><p>adobe-forms-client.jar</p> </li>
+     <li><p>adobe-reader-extensions-client.jar</p> </li>
+     <li><p>adobe-signatures-client.jar</p> </li>
+    </ul> </td>
   </tr> xmp-uti
- </tbody> 
+ </tbody>
 </table>
 
 ### JAR-bestanden bijwerken {#upgrading-jar-files}
@@ -403,7 +405,7 @@ Als u een upgrade uitvoert van LiveCycle naar AEM Forms, wordt u aangeraden de J
 
 Ervan uitgaande dat u een upgrade uitvoert naar AEM Forms. Als u een Java-toepassing wilt gebruiken die de Rights Management-service aanroept, neemt u de versies van AEM Forms van de volgende JAR-bestanden op:
 
-* adobe-rights management-client.jar
+* adobe-rightsmanagement-client.jar
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 
@@ -421,7 +423,7 @@ Ervan uitgaande dat u een upgrade uitvoert naar AEM Forms. Als u een Java-toepas
 
 U stelt verbindingseigenschappen in om AEM Forms aan te roepen wanneer u de Java API gebruikt. Geef bij het instellen van eigenschappen voor verbindingen op of services extern of lokaal moeten worden aangeroepen en geef ook de verbindingsmodus en verificatiewaarden op. De waarden van de authentificatie worden vereist als de dienstveiligheid wordt toegelaten. Nochtans, als de dienstveiligheid gehandicapt is, is het niet noodzakelijk om authentificatiewaarden te specificeren.
 
-De verbindingsmodus kan SOAP- of EJB-modus zijn. De wijze EJB gebruikt het protocol RMI/IIOP, en de prestaties van de wijze EJB zijn beter dan de prestaties van de wijze van de ZEEP. De wijze van de ZEEP wordt gebruikt om een J2EE afhankelijkheid van de toepassingsserver te elimineren of wanneer een firewall tussen Vormen AEM en de cliënttoepassing wordt gevestigd. De wijze van de ZEEP gebruikt het HTTPS protocol als onderliggend vervoer en kan over firewallgrenzen communiceren. Als noch een J2EE-toepassingsserverafhankelijkheid, noch een firewall een probleem is, wordt u aangeraden de EJB-modus te gebruiken.
+De verbindingsmodus kan SOAP- of EJB-modus zijn. De wijze EJB gebruikt het protocol RMI/IIOP, en de prestaties van de wijze EJB zijn beter dan de prestaties van de wijze van de ZEEP. De wijze van de ZEEP wordt gebruikt om een J2EE afhankelijkheid van de toepassingsserver te elimineren of wanneer een firewall tussen Vormen AEM en de cliënttoepassing wordt gevestigd. De wijze van de ZEEP gebruikt het HTTPS protocol als onderliggend vervoer en kan over firewallgrenzen communiceren. Als noch een J2EE-toepassingsserverafhankelijkheid noch een firewall een probleem is, wordt aanbevolen de EJB-modus te gebruiken.
 
 Als u een AEM Forms-service wilt aanroepen, stelt u de volgende verbindingseigenschappen in:
 
@@ -489,11 +491,11 @@ Voer de volgende taken uit om verbindingseigenschappen in te stellen:
 In het volgende Java-codevoorbeeld worden eigenschappen voor verbindingen ingesteld om AEM-formulieren aan te roepen die worden geïmplementeerd op JBoss en die de EJB-verbindingsmodus gebruiken.
 
 ```java
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "https://<hostname>:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "https://<hostname>:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DOCUMENT_HTTP_ENDPOINT,"https://<hostname>:8080");
 ```
@@ -503,11 +505,11 @@ In het volgende Java-codevoorbeeld worden eigenschappen voor verbindingen ingest
 In het volgende Java-codevoorbeeld worden eigenschappen voor verbindingen ingesteld om AEM-formulieren aan te roepen die op WebLogic worden geïmplementeerd en die de EJB-verbindingsmodus gebruiken.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebLogic"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "t3://localhost:7001");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebLogic");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -516,11 +518,11 @@ In het volgende Java-codevoorbeeld worden eigenschappen voor verbindingen ingest
 In het volgende voorbeeld van de Java-code worden eigenschappen voor verbindingen ingesteld om AEM-formulieren aan te roepen die op WebSphere worden geïmplementeerd en die de EJB-verbindingsmodus gebruiken.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebSphere"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "iiop://localhost:2809");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "WebSphere");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -529,11 +531,11 @@ In het volgende voorbeeld van de Java-code worden eigenschappen voor verbindinge
 In het volgende voorbeeld van de Java-code worden eigenschappen van de verbinding in de SOAP-modus ingesteld om AEM-formulieren aan te roepen die in JBoss worden geïmplementeerd.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ```
 
@@ -546,9 +548,9 @@ In het volgende voorbeeld van de Java-code worden eigenschappen van de verbindin
 In het volgende Java-codevoorbeeld worden eigenschappen voor verbindingen ingesteld die vereist zijn om AEM-formulieren aan te roepen die worden geïmplementeerd op JBoss Application Server en wanneer de servicebeveiliging is uitgeschakeld.
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);           
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://localhost:1099");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
  ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
 ```
 
@@ -559,12 +561,12 @@ In het volgende Java-codevoorbeeld worden eigenschappen voor verbindingen ingest
 **De SOAP-verbindingsmodus instellen met de time-outlimiet voor aangepaste aanvragen**
 
 ```as3
- Properties ConnectionProps = new Properties(); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);           
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator"); 
- ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password"); 
+ Properties ConnectionProps = new Properties();
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_SOAP_ENDPOINT, "http://localhost:8080");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL,ServiceClientFactoryProperties.DSC_SOAP_PROTOCOL);
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, "JBoss");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_USERNAME, "administrator");
+ ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_CREDENTIAL_PASSWORD, "password");
 ConnectionProps.setProperty(ServiceClientFactoryProperties.DSC_REQUEST_TIMEOUT, "1800000"); // Request timeout limit 30 Minutes
 ```
 
@@ -575,7 +577,7 @@ U kunt een `com.adobe.idp.Context` object gebruiken om een AEM Forms-service aan
 De `authenticate` methode retourneert een `AuthResult` object dat de resultaten van de verificatie bevat. U kunt een `com.adobe.idp.Context` object maken door de constructor ervan aan te roepen. Roep vervolgens de `com.adobe.idp.Context` methode van het `initPrincipal` object aan en geef het `AuthResult` object door, zoals in de volgende code wordt getoond:
 
 ```as3
- Context myCtx = new Context();  
+ Context myCtx = new Context();
  myCtx.initPrincipal(authResult);
 ```
 
@@ -584,30 +586,30 @@ In plaats van de eigenschappen `DSC_CREDENTIAL_USERNAME` of eigenschappen in te 
 In het volgende codevoorbeeld ziet u hoe u een `com.adobe.idp.Context` object gebruikt binnen verbindingsinstellingen die worden gebruikt om een `EncryptionServiceClient` object te maken.
 
 ```as3
- //Authenticate a user and use the Context object within connection settings 
- // Authenticate the user 
- String username = "wblue"; 
- String password = "password"; 
- AuthResult authResult = authClient.authenticate(username, password.getBytes()); 
-  
- //Set a Content object that represents the authenticated user 
- //Use the Context object to invoke the Encryption service 
- Context myCtx = new Context();  
- myCtx.initPrincipal(authResult); 
-  
- //Set connection settings 
- Properties connectionProps = new Properties(); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://<server>:1099"); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_EJB_PROTOCOL); 
- connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE); 
+ //Authenticate a user and use the Context object within connection settings
+ // Authenticate the user
+ String username = "wblue";
+ String password = "password";
+ AuthResult authResult = authClient.authenticate(username, password.getBytes());
+ 
+ //Set a Content object that represents the authenticated user
+ //Use the Context object to invoke the Encryption service
+ Context myCtx = new Context();
+ myCtx.initPrincipal(authResult);
+ 
+ //Set connection settings
+ Properties connectionProps = new Properties();
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DEFAULT_EJB_ENDPOINT, "jnp://<server>:1099");
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_TRANSPORT_PROTOCOL, ServiceClientFactoryProperties.DSC_EJB_PROTOCOL);
+ connectionProps.setProperty(ServiceClientFactoryProperties.DSC_SERVER_TYPE, ServiceClientFactoryProperties.DSC_JBOSS_SERVER_TYPE);
  connectionProps.setProperty(ServiceClientFactoryProperties.DSC_DOCUMENT_HTTP_ENDPOINT,"jnp://<server>:1099");
 
-                          
- //Create a ServiceClientFactory object 
- ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps); 
- myFactory.setContext(myCtx); 
-                          
- //Create an EncryptionServiceClient object 
+ 
+ //Create a ServiceClientFactory object
+ ServiceClientFactory myFactory = ServiceClientFactory.createInstance(connectionProps);
+ myFactory.setContext(myCtx);
+ 
+ //Create an EncryptionServiceClient object
  EncryptionServiceClient encryptClient  = new EncryptionServiceClient(myFactory);
 ```
 
@@ -647,8 +649,8 @@ Clienttoepassingen die de SOAP-verbindingsmodus gebruiken, kunnen de HTTP-taakve
 Het volgende voorbeeld toont de inhoud van een jndi.properties- dossier dat wordt gebruikt om met Vormen te verbinden AEM die op WebSphere wordt opgesteld.
 
 ```as3
- java.naming.factory.initial=com.ibm.websphere.naming. 
- WsnInitialContextFactory 
+ java.naming.factory.initial=com.ibm.websphere.naming.
+ WsnInitialContextFactory
  java.naming.provider.url=corbaloc::appserver1:9810,:appserver2:9810
 ```
 
@@ -657,7 +659,7 @@ Het volgende voorbeeld toont de inhoud van een jndi.properties- dossier dat word
 In het volgende voorbeeld wordt de inhoud getoond van een bestand jndi.properties dat wordt gebruikt om verbinding te maken met AEM-formulieren die op WebLogic worden geïmplementeerd.
 
 ```as3
- java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory 
+ java.naming.factory.initial=weblogic.jndi.WLInitialContextFactory
  java.naming.provider.url=t3://appserver1:8001, appserver2:8001
 ```
 
@@ -666,8 +668,8 @@ In het volgende voorbeeld wordt de inhoud getoond van een bestand jndi.propertie
 In het volgende voorbeeld wordt de inhoud getoond van een bestand jndi.properties dat wordt gebruikt om verbinding te maken met AEM-formulieren die worden geïmplementeerd op JBoss.
 
 ```as3
- java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory 
- java.naming.provider.url= jnp://appserver1:1099, appserver2:1099, 
+ java.naming.factory.initial= org.jnp.interfaces.NamingContextFactory
+ java.naming.provider.url= jnp://appserver1:1099, appserver2:1099,
  appserver3:1099
 ```
 
@@ -706,39 +708,39 @@ Een toepassing kan zowel `com.adobe.idp.Document` als `org.w3c.dom.Document` geg
 >Als u een geheugenlek in WebLogic wilt voorkomen terwijl u een `com.adobe.idp.Document` object gebruikt, leest u de documentinformatie in delen van 2048 bytes of minder. De volgende code leest bijvoorbeeld de documentinformatie in delen van 2048 bytes:
 
 ```as3
-        // Set up the chunk size to prevent a potential memory leak 
-        int buffSize = 2048; 
-  
-        // Determine the total number of bytes to read 
-        int docLength = (int) inDoc.length(); 
-        byte [] byteDoc = new byte[docLength]; 
-  
-        // Set up the reading position 
-        int pos = 0; 
-  
-        // Loop through the document information, 2048 bytes at a time 
-        while (docLength > 0) { 
-      // Read the next chunk of information 
-            int toRead = Math.min(buffSize, docLength); 
-            int bytesRead = inDoc.read(pos, byteDoc, pos, toRead); 
-  
-            // Handle the exception in case data retrieval failed 
-            if (bytesRead == -1) { 
-  
-                inDoc.doneReading(); 
-                inDoc.dispose(); 
-                throw new RuntimeException("Data retrieval failed!"); 
-  
-            } 
-  
-             // Update the reading position and number of bytes remaining 
-             pos += bytesRead; 
-             docLength -= bytesRead; 
-  
-        } 
-  
-        // The document information has been successfully read 
-        inDoc.doneReading(); 
+        // Set up the chunk size to prevent a potential memory leak
+        int buffSize = 2048;
+ 
+        // Determine the total number of bytes to read
+        int docLength = (int) inDoc.length();
+        byte [] byteDoc = new byte[docLength];
+ 
+        // Set up the reading position
+        int pos = 0;
+ 
+        // Loop through the document information, 2048 bytes at a time
+        while (docLength > 0) {
+      // Read the next chunk of information
+            int toRead = Math.min(buffSize, docLength);
+            int bytesRead = inDoc.read(pos, byteDoc, pos, toRead);
+ 
+            // Handle the exception in case data retrieval failed
+            if (bytesRead == -1) {
+ 
+                inDoc.doneReading();
+                inDoc.dispose();
+                throw new RuntimeException("Data retrieval failed!");
+ 
+            }
+ 
+             // Update the reading position and number of bytes remaining
+             pos += bytesRead;
+             docLength -= bytesRead;
+ 
+        }
+ 
+        // The document information has been successfully read
+        inDoc.doneReading();
         inDoc.dispose();
 ```
 
@@ -775,17 +777,17 @@ In het volgende codevoorbeeld wordt een `com.adobe.idp.Document` object gemaakt 
 **Een object Document maken dat is gebaseerd op een ander document**
 
 ```as3
- //Create a Document object based on a byte array 
- InputStream is = new FileInputStream("C:\\Map.pdf"); 
- int len = is.available(); 
- byte [] myByteArray = new byte[len]; 
- int i = 0; 
- while (i < len) { 
-       i += is.read(myByteArray, i, len); 
- } 
- Document myPDFDocument = new Document(myByteArray); 
-  
- //Create another Document object 
+ //Create a Document object based on a byte array
+ InputStream is = new FileInputStream("C:\\Map.pdf");
+ int len = is.available();
+ byte [] myByteArray = new byte[len];
+ int i = 0;
+ while (i < len) {
+       i += is.read(myByteArray, i, len);
+ }
+ Document myPDFDocument = new Document(myByteArray);
+ 
+ //Create another Document object
  Document anotherDocument = new Document(myPDFDocument);
 ```
 
@@ -800,8 +802,8 @@ Als u deze parameter instelt op `false` betekent dit dat u de eigendom van dit b
 **Een object Document maken dat is gebaseerd op een PDF-bestand**
 
 ```as3
- //Create a Document object based on the map.pdf source file 
- File mySourceMap = new File("C:\\map.pdf"); 
+ //Create a Document object based on the map.pdf source file
+ File mySourceMap = new File("C:\\map.pdf");
  Document myPDFDocument = new Document(mySourceMap,true);
 ```
 
@@ -812,8 +814,8 @@ In het volgende Java-codevoorbeeld wordt een `com.adobe.idp.Document` object gem
 **Een document maken op basis van een InputStream-object**
 
 ```as3
- //Create a Document object based on an InputStream object 
- InputStream is = new FileInputStream("C:\\Map.pdf"); 
+ //Create a Document object based on an InputStream object
+ InputStream is = new FileInputStream("C:\\Map.pdf");
  Document myPDFDocument = new Document(is);
 ```
 
@@ -832,10 +834,10 @@ Het bestand c:/temp/input.pdf moet zich op de clientcomputer bevinden (niet op d
 **Een document maken op basis van inhoud die toegankelijk is via een URL**
 
 ```as3
- //Create a Document object based on a java.net.URL object 
- URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");  
-          
- //Create another Document object 
+ //Create a Document object based on a java.net.URL object
+ URL myURL = new URL("http", "localhost", 8080,"/WebApp/map.pdf");
+ 
+ //Create another Document object
  Document myPDFDocument = new Document(myURL);
 ```
 
@@ -869,7 +871,7 @@ In het volgende codevoorbeeld wordt de inhoud van een `com.adobe.idp.Document` o
 **De inhoud van een documentobject kopiëren naar een bestand**
 
 ```as3
- File outFile = new File("C:\\AnotherMap.pdf"); 
+ File outFile = new File("C:\\AnotherMap.pdf");
  myDocument.copyToFile (outFile);
 ```
 
@@ -883,47 +885,47 @@ In het volgende codevoorbeeld wordt de inhoud van een `com.adobe.idp.Document` o
 
 Bepaal het MIME-type van een `com.adobe.idp.Document` object door de `com.adobe.idp.Document` methode van het `getContentType` object aan te roepen. Deze methode retourneert een tekenreekswaarde die het inhoudstype van het `com.adobe.idp.Document` object opgeeft. In de volgende tabel worden de verschillende inhoudstypen beschreven die door AEM Forms worden geretourneerd.
 
-<table> 
- <thead> 
-  <tr> 
-   <th><p>MIME-type</p></th> 
-   <th><p>Beschrijving</p></th> 
-  </tr> 
- </thead> 
+<table>
+ <thead>
+  <tr>
+   <th><p>MIME-type</p></th>
+   <th><p>Beschrijving</p></th>
+  </tr>
+ </thead>
  <tbody>
-  <tr> 
-   <td><p><code>application/pdf</code></p></td> 
-   <td><p>PDF-document</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.adobe.xdp+xml</code></p></td> 
-   <td><p>XML Data Packaging (XDP), dat wordt gebruikt voor geëxporteerde XFA-formulieren (XML Forms Architecture)</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>text/xml</code></p></td> 
-   <td><p>Bladwijzers, bijlagen of andere XML-documenten</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.fdf</code></p></td> 
-   <td><p>Forms Data Format (FDF), die wordt gebruikt voor geëxporteerde Acrobat-formulieren</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/vnd.adobe.xfdf</code></p></td> 
-   <td><p>XML Forms Data Format (XFDF), die wordt gebruikt voor geëxporteerde Acrobat-formulieren</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/rdf+xml</code></p></td> 
-   <td><p>Rijke gegevensindeling en XML</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>application/octet-stream</code></p></td> 
-   <td><p>Algemene gegevensindeling</p></td> 
-  </tr> 
-  <tr> 
-   <td><p><code>NULL</code></p></td> 
-   <td><p>Niet-opgegeven MIME-type</p></td> 
-  </tr> 
- </tbody> 
+  <tr>
+   <td><p><code>application/pdf</code></p></td>
+   <td><p>PDF-document</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.adobe.xdp+xml</code></p></td>
+   <td><p>XML Data Packaging (XDP), dat wordt gebruikt voor geëxporteerde XFA-formulieren (XML Forms Architecture)</p></td>
+  </tr>
+  <tr>
+   <td><p><code>text/xml</code></p></td>
+   <td><p>Bladwijzers, bijlagen of andere XML-documenten</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.fdf</code></p></td>
+   <td><p>Forms Data Format (FDF), die wordt gebruikt voor geëxporteerde Acrobat-formulieren</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/vnd.adobe.xfdf</code></p></td>
+   <td><p>XML Forms Data Format (XFDF), die wordt gebruikt voor geëxporteerde Acrobat-formulieren</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/rdf+xml</code></p></td>
+   <td><p>Rijke gegevensindeling en XML</p></td>
+  </tr>
+  <tr>
+   <td><p><code>application/octet-stream</code></p></td>
+   <td><p>Algemene gegevensindeling</p></td>
+  </tr>
+  <tr>
+   <td><p><code>NULL</code></p></td>
+   <td><p>Niet-opgegeven MIME-type</p></td>
+  </tr>
+ </tbody>
 </table>
 
 Het volgende codevoorbeeld bepaalt het inhoudstype van een `com.adobe.idp.Document` voorwerp.
@@ -931,8 +933,8 @@ Het volgende codevoorbeeld bepaalt het inhoudstype van een `com.adobe.idp.Docume
 **Het inhoudstype van een object Document bepalen**
 
 ```as3
- //Determine the content type of the Document object 
- String ct = myDocument.getContentType(); 
+ //Determine the content type of the Document object
+ String ct = myDocument.getContentType();
  System.out.println("The content type of the Document object is " +ct);
 ```
 
@@ -985,7 +987,7 @@ U kunt de Repository-service activeren door een Java-clientbibliotheek te gebrui
    Kiezen naar de geretourneerde waarde `Resource`.
 
 1. Maak een `ResourceContent` object door de `RepositoryInfomodelFactoryBean` methode van het `newImage` object aan te roepen en de geretourneerde waarde naar te casten `ResourceContent`. Dit object vertegenwoordigt de inhoud die aan de gegevensopslagruimte wordt toegevoegd.
-1. Maak een `com.adobe.idp.Document` object door een `java.io.FileInputStream` object door te geven waarin het XDP-bestand wordt opgeslagen dat aan de gegevensopslagruimte moet worden toegevoegd. (Zie Een document [maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
+1. Maak een `com.adobe.idp.Document` object door een `java.io.FileInputStream` object door te geven waarin het XDP-bestand wordt opgeslagen dat aan de opslagplaats moet worden toegevoegd. (Zie Een document [maken op basis van een InputStream-object](invoking-aem-forms-using-java.md#creating-a-document-based-on-an-inputstream-object).)
 1. Voeg de inhoud van het `com.adobe.idp.Document` object toe aan het `ResourceContent` object door de `ResourceContent` methode van het `setDataDocument` object aan te roepen. Geef het `com.adobe.idp.Document` object door.
 1. Stel het MIME-type van het XDP-bestand in dat u aan de opslagplaats wilt toevoegen door de methode van het `ResourceContent` object aan te roepen en door te geven `setMimeType` `application/vnd.adobe.xdp+xml`.
 1. Voeg de inhoud van het `ResourceContent` object toe aan het `Resource` object door de methode van het `Resource` object aan te roepen `setContent` en het `ResourceContent` object door te geven.
@@ -1033,10 +1035,10 @@ Roep het `MyApplication/EncryptDocument` kortstondige proces aan met de Java-opr
 1. Roep de `java.util.HashMap` methode van het `put` object aan voor elke invoerparameter die aan het langlevende proces wordt doorgegeven. Omdat het `MyApplication/EncryptDocument` kortstondige proces één inputparameter van type vereist `Document`, moet u de `put` methode slechts eenmaal aanhalen, zoals aangetoond in het volgende voorbeeld.
 
    ```as3
-    //Create a Map object to store the parameter value for inDoc 
-    Map params = new HashMap(); 
-    InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf"); 
-    Document inDoc = new Document(inFile); 
+    //Create a Map object to store the parameter value for inDoc
+    Map params = new HashMap();
+    InputStream inFile = new FileInputStream("C:\\Adobe\Loan.pdf");
+    Document inDoc = new Document(inFile);
     params.put("inDoc", inDoc);
    ```
 
@@ -1056,7 +1058,7 @@ Roep het `MyApplication/EncryptDocument` kortstondige proces aan met de Java-opr
 1. Haal de geretourneerde waarde van het proces op door de methode van het `InvocationReponse` `getOutputParameter` object aan te roepen en een tekenreekswaarde door te geven die de naam van de uitvoerparameter opgeeft. In deze situatie, specificeer `outDoc` ( `outDoc` is de naam van de outputparameter voor het `MyApplication/EncryptDocument` proces). Kast de terugkeerwaarde aan, `Document`zoals aangetoond in het volgende voorbeeld.
 
    ```as3
-    InvocationResponse response = myServiceClient.invoke(request); 
+    InvocationResponse response = myServiceClient.invoke(request);
     Document encryptDoc = (Document) response.getOutputParameter("outDoc");
    ```
 
