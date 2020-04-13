@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 730a08c0c02b5d44b5483c733252e0e76236061a
+source-git-commit: b46378657b8a173986a669beaa56468886b23266
 
 ---
 
@@ -99,6 +99,8 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 * De vervolgkeuzemenu&#39;s **Company** and **Reporting** Suite zijn verborgen als Bron **** melden is geselecteerd tijdens het configureren van Adobe Analytics in Experience Manager-cloudservices (NPR-31729).
 
 * De eigenschappen van Adobe Campaign worden niet opgeschoond wanneer een taalkopie van een nieuwsbrief die aan een campagne van Adobe is gekoppeld, wordt gemaakt, terwijl het opruimen gebeurt wanneer een nieuwsbrief die aan een campagne van Adobe is gekoppeld, wordt gekopieerd of geplakt (NPR-32540).
+
+* ReportSuitesServlet is kwetsbaar voor SSRF (NPR-32161).
 
 ### Sling {#sling-6480}
 
@@ -689,7 +691,7 @@ De belangrijkste kenmerken voor AEM 6.4.5.0-formulieren zijn:
 **Formulieren - Interactieve communicatie en formulieren - Correspondentenbeheer**
 
 * CCR UI (Correspondence UI) maken kan een zwevend getal niet verwerken.  NPR-29210: Hotfix voor CQ-4254201
-* De tooltip die op een variabele wordt geplaatst is niet zichtbaar op Create Correspondence UI (CCR UI). NPR-29839: Hotfix voor CQ-4250533
+* De tooltip die op een variabele wordt geplaatst is niet zichtbaar op Create Correspondence UI (CCR UI). NPR-29739: Hotfix voor CQ-4250533
 * Kan niet kopiëren of plakken uit Omnsearch binnen letters. NPR-29808: Hotfix voor CQ-4270783
 
 **HTML5-formulieren**
@@ -1368,7 +1370,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 
 **Platform**
 
-* Lus opnieuw indexeren| NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
+* Lus opnieuw indexeren| NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op zijn plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
 * Grensoverschrijdende overschrijving van intern gemarkeerd pad /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Probleem tijdens het uitvoeren van patroondetector. NPR-25036: Hotfix voor CQ-4248597
 * Logboekvermeldingen die niet zijn geschreven vanwege NPE in LogEntryImpl. NPR-25627: Hotfix voor graniet-22383
 * Replicatie van gebeurtenis delete controleert niet op rechten. NPR-25679: Hotfix voor CQ-4241234
@@ -1391,7 +1393,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 
 **Gemeenschappen**
 
-* (Bestandsbibliotheek) Elementen downloaden met lege spaties als gevolg van indelingsproblemen. NPR-24260: Hotfix voor CQ-4245159
+* (Bestandsbibliotheek) Elementen downloaden met lege spaties als gevolg van indelingsproblemen. NPR-23260: Hotfix voor CQ-4245159
 * Hiermee verhelpt u verschillende sociale problemen van Adobe. NPR-24247: Hotfix voor CQ-4245054, CQ-4245120, CQ-4245296
 * Het oneindige schuiven voor leden en groepenconsole mislukt voor het geval dat de auteur op verschillende contextpaden publiceert. NPR-24437: Hotfix voor CQ-4246013
 * De post keert niet aan de onbeantwoorde staat terug zelfs bij het verwijderen uit de beantwoorde staat en de score daalt niet. NPR-24419: Hotfix voor CQ-4245797, CQ-4245932
@@ -1435,7 +1437,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * De Middelen van Enablement zijn niet zichtbaar bij auteur. Hotfix voor CQ-4252618
 * Meldingen worden niet gegenereerd voor verbinding van een onbekende gebruiker. Hotfix voor CQ-4245132
 * Groepzoekactie wordt niet weergegeven op linkerspoor. Hotfix voor CQ-4252621
-* (Auteur) Paginering werkt niet voor Groepsconsole. Hotfix voor CQ-4242786
+* (Auteur) Paginering werkt niet voor Groepenconsole. Hotfix voor CQ-4242786
 * jQuery UI-upgrade. Hotfix voor CQ-4248894
 * Voer een upgrade uit naar de nieuwste versie van SCORM 2017.1. NPR-25675: Hotfix voor CQ-4240671
 * De velden &quot;Samenstellen namens&quot; zijn zichtbaar voor gebruikers buiten de gebruikersgemeenschap. NPR-25331: Hotfix voor CQ-4247858
