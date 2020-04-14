@@ -1,8 +1,8 @@
 ---
 title: Container en lay-outmodus voor lay-out configureren
 seo-title: Container en lay-outmodus voor lay-out configureren
-description: Leer hoe u de container van de layout en de lay-outmodus configureert.
-seo-description: Leer hoe u de container van de layout en de lay-outmodus configureert.
+description: Leer hoe u de container van de lay-out en de lay-outmodus configureert.
+seo-description: Leer hoe u de container van de lay-out en de lay-outmodus configureert.
 uuid: 952b7c86-76ab-4699-8530-8638e46bb50f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
 
 ---
 
