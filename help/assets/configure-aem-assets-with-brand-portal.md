@@ -3,7 +3,7 @@ title: AEM-middelen configureren met Brand Portal
 description: 'Leer hoe u AEM-middelen configureert met Brand Portal voor het publiceren van middelen en verzamelingen naar Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: face3b5c50e06d24127aedd0b114efedb2467e96
+source-git-commit: 608280909877d522fc69ed9723ff615dfaa0a50a
 
 ---
 
@@ -193,7 +193,7 @@ Controleer of u de volgende stappen hebt uitgevoerd:
 
 >[!CAUTION]
 >
->Maak slechts één geldige IMS-configuratie. Maak geen meerdere IMS-configuraties.
+>Maak slechts één geldige IMS-configuratie.
 >
 >Zorg ervoor dat de configuratie gezond is. Als de configuratie ongezond is, verwijdert u deze en maakt u een nieuwe, gezonde configuratie.
 
