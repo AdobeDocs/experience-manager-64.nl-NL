@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/configuring_ssl
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c187daa4-41b7-47dc-9669-d7120850cafd
 translation-type: tm+mt
-source-git-commit: 52a649efbb44a54a05de1a474eb9b923717d151c
+source-git-commit: 479b0192f8a9f1a4f30f712222a20bf20ac73f27
 
 ---
 
@@ -28,7 +28,7 @@ In deze procedure:
 
 ## SSL-referenties maken {#create-an-ssl-credential}
 
-1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om de referentie en keystore tot stand te brengen:
+1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om de referentie en het sleutelarchief tot stand te brengen:
 
    `keytool -genkey -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *`,L=`*Stadsnaam* `, S=`*Statuscode *`, C=``-alias "AEMForms Cert"``-keyalg RSA -keypass`** `-keystore`**Land&quot;key_passwordkeystorename`.keystore`
 
