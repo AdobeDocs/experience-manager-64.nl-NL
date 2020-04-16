@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: da967c43a6b4c0021ac591477bd13f3fdb026287
 
 ---
 
@@ -26,8 +26,7 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
 >* Controleer of u de nieuwste versie van het invoegpakket voor AEM Forms hebt geïnstalleerd. Zie het artikel over de release van [AEM Forms voor de lijst met beschikbare pakketten](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
->
-
+> * Het voorbeeldpakket werkt alleen met verzendacties voor Adaptieve formulieren.
 
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}
@@ -399,13 +398,13 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
 
 1. Voeg de volgende eigenschap toe aan de map die u in stap 2 hebt gemaakt en klik op Alles **** opslaan.
 
-   * **** Naam:categorieën
+   * **[!UICONTROL Naam:]** categorieën
 
-   * **** Type:String
+   * **[!UICONTROL Type:]** String
 
-   * **** Waarde: fp.validation
+   * **[!UICONTROL Waarde:]** fp.validation
 
-   * **** meerdere opties:Ingeschakeld
+   * **[!UICONTROL meerdere opties:]** Ingeschakeld
 
 1. Navigeer naar `/libs/fd/af/runtime/clientlibs/guideRuntime`en voeg de `fp.validation` waarde toe aan de eigenschap **embed** .
 
