@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
 
 ---
 
@@ -109,7 +109,7 @@ Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlin
 
 1. Start de toepassingsserver opnieuw met de volgende systeemeigenschap:
 
-   com.adobe.idp.defaultDocumentMaxInlineSize=[*value gespecificeerd in Stap 2*]
+   com.adobe.idp.defaultDocumentMaxInlineSize=`[value specified in Step 2]`
 
    >[!NOTE]
    >
