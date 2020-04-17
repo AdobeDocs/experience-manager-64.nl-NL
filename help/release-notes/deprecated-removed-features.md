@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 3316dbc8ef268be2b305d22da9003ae40414b4e1
+source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
 
 ---
 
@@ -144,7 +144,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
    <td>Vanwege beveiligingswijzigingen in de API voor Adobe Analytics is het niet langer mogelijk de versie van Activity Map te gebruiken die in AEM is opgenomen.<br><br>De <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap-plug-in van Adobe Analytics</a> moet nu worden gebruikt.</td> 
   </tr>
   <tr>
-   <td>Onderdelen</td> 
+   <td>Components-Forms</td> 
    <td>Form Captcha<br /> (stichting/componenten/form/captcha)</td> 
    <td>Gebruik in plaats hiervan de component ReCaptcha door Google</td> 
   </tr>
@@ -185,11 +185,6 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
   </tr>
   <tr>
    <td>Formulieren</td> 
-   <td>Ondersteuning voor de standaard AEM Captcha-service in adaptieve formulieren is verwijderd. </td> 
-   <td>Gebruik in plaats hiervan ReCaptcha door Google.</td> 
-  </tr>
-  <tr>
-   <td>Formulieren</td> 
    <td>Ondersteuning voor afbeeldingen in documentfragmenten is verwijderd. </td> 
    <td>Interactieve communicatie biedt de mogelijkheid om afbeeldingen rechtstreeks in gedrukte en webkanalen te gebruiken.<br /> </td> 
   </tr>
@@ -222,11 +217,6 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
     <td>Formulieren</td> 
     <td>AEM-formulieren zijn verwijderd op JEE-specifieke bestemmingspagina.</td> 
     <td>AEM Forms on JEE landing page is replace with AEM landing page (/aem/start.html) </td>  
-  </tr>
-   <tr>
-   <td>Formulieren</td> 
-   <td>Verwijderde ondersteuning voor standaard Captcha</td> 
-   <td>Gebruik de reCAPTCHA-service van Google.</td> 
   </tr>
    <tr>
    <td>Formulieren</td> 
