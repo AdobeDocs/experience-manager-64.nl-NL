@@ -4,7 +4,7 @@ description: Meer informatie over verschillende taken voor middelenbeheer en -be
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: a7d6e9fa5d72eba0899f0aadea393fe0e9126a34
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -315,8 +315,6 @@ Enkele beperkingen van de functie zijn:
 
 ## Elementen voorvertonen {#previewing-assets}
 
-Zie ook Dynamische media-elementen [voorvertonen.](previewing-assets.md)
-
 **Een voorvertoning van elementen** weergeven:
 
 1. Navigeer in de interface Elementen naar de locatie van het element waarvan u een voorvertoning wilt weergeven.
@@ -331,6 +329,12 @@ Zie ook Dynamische media-elementen [voorvertonen.](previewing-assets.md)
    Tik op de knop **[!UICONTROL Herstellen]** om de weergave te herstellen tot de oorspronkelijke grootte.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
+
+>[!MORELIKETHIS]
+>
+>* [Dynamische media-elementen](/help/assets/previewing-assets.md)voorvertonen.
+>* [Subelementen](managing-linked-subassets.md#viewing-subassets)weergeven.
+
 
 ## Eigenschappen bewerken {#editing-properties}
 
@@ -538,7 +542,7 @@ U hebt verwijdermachtigingen voor dam/asset nodig om een element te kunnen verwi
 
 See [Download assets from AEM](download-assets-from-aem.md)
 
-## Elementen publiceren {#publishing-assets}
+## Publish assets {#publishing-assets}
 
 Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 
