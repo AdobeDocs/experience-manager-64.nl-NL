@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: abdcde27b33f290a4288b09c39bffb0d4f1918a1
 
 ---
 
@@ -30,7 +30,7 @@ U hebt het volgende nodig om Adobe Sign with AEM Forms te integreren:
 
 * Een actieve [Adobe Sign-ontwikkelaarsaccount](https://acrobat.adobe.com/us/en/why-adobe/developer-form.html).
 * Een AEM Forms-server met [SSL ingeschakeld](/help/sites-administering/ssl-by-default.md) .
-* Een API-toepassing [voor](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobeio/adobeio-documentation/master/sign/gstarted/create_app.md)ondertekening door Adobe.
+* Een API-toepassing [voor](https://www.adobe.io/apis/documentcloud/sign/docs.html#!adobedocs/adobe-sign/master/gstarted/create_app.md)ondertekening door Adobe.
 * Referenties (client-id en clientgeheim) van de Adobe Sign API-toepassing.
 
 ## Adobe-ondertekening met AEM-formulieren configureren {#configure-adobe-sign-with-aem-forms}
@@ -84,7 +84,7 @@ Nadat aan de voorwaarden is voldaan, voert u de volgende stappen uit om Adobe Si
 
 1. Open AEM-webconsole. De URL is `https://[server]:[port]/system/console/configMgr`
 1. Open **[!UICONTROL Forms Common Configuration Service]**.
-1. Selecteer in het veld **[!UICONTROL Toestaan]** de optie **[!UICONTROL Alle gebruikers]** . Alle gebruikers, anoniem of aangemeld, kunnen een voorbeeld van bijlagen bekijken, formulieren verifiëren en ondertekenen en op **[!UICONTROL Opslaan]** klikken.  De instantie Auteur is geconfigureerd voor gebruik van Adobe Sign.
+1. Selecteer in het veld **[!UICONTROL Toestaan]** de optie **[!UICONTROL Alle gebruikers]** . Alle gebruikers, anoniem of aangemeld, kunnen een voorbeeld van bijlagen bekijken, formulieren verifiëren en ondertekenen en op **[!UICONTROL Opslaan]** klikken. De instantie Auteur is geconfigureerd voor gebruik van Adobe Sign.
 1. Meld u aan bij de instantie [Publiceren](/help/sites-deploying/deploy.md) en open de volgende URL:
 
    `https://<server-name>:<port>/libs/granite/configurations/content/view.html/conf`
