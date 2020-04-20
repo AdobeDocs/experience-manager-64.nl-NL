@@ -3,7 +3,7 @@ title: Ondersteunde bestandsindelingen in AEM Assets
 description: Lijst met bestandsindelingen en MIME-typen die door AEM Assets worden ondersteund en de functies die voor elke indeling worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 171186251e675094e716931b64c77e7897c03ca7
+source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
 
 ---
 
@@ -231,10 +231,6 @@ Standaard detecteert AEM het bestandstype met de bestandsextensie. AEM kan het v
 
 Een lijst van gesteunde types MIME is beschikbaar in CRXDE Lite bij `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
-Zie MIME op type-gebaseerd [configureren voor ondersteuning](config-dynamic.md)van taakparameters voor uploaden.
-
-Zie ook [Enable MIME type-based Middelen/Scene7 uploadt baanparametersteun](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support).
-
 | Bestandsextensie | MIME-type/internet-mediatype | Standaardwaarde voor jobParam | Toegestane jobParam-waarde |
 |---|---|---|---|
 | Afbeelding | image/s7asset | `usmAmount=1.75&usmRadius=0.2`<br>`&usmThreshold=2&usmMonochrome=0&` | De standaardjobParam is van toepassing op alle mime-afbeeldingselementen.<ul><li>[knockoutBackgroundOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_knockout_background_options.html)</li><li>manualCropOptions</li><li>[autoColorCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_auto_color_crop_options)</li><li>[autoTransparentCropOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_auto_transparent_crop_options)</li><li>[colorManagementOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_color_management_options.html)</li><li>[autoSetCreationOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_auto_set_creation_options.html)</li><li>[emailSetting](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/string_constants/index.html?f=r_email_settings)</li><li>[xmpKeywords](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/index.html?f=r_xmp_keywords)</li><li>[unsharpMaskOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/types/r_unsharp_mask_options.html)</li></ul> |
@@ -271,7 +267,7 @@ Zie ook [Enable MIME type-based Middelen/Scene7 uploadt baanparametersteun](/hel
 | OTF | application/x-font-otf |  |  |
 | PDF | application/pdf | `pdfprocess=Rasterize&resolution=150`<br>`&colorspace=Auto&pdfbrochure=false`<br>`&keywords=false&links=false` | [pdfOptions](https://marketing.adobe.com/resources/help/en_US/s7/ips_api/?f=r_pdf_options) |
 | PFB | application/x-font-type1 |  |  |
-| PFM | application/x-font-type1 |  |  |
+| PGM | application/x-font-type1 |  |  |
 | PICT | image/x-pict |  |  |
 | PNG | image/png |  |  |
 | PPT | application/vnd.ms-powerpoint |  |  |
@@ -295,4 +291,6 @@ Zie ook [Enable MIME type-based Middelen/Scene7 uploadt baanparametersteun](/hel
 
 >[!MORELIKETHIS]
 >
->[Schakel op MIME-type gebaseerde elementen/Scene7 in om taakparameterondersteuning](../sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)te uploaden.
+>* [Schakel op MIME-type gebaseerde elementen/Scene7 in om taakparameterondersteuning](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)te uploaden.
+>* [Configureer MIME op type gebaseerd voor ondersteuning](config-dynamic.md)voor uploadtaakparameters.
+
