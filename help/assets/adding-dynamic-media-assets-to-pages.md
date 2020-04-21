@@ -10,16 +10,16 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+source-git-commit: ef00b3d307e01807f90bad8c8fde278204470bc3
 
 ---
 
 
 # Dynamic Media-assets aan pagina&#39;s toevoegen {#adding-dynamic-media-assets-to-pages}
 
-Als u de functionaliteit voor dynamische media wilt toevoegen aan elementen die u op uw websites gebruikt, kunt u de component **Dynamische media** of **Interactieve media** rechtstreeks op de pagina toevoegen. U doet dit door de modus Lay-out in te voeren en de dynamische mediacomponenten in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en elementen aan de component toevoegen. De dynamische media en interactieve mediacomponenten zijn slim: ze weten of u een afbeelding of video toevoegt en de beschikbare opties veranderen dienovereenkomstig.
+To add the dynamic media functionality to assets you use on your websites, you can add the **Dynamic Media** or **Interactive Media** component directly on the page. U doet dit door de modus Lay-out in te voeren en de dynamische mediacomponenten in te schakelen. Vervolgens kunt u deze componenten aan de pagina toevoegen en assets aan de component toevoegen. De dynamische media en interactieve mediacomponenten zijn slim: ze weten of u een afbeelding of video toevoegt en de beschikbare opties veranderen dienovereenkomstig.
 
-U voegt dynamische media-elementen rechtstreeks aan de pagina toe als u AEM als uw WCM gebruikt. Als u een derde voor uw WCM gebruikt, of [verbinding](linking-urls-to-yourwebapplication.md) of [bedt](embed-code.md) uw activa in. Voor een responsieve website van derden raadpleegt u het [leveren van geoptimaliseerde afbeeldingen op een responsieve site](responsive-site.md).
+U voegt dynamische media-elementen rechtstreeks aan de pagina toe als u AEM als uw WCM gebruikt. Als u een oplossing van derden gebruikt voor uw WCM, moet u uw assets [koppelen](linking-urls-to-yourwebapplication.md) of [insluiten](embed-code.md). Voor een responsieve website van derden raadpleegt u het [leveren van geoptimaliseerde afbeeldingen op een responsieve site](responsive-site.md).
 
 >[!NOTE]
 >
@@ -38,7 +38,7 @@ Het toevoegen van de component Dynamische media of Interactieve media aan een pa
 1. Open in AEM de pagina waaraan u de component Dynamische media of Interactieve media wilt toevoegen.
 1. Klik in het linkerdeelvenster op het pictogram **[!UICONTROL Componenten]** en filter voor **[!UICONTROL Dynamische media]**. Als er geen Dynamic Media-component beschikbaar is, moet u de Dynamic Media-componenten inschakelen. Zie [Paginasjablonen](/help/sites-authoring/templates.md#editing-templates-template-authors) bewerken voor meer informatie.
 
-   ![chlimage_1-538](assets/chlimage_1-537.png)
+   ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Sleep de component **[!UICONTROL Dynamische media]** of **[!UICONTROL Interactieve media]** naar de pagina op de gewenste locatie.
 1. Klik op het blauwe vak rondom de component en tik vervolgens op het pictogram **[!UICONTROL Configuratie]** (moersleutel).
@@ -48,7 +48,7 @@ Het toevoegen van de component Dynamische media of Interactieve media aan een pa
 
 U kunt dynamische mediacomponenten op twee manieren lokaliseren:
 
-* Open **[!UICONTROL Eigenschappen]** op een webpagina in Sites en selecteer het tabblad **[!UICONTROL Geavanceerd]** . Selecteer de gewenste taal voor lokalisatie.
+* Within a web page in Sites, open **[!UICONTROL Properties]** and select the **[!UICONTROL Advanced]** tab. Selecteer de gewenste taal voor lokalisatie.
 
    ![chlimage_1-538](assets/chlimage_1-538.png)
 
@@ -94,13 +94,13 @@ Met de component Dynamische media kunt u dynamische afbeeldingen toevoegen, zoal
 
 U kunt de viewervoorinstelling, afbeeldingsvoorinstelling of afbeeldingsindeling ook rechtstreeks in de component configureren. Als u een afbeelding responsief wilt maken, kunt u de onderbrekingspunten instellen of een responsieve voorinstelling voor de afbeelding toepassen.
 
-U kunt de volgende instellingen voor dynamische media bewerken door te klikken op het pictogram **[!UICONTROL Bewerken]** in de component en vervolgens op Instellingen **[!UICONTROL voor]** dynamische media.
+U moet de volgende instellingen voor dynamische media bewerken door op het pictogram **[!UICONTROL Bewerken]** in de component te klikken en vervolgens op Instellingen **[!UICONTROL voor]** dynamische media.
 
 ![dm-settings-image-preset](assets/dm-settings-image-preset.png)
 
 >[!NOTE]
 >
->Standaard is de afbeeldingscomponent Dynamische media adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component op het **[!UICONTROL Geavanceerde]** lusje met de montages van de **[!UICONTROL Breedte]** en van de **[!UICONTROL Hoogte]** .
+>Standaard is de afbeeldingscomponent voor dynamische media adaptief. If you want to make it a fixed size, set it in the component in the **[!UICONTROL Advanced]** tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]** settings.
 
 * **[!UICONTROL Viewer-voorinstelling]**Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Zie Viewer-voorinstellingen beheren. U kunt geen viewervoorinstelling selecteren als u een voorinstelling voor afbeeldingen gebruikt en andersom.
 Dit is de enige beschikbare optie als u beeldreeksen, spin reeksen, of gemengde media reeksen bekijkt. De weergegeven viewervoorinstellingen zijn ook slim. Alleen relevante viewervoorinstellingen worden weergegeven.
@@ -115,7 +115,7 @@ Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde me
 
 * **[!UICONTROL Onderbrekingspunten]**Als u dit element gebruikt op een responsieve site, moet u de onderbrekingspunten van de afbeelding toevoegen. Afbeeldingsonderbrekingspunten moeten door komma&#39;s (,) worden gescheiden. Deze optie werkt wanneer er geen hoogte of breedte is gedefinieerd in een voorinstelling voor afbeeldingen.
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
-U kunt de volgende geavanceerde instellingen bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+You can edit the following Advanced Settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Titel]**- De titel van de afbeelding wijzigen.
 
@@ -133,7 +133,7 @@ Met de component Dynamische media kunt u dynamische video toevoegen aan uw webpa
 
 ![chlimage_1-540](assets/chlimage_1-540.png)
 
-U kunt de volgende instellingen voor dynamische media bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+U moet de volgende instellingen voor dynamische media bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
 
 >[!NOTE]
 >
@@ -148,7 +148,7 @@ U kunt de volgende instellingen voor dynamische media bewerken door in de compon
    * Een bijschriftbestand koppelen aan een video [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_caption.html)
    * Een navigatiebestand koppelen aan een video [https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html](https://marketing.adobe.com/resources/help/en_US/s7/viewers_ref/r_html5_video_viewer_url_navigation.html)
 
-U kunt de volgende [!UICONTROL Geavanceerde instellingen] bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+You can edit the following [!UICONTROL Advanced Settings] by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Titel]** De titel van de video wijzigen.
 
@@ -162,16 +162,16 @@ Zie ook [Afbeeldingsprofielen](image-profiles.md).
 
 ![dm-settings-smart-crop](assets/dm-settings-smart-crop.png)
 
-U kunt de volgende [!UICONTROL dynamische Media-instellingen] bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+You can edit the following [!UICONTROL Dynamic Media Settings] by clicking **[!UICONTROL Edit]** in the component.
 
 >[!NOTE]
 >
->Standaard is de afbeeldingscomponent Dynamische media adaptief. Als u van het een vaste grootte wilt maken, plaats het in de component op het [!UICONTROL Geavanceerde] lusje met de **[!UICONTROL Breedte]** en de **[!UICONTROL Hoogte]**.
+>Standaard is de afbeeldingscomponent voor dynamische media adaptief. If you want to make it a fixed size, set it in the component in the [!UICONTROL Advanced] tab with the **[!UICONTROL Width]** and **[!UICONTROL Height]**.
 
 * **[!UICONTROL Afbeeldingswijzigingstoetsen]**U kunt afbeeldingseffecten toepassen door extra opdrachten voor afbeeldingen te leveren. Deze worden beschreven in Voorinstellingen afbeelding en de verwijzing Opdracht Beeldserver.
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-U kunt de volgende **[!UICONTROL geavanceerde]** instellingen bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+You can edit the following **[!UICONTROL Advanced]** settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Titel]** De titel van de afbeelding Slim uitsnijden wijzigen.
 
@@ -197,7 +197,7 @@ De component Interactieve media is slim. Afhankelijk van het feit of u een afbee
 
 ![chlimage_1-541](assets/chlimage_1-541.png)
 
-U kunt de volgende **[!UICONTROL algemene]** instellingen bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+You can edit the following **[!UICONTROL General]** settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Viewer-voorinstelling]** Selecteer een bestaande viewervoorinstelling in het keuzemenu. Als de viewervoorinstelling die u zoekt niet zichtbaar is, moet u deze mogelijk zichtbaar maken. Voorinstellingen voor viewers moeten worden gepubliceerd voordat ze kunnen worden gebruikt. Zie Viewer-voorinstellingen beheren.
 
@@ -205,7 +205,7 @@ U kunt de volgende **[!UICONTROL algemene]** instellingen bewerken door in de co
 
 * **[!UICONTROL Breedte]** en **[!UICONTROL Hoogte]** Voer waarde in pixels in als u wilt dat de video een vaste grootte heeft. Als u deze waarden niet invult, wordt het adaptief.
 
-U kunt de volgende instellingen voor **[!UICONTROL Toevoegen aan winkelwagentje]** bewerken door in de component op **[!UICONTROL Bewerken]** te klikken.
+You can edit the following **[!UICONTROL Add To Cart]** settings by clicking **[!UICONTROL Edit]** in the component.
 
 * **[!UICONTROL Productelement]** standaard tonen. Deze waarde is geselecteerd. Het productelement toont een afbeelding van het product zoals gedefinieerd in de module Handel. Schakel het vinkje uit om het productelement niet weer te geven.
 
