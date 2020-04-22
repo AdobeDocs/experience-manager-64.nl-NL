@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 9514b35f8d36ad0d73dab7c202c6ca7dc0bb9e63
 
 ---
 
@@ -165,7 +165,7 @@ Om dynamische media toe te laten, moet u de dynamische media runmode of van de b
    >
    >Raadpleeg de volgende logboeken in de map **[!UICONTROL crx-quickstart/logs/]** voor informatie over het oplossen van problemen met Dynamic Media:
    >
-   >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analytische gegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
+   >* ImageServer-&lt;PortId>-&lt;jjyy>&lt;dd>.log - Het ImageServer-logboek bevat statistieken en analysegegevens die worden gebruikt voor het analyseren van het gedrag van het interne ImageServer-proces.
 
       Voorbeeld van de naam van een logbestand voor een afbeeldingsserver: `ImageServer-57346-2019-07-25.log`
    * s7access-&lt;yyyy>&lt;dd>.log - Het s7access logboek registreert elk verzoek aan Dynamische Media door `/is/image` en `/is/content`.
@@ -221,7 +221,7 @@ Als u uw aangepaste voorinstellingen en configuraties wilt migreren van `/etc` n
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets.migratedmcontent.json`
 
-Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de voorinstellingen van de kant-en-klare viewer kopiëren door de volgende opdracht uit te voeren:
+Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de voorinstellingen van de verouderde viewer kopiëren door de volgende opdracht uit te voeren:
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -251,7 +251,7 @@ U moet replicatieverificatie instellen bij de auteur om afbeeldingen te replicer
 **Aan opstellingsauthentificatie**:
 
 1. Neem contact op met de klantenservice voor uw KeyStore-bestand en wachtwoord als u dit nog niet hebt. Dit maakt deel uit van provisioning en de sleutels worden aan uw account gekoppeld.
-1. Tik in AEM op het AEM-logo om toegang te krijgen tot de algemene navigatieconsole en tik vervolgens op **[!UICONTROL Gereedschappen > Beveiliging > Gebruikers]**.
+1. In AEM, tap the AEM logo to access the global navigation console, then tap **[!UICONTROL Tools > Security > Users]**.
 1. Navigeer op de pagina Gebruikersbeheer naar de gebruiker voor **[!UICONTROL dynamisch-media-replicatie]** en tik vervolgens om deze te openen.
 
    ![dm-replicatie](assets/dm-replication.png)
@@ -411,7 +411,7 @@ Replication test to s7delivery:https://replicate-na.assetsadobe.com/is-publish
 
    `localhost:4502/libs/granite/security/content/useradmin.html`
 1. Navigeer op de pagina **[!UICONTROL Gebruikersbeheer]** naar de gebruiker voor **[!UICONTROL dynamische media-replicatie]** en tik vervolgens om deze te openen.
-1. Tik op het tabblad **[!UICONTROL KeyStore]** . Als de knop **[!UICONTROL Create KeyStore]** wordt weergegeven, moet u de stappen onder Verificatie [](#setting-up-authentication) instellen opnieuw uitvoeren.
+1. Tap the **[!UICONTROL KeyStore]** tab. Als de knop **[!UICONTROL Create KeyStore]** wordt weergegeven, moet u de stappen onder Verificatie [](#setting-up-authentication) instellen opnieuw uitvoeren.
 1. Als u de opstelling **[!UICONTROL KeyStore]** moest opnieuw doen, kunt u de Agent [van de Replicatie opnieuw moeten](config-dynamic.md#configuring-the-replication-agent) Vormen, eveneens.
 
    Wijzig de s7delivery Replication Agent.
@@ -450,13 +450,13 @@ Voorbeeld van replicatielogboek:
 
    `enableOauth=true`
 
-1. Tik in de linkerbovenhoek van de pagina op Alles **[!UICONTROL opslaan]**.
+1. Near the upper-left corner of the page, tap **[!UICONTROL Save All]**.
 
 ### Uw configuratie testen {#testing-your-configuration}
 
 Adobe raadt u aan een end-to-end test van de configuratie uit te voeren.
 
-Zorg ervoor dat u het volgende al hebt gedaan voordat u deze test start:
+Zorg ervoor dat u het volgende al hebt gedaan voordat u met deze test begint:
 
 * Voorinstellingen voor toegevoegde afbeelding.
 * Configureer **Dynamic Media Configuration (vóór 6.3)** onder **[!UICONTROL Cloud Services]**. De afbeeldingsservice-URL is vereist voor deze test
@@ -503,18 +503,18 @@ Voordat u Dynamic Media Cloud Services instelt, moet u de publicatie-instantie i
 
 U kunt videoverslagen over veelvoudige installaties van AEM vormen gebruikend Dynamische Media - Hybride wijze.
 
-**** Wanneer gebruiken: Op het moment dat u **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** configureert, worden er tal van functies gestart, waaronder videoverslag. De configuratie leidt tot een rapportreeks in een regionaal bedrijf Analytics. Als u veelvoudige knopen van de Auteur vormt, creeert u een afzonderlijke rapportreeks voor elke. Dit heeft tot gevolg dat de rapportage van gegevens tussen de installaties inconsistent is. Bovendien als elke knoop van de Auteur naar de zelfde Hybride Publish server verwijst, verandert de laatste installatie van de Auteur de reeks van het bestemmingsrapport voor al videorapportering. Deze kwestie overlaadt het systeem van Analytics met teveel rapportseries.
+**Wanneer gebruiken:** Op het moment dat u **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** configureert, worden er tal van functies gestart, waaronder videoverslag. De configuratie leidt tot een rapportreeks in een regionaal bedrijf Analytics. Als u veelvoudige knopen van de Auteur vormt, creeert u een afzonderlijke rapportreeks voor elke. Dit heeft tot gevolg dat de rapportage van gegevens tussen de installaties inconsistent is. Bovendien als elke knoop van de Auteur naar de zelfde Hybride Publish server verwijst, verandert de laatste installatie van de Auteur de reeks van het bestemmingsrapport voor al videorapportering. Deze kwestie overlaadt het systeem van Analytics met teveel rapportseries.
 
-**** Aan de slag: Configureer videomelding door de volgende drie taken uit te voeren.
+**Aan de slag:** Configureer videomelding door de volgende drie taken uit te voeren.
 
-1. Maak een vooraf ingesteld pakket Video Analytics nadat u **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** hebt geconfigureerd voor het eerste auteurknooppunt. Deze aanvankelijke taak is belangrijk omdat het een nieuwe configuratie toestaat om het gebruiken van de zelfde rapportreeks voort te zetten.
-1. Installeer het vooraf ingestelde pakket Video Analytics op een ***nieuw*** Auteur-knooppunt ***voordat*** u Dynamic Media Configuration (Pre 6.3) configureert.
+1. Maak een [!DNL Video Analytics] vooraf ingesteld pakket nadat u **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** op het eerste auteurknooppunt hebt geconfigureerd. Deze aanvankelijke taak is belangrijk omdat het een nieuwe configuratie toestaat om het gebruiken van de zelfde rapportreeks voort te zetten.
+1. Installeer het [!DNL Video Analytics] voorinstellingspakket naar een ***nieuw*** auteurknooppunt ***voordat*** u Dynamic Media Configuration (Pre 6.3) configureert.
 
 1. Verifieer en zuivert de pakketinstallatie.
 
-### Een vooraf ingesteld pakket voor videoanalyse maken nadat het eerste knooppunt Auteur is geconfigureerd {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
+### Een [!DNL Video Analytics] vooraf ingesteld pakket maken nadat het eerste auteurknooppunt is geconfigureerd {#creating-a-video-analytics-preset-package-after-configuring-the-first-author-node}
 
-Wanneer u deze taak hebt voltooid, beschikt u over een pakketbestand met de voorinstellingen voor videoanalyse. Deze voorinstellingen bevatten een rapportsuite, de trackingserver, de naamruimte voor bijhouden en de organisatie-id van de Marketing Cloud, indien beschikbaar.
+Wanneer u deze taak hebt voltooid, beschikt u over een pakketbestand met de [!DNL Video Analytics] voorinstellingen. Deze voorinstellingen bevatten een rapportsuite, de trackingserver, de naamruimte voor bijhouden en de organisatie-id van de Marketing Cloud, indien beschikbaar.
 
 1. Als u dit nog niet hebt gedaan, configureert u **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]**.
 1. (Optioneel) Geef de **[!UICONTROL rapportsuite-id]** weer en kopieer deze. (U moet toegang hebben tot het JCR). Hoewel het niet nodig is om de **[!UICONTROL rapportsuite-id]** te hebben, wordt de validatie eenvoudiger.
@@ -524,23 +524,23 @@ Wanneer u deze taak hebt voltooid, beschikt u over een pakketbestand met de voor
    In AEM: `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata`
 
 1. Maak het pakket.
-1. Download of deel het voorinstellingspakket voor Video Analytics, zodat het kan worden gedeeld met de volgende nieuwe auteurknooppunten.
+1. Download of deel het [!DNL Video Analytics] vooraf ingestelde pakket, zodat het kan worden gedeeld met de volgende nieuwe auteurknooppunten.
 
-### Het vooraf ingestelde pakket voor videoanalyse installeren voordat u extra Auteursknooppunten configureert {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
+### Het [!DNL Video Analytics] vooraf ingestelde pakket installeren voordat u extra Auteur-knooppunten configureert {#installing-the-video-analytics-preset-package-before-you-configure-additional-author-nodes}
 
 Zorg ervoor dat u deze taak voltooit _voordat_ u **[!UICONTROL Dynamic Media Configuration (Pre 6.3)]** configureert. Als u dit niet doet, wordt er een andere ongebruikte rapportsuite gemaakt. Bovendien, alhoewel de video het melden correct zal blijven werken, wordt het verzamelen van gegevens niet geoptimaliseerd.
 
-Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste auteurknooppunt toegankelijk is op het nieuwe auteurknooppunt.
+Zorg ervoor dat het [!DNL Video Analytics] vooraf ingestelde pakket van de eerste knoop van de Auteur op de nieuwe knoop van de Auteur toegankelijk is.
 
-1. Upload het vooraf ingestelde pakket van de Analyse Video dat u eerder creeerde aan de Manager **[!UICONTROL van het]** Pakket.
-1. Installeer het vooraf ingestelde pakket Video Analytics.
+1. Upload het [!DNL Video Analytics] vooraf ingestelde pakket dat u eerder creeerde aan **[!UICONTROL de Manager]** van het Pakket.
+1. Installeer het [!DNL Video Analytics] vooraf ingestelde pakket.
 1. Configuratie van **[!UICONTROL dynamische media configureren (vóór 6.3)]**.
 
 ### De pakketinstallatie controleren en fouten opsporen {#verifying-and-debugging-the-package-installation}
 
 1. Voer een van de volgende handelingen uit om de installatie van het pakket te controleren en, indien nodig, fouten op te sporen:
 
-   * **Controleer de voorinstelling Video Analytics via de JCR**. Als u de voorinstelling Video Analytics via de JCR wilt controleren, moet u toegang hebben tot **[!UICONTROL CRXDE Lite]**.
+   * **Controleer de[!DNL Video Analytics]voorinstelling via het JCR**. Als u de [!DNL Video Analytics] voorinstelling via het JCR wilt controleren, moet u toegang hebben tot **[!UICONTROL CRXDE Lite]**.
 
       AEM - Navigeer in **[!UICONTROL CRXDE Lite]** naar `/conf/global/settings/dam/dm/presets/analytics/jcr:content/userdata  `
 
@@ -548,11 +548,11 @@ Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste
 
       Als u geen toegang tot **[!UICONTROL CRXDE Lite]** op de Auteur knoop hebt, kunt u vooraf ingesteld door de Publish server controleren.
 
-   * **Controleer de vooraf ingestelde Video Analytics via de Server van het Beeld**
+   * **Controleer[!DNL Video Analytics]vooraf ingesteld door de Server van het Beeld**
 
-      U kunt de voorinstelling Video-analyse rechtstreeks valideren door een `req=userdata` aanvraag voor een afbeeldingsserver in te dienen.
+      U kunt de [!DNL Video Analytics] voorinstelling rechtstreeks valideren door een `req=userdata` aanvraag voor een afbeeldingsserver in te dienen.
 
-      Als u bijvoorbeeld de voorinstelling Analytics wilt weergeven op het knooppunt Auteur, kunt u het volgende verzoek indienen:
+      Als u bijvoorbeeld de [!DNL Video Analytics] voorinstelling wilt weergeven op het knooppunt Auteur, kunt u het volgende verzoek indienen:
 
       `http://localhost:4502/is/image/conf/global/settings/dam/dm/presets/analytics?req=userdata`
 
@@ -565,7 +565,7 @@ Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste
        trackingServer=aemvideodal.d2.sc.omtrdc.net
       ```
 
-   * **Controleer de voorinstelling Video Analytics via Video Reporting tool in AEM**
+   * **Controleer de[!DNL Video Analytics]voorinstelling met het gereedschap Video-rapportage in AEM**
 
       Tik op **[!UICONTROL Gereedschappen > Middelen > Video-rapportage]**`http://localhost:4502/mnt/overlay/dam/gui/content/s7dam/videoreports/videoreport.html`
 
@@ -584,13 +584,13 @@ Zorg ervoor dat het vooraf ingestelde pakket voor Video Analytics van het eerste
 
 ### Het oplossen van problemen de video rapporteringsconfiguratie {#troubleshooting-the-video-reporting-configuration}
 
-* Tijdens de installatie zijn soms verbindingen met de Analytics API-server onderbroken. De installatie probeert de verbinding 20 keer opnieuw, maar het ontbreekt nog. Wanneer deze situatie voorkomt, registreert het logboekdossier veelvoudige fouten. Zoeken naar `SiteCatalystReportService`.
-* Als u het pakket met voorinstellingen voor analysemogelijkheden niet eerst installeert, wordt mogelijk een nieuwe rapportsuite gemaakt.
+* Tijdens de installatie zijn soms verbindingen met de Analytics API-server onderbroken. De installatie probeert de verbinding 20 keer opnieuw, maar het ontbreekt nog. Wanneer deze situatie voorkomt, registreert het logboekdossier veelvoudige fouten. Search for `SiteCatalystReportService`.
+* Als u het [!DNL Video Analytics] vooraf ingestelde pakket niet eerst installeert, kan er een nieuwe rapportsuite worden gemaakt.
 * Als u een upgrade uitvoert van AEM 6.3 naar AEM 6.4 of AEM 6.4.1 en vervolgens **[!UICONTROL Dynamic Media Configuration (pre 6.3)]** configureert, wordt er nog steeds een rapportenpakket gemaakt. Dit probleem is bekend en kan worden opgelost voor AEM 6.4.2.
 
-### Informatie over de voorinstelling Video Analytics {#about-the-video-analytics-preset}
+### Over de [!DNL Video Analytics] voorinstelling {#about-the-video-analytics-preset}
 
-De voorinstelling voor Video-analyse (ook wel analysevoorinstelling genoemd) wordt naast de voorinstellingen voor de viewer opgeslagen in Dynamische media. Het is in principe hetzelfde als een viewervoorinstelling, maar met informatie die wordt gebruikt voor het configureren van de rapportage van AppMeasurement en Video.
+De [!DNL Video Analytics] voorinstelling (ook wel voorinstelling voor analysemogelijkheden genoemd) wordt naast de voorinstellingen van de viewer opgeslagen in Dynamische media. Het is in principe hetzelfde als een viewervoorinstelling, maar met informatie die wordt gebruikt voor het configureren van de rapportage van AppMeasurement en Video.
 
 De eigenschappen van de voorinstelling zijn als volgt:
 
@@ -613,15 +613,15 @@ U moet uw eigen standaardinstellingen voor de catalogus publiceren als onderdeel
 
    `https://<server>:<port>/crx/de/index.jsp#/conf/global/settings/dam/dm/imageserver/`
 
-1. Tik op het tabblad **[!UICONTROL Replicatie]** .
+1. Tap the **[!UICONTROL Replication]** tab.
 1. Tik op **[!UICONTROL Repliceren]**.
 
 ## Viewer-voorinstellingen repliceren {#replicating-viewer-presets}
 
-Als u een element met een viewervoorinstelling wilt leveren, moet u de viewervoorinstelling repliceren of publiceren. (Alle voorinstellingen voor viewers moeten worden geactiveerd _en gerepliceerd_ om de URL- of insluitcode voor een element te verkrijgen.) Zie Voorinstellingen [van](managing-viewer-presets.md#publishing-viewer-presets) viewer publiceren voor meer informatie.
+Als u een element met een viewervoorinstelling wilt leveren, moet u de viewervoorinstelling repliceren of publiceren. (All viewer presets must be activated _and_ replicated to obtain the URL or embed code for an asset.) Zie Voorinstellingen [van](managing-viewer-presets.md#publishing-viewer-presets) viewer publiceren voor meer informatie.
 
 >[!NOTE]
-Standaard worden in het systeem verschillende uitvoeringen weergegeven wanneer u **[!UICONTROL Uitvoeringen]** en diverse viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal zien verhogen of verlagen. Zie Het aantal voorinstellingen voor afbeeldingen [vergroten waarmee het aantal voorinstellingen voor viewers dat wordt weergegeven](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) of [vergroten](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
+Standaard worden in het systeem verschillende uitvoeringen weergegeven wanneer u **[!UICONTROL Uitvoeringen]** en diverse viewervoorinstellingen selecteert wanneer u **[!UICONTROL Viewers]** selecteert in de gedetailleerde weergave van het element. U kunt het aantal dat u ziet verhogen of verlagen. See [Increasing the number of image presets that display](/help/assets/managing-image-presets.md#increasing-or-decreasing-the-number-of-image-presets-that-display) or [Increasing the number of viewer presets that display](/help/assets/managing-viewer-presets.md#increasing-the-number-of-viewer-presets-that-display).
 
 ## Elementen filteren voor replicatie {#filtering-assets-for-replication}
 
@@ -653,7 +653,7 @@ Als u Dynamische media voor 1) beeldvorming in productie _of_ 2) beeldvorming en
    <td>Dynamische levering van mediafbeelding</td> 
    <td><p>filterafbeeldingen</p> <p>filtersets</p> <p> </p> </td> 
    <td><p>Begint met <strong>afbeelding/</strong></p> <p>Bevat <strong>toepassing/</strong> en eindigt met <strong>set</strong>.</p> </td> 
-   <td>De 'filter-images' die buiten het vak (voor afzonderlijke afbeeldingselementen, inclusief interactieve afbeeldingen) en 'filtersets' (voor centrifuges, afbeeldingssets, gemengde mediasets en Carousel-sets) worden gebruikt, zijn: 
+   <td>De 'filter-images' die buiten het vak (voor afzonderlijke afbeeldingselementen, waaronder interactieve afbeeldingen) en 'filtersets' (voor centrifuges, afbeeldingssets, gemengde mediasets en Carousel-sets) worden gebruikt, zijn: 
     <ul> 
      <li>Neem PTIFF-afbeeldingen en metagegevens op voor replicatie (elke uitvoering die begint met <strong>cqdam</strong>).</li> 
      <li>Sluit de oorspronkelijke afbeelding en statische afbeeldingsuitvoeringen uit van replicatie.</li> 
@@ -666,7 +666,7 @@ Als u Dynamische media voor 1) beeldvorming in productie _of_ 2) beeldvorming en
    <td>De uit-van-de-doos "filter-video"zal: 
     <ul> 
      <li>Inclusief proxy-video-uitvoeringen, videominiatuur/posterafbeelding, metagegevens (zowel bij bovenliggende video als bij video-uitvoeringen) voor replicatie (Elke uitvoering die begint met <strong>cqdam</strong>).</li> 
-     <li>Sluit de originele video en statische miniatuuruitvoeringen uit van replicatie.<br /><br /> <strong> </strong>Opmerking: De proxy-video-uitvoeringen bevatten geen binaire elementen, maar zijn in plaats daarvan alleen knooppunteigenschappen. Er is dus geen invloed op de grootte van de uitgeversopslagplaats.</li> 
+     <li>Sluit de originele video en statische miniatuuruitvoeringen uit van replicatie.<br /> <br /> <strong>Opmerking:</strong> De proxy-video-uitvoeringen bevatten geen binaire elementen, maar zijn in plaats daarvan alleen knooppunteigenschappen. Er is dus geen invloed op de grootte van de uitgeversopslagplaats.</li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -725,7 +725,7 @@ Hiermee wordt de AEM-publicatie-instantie zo ingesteld dat de afbeeldingen worde
 
 >[!NOTE]
 Als er vele verschillende filters in een auteur zijn, heeft elke agent een verschillende gebruiker nodig die aan het wordt toegewezen. De granietcode dwingt het model van één filter per gebruiker af. Voor elke filterinstelling moet er altijd een andere gebruiker zijn.
-Als u meer dan één filter op een server-bijvoorbeeld gebruikt, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery-dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in **[!UICONTROL jcr:content]** knoop wordt toegewezen. Zie de volgende afbeelding:
+Als u meer dan één filter op een server-bijvoorbeeld gebruikt, één filter voor replicatie om te publiceren en een tweede filter voor s7delivery-dan moet u ervoor zorgen dat deze twee filters een verschillende **userId** hebben die aan hen in **[!UICONTROL jcr wordt toegewezen:content]** knoop. Zie de volgende afbeelding:
 
 ![image-2018-01-16-10-26-28-465](assets/image-2018-01-16-10-26-28-465.png)
 
@@ -777,7 +777,7 @@ Elementfilters optioneel aanpassen voor replicatie:
  </tbody> 
 </table>
 
-Navigeer naar `content/dam/<locate_your_asset>/jcr:content/renditions`.
+Ga naar `content/dam/<locate_your_asset>/jcr:content/renditions`.
 
 De volgende afbeelding is een voorbeeld van de uitvoeringen van een element.
 
@@ -906,7 +906,7 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr> 
    <td>standaard miniatuur</td> 
    <td>100,100</td> 
-   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td> 
+   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kan op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://marketing.adobe.com/resources/help/en_US/s7/is_ir_api/is_api/image_catalog/r_defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td> 
   </tr> 
   <tr> 
    <td>vervaldatum</td> 
