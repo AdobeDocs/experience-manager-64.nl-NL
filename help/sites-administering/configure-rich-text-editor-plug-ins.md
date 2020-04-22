@@ -3,7 +3,7 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer om de stop-ins van de Redacteur van de Tekst te vormen AEM Rich om individuele functionaliteit toe te laten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: f1a1dc18f768d814c63082ed40687862235a76cf
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -288,7 +288,7 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 1. Voeg de eigenschap toe `externalStyleSheets` aan het bovenliggende knooppunt van `<rtePlugins-node>`:
 
    * **Naam**`externalStyleSheets`
-   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in CRXDE)
+   * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in (CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
    >[!NOTE]
    U kunt op elk later moment verwijzingen naar extra stijlbladen toevoegen.
@@ -321,7 +321,7 @@ De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identi
 
    * **Naam**`cssName`
    * **Type**`String`
-   * **Waarde** De naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; bijvoorbeeld, `cssClass` in plaats van `.cssClass`)
+   * **Waarde** De naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
 
 1. Voeg de eigenschap toe `text` aan hetzelfde knooppunt. Hiermee wordt de tekst gedefinieerd die wordt weergegeven in het selectievak:
 
@@ -572,20 +572,18 @@ Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de C
 Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE woordenboeken voor elke geschikte taal. Deze worden vervolgens geselecteerd volgens de taal van de website door ofwel de taaleigenschap van de substructuur te nemen of de taal uit de URL te halen; bijvoorbeeld. de `/en/` tak wordt gecontroleerd als Engels, de `/de/` tak als Duits.
 
 >[!NOTE]
-Het bericht &#39;&#39;Spellingcontrole mislukt.&#39;&#39; wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is.
+Het bericht `Spell checking failed` wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is. De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map en de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
-Een standaard AEM-installatie bevat de woordenboeken voor:
+Een standaard AEM-installatie bevat de woordenboeken voor Amerikaans Engels (`en_us`) en Brits Engels (`en_gb`). Voer de volgende stappen uit om meer woordenboeken toe te voegen.
 
-* Amerikaans Engels (nl_nl)
-* Brits Engels (en_gb)
+1. Ga naar de pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
->[!NOTE]
-De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map en de juiste leesmij-bestanden. Wijzig de bestanden niet.
+1. Ga op een van de volgende manieren te werk om een woordenboek te zoeken waarin u uw taal kunt kiezen:
 
-Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
+   * Zoek naar woordenboek van uw taalkeuze. Zoek op de woordenboekpagina de koppeling naar de oorspronkelijke bron of de oorspronkelijke webpagina van de auteur. Zoek de woordenboekbestanden voor v2.x op een dergelijke pagina.
+   * Zoek naar bestanden voor v2.x-woordenboeken op [https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries](https://wiki.openoffice.org/wiki/User:Khirano/Dictionaries).
 
-1. Ga naar de pagina [http://download.services.openoffice.org/contrib/dictionaries/](http://download.services.openoffice.org/contrib/dictionaries/).
-1. Selecteer de gewenste taal en download het ZIP-bestand met de spellingdefinities. Extraheer de inhoud van het archief op uw bestandssysteem.
+1. Download het archief met de spellingdefinities. Extraheer de inhoud van het archief op uw bestandssysteem.
 
    >[!CAUTION]
    Alleen woordenboeken in de `MySpell` indeling voor OpenOffice.org v2.0.1 of eerder worden ondersteund. Aangezien de woordenboeken nu archiefbestanden zijn, wordt u aangeraden het archief na het downloaden te verifiëren.
@@ -594,9 +592,8 @@ Voer de volgende stappen uit als u meer woordenboeken wilt toevoegen.
 1. Laad de .aff- en .dic-bestanden in de opslagplaats op `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen.
-Als u de spellingcontrole wilt uitvoeren, tikt u op of klikt u op de knop Spellingcontrole op de werkbalk. RTE controleert de spelling van woorden en benadrukt verkeerd-gespelde woorden.
-Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, worden de tekststatus en onjuist gespelde woorden niet meer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
+De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Als u de spellingcontrole wilt uitvoeren, klikt u op [!UICONTROL Spellingcontrole] op de werkbalk. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
+Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
 
@@ -693,12 +690,12 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
 
       * **Naam**`cssInternal`
       * **Type**`String`
-      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; bijvoorbeeld, `cssClass` in plaats van `.cssClass`)
+      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
    * CSS-stijl voor externe koppelingen
 
       * **Naam**`cssExternal`
       * **Type**`String`
-      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; bijvoorbeeld, `cssClass` in plaats van `.cssClass`)
+      * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
    * Array van geldige **protocollen** (inclusief https://, https:// file://, mailto: onder andere)
 
       * **Naam**`protocols`
