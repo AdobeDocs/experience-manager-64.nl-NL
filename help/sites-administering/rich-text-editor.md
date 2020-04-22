@@ -3,7 +3,7 @@ title: De Rich Text Editor configureren
 description: Leer om de Rich Text Editor van AEM te vormen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
 
 ---
 
@@ -12,9 +12,7 @@ source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
 
 De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van hun tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst.
 
-RTE kan worden gevormd om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Om te weten hoe te om eigenschappen RTE voor creatie te gebruiken, zie de Redacteur van de Tekst van het [Gebruik Rich voor creatie](/help/sites-authoring/rich-text-editor.md).
-
-Het volgende werkschema illustreert een geadviseerde orde om de de configuratietaken van RTE te voltooien.
+Om te weten hoe te om eigenschappen RTE voor creatie te gebruiken, zie de Redacteur van de Tekst van het [Gebruik Rich voor creatie](/help/sites-authoring/rich-text-editor.md). RTE kan worden gevormd om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Het volgende werkschema illustreert een geadviseerde orde om de de configuratietaken van RTE in de Manager van de Ervaring te voltooien.
 
 ![Normale workflow voor het configureren van Rich Text Editor](assets/rte_workflow_v1.png)
 
@@ -44,45 +42,12 @@ De interface met aanraakbediening is de standaardinterface voor AEM. Adobe intro
 
 Auteurs kunnen tekstinhoud in AEM maken en bewerken met de verschillende modi van componenten. De toolbaropties voor het ontwerpen en het formatteren van inhoud en de gebruikerservaring van rte-toegelaten componenten op verschillende het uitgeven wijze variëren gebaseerd op configuraties RTE.
 
-<table> 
- <tbody> 
-  <tr> 
-   <th>Bewerkmodus</th> 
-   <th>Bewerkingsgebied</th> 
-   <th>Aanbevolen functies om te worden ingeschakeld<br /> </th> 
-   <th>Aanraakinterface</th> 
-   <th>Klassieke interface</th> 
-  </tr> 
-  <tr> 
-   <td>Inline</td> 
-   <td>Op locatie bewerken voor snelle, kleine bewerkingen; Opmaken zonder dialoogvenster te openen</td> 
-   <td>Minimale RTE-functies</td> 
-   <td>J</td> 
-   <td>J</td> 
-  </tr> 
-  <tr> 
-   <td>RTE volledig scherm</td> 
-   <td>Behandelt gehele pagina<br /> </td> 
-   <td>Alle vereiste eigenschappen van RTE<br /> </td> 
-   <td>J</td> 
-   <td>N<br /> </td> 
-  </tr> 
-  <tr> 
-   <td>Dialoog</td> 
-   <td>Dialoogvenster boven op de pagina-inhoud, maar heeft geen betrekking op de gehele pagina</td> 
-   <td>Alle vereiste eigenschappen van RTE in Klassieke UI; Functies op oordeelkundige wijze inschakelen in Touch UI<br /> </td> 
-   <td>J</td> 
-   <td>J</td> 
-  </tr> 
-  <tr> 
-   <td>Dialoogvenster volledig scherm<br /> </td> 
-   <td>Hetzelfde als de modus Volledig scherm; bevat gebieden van de dialoog naast RTE<br /> </td> 
-   <td>Alle vereiste eigenschappen van RTE</td> 
-   <td>J</td> 
-   <td>N</td> 
-  </tr> 
- </tbody> 
-</table>
+| Bewerkmodus | Bewerkingsgebied | Aanbevolen functies om te worden ingeschakeld | Aanraakinterface | Klassieke interface |
+|--- |--- |--- |--- |--- |
+| Inline | Op locatie bewerken voor snelle, kleine bewerkingen; Opmaken zonder dialoogvenster te openen | Minimale RTE-functies | J | J |
+| RTE volledig scherm | Behandelt gehele pagina | Alle vereiste eigenschappen van RTE | J | N |
+| Dialoog | Dialoogvenster boven op de pagina-inhoud, maar heeft geen betrekking op de gehele pagina | Alle vereiste eigenschappen van RTE in Klassieke UI; Functies op oordeelkundige wijze inschakelen in Touch UI | J | J |
+| Dialoogvenster volledig scherm | Hetzelfde als de modus Volledig scherm; bevat gebieden van de dialoog naast RTE | Alle vereiste eigenschappen van RTE | J | N |
 
 >[!NOTE]
 >
@@ -139,90 +104,23 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 * Toegestane waarden voor de `features` eigenschap.
 * Een beschrijving van de functionaliteit die door de plug-in wordt geboden.
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><p>Plug-in-id<br /><br /> </p> </td> 
-   <td><p>functies<br /><br /> </p> </td> 
-   <td><p>Beschrijving<br /> <br /> </p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>bewerken</p> </td> 
-   <td><p>cut<br /> copy<br /> paste-default<br /> paste-plaintext<br /> paste-wordhtml</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Knip, kopieer en kopieer de drie plakmodi</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin">findreplace</a></p> </td> 
-   <td><p>zoeken<br /> vervangen</p> </td> 
-   <td><p>Zoeken en vervangen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin">format</a></p> </td> 
-   <td><p>vet<br /> cursief<br /> onderstrepen</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="_blank">Basistekstopmaak</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin">image</a></p> </td> 
-   <td><p>image</p> </td> 
-   <td><p>Stel bepaalde afbeeldingseigenschappen in, zoals uitlijning en alt-tekst. Basisondersteuning voor het slepen en neerzetten van afbeeldingen vanuit de Inhoudszoeker werkt zonder deze plug-in.</p> <p><em>Opmerking</em>: Het ontwerpgedrag kan per browser verschillen. Mozilla Firefox biedt bijvoorbeeld mogelijkheden om het formaat te wijzigen, maar Google Chrome niet.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin">toetsen</a></p> </td> 
-   <td><p> </p> </td> 
-   <td><p>Zie de <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize" target="_blank">tabgrootte</a>om deze waarde te definiëren.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin">justify</a></p> </td> 
-   <td><p>uitvullen, links<br /> uitvullen, midden<br /> rechts uitvullen</p> </td> 
-   <td><p>Alinea-uitlijning.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin">koppelingen</a></p> </td> 
-   <td><p>modifylink<br /> unlink<br /> anchor</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles" target="_blank">Hyperlinks en ankers</a>.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin">lijsten</a></p> </td> 
-   <td><p>geordende<br /> ongeordende<br /> inspringing<br /> uitspringen</p> </td> 
-   <td><p>Deze insteekmodule bestuurt zowel de <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin" target="_blank">inspringing als de lijsten</a>; inclusief geneste lijsten.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin">misverstanden</a></p> </td> 
-   <td><p>specialchars<br /> -bronbewerking</p> </td> 
-   <td>Met diverse gereedschappen kunnen auteurs <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar" target="_blank">speciale tekens</a> invoeren of de HTML-bron bewerken. U kunt ook een heel <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar" target="_blank">scala aan speciale tekens</a> toevoegen als u uw eigen lijst wilt definiëren.</td> 
-  </tr> 
-  <tr> 
-   <td><p>Paraformat</p> </td> 
-   <td><p>paraformat</p> </td> 
-   <td>De standaardindexdelingen zijn Alinea, Kop 1, Kop 2 en Kop 3 (&lt;p&gt;, &lt;h1&gt;, &lt;h2&gt; en &lt;h3&gt;). U kunt meer alinea-indelingen <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats" target="_blank"></a> toevoegen of de lijst uitbreiden.</td> 
-  </tr> 
-  <tr> 
-   <td><p>spellingcontrole</p> </td> 
-   <td><p>checktext</p> </td> 
-   <td><p><a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict" target="_blank">Spellingcontrole</a>met behoud van taal.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>stijlen</p> </td> 
-   <td><p>stijlen</p> </td> 
-   <td>Ondersteuning voor opmaak met behulp van een CSS-klasse. <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles" target="-blank">Voeg nieuwe tekststijlen</a> toe als u uw eigen reeks stijlen voor gebruik met tekst wilt toevoegen (of uitbreiden).</td> 
-  </tr> 
-  <tr> 
-   <td><p>subsuperscript</p> </td> 
-   <td><p>subscript<br /> superscript</p> </td> 
-   <td><p>Extensies voor de basisindelingen, subscript en superscript toevoegen.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><p>table</p> </td> 
-   <td><p>table<br /> removetable<br /> insert<br /> removerow<br /> insert column<br /> removecolumn<br /> cellprops<br /> mergecells<br /> splitcell<br /> selectrow<br /> selected columns</p> </td> 
-   <td>Zie tabelstijlen <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles" target="_blank"></a>configureren als u uw eigen stijlen voor gehele tabellen of afzonderlijke cellen wilt toevoegen.</td> 
-  </tr> 
-  <tr> 
-   <td><p>ongedaan maken</p> </td> 
-   <td><p>ongedaan maken<br /> opnieuw uitvoeren</p> </td> 
-   <td>Grootte historie van bewerkingen voor <a href="/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory" target="_blank">ongedaan maken en opnieuw uitvoeren</a> .</td> 
-  </tr> 
- </tbody> 
-</table>
+| Plug-in-id | functies | Beschrijving |
+|--- |--- |--- |
+| bewerken | cut copy paste-default paste-plaintext paste-wordhtml | [Knip, kopieer en kopieer de drie plakmodi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | zoeken, vervangen | Zoeken en vervangen. |
+| [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | vet cursief onderstrepen | [Basistekstopmaak](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
+| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
+| [toetsen](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Zie de [tabgrootte](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)om deze waarde te definiëren. |
+| [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | uitvullen, links uitvullen, rechts uitvullen | Alinea-uitlijning. |
+| [koppelingen](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ontkoppelingsanker wijzigen | [Hyperlinks en ankers](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
+| [lijsten](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ListPlugin) | geordende ongeordende inspringing uitspringen | Deze insteekmodule bestuurt zowel de [inspringing als de lijsten](/help/sites-administering/configure-rich-text-editor-plug-ins.md#indentmargin); inclusief geneste lijsten. |
+| [misverstanden](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.MiscToolsPlugin) | specialchars-bronbewerking | Met diverse gereedschappen kunnen auteurs [speciale tekens](/help/sites-administering/configure-rich-text-editor-plug-ins.md#spchar) invoeren of de HTML-bron bewerken. U kunt ook een heel [scala aan speciale tekens](/help/sites-administering/configure-rich-text-editor-plug-ins.md#definerangechar) toevoegen als u uw eigen lijst wilt definiëren. |
+| Paraformat | paraformat | De standaardindelingen voor alinea&#39;s zijn Alinea, Kop 1, Kop 2 en Kop 3 (`<p>`, `<h1>`, `<h2>`en `<h3>`). U kunt meer alinea-indelingen [](/help/sites-administering/configure-rich-text-editor-plug-ins.md#paraformats) toevoegen of de lijst uitbreiden. |
+| spellingcontrole | checktext | [Spellingcontrole](/help/sites-administering/configure-rich-text-editor-plug-ins.md#adddict)met behoud van taal. |
+| stijlen | stijlen | Ondersteuning voor opmaak met behulp van een CSS-klasse. [Voeg nieuwe tekststijlen](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles) toe als u uw eigen reeks stijlen voor gebruik met tekst wilt toevoegen (of uitbreiden). |
+| subsuperscript | subscript, superscript | Extensies voor de basisindelingen, subscript en superscript toevoegen. |
+| table | verwijderbaar verwijderbaar insteekmodule removerow insert column removecolumn cellprops mergecell splitcell selectrow selectrow kolommen samenvoegen | Zie tabelstijlen [](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tablestyles)configureren als u uw eigen stijlen voor gehele tabellen of afzonderlijke cellen wilt toevoegen. |
+| ongedaan maken | ongedaan maken, opnieuw uitvoeren | Grootte historie van bewerkingen voor [ongedaan maken en opnieuw uitvoeren](/help/sites-administering/configure-rich-text-editor-plug-ins.md#undohistory) . |
 
 >[!NOTE]
 >
@@ -244,12 +142,8 @@ De [wijze van het uitgeven van RTE (en UI)](#editingmodes) die u voor uw auteurs
 >Geef het knooppunt onder niet de naam `cq:inplaceEditing` als `config`. Definieer bij `cq:inplaceEditing` knooppunt de volgende eigenschappen:
 >
 >* **Naam**: `configPath`
-   >
-   >
-* **Type**: `String`
-   >
-   >
-* **Waarde**: pad van het knooppunt met de feitelijke configuratie
+>* **Type**: `String`
+>* **Waarde**: pad van het knooppunt met de feitelijke configuratie
 >
 >
 Noem niet de de configuratieknoop van RTE zoals `config`. Anders, worden de configuraties RTE van kracht voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
@@ -273,7 +167,6 @@ Als RTE wordt gebruikt in het dialoogvenster met aanraakbediening, is het verpli
 De functionaliteit van RTE wordt beschikbaar gemaakt via een reeks stop-ins, elk met eigenschappen bezit. U kunt de eigenschap features configureren om de verschillende functies van elke insteekmodule in of uit te schakelen.
 
 Voor gedetailleerde configuraties van de stop-ins van RTE, zie [hoe te om de stop-ins](/help/sites-administering/configure-rich-text-editor-plug-ins.md)van RTE te activeren en te vormen.
-
 
 Download deze steekproefconfiguratie om te begrijpen hoe te om RTE te vormen. In dit pakket zijn alle functies ingeschakeld.
 
@@ -423,8 +316,8 @@ Met name om de beschikbare plug-ins en bijbehorende opties te zien:
 * De [component CQ.form.RichText](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.RichText) biedt een formulierveld voor het bewerken van opgemaakte tekstgegevens (RTF-gegevens). Zie Configuratieopties voor meer informatie over alle parameters die beschikbaar zijn voor het RTF-formulier.
 * De component RichText biedt een groot aantal functies met plug-ins die worden vermeld onder [CQ.form.rte.plugins.Plugin](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.Plugin). Voor elke insteekmodule:
 
-   * zie de Eigenschappen voor details van functionaliteit die kan worden toegelaten (of worden onbruikbaar gemaakt)
-   * Zie de Opties Config voor alle parameters beschikbaar voor gedetailleerde configuratie van de aangewezen stop - binnen
+   * Zie de Functies voor meer informatie over functionaliteit die kan worden ingeschakeld (of uitgeschakeld).
+   * Zie de Opties Config voor alle parameters beschikbaar voor gedetailleerde configuratie van de aangewezen stop-binnen.
 
 * Meer informatie over HTML-regels voor koppelingen is ook beschikbaar.
 
@@ -434,9 +327,9 @@ Met de bovenstaande opties kunt u uw eigen RTE uitbreiden en aanpassen. Als u bi
 
 AEM RTE-mogelijkheden hebben de volgende beperkingen:
 
-* RTE-mogelijkheden worden alleen ondersteund in dialoogvensters van AEM-componenten. RTE wordt niet gesteund op tovenaars of stichting-vormen zoals de Eigenschappen [van de](../sites-developing/page-properties-views.md) Pagina en het [Opslaan](../sites-authoring/scaffolding.md) op touch-Toegelaten UI.
+* RTE-mogelijkheden worden alleen ondersteund in dialoogvensters van AEM-componenten. RTE wordt niet gesteund op tovenaars of stichting-vormen zoals de Eigenschappen [van de](/help/sites-developing/page-properties-views.md) Pagina en het [Opslaan](/help/sites-authoring/scaffolding.md) op touch-Toegelaten UI.
 
-* AEM werkt niet op [hybride apparaten](../release-notes/known-issues.md).
+* AEM werkt niet op [hybride apparaten](/help/release-notes/known-issues.md).
 
 * Geef het RTE-configuratieknooppunt geen naam `config`. Anders, treedt de configuratie RTE voor slechts de beheerders en niet voor de gebruikers in de groep van kracht `content-author`.
 
