@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# Een aangepast profiel maken voor HTML5-formulieren {#creating-a-custom-profile-for-html-forms}
+# Creating a custom profile for HTML5 forms {#creating-a-custom-profile-for-html-forms}
 
-Een profiel is een resourceknooppunt in [Apache Sling](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de `/content` map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de `/content` map of in een submap van de `/content` map plaatsen.
+A profile is a resource node in [Apache Sling](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de `/content` map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de `/content` map of in een submap van de `/content` map plaatsen.
 
 Het profielknooppunt heeft de eigenschap **sling:resourceSuperType** en de standaardwaarde is **xfaforms/profile**. Het renderscript voor het knooppunt staat op /libs/xfaforms/profile.
 
@@ -81,5 +81,3 @@ Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit
 1. Open de URL om te controleren of het profiel is gemaakt `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
 Als u uw formulieren wilt verifiëren, [importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op de auteur van de AEM-server.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
