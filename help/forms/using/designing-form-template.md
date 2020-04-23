@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: e135fa01-fede-4285-b4dd-2d23acbb4d26
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -33,5 +33,3 @@ Het tabblad Voorbeeld-HTML wordt in de ontwerpmodus toegevoegd zodat formulieron
 Het belangrijkste doel voor HTML5-formulieren is aanraakapparaten. Daarom wordt een nieuwe controle van de krabbelhandtekening toegevoegd in de Ontwerper van de Vormen AEM. U kunt op het besturingselement voor krabbelhandtekeningen klikken of het besturingselement voor krabbelhandtekeningen slepen en neerzetten op uw formuliersjabloon en het configureren. Het wordt weergegeven als een krabbelveld in HTML5-uitvoering en kan worden gebruikt om een handtekening te krabbelen op aanraakapparaten. Op desktopcomputers kan het als krabbelveld worden gebruikt met de muis. Zie [XFA-scriptveld](/help/forms/using/scribble-signature.md)voor meer informatie over het gebruik van deze functie.
 
 ![4](assets/4.png)
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
