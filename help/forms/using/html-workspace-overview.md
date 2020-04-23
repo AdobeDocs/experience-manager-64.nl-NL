@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ebabecb9-91c4-4991-8f5b-d27f940d2ecb
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -32,9 +32,9 @@ Om vertrouwd met het proces van begin tot eind te zijn om een vormtoepassing te 
 
 U kunt de werkruimte van Vormen AEM gebruiken om de volgende taken uit te voeren:
 
-**** Een bedrijfsproces starten: De werkruimte van de Vormen AEM categoriseert uw processen zoals ontworpen en opstelling door uw organisatie. U kunt de veelgebruikte categorieën als favoriet gebruiken om snel tot de categorieën toegang te hebben. Wanneer u een proces start, vult u doorgaans een formulier in om een bedrijfsproces te starten dat de werkstroom van formulieren beheert. Zie Processen [starten voor meer informatie](/help/forms/using/starting-processes.md).
+**Een bedrijfsproces starten:** De werkruimte van de Vormen AEM categoriseert uw processen zoals ontworpen en opstelling door uw organisatie. U kunt de veelgebruikte categorieën als favoriet gebruiken om snel tot de categorieën toegang te hebben. Wanneer u een proces start, vult u doorgaans een formulier in om een bedrijfsproces te starten dat de werkstroom van formulieren beheert. Zie Processen [starten voor meer informatie](/help/forms/using/starting-processes.md).
 
-**** Taken weergeven en uitvoeren: Wanneer u uw lijst te doen bekijkt, ziet u taken van een bedrijfsproces die aan u, of aan om het even welke groepen worden toegewezen die u tot behoort, of zijn de gedeelde taken van andere gebruikers. U kunt de taken naar wens openen, bewerken en voltooien. Het uitvoeren van een taak omvat meestal het verstrekken van informatie, het goedkeuren van een formulier of het afwijzen van een formulier. Voor meer informatie, zie het [Werken met te doen lijsten](/help/forms/using/todo-lists.md).
+**Taken weergeven en uitvoeren:** Wanneer u uw lijst te doen bekijkt, ziet u taken van een bedrijfsproces die aan u, of aan om het even welke groepen worden toegewezen die u tot behoort, of zijn de gedeelde taken van andere gebruikers. U kunt de taken naar wens openen, bewerken en voltooien. Het uitvoeren van een taak omvat meestal het verstrekken van informatie, het goedkeuren van een formulier of het afwijzen van een formulier. Voor meer informatie, zie het [Werken met te doen lijsten](/help/forms/using/todo-lists.md).
 
 **Taken** bijhouden: Als u uw taken wilt bijhouden, gebruikt u het tabblad Bijhouden van de werkruimte van AEM-formulieren. U kunt zoeken naar actieve of voltooide processen waaraan u bent begonnen of deelgenomen. U kunt de taken, toewijzingen en formulieren weergeven die deel uitmaakten van het proces. U kunt ook nieuwe processen starten met formuliergegevens uit een proces dat u eerder hebt gestart. Zie [Trackingprocessen](/help/forms/using/tracking-processes.md)voor meer informatie.
 
@@ -127,7 +127,7 @@ De werkruimte van de Vormen van AEM steunt een grote verscheidenheid van aanpass
 
 In het [aanpassingsartikel](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-0) worden de typen van dergelijke aanpassingen uitgelegd.
 
-### De ontwikkelomgeving instellen {#set-up-the-developer-environment}
+### Set up the developer environment {#set-up-the-developer-environment}
 
 Tot de te leveren items voor de AEM Forms-werkruimte behoren een CRX-pakket dat is geïmplementeerd op CRX, een SDK-archief met de volledige broncode, JavaScript-bibliotheken van derden en het samenstellen van scripts voor de AEM Forms-werkruimte. Gebruik deze opties om de ontwikkelomgeving in te stellen voor het uitvoeren van de hierboven vermelde aanpassingen. Zie De werkruimtecode [](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)van AEM-formulieren maken voor meer informatie.
 
@@ -142,5 +142,3 @@ Voor een nieuw proces wordt een XDP-formulier standaard weergegeven in PDF-indel
 ## AEM Forms-werkruimte-app {#aem-forms-workspace-app}
 
 Als u aan uw bedrijfsprocessen op een mobiel apparaat wilt werken, kunt u de AEM Forms-werkruimte-app van AEM Forms gebruiken. Zie het overzicht [van de](https://helpx.adobe.com/livecycle/help/mobile-workspace/mobile-workspace-overview.html)AEM Forms-werkruimte voor meer informatie.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
