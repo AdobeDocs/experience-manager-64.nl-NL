@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -172,7 +172,7 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
      <li><p>Veld: wachtrij: { name, qid, isDefault, type}</p> </li> 
      <li><p>Veld: query: string</p> </li> 
      <li><p>Veld: parentView: filterlijstweergave</p> </li> 
-     <li><p>Veld: parentModel:taaklijstmodel</p> </li> 
+     <li><p>Veld: parentModel: taaklijstmodel</p> </li> 
      <li><p>Veld: nut</p> </li> 
     </ul> </td> 
   </tr> 
@@ -193,11 +193,11 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
   </tr> 
   <tr> 
    <td><p>Weergave</p></td> 
-   <td><p>teamWachtrijen.js</p></td> 
+   <td><p>teamqueues.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Sjabloonmodel</p></td> 
-   <td><p>teamrows.html</p></td> 
+   <td><p>teamqueues.html</p></td> 
   </tr> 
   <tr> 
    <td><p>Vereist componenten</p></td> 
@@ -248,7 +248,7 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
      <li><p>Veld: queue :{ name, qid, isDefault, type }</p> </li> 
      <li><p>Veld: query: string</p> </li> 
      <li><p>Veld: parentView: filterlijstweergave</p> </li> 
-     <li><p>Veld: parentModel :taaklijstmodel</p> </li> 
+     <li><p>Veld: parentModel : taaklijstmodel</p> </li> 
      <li><p>Veld: nut</p> </li> 
     </ul> </td> 
   </tr> 
@@ -327,11 +327,11 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
  <tbody> 
   <tr> 
    <td><p>Model</p></td> 
-   <td><p>categylist.js</p></td> 
+   <td><p>categorylist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Weergave</p></td> 
-   <td><p>categylist.js</p></td> 
+   <td><p>categorylist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Sjabloonmodel</p></td> 
@@ -410,7 +410,7 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
  <tbody> 
   <tr> 
    <td><p>Model</p></td> 
-   <td><p>categylist.js</p></td> 
+   <td><p>categorylist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Weergave</p></td> 
@@ -492,7 +492,7 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
  <tbody> 
   <tr> 
    <td><p>Model</p> </td> 
-   <td><p>categylist.js</p> </td> 
+   <td><p>categorylist.js</p> </td> 
   </tr> 
   <tr> 
    <td><p>Weergave</p> </td> 
@@ -555,11 +555,11 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
  <tbody> 
   <tr> 
    <td><p>Model</p></td> 
-   <td><p>procesnamelist.js</p></td> 
+   <td><p>processnamelist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Weergave</p></td> 
-   <td><p>procesnamelist.js</p></td> 
+   <td><p>processnamelist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Sjabloonmodel</p></td> 
@@ -626,11 +626,11 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
  <tbody> 
   <tr> 
    <td><p>Model</p></td> 
-   <td><p>procesnamelist.js</p></td> 
+   <td><p>processnamelist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Weergave</p></td> 
-   <td><p>procesinstancelist.js</p></td> 
+   <td><p>processinstancelist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Sjabloonmodel</p></td> 
@@ -673,7 +673,7 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
   </tr> 
   <tr> 
    <td><p>Sjabloonmodel</p></td> 
-   <td><p>processInstance.html</p></td> 
+   <td><p>processinstance.html</p></td> 
   </tr> 
   <tr> 
    <td><p>Vereist componenten</p></td> 
@@ -696,11 +696,11 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
  <tbody> 
   <tr> 
    <td><p>Model</p></td> 
-   <td><p>procesnamelist.js</p></td> 
+   <td><p>processnamelist.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Weergave</p></td> 
-   <td><p>procesinstancehistory.js</p></td> 
+   <td><p>processinstancehistory.js</p></td> 
   </tr> 
   <tr> 
    <td><p>Sjabloonmodel</p></td> 
@@ -1091,5 +1091,3 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
   </tr> 
  </tbody> 
 </table>
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
