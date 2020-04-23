@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -41,4 +41,3 @@ De mogelijkheid om te integreren met toepassingen van derden kan worden gebruikt
 
 De werkruimte van AEM-formulieren biedt ondersteuning voor de HTML-uitvoering van XDP-formulieren. Met deze ondersteuning kunnen gebruikers een XDP-formulier als HTML op mobiele apparaten en als PDF op een bureaublad weergeven wanneer het wordt gebruikt in een renderproces dat leidt naar verschillende uitvoeringen van XDP op basis van het apparaat of de gebruikersagent. Dit helpt gebruikers die in verschillende omgevingen op verschillende apparaten werken, een naadloze dekking van Process Management te bieden.
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
