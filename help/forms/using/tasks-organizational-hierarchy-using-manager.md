@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -118,4 +118,3 @@ Het volgende scherm illustreert de toegang tot van de taken van directe rapporte
 
 De taken van de toegang tot directe rapporten en handelen op de taken
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
