@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c3a312fb-f684-477d-916d-2d3c99aa7607
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -34,5 +34,3 @@ Pakketten geleverd voor de werkruimte van AEM-formulieren:
 
 * `adobe-lc-workspace-pkg-<version>.zip`: Het is CRX pakket, dat wil zeggen, het kan in CRX worden opgesteld gebruikend de Manager van het Pakket.
 * `adobe-lc-workspace-<version>-src.zip`: Het is een archief dat volledige code van de werkruimte en de manuscripten van Vormen AEM bevat om opstellen pakketten-verschepen, zuivert, en Dev pakketten.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
