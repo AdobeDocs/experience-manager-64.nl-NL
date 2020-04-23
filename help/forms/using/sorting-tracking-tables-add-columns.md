@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -175,7 +175,7 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
 
 1. Maak de `TaskTableHeaderClick` methode beschikbaar in `js/runtime/util/history.js`.
 
-   De methode zoekt het taakkenmerk van de klikgebeurtenis, sorteert de taaklijst van dat kenmerk en geeft de taaktabel weer met de gesorteerde taaklijst.
+   De methode zoekt het taakkenmerk van de gebeurtenis click, sorteert de taaklijst van dat kenmerk en geeft de taaktabel weer met de gesorteerde taaklijst.
 
    Sorteren gebeurt met behulp van de Backbone-sorteerfunctie in de taaklijstverzameling door een vergelijkingsfunctie op te geven.
 
@@ -210,5 +210,3 @@ U kunt als volgt de tabel met de takenlijst sorteren wanneer u op de kolomkop kl
            render();
        };
    ```
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
