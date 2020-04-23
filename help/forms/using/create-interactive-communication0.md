@@ -8,12 +8,12 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
 
-# Zelfstudie:Interactieve communicatie maken {#tutorial-create-interactive-communication}
+# Zelfstudie: Interactieve communicatie maken {#tutorial-create-interactive-communication}
 
 Een interactieve communicatie maken met alle bouwstenen
 
@@ -37,17 +37,17 @@ Dit leerprogramma begeleidt u door de stappen om interactieve mededelingen voor 
 
 Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die nodig zijn tijdens het maken van de interactieve communicatie voor het kanaal Afdrukken:
 
-**** Afdruksjabloon: [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
+**Afdruksjabloon:** [create_first_ic_print_template](/help/forms/using/create-templates-print-web.md)
 
-**** Formuliergegevensmodel: [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Formuliergegevensmodel:** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Documentfragmenten: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
+**Documentfragmenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
 
-**** Lay-outfragmenten: [table_lf](/help/forms/using/create-templates-print-web.md)
+**Lay-outfragmenten:** [table_lf](/help/forms/using/create-templates-print-web.md)
 
-**** Afbeeldingen: PayNow en ValueAddedServices
+**Afbeeldingen:** PayNow en ValueAddedServices
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**.
+1. Meld u aan bij de AEM-auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** en selecteer **Interactieve communicatie**. De **Create Interactive Communication** tovenaar wordt getoond.
 1. Geef **create_first_ic** op in het veld **Titel** en **Naam** . Selecteer **FDM_Create_First_IC** als het Model van de Gegevens van het Vorm en tik **daarna**.
 1. In de wizard **Kanalen** :
@@ -99,15 +99,15 @@ Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die n
 
 Hier volgt een lijst met bronnen die al in deze zelfstudie zijn gemaakt en die nodig zijn tijdens het maken van de interactieve communicatie voor het webkanaal:
 
-**** Websjabloon: [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
+**Websjabloon:** [Create_First_IC_Web_Template](/help/forms/using/create-templates-print-web.md)
 
-**** Formuliergegevensmodel: [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
+**Formuliergegevensmodel:** [FDM_Create_First_IC](/help/forms/using/create-form-data-model0.md)
 
-**** Documentfragmenten: [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
+**Documentfragmenten:** [bill_details_first_ic, customer_details_first_ic, bill_summary_first_ic, summary_charges_first_ic](/help/forms/using/create-document-fragments.md)
 
-**** Afbeeldingen: PayNowWeb en ValueAddedServicesWeb
+**Afbeeldingen:** PayNowWeb en ValueAddedServicesWeb
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**.
+1. Meld u aan bij de AEM-auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** en selecteer **Interactieve communicatie**. De **Create Interactive Communication** tovenaar wordt getoond.
 1. Geef **create_first_ic** op in het veld **Titel** en **Naam** . Selecteer **FDM_Create_First_IC** als het Model van de Gegevens van het Vorm en tik **daarna**.
 1. In de wizard **Kanalen** :
@@ -186,7 +186,7 @@ U kunt ook een interactieve communicatie maken door automatische synchronisatie 
 
 Voer de volgende stappen uit om de inhoud van het Kanaal van het Web af te leiden gebruikend het kanaal van de Druk:
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**.
+1. Meld u aan bij de AEM-auteur en navigeer naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** en selecteer **Interactieve communicatie**. De **Create Interactive Communication** tovenaar wordt getoond.
 1. Geef **create_first_ic** op in het veld **Titel** en **Naam** . Selecteer **FDM_Create_First_IC** als het Model van de Gegevens van het Vorm en tik **daarna**.
 1. In de wizard **Kanalen** :
