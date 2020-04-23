@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -72,7 +72,7 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een duidelijke organisati
 
 1. Navigeer naar de css-map.
 
-   * Navigeer in Xcode naar **Vastleggen > www > wsmobile > css**.
+   * In Xcode, navigate to **Capture > www > wsmobile > css**.
    * Navigeer in Eclipse naar **elementen > www > wsmobile > css**.
    * Navigeer in Visual Studio naar **MWSWindows > www > wsmobile > css**.
 
@@ -83,4 +83,3 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een duidelijke organisati
 
    De app AEM Forms geeft nu instructies weer in plaats van een beschrijving.
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
