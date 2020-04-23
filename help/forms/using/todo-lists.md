@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2cb251a6-d8d0-4563-b0f0-2dca38037155
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -196,7 +196,7 @@ U kunt bijlagen lokaal toevoegen, bijwerken, verwijderen of opslaan.
 
 1. Geef in het dialoogvenster Opslaan als concept een unieke naam voor de taak op en tik op **OK**.
 
-   ![saveasdesignDialog_name](assets/saveasdraftdialog_name.png)
+   ![saveasconceptDialog_name](assets/saveasdraftdialog_name.png)
 
    Het concept wordt met de opgegeven naam opgeslagen. De taak blijft in de lijst Aan/Uit en alle wijzigingen die u in het formulier hebt aangebracht, worden opgeslagen in de map Concepten. In de lijst Aan kunt u bovendien naar het concept zoeken met de naam van het concept om het werken aan het concept te hervatten.
 
@@ -391,4 +391,3 @@ U kunt een standaardpersoon instellen waarnaar al uw taken worden verzonden. U k
 
 1. Als u de voorkeuren hebt ingesteld, klikt u op **Opslaan**. Als uw instellingen aangeven dat u momenteel buiten het kantoor bent, worden de wijzigingen onmiddellijk van kracht. Anders worden ze van kracht op de opgegeven begindatum en -tijd. Als u zich aanmeldt terwijl u zich buiten het kantoor bevindt, wordt u pas overwogen op het kantoor wanneer u uw instellingen wijzigt.
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
