@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 6be87939-007e-42c7-8a41-e34ac2b8bed4
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -23,7 +23,7 @@ U kunt [componenten](/help/forms/using/description-reusable-components.md) van d
 1. Maak een pad `/apps/sampleApplication/wscomponents`.
 1. CSS, afbeeldingen, js/libs, js/runtime en js/registry.js kopiëren
 
-   * from `/libs/ws`
+   * Van `/libs/ws`
    * to `/apps/sampleApplication/wscomponents`.
 
 1. Maak een bestand demomain.js in de map /apps/sampleApplication/wscomponents/js. Kopieer code van /libs/ws/js/main.js naar demomain.js.
@@ -89,5 +89,3 @@ U kunt [componenten](/help/forms/using/description-reusable-components.md) van d
        margin: 0 auto;
    }
    ```
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
