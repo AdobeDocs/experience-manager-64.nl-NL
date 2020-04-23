@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -113,7 +113,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   </tr> 
   <tr> 
    <td><code>title</code></td> 
-   <td> Hiermee geeft u de titel van het document op. Deze optie is alleen beschikbaar voor clienttoepassingen.</td> 
+   <td>Hiermee geeft u de titel van het document op. Deze optie is alleen beschikbaar voor clienttoepassingen.</td> 
    <td>Er wordt een titel van een HTML-document in het formulier geretourneerd, in plaats van de titel van de metagegevens van het formulier, zoals in het geval van PDF-formulieren.</td> 
   </tr> 
   <tr> 
@@ -574,7 +574,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td> 
     <ul> 
      <li>De standaardwaarde kan niet worden opgehaald. </li> 
-     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar zijn niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
+     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -595,7 +595,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td> 
     <ul> 
      <li>De standaardwaarde kan niet worden opgehaald. </li> 
-     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar zijn niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
+     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -616,7 +616,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td> 
     <ul> 
      <li>De standaardwaarde kan niet worden opgehaald. </li> 
-     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar zijn niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
+     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -654,7 +654,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td> 
     <ul> 
      <li>De standaardwaarde kan niet worden opgehaald. </li> 
-     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar zijn niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
+     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -675,7 +675,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
    <td> 
     <ul> 
      <li>De standaardwaarde kan niet worden opgehaald. </li> 
-     <li>De wijzigingen worden weergegeven in het model en zijn beschikbaar voor scripts, maar zijn niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
+     <li>De wijzigingen worden weerspiegeld in Model en zijn beschikbaar voor scripts, maar worden niet gesynchroniseerd met HTML-elementen. De wijzigingen worden derhalve niet in de BU weergegeven.</li> 
     </ul> </td> 
   </tr> 
  </tbody> 
@@ -729,7 +729,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr> 
    <td>name</td> 
    <td>Geeft een id die kan worden gebruikt om in scriptexpressies dit object of deze gebeurtenis op te geven.</td> 
-   <td>Het instellen van de waarde tijdens de runtime wordt niet ondersteund</td> 
+   <td>Het instellen van de waarde tijdens runtime wordt niet ondersteund</td> 
   </tr> 
   <tr> 
    <td>value</td> 
@@ -1342,7 +1342,7 @@ De volgende client-side XFA-gebeurtenissen worden ondersteund:
 * Initialiseren
 * Valideren
 * Berekenen
-* Klikken
+* Klik op
 * Enter
 * Afsluiten
 * Wijzigen
@@ -1351,5 +1351,3 @@ De volgende client-side XFA-gebeurtenissen worden ondersteund:
 >[!NOTE]
 >
 >HTML5-formulieren worden weergegeven op de client (browser). Het wordt aanbevolen om scripts op de client te **valideren** en te **berekenen** in plaats van scripts op de server.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
