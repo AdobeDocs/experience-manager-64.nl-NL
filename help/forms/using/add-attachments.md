@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 184b5c7f-a704-4b8c-b1ec-f4d6616a1afc
 translation-type: tm+mt
-source-git-commit: 07192aee6699fa113db7b7983c548bcd0d291ebb
+source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
 
 ---
 
@@ -68,7 +68,7 @@ Met de optie **Notities** kunt u willekeurig gevormde scripts en tekstbijlagen a
 1. Leg in de gebruikersinterface Notities die wordt gestart een vrij krabbeltje vast.
 
    ![Krabbelinterface](assets/scribble-ui.png)
-   **** Afbeelding: *Krabbelen*
+   **Afbeelding:** *Krabbelen*
 
    U kunt de volgende opties in de interface van het Krabbelen gebruiken:
 
@@ -85,5 +85,3 @@ Bijlagen voor mobiele formulieren die zijn gesynchroniseerd met AEM Forms OSGi-s
 Bijlagen op formulierniveau worden niet ondersteund voor adaptieve formulieren die in de app worden geladen vanaf een OSGi-server voor AEM Forms. Als u afbeeldingen of tekstnotities wilt bijvoegen, schakelt u bijlagen op veldniveau in het formulier in wanneer u het maakt. Sleep de component voor bestandsbijlagen vanuit de browser met componenten in het veld.
 
 In het geval van adaptieve formulieren kunt u de bijgevoegde bestanden bekijken in het document of record (DoR). Zie Document met record [genereren voor niet-XFA-adaptieve formulieren](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
