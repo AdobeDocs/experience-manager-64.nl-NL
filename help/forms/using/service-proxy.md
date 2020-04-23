@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -133,4 +133,3 @@ De voorgelegde de dienstvolmacht selecteert een topologie als voorlegger in de v
 
 * Voordat gegevens (POST-aanvraag) naar een server worden verzonden, controleren HTML5-formulieren de connectiviteit en beschikbaarheid van de server. HTML-formulieren verzenden een lege hoofdaanvraag naar de server om de connectiviteit en beschikbaarheid te controleren. Als de server beschikbaar is, verzendt het HTML5-formulier gegevens (POST-aanvraag) naar de server. Als de server niet beschikbaar is, wordt een foutbericht weergegeven. *Kan geen verbinding maken met de server.* . De detectie vooraf voorkomt dat gebruikers het formulier kunnen bijvullen. De volmachtsservlet behandelt hoofdverzoek en werpen geen uitzondering.
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
