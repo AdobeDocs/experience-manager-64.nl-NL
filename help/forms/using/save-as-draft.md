@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -42,6 +42,5 @@ Voer de volgende stappen uit om een concept te verwijderen:
 1. Navigeer in de app AEM Forms naar **Forms.**
 1. Selecteer **Concepten** in de keuzelijst naast Zoeken.
 1. Een formulier met het bewerkingspictogram ![bewerkt-concept-app](assets/edit-draft-app.png) geeft een concept aan. Tik op de horizontale ellips naast het concept.
-1. Tik op Concept **** verwijderen in de opties die worden weergegeven wanneer u op de horizontale ellips tikt.
+1. Tik in de opties die worden weergegeven wanneer u op het horizontale ovaal tikt, op Concept **** verwijderen.
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
