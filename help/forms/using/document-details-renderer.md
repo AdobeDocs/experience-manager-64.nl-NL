@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -85,7 +85,7 @@ Toepassingen van derden worden gerenderd met de ExtAppTaskForm-weergave.
 
 AEM-werkruimte Formulieren luistert naar `window.global.postMessage([Message],[Payload])`
 
-[]`SubmitMessage``CancelMessage`Bericht`ErrorMessage` kan een tekenreeks zijn die is opgegeven als||| `actionEnabledMessage`in het `runtimeMap`gebied. Toepassingen van derden moeten deze interface gebruiken om de werkruimte van AEM Forms naar behoefte op de hoogte te stellen. Het gebruik van deze interface is verplicht, omdat de werkruimte van AEM Forms moet weten dat wanneer de taak wordt verzonden zodat deze het taakvenster kan opschonen.
+[Bericht] kan een tekenreeks zijn die is opgegeven als `SubmitMessage`| `CancelMessage`| `ErrorMessage`| `actionEnabledMessage`in het `runtimeMap`gebied. Toepassingen van derden moeten deze interface gebruiken om de werkruimte van AEM Forms naar behoefte op de hoogte te stellen. Het gebruik van deze interface is verplicht, omdat de werkruimte van AEM Forms moet weten dat wanneer de taak wordt verzonden zodat deze het taakvenster kan opschonen.
 
 **AEM vormt werkruimte aan derdetoepassingsmededeling**
 
@@ -95,5 +95,3 @@ Een Flex-toepassing kan bijvoorbeeld definiëren `ExternalInterface.addCallback(
 
 U kunt meer lezen over de integratie van toepassingen van derden met betrekking tot Correspondence Management bij het [integreren van Correspondentiebeheer in de werkruimte](/help/forms/using/integrating-correspondence-management-html-workspace.md)van AEM Forms.
 
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
