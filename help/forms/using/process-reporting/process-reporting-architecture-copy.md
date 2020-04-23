@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a1af9920-5d2a-462f-bdee-ccec4c047c5b
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -74,4 +74,3 @@ U kunt uw eigen douanerapporten tot stand brengen en deze rapporten tonen in het
 
 Voor de stappen om een douanerapport tot stand te brengen, zie om een douanerapport in het artikel [van de Douane tot stand te brengen Rapporten in het Rapporteren](/help/forms/using/process-reporting/process-reporting-custom-reports.md)van het Proces.
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
