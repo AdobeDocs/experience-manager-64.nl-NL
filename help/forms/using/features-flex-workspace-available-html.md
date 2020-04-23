@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -27,4 +27,3 @@ De werkruimte van AEM Forms is de gloednieuwe werkruimte. Hieronder vindt u een 
 * Het instellen van een goedkeuringscontainer of aangepaste container voor een gebruikerstaak wordt niet ondersteund in de werkruimte van AEM-formulieren.
 * Een optie voor het zoeken van sjablonen is beschikbaar op het tabblad Bijhouden, maar niet op het tabblad TeDoe.
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
