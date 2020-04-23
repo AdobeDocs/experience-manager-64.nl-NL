@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c9d3f369-3744-41d5-b340-390ab7e03f36
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -94,7 +94,7 @@ U kunt ook opmerkingen over de bijlage toevoegen. U kunt een van de volgende toe
 1. Klik op het tabblad **Bijlagen** en selecteer **Bijlage**.
 1. Klik op **Bladeren** om het bestand te selecteren dat u wilt bijvoegen.
 1. Selecteer het **machtigingsniveau** voor de bijlage voor andere gebruikers die deelnemen aan het proces. Als u **Lezen** selecteert, kunnen andere gebruikers het bestand lokaal opslaan. Als u een van de bewerkingsmachtigingen selecteert, kunnen andere gebruikers ook een nieuw bestand uploaden om de bijlage te vervangen.
-1. Click **OK**. Het bestand wordt aan het formulier gekoppeld. U kunt een bestand verwijderen door op de knop **Verwijderen** naast de bijlage te klikken op de ![afbeelding van een prullenbak](assets/icondelete.png) .
+1. Click **OK**. Het bestand wordt aan het formulier gekoppeld. U kunt een bestand verwijderen door naast de bijlage op de knop **Verwijderen** ![Afbeelding van een prullenbak te klikken](assets/icondelete.png) .
 
 ## Concepten van formulieren opslaan {#saving-draft-copies-of-forms}
 
@@ -128,4 +128,3 @@ U kunt elk proces toevoegen aan de categorie Favorieten. Door favorieten in te s
 
 Als u een proces als favoriet wilt markeren, selecteert u de taak in de desbetreffende categorie en klikt u op de holle ster. De ster wordt gouden. Als u de markering van een proces als favoriet wilt opheffen, klikt u nogmaals op de gouden ster.
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
