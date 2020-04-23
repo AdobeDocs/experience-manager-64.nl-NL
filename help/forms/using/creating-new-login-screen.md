@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -37,7 +37,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
 
 1. Kopieer de `i18n` map:
 
-   * from `/libs/livecycle/core/components/login`
+   * Van `/libs/livecycle/core/components/login`
    * to `/apps/livecycle/core/components/login`
 
 1. Verwijder alle mappen in de map, `i18n` behalve één map, bijvoorbeeld `en`.
@@ -51,7 +51,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
 
 1. Kopiëren `login.jsp`:
 
-   * from `/libs/livecycle/core/components/login`
+   * Van `/libs/livecycle/core/components/login`
    * to `/apps/livecycle/core/components/login`
 
 1. Wijzig het volgende codefragment voor `/apps/livecycle/core/components/login/login.jsp`:
@@ -180,7 +180,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
 
 1. Map kopiëren `i18n` :
 
-   * from `/libs/livecycle/core/components/login`
+   * Van `/libs/livecycle/core/components/login`
    * to `/apps/livecycle/core/components/login`
 
 1. Wijzig nu de waarde van de eigenschap `sling:message` van het knooppunt (in de gewenste map met landinstellingscode) waarvoor u de tekst wilt wijzigen. Vertaling wordt uitgevoerd via de sleutel die wordt vermeld in de waarde van de `sling:key` eigenschap van het knooppunt.
@@ -189,7 +189,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
    1. Maak een knooppunt van het type `sling:MessageEntry`of kopieer een bestaand knooppunt en wijzig de naam ervan onder alle mappen voor landinstellingen.
    1. Kopiëren `login.jsp` :
 
-      * from `/libs/livecycle/core/components/login`
+      * Van `/libs/livecycle/core/components/login`
       * to `/apps/livecycle/core/components/login`
    1. Wijzigen `/apps/livecycle/core/components/login/login.jsp` om de zojuist toegevoegde tekst op te nemen.
    ![vastleggen](assets/capture.png)
@@ -215,7 +215,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
 
 1. Kopieer `login` knooppunt:
 
-   * from `/libs/livecycle/core/content`
+   * Van `/libs/livecycle/core/content`
    * to `/apps/livecycle/core/content`
 
 1. Bestanden `login.js` en `jquery-1.8.0.min.js`, van het knooppunt verwijderen `/apps/livecycle/core/content/login.`
@@ -225,7 +225,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
    1. Nieuwe stijlen toevoegen aan `/apps/livecycle/core/content/login/login.css`
    1. Kopiëren `login.jsp`
 
-      * from `/libs/livecycle/core/components/login`
+      * Van `/libs/livecycle/core/components/login`
       * to `/apps/livecycle/core/components/login`
    1. Wijzig `/apps/livecycle/core/components/login/login.jsp` deze optie om de zojuist toegevoegde stijlen op te nemen.
 
@@ -261,7 +261,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
 1. Voeg nieuwe afbeeldingen toe in `/apps/livecycle/core/content/login`. Afbeelding toevoegen:
 
    1. WebDAV-client installeren.
-   1. Navigeer naar de `/apps/livecycle/core/content/login` map met de webDAV-client.  Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   1. Navigeer naar de `/apps/livecycle/core/content/login` map met de webDAV-client. Zie voor meer informatie: [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
    1. Voeg nieuwe afbeeldingen toe.
 
 1. Voeg nieuwe stijlen toe die `/apps/livecycle/core/content/login/login.css,` overeenkomen met nieuwe afbeeldingen die in zijn toegevoegd `/apps/livecycle/core/content/login`.
@@ -288,5 +288,3 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
    
    <div class="newLginContainerBkg">
    ```
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
