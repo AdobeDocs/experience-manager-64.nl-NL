@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: b8cd2656-8bc2-4bd7-a3d6-dc76b0a2d429
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -43,6 +43,4 @@ AEM biedt ook een uniforme weergave voor het weergeven en beheren van alle formu
 
 ### Formulieren aanpassen {#forms-customization}
 
-In HTML5-formulieren worden formuliersjablonen weergegeven met behulp van standaard HTML5-constructies. Hierdoor is het eenvoudig om formulieren in HTML5-indeling aan te passen en uit te breiden met behulp van webtechnologieën, voornamelijk CSS en JavaScript. U kunt de weergave van bestaande widgets eenvoudig aanpassen, uw eigen aangepaste widgets maken of aangepaste stijlen in formulieren gebruiken. Zie [Plug in aangepaste widgets met HTML5-formulieren](/help/forms/using/custom-widgets.md)voor meer informatie over het maken van aangepaste widgets en het aanpassen van bestaande widgets.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
+In HTML5-formulieren worden formuliersjablonen weergegeven met behulp van standaard HTML5-constructies. Hierdoor is het eenvoudig om formulieren in HTML5-indeling aan te passen en uit te breiden met behulp van webtechnologieën, voornamelijk CSS en JavaScript. U kunt de weergave van bestaande widgets eenvoudig aanpassen, uw eigen aangepaste widgets maken of aangepaste stijlen in formulieren gebruiken. Zie [Plug in custom widgets with HTML5 forms](/help/forms/using/custom-widgets.md)voor meer informatie over het maken van aangepaste widgets en het aanpassen van bestaande widgets.
