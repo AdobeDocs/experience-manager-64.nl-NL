@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 5756cb52-dd47-4277-981c-fd0af9a20638
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -44,5 +44,3 @@ Als u het gebruik van de camera **** toestaan uitschakelt, werkt de camerafuncti
 * **Wachtwoord vereisen op apparaat** in de sectie Wachtwoordbeleid
 
 Als u **codering van toepassingsgegevens** wilt inschakelen, wordt u aangeraden het **wachtwoord** op uw apparaat in te schakelen. Als wachtwoord niet is ingesteld op het apparaat, worden de toepassingsgegevens die op het apparaat zijn opgeslagen, niet gecodeerd.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
