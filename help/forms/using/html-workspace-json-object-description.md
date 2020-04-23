@@ -1,22 +1,22 @@
 ---
-title: Beschrijving van JSON-object in AEM Forms-werkruimte
-seo-title: Beschrijving van JSON-object in AEM Forms-werkruimte
-description: Conceptuele informatie over de JSON JavaScript-objecten die in de werkruimte van LiveCycle AEM Forms worden gebruikt voor aanpassing, uitbreiding, wijziging en hergebruik.
-seo-description: Conceptuele informatie over de JSON JavaScript-objecten die in de werkruimte van LiveCycle AEM Forms worden gebruikt voor aanpassing, uitbreiding, wijziging en hergebruik.
+title: AEM Forms workspace JSON object description
+seo-title: AEM Forms workspace JSON object description
+description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
+seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
-# Beschrijving van JSON-object in AEM Forms-werkruimte {#aem-forms-workspace-json-object-description}
+# AEM Forms workspace JSON object description {#aem-forms-workspace-json-object-description}
 
-JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden hieronder beschreven.
+JSON objects used in AEM Forms workspace are described below.
 
 1. Categorie
 
@@ -32,12 +32,12 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>name</td> 
    <td>F</td> 
-   <td>Categorienaam</td> 
+   <td>Category name</td> 
   </tr>
   <tr>
    <td>id</td> 
    <td>F</td> 
-   <td>Categorie-id<br type="_moz" /> </td> 
+   <td>Category ID<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>description<br type="_moz" /> </td> 
@@ -76,7 +76,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
    | beschrijving | F | Het bevat een beschrijving voor een startpunt. |
    | name | F | Deze bevat de naam van het startpunt. |
    | serializedImageTicket | F | Het bevat een afbeeldingsticket dat overeenkomt met het startpunt. Dit beeldkaartje wordt gebruikt in imageUrl gebied van startpoint, om beeld voor startpunt van de server te krijgen. |
-   | serviceName | F | Het bevat naam van de dienst voor startpunt. |
+   | serviceName | F | Het bevat naam van de dienst voor startpoint. |
    | startpointId | F | Het bevat id van startpunt. |
    | isFavorite | T | Geeft aan of het startpunt favoriet is of niet. True if startpoint is preferred else false. |
    | isDefaultImage | T | Geeft aan of er een afbeelding is opgegeven voor proces of niet. True if there is no image associated with process else false. |
@@ -222,7 +222,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>serializedImageTicket<br /> </td> 
    <td>F</td> 
-   <td>Het bevat een afbeeldingsticket dat overeenkomt met een taak. <br /> Dit beeldkaartje wordt gebruikt in imageUrl gebied van taak, om beeld voor taak van de server te krijgen. <br /> </td> 
+   <td>Het bevat een afbeeldingsticket dat overeenkomt met een taak. Dit beeldkaartje wordt gebruikt in imageUrl gebied van taak, om beeld voor taak van de server te krijgen.<br /> <br /> </td> 
   </tr>
   <tr>
    <td>serviceName<br /> </td> 
@@ -357,7 +357,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>dataUrl<br /> </td> 
    <td>T</td> 
-   <td>Het is de URL voor de gegevens van de vorm van een taak.<br /> </td> 
+   <td>Het is de URL voor de gegevens in de vorm van een taak.<br /> </td> 
   </tr>
   <tr>
    <td>externalAppConfig<br /> </td> 
@@ -460,10 +460,10 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Het bevat een array met objecten voor processpecifieke aanwijzen buiten het kantoor. In elk proces-specifiek wijs voorwerp toe, bevat processName de naam van het proces, isNotDesignated is waar als geen gebruiker voor het overeenkomstige proces wordt toegewezen, en userDesignated is ongeldig als geen gebruiker anders details van de gebruiker toewees voor het overeenkomstige proces.<br type="_moz" /> </td> 
+   <td>Het bevat een array met objecten voor processpecifieke aanwijzen buiten het kantoor. In each process-specific designate object, processName contains the name of the process, isNotDesignated is true if no user is assigned for corresponding process, and userDesignated is null if no user assigned else details of the user assigned for corresponding process.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>processen<br type="_moz" /> </td> 
+   <td>processes<br type="_moz" /> </td> 
    <td>T</td> 
    <td>Het bevat een lijst van alle processen die aan de gebruiker beschikbaar zijn.<br type="_moz" /> </td> 
   </tr>
@@ -605,7 +605,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   <tr>
    <td>assignType<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>0 = Eerste Taak<br /> 1 = Voorwaarts (De Taak is door:sturen aan huidige eigenaar van taak.)<br /> 2 = teruggekeerd (Taak is teruggekeerd aan huidige eigenaar van taak door vorige eigenaar van taak.)<br /> 3 = Gevraagd (Taak is gevorderd door huidige eigenaar van taak.)<br /> 4 = Escalatie (Taak is toegewezen aan huidige eigenaar van taak na escalatie.)<br /> 5 = Toegewezen beheerder (Taak is toegewezen door beheerder aan huidige eigenaar van taak.)<br /> 6 = geraadpleegd (Taak is geraadpleegd aan de huidige eigenaar van de taak.)<br type="_moz" /> </td> 
+   <td>0 = Oorspronkelijke Taak<br /> 1 = Voorwaarts (De Taak is door:sturen aan huidige eigenaar van taak.)<br /> 2 = teruggekeerd (Taak is teruggekeerd aan huidige eigenaar van taak door vorige eigenaar van taak.)<br /> 3 = Gevraagd (Taak is gevorderd door huidige eigenaar van taak.)<br /> 4 = Escalatie (Taak is toegewezen aan huidige eigenaar van taak na escalatie.)<br /> 5 = Toegewezen beheerder (Taak is toegewezen door beheerder aan huidige eigenaar van taak.)<br /> 6 = geraadpleegd (Taak is geraadpleegd aan de huidige eigenaar van de taak.)<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>assignUpdateTime<br type="_moz" /> </td> 
@@ -674,7 +674,7 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
  </tbody>
 </table>
 
-1. Taakbijlage
+1. Task Attachment
 
    U kunt bijlagen toevoegen aan een taak. Bijlage kan van het type bijlage en nota zijn. Hieronder vindt u de eigenschappen van het bijlageobject.
 
@@ -851,5 +851,3 @@ JSON-objecten die worden gebruikt in de werkruimte van AEM-formulieren, worden h
   </tr>
  </tbody>
 </table>
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
