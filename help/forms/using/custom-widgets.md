@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -19,7 +19,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 U kunt aangepaste widgets aansluiten op mobiele formulieren. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De XFA-engine gebruikt verschillende widgets. Zie [Weergaveframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
 
-![](assets/custom-widgets.jpg) Een voorbeeld van standaard- en aangepaste widget **** Figure: Een *voorbeeld van de standaard- en aangepaste widget*
+![Een voorbeeld van standaard- en aangepaste widget](assets/custom-widgets.jpg)**Figure:** Een *voorbeeld van de standaard- en aangepaste widget*
 
 ## Aangepaste widgets integreren met HTML5-formulieren {#integrating-custom-widgets-with-html-forms}
 
@@ -100,5 +100,3 @@ waarbij &quot;id&quot; een jQuery CSS-kiezer is die een bepaald veld, een set ve
 | Specifiek veld met naam van veld | Id:&quot;div.fieldName&quot; | Alle velden met de naam &#39;veldnaam&#39; worden weergegeven met de widget. |
 | Alle velden van het type ‘type’ (waarbij het type NumericField, DateField enzovoort is).: | Id: &quot;div.type&quot; | Voor Tijdveld en DateTimeField is het type tekstveld omdat deze velden niet worden ondersteund. |
 | Alle velden | Id: &quot;div.field&quot; |  |
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
