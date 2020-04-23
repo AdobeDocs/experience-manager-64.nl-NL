@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: a9ab5a78-2add-46e1-a8f2-444d0f25f43a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -51,4 +51,3 @@ De volgende twee afbeeldingen laten het verschil zien tussen de standaard en aan
 
    1. Sla het bestand op.
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
