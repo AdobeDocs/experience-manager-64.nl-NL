@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2dec23f7-6cca-4cc9-a78a-acd23ae7da5f
 translation-type: tm+mt
-source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -161,5 +161,3 @@ U moet het Xcode-project archiveren om het installatieprogramma (een .ipa-bestan
 1. Open het `AEM Forms-info.plist` bestand in een editor.
 1. Vervang alle spaties in de URL van het .ipa-bestand door %20.
 1. Sla het `AEM Forms-info.plist` bestand op en sluit het.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
