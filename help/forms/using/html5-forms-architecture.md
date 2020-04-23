@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -32,7 +32,7 @@ De functionaliteit voor HTML5-formulieren wordt geïmplementeerd als een pakket 
 
 Voor details over REST eindpunt en gesteunde verzoekparameters, zie het [Teruggeven van het Malplaatje](/help/forms/using/rendering-form-template.md)van de Vorm.
 
-Wanneer een gebruiker een aanvraag indient van een clientapparaat zoals een iOS- of Android-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Van dit Knoop van Profiel, leest het **sling:resourceSuperType** en **sling:resourceType** om alle beschikbare manuscripten te bepalen die dit verzoek van de Render van Vorm kunnen behandelen. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Zodra het verzoek een Renderer JSP van het Profiel bereikt, roept JSP de dienst van Forms OSGi.
+Wanneer een gebruiker een aanvraag indient van een clientapparaat zoals een iOS- of Android-browser, lost Sling eerst het profielknooppunt op op basis van de aanvraag-URL. Van dit Knoop van Profiel, leest het **sling:resourceSuperType** en **sling:resourceType** om alle beschikbare manuscripten te bepalen die dit verzoek van de Render van Vorm kunnen behandelen. Het gebruikt dan het Verdelen verzoekselecteurs samen met verzoekmethode om het manuscript te identificeren het meest geschikt voor de behandeling van dit verzoek. Once the request reaches a Profile Renderer JSP, the JSP calls the Forms OSGi service.
 
 Zie [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/developing/sling_cheatsheet.html) of Apache Sling [URL decomposition](https://sling.apache.org/site/url-decomposition.html)voor meer informatie over sling script resolution.
 
@@ -40,15 +40,16 @@ Zie [AEM Sling Cheat Sheet](https://docs.adobe.com/content/docs/en/cq/current/de
 
 In HTML5-formulieren worden alle tussenliggende objecten opgeslagen die vereist zijn om een formulier op de eerste aanvraag te verwerken (uitvoering of verzending). De objecten die afhankelijk zijn van de gegevens worden niet in het cachegeheugen opgeslagen, omdat dergelijke objecten waarschijnlijk worden gewijzigd.
 
-Mobiel formulier behoudt twee verschillende niveaus van cache, namelijk de PreRender-cache en de Render-cache. Het preRender-cache bevat alle fragmenten en afbeeldingen van een opgeloste sjabloon en het Render-cache bevat gerenderde inhoud, zoals HTML.
+Mobile Form maintains two different levels of cache, PreRender cache and Render Cache. Het preRender-cache bevat alle fragmenten en afbeeldingen van een opgeloste sjabloon en het Render-cache bevat gerenderde inhoud, zoals HTML.
 
-![](assets/cacheworkflow.png) Workflow **** voor HTML5-formulieren Afbeelding: Workflow voor *HTML5-formulieren*
+![HTML5 forms workflow](assets/cacheworkflow.png)
+**Figure:** *HTML5 forms workflow*
 
-In HTML5-formulieren worden geen sjablonen met ontbrekende verwijzingen naar fragmenten en afbeeldingen in de cache opgeslagen. Als HTML5-formulieren meer tijd in beslag nemen dan normaal, controleert u in het serverlogbestand of er ontbrekende verwijzingen en waarschuwingen zijn. Zorg er ook voor dat de maximumgrootte van het object niet wordt bereikt.
+In HTML5-formulieren worden geen sjablonen met ontbrekende verwijzingen naar fragmenten en afbeeldingen in de cache opgeslagen. If HTML5 forms take more than normal amount of time, then check the server logs for missing references and warnings. Also ensure that the maximum size of the object is not reached.
 
 De dienst van Vormen OSGi verwerkt een verzoek in twee stappen:
 
-* **Indeling en initiële formulierstatus genereren**: Forms OSGi geeft dienst terug roept de component van het Geheime voorgeheugen van Vormen om te bepalen als de vorm reeds in het voorgeheugen ondergebracht is en niet ongeldig is gemaakt. Als het formulier in de cache is opgeslagen en geldig is, wordt de gegenereerde HTML-code vanuit de cache weergegeven. Als het formulier ongeldig wordt gemaakt, genereert de Forms OSGi-renderservice de Initial Form Layout and Form State in XML-indeling. Deze XML wordt door de Forms OSGi-service getransformeerd in de HTML-indeling en de initiële JSON-formulierstatus en vervolgens in de cache geplaatst voor volgende aanvragen.
+* **Layout and Initial Form State generation**: Forms OSGi render service calls the Forms Cache component to determine if the form has already been cached and has not been invalidated. Als het formulier in de cache is opgeslagen en geldig is, wordt de gegenereerde HTML-code vanuit de cache weergegeven. Als het formulier ongeldig wordt gemaakt, genereert de Forms OSGi-renderservice de Initial Form Layout and Form State in XML-indeling. Deze XML wordt door de Forms OSGi-service getransformeerd in de HTML-indeling en de initiële JSON-formulierstatus en vervolgens in de cache geplaatst voor volgende aanvragen.
 * **Voorgevulde formulieren**: Als een gebruiker tijdens het renderen formulieren aanvraagt met vooraf ingevulde gegevens, roept de service Forms OSGi de servicecontainer Forms aan en wordt een nieuwe formulierstatus gegenereerd met samengevoegde gegevens. Nochtans, aangezien de lay-out reeds in de bovengenoemde stap wordt geproduceerd, is deze vraag sneller dan de eerste vraag. Met deze aanroep worden alleen de gegevenssamenvoeging uitgevoerd en worden de scripts op de gegevens uitgevoerd.
 
 Als er een update in het formulier is of een van de elementen die in het formulier worden gebruikt, detecteert de component in de formuliercache dit en wordt de cache voor dat formulier ongeldig gemaakt. Zodra de service Forms OSGi de verwerking heeft voltooid, voegt de Profile Renderer jsp JavaScript-bibliotheekverwijzingen en -stijlen toe aan dit formulier en wordt de reactie op de client geretourneerd. Een typische webserver zoals [Apache](https://httpd.apache.org/) kan hier worden gebruikt met HTML-compressie ingeschakeld. Een webserver zou de responsgrootte, het netwerkverkeer en de tijd die nodig is om de gegevens tussen de server en de clientcomputer te streamen aanzienlijk verminderen.
@@ -57,11 +58,11 @@ Wanneer een gebruiker het formulier verzendt, verzendt de browser de status van 
 
 ## Onderdelen {#components}
 
-U hebt invoegpakket voor AEM-formulieren nodig om HTML5-formulieren in te schakelen. Zie AEM Forms [](/help/forms/using/installing-configuring-aem-forms-osgi.md)installeren en configureren voor informatie over het installeren van het invoegpakket voor AEM Forms.
+You require AEM Forms add-on package to enable HTML5 forms. Zie AEM Forms [](/help/forms/using/installing-configuring-aem-forms-osgi.md)installeren en configureren voor informatie over het installeren van het invoegpakket voor AEM Forms.
 
-### OSGi-componenten (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
+### OSGi Components (adobe-lc-forms-core.jar) {#osgi-components-adobe-lc-forms-core-jar}
 
-**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** is de weergavenaam van de OSGi-bundel voor HTML5-formulieren, bekeken vanuit de Bundle View of Felix admin console (https://[host]:[poort]/systeem/console/bundles).
+**Adobe XFA Forms Renderer (com.adobe.livecycle.adobe-lc-forms-core)** is the display name of the HTML5 forms OSGi bundle when viewed from Bundle View of Felix admin console (https://[host]:[port]/system/console/bundles).
 
 Deze component bevat componenten OSGi voor teruggeven, geheim voorgeheugenbeheer, en configuratiemontages.
 
@@ -92,7 +93,7 @@ HTML5-formulieren gebruiken caching om de doorvoer en de reactietijd te optimali
    <td>Alleen tussenliggende artefacten opslaan die zijn gegenereerd voordat het formulier wordt gegenereerd, zoals een sjabloon met inline fragmenten en afbeeldingen</td> 
   </tr> 
   <tr> 
-   <td> Agressief</td> 
+   <td>Agressief</td> 
    <td>Gerenderde HTML-inhoud<br /> in cache plaatsen plaatst alle artefacten in cache op conservatief niveau.<br /> <strong>Opmerking</strong>: Deze strategie levert de beste prestaties, maar verbruikt meer geheugen voor het opslaan van de artefacten in de cache.</td> 
   </tr> 
  </tbody> 
@@ -182,5 +183,5 @@ Zie [CQ Clientlib Documentation](https://docs.adobe.com/docs/en/cq/current/devel
 Zoals hierboven beschreven, roept de profielrenderer JSP de Dienst van Vormen via een het slingeren omvat. Dit JSP plaatst ook diverse zuivert opties die op adminconfiguratie of verzoekparameters worden gebaseerd.
 
 Met HTML5-formulieren kunnen ontwikkelaars Profiel en Profielrenderer maken om de weergave van de formulieren aan te passen. Met HTML-formulieren kunnen ontwikkelaars bijvoorbeeld formulieren integreren in een deelvenster of sectie &lt;div> van een bestaande HTML-portal.\
-Zie Aangepast profiel [maken voor meer informatie over het maken van aangepaste profielen](/help/forms/using/custom-profile.md).\
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
+Zie Aangepast profiel [maken voor meer informatie over het maken van aangepaste profielen](/help/forms/using/custom-profile.md).
+
