@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e4636b25-20a4-4326-82fb-f22f735e43c0
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -36,8 +36,7 @@ Het volgende cijfer is geannoteerd met vraag-outs aan de essentiële componenten
 
 U kunt het standaardstartscherm van de app wijzigen via de **[algemene instellingen](/help/forms/using/update-general-settings.md)**van de app of via het tabblad **Voorkeuren**in HTML-werkruimte.
 
-De wijziging in de instelling voor het startscherm op de app is van invloed op het Basisscherm van de huidige aangemelde gebruiker of de gebruiker op het huidige mobiele apparaat.
+De wijziging die is aangebracht in de instelling voor het startscherm van de toepassing, wordt toegepast op het startscherm van de huidige aangemelde gebruiker of op het huidige mobiele apparaat.
 
 De wijziging die in de HTML-werkruimte is aangebracht, heeft echter gevolgen voor alle gebruikers van de AEM Forms-app die zijn aangemeld bij de AEM Forms-server.
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
