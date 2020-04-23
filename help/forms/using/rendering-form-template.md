@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -72,14 +72,12 @@ De volgende aanvraagparameters worden ondersteund bij het weergeven van formulie
 
 HTML5-formulieren ondersteunen drie methoden voor het doorgeven van de renderparameters. U kunt parameters doorgeven via URL&#39;s, sleutel-waardeparen en profielknooppunten. In de renderparameter heeft sleutelwaardepaar de hoogste prioriteit gevolgd door het profielknooppunt. De URL-verzoekparameter heeft de minste prioriteit.
 
-* **Parameters** voor URL-aanvragen: U kunt de renderparameters opgeven in de URL. In de URL-aanvraagparameters zijn de parameters zichtbaar voor de eindgebruiker. De volgende verzendings-URL bevat bijvoorbeeld een sjabloonparameter in de URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
+* **Parameters** voor URL-verzoek: U kunt de renderparameters opgeven in de URL. In de URL-aanvraagparameters zijn de parameters zichtbaar voor de eindgebruiker. De volgende verzendings-URL bevat bijvoorbeeld een sjabloonparameter in de URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
 * **SetAttribute request parameters**: U kunt de renderparameters opgeven als sleutelwaardepaar. In de SetAttribute- verzoekparameters, zijn de parameters niet zichtbaar aan het eind - gebruiker. U kunt een verzoek van een andere JSP naar de renderer JSP van het HTML5-formulierprofiel doorsturen en *setAttribute* op request-object gebruiken om alle renderparameters door te geven. Deze methode heeft de hoogste prioriteit.
 
-* **** Parameters profielknooppuntaanvraag: U kunt de renderparameters opgeven als knoopeigenschappen van een profielknooppunt. In de parameters van het profielknooppuntverzoek, zijn de parameters niet zichtbaar aan het eind - gebruiker. Profielknooppunt is het knooppunt waarnaar de aanvraag wordt verzonden. Gebruik de CRXDE-lijst om parameters op te geven als knoopeigenschappen.
+* **Parameters profielknooppuntaanvraag:** U kunt de renderparameters opgeven als knoopeigenschappen van een profielknooppunt. In de parameters van het profielknooppuntverzoek, zijn de parameters niet zichtbaar aan het eind - gebruiker. Profielknooppunt is het knooppunt waarnaar de aanvraag wordt verzonden. Gebruik de CRXDE-lijst om parameters op te geven als knoopeigenschappen.
 
 ### Parameters verzenden {#submit-parameters}
 
 HTML5-formulieren verzenden gegevens; serverscripts en webservices uitvoeren op AEM-servers. Zie [HTML5 Forms Service Proxy voor meer informatie over parameters die worden gebruikt om serverscripts en webservices uit te voeren op AEM-servers](/help/forms/using/service-proxy.md).
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
