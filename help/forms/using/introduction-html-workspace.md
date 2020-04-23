@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -30,4 +30,3 @@ De werkruimte van AEM-formulieren is compatibel met meer apparaten en formulierf
 * Breid bedrijfsprocessen tot zowel online als off-line mobiele arbeiders met de AEM de werkruimte app van Vormen uit.
 * De rapporten van de mening om achterstand, werkrijen, en zeer belangrijke prestatiesindicatoren (KPIs) te controleren. U kunt API&#39;s gebruiken om gegevens te extraheren voor verdere analyse met behulp van rapportagetools van derden.
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
