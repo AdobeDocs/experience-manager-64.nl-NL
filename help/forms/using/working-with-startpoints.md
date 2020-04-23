@@ -1,15 +1,15 @@
 ---
 title: Werken met beginpunten
 seo-title: Werken met beginpunten
-description: Stappen voor het werken met een AEM Forms-proces van uw mobiele apparaat dat is gedefinieerd in Workbench.
-seo-description: Stappen voor het werken met een AEM Forms-proces van uw mobiele apparaat dat is gedefinieerd in Workbench.
+description: Stappen om met een proces van Vormen AEM van uw Mobiel apparaat te werken dat in Workbench wordt bepaald.
+seo-description: Stappen om met een proces van Vormen AEM van uw Mobiel apparaat te werken dat in Workbench wordt bepaald.
 uuid: 9c51ce52-e7ba-43d3-a85c-67067f680ccb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 265eee8a-364e-4edf-b2a0-f42617169944
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -46,5 +46,3 @@ Als de app offline is, worden het formulier en de bijbehorende gegevens opgeslag
 Als de app online is, wordt de taak gesynchroniseerd met de AEM Forms-server en toegewezen aan de gebruiker die in het proces is opgegeven.
 
 Zie Een taak [openen](/help/forms/using/open-task.md)voor informatie over het werken met de taak in de takenlijst.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
