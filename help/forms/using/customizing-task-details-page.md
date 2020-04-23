@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 16e57cf6-aaa1-406d-a6ad-71ec60b15386
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -51,11 +51,11 @@ De pagina met taakdetails aanpassen:
 
    >[!NOTE]
    >
-   >Voeg overeenkomstige sleutel-waarde paren voor alle gesteunde talen toe.
+   >Voeg overeenkomstige sleutel-waardeparen voor alle gesteunde talen toe.
 
 1. Kopiëren `/libs/ws/js/runtime/templates/taskdetails.html` naar `/apps/ws/js/runtime/templates/taskdetails.html`.
 
-   Voeg de nieuwe gegevens toe aan `/apps/ws/js/runtime/templates/taskdetails.html`. Bijvoorbeeld:
+   Voeg de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/taskdetails.html`. Bijvoorbeeld:
 
    ```css
    <div class="detailsContainer">
@@ -85,5 +85,3 @@ De pagina met taakdetails aanpassen:
 >Als u de pagina met taakdetails wilt aanpassen met taken die zijn gemaakt op het tabblad **Proces starten **van de werkruimte van AEM-formulieren, voegt u de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >Als u nieuwe stijlen wilt toevoegen voor de informatie die op de detailpagina is toegevoegd, wijzigt u het CSS-bestand met de sectie Wijzigingen *in de* gebruikersinterface in Aanpassing [werkruimte](/help/forms/using/changing-locale-user-interface.md#main-pars-header-3).
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
