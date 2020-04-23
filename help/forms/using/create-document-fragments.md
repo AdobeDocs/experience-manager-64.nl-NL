@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -29,7 +29,7 @@ Documentfragmenten zijn herbruikbare componenten van een correspondentie die wor
 
 Deze zelfstudie begeleidt u door de stappen om meerdere tekstdocumentfragmenten te maken op basis van de anatomie die in de sectie Interactieve communicatie [in](/help/forms/using/planning-interactive-communications.md) Plan is opgenomen. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
-*  Documentfragmenten maken
+* Documentfragmenten maken
 * Variabelen maken
 * Regels maken en toepassen
 
@@ -61,7 +61,7 @@ Het documentfragment Bill Details bevat de volgende velden:
 
 Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegevensbron tot stand te brengen, statische teksten tot stand te brengen, en de modelelementen van het de vormgegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **Formulieren** > **Documentfragmenten**.
+1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
 
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
@@ -120,7 +120,7 @@ Het documentfragment Customer Details bevat de volgende velden:
 
 Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegevensbron tot stand te brengen, statische teksten tot stand te brengen, en de modelelementen van het de vormgegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **Formulieren** > **Documentfragmenten**.
+1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
@@ -179,7 +179,7 @@ Het fragment Bill Summary-document bevat de volgende velden:
 
 Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegevensbron tot stand te brengen, statische teksten tot stand te brengen, en de modelelementen van het de vormgegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **Formulieren** > **Documentfragmenten**.
+1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
@@ -242,7 +242,7 @@ Het fragment Overzicht van ladingen bevat de volgende velden:
 
 Voer de volgende stappen uit om statische tekst te maken en formuliergegevensmodelelementen in het documentfragment te gebruiken:
 
-1. Selecteer **Formulieren** > **Documentfragmenten**.
+1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
