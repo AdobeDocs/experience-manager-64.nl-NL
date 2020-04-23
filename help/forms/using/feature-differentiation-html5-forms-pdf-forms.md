@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -33,7 +33,7 @@ In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor
   </tr>
   <tr>
    <td>Handtekeningveld<br /> </td> 
-   <td><strong>Digitale handtekeningen</strong> worden niet ondersteund, maar er wordt een nieuw veld <strong>Krabbelhandtekening</strong> toegevoegd voor handtekeningen die lijken op papier. U kunt hun handtekening op het formulier krabbelen met het veld <strong>Krabbelhandtekening</strong> . De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt gegevens over de geolocatie opslaan in het veld <strong>Krabbelhandtekening</strong> .</td> 
+   <td><strong>Digitale handtekeningen</strong> worden niet ondersteund, maar er wordt een nieuw veld <strong>Krabbelhandtekening</strong> toegevoegd voor handtekeningen die lijken op papier. U kunt de handtekening op het formulier krabbelen met het veld <strong>Krabbelhandtekening</strong> . De handtekening wordt als een afbeelding op het formulier opgeslagen. U kunt gegevens over de geolocatie opslaan in het veld <strong>Krabbelhandtekening</strong> .</td> 
    <td>Handtekeningveld beschikbaar voor <strong>digitale handtekeningen</strong>.</td> 
   </tr>
   <tr>
@@ -48,7 +48,7 @@ In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor
   </tr>
   <tr>
    <td>Paginering<br /> </td> 
-   <td><p>Een HTML5-formulier wordt opgedeeld in deelvensters en vakken zodat het er net zo uitziet als PDF-formulieren. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier is verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen en wordt er geen lege ruimte (spatie) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong></strong> Opmerking: Wanneer alle inhoud van een pagina in een HTML5-formulier verborgen wordt verwijderd of gemarkeerd, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td> 
+   <td><p>Een HTML5-formulier wordt opgedeeld in deelvensters en vakken zodat het er net zo uitziet als PDF-formulieren. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier is verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen en wordt er geen lege ruimte (spatie) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier verborgen wordt verwijderd of gemarkeerd, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td> 
    <td>Paginering in PDF is afhankelijk van samengevoegde gegevensinhoud of van gebruikersinhoud en het aantal pagina's wordt op basis daarvan verhoogd/verlaagd.</td> 
   </tr>
   <tr>
@@ -81,4 +81,3 @@ In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor
 
 Volg de aanbevolen procedures om een formuliersjabloon in te schakelen voor HTML5-uitvoeringen en zorg ervoor dat het gedrag en de weergave van HTML5-formulieren en op XFA gebaseerde PDF consistent zijn. Zie [Aanbevolen procedures voor het ontwerpen van een HTML5-formulier voor een gedetailleerde lijst met aanbevolen procedures.](/help/forms/using/best-practices-for-html5-forms.md)
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
