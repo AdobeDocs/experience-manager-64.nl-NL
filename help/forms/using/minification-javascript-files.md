@@ -1,8 +1,8 @@
 ---
-title: Miniatuur van de JavaScript-bestanden
-seo-title: Miniatuur van de JavaScript-bestanden
-description: Instructies voor het genereren van geminificeerde code nadat de werkruimte van AEM Forms is aangepast om de JS-bestanden voor het web te optimaliseren.
-seo-description: Instructies voor het genereren van geminificeerde code nadat de werkruimte van AEM Forms is aangepast om de JS-bestanden voor het web te optimaliseren.
+title: Minification of the JavaScript files
+seo-title: Minification of the JavaScript files
+description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
+seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
 
 # Miniatuur van de JavaScript-bestanden {#minification-of-the-javascript-files}
 
-Met Minificatie worden de overbodige tekens, zoals witruimte, nieuwe regel en opmerkingen, uit de broncode verwijderd. Dit verbetert de prestaties door de grootte van de code te verminderen. De miniatuur heeft geen invloed op de functionaliteit, maar vermindert de leesbaarheid van de code.
+Met Minificatie worden de overbodige tekens, zoals witruimte, nieuwe regel en opmerkingen, uit de broncode verwijderd. Dit verbetert de prestaties door de grootte van de code te verminderen. While minification does not impact the functionality, it reduces the readability of the code.
 
 Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen te genereren.
 
@@ -57,7 +57,7 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
                service="service"/>
    ```
 
-1. Voer de opdracht uit op client-html/src/main/webapp/js/minifier:
+1. At client-html/src/main/webapp/js/minifier, run command:
 
    ```shell
    mvn clean install
@@ -67,10 +67,8 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
 
 >[!NOTE]
 >
->Minificatie werkt alleen op 64-bits JVM.
+>Minification will only work on 64-bit JVM.
 
 >[!NOTE]
 >
 >Als u een minieme upgrade uitvoert, heeft dit gevolgen voor de upgrade.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
