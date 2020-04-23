@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
-source-git-commit: 9ce0d4c714d8ff55c64a884d90462bcd75629ae0
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -660,4 +660,3 @@ Importeer het `sample-report-pkg-1.zip` pakket om aangepaste rapporten en UI die
 
 [Bestand ophalen](assets/sample-report-pkg-1.zip)
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
