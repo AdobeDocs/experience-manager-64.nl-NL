@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -159,7 +159,7 @@ Bijvoorbeeld:
   </tr> 
   <tr> 
    <td>2-a4-b5-c6<br type="_moz" /> </td> 
-   <td>Doel: XFA-niveau server<br /> : INFO<br /> xfaView-niveau: DEBUG<br /> xfaPerf-niveau:TRACE</td> 
+   <td>Doel: XFA-niveau server<br /> : INFO<br /> xfaView-niveau: DEBUG<br /> xfaPerf-niveau: TRACE</td> 
   </tr> 
  </tbody> 
 </table>
@@ -185,7 +185,7 @@ Als u de Manager van de Configuratie voor het toelaten van registreren gebruikt,
 
 ## Logbestanden uploaden {#uploading-logs}
 
-Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau worden alle logbestanden verzameld in een JS-object op de client en als het formulier wordt weergegeven met het standaardprofiel, wordt er links van de knop Bestaande velden **** markeren op de werkbalk een knop Logboeken **** verzenden weergegeven. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
+Als de bestemming als 1 wordt geplaatst, worden alle berichten van het cliëntmanuscript logboek geleid aan de console. Als een beheerder deze logboeken samen met serverlogboeken vereist, plaats bestemmingsniveau aan 2. Op dit niveau worden alle logbestanden verzameld in een JS-object op de client. Als het formulier wordt weergegeven met het standaardprofiel, wordt er een knop Logboeken **** verzenden weergegeven links van de knop Bestaande velden **** markeren op de werkbalk. Wanneer de gebruiker op de koppeling klikt, worden alle verzamelde logbestanden naar de server gepost en aangemeld bij het geconfigureerde foutenlogbestand op de server.
 
 Standaard wordt alle informatie toegevoegd aan het bestand error.log in de map /crx-repository/logs/.
 
@@ -206,4 +206,3 @@ De locatie en naam van het logbestand wijzigen:
 
 1. Wijzig de **Logger** in **HTMLFormsPerfLogger** en klik op **Opslaan**.
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
