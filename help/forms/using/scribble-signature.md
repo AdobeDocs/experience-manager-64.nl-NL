@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -62,7 +62,7 @@ Nadat een veld Handtekeningenkrabbels aan het formulier is toegevoegd en het is 
 
 ![geolocatie](assets/geolocation.png)
 
-******** A. Penseel **B. Gummetje** C.**Geolocatie** D. Geolocatie-informatie
+**A.** Penseel **B.** Gummetje **C.** Geolocatie **D.** Geolocatie-informatie
 
 ### Geo-tagging {#geo-tagging}
 
@@ -100,5 +100,3 @@ De handtekeningen uit het formulier verwijderen:
 
 * (Mobiele apparaten) Druk lang op het handtekeningveld en tik op **Ja** in het bevestigingsvenster.
 * (Bureaublad) Houd de cursor boven het handtekeningveld, klik op het pictogram **Annuleren** en klik in het bevestigingsvenster op **Ja**.
-
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
