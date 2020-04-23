@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -66,5 +66,3 @@ U kunt de volgende wijzigingen aanbrengen in de instellingen van uw app.
 >Als u de cache wist, meldt u zich meteen af van de app.
 >
 >U wordt echter gevraagd de wisbewerking in het cachegeheugen te bevestigen.
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
