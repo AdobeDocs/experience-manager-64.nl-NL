@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -138,15 +138,13 @@ Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan d
 
 1. Kopiëren `task.html`:
 
-   * from: `/libs/ws/js/runtime/templates/`
+   * Van: `/libs/ws/js/runtime/templates/`
    * to: `/apps/ws/js/runtime/templates/`
 
-1. Voeg de nieuwe gegevens toe aan `/apps/ws/js/runtime/templates/task.html`.
+1. Voeg de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/task.html`.
 
    Voeg bijvoorbeeld toe onder `div class="taskProperties"`:
 
    ```
    <span class="stepname" alt="<%= $.t('task.stepname.value')%>" title = '<%= $.t("task.stepname.tooltip",{stepName:stepName})%>'/>
    ```
-
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
