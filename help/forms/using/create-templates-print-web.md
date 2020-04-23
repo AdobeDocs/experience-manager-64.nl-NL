@@ -8,7 +8,7 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
 
 ---
 
@@ -109,7 +109,7 @@ Voer de volgende stappen uit om een XDP malplaatje voor het kanaal van de Druk t
 
 Nadat u een XDP-sjabloon hebt gemaakt met de Forms Designer, moet u de sjabloon uploaden naar de AEM Forms-server, zodat de sjabloon beschikbaar is voor gebruik tijdens het maken van de interactieve communicatie.
 
-1. Selecteer **Formulieren** > **Formulieren en documenten**.
+1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
 1. Tik op **Maken** > **Bestand uploaden**.
 
    Navigeer en selecteer het sjabloon **create_first_ic_print_template** (XDP) en tik op **Openen** om de XDP-sjabloon te importeren naar de AEM Forms-server.
@@ -138,7 +138,7 @@ Als u een lay-outfragment wilt maken voor het afdrukkanaal van de interactieve c
 
    ![layout_fragment_print](assets/layout_fragment_print.png)
 
-1. Selecteer **Rij 1** in de linkerruit en selecteer **Voorwerp** > **Binding** > **Herhaling Rij voor Elk Punt** van Gegevens.
+1. Selecteer **Rij 1** in de linkerruit en selecteer **Voorwerp** > **Binding** > **Rij voor Elk Punt** van Gegevens herhalen.
 
    ![layout_fragment_print_repeat](assets/layout_fragment_print_repeat.png)
 
