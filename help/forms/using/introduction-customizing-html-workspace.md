@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ---
 
@@ -260,7 +260,7 @@ Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 
       * sjablonen - Bevat alle sjablonen, dat wil zeggen HTML-bestanden van alle componenten in de werkruimte van AEM-formulieren.
    * main.js (gecombineerd, geminificeerd en aangevuld).
-   * register.js
+   * registry.js
 
 
 
@@ -305,7 +305,7 @@ Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 
       * sjablonen - Bevat alle sjablonen, dat wil zeggen HTML-bestanden van alle componenten in de werkruimte van AEM-formulieren.
    * main.js (gecombineerd).
-   * register.js
+   * registry.js
 
 
 
@@ -354,7 +354,7 @@ mvn clean -P Dev install on client pkg
       * Tot - Bevat alle hulpprogrammabestanden (JavaScript) die worden gebruikt in de werkruimte van AEM-formulieren.
       * weergaven - Bevat weergaven van alle componenten in de werkruimte van AEM-formulieren.
    * main.js
-   * register.js
+   * registry.js
    * router.js
 
 
@@ -378,4 +378,3 @@ mvn clean -P Dev install on client pkg
 * content.xml
 * _rep_policy.xml
 
-**[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)**
