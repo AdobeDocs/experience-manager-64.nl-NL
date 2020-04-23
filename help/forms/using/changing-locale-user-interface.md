@@ -1,8 +1,8 @@
 ---
 title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
 seo-title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumplukker op de interface te lokaliseren.
-seo-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumplukker op de interface te lokaliseren.
+description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
+seo-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
 
 ---
 
@@ -55,7 +55,7 @@ In de volgende stappen wordt aangenomen dat de nieuwe gelokaliseerde afbeeldings
 
 >[!NOTE]
 >
->U kunt als volgt de landinstellingscode van de browser voor de taal vinden. Openen `https://[server]:[port]/lc/libs/ws/Locale.html`.
+>U kunt als volgt de landinstellingscode van de browser voor de taal vinden. Open `https://[server]:[port]/lc/libs/ws/Locale.html`.
 
 ![samenvouwen_deelvensters_afbeelding](assets/collapsing_panels_image.png)
 
@@ -178,18 +178,18 @@ U hebt ontwikkelingspakket nodig om de *datepicker *API te lokaliseren. Voor ged
    }
    ```
 
-   ```
-   if (locale === 'ja-JP') {
-       $.datepicker.setDefaults($.datepicker.regional.ja);
-   } else if (locale === 'de-DE') {
-       $.datepicker.setDefaults($.datepicker.regional.de);
-   } else if (locale === 'fr-FR') {
-       $.datepicker.setDefaults($.datepicker.regional.fr);
-   } else if (locale === 'nw') {
-       $.datepicker.setDefaults($.datepicker.regional.nw);
-   } else {
-       $.datepicker.setDefaults($.datepicker.regional['']);
-   }
-   ```
+tot
 
-[Contact opnemen met ondersteuning](https://www.adobe.com/account/sign-in.supportportal.html)
+```
+if (locale === 'ja-JP') {
+    $.datepicker.setDefaults($.datepicker.regional.ja);
+} else if (locale === 'de-DE') {
+    $.datepicker.setDefaults($.datepicker.regional.de);
+} else if (locale === 'fr-FR') {
+    $.datepicker.setDefaults($.datepicker.regional.fr);
+} else if (locale === 'nw') {
+    $.datepicker.setDefaults($.datepicker.regional.nw);
+} else {
+    $.datepicker.setDefaults($.datepicker.regional['']);
+}
+```
