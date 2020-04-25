@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 15819d42-4897-40fa-a013-e019d1580fa2
 translation-type: tm+mt
-source-git-commit: 08cf51186b7e9ad62b92a266e95022d7d7a34a9b
+source-git-commit: 45849a1a22f99d149369cd91781de4de0260c8e3
 
 ---
 
@@ -21,14 +21,14 @@ Adobe evalueert voortdurend de productmogelijkheden, zodat oudere functies na ve
 
 Om de dreigende verwijdering/vervanging van de mogelijkheden van AEM mee te delen, zijn de volgende regels van toepassing:
 
-1. Aankondiging van afkeuring komt voorop. Hoewel deze afgekeurd zijn, zijn de capaciteiten nog steeds beschikbaar, maar ze zullen niet verder worden uitgebreid.
+1. Aankondiging van afkeuring komt voorop. Hoewel deze functie is afgekeurd, zijn de mogelijkheden nog steeds beschikbaar, maar worden ze niet verder uitgebreid.
 1. Afgekeurde functies worden ten vroegste bij de volgende grote release verwijderd. De werkelijke streefdatum voor verwijdering wordt bekendgemaakt.
 
 Dit proces biedt klanten minstens één releasecyclus om hun implementatie aan een nieuwe versie of opvolger van een vervangen capaciteit aan te passen, alvorens daadwerkelijke verwijdering.
 
 ## Verouderde functies {#deprecated-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.4. In het algemeen worden functies die in een toekomstige release verwijderd moeten worden, eerst vervangen, met een alternatief dat beschikbaar is.
+De onderstaande tabel bevat een lijst met functies en mogelijkheden die zijn gemarkeerd als verouderd in AEM 6.4. In het algemeen worden functies die in een toekomstige release verwijderd moeten worden, eerst vervangen, met een alternatief dat beschikbaar is.
 
 Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik maken van de functie/mogelijkheid en plannen te maken om hun implementatie te wijzigen en het geboden alternatief te gebruiken.
 
@@ -120,6 +120,11 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
    <td>De IValueMap-API gebruiken </td> 
   </tr>
   <tr>
+   <td>Formulieren</td> 
+   <td><p>Vervangen Central Migration Bridge-service</p> </td> 
+   <td> Geen vervanging </td> 
+  </tr>
+  <tr>
    <td>Assets</td> 
    <td><p>Offloading van middelen is vanaf AEM 6.4 afgekeurd</p> </td> 
    <td> </td> 
@@ -129,7 +134,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 ## Verwijderde functies {#removed-features}
 
-Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd uit AEM 6.4. In eerdere versies waren deze mogelijkheden gemarkeerd als afgekeurd.
+In de onderstaande tabel worden de functies en mogelijkheden weergegeven die uit AEM 6.4 zijn verwijderd. Eerdere versies hadden deze mogelijkheden gemarkeerd als afgekeurd.
 
 <table> 
  <tbody>
@@ -141,7 +146,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
   <tr>
    <td>Activiteitenkaart voor analyse</td> 
    <td>De versie van de activiteitenkaart die in AEM is opgenomen.</td> 
-   <td>Vanwege beveiligingswijzigingen in de API voor Adobe Analytics is het niet langer mogelijk de versie van Activity Map te gebruiken die in AEM is opgenomen.<br><br>De <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap-plug-in van Adobe Analytics</a> moet nu worden gebruikt.</td> 
+   <td>Vanwege beveiligingswijzigingen in de API voor Adobe Analytics is het niet langer mogelijk de versie van Activity Map te gebruiken die in AEM is opgenomen.<br><br>De plug-in <a href="https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html">ActivityMap van Adobe Analytics</a> moet nu worden gebruikt.</td> 
   </tr>
   <tr>
    <td>Components-Forms</td> 
@@ -224,6 +229,11 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
    <td>Gebruik de reCAPTCHA-service van Google.</td> 
   </tr>
   <tr>
+   <td>Formulieren</td> 
+   <td>Ondersteuning voor Flash-velden is verwijderd uit AEM Designer. In AEM Designer kunt u Flash-velden die in een formulier worden gebruikt, niet bewerken.</td> 
+   <td>U kunt dergelijke formulieren bewerken met AEM Designer die is uitgebracht voor een vorige versie.</td> 
+  </tr>
+  <tr>
    <td>Gemeenschappen</td> 
    <td>Ondersteuning voor Captcha-verificatie is verwijderd.</td> 
    <td>Gebruik aangepaste Captcha-integratie (zoals reCAPTCHA door Google) voor verificatie.</td> 
@@ -233,7 +243,8 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd ui
 
 ## Vooraankondiging voor volgende release {#pre-announcement-for-next-release}
 
-Deze sectie wordt gebruikt om veranderingen in toekomstige versie vooraf aan te kondigen, die niet verouderd zijn, maar klanten zullen beïnvloeden. Deze worden verstrekt voor planningsdoeleinden.
+
+De onderstaande tabel bevat een lijst met wijzigingen voor toekomstige release die niet zijn verouderd, maar gevolgen kunnen hebben voor klanten. Deze worden verstrekt voor planningsdoeleinden.
 
 <table> 
  <tbody>
