@@ -3,7 +3,7 @@ title: Vergelijk de functies die beschikbaar zijn in AEM Assets en AEM Media Lib
 description: Veelgestelde vragen over AEM Assets en AEM Media Library, inclusief de verschillen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5862cce4a061f076486a00685c37326bb4b21d9
+source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
 
 ---
 
@@ -41,10 +41,6 @@ Nee. Om de installatie en implementatie te vereenvoudigen, worden alle AEM-toepa
 
 Als u andere metagegevens dan titel, beschrijving en tags wilt bewerken, moet u een licentie voor AEM-elementen maken.
 
-#### Ik wil de categorie voorspellen gebruiken op mijn website. Heb ik AEM-middelen nodig? {#i-want-to-use-the-category-predicate-on-my-website-do-i-need-aem-assets}
-
-Ja, de categorie voorspelt, samen met alle andere componenten die in het Geometrixx Press Center worden gebruikt maakt deel uit van AEM Assets en vereist een AEM Assets vergunning.
-
 #### Ik wil afbeeldingen automatisch vergroten of verkleinen tijdens het importeren. Heb ik AEM-middelen nodig? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
 
 Nee. Het wijzigen van het formaat en de automatische workflowgestuurde transformatie van statische afbeeldingen en de mogelijkheid om uitvoeringen te beheren maken deel uit van de AEM Media Library. Voor deze functies is geen AEM Assets-licentie vereist.
@@ -64,3 +60,4 @@ In dit geval is het niet verplicht AEM-elementen te kopen, zelfs niet het gebrui
 >[!MORELIKETHIS]
 >
 >* [Gedetailleerde lijst met functieverschillen](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+
