@@ -1,20 +1,20 @@
 ---
-title: Metagegevens van uw digitale middelen beheren
-description: Leer meer over de typen metagegevens en hoe u met Adobe Experience Manager de metagegevens voor elementen kunt beheren, zodat u elementen gemakkelijker kunt indelen in categorieën en ordenen. Dankzij de mogelijkheid om willekeurige metagegevens bij uw middelen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van de metagegevens van de bestanden.
+title: Metagegevens van uw digitale middelen beheren in [!DNL Adobe Experience Manager].
+description: Meer informatie over de typen metagegevens en hoe u met [!DNL Adobe Experience Manager Assets] metagegevens voor elementen kunt beheren, zodat u elementen gemakkelijker kunt indelen en ordenen. [!DNL Experience Manager] maakt het mogelijk elementen automatisch te ordenen en te verwerken op basis van hun metagegevens.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5ef4c4e42165819191c6e3810c36183110f3f34a
+source-git-commit: 6687d6ae059dcd5d91986ae144d2f0367d8189e1
 
 ---
 
 
 # Metagegevens van uw digitale middelen beheren {#managing-metadata-for-digital-assets}
 
-Adobe Experience Manager-middelen bewaren metagegevens voor elk element. Hierdoor kunnen elementen gemakkelijker worden gecategoriseerd en geordend en kunnen mensen die op zoek zijn naar een bepaald bedrijfsmiddel worden geholpen. Dankzij de mogelijkheid om metagegevens te extraheren uit bestanden die zijn geüpload naar Experience Manager Assets, kan het beheer van metagegevens worden geïntegreerd met de creatieve workflow. Met de mogelijkheid van Experience Manager om metagegevens bij uw middelen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van de metagegevens.
+[!DNL Adobe Experience Manager Assets] bewaart meta-gegevens voor elk middel. Hierdoor kunnen elementen gemakkelijker worden gecategoriseerd en geordend en kunnen mensen die op zoek zijn naar een bepaald bedrijfsmiddel worden geholpen. Dankzij de mogelijkheid metagegevens te extraheren uit bestanden waarnaar geüpload wordt, kan het beheer van metagegevens worden geïntegreerd in de creatieve workflow. [!DNL Experience Manager Assets] Dankzij de mogelijkheid om metagegevens bij uw elementen te houden en te beheren, kunt u elementen automatisch ordenen en verwerken op basis van de metagegevens van de elementen. [!DNL Experience Manager Assets]
 
-* [XMP-metadata](xmp.md)
-* [Metagegevens bewerken of toevoegen](meta-edit.md)
-* [Referentie metagegevensschema](meta-ref.md)
+* [XMP-metadata](xmp.md).
+* [Metagegevens](meta-edit.md)bewerken of toevoegen.
+* [Referentie voor](meta-ref.md)metagegevensschema&#39;s.
 
 ## Waarom we metagegevens nodig hebben {#why-we-need-metadata}
 
@@ -28,7 +28,7 @@ Metagegevens zijn de verzameling van alle gegevens die beschikbaar zijn voor een
 * Naam van de map waarin deze zich bevindt.
 * Gerelateerde elementen of toegepaste tags.
 
-Dit zijn de basiseigenschappen voor metagegevens die Experience Manager kan beheren voor elementen, zodat gebruikers alle elementen kunnen zien, bijvoorbeeld geordend op de laatste wijzigingsdatum. Dit is handig wanneer ze proberen te ontdekken welke elementen onlangs aan de opslagplaats zijn toegevoegd.
+Dit zijn de basiseigenschappen van metagegevens die voor elementen [!DNL Experience Manager] kunnen worden beheerd. Hiermee kunnen gebruikers bijvoorbeeld alle elementen zien die op de laatste wijzigingsdatum zijn geordend. Dit is handig wanneer ze proberen te achterhalen welke elementen onlangs aan de opslagplaats zijn toegevoegd.
 
 U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbeeld:
 
@@ -40,30 +40,30 @@ U kunt meer gegevens op hoog niveau toevoegen aan digitale elementen, bijvoorbee
 
 Met meer metagegevens kunt u elementen verder indelen. Dit is handig wanneer de hoeveelheid digitale informatie toeneemt. Het is mogelijk om een paar honderd bestanden te beheren op basis van alleen de bestandsnamen. Nochtans, is deze benadering niet scalable en valt snel onder wanneer het aantal betrokken personen en het aantal beheerde activa stijgt.
 
-Wanneer metagegevens aan elementen worden toegevoegd, neemt de waarde van het element toe omdat het element
+Als er metagegevens worden toegevoegd, neemt de waarde van een digitaal element toe, omdat het element
 
-* toegankelijker - de mensen kunnen het veel gemakkelijker vinden .
-* eenvoudiger te beheren - u kunt gemakkelijker middelen zoeken met dezelfde set eigenschappen en er wijzigingen op toepassen.
-* complexer - hoe meer metagegevens u aan een element hebt toegevoegd, hoe belangrijker het beheer van metagegevens wordt.
+* Toegankelijker - systemen en gebruikers kunnen het gemakkelijk vinden.
+* Gemakkelijker te beheren - u kunt gemakkelijker middelen met de zelfde reeks eigenschappen vinden en veranderingen op hen toepassen.
+* Vollediger - Hoe meer metagegevens u aan een element hebt toegevoegd, des te meer informatie en context het element bevat.
 
-Om deze redenen biedt Experience Manager Assets u de juiste middelen voor het maken, beheren en uitwisselen van metagegevens voor uw digitale elementen.
+Daarom [!DNL Assets] beschikt u over de juiste middelen om metagegevens voor uw digitale elementen te maken, te beheren en uit te wisselen.
 
 ## Typen metagegevens {#types-of-metadata}
 
 De twee basistypen metagegevens zijn technische metagegevens en beschrijvende metagegevens.
 
-Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. De Elementen van de Manager van de ervaring en andere software bepalen automatisch technische meta-gegevens en de meta-gegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
+Technische metagegevens zijn handig voor softwaretoepassingen die werken met digitale elementen en mogen niet handmatig worden onderhouden. [!DNL Experience Manager Assets] en andere software bepaalt automatisch de technische metagegevens en de metagegevens kunnen veranderen wanneer het element wordt gewijzigd. De beschikbare technische metagegevens van een element zijn grotendeels afhankelijk van het bestandstype van het element. Voorbeelden van technische metagegevens zijn:
 
-* Grootte van een bestand
-* Afmetingen (hoogte en breedte) van een afbeelding
-* Bitsnelheid van een audio- of videobestand
-* Resolutie (detailniveau) van een afbeelding
+* Grootte van een bestand.
+* Afmetingen (hoogte en breedte) van een afbeelding.
+* Bitsnelheid van een audio- of videobestand.
+* Resolutie (detailniveau) van een afbeelding.
 
 De beschrijvende meta-gegevens zijn meta-gegevens betrokken bij het toepassingsdomein, bijvoorbeeld, de zaken die een activa uit komt. Metagegevens met een beschrijving kunnen niet automatisch worden bepaald. Deze wordt handmatig of halfautomatisch gemaakt. Een camera met GPS-functionaliteit kan bijvoorbeeld automatisch de breedte en lengte bijhouden en geotaggen aan de afbeelding toevoegen.
 
 Vanwege de hoge kosten van de handmatige inspanningen die nodig zijn om beschrijvende metagegevens te maken, zijn er normen opgesteld om de uitwisseling van metagegevens tussen softwaresystemen en organisaties te vergemakkelijken.
 
-De Elementen van de Manager van de ervaring steunen alle relevante normen voor meta-gegevensbeheer.
+[!DNL Experience Manager Assets] ondersteunt alle relevante normen voor metagegevensbeheer.
 
 Vanwege het belang van metagegevens en de grote handmatige betrokkenheid die nodig is om metagegevens te maken, zijn er normen opgesteld die het uitwisselen van gegevens vergemakkelijken.
 
@@ -71,14 +71,14 @@ Vanwege het belang van metagegevens en de grote handmatige betrokkenheid die nod
 
 Er zijn verschillende manieren om metagegevens in bestanden in te sluiten. Een selectie coderingsstandaarden wordt ondersteund:
 
-* XMP: gebruikt door Experience Manager Assets om de opgehaalde metagegevens in de opslagplaats op te slaan.
+* XMP: worden gebruikt door [!DNL Assets] de geëxtraheerde metagegevens op te slaan in de opslagplaats.
 * ID3: voor audio- en videobestanden.
 * EXIF: voor afbeeldingsbestanden.
 * Overige/Verouderd: van Microsoft Word, PowerPoint, Excel, etc.
 
 ### XMP {#xmp}
 
-XMP (Extensible Metadata Platform) is een open standaard die wordt gebruikt door Experience Manager-middelen voor al het metagegevensbeheer. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen de XMP-standaard omdat deze een Rich Content Model biedt. Gebruikers van de XMP-standaard en van Experience Manager-middelen hebben een krachtig platform waarop ze kunnen bouwen. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
+XMP (Extensible Metadata Platform) is een open standaard die door [!DNL Experience Manager Assets] voor al meta-gegevensbeheer wordt gebruikt. De standaard biedt universele metagegevenscodering die in alle bestandsindelingen kan worden ingesloten. Adobe en andere bedrijven ondersteunen de XMP-standaard omdat deze een Rich Content Model biedt. Gebruikers van de XMP-standaard en van [!DNL Experience Manager Assets] een krachtig platform waarop u kunt bouwen. For more information, see [XMP](https://www.adobe.com/products/xmp.html).
 
 ### ID3 {#id}
 
@@ -94,11 +94,11 @@ ID3-tags zijn ontworpen voor de MP3-bestandsindeling. Aanvullende informatie ove
 
 ### Exif {#exif}
 
-Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in vele bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd en mogen niet worden verward met de codering in Experience Manager. Aangezien Exif automatisch door moderne digitale camera&#39;s wordt gecreeerd en door moderne grafieksoftware wordt gesteund, kan het als laagste gemeenschappelijke noemer voor meta-gegevensbeheer worden gezien.
+Exchangeable image file format (Exif) is de meest gebruikte metagegevensindeling voor digitale fotografie. Hiermee kunt u een vaste woordenlijst met metagegevenseigenschappen insluiten in vele bestandsindelingen, zoals JPEG, TIFF, RIFF en WAV. In Exif worden metagegevens opgeslagen als paren van een metagegevensnaam en een metagegevenswaarde. Deze naam-waarde-paren voor metagegevens worden ook wel tags genoemd, maar mogen niet worden verward met de tags in [!DNL Experience Manager]. Aangezien Exif automatisch door moderne digitale camera&#39;s wordt gecreeerd en door moderne grafieksoftware wordt gesteund, kan het als laagste gemeenschappelijke noemer voor meta-gegevensbeheer worden gezien.
 
 Een belangrijke beperking van Exif is dat een aantal populaire indelingen voor afbeeldingsbestanden, zoals BMP, GIF of PNG, dit niet ondersteunen.
 
-Metagegevensvelden die gewoonlijk door EXIF worden gedefinieerd, zijn van technische aard en zijn van beperkte toepassing voor beschrijvend metagegevensbeheer. Daarom biedt Experience Manager Assets het toewijzen van EXIF-eigenschappen aan [algemene metagegevensschema](metadata-schemas.md) en aan [XMP](xmp-writeback.md).
+Metagegevensvelden die gewoonlijk door EXIF worden gedefinieerd, zijn van technische aard en zijn van beperkte toepassing voor beschrijvend metagegevensbeheer. Daarom [!DNL Experience Manager Assets] biedt u de toewijzing van EXIF-eigenschappen in [algemene metagegevensschema](metadata-schemas.md) en in [XMP](xmp-writeback.md).
 
 ### Overige metagegevens {#other-metadata}
 
@@ -106,9 +106,9 @@ Andere meta-gegevens die van dossiers kunnen worden ingebed omvatten Microsoft W
 
 ## Metagegevensschema {#metadata-schemata}
 
-Metagegevensschema&#39;s zijn vooraf gedefinieerde sets definities van metagegevenseigenschappen die in verschillende toepassingen kunnen worden gebruikt. Eigenschappen zijn altijd gekoppeld aan een element. Dit houdt in dat de eigenschappen &quot;over&quot; de bron zijn.
+Metagegevensschema&#39;s zijn vooraf gedefinieerde sets definities van metagegevenseigenschappen die in verschillende toepassingen kunnen worden gebruikt. Eigenschappen worden altijd gekoppeld aan een element. Dit houdt in dat de eigenschappen &#39;over&#39; de bron zijn.
 
-U kunt ook uw eigen metagegevensschema&#39;s ontwerpen als er geen schema&#39;s zijn die aan uw behoeften voldoen. Dupliceer bestaande informatie niet. Binnen een organisatie, maakt het scheiden van schema&#39;s het gemakkelijker om meta-gegevens te delen. De Manager van de ervaring voorziet u van een standaardlijst van de populairste meta-gegevensschema&#39;s. De lijst helpt u om uw meta-gegevensstrategie te springen en snel de meta-gegevenseigenschappen te kiezen die u nodig hebt.
+U kunt ook uw eigen metagegevensschema&#39;s ontwerpen als er geen schema&#39;s zijn die aan uw behoeften voldoen. Dupliceer bestaande informatie niet. Binnen een organisatie, maakt het scheiden van schema&#39;s het gemakkelijker om meta-gegevens te delen. [!DNL Experience Manager] biedt u een standaardlijst met de populairste metagegevensschema&#39;s. De lijst helpt u om uw meta-gegevensstrategie te springen en snel de meta-gegevenseigenschappen te kiezen die u nodig hebt.
 
 De ondersteunde metagegevensschema&#39;s worden hieronder weergegeven.
 
@@ -123,19 +123,19 @@ De ondersteunde metagegevensschema&#39;s worden hieronder weergegeven.
 
 ### Toepassingsspecifieke metagegevens {#application-specific-metadata}
 
-De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u deze gebruikt, kunnen andere toepassingen mogelijk de meta-gegevens niet gebruiken. Als u bijvoorbeeld een element hebt met Adobe Photoshop-metagegevens en een andere toepassing voor het renderen van afbeeldingen probeert toegang te krijgen tot de metagegevens, heeft deze mogelijk geen toegang tot de metagegevens. Als u ontdekt dat u veel toepassing-specifieke meta-gegevens in uw activa hebt, kunt u een werkschemagestap tot stand brengen die een toepassing-specifieke bezit in een standaardbezit verandert.
+De toepassingsspecifieke metagegevens bevatten technische en beschrijvende metagegevens. Als u deze gebruikt, kunnen andere toepassingen mogelijk de meta-gegevens niet gebruiken. Als u bijvoorbeeld een element met [!DNL Adobe Photoshop] metagegevens hebt en een andere toepassing voor het renderen van afbeeldingen probeert toegang te krijgen tot de metagegevens, heeft deze mogelijk geen toegang tot de metagegevens. Als u ontdekt dat u veel toepassing-specifieke meta-gegevens in uw activa hebt, kunt u een werkschemagestap tot stand brengen die een toepassing-specifieke bezit in een standaardbezit verandert.
 
 * acdsee - metagegevens beheerd door het ACDSee-programma [www.acdsee.com/](https://www.acdsee.com/).
 * album - Adobe Photoshop Album.
-* cq - wordt gebruikt door Experience Manager Assets.
-* dam - gebruikt door Experience Manager Assets.
+* cq - gebruikt door [!DNL Experience Manager Assets].
+* dam - gebruikt door [!DNL Experience Manager Assets].
 * Index - Optima SC Description Explorer.
 * crs - Adobe Photoshop Camera Raw.
 * lr - Adobe Lightroom.
 * mediapro - IView MediaPro.
 * MicrosoftPhoto &amp; MP - Microsoft Photo.
-* pdf en pdfx
-* Photoshop &amp; psAux - Adobe Photoshop
+* pdf en pdfx.
+* Photoshop &amp; psAux - Adobe Photoshop.
 
 ### Metagegevens van Digital Rights Management {#digital-rights-management-metadata}
 
