@@ -3,7 +3,7 @@ title: Richtlijnen voor afstelling van middelenprestaties
 description: Belangrijke aandachtsgebieden rond AEM-configuratie, wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 82b3998d5c1add6a759812e45ecd08b421d3b0df
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -209,11 +209,9 @@ Daarnaast stelt u het pad van de tijdelijke map van ImageMagick in het bestand *
 
 >[!NOTE]
 >
->De bestanden ImageMagick policy.xml en configure.xml bevinden zich onder /usr/lib64/ImageMagick-&amp;ast;/config/ in plaats van /etc/ImageMagick/. Verwijs naar de documentatie [](https://www.imagemagick.org/script/resources.php) ImageMagick voor details op de plaatsen van het configuratiedossier.
+>U vindt de bestanden ImageMagick `policy.xml` en `configure.xml` ImageMagick `/usr/lib64/ImageMagick-*/config/` in plaats van `/etc/ImageMagick/`. Zie [documentatie](https://www.imagemagick.org/script/resources.php) ImageMagick voor details op de plaatsen van het configuratiedossier.
 
->[!NOTE]
->
->Als u AEM gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Technische Ondersteuning van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken.
+Als u AEM gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de klantenservice van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. Experience Manager kan PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, niet verwerken.
 
 <!-- 
 
@@ -285,12 +283,12 @@ Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve kr
 
 ## Replicatie {#replication}
 
-Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
+Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publicatieinstanties herhaalt, die de auteursinstantie vrijmaken.
 
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
 1. Voor elk van die replicatieagenten, laat **[!UICONTROL bij Ontvangen]** op het **[!UICONTROL lusje van Trekkers]** toe
 
 >[!NOTE]
