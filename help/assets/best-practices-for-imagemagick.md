@@ -3,7 +3,7 @@ title: ImageMagick installeren en configureren om met AEM-middelen te werken
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
 
 ---
 
@@ -18,7 +18,7 @@ Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met
 
 >[!NOTE]
 >
->Als u AEM gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de Technische Ondersteuning van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken.
+>Als u AEM gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de klantenservice van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. Experience Manager kan PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, niet verwerken.
 
 ## ImageMagick installeren {#installing-imagemagick}
 
@@ -52,7 +52,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
    ![web_enabled_image](assets/web_enabled_image.png)
 
-1. Tik/klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. Tap/click **[!UICONTROL OK]** to save the changes.
 
    >[!NOTE]
    >
@@ -64,7 +64,7 @@ U kunt de processtap van de bevellijn voor uw bepaald gebruiksgeval plaatsen. Vo
 
    ![skip_mime_types](assets/skip_mime_types.png)
 
-1. Voeg op het tabblad Afbeelding **[!UICONTROL voor]** web het MIME-type toe `image/jpeg` onder de lijst **[!UICONTROL Overslaan]**. Tik/klik op **[!UICONTROL OK]** om de wijzigingen op te slaan.
+1. Voeg op het tabblad Afbeelding **[!UICONTROL voor]** web het MIME-type toe `image/jpeg` onder de lijst **[!UICONTROL Overslaan]**. Tap/click **[!UICONTROL OK]** to save the changes.
 
    ![web_enabled](assets/web_enabled.png)
 
@@ -80,7 +80,7 @@ Daarnaast zijn verschillende plug-ins voor beeldverwerking afhankelijk van de Im
 Als u ImageMagick of een betrokken bibliotheek gebruikt, raadt Adobe u aan de bekende kwetsbaarheden te beperken door ten minste een van de volgende taken (maar bij voorkeur beide) uit te voeren:
 
 1. Controleer of alle afbeeldingsbestanden beginnen met de verwachte [&quot;toverbytes&quot;](https://en.wikipedia.org/wiki/List_of_file_signatures) die overeenkomen met de afbeeldingsbestandstypen die u ondersteunt voordat u ze naar ImageMagick stuurt voor verwerking.
-1. Gebruik een beleidsdossier om de kwetsbare Codeurs onbruikbaar te maken ImageMagick. Het algemene beleid voor ImageMagick is te vinden op `/etc/ImageMagick`.
+1. Gebruik een beleidsdossier om de kwetsbare Codeurs uit te schakelen ImageMagick. Het algemene beleid voor ImageMagick is te vinden op `/etc/ImageMagick`.
 
 >[!MORELIKETHIS]
 >
