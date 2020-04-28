@@ -10,7 +10,7 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 translation-type: tm+mt
-source-git-commit: 0426692c1b2f595baa1256cbdf84735ef631e5b3
+source-git-commit: 0982b1378c5edad000ad3dea4406093d4f13c496
 
 ---
 
@@ -29,7 +29,7 @@ Het javascript-bestand dat de code bevat waarmee de opslagkandidaat wordt gemaak
 contexthub.store.[storeType]
 ```
 
-Het `[storeType]` deel van de categorie is storeType waarmee de opslagkandidaat wordt geregistreerd. (Zie Een ContextHub Store-kandidaat [](/help/sites-developing/ch-extend.md#registering-a-contexthub-store-candidate)registreren). Bijvoorbeeld, voor storeType van `contexthub.mystore`, moet de categorie van de omslag van de cliëntbibliotheek zijn `contexthub.store.contexthub.mystore`.
+Het `[storeType]` deel van de categorie is het `storeType` waarmee de winkelkandidaat is geregistreerd. (Zie Een ContextHub Store-kandidaat [](/help/sites-developing/ch-extend.md#registering-a-contexthub-store-candidate)registreren). Bijvoorbeeld, voor storeType van `contexthub.mystore`, moet de categorie van de omslag van de cliëntbibliotheek zijn `contexthub.store.contexthub.mystore`.
 
 ### Een ContextHub Store-kandidaat maken {#creating-a-contexthub-store-candidate}
 
@@ -49,20 +49,22 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-Realistisch, zullen uw kandidaten van de douaneopslag extra functies bepalen of zullen de aanvankelijke configuratie van de opslag met voeten treden. Verschillende [voorbeeldwinkelkandidaten](/help/sites-developing/ch-samplestores.md) zijn geïnstalleerd in de opslagplaats onder /libs/granite/contexthub/components/stores. Om van deze steekproeven te leren, gebruik CRXDE Lite om de dossiers te openen javascript.
+Realistisch, zullen uw kandidaten van de douaneopslag extra functies bepalen of zullen de aanvankelijke configuratie van de opslag met voeten treden. Verschillende [voorbeeldwinkelkandidaten](/help/sites-developing/ch-samplestores.md) zijn in de onderstaande opslagplaats geïnstalleerd `/libs/granite/contexthub/components/stores`. Om van deze steekproeven te leren, gebruik CRXDE Lite om de dossiers te openen javascript.
 
 ### Registreren van een ContextHub Store-kandidaat {#registering-a-contexthub-store-candidate}
 
 Registreer een opslagkandidaat om het met het kader te integreren ContextHub en opslag toe te laten om van het worden gecreeerd. Als u een winkelkandidaat wilt registreren, gebruikt u de [`registerStoreCandidate`](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) functie van de `ContextHub.Utils.storeCandidates` klasse.
 
-Wanneer u een winkelkandidate registreert, geeft u een naam voor het winkeltype op. Wanneer het creëren van een opslag van de kandidaat, gebruikt u het opslagtype om de kandidaat te identificeren waarop het is gebaseerd.
+Wanneer u een opslagkandidaat registreert, geeft u een naam voor het type winkel op. Wanneer het creëren van een opslag van de kandidaat, gebruikt u het opslagtype om de kandidaat te identificeren waarop het is gebaseerd.
 
 Wanneer u een winkelkandidaat registreert, geeft u de prioriteit aan. Wanneer een opslagkandidaat wordt geregistreerd gebruikend het zelfde archieftype zoals een reeds-geregistreerde opslagkandidaat, wordt de kandidaat met de hogere prioriteit gebruikt. Daarom kunt u bestaande opslagkandidaten met nieuwe implementaties met voeten treden.
 
 ```
-ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate, 
-                                'contexthub.mystorecandiate', 0);
+ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate,
+                                'contexthub.mystorecandidate', 0);
 ```
+
+In de meeste gevallen is slechts één kandidaat noodzakelijk en de prioriteit kan worden geplaatst aan `0`, maar als u geinteresseerd bent kunt u over [geavanceerdere registraties leren,](/help/sites-developing/contexthub-api.md#registerstorecandidate-store-storetype-priority-applies) die één van weinig opslagimplementaties toestaat om op voorwaarde javascript (`applies`) en kandidaatprioriteit worden gekozen.
 
 ## ContextHub UI-moduletypen maken {#creating-contexthub-ui-module-types}
 
@@ -74,7 +76,7 @@ Als u een UI-modulerrenderer wilt maken, maakt u een `Class` object dat de logic
 
 * Geef een standaardconfiguratie op. Maak een `defaultConfig` eigenschap. Dit bezit is een voorwerp dat de eigenschappen omvat die voor de module [`contexthub.base`](/help/sites-developing/ch-samplemodules.md#contexthub-base-ui-module-type) UI, en om het even welke andere eigenschappen worden bepaald die u vereist.
 
-De bron voor `ContextHub.UI.BaseModuleRenderer` is gevestigd bij `/libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js`.  Gebruik de [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) methode van de `ContextHub.UI` klasse om de renderer te registreren. U moet een naam voor het moduletype verstrekken. Wanneer beheerders een UI-module maken op basis van deze renderer, geven ze deze naam op.
+De bron voor `ContextHub.UI.BaseModuleRenderer` wordt gevestigd in /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.  Gebruik de [`registerRenderer`](/help/sites-developing/contexthub-api.md#registerrenderer-moduletype-renderer-dontrender) methode van de `ContextHub.UI` klasse om de renderer te registreren. U moet een naam voor het moduletype verstrekken. Wanneer beheerders een UI-module maken op basis van deze renderer, geven ze deze naam op.
 
 Maak en registreer de rendererklasse in een automatisch uitgevoerde anonieme functie. Het volgende voorbeeld is gebaseerd op de broncode voor de module van contexthub.browserinfo UI. Deze UI-module is een eenvoudige uitbreiding van de `ContextHub.UI.BaseModuleRenderer` klasse.
 
