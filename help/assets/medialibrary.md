@@ -3,7 +3,7 @@ title: Vergelijk de functies die beschikbaar zijn in AEM Assets en AEM Media Lib
 description: Veelgestelde vragen over AEM Assets en AEM Media Library, inclusief de verschillen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 48426d3e2bd204b3cfcae217591016c14afafbda
+source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
 
 ---
 
@@ -51,7 +51,7 @@ De afbeeldingscomponent maakt deel uit van AEM WCM. De grafische bibliotheek die
 
 ### Hoe kan ik voorkomen dat mijn gebruikers AEM Assets gebruiken als ik geen licentie heb verleend voor AEM Assets? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
 
-U kunt alle AEM Assets-specifieke workflows, componenten, taxonomieën, opties en de AEM Assets-beheerder verwijderen uit AEM. Zo voorkomt u dat uw gebruikers de functies van AEM-middelen die u niet hebt geautoriseerd, op vertrouwelijke wijze gebruiken.
+U kunt alle AEM Assets-specifieke workflows, componenten, taxonomieën, opties en de AEM Assets-beheerder verwijderen uit AEM. Zo voorkomt u dat uw gebruikers per ongeluk de functies van AEM Assets gebruiken waarvoor u geen licentie hebt verleend.
 
 ### Ik wil afbeeldingen aan een pagina toevoegen en deze afbeeldingen uitsnijden en vergroten of verkleinen. Heb ik AEM-middelen nodig? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
 
