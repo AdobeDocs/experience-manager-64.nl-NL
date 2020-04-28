@@ -10,7 +10,7 @@ topic-tags: hTML5_forms
 content-type: reference
 discoiquuid: a5eba237-3aad-497a-8f77-061d5d3df371
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: ecfac782540ac6712e11bed9148199561b7e7f79
 
 ---
 
@@ -61,7 +61,7 @@ HTML5-formulieren kunnen gegevensgestuurde velden (tabellen en subformulieren) b
 * Gebruik XFA-scripting om gepagineerde navigatie tot stand te brengen om gegeven-gedreven gebieden (lijsten en subformulieren) te tonen. Bij gepagineerde navigatie worden alleen specifieke gegevens weergegeven op een pagina. Hierdoor wordt de verfbewerking in de browser beperkt tot de velden die tegelijkertijd worden weergegeven en is het gemakkelijker om in een formulier te navigeren. Bovendien zijn gebruikers op mobiele apparaten alleen geïnteresseerd in een subset gegevens. Het helpt u een geweldige gebruikerservaring te bieden en verkort de tijd die nodig is om de vereiste gegevens te laden. Je krijgt twee oplossingen voor de prijs van één.  Let er ook op dat gepagineerde navigatie niet beschikbaar is buiten het vak. U kunt XFA-scripts gebruiken om gepagineerde navigatie te ontwikkelen.
 
 * Evalueer het samenvoegen van meerdere alleen-lezen kolommen in één kolom. Hiermee vermindert u het geheugen dat nodig is om het formulier weer te geven. Vermijd ook het weergeven van de kolommen waarvoor geen invoer van gebruikers nodig is.
-* Evalueer het splitsen van het gegevensgestuurde formulier in een [formulierset](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)als de bovenstaande suggesties niet veel verbeteringen opleveren. Als een tabel bijvoorbeeld meer dan 1000 rijen bevat, verplaatst u elke 100 rijen naar een ander formulier. Hiermee kunt u de laadtijd en prestaties van de formulieren verbeteren.  Een formulierset genereert een geconsolideerde verzendings-XML voor alle formulieren. Als u gegevens van elk formulier wilt onderscheiden, gebruikt u verschillende basisgegevens. Zie [Formulierset in AEM-formulieren](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)voor meer informatie.
+* Evalueer het splitsen van het gegevensgestuurde formulier in een [formulierset](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)als de bovenstaande suggesties niet veel verbeteringen opleveren. Als een tabel bijvoorbeeld meer dan 1000 rijen bevat, verplaatst u elke 100 rijen naar een ander formulier. Hiermee kunt u de laadtijd en prestaties van de formulieren verbeteren.  Een formulierset genereert een geconsolideerde verzendings-XML voor alle formulieren. Als u gegevens van elk formulier wilt onderscheiden, moet u verschillende basisgegevens gebruiken. Zie [Formulierset in AEM-formulieren](https://helpx.adobe.com/aem-forms/6-3/formset-in-aem-forms.html)voor meer informatie.
 
 ## Macht van twee voor Document of Record (DOR) {#power-of-two-for-document-of-record-dor}
 
@@ -76,6 +76,7 @@ Met formulieren van Adobe Experience Manager (AEM) kunt u complexe transacties t
 * [Aanbevolen procedures voor het beheren van AEM](/help/sites-administering/administer-best-practices.md)
 * [Aanbevolen werkwijzen voor het ontwikkelen van oplossingen](/help/sites-developing/best-practices.md)
 * [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md)
+* [De AEM Forms-server sluit fonts niet in op een dynamisch PDF-formulier](https://helpx.adobe.com/aem-forms/kb/aem-forms-server-does-not-embed-fonts-to-dynamic-pdf-form.html)
 
 ## Snelle referentiekaart {#quick-reference-card}
 
