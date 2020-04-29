@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
 
 ---
 
@@ -96,7 +96,7 @@ Bij het maken van een nieuwe pagina zijn er twee sleutelvelden:
 
 #### Beperkingen en aanbevolen procedures voor paginanamen {#page-name-restrictions-and-best-practices}
 
-De **paginatitel** en - **naam** kunnen afzonderlijk worden gemaakt, maar zijn gerelateerd aan:
+De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar zijn aan elkaar gerelateerd:
 
 * Wanneer u een pagina maakt, is alleen het veld **Titel** vereist. Als er bij het maken van de pagina geen **naam** is opgegeven, genereert AEM een naam uit de eerste 64 tekens van de titel (met inachtneming van de onderstaande validatie). Alleen de eerste 64 tekens worden gebruikt ter ondersteuning van de beste praktijken voor namen van korte pagina&#39;s.
 
@@ -126,12 +126,12 @@ Alle tekens die zijn toegestaan, staan in [de naamgevingsconventies](/help/sites
 
 #### Titel {#title}
 
-Als u bij het maken van een nieuwe pagina alleen een paginatitel **opgeeft, leidt AEM de** paginanaam **af van deze tekenreeks en** valideert AEM de naam volgens de conventies [](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige tekens worden vervangen door de afgeleide naam. Bijvoorbeeld:
+Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, leidt AEM de **naam**[ van de pagina af van deze tekenreeks en valideert het de naam volgens de conventies die door AEM en JCR worden opgelegd. ](/help/sites-developing/naming-conventions.md) Een veld **Titel** met ongeldige tekens wordt geaccepteerd, maar de ongeldige tekens worden vervangen door de afgeleide naam. Bijvoorbeeld:
 
 | Titel | Afgeleide naam |
 |---|---|
 | Schön | schoen.html |
-| SC%&amp;&amp;ast;ç+ | sc—c-.html |
+| SC%&amp;&amp;ast;ç+ | sc---c-.html |
 
 #### Naam {#name}
 
@@ -145,7 +145,7 @@ Wanneer u een **paginanaam** opgeeft bij het maken van een nieuwe pagina, zal AE
 >
 >See [Preparing Content for Translation](/help/sites-administering/tc-prep.md) for more information.
 
-### Templates {#templates}
+### Sjablonen {#templates}
 
 In AEM, specificeert een malplaatje een gespecialiseerd type van pagina. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
 
@@ -187,7 +187,7 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
 1. Open de Sites-console (bijvoorbeeld [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)).
 1. Navigeer naar de locatie waar u de nieuwe pagina wilt maken.
-1. Open de keuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
+1. Open de vervolgkeuzelijst met **Maken** op de werkbalk en selecteer vervolgens **Pagina** in de lijst:
 
    ![screen_shot_2018-03-22at104944](assets/screen_shot_2018-03-22at104944.png)
 
@@ -345,7 +345,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
 >[!NOTE]
 >
->Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. Deze wordt standaard opnieuw gepubliceerd wanneer de verplaatsing is voltooid, maar dit kan veranderen door het veld **Opnieuw** publiceren uit te schakelen in de stap **Aanpassen/Opnieuw** .
+>Als de pagina al is gepubliceerd, wordt de publicatie ervan automatisch ongedaan gemaakt wanneer u de pagina verplaatst. By default, it will be republished when the move is complete, but this can changed by unchecking the **Republish** field in the **Adjust/Republish** step.
 
 >[!NOTE]
 >
@@ -360,10 +360,14 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    >[!NOTE]
    >
-   >Uit veiligheidsoverwegingen is **het pictogram op de pagina Verwijderen** niet beschikbaar als een snelle actie.
+   >Uit veiligheidsoverwegingen is het pictogram op de pagina **Verwijderen** niet beschikbaar als een snelle actie.
 
-1. In een dialoogvenster wordt om bevestiging gevraagd, gebruik:
+1. Een dialoogvenster zal om bevestiging vragen.
 
+   * **Wilt u de pagina&#39;s archiveren voordat u ze verwijdert?** - Als deze optie is ingeschakeld, worden bij het verwijderen versies gemaakt van de pagina&#39;s die voor verwijdering zijn geselecteerd.
+      * [Versies kunnen later worden hersteld.](/help/sites-authoring/working-with-page-versions.md)
+      * Pagina&#39;s die zonder vorige versies zijn verwijderd, kunnen niet worden hersteld.
+      * Deze optie is alleen beschikbaar in AEM versie 6.4.7.0.
    * **Annuleren** om de handeling af te breken
    * **Verwijder** om de handeling te bevestigen:
 
@@ -397,7 +401,7 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 
 
 
-1. Open de **Sites** -console en navigeer naar de gewenste locatie.
+1. Open the **Sites** console and navigate to the required location.
 1. Selecteer **Maken** in de werkbalk om de lijst met opties te openen
 1. Selecteer **Map** om het dialoogvenster te openen. Hier kunt u de **naam** en de **titel** invoeren:
 
