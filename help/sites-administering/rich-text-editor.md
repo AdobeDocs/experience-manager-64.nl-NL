@@ -3,7 +3,7 @@ title: De Rich Text Editor configureren
 description: Leer om de Rich Text Editor van AEM te vormen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 ---
 
@@ -161,6 +161,15 @@ Configureer de volgende eigenschappen die alleen van toepassing zijn in de bewer
 * `rte-start`: Trigger deze gebeurtenis op de `contenteditable-div` van RTE, wanneer beginnen RTE uit te geven. Dit werkt alleen als true `customStart` is ingesteld.
 
 Als RTE wordt gebruikt in het dialoogvenster met aanraakbediening, is het verplicht de eigenschap in te stellen op true `useFixedInlineToolbar` om problemen te voorkomen.
+
+## Op plaats bewerken aanpassen {#customizing-in-place-editing}
+
+U kunt bepalen op welke HTML-kiezer de teksteditor begint door de volgende eigenschappen te configureren:
+
+* **`editElementQuery`** - Gedefinieerd op `cq:InplaceEditingConfig`, wordt deze eigenschap gebruikt om een kiezer op te geven van het HTML-element waarop de inline-bewerking voor de tekstcomponent wordt gestart. Als u deze optie niet opgeeft, wordt het inline bewerken direct gestart in de HTML van de tekstcomponent.
+* **`textPropertyName`** - Gedefinieerd op `cq:InplaceEditingConfig`, wordt deze eigenschap gebruikt om de naam op te geven van de eigenschap die wordt opgeslagen op het inhoudsknooppunt waar de HTML-waarde van de tekstcomponent na inline-bewerking wordt voortgezet.
+
+De bijbehorende eigenschap voor de dialoogmodus is `name`.
 
 ## RTE-functies inschakelen door plug-ins te activeren {#enable-rte-functionalities-by-activating-plug-ins}
 
