@@ -10,16 +10,16 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
-source-git-commit: 82e065a7faefe6d91f23e2b54dd045fd240fafbb
+source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
 
 ---
 
 
-# Aanbevolen werkwijzen{#best-practices}
+# Best Practices{#best-practices}
 
 ## Aanbevolen procedures voor ontwikkelaars - Aan de slag {#best-practices-for-developers-getting-started}
 
-Adobe Engineering- en Consulting-teams hebben een uitgebreide set met best practices ontwikkeld voor AEM-ontwikkelaars. De ontwikkelaar van Adobe hanteert deze beste praktijken aangezien zij kernAEM productupdates en klantencode voor klantenimplementatie ontwikkelen.
+Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks aanbevolen procedures ontwikkeld voor AEM-ontwikkelaars. De ontwikkelaar van Adobe hanteert deze beste praktijken aangezien zij kernAEM productupdates en klantencode voor klantenimplementatie ontwikkelen.
 
 Voordat u uw AEM-ontwikkelingsproject start, moet u eerst de volgende aanbevolen procedures doornemen:
 
@@ -30,6 +30,7 @@ Voordat u uw AEM-ontwikkelingsproject start, moet u eerst de volgende aanbevolen
 * [Codepitten](/help/sites-developing/code-pitfalls.md)
 * [JCR-interactie](/help/sites-developing/jcr-integration.md)
 * [OSGi-bundels](/help/sites-developing/osgi-bundles.md)
+* [Aanbevolen werkwijzen voor Java API](https://docs.adobe.com/content/help/en/experience-manager-learn/foundation/development/understand-java-api-best-practices.html)
 
 ### Aanvullende informatie over aanbevolen procedures {#additional-best-practices-information}
 
@@ -55,7 +56,7 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
  <tbody>
   <tr>
    <td>Een deel van de theorie achter de standaard, aanraakinterface.</td> 
-   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Interface voor aanraakbediening: Concepten</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Interface voor aanraakbediening:Structuur</a></p> </td> 
+   <td><p><a href="/help/sites-developing/touch-ui-concepts.md">Interface voor aanraakbediening: Concepten</a></p> <p><a href="/help/sites-developing/touch-ui-structure.md">Interface voor aanraakbediening: Structuur</a></p> </td> 
    <td>Deze documenten bieden een overzicht van de concepten en structuur van de interface met aanraakbediening.</td> 
   </tr>
   <tr>
