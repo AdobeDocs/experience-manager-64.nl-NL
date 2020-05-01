@@ -3,7 +3,7 @@ title: Aanbevolen werkwijzen voor bestandsindelingen voor elementen
 description: Aanbevolen procedures voor bestandsondersteuning in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
 
 ---
 
@@ -43,7 +43,7 @@ Adobe raadt u aan Adobe InDesign-server te gebruiken om Adobe InDesign-specifiek
 
 De dynamische Media produceert en levert veelvoudige variaties van rijke inhoud in real time door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Zie Dynamische media [configureren voor meer informatie over het inschakelen van dynamische media](config-dynamic.md).
 
-Dynamische media kunnen momenteel video&#39;s ondersteunen van maximaal 20 GB aan inhoud per bestand.
+Dynamische media kunnen momenteel video&#39;s ondersteunen van maximaal 15 GB aan inhoud per bestand.
 
 ## ImageMagick-bibliotheek {#imagemagick-library}
 
