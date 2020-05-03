@@ -3,7 +3,7 @@ title: Bulkmetagegevens importeren en exporteren
 description: In dit artikel wordt beschreven hoe u metagegevens bulksgewijs kunt importeren en exporteren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 093524d47565f63c8179abee704720fe23b0d09a
+source-git-commit: 254a9dec248255f8f76db3531c65b54fb4ebff0c
 
 ---
 
@@ -23,7 +23,7 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 Voer de volgende stappen uit om metagegevens in bulk te importeren:
 
 1. Navigeer naar de gebruikersinterface Middelen en tik op **[!UICONTROL Maken]** /klik op de werkbalk.
-1. Selecteer **[!UICONTROL Metagegevens]** in het menu.
+1. From the menu, select **[!UICONTROL Metadata]**.
 1. Tik op de pagina **[!UICONTROL Metagegevens importeren]** of klik op Bestand **** selecteren.  Selecteer het CSV-bestand met de metadata.
 1. Controleer of het CSV-bestand de volgende parameters bevat:
 
@@ -36,6 +36,12 @@ Voer de volgende stappen uit om metagegevens in bulk te importeren:
    | [!UICONTROL Kolomnaam elementpad] | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
 1. Tik/klik op **[!UICONTROL Importeren]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
+
+Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00` notatie voor datum en tijd. Datum en tijd worden gescheiden door `T`, is `hh` uren in 24-uursnotatie, `fff` is nanoseconden, en `-00:00` is timezone offset. Bijvoorbeeld, `2020-03-26T11:26:00.000-07:00` is 26 maart 2020 om 11:26:00.000 AM PST tijd.
+
+>[!CAUTION]
+>
+>Als de datumnotatie niet overeenkomt `YYYY-MM-DDThh:mm:ss.fff-00:00`, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de indeling `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondewaarde toe te voegen die door wordt aangegeven `fff`.
 
 ## Metagegevens exporteren {#export-metadata}
 
