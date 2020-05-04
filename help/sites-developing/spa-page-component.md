@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
-source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -92,7 +92,7 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Alle projecten van het KUUROORD op AEM zouden op Maven Archetype voor Kit van de Aanzet van het KUUROORD moeten worden gebaseerd.
+>Om het even welk AEM project zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM moeten, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden op het Geweven Archetype voor Kit van de Aanzet van het KUUROORD moeten worden gebaseerd.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 
