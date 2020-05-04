@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
-source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -37,7 +37,7 @@ U zou met de [structuur van een toepassing van het KUUROORD voor AEM](/help/site
 >[!CAUTION]
 >Dit document gebruikt de app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Alle projecten van het KUUROORD op AEM zouden op [Maven Archetype voor Kit](https://github.com/adobe/aem-spa-project-archetype)van de Aanzet van het KUUROORD moeten worden gebaseerd.
+>Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## De component Weer {#the-weather-component}
 
