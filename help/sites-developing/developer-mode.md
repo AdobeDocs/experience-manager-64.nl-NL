@@ -10,7 +10,7 @@ topic-tags: components
 content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
 
 ---
 
@@ -35,15 +35,8 @@ Deze hulp een ontwikkelaar om:
 >
 >* Deze optie is alleen beschikbaar in de interface met aanraakbediening (wanneer u pagina&#39;s bewerkt).
 >* Is niet beschikbaar op mobiele apparaten of kleine vensters op het bureaublad (vanwege ruimtebeperkingen).
-   >
-   >  
-* Dit gebeurt wanneer de breedte minder dan 1024 px is.
-   >
-   >
-* Vereist de juiste machtigingen/rechten:
-   >
-   >  
-* De toegang tot de Wijze van de Ontwikkelaar wordt gegeven aan gebruikers die schrijftoegang op hebben `/apps`.
+   >   * Dit gebeurt wanneer de breedte minder dan 1024 px is.
+>* Deze optie is alleen beschikbaar voor gebruikers die lid zijn van de `administrators` groep.
 
 
 >[!CAUTION]
