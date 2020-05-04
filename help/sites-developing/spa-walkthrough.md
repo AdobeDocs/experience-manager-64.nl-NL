@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 77b42490-15db-41d5-9757-17009f1c1efd
 translation-type: tm+mt
-source-git-commit: a77bdac97c81bed6fcfc4235bebf764be10bad72
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -44,7 +44,7 @@ De analyse is gebaseerd op standaard functionaliteit AEM en de steekproefWij.Ret
 >
 >Dit document gebruikt de app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Alle projecten van het KUUROORD op AEM zouden op [Maven Archetype voor Kit](https://github.com/adobe/aem-spa-project-archetype)van de Aanzet van het KUUROORD moeten worden gebaseerd.
+>Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ### Wat is een SPA? {#what-is-a-spa}
 
@@ -102,7 +102,7 @@ Wanneer een KUUROORD aan hefboomwerking de Redacteur van AEM SPA wordt gebouwd, 
 >De analyse is gebaseerd op standaard functionaliteit AEM en de steekproefWij.Retail app van het Dagboek. Aan de volgende eisen moet worden voldaan:
 >
 >* [AEM versie 6.4 met servicepack 2](/help/release-notes/sp-release-notes.md)
->* [Installeer de steekproefWij.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
+>* [Installeer de steekproefWe.Retail app van het Dagboek beschikbaar op GitHub hier.](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)
 >
 
 
