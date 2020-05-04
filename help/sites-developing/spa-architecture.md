@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 translation-type: tm+mt
-source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 ---
 
@@ -27,9 +27,9 @@ Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen
 >
 >De redacteur van het KUUROORD is de geadviseerde oplossing voor projecten die het kader van het KUUROORD gebaseerde cliënt-kant teruggeven (b.v. Reageren of Hoekig) vereisen.
 
-## Maven Archetype voor SPA Starter Kit {#maven-archetype-for-spa-starter-kit}
+## AEM-projectarchetype {#aem-project-archetype}
 
-Om het even welk project van het KUUROORD op AEM zou hefboomwerking [Maven Archetype voor Kit](https://github.com/adobe/aem-spa-project-archetype)van de Aanzet van het KUUROORD moeten.
+Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## SBO-ontwikkelingsbeginselen voor AEM {#spa-development-principles-for-aem}
 
@@ -84,7 +84,7 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
    <th><strong>Nadelen</strong></th> 
   </tr>
   <tr>
-   <td>AEM wordt gebruikt als hoofdCMS zonder het kader van SDK van de Redacteur van het <a href="/help/sites-developing/spa-reference-materials.md">KUUROORD te gebruiken.</a></td> 
+   <td>AEM wordt gebruikt als koploze CMS zonder het kader van SDK van de Redacteur van het <a href="/help/sites-developing/spa-reference-materials.md">KUUROORD te gebruiken.</a></td> 
    <td>De front-end ontwikkelaar heeft volledige controle over de app.</td> 
    <td><p>Inhoudsauteurs kunnen geen gebruikmaken van de AEM-ervaring voor het schrijven van inhoud.</p> <p>De code is noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td> 
   </tr>
