@@ -3,7 +3,10 @@ title: Ondersteunde bestandsindelingen in AEM Assets
 description: Lijst met bestandsindelingen en MIME-typen die door AEM Assets worden ondersteund en de functies die voor elke indeling worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: d4539e538c299f3b2a076ef4fa60f7013621394e
+source-git-commit: 1f93b2b0c8b1a4e55a67c11937b9c5ce4076ee2a
+workflow-type: tm+mt
+source-wordcount: '1868'
+ht-degree: 2%
 
 ---
 
@@ -77,6 +80,8 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 ## Niet-ondersteunde rasterafbeeldingsindelingen in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 In de volgende lijst worden de subtypen beschreven van bestandsindelingen voor rasterafbeeldingen die *niet* worden ondersteund in Dynamic Media.
+
+Zie ook Niet-ondersteunde bestandsindelingen [detecteren voor dynamische media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
 * PSB-bestanden.
@@ -238,7 +243,7 @@ De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsinde
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 
-Standaard detecteert AEM het bestandstype met de bestandsextensie. AEM kan het van de inhoud van de dossiers ontdekken. Selecteer voor de laatste optie de optie MIME [!UICONTROL detecteren uit inhoud] in [!UICONTROL Day CQ DAM Mime Type Service] in de AEM-webconsole.
+Standaard detecteert AEM het bestandstype met de bestandsextensie. AEM kan het van de inhoud van de dossiers ontdekken. Selecteer voor de laatste optie [!UICONTROL Detect MIME from content] in [!UICONTROL Day CQ DAM Mime Type Service] de AEM-webconsole.
 
 Een lijst van gesteunde types MIME is beschikbaar in CRXDE Lite bij `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
