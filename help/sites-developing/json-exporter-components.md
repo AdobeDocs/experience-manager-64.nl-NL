@@ -10,7 +10,10 @@ topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 3%
 
 ---
 
@@ -55,6 +58,16 @@ Daarnaast wordt hiermee aangegeven dat de klasse Sling Model kan worden aangepas
 >[!NOTE]
 >
 >De `ExporterConstants` klassen en `ComponentExporter` klassen komen uit de `com.adobe.cq.export.json` bundel.
+
+### Meerdere kiezers gebruiken {#multiple-selectors}
+
+Hoewel het geen standaard gebruikscase is, is het mogelijk om veelvoudige selecteurs naast de `model` selecteur te vormen.
+
+```
+https://<server>:<port>/content/page.model.selector1.selector2.json
+```
+
+In dat geval moet de `model` kiezer echter de eerste kiezer zijn en moet de extensie `.json`.
 
 ## De interface van het verkoopmodel notities aanbrengen {#annotate-the-sling-model-interface}
 
