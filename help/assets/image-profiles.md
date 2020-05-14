@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 37fb5430c64e0d5b6b82ec57c47e3c004b6e7f4f
+source-git-commit: 036bb0f6fc00a089e282145cbfde2d48a098ede9
+workflow-type: tm+mt
+source-wordcount: '2546'
+ht-degree: 10%
 
 ---
 
@@ -27,10 +30,14 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 
 U kunt kiezen uit twee opties voor het uitsnijden van afbeeldingen en een optie voor het automatiseren van het maken van kleur- en afbeeldingsstalen.
 
+>[!IMPORTANT]
+>
+>Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim uitsnijden kunt toepassen op mapniveau, raadt Adobe u aan het effect *alleen* in mappen te gebruiken als dat nodig is.
+
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Option</strong></td> 
+   <td><strong>Optie</strong></td> 
    <td><strong>Wanneer gebruiken</strong></td> 
    <td><strong>Beschrijving</strong></td> 
   </tr> 
@@ -63,7 +70,7 @@ U kunt kiezen uit twee opties voor het uitsnijden van afbeeldingen en een optie 
 
 ## Onscherp masker {#unsharp-mask}
 
-Met **Onscherp masker** kunt u een verscherpingsfiltereffect perfectioneren voor de uiteindelijke gedownsampelde afbeelding. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Adobe Photoshop.
+You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final downsampled image. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast die wordt genegeerd, instellen. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Adobe Photoshop.
 
 >[!NOTE]
 >
@@ -74,12 +81,12 @@ In **Onscherp masker** hebt u de volgende filteropties:
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Option</strong></td> 
+   <td><strong>Optie</strong></td> 
    <td><strong>Beschrijving</strong></td> 
   </tr> 
   <tr> 
    <td>Hoeveelheid</td> 
-   <td>Hiermee bepaalt u de hoeveelheid contrast die op de randpixels wordt toegepast. De standaardwaarde is 1,75. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot maximaal 5. Beschouw Hoeveelheid als een maat voor de filterintensiteit. Bereik is 0-5.</td> 
+   <td>Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde is 1,75. Voor afbeeldingen met een hoge resolutie kunt u de resolutie verhogen tot maximaal 5. Beschouw Hoeveelheid als een maat voor de filterintensiteit. Bereik is 0-5.</td> 
   </tr> 
   <tr> 
    <td>Radius</td> 
@@ -100,22 +107,22 @@ Zie [Elementverwerking](config-dms7.md#configuring-asset-processing)configureren
 
 **Dynamische afbeeldingsprofielen** voor media maken:
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen > Middelen > Afbeeldingsprofielen]**.
-1. Tik op **[!UICONTROL Maken]** om een nieuw afbeeldingsprofiel toe te voegen.
+1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Tik **[!UICONTROL Create]** om een nieuw afbeeldingsprofiel toe te voegen.
 1. Voer een profielnaam en waarden in voor onscherp masker, uitsnijden of staal of voor beide.
 
    Het kan handig zijn een profielnaam te gebruiken die specifiek is voor het beoogde doel. Als u bijvoorbeeld een profiel wilt maken dat alleen stalen genereert, dat wil zeggen dat Slim uitsnijden is uitgeschakeld (uitgeschakeld) en Kleur en Afbeeldingsstaal is ingeschakeld (ingeschakeld), kunt u de profielnaam &quot;Slimme stalen&quot; gebruiken.
 
-   Zie ook Opties voor [slim uitsnijden en Slim staal](#crop-options) en [Onscherp masker](#unsharp-mask).
+   Zie ook [Opties voor slim bijsnijden en slimme stalen](#crop-options) en [Onscherp masker](#unsharp-mask).
 
    ![uitsnijden](assets/crop.png)
 
-1. Tik op **[!UICONTROL Opslaan]**. Het nieuwe profiel wordt weergegeven in de lijst met beschikbare profielen.
+1. Tik op **[!UICONTROL Save]**. Het nieuwe profiel wordt weergegeven in de lijst met beschikbare profielen.
 
 ## Dynamische mediaafbeeldingsprofielen bewerken of verwijderen {#editing-or-deleting-image-profiles}
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen > Middelen > Afbeeldingsprofielen]**.
-1. Selecteer het afbeeldingsprofiel dat u wilt bewerken of verwijderen. Selecteer **[!UICONTROL Beeldverwerkingsprofiel]** bewerken als u dit profiel wilt bewerken. Selecteer **[!UICONTROL Afbeeldingsverwerkingsprofiel]** verwijderen om het profiel te verwijderen.
+1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
+1. Selecteer het afbeeldingsprofiel dat u wilt bewerken of verwijderen. Selecteer **[!UICONTROL Edit Image Processing Profile]**. Selecteer **[!UICONTROL Delete Image Processing Profile]** deze optie als u deze wilt verwijderen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
@@ -135,30 +142,30 @@ U kunt afbeeldingsprofielen toepassen op specifieke mappen of op alle elementen.
 
 ### Afbeeldingsprofielen voor dynamische media toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
 
-U kunt een afbeeldingsprofiel toepassen op een map vanuit het menu **[!UICONTROL Gereedschappen]** of vanuit **[!UICONTROL Eigenschappen]** in de map. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren op mappen kunt toepassen.
+U kunt een afbeeldingsprofiel toepassen op een map vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren op mappen kunt toepassen.
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
 #### Dynamische media-afbeeldingsprofielen toepassen op mappen vanuit de gebruikersinterface van Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen > Middelen > Afbeeldingsprofielen]**.
+1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u wilt toepassen op een of meerdere mappen.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tik op Verwerkingsprofiel **[!UICONTROL toepassen op map(pen)]** en selecteer de map of meerdere mappen die u wilt gebruiken voor de zojuist geüploade elementen en tik/klik op **[!UICONTROL Toepassen]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
 #### Dynamische mediaafbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Middelen]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
-1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Eigenschappen]**.
-1. Tik op het tabblad **[!UICONTROL Afbeeldingsprofielen]** . Selecteer het profiel in de vervolgkeuzelijst **[!UICONTROL Profielnaam]** en tik vervolgens op **[!UICONTROL Opslaan en sluiten]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Assets]** en naar de map waarop u een afbeeldingsprofiel wilt toepassen.
+1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
+1. Tik op het tabblad **[!UICONTROL Image Profiles]**. Selecteer het profiel in de vervolgkeuzelijst **[!UICONTROL Profile Name]** en tik vervolgens op **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
 ### Een afbeeldingsprofiel voor dynamische media algemeen toepassen {#applying-an-image-profile-globally}
 
-Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die in AEM-elementen in een map is geüpload.
+Naast het toepassen van een profiel op een map, kunt u ook een profiel globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die in AEM-elementen in een map is geüpload.
 
 **Een profiel voor dynamische media-afbeeldingen algemeen** toepassen:
 
@@ -170,7 +177,7 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 
    * Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`.
 
-      Voeg de eigenschap toe `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` en tik op **[!UICONTROL Alles]** opslaan.
+      Voeg de eigenschap toe `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` en tik op **[!UICONTROL Save All]**.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -190,20 +197,20 @@ Zie ook Het slimme uitsnijdstaal of het slimme staal [bewerken van meerdere afbe
 
 **Het slimme uitsnijdstaal of het slimme staal van één afbeelding** bewerken:
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Middelen]** en vervolgens naar de map waarop een afbeeldingsprofiel voor slimme uitsnijdingen of slimme stalen is toegepast.
+1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Assets]** de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
 
 1. Tik op de map om de inhoud ervan te openen.
 1. Tik op de afbeelding waarvan u het slimme uitsnijdstaal of het slimme staal wilt aanpassen.
-1. Tik op de werkbalk op **[!UICONTROL Slim uitsnijden]**.
+1. Tik op de werkbalk **[!UICONTROL Smart Crop]**.
 
 1. Voer een van de volgende handelingen uit:
 
    * Sleep de schuifregelaar naar links of rechts boven in de rechterbovenhoek van de pagina om respectievelijk de weergave van de afbeelding te vergroten of te verkleinen.
    * Sleep in de afbeelding een hoekgreep om de grootte van het zichtbare gebied van het uitsnijden of staal aan te passen.
    * Sleep het vak of het staal in de afbeelding naar een nieuwe locatie. U kunt alleen afbeeldingsstalen bewerken; kleurstalen zijn statisch.
-   * Tik boven de afbeelding op **[!UICONTROL Vorige versie]** om alle bewerkingen ongedaan te maken en de oorspronkelijke uitsnijding of het oorspronkelijke staal te herstellen.
+   * Tik boven de afbeelding **[!UICONTROL Revert]** om alle bewerkingen ongedaan te maken en het oorspronkelijke uitsnijd of staal te herstellen.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Opslaan]** en tik vervolgens op **[!UICONTROL Sluiten]** om terug te keren naar de map met middelen.
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens **[!UICONTROL Close]** om terug te keren naar de map met middelen.
 
 ## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
@@ -215,10 +222,10 @@ Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieu
 
 **Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen** bewerken:
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Middelen]** en vervolgens naar een map waarop een afbeeldingsprofiel voor slimme uitsnijdingen of slimme stalen is toegepast.
-1. Tik in de map op het pictogram **[!UICONTROL Meer handelingen]** (..) en tik vervolgens op **[!UICONTROL Slim uitsnijden]**.
+1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Assets]**, en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
+1. Tik in de map op het pictogram **[!UICONTROL More Actions]** (...) en tik vervolgens op **[!UICONTROL Smart Crop]**.
 
-1. Voer op de pagina Slimme uitsnijdingen **** bewerken een van de volgende handelingen uit:
+1. Voer op de **[!UICONTROL Edit Smart Crops]** pagina een van de volgende handelingen uit:
 
    * Pas de weergavegrootte van afbeeldingen op de pagina aan.
 
@@ -246,33 +253,33 @@ Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieu
 
    * Maak alle bewerkingen ongedaan en herstel het oorspronkelijke slimme uitsnijdstaal of het oorspronkelijke slimme staal (alleen van toepassing op de huidige bewerkingssessie).
 
-      Tik op **[!UICONTROL Vorige versie]** boven de afbeelding.
+      Tik **[!UICONTROL Revert]** boven de afbeelding.
 
       ![edit_smart_crop-revert](assets/edit_smart_crops-revert.png)
 
 
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Opslaan]**. Tik vervolgens op **[!UICONTROL Sluiten]** om terug te keren naar de map met middelen.
+1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**. Tik vervolgens **[!UICONTROL Close]** om terug te keren naar de map met middelen.
 
 ## Een afbeeldingsprofiel uit mappen verwijderen {#removing-an-image-profile-from-folders}
 
 Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
-U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Gereedschappen]** of vanuit **[!UICONTROL Eigenschappen]** als u in de map bent. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren uit mappen kunt verwijderen.
+U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren uit mappen kunt verwijderen.
 
 ### Dynamische mediaafbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Gereedschappen > Middelen > Afbeeldingsprofielen]**.
+1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u uit een of meerdere mappen wilt verwijderen.
-1. Tik op Verwerkingsprofiel **[!UICONTROL verwijderen uit map(pen)]** en selecteer de map of meerdere mappen waaruit u het profiel wilt verwijderen en tik op **[!UICONTROL Verwijderen]**.
+1. Tik op **[!UICONTROL Remove Processing Profile from Folder(s)]** en selecteer de map of meerdere mappen die u wilt gebruiken om het profiel te verwijderen en tik op **[!UICONTROL Remove]**.
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
 ### Dynamische mediaafbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
-1. Tik op het AEM-logo en navigeer naar **[!UICONTROL Middelen]** en vervolgens naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
-1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Eigenschappen]**.
-1. Selecteer het tabblad **[!UICONTROL Afbeeldingsprofielen]** .
-1. Selecteer **[!UICONTROL Geen in het vervolgkeuzemenu]** Profielnaam **[!UICONTROL en tik vervolgens op]** Opslaan en sluiten ****.
+1. Tik op het AEM-logo en navigeer **[!UICONTROL Assets]** naar de map waarvan u een afbeeldingsprofiel wilt verwijderen.
+1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
+1. Selecteer het **[!UICONTROL Image Profiles]** tabblad.
+1. Selecteer in het vervolgkeuzemenu **[!UICONTROL Profile Name]** de optie **[!UICONTROL None]** en tik vervolgens op **[!UICONTROL Save & Close]**.
 
    Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
