@@ -3,9 +3,9 @@ title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b774b23028f642436b9a17f94da61f8e40bdae9a
+source-git-commit: 1a6c2e9603ae8cb5017abd9bec9fe0c3fdf62dea
 workflow-type: tm+mt
-source-wordcount: '2375'
+source-wordcount: '2391'
 ht-degree: 8%
 
 ---
@@ -13,11 +13,11 @@ ht-degree: 8%
 
 # Metadataschema&#39;s {#metadata-schemas}
 
-In de Elementen van de Manager van de Ervaring van Adobe (AEM), bepaalt een meta-gegevensschema de lay-out van de eigenschappen pagina en de meta-gegevenseigenschappen die voor activa worden getoond die het bepaalde schema gebruiken. Tot de metagegevenseigenschappen behoren titel, beschrijving, MIME-typen, tags, enzovoort.
+In [!DNL Experience Manager Assets], bepaalt een meta-gegevensschema de lay-out van de eigenschappen pagina en de meta-gegevenseigenschappen die voor activa worden getoond die het bepaalde schema gebruiken. Tot de metagegevenseigenschappen behoren titel, beschrijving, MIME-typen, tags, enzovoort.
 
-U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om bestaande schema&#39;s te wijzigen of douanemetagegevensschema&#39;s toe te voegen.
+U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om bestaande schema&#39;s te wijzigen of douanemetagegevensschema&#39;s toe te voegen. Ga als volgt te werk om de pagina met eigenschappen voor een element weer te geven en te bewerken:
 
-1. Als u de eigenschappenpagina voor een element wilt weergeven, klikt of tikt u op het element **[!UICONTROL View Properties]** op **[!UICONTROL Quick Actions]** het element in de Kaartweergave.
+1. Klik of tik **[!UICONTROL View Properties]** van snelle acties op de middelentegel in de mening van de Kaart.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -25,7 +25,7 @@ U kunt de redacteur van de Vormen van het Schema van Meta-gegevens gebruiken om 
 
    ![chlimage_1-171](assets/chlimage_1-171.png)
 
-1. Bewerk de eigenschappen van de bewerkbare metagegevens onder de verschillende tabbladen.
+1. U kunt de eigenschappen van de bewerkbare metagegevens bewerken onder de beschikbare tabbladen. U kunt het element echter niet wijzigen [!UICONTROL Type] op het [!UICONTROL Basic] tabblad Eigenschappen.
 
    ![chlimage_1-172](assets/chlimage_1-172.png)
 
@@ -77,7 +77,7 @@ U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemafo
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. Pas op de pagina **[!UICONTROL Metadata Schema Editor]** de eigenschappenpagina van de asset aan door een of meer componenten uit de lijst met componenttypen op het tabblad **[!UICONTROL Build Form]** naar het tabblad **[!UICONTROL Basic]** te slepen.
 
