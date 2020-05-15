@@ -1,9 +1,12 @@
 ---
-title: 'Samengestelde elementen beheren en '
+title: Samengestelde elementen beheren en subelementen genereren.
 description: Leer hoe u verwijzingen naar AEM-elementen maakt in InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer gebruikt om afzonderlijke pagina's van bestanden met meerdere pagina's weer te geven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 28ebd6c7648e4f32203e20dbc8a7d7f205acb740
+source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+workflow-type: tm+mt
+source-wordcount: '1329'
+ht-degree: 0%
 
 ---
 
@@ -25,15 +28,15 @@ U kunt vanuit een Adobe Illustrator-bestand verwijzen naar bestaande AEM-element
 1. Plaats met de [AEM-bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html)de opslagplaats voor AEM-middelen als een station op uw lokale computer. Navigeer in het gekoppelde station naar de locatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van het gekoppelde station naar het Illustrator-bestand.
 1. Sla het Illustrator-bestand op het gekoppelde station op of [upload het bestand naar](managing-assets-touch-ui.md#uploading-assets) de AEM-opslagplaats.
-1. Nadat de werkstroom is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande activa AEM zijn vermeld onder **[!UICONTROL Afhankelijkheden]** in de **[!UICONTROL kolom van Verwijzingen]** .
+1. Nadat de werkstroom is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande AEM activa zijn vermeld onder **[!UICONTROL Dependencies]** in de **[!UICONTROL References]** kolom.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
-1. De middelen waarnaar wordt verwezen die onder **[!UICONTROL Afhankelijkheden]** verschijnen kunnen ook door dossiers buiten huidige worden van verwijzingen voorzien. Als u een lijst met referentiebestanden voor een element wilt weergeven, klikt u op het element onder **[!UICONTROL Afhankelijkheden]**.
+1. De middelen waarnaar wordt verwezen die onder **[!UICONTROL Dependencies]** worden weergegeven, kunnen ook worden verwezen door andere bestanden dan de huidige. Als u een lijst wilt weergeven met bestanden die naar een element verwijzen, klikt u op het element onder **[!UICONTROL Dependencies]**.
 
    ![chlimage_1-259](assets/chlimage_1-259.png)
 
-1. Klik op het pictogram **[!UICONTROL Weergave-eigenschappen]** op de werkbalk. De lijst met bestanden die verwijzen naar het huidige element op de pagina met eigenschappen wordt weergegeven onder de kolom **[!UICONTROL Verwijzingen]** op het tabblad **[!UICONTROL Standaard]** .
+1. Click the **[!UICONTROL View Properties]** icon from the toolbar. Op de pagina met eigenschappen wordt de lijst met bestanden die naar het huidige element verwijzen, weergegeven onder de **[!UICONTROL References]** kolom op het **[!UICONTROL Basic]** tabblad.
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
@@ -84,29 +87,29 @@ Voor de ondersteunde elementen met indelingen die uit meerdere pagina&#39;s best
 
 Genereren van subelementen is standaard uitgeschakeld. Voer de volgende stappen uit om het genereren van subelementen in te schakelen:
 
-1. Meld u aan bij Experience Manager als beheerder. Ga naar **[!UICONTROL Extra > Workflow > Modellen]**.
-1. Selecteer de **[!UICONTROL DAM-workflow Element]** bijwerken en klik op **[!UICONTROL Bewerken]**.
-1. Klik op **[!UICONTROL Zijpaneel]** in-/uitschakelen en zoek de stap **[!UICONTROL Subelement]** maken. Voeg de stap toe aan de workflow. Klik op **[!UICONTROL Synchroniseren]**.
+1. Meld u aan bij Experience Manager als beheerder. Ga naar **[!UICONTROL Tools > Workflow > Models]**.
+1. Select **[!UICONTROL DAM Update Asset]** workflow and click **[!UICONTROL Edit]**.
+1. Klik **[!UICONTROL Toggle Side Panel]** en zoek de **[!UICONTROL Create Sub Asset]** stap. Voeg de stap toe aan de workflow. Klik op **[!UICONTROL Sync]**.
 
 Voer een van de volgende handelingen uit om de subelementen te genereren:
 
-* Nieuwe elementen: De workflow [!UICONTROL DAM Update Assets] wordt uitgevoerd op elk nieuw element dat naar AEM wordt geüpload. Subelementen worden automatisch gegenereerd voor nieuwe elementen die uit meerdere pagina&#39;s bestaan.
-* Bestaande elementen met meerdere pagina&#39;s: Voer handmatig de workflow [!UICONTROL DAM Update Assets] uit volgens een van de volgende stappen:
+* Nieuwe elementen: De [!UICONTROL DAM Update Assets] workflow wordt uitgevoerd op elk nieuw element dat naar AEM wordt geüpload. Subelementen worden automatisch gegenereerd voor nieuwe elementen die uit meerdere pagina&#39;s bestaan.
+* Bestaande elementen met meerdere pagina&#39;s: Voer handmatig de [!UICONTROL DAM Update Assets] workflow uit volgens een van de volgende stappen:
 
-   * Selecteer een element en klik op [!UICONTROL Tijdlijn] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klik op Workflow starten, selecteer [!UICONTROL DAM Update Asset], klik op [!UICONTROL Start]en klik op [!UICONTROL Doorgaan].
-   * Selecteer een element en klik op [!UICONTROL Maken > Workflow] op de werkbalk. Selecteer in het pop-updialoogvenster de [!UICONTROL DAM-workflow Element] bijwerken, klik op [!UICONTROL Start]en [!UICONTROL Ga verder].
+   * Selecteer een element en klik [!UICONTROL Timeline] om het linkerdeelvenster te openen. U kunt ook de sneltoets gebruiken `alt + 3`. Klik [!UICONTROL Start Workflow], selecteer [!UICONTROL DAM Update Asset], klik [!UICONTROL Start], en klik [!UICONTROL Proceed].
+   * Select an asset and click [!UICONTROL Create > Workflow] from the toolbar. Selecteer in het pop-updialoogvenster de [!UICONTROL DAM Update Asset] workflow, klik [!UICONTROL Start]en klik op [!UICONTROL Proceed].
 
-Met name voor Microsoft Word-documenten voert u de workflow **[!UICONTROL DAM Parse Word Documents]** uit. Er wordt een `cq:Page` component gegenereerd op basis van de inhoud van het Microsoft Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
+Met name voor Microsoft Word-documenten voert u de **[!UICONTROL DAM Parse Word Documents]** workflow uit. Er wordt een `cq:Page` component gegenereerd op basis van de inhoud van het Microsoft Word-document. De afbeeldingen die uit het document zijn geëxtraheerd, worden vanuit de `cq:Page` component gebruikt. Deze afbeeldingen worden geëxtraheerd, zelfs als het genereren van subelementen is uitgeschakeld.
 
 ## Subelementen weergeven {#viewing-subassets}
 
-De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op het pictogram ![Linkerspoor en klik op](assets/do-not-localize/aem_leftrail_contentonly.png) Submiddelen **** in de lijst. Wanneer u **[!UICONTROL Subassets]** in de lijst selecteert. U kunt ook de sneltoets gebruiken `alt + 5`.
+De subelementen worden alleen weergegeven als de subelementen zijn gegenereerd en beschikbaar zijn voor het geselecteerde element met meerdere pagina&#39;s. Open het element met meerdere pagina&#39;s om de gegenereerde subelementen weer te geven. Klik in de linkerbovenhoek van de pagina op het pictogram ![Linkerspoor en klik](assets/do-not-localize/aem_leftrail_contentonly.png) **[!UICONTROL Subassets]** in de lijst. Wanneer u een keuze maakt in de **[!UICONTROL Subassets]** lijst. U kunt ook de sneltoets gebruiken `alt + 5`.
 
 ![Subelementen weergeven voor elementen die uit meerdere pagina&#39;s bestaan](assets/view_subassets_simulation.gif)
 
 ## Pagina&#39;s van een bestand met meerdere pagina&#39;s weergeven {#view-pages-of-a-multi-page-file}
 
-U kunt een bestand met meerdere pagina&#39;s, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden, weergeven met de functie Paginaviewer van AEM-middelen. Open een element met meerdere pagina&#39;s en klik op Pagina&#39;s **** weergeven in de linkerbovenhoek van de pagina. In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
+U kunt een bestand met meerdere pagina&#39;s, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden, weergeven met de functie Paginaviewer van AEM-middelen. Open een element met meerdere pagina&#39;s en klik in de linkerbovenhoek van de pagina. **[!UICONTROL View Pages]** In de Paginaviewer die wordt geopend, worden de pagina&#39;s van het element en de besturingselementen weergegeven waarmee u door elke pagina kunt bladeren en erop kunt inzoomen.
 
 ![Pagina&#39;s van elementen met meerdere pagina&#39;s weergeven en bekijken](assets/view_multipage_asset_fmr.gif)
 
@@ -114,12 +117,20 @@ Voor InDesign kunt u pagina&#39;s uitnemen met InDesign-server. Als de voorverto
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
-* **[!UICONTROL Bureaubladhandelingen]** om een specifiek submiddel te openen of weer te geven met de AEM-bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) configureren als u AEM-bureaubladtoepassing gebruikt.
+* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met de AEM-bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) configureren als u AEM-bureaubladtoepassing gebruikt.
 
-* **[!UICONTROL Met de optie Eigenschappen]** wordt de pagina [!UICONTROL Eigenschappen] van het specifieke subelement geopend.
+* **[!UICONTROL Properties]** Hiermee opent u de [!UICONTROL Properties] pagina van het specifieke subelement.
 
-* **[!UICONTROL Met de optie Annoteren]** kunt u het specifieke subelement annoteren. De annotaties die u op afzonderlijke subelementen gebruikt, worden samen verzameld en weergegeven wanneer het bovenliggende element wordt geopend voor weergave.
+* **[!UICONTROL Annotate]** kunt u het specifieke subelement van een annotatie voorzien. De annotaties die u op afzonderlijke subelementen gebruikt, worden samen verzameld en weergegeven wanneer het bovenliggende element wordt geopend voor weergave.
 
-* **[!UICONTROL Met de optie Paginaoverzicht]** worden alle subelementen tegelijkertijd weergegeven.
+* **[!UICONTROL Page Overview]** worden alle subelementen tegelijkertijd weergegeven.
 
-* **[!UICONTROL De optie Tijdlijn]** van de linkerspoorstaaf na het klikken van het pictogram ![](assets/do-not-localize/aem_leftrail_contentonly.png) Linker spoorstaaf toont de activiteitenstroom voor het dossier.
+* **[!UICONTROL Timeline]** Nadat u op het pictogram ![](assets/do-not-localize/aem_leftrail_contentonly.png) Linkerspoor hebt geklikt, wordt de activiteitsstroom voor het bestand weergegeven.
+
+## Beste werkwijzen en beperking {#best-practice-limitation-tips}
+
+* Bij elke implementatie van Experience Manager kan het genereren van submiddelen zeer bronintensief zijn. Als u subassets genereert wanneer complexe elementen worden geüpload, voegt u de stap toe in de DAM-workflow voor het bijwerken van middelen. Als u op verzoek subassets genereert, maakt u een aparte workflow om subassets te genereren. Met een speciale workflow kunt u de andere stappen in de workflow voor DAM-update-elementen overslaan en computerbronnen opslaan.
+
+>[!MORELIKETHIS]
+>
+>* [Adobe Experience Manager-bureaubladtoepassing gebruiken](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
