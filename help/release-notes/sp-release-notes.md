@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b46378657b8a173986a669beaa56468886b23266
+source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+workflow-type: tm+mt
+source-wordcount: '21556'
+ht-degree: 0%
 
 ---
 
@@ -94,7 +97,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * ZIP-bestand dat is gedownload van DAM, kan niet worden geopend met WinZip (NPR-31745).
 
-### Integraties {#integrations-6480}
+### Integrations {#integrations-6480}
 
 * De vervolgkeuzemenu&#39;s **Company** and **Reporting** Suite zijn verborgen als Bron **** melden is geselecteerd tijdens het configureren van Adobe Analytics in Experience Manager-cloudservices (NPR-31729).
 
@@ -186,6 +189,10 @@ Enkele belangrijke hoogtepunten van AEM 6.4.7.0 zijn:
 * De exportversie van het API-pakket `package com.day.cq.dam.handler.standard.msoffice` dat door de `dam-handler` bundel wordt ondersteund, wordt bijgewerkt naar 6.0.0 (CQ-4279059).
 Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste implementatie gebruikt, wordt u geadviseerd om uw `dam-handler` bundel met de recentste uber jar te compileren.
 
+* Er is een nieuwe kolom voor de aanmaakdatum toegevoegd, die sorteerbaar is, in de DAM-lijstweergave en in de resultaten voor het zoeken naar middelen in de lijstweergave (NPR-31311).
+
+* Asset sorting based on Name column is allowed in List view (NPR-31299).
+
 **Oplossingen**
 
 * Metagegevens voor sommige PDF-documenten worden niet bijgewerkt en naar de PDF opgeslagen bij het wijzigen van de titel (NPR-31575).
@@ -266,7 +273,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 * Wanneer u het model van het inhoudsfragment opslaat, wordt de tijd in het datum- en tijdveld ingesteld op 00:00 (NPR-30540).
 
-##### Integraties {#integrations-6470}
+##### Integrations {#integrations-6470}
 
 * Bij het configureren van Adobe Launch wordt een slash (/) toegevoegd aan de URL van de bibliotheek (NPR-30700).
 
@@ -810,7 +817,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.4.0 zijn:
 * Wanneer u een inhoudsfragment &quot;jcr:lastModified by&quot;- en &quot;jcr:lastModified&quot;-eigenschap bewerkt, worden waarden bijgewerkt zonder dat de gebruiker wijzigingen aanbrengt. NPR-27847: Hotfix voor CQ-4257138
 * Content Fragments versioning compare diff improvements for AEM 6.4. NPR-27764
 * Als er geen cq:allowedTemplates op /content/experience-fragments wordt bepaald en allowedPaths wordt gebruikt op het malplaatje van het Fragment van de Ervaring, wordt een fout geworpen wanneer het Fragment van de Ervaring wordt bewogen/gekopieerd. NPR-27487: Hotfix voor CQ-4257489
-* De knop Maken wordt weergegeven wanneer u de nieuwe gebruiker vernieuwt. NPR-27335: Hotfix voor CQ-4255360
+* De knop Maken wordt weergegeven wanneer u de nieuwe gebruiker vernieuwt. NPR-27335: Hotfix voor CQ-4253360
 * Wanneer u een gepubliceerde pagina probeert te verplaatsen, is het aantal Pagina&#39;s waarnaar wordt verwezen op de eerste pagina van de wizard Pagina verplaatsen onjuist. NPR-28111: Hotfix voor CQ-4259663
 * (Touch UI) References Rail geeft geen binnenkomende koppelingen weer. NPR-28529: Hotfix voor CQ-4262306
 * Kan geen component- en pagina-eigenschappen bewerken nadat AEM 6.4.3 is geïnstalleerd. NPR-27998: Hotfix voor CQ-4261216, CQ-4260441
@@ -994,7 +1001,7 @@ Eén bundel blijft geïnstalleerd nadat het Forms Management-pakket op de vertak
 
 **Formulieren - workflow**
 
-* HTML5-formulieren met het standaardverzendproces in an.lca werken niet op JBoss 7. NPR-28675: Hotfix voor CQ-4243928
+* HTML5-formulieren met het standaardverzendproces in an.lca werken niet op JBoss 7. NPR-28675: Hotfix voor CQ-4242928
 * Kan PDF-formulieren niet verzenden in HTML-werkruimte. NPR-28058: Hotfix voor CQ-4260373
 * De gegevens van de klant worden gedrukt in informatielogboeken gebruikend de Werkstroom van de Vormen van de Dienst van de Dienst van de BDM aanhalen. Hotfix voor CQ-4260385
 
@@ -1106,7 +1113,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * IndexOutOfBoundsException in ResourceProviderTracker. NPR-26968: Hotfix voor GRANITE-23310
 * De JMX-console accumuleert een groot aantal beheersessies en elke 5 minuten wordt een nieuwe sessie geopend. NPR-26958: Hotfix voor CQ-4251090
 * Na een upgrade van 6.2 naar 6.4 geeft het logbestand stacktracering weer voor niet-gesloten bronnenoplosser com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck. NPR-26176: Hotfix voor graniet-21734
-* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4242928
+* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4243928
 * De replicatie gebruikt verlopen Token OAuth tot het ontbreekt. NPR-25894
 * Beperkte pagina (pagina voor gesloten gebruikersgroep) met sling: alias leidt de gebruiker niet naar de aanmeldingspagina. NPR-25715: Hotfix voor graniet=22263
 * Bij het publiceren van tags wordt geen activiteit weergegeven in de gebruikersinterface. Hotfix voor CQ-4255961
@@ -1370,7 +1377,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 
 **Platform**
 
-* Lus opnieuw indexeren| NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op zijn plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
+* Lus opnieuw indexeren | NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op zijn plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
 * Grensoverschrijdende overschrijving van intern gemarkeerd pad /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Probleem tijdens het uitvoeren van patroondetector. NPR-25036: Hotfix voor CQ-4248597
 * Logboekvermeldingen die niet zijn geschreven vanwege NPE in LogEntryImpl. NPR-25627: Hotfix voor graniet-22383
 * Replicatie van gebeurtenis delete controleert niet op rechten. NPR-25679: Hotfix voor CQ-4241234
@@ -1393,7 +1400,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 
 **Gemeenschappen**
 
-* (Bestandsbibliotheek) Elementen downloaden met lege spaties als gevolg van indelingsproblemen. NPR-23260: Hotfix voor CQ-4245159
+* (Bestandsbibliotheek) Elementen downloaden met lege spaties als gevolg van indelingsproblemen. NPR-24260: Hotfix voor CQ-4245159
 * Hiermee verhelpt u verschillende sociale problemen van Adobe. NPR-24247: Hotfix voor CQ-4245054, CQ-4245120, CQ-4245296
 * Het oneindige schuiven voor leden en groepenconsole mislukt voor het geval dat de auteur op verschillende contextpaden publiceert. NPR-24437: Hotfix voor CQ-4246013
 * De post keert niet aan de onbeantwoorde staat terug zelfs bij het verwijderen uit de beantwoorde staat en de score daalt niet. NPR-24419: Hotfix voor CQ-4245797, CQ-4245932
@@ -1437,7 +1444,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * De Middelen van Enablement zijn niet zichtbaar bij auteur. Hotfix voor CQ-4252618
 * Meldingen worden niet gegenereerd voor verbinding van een onbekende gebruiker. Hotfix voor CQ-4245132
 * Groepzoekactie wordt niet weergegeven op linkerspoor. Hotfix voor CQ-4252621
-* (Auteur) Paginering werkt niet voor Groepenconsole. Hotfix voor CQ-4242786
+* (Auteur) Paginering werkt niet voor Groepsconsole. Hotfix voor CQ-4242786
 * jQuery UI-upgrade. Hotfix voor CQ-4248894
 * Voer een upgrade uit naar de nieuwste versie van SCORM 2017.1. NPR-25675: Hotfix voor CQ-4240671
 * De velden &quot;Samenstellen namens&quot; zijn zichtbaar voor gebruikers buiten de gebruikersgemeenschap. NPR-25331: Hotfix voor CQ-4247858
@@ -1737,7 +1744,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Internationalisatie werkt niet op taalniveau. NPR-22967, NPR-23046: Hotfix voor graniet-21111
 * Proactieve back-up voor granite.ui.commons-oplossingen. NPR-23537
 * Proactieve back-up voor granite.ui.content-oplossingen. NPR-23535
-* Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23538
+* Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23536
 * Kan niet meerdere gebruikers tegelijk uit de groep verwijderen. NPR-23846
 * (OMEGA) Rapporteer &quot;Functie&quot; alleen in het Engels. NPR-23989: Hotfix voor graniet-21231
 * (Design Importer) Als u een pagina importeert, worden de JS, css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
