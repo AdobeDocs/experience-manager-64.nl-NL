@@ -3,7 +3,10 @@ title: Richtlijnen voor afstelling van middelenprestaties
 description: Belangrijke aandachtsgebieden rond AEM-configuratie, wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '3161'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de 
 
 Ervan uitgaande dat de server over voldoende geheugen beschikt, configureert u een RAM-station. Voer in Linux de volgende opdrachten uit om een 8 GB RAM-station te maken:
 
-```
+```shell
 mkfs -q /dev/ram1 800000
  mkdir -p /mnt/aem-tmp
  mount /dev/ram1 /mnt/aem-tmp
@@ -81,7 +84,7 @@ Het uitvoeren van S3 of de Gedeelde Datastore van het Dossier kan helpen om schi
 
 Met de volgende S3 Data Store-configuratie ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) kon Adobe 12,8 TB binaire grote objecten (BLOB&#39;s) uitpakken uit een bestaande bestandsgegevensopslag naar een S3-gegevensopslag op een klantsite:
 
-```
+```conf
 accessKey=<snip>
  secretKey=<snip>
  s3Bucket=<snip>
@@ -125,10 +128,10 @@ Stel waar mogelijk de DAM Update Asset-workflow in op Transient. De instelling v
 
 1. Open `http://localhost:4502/miscadmin` de AEM-instantie die u wilt configureren.
 
-1. Vouw in de navigatiestructuur **[!UICONTROL Gereedschappen]** > **[!UICONTROL Workflow]** > **[!UICONTROL Modellen]** > **[!UICONTROL dam]** uit.
-1. Dubbelklik op **[!UICONTROL DAM Update Asset]**.
-1. Ga in het zwevende gereedschapvenster naar het tabblad **[!UICONTROL Pagina]** en klik vervolgens op **[!UICONTROL Pagina-eigenschappen]**.
-1. Selecteer **[!UICONTROL Tijdelijke workflow]** en klik op **[!UICONTROL OK]**.
+1. Vouw in de navigatiestructuur **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
+1. Dubbelklik **[!UICONTROL DAM Update Asset]**.
+1. Ga in het zwevende deelvenster met gereedschappen naar de **[!UICONTROL Page]** tab en klik op **[!UICONTROL Page Properties]**.
+1. Selecteer **[!UICONTROL Transient Workflow]** Klikken **[!UICONTROL OK]**.
 
    >[!NOTE]
    >
@@ -283,13 +286,13 @@ Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve kr
 
 ## Replicatie {#replication}
 
-Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publicatieinstanties herhaalt, die de auteursinstantie vrijmaken.
+Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
 
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
 1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
-1. Voor elk van die replicatieagenten, laat **[!UICONTROL bij Ontvangen]** op het **[!UICONTROL lusje van Trekkers]** toe
+1. Voor elk van die replicatieagenten, laat **[!UICONTROL On Receive]** op het **[!UICONTROL Triggers]** lusje toe
 
 >[!NOTE]
 >
@@ -297,7 +300,7 @@ Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bij
 
 ## Indexen zoeken {#search-indexes}
 
-Zorg ervoor u de recentste de dienstpakken en op prestaties betrekking hebbende hotfixes uitvoert aangezien zij vaak updates aan systeemindexen omvatten. Zie Tips voor [afstemmen van prestaties| 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) voor bepaalde indexoptimalisaties die kunnen worden toegepast, afhankelijk van uw versie van AEM.
+Zorg ervoor u de recentste de dienstpakken en op prestaties betrekking hebbende hotfixes uitvoert aangezien zij vaak updates aan systeemindexen omvatten. Zie Tips voor [afstemmen van prestaties | 6.x](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) voor bepaalde indexoptimalisaties die kunnen worden toegepast, afhankelijk van uw versie van AEM.
 
 Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Voor details, zie [methodologie voor het analyseren van langzame vragen](https://aemfaq.blogspot.com/2014/08/oak-query-log-file-analyzer-tool.html) en het [creëren van douaneindexen](/help/sites-deploying/queries-and-indexing.md). Voor extra inzichten rond vraag en index beste praktijken, zie [Beste praktijken voor Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 
@@ -308,21 +311,21 @@ Sommige optimalisaties kunnen worden uitgevoerd op de indexconfiguraties van de 
 Werk de configuratie van LuceneIndexProvider bij:
 
 1. Ga naar /system/console/configMgrorg.apache.jackrabbit.oak.plugins.index.lucene.LuceneIndexProviderService
-1. Schakel **[!UICONTROL CopyOnRead-, CopyOnWrite- en Prefetch-indexbestanden]** in eerdere versies dan AEM 6.2 in. Deze waarden zijn standaard ingeschakeld in AEM 6.2 en latere versies.
+1. Schakel deze optie in **[!UICONTROL CopyOnRead , CopyOnWrite , and Prefetch Index Files]** versies vóór AEM 6.2 in. Deze waarden zijn standaard ingeschakeld in AEM 6.2 en latere versies.
 
 Indexconfiguraties bijwerken om de herindexatietijd te verbeteren:
 
 1. CRXDe /crx/de/index.jsp openen en aanmelden als beheerder
 1. Bladeren naar /ak:index/lucene
-1. Voeg een String[] -eigenschap met de naam **[!UICONTROL excludePaths]** toe met de waarden &quot;/var&quot;, &quot;/etc/workflow/instances&quot; en &quot;/etc/replication&quot;
+1. Voeg een eigenschap String[] toe met de naam **[!UICONTROL excludedPaths]** &quot;/var&quot;, &quot;/etc/workflow/instances&quot; en &quot;/etc/replication&quot;
 1. Blader naar /oak:index/damAssetLucene
-1. Voeg een eigenschap String[] met de naam **[!UICONTROL includePaths]** toe met één waarde &quot;/content/dam&quot;
+1. Voeg een bezit van het Koord[] toe genoemd **[!UICONTROL includedPaths]** met één waarde &quot;/content/dam&quot;
 1. Opslaan
 
 (Alleen AEM6.1 en 6.2) Werk de index ntBaseLucene bij om de prestaties van het verwijderen en verplaatsen van elementen te verbeteren:
 
 1. Bladeren naar */einde:index/ntBaseLucene/indexRules/nt:base/properties*
-1. Voeg twee nt toe:niet-gestructureerde knopen **[!UICONTROL slingResource]** en **[!UICONTROL damResolvedPath]** onder */eak:index/ntBaseLucene/indexRules/nt:base/properties*
+1. Twee nt:ongestructureerde knopen **[!UICONTROL slingResource]** en **[!UICONTROL damResolvedPath]** onder */eak:index/ntBaseLucene/indexRules/nt:base/properties*
 1. Stel de eigenschappen hieronder op de knooppunten in (waarbij ordered en propertyIndex-eigenschappen van het type *Boolean* zijn):
 
    slingResource
@@ -346,18 +349,18 @@ Indexconfiguraties bijwerken om de herindexatietijd te verbeteren:
    type=&quot;String&quot;
 
 1. Stel de eigenschap in op het knooppunt /oak:index/ntBaseLucene `reindex=true`
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op **[!UICONTROL Save All]**
 1. Controleer error.log om te zien wanneer het indexeren wordt voltooid:
 
-   Indexering voltooid voor indexen: [/ak:index/ntBaseLucene]
+   Indexering voltooid voor indexen: [/oak:index/ntBaseLucene]
 
 1. U kunt ook zien dat het indexeren door de /oak:index/ntBaseLucene knoop in CRXDe te verfrissen wordt voltooid aangezien het herindexbezit aan vals zou terugkeren
-1. Nadat het indexeren is voltooid, gaat u terug naar CRXDe en stelt u de eigenschap **[!UICONTROL type]** in op uitgeschakeld voor deze twee indexen
+1. Nadat het indexeren is voltooid, gaat u terug naar CRXDe en stelt u de **[!UICONTROL type]** eigenschap in op uitgeschakeld voor deze twee indexen
 
    * */oak:index/slingResource*
    * */oak:index/damResolvedPath*
 
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op **[!UICONTROL Save All]**
 
 Lucene-tekstextractie uitschakelen:
 
@@ -416,4 +419,4 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Optimaliseer de configuratie van de index van Lucene.
 * Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de Technische Ondersteuning van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik deze optie `guessTotal` om de queryprestaties te optimaliseren.
-* Als u AEM vormt om dossiertypes van de inhoud van de dossiers (door de Dienst [!UICONTROL van het Type van] Dag CQ DAM in de Console [!UICONTROL van het Web van]AEM te vormen) te ontdekken, upload vele dossiers in bulk tijdens niet piekuren aangezien de verrichting middel-intensief is.
+* If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
