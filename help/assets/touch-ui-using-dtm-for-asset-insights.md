@@ -3,7 +3,10 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '574'
+ht-degree: 3%
 
 ---
 
@@ -16,28 +19,28 @@ Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat t
 
 Voer deze stappen uit om Asset Insights in te schakelen via DTM:
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Middelen > Inzichtsconfiguratie]**.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Insights Configuration]**.
 1. [AEM-instantie configureren met DTM Cloud Service](../sites-administering/dtm.md)
 
-   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Accountinstellingen]** bezoekt via het pictogram Profiel. Deze stap is niet vereist vanuit het oogpunt van Asset Insights, omdat de integratie van AEM-sites met Asset Insights nog in de werkzaamheden plaatsvindt.
+   De API-token moet beschikbaar zijn wanneer u zich aanmeldt bij [https://dtm.adobe.com](https://dtm.adobe.com/) en **[!UICONTROL Account Settings]** via het pictogram Profiel gaat. Deze stap is niet vereist vanuit het oogpunt van Asset Insights, omdat de integratie van AEM-sites met Asset Insights nog in de werkzaamheden plaatsvindt.
 
 1. Meld u aan bij [https://dtm.adobe.com](https://dtm.adobe.com/)en selecteer een bedrijf.
 1. Een bestaande webeigenschap maken/openen
 
-   * Selecteer het tabblad **[!UICONTROL Webeigenschappen]** en tik op Eigenschap **** toevoegen/klik op Eigenschappen toevoegen.
-   * Werk de velden naar wens bij en tik op Eigenschap **** maken/klik op Eigenschap [maken (zie](https://helpx.adobe.com/experience-manager/using/dtm.html)documentatie).
+   * Selecteer het **[!UICONTROL Web Properties]** tabblad en tik/klik op **[!UICONTROL Add Property]**.
+   * Werk de velden naar wens bij en tik/klik **[!UICONTROL Create Property]** (zie [documentatie](https://helpx.adobe.com/experience-manager/using/dtm.html)).
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
-1. Selecteer op het tabblad **[!UICONTROL Regels]** de optie Regels **[!UICONTROL voor het laden van]** pagina in het navigatievenster en tik op Nieuwe regel **** maken of klik op Nieuwe regelmaken.
+1. Selecteer op het **[!UICONTROL Rules]** tabblad een optie **[!UICONTROL Page Load Rules]** in het navigatiegebied en tik/klik **[!UICONTROL Create New Rule]**.
 
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
-1. Vouw **[!UICONTROL JavaScript-/tags]** van derden uit. Tik vervolgens op Nieuw script **** toevoegen of klik op het tabblad **[!UICONTROL Opeenvolgende HTML]** om het dialoogvenster Script te openen.
+1. Uitbreiden **[!UICONTROL Javascript /Third Party Tags]**. Tik vervolgens op of klik op **[!UICONTROL Add New Script]** het **[!UICONTROL Sequential HTML]** tabblad om het dialoogvenster Script te openen.
 
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Middelen]**.
-1. Tik/klik op **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze vervolgens in het scriptdialoogvenster dat u in stap 6 hebt geopend. Sla de wijzigingen op.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets]**.
+1. Tik/klik **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze vervolgens in het scriptdialoogvenster dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
    >
@@ -54,17 +57,17 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM:
 
    Selecteer de gewenste opties voor het rapport Staging/Productie.
 
-1. Vouw **[!UICONTROL Bibliotheekbeheer]** uit en zorg ervoor dat Bibliotheek **[!UICONTROL laden bij]** is ingesteld op **[!UICONTROL Bovenkant]** pagina.
+1. Vouw uit **[!UICONTROL Library Management]** en zorg ervoor dat **[!UICONTROL Load Library at]** is ingesteld op **[!UICONTROL Page Top]**.
 
    ![chlimage_1-197](assets/chlimage_1-197.png)
 
-1. Vouw **[!UICONTROL Paginacode]** aanpassen uit en klik of tik op **[!UICONTROL Editor]** openen.
+1. Vouw uit **[!UICONTROL Customize Page Code]** en klik of tik op **[!UICONTROL Open Editor]**.
 
    ![chlimage_1-198](assets/chlimage_1-198.png)
 
 1. Plak de volgende code in het venster:
 
-   ```
+   ```java
    var sObj;
    
    if (arguments.length > 0) {
@@ -104,9 +107,9 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM:
    * De codevraag `assetAnalytics.dispatcher.init()` na het ervoor zorgen dat `_satellite.getToolsByType('sc')[0].getS()` wordt geïnitialiseerd en beschikbaar `assetAnalytics,dispatcher.init` is. Daarom kunt u overslaan toevoegend het in stap 11.
    * Zoals aangegeven in opmerkingen in de code van Insights Page Tracker (**[!UICONTROL Tools > Assets > Insights Page Tracker]**), zijn de eerste drie argumenten (RSID, Tracking Server en Visitor Namespace) irrelevant wanneer Paginanummering geen `AppMeasurement` object maakt. Lege tekenreeksen worden doorgegeven om dit te markeren.
 
-      De resterende argumenten komen overeen met wat is geconfigureerd op de pagina Inzichten configureren (**[!UICONTROL Opties > Middelen > Inzichten configureren]**).
+      De resterende argumenten beantwoorden aan wat in de pagina van de Configuratie van Inzichten (**[!UICONTROL Tools > Assets > Insights Configuration]**) wordt gevormd.
 
    * Het object AppMeasurement wordt opgehaald door te zoeken `satelliteLib` naar alle beschikbare SiteCatalyst-engines. Als er meerdere tags zijn geconfigureerd, wijzigt u de index van de arraykiezer op de juiste manier. Items in de array worden geordend volgens de SiteCatalyst-gereedschappen die beschikbaar zijn in de DTM-interface.
 
 1. Sla het venster Code-editor op, sluit dit en sla de wijzigingen vervolgens op in de configuratie van het gereedschap.
-1. Geef op het tabblad **[!UICONTROL Goedkeuringen]** beide goedkeuringen die in behandeling zijn goed. De tag DTM kan worden ingevoegd in uw webpagina. Zie DTM [integreren in aangepaste paginasjablonen](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/)voor meer informatie over het invoegen van DTM-tags in webpagina&#39;s.
+1. In het **[!UICONTROL Approvals]** lusje, keur beide lopende goedkeuringen goed. De tag DTM kan worden ingevoegd in uw webpagina. Zie DTM [integreren in aangepaste paginasjablonen](https://blogs.adobe.com/experiencedelivers/experience-management/integrating-dtm-custom-aem6-page-template/)voor meer informatie over het invoegen van DTM-tags in webpagina&#39;s.
