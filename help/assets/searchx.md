@@ -3,7 +3,10 @@ title: Zoeken naar elementen uitbreiden
 description: Breid de onderzoeksmogelijkheden van Middelen AEM voorbij uit-van-de-doos onderzoeken naar activa door koorden uit.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '830'
+ht-degree: 11%
 
 ---
 
@@ -28,14 +31,14 @@ Om preconfigured preconfigured te bedekken, kopieer de `facets` knoop van `/libs
 
 >[!NOTE]
 >
->Standaard bestaat de mappenstructuur onder / `apps` niet en moet deze worden gemaakt. Zorg ervoor dat de knooptypen overeenkomen met de knooppunttypen onder / `libs`.
+>Standaard bestaat de mappenstructuur onder / `apps` niet en moet deze worden gemaakt. Zorg ervoor dat de knooppunttypen overeenkomen met de knooppunttypen onder / `libs`.
 
 
 ## Tabs toevoegen {#adding-tabs}
 
 U kunt extra tabbladen voor zoeken toevoegen door deze te configureren in AEM Assets Admin. Extra tabbladen maken:
 
-1. Maak de mappenstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
+1. Maak de mapstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
 1. Maak en configureer het tweede tabblad naar wens.
 
    >[!NOTE]
@@ -139,7 +142,7 @@ Een voorspelling van eigenschappen maken:
    </script>
    ```
 
-1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt `cq:editConfig` van het primaire type toe `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden toe te voegen `cq:actions` met één waarde van **DELETE**.
+1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van **DELETE** toe te voegen.
 1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) over naar de ontwerpmodus en schakel de nieuwe component in voor het alineasysteem &#39;voorspellen&#39; (bijvoorbeeld **links**).
 
 1. In de modus **Bewerken** is de nieuwe component nu beschikbaar in de assistent (in de groep **Zoeken** ). Voeg de component in de kolom **Voorspelden** in en typ een zoekwoord, bijvoorbeeld **Ruitje** , en klik op het vergrootglas om de zoekopdracht te starten.
@@ -169,7 +172,7 @@ Om een groep te bouwen predikaat:
 
 1. Toevoegen `titlepredicate.jsp`:
 
-   ```xml
+   ```java
    <%--
    
      Sample group predicate component
@@ -246,7 +249,7 @@ Om een groep te bouwen predikaat:
        });
    ```
 
-1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt `cq:editConfig` van het primaire type toe `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden toe te voegen `cq:actions` met één waarde `DELETE`.
+1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. To make a component editable, in CRXDE, add a node `cq:editConfig` of primary type `cq:EditConfig`. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van `DELETE` toe te voegen.
 1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) over naar de ontwerpmodus en schakel de nieuwe component in voor het alineasysteem &#39;voorspellen&#39; (bijvoorbeeld **links**).
 1. In de modus **Bewerken** is de nieuwe component nu beschikbaar in de assistent (in de groep **Zoeken** ). Voeg de component in de kolom **Voorspelden** in.
 
@@ -258,32 +261,32 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `fulltext` |
-| searchCallback | Functie | Callback voor het activeren van zoeken op gebeurtenis `keyup`. Standaardwaarden: `CQ.wcm.SiteAdmin.doSearch` |
+| predikaatName | Tekenreeks | Naam van de voorspelling. Defaults to `fulltext` |
+| searchCallback | -functie | Callback voor het activeren van zoeken op gebeurtenis `keyup`. Defaults to `CQ.wcm.SiteAdmin.doSearch` |
 
 ### PropertyPredicate {#propertypredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `property` |
-| propertyName | Tekenreeks | Naam van de eigenschap JCR. Standaardwaarden: `jcr:title` |
+| predikaatName | Tekenreeks | Naam van de voorspelling. Defaults to `property` |
+| propertyName | Tekenreeks | Naam van de eigenschap JCR. Defaults to `jcr:title` |
 | defaultValue | Tekenreeks | Standaardwaarde vooraf ingevuld. |
 
 ### PathPredicate {#pathpredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `path` |
-| rootPath | Tekenreeks | Hoofdpad van de voorspelling. Standaardwaarden: `/content/dam` |
-| pathFieldPredicateName | Tekenreeks | Standaardwaarden: `folder` |
+| predikaatName | Tekenreeks | Naam van de voorspelling. Defaults to `path` |
+| rootPath | Tekenreeks | Hoofdpad van de voorspelling. Defaults to `/content/dam` |
+| pathFieldPredicateName | Tekenreeks | Defaults to `folder` |
 | showFlatOption | Boolean | Vlag om Selectievakje weer te geven `search in subfolders`. Heeft als standaardwaarde true. |
 
 ### DatePredicate {#datepredicate}
 
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `daterange` |
-| eigenschapsnaam | Tekenreeks | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/jcr:lastModified` |
+| predikaatName | Tekenreeks | Naam van de voorspelling. Defaults to `daterange` |
+| eigenschapsnaam | Tekenreeks | Naam van de eigenschap JCR. Defaults to `jcr:content/jcr:lastModified` |
 | defaultValue | Tekenreeks | Vooraf ingestelde standaardwaarde |
 
 ### OptionsPredicate {#optionspredicate}
@@ -291,12 +294,12 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 | Eigenschap | Type | Beschrijving |
 |---|---|---|
 | title | Tekenreeks | Hiermee wordt een extra bovenste titel toegevoegd |
-| predikaatName | Tekenreeks | Naam van de voorspelling. Standaardwaarden: `daterange` |
-| eigenschapsnaam | Tekenreeks | Naam van de eigenschap JCR. Standaardwaarden: `jcr:content/metadata/cq:tags` |
-| samenvouwen | Tekenreeks | Niveau samenvouwen. Standaardwaarden: `level1` |
+| predikaatName | Tekenreeks | Naam van de voorspelling. Defaults to `daterange` |
+| eigenschapsnaam | Tekenreeks | Naam van de eigenschap JCR. Defaults to `jcr:content/metadata/cq:tags` |
+| samenvouwen | Tekenreeks | Niveau samenvouwen. Defaults to `level1` |
 | triggerSearch | Boolean | Markering voor het activeren van zoekopdrachten bij controle. Standaard ingesteld op false |
-| searchCallback | Functie | Callback voor het teweegbrengen van onderzoek. Standaardwaarden: `CQ.wcm.SiteAdmin.doSearch` |
-| searchTimeoutTime |  Getal | Time-out voordat searchCallback wordt gestart. Wordt standaard ingesteld op 800 ms |
+| searchCallback | -functie | Callback voor het teweegbrengen van onderzoek. Defaults to `CQ.wcm.SiteAdmin.doSearch` |
+| searchTimeoutTime | Getal | Time-out voordat searchCallback wordt gestart. Wordt standaard ingesteld op 800 ms |
 
 ## Zoekresultaten aanpassen {#customizing-search-results}
 
