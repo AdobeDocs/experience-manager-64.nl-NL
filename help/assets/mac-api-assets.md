@@ -1,29 +1,33 @@
 ---
-title: HTTP-API voor assets
-description: Leer over de implementatie, het gegevensmodel, en de eigenschappen van Activa HTTP API. Elementen-HTTP-API gebruiken om verschillende taken uit te voeren met betrekking tot elementen
+title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
+description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 57952323a3ae0990232506d551b91b724f830f20
+source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+workflow-type: tm+mt
+source-wordcount: '1455'
+ht-degree: 0%
 
 ---
 
 
 # HTTP-API voor assets {#assets-http-api}
 
-Met de HTTP-API voor Middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor Elementen, zoals binaire elementen, metagegevens, uitvoeringen en opmerkingen, en voor gestructureerde inhoud met behulp van AEM Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API.
+Met de HTTP-API voor middelen kunt u CRUD-bewerkingen (read-read-update-delete) maken voor digitale elementen, waaronder metagegevens, vertoningen en opmerkingen, en voor gestructureerde inhoud met behulp van [!DNL Experience Manager] Content Fragments. Deze wordt weergegeven op `/api/assets` en geïmplementeerd als REST API.
 
 Toegang krijgen tot de API:
 
-1. Open het API-servicedocument op `http://[hostname]:[port]/api.json`.
-1. Volg de koppelingen van de service Middelen die naar `http://[hostname]:[server]/api/assets.json`leiden.
+1. Open het API-servicedocument op `https://[hostname]:[port]/api.json`.
+1. Volg de koppelingen van de service Middelen die naar `https://[hostname]:[server]/api/assets.json`leiden.
 
-De API-reactie is een JSON voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
+De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode voor alle MIME-typen. Het JSON-antwoord is optioneel en is mogelijk niet beschikbaar, bijvoorbeeld voor PDF-bestanden. Vertrouw op de antwoordcode voor verdere analyse of acties.
 
-Na de [!UICONTROL Off Time]zijn een middel en zijn vertoningen niet beschikbaar of via de Webinterface van Middelen of door HTTP API. De API retourneert een foutbericht van 404 als de [!UICONTROL Aan-tijd] in de toekomst is of de [!UICONTROL Uit-tijd] in het verleden is.
+Na de gebeurtenis [!UICONTROL Off Time]zijn een middel en de uitvoeringen ervan niet beschikbaar via de [!DNL Assets] webinterface en via de HTTP-API. De API retourneert een foutbericht van 404 als het in de toekomst [!UICONTROL On Time] is of in het verleden [!UICONTROL Off Time] is.
+
 
 ## Gegevensmodel {#data-model}
 
-De HTTP-API voor middelen stelt twee belangrijke elementen, mappen en elementen beschikbaar.
+De HTTP-API voor middelen stelt twee belangrijke elementen, mappen en elementen beschikbaar (voor standaardelementen).
 
 ### Mappen {#folders}
 
@@ -33,318 +37,218 @@ Mappen zijn vergelijkbaar met mappen in traditionele bestandssystemen. Het zijn 
 
 **Eigenschappen**:
 
-```
-name  -- Name of the folder. This is the same as the last segment in the URL path without the extension
-title -- Optional title of the folder which can be displayed instead of its name
-```
+* `name` is de naam van de map. Dit is het zelfde als het laatste segment in de weg URL zonder de uitbreiding.
+* `title` is een optionele titel van de map die in plaats van de naam kan worden weergegeven.
 
 >[!NOTE]
 >
->Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel. Het voorvoegsel JCR van `jcr:title`, `jcr:description`en `jcr:language` wordt vervangen door `dc` voorvoegsel. Daarom in de geretourneerde JSON `dc:title` en `dc:description` bevatten deze de waarden van respectievelijk `jcr:title` en `jcr:description`.
+>Sommige eigenschappen van map of element worden toegewezen aan een ander voorvoegsel. Het `jcr` voorvoegsel van `jcr:title`, `jcr:description`en `jcr:language` worden vervangen door het `dc` voorvoegsel. Daarom in de geretourneerde JSON `dc:title` en `dc:description` bevatten deze de waarden van respectievelijk `jcr:title` en `jcr:description`.
 
 **Er zijn drie koppelingen beschikbaar in Koppelingsmappen** :
 
-```xml
-self      -- Link to itself
-parent    -- Link to the parent folder
-thumbnail -- (Optional) link to a folder thumbnail image
-```
+* `self`: Koppeling naar zichzelf.
+* `parent`: Koppeling naar de bovenliggende map.
+* `thumbnail`: (Optioneel) koppeling naar een miniatuurafbeelding van een map.
 
 ### Assets {#assets}
 
-Elementen zijn elementen die uit meerdere delen bestaan, zoals:
+In Experience Manager bevat een element de volgende elementen:
 
 * De eigenschappen en metagegevens van het element.
-* Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF of Adobe InDesign zijn.
+* Meerdere uitvoeringen, zoals de oorspronkelijke uitvoering (het oorspronkelijk geüploade element), een miniatuur en verschillende andere uitvoeringen. Extra uitvoeringen kunnen afbeeldingen van verschillende grootten, videocoderingen of uitgenomen pagina&#39;s uit PDF- of Adobe InDesign-bestanden zijn.
 * Optionele opmerkingen.
 
-In AEM heeft een map de volgende componenten:
+In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 
-* Entiteiten: De onderliggende elementen van Elementen zijn de uitvoeringen.
-* Eigenschappen
-* Koppelingen
+* Entiteiten: De onderliggende elementen van activa zijn de uitvoeringen.
+* Eigenschappen.
+* Koppelingen.
 
 De HTTP-API voor middelen bevat de volgende functies:
 
-* Een mappenlijst ophalen
-* Een map maken
-* Een element maken
-* Binair element bijwerken
-* Metagegevens van elementen bijwerken
-* Een elementuitvoering maken
-* Een elementuitvoering bijwerken
-* Een middelenopmerking maken
-* Een map of element kopiëren
-* Een map of element verplaatsen
-* Een map, element of uitvoering verwijderen
+* Haal een mappenlijst op.
+* Maak een map.
+* Maak een element.
+* Binair element bijwerken.
+* Metagegevens van elementen bijwerken.
+* Een elementuitvoering maken.
+* Een elementuitvoering bijwerken.
+* Maak een middelenopmerking.
+* Kopieer een map of element.
+* Een map of element verplaatsen.
+* Een map, element of uitvoering verwijderen.
 
 >[!NOTE]
 >
->Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notatie weggelaten. De notatie heeft in feite een correlatie met [Resty](https://github.com/micha/resty) , een scriptwrapper voor cURL.
+>Om de leesbaarheid te verbeteren, worden in de volgende voorbeelden de volledige cURL-notatie weggelaten. In feite heeft de notatie een correlatie met [Resty](https://github.com/micha/resty) , een scriptwrapper voor `cURL`.
 
 **Vereisten**
 
-* Ga naar `https://[AEM_server]:[port]/system/console/configMgr`.
-* Navigeer naar **[!UICONTROL Adobe Granite CSRF-filter]**.
-* Zorg ervoor dat de eigenschap **[!UICONTROL Filter Methoden]** bevat: `POST`, `PUT`, `DELETE`.
+* Ga naar `https://[aem_server]:[port]/system/console/configMgr`.
+* Ga naar **[!UICONTROL Adobe Granite CSRF Filter]**.
+* Zorg ervoor dat de eigenschap het volgende **[!UICONTROL Filter Methods]** bevat: `POST`, `PUT`, `DELETE`.
 
 ## Een mappenlijst ophalen {#retrieve-a-folder-listing}
 
 Haalt een Siren-weergave op van een bestaande map en van de onderliggende entiteiten (submappen of elementen).
 
-**Verzoek**
+**Verzoek**: `GET /api/assets/myFolder.json`
 
-```
-GET /api/assets/myFolder.json
-```
+**Antwoordcodes**: De responscodes zijn:
 
-**Antwoordcodes**
+* 200 - OK - succes.
+* 404 - NIET GEVONDEN - map bestaat niet of is niet toegankelijk.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-```
-200 - OK - success
-404 - NOT FOUND - folder does not exist or is not accessible
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
-**Antwoord**
-
-De klasse van de geretourneerde entiteit is assets/folder.
-
-Eigenschappen van ingesloten entiteiten zijn een subset van de volledige reeks eigenschappen van elke entiteit. Om een volledige vertegenwoordiging van de entiteit te verkrijgen, zouden de cliënten de inhoud van URL moeten terugwinnen waarnaar door de verbinding met een `rel` van `self`. wordt verwezen.
+**Reactie**: De klasse van de geretourneerde entiteit is een middel of een map. De eigenschappen van ingesloten entiteiten vormen een subset van de volledige reeks eigenschappen van elke entiteit. Om een volledige vertegenwoordiging van de entiteit te verkrijgen, zouden de cliënten de inhoud van URL moeten terugwinnen waarnaar door de verbinding met een `rel` van `self`. wordt verwezen.
 
 ## Een map maken {#create-a-folder}
 
-Hiermee maakt u een nieuwe `sling`: op `OrderedFolder` het opgegeven pad. Als een &amp;ast; wordt gegeven in plaats van een knoopnaam servlet zal de parameternaam als knoopnaam gebruiken. Gegevens die worden geaccepteerd als aanvraaggegevens zijn een Sirene-weergave van de nieuwe map of een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`, handig om een map te maken die rechtstreeks afkomstig is van een HTML-formulier. Bovendien kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
+Hiermee maakt u een nieuwe `sling`: `OrderedFolder` op het opgegeven pad. Als een knooppunt in plaats van een knooppuntnaam `*` wordt opgegeven, gebruikt servlet de parameternaam als knooppuntnaam. Gegevens die worden geaccepteerd als aanvraaggegevens zijn een Sirene-weergave van de nieuwe map of een set naam-waardeparen, gecodeerd als `application/www-form-urlencoded` of `multipart`/ `form`- `data`, handig om een map te maken die rechtstreeks afkomstig is van een HTML-formulier. Bovendien kunnen eigenschappen van de map worden opgegeven als URL-queryparameters.
 
-De bewerking zal mislukken met een `500` antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Als de map al bestaat, wordt een `409` antwoordcode geretourneerd.
+Een API-aanroep mislukt met een `500` antwoordcode als het bovenliggende knooppunt van het opgegeven pad niet bestaat. Een aanroep retourneert een antwoordcode `409` als de map al bestaat.
 
-**Parameters**
-
-```
-name - Folder name
-```
+**Parameters**: `name` is de mapnaam.
 
 **Verzoek**
 
-```
-POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'
-```
+* `POST /api/assets/myFolder -H"Content-Type: application/json" -d '{"class":"assetFolder","properties":{"title":"My Folder"}}'`
+* `POST /api/assets/* -F"name=myfolder" -F"title=My Folder"`
 
-of
+**Antwoordcodes**: De responscodes zijn:
 
-```
-POST /api/assets/* -F"name=myfolder" -F"title=My Folder"
-```
-
-**Antwoordcodes**
-
-```
-201 - CREATED - on successful creation
-409 - CONFLICT - if folder already exist
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - GEMAAKT - over succesvol maken.
+* 409 - CONFLICT - als de map al bestaat.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
 ## Een element maken {#create-an-asset}
 
-Maakt een DAM-element op het opgegeven pad met het opgegeven bestand. Als een &amp;ast; wordt gegeven in plaats van een knooppuntnaam servlet zal de parameternaam of de dossiernaam als knooppuntnaam gebruiken.
+Plaats het opgegeven bestand op het opgegeven pad om een element te maken in de DAM-opslagplaats. Als een knooppunt wordt opgegeven in plaats van een knooppuntnaam, gebruikt de servlet de parameternaam of de bestandsnaam als knooppuntnaam. `*`
 
-**Parameters**
-
-```
-name - Asset name
-file - File reference
-```
+**Parameters**: De parameters zijn `name` voor de elementnaam en `file` voor de bestandsverwijzing.
 
 **Verzoek**
 
-```
-POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"
-```
+* `POST /api/assets/myFolder/myAsset.png -H"Content-Type: image/png" --data-binary "@myPicture.png"`
+* `POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"`
 
-or
+**Antwoordcodes**: De responscodes zijn:
 
-```
-POST /api/assets/myFolder/* -F"name=myAsset.png" -F"file=@myPicture.png"
-```
+* 201 - GEMAAKT - als Asset is gemaakt.
+* 409 - CONFLICT - als Activum al bestaat.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-**Antwoordcodes**
+## Elementbinair bijwerken {#update-asset-binary}
 
-```
-201 - CREATED - if Asset has been created successfully
-409 - CONFLICT - if Asset already exist
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+Hiermee werkt u de binaire waarde (uitvoering met de oorspronkelijke naam) van een element bij. Een update activeert de standaardworkflow voor middelenverwerking om deze uit te voeren, als deze is geconfigureerd.
 
-## Binair element bijwerken {#update-asset-binary}
+**Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png`
 
-Hiermee werkt u een binair element met elementen bij (uitvoering met de oorspronkelijke naam). Dit zal de standaardwerkschema van Activa indien gevormd teweegbrengen.
+**Antwoordcodes**: De responscodes zijn:
 
-**Verzoek**
+* 200 - OK - als Asset met succes is bijgewerkt.
+* 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-```
-PUT /api/assets/myfolder/myAsset.png -H"Content-Type: image/png" --data-binary @myPicture.png
-```
+## Metagegevens van elementen bijwerken {#update-asset-metadata}
 
-**Antwoordcodes**
+Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in de `dc:` naamruimte bijwerkt, werkt de API dezelfde eigenschap in de `jcr` naamruimte bij. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
 
-```
-200 - OK - if Asset has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+**Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
 
-## Metagegevens van element bijwerken {#update-asset-metadata}
+**Antwoordcodes**: De responscodes zijn:
 
-Werkt de eigenschappen van de elementmetagegevens bij.
+* 200 - OK - als Asset met succes is bijgewerkt.
+* 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-**Verzoek**
+## Een elementuitvoering maken {#create-an-asset-rendition}
 
-```
-PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'
-```
+Maak een nieuwe elementuitvoering voor een element. Als de naam van de parameter request niet wordt opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
 
-**Antwoordcodes**
-
-```
-200 - OK - if Asset has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
-## Vertoning van element maken {#create-an-asset-rendition}
-
-Hiermee maakt u een nieuwe uitvoering van elementen voor een element. Als er geen naam voor de parameter request is opgegeven, wordt de bestandsnaam gebruikt als naam voor de vertoning.
-
-**Parameters**
-
-```
-name - Rendition name
-file - File reference
-```
+**Parameters**: De parameters zijn `name` voor naam van de vertoning en `file` als dossierverwijzing.
 
 **Verzoek**
 
-```
-POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"
-```
+* `POST /api/assets/myfolder/myasset.png/renditions/web-rendition -H"Content-Type: image/png" --data-binary "@myRendition.png"`
+* `POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"`
 
-or
+**Antwoordcodes**: De responscodes zijn:
 
-```
-POST /api/assets/myfolder/myasset.png/renditions/* -F"name=web-rendition" -F"file=@myRendition.png"
-```
+* 201 - GEMAAKT - als de vertoning is gemaakt.
+* 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-**Antwoordcodes**
-
-```
-201 - CREATED - if Rendition has been created successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
-## Vertoning van element bijwerken {#update-an-asset-rendition}
+## Een elementuitvoering bijwerken {#update-an-asset-rendition}
 
 Updates vervangen een elementuitvoering door de nieuwe binaire gegevens.
 
-**Verzoek**
+**Verzoek**: `PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png`
 
-```
-PUT /api/assets/myfolder/myasset.png/renditions/myRendition.png -H"Content-Type: image/png" --data-binary @myRendition.png
-```
+**Antwoordcodes**: De responscodes zijn:
 
-**Antwoordcodes**
+* 200 - OK - als de vertoning correct is bijgewerkt.
+* 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
-```
-200 - OK - if Rendition has been updated successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
-## Een Asset-opmerking maken {#create-an-asset-comment}
+## Een opmerking toevoegen aan een element {#create-an-asset-comment}
 
 Hiermee maakt u een nieuwe middelenopmerking.
 
-**Parameters**
+**Parameters**: De parameters zijn `message` voor de berichttekst van de opmerking en `annotationData` voor de annotatiegegevens in JSON-indeling.
 
-```
-message - Message
-annotationData - Annotation data (JSON)
-```
+**Verzoek**: `POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"`
 
-**Verzoek**
+**Antwoordcodes**: De responscodes zijn:
 
-```
-POST /api/assets/myfolder/myasset.png/comments/* -F"message=Hello World." -F"annotationData={}"
-```
-
-**Antwoordcodes**
-
-```
-201 - CREATED - if Comment has been created successfully
-404 - NOT FOUND - if Asset could not be found or accessed at the provided URI
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - GEMAAKT - als Opmerking is gemaakt.
+* 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
 ## Een map of element kopiëren {#copy-a-folder-or-asset}
 
-Kopieert een map of element op het opgegeven pad naar een nieuwe bestemming.
+Hiermee kopieert u een map of element die beschikbaar is op het opgegeven pad naar een nieuwe bestemming.
 
-**Aanvraagkoppen**
+**Aanvraagkoppen**: De parameters zijn:
 
-```
-X-Destination - a new destination URI within the API solution scope to copy the resource to
-X-Depth - either 'infinity' or '0'. The value '0' only copies the resource and its properties, no children.
-X-Overwrite - 'F' to prevent overwriting an existing destination
-```
+* `X-Destination` - een nieuwe doel-URI binnen het bereik van de API-oplossing waarnaar de bron moet worden gekopieerd.
+* `X-Depth` - hetzij `infinity` hetzij `0`. Het gebruiken kopieert `0` slechts het middel en zijn eigenschappen en niet zijn kinderen.
+* `X-Overwrite` - Gebruik deze optie `F` om te voorkomen dat een element op de bestaande bestemming wordt overschreven.
 
-**Verzoek**
+**Verzoek**: `COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"`
 
-```
-COPY /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-copy"
-```
+**Antwoordcodes**: De responscodes zijn:
 
-**Antwoordcodes**
-
-```
-201 - CREATED - if folder/asset has been copied to a non-existing destination
-204 - NO CONTENT - if the folder/asset has been copied to an existing destination
-412 - PRECONDITION FAILED - if a request header is missing or
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - GEMAAKT - als de map/het element naar een niet-bestaand doel is gekopieerd.
+* 204 - GEEN INHOUD - als de map of het middel naar een bestaande bestemming is gekopieerd.
+* 412 - PRECONDITION MISLUKT - als een aanvraagkoptekst ontbreekt.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
 ## Een map of element verplaatsen {#move-a-folder-or-asset}
 
 Hiermee verplaatst u een map of element op het opgegeven pad naar een nieuwe bestemming.
 
-**Aanvraagkoppen**
+**Aanvraagkoppen**: De parameters zijn:
 
-```
-X-Destination - a new destination URI within the API solution scope to copy the resource to
-X-Depth - either 'infinity' or '0'. The value '0' only copies the resource and its properties, no children.
-X-Overwrite - either 'T' to force deletion of existing resources or 'F' to prevent overwriting an existing resource.
-```
+* `X-Destination` - een nieuwe doel-URI binnen het bereik van de API-oplossing waarnaar de bron moet worden gekopieerd.
+* `X-Depth` - hetzij `infinity` hetzij `0`. Het gebruiken kopieert `0` slechts het middel en zijn eigenschappen en niet zijn kinderen.
+* `X-Overwrite` - Gebruik deze optie `T` `F` om bestaande bronnen te verwijderen of om te voorkomen dat bestaande bronnen worden overschreven.
 
-**Verzoek**
+**Verzoek**: `MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"`
 
-```
-MOVE /api/assets/myFolder -H"X-Destination: /api/assets/myFolder-moved"
-```
+**Antwoordcodes**: De responscodes zijn:
 
-**Antwoordcodes**
-
-```
-201 - CREATED - if folder/asset has been copied to a non-existing destination
-204 - NO CONTENT - if the folder/asset has been copied to an existing destination
-412 - PRECONDITION FAILED - if a request header is missing or
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
+* 201 - GEMAAKT - als de map/het element naar een niet-bestaand doel is gekopieerd.
+* 204 - GEEN INHOUD - als de map of het middel naar een bestaande bestemming is gekopieerd.
+* 412 - PRECONDITION MISLUKT - als een aanvraagkoptekst ontbreekt.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
 
 ## Een map, element of uitvoering verwijderen {#delete-a-folder-asset-or-rendition}
 
@@ -352,27 +256,12 @@ Hiermee verwijdert u een resource (-tree) bij het opgegeven pad.
 
 **Verzoek**
 
-```
-DELETE /api/assets/myFolder
-```
+* `DELETE /api/assets/myFolder`
+* `DELETE /api/assets/myFolder/myAsset.png`
+* `DELETE /api/assets/myFolder/myAsset.png/renditions/original`
 
-or
+**Antwoordcodes**: De responscodes zijn:
 
-```
-DELETE /api/assets/myFolder/myAsset.png
-```
-
-or
-
-```xml
-DELETE /api/assets/myFolder/myAsset.png/renditions/original
-```
-
-**Antwoordcodes**
-
-```
-200 - OK - if folder has been deleted successfully
-412 - PRECONDITION FAILED - if root collection cannot be found or accessed
-500 - INTERNAL SERVER ERROR - if something else goes wrong
-```
-
+* 200 - OK - als de map is verwijderd.
+* 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
+* 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
