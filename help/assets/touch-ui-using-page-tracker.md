@@ -3,7 +3,10 @@ title: Paginanummering gebruiken en code insluiten in webpagina's
 description: Leer hoe u Page Tracker kunt opnemen en JavaScript-codes kunt insluiten in uw websitecode, zodat Adobe Analytics gebruiksgegevens rond elementen kan vastleggen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+workflow-type: tm+mt
+source-wordcount: '181'
+ht-degree: 0%
 
 ---
 
