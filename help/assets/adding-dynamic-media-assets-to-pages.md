@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 9b19484596948e9e166f5310622b7e6eacd78f93
+source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
 workflow-type: tm+mt
-source-wordcount: '2729'
+source-wordcount: '2751'
 ht-degree: 4%
 
 ---
@@ -45,12 +45,13 @@ Het toevoegen van een component Dynamische media aan een pagina is hetzelfde als
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Sleep een component Dynamische media die u wilt gebruiken naar de pagina op de gewenste locatie.
-1. Klik op het blauwe vak rond de component en tik vervolgens op het pictogram **[!UICONTROL Configuration]** (moersleutel).
+1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omgeven door een blauw vak. Tik op het pictogram **[!UICONTROL Configuration]** (moersleutel).
 1. [Bewerk indien nodig de componenten](#dynamic-media-components) en klik op het vinkje om de wijzigingen op te slaan.
+1. 
 
 ### Dynamische mediacomponenten inschakelen {#enabling-dynamic-media-components}
 
-Als er geen dynamische mediacomponenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u de componenten moet inschakelen.
+Als er geen dynamische mediacomponenten beschikbaar zijn om aan een pagina toe te voegen, betekent dit waarschijnlijk dat u eerst de componenten moet inschakelen die u wilt gebruiken.
 
 1. Open in AEM de pagina waaraan u de component Dynamische media wilt toevoegen.
 1. Tik links op de werkbalk naast de pagina op het pictogram Pagina-informatie en tik vervolgens **[!UICONTROL Edit Template]** in de vervolgkeuzelijst.
@@ -59,17 +60,17 @@ Als er geen dynamische mediacomponenten beschikbaar zijn om aan een pagina toe t
 
 1. Tik in de vervolgkeuzelijst rechts van de werkbalk naast de pagina op **[!UICONTROL Structure]**.
 
-![Beleid](/help/assets/assets-dm/structure-mode.png)
+   ![Beleid](/help/assets/assets-dm/structure-mode.png)
 
 1. Tik onder aan de pagina **[!UICONTROL Layout Container]** op de werkbalk om deze te openen en tik vervolgens op het pictogram Beleid.
 1. Controleer of op de **[!UICONTROL Layout Container]** pagina onder de **[!UICONTROL Properties]** kop de **[!UICONTROL Allowed Components]** tab is geselecteerd.
 
-![Toegestane componenten](/help/assets/assets-dm/allowed-components.png)
+   ![Toegestane componenten](/help/assets/assets-dm/allowed-components.png)
 
 1. Schuif totdat u het ziet **[!UICONTROL Dynamic Media]**.
 1. Tik op het pictogram > links van **[!UICONTROL Dynamic Media]** om de lijst uit te vouwen, selecteer de dynamische mediacomponenten die u wilt inschakelen.
 
-![Lijst met dynamische mediacomponenten](/help/assets/assets-dm/dm-components-select.png)
+   ![Lijst met dynamische mediacomponenten](/help/assets/assets-dm/dm-components-select.png)
 
 1. Tik in de rechterbovenhoek van de **[!UICONTROL Layout Container]** pagina op het pictogram Gereed (vinkje).
 
