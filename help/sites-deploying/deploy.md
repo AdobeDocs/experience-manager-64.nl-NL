@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 24aa210f1c7079c3e25fc5ccf346336b2121c142
+source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+workflow-type: tm+mt
+source-wordcount: '1827'
+ht-degree: 0%
 
 ---
 
@@ -115,13 +118,13 @@ AEM Managed Services is een complete oplossing voor Digital Experience Managemen
 
 Met de Beheerde Diensten van AEM kunnen de klanten de volgende voordelen realiseren:
 
-**** Snellere marktintroductie: Met de flexibele cloudinfrastructuur van Adobe Managed Services kunnen organisaties snel succesvolle digitale ervaringen plannen, lanceren en optimaliseren. Adobe beheert de cloudarchitectuur zonder extra kapitaal, hardware of software vereist en de Succesontwikkelaars van Adobe, hulp met AEM-architectuur, provisioning, aanpassing voor het maken van verbinding met back-end apps en gebruiksvriendelijke best practices.
+**Snellere marktintroductie:** Met de flexibele cloudinfrastructuur van Adobe Managed Services kunnen organisaties snel succesvolle digitale ervaringen plannen, lanceren en optimaliseren. Adobe beheert de cloudarchitectuur zonder extra kapitaal, hardware of software vereist en de Succesontwikkelaars van Adobe, hulp met AEM-architectuur, provisioning, aanpassing voor het maken van verbinding met back-end apps en gebruiksvriendelijke best practices.
 
-**** Hogere prestaties: Verstrekt betrouwbare digitale ervaringen voor uw zaken met vier opties van de de dienstbeschikbaarheid 99.5%, 99.9%, 99.95%, en 99.99%. Bovendien maakt het automatische back-up en multimode modellen voor noodherstel mogelijk om betrouwbaarheid en noodbeheer te garanderen.
+**Hogere prestaties:** Verstrekt betrouwbare digitale ervaringen voor uw zaken met vier opties van de de dienstbeschikbaarheid 99.5%, 99.9%, 99.95%, en 99.99%. Bovendien maakt het automatische back-up en multimode modellen voor noodherstel mogelijk om betrouwbaarheid en noodbeheer te garanderen.
 
-**** Geoptimaliseerde IT-kosten: Met proactieve begeleiding en expertise kunnen organisaties de nieuwste versie van AEM blijven gebruiken. Adobe Platinum Maintenance and Support wordt automatisch opgenomen in nieuwe implementaties van AMS Enterprise/Basic en biedt technische expertise en operationele ervaring om organisaties te helpen hun bedrijfskritieke toepassingen te onderhouden. Gratis basisanalysemogelijkheden of doelmogelijkheden bieden extra waarde, met name voor organisaties uit het midden- en kleinbedrijf die weinig behoefte hebben aan analyses en personalisatie.
+**Geoptimaliseerde IT-kosten:** Met proactieve begeleiding en expertise kunnen organisaties de nieuwste versie van AEM blijven gebruiken. Adobe Platinum Maintenance and Support wordt automatisch opgenomen in nieuwe implementaties van AMS Enterprise/Basic en biedt technische expertise en operationele ervaring om organisaties te helpen hun bedrijfskritieke toepassingen te onderhouden. Gratis basisanalysemogelijkheden of doelmogelijkheden bieden extra waarde, met name voor organisaties uit het midden- en kleinbedrijf die weinig behoefte hebben aan analyses en personalisatie.
 
-**** Hoogste beveiliging: Zorgt voor fysieke beveiliging, netwerk en gegevensbeveiliging op bedrijfsniveau door klantentoepassingen te hosten in een beperkte-toegangsfaciliteit, achter firewallsystemen, of binnen een virtuele privécloud. Het omvat virtuele machines van één huurder met robuuste gegevensopslagencryptie, antivirale middelen, en gegevensisolatie.
+**Hoogste beveiliging:** Zorgt voor fysieke beveiliging, netwerk en gegevensbeveiliging op bedrijfsniveau door klantentoepassingen te hosten in een beperkte-toegangsfaciliteit, achter firewallsystemen, of binnen een virtuele privécloud. Het omvat virtuele machines van één huurder met robuuste gegevensopslagencryptie, antivirale middelen, en gegevensisolatie.
 
 **Wolkenbeheer**: Cloud Manager, een onderdeel van het aanbod Adobe Experience Manager Managed Services, is een zelfbedieningsportal waarmee organisaties Adobe Experience Manager in de cloud zelf kunnen beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor klanten van de door Adobe beheerde service.
 
@@ -139,13 +142,13 @@ Op de client-kant werkt AEM met alle moderne browsers (**Microsoft Edge**, **Int
 
 ### De software ophalen {#getting-the-software}
 
-Klanten met een geldig onderhouds- en ondersteuningscontract moeten een e-mailmelding met een code hebben ontvangen en AEM kunnen downloaden van de [**Adobe-licentiewebsite **](https://licensing.adobe.com/). Zakelijke partners kunnen om toegang tot het downloaden vragen via[**spphelp@adobe.com**](mailto:spphelp@adobe.com).
+Klanten met een geldig onderhouds- en ondersteuningscontract moeten een e-mailmelding met een code hebben ontvangen en AEM kunnen downloaden van de [**Adobe-licentiewebsite **](https://licensing.adobe.com/). Zakelijke partners kunnen om toegang tot het downloaden vragen via[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
 
 Het AEM-softwarepakket is beschikbaar in twee formulieren:
 
-* **** cq-quickstart-6.4.0.jar: Een zelfstandig uitvoerbaar *jar* -bestand dat alles bevat wat nodig is om aan de slag te gaan.
+* **cq-quickstart-6.4.0.jar:** Een zelfstandig uitvoerbaar *jar* -bestand dat alles bevat wat nodig is om aan de slag te gaan.
 
-* **** cq-quickstart-6.4.0.war: Een *oorlogsdossier* voor plaatsing in een server van de derdetoepassing.
+* **cq-quickstart-6.4.0.war:** Een *oorlogsdossier* voor plaatsing in een server van de derdetoepassing.
 
 In de volgende sectie beschrijven wij de **standalone installatie**. Zie [Application Server Install](/help/sites-deploying/application-server-install.md)voor meer informatie over het installeren van AEM in een toepassingsserver.
 
