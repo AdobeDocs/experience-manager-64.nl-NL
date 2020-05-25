@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+source-git-commit: 263e66f6a24a68e1fd64e1b35bf4830f4cba3a44
+workflow-type: tm+mt
+source-wordcount: '2889'
+ht-degree: 0%
 
 ---
 
@@ -99,7 +102,7 @@ Zie [ui:includeClientLib](/help/sites-developing/taglib.md#amp-lt-ui-includeclie
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>`, die in het verleden vaak werd gebruikt om clientbibliotheken op te nemen, is afgekeurd sinds AEM 5.6. In plaats daarvan [ moet `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) worden gebruikgemaakt zoals hierboven beschreven.
+>`<cq:includeClientLib>`, die in het verleden vaak werd gebruikt om clientbibliotheken op te nemen, is afgekeurd sinds AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#amp-lt-ui-includeclientlib) moet worden gebruikt zoals hierboven beschreven.
 
 ## Clientbibliotheekmappen maken {#creating-client-library-folders}
 
@@ -112,7 +115,7 @@ Clientbibliotheekmappen bevatten de volgende items:
 * De JS- en/of CSS-bronbestanden die moeten worden samengevoegd.
 * Bronnen die CSS-stijlen ondersteunen, zoals afbeeldingsbestanden.
 
-   **** Opmerking: U kunt submappen gebruiken om bronbestanden te ordenen.
+   **Opmerking:** U kunt submappen gebruiken om bronbestanden te ordenen.
 * Eén `js.txt` bestand en/of één `css.txt` bestand dat de bronbestanden identificeert die in de gegenereerde JS- en/of CSS-bestanden moeten worden samengevoegd.
 
 ![clientlibarch](assets/clientlibarch.png)
@@ -123,7 +126,7 @@ De webclient moet over toegangsrechten voor het `cq:ClientLibraryFolder` knooppu
 
 ### Bibliotheken in /lib overschrijven {#overriding-libraries-in-lib}
 
-Clientbibliotheekmappen die zich onder `/apps` bevinden hebben voorrang op mappen met dezelfde naam die zich op dezelfde manier in `/libs`bevinden. Bijvoorbeeld, neemt `/apps/cq/ui/widgets` belangrijkheid over `/libs/cq/ui/widgets`. Wanneer deze bibliotheken tot dezelfde categorie behoren, wordt de onderstaande bibliotheek `/apps` gebruikt.
+Clientbibliotheekmappen die zich onder `/apps` bevinden hebben voorrang op mappen met dezelfde naam die zich op dezelfde manier in `/libs`de map bevinden. Bijvoorbeeld, neemt `/apps/cq/ui/widgets` belangrijkheid over `/libs/cq/ui/widgets`. Wanneer deze bibliotheken tot dezelfde categorie behoren, wordt de onderstaande bibliotheek `/apps` gebruikt.
 
 ### Een clientbibliotheekmap zoeken en de server Proxy Client Libraries gebruiken {#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet}
 
@@ -166,20 +169,20 @@ Vervolgens stelt u de `allowProxy` eigenschap in op `foo` true.
 1. Voer een naam in voor het bibliotheekbestand en selecteer Type in de lijst `cq:ClientLibraryFolder`. Klik op **OK** en vervolgens op Alles **** opslaan.
 1. Als u de categorie of categorieën wilt opgeven waartoe de bibliotheek behoort, selecteert u het `cq:ClientLibraryFolder` knooppunt, voegt u de volgende eigenschap toe en klikt u op Alles **** opslaan:
 
-   * Naam:categorieën
-   * Type:String
+   * Naam: categorieën
+   * Type: String
    * Waarde: De categorienaam
    * Meerdere: Selecteren
 
 1. U kunt op alle manieren bronbestanden aan de bibliotheekmap toevoegen. U kunt bijvoorbeeld een WebDav-client gebruiken om bestanden te kopiëren of een bestand te maken en de inhoud handmatig te ontwerpen.
 
-   **** Opmerking: U kunt bronbestanden desgewenst in submappen ordenen.
+   **Opmerking:** U kunt bronbestanden desgewenst in submappen ordenen.
 
 1. Selecteer de clientbibliotheekmap en klik op **Maken > Bestand** maken.
 1. Typ in het vak Bestandsnaam een van de volgende bestandsnamen en klik op OK:
 
-   * **`js.txt`**: Gebruik deze bestandsnaam om een JavaScript-bestand te genereren.
-   * **`css.txt`**: Gebruik deze bestandsnaam om een trapsgewijs opmaakmodel te genereren.
+   * **`js.txt`:**Gebruik deze bestandsnaam om een JavaScript-bestand te genereren.
+   * **`css.txt`:**Gebruik deze bestandsnaam om een trapsgewijs opmaakmodel te genereren.
 
 1. Open het bestand en typ de volgende tekst om de hoofdmap van het pad van de bronbestanden te identificeren:
 
@@ -202,9 +205,9 @@ Wanneer de code in de map met clientbibliotheken verwijst naar andere bibliothek
 
 De afhankelijkheden moeten een andere zijn `cq:ClientLibraryFolder`. Om gebiedsdelen te identificeren, voeg een bezit aan uw `cq:ClientLibraryFolder` knoop met de volgende attributen toe:
 
-* **** Naam:afhankelijkheden
-* **** Type:String`[]`
-* **** Waarden: De waarde van het eigenschap category van het knooppunt cq:ClientLibraryFolder waarvan de huidige bibliotheekmap afhankelijk is.
+* **Naam:** afhankelijkheden
+* **Type:** String`[]`
+* **Waarden:** De waarde van het eigenschap category van het knooppunt cq:ClientLibraryFolder waarvan de huidige bibliotheekmap afhankelijk is.
 
 De / is bijvoorbeeld afhankelijk van de `etc/clientlibs/myclientlibs/publicmain` `cq.jquery` bibliotheek. JSP die verwijzingen de belangrijkste cliëntbibliotheek produceert HTML die de volgende code omvat:
 
@@ -225,9 +228,9 @@ U kunt het beste alle toepassingsgerelateerde bestanden in de onderstaande toepa
 
 Gebruik de eigenschap Categorieën om de clientbibliotheekmap te identificeren die u wilt insluiten. Als u de bibliotheek wilt insluiten, voegt u een eigenschap toe aan het insluitende `cq:ClientLibraryFolder` knooppunt en gebruikt u de volgende eigenschapkenmerken:
 
-* **** Naam: insluiten
-* **** Type:String`[]`
-* **** Waarde: De waarde van de eigenschap category van het `cq:ClientLibraryFolder` knooppunt dat moet worden ingesloten.
+* **Naam:** insluiten
+* **Type:** String`[]`
+* **Waarde:** De waarde van de eigenschap category van het `cq:ClientLibraryFolder` knooppunt dat moet worden ingesloten.
 
 #### Insluiten gebruiken om verzoeken te minimaliseren {#using-embedding-to-minimize-requests}
 
@@ -300,9 +303,9 @@ Gebruik de `channels` eigenschap van een clientbibliotheekmap om de mobiele groe
 
 Als u een clientbibliotheekmap wilt koppelen aan een apparaatgroep, voegt u een eigenschap toe aan uw `cq:ClientLibraryFolder` knooppunt met de volgende kenmerken:
 
-* **** Naam: kanalen
-* **** Type:String`[]`
-* **** Waarden: De naam van de mobiele groep. Als u de bibliotheekmap wilt uitsluiten van een groep, plaatst u een uitroepteken (&quot;!&quot;) vóór de naam.
+* **Naam:** kanalen
+* **Type:** String`[]`
+* **Waarden:** De naam van de mobiele groep. Als u de bibliotheekmap wilt uitsluiten van een groep, plaatst u een uitroepteken (&quot;!&quot;) vóór de naam.
 
 De volgende tabel bevat bijvoorbeeld de waarde van de `channels` eigenschap voor elke clientbibliotheekmap van de `cq.widgets` categorie:
 
@@ -337,7 +340,7 @@ Met de aanpasbare voorprocessoren kunt u flexibel gebruik maken, waaronder:
 >
 >Plaats geen geminiateerde bibliotheek in een clientbibliotheek. Geef in plaats daarvan de onbewerkte bibliotheek op en gebruik de opties van de voorprocessoren als miniaturen vereist zijn.
 
-### Usage {#usage}
+### Gebruik {#usage}
 
 U kunt kiezen om de configuratie preprocessoren per clientbibliotheek of systeembreed te configureren.
 
@@ -398,7 +401,7 @@ YUI wordt geplaatst als standaardminifier in AEM. Voer de volgende stappen uit o
 
    Opties kunnen worden doorgegeven als deze met een puntkomma worden gescheiden, bijvoorbeeld `min:gcc;obfuscate=true`.
 
-1. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Click **Save** to save the changes.
 
 ## Foutopsporingsgereedschappen {#debugging-tools}
 
@@ -428,9 +431,9 @@ Wanneer u het `publicmain.css` bestand opent, wordt de volgende code weergegeven
 
 ### Clientbibliotheken detecteren {#discover-client-libraries}
 
-De `/libs/cq/ui/components/dumplibs/dumplibs` component genereert een pagina met informatie over alle clientbibliotheekmappen op het systeem. De `/libs/cq/ui/content/dumplibs` knoop heeft de component als middeltype. Als u de pagina wilt openen, gebruikt u de volgende URL (gebruik een andere host en poort naar wens):
+De `/libs/cq/granite/components/dumplibs/dumplibs` component genereert een pagina met informatie over alle clientbibliotheekmappen op het systeem. De `/libs/granite/ui/content/dumplibs` knoop heeft de component als middeltype. Als u de pagina wilt openen, gebruikt u de volgende URL (waarbij u de host en poort naar wens wijzigt):
 
-[http://localhost:4502/libs/cq/ui/content/dumplibs.test.html](http://localhost:4502/libs/cq/ui/content/dumplibs.test.html)
+`https://<host>:<port>/libs/granite/ui/content/dumplibs.test.html`
 
 Tot de gegevens behoren het bibliotheekpad en -type (CSS of JS) en de waarden van de bibliotheekkenmerken, zoals categorieën en afhankelijkheden. In de volgende tabellen op de pagina worden de bibliotheken in elke categorie en elk kanaal weergegeven.
 
@@ -443,7 +446,7 @@ De `dumplibs` component bevat een testkiezer die de broncode weergeeft die voor 
    * Klik op de `dumplibs.html` pagina op de koppeling in **Klik hier voor tekst die u wilt testen** .
    * Open de volgende URL in uw webbrowser (gebruik indien nodig een andere host en poort):
 
-      [http://localhost:4502/libs/cq/ui/content/dumplibs.html](http://localhost:4502/libs/cq/ui/content/dumplibs.html)
+      * `http://<host>:<port>/libs/granite/ui/content/dumplibs.html`
    Op de standaardpagina wordt uitvoer weergegeven voor tags zonder waarde voor het categoriekenmerk.
 
 1. Als u de uitvoer voor een categorie wilt zien, typt u de waarde van de `categories` eigenschap van de clientbibliotheek en klikt u op **Query** verzenden.
