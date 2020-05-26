@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 58482f492b7a44685af2c69b2df9aec47812d989
+source-git-commit: fbf38e7e41ef33bca5867c7b6eb1f6806ca70a08
 workflow-type: tm+mt
 source-wordcount: '2751'
 ht-degree: 4%
@@ -47,7 +47,6 @@ Het toevoegen van een component Dynamische media aan een pagina is hetzelfde als
 1. Sleep een component Dynamische media die u wilt gebruiken naar de pagina op de gewenste locatie.
 1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omgeven door een blauw vak. Tik op het pictogram **[!UICONTROL Configuration]** (moersleutel).
 1. [Bewerk indien nodig de componenten](#dynamic-media-components) en klik op het vinkje om de wijzigingen op te slaan.
-1. 
 
 ### Dynamische mediacomponenten inschakelen {#enabling-dynamic-media-components}
 
