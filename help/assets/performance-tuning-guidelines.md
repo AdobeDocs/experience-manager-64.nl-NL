@@ -3,9 +3,9 @@ title: Richtlijnen voor afstelling van middelenprestaties
 description: Belangrijke aandachtsgebieden rond AEM-configuratie, wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '3161'
+source-wordcount: '3162'
 ht-degree: 0%
 
 ---
@@ -291,7 +291,7 @@ Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bij
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
 1. Bepaal op welke publicatie-instantie u de replicaties wilt koppelen
-1. Op die publicatieinstantie voeg replicatieagenten toe die aan andere publicatieinstanties richten
+1. Op die publicatieinstantie voegt replicatieagenten toe die aan andere publicatieinstanties richten
 1. Voor elk van die replicatieagenten, laat **[!UICONTROL On Receive]** op het **[!UICONTROL Triggers]** lusje toe
 
 >[!NOTE]
@@ -417,6 +417,6 @@ Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu e
 * Verwijder overbodige stappen uit de DAM Update Asset-workflow.
 * Vorm werkschema en versie het zuiveren.
 * Optimaliseer de configuratie van de index van Lucene.
-* Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de Technische Ondersteuning van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
+* Optimaliseer indexen met de recentste de dienstpakken en hotfixes. Raadpleeg de klantenservice van Adobe voor eventuele extra indexoptimalisaties die beschikbaar zijn.
 * Gebruik deze optie `guessTotal` om de queryprestaties te optimaliseren.
 * If you configure AEM to detect file types from the content of the files (by configuring [!UICONTROL Day CQ DAM Mime Type Service] in the [!UICONTROL AEM Web Console]), upload many files in bulk during non-peak hours as the operation is resource-intensive.
