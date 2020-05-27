@@ -3,7 +3,10 @@ title: Aanbevolen werkwijzen voor middelenbewaking
 description: Aanbevolen procedures voor het controleren van de omgeving en prestaties van uw AEM-instantie nadat deze is geïmplementeerd.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+workflow-type: tm+mt
+source-wordcount: '1765'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling o
 
 * [IFP](http://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Installeer Ftop op de meeste systemen van Linux gebruikend `yum install iftop` of `apt-get install iftop`.
 
-* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in niet-productiemilieu&#39;s kunt gebruiken. Voor meer details, zie [hoe te om Vlucht Java te gebruiken Recorder om CQ Runtime Problemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)te diagnostiseren.
+* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in niet-productiemilieu&#39;s kunt gebruiken. Voor meer details, zie [hoe te om Vluchtrecorder van Java te gebruiken om CQ Runtime Problemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)te diagnostiseren.
 * AEM-bestand error.log: U kunt het AEM error.log- dossier voor details van fouten onderzoeken die in het systeem worden geregistreerd. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren die u zou moeten onderzoeken.
 * [Workflowconsole](../sites-administering/workflows.md): Gebruik de workflowconsole om workflows te controleren die achterblijven of vastlopen.
 
@@ -117,7 +120,7 @@ Replication-agents
 
 * Alarmdefinitie: Aanwezigheid van een geblokkeerde rij in het systeem erop wijst die dat het replicatiedoel neer of onbereikbaar is. Vaak leiden netwerk- of infrastructuurproblemen ertoe dat overdreven items in de wachtrij worden geplaatst, wat de systeemprestaties nadelig kan beïnvloeden.
 
-**Opmerking**:Voor de parameters MBean en URL, vervang `<AGENT_NAME>` met de naam van de replicatieagent u wilt controleren.
+**Opmerking**: Voor de parameters MBean en URL, vervang `<AGENT_NAME>` met de naam van de replicatieagent u wilt controleren.
 
 Sessieteller
 
@@ -181,17 +184,15 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
    * Alarmdrempel: Wanneer de status niet OK is
    * Alarmdefinitie: De logbestanden bevatten fouten. Controleer de logboekattributen voor meer informatie over de oorzaak van de kwestie.
 
-## Gemeenschappelijke kwesties en resoluties {#common-issues-and-resolutions}
+## Gemeenschappelijke kwesties en resoluties  {#common-issues-and-resolutions}
 
 Tijdens het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met instanties op te lossen AEM:
 
 * Als u TarMK gebruikt, voert u de Tar-compressie vaak uit. Zie [Bewaarplaats](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)onderhouden voor meer informatie.
 * Logboeken `OutOfMemoryError` controleren. Zie [Geheugenproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)analyseren voor meer informatie.
-
 * Controleer de logboeken om het even welke verwijzingen naar unindexed vragen, boomstamtraversals, of indextraversals. Deze wijzen op unindexed vragen of op ontoereikend geïndexeerde vragen. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [Beste praktijken voor Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.
 * Herzie live monitoring en zoek naar extra knelpunten of hoge consumenten van specifieke hulpbronnen.
 * Onderzoek de uitgang punten van het cliëntnetwerk en de ingangen richten aan het AEM instantienetwerk, met inbegrip van de verzender. Dit zijn vaak knelpunten. Zie [Elementennetwerkoverwegingen](assets-network-considerations.md)voor meer informatie.
-* Upsize uw AEM server. U kunt een AEM-instantie van onvoldoende grootte hebben. De Steun van Adobe kan u helpen identificeren of uw server ondermaats is.
+* Upsize uw AEM server. U kunt een AEM-instantie van onvoldoende grootte hebben. De klantenservice van Adobe kan u helpen te identificeren of uw server ondermaats is.
 * Onderzoek de `access.log` en de `error.log` dossiers voor ingangen rond de tijd van iets fout ging. Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.
-
