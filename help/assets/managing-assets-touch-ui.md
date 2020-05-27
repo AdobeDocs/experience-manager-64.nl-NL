@@ -4,9 +4,9 @@ description: Meer informatie over verschillende taken voor middelenbeheer en -be
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
 workflow-type: tm+mt
-source-wordcount: '9499'
+source-wordcount: '9500'
 ht-degree: 1%
 
 ---
@@ -142,7 +142,7 @@ Met Dynamic Media kunt u via een FTP-server items in batches uploaden. Als u gro
 
 >[!NOTE]
 >
->Om activa door middel van FTP in Dynamische Media - Scene7 wijze te uploaden installeer eigenschappak (FP) 18912 op auteur AEM. Neem contact op met de ondersteuning van Adobe voor toegang tot FP-18912 en voltooi de installatie van uw FTP-account. Zie [Functiepakket 18912 installeren voor migratie](/help/assets/bulk-ingest-migrate.md)van bulkmiddelen.
+>Om activa door middel van FTP in Dynamische Media - Scene7 wijze te uploaden installeer eigenschappak (FP) 18912 op auteur AEM. Neem contact op met de klantenservice van Adobe voor toegang tot FP-18912 en voltooi de installatie van uw FTP-account. Zie [Functiepakket 18912 installeren voor migratie](/help/assets/bulk-ingest-migrate.md)van bulkmiddelen.
 Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
 **Elementen uploaden met FTP**
@@ -190,7 +190,7 @@ Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
-Wanneer u afbeeldingsbestanden uploadt, waaronder AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het **[!UICONTROL Upload Job Options]** dialoogvenster:
+Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het **[!UICONTROL Upload Job Options]** dialoogvenster:
 
 * Witruimte uitsnijden vanaf de rand van afbeeldingen (zie de beschrijving in bovenstaande tabel).
 * Handmatig uitsnijden vanaf de zijkanten van afbeeldingen (zie beschrijving in bovenstaande tabel).
@@ -787,7 +787,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
 
 ### Annotaties afdrukken {#printing-annotations}
 
-Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties en de revisiestatus als PDF-bestand afdrukken voor offline revisie.
+Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
