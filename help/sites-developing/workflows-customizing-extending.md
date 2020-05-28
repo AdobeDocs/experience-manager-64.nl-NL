@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '3587'
+ht-degree: 1%
 
 ---
 
@@ -315,7 +318,7 @@ De workflow `MetaDataMap` is beschikbaar voor Java- en ECMA-scriptprocesimplemen
 
 ### Voorbeeld: De argumenten van de processtapcomponent ophalen {#example-retrieving-the-arguments-of-the-process-step-component}
 
-Het dialoogvenster Bewerken van de component **Processtap** bevat de eigenschap **Arguments** . De waarde van de eigenschap **Arguments** wordt opgeslagen in de metagegevens van de workflow en is gekoppeld aan de `PROCESS_ARGS` toets.
+Het dialoogvenster Bewerken van de component **Processtap** bevat de eigenschap **Arguments** . De waarde van de eigenschap **Arguments** wordt opgeslagen in de metagegevens van de workflow en is gekoppeld aan de `PROCESS_ARGS` sleutel.
 
 In het volgende diagram is de waarde van de eigenschap **Arguments** `argument1, argument2`:
 
@@ -802,7 +805,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
    >
    >Deze stap is niet van toepassing op de klassieke UI Model redacteur.
 
-1. Plaats vervolgens de gekopieerde stap in de map /apps; zoals:
+1. Plaats de gekopieerde stap vervolgens in de map /apps; zoals:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
