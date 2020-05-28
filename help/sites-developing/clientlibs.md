@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 263e66f6a24a68e1fd64e1b35bf4830f4cba3a44
+source-git-commit: 50d57997496e6809361277f7025f3858857e14af
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -134,7 +134,7 @@ In eerdere versies stonden de mappen met de clientbibliotheek hieronder `/etc/cl
 
 >[!NOTE]
 >
->Statische bronnen onder de clientbibliotheekmap moeten zich in een map met de naam *resources* bevinden. Als u niet over de statische bronnen beschikt, zoals afbeeldingen, onder de *mapbronnen*, kan er niet naar worden verwezen op een publicatie-instantie. Hier volgt een voorbeeld: http://localhost:4503/etc.clientlibs/geometrixx/components/clinetlibs/resources/example.gif
+>Statische bronnen onder de clientbibliotheekmap moeten zich in een map met de naam *resources* bevinden. Als u niet over de statische bronnen beschikt, zoals afbeeldingen, onder de *mapbronnen*, kan er niet naar worden verwezen op een publicatie-instantie. Hier volgt een voorbeeld: http://localhost:4503/etc.clientlibs/geometrixx/components/clientlibs/resources/example.gif
 
 >[!NOTE]
 >
