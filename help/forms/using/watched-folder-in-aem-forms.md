@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '7663'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
 
 * **stageFileExpirationDuration (lang, standaard -1)**: Het aantal seconden dat moet worden gewacht voordat een invoerbestand/map die al voor verwerking is opgepakt, wordt beschouwd als een time-out en gemarkeerd als een fout. Dit verloopmechanisme wordt alleen geactiveerd wanneer de waarde voor deze eigenschap een positief getal is.
 
-   **Opmerking:** *Zelfs wanneer een invoer wordt gemarkeerd als een time-out met behulp van dit mechanisme, kan het nog steeds op de achtergrond verwerken, maar neemt het gewoon meer tijd dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.*
+   **Opmerking:** *Zelfs wanneer een input duidelijk als getimed uit gebruikend dit mechanisme wordt gemerkt, kan het nog op de achtergrond verwerken maar enkel meer tijd nemen dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.*
 
 * 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, standaard true):** Hiermee wordt aangegeven of het verloopmechanisme alleen moet worden geactiveerd wanneer de controlemap wordt vertraagd. Het mechanisme is relevanter voor vertraagde controlemappen aangezien een klein aantal dossiers die zich in een onverwerkte staat (wegens intermitterende baan/werkschemafouten) rond blijven de mogelijkheid hebben om verwerking voor de volledige partij te onderdrukken wanneer het vertragen wordt toegelaten. Als deze eigenschap wordt ingesteld op true (de standaardwaarde), wordt het verloopmechanisme niet geactiveerd voor gecontroleerde mappen die niet worden vertraagd. Als de eigenschap false blijft, wordt het mechanisme altijd geactiveerd zolang de eigenschap stageFileExpirationDuration een positief getal is.
@@ -210,7 +213,7 @@ U kunt veranderbare variabelen voor werkschemagebaseerde dossierverwerkingsmetho
 
 U kunt een workflow, service of script starten om de documenten in een controlemap te verwerken.
 
-### Een service gebruiken om bestanden van een gecontroleerde map te verwerken {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
+### Een service gebruiken om bestanden van een gecontroleerde map te verwerken   {#using-a-service-to-process-files-of-a-watched-folder-nbsp}
 
 Een dienst is een douaneimplementatie van de `com.adobe.aemfd.watchfolder.service.api.ContentProcessor` interface. Het wordt geregistreerd met OSGi samen met een paar douaneeigenschappen. De aangepaste eigenschappen van de implementatie maken deze uniek en helpen u bij het identificeren van de implementatie.
 
@@ -720,7 +723,7 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
 
 ### Een workflow maken {#create-a-workflow-1}
 
-1. Open de interface van de AEM-workflow in een browservenster. `https://[server]:[port]/worklow`
+1. Open de interface van de AEM-workflow in een browservenster. `https://[server]:[port]/workflow`
 
 1. Klik in de weergave Modellen op **Nieuw**. Geef in het dialoogvenster Nieuwe workflow de **titel** op en klik op **OK**.
 1. Selecteer de nieuwe workflow en klik op **Bewerken**. De workflow wordt in een nieuw venster geopend.
