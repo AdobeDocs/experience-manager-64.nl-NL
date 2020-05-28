@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 7cb99618-d903-4cfb-b0d9-b23d189f6e78
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 7%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 Met AEM Workflows kunt u een reeks stappen automatiseren die worden uitgevoerd op (een of meer) pagina&#39;s en/of elementen.
 
-Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkstroom die dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
+Wanneer u bijvoorbeeld publiceert, moet een editor de inhoud controleren voordat een sitebeheerder de pagina activeert. Een werkschema dat dit voorbeeld automatiseert brengt elke deelnemer op de hoogte wanneer het tijd is om hun vereist werk uit te voeren:
 
 1. De auteur past de workflow toe op de pagina.
 1. De redacteur ontvangt een het werkpunt dat erop wijst dat zij worden vereist om de paginainhoud te herzien. Als ze klaar zijn, geven ze aan dat hun werkitem voltooid is.
