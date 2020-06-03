@@ -4,7 +4,7 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+source-git-commit: 2aa3037b63f745d158eb87c5156808237277990d
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 0%
@@ -237,7 +237,7 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 
 ## Bekende problemen {#known-issues}
 
-* De update van [!DNL chrome] versie 83 veroorzaakt een kwestie in de bouw van pakketten. Gebruik andere beschikbare browsers, zoals [!DNL Internet Explorer] en [!DNL Edge], of andere AEM-standaardopties voor het installeren van pakketten om het probleem op te lossen.
+* De update van [!DNL chrome] versie 83 veroorzaakt een kwestie in de bouw van pakketten. Gebruik andere beschikbare browsers, zoals [!DNL Internet Explorer] en [!DNL Firefox], of andere AEM-standaardopties voor het installeren van pakketten om het probleem op te lossen.
 
 * Kan geen e-mail naar de externe SMTP-server verzenden met de standaard e-mailafzender van AEM, omdat communicatie met TLS v1.2 alleen is toegestaan. Verwijder de bundel `javax.mail:mail:1.5.0-b01` uit `system/console` en vernieuw de bundels om het probleem op te lossen.
 
