@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 3a9b145395b5a251071129b0cee5ad57ca32fff6
+source-git-commit: dbe1feef05cebed7c7bcadbe6a1b4af242cb9d3c
 workflow-type: tm+mt
-source-wordcount: '2547'
+source-wordcount: '2628'
 ht-degree: 10%
 
 ---
@@ -26,9 +26,15 @@ Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automa
 >
 >Het slimme Gewas is beschikbaar slechts in Dynamische Media - wijze Scene7.
 
+>[!IMPORTANT]
+>
+>Afbeeldingsprofielen zijn niet van toepassing op PDF-bestanden.
+
 ## Opties voor uitsnijden {#crop-options}
 
-<!-- CQDOC-16069 -->Smart Crop coordinates are aspect ratio dependent. That is, for the various smart crop settings in an image profile, if the aspect ratio is the same for the added dimensions that are in the image profile, then the same aspect ratio is sent to Dynamic media. Because of this, Adobe recommends that you use the same crop area. Doing so will ensure that there is no impact to different dimensions used in the image profile.
+<!-- CQDOC-16069 for paragraph directly below -->
+
+De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als de hoogte-breedteverhouding voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel hetzelfde is voor de toegevoegde afmetingen in het afbeeldingsprofiel, wordt dezelfde hoogte-breedteverhouding verzonden naar dynamische media. Daarom raadt Adobe u aan hetzelfde uitsnijdgebied te gebruiken. Zo voorkomt u dat verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt, worden beïnvloed.
 
 Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim uitsnijden kunt toepassen op mapniveau, raadt Adobe u aan het effect *alleen* in mappen te gebruiken als dat nodig is.
 
