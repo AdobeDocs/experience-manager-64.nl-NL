@@ -3,7 +3,10 @@ title: Afbeeldingstransformatiebibliotheek
 description: Leer hoe u de Imaging Transcoding Library van Adobe configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 19973ad6f039b18fa7f248e1d18f7e7e62df699e
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '932'
+ht-degree: 0%
 
 ---
 
@@ -25,8 +28,8 @@ Naast de ondersteuning van een groot aantal bestandsindelingen en profielen bied
 
 * **Schalen met grotere bestandsgrootte of resolutie**: Schalen wordt vooral bereikt door de gepatenteerde mogelijkheid om de afbeeldingstranscoderingsbibliotheek tijdens het decoderen van bestanden te vergroten of te verkleinen. Hierdoor wordt gegarandeerd dat het runtimegeheugengebruik altijd optimaal is en geen kwadratische functie voor het vergroten van de bestandsgrootte of het oplossen van megapixels is. De bibliotheek voor het transformeren van afbeeldingen kan grotere en hoge-resolutiebestanden (met hogere megapixels) verwerken. Gereedschappen van derden, zoals ImageMagick, kunnen grote bestanden en vastlopen niet verwerken tijdens het verwerken van dergelijke bestanden.
 * **Afbeeldingscompressie en -algoritmen** voor Photoshop-kwaliteit: Consistentie met de industriestandaard wat betreft de kwaliteit van de downsampling (vloeiend, scherp en automatisch bicubisch) en de compressiekwaliteit. De bibliotheek voor grafische transformatie beoordeelt verder de kwaliteitsfactor van de invoerafbeelding en gebruikt op intelligente wijze optimale tabellen en kwaliteitsinstellingen voor de uitvoerafbeelding. Hierdoor ontstaan bestanden van optimale grootte zonder dat dit ten koste gaat van de visuele kwaliteit.
-* **** Hoge doorvoer: De reactietijd is lager en de productie is constant hoger dan ImageMagick. Daarom zou de Bibliotheek van de Transcodering van Beelden de wachttijd voor gebruikers en de kosten van het ontvangen moeten verminderen.
-* **** Beter schalen bij gelijktijdig laden: De afbeeldingstransformatiebibliotheek functioneert optimaal onder gelijktijdige laadvoorwaarden. Deze server biedt een hoge doorvoer met optimale CPU-prestaties, een optimaal geheugengebruik en een lage responstijd, wat de hostingkosten helpt te verlagen.
+* **Hoge doorvoer:** De reactietijd is lager en de productie is constant hoger dan ImageMagick. Daarom zou de Bibliotheek van de Transcodering van Beelden de wachttijd voor gebruikers en de kosten van het ontvangen moeten verminderen.
+* **Beter schalen bij gelijktijdig laden:** De afbeeldingstransformatiebibliotheek functioneert optimaal onder gelijktijdige laadvoorwaarden. Deze server biedt een hoge doorvoer met optimale CPU-prestaties, een optimaal geheugengebruik en een lage responstijd, wat de hostingkosten helpt te verlagen.
 
 ## Ondersteunde platforms {#supported-platforms}
 
@@ -36,7 +39,7 @@ Imaging Transcoding Library is alleen beschikbaar voor RHEL 7- en CentOS 7-distr
 >
 >Mac OS en andere *nix-distributies (bijvoorbeeld Debian en Ubuntu) worden niet ondersteund.
 
-## Usage {#usage}
+## Gebruik {#usage}
 
 De opdrachtregelargumenten voor de bibliotheek voor het transformeren van afbeeldingen kunnen het volgende bevatten:
 
@@ -74,9 +77,9 @@ Om ITL verwerking te vormen, creeer een configuratiedossier en werk het werksche
 
 Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de bibliotheken aan te geven met de volgende stappen. U hebt beheerder- of basismachtigingen nodig.
 
-1. Download het [pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) Imaging Transcoding Library en installeer het met de Package Manager. Het pakket is compatibel met AEM 6.5.
+1. Download het pakket Imaging Transcoding Library van [Packase Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) of van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-imaging-transcoding-library-pkg) en installeer het met de Package Manager. Het pakket is compatibel met AEM 6.5.
 
-1. Als u een bundle-id wilt weten voor `com.day.cq.dam.cq-dam-switchengine`, meldt u zich aan bij de webconsole en tikt u op **[!UICONTROL OSGi > Bundels]**. U kunt ook de `https://[aem_server:[port]/system/console/bundles/` URL openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine` bundel en id.
+1. Als u een bundle-id wilt weten voor `com.day.cq.dam.cq-dam-switchengine`, meldt u zich aan bij de webconsole en tikt u op **[!UICONTROL OSGi > Bundles]**. U kunt ook de `https://[aem_server:[port]/system/console/bundles/` URL openen om de bundelconsole te openen. Zoek `com.day.cq.dam.cq-dam-switchengine` bundel en id.
 
 1. Zorg ervoor dat alle vereiste bibliotheken zijn uitgepakt, door de map te controleren met de opdracht `ls -la /aem64/author/crx-quickstart/launchpad/felix/bundle<id>/data/binaries/`, waar de mapnaam is samengesteld met de bundle-id. De opdracht is bijvoorbeeld `ls -la /aem64/author/crx-quickstart/launchpad/felix/bundle588/data/binaries/` of bundle id `588`is.
 
@@ -103,24 +106,24 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 ### Workflow voor DAM-update-middelen configureren {#configure-dam-asset-update-workflow}
 
-Werk de [!UICONTROL DAM-workflow voor het bijwerken van middelen] bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
+Werk de [!UICONTROL DAM Update Asset] workflow bij om de bibliotheek te gebruiken voor het verwerken van afbeeldingen.
 
-1. Tik/klik op het AEM-logo en ga naar **[!UICONTROL Gereedschappen > Workflow > Modellen]**.
+1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
 
-1. Open vanaf de pagina **[!UICONTROL Workflowmodellen]** het workflowmodel voor **[!UICONTROL DAM Update Asset]** in de bewerkingsmodus.
+1. Open vanaf de **[!UICONTROL Workflow Models]** pagina het **[!UICONTROL DAM Update Asset]** workflowmodel in de bewerkingsmodus.
 
-1. Open de stap voor het werkstroomproces **[!UICONTROL Miniaturen]** verwerken. Voeg op het tabblad **[!UICONTROL Miniaturen]** de MIME-typen toe waarvoor u het standaardgenereren van miniaturen wilt overslaan in de lijst MIME-typen **** overslaan.
-Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van de bibliotheek voor afbeeldingstransformatie, geeft u dit op in het veld MIME-typen `image/tiff` **** overslaan.
+1. Open de stap voor het **[!UICONTROL Process Thumbnails]** workflowproces. Voeg op het **[!UICONTROL Thumbnails]** tabblad de MIME-typen toe waarvoor u het standaardgenereren van miniaturen in de **[!UICONTROL Skip Mime Types]** lijst wilt overslaan.
+Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van de bibliotheek voor afbeeldingstransformatie, geeft u dit op `image/tiff` in het **[!UICONTROL Skip Mime Types]** veld.
 
-1. Voeg op het tabblad **[!UICONTROL Web Enabled Image]** de MIME-typen toe waarvoor u het standaardgenereren van webvertoningen in de lijst **[!UICONTROL Overslaan wilt overslaan]**. Als u bijvoorbeeld het MIME-type `image/tiff` in de bovenstaande stap hebt overgeslagen, voegt u dit toe `image/tiff` aan de lijst Overslaan.
+1. Voeg op het **[!UICONTROL Web Enabled Image]** tabblad de MIME-typen toe waarvoor u het standaardgenereren van webvertoningen wilt overslaan **[!UICONTROL Skip List]**. Als u bijvoorbeeld het MIME-type `image/tiff` in de bovenstaande stap hebt overgeslagen, voegt u dit toe `image/tiff` aan de lijst Overslaan.
 
-1. Open de stap **[!UICONTROL EPS-miniaturen (aangedreven door ImageMagick)]** en navigeer naar het tabblad **[!UICONTROL Argumenten]** . Voeg in de lijst **[!UICONTROL MIME-typen]** de MIME-typen toe die u in de bibliotheek voor afbeeldingstransformatie wilt verwerken. Als u bijvoorbeeld het MIME-type `image/tiff` in de bovenstaande stap hebt overgeslagen, voegt u dit toe `image/jpeg` aan de lijst **[!UICONTROL MIME-typen]** .
+1. Open de **[!UICONTROL EPS thumbnails (powered by ImageMagick)]** stap en navigeer naar de **[!UICONTROL Arguments]** tab. Voeg in de **[!UICONTROL Mime Types]** lijst de MIME-typen toe die u wilt verwerken in de bibliotheek voor afbeeldingstransformatie. Als u bijvoorbeeld het MIME-type `image/tiff` in de bovenstaande stap hebt overgeslagen, voegt u het toe `image/jpeg` aan de **[!UICONTROL Mime Types]** lijst.
 
 1. Verwijder de standaardopdrachten, indien aanwezig.
 
-1. Het zijpaneel van de knevel en van de lijst van stappen voegen **[!UICONTROL Handler]** SWitchEngine toe.
+1. In-/uitschakelen in het zijpaneel en in de lijst met stappen toevoegen **[!UICONTROL SWitchEngine Handler]**.
 
-1. Voeg bevelen aan de [!UICONTROL Handler] SwitchEngine toe die op uw douanevereisten wordt gebaseerd. Tune de parameters van bevelen die u specificeert om aan uw vereisten te voldoen. Als u bijvoorbeeld het kleurprofiel van de JPEG-afbeelding wilt behouden, voegt u de volgende opdrachten toe aan de lijst **[!UICONTROL Opdrachten]** :
+1. Voeg bevelen aan toe [!UICONTROL SwitchEngine Handler] die op uw douanevereisten worden gebaseerd. Tune de parameters van bevelen die u specificeert om aan uw vereisten te voldoen. Als u bijvoorbeeld het kleurprofiel van uw JPEG-afbeelding wilt behouden, voegt u de volgende opdrachten toe aan de **[!UICONTROL Commands]** lijst:
 
    * `SWitchEngine -input ${file} -destMime PNG -resize 48 -output ${directory}cq5dam.thumbnail.48.48.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
@@ -132,9 +135,9 @@ Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van
 
    ![schil](assets/chlimage_1-200.png)
 
-1. Om Webvertoningen te produceren, vorm parameters op het **[!UICONTROL Web-Toegelaten lusje van het Beeld]** .
+1. Als u webuitvoeringen wilt genereren, configureert u parameters op het **[!UICONTROL Web-Enabled Image]** tabblad.
 
-1. Synchroniseer het bijgewerkte workflowmodel voor [!UICONTROL DAM Update Asset] . Sla de workflow op.
+1. Synchroniseer het bijgewerkte [!UICONTROL DAM Update Asset] workflowmodel. Sla de workflow op.
 
 Controleer de configuratie, upload een TIFF-afbeelding en controleer het bestand error.log. Je zult berichten met `INFO` aanhalingstekens van `SwitchEngineHandlingProcess execute: executing command line`. In de logboeken worden de gegenereerde uitvoeringen vermeld. Nadat de workflow is voltooid, kunt u de nieuwe uitvoeringen weergeven in AEM.
 
