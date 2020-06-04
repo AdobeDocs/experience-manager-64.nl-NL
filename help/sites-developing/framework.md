@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+workflow-type: tm+mt
+source-wordcount: '1908'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ Inhoud labelen en de infrastructuur voor AEM-tags gebruiken:
 * NodeType van het gelabelde inhoudsknooppunt moet de [`cq:Taggable`](#taggable-content-cq-taggable-mixin) mix bevatten
 * De [TagID](#tagid) wordt toegevoegd aan de [`cq:tags`](#tagged-content-cq-tags-property) eigenschap van het inhoudsknooppunt en wordt omgezet in een knooppunt van het type [`cq:Tag`](#tags-cq-tag-node-type)
 
-## Tags: cq:Type tagknooppunt {#tags-cq-tag-node-type}
+## Tags: cq:Type tagknooppunt  {#tags-cq-tag-node-type}
 
 De declaratie van een tag wordt vastgelegd in de repository in een knooppunt van het type `cq:Tag.`
 
@@ -89,9 +92,7 @@ Code die verwijst naar niet-bestaande paden of paden die niet naar een cq:Tag-kn
 
 In de volgende tabel ziet u een aantal voorbeeld-ID&#39;s, de bijbehorende elementen en de manier waarop de TagID wordt omgezet in een absoluut pad in de opslagplaats:
 
-
 In de volgende tabel ziet u een aantal voorbeeld-ID&#39;s, de bijbehorende elementen en de manier waarop de TagID wordt omgezet in een absoluut pad in de opslagplaats:\
-
 In de volgende tabel ziet u een aantal voorbeeld-ID&#39;s, de bijbehorende elementen en de manier waarop de TagID wordt omgezet in een absoluut pad in de opslagplaats:
 
 <table> 
@@ -214,7 +215,7 @@ De `cq:tags` eigenschap is een array String die wordt gebruikt om een of meer ta
 
 >[!NOTE]
 >
->Als u de functionaliteit voor AEM-tags wilt gebruiken, moeten aangepaste toepassingen alleen `cq:tags`tageigenschappen definiëren.
+>Als u de functionaliteit voor AEM-labeling wilt gebruiken, mogen aangepaste toepassingen alleen `cq:tags`tageigenschappen definiëren.
 
 ## Labels verplaatsen en samenvoegen {#moving-and-merging-tags}
 
@@ -227,8 +228,7 @@ Hieronder volgt een beschrijving van de effecten in de opslagplaats bij het verp
 
 * `cq:movedTo` verwijst naar label B.
 
-   
-Deze eigenschap betekent dat tag A is verplaatst of samengevoegd met tag B. Als tag B wordt verplaatst, wordt deze eigenschap dienovereenkomstig bijgewerkt. Tag A is dus verborgen en wordt alleen in de opslagplaats bewaard om tag-id&#39;s op te lossen in inhoudsknooppunten die verwijzen naar tag A. De opschoonfunctie voor ongewenste details verwijdert tags zoals tag A, als er geen inhoudsknooppunten meer naar wijzen.
+   Deze eigenschap betekent dat tag A is verplaatst of samengevoegd met tag B. Als tag B wordt verplaatst, wordt deze eigenschap dienovereenkomstig bijgewerkt. Tag A is dus verborgen en wordt alleen in de opslagplaats bewaard om tag-id&#39;s op te lossen in inhoudsknooppunten die verwijzen naar tag A. De opschoonfunctie voor ongewenste details verwijdert tags zoals tag A, als er geen inhoudsknooppunten meer naar wijzen.
 
    Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`: wordt toegepast wanneer de tag wordt verwijderd, maar niet kan worden verwijderd uit de repository omdat er subtags zijn met een `cq:movedTo` die moet worden bewaard.
 
@@ -256,3 +256,88 @@ Deze eigenschap betekent dat tag A is verplaatst of samengevoegd met tag B. Als 
 * Als u de wijziging wilt publiceren wanneer een tag is verplaatst of samengevoegd, moeten het `cq:Tag` knooppunt en alle bijbehorende back-ups worden gerepliceerd: dit wordt automatisch gedaan wanneer de markering in de console van het markeringsbeleid wordt geactiveerd.
 
 * Later worden de &#39;oude&#39; verwijzingen automatisch verwijderd als de `cq:tags` eigenschap van de pagina wordt bijgewerkt. Dit wordt geactiveerd omdat het omzetten van een verplaatste tag via de API de doeltag retourneert, waardoor de doeltag-id wordt opgegeven.
+
+## Tags migreren {#tags-migration}
+
+Vanaf Experience Manager 6.4 worden de tags onder opgeslagen `/content/cq:tags`, die eerder onder `/etc/tags`opgeslagen waren. In situaties waarin Adobe Experience Manager is bijgewerkt vanaf de vorige versie, zijn de labels echter nog steeds aanwezig op de oude locatie `/etc/tags`. In geüpgrade systemen moeten codes worden gemigreerd onder `/content/cq:tags`.
+
+> [!NOTE]
+> In Pagina-eigenschappen van de tagpagina wordt aangeraden om tag-id te gebruiken (bijvoorbeeld `geometrixx-outdoors:activity/biking`) in plaats van het basispad van de tag hard te coderen (bijvoorbeeld `/etc/tags/geometrixx-outdoors/activity/biking`).
+> U kunt tags toevoegen aan een lijst `com.day.cq.tagging.servlets.TagListServlet` .
+
+> [!NOTE]
+> Het wordt aangeraden de API voor tagbeheer als bron te gebruiken.
+
+**Als de bijgewerkte AEM-instantie de API van TagManager ondersteunt**
+
+1. Aan het begin van de component detecteert de API van TagManager of het een geüpgrade AEM-instantie is. In het geüpgrade systeem worden de codes opgeslagen onder `/etc/tags`.
+
+1. De API TagManager wordt vervolgens uitgevoerd in de modus Achterwaartse compatibiliteit, wat betekent dat de API `/etc/tags` als basispad gebruikt. Zo niet, dan wordt een nieuwe locatie gebruikt `/content/cq:tags`.
+
+1. Werk de taglocatie bij.
+
+1. Nadat u tags naar de nieuwe locatie hebt gemigreerd, voert u het volgende script uit:
+
+```java
+import org.apache.sling.api.resource.*
+import javax.jcr.*
+
+ResourceResolverFactory resourceResolverFactory = osgi.getService(ResourceResolverFactory.class);
+ResourceResolver resolver = resourceResolverFactory.getAdministrativeResourceResolver(null);
+Session session = resolver.adaptTo(Session.class);
+
+def queryManager = session.workspace.queryManager;
+def statement = "/jcr:root/content/cq:tags//element(*, cq:Tag)[jcr:contains(@cq:movedTo,\'/etc/tags\') or jcr:contains(@cq:backlinks,\'/etc/tags\')]";
+def query = queryManager.createQuery(statement, "xpath");
+
+println "query = ${query.statement}\n";
+
+def tags = query.execute().getNodes();
+
+
+tags.each { node ->
+        def tagPath = node.path;
+        println "tag = ${tagPath}";
+
+        if(node.hasProperty("cq:movedTo") && node.getProperty("cq:movedTo").getValue().toString().startsWith("/etc/tags")){
+
+                def movedTo = node.getProperty("cq:movedTo").getValue().toString();
+
+                println "cq:movedTo = ${movedTo} \n";
+
+                movedTo = movedTo.replace("/etc/tags","/content/cq:tags");
+                node.setProperty("cq:movedTo",movedTo);
+        } else if(node.hasProperty("cq:backlinks")){
+
+               String[] backLinks = node.getProperty("cq:backlinks").getValues();
+               int count = 0;
+
+               backLinks.each { value ->
+                       if(value.startsWith("/etc/tags")){
+                               println "cq:backlinks = ${value}\n";
+                               backLinks[count] = value.replace("/etc/tags","/content/cq:tags");
+    }
+                       count++;
+               }
+
+               node.setProperty("cq:backlinks",backLinks);
+  }
+}
+session.save();
+
+println "---------------------------------Success-------------------------------------"
+```
+
+Het script haalt alle tags op die `/etc/tags` in de waarde van de `cq:movedTo/cq:backLinks` eigenschap staan. Vervolgens wordt de opgehaalde resultaatset doorlopen en worden de waarden van `cq:movedTo` en de `cq:backlinks` eigenschap omgezet in `/content/cq:tags` paden (wanneer `/etc/tags` deze worden gedetecteerd in de waarde).
+
+**Als de geüpgrade AEM-instantie wordt uitgevoerd op de klassieke UI**
+
+> [!NOTE]
+> Klassieke UI is niet nul onderbreking volgzaam en steunt geen nieuw weg van de markeringsbasis. Als u klassieke UI wilt gebruiken dan `/etc/tags` moet worden gecreeerd gevolgd door `cq-tagging` componentenherstart.
+
+
+In het geval van bijgewerkte AEM-instanties die worden ondersteund door de API van TagManager en worden uitgevoerd in de klassieke gebruikersinterface:
+
+1. Als verwijzingen naar het oude basispad van een tag `/etc/tags` zijn vervangen door tagId of een nieuwe taglocatie `/content/cq:tags`, kunt u tags migreren naar de nieuwe locatie `/content/cq:tags` in CRX, gevolgd door het opnieuw opstarten van de component.
+
+1. Nadat u tags naar de nieuwe locatie hebt gemigreerd, voert u het bovenstaande script uit.
