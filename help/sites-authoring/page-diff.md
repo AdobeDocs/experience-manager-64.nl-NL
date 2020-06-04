@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a771d8c-cc56-4979-aeab-b508755a2078
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 1%
 
 ---
 
@@ -25,7 +28,7 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 
 >[!CAUTION]
 >
->De gebruiker moet over de machtiging **Wijzigen/Maken/Verwijderen** op het knooppunt beschikken `/content/versionhistory` om de functie te kunnen gebruiken.
+>Als u een versie voorafgaand aan AEM 6.4.3 in werking stelt, moet de gebruiker de **Modify/Create/Delete** toestemming op de knoop hebben om de eigenschap `/content/versionhistory` te gebruiken.
 >
 >Zie [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) voor meer technische details over deze functie.
 
