@@ -10,7 +10,10 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: 1cdb2dfc-623b-44cf-9a7b-98cfabbb1d0c
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+workflow-type: tm+mt
+source-wordcount: '1815'
+ht-degree: 10%
 
 ---
 
@@ -134,7 +137,7 @@ Met platte tekst kunt u snel inhoud invoeren zonder opmaak- of markeringsgegeven
 
 >[!CAUTION]
 >
->Als u **Onbewerkte tekst** selecteert, gaan opmaak, markeringen en/of elementen verloren die u hebt ingevoegd in **RTF** of **Markering**.
+>Als u **Tekst zonder opmaak** selecteert, gaan opmaak, markdown en/of assets die u hebt ingevoegd in **Tekst met opmaak** of **Markdown** verloren.
 
 ### Markering {#markdown}
 
@@ -158,11 +161,11 @@ U kunt de volledige-schermredacteur voor verdere [acties](#actions)ook openen.
 
 >[!CAUTION]
 >
->Als u tussen **RTF** en **Markering** schakelt, kunt u onverwachte gevolgen met de Aanhalingstekens van het Blok en de Blokken van de Code ervaren, aangezien deze twee formaten verschillen in hoe zij worden behandeld kunnen hebben.
+>Als u tussen **Tekst met opmaak** en **Markdown** schakelt, kunt u onverwachte effecten met Blokcitaten en Codeblokken ervaren, aangezien deze twee opmaakindelingen verschillen in hoe zij worden behandeld.
 
 ### Belangrijkste statistieken weergeven {#viewing-key-statistics}
 
-Wanneer de volledige het schermredacteur open is, zal de actie de Statistieken **van de** Tekst een waaier van informatie over de tekst tonen. Bijvoorbeeld:
+Wanneer de volledige-schermeditor open is, zal de actie **Tekststatistieken** allerlei informatie over de tekst tonen. Bijvoorbeeld:
 
 ![cfx-6420-22](assets/cfx-6420-22.png)
 
@@ -190,20 +193,20 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 >
 >Engels is beschikbaar buiten de box.
 >
->Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket:
+>Andere talen zijn beschikbaar als Pakketten van het Model van de Taal van het Aandeel van het Pakket of de Distributie van de Software:
 >
->* [Frans (fr)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr)
->* [Duits (de)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
->* [Italiaans (it)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it)
->* [Spaans (es)](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es)
+>* [Frans (fr) van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-fr) of [Frans (fr) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
+>* [Duits (de) van het Aandeel](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de) van het Pakket of [Duits (de) van de Distributie van de Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
+>* [Italiaans (it) van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-it) of [Italiaans (it) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
+>* [Spaans (es) van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-es) of [Spaans (es) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
 >
 
 
 
-1. Selecteer **[!UICONTROL Stramien]** of de gewenste variatie.
+1. Selecteer **[!UICONTROL Master]** of de gewenste variatie.
 1. Open de editor voor het volledige scherm.
 
-1. Selecteer Tekst **** samenvatten op de werkbalk.
+1. Selecteer een optie **[!UICONTROL Summarize text]** op de werkbalk.
 
    ![cf-17](assets/cf-17.png)
 
@@ -215,21 +218,21 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
    * Klik op een niet-gemarkeerde zin om deze te verwijderen.
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
-1. Selecteer **[!UICONTROL Samenvatten]** om de wijzigingen te bevestigen.
+1. Selecteer deze optie **[!UICONTROL Summarize]** om de wijzigingen te bevestigen.
 
 ### Een inhoudsfragment annoteren {#annotating-a-content-fragment}
 
 Een fragment annoteren:
 
-1. Selecteer **[!UICONTROL Stramien]** of de gewenste variatie.
+1. Selecteer **[!UICONTROL Master]** of de gewenste variatie.
 1. Open de editor voor het volledige scherm.
-1. Selecteer tekst. Het pictogram **[!UICONTROL Annoteren]** wordt beschikbaar.
+1. Selecteer tekst. Het **[!UICONTROL Annotate]** pictogram wordt beschikbaar.
 
    ![cfm-6420-24](assets/cfm-6420-24.png)
 
 1. Er wordt een dialoogvenster geopend. Hier kunt u uw annotatie invoeren.
 
-1. Sluit de volledige-schermeditor en **[!UICONTROL sla]** het fragment op.
+1. Sluit de volledige-schermredacteur en **[!UICONTROL Save]** het fragment.
 
 ### Annotaties weergeven, bewerken, verwijderen {#viewing-editing-deleting-annotations}
 
@@ -243,7 +246,7 @@ Annotaties:
 
 * Wanneer u de volledige tekst verwijdert waarop de annotatie is toegepast, wordt de annotatie ook verwijderd.
 
-* Kan worden weergegeven en verwijderd door het tabblad **[!UICONTROL Annotaties]** in de fragmenteditor te selecteren.
+* Kan worden weergegeven en verwijderd door het **[!UICONTROL Annotations]** tabblad in de fragmenteditor te selecteren.
 
    ![cfm-6420-25](assets/cfm-6420-25.png)
 
@@ -266,7 +269,7 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. U ku
 >Er zijn verschillende methoden om [afbeeldingen](content-fragments.md#fragments-with-visual-assets) toe te voegen aan het fragment en/of de pagina.
 
 1. Plaats de cursor op de positie waar u de afbeelding wilt toevoegen.
-1. Gebruik het pictogram Element **** invoegen om het zoekdialoogvenster te openen.
+1. Use the **[!UICONTROL Insert Asset]** icon to open the search dialog.
 
    ![cf-insert-asset-icon](assets/cf-insertasset-icon.png)
 
@@ -276,14 +279,14 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. U ku
    * zoeken naar de middelen in DAM
    Selecteer het gewenste element door op de miniatuur te klikken.
 
-1. Gebruik **[!UICONTROL Selecteren]** om het element op de huidige locatie toe te voegen aan het alineasysteem van het inhoudsfragment.
+1. Use **[!UICONTROL Select]** to add the asset to the paragraph system of your content fragment at the current location.
 
    >[!CAUTION]
    >
-   >Als u na het toevoegen van een element de indeling wijzigt in:
+   >Als u na het toevoegen van een asset de indeling wijzigt in:
    >
-   >* **Onbewerkte tekst**: het element wordt volledig uit het fragment verwijderd.
-   >* **Markering**: het element is niet zichtbaar, maar blijft aanwezig wanneer u terugkeert naar **RTF**.
+   >* **Tekst zonder opmaak**: wordt de asset volledig uit het fragment verwijderd.
+   >* **Markdown**: is de asset niet zichtbaar, maar blijft deze aanwezig wanneer u terugkeert naar **Tekst met opmaak**.
 
 
 ## Variaties beheren {#managing-variations}
@@ -295,10 +298,10 @@ Met behulp van variaties kunt u de inhoud van het **stramien** afstemmen op het 
 Een nieuwe variatie maken:
 
 1. Open het fragment en controleer of het zijpaneel zichtbaar is.
-1. Selecteer **[!UICONTROL Variaties]** in de pictogrambalk in het zijpaneel.
-1. Selecteer Variatie **[!UICONTROL maken]**.
-1. Er wordt een dialoogvenster geopend waarin u de **[!UICONTROL titel]** en de **[!UICONTROL beschrijving]** voor de nieuwe wijziging kunt opgeven.
-1. Selecteer **[!UICONTROL Toevoegen]**. De **[!UICONTROL fragmentstramien]** wordt gekopieerd naar de nieuwe variant, die nu is geopend voor [bewerking](#editing-a-variation).
+1. Selecteer een optie **[!UICONTROL Variations]** in de pictogrambalk in het zijpaneel.
+1. Selecteer **[!UICONTROL Create Variation]**.
+1. A dialog will open, specify the **[!UICONTROL Title]** and **[!UICONTROL Description]** for the new variation.
+1. Select **[!UICONTROL Add]**; the fragment **[!UICONTROL Master]** will be copied to the new variation, which is now open for [editing](#editing-a-variation).
 
    >[!NOTE]
    >
@@ -317,13 +320,13 @@ U kunt wijzigingen aanbrengen in de inhoud van de variatie nadat:
 
 Een bestaande variatie een andere naam geven:
 
-1. Open het fragment en selecteer **[!UICONTROL Variaties]** in het zijpaneel.
+1. Open your fragment and select **[!UICONTROL Variations]** from the side panel.
 1. Selecteer de gewenste variatie.
-1. Selecteer **[!UICONTROL Naam wijzigen]** in het keuzemenu **[!UICONTROL Handelingen]** .
+1. Selecteer **[!UICONTROL Rename]** in het **[!UICONTROL Actions]** keuzemenu.
 
-1. Voer in het dialoogvenster dat verschijnt de nieuwe **[!UICONTROL titel]** en/of **[!UICONTROL beschrijving]** in.
+1. Enter the new **[!UICONTROL Title]** and/or **[!UICONTROL Description]** in the resulting dialog box.
 
-1. Bevestig de handeling **[!UICONTROL Naam wijzigen]** .
+1. Bevestig de **[!UICONTROL Rename]** handeling.
 
 >[!NOTE]
 >
@@ -333,11 +336,11 @@ Een bestaande variatie een andere naam geven:
 
 Een bestaande wijziging verwijderen:
 
-1. Open het fragment en selecteer **[!UICONTROL Variaties]** in het zijpaneel.
+1. Open your fragment and select **[!UICONTROL Variations]** from the side panel.
 1. Selecteer de gewenste variatie.
-1. Selecteer **[!UICONTROL Verwijderen]** in het keuzemenu **[!UICONTROL Handelingen]** .
+1. Selecteer **[!UICONTROL Delete]** in het **[!UICONTROL Actions]** keuzemenu.
 
-1. Bevestig de actie **[!UICONTROL Verwijderen]** in het dialoogvenster.
+1. Bevestig de **[!UICONTROL Delete]** actie in het dialoogvenster.
 
 >[!NOTE]
 >
@@ -351,13 +354,13 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 
 >[!CAUTION]
 >
->De synchronisatie is alleen beschikbaar om wijzigingen *van **Stramien**naar variatie* te kopiëren.
+>De synchronisatie is alleen beschikbaar om wijzigingen *van **Master**naar de variatie* te kopiëren.
 >
 >Alleen het huidige element van de variatie wordt gesynchroniseerd.
 >
->Synchronisatie werkt alleen op het gegevenstype **Meerdere regels** .
+>Synchronisatie werkt alleen op het datatype **Tekst met meerdere regels**.
 >
->Het overbrengen van wijzigingen *van een variatie naar **stramien ***is niet beschikbaar als optie.
+>Het overbrengen van wijzigingen *van een variatie naar **master ***is niet beschikbaar als optie.
 
 1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat het **stramien** is bewerkt.
 2. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:
@@ -371,5 +374,5 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
    * rood geeft aan dat inhoud is verwijderd (uit de variatie)
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
-4. Selecteer **[!UICONTROL Synchroniseren]**. De variatie wordt bijgewerkt en weergegeven.
+4. Selecteer deze optie **[!UICONTROL Synchronize]**, de variatie wordt bijgewerkt en weergegeven.
 
