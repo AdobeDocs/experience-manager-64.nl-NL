@@ -10,7 +10,10 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 0e3c64b43ceba3b8ebee134872123f5c5d03affa
+source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+workflow-type: tm+mt
+source-wordcount: '2247'
+ht-degree: 0%
 
 ---
 
@@ -41,9 +44,9 @@ Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan een speciaal 
 
 In het verleden moesten ontwikkelaars een relatief groot aantal individuele afhankelijkheden beheren voor verschillende AEM-bibliotheken en wanneer elke nieuwe API werd gebruikt, moesten een of meer individuele afhankelijkheden aan het project worden toegevoegd. Bij één project resulteerde de introductie van UberJar in het verwijderen van 30 afzonderlijke afhankelijkheden uit het project.
 
-### Hoe gebruik ik de UberJar? {#how-to-i-use-the-uberjar}
+### Hoe gebruik ik de UberJar? {#how-do-i-use-the-uberjar}
 
-Als u Apache Maven gebruikt als een constructiesysteem (dat geldt voor de meeste AEM Java-projecten), moet u een of twee elementen toevoegen aan het bestand *pom.xml* . Het eerste is een *gebiedsdeelelement* dat de daadwerkelijke gebiedsafhankelijkheid aan uw project toevoegt:
+Als u Apache Maven gebruikt als een constructiesysteem (dat geldt voor de meeste AEM Java-projecten), moet u een of twee elementen toevoegen aan het bestand *pom.xml* . Het eerste is een *gebiedsdeelelement* die de daadwerkelijke gebiedsafhankelijkheid aan uw project toevoegt:
 
 ```xml
 <dependency>
