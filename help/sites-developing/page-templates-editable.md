@@ -10,7 +10,10 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+workflow-type: tm+mt
+source-wordcount: '3223'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +56,7 @@ In dit document wordt ervan uitgegaan dat u vertrouwd bent met het maken en bewe
 >De volgende zelfstudie kan ook van belang zijn voor het instellen van een bewerkbare paginasjabloon in een nieuw project:\
 >[Aan de slag met AEM-sites Deel 2 - Een basispagina en sjabloon maken](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part2.html)
 
-## Een nieuwe sjabloon maken {#creating-a-new-template}
+## Creating a New Template {#creating-a-new-template}
 
 Het creëren van editable malplaatjes wordt hoofdzakelijk gedaan met de [malplaatjeconsole en malplaatjeredacteur](/help/sites-authoring/templates.md) door een malplaatjeauteur. In deze paragraaf wordt een overzicht gegeven van dit proces en wordt een beschrijving gegeven van wat er op technisch niveau gebeurt.
 
@@ -143,7 +146,7 @@ Voor het organiseren van uw sjablonen kunt u de volgende mappen gebruiken:
 * **global**
 * Sitespecifiek
 
-   De sitespecifieke mappen die u maakt om uw sjablonen te ordenen, worden gemaakt met een account met beheerdersrechten.
+   De sitespecifieke mappen die u maakt om uw sjablonen te organiseren, worden gemaakt met een account met beheerdersrechten.
 
 >[!NOTE]
 >
@@ -236,7 +239,7 @@ De `template-authors` groep is de groep die wordt gebruikt om toegang tot malpla
 >
 >De `template-authors` groep is *alleen* voor gebruikers die nieuwe sjablonen moeten kunnen maken.
 >
->Het bewerken van sjablonen is bijzonder krachtig en als deze niet op de juiste wijze worden uitgevoerd, kunnen bestaande sjablonen worden verbroken. Daarom moet deze rol worden toegespitst en alleen gekwalificeerde gebruikers omvatten.
+>Het bewerken van sjablonen is bijzonder krachtig en als dit niet het geval is, kunnen bestaande sjablonen worden verbroken. Daarom moet deze rol worden toegespitst en alleen gekwalificeerde gebruikers omvatten.
 
 In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking weergegeven.
 
@@ -245,7 +248,7 @@ In de volgende tabel worden de benodigde machtigingen voor sjabloonbewerking wee
   <tr> 
    <th>Pad</th> 
    <th>Rol/groep</th> 
-   <th>Permissions<br /> </th> 
+   <th>Machtigingen<br /> </th> 
    <th>Beschrijving</th> 
   </tr> 
   <tr> 
@@ -305,7 +308,7 @@ De malplaatjes zouden niet meer in moeten worden opgeslagen, `/conf/global`nocht
   <tr> 
    <th>Pad</th> 
    <th>Rol/groep</th> 
-   <th>Permissions<br /> </th> 
+   <th>Machtigingen<br /> </th> 
    <th>Beschrijving</th> 
   </tr> 
   <tr> 
@@ -381,7 +384,7 @@ De sjabloontypen voor de out-of-the-box worden opgeslagen onder:
 
 >[!CAUTION]
 >
->U mag niets in het `/libs` pad wijzigen. De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>U mag niets in het `/libs` pad wijzigen. De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 Uw sitespecifieke sjabloontypen moeten worden opgeslagen op de vergelijkbare locatie:
 
@@ -484,7 +487,7 @@ De belangrijkste elementen zijn:
    * [`policies`](#policies)
    * `thumbnail.png`
 
-### jcr:inhoud {#jcr-content}
+### jcr:content {#jcr-content}
 
 Dit knooppunt bevat eigenschappen voor de sjabloon:
 
@@ -531,8 +534,7 @@ Met het inhoudsbeleid (of het ontwerpbeleid) worden de ontwerpeigenschappen van 
 
    `/conf/<your-folder>/settings/wcm/templates/<your-template>/policies/jcr:content/root`
 
-   
-Verstrekt een relatieve verwijzing naar het inhoudsbeleid voor het de paragraafsysteem van de pagina.
+   Verstrekt een relatieve verwijzing naar het inhoudsbeleid voor het de paragraafsysteem van de pagina.
 
 * De eigenschap `cq:policy`, op de componentexpliciete knooppunten onder `root`, biedt koppelingen naar het beleid voor de afzonderlijke componenten.
 
@@ -571,8 +573,8 @@ Het beleid van de pagina staat u toe om het [inhoudsbeleid](#content-policies) v
          `/conf/<your-folder>/settings/wcm/templates/<your-template>/jcr:content`
       * Definieer de eigenschap:
 
-         * Naam:status
-         * Type:String
+         * Naam: status
+         * Type: String
          * Waarde: `enabled`
 
 1. **Toegestane sjablonen**
@@ -582,8 +584,7 @@ Het beleid van de pagina staat u toe om het [inhoudsbeleid](#content-policies) v
 
       `cq:allowedTemplates`
 
-      
-Op het `jcr:content` knooppunt van de vereiste vertakking.
+      Op het `jcr:content` knooppunt van de vereiste vertakking.
    Bijvoorbeeld met een waarde van:
 
    `/conf/<your-folder>/settings/wcm/templates/.*;`
@@ -598,13 +599,11 @@ Pagina&#39;s die zijn gemaakt op basis van bewerkbare sjablonen:
 
    * `cq:template`
 
-      
-Verstrekt de dynamische verwijzing naar het daadwerkelijke malplaatje; Hiermee kunnen wijzigingen in de sjabloon op de werkelijke pagina&#39;s worden weergegeven.
+      Verstrekt de dynamische verwijzing naar het daadwerkelijke malplaatje; Hiermee kunnen wijzigingen in de sjabloon op de werkelijke pagina&#39;s worden weergegeven.
 
    * `cq:templateType`
 
-      
-Verstrekt een verwijzing naar het malplaatjetype.
+      Verstrekt een verwijzing naar het malplaatjetype.
 
 ![chlimage_1-250](assets/chlimage_1-250.png)
 
