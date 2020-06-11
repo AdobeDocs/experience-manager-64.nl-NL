@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: cad8b5cb9a0e2c602d12e5d529b037b3ebcbcfbe
+source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
 workflow-type: tm+mt
-source-wordcount: '21556'
+source-wordcount: '21555'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 | Versie | 6.4.8.0 |
 | Type | Service Pack-release |
 | Date | 5 maart 2020 |
-| URL downloaden | AEM 6.4.8.0 op [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), de Distributie van de [Software (Beta)](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| URL downloaden | AEM 6.4.8.0 op [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), de Distributie van de [Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Wat is inbegrepen in AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -311,7 +311,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 ##### Gemeenschappen {#communities-6470}
 
-* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer het e-mailbericht in berichtmontages wordt toegelaten, werpt het systeem een uitzondering in NotificationsActivityStreamProvider (NPR-31521).
+* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer e-mailberichten in meldingsinstellingen zijn ingeschakeld, genereert het systeem een uitzondering in de NotificationsActivityStreamProvider (NPR-31521).
 * Kan geen nieuwe leden maken. Er verschijnt een leeg scherm op het scherm Lid maken in de AEM-auteur-instantie (NPR-30951).
 * Gebruiker kan geen commentaar op een blog plaatsen in Internet Explorer 11 (NPR-30927).
 * De beheerder van een Beperkte Groep kan niet de Kaart van de Groep bekijken, kan om het even welke Snelle verrichtingen van de Verbinding (Edit/Publish/Delete groepen) in auteur AEM (NPR-30810) uitvoeren.
@@ -817,7 +817,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.4.0 zijn:
 * Wanneer u een inhoudsfragment &quot;jcr:lastModified by&quot;- en &quot;jcr:lastModified&quot;-eigenschap bewerkt, worden waarden bijgewerkt zonder dat de gebruiker wijzigingen aanbrengt. NPR-27847: Hotfix voor CQ-4257138
 * Content Fragments versioning compare diff improvements for AEM 6.4. NPR-27764
 * Als er geen cq:allowedTemplates op /content/experience-fragments wordt bepaald en allowedPaths wordt gebruikt op het malplaatje van het Fragment van de Ervaring, wordt een fout geworpen wanneer het Fragment van de Ervaring wordt bewogen/gekopieerd. NPR-27487: Hotfix voor CQ-4257489
-* De knop Maken wordt weergegeven wanneer u de nieuwe gebruiker vernieuwt. NPR-27335: Hotfix voor CQ-4253360
+* De knop Maken wordt weergegeven wanneer u de nieuwe gebruiker vernieuwt. NPR-27335: Hotfix voor CQ-4255360
 * Wanneer u een gepubliceerde pagina probeert te verplaatsen, is het aantal Pagina&#39;s waarnaar wordt verwezen op de eerste pagina van de wizard Pagina verplaatsen onjuist. NPR-28111: Hotfix voor CQ-4259663
 * (Touch UI) References Rail geeft geen binnenkomende koppelingen weer. NPR-28529: Hotfix voor CQ-4262306
 * Kan geen component- en pagina-eigenschappen bewerken nadat AEM 6.4.3 is geïnstalleerd. NPR-27998: Hotfix voor CQ-4261216, CQ-4260441
@@ -1076,7 +1076,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * Wanneer de rijke tekstredacteur met veelvoudige gebieden wordt gecombineerd, Uncaught TypeError: fieldAPI.getName is geen functie bij foundation.js fout komt voor. NPR-27146: Hotfix voor CQ-4253155
 * De integratie van Salesforce kan niet de volmachtsconfiguratie gebruiken. NPR-27244: Hotfix voor CQ-4245300
 * Wanneer u een pagina voor activering plant met de optie Publicatie beheren voor een latere datum en overschakelt naar de lijstweergave, ontbreekt het kalenderpictogram. NPR-26974: Hotfix voor CQ-4239206
-* Gebruikers kunnen machtigingen voor gesloten gebruikersgroepen niet bewerken in de pagina-eigenschappen. NPR-27138: Hotfix voor CQ-4256089Kan codes niet bewerken via labelen. NPR-26957: Hotfix voor CQ-4254858
+* Gebruikers kunnen machtigingen voor gesloten gebruikersgroepen niet bewerken in de pagina-eigenschappen. NPR-27138: Hotfix voor CQ-4256089Kan codes niet bewerken via labelen. NPR-26958: Hotfix voor CQ-4254858
 * Wanneer een tag waarnaar wordt verwezen vanuit een gestructureerd inhoudsfragmentmodel wordt verplaatst, worden de bestaande verwijzingen naar de tag in een inhoudsfragment niet bijgewerkt. Dit gebeurt in het bewerkingsscherm van het inhoudsfragmentmodel. NPR-26776: Hotfix voor CQ-4251805
 * Wanneer u een opstart met meerdere pagina&#39;s maakt en promoot, worden er meerdere versies voor elke pagina gemaakt. NPR-26917: Hotfix voor CQ-4254663
 * AEM-sitebeheer verwerkt geen paden die in de adresbalk van de browser worden getypt. NPR-26780: Hotfix voor CQ-4254097
@@ -1113,7 +1113,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * IndexOutOfBoundsException in ResourceProviderTracker. NPR-26968: Hotfix voor GRANITE-23310
 * De JMX-console accumuleert een groot aantal beheersessies en elke 5 minuten wordt een nieuwe sessie geopend. NPR-26958: Hotfix voor CQ-4251090
 * Na een upgrade van 6.2 naar 6.4 geeft het logbestand stacktracering weer voor niet-gesloten bronnenoplosser com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck. NPR-26176: Hotfix voor graniet-21734
-* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4243928
+* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4242928
 * De replicatie gebruikt verlopen Token OAuth tot het ontbreekt. NPR-25894
 * Beperkte pagina (pagina voor gesloten gebruikersgroep) met sling: alias leidt de gebruiker niet naar de aanmeldingspagina. NPR-25715: Hotfix voor graniet=22263
 * Bij het publiceren van tags wordt geen activiteit weergegeven in de gebruikersinterface. Hotfix voor CQ-4255961
@@ -1262,7 +1262,7 @@ De belangrijkste kenmerken voor AEM 6.4.3.0-formulieren zijn:
 * De omzetting ontbreekt terwijl het runnen van de dienst AssemblerService.toPDFA in een lijn. NPR-26354: Hotfix voor CQ-4248656
 * Kan de compatibiliteit met PDF&#39;s niet correct valideren op basis van PDF/A-1b-standaarden. NPR-26286: Hotfix voor CQ-4227539
 * Onvoldoende geheugen tijdens het upgraden van AEM-formulieren van 6.1 SP2 GVB5 naar GVB13. NPR-26285: Hotfix voor CQ-4244379
-* Kan de compatibiliteit met PDF&#39;s niet op de juiste wijze valideren op basis van PDF/A-standaarden. NPR-26272: Hotfix voor CQ-4248823
+* Kan de compatibiliteit met PDF&#39;s niet op de juiste wijze valideren op basis van PDF/A-standaarden. NPR-26274: Hotfix voor CQ-4248823
 
 **Formulieren - Foundation JEE**
 
@@ -1452,7 +1452,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * (Site-instellingen) Kan de wijzigingen in Rollen niet opslaan. NPR-26274: Hotfix voor CQ-4252187
 * (Vulnerability van de Veiligheid) Accountovername toe te schrijven aan het Symbolische Misconfiguration van het Web JSON. NPR-26458: Hotfix voor CQ-4253314
 * Paginering wordt niet opnieuw ingesteld wanneer reacties worden verwijderd. NPR-26326: Hotfix voor CQ-4252997
-* Bijlageafbeelding wordt tijdens het bewerken niet weergegeven in Concepten. Hotfix voor CQ-4253360
+* Bijlageafbeelding wordt tijdens het bewerken niet weergegeven in Concepten. Hotfix voor CQ-4255360
 * De pagina wordt niet vernieuwd terwijl het vastmaken van gehechtheid in Relationele Gegevensbestand (DSRP). Hotfix voor CQ-4253084
 * De groepen werken niet binnen de plaatsmiddel van Enablement. Hotfix voor CQ-4252975
 * Vereisten voor leerpaden blijven niet bestaan in Inschakelen. Hotfix voor CQ-4252948
@@ -1928,7 +1928,7 @@ De belangrijkste markeringen voor AEM-formulieren zijn:
 * (FDM Client SDK) Kan het testen van de voorprocessor en de aangepaste verzendactie niet uitvoeren. Hotfix voor CQ-4238469
 * Oplossingen voor Javadoc-problemen in Dermis. Hotfix voor CQ-4244250
 * Verbeterde invoer in WSDL (Web Services Description Language). Hotfix voor CQ-4244133
-* Het basis authentificatietesten voor WSDL resulteert in verschillende fout voor de zelfde configuratie in AEM 6.3 en AEM 6.4. Hotfix voor CQ-4244132
+* Het basis authentificatietesten voor WSDL resulteert in verschillende fout voor de zelfde configuratie in AEM 6.3 en AEM 6.4. Hotfix voor CQ-4244133
 * Verzoek om ValueUtil op te nemen in client-sdk en javadocs. Hotfix voor CQ-4242803
 * (FDM Cloud Config) Kan SOAP-gebaseerde verificatie niet configureren vanuit de cloudconfiguratie. Hotfix voor CQ-4238462
 * Dermis - Voeg ontbrekende pakketten toe in JavaDocs. Hotfix voor CQ-4242815
