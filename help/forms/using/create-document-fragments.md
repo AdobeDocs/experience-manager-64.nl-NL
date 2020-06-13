@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 translation-type: tm+mt
-source-git-commit: 813675c7cd770008e8c986f87f37f36b0b193dd2
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '1683'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ Elk documentfragment bevat velden met statische tekst, gegevens die zijn ontvang
 
 Terwijl het creëren van documentfragmenten in dit leerprogramma, worden de variabelen gecreeerd voor gebieden die gegevens gebruikend de Agent UI ontvangen.
 
-Gebruik **FDM_Create_First_IC**, zoals beschreven in de sectie [Formuliergegevensmodel](/help/forms/using/create-form-data-model0.md) maken, als het formuliergegevensmodel om documentfragmenten in deze zelfstudie te maken.
+Gebruik **FDM_Create_First_IC**, zoals beschreven in de sectie [Formuliergegevensmodel](create-form-data-model-tutorial.md) maken, als het formuliergegevensmodel om documentfragmenten in deze zelfstudie te maken.
 
 ## Stap 1: Tekstdocumentfragment Bill Details maken {#step-create-bill-details-text-document-fragment}
 
@@ -61,7 +64,7 @@ Het documentfragment Bill Details bevat de volgende velden:
 
 Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegevensbron tot stand te brengen, statische teksten tot stand te brengen, en de modelelementen van het de vormgegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
@@ -120,7 +123,7 @@ Het documentfragment Customer Details bevat de volgende velden:
 
 Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegevensbron tot stand te brengen, statische teksten tot stand te brengen, en de modelelementen van het de vormgegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
@@ -154,7 +157,7 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. Plaats de cursor naast het veld **Mobiel nummer** en dubbelklik op de eigenschap **klant** > **mobile** .
-1. Plaats de cursor naast het veld **Alternatief contactnummer** en dubbelklik op de eigenschap** customer** > **alternobilenumber** .
+1. Plaats de curseur naast het **Afwisselende gebied van het Aantal** van het Contact en klik de **klant** > **afwisselend nummerbezit** tweemaal.
 1. Plaats de curseur naast het gebied van het Aantal **van de** Verhouding en klik het **klant** > **bezit van het** relatienummer tweemaal.
 1. Selecteer het tabblad **Variabelen** , plaats de cursor naast het veld **Plaats van levering** en dubbelklik op de variabele **Plaatsing** .
 1. Plaats de curseur naast het gebied van de Code **van de** Staat en klik de variabele **Statecode** tweemaal.
@@ -179,7 +182,7 @@ Het fragment Bill Summary-document bevat de volgende velden:
 
 Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegevensbron tot stand te brengen, statische teksten tot stand te brengen, en de modelelementen van het de vormgegevensmodel in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
@@ -242,11 +245,11 @@ Het fragment Overzicht van ladingen bevat de volgende velden:
 
 Voer de volgende stappen uit om statische tekst te maken en formuliergegevensmodelelementen in het documentfragment te gebruiken:
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Documentfragmenten]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Document Fragments]**.
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
-   1. Voer **summary_charges_first_ic **in als de naam in het veld **Titel** . De titel wordt automatisch ingevuld in het veld Naam.
+   1. Voer in het veld **Titel** de naam **** summary_charges_first_ic in. De titel wordt automatisch ingevuld in het veld Naam.
    1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel** .
    1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
    1. Tik op **Volgende**.
