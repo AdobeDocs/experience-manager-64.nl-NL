@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1520'
+ht-degree: 0%
 
 ---
 
@@ -25,17 +28,19 @@ Nadat u hebt vastgesteld hoe AEM-formulieren worden gebruikt, bepaalt u welke be
 >
 >Net als bij elk ander aspect van uw AEM-formulierimplementatie, moet uw back-up- en herstelstrategie worden ontwikkeld en getest in een ontwikkelings- of testomgeving voordat deze in de productie wordt gebruikt, om ervoor te zorgen dat de volledige oplossing werkt zoals u had verwacht zonder gegevensverlies.
 
-Adobe Experience Manager (AEM) is een integraal onderdeel van AEM-formulieren. Daarom moet u zowel een back-up van AEM maken als de back-up van AEM-formulieren synchroniseren met Correspondence Management Solution en -services, zoals formulierbeheer, die zijn gebaseerd op gegevens die zijn opgeslagen in het AEM-onderdeel van AEM-formulieren.Om gegevensverlies te voorkomen, moet een back-up worden gemaakt van de specifieke gegevens van de AEM-formulieren, zodat GDS en AEM (gegevensopslagruimte) correleren met databasereferenties.De directory&#39;s, database, GDS, GDS, GDS, GDS, GDS, GDS, GDS, AEM, AEM, AEM, en AEM en AEM, en de hoofdmappen en de opslagmap en de inhoud op een computer met dezelfde DNS-naam als het origineel.
+Adobe Experience Manager (AEM) maakt integrerend deel uit van AEM-formulieren. Daarom moet u zowel een back-up van AEM maken als de back-up van AEM-formulieren synchroniseren met Correspondence Management Solution en -services, zoals formulierbeheer, die zijn gebaseerd op gegevens die zijn opgeslagen in het AEM-onderdeel van AEM-formulieren.Om gegevensverlies te voorkomen, moet een back-up worden gemaakt van de specifieke gegevens van de AEM-formulieren, zodat GDS en AEM (gegevensopslagruimte) correleren met databasereferenties.De directory&#39;s, database, GDS, GDS, GDS, GDS, GDS, GDS, GDS, AEM, AEM, AEM, en AEM en AEM, en de hoofdmappen en de opslagmap en de inhoud op een computer met dezelfde DNS-naam als het origineel.
 
 ## Typen back-ups {#types-of-backups}
 
 De back-upstrategie voor AEM-formulieren omvat twee typen back-ups:
 
-**** Systeemafbeelding: Een volledige systeemback-up die u kunt gebruiken om de inhoud van de computer te herstellen als de vaste schijf of de volledige computer niet meer werkt. Een back-up van het systeemimage is alleen nodig voordat AEM-formulieren voor de productie worden geïmplementeerd. Het interne bedrijfsbeleid bepaalt dan hoe vaak de steunen van het systeembeeld worden vereist.
+**Systeemafbeelding:** Een volledige systeemback-up die u kunt gebruiken om de inhoud van de computer te herstellen als de vaste schijf of de volledige computer niet meer werkt. Een back-up van het systeemimage is alleen nodig voordat AEM-formulieren voor de productie worden geïmplementeerd. Het interne bedrijfsbeleid bepaalt dan hoe vaak de steunen van het systeembeeld worden vereist.
 
-**** Specifieke gegevens voor AEM-formulieren: Toepassingsgegevens staan in database, Global Document Storage (GDS) en AEM-opslagruimte en moeten in real-time worden opgeslagen. GDS is een map waarin bestanden van lange duur worden opgeslagen die in een proces worden gebruikt. Deze bestanden kunnen PDF&#39;s, beleidsregels of formuliersjablonen bevatten.
+**Specifieke gegevens voor AEM-formulieren:** Toepassingsgegevens staan in database, Global Document Storage (GDS) en AEM-opslagruimte en moeten in real-time worden opgeslagen. GDS is een map waarin bestanden van lange duur worden opgeslagen die in een proces worden gebruikt. Deze bestanden kunnen PDF&#39;s, beleidsregels of formuliersjablonen bevatten.
 
-***Opmerking **: Als Content Services (Afgekeurd) is geïnstalleerd, maakt u ook een back-up van de hoofdmap van de Content Storage Root. (Zie de hoofdmap van de[inhoudsopslagruimte (alleen inhoudsservices)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).)*
+>[!NOTE]
+>
+>Als Content Services (Afgekeurd) is geïnstalleerd, maakt u ook een back-up van de hoofdmap van de Content Storage Root. Zie [Content Storage Root directory (alleen Content Services)](/help/forms/using/admin-help/files-back-recover.md#content-storage-root-directory-content-services-only).
 
 De database wordt gebruikt om formulierartefacten, serviceconfiguraties, processtatus en databaseverwijzingen naar GDS-bestanden op te slaan. Als u de opslag van documenten in de database hebt ingeschakeld, worden permanente gegevens en documenten in de GDS ook in de database opgeslagen. U kunt een back-up van de database maken en deze herstellen met de volgende methoden:
 
@@ -47,7 +52,9 @@ De database wordt gebruikt om formulierartefacten, serviceconfiguraties, process
 
 * **De modus Rolling Backup** geeft aan dat het systeem zich altijd in de back-upmodus bevindt, waarbij een nieuwe back-upmodussessie wordt gestart zodra de vorige sessie wordt losgelaten. Er is geen time-out gekoppeld aan de schuifmodus. Wanneer het manuscript LCBackupMode of APIs worden geroepen om het rollen reservewijze te verlaten, begint een nieuwe het rollen reservewijze zitting. Deze modus is handig voor het ondersteunen van continue back-ups, maar nog steeds voor het verwijderen van oude en overbodige documenten uit de GDS-directory. De modus Rolling Backup wordt niet ondersteund via de pagina Backup and Recovery. Na een terugwinningsscenario, wordt het rollen reservewijze nog toegelaten. U kunt de modus voor continue back-up (schuifmodus) verlaten door het LCBackupMode-script met de `leaveContinuousCoverage` optie te gebruiken.
 
-***Opmerking**: Als u de schuifmodus onmiddellijk verlaat, wordt een nieuwe back-upmodussessie gestart. Om het rollen reservewijze volledig onbruikbaar te maken, gebruik de `leaveContinuousCoverage` optie in het manuscript, dat de bestaande het rollen reservezitting beschrijft. In de back-upmodus voor momentopnamen kunt u de back-upmodus zoals gewoonlijk verlaten. *
+>[!NOTE]
+>
+>Als u de schuifmodus onmiddellijk verlaat, wordt een nieuwe back-upmodussessie gestart. Om het rollen reservewijze volledig onbruikbaar te maken, gebruik de `leaveContinuousCoverage` optie in het manuscript, dat de bestaande het rollen reservezitting beschrijft. In de back-upmodus voor momentopnamen kunt u de back-upmodus zoals gewoonlijk verlaten.
 
 Om gegevensverlies te voorkomen, moeten de specifieke gegevens van AEM-formulieren op een manier worden opgeslagen die ervoor zorgt dat GDS- en Content Storage Root-documenten correleren met databasereferenties.
 
