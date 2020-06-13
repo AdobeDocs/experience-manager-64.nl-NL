@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 2cb251a6-d8d0-4563-b0f0-2dca38037155
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '4026'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Wanneer u uw lijst te doen bekijkt, kunt u taken van een bedrijfsproces zien die
 
 ## Lijsten van taken {#about-todo-lists}
 
-De werkruimte van AEM-formulieren heeft de volgende drie typen van te maken lijsten:
+De werkruimte van AEM Forms heeft de volgende drie types van te doen lijsten:
 
 * Individuele lijsten, die taken bevatten die rechtstreeks aan u worden toegewezen.
 * De lijsten van de groep, die taken bevatten die aan een groep worden toegewezen. Om het even welk lid van de groep kan de taken openen en voltooien. Om een taak te openen, moet een lid van een groep eerst de taak eisen.
@@ -103,7 +106,7 @@ Wanneer u een taak opent en claimt vanuit een groep of gedeelde lijst, wordt de 
 
 Nadat u een taak hebt geopend, zijn de tabbladen die in het hoofdvenster worden weergegeven en de gereedschappen die beschikbaar zijn, afhankelijk van de taak. De tabbladen die u kunt zien, worden hieronder beschreven:
 
-**Taakoverzicht**: Wanneer een taak opent, staat de ruit van het Overzicht van de Taak u toe om informatie over de taak te tonen, als het bestaat, gebruikend een URL die in het proces bij de stap van de Taak van de Toewijzing wordt gespecificeerd. Als u het venster Taakoverzicht gebruikt, kunt u aanvullende en relevante informatie voor een taak weergeven om meer waarde toe te voegen aan de werkruimte van de eindgebruiker van AEM Forms. Dit tabblad is niet beschikbaar als de URL voor het taakoverzicht niet bestaat.
+**Taakoverzicht**: Wanneer een taak opent, staat de ruit van het Overzicht van de Taak u toe om informatie over de taak te tonen, als het bestaat, gebruikend een URL die in het proces bij de stap van de Taak van de Toewijzing wordt gespecificeerd. Het gebruiken van de Samenvattende Ruit van de Taak extra en relevante informatie voor een taak kan worden getoond om meer waarde voor de eindgebruiker van de werkruimte van AEM Forms toe te voegen. Dit tabblad is niet beschikbaar als de URL voor het taakoverzicht niet bestaat.
 
 **Details**: Verstrekt wat informatie over de huidige taak en het proces dat het tot behoort.
 
@@ -227,9 +230,9 @@ Wanneer u een taak voltooit, afhankelijk van de taak, kan een bevestigingsvenste
 1. Voer een van de volgende stappen uit:
 
    * Selecteer de taak en klik de aangewezen knoop voor de volgende stap die in het proces bij de bodem van de lijst wordt vereist.
-   * Als het formulier geen knoppen heeft en de knop Voltooien in de werkruimte van AEM-formulieren beschikbaar is, klikt u op **Voltooien**.
-   * Als het formulier knoppen bevat en de knop Voltooien in de werkruimte van AEM-formulieren niet beschikbaar is, klikt u op de desbetreffende knop in het formulier voor de volgende vereiste stap in het proces.
-   Als het formulier geen knoppen heeft en de knop Voltooien in de werkruimte van AEM Forms niet beschikbaar is, wordt een bericht weergegeven dat het formulier niet kan worden verzonden.
+   * Als het formulier geen knoppen heeft en de knop Voltooien in de werkruimte AEM Forms beschikbaar is, klikt u op **Voltooien**.
+   * Als het formulier knoppen bevat en de knop Voltooien in de werkruimte AEM Forms niet beschikbaar is, klikt u op de desbetreffende knop in het formulier voor de volgende vereiste stap in het proces.
+   Als het formulier geen knoppen heeft en de knop Voltooien in de werkruimte AEM Forms niet beschikbaar is, wordt een bericht weergegeven dat het formulier niet kan worden verzonden.
 
 1. Voer een van de volgende handelingen uit als er een bevestigingsvenster verschijnt:
 
@@ -238,7 +241,7 @@ Wanneer u een taak voltooit, afhankelijk van de taak, kan een bevestigingsvenste
 
 >[!NOTE]
 >
->U ziet mogelijk een knop Verzenden in HTML-formulieren als de proceseigenschappen in een formulier worden gebruikt. Deze knop is niet zichtbaar wanneer hetzelfde formulier wordt weergegeven als PDF. Als u een taak wilt voltooien, klikt u op de knop Verzenden onder aan de werkruimte van AEM-formulieren, buiten het formulier en niet op de knop Verzenden in het formulier.
+>U ziet mogelijk een knop Verzenden in HTML-formulieren als de proceseigenschappen in een formulier worden gebruikt. Deze knop is niet zichtbaar wanneer hetzelfde formulier wordt weergegeven als PDF. Als u een taak wilt voltooien, klikt u op de knop Verzenden onder aan de werkruimte AEM Forms, buiten het formulier en niet op de knop Verzenden in het formulier.
 
 ### Taken voor bulksgewijs goedkeuren {#bulk-approve-tasks}
 
@@ -267,21 +270,23 @@ U kunt meerdere taken verzenden vanuit de lijst Aan taak. Slechts kunnen de take
 
 U kunt taken via e-mail ontvangen en voltooien. Als u via e-mails aan taken deelneemt, hoeft u uw lijst Aan-taak routinematig te controleren op nieuwe taken of moet u de pagina Volgen controleren op de status van een taak.
 
-Stel eerst de werkruimtevoorkeuren voor AEM-formulieren in voor het ontvangen van e-mailberichten. De werkruimte van AEM-formulieren kan e-mailmeldingen verzenden voor taken in uw lijst Aan-taak of elke lijst met aan-te-doen groepen waartoe u behoort. De beheerder bepaalt wanneer de e-mailberichten worden verzonden en wie hen ontvangt.
+Stel eerst de voorkeuren voor de werkruimte AEM Forms in voor het ontvangen van e-mailberichten. De werkruimte van AEM Forms kan e-mailmeldingen verzenden voor taken in uw lijst Aan-doe of om het even welke groep aan-doe lijsten die u tot behoort. De beheerder bepaalt wanneer de e-mailberichten worden verzonden en wie hen ontvangt.
 
-De e-mailberichten kunnen een koppeling bevatten waarmee de taak wordt geopend in de werkruimte van AEM Forms, een bijlage van het formulier dat voor de taak wordt gebruikt of acties voor het uitvoeren van de taak via e-mail. Als een formulier in het e-mailbericht is opgenomen, kunt u het formulier openen en de taak voltooien als de knoppen voor het voltooien van de taak in het formulier zijn ingebouwd. Als acties voor het voltooien van de taak in het e-mailbericht zijn opgenomen, kunt u de taak voltooien door op de acties in de e-mail te klikken of door op het e-mailbericht te reageren met de actie die u als eerste regel in de tekst van de e-mail hebt getypt.
-
-**Opmerking**: Zie de Beheerdershandleiding voor JEE-formulieren voor [](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms om de werkruimte zodanig te configureren dat de juiste e-mailsjablonen worden gebruikt.
-
-Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit uw lijst Aan-doe in de werkruimte van Vormen AEM.
+De e-mailberichten kunnen een koppeling bevatten waarmee de taak wordt geopend in de werkruimte AEM Forms, een bijlage van het formulier dat voor de taak wordt gebruikt of acties voor het uitvoeren van de taak via e-mail. Als een formulier in het e-mailbericht is opgenomen, kunt u het formulier openen en de taak voltooien als de knoppen voor het voltooien van de taak in het formulier zijn ingebouwd. Als acties voor het voltooien van de taak in het e-mailbericht zijn opgenomen, kunt u de taak voltooien door op de acties in de e-mail te klikken of door op het e-mailbericht te reageren met de actie die u als eerste regel in de tekst van de e-mail hebt getypt.
 
 >[!NOTE]
 >
->Als de gebruiker niet is aangemeld in de werkruimte van AEM Forms in de browser en een koppeling naar een taak van Aan doet opent, kan de koppeling Direct To-do niet worden geopend en wordt een uitzondering weergegeven. Meld u aan bij de werkruimte van AEM-formulieren voordat u op koppelingen in de e-mails klikt.
+>Zie de JEE Administrator Guide [van de](https://help.adobe.com/en_US/AEMForms/6.1/AdminHelp/)AEM Forms om de werkruimte te configureren voor het gebruik van de juiste e-mailsjablonen.
+
+Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit de lijst Aan-taak in de werkruimte AEM Forms.
 
 >[!NOTE]
 >
->U kunt geen e-mailbericht verzenden om een taak aan iemand anders toe te wijzen. U kunt taken alleen doorsturen naar andere gebruikers vanuit de werkruimte van AEM-formulieren.
+>Als de gebruiker niet het programma wordt geopend de werkruimte van AEM Forms in browser en een verbinding aan een taak opent te doen, ontbreekt de directe verbinding aan-doe om op te openen en toont een uitzondering. Meld u aan bij de werkruimte AEM Forms voordat u op koppelingen in de e-mails klikt.
+
+>[!NOTE]
+>
+>U kunt geen e-mailbericht verzenden om een taak aan iemand anders toe te wijzen. U kunt taken alleen doorsturen naar andere gebruikers vanuit de werkruimte AEM Forms.
 
 ### E-mailberichten ontvangen {#receive-email-notification-messages}
 
@@ -291,7 +296,7 @@ Wanneer u een taak via e-mail voltooit, wordt de taak verwijderd uit uw lijst Aa
 
 ## Deelnemen aan taken via mobiele apparaten {#participating-in-tasks-through-mobile-devices}
 
-U kunt de werkruimte-app AEM Forms gebruiken om deel te nemen aan taken vanaf uw mobiele apparaat. Voordat u de toepassing installeert, moet u contact opnemen met de systeembeheerder om te controleren of uw organisatie het gebruik van de AEM Forms-werkruimte-app ondersteunt.
+U kunt de AEM Forms-werkruimte-app gebruiken om deel te nemen aan taken vanaf uw mobiele apparaat. Voordat u de toepassing installeert, moet u contact opnemen met de systeembeheerder om te controleren of uw organisatie het gebruik van de AEM Forms-werkruimte-app ondersteunt.
 
 ## Informatie over deadlines en herinneringen {#about-deadlines-and-reminders}
 
