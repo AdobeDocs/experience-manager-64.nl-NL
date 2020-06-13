@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1253'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Java API Quick Start (SOAP) is beschikbaar voor de Output-service.
 
 [Snel starten (SOAP-modus): Documenten doorgeven aan de uitvoerservice met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Snel starten (SOAP-modus): Een document in de gegevensopslagruimte AEM Forms doorgeven aan de uitvoerservice met behulp van de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Snel starten (SOAP-modus): Een PDF-document maken op basis van fragmenten met de Java API](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
@@ -41,9 +44,12 @@ Java API Quick Start (SOAP) is beschikbaar voor de Output-service.
 
 [Snel starten (SOAP-modus): Een PDF-document transformeren met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-* ***Opmerking **: De snelle Beginnen die in Programmering met vormen worden gevestigd AEM zijn gebaseerd op het werkende systeem van de Server van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>De snelle Beginnen die in Programmering met vormen worden gevestigd AEM zijn gebaseerd op het werkende systeem van de Server van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+
 
 ## Snel starten (SOAP-modus): Een PDF-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
 
@@ -1127,7 +1133,7 @@ In het volgende Java-codevoorbeeld wordt een uitvoerstream afgedrukt naar een Po
 
 ## Snel starten (SOAP-modus): Een afdrukstream naar een netwerkprinter verzenden met de Java API {#quick-start-soap-mode-sending-a-print-stream-to-a-network-printer-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PostScript-afdrukstroom verzonden naar een netwerkprinter met de naam *\\Printer1\Printer*. Er worden twee exemplaren naar de printer verzonden. (Zie [Afdrukstromen naar printers](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers)verzenden.)
+In het volgende Java-codevoorbeeld wordt een PostScript-afdrukstroom verzonden naar een netwerkprinter met de naam *\\Printer1\Printer*. Twee exemplaren worden naar de printer verzonden. (Zie [Afdrukstromen naar printers](/help/forms/developing/creating-document-output-streams.md#sending-print-streams-to-printers)verzenden.)
 
 ```as3
  /* 
