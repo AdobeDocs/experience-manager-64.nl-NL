@@ -1,15 +1,18 @@
 ---
 title: ConvertPDF-service
 seo-title: ConvertPDF-service
-description: 'Met de AEM Forms ConvertPDF-service kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden. '
-seo-description: 'Met de AEM Forms ConvertPDF-service kunt u PDF-documenten converteren naar PostScript- of afbeeldingsbestanden. '
+description: 'Gebruik de AEM Forms ConvertPDF-service om PDF-documenten te converteren naar PostScript- of afbeeldingsbestanden. '
+seo-description: 'Gebruik de AEM Forms ConvertPDF-service om PDF-documenten te converteren naar PostScript- of afbeeldingsbestanden. '
 uuid: 7fa94c8c-485b-4a77-bcd3-ed716e3cf316
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: 5ec4f0ec-a9fd-4571-9b9a-278f4622c028
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ U kunt het volgende doen met de service PDF converteren:
 * Converteer PDF-documenten naar PostScript. Bij het converteren naar PostScript kunt u het brondocument met de conversiebewerking opgeven en of het document moet worden omgezet in PostScript-niveau 2 of 3. Het PDF-document dat u naar een PostScript-bestand converteert, moet niet-interactief zijn.
 * Converteer PDF-documenten naar JPEG-, JPEG 2000-, PNG- en TIFF-afbeeldingsindelingen. Wanneer u naar een van deze afbeeldingsindelingen converteert, kunt u met de conversiebewerking het brondocument en een specificatie voor afbeeldingsopties opgeven. De specificatie bevat verschillende voorkeuren, zoals de indeling voor het omzetten van afbeeldingen, de afbeeldingsresolutie en kleurconversie.
 
-## Eigenschappen van de service configureren {#properties}
+## Eigenschappen van de service configureren   {#properties}
 
 Met de **AEMFD ConvertPDF-service** in AEM-console kunt u eigenschappen voor deze service configureren. De standaard-URL van de AEM-console is `https://[host]:[port]/system/console/configMgr`.
 
@@ -33,9 +36,9 @@ Met de **AEMFD ConvertPDF-service** in AEM-console kunt u eigenschappen voor dez
 
 De service ConvertPDF biedt de volgende twee API&#39;s:
 
-* **[naarPS](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Hiermee converteert u een PDF-document naar een PostScript-bestand.
+* **[naarPS](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toPS)**: Hiermee converteert u een PDF-document naar een PostScript-bestand.
 
-* **[toImage](https://helpx.adobe.com/experience-manager/6-3/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Hiermee converteert u een PDF-document naar een afbeeldingsbestand. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2000, PNG en TIFF.
+* **[toImage](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Hiermee converteert u een PDF-document naar een afbeeldingsbestand. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2000, PNG en TIFF.
 
 ### ToPS-API gebruiken met een JSP of Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
