@@ -9,7 +9,10 @@ content-type: reference
 topic-tags: develop
 discoiquuid: 31a9bfc6-462d-4535-888f-31026b8fa674
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '282'
+ht-degree: 0%
 
 ---
 
@@ -20,17 +23,19 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de Acrobat Reader DC Ex
 
 [Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
-[Gebruiksrechten verwijderen uit PDF-documenten](/help/forms/developing/acrobat-reader-dc-extensions-service.md#main-pars-heading-1)
+[Gebruiksrechten verwijderen uit PDF-documenten](#quick-start-soap-mode-removing-usage-rights-from-a-pdf-document-using-the-java-api)
 
 [Snel starten (SOAP-modus): Crediteringsgegevens ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-***Opmerking **: De snelle Beginnen die in Programmering met Vormen AEM wordt gevestigd zijn gebaseerd op het de serverwerkende systeem van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
-In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-document met de naam *Loan.pdf*. Het PDF-document waarvoor rechten zijn ingeschakeld, wordt opgeslagen als een PDF-bestand met de naam *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn`, en `enabledDigitalSignatures`. (Zie Gebruiksrechten [toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
+In het volgende Java-codevoorbeeld worden gebruiksrechten toegepast op een PDF-document met de naam *Loan.pdf*. Het PDF-document waarvoor rechten zijn ingeschakeld, wordt opgeslagen als een PDF-bestand met de naam *LoanUsageRights.pdf*. De volgende gebruiksrechten worden toegepast op dit PDF-document: `enabledComments`, `enabledFormFillIn`en `enabledDigitalSignatures`. (Zie Gebruiksrechten [toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md).)
 
 ```as3
  /* 
