@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 12da2a9b-4009-496e-953f-c2ae0352f59f
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '204'
+ht-degree: 0%
 
 ---
 
@@ -25,11 +28,13 @@ Java API Quick Start (SOAP) is beschikbaar voor de service Application Manager.
 
 >[!NOTE]
 >
->De API&#39;s van de toepassingsmanager ondersteunen alleen LCA-bestanden van AEM Forms. LCA-bestanden van LiveCycle ES2 en ES4 worden niet ondersteund.
+>De API&#39;s van de toepassingsmanager ondersteunen alleen AEM Forms LCA-bestanden. LCA-bestanden van LiveCycle ES2 en ES4 worden niet ondersteund.
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend de sterk getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-* ***Opmerking **: Java API (SOAP) Quick Start in Programming with AEM forms is gebaseerd op de Formulieren als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het van toepassing zijnde besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Java API (SOAP) Quick Start in Programming with AEM forms is gebaseerd op de Formulieren als u een ander besturingssysteem gebruikt, zoals Unix, vervangt vensters-specifieke paden door paden die door het van toepassing zijnde besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Toepassingen implementeren met de Java API {#quick-start-soap-mode-deploying-applications-using-the-java-api}
 
