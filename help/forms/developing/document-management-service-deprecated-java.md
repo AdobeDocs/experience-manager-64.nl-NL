@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9cffdb77-c8a4-4a15-b64f-1d3aadaa60c7
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '645'
+ht-degree: 0%
 
 ---
 
@@ -39,9 +42,11 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Documentbehe
 
 [Snel starten (SOAP-modus): Machtigingen voor inhoudsservices instellen met de Java API](document-management-service-deprecated-java.md#quick-start-soap-mode-setting-content-services-permissions-using-the-java-api-deprecated)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-***Opmerking **: De snelle die begin in Programmering met vormen wordt gevestigd AEM is gebaseerd op de Server van Vormen die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>De snelle die begin in Programmering met vormen wordt gevestigd AEM is gebaseerd op de Server van Vormen die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Spaties voor inhoudsservices maken met de Java API (afgekeurd) {#quick-start-soap-mode-create-content-services-spaces-using-the-java-api-deprecated}
 
