@@ -1,15 +1,18 @@
 ---
 title: Forms-centric workflow op OSGi
 seo-title: Maak snel adaptieve op formulieren gebaseerde processen, automatiseer bewerkingen in documentservices en gebruik Adobe Sign with AEM-workflows
-description: Gebruik de AEM Forms Workflow om revisie en goedkeuringen te automatiseren en snel samen te stellen, documentservices te starten (bijvoorbeeld om een PDF-document naar een andere indeling te converteren), te integreren met de ondertekeningsworkflow voor ondertekening van Adobe en meer.
-seo-description: Gebruik de AEM Forms Workflow om revisie en goedkeuringen te automatiseren en snel samen te stellen, documentservices te starten (bijvoorbeeld om een PDF-document naar een andere indeling te converteren), te integreren met de ondertekeningsworkflow voor ondertekening van Adobe en meer.
+description: Gebruik de AEM Forms Workflow om revisie en goedkeuringen te automatiseren en snel samen te stellen, documentservices te starten (bijvoorbeeld om een PDF-document naar een andere indeling te converteren), te integreren met de ondertekeningsworkflow voor ondertekening van Adobe-documenten en meer.
+seo-description: Gebruik de AEM Forms Workflow om revisie en goedkeuringen te automatiseren en snel samen te stellen, documentservices te starten (bijvoorbeeld om een PDF-document naar een andere indeling te converteren), te integreren met de ondertekeningsworkflow voor ondertekening van Adobe-documenten en meer.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '2842'
+ht-degree: 0%
 
 ---
 
@@ -28,9 +31,9 @@ Met AEM Workflows kunt u snel adaptieve workflows op basis van formulieren maken
 
 Met Forms-centric werkschema op OSGi, kunt u werkschema&#39;s voor diverse taken op de stapel snel bouwen en opstellen OSGi, zonder het moeten het volledige vermogen van het Beheer van het Proces op de stapel van JEE installeren. Voor de ontwikkeling en het beheer van workflows worden de bekende AEM Workflow- en AEM Inbox-mogelijkheden gebruikt. De werkstromen vormen de basis van het automatiseren van echte bedrijfsprocessen die veelvoudige softwaresystemen, netwerken, afdelingen, en zelfs organisaties omspannen.
 
-Zodra opstelling, kunnen deze werkschema&#39;s manueel worden teweeggebracht om een bepaald proces te voltooien of programmatically in werking te stellen wanneer de gebruikers een vorm of een brief van het [brievenbeheer](/help/forms/using/cm-overview.md) voorleggen. Met deze verbeterde AEM-workflowmogelijkheden biedt AEM Forms twee verschillende, maar vergelijkbare mogelijkheden. Als onderdeel van uw implementatiestrategie moet u bepalen welke strategie voor u werkt. Zie een [vergelijking](/help/forms/using/capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE. Bovendien voor de plaatsingstopologie zien, [Architectuur en plaatsingstopologieën voor Vormen](/help/forms/using/aem-forms-architecture-deployment.md)AEM.
+Zodra opstelling, kunnen deze werkschema&#39;s manueel worden teweeggebracht om een bepaald proces te voltooien of programmatically in werking te stellen wanneer de gebruikers een vorm of een brief van het [brievenbeheer](/help/forms/using/cm-overview.md) voorleggen. Met deze verbeterde AEM-workflowmogelijkheden bieden AEM Forms twee verschillende, maar vergelijkbare mogelijkheden. Als onderdeel van uw implementatiestrategie moet u bepalen welke strategie voor u werkt. Zie een [vergelijking](/help/forms/using/capabilities-osgi-jee-workflows.md) van de Forms-centric AEM Workflows op OSGi en Process Management op JEE. Bovendien voor de plaatsingstopologie zien, [Architectuur en plaatsingstopologieën voor AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md).
 
-Forms-centric workflow op OSGi breidt [AEM Inbox](/help/sites-authoring/inbox.md) uit en biedt extra componenten (stappen) voor de AEM Workflow-editor om ondersteuning toe te voegen voor AEM Forms-centric workflows. De uitgebreide AEM Inbox heeft functies die vergelijkbaar zijn met de [AEM Forms Workspace](/help/forms/using/introduction-html-workspace.md). Samen met het beheren van menselijke-centrische werkschema&#39;s (Goedkeuring, Overzicht, etc.), kunt u AEM werkschema&#39;s gebruiken om [documentservices](/help/sites-developing/workflows-step-ref.md)-gerelateerde bewerkingen (bijvoorbeeld, produceer PDF) en elektronisch het ondertekenen (het Ondertekenen van Adobe) documenten te automatiseren.
+Forms-centric workflow op OSGi breidt [AEM Inbox](/help/sites-authoring/inbox.md) uit en biedt extra componenten (stappen) voor de AEM Workflow-editor om ondersteuning toe te voegen voor op AEM Forms gerichte workflows. De uitgebreide AEM Inbox heeft functionaliteiten gelijkend op de [Werkruimte](/help/forms/using/introduction-html-workspace.md)van AEM Forms. Samen met het beheren van menselijke-centrische werkschema&#39;s (Goedkeuring, Overzicht, etc.), kunt u AEM werkschema&#39;s gebruiken om [documentservices](/help/sites-developing/workflows-step-ref.md)-gerelateerde bewerkingen (bijvoorbeeld, produceer PDF) en elektronisch het ondertekenen (het Teken van Adobe) documenten te automatiseren.
 
 Het volgende diagram toont de procedure van begin tot eind om, een Forms-centric werkschema op OSGi tot stand te brengen in werking te stellen en te controleren.
 
@@ -41,11 +44,11 @@ Het volgende diagram toont de procedure van begin tot eind om, een Forms-centric
 * Een werkschema is een vertegenwoordiging van een echt bedrijfsproces. Houd uw real-world bedrijfsproces en lijst van de deelnemers van het bedrijfsproces klaar. Houd ook de hulplijnen (adaptieve formulieren, PDF-documenten en meer) gereed voordat u een workflow gaat maken.
 * Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het Postvak IN van AEM en Help de voortgang van de workflow te melden. Verdeel uw bedrijfsproces in logische stadia.
 * U kunt de taakstap van AEM Workflows configureren om e-mailmeldingen te verzenden naar de gebruikers of toewijzen. E-mailberichten [inschakelen](#configure-email-service).
-* Een workflow kan ook gebruikmaken van Adobe-handtekeningen voor digitale handtekeningen. Als u Adobe Sign in een workflow wilt gebruiken, [configureert u Adobe Sign for AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) voordat u dit in een workflow gebruikt.
+* Een workflow kan ook gebruikmaken van Adobe-handtekeningen voor digitale handtekeningen. Als u Adobe Sign in een workflow wilt gebruiken, [configureert u Adobe Sign for AEM Forms](/help/forms/using/adobe-sign-integration-adaptive-forms.md) voordat u deze in een workflow gebruikt.
 
 ## Een workflowmodel maken {#create-a-workflow-model}
 
-Een workflowmodel bestaat uit logica en stroom van een bedrijfsproces. Het bestaat uit een reeks stappen. Deze stappen zijn AEM-componenten. U kunt workflowstappen uitbreiden met parameters en scripts om desgewenst meer functionaliteit en controle te bieden. AEM Forms biedt naast de AEM-stappen die in het vak beschikbaar zijn, een aantal stappen. Voor een gedetailleerde lijst van AEM en de stappen van de Vormen van AEM, zie de Verwijzing [van de Stap van het Werkschema van](/help/sites-developing/workflows-step-ref.md) AEM en [Forms-centric werkschema op OSGi - de Verwijzing](/help/forms/using/aem-forms-workflow.md)van de Stap.
+Een workflowmodel bestaat uit logica en stroom van een bedrijfsproces. Het bestaat uit een reeks stappen. Deze stappen zijn AEM-componenten. U kunt workflowstappen uitbreiden met parameters en scripts om desgewenst meer functionaliteit en controle te bieden. AEM Forms bevatten naast de AEM-stappen die in het vak beschikbaar zijn, een aantal stappen. Voor een gedetailleerde lijst van AEM en AEM Forms stappen, zie de Verwijzing [van de Stap van de](/help/sites-developing/workflows-step-ref.md) AEM- Werkstroom en [Forms-centric werkschema op OSGi - de Verwijzing](/help/forms/using/aem-forms-workflow.md)van de Stap.
 
 AEM biedt een intuïtieve gebruikersinterface voor het maken van een workflowmodel met behulp van de meegeleverde workflowstappen. Zie Workflowmodellen [maken voor stapsgewijze instructies voor het maken van een workflowmodel](/help/sites-developing/workflows-models.md). In het volgende voorbeeld worden stapsgewijze instructies gegeven voor het maken van een workflowmodel voor een goedkeurings- en revisiewerkstroom:
 
@@ -64,8 +67,8 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 [Bestand ophalen](assets/example-mortgage-loan-application.zip)
 
 1. Open de console Workflowmodellen. De standaard-URL is `https://[Server]:[port]/libs/cq/workflow/admin/console/content/models.html/etc/workflow/models`
-1. Selecteer **[!UICONTROL Maken]** en vervolgens **[!UICONTROL Model]** maken. Het dialoogvenster Workflowmodel toevoegen wordt weergegeven.
-1. Voer de **[!UICONTROL titel]** en de **[!UICONTROL naam]** (optioneel) in. Bijvoorbeeld een hypotheekaanvraag. Tik **[!UICONTROL op Gereed]**.
+1. Selecteer **[!UICONTROL Create]**, dan **[!UICONTROL Create Model]**. Het dialoogvenster Workflowmodel toevoegen wordt weergegeven.
+1. Voer de **[!UICONTROL Title]** en **[!UICONTROL Name]** (optioneel) in. Bijvoorbeeld een hypotheekaanvraag. Tik op **[!UICONTROL Done]**.
 1. Selecteer het nieuwe workflowmodel en tik op **Bewerken.** Nu kunt u workflowstappen toevoegen om bedrijfslogica te maken. Wanneer u voor het eerst een workflowmodel maakt, bevat dit het volgende:
 
    * De stappen: Start- en stroomeinde van stroom. Deze stappen vertegenwoordigen het begin en het einde van de workflow. Deze stappen zijn vereist en kunnen niet worden bewerkt of verwijderd.
@@ -74,14 +77,14 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 1. E-mailmeldingen inschakelen. U kunt Forms-centric workflow op OSGi configureren om e-mailmeldingen naar de gebruikers of toegewezen gebruikers te verzenden. Voer de volgende configuraties uit om e-mailmeldingen in te schakelen:
 
    1. Ga naar AEM configuratiemanager op `https://[server]:[port]/system/console/configMgr`.
-   1. Open de configuratie van de **[!UICONTROL Day CQ Mail Service]** . Geef een waarde op voor de hostnaam **[!UICONTROL van de]** SMTP-server, **[!UICONTROL de poort van de]** SMTP-server en de adresvelden **[!UICONTROL &quot;Van&quot;]** . Click **[!UICONTROL Save]**.
-   1. Open de configuratie van de Verbinding Externalzer van de Verbinding van **[!UICONTROL Dag CQ]** . Geef in het veld **[!UICONTROL Domeinen]** het werkelijke hostnaam/IP-adres en poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Click **[!UICONTROL Save]**.
+   1. Open de **[!UICONTROL Day CQ Mail Service]** configuratie. Geef een waarde op voor de velden **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** en **[!UICONTROL "From" address]** velden. Klik op **[!UICONTROL Save]**.
+   1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie. Geef in het **[!UICONTROL Domains]** veld het werkelijke hostnaam/IP-adres en poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Klik op **[!UICONTROL Save]**.
 
 1. Workflowfasen maken. Een werkstroom kan uit meerdere fasen bestaan. Deze fasen worden weergegeven in het Postvak IN van AEM en de voortgang van de workflow.
 
-   Als u een werkgebied wilt definiëren, tikt u op het pictogram van de ![infocirkel](assets/info-circle.png) om de eigenschappen van het workflowmodel te openen, opent u het tabblad **[!UICONTROL Favorieten]** , voegt u fasen toe voor het workflowmodel en tikt u op **[!UICONTROL Opslaan en sluiten]**. Maak bijvoorbeeld fasen in het voorbeeld van de hypotheektoepassing: leningaanvraag, status van leningaanvraag, te ondertekenen documenten en ondertekend leningsdocument.
+   Als u een werkgebied wilt definiëren, tikt u op het pictogram van de ![infocirkel](assets/info-circle.png) om de eigenschappen van het workflowmodel te openen, opent u het **[!UICONTROL Stages]** tabblad, voegt u fasen voor het workflowmodel toe en tikt u op **[!UICONTROL Save & Close]**. Maak bijvoorbeeld fasen in het voorbeeld van de hypotheektoepassing: leningaanvraag, status van leningaanvraag, te ondertekenen documenten en ondertekend leningsdocument.
 
-1. Sleep de browser Taken **** toewijzen aan het workflowmodel en zet deze neer. Maak van het de eerste stap van het model.
+1. Sleep de **[!UICONTROL Assign Task]** stappen browser naar het workflowmodel. Maak van het de eerste stap van het model.
 
    De taakcomponent toewijzen wijst de taak, die door workflow wordt gemaakt, toe aan een gebruiker of groep. Naast het toewijzen van de taak kunt u de component gebruiken om een adaptief formulier of een niet-interactief PDF-bestand voor de taak op te geven. Het adaptieve formulier is vereist om invoer van gebruikers te accepteren en niet-interactieve PDF of een alleen-lezen adaptief formulier wordt gebruikt voor workflows die alleen voor revisie zijn.
 
@@ -89,7 +92,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    ![workflow-editor](assets/workflow-editor.png)
 
-   In het voorbeeld van de hypotheektoepassing configureert u de taakstap zodanig dat een alleen-lezen adaptief formulier wordt gebruikt en geeft u het PDF-document weer zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Schakel op het tabblad **[!UICONTROL Handelingen]** de optie **[!UICONTROL Verzenden]** uit. Specificeer een Variabele van de **[!UICONTROL Route]**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
+   In het voorbeeld van de hypotheektoepassing configureert u de taakstap zodanig dat een alleen-lezen adaptief formulier wordt gebruikt en geeft u het PDF-document weer zodra de taak is voltooid. Selecteer ook voor gebruikersgroep die de aanvraag voor een lening mag goedkeuren. Schakel op het **[!UICONTROL Actions]** tabblad de **[!UICONTROL Submit]** optie uit. Specify a **[!UICONTROL Route Variable]**. Bijvoorbeeld actionTake. Voeg ook de routes Goedkeuren en Afwijzen toe. De routes worden getoond als afzonderlijke acties (knopen) in AEM Inbox. De werkstroom selecteert een vertakking op basis van de actie (knoop) een gebruiker tikt.
 
    U kunt het voorbeeldpakket importeren, dat u kunt downloaden vanaf het begin van de sectie, voor de volledige set waarden van alle velden van de taakstap toewijzen die is geconfigureerd, bijvoorbeeld hypotheektoepassing.
 
@@ -99,7 +102,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    **Codefragment voor takken 1**
 
-   Wanneer een gebruiker op **[!UICONTROL Goedkeuren]** tikt in AEM Inbox, wordt vertakking 1 geactiveerd.
+   Wanneer een gebruiker in AEM Inbox tikt, wordt Tak 1 geactiveerd. **[!UICONTROL Approve]**
 
    ```
    function check(){
@@ -111,7 +114,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    **Codefragment voor vertakking 2**
 
-   Wanneer een gebruiker op **[!UICONTROL Afwijzen]** tikt in AEM Inbox, wordt vertakking 2 geactiveerd.
+   Wanneer een gebruiker in AEM Inbox tikt, wordt Tak 2 geactiveerd. **[!UICONTROL Reject]**
 
    ```
    function check(){
@@ -127,7 +130,7 @@ In het voorbeeld wordt een workflowmodel gemaakt voor een hypotheektoepassing di
 
    Voor de volledige set waarden van alle velden van de taakstappen toewijzen, de stap Document of Record en de stap voor het ondertekeningsdocument die zijn geconfigureerd voor bijvoorbeeld de hypotheektoepassing, importeert u het voorbeeldpakket dat beschikbaar is om te worden gedownload vanaf het begin van deze sectie.
 
-   Het workflowmodel is gereed. U kunt de workflow op verschillende manieren starten. Voor details, zie een Forms-centric werkschema op OSGi [lanceren](/help/forms/using/aem-forms-workflow.md#main-pars-header).
+   Het workflowmodel is gereed. U kunt de workflow op verschillende manieren starten. Voor details, zie een Forms-centric werkschema op OSGi [lanceren](#launch).
 
    ![workflow-editor-hypotheek](assets/workflow-editor-mortgage.png)
 
@@ -139,8 +142,8 @@ De toepassing is het adaptieve formulier dat aan de workflow is gekoppeld. Wanne
 >
 >U moet lid van de fd-beheerder groep zijn om werkschematoepassingen te kunnen tot stand brengen en beheren.
 
-1. Ga in de AEM-auteurinstantie naar ![Gereedschappen](assets/tools.png) > **[!UICONTROL Formulieren]** > **[!UICONTROL Werkstroomtoepassing]** beheren en klik op **[!UICONTROL Maken]**.
-1. Geef in het venster Workflowtoepassing maken gegevens op voor de volgende velden en tik op **[!UICONTROL Maken]**. Er wordt een nieuwe toepassing gemaakt en deze wordt weergegeven in het scherm Workflowtoepassingen.
+1. Ga in de AEM-auteurinstantie naar ![Gereedschappen](assets/tools.png) > **[!UICONTROL Forms]** > **[!UICONTROL Manage Workflow Application]** en tikken **[!UICONTROL Create]**.
+1. Geef in het venster Workflowtoepassing maken invoer op voor de volgende velden en tik op **[!UICONTROL Create]**. Er wordt een nieuwe toepassing gemaakt en deze wordt weergegeven in het scherm Workflowtoepassingen.
 
 <table> 
  <tbody> 
@@ -196,7 +199,7 @@ De toepassing is het adaptieve formulier dat aan de workflow is gekoppeld. Wanne
 U kunt een Forms-centric-workflow starten of activeren door:
 
 * [Een toepassing verzenden vanuit AEM Inbox](#inbox)
-* [Een toepassing verzenden vanuit de AEM Forms App](#afa)
+* [Een toepassing verzenden vanuit de AEM Forms-app](#afa)
 
 * [Een adaptief formulier indienen](#af)
 * [Gecontroleerde map gebruiken](#watched)
@@ -207,22 +210,22 @@ U kunt een Forms-centric-workflow starten of activeren door:
 
 De workflowtoepassing die u hebt gemaakt, is beschikbaar als een toepassing in Inbox. Gebruikers die lid zijn van een groep workflowgebruikers kunnen de toepassing die de bijbehorende workflow activeert, invullen en verzenden. Zie Formuliertoepassingen en -taken [beheren in AEM Inbox](/help/forms/using/manage-applications-inbox.md)voor informatie over het gebruik van AEM Inbox om toepassingen te verzenden en taken te beheren.
 
-### Een toepassing verzenden vanuit de AEM Forms App {#afa}
+### Een toepassing verzenden vanuit de AEM Forms-app {#afa}
 
-De app AEM Forms synchroniseert met een AEM Forms-server en stelt u in staat wijzigingen aan te brengen in de formuliergegevens, taken, workflowtoepassingen en opgeslagen informatie (concepten/sjablonen) in uw account. Zie de app [](/help/forms/using/aem-forms-app.md) AEM Forms en verwante artikelen voor meer informatie.
+De AEM Forms-app synchroniseert met een AEM Forms-server en stelt u in staat wijzigingen aan te brengen in de formuliergegevens, taken, workflowtoepassingen en opgeslagen informatie (concepten/sjablonen) in uw account. Zie de app [](/help/forms/using/aem-forms-app.md) AEM Forms en verwante artikelen voor meer informatie.
 
 ### Een adaptief formulier indienen {#af}
 
-U kunt de verzendacties van een adaptief formulier zo configureren dat een workflow wordt gestart bij het verzenden van het adaptieve formulier. Aangepaste formulieren bieden de **[!UICONTROL verzendactie voor een AEM-workflow]** om een workflow te starten bij het verzenden van een adaptief formulier. Voor gedetailleerde informatie over de verzendactie, zie het [Vormen van de Submit actie](/help/forms/using/configuring-submit-actions.md). Als u een adaptief formulier wilt verzenden via de app AEM Forms, schakelt u Synchroniseren met AEM Forms App in de adaptieve formuliereigenschappen in.
+U kunt de verzendacties van een adaptief formulier zo configureren dat een workflow wordt gestart bij het verzenden van het adaptieve formulier. Aangepaste formulieren bieden de **[!UICONTROL Invoke an AEM Workflow]** verzendactie om een workflow te starten wanneer een adaptief formulier wordt verzonden. Voor gedetailleerde informatie over de verzendactie, zie het [Vormen van de Submit actie](/help/forms/using/configuring-submit-actions.md). Als u een adaptief formulier wilt verzenden via de AEM Forms-app, schakelt u Synchroniseren met AEM Forms App in de adaptieve formuliereigenschappen in.
 
-U kunt een adaptief formulier configureren voor synchronisatie, verzending en activering van een workflow vanuit de app AEM Forms. Zie [Werken met een formulier](/help/forms/using/working-with-form.md)voor meer informatie.
+U kunt een adaptief formulier configureren voor synchronisatie, verzending en activering van een workflow vanuit de AEM Forms-app. Zie [Werken met een formulier](/help/forms/using/working-with-form.md)voor meer informatie.
 
 ### Een controlemap gebruiken {#watched}
 
 Een beheerder (een lid van de groep van fd-beheerders) kan een netwerkomslag vormen om een vooraf gevormde werkschema in werking te stellen wanneer een gebruiker een dossier (zoals een Pdf- dossier) in de omslag plaatst. Nadat de workflow is voltooid, kan het resulterende bestand worden opgeslagen in een opgegeven uitvoermap. Een dergelijke map wordt [Gecontroleerde map](/help/forms/using/watched-folder-in-aem-forms.md)genoemd. Voer de volgende procedure uit om een gecontroleerde omslag te vormen om een werkschema te lanceren:
 
-1. Ga in de AEM-auteurinstantie naar ![Gereedschappen](assets/tools.png) > **[!UICONTROL Formulieren > Gecontroleerde map]** configureren.  Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
-1. Tik op **[!UICONTROL Nieuw]**. Er wordt een lijst met velden weergegeven. Geef een waarde op voor de volgende velden om een gecontroleerde map voor een workflow te configureren:
+1. Ga naar de ![gereedschappen](assets/tools.png) op de AEM-auteur-instantie **[!UICONTROL Forms > Configure Watched Folder]**. Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
+1. Tik op **[!UICONTROL New]**. Er wordt een lijst met velden weergegeven. Geef een waarde op voor de volgende velden om een gecontroleerde map voor een workflow te configureren:
 
 <table> 
  <tbody> 
@@ -253,7 +256,7 @@ Een beheerder (een lid van de groep van fd-beheerders) kan een netwerkomslag vor
  </tbody> 
 </table>
 
-1. Tik op **[!UICONTROL Geavanceerd]**. Geef een waarde op voor het volgende veld en tik op **[!UICONTROL Maken]**. De gecontroleerde map is geconfigureerd om een workflow te starten. Wanneer nu een bestand in de invoermap van de Gecontroleerde map wordt geplaatst, wordt de opgegeven workflow geactiveerd.
+1. Tik op **[!UICONTROL Advanced]**. Geef een waarde op voor het volgende veld en tik op **[!UICONTROL Create]**. De gecontroleerde map is geconfigureerd om een workflow te starten. Wanneer nu een bestand in de invoermap van de Gecontroleerde map wordt geplaatst, wordt de opgegeven workflow geactiveerd.
 
    | Veld | Beschrijving |
    |---|---|
@@ -272,8 +275,8 @@ U kunt een Forms-centric werkschema op OSGi op voorlegging van een interactieve 
 U kunt de stappen Taak toewijzen en E-mail verzenden van AEM Workflows gebruiken om een e-mail te verzenden. Voer de volgende stappen uit om e-mailservers en andere configuraties op te geven die vereist zijn om e-mail te verzenden:
 
 1. Ga naar AEM configuratiemanager op `https://[server]:[port]/system/console/configMgr`.
-1. Open de configuratie van de **[!UICONTROL Day CQ Mail Service]** . Geef een waarde op voor de hostnaam **[!UICONTROL van de]** SMTP-server, **[!UICONTROL de poort van de]** SMTP-server en de adresvelden **[!UICONTROL &quot;Van&quot;]** . Click **[!UICONTROL Save]**.
-1. Open de configuratie van de Verbinding Externalzer van de Verbinding van **[!UICONTROL Dag CQ]** . Geef in het veld **[!UICONTROL Domeinen]** het werkelijke hostnaam/IP-adres en poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Click **[!UICONTROL Save]**.
+1. Open de **[!UICONTROL Day CQ Mail Service]** configuratie. Geef een waarde op voor de velden **[!UICONTROL SMTP server host name]**, **[!UICONTROL SMTP server port,]** en **[!UICONTROL "From" address]** velden. Klik op **[!UICONTROL Save]**.
+1. Open de **[!UICONTROL Day CQ Link Externalizer]** configuratie. Geef in het **[!UICONTROL Domains]** veld het werkelijke hostnaam/IP-adres en poortnummer op voor lokale instanties, auteurs en publicatieinstanties. Klik op **[!UICONTROL Save]**.
 
 ### Workflowinstanties wissen {#purge-workflow-instances}
 
