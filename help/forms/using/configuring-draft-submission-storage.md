@@ -9,7 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '547'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +21,13 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Overzicht {#overview}
 
-Met AEM-formulieren kunt u opslaan:
+Met AEM Forms kunt u opslaan:
 
 * **Concepten**: Een werkformulier dat eindgebruikers invullen en opslaan voor later en dat achteraf wordt verzonden.
 
 * **Indieningen**: Verzonden formulieren met door de gebruiker opgegeven gegevens.
 
-AEM Forms Portal voor gegevens en metagegevens biedt ondersteuning voor concepten en verzendingen. Standaard worden de gegevens opgeslagen in de publicatie-instantie. Deze wordt vervolgens omgekeerd gerepliceerd naar de geconfigureerde auteurinstantie om beschikbaar te zijn voor percolatie naar andere publicatie-instanties.
+AEM Forms Portal-gegevens en metagegevensservices bieden ondersteuning voor concepten en verzendingen. Standaard worden de gegevens opgeslagen in de publicatie-instantie. Deze wordt vervolgens omgekeerd gerepliceerd naar de geconfigureerde auteurinstantie om beschikbaar te zijn voor percolatie naar andere publicatie-instanties.
 
 Het probleem met de bestaande out-of-the-box-aanpak is dat alle gegevens op een publicatieinstantie worden opgeslagen, inclusief de gegevens die kunnen worden beschouwd als Personal Identified Information (PII).
 
@@ -102,7 +105,7 @@ Gegevens worden rechtstreeks naar de geconfigureerde externe instantie geduwd
 
 Naast de hierboven gespecificeerde configuratie, verstrek informatie over de gevormde verre verwerkingsinstantie.
 
-Klik in de configuratie van de AEM-webconsole ( `https://[*host*]:[*port*]/system/console/configMgr`) op om **AEM DS Settings Service **in te openen in de bewerkingsmodus. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
+Klik in de configuratie van de AEM-webconsole ( `https://[*host*]:[*port*]/system/console/configMgr`) om de **AEM DS Settings Service** in de bewerkingsmodus te openen. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
 
 >[!NOTE]
 >
