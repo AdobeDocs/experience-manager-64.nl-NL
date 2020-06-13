@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2657'
+ht-degree: 0%
 
 ---
 
@@ -51,13 +54,13 @@ Als uw processen zijn ontworpen en geïmplementeerd zonder dat e-mail vereist is
 >
 >Als u onjuiste informatie invoert, kunt u op Annuleren klikken om terug te keren naar de vorige weergegeven pagina.
 
-### E-mailsjablonen configureren voor gebruik van de AEM Forms Workspace {#configuring-email-templates-to-use-html-workspace}
+### E-mailsjablonen configureren voor gebruik van de werkruimte AEM Forms {#configuring-email-templates-to-use-html-workspace}
 
 >[!NOTE]
 >
 >De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
 
-Standaard bevatten de e-mails die door AEM-formulieren worden verzonden koppelingen naar (Vervangen voor AEM-formulieren op JEE) Flex Workspace. U kunt AEM-formulieren configureren om e-mailberichten met koppelingen naar de werkruimte van AEM-formulieren te verzenden. Zie [dit](/help/forms/using/features-html-workspace-available-flex.md) artikel voor meer informatie over de voordelen van de werkruimte van AEM Forms over (afgekeurd voor AEM-formulieren in JEE) Flex Workspace.
+Standaard bevatten de e-mails die door AEM-formulieren worden verzonden koppelingen naar (Vervangen voor AEM-formulieren op JEE) Flex Workspace. U kunt AEM-formulieren configureren om e-mailberichten met koppelingen naar de werkruimte van AEM Forms te verzenden. Zie [dit](/help/forms/using/features-html-workspace-available-flex.md) artikel voor meer informatie over de voordelen van AEM Forms Workspace over (Vervangen voor AEM-formulieren in JEE) Flex Workspace.
 
 1. Klik in de beheerconsole op Home > Services > Formulierwerkstroom > Serverinstellingen > Taakmeldingen.
 1. Taaktoewijzingssjabloon openen.
@@ -116,7 +119,7 @@ U kunt taaktoewijzingsmeldingen verzenden naar een gebruiker of groep wanneer aa
 U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadline voor het uitvoeren van een toegewezen taak is verstreken. Een deadline-melding is doorgaans informatief omdat de gebruiker niet langer kan reageren op de toegewezen taak.
 
 1. Klik in de beheerconsole op Services > Forms workflow > Server Settings > Task Notifications.
-1. Klik onder Type bericht op Deadline (voor gebruikers) of Group - Deadline (voor groepen).
+1. Onder het Type van Bericht, klik Deadline (voor gebruikers) of Groep - Deadline (voor groepen).
 1. Selecteer Deadline inschakelen of Groep - Deadline inschakelen.
 1. Typ in het vak Onderwerp de tekst voor de onderwerpregel van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie De inhoud van meldingen [aanpassen voor meer informatie over het aanpassen van dit veld](configuring-server-settings.md#customizing-the-content-of-notifications).
 1. Typ in het vak Berichtgevingssjabloon de tekst voor de hoofdtekst van het e-mailbericht. Dit veld is vooraf gevuld met standaardtekst. Zie De inhoud van meldingen [aanpassen voor meer informatie over het aanpassen van dit veld](configuring-server-settings.md#customizing-the-content-of-notifications).
@@ -126,7 +129,7 @@ U kunt deadline-meldingen verzenden naar gebruikers en groepen wanneer de deadli
 
 ### De tag DO NOT DELETE verbergen voor alle e-mails {#hide-the-do-not-delete-tag-for-all-emails}
 
-U kunt e-mail zodanig configureren dat deze wordt verborgen voor de tag NIET VERWIJDEREN in alle e-mails die worden verzonden in een humanitair proces. Zie [How to hide the &#39;DO-NOT-DELETE&#39; tag with CSS voor meer informatie](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
+U kunt e-mail configureren om te verbergen voor de tag NIET DELETE bijhouden in alle e-mails die worden verzonden in een humanitair proces. Zie [How to hide the &#39;DO-NOT-DELETE&#39; tag with CSS voor meer informatie](https://blogs.adobe.com/LiveCycleHelp/2013/09/how-to-hide-the-do-not-delete-tag-with-css.html)
 
 ## Meldingen voor beheerders configureren {#configuring-notifications-for-administrators}
 
@@ -195,15 +198,17 @@ Als uw oplossing in een gegroepeerd milieu wordt opgesteld, vervang `@@notificat
 
 `<`*PORT *`>`is het poortnummer van de HTTP-listener voor de toepassingsserver. De standaard HTTP-listenerpoort voor de ondersteunde toepassingsservers is als volgt:
 
-**** JBoss: 8080
+**JBoss:** 8080
 
-**** Oracle WebLogic Server: 7001
+**Oracle WebLogic Server:** 7001
 
-**** IBM WebSphere: 9080
+**IBM WebSphere:** 9080
 
 Om deze URLs correct te maken, vervang `<`*HAVEN *`>`met het havenaantal dat voor uw milieu aangewezen is.
 
-***Opmerking **: Als u een andere aangepaste webtoepassing dan Forms gebruikt om gebruikers toegang tot de taken te geven, moet u in plaats daarvan een URL-indeling gebruiken die geschikt is voor uw aangepaste toepassing.*
+>[!NOTE]
+>
+>Als u een andere aangepaste webtoepassing dan Forms gebruikt om gebruikers toegang tot de taken te geven, moet u in plaats daarvan een URL-indeling gebruiken die geschikt is voor uw aangepaste toepassing.
 
 ### Variabelekiezer {#variable-picker}
 
@@ -229,7 +234,9 @@ Daarnaast kunt u voor groepherinneringen, groepstaken en groepstermijnen ook het
 
 **group-name** De naam van de groep die het het werkpunt wordt toegewezen.
 
-**Opmerking**: *Als een variabele geen waarde heeft, wordt niets geretourneerd.*
+>[!NOTE]
+>
+>Wanneer een variabele geen waarde heeft, wordt niets geretourneerd.
 
 Voor gestalte takken, kunt u de volgende variabelen in de dozen van het Malplaatje van het Onderwerp en van het Bericht gebruiken:
 
