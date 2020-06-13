@@ -1,6 +1,6 @@
 ---
-title: Gecontroleerde map in AEM-formulieren
-seo-title: Gecontroleerde map in AEM-formulieren
+title: Gecontroleerde map in AEM Forms
+seo-title: Gecontroleerde map in AEM Forms
 description: Een beheerder kan een map in de gaten houden en een workflow, service of scriptbewerking starten wanneer een bestand in de gecontroleerde map wordt geplaatst.
 seo-description: Een beheerder kan een map in de gaten houden en een workflow, service of scriptbewerking starten wanneer een bestand in de gecontroleerde map wordt geplaatst.
 uuid: a525fb20-7b36-48b8-8663-afd640f75017
@@ -9,17 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 442cd4bb-21b8-4d9d-89a4-402ee22c79a7
 translation-type: tm+mt
-source-git-commit: 9d13589ea95329dc6a9d3dbf3a5a9930998597f5
+source-git-commit: 3cc4e08b3a69851e5d4e79eb8159ee00e8f333a0
 workflow-type: tm+mt
-source-wordcount: '7663'
+source-wordcount: '7662'
 ht-degree: 0%
 
 ---
 
 
-# Gecontroleerde map in AEM-formulieren {#watched-folder-in-aem-forms}
+# Gecontroleerde map in AEM Forms {#watched-folder-in-aem-forms}
 
-Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-4)voor meer informatie over workflow, service en script.
+Een beheerder kan een netwerkmap, ook wel een gecontroleerde map genoemd, zo configureren dat wanneer een gebruiker een bestand (zoals een PDF-bestand) in de Gecontroleerde map plaatst, een vooraf geconfigureerde workflow, service of scriptbewerking wordt gestart om het toegevoegde bestand te verwerken. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het resulterende bestand opgeslagen in een opgegeven uitvoermap. Zie [Verschillende methoden voor het verwerken van bestanden](#variousmethodsforprocessingfiles)voor meer informatie over workflow, service en script.
 
 ## Een gecontroleerde map maken {#create-a-watched-folder}
 
@@ -27,9 +27,9 @@ U kunt een van de volgende methoden gebruiken om een gecontroleerde map te maken
 
 * Wanneer het vormen van de eigenschappen van een Gecontroleerde knoop van de Omslagconfiguratie, typ de volledige weg van de ouderfolder in het folderPath bezit en voeg de naam van de Gecontroleerde Te creëren Omslag toe, zoals aangetoond in het volgende voorbeeld: `C:/MyPDFs/MyWatchedFolder`
 
-   De `MyWatchedFolder`map bestaat niet. AEM Forms probeert de map te maken op het opgegeven pad.
+   De `MyWatchedFolder`map bestaat niet. AEM Forms proberen de map te maken op het opgegeven pad.
 
-* Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor meer informatie over de eigenschap folderPath.
+* Creeer een omslag op het dossiersysteem alvorens een Gecontroleerd eindpunt van de Omslag te vormen, en dan de volledige weg in het folderPath bezit te verstrekken. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor meer informatie over de eigenschap folderPath.
 
 >[!NOTE]
 >
@@ -53,7 +53,7 @@ Om een Gecontroleerde Omslag te vormen, creeer een Gecontroleerde knoop van de C
    * `inputProcessorType`
    * `inputProcessorId`
    * `outputFilePattern`
-   Zie [Gecontroleerde mapeigenschappen](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor een volledige lijst met ondersteunde eigenschappen.
+   Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor een volledige lijst met ondersteunde eigenschappen.
 
 1. Klik op Alles **opslaan**. Nadat het knooppunt is gemaakt en de eigenschappen zijn opgeslagen. De `input`, `result`, `failure`, `preserve`, en de `stage`omslagen worden gecreeerd bij de weg die in het `folderPath` bezit wordt gespecificeerd.
 
@@ -80,14 +80,15 @@ U kunt de volgende eigenschappen configureren voor een gecontroleerde map.
    * auteur, publiceren
 
    * publiceren, auteur
-
-**Opmerking**: *Als de server die als host fungeert voor de gecontroleerde map geen van de opgegeven uitvoeringsmodi heeft, wordt de gecontroleerde map altijd geactiveerd, ongeacht de uitvoeringsmodi op de server.*
+   >[!NOTE]
+   >
+   >Als de server die als host fungeert voor de gecontroleerde map geen van de opgegeven uitvoeringsmodi heeft, wordt de gecontroleerde map altijd geactiveerd, ongeacht de uitvoeringsmodi op de server.
 
 * **outputFilePattern (String)**: Patroon van het uitvoerbestand. U kunt een map of bestandspatroon opgeven. Als een mappatroon is opgegeven, hebben de uitvoerbestanden de namen die in de workflows worden beschreven. Als een bestandspatroon is opgegeven, hebben de uitvoerbestanden de namen die in het bestandspatroon worden beschreven. [Met bestands- en mappatroon](/help/forms/using/watched-folder-in-aem-forms.md#p-file-and-folder-patterns-p) kunt u ook een mapstructuur voor de uitvoerbestanden opgeven. Het is een verplicht bezit.
 
 * **stageFileExpirationDuration (lang, standaard -1)**: Het aantal seconden dat moet worden gewacht voordat een invoerbestand/map die al voor verwerking is opgepakt, wordt beschouwd als een time-out en gemarkeerd als een fout. Dit verloopmechanisme wordt alleen geactiveerd wanneer de waarde voor deze eigenschap een positief getal is.
 
-   **Opmerking:** *Zelfs wanneer een input duidelijk als getimed uit gebruikend dit mechanisme wordt gemerkt, kan het nog op de achtergrond verwerken maar enkel meer tijd nemen dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.*
+   **Opmerking:** *Zelfs wanneer een input duidelijk als getimed uit gebruikend dit mechanisme wordt gemerkt, kan het nog op de achtergrond verwerken maar enkel meer tijd nemen dan verwacht. Als de invoerinhoud is verbruikt voordat het time-outmechanisme is ingedrukt, kan de verwerking zelfs later worden voltooid en wordt de uitvoer in de resultatenmap gedumpt. Als de inhoud niet vóór de onderbreking werd verbruikt, is het zeer waarschijnlijk dat de verwerking later uit zal fout bij het proberen om de inhoud te verbruiken, en deze fout zal ook in de mislukkingsomslag voor de zelfde input worden geregistreerd. Anderzijds, als de verwerking voor de input nooit geactiveerd wegens een periodiek baan/werkschemamisbrand (dat is het scenario het verloopmechanisme richt om te richten), dan natuurlijk zullen geen van beide situaties voorkomen. Voor alle items in de map met foutmeldingen die zijn gemarkeerd als mislukkingen vanwege een time-out (zoek naar berichten in het formulier &quot;Bestand wordt niet verwerkt na een aanzienlijke hoeveelheid tijd, gemarkeerd als fout!&quot; in het foutenlogboek), is het aan te raden om de resultaatomslag (en ook de mislukkingsomslag zelf voor een andere ingang voor de zelfde input) af te tasten om te controleren of om het even welke eerder beschreven gebeurtenissen daadwerkelijk voorkwamen.*
 
 * 
 * **deleteExpiredStageFileOnlyWhenThrottled (Boolean, standaard true):** Hiermee wordt aangegeven of het verloopmechanisme alleen moet worden geactiveerd wanneer de controlemap wordt vertraagd. Het mechanisme is relevanter voor vertraagde controlemappen aangezien een klein aantal dossiers die zich in een onverwerkte staat (wegens intermitterende baan/werkschemafouten) rond blijven de mogelijkheid hebben om verwerking voor de volledige partij te onderdrukken wanneer het vertragen wordt toegelaten. Als deze eigenschap wordt ingesteld op true (de standaardwaarde), wordt het verloopmechanisme niet geactiveerd voor gecontroleerde mappen die niet worden vertraagd. Als de eigenschap false blijft, wordt het mechanisme altijd geactiveerd zolang de eigenschap stageFileExpirationDuration een positief getal is.
@@ -157,7 +158,7 @@ Zie [Bestandspatronen voor meer informatie over bestandspatronen](/help/forms/us
 
    Wanneer bestanden naar de gecontroleerde map worden neergezet, worden de bestanden in de invoer weergegeven. Dit kan de prestaties verminderen wanneer elke seconde wordt gescand. Het verhogen van het aftasteninterval kan prestaties verbeteren. Als het volume van te laten vallen dossiers klein is, pas de Grootte van de Partij en het Interval van de Opiniepeiling dienovereenkomstig aan. Als er bijvoorbeeld elke seconde 10 bestanden worden verwijderd, stelt u het pollinterval in op 1 seconde en de Batchgrootte op 10
 
-* **throttleOn (Boolean)**: Als deze optie is geselecteerd, wordt het aantal taken voor gecontroleerde mappen dat door AEM Forms op een bepaald moment wordt verwerkt, beperkt. Het maximumaantal taken wordt bepaald door de waarde voor Batchgrootte. De standaardwaarde is true. (Zie [Informatie over vertragen](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
+* **throttleOn (Boolean)**: Als deze optie is ingeschakeld, beperkt deze het aantal taken voor gecontroleerde mappen dat AEM Forms op een bepaald moment verwerkt. Het maximumaantal taken wordt bepaald door de waarde voor Batchgrootte. De standaardwaarde is true. (Zie [Informatie over vertragen](/help/forms/using/watched-folder-in-aem-forms.md#p-about-throttling-p).)
 
 * **overwriteDuplicateFilename (Boolean)**: Als u de waarde True instelt, worden de bestanden in de map results en preserve overschreven. Wanneer ingesteld op Onwaar, worden bestanden en mappen met het numerieke indexachtervoegsel gebruikt voor de naam. De standaardwaarde is False.
 * **preserveOnFailed (Boolean)**: Invoerbestanden behouden als de bewerking niet op een service wordt uitgevoerd. De standaardwaarde is true.
@@ -391,7 +392,7 @@ log.info("Exiting workflow script!")
 
 Wanneer u een controlemap maakt, maakt deze een mappenstructuur in de map die wordt gecontroleerd. De mapstructuur heeft mappen voor werkgebied, resultaat, behoud, invoer en mislukking. De mappenstructuur kan dienen als invoerlading aan het werkschema en output van een werkschema goedkeuren. Het kan ook een lijst van mislukkingspunten maken, als om het even welk.
 
-Als de structuur van een payload anders is dan de structuur van de gecontroleerde map, kunt u aangepaste scripts schrijven om de structuur van de gecontroleerde map toe te wijzen aan de payload. Een dergelijk script wordt een payload mapfilter genoemd. AEM Forms beschikt over een payload mapfilter waarmee u de structuur van de gecontroleerde map kunt toewijzen aan een payload.
+Als de structuur van een payload anders is dan de structuur van de gecontroleerde map, kunt u aangepaste scripts schrijven om de structuur van de gecontroleerde map toe te wijzen aan de payload. Een dergelijk script wordt een payload mapfilter genoemd. Uit de doos, verstrekt de AEM Forms een filter van de nuttige ladingkaart om structuur van de gecontroleerde omslag aan een lading in kaart te brengen.
 
 #### Een aangepast Payload Mapper-filter maken {#creating-a-custom-payload-mapper-filter}
 
@@ -489,7 +490,7 @@ Als de taak meer dan één invoerbestand bevat, moet de gebruiker een map buiten
 
 >[!NOTE]
 >
->Controleer of de toepassingsserver de toegang tot de bestanden in de gecontroleerde map heeft verwijderd. Als AEM Forms de bestanden na het scannen niet uit de invoermap kan verwijderen, wordt het bijbehorende proces voor onbepaalde tijd gestart.
+>Controleer of de toepassingsserver de toegang tot de bestanden in de gecontroleerde map heeft verwijderd. Als AEM Forms de bestanden na het scannen niet uit de invoermap kunnen verwijderen, wordt het bijbehorende proces voor onbepaalde tijd gestart.
 
 ## Aanvullende informatie over de gecontroleerde mappen {#additional-information-about-the-watched-folders}
 
@@ -508,8 +509,8 @@ Gecontroleerde map scant de invoermap bij elk pollInterval, haalt het aantal bes
 Door deze functie voorkomt u dat Gecontroleerde map nieuwe taken aanroept wanneer de vorige taken niet zijn voltooid. Gecontroleerde map detecteert taken in uitvoering en verwerkt nieuwe taken op basis van de batchgrootte min de taken in uitvoering. Als het aantal voltooide taken in de tweede aanroep bijvoorbeeld slechts drie is en er nog één taak actief is, worden er door de gecontroleerde map slechts drie extra taken aangeroepen.
 
 * Controlemap is afhankelijk van het aantal bestanden in de werkgebiedmap om te bepalen hoeveel taken worden uitgevoerd. Als bestanden niet worden verwerkt in de werkgebiedmap, worden er geen taken meer aangeroepen in de gecontroleerde map. Als de batchgrootte bijvoorbeeld vier en drie taken is, wordt in Gecontroleerde map slechts één taak aangeroepen bij volgende aanroepen. Er zijn meerdere scenario&#39;s die ertoe kunnen leiden dat bestanden niet worden verwerkt in de werkgebiedmap. Wanneer taken zijn geïnstalleerd, kan de beheerder het proces op de beheerpagina van Process Management beëindigen, zodat de gecontroleerde map de bestanden uit de werkgebiedmap verplaatst.
-* Als de AEM Forms-server uitvalt voordat Gecontroleerde map de taken activeert, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)voor meer informatie.
-* Als de AEM Forms-server wordt uitgevoerd maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen, wat gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)voor meer informatie.
+* Als de AEM Forms-server omlaag gaat voordat de taken in de gecontroleerde map worden aangeroepen, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)voor meer informatie.
+* Als de AEM Forms-server wel wordt uitgevoerd maar de gecontroleerde map niet wordt uitgevoerd wanneer de taakbeheerservice weer wordt aangeroepen. Dit gebeurt wanneer services niet in de geordende volgorde worden gestart, kan de beheerder de bestanden uit de werkgebiedmap verplaatsen. Zie [Foutpunten en herstel](/help/forms/using/watched-folder-in-aem-forms.md#p-failure-points-and-recoveryfailure-points-and-recovery-p)voor meer informatie.
 
 ### Foutpunten en herstelFoutpunten en herstel {#failure-points-and-recoveryfailure-points-and-recovery}
 
@@ -534,7 +535,7 @@ Wanneer de bronbestanden in de werkgebiedmap niet kunnen worden verwerkt in de g
 
    * Wijzig de eigenschap includeFilePattern voor de Gecontroleerde map in iets dat niet overeenkomt met een van de nieuwe invoerbestanden (voer bijvoorbeeld NOMATCH in).
    * Onderbreek het proces dat nieuwe invoerbestanden maakt.
-   Wacht tot alle bestanden zijn hersteld en verwerkt in AEM Forms. De meeste bestanden moeten worden hersteld en nieuwe invoerbestanden moeten correct worden verwerkt. De tijdsduur dat u wacht tot de gecontroleerde map de bestanden heeft hersteld en verwerkt, is afhankelijk van de lengte van de bewerking die moet worden aangeroepen en het aantal bestanden dat moet worden hersteld.
+   Wacht tot AEM Forms alle bestanden herstelt en verwerkt. De meeste bestanden moeten worden hersteld en nieuwe invoerbestanden moeten correct worden verwerkt. De tijdsduur dat u wacht tot de gecontroleerde map de bestanden heeft hersteld en verwerkt, is afhankelijk van de lengte van de bewerking die moet worden aangeroepen en het aantal bestanden dat moet worden hersteld.
 
 1. Bepaal welke bestanden niet kunnen worden verwerkt. Ga naar de volgende stap als u op een geschikte hoeveelheid tijd hebt gewacht en de vorige stap hebt voltooid en er nog steeds onverwerkte bestanden in de map met werkgebieden staan.
 
@@ -669,7 +670,7 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
    * inputProcessorId (String): Het gedrag van de eigenschap inputProcessorId is gebaseerd op de waarde die is opgegeven voor de eigenschap inputProcessorType. In dit voorbeeld is de waarde van de eigenschap inputProcessorType workflow. Voor de eigenschap inputProcessorId geeft u dus het volgende pad van de PDFG-workflow op: /etc/workflow/models/pdfg/jcr:content/model
 
    * outputFilePattern (String): Patroon van het uitvoerbestand. U kunt een map of bestandspatroon opgeven. Als een mappatroon is opgegeven, hebben de uitvoerbestanden de namen die in de workflows worden beschreven. Als een bestandspatroon is opgegeven, hebben de uitvoerbestanden de namen die in het bestandspatroon worden beschreven.
-   Naast de hierboven vermelde verplichte eigenschappen, ondersteunen Gecontroleerde mappen ook een aantal optionele eigenschappen. Zie [Gecontroleerde mapeigenschappen](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor een volledige lijst en beschrijving van optionele eigenschappen.
+   Naast de hierboven vermelde verplichte eigenschappen, ondersteunen Gecontroleerde mappen ook een aantal optionele eigenschappen. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor een volledige lijst en beschrijving van optionele eigenschappen.
 
 ## Central Migration Bridge (afgekeurd) gebruiken met een gecontroleerde map {#using-central-migration-bridge-deprecated-with-a-watched-folder}
 
@@ -750,4 +751,4 @@ De ECMAScript zou de createPDF-API van de PDF-Generator gebruiken om Microsoft W
 
    * **outputFilePattern (String)**: Patroon van het uitvoerbestand. U kunt een map of bestandspatroon opgeven. Als een mappatroon is opgegeven, hebben de uitvoerbestanden de namen die in de workflows worden beschreven. Als een bestandspatroon is opgegeven, hebben de uitvoerbestanden de namen die in het bestandspatroon worden beschreven.
 
-Naast de hierboven vermelde verplichte eigenschappen, ondersteunen Gecontroleerde mappen ook een aantal optionele eigenschappen. Zie [Gecontroleerde mapeigenschappen](/help/forms/using/watched-folder-in-aem-forms.md#main-pars-header-1)voor de volledige lijst en beschrijving van optionele eigenschappen.
+Naast de hierboven vermelde verplichte eigenschappen, ondersteunen Gecontroleerde mappen ook een aantal optionele eigenschappen. Zie [Gecontroleerde mapeigenschappen](#watchedfolderproperties)voor de volledige lijst en beschrijving van optionele eigenschappen.
