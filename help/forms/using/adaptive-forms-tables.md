@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2044'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde manier om complexe gegevens weer te geven. Het helpt gebruikers bij het gemakkelijk identificeren van informatie en het verstrekken van input in een geordende regeling van rijen en kolommen. De meeste vormen van financiële diensten en overheidsorganisaties vereisen grote gegevenslijsten om aantallen te zetten en berekeningen uit te voeren.
 
-Met AEM Forms wordt in de zijbalk in de browser met componenten een tabelcomponent weergegeven waarmee u tabellen in adaptieve formulieren kunt maken. Enkele belangrijke mogelijkheden zijn:
+AEM Forms bevat een component Tabel in de deelvensterbrowser in het zijpaneel, waarmee u tabellen kunt maken in adaptieve formulieren. Enkele belangrijke mogelijkheden zijn:
 
 * Responsieve lay-out op mobiele apparaten
 * Configureerbare rijen en kolommen
@@ -87,7 +90,7 @@ U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolba
 
 >[!NOTE]
 >
->U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM-formulieren](/help/forms/using/themes.md)voor meer informatie.
+>U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md)voor meer informatie.
 
 ## Een rij dynamisch toevoegen of verwijderen {#add-or-delete-a-row-dynamically}
 
@@ -111,8 +114,8 @@ Met tabellen in adaptieve formulieren kunt u expressies schrijven in JavaScript 
 
 Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om de zichtbaarheid ervan te bepalen op basis van de waarde die door een expressie wordt geretourneerd, terwijl cellen de volgende expressies ondersteunen:
 
-* **** Initialisatiescript: om een handeling uit te voeren bij initialisatie van een veld.
-* **** Waarde script vastleggen: om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
+* **Initialisatiescript:** om een handeling uit te voeren bij initialisatie van een veld.
+* **Waarde script vastleggen:** om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
 
 >[!NOTE]
 >
@@ -129,7 +132,7 @@ Zie de API-naslaggids voor [JavaScript-bibliotheken voor adaptieve formulieren](
 
 ## Mobiele lay-outs {#mobile-layouts}
 
-Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele apparaten vanwege hun dynamische en responsieve lay-outs. AEM Forms biedt twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
+Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele apparaten vanwege hun dynamische en responsieve lay-outs. AEM Forms bieden twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
 
 U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit componentendialoogvenster voor een lijst vormen.
 
@@ -137,25 +140,27 @@ U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit compon
 
 In de kopteksten op linkerlay-out, wordt de kopbal in de lijst omgezet op de linkerzijde met slechts één cel die op een kopbal verschijnt. Elke rij in deze lay-out wordt weergegeven als een afzonderlijke sectie. In de volgende afbeeldingen wordt een tabel op een desktopcomputer vergeleken met die op een mobiel apparaat.
 
-![](assets/desktopview.png)**Afbeelding voor bureaubladweergave**: *Bureaubladweergave van een tabel met koptekst in de linkerlay-out*
+![](assets/desktopview.png)Afbeelding voor bureaubladweergave **:** *Bureaubladweergave van een tabel met koptekst in de linkerlay-out*
 
-![](assets/headersontheleft.png) headersontheleft **** afbeelding: De *mobiele weergave van een tabel met Koptekst links in de indeling*
+![headersontheleft](assets/headersontheleft.png)**afbeelding:** *De mobiele mening van een lijst met Kopbal op linkerlay-out*
 
 ### Inklapbare kolomindeling {#collapsible-columns-layout}
 
 In de Inklapbare kolomlay-out, de kolommen in de lijst doen ineenstorten om één of twee kolommen, afhankelijk van de apparatengrootte te tonen, terwijl andere kolommen worden doen ineenstorten. U kunt op het pictogram samenvouwen/uitvouwen klikken om andere kolommen in de tabel weer te geven.
 
-***Opmerking**: Hoewel de Inklapbare kolomlay-out is geoptimaliseerd voor mobiele apparaten, werkt deze ook op het bureaublad als de beschikbare breedte niet voldoende is om alle kolommen in een tabel weer te geven. *
+>[!NOTE]
+>
+>Hoewel de Inklapbare kolomlay-out is geoptimaliseerd voor mobiele apparaten, werkt deze ook op het bureaublad als de beschikbare breedte niet voldoende is om alle kolommen in een tabel weer te geven.
 
 De volgende afbeeldingen vergelijken hoe een tabel eruitziet op een apparaat met samengevouwen en uitgevouwen kolommen.
 
-![](assets/collapsed-column.png) samengevouwen kolom **** Afbeelding: Samengevouwen kolommen van een tabel waarvan slechts twee kolommen worden weergegeven op een mobiel apparaat **
+![samengevouwen kolom](assets/collapsed-column.png)**Afbeelding:** *Samengevouwen kolommen van een tabel waarvan slechts twee kolommen worden weergegeven op een mobiel apparaat*
 
-![](assets/collapsible_column.png) collapse_column **** Figure: Uitgebreide kolom van een tabel op een mobiel apparaat **
+![collapse_column](assets/collapsible_column.png)**Figure:** *Uitgebreide kolom van een tabel op een mobiel apparaat*
 
 ## Gegevens in een tabel samenvoegen {#merge-data-in-a-table}
 
-Met tabellen in adaptieve formulieren kunt u de tabel tijdens runtime vullen met gegevens uit een XML-bestand. Het XML-bestand met gegevens kan zich bevinden in het lokale bestandssysteem van de computer waarop de AEM Forms-server wordt uitgevoerd of in de CRX-opslagruimte.
+Met tabellen in adaptieve formulieren kunt u de tabel tijdens runtime vullen met gegevens uit een XML-bestand. Het XML-bestand met gegevens kan zich bevinden in het lokale bestandssysteem van de computer waarop de AEM Forms-server wordt uitgevoerd of in de CRX-opslagplaats.
 
 Neem bijvoorbeeld de volgende overzichtstabel met banktransacties die we willen vullen met gegevens uit een XML-bestand.
 
