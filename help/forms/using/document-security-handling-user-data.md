@@ -1,6 +1,6 @@
 ---
-title: Documentbeveiliging| Gebruikersgegevens verwerken
-seo-title: Documentbeveiliging| Gebruikersgegevens verwerken
+title: Documentbeveiliging | Gebruikersgegevens verwerken
+seo-title: Documentbeveiliging | Gebruikersgegevens verwerken
 description: 'null'
 seo-description: 'null'
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
@@ -8,14 +8,17 @@ topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '935'
+ht-degree: 0%
 
 ---
 
 
-# Documentbeveiliging| Gebruikersgegevens verwerken {#document-security-handling-user-data}
+# Documentbeveiliging | Gebruikersgegevens verwerken {#document-security-handling-user-data}
 
-Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. U kunt documenten beschermen door beleid te gebruiken. Een beleid is een inzameling van informatie die veiligheidsmontages en een lijst van erkende gebruikers omvat. U kunt een beleid toepassen op een of meer documenten en gebruikers autoriseren die zijn toegevoegd aan het gebruikersbeheer van AEM Forms JEE.
+Met documentbeveiliging voor AEM Forms kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. U kunt documenten beschermen door beleid te gebruiken. Een beleid is een inzameling van informatie die veiligheidsmontages en een lijst van erkende gebruikers omvat. U kunt een beleid op één of meerdere documenten toepassen en gebruikers machtigen die in AEM Forms JEE gebruikersbeheer worden toegevoegd.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
@@ -192,17 +195,19 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
    **Beheerconsole gebruiken**
 
    1. Meld u als beheerder aan bij de Forms JEE-beheerconsole op https://[*server*]:[*port*]/adminui.
-   1. Ga naar **[!UICONTROL Services > Documentbeveiliging > Beleidssets]**.
+   1. Ga naar **[!UICONTROL Services > Document Security > Policy Sets]**.
    1. Open een beleidsset en verwijder de gebruiker uit het beleid.
    **Webpagina voor documentbeveiliging gebruiken**
 
    Gebruikers met documentbeveiliging die gemachtigd zijn om persoonlijke beleidsregels te maken, kunnen gebruikersgegevens uit hun beleid verwijderen. Daartoe:
 
    1. Gebruikers met een persoonlijk beleid melden zich aan op de webpagina voor documentbeveiliging op https://[*server*]:[*poort*]/edc.
-   1. Ga naar **[!UICONTROL Services > Documentbeveiliging > Mijn beleid]**.
+   1. Ga naar **[!UICONTROL Services > Document Security > My Policies]**.
    1. Open een beleid en verwijder de gebruiker uit het beleid.
-   **Opmerking**: Beheerders kunnen met behulp van beheerconsole zoeken naar gebruikersgegevens in, toegang krijgen tot en verwijderen uit persoonlijke beleidsregels van andere gebruikers in **[!UICONTROL Services > Documentbeveiliging > Mijn beleid]** .
+   >[!NOTE]
+   >
+   >De beheerders kunnen, tot gebruikersgegevens van persoonlijk beleid van andere gebruikers zoeken toegang hebben en schrappen in het **[!UICONTROL Services > Document Security > My Policies]** gebruiken van beleidsconsole.
 
-1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Voor gedetailleerde stappen, zie het Beheer van de Gebruiker van [Formulieren| Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
+1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Voor gedetailleerde stappen, zie het Beheer van de Gebruiker van [Formulieren | Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
 1. Start de AEM Forms-server.
 
