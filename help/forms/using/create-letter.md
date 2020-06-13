@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 6cef0bcf-e2f0-4a5a-85a1-6d8a5dd9bd01
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '4010'
+ht-degree: 1%
 
 ---
 
@@ -228,7 +231,7 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 * [Compatibiliteitspakket](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html). Installeer het compatibiliteitspakket om de optie **Letters** op de pagina **Forms** weer te geven.
 
 * De letter XDP ([layout](/help/forms/using/document-fragments.md)).
-* Andere XDPs ([lay-outfragmenten](/help/forms/using/document-fragments.md#main-pars-header-13)) die delen van de brief vormen. De XDPs \ Lay-outs worden gecreeerd in [Ontwerper](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
+* Andere XDPs ([lay-outfragmenten](/help/forms/using/document-fragments.md)) die delen van de brief vormen. De XDPs \ Lay-outs worden gecreeerd in [Ontwerper](https://help.adobe.com/en-US/AEMForms/6.1/DesignerHelp/).
 
 * Het relevante [gegevenswoordenboek](/help/forms/using/data-dictionary.md) (optioneel).
 * De [gegevensmodules](/help/forms/using/document-fragments.md) die u in de correspondentie wilt gebruiken.
@@ -240,7 +243,7 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
 1. Selecteer **Formulieren** > **Letters**.
 
-1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie de malplaatjes [van de](/help/forms/using/reference-cm-layout-templates.md)Referentieletter. Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (layout) in Designer en [uploadt u deze bestanden vervolgens naar AEM-formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md).
+1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie de malplaatjes [van de](/help/forms/using/reference-cm-layout-templates.md)Referentieletter. Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (layout) in Designer en [uploadt u deze bestanden vervolgens naar AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).
 
    ![aanmaken](assets/create-letter.png)
 
@@ -250,12 +253,12 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
 1. Voer de eigenschappen in voor Correspondentie en tik op **Opslaan:**
 
-   * **** Titel (optioneel): Voer de titel voor de letter in. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten.
-   * **** Naam: De unieke naam voor de letter. Geen twee letters in een staat kunnen bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
-   * **** Beschrijving (optioneel): Beschrijf de letter ter referentie.
+   * **Titel (optioneel):** Voer de titel voor de letter in. De titel hoeft niet uniek te zijn en kan speciale tekens en niet-Engelse tekens bevatten.
+   * **Naam:** De unieke naam voor de letter. Geen twee letters in een staat kunnen bestaan met dezelfde naam. In het veld Naam kunt u alleen Engelse tekens, cijfers en afbreekstreepjes invoeren. Het veld Naam wordt automatisch ingevuld op basis van het veld Titel. De speciale tekens, spaties, getallen en niet-Engelse tekens die in het veld Titel zijn ingevoerd, worden vervangen door afbreekstreepjes in het veld Naam. Hoewel de waarde in het veld Titel automatisch naar de naam wordt gekopieerd, kunt u de waarde bewerken.
+   * **Beschrijving (optioneel):** Beschrijf de letter ter referentie.
    * **Gegevenswoordenboek (optioneel)**: Het gegevenswoordenboek kan aan de correspondentie worden geassocieerd. De elementen die u later in deze correspondentie invoegt, moeten ofwel hetzelfde gegevenswoordenboek hebben als het gegevenswoordenboek dat u hier voor de correspondentie kiest, ofwel geen gegevenswoordenboek.
-   * **** Tags (optioneel): Selecteer de tags die u op de correspondentie wilt toepassen. U kunt ook een nieuwe/aangepaste tagnaam typen en op Enter drukken om deze te maken.
-   * **** Nabewerking (optioneel): Selecteer het postproces dat op het brievenmalplaatje moet worden toegepast. Er zijn geen postprocessen in de doos en die u gebruikend AEM, zoals e-mail en druk hebt gecreeerd.
+   * **Tags (optioneel):** Selecteer de tags die u op de correspondentie wilt toepassen. U kunt ook een nieuwe/aangepaste tagnaam typen en op Enter drukken om deze te maken.
+   * **Nabewerking (optioneel):** Selecteer het postproces dat op het brievenmalplaatje moet worden toegepast. Er zijn geen postprocessen in de doos en die u gebruikend AEM, zoals e-mail en druk hebt gecreeerd.
    ![Correspondentie-eigenschappen](assets/createcorrespondenceproperties.png)
 
 1. Het systeem geeft een bericht weer: &quot;Letter is gemaakt.&quot; (in het waakzame bericht) Tik **Open** om de gegevensmodules en lay-outfragmenten in het te vormen. Of tik op **Gereed** om terug te gaan naar de vorige pagina.
@@ -286,7 +289,7 @@ Wanneer u een correspondentie hebt gemaakt, tikt u op Openen, geeft Corresponden
    1. **Bewerkbaar**: Als deze optie is geselecteerd, kan de inhoud worden bewerkt in de gebruikersinterface Correspondentie maken. Inhoud alleen als bewerkbaar markeren als de zakelijke gebruiker deze hoeft te wijzigen (bijvoorbeeld Aanpassingen).
    1. **Verplicht**: Als deze optie is geselecteerd, is de inhoud vereist in de gebruikersinterface Correspondentie maken.
    1. **Geselecteerd**: Als deze optie is geselecteerd, wordt de inhoud standaard geselecteerd in de gebruikersinterface Correspondentie maken.
-   1. **Inspringing**: Verhoog of verlaag de inspringing van de module/inhoud in de letter. De inspringing wordt opgegeven in niveaus, vanaf 0. Elk niveau springt 36 punten in. Zie **[!UICONTROL Correspondence Management Configurations]** in de werkstroom [van](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-3)Forms voor meer informatie over het aanpassen van formulieren.
+   1. **Inspringing**: Verhoog of verlaag de inspringing van de module/inhoud in de letter. De inspringing wordt opgegeven in niveaus, vanaf 0. Elk niveau springt 36 punten in. Zie **[!UICONTROL Correspondence Management Configurations]** in de werkstroom [](/help/forms/using/submit-letter-topostprocess.md#formsworkflow)Formulieren voor meer informatie over het aanpassen van formulieren.
    1. **Pagina-einde voor**: Als u Pagina-einde voor instelt op Aan, wordt de inhoud van deze module altijd weergegeven op een nieuwe pagina.
    1. **Pagina-einde na**: Als u Pagina-einde na voor een specifieke module instelt op Aan, wordt de inhoud van de module Volgende altijd weergegeven op een nieuwe pagina.
    ![Ingevoegde gegevensmodules en lay-outfragmenten](assets/insertdmandlf2.png)
@@ -440,7 +443,7 @@ De volgende waarden in de tabel
    <td>N.v.t.</td> 
   </tr> 
   <tr> 
-   <td><strong>image</strong></td> 
+   <td><strong>afbeelding</strong></td> 
    <td>Nee</td> 
    <td>alleen afbeelding</td> 
    <td>Nee</td> 
