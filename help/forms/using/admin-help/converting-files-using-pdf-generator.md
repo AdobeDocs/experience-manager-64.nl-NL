@@ -10,7 +10,10 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 translation-type: tm+mt
-source-git-commit: ce8849ae94fd643147df2a3a9d5e49264e6cb638
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '1130'
+ht-degree: 0%
 
 ---
 
@@ -72,16 +75,19 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
 
    * Typ in het veld Bestand uploaden het pad en de bestandsnaam van het HTML-bestand of het ZIP-bestand of klik op Bladeren om het bestand te zoeken en te selecteren.
    * Typ in het vak URL opgeven de URL van de pagina of website die u wilt converteren.
-
-      ***Opmerking **: Het bestand dat u converteert, moet de bestandsnaamextensie .html, .htm of .zip hebben.*
+   >[!NOTE]
+   >
+   >Het bestand dat u converteert, moet de bestandsnaamextensie .html, .htm of .zip hebben.
 
 1. Geef de configuratie-instellingen op:
 
    * Als u aangepaste instellingen wilt gebruiken, selecteert u Aangepaste instellingen gebruiken, geeft u de instellingen voor de beveiliging en het bestandstype op en geeft u een time-outwaarde op. De standaardwaarde is 270 seconden.
-
-      ***Opmerking**: Als u de Genereren PDF-service zodanig hebt geconfigureerd dat Acrobat WebCapture wordt gebruikt, hebben de instellingen voor bestandstypen die u op deze pagina selecteert, geen invloed op de geproduceerde PDF. Breng in plaats daarvan de gewenste wijzigingen aan in de versie van Acrobat die op de server is geïnstalleerd. *
+   >[!NOTE]
+   >
+   >Als u de Genereren PDF-service zodanig hebt geconfigureerd dat Acrobat WebCapture wordt gebruikt, hebben de instellingen voor bestandstypen die u op deze pagina selecteert, geen invloed op de geproduceerde PDF. Breng in plaats daarvan de gewenste wijzigingen aan in de versie van Acrobat die op de server is geïnstalleerd.
 
    * Als u een bestaand instellingenbestand wilt gebruiken, selecteert u Bestand met instellingen uploaden en klikt u op Bladeren om naar de bestandslocatie te gaan.
+
 
 1. Als u een XMP-bestand wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. Een XMP-bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP-bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt een koppeling naar het PDF-bestand weergegeven.
