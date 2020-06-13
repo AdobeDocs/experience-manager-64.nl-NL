@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9f3ba207-b5a3-43a2-b59c-0d74d62c03fc
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '2745'
+ht-degree: 0%
 
 ---
 
@@ -44,15 +47,15 @@ Herhalende deelvensters zijn instanties van een deelvenster die dynamisch worden
 
 In adaptieve formulieren kunt u expressies schrijven om gedrag toe te voegen, zoals velden en deelvensters voor dynamisch tonen/verbergen. U kunt ook expressies schrijven om berekende velden toe te voegen, velden alleen-lezen te maken, validatielogica toe te voegen en nog veel meer. Adaptieve formulieren ondersteunen de volgende expressies:
 
-* **[Toegang tot expressies](/help/forms/using/adaptive-form-expressions.md#main-pars-header-4)**: om een veld in of uit te schakelen.
+* **[Toegang tot expressies](#access-expression-enablement-expression)**: om een veld in of uit te schakelen.
 * **[Expressies](/help/forms/using/adaptive-form-expressions.md#p-calculate-expression-p)**berekenen: om de waarde van een veld automatisch te berekenen.
 * **[Klikexpressie](/help/forms/using/adaptive-form-expressions.md#p-click-expression-p)**: om handelingen af te handelen bij klikgebeurtenis van een knop.
-* **[](/help/forms/using/adaptive-form-expressions.md#p-initialization-script-p)Initialisatiescript **: een handeling uitvoeren bij initialisatie van een veld.
+* **[Initialisatiescript](/help/forms/using/adaptive-form-expressions.md#p-initialization-script-p):**een handeling uitvoeren bij initialisatie van een veld.
 
 * **[Uitdrukking](/help/forms/using/adaptive-form-expressions.md#p-options-expression-p)**opties: om een vervolgkeuzelijst dynamisch in te vullen.
 * [**Samenvattingsexpressie **](#summary): om de titel van een accordeon dynamisch te berekenen.
 * **[Expressies](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p)**valideren: om een veld te valideren.
-* **[](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)Waarde script **vastleggen: om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
+* **[Waarde script](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)vastleggen:**om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
 
 * **[Visibility expression](/help/forms/using/adaptive-form-expressions.md#p-visibility-expression-p)**: om de zichtbaarheid van een veld en deelvenster te regelen.
 * **[Uitdrukking](/help/forms/using/adaptive-form-expressions.md#p-step-completion-expression-p)**voor stapvoltooiing: om te voorkomen dat een gebruiker naar de volgende stap van een wizard gaat.
@@ -86,7 +89,7 @@ De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop w
 
 **Retourneringstype**: De klikuitdrukking keert geen waarde terug. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen bij het klikken op een knop met de waarde **AEM Forms**, klikt u op de knop `textbox1.value="AEM Forms"` &quot;
+**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen bij het klikken van een knop met waarde- **AEM Forms**, is de klikexpressie van de knop `textbox1.value="AEM Forms"` &quot;
 
 ### Initialisatiescript {#initialization-script}
 
@@ -96,11 +99,11 @@ Het initialisatiescript wordt geactiveerd wanneer een adaptief formulier wordt g
 * Wanneer een adaptief formulier wordt weergegeven met een gegevensvoorvoegsel, wordt het script uitgevoerd nadat de voorvulbewerking is voltooid.
 * Wanneer de validatie van een adaptief formulier aan de serverzijde wordt geactiveerd, wordt het initialisatiescript uitgevoerd.
 
-**** Van toepassing op: velden en deelvenster
+**Van toepassing op:** velden en deelvenster
 
-**** Retourneringstype: De initialisatiescript-expressie retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
+**Retourneringstype:** De initialisatiescript-expressie retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**** Voorbeeld: In een scenario waarin gegevens vooraf worden ingevuld, is de initialisatiescript-expressie als u velden wilt vullen met de standaardwaarde `'Adaptive Forms'` als de waarde null is.\
+**Voorbeeld:** In een scenario waarin gegevens vooraf worden ingevuld, is de initialisatiescript-expressie als u velden wilt vullen met de standaardwaarde `'Adaptive Forms'` als de waarde null is.\
 `if(this.value==null) this.value='Adaptive Forms';`
 
 ### Opties {#options-expression}
@@ -123,11 +126,11 @@ De expressie Samenvatting berekent dynamisch de titel van een onderliggend deelv
 
 De expressie Samenvatting wordt doorgaans gebruikt voor het herhalen van onderliggende items van een accordeonlay-outdeelvenster, zodat elk onderliggend deelvenster een betekenisvolle titel krijgt.
 
-**** Van toepassing op: Deelvensters die directe onderliggende elementen zijn van een deelvenster waarvan de lay-out is geconfigureerd als Accordeon.
+**Van toepassing op:** Deelvensters die directe onderliggende elementen zijn van een deelvenster waarvan de lay-out is geconfigureerd als Accordeon.
 
-**** Retourneringstype: De expressie retourneert een tekenreeks die de titel van de accordeon wordt.
+**Retourneringstype:** De expressie retourneert een tekenreeks die de titel van de accordeon wordt.
 
-**** Voorbeeld: &quot;Rekeningnummer: &quot;+ textbox1.value
+**Voorbeeld:** &quot;Rekeningnummer: &quot;+ textbox1.value
 
 ### Expressie valideren {#validate-expression}
 
@@ -154,11 +157,11 @@ Het script voor vastleggen van waarde wordt geactiveerd wanneer:
 * Een gebruiker wijzigt de waarde van een veld in de gebruikersinterface.
 * De waarde van een veld verandert via de programmacode als gevolg van een wijziging in een ander veld.
 
-**** Van toepassing op: velden
+**Van toepassing op:** velden
 
-**** Retourneringstype: De waarde commit script expression retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
+**Retourneringstype:** De waarde commit script expression retourneert geen waarde. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**** Voorbeeld: Als u het hoofdlettergebruik van in het veld ingevoerde alfabeten wilt omzetten in hoofdletters bij doorvoeren, voert u de volgende expressie voor waarde uit:\
+**Voorbeeld:** Als u het hoofdlettergebruik van in het veld ingevoerde alfabeten wilt omzetten in hoofdletters bij doorvoeren, voert u de volgende expressie voor waarde uit:\
 `this.value=this.value.toUpperCase()`
 
 >[!NOTE]
@@ -194,21 +197,21 @@ De methoden om validaties toe te voegen aan een veld zijn:
 
 ### Vereist {#required}
 
-Als u een component verplicht wilt maken, kunt u in het dialoogvenster **[!UICONTROL Bewerken]** van de component de optie **[!UICONTROL Titel en Tekst > Vereist]** selecteren. U kunt ook het juiste **vereiste bericht** (optioneel) toevoegen. .
+Als u een component verplicht wilt maken, kunt u in het **[!UICONTROL Edit]** dialoogvenster van de component de optie selecteren **[!UICONTROL Title and Text > Required]**. U kunt ook het juiste **vereiste bericht** (optioneel) toevoegen. .
 
 ### Validatiepatronen {#validation-patterns}
 
-Er zijn meerdere validatiepatronen beschikbaar voor een veld. Als u een validatiepatroon wilt selecteren, gaat u in het dialoogvenster **[!UICONTROL Bewerken]** van de component naar het gedeelte **[!UICONTROL Patronen]** en selecteert u **[!UICONTROL patronen]**. U kunt uw eigen aangepaste validatiepatroon maken in een tekstvak **Patroon** . De validatiestatus wordt alleen **True** geretourneerd als de gevulde gegevens voldoen aan het validatiepatroon. Anders wordt **False** geretourneerd. Zie Ondersteuning van [afbeeldingscomponenten voor HTML5-formulieren](/help/forms/using/picture-clause-support.md)voor informatie over het schrijven van uw eigen aangepaste validatiepatroon.
+Er zijn meerdere validatiepatronen beschikbaar voor een veld. Als u een validatiepatroon wilt selecteren, zoekt u in het **[!UICONTROL Edit]** dialoogvenster van de component de **[!UICONTROL Patterns]** sectie en selecteert u **[!UICONTROL patterns]**. U kunt uw eigen aangepaste validatiepatroon maken in een tekstvak **Patroon** . De validatiestatus wordt alleen **True** geretourneerd als de gegevens die zijn ingevuld, voldoen aan het validatiepatroon. Anders wordt **False** geretourneerd. Zie Ondersteuning van [afbeeldingscomponenten voor HTML5-formulieren](/help/forms/using/picture-clause-support.md)voor informatie over het schrijven van uw eigen aangepaste validatiepatroon.
 
 ### Validatie-expressies {#validation-expressions}
 
-De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze expressies worden geschreven in het veld **[!UICONTROL Validatiescript]** van het tabblad **[!UICONTROL Script]** van het dialoogvenster **[!UICONTROL Bewerken]** van de component. De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Zie Uitdrukking [valideren voor informatie over het schrijven van dergelijke expressies](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p).
+De validatie van een veld kan ook worden berekend met behulp van expressies in verschillende velden. Deze expressies worden geschreven in **[!UICONTROL Validation Script]** het veld op het **[!UICONTROL Script]** tabblad van het **[!UICONTROL Edit]** dialoogvenster van de component. De validatiestatus van een veld is afhankelijk van de waarde die de expressie retourneert. Zie Uitdrukking [valideren voor informatie over het schrijven van dergelijke expressies](/help/forms/using/adaptive-form-expressions.md#p-validate-expression-p).
 
 ## Additional Information {#additional-information}
 
 ### Veldweergave-indeling gebruiken {#using-field-display-format}
 
-De indeling van de weergave kan worden gebruikt om de gegevens in verschillende indelingen weer te geven. U kunt bijvoorbeeld de weergave-indeling gebruiken om een telefoonnummer met afbreekstreepjes, ZIP-code of datumkiezer weer te geven. Deze weergavepatronen kunnen worden geselecteerd in het gedeelte **[!UICONTROL Patronen]** van het dialoogvenster **[!UICONTROL Bewerken]** van een component. U kunt aangepaste weergavepatronen schrijven, vergelijkbaar met de hierboven vermelde validatiepatronen.
+De indeling van de weergave kan worden gebruikt om de gegevens in verschillende indelingen weer te geven. U kunt bijvoorbeeld de weergave-indeling gebruiken om een telefoonnummer met afbreekstreepjes, ZIP-code of datumkiezer weer te geven. Deze weergavepatronen kunnen worden geselecteerd in het **[!UICONTROL Patterns]** gedeelte van het **[!UICONTROL Edit]** dialoogvenster van een component. U kunt aangepaste weergavepatronen schrijven, vergelijkbaar met de hierboven vermelde validatiepatronen.
 
 ### GuideBridge - API&#39;s en gebeurtenissen {#guidebridge-apis-and-events}
 
@@ -226,7 +229,7 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 * Als u een adaptief formulier of de specifieke deelvensters ervan wilt valideren, gebruikt u `guideBridge.validate(errorList, somExpression).`
 
-#### GuideBridge gebruiken buiten expressies {#using-guidebridge-outside-expressions-nbsp}
+#### GuideBridge gebruiken buiten expressies  {#using-guidebridge-outside-expressions-nbsp}
 
 U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
 
@@ -283,5 +286,5 @@ Voer de volgende stappen uit om een aangepast patroon te maken voor een specifie
 1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het `textboxpatterns` knooppunt. Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1`) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999-9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptieve formulieren gebruikt.
 
    ![Aangepaste patronen maken voor velden in CrxDe](assets/creating-custom-patterns.png)
-   **** Afbeelding: Aangepaste patronen *maken*
+   **Afbeelding:** *Aangepaste patronen maken*
 
