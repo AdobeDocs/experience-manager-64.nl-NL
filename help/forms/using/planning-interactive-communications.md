@@ -8,7 +8,10 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 75b2d424-91d3-45b4-a5d7-fb49ab558582
 translation-type: tm+mt
-source-git-commit: 9327fd06957fafc7c711f1726f5d8a363ae0c1ad
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '665'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ De anatomie bevat gegevens met de volgende invoermodi:
 * Voorwaardelijke gegevens
 * Afbeeldingen
 
-In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Zie Formuliergegevensmodel [](/help/forms/using/create-form-data-model0.md)maken voor meer informatie.
+In elke sectie staat de vetgedrukte tekst voor statische tekst. Het gegevensbestand omvat klant, rekeningen, en vraaglijsten. Een formuliergegevensmodel kan gegevens uit al deze tabellen ontvangen. Zie Formuliergegevensmodel [](create-form-data-model-tutorial.md)maken voor meer informatie.
 
 De volgende tabel illustreert de gegevensbron voor elk veld in de anatomie van interactieve communicatie:
 
