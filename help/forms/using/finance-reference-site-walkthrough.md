@@ -1,15 +1,18 @@
 ---
 title: We.Financiële referentiesite doorlopen
 seo-title: We.Financiële referentiesite doorlopen
-description: 'Ontdek de website van Web.Finance en begrijp hoe het is geïmplementeerd. We.Finance is een voorbeeldimplementatie voor het weergeven van belangrijke functies en functies van AEM Forms. '
-seo-description: 'Ontdek de website van Web.Finance en begrijp hoe het is geïmplementeerd. We.Finance is een voorbeeldimplementatie voor het weergeven van belangrijke functies en functies van AEM Forms. '
+description: 'Ontdek de website van Web.Finance en begrijp hoe het is geïmplementeerd. Wij.Finance is een voorbeeldimplementatie om de belangrijkste kenmerken en functies van AEM Forms onder de aandacht te brengen. '
+seo-description: 'Ontdek de website van Web.Finance en begrijp hoe het is geïmplementeerd. Wij.Finance is een voorbeeldimplementatie om de belangrijkste kenmerken en functies van AEM Forms onder de aandacht te brengen. '
 uuid: cbcedba4-6151-475d-b6c2-9859e0382768
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '9161'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
 
 ## Voorwaarden {#pre-requisites}
 
-Stel de referentiesites in zoals beschreven in [Stel AEM Forms referentiesites](/help/forms/using/setup-reference-sites.md)in en configureer deze.
+Opstelling de verwijzingsplaatsen zoals die in [Opstelling worden beschreven en vormen de verwijzingsplaatsen](/help/forms/using/setup-reference-sites.md)van AEM Forms.
 
 ## We.Financiële referentiescenario&#39;s {#we-finance-reference-site-scenarios}
 
@@ -26,7 +29,7 @@ We.Finance is een toonaangevende organisatie op het gebied van financiële diens
 
 Hun doel is om aan bestaande en potentiële klanten op hun aangewezen apparaat te bereiken, de voordelen van hun diensten te verklaren, en hen te helpen zich in hun diensten inschrijven. Bovendien zoeken ze naar meer financiële producten zoals add-on kaarten die klanten interessant kunnen vinden.
 
-Lees verder voor gedetailleerde analyses van We.Finance-gebruiksgevallen en begrijp hoe AEM Forms financiële organisaties helpt hun doelstellingen te bereiken. De volgende analyses zijn behandeld:
+Lees verder voor uitgebreide analyses van We.Finance gebruikt cases en begrijp hoe AEM Forms financiële organisaties helpen hun doelstellingen te bereiken. De volgende analyses zijn behandeld:
 
 * [Analyse van creditcardtoepassing](#credit-card-application-walkthrough)
 * [Analyse van de hypotheekaanvraag](#home-mortgage-application-walkthrough)
@@ -46,7 +49,7 @@ De volgende infografische afbeelding toont de stapsgewijze workflow van de credi
 
 ![workflow_name](assets/workflow_aem.png)
 
-Laten we het referentiescenario in detail bekijken om te begrijpen hoe de AEM Forms We.Finance helpt hun doelstellingen te bereiken.
+Laten we het referentiescenario in detail bekijken om te begrijpen hoe de AEM Forms ons helpen hun doelstellingen te bereiken.
 
 ### Sarah ontvangt een nieuwsbrief van We.Finance en vraagt een creditcard aan {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-a-credit-card}
 
@@ -60,15 +63,15 @@ De nieuwsbrief die naar Sarah wordt verzonden is een aangepaste implementatie di
 
 #### Zie het zelf {#see-it-yourself}
 
-Open de volgende URL op de publicatie-instantie om een e-mailbericht voor nieuwsbrieven te activeren. Zorg ervoor dat u de nieuwsbrief vervangt `[emailID]` door een geldig e-mailaccount. Open de nieuwsbrief en klik op Nu **** toepassen om naar de creditcardtoepassing te gaan.
+Open de volgende URL op de publicatie-instantie om een e-mailbericht voor nieuwsbrieven te activeren. Zorg ervoor dat u de nieuwsbrief vervangt `[emailID]` door een geldig e-mailaccount. Open de nieuwsbrief en klik **[!UICONTROL Apply Now]** om naar de creditcardtoepassing te gaan.
 
 `https://[publishServer]:[publsihPort]/content/campaigns/we-finance/start.html?app=cc&email=[emailID]&givenName=Sarah&familyName=Rose`
 
 ### Sarah vindt het aanbod interessant en kiest ervoor om het toe te passen {#sarah-finds-the-offer-interesting-and-chooses-to-apply}
 
-Sarah besluit om een aanvraag in te dienen voor de creditcard en tikt op de knop Nu **** toepassen op de e-mail. Sarah gaat naar de creditcardapplicatie op We.Finance portal. Het toepassingsformulier wordt ingedeeld in secties met een kaartindeling.
+Sarah besluit om een aanvraag in te dienen voor de creditcard en de **[!UICONTROL Apply Now]** knop Kaarten op de e-mail. Sarah gaat naar de creditcardapplicatie op We.Finance portal. Het toepassingsformulier wordt ingedeeld in secties met een kaartindeling.
 
-Sarah selecteert een creditcard uit de beschikbare opties en klikt op **[!UICONTROL Doorgaan]**.
+Sarah selecteert een creditcard van de beschikbare opties en klikt **[!UICONTROL Continue]**.
 
 ![cc-application-form-desktop](assets/cc-application-form-desktop.png)
 
@@ -76,9 +79,9 @@ Op de pagina Persoonlijke Informatie, aangezien Sarah haar Aantal van de Sociale
 
 ![login-ssn](assets/login-ssn.png)
 
-Sarah is een bestaande klant van Wij.Financiën. Ze meldt zich aan bij haar accountgegevens van We.Finance en haar persoonlijke gegevens worden automatisch ingevuld in het formulier. Sarah gaat door met het invullen van het aanvraagformulier en dat is wanneer een herinnering verschijnt voor een vergadering die ze moet bijwonen. Zij klikt **[!UICONTROL sparen mijn vooruitgang]** op het toepassingsformulier. Het slaat alle informatie op die Sarah tot nu toe heeft ingevuld en er verschijnt een dialoogvenster waarin wordt bevestigd of ze een e-mail wil ontvangen met een koppeling naar haar ontwerptoepassing die later moet worden ingevuld.
+Sarah is een bestaande klant van Wij.Financiën. Ze meldt zich aan bij haar accountgegevens van We.Finance en haar persoonlijke gegevens worden automatisch ingevuld in het formulier. Sarah gaat door met het invullen van het aanvraagformulier en dat is wanneer een herinnering verschijnt voor een vergadering die ze moet bijwonen. Ze klikt op **[!UICONTROL Save my progress]** het aanvraagformulier. Het slaat alle informatie op die Sarah tot nu toe heeft ingevuld en er verschijnt een dialoogvenster waarin wordt bevestigd of ze een e-mail wil ontvangen met een koppeling naar haar ontwerptoepassing die later moet worden ingevuld.
 
-Sarah klikt op **[!UICONTROL E-mail]** verzenden. Ze ontvangt een e-mail met een link om haar creditcardtoepassing te hervatten.
+Sarah klikt **[!UICONTROL Send mail]**. Ze ontvangt een e-mail met een link om haar creditcardtoepassing te hervatten.
 
 ![resume](assets/resume.png)
 
@@ -93,7 +96,7 @@ Als Sarah de creditcardtoepassing opent vanaf haar mobiele apparaat, wordt de re
 
 ### Hoe werkt het {#a-how-it-works}
 
-Met de knop **[!UICONTROL Nu]** toepassen stuurt u Sarah naar de creditcardtoepassing. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
+Met de **[!UICONTROL Apply Now]** knop wordt Sarah naar de creditcardtoepassing geleid. De toepassing is een adaptief formulier dat u kunt bekijken in de ontwerpinstanties op `https://[host]:[Port]/editor.html/content/forms/af/we-finance/cc-app.html`.
 
 Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zijn:
 
@@ -119,7 +122,7 @@ Zie ook de volgende documentatie voor meer informatie over functies die worden g
 
 ### Zie het zelf {#a-see-it-yourself}
 
-Als u bent aangemeld als Sarah Rose, klikt u op de knop **[!UICONTROL Nu]** toepassen op de creditcardtoepassing. Vul enkele details in, verken diverse adaptieve formuliercomponenten en klik op **[!UICONTROL Mijn voortgang]** opslaan om een e-mail te ontvangen met een knop **[!UICONTROL Hervatten]** die een koppeling vormt naar de concepttoepassing. Zorg ervoor dat u uw e-mailadres opgeeft in het toepassingsformulier om de e-mail te ontvangen.
+Als u bent aangemeld als Sarah Rose, klikt u op de **[!UICONTROL Apply now]** knop op de creditcardtoepassing. Vul enkele details in, verken verschillende adaptieve formuliercomponenten en klik **[!UICONTROL Save my progress]** om een e-mail te ontvangen met een **[!UICONTROL Resume]** knop die een koppeling bevat naar de concepttoepassing. Zorg ervoor dat u uw e-mailadres opgeeft in het toepassingsformulier om de e-mail te ontvangen.
 
 Bekijk het thema Web.Finance dat beschikbaar is op:
 
@@ -131,11 +134,11 @@ U kunt het malplaatje bekijken Web.Finance bij:
 
 ### Sarah hervat en dient de aanvraag in {#sarah-resumes-and-submits-the-application}
 
-Sarah komt later terug en zoekt een e-mail van We.Finance. Ze klikt op de knop **[!UICONTROL Hervatten]** in de e-mail die haar naar haar conceptcreditcardtoepassing stuurt. De informatie die ze eerder heeft ingevuld, wordt vooraf ingevuld. Ze vult het resterende aanvraagformulier, ondertekent de toepassing en verzendt het.
+Sarah komt later terug en zoekt een e-mail van We.Finance. Ze klikt op de **[!UICONTROL Resume]** knop in de e-mail die haar naar haar conceptcreditcardtoepassing stuurt. De informatie die ze eerder heeft ingevuld, wordt vooraf ingevuld. Ze vult het resterende aanvraagformulier, ondertekent de toepassing en verzendt het.
 
 ![resume-1](assets/resume-1.png)
 
-Ze heeft ook toegang tot haar ontwerptoepassing onder **[!UICONTROL Mijn formulieren]** op de startpagina Web.Finance.
+Ze heeft ook toegang tot haar ontwerptoepassing op de homepage **[!UICONTROL My Forms]** van We.Finance.
 
 ![portalconcepten](assets/portal-drafts.png)
 
@@ -157,7 +160,7 @@ We.Finance ontvangt de creditcardaanvraag die Sarah heeft ingediend. Gloria Rios
 
 Wanneer Sarah de creditcardtoepassing vult en indient, leidt de trekkers van het Werkschema van Forms en een taak wordt gecreeerd in AEM van Gloria inbox.
 
-AEM Forms op OSGi biedt op formulieren gerichte workflows waarmee u adaptieve op formulieren gebaseerde workflows kunt maken. Deze workflows kunnen worden gebruikt voor revisie en goedkeuringen, bedrijfsprocesstromen, het starten van documentservices, het integreren met de ondertekeningsworkflow van Adobe Sign, enzovoort. Voor meer informatie, zie [Forms-centric werkschema op OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms op OSGi bieden formulieren-centric workflows waarmee u adaptieve op formulieren gebaseerde workflows kunt maken. Deze workflows kunnen worden gebruikt voor revisie en goedkeuringen, bedrijfsprocesstromen, het starten van documentservices, het integreren met de ondertekeningsworkflow van Adobe Sign, enzovoort. Voor meer informatie, zie [Forms-centric werkschema op OSGi](/help/forms/using/aem-forms-workflow.md).
 
 In de volgende afbeelding ziet u de AEM-workflow die de creditcardtoepassing verwerkt en een PDF-uitvoer van de toepassing genereert.
 
@@ -165,7 +168,7 @@ In de volgende afbeelding ziet u de AEM-workflow die de creditcardtoepassing ver
 
 #### Zie het zelf {#see-it-yourself-2}
 
-U hebt toegang tot AEM-inbox voor de website we.finance op https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Tik op de pagina op **[!UICONTROL Aanmelden]**, schakel het selectievakje **[!UICONTROL Aanmelden als vertegenwoordiger]** in, meld u aan bij de AEM-postvak met `grios/password` als gebruikersnaam/wachtwoord voor Gloria Rios en keur de creditcardtoepassing goed. Zie Formuliertoepassingen en -taken [beheren in AEM Inbox](/help/forms/using/manage-applications-inbox.md)voor informatie over het gebruik van AEM Inbox voor formuliergerichte workflowtaken.
+U hebt toegang tot AEM-inbox voor de website we.finance op https://&lt;*hostname*>:&lt;*PublishPort*>/content/we-finance/global/en.html. Tik op de pagina **[!UICONTROL Sign In]** op het **[!UICONTROL Login as representative]** `grios/password` selectievakje, meld u aan bij de AEM-inbox met de gebruikersnaam/het wachtwoord voor Gloria Rios en geef de creditcardtoepassing goed. Zie Formuliertoepassingen en -taken [beheren in AEM Inbox](/help/forms/using/manage-applications-inbox.md)voor informatie over het gebruik van AEM Inbox voor formuliergerichte workflowtaken.
 
 ![inbox-1](assets/inbox-1.png)
 
@@ -193,7 +196,7 @@ De add-on kaarttoepassing is een ingesloten adaptief formulier in de welkomstkit
 
 #### Zie het zelf {#see-it-yourself-3}
 
-Klik op de knop **[!UICONTROL Hervatten]** in het e-mailbericht dat u in de vorige stap hebt ontvangen. De concepttoepassing wordt geopend. Vul alle gegevens in en verzend de aanvraag. U ontvangt dan een welkomstkit. Controleer de welkomstkit.
+Klik op de **[!UICONTROL Resume]** knop in de e-mail die u in de vorige stap hebt ontvangen. De concepttoepassing wordt geopend. Vul alle gegevens in en verzend de aanvraag. U ontvangt dan een welkomstkit. Controleer de welkomstkit.
 
 U kunt de welkomstkit ook weergeven op de volgende URL:
 
@@ -237,7 +240,7 @@ https://&lt;*hostname*>:&lt;*port*>/content/aemforms-refsite/doclink.html?docume
 
 U kunt deze openen op auteur- en publicatieinstanties.
 
-Op de creditcardafrekening worden promotieaanbiedingen tegen het einde van de afrekening weergegeven. U kunt Adobe Target integreren met interactieve communicatie met AEM Forms om speciale aanbiedingen te leveren die op specifieke klantsegmenten zijn gebaseerd. Als u uw interactieve communicatie wilt configureren voor gebruik van Adobe Target voor aangepaste en doelgerichte aanbiedingen, raadpleegt u [doelgerichte ervaringen](/help/forms/using/experience-targeting-forms.md)maken.
+Op de creditcardafrekening worden promotieaanbiedingen tegen het einde van de afrekening weergegeven. U kunt Adobe Target met AEM Forms Interactieve Communicatie integreren om promotionele gerichte aanbiedingen te leveren die op specifieke klantensegmenten worden gebaseerd. Als u uw interactieve communicatie zodanig wilt configureren dat Adobe Target wordt gebruikt voor aangepaste en doelgerichte aanbiedingen, raadpleegt u [doelgerichte ervaringen](/help/forms/using/experience-targeting-forms.md)maken.
 
 ![](do-not-localize/offers.png)
 
@@ -245,24 +248,24 @@ Op de creditcardafrekening worden promotieaanbiedingen tegen het einde van de af
 
 Wij.Financiën, van tijd tot tijd, herziet de prestaties van hun creditcardtoepassing om op om het even welke kwesties te controleren die klanten zouden kunnen worden geconfronteerd. Zij gebruiken deze analyse om geïnformeerde beslissingen te nemen over de wijzigingen die vereist zijn in de creditcardtoepassing om de gebruikerservaring te verbeteren, het aantal afgedankte formulieren te verlagen en zo de conversie te verbeteren. Ze maken gebruik van de integratie van AEM Forms met Adobe Analytics voor hun analyse. In de volgende afbeelding ziet u het dashboard voor de analysemogelijkheden.
 
-Voor meer informatie over hoe te om het analytische dashboard te interpreteren, zie het [Bekijken van en het Begrip van de analyserapporten](/help/forms/using/view-understand-aem-forms-analytics-reports.md)van de Vormen AEM.
+Voor meer informatie over hoe te om het analytische dashboard te interpreteren, zie het [Bekijken van en het begrip van de analyserapporten](/help/forms/using/view-understand-aem-forms-analytics-reports.md)van AEM Forms.
 
 ![cc-analytica](assets/cc-analytics.png)
 
 #### Hoe werkt het {#how-it-works-5}
 
-De prestatiemetriek voor het creditcardtoepassingsformulier wordt bijgehouden met Adobe Analytics. Zie Analyses [configureren voor formulieren en documenten](/help/forms/using/configure-analytics-forms-documents.md)voor meer informatie over het configureren van Adobe Analytics en rapporten.
+De prestatiemetriek voor het formulier voor creditcardtoepassingen wordt bijgehouden met Adobe Analytics. Zie Analyses voor formulieren en documenten [](/help/forms/using/configure-analytics-forms-documents.md)configureren voor meer informatie over het configureren van Adobe Analytics en het weergeven van rapporten.
 
 #### Zie het zelf {#see-it-yourself-br}
 
-Voor u om het analytische rapport te bekijken en te onderzoeken, verstrekken wij zaadgegevens voor de creditcardtoepassing in de verwijzingsplaats. Alvorens u zaadgegevens gebruikt, zie Analytics [](/help/forms/using/setup-reference-sites.md#configureanalytics)vormen. Voer de volgende stappen in auteurinstantie uit om het rapport met de zaadgegevens te bekijken:
+Voor u om het analytische rapport te bekijken en te onderzoeken, verstrekken wij zaadgegevens voor de creditcardtoepassing in de verwijzingsplaats. Voordat u zaadgegevens gebruikt, raadpleegt u Analytics [](/help/forms/using/setup-reference-sites.md#configureanalytics)configureren. Voer de volgende stappen in auteurinstantie uit om het rapport met de zaadgegevens te bekijken:
 
-1. Ga naar **[!UICONTROL Forms &amp; Documents]** UI op https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Ga naar **[!UICONTROL Forms & Documents]** UI op https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
-1. Klik om de map **[!UICONTROL Web.Finance]** te openen.
-1. Selecteer **[!UICONTROL Aanpassing creditcard]** en klik vervolgens op Analyse **[!UICONTROL inschakelen op de werkbalk]**.
+1. Klik om de **[!UICONTROL We.Finance]** map te openen.
+1. Selecteer een **[!UICONTROL Application for Credit Card]** adaptief formulier en klik op de werkbalk **[!UICONTROL Enable Analytics]**.
 
-1. Selecteer het aangepaste formulier nogmaals en klik op **[!UICONTROL Analyserapport]** op de werkbalk om het rapport te genereren. Er wordt eerst een leeg rapport weergegeven.
+1. Selecteer het aangepaste formulier nogmaals en klik op **[!UICONTROL Analytics Report]** de werkbalk om het rapport te genereren. Er wordt eerst een leeg rapport weergegeven.
 
 Analytische rapporten genereren met zaadgegevens:
 
@@ -271,27 +274,27 @@ Analytische rapporten genereren met zaadgegevens:
 1. Dubbelklik op het geselecteerde bestand om de inhoud ervan in het rechterdeelvenster te openen.
 1. Kopieer alle inhoud in het bestand met zaadgegevens.
 1. Navigeer in CRXDE naar: `/content/dam/formsanddocuments/we-finance/cc-app/jcr:content/analyticsdatanode/lastsevendays`
-1. Plak de gekopieerde inhoud van het bestand met de zaadgegevens **[!UICONTROL in het veld]** analysegegevens **[!UICONTROL onder]** Eigenschappen.
+1. Plak in het **[!UICONTROL analyticsdata]** **[!UICONTROL Properties]** onderste veld de gekopieerde inhoud van het bestand met zaadgegevens.
 
-1. Selecteer het adaptieve formulier **Aanvraag voor creditcard** en klik op **[!UICONTROL Analyserapport]** in de werkbalk om het rapport te genereren met zaadgegevens.
+1. Selecteer het aangepaste formulier **Aanvraag voor creditcard** en klik op **[!UICONTROL Analytics Report]** de werkbalk om het rapport te genereren met zaadgegevens.
 
 **A/B-tests van de creditcardaanvraag**
 
-Naast het analyseren van de prestaties van de creditcardtoepassing en het constant verbeteren van het, hefboomwerkingen van de integratie van Vormen AEM met Doel om tests A/B te creëren. Hierdoor kunnen zij verschillende ervaringen opdoen met het aanvraagformulier voor een creditcard en kunnen zij de ervaring identificeren die leidt tot een betere conversiegraad in termen van het invullen en verzenden van formulieren.
+Naast het analyseren van de prestaties van de creditcardtoepassing en het voortdurend verbeteren ervan, gebruiken wij.Finance de integratie van AEM Forms met Target om A/B tests te creëren. Hierdoor kunnen zij verschillende ervaringen opdoen met het aanvraagformulier voor een creditcard en kunnen zij de ervaring identificeren die leidt tot een betere conversiesnelheid in termen van het invullen en verzenden van het formulier.
 
-Als u Doel wilt configureren in AEM Forms Server, raadpleegt u Doel [instellen en integreren in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+Om Target in de server van AEM Forms te vormen, zie [Opstelling en integreer Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 Voer de volgende stappen uit om de creatie van A/B test voor Wij.Finance de toepassingsvorm van de creditcard te ervaren:
 
-1. Ga naar **[!UICONTROL Forms &amp; Documents]** op https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Ga naar **[!UICONTROL Forms & Documents]** https://&lt;*hostnaam*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
-1. Klik om de map **[!UICONTROL We.Finance]** te openen.
-1. Selecteer **[!UICONTROL Aanvraag voor adaptief formulier voor creditcard]** .
-1. Klik op **[!UICONTROL Meer]** op de werkbalk en selecteer **[!UICONTROL A/B-tests]** configureren. De Configure A/B testende pagina opent.
+1. Klik om de **[!UICONTROL We.Finance]** map te openen.
+1. Selecteer een **[!UICONTROL Application for Credit Card]** adaptief formulier.
+1. Klik **[!UICONTROL More]** in toolbar en selecteer **[!UICONTROL Configure A/B Testing]**. De Configure A/B testende pagina opent.
 
-1. Geef een **[!UICONTROL activiteitnaam]** op.
+1. Geef een **[!UICONTROL Activity Name]** waarde op.
 1. Selecteer in de vervolgkeuzelijst Publiek een publiek voor wie u verschillende ervaringen met het formulier wilt gebruiken. Bijvoorbeeld **Bezoekers die Chrome** gebruiken.
-1. In de gebieden van de Distributie **[!UICONTROL van de]** Ervaring voor ervaringen A en B, specificeer de distributie, in termen van percentage, om de distributie van ervaringen onder het totale publiek te bepalen. Als u bijvoorbeeld 40, 60 opgeeft voor respectievelijk de ervaringen A en B, zal de ervaring A worden benut voor 40% van het publiek en zal de resterende 60% de ervaring B zien.
+1. Geef op de **[!UICONTROL Experience Distribution]** velden voor de ervaringen A en B de spreiding in procenten op om de verdeling van de ervaringen over het totale publiek te bepalen. Als u bijvoorbeeld 40, 60 opgeeft voor respectievelijk de ervaringen A en B, zal de ervaring A worden benut voor 40% van het publiek en zal de resterende 60% de ervaring B zien.
 1. Klik op **Configureren**. Er verschijnt een dialoogvenster waarin de aanmaak van de A/B-test wordt bevestigd.
 1. Klik op **Gereed**.
 1. Selecteer het formulier **Aanvraag voor creditcard** en klik op **Bewerken**. Het biedt de mogelijkheid om een van de ervaringen te openen. Klik op **Ervaring B**. Het formulier wordt geopend in de bewerkingsmodus.
@@ -301,7 +304,7 @@ Voer de volgende stappen uit om de creatie van A/B test voor Wij.Finance de toep
 
 1. Open het formulier nu diverse keren in de chroombrowser met behulp van de volgende URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
    >[!NOTE] Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
 
 1. Selecteer het formulier, klik op **Meer** en klik op **Testrapport** A/B. U vindt niet veel gegevens in het rapport omdat u net met het testen bent begonnen. Laten we nu enkele zaadgegevens leveren om te zien hoe een A/B-testrapport eruit ziet.
@@ -309,7 +312,7 @@ Voer de volgende stappen uit om de creatie van A/B test voor Wij.Finance de toep
 1. Open CRXDE Lite en neem een file van het volgende dossier: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Vervang de definitie van functie `onReportLoadSuccess` in het bovenstaande bestand door de functiedefinitie in het volgende bestand: /apps/we-finance/demo-artifacts/targetreport.js
 
-   **** Opmerking: Deze wijzigingen gelden alleen voor demo-doeleinden. Zorg ervoor dat u de bestandsinhoud herstelt nadat u deze procedure hebt voltooid.
+   **Opmerking:** Deze wijzigingen gelden alleen voor demo-doeleinden. Zorg ervoor dat u de bestandsinhoud herstelt nadat u deze procedure hebt voltooid.
 
 1. Vernieuw het rapport dat u hebt gegenereerd en u ziet iets als het volgende. Controleer het rapportdashboard.
 
@@ -331,29 +334,29 @@ De volgende informatie geeft een stapsgewijze workflow van een hypotheektoepassi
 
 ![home_hypotheek_application_walkthrough](assets/home_mortgage_application_walkthrough.png)
 
-Laten we nu in detail de stappen in het referentiescenario bekijken om te zien hoe de AEM-formulieren ons helpen hun doelstellingen te bereiken.
+Laten we nu in detail de stappen in het referentiescherm bekijken om te zien hoe de AEM Forms ons helpen hun doelstellingen te bereiken.
 
 ### Sarah bezoekt We.Finance website en vraagt om een hypotheek op een woning {#sarah-visits-we-finance-website-and-applies-for-home-mortgage}
 
 Sarah Rose is van plan een huis te kopen en op zoek naar een hypotheekplan voor thuis. Zij is een klant van Wij.Financiën en bezoekt daarom het portaal van Wij.Financiën om huizenhypotheekaanbiedingen te onderzoeken. Ze gaat naar de afdeling Leningen en vindt een hypotheekcalculator op het portaal. Ze vult de details in en klikt op Berekenen van mijn hypotheek, die een hypotheekplan retourneert.
 
-![](assets/loans1.png) Leningen1![ ](assets/loans2.png)leningen2 **** Afbeelding: *Hypothecumcalculator*
+![Leningen1](assets/loans1.png) ![leningen2](assets/loans2.png)**Afbeelding:** *Hypotheekcalculator*
 
-![](assets/loans3.png) loan3 **** Figuur: Resultaat *hypotheekcalculator*
+![loan3](assets/loans3.png)**Figuur:** *Resultaat hypotheekcalculator*
 
 #### Hoe werkt het {#how-it-works-6}
 
-De hypotheekcalculator voor thuiswoningen op de pagina Leningen is een ingesloten adaptief formulier op de pagina AEM-sites. U kunt de pagina Leningen bekijken in de bewerkingsmodus op `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
+De hypotheekcalculator voor woningen op de pagina Leningen is een ingesloten adaptief formulier op de pagina AEM Sites. U kunt de pagina Leningen bekijken in de bewerkingsmodus op `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
 
 De ingebedde hypotheekcalculator, die een adaptieve vorm is, gebruikt regels om het EMI - bedrag te berekenen op basis van de leningsdetails die worden verstrekt in de rekenmachinevelden. U kunt het aangepaste formulier bekijken op `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/hm-calc.html`.
 
 #### Zie het zelf {#see-it-yourself-5}
 
-Ga naar We.Finance portal op `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` en klik op **[!UICONTROL Leningen]**. Geef details in de hypotheekcalculator en bekijk de resultaten.
+Ga naar We.Finance portal op `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` en klik **[!UICONTROL Loans]**. Geef details in de hypotheekcalculator en bekijk de resultaten.
 
 ### Sarah vindt het aanbod interessant en kiest ervoor om het toe te passen {#sarah-finds-the-offer-interesting-and-chooses-to-apply-1}
 
-Sarah wil een aanvraag indienen voor woninghypotheek en klikt op Nu **[!UICONTROL toepassen]** op de resultaten van de hypotheekcalculator voor thuiswoningen. Het opent de aanvraag voor woninghypotheken.
+Sarah wil een hypotheek aanvragen op een woning en klikt op de resultaten van de hypotheekcalculator **[!UICONTROL Apply Now]** op een woning. Het opent de aanvraag voor woninghypotheken.
 
 Als Sarah de hypotheektoepassing thuis opent vanaf haar mobiele apparaat, wordt het aanvraagformulier geopend in een weergave die is geoptimaliseerd voor weergave op een mobiel apparaat. In deze weergave rendert het toepassingsformulier één sectie per keer. Sarah kan hiermee progressief informatie weergeven en leveren terwijl ze door het aanvraagformulier navigeert.
 
@@ -426,7 +429,7 @@ De taak wordt opnieuw toegewezen aan Gloria. Ze controleert de bijgevoegde id en
 
 Wanneer Sarah de hypotheektoepassing thuis vult en indient, leidt een Werkschema van Forms en een taak wordt gecreeerd in AEM van Gloria inbox. Aangezien Gloria de aanvraag beoordeelt en om meer informatie verzoekt, wordt de taak toegewezen aan John Doe. Als Jan Smit de id koppelt en de aanvraag opnieuw indient, wordt deze toegewezen aan Gloria. Dit wordt bepaald in de AEM- Werkschema verbonden aan de hypotheektoepassing.
 
-AEM Forms op OSGi biedt op formulieren gerichte workflows waarmee u adaptieve op formulieren gebaseerde workflows kunt maken. Deze workflows kunnen worden gebruikt voor revisie en goedkeuringen, bedrijfsprocesstromen, het starten van documentservices, het integreren met de ondertekeningsworkflow van Adobe Sign, enzovoort. Voor meer informatie, zie [Forms-centric werkschema op OSGi](/help/forms/using/aem-forms-workflow.md).
+AEM Forms op OSGi bieden formulieren-centric workflows waarmee u adaptieve op formulieren gebaseerde workflows kunt maken. Deze workflows kunnen worden gebruikt voor revisie en goedkeuringen, bedrijfsprocesstromen, het starten van documentservices, het integreren met de ondertekeningsworkflow van Adobe Sign, enzovoort. Voor meer informatie, zie [Forms-centric werkschema op OSGi](/help/forms/using/aem-forms-workflow.md).
 
 De volgende afbeelding toont de AEM-workflow die is gekoppeld aan de hypotheektoepassing.
 
@@ -448,7 +451,7 @@ De welkomstkit is gepersonaliseerd voor Sarah en toont informatie die relevant i
 
 #### Hoe werkt het {#how-it-works-9}
 
-De welkomstkit is een interactieve communicatie die in het `cq-we-finance-content-pkg.zip` pakket is opgenomen. De promotieaanbiedingen in de welkomstkit worden geleverd door de Adobe Target-server. De aanbiedingen worden aangepast en gericht op specifieke klantensegmenten. De welkomstkit haalt aanbiedingen van een vooraf geconfigureerde Adobe Target-server voor een publiekssegment van vrouwelijke klanten.
+De welkomstkit is een interactieve communicatie die in het `cq-we-finance-content-pkg.zip` pakket is opgenomen. De aanbiedingen voor speciale acties in de welkomstkit worden geleverd door de Adobe Target-server. De aanbiedingen worden aangepast en gericht op specifieke klantensegmenten. De welkomstkit haalt aanbiedingen van een vooraf geconfigureerde Adobe Target-server voor een publiekssegment van vrouwelijke klanten.
 
 De interactieve kaarten in de desktopversie van de welkomstkit maken gebruik van een aangepaste indeling die is gemaakt met de standaardkaartlay-out van een documentfragment.
 
@@ -493,24 +496,24 @@ U kunt deze openen op auteur- en publicatieinstanties.
 
 Wij.Financiën, van tijd tot tijd, evalueert de prestaties van hun hypotheektoepassing om op om het even welke kwesties te controleren die klanten zouden kunnen worden geconfronteerd. Zij gebruiken deze analyse om geïnformeerde beslissingen te nemen over de veranderingen die nodig zijn in de hypotheektoepassing om de gebruikerservaring te verbeteren, het aantal verlaten van formulieren te verminderen en zo de conversie te verbeteren. Ze maken gebruik van de integratie van AEM Forms met Adobe Analytics voor hun analyse. In de volgende afbeelding ziet u het dashboard voor de analysemogelijkheden.
 
-Voor meer informatie over hoe te om het analytische dashboard te interpreteren, zie het [Bekijken van en het Begrip van de analyserapporten](/help/forms/using/view-understand-aem-forms-analytics-reports.md)van de Vormen AEM.
+Voor meer informatie over hoe te om het analytische dashboard te interpreteren, zie het [Bekijken van en het begrip van de analyserapporten](/help/forms/using/view-understand-aem-forms-analytics-reports.md)van AEM Forms.
 
 ![hypotheekanalyse](assets/mortgage-analytics.png)
 
 #### Hoe werkt het {#how-it-works-11}
 
-De prestatiemetriek voor het hypotheektoepassingsformulier wordt bijgehouden met Adobe Analytics. Zie Analyses [configureren voor formulieren en documenten](/help/forms/using/configure-analytics-forms-documents.md)voor meer informatie over het configureren van Adobe Analytics en rapporten.
+De prestatiemetriek voor het hypotheektoepassingsformulier wordt bijgehouden gebruikend Adobe Analytics. Zie Analyses voor formulieren en documenten [](/help/forms/using/configure-analytics-forms-documents.md)configureren voor meer informatie over het configureren van Adobe Analytics en het weergeven van rapporten.
 
 #### Zie het zelf {#see-it-yourself-br-1}
 
-Voor u om het analytische rapport te bekijken en te onderzoeken, verstrekken wij zaadgegevens voor de hypotheektoepassing in de verwijzingsplaats. Alvorens u zaadgegevens gebruikt, zie Analytics [](/help/forms/using/setup-reference-sites.md#configureanalytics)vormen. Voer de volgende stappen in auteurinstantie uit om het rapport met de zaadgegevens te bekijken:
+Voor u om het analytische rapport te bekijken en te onderzoeken, verstrekken wij zaadgegevens voor de hypotheektoepassing in de verwijzingsplaats. Voordat u zaadgegevens gebruikt, raadpleegt u Analytics [](/help/forms/using/setup-reference-sites.md#configureanalytics)configureren. Voer de volgende stappen in auteurinstantie uit om het rapport met de zaadgegevens te bekijken:
 
 1. Ga naar **Forms &amp; Documents** UI op https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Klik hierop om de map **voor** onherroepelijke financiering te openen.
-1. Selecteer **[!UICONTROL Toepassing voor aanpassen thuisprofiel]** en klik vervolgens op Analyse **[!UICONTROL inschakelen op de werkbalk]**.
+1. Selecteer een **[!UICONTROL Application for Home Mortgage]** adaptief formulier en klik op de werkbalk **[!UICONTROL Enable Analytics]**.
 
-1. Selecteer het formulier opnieuw en klik op **[!UICONTROL Analyserapport]** op de werkbalk om het rapport te genereren. In eerste instantie wordt een leeg rapport weergegeven.
+1. Selecteer het formulier opnieuw en klik op **[!UICONTROL Analytics Report]** de werkbalk om het rapport te genereren. In eerste instantie wordt een leeg rapport weergegeven.
 
 Analytische rapporten genereren met zaadgegevens:
 
@@ -524,9 +527,9 @@ Analytische rapporten genereren met zaadgegevens:
 
 **A/B-tests van de hypotheekaanvraag**
 
-Naast het analyseren van de prestaties van de hypotheektoepassing en het constant verbeteren van het, hefboomt wij.Finance integratie van Vormen AEM met Doel om tests A/B te creëren. Hierdoor kunnen ze verschillende ervaringen met het aanvraagformulier opdoen en de ervaring identificeren die leidt tot een betere conversiegraad wat betreft het invullen en verzenden van het formulier.
+Naast het analyseren van de prestaties van de hypotheektoepassing en het voortdurend verbeteren ervan, gebruiken We.Finance de integratie van AEM Forms met Target om A/B-tests te maken. Hierdoor kunnen ze verschillende ervaringen met het aanvraagformulier opdoen en de ervaring identificeren die leidt tot een betere conversiegraad wat betreft het invullen en verzenden van het formulier.
 
-Als u Doel wilt configureren in AEM Forms Server, raadpleegt u Doel [instellen en integreren in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
+Om Target in de server van AEM Forms te vormen, zie [Opstelling en integreer Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms).
 
 Voer de volgende stappen in de auteurinstantie uit om de verwezenlijking van A/B test voor Wij.Finance de toepassingsvorm van de hypotheektoepassing te ervaren:
 
@@ -548,7 +551,7 @@ Voer de volgende stappen in de auteurinstantie uit om de verwezenlijking van A/B
 
 1. Open het formulier nu diverse keren in de chroombrowser met behulp van de volgende URL:
 
-   `https://&lt;*hostname*&gt;:&lt;*port*&gt;/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
+   `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
    >[!NOTE] Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
 
 1. Selecteer het formulier, klik op **Meer** en klik op **Testrapport** A/B. U vindt niet veel gegevens in het rapport omdat u net met het testen bent begonnen. Laten we nu enkele zaadgegevens leveren om te zien hoe een A/B-testrapport eruit ziet.
@@ -578,23 +581,23 @@ De de toepassingsanalyse van de Kortere hypotheek van het Huis met de Dynamica v
 
 Sarah Rose is van plan een huis te kopen en op zoek naar een hypotheekplan voor thuis. Zij is een klant van Wij.Financiën en bezoekt daarom het portaal van Wij.Financiën om huizenhypotheekaanbiedingen te onderzoeken. Ze gaat naar de afdeling Leningen en vindt een hypotheekcalculator op het portaal. Ze vult de details in en klikt op Berekenen van mijn hypotheek, die een hypotheekplan retourneert.
 
-![](assets/loans1.png) Leningen1![ ](assets/loans2.png)leningen2 **** Afbeelding: *Hypothecumcalculator*
+![Leningen1](assets/loans1.png) ![leningen2](assets/loans2.png)**Afbeelding:** *Hypotheekcalculator*
 
-![](assets/loans3.png) loan3 **** Figuur: Resultaat *hypotheekcalculator*
+![loan3](assets/loans3.png)**Figuur:** *Resultaat hypotheekcalculator*
 
 #### Hoe werkt het {#how-it-works-12}
 
-De hypotheekcalculator voor thuiswoningen op de pagina Leningen is een ingesloten adaptief formulier op de pagina AEM-sites. U kunt de pagina Leningen bekijken in de bewerkingsmodus op `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
+De hypotheekcalculator voor woningen op de pagina Leningen is een ingesloten adaptief formulier op de pagina AEM Sites. U kunt de pagina Leningen bekijken in de bewerkingsmodus op `https://[authorHost]:[authorPort]/editor.html/content/we-finance/global/en/loan-landing-page.html`.
 
 De ingebedde hypotheekcalculator, die een adaptieve vorm is, gebruikt regels om het EMI - bedrag te berekenen op basis van de leningsdetails die worden verstrekt in de rekenmachinevelden. U kunt het aangepaste formulier bekijken op `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/ms-dynamics/home-mortgage-calculator.html`.
 
 #### Zie het zelf {#see-it-yourself-10}
 
-Ga naar We.Finance portal op `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` en klik op **[!UICONTROL Leningen]**. Geef details in de hypotheekcalculator en bekijk de resultaten.
+Ga naar We.Finance portal op `https://<publishHost>:<publishPort>/content/we-finance/global/en.html` en klik **[!UICONTROL Loans]**. Geef details in de hypotheekcalculator en bekijk de resultaten.
 
 ### Sarah vindt het aanbod interessant en kiest ervoor om het toe te passen {#sarah-finds-the-offer-interesting-and-chooses-to-apply-2}
 
-Sarah wil een aanvraag indienen voor woninghypotheek en klikt op Nu **[!UICONTROL toepassen]** op de resultaten van de hypotheekcalculator voor thuiswoningen. Het opent de aanvraag voor woninghypotheken.
+Sarah wil een hypotheek aanvragen op een woning en klikt op de resultaten van de hypotheekcalculator **[!UICONTROL Apply Now]** op een woning. Het opent de aanvraag voor woninghypotheken.
 
 Als Sarah de hypotheektoepassing thuis opent vanaf haar mobiele apparaat, wordt het aanvraagformulier geopend in een weergave die is geoptimaliseerd voor weergave op een mobiel apparaat. In deze weergave rendert het toepassingsformulier één sectie per keer. Sarah kan hiermee progressief informatie weergeven en leveren terwijl ze door het aanvraagformulier navigeert.
 
@@ -648,7 +651,7 @@ De volgende infografische afbeelding toont de stapsgewijze workflow van een toep
 
 ![workflow_Insurance](assets/workflow_insurance.png)
 
-Laten we nu in detail de stappen in het referentiescenario bekijken om te zien hoe de AEM-formulieren ons helpen hun doelstellingen te bereiken.
+Laten we nu in detail de stappen in het referentiescherm bekijken om te zien hoe de AEM Forms ons helpen hun doelstellingen te bereiken.
 
 ### Sarah ontvangt een nieuwsbrief van We.Finance en vraagt een huisverzekering aan {#sarah-receives-a-newsletter-from-we-finance-and-applies-for-home-insurance}
 
@@ -662,7 +665,7 @@ De nieuwsbrief die naar Sarah wordt verzonden is een aangepaste implementatie di
 
 #### Zie het zelf {#see-it-yourself-11}
 
-Open de volgende URL om een nieuwsbrief-e-mail te activeren. Zorg ervoor dat u de nieuwsbrief vervangt `[emailID]` door een geldig e-mailaccount. Open de nieuwsbrief en klik op **[!UICONTROL Nu]** toepassen om naar de toepassing voor thuisverzekering te gaan.
+Open de volgende URL om een nieuwsbrief-e-mail te activeren. Zorg ervoor dat u de nieuwsbrief vervangt `[emailID]` door een geldig e-mailaccount. Open de nieuwsbrief en klik **[!UICONTROL Apply Now]** om naar de toepassing van de huisverzekering te gaan.
 
 `https://[authorServer]:[authorPort]/content/campaigns/we-finance/start.html?app=ins&email=[emailID]&givenName=Sarah&familyName=Rose`
 
@@ -708,7 +711,7 @@ Zie ook de volgende documentatie voor meer informatie over functies die worden g
 
 #### Zie het zelf {#see-it-yourself-12}
 
-Klik op **Nu** toepassen op de nieuwsbrief die u per e-mail zou hebben ontvangen. U kunt ook naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/all-forms.html` en op **[!UICONTROL Toepassen]** klikken in de verzekeringstoepassing. Geef `123456789` de gegevens op in het veld Sociale zekerheid. Meld u bij de aanwijzing aan met `srose/srose` de gebruikersnaam of het wachtwoord.
+Klik op **Nu** toepassen op de nieuwsbrief die u per e-mail zou hebben ontvangen. U kunt ook naar `https://[publishHost]:[publishPort]/content/we-finance/global/en/all-forms.html` **[!UICONTROL Apply]** en op de verzekeringstoepassing klikken. Geef `123456789` de gegevens op in het veld Sociale zekerheid. Meld u bij de aanwijzing aan met `srose/srose` de gebruikersnaam of het wachtwoord.
 
 Vul details in, verken verschillende adaptieve formuliercomponenten en verzend de toepassing. U kunt het aangepaste formulier bekijken op `https://[authorHost]:[authorPort]/editor.html/content/forms/af/we-finance/insurance/application-for-insurance.html`.
 
@@ -744,8 +747,8 @@ Ga als volgt te werk:
 
 1. Meld u vervolgens aan bij AEM Inbox met `fdcosta/password` als wachtwoord voor gebruikersnaam voor Frank&#39;s persona. Bekijk de taak.
 1. Ga nu naar `https://[authorHost]:[authorPort]/aem/forms.html/content/dam/formsanddocuments/we-finance/insurance` en bekijk een voorvertoning van de briefsjabloon voor HomeInsuranceWelcomeKit.
-1. Geef informatie op in het deelvenster Gegevens. Klik op **[!UICONTROL Voorvertoning]** en download de PDF naar uw lokale bestandssysteem. Zorg ervoor dat het PDF-bestand wordt opgeslagen met de bestandsnaam contract.pdf.
-1. Ga naar het AEM Inbox van Frank, open de taak, maak het gedownloade contract PDF vast, en klik **[!UICONTROL verzenden Contract]**.
+1. Geef informatie op in het deelvenster Gegevens. Klik **[!UICONTROL Preview]** en download dan PDF aan uw lokaal dossiersysteem. Zorg ervoor dat het PDF-bestand wordt opgeslagen met de bestandsnaam contract.pdf.
+1. Ga naar Frank&#39;s AEM Inbox, open de taak, voeg gedownloade contract PDF bij, en klik **[!UICONTROL Send Contract]**.
 1. Open de e-mail met contract en onderteken het document.
 
 ### Sarah ontvangt een welkomstkit {#sarah-receives-a-welcome-kit}
@@ -760,7 +763,7 @@ Kort krijgt ze nog een e-mail van We.Finance met een welkomstpakket voor haar ve
 
 #### Zie het zelf {#see-it-yourself-14}
 
-Als u uw e-mailadres hebt opgegeven in de toepassing, hebt u een e-mail ontvangen met een koppeling naar de welkomstkit. Klik op **[!UICONTROL Mijn welkomstkit]** om de welkomstkit te openen.
+Als u uw e-mailadres hebt opgegeven in de toepassing, hebt u een e-mail ontvangen met een koppeling naar de welkomstkit. Klik **[!UICONTROL My Welcome Kit]** om de welkomstkit te openen.
 
 ![Insurance-welcome-kit-email](assets/insurance-welcome-kit-email.png)
 
@@ -784,11 +787,11 @@ Sarah Rose is van plan te investeren in een onderling fonds. Zij is een bestaand
 
 #### Hoe werkt het {#how-it-works-17}
 
-Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Er worden teksten, afbeeldingen, grafieken en tabelcomponenten (documentfragmenten) gebruikt om de productsamenvatting, voorraadstijl, fondsprestaties, fondsdetails en andere gerelateerde informatie weer te geven. [ U kunt de interactieve communicatie in de bewerkingsmodus bekijken op https://]authorostHost[: writerPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
+Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Er worden teksten, afbeeldingen, grafieken en tabelcomponenten (documentfragmenten) gebruikt om de productsamenvatting, voorraadstijl, fondsprestaties, fondsdetails en andere gerelateerde informatie weer te geven. U kunt de interactieve communicatie in de bewerkingsmodus bekijken op https://[authorostHost]:[ writerPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html
 
 Met grafieken en tabellen worden gegevens opgehaald uit een formuliergegevensmodel. Het model van vormgegevens verbindt met gevormde gegevensbronnen, een gegevensbestand in deze analyse, om informatie terug te winnen specifiek voor het fonds. U kunt het gegevensmodel van het formulier bekijken op https://[auteurHost]:[auteurPort]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/we-finance/wealth-management
 
-#### Zie het zelf {#see-it-yourself-15}
+#### Zie het zelf  {#see-it-yourself-15}
 
 Ga naar We.Finance op https://[publishHost]:[publishPort]/wefinance, tik op Wealth Management, vouw fondsen uit op Asset Class en tik op We.Finance Blue Chip Growth Fund. Het prospectus &#39;We.Finance Blue Chip Growth Fund&#39; wordt geopend.
 
@@ -802,11 +805,11 @@ Sarah verkent de tabbladen Overzicht, Prijs en Prestaties, Portfoliomanagement, 
 
 De interactieve communicatie van het Blue Chip Growth Fund maakt gebruik van ouder- en onderliggende panelen om gerelateerde informatie in verschillende secties te scheiden. In het bovenliggende deelvenster worden alle onderliggende deelvensters in tabbladen ingedeeld.
 
-De indeling van de bovenliggende tab wordt ingesteld op Tabs bovenaan om alle onderliggende deelvensters om te zetten in tabbladen. [ U kunt de deelvensters van de interactieve communicatie bekijken in de bewerkingsmodus op https://]authorHost[: auteurPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
+De indeling van de bovenliggende tab wordt ingesteld op Tabs bovenaan om alle onderliggende deelvensters om te zetten in tabbladen. U kunt de deelvensters van de interactieve communicatie bekijken in de bewerkingsmodus op https://[authorHost]:[ auteurPort]/editor.html/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html.
 
-#### Zie het zelf {#see-it-yourself-16}
+#### Zie het zelf  {#see-it-yourself-16}
 
-[ Ga naar de interactieve communicatie van het Blue Chip Growth Fund op https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Verken alle tabbladen.
+Ga naar de interactieve communicatie van het Blue Chip Growth Fund op https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html?wcmmode=disabled. Verken alle tabbladen.
 
 ### Sarah bekijkt en emailt de PDF-versie van de pagina Blue Chip Growth Fund {#sarah-views-and-emails-the-pdf-version-of-the-blue-chip-growth-fund-page}
 
@@ -816,15 +819,15 @@ Sarah gaat het weekend naar het platteland. Ze is van plan om het Blue Chip Grow
 
 #### Hoe werkt het {#how-it-works-19}
 
-Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Het heeft een web- en PDF-kanaal. De interactieve communicatie wordt geïntegreerd met AEM Workflows om de PDF-versie via een e-mail te verzenden. [ U kunt het workflowmodel bekijken op https://]auteurshost[: auteurPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
+Het prospectus van het Blue Chip Growth Fund is een interactieve communicatie. Het heeft een web- en PDF-kanaal. De interactieve communicatie wordt geïntegreerd met AEM Workflows om de PDF-versie via een e-mail te verzenden. U kunt het workflowmodel bekijken op https://[auteurshost]:[ auteurPort]/editor.html/conf/global/settings/workflow/models/wealthmanagement.html.
 
 ![vermogensbeheer](assets/wealth-management.png)
 
-#### Zie het zelf {#see-it-yourself-17}
+#### Zie het zelf  {#see-it-yourself-17}
 
-[ Als u de PDF-versie wilt downloaden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html tikt u op Download PDF.
+Als u de PDF-versie wilt downloaden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html tikt u op Download PDF.
 
-[ Als u PDF per e-mail wilt verzenden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund https://]publishHost[: publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html tikt u op E-MAIL PDF. Geef **volledige naam** en **e-mailadres** op. Klik op E-mail **verzenden**.
+Als u PDF per e-mail wilt verzenden, gaat u naar de interactieve communicatie van het Blue Chip Growth Fund https://[publishHost]:[ publishPort]/content/forms/af/we-finance/wealth-management/wealth-management/channels/web.html tikt u op E-MAIL PDF. Geef **volledige naam** en **e-mailadres** op. Klik op E-mail **verzenden**.
 
 ## Doorloop voor automatische verzekeringstoepassing {#auto-insurance-application-walkthrough}
 
@@ -845,11 +848,11 @@ Conrad opent logboeken in instantie AEM, opent het Autodashboard van de Verzeker
 
 #### Hoe werkt het {#how-it-works-20}
 
-Communicatie over verlenging van verzekeringsbeleid is een interactieve communicatie. Conrad Simms gebruikt Agent UI om de mededeling van de vernieuwing van het verzekeringsbeleid naar Sarah te verzenden. De communicatie omvat Druk (PDF) en verbinding aan het kanaal van het Web van de interactieve mededeling. De interactieve communicatie gebruikt de AEM-workflow om de e-mail te verzenden. [ U kunt de workflow bekijken op https://]authorostHost[: writerPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
+Communicatie over verlenging van verzekeringsbeleid is een interactieve communicatie. Conrad Simms gebruikt Agent UI om de mededeling van de vernieuwing van het verzekeringsbeleid naar Sarah te verzenden. De communicatie omvat Druk (PDF) en verbinding aan het kanaal van het Web van de interactieve mededeling. De interactieve communicatie gebruikt de AEM-workflow om de e-mail te verzenden. U kunt de workflow bekijken op https://[authorostHost]:[ writerPort]/editor.html/conf/global/settings/workflow/models/we-finance-auto-insurance-renewal.html
 
 ![automatische verzekering-workflow](assets/auto-insurance-workflow.png)
 
-#### Zie het zelf {#see-it-yourself-18}
+#### Zie het zelf  {#see-it-yourself-18}
 
 Meld u aan bij het **Auto Insurance-dashboard** van We.Financiën als Conrad Simms (csimms/password). De URL is https://[publishhost]:[publishport]/content/we-finance/global/en/login.html?resource=/content/we-finance/ccdashboard.html. Geef de **klant-id** op. De klant-id van Sarah Rose is 900001. Klik op **Beleid** vernieuwen. De interactieve mededeling opent omhoog in de Agent UI. Voer in de gebruikersinterface van de agent een geldig e-mailadres in om de e-mail te verzenden met het beleidsdocument als bijlage en klik op **Verzenden**. Er wordt een bericht, Verzending geïnitieerd, weergegeven op het scherm en in een paar seconden wordt een ander bericht, Verzenden geslaagd, weergegeven. Een e-mail met het onderwerp **Uw automatische verzekering Verlengt** en wordt verzonden op het gespecificeerde e-mailadres. Het beleid dat Sarah Rose wordt geboden is een premiumbeleid.
 
@@ -886,13 +889,13 @@ Sarah klikt op **Nu** vernieuwen en wordt verwezen naar de webversie van haar br
 
 ![automatisch verzekering-verlenging-e-mail](assets/auto-insurance-renewal-email.png)
 
-#### Hoe werkt het {#how-it-works-21}
+#### Hoe werkt het  {#how-it-works-21}
 
 Het web en de drukoutput van uw brief van de autoverzekering worden gecreeerd gebruikend de multi-kanaalmogelijkheden van Interactieve Mededelingen. De knop **Nu** vernieuwen in de e-mail is gekoppeld aan de toepassing voor het vernieuwen van autoverzekeringen. Dit is een interactieve communicatie over een publicatie-instantie.
 
 ![ic-web-versie](assets/ic-web-version.png)
 
-#### Zie het zelf {#see-it-yourself-19}
+#### Zie het zelf  {#see-it-yourself-19}
 
 U moet een e-mail met een bijgevoegde PDF hebben ontvangen. Het PDF-bestand is een afdrukversie van uw brief voor automatische verzekering. Klik op Nu **vernieuwen** om de webversie van het beleid te openen. Controleer uw persoonlijke gegevens en beleidsgegevens en klik op **Nu** vernieuwen. Er wordt een adaptief formulier voor betaling weergegeven.
 
@@ -908,11 +911,11 @@ Wanneer Sarah op **Nu** vernieuwen klikt op de webversie van de interactieve com
 
 ![betalingsadaptief](assets/payment-adaptive-form.png)
 
-#### Hoe werkt het {#how-it-works-22}
+#### Hoe werkt het  {#how-it-works-22}
 
 Met de knop Nu vernieuwen wordt Sarah naar de betalingspagina geleid. De betalingspagina is een adaptief formulier. Sarah vult de creditcardgegevens en klikt op **Indienen**. Haar creditcardbetaling wordt verwerkt en er verschijnt een bedankbericht in het adaptieve formulier op het scherm.
 
-#### Zie het zelf {#see-it-yourself-20}
+#### Zie het zelf  {#see-it-yourself-20}
 
 Klik op Nu **vernieuwen** om naar de betalingspagina te gaan. Vul je creditcardgegevens in en klik op **Betalen.** U kunt de betalingspagina bereiken in de ontwerpinstantie op:
 
