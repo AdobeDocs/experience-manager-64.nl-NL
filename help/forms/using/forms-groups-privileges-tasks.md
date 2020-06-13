@@ -1,8 +1,8 @@
 ---
-title: AEM-formulieren op OSGi-groepen en -rechten
-seo-title: AEM-formulieren op OSGi-groepen en -rechten
-description: Wijs gebruikers aan de groepen toe om Vormen AEM op OSGi te beheren
-seo-description: Wijs gebruikers aan de groepen toe om Vormen AEM op OSGi te beheren
+title: AEM Forms over OSGi-groepen en -voorrechten
+seo-title: AEM Forms over OSGi-groepen en -voorrechten
+description: Wijs gebruikers aan de groepen toe om AEM Forms op OSGi te beheren
+seo-description: Wijs gebruikers aan de groepen toe om AEM Forms op OSGi te beheren
 uuid: 9ebb3a4e-4c0e-4105-921f-58077fc45281
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
 translation-type: tm+mt
-source-git-commit: 17f5041c16996ec3f230650451a816c08170837c
+source-git-commit: f87d70515a385fb23b36797e468325fa1a5e9ff4
 workflow-type: tm+mt
 source-wordcount: '272'
 ht-degree: 0%
@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# AEM-formulieren op OSGi-groepen en -rechten {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms over OSGi-groepen en -voorrechten {#aem-forms-on-osgi-groups-and-privileges}
 
-Wijs gebruikers aan de groepen toe om Vormen AEM op OSGi te beheren
+Wijs gebruikers aan de groepen toe om AEM Forms op OSGi te beheren
 
 U kunt groepen [](/help/sites-administering/user-group-ac-admin.md#group-administration) maken en beleid en [gebruikers](/help/sites-administering/user-group-ac-admin.md#user-administration) toewijzen aan de groepen in AEM. Dit beleid controleert voorrechten van de gebruikers die deel van de groep uitmaken.
 
-Nadat u het invoegpakket [voor](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms hebt geïnstalleerd, zijn de groepen die in dit artikel worden vermeld, zoals de gebruiker van formulieren en de gebruiker van de formuliervoeding, automatisch beschikbaar voor toewijzing. De volgende lijst maakt een lijst van de taken een gebruiker voor Vormen AEM op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
+Nadat u het invoegpakket [voor](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms hebt geïnstalleerd, zijn de groepen die in dit artikel worden vermeld, zoals de gebruiker van het formulier en de gebruiker van het formulierprogramma, automatisch beschikbaar voor toewijzing. De volgende lijst maakt een lijst van de taken een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen worden gebaseerd:
 
 <table> 
  <tbody>
@@ -33,7 +33,7 @@ Nadat u het invoegpakket [voor](/help/forms/using/installing-configuring-aem-for
    <td>Taken</td> 
   </tr>
   <tr>
-   <td>gebruiker van formulieren <sup><a href="#main-pars-text">[1]</a></sup></td> 
+   <td>gebruiker van formulieren <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren maken, voorvertonen, publiceren en verzenden</li> 
@@ -63,7 +63,7 @@ Nadat u het invoegpakket [voor](/help/forms/using/installing-configuring-aem-for
     </ul> </td> 
   </tr>
   <tr>
-   <td>sjabloonauteurs <sup><a href="#main-pars-text">[2]</a></sup></td> 
+   <td>sjabloonauteurs <sup>[2]</sup></td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren of interactieve communicatiesjablonen maken en hiervan een voorbeeld bekijken</li> 
