@@ -11,7 +11,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8749793-e53f-4812-a093-8278f480e6a8
 translation-type: tm+mt
-source-git-commit: 09e069f1b0f5653dc13de3c2d5580235a7dc5dd1
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '556'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,9 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 * De voorbeelden van de webservice (Java Base64) zijn een Java-servlet.
 * De voorbeelden van de Webdienst (MTOM) zijn een consoletoepassing (niet alle snelle begin hebben een voorbeeld MTOM).
 
-   ***Opmerking **: Voor informatie over het creëren van een Webtoepassing die Java servlets gebruikt om de dienst van Vormen aan te halen, zie het[Creëren van de Toepassingen van het Web die Vormen](/help/forms/developing/creating-web-applications-renders-forms.md)teruggeven.*
+   >[!NOTE]
+   >
+   >Voor informatie over het creëren van een Webtoepassing die Java servlets gebruikt om de dienst van Vormen aan te halen, zie het [Creëren van de Toepassingen van het Web die Vormen](/help/forms/developing/creating-web-applications-renders-forms.md)teruggeven.
 
    U kunt op twee manieren een formulierontwerp (een XDP-bestand) of een PDF-document doorgeven aan de service Forms:
 
@@ -39,7 +44,7 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 
 U kunt deze taken uitvoeren met de service Forms:
 
-* Interactieve PDF-formulieren renderen. (Zie Interactieve PDF-formulieren [renderen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
+* Interactieve PDF forms renderen. (Zie Interactieve PDF forms [renderen](/help/forms/developing/rendering-interactive-pdf-forms.md).)
 * Formulieren weergeven op de client. (Zie Formulieren [renderen op de client](/help/forms/developing/rendering-forms-client.md).)
 * Formulieren weergeven op basis van fragmenten. (Zie Formulieren [renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
 * Formulieren met rechten weergeven. (Zie Formulieren [die zijn geschikt voor rechten](/help/forms/developing/rendering-rights-enabled-forms.md)renderen.)
