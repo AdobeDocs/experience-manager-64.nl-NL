@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: 0f51ed42a1cd9b043be1ec8ce17e32cea0b1a161
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '7876'
+ht-degree: 0%
 
 ---
 
@@ -25,17 +28,23 @@ De service PDF genereren gebruikt native toepassingen om de volgende bestandsind
 
 * Microsoft Office 2003 en 2007 voor de conversie van DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX, XPS en PUB (alleen Windows)
 
-   ***Opmerking **: Acrobat® 9.2 of hoger is vereist voor het converteren van de Microsoft XPS-indeling naar PDF.*
+   >[!NOTE]
+   >
+   >Acrobat® 9.2 of hoger is vereist voor het converteren van de Microsoft XPS-indeling naar PDF.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 en 2009 om DWF, DWG en DXW om te zetten (alleen in het Engels)
 * Corel WordPerfect 12 en X4 voor conversie van WPD, QPW, SHW (alleen in het Engels)
 * OpenOffice 2.0, 2.4, 3.0.1 en 3.1 voor het converteren van ODT, ODS, ODP, ODF, ODF, SXW, SXC, SXD, DOC, DOCX, RTF, TXT, XLS, XLSX, PPT, PPTX, VSD, MPP, MPPX en PUB
 
-   ***Opmerking **: De service PDF genereren biedt geen ondersteuning voor de 64-bits versies van OpenOffice.*
+   >[!NOTE]
+   >
+   >De service PDF genereren biedt geen ondersteuning voor de 64-bits versies van OpenOffice.
 
 * Adobe Photoshop® CS2 voor het omzetten van PSD (alleen Windows)
 
-   ***Opmerking**: Photoshop CS3 en CS4 worden niet ondersteund omdat deze geen ondersteuning bieden voor Windows Server 2003 of Windows Server 2008. *
+   >[!NOTE]
+   >
+   >Photoshop CS3 en CS4 worden niet ondersteund omdat deze geen ondersteuning bieden voor Windows Server 2003 of Windows Server 2008.
 
 * Adobe FrameMaker® 7.2 en 8 om FM (Vensters slechts) om te zetten
 * Adobe PageMaker® 7.0 om PMD, PM6, P65, en PM (Vensters slechts) om te zetten
@@ -61,8 +70,8 @@ De service PDF genereren converteert PDF naar de volgende bestandsindelingen (al
 
 Voor de service PDF genereren moet u de volgende beheertaken uitvoeren:
 
-* De vereiste native toepassingen installeren op de computer die als host fungeert voor AEM-formulieren
-* Installeer Adobe Acrobat Professional of Acrobat Pro Extended 9.2 op de computer die als host fungeert voor AEM-formulieren
+* Vereiste native toepassingen installeren op de computer die als host fungeert voor AEM Forms
+* Installeer Adobe Acrobat Professional of Acrobat Pro Extended 9.2 op de computer die als host fungeert voor AEM Forms
 * Instellingstaken na de installatie uitvoeren
 
 Deze taken worden beschreven in AEM-formulieren installeren en implementeren met JBoss Turnkey.
@@ -125,7 +134,7 @@ Nadat het bestand is geconverteerd naar een PDF-document, kunt u de resultaten o
 
 [Word-documenten converteren naar PDF-documenten met de webservice-API](converting-file-formats-pdf.md#convert-word-documents-to-pdf-documents-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -180,7 +189,7 @@ Converteer een Microsoft Word-document naar een PDF-document met de Generate PDF
 
 [Snel starten (SOAP-modus): Een Microsoft Word-document converteren naar een PDF-document met de Java API](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -199,7 +208,7 @@ Converteer een Microsoft Word-document naar een PDF-document met de API (webserv
 1. Maak een Generate PDF client.
 
    * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -242,9 +251,9 @@ Converteer een Microsoft Word-document naar een PDF-document met de API (webserv
 
 [Overzicht van de stappen](converting-file-formats-pdf.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## HTML-documenten converteren naar PDF-documenten {#converting-html-documents-to-pdf-documents}
 
@@ -290,7 +299,7 @@ Nadat de HTML-inhoud is geconverteerd naar een PDF-document, kunt u de resultate
 
 [HTML-inhoud converteren naar een PDF-document met de webservice-API](converting-file-formats-pdf.md#convert-html-content-to-a-pdf-document-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -337,7 +346,7 @@ Een HTML-document converteren naar een PDF-document met de Generate PDF API (Jav
 
 [Snel starten (SOAP-modus): HTML-inhoud converteren naar een PDF-document met de Java API](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -356,7 +365,7 @@ HTML-inhoud converteren naar een PDF-document met de functie PDF API genereren (
 1. Maak een Generate PDF client.
 
    * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -392,9 +401,9 @@ HTML-inhoud converteren naar een PDF-document met de functie PDF API genereren (
 
 [HTML-documenten converteren naar PDF-documenten](converting-file-formats-pdf.md#converting-html-documents-to-pdf-documents)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## PDF-documenten converteren naar niet-afbeeldingsindelingen {#converting-pdf-documents-to-non-image-formats}
 
@@ -440,7 +449,7 @@ Sla het geconverteerde bestand op. Als u bijvoorbeeld een PDF-document convertee
 
 [Een PDF-document converteren naar een RTF-bestand met de webservice-API](converting-file-formats-pdf.md#convert-a-pdf-document-to-a-rtf-file-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -487,7 +496,7 @@ Een PDF-document converteren naar een RTF-bestand met de Generate PDF API (Java)
 
 [Snel starten (SOAP-modus): HTML-inhoud converteren naar een PDF-document met de Java API](/help/forms/developing/generate-pdf-service-java-api.md#quick-start-soap-mode-converting-html-content-to-a-pdf-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -506,7 +515,7 @@ Een PDF-document converteren naar een RTF-bestand met de API (webservice) voor g
 1. Maak een Generate PDFf client.
 
    * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -546,9 +555,9 @@ Een PDF-document converteren naar een RTF-bestand met de API (webservice) voor g
 
 [Overzicht van de stappen](converting-file-formats-pdf.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Ondersteuning toevoegen voor extra eigen bestandsindelingen {#adding-support-for-additional-native-file-formats}
 
@@ -564,7 +573,7 @@ In dit gedeelte wordt ook het volgende uitgelegd:
 
 De service PDF genereren converteert oorspronkelijke bestandsindelingen door de toepassing aan te roepen die is gekoppeld aan de bestandsindeling en vervolgens te communiceren met de toepassing om het document af te drukken met de standaardprinter. De standaardprinter moet zijn ingesteld als Adobe PDF-printer.
 
-In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die zijn betrokken bij native toepassingsondersteuning. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
+In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die bij de ondersteuning van native toepassingen betrokken zijn. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
 
 Interacties van componenten voor conversie van native bestanden
 
@@ -636,7 +645,7 @@ Dialoogbestanden in XML-bestanden reageren daarentegen gewoon op dialoogvensters
 
 Deze sectie en de volgende sectie gebruiken verschillende terminologie voor dialoogvakjes en de componenten die zij, afhankelijk van het perspectief bevatten dat wordt beschreven. De componenten van dialoogvensters zijn punten zoals knopen, gebieden, en combovakjes.
 
-Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen als *dialoogvenster*, *knop*, *veld* en *keuzelijst* met invoervak gebruikt.
+Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen zoals *dialoogdoos*, *knoop*, *gebied*, en *combodoos* gebruikt.
 
 Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van hun interne vertegenwoordiging beschrijven, wordt de term *vensterelement* gebruikt. De interne representatie van vensterelementen is een hiërarchie, waarbij elke instantie van een vensterelement wordt aangeduid met labels. De instantie van het vensterelement beschrijft ook zijn fysieke kenmerken en gedrag.
 
@@ -712,7 +721,7 @@ Als u aan dialoog of manuscriptdossiers van XML van plan bent te werken, zou u d
 
 Het dialoogvenster- en scriptbestand bevinden zich in het bestand appmondata.jar. Voordat u een van deze bestanden kunt wijzigen of nieuwe script- of dialoogbestanden kunt toevoegen, moet u het pakket van dit JAR-bestand opheffen. Stel dat u ondersteuning wilt toevoegen voor de toepassing EditPlus. U maakt twee XML-bestanden met de namen appmon.editplus.script.en_US.xml en appmon.editplus.script.adding.nl_NL.xml. Deze XML-scripts moeten op twee locaties aan het bestand adobe-appmondata.jar worden toegevoegd, zoals hieronder wordt aangegeven:
 
-* adobe-livecycle-native-jreliëf-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Het bestand adobe-livecycle-native-jreliëf-x86_win32.ear bevindt zich in de exportmap op *[AEM forms install directory]\*configurationManager. (Als AEM Forms wordt geïmplementeerd op een andere J2EE-toepassingsserver, vervangt u het bestand adobe-livecycle-native-jreliëf-x86_win32.ear door het EAR-bestand dat overeenkomt met uw J2EE-toepassingsserver.)
+* adobe-livecycle-native-jreliëf-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Het bestand adobe-livecycle-native-jreliëf-x86_win32.ear bevindt zich in de exportmap op *[AEM forms install directory]\*configurationManager. (Als AEM Forms worden geïmplementeerd op een andere J2EE-toepassingsserver, vervangt u het bestand adobe-livecycle-native-jreliëf-x86_win32.ear door het EAR-bestand dat overeenkomt met uw J2EE-toepassingsserver.)
 * adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (het bestand adobe-appmondata.jar bevindt zich in het bestand adobe-generatepdf-dsc.jar). Het bestand adobe-generatepdf-dsc.jar staat in de installatiemap *[\Implementatie van de installatiemap voor]* AEM-formulieren.
 
 Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, moet u de component GeneratePDF opnieuw gebruiken. Voer de volgende taken uit om XML-bestanden voor dialoog en script toe te voegen aan het bestand adobe-appmondata.jar:
@@ -925,7 +934,7 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
 
 #### XML-bestanden {#xml-files}
 
-AEM Forms bevat voorbeeld-XML-bestanden die ervoor zorgen dat de Generate PDF-service Kladblok gebruikt om bestanden met de bestandsnaamextensie .txt te verwerken. Deze code is opgenomen in deze sectie. Daarnaast moet u de andere wijzigingen aanbrengen die in deze sectie worden beschreven.
+AEM Forms bevatten voorbeeld-XML-bestanden die ervoor zorgen dat de dienst PDF genereren Kladblok gebruikt om bestanden met de bestandsnaamextensie .txt te verwerken. Deze code is opgenomen in deze sectie. Daarnaast moet u de andere wijzigingen aanbrengen die in deze sectie worden beschreven.
 
 #### XML-bestand van extra dialoogvenster {#additional-dialog-xml-file}
 
