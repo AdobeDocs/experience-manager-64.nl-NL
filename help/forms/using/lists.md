@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 7bdf1f06-c298-4695-bad1-e402cf472086
 translation-type: tm+mt
-source-git-commit: 1c79deea23ad9c5ba1c4e2471f36a40f5dbafea9
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '6805'
+ht-degree: 0%
 
 ---
 
@@ -63,7 +66,7 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    **Afbeelding:** *Werkbalk*
 
-   * **Koppeling**: Hypertekstkoppeling invoegen in de tekst. Tik op **[!UICONTROL Koppeling]**, geef de koppeling op in het veld **[!UICONTROL URL]** , verwijder de standaardobjectnaam uit het veld **[!UICONTROL Alt-tekst]** en tik op ![Opslaan](assets/save_icon.svg).
+   * **Koppeling**: Hypertekstkoppeling invoegen in de tekst. Tik **[!UICONTROL Link]**, geef de koppeling op in het **[!UICONTROL URL]** veld, verwijder de standaardobjectnaam uit het **[!UICONTROL Alt Text]** veld en tik op ![Opslaan](assets/save_icon.svg).
    * **Herhalen**: Met Herhalen wordt het verzamelingselement in het gegevenswoordenboek afgedrukt met een scheidingsteken.
    * **Voorwaarde**: Tik om een voorwaarde in te voegen. Voeg op voorwaarde gebaseerde tekst in. Als de voorwaarde waar is, dan is de tekst zichtbaar in brief, anders niet.
    * **Beschrijving** toevoegen: Voeg een aantekening aan een stuk van tekst toe. Dit zijn metagegevens die zichtbaar zijn voor de auteur, maar geen deel van de gemaakte brief.
@@ -72,19 +75,19 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
 
    ![Type werkbalk selecteren](assets/toolbarselection.png)
 
-   **Afbeelding:** Type werkbalk *selecteren: Alinea, Uitlijning of Lijst*
+   **Afbeelding:** *Selecteer een type werkbalk: Alinea, Uitlijning of Lijst*
 
    ![Alinea, werkbalk](assets/fonteditingtoolbar.png)
 
-   **Afbeelding:** De werkbalk *Alinea*
+   **Afbeelding:** *Alinea, werkbalk*
 
    ![Uitlijning, werkbalk](assets/paragrapheditingtoolbar.png)
 
-   **Afbeelding:** Werkbalk *Uitlijning*
+   **Afbeelding:** *Uitlijning, werkbalk*
 
    ![Aanbiedingswerkbalk](assets/bulleteditingtoolbar.png)
 
-   **Afbeelding:** Werkbalk *Aanbieding*
+   **Afbeelding:** *Aanbiedingswerkbalk*
 
 1. Als u een of meer alinea&#39;s tekst die in een andere toepassing voorkomen, zoals MS Word- of HTML-pagina&#39;s, wilt hergebruiken, kopieert en plakt u de tekst in de teksteditor. De opmaak van de gekopieerde tekst blijft behouden in de teksteditor.
 
@@ -127,11 +130,11 @@ De oplossing van het Beheer van de Correspondentie steunt twee soorten aan dynam
    * Voeg een plaatsaanduidingselement toe aan de tekst. Tik in het deelvenster Gegevenselementen op Nieuw maken, voer de details voor het nieuwe gegevenselement in en tik op Maken om het nieuwe element aan de lijst toe te voegen. De nieuwe plaatsaanduiding kan op dezelfde manier in de tekst worden ingevoegd als het gegevenswoordenboekelement. Als u een tijdelijke aanduiding wilt bewerken, selecteert u een tijdelijke aanduiding en tikt u op Bewerken.
    ![Plaatsaanduidingselementen](assets/placeholder_elements_in_xmldata.png)
 
-   **Afbeelding:** Elementen voor *plaatsaanduidingen zoals opgegeven in het bestand met voorbeeldgegevens van een gegevenswoordenboek*
+   **Afbeelding:** *Plaatsaanduidingselementen zoals opgegeven in het bestand met voorbeeldgegevens van een gegevenswoordenboek*
 
    ![Plaatsaanduidingselementen in letter](assets/placeholder_elements_in_text.png)
 
-   **Afbeelding:** Waarden van *plaatsaanduidingselementen in de CCR-weergave die zijn gevuld met de variabelen van het gegevenswoordenboek, zoals opgegeven in het bestand met voorbeeldgegevens*
+   **Afbeelding:** *Plaatsaanduidingselementwaarden in de CCR-weergave die zijn gevuld met de gegevenswoordenboekvariabelen zoals opgegeven in het bestand met voorbeeldgegevens*
 
 1. U kunt inline voorwaarden en herhalingen gebruiken om uw brief in hoge mate contextueel en goed gestructureerd te maken. Zie [Inline-voorwaarden en Herhaling in letters](/help/forms/using/cm-inline-condition.md)voor meer informatie over inline-voorwaarde en herhaling.
 1. Tik op **Opslaan**.
@@ -153,7 +156,7 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstelement zo
 
    Als u op de knop Zoeken blijft drukken, gaat de zoekopdracht verder op de pagina. Nadat de laatste instantie van de tekst is gevonden, geeft het bericht **Reached end end of module** aan dat er geen zoekresultaten meer zijn gevonden.
 
-   Als er echter geen zoektekst wordt gevonden in de tekstmodule, wordt het volgende bericht weergegeven: Niet **gevonden**.
+   Als er echter geen zoektekst wordt gevonden in de tekstmodule, wordt het volgende bericht weergegeven: **Overeenkomst niet gevonden**.
 
 1. Als u nogmaals op Zoeken drukt, gaat de zoekopdracht verder boven aan de pagina.
 
@@ -334,13 +337,13 @@ Met de Condition-editor kunt u een standaardvoorwaarde opgeven. Als de waarde va
 
 ## Lay-outfragmenten {#layoutfragments}
 
-Een lay-outfragment is gebaseerd op XDPs die in Ontwerper worden gecreeerd. Als u lay-outfragmenten wilt maken, moet u de XDP&#39;s maken en deze [uploaden naar AEM-formulieren](/help/forms/using/import-export-forms-templates.md).
+Een lay-outfragment is gebaseerd op XDPs die in Ontwerper worden gecreeerd. Voor het maken van lay-outfragmenten moet u de XDP&#39;s maken en [uploaden naar AEM Forms](/help/forms/using/import-export-forms-templates.md).
 
 Een of meer lay-outfragmenten kunnen onderdelen van een letter vormen en de grafische lay-out van die onderdelen definiëren. Een indelingsfragment kan typische formuliervelden bevatten, zoals Adres en Referentienummer, en lege subformulieren die doelgebieden aangeven. Bovendien kunt u met layoutfragmenten tabellen maken en deze in letters invoegen.
 
 Doorgaans worden layout-patronen die u opnieuw kunt gebruiken, gezocht in Letters en worden er lay-outfragmenten voor gemaakt. Bijvoorbeeld de aanhef, het adres en het onderwerpgedeelte van de letter, die in dezelfde volgorde staat als meerdere letters. Een ander voorbeeld kan een tabel zijn met een vergelijkbaar aantal rijen en kolommen die in meerdere letters worden gebruikt.
 
-U kunt een lay-outfragment maken op basis van een bestaande XDP. Een lay-outfragment kan bestaan uit velden en doelgebieden of uit een of meer tabellen. De tabellen in een layout kunnen statisch of dynamisch zijn. Er wordt een XDP gemaakt in Designer en [geüpload naar AEM-formulieren](/help/forms/using/import-export-forms-templates.md). Een XDP kan de structuur of van een lay-outfragment of van een brief vormen. Meer informatie over [lay-outontwerp](/help/forms/using/layout-design-details.md).
+U kunt een lay-outfragment maken op basis van een bestaande XDP. Een lay-outfragment kan bestaan uit velden en doelgebieden of uit een of meer tabellen. De tabellen in een layout kunnen statisch of dynamisch zijn. Er wordt een XDP gemaakt in Designer en [geüpload naar AEM Forms](/help/forms/using/import-export-forms-templates.md). Een XDP kan de structuur of van een lay-outfragment of van een brief vormen. Meer informatie over [lay-outontwerp](/help/forms/using/layout-design-details.md).
 
 Met fragmenten die zijn gebonden aan doelgebieden, kan de letter worden gewijzigd op het moment van ontwerpen. U kunt een lay-outfragment met verschillende afmetingen maken en het juiste fragment kan aan het doelgebied worden gebonden. Met layoutfragmenten kunt u ook enkele tabeleigenschappen aanpassen:
 
@@ -357,7 +360,7 @@ Houd rekening met de volgende punten bij het ontwerpen van tabellen:
 1. Tabellen kunnen worden aangepast op het moment dat u het fragment maakt. De optie Aanpassen is echter alleen ingeschakeld wanneer het bovenliggende subformulier van de tabel wordt weergegeven.
 1. Voor dynamische tabellen gebruiken alle velden, herhaalbare rijen en tabellen &#39;use name binding&#39; voor gegevens die correct worden samengevoegd.
 1. Voor dynamische tabellen maken alle herhalende DDE&#39;s die aan de tabelvelden zijn gebonden, deel uit van dezelfde hiërarchie. Voor niet-herhalende DDE&#39;s bestaat een dergelijke beperking niet.
-1. Op het moment van het samenvoegen van lay-outfragment in bovenliggende doeltabellen wordt de grootte aangepast aan de beschikbare ruimte, maar de grootte wordt alleen aangepast wanneer het layoutfragment geen doelgebied of veld bevat dat zich direct binnen het bovenste subformulier bevindt. Doelgebied en velden binnen tabel zijn toegestaan.
+1. Op het moment van het samenvoegen van lay-outfragment in bovenliggende doeltabellen wordt de grootte aangepast aan de beschikbare ruimte, maar de grootte wordt alleen aangepast wanneer het layoutfragment geen doelgebied of veld bevat dat zich direct binnen het bovenste subformulier bevindt. Target-gebied en velden binnen tabel zijn toegestaan.
 1. U kunt plaatsaanduidingstabellen maken. Tabellen voor plaatsaanduidingen hebben slechts één lege cel.
 
 * Voor plaatsaanduidingstabellen kunt u de volgende eigenschappen aanpassen op het moment dat het fragment wordt gemaakt.
@@ -399,15 +402,15 @@ Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het g
 
    * **Koptekst**: tekst die moet worden weergegeven voor de koptekst
    * **Voettekst**: tekst die moet worden weergegeven voor de voettekst
-   * **Type**: type van extra kolom. Veld of doelgebied. Type is ingeschakeld voor statische plaatsaanduidingstabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dat geval is het type van de extra cellen in de uitgebreide kolom gelijk aan het type van de laatste kolom in die rij; en het type cel in een extra rij is hetzelfde als het type van de laatste cel in die kolom.
+   * **Type**: type van extra kolom. Veld of Target-gebied. Type is ingeschakeld voor statische plaatsaanduidingstabellen. Het type kan op kolomniveau en niet op celniveau worden bepaald. Alle cellen in een uitgebreide kolom zouden van het zelfde type zijn. Voor een dynamische tabel zijn alle kolommen van het veldtype. Voor tabellen zonder plaatsaanduiding kunt u het type van extra kolommen niet definiëren. In dat geval is het type van de extra cellen in de uitgebreide kolom gelijk aan het type van de laatste kolom in die rij; en het type cel in een extra rij is hetzelfde als het type van de laatste cel in die kolom.
    * **Breedteverhouding:** verhouding van de tabelkolombreedten.
-   Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten: statische en dynamische tabellen in een letter](#main-pars-header-28)gebruiken.
+   Zie [Voorbeeld met voorbeeldbestanden voor een gedetailleerd voorbeeld van het gebruik van statische en dynamische tabellen in lay-outfragmenten: statische en dynamische tabellen in een letter](create-letter.md#insert-data-modules-and-layout-fragments-in-a-letter-and-configure-them)gebruiken.
 
 1. Tik op **Opslaan**.
 
 ### Een XDP uploaden naar Correspondentenbeheer {#upload-an-xdp-to-correspondence-management}
 
-Zie Elementen [importeren en exporteren naar AEM-formulieren](/help/forms/using/import-export-forms-templates.md)voor instructies over het uploaden/importeren van een XDP naar Correspondentiebeheer.
+Zie Elementen [importeren en exporteren naar AEM Forms](/help/forms/using/import-export-forms-templates.md)voor instructies over het uploaden/importeren van een XDP naar Correspondence Management.
 
 ### Tips en trucs {#best-practices-tips-and-tricks-2}
 
@@ -499,7 +502,7 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 
    [Bestand ophalen](assets/dynamic.xdp.zip)
 
-1. Upload de XDP&#39;s naar AEM-formulieren.
+1. Upload XDPs aan AEM Forms.
 1. Maak een lay-outfragment op basis van de dynamische XDP. Het lusje van de Lijst van de eigenschappen toont dat de lijst dynamisch is (Configuratie voor gebied). Het aantal rijen (1) en kolommen (3) worden afgeleid van het XDP/Layout-fragment.
 
    De velden van deze indeling worden later gebonden aan de geïmporteerde DD en in de letter wordt het aantal rijen dynamisch gemaakt op basis van het aantal records in het bestand met testgegevens (het XML-gegevensbestand dat is gekoppeld aan de DD).
@@ -511,7 +514,7 @@ In dit voorbeeld wordt getoond hoe u een dynamische en een statische tabel kunt 
 1. Maak een lay-outfragment op basis van de statische XDP. Het lusje van de Lijst van de eigenschappen toont dat de lijst statisch is (Configuratie voor gebied). Het aantal rijen (1) en kolommen (3) worden afgeleid van het XDP/Layout-fragment.
 
    U kunt het aantal kolommen en rijen hier wijzigen. Afhankelijk van wat u in dit scherm kiest, blijft het aantal rijen en kolommen van een statische tabel vast in de letter die met deze indeling wordt gemaakt.
-   [ Een layoutfragmentscherm ![maken](assets/statictableproperties.png)](assets/statictableproperties-1.png)
+   [ ![Een layoutfragmentscherm maken](assets/statictableproperties.png)](assets/statictableproperties-1.png)
    [Klik om te vergroten](assets/statictableproperties-1.png)
 
 1. Maak een letter met beide lay-outfragmenten erin. Wanneer u dynamische XDP in de brief opneemt, plaats de band van zijn gebieden aan de de inzamelingselementen van het Woordenboek van Gegevens.
