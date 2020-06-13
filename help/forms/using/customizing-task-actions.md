@@ -9,14 +9,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ca3f6025-7e17-4173-8267-e24a338ea4a1
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
 
 # Taakhandelingen aanpassen {#customizing-task-actions}
 
-In de werkruimte van AEM-formulieren kunnen gebruikers de taakhandelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de stappen volgen die in de [algemene stappen worden weergegeven voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+In de werkruimte AEM Forms kunnen gebruikers de taakhandelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de stappen volgen die in de [algemene stappen worden weergegeven voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
 
 ## Tekststijl aanpassen {#customizing-text-style}
 
@@ -135,7 +138,7 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
 
 ### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaktaak in de taaklijst van AEM Forms aan te passen. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code van de de werkruimte van de Vormen van [AEM.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de werkruimte AEM Forms aan te passen. Zie [Werkruimtecode maken voor meer informatie over het maken van ontwikkelingspakket.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Kopieer /libs/ws/js/runtime/templates/task.html om het volgende codefragment te `/apps/ws/js/runtime/templates/task.html`vervangen:
 
