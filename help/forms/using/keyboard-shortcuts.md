@@ -1,6 +1,6 @@
 ---
-title: Sneltoetsen voor AEM-formulieren
-seo-title: Sneltoetsen voor AEM-formulieren
+title: Sneltoetsen voor AEM Forms
+seo-title: Sneltoetsen voor AEM Forms
 description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
 seo-description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met de Aangepaste formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
@@ -9,12 +9,15 @@ content-type: reference
 topic-tags: correspondence-management
 discoiquuid: 010e3639-b1a9-40fb-8615-7d18c4784b73
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+workflow-type: tm+mt
+source-wordcount: '1172'
+ht-degree: 10%
 
 ---
 
 
-# Sneltoetsen voor AEM-formulieren {#aem-forms-keyboard-shortcuts}
+# Sneltoetsen voor AEM Forms {#aem-forms-keyboard-shortcuts}
 
 In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
 
@@ -53,7 +56,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 
 
-## Thema-editor {#themeeditor}
+## Thema-editor  {#themeeditor}
 
 | **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
@@ -67,7 +70,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 >
 >Sneltoetsen gemarkeerd met een &#39;&amp;ast&#39;; werken zowel met de Ctrl- als met Command-toets in Mac OS.
 
-## Inhoudsbrowser {#contentbrowser}
+## Inhoudsbrowser  {#contentbrowser}
 
 | **Actie** | **Sneltoets in Windows** | **Sneltoets voor Mac OS** |
 |---|---|---|
@@ -85,7 +88,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 
 Deze sectie bevat een lijst met verschillende toetsenborden en toegankelijkheidssneltoetsen die u kunt gebruiken in de teksteditor van Correspondence Management. U kunt deze sneltoetsen gebruiken als u:
 
-* Een [tekstelement](/help/forms/using/document-fragments.md#main-pars-header-0) maken of bewerken
+* Een [tekstelement](document-fragments.md) maken of bewerken
 * Een tekstmodule bewerken nadat u op het desbetreffende pictogram Bewerken ( ![bewerkingsmodule](assets/edittextmodule.png)) hebt getikt tijdens het [maken van een overeenkomst](/help/forms/using/create-correspondence.md).
 
 ### Tekst selecteren en de cursor verplaatsen {#text-selection-and-moving-the-cursor-around}
