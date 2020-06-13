@@ -1,14 +1,17 @@
 ---
 title: Correspondentie maken
 seo-title: Correspondentie maken
-description: Nadat u een lettertypesjabloon hebt gemaakt, kunt u dit gebruiken om correspondentie te maken in AEM Forms door gegevens, inhoud en bijlagen te beheren.
-seo-description: Nadat u een lettertypesjabloon hebt gemaakt, kunt u dit gebruiken om correspondentie te maken in AEM Forms door gegevens, inhoud en bijlagen te beheren.
+description: Nadat u een brievenmalplaatje hebt gecreeerd, kunt u het gebruiken om correspondentie in AEM Forms tot stand te brengen door gegevens, inhoud, en gehechtheid te beheren.
+seo-description: Nadat u een brievenmalplaatje hebt gecreeerd, kunt u het gebruiken om correspondentie in AEM Forms tot stand te brengen door gegevens, inhoud, en gehechtheid te beheren.
 uuid: 72c06a81-65c8-4ddd-964d-91f0256a8f79
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+workflow-type: tm+mt
+source-wordcount: '3705'
+ht-degree: 0%
 
 ---
 
@@ -48,13 +51,13 @@ Selecteer de brief aan voorproef gebruikend de volgende stappen:
 
 1. De HTML-voorvertoning met de letter (voorvertoning voor mobiele formulieren) wordt standaard geopend en het tabblad Gegevens krijgt de focus.
 
-   Voor meer informatie over mobiele formulieren en de functies die ze ondersteunen, raadpleegt u [Functieverschillen tussen mobiele formulieren en PDF-formulieren](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
+   Voor meer informatie over mobiele formulieren en de functies die ze ondersteunen, raadpleegt u het verschil in [functies tussen mobiele formulieren en PDF forms](https://helpx.adobe.com/livecycle/help/mobile-forms/feature-differentiation-mobile-forms-pdf.html).
 
    Er zijn drie tabbladen: gegevens, inhoud en bijlagen. Als er geen gegevenselementen zijn (plaatsaanduidingsvariabelen en layoutvelden), wordt de letter rechtstreeks geopend met het tabblad Inhoud weergegeven. Het tabblad Bijlagen is alleen beschikbaar wanneer bijlagen aanwezig zijn of bibliotheektoegang is ingeschakeld.
 
    >[!NOTE]
 
-   >Zie [De weergavemodus letter](#changerenditionmode)wijzigen voor meer informatie over het schakelen tussen de weergavemodus HTML of PDF. Voor meer informatie over PDF-ondersteuning in Correspondence Management en AEM raadpleegt u [Stoppen van insteekmodules voor NPAPI-browsers en de impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) hiervan en [PDF-formulieren naar HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html).
+   >Zie [De weergavemodus letter](#changerenditionmode)wijzigen voor meer informatie over het schakelen tussen de weergavemodus HTML of PDF. Zie [Stoppen met insteekmodules voor NPAPI-browsers en de impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) en [PDF forms op HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)voor meer informatie over PDF-ondersteuning in Correspondence Management en AEM.
 
 ### Gegevens invoeren {#enterdata}
 
@@ -82,7 +85,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    Op het tabblad Inhoud of Gegevens kunt u door te tikken op Geselecteerde modules markeren ( ![gemarkeerde modulesincontentcr](assets/highlightselectedmodulesincontentccr.png)) linksboven in de HTML-lettertypevoorvertoning, de functionaliteit uitschakelen of inschakelen om naar de inhoud/gegevensmodule te gaan wanneer de relevante tekst, alinea of gegevensveld is geselecteerd in de lettertypevoorvertoning.
 
-   Zie [Handelingen en informatie in de gebruikersinterface](/help/forms/using/create-letter.md#main-pars-header-9)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
+   Zie [Handelingen en informatie in de gebruikersinterface](create-letter.md)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
 
 1. Gebruik het veld Zoeken om inhoudsmodules te zoeken. Voer een volledige of gedeeltelijke naam of titel van de inhoudsmodule in om deze in de correspondentie te zoeken.
 1. Tik op het weergavepictogram ( ![weergave](assets/display.png)) vóór een lijst, tekst, voorwaarde of doelgebied om deze in de letter weer te geven of te verbergen.
@@ -110,7 +113,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
    >
    >De opmaak van geplakte tekst heeft echter enkele [beperkingen](https://helpx.adobe.com/aem-forms/kb/cm-copy-paste-text-limitations.html).
 
-   Met de Tab-toets kunt u de tekst en de nummers in de letter laten inspringen. Met de Tab-toets kunt u bijvoorbeeld meerdere tekstkolommen in een lijst uitlijnen in een tabelindeling.
+   Met de Tab-toets kunt u de tekst en de nummers in de letter laten inspringen. U kunt bijvoorbeeld de Tab-toets gebruiken om meerdere tekstkolommen in een lijst uit te lijnen in een tabelindeling.
 
    ![tabruimten](assets/tabspaces.png)
 
@@ -164,7 +167,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
    * **Met Tekst** wordt de som van de unieke niet-gevulde plaatsaanduidingsvariabelen en gegevenswoordenboekelementen in de tekstmodule weergegeven.
    * **De voorwaarde** toont de som unieke niet-gevulde voorwaardenvariabelen in de voorwaarde en de variabelen in de resulterende modules.
    * **De lijst** toont de som alle unieke niet-gevulde variabelen in de modules die aan de lijst worden toegewezen.
-   * **In het doelgebied** wordt de som weergegeven van alle unieke niet-gevulde variabelen in de modules die aan het doelgebied zijn toegewezen.
+   * **In het Target-gebied** wordt de som weergegeven van alle unieke, niet-gevulde variabelen in de modules die aan het doelgebied zijn toegewezen.
    Let op het volgende met betrekking tot variabelen met standaardwaarden:
 
    * Een Booleaans variabel veld is standaard *false*. De variabele wordt echter als niet-gevuld beschouwd. Dit houdt in dat het aantal variabelen alle Booleaanse variabele velden met de waarde *false* bevat.
@@ -174,7 +177,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 #### Handelingen en informatie beschikbaar op het tabblad Correspondentie-inhoud maken {#actions-and-info-available-in-the-create-correspondence-content-tab}
 
-**Doelgebied**
+**Target Area**
 
 * Lege regel invoegen: Hiermee voegt u een nieuwe lege regel in.
 * Inline tekst invoegen: Hiermee wordt een nieuwe tekstmodule ingevoegd.
@@ -214,7 +217,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 ### Inhoud in voorvertoning beheren en de brief verzenden {#manage-content-in-preview-and-submit-the-letter}
 
-U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de manier kijkt u het aan en het voorleggen aan de diverse postprocessen bent.
+U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de manier kijkt u het aan en voorlegt aan de diverse postprocessen.
 
 1. Tik op Bewerkbare secties **** markeren om alle bewerkbare inhoud in de letter te markeren.
 
@@ -228,7 +231,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    Door op Geselecteerde modules markeren in inhoud te tikken ( ![gemarkeerde modulesincontentcr](assets/highlightselectedmodulesincontentccr.png)markeren), kunt u functionaliteit uitschakelen of inschakelen om de inhoudsmodule op het tabblad Inhoud te markeren wanneer in de lettervoorvertoning op de desbetreffende tekst, alinea of gegevensveld wordt getikt.
 
-   Zie [Handelingen en informatie in de gebruikersinterface](/help/forms/using/create-letter.md#main-pars-header-9)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
+   Zie [Handelingen en informatie in de gebruikersinterface](create-letter.md)Correspondentie maken voor meer informatie over de acties die beschikbaar zijn voor verschillende modules in de gebruikersinterfaceCorrespondentie maken.
 
 1. Als u een pagina-einde aan de letter wilt toevoegen, tikt u op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagina-einde vóór](assets/pagebreakbeforeafter.png)).
 
@@ -244,7 +247,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    ![saveascript](assets/saveasdraft.png)
 
-   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Gereed**. U kunt deze id later gebruiken om de [conceptbrief](/help/forms/using/submit-letter-topostprocess.md#main-pars-header-1)opnieuw te laden.
+   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Gereed**. U kunt deze id later gebruiken om de [conceptbrief](submit-letter-topostprocess.md#reloaddraft)opnieuw te laden.
 
 1. Tik op Voorvertoning ( ![voorbeeld](assets/preview.png)) om een voorvertoning van de brief weer te geven als een samengevoegde PDF met de exacte indeling en pagina-einden zoals deze worden verzonden.
 
@@ -262,7 +265,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    Nadat u de vereiste wijzigingen hebt aangebracht, kunt u de brief vanuit de HTML5-voorvertoning verzenden of nogmaals op Voorvertoning tikken om de afgevlakte PDF-uitvoer te bekijken.
 
-   Zie [Functieonderscheid tussen HTML5-formulieren en PDF-formulieren](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md)voor informatie over de verschillen tussen HTML5-formulieren en PDF-formulieren.
+   Zie [Functieverschil tussen HTML5-formulieren en PDF forms voor informatie over de verschillen tussen HTML5-formulieren en PDF forms](/help/forms/using/feature-differentiation-html5-forms-pdf-forms.md).
 
 ## Concepten opslaan en briefinstanties verzenden {#savingdrafts}
 
@@ -276,9 +279,9 @@ U kunt twee typen lettervarianten opslaan: Concept-instantie en Submit-instantie
 
 Dergelijke exemplaren kunnen alleen worden opgeslagen wanneer de brief in een publicatieexemplaar wordt weergegeven. Het opslaan op instanties is standaard uitgeschakeld. Voer de volgende stappen uit om het opslaan van lettervarianten in te schakelen.
 
-1. Open in AEM de configuratie van de webconsole van Adobe Experience Manager voor uw server met behulp van de volgende URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
+1. Open in AEM de Configuratie van de Console van het Web van de Adobe Experience Manager voor uw server gebruikend volgende URL: https://&lt;server>:&lt;port>/&lt;contextpath>/system/console/configMgr
 1. Zoek **[!UICONTROL Correspondence Management Configurations]** en klik erop.
-1. Schakel Letter-instanties **[!UICONTROL beheren in de configuratie Publiceren]** in en klik op **[!UICONTROL Opslaan]**.
+1. Controleer de **[!UICONTROL Manage Letter Instances on Publish]** configuratie en klik op **[!UICONTROL Save]**.
 
 Wanneer het opslaan van lettervarianten is ingeschakeld, kunt u kiezen waar u de lettervarianten wilt opslaan. Er zijn twee opties om de lettervarianten op te slaan: Lokaal opslaan of Extern opslaan.
 
@@ -292,15 +295,15 @@ Deze optie is beschikbaar voor mensen die zich zorgen maken over het opslaan van
 
 #### Extern opslaan inschakelen {#enable-remote-save}
 
-1. Open in AEM de configuratie van de webconsole van Adobe Experience Manager voor uw server met behulp van de volgende URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
-1. Zoek naar **[!UICONTROL Correspondence Management Configurations]** en klik erop.
-1. Zoek de configuratie voor **[!UICONTROL extern opslaan]** , controleer deze en klik op **[!UICONTROL Opslaan]**.
+1. Open in AEM de Configuratie van de Console van het Web van de Adobe Experience Manager voor uw server gebruikend volgende URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Zoek naar **[!UICONTROL Correspondence Management Configurations]** en klik het.
+1. Zoek de **[!UICONTROL Remote Save]** configuratie, controleer deze en klik op **[!UICONTROL Save]**.
 
 #### Instellingen van de verwerkingsauteur opgeven {#specify-processing-author-settings}
 
-1. Open in AEM de configuratie van de webconsole van Adobe Experience Manager voor uw server met behulp van de volgende URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
+1. Open in AEM de Configuratie van de Console van het Web van de Adobe Experience Manager voor uw server gebruikend volgende URL: `https://<server>:<port>/<contextpath>/system/console/configMgr`
 
-   ![Webconsole-configuratie van Adobe Experience Manager](assets/2configmanager.png)
+   ![Configuratie webconsole Adobe Experience Manager](assets/2configmanager.png)
 
 1. Zoek op deze pagina de Adobe LiveCycle Client SDK Configuration en vouw deze uit door erop te klikken.
 
@@ -319,7 +322,7 @@ Deze optie is beschikbaar voor mensen die zich zorgen maken over het opslaan van
 
 ## Renderingsmodi van lettervoorvertoning: Voorvertoning van mobiele formulieren en PDF-voorbeeld {#rendition-modes-of-letter-preview-mobile-forms-preview-and-pdf-preview}
 
-In AEM Forms Correspondence Management wordt een letter als HTML weergegeven in de interface Correspondentie maken. Correspondence Management ondersteunt echter nog steeds het terugkeren naar de PDF-voorvertoning in plaats van HTML-voorvertoning. Zie [De weergavemodus letter](#changerenditionmode)wijzigen voor meer informatie over het schakelen tussen de modus HTML en de modus PDF van de voorvertoning.
+AEM Forms Correspondence Management geeft een letter als HTML weer in de interface Correspondentie maken. Correspondence Management ondersteunt echter nog steeds het terugkeren naar de PDF-voorvertoning in plaats van HTML-voorvertoning. Zie [De weergavemodus letter](#changerenditionmode)wijzigen voor meer informatie over het schakelen tussen de modus HTML en de modus PDF van de voorvertoning.
 
 Hieronder vindt u de voordelen en functionaliteit die beschikbaar zijn in HTML- en PDF-voorvertoning.
 
@@ -335,7 +338,7 @@ Hieronder vindt u de voordelen en functionaliteit die beschikbaar zijn in HTML- 
 * **Pagina-einde**: In het PDF-voorbeeld kunt u precies zien hoe de pagina-einden in de letter de uitvoer beïnvloeden.
 * **Eindvoorbeeld**: In het PDF-voorbeeld kunt u de exacte opmaak en weergave van de letter bekijken zoals de letter in de uitvoer wordt weergegeven.
 
-Zie [Scriptondersteuning](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)voor informatie over ondersteuning van scripts in PDF-formulieren.
+Zie [Scriptondersteuning](https://help.adobe.com/en_US/livecycle/11.0/ScriptingSupport/index.html)voor informatie over scriptondersteuning in PDF forms.
 
 Zie [Scriptondersteuning voor HTML5-formulieren](/help/forms/using/scripting-support.md)voor meer informatie over scriptondersteuning in HTML5-formulieren.
 
@@ -348,6 +351,6 @@ Zie [Stoppen met insteekmodules voor NPAPI-browsers en het effect](https://helpx
 Voer de volgende stappen uit om de modus Voorvertoning van de letter te wijzigen:
 
 1. Ga naar `https://[system]:[port]/system/console/configMgr` en meld u indien nodig aan als Admin.
-1. Ga naar **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Type]** vertoning en selecteer **HTML-vertoning** (standaard) of **PDF-uitvoering**.
-1. Click **[!UICONTROL Save]**.
+1. Ga naar **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** en selecteer **HTML-uitvoering** (standaard) of **PDF-uitvoering**.
+1. Klik op **[!UICONTROL Save]**.
 
