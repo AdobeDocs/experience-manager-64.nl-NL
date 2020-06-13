@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 translation-type: tm+mt
-source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+workflow-type: tm+mt
+source-wordcount: '2184'
+ht-degree: 2%
 
 ---
 
@@ -21,7 +24,7 @@ Kennis van CSS en het LESS-framework.
 
 ## Wat kan worden aangepast {#what-can-be-customized}
 
-In het artikel worden openbaar beschikbare CSS-klassen van adaptieve formulieren vermeld. U kunt deze klassen gebruiken om diverse componenten van een adaptief formulier op te maken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten met [themaeditor](https://helpx.adobe.com/experience-manager/6-3/forms/using/themes.html).
+In het artikel worden openbaar beschikbare CSS-klassen van adaptieve formulieren vermeld. U kunt deze klassen gebruiken om diverse componenten van een adaptief formulier op te maken. De opmaak van ontwerpcomponenten, zoals dialoogvensters en statusbalken met waarschuwingen, valt buiten het bereik van dit artikel. Gebruik deze opmaakconstructies alleen om stijlen te maken (met CSS of Minder) wanneer u geen stijl kunt toepassen op componenten met [themaeditor](themes.md).
 
 ## Stijlen in aangepaste formulieren aanpassen {#customizing-styles-in-adaptive-forms}
 
@@ -747,7 +750,7 @@ De klasse guideNavIcon biedt een standaardpictogram voor tabnavigators (zowel li
   </tr> 
   <tr> 
    <td><p><code>tabs-hover-font-color</code></p> </td> 
-   <td><p>Fontkleur voor de tab bij aanwijzen</p> </td> 
+   <td><p>Fontkleur voor tab bij aanwijzen</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>tabs-active-bg-color</code></p> </td> 
