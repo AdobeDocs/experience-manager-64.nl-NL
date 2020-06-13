@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '503'
+ht-degree: 0%
 
 ---
 
@@ -33,11 +36,15 @@ De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van d
 
 [Snel starten (SOAP-modus): Taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-***Opmerking **: U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden is omdat u niet de`taskList`methode kunt aanroepen, die een noodzakelijke methodevraag is om deze taak uit te voeren.*
+>[!NOTE]
+>
+>U kunt niet zoeken naar taken die aan gebruikers zijn toegewezen met de webservice-API. De reden is omdat u niet de `taskList` methode kunt aanroepen, die een noodzakelijke methodevraag is om deze taak uit te voeren.
 
-***Opmerking **: Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
