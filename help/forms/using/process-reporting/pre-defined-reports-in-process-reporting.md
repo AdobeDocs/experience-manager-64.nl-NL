@@ -1,32 +1,35 @@
 ---
 title: Vooraf gedefinieerde rapporten in procesrapportage
 seo-title: Vooraf gedefinieerde rapporten in procesrapportage
-description: Vraag naar AEM Forms voor JEE-procesgegevens om rapporten te maken over langdurige processen, procesduur en workflowvolume
-seo-description: Vraag naar AEM Forms voor JEE-procesgegevens om rapporten te maken over langdurige processen, procesduur en workflowvolume
+description: Vraag naar AEM Forms over JEE-procesgegevens om rapporten te maken over langdurige processen, procesduur en workflowvolume
+seo-description: Vraag naar AEM Forms over JEE-procesgegevens om rapporten te maken over langdurige processen, procesduur en workflowvolume
 uuid: ba3a1809-270e-4c94-ade4-d2f6af86d860
 content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6320c632-c7ec-4e56-9d12-cd27e3e9306e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '723'
+ht-degree: 0%
 
 ---
 
 
 # Vooraf gedefinieerde rapporten in procesrapportage {#pre-defined-reports-in-process-reporting}
 
-AEM Forms Process Reporting biedt de volgende *out-of-the-box* -rapporten:
+AEM Forms verwerken rapporteringsschepen met de volgende *out-of-the-box* rapporten:
 
-* **[Lange processen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Een rapport van alle processen van Vormen AEM die meer dan een gespecificeerde tijd kostten om te voltooien
+* **[Lange processen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Een rapport van alle processen van AEM Forms die meer dan een gespecificeerde tijd namen om te voltooien
 
-* **[Tijdschema](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**proces: Een rapport van een opgegeven AEM Forms-proces op duur
+* **[Tijdschema](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**proces: Een rapport van een opgegeven proces voor AEM Forms per tijdsduur
 
 * **[Volume](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**werkstroom: Een rapport van de lopende en voltooide instanties van gespecificeerd proces door datum
 
 ## Lange processen {#long-running-processes}
 
-Het rapport Lange actieve processen geeft de AEM Forms-processen weer die meer dan een opgegeven tijd in beslag hebben genomen.
+Het rapport Lange lopende processen geeft de processen van AEM Forms weer die meer dan een opgegeven tijd hebben geduurd om te voltooien.
 
 ### Een lang lopend procesrapport uitvoeren {#to-execute-a-long-running-process-report-br}
 
@@ -41,17 +44,17 @@ Het rapport Lange actieve processen geeft de AEM Forms-processen weer die meer d
 
    Parameters:
 
-   * **Duur**(*verplicht*): Geef een duur en tijdseenheid op. Geef alle processen van AEM-formulieren weer die langer dan de opgegeven duur zijn uitgevoerd.
+   * **Duur**(*verplicht*): Geef een duur en tijdseenheid op. Geef alle processen van AEM Forms weer die langer dan de opgegeven duur zijn uitgevoerd.
    * **Gestart na** (*optioneel*): Selecteer een datum. Filter het rapport om procesinstanties weer te geven die na de opgegeven datum zijn gestart.
    * **Gestart voor** (*optioneel*): Selecteer een datum. Filter het rapport om procesinstanties weer te geven die vóór de opgegeven datum zijn gestart.
 
 1. Klik op **Ga** om het rapport uit te voeren.
 
-   Het rapport toont in **Rapport **paneel op het recht van het venster van de Rapportering van het **Proces** .
+   Het rapport wordt weergegeven in het deelvenster **Rapport** rechts van het venster **Process Reporting** .
 
    ![long_running_processes](assets/long_running_processes.png)
 
-   Gebruik de opties in de hogere juiste hoek van het **Rapport **paneel om de volgende verrichtingen op het rapport uit te voeren.
+   Gebruik de opties in de hogere juiste hoek van het paneel van het **Rapport** om de volgende verrichtingen op het rapport uit te voeren.
 
    * **Vernieuwen**: Verfrist het rapport met de recentste gegevens die in de opslag liggen
    * **De legendarische kleur** wijzigen: De kleur van de legenda van het rapport selecteren en wijzigen
@@ -74,7 +77,7 @@ In het rapport Procesduur wordt het aantal exemplaren van een Forms-proces weerg
 
    Parameters:
 
-   * **Proces** selecteren (*verplicht*): Selecteer een AEM-formulierproces.
+   * **Proces** selecteren (*verplicht*): Selecteer een AEM Forms-proces.
 
 1. Klik op **Ga** om het rapport uit te voeren.
 
@@ -90,7 +93,7 @@ In het rapport Procesduur wordt het aantal exemplaren van een Forms-proces weerg
 
 ## Workflow Volume-rapport {#workflow-volume-report}
 
-Het rapport Workflow Volume geeft het aantal exemplaren van een AEM Forms-proces dat momenteel wordt uitgevoerd en voltooid, per kalenderdag weer.
+Het rapport Volume werkstroom geeft het aantal exemplaren van een AEM Forms-proces dat momenteel wordt uitgevoerd en voltooid per kalenderdag weer.
 
 ### Om een rapport van het Volume van het Werkschema uit te voeren {#to-execute-a-workflow-volume-report-br}
 
@@ -105,7 +108,7 @@ Het rapport Workflow Volume geeft het aantal exemplaren van een AEM Forms-proces
 
    Parameters:
 
-   * **Proces** selecteren (*verplicht*): Selecteer een AEM-formulierproces.
+   * **Proces** selecteren (*verplicht*): Selecteer een AEM Forms-proces.
    * **Gestart na** (*optioneel*): Selecteer een datum. Filtert het rapport om procesinstanties te tonen die na de gespecificeerde datum begonnen zijn.
    * **Gestart voor** (*optioneel*): Selecteer een datum. Filtert het rapport om procesinstanties te tonen die vóór de gespecificeerde datum begonnen.
 
