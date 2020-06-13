@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '8118'
+ht-degree: 0%
 
 ---
 
@@ -30,19 +33,21 @@ U kunt deze taken uitvoeren met behulp van de coderingsservice:
 * Ontgrendel het PDF-document zodat andere servicebewerkingen kunnen worden uitgevoerd. Nadat bijvoorbeeld een PDF-document met wachtwoordcodering is ontgrendeld, kunt u er een digitale handtekening op toepassen. (Zie Gecodeerde PDF-documenten [ontgrendelen](encrypting-decrypting-pdf-documents.md#unlocking-encrypted-pdf-documents).)
 * Bepaal het versleutelingstype van een beveiligd PDF-document. (Zie [Coderingstype](encrypting-decrypting-pdf-documents.md#determining-encryption-type)bepalen.)
 
-   ***Opmerking **: Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de[Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.*
+   >[!NOTE]
+   >
+   >Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## PDF-documenten versleutelen met een wachtwoord {#encrypting-pdf-documents-with-a-password}
 
-Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat een andere bewerking in AEM Forms, zoals het digitaal ondertekenen van het PDF-document, op het document kan worden uitgevoerd, moet een met wachtwoord gecodeerd PDF-document worden ontgrendeld.
+Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat een andere AEM Forms-bewerking, zoals het digitaal ondertekenen van het PDF-document, op het document kan worden uitgevoerd, moet een met wachtwoord gecodeerd PDF-document worden ontgrendeld.
 
 >[!NOTE]
 >
->Als u een gecodeerd PDF-document uploadt naar de opslagplaats van AEM Forms, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te versleutelen voordat u het uploadt naar de opslagplaats van AEM Forms. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Als u een versleuteld PDF-document uploadt naar de gegevensopslagruimte van AEM Forms, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de gegevensopslagruimte van AEM Forms. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -64,8 +69,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
 **Een Encryption Client API-object maken**
 
@@ -104,7 +109,7 @@ U kunt het met een wachtwoord gecodeerde PDF-document opslaan als een PDF-bestan
 
 [Een PDF-document versleutelen met de webservice-API](encrypting-decrypting-pdf-documents.md#encrypting-a-pdf-document-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -159,7 +164,7 @@ Codeer een PDF-document met een wachtwoord met behulp van de API voor versleutel
 
 [Snel starten (SOAP-modus): Een PDF-document versleutelen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -178,7 +183,7 @@ Codeer een PDF-document met een wachtwoord met de API voor versleuteling (webser
 1. Maak een Encryption Client API-object.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -223,9 +228,9 @@ Codeer een PDF-document met een wachtwoord met de API voor versleuteling (webser
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## PDF-documenten versleutelen met certificaten {#encrypting-pdf-documents-with-certificates}
 
@@ -240,15 +245,15 @@ Een certificaat met een openbare sleutel bevat de openbare sleutel van een gebru
 
 >[!NOTE]
 >
->Als u een gecodeerd PDF-document uploadt naar de opslagplaats van AEM Forms, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te versleutelen voordat u het uploadt naar de opslagplaats van AEM Forms. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Als u een versleuteld PDF-document uploadt naar de gegevensopslagruimte van AEM Forms, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de gegevensopslagruimte van AEM Forms. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
->Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM-formulieren. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -271,8 +276,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
 
 **Een Encryption Client API-object maken**
 
@@ -306,7 +311,7 @@ U kunt het versleutelde PDF-document opslaan als een PDF-bestand.
 
 [Een PDF-document versleutelen met een certificaat met de webservice-API](encrypting-decrypting-pdf-documents.md#encrypt-a-pdf-document-with-a-certificate-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -372,7 +377,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 
 [Snel starten (SOAP-modus): Een PDF-document versleutelen met een certificaat met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-encrypting-a-pdf-document-with-a-certificate-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -391,7 +396,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 1. Maak een Encryption Client API-object.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -448,9 +453,9 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Versleuteling op basis van een certificaat verwijderen {#removing-certificate-based-encryption}
 
@@ -458,7 +463,7 @@ Op certificaten gebaseerde versleuteling kan uit een PDF-document worden verwijd
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -479,8 +484,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
 
 **Een coderingsserviceclient maken**
 
@@ -496,7 +501,7 @@ Als u op een certificaat gebaseerde versleuteling wilt verwijderen uit een versl
 
 >[!NOTE]
 >
->Een persoonlijke sleutel wordt opgeslagen in het vertrouwde archief van AEM Forms. Wanneer een certificaat daar wordt geplaatst, wordt een aliaswaarde gespecificeerd.
+>Een persoonlijke sleutel wordt opgeslagen in de AEM Forms Trust Store. Wanneer een certificaat daar wordt geplaatst, wordt een aliaswaarde gespecificeerd.
 
 **Het PDF-document opslaan**
 
@@ -508,7 +513,7 @@ Nadat op een certificaat gebaseerde versleuteling is verwijderd uit een versleut
 
 [Op certificaten gebaseerde versleuteling verwijderen met de webservice-API](encrypting-decrypting-pdf-documents.md#remove-certificate-based-encryption-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -551,7 +556,7 @@ Op een certificaat gebaseerde versleuteling verwijderen uit een PDF-document met
 
 [Snel starten (SOAP-modus): Op certificaten gebaseerde codering verwijderen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-removing-certificate-based-encryption-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -570,7 +575,7 @@ Verwijder op een certificaat gebaseerde codering met de API voor codering (webse
 1. Maak een versleutelingsserviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -607,9 +612,9 @@ Verwijder op een certificaat gebaseerde codering met de API voor codering (webse
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Wachtwoordversleuteling verwijderen {#removing-password-encryption}
 
@@ -617,7 +622,7 @@ Op wachtwoorden gebaseerde versleuteling kan uit een PDF-document worden verwijd
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -638,8 +643,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
 
 **Een coderingsserviceclient maken**
 
@@ -659,7 +664,7 @@ Nadat de coderingsservice op wachtwoord gebaseerde codering uit een PDF-document
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -717,7 +722,7 @@ Verwijder op wachtwoord gebaseerde codering met de API voor codering (webservice
 1. Maak een versleutelingsserviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -752,17 +757,17 @@ Verwijder op wachtwoord gebaseerde codering met de API voor codering (webservice
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Versleutelde PDF-documenten ontgrendelen {#unlocking-encrypted-pdf-documents}
 
-Een PDF-document met een wachtwoord of versleuteling met een certificaat moet worden ontgrendeld voordat een andere bewerking in AEM Forms kan worden uitgevoerd. Als u een bewerking probeert uit te voeren op een versleuteld PDF-document, wordt een uitzondering gegenereerd. Nadat u een versleuteld PDF-document hebt ontgrendeld, kunt u er een of meer bewerkingen op uitvoeren. Deze bewerkingen kunnen tot andere services behoren, zoals de Acrobat Reader DC extensions Service.
+Een PDF-document dat met een wachtwoord of certificaat is gecodeerd, moet worden ontgrendeld voordat een andere AEM Forms-bewerking kan worden uitgevoerd. Als u een bewerking probeert uit te voeren op een versleuteld PDF-document, wordt een uitzondering gegenereerd. Nadat u een versleuteld PDF-document hebt ontgrendeld, kunt u er een of meer bewerkingen op uitvoeren. Deze bewerkingen kunnen tot andere services behoren, zoals de Acrobat Reader DC extensions Service.
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -772,7 +777,7 @@ Voer de volgende stappen uit om een versleuteld PDF-document te ontgrendelen:
 1. Maak een versleutelingsserviceclient.
 1. Hiermee wordt het versleutelde PDF-document opgehaald.
 1. Ontgrendel het document.
-1. Voer de bewerking AEM Forms uit.
+1. Voer een AEM Forms-bewerking uit.
 
 **Projectbestanden opnemen**
 
@@ -783,8 +788,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
 
 **Een coderingsserviceclient maken**
 
@@ -800,7 +805,7 @@ Als u een PDF-document met wachtwoordversleuteling wilt ontgrendelen, hebt u zow
 
 Als u een met een certificaat gecodeerd PDF-document wilt ontgrendelen, hebt u zowel een versleuteld PDF-document als de alias van de openbare sleutel nodig die overeenkomt met de persoonlijke sleutel waarmee het PDF-document is versleuteld.
 
-**Een bewerking in AEM Forms uitvoeren**
+**Een AEM Forms-bewerking uitvoeren**
 
 Nadat een versleuteld PDF-document is ontgrendeld, kunt u er een andere servicebewerking op uitvoeren, zoals gebruiksrechten op toepassen. Deze bewerking behoort tot de Acrobat Reader DC Extensions-service.
 
@@ -810,7 +815,7 @@ Nadat een versleuteld PDF-document is ontgrendeld, kunt u er een andere serviceb
 
 [Een versleuteld PDF-document ontgrendelen met de webservice-API](encrypting-decrypting-pdf-documents.md#unlock-an-encrypted-pdf-document-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -846,11 +851,11 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (Java):
 
    * Een `com.adobe.idp.Document` object dat het met een certificaat gecodeerde PDF-document bevat.
    * Een tekenreekswaarde die de aliasnaam opgeeft van de openbare sleutel die overeenkomt met de persoonlijke sleutel die wordt gebruikt om het PDF-document te versleutelen.
-   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere Java-methode voor AEM-formulieren om een bewerking uit te voeren.
+   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere Java-methode voor AEM Forms om een bewerking uit te voeren.
 
-1. Voer de bewerking AEM Forms uit.
+1. Voer een AEM Forms-bewerking uit.
 
-   Voer de bewerking AEM Forms uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op een niet-vergrendeld PDF-document, geeft u het `com.adobe.idp.Document` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
+   Voer een AEM Forms uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op een niet-vergrendeld PDF-document, geeft u het `com.adobe.idp.Document` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
 
 **Zie ook**
 
@@ -860,7 +865,7 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (Java):
 
 [Gebruiksrechten toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -879,7 +884,7 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (webserv
 1. Maak een versleutelingsserviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -909,19 +914,19 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (webserv
 
    * Een `BLOB` object dat het met een certificaat gecodeerde PDF-document bevat.
    * Een tekenreekswaarde die de aliasnaam van de openbare sleutel opgeeft die overeenkomt met de persoonlijke sleutel die wordt gebruikt om het PDF-document te versleutelen.
-   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere methode van AEM Forms om een bewerking uit te voeren.
+   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere methode AEM Forms om een bewerking uit te voeren.
 
-1. Voer de bewerking AEM Forms uit.
+1. Voer een AEM Forms-bewerking uit.
 
-   Voer de bewerking AEM Forms uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op het ontgrendelde PDF-document, geeft u het `BLOB` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
+   Voer een AEM Forms uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op het ontgrendelde PDF-document, geeft u het `BLOB` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
 
 **Zie ook**
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Type codering bepalen {#determining-encryption-type}
 
@@ -936,7 +941,7 @@ Een PDF-document kan worden beveiligd door de volgende coderingstypen:
 
 >[!NOTE]
 >
-> Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Encryptie, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 
@@ -956,8 +961,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
 
 **Een serviceclient maken**
 
@@ -977,7 +982,7 @@ U kunt bepalen welk type versleuteling een PDF-document beveiligt. Als het PDF-d
 
 [Het versleutelingstype bepalen met de webservice-API](encrypting-decrypting-pdf-documents.md#determine-the-encryption-type-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1014,7 +1019,7 @@ Bepaal het type versleuteling waarmee een PDF-document wordt beveiligd met de AP
 
 [Snel starten (SOAP-modus): Coderingstype bepalen met de Java API](/help/forms/developing/encryption-service-java-api-quick.md#quick-start-soap-mode-determining-encryption-type-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1033,7 +1038,7 @@ Bepaal het type versleuteling waarmee een PDF-document wordt beveiligd met de AP
 1. Maak een serviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -1060,6 +1065,6 @@ Bepaal het type versleuteling waarmee een PDF-document wordt beveiligd met de AP
 
 [Overzicht van de stappen](encrypting-decrypting-pdf-documents.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
