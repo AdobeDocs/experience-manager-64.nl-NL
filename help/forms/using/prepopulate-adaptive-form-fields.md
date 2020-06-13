@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2ddb33a5-0d62-46f4-8f8c-0f0807a975cb
 translation-type: tm+mt
-source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+workflow-type: tm+mt
+source-wordcount: '2012'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Een adaptief formulier kan bestaan uit gebonden en niet-gebonden velden. Gebonde
 U kunt zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf invullen. De vooraf ingevulde gegevens bevatten de secties afBoundData en afUnBoundData om zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf in te vullen. De `afBoundData` sectie bevat de vooraf ingevulde gegevens voor gebonden velden en deelvensters. Deze gegevens moeten voldoen aan het bijbehorende formuliermodelschema:
 
 * Gebruik voor adaptieve formulieren met de [XFA-formuliersjabloon](/help/forms/using/prepopulate-adaptive-form-fields.md)de vooraf ingevulde XML-code die compatibel is met het gegevensschema van de XFA-sjabloon.
-* Gebruik voor adaptieve formulieren met [XML-schema](/help/forms/using/prepopulate-adaptive-form-fields.md#main-pars-header-3)de vooraf ingevulde XML-indeling die compatibel is met de XML-schemastructuur.
+* Gebruik voor adaptieve formulieren met [XML-schema](#xml-schema-af)de vooraf ingevulde XML-indeling die compatibel is met de XML-schemastructuur.
 * Gebruik voor adaptieve formulieren met [JSON-schema](/help/forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)de Prefill JSON-compatibel met het JSON-schema.
 * Gebruik voor adaptieve formulieren met FDM-schema de Prefill JSON die compatibel is met het FDM-schema.
 * Voor adaptieve formulieren zonder [formuliermodel](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p)zijn er geen gebonden gegevens. Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
@@ -87,12 +90,12 @@ Prefill-Submit-Data-ContentPackage.zip
 
 [Bestandsvoorbeeld](assets/prefill-submit-data-contentpackage.zip)ophalen met vooraf ingevulde gegevens en verzonden gegevens
 
-## Adaptieve formulieren op basis van een XML-schema {#xml-schema-af}
+## Adaptieve formulieren op basis van een XML-schema  {#xml-schema-af}
 
 De structuur van vooraf ingevulde XML en verzonden XML voor adaptieve formulieren op basis van het XML-schema is als volgt:
 
 * **Vooraf ingevulde XML-structuur**: De vooraf ingevulde XML moet compatibel zijn met het bijbehorende XML-schema. Als u niet-gebonden velden vooraf wilt invullen, plaatst u de vooraf ingevulde XML-structuur in de tag /afData/afBoundData.
-* **Verzonden XML-structuur**: als er geen vooraf ingevulde XML wordt gebruikt, bevat de verzonden XML gegevens voor zowel gebonden als niet-gebonden velden in de `afData` omvattende tag. Als de vooraf ingevulde XML wordt gebruikt, heeft het voorgelegde XML-bestand dezelfde structuur als de vooraf ingevulde XML. Als de vooraf ingevulde XML begint met de `afData` hoofdtag, heeft de uitvoer-XML dezelfde indeling. Als de vooraf ingevulde XML geen `afData/afBoundData` omslag heeft en in plaats daarvan direct van de markering van de schemawortel zoals begint `employeeData`, begint voorgelegde XML ook met de `employeeData` markering.
+* **Verzonden XML-structuur**: als er geen vooraf ingevulde XML wordt gebruikt, bevat de verzonden XML gegevens voor zowel gebonden als niet-gebonden velden in de `afData` omvattende tag. Als de vooraf ingevulde XML wordt gebruikt, heeft het voorgelegde XML-bestand dezelfde structuur als de vooraf ingevulde XML. Als de vooraf ingevulde XML begint met de `afData` hoofdtag, heeft de uitvoer-XML dezelfde indeling. Als de vooraf ingevulde XML geen `afData/afBoundData` omslag heeft en in plaats daarvan direct van de markering van de schemawortel begint zoals `employeeData`, begint voorgelegde XML ook met de `employeeData` markering.
 
 ```xml
 <?xml version="1.0" encoding="utf-8" ?> 
@@ -164,7 +167,7 @@ Voor adaptieve formulieren op basis van JSON-schema wordt de structuur van de pr
 }}}}}
 ```
 
-Voor velden die het JSON-schemamodel gebruiken, worden de gegevens voorgevuld in het afBoundData-object, zoals in het voorbeeld JSON hieronder wordt getoond. Deze kan worden gebruikt voor het vooraf invullen van een adaptief formulier met een of meer niet-gebonden tekstvelden. Hieronder ziet u een voorbeeld van gegevens met `afData/afBoundData` omloop:
+Voor velden die het JSON-schemamodel gebruiken, worden de gegevens vooraf ingevuld in het object afBoundData, zoals in het voorbeeld JSON hieronder wordt getoond. Deze kan worden gebruikt voor het vooraf invullen van een adaptief formulier met een of meer niet-gebonden tekstvelden. Hieronder ziet u een voorbeeld van gegevens met `afData/afBoundData` omloop:
 
 ```
 {
@@ -231,15 +234,15 @@ Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie
 >
 >Prefill Service Configuration is van toepassing op adaptieve formulieren, HTML5-formulieren en HTML5-formuliersets.
 
-1. Open **[!UICONTROL de Configuratie]** van de Console van de Ervaring van Adobe Manager Web door URL te gebruiken:\
+1. Openen **[!UICONTROL Adobe Experience Manager Web Console Configuration]** met de URL:\
    https://&lt;server>:&lt;port>/system/console/configMgr
-1. Zoek en open **[!UICONTROL Standaard Prefill de Configuratie]** van de Dienst.
+1. Zoeken en openen **[!UICONTROL Default Prefill Service Configuration]**.
 
    ![prefill_config](assets/prefill_config.png)
 
-1. Voer de gegevenslocatie of een regex (reguliere expressie) in voor de locaties **[!UICONTROL van]** gegevensbestanden. Voorbeelden van geldige locaties voor gegevensbestanden zijn:
+1. Voer de gegevenslocatie of een regex (reguliere expressie) voor de **[!UICONTROL Data files locations]** gegevens in. Voorbeelden van geldige locaties voor gegevensbestanden zijn:
 
-   * file:///C:/Users/public/Document/Prefill/. &amp;ast;
+   * file:///C:/Users/public/Document/Prefill/.&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
    >[!NOTE]
    >
@@ -274,7 +277,7 @@ http://localhost:4502/content/forms/af/xml.html?wcmmode=disabled&dataRef=crx:///
 
 Het opgegeven knooppunt moet een eigenschap hebben die wordt aangeroepen `jcr:data` en de gegevens bevatten.
 
-### Het protocol file:// {#the-file-protocol-nbsp}
+### Het protocol file://  {#the-file-protocol-nbsp}
 
 ```xml
 http://localhost:4502/content/forms/af/someAF.html?wcmmode=disabled&dataRef=file:///C:/Users/form-user/Downloads/somesamplexml.xml
@@ -331,22 +334,22 @@ prefill-page component.zip
 
 [File](assets/prefill-page-component.zip)Sample prefill.jsp ophalen in paginacomponent
 
-## AEM Forms Custom Prefill Service {#aem-forms-custom-prefill-service}
+## AEM Forms, aangepaste Prefill-service {#aem-forms-custom-prefill-service}
 
 U kunt de douane vooraf ingevulde dienst voor de scenario&#39;s gebruiken, waar u constant gegevens van een vooraf bepaalde bron leest. De Prefill-service leest gegevens uit gedefinieerde gegevensbronnen en vult de velden van het adaptieve formulier vooraf in met de inhoud van het Prefill-gegevensbestand. Hiermee kunt u ook vooraf ingevulde gegevens permanent koppelen aan een adaptief formulier.
 
 ### Een vooraf ingevulde service maken en uitvoeren {#create-and-run-a-prefill-service}
 
-De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U maakt de OSGi-bundel, uploadt en installeert deze naar AEM Forms-bundels. Voordat u begint met het maken van de bundel:
+De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U creeert de bundel OSGi, uploadt, en installeert het aan de bundels van AEM Forms. Voordat u begint met het maken van de bundel:
 
-* [De SDK van de AEM Forms Client downloaden](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [Download de AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 * [Het tekstbouwsteenpakket downloaden](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 * Plaats het gegevensbestand (vooraf ingevulde gegevens) in crx-bewaarplaats. U kunt het bestand op elke locatie in de map \contents van de crx-opslagplaats plaatsen.
 
 #### Een vooraf ingevulde service maken {#create-a-prefill-service}
 
-Het bouwsteenpakket (voorbeeldenservicepakket) bevat een voorbeeldimplementatie van de Prefill-service AEM Forms. Open het tekstbouwsteenpakket in een code-editor. Open bijvoorbeeld het bouwsteenproject in Eclipse en bewerk het. Nadat u het bouwsteenpakket in een coderedacteur opent, voer de volgende stappen uit om de dienst tot stand te brengen.
+Het bouwsteenpakket (voorbeeldenservicepakket) bevat een voorbeeldimplementatie van de AEM Forms Prefill-service. Open het tekstbouwsteenpakket in een code-editor. Open bijvoorbeeld het bouwsteenproject in Eclipse en bewerk het. Nadat u het bouwsteenpakket in een coderedacteur opent, voer de volgende stappen uit om de dienst tot stand te brengen.
 
 1. Open het bestand src\main\java\com\adobe\test\Prefill.java voor bewerking.
 1. Stel in de code de waarde in van:
@@ -364,5 +367,5 @@ Als u de Prefill-service wilt starten, uploadt u het JAR-bestand naar de webcons
 
 1. Open het aangepaste formulier in de Forms Editor en open het deelvenster Eigenschappen voor de Formuliercontainer.
 1. Navigeer in de eigenschappenconsole naar **[!UICONTROL AEM Forms container > Basic > Prefill Service]**.
-1. Selecteer de standaardvoorgevulde service en klik op **[!UICONTROL Opslaan]**. De service is gekoppeld aan het formulier.
+1. Selecteer de standaardvoorgevulde service en klik op **[!UICONTROL Save]**. De service is gekoppeld aan het formulier.
 
