@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2772'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,9 @@ U kunt deze taken uitvoeren met de service PDF converteren:
 * Converteer PDF-documenten naar PostScript.
 * PDF-documenten converteren naar afbeeldingsindelingen.
 
-   ***Opmerking **:Zie[Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF converteren.*
+   >[!NOTE]
+   >
+   >Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service PDF converteren.
 
 ## PDF-documenten converteren naar PostScript {#converting-pdf-documents-to-postscript}
 
@@ -55,7 +60,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 Voordat u een servicebewerking PDF converteren via programmacode kunt uitvoeren, moet u een client voor PDF-service converteren maken. Als u de Java API gebruikt, maakt u een `ConvertPdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `ConvertPDFServiceService` object.
 
-Deze sectie gebruikt de functionaliteit van de Webdienst die in Vormen AEM wordt geïntroduceerd. Als u toegang wilt tot nieuwe functionaliteit, moet u een proxyobject maken met het `lc_version` kenmerk. (Zie &quot;Toegang tot nieuwe functionaliteit met behulp van webservices&quot; in [AEM-formulieren aanroepen met behulp van webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+Deze sectie gebruikt de functionaliteit van de Webdienst die in AEM Forms wordt geïntroduceerd. Voor toegang tot nieuwe functionaliteit moet u een proxyobject maken met het `lc_version` kenmerk. (Zie &quot;Toegang tot nieuwe functionaliteit met behulp van webservices&quot; in [AEM Forms aanroepen met behulp van webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 **Verwijzen naar het PDF-document dat moet worden geconverteerd naar een PostScript-bestand**
 
@@ -71,7 +76,7 @@ Op dezelfde manier geldt dat als u de `ExpandToFit` optie selecteert (waarmee de
 
 >[!NOTE]
 >
->Zie de `ToPSOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM-formulieren voor informatie over de runtime-waarden die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Zie de `ToPSOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over de runtime-waarden die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **Het PDF-document converteren naar een PostScript-bestand**
 
@@ -87,7 +92,7 @@ Nadat u het PDF-document naar PostScript hebt geconverteerd, kunt u de uitvoer o
 
 [Een PDF-document naar PS converteren met de webservice-API](converting-pdf-postscript-image-files.md#convert-a-pdf-document-to-ps-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -114,7 +119,7 @@ Converteer een PDF-document naar PostScript met de API (Java) voor PDF-service c
 1. Stel opties voor de uitvoering van de conversie in.
 
    * Maak een `ToPSOptionsSpec` object door de constructor ervan aan te roepen.
-   * Stel runtime-opties in door een geschikte methode aan te roepen die tot het `ToPSOptionsSpec` object behoort. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u de `ToPSOptionsSpec` methode van het object aan en geeft u een `setPsLevel` `PSLevel` opsommingswaarde door die het PostScript-niveau opgeeft. Zie de `ToPSOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM-formulieren voor informatie over alle runtime-waarden die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel runtime-opties in door een geschikte methode aan te roepen die tot het `ToPSOptionsSpec` object behoort. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u de `ToPSOptionsSpec` methode van het object aan en geeft u een `setPsLevel` `PSLevel` opsommingswaarde door die het PostScript-niveau opgeeft. Zie de `ToPSOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over alle runtime-waarden die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 1. Converteer het PDF-document naar een PostScript-bestand.
 
@@ -135,7 +140,7 @@ Converteer een PDF-document naar PostScript met de API (Java) voor PDF-service c
 
 [Snel starten (SOAP-modus): Een PDF-document converteren naar PostScript met de Java API](/help/forms/developing/convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -154,7 +159,7 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (webs
 1. Maak een Convert PDF-client.
 
    * Maak een `ConvertPdfServiceClient` object met de standaardconstructor.
-   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `ConvertPdfServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -196,9 +201,9 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (webs
 
 [Overzicht van de stappen](converting-pdf-postscript-image-files.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## PDF-documenten converteren naar afbeeldingsindelingen {#converting-pdf-documents-to-image-formats}
 
@@ -235,7 +240,7 @@ U moet het PDF-document opvragen om het naar een afbeelding te converteren. U ku
 
 **Uitvoeringsopties instellen**
 
-U moet runtime opties instellen, zoals de afbeeldingsindeling en de resolutiewaarden. Zie de `ToImageOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM-formulieren voor informatie over de runtimewaarden](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U moet runtime opties instellen, zoals de afbeeldingsindeling en de resolutiewaarden. Zie de `ToImageOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over de runtimewaarden](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
 
 **De PDF converteren naar een afbeelding**
 
@@ -249,7 +254,7 @@ De indeling van het afbeeldingsbestand is afhankelijk van de optie `ImageConvert
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -312,7 +317,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
 1. Maak een geconverteerde PDF-client.
 
    * Maak een `ConvertPdfServiceClient` object met de standaardconstructor.
-   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `ConvertPdfServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
@@ -353,6 +358,6 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
