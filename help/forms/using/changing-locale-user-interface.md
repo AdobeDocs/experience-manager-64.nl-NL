@@ -1,8 +1,8 @@
 ---
-title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
-seo-title: De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen
-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
-seo-description: Hoe te om de werkruimte van Vormen AEM te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
+title: De landinstelling van de gebruikersinterface van de werkruimte AEM Forms wijzigen
+seo-title: De landinstelling van de gebruikersinterface van de werkruimte AEM Forms wijzigen
+description: Hoe te om de werkruimte van AEM Forms te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
+seo-description: Hoe te om de werkruimte van AEM Forms te wijzigen om tekst, samengevouwen categorieën, rijen, en processen, en de datumkiezer op de interface te lokaliseren.
 uuid: f8e7d399-98d9-4655-b51f-0346a5713f06
 contentOwner: robhagat
 content-type: reference
@@ -10,26 +10,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
 translation-type: tm+mt
-source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+source-git-commit: 1b6f00462cc0d7b90af033d59e68fbaabe020064
+workflow-type: tm+mt
+source-wordcount: '588'
+ht-degree: 0%
 
 ---
 
 
-# De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen {#changing-the-locale-of-aem-forms-workspace-user-interface}
+# De landinstelling van de gebruikersinterface van de werkruimte AEM Forms wijzigen {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
-De werkruimte van de Vormen van AEM verstrekt uit de doos steun voor het Engels, het Frans, het Duits, en de Japanse talen. Het biedt ook de mogelijkheid om de gebruikersinterface van AEM Forms naar een andere taal te lokaliseren.
+De werkruimte van AEM Forms biedt uit de box ondersteuning voor Engelse, Franse, Duitse en Japanse talen. Het biedt ook mogelijkheden om de gebruikersinterface van de werkruimte van AEM Forms te lokaliseren naar een andere taal.
 
-U kunt als volgt de gebruikersinterface van de AEM Forms-werkruimte lokaliseren naar de taal van uw keuze:
+U kunt als volgt de gebruikersinterface van de werkruimte AEM Forms lokaliseren naar de taal van uw keuze:
 
-* Tekst van de werkruimte van AEM-formulieren lokaliseren.
+* Tekst van de werkruimte AEM Forms lokaliseren.
 * U kunt samengevouwen categorieën, wachtrijen en processen lokaliseren.
 * Datumkiezer lokaliseren
 
-Voordat u de bovenstaande stappen uitvoert, moet u de stappen volgen die worden weergegeven in de [algemene stappen voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+Voordat u de bovenstaande stappen uitvoert, moet u de stappen volgen die in de [algemene stappen voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms worden vermeld.
 
 >[!NOTE]
 >
->Zie [Een nieuw aanmeldingsscherm](/help/forms/using/creating-new-login-screen.md)maken als u de taal van het aanmeldingsscherm van de werkruimte van AEM Forms wilt wijzigen.
+>Zie [Een nieuw aanmeldingsscherm](/help/forms/using/creating-new-login-screen.md)maken als u de taal van het aanmeldingsscherm van de werkruimte AEM Forms wilt wijzigen.
 
 ## Tekst lokaliseren {#localizing-text}
 
@@ -43,13 +46,13 @@ Voer de volgende stappen uit om ondersteuning voor een taal *Nieuw* en de landin
 1. Kopieer het bestand `translation.json`van de locatie `/apps/ws/locales/en-US` naar de locatie `/apps/ws/locales/nw`.
 1. Navigeer naar `/apps/ws/locales/nw` en open `translation.json` voor bewerking. Wijzig de landinstelling in het bestand translatie.json.
 
-   De volgende voorbeelden bevatten het bestand translatie.json voor Engelse en Franse landinstellingen van de werkruimte van AEM Forms.
+   De volgende voorbeelden bevatten het bestand translatie.json voor Engelse en Franse landinstellingen van de werkruimte AEM Forms.
 
    ![translatie_json_in_en](assets/translation_json_in_en.png) ![translatie_json_in_fr](assets/translation_json_in_fr.png)
 
 ## Samengevouwen categorieën, wachtrijen en processen lokaliseren {#localizing-collapsed-categories-queues-and-processes}
 
-In de werkruimte AEM Forms worden afbeeldingen gebruikt om kopteksten van categorieën, rijen en processen weer te geven. U hebt ontwikkelingspakket nodig om deze koppen te lokaliseren. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code van de de werkruimte van de Vormen van [AEM.](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)
+In de werkruimte AEM Forms worden afbeeldingen gebruikt om kopteksten van categorieën, rijen en processen weer te geven. U hebt ontwikkelingspakket nodig om deze koppen te lokaliseren. Zie [Werkruimtecode maken voor meer informatie over het maken van ontwikkelingspakket.](introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 In de volgende stappen wordt aangenomen dat de nieuwe gelokaliseerde afbeeldingsbestanden *Categories_nw.png*, *Queue_nw.png* en *Processes_nw.png* zijn. De aanbevolen breedte van de afbeeldingen is 19 px.
 
@@ -108,7 +111,7 @@ Voer de volgende stappen uit om de afbeeldingen te lokaliseren:
 
 ## Datumkiezer lokaliseren {#localizing-date-picker}
 
-U hebt ontwikkelingspakket nodig om de *datepicker *API te lokaliseren. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code [van de de werkruimte van de Vormen van](/help/forms/using/introduction-customizing-html-workspace.md#main-pars-heading-3)AEM.
+U hebt ontwikkelingspakket nodig om de *datepicker *API te lokaliseren. Voor gedetailleerde informatie over het creëren van ontwikkelingspakket, zie de code [van de](introduction-customizing-html-workspace.md#building-html-workspace-code)Werkruimte van AEM Forms van de Bouwstijl.
 
 1. Download en extraheer het [jQuery UI-pakket](https://jqueryui.com/download/all/), navigeer naar *&lt;extracted jquery UI package>*\jquery-ui-1.10.2.zip\jquery-ui-1.10.2\ui\i18n.
 1. Kopieer het bestand jquery.ui.datepicker-nw.js voor de landinstellingscode nu naar apps/ws/js/libs/jqueryui en breng specifieke wijzigingen voor de landinstelling aan in het bestand.
