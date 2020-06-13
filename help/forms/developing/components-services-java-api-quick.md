@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: db956ad71194885adf6ada6aa499233a07c78f56
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '450'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,15 @@ Java API Quick Start (SOAP) is beschikbaar voor componenten en services.
 
 [Snel starten (SOAP-modus): Componenten verwijderen met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
 
-* ***Opmerking **: U kunt componenten en de diensten programmatically niet manipuleren door de Webdiensten te gebruiken.*
+>[!NOTE]
+>
+>U kunt componenten en de diensten programmatically niet manipuleren door de Webdiensten te gebruiken.
 
-   ***Opmerking **: De snelle die begin in Programmering met AEM- vormen wordt gevestigd zijn gebaseerd op de server van Vormen die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u specifieke paden voor vensters door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen[instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)*
+>[!NOTE]
+>
+>De snelle die begin in Programmering met AEM- vormen wordt gevestigd zijn gebaseerd op de server van Vormen die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u specifieke paden voor vensters door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
