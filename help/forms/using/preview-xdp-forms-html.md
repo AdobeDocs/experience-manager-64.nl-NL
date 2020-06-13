@@ -8,14 +8,17 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+workflow-type: tm+mt
+source-wordcount: '834'
+ht-degree: 14%
 
 ---
 
 
 # HTML5-voorbeeld van een XDP-formulier genereren {#generate-html-preview-of-an-xdp-form}
 
-Tijdens het ontwerpen van een formulier in AEM Forms Designer kunt u niet alleen een voorbeeld bekijken van de PDF-uitvoering van een formulier, maar ook een voorbeeld bekijken van een HTML5-uitvoering. Op het tabblad **Voorbeeld-HTML** kunt u een voorbeeld van een formulier bekijken zoals het in een browser wordt weergegeven.
+Tijdens het ontwerpen van een formulier in AEM Forms Designer kunt u, naast een voorbeeld van de PDF-uitvoering van een formulier, ook een voorbeeld van een HTML5-uitvoering bekijken. Op het tabblad **Voorbeeld-HTML** kunt u een voorbeeld van een formulier bekijken zoals het in een browser wordt weergegeven.
 
 ## HTML-voorbeeld voor XDP-formulieren inschakelen in Designer {#html-preview-of-forms-in-forms-designer}
 
@@ -23,23 +26,23 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 
 * Apache Sling Authentication Service configureren
 * Beveiligde modus uitschakelen
-* Geef details van de AEM Forms-server
+* Geef details van de AEM Forms-server op
 
 ### Apache Sling Authentication Service configureren {#configure-apache-sling-authentication-service}
 
 1. Ga naar https://[*server*]:[*poort*]/systeem/console/configMgr op AEM Forms die op OSGi of
 
-   https://[*server*]:[*port*]/lc/system/console/configMgr op AEM Forms die in JEE wordt uitgevoerd.
+   https://[*server*]:[*poort*]/lc/system/console/configMgr op AEM Forms die in JEE worden uitgevoerd.
 
 1. Zoek en klik op de configuratie van **Apache Sling Authentication Service** om deze te openen in de bewerkingsmodus.
 
-1. Afhankelijk van of u Vormen AEM op OSGi of JEE in werking stelt, voeg het volgende op het gebied van de Vereisten **van de** Authentificatie toe:
+1. Afhankelijk van of u AEM Forms op OSGi of JEE in werking stelt, voeg het volgende op het gebied van de Vereisten **van de** Authentificatie toe:
 
-   * AEM-formulieren op JEE
+   * AEM Forms op JEE
 
       * -/content/xfaforms
       * -/etc/clientlibs
-   * AEM-formulieren op OSGi
+   * AEM Forms over OSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
@@ -47,7 +50,7 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
    >
    >Kopieer en plak de opgegeven waarde niet in het veld Verificatievereisten omdat de speciale tekens in de waarde hierdoor kunnen beschadigd raken. Typ in plaats daarvan de opgegeven waarde in het veld.
 
-1. Geef een gebruikersnaam en wachtwoord op in respectievelijk de velden **[!UICONTROL Anonieme gebruikersnaam]** en **[!UICONTROL Anoniem gebruikerswachtwoord]** . De gespecificeerde geloofsbrieven worden gebruikt om anonieme authentificatie te behandelen en toegang tot anonieme gebruikers toe te staan.
+1. Geef een gebruikersnaam en wachtwoord op in respectievelijk **[!UICONTROL Anonymous User Name]** en **[!UICONTROL Anonymous User Password]** velden. De gespecificeerde geloofsbrieven worden gebruikt om anonieme authentificatie te behandelen en toegang tot anonieme gebruikers toe te staan.
 1. Klik op **Opslaan** om de configuratie op te slaan.
 
 ### Beveiligde modus uitschakelen {#disable-protected-mode}
@@ -57,31 +60,31 @@ De [beveiligde modus](/help/forms/using/get-xdp-pdf-documents-aem.md) is standaa
 1. Meld u als beheerder aan bij de AEM-webconsole.
 
    * URL voor AEM Forms op OSGi is https://[server]:[poort]/systeem/console/configMgr
-   * URL voor AEM Forms on JEE is https://[*server*]:[*port*]/lc/system/console/configMgr
+   * URL voor AEM Forms in JEE is https://[*server*]:[*port*]/lc/system/console/configMgr
 
-1. Open **[!UICONTROL Mobiele Forms Configurations]** voor bewerking.
-1. Schakel de optie **[!UICONTROL Beveiligde modus]** uit en klik op **[!UICONTROL Opslaan]**.
+1. Openen **[!UICONTROL Mobile Forms Configurations]** voor bewerken.
+1. Schakel de **[!UICONTROL Protected Mode]** optie uit en klik op **[!UICONTROL Save]**.
 
-### Geef details van de AEM Forms-server {#provide-details-of-aem-forms-server}
+### Geef details van de AEM Forms-server op {#provide-details-of-aem-forms-server}
 
 1. Ga in Designer naar **Gereedschappen** > **Opties**.
 1. Selecteer in het venster Opties de pagina **Serveropties** , geef de volgende gegevens op en klik op **OK**.
 
-   * **Server-URL**: URL AEM Forms-server.
+   * **Server-URL**: AEM Forms-server-URL.
    * **HTTP-poortnummer**: AEM-serverpoort. De standaardwaarde is 4502.
-   * **** Context HTML-voorvertoning: Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
+   * **Context HTML-voorvertoning:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
 
-      * `/content/xfaforms/profiles/default.html` (AEM-formulieren op OSGi)
-      * `/lc/content/xfaforms/profiles/default.html` (AEM-formulieren in JEE)
-   * **** Context van Forms Manager: Contextpad waarop de interface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
+      * `/content/xfaforms/profiles/default.html` (AEM Forms over OSGi)
+      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms JEE)
+   * **Context van Forms Manager:** Contextpad waarop de interface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
 
-      * `/aem/forms` (AEM-formulieren op OSGi)
-      * `/lc/forms` (AEM-formulieren in JEE)
-   **** Opmerking: *Zorg ervoor dat de AEM Forms-server actief is. The HTML preview connects to the CRX server to* generate *a preview.*
+      * `/aem/forms` (AEM Forms over OSGi)
+      * `/lc/forms` (AEM Forms JEE)
+   **Opmerking:** *Controleer of de AEM Forms-server actief is. The HTML preview connects to the CRX server to* generate *a preview.*
 
-   ![Opties voor AEM Forms Designer ](assets/server_options.png)
+   ![AEM Forms Designer-opties ](assets/server_options.png)
 
-   Opties voor AEM Forms Designer
+   AEM Forms Designer-opties
 
 1. Als u een voorbeeld van een formulier in HTML wilt bekijken, klikt u op het tabblad **Voorbeeld-HTML** .
 
@@ -103,7 +106,7 @@ Als u een formulier test met een bron voor voorbeeldgegevens, weer u zeker dat d
 
 1. Select **File > Form Properties**.
 
-1. Klik op het tabblad **Voorvertoning **en typ in het vak Gegevensbestand het volledige pad naar het bestand met de testgegevens. U kunt de Browse knoop ook gebruiken om aan het dossier te navigeren.
+1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. U kunt de Browse knoop ook gebruiken om aan het dossier te navigeren.
 
 1. Click **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
 
