@@ -1,6 +1,6 @@
 ---
-title: AEM-formulieren aanroepen met behulp van REST-verzoeken
-seo-title: AEM-formulieren aanroepen met behulp van REST-verzoeken
+title: AEM Forms aanroepen met REST-verzoeken
+seo-title: AEM Forms aanroepen met REST-verzoeken
 description: 'null'
 seo-description: 'null'
 uuid: 3a19a296-f3fe-4e50-9143-b68aed37f9ef
@@ -10,12 +10,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+workflow-type: tm+mt
+source-wordcount: '2492'
+ht-degree: 0%
 
 ---
 
 
-# AEM-formulieren aanroepen met behulp van REST-verzoeken {#invoking-aem-forms-using-rest-requests}
+# AEM Forms aanroepen met REST-verzoeken {#invoking-aem-forms-using-rest-requests}
 
 De processen die in Workbench worden gecreeerd kunnen worden gevormd zodat u hen door de verzoeken van de Overdracht van de Staat van de Vertegenwoordiging (REST) kunt aanhalen. REST-aanvragen worden verzonden vanuit HTML-pagina&#39;s. Met andere woorden, u kunt een formulierproces rechtstreeks vanaf een webpagina aanroepen met behulp van een REST-aanvraag. U kunt bijvoorbeeld een nieuw exemplaar van een webpagina openen. Vervolgens kunt u een Forms-proces aanroepen en een gerenderd PDF-document laden met gegevens die in een HTTP POST-aanvraag zijn verzonden.
 
@@ -37,7 +40,7 @@ De verplichte `ServiceName` waarde is de naam van de service Forms die moet word
 
 ## Ondersteunde gegevenstypen {#supported-data-types}
 
-De volgende gegevenstypen worden ondersteund wanneer AEM Forms-services met REST-verzoeken worden aangeroepen:
+De volgende gegevenstypes worden gesteund wanneer het aanhalen van de diensten van AEM Forms gebruikend de verzoeken van REST:
 
 * Primitieve Java-gegevenstypen, zoals tekenreeksen en gehele getallen
 * `com.adobe.idp.Document` gegevenstype
@@ -46,16 +49,20 @@ De volgende gegevenstypen worden ondersteund wanneer AEM Forms-services met REST
 
    Deze gegevenstypen worden doorgaans geaccepteerd als invoerwaarden voor processen die in Workbench zijn gemaakt.
 
-   Als de dienst van Forms met de methode van HTTP POST wordt aangehaald, worden de argumenten overgegaan binnen het HTTP- verzoeklichaam. Als de handtekening van de AEM Forms-service een parameter voor tekenreeksinvoer bevat, kan de aanvraaghoofdtekst de tekstwaarde van de invoerparameter bevatten. Als de handtekening van de service meerdere tekenreeksparameters definieert, kan de aanvraag de HTTP- `application/x-www-form-urlencoded` notatie volgen met de namen van de parameters die als veldnamen van het formulier worden gebruikt.
+   Als de dienst van Forms met de methode van HTTP POST wordt aangehaald, worden de argumenten overgegaan binnen het HTTP- verzoeklichaam. Als de handtekening van de dienst AEM Forms een parameter van de koordinput heeft, kan het verzoeklichaam de tekstwaarde van de inputparameter bevatten. Als de handtekening van de service meerdere tekenreeksparameters definieert, kan de aanvraag de HTTP- `application/x-www-form-urlencoded` notatie volgen met de namen van de parameters die als veldnamen van het formulier worden gebruikt.
 
    Als de dienst van Forms een koordparameter terugkeert, is het resultaat een tekstuele vertegenwoordiging van de outputparameter. Als de dienst veelvoudige koordparameters terugkeert, is het resultaat een document van XML die de outputparameters in het volgende formaat coderen:
-   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`***Opmerking**: De `output-paramater1` waarde vertegenwoordigt de naam van de uitvoerparameter. *
+   ` <result> <output-paramater1>output-parameter-value-as-string</output-paramater1> . . . <output-paramaterN>output-parameter-value-as-string</output-paramaterN> </result>`
+
+   >[!NOTE]
+   >
+   >De `output-paramater1` waarde vertegenwoordigt de naam van de uitvoerparameter.
 
    Als een dienst van Vormen een `com.adobe.idp.Document` parameter vereist, kan de dienst slechts worden aangehaald gebruikend de POST van HTTP methode. Als de service één `com.adobe.idp.Document` parameter vereist, wordt de HTTP-aanvraaginstantie de inhoud van het invoerobject Document.
 
-   Als voor een AEM Forms-service meerdere invoerparameters zijn vereist, moet de HTTP-aanvraaginstantie een MIME-bericht met meerdere delen zijn, zoals gedefinieerd door RFC 1867. (RFC 1867 is een standaard die door webbrowsers wordt gebruikt om bestanden naar websites te uploaden.) Elke invoerparameter moet als afzonderlijk deel van het multipart-bericht worden verzonden en in het `multipart/form-data` formaat worden gecodeerd. De naam van elk onderdeel moet overeenkomen met de naam van de parameter.
+   Als een dienst van AEM Forms vereist veelvoudige inputparameters, moet het HTTP- verzoeklichaam een meerdelig MIME bericht zoals die door RFC 1867 wordt bepaald zijn. (RFC 1867 is een standaard die door webbrowsers wordt gebruikt om bestanden naar websites te uploaden.) Elke invoerparameter moet als afzonderlijk deel van het multipart-bericht worden verzonden en in het `multipart/form-data` formaat worden gecodeerd. De naam van elk onderdeel moet overeenkomen met de naam van de parameter.
 
-   Lijsten en kaarten worden ook gebruikt als invoerwaarden voor in Workbench gemaakte AEM Forms-processen. Dientengevolge, kunt u deze gegevenstypes gebruiken wanneer het gebruiken van een REST verzoek. Java-arrays worden niet ondersteund omdat ze niet worden gebruikt als invoerwaarde voor een AEM Forms-proces.
+   Lijsten en kaarten worden ook gebruikt als inputwaarden aan AEM Forms processen die in Workbench worden gecreeerd. Dientengevolge, kunt u deze gegevenstypes gebruiken wanneer het gebruiken van een REST verzoek. Java-arrays worden niet ondersteund omdat ze niet worden gebruikt als invoerwaarde voor een AEM Forms-proces.
 
    Als een invoerparameter een lijst is, kan een REST-client deze verzenden door de parameter meerdere keren op te geven (één keer voor elk item in de lijst). Als A bijvoorbeeld een lijst met documenten is, moet de invoer een meerdelig bericht zijn dat uit meerdere delen bestaat met de naam A. In dit geval wordt elk onderdeel met de naam A een item in de invoerlijst. Als B een lijst met tekenreeksen is, kan de invoer een `application/x-www-form-urlencoded` bericht zijn dat uit meerdere velden met de naam B bestaat. In dit geval wordt elk formulierveld met de naam B een item in de invoerlijst.
 
@@ -69,7 +76,7 @@ De volgende gegevenstypen worden ondersteund wanneer AEM Forms-services met REST
 
    `attributesWidth=5`
 
-   Dit vertaalt zich in een kaart van drie verslagen: `Color=red`, `Shape=box`, en `Width=5`.
+   Dit vertaalt zich in een kaart van drie verslagen: `Color=red`, `Shape=box`en `Width=5`.
 
    De uitvoerparameters van de lijst- en kaarttypen maken deel uit van het resulterende XML-bericht. De uitvoerlijst wordt in XML vertegenwoordigd als een reeks elementen van XML met één element voor elk punt in de lijst. Elk element krijgt dezelfde naam als de uitvoerlijstparameter. De waarde van elk XML-element bestaat uit twee dingen:
 
@@ -77,14 +84,14 @@ De volgende gegevenstypen worden ondersteund wanneer AEM Forms-services met REST
 * Een URL die wijst naar de inhoud van Document (als de lijst uit `com.adobe.idp.Document` objecten bestaat)
 
    Het volgende voorbeeld is een XML-bericht dat wordt geretourneerd door een service met één uitvoerparameter met de naam *list*. Dit is een lijst met gehele getallen.
-   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Een parameter van de outputkaart wordt vertegenwoordigd in het resulterende bericht van XML als reeks elementen van XML met één element voor elke verslag in de kaart. Elk element krijgt dezelfde naam als de sleutel van het kaartverslag. De waarde van elk element is een tekstrepresentatie van de waarde van de kaartrecord (als de kaart bestaat uit records met een tekenreekswaarde) of een URL die naar de inhoud van het document wijst (als de kaart uit records met de `com.adobe.idp.Document` waarde bestaat). Hieronder ziet u een voorbeeld van een XML-bericht dat wordt geretourneerd door een service met één uitvoerparameter met de naam `map`. Deze parameterwaarde is een kaart die bestaat uit records die letters aan `com.adobe.idp.Document` objecten koppelen.
+   ` <result>   <list>12345</list>   . . .   <list>67890</list>  </result>`Een parameter van de outputkaart wordt vertegenwoordigd in het resulterende bericht van XML als reeks elementen van XML met één element voor elke verslag in de kaart. Elk element krijgt dezelfde naam als de sleutel van de kaartrecord. De waarde van elk element is een tekstrepresentatie van de waarde van de kaartrecord (als de kaart bestaat uit records met een tekenreekswaarde) of een URL die naar de inhoud van het document wijst (als de kaart uit records met de `com.adobe.idp.Document` waarde bestaat). Hieronder ziet u een voorbeeld van een XML-bericht dat wordt geretourneerd door een service met één uitvoerparameter met de naam `map`. Deze parameterwaarde is een kaart die bestaat uit records die letters aan `com.adobe.idp.Document` objecten koppelen.
    ` <result>   http://localhost:8080/DocumentManager/docm123/4567   . . .   <Z>http://localhost:8080/DocumentManager/docm987/6543</Z>  </result>  `
 
 ## Asynchrone aanroepen {#asynchronous-invocations}
 
-Sommige services van AEM Forms, zoals menselijke-centrische langlevende processen, vereisen een lange periode om te voltooien. Deze diensten kunnen asynchroon op een niet-blokkerende manier worden aangehaald. (Zie [Langdurige processen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)aanroepen vanuit menselijk perspectief.)
+Sommige diensten van AEM Forms, zoals mens-centric langlevende processen, vereisen lange tijd om te voltooien. Deze diensten kunnen asynchroon op een niet-blokkerende manier worden aangehaald. (Zie [Langdurige processen](/help/forms/developing/invoking-human-centric-long-lived.md#invoking-human-centric-long-lived-processes)aanroepen vanuit menselijk perspectief.)
 
-Een AEM Forms-service kan asynchroon worden aangeroepen door de aanroepings-URL `services` `async_invoke` te vervangen, zoals in het volgende voorbeeld wordt getoond.
+Een dienst van AEM Forms kan asynchroon worden aangehaald door `services` met `async_invoke` in de aanroeping URL, zoals aangetoond in het volgende voorbeeld te substitueren.
 
 ```as3
  http://localhost:8080/rest/async_invoke/SomeService. SomeOperation?integer_input_variable=123&string_input_variable=abc
@@ -138,7 +145,7 @@ Het `DSCError` element is optioneel en alleen aanwezig als de uitzondering een i
 
 ## Beveiliging en verificatie {#security-and-authentication}
 
-Om REST-aanroepen te voorzien van een beveiligd transport, kan een beheerder van AEM-formulieren het HTTPS-protocol inschakelen op de J2EE-toepassingsserver die als host fungeert voor AEM-formulieren. Deze configuratie is specifiek voor de J2EE toepassingsserver; maakt geen deel uit van de configuratie van de formulierserver.
+Om REST-aanroepen van een beveiligd transport te voorzien, kan een beheerder van AEM-formulieren het HTTPS-protocol inschakelen op de J2EE-toepassingsserver die AEM Forms host. Deze configuratie is specifiek voor de J2EE toepassingsserver; maakt geen deel uit van de configuratie van de formulierserver.
 
 >[!NOTE]
 >
@@ -146,7 +153,7 @@ Om REST-aanroepen te voorzien van een beveiligd transport, kan een beheerder van
 
 ## AEM Forms-services die REST-oproeping ondersteunen {#aem-forms-services-that-support-rest-invocation}
 
-Hoewel u aangeraden processen aan te roepen die u met Workbench hebt gemaakt in tegenstelling tot services die rechtstreeks, zijn er services van AEM Forms die ondersteuning bieden voor het aanroepen van REST. De reden waarom het wordt geadviseerd dat u een proces in tegenstelling tot de dienst direct aanhaalt is omdat het efficiënter is om een proces aan te halen. Overweeg het volgende scenario. Veronderstel dat u een beleid van een cliënt van REST wilt tot stand brengen. Dat wil zeggen dat u wilt dat de REST-client waarden definieert zoals de naam van het beleid, de offline leaseperiode.
+Hoewel wordt geadviseerd dat u processen aanhaalt die gebruikend Workbench in tegenstelling tot de diensten direct worden gecreeerd, zijn er sommige diensten van AEM Forms die de aanroeping van REST steunen. De reden waarom het wordt geadviseerd dat u een proces in tegenstelling tot de dienst direct aanhaalt is omdat het efficiënter is om een proces aan te halen. Overweeg het volgende scenario. Veronderstel dat u een beleid van een cliënt van REST wilt tot stand brengen. Dat wil zeggen dat u wilt dat de REST-client waarden definieert zoals de naam van het beleid, de offline leaseperiode.
 
 Als u een beleid wilt maken, moet u complexe gegevenstypen definiëren, zoals een `PolicyEntry` object. Een `PolicyEntry` object definieert kenmerken, zoals machtigingen die aan het beleid zijn gekoppeld. (Zie Beleid [maken](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
@@ -154,7 +161,7 @@ In plaats van een REST-verzoek te verzenden om een beleid te maken (dat het defi
 
 Op deze manier hoeft u geen REST-oproepverzoek te maken dat complexe gegevenstypen bevat die door de bewerking worden vereist. Het proces bepaalt de complexe gegevenstypes en alles u van de cliënt van REST doet haalt het proces aan en gaat primitieve gegevenstypes over. Voor informatie over het aanhalen van een proces gebruikend REST, zie het [aanhalen van het proces MyApplication/EncryptDocument gebruikend REST](#rest-invocation-examples).
 
-In de volgende lijsten worden de services van AEM Forms beschreven die directe REST-aanroep ondersteunen.
+In de volgende lijsten worden de services van AEM Forms opgegeven die directe Oproepen tot REST ondersteunen.
 
 * Distiller-service
 * Rights Management-service
@@ -166,19 +173,19 @@ In de volgende lijsten worden de services van AEM Forms beschreven die directe R
 
 De volgende voorbeelden van REST-oproepen worden gegeven:
 
-* Booleaanse waarden doorgeven aan een AEM-formulierproces
+* Booleaanse waarden doorgeven aan een AEM Forms-proces
 * Datumwaarden doorgeven aan een AEM Forms-proces
 * Documenten doorgeven aan een AEM Forms-proces
 * Document- en tekstwaarden doorgeven aan een AEM Forms-proces
-* Opsommingswaarden doorgeven aan een AEM Forms-proces
+* Het overgaan van opsommingswaarden tot een proces van AEM Forms
 * Het MyApplication/EncryptDocument-proces aanroepen met REST
 * Het MyApplication/EncryptDocument-proces aanroepen vanuit Acrobat
 
-   In elk voorbeeld worden verschillende gegevenstypen doorgegeven aan een AEM Forms-proces
+   In elk voorbeeld wordt getoond hoe verschillende gegevenstypen worden doorgegeven aan een AEM Forms-proces
 
 **Booleaanse waarden doorgeven aan een proces**
 
-In het volgende HTML-voorbeeld worden twee `Boolean` waarden doorgegeven aan een AEM Forms-proces met de naam `RestTest2`. De aanroepingsmethode heet `invoke` en de versie is 1.0.De methode HTML Post wordt gebruikt.
+In het volgende HTML-voorbeeld worden twee `Boolean` waarden doorgegeven aan een proces AEM Forms met de naam `RestTest2`. De aanroepingsmethode heet `invoke` en de versie is 1.0. De methode HTML Post wordt gebruikt.
 
 ```as3
  <html> 
@@ -217,7 +224,7 @@ In het volgende HTML-voorbeeld wordt een datumwaarde doorgegeven aan een AEM For
 
 **Documenten doorgeven aan een proces**
 
-In het volgende HTML-voorbeeld wordt een AEM Forms-proces aangeroepen `MyApplication/EncryptDocument` waarvoor een PDF-document is vereist. Zie [AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)voor meer informatie over dit proces.
+In het volgende HTML-voorbeeld wordt een AEM Forms-proces aangeroepen `MyApplication/EncryptDocument` waarvoor een PDF-document is vereist. Zie AEM Forms [aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)voor informatie over dit proces.
 
 ```as3
  <html> 
@@ -237,7 +244,7 @@ In het volgende HTML-voorbeeld wordt een AEM Forms-proces aangeroepen `MyApplica
 
 **Document- en tekstwaarden doorgeven aan een proces**
 
-In het volgende HTML-voorbeeld wordt een AEM Forms-proces aangeroepen `RestTest3` waarvoor een document en twee tekstwaarden zijn vereist. De methode HTML Post wordt gebruikt.
+In het volgende HTML-voorbeeld wordt een AEM Forms-proces met de naam `RestTest3` aangeroepen waarvoor een document en twee tekstwaarden zijn vereist. De methode HTML Post wordt gebruikt.
 
 ```as3
  <html> 
@@ -278,11 +285,11 @@ In het volgende HTML-voorbeeld wordt een AEM Forms-proces met de naam `SOAPEchoS
 
 **Het MyApplication/EncryptDocument-proces aanroepen met REST**
 
-Met REST kunt u een kortstondig AEM Forms-proces met de naam *MyApplication/EncryptDocument* aanroepen.
+Met REST kunt u een kortstondig proces voor AEM Forms met de naam *MyApplication/EncryptDocument* aanroepen.
 
 >[!NOTE]
 >
->Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met het codevoorbeeld te volgen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
+>Dit proces is niet gebaseerd op een bestaand proces van AEM Forms. Om samen met het codevoorbeeld te volgen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
 
 Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
 
@@ -306,7 +313,7 @@ Wanneer dit proces wordt aangeroepen, worden de volgende handelingen uitgevoerd:
     </body>
    ```
 
-**Het MyApplication/EncryptDocument-proces aanroepen vanuit Acrobat**{#invoke-process-acrobat}
+**Het MyApplication/EncryptDocument-proces aanroepen vanuit Acrobat** {#invoke-process-acrobat}
 
 U kunt een Forms-proces vanuit Acrobat aanroepen met behulp van een REST-aanvraag. U kunt bijvoorbeeld het proces *MyApplication/EncryptDocument* activeren. Als u een formulierproces vanuit Acrobat wilt aanroepen, plaatst u een verzendknop in een XDP-bestand in Designer. (Zie [Help bij](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.)
 
