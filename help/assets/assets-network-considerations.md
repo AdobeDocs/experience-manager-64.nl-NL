@@ -1,16 +1,19 @@
 ---
 title: Overwegingen voor middelennetwerken
-description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van Middelen AEM.
+description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1015'
+ht-degree: 0%
 
 ---
 
 
 # Elementennetwerkoverwegingen {#assets-network-considerations}
 
-Kennis van uw netwerk is net zo belangrijk als inzicht in Adobe Experience Manager (AEM)-middelen. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
+Kennis van uw netwerk is even belangrijk als het begrip van Adobe Experience Manager (AEM) Middelen. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
 
 Zorg ervoor dat u het volgende in uw netwerkdiagram omvat:
 
@@ -39,7 +42,7 @@ De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan
 
 ## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
 
-![chlimage_1-354](assets/chlimage_1-354.png)
+![chlimage_1-356](assets/chlimage_1-354.png)
 
 Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een chokepoint zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
@@ -49,13 +52,13 @@ Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve net
 
 Het is belangrijk om onbekende factoren op Internet en de verbinding te overwegen VPC omdat de bandbreedte over Internet wegens pieklading of grootschalig leveranciersstroomonderbrekingen kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
 
-Bij de opstraalverbinding van een collectief netwerk aan Internet, kunnen er andere diensten zijn gebruikend de bandbreedte. Het is belangrijk om te begrijpen hoeveel van de bandbreedte voor activa AEM kan worden gewijd of worden geprioriteerd. Bijvoorbeeld, als een verbinding 1Gbps reeds bij 80% gebruik is, kunt u een maximum van 20% van de bandbreedte voor activa slechts toewijzen AEM.
+Bij de opstraalverbinding van een collectief netwerk aan Internet, kunnen er andere diensten zijn gebruikend de bandbreedte. Het is belangrijk om te begrijpen hoeveel van de bandbreedte voor AEM Assets kan worden gewijd of worden geprioriteerd. Bijvoorbeeld, als een verbinding 1Gbps reeds bij 80% gebruik is, kunt u een maximum van 20% van de bandbreedte voor activa slechts toewijzen AEM.
 
 De firewalls en de volmachten van de onderneming kunnen bandbreedte op vele verschillende manieren ook vormen. Dit type van apparaat kan bandbreedte voorrang geven gebruikend kwaliteit van de dienst, bandbreedtebeperkingen per gebruiker, of bitsnelheidsbeperkingen per gastheer. Dit zijn belangrijke keuzepunten die moeten worden onderzocht, omdat deze de gebruikerservaring van bedrijfsmiddelen aanzienlijk kunnen beïnvloeden.
 
 In dit voorbeeld heeft de onderneming een uplink van 10 Gbps. Het moet groot genoeg zijn voor meerdere clients. Bovendien legt de firewall een grens van het gastheertarief van 10 Mbps op. Deze beperking kan verkeer aan één enkele gastheer aan 10 Mbps potentieel vertragen, alhoewel de opstraalverbinding aan Internet bij 10 Gbps is.
 
-Dit is het kleinste clientgeoriënteerde keuzerondje. Nochtans, kunt u voor een verandering evalueren of flits met de groep van netwerkverrichtingen die met deze firewall wordt belast.
+Dit is het kleinste clientgeoriënteerde keuzerondje. Nochtans, kunt u voor een verandering of voor een toegestane lijst met de groep van netwerkverrichtingen evalueren die voor deze firewall verantwoordelijk is.
 
 Van de steekproefdiagrammen, kunt u concluderen dat zes apparaten een conceptueel kanaal 10Mbps delen. Afhankelijk van de omvang van de hefboomwerking van de activa, kan dit ontoereikend zijn om aan gebruikersverwachtingen te voldoen.
 
