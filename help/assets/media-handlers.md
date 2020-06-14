@@ -3,26 +3,29 @@ title: Middelen verwerken met behulp van media-handlers en workflows
 description: Meer informatie over verschillende mediafuncties en hoe u deze kunt gebruiken in workflows om taken uit te voeren op elementen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: a2ab97e4bfb9eca32d343d22d6570dd21885db69
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 3%
 
 ---
 
 
 # Elementen verwerken met behulp van media-afhandelingen en workflows {#processing-assets-using-media-handlers-and-workflows}
 
-Adobe Experience Manager Assets biedt een set standaardworkflows en mediafhandelaars om elementen te verwerken. Een workflow definieert een typische middelenbeheer- en verwerkingstaak en delegeert de specifieke taken aan de mediafunctionarissen, bijvoorbeeld het genereren van miniaturen of het uitnemen van metagegevens.
+Adobe Experience Manager Assets biedt een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een workflow definieert een typische middelenbeheer- en verwerkingstaak en delegeert de specifieke taken aan de mediafunctionarissen, bijvoorbeeld het genereren van miniaturen of het uitnemen van metagegevens.
 
-Er kan een workflow worden gedefinieerd die automatisch wordt uitgevoerd wanneer een element van een bepaald type of een bepaalde indeling naar de server wordt geüpload. De verwerkingsstappen worden gedefinieerd als een reeks AEM Assets-mediafuncties. AEM verstrekt sommige [ingebouwde managers,](#default-media-handlers) en de extra degenen kunnen of [douane worden ontwikkeld](#creating-a-new-media-handler) of worden bepaald door het proces aan een hulpmiddel [van de](#command-line-based-media-handler)bevellijn te delegeren.
+Er kan een workflow worden gedefinieerd die automatisch wordt uitgevoerd wanneer een element van een bepaald type of een bepaalde indeling naar de server wordt geüpload. De verwerkingsstappen worden gedefinieerd als een reeks mediamanagers van AEM Assets. AEM verstrekt sommige [ingebouwde managers,](#default-media-handlers) en de extra degenen kunnen of [douane worden ontwikkeld](#creating-a-new-media-handler) of worden bepaald door het proces aan een hulpmiddel [van de](#command-line-based-media-handler)bevellijn te delegeren.
 
-Mediahandlers zijn services binnen AEM Assets die specifieke handelingen uitvoeren op elementen. Wanneer bijvoorbeeld een MP3-audiobestand naar AEM wordt geüpload, wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Meestal worden media-afhandelingen gebruikt in combinatie met workflows. De meeste gangbare MIME-typen worden ondersteund in AEM. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden/te maken, media-handlers uit te breiden/te maken of media-handlers uit te schakelen/in te schakelen.
+Mediahandlers zijn services binnen AEM Assets die specifieke handelingen op elementen uitvoeren. Wanneer bijvoorbeeld een MP3-audiobestand naar AEM wordt geüpload, wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Meestal worden media-afhandelingen gebruikt in combinatie met workflows. De meeste gangbare MIME-typen worden ondersteund in AEM. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden/te maken, media-handlers uit te breiden/te maken of media-handlers uit te schakelen/in te schakelen.
 
 >[!NOTE]
 >
->Raadpleeg de pagina met door [Middelen ondersteunde indelingen](assets-formats.md) voor een beschrijving van alle indelingen die door AEM Assets worden ondersteund, en van de functies die voor elke indeling worden ondersteund.
+>Raadpleeg de pagina met door [Middelen ondersteunde indelingen](assets-formats.md) voor een beschrijving van alle indelingen die worden ondersteund door AEM Assets en van de functies die voor elke indeling worden ondersteund.
 
 ## Standaardmediahandlers {#default-media-handlers}
 
-De volgende media-handlers zijn beschikbaar in AEM Assets en verwerken de meest gebruikte MIME-typen:
+De volgende media managers zijn beschikbaar binnen AEM Assets en behandelen de gemeenschappelijkste types MIME:
 
 | Naam handler | Servicenaam (in de systeemconsole) | Ondersteunde MIME-typen |
 |---|---|---|
@@ -56,11 +59,11 @@ Het is mogelijk om de actieve media managers te bekijken:
 
 De managers van media zijn de diensten die gewoonlijk in combinatie met werkschema&#39;s worden gebruikt.
 
-AEM beschikt over enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op het tabblad **[!UICONTROL Modellen]** om deze weer te geven: de workflowtitels die beginnen met AEM Assets zijn de assets-specifieke.
+AEM beschikt over enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op het **[!UICONTROL Models]** tabblad om deze weer te geven: de werkstroomtitels die met AEM Assets beginnen zijn de activa - specifieke.
 
 Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden gemaakt om elementen volgens specifieke vereisten te verwerken.
 
-In het volgende voorbeeld ziet u hoe u de workflow voor de synchronisatie **[!UICONTROL van]** AEM-elementen verbetert, zodat subelementen worden gegenereerd voor alle elementen behalve PDF-documenten.
+In het volgende voorbeeld ziet u hoe u de workflow **[!UICONTROL AEM Assets Synchronization]** kunt verbeteren, zodat er subassets worden gegenereerd voor alle assets behalve PDF-documenten.
 
 ### Media Handler uitschakelen/inschakelen {#disabling-enabling-a-media-handler}
 
@@ -69,9 +72,9 @@ De media-handlers kunnen worden uitgeschakeld of ingeschakeld via de Apache Feli
 Een media-handler in- en uitschakelen:
 
 1. Navigeer in uw browser naar `https://<host>:<port>/system/console/components`.
-1. Klik op **[!UICONTROL Uitschakelen]** naast de naam van de media-handler. Bijvoorbeeld: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
+1. Klik **[!UICONTROL Disable]** naast de naam van de media manager. Bijvoorbeeld: `com.day.cq.dam.handler.standard.mp3.Mp3Handler`.
 1. De pagina vernieuwen: naast de mediafunctie wordt een pictogram weergegeven dat aangeeft dat het is uitgeschakeld.
-1. Klik naast de naam van de media-handler op **[!UICONTROL Inschakelen]** om de mediafunctie in te schakelen.
+1. Klik **[!UICONTROL Enable]** naast de naam van de mediafunctie om de mediafunctie in te schakelen.
 
 ### Een nieuwe mediafunctie maken {#creating-a-new-media-handler}
 
@@ -97,8 +100,8 @@ De interface en de klassen omvatten:
 
 * `com.day.cq.dam.api.handler.AssetHandler` interface: Deze interface beschrijft de dienst die steun voor specifieke mime types toevoegt. Wanneer u een nieuw mime-type toevoegt, moet u deze interface implementeren. De interface bevat methoden voor het importeren en exporteren van de specifieke documenten, voor het maken van miniaturen en het uitnemen van metagegevens.
 * `com.day.cq.dam.core.AbstractAssetHandler` klasse: Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit.
-* `com.day.cq.dam.core.AbstractSubAssetHandler` klasse:
-   *  Deze klasse fungeert als basis voor alle andere implementaties van elementenhandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subelementen.
+* `com.day.cq.dam.core.AbstractSubAssetHandler`-klasse:
+   * Deze klasse fungeert als basis voor alle andere implementaties van assethandlers en biedt veelgebruikte functionaliteit plus veelgebruikte functionaliteit voor het extraheren van subassets.
    * De beste manier om een implementatie te beginnen is van een verstrekte abstracte implementatie te erven die de meeste dingen behandelt en redelijk standaardgedrag verstrekt: de klasse com.day.cq.dam.core.AbstractAssetHandler.
    * Deze klasse verstrekt reeds een abstracte de dienstbeschrijver. Dus als u overerft van deze klasse en de gemaven-sling-plugin gebruikt, zorg ervoor dat u de overervingsvlag aan waar plaatst.
 
@@ -130,16 +133,16 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
 1. Maak in Eclipse een `myBundle` Maven-project:
 
-   1. Klik in de menubalk op **[!UICONTROL Bestand > Nieuw > Overige]**.
-   1. Vouw de map Maven uit in het dialoogvenster, selecteer Geweven project en klik op **[!UICONTROL Volgende]**.
-   1. Controleer Create een eenvoudig projectvakje en het vakje van de Plaatsen van de Werkruimte van het Gebruik standaard, dan klik **[!UICONTROL daarna]**.
+   1. Klik in de menubalk op **[!UICONTROL File > New > Other]**.
+   1. Vouw de map Maven uit in het dialoogvenster, selecteer Geweven project en klik op **[!UICONTROL Next]**.
+   1. Controleer Create een eenvoudig projectvakje en het vakje van de Plaatsen van de Werkruimte van het Gebruik standaard, dan klik **[!UICONTROL Next]**.
    1. Definieer het Maven-project:
 
       * Groep-id: com.day.cq5.myhandler
       * Artefact-id: myBundle
       * Naam: Mijn AEM-bundel
       * Omschrijving: Dit is mijn AEM-bundel
-   1. Click **[!UICONTROL Finish]**.
+   1. Klik op **[!UICONTROL Finish]**.
 
 
 1. Stel de Java Compiler in op versie 1.5:
@@ -150,7 +153,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
       * Compatibiliteitsniveau compiler
       * Compatibiliteit van gegenereerde .class-bestanden
       * Broncompatibiliteit
-   1. Click **[!UICONTROL OK]**. Klik in het dialoogvenster op Ja.
+   1. Klik op **[!UICONTROL OK]**. Klik in het dialoogvenster op Ja.
 
 
 1. Vervang de code in het bestand pom.xml door de volgende code:
@@ -400,8 +403,8 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
      * * @return the number of words in the string
      * */ 
     private long wordCount(String text) { 
-     // We need to keep track of the last character, if we have two white spaces in a row we dont want to double count 
-     // The starting of the document is always a whitespace 
+     // We need to keep track of the last character, if we have two whitespace in a row we don't want to double count.
+     // The starting of the document is always a whitespace.
      boolean prevWhiteSpace = true; 
      boolean currentWhiteSpace = true; 
      char c; long numwords = 0; 
@@ -414,7 +417,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
       if (currentWhiteSpace && !prevWhiteSpace) { numwords++; } 
       prevWhiteSpace = currentWhiteSpace; 
      } 
-     // If we do not end with a white space then we need to add one extra word 
+     // If we do not end with a whitespace then we need to add one extra word.
      if (!currentWhiteSpace) { numwords++; } 
      return numwords; 
     } 
@@ -423,7 +426,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
 1. Compileer de klasse Java en maak de bundel:
 
-   1. Klik met de rechtermuisknop op het myBundle-project, selecteer **[!UICONTROL Uitvoeren als]** en **[!UICONTROL Geweven installeren]**.
+   1. Klik met de rechtermuisknop op het myBundle-project en selecteer **[!UICONTROL Run As]** vervolgens **[!UICONTROL Maven Install]**.
    1. De bundel `myBundle-0.0.1-SNAPSHOT.jar` (die de gecompileerde klasse bevat) wordt onder gemaakt `myBundle/target`.
 
 1. Maak in CRX Explorer een nieuw knooppunt onder `/apps/myApp`. Naam = `install`, Type = `nt:folder`.
@@ -434,7 +437,7 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
 Met AEM kunt u alle opdrachtregelprogramma&#39;s binnen een workflow uitvoeren om elementen (zoals ImageMagick) om te zetten en de nieuwe uitvoering aan het element toe te voegen. U hoeft het opdrachtregelprogramma alleen te installeren op de schijf die als host fungeert voor de AEM-server en een processtap toe te voegen en te configureren voor de workflow. Met het aangeroepen proces kunt u filteren op basis van specifieke MIME-typen en meerdere miniaturen maken op basis van de nieuwe uitvoering. `CommandLineProcess`
 
-De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen binnen AEM-elementen:
+De volgende omzettingen kunnen automatisch binnen AEM Assets worden in werking gesteld en worden opgeslagen:
 
 * EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/)
 * FLV-videotranscodering met [Mpeg](https://ffmpeg.org/)
@@ -475,11 +478,11 @@ Gebruik ImageMagick om dit te doen. Installeer ImageMagick op de schijf die als 
 
    Er wordt een gespiegelde afbeelding aan de map toegevoegd.
 
-Voeg vervolgens de processtap voor de opdrachtregel toe aan de workflow **[!UICONTROL DAM Update Asset]** :
+Voeg vervolgens de processtap van de opdrachtregel toe aan de workflow **[!UICONTROL DAM Update Asset]**:
 
-1. Ga naar de **[!UICONTROL Workflowconsole]** .
-1. Bewerk op het tabblad **[!UICONTROL Modellen]** het model **[!UICONTROL DAM Update Asset]** .
-1. Wijzig de instellingen van de renderingstap **[!UICONTROL voor]** Web als volgt:
+1. Ga naar de **[!UICONTROL Workflow]** console.
+1. Bewerk op het **[!UICONTROL Models]** tabblad het **[!UICONTROL DAM Update Asset]** model.
+1. Wijzig de instellingen van de **[!UICONTROL Web enabled rendition]** stap als volgt:
 
    `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
@@ -488,12 +491,12 @@ Voeg vervolgens de processtap voor de opdrachtregel toe aan de workflow **[!UICO
 U kunt de gewijzigde workflow testen door middel van een element aan `/content/dam`te voegen.
 
 1. Haal in het bestandssysteem een TIFF-afbeelding van uw keuze op. Wijzig de naam van het bestand in `myImage.tiff` en kopieer het naar `/content/dam`het bestand, bijvoorbeeld met WebDAV.
-1. Ga bijvoorbeeld naar de **[!UICONTROL CQ5 DAM]** -console `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
+1. Ga bijvoorbeeld naar de **[!UICONTROL CQ5 DAM]** console `http://localhost:4502/libs/wcm/core/content/damadmin.html`.
 1. Open het element `myImage.tiff` en controleer of de gespiegelde afbeelding en de drie miniaturen zijn gemaakt.
 
 #### Vorm de het processtap van CommandLineProcess {#configuring-the-commandlineprocess-process-step}
 
-In deze sectie wordt beschreven hoe u de **[!UICONTROL procesargumenten]** van de `CommandLineProcess`. Scheid de waarden van [!UICONTROL Procesargumenten] met een komma en start geen waarde met een spatie.
+This section describes how to set the **[!UICONTROL Process Arguments]** of the `CommandLineProcess`. Scheid de waarden van het [!UICONTROL Process Arguments] gebruik van een komma en start geen waarde met een spatie.
 
 | Argument-formaat | Beschrijving |
 |---|---|
@@ -507,11 +510,11 @@ Bijvoorbeeld als ImageMagick is geïnstalleerd op de schijf die als host fungeer
 
 Wanneer de workflow vervolgens wordt uitgevoerd, is de stap alleen van toepassing op elementen met een afbeelding/gif of mime:afbeelding/tiff als mime-type, wordt een gespiegelde afbeelding van het origineel gemaakt, omgezet in .jpg en worden drie miniaturen gemaakt met de afmetingen: 140x100, 48x48 en 10x250.
 
-Gebruik de volgende [!UICONTROL procesargumenten] om de drie standaardminiaturen te maken met ImageMagick:
+Gebruik het volgende [!UICONTROL Process Arguments] om de drie standaardduimnagels tot stand te brengen gebruikend ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=319x319 -thumbnail "319x319>" -background transparent -gravity center -extent 319x319 -write png:cq5dam.thumbnail.319.319.png -thumbnail "140x100>" -background transparent -gravity center -extent 140x100 -write cq5dam.thumbnail.140.100.png -thumbnail "48x48>" -background transparent -gravity center -extent 48x48 cq5dam.thumbnail.48.48.png`
 
-Gebruik de volgende [!UICONTROL procesargumenten] om de voor het web ingeschakelde uitvoering te maken met ImageMagick:
+Gebruik het volgende [!UICONTROL Process Arguments] om de Web-Toegelaten vertoning tot stand te brengen gebruikend ImageMagick:
 
 `mime:image/tiff,mime:image/png,mime:image/bmp,mime:image/gif,mime:image/jpeg,cmd:convert ${filename} -define jpeg:size=1280x1280 -thumbnail "1280x1280>" cq5dam.web.1280.1280.jpeg`
 
