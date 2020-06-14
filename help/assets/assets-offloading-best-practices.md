@@ -1,12 +1,12 @@
 ---
 title: Aanbevolen werkwijzen voor het verschuiven van elementen
-description: Aanbevolen gebruiksgevallen en aanbevolen procedures voor het offloaden van workflows voor het opnemen en repliceren van bedrijfsmiddelen in AEM Assets.
-uuid: 7d08fda2-1c59-44ad-bd35-83d199642e01
+description: Aanbevolen gebruiksscenario's en aanbevolen procedures voor het offloaden van asset-opname- en replicatieworkflows in AEM Assets.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: cdb175f4-a7c6-4d9f-994a-5fc8eca51f03
 translation-type: tm+mt
-source-git-commit: c0d2172c8797a187e316e45e3f3bea0c6c7a15eb
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '1818'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +21,11 @@ Het verwerken van grote bestanden en het uitvoeren van workflows in Adobe Experi
 
 Als u deze taken verschuift naar speciale arbeidersinstanties, kunnen de CPU-, geheugen- en IO-overheadkosten worden verminderd. Over het algemeen is het de bedoeling om taken die intensieve CPU-/geheugen-/IO-bronnen verbruiken, over te brengen naar speciale arbeidersinstanties. In de volgende secties vindt u aanbevolen gevallen voor het offloaden van middelen.
 
-## AEM-elementen verschuiven {#aem-assets-offloading}
+## AEM Assets verschuiven {#aem-assets-offloading}
 
-AEM Assets implementeert een native asset-specific workflow-extensie voor offloading. Het bouwt op de generische werkschemauitbreiding voort die het het ontladen kader verstrekt, maar omvat extra activa-specifieke eigenschappen in de implementatie. Het doel van het offloaden van middelen is om de workflow voor DAM Update Asset op efficiënte wijze uit te voeren op een geüpload element. Bij het offloaden van elementen kunt u de innameworkflows beter beheren.
+AEM Assets implementeert een native asset-specific workflowextensie voor offloading. Het bouwt op de generische werkschemauitbreiding voort die het het ontladen kader verstrekt, maar omvat extra activa-specifieke eigenschappen in de implementatie. Het doel van het offloaden van middelen is om de workflow voor DAM Update Asset op efficiënte wijze uit te voeren op een geüpload element. Bij het offloaden van elementen kunt u de innameworkflows beter beheren.
 
-## AEM-elementen onderdelen verschuiven {#aem-assets-offloading-components}
+## AEM Assets onderdelen verschuiven {#aem-assets-offloading-components}
 
 In het volgende diagram worden de belangrijkste componenten in het offloadproces van bedrijfsmiddelen weergegeven:
 
@@ -33,11 +33,11 @@ In het volgende diagram worden de belangrijkste componenten in het offloadproces
 
 ### Workflow voor het offloaden van middelen door DAM-update {#dam-update-asset-offloading-workflow}
 
-De workflow voor het offloaden van middelen uit DAM-update wordt uitgevoerd op de stramienpagina (auteur) waar de gebruiker de elementen uploadt. Deze workflow wordt geactiveerd door een standaardworkflow. In plaats van het geüploade element te verwerken, maakt deze offloadworkflow een nieuwe taak met het onderwerp *com/adobe/granite/workflow/offloading*. De offloading-workflow voegt de naam van de doelworkflow toe: in dit geval de DAM Update Asset-workflow en het pad van het element naar de payload van de taak. Nadat de offloadtaak is gemaakt, wacht de offloadworkflow op de hoofdmap tot de offloadtaak is uitgevoerd.
+De workflow voor het offloaden van middelen uit DAM-update wordt uitgevoerd op de primaire (auteur)server waarop de gebruiker de elementen uploadt. Deze workflow wordt geactiveerd door een standaardworkflow. In plaats van het geüploade element te verwerken, maakt deze offloadworkflow een nieuwe taak met het onderwerp *com/adobe/granite/workflow/offloading*. De offloading-workflow voegt de naam van de doelworkflow toe: in dit geval de DAM Update Asset-workflow en het pad van het element naar de payload van de taak. Nadat de offloadtaak is gemaakt, wacht de offloadworkflow in de eerste instantie totdat de offloadtaak is uitgevoerd.
 
 ### Taakbeheer {#job-manager}
 
-De manager van de baan verdeelt nieuwe banen aan arbeidersinstanties. Wanneer het ontwerpen van het distributiemechanisme, is het belangrijk om onderwerpenablement in aanmerking te nemen. Taken kunnen alleen worden toegewezen aan gevallen waarin het taakonderwerp is ingeschakeld. Schakel het onderwerp *com/adobe/granite/workflow/offloading* op de master uit en schakel het onderwerp in de worker in om ervoor te zorgen dat de taak aan de worker wordt toegewezen.
+De manager van de baan verdeelt nieuwe banen aan arbeidersinstanties. Wanneer het ontwerpen van het distributiemechanisme, is het belangrijk om onderwerpenablement in aanmerking te nemen. Taken kunnen alleen worden toegewezen aan gevallen waarin het taakonderwerp is ingeschakeld. Maak het onderwerp `com/adobe/granite/workflow/offloading` op primair onbruikbaar, en laat het op de worker toe om ervoor te zorgen dat de baan aan de worker wordt toegewezen.
 
 ### AEM-offloading {#aem-offloading}
 
@@ -104,20 +104,23 @@ Adobe raadt u aan om automatisch agentbeheer uit te schakelen omdat dit geen ond
 
 ### Voorwaartse replicatie gebruiken {#using-forward-replication}
 
-Door gebrek, gebruikt het ontladen van vervoer omgekeerde replicatie om de ontladen activa van de worker aan de meester terug te trekken. De omgekeerde replicatieagenten steunen binair-geen replicatie. U zou het ontladen moeten vormen om door:sturen replicatie te gebruiken om de ontladen activa terug van worker aan meester te duwen.
+Door gebrek, gebruikt het ontladen van vervoer omgekeerde replicatie om de ontladen activa van de worker aan primaire terug te trekken. De omgekeerde replicatieagenten steunen binair-geen replicatie. U zou het ontladen moeten vormen om door:sturen replicatie te gebruiken om de ontladen activa terug van worker aan primair te duwen.
 
-1. Als u van de standaardconfiguratie gebruikend omgekeerde replicatie migreert, maak of schrap alle agenten genoemd &quot; `offloading_outbox`&quot; en &quot; `offloading_reverse_*`&quot; op meester en arbeider onbruikbaar, waar &amp;ast; vertegenwoordigt Sling identiteitskaart van de doelinstantie.
-1. Voor elke worker maakt u nieuwe replicatieagent die naar het stramien wijst. De procedure is het zelfde als het creëren van voorwaartse agenten van meester aan arbeider. Zie [Replicatieagents maken voor offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) voor instructies over het instellen van offloading-replicatieagents.
+1. Als u van de standaardconfiguratie gebruikend omgekeerde replicatie migreert, maak of schrap alle agenten genoemd &quot; `offloading_outbox`&quot; en &quot; `offloading_reverse_*`&quot; op primair en arbeider onbruikbaar, waar &amp;ast; vertegenwoordigt Sling identiteitskaart van de doelinstantie.
+1. Voor elke worker maakt u nieuwe replicatieagent die naar de primaire worker verwijst. De procedure is het zelfde als het creëren van voorwaartse agenten van primair aan arbeider. Zie [Replicatieagents maken voor offloading](../sites-deploying/offloading.md#creating-replication-agents-for-offloading) voor instructies over het instellen van offloading-replicatieagents.
 1. Open configuratie voor `OffloadingDefaultTransporter` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter`).
 1. Wijzig de waarde van de eigenschap `default.transport.agent-to-master.prefix` van `offloading_reverse` naar `offloading`.
 
-### Het gebruiken van gedeelde datastore en binair-less replicatie tussen auteur en arbeiders {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
+<!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+-->
+
+### Het gebruiken van gedeelde datastore en binair-less replicatie tussen auteur en arbeiders  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
 
 Het gebruik van binair-minder replicatie wordt geadviseerd om de vervoeroverheadkosten voor activa het ontladen te verminderen. Om te weten hoe te opstelling binair-geen replicatie voor een gedeelde datastore, zie het [Vormen van de Opslag van Knoop en de Opslag van Gegevens in AEM](/help/sites-deploying/data-store-config.md). De procedure is niet verschillend voor Activa die, behalve dat het andere replicatieagenten impliceert. Omdat de binaire-minder replicatie slechts met voorwaartse replicatieagenten werkt, zou u voorwaartse replicatie voor alle het ontladen agenten ook moeten gebruiken.
 
 ### Vervoerspakketten uitschakelen {#turning-off-transport-packages}
 
-Door gebrek, leidt het ontladen tot een inhoudspakket dat de het ontladen baan en baanlading (het originele element) bevat, en vervoert dit enige het ontladen pakket gebruikend één enkel replicatieverzoek. Het maken van deze offloading-pakketten is contraproductief wanneer u binair-geen replicatie gebruikt, omdat binaire bestanden opnieuw in het pakket worden geserialiseerd wanneer u het pakket maakt. Het gebruik van deze vervoerpakketten kan worden uitgezet, wat de het ontladen baan en lading veroorzaakt in veelvoudige replicatieverzoeken, één voor elke ladingsingang worden vervoerd. Deze manier, kan het voordeel van binair-minder replicatie worden gebruikt.
+Door gebrek, leidt het ontladen tot een inhoudspakket dat de het ontladen baan en baanlading (het originele element) bevat, en vervoert dit enige het ontladen pakket gebruikend één enkel replicatieverzoek. Het maken van deze offloading-pakketten is contraproductief wanneer u binair-geen replicatie gebruikt, omdat binaire bestanden bij het maken van het pakket opnieuw met serienummering in het pakket worden gecodeerd. Het gebruik van deze vervoerpakketten kan worden uitgezet, wat de het ontladen baan en lading veroorzaakt in veelvoudige replicatieverzoeken, één voor elke ladingsingang worden vervoerd. Deze manier, kan het voordeel van binair-minder replicatie worden gebruikt.
 
 1. Open de componentconfiguratie van de *component OffloadingDefaultTransporter* op [http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter](http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingDefaultTransporter)
 1. Schakel het *eigenschappenreplicatiepakket (default.transport.contentPackage)* uit.
@@ -139,7 +142,7 @@ Om het vervoer van het werkschemamodel onbruikbaar te maken, wijzig de DAM Updat
 
 ### Het pollinterval optimaliseren {#optimizing-the-polling-interval}
 
-Offloading van werkstroom wordt geïmplementeerd met behulp van een externe workflow op de master, die opiniepeilt voor de voltooiing van de offloaded workflow op de worker. Het standaardpollinginterval voor de externe werkstroomprocessen is vijf seconden. Adobe raadt u aan het pollinginterval van de stap Elementen offloaden te verhogen tot ten minste 15 seconden om de overhead voor offloading op de stramien te verminderen.
+Offloading van werkstroom wordt geïmplementeerd met behulp van een externe workflow op de primaire werkstroom, die opiniepeilt voor de voltooiing van de offloaded workflow op de worker. Het standaardpollinginterval voor de externe werkstroomprocessen is vijf seconden. Adobe raadt u aan het pollinginterval van de stap Middelen die wordt verwijderd, te verhogen tot ten minste 15 seconden om de overhead van de primaire items te verminderen.
 
 1. Open de workflowconsole via [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
