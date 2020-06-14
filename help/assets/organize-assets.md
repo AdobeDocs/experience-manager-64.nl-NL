@@ -3,7 +3,10 @@ title: Uw digitale middelen organiseren
 description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend de Manager van de Ervaring.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+workflow-type: tm+mt
+source-wordcount: '806'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Bij zoeken is geavanceerd filteren op elementen mogelijk en worden de juiste machtigingen volledig gerespecteerd. Metagegevens worden uitgebreid besproken in metagegevens in Digital Asset Management.
 
-AEM-elementen bieden ondersteuning voor verschillende manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een niet-geordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
+AEM Assets ondersteunen meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een niet-geordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
@@ -23,7 +26,7 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 
    * **Ontwikkelingsmappen** - bevat digitale elementen waaraan u momenteel werkt.
    * **Clientmappen** - bevat digitale elementen op basis van clients of projectnamen.
-   * **Hoofdmappen** - bevat originele, brondigitale elementen.
+   * **Primaire mappen** - bevat originele, brondigitale elementen.
    * **Uitvoermappen** - bevat uitvoeringen en kopieën van de originele, brondigitale elementen.
    * **Bestandsgroottemappen** - bevat digitale elementen op basis van kleine, middelgrote of grote bestanden.
    * **Mappen** organiseren - bevat digitale elementen die klaar zijn om live op uw website te publiceren.
@@ -38,7 +41,7 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 
 Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en de AI-algoritmen van Adobe Sensei gebruiken voor het detecteren van elementen.
 
-Adobe Experience Manager Assets gebruikt een zelfstudie algoritme om zeer beschrijvende tags te maken waarmee u het juiste middel met een paar klikken kunt vinden. Slimme tags toepassen maakt gebruik van Adobe Sensei, ons raamwerk voor kunstmatige intelligentie en het leren van machines, dat u kunt opleiden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
+De Middelen van de Adobe Experience Manager gebruiken een zelf-leert algoritme om hoogst beschrijvende markeringen tot stand te brengen die u toestaan om het juiste middel in slechts een paar klikken te vinden. Slimme tags toepassen maakt gebruik van Adobe Sensei, ons raamwerk voor kunstmatige intelligentie en het leren van machines, dat u kunt opleiden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
@@ -68,4 +71,4 @@ Voor meer informatie over verschillende profielen die u kunt maken en beheren om
 * [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s](processing-profiles.md)
 * [Metadataprofielen](metadata-profiles.md)
 * [Videoprofielen](video-profiles.md)
-* [Dynamische afbeeldingsprofielen voor media](image-profiles.md)
+* [Dynamic Media voor afbeeldingsprofielen](image-profiles.md)
