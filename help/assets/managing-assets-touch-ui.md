@@ -1,12 +1,12 @@
 ---
 title: Uw digitale middelen beheren met AEM Assets
-description: Meer informatie over verschillende taken voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets
+description: Meer informatie over de verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets met Touch
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
 workflow-type: tm+mt
-source-wordcount: '9500'
+source-wordcount: '9499'
 ht-degree: 1%
 
 ---
@@ -14,13 +14,13 @@ ht-degree: 1%
 
 # Uw digitale middelen beheren {#managing-assets-with-the-touch-optimized-ui}
 
-Leer meer over verschillende taken voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets.
+Leer meer over de verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets met aanraakbediening.
 
-In dit artikel wordt beschreven hoe u elementen beheert en bewerkt met de voor Adobe Experience Manager (AEM) Assets Touch geoptimaliseerde gebruikersinterface. Voor elementaire kennis van de gebruikersinterface, zie [Basisbehandeling van Aanraakinterface](/help/sites-authoring/basic-handling.md). Zie [Elementen van inhoudsfragmenten](content-fragments-managing.md) beheren voor informatie over het beheren van inhoudsfragmenten.
+In dit artikel wordt beschreven hoe u elementen beheert en bewerkt met de voor Adobe Experience Manager (AEM) geoptimaliseerde gebruikersinterface. Voor elementaire kennis van de gebruikersinterface, zie [Basisbehandeling van Aanraakinterface](/help/sites-authoring/basic-handling.md). Zie [Elementen van inhoudsfragmenten](content-fragments-managing.md) beheren voor informatie over het beheren van inhoudsfragmenten.
 
 ## Mappen maken {#create-folders}
 
-Wanneer u een verzameling elementen indeelt, bijvoorbeeld alle `Nature` afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM-elementen hoeft u elementen niet in mappen te ordenen om beter te werken.
+Wanneer u een verzameling elementen indeelt, bijvoorbeeld alle `Nature` afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. AEM Assets vereisen niet dat u elementen in mappen ordent om beter te werken.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bes
 
 >[!NOTE]
 >
->In Dynamische Media - wijze Scene7, kunt u activa slechts uploaden waarvan dossiergrootte 2 GB of minder is.
+>In Dynamic Media - wijze Scene7, kunt u activa slechts uploaden waarvan dossiergrootte 2 GB of minder is.
 
 U kunt ervoor kiezen elementen te uploaden naar mappen waaraan al dan niet een verwerkingsprofiel is toegewezen.
 
@@ -95,9 +95,9 @@ Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indel
    >
    >Wanneer u **[!UICONTROL Replace]** in het **[!UICONTROL Name Conflict]** dialoogvenster selecteert, wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
    >
-   >Als **[!UICONTROL Asset Insights]** de functie voor het bijhouden van indrukken/klikken met Adobe Analytics is ingeschakeld, maakt deze opnieuw gegenereerde element-id de vastgelegde gegevens voor het element op Adobe Analytics ongeldig.
+   >Als **[!UICONTROL Asset Insights]** is ingeschakeld om afbeeldingen bij te houden/op Adobe Analytics te klikken, maakt deze opnieuw gegenereerde element-id de gegevensopname voor het element op Adobe Analytics ongeldig.
 
-   Als het element dat u uploadt aanwezig is in AEM Assets, wordt in het **[!UICONTROL Duplicates Detected]** dialoogvenster gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom SHA 1 van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van activa niet van belang. Met andere woorden, het dialoogvenster kan zelfs worden weergegeven voor elementen met verschillende namen als de SHA 1-waarden voor hun binaire getallen gelijk zijn.
+   Als het element dat u uploadt bestaat in AEM Assets, wordt in het **[!UICONTROL Duplicates Detected]** dialoogvenster gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom SHA 1 van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van activa niet van belang. Met andere woorden, het dialoogvenster kan zelfs worden weergegeven voor elementen met verschillende namen als de SHA 1-waarden voor hun binaire getallen gelijk zijn.
 
    >[!NOTE]
    >
@@ -105,9 +105,9 @@ Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indel
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
-   Tik **[!UICONTROL Keep]** om het dubbele element in AEM Assets te behouden. Tik **[!UICONTROL Delete]** om het geüploade dubbele element te verwijderen.
+   Tik **[!UICONTROL Keep]** om het gedupliceerde element in AEM Assets te behouden. Tik **[!UICONTROL Delete]** om het geüploade dubbele element te verwijderen.
 
-   Met AEM-elementen kunt u geen elementen uploaden met verboden tekens in de bestandsnaam. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, wordt in AEM Assets een waarschuwingsbericht weergegeven met betrekking tot de aanwezigheid van verboden tekens in de bestandsnaam en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
+   AEM Assets voorkomen dat u elementen met verboden tekens in de bestandsnaam kunt uploaden. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, geven AEM Assets een waarschuwingsbericht weer over de aanwezigheid van verboden tekens in de bestandsnaam en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
    In het **[!UICONTROL Upload Assets]** dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
 
@@ -122,28 +122,28 @@ Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indel
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
-   Als u het uploaden annuleert voordat de bestanden zijn geüpload, wordt het huidige bestand niet meer geüpload en wordt de inhoud vernieuwd. Bestanden die al zijn geüpload, worden echter niet verwijderd.
+   Als u het uploaden annuleert voordat de bestanden zijn geüpload, stoppen AEM Assets met het uploaden van het huidige bestand en wordt de inhoud vernieuwd. Bestanden die al zijn geüpload, worden echter niet verwijderd.
 
 ### Seriële uploads {#serial-uploads}
 
 Het uploaden van talrijke activa in bulk verbruikt significante systeemmiddelen, die de prestaties van uw plaatsing van AEM negatief kunnen beïnvloeden. Potentiële knelpunten kunnen zijn: uw internetverbinding, lees-schrijfbewerkingen op schijf, beperkingen van de webbrowser voor het aantal POST-aanvragen bij gelijktijdige uploaden van middelen. Het uploaden van een lamp kan mislukken of voortijdig beëindigen. Met andere woorden, AEM-elementen kunnen bepaalde bestanden missen terwijl ze een aantal bestanden innemen of kunnen in totaal geen bestanden inslikken.
 
-Om deze situatie te verhelpen, neemt AEM Assets één activa tegelijkertijd (periodieke upload) tijdens een bulkupload verrichting op, in plaats van het tegelijkertijd opnemen van alle activa.
+Om deze situatie te verhelpen, nemen de AEM Assets één activa tegelijkertijd (periodieke upload) tijdens een bulkupload verrichting op, in plaats van het tegelijkertijd opnemen van alle activa.
 
 Seriële uploaden van elementen is standaard ingeschakeld. Als u de functie wilt uitschakelen en tegelijkertijd uploaden wilt toestaan, bedekt u het `fileupload` knooppunt in CRXDe en stelt u de waarde van de `parallelUploads` eigenschap in op `true`.
 
 ### Elementen uploaden met FTP {#uploading-assets-using-ftp}
 
-Met Dynamic Media kunt u via een FTP-server items in batches uploaden. Als u grote bestanden (>1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
+Dynamic Media maken het in batches uploaden van elementen via een FTP-server mogelijk. Als u grote bestanden (>1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
 
 >[!NOTE]
 >
->In Dynamische Media - wijze Scene7, kunt u activa slechts uploaden waarvan dossiergrootte 2 GB of minder is.
+>In Dynamic Media - wijze Scene7, kunt u activa slechts uploaden waarvan dossiergrootte 2 GB of minder is.
 
 >[!NOTE]
 >
->Om activa door middel van FTP in Dynamische Media - Scene7 wijze te uploaden installeer eigenschappak (FP) 18912 op auteur AEM. Neem contact op met de klantenservice van Adobe voor toegang tot FP-18912 en voltooi de installatie van uw FTP-account. Zie [Functiepakket 18912 installeren voor migratie](/help/assets/bulk-ingest-migrate.md)van bulkmiddelen.
-Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
+>Om activa door middel van FTP in Dynamic Media te uploaden - Scene7 wijze installeert eigenschappak (FP) 18912 op auteur AEM. Neem contact op met de klantenservice van Adobe voor toegang tot FP-18912 en voltooi de installatie van uw FTP-account. Zie [Functiepakket 18912 installeren voor migratie](/help/assets/bulk-ingest-migrate.md)van bulkmiddelen.
+Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden bestandsverwerkingsregels gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
 **Elementen uploaden met FTP**
 
@@ -158,12 +158,12 @@ Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen
 
    >[!NOTE]
    >
-   >Wanneer u activa door middel van FTP uploadt, nemen de opties van de uploadbaan u in Dynamische Media Klassiek (Scene7) plaatst precedent over activa verwerkingsparameters die in AEM worden geplaatst.
+   >Wanneer u activa door middel van FTP uploadt, nemen de opties van de uploadbaan u in Dynamic Media Klassiek (Scene7) plaatst precedent over activa verwerkingsparameters die in AEM worden geplaatst.
 
 1. Tik in de rechterbenedenhoek van het **[!UICONTROL Upload Job Options]** dialoogvenster op **[!UICONTROL Save]**.
 1. In the lower-right corner of the **[!UICONTROL Upload]** page, tap **[!UICONTROL Submit Upload]**.
 
-   Tik op de algemene navigatiebalk om de voortgang van het uploaden weer te geven **[!UICONTROL Jobs]**. Op de **[!UICONTROL Jobs]** pagina wordt de voortgang van het uploaden weergegeven. U kunt in AEM blijven werken en aan de pagina van Banen in Dynamische Klassiek van Media op elk ogenblik terugkeren om een lopende baan te herzien.
+   Tik op de algemene navigatiebalk om de voortgang van het uploaden weer te geven **[!UICONTROL Jobs]**. Op de **[!UICONTROL Jobs]** pagina wordt de voortgang van het uploaden weergegeven. U kunt in AEM blijven werken en aan de pagina van Banen in Dynamic Media Klassiek op elk ogenblik terugkeren om een lopende baan te herzien.
 
    Tik **[!UICONTROL Cancel]** naast de **[!UICONTROL Duration]** tijd om een actieve uploadtaak te annuleren.
 
@@ -190,9 +190,9 @@ Als u FTP gebruikt voor het uploaden van elementen, worden de uploadinstellingen
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
-Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het **[!UICONTROL Upload Job Options]** dialoogvenster:
+Wanneer u afbeeldingsbestanden uploadt, waaronder AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het **[!UICONTROL Upload Job Options]** dialoogvenster:
 
-* Witruimte uitsnijden vanaf de rand van afbeeldingen (zie de beschrijving in bovenstaande tabel).
+* Witruimte uitsnijden vanaf de rand van afbeeldingen (zie beschrijving in bovenstaande tabel).
 * Handmatig uitsnijden vanaf de zijkanten van afbeeldingen (zie beschrijving in bovenstaande tabel).
 * Kies een kleurprofiel (zie de beschrijving van de optie in de bovenstaande tabel).
 * Maak een masker op basis van een uitknippad.
@@ -231,7 +231,7 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 
 PSD-bestanden (Photoshop Document) worden meestal gebruikt om afbeeldingssjablonen te maken. Wanneer u een PSD-bestand uploadt, kunt u automatisch een afbeeldingssjabloon maken vanuit het bestand (selecteer de optie Sjabloon maken in het scherm Uploaden).
 
-Met Dynamische media maakt u meerdere afbeeldingen van een PSD-bestand met lagen als u het bestand gebruikt om een sjabloon te maken. er wordt één afbeelding voor elke laag gemaakt.
+Dynamic Media maken meerdere afbeeldingen van een PSD-bestand met lagen als u het bestand gebruikt om een sjabloon te maken. er wordt één afbeelding voor elke laag gemaakt.
 
 Gebruik de **[!UICONTROL Crop Options]** en **[!UICONTROL Color Profile Options]**, zoals hierboven beschreven, met de uploadopties voor Photoshop.
 
@@ -294,7 +294,7 @@ Zie Voorinstellingen voor batchsets [configureren voor het automatisch genereren
 
 ### Gestroomde uploads {#streamed-uploads}
 
-Als u een groot aantal elementen uploadt, neemt de I/O-aanroep naar de AEM-server drastisch toe, waardoor de uploadefficiëntie afneemt en zelfs de time-out kan toenemen. AEM Assets ondersteunt gestreamd uploaden van elementen. Gestroomd uploaden reduceert de schijf-I/O tijdens het uploaden door opslag van middelen in een tijdelijke map op de server te voorkomen voordat deze naar de opslagplaats wordt gekopieerd. In plaats daarvan worden de gegevens rechtstreeks naar de gegevensopslagruimte overgedragen. Op deze manier wordt de uploadtijd voor grote middelen en de mogelijkheid van time-outs verminderd. Gestroomde upload wordt standaard ingeschakeld in AEM Assets.
+Als u een groot aantal elementen uploadt, neemt de I/O-aanroep naar de AEM-server drastisch toe, waardoor de uploadefficiëntie afneemt en zelfs de time-out kan toenemen. AEM Assets ondersteunen gestreamd uploaden van elementen. Gestroomd uploaden reduceert de schijf-I/O tijdens het uploaden door opslag van middelen in een tijdelijke map op de server te voorkomen voordat deze naar de opslagplaats wordt gekopieerd. In plaats daarvan worden de gegevens rechtstreeks naar de gegevensopslagruimte overgedragen. Op deze manier wordt de uploadtijd voor grote middelen en de mogelijkheid van time-outs verminderd. Gestroomde upload is standaard ingeschakeld in AEM Assets.
 
 Het uploaden naar streaming is uitgeschakeld voor AEM&#39;s die op de JEE-server worden uitgevoerd met servlet-api-versie lager dan 3.1.
 
@@ -335,7 +335,7 @@ Enkele beperkingen van de functie zijn:
 
 >[!MORELIKETHIS]
 >
->* [Dynamische media-elementen](/help/assets/previewing-assets.md)voorvertonen.
+>* [Voorvertoning Dynamic Media-elementen](/help/assets/previewing-assets.md).
 >* [Subelementen](managing-linked-subassets.md#viewing-subassets)weergeven.
 
 
@@ -476,7 +476,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >In AEM Assets wordt standaard de oorspronkelijke uitvoering van het element niet weergegeven in de voorvertoningsmodus. Als beheerder kunt u overlays gebruiken om AEM-elementen te configureren voor de weergave van originele uitvoeringen in de voorvertoningsmodus.
+   >Standaard wordt in de voorvertoningsmodus de oorspronkelijke uitvoering van het element niet weergegeven in AEM Assets. Als beheerder kunt u overlays gebruiken om AEM Assets te configureren voor de weergave van originele uitvoeringen in de voorvertoningsmodus.
 
 1. Selecteer een vertoning om de vertoning weer te geven of te verwijderen.
 
@@ -496,7 +496,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Als u een uitvoering selecteert in het deelvenster **[!UICONTROL Renditions]**, verandert de context van de werkbalk en worden alleen die acties weergegeven die relevant zijn voor de uitvoering. Options, such as the **[!UICONTROL Upload Rendition]** icon is not displayed. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
 
-   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, wordt de vertoning in AEM-elementen weergegeven met de exacte of dichtstbijzijnde afmetingen.
+   U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, wordt de vertoning in AEM Assets weergegeven met de exacte of dichtstbijzijnde afmetingen.
 
    To configure rendition dimensions of an image at the asset detail level, overlay the **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` and configure the value of the width property. Configureer de eigenschap **[!UICONTROL size (Long) in KB]** in plaats van de breedte om de weergave op de pagina met assetdetails aan te passen op basis van de afbeeldingsgrootte. Voor aanpassing op basis van grootte wijst de eigenschap **[!UICONTROL preferOriginal]** de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
 
@@ -551,7 +551,7 @@ Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke 
 
 Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
-Zie Dynamische media-elementen [publiceren voor meer informatie over Dynamic Media](publishing-dynamicmedia-assets.md).
+Zie Dynamic Media [publiceren voor meer informatie over Dynamic Media](publishing-dynamicmedia-assets.md).
 
 **Elementen** publiceren:
 
@@ -618,7 +618,7 @@ Het basisonderzoek wordt gedetailleerd in de sectie van het [Onderzoek en van he
 
 Voor recent geüploade elementen zijn de metagegevens (waaronder titels, tags, enzovoort) niet direct beschikbaar in de lijst met suggesties die worden weergegeven wanneer u in het vak Zoeken typt.
 
-Dit komt doordat AEM-elementen wachten tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade/bijgewerkte elementen te indexeren en deze aan de lijst met suggesties toe te voegen.
+Dit komt doordat AEM Assets wachten tot een time-outperiode (standaard één uur) is verstreken voordat een achtergrondtaak wordt uitgevoerd om de metagegevens voor alle nieuw geüploade/bijgewerkte elementen te indexeren en deze aan de lijst met suggesties toe te voegen.
 
 ## Snelle handelingen gebruiken {#quick-actions}
 
@@ -721,7 +721,7 @@ In de [Collections-console](managing-collections-touch-ui.md#navigating-the-coll
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 
-Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. De video-indelingen die door AEM Assets worden ondersteund, zijn afhankelijk van de browser.
+Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. Video-indelingen die door AEM Assets worden ondersteund, zijn afhankelijk van de browser.
 
 Voor inhoudsfragmenten worden [annotaties gemaakt in de editor](content-fragments-variations.md#annotating-a-content-fragment); voor deze functionaliteit is [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of hoger vereist.
 
@@ -757,7 +757,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
 1. Tik **[!UICONTROL Close]** om de **[!UICONTROL Annotation]** modus af te sluiten.
-1. Meld u aan bij AEM Assets met de gegevens van Aaron MacDonald en tik op het **[!UICONTROL Notifications]** pictogram om de melding weer te geven.
+1. Meld u aan bij AEM Assets met de gegevens van Aaron MacDonald en tik op het **[!UICONTROL Notifications]** pictogram om het bericht weer te geven.
 
 1. Tik op het **[!UICONTROL Profile]** pictogram en tik op een andere kleur om een andere kleur te kiezen, zodat u onderscheid kunt maken tussen gebruikers **[!UICONTROL My Preferences]**.
 
@@ -787,7 +787,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
 
 ### Annotaties afdrukken {#printing-annotations}
 
-Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
+Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties en de revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
