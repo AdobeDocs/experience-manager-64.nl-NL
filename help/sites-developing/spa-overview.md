@@ -10,9 +10,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: c842bd832a63ed9e96801c56ff35489ee6df630b
 workflow-type: tm+mt
-source-wordcount: '1698'
+source-wordcount: '1703'
 ht-degree: 0%
 
 ---
@@ -194,8 +194,8 @@ Om de auteur toe te laten om de paginaredacteur te gebruiken om de inhoud van ee
 
 De redacteur SDK van het KUUUROORD steunt de volgende minimale versies:
 
-* Reageren 16.3
-* Hoek 6.x
+* 16.x en hoger reageren
+* Hoek 6.x en hoger
 
 Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, maar worden niet ondersteund.
 
@@ -222,7 +222,7 @@ Voor extra informatie over het `editElementQuery` bezit en de configuratie van d
 
 De redacteur SDK van AEM SPA werd geïntroduceerd met AEM 6.4 de dienstpak 2. Adobe biedt volledige ondersteuning voor dit programma en het wordt als een nieuwe functie nog steeds uitgebreid. De volgende eigenschappen AEM worden nog niet behandeld door de Redacteur van het KUUROORD:
 
-* Doelmodus
+* Target-modus
 * ContextHub
 * Inline-afbeeldingen bewerken
 * Configs bewerken (bijv. listeners)
