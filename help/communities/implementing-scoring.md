@@ -1,8 +1,8 @@
 ---
 title: Scores en badges van gemeenschappen
 seo-title: Scores en badges van gemeenschappen
-description: Met AEM Communities scoring en badges kunt u leden van gemeenschappen identificeren en belonen
-seo-description: Met AEM Communities scoring en badges kunt u leden van gemeenschappen identificeren en belonen
+description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
+seo-description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: b19b3c24-82a0-468c-a077-9f3edb96afc9
 tagskeywords: scoring, badging, badges, gamification
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2877'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
 
 ## Overzicht {#overview}
 
-Met de functie voor scoren en badges van AEM-gemeenschappen kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
+De functie AEM Communities scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
 
 De belangrijkste aspecten van scoring en badges zijn:
 
@@ -320,7 +323,7 @@ De regels van de Badging koppelen het scoring regels aan badges door te specific
 * Welke scoreregel
 * De score die nodig is om een specifieke badge te ontvangen
 
-De regels van de Badging zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content`knoop die scoreregels aan scores en badges correleren.
+De regels van de Badging zijn knopen van type `cq:Page` met eigenschappen op zijn `jcr:content`knoop die het correleren van het scoring regels aan scores en badges.
 
 De regels voor badging bestaan uit een verplichte `thresholds`eigenschap die een geordende lijst is met scores die zijn toegewezen aan badges. De scores moeten in stijgende waarde worden bevolen. Bijvoorbeeld:
 
@@ -361,7 +364,7 @@ Het `scoringRules`bezit op een merkingsregel beperkt eenvoudig welke het schatte
      <li>number = score</li> 
      <li>| = de verticale lijn (U+007C)</li> 
      <li>path = full path to badge image resource</li> 
-    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er geen witruimte tussen het getal en het pad wordt weergegeven.<br /><br /> Voorbeeld: <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
+    </ul> De tekenreeksen moeten worden geordend, zodat de getallen in waarde toenemen en er mag geen lege ruimte tussen het getal en het pad worden weergegeven.<br /> Voorbeeld:<br /> <code>80|/etc/community/badging/images/gold-badge/jcr:content/gold.png</code></td> 
   </tr> 
   <tr> 
    <td>badgingType</td> 
@@ -407,17 +410,17 @@ cURL -i -X POST -H *header* -u *sign in * -F *operation * -F *badge * *member-pr
 aangepaste header die aan de server moet worden doorgegeven (vereist)
 
 *aanmelden* = administrator-id:password\
- bijvoorbeeld: admin:admin
+bijvoorbeeld: admin:admin
 
 *operation* = &quot;:operation=social:assignBadge&quot; OF &quot;:operation=social:deleteBadge&quot;
 
 *badge* = &quot;badgeContentPath=*badge-image-file*&quot;
 
 *badge-image-file* = de locatie van het afbeeldingsbestand van de badge in de gegevensopslagruimte\
- bijvoorbeeld: /etc/community/badging/images/moderator/jcr:content/moderator.png
+bijvoorbeeld: /etc/community/badging/images/moderator/jcr:content/moderator.png
 
 *member-profile-url* = het eindpunt voor het profiel van het lid bij publiceren\
- bijvoorbeeld: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
+bijvoorbeeld: https://&lt;server>:&lt;port>/home/users/community/riley/profile.social.json
 
 >[!NOTE]
 >
@@ -470,7 +473,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 | POST | lid maakt een agendagebeurtenis |
 | TOEVOEGEN | opmerkingen van leden over een agendagebeurtenis |
 | BIJWERKEN | agendagebeurtenis of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | agendagebeurtenis of commentaar van lid wordt verwijderd |
+| DELETE | agendagebeurtenis of commentaar van lid wordt verwijderd |
 
 **[Opmerkingen Component](comments.md)**SocialEvent`topic`= com/adobe/cq/social/comment
 
@@ -479,7 +482,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 | POST | lid maakt een opmerking |
 | TOEVOEGEN | reactie van lid op opmerking |
 | BIJWERKEN | commentaar van lid is bewerkt |
-| VERWIJDEREN | commentaar van lid is verwijderd |
+| DELETE | commentaar van lid is verwijderd |
 
 **[File Library Component](file-library.md)**SocialEvent`topic`= com/adobe/cq/social/fileLibrary
 
@@ -488,7 +491,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 | POST | lid maakt een map |
 | ATTACH | lid uploadt een bestand |
 | BIJWERKEN | lid werkt een map of bestand bij |
-| VERWIJDEREN | lid verwijdert een map of bestand |
+| DELETE | lid verwijdert een map of bestand |
 
 **[Forum Component](forum.md)**SocialEvent`topic`= com/adobe/cq/social/forum
 
@@ -497,7 +500,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 | POST | lid maakt forum-onderwerp |
 | TOEVOEGEN | reacties van leden op forum onderwerp |
 | BIJWERKEN | onderwerp of antwoord van lid wordt bewerkt |
-| VERWIJDEREN | forumonderwerp of antwoord van lid wordt verwijderd |
+| DELETE | forumonderwerp of antwoord van lid wordt verwijderd |
 
 **[Journal Component](blog-feature.md)**SocialEvent`topic`= com/adobe/cq/social/journaal
 
@@ -506,7 +509,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 | POST | lid maakt een blogartikel |
 | TOEVOEGEN | commentaar van leden op blogartikel |
 | BIJWERKEN | blogartikel of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | blogartikel of commentaar van lid is verwijderd |
+| DELETE | blogartikel of commentaar van lid is verwijderd |
 
 **[QnA Component](working-with-qna.md)**SocialEvent`topic`= com/adobe/cq/social/qna
 
@@ -517,7 +520,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 | BIJWERKEN | Vraag of antwoord van lid wordt bewerkt |
 | SELECT | het antwoord van lid is geselecteerd |
 | SELECTEREN OPHEFFEN | het antwoord van het lid is gedeselecteerd |
-| VERWIJDEREN | Vraag of antwoord van lid wordt verwijderd |
+| DELETE | Vraag of antwoord van lid wordt verwijderd |
 
 **[Reviews Component](reviews.md)**SocialEvent`topic`= com/adobe/cq/social/review
 
@@ -525,7 +528,7 @@ Voor de geleverde communitycomponenten, beschrijven de volgende lijsten de `verb
 |---|---|
 | POST | lid maakt beoordeling |
 | BIJWERKEN | beoordeling door lid wordt bewerkt |
-| VERWIJDEREN | beoordeling door lid is verwijderd |
+| DELETE | beoordeling door lid is verwijderd |
 
 **[Beoordelingscomponent](rating.md)**SocialEvent`topic`= com/adobe/cq/social/tally/rating
 
@@ -591,8 +594,8 @@ U kunt snel scoring en badging proberen met behulp van de site [Getting Started 
 
    * **Naam**: `badgingRules`
    * **Type**: `String`
-   * Meerdere **[!UICONTROL selecteren]**
-   * Selecteer **[!UICONTROL Toevoegen]**
+   * Selecteer **[!UICONTROL Multi]**
+   * Selecteer **[!UICONTROL Add]**
    * Enter `/etc/community/badging/rules/forums-badging`
    * Selecteer `+`
    * Enter `/etc/community/badging/rules/comments-badging`
@@ -602,14 +605,14 @@ U kunt snel scoring en badging proberen met behulp van de site [Getting Started 
 
    * **Naam**: `scoringRules`
    * **Type**: `String`
-   * Meerdere **[!UICONTROL selecteren]**
-   * Selecteer **[!UICONTROL Toevoegen]**
+   * Selecteer **[!UICONTROL Multi]**
+   * Selecteer **[!UICONTROL Add]**
    * Enter `/etc/community/scoring/rules/forums-scoring`
    * Selecteer `+`
    * Enter `/etc/community/scoring/rules/comments-scoring`
    * Selecteer **[!UICONTROL OK]**
 
-* Alles **[!UICONTROL opslaan selecteren]**
+* Selecteer **[!UICONTROL Save All]**
 
 ![chlimage_1-370](assets/chlimage_1-370.png)
 
