@@ -3,7 +3,7 @@ title: XMP-terugverwijzing naar uitvoeringen
 description: Leer hoe de functie XMP-schrijfback de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b7180dcc7b50dca1c101a3fd28e031ef8e08f37f
 workflow-type: tm+mt
 source-wordcount: '731'
 ht-degree: 2%
@@ -90,12 +90,12 @@ TBD: Make updates to configurations for allow and block list after product updat
 
 1. Open Configuratiebeheer vanuit `https://[aem_server]:[port]/system/console/configMgr`.
 1. Open de **[!UICONTROL Adobe CQ DAM XmpFilter]** configuratie.
-1. Als u filtering wilt toepassen via een toegestane lijst, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Whitelist to XMP Properties]****[!UICONTROL Whitelisted XML Names for XMP filtering]** vak en geeft u deze op.
+1. Als u filtering wilt toepassen via een toegestane lijst, selecteert u de eigenschappen die u wilt importeren in het **[!UICONTROL Apply Allowlist to XMP Properties]****[!UICONTROL Allowed XML Names for XMP filtering]** vak en geeft u deze op.
 
    ![chlimage_1-347](assets/chlimage_1-347.png)
 
-1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filtering hebt toegepast via de lijst met toegestane waarden, geeft u de eigenschappen in het **[!UICONTROL Blacklisted XML Names for XMP filtering]** vak op. Sla de wijzigingen op.
+1. Als u geblokkeerde XMP-eigenschappen wilt uitfilteren nadat u filtering hebt toegepast via de lijst met toegestane waarden, geeft u de eigenschappen in het **[!UICONTROL Blocked XML Names for XMP filtering]** vak op. Sla de wijzigingen op.
 
    >[!NOTE]
    >
-   >The **[!UICONTROL Apply Blacklist to XMP Properties]** option is selected by default. Met andere woorden, het filtreren gebruikend een geblokkeerde lijst wordt toegelaten door gebrek. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blacklist to XMP Properties]** optie uit.
+   >The **[!UICONTROL Apply Blocklist to XMP Properties]** option is selected by default. Met andere woorden, het filtreren gebruikend een geblokkeerde lijst wordt toegelaten door gebrek. Als u dergelijke filters wilt uitschakelen, schakelt u de **[!UICONTROL Apply Blocklist to XMP Properties]** optie uit.
