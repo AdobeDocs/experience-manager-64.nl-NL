@@ -1,8 +1,8 @@
 ---
 title: ASRP - Adobe Storage Resource Provider
 seo-title: ASRP - Adobe Storage Resource Provider
-description: AEM-gemeenschappen instellen om een relationele database te gebruiken als de algemene opslag
-seo-description: AEM-gemeenschappen instellen om een relationele database te gebruiken als de algemene opslag
+description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
+seo-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
 uuid: 29826b44-633d-4586-8553-cd87ebe269a2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
 translation-type: tm+mt
-source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 
 ## Info over ASRP {#about-asrp}
 
-Wanneer de Gemeenschappen AEM wordt gevormd om ASRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
+Wanneer de AEM Communities wordt gevormd om ASRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
 Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-options) SRP en [Aanbevolen Topologieën](topologies.md).
 
@@ -27,7 +30,7 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
 
 Een extra vergunning wordt vereist voor het gebruik van ASRP.
 
-Als u uw AEM Communities-site wilt configureren voor gebruik van ASRP voor UGC, neemt u contact op met uw accountvertegenwoordiger voor:
+Neem contact op met uw accountvertegenwoordiger voor informatie over het configureren van uw site AEM Communities voor gebruik van ASRP voor UGC:
 
 * Het Centrum URL van gegevens (adres van het eindpunt van ASRP)
 * Consumentencode
@@ -44,30 +47,30 @@ De console [van de Configuratie van de](srp-config.md) Opslag staat voor de sele
 
 **Op auteur**:
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Gemeenschappen > Opslagconfiguratie]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Storage Configuration]**
 
 ![chlimage_1-310](assets/chlimage_1-310.png)
 
 * Selecteer **[!UICONTROL Adobe Storage Resource Provider (ASRP)]**
 * De volgende informatie is afkomstig uit het inrichtingsproces
 
-   * **[!UICONTROL URL datacenter]**
+   * **[!UICONTROL Data Center URL]**
 
       Afsluiten om het datacenter te selecteren dat door uw accountvertegenwoordiger is geïdentificeerd
 
-   * **[!UICONTROL Standaardrapportsuite]**
+   * **[!UICONTROL Default Report Suite]**
 
       Ga de naam van de standaardrapportreeks in
 
-   * **[!UICONTROL Consumentencode]**
+   * **[!UICONTROL Consumer Key]**
 
       De sleutel voor de consument invoeren
 
-   * **[!UICONTROL Geheim]**
+   * **[!UICONTROL Secret]**
 
       De geheime sleutel invoeren
 
-* Selecteer **[!UICONTROL Verzenden]**
+* Selecteer **[!UICONTROL Submit]**
 
 De publicatie-instanties voorbereiden:
 
@@ -76,13 +79,13 @@ De publicatie-instanties voorbereiden:
 
 Na het voorleggen van de configuratie, test de verbinding:
 
-* Selecteer Config **[!UICONTROL voor elke auteur]** testen en publiceer instantie, test de verbinding aan het gegevenscentrum van de console van de Configuratie van de Opslag
+* Selecteer **[!UICONTROL Test Config]** voor elke auteur en publiceer instantie, test de verbinding aan het gegevenscentrum van de console van de Configuratie van de Opslag
 
 * Ten slotte moet u ervoor zorgen dat de site-URL&#39;s voor profielgegevens vanuit het datacenter kunnen worden gerouteerd door [koppelingen](#externalize-links)te extern te maken.
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
-De Consumentensleutel en de Geheime Sleutel worden gecodeerd. De sleutel van Granite Crypto moet op alle AEM-instanties hetzelfde zijn, anders worden de sleutels niet correct gecodeerd/gedecodeerd.
+De Consumentensleutel en de Geheime Sleutel worden gecodeerd. De sleutel van Granite Crypto moet voor een correcte codering/decodering van de sleutels op alle AEM-instanties gelijk zijn.
 
 Volg de instructies bij [Replicate de Sleutel](deploy-communities.md#replicate-the-crypto-key)van Crypto.
 
@@ -94,7 +97,7 @@ Ben zeker om de domeinen te plaatsen om URLs te zijn die van het Centrum URL van
 
 ### Tijdsynchronisatie {#time-synchronization}
 
-Opdat authentificatie met het eindpunt van ASRP om te slagen, moeten de machines die uw ontvangen Gemeenschappen in werking stellen AEM tijd gesynchroniseerd zijn, zoals met het Protocol van de Tijd van het [Netwerk (NTP)](https://www.ntp.org/).
+Opdat authentificatie met het eindpunt van ASRP om te slagen, moeten de machines die uw ontvangen AEM Communities in werking stellen tijd gesynchroniseerd zijn, zoals met het Protocol van de Tijd van het [Netwerk (NTP)](https://www.ntp.org/).
 
 ### De configuratie publiceren {#publishing-the-configuration}
 
@@ -104,13 +107,13 @@ De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
 * **Op auteur**:
 
-   * Navigeer van hoofdmenu aan **[!UICONTROL Hulpmiddelen > Verrichtingen > Replicatie]**
-   * Boomstructuur **[!UICONTROL activeren selecteren]**
-   * **[!UICONTROL Startpad]**:
+   * Navigeren van hoofdmenu naar **[!UICONTROL Tools > Operations > Replication]**
+   * Selecteer **[!UICONTROL Activate Tree]**
+   * **[!UICONTROL Start Path]**:
 
       * Bladeren naar `/etc/socialconfig/srpc/`
-   * Uitsluitend **[!UICONTROL gewijzigd uitschakelen]**
-   * Selecteer **[!UICONTROL Activeren]**
+   * Uitschakelen **[!UICONTROL Only Modified]**
+   * Selecteer **[!UICONTROL Activate]**
 
 
 ## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
