@@ -2,7 +2,7 @@
 title: Decoratietag
 description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars, biedt AEM duidelijke en eenvoudige logica die de decoratietags controleert die inbegrepen componenten verpakken.
 translation-type: tm+mt
-source-git-commit: 440a514fa1b0b5d685fe7717caf40400e5288e02
+source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
@@ -10,7 +10,7 @@ ht-degree: 0%
 ---
 
 
-# Decoratietag{#decoration-tag}
+# Decoratietag {#decoration-tag}
 
 Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Dit heeft hoofdzakelijk twee doelen:
 
@@ -38,9 +38,7 @@ Hier zijn sommige algemene aanbevelingen van wanneer om het omslagelement te omv
 De volgende eigenschappen en knopen kunnen op de componenten worden toegepast om het gedrag van hun versieringsmarkering te controleren:
 
 * **`cq:noDecoration {boolean}`:**Deze eigenschap kan aan een component worden toegevoegd en een werkelijke waarde dwingt AEM geen omvattende elementen over de component te genereren.
-
 * **`cq:htmlTag`node:**Dit knooppunt kan onder een component worden toegevoegd en kan de volgende eigenschappen hebben:
-
    * **`cq:tagName {String}`:**Dit kan worden gebruikt om een aangepaste HTML-tag op te geven die moet worden gebruikt voor het verpakken van de componenten in plaats van het standaard DIV-element.
    * **`class {String}`:**Dit kan worden gebruikt om CSS klassennamen te specificeren die aan de omslag moeten worden toegevoegd.
    * Andere eigenschapnamen worden toegevoegd als HTML-kenmerken met dezelfde tekenreekswaarde als opgegeven.
