@@ -1,8 +1,8 @@
 ---
 title: MSRP - MongoDB Storage Resource Provider
 seo-title: MSRP - MongoDB Storage Resource Provider
-description: AEM-gemeenschappen instellen om een relationele database te gebruiken als de algemene opslag
-seo-description: AEM-gemeenschappen instellen om een relationele database te gebruiken als de algemene opslag
+description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
+seo-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -10,7 +10,10 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '1167'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
 
 ## Over MSRP {#about-msrp}
 
-Wanneer de Gemeenschappen AEM wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
+Wanneer de AEM Communities wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
 Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-options) SRP en [Aanbevolen Topologieën](topologies.md).
 
@@ -52,28 +55,28 @@ De console [van de Configuratie van de](srp-config.md) Opslag staat voor de sele
 
 Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben:
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Gemeenschappen > Opslagconfiguratie]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Storage Configuration]**
 
 ![chlimage_1-28](assets/chlimage_1-28.png)
 
-* MSRP ( **[!UICONTROL MongoDB Storage Resource Provider) selecteren]**
-* **[!UICONTROL mongoDB-configuratie]**
+* Selecteer **[!UICONTROL MongoDB Storage Resource Provider (MSRP)]**
+* **[!UICONTROL mongoDB Configuration]**
 
    * **[!UICONTROL mongoDB URI]**
 
       *standaard*: mongodb://localhost/?maxPoolSize=10&amp;waitQueueMultiple=5&amp;readPreference=secondaryPreferred
 
-   * **[!UICONTROL mongoDB-database]**
+   * **[!UICONTROL mongoDB Database]**
 
       *standaard*: gemeenschappen
 
    * **[!UICONTROL mongoDB UGC Collection]**
 
-      *standaard*:content
+      *standaard*: content
 
-   * **[!UICONTROL MongoDB-bijlage verzamelen]**
+   * **[!UICONTROL mongoDB Attachment Collection]**
 
-      *standaard*:bijlagen
+      *standaard*: bijlagen
 
 * **[!UICONTROL SolrConfiguration]**
 
@@ -81,12 +84,14 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
 
       Wanneer het lopen op [wijze](solr.md#solrcloud-mode) SolrCloud met externe ZooKeeper, plaats deze waarde aan `HOST:PORT` voor ZooKeeper, zoals *my.server.com:2181* voor een Temble van ZooKeeper, ga komma-gescheiden `HOST:PORT` waarden, zoals *gastheer1:2181, host2:2181 in* Laat leeg als Solr in stand-alone wijze gebruikend de interne ZooKeeper loopt.\
       *Standaard*: *&lt;blank>*
-   * **[!UICONTROL Solr URL]**De URL die wordt gebruikt om te communiceren met Solr in zelfstandige modus.
+   * **[!UICONTROL Solr URL]**
+De URL die wordt gebruikt om te communiceren met Solr in zelfstandige modus.
 Leeg laten als deze wordt uitgevoerd in de SolrCloud-modus.\
       *Standaard*: https://127.0.0.1:8983/solr/
-   * **[!UICONTROL Solr Collection]** De Solr inzamelingsnaam.\
+   * **[!UICONTROL Solr Collection]**
+De naam van de Solr-verzameling.\
       *Standaard*: verzameling1
-* Selecteer **[!UICONTROL Verzenden]**
+* Selecteer **[!UICONTROL Submit]**
 
 >[!NOTE]
 >
@@ -94,13 +99,13 @@ Leeg laten als deze wordt uitgevoerd in de SolrCloud-modus.\
 
 ### MongoDB Replica-set {#mongodb-replica-set}
 
-Voor de productieomgeving wordt het ten zeerste aanbevolen een replicaset in te stellen, een cluster van MongoDB-servers die master-slave-replicatie en geautomatiseerde failover implementeert.
+Voor het productiemilieu, wordt het sterk geadviseerd om een replicaset, een cluster van servers te installeren MongoDB die primaire-secundaire replicatie en geautomatiseerde failover uitvoert.
 
 Voor meer informatie over replicasets gaat u naar de documentatie van de [replicatie](https://docs.mongodb.org/manual/replication/) van MongoDB.
 
 Als u met replicasets wilt werken en wilt leren hoe u verbindingen tussen toepassingen en MongoDB-instanties kunt definiëren, gaat u naar de documentatie bij URI-indeling [van](https://docs.mongodb.org/manual/reference/connection-string/) verbindingstekenreeks van MongoDB.
 
-#### Voorbeeld-URL voor verbinding maken met een replicaset {#example-url-for-connecting-to-a-replica-set}
+#### Voorbeeld-URL voor verbinding maken met een replicaset  {#example-url-for-connecting-to-a-replica-set}
 
 ```shell
 # Example url for:
@@ -124,7 +129,7 @@ Voor configuratiedetails, zie de Configuratie van [Solr voor SRP](solr.md).
 
 Als bevordering van een vroegere die versie met MSRP wordt gevormd, zal het noodzakelijk zijn
 
-1. Voer de [upgrade naar AEM-gemeenschappen uit](upgrade.md)
+1. Voer de [upgrade uit naar AEM Communities](upgrade.md)
 1. Nieuwe Solr-configuratiebestanden installeren
    * Voor [standaard MLS](solr.md#installing-standard-mls)
    * Voor [geavanceerde MLS](solr.md#installing-advanced-mls)
@@ -137,11 +142,11 @@ MSRP moet als gemeenschappelijke opslag op alle auteur worden geïdentificeerd e
 De identieke configuratie beschikbaar stellen in de publicatieomgeving:
 
 * Op auteur:
-   * Navigeer van hoofdmenu aan **[!UICONTROL Hulpmiddelen > Verrichtingen > Replicatie]**
-   * Boomstructuur **[!UICONTROL activeren selecteren]**
-   * **[!UICONTROL Startpad]**:
+   * Navigeren van hoofdmenu naar **[!UICONTROL Tools > Operations > Replication]**
+   * Selecteer **[!UICONTROL Activate Tree]**
+   * **[!UICONTROL Start Path]**:
       * Bladeren naar `/etc/socialconfig/srpc/`
-   * Selecteer **[!UICONTROL Activeren]**
+   * Selecteer **[!UICONTROL Activate]**
 
 ## Gebruikersgegevens beheren {#managing-user-data}
 
@@ -221,13 +226,13 @@ Op alle auteur en publiceer AEM instanties, vernieuw de console [van de Configur
 
 ### UGC verdwijnt na upgrade {#ugc-disappears-after-upgrade}
 
-Als een upgrade wordt uitgevoerd van een bestaande AEM Communities 6.0-locatie, moet een reeds bestaande UGC worden omgezet in overeenstemming met de structuur die vereist is voor de [SRP](srp.md) API na een upgrade naar AEM Communities 6.3.
+Als een upgrade wordt uitgevoerd vanaf een bestaande AEM Communities 6.0-site, moet een reeds bestaande UGC worden geconverteerd om te voldoen aan de vereiste structuur voor de [SRP](srp.md) API na een upgrade naar AEM Communities 6.3.
 
 Er is een open bronhulpmiddel beschikbaar op GitHub voor dit doel:
 
-* [AEM Communities UGC Migration Tool](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
+* [AEM Communities UGC-migratiehulpprogramma](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Het migratiehulpmiddel kan worden aangepast om UGC uit vroegere versies van AEM sociale gemeenschappen voor invoer in Gemeenschappen te exporteren AEM 6.1 of later.
+Het migratiehulpmiddel kan worden aangepast om UGC uit vroegere versies van sociale gemeenschappen AEM voor invoer in AEM Communities 6.1 of later uit te voeren.
 
 ### Fout: niet-gedefinieerde veldprovider_id {#error-undefined-field-provider-id}
 
