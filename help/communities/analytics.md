@@ -1,6 +1,6 @@
 ---
-title: Analytische configuratie voor functies van Gemeenschappen
-seo-title: Analytische configuratie voor functies van Gemeenschappen
+title: Analytics Configuration for Communities-functies
+seo-title: Analytics Configuration for Communities-functies
 description: Analyses configureren voor Gemeenschappen
 seo-description: Analyses configureren voor Gemeenschappen
 uuid: 625a253f-b198-40e8-b34c-dff337fb0eff
@@ -10,20 +10,23 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+workflow-type: tm+mt
+source-wordcount: '2728'
+ht-degree: 2%
 
 ---
 
 
-# Analytische configuratie voor functies van Gemeenschappen {#analytics-configuration-for-communities-features}
+# Analytics Configuration for Communities-functies {#analytics-configuration-for-communities-features}
 
 ## Overzicht {#overview}
 
-Adobe Analytics en Adobe Experience Manager (AEM) zijn beide oplossingen van Adobe Marketing Cloud.
+Adobe Analytics en Adobe Experience Manager (AEM) zijn beide oplossingen voor Adobe Marketing Cloud.
 
-Adobe Analytics kan voor AEM-gemeenschappen zo worden geconfigureerd dat, als een lid communiceert met ondersteunde functies van de Gemeenschappen, gebeurtenissen worden verzonden naar Adobe Analytics van waaruit rapporten worden gegenereerd.
+Adobe Analytics kan voor AEM Communities worden geconfigureerd, zodat, als lid communiceert met ondersteunde functies van de Gemeenschappen, gebeurtenissen naar Adobe Analytics worden verzonden waaruit rapporten worden gegenereerd.
 
-Bijvoorbeeld, wanneer een lid van een enablement communautaire plaats een videobron bekijkt die aan hen wordt toegewezen, zal de middelspeler gebeurtenissen naar Analytics, met inbegrip van videohartslaggegevens verzenden. Van de communautaire plaats, kunnen de beheerders diverse rapporten zien betreffende het spelen van de video.
+Wanneer bijvoorbeeld een lid van een community-enablement een aan hem toegewezen videobron weergeeft, verzendt de resource player gebeurtenissen naar Analytics, waaronder videohartslaggegevens. Van de communautaire plaats, kunnen de beheerders diverse rapporten zien betreffende het spelen van de video.
 
 Daarnaast is een analyse nodig voor:
 
@@ -47,27 +50,27 @@ Tot de ondersteunde Gemeenschappen behoren:
 * [Bestandsbibliotheek](file-library.md)
 * [Kalender](calendar.md)
 
-In deze sectie van de documentatie wordt beschreven hoe u een serie Analytics-rapporten kunt koppelen aan de functies van Communities. De basisstappen zijn:
+In deze sectie van de documentatie wordt beschreven hoe u een Analytics-rapportsuite kunt koppelen aan de functies van Communities. De basisstappen zijn:
 
 1. [Repliceer de cryptosleutel](#replicate-the-crypto-key) om ervoor te zorgen dat codering/decodering op de juiste wijze plaatsvindt op alle AEM-instanties
 1. Een Adobe Analytics- [rapportsuite voorbereiden](#adobe-analytics-report-suite-for-video-reporting)
 1. Een AEM Analytics- [cloudservice](#aem-analytics-cloud-service-configuration) en - [framework maken](#aem-analytics-framework-configuration)
-1. [Analyse](#enable-analytics-for-a-community-site) voor een communitysite inschakelen
-1. [Analyse](#verify-analytics-to-aem-variable-mapping) van variabele aan AEM-toewijzing verifiëren
+1. [Analytics](#enable-analytics-for-a-community-site) inschakelen voor een communitysite
+1. [Verifieer](#verify-analytics-to-aem-variable-mapping) de veranderlijke afbeelding van Analytics aan AEM
 1. Identificeer [primaire uitgever](#primary-publisher)
 1. [De communitysite publiceren](#publish-community-site-and-analytics-cloud-service)
-1. Het [importeren van rapportgegevens](#obtaining-reports-from-analytics) van Adobe Analytics naar de communitysite configureren
+1. Het [importeren van rapportgegevens](#obtaining-reports-from-analytics) vanuit Adobe Analytics naar de communitysite configureren
 
 ## Vereisten {#prerequisites}
 
-Voor het configureren van Analytics voor Community-functies moet u samenwerken met uw accountvertegenwoordiger om een Adobe Analytics-account en een [rapportsuite](#adobe-analytics-report-suite-for-video-reporting)in te stellen. Zodra dit is vastgesteld, moet de volgende informatie beschikbaar zijn:
+Als u Analytics for Communities-functies wilt configureren, moet u samenwerken met uw accountvertegenwoordiger om een Adobe Analytics-account en - [rapportsuite](#adobe-analytics-report-suite-for-video-reporting)in te stellen. Zodra dit is vastgesteld, moet de volgende informatie beschikbaar zijn:
 
 * Bedrijfsnaam
 
    Het bedrijf dat is gekoppeld aan de Adobe Analytics-account
 * Gebruikersnaam
 
-   De aanmeldingsgebruikersnaam voor de gebruiker die gemachtigd is om de account Analytics te beheren
+   De aanmeldingsgebruikersnaam voor de gebruiker die gemachtigd is om de Analytics-account te beheren
 
    (Mogen toegangsrechten voor webservices bevatten)
 
@@ -75,19 +78,19 @@ Voor het configureren van Analytics voor Community-functies moet u samenwerken m
 
    Het aanmeldingswachtwoord voor de geautoriseerde gebruiker
 
-* Analysecentrum
+* Analytics Data Center
 
-   De URL van het datacenter Analytics voor de account
+   De URL van het Analytics-datacenter voor de account
 
 * Rapportsuite
 
-   De naam van de te gebruiken analytische rapportsuite
+   De naam van de Analytics-rapportsuite die moet worden gebruikt
 
 ## Adobe Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
-Met de rapportsuite [](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)van Adobe Marketing Cloud kunnen de Analytics-rapporten worden geconfigureerd, zodat een communitysite mogelijk rapporten kan leveren voor de functies van de Community.
+Met behulp van [Report Suite Manager](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)van de Adobe Marketing Cloud kunnen Analytics-rapportesuites worden geconfigureerd, zodat een communitysite rapporten kan leveren voor de functies van de Gemeenschappen.
 
-Door u aan te melden bij [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) met [bedrijfsnaam en gebruikersnaam](analytics.md#prerequisites), is het mogelijk een nieuwe of bestaande rapportsuite te configureren met:
+Door binnen aan [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) met de Naam en de Gebruikersnaam [van het](analytics.md#prerequisites)Bedrijf te ondertekenen, is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
 
 * [11 Conversievariabelen](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) (evars)
 
@@ -117,7 +120,7 @@ Door u aan te melden bij [Adobe Marketing Cloud](https://marketing.adobe.com/res
 
 Als u een **nieuwe rapportsuite** gebruikt, dient u er rekening mee te houden dat een nieuwe rapportsuite slechts 4 gebeurtenissen en 6 gebeurtenisvariabelen kan bevatten, terwijl 11 gebeurtenissen en 7 gebeurtenisvars vereist zijn voor de Gemeenschappen.
 
-Als het gebruiken van een **bestaande rapportreeks**, kan het noodzakelijk zijn om de veranderlijke afbeelding [te](#modifying-analytics-variable-mapping) wijzigen alvorens het kader van Analytics voor een communautaire plaats te activeren. Neem contact op met uw accountvertegenwoordiger voor eventuele problemen met betrekking tot de variabelen die voor Gemeenschappen zijn bestemd.
+Als u een **bestaande rapportsuite** gebruikt, kan het nodig zijn de variabele-toewijzing [te](#modifying-analytics-variable-mapping) wijzigen voordat het Analytics-framework voor een communitysite wordt geactiveerd. Neem contact op met uw accountvertegenwoordiger voor eventuele problemen met betrekking tot de variabelen die voor Gemeenschappen zijn bestemd.
 
 >[!CAUTION]
 >
@@ -127,20 +130,20 @@ Als het gebruiken van een **bestaande rapportreeks**, kan het noodzakelijk zijn 
 >* **`event1`** doorheen **`event7`**
 >
 >
-**Voordat de communitysite wordt gepubliceerd,** is het belangrijk dat de bestaande toewijzing wordt hersteld door de AEM-variabelen te verplaatsen die automatisch zijn toegewezen aan analytische variabelen wanneer Analytics is ingeschakeld voor een communitysite.
+**Voordat de communitysite wordt gepubliceerd,** is het belangrijk dat de bestaande toewijzing wordt hersteld door de AEM-variabelen te verplaatsen die automatisch zijn toegewezen aan Analytics-variabelen wanneer Analytics was ingeschakeld voor een communitysite.
 >
->Zie de sectie over het [aanpassen van de variabele Analytics Mapping](#modifying-analytics-variable-mapping)voor meer informatie over het herstellen van de bestaande toewijzing en het verplaatsen van AEM-variabelen naar andere analytische variabelen.
+>Zie de sectie over het [aanpassen van de toewijzing](#modifying-analytics-variable-mapping)van Analytics-variabelen voor het herstellen van de bestaande toewijzing en het verplaatsen van AEM-variabelen naar andere Analytics-variabelen.
 >
 >Als u dit niet doet, kan dit leiden tot onherstelbaar gegevensverlies.
 
-### Video-hartslaganalyse {#video-heartbeat-analytics}
+### Video Heartbone Analytics {#video-heartbeat-analytics}
 
-Als er een licentie is voor Video Heartbeat Analytics, `Marketing Cloud Org Id` wordt er een toegewezen.
+Als er een licentie voor Video Heartbone Analytics wordt gebruikt, `Marketing Cloud Org Id` wordt er een toegewezen.
 
-Om Video toe te laten hartslagrapportering na het [vormen van de het rapportreeks van Analytics voor videorapportering](#adobe-analytics-report-suite-for-video-reporting):
+U kunt als volgt de rapportage van videokoppen inschakelen nadat u de Analytics-rapportsuite voor videoverslagen [hebt](#adobe-analytics-report-suite-for-video-reporting)geconfigureerd:
 
 * Een [Analytics-cloudservice maken](#aem-analytics-cloud-service-configuration)
-* Analyse [voor een communitysite inschakelen](#enable-analytics-for-a-community-site)
+* Analytics inschakelen voor een [communitysite](#enable-analytics-for-a-community-site)
 * Koppel de `Marketing Cloud Org Id` site aan de site van de community
 
 U `Marketing Cloud Org Id` kunt de site invoeren op het moment dat de site wordt gemaakt [of later door de eigenschappen van de site van de](sites-console.md#enablement) community te [wijzigen](sites-console.md#modifying-site-properties) . [](#aem-analytics-cloud-service-configuration)
@@ -151,86 +154,86 @@ Wanneer Video Heartbone Analytics wordt toegelaten, concretiseert de code Javasc
 
 Als deze optie niet is ingeschakeld, wordt de videohartslagcode nooit geïnstantieerd en wordt alleen de videovoortgang en het volgen van de hervattingspositie voortgezet in SRP voor rapportage.
 
-## Configuratie van AEM Analytics Cloud Service {#aem-analytics-cloud-service-configuration}
+## Configuratie AEM Analytics-Cloud Service {#aem-analytics-cloud-service-configuration}
 
-U kunt als volgt een nieuwe integratie van analysemogelijkheden maken, die Adobe Analytics integreert met de AEM-communitysite en de standaardgebruikersinterface van de auteur gebruikt:
+U kunt als volgt een nieuwe Analytics Integration maken, die Adobe Analytics integreert met de AEM-communitysite, met de standaardinterface op de auteurinstantie:
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Implementatie > Cloud Services]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Deployment > Cloud Services]**
 * Omlaag schuiven naar **[!UICONTROL Adobe Analytics]**
-* Selecteer nu **[!UICONTROL configureren]** of Configuraties **[!UICONTROL tonen]**
+* Selecteer **[!UICONTROL Configure Now]** of **[!UICONTROL Show Configurations]**
 
 ![chlimage_1-265](assets/chlimage_1-265.png)
 
 ### Configuratiedialoogvenster maken {#create-configuration-dialog}
 
-* Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare Configuraties]** om een nieuwe configuratie te creëren
+* Selecteer `[+]` pictogram naast **[!UICONTROL Available Configurations]** om een nieuwe configuratie tot stand te brengen
 
 In het dialoogvenster Configuratie maken identificeren de waarden die moeten worden ingevoerd de configuratie.
 
 ![chlimage_1-266](assets/chlimage_1-266.png)
 
-* **[!UICONTROL Titel]**
+* **[!UICONTROL Title]**
 
    (Vereist) Een weergavetitel voor de configuratie.
 
-   Voer bijvoorbeeld Community Analytics *inschakelen in*
+   Voer bijvoorbeeld *Enablement Community Analytics in*
 
-* **[!UICONTROL Naam]**
+* **[!UICONTROL Name]**
 
    (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
 
-   Ga bijvoorbeeld naar *gemeenschappen*
+   For example, enter *communities*
 
 
-* **[!UICONTROL Sjabloonmodel]**
+* **[!UICONTROL Template]**
 
    Selecteer `Adobe Analytics Configuration`
 
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
    * Hiermee start u de configuratiepagina en opent u het `Analytics Settings` dialoogvenster
 
-### Dialoogvenster Analyse-instellingen {#analytics-settings-dialog}
+### Dialoogvenster Analytics-instellingen {#analytics-settings-dialog}
 
-Het eerste ontwerp van een nieuwe analytische configuratie resulteert in de weergave van de configuratie en een nieuw dialoogvenster voor het invoeren van de Analytische instellingen. Deze dialoog vereist de [vereiste rekeninginformatie](#prerequisites) die van de rekeningsvertegenwoordiger wordt verkregen.
+Het eerste ontwerp van een nieuwe Analytics-configuratie resulteert in de weergave van de configuratie en een nieuw dialoogvenster voor de vermelding van de Analytics Settings. Deze dialoog vereist de [vereiste rekeninginformatie](#prerequisites) die van de rekeningsvertegenwoordiger wordt verkregen.
 
 ![chlimage_1-267](assets/chlimage_1-267.png)
 
-* **[!UICONTROL Bedrijf]**
+* **[!UICONTROL Company]**
 
    Het bedrijf dat is gekoppeld aan de Adobe Analytics-account
 
-* **[!UICONTROL Gebruikersnaam]**
+* **[!UICONTROL Username]**
 
-   De aanmeldingsgebruikersnaam voor de gebruiker die gemachtigd is om de account Analytics te beheren
+   De aanmeldingsgebruikersnaam voor de gebruiker die gemachtigd is om de Analytics-account te beheren
 
-* **[!UICONTROL Wachtwoord]**
+* **[!UICONTROL Password]**
 
    Het aanmeldingswachtwoord voor de geautoriseerde gebruiker
 
-* **[!UICONTROL Datacenter]**
+* **[!UICONTROL Data Center]**
 
-   Selecteer het datacenter Analytics dat als host fungeert voor de rapportsuite
+   Selecteer het Analytics-datacenter dat als host fungeert voor de rapportsuite
 
-* **[!UICONTROL Trackingtag niet toevoegen aan pagina]**
-
-   Als standaard behouden (uitgeschakeld)
-
-* **[!UICONTROL AppMeasurement gebruiken]**
+* **[!UICONTROL Do not add tracking tag to page]**
 
    Als standaard behouden (uitgeschakeld)
 
-* **[!UICONTROL Pagina-afbeeldingen niet elke avond importeren (auteur)]**
+* **[!UICONTROL Use AppMeasurement]**
 
    Als standaard behouden (uitgeschakeld)
 
-* **[!UICONTROL Paginaafbeeldingen niet elke avond importeren (publiceren)]**
+* **[!UICONTROL Do not import page impressions nightly (author)]**
+
+   Als standaard behouden (uitgeschakeld)
+
+* **[!UICONTROL Do not import page impressions nightly (publish)]**
 
    Als standaard behouden (ingeschakeld)
 
 De instellingen opslaan:
 
 
-* Selecteer **[!UICONTROL Verbinding maken met Analyse]**
+* Selecteer **[!UICONTROL Connect to Analytics]**
 
    * Indien niet gelukt,
 
@@ -245,35 +248,35 @@ De instellingen opslaan:
 
 ### Framework maken {#create-framework}
 
-Nadat de basisverbinding met Adobe Analytics is geconfigureerd, moet u een framework voor de communitysite maken of bewerken. Het doel van het framework is om AEM-variabelen (Communities feature) toe te wijzen aan variabelen van Analytics (report suite).
+Nadat de basisverbinding met Adobe Analytics is geconfigureerd, moet u een framework voor de communitysite maken of bewerken. Het doel van het kader is om variabelen van de eigenschap van de Gemeenschappen (AEM) aan Analytics (rapportreeks) variabelen in kaart te brengen.
 
-* Selecteer `[+]` pictogram naast **[!UICONTROL Beschikbare kaders]** om een nieuw kader tot stand te brengen
+* Selecteer `[+]` pictogram naast **[!UICONTROL Available Frameworks]** het maken van een nieuw framework
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-* **[!UICONTROL Titel]**
+* **[!UICONTROL Title]**
 
    (Vereist) Een titel voor het weergeven van het framework
 
    Voer bijvoorbeeld het communautaire *kader voor activering in*
 
-* **[!UICONTROL Naam]**
+* **[!UICONTROL Name]**
 
    (Optioneel) Indien niet opgegeven, wordt de naam standaard ingesteld op een geldige knooppuntnaam die is afgeleid van de titel.
 
-   Ga bijvoorbeeld naar *gemeenschappen*
+   For example, enter *communities*
 
-* **[!UICONTROL Sjabloonmodel]**
+* **[!UICONTROL Template]**
 
    Selecteer `Adobe Analytics Framework`
 
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
 
-Het creëren van het Kader van Analytics opent het kader voor configuratie.
+Door het Analytics-framework te maken, opent u het configuratiekader.
 
-## Configuratie van AEM Analytics Framework {#aem-analytics-framework-configuration}
+## AEM Analytics Framework-configuratie {#aem-analytics-framework-configuration}
 
-Het doel van het framework is om AEM-variabelen toe te wijzen aan analytische variabelen (gebeurtenissen en gebeurtenissen). De variabelen van Analytics beschikbaar voor afbeelding worden [bepaald in de rapportreeks](#adobe-analytics-report-suite-for-video-reporting).
+Het doel van het framework is om AEM-variabelen toe te wijzen aan Analytics-variabelen (gebeurtenissen en gebeurtenissen). De Analytics-variabelen die beschikbaar zijn voor toewijzing worden [gedefinieerd in de rapportsuite](#adobe-analytics-report-suite-for-video-reporting).
 
 ![chlimage_1-270](assets/chlimage_1-270.png)
 
@@ -290,50 +293,50 @@ De Sidetrap is niet nodig en kan worden geminimaliseerd zodat het de toegang tot
 
 ![chlimage_1-271](assets/chlimage_1-271.png)
 
-1. De keuzelijsten Item **[!UICONTROL toevoegen +]** twee selecteren worden weergegeven
+1. Twee **[!UICONTROL Add Item +]** keuzelijsten selecteren
 1. Kies een `Report suite` van de rapportsuites verbonden aan de rekening van het Bedrijf voor selectie beschikbaar zouden moeten zijn
-1. Selecteer **[!UICONTROL Ja]** in het dialoogvenster dat wordt geopend: ```Load default server settings? Do you want to load the default server settings and overwrite current values in the Server section?```
+1. Selecteren **[!UICONTROL Yes]** in het dialoogvenster dat wordt geopend: ```Load default server settings? Do you want to load the default server settings and overwrite current values in the Server section?```
 1. Kies een `Run Mode`\
-   Publiceren **[!UICONTROL kiezen]**
+   Choose **[!UICONTROL publish]**
 
 ![chlimage_1-272](assets/chlimage_1-272.png)
 
-De analytische cloudservice en het framework zijn nu voltooid. De toewijzingen worden gedefinieerd zodra een communitysite is gemaakt en deze Analytics-service is ingeschakeld.
+De analytische cloudservice en het framework zijn nu voltooid. De toewijzingen worden gedefinieerd zodra een communitysite is gemaakt met deze Analytics-service ingeschakeld.
 
-## Analyses inschakelen voor een Community-site {#enable-analytics-for-a-community-site}
+## Analytics inschakelen voor een Community Site {#enable-analytics-for-a-community-site}
 
 ### Inschakelen voor nieuwe Community-site {#enable-for-new-community-site}
 
-U voegt als volgt de cloudservice Analytics toe terwijl u een nieuwe communitysite [maakt](sites-console.md):
+De Analytics-cloudservice toevoegen terwijl u een nieuwe communitysite [maakt](sites-console.md):
 
 
 * In stap 3
-* Onder het tabblad [](sites-console.md#analytics)ANALYSE:
+* Onder het tabblad [](sites-console.md#analytics)ANALYTICS:
 
-   * Schakel het selectievakje Analyse **[!UICONTROL inschakelen]** in
+   * Het **[!UICONTROL Enable Analytics]** selectievakje inschakelen
    * Het framework kiezen in het keuzemenu
 
-* U kunt desgewenst terugkeren naar de configuratie van het analyseframework om de variabele toewijzingen aan te passen.
+* Ga optioneel terug naar de Analytics-frameworkconfiguratie om de variabeletoewijzingen aan te passen.
 
 ### Inschakelen voor bestaande communautaire site {#enable-for-existing-community-site}
 
-U kunt als volgt de cloudservice Analytics toevoegen aan een [bestaande communitysite](sites-console.md#modifying-site-properties):
+De Analytics-cloudservice toevoegen aan een [bestaande communitysite](sites-console.md#modifying-site-properties):
 
 
-* Navigeer naar de console **[!UICONTROL Communities > Sites]** .
+* Navigate to the **[!UICONTROL Communities > Sites]** console
 * Het pictogram Site bewerken van de site van de community selecteren
 * De instellingen selecteren
 * In de sectie Analytics:
 
-   * Schakel het selectievakje Analyse **[!UICONTROL inschakelen]** in
+   * Het **[!UICONTROL Enable Analytics]** selectievakje inschakelen
    * Het framework kiezen in het keuzemenu
 
 
-* U kunt desgewenst terugkeren naar de configuratie van het analyseframework om de variabele toewijzingen aan te passen.
+* Ga optioneel terug naar de Analytics-frameworkconfiguratie om de variabeletoewijzingen aan te passen.
 
 ### Inschakelen voor aangepaste sites {#enable-for-customized-sites}
 
-Voor het correct werken van Analytics het volgen en de invoer voor een communautaire plaats, moet een paginaelement met de `scf-js-site-title` klasse en de attributen href aanwezig zijn. Er mag slechts één dergelijk element op de pagina voorkomen, zoals in een ongewijzigd `sitepage.hbs` script voor een communitysite. De waarde van `siteUrl` wordt geëxtraheerd en naar Adobe Analytics verzonden als het *sitepad*.
+Voor het correct werken van het volgen en de invoer van Analytics voor een communautaire plaats, moet een paginaelement met de `scf-js-site-title` klasse en de attributen href aanwezig zijn. Er mag slechts één dergelijk element op de pagina voorkomen, zoals in een ongewijzigd `sitepage.hbs` script voor een communitysite. De waarde van `siteUrl` wordt geëxtraheerd en naar Adobe Analytics verzonden als het *sitepad*.
 
 ```xml
 # present in default sitepage.hbs
@@ -360,11 +363,11 @@ Voor een **generische plaats** AEM die de componenten van de Gemeenschappen omva
 </div>
 ```
 
-## Analyses voor functies van Gemeenschappen {#analytics-for-communities-features}
+## Functies van Analytics for Communities {#analytics-for-communities-features}
 
-Analytics wordt automatisch gebruikt voor verschillende functies van de Gemeenschappen.
+Analytics wordt automatisch gebruikt voor verschillende functies van Gemeenschappen.
 
-De configuratie [](../../help/sites-deploying/configuring-osgi.md)OSGi van het auteursmilieu, `AEM Communities Analytics Component Configuration`, verstrekt een lijst van de componenten die voor Analytics van instrumenten zijn voorzien. De automatische toewijzing van variabelen wordt bepaald door de vermelde componenten.
+De configuratie [](../../help/sites-deploying/configuring-osgi.md)OSGi van het auteurmilieu, `AEM Communities Analytics Component Configuration`, verstrekt een lijst van de componenten die voor Analytics van instrumenten zijn voorzien. De automatische toewijzing van variabelen wordt bepaald door de vermelde componenten.
 
 Als nieuwe douanecomponenten worden gecreeerd die voor Analytics van instrumenten worden voorzien, zouden zij aan deze lijst van gevormde componenten moeten worden toegevoegd.
 
@@ -374,9 +377,9 @@ Als nieuwe douanecomponenten worden gecreeerd die voor Analytics van instrumente
 
 Opmerking: de `journal` componenten worden gebruikt om de blogfunctie te implementeren.
 
-### Toegewezen analyses aan AEM-variabelen {#mapped-analytics-to-aem-variables}
+### Analytics toegewezen aan AEM-variabelen {#mapped-analytics-to-aem-variables}
 
-Zodra de communautaire plaats met toegelaten Analytics en het cloud config kader wordt bewaard, zullen de variabelen AEM automatisch aan de gebeurtenissen en de gebeurtenissen van de Analyse worden in kaart gebracht die met evar1 en event1 beginnen, respectievelijk, en het verhogen door 1.
+Zodra de gemeenschapssite is opgeslagen met Analytics ingeschakeld en het cloud config-framework geselecteerd, worden de AEM-variabelen automatisch toegewezen aan de Analytics-gebeurtenissen en -gebeurtenissen die respectievelijk met evar1 en event1 beginnen, en met 1 verhoogd.
 
 Als het gebruiken van een bestaande rapportreeks die om het even welke variabelen binnen evar1 tot evar11 en event1 door event7 in kaart bracht, zal het noodzakelijk zijn om de variabelen [opnieuw in](#modifying-analytics-variable-mapping) kaart te brengen AEM en de originele afbeelding te herstellen.
 
@@ -399,9 +402,9 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
 
 **Voorbeelden voor eVar-waarden:**
 
-* [MIME-type](https://www.iana.org/assignments/media-types):video/mp4
+* [MIME-type](https://www.iana.org/assignments/media-types): video/mp4
 * [Titel](sites-console.md#step13asitetemplate)van communautaire site: Geometrixgemeenschappen
-* [Communautaire functienaam](functions.md):Forum
+* [Communautaire functienaam](functions.md): Forum
 * [Naam](creating-groups.md#creating-a-new-group)communautaire groep: Hiking
 * Pad naar inhoud groep van gemeenschappen: /content/sites/community/nl/groups/hiking
 * [Resourcetype](essentials.md)UGC-component: sociaal/forum/componenten/hbs/onderwerp
@@ -410,15 +413,15 @@ Hier volgt een voorbeeld van standaardtoewijzingen na het volgen van de [aan de 
 * SRP-pad naar UGC: /content/usergenerated/asi/.../forum/jmtz-topic3 of *pad van te volgen* component: /content/sites/community/nl/jcr:content/content/primary/forum
 * Pad naar community-site-inhoud: /content/sites/community/nl
 
-### Variabele-toewijzing Analytics wijzigen {#modifying-analytics-variable-mapping}
+### Analytics-variabele toewijzen wijzigen {#modifying-analytics-variable-mapping}
 
-De toewijzing van gebeurtenissen en gebeurtenissen van Analytics aan variabelen AEM is zichtbaar van de kaderconfiguratie nadat Analytics voor een communautaire plaats wordt toegelaten.
+De toewijzing van Analytics-gebeurtenissen en -gebeurtenissen aan AEM-variabelen is zichtbaar vanuit de frameworkconfiguratie nadat Analytics is ingeschakeld voor een communitysite.
 
-Nadat Analytics is toegelaten en alvorens de communautaire plaats wordt gepubliceerd, kan de afbeelding in het kader worden veranderd door de gewenste Analytics evar of de gebeurtenis van de linkerspoorstaaf te slepen en het neer te zetten in de relevante rij in de mappingstabel.
+Nadat Analytics is ingeschakeld en voordat de site van de community wordt gepubliceerd, kan de toewijzing in het framework worden gewijzigd door de gewenste Analytics-evar of -gebeurtenis van de linkerspoorstaaf te slepen en in de desbetreffende rij in de toewijzingstabel te plaatsen.
 
-Als u dubbele toewijzingen wilt voorkomen, moet u de vervangen Analytics verwijderen uit de rij door de muis erboven te plaatsen en de X te selecteren die rechts van het variabele-element Analytics wordt weergegeven.
+Als u dubbele toewijzingen wilt voorkomen, moet u de vervangen Analytics-gebeurtenis of -gebeurtenis verwijderen uit de rij door de muisaanwijzer boven de koppeling te plaatsen en de X te selecteren die rechts van het variabele-element Analytics wordt weergegeven.
 
-Als de gebeurtenissen van de Gemeenschappen en de gebeurtenissen afbeeldingen beschrijven die in de rapportreeks reeds bestonden, dan om gegevensverlies te vermijden, wijs de variabelen AEM voor de eigenschappen van Gemeenschappen aan andere gebeurtenissen en/of gebeurtenissen van Analytics toe en herstel de originele afbeeldingen.
+Als de gebeurtenissen van de Gemeenschappen en de gebeurtenissen afbeeldingen beschrijven die in de rapportreeks reeds bestonden, dan om gegevensverlies te vermijden, wijs de variabelen AEM voor de eigenschappen van Gemeenschappen aan andere gebeurtenissen van Analytics en/of gebeurtenissen toe en herstel de originele afbeeldingen.
 
 >[!CAUTION]
 >
@@ -438,14 +441,14 @@ Als de gebeurtenissen van de Gemeenschappen en de gebeurtenissen afbeeldingen be
 
 ## De website van de Gemeenschap publiceren {#publishing-the-community-site}
 
-### Analyse van variabele AEM-toewijzing verifiëren {#verify-analytics-to-aem-variable-mapping}
+### Toewijzing van Analytics naar AEM-variabelen verifiëren {#verify-analytics-to-aem-variable-mapping}
 
-Het is verstandig om de variabeletoewijzing te controleren voordat de communitysite wordt gepubliceerd, die ook de cloudservice en het framework Analytics publiceert.
+Het is verstandig om de variabeletoewijzing te controleren voordat de communitysite wordt gepubliceerd, die ook de Analytics-cloudservice en -framework publiceert.
 
 Zie secties:
 
-* [Toegewezen analyses aan AEM-variabelen](#mapped-analytics-to-aem-variables)
-* [Variabele-toewijzing Analytics wijzigen](#modifying-analytics-variable-mapping)
+* [Analytics toegewezen aan AEM-variabelen](#mapped-analytics-to-aem-variables)
+* [Analytics-variabele toewijzen wijzigen](#modifying-analytics-variable-mapping)
 
 >[!CAUTION]
 >
@@ -455,13 +458,13 @@ Zie secties:
 >* **`event1`** doorheen **`event7`**
 >
 >
-**Voordat de site van de community wordt gepubliceerd,** is het belangrijk dat de bestaande toewijzing wordt hersteld en dat de AEM-variabelen van de Communities die automatisch zijn toegewezen (wanneer Analytics is ingeschakeld voor de site van de community), worden verplaatst naar andere analytische variabelen. Deze nieuwe toewijzing moet voor alle onderdelen van de Gemeenschappen consistent zijn.
+**Voordat de site van de community wordt gepubliceerd,** is het belangrijk dat de bestaande toewijzing wordt hersteld en dat de AEM-variabelen van de Communities die automatisch zijn toegewezen (wanneer Analytics was ingeschakeld voor de site van de community), worden verplaatst naar andere Analytics-variabelen. Deze nieuwe toewijzing moet voor alle onderdelen van de Gemeenschappen consistent zijn.
 >
 >Als u dit niet doet, kan dit leiden tot onherstelbaar gegevensverlies.
 
 ### Primaire uitgever {#primary-publisher}
 
-Wanneer de gekozen plaatsing een [publiceerlandbouwbedrijf](topologies.md#tarmk-publish-farm)is, dan moet één AEM publiceren instantie als primaire uitgever voor het opiniepeilen van de Analyse van Adobe voor rapportgegevens worden geïdentificeerd om aan [SRP](working-with-srp.md)te schrijven.
+Wanneer de gekozen plaatsing een [publiceerlandbouwbedrijf](topologies.md#tarmk-publish-farm)is, dan moet één AEM publiceren instantie worden geïdentificeerd als primaire uitgever voor het opiniepeilen van Adobe Analytics voor rapportgegevens om aan [SRP](working-with-srp.md)te schrijven.
 
 Door gebrek, identificeert de configuratie `AEM Communities Publisher Configuration` OSGi zijn publicatiegeval als primaire uitgever, zodat alle publiceer instanties in een publicatielandbouwbedrijf zich als primair zou identificeren.
 
@@ -475,13 +478,13 @@ Voor specifieke instructies, zie de primaire uitgeverssectie van het [Opstellen 
 
 ### De cryptosleutel dupliceren {#replicate-the-crypto-key}
 
-De gegevens voor Adobe Analytics zijn gecodeerd. Om de replicatie of verzending van gecodeerde analysegegevens tussen auteur en uitgever te vergemakkelijken, moeten alle AEM-instanties dezelfde hoofdcoderingssleutel delen.
+De Adobe Analytics-gebruikersgegevens zijn versleuteld. Om de replicatie of verzending van gecodeerde analysegegevens tussen auteur en uitgever te vergemakkelijken, moeten alle AEM-instanties dezelfde primaire coderingssleutel delen.
 
 Volg hiervoor de instructies bij [Replicate the Crypto Key](deploy-communities.md#replicate-the-crypto-key).
 
-### Community Site en Analytics Cloud Service publiceren {#publish-community-site-and-analytics-cloud-service}
+### Community Site en Analytics-Cloud Service publiceren {#publish-community-site-and-analytics-cloud-service}
 
-Zodra de Analytics-cloudservice is ingeschakeld voor een communitysite en, indien nodig, de [toewijzing van Analytics aan AEM-variabelen is aangepast](#mapped-analytics-to-aem-variables), moet de configuratie worden gerepliceerd naar de publicatieomgeving door de communitysite [](sites-console.md#publishing-the-site)(opnieuw) te publiceren.
+Nadat de Analytics-cloudservice is ingeschakeld voor een communitysite en, indien nodig, de [toewijzing van Analytics aan AEM-variabelen is aangepast](#mapped-analytics-to-aem-variables), moet de configuratie worden gerepliceerd naar de publicatieomgeving door de communitysite [](sites-console.md#publishing-the-site)(opnieuw)te publiceren.
 
 ## Rapporten van Analytics verkrijgen {#obtaining-reports-from-analytics}
 
@@ -499,7 +502,7 @@ Het vraaginterval blijft aan 10 seconden in gebreke.
 
 Zodra een Analytics toegelaten communautaire plaats is gepubliceerd, kan de configuratie [](../../help/sites-deploying/configuring-osgi.md)OSGi van de primaire uitgever, `AEM Communities Analytics Report Importer`, worden gevormd om het standaardopiniepeilingsinterval voor die configuraties te plaatsen die niet individueel in CRXDE worden gevormd.
 
-Met het pollinginterval bepaalt u de frequentie van aanvragen bij Adobe Analytics voor gegevens die in [SRP](working-with-srp.md)moeten worden opgehaald en opgeslagen.
+Met het pollinginterval bepaalt u de frequentie van aanvragen bij Adobe Analytics voor gegevens die moeten worden opgehaald en opgeslagen in [SRP](working-with-srp.md).
 
 Wanneer de gegevens als &quot;grote gegevens&quot; kunnen worden gecategoriseerd, kan een frequentere opiniepeiling een grote belasting op de plaats van de gemeenschap veroorzaken.
 
@@ -523,7 +526,7 @@ Het forumonderwerp is momenteel het enige voorbeeld van deze aanpassing:
 
    * Bijvoorbeeld, `/content/sites/engage/en/jcr:content`
 
-* Navigeer naar de component die is geconfigureerd voor Analytics-rapportage
+* Navigeren naar de component die is geconfigureerd voor Analytics-rapportage
 
    * Bijvoorbeeld, `analytics/reportConfigs/social_forum_components_hbs_topic`
 
@@ -546,7 +549,7 @@ Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, export
 
 ## Bronnen {#resources}
 
-* Adobe Marketing Cloud: Help en referentie [Analytics](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Analytics Help en Reference](https://marketing.adobe.com/resources/help/en_US/reference/)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
-* AEM: [Analyse met externe providers](../../help/sites-administering/external-providers.md)
+* AEM: [Analytics met externe providers](../../help/sites-administering/external-providers.md)
 
