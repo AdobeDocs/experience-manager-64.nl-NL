@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: 280c2b3cc8026988472d4ad0cf6649fa8a7c9c38
+workflow-type: tm+mt
+source-wordcount: '509'
+ht-degree: 0%
 
 ---
 
@@ -45,19 +48,19 @@ Alle toegang tot gegevensvoorwerpen wordt bemiddelen door de bewaarplaats en daa
 
 Smeedraaien voor aanvragen tussen sites (CSRF) wordt beperkt door automatisch een cryptografisch token te injecteren in alle formulieren en AJAX-verzoeken en dit token te verifiëren op de server voor elke POST.
 
-Bovendien verscheept AEM met een verwijzing-kopbal gebaseerd filter, dat kan worden gevormd om POST- verzoeken van specifiek wit-vermelde gastheren slechts toe te staan.
+Daarnaast wordt AEM geleverd met een op referentie-header gebaseerd filter, dat kan worden geconfigureerd om POST-verzoeken van specifieke hosts (gedefinieerd in een lijst) *alleen* toe te staan.
 
 ## 6. Beveiligingsfout {#security-misconfiguration}
 
 Het is onmogelijk te garanderen dat alle software altijd correct is geconfigureerd. Wij streven er echter naar zoveel mogelijk begeleiding te bieden en de configuratie zo eenvoudig mogelijk te maken. Bovendien wordt AEM geleverd met [geïntegreerde beveiligingscontroles](/help/sites-administering/operations-dashboard.md) die u helpen de beveiligingsconfiguratie in één oogopslag te controleren.
 
-Controleer de [lijst](/help/sites-administering/security-checklist.md) Beveiligingscontrole voor meer informatie die u stapsgewijze verhardingsinstructies biedt.
+Controleer de [lijst](/help/sites-administering/security-checklist.md) Beveiligingscontrole voor meer informatie, die u stapsgewijze verhardingsinstructies biedt.
 
 ## 7. Onveilige cryptografische opslag {#insecure-cryptographic-storage}
 
 Wachtwoorden worden opgeslagen als cryptografische hashes in het gebruikersknooppunt; deze knooppunten kunnen standaard alleen door de beheerder en de gebruiker zelf worden gelezen.
 
-Gevoelige gegevens zoals referenties van derden worden in gecodeerde vorm opgeslagen met een door FIPS 140-2 gecertificeerde cryptografische bibliotheek.
+Gevoelige gegevens zoals referenties van derden worden in gecodeerde vorm opgeslagen met behulp van een voor FIPS 140-2 gecertificeerde cryptografische bibliotheek.
 
 ## 8. Kan URL-toegang niet beperken {#failure-to-restrict-url-access}
 
