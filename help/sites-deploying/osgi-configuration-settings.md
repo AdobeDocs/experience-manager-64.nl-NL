@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
 translation-type: tm+mt
-source-git-commit: 100afffb65bd2c3453deb59708f7496e0eef3785
+source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+workflow-type: tm+mt
+source-wordcount: '3805'
+ht-degree: 0%
 
 ---
 
@@ -109,7 +112,7 @@ Zie [AEM Logging](/help/sites-deploying/configure-logging.md) and [Sling Logging
 
 Bepaalde instellingen kunnen van invloed zijn op de prestaties. Deze instellingen moeten waar mogelijk worden uitgeschakeld, met name voor een productie-instantie.
 
-* De **bron-VM** en **doel-VM** definiëren de JDK-versie als de JVM-versie van de runtime
+* VM **voor** bron en **Target VM**, definieert de JDK-versie als de JVM voor uitvoering
 
 * voor productiegevallen:
 
@@ -190,7 +193,7 @@ De dienst van de verwijzingsfilter is de dienst OSGi die u toestaat om te vormen
 
 * welke http-methoden moeten worden gefilterd
 * Geeft aan of een lege verwijzingskoptekst is toegestaan
-* en een witte lijst met servers die naast de serverhost zijn toegestaan.
+* en een lijst met servers die naast de serverhost zijn toegestaan.
 
 Zie Controlelijst voor [beveiliging - Problemen met de smederij](/help/sites-administering/security-checklist.md#protect-against-cross-site-request-forgery) voor aanvragen voor meerdere sites voor meer informatie.
 
@@ -317,7 +320,7 @@ Wanneer u [gesloten gebruikersgroepen](/help/sites-administering/cug.md) gebruik
 
 **Uur CQ-hoofdtoewijzing** configureren:
 
-* **Doelpad** om te bepalen waar een aanvraag naar &quot; `/`&quot; wordt omgeleid.
+* **Target Path** to define where a request to &quot; `/`&quot; will be redirected to.
 
 Er zijn [twee UIs](/help/sites-authoring/select-ui.md) beschikbaar in AEM:
 
@@ -326,13 +329,13 @@ Er zijn [twee UIs](/help/sites-authoring/select-ui.md) beschikbaar in AEM:
 
 Met AEM-hoofdtoewijzing kunt u de interface configureren die u als standaard voor uw instantie wilt gebruiken:
 
-* Als u de gebruikersinterface met geoptimaliseerde aanrakingen wilt instellen als de standaardinterface, moet het **doelpad** wijzen naar:
+* Als u wilt dat de gebruikersinterface met geoptimaliseerde aanrakingen de standaardinterface is, moet het **Target-pad** wijzen naar:
 
    ```
       /projects.html
    ```
 
-* Om klassieke UI als gebrek UI te hebben zou het Weg **van het** Doel moeten richten aan:
+* Om klassieke UI als gebrek UI te hebben zou de Weg **van** Target aan wijzen:
 
    ```
       /welcome.html
