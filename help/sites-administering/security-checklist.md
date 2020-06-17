@@ -10,7 +10,10 @@ topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
 translation-type: tm+mt
-source-git-commit: 0e04ab8cd32dfdff47e333169c4f202e81a82fe3
+source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 0%
 
 ---
 
@@ -104,7 +107,7 @@ Adobe raadt u aan aangepaste pagina&#39;s voor fouthandlers te definiëren, met 
 >
 >Zie [hoe ik douanemanuscripten of foutenhandlers](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) kennisbasisartikel voor meer details kan tot stand brengen.
 
-### Volledige lijst voor beveiligingscontrole voor verzending {#complete-dispatcher-security-checklist}
+### Dispatcher-beveiligingscontrolelijst voltooien {#complete-dispatcher-security-checklist}
 
 AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. Adobe raadt u ten zeerste aan de [beveiligingscontrolelijst](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)van de verzender in te vullen.
 
@@ -168,9 +171,9 @@ De dienst van de verwijzingsfilter is de dienst OSGi die u toestaat om te vormen
 
 * welke http-methoden moeten worden gefilterd
 * Geeft aan of een lege verwijzingskoptekst is toegestaan
-* en een witte lijst met servers die naast de serverhost zijn toegestaan.
+* en een lijst met servers die naast de serverhost zijn toegestaan.
 
-Standaard staan alle variaties van localhost en de huidige hostnamen waarnaar de server is gebonden in de witte lijst.
+   Standaard staan alle variaties van localhost en de huidige hostnamen waar de server aan gebonden is, in de lijst.
 
 Om de dienst van het verwijzingsfilter te vormen:
 
@@ -314,7 +317,7 @@ Om misbruik van DoS te helpen voorkomen, kunt u:
 >
 >Deze beperking moet alleen worden uitgevoerd op AEM-omgevingen die geen Forms gebruiken.
 
-Aangezien AEM geen uit de doosindexen voor de `FormChooserServlet`verstrekt, zal het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, gewoonlijk die de instantie AEM aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het **&amp;ast;.form.** &amp;ast; tekenreeks in query&#39;s.
+Aangezien AEM geen uit de doosindexen voor de `FormChooserServlet`verstrekt, zal het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, gewoonlijk die de instantie AEM aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het **&amp;ast;.form.&amp;ast;** tekenreeks in query&#39;s.
 
 Volg onderstaande stappen om dit te beperken:
 
