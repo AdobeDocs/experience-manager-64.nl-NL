@@ -8,10 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c142d7b3-301b-447c-a715-452c905565d1
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 801941c060e1a912f3969bca1e89962241e7fbe0
 workflow-type: tm+mt
-source-wordcount: '834'
-ht-degree: 14%
+source-wordcount: '808'
+ht-degree: 15%
 
 ---
 
@@ -30,9 +30,9 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 
 ### Apache Sling Authentication Service configureren {#configure-apache-sling-authentication-service}
 
-1. Ga naar https://[*server*]:[*poort*]/systeem/console/configMgr op AEM Forms die op OSGi of
+1. Ga naar `https://[server]:[port]/system/console/configMgr` AEM Forms die op OSGi lopen of
 
-   https://[*server*]:[*poort*]/lc/system/console/configMgr op AEM Forms die in JEE worden uitgevoerd.
+   `https://[server]:[port]/lc/system/console/configMgr` op AEM Forms die op JEE lopen.
 
 1. Zoek en klik op de configuratie van **Apache Sling Authentication Service** om deze te openen in de bewerkingsmodus.
 
@@ -59,8 +59,8 @@ De [beveiligde modus](/help/forms/using/get-xdp-pdf-documents-aem.md) is standaa
 
 1. Meld u als beheerder aan bij de AEM-webconsole.
 
-   * URL voor AEM Forms op OSGi is https://[server]:[poort]/systeem/console/configMgr
-   * URL voor AEM Forms in JEE is https://[*server*]:[*port*]/lc/system/console/configMgr
+   * URL voor AEM Forms op OSGi is `https://[server]:[port]/system/console/configMgr`
+   * URL voor AEM Forms op JEE is `https://[server]:[port]/lc/system/console/configMgr`
 
 1. Openen **[!UICONTROL Mobile Forms Configurations]** voor bewerken.
 1. Schakel de **[!UICONTROL Protected Mode]** optie uit en klik op **[!UICONTROL Save]**.
