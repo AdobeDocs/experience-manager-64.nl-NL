@@ -6,7 +6,10 @@ seo-description: Een overzicht van de essentiële capaciteiten van AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
-source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
+source-git-commit: 8aab981849152e6826dd4d0d68867790a85f373a
+workflow-type: tm+mt
+source-wordcount: '153'
+ht-degree: 2%
 
 ---
 
@@ -15,7 +18,7 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 
 ## AEM Foundation {#aem-foundation}
 
-[Meer informatie over het installeren, implementeren en de architectuur van Adobe Experience Manager 6.4](/help/sites-deploying/home.md), inclusief de cloudimplementatie van Adobe Managed Services.
+[Meer informatie over de installatie, implementatie en architectuur van Adobe Experience Manager 6.4](/help/sites-deploying/home.md), inclusief de implementatie van Adobe Managed Services-cloud.
 
 [Leer hoe u een AEM-project](/help/managing/home.md)beheert.
 
@@ -33,11 +36,11 @@ source-git-commit: 7cb8fbc2577b9feafbcbddbd078ab06e1a341c73
 
 [Digitale formulieren maken, beheren, publiceren en bijwerken.](/help/forms/home.md)
 
-## AEM-schermen {#aem-screens}
+## AEM Screens {#aem-screens}
 
-[Leer over de digitale signaaloplossing om dynamische en interactieve ervaringen te publiceren.](/help/screens/home.md)
+[Leer over de digitale signaaloplossing om dynamische en interactieve ervaringen te publiceren.](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
-## AEM-gemeenschappen {#aem-communities}
+## AEM Communities {#aem-communities}
 
 [Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.](/help/communities/home.md)
 
