@@ -10,7 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e3f2dc5a-ef5e-432c-be07-b3dedbd6549b
 translation-type: tm+mt
-source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '1610'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ De SharePoint-connector ondersteunt de volgende basisfuncties:
 * SharePoint-beveiligingsinstellingen voor benaderde inhoud bevestigen door native SharePoint-verificatie en -verificatie toe te passen
 * Inhoudsintegratie met Inhoudszoeker
 * AEM-componenten gebruiken, zoals External Resource, om SharePoint-afbeeldingen en video&#39;s weer te geven
-* SharePoint synchroniseren met AEM-elementen
+* SharePoint synchroniseren met AEM Assets
 
 Alle functies worden uitgevoerd gebruikend de inheemse Webdiensten van SharePoint als interface aan de inhoud en de diensten van SharePoint.
 
@@ -67,7 +70,7 @@ De schakelaar vereist het volgende:
 
 De SharePoint-connector is beschikbaar voor downloaden vanuit [pakketshare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-17673).
 
-### Ondersteunde platforms {#supported-platforms}
+### Ondersteunde Platforms {#supported-platforms}
 
 De schakelaar steunt het volgende:
 
@@ -90,7 +93,7 @@ De schakelaar steunt het volgende:
 
 AEM-pakket delen wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Raadpleeg de documentatie bij [Pakketdeling voor meer informatie](/help/sites-administering/package-manager.md#package-share).
 
-Als u Pakketdeling wilt openen op de welkomstpagina van AEM, tikt u op **Gereedschappen** of klikt u op **Pakket delen**. U hebt een geldige Adobe-id nodig die het e-mailadres van uw bedrijf bevat. Nadat u zich hebt aangemeld bij uw account, kunt u bovendien een aanvraag indienen voor toegang tot het delen van pakketten.
+Als u Pakketdeling wilt openen op de welkomstpagina van AEM, tikt u op **Gereedschappen** of klikt u op **Pakket delen**. U hebt een geldige Adobe ID nodig die uw bedrijfs-e-mailadres bevat. Nadat u zich hebt aangemeld bij uw account, kunt u bovendien een aanvraag indienen voor toegang tot het delen van pakketten.
 
 #### Integreren met AEM {#integrating-with-aem}
 
@@ -132,9 +135,9 @@ De schakelaar kan ook voor veelvoudige werkruimten worden gevormd. In dit geval 
 `<name>` is de naam van de JCR-werkruimte en\
 `<url>` is de URL van de SharePoint-server voor die werkruimte.
 
-Voer in AEM nog één stap uit, afgezien van de bovenstaande configuratiestappen. Whitelist the &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39; bundle.
+Voer in AEM nog één stap uit, afgezien van de bovenstaande configuratiestappen. Maak een lijst met de bundel &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
 
-Voer de volgende stappen uit om bundels voor whitelist in AEM uit te voeren:
+Voer de volgende stappen uit om lijstbundels in AEM toe te staan:
 
 1. Navigeer naar de OSGi Management Console: http://localhost:4502/system/console/configMgr.
 
@@ -221,7 +224,7 @@ Ga naar: [http://localhost:4502/system/console/bundles](http://localhost:4502/sy
 1. Ga naar [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 1. Klik op OSGI > Configuratie.
 1. Zoek naar de Schakelaar van JCR van de **Dag voor Microsoft SharePoint**.
-1. Click `Edit the configuration values`.
+1. Klik op `Edit the configuration values`.
 1. Stel de waarde van SharePoint Connection Factory in op `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Click **Save**.
 
