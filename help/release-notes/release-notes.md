@@ -1,8 +1,8 @@
 ---
 title: Algemene opmerkingen bij de release van Adobe Experience Manager 6.4
-seo-title: Releaseopmerkingen
-description: 'In Adobe Experience Manager 6.4 vindt u een overzicht van de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen. '
-seo-description: 'In Adobe Experience Manager 6.4 vindt u een overzicht van de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen. '
+seo-title: Release-opmerkingen
+description: 'Adobe Experience Manager 6.4 merkt op beschrijvend de versieinformatie, wat nieuw is, hoe te om en gedetailleerde veranderingslijsten te installeren. '
+seo-description: 'Adobe Experience Manager 6.4 merkt op beschrijvend de versieinformatie, wat nieuw is, hoe te om en gedetailleerde veranderingslijsten te installeren. '
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '2746'
+ht-degree: 1%
 
 ---
 
@@ -46,17 +49,17 @@ source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
 
 ### Trivia {#trivia}
 
-De releasecyclus voor deze versie van Adobe Experience Manager is op 27 april 2017 gestart, heeft 22 versies van de functie voor kwaliteitsborging en foutopsporing doorlopen en is op 22 maart 2018 afgelopen. Het totale aantal klantgerelateerde problemen, inclusief verbeteringen en nieuwe functies die in deze release zijn opgelost, is 704.
+De releasecyclus voor deze versie van Adobe Experience Manager begon op 27 april 2017, doorliep 22 versies van kwaliteitsborging en het bevestigen van fouten, en eindigde op 22 maart 2018. Het totale aantal klantgerelateerde problemen, inclusief verbeteringen en nieuwe functies die in deze release zijn opgelost, is 704.
 
-Adobe Experience Manager 6.4 is over het algemeen beschikbaar vanaf 4 april 2018.
+Adobe Experience Manager 6.4 is over het algemeen beschikbaar sinds 4 april 2018.
 
 >[!NOTE]
 >
 >Adobe raadt u aan het nieuwste servicepakket te installeren, aangezien alle nieuwe functiepakketten alleen via [servicepacks](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)worden geleverd.
 
-## Nieuwe functies {#what-s-new}
+## Wat is er nieuw {#what-s-new}
 
-Adobe Experience Manager 6.4 is een upgrade-versie naar de codebasis van Adobe Experience Manager 6.3. Het verstrekt nieuwe en verbeterde functionaliteit, zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit van de klant en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook het grootste deel van alle de eigenschapspakketten, hotfix, en de versies van het de dienstpak van de Manager van de Ervaring van Adobe 6.3.
+Adobe Experience Manager 6.4 is een verbeteringsversie aan Adobe Experience Manager 6.3 codebasis. Het verstrekt nieuwe en verbeterde functionaliteit, zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit van de klant en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook de meerderheid van alle Adobe Experience Manager 6.3 eigenschapspakken, hete moeilijke situatie, en de versies van het de dienstpak.
 
 De onderstaande lijst biedt een overzicht, terwijl op de volgende pagina&#39;s alle details worden weergegeven.
 
@@ -64,7 +67,7 @@ De onderstaande lijst biedt een overzicht, terwijl op de volgende pagina&#39;s a
 
 Volledige lijst met wijzigingen in [AEM Foundation](wcm-platform.md).
 
-Het platform van Adobe Experience Manager 6.4 is gebaseerd op bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java Content Repository: Apache Jackrabbit Oak 1.8.2.
+Het platform van Adobe Experience Manager 6.4 bouwt voort op de bijgewerkte versies van het op OSGi gebaseerde kader (Apache Sling en Apache Felix) en de Inhoudsgegevensbank van Java: Apache Jackrabbit Oak 1.8.2.
 
 De QuickStart gebruikt Eclipse Jetty 9.3.22 als servlet-engine.
 
@@ -105,7 +108,7 @@ Raadpleeg de [documentatie](/help/sites-authoring/home.md) bij het schrijven voo
 
 Ga voor meer informatie naar [deze documentatiepagina](/help/sites-deploying/indexing-via-the-oak-run-jar.md).
 
-#### Toezicht {#monitoring}
+#### Bewaking {#monitoring}
 
 * Een nieuw [Systeemoverzicht](/help/sites-administering/operations-dashboard.md#system-overview) biedt een momentopnamergave van alle aan prestaties gerelateerde systeemstatus en -activiteiten
 * Een nieuwe reeks [gezondheidscontroles](/help/sites-administering/operations-dashboard.md#health-checks) rond indexering, vragen en onderhoud
@@ -123,9 +126,9 @@ Ga voor meer informatie naar [deze documentatiepagina](/help/sites-deploying/ind
 * [Herstructurering](/help/sites-deploying/repository-restructuring.md)van de opslagplaats: aanzienlijke herstructurering ( hoofdzakelijk / enz . ) om verbeteringen te vergemakkelijken en de toepassing van beste praktijken te bevorderen ;
 * Meer algemene informatie over upgrades vindt u op [deze pagina](/help/sites-deploying/upgrade.md) voor meer informatie.
 
-### Sites van Experience Manager {#experience-manager-sites}
+### Experience Manager-sites {#experience-manager-sites}
 
-Volledige lijst met wijzigingen in [AEM-sites en invoegtoepassingen](sites.md).
+Volledige lijst met wijzigingen in [AEM Sites en invoegtoepassingen](sites.md).
 
 #### Vloeiende ervaringen {#fluid-experiences}
 
@@ -137,7 +140,7 @@ Nieuw in 6.4 is een visuele redacteur van het [inhoudsmodel](/help/assets/conten
 
 **Ervaringsfragmenten**
 
-Het maken van variaties in een fragment met dezelfde inhoud maar verschillende lay-outs is nu efficiënter dankzij de mogelijkheid Bouwstenen te maken. Naast het verzenden van Experience Fragments naar Facebook en Pinterest, is het nu mogelijk om ze als aanbieding naar Adobe Target te verzenden.
+Het maken van variaties in een fragment met dezelfde inhoud maar verschillende lay-outs is nu efficiënter dankzij de mogelijkheid Bouwstenen te maken. Naast het verzenden van Experience Fragments naar Facebook en Pinterest, is het nu mogelijk om ze als aanbieding naar Adobe Target te sturen.
 
 **Inhoudsservices**
 
@@ -147,17 +150,17 @@ Er zijn verschillende verbeteringen aangebracht in Sling Model Exporter en de Co
 
 AEM 6.4 voltooit de transformatie naar het volgende generatie componentenmodel. Het concept van de Componenten van de Kern dat in AEM 6.3 wordt geïntroduceerd, en nu door het Systeem van de Stijl wordt aangesloten, verstrekt een efficiënte manier om nieuwe te bouwen en bestaande plaatsen uit te breiden.
 
-Aanbevolen zelfstudie voor meer informatie over hoe u het nieuwe componentmodel het beste kunt gebruiken: Aan de [slag met AEM-sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+Aanbevolen zelfstudie voor meer informatie over hoe u het nieuwe componentmodel het beste kunt gebruiken: [Aan de slag met AEM Sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
 #### Scherminvoegtoepassing {#screens-add-on}
 
-AEM Screens staat voor een consistente boodschap via alle marketingkanalen, inclusief Digital Signage en kiosk-netwerken. AEM 6.4 biedt extra ondersteuning voor het uitvoeren van de Sigage Player op Microsoft Windows- en Google Chrome OS-hardware. Bovendien zijn verbeteringen op het gebied van extern apparaatbeheer en programma&#39;s (groepen kanalen) beschikbaar.
+AEM Screens staan voor een consistente boodschap via alle marketingkanalen, waaronder Digital Signage en kiosk-netwerken. AEM 6.4 biedt extra ondersteuning voor het uitvoeren van de Sigage Player op Microsoft Windows- en Google Chrome OS-hardware. Bovendien zijn verbeteringen op het gebied van extern apparaatbeheer en programma&#39;s (groepen kanalen) beschikbaar.
 
-Raadpleeg de gebruikershandleiding bij [AEM-schermen voor meer informatie over de schermupdates](/help/screens/home.md).
+Raadpleeg de gebruikershandleiding voor [AEM Screens voor meer informatie over de schermupdates](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
 
-### Experience Manager-gemeenschappen {#experience-manager-communities}
+### Experience Manager Communities {#experience-manager-communities}
 
-AEM 6.4 voegt veel nieuwe functies en verbeteringen toe aan de Gemeenschappen. Volledige lijst met wijzigingen is beschikbaar in [AEM-gemeenschappen](communities-release-notes.md). De belangrijkste kenmerken van deze release zijn:
+AEM 6.4 voegt veel nieuwe functies en verbeteringen toe aan de Gemeenschappen. Volledige lijst met wijzigingen is beschikbaar in [AEM Communities](communities-release-notes.md). De belangrijkste kenmerken van deze release zijn:
 
 #### Verbeteringen voor modernisering {#enhancements-to-moderation}
 
@@ -197,9 +200,9 @@ De functies Toewijzing en Catalogus zijn nu beschikbaar in groepen. Op deze mani
 
 ![toewijzingscatalogus](assets/assignmentcatalog.png)
 
-### Elementen van Experience Manager {#experience-manager-assets}
+### Experience Manager Assets {#experience-manager-assets}
 
-AEM 6.4 biedt verschillende nieuwe functies en verbeteringen aan Middelen, waaronder nieuwe, verbeterde CreativeCloud-integratie, belangrijke vernieuwingen op het gebied van kunstmatige intelligentie, verbeterd metagegevensbeheer, verbeterde rapportering en verbeterde gebruikerservaring. De volledige lijst met wijzigingen die beschikbaar zijn in [AEM Assets](assets.md). De belangrijkste punten van de release zijn:
+AEM 6.4 biedt verschillende nieuwe functies en verbeteringen aan Middelen, waaronder nieuwe, verbeterde CreativeCloud-integratie, belangrijke vernieuwingen op het gebied van kunstmatige intelligentie, verbeterd metagegevensbeheer, verbeterde rapportering en verbeterde gebruikerservaring. De volledige lijst van veranderingen beschikbaar in [AEM Assets](assets.md). De belangrijkste punten van de release zijn:
 
 **Adobe-elementkoppeling**
 
@@ -235,11 +238,11 @@ Meerdere verbeteringen om het bladeren, zoeken en beheren van middelen voor gebr
 
 **Brand Portal**
 
-Verschillende verbeteringen op het gebied van metagegevens, rapportage, digitale rechten, aanmeldingservaring en publicatieprestaties voor middelendistributie. Zie [Nieuw in AEM Assets Brand Portal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)voor meer informatie over de nieuwe verbeteringen en functies.
+Verschillende verbeteringen op het gebied van metagegevens, rapportage, digitale rechten, aanmeldingservaring en publicatieprestaties voor middelendistributie. Om over de nieuwe verhogingen en de eigenschappen te weten te komen, zie [Nieuw in het Portaal](https://helpx.adobe.com/experience-manager/brand-portal/using/whats-new.html)van het Merk van AEM Assets.
 
-#### Dynamische media-invoegtoepassing {#dynamic-media-add-on}
+#### Invoegtoepassing Dynamic Media {#dynamic-media-add-on}
 
-AEM 6.4 bevat veel nieuwe functies en verbeteringen voor dynamische media. De volledige lijst is beschikbaar in [AEM Assets](assets.md). De belangrijkste hoogtepunten omvatten het volgende:
+AEM 6.4 bevat veel nieuwe functies en verbeteringen voor Dynamic Media. De volledige lijst is beschikbaar in [AEM Assets](assets.md). De belangrijkste hoogtepunten omvatten het volgende:
 
 **Slim uitsnijden**
 
@@ -247,7 +250,7 @@ Smart Crop, aangedreven door Adobe Sensei, biedt automatisch niet-destructieve b
 
 Raadpleeg de documentatie bij [Afbeeldingsprofielen](/help/assets/image-profiles.md) voor meer informatie over het gebruik van Slim uitsnijden.
 
-Zie Dynamische media-elementen [toevoegen aan pagina](/help/assets/adding-dynamic-media-assets-to-pages.md) &#39;s voor meer informatie over het werken met Slim uitsnijden in de component Dynamische media.
+Zie Dynamic Media-elementen [toevoegen aan pagina](/help/assets/adding-dynamic-media-assets-to-pages.md) &#39;s voor meer informatie over het werken met Slim uitsnijden in de component Dynamic Media.
 
 **Smart Imaging**
 
@@ -293,7 +296,7 @@ U kunt Livefyre integreren met uw AEM 6.4-exemplaar. Hier vindt u informatie ove
 
 Adobe gebruikt een klantgericht ontwikkelingsmodel dat klanten toestaat om aan alle stadia van het ontwikkelingsproces, tijdens specificatie, ontwikkeling en het testen bij te dragen. Onze dank gaat uit naar alle klanten en partners die een bijdrage leveren aan dit proces.
 
-Adobe beschikt over de procedures en processen om verzameling, prioritering en tracering van de klantgerichte oplossing van problemen en ontwikkeling van verbeteringsverzoeken mogelijk te maken. Het ondersteuningsportaal [voor](https://helpx.adobe.com/marketing-cloud/contact-support.html) Adobe Marketing Cloud is geïntegreerd met het Adobe-systeem voor verbetering en foutopsporing. De vragen van de klant worden geïdentificeerd en opgelost met de Zorg van de Klant waar mogelijk. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun en garantiekwesties en betaalde klantenverhogingen.
+Adobe beschikt over de procedures en processen om verzameling, prioritering en tracering van de klantgerichte oplossing van problemen en ontwikkeling van verbeteringsverzoeken mogelijk te maken. Het ondersteuningsportal [voor](https://helpx.adobe.com/marketing-cloud/contact-support.html) Adobe Marketingen Cloud is geïntegreerd met het Adobe-systeem voor verbetering en foutopsporing. Vragen van de klant worden waar mogelijk met de klantenservice geïdentificeerd en opgelost. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun en garantiekwesties en betaalde klantenverhogingen.
 
 Dit proces van prioritering heeft meer dan 500 klantgerichte veranderingen opgeleverd die in AEM 6.4 worden bevestigd.
 
@@ -314,7 +317,7 @@ Dit proces van prioritering heeft meer dan 500 klantgerichte veranderingen opgel
 * Core Components ([GitHub-project](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
 * We.Retail Reference Implementation ([lees meer](/help/sites-developing/we-retail.md))
 * Project Blueprint Archetype ([GitHub-project](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
-* AEM-schermlagen voor verschillende doelplatforms ([downloaden](https://download.macromedia.com/screens/))
+* AEM Screens voor verschillende doelplatforms ([downloaden](https://download.macromedia.com/screens/))
 * Smart Content Language Models. Engels is vooraf geïnstalleerd - meer talen kunnen worden gedownload
 
    * [Duits](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/smartcontent-model-de)
@@ -326,7 +329,7 @@ Dit proces van prioritering heeft meer dan 500 klantgerichte veranderingen opgel
 
 **Assets**
 
-* Adobe Experience Manager-bureaubladtoepassing ([lees meer](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) en [download](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
+* Adobe Experience Manager desktop app ([lees meer](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) en [download](https://helpx.adobe.com/experience-manager/kb/download-companion-app.html))
 
 * Pakket maken om verbeterde PDF-rasterfunctie toe te voegen ([lees meer](/help/assets/aem-pdf-rasterizer.md) en [download](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/product/assets/aem-assets-pdf-rasterizer-pkg))
 
@@ -334,7 +337,7 @@ Dit proces van prioritering heeft meer dan 500 klantgerichte veranderingen opgel
 
 **Formulieren**
 
-* Pakketten voor AEM-formuliermogelijkheden:
+* Pakketten voor AEM Forms mogelijkheden:
 
    * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
    * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
@@ -365,7 +368,7 @@ Zie [installatieinstructies](/help/sites-deploying/custom-standalone-install.md)
 
 Zie de [upgradedocumentatie](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies.
 
-## Ondersteunde platforms {#supported-platforms}
+## Ondersteunde Platforms {#supported-platforms}
 
 Hier vindt u de volledige matrix met ondersteunde platforms, inclusief. Ondersteuning op [AEM 6.4 — Technische vereisten](/help/sites-deploying/technical-requirements.md)
 
@@ -377,7 +380,7 @@ Hier vindt u de volledige matrix met ondersteunde platforms, inclusief. Onderste
 
 Adobe evalueert voortdurend de mogelijkheden in het product en is van plan om in de loop der tijd de mogelijkheden te vervangen door krachtigere versies, of besluit om geselecteerde onderdelen opnieuw te implementeren om beter voorbereid te zijn op toekomstige verwachtingen of uitbreidingen.
 
-Voor Adobe Experience Manager 6.4 [leest u de lijst met afgekeurde en verwijderde mogelijkheden](deprecated-removed-features.md). De pagina bevat ook een vooraankondiging van wijzigingen in 2019 en een belangrijke kennisgeving voor klanten die een update uitvoeren van eerdere releases.
+Voor Adobe Experience Manager 6.4, [lees de lijst van afgekeurde en verwijderde mogelijkheden](deprecated-removed-features.md). De pagina bevat ook een vooraankondiging van wijzigingen in 2019 en een belangrijke kennisgeving voor klanten die een update uitvoeren van eerdere releases.
 
 ## Lijsten met gedetailleerde wijzigingen {#detailed-changes-lists}
 
@@ -385,9 +388,9 @@ Voor Adobe Experience Manager 6.4 [leest u de lijst met afgekeurde en verwijderd
 
 [AEM Assets](assets.md)
 
-[AEM-gemeenschappen](communities-release-notes.md)
+[AEM Communities](communities-release-notes.md)
 
-[AEM-formulieren](forms.md)
+[AEM Forms](forms.md)
 
 [AEM Foundation](wcm-platform.md)
 
@@ -399,7 +402,7 @@ Voor Adobe Experience Manager 6.4 [leest u de lijst met afgekeurde en verwijderd
 
 Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw accountmanager van Adobe als u een klant bent en toegang nodig hebt.
 
-* [](https://daycare.day.com) Downloaden van [producten op licensing.adobe.com](https://licensing.adobe.com/)
+* [](https://daycare.day.com) [Product downloaden op licensing.adobe.com](https://licensing.adobe.com/)
 
 * [Klantenondersteuning op de dag van de zorg.dag.com](https://daycare.day.com)
 
