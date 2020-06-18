@@ -10,14 +10,17 @@ topic-tags: managing-checklist
 content-type: reference
 discoiquuid: 6fc2751e-f42a-4519-bc8c-695057f21b69
 translation-type: tm+mt
-source-git-commit: 8145f71848e956647cb4321aaa432b33b9ef9383
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+workflow-type: tm+mt
+source-wordcount: '3767'
+ht-degree: 0%
 
 ---
 
 
 # Checklist - Verdere referentie{#the-checklist-further-reference}
 
-Deze pagina bevat nadere details voor het uitwerken en/of vergroten van de documenten en beginselen die worden behandeld in de checklist [voor het](/help/managing/best-practices.md)beheren van projecten - beste praktijken.
+Deze pagina bevat verdere details voor het uitwerken en/of vergroten van de documenten en beginselen die worden behandeld in de checklist [voor het](/help/managing/best-practices.md)beheren van projecten - beste praktijken.
 
 ## AEM - Wat gaat u gebruiken? {#aem-what-will-you-be-using}
 
@@ -32,7 +35,7 @@ Bij de implementatie van AEM (vooral voor de eerste keer) moet u de [mogelijkhed
 Houd rekening met de functies van AEM die u gebruikt en met de invloed op uw ontwerp. bijvoorbeeld:
 
 * [Handel](/help/sites-administering/ecommerce.md)
-* [Schermen](/help/screens/aem-screens-introduction.md)
+* [Schermen](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 * [Assets](/help/assets/assets.md)
 * [Tags](/help/sites-administering/tags.md)
 * [Beheer en vertaling van meerdere sites](/help/sites-administering/msm-and-translation.md)
@@ -42,7 +45,7 @@ Houd rekening met de functies van AEM die u gebruikt en met de invloed op uw ont
 
 Controleer bovendien de [releaseopmerkingen](/help/release-notes/release-notes.md)voor de verschillende versies van AEM om te zien wanneer er nieuwe functies zijn toegevoegd.
 
-### Integraties {#integrations}
+### Integrations {#integrations}
 
 AEM kan worden geïntegreerd met andere Adobe-producten en/of services van derden. Deze kunnen de macht en de functionaliteit verhogen tot uw beschikking.
 
@@ -103,7 +106,7 @@ Net als bij elk project is het van cruciaal belang dat er zo snel mogelijk grond
 
    * Het belangrijkste punt om hier nota van te nemen is slechts één exemplaar van de informatie te houden en de informatie (en daarom toegang tot het hulpmiddel te delen dat wordt gebruikt) te delen. Hierdoor wordt onderhoud eenvoudiger en kunnen verschillen worden voorkomen.
 
-* **Toepassingsgebied**
+* **Scope**
 
    Duidelijk bepalen wat op verschillende niveaus onder het project moet vallen:
 
@@ -130,7 +133,7 @@ Deze informatie kan binnen een Handboek van het Project worden bepaald; het gebr
 * De informatie wordt duidelijk meegedeeld aan alle betrokken personen. Hoewel de standaardpraktijk van het Projectbeheer, het niet vaak genoeg kan worden herhaald dat de duidelijke roldefinitie en de goede mededeling een project kunnen maken of breken.
 * Er wordt slechts één versie bijgehouden van informatie die wordt bijgehouden; bijvoorbeeld het bijhouden van fouten, het bijhouden van problemen, enz.
 
-## Belangrijkste prestatie-indicatoren en streefcijfers {#key-performance-indicators-and-target-metrics}
+## Belangrijkste prestatie-indicatoren en Target-statistieken {#key-performance-indicators-and-target-metrics}
 
 Organisaties gebruiken de Belangrijkste Indicatoren van Prestaties (KPIs) om hun succes bij het bereiken van doelstellingen te evalueren. Deze indicatoren zijn meetbare waarden die kunnen worden gebruikt om aan te tonen hoe effectief specifieke doelstellingen worden verwezenlijkt.
 
@@ -148,9 +151,9 @@ Deze indicatoren kunnen zijn:
 
 Sommige, maar niet alle, indicatoren kunnen op de doelmetriek worden gebaseerd die u identificeert en bepaalt.
 
-### Doelwaarden {#target-metrics}
+### Target Metrics {#target-metrics}
 
-Metriek worden gebruikt om kwantitatieve metingen voor de kwaliteit van uw website te definiëren - het zijn eigenlijk een definitie van de prestatiedoelen die u wilt bereiken en kunnen worden gebruikt om uw [KPI&#39;s (Belangrijke prestatie-indicatoren)](#key-performance-indicators-and-target-metrics)te definiëren.
+Metriek worden gebruikt om kwantitatieve metingen voor de kwaliteit van uw website te definiëren. Het zijn in feite een definitie van de prestatiedoelen die u wilt bereiken en kunnen worden gebruikt om uw [KPI&#39;s (de belangrijkste prestatie-indicatoren)](#key-performance-indicators-and-target-metrics)te definiëren.
 
 Veel metriek kunnen worden gedefinieerd, maar vaak worden de meeteenheden die u definieert, gebruikt voor uw doelstellingen op het gebied van prestaties en gelijktijdige uitvoering. Met name factoren die moeilijk te kwantificeren kunnen zijn en vaak vatbaar zijn voor *emotionele* beoordeling:
 
@@ -160,14 +163,14 @@ Veel metriek kunnen worden gedefinieerd, maar vaak worden de meeteenheden die u 
 * &quot;Wanneer ik zoek, *loopt het systeem tot stilstand* &quot; - welke soort zoekverzoeken beïnvloeden het systeem?
 * &quot;het downloaden van het bestand duurt *eeuwen* &quot; - wat zijn aanvaardbare downloadtijden (onder normale netwerkomstandigheden)?
 
-De Metriek van het doel worden bepaald bij het begin van een project aan:
+Target Metrics worden gedefinieerd aan het begin van een project:
 
 * Geef de verwachte afmetingen van de website aan die u wilt aanbieden
 * geeft de minimale kwaliteit aan die u wilt bereiken
 * bepalen hoe deze factoren daadwerkelijk zullen worden gemeten
 * worden gebruikt als basis voor de [prestatiekernindicatoren](#key-performance-indicators-and-target-metrics)
 
-Zoals altijd zorgvuldig moet worden omgesprongen met het definiëren van de meetwaarden voor het doel:
+Zoals altijd zorgvuldig moet worden omgesprongen met de definitie van de doelwaarden:
 
 * als ze te hoog zijn , kunnen ze totaal onbereikbaar zijn
 * indien te lage fluctuaties zijn ingesteld, wordt deze mogelijk niet gemarkeerd
@@ -310,7 +313,7 @@ Het vaststellen van doelen voor zoekverzoeken is ook hier een kwestie van ervari
 * een beoordeling van de frequentie waarmee de zoekopdracht zal worden gebruikt in vergelijking met andere doelstellingen
 * uw persistentiemanager
 * uw zoekindex
-* de complexiteit van uw zoekfunctie; een basiszoekfunctie waarmee slechts één zoekterm kan worden ingevoerd, is sneller dan een geavanceerd zoeken waarmee de gebruiker complexe zoekinstructies kan opbouwen met behulp van AND/OR/NOT.
+* de complexiteit van uw zoekfunctie; een basiszoekfunctie waarmee slechts één zoekterm kan worden ingevoerd, wordt sneller uitgevoerd dan een geavanceerde zoekopdracht waarmee de gebruiker complexe zoekinstructies kan opbouwen met behulp van AND/OR/NOT.
 
 Deze moeten vanaf het begin van uw project worden gepland en geïntegreerd. De volgende controlemechanismen zijn beschikbaar:
 
@@ -356,11 +359,11 @@ Voordat u de gerelateerde metriek gaat bespreken, geeft u een snelle definitie v
    |---|---|---|
    | Client | Rekeningvermogen van de computer van de gebruiker. | Complexiteit van de pagina-indeling. |
    | Netwerk | Netwerkbandbreedte. | Grootte van de pagina (code, afbeeldingen enzovoort). |
-   | Verzendcache | Servergeheugen van de webserver (hoofdgeheugen en vaste schijf). | Webserver (hoofdgeheugen en vaste schijf). Aantal en formaat van de pagina&#39;s in de cache. |
+   | Dispatcher cache | Servergeheugen van de webserver (hoofdgeheugen en vaste schijf). | Webserver (hoofdgeheugen en vaste schijf). Aantal en formaat van de pagina&#39;s in de cache. |
    | Uitvoercache | Servergeheugen van de AEM-server (hoofdgeheugen en vaste schijf). | Aantal en grootte van de pagina&#39;s in de uitvoercache, het aantal afhankelijkheden per pagina. Dit volume wordt verlaagd door de verzendercache. |
    | Webserver | De computermacht van de server van het Web. | Hoeveelheid verzoeken. Dit volume wordt verlaagd door caching. |
    | Sjabloonmodel | De computermacht van de server van het Web. | Complexiteit van de sjablonen. |
-   |  Bewaarplaats | Prestaties van de opslagplaats. | Aantal pagina&#39;s dat vanuit de gegevensopslagruimte is geladen. |
+   | Bewaarplaats | Prestaties van de opslagplaats. | Aantal pagina&#39;s dat vanuit de gegevensopslagruimte is geladen. |
 
 ### Overige cijfers {#other-metrics}
 
@@ -575,7 +578,7 @@ Daarnaast zijn de volgende punten van bijzonder belang:
 * [Technische vereisten](/help/sites-deploying/technical-requirements.md)
 * [Uw exemplaar controleren en onderhouden](/help/sites-deploying/monitoring-and-maintaining.md)
 
-### Aanbevolen werkwijzen {#best-practices}
+### Best practices voor {#best-practices}
 
 Adobe biedt verdere aanbevolen procedures voor alle fasen en doelgroepen:
 
