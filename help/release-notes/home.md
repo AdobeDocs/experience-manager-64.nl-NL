@@ -4,7 +4,10 @@ seo-title: Opmerkingen bij de release AEM 6.4
 description: De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versie van AEM, zoals nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 seo-description: De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versie van AEM, zoals nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+workflow-type: tm+mt
+source-wordcount: '397'
+ht-degree: 15%
 
 ---
 
@@ -29,7 +32,7 @@ De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versi
 | [Beheerdershandleiding](/help/sites-administering/home.md) | Begrijp hoe te om AEM te beheren |
 | [Ontwerphandleiding](/help/sites-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM. |
 | [Klassieke UI Authoring Guide](/help/sites-classic-ui-authoring/home.md) | Deze gids verklaart de concepten creatie in AEM in het klassieke gebruikersinterface. |
-| [Gebruikershandleiding voor schermen](/help/screens/home.md) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
+| [Gebruikershandleiding voor schermen](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) | Leer over de digitale signaaloplossing om dynamische en interactieve digitale ervaringen te publiceren. |
 | [Gebruikershandleiding implementeren](/help/sites-deploying/home.md) | In deze handleiding ziet u de basisbeginselen van AEM. |
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-instantie kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM-project kunt beheren. |
@@ -39,12 +42,12 @@ De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versi
 ## Belangrijke AEM-bronnen
 
 * [AEM-zelfstudies](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [Gebruikershandleiding voor verzending](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
+* [Dispatcher-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://docs.adobe.com/content/help/en/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Cloud Manager](https://docs.adobe.com/content/help/en/experience-manager-cloud-manager/using/introduction-to-cloud-manager.html)
 * [Gereedheid voor GDPR (AVG)](/help/managing/data-protection-and-privacy.md)
-* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#solutions/experience-manager)
+* [Experience League](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#solutions/experience-manager)
 * [AEM-communityforum](https://forums.adobe.com/community/experience-cloud/marketing-cloud/experience-manager)
 
 ## Copyright, licenties en disclaimers {#copyright-licenses-and-disclaimers}
