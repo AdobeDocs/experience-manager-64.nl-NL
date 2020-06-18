@@ -10,10 +10,10 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: 4d5cc3a785be782e79a53d18cb9bb5beba60f61d
+source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
 workflow-type: tm+mt
-source-wordcount: '1827'
-ht-degree: 0%
+source-wordcount: '1843'
+ht-degree: 1%
 
 ---
 
@@ -53,13 +53,13 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
 * [Webconsole](/help/sites-deploying/web-console.md)
 * [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
-* [Aanbevolen werkwijzen](/help/sites-deploying/best-practices.md)
+* [Best practices voor](/help/sites-deploying/best-practices.md)
 * [Gemeenschappen inzetten](/help/communities/deploy-communities.md)
-* [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
+* [Inleiding tot het AEM-Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Definities van releasevoertuig bijwerken](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Wat zijn AEM-schermen?](/help/screens/aem-screens-introduction.md)
+* [Wat is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Basisconcepten {#basic-concepts}
 
@@ -96,7 +96,7 @@ In AEM-terminologie is een &quot;instantie&quot; een kopie van AEM die op een se
 
 Deze exemplaren zijn identiek wat geïnstalleerde software betreft. Ze worden alleen gedifferentieerd naar configuratie. Bovendien gebruiken de meeste installaties een verzender:
 
-* **Verzender**: Een statische webserver (Apache httpd, Microsoft IIS, enz.) aangevuld met de AEM-verzendermodule. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
+* **Dispatcher**: Een statische webserver (Apache httpd, Microsoft IIS, enz.) aangevuld met de AEM-verzendermodule. Webpagina&#39;s die door de instantie publish worden gemaakt, worden in het cachegeheugen opgeslagen om de prestaties te verbeteren.
 
 Er zijn vele geavanceerde opties en uitbreidingen van deze opstelling, maar het basispatroon van auteur, publiceert en verzender is de kern van de meeste plaatsingen. We zullen ons eerst concentreren op een relatief eenvoudige opzet. Hierna zullen de geavanceerde implementatieopties worden besproken.
 
@@ -122,11 +122,11 @@ Met de Beheerde Diensten van AEM kunnen de klanten de volgende voordelen realise
 
 **Hogere prestaties:** Verstrekt betrouwbare digitale ervaringen voor uw zaken met vier opties van de de dienstbeschikbaarheid 99.5%, 99.9%, 99.95%, en 99.99%. Bovendien maakt het automatische back-up en multimode modellen voor noodherstel mogelijk om betrouwbaarheid en noodbeheer te garanderen.
 
-**Geoptimaliseerde IT-kosten:** Met proactieve begeleiding en expertise kunnen organisaties de nieuwste versie van AEM blijven gebruiken. Adobe Platinum Maintenance and Support wordt automatisch opgenomen in nieuwe implementaties van AMS Enterprise/Basic en biedt technische expertise en operationele ervaring om organisaties te helpen hun bedrijfskritieke toepassingen te onderhouden. Gratis basisanalysemogelijkheden of doelmogelijkheden bieden extra waarde, met name voor organisaties uit het midden- en kleinbedrijf die weinig behoefte hebben aan analyses en personalisatie.
+**Geoptimaliseerde IT-kosten:** Met proactieve begeleiding en expertise kunnen organisaties de nieuwste versie van AEM blijven gebruiken. Adobe Platinum Maintenance and Support wordt automatisch opgenomen in nieuwe implementaties van AMS Enterprise/Basic en biedt technische expertise en operationele ervaring om organisaties te helpen hun bedrijfskritieke toepassingen te onderhouden. Gratis basis Analytics- of Target-mogelijkheden bieden extra waarde, vooral voor organisaties uit het midden- en kleinbedrijf die weinig behoefte hebben aan analyses en personalisatie.
 
 **Hoogste beveiliging:** Zorgt voor fysieke beveiliging, netwerk en gegevensbeveiliging op bedrijfsniveau door klantentoepassingen te hosten in een beperkte-toegangsfaciliteit, achter firewallsystemen, of binnen een virtuele privécloud. Het omvat virtuele machines van één huurder met robuuste gegevensopslagencryptie, antivirale middelen, en gegevensisolatie.
 
-**Wolkenbeheer**: Cloud Manager, een onderdeel van het aanbod Adobe Experience Manager Managed Services, is een zelfbedieningsportal waarmee organisaties Adobe Experience Manager in de cloud zelf kunnen beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor klanten van de door Adobe beheerde service.
+**Wolkenbeheer**: Cloud Manager, een onderdeel van de Adobe Experience Manager Managed Services-aanbieding, is een zelfbedieningsportaal dat organisaties verder in staat stelt zelf Adobe Experience Manager in de cloud te beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor klanten van de door Adobe beheerde service.
 
 Raadpleeg de gebruikershandleiding voor [**Cloud Manager voor meer informatie over Cloud Manager en de bijbehorende bronnen **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
@@ -134,11 +134,11 @@ Raadpleeg de gebruikershandleiding voor [**Cloud Manager voor meer informatie ov
 
 ### Vereisten {#prerequisites}
 
-Terwijl de productie instanties gewoonlijk op specifieke machines in werking stellen die een officieel gesteund OS (zie [Technische Vereisten](/help/sites-deploying/technical-requirements.md)) in werking stellen, zal de server van de Manager van de Ervaring eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)van Java steunt.
+Terwijl de productie instanties gewoonlijk op specifieke machines in werking stellen die een officieel gesteund OS (zie [Technische Vereisten](/help/sites-deploying/technical-requirements.md)) in werking stellen, zal de server van Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)van Java steunt.
 
 Voor vertrouwdmaking en voor het ontwikkelen op AEM is het vrij gebruikelijk om een instantie te gebruiken die op uw lokale computer wordt geïnstalleerd die Apple OS X of Desktopversies van Microsoft Windows of Linux in werking stelt.
 
-Op de client-kant werkt AEM met alle moderne browsers (**Microsoft Edge**, **Internet Explorer** 11, **Chrome** 51+, **Firefox** 47+, **Safari** 8+) op zowel desktop- als tabletbesturingssystemen. Zie [Ondersteunde clientplatforms](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor meer informatie.
+Op de client-kant werkt AEM met alle moderne browsers (**Microsoft Edge**, **Internet Explorer** 11, **Chrome** 51+, **Firefox** 47+, **Safari** 8+) op zowel desktop- als tabletbesturingssystemen. Zie [Ondersteunde clientPlatforms](/help/sites-deploying/technical-requirements.md#supported-client-platforms) voor meer informatie.
 
 ### De software ophalen {#getting-the-software}
 
@@ -315,11 +315,11 @@ Het bovenstaande gedeelte geeft u een goed inzicht in de basisbeginselen van AEM
 * [Hoe kan ik-artikelen configureren](/help/sites-deploying/ht-deploy.md)
 * [Webconsole](/help/sites-deploying/web-console.md)
 * [Problemen met replicatie oplossen](/help/sites-deploying/troubleshoot-rep.md)
-* [Aanbevolen werkwijzen](/help/sites-deploying/best-practices.md)
+* [Best practices voor](/help/sites-deploying/best-practices.md)
 * [Gemeenschappen inzetten](/help/communities/deploy-communities.md)
-* [Inleiding tot het AEM-platform](/help/sites-deploying/platform.md)
+* [Inleiding tot het AEM-Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Definities van releasevoertuig bijwerken](/help/sites-deploying/update-release-vehicle-definitions.md)
-* [Wat zijn AEM-schermen?](/help/screens/aem-screens-introduction.md)
+* [Wat is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
