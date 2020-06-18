@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+workflow-type: tm+mt
+source-wordcount: '2803'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
 
 ## Inleiding {#introduction}
 
-Het ontladen verspreidt verwerkingstaken die de instanties van de Manager van de Ervaring in een topologie. Met offloading kunt u specifieke instanties van Experience Manager gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
+Het ontladen verspreidt verwerkingstaken die instanties Experience Manager in een topologie. Met offloading kunt u specifieke Experience Manager-instanties gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
 
-Offloaden is gebaseerd op de functies [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) en Sling JobManager. Om het ontladen te gebruiken, voegt u de clusters van de Manager van de Ervaring aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer instanties van Experience Manager, zodat één instantie wordt beschouwd als een cluster.
+Offloaden is gebaseerd op de functies [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) en Sling JobManager. Om het ontladen te gebruiken, voegt u de clusters van Experience Manager aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer Experience Manager-instanties, zodat één instantie als een cluster wordt beschouwd.
 
 Voor informatie over het toevoegen van instanties aan een topologie, zie [het Beheer Topologieën](/help/sites-deploying/offloading.md#administering-topologies).
 
@@ -32,7 +35,7 @@ Sling JobManager en JobConsumer laten de verwezenlijking van banen toe die in ee
 * JobManager: De dienst die banen voor specifieke onderwerpen leidt.
 * JobConsumer: De dienst die banen van één of meerdere onderwerpen uitvoert. De veelvoudige diensten JobConsumer kunnen voor het zelfde onderwerp worden geregistreerd.
 
-Wanneer JobManager een baan creeert, selecteert het Offloading kader een cluster van de Manager van de Ervaring in de topologie om de baan uit te voeren:
+Wanneer JobManager een taak maakt, selecteert het Offloading-framework een Experience Manager-cluster in de topologie om de taak uit te voeren:
 
 * De cluster moet één of meerdere instanties omvatten die een JobConsumer in werking stellen die voor het baanonderwerp wordt geregistreerd.
 * Het onderwerp moet voor minstens één geval in de cluster worden toegelaten.
@@ -51,9 +54,9 @@ Bij het maken van een taak wordt de lading alleen gegarandeerd geplaatst op het 
 
 ## Onderwerptechnologieën beheren {#administering-topologies}
 
-De technologieën zijn los-gekoppelde clusters van de Manager van de Ervaring die aan het ontladen deelnemen. Een cluster bestaat uit een of meer Experience Manager-serverinstanties (één instantie wordt beschouwd als een cluster).
+De topologieën zijn losjes-verbonden Experience Manager clusters die aan het ontladen deelnemen. Een cluster bestaat uit een of meer Experience Manager-serverinstanties (één instantie wordt als een cluster beschouwd).
 
-Elke instantie van de Manager van de Ervaring stelt de volgende Verwante diensten in werking:
+Elke Experience Manager-instantie voert de volgende offloading-gerelateerde services uit:
 
 * Detectieservice: Verzendt verzoeken naar een Schakelaar van de Topologie om zich bij de topologie aan te sluiten.
 * Topology Connector: Ontvangt om zich bij verzoeken aan te sluiten en of keurt goed of weigert elk verzoek.
@@ -66,13 +69,13 @@ Elke cluster in de topologie bevat een instantie die als leider wordt erkend. De
 
 ### De topologie weergeven {#viewing-the-topology}
 
-Browser van de Topologie van het gebruik om de staat van de topologie te onderzoeken waarin de instantie van de Manager van de Ervaring deelneemt. Browser van de topologie toont de clusters en de instanties van de topologie.
+Browser van de Topologie van het gebruik om de staat van de topologie te onderzoeken waarin de instantie van Experience Manager deelneemt. Browser van de topologie toont de clusters en de instanties van de topologie.
 
 Voor elke cluster, ziet u een lijst van clusterleden die op de orde wijst waarin elk lid zich bij de kluseter aansloot, en welk lid de Leider is. De eigenschap Current geeft de instantie aan die u momenteel beheert.
 
 Voor elke instantie in de cluster, kunt u verscheidene op topologie betrekking hebbende eigenschappen zien:
 
-* Een whitelist van onderwerpen voor de baanconsument van de instantie.
+* Een lijst met onderwerpen toestaan voor de professionele gebruiker van de instantie.
 * De eindpunten die voor het verbinden met de topologie worden blootgesteld.
 * De taakonderwerpen waarvoor de instantie is geregistreerd voor offloaden.
 * De taakonderwerpen die de instantie verwerkt.
@@ -103,12 +106,12 @@ Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van d
 
 ### Het vormen Lidmaatschap van de Topologie {#configuring-topology-membership}
 
-De Apache die middel-Gebaseerde Dienst van de Ontdekking op elke instantie in werking stelt om te controleren hoe de instanties van de Manager van de Ervaring met een topologie interactie aangaan.
+De Apache Sling Resource-Based Dienst van de Ontdekking stelt op elke instantie in werking om te controleren hoe de instanties van Experience Manager met een topologie interactie aangaan.
 
-De dienst van de Ontdekking verzendt periodieke POST- verzoeken (hartslagen) naar de diensten van de Verbinding van de Topologie om verbindingen met de topologie te vestigen en te handhaven. De dienst van de Verbinding van de Topologie handhaaft een whitelist van IP adressen of gastheernamen die worden toegestaan om zich bij de topologie aan te sluiten:
+De dienst van de Ontdekking verzendt periodieke POST- verzoeken (hartslagen) naar de diensten van de Verbinding van de Topologie om verbindingen met de topologie te vestigen en te handhaven. De dienst van de Verbinding van de Topologie handhaaft een toegestane lijst van IP adressen of gastheernamen die zich bij de topologie mogen aansluiten:
 
 * Om zich bij een instantie aan een topologie aan te sluiten, specificeer URL van de dienst van de Verbinding van de Topologie van het wortellid.
-* Om een instantie toe te laten om zich bij een topologie aan te sluiten, voeg de instantie aan whitelist van de dienst van de Verbinding van de Topologie van het wortellid toe.
+* Om een instantie toe te laten om zich bij een topologie aan te sluiten, voeg de instantie aan toe staat lijst van de dienst van de Verbinding van de Topologie van het wortellid toe.
 
 Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eigenschappen van de dienst te vormen org.apache.sling.discovery.impt.Config:
 
@@ -145,7 +148,7 @@ Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eige
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>Whitelist van de schakelaar van de topologie</td> 
+   <td>Lijst toestaan voor topologieconnector</td> 
    <td>topologieConnectorWhitelist</td> 
    <td>De lijst van IP adressen of gastheernamen die de lokale dienst van de Verbinding van de Topologie in de topologie toestaat. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -166,16 +169,16 @@ Gebruik de volgende procedure om een instantie CQ met het wortellid van een topo
 1. Klik op Discovery Service configureren.
 1. Voeg een punt aan het bezit van de Verbinding URLs van de Topologie toe, en specificeer URL van de dienst van de Verbinding van de Topologie van het lid van de worteltopologie. De URL heeft de notatie https://rootservername:4502/libs/sling/topology/connector.
 
-Voer de volgende procedure op het wortellid van de topologie uit. De procedure voegt de namen van de andere topologieleden aan zijn whitelist van de Dienst van de Ontdekking toe.
+Voer de volgende procedure op het wortellid van de topologie uit. De procedure voegt de namen van de andere topologieleden aan zijn Dienst van de Ontdekking toe staat lijst toe.
 
 1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 1. Klik op Discovery Service configureren.
-1. Voor elk lid van de topologie, voeg een punt aan het Whitelist bezit van de Schakelaar van de Topologie toe, en specificeer de gastheernaam of IP adres van het topologielid.
+1. Voor elk lid van de topologie, voeg een punt aan de Schakelaar van de Topologie toe staat lijsteigenschap toe, en specificeer de gastheernaam of IP adres van het topologielid.
 
 ## Het vormen onderwerpconsumptie {#configuring-topic-consumption}
 
-Gebruik het Offloaden Browser om onderwerpconsumptie voor de instanties van de Manager van de Ervaring in de topologie te vormen. Voor elke instantie, kunt u de onderwerpen specificeren die het gebruikt. Bijvoorbeeld, om uw topologie te vormen zodat slechts één instantie onderwerpen van een specifiek type verbruikt, maak het onderwerp op alle instanties behalve één onbruikbaar.
+Gebruik het Offloaden Browser om onderwerpconsumptie voor de instanties van Experience Manager in de topologie te vormen. Voor elke instantie, kunt u de onderwerpen specificeren die het gebruikt. Bijvoorbeeld, om uw topologie te vormen zodat slechts één instantie onderwerpen van een specifiek type verbruikt, maak het onderwerp op alle instanties behalve één onbruikbaar.
 
 Taken zijn verspreide hoeveelheden die het bijbehorende onderwerp hebben dat is ingeschakeld met behulp van round-robin logica.
 
@@ -197,7 +200,7 @@ Taken zijn verspreide hoeveelheden die het bijbehorende onderwerp hebben dat is 
    * Ingeschakeld: Dit exemplaar verbruikt banen van dit onderwerp.
    * Uitgeschakeld: Dit exemplaar verbruikt geen banen van dit onderwerp.
    * Exclusief: Dit exemplaar verbruikt slechts banen van dit onderwerp.
-   **** Opmerking: Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
+   **Opmerking:** Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
 
 ### Geïnstalleerde taakgebruikers {#installed-job-consumers}
 
@@ -205,17 +208,17 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 
 | Taakonderwerp | Service PID | Beschrijving |
 |---|---|---|
-| / | org.apache.sling.event.impl.job.deprecated.EventAdminBridge | Geïnstalleerd met Apache Sling. Verwerkt banen die OSGi gebeurtenisadmin, voor achterwaartse verenigbaarheid produceert. |
+| / | org.apache.sling.event.impl.jobs.deprecated.EventAdminBridge | Geïnstalleerd met Apache Sling. Verwerkt banen die OSGi gebeurtenisadmin, voor achterwaartse verenigbaarheid produceert. |
 | com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen herhaalt. |
 | com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Verwerkt taken die door de workflow van DAM Update Asset Offloader worden gegenereerd. |
 
 ### Onderwerpen voor een instantie uitschakelen en inschakelen {#disabling-and-enabling-topics-for-an-instance}
 
-De service Apache Sling Job Consumer Manager biedt whitelist- en blacklist-eigenschappen voor onderwerpen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Manager van de Ervaring toe te laten of onbruikbaar te maken.
+De service Apache Sling Job Consumer Manager biedt een onderwerp waarin lijst- en bloklijsteigenschappen zijn toegestaan. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van Experience Manager toe te laten of onbruikbaar te maken.
 
-**** Opmerking: Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
+**Opmerking:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
-De logica die de lijst van toegelaten onderwerpen creeert staat eerst alle onderwerpen toe die in whitelist zijn, en verwijdert dan onderwerpen die op de zwarte lijst zijn.Door gebrek, worden alle onderwerpen toegelaten (de whitelist waarde is `*`) en geen onderwerpen zijn gehandicapt (de zwarte lijst heeft geen waarde).
+De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in toestaan lijst zijn, en verwijdert dan onderwerpen die op de bloklijst zijn.Door gebrek, worden alle onderwerpen toegelaten (de toegestane lijstwaarde is `*`) en geen onderwerpen zijn gehandicapt (de bloklijst heeft geen waarde).
 
 Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knooppunten is org.apache.sling.event.impl.jobs.JobConsumerManager de PID van de service Job Consumer Manager.
 
@@ -308,7 +311,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### De verkoper-id zoeken {#finding-the-sling-id}
 
-Verkrijg identiteitskaart van het Verdelen van een instantie van de Manager van de Ervaring gebruikend één van beide volgende methodes:
+Verkrijg identiteitskaart van het Verkopen van een instantie van Experience Manager gebruikend één van beide volgende methodes:
 
 * Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het Verschuivende bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
 * Gebruik browser van de Topologie als de instantie reeds deel van de topologie uitmaakt.
@@ -317,7 +320,7 @@ Verkrijg identiteitskaart van het Verdelen van een instantie van de Manager van 
 
 Vorm de instanties van een topologie zodat de specifieke instanties de achtergrondverwerking van activa uitvoeren die in DAM worden toegevoegd of bijgewerkt.
 
-Standaard voert Experience Manager de DAM Update Asset-workflow uit wanneer een DAM-element wordt gewijzigd of een DAM-element wordt toegevoegd. Wijzig het standaardgedrag, zodat Experience Manager in plaats daarvan de workflow van de DAM Update Asset Offloader uitvoert. Deze workflow genereert een JobManager-taak met een onderwerp `com/adobe/granite/workflow/offloading`. Dan, vorm de topologie zodat de baan aan een specifieke worker wordt geoffload.
+Standaard voert Experience Manager de DAM Update Asset-workflow uit wanneer een DAM-element wordt gewijzigd of een DAM-element wordt toegevoegd aan DAM. Wijzig het standaardgedrag zodat Experience Manager in plaats daarvan de workflow van de DAM Update Asset Offloader uitvoert. Deze workflow genereert een JobManager-taak met een onderwerp `com/adobe/granite/workflow/offloading`. Dan, vorm de topologie zodat de baan aan een specifieke worker wordt geoffload.
 
 >[!CAUTION]
 >
@@ -325,11 +328,11 @@ Standaard voert Experience Manager de DAM Update Asset-workflow uit wanneer een 
 
 De volgende procedure veronderstelt de volgende kenmerken voor de het ontladen topologie:
 
-* Een of meer instanties van Experience Manager zijn ontwerpinstanties waarmee gebruikers werken bij het toevoegen of bijwerken van DAM-elementen.
-* Gebruikers kunnen niet rechtstreeks communiceren met een of meer instanties van Experience Manager die de DAM-elementen verwerken. Deze instanties zijn gewijd aan de achtergrondverwerking van DAM-middelen.
+* Een of meer Experience Manager-instanties zijn ontwerpinstanties waarmee gebruikers werken bij het toevoegen of bijwerken van DAM-elementen.
+* Gebruikers kunnen niet rechtstreeks communiceren met een of meer Experience Manager-instanties die de DAM-middelen verwerken. Deze instanties zijn gewijd aan de achtergrondverwerking van DAM-middelen.
 
-1. Voor elke instantie van de Manager van de Ervaring, vorm de Dienst van de Ontdekking zodat het aan de schakelaar van de wortelTopografie richt. (Zie [het Vormen Lidmaatschap](#title4)van Topologie.)
-1. Vorm de schakelaar van de wortelTopografie zodat de verbindende instanties op whitelist zijn.
+1. Voor elke instantie van Experience Manager, vorm de Dienst van de Ontdekking zodat het aan de schakelaar van de wortelTopografie richt. (Zie [het Vormen Lidmaatschap](#title4)van Topologie.)
+1. Vorm de schakelaar van de wortelTopografie zodat de verbindende instanties op toestaan lijst zijn.
 1. Open de Offloading Browser en maak het `com/adobe/granite/workflow/offloading` onderwerp op de instanties onbruikbaar waarmee de gebruikers om activa te uploaden of te veranderen DAM met elkaar in wisselwerking staan.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
