@@ -3,7 +3,7 @@ title: AEM Assets integreren met Adobe InDesign Server
 description: Leer hoe u AEM Assets kunt integreren met InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1658'
 ht-degree: 1%
@@ -232,7 +232,7 @@ Om het aantal parallelle banen te vormen IDS:
    >
    >De IDS-worker wordt standaard opnieuw gevalideerd nadat de configureerbare (`retry.interval.to.whitelist.name`) tijd in minuten is verstreken. Als de worker online wordt gevonden, wordt deze verwijderd uit de geblokkeerde lijst.
 
-<!-- TBD: Make updates to configurations for allow and block list after product updates are done.
+<!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## Ondersteuning inschakelen voor Adobe InDesign-server 10.0 of hoger {#enabling-support-for-indesign-server-or-higher}
@@ -247,7 +247,7 @@ Voer voor InDesign Server 10.0 of hoger de volgende stappen uit om ondersteuning
 >
 >Voor [!DNL InDesign Server] integratie met [!DNL Assets], gebruik een multi-core bewerker omdat de zittingssteuneigenschap noodzakelijk voor de integratie niet op single-core systemen wordt gesteund.
 
-## Inloggegevens van Experience Manager configureren {#configure-aem-credentials}
+## Experience Manager-referenties configureren {#configure-aem-credentials}
 
 U kunt de standaardbeheerdersreferenties (gebruikersnaam en wachtwoord) wijzigen voor toegang tot de InDesign-server vanuit uw AEM-instantie zonder de integratie met de Adobe InDesign-server te verbreken.
 
