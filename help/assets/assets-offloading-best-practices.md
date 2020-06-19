@@ -3,7 +3,7 @@ title: Aanbevolen werkwijzen voor het verschuiven van elementen
 description: Aanbevolen gebruiksscenario's en aanbevolen procedures voor het offloaden van asset-opname- en replicatieworkflows in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
 workflow-type: tm+mt
 source-wordcount: '1818'
 ht-degree: 0%
@@ -112,6 +112,7 @@ Door gebrek, gebruikt het ontladen van vervoer omgekeerde replicatie om de ontla
 1. Wijzig de waarde van de eigenschap `default.transport.agent-to-master.prefix` van `offloading_reverse` naar `offloading`.
 
 <!-- TBD: Make updates to the configuration for allow and block list after product updates are done.
+TBD: Update the property in the last step when GRANITE-30586 is fixed.
 -->
 
 ### Het gebruiken van gedeelde datastore en binair-less replicatie tussen auteur en arbeiders  {#using-shared-datastore-and-binary-less-replication-between-author-and-workers}
