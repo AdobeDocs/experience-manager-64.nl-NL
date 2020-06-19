@@ -1,16 +1,19 @@
 ---
-title: Adobe Stock Assets gebruiken in AEM Assets
+title: Adobe Stock-elementen gebruiken in AEM Assets
 description: Adobe Stock Assets zoeken, ophalen, licentiëren en beheren in AEM. Behandel de in licentie gegeven activa als elk ander AEM-actief.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 04462c7162d8478d48f41e84c2f91ae7d025e423
+source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+workflow-type: tm+mt
+source-wordcount: '1127'
+ht-degree: 18%
 
 ---
 
 
 # Use Adobe Stock assets in AEM Assets {#use-adobe-stock-assets-in-aem-assets}
 
-Organisaties kunnen hun Adobe Stock Enterprise Plan integreren met AEM Assets om ervoor te zorgen dat gelicentieerde middelen breed beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM.
+Organisaties kunnen hun Adobe Stock Enterprise Plan met AEM Assets integreren om ervoor te zorgen dat gelicentieerde middelen breed beschikbaar zijn voor hun creatieve en marketingprojecten, met de krachtige mogelijkheden voor middelenbeheer van AEM.
 
 De voorraadservice van Adobe biedt ontwerpers en bedrijven toegang tot miljoenen kwalitatief hoogstaande, gekrulde, royaltyvrije foto&#39;s, vectoren, illustraties, video&#39;s, sjablonen en 3D-middelen voor al hun creatieve projecten. AEM-gebruikers kunnen snel Adobe Stock-middelen vinden, voorvertonen en in licentie geven die in AEM zijn opgeslagen, zonder de AEM-werkruimte te verlaten.
 
@@ -24,27 +27,30 @@ Als u communicatie tussen AEM en Adobe Stock wilt toestaan, maakt u een IMS-conf
 
 >[!NOTE]
 >
->Alleen AEM-beheerders en beheerders van beheerconsole voor een organisatie kunnen de integratie uitvoeren omdat hiervoor beheerdersrechten vereist zijn.
+>Alleen AEM-beheerders en beheerders van Admin Consoles voor een organisatie kunnen de integratie uitvoeren omdat hiervoor beheerdersrechten zijn vereist.
 
 ### Create an IMS configuration {#create-an-ims-configuration}
 
-1. Klik op het AEM-logo. Ga naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Beveiliging]** > **[!UICONTROL Adobe IMS Configurations]**. Klik op **[!UICONTROL Maken]** en selecteer **[!UICONTROL Cloudoplossing]** > **[!UICONTROL Adobe Stock]**.
-1. Hergebruik een bestaand certificaat of selecteer **[!UICONTROL Nieuw certificaat]** maken.
-1. Klik op **[!UICONTROL Certificaat]** maken. Download de openbare sleutel wanneer deze is gemaakt. Klik op **[!UICONTROL Next]**.
-1. Geef de juiste waarden op in de velden **[!UICONTROL Titel]**, **[!UICONTROL Autorisatieserver]**, **[!UICONTROL API-sleutel]**, **[!UICONTROL Clientgeheim]** en **[!UICONTROL Payload]**. Zie [Snel starten met JWT-verificatie](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) voor meer informatie over het ophalen van deze waarden van Adobe I/O.
+1. Klik op het AEM-logo. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Adobe IMS Configurations]**. Klik op **[!UICONTROL Create]** en selecteer **[!UICONTROL Cloud Solution]** > **[!UICONTROL Adobe Stock]**.
+1. U kunt een bestaand certificaat opnieuw gebruiken of selecteren **[!UICONTROL Create new certificate]**.
+1. Klik op **[!UICONTROL Create certificate]**. Download de openbare sleutel wanneer deze is gemaakt. Klik op **[!UICONTROL Next]**.
+1. Geef de juiste waarden op in de velden met de namen **[!UICONTROL Title]**, **[!UICONTROL Authorization Server]**, **[!UICONTROL API Key]**, **[!UICONTROL Client Secret]** en **[!UICONTROL Payload]**. Zie [Snel starten met JWT-verificatie](https://www.adobe.io/authentication/auth-methods.html#!AdobeDocs/adobeio-auth/master/JWT/JWT.md) voor meer informatie over het ophalen van deze waarden van Adobe I/O.
 1. Voeg de gedownloade openbare sleutel toe aan uw Adobe I/O-serviceaccount.
+
+<!-- TBD: Update the URL when the new URL is available. Logged issue github.com/AdobeDocs/adobeio-auth/issues/63.
+-->
 
 ### Adobe Stock-configuratie maken in AEM {#create-adobe-stock-configuration-in-aem}
 
-1. Navigeer in de AEM-gebruikersinterface naar **[!UICONTROL Gereedschappen]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
-1. Klik **[!UICONTROL creëren]** om een configuratie tot stand te brengen en het te associëren met uw bestaande Configuratie IMS. Selecteren `PROD` als omgevingsparameter.
-1. Laat een locatie ongewijzigd in het veld Pad **[!UICONTROL met]** gelicentieerde elementen. Wijzig de locatie waar u de Adobe Stock-elementen wilt opslaan niet.
-1. Voltooi het maken door alle vereiste eigenschappen toe te voegen. Klik op **[!UICONTROL Opslaan en sluiten]**.
+1. In AEM user interface, navigate to **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Stock]**.
+1. Klik **[!UICONTROL Create]** om een configuratie tot stand te brengen en het te associëren met uw bestaande Configuratie IMS. Selecteren `PROD` als omgevingsparameter.
+1. Laat in **[!UICONTROL Licensed Assets Path]** het veld de locatie ongewijzigd. Wijzig de locatie waar u de Adobe Stock-elementen wilt opslaan niet.
+1. Voltooi het maken door alle vereiste eigenschappen toe te voegen. Klik op **[!UICONTROL Save & Close]**.
 1. Voeg AEM-gebruikers of -groepen toe die een licentie voor de elementen kunnen verkrijgen.
 
 >[!NOTE]
 >
->Als er meerdere Adobe Stock Configurations zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren (**[!UICONTROL AEM]** > **[!UICONTROL Gebruikerspictogram]** > **[!UICONTROL Gebruikersvoorkeuren]** > **[!UICONTROL Stamconfiguratie]**).
+>Als er meerdere Adobe Stock Configurations zijn, selecteert u de gewenste configuratie in het deelvenster Gebruikersvoorkeuren (**[!UICONTROL AEM]** > **[!UICONTROL User Icon]** > **[!UICONTROL User Preferences]** > **[!UICONTROL Stock Configuration]**).
 
 ## Adobe Stock Assets in AEM gebruiken en beheren {#use-and-manage-adobe-stock-assets-in-aem}
 
@@ -62,7 +68,7 @@ Zodra een Adobe Stock-middel in AEM in licentie is gegeven, kan het worden gebru
 
 Uw AEM-gebruikers kunnen zoeken naar middelen in zowel AEM- als Adobe-bestanden. Als de zoeklocatie niet beperkt is tot Adobe Stock, worden de zoekresultaten van AEM en Adobe Stock weergegeven.
 
-* Als u Adobe Stock-elementen wilt zoeken, klikt u op **[!UICONTROL Navigatie]** > **[!UICONTROL Middelen]** > Adobe Stock **** zoeken.
+* Als u op Adobe Stock-elementen wilt zoeken, klikt u op **[!UICONTROL Navigation]** > **[!UICONTROL Assets]** > **[!UICONTROL Search Adobe Stock]**.
 
 * Als u wilt zoeken naar elementen in Adobe Stock en AEM Assets, klikt u op het zoekpictogram ![search_icon](assets/search_icon.png).
 
@@ -88,7 +94,7 @@ De volgende keer dat u naar elementen zoekt, worden de opgeslagen elementen gema
 
 ### Licentie-elementen {#licenseassets}
 
-Gebruikers kunnen een licentie voor Adobe Stock-middelen aanschaffen via het quotum van hun Adobe Stock Enterprise-abonnement. Wanneer u een licentie voor een element aanschaft, wordt het zonder watermerk opgeslagen en is het beschikbaar voor zoeken en gebruiken in AEM-elementen.
+Gebruikers kunnen een licentie voor Adobe Stock-middelen aanschaffen via het quotum van hun Adobe Stock Enterprise-abonnement. Wanneer u een licentie voor een element aanschaft, wordt het zonder watermerk opgeslagen. U kunt het middel ook zoeken en gebruiken in AEM Assets.
 
 ![Dialoogvenster voor het in licentie geven en opslaan van Adobe Stock-middelen in AEM Assets](assets/aem-stock_licenseandsave.jpg)
 
@@ -96,7 +102,7 @@ Gebruikers kunnen een licentie voor Adobe Stock-middelen aanschaffen via het quo
 
 ### Metagegevens en elementen openen {#access-metadata-and-asset-properties}
 
-Gebruikers kunnen de metagegevens openen en voorvertonen, inclusief de eigenschappen van de Adobe Stock-metagegevens voor de elementen die zijn opgeslagen in AEM, en **[!UICONTROL Licentieverwijzingen]** toevoegen voor een element. De updates voor de licentieverwijzing worden echter niet gesynchroniseerd tussen AEM en de Adobe Stock-website.
+Gebruikers kunnen de metagegevens openen en voorvertonen, inclusief de eigenschappen van de metagegevens van Adobe Stock voor de elementen die zijn opgeslagen in AEM, en deze toevoegen **[!UICONTROL License References]** voor een element. De updates voor de licentieverwijzing worden echter niet gesynchroniseerd tussen AEM en de Adobe Stock-website.
 
 Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentieerde activa zien.
 
@@ -110,7 +116,7 @@ Gebruikers kunnen de eigenschappen van zowel gelicentieerde als niet-gelicentiee
 
 ### Waarschuwing voor redactionele afbeelding wordt niet weergegeven
 
-Wanneer gebruikers een licentie voor een afbeelding verlenen, kunnen ze niet controleren of een afbeelding alleen voor gebruik als redactie is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele middelen van de Console van Admin uitzetten.
+Wanneer gebruikers een licentie voor een afbeelding verlenen, kunnen ze niet controleren of een afbeelding alleen voor gebruik als redactie is. Om mogelijk misbruik te voorkomen, kunnen de beheerders de toegang tot redactionele activa van de Admin Console uitschakelen.
 
 ### Onjuist licentietype wordt weergegeven
 
