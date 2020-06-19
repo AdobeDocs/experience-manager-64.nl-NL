@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6f9a294d-24bd-4e4b-b929-2809f5e6cef9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '2206'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De toepassing en gegevensbestanden waarvan een back-up moet worden gemaakt, word
 Overweeg de volgende punten met betrekking tot back-up en herstel:
 
 * Er moet een back-up van de database worden gemaakt voordat de GDS- en AEM-opslaglocatie wordt gebruikt.
-* Als u de knopen in een gegroepeerd gegroepeerd milieu voor steun moet onderdrukken, zorg ervoor dat de slaveknooppunten vóór de hoofdknoop worden gesloten. Anders kan dit leiden tot inconsistentie in de cluster of server. Ook, zou de hoofdknoop vóór om het even welk slave knoop live moeten worden gemaakt.
+* Als u de knopen in een gegroepeerd gegroepeerd milieu voor steun moet onderdrukken, zorg ervoor dat de secundaire knopen vóór de primaire knoop worden gesloten. Anders kan dit leiden tot inconsistentie in de cluster of server. Ook, zou de primaire knoop vóór om het even welk secundair knooppunt levend moeten worden gemaakt.
 * Voor de herstelbewerking van een cluster moet de toepassingsserver worden gestopt voor elk knooppunt in de cluster.
 
 ## Globale map voor documentopslag {#global-document-storage-directory}
