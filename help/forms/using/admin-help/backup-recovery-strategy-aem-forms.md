@@ -10,7 +10,7 @@ geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f192a8a3-1116-4d32-9b57-b53d532c0dbf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
 workflow-type: tm+mt
 source-wordcount: '1520'
 ht-degree: 0%
@@ -88,7 +88,7 @@ Ga als volgt te werk voordat u de formulierserver opnieuw start na een herstelbe
    1. Klik op **beheeropties**.
    1. Klik op **Start** om elementen uit de opslagplaats te synchroniseren.
 
-1. In een gegroepeerde omgeving, zou de hoofdknoop (met betrekking tot AEM) omhoog vóór de slave knopen moeten zijn.
+1. In een gegroepeerde omgeving, zou de primaire knoop (met betrekking tot AEM) omhoog vóór de secundaire knopen moeten zijn.
 1. Zorg ervoor dat geen processen van of interne of externe bronnen zoals het Web, de ZEEP, of EJB procesinitiators in werking worden gesteld tot de normale verrichting van het systeem wordt bevestigd.
 
 Als de belangrijkste AEM-formulierdatabase wordt verplaatst of gewijzigd, raadpleegt u de installatiegidsen die relevant zijn voor uw toepassingsserver voor informatie over het bijwerken van de databaseverbindingsgegevens voor de AEM-formuliergegevensbronnen IDP_DS en EDC_DS.
