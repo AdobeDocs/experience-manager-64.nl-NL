@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
 workflow-type: tm+mt
 source-wordcount: '688'
 ht-degree: 0%
@@ -90,7 +90,7 @@ Aantal berichten aan partij samen voor verzenden wanneer het verzenden naar een 
 * **[!UICONTROL maxTotalAttachmentSize.name]**
 Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
 
-* **[!UICONTROL attachmentTypeAllowlist.name]**
+* **[!UICONTROL attachmentTypeBlocklist.name]**
 Een blocklist met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt geblokkeerd, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;. Standaard is dit *STANDAARD*.
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
