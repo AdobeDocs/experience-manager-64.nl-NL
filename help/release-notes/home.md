@@ -4,7 +4,7 @@ seo-title: Opmerkingen bij de release AEM 6.4
 description: De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versie van AEM, zoals nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 seo-description: De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versie van AEM, zoals nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '397'
 ht-degree: 15%
@@ -37,7 +37,7 @@ De AEM-releaseopmerkingen bevatten belangrijke informatie over de nieuwste versi
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-instantie kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM-project kunt beheren. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM-bronnen
 
