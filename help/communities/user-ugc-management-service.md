@@ -1,6 +1,6 @@
 ---
-title: Gebruikersbeheer en UGC-beheerservice in AEM-gemeenschappen
-seo-title: Gebruikersbeheer en UGC-beheerservice in AEM-gemeenschappen
+title: Gebruiker- en UGC-beheerservice in AEM Communities
+seo-title: Gebruiker- en UGC-beheerservice in AEM Communities
 description: 'Gebruik API''s om door gebruikers gegenereerde inhoud in bulk te verwijderen en te exporteren en gebruikersaccount uit te schakelen. '
 seo-description: 'Gebruik API''s om door gebruikers gegenereerde inhoud in bulk te verwijderen en te exporteren en gebruikersaccount uit te schakelen. '
 uuid: f4663825-eac8-4ef5-8253-46875e0cd71d
@@ -10,24 +10,27 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 discoiquuid: f564759f-fb56-4f70-a7b1-286a223755c6
 translation-type: tm+mt
-source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '607'
+ht-degree: 0%
 
 ---
 
 
-# Gebruikersbeheer en UGC-beheerservice in AEM-gemeenschappen {#user-and-ugc-management-service-in-aem-communities}
+# Gebruiker- en UGC-beheerservice in AEM Communities {#user-and-ugc-management-service-in-aem-communities}
 
 >[!IMPORTANT]
 >
 >GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy; zoals GDPR, CCPA enz.
 
-AEM Communities maakt API&#39;s offline beschikbaar voor het beheer van gebruikersprofielen en het beheer van door gebruikers gegenereerde inhoud (UGC) in grote hoeveelheden. Zodra toegelaten, staat de dienst **UserUgcManagement** de bevoorrechte gebruikers (communautaire beheerders en moderatoren) toe om gebruikersprofielen onbruikbaar te maken, en bulkschrapping of bulkuitvoer UGC voor specifieke gebruikers. Deze API&#39;s stellen ook de verwerkingsverantwoordelijken en verwerkers van klantgegevens in staat om te voldoen aan de algemene gegevensbeschermingsregels van de Europese Unie (GDPR) en andere op GDPR geïnspireerde privacymandaten.
+AEM Communities maken API&#39;s offline beschikbaar voor het beheren van gebruikersprofielen en het bulksgewijs beheren van door gebruikers gegenereerde inhoud (UGC). Zodra toegelaten, staat de dienst **UserUgcManagement** de bevoorrechte gebruikers (communautaire beheerders en moderatoren) toe om gebruikersprofielen onbruikbaar te maken, en bulkschrapping of bulkuitvoer UGC voor specifieke gebruikers. Deze API&#39;s stellen ook de verwerkingsverantwoordelijken en verwerkers van klantgegevens in staat om te voldoen aan de algemene gegevensbeschermingsregels van de Europese Unie (GDPR) en andere op GDPR geïnspireerde privacymandaten.
 
 Zie de pagina [GDPR in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html)voor meer informatie.
 
 >[!NOTE]
 >
->Als u [Adobe Analytics hebt geconfigureerd in de AEM Communities](analytics.md) -site, worden de vastgelegde gebruikersgegevens verzonden naar de Adobe Analytics-server. Adobe Analytics biedt API&#39;s waarmee u toegang hebt tot gebruikersgegevens, deze kunt exporteren en verwijderen en die voldoen aan GDPR. Voor meer informatie, zie [Verzoeken](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)van de Toegang voorleggen en van de Schrapping.
+>Als u [Adobe Analytics op de site AEM Communities](analytics.md) hebt geconfigureerd, worden de vastgelegde gebruikersgegevens naar de Adobe Analytics-server verzonden. Adobe Analytics biedt API&#39;s waarmee u toegang hebt tot gebruikersgegevens, deze kunt exporteren en verwijderen en die voldoen aan GDPR. Voor meer informatie, zie [Verzoeken](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)van de Toegang voorleggen en van de Schrapping.
 
 Om deze APIs aan gebruik te zetten, moet u het `/services/social/ugcmanagement` eindpunt toelaten door de dienst te activeren UserUgcManagement. Om deze dienst te activeren, installeer [steekproefservlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) beschikbaar op [GitHub.com](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet). Dan, druk het eindpunt op publiceer geval van uw communautaire plaats met aangewezen parameters gebruikend een HTTP- verzoek, gelijkend op het volgende:
 
@@ -61,9 +64,9 @@ Als u bijvoorbeeld de UGC wilt verwijderen van een gebruiker met de machtigbare 
 
 ### UGC verwijderen uit Adobe Analytics {#delete-ugc-from-analytics}
 
-Volg de GDPR Analytics-workflow om gebruikersgegevens uit Adobe Analytics te verwijderen. omdat de API geen gebruikersgegevens verwijdert uit Adobe Analytics.
+Volg de GDPR Analytics-workflow om gebruikersgegevens uit Adobe Analytics te verwijderen. omdat de API geen gebruikersgegevens van Adobe Analytics verwijdert.
 
-Raadpleeg de volgende afbeelding voor gegevenstoewijzingen voor Adobe Analytics-variabelen die door AEM Communities worden gebruikt:
+Raadpleeg de volgende afbeelding voor Adobe Analytics-variabeletoewijzingen die door AEM Communities worden gebruikt:
 
 ![AEM-gemeenschappen variabele mapping voor Adobe Analytics](assets/Analytics-Communities-Mapping.png)
 
