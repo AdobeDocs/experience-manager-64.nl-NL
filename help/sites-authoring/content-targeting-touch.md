@@ -1,8 +1,8 @@
 ---
 title: Authoring van getargete content met targetingmodus
 seo-title: Authoring van getargete content met targetingmodus
-description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen
-seo-description: De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen
+description: De doelmodus en de Target-component bieden gereedschappen voor het maken van inhoud voor ervaringen
+seo-description: De doelmodus en de Target-component bieden gereedschappen voor het maken van inhoud voor ervaringen
 uuid: 174f9e9b-02c7-48dd-92fc-e407d2a734c3
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,14 +10,17 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: 0e2e95fa-9e27-4edc-b57b-82cefe8d4088
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '5374'
+ht-degree: 5%
 
 ---
 
 
 # Authoring van getargete content met targetingmodus{#authoring-targeted-content-using-targeting-mode}
 
-Maak specifieke inhoud met behulp van de doelmodus van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor ervaringen tot stand te brengen:
+Maak specifieke inhoud met behulp van de doelmodus van AEM. De richtingsmodus en de Target-component bieden gereedschappen voor het maken van inhoud voor ervaringen:
 
 * Herken eenvoudig de doelinhoud op de pagina. Een stippellijn vormt een rand rondom alle doelinhoud.
 * Selecteer een merk en een activiteit om de ervaringen te bekijken.
@@ -26,20 +29,20 @@ Maak specifieke inhoud met behulp van de doelmodus van AEM. De gerichte wijze en
 * Voeg aanbiedingen toe aan een ervaring door aanbiedingen te maken of aanbiedingen uit een bibliotheek te gebruiken.
 * Configureer doelen en controleer de prestaties.
 * Simuleer de gebruikerservaring.
-* Voor meer aanpassing, vorm de component van het Doel.
+* Configureer de Target-component voor meer aanpassing.
 
 U kunt AEM of Adobe Target gebruiken als de doelengine (u moet een geldige Adobe Target-account hebben om Adobe Target te kunnen gebruiken). Als u Adobe Target gebruikt, moet u eerst de integratie configureren. Zie [instructies voor integratie met Adobe Target](/help/sites-administering/target.md).
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
-De activiteiten en ervaringen die u op de wijze van het Doel ziet wijzen op de console [van](/help/sites-authoring/activitylib.md)Activiteiten:
+De activiteiten en ervaringen die u in de modus Target ziet, weerspiegelen de [Activites-console](/help/sites-authoring/activitylib.md):
 
 * Wijzigingen die u aanbrengt in activiteiten en ervaringen die gebruikmaken van de modus Doel, worden weerspiegeld in de console Activiteiten.
 * De veranderingen die in de console van Activiteiten worden aangebracht worden weerspiegeld in het richten wijze.
 
 >[!NOTE]
 >
->Wanneer u een campagne maakt in Adobe Target, wordt aan elke campagne een eigenschap toegewezen die `thirdPartyId` wordt aangeroepen. Wanneer u de campagne verwijdert in Adobe Target, wordt de id van een derde partij niet verwijderd. U kunt niet `thirdPartyId` voor campagnes van verschillende types (AB, XT) opnieuw gebruiken en het kan niet manueel worden verwijderd. Geef elke campagne een unieke naam om dit probleem te voorkomen. campagnemenamen kunnen daarom niet opnieuw worden gebruikt in verschillende soorten campagnes.
+>Wanneer u een campagne maakt in Adobe Target, wordt aan elke campagne een eigenschap toegewezen `thirdPartyId` die wordt aangeroepen. Wanneer u de campagne in Adobe Target verwijdert, wordt de thirdPartyId niet verwijderd. U kunt niet `thirdPartyId` voor campagnes van verschillende types (AB, XT) opnieuw gebruiken en het kan niet manueel worden verwijderd. Geef elke campagne een unieke naam om dit probleem te voorkomen. campagnemenamen kunnen daarom niet opnieuw worden gebruikt in verschillende soorten campagnes.
 >
 >Als u dezelfde naam gebruikt in hetzelfde type campagne, overschrijft u de bestaande campagne.
 >
@@ -51,12 +54,12 @@ De activiteiten en ervaringen die u op de wijze van het Doel ziet wijzen op de c
 
 ## Schakelen naar doelmodus {#switching-to-targeting-mode}
 
-Schakel over naar de modus Doel om toegang te krijgen tot de gereedschappen voor het ontwerpen van doelinhoud.
+Schakel over naar de Target-modus om toegang te krijgen tot de gereedschappen voor het ontwerpen van doelinhoud.
 
-Ga naar de modus Doel:
+U schakelt over naar de Target-modus:
 
 1. Open de pagina waarvoor u doelinhoud wilt ontwerpen.
-1. Klik of tik op de werkbalk boven aan de pagina op het vervolgkeuzemenu voor de modus om de beschikbare modustypen weer te geven.
+1. Klik of tik op de werkbalk boven aan de pagina op de vervolgkeuzelijst met modi om de beschikbare modustypen weer te geven.
 
    ![chlimage_1-60](assets/chlimage_1-60.png)
 
@@ -68,9 +71,9 @@ Ga naar de modus Doel:
 
 Gebruik de modus Doel om een activiteit aan een merk toe te voegen. Wanneer u een activiteit toevoegt, bevat het de Standaardervaring. Nadat u de activiteit hebt toegevoegd, start u het proces voor het toewijzen van inhoud voor de activiteit.
 
-U kunt ook Adobe Target-activiteiten maken en beheren vanuit AEM met de optie AEM of Adobe Target (doelengine) te selecteren en het type activiteit te selecteren: Experience Targeting of A/B Test.
+U kunt ook Adobe Target-activiteiten maken en beheren vanuit AEM met de optie AEM of Adobe Target (target engine) en het type activiteit selecteren - Experience Targeting of A/B Test.
 
-Daarnaast kunt u doelstellingen en maatstaven voor alle Adobe Target-activiteiten beheren en uw Adobe Target-publiek beheren. De activiteitenrapportage van Adobe Target, inclusief het converteren van winnaars voor A/B-tests, is ook inbegrepen.
+Bovendien kunt u doelstellingen en maatstaven voor alle Adobe Target-activiteiten beheren en uw Adobe Target-publiek beheren. Er wordt ook melding gemaakt van Adobe Target-activiteiten, waaronder het converteren van winnaars voor A/B-tests.
 
 Wanneer u een activiteit toevoegt, verschijnt het ook in de console [van](/help/sites-authoring/activitylib.md)Activiteiten.
 
@@ -89,32 +92,32 @@ Een activiteit toevoegen:
 
    >[!NOTE]
    >
-   >Wanneer u een nieuwe activiteit creeert en een de wolkenconfiguratie van Adobe Target op de pagina of één van zijn ouder heeft aangesloten, veronderstelt AEM automatisch Adobe Target als motor.
+   >Wanneer u een nieuwe activiteit creeert en een de wolkenconfiguratie van Adobe Target verbonden aan de pagina of één van zijn ouder hebt, veronderstelt AEM automatisch Adobe Target als motor.
 
 1. Selecteer de betreffende engine in het keuzemenu **Doelengine** .
 
    * Als u **ContextHub AEM** selecteert, worden de resterende gebieden gedimd en niet beschikbaar. Klik of tik op **Maken**.
-   * Als u **Adobe Target** selecteert, kunt u een configuratie (standaard, is het de configuratie u verstrekte toen u de rekening [) en Type van Activiteit](/help/sites-administering/opt-in.md)vormde.
-   * Selecteer **** Adobe Campagne als u de integratie van AEM/Adobe Campagne gebruikt en gerichte inhoud (nieuwsbrieven) verzendt. Zie [Integratie met Adobe Campaign](/help/sites-administering/campaign.md) voor meer informatie.
+   * Als u **Adobe Target** selecteert, kunt u een configuratie (door gebrek, is het de configuratie u verstrekte toen u de rekening [) en het Type van Activiteit](/help/sites-administering/opt-in.md)vormde.
+   * Selecteer **Adobe Campaign** als u de integratie tussen AEM en Adobe Campaign gebruikt en doelinhoud (nieuwsbrieven) verzendt. Zie [Integratie met Adobe Campaign](/help/sites-administering/campaign.md) voor meer informatie.
 
 1. Selecteer in het menu Activiteit de optie **Ervaring gericht** of **A/B-test**.
 
    * Gerichte ervaring - beheer Adobe Target-activiteiten van AEM.
-   * A/B-test - Maak/beheer A/B-testactiviteiten in Adobe Target vanuit AEM.
+   * A/B-test - A/B-testactiviteiten in Adobe Target maken/beheren vanuit AEM.
 
-## Het doelproces: Maken, Doel en Doelen &amp; Instellingen {#the-targeting-process-create-target-and-goals-settings}
+## Het doelproces: Maken, Target en Doelen &amp; Instellingen {#the-targeting-process-create-target-and-goals-settings}
 
 De gerichte wijze laat u toe om verscheidene aspecten van een activiteit te vormen. Gebruik het volgende proces in drie stappen voor het maken van gerichte inhoud voor een merkactiviteit:
 
 1. [Maken](#create-authoring-the-experiences): Voeg ervaringen toe of verwijder ervaringen en voeg aanbiedingen toe voor elke ervaring.
-1. [Doel](#target-configuring-the-audiences): Geef het publiek op dat elke ervaring als doel heeft. U kunt een specifiek publiek richten en als het gebruiken van het testen A/B beslist welk percentage van verkeer naar welke ervaring gaat.
+1. [Target](#target-configuring-the-audiences): Geef het publiek op dat elke ervaring als doel heeft. U kunt een specifiek publiek richten en als het gebruiken van het testen A/B beslist welk percentage van verkeer naar welke ervaring gaat.
 1. [Doelstellingen en instellingen](#goals-settings-configuring-the-activity-and-setting-goals): Plan de activiteit en stel de prioriteit in. U kunt succes metrische doelstellingen ook plaatsen.
 
 Gebruik de volgende procedure om het doelproces voor inhoud voor een activiteit te starten.
 
 >[!NOTE]
 >
->Om het het richten proces te gebruiken, moet u een lid van de de gebruikersgroep van de Auteurs van de Activiteit van het Doel zijn.
+>Als u het doelproces wilt gebruiken, moet u lid zijn van de gebruikersgroep Target Activity Authors.
 
 Een activiteit toevoegen:
 
@@ -144,7 +147,7 @@ Nadat u het doelproces [hebt](/help/sites-authoring/content-targeting-touch.md#t
 >
 >Een aanbieding is de inhoud van een doelcomponent.
 
-De ervaringen worden getoond in de ruit van het publiek. In het volgende voorbeeld zijn de ervaringen **Standaard**, **Vrouwelijk**, **Vrouwelijk ouder dan 30** en **Vrouwelijk jonger dan 30**. In dit voorbeeld wordt het standaardaanbod van een beoogde **afbeeldingscomponent** getoond.
+De ervaringen worden weergegeven in het deelvenster Doelgroep. In het volgende voorbeeld zijn de ervaringen **Standaard**, **Vrouwelijk**, **Vrouwelijk ouder dan 30** en **Vrouwelijk jonger dan 30**. In dit voorbeeld wordt het standaardaanbod van een beoogde **afbeeldingscomponent** getoond.
 
 ![chlimage_1-63](assets/chlimage_1-63.png)
 
@@ -152,7 +155,7 @@ Wanneer u een andere ervaring hebt geselecteerd, wordt in de component Image het
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Wanneer een ervaring wordt geselecteerd en de doelcomponent geen aanbieding voor die ervaring omvat, toont de component **Add Voorstel** bovenop de semi-transparante standaardaanbieding. Wanneer geen aanbieding voor een ervaring is gecreeerd, wordt de **Standaard** aanbieding getoond voor het segment dat aan de ervaring in kaart wordt gebracht.
+Wanneer een ervaring wordt geselecteerd en de doelcomponent geen aanbieding voor die ervaring omvat, toont de component **Aanbieding toevoegen** bovenop de semitransparante standaardaanbieding. Wanneer geen aanbieding voor een ervaring is gecreëerd, wordt de **Standaardaanbieding** getoond voor het segment dat aan de ervaring is toegewezen.
 
 ![chlimage_1-65](assets/chlimage_1-65.png)
 
@@ -217,10 +220,10 @@ Ervaringen kopiëren met de doelmodus:
 
 ### Aanbiedingen maken met de doelmodus {#creating-offers-using-targeting-mode}
 
-Kies een component om aanbiedingen voor ervaringen te maken. De gerichte componenten verstrekken de inhoud die als aanbiedingen voor ervaringen wordt gebruikt.
+Target een component om aanbiedingen voor ervaringen te maken. De gerichte componenten verstrekken de inhoud die als aanbiedingen voor ervaringen wordt gebruikt.
 
-* [Doel een bestaande component](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component). De inhoud wordt de standaardervaring.
-* [Voeg een doelcomponent](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component)toe en voeg vervolgens inhoud toe aan de component.
+* [Target een bestaande component](/help/sites-authoring/content-targeting-touch.md#creating-a-default-offer-by-targeting-an-existing-component). De inhoud wordt de standaardervaring.
+* [Voeg een Target-component](/help/sites-authoring/content-targeting-touch.md#creating-an-offer-by-adding-a-target-component)toe en voeg vervolgens inhoud toe aan de component.
 
 Nadat een component is aangewezen, kunt u aanbiedingen voor elke ervaring toevoegen:
 
@@ -235,7 +238,7 @@ De volgende gereedschappen zijn beschikbaar voor het werken met aanbiedingen:
 
 #### Een standaardaanbieding maken door een bestaande component als doel in te stellen {#creating-a-default-offer-by-targeting-an-existing-component}
 
-Wijs een component op de pagina aan om het als aanbieding voor de Standaardervaring van de activiteit te gebruiken. Wanneer u een component als doel instelt, wordt deze in een doelcomponent verpakt en wordt de inhoud van deze component de aanbieding voor de standaardervaring.
+Target een component op de pagina om deze te gebruiken als de aanbieding voor de standaardervaring van de activiteit. Wanneer u een component als doel instelt, wordt deze verpakt in een Target-component en wordt de inhoud van deze component de standaardervaring.
 
 Wanneer u een component als doel instelt, kan alleen die component in de aanbieding worden gebruikt. U kunt de component niet uit de aanbieding verwijderen of andere componenten aan de aanbieding toevoegen.
 
@@ -245,43 +248,43 @@ Voer de volgende procedure uit nadat het het richten proces [](/help/sites-autho
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-1. Klik of tik op het pictogram Doel.
+1. Klik of tik op het Target-pictogram.
 
    ![](do-not-localize/chlimage_1.png)
 
    De inhoud van de component is de aanbieding voor de Standaardervaring. Wanneer een component wordt gericht, zal zijn standaardknoop voor elke ervaring worden herhaald. Dit is nodig voor het bewerken van het juiste inhoudsknooppunt tijdens specifieke ontwerphandelingen. Voor deze niet-standaard ervaringen [voegt u een aangepaste aanbieding](/help/sites-authoring/content-targeting-touch.md#adding-a-custom-offer) toe of [voegt u een bibliotheekaanbieding](/help/sites-authoring/content-targeting-touch.md#adding-an-offer-from-an-offer-library)toe.
 
-#### Een aanbieding maken door een doelcomponent toe te voegen {#creating-an-offer-by-adding-a-target-component}
+#### Een aanbieding maken door een Target-component toe te voegen {#creating-an-offer-by-adding-a-target-component}
 
-Voeg een component van het Doel toe om de aanbieding voor de Standaardervaring tot stand te brengen. De doelcomponent is een container voor andere componenten en componenten die erin worden geplaatst, worden als doel ingesteld. Wanneer u de component van het Doel gebruikt, kunt u verscheidene componenten toevoegen om een aanbieding tot stand te brengen. Bovendien kunt u verschillende componenten in elke ervaring gebruiken om verschillende aanbiedingen te maken.
+Voeg een Target-component toe om de aanbieding voor de standaardervaring te maken. De Target-component is een container voor andere componenten en componenten die erin worden geplaatst, worden als doel ingesteld. Wanneer u de Target-component gebruikt, kunt u verschillende componenten toevoegen om een aanbieding te maken. Bovendien kunt u verschillende componenten in elke ervaring gebruiken om verschillende aanbiedingen te maken.
 
-Zie Opties [van de component Doel](/help/sites-authoring/content-targeting-touch.md#configuring-target-component-options) configureren voor informatie over het aanpassen van deze component.
+Zie Opties voor [Target-componenten](/help/sites-authoring/content-targeting-touch.md#configuring-target-component-options) configureren voor informatie over het aanpassen van deze component.
 
 >[!NOTE]
 >
 >Aanbiedingen die u met de console [van](/help/sites-authoring/offerlib.md) Aanbiedingen creeert kunnen verscheidene componenten ook bevatten. Deze aanbiedingen horen bij een aanbiedingsbibliotheek en kunnen voor meerdere ervaringen worden gebruikt.
 
-Aangezien de doelcomponent een container is, wordt deze weergegeven als een neerzetgebied voor andere componenten.
+Omdat de Target-component een container is, wordt deze weergegeven als een neerzetgebied voor andere componenten.
 
-In de modus Doel heeft de component Doel een blauwe rand en geeft het bericht voor de neerzetbestemming de doelaard aan.
+In de Target-modus heeft de Target-component een blauwe rand en geeft het doelbericht de doelaard aan.
 
 ![chlimage_1-70](assets/chlimage_1-70.png)
 
-In de modus Bewerken heeft de component Doel een pictogram met een opsommingsteken.
+In de modus Bewerken heeft de Target-component een pictogram met een opsommingsteken.
 
 ![](do-not-localize/chlimage_1-1.png)
 
-Wanneer u componenten naar de component van het Doel sleept, zijn zij gerichte componenten.
+Wanneer u componenten naar de Target-component sleept, zijn het doelcomponenten.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
-Wanneer u een component aan de component van het Doel toevoegt, verstrekt het inhoud voor een specifieke ervaring. Als u de ervaring wilt opgeven, selecteert u de ervaring voordat u de componenten toevoegt.
+Wanneer u een component aan de component van Target toevoegt, verstrekt het inhoud voor een specifieke ervaring. Als u de ervaring wilt opgeven, selecteert u de ervaring voordat u de componenten toevoegt.
 
-U kunt een doelcomponent aan de pagina toevoegen in de modus Bewerken of in de modus Doel. U kunt componenten alleen in de modus Doel aan de component Doel toevoegen. De component van het Doel behoort tot de de componentengroep van de Personalisatie.
+U kunt een Target-component aan de pagina toevoegen in de modus Bewerken of in de modus Target. U kunt alleen in de Target-modus componenten toevoegen aan de Target-component. De Target-component behoort tot de groep met personaliseringscomponenten.
 
 Als u de doelinhoud wilt bewerken, klikt of tikt u op **Doelstelling starten **voordat u dit kunt doen.
 
-1. Sleep de component Target naar de pagina waar u het aanbod wilt weergeven.
+1. Sleep de Target-component naar de pagina waar u het aanbod wilt weergeven.
 1. Standaard is er geen locatie-id ingesteld. Klik of tik de Configure cog wiel om de plaats te plaatsen.
 
    >[!NOTE]
@@ -289,7 +292,7 @@ Als u de doelinhoud wilt bewerken, klikt of tikt u op **Doelstelling starten **v
    >Indien ingesteld door uw beheerder, moet u de locatie mogelijk expliciet instellen.
    >
    >Beheerders kunnen bepalen of deze configuratie vereist is op **https://&lt;host>:&lt;port>/system/console/configMgr/com.day.cq.personalization.impl.servlets.TargetingConfigurationServlet**
-   Als u wilt dat gebruikers een locatie moeten invoeren, schakelt u het selectievakje Locatie **** forceren in.
+   Als u wilt dat gebruikers een locatie moeten invoeren, schakelt u het selectievakje **Locatie forceren** in.
 
 1. Selecteer de ervaring waarvoor u de aanbieding wilt maken.
 1. Maak het voorstel:
@@ -384,17 +387,17 @@ Open een bibliotheekaanbieding vanuit een ervaring in de modus Gericht om de aan
 
 1. Sla het bestand weer op in de bibliotheek. Zie Een aangepaste aanbieding [toevoegen aan een bibliotheek](#adding-a-custom-offer-to-a-library).
 
-## Doel: Het publiek configureren {#target-configuring-the-audiences}
+## Target: Het publiek configureren {#target-configuring-the-audiences}
 
-De stap Doel van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) omvat het in kaart brengen van publiek met de ervaringen die u met in Create stap werkte. De pagina Doel toont het publiek dat elke ervaring richt. U kunt het publiek voor elke ervaring opgeven of wijzigen. Als u Adobe Target gebruikt, kunt u A/B tests ook tot stand brengen die u toestaan om percentage van verkeer voor een publiek aan een bepaalde ervaring te richten.
+De stap van Target van [het het richten proces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) impliceert het in kaart brengen van publiek met de ervaringen die u met in de Create stap werkte. Op de Target-pagina ziet u het publiek waarvoor elke ervaring is bedoeld. U kunt het publiek voor elke ervaring opgeven of wijzigen. Als u Adobe Target gebruikt, kunt u A/B tests ook tot stand brengen die u toestaan om percentage van verkeer voor een publiek aan een bepaalde ervaring te richten.
 
-### Als u AEM-doelversie of Adobe-doel gebruikt (ervaring voor doelversie)... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
+### Als u AEM-doelen of Adobe Target gebruikt (minder ervaring)... {#if-you-are-using-aem-targeting-or-adobe-target-experience-targeting}
 
 Het publiek verschijnt aan de linkerkant van het kaartdiagram, en de ervaringen verschijnen aan de rechterkant.
 
 ![chlimage_1-79](assets/chlimage_1-79.png)
 
-Definieer een publiek met een segment. De wolkenconfiguratie voor de pagina bepaalt de segmenten die aan u beschikbaar zijn. Als de pagina niet is gekoppeld aan een Adobe Target-cloudconfiguratie, zijn AEM-segmenten beschikbaar voor het definiëren van soorten publiek. Als de pagina is gekoppeld aan een Adobe Target-cloudconfiguratie, gebruikt u Doelsegmenten.
+Definieer een publiek met een segment. De wolkenconfiguratie voor de pagina bepaalt de segmenten die aan u beschikbaar zijn. Als de pagina niet is gekoppeld aan een Adobe Target-cloudconfiguratie, zijn AEM-segmenten beschikbaar voor het definiëren van soorten publiek. Als de pagina is gekoppeld aan een Adobe Target-cloudconfiguratie, gebruikt u Target-segmenten.
 
 Zie [Richtingsmotor](/help/sites-authoring/personalization.md#targeting-engine)voor informatie over motoren.
 
@@ -402,15 +405,15 @@ Een publiek mag niet door meer dan één ervaring worden gebruikt. Er verschijnt
 
 ![](do-not-localize/chlimage_1-6.png)
 
-### Ervaringen koppelen aan publiek (AEM of Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
+### Ervaringen koppelen aan het publiek (AEM of Adobe Target) {#associating-experiences-with-audiences-aem-or-adobe-target}
 
-Gebruik de volgende procedure om een ervaring aan een publiek te associëren wanneer het gebruiken van AEM richtend (of de ervaring van het Doel van Adobe richtend):
+Gebruik de volgende procedure om een ervaring aan een publiek te associëren wanneer het gebruiken van AEM richtend (of de ervaring van Adobe Target richtend):
 
 1. Klik of tik de drop-down pijl naast in de publieksdoos die aan de ervaring wordt toegewezen.
 1. (Optioneel) Klik of tik op **Bewerken** en typ een trefwoord om naar het gewenste segment te zoeken.
 1. Selecteer het publiek in de lijst met soorten publiek en klik of tik op **OK**.
 
-### Als u A/B Testen gebruikt (Adobe Target)... {#if-you-are-using-a-b-testing-adobe-target}
+### Als u A/B Testing (Adobe Target) gebruikt... {#if-you-are-using-a-b-testing-adobe-target}
 
 Als u een A/B testactiviteit hebt, zijn de soorten publiek op uw linkerzijde, is het percentage dat elke ervaring wordt bekeken in het midden, en de ervaringen zijn op het recht.
 
@@ -430,7 +433,7 @@ U kunt de percentages wijzigen zolang ze maar optellen tot 100 procent. Een publ
 
 In de stap Doelstellingen en instellingen van [het doelproces](/help/sites-authoring/content-targeting-touch.md#the-targeting-process-create-target-and-goals-settings) moet u het gedrag van de merkactiviteit configureren. Geef op wanneer de activiteit begint en eindigt en geef ook de prioriteit van de activiteit op. Bovendien volgt u ook doelstellingen. Specifiek kunt u beslissen wat u met uw activiteiten wilt meten.
 
-Goal Metrics zijn alleen beschikbaar als u Adobe Target gebruikt voor uw doelengine. U moet minstens één doel metrisch bepalen. Als u Adobe Analytics hebt geconfigureerd en een cloudconfiguratie voor A4T Analytics hebt, kunt u opgeven of Adobe Target of Adobe Analytics de rapportbron moet zijn.
+Goal Metrics zijn alleen beschikbaar als je Adobe Target gebruikt voor je doelengine. U moet minstens één doel metrisch bepalen. Als Adobe Analytics is geconfigureerd en u beschikt over een A4T Analytics-cloudconfiguratie, kunt u kiezen of u Adobe Target of Adobe Analytics als rapportbron wilt gebruiken.
 
 De doelmeetgegevens worden alleen gemeten voor de gepubliceerde campagne.
 
@@ -438,11 +441,11 @@ Indien AEM wordt gebruikt als motor waarop het gericht is:
 
 ![chlimage_1-81](assets/chlimage_1-81.png)
 
-Als Adobe Target wordt gebruikt als de doelengine:
+Indien Adobe Target wordt gebruikt als de motor waarop is gericht:
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
-Als u Adobe Target gebruikt als de doelengine en u A4T Analytics hebt geconfigureerd voor de account, hebt u een extra vervolgkeuzelijst Bron **** rapporteren:
+Als u Adobe Target gebruikt als de doelengine en u A4T Analytics hebt geconfigureerd voor het account, hebt u een extra vervolgkeuzemenu voor **Bron van rapportage**:
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
@@ -519,7 +522,7 @@ Gebruik de geavanceerde montages om te bepalen wat gebeurt **nadat** een gebruik
  </tbody> 
 </table>
 
-Zie de documentatie [van](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) Adobe Target voor meer informatie over succesmetriek.
+Raadpleeg de documentatie [van](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) Adobe Target voor meer informatie over succesmetriek.
 
 ### Instellingen configureren (AEM-doel) {#configuring-settings-aem-targeting}
 
@@ -528,7 +531,7 @@ Om montages te vormen wanneer het gebruiken van AEM richtend:
 1. Als u wilt opgeven wanneer de activiteit begint, selecteert u een van de volgende waarden in het keuzemenu **Start** :
 
    * **Indien geactiveerd**: De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te starten.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u het vervolgkeuzemenu **Einde** om een van de volgende waarden te selecteren:
 
@@ -539,12 +542,12 @@ Om montages te vormen wanneer het gebruiken van AEM richtend:
 
 ### Doelstellingen en instellingen configureren (Adobe Target) {#configuring-goals-settings-adobe-target}
 
-Doelstellingen en instellingen configureren als Adobe Target wordt gebruikt:
+Als u Adobe Target gebruikt, kunt u als volgt doelen en instellingen configureren:
 
 1. Als u wilt opgeven wanneer de activiteit begint, selecteert u een van de volgende waarden in het keuzemenu **Start** :
 
    * **Indien geactiveerd**: De activiteit begint wanneer de pagina die de beoogde inhoud bevat, wordt geactiveerd.
-   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te starten.
+   * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op waarop de activiteit wordt gestart.
 
 1. Als u wilt opgeven wanneer de activiteit eindigt, gebruikt u het vervolgkeuzemenu **Einde** om een van de volgende waarden te selecteren:
 
@@ -552,19 +555,19 @@ Doelstellingen en instellingen configureren als Adobe Target wordt gebruikt:
    * **Opgegeven datum en tijd**: Een specifieke tijd. Wanneer u deze optie selecteert, klikt of tikt u op het kalenderpictogram, selecteert u een datum en geeft u de tijd op om de activiteit te beëindigen.
 
 1. Als u een prioriteit voor de activiteit wilt opgeven, gebruikt u de schuifregelaar om **Laag**, **Normaal** of **Hoog** te selecteren.
-1. Als u Adobe Analytics hebt geconfigureerd met uw Adobe Target-account, wordt het vervolgkeuzemenu **Bron** rapporteren weergegeven. Selecteer **Adobe Target** of **Adobe Analytics** als bron.
+1. If you have configured Adobe Anaytics with your Adobe Target Account, then you see the **Reporting Source** drop-down menu. Selecteer **Adobe Target** of **Adobe Analytics** als bron.
 
    Als u **Adobe Analytics** selecteert, selecteert u het bedrijf en de rapportsuite. Als u **Adobe Target** selecteert, is geen actie vereist.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-1. In het Metrische **gebied van het** Goal, onder **Mijn Primair Doel** selecteer succesmetrisch u wilt volgen - Omzetting, Inkomsten, Betrokkenheid - en ga in hoe die metrisch wordt gemeten (of welke actie het publiek neemt om erop te wijzen dat een doel is bereikt). Zie de definitie van de streefcijfers in de vorige tabel en zie de documentatie [van](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html) Adobe Target over succesmetriek.
+1. In het gebied **Metrische data van doel** selecteert u onder **Mijn primaire doel** de metrische data voor succes die u wilt volgen (Omzetting, Inkomsten, Betrokkenheid) en geeft u op hoe deze metrische waarde wordt gemeten (of welke actie de doelgroep uitvoert om aan te geven dat een doel bereikt is). Zie de definitie van de metrische data van doel in de vorige tabel en zie de [Adobe Target-documentatie](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html) over metrische data voor succes.
 
    U kunt de naam van het doel wijzigen door op de drie stippen in de rechterbovenhoek te klikken en **Naam wijzigen** te selecteren.
 
-   Als u alle velden wilt wissen, klikt u op de drie stippen in de rechterbovenhoek en selecteert u Alle velden **** wissen.
+   Als u alle velden wilt wissen, klikt u op de drie stippen in de rechterbovenhoek en selecteert u **Alle velden wissen**.
 
-   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde instellingen** om deze te openen. Zie hoe succesmetriek worden geteld in de vorige tabel en [Adobe Target-documentatie](https://marketing.adobe.com/resources/help/en_US/target/target/r_success_metrics.html).
+   Alle metriek hebben ook geavanceerde montages u kunt bepalen. Selecteer **Geavanceerde instellingen** om deze te openen. Zie hoe succesmetriek worden geteld in vorige tabel en [Adobe Target-documentatie](https://docs.adobe.com/content/help/en/target/using/activities/success-metrics/success-metrics.html).
 
    >[!NOTE]
    Er moet ten minste één doel zijn gedefinieerd.
@@ -584,7 +587,7 @@ Doelstellingen en instellingen configureren als Adobe Target wordt gebruikt:
 1. Als u meer controle wilt hebben over de telling van de resultaten, klikt u of tikt u op **Geavanceerde instellingen** om deze te openen.
 1. Click **Save**.
 
-Nadat u de configuratie hebt geconfigureerd, kunt u de prestaties [bekijken van uw activiteiten](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) die gebruikmaken van Adobe Target (ervaring of doelgerichte A/B-test). Bovendien kunt u de winnaars [converteren als u de A/B-test als doel instelt.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
+Na het vormen, kunt u de prestaties van uw activiteiten [](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test) bekijken die Adobe Target (of ervaring of A/B test het richten) gebruiken. Bovendien kunt u de winnaars [converteren als u de A/B-test als doel instelt.](/help/sites-authoring/activitylib.md#viewing-performance-and-converting-winning-experiences-a-b-test)
 
 ## Een ervaring simuleren {#simulating-an-experience}
 
@@ -595,13 +598,13 @@ De volgende criteria bepalen de inhoud die wordt weergegeven wanneer bezoekerser
 * De gegevens in de zittingsopslag van de gebruiker (via de Hub van de Context).
 * De [activiteiten die aan](/help/sites-authoring/activitylib.md)zijn.
 * De [regels die de segmenten](/help/sites-administering/campaign-segmentation.md)definiëren.
-* De inhoud van de ervaringen in de componenten van het Doel.
+* De inhoud van de ervaringen in de Target-componenten.
 * De [configuratie van de gerichte motor](/help/sites-authoring/activitylib.md).
 
 Als er onverwachte inhoud op de pagina wordt weergegeven wanneer u een profiel laadt, controleert u de configuratie van elk item in deze lijst.
 
 >[!NOTE]
-Als u A/B het testen gebruikt, wanneer het simuleren van ervaringen wordt getoond gebaseerd op verkeerspercentage. Dit wordt beheerd door Adobe Target, wat kan leiden tot onverwachte resultaten voor auteurs. (De _auteuractiviteit is gesynchroniseerd met specifieke montages die herevaluatie tijdens simulatie toestaan.) De auteurs kunnen moeten verfrissen om de andere ervaringen te zien die op hun verkeersmontages worden gebaseerd.
+Als u A/B het testen gebruikt, wanneer het simuleren van ervaringen wordt getoond gebaseerd op verkeerspercentage. Dit wordt gecontroleerd door Adobe Target, wat tot onverwachte resultaten voor auteurs kan leiden. (De _auteuractiviteit is gesynchroniseerd met specifieke montages die herevaluatie tijdens simulatie toestaan.) De auteurs kunnen moeten verfrissen om de andere ervaringen te zien die op hun verkeersmontages worden gebaseerd.
 
 Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
 
@@ -621,32 +624,32 @@ Gebruik de volgende gereedschappen om de ervaring van de bezoeker te simuleren:
 
 1. Als u wijzigingen wilt aanbrengen in de weergegeven aanbiedingen, schakelt u over naar de modus Doel. Selecteer de simulatieactiviteit en bewerk de aanbiedingen voor de context die u hebt geconfigureerd in de modus Voorbeeld.
 
-## Opties voor doelcomponenten configureren {#configuring-target-component-options}
+## Opties voor Target-componenten configureren {#configuring-target-component-options}
 
-U kunt de component van het Doel aanpassen door tot de opties van de component op één van twee manieren toegang te hebben:
+U kunt de Target-component aanpassen door op twee manieren toegang te krijgen tot de opties van de component:
 
-1. Nadat u de doelcomponent hebt geselecteerd, klikt of tikt u in de doelcomponent op de component en vervolgens op het instellingspictogram (cog).
+1. Nadat u de component hebt aangewezen, in de component van Target, klik of tik de component en toen het montagespictogram (cog).
 
    ![](do-not-localize/chlimage_1-8.png)
 
-   AEM geeft het venster met opties voor de doelcomponent weer.
+   AEM geeft het venster met opties voor de Target-component weer.
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. U kunt deze instellingen ook openen in de modus Volledig scherm door in het venster met opties voor de doelcomponent op het pictogram voor het volledige scherm te klikken of te tikken.
+1. U kunt deze instellingen ook openen in de modus Volledig scherm door in het optievenster van de Target-component op het pictogram Volledig scherm te klikken of erop te tikken.
 
    ![](do-not-localize/chlimage_1-9.png)
 
-   AEM geeft het venster met opties voor de doelcomponent voor volledig scherm weer.
+   AEM geeft het venster met opties voor de Target-component voor volledig scherm weer.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
-1. Configureer de instellingen voor de doelcomponent zoals beschreven in de volgende tabellen.
+1. Configureer de Target-componentinstellingen zoals beschreven in de volgende tabellen.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Option</strong></td> 
+   <td><strong>Optie</strong></td> 
    <td><strong>Beschrijving</strong></td> 
   </tr> 
   <tr> 
@@ -655,7 +658,7 @@ U kunt de component van het Doel aanpassen door tot de opties van de component o
   </tr> 
   <tr> 
    <td><strong>Engine</strong></td> 
-   <td>Selecteer tussen Regels aan de <strong>clientzijde (zonder bijhouden), Adobe Target, ContextHub </strong>en<strong> Adobe Campagne, </strong>afhankelijk van de engine die u wilt gebruiken.</td> 
+   <td>Selecteer tussen Regels aan de <strong>clientzijde (zonder reeksspatiëring), Adobe Target, ContextHub </strong>en<strong> Adobe Campaign, </strong>afhankelijk van de engine die u wilt gebruiken.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -667,12 +670,12 @@ Als u Adobe Target als engine selecteert:
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Option</strong></td> 
+   <td><strong>Optie</strong></td> 
    <td><strong>Beschrijving</strong></td> 
   </tr> 
   <tr> 
    <td><strong>Nauwkeurige bestemming</strong></td> 
-   <td><p>Als u nauwkeurige adressering inschakelt, weet de component dat deze moet wachten totdat de context- of contexthubgegevens beschikbaar zijn voordat de aanvraag naar Adobe Target wordt verzonden. Hierdoor kan de laadtijd toenemen. Voor creatie, wordt het nauwkeurige richten altijd toegelaten.</p> <p>Als u het <strong>selectievakje Nauwkeurige bestemming</strong> inschakelt, voert het selectievakje een <code>mboxDefine</code> eerste bewerking en een <code>mboxUpdate</code> volgende bewerking uit. Dit resulteert in een Ajax-aanvraag zodra de gegevens beschikbaar zijn.</p> <p>Als u niet het <strong>nauwkeurige het richten</strong> controlevakje selecteert, voert mbox een <code>mboxCreate</code> resulterend in een synchrone aanvraag onmiddellijk uit (in dit geval, niet kunnen alle contextgegevens nog beschikbaar zijn).</p> <p><strong></strong> Opmerking: Het in- of uitschakelen van het nauwkeurig opgeven van een bepaald onderdeel heeft geen invloed op de instellingen die u globaal hebt ingesteld. U kunt globale instellingen altijd overschrijven door Accurate doelen selecteren in de component.</p> </td> 
+   <td><p>Wanneer u nauwkeurige adressering inschakelt, weet de component dat deze moet wachten totdat de context- of contexthubgegevens beschikbaar zijn voordat de aanvraag naar Adobe Target wordt verzonden. Hierdoor kan de laadtijd toenemen. Voor creatie, wordt het nauwkeurige richten altijd toegelaten.</p> <p>Als u het <strong>selectievakje Nauwkeurige bestemming</strong> inschakelt, voert het selectievakje een <code>mboxDefine</code> eerste bewerking en een <code>mboxUpdate</code> volgende bewerking uit. Dit resulteert in een Ajax-aanvraag zodra de gegevens beschikbaar zijn.</p> <p>Als u niet het <strong>nauwkeurige het richten</strong> controlevakje selecteert, voert mbox een <code>mboxCreate</code> resulterend in een synchrone aanvraag onmiddellijk uit (in dit geval, niet kunnen alle contextgegevens nog beschikbaar zijn).</p> <p><strong>Opmerking:</strong> Het in- of uitschakelen van het nauwkeurig opgeven van een bepaald onderdeel heeft geen invloed op de instellingen die u globaal hebt ingesteld. U kunt globale instellingen altijd overschrijven door Accurate doelen selecteren in de component.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Omgezette segmenten opnemen</strong></td> 
@@ -680,21 +683,21 @@ Als u Adobe Target als engine selecteert:
   </tr> 
   <tr> 
    <td><strong>Overgenomen contextparameters</strong></td> 
-   <td>Hier worden eventueel van het Adobe Target-framework overgenomen contextparameters weergegeven die aan de geselecteerde pagina zijn gekoppeld.</td> 
+   <td>Hier worden eventueel van het Adobe Target-framework overgeërfde contextparameters weergegeven die aan de geselecteerde pagina zijn gekoppeld.</td> 
   </tr> 
   <tr> 
    <td><strong>Contextparameters</strong></td> 
-   <td>Klik of tik <strong>Add gebied</strong> om extra contextparameters (het zelfde als beschikbaar in het kader van het Doel) te vormen. Contextparameters die aan de component worden toegevoegd, zijn <i>alleen</i> van toepassing op de component en niet op andere componenten, zoals het geval zou zijn als u contextparameters rechtstreeks aan het framework hebt toegevoegd.</td> 
+   <td>Klik of tik <strong>Add gebied</strong> om extra contextparameters (zelfde als beschikbaar in het kader van Target) te vormen. Contextparameters die aan de component worden toegevoegd, zijn <i>alleen</i> van toepassing op de component en niet op andere componenten, zoals het geval zou zijn als u contextparameters rechtstreeks aan het framework hebt toegevoegd.</td> 
   </tr> 
   <tr> 
    <td><strong>Statische parameters</strong></td> 
-   <td>Klik of tik <strong>Add gebied</strong> om extra statische parameters (het zelfde als beschikbaar in het kader van het Doel) te vormen. Statische parameters die aan de component worden toegevoegd, gelden <i>alleen</i> voor de component en niet voor andere componenten, zoals het geval zou zijn als u statische parameters rechtstreeks aan het framework toevoegt. Statische parameters komen niet uit context (cliëntcontext van inhoudshub).</td> 
+   <td>Klik of tik <strong>Add gebied</strong> om extra statische parameters (het zelfde als beschikbaar in het kader van Target) te vormen. Statische parameters die aan de component worden toegevoegd, gelden <i>alleen</i> voor de component en niet voor andere componenten, zoals het geval zou zijn als u statische parameters rechtstreeks aan het framework toevoegt. Statische parameters komen niet uit context (cliëntcontext van inhoudshub).</td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
-Wanneer u een component selecteert en deze doelbaar maakt, vervangt AEM ook de component en wordt een Adobe Target-component geïnjecteerd. (De Adobe Target-component wordt niet alleen gebruikt wanneer u deze handmatig aan de pagina toevoegt, maar ook wanneer u een bestaande component als doel instelt.)
+Wanneer u een component selecteert en deze doelbaar maakt, vervangt AEM ook de component en injecteert een Adobe Target-component. (De Adobe Target-component wordt niet alleen gebruikt wanneer u deze handmatig aan de pagina toevoegt, maar ook wanneer u een bestaande component als doel instelt.)
 
 Als u Client Context (clientzijde) selecteert als de engine:
 
@@ -703,7 +706,7 @@ Als u Client Context (clientzijde) selecteert als de engine:
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Option</strong></td> 
+   <td><strong>Optie</strong></td> 
    <td><strong>Beschrijving</strong></td> 
   </tr> 
   <tr> 
@@ -718,7 +721,7 @@ Als u Client Context (clientzijde) selecteert als de engine:
  </tbody> 
 </table>
 
-U selecteert **Adobe Campagne** als de engine als u AEM integreert met Adobe Campaign. Zie AEM [integreren met Adobe Campaign](/help/sites-administering/campaign.md) voor meer informatie.
+U selecteert **Adobe Campaign** als de engine als u AEM integreert met Adobe Campaign. Zie AEM [integreren met Adobe Campaign](/help/sites-administering/campaign.md) voor meer informatie.
 
 Selecteer **ContextHub** als motor als u ContextHub voor het richten gebruikt. Zie ContextHub [configureren.](/help/sites-administering/contexthub-config.md)
 
