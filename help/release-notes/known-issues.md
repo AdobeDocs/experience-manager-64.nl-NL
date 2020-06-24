@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+workflow-type: tm+mt
+source-wordcount: '1034'
+ht-degree: 0%
 
 ---
 
@@ -37,35 +40,35 @@ Als u Mozilla Firefox als browser gebruikt:
 Als u Microsoft Edge als browser gebruikt:
 
 * Typ `about:flags` de adresbalk en druk op Enter.
-* Blader naar de experimentele functies en **[!UICONTROL druk vervolgens op]**.
-* Klik op **[!UICONTROL Aanraakgebeurtenissen]** inschakelen.
-* Selecteer **[!UICONTROL Altijd uit]**.
+* Blader vervolgens naar de experimentele functies **[!UICONTROL Touch]**.
+* Klik op **[!UICONTROL Enable touch events]**.
+* Selecteer **[!UICONTROL Always Off]**.
 * Start de browser opnieuw.
 
 ## Platform {#platform}
 
-* **** Operations-dashboard: De voortgangsbalk wordt niet weergegeven wanneer de ZIP-extensie van het back-upbestand ontbreekt. (GRANITE-10713)
-* **** HTML: JavaUse-object met navolgende witruimte in de pakketdeclaratie bevriest de SightlyJavaCompilerService (GRANITE-20836)
-* **** Apache Felix/Sling: Config-bestand is nog steeds aanwezig in de opslagplaats, zelfs na configuration.delete() (GRANITE-20618)
-* **** Cloud-instellingen: Console wordt verbroken na het bewerken van de configuratiecontainer (GRANITE-20726)
-* **** Beveiliging: IMS-integratie mislukt met aangepast contextpad (GRANITE-20639)
-* **** Beveiliging: Verbeter standaard JAAS Rangschikking van SSO, Externe en Standaard LoginModules (GRANITE-20590)
-* **** Tooling - CRX DE Lite: Het bereik van de weergave Eigenschappen blijft omhoog (GRANITE-12040)
-* **** Tooling - CRX DE Lite: Kan wijzigingen in &quot;Lange&quot; waardetypen niet opslaan, tenzij u dubbelklikt op de naam van de eigenschap (GRANITE-12351)
+* **Operations-dashboard:** De voortgangsbalk wordt niet weergegeven wanneer de ZIP-extensie van het back-upbestand ontbreekt. (GRANITE-10713)
+* **HTML:** JavaUse-object met navolgende witruimte in de pakketdeclaratie bevriest de SightlyJavaCompilerService (GRANITE-20836)
+* **Apache Felix/Sling:** Config-bestand is nog steeds aanwezig in de opslagplaats, zelfs na configuration.delete() (GRANITE-20618)
+* **Cloud-instellingen:** Console wordt verbroken na het bewerken van de configuratiecontainer (GRANITE-20726)
+* **Beveiliging:** IMS-integratie mislukt met aangepast contextpad (GRANITE-20639)
+* **Beveiliging:** Verbeter standaard JAAS Rangschikking van SSO, Externe en Standaard LoginModules (GRANITE-20590)
+* **Tooling - CRX DE Lite:** Het bereik van de weergave Eigenschappen blijft omhoog (GRANITE-12040)
+* **Tooling - CRX DE Lite:** Kan wijzigingen in &quot;Lange&quot; waardetypen niet opslaan, tenzij u dubbelklikt op de naam van de eigenschap (GRANITE-12351)
 
-* **** Tooling - CRX DE Lite: ctrl+F-zoekopdracht naar geopende tekstbestanden blijft vastzitten bij RegExp-zoekopdracht (GRANITE-5996)
+* **Tooling - CRX DE Lite:** ctrl+F-zoekopdracht naar geopende tekstbestanden blijft vastzitten bij RegExp-zoekopdracht (GRANITE-5996)
 
-* **** Tooling - CRX DE Lite: Node-eigenschap wordt niet weergegeven nadat de naam van het knooppunt is gewijzigd (GRANITE-7160)
-* **** UI: Meer informatie... niet alle elementen tonen wanneer geopend bij een popover element op IE en Firefox (GRANITE-16326)
-* **** UI: De knopinfo voor info wordt verborgen wanneer de lay-out Vaste kolommen met twee kolommen naast elkaar wordt gebruikt (GRANITE-16869)
-* **** UI: Onverwerkte fout bij het nadoen als een gebruiker die niet bestaat (GRANITE-23228). Oplossing door een fouthandler [te](/help/sites-developing/customizing-errorhandler-pages.md) implementeren om het foutbericht aan te passen.
+* **Tooling - CRX DE Lite:** Node-eigenschap wordt niet weergegeven nadat de naam van het knooppunt is gewijzigd (GRANITE-7160)
+* **UI:** Meer informatie... niet alle elementen tonen wanneer geopend bij een popover element op IE en Firefox (GRANITE-16326)
+* **UI:** De knopinfo voor info wordt verborgen wanneer de lay-out Vaste kolommen met twee kolommen naast elkaar wordt gebruikt (GRANITE-16869)
+* **UI:** Onverwerkte fout bij het nadoen als een gebruiker die niet bestaat (GRANITE-23228). Oplossing door een fouthandler [te](/help/sites-developing/customizing-errorhandler-pages.md) implementeren om het foutbericht aan te passen.
 
-* **** Omnissearch: Zoekopdrachten met backslash-uitzondering (GRANITE-11769)
-* **** Omnissearch: Door het openen van &quot;Weergave-instellingen&quot; in de lijstweergave wijzigt u het zoekfilter (GRANITE-16524)
-* **** Omnissearch: Verkeerde lijst met kolomconfiguraties die worden weergegeven bij het uitvoeren van middelenzoekopdrachten vanuit sites (GRANITE-16527)
+* **Omnissearch:** Zoekopdrachten met backslash-uitzondering (GRANITE-11769)
+* **Omnissearch:** Door het openen van &quot;Weergave-instellingen&quot; in de lijstweergave wijzigt u het zoekfilter (GRANITE-16524)
+* **Omnissearch:** Verkeerde lijst met kolomconfiguraties die worden weergegeven bij het uitvoeren van middelenzoekopdrachten vanuit sites (GRANITE-16527)
 
-* **** Omnissearch: De voorspelling van de linkerspoorstaaf komt samen met het verzoek van de Omnisonderzoeksserver (GRANITE-20524)
-* **** Omnissearch: Omnissearch biedt geen ondersteuning voor contextpaden (GRANITE-16044)
+* **Omnissearch:** De voorspelling van de linkerspoorstaaf komt samen met het verzoek van de Omnisonderzoeksserver (GRANITE-20524)
+* **Omnissearch:** Omnissearch biedt geen ondersteuning voor contextpaden (GRANITE-16044)
 
 ## Assets {#assets}
 
@@ -85,7 +88,7 @@ Als u Microsoft Edge als browser gebruikt:
 
 * **BrandPortal**: Publiceren naar BrandPortal werkt niet voor verzamelingen (CQ-4238731)
 
-* **Uploaden**: Wanneer u elementen uploadt met speciale tekens in de bestandsnaam, wordt het foutbericht over de niet-toegestane tekens niet weergegeven voor elk element. Hoewel deze alleen voor het eerste element wordt weergegeven, geeft de interface de gebruiker duidelijk aan dat de bestandsnaam van het opgegeven element niet is toegestaan. (CQ-4256876)
+* **Uploaden**: Wanneer u elementen uploadt met speciale tekens in de bestandsnaam, wordt het foutbericht over de niet-toegestane tekens niet voor elk element weergegeven. Hoewel deze alleen voor het eerste element wordt weergegeven, geeft de interface de gebruiker duidelijk aan dat de bestandsnaam van het opgegeven element niet is toegestaan. (CQ-4256876)
 
 ## Gemeenschappen {#communities}
 
@@ -98,6 +101,7 @@ Als u Microsoft Edge als browser gebruikt:
 ### Installatie en implementatie
 
 * (Alleen AEM Forms JEE) Als het overvullen van JBoss-toepassingsserver tijdens het uitvoeren van Configuration Manager EJB-aanroepings- en opstartfouten retourneert. U kunt ze echter negeren. (Ref. CQ-4229793)
+* Wanneer AEM Forms wordt gestart, wordt de `SAX Security Manager could not be setup` waarschuwing weergegeven. (CQ-4297403)
 
 ### Interactieve communicatie
 
