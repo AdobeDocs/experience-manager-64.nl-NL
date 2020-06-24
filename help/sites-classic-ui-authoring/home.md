@@ -4,7 +4,7 @@ seo-title: AEM 6.4 Klassieke UI Authoring User Guide
 description: 'In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken. '
 seo-description: 'Omvat de concepten creatie in AEM in klassieke UI. '
 translation-type: tm+mt
-source-git-commit: 6be9e5049600420c86120d0b6c84c1c321d7dc63
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
 source-wordcount: '364'
 ht-degree: 17%
@@ -39,7 +39,7 @@ In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikers
 | [Gebruikershandleiding ontwikkelen](/help/sites-developing/home.md) | Leer hoe u uw AEM-instantie kunt opbouwen. |
 | [Gebruikershandleiding beheren](/help/managing/home.md) | In deze handleiding wordt beschreven hoe u een AEM-project kunt beheren. |
 | [Mobiele gebruikershandleiding](/help/mobile/home.md) | In deze handleiding wordt beschreven hoe u inhoud voor mobiele toepassingen kunt maken en beheren. |
-| [AEM Livefyre](https://marketing.adobe.com/resources/help/en_US/livefyre/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
+| [AEM Livefyre](https://docs.adobe.com/content/help/en/livefyre/using/home.html) | In deze handleiding ziet u hoe u door de gebruiker gegenereerde inhoud kunt delen met LiveCycle. |
 
 ## Belangrijke AEM-bronnen
 
