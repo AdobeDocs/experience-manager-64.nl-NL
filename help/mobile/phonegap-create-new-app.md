@@ -10,7 +10,10 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
@@ -23,19 +26,19 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 AEM Mobile-toepassingen zijn gebaseerd op een blauwdruk die een paginastructuur en eigenschappen definieert. U kunt de volgende toepassingseigenschappen configureren:
 
-* **** Titel: De toepassingstitel.
-* **** Doelpad: De locatie in de opslagplaats waar de toepassing is opgeslagen. Laat de standaardinstelling ongewijzigd om een pad te maken op basis van de toepassingsnaam.
+* **Titel:** De toepassingstitel.
+* **Doelpad:** De locatie in de opslagplaats waar de toepassing is opgeslagen. Laat de standaardinstelling ongewijzigd om een pad te maken op basis van de toepassingsnaam.
 
-* **** Naam: De standaardwaarde is de waarde van de eigenschap Titel, waarbij spatietekens zijn verwijderd. De naam wordt gebruikt binnen AEM om naar de toepassing te verwijzen, bijvoorbeeld voor het opslagknooppunt dat de toepassing vertegenwoordigt.
-* **** Omschrijving: Een beschrijving van de aanvraag.
-* **** Server-URL: De URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
+* **Naam:** De standaardwaarde is de waarde van de eigenschap Titel, waarbij spatietekens zijn verwijderd. De naam wordt gebruikt binnen AEM om naar de toepassing te verwijzen, bijvoorbeeld voor het opslagknooppunt dat de toepassing vertegenwoordigt.
+* **Omschrijving:** Een beschrijving van de aanvraag.
+* **Server-URL:** De URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
 
 U kunt ook een afbeeldingsbestand opgeven dat u als toepassingsminiatuur wilt gebruiken, de PhoneGap Build-configuratie selecteren die u wilt gebruiken en de analytische configuratie voor de Mobile App selecteren die u wilt gebruiken. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
 
 Er zijn extra (en optionele) tabbladen voor het samenstellen van de cloudservice en het integreren van de insteekmodule Adobe Mobile Services SDK in uw app.
 
 * Opbouwen: Klik hier op Configuraties beheren en stel de build.phonegap.com-service in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analyse: Klik op Configuraties beheren en stel de [Adobe Mobile Services SDK](https://marketing.adobe.com/developer/en_US/get-started/mobile/c-measuring-mobile-applications) -cloudservice in. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analytics: Klik op Configuraties beheren en stel de [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) -cloudservice in. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 ## App-sjablonen gebruiken {#using-app-templates}
 
@@ -73,7 +76,7 @@ Zie de volgende middelen om meer over andere auteursrollen te leren:
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Inhoudsservices](/help/mobile/develop-content-as-a-service.md)
 
-## Additional Resources {#additional-resources}
+## Aanvullende bronnen {#additional-resources}
 
 Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 
