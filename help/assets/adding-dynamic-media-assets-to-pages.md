@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
 workflow-type: tm+mt
 source-wordcount: '2714'
 ht-degree: 4%
@@ -186,8 +186,8 @@ Viewermodifiers hebben de vorm van name=value pair met een &amp;-scheidingsteken
 
    Met viewermodifiers kunt u bijvoorbeeld het volgende doen:
 
-   * Een bijschriftbestand koppelen aan een [videobijschrift](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Een navigatiebestand koppelen aan een [videonavigatie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Koppel een bijschriftbestand aan een [videobijschrift.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Koppel een navigatiebestand aan een [videonavigatie.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 U kunt het volgende bewerken [!UICONTROL Advanced Settings] door in de component te klikken **[!UICONTROL Edit]** .
 
