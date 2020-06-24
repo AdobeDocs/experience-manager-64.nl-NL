@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 36ea97a4-4e13-4e89-866b-495f3c30cb94
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
 workflow-type: tm+mt
-source-wordcount: '2728'
+source-wordcount: '2723'
 ht-degree: 2%
 
 ---
@@ -88,16 +88,16 @@ Als u Analytics for Communities-functies wilt configureren, moet u samenwerken m
 
 ## Adobe Analytics Report Suite for Video Reporting {#adobe-analytics-report-suite-for-video-reporting}
 
-Met behulp van [Report Suite Manager](https://marketing.adobe.com/resources/help/en_US/reference/new_report_suite.html)van de Adobe Marketing Cloud kunnen Analytics-rapportesuites worden geconfigureerd, zodat een communitysite rapporten kan leveren voor de functies van de Gemeenschappen.
+Met behulp van [Report Suite Manager](https://docs.adobe.com/content/help/en/analytics/admin/manage-report-suites/new-report-suite/new-report-suite.html)van de Adobe Marketing Cloud kunnen Analytics-rapportesuites worden geconfigureerd, zodat een communitysite rapporten kan leveren voor de functies van de Gemeenschappen.
 
-Door binnen aan [Adobe Marketing Cloud](https://marketing.adobe.com/resources/help/en_US/analytics/getting-started/analytics-navigation.html) met de Naam en de Gebruikersnaam [van het](analytics.md#prerequisites)Bedrijf te ondertekenen, is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
+Door binnen aan [Adobe Marketing Cloud](https://docs.adobe.com/content/help/en/analytics/analyze/analysis-workspace/home.html) met de Naam en de Gebruikersnaam [van het](analytics.md#prerequisites)Bedrijf te ondertekenen, is het mogelijk om een nieuwe of bestaande rapportreeks te vormen om te hebben:
 
-* [11 Conversievariabelen](https://marketing.adobe.com/resources/help/en_US/reference/conversion_var_admin.html) (evars)
+* [11 Conversievariabelen](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/conversion-variables/conversion-var-admin.html) (evars)
 
    * **`evar1`** via **`evar11`** ingeschakeld
    * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
-* [7 Succesgebeurtenissen](https://marketing.adobe.com/resources/help/en_US/reference/success_event.html) (gebeurtenissen)
+* [7 Succesgebeurtenissen](https://docs.adobe.com/content/help/en/analytics/admin/admin-tools/success-events/success-event.html) (gebeurtenissen)
 
    * **`event1`** via **`event7`** ingeschakeld
    * Type **`Counter`**
@@ -106,7 +106,7 @@ Door binnen aan [Adobe Marketing Cloud](https://marketing.adobe.com/resources/he
    * Kan bestaande gebeurtenissen opnieuw gebruiken (naam wijzigen) of nieuwe gebeurtenissen maken die kunnen worden gebruikt voor communautaire functies
 
 
-* [Videobeheer](https://marketing.adobe.com/resources/help/en_US/sc/appmeasurement/hbvideo/video_analytics_config.html)
+* [Videobeheer](https://docs.adobe.com/content/help/en/media-analytics/using/media-overview.html)
 
    * Video Reporting-console
 
@@ -545,11 +545,11 @@ Het forumonderwerp is momenteel het enige voorbeeld van deze aanpassing:
 
 ## Gebruikersgegevens beheren in Analytics {#manage-user-data-in-analytics}
 
-Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen. Voor meer informatie, zie [Verzoeken](https://marketing.adobe.com/resources/help/en_US/analytics/gdpr/gdpr_submit_access_delete.html)van de Toegang voorleggen en van de Schrapping.
+Adobe Analytics biedt API&#39;s waarmee u gebruikersgegevens kunt openen, exporteren en verwijderen. Voor meer informatie, zie [Verzoeken](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/gdpr-submit-access-delete.html)van de Toegang voorleggen en van de Schrapping.
 
 ## Bronnen {#resources}
 
-* Adobe Marketing Cloud: [Analytics Help en Reference](https://marketing.adobe.com/resources/help/en_US/reference/)
+* Adobe Marketing Cloud: [Analytics Help en Reference](https://docs.adobe.com/content/help/en/analytics/landing/home.html)
 * AEM: [Integrating with Adobe Analytics](../../help/sites-administering/adobeanalytics.md)
 * AEM: [Analytics met externe providers](../../help/sites-administering/external-providers.md)
 
