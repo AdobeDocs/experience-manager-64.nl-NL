@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+workflow-type: tm+mt
+source-wordcount: '1555'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Deze procedures zijn bedoeld als een snelle (high-level) gids voor de belangrijkste acties van het ontwerpen van pagina-inhoud in AEM.
 
-Ze:
+Ontwikkelaars:
 
 * Niet bedoeld als een volledige dekking.
 * Koppelingen naar de gedetailleerde documentatie maken.
@@ -64,13 +67,11 @@ Alvorens het overzicht van details te geven, is hier een kleine inzameling van a
 >
 >* [Sneltoetsen bij het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
 >* [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
->
-
 
 
 ## Uw pagina zoeken {#finding-your-page}
 
-1. Open de **Sites** -console (met de optie **Sites** in de [globale navigatie](/help/sites-authoring/basic-handling.md#global-navigation) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de koppeling Adobe Experience Manager (linksboven) selecteert.
+1. Open de **console van Plaatsen** (gebruikend de optie van **Plaatsen** in de [Globale Navigatie](/help/sites-authoring/basic-handling.md#global-navigation) - dit wordt teweeggebracht (drop-down) wanneer u de verbinding van de Adobe Experience Manager (linksboven) selecteert.
 
 1. Navigeer omlaag door op de desbetreffende pagina te tikken of te klikken. Hoe de paginabronnen worden vertegenwoordigd, is afhankelijk van de weergave die u gebruikt: [Kaart, Lijst of Kolom](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -101,9 +102,10 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
       * Mobiel apparaat: tikken en vasthouden
       * Desktop: de [snelle actie](/help/sites-authoring/basic-handling.md#quick-actions) - tik pictogram :
-   ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
 
-   * De kaart wordt bedekt met een vinkje om aan te geven dat de pagina is geselecteerd.
+         ![screen_shot_2018-03-21at160503](assets/screen_shot_2018-03-21at160503.png)
+
+      * De kaart wordt bedekt met een vinkje om aan te geven dat de pagina is geselecteerd.
    >[!NOTE]
    >
    >In de selectiemodus verandert het pictogram **Selecteren** (een vinkje) in het pictogram **Selectie** opheffen (een kruis).
@@ -143,14 +145,15 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
       * het selecteren van het componentenlusje ( [componentenbrowser](/help/sites-authoring/author-environment-tools.md#components-browser))
       * Sleep de vereiste component naar de pagina.
       Het zijpaneel kan worden geopend (en gesloten) met:
-   ![](do-not-localize/screen_shot_2018-03-21at160738.png)
+
+      ![](do-not-localize/screen_shot_2018-03-21at160738.png)
 
    * [Bewerk de inhoud van een bestaande component](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) op de pagina:
 
       * Open de werkbalk van de component met Tik of klik. Open het dialoogvenster met het pictogram **Bewerken** (potlood).
       * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
       * U kunt als volgt alle beschikbare acties weergeven:
-   ![](do-not-localize/screen_shot_2018-03-21at160706.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [De eigenschappen van een bestaande component configureren](/help/sites-authoring/editing-content.md#component-edit-dialog)
 
@@ -162,9 +165,9 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
    * [Een component kopiëren (en plakken)](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) :
 
       * Open de werkbalk van de component met Tik of klik. Gebruik de pictogrammen **Kopiëren** en **Plakken** naar wens.
-   >[!NOTE]
-   >
-   >U kunt componenten op dezelfde pagina of op een andere pagina **plakken** . Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet de pagina worden vernieuwd.
+      >[!NOTE]
+      >
+      >U kunt componenten op dezelfde pagina of op een andere pagina **plakken** . Als u plakt naar een andere pagina die al was geopend vóór de knip-/kopieerbewerking, moet de pagina worden vernieuwd.
 
    * [Een component verwijderen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) :
 
@@ -172,7 +175,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
    * [Annotaties](/help/sites-authoring/annotations.md#annotations) toevoegen aan de pagina:
 
       * Selecteer de modus **Annoteren** (pictogram spraakballon). Annotaties toevoegen met het pictogram **Annotatie** toevoegen (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
-   ![](do-not-localize/screen_shot_2018-03-21at160813.png)
+      ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Een voorvertoning van een pagina](/help/sites-authoring/editing-content.md#preview-mode) weergeven (om te zien hoe deze wordt weergegeven in de publicatieomgeving)
 
@@ -200,7 +203,7 @@ Er zijn twee (hoofd)methoden voor het [bewerken van pagina-eigenschappen](/help/
    * Tijdens het [bewerken van de pagina](#editing-your-page-content):
 
       1. Open het menu **Pagina-informatie** .
-      1. Selecteer Eigenschappen **** openen om het dialoogvenster voor het bewerken van de eigenschappen te openen.
+      1. Select **Open Properties** to open the dialog for editing the properties.
 
          ![screen_shot_2018-03-21at160920](assets/screen_shot_2018-03-21at160920.png)
 
@@ -223,7 +226,7 @@ Er zijn twee hoofdmethoden om uw pagina [te](/help/sites-authoring/publishing-pa
    1. Selecteer **Pagina** publiceren.
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
-* U kunt het publiceren van een pagina vanuit de console alleen ongedaan maken via de optie Publicatie **** beheren, die alleen beschikbaar is op de werkbalk (niet via de snelle handelingen).
+* U kunt het publiceren van een pagina vanuit de console alleen ongedaan maken via de optie **Publicatie beheren**, die alleen beschikbaar is op de werkbalk (niet via de snelle acties).
 
    De optie **Publicatie van pagina** ongedaan maken is nog steeds beschikbaar via het menu **Pagina-informatie** in de editor.
 
@@ -234,7 +237,7 @@ Er zijn twee hoofdmethoden om uw pagina [te](/help/sites-authoring/publishing-pa
 ## De pagina verplaatsen, kopiëren en plakken of verwijderen {#move-copy-and-paste-or-delete-your-page}
 
 1. [Navigeer naar de pagina](#finding-your-page) die u wilt verplaatsen, kopiëren en plakken of verwijderen.
-1. Selecteer het pictogram Kopiëren (en vervolgens plakken), Verplaatsen of Verwijderen naar wens met een van de volgende methoden:
+1. Selecteer het pictogram voor kopiëren (en vervolgens plakken), verplaatsen of verwijderen naar wens met een van de volgende methoden:
 
    * [Snelle handelingen (alleen Kaartweergave/Bureaublad)](#quick-actions-card-view-desktop-only) voor de vereiste bron.
    * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action).
@@ -254,7 +257,7 @@ Er zijn twee hoofdmethoden om uw pagina [te](/help/sites-authoring/publishing-pa
 
 ## De pagina vergrendelen (en vervolgens ontgrendelen) {#locking-your-page-then-unlocking}
 
-[Door een pagina](/help/sites-authoring/editing-content.md#locking-a-page) te vergrendelen voorkomt u dat andere auteurs er tijdens het vergrendelen aan werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u:
+[Door een pagina te vergrendelen](/help/sites-authoring/editing-content.md#locking-a-page) voorkomt u dat andere auteurs op hetzelfde moment als u op de pagina kunnen werken. Het pictogram/de knop Vergrendelen (en Ontgrendelen) vindt u hier:
 
 * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action).
 * Het vervolgkeuzemenu [](#editing-the-page-properties) Pagina-informatie wanneer u een pagina bewerkt.
