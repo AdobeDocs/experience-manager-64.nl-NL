@@ -3,9 +3,9 @@ title: PDF-rasterizer gebruiken
 description: U kunt miniaturen en uitvoeringen van hoge kwaliteit genereren met de Adobe PDF Rasterizer-bibliotheek.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '687'
 ht-degree: 0%
 
 ---
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PDF Rasterizer gebruiken {#using-pdf-rasterizer}
 
-Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar Adobe Experience Manager (AEM) Assets, genereert de standaardbibliotheek mogelijk geen nauwkeurige uitvoer. In dergelijke gevallen kan de Adobe PDF Rasterizer-bibliotheek betrouwbaardere en nauwkeurigere uitvoer genereren dan de uitvoer uit een standaardbibliotheek.
+Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar Adobe Experience Manager-elementen (AEM), genereert de standaardbibliotheek mogelijk geen nauwkeurige uitvoer. In dergelijke gevallen kan de Adobe PDF Rasterizer-bibliotheek betrouwbaardere en nauwkeurigere uitvoer genereren dan de uitvoer uit een standaardbibliotheek.
 
 Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
@@ -23,13 +23,13 @@ Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
 Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversies. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
-1. Installeer het PDF-rasterpakket op uw AEM-exemplaar vanuit [Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg) of [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installeer het PDF-rasterpakket op uw AEM-exemplaar via [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >De PDF Rasterizer-bibliotheek is alleen beschikbaar voor Windows en Linux.
 
-1. Open de AEM Assets workflowconsole vanaf `https://[AEM_server]:[port]/workflow`.
+1. Toegang tot de AEM Assets workflowconsole vanaf `https://[AEM_server]:[port]/workflow`.
 1. Open de **[!UICONTROL DAM Update Asset]** workflowpagina.
 1. Configureer de volgende opties om de standaardminiatuur en het genereren van webvertoningen voor PDF- en AI-bestanden over te slaan:
 
@@ -104,4 +104,4 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
    ![web_enabled_image-1](assets/web_enabled_image-1.png)
 
 1. Sla de workflow op.
-1. Upload een PDF- of AI-bestand naar AEM-elementen. PDF-rasterfunctie genereert de miniaturen en webuitvoeringen voor het bestand.
+1. Upload een PDF- of AI-bestand naar AEM Assets. PDF-rasterfunctie genereert de miniaturen en webuitvoeringen voor het bestand.
