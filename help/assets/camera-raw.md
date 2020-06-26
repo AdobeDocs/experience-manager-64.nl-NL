@@ -1,17 +1,17 @@
 ---
 title: Camera Raw-ondersteuning
-description: Leer hoe u ondersteuning voor Camera Raw inschakelt in Adobe Experience Manager-middelen.
+description: Leer hoe u Camera Raw-ondersteuning kunt inschakelen in Adobe Experience Manager Assets.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 69976917f19a695908f1d7e5276d969587671761
+source-git-commit: 53db84e56fa972824b90719c3c2b45b20109d45e
 workflow-type: tm+mt
-source-wordcount: '401'
+source-wordcount: '400'
 ht-degree: 0%
 
 ---
 
 
-# Ondersteuning voor het verwerken van afbeeldingen met Camera Raw {#camera-raw-support}
+# Camera Raw gebruiken om afbeeldingen te verwerken {#camera-raw-support}
 
 U kunt Camera Raw-ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en voor het renderen van afbeeldingen in de JPEG-indeling. De functionaliteit wordt ondersteund in Adobe Experience Manager Assets met behulp van het [Camera Raw-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is via Package Share of via [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
@@ -19,7 +19,7 @@ U kunt Camera Raw-ondersteuning inschakelen voor het verwerken van Raw-bestandsi
 >
 >De functionaliteit ondersteunt alleen JPEG-uitvoeringen. Deze functie wordt ondersteund in Windows 64-bits, Mac OS en RHEL 7.x.
 
-Voer de volgende stappen uit om Camera Raw-ondersteuning in Adobe Experience Manager-middelen in te schakelen:
+Voer de volgende stappen uit om Camera Raw-ondersteuning in Adobe Experience Manager Assets in te schakelen:
 
 1. Download het [Camera Raw-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) van het Delen van het pakket of van de [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg).
 
@@ -56,7 +56,7 @@ Voer de volgende stappen uit om Camera Raw-ondersteuning in Adobe Experience Man
 >
 >Zorg ervoor dat de bovenstaande configuratie hetzelfde is als de **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie.
 
-U kunt nu Camera Raw-bestanden importeren in AEM-elementen. Nadat u het Camera RAW-pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de **[!UICONTROL Image Adjust]** optie weergegeven in de lijst met zijvensters.
+U kunt Camera Raw-bestanden nu importeren in AEM Assets. Nadat u het Camera RAW-pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de **[!UICONTROL Image Adjust]** optie weergegeven in de lijst met zijvensters.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
