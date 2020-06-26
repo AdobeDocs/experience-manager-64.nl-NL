@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 821eb27e-67c9-4589-9196-30dacb84fa59
 translation-type: tm+mt
-source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
+source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
 workflow-type: tm+mt
-source-wordcount: '7498'
+source-wordcount: '7458'
 ht-degree: 1%
 
 ---
@@ -909,7 +909,7 @@ Instellingen voor de manifestatie en de standaardwaarden ervan:
   <tr> 
    <td>standaard miniatuur</td> 
    <td>100,100</td> 
-   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kan op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td> 
+   <td><p>Standaardminiatuurgrootte. Wordt gebruikt in plaats van kenmerk::DefaultPix voor aanvragen van miniaturen (req=tmb).</p> <p>De server beperkt antwoordafbeeldingen tot maximaal deze breedte en hoogte als een miniatuuraanvraag (req=tmb) de grootte niet expliciet opgeeft met gebruik van wid=, hei= of scl=.</p> <p>Opgegeven als twee gehele getallen, 0 of groter, gescheiden door een komma. Breedte en hoogte in pixels. Een van beide of beide waarden kunnen op 0 worden ingesteld om ze onbeperkt te houden. </p> <p>Is niet van toepassing op geneste/ingesloten aanvragen.</p> <p>Zie ook <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/attributes/r-defaultthumbpix.html">DefaultThumbPix</a> in de Image Serving API. </p> </td> 
   </tr> 
   <tr> 
    <td>vervaldatum</td> 
@@ -961,7 +961,7 @@ Gevallen van geavanceerd gebruik zouden een hand kunnen gebruiken vormen **[!UIC
 * **[!UICONTROL iccEmbed]** - Kleurprofiel [insluiten.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-iccembed.html)
 
 >[!NOTE]
-De standaardset Adobe-kleurprofielen is alleen beschikbaar als u [Feature Pack 12445 van Package Share](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) of [Feature Pack 12445 van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) hebt geïnstalleerd. Alle eigenschapspakken en de dienstpakken zijn beschikbaar via het Aandeel [van het](https://www.adobeaemcloud.com/content/packageshare.html) Pakket en de Distributie [van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)Software. Feature Pack 12445 biedt de kleurprofielen van Adobe.
+De standaardset Adobe-kleurprofielen is alleen beschikbaar als u [Feature Pack 12445 van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/featurepack/cq-6.3.0-featurepack-12445) hebt geïnstalleerd. Alle eigenschapspakken en de dienstpakken zijn beschikbaar bij de Distributie [van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html)Software. Feature Pack 12445 biedt de kleurprofielen van Adobe.
 
 ### Functiepak 12445 installeren {#installing-feature-pack}
 
@@ -969,9 +969,9 @@ U moet functiepak 12445 installeren om de mogelijkheden voor dynamisch kleurbehe
 
 **Voor de installatie van functiepak 12445**:
 
-1. Navigeer naar [Package Share](https://www.adobeaemcloud.com/content/packageshare.html) of [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en download een van beide `cq-6.3.0-featurepack-12445`.
+1. Navigeer naar [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) en download `cq-6.3.0-featurepack-12445`.
 
-   Zie [hoe te met Pakketten](/help/sites-administering/package-manager.md) voor meer informatie werken bij het gebruiken van het Aandeel van het Pakket en Pakketten in AEM.
+   Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het gebruik van pakketten in [!DNL Adobe Experience Manager].
 
 1. Installeer het functiepakket.
 
