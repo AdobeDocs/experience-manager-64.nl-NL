@@ -3,9 +3,9 @@ title: Vorm RTE voor veelvoudige op zijn plaats redacteurs.
 description: Creeer veelvoudige op zijn plaats redacteurs in Adobe Experience Manager door de Rich Redacteur van de Tekst te vormen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a7d9ea37d26c2eb51d136de630e737616e7cf5b
+source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '445'
 ht-degree: 2%
 
 ---
@@ -13,9 +13,9 @@ ht-degree: 2%
 
 # Meerdere lokale editors configureren {#configure-multiple-in-place-editors}
 
-U kunt de Rich Text Editor in Adobe Experience Manager zodanig configureren dat deze meerdere op zijn plaats geplaatste editors heeft. Wanneer gevormd kunt u de aangewezen inhoud selecteren en de aangewezen redacteur openen. Bijvoorbeeld:
+U kunt de Rich Text Editor in Adobe Experience Manager zodanig configureren dat deze meerdere op zijn plaats geplaatste editors heeft. Wanneer gevormd kunt u de aangewezen inhoud selecteren en de aangewezen redacteur openen.
 
-![chlimage_1-8](assets/chlimage_1-8.png)
+![Een specifieke interne editor](assets/rte-inplace-editor.png)
 
 ## Meerdere editors configureren {#configure-multiple-editors}
 
@@ -42,7 +42,7 @@ Bijvoorbeeld:
 
     /**
       * Configures one child editor for a sub-component. The name of the this node is
-      * be used as DD ID.
+      * used as DD ID.
       *
       * @prop type type of the inline editor. For example, ["image"].
       * @prop title Title of the inline editor.
