@@ -1,15 +1,15 @@
 ---
 title: Opmerkingen bij de release AEM 6.4 Service Pack
 seo-title: Opmerkingen bij de release AEM 6.4 Service Pack
-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4-servicepacks.
-seo-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4-servicepacks.
+description: De nota's van de versie specifiek voor Adobe Experience Manager 6.4 de Pakken van de Dienst.
+seo-description: De nota's van de versie specifiek voor Adobe Experience Manager 6.4 de Pakken van de Dienst.
 uuid: 49a710a8-7cd5-47de-9a96-7af7f3c00dfc
 contentOwner: dekalra
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 774f0e8b631f6f8328e7bd9d4172498df58459bc
+source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
 workflow-type: tm+mt
 source-wordcount: '21555'
 ht-degree: 0%
@@ -48,16 +48,16 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
 
-* AEM Assets is nu geconfigureerd met Brand Portal via Adobe I/O.
+* AEM Assets worden nu geconfigureerd met Brand Portal via Adobe I/O.
 
-* De jQuery-versie die in ContextHub is gebundeld, is bijgewerkt naar 3.4.1.
+* De jQuery-versie die in ContextHub is gebundeld, is bijgewerkt naar 3.2.1.
 
 ## Lijst met wijzigingen {#list-of-changes}
 
 ### Sites {#sites}
 
-* Wanneer een URL van een AEM-sitepagina een dubbele punt of percentagesymbool bevat, reageert de onderliggende browser niet meer en geven CPU-cycli een punt weer (NPR-32368, NPR-31917).
-* Wanneer een pagina met AEM-sites wordt geopend voor bewerking en een component wordt gekopieerd, blijft de plakhandeling niet beschikbaar voor sommige plaatsaanduidingen (NPR-32328).
+* Wanneer een URL van een pagina met AEM Sites een dubbelepunt of percentagesymbool bevat, reageert de onderliggende browser niet meer en geven CPU-cycli een punt weer (NPR-32368, NPR-31917).
+* Wanneer een pagina AEM Sites wordt geopend voor bewerking en een component wordt gekopieerd, blijft de plakhandeling niet beschikbaar voor sommige plaatsaanduidingen (NPR-32328).
 * Aanvraag tot activeringswerkstroom omvat geen middelen waarnaar wordt verwezen (NPR-32304).
 * Wanneer een blauwdruk wordt gecreeerd, als het aantal verslagen meer dan 80 is, slechts worden de eerste 80 verslagen getoond. Blauwdruk geeft lege regels weer voor de rest van de records (NPR-32058).
 * Gebruikers mogen een inhoudsfragment opslaan zonder informatie op te geven in de vereiste velden (NPR-31988).
@@ -71,9 +71,9 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 ### Assets {#assets}
 
-* Een omslag zonder naam wordt gecreeerd in SPS (het Publiceren Scene7 Systeem) terwijl het bewegen van activa van één omslag aan een andere in de Manager van de Ervaring met Dynamische Configuratie Scene7 van Media (NPR-32440).
+* Een omslag zonder naam wordt gecreeerd in SPS (het Publiceren Scene7 Systeem) terwijl het bewegen van activa van één omslag aan een andere in Experience Manager met de configuratie van Dynamic Media Scene7 (NPR-32440).
 
-* Op de pagina met middelendetails van PDF-bestanden worden geen actieknoppen weergegeven in Experience Manager die wordt uitgevoerd in de Dynamic Media Scene7-modus (NPR-32316).
+* Op de pagina met middelendetails van PDF-bestanden worden geen actieknoppen weergegeven in Experience Manager die worden uitgevoerd in de modus Dynamic Media Scene7 (NPR-32316).
 
 * Elementen en video-uitvoeringen kunnen niet worden verwijderd (NPR-32213).
 
@@ -81,27 +81,27 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * De relatie tussen activa wordt overschreven wanneer activa verband houden met meer dan één activa die gebruikmaken van Overige (NPR-32196).
 
-* Met de knop Opslaan wordt de externe set niet geïmporteerd wanneer de gebruiker geen wijzigingen heeft aangebracht in de Editor instellen in Dynamic Media Client (NPR-32178).
+* Met de knop Opslaan wordt de Remote Set niet geïmporteerd als de gebruiker geen wijzigingen heeft aangebracht in de Set Editor in Dynamic Media Client (NPR-32178).
 
-* Het opnemen van PSD-elementen leidt tot CPU-pieken en reacties van de Experience Manager Author-instantie (NPR-32165).
+* Het opnemen van PSD-elementen zorgt voor CPU-spike en een Experience Manager Author-instantie zonder respons (NPR-32165).
 
-* Er is een uitzondering van het geheugen opgetreden wanneer een groot ZIP-bestand wordt geüpload in Experience Manager DAM (NPR-32155).
+* Er is een uitzondering van het type Out of Memory waargenomen wanneer een groot ZIP-bestand wordt geüpload in Experience Manager DAM (NPR-32155).
 
 * URL&#39;s met versiegeschiedenis worden weergegeven onder Veld Verwijzing naar op de eigenschappenpagina voor elementen (NPR-31889).
 
 * Unpublish from Brand Portal, on Manage Publication page, mislukt voor submappen van een gepubliceerde map (NPR-31835).
 
-* De dynamische videocoderingen van Media slagen er niet in om te uploaden wanneer de Configuratie Scene7 Cloud in een privé omslag `/conf` in plaats van `/conf/global` (NPR-31779) wordt geplaatst.
+* De videocoderingen van Dynamic Media kunnen niet uploaden wanneer de Configuratie Scene7 Cloud in een privé omslag `/conf` in plaats van `/conf/global` (NPR-31779) wordt geplaatst.
 
-* Afbeelding wordt niet weergegeven op de tijdlijn nadat annotaties zijn toegevoegd, in Experience Manager die wordt uitgevoerd in de Dynamic Media Scene7-uitvoeringsmodus (NPR-31754).
+* Afbeelding wordt niet weergegeven op de tijdlijn nadat annotaties zijn toegevoegd, op Experience Manager die wordt uitgevoerd in de Scene7-uitvoeringsmodus van Dynamic Media (NPR-31754).
 
 * ZIP-bestand dat is gedownload van DAM, kan niet worden geopend met WinZip (NPR-31745).
 
 ### Integrations {#integrations-6480}
 
-* De vervolgkeuzemenu&#39;s **Company** and **Reporting** Suite zijn verborgen als Bron **** melden is geselecteerd tijdens het configureren van Adobe Analytics in Experience Manager-cloudservices (NPR-31729).
+* De vervolgkeuzemenu&#39;s **Company** and **Reporting** Suite zijn verborgen als Bron **** melden is geselecteerd tijdens de configuratie van Adobe Analytics in Experience Manager-cloudservices (NPR-31729).
 
-* De eigenschappen van Adobe Campaign worden niet opgeschoond wanneer een taalkopie van een nieuwsbrief die aan een campagne van Adobe is gekoppeld, wordt gemaakt, terwijl het opruimen gebeurt wanneer een nieuwsbrief die aan een campagne van Adobe is gekoppeld, wordt gekopieerd of geplakt (NPR-32540).
+* Adobe Campaign-eigenschappen worden niet opgeschoond wanneer een taalkopie van een nieuwsbrief die aan een Adobe Campaign is gekoppeld, wordt gemaakt, terwijl opruimen plaatsvindt wanneer een nieuwsbrief die aan een Adobe Campaign is gekoppeld, wordt gekopieerd of geplakt (NPR-32540).
 
 * ReportSuitesServlet is kwetsbaar voor SSRF (NPR-32161).
 
@@ -147,7 +147,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 >[!NOTE]
 >
->AEM Service Pack bevat geen oplossingen voor AEM-formulieren. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms in JEE bevat. Zie [Invoegpakket](#install-aem-forms-add-on-package) voor AEM-formulieren installeren en AEM Forms JEE-installatieprogramma [](#install-aem-forms-jee-installer)installeren voor meer informatie.
+>AEM Service Pack bevat geen oplossingen voor AEM Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Voor meer informatie, zie [AEM Forms toe:voegen-op pakket](#install-aem-forms-add-on-package) installeren en AEM Forms JEE installer [](#install-aem-forms-jee-installer)installeren.
 
 * Designer: Als de coderingsoptie is ingeschakeld, verdwijnt de subformulierrand in de gegenereerde PDF-uitvoer (NPR-32546, NPR-32322).
 
@@ -163,7 +163,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Documentservices: Er wordt een foutbericht weergegeven tijdens het samenstellen en converteren van XDP-bestanden naar PDF-bestanden (NPR-31821).
 
-* Analyses geven geen geschikte resultaten weer bij het verzenden of verlaten van formulieren op een sitepagina (NPR-31359).
+* Analytics geeft geen geschikte resultaten weer voor het verzenden of verlaten van formulieren op een sitepagina (NPR-31359).
 
 ### Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Packs van de Dienst {#hotfixes-and-feature-packs-included-in-previous-service-packs}
 
@@ -179,7 +179,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.7.0 zijn:
 * Toegevoegde ondersteuning voor het instellen van een versie van een sitepagina terwijl deze werd verwijderd.
 * De nieuwe kolom voor gecreeerde datum, die sorteerbaar is, is toegevoegd in **DAM lijstmening** en op activa onderzoeksresultaten in **Lijstmening** (NPR-31311).
 * Asset sorting based on **Name** column is allowed in **List** view.
-* De grootte van de batch en de time-out van de workflowstap voor het opnieuw verwerken en uploaden van de batch zijn nu configureerbaar vanuit de gebruikersinterface in Dynamische media.
+* Time-out voor batchgrootte en workflowstap voor opnieuw verwerken en batchuploaden zijn nu configureerbaar vanuit de gebruikersinterface in Dynamic Media.
 * De `pdfBrochure` is geplaatst aan vals in Scene 7 wolkenconfiguratie, om geheugen bij IPS te bewaren.
 
 ##### Assets {#assets-6470}
@@ -203,25 +203,25 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 * Speciale tekens die voorkomen in de onderwerpregel van e-mailsjablonen worden niet correct weergegeven (NPR-30547).
 
-* Namen van middelen worden gewijzigd in kleine letters wanneer u elementen verplaatst van de ene map naar de andere in AEM die wordt uitgevoerd in de runmode van Dynamic Media Scene 7 (NPR-31631).
+* Namen van middelen worden gewijzigd in kleine letters wanneer middelen van de ene map naar de andere worden verplaatst in AEM-systemen die in de runmode van Dynamic Media Scene 7 worden uitgevoerd (NPR-31631).
 
 * De namen van de imageset worden in scène 7 gewijzigd in kleine letters wanneer imageset (of mediaset) wordt gemaakt en benoemd met de juiste naamgevingsconventie in DAM (NPR-31576).
 
-* De dynamische werkstroom van Media Encode Video ontbreekt om duimnagel voor de video te produceren die van Scene 7 aan Dynamische Media - de loopwijze van Scene 7 (NPR-31523) wordt gemigreerd.
+* De werkstroom van de Video van de Codering van Dynamic Media slaagt er niet in duimnagel voor de video te produceren die van Scene 7 aan Dynamic Media - de loopwijze van Scene 7 (NPR-31523) wordt gemigreerd.
 
-* De interne Fout van de Server wordt waargenomen terwijl het gebruiken van filter aan onderzoek naar Reeksen, in AEM die op Dynamische Media - Scene 7 runmode (NPR-31388) loopt.
+* De interne Fout van de Server wordt waargenomen terwijl het gebruiken van filter aan onderzoek naar Reeksen, in AEM die op Dynamic Media - runmode Scene 7 (NPR-31388) loopt.
 
 * Er is een fout opgetreden tijdens het bewerken van een externe imageset voor de afbeelding die zich in de map met dezelfde naam bevindt als de bedrijfsnaam van Scene 7 (NPR-31347).
 
 * De activa die verwijzingen bevatten worden niet gepubliceerd (DM) (NPR-31179).
 
-* De vervalwaarde (de tijd van het cliëntgeheime voorgeheugen aan levende) die voor Dynamische Media Hybride wijze wordt gevormd wordt niet herhaald aan het Dynamische milieu van de Media van de levering (NPR-31126).
+* De vervalwaarde (de tijd van het cliëntgeheime voorgeheugen aan levende) die voor Dynamic Media wordt gevormd Hybride wijze wordt niet herhaald aan het milieu van de levering van Dynamic Media (NPR-31126).
 
-* Het uploaden van dynamische media van AEM - runmode 7 aan Scene 7 duurt te lang om (NPR-30926) te voltooien.
+* Het uploaden van AEM-Dynamic Media - de runmode van Scene 7 naar Scene 7 duurt te lang om te voltooien (NPR-30926).
 
-* Na het creëren van een pagina die de Dynamische component van Media terwijl het publiceren van het zelfde, van auteurinstantie heeft die op Dynamische Media loopt - Scene 7 runmode, wordt de gebruiker ertoe aangezet om de configuratie dmscene7 (NPR-30880) te publiceren.
+* Na het creëren van een pagina die Dynamic Media component terwijl het publiceren van het zelfde, van auteurinstantie die op Dynamic Media loopt - Scene 7 runmode, wordt de gebruiker ertoe aangezet om de configuratie dmscene7 (NPR-30880) te publiceren.
 
-* De waarde van de parameter &quot;asset&quot; in de insluitcode van de viewer blijft ongewijzigd nadat de waarden in het veld &quot;Title after move&quot; en &quot;Name after move&quot; in Dynamic Media zijn gewijzigd - Scene 7 (NPR-30745).
+* De waarde van de parameter &quot;asset&quot; in de insluitcode van de viewer blijft ongewijzigd nadat de waarden in het veld &quot;Title after move&quot; en &quot;Name after move&quot; op Dynamic Media zijn gewijzigd - Scene 7 (NPR-30745).
 
 * De resultatenpagina Touch UI-zoekopdracht (uitgevoerd via Omnissearch) wordt automatisch naar boven geschoven en verliest de schuifpositie van de gebruiker (NPR-31306).
 
@@ -229,7 +229,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 * De titel en de naam van het element zijn niet blijvend na verplaatsing naar een doelmap die oneindig schuiven activeert tijdens het selecteren van de map (NPR-30647).
 
-* Verzamelingen worden verwijderd uit de weergave bij het toepassen van een filter in AEM-elementen dat is geopend via Adobe Asset Link (CQ-4280534).
+* Verzamelingen worden verwijderd uit de weergave wanneer een filter wordt toegepast in AEM Assets die via Adobe Asset Link worden benaderd (CQ-4280534).
 
 * Time-out voor batchgrootte en workflowstap voor opnieuw verwerken en batchuploaden kan niet worden geconfigureerd vanuit de gebruikersinterface en moet worden ingesteld in CRXDE en de workflow moet tweemaal worden gesynchroniseerd (CQ-4281254).
 
@@ -255,13 +255,13 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 * Wanneer de lanceringen met Bevorderen slechts Gewijzigde pagina&#39;s worden bevorderd en de lanceringen van de Bevordering met gewijzigde pagina&#39;s worden gedaan, slechts verschijnen de gewijzigde pagina&#39;s om worden bevorderd. Wanneer de lijst die moet worden bevorderd juist is, worden de niet-gewijzigde pagina&#39;s bovendien nog steeds onder aan de lijst weergegeven (NPR-31314).
 
-* Wanneer een pagina met AEM-sites naar een andere locatie wordt verplaatst, worden de eigenschappen niet overeenkomstig bijgewerkt om de nieuwe locatie weer te geven (NPR-31265).
+* Wanneer een pagina AEM Sites naar een andere locatie wordt verplaatst, worden de eigenschappen niet overeenkomstig bijgewerkt om de nieuwe locatie weer te geven (NPR-31265).
 
 * Voor een nieuwe blauwdruk, als het aantal verslagen meer dan 40 is, slechts worden de eerste 40 verslagen getoond. Blauwdruk geeft lege regels weer voor de rest van de records (NPR-31182).
 
 * Wanneer het aantal LiveCopy-exemplaren groot is, duurt het lang voordat de voorvertoning wordt weergegeven in het LiveCopy-overzicht (NPR-30945).
 
-* Extra ondersteuning om een versie van een pagina in te stellen terwijl u deze verwijdert. Als versioning is uitgeschakeld voor de verwijderde pagina, kunnen AEM-sites dergelijke pagina&#39;s niet herstellen (NPR-30891).
+* Extra ondersteuning om een versie van een pagina in te stellen terwijl u deze verwijdert. Als versioning is uitgeschakeld voor de verwijderde pagina, kunnen AEM Sites dergelijke pagina&#39;s niet herstellen (NPR-30891).
 
 * Wanneer een gebruiker Japanse of Koreaanse karakters in het beschrijvingsbezit van een menu toevoegt, toont het menu vervormde karakters voor Japans en Koreaans taaltekst (NPR-31331).
 
@@ -311,7 +311,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 ##### Gemeenschappen {#communities-6470}
 
-* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer e-mailberichten in meldingsinstellingen zijn ingeschakeld, genereert het systeem een uitzondering in de NotificationsActivityStreamProvider (NPR-31521).
+* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer het e-mailbericht in berichtmontages wordt toegelaten, werpt het systeem een uitzondering in NotificationsActivityStreamProvider (NPR-31521).
 * Kan geen nieuwe leden maken. Er verschijnt een leeg scherm op het scherm Lid maken in de AEM-auteur-instantie (NPR-30951).
 * Gebruiker kan geen commentaar op een blog plaatsen in Internet Explorer 11 (NPR-30927).
 * De beheerder van een Beperkte Groep kan niet de Kaart van de Groep bekijken, kan om het even welke Snelle verrichtingen van de Verbinding (Edit/Publish/Delete groepen) in auteur AEM (NPR-30810) uitvoeren.
@@ -321,7 +321,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw aangepaste imp
 
 >[!NOTE]
 >
->AEM Service Pack bevat geen oplossingen voor AEM-formulieren. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms in JEE bevat. Zie [Invoegpakket](#install-aem-forms-add-on-package) voor AEM-formulieren installeren en AEM Forms JEE-installatieprogramma [](#install-aem-forms-jee-installer)installeren voor meer informatie.
+>AEM Service Pack bevat geen oplossingen voor AEM Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Voor meer informatie, zie [AEM Forms toe:voegen-op pakket](#install-aem-forms-add-on-package) installeren en AEM Forms JEE installer [](#install-aem-forms-jee-installer)installeren.
 
 **Formulierinvoegpakket**
 
@@ -383,7 +383,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.6.0 zijn:
 * (Tik op UI) Tijdens de wizard Publicatie beheren worden elementen toegevoegd aan de replicatiewachtrij nadat de pagina&#39;s zijn toegevoegd, waardoor enkele elementen na een paar seconden worden weergegeven. NPR-29985: Hotfix voor CQ-4270724
 * Als u zoekquery op relevantie sorteert, worden InDesign-documenten samen met InDesign-sjablonen geretourneerd. Hotfix voor CQ-4273864
 * Als de gebruiker een e-mailadres in hoofdletters heeft, kunnen gebruikers niet inchecken voor de elementen die eerder zijn uitgecheckt. Hotfix voor CQ-4276575
-* Als u Dynamic Media Cloud Services configureert in de `DMHybrid` modus, ontstaan er meerdere lege rapportensuites die zijn gemaakt in Analytics zonder dat er een rapportsuite-id is opgeslagen op AEM. Dit leidt tot dubbele rapportsuite. Hotfix voor CQ-4276855
+* Het vormen van Dynamic Media Cloud Servicen op `DMHybrid` wijze resulteert in veelvoudige lege rapportreeksen die in Analytics zonder rapportreeks identiteitskaart worden gecreeerd die op AEM wordt opgeslagen resulterend in rapportsuite duplicatie. Hotfix voor CQ-4276855
 * Het waarschuwingsvenster wordt niet weergegeven tijdens het promoten op de pagina &quot;Beheerde tag&quot;. Hotfix voor CQ-4252851
 * Wanneer u de carrousel gebruikt voor het beheer van tags, werkt de navigatieknop niet. Hotfix voor CQ-4275499
 * De functionaliteit voor het verplaatsen van elementen in bulk wordt verbroken, waardoor elementen niet worden verplaatst. Hotfix voor CQ-4272987
@@ -462,7 +462,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.6.0 zijn:
 
 >[!NOTE]
 >
->AEM Service Pack bevat geen oplossingen voor AEM-formulieren. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms in JEE bevat. Zie [Invoegpakket](#install-aem-forms-add-on-package) voor AEM-formulieren installeren en AEM Forms JEE-installatieprogramma [](#install-aem-forms-jee-installer)installeren voor meer informatie.
+>AEM Service Pack bevat geen oplossingen voor AEM Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Voor meer informatie, zie [AEM Forms toe:voegen-op pakket](#install-aem-forms-add-on-package) installeren en AEM Forms JEE installer [](#install-aem-forms-jee-installer)installeren.
 
 **Formulierinvoegpakket**
 
@@ -526,9 +526,9 @@ Enkele belangrijke hoogtepunten van AEM 6.4.5.0 zijn:
 
 **Assets**
 
-* Elementen met een apostrof in de bestandsnaam worden niet gesynchroniseerd met dynamische media. NPR-29538: Hotfix voor CQ-4270592
+* Elementen met een apostrof in de bestandsnaam worden niet gesynchroniseerd met Dynamic Media. NPR-29538: Hotfix voor CQ-4270592
 * Bijgewerkte interface DAM DMGateway voor S3 multipart steun. NPR-29740: Hotfix voor CQ-4226303
-* In het dialoogvenster voor het downloaden van middelen wordt een onjuiste bestandsgrootte weergegeven bij het downloaden van uitvoeringen voor een video in Dynamic Media. NPR-29642: Hotfix voor CQ-4246202
+* In het dialoogvenster voor het downloaden van middelen wordt een onjuiste bestandsgrootte weergegeven wanneer uitvoeringen voor een video in Dynamic Media worden gedownload. NPR-29642: Hotfix voor CQ-4246202
 * Middelen worden onbruikbaar nadat de DAM DAM Mime Type Service van Dag CQ tekst voor m3u8 toepast. NPR-29276: Hotfix voor CQ-4264052
 * De aanpassing van de verwijzing van het element kan de sessie niet opslaan als een van de verplaatste/hernoemde elementen deel uitmaakt van de verzamelingen van Sling Resource. NPR-29143: Hotfix voor /CQ-4252605
 * Kan elementen niet bijhouden of vinden door de waarden van metagegevens te zoeken. NPR-29141: Hotfix voor CQ-4260215
@@ -559,7 +559,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.5.0 zijn:
 * De voorbeeldvideo wordt niet geladen wanneer u een gemengdeMediaSet maakt of bewerkt. Hotfix voor CQ-4244889
 * Als u de machtigingen voor het verwijderen van inhoud op de AEM-zijde uitschakelt, kan de gebruiker niet publiceren naar Brand Portal. Hotfix voor CQ-4270426
 * Vragen beperken gerelateerde problemen met rapporten over bedrijfsmiddelen na upgrade naar AEM 6.4.3. NPR-28588: Hotfix voor CQ-4262022, CQ-4260697
-* De downloadfunctionaliteit maakt gebruik van AEM Assets via assetdownload servlet, zodat anonieme gebruikers alle middelen kunnen downloaden. NPR-27315, hotfix voor CQ-4254732
+* De downloadfunctionaliteit gebruikt AEM Assets via een assetdownload-servlet, zodat anonieme gebruikers alle middelen kunnen downloaden. NPR-27315, hotfix voor CQ-4254732
 
 **Sites**
 
@@ -577,7 +577,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.5.0 zijn:
 * XSS (Cross-site scripting) op de pagina Campagne. NPR-29614: Hotfix voor CQ-4269322
 * Het minimaliseren van Rich Text Editor van volledig scherm in de bronbewerkingsmodus leidt tot verlies van inhoud. NPR-29574: Hotfix voor CQ-4260584
 * (Klassieke UI) het navigeren aan het laatste lusje is niet altijd mogelijk wanneer een groot aantal markeringen bestaat. NPR-29544: Hotfix voor CQ-4264548
-* (Klassieke UI) Het navigatiemenu Admin Console verdwijnt en de pagina wordt niet volledig geladen. NPR-29571: Hotfix voor CQ-4264585
+* (Klassieke UI) Het navigatiemenu van de Admin Console verdwijnt, en de pagina wordt niet volledig geladen. NPR-29571: Hotfix voor CQ-4264585
 * Er wordt een foutmelding gegenereerd wanneer componenten aan de WCM-pagina worden toegevoegd wanneer minificatie op de instantie is ingeschakeld. NPR-29396: Hotfix voor CQ-4266196
 * An issue with the inheritance of Style System nodes from the parent. NPR-29296: Hotfix voor CQ-4266041
 * De pagina die wordt teruggezet met Timewarp, moet naar het correcte beeld op het tijdstip van versioning verwijzen.  NPR-29431: Hotfix voor CQ-4262638
@@ -641,7 +641,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.5.0 zijn:
 
 * Er wordt een uitzonderingsbericht weergegeven wanneer u de AEM-startconfiguratie probeert te bewerken en op te slaan. NPR-29086: Hotfix voor CQ-4266153
 * BrightEdge-referenties zijn mislukt vanwege een verbindingsfout.  NPR-29167: Hotfix voor CQ-4265872
-* Het geërfte van checkbox die op het wortelniveau in de Vormen van de Dienst van de Wolk verschijnt zou moeten worden verwijderd. NPR-27856:  Hotfix voor CQ-4259676
+* De geërfte van checkbox die op het wortelniveau in Cloud Service vormt verschijnt zou moeten worden verwijderd. NPR-27856:  Hotfix voor CQ-4259676
 
 **Sling**
 
@@ -653,7 +653,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.5.0 zijn:
 * Gebruikers kunnen de projectworkflow niet voltooien. NPR-29621: Hotfix voor CQ-4258791
 * De lijst van het Werkschema van het project toont lege rijen voorbij 40 werkschema&#39;s. NPR-28739: Hotfix voor CQ-4264005
 * Als u de optie Dynamische vertoning kiest in Brand Portal, wordt een leeg ZIP-bestand gedownload. NPR-29420: Hotfix voor CQ-4268826
-* Publiceer middelen van AEM Auteur /content/dam/mac folder aan het Portaal van het Merk werkt niet. NPR-29820: Hotfix voor CQ-4271118
+* Publiceer middelen van de omslag van AEM Author /content/dam/mac aan het Portaal van het Merk werkt niet. NPR-29820: Hotfix voor CQ-4271118
 * Leestekens in de naam veroorzaken problemen met de publicatieknop. NPR-29573: Hotfix voor CQ-4269317
 * Kan de taalkopie van het element niet maken via het verwijzingspaneel. Hotfix voor CQ-4269535
 
@@ -691,7 +691,7 @@ De belangrijkste kenmerken voor AEM 6.4.5.0-formulieren zijn:
 **Formulieren - Ondersteunende integratie**
 
 * Toegelaten steun voor de Actieve Diensten van de Federatie van de Folder (ADFS) v3.0 voor de Integratie van de Dynamiek van Microsoft op-gebouw. NPR-30003, NPR-29484: Hotfix voor CQ-4270586
-* Prefill de dienst ontbreekt toe te schrijven aan lange turnaround tijd van de module van de Integratie van Gegevens van de Vormen AEM. NPR-28997: Hotfix voor CQ-4265988
+* Prefill de dienst ontbreekt toe te schrijven aan lange turnaround tijd van de module van de Integratie van Gegevens van AEM Forms. NPR-28997: Hotfix voor CQ-4265988
 * SOAP Webservice request is malformed within AEM Forms. NPR-29013: Hotfix voor CQ-4265443
 * Er wordt geen foutbericht weergegeven tijdens het testen van de SOAP-service in het geval van een onjuiste datumwaarde. Hotfix voor CQ-4265445
 
@@ -709,8 +709,8 @@ De belangrijkste kenmerken voor AEM 6.4.5.0-formulieren zijn:
 
 **Formulieren - Foundation JEE**
 
-* Webservice-component in AEM Forms Workbench kan geen webservice aanroepen waarvoor tweewegs-SSL-verificatie is vereist. NPR-29485: Hotfix voor CQ-4246794
-* AEM Forms JEE Configuration Manager werkt niet met meerdere NIC-kaarten. NPR-29236: Hotfix voor CQ-4268598
+* Webservice-component in AEM Forms Workbench kan geen webservice aanroepen. Hiervoor is tweewegs-SSL-verificatie vereist. NPR-29485: Hotfix voor CQ-4246794
+* AEM Forms JEE-configuratiemanager werkt niet met meerdere NIC-kaarten. NPR-29236: Hotfix voor CQ-4268598
 * AEM-opstartfout die afkomstig is van GemFire: java.lang.IllegalStateException: Er kan slechts één AdminDistributedSystem-verbinding tegelijk worden gemaakt. NPR-29524: Hotfix voor CQ-4266295
 * NoClassDefFoundError omdat de jar-versie niet overeenkomt. NPR-28834: Hotfix voor NPR-28834
 
@@ -781,7 +781,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.4.0 zijn:
 * Te veel elementen worden verwerkt naar de service Slimme inhoud, waardoor het periodiek labelen veel tijd in beslag neemt. NPR-28640: Hotfix voor CQ-4262661, CQ-4262644, CQ-4263234
 * Bureaubladhandelingen werken niet voor resultaten van Omnzoekopdracht op `aem/start.html` pagina. NPR-27242: Hotfix voor CQ-4248176
 * De API voor middelen staat het uploaden van bestanden > 2 GB niet toe, waardoor het uploaden mislukt. NPR-27629: Hotfix voor graniet-23590
-* Metagegevens worden niet in gedownload element opgeslagen tijdens de eerste poging als Dynamic Media is ingeschakeld voor de instantie. NPR-28233: Hotfix voor CQ-4260759
+* Metagegevens worden niet in gedownload element opgeslagen tijdens de eerste poging als Dynamic Media op de instantie zijn ingeschakeld. NPR-28233: Hotfix voor CQ-4260759
 * Service resolver is niet gesloten in SiteCatalyst-configuratie. NPR-28015: Hotfix voor CQ-4259397
 * Het bewegen van activa in DAM resulteert niet in een gelijkaardige beweging op Scene7 (p2p config). NPR-28313: Hotfix voor CQ-4261091
 
@@ -839,7 +839,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.4.0 zijn:
 
 **DAM - Creative Cloud**
 
-* Ondersteuning voor HTTP API om vergelijkbare afbeeldingen te zoeken vanuit AEM Assets. Hotfix voor CQ-4254091
+* De steunHTTP API om gelijkaardige beelden van binnen AEM Assets te vinden. Hotfix voor CQ-4254091
 * Verbeter ACS API om de resultaten van een vraag toe te staan om tot de leden van een inzameling worden beperkt. Hotfix voor CQ-4258708
 
 **DAM - Indelingen**
@@ -876,12 +876,12 @@ Enkele belangrijke hoogtepunten van AEM 6.4.4.0 zijn:
 * Voer een upgrade uit van kwetsbare bootstrap naar 3.4 en ckeditor-bibliotheken naar 4.5.11. NPR-28490: Hotfix voor CQ-4257511
 * Als u de bewerkingsmodi annuleert, wordt de verwijderde bijlage niet hersteld. NPR-27902: Hotfix voor CQ-4255150
 * Samenstellen namens doos zou slechts aan de bevoorrechte leden zichtbaar moeten zijn. NPR-27900: Hotfix voor CQ-4251235
-* Voeg rep:cache toe aan Genegeerde knooppunten op AEM Communities User Sync Listener op publicatieexemplaren. NPR-27842: Hotfix voor CQ-4247234
+* Voeg rep:cache toe aan Genegeerde knooppunten bij AEM Communities User Sync Listener op publicatieinstanties. NPR-27842: Hotfix voor CQ-4247234
 * Het zoekvak toont escape-teken op UI-niveau. NPR-27838: Hotfix voor CQ-4259757
 * Er wordt een fout gegenereerd bij het zoeken naar speciale tekens zoals ( , +,? in quicksearch. NPR-28213: Hotfix voor CQ-4260969
 * Maak een groep &#39;gemeenschapsspecifieke beheerders&#39; zodat de gebruikers de relevante communitysite kunnen bewerken en ontwerpen. NPR-27731
 * Toegevoegde logica voor toetsenbordgebeurtenis om video te openen. NPR-27726: Hotfix voor CQ-4254026
-* Toetsenbordnavigatie ingeschakeld voor componenten van AEM Communities Enablement bij Publiceren. NPR-27728: Hotfix voor CQ-4254028
+* Toegelaten toetsenbordnavigatie voor AEM Communities Enablement componenten op Publish. NPR-27728: Hotfix voor CQ-4254028
 * Label toegevoegd voor lijst- en kaartweergaveknop. NPR-27727: Hotfix voor CQ-4254027
 * Behandeling van open resource resolver sessies in Social-Communities. NPR-27721: Hotfix voor CQ-4258714
 
@@ -911,7 +911,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.4.0 zijn:
 * `com.day.cq.personalization.impl.TeaserResourceEventHandler` gaat in een oneindige lijn en veroorzaakt updates aan knopen bij publicatie instanties. NPR-28561: Hotfix voor CQ-4263096
 * De cq:acties worden niet in overweging genomen voor een doelcomponent. NPR-27616: Hotfix voor CQ-4257497
 * LiveCopy-overervingsannulering werkt niet goed bij doelcontainers. NPR-28129: Hotfix voor CQ-4259813
-* (Cloud Service Configs) Het selectievakje &#39;Geërfd van&#39; dat op het hoofdniveau wordt weergegeven, moet worden verwijderd. NPR-27856:  Hotfix voor CQ-4259676
+* (Cloud Service Configs) Het selectievakje &#39;Overgenomen van&#39; dat op het hoofdniveau wordt weergegeven, moet worden verwijderd. NPR-27856:  Hotfix voor CQ-4259676
 
 **Sling**
 
@@ -953,10 +953,10 @@ De belangrijkste markeringen voor AEM 6.4.4.0 vormen zijn:
 * Wanneer een adaptief formulier wordt gemaakt met een lege sjabloon, kunnen klanten geen onderliggende deelvensters toevoegen aan het hoofdvenster van het formulier. NPR-28758: Hotfix voor CQ-4264157
 * Kan geen waarde instellen tussen de velden van lazy geladen fragmenten van een adaptief formulier. NPR-27758: Hotfix voor CQ-4259703
 * Het adaptieve formulier maakt geen gebruik van de Rich Text Editor, maar laadt de bibliotheken ervan.  NPR-27759:  Hotfix voor CQ-4259193
-* Omleiden naar URL werkt niet voor adaptieve formulieren die zijn ingesloten in een pagina met AEM-sites. NPR-27620: Hotfix voor CQ-4239287
+* Omleiden naar URL werkt niet voor adaptieve formulieren die zijn ingesloten op een pagina AEM Sites. NPR-27620: Hotfix voor CQ-4239287
 * Kan geen waarde instellen tussen de velden van lazy geladen fragmenten van een adaptief formulier. NPR-28320: Hotfix voor CQ-4262345
 * Het adaptieve formulier maakt geen gebruik van de Rich Text Editor, maar laadt de bibliotheken ervan.  NPR-28001: Hotfix voor CQ-4259703, CQ-4259193
-* Krabbelhandtekening werkt niet voor AEM Forms App die wordt uitgevoerd op Apple iOS 12.1. NPR-28497: Hotfix voor CQ-4261765
+* Krabbelhandtekening werkt niet voor AEM Forms App die worden uitgevoerd op Apple iOS 12.1. NPR-28497: Hotfix voor CQ-4261765
 * Verzend Actie met gebruik van &#39;Forms Workflow&#39; Classic authoring issues in 6.4. Hotfix voor CQ-4252740
 * Fout bij het verwerken van blok- en tmp-opslag. NPR-28806: Hotfix voor CQ-4264441
 
@@ -973,7 +973,7 @@ De belangrijkste markeringen voor AEM 6.4.4.0 vormen zijn:
 **Formulierbeheer**
 
 Extra ondersteuning voor het vervangen van het gebruik van de clientbibliotheek van handlebars door onderstrepingsteken in de wizard voor het controleren van het begin van Forms Manager en de wizard voor het verplaatsen van elementen. NPR-27643: Hotfix voor CQ-4246536.
-Eén bundel blijft geïnstalleerd nadat het Forms Management-pakket op de vertakking release/640 is geïnstalleerd. Hotfix voor CQ-4265410Formulieren die met bijlagen worden verzonden, worden niet weergegeven in de workflow met de verzendactie &quot;AEM-formulierworkflow aanroepen&quot; en portaalverzending ingeschakeld. Hotfix voor CQ-4263110
+Eén bundel blijft geïnstalleerd nadat het Forms Management-pakket op de vertakking release/640 is geïnstalleerd. Hotfix voor CQ-4265410Formulieren die met bijlagen worden verzonden, worden niet weergegeven in de workflow met de verzendactie &quot;Workflow AEM Forms aanroepen&quot; en portaalverzending ingeschakeld. Hotfix voor CQ-4263110
 
 **Formulieren - Ondersteunende integratie**
 
@@ -988,7 +988,7 @@ Eén bundel blijft geïnstalleerd nadat het Forms Management-pakket op de vertak
 
 **Formulieren - Foundation JEE**
 
-* Wanneer AEM-formulieren op IBM WebSphere worden geïnstalleerd, mislukt het maken van een formuliergegevensmodel op basis van SOAP. NPR-27923: Hotfix voor CQ-4251134
+* Wanneer AEM Forms worden opgenomen in IBM WebSphere, mislukt het maken van een formuliergegevensmodel op basis van SOAP. NPR-27923: Hotfix voor CQ-4251134
 * SRT-hulpprogramma van PDF Generator kan geïnstalleerde versie van Adobe Acrobat niet detecteren. NPR-27971
 
 **Formulieren - Designer**
@@ -1001,8 +1001,8 @@ Eén bundel blijft geïnstalleerd nadat het Forms Management-pakket op de vertak
 
 **Formulieren - workflow**
 
-* HTML5-formulieren met het standaardverzendproces in an.lca werken niet op JBoss 7. NPR-28675: Hotfix voor CQ-4242928
-* Kan PDF-formulieren niet verzenden in HTML-werkruimte. NPR-28058: Hotfix voor CQ-4260373
+* HTML5-formulieren met het standaardverzendproces in an.lca werken niet op JBoss 7. NPR-28675: Hotfix voor CQ-4243928
+* Kan geen PDF forms verzenden in HTML-werkruimte. NPR-28058: Hotfix voor CQ-4260373
 * De gegevens van de klant worden gedrukt in informatielogboeken gebruikend de Werkstroom van de Vormen van de Dienst van de Dienst van de BDM aanhalen. Hotfix voor CQ-4260385
 
 **Inclusief functiepakketten**
@@ -1045,7 +1045,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * Verbeteringen in de verwerking van FormData.
 * Verbeterde verwerking van itemnaamgeving in een multiveld.
 * Verbeterde verwerking van plaatsaanduidingsitems (Kaartweergave en Lijstweergave) tijdens de selectie.
-* Adobe IMS-verificatie en ondersteuning voor beheerconsole toegevoegd voor beheerde services.
+* Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor beheerde services toegevoegd.
 
 **Assets**
 
@@ -1059,8 +1059,8 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * Als gebruikers een niet-standaardwaarde voor de &quot;Omslag van de Wortel van het Bedrijf&quot;in de DMS7 wolkenconfiguratie plaatsen, werkt de Kijker Vooraf ingesteld niet zoals verwacht. NPR-26360; Hotfix voor CQ-4249505
 * De rapportage van activa mislukt voor gevallen met een zeer groot aantal activa. NPR-27278; Hotfix voor CQ-4256748
 * Submappen nemen het SmartCrop-afbeeldingsprofiel van de bovenliggende map niet over. NPR-27197; Hotfix voor CQ-4256273
-* Wanneer de Dynamische integratie van Media wordt toegelaten, worden sommige meta-gegevenseigenschappen van Activa gewijzigd. De breedte, de hoogte en de locatiekenmerken worden niet weergegeven. NPR-27203; Hotfix voor CQ-4256258
-* De dynamische Media gebruikt niet de gevormde volmacht voor sommige types van activa. NPR-25211; Hotfix voor CQ-4244871
+* Wanneer de integratie van Dynamic Media wordt toegelaten, worden sommige meta-gegevenseigenschappen van Activa gewijzigd. De breedte, de hoogte en de locatiekenmerken worden niet weergegeven. NPR-27203; Hotfix voor CQ-4256258
+* Dynamic Media gebruiken niet de gevormde volmacht voor sommige types van activa. NPR-25211; Hotfix voor CQ-4244871
 * De pagina van de Editor van metagegevens bevat Null-aanwijzeruitzondering voor een ongeldige itemparameter. NPR-26169; Hotfix voor CQ-4241368.
 * Als een drop-down een keuzeregel heeft en een vereiste die regel op het wordt toegepast, kan de vereiste regel niet in de meta-gegevensredacteur worden voldaan. NPR-27479; Hotfix van CQ-4251428
 
@@ -1076,7 +1076,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * Wanneer de rijke tekstredacteur met veelvoudige gebieden wordt gecombineerd, Uncaught TypeError: fieldAPI.getName is geen functie bij foundation.js fout komt voor. NPR-27146: Hotfix voor CQ-4253155
 * De integratie van Salesforce kan niet de volmachtsconfiguratie gebruiken. NPR-27244: Hotfix voor CQ-4245300
 * Wanneer u een pagina voor activering plant met de optie Publicatie beheren voor een latere datum en overschakelt naar de lijstweergave, ontbreekt het kalenderpictogram. NPR-26974: Hotfix voor CQ-4239206
-* Gebruikers kunnen machtigingen voor gesloten gebruikersgroepen niet bewerken in de pagina-eigenschappen. NPR-27138: Hotfix voor CQ-4256089Kan codes niet bewerken via labelen. NPR-26958: Hotfix voor CQ-4254858
+* Gebruikers kunnen machtigingen voor gesloten gebruikersgroepen niet bewerken in de pagina-eigenschappen. NPR-27138: Hotfix voor CQ-4256089Kan codes niet bewerken via labelen. NPR-26957: Hotfix voor CQ-4254858
 * Wanneer een tag waarnaar wordt verwezen vanuit een gestructureerd inhoudsfragmentmodel wordt verplaatst, worden de bestaande verwijzingen naar de tag in een inhoudsfragment niet bijgewerkt. Dit gebeurt in het bewerkingsscherm van het inhoudsfragmentmodel. NPR-26776: Hotfix voor CQ-4251805
 * Wanneer u een opstart met meerdere pagina&#39;s maakt en promoot, worden er meerdere versies voor elke pagina gemaakt. NPR-26917: Hotfix voor CQ-4254663
 * AEM-sitebeheer verwerkt geen paden die in de adresbalk van de browser worden getypt. NPR-26780: Hotfix voor CQ-4254097
@@ -1090,7 +1090,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 
 * De predikaten van de markering worden niet gepubliceerd wanneer de vorm van het meta-gegevensschema aan het Portaal van het Merk wordt gepubliceerd. Hotfix voor CQ-4256218
 * Wanneer een map op het derde niveau van AEM naar Brand Portal wordt gepubliceerd zonder dat de bovenliggende mappen worden gepubliceerd, verandert de mapnaam. Hotfix voor CQ-4255423
-* De wegbrowser voorspelt wordt gepubliceerd van activa AEM aan het Portaal van het Merk zoals verwacht. Het gepubliceerde pad bij BP blijft echter /content/dam, die moet worden bijgewerkt. Hotfix voor CQ-4256240
+* De wegbrowser voorspelt wordt gepubliceerd van AEM Assets naar het Portaal van het Merk zoals verwacht. Het gepubliceerde pad bij BP blijft echter /content/dam, die moet worden bijgewerkt. Hotfix voor CQ-4256240
 
 **DAM - Creative Cloud**
 
@@ -1104,16 +1104,16 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 
 **DAM - DM Services**
 
-* De dynamische Media gebruikt niet de gevormde volmacht voor sommige types van activa. NPR-10727; Hotfix voor CQ-4244871
+* Dynamic Media gebruiken niet de gevormde volmacht voor sommige types van activa. NPR-10727; Hotfix voor CQ-4244871
 
 **Platform**
 
 * Prestatieproblemen met org.apache.sling.i18n. NPR-26812: Hotfix voor SLING-7543
 * Kan de knoopeigenschappen niet zien wanneer de invoer-XML is opgemaakt en geïmplementeerd. NPR-26198: Hotfix voor CQ-4250448
 * IndexOutOfBoundsException in ResourceProviderTracker. NPR-26968: Hotfix voor GRANITE-23310
-* De JMX-console accumuleert een groot aantal beheersessies en elke 5 minuten wordt een nieuwe sessie geopend. NPR-26958: Hotfix voor CQ-4251090
+* De JMX-console accumuleert een groot aantal beheersessies en elke 5 minuten wordt een nieuwe sessie geopend. NPR-26957: Hotfix voor CQ-4251090
 * Na een upgrade van 6.2 naar 6.4 geeft het logbestand stacktracering weer voor niet-gesloten bronnenoplosser com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck. NPR-26176: Hotfix voor graniet-21734
-* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4242928
+* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4243928
 * De replicatie gebruikt verlopen Token OAuth tot het ontbreekt. NPR-25894
 * Beperkte pagina (pagina voor gesloten gebruikersgroep) met sling: alias leidt de gebruiker niet naar de aanmeldingspagina. NPR-25715: Hotfix voor graniet=22263
 * Bij het publiceren van tags wordt geen activiteit weergegeven in de gebruikersinterface. Hotfix voor CQ-4255961
@@ -1151,14 +1151,14 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * Zoekopdracht voor tags werkt niet voor gelokaliseerde zoektermen. NPR-26171: Hotfix voor CQ-4249926
 * Met de knop Terug slaat u een pagina in de forumzoekopdracht over. NPR-26950: Hotfix voor CQ-4254804
 * AEM-instantie die wordt uitgevoerd op standaard-Http-poort (80) kan imsmanifest.xml niet bereiken. NPR-27173: Hotfix voor CQ-4252211
-* Opmerking verwijderen als antwoord voor QnA werkt niet als AEM-gemeenschappen zijn ingesteld met DSRP. NPR-26247: Hotfix voor CQ-4252232
+* Opmerking verwijderen als antwoord voor QnA werkt niet als AEM Communities zijn ingesteld met DSRP. NPR-26247: Hotfix voor CQ-4252232
 * Kan Adobe Storage niet aanroepen: 414 fout - Lange GET URI waargenomen wanneer gebruikers /content/community-components/en/search.html doorzoeken en auteurveld selecteren als een van de filters voor die zoekterm. NPR-26643: Hotfix voor CQ-4251303
 * De neerzetwaarde voor DataCenterURL in de configuratie van ASRP wordt veranderd van Dallas in Virginia (voor VA6). NPR-26936: Hotfix voor CQ-4254434
 * Speciale tekens in forumzoekfouten of geen resultaten. NPR-26930: Hotfix voor CQ-4247744
 * Het aantal dat voor &quot;Aantal resultaten&quot;in forumonderzoek wordt getoond gebruikt onjuiste afbakening voor Engelse en Duitse scènes. NPR-27050: Hotfix voor CQ-4248939
 * Ongelezen meldingen nemen niet toe na 21. NPR-26946, NPR-27480: Hotfix voor CQ-4252829, CQ-4256939
 * Met paginering in de opmerkingensectie van een component kunnen gebruikers omhoog schuiven om de pagina-inhoud te zien, waarbij ze een pagina bereiken via paginering. NPR-27032: Hotfix voor CQ-4251228
-* U kunt niet op een miniatuurafbeelding klikken in de map Community Site wanneer u deze weergeeft vanuit de beheerconsole op een AEM-auteur-exemplaar. NPR-26986: Hotfix voor CQ-4254036
+* U kunt niet op een miniatuurafbeelding klikken in de map Community Site wanneer u deze weergeeft vanuit de beheerconsole op een AEM Author-exemplaar. NPR-26986: Hotfix voor CQ-4254036
 * Met de optie Alle gelezen tekens markeren worden alleen de eerste 10 berichten als gelezen gemarkeerd en blijven andere ongelezen totdat een pagina wordt vernieuwd. NPR-27037: Hotfix voor CQ-4254058
 * Paginering wordt niet geactiveerd voor Ideatie en de lijst met onderwerpen (of antwoorden) wordt langer, tenzij deze opnieuw wordt geladen. NPR-26193: Hotfix voor CQ-4252104
 * De activiteiten van andere gebruikers en schrapte UGC zichtbaar bij het aanmelden met moderatorgeloofsbrieven en het toevoegen &quot;#social-activities&quot;of &quot;#tabs-2&quot;aan het eind van het profiel van de moderator URL. Hotfix voor CQ-4251355
@@ -1242,11 +1242,11 @@ De belangrijkste kenmerken voor AEM 6.4.3.0-formulieren zijn:
 **Formulieren - workflow**
 
 * Als de taaknaam accolades bevat terwijl de workflow Formulieren wordt uitgevoerd, wordt een uitzondering weergegeven in de logboeken. Hotfix voor CQ-4256626
-* Kan een zoeksjabloon niet openen in de werkruimte van AEM-formulieren. Hotfix voor CQ-4255651
+* Kan een zoeksjabloon niet openen in de werkruimte AEM Forms. Hotfix voor CQ-4255651
 
 **Mobiele formulieren**
 
-* Het afsluitingsbericht wordt niet weergegeven wanneer het datumveld wordt verlaten in AEM-formulieren die in Internet Explorer of Chrome als HTML worden weergegeven. NPR-26483: Hotfix voor CQ-4239352
+* Het afsluitingsbericht wordt niet weergegeven wanneer het datumveld wordt verlaten in AEM Forms die in Internet Explorer of Chrome als HTML zijn gerenderd. NPR-26483: Hotfix voor CQ-4239352
 * Datums in de XML wanneer de verwerking begint, geven de formulieren een validatiefout weer wanneer de gebruiker het formulier probeert te verlaten. NPR-26787: Hotfix voor CQ-4251211
 
 **Forms JEE-installatieprogramma**
@@ -1261,8 +1261,8 @@ De belangrijkste kenmerken voor AEM 6.4.3.0-formulieren zijn:
 * Voeg FIPS-compatibiliteit toe voor de RE-workflow in Digital Signature, Reader Extensions, CryptoProvider en TrustStore. NPR-27495: Hotfix voor CQ-4257572
 * De omzetting ontbreekt terwijl het runnen van de dienst AssemblerService.toPDFA in een lijn. NPR-26354: Hotfix voor CQ-4248656
 * Kan de compatibiliteit met PDF&#39;s niet correct valideren op basis van PDF/A-1b-standaarden. NPR-26286: Hotfix voor CQ-4227539
-* Onvoldoende geheugen tijdens het upgraden van AEM-formulieren van 6.1 SP2 GVB5 naar GVB13. NPR-26285: Hotfix voor CQ-4244379
-* Kan de compatibiliteit met PDF&#39;s niet op de juiste wijze valideren op basis van PDF/A-standaarden. NPR-26274: Hotfix voor CQ-4248823
+* Onvoldoende geheugen tijdens het upgraden van AEM Forms van 6.1 SP2 GVB5 naar GVB13. NPR-26285: Hotfix voor CQ-4244379
+* Kan de compatibiliteit met PDF&#39;s niet op de juiste wijze valideren op basis van PDF/A-standaarden. NPR-26272: Hotfix voor CQ-4248823
 
 **Formulieren - Foundation JEE**
 
@@ -1328,7 +1328,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * Publiceer recentere functionaliteit voor AEM aan het Portaal replicatie van het Merk. NPR-25911: Hotfix voor CQ-109139
 * Het publiceren van en unpublishing van de privé inzameling door niet-admin gebruikers resulteert in een NPE. NPR-25906: Hotfix voor CQ-4250594
 * Publiceren van inhoudsfragment en formulierschema&#39;s naar Brand Portal uitschakelen. NPR-24176, NPR-26004: Hotfix voor CQ-4251592, CQ-4252026
-* (Dynamische media) Bijgewerkte DM-viewers naar versie 5.10.1 waarmee u kunt controleren op dubbele namen op de pagina Voorinstelling afbeelding. Zie Dynamische mediaverviewers bijwerken (5.10.1). NPR-24403: Hotfix voor CQ-4247554
+* (Dynamic Media) Bijgewerkte DM-viewers naar versie 5.10.1 waarmee u kunt controleren op dubbele namen op de pagina met voorinstellingen voor afbeeldingen. Zie Dynamic Media Viewer bijwerken (5.10.1). NPR-24403: Hotfix voor CQ-4247554
 * Javascript-fout in de browserconsole in de kolomweergave bij het selecteren van een element of map. NPR-25939: Hotfix voor CQ-4250228
 * (Kolomweergave) Kan taken niet identificeren omdat het sleutelbestand wordt weergegeven als een leeg wit item. NPR-25903: Hotfix voor CQ-4246307
 
@@ -1372,7 +1372,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * Probleem met meerdere DTM-configuraties. NPR-24685: Hotfix voor CQ-4247293
 * Toegevoegde ondersteuning voor asynchrone implementatie voor gehoste clientbibliotheken. NPR-25716: Hotfix voor CQ-4245745
 * Doelcomponent met ontbrekende overeenkomende aanbieding geeft de hele pagina weer en in plaats van een leeg doelcomponent wordt een andere volledige vertoning van de pagina toegevoegd. NPR-25273: Hotfix voor CQ-4248003
-* De doelengine (mbox.js, at.js) gebruikt geen beheerde URL&#39;s en gebruikt URL&#39;s die dubbele punten bevatten die mogelijk mislukken bij bepaalde implementaties. NPR-25339: Hotfix voor CQ-4237854
+* De Target-engine (mbox.js, at.js) gebruikt geen beheerde URL&#39;s en gebruikt URL&#39;s met dubbele punten die mogelijk mislukken bij bepaalde implementaties. NPR-25339: Hotfix voor CQ-4237854
 * (Launch)LibraryDownloadProcess slaat onjuiste libraryUri-waarde op. NPR-25330: Hotfix voor CQ-4250006
 
 **Platform**
@@ -1394,7 +1394,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * SAML richt opnieuw login aan logout pagina gebruikend Okta IDP. NPR-25523: Hotfix voor GRANITE-22364
 * IMS-verificatie via externe IDP OAuth Provider configureert de in AEM gemaakte gebruiker. NPR-25301: Hotfix voor graniet-22363
 
-**MAC - Test &amp; de Integratie van het Doel**
+**MAC - test &amp; de Integratie van Target**
 
 * (Doel) Tekstcomponentfout tijdens het toewijzen van doelen. Hotfix voor CQ-4233343
 
@@ -1418,7 +1418,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * Null wordt geretourneerd wanneer de component communitygroupmemberList wordt bedekt. NPR-25228: Hotfix voor CQ-4248523
 * (Communities Calendar) ClassCastException wordt geproduceerd terwijl het bewaren van de gebeurtenis met het nieuwe beeld van de Omslag. NPR-25167: Hotfix voor CQ-4248662
 * (Communities) Berichten die worden afgekapt. NPR-25326
-* (AEM-publicatie) Het Scoremiddel werkt niet bij het contextpad en geeft een leeg scherm weer. NPR-26155: Hotfix voor CQ-4251942
+* (AEM Publish) Het Bron van het scorebord ontbreekt met contextweg en toont leeg scherm. NPR-26155: Hotfix voor CQ-4251942
 * (MSRP) De nieuw gecreëerde kalender wordt bewaard gedeeltelijk het werpen NPE in het foutenlogboek. NPR-26071: Hotfix voor CQ-4250531
 * De paginering van het forum/van het Onderwerp wordt slechts bijgewerkt wanneer de pagina wordt verfrist. NPR-26070, NPR-25965: Hotfix voor CQ-4249509
 * (Forum Vragen en antwoorden) Kan niet naar de vorige pagina navigeren bij het openen van een directe koppeling naar een opmerking. NPR-26069: Hotfix voor CQ-4251699
@@ -1476,13 +1476,13 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
 * De pro-actieve Steun UI van de Stichting steunt om de stabiliteit van het product te verbeteren. NPR-24334
 
-**MAC - Test &amp; de Integratie van het Doel**
+**MAC - test &amp; de Integratie van Target**
 
 * De tweede pagina van de Tovenaar Personalization ( die door &quot;Begin het richten&quot;wordt gelanceerd) is leeg en werpt consolefouten. Hotfix voor CQ-4253277
 
 **Ervaringsfragmenten**
 
-* De samengevoegde Fragments van de Ervaring/de Integratie van het Doel aan AEM 6.4.2.0. Hotfix voor CQ-4248653
+* Samengevoegde Experience Fragments/Target Integration to AEM 6.4.2.0. Hotfix voor CQ-4248653
 
 **Beheer van inhoudsfragmenten**
 
@@ -1526,7 +1526,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * In de Asset Selector (of de Asset Picker) worden niet alle middelen uit de beschikbare mappen weergegeven. Hotfix voor CQ-4218414
 * Voorinstelling afbeelding zonder hoogte geeft afbeeldingen met een onjuiste grootte weer. Hotfix voor CQ-4246546
 * (Elementen van meerdere pagina&#39;s) De gebruikersinterface wordt onderbroken wanneer op annotaties wordt geklikt. Hotfix voor CQ-4251434
-* Als u de voorinstelling Analytics upgradet van 6.3 naar 6.4 en hoger, wordt een nieuwe rapportsuite en voorinstelling Analytics gemaakt, waardoor de oudere rapportgegevens van de gebruiker verloren gaan. Hotfix voor CQ-4244529
+* Als u de Analytics-voorinstelling van 6.3 naar 6.4 en hoger upgradet, wordt een nieuwe rapportsuite en voorinstelling voor Analytics gemaakt, waardoor de oudere rapportgegevens van de gebruiker verloren gaan. Hotfix voor CQ-4244529
 * (De wizard Publicatie beheren) Lijst met elementen lijkt leeg te zijn wanneer u probeert te publiceren of publicatie ongedaan wilt maken. Hotfix voor CQ-4251881
 * Wanneer u Viewers kiest nadat u de leden hebt ingesteld, kunnen AVS-video&#39;s niet worden afgespeeld. Hotfix voor CQ-4205308
 * Voorinstellingen voor videoverwerking die al zijn bijgewerkt, kunnen geen nieuwe voorinstelling voor videocodering bevatten en de bestaande coderingsvoorinstelling(en) niet bewerken. Hotfix voor CQ-4240407
@@ -1537,7 +1537,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 
 **DAM - DMServices**
 
-* Dynamische media-uitvoeringen kunnen niet worden gegenereerd voor EPS-bestand. Hotfix voor CQ-4243688
+* Dynamic Media-uitvoeringen konden niet worden gegenereerd voor EPS-bestand. Hotfix voor CQ-4243688
 
 **Graniet**
 
@@ -1652,7 +1652,7 @@ De belangrijkste kenmerken voor AEM 6.4.2.0-formulieren zijn:
 **Formulieren - Foundation JEE**
 
 * Processen die periodiek als de Rekening van de Context van het Systeem lopen. NPR-25289, NPR-25313: Hotfix voor CQ-4249331
-* AEM Forms JEE wordt beïnvloed door een beveiligingswaarschuwing voor Apache Struts en Jackson voor gegevensbinding. NPR-25628: Hotfix voor CQ-4242891
+* AEM Forms JEE had invloed op Apache Struts en Jackson data binding security alert. NPR-25628: Hotfix voor CQ-4242891
 * E-mailbeginpuntproces werkt niet. NPR-25253: Hotfix voor CQ-4248518
 
 **Inclusief functiepakketten**
@@ -1753,8 +1753,8 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 
 * Unclosed ResourceResolver in com.day.cq.analytics.sitecatalyst. NPR-22340: Hotfix voor CQ-4236515
 * Met TargetContentImpl verloopt AEM traag tijdens langdurige query&#39;s. NPR-22359: Hotfix voor CQ-4236907
-* De doelengine (mbox.js, at.js) gebruikt geen beheerde URL&#39;s en gebruikt URL&#39;s die dubbele punten bevatten die mogelijk mislukken bij bepaalde implementaties. NPR-22434: Hotfix voor CQ-4237854
-* In de modus Doel kunnen auteurs een component die van de blauwdruk is overerfd, wijzigen zonder de overerving te annuleren. NPR-22865: Hotfix voor CQ-4237907
+* De Target-engine (mbox.js, at.js) gebruikt geen beheerde URL&#39;s en gebruikt URL&#39;s met dubbele punten die mogelijk mislukken bij bepaalde implementaties. NPR-22434: Hotfix voor CQ-4237854
+* In de Target-modus kunnen auteurs een component die van de blauwdruk is overgeërfd, wijzigen zonder de overerving te annuleren. NPR-22865: Hotfix voor CQ-4237907
 * (Personalisatie) De pictogrammen worden vervormd wanneer het schakelen naar de mening van de Kaart. NPR-23373, NPR-23374: Hotfix voor CQ-4240018, CQ-4240019
 * (Personalisatie) De console van het publiek toont niet:omslagtypes. NPR-23375: Hotfix voor CQ-4242293
 * Als een component is ingesteld op een publicatie-instantie, wordt de standaardervaring vóór de beoogde toepassing weergegeven als flikkering. NPR-23415: Hotfix voor CQ-4242038
@@ -1769,11 +1769,11 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 
 * (Klassieke UI) (Aanraakinterface) De tagkiezer geeft geen uitzondering weer en genereert een uitzondering wanneer wordt geprobeerd naar tags te bladeren via een tagvoorspelling in het schema voor het zoeken naar middelen. NPR-23049: Hotfix voor CQ-4239371
 * (Klassieke UI) Componenten die xtype=tags gebruiken keren null terug en kunnen niet worden geselecteerd uit de 0e lijst met tags. NPR-23050: Hotfix voor CQ-4239937
-* (Branding) Het dialoogvenster Opt-in vermeldt Adobe Marketing Cloud in plaats van Adobe Experience Cloud. NPR-23210: Hotfix voor CQ-4237799
+* (Branding) In het dialoogvenster Opt-in wordt Adobe Marketing Cloud genoemd in plaats van Adobe Experience Cloud. NPR-23210: Hotfix voor CQ-4237799
 * Met de filteroptie wordt AEM traag na de upgrade van 6.3 naar 6.4. NPR-23260: Hotfix voor CQ-4239847 (te controleren)
 * Proactieve Backport voor granite.omnissearch.core fixes. NPR-23536
 * Proactieve back-up voor platform.clientlibs-oplossingen. NPR-23569
-* De overerving van Cloud Service Config is verbroken tijdens het bewerken van andere pagina-eigenschappen. NPR-23216: Hotfix voor CQ-4239782
+* De overerving Cloud Service Config is verbroken tijdens het bewerken van andere pagina-eigenschappen. NPR-23216: Hotfix voor CQ-4239782
 * STARTTLS-ondersteuning ingeschakeld in Day CQ Mail Service. NPR-23941: Hotfix voor CQ-4240397
 
 **Projecten**
@@ -1803,12 +1803,12 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Kan geen enkele workflow bewerken nadat deze eenmaal is bewerkt. NPR-23742: Hotfix voor CQ-4238526
 * (Klassieke UI) Wanneer het uitgeven van de werkschemalanceringen, verdwijnen de voorwaarden veroorzakend de werkschema&#39;s om zonder enige voorwaarden te lanceren. NPR-23835: Hotfix voor CQ-4239153
 * Project inbox: als u overschakelt naar de kalenderweergave, wordt de hoofdinhoud in het Postvak IN weergegeven. NPR-23947: Hotfix voor CQ-4241236
-* Moet de ladingsdetails in de bundel blootstellen zodat kan de component HTML de waarde in de lijstmening tonen. NPR-23948: Hotfix voor CQ-4240953
+* Moet de ladingsdetails in de bundel blootstellen zodat kan de component HTML de waarde in de lijstmening tonen. NPR-23947: Hotfix voor CQ-4240953
 * Kan dialooggegevens niet opslaan in de stap Deelnemer dialoogvenster. NPR-23965: Hotfix voor CQ-4234123
 * (Touch UI) Wanneer u een workflowmodel opslaat, verandert de knop Sync in &#39;Gesynchroniseerd&#39;, wat resulteert in een spelfout. Hotfix voor CQ-4244843
 * Project inbox: als u overschakelt naar de kalenderweergave, wordt de hoofdinhoud in het Postvak IN weergegeven. Hotfix voor CQ-4244436
 * Kan Dialoogvensters niet selecteren in de stap Deelnemer dialoogvenster. Hotfix voor CQ-4244532
-* Proactieve Backport voor granite.omnissearch.core fixes. NPR-23536
+* Proactieve Backport voor granite.omnissearch.core fixes. NPR-23538
 * Probleem in Mobile Workspace App 6.4 met gedeelde taak. NPR-26383
 
 **WCM - Vertaling**
@@ -1858,7 +1858,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 **DAM - DM-client**
 
 * Als u een upgrade uitvoert naar 6.4, worden eerder gemaakte videocoderingsprofielen verwijderd. Hotfix voor CQ-4244067
-* Het kenmerk Alt-tekst wordt verbroken in de component Dynamische media. Hotfix voor CQ-4244081
+* Het kenmerk Alt-tekst is verbroken in de component Dynamic Media. Hotfix voor CQ-4244081
 * (DMS7) Het uitgeven van verre reeksen in AEM wordt niet beschreven in Scene7. Hotfix voor CQ-4243430
 * De controle van 6.4 SP1 bouwt op DM Hybrid voort. Hotfix voor CQ-4244623
 * (DMS7-UA) Als u op de knop Insluiten voor een gepubliceerd video-element klikt, lijkt er niets te gebeuren. Het dialoogvenster Insluiten wordt weergegeven met HTML-code. Hotfix voor CQ-4245237
@@ -1893,7 +1893,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * (DMS7) Verwijder de MIME Type-toewijzing: image_x-eps. Hotfix voor CQ-4240394
 * (DMS7) Upload parameters for knockout background do not pass the ipsApiService.log and so, do not work. Hotfix voor CQ-4240686
 * Als u een upgrade uitvoert van de afbeeldingsverwerkingsprofielen die in een 6.3- tot 6.4-instantie zijn gemaakt, wordt de eigenschap Uitsnijden verbroken. Hotfix voor CQ-4237739
-* (Dynamische media) Het regelmatig uploaden van middelen buiten de map smartcrop mislukt. Hotfix voor CQ-4237670
+* (Dynamic Media) Het regelmatig uploaden van middelen buiten de map smartcrop mislukt. Hotfix voor CQ-4237670
 * Pas de fallbackcode voor profielen Adaptive Video Encoding aan in Adaptive_Video_Encoding. Hotfix voor CQ-4237666
 * De EmbedXMP-gegevens worden altijd ingesteld op &quot;actief&quot; voor het genereren van profielen. Hotfix voor CQ-4234498
 * CMYK-afbeeldingsuitvoering heeft een onjuiste verzadiging. Hotfix voor CQ-4235470
@@ -1907,11 +1907,11 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 
 **Formulieren**
 
-Correcties voor AEM Forms worden geleverd via invoegpakketten en andere patchinstallatieprogramma&#39;s die bij de release worden geleverd. Zie AEM Forms Releases voor meer informatie.
+AEM Forms worden geleverd via invoegpakketten en andere patchinstallatieprogramma&#39;s die bij de release worden geleverd. Zie AEM Forms releases voor meer informatie.
 
-De belangrijkste markeringen voor AEM-formulieren zijn:
+De belangrijkste hooglichten voor AEM Forms zijn:
 
-* AEM Forms introduceert de mogelijkheid [van](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html) transactierapporten om transacties zoals verzonden formulieren, verwerkte documenten en gerenderde documenten bij te houden en te tellen bij de implementatie van AEM Forms. Het biedt inzicht in productgebruik en helpt zakelijke gebruikers de volumes van digitale verwerking te begrijpen.
+* AEM Forms introduceert de mogelijkheid [van](https://helpx.adobe.com/experience-manager/6-4/forms/using/transaction-reports-overview.html) transactierapporten om transacties zoals ingediende formulieren, verwerkte documenten en gerenderde documenten bij de implementatie van uw AEM Forms te volgen en te houden. Het biedt inzicht in productgebruik en helpt zakelijke gebruikers de volumes van digitale verwerking te begrijpen.
 * PDF/UA-ondersteuning voor XML-formulieren ingeschakeld.
 * Toegevoegde allowProxy = true voor Clientlib **aemfd.ccm.channel.contentPage**
 * Bijgewerkte code om geavanceerde zoekopdrachten naar titels te maken zoals ze bevatten in plaats van gelijk.
@@ -1927,8 +1927,8 @@ De belangrijkste markeringen voor AEM-formulieren zijn:
 * (FDM WSDL) Getting DermisException: java.lang.Exception: createSOAPParam: Ongeldige parameters. NPR-24264
 * (FDM Client SDK) Kan het testen van de voorprocessor en de aangepaste verzendactie niet uitvoeren. Hotfix voor CQ-4238469
 * Oplossingen voor Javadoc-problemen in Dermis. Hotfix voor CQ-4244250
-* Verbeterde invoer in WSDL (Web Services Description Language). Hotfix voor CQ-4244133
-* Het basis authentificatietesten voor WSDL resulteert in verschillende fout voor de zelfde configuratie in AEM 6.3 en AEM 6.4. Hotfix voor CQ-4244133
+* Verbeterde invoer in WSDL (Web Services Description Language). Hotfix voor CQ-4245132
+* Het basis authentificatietesten voor WSDL resulteert in verschillende fout voor de zelfde configuratie in AEM 6.3 en AEM 6.4. Hotfix voor CQ-4245132
 * Verzoek om ValueUtil op te nemen in client-sdk en javadocs. Hotfix voor CQ-4242803
 * (FDM Cloud Config) Kan SOAP-gebaseerde verificatie niet configureren vanuit de cloudconfiguratie. Hotfix voor CQ-4238462
 * Dermis - Voeg ontbrekende pakketten toe in JavaDocs. Hotfix voor CQ-4242815
@@ -1992,7 +1992,7 @@ De belangrijkste markeringen voor AEM-formulieren zijn:
 * De voorlegging van het formulier voor Mobiele Vormen moet als transactie worden geregistreerd gebruikend de Dienst van de Opname van de Transactie. Hotfix voor CQ-4246166
 * De voorlegging van het formulier in Formset zou als transactie moeten worden geregistreerd gebruikend de Dienst van de Opname van de Transactie. Hotfix voor CQ-4246165
 
-**AEM Forms App**
+**AEM Forms-app**
 
 * (Windows App) Kan het formulier niet genereren. Hotfix voor CQ-4238005
 
@@ -2008,7 +2008,7 @@ De belangrijkste markeringen voor AEM-formulieren zijn:
 * Het datumveld in Sjabloon overlapt het subformulier in de IC-ontwerpomgeving. Hotfix voor CQ-4240110
 * Koptekst mag niet worden verwijderd of omhoog en omlaag worden verplaatst in IC-webkanaalontwerpfuncties. Hotfix voor CQ-4243358
 * (IC Editor) Standaardrijen die moeten worden ingesteld op 1 voor tabelcomponenten. Hotfix voor CQ-4244848
-* Doelgebied blijft zichtbaar, zelfs nadat de inhoud is gesleept en erop is neergezet. Hotfix voor CQ-4244534
+* Target Area zodat deze zichtbaar blijft, zelfs nadat de inhoud is gesleept en neergezet. Hotfix voor CQ-4244534
 * Webkanaal herkent geen tabruimte in tekstdocumentfragmenten. Hotfix voor CQ-4244481
 * (Kanaal van de Druk) de vertoning van het Document (IC) zou als transactie moeten worden geregistreerd gebruikend de Dienst van de Opname van de Transactie. Hotfix voor CQ-4245335
 * (Het kanaal van het Web) de vertoning van het Document (IC) zou als transactie moeten worden geregistreerd gebruikend de Dienst van de Opname van de Transactie. Hotfix voor CQ-4245334
@@ -2018,7 +2018,7 @@ De belangrijkste markeringen voor AEM-formulieren zijn:
 * Anonieme toegang tot de anonieme ontoegankelijke clientbibliotheek van IC toestaan. Hotfix voor CQ-4245588
 * (Webkanaal) Gegevens worden in geen van de tabellen in de webvoorvertoning omgezet en worden als leeg weergegeven. Hotfix voor CQ-4244476
 * Tabelkoppen worden als variabelen weergegeven in het webkanaal bij automatisch genereren. Hotfix voor CQ-4244242
-* (IC Editor) De inhoud van een documentfragment dat in een IC wordt gebruikt, moet automatisch worden aangepast aan de breedte van het doelgebied. Hotfix voor CQ-4244094
+* (IC Editor) De inhoud van een documentfragment dat in een IC wordt gebruikt, moet automatisch worden aangepast aan de breedte van het Target-gebied. Hotfix voor CQ-4244094
 * De kanaalnaam die in de middelste bovenkant wordt weergegeven, moet consistent zijn met de IC-titel voor WEB/PRINT. Hotfix voor CQ-4242498
 * In het deelvenster Gegevens van teksteditor mogen alleen entiteiten op hoofdniveau worden vermeld, hotfix voor CQ-4244121
 * De standaardnaam wordt niet toegewezen wanneer het toevoegen van een nieuwe component in redacteur. Hotfix voor CQ-4244691
@@ -2070,7 +2070,7 @@ De belangrijkste markeringen voor AEM-formulieren zijn:
 **Assets**
 
 * De functie voor verbeterde slimme tags is toegevoegd. Zie [Verbeterde slimme tags](https://helpx.adobe.com/experience-manager/6-4/assets/using/enhanced-smart-tags.html)voor meer informatie. NPR-21951: Hotfix voor CQ-4234883
-* Inleiding tot AEM-middelenverwijzingen in InDesign. Zie Verwijzingen naar [AEM-elementen in InDesign](/help/assets/managing-linked-subassets.md)voor meer informatie. NPR-23386
+* Introductie van verwijzingen naar AEM Assets in InDesign. Zie Verwijzingen naar [AEM Assets in InDesign](/help/assets/managing-linked-subassets.md)voor meer informatie. NPR-23386
 
 **Sites**
 
@@ -2145,18 +2145,18 @@ B. Gebruik de [HTTP API van de Manager](https://docs.adobe.com/content/docs/en/c
 
 ### Installatie valideren {#validate-install}
 
-1. Op de pagina Productinformatie (*/system/console/productinfo *) wordt nu de bijgewerkte versie weergegeven van de tekenreeks &quot;Adobe Experience Manager, versie 6.4.8.0&quot; onder Geïnstalleerde producten.
+1. Op de pagina Productinformatie (*/system/console/productinfo *) moet nu de bijgewerkte versie van de tekenreeks &quot;Adobe Experience Manager, versie 6.4.8.0&quot; onder Geïnstalleerde producten staan.
 1. Alle OSGI-bundels zijn actief of FRAGMENT in de OSGI Console (Webconsole gebruiken: /systeem/console/bundels).
 1. De OSGI-bundel org.apache.jackrabbit.oak-core bevindt zich op versie 1.8.17 of hoger (gebruik webconsole: /systeem/console/bundels).
 
-Zie [Technische vereisten](../sites-deploying/technical-requirements.md)voor informatie over het gecertificeerde platform voor deze versie van AEM-sites en -middelen.
+Zie [Technische vereisten](../sites-deploying/technical-requirements.md)voor informatie over het gecertificeerde platform voor het uitvoeren van deze versie van AEM Sites en bedrijfsmiddelen.
 
 >[!Nofferte]
 >Na een geslaagde installatie van het pakket verschijnt een >informatief bericht dat de inhoud >package correct is geïnstalleerd, zoals **&quot;Content Package AEM-6.4-Service-Pack-7 geïnstalleerd.&quot;**
 
-### Dynamische media-viewers bijwerken (5.10.1) {#update-dynamic-media-viewers}
+### Dynamic Media Viewers bijwerken (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.0 bevat een nieuwe versie van Dynamic Media-viewers (5.10.1), waarmee op dubbele namen op de pagina Voorinstelling afbeelding kan worden gecontroleerd. Klanten met dynamische media wordt aangeraden de volgende opdracht uit te voeren om voorinstellingen van de viewer voor selectievakjes naar een actuele status over te brengen.
+<p id="Dynamic">AEM 6.4.8.0 bevat een nieuwe versie van Dynamic Media Viewer (5.10.1), waarmee u kunt controleren op dubbele namen op de pagina Voorinstelling afbeelding. Klanten van Dynamic Media wordt aangeraden de volgende opdracht uit te voeren om voorinstellingen van de viewer voor selectievakjes naar een actuele status over te brengen.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -2168,23 +2168,23 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 
 >[!NOTE]
 >
->Sla dit over als u geen AEM-formulieren gebruikt. Correcties in AEM Forms worden geleverd via een afzonderlijk invoegpakket.
+>Sla over als u geen AEM Forms gebruikt. Correcties in AEM Forms worden geleverd via een afzonderlijk invoegpakket.
 
 >[!NOTE]
 >
->AEM 6.4.8.0 bevat een nieuwe versie van het compatibiliteitspakket [voor](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT)AEM-formulieren. Als u een oudere versie van AEM Forms Compatibility Package gebruikt en een update naar AEM 6.4.8.0 uitvoert, installeert u de meest recente versie van AEM Forms Compatibility Package na de installatie van Forms Add-On Package.
+>AEM 6.4.8.0 bevat een nieuwe versie van het compatibiliteitspakket [voor](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/AEM-FORMS-6.4.7.0-COMPAT)AEM Forms. Als u een oudere versie van het compatibiliteitspakket voor AEM Forms gebruikt en een update naar AEM 6.4.8.0 uitvoert, installeert u de nieuwste versie van het compatibiliteitspakket voor AEM Forms na de installatie van het Forms Add-on-pakket.
 
 1. Controleer of u het AEM Service Pack hebt geïnstalleerd.
-1. Download het overeenkomstige formulierinvoegpakket dat in de [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem wordt vermeld.
+1. Download het overeenkomstige formulierinvoegpakket dat in [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem wordt vermeld.
 1. Installeer het formulierinvoegpakket zoals beschreven in [AEM-formulierinvoegpakketten](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage)installeren.
 
 ### AEM Forms JEE-installatieprogramma installeren {#install-aem-forms-jee-installer}
 
 >[!NOTE]
 >
->Sla dit over als u AEM Forms niet gebruikt op JEE. Correcties in AEM Forms JEE worden geleverd via een afzonderlijk installatieprogramma.
+>Sla dit over als u geen AEM Forms gebruikt op JEE. Oplossingen in JEE AEM Forms worden geleverd via een afzonderlijk installatieprogramma.
 
-Zie [AEM Forms JEE Patch Installer 0015 voor informatie over de installatie van het cumulatieve installatieprogramma voor AEM Forms JEE en de configuratie na de implementatie](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
+Voor informatie over het installeren van het cumulatieve installatieprogramma voor AEM Forms JEE en configuratie na-plaatsing, zie [AEM Forms JEE Patch Installer 0015](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0015.html).
 
 #### Voor NPR-21268 vereiste configuratie-instellingen {#configuration-settings-required-for-npr}
 
