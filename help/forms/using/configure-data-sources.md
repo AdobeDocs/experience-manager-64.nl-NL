@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: f614e0e47d12f6155364e498cf5fd04c777a25c4
 workflow-type: tm+mt
-source-wordcount: '1236'
+source-wordcount: '1311'
 ht-degree: 0%
 
 ---
@@ -49,7 +49,7 @@ U kunt relationele databases configureren met AEM Web Console Configuration. Ga 
    >
    >Zorg ervoor dat u gevoelige informatie zoals wachtwoorden codeert alvorens de gegevensbron te vormen. Coderen:
    >
-   >1. Ga naar `https://[server]:[port]/system/console/crypto`.
+   >1. Go to `https://[server]:[port]/system/console/crypto`.
    >1. Geef in het **[!UICONTROL Plain Text]** veld het wachtwoord of een tekenreeks op die u wilt versleutelen en klik op **[!UICONTROL Protect]**.
    >
    >De gecodeerde tekst wordt weergegeven in het veld Beveiligde tekst dat u in de configuratie kunt opgeven.
@@ -92,7 +92,7 @@ Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf
 
 De map configureren voor configuraties van cloudservices:
 
-1. Ga naar **[!UICONTROL Tools > General > Configuration Browser]**.
+1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer de **[!UICONTROL Configuration Browser]** map in de `global` map en tik op **[!UICONTROL Properties]**.
@@ -109,7 +109,7 @@ RESTful Webdienst kan worden beschreven gebruikend de specificaties [van de](htt
 
 Doe het volgende de diensten RESTful vormen:
 
-1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
    Zie Map [configureren voor configuraties](/help/forms/using/configure-data-sources.md#cloud-folder) van cloudservices voor informatie over het maken en configureren van een map voor configuraties van cloudservices.
 
@@ -125,7 +125,7 @@ Doe het volgende de diensten RESTful vormen:
 
 De op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend de specificaties [van de Beschrijving van de](https://www.w3.org/TR/wsdl)Diensten van het Web van de Taal (WSDL). Als u op SOAP gebaseerde webservice in AEM cloud services wilt configureren, controleert u of u de WSDL-URL voor de webservice hebt en voert u de volgende handelingen uit:
 
-1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
    Zie Map [configureren voor configuraties](/help/forms/using/configure-data-sources.md#cloud-folder) van cloudservices voor informatie over het maken en configureren van een map voor configuraties van cloudservices.
 
@@ -133,7 +133,11 @@ De op SOAP-Gebaseerde Webdiensten worden beschreven gebruikend de specificaties 
 1. Geef het volgende op voor de SOAP-webservice:
 
    * WSDL-URL voor de webservice.
-   * Selecteer het authentificatietype — niets, OAuth2.0, Basisauthentificatie, of de Authentificatie van de Douane — om tot de dienst van de ZEEP toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
+   * Service Endpoint. Specificeer een waarde op dit gebied om het de diensteindpunt met voeten te treden dat in WSDL wordt vermeld.
+   * Selecteer het authentificatietype — niets, OAuth2.0, BasisAuthentificatie, de Authentificatie van de Douane, of Token X509 — om tot de dienst van de ZEEP toegang te hebben, en dienovereenkomstig de details voor authentificatie te verstrekken.
+
+      Als u Token X509 als Type van Authentificatie selecteert, vorm het X509- certificaat. Zie [Certificaten](install-configure-document-services.md#set-up-certificates-for-reader-extension-and-encryption-service)instellen voor meer informatie.
+Geef in het **[!UICONTROL Key Alias]** veld de alias KeyStore voor het X509-certificaat op. Geef de tijd in seconden op totdat de verificatieaanvraag geldig blijft in het **[!UICONTROL Time To Live]** veld. Selecteer desgewenst om de berichttekst, de tijdstempelkop of beide te ondertekenen.
 
 1. Tik **[!UICONTROL Create]** om de cloudconfiguratie voor de SOAP-webservice te maken.
 
@@ -145,7 +149,7 @@ De dienst OData wordt geïdentificeerd door zijn de dienstwortel URL. Om de dien
 >
 >Voor geleidelijke gids om de Dynamica 365 van Microsoft, online of op-gebouw te vormen, zie de Configuratie [van OData van de Dynamica van](/help/forms/using/ms-dynamics-odata-configuration.md)Microsoft.
 
-1. Ga naar **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
+1. Go to **[!UICONTROL Tools > Cloud Services > Data Sources]**. Tik om de map te selecteren waarin u een cloudconfiguratie wilt maken.
 
    Zie Map [configureren voor configuraties](/help/forms/using/configure-data-sources.md#cloud-folder) van cloudservices voor informatie over het maken en configureren van een map voor configuraties van cloudservices.
 
