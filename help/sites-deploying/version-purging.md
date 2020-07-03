@@ -10,7 +10,10 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 56f36dcf-8fbd-43f8-bf74-e88d5b686160
 translation-type: tm+mt
-source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+source-git-commit: 0dced2f56fcebfb03fa6264e98cd686e8e7902c6
+workflow-type: tm+mt
+source-wordcount: '727'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats 
 
    * De maximumleeftijd van versies die in de opslagplaats worden bewaard.
 
-      Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de repository verwijderd.
+      Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de opslagplaats verwijderd.
 
 * de onderhoudstaak [Version Purge](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
 
@@ -97,7 +100,7 @@ De volgende opties zijn beschikbaar:
 
 >[!NOTE]
 >
->Het wordt niet aanbevolen een groot aantal versies in de opslagplaats te bewaren. Bij het configureren van de verwijderbewerking van de versie dient u dus niet te veel versies uit te sluiten van de opschoning, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Als u een groot aantal versies bewaart vanwege een zakelijke behoefte, neemt u contact op met de ondersteuning van Adobe om andere manieren te vinden om de grootte van de opslagplaats te optimaliseren.
+>Het wordt niet aanbevolen een groot aantal versies in de opslagplaats te bewaren. Bij het configureren van de verwijderbewerking van de versie dient u dus niet te veel versies uit te sluiten van de opschoning, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Neem contact op met de ondersteuning van Adobe om alternatieve manieren te vinden voor het optimaliseren van de grootte van de opslagplaats als u een groot aantal versies nodig hebt.
 
 ### Bewaaropties combineren {#combining-retention-options}
 
