@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: fa331c03-5587-452d-ab96-ac2926ae0da3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1087'
+ht-degree: 6%
 
 ---
 
@@ -84,7 +87,7 @@ Een vorige versie herstellen:
 
 1. Navigeer om de pagina weer te geven die u naar een vorige versie wilt terugkeren.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen. De paginaversies voor de geselecteerde pagina worden weergegeven.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**. De paginaversies voor de geselecteerde pagina worden weergegeven.
 1. Selecteer de versie waarnaar u wilt terugkeren. De mogelijke opties worden weergegeven:
 
    ![screen_shot_2018-03-21at155246](assets/screen_shot_2018-03-21at155246.png)
@@ -97,7 +100,7 @@ U kunt een voorvertoning van een specifieke versie weergeven:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt voorvertonen:
 
    ![screen_shot_2018-03-21at155330](assets/screen_shot_2018-03-21at155330.png)
@@ -116,7 +119,7 @@ Een vorige versie vergelijken met de huidige pagina:
 
 1. Navigeer om de pagina weer te geven die u wilt vergelijken.
 1. Selecteer de pagina in de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
-1. Open de kolom **Tijdlijn** en selecteer Alle **of** Versies **** tonen.
+1. Open de kolom **Tijdlijn** en selecteer **Alles weergeven** of **Versies**.
 1. De paginaversies worden weergegeven. Selecteer de versie die u wilt vergelijken:
 
    ![screen_shot_2018-03-21at155330](assets/screen_shot_2018-03-21at155330.png)
@@ -144,7 +147,7 @@ Timewarp is een [modus](/help/sites-authoring/author-environment-tools.md#page-m
 
    ![screen_shot_2018-03-21at155416](assets/screen_shot_2018-03-21at155416.png)
 
-1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op Datum **** instellen. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
+1. Stel in het dialoogvenster een doeldatum en -tijd in en klik of tik op **Datum instellen**. Als u geen tijd selecteert, wordt de huidige tijd standaard ingesteld.
 
    ![screen_shot_2018-03-21at155513](assets/screen_shot_2018-03-21at155513.png)
 
@@ -157,11 +160,11 @@ Timewarp is een [modus](/help/sites-authoring/author-environment-tools.md#page-m
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 
 * **Tijdlijnverdraaiing werkt op basis van gepubliceerde pagina** &#39;s. Tijdverdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
-* **Time-warp gebruikt paginaversies** - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
+* **Time-warp gebruikt paginaversies** - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies hebben invloed op Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp de juiste weergave niet weergeven.
 * **Tijdlijnverdraaiing is alleen** -lezen - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met terugzetten.
 * **De tijdverdraaiing is alleen gebaseerd op pagina-inhoud** . Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat deze oorspronkelijk was, aangezien deze items niet zijn geversieerd in de opslagplaats.
 
 >[!CAUTION]
 >
-> Timewarp is ontworpen als een hulpmiddel om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.
+>Timewarp is ontworpen als een hulpmiddel om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.
