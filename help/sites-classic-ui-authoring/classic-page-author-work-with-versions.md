@@ -10,7 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: ba74d3fb-063d-4bd6-a551-8e71ad6559e3
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '1379'
+ht-degree: 0%
 
 ---
 
@@ -36,8 +39,7 @@ Een nieuwe versie van een pagina maken:
 1. Als u een label wilt instellen op de versie (optioneel), klikt u op de knop **Meer >>** en stelt u het **label** in om de versie een naam te geven. Als het label niet is ingesteld, wordt de versie automatisch verhoogd.
 1. Klik op **Versie** maken. Er wordt een grijs bericht weergegeven op de pagina. bijvoorbeeld:
 
-   
-Versie 1.2 gemaakt voor: Hemden.
+   Versie 1.2 gemaakt voor: Hemden.
 
 >[!NOTE]
 >
@@ -75,7 +77,7 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 
 1. Navigeer in de **** websiteconsole naar de map die u wilt herstellen en selecteer deze.
 1. Selecteer in het bovenste menu **Gereedschappen** en **herstel**.
-1. **Structuur** herstellen selecteren... Hiermee opent u het dialoogvenster waarin u de structuur kunt selecteren die u wilt herstellen:
+1. Structuur **herstellen selecteren...** Hiermee opent u het dialoogvenster waarin u de structuur kunt selecteren die u wilt herstellen:
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
@@ -173,7 +175,7 @@ Als u de tijdlijn van het document wilt weergeven:
       In het onderstaande voorbeeld geeft de rode lijn aan dat de pagina is bewerkt tijdens het tijdsbestek van de eerste groene versie en de gele lijn geeft aan dat de pagina ergens in de rode versie is bewerkt, enzovoort.
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. Klik:
+1. Klik op:
 
    1. **Ga** naar om de inhoud van de gepubliceerde pagina op het geselecteerde tijdpunt weer te geven.
    1. Wanneer het tonen van die inhoud dan gebruik Tijdverdraaiing van de **Uitgang** om aan de huidige auteurspagina weg te gaan en terug te keren.
@@ -183,11 +185,11 @@ Als u de tijdlijn van het document wilt weergeven:
 Met Timewarp wordt het best geprobeerd een pagina op een geselecteerd punt in de tijd te reproduceren. Vanwege de complexiteit van het voortdurend ontwerpen van inhoud in AEM is dit echter niet altijd mogelijk. Deze beperkingen moeten in gedachten worden gehouden wanneer u Tijdverdraaiing gebruikt.
 
 * **Tijdlijnverdraaiing werkt op basis van gepubliceerde pagina** &#39;s. Tijdverdraaiing werkt alleen volledig als u de pagina eerder hebt gepubliceerd. Als dat niet het geval is, wordt de huidige pagina in de auteursomgeving weergegeven.
-* **Time-warp gebruikt paginaversies** - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als de oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
+* **Time-warp gebruikt paginaversies** - Als u naar een pagina navigeert die is verwijderd of verwijderd uit de opslagplaats, wordt deze correct weergegeven als oude versies van de pagina nog steeds beschikbaar zijn in de opslagplaats.
 * **Verwijderde versies hebben invloed op Timewarp** - Als versies uit de opslagplaats worden verwijderd, kan Timewarp de juiste weergave niet weergeven.
 * **Tijdlijnverdraaiing is alleen** -lezen - U kunt de oude versie van de pagina niet bewerken. Deze kan alleen worden weergegeven. Als u de oudere versie wilt herstellen, moet u dat handmatig doen met terugzetten.
 * **De tijdverdraaiing is alleen gebaseerd op pagina-inhoud** . Als elementen (zoals code, css, assets/images, enz.) voor het renderen van de website zijn gewijzigd, verschilt de weergave van wat deze oorspronkelijk was, aangezien deze items niet zijn geversieerd in de opslagplaats.
 
 >[!CAUTION]
 >
-> Timewarp is ontworpen als een hulpmiddel om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.
+>Timewarp is ontworpen als een hulpmiddel om auteurs te helpen bij het begrijpen en creëren van hun inhoud. Het is niet bedoeld als controlelogboek of voor juridische doeleinden.
