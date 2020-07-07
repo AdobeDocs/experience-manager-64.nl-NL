@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 8a612282df46f5f54ebe73c4b297eba6515ea35d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '4726'
+ht-degree: 0%
 
 ---
 
@@ -58,7 +61,7 @@ Voordat u begint met het configureren of coderen van uw component, moet u het vo
 Voordat een serieuze discussie begint met het ontwikkelen van componenten, moet u weten welke interface uw auteurs zullen gebruiken:
 
 * **Interface met aanraakbediening**
-   [De standaardgebruikersinterface](/help/sites-developing/touch-ui-concepts.md) die in AEM 5.6.0 als voorproef werd geïntroduceerd en in 6.x uitgebreid. De toepassing is gebaseerd op de ervaring van één gebruiker voor de Adobe Marketing Cloud, waarbij de onderliggende technologieën van de gebruikersinterface [van](/help/sites-developing/touch-ui-concepts.md#coral-ui) Coral en de gebruikersinterface [van](/help/sites-developing/touch-ui-concepts.md#granite-ui)Granite worden gebruikt.
+   [De standaardgebruikersinterface](/help/sites-developing/touch-ui-concepts.md) die in AEM 5.6.0 als voorproef werd geïntroduceerd en in 6.x uitgebreid. Het is gebaseerd op de verenigde gebruikerservaring voor de Adobe Marketing Cloud, gebruikend de onderliggende technologieën van [Koral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui) en [Granite UI](/help/sites-developing/touch-ui-concepts.md#granite-ui).
 
 * **Klassieke UI** Gebruikersinterface die op technologie ExtJS wordt gebaseerd die met CQ 5.1 werd geïntroduceerd.
 
@@ -69,9 +72,10 @@ Componenten kunnen worden geïmplementeerd ter ondersteuning van de interface me
 Daarom zullen we op deze pagina de basisbeginselen van beide, en hoe ze te herkennen, aan de orde stellen.
 
 >[!NOTE]
-> Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Modernination Tools&amp; (moderniatzion-tools.md) kan migratie gemakkelijker maken.
+>
+>Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Modernination Tools&amp; (moderniatzion-tools.md) kan migratie gemakkelijker maken.
 
-### Opmaak voor Content Logic en rendering {#content-logic-and-rendering-markup}
+### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
 
 Het wordt aanbevolen de code die verantwoordelijk is voor opmaak en rendering, gescheiden te houden van de code die de logica regelt die wordt gebruikt om de inhoud van de component te selecteren.
 
@@ -321,7 +325,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr> 
    <td><code>dialogPath</code></td> 
    <td><code>String</code></td> 
-   <td>Pad naar een dialoogvenster om het hoofdlettergebruik te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td> 
+   <td>Pad naar een dialoogvenster om het geval te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -583,7 +587,7 @@ De configuratie wordt gebruikt voor zowel de aanraakinterface als de klassieke g
 
 Het bewerkingsgedrag van een component wordt geconfigureerd door een `cq:editConfig` knooppunt van het type toe te voegen `cq:EditConfig` onder het componentknooppunt (van het type `cq:Component`) en door specifieke eigenschappen en onderliggende knooppunten toe te voegen. De volgende eigenschappen en onderliggende knooppunten zijn beschikbaar:
 
-* [ Eigenschappen `cq:editConfig` van](#configuring-with-cq-editconfig-properties)knooppunten:
+* [ `cq:editConfig` knoopeigenschappen](#configuring-with-cq-editconfig-properties):
 
    * `cq:actions` ( `String array`): definieert de handelingen die op de component kunnen worden uitgevoerd.
    * `cq:layout` ( `String`): : definieert hoe de component wordt bewerkt in de klassieke UI.
