@@ -9,7 +9,10 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -24,15 +27,15 @@ De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te
 
 Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken beheren.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >U moet lid zijn van de groep met gebruikers van de workflow om AEM Inbox te kunnen gebruiken.
 
 ## Toepassing maken {#create-application}
 
 1. Ga naar AEM Inbox om `https://[server]:[port]/aem/inbox`.
-1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Maken > Toepassing]**. De pagina Select Application (Toepassing selecteren) wordt weergegeven.
-1. Selecteer een toepassing en klik op **[!UICONTROL Maken]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de formulieren in en tik op **[!UICONTROL Verzenden]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
+1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Create > Application]**. De pagina Select Application (Toepassing selecteren) wordt weergegeven.
+1. Selecteer een toepassing en klik op **[!UICONTROL Create]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de formulieren in en tik op **[!UICONTROL Submit]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
 
 ## Taken beheren {#manage-tasks}
 
@@ -48,10 +51,10 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op **[!UICONTROL Delegeren]** om de taak te delegeren. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en tik op **[!UICONTROL OK]**.
+   * Tik op **[!UICONTROL Delegate]** om de taak te delegeren. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en tik op **[!UICONTROL OK]**.
    ![gedelegeerde](assets/delegate.png)
 
-   * Tik op **[!UICONTROL Openen]** om de taak op te eisen. Het dialoogvenster Toewijzen aan zelf wordt geopend. Tik op **[!UICONTROL Doorgaan]** om de taak op te eisen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
+   * Tik op **[!UICONTROL Open]** om de taak op te eisen. Het dialoogvenster Toewijzen aan zelf wordt geopend. Tik **[!UICONTROL Proceed]** om de taak op te eisen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
    ![vordering](assets/claim.png)
 
 ### Details weergeven en handelingen uitvoeren op taken {#view-details-and-perform-actions-on-tasks}
@@ -59,7 +62,7 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende werkstroom Formulieren.
 
 1. Tik om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de geselecteerde taak worden bovenaan weergegeven.
-1. Tik op **[!UICONTROL Openen]** om de taakdetails weer te geven en acties te ondernemen. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en acties ondernemen voor de taak.
+1. Tik **[!UICONTROL Open]** om taakdetails weer te geven en acties te ondernemen. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en acties ondernemen voor de taak.
 
    >[!NOTE]
    >
@@ -86,7 +89,7 @@ Op het tabblad Formulier in het hoofdinhoudsgebied worden het verzonden formulie
 
 Het tabblad Workflowdetails bovenaan geeft de voortgang van de taak in verschillende fasen van de workflow weer. Het toont voltooide, huidige, en hangende stadia voor de taak. De fasen voor een workflow worden gedefinieerd in de taakstap [](/help/sites-developing/workflows-step-ref.md) Toewijzen van de bijbehorende workflow.
 
-Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. Tik op Details **** weergeven voor een voltooid werkgebied om details over dat werkgebied te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
+Bovendien geeft het tabblad de taakgeschiedenis weer voor elk voltooid werkgebied in de workflow. U kunt tikken **[!UICONTROL View Details]** voor een voltooid werkgebied om details over dat werkgebied te kennen. Er worden opmerkingen, formulier- en taakbijlagen, status, begin- en einddatums enzovoort over de taak weergegeven.
 
 ![workflowdetails](assets/workflow-details.png)
 
@@ -101,11 +104,11 @@ Wanneer u de taak uitvoert, gaat deze verder in de workflow.
 In AEM Inbox worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status, begin- en einddatum enzovoort. Voltooide taken weergeven:
 
 1. Tik in AEM Inbox op ![schakelpaneel1](assets/toggle-side-panel1.png) om de filterkiezer te openen.
-1. Tik op Taakstatusaccordeon **[!UICONTROL en selecteer]** Voltooien ****. Alle voltooide taken worden weergegeven.
+1. Tik op **[!UICONTROL Task Status]** accordeon en selecteer **[!UICONTROL Complete]**. Alle voltooide taken worden weergegeven.
 
    ![filter-1](assets/filter-1.png)
 
-1. Tik om een taak te selecteren en klik op **[!UICONTROL Openen]**.
+1. Tik om een taak te selecteren en klik op **[!UICONTROL Open]**.
 
 De taak wordt geopend om het document of het adaptieve formulier weer te geven dat aan de taak is gekoppeld. Voor een adaptief formulier wordt het alleen-lezen adaptieve formulier of het bijbehorende PDF-document met record weergegeven, zoals geconfigureerd op het tabblad Formulier/Document van de stap [Werkstroom](/help/sites-developing/workflows-step-ref.md)toewijzen.
 
@@ -113,7 +116,7 @@ In de sectie met taakdetails wordt informatie weergegeven zoals de ondernomen ac
 
 ![voltooide taak](assets/completed-task.png)
 
-Op het tabblad **[!UICONTROL Workflowdetails]** wordt elke stap van de workflow weergegeven. Tik op Details **[!UICONTROL van]** weergave voor gedetailleerde informatie.
+Op het **[!UICONTROL Workflow Details]** tabblad ziet u elke stap van de workflow. Tik op **[!UICONTROL View details]** voor gedetailleerde informatie.
 
 ![voltooid-taak-werkschema](assets/completed-task-workflow.png)
 
