@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 96dc0c1a-b21d-480a-addf-c3d0348bd3ad
 translation-type: tm+mt
-source-git-commit: 9b7bab63c5c0b9a0a86289e895cd35a4df277e1e
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2331'
 ht-degree: 0%
@@ -225,11 +225,10 @@ Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de
 >1. `size`
    >
    >
-1. plus één of meer\
-   >   Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Buiten).
+1. plus één of meer
 >
-
-
+>   
+Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Buiten).
 
 #### Productverwijzingen en productgegevens {#product-references-and-product-data}
 
