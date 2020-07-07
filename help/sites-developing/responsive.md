@@ -11,7 +11,10 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '5329'
+ht-degree: 0%
 
 ---
 
@@ -29,11 +32,11 @@ Ontwerp uw webpagina&#39;s zodanig dat ze zich aanpassen aan de clientviewport w
 * Tekengrootte: Gebruik grotere tekstgrootte (indien van toepassing, zoals koppen) in grotere viewports.
 * Inhoud: Neem alleen de belangrijkste inhoud op wanneer u deze weergeeft op kleinere apparaten.
 * Navigatie: Er zijn apparaatspecifieke gereedschappen voor toegang tot andere pagina&#39;s.
-* Afbeeldingen: Uitvoerende afbeeldingsuitvoeringen die geschikt zijn voor de viewport van de client. afhankelijk van de afmetingen van het venster.
+* Images: Serving image renditions that are appropriate for the client viewport. afhankelijk van de afmetingen van het venster.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Ontwikkel de toepassingen van de Manager van de Ervaring van Adobe (AEM) die HTML5 pagina&#39;s produceren die zich aan veelvoudige venstergrootte en richtlijn aanpassen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
+Ontwikkel Adobe Experience Manager (AEM) toepassingen die HTML5 pagina&#39;s produceren die zich aan veelvoudige venstergrootte en richtlijn aanpassen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
 
 * Maximale breedte van 480 pixels (telefoon, staand)
 * Maximale breedte van 767 pixels (telefoon, liggend)
@@ -47,7 +50,7 @@ Zie de volgende onderwerpen voor informatie over het uitvoeren van ontvankelijk 
 * [Vloeiende rasters](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Adaptieve afbeeldingen](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Tijdens het ontwerpen kunt u **!UICONTROL Sidetrap gebruiken]**om een voorvertoning van uw pagina&#39;s weer te geven voor verschillende schermgrootten.
+Tijdens het ontwerpen kunt u uw pagina&#39;s voor verschillende schermgrootten voorvertonen. **!UICONTROL Sidekick]**
 
 ## Voordat u ontwikkelt {#before-you-develop}
 
@@ -104,32 +107,32 @@ In de volgende tabel worden de bestanden in de onderliggende css-map weergegeven
   <tr> 
    <td>responsive-1200px.css</td> 
    <td>Stijlen voor alle media die 1200 pixels breed of breder zijn.</td> 
-   <td><p><br /> @media (min-breedte): 1200 px) {<br /> ... }</p> </td> 
+   <td><p>@media (min-breedte): 1200 px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-980px-1199px.css</td> 
    <td>Stijlen voor media die tussen 980 pixels en 1199 pixels breed zijn.</td> 
-   <td><p><br /> @media (min-breedte): 980 px) en (max. breedte: 1199 px) {<br /> ... }</p> </td> 
+   <td><p>@media (min-breedte): 980 px) en (max. breedte: 1199 px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-768px-979px.css</td> 
    <td>Stijlen voor media die tussen 768 pixels en 979 pixels breed zijn. </td> 
-   <td><p><br /> @media (min-breedte): 768 px) en (max. breedte: 979 px) {<br /> ... }</p> </td> 
+   <td><p>@media (min-breedte): 768 px) en (max. breedte: 979 px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-767px-max.css</td> 
    <td>Stijlen voor alle media die minder dan 768 pixels breed zijn.</td> 
-   <td><p><br /> @media (maximale breedte: 767 px) {<br /> ... }</p> </td> 
+   <td><p>@media (maximale breedte: 767 px) {<br /> ...<br /> }</p> </td> 
   </tr> 
   <tr> 
    <td>responsive-480px.css</td> 
    <td>Stijlen voor alle media die minder dan 481 pixels breed zijn.</td> 
-   <td><br /> @media (maximale breedte: 480) {<br /> ... }</td> 
+   <td>@media (maximale breedte: 480) {<br /> ...<br /> }</td> 
   </tr> 
  </tbody> 
 </table>
 
-Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken worden opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
+Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken zijn opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
 
 `#base=css`
 
@@ -157,8 +160,8 @@ Neem de clientbibliotheekmap op in het JSP-script van uw paginacomponent om het 
 ```
 
 >[!NOTE]
-> In de map `apps.weretail.all` met clientbibliotheken wordt de clientlibs-bibliotheek ingesloten.
-
+>
+>In de map `apps.weretail.all` met clientbibliotheken wordt de clientlibs-bibliotheek ingesloten.
 
 Het JSP manuscript produceert de volgende code van HTML die verwijzingen de stijlbladen:
 
@@ -169,15 +172,15 @@ Het JSP manuscript produceert de volgende code van HTML die verwijzingen de stij
 
 ## Voorvertonen voor specifieke apparaten {#previewing-for-specific-devices}
 
-Bekijk voorvertoningen van uw pagina&#39;s in verschillende viewport grootten om het gedrag van uw responsieve ontwerp te testen. In de modus **[!UICONTROL Voorvertoning]** bevat **[!UICONTROL Sidetrap]** een vervolgkeuzemenu **[!UICONTROL Apparaten]** waarmee u een apparaat kunt selecteren. Wanneer u een apparaat selecteert, wordt de pagina aangepast aan het formaat van de viewport.
+Bekijk voorvertoningen van uw pagina&#39;s in verschillende viewport grootten om het gedrag van uw responsieve ontwerp te testen. In de **[!UICONTROL Preview]** modus **[!UICONTROL Sidekick]** bevat de menuoptie een **[!UICONTROL Devices]** vervolgkeuzelijst waarmee u een apparaat kunt selecteren. Wanneer u een apparaat selecteert, wordt de pagina aangepast aan het formaat van de viewport.
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
-Als u de voorvertoning van het apparaat wilt inschakelen in **[!UICONTROL Sidetrap]**, moet u de pagina en de service **[!UICONTROL MobileEmulatorProvider]** configureren. Een andere paginaconfiguratie controleert de lijst van apparaten die in de lijst van **[!UICONTROL Apparaten]** verschijnt.
+Als u de voorvertoning van het apparaat wilt inschakelen, moet u de pagina en de **[!UICONTROL Sidekick]****[!UICONTROL MobileEmulatorProvider]** service configureren. Een andere paginaconfiguratie controleert de lijst van apparaten die in de **[!UICONTROL Devices]** lijst verschijnt.
 
 ### De lijst met apparaten toevoegen {#adding-the-devices-list}
 
-De lijst **[!UICONTROL Apparaten]** wordt weergegeven in **[!UICONTROL Sidetrap]** wanneer uw pagina het JSP-script bevat dat de lijst **[!UICONTROL Apparaten]** weergeeft. Als u de lijst **[!UICONTROL Apparaten]** wilt toevoegen aan **[!UICONTROL Sidetrap]**, neemt u het `/libs/wcm/mobile/components/simulator/simulator.jsp` script op in de `head` sectie van de pagina.
+De **[!UICONTROL Devices]** lijst wordt weergegeven in **[!UICONTROL Sidekick]** wanneer uw pagina het JSP-script bevat waarmee de **[!UICONTROL Devices]** lijst wordt weergegeven. Als u de **[!UICONTROL Devices]** lijst wilt toevoegen aan **[!UICONTROL Sidekick]**, neemt u het `/libs/wcm/mobile/components/simulator/simulator.jsp` script op in de `head` sectie van de pagina.
 
 Neem de volgende code op in het JSP dat de `head` sectie definieert:
 
@@ -234,11 +237,11 @@ Gebruik de console van Hulpmiddelen om apparatengroepen [te](/help/sites-develop
 
 ## Aangepaste afbeeldingen gebruiken {#using-adaptive-images}
 
-U kunt mediaquery&#39;s gebruiken om een afbeeldingsbron te selecteren die u op de pagina wilt weergeven. Nochtans, wordt elk middel dat een media vraag gebruikt om zijn gebruik te conditionaliseren gedownload aan de cliënt. De mediaquery bepaalt alleen of de gedownloade bron wordt weergegeven.
+You can use media queries to select an image resource to display in the page. Nochtans, wordt elk middel dat een media vraag gebruikt om zijn gebruik te conditionaliseren gedownload aan de cliënt. De mediaquery bepaalt alleen of de gedownloade bron wordt weergegeven.
 
 Voor grote bronnen, zoals afbeeldingen, is het downloaden van alle bronnen geen efficiënt gebruik van de gegevenspijpleiding van de client. Om middelen selectief te downloaden, gebruik javascript om het middelverzoek in werking te stellen nadat de media vragen de selectie uitvoeren.
 
-De volgende strategie laadt één enkel middel dat gebruikend media vragen wordt gekozen:
+The following strategy loads a single resource that is chosen using media queries:
 
 1. Voeg een element DIV voor elke versie van het middel toe. Neem de URI van de bron op als de waarde van een kenmerkwaarde. De browser interpreteert het kenmerk niet als een bron.
 1. Voeg een mediaquery toe aan elk DIV-element dat geschikt is voor de bron.
@@ -298,7 +301,7 @@ Haal de volgende JavaScript-bibliotheken op en neem deze op in een clientbibliot
 * jquery.js (beschikbaar via de `/etc/clientlibs/granite/jquery` clientbibliotheekmap (categorie = jquery)
 * [jquery.debouncedresize.js](https://github.com/louisremi/jquery-smartresize) (een jQuery-gebeurtenis die één keer optreedt nadat de grootte van het venster is gewijzigd)
 
-**** Tip: U kunt automatisch meerdere clientbibliotheekmappen samenvoegen door deze in te [sluiten](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
+**Tip:** U kunt automatisch meerdere clientbibliotheekmappen samenvoegen door deze in te [sluiten](/help/sites-developing/clientlibs.md#embedding-code-from-other-libraries).
 
 **HTML**
 
@@ -433,7 +436,7 @@ Met de adaptieve afbeeldingscomponentserver wordt de grootte van een JPEG-afbeel
 
 #### De interface van de Adaptive Image Component Servlet {#the-interface-of-the-adaptive-image-component-servlet}
 
-De server voor adaptieve afbeeldingscomponenten is gebonden aan de standaard-Sling-server en ondersteunt de bestandsextensies .jpg, .jpeg, .gif en .png. De servletkiezer is img.
+De server voor adaptieve afbeeldingscomponenten is gebonden aan het standaard-Sling-servlet en ondersteunt de bestandsextensies .jpg, .jpeg, .gif en .png. De servletkiezer is img.
 
 >[!CAUTION]
 >
@@ -495,7 +498,7 @@ Voor informatie over hoe te om de diensten van AEM te vormen, zie het [Vormen OS
      <li>Als u een ondersteunde breedte wilt verwijderen, klikt u op de knop Bijbehorend -.</li> 
      <li>Als u een ondersteunde breedte wilt wijzigen, bewerkt u de waarde van het veld.</li> 
     </ul> </td> 
-   <td><p>adjust.supported.widths</p> 
+   <td><p>adapt.supported.widths</p> 
     <ul> 
      <li>De eigenschap is een multivalueerde tekenreekswaarde.</li> 
     </ul> </td> 
@@ -550,7 +553,7 @@ De klasse AdaptiveImageComponentServlet overschrijft ook de methode writeLayer. 
 
 ### Referentiewijzigingsservlet voor afbeelding (vaak geometrixx) {#image-reference-modification-servlet-geometrixx-common}
 
-Met de voorbeeldserver voor het wijzigen van afbeeldingsreferenties worden groottekenmerken voor het afbeeldingselement gegenereerd om een afbeelding op de webpagina te schalen.
+Met de voorbeeldserver voor het wijzigen van afbeeldingsreferenties worden groottekenmerken voor het img-element gegenereerd om een afbeelding op de webpagina te schalen.
 
 #### De servlet aanroepen {#calling-the-servlet}
 
@@ -655,8 +658,8 @@ De `AbstractImageServlet` klasse biedt de `doGet` methode die de HTTP-aanvraag v
 De `ImageReferenceModificationServlet` klasse negeert de `createLayer` methode en implementeert de logica die de afbeeldingsbron bepaalt die moet worden gerenderd. De methode haalt een onderliggend knooppunt van het `jcr:content` knooppunt van de pagina met de naam `image`. Er wordt een [afbeeldingsobject](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/foundation/Image.html) gemaakt van dit `image` knooppunt en de `getFileReference` methode retourneert het pad naar het afbeeldingsbestand vanuit de `fileReference` eigenschap van het afbeeldingsknooppunt.
 
 >[!NOTE]
+>
 >De [klasse com.day.cq.commons.DownloadResource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/DownloadResource.html) biedt de methode getFileReference.
-
 
 ## Een dynamisch raster ontwikkelen {#developing-a-fluid-grid}
 
@@ -696,9 +699,8 @@ De voorbeeldgeometrixx-media-toepassing bevat bijvoorbeeld de media-home-compone
 ```
 
 >[!NOTE]
-> 
+>
 >Wanneer een component veelvoudige `cq:include` elementen omvat die de parsys component van verwijzingen voorzien, moet elk `path` attribuut een verschillende waarde hebben.
-
 
 #### Het raster van de component Pagina schalen {#scaling-the-page-component-grid}
 
@@ -712,7 +714,7 @@ In het volgende voorbeeld is CSS een subset van deze stijlen. Deze ondergroep co
 
 >[!NOTE]
 >
->Met het voorbeeld Geometrixx Media wordt het javascript-framework [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) geïntegreerd in de dynamische rasterimplementatie. Het Bootstrap-framework biedt het bestand bootstrap.css.
+>Met het voorbeeld Geometrixx Media wordt het JavaScript-framework van [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) geïntegreerd in de dynamische rasterimplementatie. Het Bootstrap-framework biedt het bestand bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -771,7 +773,7 @@ Modulariseer uw componenten om efficiënt gebruik van de code te maken. Uw site 
 
 **Bedekkingen van pagina-componenten gebruiken**
 
-Maak een hoofdpaginacomponent met scripts voor het genereren van de verschillende delen van een pagina, zoals `head` en `body` secties, `header`, `content`en `footer` secties binnen de hoofdtekst.
+Maak een hoofdpaginacomponent die scripts biedt voor het genereren van de verschillende delen van een pagina, zoals `head` en `body` secties, `header`, `content`en `footer` secties binnen de hoofdtekst.
 
 Andere paginacomponenten maken die de hoofdpaginacomponent als `cq:resourceSuperType`de pagina gebruiken. Deze componenten omvatten manuscripten die de manuscripten van de belangrijkste pagina zonodig met voeten treden.
 
