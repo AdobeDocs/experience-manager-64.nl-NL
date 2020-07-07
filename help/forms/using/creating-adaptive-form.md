@@ -9,9 +9,9 @@ topic-tags: author
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f06b8cb2-6f98-465f-beec-1e91e3f45707
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
-source-wordcount: '1957'
+source-wordcount: '1953'
 ht-degree: 0%
 
 ---
@@ -66,7 +66,7 @@ Ga als volgt te werk om een adaptief formulier te maken.
 
    Zie [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md)voor informatie over de adaptieve ontwerpinterface en de beschikbare componenten.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >Laat pop-upvensters in uw browser het nieuwe formulier openen op een nieuw tabblad.
 
@@ -128,7 +128,7 @@ Ga als volgt te werk om het XML- of JSON-schema als formuliermodel voor een adap
 
    * **[!UICONTROL Upload from disk]** - Selecteer deze optie en tik op Schemadefinitie uploaden om een XML-schema of JSON-schema te zoeken en te uploaden vanuit uw bestandssysteem. Het geüploade schemabestand bevindt zich bij het formulier en is niet toegankelijk voor andere adaptieve formulieren.
    * **[!UICONTROL Search in repository]** - Selecteer deze optie om een keuze te maken uit de lijst met schemadefinitiebestanden in de gegevensopslagruimte. Selecteer het XML- of JSON-schemabestand als formuliermodel. Het geselecteerde schema wordt via verwijzing aan het formulier gekoppeld en is toegankelijk voor gebruik in andere adaptieve formulieren.
-   >[!CAUTION] {grayBox=&quot;true&quot;}
+   >[!CAUTION]
    >
    >Zorg ervoor dat de bestandsnaam van het JSON-schema eindigt met **.schema.json**. Bijvoorbeeld: mySchema.schema.json
 
