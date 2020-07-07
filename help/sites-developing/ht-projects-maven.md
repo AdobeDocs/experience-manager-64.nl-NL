@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 377922cc2ccf40a02467b17910a8750420202b61
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -34,11 +34,11 @@ Het bouwen van uw AEM-project op basis van Maven biedt u verschillende voordelen
 * Versnelling van de invoer in een IDE; bijvoorbeeld Eclipse en/of IntelliJ
 * Eenvoudige integratie met systemen voor continue integratie
 
-## Afhankelijkheden van Experience Manager API {#experience-manager-api-dependencies}
+## Experience Manager API-afhankelijkheden {#experience-manager-api-dependencies}
 
 ### Wat is de UberJar? {#what-is-the-uberjar}
 
-Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan een speciaal Java Archive-bestand (JAR) dat door Adobe wordt geleverd. Dit JAR-bestand bevat alle openbare Java API&#39;s die door Adobe Experience Manager worden weergegeven. Het omvat ook beperkte externe bibliotheken, met name alle openbare API&#39;s die in AEM beschikbaar zijn en afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, en twee bibliotheken die worden gebruikt voor beeldverwerking (de CYMK JPEG ImageIO-bibliotheek van Werner Randelshofer en de TwelveMonkeys-afbeeldingsbibliotheek). UberJar bevat slechts API interfaces en klassen, betekenend dat het slechts interfaces en klassen bevat die door een bundel OSGi in AEM worden uitgevoerd. Het bevatte ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, waarbij ervoor wordt gezorgd dat de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers hebben.
+Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan een speciaal Java Archive-bestand (JAR) dat door Adobe wordt geleverd. Dit JAR-bestand bevat alle openbare Java API&#39;s die door de Adobe Experience Manager worden weergegeven. Het omvat ook beperkte externe bibliotheken, met name alle openbare API&#39;s die in AEM beschikbaar zijn en afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, en twee bibliotheken die worden gebruikt voor beeldverwerking (de CYMK JPEG ImageIO-bibliotheek van Werner Randelshofer en de TwelveMonkeys-afbeeldingsbibliotheek). UberJar bevat slechts API interfaces en klassen, betekenend dat het slechts interfaces en klassen bevat die door een bundel OSGi in AEM worden uitgevoerd. Het bevatte ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, waarbij ervoor wordt gezorgd dat de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers hebben.
 
 ### Waarom heeft Adobe de UberJar gemaakt? {#why-did-adobe-create-the-uberjar}
 
@@ -100,7 +100,7 @@ Met UberJar, kunt u projectcode compileren die van AEM APIs (en APIs afhangt die
 
 ### Wat kan ik niet doen met de UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Aangezien UberJar **alleen** API&#39;s bevat, is het niet uitvoerbaar en kan het niet worden gebruikt om Adobe Experience Manager **uit te voeren** . Als u AEM wilt uitvoeren, hebt u de AEM QuickStart-indeling (Standalone of Web Application Archive, WAR) nodig.
+Omdat UberJar **slechts** APIs bevat, is het niet uitvoerbaar en kan niet worden gebruikt om Adobe Experience Manager in **werking te stellen** . Als u AEM wilt uitvoeren, hebt u de AEM QuickStart-indeling (Standalone of Web Application Archive, WAR) nodig.
 
 ### U noemde beperkingen op eenheidstests. Gelieve nader toe te lichten. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -553,6 +553,7 @@ Om schrapping van de klassen te bereiken die van JSPs worden gecompileerd, opste
 >
 >Bijvoorbeeld als u omvat `/libs/foundation/global.jsp`, kunt u de volgende configuratie voor `maven-resources-plugin` in plaats van de configuratie gebruiken waarboven volledig overslaat `/libs`.
 >
+>
 ```
 > <resource>  
 >           <directory>src/main/content/jcr_root</directory>  
@@ -672,8 +673,8 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 </profiles>
 ```
 
-### Hoe kan ik-werken met AEM-gemeenschappen {#how-to-work-with-aem-communities}
+### Werken met AEM Communities {#how-to-work-with-aem-communities}
 
-Als er een licentie voor de AEM Communities-mogelijkheid is, is een extra API-jar nodig.
+Als er een licentie voor de AEM Communities-functie is, is een extra API-jar nodig.
 
 Zie [Maven gebruiken voor Gemeenschappen voor meer informatie](/help/communities/maven.md)
