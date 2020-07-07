@@ -10,7 +10,7 @@ topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
@@ -25,7 +25,7 @@ Er zijn verschillende methoden beschikbaar voor het bijhouden van videogebeurten
 >[!NOTE]
 >
 >Controleer voordat u verdergaat of er een **afspeelbare video** is geüpload in AEM.
-> 
+>
 >Als u ervoor wilt zorgen dat uw video&#39;s op de pagina worden afgespeeld, raadpleegt u **[deze zelfstudie](/help/sites-authoring/default-components-foundation.md#video)**voor informatie over het transcoderen van videobestanden in AEM.
 
 Gebruik de volgende procedure om een framework voor het bijhouden van video&#39;s in te stellen met elke methode.
