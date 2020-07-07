@@ -10,7 +10,10 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 translation-type: tm+mt
-source-git-commit: 1d1914f760e3d77350665ab55025266e79d9f0fe
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '2178'
+ht-degree: 0%
 
 ---
 
@@ -313,8 +316,8 @@ Na het runnen van revisie schoonmaakbeurt op CRX3 instanties, zou u de Inzamelin
 >
 >Deze onderhoudstaak voorafgaand aan de upgrade is alleen nodig als:
 >
-> * U voert een upgrade uit vanaf AEM-versies die ouder zijn dan AEM 6.3
-> * Tijdens de upgrade worden de hieronder vermelde fouten aangetroffen.
+>* U voert een upgrade uit vanaf AEM-versies die ouder zijn dan AEM 6.3
+>* Tijdens de upgrade worden de hieronder vermelde fouten aangetroffen.
 
 
 Er zijn uitzonderlijke gevallen waarin servicegebruikers waarschijnlijk niet correct zijn gecodeerd als normale gebruikers in een oudere AEM-versie.
