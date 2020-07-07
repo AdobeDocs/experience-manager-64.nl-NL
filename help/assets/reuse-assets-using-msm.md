@@ -5,10 +5,10 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '3060'
-ht-degree: 9%
+ht-degree: 10%
 
 ---
 
@@ -107,7 +107,7 @@ U kunt de informatie en MSM-verwante status van levende exemplaar zoals verhoudi
 
 Voer de volgende stappen uit om de informatie en status van een live kopie van een element of een map te controleren.
 
-1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy]**. U kunt het pad van de bron, de status van de schorsing, de synchronisatiestatus, de laatste uitroldatum en de gebruiker die de laatste uitrol heeft uitgevoerd, controleren.
    ![Informatie en status van live kopieën](assets/lc_folder_properties.png)
 1. U kunt in- of uitschakelen als onderliggende elementen de configuratie van de live kopie lenen.
@@ -117,7 +117,7 @@ Voer de volgende stappen uit om de informatie en status van een live kopie van e
 
 AEM verstrekt een console om de beelden van alle levende exemplaren van een bronomslag te controleren. Deze console geeft de status van alle onderliggende elementen weer.
 
-1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen. Dit dashboard biedt een status op hoofdniveau van alle onderliggende assets.
    ![Statussen van live kopieën weergeven in Live Copy Console van bron](assets/lc_statuses.png)
 1. Selecteer een asset en klik op **[!UICONTROL Relationship Status]** op de werkbalk om de gedetailleerde informatie over elke asset in de map met livekopieën weer te geven.
@@ -165,8 +165,8 @@ Nadat een bron is gewijzigd, kunnen de wijzigingen aan de live kopieën worden d
 
 U kunt een rollout-actie starten vanuit het bronelement en alle of enkele geselecteerde live kopieën bijwerken.
 
-1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets gebruiken `p`.
-1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Rollout]** de werkbalk.
+1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets gebruiken `p`.
+1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Rollout]** op de werkbalk.
 1. Selecteer de live kopieën die u wilt bijwerken. Klik op **[!UICONTROL Rollout]**.
 1. Selecteer **[!UICONTROL Rollout Source and all Children]**als u de updates van de onderliggende elementen wilt uitvoeren.
    ![De wijzigingen van de bron doorvoeren in enkele of alle live kopieën](assets/lc_rollout_page.png)
@@ -223,7 +223,7 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in interface AEM, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
 
-1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets p gebruiken.
+1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets p gebruiken.
 1. Klik op **[!UICONTROL Live Copy]**. Click **[!UICONTROL Detach]** in the toolbar. Klik **[!UICONTROL Detach]** in het dialoogvenster dat wordt weergegeven.
    ![Handeling ontkoppelen verwijdert de relatie tussen bron en live kopie volledig](assets/lc_detach.png)
 
@@ -237,7 +237,7 @@ U kunt ook snel meerdere elementen in een live kopieermap loskoppelen van de **[
 
 Als een live-kopieermap meerdere elementen bevat, kan het lastig zijn acties op elk element te starten. U kunt de basishandelingen voor veel elementen snel initiëren met Live Copy Console. De bovenstaande methoden werken nog steeds voor afzonderlijke elementen.
 
-1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** de werkbalk. U kunt ook de sneltoets p gebruiken.
+1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets p gebruiken.
 1. Klik op Bron van live kopie. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen.
 1. Selecteer in dit dashboard een asset van een livekopie van een map met livekopieën. Klik op de gewenste acties op de werkbalk. The actions available are **[!UICONTROL Edit]**, **[!UICONTROL Synchronize]**, **[!UICONTROL Reset]**, **[!UICONTROL Suspend]**, and **[!UICONTROL Detach]**. U kunt deze handelingen snel uitvoeren op elk element in een willekeurig aantal mappen met live kopieën dat een live relatie heeft met de geselecteerde bronmap.
    ![U kunt gemakkelijk veel elementen in mappen met live kopieën bijwerken vanuit de overzichtsconsole van Live Copy](assets/lc_console_update_assets.png)
@@ -253,9 +253,9 @@ Met AEM kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor
 
 >[!NOTE]
 >
-> * Vervagen in MSM voor site wordt de Live Copy-bron in MSM voor middelen genoemd.
-> * Het verwijderen van de hoofdstukstap in de wizard Site maken wordt niet ondersteund in MSM for Assets.
-> * Het configureren van MSM-vergrendelingen op pagina-eigenschappen (interface met aanraakbediening) wordt niet ondersteund in MSM for Assets.
+>* Vervagen in MSM voor site wordt de Live Copy-bron in MSM voor middelen genoemd.
+>* Het verwijderen van de hoofdstukstap in de wizard Site maken wordt niet ondersteund in MSM for Assets.
+>* Het configureren van MSM-vergrendelingen op pagina-eigenschappen (interface met aanraakbediening) wordt niet ondersteund in MSM for Assets.
 
 
 ## Effect van taken inzake middelenbeheer op levende kopieën {#impact-of-asset-management-tasks-on-live-copies}
