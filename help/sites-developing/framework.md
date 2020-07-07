@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: eebb765465c90c0ede5957c8bf79a028e1b4f6ce
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -259,14 +259,17 @@ Hieronder volgt een beschrijving van de effecten in de opslagplaats bij het verp
 
 ## Tags migreren {#tags-migration}
 
-Vanaf Experience Manager 6.4 worden de tags onder opgeslagen `/content/cq:tags`, die eerder onder `/etc/tags`opgeslagen waren. In situaties waarin Adobe Experience Manager is bijgewerkt vanaf de vorige versie, zijn de labels echter nog steeds aanwezig op de oude locatie `/etc/tags`. In geüpgrade systemen moeten codes worden gemigreerd onder `/content/cq:tags`.
+Experience Manager 6.4 en later worden tags onder opgeslagen `/content/cq:tags`, die eerder onder `/etc/tags`. In scenario&#39;s waarin de Adobe Experience Manager is bijgewerkt vanaf de vorige versie, zijn de tags echter nog steeds aanwezig op de oude locatie `/etc/tags`. In geüpgrade systemen moeten codes worden gemigreerd onder `/content/cq:tags`.
 
-> [!NOTE]
-> In Pagina-eigenschappen van de tagpagina wordt aangeraden om tag-id te gebruiken (bijvoorbeeld `geometrixx-outdoors:activity/biking`) in plaats van het basispad van de tag hard te coderen (bijvoorbeeld `/etc/tags/geometrixx-outdoors/activity/biking`).
-> U kunt tags toevoegen aan een lijst `com.day.cq.tagging.servlets.TagListServlet` .
+>[!NOTE]
+>
+>In Pagina-eigenschappen van de tagpagina wordt aangeraden om tag-id te gebruiken (bijvoorbeeld `geometrixx-outdoors:activity/biking`) in plaats van het basispad van de tag hard te coderen (bijvoorbeeld `/etc/tags/geometrixx-outdoors/activity/biking`).
+>
+>U kunt tags toevoegen aan een lijst `com.day.cq.tagging.servlets.TagListServlet` .
 
-> [!NOTE]
-> Het wordt aangeraden de API voor tagbeheer als bron te gebruiken.
+>[!NOTE]
+>
+>Het wordt aangeraden de API voor tagbeheer als bron te gebruiken.
 
 **Als de bijgewerkte AEM-instantie de API van TagManager ondersteunt**
 
@@ -332,9 +335,9 @@ Het script haalt alle tags op die `/etc/tags` in de waarde van de `cq:movedTo/cq
 
 **Als de geüpgrade AEM-instantie wordt uitgevoerd op de klassieke UI**
 
-> [!NOTE]
-> Klassieke UI is niet nul onderbreking volgzaam en steunt geen nieuw weg van de markeringsbasis. Als u klassieke UI wilt gebruiken dan `/etc/tags` moet worden gecreeerd gevolgd door `cq-tagging` componentenherstart.
-
+>[!NOTE]
+>
+>Klassieke UI is niet nul onderbreking volgzaam en steunt geen nieuw weg van de markeringsbasis. Als u klassieke UI wilt gebruiken dan `/etc/tags` moet worden gecreeerd gevolgd door `cq-tagging` componentenherstart.
 
 In het geval van bijgewerkte AEM-instanties die worden ondersteund door de API van TagManager en worden uitgevoerd in de klassieke gebruikersinterface:
 
