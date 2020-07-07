@@ -7,7 +7,7 @@ uuid: 908806a9-b0d4-42d3-9fe4-3eae44cf4326
 topic-tags: installing
 discoiquuid: b53eae8c-16ba-47e7-9421-7c33e141d268
 translation-type: tm+mt
-source-git-commit: 4c99cf4852ea21a85013d8745ade48500110e58a
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '4183'
 ht-degree: 0%
@@ -254,10 +254,10 @@ Omgevingsvariabelen instellen voor 32-bits en 64-bits Java Development Kit, toep
 >* De omgevingsvariabele OpenOffice_PATH wordt ingesteld op de installatiemap in plaats van op het pad naar het uitvoerbare bestand.
 >* Stel geen omgevingsvariabelen in voor Microsoft Office-toepassingen zoals Word, PowerPoint, Excel en Project, of voor AutoCAD. Als deze toepassingen op de server zijn geïnstalleerd, worden deze toepassingen automatisch gestart door de service PDF genereren.
 >* Voor op UNIX-Gebaseerde platforms, installeer OpenOffice als /root. Als OpenOffice niet als hoofdmap is geïnstalleerd, converteert de service PDF Generator OpenOffice-documenten niet naar PDF-documenten. Als u OpenOffice als niet-wortelgebruiker moet installeren en in werking stellen, dan verstrek sudo rechten aan de niet-wortelgebruiker.
->* Als u OpenOffice op een UNIX-Gebaseerd platform gebruikt, stel het volgende bevel in werking om de wegvariabele te plaatsen:\
-   >  `export OpenOffice_PATH=/opt/openoffice.org4`
+>* Als u OpenOffice op een UNIX-Gebaseerd platform gebruikt, stel het volgende bevel in werking om de wegvariabele te plaatsen:
 >
-
+>  
+`export OpenOffice_PATH=/opt/openoffice.org4`
 
 
 ### (Alleen voor IBM WebSphere) IBM SSL-socketprovider configureren {#only-for-ibm-websphere-configure-ibm-ssl-socket-provider}
@@ -353,8 +353,7 @@ De service PDF genereren biedt WebKit, WebCapture en FhantomJS-routes of methode
 
 >[!NOTE]
 >
-> Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het exemplaar AEM Forms opnieuw.
-
+>Wanneer u nieuwe lettertypen in de map Fonts installeert, start u het exemplaar AEM Forms opnieuw.
 
 ### (Alleen op UNIX gebaseerde platforms) Extra configuraties voor conversie van HTML naar PDF  {#extra-configurations-for-html-to-pdf-conversion}
 
@@ -521,7 +520,7 @@ De primaire standaardroute voor conversie van HTML naar PDF is Webkit. U wijzigt
 Met het Betrouwbaarheidsopslagbeheer kunt u certificaten die u op de server vertrouwt, importeren, bewerken en verwijderen voor validatie van digitale handtekeningen en certificaatverificatie. U kunt om het even welk aantal certificaten invoeren en uitvoeren. Nadat een certificaat is geïmporteerd, kunt u de vertrouwensinstellingen bewerken en het type vertrouwde opslag vertrouwen. Voer de volgende stappen uit om een vertrouwde opslag te initialiseren:
 
 1. Meld u als beheerder aan bij de instantie AEM Forms.
-1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Trust Store]**.
+1. Go to  **[!UICONTROL Tools]** >  **[!UICONTROL Security]** >  **[!UICONTROL Trust Store]**.
 1. Klik op  **[!UICONTROL Create TrustStore]**. Stel het wachtwoord in en tik op **[!UICONTROL Save]**.
 
 ### Certificaten instellen voor Reader-extensie en -coderingsservice {#set-up-certificates-for-reader-extension-and-encryption-service}
@@ -541,7 +540,7 @@ Voordat u de certificaten instelt, moet u controleren of u beschikt over:
 
 Voer de volgende stappen uit om de certificaten te configureren:
 
-1. Meld u aan bij een AEM Author-instantie als beheerder. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
+1. Meld u aan bij een AEM Author-instantie als beheerder. Go to **[!UICONTROL Tools]** > **[!UICONTROL Security]** > **[!UICONTROL Users]**.
 1. Klik op het **[!UICONTROL name]** veld van de gebruikersaccount. The **[!UICONTROL Edit User Settings]** page opens. Op de instantie van de AEM Author, verblijven de certificaten in een KeyStore. Als u nog niet eerder een KeyStore hebt gemaakt, klikt u **[!UICONTROL Create KeyStore]** en stelt u een nieuw wachtwoord in voor de KeyStore. Als de server al een KeyStore bevat, slaat u deze stap over.  Als u het Adobe Reader Extensions-certificaat gebruikt, is het wachtwoord voor het sleutelarchiefbestand altijd hetzelfde als het wachtwoord voor de persoonlijke sleutel.
 1. Selecteer op de **[!UICONTROL Edit User Settings]** pagina de **[!UICONTROL KeyStore]** tab. Vouw de **[!UICONTROL Add Private Key from Key Store file]** optie uit en geef een alias op. De alias wordt gebruikt om de bewerking Reader Extensions uit te voeren.
 1. Als u het certificaatbestand wilt uploaden, klikt u op een bestand &lt;filename>.pfx **[!UICONTROL Select Key Store File]** en uploadt u dit.
