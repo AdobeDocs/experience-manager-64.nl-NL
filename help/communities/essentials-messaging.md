@@ -10,7 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 1%
 
 ---
 
@@ -108,12 +111,10 @@ Zie ook Aanpassingen aan de [clientzijde](client-customize.md)
 Bijvoorbeeld:
 >
 >
-```>
+```
 >valid: mb.setInboxPath( "/mail/inbox" );
 > not valid: mb.setInboxPath( "/mail/inbox/" );
->```>
-
-
+>```
 
 ### Community-site {#community-site}
 
@@ -130,18 +131,18 @@ Om het server-zijsteekproefmanuscript te proberen, zult u een ontwikkelomgeving 
 1. Aanmelden als beheerder ` [CRXDE|Lite](http://localhost:4502/crx/de)`
 1. Maak een `bundle node`insteekmodule `/apps/engage/install` met willekeurige namen, zoals
 
-   * **[!UICONTROL Symbolische naam]**: com.connect.media.social.messaging.MessagingNotification
-   * **[!UICONTROL Naam]**: Melding van zelfstudie aan de slag
-   * **[!UICONTROL Omschrijving]**: een voorbeeldservice voor het verzenden van een e-mailbericht naar gebruikers wanneer zij een bericht ontvangen
-   * **[!UICONTROL Pakket]**: `com.engage.media.social.messaging.notification`
+   * **[!UICONTROL Symbolic Name]**: com.connect.media.social.messaging.MessagingNotification
+   * **[!UICONTROL Name]**: Melding van zelfstudie aan de slag
+   * **[!UICONTROL Description]**: een voorbeeldservice voor het verzenden van een e-mailbericht naar gebruikers wanneer zij een bericht ontvangen
+   * **[!UICONTROL Package]**: `com.engage.media.social.messaging.notification`
 
-1. Navigeren naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
+1. Ga naar `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/src/main/java/com/engage/media/social/messaging/notification`
 
    1. De automatisch gemaakte `Activator.java` klasse verwijderen
    1. Klasse maken `MessageEventHandler.java`
    1. Kopieer/plak de onderstaande code in `MessageEventHandler.java`
 
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op **[!UICONTROL Save All]**
 1. Navigeer naar alle instructies voor importeren `/apps/engage/install/com.engage.media.social.messaging.MessagingNotification/com.engage.media.social.messaging.MessagingNotification.bnd` en voeg deze toe, zoals in de `MessageEventHandler.java` code is geschreven.
 1. De bundel maken
 1. Ervoor zorgen dat `Day CQ Mail Service`OSGi-service is geconfigureerd
