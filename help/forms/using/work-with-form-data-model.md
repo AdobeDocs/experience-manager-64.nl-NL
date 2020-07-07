@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 2ee45ac0-bc15-403a-93fc-c8592afb967d
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+workflow-type: tm+mt
+source-wordcount: '3051'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ De Integratie van gegevens verstrekt de modelredacteur van vormgegevens om met d
 
 ![](do-not-localize/data-integeration.png)
 
-De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om het behoorlijk met gegevensbronnen te verzekeren.
+De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om ervoor te zorgen het behoorlijk met gegevensbronnen wordt geïntegreerd.
 
 Als u nieuw bent voor de gegevensintegratie van Forms en geen gegevensbron hebt gevormd of een model van vormgegevens gecreeerd, zie de volgende onderwerpen:
 
-* [AEM Forms Data Integration](/help/forms/using/data-integration.md)
+* [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md)
 * [Gegevensbronnen configureren](/help/forms/using/configure-data-sources.md)
 * [Formuliergegevensmodel maken](/help/forms/using/create-form-data-models.md)
 
@@ -41,9 +44,9 @@ U kunt gegevensmodelvoorwerpen en de diensten van beschikbare gegevensbronnen in
 
 Objecten en services voor gegevensmodellen toevoegen:
 
-1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Formulieren > Gegevensintegratie]** en open het formuliergegevensmodel waarin u gegevensmodelobjecten wilt toevoegen.
+1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u gegevensmodelobjecten wilt toevoegen.
 1. In de ruit van Gegevensbronnen, breid gegevensbronnen uit om beschikbare voorwerpen en de diensten van het gegevensmodel te bekijken.
-1. Selecteer gegevensmodelobjecten en -services die u wilt toevoegen aan het formuliergegevensmodel en tik op Geselecteerde **** toevoegen.
+1. Selecteer gegevensmodelobjecten en -services die u wilt toevoegen aan het formuliergegevensmodel en tik op **[!UICONTROL Add Selected]**.
 
    ![selected-objects](assets/selected-objects.png)
 
@@ -51,7 +54,7 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    ![model-tab](assets/model-tab.png)
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
    >U kunt gegevensmodelobjectvakken vastzetten en slepen om ze in het inhoudsgebied te ordenen. Alle gegevensmodelobjecten die in het formuliergegevensmodel worden toegevoegd, worden grijs weergegeven in het deelvenster Gegevensbronnen.
 
@@ -63,11 +66,11 @@ Objecten en services voor gegevensmodellen toevoegen:
    >
    >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata)voor meer informatie.
 
-1. Tik op **[!UICONTROL Opslaan]** om het formuliermodelobject op te slaan.
+1. Tik **[!UICONTROL Save]** om het formuliermodelobject op te slaan.
 
-   >[!NOTE] {grayBox=&quot;true&quot;}
+   >[!NOTE]
    >
-   >U kunt services die u hebt geconfigureerd op het tabblad Services van een formuliergegevensmodel, aanroepen met behulp van de adaptieve formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
+   >U kunt services die u op het tabblad Services van een formuliergegevensmodel hebt geconfigureerd, aanroepen met behulp van de aangepaste formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
 
 ## Gegevensmodelobjecten en onderliggende eigenschappen maken {#create-data-model-objects-and-child-properties}
 
@@ -77,9 +80,9 @@ Terwijl u gegevensmodelvoorwerpen van gevormde gegevensbronnen kunt toevoegen, k
 
 Een gegevensmodelobject maken zonder gegevensbronnen:
 
-1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Formulieren > Gegevensintegratie]** en open het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
-1. Tik op Entiteit **** maken.
-1. Geef in het dialoogvenster Gegevensmodel maken een naam op voor het gegevensmodelobject en tik op **[!UICONTROL Toevoegen]**. Er wordt een gegevensmodelobject toegevoegd aan het formuliergegevensmodel. Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
+1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
+1. Tik op **[!UICONTROL Create Entity]**.
+1. Geef in het dialoogvenster Gegevensmodel maken een naam op voor het gegevensmodelobject en tik op **[!UICONTROL Add]**. Er wordt een gegevensmodelobject toegevoegd aan het formuliergegevensmodel. Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
 
    ![nieuwe entiteit](assets/new-entity.png)
 
@@ -91,14 +94,14 @@ Met de formuliergegevensmodeleditor kunt u onderliggende eigenschappen in een ge
 
 Een onderliggende eigenschap maken:
 
-1. Selecteer in een formuliergegevensmodel een gegevensmodelobject en tik op **[!UICONTROL Onderliggende eigenschap]** maken.
-1. Geef in het dialoogvenster **[!UICONTROL Onderliggende eigenschap]** maken een naam en gegevenstype voor de eigenschap op in respectievelijk de velden **[!UICONTROL Naam]** en **[!UICONTROL Type]** . U kunt desgewenst een titel en beschrijving voor de eigenschap opgeven.
+1. Selecteer in een formuliergegevensmodel een gegevensmodelobject en tik op **[!UICONTROL Create Child Property]**.
+1. Geef in het **[!UICONTROL Create Child Property]** dialoogvenster een naam en gegevenstype op voor de eigenschap in respectievelijk de velden **[!UICONTROL Name]** en **[!UICONTROL Type]** velden. U kunt desgewenst een titel en beschrijving voor de eigenschap opgeven.
 1. Schakel Berekend in als de eigenschap een berekende eigenschap is. De waarde van een berekende eigenschap wordt berekend op basis van een regel of expressie. Zie Eigenschappen [](#edit-properties)bewerken voor meer informatie.
 1. Als het gegevensmodelobject aan een gegevensbron is gebonden, wordt de toegevoegde onderliggende eigenschap automatisch gebonden aan de eigenschap van het bovenliggende gegevensmodelobject met dezelfde naam en hetzelfde gegevenstype.
 
-   Tik op het bladerpictogram naast het veld **[!UICONTROL Bindingsverwijzing]** om een onderliggende eigenschap handmatig te binden met een objecteigenschap van het gegevensmodel. In het dialoogvenster Object **** selecteren worden alle eigenschappen van het bovenliggende gegevensmodelobject weergegeven. Selecteer een eigenschap die u wilt binden en tik op het verdeelstreeppictogram. Merk op dat u slechts een bezit van het zelfde gegevenstype zoals het kindbezit kunt selecteren.
+   Tik op het bladerpictogram naast het **[!UICONTROL Bind Reference]** veld om een onderliggende eigenschap handmatig te binden met een objecteigenschap van het gegevensmodel. In het **[!UICONTROL Select Object]** dialoogvenster worden alle eigenschappen van het bovenliggende gegevensmodelobject weergegeven. Selecteer een eigenschap die u wilt binden en tik op het verdeelstreeppictogram. Merk op dat u slechts een bezit van het zelfde gegevenstype zoals het kindbezit kunt selecteren.
 
-1. Tik op **[!UICONTROL Gereed]** om de onderliggende eigenschap op te slaan en tik op **[!UICONTROL Opslaan]** om het formuliergegevensmodel op te slaan. De eigenschap child wordt nu toegevoegd aan het gegevensmodelobject.
+1. Tik **[!UICONTROL Done]** **[!UICONTROL Save]** om de onderliggende eigenschap op te slaan en tik om het formuliergegevensmodel op te slaan. De eigenschap child wordt nu toegevoegd aan het gegevensmodelobject.
 
 Nadat u gegevensmodelobjecten en -eigenschappen hebt gemaakt, kunt u doorgaan met het maken van adaptieve formulieren en interactieve communicatie op basis van het formuliergegevensmodel. Als u later gegevensbronnen beschikbaar en geconfigureerd hebt, kunt u het gegevensmodel van het formulier binden met gegevensbronnen. De binding wordt automatisch bijgewerkt in de bijbehorende adaptieve formulieren en interactieve communicatie. Zie Formuliergegevensmodel [gebruiken voor meer informatie over het maken van adaptieve formulieren en interactieve communicatie met behulp van het](/help/forms/using/using-form-data-model.md)formuliergegevensmodel.
 
@@ -107,13 +110,13 @@ Nadat u gegevensmodelobjecten en -eigenschappen hebt gemaakt, kunt u doorgaan me
 Wanneer de gegevensbronnen die u wilt integreren met het formuliergegevensmodel beschikbaar zijn, kunt u deze toevoegen aan het formuliergegevensmodel zoals beschreven in Gegevensbronnen [](/help/forms/using/create-form-data-models.md#update)bijwerken. Voer vervolgens de volgende handelingen uit om de niet-gebonden gegevensmodelobjecten en -eigenschappen te binden:
 
 1. Selecteer in het formuliergegevensmodel de niet-gebonden gegevensbron die u met een gegevensbron wilt binden.
-1. Tik op Eigenschappen **[!UICONTROL bewerken]**.
-1. Tik in het deelvenster Eigenschappen **** bewerken op het bladerpictogram naast het veld **[!UICONTROL Binding]** . Hiermee wordt het dialoogvenster Object **** selecteren geopend waarin de gegevensbronnen worden weergegeven die in het formuliergegevensmodel zijn toegevoegd.
+1. Tik op **[!UICONTROL Edit Properties]**.
+1. Tik in het **[!UICONTROL Edit Properties]** deelvenster op het bladerpictogram naast het **[!UICONTROL Binding]** veld. Hiermee wordt het **[!UICONTROL Select Object]** dialoogvenster geopend met gegevensbronnen die in het formuliergegevensmodel zijn toegevoegd.
 
    ![select-object](assets/select-object.png)
 
 1. Vouw de gegevensbronstructuur uit en selecteer een gegevensmodelobject om mee te binden en tik op het verdeelstreeppictogram.
-1. Tik op **[!UICONTROL Gereed]** om de eigenschappen op te slaan en tik vervolgens op **[!UICONTROL Opslaan]** om het formuliergegevensmodel op te slaan. Het gegevensmodelobject is nu gebonden aan een gegevensbron. Het gegevensmodelobject is niet meer gemarkeerd als Niet geconsolideerd.
+1. Tik **[!UICONTROL Done]** **[!UICONTROL Save]** om de eigenschappen op te slaan en tik vervolgens om het formuliergegevensmodel op te slaan. Het gegevensmodelobject is nu gebonden aan een gegevensbron. Het gegevensmodelobject is niet meer gemarkeerd als Niet geconsolideerd.
 
    ![bound-model-object](assets/bound-model-object.png)
 
@@ -121,7 +124,7 @@ Wanneer de gegevensbronnen die u wilt integreren met het formuliergegevensmodel 
 
 Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, doe het volgende om gelezen te vormen en de diensten te schrijven:
 
-1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en op Eigenschappen **** bewerken te tikken.
+1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en te tikken **[!UICONTROL Edit Properties]**.
 
    ![bewerken-eigenschappen](assets/edit-properties.png)
 
@@ -139,7 +142,7 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
    >
    >Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata)voor meer informatie over het gebruik van de service.
 
-1. Schakel Object **[!UICONTROL op]** hoogste niveau in-/uitschakelen om op te geven of het gegevensmodelobject een modelobject op hoofdniveau is.
+1. Schakel deze optie in **[!UICONTROL Top Level Object]** om op te geven of het gegevensmodelobject een modelobject op het hoogste niveau is.
 
    Gegevensmodelobjecten die zijn geconfigureerd in een formuliergegevensmodel, zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten in de inhoudbrowser van een adaptief formulier op basis van het formuliergegevensmodel. Wanneer u een koppeling toevoegt tussen twee gegevensmodelobjecten, wordt het gegevensmodelobject dat u koppelt, genest onder het gegevensmodelobject dat u koppelt op het tabblad Gegevensmodelobjecten. Als het geneste gegevensmodel een object op hoofdniveau is, wordt het ook afzonderlijk weergegeven op het tabblad Objecten gegevensmodel. Daarom ziet u twee items ervan, een binnen en een buiten de geneste hiërarchie, die verwarring kunnen veroorzaken bij auteurs van formulieren. Als u het gekoppelde gegevensmodelobject alleen in de geneste hiërarchie wilt weergeven, schakelt u de eigenschap Object op hoogste niveau uit.
 
@@ -159,7 +162,7 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
 
    Het id-argument binden om het kenmerk van het AEM-gebruikersprofiel leeg te maken
 
-1. Tik **[!UICONTROL op Gereed]** om het argument op te slaan, **[!UICONTROL Gereed]** om de eigenschappen op te slaan en **[!UICONTROL Opslaan]** om het formuliergegevensmodel op te slaan.
+1. Tik **[!UICONTROL Done]** om het argument op te slaan, **[!UICONTROL Done]** de eigenschappen op te slaan en vervolgens het gegevensmodel van het formulier op **[!UICONTROL Save]** te slaan.
 
 ## Koppelingen toevoegen {#add-associations}
 
@@ -167,13 +170,13 @@ Er zijn doorgaans koppelingen tussen gegevensmodelobjecten in een gegevensbron. 
 
 Wanneer u gekoppelde gegevensmodelobjecten in een gegevensbron toevoegt aan een formuliergegevensmodel, blijven de koppelingen behouden en worden ze weergegeven als verbonden door pijllijnen. In een formuliergegevensmodel kunt u koppelingen toevoegen tussen gegevensmodelobjecten in verschillende gegevensbronnen.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >Vooraf gedefinieerde koppelingen in een JDBC-gegevensbron blijven niet behouden in het formuliergegevensmodel. U moet ze handmatig maken.
 
 Een koppeling toevoegen:
 
-1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en op Koppeling **** toevoegen te tikken. Het dialoogvenster Koppeling toevoegen wordt geopend.
+1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en te tikken **[!UICONTROL Add Association]**. Het dialoogvenster Koppeling toevoegen wordt geopend.
 
    ![add-association](assets/add-association.png)
 
@@ -205,16 +208,16 @@ Een koppeling toevoegen:
 
    Bijgewerkt argument en binding
 
-   Tik op **[!UICONTROL Gereed]** om het argument op te slaan.
+   Tik **[!UICONTROL Done]** om het argument op te slaan.
 
-1. Tik op **[!UICONTROL Gereed]** om de koppeling op te slaan en **[!UICONTROL sla]** vervolgens op om het gegevensmodel van het formulier op te slaan.
+1. Tik **[!UICONTROL Done]** om de koppeling op te slaan en het formuliergegevensmodel op **[!UICONTROL Save]** te slaan.
 1. Herhaal de stappen om desgewenst meer koppelingen te maken.
 
->[!NOTE] {grayBox=&quot;true&quot;}
+>[!NOTE]
 >
 >De toegevoegde koppeling wordt in het vak met gegevensmodelobjecten weergegeven met de opgegeven titel en een regel die de bijbehorende gegevensmodelobjecten verbindt.
 >
->U kunt een koppeling bewerken door het desbetreffende selectievakje in te schakelen en op Associatie **** bewerken te tikken.
+>U kunt een koppeling bewerken door het desbetreffende selectievakje in te schakelen en op de koppeling te tikken **[!UICONTROL Edit Association]**.
 
 ![associatie met toegevoegde waarde](assets/added-association.png)
 
@@ -225,7 +228,7 @@ U kunt eigenschappen van gegevensmodelobjecten bewerken, de eigenschappen ervan 
 Eigenschappen bewerken:
 
 1. Schakel het selectievakje in naast een gegevensmodelobject, een eigenschap of een service in het formuliergegevensmodel.
-1. Tik op Eigenschappen **[!UICONTROL bewerken]**. Het deelvenster Eigenschappen **** bewerken voor het geselecteerde modelobject, de geselecteerde eigenschap of service wordt geopend.
+1. Tik op **[!UICONTROL Edit Properties]**. Het **[!UICONTROL Edit Properties]** deelvenster voor het geselecteerde modelobject, de geselecteerde eigenschap of service wordt geopend.
 
    * **Gegevensmodelobject**: Geef de lees- en schrijfservices op en bewerk argumenten.
    * **Eigenschap**: Geef het type, subtype en de indeling voor de eigenschap op. U kunt ook opgeven of de geselecteerde eigenschap de primaire sleutel voor het gegevensmodelobject is.
@@ -234,7 +237,7 @@ Eigenschappen bewerken:
 
    Dialoogvenster Eigenschappen bewerken voor een get-service
 
-1. Tik **[!UICONTROL op Gereed]** om eigenschappen op te slaan en **[!UICONTROL sla]** het formuliergegevensmodel op.
+1. Tik **[!UICONTROL Done]** om eigenschappen op te slaan en het formuliergegevensmodel op **[!UICONTROL Save]** te slaan.
 
 ### Berekende eigenschappen maken {#computed}
 
@@ -243,7 +246,7 @@ Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op ba
 U kunt bijvoorbeeld een berekende eigenschap **FullName** maken waarvan de waarde het resultaat is van een samenvoeging van de bestaande eigenschappen **FirstName** en **LastName** . Daartoe:
 
 1. Maak een nieuwe eigenschap met de naam `FullName` waarvan het gegevenstype String is.
-1. Schakel **[!UICONTROL Berekend]** in en tik op **[!UICONTROL Gereed]** om de eigenschap te maken.
+1. Schakel deze optie in **[!UICONTROL Computed]** en tik **[!UICONTROL Done]** om de eigenschap te maken.
 
    ![berekend](assets/computed.png)
 
@@ -251,18 +254,18 @@ U kunt bijvoorbeeld een berekende eigenschap **FullName** maken waarvan de waard
 
    ![berekend](assets/computed-prop.png)
 
-1. Selecteer de eigenschap FullName en tik op **[!UICONTROL Regel]** bewerken. Er wordt een regeleditorvenster geopend.
-1. Tik in het venster van de regeleditor op **[!UICONTROL Maken]**. Er wordt een venster **[!UICONTROL Waarderingsregel]** instellen geopend.
+1. Selecteer de eigenschap FullName en tik op **[!UICONTROL Edit Rule]**. Er wordt een regeleditorvenster geopend.
+1. Tik in het venster van de regeleditor op **[!UICONTROL Create]**. Er wordt een **[!UICONTROL Set Value]** regelvenster geopend.
 
-   Selecteer **[!UICONTROL Wiskundige expressie]** in het keuzemenu Optie selecteren. Andere beschikbare opties zijn Object **[!UICONTROL en]** tekenreeks **[!UICONTROL in het]** formuliergegevensmodel.
+   Selecteer in de vervolgkeuzelijst Optie selecteren **[!UICONTROL Mathematical Expression]**. Andere beschikbare opties zijn **[!UICONTROL Form Data Model Object]** en **[!UICONTROL String]**.
 
-1. Selecteer **[!UICONTROL Voornaam]** en **[!UICONTROL Achternaam]** in respectievelijk eerste en tweede object in de wiskundige expressie. Selecteer **[!UICONTROL plus]** als exploitant.
+1. Selecteer in de wiskundige expressie respectievelijk de eerste **[!UICONTROL FirstName]** en **[!UICONTROL LastName]** de tweede objecten. Selecteren **[!UICONTROL plus]** als operator.
 
-   Tik **[!UICONTROL Gereed]** en tik vervolgens op **[!UICONTROL Sluiten]** om het venster van de regeleditor te sluiten. De regel ziet er ongeveer als volgt uit.
+   Tik **[!UICONTROL Done]** en tik vervolgens **[!UICONTROL Close]** om het venster van de regeleditor te sluiten. De regel ziet er ongeveer als volgt uit.
 
    ![regel](assets/rule.png)
 
-1. Tik op **[!UICONTROL Opslaan]** in het formuliergegevensmodel. Het gegevens verwerkte bezit wordt gevormd.
+1. Tik op het formuliergegevensmodel **[!UICONTROL Save]**. Het gegevens verwerkte bezit wordt gevormd.
 
 ## Werken met navigatie-eigenschappen van OData-diensten {#work-with-navigation-properties-of-odata-services}
 
@@ -308,13 +311,13 @@ Zodra u de `GET LINK` dienst aan het lusje van de Diensten in het Model van de G
 
 >[!NOTE]
 >
->Welke waarden beschikbaar zijn in het veld **[!UICONTROL Standaardwaarde]** van het argument **NavigationPropertyName** is afhankelijk van de status van de array **[!UICONTROL Return?]** schakelknop. Als deze optie is ingeschakeld, worden navigatie-eigenschappen van het type Verzameling weergegeven.
+>De waarden beschikbaar op het **[!UICONTROL Default Value]** gebied van het argument **NavigationPropertyName** hangen van de staat van de **[!UICONTROL Return array?]** knevelknoop af. Als deze optie is ingeschakeld, worden navigatie-eigenschappen van het type Verzameling weergegeven.
 
-In dit voorbeeld kunt u het uitvoermodelobject ook kiezen als argument voor persoon- en navigatie-eigenschappen als Vrienden of BestFriend (afhankelijk van of de array **[!UICONTROL Return wordt weergegeven?]** is in- of uitgeschakeld).
+In dit voorbeeld kunt u het uitvoermodelobject ook kiezen als argument voor personen- en navigatie-eigenschappen als Vrienden of BestFriend (afhankelijk van of dit **[!UICONTROL Return array?]** is ingeschakeld of uitgeschakeld).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Op dezelfde manier kunt u een `GET LINK` dienst kiezen en zijn navigatie-eigenschappen vormen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt kunnen selecteren, zorgt u ervoor dat het veld **** Binding aan is ingesteld op **[!UICONTROL Letterlijk]**.
+Op dezelfde manier kunt u een `GET LINK` dienst kiezen en zijn navigatie-eigenschappen vormen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt kunnen selecteren, moet u controleren of de eigenschap is ingesteld op **[!UICONTROL Binding To field]** **[!UICONTROL Literal]**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -324,11 +327,11 @@ Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens genereren voor alle
 
 Ga als volgt te werk om voorbeeldgegevens te genereren en te bewerken:
 
-1. Open een formuliergegevensmodel en tik op Voorbeeldgegevens **** bewerken. De voorbeeldgegevens worden gegenereerd en weergegeven in het venster Voorbeeldgegevens bewerken.
+1. Open een formuliergegevensmodel en tik op **[!UICONTROL Edit Sample Data]**. De voorbeeldgegevens worden gegenereerd en weergegeven in het venster Voorbeeldgegevens bewerken.
 
    ![voorbeeldgegevens](assets/sample-data.png)
 
-1. Bewerk in het venster Voorbeeldgegevens **** bewerken de vereiste gegevens en tik op **[!UICONTROL Opslaan]**.
+1. Bewerk in **[!UICONTROL Edit Sample Data]** het venster de vereiste gegevens en tik op **[!UICONTROL Save]**.
 
 Vervolgens kunt u de voorbeeldgegevens gebruiken om interactieve communicatie vooraf in te vullen en te testen op basis van het gegevensmodel van het formulier. Zie Formuliergegevensmodel [](/help/forms/using/using-form-data-model.md)gebruiken voor meer informatie.
 
@@ -336,7 +339,7 @@ Vervolgens kunt u de voorbeeldgegevens gebruiken om interactieve communicatie vo
 
 Uw formuliergegevensmodel is geconfigureerd, maar voordat u het in gebruik neemt, wilt u wellicht testen of de geconfigureerde gegevensmodelobjecten en -services naar behoren werken. Objecten en services van gegevensmodellen testen:
 
-1. Selecteer een gegevensmodelobject of een service in het formuliergegevensmodel en tik respectievelijk op **[!UICONTROL Testmodelobject]** of **[!UICONTROL Testservice]**.
+1. Selecteer een gegevensmodelobject of een service in het formuliergegevensmodel en tik respectievelijk **[!UICONTROL Test Model Object]** of **[!UICONTROL Test Service]**.
 
    Het venster Formuliergegevensmodel testen wordt geopend.
 
@@ -344,7 +347,7 @@ Uw formuliergegevensmodel is geconfigureerd, maar voordat u het in gebruik neemt
 
 1. Selecteer in het venster Testformuliergegevensmodel het gegevensmodelobject of de gegevensservice die u wilt testen in het deelvenster Invoer.
 
-1. Geef een argumentwaarde op in de testcode en tik op **[!UICONTROL Testen]**. Een geslaagde test retourneert de uitvoer in het deelvenster Uitvoer.
+1. Geef een argumentwaarde op in de testcode en tik op **[!UICONTROL Test]**. Een geslaagde test retourneert de uitvoer in het deelvenster Uitvoer.
 
    ![testgegevensmodel-2](assets/test-data-model-2.png)
 
