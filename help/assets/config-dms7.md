@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 05595377d4a5f24e4f311e5c34f10e6dc964d35e
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '5139'
 ht-degree: 3%
@@ -26,9 +26,9 @@ Als u Adobe Experience Manager opstelling voor verschillende milieu&#39;s, zoals
 
 Het volgende architectuurdiagram beschrijft hoe de Dynamic Media - wijze Scene7 werken.
 
-Met de nieuwe architectuur, is AEM verantwoordelijk voor hoofdactiva en synchrone met Dynamic Media voor activa verwerking en het publiceren:
+Met de nieuwe architectuur is AEM verantwoordelijk voor master activa en synchronisaties met Dynamic Media voor activaverwerking en het publiceren:
 
-1. Wanneer het hoofdelement naar AEM wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment worden door Dynamic Media alle processen voor het verwerken en genereren van elementen verwerkt, zoals videocodering en dynamische varianten van een afbeelding.
+1. Wanneer het master element naar AEM wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment worden door Dynamic Media alle processen voor het verwerken en genereren van elementen verwerkt, zoals videocodering en dynamische varianten van een afbeelding.
 1. Nadat de vertoningen worden geproduceerd, kan AEM veilig tot de verre vertoningen van Dynamic Media toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de instantie AEM).
 1. Nadat de inhoud klaar is om te worden gepubliceerd en goedgekeurd, brengt het de dienst van Dynamic Media teweeg om inhoud uit te duwen aan leveringsservers en geheim voorgeheugeninhoud bij CDN.
 
@@ -40,7 +40,7 @@ Met de nieuwe architectuur, is AEM verantwoordelijk voor hoofdactiva en synchron
 
 >[OPMERKING]
 >
-> Dynamic Media - de wijze Scene7 is voor de instantie van AEM Author slechts. Als dusdanig, moet u `runmode=dynamicmedia_scene7`op de instantie van AEM Author vormen, niet de instantie van AEM Publish.
+>Dynamic Media - de wijze Scene7 is voor de instantie van AEM Author slechts. Als dusdanig, moet u `runmode=dynamicmedia_scene7`op de instantie van AEM Author vormen, niet de instantie van AEM Publish.
 
 Om Dynamic Media toe te laten, moet u AEM opstarten gebruikend `dynamicmedia_scene7` runmode van de bevellijn door het volgende in te gaan in een eindvenster (gebruikte voorbeeldhaven is 4502):
 
@@ -107,7 +107,7 @@ Om Dynamic Media Cloud Servicen te vormen:
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tik op **[!UICONTROL Save]**.
-1. Als u de inhoud van Dynamic Media veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM-auteur-instantie &#39;toestaan&#39; om verbinding te maken met Dynamic Media:
+1. Als u de inhoud van Dynamic Media veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM-auteurinstantie &quot;lijsten van gewenste personen&quot; om verbinding te maken met Dynamic Media:
 
    * Meld u aan bij uw Klassieke account voor Dynamic Media: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Adobe heeft uw gegevens en aanmeldingsgegevens opgegeven op het moment van de provisioning. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
    * Tik op de navigatiebalk rechts boven aan de pagina **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
