@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 1%
@@ -29,7 +29,7 @@ Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementa
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
 >* Zorg ervoor dat u de nieuwste versie van het invoegpakket AEM Forms hebt geïnstalleerd. Raadpleeg het artikel over releases van [AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor de lijst met beschikbare pakketten.
-> * Het voorbeeldpakket werkt alleen met verzendacties voor Adaptieve formulieren.
+>* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptieve formulieren.
 
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}
@@ -401,7 +401,7 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
    >
    >Het script is bedoeld voor een component van de box-widget voor bijlagen (OOTB). Als u de OOTB gehechtheidswidget hebt aangepast dan verander het bovengenoemde manuscript om respectieve veranderingen op te nemen.
 
-1. Voeg de volgende eigenschap toe aan de map die u in stap 2 hebt gemaakt en klik op **[!UICONTROL Save All]**.
+1. Voeg de volgende eigenschap toe aan de map die in stap 2 is gemaakt en klik op **[!UICONTROL Save All]**.
 
    * **[!UICONTROL Name:]** categorieën
 
