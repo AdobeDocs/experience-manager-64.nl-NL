@@ -10,7 +10,10 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+workflow-type: tm+mt
+source-wordcount: '1706'
+ht-degree: 3%
 
 ---
 
@@ -23,7 +26,7 @@ Leer hoe u de toonaangevende curatiemogelijkheden van Livefy met uw AEM 6.4-exem
 
 ### Livefyre Package installeren voor AEM {#install-livefyre-package-for-aem}
 
-AEM 6.4 wordt geleverd met het Livefyre-functiepakket 1.2.6 vooraf geïnstalleerd. Dit pakket bevat alleen beperkte Livefyre-integratie met AEM-sites en moet worden verwijderd voordat een bijgewerkt pakket kan worden geïnstalleerd. Met het nieuwste pakket kunt u de volledige integratie van Livefyre met AEM ervaren, inclusief Sites, Assets en Commerce.
+AEM 6.4 wordt geleverd met het Livefyre-functiepakket 1.2.6 vooraf geïnstalleerd. Dit pakket bevat alleen beperkte Livefyre-integratie met AEM Sites en moet worden verwijderd voordat een bijgewerkt pakket kan worden geïnstalleerd. Met het nieuwste pakket kunt u de volledige integratie van Livefyre met AEM ervaren, inclusief Sites, Assets en Commerce.
 
 >[!NOTE]
 >
@@ -107,13 +110,13 @@ De standaardintegratie voor verificatie is mogelijk niet perfect voor elke site.
 
    Voor meer informatie over Clientlibs AEM, zie het [Gebruiken van Cliënt-zij Bibliotheken](https://helpx.adobe.com/experience-manager/6-3/sites/developing/using/clientlibs.html).
 
-## Livefyre gebruiken met AEM-sites {#use-livefyre-with-aem-sites}
+## Livefyre gebruiken met AEM Sites {#use-livefyre-with-aem-sites}
 
 ### LiveCycle-componenten aan een pagina toevoegen {#add-livefyre-components-to-a-page}
 
 Voordat u LiveCycle-componenten aan een pagina binnen Sites toevoegt, moet u LiveCycle voor de pagina inschakelen door een LiveCycle-cloudconfiguratie van een bovenliggende pagina over te nemen of door de configuratie rechtstreeks aan de pagina toe te voegen. Raadpleeg uw implementatie voor informatie over het opnemen van cloudservices op uw site.
 
-Nadat LiveCycle is ingeschakeld voor de pagina, moeten containers zijn geconfigureerd om Livefyre-componenten toe te staan. Zie Componenten [configureren in ontwerpmodus](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/default-components-designmode.html) voor instructies over het inschakelen van verschillende componenten.
+Nadat Livefyre is ingeschakeld voor de pagina, moeten containers zijn geconfigureerd om Livefyre-componenten toe te staan. Zie Componenten [configureren in ontwerpmodus](https://helpx.adobe.com/experience-manager/6-3/sites/authoring/using/default-components-designmode.html) voor instructies over het inschakelen van verschillende componenten.
 
 >[!NOTE]
 >
@@ -139,17 +142,17 @@ U kunt een component Livefyre in Studio slechts vormen en uitgeven Livefyre. Van
 1. Klik **om deze component uit te geven, ga naar LiveCycle Studio**.
 1. Bewerk de app in LiveCyre Studio.
 
-## Livefyre gebruiken met AEM-middelen {#use-livefyre-with-aem-assets}
+## Livefyre gebruiken met AEM Assets {#use-livefyre-with-aem-assets}
 
-### Rechten aanvragen en UGC importeren in AEM-middelen {#request-rights-and-import-ugc-into-aem-assets}
+### Rechten aanvragen en UGC importeren in AEM Assets {#request-rights-and-import-ugc-into-aem-assets}
 
-Met de UGC-importmodule kunt u Twitter- en Instagram door gebruikers gegenereerde inhoud (UGC) vanuit LiveCyre Studio importeren in AEM-middelen. Nadat u de inhoud hebt geselecteerd die u wilt importeren, moet u eerst rechten op de inhoud aanvragen voordat het importeren kan worden voltooid.
+Met de UGC-importmodule kunt u Twitter- en Instagram door gebruikers gegenereerde inhoud (UGC) vanuit LiveCycle Studio naar AEM Assets importeren. Nadat u de inhoud hebt geselecteerd die u wilt importeren, moet u eerst rechten op de inhoud aanvragen voordat het importeren kan worden voltooid.
 
 >[!NOTE]
 >
->Voordat u middelen kunt gebruiken om UGC te importeren, moet u accounts voor sociale accounts en verzoeken om rechten instellen in LiveCycle Studio. Zie [Instelling: Rechten Verzoeken](https://marketing.adobe.com/resources/help/en_US/livefyre/c_how_requesting_rights_works.html) om meer informatie.
+>Voordat u middelen kunt gebruiken om UGC te importeren, moet u accounts voor sociale accounts en verzoeken om rechten instellen in LiveCycle Studio. Zie [Instelling: Rechten Verzoeken](https://docs.adobe.com/content/help/en/livefyre/using/rights-requests/c-how-requesting-rights-works.html) om meer informatie.
 
-UGC importeren in AEM-elementen:
+U kunt als volgt UGC in AEM Assets importeren:
 
 1. Navigeer vanaf de AEM-startpagina naar **Middelen > Bestanden**.
 1. Klik op **Maken** en vervolgens op **UGC importeren.**
@@ -163,7 +166,7 @@ UGC importeren in AEM-elementen:
 
 1. Selecteer de elementen die u wilt importeren. De elementen die u selecteert, worden automatisch geteld en onder het tabblad **Geselecteerd** opgeslagen.
 1. **Optioneel**: Klik op het tabblad **Geselecteerd** en bekijk de geselecteerde UGC-inhoud die u wilt importeren.
-1. Click **Next**.
+1. Klik op **Next**.
 
    ![livefyre-aem-import-ugc2](assets/livefyre-aem-import-ugc2.png)
 
@@ -173,6 +176,7 @@ UGC importeren in AEM-elementen:
 
    * **Handmatig om rechten** vragen om een bericht te verkrijgen dat via Instagram kan worden gekopieerd en geplakt en handmatig naar de eigenaars van de inhoud kan worden verzonden.
    * **Rechten** voor inhoud handmatig bepalen om de rechten voor afzonderlijke elementen te overschrijven.
+
    >[!NOTE]
    >
    >Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakelijke gebruikersaccounts, kunnen we geen opmerkingen meer namens u plaatsen of automatisch controleren op antwoorden van de auteur. [Klik hier voor meer](https://developers.facebook.com/blog/post/2018/04/04/facebook-api-platform-product-changes/)informatie.
@@ -197,7 +201,7 @@ UGC importeren in AEM-elementen:
 
 1. Klik op **Gereed** in de rechterbovenhoek om de workflow voor het aanvragen van rechten te voltooien.
 
-   U kunt de status zien van een aanvraag voor rechten in behandeling voor een middel in LiveCyre Studio. Als de inhoud in afwachting is van een verzoek om rechten, wordt het element pas weergegeven in AEM Assets nadat rechten zijn verleend. Het element wordt automatisch weergegeven in AEM Assets wanneer een aanvraag voor rechten wordt toegekend.
+   U kunt de status zien van een aanvraag voor rechten in behandeling voor een middel in LiveCyre Studio. Als de inhoud in afwachting is van een verzoek om rechten, wordt het element pas in AEM Assets weergegeven als de rechten zijn verleend. Het element wordt automatisch weergegeven in AEM Assets wanneer een aanvraag voor rechten wordt ingewilligd.
 
    Voor Instagram moet u het antwoord van de eigenaar van de inhoud volgen en handmatig rechten verlenen als u rechten hebt op de inhoud.
 
