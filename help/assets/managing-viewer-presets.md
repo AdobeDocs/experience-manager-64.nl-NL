@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
 workflow-type: tm+mt
 source-wordcount: '4105'
 ht-degree: 9%
@@ -102,7 +102,7 @@ Beheerders kunnen de volgende rich media-typen toevoegen en aanpassen bij het ma
 
 In de volgende tabel worden alle vooraf gedefinieerde, buitenste viewervoorinstellingen weergegeven die bij Dynamic Media worden geleverd.
 
-Zie ook <!-- [SAVE THIS REFERENCE Viewers Reference Library Examples](https://marketing.adobe.com/resources/help/en_US/s7/vlist/vlist.html) and --> [Live demo&#39;s](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
+Zie ook [Live demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/live-demos.html).
 
 Voor informatie over ondersteunde webbrowsers en besturingssysteemversies voor Viewers kunt u de Opmerkingen bij de release Viewers bekijken.
 
