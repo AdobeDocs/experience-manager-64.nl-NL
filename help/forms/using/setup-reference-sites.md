@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '2755'
+source-wordcount: '2752'
 ht-degree: 0%
 
 ---
@@ -219,12 +219,12 @@ Geef in de AEM DS Settings Service voor AEM Forms-referentiesites de URL van de 
 
 ## Referentiesites implementeren {#refsite}
 
-Installeer de volgende pakketten met referentiesites met gebruik van pakketdeling.
+Installeer de volgende referentiesites met gebruik van Software Distribution.
 
 * [AEM-FORMS-6.4-FSI-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-FSI-REF-SITE)
 * [AEM-FORMS-6.4-GOV-REF-SITE](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-GOV-REF-SITE)
 
-Meer over hoe te om pakketten en pakketaandeel te gebruiken, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
+Meer over hoe te om pakketten te gebruiken, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
 
 Nadat u de pakketten hebt geïnstalleerd en de auteur hebt gestart en exemplaren hebt gepubliceerd, gaat u naar de volgende URL&#39;s in uw browser:
 
@@ -270,7 +270,7 @@ Vorm de OAuth wolkendienst in AEM Forms om communicatie tussen AEM Forms en de D
 1. Ga naar Microsoft Azure Active Directory-account. Voeg de gekopieerde URL voor de configuratie van de cloudservice toe aan de **[!UICONTROL Reply URL]** instelling voor uw geregistreerde toepassing. Sla de configuratie op.
 1. Op het lusje van de Montages van de Authentificatie, specificeer **[!UICONTROL Service Root]**, **[!UICONTROL Client Id]**, **[!UICONTROL Client Secret]** en **[!UICONTROL Resource URL]** voor uw instantie van de Dynamiek van Microsoft. Klik **[!UICONTROL Connect to OAuth]** die aan de login van de Dynamica van Microsoft pagina opnieuw richt.
 1. Geef uw aanmeldingsgegevens op. Nadat u zich hebt aangemeld, wordt u omgeleid naar de configuratiepagina van de cloudservice van AEM Forms. Klik op **[!UICONTROL Save & Close]**. De configuratie van de cloudservice wordt opgeslagen.
-1. Ga naar **[!UICONTROL Forms > Data Integrations > We.Finance]**. Selecteer Automatische verzekering (dynamiek) en klik op Bewerken. De entiteiten van de Dynamiek van Microsoft zijn vermeld onder de Bronnen van Gegevens tabel. Wacht tot alle entiteiten van de Dynamiek van Microsoft worden opgehaald en onder de gegevensbronnen tabel worden vermeld.
+1. Go to **[!UICONTROL Forms > Data Integrations > We.Finance]**. Selecteer Automatische verzekering (dynamiek) en klik op Bewerken. De entiteiten van de Dynamiek van Microsoft zijn vermeld onder de Bronnen van Gegevens tabel. Wacht tot alle entiteiten van de Dynamiek van Microsoft worden opgehaald en onder de gegevensbronnen tabel worden vermeld.
 1. Select the **[!UICONTROL AutoInsuranceRenewal entity]** and click **[!UICONTROL Test Model Object]**. Geef in de sectie met invoerverzoeken de waarde voor de klant-id op als &quot;900001&quot; en klik op **[!UICONTROL Test]**. De sectie van de Output toont de verslagen die van de Dynamica van Microsoft voor klantenidentiteitskaart 900001 worden gehaald.
 1. Geef in de sectie met invoerverzoeken de waarde voor de klant-id op als &quot;900001&quot; en klik op **[!UICONTROL Test]**. De sectie van de Output toont de verslagen die van de Dynamica van Microsoft voor klantenidentiteitskaart 900001 worden gehaald.
 1. Herhaal stap 1-6 op de publicatie-instantie.
@@ -293,7 +293,7 @@ Doe het volgende op zowel auteur als publicatieinstanties:
 
 Doe het volgende op zowel auteur als publicatieinstanties:
 
-1. Ga naar **[!UICONTROL Tools > Cloud Services > Adobe Sign > global]**. Selecteer **[!UICONTROL AEM Forms Reference Site Sign]** en tik op **[!UICONTROL Properties]**.
+1. Go to **[!UICONTROL Tools > Cloud Services > Adobe Sign > global]**. Selecteer **[!UICONTROL AEM Forms Reference Site Sign]** en tik op **[!UICONTROL Properties]**.
 
    >[!CAUTION]
    >
@@ -351,7 +351,8 @@ Om een rapport te produceren, worden de zaadgegevens gebundeld met de verwijzing
 
    * Open de map We.Finance of We.Gov en selecteer het formulier waarvoor u het rapport wilt weergeven.
    * Klik op Analytics inschakelen op de werkbalk Handelingen. Nadat u analyses voor het formulier hebt ingeschakeld, klikt u op Analytics-rapport. Er wordt een leeg rapport gegenereerd. Nadat een leeg rapport wordt geproduceerd, moet u zaadgegevens verstrekken die van refsite pakket worden verscheept om analytische rapport voor demodoel te produceren.
-   Referentiesites bieden analyses die gegevens bevatten over de aanvraag van een creditcard, hypotheek op woningen en gebruik van kinderondersteuning. Voor configuratie van zaadgegevens, zie [Wij.Finance de walkthrough](/help/forms/using/finance-reference-site-walkthrough.md) van de verwijzingsplaats en [Wij.Gov de walkthrough](/help/forms/using/gov-reference-site-walkthrough.md)van de verwijzingsplaats.
+
+   Referentiesites bieden analyses die gegevens bevatten over de aanvraag van een creditcard, de hypotheek op woningen en de gebruiksgevallen van kinderondersteuning. Voor configuratie van zaadgegevens, zie [Wij.Finance de walkthrough](/help/forms/using/finance-reference-site-walkthrough.md) van de verwijzingsplaats en [Wij.Gov de walkthrough](/help/forms/using/gov-reference-site-walkthrough.md)van de verwijzingsplaats.
 
 ### Target configureren {#configure-target}
 
