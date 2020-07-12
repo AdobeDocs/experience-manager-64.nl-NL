@@ -8,9 +8,9 @@ contentOwner: khsingh
 topic-tags: installing
 discoiquuid: 1bb8360c-5543-484e-9712-590822211298
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '1857'
+source-wordcount: '1796'
 ht-degree: 0%
 
 ---
@@ -91,17 +91,19 @@ Voordat u begint met het installeren en configureren van AEM Forms voor het vast
 
 AEM Forms-invoegtoepassing is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat AEM Forms-gegevensvastlegging en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
-1. Meld u als beheerder aan bij de [AEM-server](http://localhost:4502) en open [pakketshare](http://localhost:4502/crx/packageshare). U hebt een Adobe ID nodig om u aan te melden bij de pakketshare.
-1. Zoek in [AEM-pakketdeling](http://localhost:4502/crx/packageshare/login.html)naar het pakket **[!UICONTROL AEM 6.4 Forms add-on packages]** en klik op het pakket dat van toepassing is op het besturingssysteem. Klik vervolgens op **[!UICONTROL Download]**. Lees en accepteer de licentieovereenkomst en klik op **[!UICONTROL OK]**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **[!UICONTROL Downloaded]** naast het pakket.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In het **[!UICONTROL Filters]** gedeelte:
+   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
-   U kunt het versienummer ook gebruiken om een add-on pakket te zoeken. Raadpleeg het artikel over releases [van](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms voor het versienummer van het meest recente pakket.
-
-1. Klik op **[!UICONTROL Downloaded]** Na het downloaden. U wordt omgeleid naar pakketbeheer. Zoek in pakketbeheer het gedownloade pakket en klik op **[!UICONTROL Install]**.
-
-   Als u het pakket handmatig downloadt via de directe koppeling in het artikel met [AEM Forms, meldt](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) u zich aan bij pakketbeheer, klikt u op **[!UICONTROL Upload Package]**, selecteert u het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u **[!UICONTROL Install]**.
+   U kunt het pakket ook downloaden via de directe koppeling in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Alvorens de server van AEM Forms tegen te houden, wacht tot de ServiceEvent REGISTERED en ServiceEvent niet GEREGISTREERDE berichten ophouden verschijnen in het [AEM-Installatie-Folder]/crx-quickstart/logs/error.log- dossier en het logboek stabiel is.
-1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
@@ -136,7 +138,7 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 
 #### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
 
-Voer de volgende stappen uit op alle instanties Auteur en Publiceren om het pakket aan de toegestane lijst toe te voegen:
+Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. De standaard-URL is `https://[server]:[port]/system/console/configMgr`.
 1. Zoeken en openen **[!UICONTROL Deserialization Firewall Configuration]**.
@@ -159,7 +161,7 @@ Dispatcher is een hulpprogramma voor het in cache plaatsen en taakverdeling voor
 
 1. Configureer de referentiefilterservice:
 
-   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is `https://[server]:[port_number]/system/console/configMgr`. Selecteer de **[!UICONTROL Configurations]** optie in het **[!UICONTROL Apache Sling Referrer Filter]** menu. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik **[!UICONTROL Save]**. De indeling van de vermelding is `https://[server]:[port]`.
+   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is `https://[server]:[port_number]/system/console/configMgr`. Selecteer de **[!UICONTROL Configurations]** optie in het **[!UICONTROL Apache Sling Referrer Filter]** menu. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik **[!UICONTROL Save]**. The format of the entry is `https://[server]:[port]`.
 
 #### Cache configureren {#configure-cache}
 
