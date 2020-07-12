@@ -7,9 +7,9 @@ uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1620'
 ht-degree: 0%
 
 ---
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Ondernemingen verzamelen en verwerken gegevens van meerdere formulieren, back-endsystemen en andere gegevensbronnen. De verwerking van gegevens omvat controle- en goedkeuringsprocedures, herhaalde taken en archivering van gegevens. Een formulier reviseren en converteren naar PDF-document. Wanneer manueel gedaan, kunnen de herhalende taken veel tijd en middelen vergen.
+Ondernemingen verzamelen en verwerken gegevens van meerdere formulieren, back-endsystemen en andere gegevensbronnen. De verwerking van gegevens omvat toetsings- en goedkeuringsprocedures, herhaalde taken en archivering van gegevens. Een formulier reviseren en converteren naar PDF-document. Wanneer manueel gedaan, kunnen de herhalende taken veel tijd en middelen vergen.
 
 U kunt [Forms-centric workflow gebruiken op OSGi](/help/forms/using/aem-forms-workflow.md) om snel adaptieve workflows op basis van formulieren samen te stellen. Deze workflows kunnen u helpen bij het automatiseren van workflows voor revisie en goedkeuring, workflows voor bedrijfsprocessen en andere herhalende taken. Met deze workflows kunt u ook documenten verwerken (PDF-documenten maken, samenstellen, distribueren en archiveren, digitale handtekeningen toevoegen om de toegang tot documenten te beperken, streepjescodes voor formulieren te decoderen en meer) en de ondertekeningsworkflow voor Adobe-handtekeningen gebruiken voor formulieren en documenten.
 
@@ -100,17 +100,19 @@ Voordat u begint met het installeren en configureren van Forms-centric Workflow 
 
 AEM Forms-invoegtoepassing is een toepassing die op AEM wordt geïmplementeerd. Het pakket bevat Forms-centric workflow voor OSGi en andere mogelijkheden. Voer de volgende stappen uit om het invoegpakket te installeren:
 
-1. Meld u als beheerder aan bij de [AEM-server](http://localhost:4502) en open [pakketshare](http://localhost:4502/crx/packageshare). U hebt een Adobe ID nodig om u aan te melden bij de pakketshare.
-1. Zoek in [AEM-pakketshare](http://localhost:4502/crx/packageshare/login.html)in **AEM 6.4 Forms add-on packages** of **latest service packages** op het pakket dat op uw besturingssysteem van toepassing is en klik op **Download**. Lees en accepteer de licentieovereenkomst en klik op **OK**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **Gedownload** naast het pakket.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In het **[!UICONTROL Filters]** gedeelte:
+   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
-   U kunt het versienummer ook gebruiken om een add-on pakket te zoeken. Raadpleeg het artikel over releases [van](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) AEM Forms voor het versienummer van het meest recente pakket.
-
-1. Klik op **Gedownload** nadat het downloaden is voltooid. U wordt omgeleid naar pakketbeheer. Zoek in pakketbeheer naar het gedownloade pakket en klik op **Installeren**.
-
-   Als u het pakket handmatig downloadt via de directe koppeling die wordt vermeld in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) , meldt u zich aan bij pakketbeheer, klikt u op Pakket **** uploaden, selecteert u het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u op **Installeren.**
+   U kunt het pakket ook downloaden via de directe koppeling in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
 
 1. Nadat het pakket is geïnstalleerd, wordt u gevraagd om de AEM-instantie opnieuw te starten. **Start de server niet onmiddellijk opnieuw.** Alvorens de server van AEM Forms tegen te houden, wacht tot de ServiceEvent REGISTERED en ServiceEvent niet GEREGISTREERDE berichten ophouden verschijnen in het [AEM-Installatie-Folder]/crx-quickstart/logs/error.log- dossier en het logboek stabiel is.
-1. Herhaal stap 1-4 voor alle instanties Auteur en Publiceren.
+1. Herhaal stap 1-7 voor alle instanties Auteur en Publiceren.
 
 ## Configuratie na installatie {#post-installation-configurations}
 
@@ -145,11 +147,11 @@ Voer de volgende stappen op alle Auteur uit en publiceer instanties om de biblio
 
 #### Vorm de rangschikkingsagent {#configure-the-serialization-agent}
 
-Voer de volgende stappen uit op alle instanties Auteur en Publiceren om het pakket aan de toegestane lijst toe te voegen:
+Voer de volgende stappen uit op alle instanties Auteur en Publish om het pakket aan de lijst van gewenste personen toe te voegen:
 
 1. Open AEM Configuration Manager in een browservenster. De standaard-URL is `https://[server]:[port]/system/console/configMgr`.
 1. Zoek en open Configuratie van de Firewall van de **Deserialization**.
-1. Voeg het pakket **sun.util.agenda** toe aan het veld **allowlist** . Klik op Opslaan.
+1. Voeg het pakket **sun.util.agenda** toe aan het veld **lijst van gewenste personen** . Klik op Opslaan.
 1. Herhaal stap 1-3 voor alle instanties Auteur en Publiceren.
 
 ### Optionele configuraties na installatie {#optional-post-installation-configurations}
@@ -168,7 +170,7 @@ Dispatcher is een hulpprogramma voor het in cache plaatsen en taakverdeling voor
 
 1. Configureer de referentiefilterservice:
 
-   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is `https://[server]:[port_number]/system/console/configMgr`. Selecteer in het menu **Configuraties** de optie **Filter** Apache-schuifverwijzing. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. De indeling van de vermelding is `https://[server]:[port]`.
+   Meld u als beheerder aan bij het configuratiebeheer van Apache Felix. De standaard-URL van het configuratiemanager is `https://[server]:[port_number]/system/console/configMgr`. Selecteer in het menu **Configuraties** de optie **Filter** Apache-schuifverwijzing. Voer in het veld Hosts toestaan de hostnaam van de verzender in om het als referentie toe te staan en klik op **Opslaan**. The format of the entry is `https://[server]:[port]`.
 
 #### Cache configureren {#configure-cache}
 
