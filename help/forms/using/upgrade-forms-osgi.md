@@ -10,9 +10,9 @@ topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '871'
+source-wordcount: '834'
 ht-degree: 0%
 
 ---
@@ -50,14 +50,16 @@ U kunt een directe upgrade uitvoeren van AEM 6.2 Forms of AEM 6.3 Forms naar AEM
 
 1. AEM Forms-invoegtoepassing installeren. De stappen worden hieronder weergegeven:
 
-   1. Meld u als beheerder aan bij de AEM-server en open het gedeelde pakket. De standaard-URL van het gedeelde pakket is `https://[server]:[port]/crx/packageshare`.
-   1. In pakketaandeel, onderzoek **[!UICONTROL AEM 6.4 Forms add-on packages]**, klik het pakket toepasselijk op uw werkend systeem, en klik **[!UICONTROL Download]**. Lees en accepteer de licentieovereenkomst en klik op **[!UICONTROL OK]**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **[!UICONTROL Downloaded]** naast het pakket.
+   1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+   1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+   1. In het **[!UICONTROL Filters]** gedeelte:
+      1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+      1. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+   1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+   1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+   1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 
-      U kunt ook de hyperlinks in de [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) gebruiken om een pakket handmatig te downloaden.
-
-   1. Klik op **[!UICONTROL Downloaded]** Na het downloaden. U wordt omgeleid naar pakketbeheer. Zoek in pakketbeheer het gedownloade pakket en klik op **[!UICONTROL Install]**.
-
-      Als u het pakket handmatig downloadt via de directe koppeling in de [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html), opent u AEM-pakketbeheer, klikt u op **[!UICONTROL Upload Package]** het gedownloade pakket en klikt u op Uploaden. Nadat het pakket is geüpload, klikt u op de pakketnaam en klikt u **[!UICONTROL Install]**.
+      U kunt het pakket ook downloaden via de directe koppeling in het [AEM Forms-releaseartikel](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) .
 
       >[!NOTE]
       >
@@ -74,7 +76,7 @@ U kunt een directe upgrade uitvoeren van AEM 6.2 Forms of AEM 6.3 Forms naar AEM
 
    * **Migratiehulpprogramma uitvoeren**
 
-      Het migratiehulpprogramma maakt de adaptieve formulieren en correspondentiebeheermiddelen van eerdere versies compatibel met AEM 6.4-formulieren. U kunt het hulpprogramma downloaden van AEM-pakketten delen. Voor geleidelijke informatie om het migratienut te vormen en te gebruiken, zie [migratienut](/help/forms/using/migration-utility.md).
+      Het migratiehulpprogramma maakt de adaptieve formulieren en correspondentiebeheermiddelen van eerdere versies compatibel met AEM 6.4-formulieren. U kunt het hulpprogramma downloaden van AEM Software Distribution. Voor geleidelijke informatie om het migratienut te vormen en te gebruiken, zie [migratienut](/help/forms/using/migration-utility.md).
 
       Als u [Steekproef voor het integreren van concepten &amp; verzendingscomponent](integrate-draft-submission-database.md) met het gegevensbestand en bevordering van een vorige versie gebruikt, dan stel de volgende SQL vragen na het uitvoeren van de verbetering in werking:
 
@@ -107,6 +109,7 @@ U kunt een directe upgrade uitvoeren van AEM 6.2 Forms of AEM 6.3 Forms naar AEM
       * `https://[server]:[port]/crx/packmgr`
       * `https://[server]:[port]/crx/de`
       * `https://[server]:[port]/aem/forms.html/content/dam/formsanddocuments`
+
    >[!NOTE]
    In AEM 6.4 Forms is de structuur van crx-gegevensopslagruimte gewijzigd. Nadat u een upgrade naar AEM 6.4-formulieren hebt uitgevoerd, gebruikt u de gewijzigde paden voor aanpassing die u opnieuw maakt. Zie [Forms Repository Reform in AEM 6.4 voor een volledige lijst met gewijzigde paden](/help/sites-deploying/forms-repository-restructuring-in-aem-6-4.md).
 
