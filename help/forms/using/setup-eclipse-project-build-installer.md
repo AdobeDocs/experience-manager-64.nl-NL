@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: f5d6d9bd-4f36-4a4f-8008-15fb853a9219
 translation-type: tm+mt
-source-git-commit: f234d368163f4260563d69230a2cbda37b6d315a
+source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
 workflow-type: tm+mt
-source-wordcount: '744'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
@@ -27,13 +27,18 @@ Voer de volgende stappen uit in de aanbevolen volgorde om de Android-app voor AE
 
 ## Download het AEM Forms App Source Code Package {#download-android-zip}
 
-AEM Forms App Source Code Package verwijst naar het `adobe-lc-mobileworkspace-src-<version>.zip` archief. Dit archief bevat de broncode die is vereist voor het maken van een aangepaste AEM Forms-app. Het archief wordt opgenomen in het `adobe-aemfd-forms-app-src-pkg-<version>.zip`pakket dat beschikbaar is voor de gedeelde pakketbestanden.
+AEM Forms App Source Code Package verwijst naar het `adobe-lc-mobileworkspace-src-<version>.zip` archief. Dit archief bevat de broncode die is vereist voor het maken van een aangepaste AEM Forms-app. Het archief wordt opgenomen in het `adobe-aemfd-forms-app-src-pkg-<version>.zip`pakket dat beschikbaar is op de Software Distribution.
 
 Voer de volgende stappen uit om het `adobe-aemfd-forms-app-src-pkg-<version>.zip` bestand te downloaden:
 
-1. Meld u als beheerder aan bij de auteur-instantie van de [AEM-server](http://localhost:4502/) en open [pakketshare](http://localhost:4502/crx/packageshare). U hebt een Adobe ID nodig om u aan te melden bij de pakketshare.
-1. Zoek in [AEM-pakketshare](http://localhost:4502/crx/packageshare/login.html)naar `adobe-aemfd-forms-app-src-pkg-<version>.zip`het pakket dat op uw besturingssysteem van toepassing is en klik op **Downloaden**. Lees en accepteer de licentieovereenkomst en klik op **OK**. Het downloaden begint. Nadat u het bestand hebt gedownload, staat het woord **Gedownload** naast het pakket.
-1. Klik op **Gedownload** nadat het downloaden is voltooid. U wordt omgeleid naar pakketbeheer. Zoek in pakketbeheer naar het gedownloade pakket en klik op **Installeren**.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
+1. In het **[!UICONTROL Filters]** gedeelte:
+   1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
+   2. Selecteer de versie en typ voor het pakket. U kunt de **[!UICONTROL Search Downloads]** optie ook gebruiken om de resultaten te filteren.
+1. Tik op de pakketnaam die van toepassing is op het besturingssysteem, selecteer **[!UICONTROL Accept EULA Terms]** en tik op **[!UICONTROL Download]**.
+1. Open [Package Manager](https://docs.adobe.com/content/help/en/experience-manager-65/administering/contentmanagement/package-manager.html) en klik **[!UICONTROL Upload Package]** om het pakket te uploaden.
+1. Selecteer het pakket en klik **[!UICONTROL Install]**.
 1. Als u het archief met broncodes wilt downloaden, opent u **https://&lt;server>:&lt;port>/crx/de/content/forms/mobileapps/src/adobe-lc-mobileworkspace-src-&lt;version>.zip** in uw browser. Het ZIP-bestand voor de Android-app wordt gedownload op uw apparaat.
 1. Extraheer de inhoud van het ZIP-bestand naar een map op uw lokale bestandssysteem. Bijvoorbeeld *C:\Folder Structure\adobe-lc-mobileworkspace-src-2.4.20*
 
@@ -76,6 +81,7 @@ Voer de volgende stappen uit om AEM Forms-app te maken met Android Studio:
    * [Aanpassing branding](/help/forms/using/branding-customization.md)
    * [Aanpassing thema](/help/forms/using/theme-customization.md)
    * [Aanpassing van bewegingen](/help/forms/using/gesture-customization.md)
+
    Nadat u de juiste aanpassingen op uw app hebt toegepast, kunt u het .apk-bestand genereren voor distributie.
 
 ### .apk-bestand genereren met Android Studio {#generate-apk-android-studio}
