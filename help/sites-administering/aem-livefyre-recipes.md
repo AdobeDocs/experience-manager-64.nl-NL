@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
 workflow-type: tm+mt
-source-wordcount: '1573'
+source-wordcount: '1559'
 ht-degree: 0%
 
 ---
@@ -30,9 +30,9 @@ Het AEM Livefyre-pakket biedt een out-of-box implementatie, terwijl de tradition
 
 ### AEM-integratie {#aem-integration}
 
-Het Livefyre-Adobe Experience Manager-pakket is beschikbaar voor AEM 6.1, 6.2SP1, 6.3, 6.4 en 6.4 SP1. AEM 5.x en 6.0 worden niet ondersteund. Zie [Integratie met Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor gedetailleerde instructies.
+Het Livefyre-Adobe Experience Manager-pakket is beschikbaar voor AEM 6.1, 6.2SP1, 6.3, 6.4 en 6.4 SP1. AEM 5.x en 6.0 worden niet ondersteund. Zie [Integratie met Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor gedetailleerde instructies.
 
-Raadpleeg de [AEM-ondersteuningsmatrix voor LiveCyre-apps](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)om te zien welke LiveCyre-apps worden ondersteund.
+Raadpleeg de [AEM-ondersteuningsmatrix voor LiveCyre-apps](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps)om te zien welke LiveCyre-apps worden ondersteund.
 
 ### Traditionele implementatie (voor aangepaste AEM-componenten) {#traditional-implementation-for-customized-aem-components}
 
@@ -65,7 +65,7 @@ Volg de [Twitter](https://developer.twitter.com/en/developer-terms/display-requi
 
 Voor de Integraties van de Muur van Media die authentificatie vereisen, gelieve te verwijzen naar:
 
-* [Integratie](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) van Single Sign On aanpassen voor AEM-Identity Management
+* [Integratie](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) van Single Sign On aanpassen voor AEM-Identity Management
 * [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
 
 ### Hoofdlettergebruik - overzicht {#use-case-overview}
@@ -74,9 +74,9 @@ Als klant van AEM, wil ik UGC leiden gebruikend de uit-van-de-doos componenten v
 
 Uitvoeringsmaatregelen:
 
-1. [Aan de slag](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [AEM configureren voor gebruik van Livefyre](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
-1. [AEM Media Wall-component naar de pagina slepen](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
+1. [Aan de slag](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [AEM configureren voor gebruik van Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html)
+1. [AEM Media Wall-component naar de pagina slepen](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMSites)
 1. [Vorm Streams en voeg regels toe om UGC en vertoning op de component van de Muur van Media te leiden](https://docs.adobe.com/content/help/en/livefyre/using/streams/c-streams.html)
 
 Zie Automatische inhoudsstromen [maken en sociale inhoud zoeken in Adobe Experience Manager Live voor trainingsvideo&#39;s over het streamen van UGC](https://helpx.adobe.com/experience-manager/tutorials.html).
@@ -97,7 +97,7 @@ Raadpleeg [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyr
 
 ### AEM-integratie {#aem-integration-1}
 
-Het Livefyre-Adobe Experience Manager-pakket is beschikbaar voor AEM 6.1, 6.2SP1, 6.3, 6.4 en 6.4 SP1. AEM 5.x en 6.0 worden niet ondersteund. Zie [Integratie met Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor gedetailleerde instructies.
+Het Livefyre-Adobe Experience Manager-pakket is beschikbaar voor AEM 6.1, 6.2SP1, 6.3, 6.4 en 6.4 SP1. AEM 5.x en 6.0 worden niet ondersteund. Zie [Integratie met Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor gedetailleerde instructies.
 
 ### Traditionele implementatie (voor aangepaste AEM-componenten) {#traditional-implementation-for-customized-aem-components-1}
 
@@ -129,7 +129,7 @@ Voor geavanceerde aanpassingen die SDK gebruiken, gelieve te zien [StreamHub SDK
 
 ### Integratie van verificatie van opmerkingen {#comments-app-authentication-integration}
 
-* [Integratie](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) van Single Sign On aanpassen voor AEM-Identity Management
+* [Integratie](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) van Single Sign On aanpassen voor AEM-Identity Management
 * [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
 
 ### Voorbeelden van klanten {#customer-examples-1}
@@ -152,9 +152,9 @@ Voor geavanceerde aanpassingen die SDK gebruiken, gelieve te zien [StreamHub SDK
 
 **AEM-instelling (voor het importeren van UGC naar AEM Assets):**
 
-1. [Aan de slag](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
-1. [AEM configureren voor gebruik van Livefyre](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
-1. [UGC die door Livefyre is verwerkt, importeren in AEM Assets](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
+1. [Aan de slag](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#GettingStarted)
+1. [AEM configureren voor gebruik van Livefyre](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#ConfigureAEMtouseLivefyre)
+1. [UGC die door Livefyre is verwerkt, importeren in AEM Assets](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#UseLivefyrewithAEMAssets)
 
 * [Toerisme Australië](https://www.australia.com/en-us)
 
@@ -162,9 +162,9 @@ Voor geavanceerde aanpassingen die SDK gebruiken, gelieve te zien [StreamHub SDK
 
 ### AEM-integratie {#aem-integration-2}
 
-Het Livefyre-Adobe Experience Manager-pakket is beschikbaar voor AEM 6.1, 6.2SP1, 6.3, 6.4 en 6.4 SP1. AEM 5.x en 6.0 worden niet ondersteund. Zie [Integratie met Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor gedetailleerde instructies.
+Het Livefyre-Adobe Experience Manager-pakket is beschikbaar voor AEM 6.1, 6.2SP1, 6.3, 6.4 en 6.4 SP1. AEM 5.x en 6.0 worden niet ondersteund. Zie [Integratie met Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor gedetailleerde instructies.
 
-De component Reviews is geen ondersteunde component voor AEM 6.1. Controleer de [AEM-ondersteuningsmatrix voor alle Livefyre-apps](https://https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
+De component Reviews is geen ondersteunde component voor AEM 6.1. Controleer de [AEM-ondersteuningsmatrix voor alle Livefyre-apps](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/livefyre.html#AEMSupportMatrixforLivefyreApps).
 
 ### Traditionele implementatie (voor aangepaste AEM-componenten) {#traditional-implementation-for-customized-aem-components-2}
 
@@ -191,7 +191,7 @@ Aanvullende API&#39;s voor beoordelingen en revisies vindt u [hier](https://api.
 
 ### Integratie van verificatie van opmerkingen {#comments-app-authentication-integration-1}
 
-* [Integratie](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) van Single Sign On aanpassen voor AEM-Identity Management
+* [Integratie](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html#CustomizeSingleSignonIntegration) van Single Sign On aanpassen voor AEM-Identity Management
 * [Identiteitsintegratie](https://docs.adobe.com/content/help/en/livefyre/implementation/identity-integration/t-about-identity-integration.html) voor externe verificatieplatforms
 
 ### Voorbeelden van klanten {#customer-examples-2}
