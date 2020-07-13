@@ -8,7 +8,10 @@ products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+workflow-type: tm+mt
+source-wordcount: '653'
+ht-degree: 1%
 
 ---
 
@@ -52,26 +55,26 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 ## Wat bevat Livefyre Feature Pack 2.0.6 {#what-is-included-in-livefyre-feature-pack}
 
-Dit pakket integreert de toonaangevende mogelijkheden van Livefyre voor curatieve doeleinden met uw AEM-instantie, zodat u in enkele minuten waardevolle door gebruikers gegenereerde inhoud (UGC) kunt publiceren van sociale netwerken naar uw site. Dit pakket bestaat uit drie verschillende onderdelen:
+Dit pakket integreert de toonaangevende mogelijkheden van Livefyre voor het beperken van problemen met uw AEM-instantie, zodat u in enkele minuten waardevolle door gebruikers gegenereerde inhoud (UGC) kunt publiceren van sociale netwerken naar uw site. Dit pakket bestaat uit drie verschillende onderdelen:
 
-**UGC-inhoud importeren in AEM-elementen**
+**UGC-inhoud importeren in AEM Assets**
 
-* Importeer door gebruikers gegenereerde Twitter- en Instagram-inhoud (UGC) van Livefyre Studio naar AEM Assets met de UGC-importmodule.
+* Importeer door de gebruiker gegenereerde Twitter- en Instagram-inhoud (UGC) van LiveCyre Studio naar AEM Assets met de UGC-importmodule.
 * Open de bibliotheek van Livefy.
 * Op Twitter en Instagram kunt u in real-time zoeken met LiveCycle Social Search.
 * Rechten op de UGC beheren.
 
-**Livefycomponenten toevoegen aan AEM-sites of -gemeenschappen**
+**Livefycomponenten toevoegen aan AEM Sites of gemeenschappen**
 
 * Creëer en pas onmiddellijk dynamische en boeiende ervaringen aan gebruikend een reeks Sociale Componenten met inbegrip van Kaarten, Galerieën, en de Walen van Media.
-* UGC publiceren in AEM-sites of -gemeenschappen.
+* UGC publiceren in AEM Sites of Gemeenschappen.
 
 **Productcatalogi met AEM Commerce in Livefyre importeren**
 
 * Naadloos uw bestaande productcatalogus integreren in Livefyre om de betrokkenheid en conversie van gebruikers in uw sites te stimuleren, en om onvoorstelbare UGC-ervaringen te bieden.
 * Bewerk of verwijder items in uw AEM Commerce-productcatalogus en werk de wijzigingen in LiveCycle automatisch bij.
 
-Zie [Integreren met Livefyre](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor hulp bij de installatie.
+Zie [Integreren met Livefyre](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html)voor hulp bij de installatie.
 
 ### Aanvullende releasegegevens {#additional-release-information}
 
@@ -84,7 +87,7 @@ Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakeli
 #### Nieuwe functie of verbetering {#new-feature-or-improvement}
 
 * De mogelijkheid om UGC te doorzoeken voordat rechten worden ingesteld, is toegevoegd aan de mogelijkheid om sociale accounts aan te vragen in LiveCycle. U moet sociale accounts instellen om rechten aan te vragen of de aanvraag voor rechten overschrijven als u eigenaar bent van de inhoud.
-* De workflow [voor het aanvragen van Instagram- en Twitter-](https://https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html) UGC-rechten is bijgewerkt en voldoet aan de nieuwste API&#39;s.
+* De workflow [voor het aanvragen van Instagram- en Twitter-](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/livefyre.html) UGC-rechten is bijgewerkt en voldoet aan de nieuwste API&#39;s.
 * De status van rechten en de aangewezen acties worden nu getoond op het scherm van het rechtenverzoek.
 
 #### Bugfixes {#bug-fixes}
@@ -92,8 +95,8 @@ Vanwege updates die van invloed zijn op de aggregatie van inhoud van niet-zakeli
 * Probleem verholpen waarbij bij het verwijderen van een sociaal account in LiveCyre Studio dat wordt gebruikt voor rechtenaanvraag, een fout is opgetreden bij het laden van de UGC-bibliotheek in AEM.
 * Probleem verholpen waarbij het aantal elementen in de Livefyre-studio niet overeenkwam met het aantal elementen in de AEM UGC-bibliotheek.
 * Probleem verholpen in de UGC-bibliotheek waarbij gefilterde resultaten werden weergegeven nadat de filteropties opnieuw waren ingesteld.
-* Probleem verholpen met AEM Commerce waarbij de aanroep naar actie-knoppen gebruikers omleidden naar de onjuiste URL.
-* Probleem verholpen in AEM-sites waarbij het slepen en neerzetten van meerdere componenten in de tijdelijke aanduiding voor het parsys ertoe leidde dat deze verdwijnde.
+* Probleem verholpen met AEM Commerce waarbij de vraag-aan-actie knopen gebruikers aan onjuiste URL opnieuw richtten.
+* Oplossing voor een probleem in AEM Sites waarbij het slepen en neerzetten van meerdere componenten in de tijdelijke aanduiding voor parsys ervoor zorgde dat het probleem verdween.
 * Correctie van een probleem waarbij sociale accounts met een handicap konden worden geselecteerd bij het verzenden van een aanvraag voor rechten.
 * Probleem verholpen waarbij het slepen en neerzetten van UGC van elementen naar sites tot een fout leidde.
 * Probleem verholpen waarbij het slepen en neerzetten van Chat- en LiveBlog-componenten naar Sites de app niet maakten.
