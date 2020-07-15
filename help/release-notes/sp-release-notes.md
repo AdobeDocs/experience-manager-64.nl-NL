@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 98d52be43b1668b0f16ae18fc82402acc1058a38
+source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
 workflow-type: tm+mt
-source-wordcount: '21555'
+source-wordcount: '21533'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 | Versie | 6.4.8.0 |
 | Type | Service Pack-release |
 | Date | 5 maart 2020 |
-| URL downloaden | AEM 6.4.8.0 op [PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/servicepack/AEM-6.4.8.0), de Distributie van de [Software](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
+| URL downloaden | AEM 6.4.8.0 over [softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/servicepack/aem-service-pkg-6.4.8.zip) |
 
 ## Wat is inbegrepen in AEM 6.4.8.0 {#what-s-included-in-aem}
 
@@ -1113,7 +1113,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * IndexOutOfBoundsException in ResourceProviderTracker. NPR-26968: Hotfix voor GRANITE-23310
 * De JMX-console accumuleert een groot aantal beheersessies en elke 5 minuten wordt een nieuwe sessie geopend. NPR-26957: Hotfix voor CQ-4251090
 * Na een upgrade van 6.2 naar 6.4 geeft het logbestand stacktracering weer voor niet-gesloten bronnenoplosser com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck. NPR-26176: Hotfix voor graniet-21734
-* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4243928
+* Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4242928
 * De replicatie gebruikt verlopen Token OAuth tot het ontbreekt. NPR-25894
 * Beperkte pagina (pagina voor gesloten gebruikersgroep) met sling: alias leidt de gebruiker niet naar de aanmeldingspagina. NPR-25715: Hotfix voor graniet=22263
 * Bij het publiceren van tags wordt geen activiteit weergegeven in de gebruikersinterface. Hotfix voor CQ-4255961
@@ -1175,7 +1175,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 **UI - Foundation**
 
 * Een NullPointerException is teruggekeerd wanneer het proberen om configuraties na bevordering aan AEM 6.4 te downloaden. NPR-27310: Hotfix voor graniet-23573
-* Proactieve Backport voor granite.platform.login moeilijke situaties. NPR-26941
+* De pro-actieve Steun voor granite.platform.login moeilijke situaties. NPR-26941
 * Proactieve back-up voor granite.ui.content-oplossingen. NPR-26294
 * De component van het gebied van het aantal bevestigt negatieve aantallen niet op Internet Explorer 11. NPR-26701
 * Proactieve back-up voor granite.ui.coralui3-oplossingen. NPR-26662
@@ -1347,7 +1347,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * (De component van de Pagina) het toevoegen van een component aan Parsys wordt bebouwd van recht en komt uit de breedte van het apparatenkader. NPR-25536: Hotfix voor CQ-4238224
 * De redacteur Plaintext verzendt niet-bijgesneden gegevens en voegt extra ruimten toe. NPR-25312: Hotfix voor CQ-4249006
 * Wanneer u de component opent met de inline-modus, zijn eerder geladen insteekmodules de tweede keer niet zichtbaar. NPR-24610: Hotfix voor CQ-4236850
-* Als u een XF in de editorweergave laadt via kopiëren/plakken, wordt de hoofdvariant niet automatisch geladen. NPR-24841: Hotfix voor CQ-4248037
+* Het laden van een XF in redacteursmening door exemplaar/deeg laadt niet automatisch de master variatie. NPR-24841: Hotfix voor CQ-4248037
 * Verkeerde HTML-structuur in siteadmin/damadmin breekt IE11. NPR-24686: Hotfix voor CQ-4246363, CQ-4248402
 * (Publicatiewizard beheren) De kalender voor de activeringsdatum in de stap Opties wordt niet geopend na een aantal handelingen in de stap Bereik. NPR-25681: Hotfix voor CQ-4250205
 * Klassieke interface werkt niet om CUG te bewerken vanwege veroudering. NPR-25075: Hotfix voor 4241823
@@ -1744,7 +1744,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Internationalisatie werkt niet op taalniveau. NPR-22967, NPR-23046: Hotfix voor graniet-21111
 * Proactieve back-up voor granite.ui.commons-oplossingen. NPR-23537
 * Proactieve back-up voor granite.ui.content-oplossingen. NPR-23535
-* Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23536
+* Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23538
 * Kan niet meerdere gebruikers tegelijk uit de groep verwijderen. NPR-23846
 * (OMEGA) Rapporteer &quot;Functie&quot; alleen in het Engels. NPR-23989: Hotfix voor graniet-21231
 * (Design Importer) Als u een pagina importeert, worden de JS, css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
@@ -1803,7 +1803,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Kan geen enkele workflow bewerken nadat deze eenmaal is bewerkt. NPR-23742: Hotfix voor CQ-4238526
 * (Klassieke UI) Wanneer het uitgeven van de werkschemalanceringen, verdwijnen de voorwaarden veroorzakend de werkschema&#39;s om zonder enige voorwaarden te lanceren. NPR-23835: Hotfix voor CQ-4239153
 * Project inbox: als u overschakelt naar de kalenderweergave, wordt de hoofdinhoud in het Postvak IN weergegeven. NPR-23947: Hotfix voor CQ-4241236
-* Moet de ladingsdetails in de bundel blootstellen zodat kan de component HTML de waarde in de lijstmening tonen. NPR-23947: Hotfix voor CQ-4240953
+* Moet de ladingsdetails in de bundel blootstellen zodat kan de component HTML de waarde in de lijstmening tonen. NPR-23948: Hotfix voor CQ-4240953
 * Kan dialooggegevens niet opslaan in de stap Deelnemer dialoogvenster. NPR-23965: Hotfix voor CQ-4234123
 * (Touch UI) Wanneer u een workflowmodel opslaat, verandert de knop Sync in &#39;Gesynchroniseerd&#39;, wat resulteert in een spelfout. Hotfix voor CQ-4244843
 * Project inbox: als u overschakelt naar de kalenderweergave, wordt de hoofdinhoud in het Postvak IN weergegeven. Hotfix voor CQ-4244436
@@ -1852,7 +1852,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Voorspelden voor bestandstypen en bestandsgrootten zijn niet beschikbaar in het gepubliceerde zoekformulier. Hotfix voor CQ-4242026
 * Zoeken in mapvoorspelling moet worden uitgefilterd of niet in zoekfilters worden weergegeven. Hotfix voor CQ-4241386
 * De standaardzoekopdracht van moet bestaan nadat de publicatie ongedaan is gemaakt. Hotfix voor CQ-4241383, CQ-4241113
-* Publiceren naar een gebaar met een merkportal werkt niet bij voorinstellingen voor afbeeldingen. Hotfix voor CQ-4241074
+* Publiceren naar een gebaar met een merkportal werkt niet bij voorinstellingen voor afbeeldingen. Hotfix voor CQ-4241076
 * Publiceren op Brand Portal werkt niet voor verzamelingen. Hotfix voor CQ-4241122, CQ-4246558
 
 **DAM - DM-client**
@@ -2106,8 +2106,8 @@ Lijst met inhoudspakketten die zijn opgenomen in AEM 6.4.1.0
 >
 >Voor klanten met een functiepakket geïnstalleerd op AEM 6.4. Optionele door Adobe geleverde elementenpakketten zijn afhankelijk van de releaseversie en het servicepack. Als u een Feature Pack hebt geïnstalleerd, neemt u contact op met het AEM Customer Care-team om de compatibiliteit van deze functiepakketten met dit servicepakket voor AEM 6.4 te valideren.
 
-* AEM 6.4.8.0 vereist AEM 6.4. Ga naar de [upgradedocumentatie](../sites-deploying/upgrade.md) voor gedetailleerde instructies.
-* De download van het Service Pack is beschikbaar op het Delen van het Pakket van Adobe, dat u direct van AEM 6.4 instantie kunt toegang hebben.
+* AEM 6.4.8.0 vereist AEM 6.4. Zie de [upgradedocumentatie](../sites-deploying/upgrade.md)voor meer informatie.
+* De download van Service Pack is beschikbaar op het portaal [van de Distributie van de](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html) Software voor download.
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer AEM 6.4.8.0 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.
 * Voordat u het servicepack installeert, moet u zorgen dat u een momentopname of een nieuwe back-up van uw AEM-instantie hebt.
 * Start de instantie opnieuw voor de installatie. Hoewel dat alleen nodig is wanneer de instantie zich nog in de updatemodus bevindt (en dit is het geval wanneer de instantie zojuist is bijgewerkt vanaf een eerdere versie), wordt het doorgaans aanbevolen als de instantie langer actief was.
@@ -2116,14 +2116,13 @@ Lijst met inhoudspakketten die zijn opgenomen in AEM 6.4.1.0
 >
 >Adobe raadt u niet aan het pakket AEM 6.4.8.0 te verwijderen of te verwijderen.
 
-### Service Pack installeren via delen pakket {#install-the-service-pack-via-package-share}
+### Service Pack installeren via Package Manager {#install-the-service-pack-via-package-share}
 
 Voer de volgende stappen uit om het Service Pack op een bestaande AEM 6.4 instantie te installeren:
 
-1. Meld u aan bij Delen via pakket in AEM of rechtstreeks vanuit uw browser en download het pakket AEM 6.4.8.0.
+1. Download het pakket van de Distributie van de Software.
 
-   (zoek naar &quot;AEM-6.4.8.0&quot; om het te vinden)
-1. Installeer het gedownloade pakket met Package Manager.
+1. Meld u aan bij Package Manager in AEM en voeg het gedownloade AEM 6.4.8.0-pakket toe. Selecteer het geüploade pakket en klik op **[!UICONTROL Install]**.
 
 >[!NOTE]
 >
