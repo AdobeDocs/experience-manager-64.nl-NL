@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: fb4e6aef84d733c578e0f2ee7407016715e77cf5
+source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
 workflow-type: tm+mt
-source-wordcount: '1706'
+source-wordcount: '1652'
 ht-degree: 3%
 
 ---
@@ -39,22 +39,13 @@ AEM 6.4 wordt geleverd met het Livefyre-functiepakket 1.2.6 vooraf geïnstalleer
 
    ![livefyre-aem-uninstall-64](assets/livefyre-aem-uninstall-64.png)
 
-1. Keer terug naar de homepage AEM, klik Hulpmiddelen, dan navigeer aan **Plaatsing > het Aandeel** van het Pakket.
+1. Download LiveCycle-pakket van [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
 
-   Een lijst met functiepakketten en hotfixes beschikbaar voor downloadweergaven.
-
-1. Zoek in de trefwoordzoekopdracht naar &quot;Livefyre&quot; en selecteer vervolgens het functiepakket Livefyre dat overeenkomt met uw AEM-versie.
-
-   ![livefyre-aem3-6-4](assets/livefyre-aem3-6-4.png)
-
-1. Voor de pagina van de de informatie van het eigenschappak, klik **Download**, lees dan de Overeenkomst van de Vergunning van het Pakket en klik **Accepteren**.
-1. Ga terug naar Pakketbeheer, zoek het nieuwe gedownloade pakket en klik op **Installeren**.
+1. Installeer het gedownloade pakket via Package Manager. Voor instructies om de Distributie van de Software en pakketten in AEM te gebruiken, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
 
    ![livefyre-aem4-6-4](assets/livefyre-aem4-6-4.png)
 
    Uw Livefyre-AEM-pakket is nu geïnstalleerd. Voordat u de integratiefuncties kunt gaan gebruiken, moet u AEM configureren om Livefyre te gebruiken.
-
-   Voor meer informatie over pakketten, zie [hoe te met Pakketten](https://helpx.adobe.com/experience-manager/6-3/sites/administering/using/package-manager.html)werken.
 
    Voor meer informatie en versienota&#39;s op eigenschapspakken, zie de Packs van de [Eigenschap](https://helpx.adobe.com/experience-manager/6-3/release-notes/feature-packs-release-notes.html).
 
