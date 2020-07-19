@@ -3,9 +3,9 @@ title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c5317d96ed5fccbc1bf03176f75dbaec6d8cb0b4
+source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
 workflow-type: tm+mt
-source-wordcount: '2392'
+source-wordcount: '2398'
 ht-degree: 8%
 
 ---
@@ -41,12 +41,13 @@ Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DN
 |---|---|---|
 | [!UICONTROL default] |  | Het basisschema voor metagegevens voor elementen. |
 |  | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] formulier over: |  |
+|  | [!UICONTROL dm_video] | Schemaformulier voor video&#39;s over Dynamic Media. |
 |  | <ul><li> [!UICONTROL image]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;image&quot;, bijvoorbeeld afbeelding/jpeg, afbeelding/png, enzovoort. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de activa met subtype [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;application&quot;, bijvoorbeeld application/ pdf, application/ zip enzovoort. <br>[!UICONTROL pdf]: Schemaformulier voor activa met subtype pdf. |
 |  | <ul><li>[!UICONTROL video]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;video&quot;, zoals video/avi, video/mp4, enzovoort. |
 | [!UICONTROL collection] |  | Schemaformulier voor verzamelingen. |
 | [!UICONTROL contentfragment] |  | Schemaformulier voor inhoudsfragmenten. |
-| [!UICONTROL forms] |  | Dit schema-formulier is gerelateerd aan [Adobe Experience Manager Forms](/help/forms/home.md). |
+| [!UICONTROL forms] |  | Dit schemaformulier heeft betrekking op [Adobe Experience Manager Forms](/help/forms/home.md). |
 
 >[!NOTE]
 >
@@ -62,7 +63,7 @@ Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DN
 
 1. Voer in het dialoogvenster de titel van het schema in en klik **[!UICONTROL Create]** om het maken van het formulier te voltooien.
 
-   ![chlimage_1-175](assets/chlimage_1-174.png)
+   ![chlimage_1-174](assets/chlimage_1-174.png)
 
 ## Formulieren met metagegevensschema bewerken {#editing-metadata-schema-forms}
 
@@ -164,7 +165,7 @@ In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings
 
 Met de schema-editor kunt u een tabblad toevoegen of verwijderen. Het standaardschemaformulier bevat standaard de tabbladen **[!UICONTROL Basic]**, **[!UICONTROL Advanced]**, **[!UICONTROL IPTC]** en **[!UICONTROL IPTC Extension]**.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Klik `+` om een nieuw tabblad toe te voegen aan een schemaformulier. Standaard heeft het nieuwe tabblad de naam `Unnamed-1`. U kunt de naam wijzigen van het **[!UICONTROL Settings]** tabblad. Klik `X` om een tabblad te verwijderen.
 
@@ -182,11 +183,11 @@ Als u een formulier wilt verwijderen, selecteert u een formulier en klikt u op h
 
 >[!NOTE]
 >
->U kunt de metagegevensschema-formulieren uit het vak niet verwijderen in AEM Assets.
+>U kunt het formulier voor het metagegevensschema in het vak niet verwijderen in AEM Assets.
 
 ## Schema-formulieren voor MIME-typen {#schema-forms-for-mime-types}
 
-AEM Assets biedt standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
+AEM Assets bevat standaardformulieren voor verschillende MIME-typen uit het vak. U kunt echter aangepaste formulieren toevoegen voor elementen van verschillende MIME-typen.
 
 ### Nieuwe formulieren toevoegen voor MIME-typen {#adding-new-forms-for-mime-types}
 
@@ -203,7 +204,7 @@ In dit geval maakt u een nieuw knooppunt in `/etc/dam/metadataeditor/mimetypemap
 | `exposedmimetype` | Naam van het bestaande formulier dat moet worden toegewezen | `String` | `image/jpeg` |
 | `mimetypes` | Lijst met MIME-typen die het formulier gebruiken dat is gedefinieerd in het `exposedmimetype` kenmerk | `String` | `image/png` |
 
-AEM-elementen wijzen de volgende MIME-typen en schema-formulieren toe:
+AEM Assets wijzen de volgende MIME-typen en schema-formulieren toe:
 
 | Schema-formulier | MIME-typen |
 |---|---|
@@ -225,7 +226,7 @@ De functie voor het metagegevensschema is alleen beschikbaar voor beheerders. Be
 
 ## Mapspecifieke metagegevens toepassen {#applying-folder-specific-metadata}
 
-Met AEM-elementen kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
+Met AEM Assets kunt u een variant van een metagegevensschema definiëren en dit toepassen op een specifieke map.
 
 U kunt bijvoorbeeld een variant van het standaardmetagegevensschema definiëren en deze toepassen op een map. Wanneer u het gewijzigde schema toepast, wordt het oorspronkelijke standaardmetagegevensschema genegeerd dat op elementen in de map is toegepast.
 
