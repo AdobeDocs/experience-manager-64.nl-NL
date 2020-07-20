@@ -12,7 +12,7 @@ discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
 translation-type: tm+mt
 source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
 workflow-type: tm+mt
-source-wordcount: '688'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
@@ -49,64 +49,80 @@ Als u een nieuwe configuratie wilt toevoegen, selecteert u het plusteken &#39;**
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
 * **[!UICONTROL Message Fields Allowlist]**
-Hiermee geeft u de eigenschappen op van de component Bericht samenstellen die gebruikers kunnen bewerken en behouden. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: *onderwerp* en *inhoud*.
+Hiermee geeft u de eigenschappen op van de component Bericht samenstellen die gebruikers kunnen bewerken en behouden. Als nieuwe formulierelementen worden toegevoegd, moet de element-id desgewenst worden toegevoegd om te worden opgeslagen in SRP. Standaard zijn dit twee items: 
+*onderwerp* en *inhoud*.
 
 * **[!UICONTROL Message box size limit]**
-Het maximum aantal bytes in het berichtvenster van elke gebruiker. De standaardwaarde is *1073741824* (1 GB).
+Het maximum aantal bytes in het berichtvenster van elke gebruiker. Standaard is 
+*1073741824* (1 GB).
 
 * **[!UICONTROL Message count limit]**
-Het totale aantal toegestane berichten per gebruiker. De waarde -1 geeft aan dat een onbeperkt aantal berichten is toegestaan, afhankelijk van de groottelimiet van het berichtvenster. De standaardwaarde is *10000* (10 kB).
+Het totale aantal toegestane berichten per gebruiker. De waarde -1 geeft aan dat een onbeperkt aantal berichten is toegestaan, afhankelijk van de groottelimiet van het berichtvenster. Standaard is 
+*10000* (10 duodecies).
 
 * **[!UICONTROL Notify delivery failure]**
-Als deze optie is ingeschakeld, stuurt u een melding naar de afzender als de berichtlevering bij sommige ontvangers mislukt. Standaard is *ingeschakeld*.
+Als deze optie is ingeschakeld, stuurt u een melding naar de afzender als de berichtlevering bij sommige ontvangers mislukt. Standaard is 
+*ingeschakeld*.
 
 * **[!UICONTROL Failure delivery sender id]**
-Naam van afzender die in ontbroken bericht verschijnt levering. De standaardwaarde is *failureNotifier*.
+Naam van afzender die in ontbroken bericht verschijnt levering. Standaard is 
+*errorNotifier*.
 
 * **[!UICONTROL Failure message template path]**
-Absolute weg aan de levering ontbrak de wortel van het berichtmalplaatje. De standaardwaarde is */etc/notification/messaging/default*.
+Absolute weg aan de levering ontbrak de wortel van het berichtmalplaatje. Standaard is 
+*/etc/notification/messaging/default*.
 
 * **[!UICONTROL maxRetries.name]**
-Aantal keren dat het opnieuw verzenden van een bericht moet worden uitgevoerd. De standaardwaarde is *3*.
+Aantal keren dat het opnieuw verzenden van een bericht moet worden uitgevoerd. Standaard is 
+*3*.
 
 * **[!UICONTROL minWaitBetweenRetries.name]**
 Aantal seconden te wachten tussen pogingen om bericht op gebrek opnieuw te verzenden. De standaardwaarde is *100 *(seconden).
 
 * **[!UICONTROL Count update pool size]**
-Aantal gezamenlijke draden die voor tellerupdate worden gebruikt. De standaardwaarde is *10*.
+Aantal gezamenlijke draden die voor tellerupdate worden gebruikt. Standaard is 
+*10*.
 
 * **[!UICONTROL inbox.path.name]**
-(*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`inbox`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/inbox* .
+(
+*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`inbox`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/inbox* .
 
 * **[!UICONTROL sentitems.path.name]**
-(*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`senditems`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/sentimenten* .
+(
+*Vereist*) Het pad, relatief ten opzichte van het knooppunt van de gebruiker (/home/users/*gebruikersnaam*), dat moet worden gebruikt voor de **`senditems`** map. Het pad mag NIET eindigen met een slash &#39;/&#39; achter het pad. Standaard is dit */e-mail/sentimenten* .
 
 * **[!UICONTROL supportAttachments.name]**
-Als deze optie is ingeschakeld, kunnen gebruikers bijlagen toevoegen aan hun berichten. Standaard is *ingeschakeld*.
+Als deze optie is ingeschakeld, kunnen gebruikers bijlagen toevoegen aan hun berichten. Standaard is 
+*ingeschakeld*.
 
 * **[!UICONTROL batchSize.name]**
-Aantal berichten aan partij samen voor verzenden wanneer het verzenden naar een grote groep ontvangers. De standaardwaarde is *100*.
+Aantal berichten aan partij samen voor verzenden wanneer het verzenden naar een grote groep ontvangers. Standaard is 
+*100*.
 
 * **[!UICONTROL maxTotalAttachmentSize.name]**
-Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. De standaardwaarde is *104857600* (100 MB).
+Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum toegestane totale grootte (in bytes) van alle gehechtheid. Standaard is 
+*104857600* (100 MB).
 
 * **[!UICONTROL attachmentTypeBlocklist.name]**
-Een blocklist met bestandsextensies, vooraf ingesteld op &#39;**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt geblokkeerd, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;. Standaard is dit *STANDAARD*.
+Een lijst van afgewezen personen met bestandsextensies, vooraf ingesteld op &#39;
+**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet is op de lijst met ongewenste personen gestaan, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;. Standaard is dit *STANDAARD*.
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
-   **(*Handeling vereist*)** Een toegestane lijst met bestandsextensies, het tegenovergestelde van de blocklist. Als u alle bestandsextensies wilt toestaan, met uitzondering van die gebloste extensies, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
+
+   **(*Handeling vereist*)** Een lijst van gewenste personen met bestandsextensies, het tegenovergestelde van de lijst van afgewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de op de lijst met ongewenste personen gestane extensies, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
 
 * **[!UICONTROL serviceSelector.name]**
 (*Vereist*) een absolute weg (eindpunt) waardoor de dienst (een virtueel middel) wordt aangehaald. De wortel van de gekozen weg moet één inbegrepen in de configuratie van de Wegen *van de* Uitvoering van OSGi config [ , zoals `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), `/bin/`, en `/apps/``/services/`zijn. Om deze configuratie voor het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie de Eigenschap [van het](configure-messaging.md)Bericht). De standaardwaarde is */bin/messaging* .
 
 * **[!UICONTROL fieldAllowlist.name]**
-Gebruik **berichtenlijst**.
+Gebruiken 
+**Lijst van gewenste personen** voor berichtvelden.
 
 >[!CAUTION]
 >
 >Telkens wanneer een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
 >
->Als u alle bestandsextensies wilt toestaan, behalve de extensies die geblokkeerd zijn, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) de enkele lege invoer te verwijderen voordat u klikt **[!UICONTROL Save]**.
+>Als u alle bestandsextensies wilt toestaan, behalve de op de lijst met ongewenste personen gestane extensies, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) de enkele lege invoer te verwijderen voordat u klikt **[!UICONTROL Save]**.
 
 ## Problemen oplossen {#troubleshooting}
 
