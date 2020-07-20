@@ -128,6 +128,7 @@ Als u een **bestaande rapportsuite** gebruikt, kan het nodig zijn de variabele-t
 >
 >* **`evar1`** doorheen **`evar11`**
 >* **`event1`** doorheen **`event7`**
+
 >
 >
 **Voordat de communitysite wordt gepubliceerd,** is het belangrijk dat de bestaande toewijzing wordt hersteld door de AEM-variabelen te verplaatsen die automatisch zijn toegewezen aan Analytics-variabelen wanneer Analytics was ingeschakeld voor een communitysite.
@@ -456,6 +457,7 @@ Zie secties:
 >
 >* **`evar1`** doorheen **`evar11`**
 >* **`event1`** doorheen **`event7`**
+
 >
 >
 **Voordat de site van de community wordt gepubliceerd,** is het belangrijk dat de bestaande toewijzing wordt hersteld en dat de AEM-variabelen van de Communities die automatisch zijn toegewezen (wanneer Analytics was ingeschakeld voor de site van de community), worden verplaatst naar andere Analytics-variabelen. Deze nieuwe toewijzing moet voor alle onderdelen van de Gemeenschappen consistent zijn.
