@@ -109,6 +109,7 @@ Omdat gebruikers kunnen inzoomen op afbeeldingen in Afbeeldingssets, moet u ervo
 >
 >* Een zwarte, bruine en groene opname van hetzelfde jasje.
 >* Een zwarte, bruine en groene kleurminiatuur.
+
 >
 
 
@@ -147,6 +148,7 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    * Near the upper-left corner of the **[!UICONTROL Image Set Editor]** page, tap **[!UICONTROL Add Asset]**.
    * Tik in het midden van de **[!UICONTROL Image Set Editor]** pagina op **[!UICONTROL Tap to open Asset Selector]**.
+
    Tik om elementen te selecteren die u in de afbeeldingsset wilt opnemen. Geselecteerde assets hebben een vinkje. When you are finished, near the upper-right corner of the page, tap **[!UICONTROL Select]**.
 
    Met de assetkiezer kunt u naar assets zoeken door een trefwoord te typen en op **[!UICONTROL Return]** te tikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Change the view by tapping the **[!UICONTROL View]** icon and selecting **[!UICONTROL Column View]**, **[!UICONTROL Card View]**, or **[!UICONTROL List View]**.
@@ -219,6 +221,7 @@ U kunt diverse bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
    * Als u elementen opnieuw wilt rangschikken, sleept u een afbeelding naar een nieuwe locatie (selecteer het pictogram voor opnieuw ordenen om items te verplaatsen).
    * Tik op de kolomkop om items in oplopende of aflopende volgorde te sorteren.
    * Tik op een element om een element toe te voegen of een bestaand element bij te werken **[!UICONTROL Add Asset]**. Navigeer naar een element, selecteer het en tik vervolgens **[!UICONTROL Select]** in de rechterbovenhoek van de pagina.
+
    >[!NOTE]
    >Als u de afbeelding verwijdert die AEM voor de miniatuur gebruikt door deze te vervangen door een andere afbeelding, wordt het oorspronkelijke element nog steeds weergegeven.
 
@@ -226,6 +229,7 @@ U kunt diverse bewerkingstaken uitvoeren op Afbeeldingssets, zoals:
    * To apply a preset, near the upper-right corner of the page, tap **[!UICONTROL Preset]**, then select a viewer preset.
    * Als u een miniatuur wilt toevoegen of wijzigen, selecteert u het miniatuurpictogram rechts van het element. Navigeer naar de nieuwe miniatuur of het nieuwe staalelement, selecteer dit en tik op **[!UICONTROL Select]**.
    * Als u een volledige afbeeldingsset wilt verwijderen, navigeert u naar de Afbeeldingsset, selecteert u deze en tikt u op **[!UICONTROL Delete]**.
+
    >[!NOTE]
    >
    >You can edit the images in an Image Set by navigating to the set, tap **[!UICONTROL Set Members]** in the left rail, and then tap the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
