@@ -40,6 +40,7 @@ U kunt een volledig aangepast formulierfragment maken of een deelvenster in een 
 
    * **[!UICONTROL None]**: Hiermee geeft u op het fragment helemaal opnieuw te maken zonder een formuliermodel te gebruiken.
    * **[!UICONTROL Form Template]**: Hiermee geeft u op het fragment te maken met een XDP-sjabloon die naar AEM Forms is geüpload. Selecteer de juiste XDP-sjabloon als het formuliermodel voor het fragment.
+
    ![Een adaptief formulier maken met een formuliersjabloon als model](assets/form-template-model.png)
 
    De subformulieren die als fragmenten zijn gemarkeerd in de geselecteerde formuliersjabloon, worden ook weergegeven. U kunt een subformulier voor adaptief formulierfragment selecteren in de vervolgkeuzelijst.
@@ -49,6 +50,7 @@ U kunt een volledig aangepast formulierfragment maken of een deelvenster in een 
    Daarnaast kunt u een adaptief formulierfragment maken met subformulieren die niet zijn gemarkeerd als fragmenten in de formuliersjabloon door de SOM-expressie voor het subformulier op te geven in de vervolgkeuzelijst.
 
    * **[!UICONTROL XML Schema]**: Hiermee geeft u op het fragment te maken met een XML-schema dat naar AEM Forms is geüpload. U kunt een van de beschikbare XML-schema&#39;s uploaden of selecteren als het formuliermodel voor het fragment.
+
    ![Een adaptief formulierfragment maken op basis van een XML-schema als model](assets/xml-schema-model.png)
 
    U kunt ook een adaptief formulierfragment maken door in de vervolgkeuzelijst een complexType te selecteren dat aanwezig is in het geselecteerde schema.
@@ -89,6 +91,7 @@ Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als he
 
    * **[!UICONTROL XSD Ref]**: Wordt alleen weergegeven in op XSD gebaseerde adaptieve formulieren. De locatie van het XML-schema wordt weergegeven.
    * **[!UICONTROL XDP Ref]**: Wordt alleen weergegeven in op XDP gebaseerde adaptieve formulieren. De locatie van de XDP-formuliersjabloon wordt weergegeven.
+
    ![save-fragment](assets/save-fragment.png)
    **Afbeelding:** *Dialoogvenster Opslaan als fragment*
 
@@ -161,7 +164,7 @@ U kunt het fragmentelement en de bijbehorende bindingen wijzigen in het dialoogv
 
 U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met de gebruikersinterface van AEM Forms.
 
-1. Ga naar `https://[hostname]:[port]/aem/forms.html`.
+1. Go to `https://[hostname]:[port]/aem/forms.html`.
 
 1. Klik op **[!UICONTROL Select]** de werkbalk van de gebruikersinterface van AEM Forms en selecteer een adaptief formulierfragment. Op de werkbalk worden de volgende bewerkingen weergegeven die u kunt uitvoeren op het geselecteerde adaptieve formulierfragment.
 
