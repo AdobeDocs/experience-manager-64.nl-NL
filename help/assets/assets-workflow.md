@@ -3,9 +3,9 @@ title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controle
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: c564271c88de0183df81557f1e3ab00eafb44b34
+source-git-commit: 73d440198028bfa6b47e9fde13f3a354a1b8445f
 workflow-type: tm+mt
-source-wordcount: '981'
+source-wordcount: '1010'
 ht-degree: 2%
 
 ---
@@ -27,7 +27,7 @@ Zie [!UICONTROL Tools > Workflow > Models] in [!DNL Experience Manager].
 
 ![Een deel van de standaardworkflow](assets/aem-default-workflows.png)
 
-*Afbeelding: Enkele standaardwerkschema beschikbaar in[!DNL Experience Manager]*
+*Afbeelding: Een deel van de standaardworkflow is beschikbaar in[!DNL Experience Manager].*
 
 ## Workflows toepassen op elementen {#applying-workflows-to-assets}
 
@@ -55,7 +55,7 @@ Voer de volgende stappen uit om een workflow toe te passen op een element:
 
 1. Klik **[!UICONTROL Actions]** bij de bodem om de lijst van acties te openen beschikbaar voor de activa.
 
-1. Klik in **[!UICONTROL Start Workflow]** de lijst.
+1. Click **[!UICONTROL Start Workflow]** from the list.
 
 1. Selecteer in het **[!UICONTROL Start Workflow]** dialoogvenster een workflowmodel in de lijst.
 
@@ -105,6 +105,7 @@ Voor een workflowmodel kunnen gebruikers een workflowstartprogramma maken dat de
 ## Aanbevolen werkwijzen en beperkingen {#best-practices-limitations-tips}
 
 * Houd rekening met uw behoeften aan alle typen uitvoeringen wanneer u workflows ontwerpt. Als u in de toekomst geen uitvoering nodig hebt, verwijdert u de aanmaakstap uit de workflow. Uitvoeringen kunnen daarna niet bulksgewijs worden verwijderd. Ongewenste vertoningen kunnen veel opslagruimte innemen na langdurig gebruik van [!DNL Experience Manager]. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u aanpassen [!DNL Experience Manager] om specifieke vertoningen te verwijderen of de elementen verwijderen en deze opnieuw uploaden.
+* De workflow bevat standaard enkele stappen om miniaturen en webrengingen te maken. [!UICONTROL DAM Update Asset] Als er standaarduitvoeringen uit de workflow worden verwijderd, wordt de gebruikersinterface van [!DNL Assets] niet correct weergegeven.
 
 >[!MORELIKETHIS]
 >
