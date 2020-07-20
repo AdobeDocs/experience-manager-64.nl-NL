@@ -3,7 +3,7 @@ title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ed87c419557f65667bde46a9f4b32a484e3300f5
+source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
 workflow-type: tm+mt
 source-wordcount: '2398'
 ht-degree: 8%
@@ -41,7 +41,7 @@ Als u een lijst met formulieren/sjablonen wilt weergeven, navigeert u in de [!DN
 |---|---|---|
 | [!UICONTROL default] |  | Het basisschema voor metagegevens voor elementen. |
 |  | De volgende onderliggende formulieren nemen de eigenschappen van het [!UICONTROL default] formulier over: |  |
-|  | [!UICONTROL dm_video] | Schemaformulier voor video&#39;s over Dynamic Media. |
+|  | <ul><li> [!UICONTROL dm_video]</li></ul> | Schemaformulier voor video&#39;s over Dynamic Media. |
 |  | <ul><li> [!UICONTROL image]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;image&quot;, bijvoorbeeld afbeelding/jpeg, afbeelding/png, enzovoort. <br> Het [!UICONTROL image] formulier heeft de volgende onderliggende formuliersjablonen: <ul><li> [!UICONTROL jpeg]: Schema voor activa met subtype [!UICONTROL jpeg].</li> <li>[!UICONTROL tiff]: Schema voor de activa met subtype [!UICONTROL tiff].</li></ul> |
 |  | <ul><li> [!UICONTROL application]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;application&quot;, bijvoorbeeld application/ pdf, application/ zip enzovoort. <br>[!UICONTROL pdf]: Schemaformulier voor activa met subtype pdf. |
 |  | <ul><li>[!UICONTROL video]</li></ul> | Schema-formulier voor elementen met het MIME-type &quot;video&quot;, zoals video/avi, video/mp4, enzovoort. |
@@ -78,7 +78,7 @@ U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemafo
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-175](assets/chlimage_1-175.png)
+   ![chlimage_1-174](assets/chlimage_1-175.png)
 
 1. Pas op de pagina **[!UICONTROL Metadata Schema Editor]** de eigenschappenpagina van de asset aan door een of meer componenten uit de lijst met componenttypen op het tabblad **[!UICONTROL Build Form]** naar het tabblad **[!UICONTROL Basic]** te slepen.
 
@@ -204,7 +204,7 @@ In dit geval maakt u een nieuw knooppunt in `/etc/dam/metadataeditor/mimetypemap
 | `exposedmimetype` | Naam van het bestaande formulier dat moet worden toegewezen | `String` | `image/jpeg` |
 | `mimetypes` | Lijst met MIME-typen die het formulier gebruiken dat is gedefinieerd in het `exposedmimetype` kenmerk | `String` | `image/png` |
 
-AEM Assets wijzen de volgende MIME-typen en schema-formulieren toe:
+Met AEM Assets worden de volgende MIME-typen en schema-formulieren toegewezen:
 
 | Schema-formulier | MIME-typen |
 |---|---|
