@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 249f2dd2553bc436a432ef68eae5cf846794ff81
 workflow-type: tm+mt
-source-wordcount: '2763'
+source-wordcount: '2759'
 ht-degree: 0%
 
 ---
@@ -104,7 +104,7 @@ Het toevoegen van een Dynamic Media Klassieke (Scene7) component aan een pagina 
 
    >[!NOTE]
    >
-   >Alleen in UI-aanraking moet u de afbeelding of video naar het klassieke Dynamic Media-onderdeel slepen dat u op de pagina hebt geplaatst. Het selecteren en bewerken van de Klassieke component Dynamic Media en vervolgens het kiezen van het element worden niet ondersteund.
+   >Alleen in UI-aanraking moet u de afbeelding of video slepen en neerzetten op het klassieke Dynamic Media-onderdeel dat u op de pagina hebt geplaatst. Het selecteren en bewerken van de Klassieke component Dynamic Media en vervolgens het kiezen van het element worden niet ondersteund.
 
 ### Interactieve weergaven toevoegen aan een responsieve site {#adding-interactive-viewing-experiences-to-a-responsive-website}
 
@@ -147,7 +147,7 @@ U stelt deze configuratieopties in door bijvoorbeeld een Klassieke Dynamic Media
 
 De component HTML5 Zoom geeft een grotere afbeelding weer wanneer u op de **[!UICONTROL +]** knop drukt.
 
-Het element heeft onderaan zoomgereedschappen. Tik **[!UICONTROL +]** om te vergroten. Tik **[!UICONTROL -]** om te reduceren. Als u op de zoompijl voor opnieuw instellen **[!UICONTROL x]** of op de zoompijl voor opnieuw instellen tikt, wordt de oorspronkelijke grootte van de afbeelding hersteld. Tik op de diagonale pijlen om deze volledig scherm te maken. Tik **[!UICONTROL Edit]** om de component te configureren. Met deze component, kunt u [montages gemeenschappelijk voor alle [!UICONTROL Dynamic Media Klassieke] componenten](#settings-common-to-all-scene-components)vormen.
+Het element heeft onderaan zoomgereedschappen. Tik **[!UICONTROL +]** om te vergroten. Tik **[!UICONTROL -]** om te reduceren. Als u op de zoompijl voor opnieuw instellen **[!UICONTROL x]** of op de zoompijl voor opnieuw instellen tikt, wordt de oorspronkelijke grootte van de afbeelding hersteld. Tik op de diagonale pijlen om deze volledig scherm te maken. Tik **[!UICONTROL Edit]** om de component te configureren. Met deze component, kunt u [montages vormen gemeenschappelijk voor alle [!UICONTROL Dynamic Media Classic] componenten](#settings-common-to-all-scene-components).
 
 ![chlimage_1-227](assets/chlimage_1-227.png)
 
@@ -267,7 +267,7 @@ Zie [Video](s7-video.md) voor meer informatie over hoe video&#39;s werken met Dy
 
 ### Bekende beperkingen voor de video-component {#known-limitations-for-the-video-component}
 
-Adobe DAM en WCM tonen of een hoofdvideo wordt geüpload. Deze proxy-elementen worden niet weergegeven:
+Adobe DAM en WCM laten zien of een master video is geüpload. Deze proxy-elementen worden niet weergegeven:
 
 * Dynamic Media Classic gecodeerde uitvoeringen
 * Dynamic Media Klassieke adaptieve videosets
@@ -286,11 +286,9 @@ Als u veelvoudige configuraties hebt, toont AEM door gebrek de [standaardconfigu
 >* Wanneer [Beveiligde voorvertoning is ingeschakeld](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene), worden zowel gepubliceerde als niet-gepubliceerde elementen op Dynamic Media Classic wel weergegeven in de browser met klassieke inhoud van Dynamic Media.
 >* Als u **[!UICONTROL Dynamic Media Classic]** of het **[!UICONTROL S7]** pictogram niet als optie in inhoudbrowser ziet, moet u Dynamic Media Klassiek [vormen om met AEM](/help/sites-administering/scene7.md)te werken.
 >* Voor video ondersteunt de browser Dynamic Media Classic content:
-   >
-   >  
-* Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
->  * Eén MP4-video
->  * Single F4V-video
+   >   * Adaptieve videosets: container met alle video-uitvoeringen die nodig zijn voor naadloze weergave op meerdere schermen
+   >   * Eén MP4-video
+   >   * Single F4V-video
 
 
 ### Door inhoud bladeren in de gebruikersinterface die geoptimaliseerd is voor aanrakingen {#browsing-content-in-the-touch-optimized-ui}
@@ -305,6 +303,7 @@ Blader door Dynamic Media Klassieke elementen door deze te selecteren **[!UICONT
 >
 >* In de klassieke inhoudbrowser van Dynamic Media worden ongeveer 100 elementen geladen en op naam gesorteerd.
 >* Als u een beveiligde voorvertoningsserver hebt ingesteld, gebruikt de browser die voorvertoningsserver om miniaturen en elementen te renderen.
+
 >
 
 
@@ -362,6 +361,7 @@ In de Klassieke browser van Dynamic Media, kunt u resultaten filtreren om het ev
    >
 * Bij het zoeken naar video zoekt u op één vertoning. Resultaten retourneren de oorspronkelijke uitvoering (alleen &amp;ast; .mp4) en de gecodeerde uitvoering.
 >* Wanneer u in een adaptieve videoset zoekt, zoekt u in de map en in alle submappen, maar alleen als u een trefwoord aan de zoekopdracht hebt toegevoegd. Als u geen trefwoord hebt toegevoegd, doorzoekt AEM de submappen niet.
+
 >
 
 
