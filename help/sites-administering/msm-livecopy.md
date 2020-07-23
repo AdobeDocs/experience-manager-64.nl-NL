@@ -10,7 +10,10 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: d4357905fe6b7acc70f828d9b73581393e003cd5
+workflow-type: tm+mt
+source-wordcount: '3964'
+ht-degree: 0%
 
 ---
 
@@ -77,6 +80,7 @@ U kunt een bestaande configuratie van de blauwdruk bewerken of verwijderen:
 
    * **Eigenschappen**; u kunt dit gebruiken om de eigenschappen van de configuratie te bekijken en dan uit te geven.
    * **Verwijderen**
+
    ![chlimage_1-211](assets/chlimage_1-211.png)
 
 ## Een actieve kopie maken {#creating-a-live-copy}
@@ -90,7 +94,7 @@ U kunt een live kopie van elke pagina of vertakking maken. Wanneer u de live kop
 
 U kunt een live kopie van elke pagina maken:
 
-* Pagina&#39;s zijn die door een [blauwdrukconfiguratie](#creating-a-blueprint-configuration)van verwijzingen worden voorzien,
+* Pagina&#39;s die door een [blauwdrukconfiguratie](#creating-a-blueprint-configuration)van verwijzingen worden voorzien.
 * En pagina&#39;s die geen verbinding met een configuratie hebben.
 * AEM ondersteunt ook het maken van een live kopie op de pagina&#39;s van een andere live kopie.
 
@@ -121,6 +125,7 @@ Een live kopie maken:
 
    * een **titel** voor de pagina.
    * een **naam**, die in URL wordt gebruikt.
+
    ![chlimage_1-215](assets/chlimage_1-215.png)
 
 1. Schakel het selectievakje Subpagina&#39;s **** uitsluiten in:
@@ -291,6 +296,7 @@ De actie [Synchroniseren is ook beschikbaar in het Live Copy-overzicht](/help/si
 
    * **Pagina- en subpagina&#39;s**
    * **Alleen pagina**
+
    ![chlimage_1-225](assets/chlimage_1-225.png)
 
 ## Live kopie van inhoud wijzigen {#changing-live-copy-content}
@@ -356,6 +362,7 @@ De actie [Onderbreken is ook beschikbaar in het Overzicht](/help/sites-administe
 
    * **Onderbreken**
    * **Opschorting met kinderen**
+
    ![chlimage_1-226](assets/chlimage_1-226.png)
 
 1. Bevestig de handeling **Stoppen** in het dialoogvenster **Live kopie onderbreken **:
@@ -423,6 +430,7 @@ De diepte opgeven of wijzigen:
 
    * gecontroleerd - een diepe levende kopie (de kindpagina&#39;s worden omvat)
    * clear - een oppervlakkige live kopie (onderliggende pagina&#39;s zijn uitgesloten)
+
    >[!CAUTION]
    >
    >Het overschakelen naar een oppervlakkige live kopie heeft onmiddellijk effect en is niet-omkeerbaar.
@@ -551,6 +559,7 @@ Als u de aangebrachte wijzigingen wilt bijhouden, kunt u de pagina met de blauwd
 
    * **Vergelijken met vervaging** (wanneer een pagina voor live kopiëren is geselecteerd)
    * **Vergelijken met Live kopie** (wanneer een blauwdrukpagina is geselecteerd)
+
    Bijvoorbeeld:
 
    ![chlimage_1-235](assets/chlimage_1-235.png)
@@ -583,12 +592,14 @@ Er zijn implicaties op waar binnen de boom die u **losmaakt** gebruikt:
 
    * de live relatie is verwijderd voor die subpagina (of vertakking)
    * en de (sub)pagina&#39;s in de levende exemplaartak worden behandeld alsof zij manueel waren gecreeerd.
+
    *De subpagina&#39;s zijn echter* nog steeds onderhevig aan de live relatie van de bovenliggende vertakking, zodat een verdere uitrol van de blauwdrukpagina(&#39;s) beide:
 
    1. Wijzig de naam van de losgekoppelde pagina(&#39;s):
 
       * Dit komt omdat MSM hen als manueel gecreëerde pagina&#39;s beschouwt die een conflict veroorzaken aangezien zij de zelfde naam zoals de levenspagina&#39;s hebben het probeert te creëren.
    1. Maak een nieuwe (livecopy-)pagina met de oorspronkelijke naam, die de wijzigingen bevat die zijn aangebracht tijdens de rollout.
+
    >[!NOTE]
    >
    >Zie de Conflicten [van de Uitvoer](/help/sites-administering/msm-rollout-conflicts.md) MSM voor details van dergelijke situaties.
