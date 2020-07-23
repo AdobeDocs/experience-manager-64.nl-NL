@@ -10,33 +10,36 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '1184'
+ht-degree: 0%
 
 ---
 
 
-# Functies voor zoeken en promoten aan uw pagina toevoegen {#adding-search-promote-features-to-your-page}
+# Search&amp;Promote toevoegen aan uw pagina {#adding-search-promote-features-to-your-page}
 
-Als u de zoek&amp;promotiefuncties in uw website wilt integreren, gebruikt u de componenten [!UICONTROL Zoeken en promoten] om de volgende functies aan uw pagina&#39;s toe te voegen:
+Als u de mogelijkheden van Search&amp;Promote wilt integreren in uw website, gebruikt u de [!UICONTROL Search&Promote] componenten om de volgende functies aan uw pagina&#39;s toe te voegen:
 
 * Trefwoordzoekopdracht
 * Pagina met zoekresultaten
 * Zoekverfijning
 * Banners
 
-U kunt de zoek&amp;promoemogelijkheden alleen gebruiken als uw AEM-beheerder deze heeft ingeschakeld. Zie [Integreren met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
+Merk op dat u de mogelijkheden van de Search&amp;Promote slechts kunt gebruiken als uw beheerder AEM hen heeft toegelaten. Zie [Integratie met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
 
-Facetten worden geconfigureerd op de zoek&amp;promoeserver, net als de informatie die elke component verschaft. De volgende tabel bevat een korte beschrijving van elke component. De volgende secties verstrekken gedetailleerde informatie over hun gebruik.
+Facetten worden gevormd op de server van de Search&amp;Promote, zoals de informatie die elke component verstrekt. De volgende tabel bevat een korte beschrijving van elke component. De volgende secties verstrekken gedetailleerde informatie over hun gebruik.
 
 <table> 
  <tbody> 
   <tr> 
-   <th>&amp;Onderdeel opwaarderen</th> 
+   <th>component Search&amp;Promote</th> 
    <th>Beschrijving</th> 
   </tr> 
   <tr> 
    <td>Banners</td> 
-   <td>Hiermee geeft u banneradvertenties weer. Banners worden geselecteerd op basis van gegevens die via Zoeken en bevorderen zijn verzameld.<br /> </td> 
+   <td>Hiermee geeft u banneradvertenties weer. Banners worden geselecteerd op basis van gegevens die via Search&amp;Promote worden verzameld.<br /> </td> 
   </tr> 
   <tr> 
    <td>Broodkruimels</td> 
@@ -71,80 +74,80 @@ Facetten worden geconfigureerd op de zoek&amp;promoeserver, net als de informati
 
 ## De pagina met zoekresultaten maken {#creating-the-search-results-page}
 
-Gebruik de console van Websites WCM om een pagina tot stand te brengen voor het tonen van onderzoeksresultaten. De resultaten van een zoekopdracht vanuit een zoekcomponent kunnen op deze pagina worden weergegeven als deze dezelfde service Zoeken en bevorderen gebruikt.
+Gebruik de console van Websites WCM om een pagina tot stand te brengen voor het tonen van onderzoeksresultaten. De resultaten van een zoekopdracht vanuit een zoekcomponent kunnen op deze pagina worden weergegeven als deze dezelfde Search&amp;Promote-service gebruikt.
 
-De componenten waarmee gebruikers zoekresultaten kunnen bekijken, zijn Resultaten en Paginering. De component **[!UICONTROL Resultaten]** heeft geen configureerbare eigenschappen in de modus [!UICONTROL Bewerken] of [!UICONTROL Ontwerpen] . De component Resultaten geeft alleen de zoekresultaten weer, die koppelingen naar andere pagina&#39;s bevatten, en geeft het aantal resultaten voor het trefwoord Zoeken weer.
+De componenten waarmee gebruikers zoekresultaten kunnen bekijken, zijn Resultaten en Paginering. De **[!UICONTROL Results]** component heeft geen configureerbare eigenschappen op [!UICONTROL Edit] of [!UICONTROL Design] wijze. De component Resultaten geeft alleen de zoekresultaten weer, die koppelingen naar andere pagina&#39;s bevatten, en geeft het aantal resultaten voor het trefwoord Zoeken weer.
 
 ![srchresultscomp](assets/srchresultscomp.png)
 
-Met de component **[!UICONTROL Paginering]** kunnen gebruikers door meerdere pagina&#39;s met zoekresultaten navigeren. De gebruiker kan het aantal pagina&#39;s zien, naar de volgende of vorige pagina gaan, een pagina selecteren om te openen, of alle resultaten op één pagina consolideren.
+Met de **[!UICONTROL Pagination]** component kunnen gebruikers door meerdere pagina&#39;s met zoekresultaten navigeren. De gebruiker kan het aantal pagina&#39;s zien, naar de volgende of vorige pagina gaan, een pagina selecteren om te openen, of alle resultaten op één pagina consolideren.
 
 ![semafoonlaag](assets/srchpagination.png)
 
-U kunt de volgende componenteneigenschappen op [!UICONTROL Edit] wijze vormen om runtime gedrag te controleren:
+U kunt de volgende componenteneigenschappen op wijze vormen [!UICONTROL Edit] om runtime gedrag te controleren:
 
-* **[!UICONTROL Eén resultatenpagina]** verbergen - Selecteer deze optie om de besturingselementen voor paginanavigatie te verbergen wanneer de zoekopdracht één pagina met resultaten oplevert.
-* **[!UICONTROL Eerste/laatste]** verbergen - Selecteer deze optie om te voorkomen dat gebruikers naar de eerste of laatste pagina met resultaten gaan.
-* **[!UICONTROL Vorige/Volgende]** verbergen - Hiermee bepaalt u of gebruikers door resultatenpagina&#39;s kunnen navigeren ten opzichte van de huidige pagina.
-* **[!UICONTROL Alles]** verbergen - Hiermee bepaalt u of de gebruiker alle zoekresultaten op één pagina kan samenvoegen. Gewoonlijk maakt het verstrekken van gepagineerde gegevens efficiënter gebruik van servermiddelen. Selecteer deze optie als u wilt voorkomen dat grote gegevenssets in één antwoordbericht worden overgedragen.
+* **[!UICONTROL Hide single result page]** - Selecteer deze optie om de besturingselementen voor paginanavigatie te verbergen wanneer de zoekopdracht op één pagina met resultaten wordt uitgevoerd.
+* **[!UICONTROL Hide First/Last]** - Selecteer deze optie om te voorkomen dat gebruikers naar de eerste of laatste pagina met resultaten gaan.
+* **[!UICONTROL Hide Previous/Next]** - Hiermee bepaalt u of gebruikers door resultatenpagina&#39;s kunnen navigeren ten opzichte van de huidige pagina.
+* **[!UICONTROL Hide view all]** - Hiermee wordt bepaald of de gebruiker alle zoekresultaten op één pagina kan samenvoegen. Gewoonlijk maakt het verstrekken van gepagineerde gegevens efficiënter gebruik van servermiddelen. Selecteer deze optie als u wilt voorkomen dat grote gegevenssets in één antwoordbericht worden overgedragen.
 
 ## Filteren van resultaten op facetten inschakelen {#enabling-the-filtering-of-results-by-facets}
 
-U kunt gebruikers toestaan om onderzoeksresultaten door facetten te filtreren. Met de **[!UICONTROL componenten Facet]** List, **[!UICONTROL Dropdown Facet]** en Facet **[!UICONTROL Link List]** kunnen gebruikers een of meer facetten selecteren om te filteren. Wanneer u deze componenten gebruikt, moet u ook de **[!UICONTROL component Breadcrubs]** opnemen. Broodkruimels geven de huidige filters aan die worden gebruikt.
+U kunt gebruikers toestaan om onderzoeksresultaten door facetten te filtreren. Met de **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]** en **[!UICONTROL Link List Facet]** componenten kunnen gebruikers een of meer facetten selecteren om te filteren. Wanneer u deze componenten gebruikt, moet u ook de **[!UICONTROL Breadcrumbs]** component opnemen. Broodkruimels geven de huidige filters aan die worden gebruikt.
 
-De componenten **[!UICONTROL Checkbox List Facet**, **[!UICONTROL Dropdown Facet]**, en **[!UICONTROL Link List Facet]** hebben elk de volgende eigenschappen die u in de modus **[!UICONTROL Bewerken]** configureert:
+De **[!UICONTROL Checkbox List Facet]**, **[!UICONTROL Dropdown Facet]**, en de **[!UICONTROL Link List Facet]** componenten elk hebben de volgende eigenschappen die u op **[!UICONTROL Edit]** wijze vormt:
 
-* **[!UICONTROL Naam]** facet - De naam van het facet dat voor filters wordt gebruikt.
+* **[!UICONTROL Facet Name]** - De naam van het facet dat wordt gebruikt voor filters.
 
-De component **[!UICONTROL Lijst van facetten]** van de Checkbox toont een lijst van facetten met een begeleidende checkbox. Gebruik een facet **[!UICONTROL Lijst]** selectievakje zodat gebruikers een subset van resultaten kunnen weergeven die items van meerdere facetten bevatten. Het merk is bijvoorbeeld geschikt omdat meerdere merken hetzelfde type product leveren.
+De **[!UICONTROL Checkbox List Facet]** component toont een lijst van facetten met een begeleidende checkbox. Gebruik een sjabloon **[!UICONTROL Checkbox List Facet]** zodat gebruikers een subset van resultaten kunnen weergeven die items van meerdere facetten bevatten. Het merk is bijvoorbeeld geschikt omdat meerdere merken hetzelfde type product leveren.
 
 Er wordt een selectievakje weergegeven voor elk facet dat aan een zoekresultaat is gekoppeld. Wanneer een gebruiker een selectievakje selecteert, wordt de pagina opnieuw geladen met een bijgewerkte resultatenset. Alle selectievakjes blijven op de pagina aanwezig, zodat klanten op elk gewenst moment facetten aan het filter kunnen toevoegen of eruit kunnen verwijderen:
 
 ![sandpcheckboxComp](assets/sandpcheckboxcomp.png)
 
-Met de **[!UICONTROL component DropdownFacet]** kunnen klanten een facetitem in een vervolgkeuzelijst selecteren. Deze component is handig wanneer u wilt dat klanten zich tegelijk op één facetitem richten. Bijvoorbeeld, is het facet van het Departement aangewezen voor het toelaten van klanten om productonderzoeken door geslacht te beperken. John zoekt naar *spijkerbroek* en filtert vervolgens op de afdeling Mannen.
+Met de **[!UICONTROL Dropdown Facet]** component kunnen klanten een facetitem in een vervolgkeuzelijst selecteren. Deze component is handig wanneer u wilt dat klanten zich tegelijk op één facetitem richten. Bijvoorbeeld, is het facet van het Departement aangewezen voor het toelaten van klanten om productonderzoeken door geslacht te beperken. John zoekt naar *spijkerbroek* en filtert vervolgens op de afdeling Mannen.
 
 De vervolgkeuzelijst wordt gevuld met de facetten die aan alle zoekresultaten zijn gekoppeld. Als u een item in de vervolgkeuzelijst selecteert, wordt de pagina opnieuw geladen met een bijgewerkte resultatenset. De punten in de drop-down lijst veranderen niet zodat de klanten van facet aan facet op elk ogenblik kunnen schakelen.
 
-![sandpdropdownafdeling](assets/sandpdropdowndepartment.png)
+![sandpdropdowndepartement](assets/sandpdropdowndepartment.png)
 
-De component van de Facet van de Lijst van de **[!UICONTROL Verbinding]** laat klanten toe om hun nadruk op punten geleidelijk te beperken die onder veelvoudige facetleden of facetten worden gecategoriseerd.
+Met de **[!UICONTROL Link List Facet]** component kunnen klanten hun focus geleidelijk beperken tot items die onder meerdere facetleden of facetten zijn gecategoriseerd.
 
 De leden van Facet verschijnen als lijst van verbindingen. De tekst van elke koppeling is de naam van een facetlid dat is gekoppeld aan de huidige zoekresultaten. Wanneer een klant op een facetkoppeling klikt, wordt de pagina opnieuw geladen en wordt een subset van de zoekresultaten weergegeven. De lijst met koppelingen wordt dienovereenkomstig bijgewerkt, zodat de focus nog kleiner wordt.
 
 ![sandplinklistcomp](assets/sandplinklistcomp.png)
 
-De koppelingen in de lijst veranderen ook wanneer een filter wordt toegepast van een ander type [!UICONTROL zoek&amp;promote] component. Het gebruik van meerdere typen filtercomponenten kan effectieve filtercombinaties opleveren.
+De koppelingen in de lijst veranderen ook wanneer een filter wordt toegepast vanuit een ander type [!UICONTROL Search&Promote] component. Het gebruik van meerdere typen filtercomponenten kan effectieve filtercombinaties opleveren.
 
-Met de **[!UICONTROL component Breadcrumbs]** kunnen klanten de filters zien die momenteel op zoekresultaten worden toegepast, in de volgorde waarin ze zijn toegepast. Klanten kunnen op de items in de broodkruimel klikken om terug te keren naar die filtercombinatie.
+Met de **[!UICONTROL Breadcrumbs]** component kunnen klanten de filters zien die momenteel op zoekresultaten worden toegepast, in de volgorde waarin ze zijn toegepast. Klanten kunnen op de items in de broodkruimel klikken om terug te keren naar die filtercombinatie.
 
 ![sandpbreadcrumbcomp](assets/sandpbreadcrumbcomp.png)
 
 U kunt de volgende eigenschappen voor Breadcrubs op Edit wijze vormen om de blik van de component aan te passen:
 
-* **[!UICONTROL Scheidingsteken]** - Definieer de teken- of tekentekenreeks die moet fungeren als scheidingsteken tussen elke breadcrumb. In het veld Scheidingsteken worden alle tekenreeksen als invoer geaccepteerd. De standaardinstelling is: &quot;>&quot; (zonder aanhalingstekens)
-* **[!UICONTROL Sluitend scheidingsteken]** - Definieer een teken of tekenreeks die aan het einde van de breadcrumbs moet worden weergegeven. In het veld Sluitingsscheidingsteken worden alle tekens als invoer geaccepteerd. De standaardinstelling voor deze optie is &quot;leeg&quot; (er wordt dus niets weergegeven aan het einde van de regel voor het doorgeven van de inhoud)
+* **[!UICONTROL Delimiter]** - Definieer de teken- of tekentekenreeks die moet fungeren als scheidingsteken tussen elke breadcrumb. In het veld Scheidingsteken worden alle tekenreeksen als invoer geaccepteerd. De standaardinstelling is: &quot;>&quot; (zonder aanhalingstekens)
+* **[!UICONTROL Trailing Delimiter]** - Definieer een teken- of tekentekenreeks die aan het einde van de broodkruimels moet worden weergegeven. In het veld Sluitingsscheidingsteken worden alle tekens als invoer geaccepteerd. De standaardinstelling voor deze optie is &quot;leeg&quot; (er wordt dus niets weergegeven aan het einde van de regel voor het doorgeven van de inhoud)
 
 ## Zoekvakken toevoegen {#adding-search-boxes}
 
-Met de component **[!UICONTROL Zoeken]** kunnen klanten trefwoordzoekopdrachten uitvoeren. Voeg componenten van het Onderzoek aan elke pagina toe waar u toegang tot het zoeken wilt verlenen.
+De **[!UICONTROL Search]** component laat klanten toe om sleutelwoordonderzoeken uit te voeren. Voeg componenten van het Onderzoek aan elke pagina toe waar u toegang tot het zoeken wilt verlenen.
 
-Configureer de volgende eigenschappen in de modus **[!UICONTROL Bewerken]** om het runtimegedrag te beheren:
+Configureer de volgende eigenschappen in de **[!UICONTROL Edit]** modus om het runtimegedrag te beheren:
 
-* **[!UICONTROL Resultaatpaginapad]** - Het pad naar de pagina waarop de zoekresultaten worden weergegeven.
-* **[!UICONTROL Automatisch aanvullen]** inschakelen - Selecteer deze optie om voorgestelde zoektrefwoorden weer te geven wanneer de klant in het zoekvak begint te typen.
+* **[!UICONTROL Result Page Path]** - Het pad naar de pagina waarop de zoekresultaten worden weergegeven.
+* **[!UICONTROL Enable Auto-Complete]** - Selecteer deze optie om voorgestelde zoektrefwoorden weer te geven wanneer de klant in het zoekvak begint te typen.
 
 ![zandzoekopdracht](assets/sandpsearchcomp.png)
 
 ## banners toevoegen {#adding-banners}
 
-In de **[!UICONTROL component Banners]** worden banneradvertenties weergegeven volgens de zoekopdrachten in de zoekfunctie Zoeken en promoten van de klant. De logica op de zoek&amp;vervangingsserver bepaalt welke banner moet worden weergegeven. Een zoekopdracht naar spijkerbroeken kan bijvoorbeeld tot gevolg hebben dat een modebanner wordt weergegeven. Door te filteren op de afdeling Mannen kan de keuze van de banner verder worden verfijnd.
+De **[!UICONTROL Banners]** component geeft banneradvertenties weer volgens de zoekopdrachten van de klant in de Search&amp;Promote. De logica op de zoek&amp;vervangingsserver bepaalt welke banner moet worden weergegeven. Een zoekopdracht op spijkerbroeken kan bijvoorbeeld tot gevolg hebben dat een modebanner wordt weergegeven. Door te filteren op de afdeling Mannen kan de keuze van de banner verder worden verfijnd.
 
-De **[!UICONTROL component Banners]** biedt een configureerbare eigenschap met de naam **[!UICONTROL Bannergebied]**. Selecteer in de modus **[!UICONTROL Bewerken]** een van de eigenschapswaarden om op te geven hoe de banner wordt weergegeven. De service Zoeken en bevorderen bepaalt de lijst met waarden die u kunt selecteren.
+De **[!UICONTROL Banners]** component verstrekt één configureerbare genoemd bezit **[!UICONTROL Banner Area]**. Selecteer in de **[!UICONTROL Edit]** modus een van de eigenschapswaarden om op te geven hoe de banner wordt weergegeven. De service Search&amp;Promote bepaalt de lijst met waarden die u kunt selecteren.
 
-## Voorbeeld van zoek&amp;promotiezoekpagina {#example-search-promote-search-page}
+## Voorbeeld van Search&amp;Promote-zoekpagina {#example-search-promote-search-page}
 
-In dit diagram worden de componenten weergegeven die aan een pagina worden toegevoegd om de onderstaande pagina met volledig functionele zoekresultaten te maken.
+Dit diagram toont de componenten die aan een pagina worden toegevoegd om tot de volledig-functionele hieronder Search&amp;Promote resultatenpagina te leiden.
 
 ![1328213789109](assets/1328213789109.png) , ![sandbox-voorbeeld](assets/sandppageexample.png)
 
