@@ -10,7 +10,10 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+workflow-type: tm+mt
+source-wordcount: '4533'
+ht-degree: 2%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 
 >[!CAUTION]
 >
->In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM-technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Aan de slag met het ontwikkelen van AEM-sites](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM-technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
-Met deze zelfstudie kunt u een volledig functionerende website maken met Adobe Experience Manager (AEM). De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkeling vindt plaats in een auteur-omgeving.
+Met deze zelfstudie kunt u een volledig uitgeruste website met Adobe Experience Manager (AEM) maken. De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkeling vindt plaats in een auteur-omgeving.
 
 In deze zelfstudie wordt beschreven hoe u:
 
@@ -32,12 +35,12 @@ In deze zelfstudie wordt beschreven hoe u:
 1. Maak de basispagina voor uw website en stel vervolgens de inhoudspagina&#39;s in.
 1. Maak de volgende componenten voor gebruik op uw pagina&#39;s:
 
-   * **[!UICONTROL Bovenste navigatie]**
-   * **[!UICONTROL Onderliggende items weergeven]**
+   * **[!UICONTROL Top Navigation]**
+   * **[!UICONTROL List Children]**
    * **[!UICONTROL Logo]**
-   * **[!UICONTROL Afbeelding]**
+   * **[!UICONTROL Image]**
    * **[!UICONTROL Text-Image]**
-   * **[!UICONTROL Zoeken]**
+   * **[!UICONTROL Search]**
 
 1. Verschillende basiscomponenten opnemen.
 
@@ -50,7 +53,7 @@ Nadat u alle stappen hebt uitgevoerd, zien de pagina&#39;s er als volgt uit:
 Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM-inhoudspakket dat de resultaten van deze zelfstudie bevat. Gebruik [Package Manager](/help/sites-administering/package-manager.md) om het pakket te installeren naar de auteur.
 
 >[!NOTE]
-> Als u dit pakket installeert, worden alle bronnen op de ontwerpinstantie die u met deze zelfstudie hebt gemaakt, overschreven.
+>Als u dit pakket installeert, worden alle bronnen op de ontwerpinstantie die u met deze zelfstudie hebt gemaakt, overschreven.
 
 Inhoud van website
 
@@ -72,15 +75,15 @@ Nadat u AEM hebt geïnstalleerd, toegang tot de ontwikkelomgeving van CRXDE Lite
 
 Gebruik CRXDE Lite om de mywebsite toepassingsstructuur in de bewaarplaats tot stand te brengen:
 
-1. Klik in de structuur links van CRXDE Lite met de rechtermuisknop op de **`/apps`** map en klik op **[!UICONTROL Maken > Map]** maken. Typ in het dialoogvenster Map **** maken `mywebsite` de mapnaam en klik op **[!UICONTROL OK**.
-1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Maken > Map]** maken. Typ in het dialoogvenster Map **** maken `components` de mapnaam en klik op **[!UICONTROL OK]**.
-1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Maken > Map]** maken. Typ in het dialoogvenster Map **** maken `templates` de mapnaam en klik op **[!UICONTROL OK]**.
+1. Klik in de structuur links van CRXDE Lite met de rechtermuisknop op de **`/apps`** map en klik **[!UICONTROL Create > Create Folder]**. Typ in het dialoogvenster Map **** maken `mywebsite` de mapnaam en klik op **[!UICONTROL OK**.
+1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het **[!UICONTROL Create Folder]** dialoogvenster `components` de mapnaam en klik op **[!UICONTROL OK]**.
+1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het **[!UICONTROL Create Folder]** dialoogvenster `templates` de mapnaam en klik op **[!UICONTROL OK]**.
 
    De structuur in de boom moet er nu ongeveer als volgt uitzien:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
-1. Klik op Alles **[!UICONTROL opslaan]**.
+1. Klik op **[!UICONTROL Save All]**.
 
 ## Het ontwerp instellen {#setting-up-the-design}
 
@@ -94,11 +97,11 @@ Voorbeeld van bestand static.css en afbeeldingen
 
 [Bestand ophalen](assets/mywebsite.zip)
 
-1. Klik op de welkomstpagina van AEM op **[!UICONTROL Gereedschappen]**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
+1. Klik op de welkomstpagina van AEM **[!UICONTROL Tools]**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
-1. Selecteer in de mappenstructuur de map **[!UICONTROL Ontwerpen]** en klik vervolgens op **[!UICONTROL Nieuw > Nieuwe pagina]**. Typ `mywebsite` de titel en klik op **[!UICONTROL Maken]**.
+1. Selecteer de **[!UICONTROL Designs]** map in de mappenstructuur en klik op **[!UICONTROL New > New Page]**. Typ `mywebsite` de titel en klik op **[!UICONTROL Create]**.
 
 1. Als het mijnwebsite-item niet in de tabel wordt weergegeven, vernieuwt u de structuur of de tabel.
 
@@ -120,29 +123,30 @@ Maak een sjabloon die u als basis voor de webpagina&#39;s van uw site wilt gebru
 
 Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websites kunnen verschillende sjablonen gebruiken om de verschillende typen pagina&#39;s op de site te maken. In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatje.
 
-1. Klik in de mappenstructuur van CRXDE Lite met de rechtermuisknop `/apps/mywebsite/templates` en klik op **[!UICONTROL Maken > Sjabloon]** maken.
+1. Klik in de mappenstructuur van CRXDE Lite met de rechtermuisknop `/apps/mywebsite/templates` en klik **[!UICONTROL Create > Create Template]**.
 
-1. Typ de volgende waarden in het dialoogvenster Sjabloon maken en klik op **[!UICONTROL Volgende]**:
+1. Typ de volgende waarden in het dialoogvenster Sjabloon maken en klik op **[!UICONTROL Next]**:
 
    * **[!UICONTROL Label]**: contentpagina
-   * **[!UICONTROL Titel]**: Sjabloon voor pagina met inhoud van mijn website
-   * **[!UICONTROL Omschrijving]**: Dit is mijn pagina-sjabloon voor website-inhoud
-   * **[!UICONTROL Type]** bron: mywebsite/componenten/contentPage
+   * **[!UICONTROL Title]**: Sjabloon voor pagina met inhoud van mijn website
+   * **[!UICONTROL Description]**: Dit is mijn pagina-sjabloon voor website-inhoud
+   * **[!UICONTROL Resource Type]**: mywebsite/componenten/contentPage
+
    Gebruik de standaardwaarde voor het Rangschikken bezit.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
    Het middeltype identificeert de component die de pagina teruggeeft. In dit geval worden alle pagina&#39;s die met de sjabloon voor de inhoudspagina zijn gemaakt, door de `mywebsite/components/contentpage` component gerenderd.
 
-1. Als u de paden wilt opgeven van de pagina&#39;s die deze sjabloon kunnen gebruiken, klikt u op de plusknop en typt u `/content(/.*)?` in het tekstvak dat wordt weergegeven. Klik vervolgens op **[!UICONTROL Volgende]**.
+1. Als u de paden wilt opgeven van de pagina&#39;s die deze sjabloon kunnen gebruiken, klikt u op de plusknop en typt u `/content(/.*)?` in het tekstvak dat wordt weergegeven. Klik vervolgens op **[!UICONTROL Next]**.
 
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
    De waarde van de toegestane padeigenschap is een *reguliere expressie.* Pagina&#39;s die een pad hebben dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de `/content` map en alle subpagina&#39;s.
 
-   Wanneer een auteur hieronder een pagina maakt `/content`, wordt de sjabloon voor de **[!UICONTROL inhoudspagina]** weergegeven in een lijst met beschikbare sjablonen die u kunt gebruiken.
+   Wanneer een auteur hieronder een pagina maakt, wordt de `/content`**[!UICONTROL contentpage]** sjabloon weergegeven in een lijst met beschikbare sjablonen die u kunt gebruiken.
 
-1. Klik **[!UICONTROL Volgende** in de deelvensters **[!UICONTROL Toegestane bovenliggende]** en **[!UICONTROL Toegestane onderliggende]** elementen en klik op **[!UICONTROL OK]**. Klik in CRXDE Lite op Alles **[!UICONTROL opslaan]**.
+1. Klik **[!UICONTROL Next]** in de deelvensters **[!UICONTROL Allowed Parents]** en **[!UICONTROL Allowed Children]** deelvensters en klik op **[!UICONTROL OK]**. Klik in CRXDE Lite op **[!UICONTROL Save All]**.
 
    ![chlimage_1-106](assets/chlimage_1-106.png)
 
@@ -150,19 +154,20 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 Maak de *component* die de inhoud definieert en geef de pagina&#39;s weer die de sjabloon voor de inhoudspagina gebruiken. De plaats van de component moet met de waarde van het bezit van het Type van Middel van het contentpage malplaatje beantwoorden.
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components` en klik op **[!UICONTROL Maken > Component]**.
-1. Typ de volgende eigenschapswaarden in het dialoogvenster **[!UICONTROL Component]** maken:
+1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components` en klik **[!UICONTROL Create > Component]**.
+1. Typ de volgende eigenschapswaarden in het **[!UICONTROL Create Component]** dialoogvenster:
 
    * **[!UICONTROL Label]**: contentpagina
-   * **[!UICONTROL Titel]**: Inhoud pagina Mijn website
-   * **[!UICONTROL Omschrijving]**: Dit is de inhoud van mijn website
+   * **[!UICONTROL Title]**: Inhoud pagina Mijn website
+   * **[!UICONTROL Description]**: Dit is de inhoud van mijn website
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
    De locatie van de nieuwe component is `/apps/mywebsite/components/contentpage`. Dit pad komt overeen met het middeltype van de sjabloon voor de inhoudspagina (min het eerste `/apps/` deel van het pad).
 
    Deze correspondentie verbindt het malplaatje met de component en is kritiek aan het correcte functioneren van de website.
 
-1. Klik op **[!UICONTROL Volgende]** totdat het deelvenster **[!UICONTROL Onderliggende]** items toestaan van het dialoogvenster verschijnt en klik vervolgens op **[!UICONTROL OK]**. Klik in CRXDE Lite op Alles **[!UICONTROL opslaan]**.
+1. Klik **[!UICONTROL Next]** tot het **[!UICONTROL Allowed Children]** paneel van de dialoog verschijnt, en klik dan **[!UICONTROL OK]**. Klik in CRXDE Lite op **[!UICONTROL Save All]**.
 
    De structuur ziet er nu als volgt uit:
 
@@ -207,7 +212,7 @@ Voeg code toe aan het script contentPage.jsp om de pagina-inhoud te definiëren.
    </html>
    ```
 
-1. Klik op Alles **** opslaan om uw wijzigingen op te slaan.
+1. Klik **[!UICONTROL Save All]** om uw wijzigingen op te slaan.
 
 ### Websitepagina&#39;s en inhoudspagina&#39;s maken {#creating-your-website-page-and-content-pages}
 
@@ -217,47 +222,50 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
-1. Selecteer in de mappenstructuur de map **[!UICONTROL Websites]** en klik vervolgens op **[!UICONTROL Nieuw > Nieuwe pagina]**.
-1. Voer in het venster Pagina **** maken het volgende in:
+1. Selecteer de **[!UICONTROL Websites]** map in de mappenstructuur en klik op **[!UICONTROL New > New Page]**.
+1. Voer in het **[!UICONTROL Create Page]** venster het volgende in:
 
-   * **[!UICONTROL Titel]**: `My Website`
-   * **[!UICONTROL Naam]**: `mywebsite`
-   * Sjabloon voor **[!UICONTROL pagina Mijn website-inhoud selecteren]**
+   * **[!UICONTROL Title]**: `My Website`
+   * **[!UICONTROL Name]**: `mywebsite`
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
+
    ![chlimage_1-110](assets/chlimage_1-110.png)
 
-1. Klik op **[!UICONTROL Maken]**. Selecteer de `/Websites/My Website` pagina in de mappenstructuur en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**.
-1. Voer in het dialoogvenster Pagina **** maken de volgende eigenschapswaarden in en klik op Maken:
+1. Klik op **[!UICONTROL Create]**. Selecteer de `/Websites/My Website` pagina in de mappenstructuur en klik op **[!UICONTROL New > New Page]**.
+1. Voer in het **[!UICONTROL Create Page]** dialoogvenster de volgende eigenschapswaarden in en klik op Maken:
 
-   * **[!UICONTROL Titel]**: Engels
-   * **[!UICONTROL Naam]**: en
-   * Sjabloon voor **[!UICONTROL pagina Mijn website-inhoud selecteren]**
+   * **[!UICONTROL Title]**: Engels
+   * **[!UICONTROL Name]**: en
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
 
-1. Selecteer de `/Websites/My Website/English` pagina in de mappenstructuur en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**.
-1. Voer in het dialoogvenster Pagina **** maken de volgende eigenschapswaarden in en klik op **[!UICONTROL Maken]**:
+1. Selecteer de `/Websites/My Website/English` pagina in de mappenstructuur en klik op **[!UICONTROL New > New Page]**.
+1. Voer in het **[!UICONTROL Create Page]** dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Create]**:
 
-   * **[!UICONTROL Titel]**:Producten
-   * Sjabloon voor **[!UICONTROL pagina Mijn website-inhoud selecteren]**
+   * **[!UICONTROL Title]**: Producten
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
 
-1. Selecteer de `/Websites/My Website/English` pagina in de mappenstructuur en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**.
-1. Voer in het dialoogvenster Pagina **** maken de volgende eigenschapswaarden in en klik op **[!UICONTROL Maken]**:
+1. Selecteer de `/Websites/My Website/English` pagina in de mappenstructuur en klik op **[!UICONTROL New > New Page]**.
+1. Voer in het **[!UICONTROL Create Page]** dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Create]**:
 
-   * **Titel**:Services
-   * Sjabloon voor **[!UICONTROL pagina Mijn website-inhoud selecteren]**
+   * **Titel**: Services
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
 
-1. Selecteer de `/Websites/My Website/English` pagina in de mappenstructuur en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**.
-1. Voer in het dialoogvenster Pagina **** maken de volgende eigenschapswaarden in en klik op **[!UICONTROL Maken]**:
+1. Selecteer de `/Websites/My Website/English` pagina in de mappenstructuur en klik op **[!UICONTROL New > New Page]**.
+1. Voer in het **[!UICONTROL Create Page]** dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Create]**:
 
    * **Titel**: Klanten
-   * Sjabloon voor **[!UICONTROL pagina Mijn website-inhoud selecteren]**
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
+
    Uw structuur ziet er als volgt uit:
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Als u uw pagina&#39;s wilt koppelen aan het mywebsite-ontwerp, selecteert u in CRXDE Lite het `/content/mywebsite/en/jcr:content` knooppunt. Typ op het tabblad **[!UICONTROL Eigenschappen]** de volgende waarden voor een nieuwe eigenschap en klik op Toevoegen:
+1. Als u uw pagina&#39;s wilt koppelen aan het mywebsite-ontwerp, selecteert u in CRXDE Lite het `/content/mywebsite/en/jcr:content` knooppunt. Typ op het **[!UICONTROL Properties]** tabblad de volgende waarden voor een nieuwe eigenschap en klik op Toevoegen:
 
-   * **[!UICONTROL Naam]**: cq:designPath
-   * **[!UICONTROL Type]**:String
-   * **[!UICONTROL Waarde]**: /etc/designs/mywebsite
+   * **[!UICONTROL Name]**: cq:designPath
+   * **[!UICONTROL Type]**: Tekenreeks
+   * **[!UICONTROL Value]**: /etc/designs/mywebsite
+
    ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. Open in een nieuw webbrowsertabblad of -venster [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) om de pagina Producten weer te geven:
@@ -268,7 +276,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
 In deze sectie wordt beschreven hoe u het script voor de inhoudspagina kunt verfraaien met behulp van de scripts van de AEM-stichtingscomponent en door uw eigen scripts te schrijven.
 
-De pagina **[!UICONTROL Producten]** ziet er als volgt uit:
+De **[!UICONTROL Products]** pagina ziet er als volgt uit:
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
@@ -283,10 +291,10 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
    1. Select the `/apps/mywebsite/components/contentpage` node.
    1. Typ onder aan het tabblad Eigenschappen de volgende eigenschapswaarden en klik op Toevoegen:
 
-      * **[!UICONTROL Naam]**: sling:resourceSuperType
-      * **[!UICONTROL Type]**:String
-      * **[!UICONTROL Waarde]**: basis/componenten/pagina
-   1. Klik op Alles **[!UICONTROL opslaan]**.
+      * **[!UICONTROL Name]**: sling:resourceSuperType
+      * **[!UICONTROL Type]**: Tekenreeks
+      * **[!UICONTROL Value]**: basis/componenten/pagina
+   1. Klik op **[!UICONTROL Save All]**.
 
 
 1. Open het `contentpage.jsp` bestand onder `/apps/mywebsite/components/contentpage` en vervang de bestaande code door de volgende code:
@@ -302,7 +310,7 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
    ```
 
 1. Sla uw wijzigingen op.
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. Het ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. Het ziet er als volgt uit:
 
    ![chlimage_1-5](assets/chlimage_1-5.jpeg)
 
@@ -319,11 +327,11 @@ In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen di
 
 In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst van de pagina genereren. Vervolgens maakt u het bestand body.jsp in de component pageContent om het body.jsp van de component AEM Page te overschrijven. In uw body.jsp- dossier, omvat u uw manuscripten die de verschillende delen van de paginakleurtekst produceren.
 
-**** Tip: Wanneer een component een bestand bevat dat dezelfde naam en relatieve locatie heeft als een bestand in het supertype van de component, wordt dit *bedekken* genoemd.
+**Tip:** Wanneer een component een bestand bevat dat dezelfde naam en relatieve locatie heeft als een bestand in het supertype van de component, wordt dit *bedekken* genoemd.
 
 1. In CRXDE Lite, creeer het dossier `left.jsp` onder `/apps/mywebsite/components/contentpage`:
 
-   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`en selecteer vervolgens **[!UICONTROL Maken]** en **[!UICONTROL Bestand]** maken.
+   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`en selecteer **[!UICONTROL Create]** vervolgens **[!UICONTROL Create File]**.
    1. Typ in het venster `left.jsp` de naam*** en klik op **[!UICONTROL OK]**.
 
 1. Bewerk het bestand `left.jsp` om de bestaande inhoud te verwijderen en vervang het door de volgende code:
@@ -340,8 +348,8 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
 1. Sla de wijzigingen op.
 1. In CRXDE Lite, creeer het dossier `center.jsp` onder `/apps/mywebsite/components/contentpage`:
 
-   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **[!UICONTROL Maken]** en **[!UICONTROL maak vervolgens Bestand]**.
-   1. Typ `center.jsp` als **[!UICONTROL naam]** in het dialoogvenster en klik op **[!UICONTROL OK]**.
+   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create File]** klik vervolgens op het knooppunt.
+   1. Typ `center.jsp` als **[!UICONTROL Name]** en klik in het dialoogvenster **[!UICONTROL OK]**.
 
 1. Bewerk het bestand `center.jsp` om de bestaande inhoud te verwijderen en vervang het door de volgende code:
 
@@ -357,8 +365,8 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
 1. Sla de wijzigingen op.
 1. In CRXDE Lite, creeer het dossier `right.jsp` onder `/apps/mywebsite/components/contentpage`:
 
-   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **[!UICONTROL Maken]** en **[!UICONTROL maak vervolgens Bestand]**.
-   1. Typ `right.jsp` als **[!UICONTROL naam]** in het dialoogvenster en klik op **[!UICONTROL OK]**.
+   1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create File]** klik vervolgens op het knooppunt.
+   1. Typ `right.jsp` als **[!UICONTROL Name]** en klik in het dialoogvenster **[!UICONTROL OK]**.
 
 1. Bewerk het bestand `right.jsp` om de bestaande inhoud te verwijderen en vervang het door de volgende code:
 
@@ -391,7 +399,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. Het ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. Het ziet er als volgt uit:
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
@@ -407,14 +415,14 @@ Uw topnavigatie ziet er als volgt uit:
 
 #### De bovenste navigatiecomponent maken {#creating-the-top-navigation-component-1}
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Maken]** en **[!UICONTROL maak vervolgens Component]**.
-1. Voer in het venster Component **** maken het volgende in:
+1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]**.
+1. Voer in het **[!UICONTROL Create Component]** venster het volgende in:
 
    * **[!UICONTROL Label]**: `topnav`
-   * **[!UICONTROL Titel]**: `My Top Navigation Component`
-   * **[!UICONTROL Omschrijving]**: `This is My Top Navigation Component`
+   * **[!UICONTROL Title]**: `My Top Navigation Component`
+   * **[!UICONTROL Description]**: `This is My Top Navigation Component`
 
-1. Klik op **[!UICONTROL Volgende]** totdat u naar het laatste venster gaat waar u op **[!UICONTROL OK]** klikt. Sla uw wijzigingen op.
+1. Klik **[!UICONTROL Next]** tot u aan het laatste venster komt waar u klikt **[!UICONTROL OK]**. Sla uw wijzigingen op.
 
 #### Het bovenste navigatiescript maken met tekstkoppelingen {#creating-the-top-navigation-script-with-textual-links}
 
@@ -460,21 +468,21 @@ Het onderwerp opnemen in de component ContentPage:
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. De bovenste navigatie ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. De bovenste navigatie ziet er als volgt uit:
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### Pagina&#39;s verbeteren met ondertitels {#enhancing-pages-with-subtitles}
 
-De component **[!UICONTROL Pagina]** definieert eigenschappen waarmee u ondertitels voor pagina&#39;s kunt opgeven. Voeg ondertitels toe die informatie over de pagina-inhoud bevatten.
+De **[!UICONTROL Page]** component definieert eigenschappen waarmee u ondertitels voor pagina&#39;s kunt opgeven. Voeg ondertitels toe die informatie over de pagina-inhoud bevatten.
 
-1. Open de pagina **[!UICONTROL Producten]** in uw browser.
-1. Klik op het tabblad **[!UICONTROL Introductiepagina]** op **[!UICONTROL Pagina-eigenschappen]**.
-1. Vouw op het tabblad **[!UICONTROL Standaard]** van het dialoogvenster **[!UICONTROL Meer titels en beschrijving]** uit en typ voor de eigenschap **[!UICONTROL Ondertitel]** `what we do`. Click **[!UICONTROL OK]**.
-1. Herhaal de vorige stappen om de ondertitel **over onze diensten** aan de pagina van de **[!UICONTROL Diensten]** toe te voegen.
-1. Herhaal de vorige stappen om de ondertitel toe te voegen **het vertrouwen dat we verdienen** aan de pagina **[!UICONTROL Klanten]** .
+1. Open de **[!UICONTROL Products]** pagina in uw browser.
+1. Klik op het **[!UICONTROL Page]** tabblad Sidetrap **[!UICONTROL Page Properties]**.
+1. Vouw op het **[!UICONTROL Basic]** tabblad van het dialoogvenster uit **[!UICONTROL More Titles and Description]** en typ voor de **[!UICONTROL Subtitle]** eigenschap `what we do`. Klik op **[!UICONTROL OK]**.
+1. Herhaal de vorige stappen om de ondertitel **over onze services** aan de **[!UICONTROL Services]** pagina toe te voegen.
+1. Herhaal de vorige stappen om de ondertitel toe te voegen **het vertrouwen dat wij aan de** pagina verdienen **[!UICONTROL Customers]** .
 
-   **** Tip: Selecteer in CRXDE Lite het knooppunt /content/mywebsite/nl/products/jcr:content om te controleren of de eigenschap subtitle is toegevoegd.
+   **Tip:** Selecteer in CRXDE Lite het knooppunt /content/mywebsite/nl/products/jcr:content om te controleren of de eigenschap subtitle is toegevoegd.
 
 #### Bovenste navigatie verbeteren door afbeeldingskoppelingen te gebruiken {#enhance-top-navigation-by-using-image-links}
 
@@ -505,8 +513,8 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
    ```
 
 1. Sla de wijzigingen op.
-1. Klik met de rechtermuisknop op het `/apps/mywebsite/components/contentpage` knooppunt en klik op **[!UICONTROL Maken > Bestand]** maken.
-1. Typ in het venster **[!UICONTROL Bestand]** maken de **[!UICONTROL naam]** als `navimage.png.java`naam.
+1. Klik met de rechtermuisknop op het `/apps/mywebsite/components/contentpage` knooppunt en klik op **[!UICONTROL Create > Create File]**.
+1. Typ in het **[!UICONTROL Create File]** venster als **[!UICONTROL Name]** volgt `navimage.png.java`.
 
    De .java-bestandsnaamextensie geeft aan Sling aan dat de Apache Sling Scripting Java Support moet worden gebruikt om het script te compileren en een servlet te maken.
 
@@ -632,7 +640,7 @@ In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/co
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. De bovenste navigatie ziet er nu als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. De bovenste navigatie ziet er nu als volgt uit:
 
    ![screen_shot_2012-03-07at10047pm](assets/screen_shot_2012-03-07at10047pm.png)
 
@@ -644,56 +652,56 @@ Maak de component listchildren die een lijst met paginakoppelingen genereert die
 
 #### Productpagina&#39;s maken {#creating-product-pages}
 
-Maak twee pagina&#39;s onder de pagina **[!UICONTROL Producten]** . Voor elke pagina, die twee specifieke producten beschrijft, plaatst u een titel, een beschrijving, en een datum.
+Maak twee pagina&#39;s onder de **[!UICONTROL Products]** pagina. Voor elke pagina, die twee specifieke producten beschrijft, plaatst u een titel, een beschrijving, en een datum.
 
-1. Selecteer in de mapstructuur van de pagina **[!UICONTROL Websites]** het item **[!UICONTROL Websites/Mijn website/Engels/Producten]** en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**.
-1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Maken]**:
+1. Selecteer het **[!UICONTROL Websites]** item in de mappenstructuur van de **[!UICONTROL Websites/My Website/English/Products]** pagina en klik op **[!UICONTROL New > New Page]**.
+1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Create]**:
 
-   * **[!UICONTROL Titel]**: Product 1.
-   * **[!UICONTROL Naam]**: product1.
-   * Sjabloon **[!UICONTROL voor pagina met pagina-inhoud voor mijn website selecteren]**
+   * **[!UICONTROL Title]**: Product 1.
+   * **[!UICONTROL Name]**: product1.
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
 
 1. Maak een andere pagina onder Producten met de volgende eigenschapswaarden:
 
-   * **[!UICONTROL Titel]**: Product 2
-   * **[!UICONTROL Naam]**: product2
-   * Sjabloon **[!UICONTROL voor pagina met pagina-inhoud voor mijn website selecteren]**
+   * **[!UICONTROL Title]**: Product 2
+   * **[!UICONTROL Name]**: product2
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
 
 1. In CRXDE Lite, plaats een beschrijving en een datum voor Product 1 pagina:
 
    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
-   1. Voer op het tabblad **[!UICONTROL Eigenschappen]** de volgende waarden in:
+   1. Voer op het **[!UICONTROL Properties]** tabblad de volgende waarden in:
 
-      * **[!UICONTROL Naam]**: `jcr:description`
+      * **[!UICONTROL Name]**: `jcr:description`
       * **[!UICONTROL Type]**: `String`
-      * **[!UICONTROL Waarde]**: `This is a description of the Product 1!.`
-   1. Click **[!UICONTROL Add]**.
-   1. Maak op het tabblad **[!UICONTROL Eigenschappen]** een andere eigenschap met de volgende waarden:
+      * **[!UICONTROL Value]**: `This is a description of the Product 1!.`
+   1. Klik op **[!UICONTROL Add]**.
+   1. Maak op het **[!UICONTROL Properties]** tabblad een andere eigenschap met de volgende waarden:
 
-      * **[!UICONTROL Naam]**:date
-      * **[!UICONTROL Type]**:String
-      * **[!UICONTROL Waarde]**: 14-02-2008
-      * Click **[!UICONTROL Add]**.
-   1. Klik op Alles **[!UICONTROL opslaan]**.
+      * **[!UICONTROL Name]**: date
+      * **[!UICONTROL Type]**: Tekenreeks
+      * **[!UICONTROL Value]**: 02/14/2008
+      * Klik op **[!UICONTROL Add]**.
+   1. Klik op **[!UICONTROL Save All]**.
 
 
 
 1. In CRXDE Lite, plaats een beschrijving en een datum voor Product 2 pagina:
 
    1. Select the `/content/mywebsite/en/products/product2/jcr:content` node.
-   1. Voer op het tabblad **[!UICONTROL Eigenschappen]** de volgende waarden in:
+   1. Voer op het **[!UICONTROL Properties]** tabblad de volgende waarden in:
 
-      * **[!UICONTROL Naam]**: jcr:beschrijving
-      * **[!UICONTROL Type]**:String
-      * **[!UICONTROL Waarde]**: Dit is een beschrijving van Product 2!
-   1. Click **[!UICONTROL Add]**.
+      * **[!UICONTROL Name]**: jcr:beschrijving
+      * **[!UICONTROL Type]**: Tekenreeks
+      * **[!UICONTROL Value]**: Dit is een beschrijving van Product 2!
+   1. Klik op **[!UICONTROL Add]**.
    1. Vervang in dezelfde tekstvakken de vorige waarden door de volgende waarden:
 
-      * **[!UICONTROL Naam]**:date
-      * **[!UICONTROL Type]**:String
-      * **[!UICONTROL Waarde]**: 11-05-2012
-      * Click **[!UICONTROL Add]**.
-   1. Klik op Alles **[!UICONTROL opslaan]**.
+      * **[!UICONTROL Name]**: date
+      * **[!UICONTROL Type]**: Tekenreeks
+      * **[!UICONTROL Value]**: 05/11/2012
+      * Klik op **[!UICONTROL Add]**.
+   1. Klik op **[!UICONTROL Save All]**.
 
 
 
@@ -701,14 +709,14 @@ Maak twee pagina&#39;s onder de pagina **[!UICONTROL Producten]** . Voor elke pa
 
 De component listchildren maken:
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Maken]** en **[!UICONTROL maak vervolgens Component]**.
-1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Volgende]**:
+1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]**.
+1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Next]**:
 
    * **[!UICONTROL Label]**: listchildren.
-   * **[!UICONTROL Titel]**: Mijn component Listchildren.
-   * **[!UICONTROL Omschrijving]**: Dit is de component My Listchildren.
+   * **[!UICONTROL Title]**: Mijn component Listchildren.
+   * **[!UICONTROL Description]**: Dit is de component My Listchildren.
 
-1. Klik op **[!UICONTROL Volgende]** totdat het deelvenster **[!UICONTROL Onderliggende]** objecten toestaan wordt weergegeven en klik op **[!UICONTROL OK]**.
+1. Blijf klikken **[!UICONTROL Next]** tot het **[!UICONTROL Allowed Children]** paneel verschijnt, en klik dan **[!UICONTROL OK]**.
 
 #### Het script List Children maken {#creating-the-list-children-script}
 
@@ -749,11 +757,12 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
 
 1. Maak het dialoogknooppunt onder de component listchildren:
 
-   1. Klik in CRXDE Lite met de rechtermuisknop op het `/apps/mywebsite/components/listchildren`knooppunt en klik op **[!UICONTROL Maken > Dialoogvenster]** maken.
+   1. Klik in CRXDE Lite met de rechtermuisknop op het `/apps/mywebsite/components/listchildren`knooppunt en klik **[!UICONTROL Create > Create Dialog]**.
    1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op OK
 
       * **[!UICONTROL Label]**: `dialog`
-      * **[!UICONTROL Titel]**: `Edit Component` en klik op **[!UICONTROL OK]**.
+      * **[!UICONTROL Title]**: `Edit Component` en klik **[!UICONTROL OK]**.
+
    ![screen_shot_2012-03-07at45818pm](assets/screen_shot_2012-03-07at45818pm.png)
 
    Met de volgende eigenschappen:
@@ -761,23 +770,25 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
    ![screen_shot_2012-03-07at50415pm](assets/screen_shot_2012-03-07at50415pm.png)
 
 1. Select the `/apps/mywebsite/components/listchildren/dialog/items/items/tab1` node.
-1. Wijzig op het tabblad **[!UICONTROL Eigenschappen]** de waarde van de eigenschap **[!UICONTROL title]** in `List Children`
+1. Wijzig op het **[!UICONTROL Properties]** tabblad de waarde van de **[!UICONTROL title]** eigenschap in `List Children`
 
    ![chlimage_1-117](assets/chlimage_1-117.png)
 
-1. Selecteer het knooppunt **tab1** en klik op **[!UICONTROL Maken > Knooppunt]** maken, voer de volgende eigenschapswaarden in en klik op **[!UICONTROL OK]**:
+1. Selecteer het knooppunt **tab1** en klik **[!UICONTROL Create > Create Node]**, voer de volgende eigenschapswaarden in en klik op **[!UICONTROL OK]**:
 
-   * **[!UICONTROL Naam]**: items
+   * **[!UICONTROL Name]**: items
    * **[!UICONTROL Type]**: cq:WidgetCollection
+
    ![screen_shot_2012-03-07at51018pm](assets/screen_shot_2012-03-07at51018pm.png)
 
 1. Maak een knooppunt onder het knooppunt Items met de volgende eigenschapswaarden:
 
-   * **[!UICONTROL Naam]**: listroot
+   * **[!UICONTROL Name]**: listroot
    * **[!UICONTROL Type]**: cq:Widget
+
    ![screen_shot_2012-03-07at51031pm](assets/screen_shot_2012-03-07at51031pm.png)
 
-1. Voeg eigenschappen voor de listrootknoop toe om het als tekstgebied te vormen. Elke rij in de volgende tabel vertegenwoordigt een eigenschap. Klik op Alles **** opslaan als u klaar bent.
+1. Voeg eigenschappen voor de listrootknoop toe om het als tekstgebied te vormen. Elke rij in de volgende tabel vertegenwoordigt een eigenschap. Klik wanneer u klaar bent op **[!UICONTROL Save All]**.
 
    | Naam | Type | Waarde |
    |---|---|---|
@@ -812,13 +823,13 @@ Als u de volledige werking van deze component wilt zien, kunt u de pagina Produc
 * als de bovenliggende pagina (&quot;Pad van hoofdmap van lijst&quot;) niet is gedefinieerd.
 * als de bovenliggende pagina (&quot;Pad van hoofdmap van lijst&quot;) is gedefinieerd.
 
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. De component listchildren ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. De component listchildren ziet er als volgt uit:
 
    ![chlimage_1-118](assets/chlimage_1-118.png)
 
 1. ![chlimage_1-119](assets/chlimage_1-119.png)
 
-1. Als pad van hoofdmap van lijst voert u in: `/content/mywebsite/en`. Click **[!UICONTROL OK]**. De component listchildren op de pagina ziet er nu als volgt uit:
+1. Als pad van hoofdmap van lijst voert u in: `/content/mywebsite/en`. Klik op **[!UICONTROL OK]**. De component listchildren op de pagina ziet er nu als volgt uit:
 
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
@@ -837,18 +848,18 @@ Het ziet er als volgt uit:
 
 >[!NOTE]
 >
->Adobe Experience Manager beschikt over een logo met meer functies ( `/libs/foundation/components/logo`).
+>Adobe Experience Manager biedt een logo met meer volledige functionaliteit ( `/libs/foundation/components/logo`).
 
 #### Het knooppunt Logo-component maken {#creating-the-logo-component-node}
 
 Voer de volgende stappen uit om het logo-onderdeel te maken:
 
-1. Klik in CRXDE Lite met de rechtermuisknop op /apps/mywebsite/components, selecteer **[!UICONTROL Maken]** en **[!UICONTROL vervolgens Component]** maken.
+1. Klik in CRXDE Lite met de rechtermuisknop op /apps/mywebsite/components en selecteer **[!UICONTROL Create]** vervolgens **[!UICONTROL Create Component]**.
 1. Voer in het dialoogvenster Component maken de volgende eigenschapswaarden in en klik op Volgende:
 
    * **[!UICONTROL Label]**: `logo`.
-   * **[!UICONTROL Titel]**: `My Logo Component`.
-   * **[!UICONTROL Omschrijving]**: `This is My Logo Component`.
+   * **[!UICONTROL Title]**: `My Logo Component`.
+   * **[!UICONTROL Description]**: `This is My Logo Component`.
 
 1. Klik op Volgende totdat u het laatste deelvenster van het dialoogvenster bereikt en klik op **[!UICONTROL OK]**.
 
@@ -897,20 +908,20 @@ Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerp
 
 1. Maak het dialoogvenster onder de logocomponent:
 
-   1. Klik met de rechtermuisknop op het `/apps/mywebsite/components/logo` knooppunt en klik op **[!UICONTROL Maken > Dialoogvenster]** maken.
+   1. Klik met de rechtermuisknop op het `/apps/mywebsite/components/logo` knooppunt en klik op **[!UICONTROL Create > Create Dialog]**.
    1. Typ de volgende eigenschapswaarden en klik op **[!UICONTROL OK]**:
 
-      * **[!UICONTROL Label]**`design_dialog`
-      * **[!UICONTROL Titel]**`Logo (Design)`
+      * **[!UICONTROL Label]** `design_dialog`
+      * **[!UICONTROL Title]** `Logo (Design)`
 
-1. Klik met de rechtermuisknop op het knooppunt tab1 in de vertakking design_dialog en klik op Verwijderen. Klik op Alles **[!UICONTROL opslaan]**.
-1. Maak onder het `design_dialog/items/items`knooppunt een nieuw knooppunt met de naam `img` van het type `cq:Widget`. Voeg de volgende eigenschappen toe en klik vervolgens op **[!UICONTROL Alles]** opslaan:
+1. Klik met de rechtermuisknop op het knooppunt tab1 in de vertakking design_dialog en klik op Verwijderen. Klik op **[!UICONTROL Save All]**.
+1. Maak onder het `design_dialog/items/items`knooppunt een nieuw knooppunt met de naam `img` van het type `cq:Widget`. Voeg de volgende eigenschappen toe en klik op **[!UICONTROL Save All]**:
 
    | Naam | Type | Waarde |
    |---|---|---|
    | fileNameParameter | Tekenreeks | ./imageName |
    | fileReferenceParameter | Tekenreeks | ./imageReference |
-   | name | Tekenreeks | ./image |
+   | name | Tekenreeks | ./afbeelding |
    | title | Tekenreeks | Afbeelding |
    | xtype | Tekenreeks | html5smartimage |
 
@@ -920,8 +931,8 @@ Maak het dialoogvenster voor het configureren van de logocomponent in de ontwerp
 
 Maak het script waarmee de logoafbeelding wordt opgehaald en naar de pagina wordt geschreven.
 
-1. Klik met de rechtermuisknop op het knooppunt voor de logocomponent en klik op **[!UICONTROL Maken > Bestand]** maken om het scriptbestand img.GET.java te maken.
-1. Open het bestand, kopieer de volgende code naar het bestand en klik op Alles **** opslaan:
+1. Klik met de rechtermuisknop op het knooppunt voor de logocomponent en klik **[!UICONTROL Create > Create File]** om het scriptbestand img.GET.java te maken.
+1. Open het bestand, kopieer de volgende code naar het bestand en klik op **[!UICONTROL Save All]**:
 
 ```java
 package apps.mywebsite.components.logo;
@@ -1004,7 +1015,7 @@ public class img_GET extends AbstractImageServlet {
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. Het logo ziet er als volgt uit, hoewel momenteel alleen de onderliggende koppeling zichtbaar is:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. Het logo ziet er als volgt uit, hoewel momenteel alleen de onderliggende koppeling zichtbaar is:
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
 
@@ -1012,16 +1023,16 @@ public class img_GET extends AbstractImageServlet {
 
 In deze sectie wordt beschreven hoe u een afbeelding instelt als uw logo in het dialoogvenster Ontwerpmodus.
 
-1. Open de pagina **[!UICONTROL Producten]** in uw browser en klik op de knop **[!UICONTROL Ontwerpen]** onder aan Sidetrap om de modus **[!UICONTROL Ontwerpen]** te activeren.
+1. Open de **[!UICONTROL Products]** pagina in uw browser en klik op de **[!UICONTROL Design]** knop onder aan Sidetrap om de **[!UICONTROL Design]** modus te activeren.
 
    ![](do-not-localize/chlimage_1-10.png)
 
-1. Klik in het ontwerp van de logobalk op **[!UICONTROL Bewerken]** om het dialoogvenster te gebruiken voor het bewerken van de instellingen voor de logocomponent.
-1. Klik in het dialoogvenster in het deelvenster van het tabblad **[!UICONTROL Afbeelding]** , blader naar de `logo.png` afbeelding die u uit het `mywebsite.zip` bestand hebt geëxtraheerd en klik op **[!UICONTROL OK]**.
+1. Klik in de balk Ontwerpen van het logo **[!UICONTROL Edit]** om het dialoogvenster te gebruiken voor het bewerken van de instellingen voor de logocomponent.
+1. Klik in het dialoogvenster in het deelvenster van het **[!UICONTROL Image]** tabblad, blader naar de `logo.png` afbeelding die u uit het `mywebsite.zip` bestand hebt geëxtraheerd en klik op **[!UICONTROL OK]**.
 
    ![chlimage_1-124](assets/chlimage_1-124.png)
 
-1. Klik op het driehoekje op de titelbalk van de Sidetrap om terug te keren naar de modus **[!UICONTROL Bewerken]** .
+1. Klik op het driehoekje op de titelbalk van de Sidetrap om terug te keren naar de **[!UICONTROL Edit]** modus.
 
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
@@ -1046,7 +1057,7 @@ In deze sectie neemt u de component breadcrumb (trail) op. Dit is een van de bas
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina **[!UICONTROL Products 1]** opnieuw in uw browser. De trailcomponent ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products 1]** pagina opnieuw in uw browser. De trailcomponent ziet er als volgt uit:
 
    ![chlimage_1-125](assets/chlimage_1-125.png)
 
@@ -1067,7 +1078,7 @@ In deze sectie neemt u de component title op. Dit is een van de basiscomponenten
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. De component title ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. De component title ziet er als volgt uit:
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
@@ -1092,7 +1103,7 @@ Voeg de component parsys (één van de stichtingscomponenten) aan uw component v
    <cq:include path="par" resourceType="foundation/components/parsys" />
    ```
 
-1. Vernieuw in uw browser de pagina **[!UICONTROL Producten]** . Het heeft nu de parsys component, die als volgt wordt gezien:
+1. Vernieuw de **[!UICONTROL Products]** pagina in uw browser. Het heeft nu de parsys component, die als volgt wordt gezien:
 
    ![chlimage_1-127](assets/chlimage_1-127.png)
 
@@ -1102,13 +1113,13 @@ Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te
 
 >[!NOTE]
 >
->Adobe Experience Manager beschikt over een meer complete afbeeldingscomponent ( `/libs/foundation/components/image`).
+>Adobe Experience Manager biedt een imageonderdeel met meer functies ( `/libs/foundation/components/image`).
 
 #### De afbeeldingscomponent maken {#creating-the-image-component-1}
 
-1. Klik met de rechtermuisknop op het `/apps/mywebsite/components/logo` knooppunt en klik op **[!UICONTROL Kopiëren]**.
-1. Klik met de rechtermuisknop op het `/apps/mywebsite/components` knooppunt en klik op **[!UICONTROL Plakken]**.
-1. Klik met de rechtermuisknop op het `Copy of logo` knooppunt, klik op **[!UICONTROL Naam wijzigen]**, verwijder de bestaande tekst en typ `image`.
+1. Klik met de rechtermuisknop op het `/apps/mywebsite/components/logo` knooppunt en klik **[!UICONTROL Copy]**.
+1. Klik met de rechtermuisknop op het `/apps/mywebsite/components` knooppunt en klik op **[!UICONTROL Paste]**.
+1. Klik met de rechtermuisknop op het `Copy of logo` knooppunt, klik **[!UICONTROL Rename]**, verwijder de bestaande tekst en typ `image`.
 
 1. Selecteer het `image` componentknooppunt en wijzig de volgende eigenschapswaarden:
 
@@ -1117,9 +1128,9 @@ Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te
 
 1. Voeg een eigenschap toe aan het `image` knooppunt met de volgende eigenschapswaarden:
 
-   * **[!UICONTROL Naam]**: componentGroup
-   * **[!UICONTROL Type]**:String
-   * **[!UICONTROL Waarde]**: MyWebsite
+   * **[!UICONTROL Name]**: componentGroup
+   * **[!UICONTROL Type]**: Tekenreeks
+   * **[!UICONTROL Value]**: MyWebsite
 
 1. Wijzig onder het `image` knooppunt de naam van het `design_dialog` knooppunt in `dialog`.
 
@@ -1133,7 +1144,7 @@ Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te
 
 In deze sectie wordt beschreven hoe u het afbeeldingsscript maakt.
 
-1. Openen `/apps/mywebsite/components/image/` `image.jsp`
+1. Open `/apps/mywebsite/components/image/` `image.jsp`
 1. Vervang de bestaande code door de volgende code en sla de wijzigingen vervolgens op:
 
    ```xml
@@ -1163,17 +1174,17 @@ In deze sectie gebruikt u een knooppunt cq:editConfig om u in staat te stellen e
 
 1. Maak in CRXDE Lite onder het knooppunt /apps/mywebsite/components/image als volgt een nieuw knooppunt:
 
-   * **[!UICONTROL Naam]**: cq:editConfig.
+   * **[!UICONTROL Name]**: cq:editConfig.
    * **[!UICONTROL Type]**: cq:EditConfig.
 
 1. Maak onder het knooppunt cq:editConfig als volgt een nieuw knooppunt:
 
-   * **[!UICONTROL Naam]**: cq:dropTargets.
+   * **[!UICONTROL Name]**: cq:dropTargets.
    * **[!UICONTROL Type]**: cq:DropTargetConfig.
 
 1. Onder het knooppunt cq:dropTargets maakt u als volgt een nieuw knooppunt:
 
-   * **[!UICONTROL Naam]**: afbeelding.
+   * **[!UICONTROL Name]**: afbeelding.
    * **[!UICONTROL Type]**: nt:ongestructureerd.
 
 1. In CRXDE stelt u de eigenschappen als volgt in:
@@ -1190,19 +1201,19 @@ In deze sectie gebruikt u een knooppunt cq:editConfig om u in staat te stellen e
 
 In deze sectie voegt u het pictogram toe dat naast de afbeeldingscomponent wordt weergegeven wanneer deze in Sidetrap wordt weergegeven:
 
-1. Klik in CRXDE Lite met de rechtermuisknop op het bestand `/libs/foundation/components/image/icon.png` en selecteer **[!UICONTROL Kopiëren]**.
-1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/image` en klik op **[!UICONTROL Plakken]**. Klik vervolgens op Alles **** opslaan.
+1. Klik in CRXDE Lite met de rechtermuisknop op het bestand `/libs/foundation/components/image/icon.png` en selecteer **[!UICONTROL Copy]**.
+1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/image` en klik op **[!UICONTROL Paste]** het knooppunt. Klik vervolgens **[!UICONTROL Save All]**.
 
 #### De afbeeldingscomponent gebruiken {#using-the-image-component}
 
-In deze sectie ziet u de pagina **[!UICONTROL Producten]** en voegt u de afbeeldingscomponent toe aan het alineasysteem.
+In deze sectie ziet u de **[!UICONTROL Products]** pagina en voegt u de afbeeldingscomponent toe aan het alineasysteem.
 
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser.
-1. Klik in de Sidetrap op het pictogram van de **[!UICONTROL ontwerpmodus]** .
-1. Klik op de knop **[!UICONTROL Bewerken]** om het dialoogvenster voor ontwerpen van paren te bewerken.
-1. In het dialoogvenster wordt een lijst met **[!UICONTROL toegestane componenten]** weergegeven. Navigeer naar **[!UICONTROL MyWebsite]**, selecteer de Component **** My Image en klik op **[!UICONTROL OK]**.
-1. Ga terug naar de modus **[!UICONTROL Bewerken]**.
-1. Dubbelklik op het frame parsys (op **[!UICONTROL Sleep hier** componenten of elementen). De **[!UICONTROL kiezers Nieuwe component]** invoegen en **[!UICONTROL Sidetrap]** zien er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser.
+1. Klik op het **[!UICONTROL Design mode]** pictogram in de Sidetrap.
+1. Klik op de **[!UICONTROL Edit]** knop om het ontwerpdialoogvenster van par te bewerken.
+1. In het dialoogvenster wordt een lijst met **[!UICONTROL Allowed Components]** items weergegeven. navigeer naar **[!UICONTROL MyWebsite]**, selecteer de **[!UICONTROL My Image Component]** en klik **[!UICONTROL OK]**.
+1. Terug naar **[!UICONTROL Edit mode]**.
+1. Dubbelklik op het parsys-frame (ingeschakeld **[!UICONTROL Drag components or assets here]**). De **[!UICONTROL Insert New Component]** **[!UICONTROL Sidekick]** kiezers en de kiezers zien er als volgt uit:
 
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
@@ -1224,23 +1235,23 @@ U hebt verschillende opties, zowel in de bewerkingsmodus als in de ontwerpmodus.
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. Selecteer in de mappenstructuur van de pagina AEM-websites de optie `Websites/My Website/English`en klik vervolgens op **[!UICONTROL Nieuw > Nieuwe pagina]**. Geef de volgende eigenschapswaarden op en klik op Maken:
+1. Selecteer in de mappenstructuur van de pagina AEM-websites de optie `Websites/My Website/English`en klik op **[!UICONTROL New > New Page]**. Geef de volgende eigenschapswaarden op en klik op Maken:
 
-   * **[!UICONTROL Titel]**: Werkbalk
-   * Sjabloon **[!UICONTROL voor pagina met pagina-inhoud voor mijn website selecteren]**
+   * **[!UICONTROL Title]**: Werkbalk
+   * Selecteer **[!UICONTROL My Website Content Page Template]**
 
-1. Klik in de lijst met pagina&#39;s met de rechtermuisknop op de pagina **[!UICONTROL Werkbalk]** en klik op **[!UICONTROL Eigenschappen]**. Selecteer **[!UICONTROL Verbergen in navigatie]** en klik op **[!UICONTROL OK]**.
+1. Klik in de lijst met pagina&#39;s met de rechtermuisknop op de **[!UICONTROL Toolbar]** pagina en klik op **[!UICONTROL Properties]**. Selecteer **[!UICONTROL Hide In Navigation]** en klik op **[!UICONTROL OK]**.
 
-   Met de optie **[!UICONTROL Verbergen in navigatie]** voorkomt u dat de pagina wordt weergegeven in navigatiecomponenten, zoals boven- en listchildren.
+   Met deze **[!UICONTROL Hide in Navigation]** optie voorkomt u dat de pagina wordt weergegeven in navigatiecomponenten, zoals boven- en listchildren.
 
-1. Maak onder **[!UICONTROL Werkbalk]** de volgende pagina&#39;s:
+1. Maak onder **[!UICONTROL Toolbar]** de volgende pagina&#39;s:
 
    * Contactpersonen
    * Feedback
    * Aanmelden
    * Zoeken
 
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. Het ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. Het ziet er als volgt uit:
 
    ![chlimage_1-130](assets/chlimage_1-130.png)
 
@@ -1248,34 +1259,34 @@ U hebt verschillende opties, zowel in de bewerkingsmodus als in de ontwerpmodus.
 
 In deze sectie maakt u de component om te zoeken naar inhoud op de website. Deze zoekcomponent kan in het alineasysteem van elke pagina worden geplaatst (bijvoorbeeld op een gespecialiseerde pagina met zoekresultaten).
 
-Het invoervak voor de zoekopdracht ziet er als volgt uit op de **[!UICONTROL Engelse]** pagina:
+Het invoervak voor de zoekopdracht ziet er als volgt uit op de **[!UICONTROL English]** pagina:
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 #### De zoekcomponent maken {#creating-the-search-component-1}
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Maken]** en **[!UICONTROL maak vervolgens Component]**.
+1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]**.
 1. Gebruik het dialoogvenster om de component te configureren:
 
    1. Geef in één eerste deelvenster de volgende eigenschapswaarden op:
 
       * **[!UICONTROL Label]**: zoeken
-      * **[!UICONTROL Titel]**: Mijn zoekcomponent
-      * **[!UICONTROL Omschrijving]**: Dit is mijn zoekcomponent
-      * **[!UICONTROL Groep]**: MyWebsite
-   1. Klik op **[!UICONTROL Volgende]** en klik nogmaals op **[!UICONTROL Volgende]** .
-   1. Klik in het deelvenster **[!UICONTROL Allowed Parents** op de knop **[!UICONTROL +]** en typ `*/parsys`.
+      * **[!UICONTROL Title]**: Mijn zoekcomponent
+      * **[!UICONTROL Description]**: Dit is mijn zoekcomponent
+      * **[!UICONTROL Group]**: MyWebsite
+   1. Klik **[!UICONTROL Next]** en klik vervolgens **[!UICONTROL Next]** opnieuw.
+   1. Klik in het deelvenster **[!UICONTROL Allowed Parents** op de **[!UICONTROL +]** knop en typ `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
 
-1. Klik op Alles **[!UICONTROL opslaan]**.
+1. Klik op **[!UICONTROL Save All]**.
 1. Kopieer de volgende knooppunten en plak deze naar het `apps/mywebsite/components/search` knooppunt:
 
    * `/libs/foundation/components/search/dialog`
    * `` `/libs/foundation/components/search/i18n`
    * `/libs/foundation/components/search/icon.png`
 
-1. Klik op Alles **[!UICONTROL opslaan]**.
+1. Klik op **[!UICONTROL Save All]**.
 
 #### Zoekscript maken {#creating-the-search-script}
 
@@ -1472,7 +1483,7 @@ Ga als volgt te werk om een invoervak voor zoekopdrachten op te nemen in de link
    </div>
    ```
 
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. De zoekcomponent ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. De zoekcomponent ziet er als volgt uit:
 
    ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -1481,15 +1492,15 @@ Ga als volgt te werk om een invoervak voor zoekopdrachten op te nemen in de link
 In deze sectie voegt u uw zoekcomponent toe aan het alineasysteem.
 
 1. Open de pagina **Zoeken** in uw browser.
-1. Klik op het pictogram van de **[!UICONTROL ontwerpmodus]** in de Sidetrap.
-1. Klik op **[!UICONTROL Bewerken]** in het blok Ontwerp van par (onder de titel Zoeken).
-1. Blader in het dialoogvenster omlaag naar de groep **[!UICONTROL Mijn websites]** , selecteer **[!UICONTROL Mijn zoekcomponent]** en klik op **[!UICONTROL OK]**.
-1. Klik in Sidetrap op het driehoekje om terug te keren naar de modus **[!UICONTROL Bewerken]** .
-1. Sleep de **[!UICONTROL Mijn component van het Onderzoek]** van Sidetrap in het parsys kader. Het ziet er als volgt uit:
+1. Klik op het pictogram van de **[!UICONTROL Design]** modus in de Sidetrap.
+1. Klik in het blok Ontwerp van pari (onder de titel Zoeken) op **[!UICONTROL Edit]**.
+1. Blader in het dialoogvenster omlaag naar de **[!UICONTROL My Websites]** groep, selecteer **[!UICONTROL My Search Component]** en klik op **[!UICONTROL OK]**.
+1. Klik op het driehoekje bij Sidetrap om terug te keren naar de **[!UICONTROL Edit]** modus.
+1. Sleep de **[!UICONTROL My Search]** component van de Sidetrap in het parsys kader. Het ziet er als volgt uit:
 
    ![chlimage_1-133](assets/chlimage_1-133.png)
 
-1. Navigeer naar de pagina **[!UICONTROL Producten]** . Zoek naar klanten in de inputdoos en druk **[!UICONTROL binnengaan]**. U wordt omgeleid naar de pagina **[!UICONTROL Zoeken]** . Overschakelen naar de modus **[!UICONTROL Voorvertoning]** : de uitvoer heeft een vergelijkbare indeling als de volgende:
+1. Navigeer naar de **[!UICONTROL Products]** pagina. Zoek naar klanten in de invoerdoos en druk **[!UICONTROL Enter]**. U wordt omgeleid naar de **[!UICONTROL Search]** pagina. Overschakelen naar **[!UICONTROL Preview]** modus: de uitvoer heeft een vergelijkbare indeling als de volgende:
 
    ![chlimage_1-134](assets/chlimage_1-134.png)
 
@@ -1512,7 +1523,7 @@ Voor deze component kunt u verschillende parameters instellen in zowel de bewerk
    ```
 
 1. Sla de wijzigingen op.
-1. Laad de pagina **[!UICONTROL Producten]** opnieuw in uw browser. De hele pagina ziet er als volgt uit:
+1. Laad de **[!UICONTROL Products]** pagina opnieuw in uw browser. De hele pagina ziet er als volgt uit:
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
 
