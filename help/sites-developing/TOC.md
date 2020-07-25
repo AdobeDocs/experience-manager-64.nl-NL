@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Developing User Guide
+user-guide-title: AEM 6.4 Handboek voor het ontwikkelen van gebruikers
+user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 5%
 
 ---
 
@@ -13,7 +17,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
 
 + [Overzicht van de gebruikershandleiding voor ontwikkeling](home.md)
 + Inleiding voor ontwikkelaars{#introduction}
-   + [Aan de slag met het ontwikkelen van AEM Sites - WKND-zelfstudie](getting-started.md)
+   + [Aan de slag met het ontwikkelen van AEM Sites - WKND-tutorial](getting-started.md)
    + [AEM Core Concepts](the-basics.md)
    + [Structuur van de interface voor AEM-aanraking](touch-ui-structure.md)
    + [Concepten van de interface voor AEM-aanraakfuncties](touch-ui-concepts.md)
@@ -30,9 +34,9 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Ontwerpen en de Ontwerper (Klassieke UI)](designer.md)
 + Platform{#platform}
    + [Sling Cheatsheet](sling-cheatsheet.md)
-   + [Sling Adapters gebruiken](sling-adapters.md)
+   + [Sling Adapters](sling-adapters.md)
    + [Tagbibliotheken](taglib.md)
-   + Templates{#templates}
+   + Sjablonen{#templates}
       + [Sjablonen](templates.md)
       + [Paginasjablonen - Bewerkbaar ](page-templates-editable.md)
       + [Paginasjablonen - statisch](page-templates-static.md)
@@ -108,7 +112,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [SPA-paginacomponent](spa-page-component.md)
       + [Dynamisch model aan Component Mapping voor SPAs](spa-dynamic-model-to-component-mapping.md)
       + [SPA Model Routing](spa-routing.md)
-      + [Integratie van SPA- en Adobe Experience Platform](spa-launch.md)
+      + [Integratie van SPA en Adobe Experience Platform starten](spa-launch.md)
       + [SPA en rendering op de server](spa-ssr.md)
       + [API-verwijzingen voor SPA Javascript](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
@@ -117,7 +121,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Inhoudsfragmenten en inhoudsservices in AEM](https://helpx.adobe.com/experience-manager/kt/sites/using/content-fragments-content-services-feature-video-understand.html)
 + Ontwikkelingsinstrumenten{#devtools}
    + [Ontwikkelingsinstrumenten](dev-tools.md)
-   + [AEM-moderniseringsgereedschappen](modernization-tools.md)
+   + [AEM-moderniseringstools](modernization-tools.md)
    + [Dialoogvenster-editor](dialog-editor.md)
    + [Dialoogvenster omzetten](dialog-conversion.md)
    + [Ontwikkelen met CRXDE Lite](developing-with-crxde-lite.md)
@@ -147,7 +151,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [De consoles aanpassen](customizing-consoles-touch.md)
    + [Weergaven van pagina-eigenschappen aanpassen](page-properties-views.md)
    + [Pagina configureren voor Bulk bewerken van pagina-eigenschappen](bulk-editing.md)
-   + [Inhoudsfragmenten aanpassen en uitbreiden](customizing-content-fragments.md)
+   + [Contentfragmenten aanpassen en uitbreiden](customizing-content-fragments.md)
    + Werkstromen uitbreiden{#extending-workflows}
       + [Workflows ontwikkelen en uitbreiden](workflows.md)
       + [Workflowmodellen maken](workflows-models.md)
@@ -157,18 +161,18 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
       + [Best practices voor workflow](workflows-best-practices.md)
       + [Referentie workflowproces](workflows-process-ref.md)
    + [Het beheer van meerdere sites uitbreiden](extending-msm.md)
-   + Tracering en analyse{#extending-analytics}
+   + Tekstspatiëring en Analytics{#extending-analytics}
       + [Gebeurtenistracking uitbreiden](extending-analytics.md)
       + [Adobe Analytics-tracking toevoegen aan componenten](extending-analytics-components.md)
-      + [Het Adobe Analytics Framework aanpassen](extending-analytics-framework.md)
-      + [Serverpaginanamen voor analyse implementeren](extending-analytics-pa-naming.md)
+      + [Adobe Analytics Framework aanpassen](extending-analytics-framework.md)
+      + [Serverpaginanamen voor Analytics implementeren](extending-analytics-pa-naming.md)
    + Cloud Services{#extending-cloud-services}
-      + [Cloud Service Configurations](extending-cloud-config.md)
-      + [Een aangepaste Cloud-service maken](extending-cloud-config-custom-cloud.md)
+      + [Configuraties van Cloud Servicen](extending-cloud-config.md)
+      + [Een aangepaste Cloud Service maken](extending-cloud-config-custom-cloud.md)
    + [Aangepaste extensies maken](extending-campaign-extensions.md)
    + Formulieren{#extending-forms}
       + [Aangepaste formuliertoewijzingen maken](extending-campaign-form-mapping.md)
-      + [Aangepaste AEM-paginasjabloon maken met Adobe Campagne Form Components](extending-campaign-custom-template.md)
+      + [Aangepaste AEM-paginasjabloon maken met Adobe Campaign-formuliercomponenten](extending-campaign-custom-template.md)
       + [Analyse aanvragen](analyze-request.md)
    + [Services integreren met de JMX-console](jmx-integration.md)
    + [De Bulk-editor ontwikkelen](dev-bulk-editor.md)
@@ -189,7 +193,7 @@ source-git-commit: 44f2d12a5261f0649319f84516856c9522e0df62
    + [Controlelijsten](checklists.md)
    + [Dag](tough-day.md)
    + [Uw gebruikersinterface testen](hobbes.md)
-+ Aanbevolen werkwijzen{#bestpractices}
++ Best practices voor{#bestpractices}
    + [Overzicht van best practices](best-practices.md)
    + [AEM-ontwikkelingrichtlijnen en beste praktijken](dev-guidelines-bestpractices.md)
    + [Aanbevolen werkwijzen voor ontwikkeling](development-practices.md)
