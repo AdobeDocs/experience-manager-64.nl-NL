@@ -2,9 +2,13 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Authoring User Guide
+user-guide-title: AEM 6.4 Handleiding voor ontwerpgebruikers
+user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 42%
 
 ---
 
@@ -37,7 +41,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Een pagina ontwerpen voor mobiele apparaten](mobile.md)
    + [AEM-probleem bij ontwerpen oplossen](troubleshooting.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](page-authoring-keyboard-shortcuts.md)
-   + [Aanbevolen werkwijzen](best-practices.md)
+   + [Best practices voor](best-practices.md)
 + Site- en paginafuncties {#siteandpage}
    + [Tags gebruiken](tags.md)
    + [Paginasjablonen maken](templates.md)
@@ -47,7 +51,7 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Onderdelenconsole](default-components-console.md)
    + [Responsieve lay-out](responsive-layout.md)
    + [Inhoudsinzicht](content-insights.md)
-   + [Toegankelijke inhoud maken (WCAG 2.0-compatibiliteit)](creating-accessible-content.md)
+   + [Toegankelijke content maken (WCAG 2.0-compatibiliteit)](creating-accessible-content.md)
    + [Basisstructuur](scaffolding.md)
    + [Componenten configureren in ontwerpmodus](default-components-designmode.md)
    + [Elementaire componenten](default-components-foundation.md)
@@ -71,8 +75,8 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
 + Paginaprestaties {#page-performance}
    + [Inhoudsinzicht](content-insights.md)
    + [Paginaprestaties analyseren](ci-analyze.md)
-   + [Gegevens van paginaanalyse bekijken](pa-using.md)
-   + [Functies voor zoeken en promoten aan uw pagina toevoegen](search-and-promote.md)
+   + [Analytics-gegevens pagina bekijken](pa-using.md)
+   + [Search&amp;Promote toevoegen aan uw pagina](search-and-promote.md)
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
    + [Pagina&#39;s voorvertonen met ContextHub-gegevens](ch-previewing.md)
@@ -83,9 +87,9 @@ source-git-commit: 3a1b35b9b6591953dd6e8c03490aee15aa0780d2
    + [Audiences beheren](managing-audiences.md)
    + [Aanbiedingen maken en beheren](offerlib.md)
    + [Inzicht in segmentering](segmentation-overview.md)
-+ AEM en Adobe-campagne {aem-adobe-campagne}
-   + [Werken met Adobe-campagne](adobe-campaign.md)
-   + [Werken met Adobe Campagne Classic en Adobe Campagne Standard](campaign.md)
-   + [Adobe-campagne als doel instellen](target-adobe-campaign.md)
-   + [Adobe Campagneformulieren maken in AEM](adobe-campaign-forms.md)
-   + [Adobe-campagnecomponenten](adobe-campaign-components.md)
++ AEM en Adobe Campaign {aem-adobe-campagne}
+   + [Werken met Adobe Campaign](adobe-campaign.md)
+   + [Werken met Adobe Campaign Classic en Adobe Campaign Standard](campaign.md)
+   + [Je Adobe Campaign als doelgroep instellen](target-adobe-campaign.md)
+   + [Adobe Campaign-formulieren maken in AEM](adobe-campaign-forms.md)
+   + [Adobe Campaign-componenten](adobe-campaign-components.md)
