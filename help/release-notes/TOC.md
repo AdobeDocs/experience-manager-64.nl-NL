@@ -3,8 +3,9 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Opmerkingen bij de release AEM 6.4
+user-guide-description: Learn about the latest new features in AEM 6.4 in the release notes.
 translation-type: tm+mt
-source-git-commit: 04002fdd004e11ec7a4a950dac6565fec109e55d
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '68'
 ht-degree: 2%
@@ -18,10 +19,10 @@ ht-degree: 2%
 + [Algemene opmerkingen bij de release](release-notes.md)
 + [Release-aantekeningen bij Service Pack](sp-release-notes.md)
 + [Opmerkingen bij de release Cumulative Fix Pack](cfp-release-notes.md)
-+ [Opmerkingen bij de release AEM-sites](sites.md)
++ [Opmerkingen bij de release AEM Sites](sites.md)
 + [Opmerkingen bij de release AEM Assets](assets.md)
-+ [Opmerkingen bij de release AEM-formulieren](forms.md)
-+ [Opmerkingen bij de release AEM-gemeenschappen](communities-release-notes.md)
++ [Opmerkingen bij de release AEM Forms](forms.md)
++ [Opmerkingen bij de release AEM Communities](communities-release-notes.md)
 + [Opmerkingen bij de release AEM 3D](aem3d-release-notes.md)
 + [Verouderde en verwijderde functies](deprecated-removed-features.md)
 + [Bekende problemen](known-issues.md)
