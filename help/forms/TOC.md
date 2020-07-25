@@ -4,8 +4,9 @@ product: adobe experience manager
 sub-product: 'formulieren '
 audience: end-user
 user-guide-title: Gebruikershandleiding voor AEM 6.4-formulieren
+user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 4f6b0555b681d257c6d92490daa85a3ae2439a96
+source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
 workflow-type: tm+mt
 source-wordcount: '3702'
 ht-degree: 0%
@@ -15,8 +16,8 @@ ht-degree: 0%
 # AEM 6.4 - Gebruikershandleiding voor formulieren {#forms}
 
 + [Gebruikershandleiding voor AEM 6.4-formulieren](home.md)
-+ Release-opmerkingen {#release-notes-new-features}
-   + [Release-opmerkingen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
++ Releaseopmerkingen {#release-notes-new-features}
+   + [Releaseopmerkingen](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/forms.html)
    + [Overzicht van nieuwe functies](using/whats-new.md)
    + [Verouderde functies](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/deprecated-removed-features.html)
 + Aan de slag {#getting-started}
@@ -192,7 +193,7 @@ ht-degree: 0%
 + Workflows {#workflows}
    + [Forms-centric workflow op OSGi](using/aem-forms-workflow.md)
    + [Forms-centric workflow op OSGi - Step Reference](using/aem-forms-workflow-step-reference.md)
-   + [Een gebruiker of groep dynamisch selecteren voor workflowstappen op basis van AEM Forms](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
+   + [Selecteer dynamisch een gebruiker of groep voor AEM Forms-centric werkstroomstappen](using/dynamically-select-a-user-or-group-for-aem-workflow.md)
    + [Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows](using/capabilities-osgi-jee-workflows.md)
    + [Documentservices-API&#39;s starten vanuit de AEM-workflow](using/initiating-document-services-apis-aem.md)
 + Werkruimte AEM Forms {#use-aem-forms-workspace}
