@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: ba2dec27319c1c7094db9f08130a50164c8e9713
+source-git-commit: 42238ab0c76fbe114ae1646c9f69311df45d8722
 workflow-type: tm+mt
-source-wordcount: '21533'
+source-wordcount: '21531'
 ht-degree: 0%
 
 ---
@@ -99,7 +99,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 ### Integrations {#integrations-6480}
 
-* De vervolgkeuzemenu&#39;s **Company** and **Reporting** Suite zijn verborgen als Bron **** melden is geselecteerd tijdens de configuratie van Adobe Analytics in Experience Manager-cloudservices (NPR-31729).
+* De vervolgkeuzemenu&#39;s **Company** and **Reporting** Suite zijn verborgen als Bron **** melden is geselecteerd tijdens het configureren van Adobe Analytics in Experience Manager-cloudservices (NPR-31729).
 
 * Adobe Campaign-eigenschappen worden niet opgeschoond wanneer een taalkopie van een nieuwsbrief die aan een Adobe Campaign is gekoppeld, wordt gemaakt, terwijl opruimen plaatsvindt wanneer een nieuwsbrief die aan een Adobe Campaign is gekoppeld, wordt gekopieerd of geplakt (NPR-32540).
 
@@ -995,13 +995,9 @@ Eén bundel blijft geïnstalleerd nadat het Forms Management-pakket op de vertak
 
 * Sommige JPEG-afbeeldingen in een XDP-sjabloon worden niet correct gerenderd.  NPR-26702: Hotfix voor LC-3917457
 
-**Formulieren - OBSOLETE**
-
-* De service voor het vastleggen van papier loopt vast tijdens het verwerken van TIFF-bestanden. NPR-28079:  Hotfix voor CQ-4240649
-
 **Formulieren - workflow**
 
-* HTML5-formulieren met het standaardverzendproces in an.lca werken niet op JBoss 7. NPR-28675: Hotfix voor CQ-4243928
+* HTML5-formulieren met het standaardverzendproces in an.lca werken niet op JBoss 7. NPR-28675: Hotfix voor CQ-4242928
 * Kan geen PDF forms verzenden in HTML-werkruimte. NPR-28058: Hotfix voor CQ-4260373
 * De gegevens van de klant worden gedrukt in informatielogboeken gebruikend de Werkstroom van de Vormen van de Dienst van de Dienst van de BDM aanhalen. Hotfix voor CQ-4260385
 
@@ -1070,7 +1066,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * De rijke tekstredacteur wordt onbruikbaar wanneer geschakeld van volledig scherm aan het drijven dialoog. De zwevende weergave bevat twee teksteditors met opmaak. NPR-25589: Hotfix voor CQ-4206008
 * Wanneer op een tekstveld op de Enter-toets wordt gedrukt, schakelt de Rich Text Editor over naar de modus Volledig scherm. NPR-26204: Hotfix voor CQ-4245893
 * De plug-in List van de RTF-editor wordt automatisch uitgeschakeld en wijzigingen worden niet toegestaan. NPR-26507: Hotfix voor CQ-4239387
-* Wanneer een speciaal teken wordt toegevoegd aan het venster van de RTF-editor, schuift het venster naar de bovenkant. NPR-26435: Hotfix voor CQ-4249869
+* Wanneer een speciaal teken aan het venster van de RTF-editor wordt toegevoegd, schuift het venster naar de bovenkant. NPR-26435: Hotfix voor CQ-4249869
 * Clientcontextsegment.js in cache plaatsen tegenover vragen die niet in cache zijn geplaatst. NPR-26622: Hotfix voor CQ-4253486
 * Wanneer een kindregel van de auteursinstantie aan de publicatieinstantie wordt geactiveerd, houdt het publiceren instantie op werkend. NPR-26601: Hotfix voor CQ-4253588
 * Wanneer de rijke tekstredacteur met veelvoudige gebieden wordt gecombineerd, Uncaught TypeError: fieldAPI.getName is geen functie bij foundation.js fout komt voor. NPR-27146: Hotfix voor CQ-4253155
@@ -1111,7 +1107,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * Prestatieproblemen met org.apache.sling.i18n. NPR-26812: Hotfix voor SLING-7543
 * Kan de knoopeigenschappen niet zien wanneer de invoer-XML is opgemaakt en geïmplementeerd. NPR-26198: Hotfix voor CQ-4250448
 * IndexOutOfBoundsException in ResourceProviderTracker. NPR-26968: Hotfix voor GRANITE-23310
-* De JMX-console accumuleert een groot aantal beheersessies en elke 5 minuten wordt een nieuwe sessie geopend. NPR-26957: Hotfix voor CQ-4251090
+* De JMX-console accumuleert een groot aantal beheersessies en elke 5 minuten wordt een nieuwe sessie geopend. NPR-26958: Hotfix voor CQ-4251090
 * Na een upgrade van 6.2 naar 6.4 geeft het logbestand stacktracering weer voor niet-gesloten bronnenoplosser com.adobe.granite.repository.hc.impl.content.sling.SlingContentHealthCheck. NPR-26176: Hotfix voor graniet-21734
 * Wanneer een uit-van-de-doos afstotingsagent van de verzender wordt gevormd om aliassen bij te werken, ontbreekt de verrichting met een StackOverflowError. NPR-26373: Hotfix voor CQ-4242928
 * De replicatie gebruikt verlopen Token OAuth tot het ontbreekt. NPR-25894
@@ -1142,7 +1138,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.3.0 zijn:
 * Er worden slechts 10 groepen vermeld op de pagina met bronnen voor activering, zelfs als paginering is ingeschakeld voor een groepslijst. NPR-26934: Hotfix voor CQ-4252985
 * De optie om onderzoek naar Geplande Post in dagboekcomponent toe te laten/onbruikbaar te maken wordt verstrekt in ConfigMgr, en de baan SearchScheduledPosts wordt geoptimaliseerd. NPR-26923: Hotfix voor CQ-4250463
 * Zoeken op trefwoorden in adres werkt niet op de pagina met agendacomponenten wanneer de AEM-gemeenschap is ingesteld op werken met DSRP. NPR-26737: Hotfix voor CQ-4258493
-* Geïmplementeerde directe verbinding met de commentaar in plaats van de belangrijkste post in de detail van een commentaar, voor moderatie UI &amp; enablement middelen. NPR-26704: Hotfix voor CQ-4251381
+* Geïmplementeerde directe verbinding met de commentaar in plaats van de belangrijkste post in de detail van een commentaar, voor moderatie UI &amp; enablement middelen. NPR-26702: Hotfix voor CQ-4251381
 * Inhoud die via multiselection op moderatieconsole wordt gemodereerd, wordt niet weergegeven bij Activiteitenstroom. NPR-26695: Hotfix voor CQ-4253244
 * Als u met Voornaam en Achternaam zoekt in het veld Aan van Communityberichten, wordt het verwachte resultaat niet geretourneerd. NPR-26385: Hotfix voor CQ-4248673
 * Er is een fout opgetreden tijdens het uploaden van een bijlage buiten de afbeelding (bijvoorbeeld .pdf) in het forum. NPR-27360: Hotfix voor CQ-4257753
@@ -1255,6 +1251,7 @@ De belangrijkste kenmerken voor AEM 6.4.3.0-formulieren zijn:
 
 * Kan instellingen voor rapportage over standaarden en compatibiliteit voor PDF Generator niet weergeven. NPR-26715: Hotfix voor CQ-4253384
 * convertpdf binair bestand ontbreekt in het add-on pakket van AIX Forms, wat fout veroorzaakt terwijl het aanhalen van de dienst PDFA. Hotfix voor CQ-4257873
+* De service voor het vastleggen van papier loopt vast tijdens het verwerken van TIFF-bestanden. NPR-28079:  Hotfix voor CQ-4240649
 
 **Document Services**
 
@@ -1377,7 +1374,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 
 **Platform**
 
-* Lus opnieuw indexeren | NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op zijn plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
+* Lus opnieuw indexeren | NPE terwijl het uitvoeren van BinaryTextExtraction tijdens op plaats verbetering van 6.3 tot 6.4. Hotfix voor graniet - 21677
 * Grensoverschrijdende overschrijving van intern gemarkeerd pad /libs/cq/cloudserviceconfigs/templates/configpage/jcr:content - Probleem tijdens het uitvoeren van patroondetector. NPR-25036: Hotfix voor CQ-4248597
 * Logboekvermeldingen die niet zijn geschreven vanwege NPE in LogEntryImpl. NPR-25627: Hotfix voor graniet-22383
 * Replicatie van gebeurtenis delete controleert niet op rechten. NPR-25679: Hotfix voor CQ-4241234
@@ -1394,7 +1391,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * SAML richt opnieuw login aan logout pagina gebruikend Okta IDP. NPR-25523: Hotfix voor GRANITE-22364
 * IMS-verificatie via externe IDP OAuth Provider configureert de in AEM gemaakte gebruiker. NPR-25301: Hotfix voor graniet-22363
 
-**MAC - test &amp; de Integratie van Target**
+**MAC - Test &amp; de Integratie van het Doel**
 
 * (Doel) Tekstcomponentfout tijdens het toewijzen van doelen. Hotfix voor CQ-4233343
 
@@ -1476,7 +1473,7 @@ Enkele belangrijke hoogtepunten van AEM 6.4.2.0 zijn:
 * (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
 * De pro-actieve Steun UI van de Stichting steunt om de stabiliteit van het product te verbeteren. NPR-24334
 
-**MAC - test &amp; de Integratie van Target**
+**MAC - Test &amp; de Integratie van het Doel**
 
 * De tweede pagina van de Tovenaar Personalization ( die door &quot;Begin het richten&quot;wordt gelanceerd) is leeg en werpt consolefouten. Hotfix voor CQ-4253277
 
@@ -1744,7 +1741,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Internationalisatie werkt niet op taalniveau. NPR-22967, NPR-23046: Hotfix voor graniet-21111
 * Proactieve back-up voor granite.ui.commons-oplossingen. NPR-23537
 * Proactieve back-up voor granite.ui.content-oplossingen. NPR-23535
-* Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23538
+* Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23536
 * Kan niet meerdere gebruikers tegelijk uit de groep verwijderen. NPR-23846
 * (OMEGA) Rapporteer &quot;Functie&quot; alleen in het Engels. NPR-23989: Hotfix voor graniet-21231
 * (Design Importer) Als u een pagina importeert, worden de JS, css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
@@ -1803,12 +1800,12 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Kan geen enkele workflow bewerken nadat deze eenmaal is bewerkt. NPR-23742: Hotfix voor CQ-4238526
 * (Klassieke UI) Wanneer het uitgeven van de werkschemalanceringen, verdwijnen de voorwaarden veroorzakend de werkschema&#39;s om zonder enige voorwaarden te lanceren. NPR-23835: Hotfix voor CQ-4239153
 * Project inbox: als u overschakelt naar de kalenderweergave, wordt de hoofdinhoud in het Postvak IN weergegeven. NPR-23947: Hotfix voor CQ-4241236
-* Moet de ladingsdetails in de bundel blootstellen zodat kan de component HTML de waarde in de lijstmening tonen. NPR-23948: Hotfix voor CQ-4240953
+* Moet de ladingsdetails in de bundel blootstellen zodat kan de component HTML de waarde in de lijstmening tonen. NPR-23947: Hotfix voor CQ-4240953
 * Kan dialooggegevens niet opslaan in de stap Deelnemer dialoogvenster. NPR-23965: Hotfix voor CQ-4234123
 * (Touch UI) Wanneer u een workflowmodel opslaat, verandert de knop Sync in &#39;Gesynchroniseerd&#39;, wat resulteert in een spelfout. Hotfix voor CQ-4244843
 * Project inbox: als u overschakelt naar de kalenderweergave, wordt de hoofdinhoud in het Postvak IN weergegeven. Hotfix voor CQ-4244436
 * Kan Dialoogvensters niet selecteren in de stap Deelnemer dialoogvenster. Hotfix voor CQ-4244532
-* Proactieve Backport voor granite.omnissearch.core fixes. NPR-23538
+* Proactieve Backport voor granite.omnissearch.core fixes. NPR-23536
 * Probleem in Mobile Workspace App 6.4 met gedeelde taak. NPR-26383
 
 **WCM - Vertaling**
@@ -1852,7 +1849,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Voorspelden voor bestandstypen en bestandsgrootten zijn niet beschikbaar in het gepubliceerde zoekformulier. Hotfix voor CQ-4242026
 * Zoeken in mapvoorspelling moet worden uitgefilterd of niet in zoekfilters worden weergegeven. Hotfix voor CQ-4241386
 * De standaardzoekopdracht van moet bestaan nadat de publicatie ongedaan is gemaakt. Hotfix voor CQ-4241383, CQ-4241113
-* Publiceren naar een gebaar met een merkportal werkt niet bij voorinstellingen voor afbeeldingen. Hotfix voor CQ-4241076
+* Publiceren naar een gebaar met een merkportal werkt niet bij voorinstellingen voor afbeeldingen. Hotfix voor CQ-4241074
 * Publiceren op Brand Portal werkt niet voor verzamelingen. Hotfix voor CQ-4241122, CQ-4246558
 
 **DAM - DM-client**
@@ -1928,7 +1925,7 @@ De belangrijkste hooglichten voor AEM Forms zijn:
 * (FDM Client SDK) Kan het testen van de voorprocessor en de aangepaste verzendactie niet uitvoeren. Hotfix voor CQ-4238469
 * Oplossingen voor Javadoc-problemen in Dermis. Hotfix voor CQ-4244250
 * Verbeterde invoer in WSDL (Web Services Description Language). Hotfix voor CQ-4245132
-* Het basis authentificatietesten voor WSDL resulteert in verschillende fout voor de zelfde configuratie in AEM 6.3 en AEM 6.4. Hotfix voor CQ-4245132
+* Het basis authentificatietesten voor WSDL resulteert in verschillende fout voor de zelfde configuratie in AEM 6.3 en AEM 6.4. Hotfix voor CQ-4244132
 * Verzoek om ValueUtil op te nemen in client-sdk en javadocs. Hotfix voor CQ-4242803
 * (FDM Cloud Config) Kan SOAP-gebaseerde verificatie niet configureren vanuit de cloudconfiguratie. Hotfix voor CQ-4238462
 * Dermis - Voeg ontbrekende pakketten toe in JavaDocs. Hotfix voor CQ-4242815
