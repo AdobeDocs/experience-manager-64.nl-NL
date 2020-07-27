@@ -10,7 +10,10 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
 translation-type: tm+mt
-source-git-commit: 08d5fe422a8544e3b38021ccc03e655cb119dc6a
+source-git-commit: 3309352520878fd5b2bff91ce4d18d5b1a90b97d
+workflow-type: tm+mt
+source-wordcount: '2598'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,12 @@ Met deze pagina kunt u de functionaliteit van het beheer van meerdere sites uitb
 
 >[!NOTE]
 >
->Deze pagina moet worden gelezen in combinatie met Inhoud [opnieuw gebruiken: Beheer](/help/sites-administering/msm.md)van meerdere sites.
+>Deze pagina moet worden gelezen in samenhang met:
+>* [Inhoud opnieuw gebruiken: Beheer](/help/sites-administering/msm.md)van meerdere sites.
+>* Herstructurering van de vestigingsplaats in AEM 6.4:
+   >   * [Configuraties van blauwdruk voor beheer op meerdere locaties](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-blueprint-configurations)
+   >   * [Uitrolconfiguraties voor beheer op meerdere locaties](/help/sites-deploying/sites-repository-restructuring-in-aem-6-4.md#multi-site-manager-rollout-configurations)
+
 
 >[!CAUTION]
 >
@@ -43,7 +51,8 @@ De belangrijkste MSM API-objecten hebben als volgt interactie (zie ook Gebruikte
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-* **`Blueprint`** Een `Blueprint` (zoals in de configuratie [van de](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)blauwdruk) specificeert de pagina&#39;s waarvan een levende exemplaar inhoud kan erven.
+* **`Blueprint`**
+Een `Blueprint` (zoals in de configuratie [van de](/help/sites-administering/msm.md#source-blueprints-and-blueprint-configurations)blauwdruk) specificeert de pagina&#39;s waarvan een levende exemplaar inhoud kan erven.
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
@@ -64,7 +73,7 @@ De belangrijkste MSM API-objecten hebben als volgt interactie (zie ook Gebruikte
    * Met de `LiveCopy` klasse hebt u toegang tot het pad van de pagina, het pad van de bron-/blauwdrukpagina, de rollout-configuraties en of onderliggende pagina&#39;s ook in de `LiveCopy`pagina zijn opgenomen.
    * Elke keer dat `LiveCopy` Site **maken of Live kopie** maken **wordt gebruikt, wordt een** knooppunt gemaakt.
 
-* **`LiveStatus`** objecten bieden toegang tot de runtimestatus van een `LiveRelationship`. Wordt gebruikt om de synchronisatiestatus van een live kopie te controleren.
+* **`LiveStatus`**  objecten bieden toegang tot de runtimestatus van een `LiveRelationship`. Wordt gebruikt om de synchronisatiestatus van een live kopie te controleren.
 
 * **`LiveAction`** is een actie die op elk middel wordt uitgevoerd dat bij de rollout betrokken is.
 
@@ -116,7 +125,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-#### Toegang tot doelknooppunten, bronknooppunten en de LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+#### Toegang krijgen tot Target Nodes, Source Nodes en de LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 De volgende objecten worden opgegeven als parameters van de `execute` methode van het `LiveAction` object:
 
@@ -156,48 +165,72 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 #### De configuratie voor rollout maken {#create-the-rollout-configuration}
 
-1. Open de **console van Hulpmiddelen** in klassieke UI; bijvoorbeeld [http://localhost:4502/miscadmin#/etc](http://localhost:4502/miscadmin#/etc)
+Een nieuwe rollout-configuratie maken:
+
+1. Open CRXDE Lite; bijvoorbeeld:
+   [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+
+1. Ga naar :
+   `/apps/msm/<your-project>/rolloutconfigs`
+
+   >[!NOTE]
+   >Dit is de aangepaste versie van uw project van:
+   >`/libs/msm/wcm/rolloutconfigs`
+   >Moet worden gecreeerd als dit uw eerste configuratie is.
 
    >[!NOTE]
    >
-   >In de standaard, touch-enabled UI kunt u aan de klassieke console van Hulpmiddelen navigeren UI gebruikend de spooringangen **Hulpmiddelen**, **Verrichtingen** en dan **Configuratie**.
+   >U moet niets in de /libs weg veranderen.
+   >Dit is omdat de inhoud van /libs de volgende tijd wordt beschreven u uw instantie (en kan goed worden beschreven wanneer u of hotfix of eigenschappak toepast) bevordert.
+   >De aanbevolen methode voor configuratie en andere wijzigingen is:
+   >* Het vereiste item opnieuw maken (dat wil zeggen zoals het bestaat in /libs) onder /apps
+   >* Wijzigingen aanbrengen in /apps
 
-1. Selecteer in de mappenstructuur de map **Tools**, **MSM** en **Rollout Configurations** .
-1. Klik **Nieuw**, dan **Nieuwe Pagina** om de eigenschappen van de Configuratie van de Output te bepalen:
 
-   * **Titel**: De titel van de Configuratie van de Output, zoals Mijn Configuratie van de Uitvoer
-   * **Naam**: De naam van de knoop die de bezitswaarden, zoals myrolloutconfig opslaat
-   * Selecteer **Malplaatje** RolloutConfig.
+1. Onder dit **Create** een knoop met de volgende eigenschappen:
 
-1. Klik op **Maken**.
-1. Dubbelklik op de rollout configuratie die u hebt gemaakt om deze voor verdere configuratie te openen.
-1. Click **Edit**.
-1. Selecteer in het dialoogvenster **Rollenconfiguratie** de **[Synchronisatietrigger](/help/sites-administering/msm-sync.md#rollout-triggers)**om de handeling te definiëren die de rollout veroorzaakt.
-1. Klik op **OK** om de wijzigingen op te slaan.
+   * **Naam**: De knooppuntnaam van de rollout configuratie. md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow`.
+   * **Type**: `cq:RolloutConfig`
+
+1. Voeg de volgende eigenschappen toe aan dit knooppunt:
+   * **Naam**: `jcr:title`
+
+      **Type**: `String`
+      **Waarde**: Een identificerende titel die in UI zal verschijnen.
+   * **Naam**: `jcr:description`
+
+      **Type**: `String`
+      **Waarde**: Een optionele beschrijving.
+   * **Naam**: `cq:trigger`
+
+      **Type**: `String`
+      **Waarde**: De [rollout Trigger](/help/sites-administering/msm-sync.md#rollout-triggers) die moet worden gebruikt. Selecteer  vanuit:
+      * `rollout`
+      * `modification`
+      * `publish`
+      * `deactivate`
+
+1. Klik op Alles **opslaan**.
 
 #### Synchronisatiehandelingen toevoegen aan de configuratie van de rollout {#add-synchronization-actions-to-the-rollout-configuration}
 
-Rolloutconfiguraties worden onder het `/etc/msm/rolloutconfigs` knooppunt opgeslagen. Voeg kindknopen van type toe `cq:LiveSyncAction` om synchronisatieacties aan de rollout configuratie toe te voegen. De volgorde van de actieknooppunten voor synchronisatie bepaalt de volgorde waarin de acties plaatsvinden.
+De configuraties van de rollout worden opgeslagen onder de knoop [van de](#create-the-rollout-configuration) rollout configuratie die u onder `/apps/msm/<your-project>/rolloutconfigs` knoop hebt gecreeerd.
 
-1. Open CRXDE Lite; bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
-1. Selecteer de `jcr:content` knoop onder uw knoop van de rollout configuratie.
+Voeg kindknopen van type toe `cq:LiveSyncAction` om synchronisatieacties aan de rollout configuratie toe te voegen. De volgorde van de actieknooppunten voor synchronisatie bepaalt de volgorde waarin de acties plaatsvinden.
 
-   Bijvoorbeeld, voor de rollout configuratie met het bezit van de **Naam** van `myrolloutconfig`, selecteer de knoop:
+1. Nog in CRXDE Lite, selecteer uw knoop van de Configuratie van de [Uitvoer](#create-the-rollout-configuration) .
 
-   `/etc/msm/rolloutconfigs/myrolloutconfig/jcr:content`
+   Bijvoorbeeld:
+   `/apps/msm/myproject/rolloutconfigs/myrolloutconfig`
 
-1. Klik op **Maken** en vervolgens op **Node** maken. Configureer vervolgens de volgende knoopeigenschappen en klik op **OK**:
+1. **Maak** een knooppunt met de volgende knoopeigenschappen:
 
-   * **Naam**: De knooppuntnaam van de synchronisatieactie. De naam moet gelijk zijn aan de naam **van de** handeling in de tabel onder [Synchronisatiehandelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow`.
+   * **Naam**: De knooppuntnaam van de synchronisatieactie.
+De naam moet gelijk zijn aan de naam **van de** handeling in de tabel onder [Synchronisatiehandelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions), bijvoorbeeld `contentCopy` of `workflow`.
    * **Type**: `cq:LiveSyncAction`
 
-1. Selecteer het actieknooppunt dat zojuist is gemaakt en voeg de volgende eigenschap toe aan het knooppunt:
-
-   * **Naam**: De eigenschapsnaam van de handeling. De naam moet gelijk zijn aan de naam **van de** eigenschap in de tabel onder [Synchronisatiehandelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions), bijvoorbeeld `enabled`.
-   * **Type**:String
-   * **Waarde**: De eigenschapwaarde van de handeling. Zie bijvoorbeeld de kolom **Eigenschappen** in [Synchronisatiehandelingen](/help/sites-administering/msm-sync.md#installed-synchronization-actions)voor geldige waarden `true`.
-
 1. Voeg en vorm zo vele knopen van de synchronisatieactie toe aangezien u vereist. Wijzig de rangschikking van de actieknoppen zodat de volgorde overeenkomt met de volgorde waarin u deze wilt uitvoeren. Het bovenste actieknooppunt komt eerst voor.
+
 1. Klik op Alles **opslaan**.
 
 ### Een eenvoudige LiveActionFactory-klasse maken en gebruiken {#creating-and-using-a-simple-liveactionfactory-class}
@@ -302,7 +335,7 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
    ```
 
 1. Open het POM- dossier voor de bundel van de Ontdekkingsreiziger **van het** Project bij `MyLiveActionFactory-bundle/pom.xml`.
-1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en bewaar dan het dossier:
+1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en sla dan het dossier op:
 
    ```xml
     <dependency>
@@ -415,7 +448,7 @@ De volgende `LiveActionFactory` klasse voert een `LiveAction` die berichten over
        /* get the source's cq:lastModifiedBy property */
        if (source != null && source.adaptTo(Node.class) !=  null){
         ValueMap sourcevm = source.adaptTo(ValueMap.class);
-        lastMod = sourcevm.get(com.day.cq.wcm.api.NameConstants.PN_PAGE_LAST_MOD_BY, String.class);
+        lastMod = sourcevm.get(com.day.cq.wcm.msm.api.MSMNameConstants.PN_PAGE_LAST_MOD_BY, String.class);
        }
    
        /* set the target node's la-lastModifiedBy property */
@@ -507,26 +540,19 @@ Creeer de MSM rollout configuratie die de `LiveActionFactory` die u creeerde geb
 
 1. Creeer en configuratie een Configuratie van de [Uitvoer met de standaardprocedure](/help/sites-administering/msm-sync.md#creating-a-rollout-configuration) - en het gebruiken van de eigenschappen:
 
-   1. Maken:
-
-      1. **Titel**: Voorbeeld-uitrolconfiguratie
-      1. **Naam**: voorbeplerolloutconfig
-      1. Het gebruiken van het Malplaatje **RolloutConfig**.
-   1. Bewerken:
-
-      1. **Trigger** synchroniseren:Bij activering
-
+   * **Titel**: Voorbeeld-uitrolconfiguratie
+   * **Naam**: voorbeplerolloutconfig
+   * **cq:trigger**: `publish`
 
 #### Voeg de Actieve Actie aan de Configuratie van de Uitvoer van het Voorbeeld toe {#add-the-live-action-to-the-example-rollout-configuration}
 
 Vorm de rollout configuratie die u in de vorige procedure creeerde zodat het de `ExampleLiveActionFactory` klasse gebruikt.
 
 1. Open CRXDE Lite; bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de).
-1. Maak het volgende knooppunt onder `/etc/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
+1. Maak het volgende knooppunt onder `/apps/msm/rolloutconfigs/examplerolloutconfig/jcr:content`:
 
    * **Naam**: `exampleLiveAction`
    * **Type**: `cq:LiveSyncAction`
-   ![chlimage_1-37](assets/chlimage_1-37.png)
 
 1. Klik op Alles **opslaan**.
 1. Selecteer het `exampleLiveAction` knooppunt en voeg de volgende eigenschap toe:
@@ -534,6 +560,7 @@ Vorm de rollout configuratie die u in de vorige procedure creeerde zodat het de 
    * **Naam**: `repLastModBy`
    * **Type**: `Boolean`
    * **Waarde**: `true`
+
    Deze eigenschap geeft aan de `ExampleLiveAction` klasse door dat de `cq:LastModifiedBy` eigenschap moet worden gerepliceerd van de bron naar het doelknooppunt.
 
 1. Klik op Alles **opslaan**.
@@ -553,23 +580,25 @@ Activeer de pagina **Producten** (Engels) van de brontak en bekijk de logboekber
 16.08.2013 10:53:33.055 *INFO* [Thread-444535] com.adobe.example.msm.ExampleLiveActionFactory$ExampleLiveAction  *** Target node lastModifiedBy property updated: admin ***
 ```
 
-### De stap Hoofdstukken verwijderen in de wizard Site maken {#removing-the-chapters-step-in-the-create-site-wizard}
+<!--
+### Removing the Chapters Step in the Create Site Wizard {#removing-the-chapters-step-in-the-create-site-wizard}
 
-In sommige gevallen is de selectie van **hoofdstukken** niet vereist in de wizard Site maken (alleen de selectie van **talen** is vereist). Om deze stap in het standaardWeb.Retail Engelse ontwerp te verwijderen:
+In some cases, the **Chapters** selection is not required in the create site wizard (only the **Languages** selection is required). To remove this step in the default We.Retail English blueprint:
 
-1. Verwijder het knooppunt in CRX Explorer:
+1. In CRX Explorer, remove the node:
 
    `/etc/blueprints/weretail-english/jcr:content/dialog/items/tabs/items/tab_chap`.
 
-1. Navigeer naar een nieuw knooppunt `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` en maak dit:
+1. Navigate to `/libs/wcm/msm/templates/blueprint/defaults/livecopy_tab/items` and create a new node:
 
-   1. **Naam** = `chapters`; **Type** = `cq:Widget`.
+    1. **Name** = `chapters`; **Type** = `cq:Widget`.
 
-1. Voeg de volgende eigenschappen toe aan het nieuwe knooppunt:
+1. Add following properties to the new node:
 
-   1. **Naam** = `name`; **type** = `String`; **Waarde** = `msm:chapterPages`
-   1. **Naam** = `value`; **type** = `String`; **Waarde** = `all`
-   1. **Naam** = `xtype`; **type** = `String`; **Waarde** = `hidden`
+    1. **Name** = `name`; **Type** = `String`; **Value** = `msm:chapterPages`
+    1. **Name** = `value`; **Type** = `String`; **Value** = `all`
+    1. **Name** = `xtype`; **Type** = `String`; **Value** = `hidden`
+-->
 
 ### Taalnamen en standaardlanden wijzigen {#changing-language-names-and-default-countries}
 
