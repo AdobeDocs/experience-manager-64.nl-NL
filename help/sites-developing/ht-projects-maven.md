@@ -1,8 +1,8 @@
 ---
-title: AEM-projecten bouwen met Apache Maven
-seo-title: AEM-projecten bouwen met Apache Maven
-description: In dit document wordt beschreven hoe u een AEM-project instelt op basis van Apache Maven
-seo-description: In dit document wordt beschreven hoe u een AEM-project instelt op basis van Apache Maven
+title: Hoe te om AEM Projecten te bouwen gebruikend Apache Maven
+seo-title: Hoe te om AEM Projecten te bouwen gebruikend Apache Maven
+description: In dit document wordt beschreven hoe u een AEM project instelt op basis van Apache Maven
+seo-description: In dit document wordt beschreven hoe u een AEM project instelt op basis van Apache Maven
 uuid: 675932d3-dabb-4066-a743-75bdf4f049d7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: aee5f5a7-8462-4d42-8d96-8a7eb317770e
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: b46164c81890a41e3811a65534c264884e8562fc
 workflow-type: tm+mt
 source-wordcount: '2247'
 ht-degree: 0%
@@ -18,35 +18,35 @@ ht-degree: 0%
 ---
 
 
-# AEM-projecten bouwen met Apache Maven{#how-to-build-aem-projects-using-apache-maven}
+# Hoe te om AEM Projecten te bouwen gebruikend Apache Maven{#how-to-build-aem-projects-using-apache-maven}
 
 ## Overzicht {#overview}
 
-In dit document wordt beschreven hoe u een AEM-project instelt op basis van [Apache Maven](https://maven.apache.org/).
+In dit document wordt beschreven hoe u een AEM project instelt op basis van [Apache Maven](https://maven.apache.org/).
 
-Apache Maven is een opensource hulpmiddel om softwareprojecten te beheren door builds te automatiseren en kwaliteitsprojectinformatie te verstrekken. Het is het geadviseerde bouwstijlbeheersinstrument voor projecten AEM.
+Apache Maven is een opensource hulpmiddel om softwareprojecten te beheren door builds te automatiseren en kwaliteitsprojectinformatie te verstrekken. Het is het geadviseerde bouwstijlbeheersinstrument voor AEM projecten.
 
-Het bouwen van uw AEM-project op basis van Maven biedt u verschillende voordelen:
+Het bouwen van uw AEM Project op Maven biedt u verschillende voordelen:
 
 * Een IDE-agnostische ontwikkelomgeving
-* Gebruik van Maven Archetypes en Artifacts van Adobe
+* Gebruik van Maven Archetypes en Artifacts verstrekt door Adobe
 * Gebruik van Apache Sling- en Apache Felix-gereedschapssets voor op Maven gebaseerde ontwikkelinstellingen
 * Versnelling van de invoer in een IDE; bijvoorbeeld Eclipse en/of IntelliJ
 * Eenvoudige integratie met systemen voor continue integratie
 
-## Experience Manager API-afhankelijkheden {#experience-manager-api-dependencies}
+## Afhankelijkheden van Experience Manager-API {#experience-manager-api-dependencies}
 
 ### Wat is de UberJar? {#what-is-the-uberjar}
 
-Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan een speciaal Java Archive-bestand (JAR) dat door Adobe wordt geleverd. Dit JAR-bestand bevat alle openbare Java API&#39;s die door de Adobe Experience Manager worden weergegeven. Het omvat ook beperkte externe bibliotheken, met name alle openbare API&#39;s die in AEM beschikbaar zijn en afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava, en twee bibliotheken die worden gebruikt voor beeldverwerking (de CYMK JPEG ImageIO-bibliotheek van Werner Randelshofer en de TwelveMonkeys-afbeeldingsbibliotheek). UberJar bevat slechts API interfaces en klassen, betekenend dat het slechts interfaces en klassen bevat die door een bundel OSGi in AEM worden uitgevoerd. Het bevatte ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, waarbij ervoor wordt gezorgd dat de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers hebben.
+Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan een speciaal Java Archive-bestand (JAR) dat wordt geleverd door Adobe. Dit JAR-bestand bevat alle openbare Java API&#39;s die door de Adobe Experience Manager worden weergegeven. Het omvat ook beperkte externe bibliotheken, met name alle openbare API&#39;s in AEM die afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava en twee bibliotheken die worden gebruikt voor beeldverwerking (Werner Randelshofer&#39;s CYMK JPEG ImageIO-bibliotheek en de TwelveMonkeys-afbeeldingsbibliotheek). UberJar bevat slechts API interfaces en klassen, betekenend dat het slechts interfaces en klassen bevat die door een bundel OSGi in AEM worden uitgevoerd. Het bevatte ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, waarbij ervoor wordt gezorgd dat de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers hebben.
 
 ### Waarom heeft Adobe de UberJar gemaakt? {#why-did-adobe-create-the-uberjar}
 
-In het verleden moesten ontwikkelaars een relatief groot aantal individuele afhankelijkheden beheren voor verschillende AEM-bibliotheken en wanneer elke nieuwe API werd gebruikt, moesten een of meer individuele afhankelijkheden aan het project worden toegevoegd. Bij één project resulteerde de introductie van UberJar in het verwijderen van 30 afzonderlijke afhankelijkheden uit het project.
+In het verleden moesten ontwikkelaars een relatief groot aantal individuele afhankelijkheden beheren aan verschillende AEM bibliotheken en wanneer elke nieuwe API werd gebruikt, moesten een of meer individuele afhankelijkheden aan het project worden toegevoegd. Bij één project resulteerde de introductie van UberJar in het verwijderen van 30 afzonderlijke afhankelijkheden uit het project.
 
 ### Hoe gebruik ik de UberJar? {#how-do-i-use-the-uberjar}
 
-Als u Apache Maven gebruikt als een constructiesysteem (dat geldt voor de meeste AEM Java-projecten), moet u een of twee elementen toevoegen aan het bestand *pom.xml* . Het eerste is een *gebiedsdeelelement* die de daadwerkelijke gebiedsafhankelijkheid aan uw project toevoegt:
+Als u Apache Maven als bouwstijlsysteem gebruikt (wat het geval is voor de meeste AEM projecten van Java), zult u één of twee elementen aan uw *pom.xml* dossier moeten toevoegen. Het eerste is een *gebiedsdeelelement* die de daadwerkelijke gebiedsafhankelijkheid aan uw project toevoegt:
 
 ```xml
 <dependency>
@@ -58,7 +58,7 @@ Als u Apache Maven gebruikt als een constructiesysteem (dat geldt voor de meeste
 </dependency>
 ```
 
-Als uw bedrijf al gebruikmaakt van een Maven Repository Manager zoals Sonatype Nexus, Apache Archiva of JFrog Artifactory, voegt u de juiste configuratie toe aan uw project om naar deze opslagplaats te verwijzen en voegt u Adobe&#39;s Maven repository ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) toe aan uw opslagplaats Manager.
+Als uw bedrijf al gebruikmaakt van een Maven Repository Manager zoals Sonatype Nexus, Apache Archiva of JFrog Artifactory, voegt u de juiste configuratie toe aan uw project om naar deze opslagplaats te verwijzen en voegt u Adobe Maven repository ([https://repo.adobe.com/nexus/content/groups/public/](https://repo.adobe.com/nexus/content/groups/public/)) toe aan uw opslagplaats Manager.
 
 Als u geen gegevensopslagbeheerder gebruikt, moet u een *gegevensopslagsysteem* -element toevoegen aan uw *pom.xml* -bestand:
 
@@ -100,7 +100,7 @@ Met UberJar, kunt u projectcode compileren die van AEM APIs (en APIs afhangt die
 
 ### Wat kan ik niet doen met de UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Omdat UberJar **slechts** APIs bevat, is het niet uitvoerbaar en kan niet worden gebruikt om Adobe Experience Manager in **werking te stellen** . Als u AEM wilt uitvoeren, hebt u de AEM QuickStart-indeling (Standalone of Web Application Archive, WAR) nodig.
+Omdat UberJar **slechts** APIs bevat, is het niet uitvoerbaar en kan niet worden gebruikt om Adobe Experience Manager in **werking te stellen** . Voor het uitvoeren van AEM hebt u de vorm van de AEM QuickStart nodig, Standalone of Web Application Archive (WAR).
 
 ### U noemde beperkingen op eenheidstests. Gelieve nader toe te lichten. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -108,7 +108,7 @@ De tests van de eenheid communiceren over het algemeen met product APIs op drie 
 
 #### Hoofdlettergebruik 1 - Aangepaste code die een API-interface aanroept {#use-case-custom-code-which-calls-a-api-interface}
 
-Dit geval, dat het meest gebruikelijk is, omvat sommige douanecode die methodes op een interface uitvoert Java die door AEM API wordt bepaald. De implementatie van deze interface kan direct worden gegeven of worden geïnjecteerd met behulp van het Dependency Injection pattern. **Dit gebruiksgeval kan met UberJar worden behandeld.**
+Dit geval, dat het meest gebruikelijk is, omvat sommige douanecode die methodes op een interface uitvoert van Java die door AEM API wordt bepaald. De implementatie van deze interface kan direct worden gegeven of worden geïnjecteerd met behulp van het Dependency Injection pattern. **Dit gebruiksgeval kan met UberJar worden behandeld.**
 
 Een voorbeeld van het eerste zou zijn:
 
@@ -329,7 +329,7 @@ Net als bij SCR Generation, als uw code een basisklasse (abstract of beton) van 
 
 ### Hoe te om Wegen aan de inhoudsmodule toe te voegen {#how-to-add-paths-to-the-content-module}
 
-De inhoudsmodule bevat een bestand src/main/content/META-INF/vault/filter.xml dat de filters definieert voor het AEM-pakket dat door Maven is gemaakt. Het bestand dat wordt gemaakt door het Maven archetype ziet er als volgt uit:
+De inhoudsmodule bevat een bestand src/main/content/META-INF/vault/filter.xml dat de filters definieert voor het AEM pakket dat door Maven is gemaakt. Het bestand dat wordt gemaakt door het Maven archetype ziet er als volgt uit:
 
 #### src/main/content/META-INF/vault/filter.xml {#src-main-content-meta-inf-vault-filter-xml}
 
@@ -378,7 +378,7 @@ Het archetype gebruikt bijvoorbeeld een `.vltignore` bestand om te voorkomen dat
 
 #### Paden synchroniseren zonder deze aan het pakket toe te voegen {#syncing-paths-without-adding-them-to-the-package}
 
-In sommige gevallen wilt u bepaalde paden mogelijk synchroniseren tussen het bestandssysteem en de opslagplaats, maar deze niet opnemen in het pakket dat is gemaakt om in AEM te worden geïnstalleerd.
+In sommige gevallen wilt u bepaalde paden mogelijk gesynchroniseerd houden tussen het bestandssysteem en de opslagplaats, maar wilt u deze niet opnemen in het pakket dat is gemaakt om in AEM te worden geïnstalleerd.
 
 Een typisch geval is de `/libs/foundation` weg. Voor ontwikkelingsdoeleinden, kunt u de inhoud van dit weg beschikbaar in uw dossiersysteem willen hebben, zodat bijvoorbeeld uw winde JSP opneming kan oplossen die JSPs in omvatten `/libs`. Nochtans, wilt u niet dat deel in het pakket omvatten u bouwt, aangezien het `/libs` deel productcode bevat die niet door douaneimplementaties moet worden gewijzigd.
 
@@ -431,9 +431,9 @@ Wijzig de `<resources>` sectie in de inhoudspom dienovereenkomstig:
 
 De Maven-installatie die tot nu toe is beschreven, maakt een inhoudspakket dat ook componenten en de bijbehorende JSP&#39;s kan bevatten. Maven behandelt deze echter als elk ander bestand dat deel uitmaakt van het inhoudspakket en herkent ze niet eens als JSP&#39;s.
 
-De resulterende componenten werken allemaal in AEM, maar het bewust maken van de JSPs heeft twee belangrijke voordelen
+De resulterende componenten werken in AEM allemaal hetzelfde, maar het bewust maken van de JSP&#39;s heeft twee grote voordelen
 
-* Het staat Maven toe om te ontbreken als JSPs fouten bevat, zodat deze bij bouwstijltijd en niet wanneer zij voor het eerst in AEM worden gecompileerd
+* Het staat Maven toe om te ontbreken als JSPs fouten bevat, zodat deze bij bouwstijltijd en niet wanneer zij eerst in AEM worden gecompileerd worden veroorzaakt
 * Voor IDEs die Gemaakt projecten kunnen invoeren, laat dit ook codevoltooiing en de steun van de markeringsbibliotheek in JSPs toe
 
 Er zijn twee dingen vereist om deze installatie in te schakelen:
@@ -447,7 +447,7 @@ Onder gebiedsdelen moeten aan POM van de `content` modules worden toegevoegd.
 
 >[!NOTE]
 >
->Tenzij u de productgebiedsdelen zoals hierboven beschreven invoert, moeten zij ook aan bovenliggende POM samen met de versie worden toegevoegd die uw opstelling AEM zoals hierboven beschreven aanpast. De opmerkingen in elk van de onderstaande items tonen het pakket waarnaar u wilt zoeken in de Dependency Finder.
+>Tenzij u de productgebiedsdelen zoals hierboven beschreven invoert, moeten zij ook aan bovenliggende POM samen met de versie worden toegevoegd die uw AEM opstelling zoals hierboven beschreven aanpast. De opmerkingen in elk van de onderstaande items tonen het pakket waarnaar u wilt zoeken in de Dependency Finder.
 
 >[!NOTE]
 >
@@ -462,7 +462,7 @@ Om JSPs in de `compile` fase van Maven te compileren, gebruiken wij Apache Sling
 * wij vertellen het om het even welke JSPs te compileren in `${project.build.directory}/jsps-to-compile`
 * en voer het resultaat uit naar `${project.build.directory}/ignoredjspc` (dat wordt omgezet in `myproject/content/target/ignoredjspc`)
 
-* wij opstelling maven-middelen-stop - in om JSPs aan `${project.build.directory}/jsps-to-compile` in te kopiëren produceren-bronfase en het te vormen om de `libs/` omslag niet te kopiëren (omdat dat productcode AEM is en wij niet de gebiedsdelen voor compilatie voor ons project willen aangaan, noch moeten wij bevestigen dat het compileert.
+* wij opstelling maven-middelen-stop - in om JSPs te kopiëren aan `${project.build.directory}/jsps-to-compile` in de productie-bronfase en het te vormen om de `libs/` omslag niet te kopiëren (omdat dat productcode is en wij niet de gebiedsdelen voor compilatie voor ons project willen aangaan, noch moeten wij bevestigen dat het compileert.
 
 Ons primaire doel, zoals hierboven vermeld, is JSPs te bevestigen en ervoor te zorgen dat het bouwstijlproces ontbreekt als zij fouten bevatten. Daarom compileren wij hen aan een afzonderlijke folder die wordt genegeerd (en in feite onmiddellijk daarna geschrapt, zoals u over een minuut zult zien).
 
@@ -551,14 +551,14 @@ Om schrapping van de klassen te bereiken die van JSPs worden gecompileerd, opste
 >
 >
 ```
-> <resource>  
->           <directory>src/main/content/jcr_root</directory>  
->           <includes>  
->                   <include>apps/**</include>  
->                   <include>libs/foundation/global.jsp</include>
->       </includes>  
->   </resource>  
->  ```
+><resource>
+>       <directory>src/main/content/jcr_root</directory>
+>       <includes>
+>               <include>apps/**</include>
+>               <include>libs/foundation/global.jsp</include>
+>       </includes>
+></resource>
+>```
 
 ### Hoe kan ik-werken met SCM-systemen {#how-to-work-with-scm-systems}
 
