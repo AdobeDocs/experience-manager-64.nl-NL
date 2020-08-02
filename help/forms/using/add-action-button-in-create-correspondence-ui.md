@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
 workflow-type: tm+mt
-source-wordcount: '1797'
+source-wordcount: '1782'
 ht-degree: 1%
 
 ---
@@ -30,7 +30,7 @@ In het scenario in dit document wordt uitgelegd hoe u een knop in de gebruikersi
 Om dit scenario te voltooien, vereist u het volgende:
 
 * Kennis van CRX en JavaScript
-* LiveCycle Server
+* LiveCycle-server
 
 ## Scenario: Maak de knop in de gebruikersinterface Correspondentie maken om een brief ter controle te verzenden {#scenario-create-the-button-in-the-create-correspondence-user-interface-to-send-a-letter-for-review}
 
@@ -38,7 +38,7 @@ Het toevoegen van een knop met een actie (hier verzend brief voor overzicht) aan
 
 1. De knop toevoegen aan de gebruikersinterface Correspondentie maken
 1. Handeling-afhandeling aan de knop toevoegen
-1. Het LiveCycle-proces toevoegen om de verwerking van handelingen in te schakelen
+1. Het LiveCycle-proces toevoegen om bewerking &quot;afhandeling van handelingen&quot; in te schakelen
 
 ### De knop toevoegen aan de gebruikersinterface Correspondentie maken {#add-the-button-to-the-create-correspondence-user-interface}
 
@@ -161,7 +161,7 @@ Het bestand ACMExtensionsMessages.properties bevat labels en knopinfo-berichten 
 
 1. Klik op **[!UICONTROL Save All]**.
 
-#### Start de Adobe Asset Composer Building Block-bundel opnieuw {#restart-the-adobe-asset-composer-building-block-bundle}
+#### De bundel Adobe Asset Composer Building Block opnieuw starten {#restart-the-adobe-asset-composer-building-block-bundle}
 
 Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Adobe Asset Composer Building Block opnieuw. In dit scenario worden de bestanden acmExtensionsConfig.xml en ACMExtensionsMessages.properties op de server bewerkt. Daarom moet de bundel Adobe Asset Composer Building Block opnieuw worden gestart.
 
@@ -169,9 +169,9 @@ Nadat u elke wijziging aan de serverzijde hebt aangebracht, start u de bundel Ad
 >
 >Mogelijk moet u de cache van de browser wissen.
 
-1. Ga naar `https://[host]:[port]/system/console/bundles`. Meld u indien nodig aan als beheerder.
+1. Go to `https://[host]:[port]/system/console/bundles`. Meld u indien nodig aan als beheerder.
 
-1. Zoek de Adobe Asset Composer Building Block-bundel. Start de bundel opnieuw: Klik op Stoppen en vervolgens op Start.
+1. Zoek de bundel Adobe Asset Composer Building Block. Start de bundel opnieuw: Klik op Stoppen en vervolgens op Start.
 
    ![Adobe Asset Composer Building Block](assets/6_assetcomposerbuildingblockbundle.png)
 
@@ -191,7 +191,7 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
 * Nieuwe toegevoegde actie in-/uitschakelen: doet dit door de actionEnabled() functie te negeren.
 * Werkelijke afhandeling van actie wanneer de gebruiker op de knop klikt: gedaan door de implementatie van de handleAction() functie te negeren.
 
-1. Ga naar `https://[server]:[port]/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
+1. Go to `https://[server]:[port]/[ContextPath]/crx/de`. Meld u indien nodig aan als beheerder.
 
 1. Maak in de map Apps een map met de naam `js` in de tak /apps van CRX met een structuur die lijkt op de volgende map:
 
@@ -322,19 +322,18 @@ De handeling/knop bij klikken op handeling/knop wordt uitgevoerd met logica voor
       '</div>';
       ```
 
-### Het LiveCycle-proces toevoegen om <span class="acrolinxCursorMarker"></span>handelingen te kunnen afhandelen {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
+### Voeg het proces van de LiveCycle toe om actie <span class="acrolinxCursorMarker"></span>behandeling toe te laten {#add-the-livecycle-process-to-enable-action-span-class-acrolinxcursormarker-span-handling}
 
 In dit scenario schakelt u de volgende componenten in, die deel uitmaken van het bestand components.zip in de bijlage:
 
-* DSC-component jar (DSCSample.jar)
-* Letter verzenden voor revisieproces LCA (SendLetterForReview.lca)
+* DSC-component jar (`DSCSample.jar`)
+* Letter verzenden voor controleproces LCA (`SendLetterForReview.lca`)
 
-Download en decomprimeer het bestand components.zip om de bestanden DSCSample.jar en SendLetterForReview.lca op te halen. Gebruik deze bestanden volgens de onderstaande procedures.\
-components.zip
+Download en decomprimeer het `components.zip` bestand om bestanden `DSCSample.jar` en `SendLetterForReview.lca` bestanden op te halen. Gebruik deze bestanden volgens de onderstaande procedures.
 
 [Bestand ophalen](assets/components.zip)
 
-#### De LiveCycle-server configureren om het LCA-proces uit te voeren {#configure-the-livecycle-server-to-run-the-lca-process}
+#### Vorm de Server van LiveCycle om het proces LCA in werking te stellen {#configure-the-livecycle-server-to-run-the-lca-process}
 
 >[!NOTE]
 >
@@ -343,16 +342,17 @@ components.zip
 Het LCA-proces wordt uitgevoerd op de LiveCycle-server en vereist het serveradres en de aanmeldingsgegevens.
 
 1. Ga naar Beheerder `https://[server]:[port]/system/console/configMgr` en meld u aan.
-1. Zoek Adobe LiveCycle Client SDK Configuration en klik op **[!UICONTROL Edit]** (pictogram Bewerken). Het deelvenster Configuraties wordt geopend.
+1. Zoek de Configuratie van Adobe LiveCycle Client SDK en klik **[!UICONTROL Edit]** (bewerkingspictogram). Het deelvenster Configuraties wordt geopend.
 
 1. Voer de volgende gegevens in en klik op **[!UICONTROL Save]**:
 
    * **[!UICONTROL Server Url]**: URL van de server LC waarvan verzendt voor de dienst van het Overzicht de code van de actiemanager gebruikt.
    * **[!UICONTROL Username]**: Gebruikersnaam beheerder van de LC-server
    * **[!UICONTROL Password]**: Wachtwoord voor de gebruikersnaam van de beheerder
-   ![Configuratie van Adobe LiveCycle Client SDK](assets/3_clientsdkconfiguration.png)
 
-#### LiveCycle Archive (LCA) installeren {#install-livecycle-archive-lca}
+   ![Adobe LiveCycle client SDK-configuratie](assets/3_clientsdkconfiguration.png)
+
+#### LiveCycle-archief (LCA) installeren {#install-livecycle-archive-lca}
 
 Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
@@ -380,26 +380,26 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 1. Klik op **[!UICONTROL Import]**.
 
-#### ServiceName toevoegen aan de lijst AllowListed Service {#adding-servicename-to-the-allowlisted-service-list}
+#### Het toevoegen van ServiceName aan de Op de lijst met gewenste personen gestane lijst van de Dienst {#adding-servicename-to-the-allowlisted-service-list}
 
-Vermeld in de AEM-server de LiveCycle-services die u wilt openen tot de AEM-server.
+Vermelding in de AEM server de diensten van de LiveCycle u tot de AEM server wilt toegang hebben.
 
 1. Meld u aan als beheerder bij `https:/[host]/:[port]/system/console/configMgr`.
 
-1. Zoek en klik op **[!UICONTROL Adobe LiveCycle Client SDK Configuration]**. Het deelvenster Configuration van Adobe LiveCycle Client SDK wordt weergegeven.
+1. Locate and click **[!UICONTROL Adobe LiveCycle Client SDK Configuration]**. Het deelvenster Configuratie SDK van Adobe LiveCycle Client wordt weergegeven.
 1. In de lijst van de Naam van de Dienst, klik + pictogram en voeg een serviceName toe **[!UICONTROL SendLetterForReview/SendLetterForReviewProcess]**.
 
 1. Klik op **[!UICONTROL Save]**.
 
 #### De e-mailservice configureren {#configure-the-email-service}
 
-In dit scenario configureert u de e-mailservice in de LiveCycle-server, zodat Correspondence Management een e-mailbericht kan verzenden.
+In dit scenario, voor het Beheer van de Correspondentie om een e-mail te kunnen verzenden, vorm de e-maildienst in de server van de LiveCycle.
 
 1. Meld u met beheerdersgegevens aan bij Livecycle Server-beheerder om `https:/[lc server]:[lc port]/adminui`.
 
 1. Ga naar **[!UICONTROL Home > Services > Applications and Services > Service Management]**.
 
-1. Zoek en klik op **[!UICONTROL EmailService]**.
+1. Locate and click **[!UICONTROL EmailService]**.
 
 1. Configureer in **[!UICONTROL SMTP Host]** de e-mailservice.
 
@@ -407,36 +407,37 @@ In dit scenario configureert u de e-mailservice in de LiveCycle-server, zodat Co
 
 #### De DSC-service configureren {#configure-the-dsc-service}
 
-Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de DSCSample.jar (die in dit document is gekoppeld als onderdeel van components.zip) en uploadt u deze naar de LiveCycle-server. Nadat het bestand DSCSample.jar naar de LiveCycle-server is geüpload, gebruikt de AEM-server het bestand DSCSample.jar om toegang te krijgen tot de renderLetter-API.
+Als u de API voor correspondentiebeheer wilt gebruiken, downloadt u de `DSCSample.jar` (in dit document als onderdeel van `components.zip`) en uploadt u deze naar de LiveCycle-server. Nadat het `DSCSample.jar` bestand naar de LiveCycle-server is geüpload, gebruikt de AEM server het `DSCSample.jar` bestand om toegang te krijgen tot de renderLetter-API.
 
 Zie AEM Forms [verbinden met Adobe LiveCycle](/help/forms/using/aem-livecycle-connector.md)voor meer informatie.
 
-1. Werk de URL van de AEM-server in cmsa.properties bij in DSCSample.jar, die zich op de volgende locatie bevindt:
+1. Werk de URL van de AEM server in cmsa.properties in bij `DSCSample.jar`, die zich op de volgende locatie bevindt:
 
    DSCSample.jar\com\adobe\livecycle\cmsa.properties
 
 1. Geef de volgende parameters op in het configuratiebestand:
 
    * **crx.serverUrl**=https:/[host]/:[port]/[context path]/[AEM URL]
-   * **crx.username**= AEM-gebruikersnaam
-   * **crx.password**= AEM-wachtwoord
+   * **crx.username**= AEM gebruikersnaam
+   * **crx.password**= AEM wachtwoord
    * **crx.appRoot**=/content/apps/cm
+
    >[!NOTE]
    >
-   >Start de LiveCycle Server telkens opnieuw wanneer u wijzigingen op de server aanbrengt. Zie LiveCycle ES [uitbreiden via aangepaste DSC-ontwikkeling](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)voor informatie over het maken van uw eigen LiveCycle-component.
+   >Telkens als u om het even welke veranderingen bij de server aanbrengt, begin de Server van de LiveCycle opnieuw. Voor informatie bij het creëren van uw eigen LiveCycle component, zie het [Uitbreiden van de software van LiveCycle ES door de ontwikkeling](https://www.adobe.com/devnet/livecycle/articles/dsc_development.html)van douaneDSC.
 
-   Het bestand DSCSample.jar gebruikt de renderLetter-API. Voor meer informatie over renderLetter API, zie [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
+   Het `DSCSample.jar` bestand gebruikt de `renderLetter` API. Voor meer informatie over renderLetter API, zie [Interface LetterRenderService](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html).
 
 #### DSC importeren in LiveCyle {#import-dsc-to-livecyle}
 
-Het bestand DSCSample.jar gebruikt de renderLetter-API om de letter te renderen als PDF-bytes van XML-gegevens die C als invoer geeft. Zie [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)voor meer informatie over renderLetter en andere API&#39;s.
+`DSCSample.jar` gebruikt de `renderLetter` API om de letter te renderen als PDF-bytes van XML-gegevens die C als invoer geeft. Zie [Letter Render Service](https://helpx.adobe.com/aem-forms/6-2/javadocs/com/adobe/icc/ddg/api/LetterRenderService.html)voor meer informatie over renderLetter en andere API&#39;s.
 
 1. Start Workbench en meld u aan.
 1. Selecteer **[!UICONTROL Window > Show Views > Components]**. De weergave Componenten wordt toegevoegd aan Workbench ES2.
 
 1. Klik met de rechtermuisknop **[!UICONTROL Components]** en selecteer **[!UICONTROL Install Component]**.
 
-1. Selecteer het **[!UICONTROL DSCSample.jar]** bestand in de bestandenbrowser en klik op **[!UICONTROL Open]**.
+1. Selecteer het `DSCSample.jar` bestand in de bestandenbrowser en klik op **[!UICONTROL Open]**.
 1. Klik met de rechtermuisknop **[!UICONTROL RenderWrapper]** en selecteer **[!UICONTROL Start Component]**. Als de component start, verschijnt er een groene pijl naast de naam van de component.
 
 ## Ter controle verzenden {#send-letter-for-review}
