@@ -8,7 +8,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER
 discoiquuid: 9f88c773-ddeb-4c66-ac07-7d3aa196c51b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 1%
 
 ---
 
@@ -21,9 +24,9 @@ De organisaties vereisen dat hun digitale activa worden geëtiketteerd gebaseerd
 
 De Smart Content Service maakt gebruik van uw zakelijke taxonomie van AEM Assets om digitale elementen automatisch te labelen, zodat de meest relevante elementen in zoekopdrachten worden weergegeven.
 
-U moet de Slimme Dienst van de Inhoud op een gekromde reeks activa en markeringen van AEM opleiden om uw bedrijfstaxonomie te erkennen. Als de service eenmaal is getraind, kunnen deze tags op een vergelijkbare set elementen worden toegepast.
+U moet de Slimme Dienst van de Inhoud op een gekromde reeks AEM activa en markeringen opleiden om uw bedrijfstaxonomie te erkennen. Als de service eenmaal is getraind, kunnen deze tags op een vergelijkbare set elementen worden toegepast.
 
-De Smart Content Service wordt aangedreven door het Adobe Sensei-platform, waarmee u het algoritme voor imageherkenning kunt trainen op uw bedrijfsloonomie. Deze inhouds-informatie wordt vervolgens gebruikt om relevante tags toe te passen op vergelijkbare elementen.
+De Smart Content Service wordt aangedreven door het Adobe Sensei-platform, waarmee u het algoritme voor imageherkenning kunt trainen op uw bedrijfsconomie. Deze inhouds-informatie wordt vervolgens gebruikt om relevante tags toe te passen op vergelijkbare elementen.
 
 ## Belangrijkste verbeteringen {#key-improvements}
 
@@ -82,13 +85,14 @@ De service Slimme inhoud is beschikbaar voor de volgende landinstellingen:
 
 ## Koppelingen {#links}
 
-* [Productpagina van Adobe Experience Manager op adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
+* [Productpagina Adobe Experience Manager op adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
 * [Verbeterde documentatie voor slimme tags](/help/assets/enhanced-smart-tags.md)
 
 ## Toegang tot en ondersteuning voor producten (beperkt aantal sites) {#product-access-and-support-restricted-sites}
 
-Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw accountmanager van Adobe als u een klant bent en toegang nodig hebt.
+Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
-* [](https://daycare.day.com) Toegang tot [producten](https://login.marketing.adobe.com)
-
-* [Adobe Klantenservice](https://helpx.adobe.com/contact/enterprise-support.ec.html)
+* [Producttoegang](https://login.marketing.adobe.com)
+* [Product downloaden op licensing.adobe.com](https://licensing.adobe.com/).
+* Productupdates, patches en pakketten voor extra functionaliteit op het gebied van [softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie [Nieuwe Adobe Customer Support Experience](https://docs.adobe.com/content/help/en/customer-one/using/home.html)voor meer informatie.
