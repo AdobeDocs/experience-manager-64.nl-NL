@@ -1,8 +1,8 @@
 ---
 title: CRX2OAK-migratiehulpprogramma
 seo-title: CRX2OAK-migratiehulpprogramma
-description: Opmerkingen bij de release die specifiek betrekking hebben op het Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
-seo-description: Opmerkingen bij de release die specifiek betrekking hebben op het Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
+description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
+seo-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,7 +10,10 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: cfdaceac-a5b3-4070-ad4c-f1457b1e2e4b
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '268'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ source-git-commit: 715cff841252d79504d702817f91db92df919bfc
 
 * Bijgewerkte eik-versie naar 1.6.1
 * CQ-61847 Voeg crx2oak-quickstart-extensie samen met crx2oak (toegevoegde migratieprofielen)
-* CQ-97488 AEM-uitvoeringsmodi bevorderen en neerzetten (door sling.options.file te herschrijven)
+* CQ-97488 Het bevorderen van en het laten vallen AEM looppas wijzen (door sling.options.file te herschrijven)
 * GRANITE-12798/OAK-4260 Mogelijkheid om van het eiken-segment naar het eiken-segmentteer te gaan
 
 ### Versie 1.4.2 (maart 2016) {#version-march-1}
