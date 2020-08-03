@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
 translation-type: tm+mt
-source-git-commit: 55b9105fab3947322649c7ed2b750497e486ec63
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
@@ -27,11 +27,13 @@ Deze pagina bevat een lijst met bekende problemen die Adobe Experience Manager 6
 Hybride apparaten worden niet ondersteund. Er kunnen verschillende problemen optreden wanneer u dergelijke apparaten gebruikt. De volgende voorgestelde procedures helpen veel problemen op te lossen:
 
 Als u Google Chrome als browser gebruikt:
+
 * Typ `chrome://flags/` in de adresbalk en druk op Enter.
 * Klik op Enable touch events > Disabled.
 * Start de browser opnieuw (alle tabbladen en vensters).
 
 Als u Mozilla Firefox als browser gebruikt:
+
 * Typ `about:config` in de adresbalk en druk op Enter.
 * Filter de instellingen naar `dom.w3c`.
 * Zorg ervoor dat de instellingen zijn `0` en `false`.
@@ -96,7 +98,7 @@ Als u Microsoft Edge als browser gebruikt:
 
 * **Console** - De koppeling Gebruikersnaam of Wachtwoord vergeten leidt naar de aanmeldingspagina in plaats van naar het bijbehorende formulier voor het opvragen van wachtwoorden (CQ-4237682)
 
-## Formulieren {#forms}
+## Forms {#forms}
 
 ### Installatie en implementatie
 
@@ -123,7 +125,7 @@ Als u Microsoft Edge als browser gebruikt:
 
 * Verificatieconfiguraties voor SOAP-webservices zijn niet zichtbaar en kunnen dus niet worden geconfigureerd in cloudservices. U lost het probleem als volgt op:
 
-   1. Ga in de console van CRXDE Lite naar de volgende knoop.\
+   1. Ga in de console van CRXDE Lite naar het volgende knooppunt.\
       /libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices/\
       wsdlauthenticationsettings/items/fixed columns/items/container/items/wsdl/items/\
       selectAuthentication/items/custom.
@@ -132,11 +134,11 @@ Als u Microsoft Edge als browser gebruikt:
 
 (CQ-4238462)
 
-### Adobe-integratie voor ondertekenen
+### Adobe Sign-integratie
 
-* De Adobe-planner voor ondertekening werkt niet meer periodiek en daarom gaan formulieren die in behandeling zijn niet naar verzending. U lost dit probleem op door de **Apache Sling Scheduler Support** -bundel opnieuw op te starten vanaf de AEM-webconsole op https://[*server*]:[*poort*]/systeem/console/bundels.
+* De planner van Adobe Sign werkt niet meer periodiek en daarom worden formulieren in afwachting van het teken niet naar verzending verplaatst. U lost dit probleem op door de **Apache Sling Scheduler Support** opnieuw te starten vanaf AEM webconsole op https://[*server*]:[*poort*]/systeem/console/bundles.
 
-### Adaptive Forms authoring
+### Adaptieve Forms-authoring
 
 * De component Diagram in adaptieve formulieren neemt meer ruimte in beslag dan normaal.
 * Er wordt een uitzondering geretourneerd bij het opslaan van eigenschappen voor adaptieve formulieren, adaptieve formulierfragmenten of interactieve communicatie in de gebruikersinterface van Forms Manager.
