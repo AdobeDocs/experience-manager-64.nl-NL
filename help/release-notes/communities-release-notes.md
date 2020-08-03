@@ -1,8 +1,8 @@
 ---
-title: Opmerkingen bij de release AEM-gemeenschappen
-seo-title: AEM-gemeenschappen
-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Communities.
-seo-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Communities.
+title: Opmerkingen bij de release AEM Communities
+seo-title: AEM Communities
+description: Opmerkingen bij de vrijgave specifiek voor Adobe Experience Manager 6.4 Gemeenschappen.
+seo-description: Opmerkingen bij de vrijgave specifiek voor Adobe Experience Manager 6.4 Gemeenschappen.
 uuid: 2de9f511-2a61-4003-9b2c-d6728bc9d57a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,14 +10,17 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 55a0b70e-5212-408b-8560-6e758bd8bb10
 translation-type: tm+mt
-source-git-commit: 242f60c70c7cc00871d2ff9f42d2ade4125eaa31
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '327'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release AEM-gemeenschappen {#aem-communities-release-notes}
+# Opmerkingen bij de release AEM Communities {#aem-communities-release-notes}
 
-In dit gedeelte wordt informatie gegeven over de verbeteringen aan de AEM-gemeenschappen sinds de release 6.3. Meer informatie over de nieuwe functies vindt u in [Nieuw in AEM 6.4-gemeenschappen](/help/communities/whats-new-aem-communities.md).
+Deze sectie verstrekt informatie over de verbeteringen aan AEM Communities sinds de versie 6.3. Meer informatie over de nieuwe eigenschappen, zie [Nieuw in AEM 6.4 Gemeenschappen](/help/communities/whats-new-aem-communities.md).
 
 Voor de recentste versie, zie de het [Plaatsen sectie van Gemeenschappen](/help/communities/deploy-communities.md#latest-releases) van de documentatie.
 
@@ -58,7 +61,7 @@ Moderatie:
 
 Algemene compatibiliteit met fundamentele wijzigingen in AEM 6.4.
 
-Opmerking: al deze functies zijn ook beschikbaar voor AEM 6.3. Controleer de opmerkingen bij de release van AEM Communities voor [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
+Opmerking: al deze functies zijn ook beschikbaar voor AEM 6.3. Controleer de opmerkingen bij de release AEM Communities voor [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
 
 ## Bekende problemen {#known-issues}
 
@@ -71,4 +74,4 @@ Deskundige scores (*aangedreven door Sensei*) worden gebruikt om gokken mogelijk
 
 ## Demonstraties {#demonstrations}
 
-Al deze eigenschappen kunnen worden aangetoond gebruikend de [AEM demomachine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) die openbaar op GitHub.com beschikbaar is wanneer het gebruiken van het AEM Gemeenschappen demoscenario en ook binnen de nieuwe Web.Retail verwijzingsimplementatie.
+Al deze eigenschappen kunnen worden getoond gebruikend de [AEM Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) van de Demo openbaar op GitHub.com wanneer het gebruiken van het de demonstratiescenario van AEM Communities en ook binnen de nieuwe Wij.Retail verwijzingsimplementatie beschikbaar.
