@@ -1,22 +1,22 @@
 ---
-title: Opmerkingen bij de release AEM 6.4 Cumulative Fix Pack Pack
+title: AEM 6.4 Opmerkingen bij de release Cumulative Fix Pack Pack
 description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4 Cumulatieve herstelpakketten.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
 workflow-type: tm+mt
-source-wordcount: '2108'
+source-wordcount: '2114'
 ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release AEM 6.4 Cumulative Fix Pack {#aem-cumulative-fix-pack-release-notes}
+# AEM 6.4 Opmerkingen bij de release Cumulative Fix Pack {#aem-cumulative-fix-pack-release-notes}
 
 ## Geen informatie {#release-information}
 
-| Producten | **Adobe Experience Manager (AEM) 6.4** |
+| Producten | **Adobe Experience Manager (AEM) 6,4** |
 |---|---|
 | Versie | 6.4.8.1 |
 | Type | Cumulatief reparatiepakket |
@@ -26,16 +26,16 @@ ht-degree: 0%
 
 ## Wat is inbegrepen in AEM 6.4.8.1 {#what-s-included-in-aem}
 
-AEM Cumulative Fix Pack 6.4.8.1 is een belangrijke update die verscheidene interne en klantenmoeilijke situaties omvat sinds de algemene beschikbaarheid van AEM 6.4 Service Pack 8 (6.4.8.0) in maart 2020.
+AEM Cumulative Fix Pack 6.4.8.1 is een belangrijke update die verscheidene interne en klantenmoeilijke situaties sinds de algemene beschikbaarheid van AEM 6.4 Service Pack 8 (6.4.8.0) in Maart 2020 omvat.
 
 AEM Cumulative Fix Pack 6.4.8.1 is afhankelijk van AEM 6.4 Service Pack 8. Daarom moet u het pakket AEM Cumulative Fix Pack 6.4.8.1 installeren nadat u AEM 6.4 Service Pack 8 hebt geïnstalleerd.
 
-Enkele belangrijke hoogtepunten van AEM 6.4.8.1 zijn:
+Enkele belangrijke punten van AEM 6.4.8.1 zijn:
 
 * De verwijderde integratie van het Aandeel van het Pakket met Adobe Experience Manager.
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.21.
 
-Voor informatie over gestreken fijn papier en andere soorten vrijkomende producten, zie de Definities van het Voertuig van de Update van [AEM.](../sites-deploying/update-release-vehicle-definitions.md)
+Voor informatie over gestreken fijn papier en andere typen vrijkomende producten raadpleegt u [AEM Definities van vrijgave voor voertuigen bijwerken](../sites-deploying/update-release-vehicle-definitions.md)
 
 ## Lijst met wijzigingen {#list-of-changes}
 
@@ -48,7 +48,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * Als de optie Coral.Select de waarde emptyOption=true instelt of een standaarditems met waarde = &quot;&quot; bevat, wordt in het bestand dropdownshowhide.js een fout aangetroffen: Uncaught TypeError: component.getValue is geen functie (NPR-33163).
 * Wanneer een component een andere component als data-SLUIT-middel omvat, wordt de placeholder van de oudercontainer componentencomponent vervangen met binnenste componentenplaceholder (NPR-33119).
 * Wanneer u een inhoudsfragment baseert op een schema en het een verplicht tekstgebied of een weggebied bevat, kan het inhoudsfragment niet opslaan (NPR-33007)
-* Wanneer u een douanecomponent creeert die uit-van-de-doos ervaringsfragmentcomponent gebruikt en het in de pagina&#39;s van AEM Sites gebruikt, toont AEM geen verwijzingen (gebruik) voor de douanecomponent (NPR-32852).
+* Wanneer u een douanecomponent creeert die uit-van-de-doos ervaringsfragmentcomponent gebruikt en het in de pagina&#39;s van AEM Sites gebruikt, AEM toont geen verwijzingen (gebruik) voor de douanecomponent (NPR-32852).
 * Wanneer een pagina met AEM Sites deel uitmaakt van een grote inhoudset met meerdere live-kopieën, kan de voorvertoning van de paginaversie niet worden geladen (NPR-32772).
 * Wanneer u een lancering bevordert voegt het &quot;cq:LiveRelationship&quot;mengsel aan elke component toe die in de lancering wordt toegevoegd. Het heeft invloed op alle lanceringen ongeacht of een lancering met of zonder het selecteren van — de Inherit bron pagina levende gegevens — optie (NPR-32664) wordt gecreeerd.
 * Wanneer de paginering begint, laadt de Plukker van de Fragmenten van de Ervaring niet alle punten (NPR-32605).
@@ -79,7 +79,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * Het [!DNL Sling] filter wordt niet aangeroepen als het `sling:match` kaartitem wordt gemaakt onder `/etc/maps` (NPR-33308).
 * Alle spoelmiddelen worden geactiveerd bij het deactiveren van een pagina (NPR-32941).
 * Wanneer u de `ScriptProcessor` API gebruikt om een JavaScript-bibliotheek te miniateren, wordt in het logbestand een foutbericht weergegeven dat aangeeft dat de JavaScript-code niet compatibel is met de strikte modus. De API biedt geen optie om de strikte modus in of uit te schakelen. (NPR-32746).
-* Wanneer een SQL vraag langere tijd, bijvoorbeeld 7 uren loopt, houdt op met antwoorden (NPR-33043).
+* Wanneer een SQL vraag langere tijd, bijvoorbeeld 7 uren loopt, AEM ophoudt antwoordend (NPR-33043).
 
 ### User Interface {#ui-6481}
 
@@ -102,18 +102,18 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 * De [!UICONTROL Timeline] optie in de linkerspoorstaaf neemt meer tijd om te laden dan verwacht (NPR-32850).
 
-### Formulieren {#forms-6481}
+### Forms {#forms-6481}
 
 >[!NOTE]
 >
->AEM Cumulative Fix Pack bevat geen correcties voor AEM Forms. Ze worden geleverd met behulp van een apart Forms add-on pakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Voor meer informatie, zie [AEM Forms toe:voegen-op pakket](#install-aem-forms-add-on-package) installeren en AEM Forms JEE installer [](#install-aem-forms-jee-installer)installeren.
+>AEM Cumulative Fix Pack bevat geen correcties voor AEM Forms. Ze worden geleverd met een apart Forms-add-onpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Voor meer informatie, zie [AEM Forms toe:voegen-op pakket](#install-aem-forms-add-on-package) installeren en AEM Forms JEE installer [](#install-aem-forms-jee-installer)installeren.
 
 * Correspondentenbeheer: Wanneer een gebruiker inhoud uit een [!DNL Word] document plakt, behoudt het tekstdocumentfragment de opmaak niet (NPR-33213).
-* Adaptieve formulieren: Een nieuwe regel naar een tekenreeks in een woordenboek voor adaptieve formulieren voegt `&#xa;` tekens toe aan het woordenboek (NPR-33265).
-* Adaptieve formulieren: De gebruiker kan geen adaptief formulier opslaan met meer dan één bijlage (NPR-33214).
-* Adaptieve formulieren: `AddInstance` en `RemoveInstance` methoden voor Instance Manager-klasse voegen geen dynamisch aantal instanties toe voor lazy load fragments op [!DNL Internet Explorer 11] (NPR-33201).
-* Adaptieve formulieren: Analytics ingeschakeld op een adaptief formulier dat is ingesloten in een [!DNL Sites] pagina, registreert geen gegevens voor de gebeurtenissen Verzenden en Afbreken (NPR-31359).
-* Adaptieve formulieren: Wanneer een gebruiker de inhoud van een [!DNL Word] document in een adaptief formulier plakt en het verzendt, bevat het verzonden adaptieve formulier Unicode-tekens. Bovendien mislukt de conversie van PDF naar PDF/A vanwege Unicode-tekens (NPR-33348).
+* Adaptieve Forms: Een nieuwe regel naar een tekenreeks in een woordenboek voor adaptieve formulieren voegt `&#xa;` tekens toe aan het woordenboek (NPR-33265).
+* Adaptieve Forms: De gebruiker kan geen adaptief formulier opslaan met meer dan één bijlage (NPR-33214).
+* Adaptieve Forms: `AddInstance` en `RemoveInstance` methoden voor Instance Manager-klasse voegen geen dynamisch aantal instanties toe voor lazy load fragments op [!DNL Internet Explorer 11] (NPR-33201).
+* Adaptieve Forms: Analytics ingeschakeld op een adaptief formulier dat is ingesloten in een [!DNL Sites] pagina, registreert geen gegevens voor de gebeurtenissen Verzenden en Afbreken (NPR-31359).
+* Adaptieve Forms: Wanneer een gebruiker de inhoud van een [!DNL Word] document in een adaptief formulier plakt en het verzendt, bevat het verzonden adaptieve formulier Unicode-tekens. Bovendien mislukt de conversie van PDF naar PDF/A vanwege Unicode-tekens (NPR-33348).
 * BackendIntegration: De verzoeken van het het gegevensmodel van de vorm ontbreken aangezien verfrist teken wegens onjuiste inactieve staat (NPR-33168) verloopt.
 * Documentservices: De conversie van PDF-service kan PDF-documenten niet converteren naar PostScript omdat Gibson-jars ontbreken voor [!DNL WebLogic] de [!DNL Linux] server (NPR-33515, CQ-4292239).
 * Documentservices: Wanneer een gebruiker een tekstbestand naar een PDF converteert, worden Japanse tekens niet correct weergegeven (NPR-33239).
@@ -134,11 +134,11 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 >[!CAUTION]
 >
->Voor klanten met een functiepakket geïnstalleerd op AEM 6.4. Optionele door Adobe geleverde elementenpakketten zijn afhankelijk van de releaseversie en servicepacks. Als u een Feature Pack hebt geïnstalleerd, neemt u contact op met het AEM Customer Care-team om de compatibiliteit van deze functiepakketten met dit cumulatieve reparatiepakket voor AEM 6.4 te valideren.
+>Voor klanten met op AEM 6.4 geïnstalleerde de Pakken van de Eigenschap. De facultatieve die Packs van de Eigenschap door Adobe worden verstrekt hebben gebiedsdelen op de versieversie en de dienstpakken. Als u een Feature Pack hebt geïnstalleerd, neemt u contact op met het AEM Customer Care-team om de compatibiliteit van deze functiepakketten met dit cumulatieve reparatiepakket voor AEM 6.4 te valideren.
 
 * AEM 6.4.8.1 vereist AEM 6.4.8.0. Ga naar de [upgradedocumentatie](../sites-deploying/upgrade.md) voor gedetailleerde instructies.
 * Voor een plaatsing met MongoDB en veelvoudige instanties, installeer AEM 6.4.8.1 op één van de instanties van de Auteur gebruikend de Manager van het Pakket.
-* Zorg ervoor dat u een momentopname of nieuwe back-up van uw AEM-instantie hebt voordat u het cumulatieve reparatiepakket installeert.
+* Zorg ervoor dat u een momentopname of een nieuwe back-up van uw AEM hebt voordat u het cumulatieve reparatiepakket installeert.
 * Start de instantie opnieuw voor de installatie. Hoewel dat alleen nodig is wanneer de instantie zich nog in de updatemodus bevindt (en dit is het geval wanneer de instantie zojuist is bijgewerkt vanaf een eerdere versie), wordt het doorgaans aanbevolen als de instantie langer actief was.
 
 >[!NOTE]
@@ -147,7 +147,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 ### Het Cumulative Fix Pack installeren {#install-cumulative-fix-pack}
 
-Voer de volgende stappen uit om het Cumulative Fix Pack op een bestaande AEM 6.4.8.0 instantie te installeren:
+Voer de volgende stappen uit om het Cumulative Fix Pack op een bestaand AEM 6.4.8.0-exemplaar te installeren:
 
 1. Klik op de koppeling [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/cumulativefixpack/aem-6.4.8-cfp-1.0.zip) om het pakket te downloaden.
 
@@ -175,24 +175,24 @@ B. Gebruik de [HTTP API van de Manager](https://docs.adobe.com/content/docs/en/c
 
 ### Installatie valideren {#validate-install}
 
-1. Op de pagina Productinformatie (*/system/console/productinfo *) moet nu de bijgewerkte versie van de tekenreeks &quot;Adobe Experience Manager, versie 6.4.8.1&quot; onder Geïnstalleerde producten staan.
+1. Op de pagina Productinformatie (*/system/console/productinfo*) moet nu de bijgewerkte versie van de tekenreeks &quot;Adobe Experience Manager, versie 6.4.8.1&quot; onder Geïnstalleerde producten staan.
 1. Alle OSGI-bundels zijn actief of FRAGMENT in de OSGI Console (Webconsole gebruiken: /systeem/console/bundels).
 1. De OSGI-bundel org.apache.jackrabbit.oak-core bevindt zich op versie 1.8.17 of hoger (gebruik webconsole: /systeem/console/bundels).
 
 Zie [Technische vereisten](../sites-deploying/technical-requirements.md)voor informatie over het gecertificeerde platform voor het uitvoeren van deze versie van AEM Sites en bedrijfsmiddelen.
 
 >[!Nofferte]
->Na een geslaagde installatie van het pakket verschijnt een >informatief bericht dat de inhoud >package correct is geïnstalleerd, zoals **&quot;Content Package AEM-6.4-Service-Pack-7 geïnstalleerd.&quot;**
+>Na een geslaagde installatie van het pakket wordt een informatief bericht weergegeven waarin wordt aangegeven dat het inhoudspakket is geïnstalleerd, zoals **&quot;Content Package AEM-6.4-Service-Pack-7 is geïnstalleerd.&quot;**
 
 ### Dynamic Media Viewers bijwerken (5.10.1) {#update-dynamic-media-viewers}
 
-<p id="Dynamic">AEM 6.4.8.1 bevat een nieuwe versie van Dynamic Media viewers (5.10.1), waarmee op dubbele namen op de pagina Voorinstelling afbeelding kan worden gecontroleerd. Klanten van Dynamic Media wordt aangeraden de volgende opdracht uit te voeren om voorinstellingen van de viewer voor selectievakjes naar een actuele status over te brengen.
+AEM 6.4.8.1 bevat een nieuwe versie van Dynamic Media viewers (5.10.1), waarmee op dubbele namen op de pagina Voorinstelling afbeelding kan worden gecontroleerd. Klanten van Dynamic Media wordt aangeraden de volgende opdracht uit te voeren om voorinstellingen van de viewer voor selectievakjes naar een actuele status over te brengen.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
 Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekopieerd.
 
-### Invoegpakket voor AEM-formulieren installeren {#install-aem-forms-add-on-package}
+### Invoegpakket voor AEM formulieren installeren {#install-aem-forms-add-on-package}
 
 >[!NOTE]
 >
@@ -200,7 +200,7 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 
 1. Controleer of u het AEM Cumulative Fix Pack hebt geïnstalleerd.
 1. Download het overeenkomstige formulierinvoegpakket dat in [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem wordt vermeld.
-1. Installeer het formulierinvoegpakket zoals beschreven in [AEM-formulierinvoegpakketten](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html#InstallAEMFormsaddonpackage)installeren.
+1. Installeer het formulierinvoegpakket zoals beschreven in [Invoegtoepassingspakketten](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package)voor AEM formulieren installeren.
 
 ### AEM Forms JEE-installatieprogramma installeren {#install-aem-forms-jee-installer}
 
@@ -212,7 +212,7 @@ Voor informatie over het installeren van het cumulatieve installatieprogramma vo
 
 ### Uber Jar {#uber-jar}
 
-De Uber Jar voor AEM 6.4.8.1 is beschikbaar in de [openbare gegevensopslagplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.4.8.1/)van Adobe.
+De Uber Jar voor AEM 6.4.8.1 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.adobe.com/nexus/content/groups/public/com/adobe/aem/uber-jar/6.4.8.1/).
 
 Om Uber Jar in een Geweven project te gebruiken, verwijs naar het artikel, [hoe te om de jar](../sites-developing/ht-projects-maven.md) van Uber te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten:
 
@@ -233,15 +233,15 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 | Gebied | Functie | Vervanging | Versie |
 |---|---|---|---|
 | Assets | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
-| Middelen en Adobe Creative Cloud-integratie | [Het delen](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/creative-cloud.html) van mappen naar Creative Cloud is geïntroduceerd in AEM 6.2 om creatieve gebruikers toegang te geven tot middelen van AEM. Een nieuwe functie die wordt vrijgegeven in de Creative Cloud-toepassing Adobe Asset Link, biedt een veel betere gebruikerservaring en krachtigere toegang tot middelen van AEM, rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe biedt geen verdere verbeteringen voor het delen van mappen. Hoewel de functie in AEM is opgenomen, worden klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie het [integratieartikel](/help/assets/aem-cc-integration-best-practices.md) van AEM Creative Cloud voor meer informatie. | AEM 6.4.4.0 |
+| Integratie van middelen en Adobe Creative Cloud | [AEM naar het delen](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) van mappen in Creative Cloud is in AEM 6.2 geïntroduceerd als een manier om creatieve gebruikers toegang te geven tot middelen van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie voor meer informatie [AEM het](/help/assets/aem-cc-integration-best-practices.md) artikel over Creative Cloud-integratie. | AEM 6.4.4.0 |
 
 ## Bekende problemen {#known-issues}
 
-* Tijdens de installatie van AEM 6.4.8.1, veroorzaakt de update van [!DNL Chrome] versie 83 een probleem in bouwpakketten. Gebruik andere beschikbare browsers, zoals [!DNL Internet Explorer] en [!DNL Firefox], of andere AEM-standaardopties voor het installeren van pakketten om het probleem op te lossen. Het probleem wordt opgelost na de installatie van AEM 6.4.8.1.
+* Tijdens de installatie van AEM 6.4.8.1, veroorzaakt de update van [!DNL Chrome] versie 83 een probleem in bouwpakketten. Gebruik andere beschikbare browsers, zoals [!DNL Internet Explorer] en [!DNL Firefox], of andere AEM standaardopties voor de installatie van pakketten om het probleem op te lossen. Het probleem wordt opgelost na de installatie van AEM 6.4.8.1.
 
-* Kan geen e-mail naar de externe SMTP-server verzenden met de standaard e-mailafzender van AEM, omdat communicatie met TLS v1.2 alleen is toegestaan. Verwijder de bundel `javax.mail:mail:1.5.0-b01` uit `system/console` en vernieuw de bundels om het probleem op te lossen.
+* Kan geen e-mail naar de externe SMTP-server verzenden met behulp van de AEM standaard e-mailafzender, omdat communicatie met TLS v1.2 alleen is toegestaan. Verwijder de bundel `javax.mail:mail:1.5.0-b01` uit `system/console` en vernieuw de bundels om het probleem op te lossen.
 
-Voor informatie over de bekende problemen van AEM 6.4.8.0 Service Pack, zie [AEM 6.4.8.0 de Nota&#39;s](sp-release-notes.md)van de Versie van het Pak van de Dienst.
+Voor informatie over AEM 6.4.8.0 Service Pack bekende kwesties, zie [AEM 6.4.8.0 de Nota&#39;s](sp-release-notes.md)van de Versie van het Service Pack van de Versie.
 
 ## OSGi-bundels en inhoudspakketten inbegrepen {#osgi-bundles-and-content-packages-included}
 
@@ -251,20 +251,20 @@ Lijst van OSGi-bundels opgenomen in AEM 6.4.8.1
 
 [Bestand ophalen](assets/6.4.8.1_osgi_bundles.txt)
 
-Lijst met inhoudspakketten die zijn opgenomen in AEM 6.4.8.1
+Lijst van inhoudspakketten opgenomen in AEM 6.4.8.1
 
 [Bestand ophalen](assets/6.4.8.1_content_packages.txt)
 
 ## Nuttige bronnen {#helpful-resources}
 
 * [Opmerkingen bij de release AEM 6.4](../release-notes/release-notes.md)
-* [AEM-productpagina](https://www.adobe.com/solutions/web-experience-management.html)
+* [AEM productpagina](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 6.4-documentatie](https://helpx.adobe.com/nl/support/experience-manager/6-4.html)
 * Abonneren op [Adobe-productupdates met prioriteit](https://www.adobe.com/subscription/priority-product-update.html)
 
 ## Beperkte sites {#restricted-sites-new}
 
-Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw accountmanager van Adobe als u een klant bent en toegang nodig hebt.
+Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [Productdownload op licensing.adobe.com](https://licensing.adobe.com/)
 * [Contact opnemen met de klantenondersteuning](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
