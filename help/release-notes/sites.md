@@ -1,8 +1,8 @@
 ---
-title: Opmerkingen bij de release AEM-sites
+title: Opmerkingen bij de release AEM Sites
 seo-title: AEM Sites
-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Sites.
-seo-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Sites.
+description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4 Sites.
+seo-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4 Sites.
 uuid: 593928ec-5d1a-4a88-bd73-897421c5984a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -10,16 +10,19 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
 translation-type: tm+mt
-source-git-commit: 901a923b6ab2b6bee1738d2b8f1928571c8019cb
+source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+workflow-type: tm+mt
+source-wordcount: '1020'
+ht-degree: 0%
 
 ---
 
 
-# Opmerkingen bij de release AEM-sites {#aem-sites-release-notes}
+# Opmerkingen bij de release AEM Sites {#aem-sites-release-notes}
 
 ## Sites {#sites}
 
-Zie het volgende voor de verbeteringen van AEM-sites 6.4:
+Zie het volgende voor AEM Sites 6.4 verbeteringen in detail:
 
 ### Sitebeheer {#site-administration}
 
@@ -30,10 +33,10 @@ Zie het volgende voor de verbeteringen van AEM-sites 6.4:
 * Mogelijkheid om sneltoetsen uit te schakelen (in Voorkeuren in-/uitschakelen).
 * Stop met het tonen van tijdstempels in alle UI relatief na 7 dagen (standaard ingesteld in Voorkeuren).
 
-###  Pagina-editor {#page-editor}
+### Pagina-editor {#page-editor}
 
 * Bijgewerkte apparaatlijst voor responsieve sitevoorvertoning, nu inclusief Apple iPhone 8, 8 Plus en X, en Samsung S7
-* Verplaatste standaardplaats voor de informatie van het malplaatjeontwerp vanaf /etc/design om plaatsen specifieke montages in /conf te steunen. Klanten die een upgrade uitvoeren van eerdere AEM-versies, kunnen het gebruik van /etc/design blijven gebruiken.
+* Verplaatste standaardplaats voor de informatie van het malplaatjeontwerp vanaf /etc/design om plaatsen specifieke montages in /conf te steunen. Klanten die een upgrade uitvoeren van eerdere AEM, kunnen /etc/design blijven gebruiken.
 
 ### Component- en sjabloonontwikkeling {#component-amp-template-development}
 
@@ -55,22 +58,22 @@ Zie het volgende voor de verbeteringen van AEM-sites 6.4:
 
 >[!CAUTION]
 >
->AEM bevat versie 1.12.4 van de jQuery-bibliotheek voor maximale compatibiliteit met bestaande aangepaste code. Adobe heeft wijzigingen aangebracht om bekende beveiligingsproblemen te verhelpen.
+>AEM bevat versie 1.12.4 van de jQuery-bibliotheek voor maximale compatibiliteit met bestaande aangepaste code. Adobe heeft wijzigingen aangebracht om bekende beveiligingsproblemen aan te pakken.
 
 ### Inhoudsfragmenten en -editor {#content-fragments-amp-editor}
 
-* Inleiding tot gestructureerde inhoudsmodellen als basis voor inhoudsfragmenten
+* Introductie van Structured Content Models als basis voor inhoudsfragmenten
 
    * Gebruikersinterface modeleditor
    * Vooraf geconfigureerde gegevenselementen voor modellen van inhoudsfragmenten (single-line tekst, multi-line tekst, getal, boolean, date&amp;time, opsomming, inhoudsverwijzing, tags)
 
-* Verbeterde bruikbaarheid van de AEM Content Fragment Editor
+* De bruikbaarheid van de AEM Content Fragment-editor is verbeterd
 
    * Overzicht van alle elementen weergeven
    * Volledig scherm bewerken voor enkele elementen
    * Verbeterde mogelijkheden voor tekstbewerking (lijsten met opsommingstekens, genummerde lijsten, inspringing, hyperlinks, tabellen, zoeken en vervangen, spellingcontrole)
 
-* Verbeterde uitvoeropties toegevoegd voor AEM Content Fragments
+* Verbeterde uitvoeropties toegevoegd voor AEM inhoudsfragmenten
 
    * Nieuwe component Inhoudsfragment, als onderdeel van Core Components. [Zie code op GitHub.](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components/tree/master/extension/contentfragment/content/src/content/jcr_root/apps/core/wcm/extension/components/contentfragment/v1/contentfragment)
    * Ondersteuning voor Content Services met JSON-uitvoer via Sling Model Exporter
@@ -79,26 +82,26 @@ Zie het volgende voor de verbeteringen van AEM-sites 6.4:
 
 * Introduceerde de Blokken van de Bouw van het Fragment van de Ervaring, om het hergebruiken van inhoud tussen de veranderingen van de Fragmenten van de Ervaring te vergemakkelijken door componenten te groeperen en door gemakkelijke verwijzing binnen variaties toe te staan.
 * De mogelijkheid toegevoegd om ervaringsfragmenten toe te voegen aan vertaalprojecten via de referentierail
-* De mogelijkheid bieden om workflows te starten met Experience Fragments via de tijdlijn
+* De mogelijkheid toegevoegd om workflows te starten met Experience Fragments via de tijdlijntrack
 * Referentiespoor toont nu waar een Fragment van de Ervaring in AEM wordt gebruikt
 * De configuratie van malplaatjeplaatsen staat nu auteurs toe om op een globaal of omslagniveau te bepalen welke malplaatjes van het Fragment van de Ervaring worden toegestaan te gebruiken
-* Geavanceerd zoeken ondersteunt nu geavanceerde filters, zoals gepubliceerd/niet-gepubliceerd, geëxporteerd naar sociale media en Adobe Target
+* Geavanceerd zoeken ondersteunt nu geavanceerde filters, zoals gepubliceerd/niet-gepubliceerd, die naar sociale media en Adobe Target worden geëxporteerd
 * Enkele aanmelding voor sociale media toegevoegd bij het exporteren van Experience Fragments naar Pinterest of Facebook
-* Geïntegreerde AEM Ervaar Fragments met het Doel van Adobe. Als u Experience Fragments synchroniseert met Doel, worden er aanbiedingen in Adobe Target gemaakt die met Visual Experience Composer van Target kunnen worden gebruikt om deze in een voor Doel ingeschakelde ervaring in te sluiten.
+* Geïntegreerde AEM Ervaring Fragments met Adobe Target. Als u Experience Fragments synchroniseert met Target, worden er aanbiedingen in Adobe Target gemaakt die kunnen worden gebruikt met Target Visual Experience Composer om deze in te sluiten in een Target-ervaring.
 
 ### Vertaling {#translation}
 
-* Verbeterde bruikbaarheid van AEM-vertaalprojecten:
+* Verbeterde bruikbaarheid van AEM vertaalprojecten:
 
    * Ondersteuning voor meerdere doeltalen in één project
    * Optie om het starten van vertalingen automatisch te bevorderen en te verwijderen
    * Optie om de uitvoering van vertaalprojecten (dagelijks, wekelijks, maandelijks, jaarlijks) te plannen
    * Verbeterde tegels voor vertaalprojecten met meer gedetailleerde statusinformatie
 
-* Introductie van Omgekeerd vertaalgeheugen-update om vertaalgeheugen in een ander vertaalbeheersysteem na lokale inhoudbewerkingen in AEM bij te werken
+* Introductie van Omgekeerd vertaalgeheugen bijwerken, om vertaalgeheugen in een systeem voor vertaalbeheer van derden bij te werken na lokale inhoudbewerkingen in AEM
 * Workflows voor vertaling ondersteunen nu gegroepeerde taalwortels
 * Mogelijkheid toegevoegd om willekeurige namen toe te wijzen aan taalwortels en JCR-eigenschap te gebruiken voor toewijzing aan ISO-code
-* De updates voor slimme vertaling herkennen nu nieuwe pagina&#39;s die zijn toegevoegd aan een taalstramienvertakking
+* De updates voor slimme vertaling herkennen nu nieuwe pagina&#39;s die zijn toegevoegd aan een master taalvertakking
 * Introductie van de rapportage over de vertaalstatus in de lijstweergave Sites Admin
 
 ### Multisite beheer (MSM) {#multi-site-management-msm}
@@ -116,16 +119,16 @@ Zie het volgende voor de verbeteringen van AEM-sites 6.4:
 * Ondersteuningsmappen voor het organiseren van segmenten op basis van site/context (CQ-94620)
 * Verplaatst standaardplaats voor segmenten in /conf om plaats/context specifieke lijsten van het Segment te hebben.
 
-### AEM en Adobe-doel {#aem-amp-adobe-target-nbsp}
+### AEM en Adobe Target  {#aem-amp-adobe-target-nbsp}
 
-* Geïntegreerde AEM Ervaar Fragments met het Doel van Adobe. Als u Experience Fragments synchroniseert met Doel, worden er aanbiedingen in Adobe Target gemaakt die met Visual Experience Composer van Target kunnen worden gebruikt om deze in een voor Doel ingeschakelde ervaring in te sluiten.
-* Adobe Target versie 63 is nu inbegrepen. Adobe raadt u aan om van implementatie over te schakelen naar at.js.
-* at.js versie 1.2.2 is nu inbegrepen. Adobe raadt u aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) te gebruiken voor de installatie van .js op de site.
+* Geïntegreerde AEM Ervaring Fragments met Adobe Target. Als u Experience Fragments synchroniseert met Target, worden er aanbiedingen in Adobe Target gemaakt die kunnen worden gebruikt met Target Visual Experience Composer om deze in te sluiten in een Target-ervaring.
+* Adobe Target mbox.js versie 63 is nu inbegrepen. Adobe raadt aan om de implementatie over te schakelen naar at.js.
+* at.js versie 1.2.2 is nu inbegrepen. Adobe raadt aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) te gebruiken voor het beschikbaar stellen van at.js op de site.
 
 ### AEM en Adobe Analytics {#aem-amp-adobe-analytics}
 
-* s_code.js H.27.5 is nu opgenomen. Adobe raadt u aan om de implementatie over te schakelen naar AppMeturement.js
-* AppMeasurement.js 1.8.0 is nu inbegrepen. Adobe raadt u aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) te gebruiken om AppMeasurement.js op de site te plaatsen.
+* s_code.js H.27.5 is nu opgenomen. Adobe raadt aan om de implementatie over te schakelen naar AppMeasurement.js
+* AppMeasurement.js 1.8.0 is nu inbegrepen. Adobe raadt u aan om Dynamic Tag Management (DTM) of [Adobe Experience Platform Launch](https://www.adobe.com/enterprise/cloud-platform/launch.html) te gebruiken om AppMeasurement.js naar de site te verplaatsen.
 
 ## Invoegtoepassing Gemeenschappen {#communities-add-on}
 
@@ -133,11 +136,10 @@ Zie pagina Opmerkingen bij de release [van Gemeenschappen](/help/release-notes/c
 
 ## Scherminvoegtoepassing {#screens-add-on}
 
-* Toegevoegde ondersteuning voor schermspelers die verbinding moeten maken met AEM-publicatieservers voor commando en besturing en kanaaldownloads (in plaats van rechtstreeks naar AEM-auteur).
+* Toegevoegde ondersteuning voor schermspelers die verbinding moeten maken met AEM publicatieservers voor opdrachtbeheer en besturing en kanaaldownloads (in plaats van rechtstreeks naar AEM auteur).
 * Toegevoegde mogelijkheid om kanaaltoewijzingen te groeperen in Planningen
 * Kanaaltoewijzingen hebben nu de begin- en einddatum
 * Het dashboard van het apparaat toont nu speler shell en ingebouwde programmatuurversie
 * Apparaatdashboardlijst bevat verbindingsstatus van speler
-* Extra ondersteuning voor Google Chrome OS voor AEM Screens Player
+* Toegevoegde ondersteuning voor Google Chrome OS voor AEM Screens Player
 * Microsoft Windows 10 voor AEM Screens Player toegevoegd
-
