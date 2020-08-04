@@ -4,9 +4,9 @@ description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
 workflow-type: tm+mt
-source-wordcount: '2114'
+source-wordcount: '2148'
 ht-degree: 0%
 
 ---
@@ -55,6 +55,8 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * Kan geen startpagina voor een pagina AEM Sites maken. Het creëren van de lancering resulteert in een fout (NPR-32544).
 * Beheer Publicatie omvat geen middelen waarnaar wordt verwezen in de activeringswerkstroom (NPR-32463).
 * Met de Dispatcher Health Check wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33630).
+* De integratie van Salesforce is kwetsbaar voor SSRF (NPR-32671).
+* Gereflecteerde XSS in PreferencesServlet (NPR-33439).
 
 ### Assets {#assets-6481}
 
@@ -74,6 +76,8 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 * De verwerking van activa terwijl bulkupload vastloopt (CQ-4293916).
 
+* SSRF-kwetsbaarheid in Experience Manager (NPR-33437).
+
 ### Platform {#platform-6481}
 
 * Het [!DNL Sling] filter wordt niet aangeroepen als het `sling:match` kaartitem wordt gemaakt onder `/etc/maps` (NPR-33308).
@@ -89,12 +93,17 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 * Er is een `NullPointerException` fout opgetreden in de logboeken met een vertaaltaak (NPR-32220).
 
+### Integrations {#integrations-6481}
+
+* Xxx-site scripting voor JSON (NPR-32745).
+
 ### Gemeenschappen {#communities-6481}
 
 * Auteurs worden na het maken van een nieuwe groep niet doorgestuurd naar de [!UICONTROL Community Group] sectie op [!DNL Internet Explorer] 11 (NPR-33202).
 * Er treedt een fout op bij het openen van de [!UICONTROL Activity Stream] pagina (NPR-33152).
 * Als u een [!DNL Communities] groep bewerkt en de miniatuurafbeelding wijzigt, wordt de groepminiatuurafbeelding niet bijgewerkt (NPR-32603).
 * Tijdens het maken van een versie van meldingen en abonnementen op door gebruikers gegenereerde inhoud (UGC) wordt een onjuiste id van de bronpagina opgeslagen (CQ-4289703).
+* Probleem met scripts die verwijzen naar andere sites (NPR-33212).
 
 ### Workflow {#workflow-6481}
 
@@ -117,6 +126,8 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * BackendIntegration: De verzoeken van het het gegevensmodel van de vorm ontbreken aangezien verfrist teken wegens onjuiste inactieve staat (NPR-33168) verloopt.
 * Documentservices: De conversie van PDF-service kan PDF-documenten niet converteren naar PostScript omdat Gibson-jars ontbreken voor [!DNL WebLogic] de [!DNL Linux] server (NPR-33515, CQ-4292239).
 * Documentservices: Wanneer een gebruiker een tekstbestand naar een PDF converteert, worden Japanse tekens niet correct weergegeven (NPR-33239).
+* Opgeslagen XSS met GuideSOMProviderServlet (NPR-32701).
+
 
 ## Installeren 6.4.8.1 {#install}
 
