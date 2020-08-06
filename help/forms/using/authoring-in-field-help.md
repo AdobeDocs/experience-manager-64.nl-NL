@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 893a72c7-d68f-464f-9765-ec2272189e58
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '393'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 In bepaalde situaties weten eindgebruikers die een formulier invullen niet zeker hoe ze details in een bepaald formulierveld moeten invullen. Om dergelijke problemen te verhelpen, bieden adaptieve formulieren ondersteuning voor het toevoegen van tekst of rich in-context Help aan een formulierveld. Hiermee verbetert u de ervaring bij het invullen van formulieren en voorkomt u dubbelzinnigheid voor eindgebruikers.
 
-In dit artikel wordt besproken hoe formulierauteurs in-context Help kunnen toevoegen tijdens het ontwerpen van Adaptieve formulieren.
+In dit artikel wordt besproken hoe formulierauteurs in-context Help kunnen toevoegen tijdens het ontwerpen van Adaptive Forms.
 
 ## In-context-Help toevoegen {#add-in-context-help}
 
