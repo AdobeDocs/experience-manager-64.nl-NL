@@ -1,8 +1,8 @@
 ---
 title: Weergaveframework voor adaptieve en HTML5-formulieren
 seo-title: Weergaveframework voor adaptieve en HTML5-formulieren
-description: 'Met mobiele formulieren worden formuliersjablonen weergegeven als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen. '
-seo-description: 'Met mobiele formulieren worden formuliersjablonen weergegeven als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen. '
+description: 'Mobile Forms geeft formuliersjablonen weer als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen. '
+seo-description: 'Mobile Forms geeft formuliersjablonen weer als HTML5-formulieren. Deze formulieren gebruiken de bestanden jQuery, Backbone.js en Underscore.js voor de weergave en om scripts in te schakelen. '
 uuid: 183b8d71-44fc-47bf-8cb2-1cf920ffd23a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 2%
 
 ---
 
 
 # Weergaveframework voor adaptieve en HTML5-formulieren {#appearance-framework-for-adaptive-and-html-forms}
 
-Forms (adaptieve formulieren en HTML5-formulieren) gebruiken [jQuery](https://jquery.com/)-, [Backbone.js](https://backbonejs.org/) - en [Underscore.js](https://underscorejs.org/) -bibliotheken voor weergave en scripts. De formulieren gebruiken ook de [jQuery UI](https://jqueryui.com/) - **widget** -architectuur voor alle interactieve elementen (zoals velden en knoppen) in het formulier. Met deze architectuur kunnen formulierontwikkelaars een uitgebreide set beschikbare jQuery-widgets en -plug-ins gebruiken in Forms. U kunt ook formulierspecifieke logica implementeren terwijl u gegevens vastlegt van gebruikers, zoals beperkingen voor leadDigits/trailDigits of afbeeldingsclausules. Formulierontwikkelaars kunnen aangepaste toepassingen maken en gebruiken om de ervaring op het gebied van gegevensvastlegging te verbeteren en gebruikersvriendelijker te maken.
+Forms (adaptieve formulieren en HTML5-formulieren) gebruiken [jQuery](https://jquery.com/)-, [Backbone.js](https://backbonejs.org/) - en [Underscore.js](https://underscorejs.org/) -bibliotheken voor weergave en scripts. De formulieren gebruiken ook de [jQuery UI](https://jqueryui.com/) - **widget** -architectuur voor alle interactieve elementen (zoals velden en knoppen) in het formulier. Met deze architectuur kunnen formulierontwikkelaars een uitgebreide set beschikbare jQuery-widgets en -plug-ins in Forms gebruiken. U kunt ook formulierspecifieke logica implementeren terwijl u gegevens vastlegt van gebruikers, zoals beperkingen voor leadDigits/trailDigits of afbeeldingsclausules. Formulierontwikkelaars kunnen aangepaste toepassingen maken en gebruiken om de ervaring op het gebied van gegevensvastlegging te verbeteren en gebruikersvriendelijker te maken.
 
 Dit artikel is bedoeld voor ontwikkelaars met voldoende kennis van jQuery- en jQuery-widgets. Het biedt inzicht in het weergaveframework en stelt ontwikkelaars in staat een alternatieve weergave voor een formulierveld te maken.
 
@@ -50,7 +53,7 @@ Hier volgen de ingestelde globale opties. Deze opties zijn beschikbaar voor elk 
   </tr>
   <tr>
    <td>screenReaderText</td> 
-   <td>Schermlezers gebruiken deze waarde om informatie over het veld van commentaar te voorzien. Het formulier bevat de waarde en u kunt de waarde overschrijven.<br /> </td> 
+   <td>Readers in het scherm gebruiken deze waarde om informatie over het veld van commentaar te voorzien. Het formulier bevat de waarde en u kunt de waarde overschrijven.<br /> </td> 
   </tr>
   <tr>
    <td>tabIndex</td> 
@@ -216,7 +219,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
    <td>Hiermee wordt een item aan de lijst toegevoegd.</td> 
   </tr>
   <tr>
-   <td>deleteItem<em>: function(nIndex)<br /> nIndex: index van het item dat uit de lijst<br /> moet worden verwijderd </em><br /><br /> </td> 
+   <td>deleteItem<em>: function(nIndex)<br /> nIndex: index van het item dat uit de lijst moet worden verwijderd<br /> </em><br /> <br /> </td> 
    <td>Hiermee verwijdert u een optie uit de lijst.</td> 
   </tr>
   <tr>
