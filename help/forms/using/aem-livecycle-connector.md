@@ -1,8 +1,8 @@
 ---
 title: AEM Forms verbinden met Adobe LiveCycle
 seo-title: AEM Forms verbinden met Adobe LiveCycle
-description: Met de AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM-apps en -workflows.
-seo-description: Met de AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM-apps en -workflows.
+description: Met AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM apps en workflows.
+seo-description: Met AEM LiveCycle-aansluiting kunt u LiveCycle ES4 Document Services starten vanuit AEM apps en workflows.
 uuid: 7dc9d5ec-7b19-4d93-936d-81ceb45dfffa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -19,19 +19,19 @@ ht-degree: 0%
 
 # AEM Forms verbinden met Adobe LiveCycle {#connecting-aem-forms-with-adobe-livecycle}
 
-Met de Adobe Experience Manager (AEM) LiveCycle-aansluiting kunt u Adobe LiveCycle ES4 Document Services naadloos aanroepen vanuit AEM-webapps en -workflows. LiveCycle biedt een SDK voor rijke clients, waarmee clienttoepassingen LiveCycle-services kunnen starten met Java API&#39;s. AEM LiveCycle Connector vereenvoudigt het gebruik van deze API&#39;s in de OSGi-omgeving.
+Met de Adobe Experience Manager (AEM) LiveCycle-aansluiting kunt u Adobe LiveCycle ES4 Document Services naadloos oproepen vanuit AEM webapps en workflows. LiveCycle biedt een rijke client SDK, waarmee clienttoepassingen met Java API&#39;s LiveCycle-services kunnen starten. AEM de Schakelaar van de LiveCycle vereenvoudigt het gebruiken van deze APIs binnen het milieu OSGi.
 
-## AEM-server verbinden met Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
+## AEM server verbinden met Adobe LiveCycle {#connecting-aem-server-to-adobe-livecycle}
 
-AEM LiveCycle Connector maakt deel uit van het [AEM Forms-invoegpakket](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het invoegpakket AEM Forms hebt geïnstalleerd, voert u de volgende stappen uit om gegevens van de LiveCycle-server toe te voegen aan de AEM-webconsole.
+AEM LiveCycle Connector maakt deel uit van het [AEM Forms add-on pakket](/help/forms/using/installing-configuring-aem-forms-osgi.md). Nadat u het AEM Forms-invoegpakket hebt geïnstalleerd, voert u de volgende stappen uit om gegevens van de LiveCycle-server toe te voegen aan AEM webconsole.
 
-1. Zoek in AEM Web Console Configuration Manager de configuratiecomponent van Adobe LiveCycle Client SDK.
+1. Zoek in AEM configuratiebeheer van de webconsole de configuratiecomponent van de Adobe LiveCycle Client SDK.
 1. Klik op de component om de URL van de configuratieserver, de gebruikersnaam en het wachtwoord te bewerken.
 1. Controleer de instellingen en klik op **Opslaan**.
 
 Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste als volgt:
 
-* **Server-URL** - Geeft de URL naar de LiveCycle-server op. Als u wilt dat LiveCycle en AEM via https communiceren, start u AEM met de volgende JVM
+* **Server-URL** - Geeft de URL naar de LiveCycle-server op. Als u wilt dat LiveCycle en AEM communiceren via https, start u AEM met de volgende JVM
 
    ```
    argument 
@@ -40,19 +40,19 @@ Hoewel de eigenschappen vanzelfsprekend zijn, zijn de belangrijkste als volgt:
 
    optie.
 
-* **Gebruikersnaam**- Geeft de gebruikersnaam op van de account die wordt gebruikt om communicatie tot stand te brengen tussen AEM en LiveCycle. Het account is een LiveCycle-gebruikersaccount die gemachtigd is om Document Services te starten.
+* **Gebruikersnaam**- Geeft de gebruikersnaam op van de account die wordt gebruikt om communicatie tussen AEM en LiveCycle tot stand te brengen. De account is een LiveCycle-gebruikersaccount die gemachtigd is om Document Services te starten.
 * **Wachtwoord**- Geeft het wachtwoord op.
-* **De Naam** van de dienst - specificeert de diensten die gebruikend de gebruikersgeloofsbrieven worden begonnen die in de gebieden van de Gebruikersnaam en van het Wachtwoord worden verstrekt. Standaard worden geen referenties doorgegeven tijdens het starten van LiveCycle-services.
+* **De Naam** van de dienst - specificeert de diensten die gebruikend de gebruikersgeloofsbrieven worden begonnen die in de gebieden van de Gebruikersnaam en van het Wachtwoord worden verstrekt. Standaard worden geen referenties doorgegeven bij het starten van LiveCycle-services.
 
 ## Documentservices starten {#starting-document-services}
 
-Clienttoepassingen kunnen LiveCycle-services programmatisch starten met een Java API, webservices, Remoting en REST. Voor Java-clients kan de toepassing LiveCycle SDK gebruiken. De LiveCycle SDK biedt een Java API waarmee u deze services op afstand kunt starten. Als u bijvoorbeeld een Microsoft Word-document naar PDF wilt converteren, start de client GeneratePDFService. De aanroepingsstroom bestaat uit de volgende stappen:
+De toepassingen van de cliënt kunnen de diensten van LiveCycle programmatically beginnen gebruikend Java API, de Diensten van het Web, Remoting, en REST. Voor Java-clients kan de toepassing LiveCycle SDK gebruiken. De LiveCycle SDK biedt een Java API waarmee deze services op afstand kunnen worden gestart. Als u bijvoorbeeld een Microsoft Word-document naar PDF wilt converteren, start de client GeneratePDFService. De aanroepingsstroom bestaat uit de volgende stappen:
 
 1. Maak een ServiceClientFactory-instantie.
 1. Elke service biedt een clientklasse. Om de dienst te beginnen, creeer een cliëntgeval van de dienst.
 1. Start de service en verwerkt het resultaat.
 
-AEM LiveCycle Connector vereenvoudigt de stroom door deze cliëntinstanties als diensten bloot te stellen OSGi die kunnen worden betreden gebruikend standaardOSGi middelen. De LiveCycle-aansluiting biedt de volgende functies:
+AEM de Schakelaar van de LiveCycle vereenvoudigt de stroom door deze cliëntinstanties als diensten bloot te stellen OSGi die kunnen worden betreden gebruikend standaardOSGi middelen. De aansluiting LiveCycle biedt de volgende functies:
 
 * Clientinstanties als OSGi Service: De clients die als OSGI-bundels zijn verpakt, worden vermeld in de [sectie Lijst](/help/forms/using/aem-livecycle-connector.md#p-document-services-list-p) Document Services. Elke cliëntjar registreert de cliëntinstantie als dienst OSGi met de Registratie van de Dienst OSGi.
 * Doorgave gebruikersreferenties: De verbindingsgegevens die nodig zijn om verbinding te maken met de LiveCycle-server worden centraal beheerd.
@@ -60,7 +60,7 @@ AEM LiveCycle Connector vereenvoudigt de stroom door deze cliëntinstanties als 
 
 ### Beginnend via de Verwijzingen van de Dienst van OSGi Registratie van de Dienst {#starting-via-service-references-from-osgi-service-registry}
 
-Voer de volgende stappen uit om een blootgestelde service te starten vanuit AEM:
+Om de blootgestelde dienst van binnen AEM te beginnen, voer de volgende stappen uit:
 
 1. Geweven afhankelijkheden bepalen. Voeg gebiedsdeel aan de vereiste cliëntbar in uw gegeven pom.xml- dossier toe. Voeg minstens afhankelijkheid toe aan adobe-livecycle-client en adobe-usermanager-client-jars.
 
@@ -154,15 +154,15 @@ ServiceClientFactory scf = scfProvider.getDefaultServiceClientFactory();
 
 ## Ondersteuning voor RunAs {#runas-support}
 
-Bijna elke documentservice in LiveCycle vereist verificatie. U kunt om het even welke volgende opties gebruiken om deze diensten te beginnen zonder expliciete geloofsbrieven in de code te verstrekken:
+Bijna elke Document Service in LiveCycle vereist authentificatie. U kunt om het even welke volgende opties gebruiken om deze diensten te beginnen zonder expliciete geloofsbrieven in de code te verstrekken:
 
 ### Whitelist-configuratie {#allowlist-configuration}
 
-De configuratie van LiveCycle Client SDK bevat een instelling voor servicenamen. Deze configuratie is een lijst van de diensten waarvoor de aanroepingslogica uit de doos beheerderreferentie gebruikt. Als u bijvoorbeeld DirectoryManager-services (onderdeel van de gebruikersbeheer-API) aan deze lijst toevoegt, kan elke clientcode de service rechtstreeks gebruiken en wordt de geconfigureerde gegevens automatisch doorgegeven als onderdeel van de aanvraag die naar de LiveCycle-server wordt verzonden
+De configuratie van SDK van de Cliënt van LiveCycle bevat het plaatsen over de dienstnamen. Deze configuratie is een lijst van de diensten waarvoor de aanroepingslogica uit de doos beheerderreferentie gebruikt. Bijvoorbeeld, als u de diensten DirectoryManager (deel van het Beheer van de Gebruiker API) aan deze lijst toevoegt, kan om het even welke cliëntcode de dienst en de aanroepingslaag direct gebruiken automatisch op de gevormde geloofsbrieven als deel van het verzoek overgaan dat naar de server van LiveCycle wordt verzonden
 
 ### RunAsManager {#runasmanager}
 
-Als deel van de integratie, wordt de nieuwe dienst RunAsManager verstrekt. Hiermee kunt u de referentie die moet worden gebruikt bij het aanroepen van een LiveCycle-server programmatisch beheren.
+Als deel van de integratie, wordt de nieuwe dienst RunAsManager verstrekt. Het staat u toe programmatically om referentie te controleren die moet worden gebruikt wanneer het maken van vraag aan de server van LiveCycle.
 
 ```java
 import com.adobe.livecycle.dsc.clientsdk.security.PasswordCredential;
@@ -328,7 +328,7 @@ De volgende services zijn beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle Assembler Client-bundel {#adobe-livecycle-assembler-client-bundle}
+### Adobe LiveCycle Assembler-clientbundel {#adobe-livecycle-assembler-client-bundle}
 
 De volgende service is beschikbaar:
 
@@ -392,7 +392,7 @@ De volgende service is beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle Reader Extensions-clientbundel {#adobe-livecycle-reader-extensions-client-bundle}
+### Adobe LiveCycle Reader Extensions Client-bundel {#adobe-livecycle-reader-extensions-client-bundle}
 
 De volgende service is beschikbaar:
 
@@ -430,7 +430,7 @@ De volgende services zijn beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle Signatures Client-bundel {#adobe-livecycle-signatures-client-bundle}
+### Adobe LiveCycle Signatures-clientbundel {#adobe-livecycle-signatures-client-bundle}
 
 De volgende service is beschikbaar:
 
@@ -446,7 +446,7 @@ De volgende service is beschikbaar:
 </dependency>
 ```
 
-### Adobe LiveCycle Truststore Client-bundel {#adobe-livecycle-truststore-client-bundle}
+### Adobe LiveCycle Truststore Client bundle {#adobe-livecycle-truststore-client-bundle}
 
 De volgende services zijn beschikbaar:
 
