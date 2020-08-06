@@ -49,8 +49,8 @@ Een telecomoperator stuurt maandelijkse facturen naar de klanten via e-mail. De 
 
 ## Vereisten {#prerequisites}
 
-* Stel een instantie van AEM-auteurs in.
-* Invoegtoepassing voor [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) installeren bij een instantie van de auteur
+* Stel een AEM auteur-instantie in.
+* Invoegtoepassing [AEM Forms installeren](/help/forms/using/installing-configuring-aem-forms-osgi.md) op auteurinstantie
 * De MYSQL-database instellen
 * Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in de zelfstudie zijn gebaseerd op MySQL-database en gebruiken het [MySQL JDBC-databasestuurprogramma](https://dev.mysql.com/downloads/connector/j/5.1.html)van Oracle.
 
@@ -76,7 +76,7 @@ Om een anatomie voor Interactieve Communicatie met de volgende wijzen van gegeve
 
 ![03-create-adaptive-form-main-image_small](assets/03-create-adaptive-form-main-image_small.png)
 
-Met een formuliergegevensmodel kunt u een interactieve communicatie met verschillende gegevensbronnen verbinden. Bijvoorbeeld: AEM-gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
+Met een formuliergegevensmodel kunt u een interactieve communicatie met verschillende gegevensbronnen verbinden. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een model van vormgegevens is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het model van formuliergegevens met een interactieve communicatie gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md)voor meer informatie over het formuliergegevensmodel.
 
 **Doelstellingen:**
 
@@ -109,16 +109,16 @@ Documentfragmenten zijn herbruikbare componenten van een correspondentie die wor
 
 ![07-apply-rules-to-adaptive-form_small](assets/07-apply-rules-to-adaptive-form_small.png)
 
-Als u een interactieve communicatie wilt maken, moet u sjablonen op de AEM-server beschikbaar hebben voor Afdrukken en Webkanalen.
+Om een Interactieve Mededeling tot stand te brengen, moet u malplaatjes beschikbaar op de AEM server voor de Kanalen van de Druk en van het Web hebben.
 
-De sjablonen voor het kanaal Afdrukken worden gemaakt in Adobe Forms Designer en geüpload naar de AEM-server. Deze malplaatjes zijn dan beschikbaar voor gebruik terwijl het creëren van een Interactieve Mededeling.
+De sjablonen voor het kanaal Afdrukken worden gemaakt in Adobe Forms Designer en geüpload naar de AEM server. Deze malplaatjes zijn dan beschikbaar voor gebruik terwijl het creëren van een Interactieve Mededeling.
 
-De sjablonen voor het webkanaal worden gemaakt in AEM. Sjabloonauteurs en -beheerders kunnen websjablonen maken, bewerken en inschakelen. Zodra gecreeerd en toegelaten, zijn deze malplaatjes beschikbaar voor gebruik terwijl het creëren van een Interactieve Communicatie.
+De malplaatjes voor het kanaal van het Web worden gecreeerd in AEM. Sjabloonauteurs en -beheerders kunnen websjablonen maken, bewerken en inschakelen. Zodra gecreeerd en toegelaten, zijn deze malplaatjes beschikbaar voor gebruik terwijl het creëren van een Interactieve Communicatie.
 
 **Doelstellingen:**
 
 * XDP-sjablonen maken voor het afdrukkanaal met Adobe Forms Designer
-* Upload de XDP malplaatjes aan de Server van AEM Forms
+* De XDP-sjablonen uploaden naar de AEM Forms-server
 * Sjablonen voor het webkanaal maken en inschakelen
 
    [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](/help/forms/using/create-templates-print-web.md)
@@ -129,13 +129,13 @@ De sjablonen voor het webkanaal worden gemaakt in AEM. Sjabloonauteurs en -behee
 
 Wanneer u alle bouwstenen hebt gemaakt, zoals het formuliergegevensmodel, documentfragmenten en sjablonen voor de webversie, kunt u een interactieve communicatie gaan maken.
 
-De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Afdrukken en web. U kunt ook een interactieve communicatie maken met Afdrukkanaal als stramien. Met de optie Afdrukken als hoofdoptie voor het webkanaal wordt gegarandeerd dat de inhoud, overerving en gegevensbinding van het webkanaal worden afgeleid van het kanaal Afdrukken.
+De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Afdrukken en web. U kunt ook een interactieve communicatie maken met Afdrukkanaal als master kanaal. De optie Afdrukken als master optie voor het webkanaal zorgt ervoor dat de inhoud, overerving en gegevensbinding van het webkanaal worden afgeleid van het kanaal Afdrukken.
 
 **Doelstellingen:**
 
 * Interactieve communicatie maken voor het afdrukkanaal
 * Interactieve communicatie voor het webkanaal maken
-* Interactieve communicatie voor afdrukken en web maken met Afdrukken als origineel
+* Creeer Druk en Web Interactieve Mededelingen met Druk als Master
 * Een dynamische tabel maken in de webversie van Interactieve communicatie
 * Creeer een grafiek in de versie van het Web van Interactieve Communicatie
 * Hyperlinks maken in de webversie van Interactieve communicatie
@@ -146,7 +146,7 @@ De interactieve Mededelingen kunnen door twee kanalen worden geleverd: Afdrukken
 
 ![11-test-uw-adaptieve vorm](assets/11-test-your-adaptive-form.png)
 
-Zodra u een Interactieve Communicatie hebt gecreeerd, is het belangrijk dat u elke verandering test die u in hen aanbrengt. Het testen van elk gebied van een Interactieve Mededeling is vervelend. AEM Forms beschikken over een SDK (Calvin SDK) om het testen van interactieve communicatie in webbrowser te automatiseren.
+Zodra u een Interactieve Communicatie hebt gecreeerd, is het belangrijk dat u elke verandering test die u in hen aanbrengt. Het testen van elk gebied van een Interactieve Mededeling is vervelend. AEM Forms biedt een SDK (Calvin SDK) waarmee het testen van interactieve communicatie in een webbrowser kan worden geautomatiseerd.
 
 **Doelstellingen:**
 
