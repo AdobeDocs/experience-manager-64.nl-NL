@@ -1,8 +1,8 @@
 ---
-title: Algemene beveiligingsoverwegingen voor AEM Forms on JEE
-seo-title: Algemene beveiligingsoverwegingen voor AEM Forms on JEE
-description: Leer hoe u zich voorbereidt op het verharden van uw AEM-formulieren in de JEE-omgeving.
-seo-description: Leer hoe u zich voorbereidt op het verharden van uw AEM-formulieren in de JEE-omgeving.
+title: Algemene veiligheidsoverwegingen voor AEM Forms in juni
+seo-title: Algemene veiligheidsoverwegingen voor AEM Forms in juni
+description: Leer hoe u zich voorbereidt op het verharden van uw AEM Forms in JEE-omgeving.
+seo-description: Leer hoe u zich voorbereidt op het verharden van uw AEM Forms in JEE-omgeving.
 uuid: c5f6ffc7-b987-4541-ab60-e97b4ff5b2a4
 content-type: reference
 topic-tags: Security
@@ -10,19 +10,22 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1111'
+ht-degree: 0%
 
 ---
 
 
-# Algemene beveiligingsoverwegingen voor AEM Forms on JEE {#general-security-considerations-for-aem-forms-on-jee}
+# Algemene veiligheidsoverwegingen voor AEM Forms in juni {#general-security-considerations-for-aem-forms-on-jee}
 
-Leer hoe u zich voorbereidt op het verharden van uw AEM-formulieren in de JEE-omgeving.
+Leer hoe u zich voorbereidt op het verharden van uw AEM Forms in JEE-omgeving.
 
-Dit artikel bevat inleidende informatie die u helpt bij het voorbereiden van het verharden van uw AEM Forms-omgeving. Het omvat eerste vereiste informatie over Vormen AEM op JEE, werkend systeem, toepassingsserver, en gegevensbestandveiligheid. Controleer deze gegevens voordat u uw omgeving vergrendelt.
+Dit artikel bevat inleidende informatie die u helpt bij het voorbereiden op het verharden van uw AEM Forms-omgeving. Dit omvat informatie over AEM Forms op JEE, besturingssysteem, toepassingsserver en databasebeveiliging. Controleer deze gegevens voordat u uw omgeving vergrendelt.
 
 ## Specifieke beveiligingsinformatie van de leverancier {#vendor-specific-security-information}
 
-Deze sectie bevat veiligheid-verwante informatie over werkende systemen, toepassingsservers, en gegevensbestanden die in uw Vormen AEM op oplossing JEE worden opgenomen.
+Deze sectie bevat veiligheid-verwante informatie over werkende systemen, toepassingsservers, en gegevensbestanden die in uw AEM Forms op oplossing JEE worden opgenomen.
 
 Gebruik de koppelingen in deze sectie om leveranciersspecifieke beveiligingsinformatie voor uw besturingssysteem, database en toepassingsserver te zoeken.
 
@@ -35,7 +38,7 @@ Wanneer u uw besturingssysteem beveiligt, kunt u zorgvuldig overwegen om de maat
 * Het verwijderen van onnodige diensten en toepassingen
 * Back-ups maken van bestanden
 
-Voor veiligheidsinformatie over werkende systemen die de Vormen van AEM op JEE steunt, zie de middelen in de lijst:
+Zie de bronnen in de tabel voor beveiligingsinformatie over besturingssystemen die AEM Forms op JEE ondersteunt:
 
 <table> 
  <thead> 
@@ -70,7 +73,7 @@ Voor veiligheidsinformatie over werkende systemen die de Vormen van AEM op JEE s
    <td><a href="https://docs.oracle.com/cd/E52668_01/E54670/E54670.pdf" target="_blank">Beveiligingsgids voor release 7</a><br /> </td> 
   </tr> 
   <tr> 
-   <td>CentOS 7<sup></sup></td> 
+   <td>CentOS 7<sup> </sup></td> 
    <td><a href="https://wiki.centos.org/HowTos/OS_Protection" target="_blank">Beveiligingsdocumentatie</a></td> 
   </tr> 
  </tbody> 
@@ -88,7 +91,7 @@ Wanneer het beveiligen van uw toepassingsserver, denk zorgvuldig na uitvoerend d
 * Het beperken van cliënten door IP adressen of domeinen
 * Het gebruiken van de Manager van de Veiligheid Java™ om voorrechten programmatisch te beperken
 
-Voor veiligheidsinformatie over toepassingsservers die de Vormen van AEM op JEE steunt, zie de middelen in deze lijst.
+Zie de bronnen in deze tabel voor beveiligingsinformatie over toepassingsservers die door AEM Forms op JEE worden ondersteund.
 
 <table> 
  <thead> 
@@ -122,7 +125,7 @@ Wanneer het beveiligen van uw gegevensbestand, overweeg het uitvoeren van de maa
 * De database achter een firewall plaatsen
 * Versleuteling van gevoelige gegevens voordat deze naar de database worden geschreven (zie de documentatie van de fabrikant van de database)
 
-Voor veiligheidsinformatie over gegevensbestanden die de Vormen AEM op JEE steunt, zie de middelen in deze lijst.
+Voor veiligheidsinformatie over gegevensbestanden die AEM Forms op JEE steunt, zie de middelen in deze lijst.
 
 <table> 
  <thead> 
@@ -151,7 +154,7 @@ Voor veiligheidsinformatie over gegevensbestanden die de Vormen AEM op JEE steun
  </tbody> 
 </table>
 
-Deze lijst beschrijft de standaardhavens die tijdens uw Vormen AEM op het configuratieproces van JEE moeten worden geopend. Als u verbinding maakt via https, past u de poortgegevens en IP-adressen dienovereenkomstig aan. Voor meer informatie over het vormen van havens, zie het *Installeren en het Opstellen van Vormen AEM op JEE* - document voor uw toepassingsserver.
+In deze tabel worden de standaardpoorten beschreven die moeten worden geopend tijdens het AEM Forms-configuratieproces in JEE. Als u verbinding maakt via https, past u de poortgegevens en IP-adressen dienovereenkomstig aan. Zie het document AEM Forms *installeren en implementeren op JEE* voor uw toepassingsserver voor meer informatie over het configureren van poorten.
 
 <table> 
  <thead> 
@@ -210,7 +213,7 @@ Deze lijst beschrijft de standaardhavens die tijdens uw Vormen AEM op het config
 
 ### JBoss configureren voor het gebruik van een niet-standaard HTTP-poort {#configuring-jboss-to-use-a-non-default-http-port}
 
-JBoss de Server van de Toepassing gebruikt 8080 als standaardhaven van HTTP. JBoss heeft ook pre-gevormde havens 8180, 8280, en 8380, die uit in het jreliëf-service.xml- dossier worden becommentarieerd. Als er een toepassing op uw computer staat die deze poort al gebruikt, wijzigt u de poort die AEM Forms op JEE gebruikt door de volgende stappen uit te voeren:
+JBoss de Server van de Toepassing gebruikt 8080 als standaardhaven van HTTP. JBoss heeft ook pre-gevormde havens 8180, 8280, en 8380, die uit in het jreliëf-service.xml- dossier worden becommentarieerd. Als u een toepassing op uw computer hebt die deze poort al gebruikt, wijzigt u de poort die AEM Forms op JEE gebruikt door de volgende stappen uit te voeren:
 
 1. Open het volgende bestand om te bewerken:
 
@@ -225,9 +228,9 @@ JBoss de Server van de Toepassing gebruikt 8080 als standaardhaven van HTTP. JBo
 1. Sla het bestand op en sluit het.
 1. Start de JBoss-toepassingsserver opnieuw.
 
-## AEM-formulieren uit beveiligingsoverwegingen met betrekking tot JEE {#aem-forms-on-jee-security-considerations}
+## AEM Forms over JEE-beveiligingsoverwegingen {#aem-forms-on-jee-security-considerations}
 
-In deze sectie worden enkele AEM-formulieren beschreven voor JEE-specifieke beveiligingsproblemen die u bekend moeten maken.
+In deze sectie worden enkele AEM Forms beschreven over JEE-specifieke beveiligingsproblemen waarvan u op de hoogte moet zijn.
 
 ### E-mailreferenties zijn niet gecodeerd in database {#email-credentials-not-encrypted-in-database}
 
@@ -235,17 +238,17 @@ De e-mailgegevens die door toepassingen worden opgeslagen, worden niet versleute
 
 ### Gevoelige inhoud voor Rights Management in de database {#sensitive-content-for-rights-management-in-the-database}
 
-AEM Forms on JEE gebruikt de AEM Forms on JEE-database voor het opslaan van vertrouwelijke informatie over documentsleutels en ander cryptografisch materiaal dat wordt gebruikt voor beleidsdocumenten. Het beveiligen van de database tegen indringing helpt deze vertrouwelijke informatie te beschermen.
+AEM Forms on JEE gebruikt de AEM Forms on JEE-database voor het opslaan van gevoelige informatie over de documentsleutel en ander cryptografisch materiaal dat wordt gebruikt voor beleidsdocumenten. Het beveiligen van de database tegen indringing helpt deze vertrouwelijke informatie te beschermen.
 
 ### Wachtwoord in tekstformulier wissen {#password-in-clear-text-format-in-adobe-ds-xml}
 
-De toepassingsserver die wordt gebruikt om Vormen AEM op JEE in werking te stellen vereist zijn eigen configuratie voor toegang tot uw gegevensbestand door een gegevensbron die op de toepassingsserver wordt gevormd. Zorg ervoor dat uw toepassingsserver uw databasewachtwoord niet in duidelijke tekst in het configuratiebestand van de gegevensbron weergeeft.
+De toepassingsserver die wordt gebruikt om AEM Forms op JEE in werking te stellen vereist zijn eigen configuratie voor toegang tot uw gegevensbestand door een gegevensbron die op de toepassingsserver wordt gevormd. Zorg ervoor dat uw toepassingsserver uw databasewachtwoord niet in duidelijke tekst in het configuratiebestand van de gegevensbron weergeeft.
 
 Het bestand lc_[database].xml mag geen wachtwoord in duidelijke tekstindeling bevatten. Vraag de leverancier van de toepassingsserver hoe u deze wachtwoorden voor uw toepassingsserver kunt coderen.
 
 >[!NOTE]
 >
->Met het installatieprogramma van AEM Forms on JEE JBoss wordt het databasewachtwoord gecodeerd.
+>Met het AEM Forms on JEE JBoss-installatieprogramma wordt het databasewachtwoord gecodeerd.
 
 IBM WebSphere Application Server en Oracle WebLogic Server kunnen standaard gegevensbronwachtwoorden coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
 
