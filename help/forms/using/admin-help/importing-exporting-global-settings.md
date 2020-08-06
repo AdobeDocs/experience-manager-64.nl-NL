@@ -24,7 +24,7 @@ U kunt zoeksjabloondefinities en algemene instellingen voor Workspace importeren
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
 U kunt bijvoorbeeld van een ontwikkelomgeving naar een productieomgeving gaan door de definities van zoeksjablonen en globale instellingen van de ene omgeving te exporteren en deze in de andere omgeving te importeren.
 
@@ -67,7 +67,7 @@ U kunt het algemene instellingenbestand wijzigen; de enige instellingen die u wi
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
 Het bestand met algemene instellingen voor Workspace bevat de volgende instellingen:
 
@@ -87,7 +87,7 @@ De *specialRoutes* montages specificeren de eigenschappen van de speciale routes
 
 ### JGroup-instellingen {#jgroup-settings}
 
-Deze instellingen worden alleen weergegeven als u een upgrade hebt uitgevoerd van Adobe LiveCycle ES 2.5 of eerder.
+Deze instellingen worden alleen weergegeven als u een upgrade hebt uitgevoerd vanaf Adobe LiveCycle 2.5 of eerder.
 
 **server_remoteevents_ClientTimeoutMilliseconds:** De maximale tijd die de JGroup wacht voor gebeurtenisberichten. Deze instelling mag niet worden gewijzigd.
 
@@ -105,7 +105,7 @@ De overige eigenschappen in deze instelling mogen niet worden gewijzigd.
 
 **server_remoteevents_JGroupName:** De naam van de JGroup die wordt gebruikt voor communicatie via een externe gebeurtenis. Deze waarde wordt willekeurig gegenereerd om conflicten in clusters te voorkomen. Deze waarde moet niet worden gewijzigd.
 
-Voor extra informatie over JGroups en Werkruimte, zie de Werkruimte van [JGroups en van de Vormen AEM - Verklaard](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
+Voor extra informatie over JGroups en Werkruimte, zie de Werkruimte van [JGroups en AEM van vormen - Verklaard](https://blogs.adobe.com/livecycle/2011/03/jgroups-and-livecycle-workspace-explained.html).
 
 ### formView-instellingen {#formview-settings}
 
@@ -125,9 +125,9 @@ Voor extra informatie over JGroups en Werkruimte, zie de Werkruimte van [JGroups
 
 **server_debugLevel:** Wijzig deze instelling niet.
 
-**client_pollingInterval:** Stelt het opiniepeilingsinterval (in seconden) in dat wordt gebruikt voor de (Vervangen voor AEM-formulieren in JEE) Flex-werkruimte om nieuwe en gewijzigde taken te detecteren. De standaardwaarde is 3 seconden. Dit werkt niet voor de Werkruimte van AEM Forms.
+**client_pollingInterval:** Hiermee stelt u het opiniepeilingsinterval (in seconden) in dat wordt gebruikt op de Flex Workspace (Vervangen voor AEM formulieren op JEE) voor het detecteren van nieuwe en gewijzigde taken. De standaardwaarde is 3 seconden. Dit werkt niet voor AEM Forms Workspace.
 
-**client_systemContext_name:** Geef een aangepaste naam (bijvoorbeeld Burger) op die u wilt weergeven in het veld Toegevoegd op (op het tabblad Bijlagen) voor de bijlagen van een taak in de werkruimte AEM Forms.
+**client_systemContext_name:** Geef een aangepaste naam (bijvoorbeeld Burger) op die u wilt weergeven in het veld Toegevoegd op (op het tabblad Bijlagen) voor de bijlagen van een taak in AEM Forms Workspace.
 
 De aangepaste naam definiëren:
 
