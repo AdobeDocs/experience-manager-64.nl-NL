@@ -20,7 +20,7 @@ ht-degree: 0%
 
 Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde manier om complexe gegevens weer te geven. Het helpt gebruikers bij het gemakkelijk identificeren van informatie en het verstrekken van input in een geordende regeling van rijen en kolommen. De meeste vormen van financiële diensten en overheidsorganisaties vereisen grote gegevenslijsten om aantallen te zetten en berekeningen uit te voeren.
 
-AEM Forms bevat een component Tabel in de deelvensterbrowser in het zijpaneel, waarmee u tabellen kunt maken in adaptieve formulieren. Enkele belangrijke mogelijkheden zijn:
+AEM Forms biedt een component Tabel in de deelvensterbrowser op het zijpaneel waarmee u tabellen kunt maken in adaptieve formulieren. Enkele belangrijke mogelijkheden zijn:
 
 * Responsieve lay-out op mobiele apparaten
 * Configureerbare rijen en kolommen
@@ -36,7 +36,7 @@ AEM Forms bevat een component Tabel in de deelvensterbrowser in het zijpaneel, w
 
 Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser in het hulpwerkgebied naar het aangepaste formulier. Standaard bevat de tabel twee kolommen en drie rijen, inclusief de koptekstrij.
 
-![Tabelcomponent in AEM-zijbalk](assets/sidebar-tables.png)
+![Tabelcomponent in AEM zijbalk](assets/sidebar-tables.png)
 
 ### Over kop- en lichaamscellen {#about-header-and-body-cells}
 
@@ -132,7 +132,7 @@ Zie de API-naslaggids voor [JavaScript-bibliotheken voor adaptieve formulieren](
 
 ## Mobiele lay-outs {#mobile-layouts}
 
-Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele apparaten vanwege hun dynamische en responsieve lay-outs. AEM Forms bieden twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
+Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele apparaten vanwege hun dynamische en responsieve lay-outs. AEM Forms biedt twee typen mobiele lay-outs voor tabellen: kopteksten aan de linkerkant en Inklapbare kolommen.
 
 U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit componentendialoogvenster voor een lijst vormen.
 
@@ -242,7 +242,7 @@ Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het aa
 
 ## XDP-componenten en XSD-complexe typen gebruiken {#use-xdp-components-and-xsd-complex-types}
 
-Als u een adaptief formulier hebt gemaakt op basis van een XFA-formuliersjabloon, zijn de XFA-elementen beschikbaar op het tabblad Gegevensmodel van de AEM Content Finder. U kunt deze XFA-elementen, inclusief tabellen, naar het aangepaste formulier slepen.
+Als u een adaptief formulier hebt gemaakt op basis van een XFA-formuliersjabloon, zijn de XFA-elementen beschikbaar op het tabblad Gegevensmodel van AEM Content Finder. U kunt deze XFA-elementen, inclusief tabellen, naar het aangepaste formulier slepen.
 
 Het XFA-tabelelement wordt toegewezen aan de component Tabel en werkt in adaptieve formulieren buiten de box. Alle eigenschappen en functies van XDP-tabellen blijven behouden wanneer u deze verplaatst naar een adaptief formulier. U kunt er elke bewerking op uitvoeren, net als bij een native adaptieve formuliertabel. Als een rij in een XDP-tabel bijvoorbeeld herhaalbaar is, wordt deze ook herhaald wanneer deze in adaptieve formulieren wordt verwijderd.
 
