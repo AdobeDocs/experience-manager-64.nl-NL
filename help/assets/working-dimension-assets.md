@@ -11,34 +11,37 @@ content-type: reference
 discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 0%
 
 ---
 
 
 # Werken met Adobe Dimension-middelen {#working-with-adobe-dimension-assets}
 
-Het AEM 3D-functiepakket biedt ondersteuning voor Adobe Dimension-elementen (`.dn` bestanden) in AEM-middelen, AEM-sites en AEM-schermen.
+Het AEM 3D-functiepakket biedt ondersteuning voor Adobe Dimension-elementen (`.dn` bestanden) in AEM Assets, AEM Sites en AEM Screens.
 
-Een nieuwe 3D-viewer die is gebaseerd op de open glTF-standaard biedt voorvertoningen en Sites en Schermen weergavemogelijkheden voor Adobe Dimension-elementen.
+Een nieuwe 3D-viewer die is gebaseerd op de open glTF-standaard biedt mogelijkheden voor voorvertoning en weergave op sites voor Adobe Dimension-middelen.
 
 ## Informatie over de conversieservice in de cloud {#about-the-cloud-based-conversion-service}
 
-Wanneer een Dimension-element wordt geüpload naar AEM, wordt een kopie van het bestand doorgestuurd naar een door Adobe beheerde cloudservice die wordt gehost in Amazon AWS. Deze service converteert van de eigen Dimension-bestandsindeling van Adobe naar de open standaard glTF-indeling. Het omgezette 3D-model wordt verpakt als binaire glTF (`.glb`). AEM slaat het geconverteerde model met het primaire Dimension-element op als een uitvoering.
+Wanneer een Dimension-element wordt geüpload naar AEM, wordt een kopie van het bestand doorgestuurd naar een door de Adobe beheerde cloudservice die wordt gehost in Amazon AWS. Deze service converteert van de bestandsindeling Adobe-eigen Dimension naar de open standaard glTF-indeling. Het omgezette 3D-model wordt verpakt als binaire glTF (`.glb`). AEM slaat het omgezette model met het primaire Dimension-element op als een uitvoering.
 
-U kunt de `.glb` conversie-indeling op twee manieren configureren (zie AEM 3D [](install-config-3d.md) installeren en configureren voor instructies):
+U kunt de `.glb` conversie-indeling op twee manieren configureren (zie [Installatie en configuratie van AEM 3D](install-config-3d.md) voor instructies):
 
-* Neem Adobe-specifieke extensies op om de visuele kwaliteit te maximaliseren wanneer u de Adobe glTF-viewer gebruikt om Dimension-elementen weer te geven in AEM-middelen, AEM-sites of AEM-schermen. Hierdoor zijn de `.glb` uitvoeringen niet compatibel met de meeste toepassingen van derden.
-* Sluit Adobe-specifieke extensies uit om de `.glb` vertoning compatibel te maken met toepassingen van derden. Dit beperkt de visuele kwaliteit bij weergave in AEM-middelen, AEM-sites of AEM-schermen (bijvoorbeeld geen IBL-verlichting) om de kwaliteit van gangbare toepassingen van derden te simuleren.
+* Neem Adobe-specifieke extensies op om de visuele kwaliteit te maximaliseren wanneer u de Adobe glTF-viewer gebruikt om Dimension-elementen in AEM Assets, AEM Sites of AEM Screens weer te geven. Hierdoor zijn de `.glb` uitvoeringen niet compatibel met de meeste toepassingen van derden.
+* Sluit Adobe-specifieke extensies uit om te zorgen dat de `.glb` vertoning compatibel is met toepassingen van derden. Dit beperkt de visuele kwaliteit bij weergave in AEM Assets, AEM Sites of AEM Screens (bijvoorbeeld geen IBL-belichting) om de kwaliteit van gangbare toepassingen van derden te simuleren.
 
 De overdracht van de Dimension/glTF-bestanden van of naar Amazon AWS en de tijdelijke opslag ervan in AWS zijn volledig beveiligd. Deze bestanden blijven minimaal in Amazon AWS aanwezig; doorgaans niet meer dan een paar minuten bij normale bewerkingen.
 
-Als u ondersteuning voor Dimension-elementen wilt inschakelen, moet u aanmeldingsgegevens van Adobe opvragen voor toegang tot de conversieservice. Zie AEM 3D [installeren en configureren](install-config-3d.md).
+Als u ondersteuning voor Dimension-elementen wilt inschakelen, moet u aanmeldingsgegevens van Adobe verkrijgen voor toegang tot de conversieservice. Zie [Installeren en configureren AEM 3D](install-config-3d.md).
 
 >[!NOTE]
 >
->Als u de geleverde gegevens installeert en gebruikt, begrijpt en gaat u ermee akkoord dat uw Adobe Dimension 3D-middelen worden overgebracht naar (en verwerkt door) de door Adobe beheerde, cloudgebaseerde conversieservice die wordt gehost in Amazon AWS.
+>Als u de geleverde gegevens installeert en gebruikt, begrijpt en gaat u ermee akkoord dat uw Adobe Dimension 3D-middelen worden overgebracht naar (en verwerkt door) de door de Adobe beheerde, cloud gebaseerde conversieservice die wordt gehost in Amazon AWS.
 
-### Weergeven op AEM-elementen {#viewing-on-aem-assets}
+### Weergeven op AEM Assets {#viewing-on-aem-assets}
 
 Het AEM 3D-functiepakket bevat een nieuwe viewer op basis van de open glTF-standaard die wordt gebruikt om Adobe Dimension-elementen weer te geven. Deze viewer wordt automatisch geselecteerd wanneer u een Dimension-bestand of een gecomprimeerde glTF opent in de Gedetailleerde weergave in AEM Assets of met de 3D-component in AEM Sites.
 
@@ -46,7 +49,7 @@ De gebruikersinterface van de glTF-viewer wijkt enigszins af van de standaard 3D
 
 #### Zie ook het volgende: {#see-also-the-following}
 
-* [Opmerkingen bij](/help/release-notes/aem3d-release-notes.md) de release AEM 3D voor beperkingen en beperkingen die van toepassing zijn op Dn-elementen en de glTF-viewer.
+* [AEM opmerkingen bij](/help/release-notes/aem3d-release-notes.md) de 3D-release voor beperkingen en beperkingen die van toepassing zijn op Dn-elementen en de glTF-viewer.
 * [Werken met de component](using-the-3d-sites-component.md) 3D-sites voor componenteigenschappen die specifiek zijn voor Adobe Dimension-elementen.
-* [AEM 3D](install-config-3d.md) installeren en configureren om de op cloud gebaseerde conversieservice te configureren.
+* [Installeren en configureren AEM 3D](install-config-3d.md) om de op cloud gebaseerde conversieservice te configureren.
 
