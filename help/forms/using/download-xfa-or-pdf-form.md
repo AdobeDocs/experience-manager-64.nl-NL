@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '338'
+ht-degree: 0%
 
 ---
 
@@ -20,11 +23,11 @@ Met de downloadbewerking kunt u, zoals de naam aangeeft, formulieren exporteren 
 
 In AEM Forms wordt het downloaden ondersteund voor de volgende elementtypen:
 
-* Formuliersjablonen (XFA-formulieren)
-* PDF-formulieren
+* Formuliersjablonen (XFA Forms)
+* PDF forms
 * Documenten (vlakke PDF-bestanden)
 
-Met AEM Forms kunt u deze formuliertypen afzonderlijk downloaden of in een map met een of meer ondersteunde formulieren.
+AEM Forms ondersteunt het downloaden van deze formuliertypen afzonderlijk of in een map met een of meer ondersteunde formulieren.
 
 Naast deze elementen kunt u het `Resource` type element downloaden als het in een map aanwezig is. Deze functie is beschikbaar zodat u de bron waarnaar wordt verwezen door een XFA-formulier, samen met het formulier kunt downloaden.
 
@@ -34,15 +37,15 @@ Naast deze elementen kunt u het `Resource` type element downloaden als het in ee
 
 1. Navigeer naar de locatie van het element dat u wilt downloaden.
 
-1. Selecteer het element. Klik op het pictogram **[!UICONTROL Download]** ![name6forms_download](assets/aem6forms_download.png) op de werkbalk.
+1. Selecteer het element. Klik op het pictogram **[!UICONTROL Download]** name6forms_download ![](assets/aem6forms_download.png) op de werkbalk.
 
    >[!NOTE]
    >
    >U kunt slechts één formulier selecteren om te downloaden. Als u meerdere formulieren wilt downloaden, moet u deze downloaden als een map.
 
-1. Klik in het dialoogvenster dat wordt weergegeven op **[!UICONTROL Downloaden]**.
+1. Klik in het dialoogvenster dat wordt weergegeven **[!UICONTROL Download]**.
 
-   Met AEM Forms wordt een ZIP-bestand gegenereerd dat het geselecteerde bestand of de geselecteerde map bevat.
+   AEM Forms genereert een ZIP-bestand met het geselecteerde bestand of de geselecteerde map.
 
    Als u een map downloadt, worden de ondersteunde elementen in de map gedownload in de bestaande hiërarchie.
 
