@@ -10,19 +10,22 @@ topic-tags: hTML5_forms
 discoiquuid: 9cd22244-9aa6-4b5f-96cf-c9cb3d6f9c8a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
 
-# Creating a custom profile for HTML5 forms {#creating-a-custom-profile-for-html-forms}
+# Een aangepast profiel maken voor HTML5-formulieren {#creating-a-custom-profile-for-html-forms}
 
-A profile is a resource node in [Apache Sling](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de `/content` map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de `/content` map of in een submap van de `/content` map plaatsen.
+Een profiel is een resourceknooppunt in [Apache Sling](https://sling.apache.org/). Deze vertegenwoordigt een aangepaste versie van de renderingsservice voor HTML5-formulieren. Met de service HTML5 Forms Rendition kunt u de weergave, het gedrag en de interacties van de HTML5-formulieren aanpassen. Er bestaat een profielknooppunt in de `/content` map in de JCR-opslagplaats. U kunt het knooppunt rechtstreeks in de `/content` map of in een submap van de `/content` map plaatsen.
 
 Het profielknooppunt heeft de eigenschap **sling:resourceSuperType** en de standaardwaarde is **xfaforms/profile**. Het renderscript voor het knooppunt staat op /libs/xfaforms/profile.
 
-De Sling-scripts zijn JSP-scripts. Deze JSP-scripts dienen als containers voor het samenstellen van de HTML voor het aangevraagde formulier en de vereiste JS/CSS-artefacten. Deze het Verdelen manuscripten worden ook bedoeld als manuscripten van Renderer van het **Profiel.** De profielrenderer roept de dienst van Forms OSGi aan om de gevraagde vorm terug te geven.
+De Sling-scripts zijn JSP-scripts. Deze JSP-scripts dienen als containers voor het samenstellen van de HTML voor het aangevraagde formulier en de vereiste JS/CSS-artefacten. Deze het Verdelen manuscripten worden ook bedoeld als manuscripten van Renderer van het **Profiel.** De profielrenderer roept de Forms OSGi-service aan om het gevraagde formulier te genereren.
 
-Het profielscript bevindt zich in html.jsp en html.POST.jsp voor GET en POST aanvragen. U kunt een of meer bestanden kopiëren en wijzigen om uw aanpassingen te overschrijven en toe te voegen. Breng geen wijzigingen op de plaats aan. Dergelijke wijzigingen worden door de patchupdate overschreven.
+Het profielscript bevindt zich in html.jsp en html.POST.jsp voor verzoeken om GET en POST. U kunt een of meer bestanden kopiëren en wijzigen om uw aanpassingen te overschrijven en toe te voegen. Breng geen wijzigingen op de plaats aan. Dergelijke wijzigingen worden door de patchupdate overschreven.
 
 Een profiel bevat verschillende modules. De modules zijn formRuntime.jsp, config.jsp, toolbar.jsp, formBody.jsp, nav_footer.jsp, en footer.jsp.
 
@@ -80,4 +83,4 @@ Nadat u een aangepast profiel hebt gemaakt, voegt u renderinformatie toe aan dit
 
 1. Open de URL om te controleren of het profiel is gemaakt `https://[server]:[port]/content/xfaforms/profiles/hrform.html`
 
-Als u uw formulieren wilt verifiëren, [importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op de auteur van de AEM-server.
+Als u uw formulieren wilt verifiëren, [importeert u uw formulieren](/help/forms/using/get-xdp-pdf-documents-aem.md) van uw lokale bestandssysteem naar AEM Forms en [bekijkt u een voorbeeld van het formulier](/help/forms/using/previewing-forms.md) op AEM serverauteur.
