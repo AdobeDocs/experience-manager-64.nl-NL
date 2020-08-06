@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
 translation-type: tm+mt
 source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
+workflow-type: tm+mt
+source-wordcount: '1200'
+ht-degree: 0%
 
 ---
 
 
 # Community Components Guide {#community-components-guide}
 
-De communautaire gids voor componenten is een interactief ontwikkelingsinstrument voor het [sociale-componentkader (SCF)](scf.md). Het verstrekt een lijst van beschikbare componenten van de Gemeenschappen AEM of de complexere eigenschappen die van veelvoudige componenten worden gebouwd.
+De communautaire gids voor componenten is een interactief ontwikkelingsinstrument voor het [sociale-componentkader (SCF)](scf.md). Het biedt een lijst met beschikbare AEM Communities-componenten of de complexere functies van meerdere componenten.
 
 Samen met basisinformatie voor elke component, staat de gids voor het experimenteren met toe hoe de componenten SCF/de eigenschappen werken en hoe zij kunnen worden gevormd of worden aangepast.
 
@@ -58,7 +61,7 @@ Als u de modus Bewerken bij de auteur wilt activeren, voegt u een `editor.html` 
 >
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md).
+>Als u niet bekend bent met AEM, bekijkt u de documentatie over de [basisafhandeling](../../help/sites-authoring/basic-handling.md).
 
 ### Startpagina {#home-page}
 
@@ -107,9 +110,11 @@ Onder het tabblad **Sjablonen** :
    Als deze optie niet is ingeschakeld, gebruikt de Component Guide de bestaande bron in de repository (een jcr-knooppunt dat een onderliggend knooppunt is van een par-knooppunt).
 
    * weergegeven tekst is: &quot;Deze component is opgenomen via het pari-knooppunt.&quot;
+
    Indien gecontroleerd, zal de Gids van de Component sling gebruiken om dynamisch een component van het resourceType van de kindknoop (niet-bestaande middel) te omvatten.
 
    * weergegeven tekst is: &quot;Deze component wordt dynamisch opgenomen.&quot;
+
    De optie Standaard is uitgeschakeld.
 
 ### Interacties publiceren {#publish-interactions}
@@ -128,7 +133,7 @@ Ga voor meer informatie naar [Clientlibs voor Community Components](clientlibs.m
 
 ## Imitatie {#impersonation}
 
-Voor de auteursinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van de knoop van het **[!UICONTROL Vergrijzen]** om of in de gebruikersbenaming te typen of van de trekkrachtlijst te selecteren, en dan de knoop te klikken. Klik op Vorige versie om af te melden en de imitatie te beëindigen.
+Voor de auteurinstantie, waar men vaak als beheerder of ontwikkelaar wordt aangemeld, om de component te ervaren die als een andere gebruiker wordt aangemeld, gebruik het tekstvakje links van de **[!UICONTROL Impersonate]** knoop om of in de gebruikersbenaming te typen of van de trekkrachtlijst te selecteren, en dan de knoop te klikken. Klik op Vorige versie om af te melden en de imitatie te beëindigen.
 
 De publicatie-instantie hoeft zich niet voor te doen. U gebruikt gewoon de koppeling Aanmelden/Afmelden om verschillende gebruikers na te bootsen, zoals de [demogebruikers](tutorials.md#demo-users).
 
@@ -156,11 +161,11 @@ De component comments als voorbeeld gebruiken voor de auteur of de publicatie-in
 
 1. Een eigenschap toevoegen
 
-   * **Naam**`scg:showIde`
-   * **Type**`String`
-   * **Waarde**`true`
+   * **Naam** `scg:showIde`
+   * **Type** `String`
+   * **Waarde** `true`
 
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Save All]**
 1. Laad de pagina Opmerkingen in de handleiding opnieuw
 
    [http://localhost:4503/content/community-components/en/comments.html](http://localhost:4503/content/community-components/en/comments.html)
