@@ -1,9 +1,12 @@
 ---
 title: De Rich Text Editor configureren
-description: Leer om de Rich Text Editor van AEM te vormen.
+description: Leer om de AEM Rich Text Editor te vormen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
+workflow-type: tm+mt
+source-wordcount: '2661'
+ht-degree: 0%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
 
 De Rich Text Editor (RTE) biedt auteurs een groot aantal functies voor het bewerken van hun tekstinhoud. Pictogrammen, selectiekaders, werkbalk en menu&#39;s zijn beschikbaar voor een WYSIWYG-ervaring bij het bewerken van tekst.
 
-Om te weten hoe te om eigenschappen RTE voor creatie te gebruiken, zie de Redacteur van de Tekst van het [Gebruik Rich voor creatie](/help/sites-authoring/rich-text-editor.md). RTE kan worden gevormd om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Het volgende werkschema illustreert een geadviseerde orde om de de configuratietaken van RTE in de Manager van de Ervaring te voltooien.
+Om te weten hoe te om eigenschappen RTE voor creatie te gebruiken, zie de Redacteur van de Tekst van het [Gebruik Rich voor creatie](/help/sites-authoring/rich-text-editor.md). RTE kan worden gevormd om, de eigenschappen toe te laten onbruikbaar te maken en uit te breiden beschikbaar in de auteurscomponenten. Het volgende werkschema illustreert een geadviseerde orde om de de configuratietaken van RTE in Experience Manager te voltooien.
 
 ![Normale workflow voor het configureren van Rich Text Editor](assets/rte_workflow_v1.png)
 
@@ -33,7 +36,7 @@ De interface met aanraakbediening is de standaardinterface voor AEM. Adobe intro
 >[!MORELIKETHIS]
 >
 >* [UI-aanbevelingen](/help/sites-deploying/ui-recommendations.md)
->* Informatie over het vervangen van de klassieke gebruikersinterface vindt u in [AEM 6.4 Release-notities](/help/release-notes/deprecated-removed-features.md)
+>* Informatie over het vervangen van de klassieke gebruikersinterface, zie [AEM 6.4 Opmerkingen bij de release](/help/release-notes/deprecated-removed-features.md)
 >* Zie [Aanraakinterface en Klassieke UI voor het verschil tussen de gebruikersinterface](https://aemcq5pedia.wordpress.com/2018/01/05/touch-enabled-ui-aem6-3/)
 >* Zie [Concepten van AEM Touch-interface voor meer informatie over de interface met aanraakbediening](/help/sites-developing/touch-ui-concepts.md)
 
@@ -65,7 +68,7 @@ In de klassieke gebruikersinterface kunt u met een trage dubbelklik op de compon
 
 ### Volledig scherm bewerken {#full-screen-editing}
 
-AEM-componenten kunnen worden geopend in de weergave Volledig scherm, waarin de pagina-inhoud wordt verborgen en het beschikbare scherm wordt ingenomen. U kunt overwegen om een gedetailleerde versie van de inlinebewerking op volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
+AEM componenten kunnen worden geopend in de weergave Volledig scherm, waarin de pagina-inhoud wordt verborgen en het beschikbare scherm wordt ingenomen. U kunt overwegen om een gedetailleerde versie van de inlinebewerking op volledig scherm te bewerken, aangezien deze de meeste bewerkingsopties biedt. Het kan worden geopend door ![rte_fullscreen](assets/rte_fullscreen.png), van de compacte toolbar te klikken wanneer het gebruiken van de gealigneerde het uitgeven wijze.
 
 De modus Volledig scherm van het dialoogvenster bevat een gedetailleerde RTE-werkbalk en de opties en componenten die beschikbaar zijn in de dialoogmodus. Het is alleen van toepassing voor een dialoog die naast andere componenten RTE bevat.
 
@@ -109,7 +112,7 @@ In de volgende tabel worden de huidige plug-ins weergegeven:
 | bewerken | cut copy paste-default paste-plaintext paste-wordhtml | [Knip, kopieer en kopieer de drie plakmodi](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
 | [findreplace](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FindReplacePlugin) | zoeken, vervangen | Zoeken en vervangen. |
 | [format](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.FormatPlugin) | vet cursief onderstrepen | [Basistekstopmaak](/help/sites-administering/configure-rich-text-editor-plug-ins.md#textstyles). |
-| [image](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | image | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
+| [afbeelding](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.ImagePlugin) | afbeelding | Basisondersteuning voor afbeeldingen (slepen vanuit de inhoud of de Inhoudszoeker). Afhankelijk van de browser heeft de ondersteuning verschillende gedragingen voor auteurs |
 | [toetsen](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.KeyPlugin) |  | Zie de [tabgrootte](/help/sites-administering/configure-rich-text-editor-plug-ins.md#tabsize)om deze waarde te definiëren. |
 | [justify](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.JustifyPlugin) | uitvullen, links uitvullen, rechts uitvullen | Alinea-uitlijning. |
 | [koppelingen](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.form.rte.plugins.LinkPlugin) | ontkoppelingsanker wijzigen | [Hyperlinks en ankers](/help/sites-administering/configure-rich-text-editor-plug-ins.md#linkstyles). |
@@ -144,6 +147,7 @@ De [wijze van het uitgeven van RTE (en UI)](#editingmodes) die u voor uw auteurs
 >* **Naam**: `configPath`
 >* **Type**: `String`
 >* **Waarde**: pad van het knooppunt met de feitelijke configuratie
+
 >
 >
 Noem niet de de configuratieknoop van RTE zoals `config`. Anders, worden de configuraties RTE van kracht voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
@@ -191,6 +195,7 @@ Download deze steekproefconfiguratie om te begrijpen hoe te om RTE te vormen. In
 >
 >* `/libs/wcm/foundation/components/text`
 >* `/libs/foundation/components/text`
+
 >
 >
 Als u uw eigen tekstcomponent wilt maken, kopieert u de bovenstaande component in plaats van deze componenten te bewerken.
@@ -243,7 +248,7 @@ Voor de beste ontwerpervaring:
 </uiSettings>
 ```
 
-Er worden verschillende UI-instellingen gebruikt voor de inlinemodus en de modus Volledig scherm. De eigenschap toolbar wordt gebruikt om de knoppen van de werkbalk op te geven. Als de knop zelf bijvoorbeeld een functie is (bijvoorbeeld `Bold`), wordt deze opgegeven als `PluginName#FeatureName` (bijvoorbeeld `links#modifylink`). Als de knop een pop-up is (met enkele functies van een plug-in), wordt deze opgegeven als `#PluginName` (bijvoorbeeld `#format`). Scheidingstekens (| ) tussen een groep knoppen kan worden opgegeven met &#39;-&#39;.
+Er worden verschillende UI-instellingen gebruikt voor de inlinemodus en de modus Volledig scherm. De eigenschap toolbar wordt gebruikt om de knoppen van de werkbalk op te geven. Als de knop zelf bijvoorbeeld een functie is (bijvoorbeeld `Bold`), wordt deze opgegeven als `PluginName#FeatureName` (bijvoorbeeld `links#modifylink`). Als de knop een pop-up is (met enkele functies van een plug-in), wordt deze opgegeven als `#PluginName` (bijvoorbeeld `#format`). Scheidingstekens ( | ) tussen een groep knoppen kan worden opgegeven met &#39;-&#39;.
 
 Het pop-upknooppunt onder de modus Inline of Volledig scherm bevat een lijst met de popovers die worden gebruikt. Elk onderliggend knooppunt onder het `popovers` knooppunt krijgt een naam na de insteekmodule (bijvoorbeeld `format`). Deze bevat een eigenschap `items` die een lijst bevat met functies van de plug-in (bijvoorbeeld `format#bold`).
 
@@ -251,7 +256,7 @@ Het pop-upknooppunt onder de modus Inline of Volledig scherm bevat een lijst met
 
 De beheerders kunnen de opties controleren RTE gebruikend inhoudsbeleid, zeggen in plaats van de configuratie zoals hierboven beschreven. In het inhoudsbeleid worden de ontwerpeigenschappen van een component gedefinieerd wanneer deze worden gebruikt als onderdeel van een [bewerkbare sjabloon](../sites-authoring/templates.md). Als bijvoorbeeld een tekstcomponent die de RTE gebruikt wordt gebruikt met een bewerkbare sjabloon, kan het inhoudsbeleid definiëren dat de optie Vet beschikbaar is en zijn enkele opties voor alineaopmaak beschikbaar. Het inhoudsbeleid is herbruikbaar en kan op meerdere sjablonen worden toegepast.
 
-Vanaf AEM 6.4 Service Pack 3, de beschikbare opties in RTE stroom stroomafwaarts van de configuraties van het gebruikersinterface aan het inhoudsbeleid.
+AEM 6.4 Service Pack 3 en daarna, de beschikbare opties in RTE stroom stroomafwaarts van de configuraties van het gebruikersinterface aan het inhoudsbeleid.
 
 * De de configuratiemontages van de gebruikersinterface bepalen welke opties aan het inhoudsbeleid beschikbaar zijn.
 * Als de gebruikersinterfaceconfiguratie van RTE verwijderde of geen punt toelaat, kan het inhoudsbeleid niet het vormen.
@@ -296,7 +301,7 @@ Voor een pagina, kunt u of CoralUI 2 KTE clientlib of CoralUI 3 KTE clientlib om
 
 >[!NOTE]
 >
->Adobe raadt het overschakelen niet aan als aanbevolen werkwijze. Schakel als laatste redmiddel over naar CoralUI 2 RTE. De stop-ins van de douane voor CoralUI 2 RTE werkt met CoralUI 3 RTE als stop-ins niet van internals RTE, zoals klassen afhangt. Gebruik de `rte.coralui3` bibliotheek als u aangepaste plug-ins voor CoralUI 3 RTE gebruikt.
+>Adobe adviseert niet de omschakeling als beste praktijken. Schakel als laatste redmiddel over naar CoralUI 2 RTE. De stop-ins van de douane voor CoralUI 2 RTE werkt met CoralUI 3 RTE als stop-ins niet van internals RTE, zoals klassen afhangt. Gebruik de `rte.coralui3` bibliotheek als u aangepaste plug-ins voor CoralUI 3 RTE gebruikt.
 
 1. Bedek het knooppunt `/libs/cq/gui/components/authoring/editors/clientlibs/core` onder `/apps`en voer de volgende handelingen uit:
 
@@ -318,7 +323,7 @@ Voor een pagina, kunt u of CoralUI 2 KTE clientlib of CoralUI 3 KTE clientlib om
 
 ## Aanvullende informatie {#further-information}
 
-Zie de [AEM Widget API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) -naslaggids voor meer informatie over het configureren van de RTE.
+Voor meer informatie over het vormen van RTE, zie de [AEM verwijzing van widget API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html) .
 
 Met name om de beschikbare plug-ins en bijbehorende opties te zien:
 
@@ -334,9 +339,9 @@ Met de bovenstaande opties kunt u uw eigen RTE uitbreiden en aanpassen. Als u bi
 
 ## Bekende beperkingen {#known-limitations}
 
-AEM RTE-mogelijkheden hebben de volgende beperkingen:
+AEM het vermogen van RTE heeft de volgende beperkingen:
 
-* RTE-mogelijkheden worden alleen ondersteund in dialoogvensters van AEM-componenten. RTE wordt niet gesteund op tovenaars of stichting-vormen zoals de Eigenschappen [van de](/help/sites-developing/page-properties-views.md) Pagina en het [Opslaan](/help/sites-authoring/scaffolding.md) op touch-Toegelaten UI.
+* De mogelijkheden van RTE worden gesteund slechts in AEM componentendialogen. RTE wordt niet gesteund op tovenaars of stichting-vormen zoals de Eigenschappen [van de](/help/sites-developing/page-properties-views.md) Pagina en het [Opslaan](/help/sites-authoring/scaffolding.md) op touch-Toegelaten UI.
 
 * AEM werkt niet op [hybride apparaten](/help/release-notes/known-issues.md).
 
