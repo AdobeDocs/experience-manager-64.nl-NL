@@ -1,8 +1,8 @@
 ---
 title: Ontwerpen en de Designer
 seo-title: Ontwerpen en de Designer
-description: U moet een ontwerp voor uw website maken en in AEM doet u dat met de Designer
-seo-description: U moet een ontwerp voor uw website maken en in AEM doet u dat met de Designer
+description: U moet een ontwerp voor uw website maken en in AEM doet u dit met de Designer
+seo-description: U moet een ontwerp voor uw website maken en in AEM doet u dit met de Designer
 uuid: b880ab49-8bea-4925-9b7b-e911ebda14ee
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f9bcb6eb-1df4-4709-bcec-bef0931f797a
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
 
 >[!CAUTION]
 >
->In dit artikel wordt beschreven hoe u een website maakt op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM-technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Aan de slag met het ontwikkelen van AEM-sites](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
-U moet een ontwerp voor uw website maken en in AEM doet u dat met de Designer.
+U moet een ontwerp voor uw website maken en AEM dit doen met de Designer.
 
 >[!NOTE]
 >
->Zie [AEM en de Web Accessibility Guidelines](/help/managing/web-accessibility.md)voor meer informatie over webtoegankelijkheid.
+>Voor meer informatie over de toegankelijkheid van het Web, zie [AEM en de Richtlijnen](/help/managing/web-accessibility.md)van de Toegankelijkheid van het Web.
 
 ## De Designer gebruiken {#using-the-designer}
 
