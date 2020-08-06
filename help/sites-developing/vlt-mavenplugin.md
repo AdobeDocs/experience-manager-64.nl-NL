@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 943de371-0149-4307-be3a-b11c590b3451
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3281'
+ht-degree: 3%
 
 ---
 
@@ -91,7 +94,7 @@ De parameters in de volgende lijst zijn gemeenschappelijk voor alle doelstelling
   <tr> 
    <td>name</td> 
    <td>Tekenreeks</td> 
-   <td>bouwen: Ja<br /> installeren: Geen<br /> rm:Ja</td> 
+   <td>bouwen: Ja<br /> installeren: Geen<br /> rm: Ja</td> 
    <td>Opbouwen: Geen standaardwaarde.<br /> installeren: De waarde van het bezit artifactId van het GeMaven project.</td> 
    <td>De naam van het pakket waarop moet worden gehandeld.</td> 
    <td>Alle doelstellingen behalve ls.</td> 
@@ -100,7 +103,7 @@ De parameters in de volgende lijst zijn gemeenschappelijk voor alle doelstelling
    <td>password</td> 
    <td>Tekenreeks</td> 
    <td>Ja</td> 
-   <td> beheerder</td> 
+   <td>beheerder</td> 
    <td>Het wachtwoord dat wordt gebruikt voor verificatie met de CRX-server.</td> 
    <td>Alle doelstellingen behalve pakket.</td> 
   </tr> 
@@ -140,7 +143,7 @@ De parameters in de volgende lijst zijn gemeenschappelijk voor alle doelstelling
    <td>userId</td> 
    <td>Tekenreeks</td> 
    <td>Ja</td> 
-   <td> beheerder</td> 
+   <td>beheerder</td> 
    <td>De gebruikersnaam die moet worden geverifieerd met de CRX-server.</td> 
    <td>Alle doelstellingen behalve pakket.</td> 
   </tr> 
@@ -157,7 +160,7 @@ De parameters in de volgende lijst zijn gemeenschappelijk voor alle doelstelling
 
 ### build {#build}
 
-Bouwt een inhoudspakket dat reeds op een instantie AEM wordt bepaald.
+Bouwt een inhoudspakket dat reeds op een AEM instantie wordt bepaald.
 
 >[!NOTE]
 >
@@ -169,7 +172,7 @@ Alle parameters voor het bouwstijldoel worden beschreven in de [Gemeenschappelij
 
 #### Voorbeeld {#example}
 
-Het volgende voorbeeld bouwt het werkschema-boonpakket dat op de instantie AEM met het IP adres 10.36.79.223 geïnstalleerd is. Het doel wordt uitgevoerd gebruikend het volgende bevel:
+Het volgende voorbeeld bouwt het werkschema-boonpakket dat op de AEM instantie met het IP adres 10.36.79.223 geïnstalleerd is. Het doel wordt uitgevoerd gebruikend het volgende bevel:
 
 ```shell
 mvn content-package:build
@@ -223,7 +226,7 @@ Naast de volgende parameters, zie de beschrijvingen in de [Gemeenschappelijke se
    <td>artefact</td> 
    <td>Tekenreeks</td> 
    <td>Nee</td> 
-   <td> De waarde van het bezit artifactId van het GeMaven project.</td> 
+   <td>De waarde van het bezit artifactId van het GeMaven project.</td> 
    <td>Een tekenreeks van de formuliergroepId:artefactId:version[:packaging].</td> 
   </tr> 
   <tr> 
@@ -357,7 +360,7 @@ Alle parameters van het doel ls worden beschreven in de [Gemeenschappelijke sect
 
 #### Voorbeeld {#example-2}
 
-Het volgende voorbeeld maakt een lijst van de pakketten die op de instantie AEM met het IP adres 10.36.79.223 geïnstalleerd zijn. Het doel wordt uitgevoerd gebruikend het volgende bevel:
+Het volgende voorbeeld maakt een lijst van de pakketten die op de AEM instantie met het IP adres 10.36.79.223 geïnstalleerd zijn. Het doel wordt uitgevoerd gebruikend het volgende bevel:
 
 ```shell
 mvn content-package:ls
@@ -398,7 +401,7 @@ Alle parameters van het rm doel worden beschreven in de [Gemeenschappelijke sect
 
 #### Voorbeeld {#example-3}
 
-In het volgende voorbeeld wordt het workflowpakket verwijderd dat op de AEM-instantie met het IP-adres 10.36.79.223 is geïnstalleerd. Het doel wordt uitgevoerd gebruikend het volgende bevel:
+In het volgende voorbeeld wordt het workflowpakket verwijderd dat op de AEM met het IP-adres 10.36.79.223 is geïnstalleerd. Het doel wordt uitgevoerd gebruikend het volgende bevel:
 
 ```shell
 mvn content-package:rm
@@ -440,7 +443,7 @@ Alle parameters van het verwijderingsdoel worden beschreven in de sectie [Algeme
 
 #### Voorbeeld {#example-4}
 
-In het volgende voorbeeld wordt het werkstroom-bonpakket verwijderd dat op de AEM-instantie is geïnstalleerd met het IP-adres 10.36.79.223. Het doel wordt uitgevoerd gebruikend het volgende bevel:
+In het volgende voorbeeld wordt het werkstroom-bonpakket verwijderd dat op de AEM met het IP-adres 10.36.79.223 is geïnstalleerd. Het doel wordt uitgevoerd gebruikend het volgende bevel:
 
 ```shell
 mvn content-package:uninstall
@@ -554,7 +557,7 @@ Naast de volgende parameters, zie de beschrijving van de `name` parameter in de 
    <td>De naam van het gegenereerde pakket-ZIP-bestand, zonder de ZIP-bestandsextensie.</td> 
   </tr> 
   <tr> 
-   <td> groep</td> 
+   <td>groep</td> 
    <td>java.lang.String</td> 
    <td>Ja</td> 
    <td>The groupID defined in the Maven project.</td> 
@@ -656,9 +659,9 @@ In het volgende filtervoorbeeld wordt de XML-structuur getoond die moet worden g
 
 Het `mode` element bepaalt hoe de inhoud de bewaarplaats wordt beïnvloed wanneer het pakket wordt ingevoerd. De volgende waarden kunnen worden gebruikt:
 
-* **** Samenvoegen: Inhoud in het pakket die zich nog niet in de opslagplaats bevindt, wordt toegevoegd. De inhoud in zowel het pakket als de opslagplaats blijft ongewijzigd. Er wordt geen inhoud uit de opslagplaats verwijderd.
-* **** Vervangen: Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket. Inhoud wordt verwijderd uit de opslagplaats wanneer deze niet bestaat in het pakket.
-* **** Bijwerken: Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket. Bestaande inhoud wordt verwijderd uit de opslagplaats.
+* **Samenvoegen:** Inhoud in het pakket die zich nog niet in de opslagplaats bevindt, wordt toegevoegd. De inhoud in zowel het pakket als de opslagplaats blijft ongewijzigd. Er wordt geen inhoud uit de opslagplaats verwijderd.
+* **Vervangen:** Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket. Inhoud wordt verwijderd uit de opslagplaats wanneer deze niet bestaat in het pakket.
+* **Bijwerken:** Inhoud in het pakket die zich niet in de opslagplaats bevindt, wordt toegevoegd aan de opslagplaats. Inhoud in de opslagplaats wordt vervangen door overeenkomende inhoud in het pakket. Bestaande inhoud wordt verwijderd uit de opslagplaats.
 
 Wanneer het filter geen `mode` element bevat, wordt de standaardwaarde van `replace` gebruikt.
 
@@ -750,7 +753,7 @@ De insteekmodule is beschikbaar in de openbare opslagplaats van Adobe. Als u de 
 
 >[!NOTE]
 >
->In de Adobe Public Releases-opslagplaats kan niet worden gebladerd, zodat het navigeren naar de URL van de opslagplaats met uw webbrowser resulteert in een fout Niet gevonden. Maven heeft echter wel toegang tot de directory&#39;s van de repository.
+>De gegevensopslagplaats van de Versies van de Openbare Adobe is niet doorbladerbaar, zodat het navigeren aan bewaarplaats URL gebruikend uw Webbrowser in een niet Gevonden fout resulteert. Maven heeft echter wel toegang tot de directory&#39;s van de repository.
 
 ```xml
 <profile>
@@ -883,17 +886,17 @@ Met de volgende POM-code wordt alleen een miniatuurafbeelding aan het pakket toe
 </build>
 ```
 
-## Archetypen gebruiken om AEM-projecten te genereren {#using-archetypes-to-generate-aem-projects}
+## Archetypes gebruiken om AEM projecten te genereren {#using-archetypes-to-generate-aem-projects}
 
-Verschillende Maven-archetypen zijn beschikbaar voor het genereren van AEM-projecten. Gebruik het archetype dat met uw ontwikkelingsdoelstellingen beantwoordt:
+Verschillende Maven-archetypen zijn beschikbaar voor het genereren van AEM projecten. Gebruik het archetype dat met uw ontwikkelingsdoelstellingen beantwoordt:
 
-* A content package that install resources for a AEM application: [simple-content-package-archetype](#simple-content-package-archetype)
+* A content package that installer resources for a AEM application: [simpleContent-package-archetype](#simple-content-package-archetype)
 * A content package that includes third party artifacts: [simple-content-package-with-embedded-archetype](#simple-content-package-with-embedded-archetype).
 * Een meermoduletoepassing die de ontwikkeling van klassen Java en eenheidstests aanpast: [multimodule-content-package-archetype](#multimodule-content-package-archetype).
 
 >[!NOTE]
 >
->Het Apache Sling-project biedt ook archetypen die nuttig zijn voor de ontwikkeling van AEM. Deze zijn te vinden op [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
+>Het Apache Sling-project biedt ook archetypen die nuttig zijn voor AEM ontwikkeling. Deze zijn te vinden op [https://sling.apache.org/site/maven-archetypes.html](https://sling.apache.org/documentation/development/maven-archetypes.html).
 
 Elk archetype produceert de volgende punten:
 
@@ -901,7 +904,7 @@ Elk archetype produceert de volgende punten:
 * POM-bestanden.
 * FileVault-configuratiebestanden.
 
-Artefacten met type Archetype zijn beschikbaar in de openbare gegevensopslagruimte van Adobe. Als u een archetype wilt downloaden en uitvoeren, identificeert u het archetype en de Adobe-opslagplaats met behulp van de parameters van de Maven archetype:generate-opdracht:
+Artefacten van het type Archetype zijn beschikbaar bij de openbare gegevensopslagruimte van de Adobe. Als u een archetype wilt downloaden en uitvoeren, identificeert u het archetype en de gegevensopslagruimte Adobe met behulp van de parameters van het Maven archetype:generate-opdracht:
 
 ```shell
 mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
@@ -913,7 +916,7 @@ De Maven archetype plugin gebruikt interactieve wijze in shell of bevelherinneri
 
 **POM-bestanden**
 
-De gegenereerde POM-bestanden bevatten opdrachten voor het compileren van code, het maken van bundels en het implementeren van deze bestanden naar AEM in pakketten. De `groupID`, `artifactId`, `version`, en `name` eigenschappen van het Geweven project worden automatisch bevolkt gebruikend de waarden die u aan de GMaven `archetype:generate` interactieve herinnering verstrekt.
+De gegenereerde POM-bestanden bevatten opdrachten voor het compileren van code, het maken van bundels en het implementeren van deze bestanden om in pakketten te AEM. De `groupID`, `artifactId`, `version`, en `name` eigenschappen van het Geweven project worden automatisch bevolkt gebruikend de waarden die u aan de GMaven `archetype:generate` interactieve herinnering verstrekt.
 
 U kunt de volgende standaardwaarden in het geproduceerde pom.xml- dossier willen veranderen:
 
@@ -935,7 +938,7 @@ U kunt de volgende standaardwaarden in het geproduceerde pom.xml- dossier willen
 
 ### simpleContent-package-archetype {#simple-content-package-archetype}
 
-Maakt een gefabriceerd project dat geschikt is voor het installeren van bronnen voor een eenvoudige AEM-toepassing. De mapstructuur wordt gebruikt onder de `/apps` map van de AEM-opslagplaats. De POM definieert opdrachten voor het verpakken van de bronnen die u in de mappen plaatst en het installeren van de pakketten op de AEM-instantie.
+Hiermee maakt u een bepaald project dat geschikt is voor het installeren van bronnen voor een eenvoudige AEM. De mapstructuur is de structuur die wordt gebruikt onder de `/apps` map van de AEM. POM bepaalt bevelen voor het verpakken van de middelen die u in de omslagen plaatst en het installeren van de pakketten op de AEM instantie.
 
 **Artefacteigenschappen voor archetype:**
 
@@ -957,7 +960,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: De groupId van het inhoudspakket dat Maven produceert. De waarde wordt automatisch gebruikt in het POM-bestand.
 * artefactId: De naam van het inhoudspakket. De waarde wordt ook gebruikt als naam van de projectmap.
-* versie:De versie van het inhoudspakket.
+* versie: De versie van het inhoudspakket.
 * pakket: Deze waarde wordt niet gebruikt voor simple-content-package-archetype.
 * appsFolderName: De naam van de map hieronder /apps.
 * artifactName: De beschrijving van het inhoudspakket.
@@ -1013,7 +1016,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: De groupId van het inhoudspakket dat Maven produceert. De waarde wordt automatisch gebruikt in het POM-bestand.
 * artefactId: De naam van het inhoudspakket. De waarde wordt ook gebruikt als naam van de projectmap.
-* versie:De versie van het inhoudspakket.
+* versie: De versie van het inhoudspakket.
 * pakket: Deze parameter wordt niet gebruikt.
 * appsFolderName: De naam van de map hieronder /apps.
 * artifactName: De beschrijving van het inhoudspakket.
@@ -1048,16 +1051,16 @@ ${artifactId}
 
 ### multimodule-content-package-archetype {#multimodule-content-package-archetype}
 
-Maakt een gemaven project dat de mapstructuur bevat voor het ontwikkelen van een AEM-toepassing en het installeren van bronnen op de server.
+Maakt een gemaven project dat de mapstructuur bevat voor het ontwikkelen van een AEM toepassing en het installeren van bronnen op de server.
 
 De `bundle` map bevat de mapstructuur waarin de Java- en JUnit-bronbestanden zijn opgeslagen die u ontwikkelt. Het bestand pom.xml in deze map maakt de OSGi-bundel. De volgende waarden in POM identificeren het artefact en de bundel:
 
 * artifactID: `${artifactID}-bundle`.
 * Bundle-SymbolicName: `${groupId}.${artifactId}-bundle`.
 
-`${artifactID}` en `${groupId}` zijn de waarden die u voor deze parameters verstrekt wanneer het uitvoeren van de archetypes.
+`${artifactID}` en `${groupId}` zijn de waarden die u voor deze parameters opgeeft wanneer u de archetypen uitvoert.
 
-De `content` map bevat de bronnen die op de AEM-instantie zijn geïnstalleerd. De waarde van artifactID is `${artifactID}multimodule-bundle`.
+De `content` map bevat de bronnen die op het AEM-exemplaar zijn geïnstalleerd. De waarde van artifactID is `${artifactID}multimodule-bundle`.
 
 De bovenliggende map bevat de bovenliggende POM die Maven-plug-ins en -afhankelijkheden beheert.
 
@@ -1081,7 +1084,7 @@ mvn archetype:generate -DarchetypeGroupId=com.day.jcr.vault \
 
 * groupId: De groupId van het inhoudspakket dat Maven produceert. De waarde wordt automatisch gebruikt in het POM-bestand.
 * artefactId: De naam van het inhoudspakket. De waarde wordt ook gebruikt als naam van de projectmap.
-* versie:De versie van het inhoudspakket.
+* versie: De versie van het inhoudspakket.
 * pakket: Deze waarde wordt niet gebruikt voor multimodule-content-package-archetype.
 * appsFolderName: De naam van de map hieronder /apps.
 * artifactName: De beschrijving van het inhoudspakket.
