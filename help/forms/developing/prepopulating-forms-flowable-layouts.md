@@ -1,6 +1,6 @@
 ---
-title: Formulieren vooraf invullen met stroombare indelingen
-seo-title: Formulieren vooraf invullen met stroombare indelingen
+title: Forms vooraf vullen met stroombare indelingen
+seo-title: Forms vooraf vullen met stroombare indelingen
 description: 'null'
 seo-description: 'null'
 uuid: 93ccb496-e1c2-4b79-8e89-7a2abfce1537
@@ -11,13 +11,16 @@ topic-tags: operations
 discoiquuid: 30a12fc6-07b8-4c7c-b9e2-caa2bec0ac48
 translation-type: tm+mt
 source-git-commit: 8c151c582d4355b98445ec4bf6510d668cb0d5bd
+workflow-type: tm+mt
+source-wordcount: '3489'
+ht-degree: 0%
 
 ---
 
 
-# Formulieren vooraf invullen met stroombare indelingen {#prepopulating-forms-with-flowable-layouts1}
+# Forms vooraf vullen met stroombare indelingen {#prepopulating-forms-with-flowable-layouts1}
 
-## Formulieren vooraf invullen met stroombare indelingen {#prepopulating-forms-with-flowable-layouts2}
+## Forms vooraf vullen met stroombare indelingen {#prepopulating-forms-with-flowable-layouts2}
 
 Als u formulieren vooraf invult, worden gegevens weergegeven voor gebruikers in een gegenereerd formulier. Stel bijvoorbeeld dat een gebruiker zich aanmeldt bij een website met een gebruikersnaam en wachtwoord. Als de verificatie is gelukt, vraagt de clienttoepassing een database om gebruikersgegevens. De gegevens worden samengevoegd in het formulier en het formulier wordt vervolgens weergegeven aan de gebruiker. Hierdoor kan de gebruiker gepersonaliseerde gegevens weergeven in het formulier.
 
@@ -36,9 +39,9 @@ Er moet een XML-element aanwezig zijn voor elk formulierveld dat u vooraf wilt i
 
 Wanneer u een formulier invult dat al gegevens bevat, moet u opgeven welke gegevens al in de XML-gegevensbron worden weergegeven. Stel dat een formulier met tien velden gegevens bevat in vier velden. Ga er vervolgens van uit dat u de resterende zes velden vooraf wilt invullen. In dit geval moet u 10 XML-elementen opgeven in de XML-gegevensbron die wordt gebruikt om het formulier vooraf in te vullen. Als u slechts zes elementen opgeeft, zijn de oorspronkelijke vier velden leeg.
 
-U kunt bijvoorbeeld een formulier zoals het voorbeeldbevestigingsformulier vooraf invullen. (Zie &quot;Bevestigingsformulier&quot; in [Interactieve PDF-formulieren](/help/forms/developing/rendering-interactive-pdf-forms.md)weergeven.)
+U kunt bijvoorbeeld een formulier zoals het voorbeeldbevestigingsformulier vooraf invullen. (Zie &#39;Bevestigingsformulier&#39; in Interactieve PDF forms [](/help/forms/developing/rendering-interactive-pdf-forms.md)renderen.)
 
-Als u het voorbeeldbevestigingsformulier vooraf wilt invullen, moet u een XML-gegevensbron maken die drie XML-elementen bevat die overeenkomen met de drie velden in het formulier. Dit formulier bevat de volgende drie velden: `FirstName`, `LastName`, en `Amount`. De eerste stap bestaat uit het maken van een XML-gegevensbron die XML-elementen bevat die overeenkomen met de velden in het formulierontwerp. De volgende stap bestaat uit het toewijzen van gegevenswaarden aan de XML-elementen, zoals in de volgende XML-code wordt getoond.
+Als u het voorbeeldbevestigingsformulier vooraf wilt invullen, moet u een XML-gegevensbron maken die drie XML-elementen bevat die overeenkomen met de drie velden in het formulier. Dit formulier bevat de volgende drie velden: `FirstName`, `LastName`en `Amount`. De eerste stap bestaat uit het maken van een XML-gegevensbron die XML-elementen bevat die overeenkomen met de velden in het formulierontwerp. De volgende stap bestaat uit het toewijzen van gegevenswaarden aan de XML-elementen, zoals in de volgende XML-code wordt getoond.
 
 ```as3
      <Untitled> 
@@ -54,7 +57,7 @@ Nadat u het bevestigingsformulier vooraf hebt ingevuld met deze XML-gegevensbron
 
 ### Formulieren vooraf invullen met stroombare indelingen {#prepopulating_forms_with_flowable_layouts-1}
 
-Formulieren met stroombare indelingen zijn handig om een onbepaalde hoeveelheid gegevens weer te geven aan gebruikers. Omdat de indeling van het formulier automatisch wordt aangepast aan de hoeveelheid samengevoegde gegevens, hoeft u niet vooraf een vaste indeling of een vast aantal pagina&#39;s voor het formulier vast te stellen, zoals u moet doen met een formulier met een vaste indeling.
+Forms met stroombare indelingen is handig om een onbepaalde hoeveelheid gegevens weer te geven aan gebruikers. Omdat de indeling van het formulier automatisch wordt aangepast aan de hoeveelheid samengevoegde gegevens, hoeft u niet vooraf een vaste indeling of een vast aantal pagina&#39;s voor het formulier vast te stellen, zoals u moet doen met een formulier met een vaste indeling.
 
 Een formulier wordt meestal gevuld met gegevens die tijdens runtime worden verkregen. Hierdoor kunt u een formulier vooraf invullen door een XML-gegevensbron in het geheugen te maken en de gegevens rechtstreeks in de XML-gegevensbron in het geheugen te plaatsen.
 
@@ -101,7 +104,7 @@ In het volgende diagram ziet u een voorbeeld van een inkooporderformulier. De in
 
 ### Overwegingen bij het ontwerpen van formulieren {#form-design-considerations}
 
-Formulieren met stroombare indelingen zijn gebaseerd op formulierontwerpen die zijn gemaakt in Designer. Een formulierontwerp bevat een set regels voor de indeling, presentatie en gegevensvastlegging, inclusief het berekenen van waarden op basis van de gebruikersinvoer. De regels worden toegepast wanneer gegevens in een formulier worden ingevoerd. Velden die aan een formulier worden toegevoegd, zijn subformulieren die zich binnen het formulierontwerp bevinden. In het inkooporderformulier dat in het vorige diagram wordt weergegeven, is elke regel bijvoorbeeld een subformulier. Zie Een inkooporderformulier met een stroombare indeling [](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)maken voor informatie over het maken van een formulierontwerp dat subformulieren bevat.
+Forms met stroombare indelingen is gebaseerd op formulierontwerpen die zijn gemaakt in Designer. Een formulierontwerp bevat een set regels voor de indeling, presentatie en gegevensvastlegging, inclusief het berekenen van waarden op basis van de gebruikersinvoer. De regels worden toegepast wanneer gegevens in een formulier worden ingevoerd. Velden die aan een formulier worden toegevoegd, zijn subformulieren die zich binnen het formulierontwerp bevinden. In het inkooporderformulier dat in het vorige diagram wordt weergegeven, is elke regel bijvoorbeeld een subformulier. Zie Een inkooporderformulier met een stroombare indeling [](https://www.adobe.com/go/learn_aemforms_qs_poformflowable_9)maken voor informatie over het maken van een formulierontwerp dat subformulieren bevat.
 
 ### Werken met gegevenssubgroepen {#understanding-data-subgroups}
 
@@ -184,11 +187,11 @@ Elke gegevenssubgroep moet XML-elementen bevatten die overeenkomen met de veldna
 
 >[!NOTE]
 >
->Als u probeert een formulier vooraf in te vullen met een gegevensbron die herhaalde XML-elementen bevat en u stelt de `RenderAtClient` optie in op `No`, wordt alleen de eerste gegevensrecord in het formulier samengevoegd. Als u wilt dat alle gegevensrecords in het formulier worden samengevoegd, stelt u de waarde in `RenderAtClient` op `Yes`. Zie Formulieren `RenderAtClient` renderen op de client [voor informatie over de](/help/forms/developing/rendering-forms-client.md)optie.
+>Als u probeert een formulier vooraf in te vullen met een gegevensbron die herhaalde XML-elementen bevat en u stelt de `RenderAtClient` optie in op `No`, wordt alleen de eerste gegevensrecord in het formulier samengevoegd. Als u wilt dat alle gegevensrecords in het formulier worden samengevoegd, stelt u de waarde in `RenderAtClient` op `Yes`. Zie Forms `RenderAtClient` renderen op de client [voor informatie over de](/help/forms/developing/rendering-forms-client.md)optie.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Forms-service.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -225,23 +228,23 @@ U kunt een vooraf ingevuld formulier net als een ander formulier weergeven. Het 
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Forms Service API Quick Start](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Interactieve PDF-formulieren renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
+[Interactieve PDF forms renderen](/help/forms/developing/rendering-interactive-pdf-forms.md)
 
-[Webtoepassingen maken die formulieren renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Formulieren vooraf invullen met de Java API {#prepopulating-forms-using-the-java-api}
 
-Voer de volgende stappen uit om een formulier vooraf in te vullen met een stroombare indeling met de API voor formulieren (Java):
+Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf in te vullen met de Forms API (Java):
 
 1. Projectbestanden opnemen
 
-   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
+   Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
 
 1. Een XML-gegevensbron in het geheugen maken
 
@@ -270,7 +273,7 @@ Voer de volgende stappen uit om een formulier vooraf in te vullen met een stroom
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`, en `numUnitPrice`.
+   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`en `numUnitPrice`.
    * Herhaal de laatste twee substappen voor alle gegevensitems die worden gebruikt om het formulier vooraf in te vullen.
 
 1. De XML-gegevensbron converteren
@@ -292,8 +295,9 @@ Voer de volgende stappen uit om een formulier vooraf in te vullen met een stroom
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
    * Een `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Zorg ervoor dat u het `com.adobe.idp.Document` object gebruikt dat u in stap 1 en 2 hebt gemaakt.
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat.
-   * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
+   * Een `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
    * Maak een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om een formuliergegevensstroom naar de webbrowser van de client te verzenden.
@@ -305,19 +309,19 @@ Voer de volgende stappen uit om een formulier vooraf in te vullen met een stroom
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Formulieren met stroombare indelingen vooraf invullen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
+[Snel starten (SOAP-modus): Forms vooraf vullen met stroombare indelingen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-prepopulating-forms-with-flowable-layouts-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Formulieren vooraf invullen met de webservice-API {#prepopulating-forms-using-the-web-service-api}
 
-Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf in te vullen met de API voor formulieren (webservice):
+Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf in te vullen met de Forms API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Maak Java-proxyklassen die de Forms service WSDL gebruiken. (Zie Java-proxyklassen [maken met Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
+   * Maak Java-proxyklassen die gebruikmaken van de Forms-service WSDL. (Zie Java-proxyklassen [maken met Apache Axis](/help/forms/developing/invoking-aem-forms-using-web.md#creating-java-proxy-classes-using-apache-axis).)
    * Neem de Java-proxyklassen op in het klassepad.
 
 1. Een XML-gegevensbron in het geheugen maken
@@ -346,7 +350,7 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
 
       ` Element txtPartNum = (Element)document.createElement("txtPartNum");  txtPartNum.appendChild(document.createTextNode("00010-100"));  detail.appendChild(txtPartNum);`
 
-   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`, en `numUnitPrice`.
+   * Herhaal de laatste substap voor alle XML-elementen die aan het detailelement moeten worden toegevoegd. Als u de XML-gegevensbron correct wilt maken die wordt gebruikt om het inkooporderformulier te vullen, moet u de volgende XML-elementen aan het detailelement toevoegen: `txtDescription`, `numQty`en `numUnitPrice`.
    * Herhaal de laatste twee substappen voor alle gegevensitems die worden gebruikt om het formulier vooraf in te vullen.
 
 1. De XML-gegevensbron converteren
@@ -368,12 +372,13 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
    * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Zorg ervoor dat u het `BLOB` object gebruikt dat in stap 1 en 2 is gemaakt.
    * Een `PDFFormRenderSpecc` object dat uitvoeringsopties opslaat. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie.
-   * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
+   * Een `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
    * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Hiermee slaat u het gerenderde PDF-formulier op.
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen).
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
    * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` object dat de resultaten van deze bewerking zal bevatten.
+
    De `renderPDFForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
    * Maak een `FormResult` object door de waarde van het `com.adobe.idp.services.holders.FormsResultHolder` `value` gegevenslid van het object op te halen.
@@ -383,11 +388,12 @@ Voer de volgende stappen uit om een formulier met een stroombare indeling vooraf
    * Maak een `javax.servlet.ServletOutputStream` object dat wordt gebruikt om de gegevensstroom van het formulier naar de webbrowser van de client te schrijven door de `javax.servlet.http.HttpServletResponse` methode van het `getOutputStream` object aan te roepen.
    * Maak een bytearray en vul deze door de `BLOB` methode van het `getBinaryData` object aan te roepen. Hierdoor wordt de inhoud van het `FormsResult` object toegewezen aan de bytearray.
    * Roep de `javax.servlet.http.HttpServletResponse` methode van het `write` object aan om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
+
    >[!NOTE]
    >
    >De `renderPDFForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
