@@ -1,6 +1,6 @@
 ---
-title: Flash Builder-toepassingen maken die SSO-verificatie uitvoeren met HTTP-tokens
-seo-title: Flash Builder-toepassingen maken die SSO-verificatie uitvoeren met HTTP-tokens
+title: Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren
+seo-title: Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren
 description: 'null'
 seo-description: 'null'
 uuid: 273db00a-a665-4e52-88fa-4fca06d05f8c
@@ -11,21 +11,24 @@ topic-tags: coding
 discoiquuid: 0ff30df7-b3ad-4c34-9644-87c689acc294
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1761'
+ht-degree: 0%
 
 ---
 
 
-# Flash Builder-toepassingen maken die SSO-verificatie uitvoeren met behulp van HTTP-tokens {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
+# Het creëren van Flash Builder toepassingen die authentificatie SSO gebruikend de tokens van HTTP uitvoeren {#creating-flash-builder-applicationsthat-perform-sso-authentication-using-http-tokens}
 
-U kunt een cliënttoepassing tot stand brengen gebruikend de Bouwer van de Flits die (SSO) authentificatie het enig-sign uitvoert gebruikend de tokens van HTTP. Stel bijvoorbeeld dat u een webtoepassing maakt met Flash Builder. Ga er vervolgens van uit dat de toepassing verschillende weergaven bevat, waarbij elke weergave een andere bewerking AEM Forms aanroept. In plaats van een gebruiker te verifiëren voor elke Forms-bewerking, kunt u een aanmeldingspagina maken waarmee de gebruiker één keer kan verifiëren. Zodra voor authentiek verklaard, kan een gebruiker veelvoudige verrichtingen aanhalen zonder het moeten opnieuw voor authentiek verklaren. Als een gebruiker zich bijvoorbeeld heeft aangemeld bij Workspace (of een andere Forms-toepassing), hoeft de gebruiker zich niet opnieuw te verifiëren.
+U kunt een cliënttoepassing tot stand brengen gebruikend Flash Builder die enig-sign (SSO) authentificatie gebruikend de tokens van HTTP uitvoert. Stel bijvoorbeeld dat u een webtoepassing maakt met Flash Builder. Ga er vervolgens van uit dat de toepassing verschillende weergaven bevat, waarbij elke weergave een andere AEM Forms-bewerking aanroept. In plaats van een gebruiker te verifiëren voor elke Forms-bewerking, kunt u een aanmeldingspagina maken waarmee de gebruiker één keer kan verifiëren. Zodra voor authentiek verklaard, kan een gebruiker veelvoudige verrichtingen aanhalen zonder het moeten opnieuw voor authentiek verklaren. Als een gebruiker zich bijvoorbeeld heeft aangemeld bij Workspace (of een andere Forms-toepassing), hoeft de gebruiker zich niet opnieuw te verifiëren.
 
-Hoewel de clienttoepassing de vereiste toepassingslogica bevat om SSO-verificatie uit te voeren, voert AEM gebruikerbeheer de werkelijke gebruikersverificatie uit. Om een gebruiker voor authentiek te verklaren gebruikend de tokens van HTTP, roept de cliënttoepassing de `authenticateWithHTTPToken` verrichting van de Dienst van de Manager van de Authentificatie aan. Gebruikersbeheer kan gebruikers verifiëren met een HTTP-token. Voor volgende verwijderings- of webserviceaanroepen naar AEM Forms hoeft u geen referenties voor verificatie door te geven.
+Hoewel de cliënttoepassing vereiste toepassingslogica bevat om authentificatie uit te voeren SSO, voert AEM het Beheer van de vormengebruiker de daadwerkelijke gebruikersauthentificatie uit. Om een gebruiker voor authentiek te verklaren gebruikend de tokens van HTTP, roept de cliënttoepassing de `authenticateWithHTTPToken` verrichting van de Dienst van de Manager van de Authentificatie aan. Gebruikersbeheer kan gebruikers verifiëren met een HTTP-token. Voor volgende verwijderings- of webserviceaanroepen naar AEM Forms hoeft u geen referenties door te geven voor verificatie.
 
 >[!NOTE]
 >
->Voordat u deze sectie leest, wordt u aangeraden AEM-formulieren aan te roepen met behulp van Remoting. (Zie AEM-formulieren [aanroepen met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+>Voordat u deze sectie leest, wordt u aangeraden AEM Forms aan te roepen met Remoting. (Zie AEM Forms [aanroepen met AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
-Het volgende proces van de Vormen AEM van korte duur, genoemd `MyApplication/EncryptDocument`, wordt aangehaald nadat een gebruiker gebruikend SSO voor authentiek wordt verklaard. (Zie het voorbeeld [](/help/forms/developing/aem-forms-processes.md)van een kortstondig proces voor informatie over dit proces, zoals de invoer- en uitvoerwaarden.)
+Het volgende kortstondige proces van AEM Forms, genoemd `MyApplication/EncryptDocument`, wordt aangehaald nadat een gebruiker gebruikend SSO voor authentiek wordt verklaard. (Zie het voorbeeld [](/help/forms/developing/aem-forms-processes.md)van een kortstondig proces voor informatie over dit proces, zoals de invoer- en uitvoerwaarden.)
 
 ![cf_cf_encryptdocumentprocess2](assets/cf_cf_encryptdocumentprocess2.png)
 
@@ -33,7 +36,7 @@ Het volgende proces van de Vormen AEM van korte duur, genoemd `MyApplication/Enc
 >
 >Dit proces is niet gebaseerd op een bestaand AEM Forms-proces. Om samen met de codevoorbeelden te volgen die bespreken hoe te om dit proces aan te halen, creeer een proces genoemd `MyApplication/EncryptDocument` gebruikend workbench. (Zie [Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63)gebruiken.)
 
-De clienttoepassing die is gebouwd met Flash Builder, communiceert met de beveiligingsserver van de User Manager die is geconfigureerd op `/um/login` en `/um/logout`. De clienttoepassing verzendt dus tijdens het opstarten een aanvraag naar de `/um/login` URL om de status van de gebruiker te bepalen. Vervolgens reageert Gebruikersbeheer op de gebruikersstatus. De clienttoepassing en de beveiligingsserver van Gebruikersbeheer communiceren via HTTP.
+De cliënttoepassing die gebruikend Flash Builder wordt gebouwd communiceert met de veiligheidsserver van de Manager van de Gebruiker die bij `/um/login` en `/um/logout`wordt gevormd. De clienttoepassing verzendt dus tijdens het opstarten een aanvraag naar de `/um/login` URL om de status van de gebruiker te bepalen. Vervolgens reageert Gebruikersbeheer op de gebruikersstatus. De clienttoepassing en de beveiligingsserver van Gebruikersbeheer communiceren via HTTP.
 
 **Aanvraagindeling**
 
@@ -66,7 +69,7 @@ Beveiligingsservlet bij `/um/login` antwoordt door het `URLVariables` formaat te
 
 **Aanmeldingsproces**
 
-Wanneer een clienttoepassing wordt gestart, kunt u een POST-aanvraag indienen bij het `/um/login` beveiligingsservlet. Bijvoorbeeld, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Wanneer het verzoek de veiligheidsserver van de Manager van de Gebruiker bereikt, voert het de volgende stappen uit:
+Wanneer een clienttoepassing wordt gestart, kunt u een POST aanvragen bij het `/um/login` beveiligingsservlet. Bijvoorbeeld, `https://<your_serverhost>:<your_port>/um/login?um_no_redirect=true`. Wanneer het verzoek de veiligheidsserver van de Manager van de Gebruiker bereikt, voert het de volgende stappen uit:
 
 1. Het zoekt naar een cookie met de naam `lcAuthToken`. Als de gebruiker zich al heeft aangemeld bij een andere Forms-toepassing, is deze cookie aanwezig. Als het cookie wordt gevonden, wordt de inhoud gevalideerd.
 1. Als op Kopbal gebaseerde SSO wordt toegelaten, dan zoekt servlet gevormde kopballen om de identiteit van de gebruiker te bepalen.
@@ -91,7 +94,7 @@ Wanneer een clienttoepassing zich afmeldt, kunt u een aanvraag naar de volgende 
 
 Bij het ontvangen van deze aanvraag verwijdert de beveiligingsserver van de User Manager de `lcAuthToken` cookie en reageert deze met `authstate=LOGGED_OUT`. Nadat de clienttoepassing deze waarde heeft ontvangen, kan de toepassing opschoningstaken uitvoeren.
 
-## Een clienttoepassing maken die gebruikers van AEM-formulieren verifieert met behulp van SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
+## Een clienttoepassing maken die gebruikers van AEM formulieren verifieert met behulp van SSO {#creating-a-client-application-that-authenticates-aem-forms-users-using-sso}
 
 Om aan te tonen hoe te om een cliënttoepassing tot stand te brengen die authentificatie SSO uitvoert, wordt een voorbeeldcliënttoepassing gecreeerd. In de volgende afbeelding ziet u de stappen die de clienttoepassing uitvoert om een gebruiker te verifiëren met behulp van SSO.
 
@@ -109,7 +112,7 @@ In de vorige illustratie wordt de toepassingsstroom beschreven die plaatsvindt w
 
 De clienttoepassing bestaat uit de volgende bestanden:
 
-* `SSOStandalone.mxml`: Het MXML-hoofdbestand dat de clienttoepassing vertegenwoordigt. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)SSOStandalone.mxml maken.)
+* `SSOStandalone.mxml`: Het MXML hoofdbestand dat de clienttoepassing vertegenwoordigt. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-ssostandalone-mxml-file)SSOStandalone.mxml maken.)
 * `um/ISSOManager.as`: Bewerkingen met betrekking tot Single Sign On (SSO) toegankelijk maken. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-issomanager-as-file)ISSOManager.as maken.)
 * `um/SSOEvent.as`: De gebeurtenis `SSOEvent` wordt verzonden voor SSO-gerelateerde gebeurtenissen. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-ssoevent-as-file)SSOEvent.as maken.)
 * `um/SSOManager.as`: Beheert de bewerkingen met betrekking tot SSO en verzendt de juiste gebeurtenissen. (Zie Het bestand [SSOManager.as](creating-flash-builder-applications-perform.md#creating-the-ssomanager-as-file)maken.)
@@ -117,7 +120,7 @@ De clienttoepassing bestaat uit de volgende bestanden:
 * `views/login.mxml`: Vertegenwoordigt het aanmeldingsscherm. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-login-mxml-file)login.mxml maken.)
 * `views/logout.mxml`: Vertegenwoordigt het logout scherm. (Zie Het bestand [logout.mxml](creating-flash-builder-applications-perform.md#creating-the-logout-mxml-file)maken.)
 * `views/progress.mxml`: Vertegenwoordigt een vooruitgangsmening. (Zie [Het bestand](creating-flash-builder-applications-perform.md#creating-the-progress-mxml-file)progress.mxml maken.)
-* `views/remoting.mxml`: Vertegenwoordigt de mening die het kortstondige proces van Vormen AEM genoemd MyApplication/EncryptDocument gebruikend remoting aanhaalt. (Zie Het bestand [remoting.mxml](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)maken.)
+* `views/remoting.mxml`: Vertegenwoordigt de mening die het kortstondige proces van AEM Forms genoemd MyApplication/EncryptDocument gebruikend remoting aanhaalt. (Zie Het bestand [remoting.mxml](creating-flash-builder-applications-perform.md#creating-the-remoting-mxml-file)maken.)
 
 In de volgende afbeelding ziet u een visuele weergave van de clienttoepassing.
 
@@ -125,7 +128,7 @@ In de volgende afbeelding ziet u een visuele weergave van de clienttoepassing.
 
 >[!NOTE]
 >
->Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Voeg ook het bestand adobe-remoting-provider.swc toe aan het klassepad van uw project. (Zie [Inclusief het Flex-bibliotheekbestand](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file)voor AEM-formulieren.)
+>Er zijn twee pakketten met de naam um en views. Zorg er bij het maken van de clienttoepassing voor dat u de bestanden in de juiste pakketten plaatst. Voeg ook het bestand adobe-remoting-provider.swc toe aan het klassepad van uw project. (Zie [Inclusief het AEM Forms Flex-bibliotheekbestand](/help/forms/developing/invoking-aem-forms-using-remoting.md#including-the-aem-forms-flex-library-file).)
 
 ### Het bestand SSOStandalone.mxml maken {#creating-the-ssostandalone-mxml-file}
 
