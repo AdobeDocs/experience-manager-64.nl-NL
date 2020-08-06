@@ -1,8 +1,8 @@
 ---
-title: AEM Forms Data Integration
-seo-title: AEM Forms Data Integration
-description: Met gegevensintegratie kunt u AEM-formulieren integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
-seo-description: Met gegevensintegratie kunt u AEM-formulieren integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
+title: AEM Forms-gegevensintegratie
+seo-title: AEM Forms-gegevensintegratie
+description: Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
+seo-description: Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
 uuid: 58f65ae0-cf54-4249-92c7-64b557e30491
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: integration
 discoiquuid: b6786321-6e8e-40e2-809b-d117991246c4
 translation-type: tm+mt
 source-git-commit: 7e1d32127ee82f4353d768e5a2446a4bf4db2f57
+workflow-type: tm+mt
+source-wordcount: '589'
+ht-degree: 0%
 
 ---
 
 
 # Inleiding tot AEM Forms Data Integration {#aem-forms-data-integration}
 
-Met gegevensintegratie kunt u AEM-formulieren integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
+Met gegevensintegratie kunt u AEM Forms integreren met verschillende gegevensbronnen en een formuliergegevensmodel maken voor het maken en gebruiken van adaptieve formulieren en interactieve communicatie.
 
 ![](do-not-localize/data-integeration.png)
 
@@ -46,9 +49,9 @@ Nadat u een formuliergegevensmodel hebt gemaakt, kunt u het gebruiken in verschi
 
 ## Aan de slag met gegevensintegratie {#get-started-with-data-integration}
 
-De eerste stap voor het implementeren van gegevensintegratie is het identificeren en configureren van gegevensbronnen die informatie opslaan die u wilt gebruiken in adaptieve formulieren en interactieve communicatiestukken. Vervolgens maakt u een formuliergegevensmodel dat gebruikmaakt van gegevensmodelobjecten, eigenschappen en services van een of meer gegevensbronnen. U kunt adaptieve formulieren en interactieve communicatie maken op basis van een formuliergegevensmodel waarin adaptieve formuliervelden of plaatsaanduidingen in interactieve communicatie zijn gebonden aan de desbetreffende gegevensbroneigenschappen.
+De eerste stap voor het implementeren van gegevensintegratie is het identificeren en configureren van gegevensbronnen die informatie opslaan die u wilt gebruiken in adaptieve formulieren en interactieve-communicatietoepassingen. Vervolgens maakt u een formuliergegevensmodel dat gebruikmaakt van gegevensmodelobjecten, eigenschappen en services van een of meer gegevensbronnen. U kunt adaptieve formulieren en interactieve communicatie maken op basis van een formuliergegevensmodel waarin adaptieve formuliervelden of plaatsaanduidingen in interactieve communicatie zijn gebonden aan de desbetreffende gegevensbroneigenschappen.
 
-Met AEM Forms kunt u ook een formuliergegevensmodel maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en eigenschappen in het formuliergegevensmodel koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel.
+Met AEM Forms kunt u ook een formuliergegevensmodel maken dat onafhankelijk is van gegevensbronnen en kunt u later gegevensmodelobjecten en -eigenschappen in het formuliergegevensmodel koppelen aan of binden met gegevensbron. Hiermee worden afhankelijkheden van gegevensbronnen verwijderd terwijl u werkt aan een formuliergegevensmodel.
 
 Herzie het volgende om, gegevensintegratie te beginnen te begrijpen en uit te voeren.
 
