@@ -31,7 +31,7 @@ Op de pagina Instellingen bestandstype kunt u de volgende taken uitvoeren:
 
 >[!NOTE]
 >
->De instellingen voor bestandstypen zijn niet beschikbaar voor de fallback-convertors, zoals Acrobat voor conversie van HTML naar PDF, Microsoft PowerPoint, Microsoft Word en Microsoft Excel.
+>De instellingen voor bestandstypen zijn niet beschikbaar voor de fallback-convertors, zoals Acrobat voor HTML-conversie naar PDF, Microsoft PowerPoint, Microsoft Word en Microsoft Excel.
 
 ## Instellingen voor bestandstypen maken of bewerken {#create-or-edit-file-type-settings}
 
@@ -56,7 +56,7 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 
    [HTML-naar-PDF-instellingen](#html-to-pdf-settings)
 
-   [Flash-video&#39;s naar PDF-instellingen](#flash-videos-to-pdf-settings)
+   [Video&#39;s Flash naar PDF-instellingen](#flash-videos-to-pdf-settings)
 
    [XPS naar PDF-instellingen](#xps-to-pdf-settings)
 
@@ -82,16 +82,16 @@ Maak of bewerk een bestandstype-instelling om op te geven hoe de toepassing omga
 
    Als u naar een andere sectie wilt gaan, klikt u op de koppeling op de webpagina of gebruikt u de **[!UICONTROL Next]** knoppen of **[!UICONTROL Previous]** knoppen.
 
-1. Nadat u alle secties hebt voltooid, klikt u op **[!UICONTROL Save]** of **[!UICONTROL Save As]** en geeft u een naam voor de instelling op.
+1. Nadat u alle secties hebt voltooid, klikt u op **[!UICONTROL Save]** **[!UICONTROL Save As]** of geeft u een naam voor de instelling op.
 
-Ondersteuning voor verschillende bestandstypen kan worden aangepast. (Zie Ondersteuning [toevoegen voor extra eigen bestandsindelingen](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)in [Programmeren met AEM-formulieren](https://www.adobe.com/go/learn_lc_programming_11).)
+Ondersteuning voor verschillende bestandstypen kan worden aangepast. (Zie Ondersteuning [toevoegen voor extra eigen bestandsindelingen](https://help.adobe.com/en_US/AEMForms/6.1/ProgramLC/WS624e3cba99b79e12e69a9941333732bac8-7756.2.html)in [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_lc_programming_11).)
 
 ## De standaardinstellingen wijzigen {#change-the-default-settings}
 
-U kunt de standaardwaarde wijzigen voor de instellingen, beveiligingsinstellingen en bestandstypen van Adobe PDF die van toepassing zijn op nieuwe bronnen. Het wijzigen van de standaardinstellingen heeft geen invloed op de instellingen van bestaande bronnen.
+U kunt de standaardwaarde wijzigen voor de Adobe PDF-instellingen, beveiligingsinstellingen en bestandstypen die van toepassing zijn op nieuwe bronnen. Het wijzigen van de standaardinstellingen heeft geen invloed op de instellingen van bestaande bronnen.
 
 1. Klik in Beheerconsole op **[!UICONTROL Services > PDF Generator]**.
-1. Klik op de **[!UICONTROL Adobe PDF Settings]**, **[!UICONTROL File Type Settings]** of **[!UICONTROL Security Settings]** pagina **[!UICONTROL Set Default Settings]**.
+1. On the **[!UICONTROL Adobe PDF Settings]**, **[!UICONTROL File Type Settings]**, or **[!UICONTROL Security Settings]** page, click **[!UICONTROL Set Default Settings]**.
 1. Selecteer de gewenste standaardinstellingen. Een of meer van de volgende instellingen zijn beschikbaar op de pagina Standaardinstellingen instellen:
 
    **[!UICONTROL Adobe PDF Setting]**: De oorspronkelijke standaardinstelling is Standaard (Acrobat 6).
@@ -190,7 +190,7 @@ Schakel deze opties in om op te geven hoe de inhoud moet worden weergegeven, hoe
 
 **Pagina-indeling:** Selecteer het type pagina-indeling voor het PDF-document.
 
-**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardzoomfactor van Acrobat gebruikt.
+**Vergroting:** Kies een vooraf ingestelde vergroting voor de openingsweergave van het PDF-document of selecteer een aangepaste waarde. Als u een standaardinstelling kiest, wordt de standaardvergroting voor Acrobat gebruikt.
 
 **Openen naar paginanummer:** Geef het paginanummer op waarop de PDF wordt geopend.
 
@@ -216,15 +216,15 @@ Schakel deze opties in om de weergave van het venster op te geven:
 
 **Vensterbalk verbergen:** Hiermee verbergt u de vensterbesturingselementen in het PDF-document.
 
-## Flash-video&#39;s naar PDF-instellingen {#flash-videos-to-pdf-settings}
+## Video&#39;s Flash naar PDF-instellingen {#flash-videos-to-pdf-settings}
 
-PDF Generator ondersteunt de mogelijkheid om een video voor Adobe Flash (SWF- of FLV-bestand) te verzenden en een PDF-bestand te maken met daarin een video voor Adobe Flash ingesloten. Voor deze conversie hoeft Adobe Flash Player niet op de formulierserver te zijn geïnstalleerd. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze optie.
+PDF Generator ondersteunt de mogelijkheid om een video te verzenden voor Adobe Flash (SWF- of FLV-bestand) en een PDF-bestand te maken waarin een video is ingesloten voor Adobe Flash. Voor deze conversie hoeft Adobe Flash Player niet te worden geïnstalleerd op de formulierserver. Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze optie.
 
 **Bestandsnaamextensies:** Lijst met door komma&#39;s gescheiden bestandsextensies die kunnen worden omgezet.
 
 ## XPS naar PDF-instellingen {#xps-to-pdf-settings}
 
-De Specificatie van het Papier van XML (XPS) wordt gebruikt in de Drukkerij van Vensters. Dit is een formaat van Microsoft en kan van om het even welke toepassing van Microsoft Office worden gecreeerd. Met AEM-formulieren kunt u XPS-bestanden converteren naar PDF.
+De Specificatie van het Papier van XML (XPS) wordt gebruikt in de Drukkerij van Vensters. Dit is een formaat van Microsoft en kan van om het even welke toepassing van Microsoft Office worden gecreeerd. Met AEM formulieren kunt u XPS-bestanden converteren naar PDF.
 
 **Bestandsnaamextensies:** Een door komma&#39;s gescheiden lijst van alle filename van XPS uitbreidingen die kunnen worden omgezet. Er is momenteel één indeling: .xps.
 
@@ -238,7 +238,7 @@ PDF Generator ondersteunt de mogelijkheid om PDF-bestanden te verkleinen. Of u a
 
 Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit-file-type-settings)maken of bewerken voor instructies over het openen van deze instelling.
 
-**Target PDF-versie:** Hiermee geeft u de versie van Acrobat op waarmee de PDF compatibel is.
+**PDF-doelversie:** Hiermee geeft u de versie van Acrobat op waarmee de PDF compatibel is.
 
 ### Lettertypen {#fonts}
 
@@ -254,6 +254,7 @@ Zie [Bestandstype-instellingen](configuring-file-type-settings.md#create-or-edit
    * Selecteer indien nodig een andere map met lettertypen in de vervolgkeuzelijst **Lettertype-bron** . Dit vervolgkeuzemenu bevat de lettertypemappen die zijn opgegeven in **Home > Instellingen > Core System > Core Configurations**.
    * Selecteer een of meer lettertypen in de lijst **Beschikbare lettertypen** en klik op **Toevoegen**. Deze lettertypen worden toegevoegd aan de lijst **Lettertypen ongedaan maken** .
    * Als u de insluiting van bepaalde fonts ongedaan wilt maken die niet op de formulierserver staan, voert u de namen van die fonts in in het vak Fonts **toevoegen aan de insluiting** . Click **Add**.
+
    >[!NOTE]
    >
    >*Als u de insluiting van bepaalde lettertypen waarvan de subsets in het document zijn ingesloten, ongedaan wilt maken, plaatst u het plusteken (+) vóór de naam van het lettertype. Bijvoorbeeld &quot;+Helvetica&quot;.*
@@ -274,7 +275,7 @@ Als uw PDF-document illustraties met transparantie bevat, kunt u met de instelli
 
 >[!NOTE]
 >
->Als Acrobat 4.0 en hoger is geselecteerd als de Target PDF-versie, worden alle transparante objecten afgevlakt. Voor andere Target PDF-versies wordt transparantie ondersteund en kunt u de transparantie-instellingen configureren.
+>Als Acrobat 4.0 en hoger is geselecteerd als de doel-PDF-versie, worden alle transparante objecten afgevlakt. Voor andere Doel-PDF-versies wordt transparantie ondersteund en u kunt de transparantie-instellingen configureren.
 
 Selecteer **Transparantie** om de transparantie-instellingen te configureren tijdens het optimaliseren van PDF-documenten.
 
@@ -365,7 +366,7 @@ In de volgende tabel ziet u de meestgebruikte printertypen en de resolutie van d
 
 Selecteer Gebruikersgegevens **** negeren om persoonlijke gegevens te verwijderen die u niet wilt verspreiden of delen met andere gebruikers.
 
-* **Alle opmerkingen, formulieren en multimedia** negeren: Hiermee verwijdert u alle opmerkingen, formulieren, formuliervelden en multimedia uit de PDF.
+* **Alle opmerkingen, Forms en multimedia** negeren: Hiermee verwijdert u alle opmerkingen, formulieren, formuliervelden en multimedia uit de PDF.
 * **Alle objectgegevens** negeren: Hiermee verwijdert u alle objecten uit de PDF.
 * **Externe kruisverwijzingen negeren**: Hiermee verwijdert u koppelingen naar andere documenten. Koppelingen die naar andere locaties in de PDF gaan, worden niet verwijderd.
 * **Inhoud van verborgen lagen negeren en zichtbare lagen** afvlakken: Hiermee verkleint u de bestandsgrootte. Het geoptimaliseerde document ziet er net zo uit als de originele PDF, maar bevat geen laaggegevens.
@@ -409,7 +410,7 @@ Deze opties bepalen hoe de dossiers van Microsoft Excel worden omgezet. Zie [Bes
 
 **Bestandsnaamextensies**: Hiermee geeft u de bestandsextensies op voor bestandstypen, gescheiden door komma&#39;s, die worden geaccepteerd voor deze toepassing. The default is `xls,xlsx`. Neem geen punt voor of spatie op tussen de extensies.
 
-**PDF/A-1a-compatibel bestand** maken: Hiermee wordt het gebruik van de Adobe PDF-instelling PDF/A-1b:2005 RGB afgedwongen.
+**PDF/A-1a-compatibel bestand** maken: Hiermee wordt het gebruik van de instelling PDF/A-1b:2005 RGB Adobe PDF geforceerd.
 
 **Bladwijzers toevoegen aan Adobe PDF**: Hiermee converteert u Excel-werkbladnamen naar bladwijzers. Deze optie is standaard geselecteerd.
 
@@ -425,7 +426,7 @@ Deze opties bepalen hoe de dossiers van Microsoft Excel worden omgezet. Zie [Bes
 
 **Bronbestand bijvoegen bij Adobe PDF**: Als deze optie is geselecteerd, wordt het originele Excel-werkblad ingevoegd als een bijlage in het gegenereerde PDF-document.
 
-**Toegankelijkheid en opnieuw plaatsen inschakelen bij gecodeerde Adobe PDF**: Hiermee sluit u codes in het PDF-document in om toegankelijkheid en opnieuw plaatsen in te schakelen.
+**Toegankelijkheid en Reflow inschakelen met gelabelde Adobe PDF**: Hiermee sluit u codes in het PDF-document in om toegankelijkheid en opnieuw plaatsen in te schakelen.
 
 **Lijst met Excel-toevoegingen die moeten worden geladen**: Standaard worden (om beveiligingsredenen) geen Excel-invoegtoepassingen uitgevoerd wanneer een Excel-bestand naar PDF wordt geconverteerd. Om bepaalde toe:voegen-ins van Excel toe te staan om tijdens omzetting te lopen, verstrek een komma-gescheiden lijst van de namen van toe:voegen-ins.
 
@@ -463,7 +464,7 @@ Deze opties bepalen hoe Microsoft PowerPoint-bestanden worden geconverteerd. Zie
 
 **[!UICONTROL Convert Hidden Slides To PDF Pages]**: Verborgen dia&#39;s converteren.
 
-**[!UICONTROL Create PDF/A-1a Compliant File]**: Hiermee wordt het gebruik van de Adobe PDF-instelling PDF/A-1b:2005 RGB afgedwongen. Enkele PowerPoint-functies worden niet geconverteerd wanneer u een PDF-bestand maakt. Als een PowerPoint-overgang in Acrobat geen gelijkwaardige overgang heeft, wordt een vergelijkbare overgang vervangen. Als meerdere animatie-effecten zich in dezelfde dia bevinden, wordt één effect gebruikt. Paginaovergangen en vlieg-ins voor opsommingstekens worden geconverteerd.
+**[!UICONTROL Create PDF/A-1a Compliant File]**: Hiermee wordt het gebruik van de instelling PDF/A-1b:2005 RGB Adobe PDF geforceerd. Enkele PowerPoint-functies worden niet geconverteerd wanneer u een PDF-bestand maakt. Als een PowerPoint-overgang in Acrobat geen gelijkwaardige overgang heeft, wordt een vergelijkbare overgang vervangen. Als meerdere animatie-effecten zich in dezelfde dia bevinden, wordt één effect gebruikt. Paginaovergangen en vlieg-ins voor opsommingstekens worden geconverteerd.
 
 ## Microsoft Project-instellingen (alleen Windows) {#microsoft-project-settings-windows-only}
 
@@ -473,7 +474,7 @@ Deze opties bepalen hoe de dossiers van het Project van Microsoft worden omgezet
 
 1. **[!UICONTROL Convert Document Information]**: Hiermee voegt u documentinformatie toe uit het dialoogvenster Eigenschappen van het bronbestand, zoals titel, onderwerp, auteur, trefwoorden, manager, bedrijf, categorie en opmerkingen. Deze optie is standaard geselecteerd.
 1. **[!UICONTROL Attach Source File To Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand.
-1. **[!UICONTROL Create PDF/A-1a Compliant File]**: Hiermee wordt het gebruik van de Adobe PDF-instelling PDF/A-1b:2005 RGB afgedwongen.
+1. **[!UICONTROL Create PDF/A-1a Compliant File]**: Hiermee wordt het gebruik van de instelling PDF/A-1b:2005 RGB Adobe PDF geforceerd.
 1. **[!UICONTROL Run Macros Automatically]**: Hiermee worden eventuele macro&#39;s in het Microsoft Project-document uitgevoerd (bijvoorbeeld een macro dat de huidige tijd invoegt) voordat het document wordt geconverteerd.
 
 ## Microsoft Word-instellingen (alleen Windows) {#microsoft-word-settings-windows-only}
@@ -494,7 +495,7 @@ Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Best
 
 **[!UICONTROL Enable Accessibility And Reflow With Tagged Adobe PDF]**: Hiermee sluit u codes in het PDF-bestand in. Deze optie is standaard geselecteerd.
 
-**[!UICONTROL Create PDF/A-1a Compliant File]**: Als deze optie is geselecteerd, wordt de instelling PDF/A-1b:2005 RGB Adobe PDF gebruikt.
+**[!UICONTROL Create PDF/A-1a Compliant File]**: Als deze optie is geselecteerd, wordt de RGB-Adobe PDF-instelling PDF/A-1b:2005 gebruikt.
 
 **[!UICONTROL Run Macros Automatically]**: Hiermee worden alle macro&#39;s in het Word-document uitgevoerd (bijvoorbeeld een macro dat de huidige tijd invoegt) voordat het document wordt geconverteerd.
 
@@ -516,7 +517,7 @@ Deze opties bepalen hoe Microsoft Word-bestanden worden geconverteerd. Zie [Best
 
 Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) bevat, plaatst u voor de speciale tekens het escape-teken (&quot;\_). Geef bijvoorbeeld een stijl met de naam &quot;Kop, 1&quot; op als Kop\, 1.
 
-**Codering Acrobat PDFMaker:** Hiermee geeft u het coderingstype op voor de invoerbestanden zonder tekst naar Acrobat PDFMaker. Als u bijvoorbeeld een bestand met UTF-8-codering gebruikt, bereikt u de beste resultaten met UTF-8.
+**Codering Acrobat PDFMaker:** Hiermee geeft u het coderingstype op voor de invoer van bestanden zonder tekst in de Acrobat PDFMaker. Als u bijvoorbeeld een bestand met UTF-8-codering gebruikt, bereikt u de beste resultaten met UTF-8.
 
 ## Microsoft Visio-instellingen (alleen Windows) {#visio}
 
@@ -536,7 +537,7 @@ Als de naam van een Microsoft Word-stijl een komma (,) of een gelijkteken (=) be
 
 **PDF/A-1b-compatibel bestand** maken: Hiermee wordt het gebruik van de Adobe PDF-instelling PDF/A-1b:2005 (RGB) geforceerd.
 
-**Opmerkingen** converteren naar Adobe PDF: Hiermee converteert u Visio-notities naar PDF-opmerkingen.
+**Opmerkingen converteren naar Adobe PDF-opmerkingen**: Hiermee converteert u Visio-notities naar PDF-opmerkingen.
 
 ## Microsoft Publisher-instellingen (alleen Windows) {#microsoft-publisher-settings-windows-only}
 
@@ -566,7 +567,7 @@ Deze opties bepalen hoe AutoCAD-bestanden worden geconverteerd. Zie [Bestandstyp
 
 **[!UICONTROL Attach Source File To Adobe PDF]**: Hiermee voegt u het bronbestand als bijlage toe aan het PDF-bestand.
 
-**[!UICONTROL Create PDF/A-1b Compliant File]**: Hiermee wordt het gebruik van de PDF/A-1b Adobe PDF-instelling geforceerd.
+**[!UICONTROL Create PDF/A-1b Compliant File]**: Hiermee wordt het gebruik van de instelling PDF/A-1b Adobe PDF geforceerd.
 
 **[!UICONTROL Convert All Layers]**: Standaard converteert PDF Generator alleen de standaardlaag AutoCAD-bestanden naar PDF in plaats van alle lagen in het bestand. Selecteer deze optie als u alle lagen van het bestand wilt converteren.
 
@@ -605,7 +606,7 @@ U kunt ook opgeven hoe formulieren worden verzonden. De opties zijn XML, FDF, PD
 
 **Overgangseffecten** gebruiken: Hiermee converteert u de overgangseffecten van dia&#39;s in OpenOffice-presentaties naar de corresponderende PDF-overgangseffecten.
 
-**Formulieren in formaat** verzenden: Hiermee maakt u een PDF-formulier dat kan worden ingevuld en afgedrukt door de gebruiker van het PDF-document.
+**Forms verzenden in formaat**: Hiermee maakt u een PDF-formulier dat kan worden ingevuld en afgedrukt door de gebruiker van het PDF-document.
 
 **Automatisch ingevoegde lege pagina&#39;s** exporteren: Als deze optie is geselecteerd, worden automatisch ingevoegde lege pagina&#39;s opgenomen in het gegenereerde PDF-document. Dit is handig als u een PDF-document dubbelzijdig afdrukt. Een boek kan bijvoorbeeld zo worden geconfigureerd dat de eerste pagina van het hoofdstuk altijd begint op een pagina met een oneven nummer. Als het vorige hoofdstuk eindigt op een oneven pagina, voegt OpenOffice een lege even pagina in. Met deze optie bepaalt u of de even pagina in de gegenereerde PDF moet worden opgenomen.
 
@@ -618,6 +619,6 @@ U kunt de instellingen voor andere toepassingen niet wijzigen via de beheerconso
 * Adobe FrameMaker: `fm`
 * Adobe Photoshop: `psd`
 
-Ondersteuning voor deze bestandstypen moet mogelijk worden aangepast. Zie &quot;Ondersteuning voor aanvullende eigen bestandsindelingen toevoegen&quot; in [Programmeren met AEM-formulieren](https://www.adobe.com/go/learn_aemforms_programming_62)voor meer informatie.
+Ondersteuning voor deze bestandstypen moet mogelijk worden aangepast. Zie &quot;Ondersteuning voor aanvullende eigen bestandsindelingen toevoegen&quot; in [Programmeren met AEM formulieren](https://www.adobe.com/go/learn_aemforms_programming_62)voor meer informatie.
 
 Zie Een PDFG-netwerkprinter [instellen (alleen Windows)](/help/forms/using/admin-help/setting-pdfg-network-printer-windows.md)voor hulp bij het configureren van een PDFG-netwerkprinter.
