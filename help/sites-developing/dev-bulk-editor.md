@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9a1ff95-e88e-41f0-9731-9a59159b4653
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '1849'
+ht-degree: 1%
 
 ---
 
@@ -162,13 +165,13 @@ Hier volgt een lijst met de queryparameters voor bulkeditors:
 
 ### Een op Bulk Editor gebaseerde component ontwikkelen: de component Productlijst {#developing-a-bulk-editor-based-component-the-product-list-component}
 
-Deze sectie verstrekt een overzicht van hoe te om de bulkredacteur te gebruiken en geeft een beschrijving van de bestaande component Geometrixx die op de bulkredacteur wordt gebaseerd: de component Productlijst.
+Deze sectie verstrekt een overzicht van hoe te om de bulkredacteur te gebruiken en geeft een beschrijving van de bestaande die component van de Geometrixx op de bulkredacteur wordt gebaseerd: de component Productlijst.
 
 Met de component Productlijst kunnen gebruikers een tabel met gegevens weergeven en bewerken. U kunt bijvoorbeeld de component Productlijst gebruiken om producten in een catalogus te vertegenwoordigen. De informatie wordt weergegeven in een standaard HTML-tabel en alle bewerkingen worden uitgevoerd in het dialoogvenster **Bewerken** , dat een BulkEditor-widget bevat. (Deze Bulk-editor is precies hetzelfde als de editor die u kunt openen via /etc/importers/bulkeditor.html of via het menu Gereedschappen). De component van de Lijst van het Product is gevormd voor specifieke, beperkte bulkredacteursfunctionaliteit. Elk deel van de bulkredacteur (of componenten die uit de bulkredacteur worden afgeleid) kan worden gevormd.
 
 Met de bulkeditor kunt u de rijen toevoegen, wijzigen, verwijderen, filteren en exporteren, wijzigingen opslaan en een set rijen importeren. Elke rij wordt opgeslagen als een knoop onder de de componenteninstantie van de Lijst van het Product zelf. Elke cel is een eigenschap van elk knooppunt. Dit is een ontwerpkeuze die eenvoudig kan worden gewijzigd. U kunt knooppunten bijvoorbeeld ergens anders in de opslagplaats opslaan. De rol van de vraagserver is de lijst van de knopen terug te keren aan vertoning; het zoekpad wordt gedefinieerd als een instantie van de productlijst.
 
-De broncode van de component Product List is beschikbaar in de gegevensopslagruimte op /apps/geometrixx/components/productlist en bestaat uit verschillende onderdelen, zoals alle AEM-componenten:
+De broncode van de component Product List is beschikbaar in de gegevensopslagruimte op /apps/geometrixx/components/productlist en bestaat uit verschillende onderdelen, zoals alle AEM:
 
 * HTML-rendering: wordt de rendering uitgevoerd in een JSP-bestand (/apps/geometrixx/components/productlist/productlist.jsp). JSP leest subnodes van de huidige component van de Lijst van het Product en toont elk van hen als rij van een HTML- lijst.
 * Het dialoogvenster Bewerken waarin u de configuratie van de Bulk-editor definieert. Configureer het dialoogvenster zodat dit voldoet aan de behoeften van de component: beschikbare kolommen en mogelijke acties die worden uitgevoerd op het raster of op de zoekopdracht. Zie de eigenschappen [van de de](#bulk-editor-configuration-properties) bulkredaconfiguratie voor informatie over alle configuratieeigenschappen.
@@ -528,7 +531,7 @@ De servlet van de Vraag werkt als volgt: het ontvangt een vraag GQL en de kolomm
 
 In het de componentengeval van de Lijst van het Product, zijn de twee parameters die naar servlet van de Vraag worden verzonden als volgt:
 
-*  query: &quot;path:/content/geometrixx/nl/customer/jcr:content/par/productlist Cube&quot;
+* query: &quot;path:/content/geometrixx/nl/customer/jcr:content/par/productlist Cube&quot;
 * kolommen: &quot;Selection,ProductId,ProductName,Color,CatalogCode,SellingSku&quot;
 
 en de geretourneerde JSON-stream is als volgt:
@@ -554,7 +557,7 @@ U kunt de server van de Vraag uitbreiden om een complex overervingsmodel terug t
 
 ### Servlet opslaan {#save-servlet}
 
-In de standaardconfiguratie van de bulkredacteur is elke rij een knoop en de weg van deze knoop wordt opgeslagen in het rijverslag. De bulkredacteur houdt het verband tussen de rij en de knoop door de jcr weg. Wanneer een gebruiker het raster bewerkt, wordt een lijst met alle wijzigingen gemaakt. Wanneer een gebruiker op **Opslaan** klikt, wordt een POST-query verzonden naar elk pad met de bijgewerkte eigenschappen. Dit is de basis van het Sling-concept en het werkt goed als elke cel een eigenschap van het knooppunt is. Maar als servlet van de Vraag wordt uitgevoerd om overervingsberekening uit te voeren, kan dit model niet als bezit werken dat door servlet van de Vraag is teruggekeerd kan van een andere knoop worden geërft.
+In de standaardconfiguratie van de bulkredacteur is elke rij een knoop en de weg van deze knoop wordt opgeslagen in het rijverslag. De bulkredacteur houdt het verband tussen de rij en de knoop door de jcr weg. Wanneer een gebruiker het raster bewerkt, wordt een lijst met alle wijzigingen gemaakt. Wanneer een gebruiker op **Opslaan** klikt, wordt een query naar elk pad verzonden met de bijgewerkte eigenschappen. Dit is de basis van het Sling-concept en het werkt goed als elke cel een eigenschap van het knooppunt is. Maar als servlet van de Vraag wordt uitgevoerd om overervingsberekening uit te voeren, kan dit model niet als bezit werken dat door servlet van de Vraag is teruggekeerd kan van een andere knoop worden geërft.
 
 Het serverconcept Opslaan is dat de wijzigingen niet rechtstreeks naar elk knooppunt worden gepost, maar naar één servlet die de opslagtaak uitvoert. Dit geeft servlet de mogelijkheid om de wijzigingen te analyseren en de eigenschappen op de juiste knoop te bewaren.
 
@@ -572,4 +575,4 @@ servlet moet weten waar het catalogCode bezit wordt opgeslagen.
 
 Een standaard Save servlet implementatie is beschikbaar in /libs/wcm/bulkeditor/save/POST.jsp en wordt gebruikt in de component van de Lijst van het Product. Alle parameters van de aanvraag (met de indeling &lt;jcr path>/&lt;property name>) worden gebruikt en eigenschappen op knooppunten worden geschreven met de JCR API. Er wordt ook een knooppunt gemaakt als deze niet bestaan (raster ingevoegde rijen).
 
-De standaardcode zou niet moeten worden gebruikt aangezien het is wat de server native (POST op &lt;jcr weg>/&lt;property name>) uitvoert en daarom slechts een goed uitgangspunt voor de bouw van sparen servlet is die een model van de bezitsovererving zal beheren.
+De standaardcode zou niet moeten worden gebruikt aangezien het is wat de server native (een POST op &lt;jcr weg>/&lt;property name>) uitvoert en daarom slechts een goed uitgangspunt voor de bouw van sparen servlet is die een model van de bezitsovererving zal beheren.
