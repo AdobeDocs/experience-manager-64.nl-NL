@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Opstelling het project van Visual Studio en bouwt Windows app {#set-up-the-visual-studio-project-and-build-the-windows-app}
 
-AEM Forms bevat de volledige broncode van de app AEM Forms. De bron bevat alle componenten om een toepassing van de douanewerkruimte te bouwen. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip`is een deel van het `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket op de Distributie van de Software.
+AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een toepassing van de douanewerkruimte te bouwen. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip`is een deel van het `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket op de Distributie van de Software.
 
-Voer de volgende stappen uit om de bron van de AEM Forms-app op te halen:
+Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
-1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In het **[!UICONTROL Filters]** gedeelte:
    1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
@@ -52,22 +52,22 @@ Voor Windows-apparaten hebt u het volgende nodig:
 * Microsoft Visual Studio 2015
 * Microsoft Visual Studio Tools for Apache Cordova
 
-## Het Project van Visual Studio van vestiging voor AEM Forms app {#setting-up-visual-studio-project-for-aem-forms-app}
+## Visual Studio Project instellen voor AEM Forms-app {#setting-up-visual-studio-project-for-aem-forms-app}
 
 Voer de volgende stappen aan opstelling uit AEM Forms app project in Visual Studio.
 
 1. Kopieer het `adobe-lc-mobileworkspace-src-<version>.zip` archief naar de `%HOMEPATH%\Projects` map in Windows 8.1 of Windows 10 met Visual Studio 2015 geïnstalleerd en geconfigureerd.
 1. Extraheer het archief in de `%HOMEPATH%\Projects\MobileWorkspace` map.
 1. Navigate to the `%HOMEPATH%\Projects\MobileWorkspace\adobe-lc-mobileworkspace-src-[versionsrc]\windows` directory.
-1. Open het `CordovaApp.sln` dossier gebruikend Visual Studio 2015 en ga aan de bouw van app van AEM Forms te werk.
+1. Open het `CordovaApp.sln` bestand met Visual Studio 2015 en ga verder met het ontwikkelen van de AEM Forms-app.
 
-## AEM Forms-app samenstellen {#build-aem-forms-app}
+## AEM Forms-app ontwikkelen {#build-aem-forms-app}
 
 Voer de volgende stappen uit om AEM Forms-app te maken en te implementeren.
 
 >[!NOTE]
 >
->Gegevens die zijn opgeslagen in het Windows-bestandssysteem voor de toepassing AEM Forms worden niet gecodeerd. Men adviseert dat u een derdehulpmiddel zoals de Encryptie van de Aandrijving van Windows BitLocker gebruikt om schijfgegevens te coderen.
+>Gegevens die zijn opgeslagen in het Windows-bestandssysteem voor de AEM Forms-toepassing, worden niet gecodeerd. Men adviseert dat u een derdehulpmiddel zoals de Encryptie van de Aandrijving van Windows BitLocker gebruikt om schijfgegevens te coderen.
 
 1. In de StandaardToolbar van Visual Studio, uitgezochte **Versie** van drop-down voor bouwstijlwijze.
 
