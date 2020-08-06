@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 42d2195a-1327-45c0-a14c-1cf5ca196cfc
 translation-type: tm+mt
 source-git-commit: e99e29425578005ed9d215946d63f67e7229e8d6
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ In elke kolom wordt een waarde voor de lopende rapportageperiode weergegeven en 
 >
 >Om de updateperiode te veranderen, [vorm het de invoerinterval](/help/sites-administering/adobeanalytics-connect.md#configuring-the-import-interval).
 
-1. Open de **Sites** -console. bijvoorbeeld [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
+1. Open de **Sites** -console; bijvoorbeeld [http://localhost:4502/sites.html/content](http://localhost:4502/sites.html/content)
 1. Rechtsboven op de werkbalk (in de rechterbovenhoek) klikt of tikt u op het pictogram om **Lijstweergave** te selecteren (het weergegeven pictogram is afhankelijk van de [huidige weergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)).
 
 1. Klik of tik nogmaals in de rechterbovenhoek van de werkbalk op het pictogram en selecteer **Weergave-instellingen**. Het dialoogvenster Kolommen **** configureren wordt geopend. Breng de vereiste wijzigingen aan en bevestig deze met **Bijwerken**.
@@ -59,7 +62,7 @@ Leden van de analytische-beheerders gebruikersgroep kunnen de console van Plaats
 
 >[!NOTE]
 >
->Wanneer een boomstructuur met pagina&#39;s onderliggende items bevat die zijn gekoppeld aan verschillende Adobe Analytics-cloud-configuraties, kunt u de beschikbare gegevenskolommen voor de pagina&#39;s niet configureren.
+>Wanneer een boomstructuur met pagina&#39;s onderliggende elementen bevat die zijn gekoppeld aan verschillende Adobe Analytics-wolkenconfiguraties, kunt u de beschikbare gegevenskolommen voor de pagina&#39;s niet configureren.
 
 1. In de Lijstweergave gebruikt u de weergavekiezers (rechts van de werkbalk), selecteert u Instellingen **** weergeven en vervolgens Aangepaste analysegegevens **** toevoegen.
 
@@ -76,14 +79,14 @@ Leden van de analytische-beheerders gebruikersgroep kunnen de console van Plaats
 Open Inzicht [van de](/help/sites-authoring/content-insights.md) Inhoud van de console van Plaatsen om paginadoeltreffendheid verder te onderzoeken.
 
 1. Selecteer in de Sites-console de pagina waarvoor u Inhoudsgegevens wilt weergeven.
-1. Klik op het pictogram Analytics and Recommendations (Analytics en Aanbevelingen) op de werkbalk.
+1. Klik op het pictogram Analytics en Recommendations op de werkbalk.
 
    ![](do-not-localize/chlimage_1-16.png)
 
-## Analyses zichtbaar uit de Pagina-editor (Activiteitenkaart) {#analytics-visible-from-the-page-editor-activity-map}
+## Analyses zichtbaar in de Pagina-editor (Activity Map) {#analytics-visible-from-the-page-editor-activity-map}
 
 >[!CAUTION]
 >
->Vanwege beveiligingswijzigingen in de API voor Adobe Analytics is het niet langer mogelijk de versie van Activity Map te gebruiken die in AEM is opgenomen.
+>Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen.
 >
 >De [ActivityMap-plug-in van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt.
