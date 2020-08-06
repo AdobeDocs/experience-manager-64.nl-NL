@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 1%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 ## Overzicht {#overview}
 
-Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld in een formuliergegevensmodel zijn geconfigureerd. Om de dienst van een gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of een JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van de [regelredacteur](/help/forms/using/rule-editor.md).
+Met AEM Forms kunnen auteurs van formulieren de invulervaring van formulieren verder vereenvoudigen en verbeteren door services aan te roepen die vanuit een adaptief formulierveld zijn geconfigureerd in een formuliergegevensmodel. Om de dienst van een gegevensmodel aan te halen, kunt u of een regel in de visuele redacteur tot stand brengen of een JavaScript specificeren gebruikend `guidelib.dataIntegrationUtils.executeOperation` API in de coderedacteur van de [regelredacteur](/help/forms/using/rule-editor.md).
 
 In dit document wordt het schrijven van een JavaScript met de `guidelib.dataIntegrationUtils.executeOperation` API voor het oproepen van een service centraal gesteld.
 
