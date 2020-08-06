@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9a862756-58e8-47c0-a4b4-5d4aaac021e4
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Op het moment dat de actie wordt ondernomen om een nieuwe communautaire groep to
 
 In het auteursmilieu, om de console van groepsmalplaatjes te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen > Sjablonen groeperen]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Group Templates]**
 
 Deze console toont de malplaatjes waarvan een [communautaire plaats](sites-console.md) kan worden gecreeerd en laat nieuwe groepsmalplaatjes toe om worden gecreeerd.
 
@@ -41,7 +44,7 @@ Deze console toont de malplaatjes waarvan een [communautaire plaats](sites-conso
 
 ## Groepsjabloon maken {#create-goup-template}
 
-Selecteer **[!UICONTROL Maken om een nieuwe groepssjabloon te gaan maken]**
+Selecteer **[!UICONTROL Create]**
 
 Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
@@ -51,11 +54,14 @@ Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
 In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjabloon is ingeschakeld of uitgeschakeld, geconfigureerd:
 
-* **[!UICONTROL Nieuwe naam]** groepssjabloon De sjabloonnaam-id
+* **[!UICONTROL New Group Template Name]**
+De sjabloonnaam-id
 
-* **[!UICONTROL Beschrijving]** van de sjabloon
+* **[!UICONTROL Description]**
+De sjabloonbeschrijving
 
-* **[!UICONTROL Uitgeschakeld/Toegelaten]** een knevelschakelaar die of het malplaatje van verwijzingen voorziet controleert
+* **[!UICONTROL Disabled/Enabled]**
+Een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen
 
 ### Miniatuur {#thumbnail}
 
@@ -67,7 +73,7 @@ In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjablo
 
 >[!CAUTION]
 >
->Als u werkt met AEM 6.1 Communities FP4 of eerder, voegt u geen groepsfunctie toe aan een groepssjabloon.
+>Als het werken met AEM 6.1 Gemeenschappen FP4 of vroeger, voeg geen groepsfunctie aan een groepsmalplaatje toe.
 >
 >De functie Geneste groepen is beschikbaar vanaf [KP1](communities.md#latestfeaturepack)van de Gemeenschappen.
 >
@@ -83,7 +89,7 @@ U kunt doorgaan met slepen en neerzetten van alle andere communityfuncties die v
 
 ![dragfunctions](assets/dragfunctions.png)
 
-Nadat alle gewenste functies in het sjabloonbuildergebied zijn neergezet en geconfigureerd, selecteert u **[!UICONTROL Opslaan]** in de rechterbovenhoek.
+Nadat alle gewenste functies in het sjabloonbuildergebied zijn neergezet en geconfigureerd, selecteert u deze **[!UICONTROL Save]** in de rechterbovenhoek.
 
 ## Groepssjabloon bewerken {#edit-group-template}
 
