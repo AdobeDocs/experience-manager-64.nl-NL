@@ -1,8 +1,8 @@
 ---
 title: Zoeken naar formulieren en middelen
 seo-title: Zoeken naar formulieren en middelen
-description: U kunt formulieren en elementen in uw AEM-exemplaar doorzoeken met AEM-zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw middelen vinden.
-seo-description: U kunt formulieren en elementen in uw AEM-exemplaar doorzoeken met AEM-zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw middelen vinden.
+description: U kunt formulieren en elementen in uw AEM zoeken met AEM zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw middelen vinden.
+seo-description: U kunt formulieren en elementen in uw AEM zoeken met AEM zoekopdracht. Met basis- en geavanceerd zoeken kunt u snel uw middelen vinden.
 uuid: db6970aa-910a-4190-9790-9ffbbdc8adcc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: f7f19679-cfc2-4ac0-9a26-685fad09276f
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '713'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +27,13 @@ Klik op ![em6forms_search](assets/aem6forms_search.png)om het zoekvenster weer t
 
 ## Basiszoekopdracht {#basic-search}
 
-Een basiszoekopdracht is de standaardzoekopdracht, uitgevoerd zonder filters op te geven. AEM Forms zoekt volledige tekst naar eigenschappen van metagegevens.
+Een basiszoekopdracht is de standaardzoekopdracht, uitgevoerd zonder filters op te geven. AEM Forms voert een volledige tekstzoekopdracht uit naar eigenschappen van metagegevens.
 
 Als u een standaardzoekopdracht wilt uitvoeren, voert u de zoekquery in het tekstveld in en kiest u Enter. U kunt ook het jokerteken (&amp;ast;) invoeren, zodat dit overeenkomt met een willekeurig aantal tekens.
 
 Adobe Experience Manager zoekt naar de ingevoerde tekst in eigenschappen van metagegevens en retourneert de corresponderende resultaten. Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
 
-Neem van de volgende punten over het basisonderzoek nota:
+Neem nota van de volgende punten over het basisonderzoek:
 
 * De zoekopdracht wordt uitgevoerd met de metagegevenseigenschappen van het formulier en het element.
 * Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
@@ -45,7 +48,7 @@ Neem van de volgende punten over het basisonderzoek nota:
 
 Naast de query kunt u in de zoekcriteria enkele zoekparameters opgeven om de standaardzoekopdracht efficiënter en gerichter te maken.
 
-![Zoekveld en parameters of filters voor zoeken naar AEM-formulieren en middelen](assets/search_forms_assets.png)
+![Zoekveld en parameters of filters voor AEM zoeken in formulieren en middelen](assets/search_forms_assets.png)
 
 ### Middelpad {#asset-path}
 
@@ -55,7 +58,7 @@ Met het filter elementpad kunt u de zoekresultaten beperken tot de huidige map. 
 
 Selecteer een van de volgende opties om te zoeken in alle elementen die binnen een bepaalde tijdsperiode zijn gewijzigd.
 
-| **Option** | **Beschrijving** |
+| **Optie** | **Beschrijving** |
 |---|---|
 | Twee uur geleden | Zoeken in alle elementen die in de afgelopen twee uur zijn gewijzigd. |
 | Een week geleden | Zoeken in alle elementen die de afgelopen week zijn gewijzigd. |
@@ -79,7 +82,7 @@ U kunt een willekeurig aantal elementtypen selecteren. De zoekopdracht retournee
 <table> 
  <tbody>
   <tr>
-   <th>Option</th> 
+   <th>Optie</th> 
    <th>Beschrijving</th> 
   </tr>
   <tr>
