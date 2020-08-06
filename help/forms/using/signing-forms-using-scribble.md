@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '510'
+ht-degree: 0%
 
 ---
 
@@ -32,19 +35,20 @@ Beide componenten bieden een venster, zoals hieronder wordt weergegeven, om een 
    >
    >De component voor de stap Handtekening gebruikt de volledige breedte die beschikbaar is voor het formulier. Het wordt aanbevolen geen andere component op te nemen in de sectie die de component voor de stap Handtekening bevat.
 
-1. Tik in de browser Inhoud op **Formuliercontainer** en tik op het pictogram **Configureren** ![configureren](assets/configure.png) . De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeer naar **Adaptieve formuliercontainer** > **Elektronische handtekening** en schakel de optie Adobe-handtekening **** inschakelen uit. Tik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan.
+1. Tik in de browser Inhoud op **Formuliercontainer** en tik op het pictogram **Configureren** ![configureren](assets/configure.png) . De eigenschappenbrowser wordt geopend en de eigenschappen van de container Adaptief formulier worden weergegeven. Navigeer naar **Aangepaste formuliercontainer** > **Elektronische handtekening** en schakel de optie Adobe Sign **** inschakelen uit. Tik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan.
 
    >[!NOTE]
    >
-   >Wanneer u een component Handtekeningstap toevoegt aan een adaptief formulier, wordt de optie Adobe-ondertekening inschakelen automatisch geselecteerd.
+   >Wanneer u een component Handtekeningstap toevoegt aan een adaptief formulier, wordt de optie Adobe Sign inschakelen automatisch geselecteerd.
 
 1. Tik op het pictogram **Configureren** ![configureren](assets/configure.png) . De eigenschappenbrowser wordt geopend en de eigenschappen voor stap Handtekening worden weergegeven. Configureer de volgende eigenschappen:
 
    * **Elementnaam**: Geef de naam van de component op.
-   * **** Titel: Geef een unieke titel van de component op.
-   * **** Sjabloonbericht: Geef het bericht op dat moet worden weergegeven wanneer de PDF van de handtekening wordt geladen. Het duurt enige tijd om PDF-handtekening voor te bereiden en te laden.
-   * **** Ondertekeningsservice: Selecteer de optie **Krabbelhandtekening** .
+   * **Titel:** Geef een unieke titel van de component op.
+   * **Sjabloonbericht:** Geef het bericht op dat moet worden weergegeven wanneer de PDF van de handtekening wordt geladen. Het voorbereiden en laden van PDF-handtekeningen duurt enige tijd voor Adobe Sign-services.
+   * **Ondertekeningsservice:** Selecteer de optie **Krabbelhandtekening** .
    * **CSS-klasse**: Geef eventueel de CSS-klasse van de clientbibliotheek op. Het wordt aanbevolen [thema](/help/forms/using/themes.md) &#39;s en [inline stijlen](/help/forms/using/inline-style-adaptive-forms.md) te gebruiken in plaats van CSS-klasse.
+
    Tik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan. De handtekening is geconfigureerd.
 
    Wanneer u nu een formulier invult, wordt een PDF-versie van het aangepaste formulier weergegeven en worden opties voor de ondertekening van het PDF-document weergegeven. Zie Een adaptief formulier [ondertekenen met de Krabbelhandtekening](/help/forms/using/signing-forms-using-scribble.md#p-sign-an-adaptive-form-using-scribble-signature-p)voor meer informatie.
@@ -55,7 +59,7 @@ Beide componenten bieden een venster, zoals hieronder wordt weergegeven, om een 
 
    ![Handtekeningscherm voor EchoSign-pagina](assets/esignscribblesign.jpg)
 
-1. Klik op **[!UICONTROL Ondertekenen]**. Het dialoogvenster Scriptteken wordt weergegeven. Onderteken het formulier en klik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de handtekening op te slaan.
+1. Klik op **[!UICONTROL Sign]**. Het dialoogvenster Scriptteken wordt weergegeven. Onderteken het formulier en klik op het pictogram Done ![name_6_3_forms_save](assets/aem_6_3_forms_save.png) om de handtekening op te slaan.
 
    ![Dialoogvenster Krabbelen](assets/scribblewidget.jpg)
 
