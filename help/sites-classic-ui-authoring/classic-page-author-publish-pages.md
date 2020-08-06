@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1071'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +50,7 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >
 >* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
 >* Er wordt een bericht weergegeven (voor een korte periode) om u hiervan op de hoogte te stellen.
+
 >
 
 
@@ -75,9 +79,9 @@ U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt ge
 
    >[!NOTE]
    >
-   >Indien nodig, vraagt AEM dat u activa activeert of opnieuw activeert die met de pagina worden verbonden. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
+   >Indien nodig, AEM u verzoeken om elementen die aan de pagina zijn gekoppeld, te activeren of opnieuw te activeren. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
 
-1. Indien nodig, vraagt AEM dat u activa activeert of opnieuw activeert die met de pagina worden verbonden. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
+1. Indien nodig, AEM u verzoeken om elementen die aan de pagina zijn gekoppeld, te activeren of opnieuw te activeren. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
 
    ![chlimage_1-135](assets/chlimage_1-135.png)
 
