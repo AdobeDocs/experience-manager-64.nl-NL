@@ -1,8 +1,8 @@
 ---
 title: SAP Commerce Cloud
 seo-title: SAP Commerce Cloud
-description: Leer hoe u eCommerce kunt implementeren met SAP Commerce Cloud.
-seo-description: Leer hoe u eCommerce kunt implementeren met SAP Commerce Cloud.
+description: Leer hoe te om eCommerce met SAP Commerce Cloud op te stellen.
+seo-description: Leer hoe te om eCommerce met SAP Commerce Cloud op te stellen.
 uuid: a16ae42b-9c33-4da8-a130-52b72a779ec7
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 44dfa10f-497e-473f-95d4-8dccae7ebf8e
 pagetitle: Deploying eCommerce with SAP Commerce Cloud
 translation-type: tm+mt
 source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
+workflow-type: tm+mt
+source-wordcount: '731'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ source-git-commit: 94dbed719c2f3360db6ba5b414230fd3f79f7955
 
 De implementatie van de [noodzakelijke e-commercepakketten](#packages-needed-for-ecommerce-with-hybris) zal de volledige functionaliteit van het eCommerce-kader bieden, samen met een referentie-implementatie van de eCommerce-functionaliteit zoals voorzien van een hybris-implementatie (inclusief een demonstratiecatalogus)
 
-Dit is beschikbaar onder de Engelse (Amerikaanse) tak ( `/content/geometrixx-outdoors/en_US`) van de Geometrixx-site Buiten:
+Dit is beschikbaar onder de Engelse (Amerikaanse) tak ( `/content/geometrixx-outdoors/en_US`) van de site Geometrixx Outdoors:
 
 * [Productinformatie](#productinformationwithcolorvariants) (eventueel met kleurvarianten)
 
@@ -49,7 +52,8 @@ De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om H
 >
 >* Ondersteunt maximaal hybris 6.4 met OCC versie 2.
 >* U hebt Java 7 nodig om de [hybris 5-server uit te voeren.](https://www.hybris.com/en/architecture-technology)
->* De hybris-invoegtoepassing, de [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), wordt niet ondersteund door de AEM-extensie.
+>* De hybris add-on, de [Telco Accelerator](https://www.hybris.com/en/products/telecommunication), wordt niet ondersteund door de AEM extensie.
+
 >
 
 
@@ -59,15 +63,15 @@ De hybris-uitbreiding van het eCommerce Integration Framework is bijgewerkt om H
 Voor de installatie van eCommerce-functionaliteit hebt u het volgende nodig:
 
 * Uw hybrusserver
-* AEM e-Commerce-kader:
+* AEM eCommerce-kader:
 
-   * dit is onderdeel van een standaard AEM-installatie
+   * dit maakt deel uit van een standaard AEM installatie
 
 * AEM Geometrixx-all-pakket:
 
    * `cq-geometrixx-all-pkg`
 
-* AEM-hybris-inhoudspakketten:
+* AEM hybris-inhoudspakketten:
 
    * `cq-hybris-content-6.3.2`
    * hybrisspecifieke API-implementatie
@@ -76,10 +80,10 @@ Voor de installatie van eCommerce-functionaliteit hebt u het volgende nodig:
 
 ### Installatie van eCommerce met hybris {#installation-of-ecommerce-with-hybris}
 
-Voor het installeren van een volledige configuratie (met de demonstratiecatalogus, Geometrixx Buiten) zijn de basisstappen:
+Voor het installeren van een volledige configuratie (met de demonstratiecatalogus, Geometrixx Outdoors) zijn de basisstappen:
 
-1. [Installeer AEM](/help/sites-deploying/deploy.md).
-1. Het Geometrixx-pakket installeren
+1. [AEM](/help/sites-deploying/deploy.md)installeren.
+1. Het Geometrixx-all-pakket installeren
 
    1. ` [cq-geometrixx-all-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq60/product/cq-geometrixx-all-pkg)`
 
@@ -91,7 +95,7 @@ Voor het installeren van een volledige configuratie (met de demonstratiecatalogu
 1. [Download en maak uw hybris Server](#download-and-build-your-hybris-server).
 1. Construeer uw catalogus in uw eCommerce-engine:
 
-   1. [Stel de Geometrixx buitenwinkel](#setup-the-geometrixx-outdoors-store)in.
+   1. [Stel de Geometrixx Outdoorwinkel](#setup-the-geometrixx-outdoors-store)in.
 
 1. [Maak](/help/sites-authoring/qg-page-authoring.md) aanvullende pagina&#39;s die u in AEM nodig hebt.
 
@@ -185,7 +189,7 @@ De stappen in deze procedure zullen de hybrisserver downloaden en bouwen. Het za
    >
    >Afhankelijk van uw systeem kan het enkele minuten duren voordat de bewerking is voltooid.
 
-### De Geometrixx buitenshuis opslaan {#setup-the-geometrixx-outdoors-store}
+### De Geometrixx Outdoors Store instellen {#setup-the-geometrixx-outdoors-store}
 
 Deze procedure zal de demonstratieopslag - Geometrixx Online uploaden en vormen.
 
