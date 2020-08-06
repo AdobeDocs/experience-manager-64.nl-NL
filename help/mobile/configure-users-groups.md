@@ -11,6 +11,9 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
@@ -19,32 +22,32 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 In dit hoofdstuk worden de gebruikersrollen beschreven en wordt beschreven hoe u uw gebruikers en groepen kunt configureren om het ontwerpen en beheren van uw mobiele apps te ondersteunen.
 
 ## AEM Mobile Application Users en Group Administration {#aem-mobile-application-users-and-group-administration}
 
-Voor het organiseren en beheren van het machtigingsmodel voor AEM Apps zijn de volgende twee groepen beschikbaar:
+Voor het organiseren en beheren van het machtigingsmodel voor AEM apps zijn de volgende twee groepen beschikbaar:
 
 * app-admins voor App Admins
 * app-authors voor App Authors
 
 ### AEM Mobile Application Content Authors (groep voor het schrijven van apps) {#aem-mobile-application-content-authors-app-author-group}
 
-Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het ontwerpen van inhoud voor mobiele toepassingen van AEM, waaronder pagina&#39;s, tekst, afbeeldingen en video&#39;s.
+Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het ontwerpen AEM inhoud van mobiele toepassingen, zoals pagina&#39;s, tekst, afbeeldingen en video&#39;s.
 
 #### Groepsconfiguratie - toepassingsauteurs {#group-configuration-app-authors}
 
 1. Maak een nieuwe gebruikersgroep met de naam &#39;app-authors&#39;:
 
-   Ga naar de beheerconsole voor gebruikers: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
+   Navigeer naar de Admin Console Gebruiker: [http://localhost:4502/libs/granite/security/content/groupadmin.html](http://localhost:4502/libs/granite/security/content/groupadmin.html)
 
    Selecteer in de gebruikersgroepconsole de knop &#39;+&#39; om een groep te maken.
 
    Stel de id van deze groep in op &#39;toepassingsauteurs&#39; om aan te geven dat het een specifiek type gebruikersgroep voor auteurs is die specifiek is voor het ontwerpen van mobiele toepassingen in AEM.
 
-1. Lid toevoegen aan groep:Auteurs
+1. Lid toevoegen aan groep: Auteurs
 
    ![chlimage_1-18](assets/chlimage_1-18.png)
 
@@ -61,18 +64,18 @@ Leden van de groep die de app heeft geschreven, zijn verantwoordelijk voor het o
    * (Lezen) op /etc/cloudservices
    >[!NOTE]
    >
-   >App Authors extends the default content-authors (Authors) group from AEM and inheress the ability to create content under /content/phonegap
+   >App Authors extends the default content-authors (Authors) group from AEM such through the ability to create content under /content/phonegap
 
 ### AEM Mobile Application Administrators Group (app-admins-groep) {#aem-mobile-application-administrators-group-app-admins-group}
 
 Leden van de groep app-admins kunnen toepassingsinhoud met de zelfde toestemmingen ontwerpen inbegrepen bij app-auteurs **EN** zijn ook verantwoordelijk voor:
 
-* PhoneGap Build- en Adobe Mobile Services-cloudservices configureren in AEM
+* Cloudservices voor PhoneGap Build en Adobe Mobile Services configureren in AEM
 * OTA-updates voor inhoudssynchronisatie van toepassingen opslaan, publiceren en wissen
 
 >[!NOTE]
 >
->De toestemmingen bepalen beschikbaarheid van sommige gebruikersacties in het Centrum van het Bevel van AEM App.
+>De toestemmingen bepalen beschikbaarheid van sommige gebruikersacties in het Centrum van het Bevel van de AEM App.
 >
 >Sommige opties zijn niet beschikbaar voor toepassingsauteurs die beschikbaar zijn voor app-beheerders.
 
@@ -83,6 +86,7 @@ Leden van de groep app-admins kunnen toepassingsinhoud met de zelfde toestemming
 
    * content-authors
    * workflowgebruikers
+
    ![chlimage_1-20](assets/chlimage_1-20.png)
 
 1. Navigeer naar de [machtigingenconsole](http://localhost:4502/useradmin) en voeg machtigingen toe om cloudservices te beheren
@@ -94,6 +98,7 @@ Leden van de groep app-admins kunnen toepassingsinhoud met de zelfde toestemming
 
    * (Lezen, Wijzigen, Maken, Verwijderen, Repliceren) op /etc/packages/mobileapp
    * (Lezen) op /var/contentsync
+
    >[!NOTE]
    >
    >Pakketreplicatie wordt gebruikt om app-updates te publiceren vanaf de ontwerpinstantie naar de publicatieinstantie
