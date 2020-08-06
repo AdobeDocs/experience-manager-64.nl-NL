@@ -1,8 +1,8 @@
 ---
 title: Overzicht van de Forms-workflow
 seo-title: Overzicht van de Forms-workflow
-description: Met de formulierworkflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
-seo-description: Met de formulierworkflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
+description: Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
+seo-description: Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
 uuid: b28ada7c-de75-416a-b2c8-f6494be5330c
 contentOwner: admin
 content-type: reference
@@ -11,15 +11,18 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7d2a9de8-13d1-4981-9ba2-9654127556b8
 translation-type: tm+mt
 source-git-commit: 36d12ff07b1cdd1e6c6fee052a335d3f49eee3bb
+workflow-type: tm+mt
+source-wordcount: '283'
+ht-degree: 1%
 
 ---
 
 
 # Overzicht van de Forms-workflow {#overview-of-forms-workflow}
 
-Met de formulierworkflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
+Met Forms-workflow kunnen gebruikers processen ontwerpen, beheren en optimaliseren die op mensen zijn gericht. Met behulp van de formulierworkflow kunnen gebruikers ook geautomatiseerde toepassingen voor bedrijfsprocessen beheren die systemen en personen verbinden.
 
-Op elke werkstroompagina van Forms in de beheerconsole kunt u een andere set taken uitvoeren, zoals in deze tabel wordt beschreven.
+Op elke Forms-workflowpagina in de beheerconsole kunt u een andere set taken uitvoeren, zoals in deze tabel wordt beschreven.
 
 <table>
  <thead>
