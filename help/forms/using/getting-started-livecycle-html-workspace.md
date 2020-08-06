@@ -1,8 +1,8 @@
 ---
-title: Aan de slag met de werkruimte AEM Forms
-seo-title: Aan de slag met de werkruimte AEM Forms
-description: Aan de slag met het gebruik van de werkruimte van LiveCycle AEM Forms om uw bedrijfsautomatiseringsprocessen te beheren.
-seo-description: Aan de slag met het gebruik van de werkruimte van LiveCycle AEM Forms om uw bedrijfsautomatiseringsprocessen te beheren.
+title: Aan de slag met de AEM Forms-werkruimte
+seo-title: Aan de slag met de AEM Forms-werkruimte
+description: Hoe te beginnen met het gebruiken van de werkruimte van LiveCycle AEM Forms om uw bedrijfsautomatiseringsprocessen te beheren.
+seo-description: Hoe te beginnen met het gebruiken van de werkruimte van LiveCycle AEM Forms om uw bedrijfsautomatiseringsprocessen te beheren.
 uuid: 35ca1a51-92c3-40d8-8de3-604be8704752
 contentOwner: robhagat
 content-type: reference
@@ -18,19 +18,19 @@ ht-degree: 0%
 ---
 
 
-# Aan de slag met de werkruimte AEM Forms {#getting-started-with-aem-forms-workspace}
+# Aan de slag met de AEM Forms-werkruimte {#getting-started-with-aem-forms-workspace}
 
-U kunt de werkruimte AEM Forms gebruiken om de volgende taken uit te voeren:
+U kunt de werkruimte van AEM Forms gebruiken om de volgende taken uit te voeren:
 
 * Een bedrijfsproces starten
 * De mening en handelt op taken die aan u of aan andere te doen lijsten worden toegewezen die u toegang hebt tot
 * De taken van het spoor die deel van de processen uitmaken u begon of aan participeerde
 
-## Navigeren door de werkruimte AEM Forms {#navigating-html-workspace}
+## Navigeren in de AEM Forms-werkruimte {#navigating-html-workspace}
 
-Afhankelijk van het proces en de taak waaraan u werkt, worden verschillende items in de gebruikersinterface van de werkruimte AEM Forms weergegeven. U kunt de tabbladen Overzicht, Formulieren, Details, Historie, Bijlagen of Notities, of alle knoppen die in deze Help worden beschreven, al dan niet altijd zien.
+Afhankelijk van het proces en de taak waaraan u werkt, worden verschillende items in de gebruikersinterface van de AEM Forms-werkruimte weergegeven. U kunt de tabbladen Overzicht, Forms, Details, Historie, Bijlagen of Notities, of alle knoppen die in deze Help worden beschreven, al dan niet altijd zien.
 
-U kunt op een van de volgende manieren navigeren in de gebruikersinterface van de hoofdwerkruimte AEM Forms:
+U kunt op een van de volgende manieren navigeren in de gebruikersinterface van de AEM Forms-hoofdwerkruimte:
 
 * Klik op de items in de bovenste navigatiebalk voor de opties Start Process, To-do (Proces starten), Voorkeuren, Tracking (Bijhouden), Help en Logout (Afmelden).
 * Klik op het tabblad Proces starten, Op-maken of Tekstspatiëring voor toegang tot de drie hoofdwerkgebieden.
@@ -40,45 +40,45 @@ U kunt op een van de volgende manieren navigeren in de gebruikersinterface van d
 * Selecteer op het tabblad Historie een taak om de tabbladen Bijlagen en Toewijzingen voor die taak weer te geven.
 * Gebruik de tabtoets, de pijltoetsen en de spatiebalk om zonder muis door de werkruimte van AEM Forms te navigeren.
 
-## De werkruimte AEM Forms gebruiken met schermlezers {#using-html-workspace-with-screen-readers}
+## De AEM Forms-werkruimte gebruiken met schermlezers {#using-html-workspace-with-screen-readers}
 
-De werkruimte AEM Forms is een webgebaseerde HTML-toepassing en is compatibel met schermlezers. U kunt met het toetsenbord navigeren door de werkruimteinterface van AEM Forms.
+De AEM Forms-werkruimte is een webgebaseerde HTML-toepassing en is compatibel met schermlezers. U kunt met het toetsenbord navigeren door de AEM Forms-werkruimteinterface.
 
-Houd rekening met het volgende als u de werkruimte AEM Forms met een schermlezer wilt gebruiken:
+Houd rekening met het volgende als u de AEM Forms-werkruimte met een schermlezer wilt gebruiken:
 
-* De werkruimte AEM Forms is een standaard HTML-toepassing die voldoet aan een standaardschermlezerprogramma. U hebt geen specifiek script nodig om een schermlezergereedschap uit te voeren.
-* Alle navigatie in de werkruimte AEM Forms vindt plaats door middel van ankerlabels, die gemakkelijk toegankelijk zijn via tabs.
-* Het laden van formulieren kan enkele seconden duren. De schermlezer geeft geen hoorbare melding dat het formulier wordt geladen en dat u moet wachten.
+* De AEM Forms-werkruimte is een standaard HTML-toepassing die voldoet aan een standaardprogramma voor schermlezers. U hebt geen specifiek script nodig om een schermlezergereedschap uit te voeren.
+* Alle navigatie in de AEM Forms-werkruimte verloopt via ankerlabels, die gemakkelijk toegankelijk zijn via tabs.
+* Forms kan een paar seconden duren om te laden. De schermlezer geeft geen hoorbare melding dat het formulier wordt geladen en dat u moet wachten.
 
-## Navigeren door de werkruimte AEM Forms met een toetsenbord {#navigating-html-workspace-using-a-keyboard}
+## Navigeren door de AEM Forms-werkruimte met een toetsenbord {#navigating-html-workspace-using-a-keyboard}
 
-Wanneer u in de werkruimte AEM Forms navigeert met een toetsenbord, voldoet de navigatie aan de toegankelijkheidsconventies van HTML. In bepaalde situaties volgt de tabvolgorde niet de gebruikelijke conventionele volgorde. Met de volgende tips kunt u door de interface navigeren:
+Wanneer u in de AEM Forms-werkruimte navigeert met een toetsenbord, voldoet de navigatie aan de toegankelijkheidsconventies van HTML. In bepaalde situaties volgt de tabvolgorde niet de gebruikelijke conventionele volgorde. Met de volgende tips kunt u door de interface navigeren:
 
 * Als er problemen optreden met de Tab-toets boven aan de browser, drukt u op Ctrl+Tab om met Tab naar de inhoud van het browservenster te gaan.
-* De Help van de werkruimte AEM Forms wordt in een apart browservenster geopend. Nadat u de Help hebt weergegeven, keert de focus terug naar het browservenster dat de werkruimte AEM Forms bevat. Het menu Help blijft gefocust wanneer de focus terugkeert.
+* De Help van de AEM Forms-werkruimte wordt in een apart browservenster geopend. Nadat u de Help hebt weergegeven, keert de focus terug naar het browservenster dat de AEM Forms-werkruimte bevat. Het menu Help blijft gefocust wanneer de focus terugkeert.
 * Wanneer u een formulier opent om een proces te starten of een taak te voltooien, blijft de focus bij het bestaande element en verandert de focus niet in het formulier. Gebruik tab om de focus naar het formulier te verplaatsen en er doorheen te bladeren. De tabvolgorde door het formulier is afhankelijk van het type en het ontwerp van het formulier.
 
    Wanneer u met de Tab-toets tot het einde van het formulier of het formulier verzendt, springt de cursorfocus voor PDF forms naar de adresbalk van de browser. U moet de menu&#39;s opnieuw doorlopen (maar niet het hele formulier) om naar de knoppen voor formulierhandelingen te gaan, zoals Opslaan als concept en Voltooien. Als het formulier nog steeds geopend is, kunt u ook met de Tab-toets voorbij de knoppen heen en weer in het formulier gaan.
 
 ## Voorkeuren beheren {#managing-preferences}
 
-U kunt de verschillende voorkeuren voor de werkruimte AEM Forms instellen in de volgende categorieën:
+U kunt de verschillende voorkeuren voor de AEM Forms-werkruimte in de volgende categorieën instellen:
 
 **Buiten kantoor:** Stel voorkeuren in om te bepalen hoe taken aan andere personen worden toegewezen terwijl u zich buiten het kantoor bevindt. Zie [Voorkeuren](/help/forms/using/todo-lists.md#setting-out-of-office-preferences)instellen voor gebruik buiten het kantoor.
 
 **Wachtrijen:** Stel voorkeuren in voor het delen van uw lijst Aan/Uit met andere gebruikers of voor het aanvragen van toegang tot de lijst van een andere gebruiker. Zie [Werken met taken uit groep en gedeelde rijen](/help/forms/using/todo-lists.md#working-with-tasks-from-group-and-shared-queues).
 
-**UI-instellingen:** Stel voorkeuren in voor de interactie met de werkruimte AEM Forms. Zie Voorkeuren voor de [gebruikersinterface instellen](#set-user-interface-preferences).
+**UI-instellingen:** Stel voorkeuren in voor de interactie met de AEM Forms-werkruimte. Zie Voorkeuren voor de [gebruikersinterface instellen](#set-user-interface-preferences).
 
 ### Gebruikersinterfacevoorkeuren instellen {#set-user-interface-preferences}
 
 Stel de voorkeuren voor de gebruikersinterface in op het tabblad Voorkeuren > UI-instellingen. De volgende voorkeuren zijn beschikbaar.
 
-* **Startlocatie:** Hiermee geeft u de pagina op die wordt weergegeven wanneer u zich aanmeldt bij de werkruimte AEM Forms. De vier beschikbare opties zijn Start Process, To Do, Tracking en Favorites.
+* **Startlocatie:** Hiermee geeft u de pagina op die wordt weergegeven wanneer u zich aanmeldt bij de AEM Forms-werkruimte. De vier beschikbare opties zijn Start Process, To Do, Tracking en Favorites.
 * **Afmeldingsvraag:** Hiermee geeft u aan of u wordt gevraagd te bevestigen dat u zich wilt afmelden nadat u op Afmelden hebt geklikt.
-* **Datumnotatie:** Hiermee geeft u de notatie op voor de datumweergave die wordt gebruikt in de werkruimte AEM Forms.
-* **Tijdnotatie**: Hiermee geeft u de tijdweergaveformaat op die wordt gebruikt in de werkruimte AEM Forms.
+* **Datumnotatie:** Hiermee geeft u de indeling op voor de datumweergave die wordt gebruikt in de AEM Forms-werkruimte.
+* **Tijdnotatie**: Hiermee geeft u de weergaveformaat voor de tijd op die in de AEM Forms-werkruimte wordt gebruikt.
 * **Taakgebeurtenissen via e-mail op de hoogte stellen:** Hiermee geeft u aan of u e-mailmeldingen voor taakgebeurtenissen ontvangt, inclusief taaktoewijzingen, herinneringen en deadlines voor taken in de lijst Aan-taak en in de lijst Van-taak waarvan u deel uitmaakt.
-* **Formulieren bijvoegen in e-mail:** Hiermee geeft u aan of een kopie van het formulier bij e-mailmeldingsberichten wordt gevoegd. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
+* **Forms bijvoegen in e-mail:** Hiermee geeft u aan of een kopie van het formulier bij e-mailmeldingsberichten wordt gevoegd. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
 * **Concepten periodiek opslaan:** Hiermee geeft u aan of uw formulierconcepten regelmatig automatisch worden opgeslagen. Als u uw concepten periodiek wilt opslaan, schakelt u deze optie in en stelt u de duur voor automatisch opslaan in op 1 tot 30 minuten. Wanneer automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen na het opgegeven aantal minuten. Het concept wordt alleen automatisch opgeslagen wanneer het concept is gewijzigd sinds de laatste keer dat het is opgeslagen of automatisch is opgeslagen. Wanneer het concept wordt opgeslagen, verschijnt er een waarschuwingsbericht op het scherm.
 
