@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 110c86ea-9bd8-4018-bfcc-ca33e6b3f3ba
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1349'
+ht-degree: 0%
 
 ---
 
@@ -29,8 +32,8 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 ## Bereid Interactieve Communicatie gebruikend de Agent UI voor {#prepare-interactive-communication-using-the-agent-ui}
 
-1. Selecteer **[!UICONTROL Formulieren]** > **[!UICONTROL Formulieren en documenten]**.
-1. Selecteer de aangewezen Interactieve Communicatie en tik **[!UICONTROL Open Agent UI]**.
+1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
+1. Selecteer de gewenste interactieve communicatie en tik op **[!UICONTROL Open Agent UI]**.
 
    >[!NOTE]
    >
@@ -54,7 +57,7 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
 Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvariabelen in de interactieve communicatie.
 
-1. Selecteer **[!UICONTROL Inhoud]**. Het tabblad Inhoud van de interactieve communicatie wordt weergegeven.
+1. Selecteer **[!UICONTROL Content]**. Het tabblad Inhoud van de interactieve communicatie wordt weergegeven.
 
    ![agentuicontenttab](assets/agentuicontenttab.png)
 
@@ -74,6 +77,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
       * [Tekstgedeelten markeren](#highlightemphasize)
    * [Speciale tekens](#specialcharacters)
    * [Sneltoetsen](/help/forms/using/keyboard-shortcuts.md)
+
    Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [Acties en info beschikbaar in het gebruikersinterface](#actionsagentui)van de Agent.
 
 1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagina-einde vóór](assets/pagebreakbeforeafter.png)).
@@ -86,7 +90,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 ### Bijlagen beheren {#manage-attachments}
 
-1. Selecteer **[!UICONTROL Bijlage]**. De agent UI toont de beschikbare gehechtheid zoals opstelling terwijl het creëren van de Interactieve Communicatie.
+1. Selecteer **[!UICONTROL Attachment]**. De agent UI toont de beschikbare gehechtheid zoals opstelling terwijl het creëren van de Interactieve Communicatie.
 
    U kunt verkiezen om een gehechtheid samen met de Interactieve Mededeling niet voor te leggen door het meningspictogram te tikken en u kunt het kruis in de gehechtheid tikken om het (als de agent wordt toegestaan om de gehechtheid te schrappen of te verbergen) van de Interactieve Mededeling te schrappen. Voor de bijlagen die verplicht zijn opgegeven tijdens het maken van de interactieve communicatie, zijn de pictogrammen Weergeven en Verwijderen uitgeschakeld.
 
@@ -101,7 +105,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 1. Als de volgorde van de bijlagen niet is vergrendeld tijdens het maken van de interactieve communicatie, kunt u de bijlagen opnieuw ordenen door een bijlage te selecteren en op de pijl-omlaag en -omhoog te tikken.
 1. Met Webvoorvertoning en Afdrukvoorbeeld kunt u zien of de twee uitvoerbestanden aan uw eisen voldoen.
 
-   Als u de voorvertoningen bevredigend vindt, tikt u op **[!UICONTROL Verzenden]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
+   Als u de voorvertoningen bevredigend vindt, tikt u **[!UICONTROL Submit]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
 
 ## Tekst opmaken {#formattingtext}
 
