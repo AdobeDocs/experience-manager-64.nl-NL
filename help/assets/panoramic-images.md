@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '521'
+ht-degree: 2%
 
 ---
 
@@ -29,13 +32,13 @@ Als u een geüpload element wilt kwalificeren als een bolvormige panorama-afbeel
 
 * Een hoogte-breedteverhouding van 2.
 
-   U kunt de standaardverhouding van 2 in **[!UICONTROL CRXDE Lite]** bij het volgende met voeten treden:
+   U kunt de standaardinstelling voor de hoogte-breedteverhouding van 2 inch **[!UICONTROL CRXDE Lite]** bij het volgende overschrijven:
 
    `/conf/global/settings/cloudconfigs/dmscene7/jcr:content`
 
 * Gelabeld met de trefwoorden `equirectangular`, of `spherical`en `panorama`, of `spherical` en `panoramic`. Zie [Tags](/help/sites-authoring/tags.md)gebruiken.
 
-Zowel zijn de aspectverhouding als de sleutelwoordcriteria op panoramische activa voor de pagina van elementdetails en de **[!UICONTROL Panoramische Media]** component van toepassing.
+Both the aspect ratio and keyword criteria apply to panoramic assets for the asset details page and the **[!UICONTROL Panoramic Media]** component.
 
 Zie [Elementen](managing-assets-touch-ui.md#uploading-assets)uploaden voor gebruik met de Panorama-viewer.
 
@@ -46,10 +49,10 @@ De Panoramische beeldviewer werkt alleen correct binnen AEM als u de voorinstell
 1. [Meld u voor elk bedrijfsaccount aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) .
 
 1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
-1. Op de de Publish **[!UICONTROL pagina van de Server van het]** Beeld, van het **[!UICONTROL Publish drop-down menu dichtbij de bovenkant, uitgezochte]** Beeld Serving ****.
+1. Selecteer op de **[!UICONTROL Image Server Publish]** pagina in het **[!UICONTROL Publish Context]** keuzemenu boven de optie **[!UICONTROL Image Serving]**.
 
-1. Voor de zelfde pagina van de Publicatie **[!UICONTROL van de Server van het]** Beeld, bepaal de plaats van de rubriek **[!UICONTROL verzoekAttributen]**.
-1. Zoek onder de kop **[!UICONTROL Kenmerken]** aanvragen de optie Limiet voor afbeeldingsgrootte **[!UICONTROL beantwoorden]**. Vergroot vervolgens in de bijbehorende velden **[!UICONTROL Breedte]** en **[!UICONTROL Hoogte]** de maximaal toegestane afbeeldingsgrootte voor panoramische afbeeldingen.
+1. Zoek op dezelfde **[!UICONTROL Image Server Publish]** pagina de kop **[!UICONTROL Request Attributes]**.
+1. Onder de **[!UICONTROL Request Attributes]** kop zoekt u **[!UICONTROL Reply Image Size Limit]**. Vergroot vervolgens in de bijbehorende **[!UICONTROL Width]** en **[!UICONTROL Height]** velden de maximaal toegestane afbeeldingsgrootte voor panoramische afbeeldingen.
 
    Dynamic Media Classic heeft een limiet van 25.000.000 pixels. De maximaal toegestane grootte voor afbeeldingen met een hoogte-breedteverhouding van 2:1 is 7000 x 3500. Voor standaarddesktopschermen is 4096 x 2048 pixels echter voldoende.
 
@@ -59,23 +62,24 @@ De Panoramische beeldviewer werkt alleen correct binnen AEM als u de voorinstell
 
 1. Ga als volgt te werk onder **Aanvraagkenmerken]** :
 
-   * Stel de modus **** Verzoek om oprukking in op **[!UICONTROL Uitgeschakeld]**.
-   * Stel de **[!UICONTROL modus]** Verzoek vergrendelen in op **[!UICONTROL Uitgeschakeld]**.
-   Deze instellingen zijn nodig voor het gebruik van de **[!UICONTROL component Panoramische media]** in AEM.
+   * Instellen **[!UICONTROL Request Obfuscation Mode]** op **[!UICONTROL Disabled]**.
+   * Instellen **[!UICONTROL Request Locking Mode]** op **[!UICONTROL Disabled]**.
 
-1. Tik onder aan de pagina **[!UICONTROL Afbeeldingsserver publiceren]** links op **[!UICONTROL Opslaan]**.
+   Deze instellingen zijn nodig voor het gebruik van de **[!UICONTROL Panoramic Media]** component in AEM.
 
-1. Tik in de rechterbenedenhoek op **[!UICONTROL Sluiten]**.
+1. Tik onder aan de **[!UICONTROL Image Server Publish]** pagina links op de pagina **[!UICONTROL Save]**.
+
+1. Tik in de rechterbenedenhoek op **[!UICONTROL Close]**.
 
 ### Problemen met de component Panoramische media oplossen {#troubleshooting-the-panoramic-media-wcm-component}
 
-Als u een beeld in de component **[!UICONTROL Panoramische Media]** in uw WCM liet vallen en componentenplaceholder deed ineenstorten, kunt u het volgende willen problemen oplossen:
+Als u een beeld in de **[!UICONTROL Panoramic Media]** component in uw WCM en componentenplaceholder deed ineenstorten, kunt u het volgende willen problemen oplossen:
 
-* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze zijn veroorzaakt door het te grote formaat van de gevraagde afbeelding. Herzie de montages van de Grens *van de Grootte van het Beeld van het Antwoord in het* Vormen van Dynamische Klassieke Media (Scene7) [](#configuring-dynamic-media-classic-scene).
+* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze zijn veroorzaakt door het te grote formaat van de gevraagde afbeelding. Controleer de instellingen voor Limiet *afbeeldingsgrootte voor* beantwoorden in Dynamic Media Classic (Scene7) [](#configuring-dynamic-media-classic-scene)configureren.
 
-* Voor een *Ongeldige vergrendeling* op het element of een *parseringsfout* die op de pagina wordt weergegeven, schakelt u de modus **** Obfusatie aanvragen en de modus **** Aanvraag vergrendelen in om ervoor te zorgen dat deze zijn uitgeschakeld.
-* Voor een bekroonde canvasfout, opstelling een Pad van het Dossier van de Definitie van de Regel en maakt CTN **** voor de vorige verzoeken om het beeldmiddel ongeldig.
-* Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de instelling **[!UICONTROL JPEG-coderingskenmerken > Kwaliteit]** niet leeg is. Een standaardinstelling voor het veld **[!UICONTROL Kwaliteit]** is `95`. U kunt het plaatsen op de de Publish **[!UICONTROL pagina van de Server van het]** Beeld vinden. Zie Dynamische media Klassiek [configureren voor toegang tot de pagina](#configuring-dynamic-media-classic-scene).
+* Voor een *Ongeldige vergrendeling* op het element of de *Parseerfout* die op de pagina wordt weergegeven, controleert **[!UICONTROL Request Obfuscation Mode]** en **[!UICONTROL Request Locking Mode]** controleert u of deze zijn uitgeschakeld.
+* Voor een bekroonde canvasfout stelt u een **[!UICONTROL Rule Set Definition File Path and Invalidate CTN]** voor de vorige aanvragen voor het afbeeldingselement in.
+* Als de afbeeldingskwaliteit na een afbeeldingsaanvraag met een formaat groter dan de ondersteunde limiet erg laag wordt, controleert u of de **[!UICONTROL JPEG Encoding Attributes > Quality]** instelling niet leeg is. Een standaardinstelling voor het **[!UICONTROL Quality]** veld is `95`. U vindt de instelling op de **[!UICONTROL Image Server Publish]** pagina. Zie Dynamische media Klassiek [configureren voor toegang tot de pagina](#configuring-dynamic-media-classic-scene).
 
 ## Voorvertoning panorama-afbeeldingen weergeven {#previewing-panoramic-images}
 
