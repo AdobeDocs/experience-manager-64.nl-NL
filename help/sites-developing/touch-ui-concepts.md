@@ -1,8 +1,8 @@
 ---
-title: Concepten van de interface voor AEM-aanraakfuncties
-seo-title: Concepten van de interface voor AEM-aanraakfuncties
-description: Met AEM 5.6 introduceerde Adobe een nieuwe, voor aanraking geoptimaliseerde interface met responsief ontwerp voor de auteursomgeving
-seo-description: Met AEM 5.6 introduceerde Adobe een nieuwe, voor aanraking geoptimaliseerde interface met responsief ontwerp voor de auteursomgeving
+title: Concepten van de interface AEM Touch-Enabled
+seo-title: Concepten van de interface AEM Touch-Enabled
+description: Met AEM 5.6-Adobe werd een nieuwe, aanraakgeoptimaliseerde interface met responsief ontwerp voor de auteursomgeving geïntroduceerd
+seo-description: Met AEM 5.6-Adobe werd een nieuwe, aanraakgeoptimaliseerde interface met responsief ontwerp voor de auteursomgeving geïntroduceerd
 uuid: 8ec6514e-f623-40be-a7bf-2e85bf4385ca
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 8c7e5667-14c5-40f3-968a-c574b04671e3
 translation-type: tm+mt
 source-git-commit: da7f86f36de0688ebe234d813959000068ef67ff
+workflow-type: tm+mt
+source-wordcount: '2218'
+ht-degree: 0%
 
 ---
 
 
-# Concepten van de interface voor AEM-aanraakfuncties{#concepts-of-the-aem-touch-enabled-ui}
+# Concepten van de interface AEM Touch-Enabled{#concepts-of-the-aem-touch-enabled-ui}
 
-Met AEM 5.6 heeft Adobe een nieuwe interface met aanraakbediening geïntroduceerd met een [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor de auteursomgeving. Dit verschilt aanzienlijk van de oorspronkelijke klassieke interface omdat deze is ontworpen voor zowel touch- als desktopapparaten.
+Met AEM 5.6 introduceerde Adobe een nieuwe aanraakinterface met [responsief ontwerp](/help/sites-authoring/responsive-layout.md) voor de auteursomgeving. Dit verschilt aanzienlijk van de oorspronkelijke klassieke interface omdat deze is ontworpen voor zowel touch- als desktopapparaten.
 
 Deze interface met aanraakbediening is nu de standaardinterface voor AEM en vervangt de klassieke interface.
 
@@ -31,7 +34,7 @@ De interface met aanraakbediening bevat:
 
    * Het logo tonen
    * Verstrekt een verbinding aan de Globale Navigatie
-   * Verzekert verbinding met andere generische acties; zoals Zoeken, Help, Marketing Cloud Solutions, Meldingen en Gebruikersinstellingen.
+   * Verzekert verbinding met andere generische acties; zoals Zoeken, Help, oplossingen voor Marketingen Cloud, meldingen en gebruikersinstellingen.
 
 * De linkerspoorstaaf (indien nodig getoond en verborgen), die kan aantonen:
 
@@ -58,11 +61,11 @@ De interface met aanraakbediening bevat:
 
 >[!NOTE]
 >
->Bijna alle AEM-functionaliteit is verzonden naar de interface met aanraakbediening. In sommige beperkte gevallen zal de functionaliteit echter terugkeren naar de klassieke interface. Zie [Touch UI-functiestatus](/help/release-notes/touch-ui-features-status.md) voor meer informatie.
+>Bijna alle AEM functionaliteit is naar de interface met aanraakbediening verzonden. In sommige beperkte gevallen zal de functionaliteit echter terugkeren naar de klassieke interface. Zie [Touch UI-functiestatus](/help/release-notes/touch-ui-features-status.md) voor meer informatie.
 
-De interface met aanraakbediening is door Adobe ontworpen voor consistentie in de gebruikerservaring voor meerdere producten. Het is gebaseerd op:
+De interface met aanraakbediening is ontworpen door Adobe om consistentie te bieden in de gebruikerservaring van meerdere producten. Het is gebaseerd op:
 
-* **CUI (Coral UI** ): een implementatie van de visuele stijl van Adobe voor de interface met aanraakbediening. Koral UI verstrekt alles uw product/project/Webtoepassing moet de visuele stijl van UI goedkeuren.
+* **Koral UI** ) een implementatie van (visuele stijl van de Adobe voor aanraking-toegelaten UI. Koral UI verstrekt alles uw product/project/Webtoepassing moet de visuele stijl van UI goedkeuren.
 * **De componenten van graniet UI** worden gebouwd met Koraal UI.
 
 De basisbeginselen van de interface met aanraakbediening zijn:
@@ -75,9 +78,9 @@ De basisbeginselen van de interface met aanraakbediening zijn:
 * Ingesloten tests opnemen
 * Het bottom-up ontwerp om ervoor te zorgen dat deze principes op elk element en component worden toegepast
 
-Voor een verder overzicht van de interface met aanraakbediening raadpleegt u de [artikelstructuur van de interface](/help/sites-developing/touch-ui-structure.md)met AEM-aanraakfuncties.
+Voor een verder overzicht van de interface met aanraakbediening raadpleegt u de [artikelstructuur van de interface](/help/sites-developing/touch-ui-structure.md)voor AEM aanraakbediening.
 
-## AEM-technologiestapel {#aem-technology-stack}
+## AEM {#aem-technology-stack}
 
 AEM gebruikt het Granite-platform als basis en het Granite-platform bevat onder andere de Java Content Repository.
 
@@ -85,7 +88,7 @@ AEM gebruikt het Granite-platform als basis en het Granite-platform bevat onder 
 
 ## Graniet {#granite}
 
-Granite is de Open Web-stack van Adobe en biedt verschillende componenten, waaronder:
+Graniet is Adobe Open Web-stapel, die diverse componenten verstrekt:
 
 * Een toepassing starten
 * Een kader OSGi waarin alles wordt opgesteld
@@ -97,9 +100,9 @@ Granite is de Open Web-stack van Adobe en biedt verschillende componenten, waaro
 
 >[!NOTE]
 >
->Granite wordt uitgevoerd als een open ontwikkelingsproject binnen Adobe: bijdragen aan de code , discussies en kwesties worden geleverd door het hele bedrijf .
+>Graniet wordt uitgevoerd als een open ontwikkelingsproject binnen Adobe: bijdragen aan de code , discussies en kwesties worden geleverd door het hele bedrijf .
 >
->Granite is echter **geen** open-bronproject. Het is sterk gebaseerd op verschillende open-sourceprojecten (met name Apache Sling, Felix, Jackrabbit en Lucene), maar Adobe tekent een duidelijke grens tussen wat openbaar is en wat intern is.
+>Granite is echter **geen** open-bronproject. Het is sterk gebaseerd op verschillende open-sourceprojecten (met name Apache Sling, Felix, Jackrabbit en Lucene), maar Adobe tekent een duidelijke lijn tussen wat openbaar en wat intern is.
 
 ## Graniet-interface {#granite-ui}
 
@@ -272,7 +275,7 @@ De het beleidscomponenten [van](https://helpx.adobe.com/experience-manager/6-4/s
 
 Doel:
 
-* Unified look-and-feel voor beheertoepassingen
+* Verenigde blik-en-voelen voor beleidstoepassingen
 * RAD voor beheertoepassingen
 
 Implementatie:
@@ -282,26 +285,28 @@ Implementatie:
 
 ## Koraalinterface {#coral-ui}
 
-CUI (Coral UI) is een implementatie van de visuele stijl van Adobe voor de interface met aanraakbediening, die is ontworpen om consistentie in de gebruikerservaring voor meerdere producten te bieden. Koraal UI verstrekt alles u de visuele stijl moet goedkeuren die op het auteursmilieu wordt gebruikt.
+Koraal UI (koral UI) is een implementatie van CUI (Adobe style) voor aanraking-toegelaten UI, die is ontworpen om consistentie in de gebruikerservaring over veelvoudige producten te verstrekken. Koraal UI verstrekt alles u de visuele stijl moet goedkeuren die op het auteursmilieu wordt gebruikt.
 
 >[!CAUTION]
 >
->Koral UI is een UI-bibliotheek die aan AEM-klanten ter beschikking wordt gesteld voor het bouwen van toepassingen en webinterfaces binnen de grenzen van hun gelicentieerd gebruik van het product.
+>Koral UI is een bibliotheek UI die aan AEM klanten voor de bouw van toepassingen en Webinterfaces binnen de grenzen van hun vergunning gegeven gebruik van het product ter beschikking wordt gesteld.
 >
 >Het gebruik van de koraalinterface is alleen toegestaan:
 >
 >* Wanneer het met AEM is verzonden en gebundeld.
 >* Voor gebruik wanneer het uitbreiden van bestaande UI van het auteursmilieu.
->* Bedrijfsmiddelen, advertenties en presentaties van Adobe.
->* De gebruikersinterface van toepassingen onder het merk Adobe (het lettertype mag niet direct beschikbaar zijn voor andere toepassingen).
+>* Adobe zakelijke zekerheden, advertenties en presentaties.
+>* De gebruikersinterface van toepassingen met Adobe-branding (het lettertype mag niet direct beschikbaar zijn voor andere toepassingen).
 >* Met kleine aanpassingen.
+
 >
 >
 Het gebruik van de koraalinterface moet worden vermeden in:
 >
->* Documenten en andere items die niet aan Adobe zijn gerelateerd.
+>* Documenten en andere artikelen die geen verband houden met Adobe.
 >* Omgevingen voor het maken van inhoud (waar de voorafgaande items door anderen kunnen worden gegenereerd).
 >* Toepassingen/componenten/webpagina&#39;s die niet duidelijk zijn verbonden met Adobe.
+
 >
 
 
@@ -312,7 +317,7 @@ De koraalinterface is een verzameling bouwstenen voor het ontwikkelen van webtoe
 
 Ontworpen om modulair van het begin te zijn, vormt elke module een afzonderlijke laag die op zijn primaire rol wordt gebaseerd. Hoewel de lagen zijn ontworpen om elkaar te steunen, kunnen zij ook onafhankelijk worden gebruikt indien nodig. Hierdoor kunt u de gebruikerservaring van Coral implementeren in een HTML-omgeving.
 
-Met de koraalinterface is het niet verplicht een bepaald ontwikkelingsmodel en/of -platform te gebruiken. Het primaire doel van Coral is uniforme en schone markeringen van HTML5, onafhankelijk van de daadwerkelijke methode te verstrekken die wordt gebruikt om deze prijsverhoging uit te zenden. Dit kan worden gebruikt voor client- of serverrendering, sjablonen, JSP-, PHP- of zelfs Adobe Flash RIA-toepassingen - om er maar een paar te noemen.
+Met de koraalinterface is het niet verplicht een bepaald ontwikkelingsmodel en/of -platform te gebruiken. Het primaire doel van Coral is uniforme en schone markeringen van HTML5, onafhankelijk van de daadwerkelijke methode te verstrekken die wordt gebruikt om deze prijsverhoging uit te zenden. Dit kan worden gebruikt voor client- of server-side rendering, sjablonen, JSP-, PHP- of zelfs Adobe Flash RIA-toepassingen - om er maar een paar te noemen.
 
 ### HTML-elementen - De opmaaklaag {#html-elements-the-markup-layer}
 
