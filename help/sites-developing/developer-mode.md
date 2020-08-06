@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: efbe46a3-c37f-4b67-8b3a-188cfc75118b
 translation-type: tm+mt
 source-git-commit: 185bdd83b8b67671a31aa3f341b80614ed819b6c
+workflow-type: tm+mt
+source-wordcount: '708'
+ht-degree: 0%
 
 ---
 
@@ -47,6 +50,7 @@ Deze hulp een ontwikkelaar om:
 >
 >* op een instantie van de auteur die geen runtime van de Inhoud gebruikt
 >* een publicatie-instantie
+
 >
 >
 Het moet na gebruik opnieuw worden uitgeschakeld.
@@ -55,7 +59,7 @@ Het moet na gebruik opnieuw worden uitgeschakeld.
 >
 >Zie het volgende:
 >
->* Het artikel van de Kennisbank, [het Oplossen van problemen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)AEM TouchUI, voor verdere uiteinden en hulpmiddelen.
+>* Het artikel van de Kennisbank, het Oplossen van [problemen AEM kwesties](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)TouchUI, voor verdere uiteinden en hulpmiddelen.
 >* AEM Gems-sessie over [AEM 6.0 Developer Mode](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 
@@ -100,16 +104,18 @@ Elk componentitem kan worden weergegeven (bijvoorbeeld:
 
    * alle componentscripts die worden gebruikt om de component te renderen.
    * het inhoudspad van de gegevensopslagruimte voor deze specifieke component.
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 * **Script** bewerken: een koppeling die:
 
-   * Hiermee opent u het componentscript in CRXDE Lite.
+   * Hiermee wordt het componentscript in CRXDE Lite geopend.
 
 * Door een componentitem uit te vouwen (pijlkop) kunt u ook het volgende weergeven:
 
    * De hiërarchie binnen de geselecteerde component.
    * Renderingtijden voor de geselecteerde component afzonderlijk, eventuele afzonderlijke componenten die erin zijn genest en het gecombineerde totaal.
+
    ![chlimage_1-233](assets/chlimage_1-233.png)
 
 >[!CAUTION]
