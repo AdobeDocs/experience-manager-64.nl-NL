@@ -19,13 +19,13 @@ ht-degree: 0%
 
 # Het Android-studioproject instellen en de Android-app ontwikkelen {#set-up-the-android-studio-project-and-build-the-android-app}
 
-Dit artikel is bedoeld voor het samenstellen van de AEM Forms App 6.3.1.1 en latere versies. Zie Het Eclipse-project [instellen en de Android™-app](/help/forms/using/setup-eclipse-project-build-installer.md)ontwikkelen voor informatie over het ontwikkelen van een app op basis van broncode van de AEM Forms App 6.3.
+Dit artikel is bedoeld voor het maken van de AEM Forms App 6.3.1.1 en latere versies. Zie Het Eclipse-project [instellen en de Android™-app](/help/forms/using/setup-eclipse-project-build-installer.md)ontwikkelen voor informatie over het ontwikkelen van een app op basis van broncode van de AEM Forms App 6.3.
 
-AEM Forms bevat de volledige broncode van de app AEM Forms. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` is een deel van het `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket op de Distributie van de Software.
+AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` is een deel van het `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket op de Distributie van de Software.
 
-Voer de volgende stappen uit om de bron van de AEM Forms-app op te halen:
+Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
-1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In het **[!UICONTROL Filters]** gedeelte:
    1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
@@ -42,7 +42,7 @@ In de volgende afbeelding wordt de mapstructuur van de `android`map in de `src`m
 
 ![Directorystructuur van de android-map in src](assets/android-folder.png)
 
-## Standaardapp voor AEM Forms maken {#set-up-the-xcode-project}
+## Standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
 
 1. Voer de volgende stappen uit om een project in Android™ Studio op te zetten en een ondertekeningsidentiteit te verstrekken:
 
