@@ -40,11 +40,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de service Handtekening:
 
 [Snel starten (SOAP-modus): Een digitale handtekening verwijderen met de Java API](signature-service-java-api-quick.md#quick-start-soap-mode-removing-a-digital-signature-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
->Het snelle Begin dat in Programmering met AEM Forms wordt gevestigd is gebaseerd op de server die van Vormen op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Begin die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de server van Forms die op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Een handtekeningveld toevoegen aan een PDF-document met de Java API {#quick-start-soap-mode-adding-a-signature-field-to-a-pdf-document-using-the-java-api}
 
@@ -547,7 +547,7 @@ In het volgende Java-codevoorbeeld wordt een PDF-document dat is gebaseerd op ee
 
 ## Snel starten (SOAP-modus): Een XFA-gebaseerd formulier digitaal ondertekenen met de Java API {#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend dat wordt gegenereerd door de service Forms. De `com.adobe.idp.Document` instantie die door de dienst van Vormen is teruggekeerd wordt overgegaan tot de dienst van de Handtekening. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
+In het volgende Java-codevoorbeeld wordt een interactief formulier ondertekend dat door de Forms-service wordt gegenereerd. De `com.adobe.idp.Document` instantie die door de Forms-service wordt geretourneerd, wordt doorgegeven aan de Signature-service. Het ondertekende interactieve formulier wordt opgeslagen als een PDF-bestand met de naam *LoanXFASigned.pdf*.
 
 ```as3
  /* 
