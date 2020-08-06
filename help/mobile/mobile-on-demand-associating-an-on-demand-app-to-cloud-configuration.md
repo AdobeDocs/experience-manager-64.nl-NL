@@ -1,8 +1,8 @@
 ---
 title: Cloud Configuration
 seo-title: Cloud Configuration
-description: Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-project door een koppeling in twee richtingen tot stand te brengen. Volg deze pagina voor meer informatie.
-seo-description: Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-project door een koppeling in twee richtingen tot stand te brengen. Volg deze pagina voor meer informatie.
+description: Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Volg deze pagina voor meer informatie.
+seo-description: Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Volg deze pagina voor meer informatie.
 uuid: f377f2af-864b-43df-9d42-4a5fd6cd70d5
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: d0d29b99-53d4-4b0d-947b-39d91b381de7
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-project door een koppeling in twee richtingen tot stand te brengen. Door uw app aan een mobiel On-Demand-project te koppelen, kunt u inhoud maken, zoals artikelen, banners en verzamelingen in AEM, maar ook die inhoud leveren aan Mobiel On-Demand.
+Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Door uw app aan een mobiel On-Demand-project te koppelen, kunt u inhoud maken, zoals artikelen, banners en verzamelingen binnen AEM, maar u kunt deze inhoud ook op aanvraag aanbieden voor mobiele apparaten.
 
 Vanaf dat punt wordt het publiceren, voorvertonen en beheren van inhoud mogelijk. U kunt ook bestaande Mobile On-Demand-inhoud importeren in AEM en inhoud bewerken.
 
@@ -29,13 +32,13 @@ Vanaf dat punt wordt het publiceren, voorvertonen en beheren van inhoud mogelijk
 
 >[!CAUTION]
 >
->Voordat u de cloudconfiguratie voor uw On-Demand-app gaat configureren, moet u bekend zijn met AEM Mobile Provisioning en AEM Mobile On-Demand Services Client configureren.
+>Voordat u de cloudconfiguratie voor uw On-Demand-app gaat configureren, moet u bekend zijn met AEM Mobile Provisioning and Configuring AEM Mobile On-demand Services Client.
 >
->Zie [AEM Mobile On-Demand Services](/help/mobile/aem-mobile-setup.md) instellen in het gedeelte Beheer voor meer informatie.
+>Zie AEM Mobile On-demand Services [](/help/mobile/aem-mobile-setup.md) instellen in het gedeelte Beheer voor meer informatie.
 
-Als u Mobile On-Demand Cloud Services wilt configureren, klikt u op de bovenste versnelling in de rechterbovenhoek van het element **Verbinding** beheren in het dashboard van de app.
+Als u mobiele Cloud Services op aanvraag wilt configureren, klikt u op de bovenste versnelling in de rechterbovenhoek van het element Verbinding **** beheren in het dashboard van de app.
 
-U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Raadpleeg het [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
+U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie het [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
 
 ### Koppeling naar cloudconfiguratie instellen {#setting-up-link-to-cloud-configuration}
 
@@ -43,7 +46,7 @@ U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Raadp
 >
 >Zorg ervoor dat u een bestaande configuratie voor on-demand clients en cloud hebt.
 >
->Zie [AEM Mobile On-Demand Services](/help/mobile/aem-mobile-setup.md) instellen in het gedeelte Beheer voor meer informatie.
+>Zie AEM Mobile On-demand Services [](/help/mobile/aem-mobile-setup.md) instellen in het gedeelte Beheer voor meer informatie.
 
 In de volgende stappen wordt beschreven hoe u een koppeling naar de cloudconfiguratie instelt:
 
