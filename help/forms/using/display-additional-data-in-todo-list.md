@@ -1,8 +1,8 @@
 ---
 title: Extra gegevens weergeven in de lijst ToDo
 seo-title: Extra gegevens weergeven in de lijst ToDo
-description: Hoe kan ik de weergave van de lijst Te doen van LiveCycle AEM Forms-werkruimte aanpassen om meer informatie naast de standaardwerkruimte weer te geven.
-seo-description: Hoe kan ik de weergave van de lijst Te doen van LiveCycle AEM Forms-werkruimte aanpassen om meer informatie naast de standaardwerkruimte weer te geven.
+description: Hoe te om de vertoning van de te doen lijst van de werkruimte van LiveCycle AEM Forms aan te passen om meer informatie naast het gebrek te tonen.
+seo-description: Hoe te om de vertoning van de te doen lijst van de werkruimte van LiveCycle AEM Forms aan te passen om meer informatie naast het gebrek te tonen.
 uuid: 4c678d9c-7794-4b62-8705-d62c7780c13f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: b74a0933-2b96-4a88-9995-6fb21df141aa
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '308'
+ht-degree: 0%
 
 ---
 
 
 # Extra gegevens weergeven in de lijst ToDo {#displaying-additional-data-in-todo-list}
 
-Standaard worden in de lijst Te doen van de werkruimte AEM-formulieren de naam en beschrijving van de taakweergave weergegeven. U kunt echter andere gegevens toevoegen, zoals de aanmaakdatum en de einddatum. U kunt ook pictogrammen toevoegen en de stijl van de weergave wijzigen.
+Standaard worden in de lijst Taak-weergavenaam en -beschrijving van de AEM Forms-werkruimte weergegeven. U kunt echter andere gegevens toevoegen, zoals de aanmaakdatum en de einddatum. U kunt ook pictogrammen toevoegen en de stijl van de weergave wijzigen.
 
 ![Een blik bij de Te doen lusje van de Werkruimte van HTML die standaardconfiguratie toont](assets/html-todo-list.png)
 
@@ -30,7 +33,7 @@ Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel v
 
 ## Informatie weergeven over een taak {#displaying-information-on-a-task}
 
-1. Voer de [algemene stappen uit voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+1. Voer de [algemene stappen uit voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de AEM Forms-werkruimte.
 1. Om extra informatie voor een taak te tonen, moeten de overeenkomstige zeer belangrijk-waardeparen binnen het taakblok van worden toegevoegd `translation.json`.
 
    Bijvoorbeeld wijzigen `/apps/ws/locales/en-US/translation.json` voor Engels:
@@ -134,7 +137,7 @@ Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel v
 
 ## Item toevoegen in de HTML-sjabloon {#adding-entry-in-the-html-template}
 
-Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan de taak wilt toevoegen. Om tot stand te brengen verwijs naar de code van de de werkruimte van de Vormen van AEM.
+Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan de taak wilt toevoegen. Als u er een wilt maken, raadpleegt u de code voor de AEM Forms-werkruimte samenstellen.
 
 1. Kopiëren `task.html`:
 
