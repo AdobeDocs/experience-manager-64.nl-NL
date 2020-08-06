@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '263'
+ht-degree: 0%
 
 ---
 
 
 # Terugvallettertypen configureren {#configuring-fallback-fonts}
 
-U kunt het bestand FontManagerResources.properties handmatig zodanig configureren dat de standaard AEM-formulierlettertypen worden toegewezen aan fallback (of vervangen) als de standaardlettertypen niet beschikbaar zijn op de server. Dit eigenschapbestand bevindt zich in het bestand adobe-fontmanager.jar.
+U kunt het bestand FontManagerResources.properties handmatig zodanig configureren dat de standaardfonts AEM formulieren worden toegewezen aan fallback (of vervangen) als de standaardfonts niet beschikbaar zijn op de server. Dit eigenschapbestand bevindt zich in het bestand adobe-fontmanager.jar.
 
 >[!NOTE]
 >
@@ -28,7 +31,7 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
 1. Zoek het bestand FontManagerResources.properties en open het in een teksteditor.
 1. Wijzig desgewenst de locaties en namen van de lettertypen Algemeen en Fallback en sla het bestand op.
 
-   De fontitems in het bestand FontManagerResources.properties zijn relatief ten opzichte van de map *[em-forms root]*/fonts. Als u lettertypen opgeeft die geen standaard AEM-formulierlettertypen zijn, moet u deze lettertypen installeren in deze mappenstructuur (in een bestaande map of in een nieuw gemaakte map).
+   De fontitems in het bestand FontManagerResources.properties zijn relatief ten opzichte van de map *[em-forms root]*/fonts. Als u lettertypen opgeeft die niet standaard AEM formulierlettertypen zijn, moet u deze lettertypen installeren in deze mapstructuur (binnen een bestaande map of in een nieuw gemaakte map).
 
    >[!NOTE]
    >
@@ -43,5 +46,5 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
 
 >[!NOTE]
 >
->Gebruik Configuration Manager niet om het bestand adobe-livecycle-[appserver].ear opnieuw te verpakken, omdat hierdoor uw wijzigingen worden overschreven door de standaardwaarden voor AEM-formulieren.
+>Gebruik Configuration Manager niet om het bestand adobe-livecycle-[appserver].ear opnieuw te verpakken, omdat hierdoor uw wijzigingen worden overschreven door de standaardwaarden voor AEM formulieren.
 
