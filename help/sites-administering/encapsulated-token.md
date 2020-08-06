@@ -1,8 +1,8 @@
 ---
 title: Ondersteuning voor ingekapselde token
 seo-title: Ondersteuning voor ingekapselde token
-description: Meer informatie over de ondersteuning voor ingekapselde token in AEM.
-seo-description: Meer informatie over de ondersteuning voor ingekapselde token in AEM.
+description: Leer over de Encapsulated Token steun in AEM.
+seo-description: Leer over de Encapsulated Token steun in AEM.
 uuid: a7c6f269-bb5a-49ba-abef-ea029202ab6d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -40,7 +40,7 @@ Als een publicatie-instantie niet beschikbaar wordt, verliezen alle gebruikers d
 
 De oplossing voor horizontale scalability is stateless authentificatie met het gebruik van de nieuwe Encapsulated Token steun in AEM.
 
-Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze verificatiegegevens offline kan maken en valideren zonder toegang te krijgen tot de gegevensopslagruimte. Op deze manier kan een verificatieverzoek worden uitgevoerd op alle publicatieexemplaren zonder dat er kleverige verbindingen nodig zijn. Het heeft ook het voordeel om authentificatieprestaties te verbeteren aangezien de bewaarplaats niet voor elk authentificatieverzoek te hoeven worden betreden.
+Het ingekapselde token is een stuk cryptografie waarmee AEM op veilige wijze verificatiegegevens offline kunt maken en valideren, zonder toegang tot de opslagplaats. Op deze manier kan een verificatieverzoek worden uitgevoerd op alle publicatieexemplaren zonder dat er kleverige verbindingen nodig zijn. Het heeft ook het voordeel om authentificatieprestaties te verbeteren aangezien de bewaarplaats niet voor elk authentificatieverzoek te hoeven worden betreden.
 
 U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met MongoMK-auteurs en TarMK-publicatie-instanties hieronder:
 
@@ -66,7 +66,7 @@ U kunt zien hoe dit werkt in een geografisch gedistribueerde implementatie met M
 
 Er zijn een paar dingen u in overweging moet nemen wanneer het vormen van Encapsulated Token:
 
-1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet meer opgeslagen in de gegevensopslagruimte, maar in het feitelijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
+1. Wegens de cryptografie in kwestie, moeten alle instanties de zelfde sleutel HMAC hebben. Sinds AEM 6.3 wordt het sleutelmateriaal niet langer opgeslagen in de gegevensopslagruimte, maar in het eigenlijke bestandssysteem. In dit verband is het de beste manier om de toetsen te repliceren om deze van het bestandssysteem van de broninstantie naar die van de doelinstantie(s) te kopiëren waarnaar u de toetsen wilt repliceren. Zie hieronder meer informatie onder &quot;Replicating the HMAC key&quot;.
 1. Het ingekapselde token moet worden ingeschakeld. Dit kan door de Console van het Web worden gedaan.
 
 ### Replicatie van de HMAC-sleutel {#replicating-the-hmac-key}
@@ -77,17 +77,18 @@ De sleutel HMAC is aanwezig als binair bezit van `/etc/key` in de bewaarplaats. 
 
 Als u de sleutel in meerdere instanties wilt repliceren, moet u:
 
-1. Toegang krijgen tot de AEM-instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
+1. Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
 1. Zoek de `com.adobe.granite.crypto.file` bundel in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
 
    * &lt;auteur-aem-install-dir>/crx-quickstart/launch/felix/bundle21
+
    Het `bundle.info` bestand in elke map geeft de naam van de bundel aan.
 
 1. Navigeer naar de gegevensmap. Bijvoorbeeld:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. Kopieer de HMAC- en hoofdbestanden.
+1. Kopieer de HMAC- en master bestanden.
 1. Dan, ga naar de doelinstantie u de sleutel HMAC aan wilt dupliceren, en aan de gegevensomslag navigeren. Bijvoorbeeld:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
