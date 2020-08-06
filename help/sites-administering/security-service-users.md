@@ -1,6 +1,6 @@
 ---
-title: Servicegebruikers in AEM
-seo-title: Servicegebruikers in AEM
+title: Gebruikers van de service in AEM
+seo-title: Gebruikers van de service in AEM
 description: Meer informatie over servicegebruikers in AEM.
 seo-description: Meer informatie over servicegebruikers in AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '1788'
+ht-degree: 0%
 
 ---
 
 
-# Servicegebruikers in AEM{#service-users-in-aem}
+# Gebruikers van de service in AEM{#service-users-in-aem}
 
 ## Overzicht {#overview}
 
-De belangrijkste manier om een administratieve zitting of middeloplosser in AEM te krijgen was het gebruiken van de `SlingRepository.loginAdministrative()` `ResourceResolverFactory.getAdministrativeResourceResolver()` en de methodes die door Sling worden verstrekt.
+De belangrijkste manier om een administratieve zitting of middeloplosser in AEM te krijgen was het gebruiken van de `SlingRepository.loginAdministrative()` en `ResourceResolverFactory.getAdministrativeResourceResolver()` methodes die door Sling worden verstrekt.
 
 Nochtans, werden geen van beide methodes ontworpen rond het [beginsel van minste voorrecht](https://en.wikipedia.org/wiki/Principle_of_least_privilege) en maken het voor een ontwikkelaar te gemakkelijk om niet voor een juiste structuur en overeenkomstige Niveaus van het Toegangsbeheer (ACLs) voor hun inhoud vroegtijdig te plannen. Als een kwetsbaarheid in zulk een dienst aanwezig is, leidt het vaak tot voorrechtescalaties aan de `admin` gebruiker, zelfs als de code zelf geen administratieve voorrechten zou vereisen om te werken.
 
@@ -90,7 +93,7 @@ Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de
 * `service-id` is toegewezen aan een resourceoplosser en/of JCR-opslaggebruikers-id voor verificatie
 * `service-name` is de symbolische naam van de bundel die de dienst verleent
 
-## Overige aanbevelingen {#other-recommendations}
+## Overige Recommendations {#other-recommendations}
 
 ### De admin-sessie vervangen door een service-gebruiker {#replacing-the-admin-session-with-a-service-user}
 
@@ -111,7 +114,7 @@ Als u de beheersessie wilt vervangen door een servicegebruiker, moet u de volgen
 
 ## Een nieuwe servicegebruiker maken {#creating-a-new-service-user}
 
-Nadat u hebt gecontroleerd dat geen gebruiker in de lijst met AEM-servicegebruikers van toepassing is voor uw gebruiksscenario en dat de bijbehorende RTC-problemen zijn goedgekeurd, kunt u doorgaan en de nieuwe gebruiker toevoegen aan de standaardinhoud.
+Nadat u hebt gecontroleerd dat geen gebruiker in de lijst met AEM gebruikers van toepassing is voor uw gebruiksscenario en de bijbehorende RTC-problemen zijn goedgekeurd, kunt u doorgaan en de nieuwe gebruiker toevoegen aan de standaardinhoud.
 
 De aanbevolen aanpak is om een servicegebruiker te maken die de verkenner van de opslagruimte kan gebruiken op *https://&lt;server>:&lt;port>/crx/explorer/index.jsp*
 
@@ -191,8 +194,8 @@ Om een afbeelding van uw dienst aan de overeenkomstige Gebruikers van het Systee
 
 Aanroepen worden `loginAdministrative()` vaak samen met gedeelde sessies weergegeven. Deze zittingen worden verworven bij de dienstactivering en slechts het programma geopend nadat de dienst wordt tegengehouden. Hoewel dit gebruikelijk is, leidt het tot twee problemen:
 
-* **** Beveiliging: Dergelijke beheersessies worden gebruikt om bronnen of andere objecten die aan de gedeelde sessie zijn gebonden, in cache te plaatsen en terug te sturen. Later in de vraagstapel konden deze voorwerpen aan zittingen of middeloplossers met opgeheven voorrechten worden aangepast, en het is vaak niet duidelijk aan de bezoeker dat het een adminzitting is zij met werken.
-* **** Prestaties: Bij gedeelde sessies met eikel kunnen prestatieproblemen optreden en het wordt momenteel afgeraden deze te gebruiken.
+* **Beveiliging:** Dergelijke beheersessies worden gebruikt om bronnen of andere objecten die aan de gedeelde sessie zijn gebonden, in cache te plaatsen en terug te sturen. Later in de vraagstapel konden deze voorwerpen aan zittingen of middeloplossers met opgeheven voorrechten worden aangepast, en het is vaak niet duidelijk aan de bezoeker dat het een adminzitting is zij met werken.
+* **Prestaties:** Bij gedeelde sessies met eikel kunnen prestatieproblemen optreden en het wordt momenteel afgeraden deze te gebruiken.
 
 De duidelijkste oplossing voor het veiligheidsrisico is eenvoudig de `loginAdministrative()` vraag met `loginService()` één aan een gebruiker met beperkte voorrechten te vervangen. Dit heeft echter geen invloed op een mogelijke verslechtering van de prestaties. Een mogelijkheid om dat te beperken is alle gevraagde informatie te verpakken in een object dat geen koppeling heeft met de sessie. Maak vervolgens de sessie op verzoek (of vernietigt deze).
 
@@ -215,21 +218,21 @@ Bij het verwerken van gebeurtenissen of taken en in sommige gevallen van workflo
 
 1. Geef de gegevens door `user-id` in de gebeurtenislading en gebruik imitatie.
 
-   **** Voordelen: Eenvoudig in gebruik.
+   **Voordelen:** Eenvoudig in gebruik.
 
-   **** Nadelen: Nog steeds gebruikt `loginAdministrative()`. Een aanvraag die al is geverifieerd, wordt opnieuw geverifieerd.
+   **Nadelen:** Nog steeds gebruikt `loginAdministrative()`. Een aanvraag die al is geverifieerd, wordt opnieuw geverifieerd.
 
 1. Creeer of hergebruik een de dienstgebruiker die toegang tot de gegevens heeft.
 
-   **** Voordelen: In overeenstemming met het huidige ontwerp. Moet minimaal worden gewijzigd.
+   **Voordelen:** In overeenstemming met het huidige ontwerp. Moet minimaal worden gewijzigd.
 
-   **** Nadelen: Vereist zeer krachtige de dienstgebruikers om flexibel te zijn, wat tot voorrechtescalaties kan gemakkelijk leiden. Hiermee wordt het beveiligingsmodel omzeild.
+   **Nadelen:** Vereist zeer krachtige de dienstgebruikers om flexibel te zijn, wat tot voorrechtescalaties kan gemakkelijk leiden. Hiermee wordt het beveiligingsmodel omzeild.
 
 1. Geef een serialisatie van de gebeurtenis door `Subject` in de gebeurtenislading, en creeer `ResourceResolver` gebaseerd op dat onderwerp. Een voorbeeld zou zijn het gebruik van de JAAS `doAsPrivileged` in de `ResourceResolverFactory`.
 
-   **** Voordelen: Schone implementatie vanuit veiligheidsoogpunt. Het vermijdt re-authentificatie en het werkt met de originele voorrechten. Beveiligingsrelevante code is transparant voor de consument van het evenement.
+   **Voordelen:** Schone implementatie vanuit veiligheidsoogpunt. Het vermijdt re-authentificatie en het werkt met de originele voorrechten. Beveiligingsrelevante code is transparant voor de consument van het evenement.
 
-   **** Nadelen: Needs refactoring. Het feit dat de veiligheidsrelevante code transparant is voor de consument van het evenement kan ook tot problemen leiden.
+   **Nadelen:** Needs refactoring. Het feit dat de veiligheidsrelevante code transparant is voor de consument van het evenement kan ook tot problemen leiden.
 
 De derde aanpak is momenteel de voorkeurstechniek.
 
@@ -239,6 +242,6 @@ Binnen de implementaties van het werkschemaproces wordt de overeenkomstige gebru
 
 Om deze problemen op te lossen, wordt aanbevolen dezelfde aanpak te gebruiken als in [Verwerkingsgebeurtenissen, Replicatievoorprocessoren en Taken](/help/sites-administering/security-service-users.md#processing-events-replication-preprocessors-and-jobs) .
 
-## POST-processors en verwijderde pagina&#39;s verkopen {#sling-post-processors-and-deleted-pages}
+## Verkoopprocessors en verwijderde POSTEN {#sling-post-processors-and-deleted-pages}
 
-Er zijn een paar administratieve zittingen die in het verkopen van de verwerkerimplementaties van POST worden gebruikt. Meestal worden beheersessies gebruikt om toegang te krijgen tot knooppunten die in afwachting zijn van verwijdering binnen de POST die wordt verwerkt. Daarom zijn ze niet meer beschikbaar via de aanvraagsessie. Een knoop in afwachting van schrapping kan worden betreden om metada vrij te geven die anders niet toegankelijk zou moeten zijn.
+Er zijn een paar administratieve zittingen die in de implementatie van de bewerker van de POST worden gebruikt. Meestal worden beheersessies gebruikt om toegang te krijgen tot knooppunten die in afwachting zijn van verwijdering binnen de POST die wordt verwerkt. Daarom zijn ze niet meer beschikbaar via de aanvraagsessie. Een knoop in afwachting van schrapping kan worden betreden om metada vrij te geven die anders niet toegankelijk zou moeten zijn.
