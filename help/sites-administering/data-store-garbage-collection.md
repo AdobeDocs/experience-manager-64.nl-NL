@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5ee9d11a-85c2-440d-b487-a38d04dc040b
 translation-type: tm+mt
 source-git-commit: 3c4b8bf3fd912406657c4cecb75eb2b77dd41bc7
+workflow-type: tm+mt
+source-wordcount: '1905'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Wanneer een conventioneel WCM-element wordt verwijderd, kan de verwijzing naar h
 
 Een WCM-toepassing heeft meestal de neiging om informatie te verzamelen, maar niet om informatie te verwijderen. Hoewel er nieuwe afbeeldingen worden toegevoegd, zelfs als deze oudere versies vervangen, blijft het oude versiebeheersysteem behouden en kunt u er desgewenst naar terugkeren. Het grootste deel van de inhoud die wij als toevoeging aan het systeem beschouwen, wordt dus permanent opgeslagen. Wat is de typische bron van &quot;afval&quot; in de opslagplaats die we misschien willen opschonen?
 
-AEM gebruikt de opslagplaats als opslag voor een aantal interne en huishoudelijke activiteiten:
+AEM gebruikt de opslagplaats als opslagplaats voor een aantal interne en huishoudelijke activiteiten:
 
 * Gebouwde en gedownloade pakketten
 * Tijdelijke bestanden gemaakt voor publicatie-replicatie
@@ -30,7 +33,7 @@ AEM gebruikt de opslagplaats als opslag voor een aantal interne en huishoudelijk
 
 Wanneer om het even welk van deze tijdelijke voorwerpen groot genoeg is om opslag in de gegevensopslag te vereisen, en wanneer het voorwerp uiteindelijk uit gebruik overgaat, blijft het verslag van de gegevensopslag zelf als &quot;huisvuil&quot;. In een standaard WCM auteur/publish toepassing, is de grootste bron van huisvuil van dit type gewoonlijk het proces van publicatieactivering. Wanneer gegevens worden gerepliceerd om te publiceren, wordt deze eerst verzameld in verzamelingen in een efficiënte gegevensindeling, genaamd &quot;Durbo&quot;, en opgeslagen in de gegevensopslagruimte onder `/var/replication/data`. De gegevensbundels zijn vaak groter dan de kritieke groottedrempel voor de gegevensopslag en daarom opgeslagen als verslagen van de gegevensopslag. Wanneer de replicatie volledig is, `/var/replication/data` wordt de knoop binnen geschrapt, maar het verslag van de gegevensopslag blijft als &quot;huisvuil&quot;.
 
-Een andere bron van terugwinbare ongewenste details zijn pakketten. Pakketgegevens worden, net als alle andere, opgeslagen in de opslagplaats en dus voor pakketten die groter zijn dan 4KB, in de gegevensopslag. In de loop van een ontwikkelingsproject of in tijd terwijl het handhaven van een systeem, kunnen de pakketten worden gebouwd en vele tijden worden herbouwd, elke bouwstijl die in een nieuw verslag van de gegevensopslag resulteert, die het vorige bouwstijlverslag verwekt.
+Een andere bron van terugwinbare ongewenste details zijn pakketten. Pakketgegevens worden, net als alle andere, opgeslagen in de opslagplaats en dus voor pakketten die groter zijn dan 4KB, in de gegevensopslag. In de loop van een ontwikkelingsproject of in tijd terwijl het handhaven van een systeem, kunnen de pakketten worden gebouwd en vele tijden worden herbouwd, elke bouwstijl resulterend in een nieuw verslag van de gegevensopslag, die het vorige bouwstijlverslag verwekt.
 
 ## Hoe werkt de gegevensopslag huisvuilinzameling? {#how-does-data-store-garbage-collection-work}
 
@@ -46,7 +49,7 @@ In de eerste fase voert de opschoonfunctie van de gegevensopslagruimte een uitge
 
 In de tweede fase, oversteekt de vuilnisman van de gegevensopslag de fysieke folderstructuur van de gegevensopslag op ongeveer de zelfde manier zoals &quot;vinden&quot;. Het onderzocht het &quot;laatste gewijzigde&quot;attribuut of MTIME van het dossier en stelt de volgende bepaling:
 
-* Als de MTIME nieuwer is dan de aanvankelijke tijdstempel voor de basislijn, werd het bestand gevonden in de eerste fase, of het is een geheel nieuw bestand dat aan de opslagplaats werd toegevoegd terwijl het verzamelingsproces aan de gang was. In beide gevallen wordt de registratie als actief beschouwd en wordt het bestand niet verwijderd.
+* Als de MTIME nieuwer is dan de aanvankelijke tijdstempel voor de basislijn, werd het bestand gevonden in de eerste fase, of is het een geheel nieuw bestand dat aan de opslagplaats werd toegevoegd terwijl het verzamelingsproces aan de gang was. In beide gevallen wordt de registratie als actief beschouwd en wordt het bestand niet verwijderd.
 * Als de MTIME vóór de aanvankelijke basislijntijdstempel ligt, is het bestand geen actief bestand waarnaar wordt verwezen en wordt het beschouwd als verwijderbaar afval.
 
 Deze benadering werkt goed voor één enkel knooppunt met een persoonlijke gegevensopslag. De gegevensopslag kan echter worden gedeeld en als dit betekent dat potentieel actieve live verwijzingen naar gegevensopslagrecords van andere opslagplaatsen niet worden gecontroleerd en actieve bestanden waarnaar wordt verwezen, per ongeluk kunnen worden verwijderd. Het is noodzakelijk dat het systeembeheer de gedeelde aard van de gegevensopslag begrijpt alvorens om het even welke huisvuilinzamelingen te plannen, en slechts het eenvoudige ingebouwde proces van de huisvuilinzameling van de gegevensopslag te gebruiken wanneer het bekend is dat de gegevensopslag niet wordt gedeeld.
@@ -57,7 +60,7 @@ Deze benadering werkt goed voor één enkel knooppunt met een persoonlijke gegev
 
 ## Afvalverzameling van gegevensopslag uitvoeren {#running-data-store-garbage-collection}
 
-Er zijn drie manieren om huisvuilinzameling van de gegevensopslag in werking te stellen, afhankelijk van de opstelling van de gegevensopslag waarop AEM loopt:
+Er zijn drie manieren om de inzameling van de huisvuilopslag in werking te stellen, afhankelijk van de opstelling van de gegevensopslag waarop AEM loopt:
 
 1. Via [de Opruiming](/help/sites-deploying/revision-cleanup.md) van de Revisie - een mechanisme van de huisvuilinzameling gewoonlijk gebruikt voor de opruiming van de knoopopslag.
 
@@ -138,7 +141,7 @@ Opschoonfunctie uitvoeren:
 1. Klik op **startDataStoreGC(booleaanse markeringOnly)**.
 1. Voer indien nodig &quot;`true`&quot; voor de `markOnly` parameter in:
 
-   | **Option** | **Beschrijving** |
+   | **Optie** | **Beschrijving** |
    |---|---|
    | boolean markOnly | Ingesteld op true als alleen verwijzingen worden gemarkeerd en niet in de teken- en veegbewerking. Deze modus moet worden gebruikt wanneer de onderliggende BlobStore wordt gedeeld tussen meerdere verschillende repositories. Voor alle andere gevallen stelt u de waarde in op false om de volledige afvalophaling uit te voeren. |
 
