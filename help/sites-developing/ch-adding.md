@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ac8f44df-39fb-44ea-ae17-ead0dbd1f6c0
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1033'
+ht-degree: 0%
 
 ---
 
@@ -48,11 +51,11 @@ Alle opslagtypen zijn extensies van de [`ContextHub.Store.Core`](/help/sites-dev
 
 De opslag van de Hub van de context gebruikt één van de volgende persistentiemodi:
 
-* **** Lokaal: Gebruikt lokale HTML5-opslag om gegevens te behouden. Lokale opslag blijft in de browser tijdens sessies behouden.
-* **** Sessie: Gebruikt HTML5 sessionStorage om gegevens te behouden. De opslag van de zitting wordt voortgeduurd voor de browser zitting en is beschikbaar aan alle browser vensters.
-* **** Koekje: Gebruikt de native ondersteuning van de browser voor cookies voor gegevensopslag. De gegevens van het koekje worden verzonden naar en van de server in HTTP- verzoeken.
-* **** Window.name: Gebruikt de eigenschap window.name om gegevens te behouden.
-* **** Geheugen: Gebruikt een Javascript-object om gegevens te behouden.
+* **Lokaal:** Gebruikt lokale HTML5-opslag om gegevens te behouden. Lokale opslag blijft in de browser tijdens sessies behouden.
+* **Sessie:** Gebruikt HTML5 sessionStorage om gegevens te behouden. De opslag van de zitting wordt voortgeduurd voor de browser zitting en is beschikbaar aan alle browser vensters.
+* **Koekje:** Gebruikt de native ondersteuning van de browser voor cookies voor gegevensopslag. De gegevens van het koekje worden verzonden naar en van de server in HTTP- verzoeken.
+* **Window.name:** Gebruikt de eigenschap window.name om gegevens te behouden.
+* **Geheugen:** Gebruikt een Javascript-object om gegevens te behouden.
 
 Door gebrek, gebruikt de Hub van de Context de Lokale persistentiemodus. Als de browser geen ondersteuning biedt voor lokale HTML5-opslag of deze toestaat, wordt de sessiepersistentie gebruikt. Als de browser HTML5 sessionStorage niet ondersteunt of toestaat, wordt de persistentie Window.name gebruikt.
 
