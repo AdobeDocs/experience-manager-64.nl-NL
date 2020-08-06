@@ -11,19 +11,22 @@ topic-tags: best-practices
 discoiquuid: 3cc8ac23-98ff-449f-bd76-1203c7cbbed7
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '485'
+ht-degree: 10%
 
 ---
 
 
 # Bewerkbare sjablonen uitproberen in We.Detailhandel{#trying-out-editable-templates-in-we-retail}
 
-Met de bewerkbare sjablonen is het maken en onderhouden van sjablonen niet langer alleen een taak voor ontwikkelaars. Een type van macht-gebruiker, die een malplaatjeauteur wordt genoemd, kan malplaatjes nu tot stand brengen. Ontwikkelaars moeten de omgeving nog steeds instellen, clientbibliotheken maken en de componenten maken die moeten worden gebruikt, maar als deze basisbeginselen eenmaal zijn ingesteld, beschikt de sjabloonauteur over de flexibiliteit om sjablonen zonder ontwikkelingsproject te maken en te configureren.
+Met de bewerkbare sjablonen is het maken en onderhouden van sjablonen niet langer alleen een taak voor ontwikkelaars. Een type van macht-gebruiker, die een malplaatjeauteur wordt genoemd, kan malplaatjes nu tot stand brengen. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de maker van sjablonen sjablonen maken en configureren zonder een ontwikkelingsproject.
 
 Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor niet-ontwikkelaars de sjablonen kunnen aanpassen en aanpassen.
 
 ## Uitproberen {#trying-it-out}
 
-1. Bewerk de pagina Apparatuur van de taalstramienvertakking.
+1. Bewerk de pagina Apparatuur van de master taalvertakking.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
@@ -46,6 +49,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
    * Een bestaand beleid selecteren of een nieuw beleid voor de container maken
    * Selecteer welke componenten zijn toegestaan in de container
    * De standaardcomponenten definiëren die moeten worden geplaatst wanneer een element naar de container wordt gesleept
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
 1. In de sjablooneditor kunt u het beleid van de tekstcomponent in de lay-outcontainer bewerken.
@@ -59,6 +63,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
       * Opmaakopties
       * Toegestane alineastijlen
       * Speciale tekens toegestaan
+
    Vele componenten die op de kerncomponenten worden gebaseerd staan de configuratie van opties op componentenniveau door de editable malplaatjes toe, die de behoefte aan aanpassing door ontwikkelaars verwijderen.
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
