@@ -1,16 +1,19 @@
 ---
-title: Elementen bulksgewijs migreren naar Adobe Experience Manager
-description: Hoe te om activa in AEM over te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
+title: Activa in bulk migreren naar Adobe Experience Manager Assets
+description: Hoe te om activa in AEM te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+workflow-type: tm+mt
+source-wordcount: '1789'
+ht-degree: 11%
 
 ---
 
 
 # Richtlijnen voor migratie van middelen {#assets-migration-guide}
 
-Bij het migreren van elementen naar AEM moet u rekening houden met verschillende stappen. Het uitpakken van elementen en metagegevens uit hun huidige huis valt buiten het bereik van dit document, omdat de implementaties sterk verschillen. In plaats daarvan wordt in dit document beschreven hoe u deze elementen in AEM kunt plaatsen, de metagegevens ervan kunt toepassen, uitvoeringen kunt genereren en de elementen kunt activeren of publiceren.
+Bij het migreren van middelen naar AEM moeten er verschillende stappen in overweging worden genomen. Het uitpakken van elementen en metagegevens uit hun huidige huis valt buiten het bereik van dit document, omdat de implementaties sterk verschillen. In plaats daarvan wordt in dit document beschreven hoe u deze elementen in AEM brengt, de metagegevens ervan toepast, uitvoeringen genereert en de elementen activeert of publiceert.
 
 ## Vereisten {#prerequisites}
 
@@ -18,13 +21,14 @@ Voordat u een van de hieronder beschreven stappen uitvoert, bekijkt en implement
 
 >[!NOTE]
 >
->De volgende gereedschappen voor middelenmigratie maken geen deel uit van Adobe Experience Manager. De klantenservice van Adobe biedt geen ondersteuning voor deze gereedschappen.
+>De volgende gereedschappen voor middelenmigratie maken geen deel uit van Adobe Experience Manager. De klantenservice van Adobe ondersteunt deze tools niet.
 >
->* ACS AEM Tools Tag Maker
->* CSV Asset Importer ACS AEM Tools
+>* ACS AEM Tagmaker
+>* ACS AEM Tools CSV Asset Importer
 >* ACS Commons Bulk Workflow Manager
 >* ACS Commons Snelle Manager van de Actie
 >* Synthetische workflow
+
 >
 >
 Deze software is opensource en valt onder de [Apache v2-licentie](https://adobe-consulting-services.github.io/pages/license.html). Om een vraag te stellen of een probleem te melden gaat u naar de respectieve [GitHub-problemen voor ACS AEM-tools](https://github.com/Adobe-Consulting-Services/acs-aem-commons/issues) en [ACS AEM Commons](https://github.com/Adobe-Consulting-Services/acs-aem-tools/issues).
@@ -48,17 +52,17 @@ Voordat u een migratie start, schakelt u de draagraketten voor de `DAM Update As
 
 ### Labels laden {#load-tags}
 
-Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Gereedschappen zoals de CSV Asset Importer en de functionaliteit voor metagegevensprofielen kunnen de toepassing van tags op elementen automatiseren. Voeg eerst de tags toe in Experience Manager. De eigenschap van de Maker [van de Markering van de Tags van](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) ACS AEM Tools laat u markeringen bevolken door een spreadsheet van Microsoft Excel te gebruiken die in het systeem wordt geladen.
+Mogelijk hebt u al een tagtaxonomie die u op uw afbeeldingen toepast. Gereedschappen zoals de CSV Asset Importer en de functionaliteit voor metagegevensprofielen kunnen de toepassing van tags op elementen automatiseren. Voeg eerst de tags in Experience Manager toe. De [ACS AEM de eigenschap van de Maker](https://adobe-consulting-services.github.io/acs-aem-tools/features/tag-maker/index.html) van de Markering van Hulpmiddelen laat u markeringen bevolken door een spreadsheet van Microsoft te gebruiken Excel die in het systeem wordt geladen.
 
 ### Middelen opnemen {#ingest-assets}
 
-Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Zorg ervoor dat het systeem goed presteert wanneer u veel gegevens laadt in Experience Manager. Hierdoor is de tijd die nodig is om de gegevens toe te voegen tot een minimum beperkt en kan overbelasting van het systeem worden voorkomen. Dit helpt systeemuitval te voorkomen, vooral in systemen die al in productie zijn.
+Prestaties en stabiliteit zijn belangrijke zorgen wanneer activa in het systeem worden opgenomen. Zorg ervoor dat het systeem goed presteert wanneer u veel gegevens in de Experience Manager laadt. Hierdoor is de tijd die nodig is om de gegevens toe te voegen tot een minimum beperkt en kan overbelasting van het systeem worden voorkomen. Dit helpt systeemuitval te voorkomen, vooral in systemen die al in productie zijn.
 
 Er zijn twee manieren om de elementen in het systeem te laden: een op push-gebaseerde benadering waarbij gebruik wordt gemaakt van HTTP of een pull-gebaseerde benadering waarbij gebruik wordt gemaakt van de JCR API&#39;s.
 
 #### HTTP doorspoelen {#push-through-http}
 
-Het team van de Diensten van Adobe Beheerde gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map op een AEM-instantie laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
+Het team van Managed Services van Adobe gebruikt een hulpmiddel genoemd Glutton om gegevens in klantenmilieu&#39;s te laden. Glutton is een kleine Java-toepassing die alle elementen van de ene map in een andere map op een AEM-instantie laadt. In plaats van Glutton kunt u ook hulpprogramma&#39;s zoals Perl-scripts gebruiken om de elementen in de opslagplaats te posten.
 
 Er zijn twee grote nadelen aan het gebruiken van de benadering van het doorduwen van https:
 
@@ -69,13 +73,13 @@ De andere manier om elementen in te nemen is het ophalen van elementen van het l
 
 #### Trek van het lokale dossiersysteem {#pull-from-the-local-file-system}
 
-De CSV Asset Importer [van](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) ACS AEM Tools haalt activa van het dossiersysteem en activa meta-gegevens van een Csv- dossier voor de invoer van activa. De API van de Manager van Elementen AEM wordt gebruikt om de activa in het systeem in te voeren en de gevormde meta-gegevenseigenschappen toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
+De [ACS AEM Tools CSV Asset Importer](https://adobe-consulting-services.github.io/acs-aem-tools/features/csv-asset-importer/index.html) trekt activa van het dossiersysteem en activa meta-gegevens van een Csv- dossier voor de activainvoer. De API van de Manager van AEM wordt gebruikt om de activa in het systeem in te voeren en de gevormde meta-gegevenseigenschappen toe te passen. In het ideale geval worden elementen op de server gemonteerd via een netwerkbestandsinstallatie of via een externe schijf.
 
 Wanneer de activa niet over een netwerk worden overgebracht verbeteren de algemene prestaties veel. Deze methode is doorgaans de meest efficiënte methode om elementen in de opslagplaats te laden. Bovendien kunt u alle elementen en metagegevens in één stap importeren omdat het gereedschap metagegevens ondersteunt. Er is geen andere stap nodig om de metagegevens toe te passen, bijvoorbeeld met een apart gereedschap.
 
 ### Procesuitvoeringen {#process-renditions}
 
-Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de DAM Update Asset-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de DAM Update Asset-workflow dupliceren en aanpassen aan uw wensen. Sommige stappen in het standaardwerkschema zijn niet noodzakelijk voor u, zoals het produceren Scene7 PTIFF of de serverintegratie InDesign.
+Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de DAM Update Asset-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de DAM Update Asset-workflow dupliceren en aanpassen aan uw wensen. Sommige stappen in de standaardworkflow zijn mogelijk niet nodig voor u, zoals Scene7 PTIFF-generatie of InDesign-serverintegratie.
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 
@@ -84,7 +88,7 @@ Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om h
 
 ### Elementen activeren {#activate-assets}
 
-Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren aan publiceer landbouwbedrijf. Adobe raadt u weliswaar aan meerdere publicatie-instanties uit te voeren, maar het is het meest efficiënt om alle elementen te repliceren naar één publicatie-instantie en die instantie vervolgens te klonen. Wanneer u grote aantallen elementen activeert en een boomstructuur activeert, moet u mogelijk ingrijpen. Dit is de reden waarom: Als u de activering uitschakelt, worden items toegevoegd aan de wachtrij Verschuivende taken/gebeurtenis. Nadat de grootte van deze rij ongeveer 40.000 punten begint te overschrijden, vertraagt de verwerking dramatisch. Als deze wachtrij groter is dan 100.000 items, heeft de systeemstabiliteit te lijden.
+Voor plaatsingen die een publicatielaag hebben, moet u de activa uit activeren aan publiceer landbouwbedrijf. Hoewel Adobe aanbeveelt meerdere publicatieinstanties uit te voeren, is het het meest efficiënt om alle elementen te repliceren naar één publicatieinstantie en die instantie vervolgens te klonen. Wanneer u grote aantallen elementen activeert en een boomstructuur activeert, moet u mogelijk ingrijpen. Dit is de reden waarom: Als u de activering uitschakelt, worden items toegevoegd aan de wachtrij Verschuivende taken/gebeurtenis. Nadat de grootte van deze rij ongeveer 40.000 punten begint te overschrijden, vertraagt de verwerking dramatisch. Als deze wachtrij groter is dan 100.000 items, heeft de systeemstabiliteit te lijden.
 
 Om dit probleem te verhelpen, kunt u de [Snelle Manager](https://adobe-consulting-services.github.io/acs-aem-commons/features/fast-action-manager.html) van de Actie gebruiken om middelenreplicatie te beheren. Dit werkt zonder de het Verschuiven rijen te gebruiken, verminderend overheadkosten, terwijl het vertragen van de werkbelasting om de server te verhinderen worden overbelast. Een voorbeeld om FAM te gebruiken om replicatie te beheren wordt getoond op de de documentatiepagina van de eigenschap.
 
@@ -112,22 +116,22 @@ Nadat de elementen zijn geactiveerd, kunt u de publicatieinstantie klonen om zov
 
 Nadat we de migratie hebben voltooid, moeten de draagraketten voor de DAM Update Asset-workflows opnieuw worden ingeschakeld om het genereren van vertoningen en het ophalen van metagegevens te ondersteunen voor doorlopend gebruik van het dagelijkse systeem.
 
-## Elementen migreren over AEM-implementaties {#migrate-between-aem-instances}
+## Elementen migreren tussen AEM implementaties {#migrate-between-aem-instances}
 
-Hoewel het bijna niet zo gebruikelijk is, moet u soms grote hoeveelheden gegevens van één instantie AEM aan een andere migreren; Wanneer u bijvoorbeeld een AEM-upgrade uitvoert, upgrade dan uw hardware of migreer u naar een nieuw datacenter, bijvoorbeeld met een AMS-migratie.
+Hoewel niet zo vaak, soms moet u grote hoeveelheden gegevens van één AEM aan een andere migreren; bijvoorbeeld wanneer u een AEM upgrade uitvoert, uw hardware upgradet of naar een nieuw datacenter migreert, zoals met een AMS-migratie.
 
-In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Wanneer het migreren tussen instanties AEM, voert u de volgende stappen uit:
+In dit geval worden uw elementen al gevuld met metagegevens en worden er al uitvoeringen gegenereerd. U kunt zich eenvoudig concentreren op het verplaatsen van elementen van de ene naar de andere instantie. Wanneer het migreren tussen AEM instanties, voert u de volgende stappen uit:
 
 1. Workflows uitschakelen: Omdat u uitvoeringen samen met onze elementen migreert, wilt u de werkstroomstarters voor DAM Update Asset uitschakelen.
 
-1. Labels migreren: Omdat u al tags hebt geladen in de AEM-broninstantie, kunt u deze maken in een inhoudspakket en het pakket installeren op de doelinstantie.
+1. Labels migreren: Omdat er al tags zijn geladen in de AEM, kunt u deze maken in een inhoudspakket en het pakket op de doelinstantie installeren.
 
-1. Elementen migreren: Er zijn twee gereedschappen die u kunt adviseren om elementen van de ene naar de andere AEM-instantie te verplaatsen:
+1. Elementen migreren: Er zijn twee gereedschappen die u kunt adviseren om elementen van de ene AEM naar de andere te verplaatsen:
 
    * **Met Vault Remote Copy** of `vlt rcp`, kunt u de vlt in een netwerk gebruiken. U kunt een bron- en doelmap opgeven en met vlt alle gegevens in de opslagplaats van de ene instantie downloaden en in de andere instantie laden. Vlt rcp is te vinden op [https://jackrabbit.apache.org/filevault/rcp.html](https://jackrabbit.apache.org/filevault/rcp.html)
-   * **Grabbit** is een opensource-hulpprogramma voor inhoudssynchronisatie dat door Time Warner Cable voor hun AEM-implementatie is ontwikkeld. Omdat het ononderbroken gegevensstromen, in vergelijking met vlt rcp gebruikt, heeft het een lagere latentie en beweert een snelheidsverbetering van twee tot tien keer sneller dan vlt rcp. Grabbit ondersteunt ook alleen synchronisatie van delta-inhoud, waardoor wijzigingen kunnen worden gesynchroniseerd nadat een initiële migratievoldoende is voltooid.
+   * **Grabbit** is een opensource-hulpprogramma voor inhoudssynchronisatie dat door Time Warner Cable voor hun AEM implementatie is ontwikkeld. Omdat het ononderbroken gegevensstromen, in vergelijking met vlt rcp gebruikt, heeft het een lagere latentie en beweert een snelheidsverbetering van twee tot tien keer sneller dan vlt rcp. Grabbit ondersteunt ook alleen synchronisatie van delta-inhoud, waardoor wijzigingen kunnen worden gesynchroniseerd nadat een initiële migratievoldoende is voltooid.
 
-1. Elementen activeren: Volg de instructies voor het [activeren van elementen](#activate-assets) die zijn gedocumenteerd voor de eerste migratie naar AEM.
+1. Elementen activeren: Volg de instructies voor het [activeren van middelen](#activate-assets) die zijn gedocumenteerd voor de eerste migratie naar AEM.
 
 1. Kloonpublicatie: Net als bij een nieuwe migratie is het efficiënter om één publicatieexemplaar te laden en te klonen dan de inhoud op beide knooppunten te activeren. Zie Publiceren [klonen.](#clone-publish)
 
