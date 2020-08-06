@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: d816bf2e-5236-4084-b7c4-c32b72cdff97
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2548'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
 
 **Informatie over de PDF-hulpprogramma&#39;s**
 
-De service PDF-hulpprogramma&#39;s kan converteren tussen PDF- en XDP-bestandsindelingen, PDF-documenteigenschappen instellen en ophalen en XMP-metagegevens bewerken. Voordat u bijvoorbeeld een PDF-document naar een andere indeling converteert, is het handig om de eigenschappen te controleren om te bepalen welke servicebewerking moet worden aangeroepen voor de conversie.
+De service PDF-hulpprogramma&#39;s kan converteren tussen PDF- en XDP-bestandsindelingen, PDF-documenteigenschappen instellen en ophalen en XMP metagegevens bewerken. Voordat u bijvoorbeeld een PDF-document naar een andere indeling converteert, is het handig om de eigenschappen te controleren om te bepalen welke servicebewerking moet worden aangeroepen voor de conversie.
 
 U kunt deze taken uitvoeren met de service PDF-hulpprogramma&#39;s:
 
@@ -66,7 +69,7 @@ Nadat u de serviceclient hebt gemaakt, kunt u de conversiebewerking PDF naar XDP
 
 [PDF-documenten converteren naar XDP-documenten met de webservice-API](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -90,7 +93,7 @@ PDF-documenten converteren naar XDP-documenten met de API voor PDF-hulpprogramma
 
 [PDF-documenten converteren naar XDP-documenten](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -115,7 +118,7 @@ Converteer PDF-documenten naar XDP-documenten met de PDF Utilities API (webservi
 
 [PDF-documenten converteren naar XDP-documenten](pdf-utilities.md#converting-pdf-documents-into-xdp-documents)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
@@ -153,7 +156,7 @@ Nadat u de serviceclient hebt gemaakt, kunt u de conversiebewerking XDP naar PDF
 
 [XDP-documenten converteren naar PDF-documenten met de webservice-API](pdf-utilities.md#converting-xdp-documents-into-pdf-documents-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -177,7 +180,7 @@ XDP-documenten converteren naar PDF-documenten met de PDF Utilities API (Java):
 
 [XDP-documenten converteren naar PDF-documenten](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -202,13 +205,13 @@ XDP-documenten converteren naar PDF-documenten met behulp van de PDF Utilities A
 
 [XDP-documenten converteren naar PDF-documenten](pdf-utilities.md#converting-xdp-documents-into-pdf-documents)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
 ## Eigenschappen PDF-document ophalen {#retrieving-pdf-document-properties}
 
-Met de PDF-hulpprogramma&#39;s Java en API&#39;s voor webservices kunt u PDF-documenteigenschappen programmatisch ophalen, bijvoorbeeld of het document een invulbaar formulier is of de minimale Acrobat-versie die is vereist om het document te lezen.
+Met de PDF Utilities Java en de webservice-API&#39;s kunt u PDF-documenteigenschappen programmatisch ophalen, bijvoorbeeld of het document een invulbaar formulier is of de minimaal vereiste Acrobat-versie om het document te lezen.
 
 >[!NOTE]
 >
@@ -240,7 +243,7 @@ Nadat u de de dienstcliënt creeert, kunt u de eigenschappen terugwinningsverric
 
 [Eigenschappen van PDF-documenten ophalen met de webservice-API](pdf-utilities.md#retrieve-pdf-document-properties-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -262,13 +265,14 @@ U kunt de eigenschappen van PDF-documenten ophalen met de API voor PDF-hulpprogr
 
    * Een `com.adobe.idp.Document` object dat staat voor het PDF-document.
    * Een `PDFPropertiesOptionSpec` object dat de eigenschappen bevat die moeten worden geëvalueerd.
+
    De methode retourneert een `PDFPropertiesResult` object dat de resultaten van de query bevat.
 
 **Zie ook**
 
 [Eigenschappen PDF-document ophalen](pdf-utilities.md#retrieving-pdf-document-properties)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -291,13 +295,14 @@ U kunt de eigenschappen van PDF-documenten ophalen met de API voor de PDF-hulppr
 
    * Een `BLOB` object dat staat voor het PDF-document.
    * Een `PDFPropertiesOptionSpec` object dat de eigenschappen bevat die moeten worden geëvalueerd.
+
    De methode retourneert een `PDFPropertiesResult` object dat de resultaten van de query bevat.
 
 **Zie ook**
 
 [Eigenschappen PDF-document ophalen](pdf-utilities.md#retrieving-pdf-document-properties)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
@@ -339,9 +344,9 @@ U kunt een van de volgende opslagopties kiezen:
 
 Nadat u de de dienstcliënt creeert, kunt u de eigenschappen terugwinningsverrichting aanhalen.
 
-**Het PDF-document doorgeven aan een andere bewerking in AEM Forms**
+**Het PDF-document doorgeven aan een andere AEM Forms-bewerking**
 
-Nadat de service PDF-hulpprogramma&#39;s de opgegeven opslagmodus heeft ingesteld, geeft u het PDF-document door aan een andere bewerking voor AEM-formulieren. Nadat het PDF-document door die bewerking is geretourneerd, wordt het in de opgegeven modus opgeslagen. Als u bijvoorbeeld de service PDF-hulpprogramma&#39;s gebruikt om de `FAST_WEB_VIEW` modus in te stellen en het PDF-document vervolgens doorgeeft aan de `encryptUsingPassword` bewerking van de coderingsservice, wordt het geretourneerde PDF-document versleuteld met een wachtwoord en opgeslagen in de `FAST_WEB_VIEW` modus.
+Nadat de service PDF-hulpprogramma&#39;s de opgegeven opslagmodus heeft ingesteld, geeft u het PDF-document door aan een andere AEM Forms-bewerking. Nadat het PDF-document door die bewerking is geretourneerd, wordt het in de opgegeven modus opgeslagen. Als u bijvoorbeeld de service PDF-hulpprogramma&#39;s gebruikt om de `FAST_WEB_VIEW` modus in te stellen en het PDF-document vervolgens doorgeeft aan de `encryptUsingPassword` bewerking van de coderingsservice, wordt het geretourneerde PDF-document versleuteld met een wachtwoord en opgeslagen in de `FAST_WEB_VIEW` modus.
 
 >[!NOTE]
 >
@@ -353,7 +358,7 @@ Nadat de service PDF-hulpprogramma&#39;s de opgegeven opslagmodus heeft ingestel
 
 [Opslagopties voor PDF-documenten instellen met de webservice-API](pdf-utilities.md#set-pdf-document-save-options-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -383,17 +388,18 @@ Stel de opslagopties voor PDF-documenten in met de API voor PDF-hulpprogramma&#3
    * Een `com.adobe.idp.Document` object dat staat voor het PDF-document.
    * Een `PDFUtilitySaveMode` object dat de stijl Opslaan bevat die moet worden gebruikt.
    * Een Booleaanse waarde die wordt gebruikt om te bepalen of vorige instellingen moeten worden overschreven.
+
    De methode retourneert een `com.adobe.idp.Document` object dat is opgemaakt met de opgegeven opslagstijl.
 
-1. Het PDF-document doorgeven aan een andere bewerking in AEM Forms
+1. Het PDF-document doorgeven aan een andere AEM Forms-bewerking
 
-   * Geef het geretourneerde `com.adobe.idp.Document` object door aan een andere bewerking in AEM Forms.
+   * Geef het geretourneerde `com.adobe.idp.Document` object door aan een andere AEM Forms-bewerking.
 
 **Zie ook**
 
 [Modus PDF-document opslaan instellen](pdf-utilities.md#setting-pdf-document-save-modes)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -422,17 +428,18 @@ Stel de opslagopties voor PDF-documenten in met behulp van het AP PDF-hulpprogra
    * Een `BLOB` object dat staat voor het PDF-document.
    * Een `PDFUtilitySaveMode` object dat de stijl Opslaan bevat die moet worden gebruikt.
    * Een Booleaanse waarde die wordt gebruikt om te bepalen of vorige instellingen moeten worden overschreven.
+
    De methode retourneert een `BLOB` object dat is opgemaakt met de opgegeven opslagstijl. U kunt dat object vervolgens opslaan als een PDF-document.
 
-1. Het PDF-document doorgeven aan een andere formulierbewerking
+1. Het PDF-document doorgeven aan een andere Forms-bewerking
 
-   * Geef het geretourneerde `BLOB` object door aan een andere bewerking in AEM Forms.
+   * Geef het geretourneerde `BLOB` object door aan een andere AEM Forms-bewerking.
 
 **Zie ook**
 
 [Modus PDF-document opslaan instellen](pdf-utilities.md#setting-pdf-document-save-modes)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
@@ -470,7 +477,7 @@ Nadat u de de dienstcliënt creeert, kunt u de ontsmettingsverrichting aanhalen.
 
 [PDF-documenten converteren naar XDP-documenten met de webservice-API](pdf-utilities.md#convert-pdf-documents-into-xdp-documents-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -494,6 +501,6 @@ Documenten ontsmetten met de API voor PDF-hulpprogramma&#39;s (Java):
 
 [PDF-documenten ontsmetten](/help/forms/developing/pdf-utilities-service-java-api.md#quick-start-soap-mode-sanitizing-pdf-documents)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
