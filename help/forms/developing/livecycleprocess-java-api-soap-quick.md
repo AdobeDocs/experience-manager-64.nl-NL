@@ -11,6 +11,9 @@ topic-tags: develop
 discoiquuid: 9c17fa2d-0337-4204-822e-dcdafebf0e4d
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '403'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,11 @@ De Java API (SOAP) Quick Start is beschikbaar voor processen. Een *procesinstant
 
 [Snel starten (SOAP-modus): De status van een taak ophalen met de Java API](livecycleprocess-java-api-soap-quick.md#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met Vormen wordt gevestigd AEM is gebaseerd op de Vormen als u een ander werkend systeem, zoals Unix gebruikt, vervangt vensters specifieke wegen met wegen door het toepasselijke werkende systeem dat worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Quick start in Programming with AEM Forms is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 ## Snel starten (SOAP-modus): Zoeken naar procesinstanties met de Java API {#quick-start-soap-mode-searching-for-process-instances-using-the-java-api}
 
@@ -535,7 +538,7 @@ Met de volgende Java-code worden gegevens verwijderd uit een proces met de naam 
 
 ## Snel starten (SOAP-modus): De status van een taak ophalen met de Java API {#quick-start-soap-mode-retrieving-the-status-of-a-job-using-the-java-api}
 
-In het volgende codevoorbeeld wordt de status van 10 taken in AEM Forms opgehaald.
+In het volgende codevoorbeeld wordt de status van 10 AEM Forms-taken opgehaald.
 
 ```as3
  /* 
