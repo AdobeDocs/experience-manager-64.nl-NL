@@ -1,8 +1,8 @@
 ---
 title: Beveiligingscontrolelijst
 seo-title: Beveiligingscontrolelijst
-description: Lees meer over de verschillende beveiligingsoverwegingen bij het configureren en implementeren van AEM.
-seo-description: Lees meer over de verschillende beveiligingsoverwegingen bij het configureren en implementeren van AEM.
+description: Leer over de diverse veiligheidsoverwegingen wanneer het vormen en het opstellen van AEM.
+seo-description: Leer over de diverse veiligheidsoverwegingen wanneer het vormen en het opstellen van AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Beveiligingscontrolelijst{#security-checklist}
 
-Deze sectie behandelt diverse stappen die u zou moeten nemen om ervoor te zorgen dat uw installatie AEM wanneer opgesteld veilig is. De controlelijst moet van boven naar beneden worden toegepast.
+Deze sectie behandelt diverse stappen die u zou moeten nemen om ervoor te zorgen dat uw AEM installatie wanneer opgesteld veilig is. De controlelijst moet van boven naar beneden worden toegepast.
 
 >[!NOTE]
 >
@@ -32,7 +32,7 @@ Deze sectie behandelt diverse stappen die u zou moeten nemen om ervoor te zorgen
 
 ## Belangrijkste veiligheidsmaatregelen {#main-security-measures}
 
-### AEM uitvoeren in productiekeuze modus {#run-aem-in-production-ready-mode}
+### AEM uitvoeren in de productielodus {#run-aem-in-production-ready-mode}
 
 Voor meer informatie, zie het [Lopen AEM in Productie Klaar Wijze](/help/sites-administering/production-ready.md).
 
@@ -48,13 +48,13 @@ Het inschakelen van de HTTPS-transportlaag op zowel auteur- als publicatieinstan
 
 Controleer of u de nieuwste [beveiligingshotfixes van Adobe](https://helpx.adobe.com/experience-manager/kb/aem63-available-hotfixes.html)hebt geïnstalleerd.
 
-### Standaardwachtwoorden voor AEM- en OSGi-console-beheeraccounts wijzigen {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
+### Standaardwachtwoorden voor de AEM- en OSGi-console-beheeraccounts wijzigen {#change-default-passwords-for-the-aem-and-osgi-console-admin-accounts}
 
-Adobe raadt u ten zeerste aan om na de installatie het wachtwoord voor de geprivilegieerde [**AEM **-`admin`accounts](#changing-the-aem-admin-password)te wijzigen (in alle gevallen).
+Adobe adviseert sterk dat u na installatie het wachtwoord voor de bevoorrechte [**AEM **`admin`rekeningen](#changing-the-aem-admin-password)(op alle gevallen) verandert.
 
 Deze rekeningen omvatten:
 
-* De AEM- `admin` account
+* De AEM `admin` account
 
    Nadat u het wachtwoord voor de AEM-beheerdersaccount hebt gewijzigd, moet u het nieuwe wachtwoord gebruiken om toegang te krijgen tot CRX.
 
@@ -64,9 +64,9 @@ Deze rekeningen omvatten:
 
 Deze twee rekeningen gebruiken afzonderlijke geloofsbrieven en het hebben van verschillend, sterk wachtwoord voor elk is essentieel voor een veilige plaatsing.
 
-#### Het AEM-beheerwachtwoord wijzigen {#changing-the-aem-admin-password}
+#### Het AEM-beheerderswachtwoord wijzigen {#changing-the-aem-admin-password}
 
-Het wachtwoord voor de AEM-beheerdersaccount kan worden gewijzigd via de [Granite Operations - Users](/help/sites-administering/granite-user-group-admin.md) console.
+Het wachtwoord voor de AEM-beheerdersaccount kan worden gewijzigd via de [console voor Granite Operations - Users](/help/sites-administering/granite-user-group-admin.md) .
 
 Hier kunt u het `admin` account bewerken en het wachtwoord [](/help/sites-administering/granite-user-group-admin.md#changing-the-password-for-an-existing-user)wijzigen.
 
@@ -76,7 +76,7 @@ Hier kunt u het `admin` account bewerken en het wachtwoord [](/help/sites-admini
 
 #### Het belang van het wijzigen van het wachtwoord voor de OSGi-webconsole {#importance-of-changing-the-osgi-web-console-password}
 
-Naast de AEM- `admin` account kan het niet wijzigen van het standaardwachtwoord voor de OSGi-webconsole leiden tot:
+Behalve van de AEM `admin` rekening, kan het nalaten het standaardwachtwoord voor het wachtwoord OSGi Webconsole te veranderen tot leiden:
 
 * Belichting van de server met een standaardwachtwoord tijdens opstarten en afsluiten (wat minuten kan duren voor grote servers);
 * Belichting van de server wanneer de opslagplaats is neer/herstart bundel - en OSGI loopt.
@@ -101,15 +101,15 @@ Dit doet u als volgt:
 
 ### Aangepaste fouthandler implementeren {#implement-custom-error-handler}
 
-Adobe raadt u aan aangepaste pagina&#39;s voor fouthandlers te definiëren, met name voor 404- en 500 HTTP-responscodes, om openbaarmaking van informatie te voorkomen.
+Adobe raadt aan aangepaste pagina&#39;s voor fouthandlers te definiëren, met name voor 404- en 500 HTTP-antwoordcodes, om openbaarmaking van informatie te voorkomen.
 
 >[!NOTE]
 >
 >Zie [hoe ik douanemanuscripten of foutenhandlers](https://helpx.adobe.com/experience-manager/kb/CustomErrorHandling.html) kennisbasisartikel voor meer details kan tot stand brengen.
 
-### Dispatcher-beveiligingscontrolelijst voltooien {#complete-dispatcher-security-checklist}
+### Volledige lijst voor beveiligingscontrole voor verzending {#complete-dispatcher-security-checklist}
 
-AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. Adobe raadt u ten zeerste aan de [beveiligingscontrolelijst](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)van de verzender in te vullen.
+AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. Adobe adviseert ten zeerste dat u de [verzender veiligheidscontrolelijst](https://helpx.adobe.com/experience-manager/dispatcher/using/security-checklist.html)voltooit.
 
 >[!CAUTION]
 >
@@ -119,7 +119,7 @@ AEM Dispatcher is een essentieel onderdeel van uw infrastructuur. Adobe raadt u 
 
 ### Gebruikers voor replicatie en transport configureren {#configure-replication-and-transport-users}
 
-Een standaardinstallatie van AEM specificeert `admin` als gebruiker voor vervoergeloofsbrieven binnen de standaardreplicatieagenten [](/help/sites-deploying/replication.md). Ook, wordt de admin gebruiker gebruikt aan bron de replicatie op het auteurssysteem.
+Een standaardinstallatie van AEM specificeert `admin` als gebruiker voor vervoergeloofsbrieven binnen de standaard [replicatieagenten](/help/sites-deploying/replication.md). Ook, wordt de admin gebruiker gebruikt aan bron de replicatie op het auteurssysteem.
 
 Met het oog op de veiligheid moeten beide aspecten worden gewijzigd om rekening te houden met het specifieke gebruiksgeval in kwestie, waarbij de volgende twee aspecten in acht moeten worden genomen:
 
@@ -131,7 +131,7 @@ Met het oog op de veiligheid moeten beide aspecten worden gewijzigd om rekening 
 
 ### Controleer de beveiligingscontroles op het dashboard Bewerkingen {#check-the-operations-dashboard-security-health-checks}
 
-AEM 6 introduceert het nieuwe Dashboard van Verrichtingen, die op het helpen van systeemexploitanten problemen oplossen en de gezondheid van een geval controleren.
+AEM 6 introduceert het nieuwe Dashboard van Verrichtingen, dat op het helpen van systeemexploitanten problemen oplossen en de gezondheid van een geval controleert.
 
 Het dashboard bevat ook een verzameling veiligheidscontroles. U wordt aangeraden de status van alle beveiligingscontroles te controleren voordat u live gaat met uw productieexemplaar. Raadpleeg de documentatie [van het](/help/sites-administering/operations-dashboard.md)vluchthandboek voor meer informatie.
 
@@ -149,7 +149,7 @@ Deze ontwikkelingsOSGi- bundels zouden op zowel auteur moeten worden gedesinstal
 
 * Adobe CRXDE-ondersteuning (com.adobe.granite.crxde-support)
 * Adobe Granite CRX Explorer (com.adobe.granite.crx-explorer)
-* Adobe Granite CRXDE Lite (com.adobe.granite.crxde-lite)
+* Adobe graniet CRXDE Lite (com.adobe.granite.crxde-lite)
 
 ### Controleren of de ontwikkelingsbundel Sling aanwezig is {#check-if-the-sling-development-bundle-is-present}
 
@@ -157,11 +157,11 @@ De [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) impl
 
 Deze bundel OSGi zou op zowel auteur moeten worden gedesinstalleerd als productieve systemen publiceren alvorens hen toegankelijk te maken.
 
-### Beschermen tegen Smeeuw voor aanvragen voor meerdere sites {#protect-against-cross-site-request-forgery}
+### Protect tegen XSS (cross-site request-vervalsing) {#protect-against-cross-site-request-forgery}
 
 #### Het CSRF-beschermingskader {#the-csrf-protection-framework}
 
-AEM 6.1 schepen met een mechanisme dat hulp tegen de aanvallen van de Vervalsing van het Verzoek van de Deposito&#39;s van de Departement beschermt, genoemd het **Kader** van de Bescherming CSRF. Raadpleeg de [documentatie](/help/sites-developing/csrf-protection.md)voor meer informatie over het gebruik ervan.
+AEM 6.1 schepen met een mechanisme dat hulp tegen de aanvallen van de Vervalsing van het Verzoek van de Deposito&#39;s van de Departement beschermt, genoemd het Kader **van de Bescherming** CSRF. Raadpleeg de [documentatie](/help/sites-developing/csrf-protection.md)voor meer informatie over het gebruik ervan.
 
 #### Het filter Verschuivende verwijzing {#the-sling-referrer-filter}
 
@@ -262,6 +262,7 @@ Een ontkenning van de dienst (Dos) aanval is een poging om een computermiddel ni
    * `.../en.ExtensionDosAttack`
    * `.../en.SelectorDosAttack.html`
    * `.../en.html/SuffixDosAttack`
+
    Alle geldige variaties (bijvoorbeeld retourneren een `200` reactie en zijn geconfigureerd om in cache te worden opgeslagen) worden in de cache opgeslagen door de verzender, wat uiteindelijk leidt tot een volledig bestandssysteem en geen service voor verdere verzoeken.
 
 Er zijn veel punten van configuratie om dergelijke aanvallen te voorkomen, hier bespreken we alleen die welke rechtstreeks verband houden met AEM.
@@ -300,7 +301,7 @@ Om misbruik van DoS te helpen voorkomen, kunt u:
 
       **JSON Max-resultaten** ( `json.maximumresults`)
 
-      in de configuratie voor [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Wanneer deze limiet wordt overschreden, wordt de rendering samengevouwen. De standaardwaarde voor Verkopen binnen AEM is `200`.
+      in de configuratie voor de [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md). Wanneer deze limiet wordt overschreden, wordt de rendering samengevouwen. De standaardwaarde voor Verdelen binnen AEM is `200`.
 
    * Als preventieve maatregel maak de andere standaardrenderers (HTML, gewone tekst, XML) onbruikbaar. Opnieuw door de [Apache Sling GET Servlet](/help/sites-deploying/osgi-configuration-settings.md)te configureren.
    >[!CAUTION]
@@ -315,9 +316,9 @@ Om misbruik van DoS te helpen voorkomen, kunt u:
 
 >[!NOTE]
 >
->Deze beperking moet alleen worden uitgevoerd op AEM-omgevingen die geen Forms gebruiken.
+>Deze beperking moet alleen worden uitgevoerd op AEM omgevingen die geen Forms gebruiken.
 
-Aangezien AEM geen uit de doosindexen voor de `FormChooserServlet`verstrekt, zal het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, gewoonlijk die de instantie AEM aan een halt malen. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het **&amp;ast;.form.&amp;ast;** tekenreeks in query&#39;s.
+Aangezien AEM geen uit de doos indexen voor de `FormChooserServlet`verstrekt, zal het gebruiken van vormselecteurs in vragen een dure bewaarplaats traversal teweegbrengen, gewoonlijk het malen van de AEM instantie aan een halt. Formulierkiezers kunnen worden gedetecteerd door de aanwezigheid van het **&amp;ast;.form.&amp;ast;** tekenreeks in query&#39;s.
 
 Volg onderstaande stappen om dit te beperken:
 
@@ -330,9 +331,9 @@ Volg onderstaande stappen om dit te beperken:
 
 **Mitigate Against DoS Caused by Asset Download Servlet**
 
-Met de standaard Asset Download Server in AEM kunnen geverifieerde gebruikers willekeurig grote, gelijktijdige downloadaanvragen afgeven voor het maken van ZIP-bestanden met middelen die zichtbaar zijn voor hen en die de server en/of het netwerk kunnen overbelasten.
+De standaard Server van de Download van Activa in AEM staat voor authentiek verklaarde gebruikers toe om willekeurig-grote, gezamenlijke downloadverzoeken uit te geven voor het creëren van ZIP dossiers van activa zichtbaar aan hen die de server en/of het netwerk kunnen overbelasten.
 
-Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, is de component `AssetDownloadServlet` OSGi gehandicapt door gebrek voor te publiceren instanties op recentste versies AEM.
+Om potentiële risico&#39;s van Dos te verlichten die door deze eigenschap worden veroorzaakt, is de component `AssetDownloadServlet` OSGi gehandicapt door gebrek voor te publiceren instanties op recentste AEM versies.
 
 Als de installatie vereist dat de Asset Download Server is ingeschakeld, raadpleegt u [dit artikel](/help/assets/download-assets-from-aem.md#disable-asset-download-servlet) voor meer informatie.
 
@@ -366,9 +367,9 @@ WebDAV moet worden uitgeschakeld in zowel de auteur- als de publicatieomgeving. 
 
 Het is belangrijk dat u uw gebruikers beschermt door ervoor te zorgen dat u geen persoonlijk identificeerbare informatie in het pad naar de thuislocatie van gebruikers in de opslagplaats beschikbaar maakt.
 
-Sinds AEM 6.1, wordt de manier de knoopnamen van de gebruiker (die ook als toestemmbaar wordt bekend) identiteitskaart worden opgeslagen veranderd met een nieuwe implementatie van de `AuthorizableNodeName` interface. De nieuwe interface zal niet meer de gebruiker - identiteitskaart in de knoopnaam blootstellen, maar zal een willekeurige naam in plaats daarvan produceren.
+Sinds AEM 6.1, wordt de manier de gebruiker (ook als toestemmbaar bekend) knoopnamen van identiteitskaart opgeslagen met een nieuwe implementatie van de `AuthorizableNodeName` interface veranderd. De nieuwe interface zal niet meer de gebruiker - identiteitskaart in de knoopnaam blootstellen, maar zal een willekeurige naam in plaats daarvan produceren.
 
-Er hoeft geen configuratie te worden uitgevoerd om deze in te schakelen, aangezien dit nu de standaardmanier is om autoriseerbare id&#39;s te genereren in AEM.
+Er hoeft geen configuratie te worden uitgevoerd om deze in te schakelen, aangezien dit nu de standaardmanier is om autoriseerbare id&#39;s in AEM te genereren.
 
 Hoewel niet geadviseerd, kunt u het onbruikbaar maken voor het geval u de oude implementatie voor achterwaartse verenigbaarheid met uw bestaande toepassingen nodig hebt. Hiervoor moet u:
 
@@ -378,7 +379,7 @@ Hoewel niet geadviseerd, kunt u het onbruikbaar maken voor het geval u de oude i
 
 1. Verwijder de **Apache Jackrabbit Oak Random Authorizable Node Name** OSGi-configuratie uit de webconsole.
 
-   Voor gemakkelijkere raadpleging, merk op dat PID voor deze configuratie **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName** is.
+   For easier lookup, note that the PID for this configuration is **org.apache.jackrabbit.oak.security.user.RandomAuthorizableNodeName**.
 
 >[!NOTE]
 >
@@ -392,7 +393,7 @@ Raadpleeg de OWASP-site voor meer [informatie over het aanklikken op een bestand
 
 ### Zorg ervoor dat u de coderingstoetsen op de juiste wijze dupliceert als dat nodig is {#make-sure-you-properly-replicate-encryption-keys-when-needed}
 
-Bepaalde AEM-functies en verificatieschema&#39;s vereisen dat u de coderingssleutels in alle AEM-instanties dupliceert.
+Bepaalde AEM en verificatieschema&#39;s vereisen dat u de coderingssleutels in alle AEM kopieert.
 
 Alvorens u dit doet, gelieve nota te nemen dat de zeer belangrijke replicatie verschillend tussen versies wordt gedaan omdat de manier waarin de sleutels tussen 6.3 en oudere versies worden opgeslagen verschillend is.
 
@@ -406,17 +407,18 @@ Daarom moet u, om uw sleutels over instanties te repliceren, hen van de broninst
 
 Meer specifiek, moet u:
 
-1. Toegang krijgen tot de AEM-instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
+1. Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat.
 1. Zoek de bundel com.adobe.granite.crypto.file in het lokale bestandssysteem. Onder dit pad bijvoorbeeld:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21`
+
    Het `bundle.info` bestand in elke map geeft de naam van de bundel aan.
 
 1. Navigeer naar de gegevensmap. Bijvoorbeeld:
 
    * `<author-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
 
-1. Kopieer de HMAC- en hoofdbestanden.
+1. Kopieer de HMAC- en master bestanden.
 1. Dan, ga naar de doelinstantie u de sleutel HMAC aan wilt dupliceren, en aan de gegevensomslag navigeren. Bijvoorbeeld:
 
    * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
@@ -433,19 +435,19 @@ Meer specifiek, moet u:
 
 #### Replicatietoetsen voor AEM 6.2 en oudere versies {#replicating-keys-for-aem-and-older-versions}
 
-In AEM 6.2 en oudere versies worden de sleutels opgeslagen in de bewaarplaats onder de `/etc/key` knoop.
+In AEM 6.2 en oudere versies worden de sleutels opgeslagen in de repository onder het `/etc/key` knooppunt.
 
 De geadviseerde manier om de sleutels over uw instanties veilig te herhalen is dit knooppunt slechts te herhalen. U kunt knooppunten selectief repliceren via CRXDE Lite:
 
-1. Open CRXDE Lite door naar *https://&lt;serverAddress> te gaan:4502/crx/de/index.jsp*
+1. Open CRXDE Lite door naar *https://&lt;serverTo>:4502/crx/de/index.jsp te gaan*
 1. Select the `/etc/key` node.
 1. Ga naar het tabblad **Replicatie** .
 1. Druk de knoop van de **Replicatie** .
 
-### Een beveiligingstest uitvoeren {#perform-a-penetration-test}
+### Perform a Penetration Test {#perform-a-penetration-test}
 
-Adobe raadt u ten zeerste aan een penetratietest van uw AEM-infrastructuur uit te voeren voordat u verdergaat met de productie.
+Adobe strongly recommends to perform a penetration test of your AEM infrastructure before going on production.
 
-### Aanbevolen werkwijzen voor ontwikkeling {#development-best-practices}
+### Development Best Practices {#development-best-practices}
 
-Het is essentieel dat de nieuwe ontwikkeling de Beste praktijken [van de](/help/sites-developing/security.md) Veiligheid volgt om uw milieu AEM veilig te verzekeren.
+It is critical that new development are following the [Security Best Practices](/help/sites-developing/security.md) to ensure your AEM environement stays safe.
