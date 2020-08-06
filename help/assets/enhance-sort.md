@@ -1,24 +1,27 @@
 ---
 title: Verbeterde sortering van elementen in AEM
-description: Leer hoe AEM Middelen server-zijsortering aan de activa van de soortomslag of een onderzoeksvraag bij één keer opstelt in plaats van hen in partijen op de cliëntkant te sorteren.
+description: Leer hoe AEM Assets sortering aan de serverzijde implementeert om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches op de client te sorteren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
 
 # Verbeterde sortering van elementen in AEM {#enhanced-sorting-of-assets-in-aem}
 
-Leer hoe AEM Middelen server-zijsortering aan de activa van de soortomslag of een onderzoeksvraag bij één keer opstelt in plaats van hen in partijen op de cliëntkant te sorteren.
+Leer hoe AEM Assets sortering aan de serverzijde implementeert om mapelementen of een zoekquery tegelijk te sorteren in plaats van ze in batches op de client te sorteren.
 
-De zoekmogelijkheden van Adobe Experience Manager (AEM)-middelen zijn verbeterd en kunnen op efficiënte wijze een groot aantal middelen sorteren in de weergave met de mappenlijst en op pagina&#39;s met zoekresultaten. U kunt ook tijdlijnitems sorteren.
+De zoekfunctie van Adobe Experience Manager-middelen (AEM) is verbeterd en daarmee kunt u op efficiënte wijze een groot aantal elementen sorteren in de weergave met de mappenlijst en op pagina&#39;s met zoekresultaten. U kunt ook tijdlijnitems sorteren.
 
-AEM Assets stelt server-zijsortering in om de volledige reeks activa (hoe groot ook) binnen een omslag of een onderzoeksvraag bij één keer te sorteren in plaats van hen in partijen op de cliëntkant te sorteren. Op deze manier kunnen vooraf ingestelde resultaten snel worden weergegeven in de gebruikersinterface, waardoor de sorteerbewerking responsiever en kwetsbaarder wordt.
+AEM Assets sorteert via de server de gehele set elementen (hoe groot ook) binnen een map of zoekopdracht tegelijk in plaats van deze op de client te sorteren. Op deze manier kunnen vooraf ingestelde resultaten snel worden weergegeven in de gebruikersinterface, waardoor de sorteerbewerking responsiever en kwetsbaarder wordt.
 
 ## Elementen sorteren in de lijstweergave {#sorting-assets-in-list-view}
 
-Met AEM-middelen kunt u mapelementen sorteren op basis van de volgende velden:
+Met AEM Assets kunt u mapelementen sorteren op basis van de volgende velden:
 
 * Landinstelling
 * Status
@@ -71,18 +74,18 @@ U kunt zoekresultaten sorteren op basis van de volgende velden:
 
 ## Elementen in tijdlijn sorteren {#sorting-assets-in-timeline}
 
-Met AEM-elementen kunt u tijdlijnitems chronologisch sorteren, zoals annotaties, versies, workflows en activiteiten.
+Met AEM Assets kunt u tijdlijnvermeldingen chronologisch sorteren, zoals annotaties, versies, workflows en activiteiten.
 
 1. Selecteer in de interface Elementen een element waarvoor u de tijdlijn wilt weergeven.
-1. Klik/tik het pictogram GolbalNav en selecteer **[!UICONTROL Chronologie]**.
+1. Klik/tik het pictogram GolbalNav en selecteer **[!UICONTROL Timeline]**.
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. Selecteer een item in de lijst in de tijdlijn. Selecteer bijvoorbeeld **[!UICONTROL Opmerkingen]** om de lijst met annotaties weer te geven die aan het element zijn gekoppeld.
+1. Selecteer een item in de lijst in de tijdlijn. Selecteer deze optie bijvoorbeeld **[!UICONTROL Comments]** om de lijst met annotaties weer te geven die aan het element zijn gekoppeld.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Klik op het pictogram **[!UICONTROL Sorteren]** of tik op het pictogram naast het label **[!UICONTROL Datum]** . Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
+1. Klik op het **[!UICONTROL Sort]** pictogram of tik op het pictogram naast het **[!UICONTROL Date]** label. Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
 
