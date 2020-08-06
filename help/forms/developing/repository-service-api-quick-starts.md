@@ -11,13 +11,16 @@ topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '622'
+ht-degree: 0%
 
 ---
 
 
 # Repository Service API {#repository-service-api-quick-starts}
 
-De volgende snelstarthandleidingen zijn beschikbaar voor de service Repository voor AEM-formulieren.
+De volgende snelstarthandleidingen zijn beschikbaar voor de service AEM Forms Repository.
 
 [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api)
 
@@ -39,13 +42,13 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de service Repository v
 
 [Snel starten (SOAP-modus): Een bron verwijderen met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-deleting-a-resource-using-the-java-api)
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst
+AEM Forms-bewerkingen kunnen worden uitgevoerd met de API met sterke typen voor AEM Forms en de verbindingsmodus moet zijn ingesteld op SOAP
 
 **Applications/FormsApplication**
 
-De meeste AEM Forms repository-services beginnen snel met interactie met een toepassing die is benoemd `Applications/FormsApplication,` zoals in de volgende afbeelding wordt getoond.
+De meeste AEM Forms-opslagservices beginnen snel met interactie met een toepassing die wordt genoemd `Applications/FormsApplication,` zoals in de volgende afbeelding wordt getoond.
 
-De map FormsFolder is een locatie in de opslagplaats van AEM-formulieren. U kunt deze map bijvoorbeeld via programmacode toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
+De map FormsFolder is een locatie in de AEM Forms-opslagplaats. U kunt deze map bijvoorbeeld via programmacode toevoegen aan `Applications/FormsApplication`. (Zie [Snel starten (SOAP-modus): Een map maken met de Java API](repository-service-api-quick-starts.md#quick-start-soap-mode-creating-a-folder-using-the-java-api).)
 
 Het pad naar een bron in de AEM Forms-opslagplaats is:
 
@@ -53,7 +56,7 @@ Het pad naar een bron in de AEM Forms-opslagplaats is:
 
 >[!NOTE]
 >
->U kunt in de AEM Forms Repository door een webbrowser bladeren. Als u in de opslagplaats wilt bladeren, voert u de volgende URL in in een webbrowser https://[servernaam]:[serverpoort]/opslagplaats. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
+>U kunt in de AEM Forms Repository bladeren met een webbrowser. Als u in de opslagplaats wilt bladeren, voert u de volgende URL in in een webbrowser https://[servernaam]:[serverpoort]/opslagplaats. Met een webbrowser kunt u snelstartresultaten controleren. Als u bijvoorbeeld inhoud toevoegt aan de AEM Forms Repository, kunt u de inhoud zien in een webbrowser.
 
 >[!NOTE]
 >
@@ -731,7 +734,7 @@ In het volgende Java-codevoorbeeld wordt gezocht naar Loan.xdp in `Applications/
 
 ## Snel starten (SOAP-modus): Relaties maken tussen bronnen met de Java API {#quick-start-soap-mode-creating-relationships-between-resources-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de opslagplaats van AEM Forms. (Zie [Resourcerelaties](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)maken.)
+In het volgende Java-codevoorbeeld wordt een relatie gemaakt tussen twee bronnen in de AEM Forms-opslagplaats. (Zie [Resourcerelaties](/help/forms/developing/aem-forms-repository.md#creating-resource-relationships)maken.)
 
 ```as3
  /* 
