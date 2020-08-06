@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aeacddc5-a128-40cd-a4c3-07fa173f90c4
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '112'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ De taken van Enablement en de componenten van de Catalogus [van](catalog.md) Ena
 
 De component van Toewijzingen Enablement staat het momenteel ondertekende communautaire lid (student) toe om tot hun toegewezen [inschrijvingsmiddelen](resources.md)toegang te hebben.
 
-Van het [Begonnen worden met Gemeenschappen AEM voor Enablement](getting-started-enablement.md) leerprogramma, zie de mening van een lid van toewijzingen en catalogi in de [Ervaring de Gepubliceerde sectie van de Plaats](enablement-published-site.md) .
+Van de [Begonnen Worden met AEM Communities voor Enablement](getting-started-enablement.md) zelfstudie, zie de mening van een lid van toewijzingen en catalogi in de [Ervaring de Gepubliceerde sectie van de Plaats](enablement-published-site.md) .
 
 ## Additional Information {#additional-information}
 
