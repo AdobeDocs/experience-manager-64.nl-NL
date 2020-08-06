@@ -1,8 +1,8 @@
 ---
 title: Codetips
 seo-title: Codetips
-description: Tips voor codering voor AEM
-seo-description: Tips voor codering voor AEM
+description: Tips voor het coderen van AEM
+seo-description: Tips voor het coderen van AEM
 uuid: 1bb1cc6a-3606-4ef4-a8dd-7c08a7cf5189
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 4adce3b4-f209-4a01-b116-a5e01c4cc123
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '874'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Code wordt één keer geschreven, maar vaak gelezen. Als we enige tijd op voorha
 
 Idealiter hoeft een andere programmeur geen module te openen om te begrijpen wat deze doet. Ze moeten ook kunnen zien wat een methode doet zonder deze te lezen. Hoe beter we ons kunnen abonneren op deze ideeën, hoe gemakkelijker het is om onze code te lezen en hoe sneller we onze code kunnen schrijven en wijzigen.
 
-In de basis van de AEM-code worden de volgende conventies gebruikt:
+In de basis van de AEM code worden de volgende conventies gebruikt:
 
 
 * Er wordt één implementatie van een interface genoemd, `<Interface>Impl`d.w.z. `ReaderImpl`.
@@ -60,7 +63,7 @@ In het ideale geval zouden namen hun intentie moeten onthullen. Een gemeenschapp
  </tbody> 
 </table>
 
-### Niet herhalen {#don-t-repeat-yourself}
+### Niet herhalen  {#don-t-repeat-yourself}
 
 DRY geeft aan dat dezelfde codeset nooit mag worden gedupliceerd. Dit geldt ook voor zaken als letterlijke tekenreeksen. Codeduplicatie opent de deur voor defecten wanneer iets moet veranderen en moet worden gezocht en geëlimineerd.
 
@@ -86,7 +89,7 @@ AEM verstrekt een XSS API om parameters gemakkelijk schoon te maken en veilighei
 
 ### Pas het aangewezen registreren toe {#implement-appropriate-logging}
 
-Voor code Java, steunt AEM slf4j als standaard API voor het registreren van berichten en zou samen met de configuraties moeten worden gebruikt die door de console OSGi voor consistentie in beleid ter beschikking worden gesteld. Slf4j stelt vijf verschillende registrerenniveaus bloot. Wij adviseren gebruikend de volgende richtlijnen wanneer het kiezen welk niveau om een bericht bij te registreren:
+Voor code Java, AEM steunt slf4j als standaard API voor het registreren van berichten en zou samen met de configuraties moeten worden gebruikt die door de console OSGi voor consistentie in beleid ter beschikking worden gesteld. Slf4j stelt vijf verschillende registrerenniveaus bloot. Wij adviseren gebruikend de volgende richtlijnen wanneer het kiezen welk niveau om een bericht bij te registreren:
 
 * FOUT: Wanneer er iets in de code is verbroken en de verwerking niet kan worden voortgezet. Dit gebeurt vaak als gevolg van een onverwachte uitzondering. Het is meestal handig om stacksporen in deze scenario&#39;s op te nemen.
 * WAARSCHUWING: Als iets niet goed heeft gewerkt, maar de verwerking kan doorgaan. Dit zal vaak het resultaat van een uitzondering zijn die wij, zoals een *PathNotFoundException* verwachtten.
