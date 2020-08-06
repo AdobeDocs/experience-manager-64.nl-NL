@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: fb1abaa0-9c02-4f20-aa7c-073def067452
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '676'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
@@ -35,6 +38,7 @@ Banners vertegenwoordigen doorgaans grafische promotionele koppelingen.
    >
    >
 * [Banners maken](https://helpx.adobe.com/digital-publishing-solution/help/creating-banners.html)
+
 >
 
 
@@ -73,7 +77,7 @@ De workflow voor het importeren van een nieuw artikel
 
 ## Een banner bewerken {#editing-a-banner}
 
-Met de ingebouwde AEM-editor voor slepen en neerzetten kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
+Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
 
 >[!CAUTION]
 >
@@ -82,7 +86,7 @@ Met de ingebouwde AEM-editor voor slepen en neerzetten kunt u een artikel toevoe
 De workflow voor het bewerken van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer een banner die afkomstig is van AEM uit de tegel** Banners beheren**.
+1. Selecteer een AEM banner uit de tegel** Banners beheren**.
 1. Klik op de gemarkeerde banner in de lijstweergave om deze te openen in de inhoudseditor.
 1. Gebruik de inhoudeditor om bannerinhoud (manuscripten, afbeeldingen, tekst, enz.) te slepen.
 
@@ -116,7 +120,7 @@ De algemene workflow voor het uploaden van een banner:
 
 ## Een banner verwijderen {#deleting-a-banner}
 
-Met deze bewerking verwijdert u de geselecteerde banner van Mobiel op aanvraag en optioneel van de lokale AEM-instantie.
+Met deze bewerking verwijdert u de geselecteerde banner van Mobiel op aanvraag en optioneel van de lokale AEM.
 
 De algemene workflow voor het verwijderen van een banner:
 
@@ -124,7 +128,7 @@ De algemene workflow voor het verwijderen van een banner:
 1. Selecteer de banner die u wilt verwijderen in de tegel **Banners** beheren.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
 1. Klik op **Verwijderen** op de actiebalk.
-1. Controleer of u zowel AEM- als Mobiel On-Demand wilt verwijderen.
+1. Controleer of u niet alleen mobiele apparaten op aanvraag maar ook AEM wilt verwijderen.
 1. Click **Delete**.
 1. Uw banner is nu verwijderd uit de lijst.
 
