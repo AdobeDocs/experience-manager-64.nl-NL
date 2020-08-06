@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 1e6cc554-aef1-463c-906b-634b80a27917
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2342'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ De DocConverter-service kan PDF-documenten converteren naar PDF/A-documenten. U 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst DocConverter, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ## Documenten converteren naar PDF/A-documenten {#converting-documents-to-pdf-a-documents}
 
@@ -38,7 +41,7 @@ Hoewel PDF/A de standaard is voor het archiveren van PDF-documenten, is het niet
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst DocConverter, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -61,9 +64,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een DocConvert-client maken**
 
@@ -91,7 +94,7 @@ U kunt het PDF/A-document opslaan als een PDF-bestand.
 
 [Documenten converteren naar PDF/A-documenten met de webservice-API](pdf-a-documents.md#convert-documents-to-pdf-a-documents-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -118,7 +121,7 @@ Een PDF-document converteren naar een PDF/A-document met behulp van de Java API:
 1. Trackinggegevens instellen
 
    * Maak een `PDFAConversionOptionSpec` object met de constructor ervan.
-   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAConversionOptionSpec` `setLogLevel` object aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. For example, pass the value `FINE`. Zie de `setLogLevel` methode in de API-naslaggids voor [AEM-formulieren voor informatie over de verschillende waarden](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAConversionOptionSpec` `setLogLevel` object aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. For example, pass the value `FINE`. Zie de `setLogLevel` methode in de [AEM Forms API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor informatie over de verschillende waarden.
 
 1. Het document converteren
 
@@ -126,6 +129,7 @@ Een PDF-document converteren naar een PDF/A-document met behulp van de Java API:
 
    * Het `com.adobe.idp.Document` object dat het te converteren PDF-document bevat
    * Het `PDFAConversionOptionSpec` object dat de trackinggegevens opgeeft
+
    De `toPDFA` methode retourneert een `PDFAConversionResult` object dat het PDF/A-document bevat.
 
 1. Het PDF/A-document opslaan
@@ -140,7 +144,7 @@ Een PDF-document converteren naar een PDF/A-document met behulp van de Java API:
 
 [Snel starten (SOAP-modus): Een document converteren naar een PDF/A-document met de Java API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-converting-a-document-to-a-pdf-a-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -177,6 +181,7 @@ Een PDF-document converteren naar een PDF/A-document met de DocConverter-API (we
 
    * Het `BLOB` object dat het te converteren PDF-document bevat
    * Het `PDFAConversionOptionSpec` object dat de trackinggegevens opgeeft
+
    De `toPDFA` methode retourneert een `PDFAConversionResult` object dat het PDF/A-document bevat.
 
 1. Het PDF/A-document opslaan
@@ -191,7 +196,7 @@ Een PDF-document converteren naar een PDF/A-document met de DocConverter-API (we
 
 [Werken met PDF/A-documenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
 
@@ -201,7 +206,7 @@ Met de DocConverter-service kunt u bepalen of een PDF-document compatibel is met
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst DocConverter, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst DocConverter, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -223,9 +228,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-usermanager-client.jar
 * adobe-docconverter-client.jar
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een DocConvert-client maken**
 
@@ -249,7 +254,7 @@ Nadat u de DocConverter-serviceclient hebt gemaakt, het PDF-document hebt geraad
 
 [PDF/A-compatibiliteit bepalen met de webservice-API](pdf-a-documents.md#determine-pdf-a-compliancy-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -275,7 +280,7 @@ PDF/A-compatibiliteit bepalen met de Java API:
 
    * Maak een `PDFAValidationOptionSpec` object met de constructor ervan.
    * Stel het compatibiliteitsniveau in door de methode van het `PDFAValidationOptionSpec` object aan te roepen en door te geven `setCompliance` `PDFAValidationOptionSpec.Compliance.PDFA_1B`.
-   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAValidationOptionSpec` `setLogLevel` object aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. For example, pass the value `FINE`. Zie de `setLogLevel` methode in de API-naslaggids voor [AEM-formulieren voor informatie over de verschillende waarden](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel het niveau voor het bijhouden van gegevens in door de methode van het `PDFAValidationOptionSpec` `setLogLevel` object aan te roepen en een tekenreekswaarde door te geven die het niveau voor bijhouden opgeeft. For example, pass the value `FINE`. Zie de `setLogLevel` methode in de [AEM Forms API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor informatie over de verschillende waarden.
 
 1. Informatie over het PDF-document ophalen
 
@@ -283,6 +288,7 @@ PDF/A-compatibiliteit bepalen met de Java API:
 
    * Het `com.adobe.idp.Document` object dat het PDF-document bevat.
    * Het `PDFAValidationOptionSpec` object dat uitvoeringsopties opgeeft.
+
    De `isPDFA` methode retourneert een `PDFAValidationResult` object dat de resultaten van deze bewerking bevat.
 
 **Zie ook**
@@ -291,7 +297,7 @@ PDF/A-compatibiliteit bepalen met de Java API:
 
 [Snel starten (SOAP-modus): PDF/A-compatibiliteit bepalen met de Java API](/help/forms/developing/docconverter-service-java-api-quick.md#quick-start-soap-mode-determining-pdf-a-compliancy-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -329,12 +335,13 @@ Bepaal PDF/A-compatibiliteit met de webservice-API:
 
    * Het `BLOB` object dat het PDF-document bevat.
    * Het `PDFAValidationOptionSpec` object dat uitvoeringsopties bevat.
+
    De `isPDFA` methode retourneert een `PDFAValidationResult` object dat de resultaten van deze bewerking bevat.
 
 **Zie ook**
 
 [Werken met PDF/A-documenten](pdf-a-documents.md#working-with-pdf-a-documents)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
 
 [Creërend een .NET cliëntassemblage die het coderen Base64 gebruikt](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding)
