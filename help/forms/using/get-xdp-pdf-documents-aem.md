@@ -1,6 +1,6 @@
 ---
-title: XDP- en PDF-documenten ophalen in AEM-formulieren
-seo-title: XDP- en PDF-documenten ophalen in AEM-formulieren
+title: XDP- en PDF-documenten ophalen in AEM Forms
+seo-title: XDP- en PDF-documenten ophalen in AEM Forms
 description: Met AEM Forms kunt u formulieren en ondersteunde elementen uploaden en gebruiken met adaptieve formulieren. U kunt uploadformulieren en verwante bronnen ook als een ZIP-bestand bulksgewijs verzenden.
 seo-description: Met AEM Forms kunt u formulieren en ondersteunde elementen uploaden en gebruiken met adaptieve formulieren. U kunt uploadformulieren en verwante bronnen ook als een ZIP-bestand bulksgewijs verzenden.
 uuid: c2a86d89-0c56-4d29-932a-dd09277fa7cb
@@ -10,18 +10,21 @@ topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
 
-# XDP- en PDF-documenten ophalen in AEM-formulieren {#getting-xdp-and-pdf-documents-in-aem-forms}
+# XDP- en PDF-documenten ophalen in AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
 
 ## Overzicht {#overview}
 
 U kunt uw formulieren vanuit uw lokale bestandssysteem importeren in de CRX-opslagplaats door deze te uploaden naar AEM Forms. De uploadbewerking wordt ondersteund voor de volgende elementtypen:
 
 * Formuliersjablonen (XFA-formulieren)
-* PDF-formulieren
+* PDF forms
 * Document (vlakke PDF-documenten)
 
 U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U kunt een element van het type alleen `Resource`naast een XFA-formulier uploaden in een ZIP-archief.
@@ -32,7 +35,7 @@ U kunt de ondersteunde elementtypen afzonderlijk of als ZIP-archief uploaden. U 
 
 ## Formulieren uploaden {#uploading-forms}
 
-1. Meld u aan bij de gebruikersinterface van AEM Forms door toegang te krijgen tot `https://[server]:[port]/aem/forms.html`.
+1. Meld u aan bij de AEM Forms-gebruikersinterface door toegang te krijgen tot `https://[server]:[port]/aem/forms.html`.
 1. Navigeer naar de map waarin u het formulier of de map met formulieren wilt uploaden.
 1. Tik op **Maken > Bestand uploaden** op de werkbalk Handelingen.
 
@@ -60,21 +63,21 @@ Wanneer het uploaden is voltooid, genereert een achtergrondworkflow miniaturen v
 
 ### Beveiligde modus {#protected-mode}
 
-Met de AEM Forms-server kunt u JavaScript-code uitvoeren. Een kwaadaardige JavaScript-code kan schadelijk zijn voor een omgeving van AEM Forms. De beveiligde modus beperkt AEM Forms om XDP-bestanden alleen uit te voeren vanuit vertrouwde elementen en locaties. Alle XDP-gegevens die beschikbaar zijn in de gebruikersinterface van AEM Forms worden beschouwd als vertrouwde elementen.
+Met AEM Forms-server kunt u JavaScript-code uitvoeren. Een kwaadaardige JavaScript-code kan schadelijk zijn voor een AEM Forms-omgeving. De beveiligde modus beperkt AEM Forms om XDP-bestanden alleen uit te voeren vanuit vertrouwde elementen en locaties. Alle XDP-gegevens die beschikbaar zijn in de gebruikersinterface van AEM Forms worden beschouwd als vertrouwde elementen.
 
 De beveiligde modus is standaard ingeschakeld. Indien nodig kunt u de beveiligde modus uitschakelen:
 
-1. Meld u als beheerder aan bij de AEM-webconsole. De URL is `https://[server]:[port]/system/console/configMgr`
-1. Open Configuraties van mobiele formulieren voor bewerking.
+1. Meld u als beheerder aan bij AEM webconsole. De URL is `https://[server]:[port]/system/console/configMgr`
+1. Open Mobile Forms Configurations voor bewerking.
 1. Schakel de optie Beveiligde modus uit en klik op **Opslaan**. De beveiligde modus is uitgeschakeld.
 
 ## XFA-formulieren waarnaar wordt verwezen bijwerken {#updating-referenced-xfa-forms}
 
-In AEM Forms kan een XFA-formuliersjabloon worden doorgestuurd door een adaptief formulier of een andere XFA-formuliersjabloon. Ook, kan een malplaatje naar een middel of een ander malplaatje verwijzen XFA.
+In AEM Forms kan naar een XFA-formuliersjabloon worden verwezen door een adaptief formulier of een andere XFA-formuliersjabloon. Ook, kan een malplaatje naar een middel of een ander malplaatje verwijzen XFA.
 
 Voor een adaptief formulier dat verwijst naar een XFA, zijn de velden gebonden aan de velden die beschikbaar zijn in de XFA. Bij het bijwerken van een formuliersjabloon probeert het bijbehorende adaptieve formulier te synchroniseren met de XFA. Zie Aangepaste formulieren [synchroniseren met de bijbehorende XFA](/help/forms/using/synchronizing-adaptive-forms-xfa.md)voor meer informatie.
 
-Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formulier of de afhankelijke formuliersjabloon beschadigd. Een dergelijk adaptief formulier wordt soms informeel een vuile vorm genoemd. In de gebruikersinterface van AEM Forms kunt u de vuile formulieren op de volgende twee manieren vinden.
+Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formulier of de afhankelijke formuliersjabloon beschadigd. Een dergelijk adaptief formulier wordt soms informeel een vuile vorm genoemd. In de gebruikersinterface van AEM Forms kunt u op de volgende twee manieren de vuile formulieren vinden.
 
 * Er wordt een waarschuwingspictogram weergegeven op de miniatuur van het aangepaste formulier in de lijst met elementen. Het volgende bericht wordt weergegeven wanneer u de aanwijzer boven het waarschuwingspictogram houdt.
 
