@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: a8063d43-923a-42ac-9a16-0c7fadd8f73f
 translation-type: tm+mt
 source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+workflow-type: tm+mt
+source-wordcount: '457'
+ht-degree: 7%
 
 ---
 
 
 # Werken met Dynamic Media {#working-with-dynamic-media}
 
-[Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u op aanvraag rijke visuele producten en marketingmaterialen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set hoofdelementen genereert Dynamic Media meerdere variaties van rijke inhoud in realtime via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u op aanvraag rijke visuele producten en marketingmaterialen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set master elementen genereert Dynamic Media in real-time meerdere variaties van rijke inhoud en levert het via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
-Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamische media verenigt op unieke wijze de workflows van de Adobe Experience Manager-oplossing voor het beheer van digitale elementen om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
+Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamische media verenigt op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
 >[!NOTE]
 >
@@ -62,7 +65,7 @@ Wanneer u op een afbeeldingselement klikt, is de weergave van het element anders
 
 ### Dynamische uitvoeringen {#dynamic-renditions}
 
-Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamisch]**) zijn beschikbaar wanneer Dynamische media is ingeschakeld.
+Dynamische uitvoeringen zoals voorinstellingen voor afbeeldingen en viewers (onder **[!UICONTROL Dynamic]**) zijn beschikbaar wanneer Dynamische media is ingeschakeld.
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
 
