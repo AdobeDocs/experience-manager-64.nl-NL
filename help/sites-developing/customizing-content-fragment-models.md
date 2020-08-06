@@ -1,5 +1,5 @@
 ---
-title: PUBLICEREN NIET, MAAR HET AANPASSEN VAN modellen van inhoudsfragmenten NIET VERWIJDEREN
+title: PUBLICEREN NIET, MAAR DELETE Aanpassen van modellen van inhoudsfragmenten niet
 seo-title: Modellen voor inhoudsfragmenten aanpassen
 description: Modellen voor inhoudsfragmenten kunnen worden aangepast en uitgebreid.
 seo-description: Modellen voor inhoudsfragmenten kunnen worden aangepast en uitgebreid.
@@ -10,13 +10,16 @@ discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '598'
+ht-degree: 0%
 
 ---
 
 
-# PUBLICEREN NIET, MAAR HET AANPASSEN VAN modellen van inhoudsfragmenten NIET VERWIJDEREN{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
+# PUBLICEREN NIET, MAAR DELETE Aanpassen van modellen van inhoudsfragmenten niet{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
-De redacteur van het Model van het Fragment van de Inhoud is een tovenaar die op wordt gebaseerd `Formbuilder`, van wordt geërft:
+De editor van het Content Fragment Model is een wizard die is gebaseerd op `Formbuilder`, wordt overgeërfd van:
 
 `granite/ui/components/foundation/form/formbuilder`
 
@@ -26,7 +29,8 @@ Deze component heeft de hulpmiddelen noodzakelijk om de belemmering en dalingsin
 
 Modellen worden opgeslagen en gemaakt onder `/conf`een map waarin de eigenschap [Modellen](/help/assets/content-fragments-models.md#enable-content-fragment-models) inhoudsfragment is ingeschakeld. Dit plaatsen kan ook in de Eigenschappen **van de** Configuratie worden gezien, toegankelijk van Browser **van de** Configuratie.
 
-1. Navigeer naar de browser via **Hulpmiddelen**, **Algemeen**, Browser **van de** Configuratie bijvoorbeeld, `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
+1. Navigeer naar de browser via **Hulpmiddelen**, **Algemeen**, Browser **van de** Configuratie bijvoorbeeld, 
+`http://localhost:4502/libs/granite/configurations/content/view.html/conf`
 
 1. Selecteer in de browser de gewenste configuratie en kies vervolgens **Eigenschappen** op de werkbalk.
 
@@ -40,7 +44,7 @@ Een gebruiker kan een model [van het inhoudsfragment](/help/assets/content-fragm
 >
 >U ***mag*** niets in het `/libs` pad wijzigen.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 ## Structuur van een model {#structure-of-a-model}
 
@@ -73,7 +77,7 @@ De wizard maakt een bericht met deze structuur:
 >
 >Alle gegevenstypes die in een modelredacteur worden gesleept en worden gelaten vallen, en als dergelijke geconcretiseerd, **moeten** de `name` bezitsinput door de gebruiker hebben.
 >
->**Dit wordt gezien als** Eigenschapnaam&amp;ast; op het tabblad **Eigenschappen** van de modeleditor.
+>Dit wordt gezien als **Eigenschapnaam&amp;ast;** op het tabblad **Eigenschappen** van de modeleditor.
 
 ## Structuur van de modeleditor {#structure-of-the-model-editor}
 
@@ -101,7 +105,7 @@ De Editor **van het** inhoudsfragmentmodel bestaat uit twee delen:
 >
 >U ***mag*** niets in het `/libs` pad wijzigen.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 <!-- Please uncomment when files are used
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).
@@ -109,7 +113,7 @@ The properties on the right side define a form that is submitted directly into J
 
 Wanneer een gegevenstype wordt geconcretiseerd, worden de input van HTML gecreeerd voor elke bezit de component in een inhoudsfragment moet worden teruggegeven. Dit zijn bijvoorbeeld:
 
-* **** Eigenschapnaam&amp;ast; ( `name`) - fungeert als id voor componenten
+* **Eigenschapnaam&amp;ast;** ( `name`) - fungeert als id voor componenten
 
 * **Renderen als** ( `metaType`) - typ de component als moet worden gerenderd
 
