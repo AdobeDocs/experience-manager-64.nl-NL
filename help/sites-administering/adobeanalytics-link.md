@@ -1,6 +1,6 @@
 ---
-title: Koppelingen bijhouden configureren voor Adobe Analytics
-seo-title: Koppelingen bijhouden configureren voor Adobe Analytics
+title: Koppeling bijhouden configureren voor Adobe Analytics
+seo-title: Koppeling bijhouden configureren voor Adobe Analytics
 description: Leer over het vormen van verbinding het volgen voor SiteCatalyst.
 seo-description: Leer over het vormen van verbinding het volgen voor SiteCatalyst.
 uuid: b6d5bd1c-f91a-4d38-9e9e-dc2bcb271dae
@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Koppelingen bijhouden configureren voor Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
+# Koppeling bijhouden configureren voor Adobe Analytics{#configuring-link-tracking-for-adobe-analytics}
 
-Wanneer gebruikers op koppelingen op pagina&#39;s van uw website klikken, kunt u gerelateerde informatie vastleggen in Adobe Analytics. Gebruik bijvoorbeeld het bijhouden van koppelingen om te leren hoe gebruikers met uw site werken, het downloaden van bestanden bijhouden en afsluitkoppelingen volgen.
+Wanneer gebruikers op koppelingen op pagina&#39;s van uw website klikken, kunt u gerelateerde informatie in Adobe Analytics vastleggen. Gebruik bijvoorbeeld het bijhouden van koppelingen om te leren hoe gebruikers met uw site werken, het downloaden van bestanden bijhouden en afsluitkoppelingen volgen.
 
-## Koppelingen bijhouden configureren voor een Adobe Analytics Framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
+## Koppelingen bijhouden configureren voor een Adobe Analytics-framework {#configuring-link-tracking-for-an-adobe-analytics-framework}
 
-1. Ga met **Navigatie** via **Implementatie** naar de sectie **Adobe Analytics** . Ga **Cloud Servicen** naar de sectie Adobe.
+1. Gebruikend **Navigatie**, ga via **Plaatsing**, **Cloud Services** aan de sectie van **Adobe Analytics** .
 
 1. Open het vereiste Adobe Analytics-framework met **Configuraties** tonen.
 1. Breid de sectie van de Configuratie **van het Volgen van de** Verbinding uit en vorm zoals vereist (deze pagina verstrekt verdere details):
@@ -33,7 +33,7 @@ Wanneer gebruikers op koppelingen op pagina&#39;s van uw website klikken, kunt u
 
 ## Bestandsdownloads volgen {#tracking-file-downloads}
 
-Configureer het Adobe Analytics-framework zodat bestanden die u hebt gedownload van gekoppelde pagina&#39;s, automatisch worden bijgehouden als downloads in Adobe Analytics. Wanneer u het bijhouden van downloads inschakelt, worden alleen de bestandstypen bijgehouden die u opgeeft.
+Configureer het Adobe Analytics-framework zodanig dat bestanden die zijn gedownload van gekoppelde pagina&#39;s automatisch worden bijgehouden als downloads in Adobe Analytics. Wanneer u het bijhouden van downloads inschakelt, worden alleen de bestandstypen bijgehouden die u opgeeft.
 
 Downloads van de volgende bestandstypen worden standaard bijgehouden:
 
@@ -58,9 +58,9 @@ s.trackDownloadLinks= true;
 s.linkDownloadFileTypes= 'exe,zip,wav,mp3,mov,mpg,avi,wmv,doc,pdf,xls';
 ```
 
-U schakelt het bijhouden van downloads voor uw Adobe Analytics-framework als volgt in:
+Downloadtracering inschakelen voor uw Adobe Analytics-framework:
 
-1. [Open het Adobe Analytics-framework en vouw de sectie](#configuring-link-tracking-for-an-adobe-analytics-framework)Configuratie van bijhouden van koppelingen uit.
+1. [Open het kader van Adobe Analytics en breid de sectie](#configuring-link-tracking-for-an-adobe-analytics-framework)van de Configuratie van het Volgen van de Verbinding uit.
 1. Schakel **Trackdownloads** in.
 1. Typ in het vak Bestandstypen **** downloaden de bestandsextensies voor de bestandstypen die u wilt bijhouden.
 
@@ -70,7 +70,7 @@ U kunt het klikken van externe verbindingen (uitgangsverbindingen) op uw pagina&
 
 Externe koppelingen voor uw Adobe Analytics-framework volgen:
 
-1. [Open het Adobe Analytics-framework en vouw de sectie Configuratie **van** Koppeling bijhouden uit](#configuring-link-tracking-for-an-adobe-analytics-framework).
+1. [Open het kader van Adobe Analytics en breid de sectie **van de Configuratie** van het Volgen van de](#configuring-link-tracking-for-an-adobe-analytics-framework)Verbinding uit.
 1. Configureer de volgende eigenschappen volgens uw vereisten.
 
 Eigenschappen voor het bijhouden wanneer op externe koppelingen wordt geklikt:
@@ -106,18 +106,18 @@ s.linkLeaveQueryString= false;
 
 ## Variabelegegevens verzenden met klikken op koppeling {#sending-variable-data-with-link-clicks}
 
-U kunt AEM zodanig configureren dat gebeurtenis- en variabele gegevens naar Adobe Analytics worden verzonden wanneer een gebruiker op een koppeling klikt. Met de eigenschappen Configuratie **van** Koppeling bijhouden kunt u de Adobe Analytics-gebeurtenissen en -variabelen opgeven die moeten worden bijgehouden wanneer op een koppeling wordt geklikt.
+U kunt AEM configureren om gebeurtenis- en variabele gegevens naar Adobe Analytics te verzenden wanneer een gebruiker op een koppeling klikt. Met de eigenschappen Configuratie **van** Koppeling bijhouden kunt u de Adobe Analytics-gebeurtenissen en -variabelen opgeven die moeten worden bijgehouden wanneer op een koppeling wordt geklikt.
 
-De frameworktoewijzingen bepalen de gebeurtenis- en veranderlijke waarden. U kunt Adobe Analytics-variabelen toewijzen aan de variabelen van uw inhoudscomponenten, waarin de gegevens worden opgeslagen die u wilt bijhouden wanneer op koppelingen wordt geklikt.
+De frameworktoewijzingen bepalen de gebeurtenis- en veranderlijke waarden. U kunt Adobe Analytics-variabelen toewijzen aan de variabelen van de inhoudscomponenten die de gegevens opslaan die u wilt bijhouden wanneer op koppelingen wordt geklikt.
 
 Om veranderlijke gegevens met verbinding te verzenden klikt:
 
-1. [Open het Adobe Analytics-framework en vouw de sectie](#configuring-link-tracking-for-an-adobe-analytics-framework)Configuratie van bijhouden van koppelingen uit.
+1. [Open het kader van Adobe Analytics en breid de sectie](#configuring-link-tracking-for-an-adobe-analytics-framework)van de Configuratie van het Volgen van de Verbinding uit.
 1. Configureer de volgende eigenschappen volgens uw vereisten.
 
 Eigenschappen voor het verzenden van variabele gegevens met koppelingsklikken:
 
-* **Gebeurtenissen** bijhouden koppelen Voer de Adobe Analytics-gebeurtenisvariabelen in die u wilt gebruiken voor het tellen van koppelingsklikken.
+* **Gebeurtenissen** van het Spoor van de verbinding gaat de gebeurtenisvariabelen van Adobe Analytics in die u voor het tellen van verbindingskliks wilt gebruiken.
 
    Scheid meerdere variabelennamen met een komma.
 
@@ -136,7 +136,7 @@ s.linkTrackVars= 'prop4';
 
 ## Configuratie voorbeeldkoppeling bijhouden {#example-link-tracking-configuration}
 
-Voer de volgende procedures uit om het gedrag van het volgen van koppelingen van de integratie van Adobe Analytics te onderzoeken. De procedures tonen resultaten van [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
+Voer de volgende procedures uit om het gedrag van het verbinden volgen van de integratie van Adobe Analytics te onderzoeken. De procedures tonen resultaten van [Adobe Experience Cloud Debugger](https://docs.adobe.com/content/help/en/debugger/using/experience-cloud-debugger.html).
 
 ### Algemene configuratie {#general-configuration}
 
@@ -151,7 +151,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
    >
    >Als dit niet het geval is, wordt er een eigen component weergegeven (door een subknooppunt Analytics in de paginacomponent te definiëren).
 
-   Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) vanuit het linkerzijpaneel te slepen:
+   Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) uit het linkerzijpaneel te slepen:
 
 <table> 
  <tbody> 
@@ -173,7 +173,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
  </tbody> 
 </table>
 
-1. Sleep de component Search naar het toewijzingsgebied van het framework. De component van het Onderzoek behoort tot de Algemene componentengroep in Sidetrap. Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) vanuit het linkerzijpaneel te slepen:
+1. Sleep de component Search naar het toewijzingsgebied van het framework. De component van het Onderzoek behoort tot de Algemene componentengroep in Sidetrap. Configureer de toewijzing volgens de volgende tabel door de variabele Analytics (SiteCatalyst) uit het linkerzijpaneel te slepen:
 
 <table> 
  <tbody> 
@@ -229,7 +229,7 @@ In dit voorbeeld wordt getoond hoe de toewijzing werkt in de context van traceri
 
 1. Schakel over naar de modus **** Voorvertoning en klik op de koppeling.
 
-De aangeroepen oproep ziet er als volgt uit wanneer deze wordt bekeken met de Adobe Marketing Cloud Foutopsporing:
+De aangeroepen oproep ziet er zo uit als u deze bekijkt met de Adobe Marketing Cloud Debugger:
 
 ![aa-leavequery search-blank](assets/aa-leavequerysearch-blank.png)
 
@@ -243,7 +243,7 @@ De aangeroepen oproep ziet er als volgt uit wanneer deze wordt bekeken met de Ad
 1. Schakel **Zoekreeks** behouden in.
 1. Laad de paginavoorvertoning opnieuw en klik op de koppeling.
 
-De vraagdetails die in Foutopsporing van de Adobe Marketing Cloud verschijnen zijn gelijkaardig aan het volgende voorbeeld:
+De vraagdetails die in Foutopsporing van Adobe Marketing Cloud verschijnen zijn gelijkaardig aan het volgende voorbeeld:
 
 ![aa-leavequeryquerysearch-active](assets/aa-leavequerysearch-active.png)
 
@@ -267,7 +267,7 @@ Als u ad-hockoppelingen wilt bijhouden, moet u:
 
 Configureer uw Adobe Analytics-framework om het bijhouden van ad-hockoppelingen in te schakelen.
 
-1. Open het Adobe Analytics-framework en vouw de sectie Configuratie **van** Koppeling bijhouden uit.
+1. Open het kader van Adobe Analytics en breid de sectie van de Configuratie **van het Volgen van de** Verbinding uit.
 
 1. Schakel **Ad-hockoppelingen bijhouden** in.
 
@@ -309,7 +309,7 @@ Configureer uw Adobe Analytics-framework om het bijhouden van ad-hockoppelingen 
 
 Voordat u ad-hockoppelingen bijhouden kunt configureren voor **Text** -componenten zelf, moeten de volgende configuraties al zijn geïmplementeerd:
 
-* Het [Adobe Analytics-framework is geconfigureerd om ad-hockoppelingen te kunnen bijhouden](#enabling-ad-hoc-link-tracking).
+* Het [Adobe Analytics-framework is zo geconfigureerd dat ad-hockoppelingen kunnen worden bijgehouden](#enabling-ad-hoc-link-tracking).
 * De [pagina die de **component Text** bevat, is gekoppeld aan het framework](/help/sites-administering/adobeanalytics-connect.md#associating-a-page-with-a-adobe-analytics-framework).
 
 Gebruik de volgende procedure om verbinding het volgen voor een component van de **Tekst** te vormen:
@@ -324,26 +324,28 @@ Gebruik de volgende procedure om verbinding het volgen voor een component van de
 
    >[!NOTE]
    >
-   >Het bijhouden van aangepaste koppelingen is zichtbaar als een aparte actie naast de handeling Koppeling/Ontkoppelen (Analytics-pictogram).
+   >Het bijhouden van aangepaste koppelingen is zichtbaar als een afzonderlijke actie naast de handeling Koppeling/Ontkoppelen (pictogram Analyse).
    >
    >Het zal slechts worden toegelaten wanneer u een geldige Verbinding in RTE hebt geselecteerd.
 
    ![aa-17](assets/aa-17.png)
 
-1. Schakel **Aangepaste koppeling bijhouden** in om de configuratie voor het bijhouden van koppelingen van het Adobe Analytics-framework te overschrijven en om het bijhouden van koppelingen voor de huidige koppeling in te schakelen.
+1. Schakel **Aangepaste koppeling bijhouden** in om de configuratie voor het bijhouden van koppelingen van het Adobe Analytics-framework te negeren en om het bijhouden van koppelingen voor de huidige koppeling in te schakelen.
 
 1. (Optioneel) Als u gebeurtenissen wilt bijhouden met de klik op de koppeling, voegt u Adobe Analytics-gebeurtenisnamen toe in het veld Adobe Analytics-variabelen **opnemen** . Meerdere gebeurtenisnamen van elkaar scheiden met komma&#39;s, bijvoorbeeld
 
    `event1, event22`.
 
-1. (Optioneel) Als u variabele gegevens wilt bijhouden met de klik op de koppeling, voegt u Adobe Analytics-variabelen toe in het veld Adobe Analytics-variabelen **opnemen** . Gebruik een van de volgende indelingen:
+1. (Optioneel) Als u variabele gegevens wilt bijhouden met de koppelingsklik, voegt u Adobe Analytics-variabelen toe aan het veld Adobe Analytics-variabelen **opnemen** . Gebruik een van de volgende indelingen:
 
    * `*<Variable-name>*: *<Dynamic Value>*`
    * `*<Variable-name>*: *‘CONSTANT’*`
+
    Aan de hand van de volgende voorbeelden wordt elke indeling geïllustreerd:
 
    * `eVar10:pagedata.title`
    * `prop1: ‘Aubergine'`
+
    Scheid meerdere waarden met een komma.
 
 1. Selecteer **OK**.
