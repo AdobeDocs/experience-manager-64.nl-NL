@@ -1,8 +1,8 @@
 ---
 title: Zoekformulieren configureren
 seo-title: Zoekformulieren configureren
-description: Leer hoe u zoekformulieren configureert.
-seo-description: Leer hoe u zoekformulieren configureert.
+description: Leer hoe u Search Forms configureert.
+seo-description: Leer hoe u Search Forms configureert.
 uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '2065'
+ht-degree: 2%
 
 ---
 
 
 # Zoekformulieren configureren{#configuring-search-forms}
 
-Met **Zoekformulieren** kunt u de selectie van zoekvoorspelden aanpassen die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in verschillende AEM-consoles en/of deelvensters van de auteursomgeving. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
+Met **Zoeken in Forms** kunt u de selectie van zoekvoorspelden aanpassen die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in verschillende AEM consoles en/of deelvensters van de auteursomgeving. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
 
 Een [waaier van](#predicates-and-their-settings)predikaten is beschikbaar uit-van-de-doos. U kunt veelvoudige predikaten toevoegen, met inbegrip van (onder andere) het voorspel Fulltext voor full-text onderzoeken, predikt het Bezit om naar activa te zoeken die één enkele die bezit aanpassen door u wordt gespecificeerd, of de Opties om activa te zoeken die één of meerdere waarden aanpassen die u voor een bepaald bezit specificeert.
 
@@ -61,9 +64,9 @@ De beschikbare standaardconfiguraties zijn:
 
    Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar producten in middelenbrowser (wanneer het uitgeven van een pagina).
 
-* **De Redacteur van de pagina (onderzoek Scene7)**:
+* **Pagina-editor (zoeken in Scene7)**:
 
-   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar middelen Scene7 in middelenbrowser (wanneer het uitgeven van een pagina).
+   Deze configuratie definieert de beschikbare opties bij het zoeken naar Scene7-bronnen in de middelenbrowser (bij het bewerken van een pagina).
 
 * **Sites Admin Search Rail**:
 
@@ -126,7 +129,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
   </tr> 
   <tr> 
    <td>Onderdelen </td> 
-   <td>Hiermee kan een auteur zoeken/filteren op pagina's die een specifieke component bevatten. Bijvoorbeeld een afbeeldingsgalerie.<br /> </td> 
+   <td>Hiermee kan een auteur zoeken of filteren op pagina's die een specifieke component bevatten. Bijvoorbeeld een afbeeldingsgalerie.<br /> </td> 
    <td> 
     <ul> 
      <li>Veldlabel</li> 
@@ -350,6 +353,7 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
 * Zoekvoorspellingen die alleen betrekking hebben op sitebeheer (klassieke UI) bevinden zich onder:
    > `/libs/cq/gui/components/siteadmin/admin/searchpanel/searchpredicates`
    >   * Deze zijn verouderd en zijn alleen beschikbaar voor achterwaartse compatibiliteit.
+
 > 
 >
 Deze informatie is alleen ter referentie. U mag geen wijzigingen aanbrengen in `/libs`.
@@ -398,7 +402,8 @@ Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voo
 
    `(jcr:primaryType = nt:unstructured, value (String), jcr:title (String))`
 
-* **Het de knoopweg** van opties richtIn feite het zelfde als de Weg **van** Opties, slechts is dit op het gemeenschappelijke voorspelbare gebied, andere is specifiek voor activa.
+* **Pad** van knooppunt Opties komt in feite overeen met het pad 
+**Het Weg** van opties, slechts is dit op het gemeenschappelijke voorspelbare gebied, andere is specifiek voor activa.
 
 * **Enkel selecteren** Als deze optie is ingeschakeld, worden de opties weergegeven als selectievakjes die slechts één selectie toestaan. Als u per ongeluk een selectievakje hebt ingeschakeld, kan dit worden uitgeschakeld.
 
@@ -406,11 +411,11 @@ Afhankelijk van de voorspelling is een selectie van instellingen beschikbaar voo
 
 * The&amp;ast; op de veldlabels op het tabblad **Instellingen** betekent dat de velden vereist zijn en dat er een foutbericht wordt weergegeven als deze leeg zijn gelaten
 
-## Uw zoekformulieren configureren {#configuring-your-search-forms}
+## Uw zoekopdracht configureren, Forms {#configuring-your-search-forms}
 
 ### Een aangepaste configuratie maken/openen {#creating-opening-a-customized-configuration}
 
-1. Navigeer naar **Gereedschappen**, **Bewerkingen** en **Zoeken in formulieren**.
+1. Navigeer naar **Gereedschappen**, **Bewerkingen** en **Zoeken in Forms**.
 
 1. Selecteer de configuratie die u wilt aanpassen.
 1. Gebruik het pictogram **Bewerken** om de configuratie voor het bijwerken te openen.
@@ -502,6 +507,7 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
 
    * `jcr:title` - het veldetiket dat in de zoekrail moet worden aangebracht;
    * `value` - de waarde van de eigenschap waarop moet worden gezocht
+
    ![chlimage_1-379](assets/chlimage_1-379.png)
 
    >[!NOTE]
@@ -517,11 +523,11 @@ In het volgende voorbeeld (om te zoeken op basis van de sjabloon die wordt gebru
    >1. Breng wijzigingen aan in `/apps.`
 
 
-1. Open de console **Zoeken in formulieren** en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****.
+1. Open de Forms **-console** Zoeken en selecteer de configuratie die u wilt bijwerken. Bijvoorbeeld Sites Admin Search Rail ****.
 
    Klik vervolgens op het pictogram Zoekformulieren **** bewerken of tik erop.
 
-1. Afhankelijk van de configuratie voeg een **Opties** of het Bezit **van** Opties aan de configuratie toe.
+1. Afhankelijk van de configuratie voegt een **Opties** of het Bezit **van** Opties aan de configuratie toe.
 1. Werk de velden bij, met name:
 
    * **Eigenschapnaam**
