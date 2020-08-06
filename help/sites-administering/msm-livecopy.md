@@ -173,7 +173,7 @@ Een live kopie van een site maken op basis van een blauwdrukconfiguratie:
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
 1. Gebruik de vervolgkeuzelijst **Eerste hoofdstukken** om de secties van de blauwdruk te selecteren die u in de actieve kopie wilt opnemen. Opnieuw zijn alle beschikbare hoofdstukken inbegrepen door gebrek, maar kunnen worden verwijderd.
-1. Geef waarden op voor de overige eigenschappen en selecteer vervolgens **Maken**. Selecteer **Gereed** in het bevestigingsvenster om terug te keren naar de **Sites** -console of **Site** openen om de hoofdpagina van de site te openen.
+1. Geef waarden op voor de overige eigenschappen en selecteer vervolgens **Maken**. Selecteer **Gereed** in het bevestigingsdialoogvenster om terug te keren naar de **Sites** -console of **Site** openen om de hoofdpagina van de site te openen.
 
 ### Een actieve kopie maken in een live kopie (configuratie blauwdruk) {#creating-a-live-copy-inside-a-live-copy-blueprint-configuration}
 
@@ -331,7 +331,7 @@ Wanneer de pagina met live kopieën wordt gesynchroniseerd met de bronpagina, bl
 
 ### Overerving voor een pagina onderbreken {#suspending-inheritance-for-a-page}
 
-Wanneer u een live kopie maakt, wordt de live kopieerconfiguratie opgeslagen op de hoofdpagina van de gekopieerde pagina&#39;s. Alle onderliggende pagina&#39;s van de hoofdpagina nemen de configuraties van de actieve kopie over. De componenten op de bibliotheekpagina&#39;s nemen ook de live kopieerconfiguratie over.
+Wanneer u een live kopie maakt, wordt de live kopieerconfiguratie opgeslagen op de hoofdpagina van de gekopieerde pagina&#39;s. Alle onderliggende pagina&#39;s van de hoofdpagina nemen de configuraties van de actieve kopie over. De componenten op de bibliotheekpagina&#39;s erven ook de live kopieerconfiguratie.
 
 U kunt de overerving van live kopieën voor een live kopieerpagina opschorten, zodat u pagina-eigenschappen en -componenten kunt wijzigen. Wanneer u overerving onderbreekt, worden de pagina-eigenschappen en -componenten niet meer gesynchroniseerd met de bron.
 
