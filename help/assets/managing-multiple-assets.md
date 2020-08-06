@@ -4,6 +4,9 @@ description: Leer hoe u de metagegevens van veel elementen en verzamelingen tege
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
+workflow-type: tm+mt
+source-wordcount: '505'
+ht-degree: 11%
 
 ---
 
@@ -12,7 +15,7 @@ source-git-commit: 97bb17ce719f82449e28f9b32eb651b632b0f8b5
 
 Leer hoe u de metagegevens van meerdere elementen en verzamelingen tegelijk kunt bewerken om snel algemene wijzigingen in metagegevens door te geven.
 
-Met Adobe Enterprise Manager (AEM)-middelen kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene metagegevenswijzigingen in elementen bulksgewijs kunt doorgeven. U kunt de metagegevens voor meerdere verzamelingen ook bulksgewijs bewerken.
+Met de Middelen AEM Enterprise Manager van Adobe kunt u de metagegevens van meerdere elementen tegelijk bewerken, zodat u snel algemene wijzigingen in metagegevens in meerdere bestanden kunt doorgeven. U kunt de metagegevens voor meerdere verzamelingen ook bulksgewijs bewerken.
 
 Gebruik de eigenschappenpagina om wijzigingen in metagegevens uit te voeren voor meerdere elementen of verzamelingen:
 
@@ -29,11 +32,11 @@ Gebruik de Schema-editor om de pagina met metagegevenseigenschappen aan te passe
 
 1. Navigeer in de gebruikersinterface Elementen naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Tik op of klik op het pictogram **[!UICONTROL Eigenschappen]** op de werkbalk om de pagina met eigenschappen voor de geselecteerde elementen te openen.
+1. Tik op of klik op het **[!UICONTROL Properties]** pictogram op de werkbalk om de eigenschappenpagina voor de geselecteerde elementen te openen.
 
    >[!NOTE]
    >
-   >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden, op de eigenschappenpagina worden alleen metagegevensvelden weergegeven die algemeen zijn op de eigenschappenpagina&#39;s van alle afzonderlijke elementen.
+   >Wanneer u meerdere elementen selecteert, wordt het laagste gebruikelijke bovenliggende formulier geselecteerd voor de elementen. Met andere woorden, op de eigenschappenpagina worden alleen metagegevensvelden weergegeven die gemeenschappelijk zijn op de eigenschappenpagina&#39;s van alle afzonderlijke elementen.
 
 1. Wijzig de eigenschappen van metagegevens voor geselecteerde elementen onder de verschillende tabbladen.
 1. Schakel de overige elementen in de lijst uit als u de metagegevenseditor voor een bepaald element wilt weergeven. De gebieden van de meta-gegevensredacteur zijn bevolkt met de meta-gegevens voor het bepaalde middel.
@@ -44,21 +47,21 @@ Gebruik de Schema-editor om de pagina met metagegevenseigenschappen aan te passe
    >* Selecteer boven aan de lijst met elementen het selectievakje bij **Titel** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 
-1. Tik op het pictogram **[!UICONTROL Instellingen]** op de werkbalk en selecteer het gewenste schema om een ander metagegevensschema voor de elementen te selecteren.
+1. Als u een ander metagegevensschema voor de elementen wilt selecteren, tikt u op het **[!UICONTROL Settings]** pictogram of klikt u op het pictogram op de werkbalk en selecteert u het gewenste schema.
 1. Sla de wijzigingen op.
-1. Als u de nieuwe metagegevens wilt toevoegen aan de bestaande metagegevens in velden die meerdere waarden bevatten, selecteert u de modus **** Toevoegen. Als u deze optie niet selecteert, worden de bestaande metagegevens in de velden vervangen door de nieuwe metagegevens. Tik/klik op **[!UICONTROL Verzenden]**.
+1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Tik of klik op **[!UICONTROL Submit]**.
 
    >[!CAUTION]
    >
-   >Voor velden met één waarde worden de nieuwe metagegevens niet toegevoegd aan de bestaande waarde in het veld, zelfs niet als u de modus **** Toevoegen selecteert.
+   >Voor velden met één waarde worden de nieuwe metadata niet toegevoegd aan de bestaande waarde in het veld, zelfs niet als u **[!UICONTROL Append mode]** selecteert.
 
 ## Limiet voor bijwerken van bulkmetagegevens configureren {#configure-limit-for-bulk-metadata-update}
 
-Om DOS als situatie te verhinderen, beperkt AEM het aantal parameters die in een Verschuivend verzoek worden gesteund. Wanneer u metagegevens van veel elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. AEM genereert de volgende waarschuwing in de logboeken:
+Om DOS als situatie te verhinderen, beperkt AEM het aantal parameters die in een Verschuivend verzoek worden gesteund. Wanneer u metagegevens van vele elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. AEM genereert de volgende waarschuwing in de logboeken:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-Om de grens te veranderen, toegang **[!UICONTROL Hulpmiddelen > Verrichtingen > de Console]** van het Web en verander de waarde van [!UICONTROL Maximale Parameters] van de POST in [!UICONTROL Apache het Verdelen van het Verzoek van de Parameter die OSGi- configuratie behandelt] .
+To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
 
 >[!MORELIKETHIS]
 >
