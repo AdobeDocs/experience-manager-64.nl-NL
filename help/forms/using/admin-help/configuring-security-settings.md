@@ -49,7 +49,7 @@ Met deze instellingen configureert u de compatibiliteit en codering. Zie Een bev
 
 **Acrobat 9.0 en hoger:** Gebruikt hoge codering (256-bits AES). Met deze optie kunt u metagegevens inschakelen om alleen bestandsbijlagen te zoeken en te versleutelen.
 
-Een eerdere versie van Acrobat kan geen PDF-document openen met een hogere compatibiliteitsinstelling. Als u bijvoorbeeld de optie Acrobat 7.0 en hoger selecteert, kunt u het document niet openen in Acrobat 6.0 of lager.
+Een eerdere versie van Acrobat kan geen PDF-document openen met een hogere compatibiliteitsinstelling. Als u bijvoorbeeld de optie Acrobat 7.0 en hoger selecteert, kunt u het document niet openen in Acrobat 6.0 of eerder.
 
 Zorg ervoor dat het compatibiliteitsniveau consistent is met het PDF-compatibiliteitsniveau voor dezelfde bron. Als u bijvoorbeeld een controlemap hebt geconfigureerd voor het gebruik van de instelling Standaard-PDF, die compatibel is met Acrobat 5.0 of hoger, mag het niveau van de beveiligingscompatibiliteit niet hoger zijn dan Acrobat 5.0.
 
@@ -93,7 +93,7 @@ Met deze opties configureert u de machtigingen:
 
 **Geen:** Voorkomt dat gebruikers het document afdrukken.
 
-**Lage resolutie (150 dpi):** Gebruikers kunnen het document afdrukken met een resolutie die niet hoger is dan 150 dpi. Het afdrukken kan langzamer zijn omdat elke pagina als een bitmapafbeelding wordt afgedrukt. Deze optie is alleen beschikbaar als u een hoog versleutelingsniveau hebt geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
+**Lage resolutie (150 dpi):** Gebruikers kunnen het document afdrukken met een resolutie die niet hoger is dan 150 dpi. Het afdrukken kan langzamer zijn omdat elke pagina als een bitmapafbeelding wordt afgedrukt. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
 
 **Hoge resolutie:** Gebruikers kunnen met elke resolutie afdrukken, waarbij vectoruitvoer van hoge kwaliteit wordt afgedrukt op PostScript-printers en andere printers die geavanceerde functies voor hoge afdrukkwaliteit ondersteunen.
 
@@ -101,19 +101,19 @@ Met deze opties configureert u de machtigingen:
 
 **Geen:** Hiermee voorkomt u dat gebruikers het document wijzigen, inclusief het invullen van handtekeningen en formuliervelden.
 
-**Pagina&#39;s invoegen, verwijderen en roteren:** Gebruikers kunnen pagina&#39;s invoegen, verwijderen en roteren en bladwijzers en miniatuurpagina&#39;s maken. Deze optie is alleen beschikbaar als u een hoog versleutelingsniveau hebt geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
+**Pagina&#39;s invoegen, verwijderen en roteren:** Gebruikers kunnen pagina&#39;s invoegen, verwijderen en roteren en bladwijzers en miniatuurpagina&#39;s maken. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
 
-**Formuliervelden invullen en bestaande SignatureFields ondertekenen:** Gebruikers kunnen formulieren invullen en digitale handtekeningen toevoegen. Gebruikers kunnen echter geen opmerkingen toevoegen of formuliervelden maken. Deze optie is alleen beschikbaar als u een hoog versleutelingsniveau hebt geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
+**Formuliervelden invullen en bestaande SignatureFields ondertekenen:** Gebruikers kunnen formulieren invullen en digitale handtekeningen toevoegen. Gebruikers kunnen echter geen opmerkingen toevoegen of formuliervelden maken. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd (Acrobat 5.0, 6.0, 7.0 of 9.0).
 
 **Opmerkingen plaatsen, formuliervelden invullen en bestaande handtekeningvelden ondertekenen:** Gebruikers kunnen formulieren invullen en digitale handtekeningen en opmerkingen toevoegen.
 
-**Pagina-indeling, retoucheren, formuliervelden invullen en bestaande handtekeningvelden ondertekenen:** Gebruikers kunnen pagina&#39;s invoegen, roteren of verwijderen en bladwijzers of miniatuurafbeeldingen maken, formulieren invullen en digitale handtekeningen toevoegen. Met deze optie kunnen gebruikers geen formuliervelden maken. Deze optie is alleen beschikbaar als u een laag coderingsniveau (Acrobat 3.0) hebt geselecteerd.
+**Pagina-indeling, retoucheren, formuliervelden invullen en bestaande handtekeningvelden ondertekenen:** Gebruikers kunnen pagina&#39;s invoegen, roteren of verwijderen en bladwijzers of miniatuurafbeeldingen maken, formulieren invullen en digitale handtekeningen toevoegen. Met deze optie kunnen gebruikers geen formuliervelden maken. Deze optie is alleen beschikbaar als een laag coderingsniveau (Acrobat 3.0) is geselecteerd.
 
-**Alles behalve pagina&#39;s uitnemen:** Hiermee kunnen gebruikers het document wijzigen met een methode in de lijst Wijzigingen toegestaan, behalve door pagina&#39;s te verwijderen.
+**Alles behalve pagina&#39;s uitnemen:** Gebruikers kunnen het document wijzigen met een methode in de Lijst van gewenste personen Wijzigingen, behalve door pagina&#39;s te verwijderen.
 
 **Kopiëren van tekst, afbeeldingen en andere inhoud inschakelen:** Gebruikers kunnen de inhoud van het PDF-document selecteren en kopiëren. Ook kunnen hulpprogramma&#39;s die toegang nodig hebben tot de inhoud van een PDF-bestand, zoals Acrobat Catalog, toegang krijgen tot deze inhoud. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd.
 
-**Tekstweergave van slechtzienden op schermlezers inschakelen:** Hiermee kunnen gebruikers met een visuele handicap het document lezen met schermlezers. Gebruikers kunnen de documentinhoud echter niet kopiëren of uitpakken. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd.
+**Teksttoegang van schermapparaten met Reader inschakelen voor visueel gehandicapten:** Hiermee kunnen gebruikers met een visuele handicap het document lezen met schermlezers. Gebruikers kunnen de documentinhoud echter niet kopiëren of uitpakken. Deze optie is alleen beschikbaar als een hoog versleutelingsniveau is geselecteerd.
 
 ## Een beveiligingsinstelling verwijderen {#delete-a-security-setting}
 
