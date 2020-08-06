@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1e96d388-8517-4a84-bb0a-d49567eb4bdf
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '389'
+ht-degree: 0%
 
 ---
 
@@ -51,35 +54,43 @@ Selecteer de geplaatste `Leaderboard` component die u wilt openen en selecteer h
 
 ### Het tabblad Instellingen {#settings-tab}
 
-Geef op onder het tabblad **[!UICONTROL Instellingen]** op welke informatie over het lid wordt weergegeven:
+Geef onder het **[!UICONTROL Settings]** tabblad op welke informatie met betrekking tot het lid wordt weergegeven:
 
-* **[!UICONTROL De Naam]** van de vertoning een beschrijvende naam aan vertoning voor de raad, die de regels weerspiegelt die voor de vertoning van badges en scores worden geselecteerd.
+* **[!UICONTROL Display Name]**
+Een beschrijvende naam die voor het bord moet worden weergegeven en die de regels weergeeft die zijn geselecteerd voor het weergeven van badges en scores.
 
    De standaardwaarde is `Leaderboard`, als er niets is ingevoerd.
 
-* **[!UICONTROL Badge]** Indien ingeschakeld, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
+* **[!UICONTROL Badge]**
+Als deze optie is ingeschakeld, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Naam]** badge Indien ingeschakeld, wordt een kolom voor de naam van de badge opgenomen in het leaderboard.
+* **[!UICONTROL Badge Name]**
+Als deze optie is ingeschakeld, wordt een kolom met de naam van de badge opgenomen in het leaderboard.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Gebruik Avatar]** Als deze optie is ingeschakeld, wordt de avatar-afbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het lidprofiel.
+* **[!UICONTROL Use Avatar]**
+Als deze optie is ingeschakeld, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
 
    De optie Standaard is uitgeschakeld.
 
 ### Regels, tabblad {#rules-tab}
 
-Op het tabblad **[!UICONTROL Regels]** vindt u de site van de gebruikersgemeenschap en de bijbehorende regels voor scoring en badging
+Onder het **[!UICONTROL Rules]** lusje, de communautaire plaats, en zijn het schrapen en het merkingsregels
 
-* **[!UICONTROL Locatie]** van regel (vereist) waar de regel voor het classificeren/Badging is geconfigureerd.
+* **[!UICONTROL Rule Location]**
+(Vereist) Plaats waar de het Scoren/het Bedragen regel wordt gevormd.
 
-* **[!UICONTROL (Vereiste) Specifieke regel voor het scoren]** die de scores genereert die moeten worden weergegeven.
+* **[!UICONTROL Scoring Rule]**
+(Vereist) Specifieke regel die de scores genereert die moeten worden weergegeven.
 
-* **[!UICONTROL (Vereiste) Specifieke regel die de badge voor weergave genereert]**.
+* **[!UICONTROL Badging Rule]**
+(Vereist) Specifieke regel die de badge aan vertoning produceert.
 
-* **[!UICONTROL Limiet]** aantal leden per pagina weergeven.
+* **[!UICONTROL Display Limit]**
+Aantal leden dat per pagina moet worden weergegeven.
 
    De standaardwaarde is 10.
 
@@ -89,7 +100,7 @@ Deze lederbordrapporten zijn het resultaat van het toepassen van elementaire sco
 
 Configuratie van de component Leaderboard:
 
-* **[!UICONTROL Tabblad Instellingen]** :
+* **[!UICONTROL Settings]** tab:
 
    * Weergavenaam = `Participation Board`
    * `checked`:
@@ -98,7 +109,7 @@ Configuratie van de component Leaderboard:
       * Naam badge
       * Avatar gebruiken
 
-* **[!UICONTROL Tabblad Regels]** :
+* **[!UICONTROL Rules]** tab:
 
    * Locatie van regel = `/content/sites/communities/jcr:content`
    * Scoreregel = `/etc/community/scoring/rules/forums-scoring`
@@ -113,7 +124,7 @@ Dit leaderboard-rapport is het resultaat van het toepassen van geavanceerde scor
 
 Configuratie van de component Leaderboard:
 
-* **[!UICONTROL Tabblad Instellingen]** :
+* **[!UICONTROL Settings]** tab:
 
    * Weergavenaam = `Expertise Board`
    * `checked`:
@@ -121,7 +132,7 @@ Configuratie van de component Leaderboard:
       * Badge
       * Avatar gebruiken
 
-* **[!UICONTROL Tabblad Regels]** :
+* **[!UICONTROL Rules]** tab:
 
    * Locatie van regel = `/content/sites/communities/jcr:content`
    * Scoreregel = `/etc/community/scoring/rules/adv-forums-scoring`
