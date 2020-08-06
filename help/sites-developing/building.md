@@ -1,8 +1,8 @@
 ---
-title: Tags maken in een AEM-toepassing
-seo-title: Tags maken in een AEM-toepassing
-description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM-toepassing
-seo-description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM-toepassing
+title: Tags maken in een AEM toepassing
+seo-title: Tags maken in een AEM toepassing
+description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
+seo-description: Programmaticaal werken met tags of tags uitbreiden binnen een aangepaste AEM.
 uuid: 0549552e-0d51-4162-b418-babf4ceee046
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Tags maken in een AEM-toepassing{#building-tagging-into-an-aem-application}
+# Tags maken in een AEM toepassing{#building-tagging-into-an-aem-application}
 
-Voor programmatisch werken met tags of het uitbreiden van tags binnen een aangepaste AEM-toepassing, wordt op deze pagina het gebruik van de
+Voor het programmatisch werken met tags of het uitbreiden van tags binnen een aangepaste AEM toepassing, wordt op deze pagina het gebruik van de
 
 * [Tags-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/package-summary.html)
 
@@ -35,7 +35,7 @@ Zie voor gerelateerde informatie over labelen:
 
 ## Overzicht van de API voor tags {#overview-of-the-tagging-api}
 
-Met de implementatie van het [coderingsframework](/help/sites-developing/framework.md) in AEM kunt u tags en code-inhoud beheren met behulp van de JCR API. De TagManager zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array, niet worden gedupliceerd, de tag-id&#39;s die verwijzen naar niet-bestaande tags, worden verwijderd en de tag-id&#39;s voor verplaatste of samengevoegde tags worden bijgewerkt. TagManager gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen bevinden zich in het [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) pakket:
+De implementatie van het [coderingskader](/help/sites-developing/framework.md) in AEM maakt het beheer van tags en code-inhoud met behulp van de JCR API mogelijk. De TagManager zorgt ervoor dat tags die zijn ingevoerd als waarden voor de eigenschap `cq:tags` string array, niet worden gedupliceerd, de tag-id&#39;s die verwijzen naar niet-bestaande tags, worden verwijderd en de tag-id&#39;s voor verplaatste of samengevoegde tags worden bijgewerkt. TagManager gebruikt een JCR-observatielistener die onjuiste wijzigingen retourneert. De belangrijkste klassen bevinden zich in het [com.day.cq.tagging](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/tagging/package-summary.html) pakket:
 
 * JcrTagManagerFactory - retourneert een op JCR gebaseerde implementatie van een `TagManager`. Dit is de referentie-implementatie van de API voor labelen.
 * `TagManager` - Hiermee kunt u tags oplossen en maken op basis van paden en namen.
@@ -172,7 +172,7 @@ De server-side API heeft gelokaliseerde `title`gerelateerde methoden:
    * createTagByTitle(String tagTitlePath, landinstelling)
    * resolveByTitle(String tagTitlePath, landinstelling)
 
-In AEM, kan de taal of van de paginaal worden verkregen of:
+In AEM kan de taal worden verkregen via de paginataal of via de taal van de gebruiker:
 
 * om de paginataal in JSP terug te winnen:
 
@@ -198,5 +198,5 @@ De nieuwe taal (Fins) is nu beschikbaar in het tagdialoogvenster van de pagina-e
 
 >[!NOTE]
 >
->De nieuwe taal moet een van de erkende talen van AEM zijn, d.w.z. het moet beschikbaar zijn als hieronder knooppunt `/libs/wcm/core/resources/languages`.
+>De nieuwe taal moet een van de AEM erkende talen zijn, d.w.z. het moet beschikbaar zijn als hieronder knooppunt `/libs/wcm/core/resources/languages`.
 
