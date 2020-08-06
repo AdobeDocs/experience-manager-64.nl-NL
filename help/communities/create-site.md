@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1596'
+ht-degree: 1%
 
 ---
 
@@ -38,25 +41,25 @@ Ga als volgt te werk om een nieuwe communitysite te maken:
 
 Voer in de stap [Sjabloon](sites-console.md#step2013asitetemplate)site een titel, beschrijving, naam voor de URL in en selecteer bijvoorbeeld een sjabloon voor een communitysite:
 
-* **[!UICONTROL Titel]** van communautaire site: `Getting Started Tutorial`
+* **[!UICONTROL Community Site Title]**: `Getting Started Tutorial`
 
-* **[!UICONTROL Beschrijving]** van communautaire site: `A site for engaging with the community.`
+* **[!UICONTROL Community Site Description]**: `A site for engaging with the community.`
 
-* **[!UICONTROL Hoofdmap]** van gemeenschapssite: (leeg laten voor standaardhoofdmap `/content/sites`)
+* **[!UICONTROL Community Site Root]**: (leeg laten voor standaardhoofdmap `/content/sites`)
 
-* **[!UICONTROL Cloudconfiguraties]**: (leeg laten als er geen cloudconfiguraties zijn opgegeven) het pad naar de opgegeven cloudconfiguraties bieden.
-* **[!UICONTROL Basistaal]** van gemeenschapssite: (ongewijzigd laten voor één taal: (Engels) gebruik het keuzemenu om één *of meerdere* basistalen van de beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel), en Chinees (Vereenvoudigd) te kiezen. Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de beste praktijken die worden beschreven in Inhoud [vertalen voor Meerdere sites](../../help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
+* **[!UICONTROL Cloud Configurations]**: (leeg laten als er geen cloudconfiguraties zijn opgegeven) het pad naar de opgegeven cloudconfiguraties bieden.
+* **[!UICONTROL Community Site Base Language]**: (ongewijzigd laten voor één taal: (Engels) gebruik het keuzemenu om één *of meerdere* basistalen van de beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel), en Chinees (Vereenvoudigd) te kiezen. Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de beste praktijken die worden beschreven in Inhoud [vertalen voor Meerdere sites](../../help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
 
-* **[!UICONTROL Naam]** van communautaire site: aangaan
+* **[!UICONTROL Community Site Name]**: aangaan
 
    * Controleer de naam tweemaal omdat deze na het maken van de site niet gemakkelijk kan worden gewijzigd
    * De eerste URL wordt onder de naam van de communautaire site weergegeven
    * Voeg voor een geldige URL een basistaalcode + &quot;.html&quot; toe
    * *Bijvoorbeeld* http://localhost:4502/content/sites/ `engage/en.html`
 
-* **[!UICONTROL Sjabloon]**: naar beneden halen om te kiezen `Reference Site`
+* **[!UICONTROL Template]**: naar beneden halen om te kiezen `Reference Site`
 
-Selecteer **[!UICONTROL Volgende]**
+Selecteer **[!UICONTROL Next]**
 
 ### Stap 2: Ontwerp {#step-design}
 
@@ -74,13 +77,13 @@ Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie 
 
 ![chlimage_1-353](assets/chlimage_1-353.png) ![chlimage_1-354](assets/chlimage_1-354.png)
 
-Selecteer **[!UICONTROL Volgende]**.
+Selecteer **[!UICONTROL Next]**.
 
 ### Stap 3: Instellingen {#step-settings}
 
 Voor de stap van Montages, alvorens te selecteren `Next`, merk er zeven secties zijn die toegang tot configuraties verlenen die gebruikersbeheer, het etiketteren, moderatie, groepsbeheer, analyses, vertaling en enablement impliceren.
 
-Ga naar de zelfstudie Aan de [slag met AEM Communities voor Inschakelen](getting-started-enablement.md) om te ervaren hoe u met de functies voor Inschakelen werkt.
+Ga naar de zelfstudie [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md) om te werken met de functies voor activering.
 
 #### GEBRUIKERSBEHEER {#user-management}
 
@@ -98,9 +101,9 @@ Schakel alle selectievakjes voor [gebruikersbeheer in](sites-console.md#user-man
 
 ![creaties](assets/createsitesettings.png)
 
-#### TAGS {#tagging}
+#### TAGGING {#tagging}
 
-De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](setup.md#create-tutorial-tags)zelfstudie).
+De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](setup.md#create-tutorial-tags)zelfstudie).
 
 Het zoeken naar naamruimten is eenvoudig met &#39;type-ahead&#39;-zoekopdracht. Bijvoorbeeld,
 
@@ -144,11 +147,11 @@ Zie [Analytics Configuration for Communities Features](analytics.md).
 
 In de [vertaalinstellingen](sites-console.md#translation) wordt de basistaal voor de site opgegeven en wordt aangegeven of UGC kan worden vertaald en in welke taal, indien dat het geval is.
 
-* Controleren **[!UICONTROL machinevertaling toestaan]**
+* Vinkje **[!UICONTROL Allow Machine Translation]**
 * Laat standaardtalen geselecteerd blijven voor vertaling door de standaardvertaalservice voor machines
 * Standaard vertaalprovider en config laten staan
 * Er is geen behoefte aan een globale opslag omdat er geen taalexemplaren zijn
-* Volledige pagina **[!UICONTROL vertalen selecteren]**
+* Selecteer **[!UICONTROL Translate entire page]**
 * De optie Standaardpersistentie behouden
 
 ![chlimage_1-358](assets/chlimage_1-358.png)
@@ -157,13 +160,13 @@ In de [vertaalinstellingen](sites-console.md#translation) wordt de basistaal voo
 
 Laat leeg als u een betrokkenheidsgemeenschap maakt.
 
-Voor een gelijkaardige zelfstudie om snel een [enablement gemeenschap](overview.md#enablement-community)tot stand te brengen, zie [Begonnen met Gemeenschappen AEM voor Enablement](getting-started-enablement.md).
+Zie [Aan de slag met AEM Communities for Enablement](overview.md#enablement-community)voor een vergelijkbare zelfstudie waarin u snel een [activeringscommunity](getting-started-enablement.md)kunt maken.
 
-Selecteer **[!UICONTROL Volgende]**.
+Selecteer **[!UICONTROL Next]**.
 
 ### Stap 4: Communitysite maken {#step-create-communities-site}
 
-Selecteer **[!UICONTROL Maken]**.
+Selecteer **[!UICONTROL Create]**.
 
 ![chlimage_1-359](assets/chlimage_1-359.png)
 
@@ -197,7 +200,7 @@ Van links naar rechts zijn ze:
 
 * **Site verwijderen**
 
-   Selecteer het verwijderpictogram om de communitysite te verwijderen uit **[!UICONTROL Communities > Sites-console]**. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
+   Selecteer het verwijderpictogram om de community-site vanuit **[!UICONTROL Communities > Sites console]** de site te verwijderen. Met deze actie verwijdert u alle items die aan de site zijn gekoppeld, zoals UGC, gebruikersgroepen, elementen en databaserecords.
 
 ![site-1](assets/siteactions-1.png)
 
@@ -207,12 +210,13 @@ Van links naar rechts zijn ze:
 >
 >In de auteurinstantie, van het belangrijkste menu
 >
->1. Ga naar **[!UICONTROL Gereedschappen > Bewerkingen > Replicatie]** , menu
->1. Agenten **[!UICONTROL bij auteur selecteren]**
->1. Standaardagent selecteren **[!UICONTROL (publiceren)]**
->1. Naast **[!UICONTROL instellingen]** selecteert u **[!UICONTROL Bewerken]**
+>1. Ga naar **[!UICONTROL Tools > Operations > Replication]** menu
+>1. Selecteer **[!UICONTROL Agents on author]**
+>1. Selecteer **[!UICONTROL Default Agent (publish)]**
+>1. Volgende om te **[!UICONTROL Settings]** selecteren **[!UICONTROL Edit]**
 >1. In pop-up dialoog voor de Montages van de Agent, het uitgezochte lusje van het Vervoer
 >1. Wijzig in URI het poortnummer 4503 in het gewenste poortnummer
+
 >
 >
 Als u bijvoorbeeld poort 6103 wilt gebruiken: `http://localhost:6103/bin/receive?sling:authRequestLogin=1`
@@ -279,7 +283,7 @@ Aan de slag:
 1. Vouw in de projectbrowser uit `/etc/map`
 1. Selecteer het `http` knooppunt
 
-   * Knooppunt **[!UICONTROL maken selecteren]**
+   * Selecteer **[!UICONTROL Create Node]**
 
       * **Naam** localhost.4503
 
@@ -303,7 +307,7 @@ Aan de slag:
       * **Value** /content/sites/engage/en.html
 
 
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Save All]**
 1. (optioneel) De browsergeschiedenis verwijderen
 1. Bladeren naar http://localhost:4503/
 
@@ -311,7 +315,7 @@ Aan de slag:
 
 >[!NOTE]
 >
->Als u deze optie wilt uitschakelen, voegt u de waarde van de `sling:match` eigenschap toe aan de naam &#39;x&#39; - `xlocalhost.4503/$` - en **[!UICONTROL Alles]** opslaan.
+>Als u deze optie wilt uitschakelen, voegt u de waarde van de `sling:match` eigenschap gewoon aan met &#39;x&#39; - `xlocalhost.4503/$` - en **[!UICONTROL Save All]**.
 
 ![chlimage_1-364](assets/chlimage_1-364.png)
 
@@ -323,11 +327,11 @@ Als het niet lukt om wijzigingen op te slaan, moet u ervoor zorgen dat de naam v
 
 #### Problemen oplossen: Doorsturen mislukt {#troubleshooting-fail-to-redirect}
 
-De &#39;**$**&#39; aan het einde van de reguliere-expressie- `sling:match`tekenreeks is van cruciaal belang, zodat alleen exact `http://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM naar de aanmeldingspagina probeert om te leiden, mislukt dit.
+De &#39;**$**&#39; aan het einde van de reguliere-expressie- `sling:match`tekenreeks is van cruciaal belang, zodat alleen exact `http://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM probeert om naar de aanmeldingspagina om te leiden, mislukt dit.
 
 ### De site wijzigen {#modify-the-site}
 
-Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM-ontwerpactiviteiten uit te voeren.
+Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM ontwerpactiviteiten uit te voeren.
 
 Daarnaast kunnen beheerders het pictogram [Site](sites-console.md#modifying-site-properties) bewerken gebruiken om eigenschappen van de site, zoals de titel, te wijzigen.
 
