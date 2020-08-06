@@ -11,19 +11,22 @@ topic-tags: forms-workspace
 discoiquuid: 18dab82a-badf-4c32-83a2-cd5cb04cae89
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '250'
+ht-degree: 0%
 
 ---
 
 
 # Het kleurenschema van de interface wijzigen {#changing-the-color-scheme-of-the-interface}
 
-U kunt het kleurschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, raadpleegt u [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+U kunt het kleurenschema van de gebruikersinterfacegedeelten van de AEM Forms-werkruimte aanpassen aan uw wensen. Hier volgen enkele voorbeelden van representatieve aanpassingen van kleurschema&#39;s. Naast de stappen die in dit artikel worden besproken, raadpleegt u [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de AEM Forms-werkruimte.
 
 ## Bovenste navigatiebalk {#top-navigation-bar}
 
 ### Achtergrondafbeelding gebruiken {#using-background-image}
 
-De navigatiebalk boven in de werkruimte van AEM-formulieren bijwerken.
+De navigatiebalk boven aan de AEM Forms-werkruimte bijwerken.
 
 1. Maak een achtergrondafbeelding om de kleur bij te werken. Geef het bestand een naam als newBackground.jpg.
 1. Upload het bestand met de achtergrondafbeelding in de map /apps/ws/images met een WebDAV-client.
