@@ -1,11 +1,11 @@
 ---
 title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
-description: Digitale middelen maken, lezen, bijwerken, verwijderen en beheren met HTTP API in [!DNL Adobe Experience Manager Assets].
+description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
 workflow-type: tm+mt
-source-wordcount: '1455'
+source-wordcount: '1446'
 ht-degree: 0%
 
 ---
