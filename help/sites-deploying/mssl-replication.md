@@ -11,13 +11,16 @@ topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1456'
+ht-degree: 2%
 
 ---
 
 
 # Repliceren met wederzijdse SSL{#replicating-using-mutual-ssl}
 
-Configureer AEM zodanig dat een replicatieagent op de auteurinstantie gebruikmaakt van wederzijdse SSL (MSSL) om verbinding te maken met de publicatieinstantie. Gebruikend MSSL, gebruiken de replicatieagent en de dienst van HTTP op de publicatie instantie certificaten om elkaar voor authentiek te verklaren.
+Vorm AEM zodat een replicatieagent op de auteursinstantie wederzijdse SSL (MSSL) gebruikt om met te verbinden publiceert instantie. Gebruikend MSSL, gebruiken de replicatieagent en de dienst van HTTP op de publicatie instantie certificaten om elkaar voor authentiek te verklaren.
 
 Wanneer u MSSL configureert voor replicatie, moet u de volgende stappen uitvoeren:
 
@@ -64,10 +67,10 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
    keytool -genkeypair -keyalg RSA -validity 3650 -alias alias -keystore keystorename.keystore  -keypass key_password -storepass  store_password -dname "CN=Host Name, OU=Group Name, O=Company Name,L=City Name, S=State, C=Country_ Code"
    ```
 
-   | Option | Author | Publiceren |
+   | Optie | Auteur | Publicatie |
    |---|---|---|
    | -alias | author | publish |
-   | -keystore | maker.keystore | publish.keystore |
+   | -keystore | author.keystore | publish.keystore |
 
 1. Als u het certificaat wilt exporteren, voert u de volgende opdracht in met behulp van de optiewaarden uit de onderstaande tabel:
 
@@ -75,11 +78,11 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
    keytool -exportcert -alias alias -file cert_file -storetype jks -keystore keystore -storepass store_password
    ```
 
-   | Option | Author | Publiceren |
+   | Optie | Auteur | Publicatie |
    |---|---|---|
    | -alias | author | publish |
-   | -file | auteur.cer | publish.cer |
-   | -keystore | maker.keystore | publish.keystore |
+   | -file | author.cer | publish.cer |
+   | -keystore | author.keystore | publish.keystore |
 
 ### pkcs#12-indeling {#pkcs-format}
 
@@ -91,9 +94,9 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl genrsa -out keyname.key 2048
    ```
 
-   | Option | Author | Publiceren |
+   | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -out | maker.key | publish.key |
+   | -out | author.key | publish.key |
 
 1. Als u een certificaataanvraag wilt genereren, voert u de volgende opdracht in met behulp van de optiewaarden uit de onderstaande tabel:
 
@@ -101,9 +104,9 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl req -new -key keyname.key -out key_request.csr
    ```
 
-   | Option | Author | Publiceren |
+   | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -toets | maker.key | publish.key |
+   | -key | author.key | publish.key |
    | -out | auteur_request.csr | publish_request.csr |
 
    Onderteken het certificaatverzoek of verzend het verzoek naar CA.
@@ -114,11 +117,11 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl x509 -req -days 3650 -in key_request.csr -signkey keyname.key -out certificate.cer
    ```
 
-   | Option | Author | Publiceren |
+   | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -signkey | maker.key | publish.key |
+   | -signkey | author.key | publish.key |
    | -inch | auteur_request.csr | publish_request.csr |
-   | -out | auteur.cer | publish.cer |
+   | -out | author.cer | publish.cer |
 
 1. Als u uw persoonlijke sleutel en het ondertekende certificaat aan een bestand pkcs#12 wilt toevoegen, voert u de volgende opdracht in met de optiewaarden uit de onderstaande tabel:
 
@@ -126,11 +129,11 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    openssl pkcs12 -keypbe PBE-SHA1-3DES -certpbe PBE-SHA1-3DES -export -in certificate.cer -inkey keyname.key -out pkcs12_archive.pfx -name "alias"
    ```
 
-   | Option | Author | Publiceren |
+   | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -inkey | maker.key | publish.key |
-   | -out | maker.pfx | publish.pfx |
-   | -inch | auteur.cer | publish.cer |
+   | -inkey | author.key | publish.key |
+   | -out | author.pfx | publish.pfx |
+   | -inch | author.cer | publish.cer |
    | -name | author | publish |
 
 ## Privésleutel en TrustStore installeren op auteur {#install-the-private-key-and-truststore-on-author}
@@ -217,7 +220,7 @@ De volgende lijst maakt een lijst van de eigenschappen OSGi die u moet vormen of
 | HTTPS inschakelen | org.apache.felix.https.enable | true |
 | HTTPS inschakelen voor Granite KeyStore | org.apache.felix.https.use.granite.keystore | true |
 | HTTPS-poort | org.osgi.service.http.port.secure | 8443 (of andere gewenste poort) |
-| Clientcertificaat | org.apache.felix.https.clientCertificate | &quot;Gezocht clientcertificaat&quot; |
+| Clientcertificaat | org.apache.felix.https.clientcertificate | &quot;Gezocht clientcertificaat&quot; |
 
 ## De Replication Agent configureren op auteur {#configure-the-replication-agent-on-author}
 
