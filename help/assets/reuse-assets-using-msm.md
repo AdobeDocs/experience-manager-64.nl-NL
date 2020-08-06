@@ -65,7 +65,7 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 Voer een van de volgende twee handelingen uit om een live kopie van een of meer bronelementen of -mappen te maken:
 
 * **Methode 1**: Selecteer de bronelementen en klik op **[!UICONTROL Create > Live Copy]** de werkbalk boven in het scherm.
-* **Methode 2**: Klik in de AEM-gebruikersinterface in de **[!UICONTROL Create > Live Copy]** rechterbovenhoek van de interface.
+* **Methode 2**: Klik in AEM gebruikersinterface in de **[!UICONTROL Create > Live Copy]** rechterbovenhoek van de interface.
 
 U kunt live kopieën van een middel of map één voor één maken. U kunt live kopieën maken die zijn afgeleid van een middel of een map die zelf een live kopie is.
 
@@ -74,15 +74,15 @@ Inhoudsfragmenten (CF&#39;s) worden niet ondersteund voor de gebruikszaak. Wanne
 Ga als volgt te werk om live kopieën te maken met de eerste methode:
 
 1. Selecteer bronelementen of -mappen. Klik **[!UICONTROL Create > Live Copy]** op de werkbalk.
-   ![Live kopie maken van AEM-interface](assets/lc_create1.png)
+   ![Actieve kopie maken van AEM interface](assets/lc_create1.png)
 1. Selecteer bronelement of -map. Klik op **[!UICONTROL Next]**.
 1. Geef een titel en naam op. Elementen hebben geen onderliggende elementen. Wanneer u een live kopie van mappen maakt, kunt u ervoor kiezen onderliggende items op te nemen of uit te sluiten.
 1. Selecteer een rollout-configuratie. Klik op **[!UICONTROL Create]**.
 
 Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
-1. Klik in de AEM-interface in de rechterbovenhoek op **[!UICONTROL Create > Live Copy]**.
-   ![Live kopie maken van AEM-interface](assets/lc_create2.png)
+1. Klik in AEM interface vanuit de rechterbovenhoek op **[!UICONTROL Create > Live Copy]**.
+   ![Actieve kopie maken van AEM interface](assets/lc_create2.png)
 1. Selecteer bronelement of -map. Klik op **[!UICONTROL Next]**.
 1. Doelmap selecteren. Klik op **[!UICONTROL Next]**.
 1. Geef een titel en naam op. Elementen hebben geen onderliggende elementen. Wanneer u een live kopie van mappen maakt, kunt u ervoor kiezen onderliggende items op te nemen of uit te sluiten.
@@ -94,7 +94,7 @@ Ga als volgt te werk om live kopieën te maken met de tweede methode:
 
 ## Verschillende eigenschappen en statussen van bron- en actieve kopie weergeven {#view-properties-statuses-source-and-lc}
 
-U kunt de informatie en MSM-verwante status van levende exemplaar zoals verhouding, synchronisatie, rollouts, en meer van de diverse gebieden van het gebruikersinterface bekijken AEM. De volgende twee methoden werken voor elementen en mappen:
+U kunt de informatie en MSM-verwante status van levende exemplaar zoals verhouding, synchronisatie, rollouts, en meer van de diverse gebieden van het AEM gebruikersinterface bekijken. De volgende twee methoden werken voor elementen en mappen:
 
 * Selecteer actief voor live kopiëren en zoek de informatie op de bijbehorende **[!UICONTROL Properties]** pagina.
 * Selecteer een bronmap en zoek in de **[!UICONTROL Live Copy Console]** map gedetailleerde informatie over elke live kopie.
@@ -132,7 +132,7 @@ AEM verstrekt een console om de beelden van alle levende exemplaren van een bron
 Voor een bronmiddel of een omslag, kunt u de volgende informatie zien en de volgende acties direct van de spoorstaaf van Verwijzingen voeren:
 
 * Zie de paden van live kopieën.
-* Open of maak een specifieke live kopie in de AEM-gebruikersinterface.
+* Open of maak een specifieke live kopie in AEM gebruikersinterface.
 * Synchroniseer de updates van een specifieke live kopie.
 * De verhouding van de onderbreking of veranderingsuitrolconfiguratie voor een specifieke levende kopie.
 * Open de overzichtsconsole van de live kopie.
@@ -150,7 +150,7 @@ Voor een specifieke levende kopie, klik **[!UICONTROL Edit Live Copy]** om verho
 Voor een actief exemplaar of een omslag van het levende exemplaar, kunt u de volgende informatie zien en de volgende acties direct van de spoorstaaf van Verwijzingen voeren:
 
 * Zie het pad van de bron.
-* Open of maak een specifieke live kopie in de AEM-gebruikersinterface.
+* Open of maak een specifieke live kopie in AEM gebruikersinterface.
 * De updates uitvoeren.
 
 Selecteer een asset of map met livekopieën, open het linkerspoor en klik op **[!UICONTROL References]**. U kunt ook een asset of map selecteren en de sneltoets `Alt + 4` gebruiken. 
@@ -183,7 +183,7 @@ U kunt ook een rollout-actie starten vanuit de [!UICONTROL References] rail nada
 
 Met een synchronisatiehandeling worden de wijzigingen alleen van een bron naar de geselecteerde live kopie doorgevoerd. Met de handeling Sync worden de lokale wijzigingen die na het annuleren van overerving zijn aangebracht, gerespecteerd en gehandhaafd. De lokale wijzigingen worden niet overschreven en de geannuleerde overerving wordt niet opnieuw tot stand gebracht. U kunt op drie manieren een synchronisatiehandeling starten.
 
-| Waar in AEM-interface | Wanneer en waarom gebruiken | Hoe wordt het gebruikt |
+| Waar in AEM interface | Wanneer en waarom gebruiken | Hoe wordt het gebruikt |
 |---|---|---|
 | [!UICONTROL References] spoor | Snel synchroniseren wanneer de bron al is geselecteerd. | Zie [Snelle acties van References rail voor bron](#quick-actions-from-references-rail-for-source) |
 | Werkbalk op de [!UICONTROL Properties] pagina | Een synchronisatie starten wanneer u de live kopieereigenschappen al hebt geopend. | Zie Een live kopie [synchroniseren](#synchronize-live-copy) |
@@ -221,7 +221,7 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 ## Live relatie verwijderen {#remove-live-relationship}
 
-U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in interface AEM, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
+U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in AEM interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
 
 1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets p gebruiken.
 1. Klik op **[!UICONTROL Live Copy]**. Click **[!UICONTROL Detach]** in the toolbar. Klik **[!UICONTROL Detach]** in het dialoogvenster dat wordt weergegeven.
@@ -244,7 +244,7 @@ Als een live-kopieermap meerdere elementen bevat, kan het lastig zijn acties op 
 
 ## MSM voor elementen uitbreiden {#extend-msm-for-assets}
 
-Met AEM kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor Middelen, werkt het uitbreiden enkel het zelfde als het met MSM voor Plaats werkt. Voor details, zie het [Uitbreiden van MSM](../sites-developing/extending-msm.md) en de volgende secties voor informatie over specifieke taken:
+AEM kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor Middelen, werkt het uitbreiden enkel het zelfde als het met MSM voor Plaats werkt. Voor details, zie het [Uitbreiden van MSM](../sites-developing/extending-msm.md) en de volgende secties voor informatie over specifieke taken:
 
 * [Overzicht van API&#39;s](../sites-developing/extending-msm.md#overview-of-the-java-api)
 * [Een nieuwe synchronisatiehandeling maken](../sites-developing/extending-msm.md#creating-a-new-synchronization-action)
