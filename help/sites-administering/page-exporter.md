@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '1019'
+ht-degree: 0%
 
 ---
 
 
 # De pagina-exportfunctie{#the-page-exporter}
 
-Met AEM kunt u een pagina exporteren als een volledige webpagina met afbeeldingen, JS- en CSS-bestanden.
+AEM kunt u een pagina exporteren als een volledige webpagina met afbeeldingen, .js- en .css-bestanden.
 
 Wanneer het exporteren is geconfigureerd, vraagt u gewoon een pagina in uw browser aan door deze te vervangen door `html` `export.zip` in de URL en krijgt u een gecomprimeerde bestandsdownload met de gerenderde pagina in HTML-indeling en de bestanden waarnaar wordt verwezen. Alle paden op de pagina, bijvoorbeeld paden naar afbeeldingen, worden herschreven zodat ze verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
 
@@ -31,7 +34,7 @@ Een pagina exporteren:
 1. `http://localhost:4502/content/geometrixx/en/products/triangle.html`
 1. Open het dialoogvenster Pagina-eigenschappen, selecteer het tabblad **Geavanceerd** en vouw de veldset **Exporteren** uit.
 
-1. Klik op het vergrootpictogram en selecteer een configuratiesjabloon. Selecteer de **geometrixx** -sjabloon, aangezien dit de standaardsjabloon is voor de Geometrixx-site. Click **OK**.
+1. Klik op het vergrootpictogram en selecteer een configuratiesjabloon. Selecteer de **geometrixx** -sjabloon omdat dit de standaardsjabloon is voor de Geometrixx-site. Click **OK**.
 
 1. Klik op **OK** om het dialoogvenster Pagina-eigenschappen te sluiten.
 1. Vraag de pagina aan door deze te vervangen `html` door `export.zip` in de URL.
@@ -60,9 +63,9 @@ AEM sluit een aantal sjablonen in, waaronder:
 
 Een configuratiesjabloon voor een pagina-exportfunctie maken:
 
-1. In **CRXDE Lite**, creeer hieronder een knoop `/etc/contentsync/templates`:
+1. Maak in **CRXDE Lite** hieronder een knooppunt `/etc/contentsync/templates`:
 
-   * Naam:bijv. `mysite`. De naam wordt weergegeven in het dialoogvenster Pagina-eigenschappen wanneer u de sjabloon voor het exporteren van pagina&#39;s kiest.
+   * Naam: bijv. `mysite`. De naam wordt weergegeven in het dialoogvenster Pagina-eigenschappen wanneer u de sjabloon voor het exporteren van pagina&#39;s kiest.
    * Type: `nt:unstructured`
 
 1. Onder de malplaatjeknoop, hier geroepen `mysite`, creeer een knoopstructuur gebruikend de hieronder beschreven configuratieknopen.
@@ -124,13 +127,13 @@ Met het volgende configuratieknooppunt kopieert u bijvoorbeeld de bestanden geom
 }
 ```
 
-De de configuratiesjabloon van de de paginauitvoer van **Geometrixx** toont u hoe een paginauitvoer kan worden gevormd. Als u de knooppuntstructuur van de sjabloon in uw browser wilt weergeven als een JPEG-indeling, vraagt u om de volgende URL:
+De de configuratiesjabloon van de de paginauitvoer van de **Geometrixx** toont u hoe een paginauitvoer kan worden gevormd. Als u de knooppuntstructuur van de sjabloon in uw browser wilt weergeven als een JPEG-indeling, vraagt u om de volgende URL:
 
 `http://localhost:4502/etc/contentsync/templates/geometrixx.-1.json`
 
 **Een aangepaste configuratie implementeren**
 
-Aangezien u in de knoopstructuur kunt opgemerkt, heeft het malplaatje van de de paginatransformatie van **Geometrixx** een `logo` knoop met een `type` bezit dat aan `image`wordt geplaatst. Dit is een speciaal configuratietype dat is gemaakt om het afbeeldingslogo naar het ZIP-bestand te kopiëren. Om aan sommige specifieke vereisten te voldoen, kunt u een douanebezit moeten uitvoeren `type` : Raadpleeg hiervoor de sectie Een aangepaste update-handler implementeren in de pagina Content Sync.
+Aangezien u in de knoopstructuur kunt gemerkt hebt, heeft het malplaatje van de de **Geometrixx** de de configuratieconfiguratie van de pagina uitvoer een `logo` knoop met een `type` bezit dat aan `image`wordt geplaatst. Dit is een speciaal configuratietype dat is gemaakt om het afbeeldingslogo naar het ZIP-bestand te kopiëren. Om aan sommige specifieke vereisten te voldoen, kunt u een douanebezit moeten uitvoeren `type` : Raadpleeg hiervoor de sectie Een aangepaste update-handler implementeren in de pagina Content Sync.
 
 ## Een pagina programmatisch exporteren {#programmatically-exporting-a-page}
 
