@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 43dc10c2-8cfc-4ca3-8ccb-9b3f268663b7
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '444'
+ht-degree: 0%
 
 ---
 
@@ -17,7 +20,7 @@ source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
 
 [Adaptief formulierfragment](/help/forms/using/adaptive-form-fragments.md) is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
 
-Voor auteurs van adaptieve formulieren staan referentiefragmenten in het AEM Forms-pakket [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Het bevat de volgende fragmenten:
+Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in het AEM Forms-pakket [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Het bevat de volgende fragmenten:
 
 * Adres
 * Contactgegevens
@@ -51,7 +54,7 @@ Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres.
 ## Creditcardgegevens {#credit-card-information}
 
 Bevat velden voor het vastleggen van creditcardgegevens die kunnen worden gebruikt voor het verwerken van betalingen.
-[ Fragment met ![creditcardgegevens](assets/cc-info.png)](assets/cc-info-1.png)
+[ ![Creditcardgegevensfragment](assets/cc-info.png)](assets/cc-info-1.png)
 
 ## Huidige werkgelegenheid {#current-employment}
 
@@ -76,7 +79,7 @@ Bevat velden voor het vastleggen van de arbeidsgeschiedenis. Het staat toe toevo
 
 ## Inkomsten en uitgaven {#income-expenditure}
 
-Bevat velden voor het opnemen van maandelijkse kasstroom en uitgaven. Formulieren die gebruikers verplichten financiële gegevens te verstrekken, kunnen dit fragment gebruiken om inkomsten en uitgaven vast te leggen.
+Bevat velden voor het opnemen van maandelijkse kasstroom en uitgaven. Forms die van gebruikers eist dat ze financiële gegevens verstrekken, kan dit fragment gebruiken om inkomsten en uitgaven vast te leggen.
 ![Inkomens- en uitgavenonderverdeling](assets/income.png)
 
 [Klik om te vergroten](assets/income-1.png)
