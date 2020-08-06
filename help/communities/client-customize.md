@@ -1,8 +1,8 @@
 ---
 title: Aanpassing aan clientzijde
 seo-title: Aanpassing aan clientzijde
-description: Gedrag of weergave van client-kant aanpassen in AEM-gemeenschappen
-seo-description: Gedrag of weergave van client-kant aanpassen in AEM-gemeenschappen
+description: Gedrag of weergave van de client in AEM Communities aanpassen
+seo-description: Gedrag of weergave van de client in AEM Communities aanpassen
 uuid: 57978c39-9a8a-4098-9001-c8bbe7ee786f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 24b6d1d2-c118-4a25-959f-2783961c4ae3
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1273'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 |---|---|
 |  | **[SCF Handlebars Helpers](handlebars-helpers.md)** |
 
-Om de verschijning en/of het gedrag van een component AEM Communities aan de cliënt-kant aan te passen, zijn er verscheidene benaderingen.
+Er zijn verschillende manieren om de weergave en/of het gedrag van een AEM Communities-component op de client aan te passen.
 
 Twee belangrijke benaderingen zijn het bedekken of uitbreiden van een component.
 
@@ -91,7 +94,7 @@ Skin maken kan worden bereikt door de framestijlen selectief te overschrijven of
 
 Een skin toewijzen aan een component:
 
-1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: compositiegebied, werkbalkknoppen, berichtlettertype, enz.).
+1. Identificeer de elementen die u wilt wijzigen (bijvoorbeeld: composergebied, werkbalkknoppen, berichtlettertype, enz.).
 1. Identificeer de CSS klasse/de regels die deze elementen beïnvloeden.
 1. Maak een stijlbladbestand (.css).
 1. Neem het opmaakmodel op in een clientbibliotheekmap ([clientlibs](#clientlibs-for-scf)) voor uw site en zorg ervoor dat dit opneemt vanuit uw sjablonen en pagina&#39;s met [ui:includeClientLib](../../help/sites-developing/clientlibs.md).
@@ -102,7 +105,7 @@ De aangepaste stijlen overschrijven nu de standaardframestijlen en de component 
 
 >[!CAUTION]
 >
->**Elke CSS-klassenaam die wordt voorafgegaan door** scf-js-&amp;ast; heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
+>Elke CSS-klassenaam die wordt voorafgegaan door **scf-js-&amp;ast;** heeft een specifiek gebruik in javascript-code. Deze klassen beïnvloeden de status van een component (bijvoorbeeld van verborgen naar zichtbaar schakelen) en mogen niet worden overschreven of verwijderd.
 >
 >Terwijl scf-js-&amp;ast; klassen zijn niet van invloed op stijlen, de klassennamen kunnen in stijlpagina&#39;s worden gebruikt met de waarschuwing dat er, aangezien ze de statussen van elementen bepalen, bijwerkingen kunnen optreden.
 
@@ -116,7 +119,7 @@ Als u een JavaScript-implementatie voor componenten wilt uitbreiden, hebt u alle
 1. De methode uitbreiden
 1. Gebruik SCF.registerComponent() om alle methoden te registreren met de standaardinstellingen of de aangepaste objecten en weergaven.
 
-### forum.js: Voorbeeld van uitbreiding van forum - GB {#forum-js-sample-extension-of-forum-hbs}
+### forum.js: Voorbeeld van uitbreiding van forum - GB  {#forum-js-sample-extension-of-forum-hbs}
 
 ```xml
 (function($CQ, _, Backbone, SCF) {
@@ -156,7 +159,7 @@ De clientlibs voor SCF volgen een zeer specifiek noemingspatroon voor twee varia
 | Clientlib-variabele | Patroon voor eigenschap Categorieën |
 |--- |--- |
 | complete clientlib | cq.social.hbs.&lt;naam component> |
-| auteur-clientlib | cq.social.auteur.hbs.&lt;naam component> |
+| auteur-clientlib | cq.social.author.hbs.&lt;naam component> |
 
 ### Volledige Clientlibs {#complete-clientlibs}
 
