@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: a8d986ab-2a4c-488b-957e-4606f7391bd3
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '838'
+ht-degree: 2%
 
 ---
 
@@ -23,7 +26,7 @@ HTML5-uitvoering van een op XFA gebaseerde formuliersjabloon bestaat uit verschi
 >
 >Wijzig in de CSS-klassen de waarde van de breedte, hoogte, randdikte, boven, links, rechts, onder, opvulling, marge en andere positie- en groottekenmerken niet. Als u de positie- en groottekenmerken wijzigt, verandert de indeling van het formulier.
 
-## CSS-klassen voor elementen {#css-classes-nbsp-for-elements-nbsp}
+## CSS-klassen voor elementen  {#css-classes-nbsp-for-elements-nbsp}
 
 Elk element bevat duidelijk gedefinieerde CSS-klassen. U kunt deze klassen wijzigen om de weergave van een element te wijzigen. Elk element, behalve het veld en draw-elementen, heeft twee CSS-klassen: de klasse Type en de klasse Name.
 
@@ -35,7 +38,7 @@ Elk element bevat duidelijk gedefinieerde CSS-klassen. U kunt deze klassen wijzi
 >
 >Sommige XFA-elementen hebben geen naam. Als u de stijlen van dergelijke componenten wilt wijzigen, wijzigt u alle componenten van dat specifieke type.
 
-Voor pagina&#39;s die niet in de ontwerper van de Vormen van AEM worden genoemd, worden de pagina&#39;s in een vorm HTML5 genoemd in de stijgende orde van hun aantal. Voor een HTML5-formulier met twee pagina&#39;s krijgen de pagina&#39;s bijvoorbeeld de naam Pagina1, Pagina2.
+Voor pagina&#39;s die niet zijn genoemd in de AEM Forms Designer, worden pagina&#39;s in een HTML5-formulier in toenemende mate genummerd. Voor een HTML5-formulier met twee pagina&#39;s krijgen de pagina&#39;s bijvoorbeeld de naam Pagina1, Pagina2.
 
 ## Veldelement {#field-element}
 
@@ -122,7 +125,7 @@ Naast het type en de naamklasse bevat de veldcomponent ook een extra CSS-klasse 
 
 ## CSS-klassen voor verschillende velden {#css-classes-for-different-fields}
 
-De ontwerper van de Vormen AEM steunt verschillende types van gebieden in een vorm zoals NumericField, DecimalField, en het Gebied van de Datum. Al deze velden in HTML bevatten de bovengenoemde CSS-klassen. Ze bevatten ook enkele extra klassen, afhankelijk van het type veld.
+AEM Forms Designer ondersteunt verschillende typen velden in een formulier, zoals NumeriekVeld, DecimaalVeld en Datumveld. Al deze velden in HTML bevatten de bovengenoemde CSS-klassen. Ze bevatten ook enkele extra klassen, afhankelijk van het type veld.
 
 Aan elk veld is een widget gekoppeld die het interface-element vertegenwoordigt. De klassen van elk veld en de widgets die aan elk veld zijn gekoppeld, worden hieronder weergegeven.
 
@@ -224,12 +227,12 @@ Aan elk veld is een widget gekoppeld die het interface-element vertegenwoordigt.
 
 ## CSS-klassen voor verschillende Draw Elements {#css-classes-for-different-draw-elements}
 
-Met de AEM Forms Designer kunt u statische tekenelementen, zoals tekst en afbeeldingen, invoegen. Voor elk tekenelement wordt een aparte CSS-klasse gekoppeld aan dat element. De lijst met CSS-klassen voor draw-elementen wordt hieronder weergegeven. Aan elk tekenelement is een tekenklasse gekoppeld.
+Met AEM Forms Designer kunt u statische tekenelementen, zoals tekst en afbeeldingen, invoegen. Voor elk tekenelement wordt een aparte CSS-klasse gekoppeld aan dat element. De lijst met CSS-klassen voor draw-elementen wordt hieronder weergegeven. Aan elk tekenelement is een tekenklasse gekoppeld.
 
 | **Type tekenen** | **CSS-klasse** |
 |---|---|
 | Tekst | text |
-| Afbeelding | image |
+| Afbeelding | afbeelding |
 | Rechthoek | rectangle |
 | Lijn | line |
 
