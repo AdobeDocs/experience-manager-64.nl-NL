@@ -1,8 +1,8 @@
 ---
 title: Herstructurering van activa Bewaarinstelling in AEM 6.4
 seo-title: Herstructurering van activa Bewaarinstelling in AEM 6.4
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagplaats in AEM 6.4 for Assets.
-seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagplaats in AEM 6.4 for Assets.
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.4 voor Middelen.
+seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.4 voor Middelen.
 uuid: 0e3d8163-6274-4d1b-91c7-32ca927fb83c
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 212930fc-3430-4a0a-842c-2fb613ef981f
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '1057'
+ht-degree: 1%
 
 ---
 
 
 # Herstructurering van activa Bewaarinstelling in AEM 6.4{#assets-repository-restructuring-in-aem}
 
-Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](/help/sites-deploying/repository-restructuring.md) , moeten klanten die een upgrade naar AEM 6.4 uitvoeren deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM Assets Solution. Sommige veranderingen vereisen werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
+Zoals beschreven op de [herstructurering van de moederopslagplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die tot AEM 6.4 opwaarderen deze pagina moeten gebruiken om de werkinspanning te beoordelen verbonden aan veranderingen in de opslagplaats die de Oplossing van AEM Assets beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
 
 **Met 6.4-upgrade**
 
@@ -30,7 +33,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
 * [Voorbeeld-DRM-licenties](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#example-drm-licenses)
 
 * [E-mailmeldingssjabloon voor delen van koppeling](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#link-share-e-mail-notification-template)
-* [InDesign-workflowscripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
+* [InDesign Workflowscripts](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#indesign-workflow-scripts)
 * [Configuraties voor videotransformatie](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#video-transcoding-configurations)
 * [Dic](/help/sites-deploying/assets-repository-restructuring-in-aem-6-4.md#misc2)
 
@@ -83,7 +86,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
       </ol> </li> 
      <li>De map verwijderen: <strong><code>/etc/dam/notification/email/default</code></strong> nadat de e-mailsjablonen in de sjablonen zijn verplaatst.<br /> 
       <ol> 
-       <li>Als de e-mailsjabloon onder<strong> geen updates heeft ontvangen, kan de map worden verwijderd omdat de oorspronkelijke e-mailsjabloon onder <code>/etc/notification/email/default</code></strong>AEM 6.4 <strong><code>/libs/settings/notification/email/default</code></strong> wordt geïnstalleerd.</li> 
+       <li>Als de e-mailsjabloon onder<strong> geen updates heeft ontvangen, kan de map worden verwijderd, aangezien de oorspronkelijke e-mailsjabloon onder <code>/etc/notification/email/default</code></strong><strong><code>/libs/settings/notification/email/default</code></strong> de installatie van AEM 6.4 valt.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -112,7 +115,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
     <ol> 
      <li>Kopieer de ontwerpen van de vorige locatie naar de nieuwe locatie onder <code>/apps</code>.</li> 
      <li>Alle CSS-, JavaScript- en statische bronnen in het ontwerp converteren naar een <a href="/help/sites-developing/clientlibs.md#creating-client-library-folders" target="_blank">clientbibliotheek</a> met <code>allowProxy = true</code>.</li> 
-     <li>Verwijzingen naar de vorige locatie in de <code>cq:designPath</code> eigenschap bijwerken via <strong>AEM &gt; DAM Admin &gt; Pagina-eigenschappen voor delen van element &gt; tabblad Geavanceerd &gt; Ontwerpveld</strong>.</li> 
+     <li>Verwijzingen naar de vorige locatie in de <code>cq:designPath</code> eigenschap bijwerken via <strong>AEM &gt; DAM-beheer &gt; Pagina-eigenschappen voor delen van element &gt; Pagina-eigenschappen &gt; Geavanceerd tabblad &gt; Ontwerpveld</strong>.</li> 
      <li>Werk pagina's bij die naar de vorige locatie verwijzen om de nieuwe categorie Clientbibliotheek te gebruiken. Hiervoor moet de code voor pagina-implementatie worden bijgewerkt.</li> 
      <li>Werk de regels van de Verzender bij om het dienen van de Bibliotheken van de Cliënt via <code>/etc.clientlibs/</code> volmachtsservlet toe te staan.</li> 
     </ol> <p>Voor om het even welke Ontwerpen die niet in SCM, en gewijzigde runtime via de Dialogen van het Ontwerp worden beheerd, verplaats geen authorable ontwerpen uit <code>/etc</code>.</p> </td> 
@@ -146,7 +149,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
       </ol> </li> 
      <li>De map verwijderen: <code>/etc/dam/workflow/notification/email/downloadasset </code>nadat de e-mailsjablonen in de sjablonen zijn verplaatst.<br /> 
       <ol> 
-       <li>Als de e-mailsjabloon onder<strong> geen updates heeft ontvangen, kan de map worden verwijderd omdat de oorspronkelijke e-mailsjabloon onder <code>/etc</code></strong>AEM 6.4 <strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> wordt geïnstalleerd.</li> 
+       <li>Als de e-mailsjabloon onder<strong> geen updates heeft ontvangen, kan de map worden verwijderd, aangezien de oorspronkelijke e-mailsjabloon onder <code>/etc</code></strong><strong><code>/libs/settings/dam/workflownotification/email/downloadasset</code></strong> de installatie van AEM 6.4 valt.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -187,7 +190,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
       </ol> </li> 
      <li>De map verwijderen: <strong><code>/etc/dam/adhocassetshare</code></strong> nadat de e-mailsjablonen in de sjablonen zijn verplaatst.<br /> 
       <ol> 
-       <li>Als de e-mailsjabloon onder<strong> geen updates heeft ontvangen, kan de map worden verwijderd omdat de oorspronkelijke e-mailsjabloon onder <code>/etc</code></strong>AEM 6.4 <strong><code>/libs/settings/dam/adhocassetshare</code></strong> wordt geïnstalleerd.</li> 
+       <li>Als de e-mailsjabloon onder<strong> geen updates heeft ontvangen, kan de map worden verwijderd, aangezien de oorspronkelijke e-mailsjabloon onder <code>/etc</code></strong><strong><code>/libs/settings/dam/adhocassetshare</code></strong> de installatie van AEM 6.4 valt.</li> 
       </ol> </li> 
     </ol> </td> 
   </tr> 
@@ -198,7 +201,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
  </tbody> 
 </table>
 
-### InDesign-workflowscripts {#indesign-workflow-scripts}
+### InDesign Workflowscripts {#indesign-workflow-scripts}
 
 <table> 
  <tbody> 
@@ -246,7 +249,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
   </tr> 
   <tr> 
    <td><strong>Herstructureringsrichtsnoeren</strong></td> 
-   <td><p>Aanpassingen op projectniveau moeten worden geknipt en geplakt onder gelijkwaardige <code>/apps</code> of <code>/conf</code> paden, naargelang het geval.</p> <p>Uitlijnen op de AEM 6.4-opslagstructuur:</p> 
+   <td><p>Aanpassingen op projectniveau moeten worden geknipt en geplakt onder gelijkwaardige <code>/apps</code> of <code>/conf</code> paden, naargelang het geval.</p> <p>Uitlijnen met de AEM 6.4-opslagruimtestructuur:</p> 
     <ol> 
      <li>Gewijzigde videoconfiguraties kopiëren van <code>/etc/dam/video</code> naar <code>/apps/settings/dam/video</code></li> 
      <li>Verwijderen <code>/etc/dam/video</code></li> 
@@ -277,7 +280,7 @@ Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](
     <ul> 
      <li>u zult een migratiescript moeten in werking stellen om de knoop van <code>/etc</code> naar <code>/conf</code>te bewegen. Het script bevindt zich op <em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
      <li>of u kunt de configuratie bewerken en deze worden automatisch opgeslagen op de nieuwe locatie.</li> 
-    </ul> <p>Merk op dat u hun copyURL/embed code niet moet aanpassen om aan te wijzen <code>/conf</code>. Het bestaande verzoek aan <code>/etc</code> zal aan de correcte inhoud van worden opnieuw verpletterd <code>/conf</code>.</p> </td> 
+    </ul> <p>Merk op dat u hun copyURL/embed code niet moet aanpassen om aan te wijzen <code>/conf</code>. Het bestaande verzoek aan <code>/etc</code> zal aan de correcte inhoud van opnieuw worden verpletterd <code>/conf</code>.</p> </td> 
   </tr> 
   <tr> 
    <td><strong>Opmerkingen</strong></td> 
