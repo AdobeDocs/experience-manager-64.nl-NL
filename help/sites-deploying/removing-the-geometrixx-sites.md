@@ -1,8 +1,8 @@
 ---
-title: Geometrixsites verwijderen
-seo-title: Geometrixsites verwijderen
-description: Leer hoe u het voorbeeld Geometrixx-inhoud kunt verwijderen.
-seo-description: Leer hoe u het voorbeeld Geometrixx-inhoud kunt verwijderen.
+title: De sites van de Geometrixx verwijderen
+seo-title: De sites van de Geometrixx verwijderen
+description: Leer hoe u de inhoud van de Geometrixx van het voorbeeld kunt verwijderen.
+seo-description: Leer hoe u de inhoud van de Geometrixx van het voorbeeld kunt verwijderen.
 uuid: 07d20837-3375-4e64-bb07-3e4d10452335
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,13 +10,16 @@ content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '144'
+ht-degree: 0%
 
 ---
 
 
-# Geometrixsites verwijderen{#removing-the-geometrixx-sites}
+# De sites van de Geometrixx verwijderen{#removing-the-geometrixx-sites}
 
-AEM wordt geleverd met een set voorbeelden van Geometrixx-websites. U kunt deze voorbeeldinhoud verwijderen via **Pakketbeheer**.
+AEM wordt geleverd met een set websites met voorbeeldpagina&#39;s. U kunt deze voorbeeldinhoud verwijderen via **Pakketbeheer**.
 
 De afzonderlijke geometrixx-gerelateerde pakketten zijn:
 
