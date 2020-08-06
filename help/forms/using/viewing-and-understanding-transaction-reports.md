@@ -21,11 +21,11 @@ ht-degree: 0%
 
 Gebruik transactierapporten om een geïnformeerde beslissing te nemen over het gebruik van producten en het opnieuw in evenwicht brengen van investeringen in hardware en software.
 
-Met transactierapporten kunt u het aantal verzonden formulieren, verwerkte documenten en gerenderde documenten vastleggen en bijhouden. Het doel van het volgen van deze transacties is een geïnformeerde beslissing te nemen over het gebruik van producten en het opnieuw in evenwicht brengen van investeringen in hardware en software. Voor meer informatie, zie het Overzicht [van de Rapporten van de Transactie van](/help/forms/using/transaction-reports-overview.md)AEM Forms.
+Met transactierapporten kunt u het aantal verzonden formulieren, verwerkte documenten en gerenderde documenten vastleggen en bijhouden. Het doel van het volgen van deze transacties is een geïnformeerde beslissing te nemen over het gebruik van producten en het opnieuw in evenwicht brengen van investeringen in hardware en software. Zie Overzicht [van](/help/forms/using/transaction-reports-overview.md)AEM Forms-transactierapporten voor meer informatie.
 
 ## Transactierapporten instellen  {#setting-up-transaction-reports}
 
-De functie Transactierapporten is beschikbaar als onderdeel van het invoegpakket voor AEM-formulieren. Zie AEM-formulieren [installeren en configureren voor informatie over het installeren van het invoegpakket op alle auteur- en publicatieinstanties](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html). Als u het invoegpakket voor AEM-formulieren hebt geïnstalleerd, gaat u als volgt te werk:
+De functie Transactierapporten is beschikbaar als onderdeel van het add-on pakket voor AEM formulieren. Zie [Formulieren](https://helpx.adobe.com/experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)installeren en configureren voor informatie over het installeren van het add-on-pakket op alle auteur- en publish-instanties. Wanneer u het pakket voor de invoegtoepassing voor AEM formulieren hebt geïnstalleerd, gaat u als volgt te werk:
 
 * Omgekeerde replicatie inschakelen voor alle publicatievarianten
 * Transactierapporten inschakelen
@@ -34,9 +34,10 @@ De functie Transactierapporten is beschikbaar als onderdeel van het invoegpakket
 
 >[!NOTE]
 >
->* De transactierapporten van AEM Forms steunen geen topologieën die slechts publiceer instanties bevatten.
+>* AEM Forms-transactierapporten ondersteunen geen topologieën die alleen publicatieexemplaren bevatten.
 >* Voordat u transactierapportage gebruikt, moet u ervoor zorgen dat de omgekeerde replicatie is ingeschakeld voor alle publicatievarianten.
 >* Transactiegegevens worden omgekeerd gerepliceerd van een publicatie-instantie naar alleen de overeenkomstige auteur of verwerkingsinstantie. De auteur of verwerkingsinstantie kan gegevens niet verder repliceren naar een andere instantie.
+
 >
 
 
@@ -47,17 +48,17 @@ Transactierapporten gebruiken omgekeerde replicatie om het aantal transacties va
 
 ### Transactierapporten inschakelen {#enable-transaction-reports}
 
-Transactierapporten zijn standaard uitgeschakeld. U kunt de rapporten van de Console van het Web van AEM toelaten. Als u transactierapporten wilt inschakelen in een AEM Forms-omgeving, voert u de volgende stappen uit op alle auteur- en publicatieinstanties:
+Transactierapporten zijn standaard uitgeschakeld. U kunt de rapporten van AEM Console van het Web toelaten. Als u transactierapporten wilt inschakelen in een AEM Forms-omgeving, voert u de volgende stappen uit op alle auteur- en publicatieinstanties:
 
-1. Meld u als beheerder aan bij een AEM-instantie. Ga naar **Gereedschappen** > **Bewerkingen** > **Webconsole**.
-1. Zoek en open de service **Forms Transaction Reporting** .
+1. Meld u als beheerder aan bij een AEM. Ga naar **Gereedschappen** > **Bewerkingen** > **Webconsole**.
+1. Zoek en open de **Forms Transaction Reporting** -service.
 1. Schakel het selectievakje Transacties opnemen in. Click **Save**.
 
    Herhaal stap 1-3 voor alle auteur en publiceer instanties.
 
 ### Rechten opgeven om een transactierapport te bekijken {#provide-rights-to-view-a-transaction-report}
 
-Alleen leden van de groep fd-administrator kunnen transactierapporten weergeven. Om een gebruiker toe te staan om transactierapporten te bekijken, maak gebruikerslid van de fd-beheerder groep. Voor instructies over het maken van een gebruiker tot lid van een groep AEM, zie het Beleid van de Rechten van de [Gebruiker, van de Groep en van de Toegang](/help/sites-administering/user-group-ac-admin.md).
+Alleen leden van de groep fd-administrator kunnen transactierapporten weergeven. Om een gebruiker toe te staan om transactierapporten te bekijken, maak gebruikerslid van de fd-beheerder groep. Voor instructies over het maken van een gebruiker tot lid van een AEM groep, zie het Beleid van de Rechten van de [Gebruiker, van de Groep en van de Toegang](/help/sites-administering/user-group-ac-admin.md).
 
 ### (Optioneel) Transactie-uitstelperiode en -uitvakken configureren {#optional-configure-transaction-flush-period-and-outboxes}
 
@@ -78,21 +79,21 @@ De omgekeerde replicatie kopieert transactiegegevens aan standaardoutbox van de 
 U kunt transactierapporten weergeven over auteur- of publicatieinstanties. Het transactierapport over de auteurinstantie verstrekt een bijeengevoegde som van alle transacties die op de gevormde auteur en publiceer instanties plaatsvinden. Het transactierapport over de publicatie-instantie bevat een telling van transacties die alleen op de onderliggende publicatie-instantie plaatsvinden. Voer de volgende stappen uit om het rapport te bekijken:
 
 1. Meld u aan bij de AEM Forms-server op `https://[hostname]:[port]`.
-1. Navigeer naar **Gereedschappen** > **Formulieren** > Transactierapport **** weergeven.
+1. Ga naar **Gereedschappen** > **Forms** > Transactierapport **** weergeven.
 
 ## Het rapport begrijpen {#understanding-the-report}
 
-AEM Forms toont transactierapporten sinds de gevormde datum, zoals aangetoond in een samenvattingsrapport hieronder:
+AEM Forms geeft transactierapporten weer sinds de geconfigureerde datum, zoals hieronder in een samenvattingsrapport wordt getoond:
 
 ![sample-transaction-report-auteur](assets/sample-transaction-report-author.png)
 
 * Met de opties **De datum opnieuw instellen op vandaag** kunt u transactierecords opnieuw instellen. Wanneer u de datum aan vandaag terugstelt, worden alle vorige transactieverslagen verloren. Wanneer u de datum op een auteurinstantie terugstelt, beïnvloedt de verandering geen transactierapporten over de Publish instanties en omgekeerd.
 * Gebruik de transacties van de **Show van slechts publiceren instanties** om alle transacties te bekijken die slechts op gevormde publiceer instantie voorkwamen of landbouwbedrijf publiceren.
-* Gebruik de categorieën: **Document verwerkt**, **documenten gerenderd** en **formulieren verzonden** om de bijbehorende transacties weer te geven. Voor het type transacties die in deze categorieën worden geboekt, zie [Billable Transactie Reports APIs](/help/forms/using/transaction-reports-billable-apis.md).
+* Gebruik de categorieën: **Document verwerkt**, **Documenten gerenderd** en **Forms verzonden** om corresponderende transacties te bekijken. Voor het type transacties die in deze categorieën worden geboekt, zie [Billable Transactie Reports APIs](/help/forms/using/transaction-reports-billable-apis.md).
 
 ## Logboeken voor transactierapporten weergeven {#view-transaction-reporting-logs}
 
-Transactierapportering plaatst alle informatie die in het rapport wordt weergegeven en enkele aanvullende informatie in de logboeken. De informatie in de logboeken is nuttig voor de gevorderde gebruikers. Bijvoorbeeld, verdelen de logboeken transacties in veelvoudige granulaire categorieën in vergelijking met drie geconsolideerde categorieën die in het rapport worden getoond. De logbestanden zijn beschikbaar in het `error.log` bestand in de `/crx-repository/logs/` map. De logboeken zijn beschikbaar zelfs als u de transactierapporten van de Console van het Web van AEM niet toelaat.
+Transactierapportering plaatst alle informatie die in het rapport wordt weergegeven en enkele aanvullende informatie in de logboeken. De informatie in de logboeken is nuttig voor de gevorderde gebruikers. Bijvoorbeeld, verdelen de logboeken transacties in veelvoudige granulaire categorieën in vergelijking met drie geconsolideerde categorieën die in het rapport worden getoond. De logbestanden zijn beschikbaar in het `error.log` bestand in de `/crx-repository/logs/` map. De logboeken zijn beschikbaar zelfs als u de transactierapporten van AEM Console van het Web niet toelaat.
 
 ## Verwante artikelen {#related-articles}
 
