@@ -1,8 +1,8 @@
 ---
 title: Het bedrijfslogo voor branding wijzigen
 seo-title: Het bedrijfslogo voor branding wijzigen
-description: Als u de werkruimte van AEM Forms van een merk wilt voorzien, verschaft u het logo van uw organisatie door het standaardlogo aan te passen.
-seo-description: Als u de werkruimte van AEM Forms van een merk wilt voorzien, verschaft u het logo van uw organisatie door het standaardlogo aan te passen.
+description: Als u een merk wilt aanbrengen in de AEM Forms-werkruimte, kunt u het logo van uw organisatie opgeven door het standaardlogo aan te passen.
+seo-description: Als u een merk wilt aanbrengen in de AEM Forms-werkruimte, kunt u het logo van uw organisatie opgeven door het standaardlogo aan te passen.
 uuid: f0c340ee-2e54-4bb0-9c30-383cc1bbadb8
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 2c651302-f4ef-4211-b897-f5942ed0ffb1
 translation-type: tm+mt
 source-git-commit: a5cac0d369bb40659cfde011e5d6ef9a68dc4012
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
 
 # Het bedrijfslogo voor branding wijzigen {#changing-the-organization-logo-for-branding}
 
-Het bedrijfslogo wordt linksboven in de werkruimte van AEM Forms weergegeven. Als u het logo wilt bijwerken, voert u de [algemene stappen van de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) van de werkruimte van AEM Forms uit en voert u de volgende stappen uit.
+Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u het logo wilt bijwerken, volgt u de [algemene stappen van de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) van de AEM Forms-werkruimte en voert u de volgende stappen uit.
 
 1. Maak een logo en noem het bestand als `NewWorkspace.png`. Plaats het afbeeldingsbestand in de map /apps/ws/images met een WebDAV-client.
 
