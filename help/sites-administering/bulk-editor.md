@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4da555b4-7fb2-4d55-b29f-8bd21f474c1a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -32,16 +35,16 @@ Deze sectie beschrijft hoe te met de bulkredacteur in de console van **Hulpmidde
 
 >[!CAUTION]
 >
->Met de [afgekeurde klassieke gebruikersinterface](/help/release-notes/deprecated-removed-features.md) in AEM 6.4 is de Bulk-editor ook afgekeurd en daarom is Adobe niet van plan de Bulk-editor verder te verbeteren.
+>Met de [veroudering van Klassieke UI](/help/release-notes/deprecated-removed-features.md) in AEM 6.4, is de Redacteur van het Bulk ook afgekeurd en daarom is Adobe niet van plan om de Redacteur van het Bulk verder te verbeteren.
 
 ## Voorbeeld van hoofdletters/kleine letters voor de Bulkeditor {#example-use-case-for-the-bulk-editor}
 
 Als u bijvoorbeeld alle namen en e-mailadressen nodig hebt van gebruikers die een bepaalde enquête hebben ingevuld, kan de Bulk-editor die informatie verschaffen en kunt u deze naar een werkblad exporteren.
 
-In de Geometrixx-website vindt u een voorbeeld van een dergelijk geval van gebruik:
+Een voorbeeld om een dergelijk gebruiksgeval te illustreren is opgenomen in de website van de Geometrixx:
 
 1. Navigeer naar de pagina **Support** en vervolgens naar de enquête **Customer Service Satisfaction** .
-1. **Bewerk** de alinea **Begin van formulier** . **Klik in het dialoogvenster op het tabblad** Geavanceerd **, vouw de configuratie** van de **handeling uit en klik vervolgens op Gegevens** weergeven... .
+1. **Bewerk** de alinea **Begin van formulier** . Klik in het dialoogvenster op het tabblad **Geavanceerd** , vouw de configuratie **van de** handeling uit en klik vervolgens op Gegevens **weergeven...**.
 
    ![aangepaste enquête](assets/custsatsurvey.png)
 
@@ -90,7 +93,7 @@ Om de bulkredacteur te gebruiken om veelvoudige punten gelijktijdig uit te geven
   </tr> 
   <tr> 
    <td>Aangepaste eigenschappen/kolommen</td> 
-   <td>Voer andere eigenschappen in die niet worden vermeld in het veld <strong>Eigenschappen/kolommen</strong> . Deze aangepaste eigenschappen worden weergegeven in het resultatenvenster. U kunt meerdere eigenschappen toevoegen door een komma te gebruiken om eigenschappen te scheiden. <i></i> Opmerking: Als u een aangepaste eigenschap toevoegt die nog niet bestaat, geeft AEM WCM een lege cel weer. Wanneer u de lege cel wijzigt en deze opslaat, wordt de eigenschap toegevoegd aan het knooppunt. De nieuwe eigenschap moet beperkingen van het knooppunttype en naamruimten van eigenschappen respecteren.</td> 
+   <td>Voer andere eigenschappen in die niet worden vermeld in het veld <strong>Eigenschappen/kolommen</strong> . Deze aangepaste eigenschappen worden weergegeven in het resultatenvenster. U kunt meerdere eigenschappen toevoegen door een komma te gebruiken om eigenschappen te scheiden. <i>Opmerking:</i> Als u een douanebezit toevoegt dat nog niet bestaat, AEM WCM toont een lege cel. Wanneer u de lege cel wijzigt en deze opslaat, wordt de eigenschap toegevoegd aan het knooppunt. De nieuwe eigenschap moet beperkingen van het knooppunttype en naamruimten van eigenschappen respecteren.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -117,10 +120,10 @@ Bijvoorbeeld:
 
 #### Aanvullende GQL-zoekparameters {#additional-gql-query-parameters}
 
-* **** pad: alleen zoekknooppunten onder dit pad. Als u meer dan één termijn met een wegprefix specificeert, slechts zal laatste worden overwogen.
-* **** type: alleen retourknooppunten van de opgegeven knooppunttypen. Dit omvat zowel primaire als gemengde typen. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
-* **** bestelling: het resultaat van de opgegeven eigenschappen te bepalen. U kunt meerdere door komma&#39;s gescheiden eigenschapsnamen opgeven. Als u het resultaat in aflopende volgorde wilt rangschikken, plaatst u gewoon een minteken voor de naam van de eigenschap. Bijvoorbeeld: order:-name. Als u een plusteken gebruikt, wordt het resultaat in oplopende volgorde geretourneerd. Dit is ook de standaardinstelling.
-* **** limiet: Hiermee beperkt u het aantal resultaten met een interval. Bijvoorbeeld: limit:10..20 Let op: het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. Bijvoorbeeld limit:10 (retourneert de eerste 10 resultaten)
+* **pad:** alleen zoekknooppunten onder dit pad. Als u meer dan één termijn met een wegprefix specificeert, slechts zal laatste worden overwogen.
+* **type:** alleen retourknooppunten van de opgegeven knooppunttypen. Dit omvat zowel primaire als gemengde typen. U kunt meerdere knooppunttypen opgeven die door komma&#39;s worden gescheiden. GQL retourneert knooppunten van een van de opgegeven typen.
+* **bestelling:** het resultaat van de opgegeven eigenschappen te bepalen. U kunt meerdere door komma&#39;s gescheiden eigenschapsnamen opgeven. Als u het resultaat in aflopende volgorde wilt rangschikken, plaatst u gewoon een minteken voor de naam van de eigenschap. Bijvoorbeeld: order:-name. Als u een plusteken gebruikt, wordt het resultaat in oplopende volgorde geretourneerd. Dit is ook de standaardinstelling.
+* **limiet:** Hiermee beperkt u het aantal resultaten met een interval. Bijvoorbeeld: limit:10..20 Let op: het interval is op nul gebaseerd, het begin is inclusief en het einde is exclusief. U kunt ook een open interval opgeven:limit:10. of limit:..20 Als de punten worden weggelaten en er slechts één waarde is opgegeven, retourneert GQL maximaal dit aantal resultaten. Bijvoorbeeld limit:10 (retourneert de eerste 10 resultaten)
 
 ### Inhoud exporteren {#exporting-content}
 
@@ -129,7 +132,7 @@ U moet mogelijk inhoud exporteren en er wijzigingen in aanbrengen in een Excel-s
 Inhoud exporteren:
 
 1. Zoeken naar inhoud zoals wordt beschreven in Inhoud [](#searching-and-editing-content)zoeken en bewerken.
-1. Klik op **Exporteren** om de wijzigingen te exporteren naar een Excel-werkblad met tabs als scheidingsteken. AEM WCM vraagt u waar u het dossier wilt downloaden.
+1. Klik op **Exporteren** om de wijzigingen te exporteren naar een Excel-werkblad met tabs als scheidingsteken. AEM WCM vraagt u waar u het bestand wilt downloaden.
 
    >[!NOTE]
    >
