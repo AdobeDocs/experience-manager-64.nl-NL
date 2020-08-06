@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4f6a525d-d291-426f-be22-d2ef92c57156
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2142'
+ht-degree: 8%
 
 ---
 
@@ -21,7 +24,7 @@ De ontwerpomgeving van AEM biedt verschillende mechanismen voor het organiseren 
 
 ## Uw site beheren {#managing-your-site}
 
-Met de **Sites** -console kunt u door uw website navigeren en deze beheren met de kopbalk, werkbalk, actiepictogrammen (van toepassing op de geselecteerde bron), broodkruimels en, indien geselecteerd, secundaire rails (bijvoorbeeld tijdlijn en verwijzingen).
+The **Sites** console allows you to navigate and manage your website, using the header bar, toolbar, action icons (applicable for the selected resource), breadcrumbs and when selected, secondary rails (for example, timeline and references).
 
 Bijvoorbeeld de kaartweergave:
 
@@ -54,7 +57,7 @@ Verdere [Help-gerelateerde bronnen zijn beschikbaar op consoles](/help/sites-aut
 
 De componentenbrowser toont alle componenten die voor gebruik op uw huidige pagina beschikbaar zijn. U kunt deze naar de juiste locatie slepen en vervolgens bewerken om uw inhoud toe te voegen.
 
-De componentenbrowser is een lusje binnen het zijpaneel (samen met [activa browser](/help/sites-authoring/author-environment-tools.md#assets-browser) en [inhoudsboom](/help/sites-authoring/author-environment-tools.md#content-tree)). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
+De componentenbrowser is een tabblad in het zijpaneel (samen met de [assetbrowser](/help/sites-authoring/author-environment-tools.md#assets-browser) en de [contentstructuur](/help/sites-authoring/author-environment-tools.md#content-tree)). Als u het zijpaneel wilt openen (of sluiten), gebruikt u het pictogram linksboven op de werkbalk:
 
 ![](do-not-localize/screen_shot_2018-03-22at141659.png)
 
@@ -90,11 +93,13 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
       * De standaardcomponentpictogrammen zijn monochroom.
       * Afkortingen zijn altijd de eerste twee tekens van de componentnaam.
+
    Van de hoogste toolbar in browser van Componenten kunt u:
 
    * Componenten filteren op naam.
    * Beperk de weergave tot een specifieke groep met behulp van de keuzelijst.
-   Voor een gedetailleerdere beschrijving van de component klikt of tikt u op het informatiepictogram naast de component in de Componentbrowser (indien beschikbaar).
+
+   Voor een meer gedetailleerde beschrijving van de component kunt u op het informatiepictogram naast de component in de Componentbrowser klikken of tikken (indien beschikbaar).
 
    ![screen_shot_2018-03-22at141929](assets/screen_shot_2018-03-22at141929.png)
 
@@ -104,7 +109,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
 In de middelenbrowser worden alle elementen weergegeven die beschikbaar zijn voor rechtstreeks gebruik op de huidige pagina.
 
-De middelenbrowser is een tab in het zijpaneel, samen met de [deelvensterbrowser en de](/help/sites-authoring/author-environment-tools.md#components-browser)inhouds- en [inhouds-structuur](/help/sites-authoring/author-environment-tools.md#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
+The assets browser is a tab within the side panel along with the [components browse](/help/sites-authoring/author-environment-tools.md#components-browser)r and [content tree](/help/sites-authoring/author-environment-tools.md#content-tree). Als u het zijpaneel wilt openen of sluiten, gebruikt u het pictogram linksboven op de werkbalk:
 
 ![](do-not-localize/screen_shot_2018-03-22at141659-1.png)
 
@@ -149,7 +154,7 @@ De daadwerkelijke verschijning en behandeling zijn afhankelijk van het apparaten
 
    De elementenbrowser beslaat volledig de pagina die wordt bewerkt.
 
-   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de vereiste component kunt toevoegen.
+   Als u een element aan uw pagina wilt toevoegen, houdt u het vereiste element ingedrukt en verplaatst u het naar rechts. De elementenbrowser wordt dan gesloten en geeft de pagina weer, waar u het element aan de gewenste component kunt toevoegen.
 
    ![screen_shot_2018-03-22at142223](assets/screen_shot_2018-03-22at142223.png)
 
@@ -283,7 +288,7 @@ Er zijn verschillende modi voor het bewerken van een pagina die verschillende ha
 * [Ontwerp](/help/sites-authoring/default-components-designmode.md) - staat u toe om componenten voor gebruik op een pagina toe te laten/onbruikbaar te maken en het ontwerp van de component te vormen (als de pagina op een [statische malplaatje](/help/sites-authoring/templates.md#editable-and-static-templates)gebaseerd is).
 
 * [Doelstelling](/help/sites-authoring/content-targeting-touch.md) - vergroot de relevantie van inhoud door de inhoud op alle kanalen te richten en te meten.
-* [Activiteitenkaart](/help/sites-authoring/pa-using.md) - geeft analysegegevens voor de pagina weer.
+* [Activity Map](/help/sites-authoring/pa-using.md) - toont de gegevens van de Analyse voor de pagina.
 
 * [Tijdlijn verdraaien](/help/sites-authoring/working-with-page-versions.md#timewarp) - hiermee kunt u de status van een pagina op een bepaald tijdstip bekijken.
 * [Live Copy-status](/help/sites-authoring/editing-content.md#live-copy-status) : geeft een snel overzicht van de status van de live kopie en van de onderdelen die u wel of niet wilt overnemen.
@@ -301,6 +306,7 @@ U kunt deze openen met de pictogrammen in de rechterbovenhoek. Het werkelijke pi
 >* Voor toegang tot bepaalde modi zijn de juiste machtigingen/bevoegdheden vereist.
 >* De modus Ontwikkelaar is niet beschikbaar op mobiele apparaten vanwege ruimtebeperkingen.
 >* Er is een [sneltoets](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) ( `Ctrl-Shift-M`) om te schakelen tussen **Voorvertoning** en de momenteel geselecteerde modus (bijvoorbeeld **Bewerken**, **Lay-out**, enz.).
+
 >
 
 
@@ -313,7 +319,7 @@ Vaak is het tijdens het ontwerpen nodig een andere bron te selecteren, bijvoorbe
 
 Het voorbeeld dat hier wordt gebruikt om te illustreren is de afbeeldingscomponent. Zie [Componenten voor pagina&#39;s ontwerpen](/help/sites-authoring/default-components.md)voor meer informatie over het gebruik en bewerken van componenten.
 
-De gebieden van de weg hebben auto-volledige en blik-vooruit functionaliteit nu om het vinden van een middel gemakkelijker te maken. U begint gewoon te typen in het padveld en de AEM biedt tijdens het typen overeenkomende paden.
+De gebieden van de weg hebben auto-volledige en blik-vooruit functionaliteit nu om het vinden van een middel gemakkelijker te maken. U begint gewoon te typen in het padveld en de AEM biedt overeenkomende paden terwijl u typt.
 
 ![screen_shot_2018-03-22at154403](assets/screen_shot_2018-03-22at154403.png)
 
@@ -329,7 +335,7 @@ De wegbrowser is georganiseerd als de [kolommening](/help/sites-authoring/basic-
 
 Zodra een bron is geselecteerd, wordt de knop **Selecteren** rechtsboven in het dialoogvenster actief. Klik of tik om de selectie te bevestigen of **Annuleren** om af te breken.
 
-Als de context voor de selectie van veelvoudige middelen toestaat, activeert het selecteren van een middel ook de Uitgezochte knoop, maar voegt ook een telling van het aantal geselecteerde middelen aan het hoger-recht van het venster toe. Klik op de X naast het nummer om de selectie van alles op te heffen.
+Als de selectie van meerdere assets is toegestaan binnen de context, activeert het selecteren van een resource ook de knop Selecteren, maar wordt er ook een telling van het aantal geselecteerde resources in de rechterbovenhoek van het venster toegevoegd. Klik op de X naast het getal om de selectie op te heffen.
 
 ![chlimage_1-294](assets/chlimage_1-294.png)
 
