@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0042893e-3d2c-469e-8759-404be16e7436
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
 
 ## Overzicht {#overview}
 
-Voor AEM-gemeenschappen zijn er verschillende rapporten die op verschillende manieren toegankelijk zijn vanuit de auteursomgeving.
+Voor AEM Communities zijn er diverse rapporten die op verschillende manieren toegankelijk zijn vanuit de auteursomgeving.
 
 In het algemeen zijn de verschillende verslagen:
 
@@ -37,11 +40,11 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Reports]**
 * Kiezen uit
-   * **[!UICONTROL Toewijzingsrapport]**
+   * **[!UICONTROL Assignments Report]**
       * Genereer een rapport voor geselecteerde communautaire Plaats, Gebruiker of Groep, en Toewijzing
-   * **[!UICONTROL Post Report]**
+   * **[!UICONTROL Posts Report]**
       * Genereer een rapport voor een geselecteerde Community Site, Type inhoud en Tijdsperiode
-   * **[!UICONTROL Rapport Weergaven]**
+   * **[!UICONTROL Views Report]**
       * Genereer een rapport voor een geselecteerde Community Site, Type inhoud en Tijdsperiode
          ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -49,9 +52,9 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Resources]**
 * Een bestaande community-site voor inschakelen selecteren
-   * Selecteer het pictogram **[!UICONTROL Rapport]** om rapporten te genereren die betrekking hebben op alle bronnen voor activering
+   * Selecteer **[!UICONTROL Report]** pictogram om rapporten te genereren die betrekking hebben op alle bronnen voor activering
    * Een leerpad voor inschakelen selecteren
-   * Selecteer het pictogram **[!UICONTROL Rapport]** om rapporten te genereren voor
+   * Selecteer **[!UICONTROL Report]** pictogram om rapporten te produceren voor
       * De meegeleverde middelen voor activering
       * De leerlingen die zijn toegewezen aan het leerpad
 * Deze verslagen bevatten:
@@ -74,13 +77,15 @@ Het verslag bevat informatie over de voortgang van de activiteiten en eventuele 
 
 Selecteer de criteria voor het rapport:
 
-* **[!UICONTROL Site]** Selecteer een community-site voor activering
-* **[!UICONTROL Gebruiker of groep]**
+* **[!UICONTROL Site]**
+Een community-site voor activering selecteren
+* **[!UICONTROL User or Group]**
    * Selecteer Gebruiker om een rapport voor één student te genereren
    * Selecteer Groep om een rapport voor een groep studenten te genererenDe tunnelservice geeft toegang tot leden en lidgroepen vanuit de publicatieomgeving
-* **[!UICONTROL Toewijzing]** Kies een van de instellingsbronnen die aan de geselecteerde leerling(s) zijn toegewezen
+* **[!UICONTROL Assignment]**
+Maak een keuze uit de instellingsbronnen die aan de geselecteerde studenten zijn toegewezen
 
-Selecteer **[!UICONTROL Genereer]** om het rapport te maken:
+Selecteer **[!UICONTROL Generate]** om het rapport te maken:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
@@ -92,15 +97,17 @@ Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden ge
 
 Selecteer de criteria voor het rapport:
 
-* **[!UICONTROL Site]** Een communitysite selecteren
-* **[!UICONTROL Met Inhoudstype]** kunt u alle inhoud kiezen of een van de functies op de site selecteren
+* **[!UICONTROL Site]**
+Een communitysite selecteren
+* **[!UICONTROL Content Type]**
+Kan Alle inhoud kiezen of een van de functies op de site selecteren
 * TijdframeSelecteer een van de volgende opties:
    * Laatste 7 dagen
    * Laatste 30 dagen
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteer **[!UICONTROL Genereer]** om het rapport te maken:
+Selecteer **[!UICONTROL Generate]** om het rapport te maken:
 
 ![chlimage_1-160](assets/chlimage_1-160.png)
 
@@ -112,15 +119,17 @@ Met de Post-console kunnen rapporten gedurende een bepaalde periode worden gegen
 
 Selecteer de criteria voor het rapport:
 
-* **[!UICONTROL Site]** Een communitysite selecteren
-* **[!UICONTROL Met Inhoudstype]** kunt u alle inhoud kiezen of een van de functies op de site selecteren
+* **[!UICONTROL Site]**
+Een communitysite selecteren
+* **[!UICONTROL Content Type]**
+Kan Alle inhoud kiezen of een van de functies op de site selecteren
 * TijdframeSelecteer een van de volgende opties:
    * Laatste 7 dagen
    * Laatste 30 dagen
    * Laatste 90 dagen
    * Vorig jaar
 
-Selecteer **[!UICONTROL Genereer]** om het rapport te maken:
+Selecteer **[!UICONTROL Generate]** om het rapport te maken:
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
@@ -128,4 +137,4 @@ Selecteer **[!UICONTROL Genereer]** om het rapport te maken:
 
 ### Geen community-sites vermeld {#no-community-sites-listed}
 
-Als er geen communitysites worden vermeld, controleert u of Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
+Als er geen community-sites worden vermeld, moet u ervoor zorgen dat Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
