@@ -30,9 +30,9 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 
 ### Apache Sling Authentication Service configureren {#configure-apache-sling-authentication-service}
 
-1. Ga naar `https://[server]:[port]/system/console/configMgr` AEM Forms die op OSGi lopen of
+1. Ga naar `https://[server]:[port]/system/console/configMgr` AEM Forms die wordt uitgevoerd op OSGi of
 
-   `https://[server]:[port]/lc/system/console/configMgr` op AEM Forms die op JEE lopen.
+   `https://[server]:[port]/lc/system/console/configMgr` op AEM Forms in werking gesteld op JEE.
 
 1. Zoek en klik op de configuratie van **Apache Sling Authentication Service** om deze te openen in de bewerkingsmodus.
 
@@ -42,10 +42,11 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 
       * -/content/xfaforms
       * -/etc/clientlibs
-   * AEM Forms over OSGi
+   * AEM Forms op OSGi
 
       * -/content/xfaforms
       * -/etc/clientlibs/fd/xfaforms
+
    >[!NOTE]
    >
    >Kopieer en plak de opgegeven waarde niet in het veld Verificatievereisten omdat de speciale tekens in de waarde hierdoor kunnen beschadigd raken. Typ in plaats daarvan de opgegeven waarde in het veld.
@@ -57,7 +58,7 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 
 De [beveiligde modus](/help/forms/using/get-xdp-pdf-documents-aem.md) is standaard ingeschakeld. Houd het ingeschakeld voor de productieomgevingen. U kunt dit uitschakelen voor een ontwikkelomgeving om HTML5 Forms in Designer voor te vertonen. Voer de volgende stappen uit om het uit te schakelen:
 
-1. Meld u als beheerder aan bij de AEM-webconsole.
+1. Meld u als beheerder aan bij AEM webconsole.
 
    * URL voor AEM Forms op OSGi is `https://[server]:[port]/system/console/configMgr`
    * URL voor AEM Forms op JEE is `https://[server]:[port]/lc/system/console/configMgr`
@@ -70,21 +71,22 @@ De [beveiligde modus](/help/forms/using/get-xdp-pdf-documents-aem.md) is standaa
 1. Ga in Designer naar **Gereedschappen** > **Opties**.
 1. Selecteer in het venster Opties de pagina **Serveropties** , geef de volgende gegevens op en klik op **OK**.
 
-   * **Server-URL**: AEM Forms-server-URL.
-   * **HTTP-poortnummer**: AEM-serverpoort. De standaardwaarde is 4502.
+   * **Server-URL**: URL AEM Forms-server.
+   * **HTTP-poortnummer**: AEM serverpoort. De standaardwaarde is 4502.
    * **Context HTML-voorvertoning:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
 
-      * `/content/xfaforms/profiles/default.html` (AEM Forms over OSGi)
-      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms JEE)
-   * **Context van Forms Manager:** Contextpad waarop de interface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
+      * `/content/xfaforms/profiles/default.html` (AEM Forms op OSGi)
+      * `/lc/content/xfaforms/profiles/default.html` (AEM Forms op JEE)
+   * **Context Forms Manager:** Contextpad waarop de gebruikersinterface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
 
-      * `/aem/forms` (AEM Forms over OSGi)
-      * `/lc/forms` (AEM Forms JEE)
-   **Opmerking:** *Controleer of de AEM Forms-server actief is. The HTML preview connects to the CRX server to* generate *a preview.*
+      * `/aem/forms` (AEM Forms op OSGi)
+      * `/lc/forms` (AEM Forms op JEE)
 
-   ![AEM Forms Designer-opties ](assets/server_options.png)
+   **Opmerking:** *Zorg ervoor dat de AEM Forms-server actief is. The HTML preview connects to the CRX server to* generate *a preview.*
 
-   AEM Forms Designer-opties
+   ![Opties voor AEM Forms Designer ](assets/server_options.png)
+
+   Opties voor AEM Forms Designer
 
 1. Als u een voorbeeld van een formulier in HTML wilt bekijken, klikt u op het tabblad **Voorbeeld-HTML** .
 
