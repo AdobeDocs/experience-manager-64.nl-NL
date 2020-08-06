@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: d355a3ee-c8a8-4a07-8d28-d1a99bda315c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
 
 # Grondbeginselen van tags {#tag-essentials}
 
-Wanneer componenten van AEM Communities zijn geconfigureerd met ingeschakelde codering, kunnen leden van de community de inhoud die ze plaatsen, labelen in de publicatieomgeving.
+Wanneer AEM Communities-componenten zijn geconfigureerd met codering ingeschakeld, kunnen communityleden de inhoud die ze plaatsen in de publicatieomgeving coderen.
 
 De onderliggende infrastructuur voor tags die worden toegepast in de publicatieomgeving, is gelijk aan de infrastructuur voor tags die worden toegepast op inhoud in de ontwerpomgeving, zoals pagina&#39;s en elementen:
 
