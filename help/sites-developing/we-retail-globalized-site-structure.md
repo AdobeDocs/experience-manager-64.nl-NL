@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '423'
+ht-degree: 0%
 
 ---
 
@@ -34,13 +37,13 @@ We.Retail is gebouwd met een geglobaliseerde sitestructuur die een taalstramien 
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
-1. Ga terug naar de kolomweergave en klik op het stramien Taal om de hoofdwortels van de taal met inhoud weer te geven. Alleen Engels heeft inhoud.
+1. Ga terug naar de kolomweergave, klik op de Master taal en bekijk de master taalbasis met inhoud. Alleen Engels heeft inhoud.
 
    Wij.Retail wordt niet geleverd met vertaalde inhoud, maar de structuur en configuratie zijn zodanig ingesteld dat u de vertaalservices kunt demonstreren.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Selecteer de Engelse taalmaster en open de **References** rail in de siteconsole en selecteer **Taalkopieën**.
+1. Selecteer de Master Taal, open het spoor van **Verwijzingen** in de plaatsenconsole en selecteer **Taalexemplaren**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -66,7 +69,7 @@ We.Retail is gebouwd met een geglobaliseerde sitestructuur die een taalstramien 
 
 >[!NOTE]
 >
->Deze procedure toonde de ingebouwde integratie met de machinevertaling van Microsoft aan. Met behulp van het [AEM Translation Integration Framework](/help/sites-administering/translation.md)kunt u de vertaling van AEM integreren met veel standaardvertaalservices.
+>Deze procedure toonde de ingebouwde integratie met de machinevertaling van Microsoft aan. Met behulp van het [AEM Translation Integration Framework](/help/sites-administering/translation.md)kunt u met veel standaardvertaalservices integreren om de vertaling van AEM te ordenen.
 
 ## Aanvullende informatie {#further-information}
 
