@@ -1,6 +1,6 @@
 ---
-title: Ingediende formulieren verwerken
-seo-title: Ingediende formulieren verwerken
+title: Verzendde Forms afhandelen
+seo-title: Verzendde Forms afhandelen
 description: 'null'
 seo-description: 'null'
 uuid: 673b28f1-f023-4da8-a6a0-c5ff921c5f5d
@@ -12,15 +12,18 @@ topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 translation-type: tm+mt
 source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+workflow-type: tm+mt
+source-wordcount: '2867'
+ht-degree: 0%
 
 ---
 
 
-# Ingediende formulieren verwerken {#handling-submitted-forms}
+# Verzendde Forms afhandelen {#handling-submitted-forms}
 
 Web-based toepassingen die een gebruiker toelaten om interactieve vormen in te vullen vereisen dat de gegevens terug naar de server worden voorgelegd. Met de Forms-service kunt u de gegevens ophalen die de gebruiker in een interactief formulier heeft ingevoerd. Nadat u de gegevens hebt opgehaald, kunt u de gegevens verwerken om aan uw bedrijfsvereisten te voldoen. U kunt de gegevens bijvoorbeeld opslaan in een database, de gegevens naar een andere toepassing verzenden, de gegevens naar een andere service verzenden, de gegevens in een formulierontwerp samenvoegen, de gegevens weergeven in een webbrowser, enzovoort.
 
-Formuliergegevens worden naar de service Forms verzonden als XML- of PDF-gegevens. Dit is een optie die is ingesteld in Designer. Met een formulier dat als XML wordt verzonden, kunt u afzonderlijke waarden van veldgegevens extraheren. Met andere woorden, u kunt de waarde extraheren van elk formulierveld dat de gebruiker in het formulier heeft ingevoerd. Een formulier dat als PDF-gegevens wordt verzonden, is binaire gegevens, niet XML-gegevens. U kunt het formulier opslaan als PDF-bestand of het formulier naar een andere service verzenden. Als u gegevens wilt extraheren uit een formulier dat als XML is verzonden en de formuliergegevens vervolgens wilt gebruiken om een PDF-document te maken, roept u een andere bewerking voor AEM-formulieren aan. (Zie PDF-documenten [maken met verzonden XML-gegevens](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+Formuliergegevens worden naar de Forms-service verzonden als XML- of PDF-gegevens. Dit is een optie die is ingesteld in Designer. Met een formulier dat als XML wordt verzonden, kunt u afzonderlijke waarden van veldgegevens extraheren. Met andere woorden, u kunt de waarde extraheren van elk formulierveld dat de gebruiker in het formulier heeft ingevoerd. Een formulier dat als PDF-gegevens wordt verzonden, is binaire gegevens, niet XML-gegevens. U kunt het formulier opslaan als PDF-bestand of het formulier naar een andere service verzenden. Als u gegevens wilt extraheren uit een formulier dat als XML is verzonden en vervolgens de formuliergegevens wilt gebruiken om een PDF-document te maken, roept u een andere AEM Forms-bewerking op. (Zie PDF-documenten [maken met verzonden XML-gegevens](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
 In het volgende diagram worden gegevens weergegeven die worden verzonden naar een Java-server die is benoemd `HandleData` vanuit een interactief formulier dat wordt weergegeven in een webbrowser.
 
@@ -57,7 +60,7 @@ Wanneer formuliergegevens als XML worden verzonden, kunt u XML-gegevens ophalen 
 
 ![hs_hs_linformdata](assets/hs_hs_loanformdata.png)
 
-In de volgende afbeelding ziet u de overeenkomstige XML-gegevens die zijn opgehaald met de API van de Forms service Client.
+In de volgende afbeelding ziet u de overeenkomstige XML-gegevens die zijn opgehaald met de Forms Service Client API.
 
 ![hs_hs_loandata](assets/hs_hs_loandata.png)
 
@@ -69,7 +72,7 @@ De velden in het leningformulier. Deze waarden kunnen worden opgehaald met Java 
 
 ## Verzonden PDF-gegevens verwerken {#handling-submitted-pdf-data}
 
-Neem bijvoorbeeld een webtoepassing die de service Forms aanroept. Nadat de Forms-service een interactief PDF-formulier heeft gerenderd naar een webbrowser van een client, vult de gebruiker het formulier in en verzendt het als PDF-gegevens. Wanneer de service Forms de PDF-gegevens ontvangt, kunnen de PDF-gegevens naar een andere service worden verzonden of als PDF-bestand worden opgeslagen. Het volgende diagram toont de logische stroom van de toepassing.
+Neem bijvoorbeeld een webtoepassing die de Forms-service oproept. Nadat de Forms-service een interactief PDF-formulier heeft gerenderd naar een webbrowser van de client, vult de gebruiker het formulier in en verzendt het als PDF-gegevens. Wanneer de Forms-service de PDF-gegevens ontvangt, kan deze de PDF-gegevens naar een andere service verzenden of als PDF-bestand opslaan. Het volgende diagram toont de logische stroom van de toepassing.
 
 ![hs_hs_savingformulieren](assets/hs_hs_savingforms.png)
 
@@ -85,19 +88,19 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
  <tbody>
   <tr>
    <td><p>1</p></td>
-   <td><p>Een webpagina bevat een koppeling die toegang krijgt tot een Java Server die de service Forms aanroept.</p></td>
+   <td><p>Een webpagina bevat een koppeling die toegang krijgt tot een Java Servlet die de Forms-service aanroept.</p></td>
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Met de service Forms wordt een interactief PDF-formulier weergegeven in de webbrowser van de client.</p></td>
+   <td><p>De Forms-service geeft een interactief PDF-formulier weer aan de webbrowser van de client.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>De gebruiker vult een interactief formulier in en klikt op een verzendknop. Het formulier wordt als PDF-gegevens teruggestuurd naar de service Forms. Deze optie wordt ingesteld in Designer.</p></td>
+   <td><p>De gebruiker vult een interactief formulier in en klikt op een verzendknop. Het formulier wordt als PDF-gegevens teruggestuurd naar de Forms-service. Deze optie wordt ingesteld in Designer.</p></td>
   </tr>
   <tr>
    <td><p>4</p></td>
-   <td><p>De service Forms slaat de PDF-gegevens op als een PDF-bestand. </p></td>
+   <td><p>De Forms-service slaat de PDF-gegevens op als een PDF-bestand. </p></td>
   </tr>
  </tbody>
 </table>
@@ -108,7 +111,7 @@ Als formuliergegevens worden verzonden als UTF-16-URL-gegevens, vereist de clien
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Forms-service.
 
 ## Overzicht van de stappen {#summary-of-steps}
 
@@ -126,11 +129,11 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Forms Client API-object maken**
 
-Voordat u een API-bewerking voor Forms-service programmatisch kunt uitvoeren, moet u een Forms-service-client maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient` object. Als u de API voor webservices van Forms gebruikt, maakt u een `FormsService` object.
+Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvoeren, moet u een Forms-serviceclient maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient` object. Als u de Forms-API voor webservices gebruikt, maakt u een `FormsService` object.
 
 **Formuliergegevens ophalen**
 
-Als u verzonden formuliergegevens wilt ophalen, roept u de `FormsServiceClient` methode van het `processFormSubmission` object aan. Wanneer u deze methode aanroept, moet u het inhoudstype van het verzonden formulier opgeven. Wanneer gegevens vanuit een clientwebbrowser naar de service Forms worden verzonden, kunnen deze als XML- of PDF-gegevens worden verzonden. Om de gegevens op te halen die in formuliervelden zijn ingevoerd, kunnen de gegevens als XML-gegevens worden verzonden.
+Als u verzonden formuliergegevens wilt ophalen, roept u de `FormsServiceClient` methode van het `processFormSubmission` object aan. Wanneer u deze methode aanroept, moet u het inhoudstype van het verzonden formulier opgeven. Wanneer gegevens vanuit een clientwebbrowser naar de Forms-service worden verzonden, kunnen deze als XML- of PDF-gegevens worden verzonden. Om de gegevens op te halen die in formuliervelden zijn ingevoerd, kunnen de gegevens als XML-gegevens worden verzonden.
 
 U kunt ook formuliervelden ophalen uit een formulier dat als PDF-gegevens is verzonden door de volgende runtime-opties in te stellen:
 
@@ -146,14 +149,14 @@ U geeft het inhoudstype van het verzonden formulier op wanneer u de `processForm
 
 >[!NOTE]
 >
->Er zijn drie bijbehorende snelle start gekoppeld aan de sectie Verzendformulieren verwerken. De PDF-formulieren verwerken die zijn verzonden als PDF met de snelle start van de Java API laat zien hoe verzonden PDF-gegevens worden verwerkt. Het inhoudstype dat in deze snelle start wordt opgegeven, is `application/pdf`. De functie PDF-formulieren verwerken die zijn verzonden als XML met de Java API Quick start laat zien hoe de verzonden XML-gegevens worden verwerkt die worden verzonden vanuit een PDF-formulier. Het inhoudstype dat in deze snelle start wordt opgegeven, is `text/xml`. Op dezelfde manier wordt met de snelle start van de Java API getoond hoe de verzonden HTML-formulieren die zijn verzonden als XML worden verwerkt. Deze bewerking laat zien hoe de verzonden XML-gegevens die zijn verzonden vanuit een HTML-formulier, worden verwerkt. Het inhoudstype dat in deze snelle start wordt opgegeven, is application/x-www-form-urlencoded.
+>Er zijn drie bijbehorende snelstarthandleidingen gekoppeld aan de sectie Verzendde Forms afhandelen. De PDF forms voor verwerking die met de Java API-snelstarthandleiding als PDF zijn verzonden, tonen aan hoe verzonden PDF-gegevens moeten worden verwerkt. Het inhoudstype dat in deze snelle start wordt opgegeven, is `application/pdf`. De PDF forms voor verwerking die als XML worden verzonden met de Java API Quick start tonen aan hoe de verzonden XML-gegevens die vanuit een PDF-formulier worden verzonden, moeten worden verwerkt. Het inhoudstype dat in deze snelle start wordt opgegeven, is `text/xml`. Op dezelfde manier wordt met de snelle start van de Java API getoond hoe de verzonden HTML-formulieren die zijn verzonden als XML worden verwerkt. Deze bewerking laat zien hoe de verzonden XML-gegevens die zijn verzonden vanuit een HTML-formulier, worden verwerkt. Het inhoudstype dat in deze snelle start wordt opgegeven, is application/x-www-form-urlencoded.
 
-U haalt formuliergegevens op die naar de Forms-service zijn gepost en bepaalt de verwerkingsstatus. Wanneer gegevens naar de service Forms worden verzonden, betekent dit niet noodzakelijkerwijs dat de service Forms de gegevens heeft verwerkt en dat de gegevens klaar zijn om te worden verwerkt. Gegevens kunnen bijvoorbeeld naar de service Forms worden verzonden, zodat een berekening kan worden uitgevoerd. Wanneer de berekening is voltooid, wordt het formulier teruggestuurd naar de gebruiker met de weergegeven berekeningsresultaten. Voordat u verzonden gegevens verwerkt, wordt u aangeraden vast te stellen of de service Forms de gegevens heeft verwerkt.
+U haalt formuliergegevens op die naar de Forms-service zijn verzonden en bepaalt de verwerkingsstatus. Dat wil zeggen dat wanneer gegevens worden ingediend bij de Forms-dienst, dit niet noodzakelijkerwijs betekent dat de Forms-dienst de gegevens heeft verwerkt en dat de gegevens klaar zijn om te worden verwerkt. Gegevens kunnen bijvoorbeeld naar de Forms-service worden verzonden, zodat een berekening kan worden uitgevoerd. Wanneer de berekening is voltooid, wordt het formulier teruggestuurd naar de gebruiker met de weergegeven berekeningsresultaten. Voordat u verzonden gegevens verwerkt, wordt u aangeraden te bepalen of de Forms-service de gegevens heeft verwerkt.
 
-De service Forms retourneert de volgende waarden om aan te geven of de verwerking van de gegevens is voltooid:
+De Forms-service retourneert de volgende waarden om aan te geven of de verwerking van de gegevens is voltooid:
 
 * **0 (Verzenden):** De verzonden gegevens zijn klaar om te worden verwerkt.
-* **1 (berekenen):** De Forms-service heeft de gegevens berekend en de resultaten moeten worden teruggegeven aan de gebruiker.
+* **1 (berekenen):** De Forms-service heeft een rekenbewerking uitgevoerd op de gegevens en de resultaten moeten worden teruggegeven aan de gebruiker.
 * **2 (Valideren):** De door de Forms-service gevalideerde formuliergegevens en de resultaten moeten naar de gebruiker worden teruggestuurd.
 * **3 (Volgende):** De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
 * **4 (Vorige**): De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
@@ -164,7 +167,7 @@ De service Forms retourneert de volgende waarden om aan te geven of de verwerkin
 
 **Bepalen of de formulierverzending bestandsbijlagen bevat**
 
-Formulieren die worden verzonden naar de service Forms kunnen bestandsbijlagen bevatten. Met het ingebouwde venster Bijlage van Acrobat kan een gebruiker bijvoorbeeld bestandsbijlagen selecteren die samen met het formulier moeten worden verzonden. Een gebruiker kan ook bestandsbijlagen selecteren met een HTML-werkbalk die wordt weergegeven met een HTML-bestand.
+Forms dat is verzonden naar de Forms-service kan bestandsbijlagen bevatten. Met het venster voor ingebouwde bijlagen van Acrobat kan een gebruiker bijvoorbeeld bestandsbijlagen selecteren die samen met het formulier moeten worden verzonden. Een gebruiker kan ook bestandsbijlagen selecteren met een HTML-werkbalk die wordt weergegeven met een HTML-bestand.
 
 Nadat u hebt bepaald of een formulier bestandsbijlagen bevat, kunt u de gegevens verwerken. U kunt bijvoorbeeld de bestandsbijlage opslaan in het lokale bestandssysteem.
 
@@ -178,15 +181,15 @@ Afhankelijk van het inhoudstype van de verzonden gegevens, kunt u afzonderlijke 
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Forms Service API Quick Start](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Documenten doorgeven aan de Forms Service](/help/forms/developing/passing-documents-forms-service.md)
+[Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md)
 
-[Webtoepassingen maken die formulieren renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ## Ingevulde formulieren verwerken met de Java API {#handle-submitted-forms-using-the-java-api}
 
@@ -205,6 +208,7 @@ Een verzonden formulier verwerken met de Forms API (Java):
 
    * Als u formuliergegevens wilt ophalen die naar een Java Server zijn gepost, maakt u een `com.adobe.idp.Document` object met behulp van de constructor van het object en roept u de `javax.servlet.http.HttpServletResponse` methode van het `getInputStream` object aan vanuit de constructor.
    * Maak een `RenderOptionsSpec` object met de constructor ervan. Stel de waarde van de landinstelling in door de methode van het `RenderOptionsSpec` `setLocale` object aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft.
+
    >[!NOTE]
    >
    >U kunt de Forms-service de opdracht geven XDP- of XML-gegevens te maken van verzonden PDF-inhoud door de methode van het `RenderOptionsSpec` object aan te roepen en door te geven `setPDF2XDP` en `true` door te geven `setXMLData` `true`. Vervolgens kunt u de `FormsResult` methode van het `getOutputXML` object aanroepen om de XML-gegevens op te halen die overeenkomen met de XDP/XML-gegevens. (Het `FormsResult` object wordt geretourneerd door de methode `processFormSubmission`*, die in de volgende substap wordt beschreven.)*
@@ -215,9 +219,10 @@ Een verzonden formulier verwerken met de Forms API (Java):
       * Een tekenreekswaarde die omgevingsvariabelen opgeeft, inclusief alle relevante HTTP-headers. Geef het inhoudstype op dat u wilt afhandelen. Als u XML-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=text/xml`. Als u PDF-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=application/pdf`.
       * Een tekenreekswaarde die bijvoorbeeld de `HTTP_USER_AGENT` koptekstwaarde opgeeft. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Deze parameterwaarde is optioneel.
       * Een `RenderOptionsSpec` object dat uitvoeringsopties opslaat.
+
       De `processFormSubmission` methode retourneert een `FormsResult` object dat de resultaten van het verzenden van het formulier bevat.
 
-   * Bepaal of de service Forms klaar is met het verwerken van de formuliergegevens door de `FormsResult` `getAction` methode van het object aan te roepen. Als deze methode de waarde retourneert `0`, kunnen de gegevens worden verwerkt.
+   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de `FormsResult` methode van het `getAction` object aan te roepen. Als deze methode de waarde retourneert `0`, kunnen de gegevens worden verwerkt.
 
 
 
@@ -225,6 +230,7 @@ Een verzonden formulier verwerken met de Forms API (Java):
 
    * Roep de `FormsResult` methode van het `getAttachments` object aan. Deze methode retourneert een `java.util.List` object dat bestanden bevat die met het formulier zijn verzonden.
    * Doorloop het `java.util.List` object om te bepalen of er bestandsbijlagen zijn. Als er bestandsbijlagen zijn, is elk element een `com.adobe.idp.Document` instantie. U kunt de bestandsbijlagen opslaan door de methode van het `com.adobe.idp.Document` object aan te roepen en een `copyToFile` `java.io.File` object door te geven.
+
    >[!NOTE]
    >
    >Deze stap is alleen van toepassing als het formulier als PDF is verzonden.
@@ -248,23 +254,23 @@ Een verzonden formulier verwerken met de Forms API (Java):
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): PDF-formulieren die zijn verzonden als XML, verwerken met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
+[Snel starten (SOAP-modus): PDF forms die als XML zijn verzonden, afhandelen met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-xml-using-the-java-api)
 
 [Snel starten (SOAP-modus): HTML-formulieren verwerken die zijn verzonden als XML met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-html-forms-submitted-as-xml-using-the-java-api)
 
-[Snel starten (SOAP-modus): PDF-formulieren die zijn verzonden als PDF, verwerken met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
+[Snel starten (SOAP-modus): PDF forms die als PDF zijn verzonden, verwerken met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-handling-pdf-forms-submitted-as-pdf-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ## Verzonden PDF-gegevens verwerken met de webservice-API {#handle-submitted-pdf-data-using-the-web-service-api}
 
-Een verzonden formulier verwerken met de API voor formulieren (webservice):
+Een verzonden formulier verwerken met de Forms API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Maak Java-proxyklassen die de Forms service WSDL gebruiken.
+   * Maak Java-proxyklassen die gebruikmaken van de Forms-service WSDL.
    * Neem de Java-proxyklassen op in het klassepad.
 
 1. Een Forms Client API-object maken
@@ -293,9 +299,10 @@ Een verzonden formulier verwerken met de API voor formulieren (webservice):
       * Een leeg `javax.xml.rpc.holders.ShortHolder` object dat door de methode wordt gevuld.
       * Een leeg `MyArrayOf_xsd_anyTypeHolder` object dat door de methode wordt gevuld. Met deze parameter worden bestandsbijlagen opgeslagen die samen met het formulier worden verzonden.
       * Een leeg `FormsResultHolder` object dat door de methode wordt gevuld met het formulier dat wordt verzonden.
+
       De `processFormSubmission` methode vult de `FormsResultHolder` parameter met de resultaten van het verzenden van het formulier.
 
-   * Bepaal of de service Forms klaar is met het verwerken van de formuliergegevens door de `FormsResult` `getAction` methode van het object aan te roepen. Als deze methode de waarde retourneert `0`, kunnen de formuliergegevens worden verwerkt. U kunt een `FormsResult` object ophalen door de waarde van het `FormsResultHolder` `value` gegevenslid van het object op te halen.
+   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de `FormsResult` methode van het `getAction` object aan te roepen. Als deze methode de waarde retourneert `0`, kunnen de formuliergegevens worden verwerkt. U kunt een `FormsResult` object ophalen door de waarde van het `FormsResultHolder` `value` gegevenslid van het object op te halen.
 
 
 1. Bepalen of de formulierverzending bestandsbijlagen bevat
@@ -324,4 +331,4 @@ Een verzonden formulier verwerken met de API voor formulieren (webservice):
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
