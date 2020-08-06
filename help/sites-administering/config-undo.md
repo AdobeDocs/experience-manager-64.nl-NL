@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -43,34 +46,40 @@ U kunt deze OSGi de diensteigenschappen voor uw eigen instantie vormen.
 
 De volgende lijst maakt een lijst van de eigenschappen zoals getoond in de console van het Web, die door de naam van de overeenkomstige parameter OSGi, samen met een beschrijving en de standaardwaarde (waar aangewezen) wordt gevolgd:
 
-* **Enable**( `cq.wcm.undo.enabled`)
+* **Enable**() 
+`cq.wcm.undo.enabled`)
 
    * **Omschrijving**: Hiermee wordt bepaald of auteurs van pagina&#39;s wijzigingen ongedaan kunnen maken en opnieuw kunnen uitvoeren.
    * **Standaard**: `Selected`
    * **Type**: `Boolean`
 
-* **Pad**( `cq.wcm.undo.path`)
+* **Path**( 
+`cq.wcm.undo.path`)
 
    * **Omschrijving**: Het repository pad voor het aanhouden van binaire gegevens voor ongedaan maken. Wanneer auteurs binaire gegevens zoals afbeeldingen wijzigen, blijft de oorspronkelijke versie van de gegevens hier behouden. Wanneer wijzigingen in binaire gegevens ongedaan worden gemaakt, worden deze binaire gegevens voor ongedaan maken hersteld naar de pagina.
    * **Standaard**: `/var/undo`
    * **Type**: `String`
+
    >[!NOTE]
    >
    >Standaard hebben alleen beheerders toegang tot het `/var/undo` knooppunt. Auteurs kunnen bewerkingen voor ongedaan maken en opnieuw uitvoeren op binaire inhoud alleen nadat zij machtigingen hebben gekregen om toegang te krijgen tot de binaire gegevens voor ongedaan maken.
 
-* **Min. validity**( `cq.wcm.undo.validity`)
+* **Min. validity**() 
+`cq.wcm.undo.validity`)
 
    * **Omschrijving**: De minimale hoeveelheid tijd dat binair ongedaan maakt gegevens wordt opgeslagen, in uren. Na deze tijdsperiode, zijn de binaire gegevens beschikbaar voor schrapping, om schijfruimte te besparen.
    * **Standaard**: `10`
    * **Type**: `Integer`
 
-* **Stappen**( `cq.wcm.undo.steps`)
+* **Stappen**( 
+`cq.wcm.undo.steps`)
 
    * **Omschrijving**: Het maximumaantal paginahandelingen dat is opgeslagen in de historie voor ongedaan maken.
    * **Standaard**: `20`
    * **Type**: `Integer`
 
-* **Persistence**( `cq.wcm.undo.persistence`)
+* **Persistence**( 
+`cq.wcm.undo.persistence`)
 
    * **Omschrijving**: De klasse die de historie nog steeds ongedaan maakt. Er zijn twee persistentieklassen beschikbaar:
 
@@ -80,7 +89,8 @@ De volgende lijst maakt een lijst van de eigenschappen zoals getoond in de conso
    * **Type**: `String`
 
 
-* **Persistentiemodus**( `cq.wcm.undo.persistence.mode`)
+* **Persistentiemodus**( 
+`cq.wcm.undo.persistence.mode`)
 
    * **Omschrijving**: Hiermee bepaalt u wanneer de historie ongedaan wordt gemaakt. Selecteer deze optie als u de historie voor ongedaan maken wilt behouden na elke paginabewerking. Schakel deze optie uit als u alleen wilt doorgaan wanneer een pagina opnieuw wordt geladen (de gebruiker navigeert bijvoorbeeld naar een andere pagina).
 
@@ -89,17 +99,19 @@ De volgende lijst maakt een lijst van de eigenschappen zoals getoond in de conso
    * **Standaard**: `Selected`
    * **Type**: `Boolean`
 
-* **Markeringsmodus**( `cq.wcm.undo.markermode`)
+* **Markeermodus**( 
+`cq.wcm.undo.markermode`)
 
    * **Omschrijving**: Hiermee wordt het visuele actiepunt opgegeven dat moet worden gebruikt om aan te geven welke alinea&#39;s worden beïnvloed wanneer een bewerking Ongedaan maken of Opnieuw wordt uitgevoerd. De volgende waarden zijn geldig:
 
       * flash: De selectie-indicator van de alinea&#39;s wordt tijdelijk knipperd.
-      *  selecteren: De alinea is geselecteerd.
+      * selecteren: De alinea is geselecteerd.
    * **Standaard**: `flash`
    * **Type**: `String`
 
 
-* **Goede componenten**( `cq.wcm.undo.whitelist`)
+* **Goede componenten**( 
+`cq.wcm.undo.whitelist`)
 
    * **Omschrijving**: Een lijst met componenten die u wilt beïnvloeden door opdrachten voor ongedaan maken en opnieuw uitvoeren. Voeg componentpaden toe aan deze lijst wanneer deze correct werken met ongedaan maken/opnieuw uitvoeren. Een sterretje (&amp;ast;) toevoegen om een groep componenten op te geven:
 
@@ -112,16 +124,18 @@ De volgende lijst maakt een lijst van de eigenschappen zoals getoond in de conso
          `foundation/components/*`
    * Wanneer u een component die zich niet in deze lijst bevindt, ongedaan maakt of opnieuw uitvoert, wordt een bericht weergegeven dat aangeeft dat de opdracht onbetrouwbaar kan zijn.
 
-   * **Standaard**: De eigenschap wordt gevuld met vele componenten die door AEM worden geleverd.
+   * **Standaard**: De eigenschap wordt gevuld met vele componenten die AEM bieden.
    * **Type**: `String[]`
 
 
-* **Ongeldige componenten**( `cq.wcm.undo.blacklist`)
+* **Ongeldige componenten**( 
+`cq.wcm.undo.blacklist`)
 
    * **Omschrijving**: Een lijst met componenten en/of componentbewerkingen die u niet wilt wijzigen door de opdracht Ongedaan maken. Voeg componenten en componentbewerkingen toe die zich niet correct gedragen met de opdracht Ongedaan maken:
 
       * Voeg een componentpad toe wanneer u bijvoorbeeld geen bewerkingen van de component in de historie voor ongedaan maken wilt uitvoeren `collab/forum/components/post`
       * Een dubbele punt (:) en een bewerking aan het pad toevoegen wanneer u wilt dat die specifieke bewerking wordt weggelaten uit de historie voor ongedaan maken (andere bewerkingen functioneren bijvoorbeeld naar behoren) `collab/forum/components/post:insertParagraph.`
+
    >[!NOTE]
    >
    >Wanneer een bewerking in deze lijst staat, wordt deze nog toegevoegd aan de historie voor ongedaan maken. Gebruikers kunnen bewerkingen die eerder dan een bewerking **Onjuiste component** in de historie voor ongedaan maken bestaan, niet ongedaan maken.
