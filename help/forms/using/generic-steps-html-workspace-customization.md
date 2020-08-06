@@ -1,6 +1,6 @@
 ---
-title: Algemene stappen voor aanpassing van de AEM-werkruimte
-seo-title: Algemene stappen voor aanpassing van de AEM-werkruimte
+title: Algemene stappen voor aanpassing van de AEM Forms-werkruimte
+seo-title: Algemene stappen voor aanpassing van de AEM Forms-werkruimte
 description: Aan de slag met het aanpassen van de gebruikersinterface van de AEM Forms-werkruimte.
 seo-description: Aan de slag met het aanpassen van de gebruikersinterface van de AEM Forms-werkruimte.
 uuid: 555b5039-cd68-4090-8a8f-30b654474f55
@@ -11,27 +11,30 @@ topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '270'
+ht-degree: 3%
 
 ---
 
 
-# Algemene stappen voor aanpassing van de AEM-werkruimte {#generic-steps-for-aem-forms-workspace-customization}
+# Algemene stappen voor aanpassing van de AEM Forms-werkruimte {#generic-steps-for-aem-forms-workspace-customization}
 
 De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Meld u aan bij CRXDE Lite door toegang te krijgen tot `https://[server]:[port]/lc/crx/de/index.jsp`.
-1. Maak een map met de naam `ws`at `/apps`, als deze niet bestaat. Klik op Alles **[!UICONTROL opslaan]**.
-1. Blader naar `/apps/ws`en navigeer naar het tabblad **[!UICONTROL Toegangsbeheer]** .
-1. Klik in de lijst **[!UICONTROL Toegangsbeheer]** op **[!UICONTROL +]** om een nieuw item toe te voegen. Klik nogmaals **[!UICONTROL +]** .
-1. Zoek en selecteer **[!UICONTROL PERM_WORKSPACE_USER]** Principal.
+1. Maak een map met de naam `ws`at `/apps`, als deze niet bestaat. Klik op **[!UICONTROL Save All]**.
+1. Blader naar `/apps/ws`en navigeer naar het **[!UICONTROL Access Control]** tabblad.
+1. Klik in de **[!UICONTROL Access Control]** lijst **[!UICONTROL +]** om een nieuw item toe te voegen. Klik **[!UICONTROL +]** opnieuw.
+1. Zoek en selecteer **[!UICONTROL PERM_WORKSPACE_USER]** Opdrachtgever.
 
    ![Selecteer PERM_WORKSPACE_USER principal als onderdeel van de algemene stappen om de HTML-werkruimte aan te passen](assets/perm_workspace_user.png)
 
 1. Geef `jcr:read` recht aan Opdrachtgever.
-1. Klik op Alles **[!UICONTROL opslaan]**.
+1. Klik op **[!UICONTROL Save All]**.
 1. Kopieer de `GET.jsp` bestanden en `html.jsp`bestanden vanuit de `/libs/ws`map naar de `/apps/ws` map.
-1. Kopieer de `/libs/ws/locales` map in de `/apps/ws` map. Klik op Alles **[!UICONTROL opslaan]**.
-1. Werk de verwijzingen en relatieve wegen in het `GET.jsp` dossier bij, zoals hieronder getoond, en klik **[!UICONTROL sparen allen]**.
+1. Kopieer de `/libs/ws/locales` map in de `/apps/ws` map. Klik op **[!UICONTROL Save All]**.
+1. Werk de referenties en relatieve paden in het `GET.jsp` bestand bij, zoals hieronder wordt weergegeven, en klik **[!UICONTROL Save all]**.
 
    ```
    <meta http-equiv="refresh" content="0;URL='/lc/apps/ws/index.html'" />
@@ -74,19 +77,19 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 
 1. Ga als volgt te werk:
 
-   1. Maak een map met de naam `js`at `/apps/ws`. Klik op Alles **[!UICONTROL opslaan]**.
-   1. Maak een map met de naam `libs`at `/apps/ws/js`. Klik op Alles **[!UICONTROL opslaan]**.
-   1. Maak een map met de naam `jqueryui`at `/apps/ws/js/libs`. Klik op Alles **[!UICONTROL opslaan]**.
-   1. Kopiëren `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` naar `/apps/ws/js/libs/jqueryui`. Klik op Alles **[!UICONTROL opslaan]**.
+   1. Maak een map met de naam `js`at `/apps/ws`. Klik op **[!UICONTROL Save All]**.
+   1. Maak een map met de naam `libs`at `/apps/ws/js`. Klik op **[!UICONTROL Save All]**.
+   1. Maak een map met de naam `jqueryui`at `/apps/ws/js/libs`. Klik op **[!UICONTROL Save All]**.
+   1. Kopiëren `/libs/ws/js/libs/jqueryui/jquery.ui.datepicker-ja.js` naar `/apps/ws/js/libs/jqueryui`. Klik op **[!UICONTROL Save All]**.
 
 1. Ga als volgt te werk voor HTML-aanpassingen:
 
-   1. Maak onder `/apps/ws/js`een map met de naam `runtime`. Klik op Alles **[!UICONTROL opslaan]**.
-   1. Maak onder `/apps/ws/js/runtime`een map met de naam `templates`. Klik op Alles **[!UICONTROL opslaan]**.
+   1. Maak onder `/apps/ws/js`een map met de naam `runtime`. Klik op **[!UICONTROL Save All]**.
+   1. Maak onder `/apps/ws/js/runtime`een map met de naam `templates`. Klik op **[!UICONTROL Save All]**.
    1. Kopiëren `/libs/ws/js/main.js` naar `/apps/ws/js/main.js`.
    1. Kopieer /libs/ws/js/registry.js naar `/apps/ws/js/registry.js`.
 
-1. Klik op Alles **** opslaan, cache verwijderen en de werkruimte van AEM-formulieren vernieuwen.
+1. Klik op de werkruimte van AEM Forms, maak cache leeg **[!UICONTROL Save All]** en vernieuw deze.
 
    Open de URL `https://[server]:[port]/lc/ws` en meld u aan met de gegevens van de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://[server]:[port]/lc/apps/ws/index.html`.
 
