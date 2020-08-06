@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1241'
+ht-degree: 0%
 
 ---
 
@@ -26,53 +29,53 @@ Het lusje van de Manager van het Werk toont statistieken die op de punten van de
 
 ### Categorie {#category}
 
-**** Standaard: Alle werkitems waaraan de client op het moment van verzending geen categorie heeft toegewezen. De Manager van het werk beheert deze punten, daarom behoren de statussen tot de Manager van het Werk.
+**Standaard:** Alle werkitems waaraan de client op het moment van verzending geen categorie heeft toegewezen. De Manager van het werk beheert deze punten, daarom behoren de statussen tot de Manager van het Werk.
 
-**** Taakbeheer: Alle taken die bij Taakbeheer horen. Taakbeheer beheert zijn eigen taken en heeft een eigen taakstatus. Zie de specifieke taakstatussen die hieronder worden beschreven.
+**Taakbeheer:** Alle taken die bij Taakbeheer horen. Taakbeheer beheert zijn eigen taken en heeft een eigen taakstatus. Zie de specifieke taakstatussen die hieronder worden beschreven.
 
-**** Workflow: Alle het werkpunten die tot de uitvoering van het Werkschema behoren. De workflow beheert niet zijn eigen werkitems, maar is afhankelijk van de Werkmanager; daarom behoren de statussen tot de Manager van het Werk.
+**Workflow:** Alle het werkpunten die tot de uitvoering van het Werkschema behoren. De workflow beheert niet zijn eigen werkitems, maar is afhankelijk van de Werkmanager; daarom behoren de statussen tot de Manager van het Werk.
 
-**** Gebeurtenissen: Alle het werkpunten die tot het Beheer van de Gebeurtenis behoren. Gebeurtenisbeheer beheert niet zijn eigen werkitems, maar is afhankelijk van Werkmanager; daarom behoren de statussen tot de Manager van het Werk.
+**Gebeurtenissen:** Alle het werkpunten die tot het Beheer van de Gebeurtenis behoren. Gebeurtenisbeheer beheert niet zijn eigen werkitems, maar is afhankelijk van Werkmanager; daarom behoren de statussen tot de Manager van het Werk.
 
 ### Status (alleen voor de categorieën Standaard, Workflow of Gebeurtenissen) {#status-for-default-workflow-or-events-categories-only}
 
-**** Alles tonen: Hiermee worden alle huidige werkitems weergegeven.
+**Alles tonen:** Hiermee worden alle huidige werkitems weergegeven.
 
-**** Gepland: Hiermee worden alle werkitems weergegeven die gereed zijn voor uitvoering door de toepassingsserver, maar nog niet zijn gestart.
+**Gepland:** Hiermee worden alle werkitems weergegeven die gereed zijn voor uitvoering door de toepassingsserver, maar nog niet zijn gestart.
 
-**** Gepauzeerd: Hiermee worden alle geplande werkitems weergegeven die door de clienttoepassing zijn gepauzeerd. Deze items kunnen worden uitgevoerd of verwijderd. (Zie De werkitems of taken beheren.)
+**Gepauzeerd:** Hiermee worden alle geplande werkitems weergegeven die door de clienttoepassing zijn gepauzeerd. Deze items kunnen worden uitgevoerd of verwijderd. (Zie De werkitems of taken beheren.)
 
-**** In uitvoering: Hiermee geeft u alle werkitems weer die de werkmanager van de toepassingsserver heeft opgepakt en die worden voltooid of mislukt. U kunt geen bewerkingen op deze werkitems gebruiken.
+**In uitvoering:** Hiermee geeft u alle werkitems weer die de werkmanager van de toepassingsserver heeft opgepakt en die worden voltooid of mislukt. U kunt geen bewerkingen op deze werkitems gebruiken.
 
-**** Voltooid: Hiermee geeft u alle werkitems weer die met succes zijn uitgevoerd. De blijvende het werkpunten blijven in deze staat en de niet-blijvende punten worden geschrapt na voltooiing van callbacks aan de callback managers. U kunt deze items verwijderen met de bewerking Items verwijderen. (Zie De werkitems of taken beheren.)
+**Voltooid:** Hiermee geeft u alle werkitems weer die met succes zijn uitgevoerd. De blijvende het werkpunten blijven in deze staat en de niet-blijvende punten worden geschrapt na voltooiing van callbacks aan de callback managers. U kunt deze items verwijderen met de bewerking Items verwijderen. (Zie De werkitems of taken beheren.)
 
-**** Mislukt: Hiermee worden alle werkitems weergegeven die niet zijn voltooid vanwege een fout. Deze werkitems kunnen een paar keer opnieuw worden geprobeerd met de bewerking Items opnieuw proberen. (Zie De werkitems of taken beheren.) Een verbinding van de Mislukking in de kolom van de Status staat u toe om tot details over de mislukking toegang te hebben.
+**Mislukt:** Hiermee worden alle werkitems weergegeven die niet zijn voltooid vanwege een fout. Deze werkitems kunnen een paar keer opnieuw worden geprobeerd met de bewerking Items opnieuw proberen. (Zie De werkitems of taken beheren.) Een verbinding van de Mislukking in de kolom van de Status staat u toe om tot details over de mislukking toegang te hebben.
 
-**** Onbekend: Hiermee worden alle werkitems weergegeven waarvan de status onbekend is.
+**Onbekend:** Hiermee worden alle werkitems weergegeven waarvan de status onbekend is.
 
 ### Status (alleen voor de categorie Taakbeheer) {#status-for-job-manager-category-only}
 
-**** Voltooid: Hiermee geeft u alle taken weer die met succes zijn uitgevoerd. De blijvende het werkpunten blijven in deze staat en de niet-blijvende punten worden geschrapt na voltooiing van callbacks aan de callback managers.
+**Voltooid:** Hiermee geeft u alle taken weer die met succes zijn uitgevoerd. De blijvende het werkpunten blijven in deze staat en de niet-blijvende punten worden geschrapt na voltooiing van callbacks aan de callback managers.
 
-**** Voltooid aangevraagd: Hiermee geeft u taken weer waarvoor een volledige aanvraag is ingediend.
+**Voltooid aangevraagd:** Hiermee geeft u taken weer waarvoor een volledige aanvraag is ingediend.
 
-**** Mislukt aangevraagd: Hiermee geeft u taken weer waarvoor een mislukkingsverzoek is ingediend.
+**Mislukt aangevraagd:** Hiermee geeft u taken weer waarvoor een mislukkingsverzoek is ingediend.
 
-**** Mislukt: Hiermee geeft u taken weer die niet zijn voltooid vanwege een fout. Een verbinding van de Mislukking in de kolom van de Status staat u toe om tot details over de mislukking toegang te hebben.
+**Mislukt:** Hiermee geeft u taken weer die niet zijn voltooid vanwege een fout. Een verbinding van de Mislukking in de kolom van de Status staat u toe om tot details over de mislukking toegang te hebben.
 
-**** Verzoeken beëindigen: Hiermee geeft u taken weer waarvoor een eindverzoek is ingediend.
+**Verzoeken beëindigen:** Hiermee geeft u taken weer waarvoor een eindverzoek is ingediend.
 
-**** Beëindigd: Hiermee geeft u taken weer die zijn beëindigd zonder te voltooien.
+**Beëindigd:** Hiermee geeft u taken weer die zijn beëindigd zonder te voltooien.
 
-**** Opschorting aangevraagd: Hiermee geeft u taken weer waarvoor een opschortingsverzoek is gedaan.
+**Opschorting aangevraagd:** Hiermee geeft u taken weer waarvoor een opschortingsverzoek is gedaan.
 
-**** Opgeschort: Hiermee geeft u taken weer die zijn opgeschort.
+**Opgeschort:** Hiermee geeft u taken weer die zijn opgeschort.
 
-**** Hervat aangevraagd: Hiermee geeft u taken weer waarvoor een hervattingsverzoek is ingediend.
+**Hervat aangevraagd:** Hiermee geeft u taken weer waarvoor een hervattingsverzoek is ingediend.
 
-**** In wachtrij: Hiermee geeft u taken weer die zich in de wachtrij bevinden.
+**In wachtrij:** Hiermee geeft u taken weer die zich in de wachtrij bevinden.
 
-**** Uitvoeren: Hiermee geeft u taken weer die worden uitgevoerd.
+**Uitvoeren:** Hiermee geeft u taken weer die worden uitgevoerd.
 
 ### Servernaam {#server-name}
 
@@ -106,13 +109,13 @@ Wanneer u op Meer informatie klikt, wordt in het dialoogvenster Bewerkingsdetail
    >
    >De verrichtingen zijn beschikbaar afhankelijk van de status van het punt.
 
-   **** Items verwijderen: Hiermee verwijdert u het geselecteerde werkitem of de geselecteerde taak.
+   **Items verwijderen:** Hiermee verwijdert u het geselecteerde werkitem of de geselecteerde taak.
 
-   **** Pauzeren, items: Hiermee pauzeert u het geselecteerde werkitem of de geselecteerde taak.
+   **Pauzeren, items:** Hiermee pauzeert u het geselecteerde werkitem of de geselecteerde taak.
 
-   **** Items hervatten: Hiermee hervat u het geselecteerde werkitem of de geselecteerde taak vanuit de pauzestatus.
+   **Items hervatten:** Hiermee hervat u het geselecteerde werkitem of de geselecteerde taak vanuit de pauzestatus.
 
-   **** Items opnieuw proberen: Probeert het geselecteerde werkitem of de geselecteerde taak opnieuw uit te voeren vanaf de huidige status.
+   **Items opnieuw proberen:** Probeert het geselecteerde werkitem of de geselecteerde taak opnieuw uit te voeren vanaf de huidige status.
 
    U kunt controleren of een bewerking is gelukt door boven de lijst op Meer informatie te klikken. Er wordt een dialoogvenster weergegeven met de geselecteerde werkitems of -taken en hun status.
 
