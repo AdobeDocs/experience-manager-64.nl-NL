@@ -38,7 +38,7 @@ Het bouwen van uw AEM Project op Maven biedt u verschillende voordelen:
 
 ### Wat is de UberJar? {#what-is-the-uberjar}
 
-Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan een speciaal Java Archive-bestand (JAR) dat wordt geleverd door Adobe. Dit JAR-bestand bevat alle openbare Java API&#39;s die door de Adobe Experience Manager worden weergegeven. Het omvat ook beperkte externe bibliotheken, met name alle openbare API&#39;s in AEM die afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava en twee bibliotheken die worden gebruikt voor beeldverwerking (Werner Randelshofer&#39;s CYMK JPEG ImageIO-bibliotheek en de TwelveMonkeys-afbeeldingsbibliotheek). UberJar bevat slechts API interfaces en klassen, betekenend dat het slechts interfaces en klassen bevat die door een bundel OSGi in AEM worden uitgevoerd. Het bevatte ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, waarbij ervoor wordt gezorgd dat de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers hebben.
+Het &quot;UberJar&quot; is de informele naam die wordt gegeven aan een speciaal Java Archive-bestand (JAR) dat wordt geleverd door Adobe. Dit JAR-bestand bevat alle openbare Java API&#39;s die door Adobe Experience Manager worden weergegeven. Het omvat ook beperkte externe bibliotheken, met name alle openbare API&#39;s in AEM die afkomstig zijn van de Apache Sling, Apache Jackrabbit, Apache Lucene, Google Guava en twee bibliotheken die worden gebruikt voor beeldverwerking (Werner Randelshofer&#39;s CYMK JPEG ImageIO-bibliotheek en de TwelveMonkeys-afbeeldingsbibliotheek). UberJar bevat slechts API interfaces en klassen, betekenend dat het slechts interfaces en klassen bevat die door een bundel OSGi in AEM worden uitgevoerd. Het bevatte ook een *MANIFEST.MF* - dossier dat de correcte pakketuitvoerversies voor elk van deze uitgevoerde pakketten bevat, waarbij ervoor wordt gezorgd dat de projecten die tegen UberJar worden gebouwd de correcte pakketinvoerwaaiers hebben.
 
 ### Waarom heeft Adobe de UberJar gemaakt? {#why-did-adobe-create-the-uberjar}
 
@@ -100,7 +100,7 @@ Met UberJar, kunt u projectcode compileren die van AEM APIs (en APIs afhangt die
 
 ### Wat kan ik niet doen met de UberJar? {#what-can-t-i-do-with-the-uberjar}
 
-Omdat UberJar **slechts** APIs bevat, is het niet uitvoerbaar en kan niet worden gebruikt om Adobe Experience Manager in **werking te stellen** . Voor het uitvoeren van AEM hebt u de vorm van de AEM QuickStart nodig, Standalone of Web Application Archive (WAR).
+Omdat UberJar **slechts** APIs bevat, is het niet uitvoerbaar en kan niet worden gebruikt om Adobe Experience Manager in **werking** te stellen. Voor het uitvoeren van AEM hebt u de vorm van de AEM QuickStart nodig, Standalone of Web Application Archive (WAR).
 
 ### U noemde beperkingen op eenheidstests. Gelieve nader toe te lichten. {#you-mentioned-limitations-on-unit-tests-please-explain-further}
 
@@ -671,6 +671,6 @@ $ mvn -PautoInstallPackagePublish -PintegrationServer install
 
 ### Werken met AEM Communities {#how-to-work-with-aem-communities}
 
-Als er een licentie voor de AEM Communities-functie is, is een extra API-jar nodig.
+Als u een licentie hebt voor de AEM Communities-functionaliteit, is een extra API-jar nodig.
 
 Zie [Maven gebruiken voor Gemeenschappen voor meer informatie](/help/communities/maven.md)
