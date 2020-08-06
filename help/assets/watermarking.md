@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Watermerk uw elementen {#watermarking}
 
-Met Adobe Experience Manager-elementen (AEM) kunt u een digitaal watermerk aan afbeeldingen toevoegen waarmee gebruikers de authenticiteit en het auteursrecht van de elementen kunnen controleren. AEM Assets ondersteunen tekst die als watermerk moet worden gebruikt in PNG- en JPEG-bestanden.
+Met Adobe Experience Manager (AEM) Assets kunt u een digitaal watermerk toevoegen aan afbeeldingen waarmee gebruikers de authenticiteit en het auteursrecht van de elementen kunnen controleren. AEM Assets ondersteunt tekst die als watermerk moet worden gebruikt in PNG- en JPEG-bestanden.
 
 Als u een watermerk op elementen wilt toepassen, voegt u de [!UICONTROL Watermark] stap in de [!UICONTROL DAM Update Asset] workflow toe.
 
@@ -34,6 +34,6 @@ Als u een watermerk op elementen wilt toepassen, voegt u de [!UICONTROL Watermar
    ![Geef de argumenten op in de stap Watermerk toevoegen in Elementen](assets/arguments_add_watermark_aem_assets.png)
 
 1. Save the **[!UICONTROL DAM Update Asset]** workflow with the [!UICONTROL Watermark] step.
-1. Upload een voorbeeldelement vanuit de AEM-gebruikersinterface. Het watermerk wordt weergegeven met de tekengrootte, kleur, enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
+1. Upload een voorbeeldelement vanuit de AEM gebruikersinterface. Het watermerk wordt weergegeven met de tekengrootte, kleur, enzovoort, op de positie die u in de bovenstaande stappen hebt geconfigureerd.
 
-Als u PDF-documenten programmatisch of met dynamische informatie wilt voorzien van een watermerk, kunt u het [aanbod van AEM Document Services](/help/forms/using/overview-aem-document-services.md) gebruiken.
+Als u PDF-documenten programmatisch of met dynamische informatie wilt voorzien van een watermerk, kunt u [AEM Document Services](/help/forms/using/overview-aem-document-services.md) -aanbieding gebruiken.
