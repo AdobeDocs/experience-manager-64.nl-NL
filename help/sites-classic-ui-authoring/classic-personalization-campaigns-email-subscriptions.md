@@ -1,8 +1,8 @@
 ---
 title: Abonnementen beheren
 seo-title: Abonnementen beheren
-description: Gebruikers kunnen worden gevraagd zich in te schrijven op de mailinglijsten van de e-mailserviceprovider met de hulp van de formuliercomponent die op een AEM-webpagina wordt gebruikt. Als u een AEM-pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op uw mailinglijsten voor e-mailservices, moet u de bijbehorende serviceconfiguratie toepassen op de AEM-pagina die de potentiële abonnee zal bezoeken.
-seo-description: Gebruikers kunnen worden gevraagd zich in te schrijven op de mailinglijsten van de e-mailserviceprovider met de hulp van de formuliercomponent die op een AEM-webpagina wordt gebruikt. Als u een AEM-pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op uw mailinglijsten voor e-mailservices, moet u de bijbehorende serviceconfiguratie toepassen op de AEM-pagina die de potentiële abonnee zal bezoeken.
+description: Gebruikers kunnen worden gevraagd zich in te schrijven op de mailinglijsten van de e-mailprovider met de hulp van de formuliercomponent die op een AEM webpagina wordt gebruikt. Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
+seo-description: Gebruikers kunnen worden gevraagd zich in te schrijven op de mailinglijsten van de e-mailprovider met de hulp van de formuliercomponent die op een AEM webpagina wordt gebruikt. Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
 uuid: b2578a3d-dba1-4114-b21a-5f34c0cccc5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '977'
+ht-degree: 0%
 
 ---
 
@@ -19,29 +22,29 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe is niet van plan deze functionaliteit verder te verbeteren (Leads en lijsten beheren).\
->De aanbeveling is om [Adobe Campaign en de integratie](/help/sites-administering/campaign.md)daarvan in AEM te benutten.
+>Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).\
+>De aanbeveling is om [Adobe Campaign en zijn AEM te stimuleren](/help/sites-administering/campaign.md).
 
-Gebruikers kunnen worden gevraagd zich in te schrijven op de mailinglijsten van de **e-mailserviceprovider** met behulp van de **formuliercomponent** die op een AEM-webpagina wordt gebruikt. Als u een AEM-pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op uw mailinglijsten voor e-mailservices, moet u de bijbehorende serviceconfiguratie toepassen op de AEM-pagina die de potentiële abonnee zal bezoeken.
+Gebruikers kunnen worden gevraagd zich in te schrijven op de mailinglijsten van de **e-mailserviceprovider** met behulp van de **formuliercomponent** die op een AEM webpagina wordt gebruikt. Als u een AEM pagina met een aanmeldingsformulier wilt voorbereiden voor een abonnement op de mailinglijsten van uw e-mailservice, moet u de bijbehorende serviceconfiguratie toepassen op de AEM pagina die de potentiële abonnee zal bezoeken.
 
 ## Configuratie van e-mailservice toepassen op een pagina {#applying-email-service-configuration-to-a-page}
 
-Een AEM-pagina configureren:
+Een AEM pagina configureren:
 
-1. Navigeer naar het tabblad **Websites** .
+1. Navigate to the **Websites** tab.
 1. Selecteer de pagina die voor de dienst moet worden gevormd. Klik met de rechtermuisknop op de pagina en selecteer **Eigenschappen**.
 
-1. Selecteer **Cloud Services** en **voeg vervolgens Service** toe. Selecteer een configuratie in de lijst met beschikbare configuraties.
+1. Selecteer **Cloud Services** en **voeg de Dienst** toe. Selecteer een configuratie in de lijst met beschikbare configuraties.
 
    ![chlimage_1-164](assets/chlimage_1-164.png)
 
 1. Click **OK**.
 
-## Een aanmeldingsformulier op een AEM-pagina maken voor het abonneren of afmelden van lijsten {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
+## Een aanmeldingsformulier op een AEM pagina maken voor het abonneren of afmelden van lijsten {#creating-a-sign-up-form-on-an-aem-page-for-subscribing-unsubscribing-to-lists}
 
 Een aanmeldingsformulier maken en dit configureren voor abonnementen op de mailinglijsten van de e-mailprovider:
 
-1. Open de AEM-pagina die de gebruiker zal bezoeken.
+1. Open de AEM pagina die de gebruiker zal bezoeken.
 1. Pas de configuratie van de E-mailserviceprovider toe op de pagina.
 
 1. Voeg een **component van de Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelt u over naar de ontwerpmodus en schakelt u de groep **Formulier** in.
@@ -79,10 +82,10 @@ Als u wilt dat e-mailservices zich abonneren en zich niet meer abonneren op het 
 
 Gebruikers afmelden bij lijsten:
 
-1. Open de pagina-eigenschappen van de AEM-pagina met het aanmeldingsformulier om een lead af te melden.
+1. Open de pagina-eigenschappen van de AEM pagina met het aanmeldingsformulier om het abonnement op een lead op te zeggen.
 1. Pas de de dienstconfiguratie op de pagina toe.
 1. Maak een aanmeldingsformulier op de pagina.
-1. Selecteer tijdens het configureren van de component de **E-mailservice** voor de handeling: Abonnement op gebruiker **opzeggen uit lijst.**
+1. Selecteer tijdens het configureren van de component de **E-mailservice** voor de handeling: **Abonnement op gebruiker opzeggen uit lijst.**
 1. Selecteer in het keuzemenu de lijst waaruit de gebruiker bij het afmelden wordt verwijderd.
 
    ![chlimage_1-11](assets/chlimage_1-11.jpeg)
@@ -93,7 +96,7 @@ Gebruikers afmelden bij lijsten:
 
 Om een auto-antwoordapparaat e-mail voor een abonnee te vormen:
 
-1. Open de pagina-eigenschappen van de AEM-pagina met het aanmeldingsformulier voor het configureren van de automatische beantwoorder voor een lead.
+1. Open de pagina-eigenschappen van de AEM pagina die het aanmeldingsformulier hebben om auto responder voor een lead te configureren.
 1. Pas de configuratie ExactTarget op de pagina toe.
 
 1. Voeg een **component van de Vorm** aan de pagina toe door de component van sidekick te slepen. Als de component niet beschikbaar is, schakelt u over naar de ontwerpmodus en schakelt u de groep **Formulier** in.
