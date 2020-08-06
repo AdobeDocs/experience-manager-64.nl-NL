@@ -33,25 +33,25 @@ U kunt de PDF Generator-webpagina&#39;s gebruiken om bestanden te converteren.
 
 1. Selecteer Aangepaste instellingen gebruiken of instellingenbestand uploaden onder Configuration Settings.
 
-   * Als u aangepaste instellingen gebruikt, selecteert u een instelling voor Adobe PDF, een beveiligingsinstelling en een bestandstype en geeft u een time-out op.
+   * Als u aangepaste instellingen gebruikt, selecteert u een Adobe PDF-instelling, beveiligingsinstelling en instelling voor het bestandstype en geeft u een time-out op.
 
-      De Adobe PDF-instellingen zijn alleen van toepassing op conversies van PS naar PDF, EPS naar PDF, PRN naar PDF, van afbeeldingen naar PDF met OCR ingeschakeld en van native naar PDF. Met de time-out-instelling bepaalt u de maximale tijd die de conversie nodig heeft. De standaardwaarde is 270 seconden. Deze instellingen worden niet gebruikt tijdens conversies van afbeeldingen naar PDF en OpenOffice naar PDF.
+      De Adobe PDF-instellingen zijn alleen van toepassing op PS-naar-PDF, EPS-naar-PDF, PRN-naar-PDF, Image-to-PDF met OCR ingeschakeld en Native-naar-PDF-conversies. Met de time-out-instelling bepaalt u de maximale tijd die de conversie nodig heeft. De standaardwaarde is 270 seconden. Deze instellingen worden niet gebruikt tijdens conversies van afbeeldingen naar PDF en OpenOffice naar PDF.
 
    * Als u een instellingenbestand uploadt, typt u het pad en de naam in het vak of klikt u op Bladeren om het bestand te zoeken en te selecteren.
 
-1. (Optioneel) Typ onder XMP-metagegevensbestand het pad en de naam van het XMP-bestand of klik op Bladeren om het bestand te zoeken en te selecteren. Een XMP-bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP-bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. (Optioneel) Typ onder XMP metagegevensbestand het pad en de naam van het XMP of klik op Bladeren om het bestand te zoeken en te selecteren. U kunt een XMP gebruiken om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt er een koppeling naar weergegeven. Als tijdens de conversie een fout optreedt, wordt een waarschuwing weergegeven. Als u een Postscript-bestand maakt, bevat de waarschuwing ook een koppeling naar het logbestand.
 1. Klik op de koppeling voor het PDF-bestand. Het bestand wordt geopend in Acrobat.
 
-### Informatie over XMP-bestanden {#about-xmp-files}
+### Informatie over XMP {#about-xmp-files}
 
-PDF-documenten die in PDF Generator worden gemaakt in Acrobat 5.0 of hoger, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekfuncties kunnen gebruiken.
+PDF-documenten die in Acrobat 5.0 of hoger worden gemaakt, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekfuncties kunnen gebruiken.
 
 De metagegevens van het document bevatten (maar zijn niet beperkt tot) informatie die ook wordt weergegeven op het tabblad Beschrijving van het dialoogvenster Documenteigenschappen in Acrobat. Wijzigingen die worden aangebracht op het tabblad Beschrijving, worden weerspiegeld in de metagegevens van het document. Metagegevens van documenten kunnen worden uitgebreid en gewijzigd met producten van derden.
 
-Adobe Extensible Metadata Platform (XMP) biedt Adobe-toepassingen een algemeen XML-raamwerk waarin het maken, verwerken en uitwisselen van metagegevens in documenten wordt gestandaardiseerd voor alle publicatieworkflows. U kunt de XML-broncode van documentmetagegevens opslaan en importeren in XMP-indeling, zodat u gemakkelijk metagegevens kunt delen tussen verschillende documenten. Zie [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) en [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html)voor meer informatie over XMP-bestanden.
+Adobe Extensible Metadata Platform (XMP) biedt Adobe-toepassingen een algemeen XML-raamwerk waarin het maken, verwerken en uitwisselen van metagegevens in documenten wordt gestandaardiseerd voor alle publicatieworkflows. U kunt de XML-broncode van documentmetagegevens opslaan en importeren in XMP indeling, zodat u gemakkelijk metagegevens kunt delen tussen verschillende documenten. Zie [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) en [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html)voor meer informatie over XMP bestanden.
 
-U kunt XMP-bestanden maken in Acrobat.
+U kunt XMP bestanden maken in Acrobat.
 
 ## Een HTML-bestand of ZIP-bestand converteren naar PDF {#convert-an-html-file-or-zip-file-to-pdf}
 
@@ -75,6 +75,7 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
 
    * Typ in het veld Bestand uploaden het pad en de bestandsnaam van het HTML-bestand of het ZIP-bestand of klik op Bladeren om het bestand te zoeken en te selecteren.
    * Typ in het vak URL opgeven de URL van de pagina of website die u wilt converteren.
+
    >[!NOTE]
    >
    >Het bestand dat u converteert, moet de bestandsnaamextensie .html, .htm of .zip hebben.
@@ -84,12 +85,12 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
    * Als u aangepaste instellingen wilt gebruiken, selecteert u Aangepaste instellingen gebruiken, geeft u de instellingen voor de beveiliging en het bestandstype op en geeft u een time-outwaarde op. De standaardwaarde is 270 seconden.
    >[!NOTE]
    >
-   >Als u de Genereren PDF-service zodanig hebt geconfigureerd dat Acrobat WebCapture wordt gebruikt, hebben de instellingen voor bestandstypen die u op deze pagina selecteert, geen invloed op de geproduceerde PDF. Breng in plaats daarvan de gewenste wijzigingen aan in de versie van Acrobat die op de server is geïnstalleerd.
+   >Als u de service PDF genereren zodanig hebt geconfigureerd dat Acrobat WebCapture wordt gebruikt, zijn de instellingen voor bestandstypen die u op deze pagina selecteert, niet van invloed op de geproduceerde PDF. Breng in plaats daarvan de gewenste wijzigingen aan in de versie van Acrobat die op de server is geïnstalleerd.
 
    * Als u een bestaand instellingenbestand wilt gebruiken, selecteert u Bestand met instellingen uploaden en klikt u op Bladeren om naar de bestandslocatie te gaan.
 
 
-1. Als u een XMP-bestand wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. Een XMP-bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP-bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. Als u een XMP wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. U kunt een XMP gebruiken om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt een koppeling naar het PDF-bestand weergegeven.
 1. Klik op de koppeling om het PDF-document in Acrobat weer te geven.
 
@@ -97,9 +98,9 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
 
 U kunt PDF-bestanden exporteren naar verschillende bestandsindelingen, zoals wordt beschreven in het hoofdstuk PDF-service genereren in de [servicehandleiding](https://www.adobe.com/go/learn_aemforms_services_63).
 
-1. Klik in de beheerconsole op Services > PDF Generator > PDF exporteren.
+1. Klik in de beheerconsole op Services > PDF Generator > Export PDF.
 1. Klik op Bladeren om het PDF-bestand te zoeken dat u wilt exporteren.
-1. Selecteer in de lijst PDF-bestand exporteren naar de indeling waarnaar u het PDF-bestand wilt exporteren.
+1. Selecteer in de lijst Export PDF de indeling waarnaar u het PDF-bestand wilt exporteren.
 1. Geef in het vak Een time-out opgeven de tijd op die moet worden gewacht voordat de toepassing wordt uitgeschakeld. De standaardwaarde is 270 seconden.
 
    De omzettingstijd die wordt weergegeven wanneer het bestand wordt geconverteerd, kan groter zijn dan de waarde die u hier opgeeft. De Tijd van de Omzetting omvat de tijd die besteed aan het wachten op de draad of het proces, tijd wordt genomen om het dossier om te zetten, en de tijd die door de reserve omzetter (indien van toepassing) wordt genomen. time. De waarde bij Time-out opgeven is alleen de tijd die nodig is om het bestand om te zetten.
@@ -116,7 +117,7 @@ PDF Generator ondersteunt het verkleinen van PDF-bestanden.
 >
 >Als u een digitaal ondertekend document optimaliseert, worden de digitale handtekeningen verwijderd en ongeldig gemaakt.
 
-1. Klik in de beheerconsole op Services > PDF Generator > PDF optimaliseren.
+1. Klik in de beheerconsole op Services > PDF Generator > Optimize PDF.
 1. Klik op Bladeren om het PDF-bestand te zoeken dat u wilt optimaliseren.
 1. Geef de configuratie-instellingen op:
 
