@@ -8,6 +8,9 @@ uuid: 2cb2bf82-130f-4d6b-a711-df0b97cb0504
 discoiquuid: f3ca177f-7c0d-4b8b-ab4b-bf04668d634c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
@@ -16,14 +19,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Hoofdletters gebruiken {#use-case}
 
-Wij Finance is een toonaangevende organisatie op het gebied van de Financiële Diensten die uitvoerige en gepersonaliseerde financiële oplossingen aanbiedt om aan de vereisten van diverse klantenprofielen te voldoen.
+Wij Financiën is een toonaangevende organisatie op het gebied van de Financiële Diensten die uitvoerige en gepersonaliseerde financiële oplossingen aanbiedt om aan de vereisten van diverse klantenprofielen te voldoen.
 
 Een van de automatische verzekeringscontracten van hun klanten verloopt en ze sturen haar een herinnering, die interactief is en een PDF bevat, met de vermelding voor verlenging. De mededeling bevat ook andere informatie, zoals loyaliteitsbeloningen en aanbiedingen van kortingen.
 
-De portal wordt uitgevoerd op Adobe AEM. Het welkomstkanaal voor het web en de afdruk wordt gemaakt met behulp van de kanaalmogelijkheden van Adaptief document.
+Het portaal loopt op Adobe AEM. Het welkomstkanaal voor het web en de afdruk wordt gemaakt met behulp van de kanaalmogelijkheden van Adaptief document.
 
 Aan het einde van de zelfstudie hebt u een adaptief document dat lijkt op het volgende:
-De[ zelfstudie ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) [ ad-2 ![](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)Creating your first adaptive document is gecategoriseerd in stappen. Elke stap is een volledig artikel op zich.
+[ ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Mobile.pdf) [ ad-2 ![](assets/ad-2.png)](https://blogs.adobe.com/contentcorner/files/2017/07/PAF_Desktop.pdf)De eerste adaptieve documentzelfstudie wordt in stappen gecategoriseerd. Elke stap is een volledig artikel op zich.
 
 <table> 
  <tbody>
@@ -41,10 +44,10 @@ De[ zelfstudie ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/f
    <td>Vereiste</td> 
    <td>
     <ul> 
-     <li>AEM-auteurinstantie instellen. </li> 
-     <li>Invoegtoepassing AEM Forms installeren. Zie AEM-formulieren <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank">installeren en configureren voor meer informatie</a>.</li> 
+     <li>Instellen AEM instantie van auteur. </li> 
+     <li>AEM Forms-invoegtoepassing installeren. Zie AEM Forms <a href="/help/forms/using/installing-configuring-aem-forms-osgi.md" target="_blank"></a>installeren en configureren voor meer informatie.</li> 
      <li>Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in de zelfstudie zijn gebaseerd op MySQL-database en gebruiken het MySQL JDBC-databasestuurprogramma van Oracle. </li> 
-     <li>Stel een database in die klantgegevens bevat. Een databank is van essentieel belang om een adaptief document te maken. Deze zelfstudie gebruikt een database om het gegevensmodel van het formulier en de persistentiemogelijkheden van AEM Forms weer te geven. </li> 
+     <li>Stel een database in die klantgegevens bevat. Een databank is van essentieel belang om een adaptief document te maken. Deze zelfstudie gebruikt een database voor het weergeven van het formuliergegevensmodel en de persistentiemogelijkheden van AEM Forms. </li> 
      <li>Maak/importeer en schakel <a href="/help/forms/using/web-channel-print-channel.md">sjablonen in voor afdrukken en webkanaal</a>.</li> 
      <li>Zorg ervoor dat de <a href="/help/forms/using/document-fragments.md">documentfragmenten op de FDM</a>zijn gebaseerd.</li> 
     </ul> </td> 
@@ -54,7 +57,7 @@ De[ zelfstudie ![ad-1](assets/ad-1.png)](https://blogs.adobe.com/contentcorner/f
 
 ## Stap 1: Formuliergegevensmodel maken {#step-create-form-data-model}
 
-Met een formuliergegevensmodel kunt u een adaptief document aansluiten op verschillende gegevensbronnen. Bijvoorbeeld: AEM-gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. Een gegevensmodel van de Vorm is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het formuliergegevensmodel met een adaptief document gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Voor meer informatie over het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)Vormen AEM.
+Met een formuliergegevensmodel kunt u een adaptief document aansluiten op verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een gegevensmodel van de Vorm is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het formuliergegevensmodel met een adaptief document gebruiken om gegevens op te halen uit verbonden gegevensbronnen. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md)voor meer informatie over het formuliergegevensmodel.
 
 Doelstellingen:
 
