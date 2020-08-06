@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 071cac6d-05c5-47ab-85bc-ead6693ca1f4
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '234'
+ht-degree: 0%
 
 ---
 
@@ -35,15 +38,21 @@ Selecteer de geplaatste `Voting` component die u wilt openen en selecteer het `C
 
 ![chlimage_1-308](assets/chlimage_1-308.png)
 
-Geef op het tabblad **[!UICONTROL Teksten en labels]** de eigenschappen op die worden gebruikt voor het opnemen van stemmen.
+Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die worden gebruikt voor het opnemen van stemmen.
 
 ![chlimage_1-309](assets/chlimage_1-309.png)
 
-* **[!UICONTROL Positief antwoordlabel]**(*vereist*) De naam van de interne eigenschap voor een positieve reactie.
+* **[!UICONTROL Positive Response Label]**
+(
+*Vereist*) De naam van de interne eigenschap voor een positieve reactie.
 
-* **[!UICONTROL Negatief antwoordlabel]**(*vereist*) De interne eigenschapnaam voor een negatieve reactie.
+* **[!UICONTROL Negative Response Label]**
+(
+*Vereist*) De naam van de interne eigenschap voor een negatieve reactie.
 
-* **[!UICONTROL Tally Name]**(*Required*) De interne, identificeerbare bezitsnaam voor deze instantie van een stemcomponent.
+* **[!UICONTROL Tally Name]**
+(
+*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
