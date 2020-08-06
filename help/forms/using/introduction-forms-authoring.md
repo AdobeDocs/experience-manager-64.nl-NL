@@ -1,8 +1,8 @@
 ---
 title: 'Inleiding tot het ontwerpen van adaptieve formulieren '
 seo-title: 'Inleiding tot het ontwerpen van adaptieve formulieren '
-description: AEM Forms bieden gebruiksvriendelijke maar toch krachtige interface voor het ontwerpen van adaptieve formulieren. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
-seo-description: AEM Forms bieden gebruiksvriendelijke maar toch krachtige interface voor het ontwerpen van adaptieve formulieren. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
+description: AEM Forms biedt gebruiksvriendelijke maar toch krachtige interface voor het ontwerpen van adaptieve formulieren. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
+seo-description: AEM Forms biedt gebruiksvriendelijke maar toch krachtige interface voor het ontwerpen van adaptieve formulieren. Deze sjabloon biedt een groot aantal componenten en gereedschappen waarmee u formulieren kunt maken.
 uuid: 07ff8e79-daf7-4608-9171-91854619cc0b
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,7 +21,7 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken en werken met adaptieve formulieren. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
+Met adaptieve formulieren kunt u aantrekkelijke, responsieve, dynamische en adaptieve formulieren maken. AEM Forms biedt een intuïtieve gebruikersinterface en kant-en-klare componenten voor het maken van en werken met adaptieve formulieren. U kunt desgewenst een adaptief formulier maken op basis van een formuliermodel of -schema of zonder formuliermodel. Het is belangrijk om zorgvuldig het formuliermodel te kiezen dat niet alleen aan uw vereisten voldoet, maar ook uw bestaande infrastructurele investeringen en middelen uitbreidt. U kunt uit de volgende opties kiezen om een adaptief formulier te maken:
 
 * **Een formuliergegevensmodel gebruiken**
    [Met gegevensintegratie](/help/forms/using/data-integration.md) kunt u entiteiten en services integreren van verschillende gegevensbronnen in een formuliergegevensmodel waarmee u adaptieve formulieren kunt maken. Kies een formuliergegevensmodel als het adaptieve formulier dat u maakt, bestaat uit het ophalen en schrijven van gegevens van en naar meerdere gegevensbron.
@@ -62,7 +62,7 @@ Met de zijbalk kunt u
 
 * Zie formulierinhoud zoals deelvensters, componenten, velden en indeling.
 * Eigenschappen van componenten bewerken.
-* Zoek, bekijk en gebruik middelen in uw DAM-opslagplaats (AEM Digital Asset Management).
+* Zoek, bekijk en gebruik middelen in uw AEM DAM-opslagplaats (Digital Asset Management).
 * Voeg componenten toe aan uw formulier.
 
    ![Zijbalk](assets/sidebar-comps-2.png)
@@ -152,7 +152,7 @@ De zijbalk bestaat uit de volgende browsers:
   </tr> 
   <tr> 
    <td>Bestandsbijlage</td> 
-   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong>Opmerking: </strong>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe-ondertekening. Zie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Ondersteunde bestandsindelingen</a>voor meer informatie.</p> </td> 
+   <td><p>Hiermee voegt u een knop toe waarmee gebruikers door ondersteunende documenten kunnen bladeren en deze aan een formulier kunnen toevoegen.</p> <p><strong>Opmerking: </strong>De component Bestandsbijlage ondersteunt een vooraf gedefinieerde set bestandsindelingen in adaptieve formulieren die zijn ingeschakeld voor Adobe Sign. Zie <a href="https://helpx.adobe.com/document-cloud/help/supported-file-formats-fill-sign.html">Ondersteunde bestandsindelingen</a>voor meer informatie.</p> </td> 
   </tr> 
   <tr> 
    <td>Lijst met bestandsbijlagen</td> 
@@ -299,7 +299,7 @@ U kunt de volgende tips en trucs gebruiken bij het werken met adaptieve formulie
    1. Zoeken en tikken **[!UICONTROL Adaptive Forms Configuration Service]**.
    1. Schakel in het dialoogvenster Adaptive Forms Configuration Service de optie **[!UICONTROL Make File Names Unique]**. Standaard is dit uitgeschakeld.
 
-* Als u gebruikers wilt toestaan een PDF toe te voegen met gebruik van de Safari-browser, moet u ervoor zorgen dat deze **[!UICONTROL application/pdf]** wordt toegevoegd aan de eigenschap Ondersteunde bestandstypen van de component Bestandsbijlage. Adaptieve formulieren die zijn gemaakt met de vorige versie van AEM Forms kunnen **[!UICONTROL .pdf]** in plaats van **[!UICONTROL application/pdf]** in de eigenschap Ondersteunde bestandstypen worden gebruikt.
+* Als u gebruikers wilt toestaan een PDF toe te voegen met gebruik van de Safari-browser, moet u ervoor zorgen dat deze **[!UICONTROL application/pdf]** wordt toegevoegd aan de eigenschap Ondersteunde bestandstypen van de component Bestandsbijlage. Adaptieve formulieren die zijn gemaakt met de vorige AEM Forms-versie kunnen **[!UICONTROL .pdf]** in plaats van **[!UICONTROL application/pdf]** in de eigenschap Ondersteunde bestandstypen worden gebruikt.
 
 Zie [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md)voor meer tips over het werken met adaptieve formulieren.
 
