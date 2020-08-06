@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '827'
+ht-degree: 0%
 
 ---
 
@@ -76,7 +79,8 @@ Er zijn verschillende consoles beschikbaar voor het beheer van uw workflows. Geb
 
 Wanneer een werkschema ontbreekt, verstrekt AEM de console van **Mislukt** om u toe te staan om aangewezen actie te onderzoeken en te nemen zodra de originele oorzaak is behandeld:
 
-* **De Details** van de mislukking opent een venster om het **Bericht** van de Mislukking, de Stapel **van de** Stap en van de **Mislukking** te tonen.
+* **Details** van fout opent een venster om te tonen 
+**Foutbericht**, **Stap** - en **foutstapel**.
 
 * **Open Geschiedenis** geeft details van de werkschemageschiedenis weer.
 
@@ -96,7 +100,7 @@ Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, 
 
 Door het minimaliseren van het aantal workflowexemplaren worden de prestaties van de workflow-engine verbeterd, zodat u regelmatig voltooide of actieve workflowexemplaren uit de repository kunt verwijderen.
 
-Configureer **Adobe Granite Workflow Purge Configuration** om workflowinstanties te wissen op basis van hun leeftijd en status. U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
+Configureer **Adobe Granite Workflow Purge Configuration** om workflowinstanties te zuiveren op basis van hun leeftijd en status. U kunt ook werkstroominstanties van alle modellen of van een specifiek model wissen.
 
 U kunt ook meerdere configuraties van de service maken om workflowinstanties die aan verschillende criteria voldoen, leeg te maken. Maak bijvoorbeeld een configuratie die de instanties van een bepaald workflowmodel zuivert wanneer deze veel langer dan de verwachte tijd worden uitgevoerd. Maak een andere configuratie die alle voltooide workflows na een bepaald aantal dagen leegmaakt om de grootte van de opslagplaats te minimaliseren.
 
@@ -121,12 +125,12 @@ Om de dienst te vormen, kunt u de Console [van het](/help/sites-deploying/config
   </tr> 
   <tr> 
    <td>Taaknaam</td> 
-   <td>plannuledpurge.name</td> 
+   <td>scheduledpurge.name</td> 
    <td>Een beschrijvende naam voor de geplande leegloop.</td> 
   </tr> 
   <tr> 
    <td>Workflowstatus</td> 
-   <td>plannuledpurge.workflowStatus</td> 
+   <td>scheduledpurge.workflowStatus</td> 
    <td><p>De status van de werkstroominstanties die moeten worden gewist. De volgende waarden zijn geldig:</p> 
     <ul> 
      <li>VOLTOOID: Voltooide workflowinstanties worden gewist.</li> 
@@ -135,12 +139,12 @@ Om de dienst te vormen, kunt u de Console [van het](/help/sites-deploying/config
   </tr> 
   <tr> 
    <td>Te wissen modellen</td> 
-   <td>plannuledpurge.modelIds</td> 
-   <td><p>De id van de workflowmodellen die moeten worden gewist. <br /> De id is het pad naar het modelknooppunt, bijvoorbeeld: /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Geef geen waarde op om instanties van alle workflowmodellen leeg te maken.</p> <p>Als u meerdere modellen wilt opgeven, klikt u op + in de webconsole. </p> </td> 
+   <td>scheduledpurge.modelIds</td> 
+   <td><p>De id van de workflowmodellen die moeten worden gewist. De id is het pad naar het modelknooppunt, bijvoorbeeld:<br /> /conf/global/settings/workflow/models/dam/update_asset/jcr:content/model<br /> Geef geen waarde op om instanties van alle workflowmodellen leeg te maken.</p> <p>Als u meerdere modellen wilt opgeven, klikt u op + in de webconsole. </p> </td> 
   </tr> 
   <tr> 
    <td>Werkstroomleeftijd</td> 
-   <td>plannuledpurge.daysell</td> 
+   <td>scheduledpurge.daysold</td> 
    <td>De leeftijd van de werkstroominstanties die moeten worden gewist, in dagen.</td> 
   </tr> 
  </tbody> 
