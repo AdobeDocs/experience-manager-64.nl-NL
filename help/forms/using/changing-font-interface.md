@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '294'
+ht-degree: 1%
 
 ---
 
 
 # Het lettertype in de interface wijzigen {#changing-the-font-on-the-interface}
 
-U kunt het lettertype wijzigen dat wordt weergegeven in de werkruimte van AEM-formulieren. Lettertypen die in een specifieke sectie van de gebruikersinterface worden gebruikt, worden gedefinieerd in de bijbehorende sectie van het stijlblad. U kunt de lettertypen in de gebruikersinterface selectief wijzigen.
+U kunt het lettertype wijzigen dat in de AEM Forms-werkruimte wordt weergegeven. Lettertypen die in een specifieke sectie van de gebruikersinterface worden gebruikt, worden gedefinieerd in de bijbehorende sectie van het stijlblad. U kunt de lettertypen in de gebruikersinterface selectief wijzigen.
 
-Voer de [algemene stappen voor de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) van de AEM Forms-werkruimte uit en voer, afhankelijk van uw vereisten, de stappen uit voor het aanpassen van CSS, HTML of beide.
+Voer de [algemene stappen voor de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) van de AEM Forms-werkruimte uit en voer, afhankelijk van uw vereisten, de stappen voor het aanpassen van CSS, HTML of beide in.
 
 1. Wijzig of voeg de lettertypefamilie toe aan een bestaande stijl.
 1. Wijzig of voeg de lettertypefamilie inline voor het HTML-element toe.
@@ -74,6 +77,6 @@ Voer bijvoorbeeld de volgende stappen uit als u het font van het ankerpunt op de
 
 1. Start de werkruimte opnieuw en wis de browsercache zodat de wijzigingen zichtbaar zijn.
 
-![change_font_before](assets/change_font_before.png)**Figure:** De *bovenste navigatiebalk vóór het aanpassen van lettertypen*
+![change_font_before](assets/change_font_before.png)**Figure:** *Bovenste navigatiebalk voor aanpassing van lettertypen*
 
-![change_font_after](assets/change_font_after.png)**Figure:** De *bovenste navigatiebalk na aanpassing van het lettertype van de eerste tab*
+![change_font_after](assets/change_font_after.png)**Figure:** *Bovenste navigatiebalk na aanpassing van lettertype van eerste tab*
