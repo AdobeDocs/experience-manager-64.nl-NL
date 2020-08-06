@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ee104f6f-123b-4a6e-9031-849fc1318cc5
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '796'
+ht-degree: 0%
 
 ---
 
 
 # In context Moderatie {#in-context-moderation}
 
-Voor AEM-gemeenschappen kunnen beheerders en vertrouwde leden van de gemeenschap de moderatie rechtstreeks uitvoeren op de gepubliceerde pagina waar de inhoud van de gemeenschap is geplaatst.
+Voor AEM Communities kan de moderatie rechtstreeks door beheerders en leden van een vertrouwde gemeenschap worden uitgevoerd op de gepubliceerde pagina waar de community-inhoud is geplaatst.
 
 Wanneer het gebruiken van een [moderatieconsole](moderation.md), omvat de informatie die voor de inhoud wordt getoond een verbinding aan de gepubliceerde pagina om toegang tot extra beschikbare moderatieacties toe te staan wanneer het modereren in-context.
 
@@ -37,7 +40,7 @@ UI die aan de moderator op wordt voorgesteld publiceert instantie is bevat binne
 
 ## Voorbeeld {#example}
 
-Met behulp van de [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) -site die bij [Aan de slag met AEM-gemeenschappen](getting-started.md)is gemaakt, is het mogelijk om snel een thread in een forum in te stellen waarop verschillende moderatieactiviteiten in de publicatieomgeving kunnen worden uitgevoerd, zoals hieronder wordt weergegeven.
+Gebruikend de [Geometrixx Engage](http://localhost:4503/content/sites/engage/en.html) plaats die bij [Begonnen met AEM Communities](getting-started.md)wordt gecreeerd, is het mogelijk om snel een draad in een forum te vestigen waarop om diverse moderatieactiviteiten in het publicatiemilieu te ervaren, zoals hieronder wordt gezien.
 
 Aaron McDonald (aaron.mcdonald@mailinator.com) werd geïdentificeerd als een vertrouwd lid van de gemeenschap door hem toe te voegen aan de community-engact-moderators groep bij het maken van de site.
 
@@ -115,14 +118,14 @@ Login als Beheerder (admin) en toegang tot de draad door Forum te selecteren, en
 
 Kennisgeving
 
-* Beheerders kunnen de functie Vlag maken, Verwijderen, Bewerken, Weigeren, Knippen, Sluiten, Vastzetten, Functie
+* Beheerder kan de functie Vlag maken, Verwijderen, Bewerken, Weigeren, Knippen, Sluiten, Vastzetten, Functie
 * Admin kan Beleid selecteren om tot de moderatieconsole toegang te hebben
 
 ![communityadmin-forum](assets/communityadmin-forum.png)
 
 Selecteer het menupunt van het Beleid om tot de [moderatieconsole](moderation.md) van publiceer milieu toegang te hebben.
 
-Bericht dat, voor een beheerder, alle moderatable inhoud zichtbaar is, niet alleen inhoud van de Geometrixx de communautaire plaats van de Ingenieur van de Ingenieur.
+Bericht dat, voor een beheerder, alle moderatable inhoud zichtbaar is, niet alleen inhoud van de de communautaire plaats van de Modus van de Geometrixx.
 
 Het zoekfilter is een sidepanel dat in- en uitschakelt.
 
@@ -145,9 +148,9 @@ Kennisgeving
 
 Selecteer het menupunt van het Beleid om tot de [moderatieconsole](moderation.md) van publiceer milieu toegang te hebben.
 
-Bericht dat, voor een communautaire moderator, slechts moderatable inhoud van de Geometrixx de communautaire plaats van de Ingenieur zichtbaar is.
+Bericht dat, voor een communautaire moderator, slechts moderatable inhoud van de de communautaire plaats van de Modus van de Geometrixx is zichtbaar.
 
-Merk op de communautaire moderator de zelfde opties heeft zoals de beheerder (het beeld is met onderzoek sidebar geknepen gesloten), maar geen toegang tot andere consoles AEM.
+Merk op de communautaire moderator de zelfde opties heeft zoals de beheerder (het beeld is met onderzoek sidebar geknepen gesloten), maar geen toegang tot andere AEM consoles.
 
 Afmelden.
 
