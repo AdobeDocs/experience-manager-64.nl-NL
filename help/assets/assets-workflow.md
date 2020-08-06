@@ -39,7 +39,7 @@ Gebruik workflows in digitale elementen om het element te activeren of watermerk
 >
 >Als een workflow die beschikbaar is in de klassieke gebruikersinterface niet beschikbaar is in de gebruikersinterface met aanraakfuncties, zoals [!UICONTROL Request to Activate] en [!UICONTROL Request to Deactivate], raadpleegt u [workflowmodellen](/help/sites-developing/workflows-models.md#make-workflow-models-available-in-touchui)maken.
 
-## Een workflow toepassen op een AEM-element {#apply-a-workflow-to-an-aem-asset}
+## Een workflow toepassen op een AEM {#apply-a-workflow-to-an-aem-asset}
 
 <!-- 
 TBD: Add animated GIF for these steps instead of all these screenshots.
