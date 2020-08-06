@@ -1,8 +1,8 @@
 ---
 title: De koppeling naar de documentatie bijwerken
 seo-title: De koppeling naar de documentatie bijwerken
-description: Hoe kan ik de bestemming van de koppeling Workspace Help in de werkruimte van AEM-formulieren bijwerken om naar de koppeling voor aangepaste documentatie te verwijzen.
-seo-description: Hoe kan ik de bestemming van de koppeling Workspace Help in de werkruimte van AEM-formulieren bijwerken om naar de koppeling voor aangepaste documentatie te verwijzen.
+description: Hoe kan ik de doelkoppeling van Workspace Help in de AEM Forms-werkruimte bijwerken zodat deze naar de koppeling voor aangepaste documentatie verwijst.
+seo-description: Hoe kan ik de doelkoppeling van Workspace Help in de AEM Forms-werkruimte bijwerken zodat deze naar de koppeling voor aangepaste documentatie verwijst.
 uuid: 64056d10-1451-44ed-8f25-81a21037dc75
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: 788c427f-190f-4580-9efd-6a4c4a008837
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 0%
 
 ---
 
 
 # De koppeling naar de documentatie bijwerken {#updating-the-link-to-the-documentation}
 
-U kunt de standaardHelp-inhoud voor de werkruimte van AEM Forms openen door **Help > Werkruimte Help** te selecteren. Het verwijst naar de online documentatie op de website van Adobe. U kunt de URL echter bijwerken zodat deze naar een andere URL verwijst.
+U kunt de standaardHelp-inhoud voor de AEM Forms-werkruimte openen door **Help > Werkruimte Help** te selecteren. Het verwijst naar de online documentatie op de website Adobe. U kunt de URL echter bijwerken zodat deze naar een andere URL verwijst.
 
 Overweeg de volgende gebruiksgevallen waarin u de standaard Help-URL wilt wijzigen:
 
