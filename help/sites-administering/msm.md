@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c21debc3-ecf4-4aa9-ab5a-18ddd5cf2fff
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2684'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ Op deze en de volgende pagina&#39;s worden de gerelateerde kwesties besproken:
 * [Console voor live kopiëren](/help/sites-administering/msm-livecopy-overview.md)
 * [Synchronisatie van actieve kopie configureren](/help/sites-administering/msm-sync.md)
 * [Conflicten MSM-rollout](/help/sites-administering/msm-rollout-conflicts.md)
-* [Aanbevolen MSM-procedures](/help/sites-administering/msm-best-practices.md)
+* [Beste praktijken MSM](/help/sites-administering/msm-best-practices.md)
 
 ## Mogelijke scenario&#39;s {#possible-scenarios}
 
@@ -154,7 +157,7 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 >[!NOTE]
 >
->De aspecten van de functionaliteit MSM worden gebruikt in verscheidene andere eigenschappen AEM (bijvoorbeeld, Lanceringen, Catalogus); in deze gevallen wordt de levende kopie beheerd door die eigenschap.
+>De aspecten van de functionaliteit MSM worden gebruikt in verscheidene andere AEM eigenschappen (bijvoorbeeld, Lanceringen, Catalogus); in deze gevallen wordt de levende kopie beheerd door die eigenschap.
 
 ### Gebruikte termen {#terms-used}
 
@@ -233,7 +236,7 @@ Als inleiding geeft de volgende tabel een overzicht van de belangrijkste termen 
    <td> </td> 
   </tr> 
   <tr> 
-   <td><strong>Herstellen</strong></td> 
+   <td><strong>Reset</strong></td> 
    <td><p>Een pagina voor live kopiëren opnieuw instellen op:</p> 
     <ul> 
      <li>Alle annuleringen van overerving verwijderen en<br /> </li> 
@@ -266,12 +269,12 @@ Een live MSM-kopie is een kopie van specifieke site-inhoud waarvoor een live rel
 * De synchronisatie voert de daadwerkelijke overdracht van inhoud uit wanneer de veranderingen in de bron worden aangebracht.
 * Een live kopie kan worden beschouwd als:
 
-   * Ondiep:één pagina
+   * Ondiep: één pagina
    * Diep: de pagina, samen met de onderliggende pagina&#39;s ervan
 
 * De regels van de synchronisatie, genoemd rollout configuraties, bepalen welke eigenschappen worden gesynchroniseerd en wanneer de synchronisatie voorkomt.
 
-In het vorige voorbeeld `/content/we-retail/language-masters/en` is dit de algemene hoofdsite in het Engels. Om de inhoud van deze site opnieuw te gebruiken, worden live kopieën van MSM gemaakt:
+In het vorige voorbeeld `/content/we-retail/language-masters/en` is dit de wereldwijde master site in het Engels. Om de inhoud van deze site opnieuw te gebruiken, worden live kopieën van MSM gemaakt:
 
 * De onderstaande inhoud `/content/we-retail/language-masters/en` is de bron.
 
@@ -306,7 +309,7 @@ De basisvorm van een kopie van het origineel is:
 
 #### Live kopiëren met pagina&#39;s die niet live zijn gekopieerd {#live-copy-with-non-live-copy-pages}
 
-Wanneer u een live kopie maakt in AEM, kunt u de live kopie van de vertakking zien en door de live kopie navigeren. U kunt dan de normale AEM-functionaliteit gebruiken voor de live kopie van de vertakking. Dit betekent dat u (of een proces) nieuwe bronnen (pagina&#39;s en/of alinea&#39;s) binnen de actieve kopieervertakking kunt maken (bijvoorbeeld `myCanadaOnlyProduct`).
+Wanneer u een live kopie maakt in AEM kunt u de live kopie van de vertakking zien en door de live kopie navigeren. De normale AEM van de actieve kopie kunt u ook gebruiken. Dit betekent dat u (of een proces) nieuwe bronnen (pagina&#39;s en/of alinea&#39;s) binnen de actieve kopieervertakking kunt maken (bijvoorbeeld `myCanadaOnlyProduct`).
 
 * Dergelijke bronnen hebben geen live relatie met de bron-/blauwdrukpagina&#39;s en zijn niet gesynchroniseerd.
 * De scenario&#39;s kunnen voorkomen dat MSM als speciale gevallen behandelt. Wanneer u (of een proces) bijvoorbeeld een pagina maakt met dezelfde positie en naam in zowel de vertakking van de bron/blauwdruk als de vertakking van de actieve kopie. Voor dergelijke situaties zie de Conflicten [van de Uitvoer](/help/sites-administering/msm-rollout-conflicts.md) MSM voor meer informatie.
@@ -393,7 +396,7 @@ De configuraties van de rollout kunnen worden opnieuw gebruikt, zodat meer dan �
 
 ### Conflicten bij rollout {#rollout-conflicts}
 
-Rollouts kunnen ingewikkeld worden, vooral wanneer auteurs inhoud in zowel de bron als de levende kopie uitgeven, zodat is het nuttig om zich bewust te zijn van hoe AEM om het even welke [conflicten behandelt die tijdens rollout](/help/sites-administering/msm-rollout-conflicts.md)kunnen voorkomen.
+Rollouts kunnen gecompliceerd worden, vooral wanneer auteurs inhoud in zowel de bron als de levende kopie uitgeven, zodat is het nuttig om zich bewust te zijn van hoe AEM om het even welke [conflicten behandelt die tijdens rollout](/help/sites-administering/msm-rollout-conflicts.md)kunnen voorkomen.
 
 ### Overerving en synchronisatie opschorten en annuleren {#suspending-and-cancelling-inheritance-and-synchronization}
 
@@ -443,6 +446,6 @@ MSM verstrekt hulpmiddelen zodat uw implementatie aan de uitzonderlijke ingewikk
 * **Aangepaste synchronisatiehandelingen**
    [Maak een aangepaste synchronisatiehandeling](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action) wanneer de geïnstalleerde handelingen niet voldoen aan uw specifieke toepassingsvereisten. MSM biedt een Java API voor het maken van aangepaste synchronisatiehandelingen.
 
-## Aanbevolen werkwijzen {#best-practices}
+## Best practices voor {#best-practices}
 
 De [MSM pagina van Beste praktijken](/help/sites-administering/msm-best-practices.md) bevat belangrijke informatie betreffende uw implementatie.
