@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 0c2b1c67-2fa4-4b2e-8512-0973177656e2
 translation-type: tm+mt
 source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
+workflow-type: tm+mt
+source-wordcount: '312'
+ht-degree: 0%
 
 ---
 
@@ -19,25 +22,25 @@ source-git-commit: 0db56cb77628b3e81b69382a314c30b43887bde6
 
 ## Inleiding {#introduction}
 
-U kunt Adobe Marketing Cloud helpen verbeteren door Adobe-statistieken te verzenden over hoe u met AEM werkt. Deze informatie bevat geen gegevens over de bezoekers van uw bedrijfssite en wordt alleen gebruikt om Adobe te helpen uw gebruikerservaring te leveren, te ondersteunen en te verbeteren.
+U kunt Adobe Marketing Cloud helpen verbeteren door Adobe-statistieken te verzenden over hoe u met AEM werkt. Deze informatie bevat geen gegevens over de bezoekers van de site van uw bedrijf en wordt alleen gebruikt om Adobe te helpen uw gebruikerservaring te leveren, te ondersteunen en te verbeteren.
 
 U kunt in de inzameling van gebruiksstatistieken door of Touch UI of de Console van het Web te gebruiken kiezen.
 
 >[!NOTE]
 >
->Er zijn verschillende regels inzake gegevensbescherming en privacy. met inbegrip van bijvoorbeeld de GDPR en de CCPA. AEM-sites zijn klaar om klanten te helpen bij hun verplichtingen op het gebied van gegevensbescherming en privacy. Deze pagina begeleidt klanten door de procedures aan opt-in (of uit) van de Geaggregeerde Verzameling van de Statistieken van het Gebruik.
+>Er zijn verschillende regels inzake gegevensbescherming en privacy. met inbegrip van bijvoorbeeld de GDPR en de CCPA. AEM Sites is klaar om klanten te helpen met hun verplichtingen op het gebied van gegevensbescherming en privacy. Deze pagina begeleidt klanten door de procedures aan opt-in (of uit) van de Geaggregeerde Verzameling van de Statistieken van het Gebruik.
 >
->Zie ook het Privacy Center [van](https://www.adobe.com/privacy.html)Adobe voor meer informatie.
+>Zie ook Privacy Center voor meer informatie over de [Adobe](https://www.adobe.com/privacy.html).
 
 >[!NOTE]
 >
->U kunt ook op elk gewenst moment de optie Weigeren kiezen met de [webconsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) of door de optie voor aanmelden niet te selecteren op het AEM-aanmeldingsscherm.
+>U kunt ook op elk gewenst moment de optie Weigeren kiezen door de [webconsole](/help/sites-deploying/opt-in-aggregated-usage-statistics.md#opt-in-by-using-the-web-console) te gebruiken of door de optie Weigeren niet te selecteren op het AEM aanmeldingsscherm.
 
 ## Inschakelen via de aanraakinterface {#opt-in-by-using-the-touch-ui}
 
 De eerste keer dat u AEM start, kunt u zich aanmelden via de aanraakinterface:
 
-1. Klik in het AEM-navigatiescherm op het pictogram **Inbox** (bell).
+1. Klik in het scherm AEM navigatie op het pictogram **Inbox** (bell).
 
    ![usage_statisticsnavigationscreen](assets/usage_statisticsnavigationscreen.png)
 
@@ -55,7 +58,7 @@ De eerste keer dat u AEM start, kunt u zich aanmelden via de aanraakinterface:
 
 U kunt als volgt de optie Aanmelden (of Weigeren) gebruiken met de webconsole:
 
-1. Voor het scherm van de Navigatie AEM, klik **Hulpmiddelen** en dan **Verrichtingen**.
+1. Voor het scherm van de Navigatie van de AEM, klik **Hulpmiddelen** en toen **Verrichtingen**.
 
    ![usage_statistical sopsdashboard](assets/usage_statisticsopsdashboard.png)
 
