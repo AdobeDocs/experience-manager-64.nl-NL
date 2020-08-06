@@ -26,9 +26,9 @@ Deze zelfstudie is een stap in de [eerste interactieve communicatiereeks](/help/
 
 ## Over de zelfstudie {#about-the-tutorial}
 
-Met de AEM Forms-gegevensintegratiemodule kunt u een formuliergegevensmodel maken van verschillende bronnen met back-endgegevens, zoals het AEM-gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
+Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
-Voor meer informatie over de integratie van vormgegevens en het model van vormgegevens, zie de Integratie [van Gegevens van](data-integration.md)AEM Forms.
+Zie [AEM Forms Data Integration](data-integration.md)voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel.
 
 Deze zelfstudie begeleidt u door de stappen om een formuliergegevensmodel voor te bereiden, te maken, te configureren en aan een interactieve communicatie te koppelen. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -122,13 +122,13 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 1. Installeer het JDBC-stuurprogramma voor MySQL-database als een OSGi-bundel:
 
-   1. Meld u aan bij de Auteur-instantie van AEM Forms als beheerder en ga naar de bundels van de AEM-webconsole. De standaard-URL is [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+   1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. De standaard-URL is [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
    1. Tik op **Installeren/bijwerken**. Het dialoogvenster **Bundels** uploaden/installeren wordt weergegeven.
    1. Tik op Bestand **** kiezen om door de OSGi-bundel van het MySQL-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel** starten en Pakketten **** vernieuwen en tik op **Installeren** of **Bijwerken**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
 
 1. MySQL-database configureren als gegevensbron:
 
-   1. Ga naar AEM-webconsole op [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+   1. Ga naar AEM webconsole op [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
    1. Zoek de configuratie **van Apache Sling Connection Pooled DataSource** . Tik om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
@@ -142,6 +142,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
       * **Testen op rendement:** Schakel de optie **Testen op terugkeer** in.
       * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld, **uitgezocht &amp;ast; van de klant**.
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
+
    Laat andere eigenschappen de [standaardwaarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) behouden en tik op **Opslaan**.
 
    Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
@@ -150,11 +151,11 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 ## Stap 3: Formuliergegevensmodel maken {#step-create-form-data-model}
 
-AEM Forms bieden een intuïtieve gebruikersinterface voor het [maken van een](data-integration.md)formuliergegevensmodel op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
+AEM Forms biedt een intuïtieve gebruikersinterface voor het [maken van een formuliergegevensmodel op basis](data-integration.md)van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
-1. Navigeer in de auteur van AEM naar **Forms** > **Gegevensintegratie**.
+1. Navigeer in AEM auteurinstantie naar **Forms** > **Gegevensintegratie**.
 1. Tik op **Maken** > **Formuliergegevensmodel**.
 1. Geef in de wizard Formuliergegevensmodel maken een **naam** op voor het gegevensmodel van het formulier. Bijvoorbeeld **FDM_Create_First_IC**. Tik op **Volgende**.
 1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteer **MySQL** -gegevensbron en tik op **Maken**.
@@ -175,7 +176,7 @@ Het formuliergegevensmodel configureren omvat:
 
 ### Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
-1. Navigeer in de auteur van AEM naar **Forms** > **Gegevensintegratie**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Navigeer bij AEM auteurinstantie naar **Forms** > **Gegevensintegratie**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Het **FDM_Create_First_IC** -formuliergegevensmodel dat u eerder hebt gemaakt, wordt hier weergegeven. Selecteer het en tik **uitgeven**.
 
    De geselecteerde gegevensbron **MySQL** wordt getoond in de ruit van **Gegevensbronnen** .
@@ -193,6 +194,7 @@ Het formuliergegevensmodel configureren omvat:
 
       * get
       * update
+
    Tik op Geselecteerde **gegevensmodelobjecten en -services** toevoegen aan het formuliergegevensmodel.
 
    ![select_data_model_objects_services](assets/select_data_model_objs_services.png)
@@ -219,6 +221,7 @@ Voer de volgende stappen uit om berekende onderliggende eigenschappen voor het m
    1. Voer **gebruiksheffingen** in als de naam van de onderliggende eigenschap.
    1. Schakel **Berekend** in.
    1. Selecteer **Zwevend** als het type en tik op **Gereed** om de onderliggende eigenschap toe te voegen aan het **gegevensmodelobject van de factuur** .
+
    ![create_child_property_float](assets/create_child_property_float.png)
 
 1. Tik op Regel **** bewerken om de regeleditor te openen.
@@ -259,6 +262,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
    * Selecteer **vraag** van de drop-down lijst van het **ModelVoorwerp** .
    * Selecteer **krijgen** van de drop-down lijst van de **Dienst** .
    * Tik op **Toevoegen** om het gegevensmodelobject van de **klant** te koppelen aan **aanroepen** van een gegevensmodelobject met behulp van een eigenschap. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het voorwerp van het klantengegevensmodel worden verbonden. Het dialoogvenster **Argument** toevoegen wordt geopend.
+
    ![add_association](assets/add_association.png)
 
 1. In het dialoogvenster **Argument** toevoegen:
@@ -271,6 +275,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
    * Selecteer **klant** in de vervolgkeuzelijst **Binding aan** .
    * Selecteer **mobiel** in de vervolgkeuzelijst **Bindingswaarde** .
    * Tik op **Toevoegen**.
+
    ![add_association_argument](assets/add_association_argument.png)
 
    De eigenschap mobilenum wordt weergegeven in de sectie **Argumenten** .
@@ -294,6 +299,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
    * Selecteer **klant** in de vervolgkeuzelijst **Binding aan** .
    * Selecteer **klantplan** van de **Bindende drop-down lijst van de Waarde** .
    * Tik **op Gereed** om een binding te maken tussen de eigenschappen billplan en customerplan.
+
    ![add_association_customer_rekeningen](assets/add_association_customer_bills.png)
 
    In de volgende afbeelding ziet u de koppelingen tussen de gegevensmodelobjecten en de eigenschappen die worden gebruikt om koppelingen tussen deze objecten te maken:
@@ -337,6 +343,7 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
    * Voer een optionele titel en beschrijving in.
    * Selecteer **klant** in de vervolgkeuzelijst **Uitvoermodelobject** .
    * Tik op **Gereed** om de eigenschappen op te slaan.
+
    ![edit_properties_get_details](assets/edit_properties_get_details.png)
 
 1. Selecteer de **updateservice** en tik op **Eigenschappen** bewerken. Het deelvenster Eigenschappen **bewerken** wordt geopend.
@@ -346,6 +353,7 @@ Nadat het creëren van verbindingen tussen de klant en andere voorwerpen van het
    * Selecteer **klant** in de vervolgkeuzelijst **Invoermodelobject** .
    * Tik **op Gereed**.
    * Tik op **Opslaan** om het formuliergegevensmodel op te slaan.
+
    ![update_service_properties](assets/update_service_properties.png)
 
 ## Stap 5: Formuliergegevensmodel en services testen {#step-test-form-data-model-and-services}
