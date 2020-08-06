@@ -24,7 +24,7 @@ De Integratie van gegevens verstrekt de modelredacteur van vormgegevens om met d
 
 De formuliergegevensmodeleditor biedt een intuïtieve gebruikersinterface en hulpmiddelen voor het bewerken en configureren van een formuliergegevensmodel. Met behulp van de editor kunt u gegevensmodelobjecten, eigenschappen en services toevoegen en configureren vanuit gekoppelde gegevensbronnen in het formuliergegevensmodel. Daarnaast kunt u gegevensmodelobjecten en -eigenschappen maken zonder gegevensbronnen en deze later binden met de respectievelijke gegevensmodelobjecten en -eigenschappen. U kunt ook voorbeeldgegevens genereren en bewerken voor objecteigenschappen van gegevensmodellen die u kunt gebruiken om aangepaste formulieren en interactieve communicatie vooraf in te vullen tijdens het weergeven van een voorbeeld. U kunt gegevensmodelvoorwerpen en de diensten testen die in een model van vormgegevens worden gevormd om ervoor te zorgen het behoorlijk met gegevensbronnen wordt geïntegreerd.
 
-Als u nieuw bent voor de gegevensintegratie van Forms en geen gegevensbron hebt gevormd of een model van vormgegevens gecreeerd, zie de volgende onderwerpen:
+Zie de volgende onderwerpen als u nog niet bekend bent met de Forms-gegevensintegratie en geen gegevensbron hebt geconfigureerd of een formuliergegevensmodel hebt gemaakt:
 
 * [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md)
 * [Gegevensbronnen configureren](/help/forms/using/configure-data-sources.md)
@@ -34,7 +34,7 @@ Lees verder voor meer informatie over verschillende taken en configuraties die u
 
 >[!NOTE]
 >
->U moet lid zijn van zowel **fdm-auteur** als **formulieren-gebruiker** groepen om formuliergegevensmodel te kunnen maken en ermee te kunnen werken. Neem contact op met de AEM-beheerder om lid te worden van de groepen.
+>U moet lid zijn van zowel **fdm-auteur** als **formulieren-gebruiker** groepen om formuliergegevensmodel te kunnen maken en ermee te kunnen werken. Neem contact op met de AEM beheerder om lid te worden van de groepen.
 
 ## Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
@@ -44,7 +44,7 @@ U kunt gegevensmodelvoorwerpen en de diensten van beschikbare gegevensbronnen in
 
 Objecten en services voor gegevensmodellen toevoegen:
 
-1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u gegevensmodelobjecten wilt toevoegen.
+1. Meld u aan bij de AEM auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u gegevensmodelobjecten wilt toevoegen.
 1. In de ruit van Gegevensbronnen, breid gegevensbronnen uit om beschikbare voorwerpen en de diensten van het gegevensmodel te bekijken.
 1. Selecteer gegevensmodelobjecten en -services die u wilt toevoegen aan het formuliergegevensmodel en tik op **[!UICONTROL Add Selected]**.
 
@@ -70,7 +70,7 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    >[!NOTE]
    >
-   >U kunt services die u op het tabblad Services van een formuliergegevensmodel hebt geconfigureerd, aanroepen met behulp van de aangepaste formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
+   >U kunt services die u hebt geconfigureerd op het tabblad Services van een formuliergegevensmodel, aanroepen met behulp van de adaptieve formulierregels. De gevormde diensten zijn beschikbaar in de Invoke de dienstenactie van de regelredacteur voor meer informatie over het gebruiken van deze diensten in adaptieve vormregels, zie de Diensten van de Invoke en Reeks Waarde van regels in [regelredacteur](/help/forms/using/rule-editor.md).
 
 ## Gegevensmodelobjecten en onderliggende eigenschappen maken {#create-data-model-objects-and-child-properties}
 
@@ -80,7 +80,7 @@ Terwijl u gegevensmodelvoorwerpen van gevormde gegevensbronnen kunt toevoegen, k
 
 Een gegevensmodelobject maken zonder gegevensbronnen:
 
-1. Meld u aan bij de AEM-auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
+1. Meld u aan bij de AEM auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
 1. Tik op **[!UICONTROL Create Entity]**.
 1. Geef in het dialoogvenster Gegevensmodel maken een naam op voor het gegevensmodelobject en tik op **[!UICONTROL Add]**. Er wordt een gegevensmodelobject toegevoegd aan het formuliergegevensmodel. Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
 
@@ -160,7 +160,7 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
 
    ![edit-argument](assets/edit-argument.png)
 
-   Het id-argument binden om het kenmerk van het AEM-gebruikersprofiel leeg te maken
+   Het id-argument binden om kenmerk van AEM gebruikersprofiel leeg te maken
 
 1. Tik **[!UICONTROL Done]** om het argument op te slaan, **[!UICONTROL Done]** de eigenschappen op te slaan en vervolgens het gegevensmodel van het formulier op **[!UICONTROL Save]** te slaan.
 
@@ -196,6 +196,7 @@ Een koppeling toevoegen:
    * Selecteer het associatietype — Een-op-een of een-op-een.
    * Selecteer het gegevensmodelobject dat u wilt koppelen.
    * Selecteer de leesservice om gegevens van het geselecteerde modelobject te lezen. Het argument van de leesservice wordt weergegeven. Bewerk het argument om het indien nodig te wijzigen en koppel het aan de eigenschap van het gegevensmodelobject dat u wilt koppelen.
+
    In het volgende voorbeeld is het standaardargument voor de leesservice van het gegevensmodelobject Afhankelijkheden `dependentid`.
 
    ![add-association-example](assets/add-association-example.png)
@@ -233,6 +234,7 @@ Eigenschappen bewerken:
    * **Gegevensmodelobject**: Geef de lees- en schrijfservices op en bewerk argumenten.
    * **Eigenschap**: Geef het type, subtype en de indeling voor de eigenschap op. U kunt ook opgeven of de geselecteerde eigenschap de primaire sleutel voor het gegevensmodelobject is.
    * **Service**: Geef het invoermodelobject, het uitvoertype en de argumenten voor de service op. Voor de Get dienst, kunt u specificeren als het wordt verwacht om een serie terug te keren.
+
    ![edit-properties-service](assets/edit-properties-service.png)
 
    Dialoogvenster Eigenschappen bewerken voor een get-service
