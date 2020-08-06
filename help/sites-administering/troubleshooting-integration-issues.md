@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
 translation-type: tm+mt
 source-git-commit: a210d3bf80b7e7ec62c76a21f1cc2e71e986a4dc
+workflow-type: tm+mt
+source-wordcount: '1107'
+ht-degree: 0%
 
 ---
 
@@ -56,11 +59,11 @@ U kunt het volgende proberen om dit probleem op te lossen:
 * Zorg ervoor dat er geen grote hoeveelheid geregistreerde PollingImporters is (zie de sectie &quot;Sluiting duurt lang toe te schrijven aan PollingImporter&quot; hieronder).
 * De Importeurs van het Rapport van de looppas op een bepaald tijdstip van de dag door CRON uitdrukkingen voor de `ManagedPollingImporter` configuraties in de console [te gebruiken](/help/sites-deploying/configuring-osgi.md)OSGi.
 
-Lees het volgende artikel [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)voor meer informatie over het maken van services voor het importeren van aangepaste gegevens in AEM.
+Lees het volgende artikel [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)voor meer informatie over het maken van aangepaste services voor het importeren van gegevens in AEM.
 
 ### Het afsluiten duurt lang vanwege de PollingImporter {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk schakelt u Analytics voor een site in door een verwijzing naar een analytische configuratie toe te voegen op het tabblad [Cloud Services](/help/sites-developing/extending-cloud-config.md) voor pagina-eigenschappen. De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw te verwijzen tenzij een pagina een verschillende configuratie vereist. Wanneer u een verwijzing naar een site toevoegt, worden automatisch meerdere knooppunten (12 voor AEM 6.3 en eerder of 6 voor AEM 6.4) gemaakt van het type `cq;PollConfig` dat PollingImporters instantieert die worden gebruikt om analysegegevens in AEM te importeren. Dientengevolge:
+Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk schakelt u Analyse voor een site in door een verwijzing naar een analytische configuratie toe te voegen op het tabblad [Cloud Services](/help/sites-developing/extending-cloud-config.md) voor pagina-eigenschappen. De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw te verwijzen tenzij een pagina een verschillende configuratie vereist. Als u een verwijzing naar een site toevoegt, worden ook automatisch meerdere knooppunten (12 voor AEM 6.3 en eerder of 6 voor AEM 6.4) gemaakt van het type `cq;PollConfig` dat PollingImporters instantieert die worden gebruikt om analysegegevens in AEM te importeren. Dientengevolge:
 
 * Veel pagina&#39;s die verwijzen naar Analytics leiden tot een grote hoeveelheid PollingImporters.
 * Bovendien, leidt het kopiëren en het kleven van pagina&#39;s met een verwijzing naar een configuratie van Analytics tot een verdubbeling van zijn PollingImporters.
@@ -83,7 +86,7 @@ sed -n "s/.*(aem-analytics-integration-.*).*target=\(.*\)\/jcr:content.*/\1/p" e
 
 Ten tweede, zorg ervoor dat slechts top-pagina&#39;s (hoog in de hiërarchie) een analytische configuratie hebben van verwijzingen voorzien.
 
-Lees het volgende artikel [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)voor meer informatie over het maken van services voor het importeren van aangepaste gegevens in AEM.
+Lees het volgende artikel [https://helpx.adobe.com/experience-manager/using/polling.html](https://helpx.adobe.com/experience-manager/using/polling.html)voor meer informatie over het maken van aangepaste services voor het importeren van gegevens in AEM.
 
 ## DTM-problemen (verouderd) {#dtm-legacy-issues}
 
@@ -95,7 +98,7 @@ De [DTM](/help/sites-administering/dtm.md) -scripttag wordt niet correct op de p
 
 U kunt het volgende proberen om het probleem op te lossen:
 
-* Zorg ervoor dat gecodeerde eigenschappen kunnen worden gedecodeerd (gebruik een andere automatisch gegenereerde sleutel voor elke AEM-instantie). Lees voor meer informatie ook [Encryption Support for Configuration Properties](/help/sites-administering/encryption-support-for-configuration-properties.md).
+* Zorg ervoor dat gecodeerde eigenschappen kunnen worden gedecodeerd (gebruik een andere automatisch gegenereerde sleutel voor elke AEM). Lees voor meer informatie ook [Encryption Support for Configuration Properties](/help/sites-administering/encryption-support-for-configuration-properties.md).
 * Publiceer de configuraties in `/etc/cloudservices/dynamictagmanagement`
 * Controle ACLs op `/etc/cloudservices`. ACLs zou moeten zijn:
 
@@ -141,7 +144,7 @@ Lees voor meer informatie de pagina [Ontwikkelen voor gerichte inhoud](/help/sit
 
 ### De fout &quot;Ontbrekende ID van de Reeks van het Rapport in initialisatie AppMeturement&quot;wordt getoond in de browser console {#the-error-missing-report-suite-id-in-appmeasurement-initialization-is-displayed-in-the-browser-console}
 
-Dit probleem kan optreden wanneer Adobe Analytics met DTM op de website wordt geïmplementeerd en aangepaste code wordt gebruikt. De oorzaak gebruikt het object `s = new AppMeasurement()` om het `s` object te instantiëren.
+Dit probleem kan optreden wanneer Adobe Analytics op de website wordt geïmplementeerd met DTM en aangepaste code gebruikt. De oorzaak gebruikt het object `s = new AppMeasurement()` om het `s` object te instantiëren.
 
 #### Oplossing {#solution-4}
 
@@ -156,7 +159,7 @@ var s=s_gi(s_account)
 
 Dit probleem kan meerdere oorzaken hebben:
 
-* Het asynchroon laden van doelclientbibliotheken ( `mbox.js` of `at.js`) met behulp van systemen voor tagbeheer van derden kan willekeurig een doeleinde maken. De doelbibliotheken moeten synchroon in de paginakop worden geladen. Dit is altijd het geval wanneer de bibliotheken van AEM worden geleverd.
+* Het asynchroon laden van doelclientbibliotheken ( `mbox.js` of `at.js`) met behulp van systemen voor tagbeheer van derden kan willekeurig een doeleinde maken. De doelbibliotheken moeten synchroon in de paginakop worden geladen. Dit geldt altijd wanneer de bibliotheken worden geleverd vanuit AEM.
 
 * Twee doelclientbibliotheken ( `at.js`) tegelijk laden, bijvoorbeeld één met DTM en één met de doelconfiguratie in AEM. Dit kan tot klassen voor de `adobe.target` definitie leiden als de `at.js` versies verschillen.
 
@@ -169,7 +172,7 @@ U kunt de volgende oplossingen uitproberen:
 
 ### Een standaardaanbieding wordt altijd getoond in plaats van correcte aanbieding wanneer het gebruiken van AT.js 1.3+ {#a-default-offer-is-always-displayed-instead-of-correct-offer-when-using-at-js}
 
-Uit het vak is AEM 6.2 en 6.3 niet compatibel met AT.js versie 1.3.0+. Met AT.js versie 1.3.0 die parameterbevestiging voor zijn APIs introduceert, `adobe.target.applyOffer()` vereist een &quot;mbox&quot;parameter die niet door de `atjs-itegration.js` code wordt verstrekt.
+Uit het vak AEM 6.2 en 6.3 is niet compatibel met AT.js versie 1.3.0+. Met AT.js versie 1.3.0 die parameterbevestiging voor zijn APIs introduceert, `adobe.target.applyOffer()` vereist een &quot;mbox&quot;parameter die niet door de `atjs-itegration.js` code wordt verstrekt.
 
 #### Oplossing {#solution-6}
 
@@ -190,11 +193,11 @@ adobe.target.getOffer({
 
 ### De pagina van Doelstellingen &amp; van Montages toont niet de sectie van Rapporteringsbronnen {#the-goals-settings-page-does-not-show-the-reporting-sources-section}
 
-Dit probleem is waarschijnlijk een probleem met de configuratie-provisioning van de [A4T Analytics Cloud](/help/sites-administering/target-configuring.md) .
+Dit probleem is waarschijnlijk een probleem met de configuratie [van](/help/sites-administering/target-configuring.md) A4T Analytics Cloud.
 
 #### Oplossing {#solution-7}
 
-U moet controleren of A4T correct is ingeschakeld voor uw Target-account door de volgende verificatieaanvraag naar AEM uit te voeren:
+U moet controleren of A4T correct is ingeschakeld voor uw Target-account door het volgende verificatieverzoek aan AEM uit te voeren:
 
 ```
 http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.a4t.json
@@ -210,7 +213,7 @@ http://localhost:4502/etc/cloudservices/testandtarget/<YOUR-CONFIG>/jcr:content.
 }
 ```
 
-Als het antwoord de regel bevat, kunt u contact opnemen met de `a4tEnabled:false`klantenservice [](https://helpx.adobe.com/contact.html) van Adobe om uw account correct te kunnen instellen.
+Als het antwoord de lijn bevat `a4tEnabled:false`, kunt u contact opnemen met de [Adobe Klantenservice](https://helpx.adobe.com/contact.html) om uw account correct te kunnen instellen.
 
 ### Nuttige doel-API&#39;s {#helpful-target-apis}
 
