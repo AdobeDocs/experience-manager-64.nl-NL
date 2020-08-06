@@ -2,7 +2,7 @@
 title: Inhoudsarchitectuur
 seo-title: Inhoudsarchitectuur
 description: 'Tips voor het ontwerpen van uw inhoud (tip: alles is inhoud)'
-seo-description: Tips voor het ontwerpen van uw inhoud in Adobe Experience Manager (AEM). (hint - alles is inhoud)
+seo-description: Tips voor het ontwerpen van inhoud in Adobe Experience Manager (AEM). (hint - alles is inhoud)
 uuid: fef2bf0f-70ec-4621-8479-a62b7e1fbc07
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: ca46b74c-6114-458b-98c0-2a93abffcdc3
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Alles moet in de gegevensopslagruimte worden opgeslagen in plaats van te vertrou
 
 ### Het ontwerpbeginsel &quot;inhoudsmodel eerst&quot; gebruiken {#use-the-content-model-first-design-principle}
 
-Wanneer u een nieuwe functie maakt, begint u altijd eerst met het ontwerpen van de JCR-inhoudsstructuur. Daarna leest u de inhoud en schrijft u deze in de standaardservlets. Dit zal u toestaan om ervoor te zorgen dat uw implementatie goed met uit de doos controlemechanismen van de toegangscontrole werkt en u toestaan om het produceren van onnodige CRUD-Stijl servlets te vermijden.
+Wanneer u een nieuwe functie maakt, begint u altijd eerst met het ontwerpen van de JCR-inhoudsstructuur. Daarna leest u eerst de inhoud en schrijft u deze met de standaard Sling-servlets. Dit zal u toestaan om ervoor te zorgen dat uw implementatie goed met uit de doos controlemechanismen van de toegangscontrole werkt en u toestaan om het produceren van onnodige CRUD-Stijl servlets te vermijden.
 
 ### Wees RESTful {#be-restful}
 
@@ -45,11 +48,11 @@ De servers zouden op resourceTypes in plaats van wegen moeten worden bepaald. Di
 
 ### Nieuwe knooppunttypen niet definiëren {#avoid-defining-new-node-types}
 
-De types van knoop werken op een laag niveau in de infrastructuurlaag en de meeste vereisten kunnen worden vervuld door een sling te gebruiken:resourceType dat aan een nt:unStructured, eik:UnStructured, sling:Omslag of cq:het knooppunttype van de Pagina wordt toegewezen. De types van knoop komen aan schema in de bewaarplaats overeen en het veranderen van knooptypes kan zeer duur onderaan de weg zijn.
+De types van knoop werken op een laag niveau in de infrastructuurlaag en de meeste vereisten kunnen worden voldaan door een sling te gebruiken:resourceType dat aan een nt:unStructured, eik:UnStructured, sling:Omslag of cq:het knooppunttype van de Pagina wordt toegewezen. De types van knoop komen aan schema in de bewaarplaats overeen en het veranderen van knooptypes kan zeer duur onderaan de weg zijn.
 
 ### Naleving van naamgevingsconventies in het JCR {#adhere-to-naming-conventions-in-the-jcr}
 
-Het naleven van noemende overeenkomsten zal consistentie aan uw codebasis toevoegen, verminderend het veelvoud van onvolkomenheden en verhoogt de snelheid van ontwikkelaars die in het systeem werken. De volgende conventies worden door Adobe gebruikt bij de ontwikkeling van AEM:
+Het naleven van noemende overeenkomsten zal consistentie aan uw codebasis toevoegen, verminderend het veelvoud van onvolkomenheden en verhoogt de snelheid van ontwikkelaars die in het systeem werken. Adobe gebruikt de volgende conventies bij het ontwikkelen van AEM:
 
 * Node-namen
 
