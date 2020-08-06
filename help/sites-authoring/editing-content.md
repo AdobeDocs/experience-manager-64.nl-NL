@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 07da66ab-dd5e-4ca8-ac6d-76fc81875fd9
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3064'
+ht-degree: 5%
 
 ---
 
@@ -103,7 +106,7 @@ Als een pagina deel uitmaakt van een [workflow](/help/sites-authoring/workflows.
 
 In het bericht wordt de workflow weergegeven die op de pagina wordt uitgevoerd. Als de gebruiker betrokken is bij de huidige workflowstap, zijn er ook opties beschikbaar om de workflowstatus [te](/help/sites-authoring/workflows-participating.md) beïnvloeden en meer informatie over de workflow te krijgen, zoals:
 
-* **Voltooien** - Hiermee opent u het dialoogvenster **Werkitem** voltooien
+* **Voltooien** - Hiermee wordt het dialoogvenster **Werkitem** voltooien geopend
 
 * **Delegeren** - Hiermee wordt het dialoogvenster **Voltooid werkitem** geopend
 
@@ -150,11 +153,13 @@ U kunt een nieuwe component toevoegen door de componenten van de **Belemmering h
 1. Zorg ervoor dat de pagina in de modus [**Bewerken **staat](/help/sites-authoring/author-environment-tools.md#page-modes).
 1. Er zijn twee manieren om een nieuwe component in het alineasysteem te selecteren en toe te voegen:
 
-   * Selecteer de optie Component **** invoegen (+) op de werkbalk van een bestaande component of selecteer de component **slepen hier** .
+   * Select the **Insert Component** option (+) from either the toolbar of an existing component or the **Drag components here** box.
+
    ![screen_shot_2018-03-22at112536](assets/screen_shot_2018-03-22at112536.png)
 
    * Als u zich op een bureaubladapparaat bevindt, kunt u hier **dubbelklikken op de componenten** Slepen.
-   Het dialoogvenster Nieuwe component **** invoegen wordt geopend, zodat u de gewenste component kunt selecteren:
+
+   The **Insert New Component** dialog will open to allow you to select your required component:
 
    ![screen_shot_2018-03-22at112650](assets/screen_shot_2018-03-22at112650.png)
 
@@ -268,6 +273,7 @@ De acties die de gebruiker daadwerkelijk kan uitvoeren, worden op de juiste wijz
    * U kunt op dezelfde pagina of op een andere pagina plakken.
    * Het geplakte item wordt boven het item geplakt waar u de plakactie selecteert.
    * De handeling Pate wordt alleen weergegeven als er inhoud op het klembord staat.
+
    ![screen_shot_2018-03-22at113553](assets/screen_shot_2018-03-22at113553.png)
 
    >[!NOTE]
@@ -307,7 +313,7 @@ Er zijn twee methoden om inhoud toe te voegen en/of te bewerken in componenten:
 
 ### Dialoogvenster Component Edit {#component-edit-dialog}
 
-U kunt een component openen om de inhoud te bewerken met het pictogram [Bewerken (potlood) op de werkbalk](#edit-configure-copy-cut-delete-paste)van de component.
+U kunt een component openen om de content te bewerken met het pictogram [Bewerken (potlood) van de werkbalk van de component](#edit-configure-copy-cut-delete-paste).
 
 De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige componenten zijn [alle handelingen alleen beschikbaar in de modus](#edit-content-full-screen-mode)Volledig scherm. Bijvoorbeeld:
 
@@ -328,7 +334,7 @@ De exacte bewerkingsopties zijn afhankelijk van de component. Voor sommige compo
 
 * Afbeeldingscomponent - volledig scherm
 
-   [Door de modus](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) Volledig scherm in te voeren voor de afbeeldingscomponent, kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart** starten en Zoomen **herstellen**. Bovendien kunt u op volledig scherm voorinstellingen voor uitsnijden selecteren.
+   [Door de volledige-schermmodus te openen](/help/sites-authoring/editing-content.md#edit-content-full-screen-mode) voor de afbeeldingscomponent kunt u meer ruimte vrijmaken voor het bewerken van de afbeelding en kunt u extra bewerkingsopties weergeven, zoals **Kaart starten** en **Zoomen opnieuw instellen**. Bovendien kunt u op het volledige scherm voorinstellingen voor bijsnijden selecteren.
 
    ![screen_shot_2018-03-22at120529](assets/screen_shot_2018-03-22at120529.png)
 
@@ -379,7 +385,7 @@ Een alineacomponent verplaatsen:
 
 ## Componentindeling bewerken {#edit-component-layout}
 
-In plaats van herhaaldelijk over te schakelen van bewerkingsmodus naar [lay-outmodus](/help/sites-authoring/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
+In plaats van herhaaldelijk over te schakelen van de bewerkingsmodus naar [de lay-outmodus](/help/sites-authoring/responsive-layout.md) om een component aan te passen, kunt u de actie **Lay-out** selecteren zodat een component de lay-out van die component kan wijzigen en tijd kan besparen door de bewerkingsmodus niet te verlaten.
 
 1. Als u in de modus **Bewerken** van de siteconsole een component selecteert, wordt de werkbalk van de component zichtbaar.
 
@@ -394,6 +400,7 @@ In plaats van herhaaldelijk over te schakelen van bewerkingsmodus naar [lay-outm
    * De formaatgrepen voor de componentweergave.
    * De emulatorwerkbalk wordt boven in het scherm weergegeven.
    * De acties van de lay-out in plaats van de standaard geeft acties uit tonen op de componententoolbar.
+
    ![screen_shot_2018-03-22at133843](assets/screen_shot_2018-03-22at133843.png)
 
    U kunt de lay-out van de component nu wijzigen zoals u in de [lay-outmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)zou doen.
@@ -414,7 +421,7 @@ Overerfde componenten kunnen het product van diverse scenario&#39;s zijn, die om
 
 * [Beheer van meerdere sites](/help/sites-administering/msm.md)
 * [Starten](/help/sites-authoring/launches.md) (op basis van live kopie).
-* Specifieke componenten zoals het Overerfde Systeem van de Paragraaf binnen Geometrixx.
+* Specifieke componenten, zoals het Overgenomen alineasysteem in Geometrixx.
 
 U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk van de component, kan dit beschikbaar zijn bij:
 
@@ -432,7 +439,7 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
 
    ![](do-not-localize/screen_shot_2018-03-22at134417.png)
 
-   De actie Uitvoer is ook beschikbaar in de blauwdruk of Live Copy-bron:
+   De actie Uitvoeren is ook beschikbaar in de blauwdruk of Live kopie bron:
 
    ![](do-not-localize/screen_shot_2018-03-22at134516.png)
 
@@ -478,6 +485,7 @@ Er zijn twee opties voor het voorvertonen van een pagina:
 >* Koppelingen in de inhoud zijn zichtbaar, maar niet toegankelijk in de bewerkingsmodus.
 >* Gebruik een van de voorvertoningsopties als u door de koppelingen wilt navigeren.
 >* Gebruik de [sneltoets](/help/sites-authoring/keyboard-shortcuts.md) `Ctrl-Shift-M` om te schakelen tussen de voorvertoning en de laatst geselecteerde modus.
+
 >
 
 
@@ -504,7 +512,7 @@ De optie **Weergeven als gepubliceerd** is beschikbaar in het menu [Pagina-infor
 
 ## Een pagina vergrendelen {#locking-a-page}
 
-Met AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
+AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
 
 Een pagina kan worden vergrendeld vanuit:
 
@@ -512,12 +520,13 @@ Een pagina kan worden vergrendeld vanuit:
 
    1. Selecteer de pagina in de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
    1. Selecteer het vergrendelingspictogram.
+
    ![screen_shot_2018-03-22at134928](assets/screen_shot_2018-03-22at134928.png)
 
 * **Pagina-editor**
 
    1. Selecteer het pictogram **Pagina-informatie** om het menu te openen.
-   1. Selecteer de optie Pagina **** vergrendelen.
+   1. Select the **Lock Page** option.
 
 Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt en wanneer u een vergrendelingssymbool bewerkt, wordt deze weergegeven op de werkbalk.
 
@@ -533,7 +542,7 @@ Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt e
 
 Het ontgrendelen van een pagina lijkt erg op het [vergrendelen van de pagina](#locking-a-page). Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
 
-In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en het pictogram Vergrendelen in de siteconsole wordt vervangen door een **pictogram Ontgrendelen** .
+In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en het pictogram Vergrendelen in de Sites-console wordt vervangen door een pictogram **Ontgrendelen**.
 
 ![screen_shot_2018-03-22at134942](assets/screen_shot_2018-03-22at134942.png)
 
@@ -578,6 +587,7 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u de bewerking ongedaan hebt gemaakt.
 >* U kunt maximaal 20 bewerkingen ongedaan maken (standaardinstelling).
 >* Gebruik ook [sneltoetsen](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
+
 >
 
 
