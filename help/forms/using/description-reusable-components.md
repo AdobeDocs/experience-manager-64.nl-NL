@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: d3facd17-ceb0-4799-8cd9-ff9e81e09793
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 6%
 
 ---
 
 
 # Beschrijving van herbruikbare onderdelen {#description-of-reusable-components}
 
-De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/integrating-html-ws-components-web.md) componenten die zijn geordend in een specifieke [mapstructuur](/help/forms/using/folder-structure.md) in CRX™. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van Vormen AEM teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
+De AEM Forms-werkruimte bestaat uit [herbruikbare](/help/forms/using/integrating-html-ws-components-web.md) onderdelen die zijn geordend in een specifieke [mapstructuur](/help/forms/using/folder-structure.md) in CRX™. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
 
 ## TaskList {#tasklist}
 
@@ -66,7 +69,7 @@ De werkruimte van AEM-formulieren bestaat uit [herbruikbare](/help/forms/using/i
 
 >[!NOTE]
 >
->Deze component kan onafhankelijk van de werkruimte van Vormen van AEM worden gebruikt, op voorwaarde dat u filterSelected gebeurtenis voor deze component van uw douanetoepassing teweegbrengt.
+>Deze component kan onafhankelijk van de werkruimte van AEM Forms worden gebruikt, op voorwaarde dat u filterSelected-gebeurtenis voor deze component activeert vanuit uw aangepaste toepassing.
 
 ## Taak {#task}
 
