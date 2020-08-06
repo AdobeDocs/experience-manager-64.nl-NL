@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 278195a6-3452-4966-9d56-022815cf6fb4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '933'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ Nadat u een alinea Downloaden op de pagina hebt gemaakt, kunt u een item naar de
 
 ### Films zoeken {#finding-movies}
 
-Dit tabblad bevat een lijst met films (bijvoorbeeld Flash-items) in de opslagplaats.
+Op dit tabblad worden films (bijvoorbeeld Flash-items) in de opslagplaats weergegeven.
 
 Nadat u een geschikte alinea (bijvoorbeeld Flash) op de pagina hebt gemaakt, kunt u een item naar de alinea slepen.
 
@@ -146,7 +149,7 @@ in de volgende zoekpatronen vindt u het patroon (en alle andere afbeeldingen die
 
 ## Referenties weergeven {#showing-references}
 
-Met AEM kunt u zien welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
+AEM kunt u bekijken welke pagina&#39;s zijn gekoppeld aan de pagina waaraan u momenteel werkt.
 
 Verwijzingen naar directe pagina&#39;s weergeven:
 
@@ -154,7 +157,7 @@ Verwijzingen naar directe pagina&#39;s weergeven:
 
    ![screen_shot_2012-02-16at83127pm](assets/screen_shot_2012-02-16at83127pm.png)
 
-1. **Verwijzingen** tonen selecteren... AEM opent het venster Verwijzingen en geeft aan welke pagina&#39;s naar de geselecteerde pagina verwijzen, inclusief de paden.
+1. Verwijzingen **tonen selecteren...** AEM opent het venster Verwijzingen en geeft aan welke pagina&#39;s naar de geselecteerde pagina verwijzen, inclusief de paden.
 
    ![screen_shot_2012-02-16at83311pm](assets/screen_shot_2012-02-16at83311pm.png)
 
