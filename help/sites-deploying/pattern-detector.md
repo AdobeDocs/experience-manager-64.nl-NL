@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8cdcfd3a-7003-4cce-97f4-da7a1a887d1b
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '522'
+ht-degree: 1%
 
 ---
 
@@ -19,16 +22,16 @@ source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
 
 ## Overzicht {#overview}
 
-Met deze functie kunt u bestaande AEM-instanties controleren op hun upgradbaarheid door patronen in gebruik te detecteren die:
+Met deze functie kunt u bestaande AEM controleren op hun upgradbaarheid door patronen in gebruik te detecteren die:
 
 1. Overtreed bepaalde regels en wordt uitgevoerd op gebieden die door de upgrade worden beïnvloed of overschreven
-1. Gebruik een AEM 6.x-functie of een API die niet achterwaarts compatibel is met AEM 6.4 en die na de upgrade mogelijk kan worden verbroken.
+1. Gebruik een AEM 6.x-functie of een API die niet achterwaarts compatibel is met AEM 6.4 en die na de upgrade mogelijk kan worden onderbroken.
 
 Dit zou kunnen dienen als een beoordeling van de ontwikkelingsinspanningen die gepaard gaan met de opwaardering tot AEM 6.4.
 
 ## Instellen {#how-to-set-up}
 
-De patroondetector wordt afzonderlijk vrijgegeven als [één pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) dat werkt aan AEM-bronversies van 6.1 tot 6.5 voor een AEM 6.5-upgrade. U kunt het programma installeren met [Package Manager](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
+De patroondetector wordt afzonderlijk vrijgegeven als [één pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq650/compatpack/pd-all-aem65) dat werkt aan elke bron AEM versies van 6.1 tot 6.5 voor AEM 6.5-upgrade. U kunt het programma installeren met [Package Manager](https://helpx.adobe.com/experience-manager/6-5/sites/administering/using/package-manager.html).
 
 ## Het gebruik {#how-to-use}
 
@@ -45,7 +48,7 @@ U kunt verschillende methoden gebruiken om de uitvoer van de patroondetector te 
 
 * **Via de Felix Inventory Console:**
 
-1. Ga naar de AEM-webconsole door naar: https://<i></i>serveradres:serverpoort/systeem/console/configMgr
+1. Ga naar de AEM webconsole door naar: https://<i></i>serveradres:serverpoort/systeem/console/configMgr
 1. Selecteer **Status - Patroondetector** , zoals in de onderstaande afbeelding wordt getoond:
 
    ![screenshot-2018-2-5pattern-detector](assets/screenshot-2018-2-5pattern-detector.png)
