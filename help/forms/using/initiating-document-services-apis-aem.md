@@ -1,8 +1,8 @@
 ---
-title: 'Documentservices-API''s starten vanuit de AEM-workflow '
-seo-title: 'Documentservices-API''s starten vanuit de AEM-workflow '
-description: Leer hoe u AEM-documentservices oproept op de DDX of de geleverde invoer. Zie ook hoe u PDF naar PDF/A kunt converteren
-seo-description: Leer hoe u AEM-documentservices oproept op de DDX of de geleverde invoer. Zie ook hoe u PDF naar PDF/A kunt converteren
+title: 'Documentservices-API''s starten vanuit AEM workflow '
+seo-title: 'Documentservices-API''s starten vanuit AEM workflow '
+description: Leer hoe u AEM documentservices oproept op de DDX of de geleverde invoer. Zie ook hoe u PDF naar PDF/A kunt converteren
+seo-description: Leer hoe u AEM documentservices oproept op de DDX of de geleverde invoer. Zie ook hoe u PDF naar PDF/A kunt converteren
 uuid: aacec2df-1ad6-4ff2-a99d-ef206efcdc09
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,15 +10,18 @@ topic-tags: document_services
 discoiquuid: 8b85bdc7-3864-49c9-81b0-cf15b8e986d9
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '1192'
+ht-degree: 0%
 
 ---
 
 
-# Documentservices-API&#39;s starten vanuit de AEM-workflow {#initiate-document-services-apis-from-aem-workflow}
+# Documentservices-API&#39;s starten vanuit AEM workflow  {#initiate-document-services-apis-from-aem-workflow}
 
 ## Assembler {#assembler}
 
-AEM Forms verstrekt douanewerkschema&#39;s om de volgende dienst APIs van de Assembler aan te halen:
+AEM Forms biedt aangepaste workflows om de volgende API&#39;s van de Assembler-service aan te roepen:
 
 * **aanroepen**: Roept bewerkingen aan die in de invoer-DDX zijn opgegeven bij opgegeven invoer.
 * **toPDFA**: Hiermee wordt het invoer-PDF-document geconverteerd naar PDF/A-document.
@@ -27,7 +30,7 @@ AEM Forms verstrekt douanewerkschema&#39;s om de volgende dienst APIs van de Ass
 
 De **Invoke DDX** -workflow roept de `Invoke` Assembler-service-API aan, waarmee u documenten kunt samenstellen of demonteren, watermerken aan een PDF kunt toevoegen enzovoort.
 
-1. Sleep de stap DX **[!UICONTROL -workflow voor]** aanroepen onder het tabblad Formulierwerkstroom in Sidetrap.
+1. Sleep de **[!UICONTROL Invoke DDX]** workflowstap onder het tabblad Forms Workflow in Sidetrap.
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
 1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, omgevingsopties en uitvoerdocumenten en klik op **[!UICONTROL OK]**.
 
@@ -67,7 +70,7 @@ Afhankelijk van de invoer-DDX kan de API voor aanroepen meerdere uitvoerdocument
 
 Met de workflowstap Converteren naar PDF/A wordt de API voor de `toPDFA` Assembler-service aangeroepen. Deze wordt gebruikt voor het converteren van PDF-documenten naar PDF/A-compatibele documenten.
 
-1. Sleep de stap voor de **[!UICONTROL convertToPDFA]** -workflow onder het tabblad Formulierwerkstroom in Sidetrap.
+1. Sleep de **[!UICONTROL ConvertToPDFA]** workflowstap onder het tabblad Forms Workflow in Sidetrap.
 
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
 1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, conversieopties en uitvoerdocumenten en klik op **[!UICONTROL OK]**.
@@ -91,7 +94,7 @@ Met conversieopties kunt u opties opgeven waarmee het conversieproces van PDF/A 
 * *Conversie controleren* : Hiermee wordt opgegeven of het geconverteerde PDF/A-document na conversie moet worden gecontroleerd op compatibiliteit met PDF/A.
 * *Logboekniveau* taak: Hiermee geeft u het logniveau op dat moet worden gebruikt voor het verwerken van logbestanden.
 
-* *Schema* voor extensie metagegevens: Hier geeft u het pad op naar het extensieschema voor metagegevens dat moet worden gebruikt voor XMP-eigenschappen in de metagegevens van het PDF-document.
+* *Schema* voor extensie metagegevens: Hiermee geeft u het pad op naar het extensieschema voor metagegevens dat moet worden gebruikt voor XMP eigenschappen in de metagegevens van het PDF-document.
 
 #### Documenten uitvoeren {#output-documents-1}
 
@@ -100,13 +103,13 @@ Op het tabblad Uitvoerdocumenten kunt u het doel voor de uitvoerdocumenten opgev
 * *PDFA-document*: Hier geeft u de locatie op waar het geconverteerde PDF/A-document wordt opgeslagen. U kunt het laaddocument overschrijven of opslaan in de payload-map.
 * *Conversielogboek*: Hier geeft u de locatie op waar de conversielogboeken worden opgeslagen. U kunt het document overschrijven of opslaan in de map voor het laden.
 
-## Formulieren {#forms}
+## Forms {#forms}
 
-De werkstroom PDF-formulier renderen is een omslag rondom de API van de Forms-service om een PDF-formulier te maken met een XDP-sjabloon en gegevens-xml. `renderPDFForm`
+De workflow PDF-formulier renderen is een omslag rondom de API van de `renderPDFForm` Forms-service om een PDF-formulier te maken met een XDP-sjabloon en data-xml.
 
 ### Werkstroom PDF-formulier renderen {#render-pdf-form-workflow}
 
-1. Sleep de werkstroomstap PDF-formulier renderen onder het tabblad Formulierwerkstroom in Sidetrap.
+1. Sleep de werkstroomstap PDF-formulier renderen onder het tabblad Forms Workflow in Sidetrap.
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
 1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, uitvoerdocumenten en aanvullende parameters en klik op **[!UICONTROL OK]**.
 
@@ -125,7 +128,7 @@ De werkstroom PDF-formulier renderen is een omslag rondom de API van de Forms-se
 * *Hoofdmap* inhoud: Hiermee geeft u het pad op naar de map in de opslagplaats waar fragmenten of afbeeldingen worden opgeslagen die worden gebruikt in de invoer-XDP-sjabloon.
 * *URL* verzenden: Hier geeft u de standaard verzendURL op voor het gegenereerde PDF-formulier.
 * *Landinstelling*: Hier geeft u de standaardlandinstelling voor het gegenereerde PDF-formulier op.
-* *Acrobat-versie*: Hiermee geeft u de doelversie van Acrobat op voor het gegenereerde PDF-formulier.
+* *Acrobat-versie*: Hiermee geeft u de beoogde Acrobat-versie op voor het gegenereerde PDF-formulier.
 * *Gelabelde PDF*: Hiermee geeft u aan of de gegenereerde PDF toegankelijk moet zijn.
 * *XCI-document*: Hiermee geeft u het pad naar het XCI-bestand op.
 
@@ -133,9 +136,9 @@ De werkstroom PDF-formulier renderen is een omslag rondom de API van de Forms-se
 
 De Generate niet Interactive PDF Workflow is een omslag rond de dienst API van de `generatePDFOutput` Output. Hiermee worden niet-interactieve PDF-documenten gegenereerd op basis van XDP-sjabloon en data-xml.
 
-### Niet-interactieve PDF-uitvoerworkflow genereren {#generate-non-interactive-pdf-output-workflow-nbsp}
+### Niet-interactieve PDF-uitvoerworkflow genereren   {#generate-non-interactive-pdf-output-workflow-nbsp}
 
-1. Sleep de werkstroom Niet-interactieve PDF-uitvoer genereren onder het tabblad Formulierwerkstroom in Sidetrap.
+1. Sleep de werkstroom Niet-interactieve PDF-uitvoer genereren onder het tabblad Forms Workflow in Sidetrap.
 1. Dubbelklik op de toegevoegde workflowstap om de component te bewerken.
 1. Configureer in het dialoogvenster Component bewerken invoerdocumenten, uitvoerdocumenten en aanvullende parameters en klik op **[!UICONTROL OK]**.
 
@@ -153,7 +156,7 @@ De Generate niet Interactive PDF Workflow is een omslag rond de dienst API van d
 
 * *Hoofdmap* inhoud: Hiermee geeft u het pad op naar de map in de opslagplaats waar fragmenten of afbeeldingen worden opgeslagen die worden gebruikt in de invoer-XDP-sjabloon.
 * *Landinstelling*: Hier geeft u de standaardlandinstelling voor het gegenereerde PDF-formulier op.
-* *Acrobat-versie*: Hiermee geeft u de doelversie van Acrobat op voor het gegenereerde PDF-formulier.
+* *Acrobat-versie*: Hiermee geeft u de beoogde Acrobat-versie op voor het gegenereerde PDF-formulier.
 * Gelijktijdige PDF: Hiermee geeft u aan of u de gegenereerde PDF wilt optimaliseren voor webweergave.
 * *Gelabelde PDF*: Hiermee geeft u aan of de gegenereerde PDF toegankelijk moet zijn.
 * *XCI-document*: Hiermee geeft u het pad naar het XCI-bestand op.
