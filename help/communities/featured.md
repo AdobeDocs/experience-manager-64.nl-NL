@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ee39435d-80f5-4758-ae01-1ea0d221b00b
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 1%
 
 ---
 
@@ -58,14 +61,18 @@ Selecteer de geplaatste `Featured Content` component die u wilt openen en select
 
 ### Het tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **[!UICONTROL Instellingen]** aan welke inhoud u wilt gebruiken:
+Geef op het **[!UICONTROL Settings]** tabblad aan welke inhoud u wilt gebruiken:
 
-* **[!UICONTROL Weergavenaam]** De titel voor de lijst met aanbevolen inhoud. Bijvoorbeeld `Featured Questions` of `Featured Ideas`. De standaardwaarde is `Featured Content` als deze leeg blijft.
+* **[!UICONTROL Display Name]**
+De titel voor de lijst met aanbevolen inhoud. Bijvoorbeeld 
+`Featured Questions` or `Featured Ideas`. De standaardwaarde is `Featured Content` als deze leeg blijft.
 
-* **[!UICONTROL Locatie van de aanbevolen inhoud]**
+* **[!UICONTROL Location of the Featured Content]**
+
    *(Vereist)* Blader naar de pagina die de inhoud bevat die mogelijk aanwezig is (onderdelen van die pagina moeten zo zijn geconfigureerd dat aanbevolen inhoud is toegestaan). Bijvoorbeeld, `/content/sites/engage/en/forum`
 
-* **[!UICONTROL Weergavelimiet]** Het maximum aantal aanbevolen inhoud dat wordt weergegeven. De standaardwaarde is 5.
+* **[!UICONTROL Display Limit]**
+Het maximumaantal aanbevolen inhoud dat kan worden weergegeven. De standaardwaarde is 5.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
