@@ -12,6 +12,9 @@ discoiquuid: 4c4a7bc4-3fb1-44c1-823f-d789790f5e06
 legacypath: /content/docs/en/aem/6-0/develop/mobile/groupfilters
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '819'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Maak een apparaatgroepfilter om een set vereisten voor apparaatmogelijkheden te definiëren. Maak zoveel filters als u nodig hebt om de benodigde groepen apparaatmogelijkheden als doel in te stellen.
 
@@ -107,7 +110,7 @@ Het `org.apache.commons.lang.math` pakket biedt de `NumberUtils` klasse.
 
 >[!NOTE]
 >
->Zorg ervoor dat de WURFL™-database die naar AEM wordt geïmplementeerd de mogelijkheden bevat die u als filtercriteria gebruikt. (Zie [Apparaatdetectie](/help/sites-developing/mobile.md#server-side-device-detection).)
+>Zorg ervoor dat de WURFL™-database die wordt geïmplementeerd voor AEM de mogelijkheden bevat die u als filtercriteria gebruikt. (Zie [Apparaatdetectie](/help/sites-developing/mobile.md#server-side-device-detection).)
 
 ### Voorbeeldfilter voor schermgrootte {#example-filter-for-screen-size}
 
@@ -186,11 +189,11 @@ De volgende POM-code is handig als u Maven gebruikt om uw toepassingen te maken.
 
 * `org.apache.felix.scr.annotations.jar`: Verstrekt de Annotaties van de Component en van de Dienst.
 
-De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen in de openbare opslagplaats van Adobe.
+De interfaces DeviceGroup en DeviceGroupFilter zijn inbegrepen in de Communicatie van Dag 5 van de mobiele API bundel van WCM. De Felix-annotaties zijn opgenomen in de bundel Apache Felix Declarative Services. U kunt dit JAR-bestand opvragen bij de openbare Adobe-opslagplaats.
 
 Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die in de meest recente versie van AEM staat. Gebruik Adobe Web Console ([http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)) om ervoor te zorgen dat dit de bundelversie is die in uw omgeving wordt geïmplementeerd.
 
-**** POM: (Uw POM gebruikt een andere groupId en versie.)
+**POM:** (Uw POM gebruikt een andere groupId en versie.)
 
 ```xml
 <project xmlns="https://maven.apache.org/POM/4.0.0"
@@ -255,4 +258,4 @@ Op het moment van ontwerpen is 5.5.2 de versie van de WCM Mobile API-bundel die 
 </project>
 ```
 
-Voeg het profiel toe dat in de sectie [Verkrijgen van de plug](/help/sites-developing/vlt-mavenplugin.md) -in Inhoudspakket wordt geleverd aan het instellingenbestand van uw afbeelding om de openbare Adobe-opslagplaats te gebruiken.
+Voeg het profiel dat in de sectie [Verkrijgen van de Insteekmodule](/help/sites-developing/vlt-mavenplugin.md) voor het inhoudspakket is opgegeven toe aan het instellingenbestand dat u hebt toegewezen om de openbare opslagplaats voor Adobe te gebruiken.
