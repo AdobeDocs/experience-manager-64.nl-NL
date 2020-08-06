@@ -44,10 +44,10 @@ De service PDF genereren gebruikt native toepassingen om de volgende bestandsind
 
    >[!NOTE]
    >
-   >Photoshop CS3 en CS4 worden niet ondersteund omdat deze geen ondersteuning bieden voor Windows Server 2003 of Windows Server 2008.
+   >Photoshop CS3 en CS4 worden niet ondersteund omdat ze Windows Server 2003 of Windows Server 2008 niet ondersteunen.
 
-* Adobe FrameMaker® 7.2 en 8 om FM (Vensters slechts) om te zetten
-* Adobe PageMaker® 7.0 om PMD, PM6, P65, en PM (Vensters slechts) om te zetten
+* Adobe FrameMaker® 7.2 en 8 voor conversie van FM (alleen Windows)
+* Adobe PageMaker® 7.0 om PMD, PM6, P65 en PM om te zetten (alleen Windows)
 * Native indelingen die worden ondersteund door toepassingen van derden (hiervoor moet specifieke instellingsbestanden voor de toepassing worden ontwikkeld) (alleen Windows)
 
 De service PDF genereren converteert de volgende op standaarden gebaseerde bestandsindelingen naar PDF.
@@ -70,11 +70,11 @@ De service PDF genereren converteert PDF naar de volgende bestandsindelingen (al
 
 Voor de service PDF genereren moet u de volgende beheertaken uitvoeren:
 
-* Vereiste native toepassingen installeren op de computer die als host fungeert voor AEM Forms
+* De vereiste native toepassingen installeren op de computer die als host fungeert voor AEM Forms
 * Installeer Adobe Acrobat Professional of Acrobat Pro Extended 9.2 op de computer die als host fungeert voor AEM Forms
 * Instellingstaken na de installatie uitvoeren
 
-Deze taken worden beschreven in AEM-formulieren installeren en implementeren met JBoss Turnkey.
+Deze taken worden beschreven in AEM installeren en implementeren met JBoss Turnkey.
 
 U kunt deze taken uitvoeren met de service PDF genereren:
 
@@ -169,6 +169,7 @@ Converteer een Microsoft Word-document naar een PDF-document met de Generate PDF
    * Een `java.lang.String` object dat de naam bevat van de beveiligingsinstellingen die moeten worden gebruikt.
    * Een optioneel `com.adobe.idp.Document` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
    * Een optioneel `com.adobe.idp.Document` object dat metagegevens bevat die op het PDF-document moeten worden toegepast.
+
    De `createPDF2` methode retourneert een `CreatePDFResult` object dat het nieuwe PDF-document en logboekgegevens bevat. Het logbestand bevat doorgaans fout- of waarschuwingsberichten die worden gegenereerd door de conversieaanvraag.
 
 1. Haal de resultaten op.
@@ -177,6 +178,7 @@ Converteer een Microsoft Word-document naar een PDF-document met de Generate PDF
 
    * Roep de `CreatePDFResult` methode van het `getCreatedDocument` object aan, die een `com.adobe.idp.Document` object retourneert.
    * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het PDF-document te extraheren van het object dat u in de vorige stap hebt gemaakt.
+
    Als u de `createPDF2` methode hebt gebruikt om het logdocument op te halen (niet van toepassing op HTML-conversies), voert u de volgende handelingen uit:
 
    * Roep de `CreatePDFResult` methode van het `getLogDocument` object aan. Hiermee wordt een `com.adobe.idp.Document` object geretourneerd.
@@ -208,12 +210,12 @@ Converteer een Microsoft Word-document naar een PDF-document met de API (webserv
 1. Maak een Generate PDF client.
 
    * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -365,12 +367,12 @@ HTML-inhoud converteren naar een PDF-document met de functie PDF API genereren (
 1. Maak een Generate PDF client.
 
    * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -478,9 +480,10 @@ Een PDF-document converteren naar een RTF-bestand met de Generate PDF API (Java)
 
    * Een `com.adobe.idp.Document` object dat staat voor het PDF-bestand dat moet worden geconverteerd.
    * Een `java.lang.String` object dat de naam bevat van het bestand dat moet worden omgezet.
-   * Een `java.lang.String` object met de naam van de Adobe PDF-instellingen.
+   * Een `java.lang.String` object dat de naam van de Adobe PDF-instellingen bevat.
    * Een `ConvertPDFFormatType` object dat het doelbestandstype voor de conversie opgeeft.
    * Een optioneel `com.adobe.idp.Document` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
+
    De `exportPDF2` methode retourneert een `ExportPDFResult` object dat het omgezette bestand bevat.
 
 1. Converteer het PDF-document.
@@ -515,12 +518,12 @@ Een PDF-document converteren naar een RTF-bestand met de API (webservice) voor g
 1. Maak een Generate PDFf client.
 
    * Maak een `GeneratePDFServiceClient` object met de standaardconstructor.
-   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `GeneratePDFServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/GeneratePDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `GeneratePDFServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `GeneratePDFServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -540,7 +543,7 @@ Een PDF-document converteren naar een RTF-bestand met de API (webservice) voor g
    * Een `BLOB` object dat staat voor het PDF-bestand dat moet worden geconverteerd.
    * Een tekenreeks die de padnaam bevat van het bestand dat moet worden omgezet.
    * Een `java.lang.String` object dat de bestandslocatie opgeeft.
-   * Een tekenreeksobject dat het doelbestandstype voor de conversie opgeeft. Geef `RTF`op.
+   * Een tekenreeksobject dat het doelbestandstype voor de conversie opgeeft. Geef het volgende op `RTF`.
    * Een optioneel `BLOB` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document.
    * Een uitvoerparameter van type `BLOB` die door de `ExportPDF2` methode wordt bevolkt. De `ExportPDF2` methode vult dit object met het omgezette document. (Deze parameterwaarde is alleen vereist voor aanroepen van een webservice.)
 
@@ -571,9 +574,9 @@ In dit gedeelte wordt ook het volgende uitgelegd:
 
 ### Componentinteracties {#component-interactions}
 
-De service PDF genereren converteert oorspronkelijke bestandsindelingen door de toepassing aan te roepen die is gekoppeld aan de bestandsindeling en vervolgens te communiceren met de toepassing om het document af te drukken met de standaardprinter. De standaardprinter moet zijn ingesteld als Adobe PDF-printer.
+De service PDF genereren converteert oorspronkelijke bestandsindelingen door de toepassing aan te roepen die is gekoppeld aan de bestandsindeling en vervolgens te communiceren met de toepassing om het document af te drukken met de standaardprinter. De standaardprinter moet zijn ingesteld als de Adobe PDF-printer.
 
-In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die bij de ondersteuning van native toepassingen betrokken zijn. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
+In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die zijn betrokken bij native toepassingsondersteuning. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
 
 Interacties van componenten voor conversie van native bestanden
 
@@ -614,7 +617,7 @@ In deze tabel wordt het type informatie weergegeven dat wordt gebruikt bij het a
   </tr> 
   <tr> 
    <td><p>Script </p></td> 
-   <td><p>Hiermee geeft u interacties op tussen de service PDF genereren en een native toepassing. Dergelijke interacties leiden de toepassing doorgaans om een bestand af te drukken naar het Adobe PDF-stuurprogramma. </p><p>Het script bevat instructies die de oorspronkelijke toepassing de opdracht geven specifieke dialoogvensters te openen en die specifieke reacties bieden op velden en knoppen in die dialoogvensters. </p></td> 
+   <td><p>Hiermee geeft u interacties op tussen de service PDF genereren en een native toepassing. Dergelijke interacties leiden de toepassing gewoonlijk om een dossier aan de bestuurder van Adobe PDF te drukken. </p><p>Het script bevat instructies die de oorspronkelijke toepassing de opdracht geven specifieke dialoogvensters te openen en die specifieke reacties bieden op velden en knoppen in die dialoogvensters. </p></td> 
    <td><p>De service PDF genereren bevat scriptbestanden voor alle ondersteunde native toepassingen. U kunt deze bestanden wijzigen met een XML-bewerkingstoepassing.</p><p>Als u ondersteuning voor een nieuwe native toepassing wilt toevoegen, moet u een nieuw scriptbestand maken. (Zie Een XML-bestand met een extra dialoogvenster <a href="converting-file-formats-pdf.md#creating-or-modifying-an-additional-dialog-xml-file-for-a-native-application">maken of wijzigen voor een native toepassing</a>.) </p></td> 
   </tr> 
   <tr> 
@@ -721,8 +724,8 @@ Als u aan dialoog of manuscriptdossiers van XML van plan bent te werken, zou u d
 
 Het dialoogvenster- en scriptbestand bevinden zich in het bestand appmondata.jar. Voordat u een van deze bestanden kunt wijzigen of nieuwe script- of dialoogbestanden kunt toevoegen, moet u het pakket van dit JAR-bestand opheffen. Stel dat u ondersteuning wilt toevoegen voor de toepassing EditPlus. U maakt twee XML-bestanden met de namen appmon.editplus.script.en_US.xml en appmon.editplus.script.adding.nl_NL.xml. Deze XML-scripts moeten op twee locaties aan het bestand adobe-appmondata.jar worden toegevoegd, zoals hieronder wordt aangegeven:
 
-* adobe-livecycle-native-jreliëf-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Het bestand adobe-livecycle-native-jreliëf-x86_win32.ear bevindt zich in de exportmap op *[AEM forms install directory]\*configurationManager. (Als AEM Forms worden geïmplementeerd op een andere J2EE-toepassingsserver, vervangt u het bestand adobe-livecycle-native-jreliëf-x86_win32.ear door het EAR-bestand dat overeenkomt met uw J2EE-toepassingsserver.)
-* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (het bestand adobe-appmondata.jar bevindt zich in het bestand adobe-generatepdf-dsc.jar). Het bestand adobe-generatepdf-dsc.jar staat in de installatiemap *[\Implementatie van de installatiemap voor]* AEM-formulieren.
+* adobe-livecycle-native-jreliëf-x86_win32.ear > adobe-Native2PDFSvc.war\WEB-INF\lib > adobe-native.jar > Native2PDFSvc-native.jar\bin > adobe-appmondata.jar\com\adobe\appmon. Het bestand adobe-livecycle-native-jreliëf-x86_win32.ear bevindt zich in de exportmap op *[AEM installatiemap]voor formulieren\*configurationManager. (Als AEM Forms wordt geïmplementeerd op een andere J2EE-toepassingsserver, vervangt u het bestand adobe-livecycle-native-jreliëf-x86_win32.ear door het EAR-bestand dat overeenkomt met uw J2EE-toepassingsserver.)
+* adobe-generatepdf-dsc.jar > adobe-appmondata.jar\com\adobe\appmon (het bestand adobe-appmondata.jar bevindt zich in het bestand adobe-generatepdf-dsc.jar). Het bestand adobe-generatepdf-dsc.jar staat in de installatiemap *[\Implementatie van de]* AEM formulieren.
 
 Nadat u deze XML-bestanden aan het bestand adobe-appmondata.jar hebt toegevoegd, moet u de component GeneratePDF opnieuw gebruiken. Voer de volgende taken uit om XML-bestanden voor dialoog en script toe te voegen aan het bestand adobe-appmondata.jar:
 
@@ -872,7 +875,7 @@ In deze procedure wordt uitgelegd hoe u het configuratiebestand van de service P
 
 **Het configuratiebestand van de PDF-service genereren bijwerken**
 
-1. Selecteer **Home** > **Services** > **Adobe PDF Generator** > **Configuration Files**, en selecteer vervolgens **Export Configuration**.
+1. Selecteer **Home** > **Services** > **Adobe PDF Generator** > **Configuration Files** en selecteer vervolgens **Export Configuration**.
 1. Wijzig zo nodig het `filetype-settings` element in het bestand native2pdfconfig.xml.
 1. Selecteer **Home** > **Services** > **Adobe PDF Generator** >**Configuration Files** en selecteer vervolgens **Import Configuration**. De configuratiegegevens worden geïmporteerd in de service PDF genereren en vervangen de vorige instellingen.
 
@@ -934,7 +937,7 @@ Nadat u de nieuwe omgevingsvariabele hebt gemaakt, moet u de server opnieuw opst
 
 #### XML-bestanden {#xml-files}
 
-AEM Forms bevatten voorbeeld-XML-bestanden die ervoor zorgen dat de dienst PDF genereren Kladblok gebruikt om bestanden met de bestandsnaamextensie .txt te verwerken. Deze code is opgenomen in deze sectie. Daarnaast moet u de andere wijzigingen aanbrengen die in deze sectie worden beschreven.
+AEM Forms bevat voorbeeld-XML-bestanden die ervoor zorgen dat de service PDF genereren Kladblok gebruikt om bestanden met de bestandsnaamextensie .txt te verwerken. Deze code is opgenomen in deze sectie. Daarnaast moet u de andere wijzigingen aanbrengen die in deze sectie worden beschreven.
 
 #### XML-bestand van extra dialoogvenster {#additional-dialog-xml-file}
 
