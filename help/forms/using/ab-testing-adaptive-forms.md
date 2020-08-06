@@ -1,8 +1,8 @@
 ---
 title: A/B-test voor adaptieve formulieren maken en beheren
 seo-title: A/B-test voor adaptieve formulieren maken en beheren
-description: AEM Forms is geïntegreerd met Adobe Target waarmee A/B-tests voor adaptieve formulieren kunnen worden uitgevoerd om de gebruikerservaring te verbeteren en de conversiesnelheden te verbeteren.
-seo-description: AEM Forms is geïntegreerd met Adobe Target waarmee A/B-tests voor adaptieve formulieren kunnen worden uitgevoerd om de gebruikerservaring te verbeteren en de conversiesnelheden te verbeteren.
+description: AEM Forms integreert met Adobe Target, waardoor A/B-tests kunnen worden uitgevoerd voor adaptieve formulieren om de ervaring van klanten te verbeteren en de conversiesnelheden te verbeteren.
+seo-description: AEM Forms integreert met Adobe Target, waardoor A/B-tests kunnen worden uitgevoerd voor adaptieve formulieren om de ervaring van klanten te verbeteren en de conversiesnelheden te verbeteren.
 uuid: c41aea04-f4d9-41b9-b1a8-df2bb710354c
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1581'
+ht-degree: 0%
 
 ---
 
@@ -18,27 +21,27 @@ source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
 
 ## Overzicht {#overview-br}
 
-Uw klanten zullen waarschijnlijk een formulier verlaten als de ervaring die het biedt, niet aantrekkelijk is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek evenals uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omrekeningskoers verhoogt. Adobe Experience Manager Forms houdt de sleutel voor dit probleem in.
+Uw klanten zullen waarschijnlijk een formulier verlaten als de ervaring die het biedt, niet aantrekkelijk is. Hoewel het voor de klanten frustrerend is, kan het het steunvolume en de kosten voor uw organisatie ook herstellen. Het is kritiek evenals uitdagend om de juiste klantenervaring te identificeren en te verstrekken die de omrekeningskoers verhoogt. Adobe Experience Manager Forms heeft de sleutel tot dit probleem.
 
-AEM Forms integreert met Adobe Target, een Adobe Marketing Cloud-oplossing, om persoonlijke en boeiende ervaringen van klanten via meerdere digitale kanalen te bieden. Een van de belangrijkste mogelijkheden van Target is A/B-tests waarmee u snel gelijktijdige A/B-tests kunt instellen, relevante inhoud voor de beoogde gebruikers kunt presenteren en de ervaring kunt identificeren die een betere conversiesnelheid mogelijk maakt.
+AEM Forms integreert met Adobe Target, een Adobe Marketing Cloud-oplossing, om persoonlijke en aantrekkelijke klantervaringen op verschillende digitale kanalen te bieden. Een van de belangrijkste mogelijkheden van Target is A/B-tests waarmee u snel gelijktijdige A/B-tests kunt instellen, relevante inhoud voor de beoogde gebruikers kunt presenteren en de ervaring kunt identificeren die een betere conversiesnelheid mogelijk maakt.
 
 Met AEM Forms kunt u A/B-tests instellen en uitvoeren op adaptieve formulieren in real-time. Het biedt ook offline en aanpasbare rapportagemogelijkheden om de prestaties in real-time van uw formulierervaringen te visualiseren en het systeem te identificeren dat de betrokkenheid en conversie van gebruikers maximaliseert.
 
-## Doel instellen en integreren in AEM-formulieren {#set-up-and-integrate-target-in-aem-forms}
+## Doel instellen en integreren in AEM Forms {#set-up-and-integrate-target-in-aem-forms}
 
-Voordat u A/B-tests gaat maken en analyseren op adaptieve formulieren, moet u de doelserver instellen en integreren in AEM-formulieren.
+Voordat u A/B-tests gaat maken en analyseren op adaptieve formulieren, moet u de doelserver instellen en integreren in AEM Forms.
 
 ### Doel instellen {#set-up-target}
 
-Als u AEM wilt integreren met Target, moet u zorgen dat u een geldig Adobe Target-account hebt. Wanneer u zich bij Adobe Target registreert, ontvangt u een clientcode. U hebt de clientcode, de e-mail die aan het Target-account is gekoppeld en het wachtwoord nodig om verbinding te maken met AEM met Target.
+Zorg ervoor dat u een geldig Adobe Target-account hebt om AEM met Target te integreren. Wanneer u zich bij Adobe Target registreert, ontvangt u een clientcode. U hebt de clientcode, de e-mail die aan de Target-account is gekoppeld en het wachtwoord nodig om verbinding te maken AEM met Target.
 
-De clientcode identificeert de Adobe Target-klantaccount en wordt gebruikt als een subdomein in de URL wanneer de Adobe Target-server wordt aangeroepen. Voordat u verdergaat, moet u ervoor zorgen dat u zich op [https://testandtarget.omniture.com/](https://testandtarget.omniture.com/)kunt aanmelden.
+De clientcode identificeert de Adobe Target-klantenaccount en wordt gebruikt als een subdomein in de URL wanneer de Adobe Target-server wordt aangeroepen. Voordat u verdergaat, moet u ervoor zorgen dat u zich op [https://testandtarget.omniture.com/](https://testandtarget.omniture.com/)kunt aanmelden.
 
-### Doel integreren in AEM-formulieren {#integrate-target-in-aem-forms}
+### Doel integreren in AEM Forms {#integrate-target-in-aem-forms}
 
-Voer de volgende stappen uit om een actieve doelserver te integreren met AEM-formulieren:
+Voer de volgende stappen uit om een actieve doelserver te integreren met AEM Forms:
 
-1. Ga op de AEM-server naar https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
+1. Ga op AEM server naar https://&lt;*hostname*>:&lt;*port*>/libs/cq/core/content/tools/cloudservices.html.
 1. Klik in de sectie **Adobe Target** op Configuraties **** tonen en vervolgens op het pictogram **+** om een nieuwe configuratie toe te voegen.
 
    Als u doel voor het eerst vormt, klik nu **** vormen.
@@ -47,24 +50,24 @@ Voer de volgende stappen uit om een actieve doelserver te integreren met AEM-for
 1. Klik op **Maken**. Het dialoogvenster Component bewerken wordt geopend.
 1. Geef de gegevens van uw doelaccount op, zoals clientcode, e-mail en wachtwoord.
 1. Selecteer **Rest** in de vervolgkeuzelijst Type API.
-1. Klik op **Verbinding maken met Adobe Target** om de verbinding met Target te initialiseren. Als de verbinding succesvol is, wordt het bericht Verbinding succesvol getoond. Klik op **OK** in het bericht en vervolgens op **OK** in het dialoogvenster. De doelaccount is geconfigureerd.
+1. Klik op **Verbinding maken met Adobe Target** om de verbinding met Doel te initialiseren. Als de verbinding succesvol is, wordt het bericht Verbinding succesvol getoond. Klik op **OK** in het bericht en vervolgens op **OK** in het dialoogvenster. De doelaccount is geconfigureerd.
 1. Maak een doelframework zoals beschreven in [Een framework](/help/sites-administering/target.md)toevoegen.
 1. Ga naar https://&lt;*hostname*>:&lt;*port*>/system/console/configMgr.
 1. Klik op **AEM Forms Target Configuration**.
 1. Selecteer een **doelframework**.
-1. Geef in het veld **Doel-URL&#39;s** alle URL&#39;s op waar A/B-tests worden uitgevoerd. Bijvoorbeeld https://&lt;*hostnaam*>:&lt;*poort*>/ voor AEM Forms-server op OSGi of https://&lt;*hostnaam*>:&lt;*poort*>/lc/ voor AEM Forms-server op JEE.
+1. Geef in het veld **Doel-URL&#39;s** alle URL&#39;s op waar A/B-tests worden uitgevoerd. Bijvoorbeeld https://&lt;*hostname*>:&lt;*port*>/ voor AEM Forms-server op OSGi of https://&lt;*hostname*>:&lt;*port*>/lc/ voor AEM Forms-server op JEE.
 
    Bedenk dat u een Doel URL voor publiceer instantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres, zult u zowel als Doel URLs moeten vormen - gebruikend hostname evenals het IP adres. Als u slechts één van URLs vormt, zal uw test A/B niet lopen voor klanten die van andere URL komen. Klik **+** om meerdere URL&#39;s op te geven.
 
 1. Click **Save**.
 
-Uw doelserver is geïntegreerd met AEM-formulieren. U kunt het testen A/B nu inschakelen als u een volledige licentie hebt om Adobe Target te gebruiken.
+Uw doelserver is geïntegreerd met AEM Forms. U kunt nu A/B-tests inschakelen als u een volledige licentie hebt om Adobe Target te gebruiken.
 
-Als u een volledige licentie hebt om Adobe Target te gebruiken, start u de server met de volgende parameters nadat u Target met AEM Forms hebt geïntegreerd:
+Als u een volledige licentie hebt om Adobe Target te gebruiken, start u de server met de volgende parameters nadat u Target hebt geïntegreerd met AEM Forms:
 
 `parameter -Dabtesting.enabled=true java -Xmx2048m -XX:MaxPermSize=512M -jar -Dabtesting.enabled=true`
 
-Als de instantie AEM op JBoss loopt, begonnen als dienst van turnkey, in `jboss\bin\standalone.conf.bat` dossier, add-Dabtesting.enabled=true parameter in de volgende ingang:
+Als de AEM-instantie op JBoss wordt uitgevoerd, is deze als een service van key, in `jboss\bin\standalone.conf.bat` file, add-Dabtesting.enabled=true parameter in de volgende vermelding:
 
 `set "JAVA_OPTS=%JAVA_OPTS% -Dadobeidp.serverName=server1 -Dfile.encoding=utf8 -Djava.net.preferIPv4Stack=true -Dabtesting.enabled=true"`
 
@@ -75,14 +78,14 @@ Naast de jreliëfserver kunt u ook het jvm-argument Dabtesting.enabled=true toev
 >Als u gevormde Doel URLs later bijwerkt, zorg ervoor dat u om het even welke lopende tests A/B bijwerkt zodat zij aan huidige URLs richten. Voor informatie over het bijwerken van A/B tests, zie [Update A/B test](/help/forms/using/ab-testing-adaptive-forms.md#p-update-a-b-test-p).
 
 
-## Soorten publiek maken in AEM {#create-audiences-within-aem}
+## Soorten publiek maken binnen AEM {#create-audiences-within-aem}
 
-Met AEM kunt u een publiek maken en dit gebruiken voor een A/B-test. Het publiek dat u in AEM maakt, is beschikbaar in AEM Forms. Voer de volgende stappen uit om een publiek te maken in AEM:
+Met AEM kunt u een publiek maken en dit gebruiken voor een A/B-test. Het publiek dat u binnen AEM maakt, is beschikbaar in AEM Forms. Voer de volgende stappen uit om een publiek te maken binnen AEM:
 
 1. Tik in de ontwerpversie op **Adobe Experience Manager** > **Persoonlijke** waarden > **Soorten publiek**.
 
 1. Tik op de pagina Soorten publiek op **Publiek maken > Doelpubliek** maken.
-1. Selecteer een doelconfiguratie in het dialoogvenster Adobe Target Configuration en klik op **OK**.
+1. Selecteer een doelconfiguratie in het dialoogvenster Adobe Target-configuratie en klik op **OK**.
 1. Maak regels op de pagina Nieuw publiek maken. Met regels kunt u het publiek indelen. U wilt bijvoorbeeld soorten publiek indelen op basis van het besturingssysteem. Uw publiek A komt van Vensters, en publiek B komt van Linux.
 
    * Als u een publiek wilt categoriseren op basis van Windows, selecteert u in Regel 1 het **kenmerk type van het besturingssysteem** . Selecteer **Windows** in het vervolgkeuzemenu Bij.
@@ -102,7 +105,7 @@ Voer de volgende stappen uit om een A/B-test voor een adaptief formulier te make
 1. Klik op het gereedschap **Selectie** op de werkbalk en selecteer het aangepaste formulier.
 1. Klik op **Meer** op de werkbalk en selecteer **A/B-tests** configureren. De Configure A/B testende pagina opent.
 
-   [ Pagina met testconfiguratie ![A/B voor adaptieve formulieren](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
+   [ ![A/B testconfiguratiepagina voor adaptieve formulieren](assets/ab-test-configure.png)](assets/ab-test-configure-1.png)
 
 1. Geef een naam **voor de** activiteit op voor de A/B-test.
 
@@ -121,7 +124,7 @@ Voer de volgende stappen uit om een A/B-test voor een adaptief formulier te make
    * Validaties (zowel client als server)
    * Thema voor ervaring B. (U kunt een ander thema selecteren voor ervaring B)
 
-1. Ga naar de interface Formulieren en documenten, selecteer het aangepaste formulier, klik op **Meer** en selecteer **A/B-tests** starten.
+1. Ga naar de gebruikersinterface van Forms en Documenten, selecteer het adaptieve formulier, klik op **Meer** en selecteer **A/B-tests** starten.
 
 De A/B-test wordt nu uitgevoerd en het opgegeven publiek wordt op willekeurige wijze aangeboden op basis van de opgegeven distributie.
 
@@ -129,7 +132,7 @@ De A/B-test wordt nu uitgevoerd en het opgegeven publiek wordt op willekeurige w
 
 U kunt het publiek bijwerken en verspreidingen van een lopende test A/B ervaren. Daartoe:
 
-1. Navigeer in de gebruikersinterface Formulieren en documenten naar de map met het adaptieve formulier waarop de A/B-test wordt uitgevoerd.
+1. Navigeer in de gebruikersinterface van Forms en documenten naar de map met het adaptieve formulier waarop de A/B-test wordt uitgevoerd.
 1. Selecteer het adaptieve formulier.
 1. Klik op **Meer** en selecteer vervolgens **A/B-tests** bewerken. De testpagina A/B bijwerken wordt geopend.
 
@@ -142,7 +145,7 @@ Zodra u de A/B test hebt toegestaan om voor de gewenste periode te lopen, kunt u
 
 1. Selecteer het aangepaste formulier, klik op **Meer** en klik vervolgens op **Testrapport** A/B. Het rapport wordt weergegeven.
 
-   [ Testrapport ![A/B](assets/ab-test-report.png)](assets/ab-test-report-1.png)
+   [ ![A/B Testrapport](assets/ab-test-report.png)](assets/ab-test-report-1.png)
 
 1. Analyseer het rapport en controleer of u genoeg gegevenspunten hebt om één van de beter presterende ervaringen als winnaar te verklaren. U kunt ervoor kiezen om dezelfde A/B-test langer te blijven uitvoeren of een winnaar te declareren en de A/B-test te beëindigen.
 1. Als u een winnaar wilt declareren en de A/B-test wilt beëindigen, klikt u op de knop **Einde A/B-test** op het rapportagedashboard. In een dialoogvenster wordt u gevraagd een van de twee ervaringen als winnaar op te geven. Kies een winnaar en bevestig om de A/B-test te beëindigen.
