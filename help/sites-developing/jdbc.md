@@ -1,8 +1,8 @@
 ---
 title: Verbinding maken met SQL-databases
 seo-title: Verbinding maken met SQL-databases
-description: Open een externe SQL-database zodat uw AEM-toepassingen kunnen communiceren met de gegevens
-seo-description: Open een externe SQL-database zodat uw AEM-toepassingen kunnen communiceren met de gegevens
+description: Open een externe SQL-database zodat uw AEM toepassingen met de gegevens kunnen werken
+seo-description: Open een externe SQL-database zodat uw AEM toepassingen met de gegevens kunnen werken
 uuid: 0af0ed08-9487-4c37-87ce-049c9b4c1ea2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '968'
+ht-degree: 0%
 
 ---
 
@@ -84,7 +87,7 @@ Met kennis van de broncode kunt u bepalen welke oplossing u wilt gebruiken. U ku
 
 Met de volgende koppelingen worden de downloadpagina&#39;s voor bepaalde populaire databaseproducten geopend:
 
-* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&id=11774)
+* [Microsoft SQL Server](https://www.microsoft.com/en-us/download/details.aspx?displaylang=en&amp;id=11774)
 * [Oracle](https://www.oracle.com/technetwork/database/features/jdbc/index-091264.html)
 * [IBM DB2](https://www-01.ibm.com/support/docview.wss?uid=swg27007053)
 
@@ -172,5 +175,5 @@ In het volgende voorbeeld verkrijgt JSP-code een instantie van de hsqldbds-gegev
 
 >[!NOTE]
 >
->Leer hoe te om een DataSourcePool in een bundel te injecteren OSGi, zie het [Injecteren van een Dienst DataSourcePool in een bundel](https://helpx.adobe.com/experience-manager/using/datasourcepool.html)van de Manager van de Ervaring OSGi van Adobe.
+>Leer hoe te om een DataSourcePool in een bundel te injecteren OSGi, zie het [Injecteren van een Dienst DataSourcePool in een bundel](https://helpx.adobe.com/experience-manager/using/datasourcepool.html)van Adobe Experience Manager OSGi.
 
