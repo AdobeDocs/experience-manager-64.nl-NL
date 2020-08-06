@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: de8d0e6d-827b-45fe-a538-d3fe1dec8427
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -67,7 +70,7 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de fu
 | **resourceType** | sociaal/journaal/componenten/hbs/zijbalk |
 |---|---|
 | [**inclusief **](scf.md#add-or-include-a-communities-component) | Nee |
-| [**clientllibs **](clientlibs.md) | cq.social.hbs.Journal_sidebar |
+| [**clientllibs **](clientlibs.md) | cq.social.hbs.journal_sidebar |
 | **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **eigenschappen** | zie [Blogfunctie](blog-feature.md) |
@@ -110,11 +113,11 @@ Zie [Primaire uitgever](deploy-communities.md#primary-publisher) voor meer infor
 
 ## Rijke media toestaan {#allowing-rich-media}
 
-Het AEM-platform blokkeert koppelingen van andere websites om XSS-aanvallen te voorkomen zoals beschreven in
+Het AEM platform blokkeert koppelingen van andere websites om XSS-aanvallen te voorkomen zoals beschreven in
 
-* [Beveiligen tegen XSS (Cross-Site Scripting)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
+* [Protect tegen XSS (Cross-Site Scripting)](../../help/sites-developing/security.md#protect-against-cross-site-scripting-xss)
 
-Vanaf AEM 6.2, zijn de wijzigingen die eerder manueel moeten worden gemaakt inbegrepen in het standaard antiSamy configuratiedossier.
+Vanaf AEM 6.2 worden de eerder vereiste wijzigingen die handmatig moeten worden aangebracht, opgenomen in het standaard AntiSamy-configuratiebestand.
 
 Rijke media wordt ingesloten in een blogartikel door het `Embed Media from External Sites` pictogram te selecteren:  ![chlimage_1-471](assets/chlimage_1-471.png)
 
