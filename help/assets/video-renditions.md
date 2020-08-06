@@ -4,27 +4,30 @@ description: Video-uitvoeringen
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
 
 # Video-uitvoeringen {#video-renditions}
 
-Met Adobe Experience Manager (AEM) kunt u video-uitvoeringen genereren voor video-elementen van verschillende indelingen, zoals OGG, FLV enzovoort.
+Met Adobe Experience Manager (AEM)-elementen worden video-uitvoeringen gegenereerd voor video-elementen van verschillende indelingen, zoals OGG, FLV enzovoort.
 
-AEM-elementen ondersteunen statische en dynamische uitvoeringen (met DM gecodeerde uitvoeringen) voor media-elementen.
+AEM Assets ondersteunt statische en dynamische uitvoeringen (met DM gecodeerde uitvoeringen) voor media-elementen.
 
 Statische uitvoeringen worden native gegenereerd met behulp van FFMPEG (geïnstalleerd en beschikbaar op het systeempad) en opgeslagen in de inhoudsopslagplaats.
 
 De met DM gecodeerde vertoningen worden opgeslagen in de volmachtsserver en bij runtime gediend.
 
-AEM-elementen bieden afspeelondersteuning voor deze uitvoeringen aan de clientzijde.
+AEM elementen bieden ondersteuning voor het afspelen van deze uitvoeringen op de client.
 
-Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en tikt u op het pictogram Algemene navigatie. Kies vervolgens **[!UICONTROL Uitvoeringen]** in de lijst.
+Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en tikt u op het pictogram Algemene navigatie. Kies vervolgens een optie in de **[!UICONTROL Renditions]** lijst.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-De lijst met video-uitvoeringen wordt weergegeven in het deelvenster **[!UICONTROL Uitvoeringen]** .
+De lijst met video-uitvoeringen wordt weergegeven in het **[!UICONTROL Renditions]** deelvenster.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
