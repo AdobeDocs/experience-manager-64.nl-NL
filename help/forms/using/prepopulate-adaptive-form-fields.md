@@ -228,7 +228,7 @@ De XML-labels voor de gebruikersgegevens die voor verschillende velden worden ve
 
 ## Prefill-service configureren met Configuratiebeheer {#configuring-prefill-service-using-configuration-manager}
 
-Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie van de Dienst in de Configuratie van de Console van AEM Web. Gebruik de volgende stappen om de Prefill dienst te vormen:
+Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie van de Dienst in de Configuratie van de Console van het AEM Web. Gebruik de volgende stappen om de Prefill dienst te vormen:
 
 >[!NOTE]
 >
@@ -244,9 +244,10 @@ Om de prefill dienst toe te laten, specificeer de Standaard Prefill Configuratie
 
    * file:///C:/Users/public/Document/Prefill/.&amp;ast;
    * http://localhost:8000/somesamplexmlfile.xml
+
    >[!NOTE]
    >
-   >Standaard is Prefill toegestaan via crx-bestanden voor alle typen adaptieve formulieren (XSD, XDP, JSON, FDM en geen gebaseerd formuliermodel). Vooraf invullen is alleen toegestaan met JSON- en XML-bestanden.
+   >Prefill wordt standaard toegestaan via crx-bestanden voor alle typen adaptieve Forms (XSD, XDP, JSON, FDM en geen op formuliermodel gebaseerd). Vooraf invullen is alleen toegestaan met JSON- en XML-bestanden.
 
 1. De prefill-service is nu geconfigureerd voor uw formulier.
 
@@ -340,9 +341,9 @@ U kunt de douane vooraf ingevulde dienst voor de scenario&#39;s gebruiken, waar 
 
 ### Een vooraf ingevulde service maken en uitvoeren {#create-and-run-a-prefill-service}
 
-De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U creeert de bundel OSGi, uploadt, en installeert het aan de bundels van AEM Forms. Voordat u begint met het maken van de bundel:
+De prefill dienst is de dienst OSGi en door bundel OSGi verpakt. U maakt de OSGi-bundel, uploadt en installeert deze naar AEM Forms-bundels. Voordat u begint met het maken van de bundel:
 
-* [Download de AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
+* [De AEM Forms Client SDK downloaden](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html)
 * [Het tekstbouwsteenpakket downloaden](assets/prefill-sumbit-xmlsandcontentpackage.zip)
 
 * Plaats het gegevensbestand (vooraf ingevulde gegevens) in crx-bewaarplaats. U kunt het bestand op elke locatie in de map \contents van de crx-opslagplaats plaatsen.
@@ -355,7 +356,7 @@ Het bouwsteenpakket (voorbeeldenservicepakket) bevat een voorbeeldimplementatie 
 1. Stel in de code de waarde in van:
 
    * `nodePath:` De knooppuntvariabele die naar de crx-gegevensopslagplaats wijst bevat weg van het gegevens (prefill) dossier. Bijvoorbeeld /content/prefilldata.xml
-   * `label:` De labelparameter geeft de weergavenaam van de service op. Bijvoorbeeld, de StandaardVooraf ingevulde Dienst
+   * `label:` Met de parameter label wordt de weergavenaam van de service opgegeven. Bijvoorbeeld, de StandaardVooraf ingevulde Dienst
 
 1. Sla het `Prefill.java` bestand op en sluit het.
 1. Voeg het `AEM Forms Client SDK` pakket aan de bouwstijlweg van het bouwsteenproject toe.
@@ -363,9 +364,9 @@ Het bouwsteenpakket (voorbeeldenservicepakket) bevat een voorbeeldimplementatie 
 
 #### De Prefill-service starten en gebruiken {#start-and-use-the-prefill-service}
 
-Als u de Prefill-service wilt starten, uploadt u het JAR-bestand naar de webconsole van AEM Forms en activeert u de service. De service verschijnt nu in de editor voor aangepaste formulieren. Een vooraf ingevulde service koppelen aan een adaptief formulier:
+Als u de Prefill-service wilt starten, uploadt u het JAR-bestand naar de AEM Forms-webconsole en activeert u de service. De service verschijnt nu in de editor voor aangepaste formulieren. Een vooraf ingevulde service koppelen aan een adaptief formulier:
 
-1. Open het aangepaste formulier in de Forms Editor en open het deelvenster Eigenschappen voor de Formuliercontainer.
+1. Open het adaptieve formulier in de Forms Editor en open het deelvenster Eigenschappen voor de Form Container.
 1. Navigeer in de eigenschappenconsole naar **[!UICONTROL AEM Forms container > Basic > Prefill Service]**.
 1. Selecteer de standaardvoorgevulde service en klik op **[!UICONTROL Save]**. De service is gekoppeld aan het formulier.
 
