@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 842d3a5a-8e09-4a21-b9a2-a8f4f5b699bd
 translation-type: tm+mt
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 0%
 
 ---
 
@@ -24,13 +27,13 @@ Werken met kennis van HTML en CSS
 
 ## Overzicht {#overview}
 
-In de gebruikersinterface van AEM Forms kunt u metagegevens toevoegen aan elk formulier. Aangepaste metagegevens kunnen de gebruikerservaring verbeteren wanneer u formulieren van uw organisatie aanbiedt en zoekt.
+In de AEM Forms-gebruikersinterface kunt u metagegevens toevoegen aan elk formulier. Aangepaste metagegevens kunnen de gebruikerservaring verbeteren wanneer u formulieren van uw organisatie aanbiedt en zoekt.
 
-Met Forms Portal kunt u aangepaste metagegevens in formulierlijsten gebruiken. Wanneer u aangepaste sjablonen voor elementen maakt, kunt u de lay-out van deze sjablonen wijzigen en aangepaste metagegevens gebruiken met de CSS-stijlset.
+Met Forms Portal kunt u aangepaste metagegevens gebruiken in formulierlijsten. Wanneer u aangepaste sjablonen voor elementen maakt, kunt u de lay-out van deze sjablonen wijzigen en aangepaste metagegevens gebruiken met de CSS-stijlset.
 
-Voer de volgende stappen uit om een douanemalplaatje voor diverse Poortcomponenten van Forms tot stand te brengen.
+Voer de volgende stappen uit om een aangepaste sjabloon te maken voor verschillende Forms Portal-componenten.
 
-## Een aangepaste sjabloon maken {#creating-a-nbsp-custom-template}
+## Creating a custom template {#creating-a-nbsp-custom-template}
 
 1. Een koppeling maken:Mapknooppunt onder */apps *
 
@@ -42,17 +45,18 @@ Voer de volgende stappen uit om een douanemalplaatje voor diverse Poortcomponent
       * Sectie Concepten: /libs/fd/fp/conceptsTemplate
       * Sectie Verzending: /libs/fd/fp/submissionTemplate
    * Koppelingscomponent: /libs/fd/fp/linkTemplate
+
    Voeg een titel toe die u wilt weergeven tijdens het selecteren van lay-outsjablonen.
 
    *Opmerking: De titel kan verschillen van de knooppuntnaam van sling:Folder u creeerde. *
-   *In de volgende afbeelding ziet u de configuratie voor de component Search &amp; Lister.* Een ![tekenreeks maken:map](assets/1-3.png)
+   *In de volgende afbeelding ziet u de configuratie voor de component Search &amp; Lister.* ![Een tekenreeks maken:map](assets/1-3.png)
 
 1. Maak een bestandssjabloon.html in deze map om als aangepaste sjabloon te dienen.
 1. Schrijf de aangepaste sjabloon en gebruik aangepaste metagegevens zoals hieronder beschreven.
 
 ## Werkvoorbeeld {#working-example}
 
-Hieronder volgt een voorbeeldimplementatie van een aangepaste sjabloon waarbij Forms Portal een aangepaste Geometrixx Gov Card-indeling voor de component Search &amp; Lister verkrijgt.
+Hieronder volgt een voorbeeldimplementatie van een aangepaste sjabloon waarbij Forms Portal een aangepaste Geometrixx Gov Card Layout voor de component Search &amp; Lister verkrijgt.
 
 ```mxml
 <div class="__FP_boxes-container __FP_single-color">
@@ -74,7 +78,7 @@ Hieronder volgt een voorbeeldimplementatie van een aangepaste sjabloon waarbij F
 
 ## Technische specificaties voor aangepaste sjablonen {#technical-specifications-for-custom-templates}
 
-Een douanemalplaatje voor om het even welke component van het Portaal van Forms omvat herhaalbare en niet-herhaalbare ingangen. Herhaalbare vermeldingen zijn basisentiteiten voor plaatsing op de lijst. Voorbeelden van herhaalbare items zijn Zoeken en registreren, Concepten en verzenden en Koppelingscomponenten.
+Een douanemalplaatje voor om het even welke component van Forms Portal omvat herhaalbare en niet-herhaalbare ingangen. Herhaalbare vermeldingen zijn basisentiteiten voor plaatsing op de lijst. Voorbeelden van herhaalbare items zijn Zoeken en registreren, Concepten en verzenden en Koppelingscomponenten.
 
 Forms Portal biedt een syntaxis waarmee plaatsaanduidingen aangepaste/OTB-metagegevens kunnen weergeven. De plaatsaanduidingen worden gevuld nadat de resultaten van formulieren, concepten of verzendingen zijn weergegeven.
 
@@ -88,11 +92,11 @@ Elke plaatsaanduiding heeft een exclusieve OTB-metagegevensset. Als u aangepaste
 
 ## Metagegevens uit het vak {#out-of-the-box-metadata}
 
-Verschillende Forms Portal-componenten bieden exclusieve sets OOTB-metagegevens die u voor een lijst kunt gebruiken.
+Verschillende Forms Portal-componenten bieden exclusieve sets OOTB-metagegevens die u voor een aanbieding kunt gebruiken.
 
 ### Onderdeel Zoeken en bibliotheken {#search-amp-lister-component}
 
-* **** Titel: Titel van het formulier
+* **Titel:** Titel van het formulier
 * **naam**: Naam van het formulier (meestal gelijk aan de titel)
 * **beschrijving**: Beschrijving van het formulier
 * **formUrl**: URL om het formulier te genereren als HTML
@@ -118,7 +122,7 @@ Ondersteuning voor lokalisatie, sorteren en het gebruik van configuratie-eigensc
 
 ### Component Koppelen {#link-component}
 
-* **** Titel: Titel van het formulier
+* **Titel:** Titel van het formulier
 * **formUrl**: URL om het formulier te genereren als HTML
 * **doel**: Doelkenmerk van de koppeling. Geldige waarden zijn &quot;_blank&quot; en &quot;_self&quot;.
 * **linkText**: Bijschrift koppelen
@@ -126,7 +130,7 @@ Ondersteuning voor lokalisatie, sorteren en het gebruik van configuratie-eigensc
 ### Component Concepten en verzendingen {#drafts-amp-submissions-component}
 
 * **Pad**: Pad van het metagegevensknooppunt voor concept/verzending. Gebruik deze extensie met de extensie .HTML als een URL om een concept of verzending te openen.
-* **contextPath**: Contextpad van de AEM-instantie
+* **contextPath**: Contextpad van AEM instantie
 * **firstLetter**: Eerste letter (hoofdletters) van de titel van het adaptieve formulier, die als concept is opgeslagen of is ingediend.
 * **formName**: De titel van het adaptieve formulier, dat als concept is opgeslagen of is verzonden.
 * **conceptID**: Id voor het concept dat wordt weergegeven (alleen gebruiken in de sjabloon voor de sectie Concept).
@@ -149,22 +153,22 @@ Ondersteuning voor lokalisatie, sorteren en het gebruik van configuratie-eigensc
 
 **A**. Containerelement
 
-**** B. &#39;path&#39;-metagegevens met een vaste hiërarchie om de voor elk formulier opgeslagen miniatuur te verkrijgen.
+**B.** &#39;path&#39;-metagegevens met een vaste hiërarchie om de voor elk formulier opgeslagen miniatuur te verkrijgen.
 
 **C.** Attribuut dat gegevens-herhaalbaar voor de malplaatjesectie voor elk vorm wordt gebruikt
 
-**** D. De tekenreeks Toepassen lokaliseren
+**D.** De tekenreeks Toepassen lokaliseren
 
-**** E. De configuratieeigenschap pdfLinkText gebruiken
+**E.** De configuratieeigenschap pdfLinkText gebruiken
 
-**** F. De metagegevens &quot;pdfUrl&quot; gebruiken
+**F.** De metagegevens &quot;pdfUrl&quot; gebruiken
 
 ## Tips, trucs en bekende problemen {#tips-tricks-and-known-issues}
 
 1. Gebruik geen enkel aanhalingsteken (&#39;) in enige douanemalplaatje.
-1. Voor aangepaste metagegevens slaat u deze eigenschap alleen op het knooppunt **jcr:content/metadata** op. Als u de metagegevens op een andere locatie opslaat, kunnen deze niet worden weergegeven.
+1. Voor aangepaste metagegevens slaat u deze eigenschap alleen op het knooppunt **jcr:content/metadata** op. Als u het op een andere plaats opslaat, kan Forms Portal de meta-gegevens niet tonen.
 1. Zorg ervoor dat de naam van aangepaste metagegevens of bestaande metagegevens geen dubbele punt (:) bevat. Als dit het geval is, kunt u het niet weergeven in de gebruikersinterface.
-1. **data-herhaalbaar** heeft geen betekenis voor een component van de **Verbinding** . Adobe raadt u aan deze eigenschap niet in de sjabloon voor een koppelingscomponent te gebruiken.
+1. **data-herhaalbaar** heeft geen betekenis voor een component van de **Verbinding** . Adobe raadt u aan deze eigenschap niet te gebruiken in de sjabloon voor een koppelingscomponent.
 
 ## Verwante artikelen
 
