@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 1%
 
 ---
 
@@ -40,7 +43,7 @@ De beheerder kan ondersteuning voor meer/aangepaste speciale tekens toevoegen do
 Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe te voegen:
 
 1. Ga naar Beheerder `https://[server]:[port]/[ContextPath]/crx/de` en meld u aan.
-1. Maak in de map apps een map met de naam **[!UICONTROL specialcharacters]** met pad/structuur die lijkt op de map specialcharacters (in de map textEditorConfig onder libs):
+1. Maak in de map apps een map met de naam path/structure, vergelijkbaar met de map specialcharacters (in de map textEditorConfig onder libs): **[!UICONTROL specialcharacters]**
 
    1. Klik met de rechtermuisknop op de map met **speciale tekens** in het volgende pad en selecteer **Overlayknooppunt**:
 
@@ -48,11 +51,11 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
+      **Pad:** /libs/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
       >[!NOTE]
       >
@@ -67,14 +70,14 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
 
       Controleer na het maken van de overlay de structuurcodes van de knooppunten. Elk knooppunt dat wordt gemaakt in /apps met behulp van de overlay, moet dezelfde klasse en eigenschappen hebben als gedefinieerd in /libs voor dat knooppunt. Als een eigenschap of tag ontbreekt in de nodestructuur onder de locatie /apps, synchroniseert u de tags met het corresponderende knooppunt in /libs.
 
-1. Controleer of het **[!UICONTROL knooppunt textEditorConfig]** de volgende eigenschappen en waarden heeft:
+1. Zorg ervoor dat het **[!UICONTROL textEditorConfig]** knooppunt de volgende eigenschappen en waarden heeft:
 
    | Naam | Type | Waarde |
    |---|---|---|
    | cmConfigurationType | Tekenreeks | cmTextEditorConfiguration |
    | cssPath | Tekenreeks | /libs/fd/cm/ma/gui/components/admin/createasset/textcontrol/clientlibs/textcontrol |
 
-1. Klik met de rechtermuisknop op de map **[!UICONTROL Speciale tekens]** in het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op Alles **** opslaan:
+1. Klik met de rechtermuisknop op de **[!UICONTROL specialcharacters]** map op het volgende pad en selecteer **Maken > Onderliggend knooppunt** en klik vervolgens op Alles **** opslaan:
 
    /apps/fd/cm/ma/gui/configuration/textEditorConfig/specialcharacters/&lt;YourChildNode>
 
