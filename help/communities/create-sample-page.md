@@ -11,13 +11,16 @@ topic-tags: developing
 discoiquuid: a03145f7-6697-4797-b73e-6f8d241ce469
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '414'
+ht-degree: 1%
 
 ---
 
 
 # Een voorbeeldpagina maken {#create-a-sample-page}
 
-Vanaf AEM 6.1 Communities is de eenvoudigste manier om een voorbeeldpagina te maken een eenvoudige community-site te maken, die bestaat uit een functie Pagina.
+Vanaf AEM 6.1 Gemeenschappen is de eenvoudigste manier om een voorbeeldpagina te maken een eenvoudige gemeenschapssite te maken, die bestaat uit een functie Pagina.
 
 Dit zal een component parsys omvatten zodat u componenten voor creatie kunt [toelaten](basics.md#accessing-communities-components).
 
@@ -25,7 +28,7 @@ Een andere optie voor onderzoek met steekproefcomponenten is de eigenschappen te
 
 ## Een Community-site maken {#create-a-community-site}
 
-Dit lijkt op het maken van een nieuwe site die wordt beschreven in [Aan de slag met AEM-gemeenschappen](getting-started.md).
+Dit lijkt op het maken van een nieuwe site die wordt beschreven in [Aan de slag met AEM Communities](getting-started.md).
 
 Het belangrijkste verschil is dat deze zelfstudie een nieuwe community-sitesjabloon maakt dat alleen de functie [](functions.md#page-function) Pagina bevat om een eenvoudige community-site te maken die vrij is van andere functies (andere functies dan de vooraf bekabelde functies die voor alle communitysites gelden).
 
@@ -33,7 +36,7 @@ Het belangrijkste verschil is dat deze zelfstudie een nieuwe community-sitesjabl
 
 Om te beginnen, creeer een eenvoudig malplaatje [van de](sites.md)communautaire plaats.
 
-Selecteer **[!UICONTROL Gereedschappen > Gemeenschappen > Sitesjablonen]** in de globale navigatie op een auteurinstantie.
+Selecteer bij globale navigatie op een instantie van de auteur **[!UICONTROL Tools > Communities > Site Templates]**.
 
 ![chlimage_1-82](assets/chlimage_1-82.png)
 
@@ -63,7 +66,7 @@ Selecteer **[!UICONTROL Gereedschappen > Gemeenschappen > Sitesjablonen]** in de
 
 Maak nu een nieuwe communitysite op basis van de eenvoudige sitesjabloon.
 
-Selecteer **[!UICONTROL Gemeenschappen > Sites nadat u de sitesjabloon hebt gemaakt]**.
+Selecteer bij globale navigatie de sitesjabloon **[!UICONTROL Communities > Sites]**.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -113,7 +116,7 @@ De URL wordt [http://localhost:4502/editor.html/content/sites/sample/en.html](ht
 
 ![chlimage_1-90](assets/chlimage_1-90.png)
 
-Op de eenvoudige homepage is het mogelijk om te zien wat door de communautaire functies en malplaatjes vooraf wordt getelegrafeerd, en spel met het toevoegen van en het vormen van communautaire componenten.
+Op de eenvoudige homepage is het mogelijk om te zien wat door de communautaire functies en malplaatjes vooraf wordt getelegrafeerd, en spel met het toevoegen en het vormen van communautaire componenten.
 
 ## Site weergeven bij publicatie {#view-site-on-publish}
 
