@@ -1,8 +1,8 @@
 ---
 title: Connector configureren voor IBM FileNet
 seo-title: Connector configureren voor IBM FileNet
-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM-formulieren en IBM FileNet mogelijk te maken.
-seo-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM-formulieren en IBM FileNet mogelijk te maken.
+description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM formulieren en IBM FileNet mogelijk te maken.
+seo-description: Leer hoe u de connector voor IBM FileNet configureert om communicatie tussen AEM formulieren en IBM FileNet mogelijk te maken.
 uuid: 29d4e221-97f7-4cfb-b7e4-75a8289d2604
 contentOwner: admin
 content-type: reference
@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Connector configureren voor IBM FileNet {#configuring-connector-for-ibm-filenet}
 
-Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM-formulieren en IBM FileNet. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
+Connector voor IBM FileNet maakt communicatie mogelijk tussen AEM formulieren en IBM FileNet. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
 
 >[!NOTE]
 >
->In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In deze versie worden de elementen opgeslagen in de oorspronkelijke opslagplaats voor AEM-formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de AEM-formulieropslagplaats vindt plaats wanneer u een upgrade uitvoert naar AEM-formulieren. Zie de handleiding voor de upgrade van AEM-formulieren voor uw toepassingsserver voor meer informatie.
+>In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In deze versie worden de elementen opgeslagen in de systeemeigen opslagruimte voor AEM formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de opslagplaats voor AEM formulieren vindt plaats wanneer u een upgrade uitvoert naar AEM formulieren. Zie de handleiding voor het upgraden van AEM formulieren voor uw toepassingsserver voor meer informatie.
 
 ## De verbinding met de inhoudsengine configureren {#configure-the-connection-to-the-content-engine}
 
@@ -51,7 +51,7 @@ IBM FileNet P8 Content Engine biedt softwareservices voor het beheer van bedrijf
    * Als u Wissen hebt geselecteerd als de regeling voor bescherming tegen referentie, worden dit trefwoord en de bijbehorende waarde genegeerd.
    * Als u Symmetrisch hebt geselecteerd als de regeling voor bescherming van referenties, verwijst het pad dat u invoert naar de locatie van een versleutelingsbestand op de formulierserver dat de te gebruiken cryptografische sleutels bevat.
 
-1. Voer in het vak Standaardobjectarchief de opslagconnector in van het object waarmee AEM-formulieren standaard verbinding maken.
+1. Voer in het vak Standaardobjectarchief de opslagconnector in van het object waarmee AEM formulieren standaard verbinding maken.
 1. Voer in het vak Gebruikersnaam de gebruikersnaam in van een gebruiker die toegangsrechten heeft tot de standaardobberwinkel die u in de vorige stap hebt opgegeven.
 1. Voer in het vak Wachtwoord het wachtwoord voor de gebruiker in en klik op Opslaan.
 
