@@ -1,8 +1,8 @@
 ---
 title: Afbeeldingen aanpassen die worden gebruikt in routehandelingen
 seo-title: Afbeeldingen aanpassen die worden gebruikt in routehandelingen
-description: Hoe kan ik-om-de beelden aan te passen die in routeacties in de werkruimte van AEM Forms LiveCycle worden gebruikt?
-seo-description: Hoe kan ik-om-de beelden aan te passen die in routeacties in de werkruimte van AEM Forms LiveCycle worden gebruikt?
+description: Hoe kan ik-om-de beelden aan te passen die in routeacties in de werkruimte van LiveCycle AEM Forms worden gebruikt.
+seo-description: Hoe kan ik-om-de beelden aan te passen die in routeacties in de werkruimte van LiveCycle AEM Forms worden gebruikt.
 uuid: 42608376-587e-4b57-a9d5-8f9ebd981426
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -47,7 +47,7 @@ Als u de afbeeldingen wilt aanpassen die worden gebruikt in routehandelingen, vo
 
 ## Taaklijstactie pop-up {#task-list-task-action-popup}
 
-1. Maak een pop-up met handelingen uit de takenlijst. Zie [Werkruimtecode](introduction-customizing-html-workspace.md#building-html-workspace-code)AEM Forms maken. Hiervoor moet het ontwikkelingspakket worden gebruikt.
+1. Een pop-up met handelingen voor een takenlijst maken, zie Code voor de [AEM Forms-werkruimte](introduction-customizing-html-workspace.md#building-html-workspace-code)maken. Hiervoor moet het ontwikkelingspakket worden gebruikt.
 
 1. Kopiëren `/libs/ws/js/runtime/templates/task.html` naar `/apps/ws/js/runtime/templates/task.html`.
 
