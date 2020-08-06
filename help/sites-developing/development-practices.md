@@ -1,8 +1,8 @@
 ---
 title: Ontwikkelingspraktijken
 seo-title: Ontwikkelingspraktijken
-description: Aanbevolen werkwijzen voor ontwikkeling op AEM
-seo-description: Aanbevolen werkwijzen voor ontwikkeling op AEM
+description: Aanbevolen werkwijzen voor het ontwikkelen op AEM
+seo-description: Aanbevolen werkwijzen voor het ontwikkelen op AEM
 uuid: 27a75f7f-6e2c-4113-9e9f-c5013a4594c2
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 8b0297a1-d922-410f-9aaf-3a6b87e11dc0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Zonder een welomschreven DoD is het gemakkelijk om in een situatie te belanden w
 
 Dingen als inspringingsniveaus en witruimte lijken misschien niet belangrijk, maar als de code juist is opgemaakt, gaat het veel verder in de richting van leesbaarheid en onderhoudsgemak. Conventies moeten als team worden besproken en overeengekomen en vervolgens in de code worden gevolgd.
 
-### Doel van hoge testdekking {#aim-for-high-test-coverage}
+### Doel van hoge testdekking  {#aim-for-high-test-coverage}
 
 Naarmate een projectimplementatie groter wordt, zal ook de tijd die nodig is om deze te testen, toenemen. Zonder goede testdekking, zal het testteam niet kunnen schrapen en de ontwikkelaars zullen uiteindelijk begraven in insecten worden.
 
@@ -60,9 +63,9 @@ Als de eenheidstests lang duren, zullen de ontwikkelaars vermijden lopend hen en
 
 De instrumenten van de codeanalyse kunnen waardevol zijn, maar slechts als hun rapporten tot actie van de kant van het ontwikkelingsteam leiden. Zonder de analyse die deze instrumenten opleveren te verfijnen, zullen de aanbevelingen die ze genereren niet relevant zijn en zullen ze hun waarde verliezen.
 
-### Volg de scout van de jongen {#follow-the-boy-scout-rule}
+### Volg de Scout voor de jongen {#follow-the-boy-scout-rule}
 
-De Jongen sokken hebben een regel: &quot;Laat het beter staan dan u het hebt gevonden.&quot; Zolang alle leden van het ontwikkelingsteam zich aan deze regel houden en iets opschonen wanneer ze een puinhoop tegenkomen, zal de code voortdurend verbeteren.
+De Scouten van de Jongen hebben een regel: &quot;Laat het beter staan dan u het hebt gevonden.&quot; Zolang alle leden van het ontwikkelingsteam zich aan deze regel houden en iets opschonen wanneer ze een puinhoop tegenkomen, zal de code voortdurend verbeteren.
 
 ### Gebruik geen YAGNI-functies {#avoid-implementing-yagni-features}
 
