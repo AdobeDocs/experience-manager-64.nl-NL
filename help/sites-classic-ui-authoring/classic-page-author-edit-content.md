@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e75ce118-3850-4440-ad58-89569cb8c8eb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1780'
+ht-degree: 1%
 
 ---
 
@@ -71,9 +74,10 @@ Een nieuwe component invoegen:
 
 1. Er zijn verschillende methoden om het type alinea te selecteren dat u wilt invoegen:
 
-   * **Dubbelklik hier op het gebied met het label Componenten of elementen** slepen... - De werkbalk Nieuwe component **** invoegen wordt geopend. Selecteer een component en klik op **OK**.
+   * Dubbelklik hier op het gebied met het label Componenten of elementen **slepen...** - De werkbalk Nieuwe component **** invoegen wordt geopend. Selecteer een component en klik op **OK**.
    * Sleep een component van de zwevende werkbalk (sidekick genoemd) om een nieuwe alinea in te voegen.
-   * **Klik met de rechtermuisknop op een bestaande alinea en selecteer** Nieuw... - De werkbalk Nieuwe component invoegen wordt geopend. Selecteer een component en klik op **OK**.
+   * Klik met de rechtermuisknop op een bestaande alinea en selecteer **Nieuw...** - De werkbalk Nieuwe component invoegen wordt geopend. Selecteer een component en klik op **OK**.
+
    ![screen_shot_2012-02-15at115605am](assets/screen_shot_2012-02-15at115605am.png)
 
 1. Op zowel de werkbalk **Nieuwe component** invoegen ziet u een lijst met de beschikbare componenten (alineatypen). Deze secties kunnen worden opgesplitst in verschillende secties (bijvoorbeeld Algemeen, Kolommen, enz.) die naar behoefte kunnen worden uitgebreid.
@@ -131,7 +135,7 @@ Een alinea verplaatsen:
 
    ![screen_shot_2012-02-15at115855am](assets/screen_shot_2012-02-15at115855am.png)
 
-1. Sleep de alinea naar de nieuwe locatie - AEM geeft aan waar de alinea naar kan worden verplaatst met een groen vinkje. Zet het neer op de gewenste plaats.
+1. Sleep de alinea naar de nieuwe locatie - AEM geeft aan waar de alinea naartoe kan worden verplaatst met een groen vinkje. Zet het neer op de gewenste plaats.
 1. Uw alinea wordt verplaatst:
 
    ![screen_shot_2012-02-15at120030pm](assets/screen_shot_2012-02-15at120030pm.png)
@@ -182,9 +186,11 @@ U kunt de overerving annuleren (en vervolgens opnieuw inschakelen). Afhankelijk 
    Als een component deel uitmaakt van een livecopy of lancering, wordt het aangegeven met een hangslotpictogram. U kunt op de hangslot klikken om de overerving te annuleren.
 
    * Het hangslotpictogram wordt getoond wanneer de component wordt geselecteerd; bijvoorbeeld:
+
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
    * Het hangslot wordt ook weergegeven in het dialoogvenster van componenten; bijvoorbeeld:
+
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
 1. **Een overerfd alineasysteem**
@@ -221,7 +227,7 @@ Voor grootschaliger bewerkingen van dezelfde zin kunt u met de menuoptie **[Zoek
 
 ## Een pagina vergrendelen {#locking-a-page}
 
-Met AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
+AEM kunt u een pagina vergrendelen, zodat niemand anders de inhoud kan wijzigen. Dit is handig wanneer u veel bewerkingen uitvoert op een bepaalde pagina of wanneer u een pagina even wilt stilzetten.
 
 >[!CAUTION]
 >
@@ -235,7 +241,7 @@ Een pagina vergrendelen:
 
    ![screen_shot_2012-02-08at15750pm](assets/screen_shot_2012-02-08at15750pm.png)
 
-   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien wordt in het rechterdeelvenster van de **websiteconsole** door AEM WCM de pagina als vergrendeld weergegeven en wordt aangegeven welke gebruiker de pagina heeft vergrendeld.
+   Een bericht geeft aan dat de pagina is vergrendeld voor andere gebruikers. Bovendien geeft AEM WCM in het rechterdeelvenster van de **** websiteconsole de pagina als vergrendeld weer en geeft aan welke gebruiker de pagina heeft vergrendeld.
 
    ![screen_shot_2012-02-08at20657pm](assets/screen_shot_2012-02-08at20657pm.png)
 
@@ -266,7 +272,7 @@ Wanneer u het verwijderen, optellen of verplaatsen van een of meer alinea&#39;s 
 >
 >Uw systeembeheerder kan diverse aspecten van Ongedaan maken/opnieuw eigenschappen [volgens de vereisten voor uw instantie](/help/sites-administering/config-undo.md) vormen.
 
-AEM slaat een geschiedenis van acties op die u uitvoert en de opeenvolging waarin u hen uitvoerde. U maakt dus verschillende handelingen ongedaan in de volgorde waarin u deze hebt uitgevoerd. Vervolgens kunt u de opdracht Opnieuw uitvoeren gebruiken om een of meer handelingen opnieuw toe te passen.
+AEM slaat een geschiedenis op van acties die u uitvoert en de opeenvolging waarin u hen uitvoerde. U maakt dus verschillende handelingen ongedaan in de volgorde waarin u deze hebt uitgevoerd. Vervolgens kunt u de opdracht Opnieuw uitvoeren gebruiken om een of meer handelingen opnieuw toe te passen.
 
 Als een element op de inhoudspagina wordt geselecteerd, is het ongedaan maken en opnieuw doen bevel op het geselecteerde punt, zoals een tekstcomponent van toepassing.
 
@@ -279,6 +285,7 @@ Het gedrag van de opdrachten Ongedaan maken en Opnieuw is vergelijkbaar met dat 
 >* Voer handelingen opnieuw uit zolang u geen paginabewerking hebt uitgevoerd nadat u de bewerking ongedaan hebt gemaakt.
 >* U kunt maximaal 20 bewerkhandelingen ongedaan maken (standaardinstelling).
 >* Gebruik ook [sneltoetsen](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md) voor ongedaan maken en opnieuw uitvoeren.
+
 >
 
 
