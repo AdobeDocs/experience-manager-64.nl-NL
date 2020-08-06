@@ -1,8 +1,8 @@
 ---
 title: Vertaalprojecten beheren
 seo-title: Vertaalprojecten beheren
-description: Leer hoe u vertaalprojecten beheert in AEM.
-seo-description: Leer hoe u vertaalprojecten beheert in AEM.
+description: Leer hoe u vertaalprojecten in AEM kunt beheren.
+seo-description: Leer hoe u vertaalprojecten in AEM kunt beheren.
 uuid: f6f79b5b-dc08-4dde-b464-719345d233a6
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3429'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 Nadat u de inhoud hebt voorbereid voor vertaling, moet u de taalstructuur voltooien door ontbrekende taalkopieën te maken en vertaalprojecten te maken.
 
-Met vertaalprojecten kunt u de vertaling van AEM-inhoud beheren. Een vertaalproject is een type AEM- [project](/help/sites-authoring/projects.md) dat bronnen bevat die in andere talen moeten worden vertaald. Deze bronnen zijn de pagina&#39;s en elementen van de [taalkopieën](/help/sites-administering/tc-prep.md) die op basis van de taalmaster zijn gemaakt.
+Met vertaalprojecten kunt u de vertaling van AEM inhoud beheren. Een vertaalproject is een type AEM [project](/help/sites-authoring/projects.md) dat middelen bevat die in andere talen moeten worden vertaald. Deze bronnen zijn de pagina&#39;s en elementen van de [taalkopieën](/help/sites-administering/tc-prep.md) die zijn gemaakt op basis van de master taal.
 
 Wanneer middelen aan een vertaalproject worden toegevoegd, wordt een vertaalbaan gecreeerd voor hen. Taken bieden opdrachten en statusinformatie die u gebruikt om de workflows voor het vertalen van mensen en computers die op de bronnen worden uitgevoerd, te beheren.
 
@@ -37,32 +40,32 @@ Vertaalprojecten en -taken worden gecreëerd met workflows voor het voorbereiden
 
 >[!NOTE]
 >
->Optie 3 houdt geen verband met vertaalwerk/project. Hiermee kunt u inhoud en structurele wijzigingen in de hoofdtaal kopiëren naar (onvertaalde) taalkopieën. U kunt dit gebruiken om uw taalmeesters synchroon te houden, zelfs zonder vertaling.
+>Optie 3 houdt geen verband met vertaalwerk/project. Hiermee kunt u inhoud en structurele wijzigingen in de taal die is master voor (onvertaalde) taalkopieën kopiëren. U kunt dit gebruiken om uw taalmeesters synchroon te houden, zelfs zonder vertaling.
 
 ## Eerste vertalingen uitvoeren en bestaande vertalingen bijwerken {#performing-initial-translations-and-updating-existing-translations}
 
-AEM detecteert of er een vertaalproject wordt gemaakt voor de eerste vertaling van inhoud of om reeds vertaalde taalkopieën bij te werken. Wanneer u een vertaalproject voor een pagina creeert en de taalexemplaren aangeeft waarvoor u vertaalt, ontdekt AEM of de bronpagina reeds in de gerichte taalexemplaren bestaat:
+AEM ontdekt of een vertaalproject voor de aanvankelijke vertaling van inhoud wordt gecreeerd, of reeds-vertaalde taalexemplaren bijwerken. Wanneer u een vertaalproject voor een pagina creeert en de taalexemplaren aangeeft waarvoor u vertaalt, AEM ontdekt of de bronpagina reeds in de gerichte taalexemplaren bestaat:
 
-* **** De pagina is niet opgenomen in de taalkopie: AEM beschouwt deze situatie als de eerste vertaling. De pagina wordt onmiddellijk gekopieerd naar de taalkopie en opgenomen in het project. Wanneer de vertaalde pagina wordt geïmporteerd in AEM, wordt deze rechtstreeks naar de taalkopie gekopieerd.
-* **** De taalkopie bevat al de pagina: AEM behandelt deze situatie als een bijgewerkte vertaling. Er wordt een startpagina gemaakt en een kopie van de pagina wordt toegevoegd aan de startpagina en opgenomen in het project. Met behulp van Starten kunt u bijgewerkte vertalingen controleren voordat u deze doorgeeft aan de taalkopie:
+* **De pagina is niet opgenomen in de taalkopie:** AEM beschouwt deze situatie als de eerste vertaling. De pagina wordt onmiddellijk gekopieerd naar de taalkopie en opgenomen in het project. Wanneer de vertaalde pagina in AEM wordt geïmporteerd, AEM deze rechtstreeks naar de taalkopie gekopieerd.
+* **De taalkopie bevat al de pagina:** AEM beschouwt deze situatie als een bijgewerkte vertaling. Er wordt een startpagina gemaakt en een kopie van de pagina wordt toegevoegd aan de startpagina en opgenomen in het project. Met behulp van Starten kunt u bijgewerkte vertalingen controleren voordat u deze doorgeeft aan de taalkopie:
 
-   * Wanneer de vertaalde pagina wordt geïmporteerd in AEM, wordt de pagina tijdens het starten overschreven.
+   * Wanneer de vertaalde pagina in AEM wordt geïmporteerd, wordt de pagina tijdens het opstarten overschreven.
    * De vertaalde pagina overschrijft de taalkopie alleen wanneer de introductie wordt bevorderd.
 
-Bijvoorbeeld, wordt de /content/geometrixx/fr taalwortel gecreeerd voor de Franse vertaling van de /content/geometrixx/en hoofdtaal. Er zijn geen andere pagina&#39;s in de Franse taalkopie.
+Bijvoorbeeld, wordt de /content/geometrixx/fr taalwortel gecreeerd voor de Franse vertaling van de /content/geometrixx/en master taal. Er zijn geen andere pagina&#39;s in de Franse taalkopie.
 
-* Er wordt een vertaalproject gemaakt voor de pagina /content/geometrixx/nl/products en alle onderliggende pagina&#39;s, met als doelversie de Franse taalkopie. Omdat de taalkopie de pagina /content/geometrixx/fr/products niet bevat, kopieert AEM onmiddellijk de pagina /content/geometrixx/en/products en alle onderliggende pagina&#39;s naar de Franse taalkopie. De kopieën worden ook in het vertaalproject opgenomen.
-* Er wordt een vertaalproject gemaakt voor de pagina /content/geometrixx/nl en alle onderliggende pagina&#39;s die zich richten op de Franse taalkopie. Omdat de taalkopie de pagina bevat die overeenkomt met de pagina /content/geometrixx/en (de hoofdtaal), kopieert AEM de pagina /content/geometrixx/nl en alle onderliggende pagina&#39;s en voegt deze toe aan een introductie. De kopieën worden ook in het vertaalproject opgenomen.
+* Er wordt een vertaalproject gemaakt voor de pagina /content/geometrixx/nl/products en alle onderliggende pagina&#39;s, met als doelversie de Franse taalkopie. Omdat de taalkopie niet de pagina /content/geometrixx/fr/products bevat, kopieert AEM onmiddellijk de pagina /content/geometrixx/en/products en alle onderliggende pagina&#39;s naar de Franse taalkopie. De kopieën worden ook in het vertaalproject opgenomen.
+* Er wordt een vertaalproject gemaakt voor de pagina /content/geometrixx/nl en alle onderliggende pagina&#39;s die zich richten op de Franse taalkopie. Omdat de taalkopie de pagina bevat die overeenkomt met de pagina /content/geometrixx/nl (de hoofdtaal), AEM de pagina /content/geometrixx/nl en alle onderliggende pagina&#39;s gekopieerd en toegevoegd aan een opstart. De kopieën worden ook in het vertaalproject opgenomen.
 
 ## Vertaalprojecten maken met het deelvenster Verwijzingen {#creating-translation-projects-using-the-references-panel}
 
-Maak vertaalprojecten zodat u de workflow voor het vertalen van de bronnen van uw taalmaster kunt uitvoeren en beheren. Wanneer u projecten maakt, geeft u de pagina op in het taalstramien dat u vertaalt en de taalkopieën waarvoor u de vertaling uitvoert:
+Maak vertaalprojecten zodat u de workflow voor het vertalen van de master bronnen kunt uitvoeren en beheren. Wanneer u projecten maakt, geeft u de pagina op in de master taal die u vertaalt en de taalkopieën waarvoor u de vertaling uitvoert:
 
 * De wolkenconfiguratie van het kader van de vertaalintegratie dat met de geselecteerde pagina wordt geassocieerd bepaalt vele eigenschappen van de vertaalprojecten, zoals het vertaalwerkschema aan gebruik.
 * Er wordt een project gemaakt voor elke geselecteerde taalkopie.
 * Er wordt een kopie van de geselecteerde pagina en de bijbehorende elementen gemaakt en aan elk project toegevoegd. Deze kopieën worden later naar de vertaalprovider verzonden voor vertaling.
 
-U kunt opgeven dat de onderliggende pagina&#39;s van de geselecteerde pagina ook worden geselecteerd. In dit geval worden ook kopieën van de onderliggende pagina&#39;s aan elk project toegevoegd, zodat deze worden vertaald. Wanneer om het even welke kindpagina&#39;s met verschillende configuraties van het kader van de vertaalintegratie worden geassocieerd, leidt AEM tot extra projecten.
+U kunt opgeven dat de onderliggende pagina&#39;s van de geselecteerde pagina ook worden geselecteerd. In dit geval worden ook kopieën van de onderliggende pagina&#39;s aan elk project toegevoegd, zodat deze worden vertaald. Wanneer om het even welke kindpagina&#39;s met verschillende configuraties van het kader van de vertaalintegratie worden geassocieerd, AEM leidt tot extra projecten.
 
 U kunt ook [handmatig vertaalprojecten](#creating-a-translation-project-using-the-projects-console)maken.
 
@@ -80,7 +83,7 @@ Na het vertalen kunt u de vertaling [](#reviewing-and-promoting-updated-content)
 
 1. Gebruik de console van Plaatsen om de pagina te selecteren die u aan vertaalprojecten toevoegt.
 
-   Als u bijvoorbeeld de Engelse pagina&#39;s van de Geometrixx Demo-site wilt vertalen, selecteert u Geometrixx Demo-site > Engels.
+   Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Geometrixx demo-site > Engels.
 
 1. Klik of tik op Verwijzingen op de werkbalk.
 
@@ -93,6 +96,7 @@ Na het vertalen kunt u de vertaling [](#reviewing-and-promoting-updated-content)
    * Selecteer Alle subpagina&#39;s selecteren als u de geselecteerde pagina en alle onderliggende pagina&#39;s wilt vertalen. Als u alleen de geselecteerde pagina wilt vertalen, schakelt u de optie uit.
    * Selecteer Nieuw vertaalproject maken bij Project.
    * Typ een naam voor het project.
+
    ![chlimage_1-242](assets/chlimage_1-242.png)
 
 1. Klik of tik op Maken.
@@ -101,7 +105,7 @@ Na het vertalen kunt u de vertaling [](#reviewing-and-promoting-updated-content)
 
 1. Gebruik de console van Plaatsen om de pagina te selecteren die u aan de vertaalprojecten toevoegt.
 
-   Als u bijvoorbeeld de Engelse pagina&#39;s van de Geometrixx Demo-site wilt vertalen, selecteert u Geometrixx Demo-site > Engels.
+   Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Geometrixx demo-site > Engels.
 
 1. Klik of tik op Verwijzingen op de werkbalk.
 
@@ -113,6 +117,7 @@ Na het vertalen kunt u de vertaling [](#reviewing-and-promoting-updated-content)
    * Selecteer Alle subpagina&#39;s selecteren als u de geselecteerde pagina en alle onderliggende pagina&#39;s wilt vertalen. Als u alleen de geselecteerde pagina wilt vertalen, schakelt u de optie uit.
    * Selecteer Nieuw vertaalproject maken bij Project.
    * Typ een naam voor het project.
+
    ![chlimage_1-244](assets/chlimage_1-244.png)
 
 1. Klik of tik op Start.
@@ -127,7 +132,7 @@ Net zoals bij het maken van een nieuw project, worden bij het toevoegen van pagi
 
 1. Gebruik de console van Plaatsen om de pagina te selecteren die u aan het vertaalproject toevoegt.
 
-   Als u bijvoorbeeld de Engelse pagina&#39;s van de Geometrixx Demo-site wilt vertalen, selecteert u Geometrixx Demo-site > Engels.
+   Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Geometrixx demo-site > Engels.
 
 1. Klik of tik op Verwijzingen op de werkbalk.
 
@@ -142,6 +147,7 @@ Net zoals bij het maken van een nieuw project, worden bij het toevoegen van pagi
    * Selecteer Alle subpagina&#39;s selecteren als u de geselecteerde pagina en alle onderliggende pagina&#39;s wilt vertalen. Als u alleen de geselecteerde pagina wilt vertalen, schakelt u de optie uit.
    * Selecteer bij Project de optie Toevoegen aan bestaand vertaalproject.
    * Selecteer het project.
+
    >[!NOTE]
    >
    >De doeltaal die is ingesteld in het vertaalproject moet overeenkomen met het pad van de taalkopie zoals wordt weergegeven in het deelvenster Verwijzingen.
@@ -184,7 +190,7 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
    ![chlimage_1-251](assets/chlimage_1-251.png)
 
-1. Selecteer het woordenboek dat u wilt toevoegen en klik op de knop Toevoegen of tik op Toevoegen.
+1. Selecteer het woordenboek dat u wilt toevoegen en klik op Toevoegen of tik op de knop Toevoegen.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -260,8 +266,8 @@ Als u de status van elk bestand in de taak wilt zien, klikt of tikt u op de elli
 
 Geef de datum op waarop de leverancier van de vertaling vertaalde bestanden moet retourneren. U kunt de vervaldatum voor het project of voor een specifieke baan plaatsen:
 
-* **** Project: Vertaaltaken in het project nemen de vervaldatum over.
-* **** Taak: De vervaldatum die u instelt voor de taak overschrijft de vervaldatum die is ingesteld voor het project.
+* **Project:** Vertaaltaken in het project nemen de vervaldatum over.
+* **Taak:** De vervaldatum die u instelt voor de taak overschrijft de vervaldatum die is ingesteld voor het project.
 
 Het instellen van de vervaldatum werkt alleen correct wanneer de leverancier van de vertaling die u gebruikt deze functie ondersteunt.
 
@@ -349,7 +355,7 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 
 ![chlimage_1-269](assets/chlimage_1-269.png)
 
-1. Selecteer de pagina in het taalstramien, klik op Referenties of tik op Referenties en klik of tik op Taalkopieën.
+1. Selecteer de pagina in de master taal, klik of tik op Verwijzingen en klik op Taalkopieën of tik op Taalkopieën.
 1. Klik of tik op de taalkopie om te reviseren.
 
    ![chlimage_1-270](assets/chlimage_1-270.png)
@@ -364,12 +370,12 @@ Wanneer de inhoud voor een bestaand taalexemplaar wordt vertaald, herzie de vert
 
 ## Taalkopieën vergelijken {#comparing-language-copies}
 
-Taalkopieën vergelijken met het taalstramien:
+Taalkopieën vergelijken met de Master taal:
 
 1. Navigeer in de **Sites** -console naar de taalkopie die u wilt vergelijken.
 1. Open het deelvenster **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)**.
 1. Selecteer onder de kop **Exemplaren** de optie **Taalkopieën.**
-1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met stramien **of op **Vergelijken met vorige **indien van toepassing.
+1. Selecteer uw specifieke taalkopie en klik op **Vergelijken met Master **of **Vergelijken met vorige **indien van toepassing.
 
    ![chlimage_1-37](assets/chlimage_1-37.jpeg)
 
@@ -389,9 +395,9 @@ Archiveer een vertaaltaak nadat deze is voltooid en u hoeft de gegevens over de 
 
 ## De structuur van een taalkopie maken {#creating-the-structure-of-a-language-copy}
 
-Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. Voordat u de taalkopie kunt vullen, moet u de hoofdmap [van de taal hebben](/help/sites-administering/tc-prep.md#creating-a-language-root) gemaakt.
+Vul de taalkopie zodanig dat deze inhoud bevat uit de master taal die u vertaalt. Voordat u de taalkopie kunt vullen, moet u de hoofdmap [van de taal hebben](/help/sites-administering/tc-prep.md#creating-a-language-root) gemaakt.
 
-1. Gebruik de console van Plaatsen om de taalwortel van de hoofdtaal te selecteren die u als bron gebruikt. Als u bijvoorbeeld de Engelse pagina&#39;s van de Geometrixx Demo-site wilt vertalen, selecteert u Inhoud > Geometrixx Demo-site > Engels.
+1. Gebruik de console van Plaatsen om de taalwortel van de master taal te selecteren die u als bron gebruikt. Als u bijvoorbeeld de Engelse pagina&#39;s van de demo-site van Geometrixx wilt vertalen, selecteert u Inhoud > Geometrixx demo-site > Engels.
 1. Klik of tik op Verwijzingen op de werkbalk.
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
@@ -404,6 +410,7 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de hoofdtaal die u vertaalt. 
 
    * Selecteer de optie Alle subpagina&#39;s selecteren.
    * Selecteer bij Project de optie Alleen structuur maken.
+
    ![chlimage_1-39](assets/chlimage_1-39.jpeg)
 
 1. Klik of tik op Start.
@@ -414,10 +421,10 @@ U kunt een vertaalproject manueel tot stand brengen als u verkiest de console va
 
 Wanneer u handmatig een vertaalproject maakt, moet u naast de [basiseigenschappen](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project)ook waarden opgeven voor de volgende translatie-gerelateerde eigenschappen:
 
-* **** Naam: Projectnaam.
-* **** Brontaal: De taal van de broninhoud.
-* **** Doeltaal: De taal waarin de inhoud wordt vertaald.
-* **** Vertaalmethode: Selecteer Menselijke vertaling om erop te wijzen dat de vertaling manueel moet worden uitgevoerd.
+* **Naam:** Projectnaam.
+* **Brontaal:** De taal van de broninhoud.
+* **Doeltaal:** De taal waarin de inhoud wordt vertaald.
+* **Vertaalmethode:** Selecteer Menselijke vertaling om erop te wijzen dat de vertaling manueel moet worden uitgevoerd.
 
 1. Klik of tik op Maken op de werkbalk van de projectenconsole.
 1. Selecteer de sjabloon Vertaalproject en klik of tik op Volgende.
@@ -435,7 +442,7 @@ U kunt de inhoud van een vertaalbaan downloaden, bijvoorbeeld om naar een vertaa
 
 ## Een vertaaltaak importeren {#importing-a-translation-job}
 
-U kunt vertaalde inhoud naar AEM importeren, bijvoorbeeld wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet via een connector is geïntegreerd met AEM.
+U kunt vertaalde inhoud in AEM importeren, bijvoorbeeld wanneer uw vertaalbureau de inhoud naar u stuurt omdat deze niet via een connector is geïntegreerd met AEM.
 
 1. Klik of tik op Importeren in het vervolgkeuzemenu van het onderdeel Vertaal taak.
 1. Selecteer in het dialoogvenster van de webbrowser het bestand dat u wilt importeren.
