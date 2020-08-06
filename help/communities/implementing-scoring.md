@@ -1,8 +1,8 @@
 ---
 title: Scores en badges van gemeenschappen
 seo-title: Scores en badges van gemeenschappen
-description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
-seo-description: Met scoring en badges in AEM Communities kunt u leden van de gebruikersgemeenschap identificeren en belonen
+description: Met AEM Communities scoring en badges kunt u leden van de gebruikersgemeenschap identificeren en belonen
+seo-description: Met AEM Communities scoring en badges kunt u leden van de gebruikersgemeenschap identificeren en belonen
 uuid: ca6f22d6-f25d-4f26-b589-81d1f2c830f9
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -23,7 +23,7 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-De functie AEM Communities scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
+De AEM Communities-functie voor scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
 
 De belangrijkste aspecten van scoring en badges zijn:
 
@@ -36,7 +36,7 @@ De belangrijkste aspecten van scoring en badges zijn:
 
 >[!CAUTION]
 >
->De implementatiestructuur die zichtbaar is in CRXDE Lite kan worden gewijzigd zodra de interface beschikbaar is.
+>De implementatiestructuur die zichtbaar is in CRXDE Lite, kan worden gewijzigd zodra de interface beschikbaar is.
 
 ## Badges {#badges}
 
@@ -345,7 +345,7 @@ Het `scoringRules`bezit op een merkingsregel beperkt eenvoudig welke het schatte
 
 >[!NOTE]
 >
->Beste praktijken: maak badge-afbeeldingen die uniek zijn voor elke AEM-site.
+>Beste praktijken: maak badge-afbeeldingen die uniek zijn voor elke AEM site.
 
 ![chlimage_1-369](assets/chlimage_1-369.png)
 
@@ -428,6 +428,7 @@ bijvoorbeeld: https://&lt;server>:&lt;port>/home/users/community/riley/profile.s
 >
 >* Kan naar een auteurinstantie verwijzen als de Dienst [van de](users.md#tunnel-service) Tunnel wordt toegelaten
 >* Kan een duistere, willekeurige naam zijn - zie [Beveiligingscontrolelijst](../../help/sites-administering/security-checklist.md#verify-that-you-are-not-disclosing-personally-identifiable-information-in-the-users-home-path) met betrekking tot toegestane id
+
 >
 
 
@@ -585,7 +586,7 @@ Als de functie niet naar behoren werkt, controleert u of de gegevens correct zij
 
 U kunt snel scoring en badging proberen met behulp van de site [Getting Started Tutorial](getting-started.md) (engineeren):
 
-* Toegang krijgen tot CRXDE Lite op auteur
+* CRXDE Lite benaderen bij auteur
 * Blader naar de basispagina:
 
    * /content/sites/engc/nl/jcr:content
@@ -618,7 +619,7 @@ U kunt snel scoring en badging proberen met behulp van de site [Getting Started 
 
 Zorg er daarna voor dat de forum- en commentaarcomponenten het weergeven van badges toestaan:
 
-* Opnieuw gebruiken van CRXDE Lite
+* Opnieuw CRXDE Lite gebruiken
 * Bladeren naar de forumcomponent
 
    * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
