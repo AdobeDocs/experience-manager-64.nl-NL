@@ -1,8 +1,8 @@
 ---
 title: Dispatcher configureren voor Gemeenschappen
 seo-title: Dispatcher configureren voor Gemeenschappen
-description: De verzender voor AEM-gemeenschappen configureren
-seo-description: De verzender voor AEM-gemeenschappen configureren
+description: De dispatcher voor AEM Communities configureren
+seo-description: De dispatcher voor AEM Communities configureren
 uuid: c17daca9-3244-4b10-9d4e-2e95df633dd9
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,15 +11,18 @@ topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '637'
+ht-degree: 0%
 
 ---
 
 
 # Dispatcher configureren voor Gemeenschappen {#configuring-dispatcher-for-communities}
 
-## AEM-gemeenschappen {#aem-communities}
+## AEM Communities {#aem-communities}
 
-Voor AEM-gemeenschappen is het nodig de Dispatcher te configureren om ervoor te zorgen dat de [gemeenschapssites](overview.md#community-sites)naar behoren functioneren. Er zijn aanvullende configuraties nodig wanneer u functies zoals Community Enablement en social login toevoegt.
+Voor AEM Communities is het nodig de Dispatcher te configureren om ervoor te zorgen dat de [gemeenschapssites](overview.md#community-sites)naar behoren functioneren. Er zijn aanvullende configuraties nodig wanneer u functies zoals Community Enablement en social login toevoegt.
 
 Om te leren wat nodig is voor uw specifieke implementatie en siteontwerp
 
@@ -31,7 +34,7 @@ Zie ook de belangrijkste documentatie [van de](https://helpx.adobe.com/experienc
 
 ### Overzicht {#overview}
 
-Door de verzender in cache te plaatsen voor AEM-gemeenschappen kan de verzender volledig in cache geplaatste versies van de pagina&#39;s van een communautaire site bedienen.
+Dispatcher caching for AEM Communities is de mogelijkheid voor de verzender om volledig in cache opgeslagen versies van de pagina&#39;s van een gemeenschapssite te bedienen.
 
 Momenteel wordt deze functie alleen ondersteund voor anonieme sitebezoekers, zoals gebruikers die door de site van de community bladeren, of die door een zoekopdracht op een pagina van de community landen, en voor zoekprogramma&#39;s die pagina&#39;s indexeren. Het voordeel is dat anonieme gebruikers en zoekmachines betere prestaties zullen ervaren.
 
@@ -49,7 +52,7 @@ Wanneer gevormd om verzender caching te steunen, wordt een op TTL-Gebaseerde &qu
 
 ### Configuratie {#configuration}
 
-De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van de Dispatcher - Maximale Leeftijd** plaatst de afloop van caching pagina&#39;s die onder een gespecificeerd weg verschijnen.
+De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Geheime voorgeheugen van de Verzender - de Maximale Leeftijd** plaatst de afloop van caching pagina&#39;s die onder een gespecificeerde weg verschijnen.
 
 * Vanuit de [webconsole](../../help/sites-deploying/configuring-osgi.md)
 
@@ -61,9 +64,11 @@ De OSGi configuratie **ACS AEM Commons - de Kopbal van de Controle van het Gehei
 ![chlimage_1-339](assets/chlimage_1-339.png)
 
 * **Filterpatronen**
+
    *(vereist)* Een of meer paden naar gemeenschapspagina&#39;s. Bijvoorbeeld, `/content/sites/engage/(.*)`.
 
 * **Besturingselement voor cache maximaal pagina**
+
    *(Vereist)* De maximumleeftijd (in seconden) om aan de kopbal van de Controle van het Geheime voorgeheugen toe te voegen. De waarde moet groter zijn dan nul (0).
 
 ## Clientkoppen van Dispatcher {#dispatcher-client-headers}
@@ -188,7 +193,7 @@ In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de
 
 Een belangrijke bron van problemen is het opnemen van filterregels zonder aandacht voor het effect op vroegere regels, vooral wanneer het toevoegen van een regel om toegang te ontkennen.
 
-Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer er meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
+Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
 
 ## Voorbeeld van verzender.any {#sample-dispatcher-any}
 
