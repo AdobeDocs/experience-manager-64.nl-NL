@@ -1,8 +1,8 @@
 ---
 title: De consoles aanpassen
 seo-title: De consoles aanpassen
-description: AEM verstrekt diverse mechanismen om u toe te laten om de consoles van uw auteursinstantie aan te passen
-seo-description: AEM verstrekt diverse mechanismen om u toe te laten om de consoles van uw auteursinstantie aan te passen
+description: AEM biedt verschillende mechanismen waarmee u de consoles van de ontwerpinstantie kunt aanpassen
+seo-description: AEM biedt verschillende mechanismen waarmee u de consoles van de ontwerpinstantie kunt aanpassen
 uuid: f10cea87-ef8a-468e-94ca-89a1017dcf44
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
 translation-type: tm+mt
 source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
 >
 >In dit document wordt beschreven hoe consoles in de moderne interface met aanraakbediening kunnen worden aangepast. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM verstrekt diverse mechanismen om u toe te laten om de consoles (en de [pagina auteursfunctionaliteit](/help/sites-developing/customizing-page-authoring-touch.md)) van uw auteursinstantie aan te passen.
+AEM beschikt over verschillende mechanismen waarmee u de consoles (en de [paginascretionaliteit](/help/sites-developing/customizing-page-authoring-touch.md)) van de ontwerpinstantie kunt aanpassen.
 
 * Clientlibs
 
@@ -31,7 +34,7 @@ AEM verstrekt diverse mechanismen om u toe te laten om de consoles (en de [pagin
 
    Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid om de standaardfunctionaliteit (in `/libs`) te bedekken met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
 
-Deze kunnen op verschillende manieren worden gebruikt om uw AEM-consoles uit te breiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
+Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
 
 >[!NOTE]
 >
@@ -40,9 +43,10 @@ Deze kunnen op verschillende manieren worden gebruikt om uw AEM-consoles uit te 
 >* Clibs gebruiken en maken [](/help/sites-developing/clientlibs.md).
 >* Bedekkingen gebruiken en maken [](/help/sites-developing/overlays.md).
 >* [Graniet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
+
 >
 >
-Dit onderwerp wordt ook behandeld in de zitting [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - de aanpassing van de [Gebruikersinterface voor AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Dit onderwerp wordt ook behandeld in de zitting van [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - de aanpassing van het [gebruikersinterface voor AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
@@ -56,6 +60,7 @@ Dit onderwerp wordt ook behandeld in de zitting [AEM Gems](https://docs.adobe.co
    >
    >
 1. Breng wijzigingen aan in `/apps`
+
 >
 
 
@@ -93,7 +98,7 @@ De volgende locaties in de `/libs` structuur kunnen bijvoorbeeld worden bedekt:
 -->
 >[!NOTE]
 >
->Raadpleeg het Knowledge Base-artikel, [Problemen met](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html)AEM TouchUI oplossen, voor meer tips en gereedschappen.
+>Raadpleeg het Knowledge Base-artikel, [Problemen oplossen AEM TouchUI-problemen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor meer tips en gereedschappen.
 
 <!-- Needs a review by Engineering -->
 <!--
