@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
 translation-type: tm+mt
 source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+workflow-type: tm+mt
+source-wordcount: '2002'
+ht-degree: 3%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
 
 >[!CAUTION]
 >
->Voor sommige functies voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
 
-Met Adobe Experience Manager (AEM)-inhoudsfragmenten kunt u pagina-onafhankelijke inhoud [ontwerpen, maken, beheren en](/help/sites-authoring/content-fragments.md)publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
+Met Adobe Experience Manager (AEM) Content Fragments kunt u pagina-onafhankelijke inhoud [ontwerpen, maken, beheren en](/help/sites-authoring/content-fragments.md)publiceren. Hiermee kunt u inhoud voorbereiden die klaar is voor gebruik op meerdere locaties/via meerdere kanalen.
 
-Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM-kerncomponenten. Deze leveringsvorm:
+Inhoudsfragmenten kunnen ook worden geleverd in JSON-indeling, waarbij gebruik wordt gemaakt van de JSON-exportmogelijkheden (Sling Model) van AEM kerncomponenten. Deze leveringsvorm:
 
 * biedt u de mogelijkheid om de component te gebruiken om te beheren welke elementen van een fragment moeten worden geleverd
 * staat bulklevering toe, door veelvoudige inhoudfragment kerncomponenten op de pagina toe te voegen die voor levering API wordt gebruikt
@@ -34,7 +37,7 @@ Deze en de volgende pagina&#39;s bevatten de taken voor het maken, configureren 
 
 * [Modellen](content-fragments-models.md) voor inhoudsfragmenten - uw modellen inschakelen, maken en definiëren
 
-* [Variaties - Fragmentinhoud](content-fragments-variations.md) ontwerpen - de fragmentinhoud ontwerpen en variaties in het stramien maken
+* [Variaties - Fragmentinhoud](content-fragments-variations.md) ontwerpen - de fragmentinhoud ontwerpen en variaties van de Master inhoud maken
 
 * [Markering](content-fragments-markdown.md) - markeringssyntaxis gebruiken voor uw fragment
 
@@ -65,9 +68,9 @@ Deze inhoudsfragmenten kunnen vervolgens worden samengevoegd om via verschillend
 
 ## Inhoudsfragmenten en inhoudsservices {#content-fragments-and-content-services}
 
-AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in/vanuit AEM te veralgemenen, maar niet alleen op webpagina&#39;s.
+AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
 
-Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, met behulp van gestandaardiseerde methoden die door elke client kunnen worden gebruikt. Deze kanalen kunnen zijn:
+Zij verstrekken de levering van inhoud aan kanalen die niet traditionele AEM Web-pagina&#39;s zijn, gebruikend gestandaardiseerde methodes die door om het even welke cliënt kunnen worden verbruikt. Deze kanalen kunnen zijn:
 
 * Toepassingen voor één pagina
 * Systeemeigen mobiele toepassingen
@@ -75,21 +78,22 @@ Ze leveren inhoud aan kanalen die geen traditionele AEM-webpagina&#39;s zijn, me
 
 De levering wordt uitgevoerd in JSON-indeling.
 
-Met AEM-inhoudsfragmenten kunt u gestructureerde inhoud beschrijven en beheren. Gestructureerde inhoud wordt gedefinieerd in modellen die verschillende inhoudstypen kunnen bevatten; waaronder tekst, numerieke gegevens, booleaanse gegevens, datum en tijd en meer.
+AEM Inhoudsfragmenten kunnen worden gebruikt om gestructureerde inhoud te beschrijven en te beheren. Gestructureerde inhoud wordt gedefinieerd in modellen die verschillende inhoudstypen kunnen bevatten; waaronder tekst, numerieke gegevens, booleaanse gegevens, datum en tijd en meer.
 
-Samen met de JSON-exportmogelijkheden van AEM-kerncomponenten kan deze gestructureerde inhoud vervolgens worden gebruikt om AEM-inhoud te leveren aan andere kanalen dan AEM-pagina&#39;s.
+Samen met de JSON-exportmogelijkheden van AEM kerncomponenten kan deze gestructureerde inhoud vervolgens worden gebruikt om AEM inhoud aan andere kanalen dan AEM pagina&#39;s te leveren.
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)**zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)**hebben verschillende functies in AEM:
 >
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **de inhoud van de ervaringsfragmenten** volledig wordt ingedeeld; een fragment van een webpagina.
+
 >
 >
 De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
 >
->Zie ook [Inhoudsfragmenten en ervaringsfragmenten in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html)voor meer informatie.
+>Voor meer informatie zie ook het [Begrijpen van de Fragmenten van de Inhoud en de Fragmenten van de Ervaring in AEM](https://helpx.adobe.com/experience-manager/kt/platform-repository/using/content-fragments-experience-fragments-article-understand.html).
 
 >[!CAUTION]
 >
@@ -148,6 +152,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * Vormen een integraal onderdeel van het fragment (zie [Componentdelen van een inhoudsfragment](#constituent-parts-of-a-content-fragment)).
    * De positie van het element definiëren.
    * Zie Elementen [invoegen in uw fragment](content-fragments-variations.md#inserting-assets-into-your-fragment) in de fragmenteditor voor meer informatie.
+
    >[!NOTE]
    >
    >Visuele elementen die in het inhoudsfragment zelf worden ingevoegd, worden aan de voorafgaande alinea gekoppeld. Wanneer het fragment aan een pagina wordt toegevoegd, worden deze elementen ten opzichte van die alinea verplaatst wanneer tussenliggende inhoud wordt toegevoegd.
@@ -159,7 +164,7 @@ Elementen kunnen op verschillende manieren met een inhoudsfragment worden gebrui
    * U kunt het fragment gemakkelijk gebruiken (als tussenliggende inhoud) op een pagina.
    * Zie [Gekoppelde inhoud](content-fragments-assoc-content.md) voor meer informatie.
 
-* Middelen beschikbaar in de **middelenbrowser** van de pagina-editor
+* Assets die beschikbaar zijn in de **assetbrowser** van de pagina-editor
 
    * Volledige flexibiliteit toestaan voor de selectie van een element.
    * Biedt enige flexibiliteit voor positionering.
@@ -185,7 +190,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
       * gescheiden door verticale spaties (harde return)
       * in tekstelementen met meerdere regels; in eenvoudige of gestructureerde fragmenten
-   * In de modi [RTF](content-fragments-variations.md#rich-text) en [Markering](content-fragments-variations.md#markdown) kan een alinea worden opgemaakt als een koptekst. In dat geval horen de alinea en de volgende alinea bij elkaar als één eenheid.
+   * In de modi [Tekst met opmaak](content-fragments-variations.md#rich-text) en [Markdown](content-fragments-variations.md#markdown) kan een alinea worden opgemaakt als een koptekst. In dat geval horen die alinea en de volgende alinea bij elkaar als één eenheid.
    * Inhoudsbeheer tijdens het ontwerpen van pagina&#39;s inschakelen.
 
 
@@ -198,6 +203,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Kan alleen worden toegevoegd aan, verwijderd uit of verplaatst binnen een fragment met [RTF-indeling in de fragmenteditor](content-fragments-variations.md#inserting-assets-into-your-fragment).
    * Kan alleen worden toegevoegd aan tekstelementen met meerdere regels (elk fragmenttype).
    * Aan de voorgaande tekst (alinea) worden toegevoegd.
+
    >[!CAUTION]
    >
    >Kan (per ongeluk) uit een fragment worden verwijderd door over te schakelen op de indeling Onbewerkte tekst.
@@ -227,6 +233,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
          * Door de fragmenteigenschappen **weer te geven of te bewerken** vanuit de console
          * De **metagegevens** bewerken in de fragmenteditor
+
    >[!CAUTION]
    >
    >Metagegevensverwerkingsprofielen zijn niet van toepassing op inhoudsfragmenten.
@@ -236,18 +243,18 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
    * Een integraal onderdeel van het fragment
 
       * Elk inhoudsfragment heeft één instantie van Master.
-      * Stramien kan niet worden verwijderd.
-   * Stramien is toegankelijk in de fragmenteditor onder **[Variaties](content-fragments-variations.md)**.
-   * Stramien is geen variatie als zodanig, maar is de basis van alle variaties.
+      * Master kan niet worden verwijderd.
+   * Master is toegankelijk in de fragmenteditor onder **[Variaties](content-fragments-variations.md)**.
+   * Master is geen variatie als zodanig, maar is de basis van alle variaties.
 
 
 * **Variaties**
 
    * Uitvoeringen van fragmenttekst die specifiek zijn voor redactionele doeleinden; kan verband houden met het kanaal, maar is niet verplicht, en kan ook voor ad-hoclokale aanpassingen worden gebruikt.
-   * worden gemaakt als kopieën van **stramien**, maar kunnen vervolgens naar wens worden bewerkt; er is gewoonlijk inhoudsoverlap tussen de variaties zelf.
+   * worden gemaakt als kopieën van **Master**, maar kunnen vervolgens naar wens worden bewerkt; er is gewoonlijk inhoudsoverlap tussen de variaties zelf.
    * Kan worden gedefinieerd tijdens het ontwerpen van fragmenten of vooraf worden gedefinieerd in fragmentsjablonen.
    * Opgeslagen in het fragment, om spreiding van inhoudskopieën te voorkomen.
-   * Variaties kunnen worden [gesynchroniseerd](content-fragments-variations.md#synchronizing-with-master) met stramien als de stramieninhoud is bijgewerkt.
+   * Variaties kunnen worden [gesynchroniseerd](content-fragments-variations.md#synchronizing-with-master) met Master als de Master inhoud is bijgewerkt.
    * Kan worden [samengevat](content-fragments-variations.md#summarizing-text) om de tekst snel af te kappen tot een vooraf gedefinieerde lengte.
    * Beschikbaar op het tabblad [Variaties](content-fragments-variations.md) van de fragmenteditor.
 
@@ -278,7 +285,7 @@ Voor het maken, bewerken en gebruiken van inhoudsfragmenten hebt u ook het volge
 * **Fragmentsjabloon**
 
    * Vereist voor het [maken van een eenvoudig fragment](content-fragments-managing.md#creating-content-fragments).
-   * Gewoonlijk [ontwikkeld tijdens de uitvoering](/help/sites-developing/content-fragment-templates.md)van het project; kan niet worden gemaakt tijdens het ontwerpen.
+   * Usually [developed during project implementation](/help/sites-developing/content-fragment-templates.md); cannot be created when authoring.
    * Definieert de basiseigenschappen van een eenvoudig fragment (titel, aantal tekstelementen, tagdefinities).
    * Sjabloondefinities vereisen een titel en één tekstelement. alles is optioneel . De sjabloon definieert een minimaal bereik van het fragment en de standaardinhoud, indien van toepassing. Auteurs kunnen later een fragment uitbreiden dat verder gaat dan in de sjabloon is gedefinieerd.
 
