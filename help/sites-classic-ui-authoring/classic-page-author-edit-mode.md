@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 62c6826d-bc8b-4177-a3bb-134ebafed8d2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '6177'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Sommige zijn onmiddellijk beschikbaar door sidekick, diverse anderen zijn ook be
 
 >[!CAUTION]
 >
->Deze sectie bespreekt slechts componenten die uit-van-de-doos in een standaardAEM installatie beschikbaar zijn.
+>Deze sectie bespreekt slechts componenten die uit-van-de-doos in een standaard AEM installatie beschikbaar zijn.
 >
 >Afhankelijk van uw instantie kunt u aangepaste componenten hebben die uitdrukkelijk voor uw vereisten worden ontwikkeld. Deze kunnen zelfs de zelfde naam hebben zoals sommige componenten hier besproken.
 
@@ -69,7 +72,7 @@ U kunt afbeeldingsbestanden met de volgende bestandsnaamextensies gebruiken met 
 
 >[!CAUTION]
 >
->&amp;ast;&amp;ast;Geanimeerde .gif-bestanden worden niet ondersteund in AEM voor adaptieve uitvoeringen.
+>&amp;ast;&amp;ast; Geanimeerde .gif-bestanden worden niet ondersteund in AEM voor adaptieve uitvoeringen.
 
 #### Afbeeldingsgrootten en -kwaliteit {#images-sizes-and-quality}
 
@@ -209,7 +212,7 @@ Deze zijn beschikbaar in twee tabbladen:
 
 >[!NOTE]
 >
->U kunt een aangepaste carrouselcomponent maken voor Adobe Experience Manager waarmee de digitale elementen in de AEM DAM worden weergegeven. Zie Aangepaste carrouselcomponenten [maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)voor meer informatie.
+>U kunt een aangepaste carrouselcomponent voor Adobe Experience Manager maken die digitale elementen weergeeft die zich in de AEM DAM bevinden. Zie Aangepaste carrouselcomponenten [maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/custom-carousel-components.html)voor meer informatie.
 
 ### Diagram {#chart}
 
@@ -245,7 +248,7 @@ In het volgende voorbeeld ziet u een voorbeeld van diagramgegevens, gevolgd door
 
 >[!NOTE]
 >
->U kunt een aangepast AEM-diagrambesturingselement maken dat gegevens weergeeft die zich in de JCR van AEM bevinden. Zie Gegevens van Adobe Experience Manager [weergeven in een diagram](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html)voor meer informatie.
+>U kunt een aangepast AEM grafiekbesturingselement maken dat gegevens weergeeft die zich in de AEM JCR bevinden. Zie Adobe Experience Manager-gegevens [weergeven in een grafiek](https://helpx.adobe.com/experience-manager/using/displaying-experience-manager-data-chart.html)voor meer informatie.
 
 ### Inhoudsfragment {#content-fragment}
 
@@ -275,13 +278,13 @@ De component Download maakt een koppeling op de geselecteerde webpagina om een s
 
       Bestand beschikbaar voor downloaden op de resulterende webpagina. Sleep een element uit de zoekfunctie voor inhoud of klik in het gebied om het bestand te uploaden dat u wilt downloaden.
 
-In het volgende voorbeeld wordt de component Download in Geometrixx getoond:
+In het volgende voorbeeld wordt de component Download getoond in Geometrixx:
 
 ![dc_download_use](assets/dc_download_use.png)
 
 ### External {#external}
 
-Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe toepassingen met een iframe insluiten in uw AEM-pagina.
+Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe toepassingen met een iframe insluiten in uw AEM.
 
 * **Extern**
 
@@ -301,7 +304,7 @@ Met de externe component voor toepassingsintegratie (**Extern**) kunt u externe 
 
       De grootte van het iframe definiëren
 
-De externe toepassing is geïntegreerd in het alineasysteem van de AEM-pagina. bijvoorbeeld bij het gebruik van een doeltoepassing van `https://en.wikipedia.org/wiki/Main_Page`:
+De externe toepassing is geïntegreerd in het alineasysteem van de AEM. bijvoorbeeld bij het gebruik van een doeltoepassing van `https://en.wikipedia.org/wiki/Main_Page`:
 
 ![chlimage_1-27](assets/chlimage_1-27.png)
 
@@ -311,7 +314,7 @@ De externe toepassing is geïntegreerd in het alineasysteem van de AEM-pagina. b
 
 ### Flash {#flash}
 
-Met de Flash-component kunt u een Flash-film laden. U kunt een Flash-element van de zoeker naar de component slepen of u kunt het dialoogvenster gebruiken:
+Met de component Flash kunt u een Flash-film laden. U kunt een Flash-element van de zoeker naar de component slepen of u kunt het dialoogvenster gebruiken:
 
 * **Flash**
 
@@ -321,7 +324,7 @@ Met de Flash-component kunt u een Flash-film laden. U kunt een Flash-element van
 
    * **Grootte**
 
-      Afmetingen in pixels van het weergavegebied waarin de film wordt weergegeven.
+      Dimension in pixels van het weergavegebied dat de film bevat.
 
 * **Alternatieve afbeelding**
 
@@ -363,7 +366,7 @@ U kunt een afbeelding vanuit de [Inhoudszoeker](/help/sites-classic-ui-authoring
 >
 >De voortgang van het uploaden kan niet worden gecontroleerd met Internet Explorer.
 >
->Gebruikers van Internet Explorer moeten de afbeelding uploaden en op **OK** klikken. Vervolgens opent u de afbeelding opnieuw om het geüploade bestand in de voorvertoning weer te geven en wijzigingen uit te voeren (bijsnijden).
+>Gebruikers van Internet Explorer moeten de afbeelding uploaden en op **OK** klikken. Vervolgens opent u de afbeelding opnieuw om het geüploade bestand in de voorvertoning te zien en wijzigingen uit te voeren (bijsnijden).
 >
 >Zie de sectie [Certified Platforms](/help/release-notes/release-notes.md#certifiedplatforms) voor meer informatie over HTML5-functies die door AEM worden gebruikt.
 
@@ -531,7 +534,7 @@ U kunt configureren:
 
 ### Referentie {#reference}
 
-Met de **component Reference** kunt u tekst van een andere pagina van uw AEM-website (in de huidige instantie) verwijzen. De inhoud van de alinea waarnaar wordt verwezen, wordt weergegeven alsof deze zich op de huidige pagina bevindt. De inhoud wordt bijgewerkt wanneer de bronalinea verandert (mogelijk moet de pagina worden vernieuwd).
+Met de **component Reference** kunt u naar tekst van een andere pagina van uw AEM website verwijzen (binnen de huidige instantie). De inhoud van de alinea waarnaar wordt verwezen, wordt weergegeven alsof deze zich op de huidige pagina bevindt. De inhoud wordt bijgewerkt wanneer de bronalinea verandert (mogelijk moet de pagina worden vernieuwd).
 
 * **Alineaslaggids**
 
@@ -674,7 +677,7 @@ In de diapresentatie-component worden vervolgens herhaaldelijk alle elementen ge
 De **component van de Lijst** wordt preconfigured om u te laten een lijst construeren, vullen en formatteren. Met behulp van het dialoogvenster kunt u uw tabel configureren en de inhoud maken door:
 
 * helemaal opnieuw
-* het kopiëren van en het kleven van een spreadsheet of een lijst van een externe redacteur (zoals Excel, OpenOffice, Blocnote, enz.).
+* het kopiëren en het kleven van een spreadsheet of een lijst van een externe redacteur (zoals Excel, OpenOffice, Blocnote, enz.).
 
 ![dc_table](assets/dc_table.png)
 
@@ -729,7 +732,7 @@ Voor meer gedetailleerde informatie over de component van de Tekst en de functio
 
 #### Op plaats bewerken {#inplace-editing}
 
-Naast de op een dialoogvenster gebaseerde bewerkingsmodus voor RTF-tekst biedt AEM ook de optie [Inplace Editing](/help/sites-authoring/editing-content.md), waarmee de tekst direct kan worden bewerkt zoals deze wordt weergegeven in de lay-out van de pagina.
+Naast de op een dialoogvenster gebaseerde bewerkingsmodus voor RTF-tekst, biedt AEM ook [Inplace Editing](/help/sites-authoring/editing-content.md), waarmee de tekst direct kan worden bewerkt zoals deze wordt weergegeven in de lay-out van de pagina.
 
 ### Tekst en afbeelding {#text-image}
 
@@ -819,7 +822,8 @@ Na het plaatsen van een geval van de component op uw pagina kunt u vormen:
 >
 >* `.mp4`
 >* `Ogg`
->* `FLV` (Flash-video)
+>* `FLV` (video Flash)
+
 >
 
 
@@ -852,13 +856,13 @@ Met de component Kolombeheer kunnen gebruikers selecteren hoe ze de inhoud in he
 
 ## formulier {#form}
 
-Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers invoer kunnen verzenden. Formulieren en formuliercomponenten kunnen worden gebruikt om informatie te verzamelen, waaronder gebruikersfeedback (bijvoorbeeld een vragenlijst voor klanttevredenheid) en gebruikersgegevens (bijvoorbeeld gebruikersregistratie).
+Formuliercomponenten worden gebruikt om formulieren te maken waarmee bezoekers invoer kunnen verzenden. Forms en formuliercomponenten kunnen worden gebruikt om informatie te verzamelen, waaronder gebruikersfeedback (bijvoorbeeld een vragenlijst voor klanttevredenheid) en gebruikersgegevens (bijvoorbeeld gebruikersregistratie).
 
 >[!NOTE]
 >
->Zie de Help bij [AEM Forms](/help/forms/home.md) voor informatie over AEM Forms.
+>Raadpleeg de Help bij [](/help/forms/home.md) AEM Forms voor informatie over AEM Forms.
 
-Formulieren worden samengesteld uit verschillende onderdelen:
+Forms is opgebouwd uit verschillende onderdelen:
 
 * **formulier**
 
@@ -878,7 +882,7 @@ Hieronder ziet u een voorbeeldformulier. Het bestaat uit de **component Form** (
 
 >[!NOTE]
 >
->Informatie over het verder ontwikkelen en aanpassen van uw formulieren is beschikbaar op de pagina [Formulieren](/help/sites-developing/developing-forms.md)ontwikkelen. Dit omvat onder andere het toevoegen van handelingen, beperkingen, het vooraf laden van velden en het gebruik van scripts om een service aan te roepen die actie moet ondernemen.
+>Informatie over het verder ontwikkelen en aanpassen van uw formulieren is beschikbaar op de pagina [Forms voor](/help/sites-developing/developing-forms.md)ontwikkeling. Dit omvat onder andere het toevoegen van handelingen, beperkingen, het vooraf laden van velden en het gebruik van scripts om een service aan te roepen die actie moet ondernemen.
 
 ### Algemene instellingen voor (veel) formuliercomponenten {#settings-common-to-many-form-components}
 
@@ -945,7 +949,7 @@ Deze lusjes verstrekken u van de noodzakelijke parameters; deze kunnen afhankeli
 
    * **Vereist bericht** - een bericht om gebruikers te informeren dat dit veld is vereist; een vereist veld wordt ook gemarkeerd met een sterretje.
    * **Restrictie** - De beperkingen die beschikbaar zijn voor selectie zijn afhankelijk van het type formuliercomponent.
-   * **Restrictiebericht** Een bericht om gebruikers te informeren wat vereist is.
+   * **Restrictiebericht** A-bericht om gebruikers te informeren wat vereist is.
 
 * **Stijlen**
 
@@ -982,7 +986,7 @@ Deze component is nodig om het begin van een nieuw formulier op een pagina te de
 
       Een formulier heeft een handeling nodig. De actie definieert de bewerking die wordt geactiveerd voor uitvoering met de gegevens die door de gebruiker worden verzonden (vergelijkbaar met action= in HTML). Sommige hebben een overeenkomstige Configuratie van de **Actie nodig**.
 
-      Een selectie actietypen zijn inbegrepen in een standaardAEM installatie:
+      Een selectie van actietypen is inbegrepen in een standaard AEM installatie:
 
       * **Account-verzoek**
       * **Inhoud maken**
@@ -1021,7 +1025,7 @@ Deze component is nodig om het begin van een nieuw formulier op een pagina te de
 
    * **Clientvalidatie**
 
-      Hiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie vindt *altijd* plaats.) Dit kan in combinatie met de component **Forms Captcha** worden bereikt.
+      Hiermee wordt aangegeven of clientvalidatie is vereist voor dit formulier (servervalidatie vindt *altijd* plaats.) Dit kan in combinatie met de **Forms Captcha** -component worden bereikt.
 
    * **Brontype voor validatie**
 
@@ -1083,7 +1087,7 @@ Deze component is nodig om het begin van een nieuw formulier op een pagina te de
 
          * **Pad**
 
-            Het pad (relatief) naar waar de nieuwe account wordt gemaakt en opgeslagen.
+            Het pad (relatief) naar waar het nieuwe account wordt gemaakt en opgeslagen.
 
          * **Gegevens weergeven...**
 
@@ -1248,7 +1252,7 @@ Met deze component kunt u een verborgen veld maken. Deze kunnen voor verschillen
 
 >[!NOTE]
 >
->U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder specifieke omstandigheden nodig is.
+>U kunt het formulier ook aanpassen om specifieke formuliercomponenten weer te geven of te verbergen op basis van de waarde van andere velden in het formulier. Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is.
 >
 >Zie [Formuliercomponenten](/help/sites-developing/developing-forms.md#showing-and-hiding-form-components)tonen en verbergen.
 
@@ -1325,11 +1329,11 @@ U kunt verschillende parameters opgeven, waaronder de naamruimten die kunnen wor
 
    * **Toegestane naamruimten**
 
-      * **Geometrixx buitenshuis**
+      * **Geometrixx Outdoors**
       * **Workflow**
       * **Forum**
       * **Stock Photography**
-      * **Geometrixmedia**
+      * **Geometrixx Media**
       * **Standaardlabels**
       * **Marketing**
       * **Eigenschappen van element**
