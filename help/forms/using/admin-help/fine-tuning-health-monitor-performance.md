@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b8f8bddc-0d38-4d5e-b33f-978f04bc16c6
 translation-type: tm+mt
 source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+workflow-type: tm+mt
+source-wordcount: '418'
+ht-degree: 0%
 
 ---
 
 
 # Prestaties van de fijnafgestelde Health Monitor{#fine-tuning-health-monitor-performance}
 
-Het verzamelen van de systeemstatistieken die de Health Monitor bevolken, heeft enige invloed op de prestaties van uw AEM vormt milieu. Dit effect kan worden beheerd door de Java-opties in te stellen die hieronder in uw toepassingsserver worden vermeld.
+Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft enig effect op de prestaties van uw AEM formulieromgeving. Dit effect kan worden beheerd door de Java-opties in te stellen die hieronder in uw toepassingsserver worden vermeld.
 
 <table> 
  <thead> 
@@ -29,7 +32,7 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken, heeft 
  </thead> 
  <tbody>
   <tr> 
-   <td><p>adobe.health monitor.enabled</p></td> 
+   <td><p>adobe.healthmonitor.enabled</p></td> 
    <td><p>De Health Monitor-thread in- of uitschakelen</p></td> 
    <td><p>true</p></td> 
   </tr> 
@@ -39,7 +42,7 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken, heeft 
    <td><p>true</p></td> 
   </tr> 
   <tr> 
-   <td><p>adobe.health monitor.refresh-interval</p></td> 
+   <td><p>adobe.healthmonitor.refresh-interval</p></td> 
    <td><p>Het interval in milliseconden waarna de draad van de Monitor van de Gezondheid de statistieken verzamelt</p></td> 
    <td><p>10 minuten (600.000 milliseconden)</p></td> 
   </tr> 
@@ -54,7 +57,7 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken, heeft 
    <td><p>600000</p></td> 
   </tr> 
   <tr> 
-   <td><p>adobe.workmanager.healthMonitor.enabled</p></td> 
+   <td><p>adobe.workmanager.healthmonitor.enabled</p></td> 
    <td><p>Met deze eigenschap wordt de statistische verzameling van Werkbeheer, zoals het aantal taken of het aantal werkitems, in- of uitgeschakeld.</p></td> 
    <td><p>true</p></td> 
   </tr> 
@@ -89,5 +92,5 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken, heeft 
 1. Klik onder Serverinfrastructuur op Java en de formulierworkflow > Procesdefinitie.
 1. Klik onder Extra eigenschappen op Java Virtual Machine.
 1. Typ in het vak Algemene JVM-argumenten de argumenten die u nodig hebt.
-1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de hoofdconfiguratie.
+1. Klik op OK of Toepassen en klik vervolgens rechtstreeks op Opslaan in de master configuratie.
 
