@@ -31,6 +31,7 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
    * leegmaken
    * reason
    * duration
+
    >[!NOTE]
    >
    >Deze renderer is de sjabloon voor de overzichtspagina.
@@ -85,7 +86,7 @@ In deze voorbeeldorganisatie dient een medewerker een formulier voor een verlofa
 
    XPath: `concat('https://[*server*]:[*port*]/lc',/process_data/@ptoSummaryNodePath,'.html')`.
 
-Wanneer u een taak opent in de werkruimte AEM Forms, krijgt de summiere URL toegang tot het CRX-knooppunt en geeft de HTML-renderer het overzicht weer.
+Wanneer u een taak opent in de AEM Forms-werkruimte, krijgt de summiere URL toegang tot het CRX-knooppunt en geeft de HTML-renderer het overzicht weer.
 
 De overzichtslay-out kan worden gewijzigd zonder het proces te wijzigen. De HTML-renderer geeft het overzicht op de juiste wijze weer.
 
