@@ -1,8 +1,8 @@
 ---
 title: Brontoewijzing
 seo-title: Brontoewijzing
-description: Leer hoe u omleidingen, ijdelings-URL's en virtuele hosts voor AEM definieert met behulp van resourceretoewijzing.
-seo-description: Leer hoe u omleidingen, ijdelings-URL's en virtuele hosts voor AEM definieert met behulp van resourceretoewijzing.
+description: Leer hoe te om omleidingen, ijdelheid URLs en virtuele gastheren voor AEM te bepalen door middel van middeltoewijzing.
+seo-description: Leer hoe te om omleidingen, ijdelheid URLs en virtuele gastheren voor AEM te bepalen door middel van middeltoewijzing.
 uuid: 33de7e92-8144-431b-badd-e6a667cd78e1
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 0%
 
 ---
 
 
 # Brontoewijzing{#resource-mapping}
 
-Brontoewijzing wordt gebruikt om omleidingen, ijdelings-URL&#39;s en virtuele hosts voor AEM te definiëren.
+De afbeelding van het middel wordt gebruikt om omleidingen, ijdelheid URLs en virtuele gastheren voor AEM te bepalen.
 
 U kunt bijvoorbeeld de volgende toewijzingen gebruiken:
 
@@ -66,7 +69,7 @@ De lijsten koppelen een **Patroon**, een regelmatige uitdrukking aan het verzoek
 
 Bijvoorbeeld:
 
-**Patroon**`^[^/]+/[^/]+/welcome$`
+**Patroon** `^[^/]+/[^/]+/welcome$`
 
 wordt geactiveerd voor:
 
@@ -102,23 +105,23 @@ Om de afbeelding tot stand te brengen die om het even welk verzoek aan http://lo
 
 1. Een nieuw knooppunt maken:
 
-   * **Type**`sling:Mapping`
+   * **Type** `sling:Mapping`
 
       Dit knooppunttype is bedoeld voor dergelijke afbeeldingen, hoewel het gebruik ervan niet verplicht is.
 
-   * **Naam**`localhost_any`
+   * **Naam** `localhost_any`
 
 1. Klik op Alles **opslaan**.
 1. **Voeg** de volgende eigenschappen aan dit knooppunt toe:
 
-   * **Naam**`sling:match`
+   * **Naam** `sling:match`
 
-      * **Type**`String`
-      * **Waarde**`localhost.4503/`
-   * **Naam**`sling:internalRedirect`
+      * **Type** `String`
+      * **Waarde** `localhost.4503/`
+   * **Naam** `sling:internalRedirect`
 
-      * **Type**`String`
-      * **Waarde**`/content/`
+      * **Type** `String`
+      * **Waarde** `/content/`
 
 
 1. Klik op Alles **opslaan**.
