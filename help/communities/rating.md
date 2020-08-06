@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a0e5491e-66bc-47b0-94a5-45a02bc558da
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 0%
 
 ---
 
@@ -35,11 +38,12 @@ Selecteer de geplaatste `Rating` component die u wilt openen en selecteer het `C
 
 ![chlimage_1-494](assets/chlimage_1-494.png)
 
-Onder het tabblad **[!UICONTROL Teksten en labels]** geeft u de interne id voor de waardering op.
+Onder het **[!UICONTROL Texts & Labels]** lusje specificeert u het interne herkenningsteken voor de Classificatie.
 
 ![chlimage_1-495](assets/chlimage_1-495.png)
 
-**[!UICONTROL Tally Name]**(*Required*) Een eenvoudige naam voor `Rating`welke uniek dit geval identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
+**[!UICONTROL Tally Name]**
+(*Vereist*) Een eenvoudige naam voor `Rating`welke uniek dit geval identificeert. Moet een geldige knooppuntnaam voor de bewaarplaats zijn.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
