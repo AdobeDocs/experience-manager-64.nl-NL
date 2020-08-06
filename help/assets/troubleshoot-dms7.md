@@ -1,8 +1,8 @@
 ---
-title: Het oplossen van problemen Dynamische Media - wijze Scene7
-seo-title: Het oplossen van problemen Dynamische Media - wijze Scene7
-description: Het oplossen van problemen Dynamische Media op Scene7 runmode.
-seo-description: Het oplossen van problemen Dynamische Media op Scene7 runmode.
+title: Problemen met dynamische media oplossen - Scene7-modus
+seo-title: Problemen met dynamische media oplossen - Scene7-modus
+description: Problemen met Dynamic Media oplossen in Scene7-runmode.
+seo-description: Problemen met Dynamic Media oplossen in Scene7-runmode.
 uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,28 +11,31 @@ content-type: reference
 discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '1295'
+ht-degree: 0%
 
 ---
 
 
-# Het oplossen van problemen Dynamische Media - wijze Scene7 {#troubleshooting-dynamic-media-scene-mode}
+# Problemen met dynamische media oplossen - Scene7-modus {#troubleshooting-dynamic-media-scene-mode}
 
 In het volgende document wordt het oplossen van problemen voor dynamische media beschreven bij uitvoering van de **uitvoeringsmodus dynamicmedia_scene7** .
 
-##  Instellen en configureren {#setup-and-configuration}
+## Instellen en configureren {#setup-and-configuration}
 
 Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende te doen:
 
 * Opstartopdracht bevat het `-r dynamicmedia_scene7` runmode-argument.
-* Om het even welke AEM 6.4 cumulatieve moeilijke fixpakken (GFPs) zijn geïnstalleerd eerst *vóór* om het even welke beschikbare Dynamische Packs van de Eigenschap van Media.
+* Om het even welke AEM 6.4 cumulatieve fixfixpakken (GFPs) zijn geïnstalleerd eerst *vóór* om het even welke beschikbare Dynamische Packs van de Eigenschap van Media.
 * Optioneel Feature Pack 18912 is geïnstalleerd.
 
-   Dit facultatieve eigenschappak is voor de steun van FTP of als u activa aan Dynamische Media van Dynamische Klassieke Media (Scene7) migreert.
+   Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen migreert naar Dynamic Media van Dynamic Media Classic (Scene7).
 
-* Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account wordt weergegeven onder **[!UICONTROL Available Configurations]**.
-* Zorg ervoor dat de **[!UICONTROL Dynamic Media Asset Activation (scene7)]** -replicatieagent is ingeschakeld.
+* Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder **[!UICONTROL Available Configurations]** verschijnt.
+* Zorg ervoor dat de **[!UICONTROL Dynamic Media Asset Activation (scene7)]** replicatieagent is ingeschakeld.
 
-   Deze replicatieagent wordt gevonden onder **[!UICONTROL Medewerkers]** op Auteur.
+   Deze replicatieagent wordt gevonden onder **[!UICONTROL Agents]** op Auteur.
 
 ## Algemeen (alle activa) {#general-all-assets}
 
@@ -40,18 +43,18 @@ Hier volgen enkele algemene tips en trucs voor alle elementen.
 
 ### Eigenschappen van de status van de activasynchronisatie {#asset-synchronization-status-properties}
 
-De volgende eigenschappen van elementen kunnen in CRXDE Lite worden gecontroleerd om de succesvolle synchronisatie van de activa van AEM aan Dynamische Media te bevestigen:
+De volgende elementeigenschappen kunnen in CRXDE Lite worden gecontroleerd om de geslaagde synchronisatie van het element van AEM naar Dynamic Media te bevestigen:
 
 | **Eigenschap** | **Voorbeeld** | **Beschrijving** |
 |---|---|---|
 | `<object_node>/jcr:content/metadata/dam:scene7ID` | `a|364266` | Algemene indicator dat de knoop met Dynamische Media wordt verbonden. |
-| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** - of fouttekst | Status van het uploaden van middelen naar Dynamic Media. |
+| `<object_node>/jcr:content/metadata/dam:scene7FileStatus` | **[!UICONTROL PublishComplete]** of fouttekst | Status van het uploaden van middelen naar Dynamic Media. |
 | `<object_node>/jcr:content/metadata/dam:scene7File` | `myCompany/myAssetID` | Moet worden gevuld om URLs aan ver middel van Dynamische Media te produceren. |
 | `<object_node>/jcr:content/dam:lastSyncStatus` | `success` or `failed:<error text>` | Synchronisatiestatus van sets (centrifuges, afbeeldingssets, enzovoort), voorinstellingen voor afbeeldingen, voorinstellingen voor viewers, updates van afbeeldingen met hyperlinks voor een element of afbeeldingen die zijn bewerkt. |
 
 ### Synchronisatie-logboekregistratie {#synchronization-logging}
 
-Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM-servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG op het `com.adobe.cq.dam.ips` pakket verhogen via de Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
+Synchronisatiefouten en -problemen worden aangemeld `error.log` (AEM servermap `/crx-quickstart/logs/`). Er is voldoende logboekregistratie beschikbaar om de hoofdoorzaak van de meeste problemen te bepalen. U kunt echter het logbestand voor DEBUG op het `com.adobe.cq.dam.ips` pakket verhogen via de Sling Console ([http://localhost:4502/system/console/slinglog](http://localhost:4502/system/console/slinglog)) om meer informatie te verzamelen.
 
 ### Verplaatsen, kopiëren of verwijderen {#move-copy-delete}
 
@@ -65,9 +68,9 @@ Voer de volgende handelingen uit voordat u een bewerking Verplaatsen, Kopiëren 
 
 Bij het vervangen van een bestaand dynamisch media-element (dezelfde naam en locatie) kunt u beide elementen behouden of een versie vervangen of maken:
 
-* Als u beide behoudt, wordt een nieuw element gemaakt met een unieke naam voor het gepubliceerde element-URL. Image.jpg **[!UICONTROL is bijvoorbeeld het oorspronkelijke element en]** image1.jpg **** het net geüploade element.
+* Als u beide behoudt, wordt een nieuw element gemaakt met een unieke naam voor het gepubliceerde element-URL. Dit **[!UICONTROL image.jpg]** is bijvoorbeeld het oorspronkelijke element en **[!UICONTROL image1.jpg]** het nieuw geüploade element.
 
-* Het creëren van een versie wordt niet gesteund in Dynamische Media - Scene7 wijzelevering. De nieuwe versie vervangt het bestaande element in levering.
+* Het maken van een versie wordt niet ondersteund in de modus Dynamische media - Scene7. De nieuwe versie vervangt het bestaande element in levering.
 
 ## Afbeeldingen en sets {#images-and-sets}
 
@@ -113,7 +116,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr> 
   <tr> 
    <td>Afbeelding geeft geen voorvertoning weer met de Dynamic Media-viewer</td> 
-   <td><p>Controleer of het element <code>dam:scene7File</code> in de metagegevenseigenschappen (CRXDE Lite) staat</p> </td> 
+   <td><p>Controleren of het element <code>dam:scene7File</code> in de metagegevenseigenschappen (CRXDE Lite) aanwezig is</p> </td> 
    <td><p>Controleer of alle elementen zijn verwerkt.</p> </td> 
   </tr> 
   <tr> 
@@ -172,8 +175,8 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
     </ul> </td> 
    <td> 
     <ol> 
-     <li>Controleer uw AEM-instantie met <span class="kbd">-r dynamicmedia_scene7</span></li> 
-     <li>Controleer of de Configuratie van dynamische media onder de Diensten van de Wolk behoorlijk opstelling is.</li> 
+     <li>Controleer uw AEM met <span class="kbd">-r dynamicmedia_scene7</span></li> 
+     <li>Controleer of de Configuratie van de Dynamische Media onder Cloud Services is behoorlijk opstelling.</li> 
      <li>Controleer of de map een videoprofiel heeft. Controleer ook het videoprofiel.</li> 
     </ol> </td> 
   </tr> 
@@ -216,7 +219,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   <tr> 
    <td>Voorinstellingen van viewer worden niet gepubliceerd</td> 
    <td><p>Ga door naar de diagnostische pagina van de voorbeeldmanager: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></p> <p>Berekende waarden observeren. Als u correct werkt, ziet u het volgende:</p> <p><code class="code">_DMSAMPLE status: 0 unsyced assets - activation not necessary
-       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de instellingen van de Dynamic Media-cloud zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de knoppen <strong>Alle niet-geactiveerde elementen</strong> weergeven om details weer te geven.</p> </td> 
+       _OOTB status: 0 unsyced assets - 0 unactivated assets</code></p> <p><strong>Opmerking</strong>: Het kan ongeveer 10 minuten duren nadat de instellingen voor de dynamische mediolcloud zijn geconfigureerd voor synchronisatie van de viewerelementen.</p> <p>Als er niet-geactiveerde elementen overblijven, klikt u op een van de knoppen <strong>Alle niet-geactiveerde elementen</strong> weergeven om details weer te geven.</p> </td> 
    <td> 
     <ol> 
      <li>Navigeer naar de lijst met voorinstellingen voor viewers in de beheerprogramma's: <code>http://localhost:4502/libs/dam/gui/content/s7dam/samplemanager/samplemanager.html</code></li> 
@@ -226,7 +229,7 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
   </tr> 
   <tr> 
    <td>Vooraf ingestelde illustraties van de viewer retourneren 404 vanaf de voorvertoning in elementdetails of kopiëren, URL- en insluitcode</td> 
-   <td><p>Voer in CRXDE Lite de volgende handelingen uit:</p> 
+   <td><p>Ga als volgt te werk bij CRXDE Lite:</p> 
     <ol> 
      <li>Navigeer naar de <code>&lt;sync-folder&gt;/_CSS/_OOTB</code> map in de Dynamic Media sync-map (bijvoorbeeld <code>/content/dam/_CSS/_OOTB</code>).</li> 
      <li>Zoek het metagegevensknooppunt van het problematische element (bijvoorbeeld <code>&lt;sync-folder&gt;/_CSS/_OOTB/CarouselDotsLeftButton_dark_sprite.png/jcr:content/metadata/</code>).</li> 
@@ -251,9 +254,9 @@ Raadpleeg de volgende richtlijnen voor het oplossen van problemen als u probleme
        <li>Zoeken naar viewerpakket in lijst (het begint met <span class="kbd">cq-dam-scene7-viewers-content</span>)</li> 
        <li>Klik op <strong>Opnieuw installeren</strong>.</li> 
       </ol> </li> 
-     <li>Onder de Diensten van de Wolk, navigeer aan de Dynamische pagina van de Configuratie van Media, dan open de doos van de configuratiedialoog voor uw Dynamische Media - S7 configuratie. 
+     <li>Onder Cloud Services, navigeer aan de Dynamische pagina van de Configuratie van Media, dan open de doos van de configuratiedialoog voor uw Dynamische Media - S7 configuratie. 
       <ul> 
-       <li>Breng geen veranderingen aan, klik <strong>sparen</strong>. <br /> Hierdoor wordt de logica opnieuw geactiveerd om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en illustraties te maken en te synchroniseren. <br /> </li> 
+       <li>Breng geen veranderingen aan, klik <strong>sparen</strong>. Hierdoor wordt de logica opnieuw geactiveerd om de voorbeeldelementen, de CSS met voorinstellingen voor viewers en illustraties te maken en te synchroniseren.<br /> <br /> </li> 
       </ul> </li> 
     </ol> </td> 
   </tr> 
