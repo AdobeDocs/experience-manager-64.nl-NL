@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Wanneer u een beleidsset verwijdert, kunnen beleid dat deel uitmaakte van de set
 
 De supergebruiker of de coördinator van de beleidsreeks voegt domeinen toe die in het Beheer van de Gebruiker aan de zichtbare gebruiker en de groep voor elke beleidsreeks worden gecreeerd. Deze lijst is zichtbaar aan de coördinator van de beleidsreeks en wordt gebruikt om grenzen te zetten op welke domeinen de coördinator van de beleidsreeks kan doorbladeren wanneer het kiezen van gebruikers om aan beleid toe te voegen.
 
-Wanneer u beleidssets maakt, wijst u gebruikers de rol van documentuitgever toe. De *documentuitgever* is de gebruiker die het document met een beleid beschermt. Deze gebruiker is, door gebrek, altijd inbegrepen op een beleid met volledige toegangsrechten, met inbegrip van herroepen en beleid omschakelingsmogelijkheden. Beheerders kunnen echter de toegangsrechten van de uitgever van het document voor gedeeld beleid wijzigen. De beheerder kan bijvoorbeeld het recht van de uitgever van het document uitschakelen om de toegang tot het document in te trekken of om over te schakelen op een ander beleid. Als een beheerder het beleid in bijlage aan het document schakelt, zal de naam van de Uitgever aan de naam van de eigenaar van het beleid worden bijgewerkt dat het laatst op het document wordt toegepast.
+Wanneer u beleidssets maakt, wijst u gebruikers de rol van documentuitgever toe. De *documentuitgever* is de gebruiker die het document met een beleid beschermt. Deze gebruiker is, door gebrek, altijd inbegrepen op een beleid met volledige toegangsrechten, met inbegrip van herroepen en beleid omschakelingsmogelijkheden. Beheerders kunnen echter de toegangsrechten van de uitgever van het document voor gedeeld beleid wijzigen. De beheerder kan bijvoorbeeld het recht van de uitgever van het document uitschakelen om de toegang tot het document in te trekken of om over te schakelen op een ander beleid. Als een beheerder het beleid in bijlage aan het document schakelt, zal de naam van de Uitgever aan de naam van de eigenaar van het beleid worden bijgewerkt laatst toegepast op het document.
 
 Op installatie van documentveiligheid, wordt een standaardbeleidsreeks gecreeerd genoemd *Globale Reeks* van het Beleid. Deze beleidsreeks wordt beheerd door de beheerder die de software of de coördinator van de beleidsreeks installeerde die voor deze beleidsreeks wordt aangewezen.
 
@@ -91,11 +94,11 @@ U kunt nu beleid toevoegen aan uw beleidsset. (Zie Beleid [maken en bewerken](/h
 1. Voor de documentveiligheid, pagina, klik Beleid, klik het lusje van de Reeksen van het Beleid, en klik de beleidreeks om uit te geven.
 1. Klik op het desbetreffende tabblad en bewerk indien nodig:
 
-   * **** Details: De naam en beschrijving van de beleidsset bewerken.
-   * **** Beleid: Beleid binnen de beleidsset maken, inschakelen, bewerken en verwijderen.
-   * **** Zichtbare gebruikers en groepen: Voeg zichtbare gebruikers en groepen toe en verwijder die in een beleid kunnen worden omvat.
-   * **** Beleidssetcoördinatoren: Machtigingen voor coördinatoren toevoegen, verwijderen en wijzigen.
-   * **** Documentuitgevers: Voeg gebruikers toe en verwijder gebruikers die documenten kunnen publiceren door het beleid in de reeks te gebruiken.
+   * **Details:** De naam en beschrijving van de beleidsset bewerken.
+   * **Beleid:** Beleid binnen de beleidsset maken, inschakelen, bewerken en verwijderen.
+   * **Zichtbare gebruikers en groepen:** Voeg zichtbare gebruikers en groepen toe en verwijder die in een beleid kunnen worden omvat.
+   * **Beleidssetcoördinatoren:** Machtigingen voor coördinatoren toevoegen, verwijderen en wijzigen.
+   * **Documentuitgevers:** Voeg gebruikers toe en verwijder gebruikers die documenten kunnen publiceren door het beleid in de reeks te gebruiken.
 
 1. Als u een zichtbare gebruiker of groep, beleidssetcoördinator of documentuitgever wilt verwijderen, klikt u op het desbetreffende tabblad, schakelt u het selectievakje voor de invoer in, klikt u op Verwijderen en klikt u vervolgens op OK.
 1. Als u zichtbare gebruikers of groepen, een beleidssetcoördinator of documentuitgevers wilt toevoegen, klikt u op het desbetreffende tabblad, klikt u op Gebruikers of groepen toevoegen, zoekt u naar de gebruiker of groep die u wilt toevoegen, selecteert u het item, klikt u op Toevoegen en klikt u vervolgens op OK.
