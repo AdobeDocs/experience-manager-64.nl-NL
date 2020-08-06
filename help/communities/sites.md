@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '449'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ De console van de Malplaatjes van de Plaats is zeer gelijkaardig aan de console 
 
 In het auteursmilieu, om de console van communautaire plaatsen te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen > Sitesjablonen]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Site Templates]**
 
 Deze console toont de malplaatjes waarvan een [communautaire plaats](sites-console.md) kan worden gecreeerd en laat nieuwe plaatssjablonen toe om worden gecreeerd.
 
@@ -45,11 +48,14 @@ Hiermee wordt het deelvenster Site-editor weergegeven met drie subdeelvensters:
 
 In het deelvenster Basisinformatie worden een naam, beschrijving en of de sjabloon is ingeschakeld of uitgeschakeld, geconfigureerd:
 
-* **[!UICONTROL Sjabloonnaam]** voor communautaire site De sjabloonnaam-id
+* **[!UICONTROL Community Site Template Name]**
+De sjabloonnaam-id
 
-* **[!UICONTROL Beschrijving]** van sjabloon voor communautaire site
+* **[!UICONTROL Community Site Template Description]**
+De sjabloonbeschrijving
 
-* **[!UICONTROL Uitgeschakeld/Toegelaten]** een knevelschakelaar die of het malplaatje van verwijzingen voorziet controleert
+* **[!UICONTROL Disabled/Enabled]**
+Een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen
 
 ### Miniatuur {#thumbnail}
 
