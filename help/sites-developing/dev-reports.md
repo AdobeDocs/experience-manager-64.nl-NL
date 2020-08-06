@@ -1,8 +1,8 @@
 ---
 title: Rapporten ontwikkelen
 seo-title: Rapporten ontwikkelen
-description: AEM verstrekt een selectie van standaardverslagen die op een rapporteringskader worden gebaseerd
-seo-description: AEM verstrekt een selectie van standaardverslagen die op een rapporteringskader worden gebaseerd
+description: AEM biedt een selectie van standaardverslagen op basis van een rapportagekader
+seo-description: AEM biedt een selectie van standaardverslagen op basis van een rapportagekader
 uuid: 1b406d15-bd77-4531-84c0-377dbff5cab2
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 50fafc64-d462-4386-93af-ce360588d294
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '5252'
+ht-degree: 0%
 
 ---
 
@@ -68,7 +71,8 @@ Voor de standaardrapporten die bij AEM worden geleverd:
    >
    >
 * De inspringing toont de hiërarchische gebiedsdelen tussen de knopen.
->* Items gescheiden door| een lijst van mogelijke artikelen; bijvoorbeeld typen of namen:
+>* Items gescheiden door | een lijst van mogelijke artikelen; bijvoorbeeld typen of namen:
+
 >
 >  
 Bijvoorbeeld `String|String[]` betekent dat de eigenschap String of String[]kan zijn.
@@ -354,7 +358,7 @@ N:charting
 
    * `type`
 
-      Het type grafiek dat beschikbaar is. Selecteren uit:
+      Het type grafiek dat beschikbaar is. Selecteer  vanuit:
 
       * `pie`
 Cirkeldiagram. Alleen gegenereerd op basis van huidige gegevens.
@@ -390,7 +394,7 @@ standaard: `9` (dit is ook het toegestane maximum)
 
             Maximum aantal samengevoegde momentopnamen (punten die op elke horizontale lijn worden getoond, die verschillende waarden vertegenwoordigen) waarvoor popups moeten worden getoond, d.w.z. wanneer de gebruiker muis-over op een specifieke waarde of een overeenkomstig etiket in de grafieklegende doet.
 
-            standaard: `35` (Er worden dus helemaal geen popups weergegeven als meer dan 35 verschillende waarden van toepassing zijn voor de huidige diagraminstellingen).
+            standaard: `35` (Er worden dus helemaal geen popups weergegeven als er meer dan 35 verschillende waarden van toepassing zijn voor de huidige diagraminstellingen).
 
             Er geldt een extra limiet van 10 pop-ups die parallel kunnen worden weergegeven (meerdere pop-ups kunnen worden weergegeven wanneer de muisaanwijzer op de legenda wordt geplaatst).
 
@@ -441,7 +445,7 @@ Een voorbeelddialoogvenster kan er als volgt uitzien:
 </jcr:root>
 ```
 
-Verschillende vooraf geconfigureerde componenten worden geleverd; U kunt hier in het dialoogvenster naar verwijzen met de `xtype` eigenschap met de waarde `cqinclude`:
+Verschillende vooraf geconfigureerde componenten worden geleverd; U kunt hier in het dialoogvenster naar verwijzen door de `xtype` eigenschap met de waarde `cqinclude`:
 
 * **`title`**
 
@@ -627,7 +631,7 @@ N:definitions
 
    * `page`
 
-      Hiermee wordt een padwaarde omgezet in het pad van de desbetreffende pagina. nauwkeuriger, aan de overeenkomstige `jcr:content` knoop. bijvoorbeeld, `/content/.../page/jcr:content/par/xyz` wordt omgezet in `/content/.../page/jcr:content`.
+      Hiermee wordt een padwaarde omgezet in het pad van de desbetreffende pagina. nauwkeuriger, aan de overeenkomstige `jcr:content` knoop. For example, `/content/.../page/jcr:content/par/xyz` is resolved to `/content/.../page/jcr:content`.
 
    * `path`
 
@@ -635,7 +639,7 @@ N:definitions
 
    * `pathextension`
 
-      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde te nemen vanuit een eigenschap van het knooppunt op het opgeloste pad. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad, bijvoorbeeld `/libs/wcm/core/resources/languages`door de waarde van de eigenschap te nemen `language`, om de landcode `de` op te lossen in de taalbeschrijving `German`.
+      Hiermee lost u een waarde op door een pad vooraf in te stellen en de werkelijke waarde te nemen vanuit een eigenschap van het knooppunt op het opgeloste pad. Een waarde `de` kan bijvoorbeeld worden voorafgegaan door een pad, bijvoorbeeld `/libs/wcm/core/resources/languages`door de waarde van de eigenschap te nemen `language`, om de landcode `de` op te lossen naar de taalbeschrijving `German`.
 
 * `resolverConfig`
 
@@ -834,7 +838,7 @@ Momenteel zijn de beschikbare gegevenstypeformatters:
 
    * `duration`
 
-      De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, vanaf 13/13/11 11:23u en eindigend één uur later om 13/11 12:23u.
+      De duur is de tijdspanne tussen twee bepaalde data. Bijvoorbeeld het begin en einde van een werkstroomactie die 1 uur heeft geduurd, te beginnen op 13/13/11 11:23u en eindigend één uur later op 13/11 12:23u.
 
       Het zet een numerieke waarde (die als milliseconden wordt geïnterpreteerd) in een duurkoord om; is bijvoorbeeld `30000` opgemaakt als * `30s`.*
 
@@ -1056,7 +1060,7 @@ Een kolom algemeen maken:
 
    Zie `/libs/cq/reporting/components/userreport/genericcol/cq:editConfig`
 
-* Gebruik standaard AEM-methoden om (aanvullende) kolomeigenschappen te definiëren.
+* Gebruik standaard AEM methoden om (aanvullende) kolomeigenschappen te definiëren.
 
    Merk op dat voor eigenschappen die op zowel de component als de kolominstanties worden bepaald, de waarde op de kolominstantie belangrijkheid neemt.
 
@@ -1069,6 +1073,7 @@ Een kolom algemeen maken:
    * `definitions/data/resolver` en `definitions/data/resolverConfig` (maar niet `definitions/data/preprocessing` of `.../clientFilter`) - de oplosser en configuratie
    * `definitions/queryBuilder` - de configuratie van de vraagbouwer
    * `defaults/aggregate` - het standaardaggregaat
+
    In het geval van een nieuw geval van de generische kolom op het Rapport **van de** Gebruiker worden de eigenschappen die met de dialoog worden bepaald voortgeduurd onder:
 
    `/etc/reports/userreport/jcr:content/report/columns/genericcol/settings/generic`
@@ -1312,6 +1317,7 @@ Om deze stappen te illustreren, bepaalt het volgende voorbeeld een rapport dat v
    * heeft de titel `Bundle` (kolomtitel binnen de tabel)
    * bevindt zich in de groep sidekick `OSGi Report`
    * Vernieuwingen bij opgegeven gebeurtenissen
+
    >[!NOTE]
    >
    >In dit voorbeeld zijn er geen definities van `N:data` en `P:clientFilter`. De reden hiervoor is dat de waarde die van de server wordt ontvangen, op een 1:1-basis wordt geretourneerd. Dit is het standaardgedrag.
@@ -1381,7 +1387,7 @@ Een geval van uw nieuw rapport kan nu worden gecreeerd:
 1. Open de **console van Hulpmiddelen** .
 
 1. Selecteer **Rapporten** in de linkerruit.
-1. **Dan** Nieuw... op de werkbalk. Bepaal een **Titel** en een **Naam**, selecteer uw nieuw rapporttype (het Malplaatje **van het Rapport** OSGi) van de lijst van malplaatjes, dan klik **creëren**.
+1. Dan **Nieuw...** op de werkbalk. Bepaal een **Titel** en een **Naam**, selecteer uw nieuw rapporttype (het Malplaatje **van het Rapport** OSGi) van de lijst van malplaatjes, dan klik **creëren**.
 1. Uw nieuwe rapportexemplaar zal in de lijst verschijnen. Dubbelklik hierop om te openen.
 1. Sleep een component (voor dit voorbeeld, **Bundel** in de **OSGi groep van het Rapport** ) van sidekick om de eerste kolom tot stand te brengen en de rapportdefinitie [te](/help/sites-administering/reporting.md#the-basics-of-report-customization)beginnen.
 
@@ -1439,6 +1445,7 @@ Deze kunnen worden bekeken gebruikend het menu van de Configuratie van de Webcon
 >
 >* één rapport voor twee gebruikers met verschillende taalmontages
 >* één gebruiker en twee rapporten
+
 >
 
 
