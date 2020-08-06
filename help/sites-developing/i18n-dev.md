@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 9da8823c-13a4-4244-bfab-a910a4fd44e7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1112'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ Zie [Internationaliserende componenten](/help/sites-developing/i18n.md)voor een 
 
 ## Internationalisatie van tekenreeksen in Java en JSP-code {#internationalizing-strings-in-java-and-jsp-code}
 
-Met het `com.day.cq.i18n` Java-pakket kunt u gelokaliseerde tekenreeksen weergeven in uw gebruikersinterface. De `I18n` klasse biedt de `get` methode waarmee gelokaliseerde tekenreeksen worden opgehaald uit het AEM-woordenboek. De enige vereiste parameter van de `get` methode is de letterlijke tekenreeks in de Engelse taal. Engels is de standaardtaal voor UI. In het volgende voorbeeld wordt het woord gelokaliseerd `Search`:
+Met het `com.day.cq.i18n` Java-pakket kunt u gelokaliseerde tekenreeksen weergeven in uw gebruikersinterface. De `I18n` klasse biedt de `get` methode waarmee gelokaliseerde tekenreeksen worden opgehaald uit het AEM woordenboek. De enige vereiste parameter van de `get` methode is de letterlijke tekenreeks in de Engelse taal. Engels is de standaardtaal voor UI. In het volgende voorbeeld wordt het woord gelokaliseerd `Search`:
 
 `i18n.get("Search");`
 
@@ -176,7 +179,7 @@ Test of u alle tekenreeksen in uw gebruikersinterface hebt geïnternationaliseer
 
 `USR_*Default-String*_尠`
 
-In de volgende afbeelding ziet u de stub-vertaling voor de AEM-startpagina:
+In de volgende afbeelding ziet u de stub-vertaling voor de AEM homepage:
 
 ![chlimage_1](assets/chlimage_1.jpeg)
 
