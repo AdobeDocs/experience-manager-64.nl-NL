@@ -38,7 +38,7 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 
 * XT - Adobe Target-ervaring gericht
 * A/B - Adobe Target A/B-tests
-* AEM - Adobe Experience Manager target (context- of clientcontext-gestuurde)
+* AEM - Adobe Experience Manager-doelversie (context- of clientcontext-afhankelijk)
 
 ![chlimage_1-238](assets/chlimage_1-238.png)
 
@@ -52,7 +52,7 @@ De activiteiten worden getoond met een etiket beschrijvend welke soort activitei
 * If the **xt_only** options is **not** enabled on the Adobe Target tenant (clientcode), then you can create **both** XT and A/B activities in AEM.
 >
 >
-**Aanvullende opmerking:** **xt_only** -opties zijn een instelling die wordt toegepast op een bepaalde Target-gebruiker (clientcode) en kunnen alleen rechtstreeks in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
+**Aanvullende opmerking:** **xt_only** de opties is een het plaatsen op een bepaalde huurder van het Doel wordt toegepast (cliëntcode) en kan slechts direct in Adobe Target worden gewijzigd. U kunt deze optie niet in- of uitschakelen in AEM.
 
 >[!CAUTION]
 >
@@ -109,11 +109,12 @@ Een activiteit toevoegen:
    * Selecteer het type activiteit.
 
 1. Voeg een of meer ervaringen toe aan de activiteit. Klik of tik op **Ervaring toevoegen**.
-1. Als u AEM gebruikt richt zich of de ervaring van Adobe Target richt zich:
+1. Als u gebruikmaakt van AEM of Adobe Target-ervaring als doelwit:
 
    1. Klik of tik **Selecteer Publiek **en selecteer het segment dat uw ervaringsdoelstellingen.
    1. Klik of tik op **Ervaring** toevoegen, typ een naam en klik of tik op **OK**.
    1. Klik of tik op **Volgende**.
+
    Als u Adobe Target A/B Testen gebruikt:
 
    1. Klik of tik op het potlood in het vak Soorten publiek om een publiek te selecteren.
@@ -182,6 +183,7 @@ Om de prestaties van de activiteit te bekijken en het winnen ervaringen om te ze
 
    * De huidige activiteit wordt uitgeschakeld
    * Hiermee wijzigt u alle pagina&#39;s en vervangt u de doelinhoud door de feitelijke inhoud van de winnende ervaring. De inhoud van de winnende ervaring wordt onderdeel van de normale pagina **zonder** doelframes.
+
    ![chlimage_1-240](assets/chlimage_1-240.png)
 
    Een winnende ervaring is de ervaring die meer Lift in de rapporten produceert, die op de omrekeningskoers gebaseerd is.
@@ -201,22 +203,22 @@ Deze voorwaarden gelden voor activiteiten met betrekking tot auteur- en publicat
 Wanneer een activiteit wordt gesynchroniseerd, wordt een overeenkomstige campagne gecreeerd in Adobe Target:
 
 * De activiteiten op het publicatieexemplaar hebben de zelfde naam zoals de overeenkomstige campagne van Adobe Target.
-* De activiteiten op de auteurinstantie stemmen met de campagnes van Target van de zelfde naam met het `_author` achtervoegsel.
+* De activiteiten op de auteurinstantie stemmen met campagnes van het Doel van de zelfde naam met het `_author` achtervoegsel.
 
 ![chlimage_1-241](assets/chlimage_1-241.png)
 
 De _auteuractiviteiten worden onmiddellijk gesynchroniseerd wanneer de activiteit wordt gewijzigd. De directe synchronisatie laat de simulatie van activiteiten met de Context of ContextHub van de Cliënt toe.
 
-De publicatieactiviteiten worden gesynchroniseerd wanneer de activiteit wordt gepubliceerd naar de publicatie-instantie van AEM.
+De publicatieactiviteiten worden gesynchroniseerd wanneer de activiteit wordt gepubliceerd naar de AEM-publicatie-instantie.
 
 ## Synchronisatie van activiteiten voor probleemoplossing {#troubleshooting-activity-synchronization}
 
-Wanneer AEM een activiteit met Adobe Target synchroniseert, omvat AEM een bezit van de genoemde activiteit `thirdPartyId`. De waarde van deze eigenschap is gebaseerd op het pad van de activiteit in de AEM-opslagplaats. Geen twee campagnes in Adobe Target kunnen de zelfde waarde voor het `thirdPartyId` bezit hebben. Daarom zal een activiteit er niet in slagen om te synchroniseren als een bestaande campagne (van een verschillend type AB, XT) in Adobe Target de zelfde waarde voor gebruikt `thirdPartyId`.
+Wanneer AEM een activiteit met Adobe Target synchroniseert, omvat AEM een bezit van de genoemde activiteit `thirdPartyId`. De waarde van deze eigenschap is gebaseerd op het pad van de activiteit in de AEM repository. Geen twee campagnes in Adobe Target kunnen de zelfde waarde voor het `thirdPartyId` bezit hebben. Daarom zal een activiteit er niet in slagen om te synchroniseren als een bestaande campagne (van een verschillend type AB, XT) in Adobe Target de zelfde waarde voor gebruikt `thirdPartyId`.
 
 Deze situatie kan zich voordoen in de volgende omstandigheden:
 
 1. Er wordt een activiteit gemaakt en gesynchroniseerd met Adobe Target.
-1. Op een andere AEM-instantie wordt een activiteit onder hetzelfde merk en met dezelfde naam gemaakt. Synchronisatie van deze activiteit mislukt bij poging.
+1. Op een andere AEM wordt een activiteit onder hetzelfde merk en met dezelfde naam gemaakt. Synchronisatie van deze activiteit mislukt bij poging.
 
 Deze situatie kan zich ook voordoen in de volgende omstandigheden:
 
