@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 16db5334-604f-44e2-9993-10d683dee5bb
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '923'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ In de volgende secties gebruiken wij het voorbeeld van een nieuwe pagina `b`, di
 
 * blauwdruk: `/b`
 
-   een basispagina; met 1 onderliggende pagina, bp-niveau-1.
+   Een master pagina; met 1 onderliggende pagina, bp-niveau-1.
 
 * live kopie: `/b`
 
@@ -87,7 +90,7 @@ AEM heeft [vooraf bepaald gedrag wanneer het conflictbeheer is gedeactiveerd](#b
 
 ## Conflicthandlers {#conflict-handlers}
 
-AEM gebruikt conflictmanagers om het even welke paginaconflicten op te lossen die wanneer het rollen van inhoud van een blauwdruk aan een levende kopie bestaan. De naam van pagina&#39;s wijzigen is een (de gebruikelijke) methode om dergelijke conflicten op te lossen. Er kunnen meerdere conflicthandlers operationeel zijn, zodat u verschillende gedragingen kunt selecteren.
+AEM gebruikt conflicthandlers om eventuele paginaconflicten op te lossen die bestaan wanneer het rollen van inhoud van een blauwdruk aan een levende kopie. De naam van pagina&#39;s wijzigen is een (de gebruikelijke) methode om dergelijke conflicten op te lossen. Er kunnen meerdere conflicthandlers operationeel zijn, zodat u verschillende gedragingen kunt selecteren.
 
 AEM biedt:
 
@@ -129,8 +132,8 @@ Deze conflicthandler geeft voorrang aan de blauwdruk. De pagina voor live kopië
    <td><strong>blauwdruk na rollout</strong></td> 
    <td><strong>live kopie na rollout</strong><br /> </td> 
    <td></td>
-   <td><strong>live kopie na rollout</strong><br /> <br /><br /> </td> 
-   <td><strong>publiceren na rollout</strong><br /><br /> </td> 
+   <td><strong>live kopie na rollout</strong><br /> <br /> <br /> </td> 
+   <td><strong>publiceren na rollout</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
@@ -167,11 +170,11 @@ Aangepaste conflicthandlers kunnen:
 
 ### Gedrag wanneer Conflict afhandelen gedeactiveerd {#behavior-when-conflict-handling-deactivated}
 
-Als u de [conflictafhandeling](#rollout-manager-and-conflict-handling) handmatig deactiveert, voert AEM geen actie uit op conflicterende pagina&#39;s (pagina&#39;s die niet conflicteren worden naar behoren geïmplementeerd).
+Als u de [conflictafhandeling](#rollout-manager-and-conflict-handling) handmatig deactiveert, onderneemt AEM geen actie op conflicterende pagina&#39;s (de pagina&#39;s die niet conflicteren worden naar behoren geïmplementeerd).
 
 >[!CAUTION]
 >
->AEM geeft geen aanwijzing dat conflicten worden genegeerd aangezien dit gedrag uitdrukkelijk moet worden gevormd, zodat wordt verondersteld dat het het vereiste gedrag is.
+>AEM geeft geen aanwijzing dat conflicten worden genegeerd omdat dit gedrag expliciet moet worden geconfigureerd, zodat wordt aangenomen dat het vereiste gedrag is.
 
 In dit geval heeft de live kopie in feite voorrang. De pagina met de blauwdruk `/b` wordt niet gekopieerd en de pagina met de live kopie `/b` blijft ongewijzigd.
 
@@ -190,8 +193,8 @@ In dit geval heeft de live kopie in feite voorrang. De pagina met de blauwdruk `
  <tbody> 
   <tr> 
    <td><strong>blauwdruk na rollout</strong></td> 
-   <td><strong>live kopie na rollout</strong><br /> <br /><br /> </td> 
-   <td><strong>publiceren na rollout</strong><br /><br /> </td> 
+   <td><strong>live kopie na rollout</strong><br /> <br /> <br /> </td> 
+   <td><strong>publiceren na rollout</strong><br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><code>b</code></td> 
