@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6678e3c3-fb0f-4300-8838-38f23f14db07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '2487'
+ht-degree: 1%
 
 ---
 
@@ -37,7 +40,7 @@ De algemene instructie declareert ook de [verkoopbibliotheek](/help/sites-develo
 
 ### <ui:includeClientLib> {#ui-includeclientlib}
 
-De `<ui:includeClientLib>` tag bevat een AEM HTML-clientbibliotheek, die een JS, css of een themabibliotheek kan zijn. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in de jsp. Deze markering is een gemakomslag rond de ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` de dienstinterface.
+De `<ui:includeClientLib>` tag bevat een AEM HTML-clientbibliotheek, die een js, css of themabibliotheek kan zijn. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in de jsp. Deze markering is een gemakomslag rond de ` [com.adobe.granite.ui.clientlibs.HtmlLibraryManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/ui/clientlibs/HtmlLibraryManager.html)` de dienstinterface.
 
 Deze heeft de volgende kenmerken:
 
@@ -57,7 +60,7 @@ Is gelijk aan: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeJsInclud
 
 Is gelijk aan: `com.adobe.granite.ui.clientlibs.HtmlLibraryManager#writeCssInclude`
 
-**thema** - Een markering die alleen de bibliotheken met of zonder thema aangeeft, moet worden opgenomen. Als deze waarde wordt weggelaten, worden beide sets opgenomen. Alleen van toepassing op zuivere JS- of CSS-include-bestanden (niet voor categorieën of thema-include-bestanden).
+**thema** - Een markering die alleen aangeeft of er al dan niet bibliotheken met thema&#39;s zijn. Als deze waarde wordt weggelaten, worden beide sets opgenomen. Alleen van toepassing op zuivere JS- of CSS-include-bestanden (niet voor categorieën of thema-include-bestanden).
 
 De `<ui:includeClientLib>` tag kan als volgt worden gebruikt in een jsp:
 
@@ -89,7 +92,7 @@ Als u de CQ-tagbibliotheek in uw script wilt gebruiken, moet het script beginnen
 >
 >Wanneer het `/libs/foundation/global.jsp` bestand in het script wordt opgenomen, wordt de taglib automatisch gedeclareerd.
 
-Wanneer u het jsp manuscript van een component AEM ontwikkelt, wordt het geadviseerd om volgende code bij de bovenkant van het manuscript te omvatten:
+Wanneer u het Jsp manuscript van een AEM component ontwikkelt, wordt het geadviseerd om volgende code bij de bovenkant van het manuscript te omvatten:
 
 ```xml
 <%@include file="/libs/foundation/global.jsp"%>
@@ -249,16 +252,16 @@ Moet u een script gebruiken `<%@ include file="myScript.jsp" %>` of `<cq:include
 
 Moet je gebruiken `<cq:include>` of `<sling:include>`?
 
-* Adobe raadt u aan AEM-componenten te gebruiken wanneer u deze ontwikkelt `<cq:include>`.
+* Bij het ontwikkelen van AEM componenten, adviseert Adobe dat u gebruikt `<cq:include>`.
 * `<cq:include>` kunt u scriptbestanden direct op naam opnemen wanneer u het scriptkenmerk gebruikt. Dit neemt component en middeltypeovererving in overweging, en is vaak eenvoudiger dan strikte naleving van het manuscriptresolutie van het Sling gebruikend selecteurs en uitbreidingen.
 
 ### <cq:includeClientLib> {#cq-includeclientlib}
 
 >[!CAUTION]
 >
->`<cq:includeClientLib>` is afgekeurd sinds AEM 5.6. In plaats daarvan [ moet `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) worden gebruikt.
+>`<cq:includeClientLib>` is afgekeurd sinds AEM 5.6. [ `<ui:includeClientLib>`](/help/sites-developing/taglib.md#ui-includeclientlib) moet worden gebruikt.
 
-De `<cq:includeClientLib>` tag bevat een AEM HTML-clientbibliotheek, die een JS, een css of een themabibliotheek kan zijn. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in de jsp. Deze markering is een gemakomslag rond de `com.day.cq.widget.HtmlLibraryManager` de dienstinterface.
+De `<cq:includeClientLib>` tag bevat een AEM HTML-clientbibliotheek, die kan bestaan uit een js, css of een themabibliotheek. Voor meerdere inclusies van verschillende typen, bijvoorbeeld js en css, moet deze tag meerdere keren worden gebruikt in de jsp. Deze markering is een gemakomslag rond de `com.day.cq.widget.HtmlLibraryManager` de dienstinterface.
 
 Deze heeft de volgende kenmerken:
 
@@ -278,7 +281,7 @@ Is gelijk aan: `com.day.cq.widget.HtmlLibraryManager#writeJsInclude`
 
 Is gelijk aan: `com.day.cq.widget.HtmlLibraryManager#writeCssInclude`
 
-**thema** - Een markering die alleen de bibliotheken met of zonder thema aangeeft, moet worden opgenomen. Als deze waarde wordt weggelaten, worden beide sets opgenomen. Alleen van toepassing op zuivere JS- of CSS-include-bestanden (niet voor categorieën of thema-include-bestanden).
+**thema** - Een markering die alleen aangeeft of er al dan niet bibliotheken met thema&#39;s zijn. Als deze waarde wordt weggelaten, worden beide sets opgenomen. Alleen van toepassing op zuivere JS- of CSS-include-bestanden (niet voor categorieën of thema-include-bestanden).
 
 De `<cq:includeClientLib>` tag kan als volgt worden gebruikt in een jsp:
 
@@ -306,7 +309,7 @@ De `<cq:defineObjects>` tag stelt de volgende, regelmatig gebruikte scriptobject
 
 **component**
 
-* het huidige AEM-componentobject van de huidige bron (com.day.cq.wcm.api.components.Component interface).
+* het huidige AEM componentobject van de huidige resource (com.day.cq.wcm.api.components.Component interface).
 
 **currentDesign**
 
@@ -326,7 +329,7 @@ De `<cq:defineObjects>` tag stelt de volgende, regelmatig gebruikte scriptobject
 
 **editContext**
 
-* het contextobject edit van de AEM-component (com.day.cq.wcm.api.components.EditContext interface).
+* het contextobject edit van de AEM component (com.day.cq.wcm.api.components.EditContext interface).
 
 **pageManager**
 
@@ -593,7 +596,7 @@ De `<sling:defineObjects>` tag stelt de volgende, regelmatig gebruikte scriptobj
 
 * Het huidige ResourceResolver-object. Dit is hetzelfde als slingRequest.getResourceResolver()
 
-.**slingeren**
+.**sling**
 
 * Een SlingScriptHelper-object, dat gebruiksvriendelijke methoden voor scripts bevat, voornamelijk sling.include(&#39;/some/other/resource&#39;) voor het opnemen van de reacties van andere bronnen in deze reactie (bijvoorbeeld het inbedden kopbal (de fragmenten van html) en sling.getService (foo.bar.Service.class) om de diensten OSGi terug te winnen beschikbaar in Sling (de aantekening van de Klasse afhankelijk van scripting taal).
 
