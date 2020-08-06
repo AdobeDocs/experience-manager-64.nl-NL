@@ -11,6 +11,9 @@ topic-tags: designer
 discoiquuid: abb5513f-c824-4dc2-8617-29ea47684afe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '696'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +31,7 @@ HTML5-formulieren worden steeds vaker gebruikt op aanraakapparaten. Handtekening
 
    >[!NOTE]
    >
-   >Dimensies van het veld dat is geselecteerd in Forms Designer, worden weergegeven wanneer het veld wordt weergegeven. De afmetingen van het weergegeven handtekeningvak worden echter berekend op basis van de hoogte-breedteverhouding van het veld en niet op basis van de afmetingen die zijn opgegeven in Forms Designer.
+   >Dimension van het veld dat is geselecteerd in Forms Designer, worden weergegeven wanneer het veld wordt weergegeven. De afmeting van het weergegeven handtekeningvak wordt echter berekend op basis van de hoogte-breedteverhouding van het veld en niet op basis van de afmeting die is opgegeven in Forms Designer.
 
 1. Configureer het veld Ondertekeningskrabbelen.
 
