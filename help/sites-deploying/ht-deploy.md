@@ -1,8 +1,8 @@
 ---
 title: Hoe kan ik-artikelen configureren
 seo-title: Hoe kan ik-artikelen configureren
-description: Een lijst met artikelen die beschrijven hoe specifieke implementatietaken in AEM kunnen worden uitgevoerd.
-seo-description: Een lijst met artikelen die beschrijven hoe specifieke implementatietaken in AEM kunnen worden uitgevoerd.
+description: Een lijst van artikelen die beschrijven hoe te om specifieke plaatsingstaken in AEM te verwezenlijken.
+seo-description: Een lijst van artikelen die beschrijven hoe te om specifieke plaatsingstaken in AEM te verwezenlijken.
 uuid: 5a339a6f-9c1a-4324-92d3-08b975131a1b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ topic-tags: configuring
 discoiquuid: 257f3e4a-4b59-4cbb-bf61-f72f173676e6
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 0%
 
 ---
 
 
 # Hoe kan ik-artikelen configureren{#configuration-how-to-articles}
 
-De volgende onderwerpen beschrijven hoe te om specifieke plaatsingstaken te verwezenlijken AEM:
+De volgende onderwerpen beschrijven hoe te om specifieke AEM plaatsingstaken te verwezenlijken:
 
 * [De Log Viewer gebruiken](https://helpx.adobe.com/experience-manager/kb/logsviewer.html)
 * [Workflows en het auditlogboek wissen](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)
