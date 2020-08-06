@@ -1,9 +1,12 @@
 ---
 title: De invoegtoepassingen van de Rich Text Editor configureren
-description: Leer om de stop-ins van de Redacteur van de Tekst te vormen AEM Rich om individuele functionaliteit toe te laten.
+description: Leer om de AEM Rich Text Editor stop-ins te vormen om individuele functionaliteit toe te laten.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c86d1ac76d97fa716cf70bdebe91d2b6dec46b0b
+workflow-type: tm+mt
+source-wordcount: '4207'
+ht-degree: 0%
 
 ---
 
@@ -16,7 +19,7 @@ Voor details over de andere configuraties RTE, zie [Rich Text Editor](/help/site
 
 >[!NOTE]
 >
->Als u werkt met CRXDE Lite, wordt u aangeraden de wijzigingen regelmatig op te slaan met Alles opslaan.
+>Als u met CRXDE Lite werkt, is het raadzaam de wijzigingen regelmatig op te slaan met Alles opslaan.
 
 ## Een insteekmodule activeren en de eigenschap features configureren {#activateplugin}
 
@@ -28,7 +31,7 @@ Standaard zijn `format`, `link`, `list`, `justify`, en de `control` stoppen en a
 >
 >Het respectievelijke knooppunt rtePlugins wordt &lt;*rtePlugins-node*> genoemd om dubbel werk in dit artikel te voorkomen.
 
-1. Gebruikend CRXDE Lite, bepaal de plaats van de tekstcomponent voor uw project.
+1. Zoek met CRXDE Lite de tekstcomponent voor uw project.
 1. Creeer de ouderknoop van `<rtePlugins-node>` als het niet bestaat, alvorens om het even welke stop-ins te vormen RTE:
 
    * Afhankelijk van uw component zijn de bovenliggende knooppunten:
@@ -36,22 +39,22 @@ Standaard zijn `format`, `link`, `list`, `justify`, en de `control` stoppen en a
       * `config: .../text/cq:editConfig/cq:inplaceEditing/config`
       * een alternatief configuratieknooppunt: `.../text/cq:editConfig/cq:inplaceEditing/inplaceEditingTextConfig`
       * `text: .../text/dialog/items/tab1/items/text`
-   * Zijn van type: **jcr:primaryType**`cq:Widget`
+   * Zijn van type: **jcr:primaryType** `cq:Widget`
    * Beide hebben de volgende eigenschap:
 
-      * **Naam**`name`
-      * **Type**`String`
-      * **Waarde**`./text`
+      * **Naam** `name`
+      * **Type** `String`
+      * **Waarde** `./text`
 
 
 1. Afhankelijk van de interface u voor vormt, creeer een knoop `<rtePlugins-node>`, als het niet bestaat:
 
-   * **Naam**`rtePlugins`
-   * **Type**`nt:unstructured`
+   * **Naam** `rtePlugins`
+   * **Type** `nt:unstructured`
 
 1. Maak een knooppunt voor elke plug-in die u wilt activeren:
 
-   * **Type**`nt:unstructured`
+   * **Type** `nt:unstructured`
    * **Geef** de plug-in-id van de vereiste plug-in een naam.
 
 Nadat u een insteekmodule hebt geactiveerd, volgt u deze richtlijnen om de `features` eigenschap te configureren.
@@ -73,7 +76,7 @@ Nadat u een insteekmodule hebt geactiveerd, volgt u deze richtlijnen om de `feat
   <tr> 
    <td><strong>Type</strong></td> 
    <td>Tekenreeks</td> 
-   <td>String[] (multi-string; Type instellen op String en klikken op Meerdere in CRXDE Lite)</td> 
+   <td>String[] (multi-string; Stel Type in op String en klik op Meerdere in CRXDE Lite)</td> 
    <td>Tekenreeks</td> 
   </tr> 
   <tr> 
@@ -99,19 +102,19 @@ Wanneer het gebruiken van RTE, kunnen de auteurs inhoud in één van de volgende
 
 * **Browsermodus**: Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan.
 
-* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de AEM-component worden ingevoegd.
+* **Modus** Onbewerkte tekst: Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in AEM component worden ingevoegd.
 
 * **MS Word-modus**: Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak.
 
-### De beschikbare plakopties op de werkbalk RTE configureren {#configure-paste-options-available-on-the-rte-toolbar}
+### De beschikbare plakopties op de werkbalk RTE configureren  {#configure-paste-options-available-on-the-rte-toolbar}
 
 U kunt sommige, alle, of geen van deze drie pictogrammen aan uw auteurs in de toolbar van RTE verstrekken:
 
-* **[!UICONTROL Plakken (Ctrl+V)]**: Kan vooraf worden geconfigureerd voor een van de drie bovenstaande plakmodi.
+* **[!UICONTROL Paste (Ctrl+V)]**: Kan vooraf worden geconfigureerd voor een van de drie bovenstaande plakmodi.
 
-* **[!UICONTROL Plakken als tekst]**: Biedt functionaliteit voor de normale tekstmodus.
+* **[!UICONTROL Paste as Text]**: Biedt functionaliteit voor de normale tekstmodus.
 
-* **[!UICONTROL Plakken vanuit Word]**: Biedt functionaliteit in de modus MS Word.
+* **[!UICONTROL Paste from Word]**: Biedt functionaliteit in de modus MS Word.
 
 Om RTE te vormen om de vereiste pictogrammen te tonen, volg deze stappen.
 
@@ -124,21 +127,21 @@ Om RTE te vormen om de vereiste pictogrammen te tonen, volg deze stappen.
 
 ### Het gedrag van het pictogram en de sneltoets Plakken (Ctrl+V) configureren {#configure-the-behavior-of-the-paste-ctrl-v-icon-and-shortcut}
 
-U kunt het gedrag van het pictogram **[!UICONTROL Plakken (Ctrl+V)]** vooraf configureren door de volgende stappen uit te voeren. Deze configuratie definieert ook het gedrag van sneltoetsen Ctrl+V die auteurs gebruiken om inhoud te plakken.
+U kunt het gedrag van het **[!UICONTROL Paste (Ctrl+V)]** pictogram vooraf configureren door de volgende stappen uit te voeren. Deze configuratie definieert ook het gedrag van sneltoetsen Ctrl+V die auteurs gebruiken om inhoud te plakken.
 
 De configuratie staat voor de volgende drie soorten gebruiksgevallen toe:
 
 * Plak tekst met gebruik van de standaardimplementatie van de browser. Het is geen aanbevolen methode omdat hierdoor ongewenste opmaakcodes kunnen ontstaan. Gevormd met `browser` hieronder.
 
-* Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in de AEM-component worden ingevoegd. Gevormd met `plaintext` hieronder.
+* Plak de inhoud van het klembord als onbewerkte tekst. Alle elementen van stijl en opmaak worden uit de gekopieerde inhoud verwijderd voordat deze in AEM component worden ingevoegd. Gevormd met `plaintext` hieronder.
 
 * Plak de tekst, inclusief tabellen, met opmaak wanneer u kopieert vanuit MS Word. Het kopiëren en plakken van tekst uit een andere bron, zoals een webpagina of MS Excel, wordt niet ondersteund en behoudt alleen de gedeeltelijke opmaak. Gevormd met `wordhtml` hieronder.
 
 1. Navigeer in uw component naar het `<rtePlugins-node>/edit` knooppunt. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. In de `edit` knoop creeer een bezit gebruikend de volgende details:
 
-   * **Naam**`defaultPasteMode`
-   * **Type**`String`
+   * **Naam** `defaultPasteMode`
+   * **Type** `String`
    * **Waarde** Een van de vereiste plakmodus `browser`, `plaintext`of `wordhtml`.
 
 ### Indelingen configureren die zijn toegestaan bij het plakken van inhoud {#pasteformats}
@@ -157,21 +160,22 @@ Om te vormen welke formaten worden toegestaan wanneer het kleven van tekst in AE
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/edit`. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak een knooppunt onder het `edit` knooppunt voor de HTML-plakregels:
 
-   * **Naam**`htmlPasteRules`
-   * **Type**`nt:unstructured`
+   * **Naam** `htmlPasteRules`
+   * **Type** `nt:unstructured`
 
 1. Maak een knooppunt onder `htmlPasteRules`, voor meer informatie over de toegestane basisindelingen:
 
-   * **Naam**`allowBasics`
-   * **Type**`nt:unstructured`
+   * **Naam** `allowBasics`
+   * **Type** `nt:unstructured`
 
 1. Als u de afzonderlijke geaccepteerde indelingen wilt beheren, maakt u een of meer van de volgende eigenschappen op het `allowBasics` knooppunt:
 
-   * **Naam**`bold`
-   * **Naam**`italic`
-   * **Naam**`underline`
+   * **Naam** `bold`
+   * **Naam** `italic`
+   * **Naam** `underline`
    * **Naam** `anchor` (voor zowel koppelingen als benoemde ankers)
-   * **Naam**`image`
+   * **Naam** `image`
+
    Alle eigenschappen zijn van het **Type** `Boolean`, zodat kunt u in de aangewezen **Waarde** of het vinkje selecteren of verwijderen om de functionaliteit toe te laten of onbruikbaar te maken.
 
    >[!NOTE]
@@ -271,8 +275,8 @@ Hiervoor schakelt u de insteekmodule Stijlen in.
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/styles`. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak de `features` eigenschap op het `styles` knooppunt:
 
-   * **Naam**`features`
-   * **Type**`String`
+   * **Naam** `features`
+   * **Type** `String`
    * **Waarde** `*` (sterretje)
 
 1. Sla alle wijzigingen op.
@@ -287,9 +291,10 @@ Geef vervolgens de locatie(s) op van de stijlpagina(&#39;s) waarnaar u wilt verw
 1. Navigeer bijvoorbeeld naar het hoofdknooppunt van de tekstcomponent `/apps/<myProject>/components/text`.
 1. Voeg de eigenschap toe `externalStyleSheets` aan het bovenliggende knooppunt van `<rtePlugins-node>`:
 
-   * **Naam**`externalStyleSheets`
+   * **Naam** `externalStyleSheets`
    * **Type** `String[]` (meerdere tekenreeksen; klik op **Multi** in (CRXDE)
    * **Waarde(s)** Het pad en de bestandsnaam van elk stijlblad dat u wilt opnemen. Gebruik repository paden.
+
    >[!NOTE]
    U kunt op elk later moment verwijzingen naar extra stijlbladen toevoegen.
 
@@ -309,24 +314,24 @@ De rijke Redacteur van de Tekst gebruikt een containerDOM element met een identi
 1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/styles`, zoals gecreeerd in het [Toelaten van de stijldrop-down selecteur](#styleselectorlist).
 1. Onder het knooppunt `styles`, maakt u een nieuw knooppunt (ook wel `styles`genoemd) dat de lijst bevat die beschikbaar wordt gesteld:
 
-   * **Naam**`styles`
-   * **Type**`cq:WidgetCollection`
+   * **Naam** `styles`
+   * **Type** `cq:WidgetCollection`
 
 1. Maak een nieuw knooppunt onder het `styles` knooppunt voor een afzonderlijke stijl:
 
    * **Naam**, u kunt de naam specificeren, maar het zou voor de stijl geschikt moeten zijn
-   * **Type**`nt:unstructured`
+   * **Type** `nt:unstructured`
 
 1. Voeg de eigenschap toe `cssName` aan dit knooppunt om naar de CSS-klasse te verwijzen:
 
-   * **Naam**`cssName`
-   * **Type**`String`
+   * **Naam** `cssName`
+   * **Type** `String`
    * **Waarde** De naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
 
 1. Voeg de eigenschap toe `text` aan hetzelfde knooppunt. Hiermee wordt de tekst gedefinieerd die wordt weergegeven in het selectievak:
 
-   * **Naam**`text`
-   * **Type**`String`
+   * **Naam** `text`
+   * **Type** `String`
    * **Beschrijving van de waarde** van de stijl; wordt weergegeven in het keuzemenu Stijl.
 
 1. Sla de wijzigingen op.
@@ -357,8 +362,8 @@ Schakel eerst de paraformat-plug-in in:
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/paraformat`. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak de `features` eigenschap op het `paraformat` knooppunt:
 
-   * **Naam**`features`
-   * **Type**`String`
+   * **Naam** `features`
+   * **Type** `String`
    * **Waarde** `*` (sterretje)
 
 >[!NOTE]
@@ -380,26 +385,26 @@ Alinea-indelingen kunnen voor selectie beschikbaar worden gesteld door:
 1. In de componentendefinitie, navigeer aan de knoop `<rtePlugins-node>/paraformat`, zoals gecreeerd in het [Toelaten van de formaatdrop-down selecteur](#styleselectorlist).
 1. Onder het `paraformat` knooppunt maakt u een nieuw knooppunt voor de lijst met indelingen:
 
-   * **Naam**`formats`
-   * **Type**`cq:WidgetCollection`
+   * **Naam** `formats`
+   * **Type** `cq:WidgetCollection`
 
 1. Maak een nieuw knooppunt onder het `formats` knooppunt. Dit bevat gegevens voor een afzonderlijke indeling:
 
    * **U kunt de naam** opgeven, maar deze moet wel geschikt zijn voor de indeling (bijvoorbeeld mijnalinea, mijnkop1).
-   * **Type**`nt:unstructured`
+   * **Type** `nt:unstructured`
 
 1. Aan dit knooppunt voegt u de eigenschap toe om de gebruikte bloktag te definiëren:
 
-   * **Naam**`tag`
-   * **Type**`String`
+   * **Naam** `tag`
+   * **Type** `String`
    * **Waarde** de bloktag voor de indeling; bijvoorbeeld: p, h1, h2, enz.
 
       U hoeft de punthaakjes voor scheidingstekens niet in te voeren.
 
 1. Aan de zelfde knoop voeg een ander bezit toe, voor beschrijvende tekst om in de drop-down lijst te verschijnen:
 
-   * **Naam**`description`
-   * **Type**`String`
+   * **Naam** `description`
+   * **Type** `String`
    * **Waarde** de beschrijvende tekst voor deze opmaak. bijvoorbeeld Alinea, Kop 1, Kop 2 enzovoort. Deze tekst wordt weergegeven in de selectielijst Indeling.
 
 1. Sla de wijzigingen op.
@@ -411,7 +416,7 @@ Als u aangepaste indelingen definieert, worden de standaardindelingen (`<p>`, `<
 
 ## Speciale tekens configureren {#spchar}
 
-Wanneer in een standaard AEM-installatie de `misctools` insteekmodule is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
+Wanneer de `misctools` plug-in in een standaard AEM is ingeschakeld voor speciale tekens (`specialchars`), is er direct een standaardselectie beschikbaar voor gebruik. bijvoorbeeld de symbolen copyright en trademark.
 
 U kunt RTE vormen om uw eigen selectie van karakters beschikbaar te maken; of door verschillende karakters, of een volledige opeenvolging te bepalen.
 
@@ -423,31 +428,31 @@ Als u uw eigen speciale tekens toevoegt, wordt de standaardselectie genegeerd. D
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/misctools`. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak de `features` eigenschap op het `misctools` knooppunt:
 
-   * **Naam**`features`
-   * **Type**`String[]`
-   * **Waarde**`specialchars`
+   * **Naam** `features`
+   * **Type** `String[]`
+   * **Waarde** `specialchars`
 
           (of `String / *` als u alle functies voor deze plug-in toepast)
 
 1. Onder `misctools` creeer een knoop om de speciale karakterconfiguraties te houden:
 
-   * **Naam**`specialCharsConfig`
-   * **Type**`nt:unstructured`
+   * **Naam** `specialCharsConfig`
+   * **Type** `nt:unstructured`
 
 1. Onder `specialCharsConfig` creeer een andere knoop om de lijst van karakters te houden:
 
-   * **Naam**`chars`
-   * **Type**`nt:unstructured`
+   * **Naam** `chars`
+   * **Type** `nt:unstructured`
 
 1. Onder `chars` voeg een nieuw knooppunt toe voor het opnemen van een afzonderlijke tekendefinitie:
 
    * **U kunt een naam** opgeven, maar deze moet het teken aangeven. bijvoorbeeld de helft.
-   * **Type**`nt:unstructured`
+   * **Type** `nt:unstructured`
 
 1. Aan deze knoop voeg het volgende bezit toe:
 
-   * **Naam**`entity`
-   * **Type**`String`
+   * **Naam** `entity`
+   * **Type** `String`
    * **Waarde** voor de HTML-weergave van het vereiste teken; bijvoorbeeld `&189;` voor de fractie de helft.
 
 1. Sla de wijzigingen op.
@@ -464,16 +469,18 @@ In CRXDE, voeg één enkel karakter toe dat op de toolbar van RTE ter beschikkin
 1. Voeg onder `chars` een nieuw knooppunt toe voor de definitie van het tekenbereik:
 
    * **U kunt een naam** opgeven, maar deze moet wel het tekenbereik weerspiegelen. bijvoorbeeld potloden .
-   * **Type**`nt:unstructured`
+   * **Type** `nt:unstructured`
 
 1. Voeg onder dit knooppunt (benoemd op basis van uw speciale tekenbereik) de volgende twee eigenschappen toe:
 
-   * **Naam**`rangeStart`
-      **Type**`Long`
+   * **Naam** `rangeStart`
+
+      **Type** `Long`
       **Waarde** de [Unicode](https://unicode.org/) -representatie (decimaal) van het eerste teken in het bereik
 
-   * **Naam**`rangeEnd`
-      **Type**`Long`
+   * **Naam** `rangeEnd`
+
+      **Type** `Long`
       **Waarde** de [Unicode](https://unicode.org/) -representatie (decimaal) van het laatste teken in het bereik
 
 1. Sla de wijzigingen op.
@@ -482,11 +489,11 @@ In CRXDE, voeg één enkel karakter toe dat op de toolbar van RTE ter beschikkin
 
    ![Definieer in CRXDE een tekenbereik dat beschikbaar moet worden gemaakt in RTE](assets/chlimage_1-413.png)
 
-         Definieer *in CRXDE een tekenbereik dat beschikbaar moet worden gemaakt in RTE*
+         *Definieer in CRXDE een tekenbereik dat beschikbaar moet worden gemaakt in RTE*
 
    ![Speciale tekens die beschikbaar zijn in RTE worden weergegeven aan auteurs in een pop-upvenster](assets/rtepencil.png)
 
-         De *speciale karakters beschikbaar in RTE worden getoond aan auteurs in een pop-up venster*
+         *Speciale tekens die beschikbaar zijn in RTE worden weergegeven aan auteurs in een pop-upvenster*
 
 ## Tabelstijlen configureren {#tablestyles}
 
@@ -501,12 +508,13 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/table`. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak de `features` eigenschap op het `table` knooppunt:
 
-   * **Naam**`features`
-   * **Type**`String`
+   * **Naam** `features`
+   * **Type** `String`
    * **Waarde** `*` (sterretje)
+
    >[!NOTE]
    Als u niet alle tabelfuncties wilt inschakelen, kunt u de `features` eigenschap als volgt maken:
-   * **Type**`String[]`
+   * **Type** `String[]`
 
    * **Waarde**&#x200B;één of beide van het volgende, naargelang van de behoefte:
       * `table` het bewerken van tabeleigenschappen toestaan; inclusief de stijlen.
@@ -518,30 +526,30 @@ Het kopiëren en het kleven van lijsten in of van de component van RTE is browse
 
    * Stijlen definiëren voor de gehele tabel (beschikbaar onder **Tabeleigenschappen**):
 
-      * **Naam**`tableStyles`
-      * **Type**`cq:WidgetCollection`
+      * **Naam** `tableStyles`
+      * **Type** `cq:WidgetCollection`
    * Stijlen definiëren voor de afzonderlijke cellen (beschikbaar onder **Celeigenschappen**):
 
-      * **Naam**`cellStyles`
-      * **Type**`cq:WidgetCollection`
+      * **Naam** `cellStyles`
+      * **Type** `cq:WidgetCollection`
 
 
 1. Maak een nieuw knooppunt (onder het `tableStyles` of het `cellStyles` knooppunt naar gelang van het geval) voor een afzonderlijke stijl:
 
    * **U kunt een naam** opgeven, maar deze moet de stijl weerspiegelen.
-   * **Type**`nt:unstructured`
+   * **Type** `nt:unstructured`
 
 1. Maak op dit knooppunt de eigenschappen:
 
    * De CSS-stijl definiëren waarnaar moet worden verwezen
 
-      * **Naam**`cssName`
-      * **Type**`String`
+      * **Naam** `cssName`
+      * **Type** `String`
       * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande `.`, bijvoorbeeld, `cssClass` in plaats van `.cssClass`)
    * Een beschrijvende tekst definiëren die moet worden weergegeven in de vervolgkeuzelijst
 
-      * **Naam**`text`
-      * **Type**`String`
+      * **Naam** `text`
+      * **Type** `String`
       * **De waarde** van de tekst die in de selectielijst moet worden weergegeven
 
 
@@ -574,7 +582,7 @@ Wanneer de insteekmodule voor spellingcontrole is geactiveerd, gebruikt de RTE w
 >[!NOTE]
 Het bericht `Spell checking failed` wordt gezien als een controle voor een taal wordt geprobeerd die niet geïnstalleerd is. De standaardwoordenboeken bevinden zich in `/libs/cq/spellchecker/dictionaries`de map en de juiste leesmij-bestanden. Wijzig de bestanden niet.
 
-Een standaard AEM-installatie bevat de woordenboeken voor Amerikaans Engels (`en_us`) en Brits Engels (`en_gb`). Voer de volgende stappen uit om meer woordenboeken toe te voegen.
+Een standaard AEM installatie omvat de woordenboeken voor Amerikaans Engels (`en_us`) en Brits Engels (`en_gb`). Voer de volgende stappen uit om meer woordenboeken toe te voegen.
 
 1. Ga naar de pagina [https://extensions.openoffice.org/](https://extensions.openoffice.org/).
 
@@ -592,7 +600,7 @@ Een standaard AEM-installatie bevat de woordenboeken voor Amerikaans Engels (`en
 1. Laad de .aff- en .dic-bestanden in de opslagplaats op `/apps/cq/spellchecker/dictionaries`.
 
 >[!NOTE]
-De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Als u de spellingcontrole wilt uitvoeren, klikt u op [!UICONTROL Spellingcontrole] op de werkbalk. RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
+De spellingcontrole van RTE is beschikbaar op bestelling. Deze wordt niet automatisch uitgevoerd wanneer u tekst gaat typen. Klik op de werkbalk om de spellingcontrole uit te voeren. [!UICONTROL Spellchecker] RTE controleert de spelling van woorden en benadrukt de verkeerd gespelde woorden.
 Als u een wijziging opneemt die door de spellingcontrole wordt voorgesteld, wordt de status van de tekst gewijzigd en worden onjuist gespelde woorden niet langer gemarkeerd. Als u de spellingcontrole wilt uitvoeren, tikt u nogmaals op de knop Spellingcontrole of klikt u nogmaals op de knop Spellingcontrole.
 
 ## De historiegrootte voor acties voor ongedaan maken en opnieuw uitvoeren configureren {#undohistory}
@@ -602,8 +610,8 @@ Met RTE kunnen auteurs enkele laatste bewerkingen ongedaan maken of opnieuw uitv
 1. Navigeer binnen uw component naar het knooppunt `<rtePlugins-node>/undo`. Maak deze knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak de eigenschap op het `undo` knooppunt:
 
-   * **Naam**`maxUndoSteps`
-   * **Type**`Long`
+   * **Naam** `maxUndoSteps`
+   * **Type** `Long`
    * **Waarde** het aantal stappen voor ongedaan maken dat u in de geschiedenis wilt opslaan.
 
       * De standaardwaarde is 50.
@@ -618,8 +626,8 @@ Wanneer het tabteken wordt ingedrukt binnen tekst, wordt een vooraf gedefinieerd
 1. Navigeer in uw component naar het knooppunt `<rtePlugins-node>/keys`. Maak de knooppunten als deze niet bestaan. Zie Een plug-in [activeren voor meer informatie](#activateplugin).
 1. Maak de eigenschap op het `keys` knooppunt:
 
-   * **Naam**`tabSize`
-   * **Type**`String`
+   * **Naam** `tabSize`
+   * **Type** `String`
    * **Waarde** van het aantal spatietekens dat voor de tabulator moet worden gebruikt
 
 1. Sla de wijzigingen op.
@@ -644,9 +652,10 @@ U kunt de hoogte van de bewerkbare ruimte definiëren die in het dialoogvenster 
 
 1. Maak een nieuwe eigenschap op het `../items/text` knooppunt in de dialoogdefinitie voor de component:
 
-   * **Naam**`height`
-   * **Type**`Long`
+   * **Naam** `height`
+   * **Type** `Long`
    * **Waarde** van de hoogte van het bewerkingscanvas in pixels
+
    >[!NOTE]
    Hiermee wijzigt u de hoogte van het dialoogvenster niet.
 
@@ -664,16 +673,18 @@ Bij het toevoegen van koppelingen in AEM kunt u het volgende definiëren:
 
 Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoegd, bepaal de regels van HTML.
 
-1. Gebruikend CRXDE Lite, bepaal de plaats van de tekstcomponent voor uw project.
+1. Zoek met CRXDE Lite de tekstcomponent voor uw project.
 1. Maak een nieuw knooppunt op hetzelfde niveau als `<rtePlugins-node>`, dat wil zeggen, maak het knooppunt onder het bovenliggende knooppunt van `<rtePlugins-node>`:
 
-   * **Naam**`htmlRules`
-   * **Type**`nt:unstructured`
+   * **Naam** `htmlRules`
+   * **Type** `nt:unstructured`
+
    >[!NOTE]
    Het `../items/text` knooppunt heeft de eigenschap:
-   * **Naam**`xtype`
-   * **Type**`String`
-   * **Waarde**`richtext`
+   * **Naam** `xtype`
+   * **Type** `String`
+   * **Waarde** `richtext`
+
    De locatie van het `../items/text` knooppunt kan variëren, afhankelijk van de structuur van het dialoogvenster; twee voorbeelden zijn :
    * `/apps/myProject>/components/text/dialog/items/text`
    * `/apps/<myProject>/components/text/dialog/items/panel/items/text`
@@ -681,40 +692,41 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
 
 1. Maak onder `htmlRules`een nieuw knooppunt.
 
-   * **Naam**`links`
-   * **Type**`nt:unstructured`
+   * **Naam** `links`
+   * **Type** `nt:unstructured`
 
 1. Definieer onder het `links` knooppunt de vereiste eigenschappen:
 
    * CSS-stijl voor interne koppelingen:
 
-      * **Naam**`cssInternal`
-      * **Type**`String`
+      * **Naam** `cssInternal`
+      * **Type** `String`
       * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
    * CSS-stijl voor externe koppelingen
 
-      * **Naam**`cssExternal`
-      * **Type**`String`
+      * **Naam** `cssExternal`
+      * **Type** `String`
       * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
    * Array van geldige **protocollen** (inclusief https://, https:// file://, mailto: onder andere)
 
-      * **Naam**`protocols`
-      * **Type**`String[]`
+      * **Naam** `protocols`
+      * **Type** `String[]`
       * **Waarde**(s) een of meer protocollen
    * **defaultProtocol** (eigenschap van het type **String**): Protocol dat moet worden gebruikt als de gebruiker niet uitdrukkelijk één specificeerde.
 
-      * **Naam**`defaultProtocol`
-      * **Type**`String`
+      * **Naam** `defaultProtocol`
+      * **Type** `String`
       * **Waarde**(s) een of meer standaardprotocollen
    * Definitie van hoe te om het doelattribuut van een verbinding te behandelen. Een nieuw knooppunt maken:
 
-      * **Naam**`targetConfig`
-      * **Type**`nt:unstructured`
+      * **Naam** `targetConfig`
+      * **Type** `nt:unstructured`
+
       Op het knooppunt `targetConfig`: de vereiste eigenschappen definiëren:
 
       * Geef de doelmodus op:
 
-         * **Naam**`mode`
+         * **Naam** `mode`
          * **Type** `String`)
          * **Waarde**(s) :
 
@@ -726,13 +738,13 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
             * `blank`: niet van toepassing in dit verband
       * Het doel voor interne koppelingen:
 
-         * **Naam**`targetInternal`
-         * **Type**`String`
+         * **Naam** `targetInternal`
+         * **Type** `String`
          * **Waarde** van het doel voor interne koppelingen (alleen gebruiken wanneer de modus &quot;is `auto`)
       * Het doel voor externe koppelingen:
 
-         * **Naam**`targetExternal`
-         * **Type**`String`
+         * **Naam** `targetExternal`
+         * **Type** `String`
          * **Waarde** het doel voor externe koppelingen (wordt alleen gebruikt als de modus is `auto`).
 
 
