@@ -1,8 +1,8 @@
 ---
 title: Problemen met procesrapportage oplossen
 seo-title: Problemen met procesrapportage oplossen
-description: Problemen in AEM-formulieren met JEE Process Reporting oplossen
-seo-description: Problemen in AEM-formulieren met JEE Process Reporting oplossen
+description: Problemen in AEM Forms met JEE Process Reporting oplossen
+seo-description: Problemen in AEM Forms met JEE Process Reporting oplossen
 page-status-flag: de-activated
 uuid: 1c1cc27c-fbed-4366-bffe-e1581d269a93
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0a818d19-8804-4c69-b721-31c347c593c0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 0%
 
 ---
 
