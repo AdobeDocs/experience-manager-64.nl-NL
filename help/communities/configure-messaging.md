@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 88ee8573-58c4-42cd-8e36-2ea4a0d654e4
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '860'
+ht-degree: 0%
 
 ---
 
 
 # Berichtenonderdeel {#messaging-feature}
 
-Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van AEM Gemeenschappen communautaire leden toe om met elkaar meer privé in wisselwerking te staan.
+Naast de openbaar zichtbare interacties die in forums en commentaren voorkomen, laat de overseineneigenschap van AEM Communities communityleden toe om met elkaar meer privé in wisselwerking te staan.
 
 Deze functie kan worden opgenomen wanneer een [communitysite](overview.md#communitiessites) wordt gemaakt.
 
@@ -48,7 +51,7 @@ Wanneer het overseinen voor een communautaire plaats wordt toegelaten, is het vo
 
 Om de configuratie van de lijst van berichten voor **Inbox**, **Verzonden Punten**, en de pagina&#39;s van het **Afval** van de overseineneigenschap te wijzigen, open de plaats in [auteur uitgeeft wijze](sites-console.md#authoring-site-content).
 
-In `Preview` wijze, selecteer de verbinding van **[!UICONTROL Berichten]** om de belangrijkste overseinenpagina te openen. Dan selecteer of **[!UICONTROL Inbox, Verzonden Punten, of Afval]** om de component voor die berichtlijst te vormen.
+In `Preview` wijze, selecteer de **[!UICONTROL Messages]** verbinding om de belangrijkste overseinenpagina te openen. Dan selecteer één van beide **[!UICONTROL Inbox, Sent Items, or Trash]** om de component voor die berichtlijst te vormen.
 
 Selecteer in de `Edit` modus de component op de pagina.
 
@@ -66,41 +69,59 @@ Nadat de overerving is geannuleerd, kan het `configure` pictogram worden geselec
 
 ![chlimage_1-398](assets/chlimage_1-398.png)
 
-* **[!UICONTROL De selecteur]** van de dienst (*Vereist*) plaatste dit aan de waarde van het bezit `serviceSelector.name` van de Dienst [van de Verrichtingen van het Overseinen van de Gemeenschappen van](messaging.md#messaging-operations-service)AEM Gemeenschappen.
+* **[!UICONTROL Service selector]**
+(*Vereist*) plaats dit aan de waarde van het bezit `serviceSelector.name` van de Dienst [van de Verrichtingen van het Overseinen van](messaging.md#messaging-operations-service)AEM Communities.
 
-* **[!UICONTROL Pagina]** samenstellen (*vereist*) De pagina die moet worden geopend wanneer een lid op de `Reply` knop klikt. De doelpagina moet het formulier voor **[!UICONTROL samenstellingsbericht]** bevatten.
+* **[!UICONTROL Compose Page]**
+(*Vereist*) De pagina die moet worden geopend wanneer een lid op de `Reply` knop klikt. De doelpagina moet het **[!UICONTROL Compose Message]** formulier bevatten.
 
-* **[!UICONTROL Reageren/Weergeven als bron]** Als deze optie is ingeschakeld, verwijzen de URL voor antwoorden en de URL voor weergave naar een bron, anders worden gegevens doorgegeven als queryparameters in de URL.
+* **[!UICONTROL Reply/View as Resource]**
+Als deze optie is ingeschakeld, verwijzen de URL van de reactie en de URL van de weergave naar een bron, anders worden gegevens doorgegeven als queryparameters in de URL.
 
-* **[!UICONTROL Profielweergaveformulier]** Het profielformulier dat moet worden gebruikt om het afzenderprofiel weer te geven.
+* **[!UICONTROL Profile Display Form]**
+Het profielformulier dat moet worden gebruikt om het afzenderprofiel weer te geven.
 
-* **[!UICONTROL Prullenmap]** Indien ingeschakeld worden in deze component Berichtlijst alleen berichten weergegeven die zijn gemarkeerd als verwijderd (prullenbak).
+* **[!UICONTROL Trash Folder]**
+Als deze optie is ingeschakeld, worden in deze component Berichtlijst alleen berichten weergegeven die zijn gemarkeerd als verwijderd (prullenbak).
 
-* **[!UICONTROL Mappaden]**(*vereist*) Verwijzen naar de waarden die zijn ingesteld voor `inbox.path.name` en `sentitems.path.name` in de [AEM Communities Messaging Operations Service](messaging.md#messaging-operations-service). Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van `inbox.path.name`. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van `sentitems.path.name`. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
+* **[!UICONTROL Folder Paths]**
+(*Vereist*) Verwijzend de waarden die voor `inbox.path.name` en `sentitems.path.name` in de Dienst [van de Verrichtingen van het Overseinen van](messaging.md#messaging-operations-service)AEM Communities worden geplaatst. Wanneer het vormen voor een `Inbox`, voeg één ingang toe gebruikend de waarde van `inbox.path.name`. Wanneer het vormen voor een `Outbox`, voeg één ingang toe gebruikend de waarde van `sentitems.path.name`. Voeg bij de configuratie voor `Trash`twee items met beide waarden toe.
 
 #### Tabblad Weergave {#display-tab}
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-* **[!UICONTROL Knop]** Lezen markeren Als deze optie is ingeschakeld, wordt een `Read`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
+* **[!UICONTROL Mark Read Button]**
+Als deze optie is ingeschakeld, wordt een 
+`Read`knop waarmee een bericht kan worden gemarkeerd als gelezen.
 
-* **[!UICONTROL Knop]** Ongelezen markeren Als deze optie is ingeschakeld, wordt een `Mark Unread` knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen.
+* **[!UICONTROL Mark Unread Button]**
+Als deze optie is ingeschakeld, wordt een 
+`Mark Unread` knop waarmee een bericht kan worden gemarkeerd als gelezen.
 
-* **[!UICONTROL Knop]** verwijderen Als deze optie is ingeschakeld, wordt een `Delete`knop weergegeven waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Message Options`** is ingeschakeld.
+* **[!UICONTROL Delete Button]**
+Als deze optie is ingeschakeld, wordt een 
+`Delete`knop waarmee een bericht kan worden gemarkeerd als gelezen. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Message Options`** is ingeschakeld.
 
-* **[!UICONTROL Berichtopties]** Als deze optie is ingeschakeld, worden **`Reply`** de knoppen **`Reply All`** en **`Forward`** **`Delete`** de knoppen weergegeven waarmee een bericht kan worden opnieuw verzonden of verwijderd. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Delete Button`** is ingeschakeld.
+* **[!UICONTROL Message Options]**
+Indien ingeschakeld, wordt weergegeven 
+**`Reply`**, **`Reply All`**, **`Forward`** en **`Delete`** knoppen waarmee een bericht opnieuw kan worden verzonden of verwijderd. Hiermee wordt de verwijderfunctionaliteit gedupliceerd als deze ook **`Delete Button`** is ingeschakeld.
 
-* **[!UICONTROL Berichten per pagina]** Het opgegeven aantal is het maximumaantal berichten dat per pagina in een pagineringsschema wordt weergegeven. Als geen aantal wordt gespecificeerd (verlaten leeg), dan worden alle berichten getoond en er is geen paginering.
+* **[!UICONTROL Messages Per Page]**
+Het opgegeven aantal is het maximumaantal berichten dat per pagina in een pagineringsschema wordt weergegeven. Als geen aantal wordt gespecificeerd (verlaten leeg), dan worden alle berichten getoond en er is geen paginering.
 
-* **[!UICONTROL Tijdstempelpatronen]** bieden tijdstempelpatronen voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
+* **[!UICONTROL Timestamp patterns]**
+Geef tijdstempelpatronen op voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
 
-* **[!UICONTROL De Gebruiker]** van de vertoning verkiest of **`Sender`** of **`Recipients`** om te bepalen of om de Afzender of Ontvangers te tonen.
+* **[!UICONTROL Display User]**
+Kies 
+**`Sender`** of **`Recipients`** om te bepalen of de afzender of de Ontvanger moet worden weergegeven.
 
 ### Bericht voor samenstellen configureren {#configuring-compose-message}
 
 Als u de configuratie van de pagina voor samenstellen van berichten wilt wijzigen, opent u de site in de bewerkingsmodus [van de](sites-console.md#authoring-site-content)auteur.
 
-In `Preview`wijze, selecteer de verbinding van **[!UICONTROL Berichten]** om de belangrijkste overseinenpagina te openen. Selecteer vervolgens de knop Nieuw bericht om de `Compose Message` pagina te openen.
+In `Preview`wijze, selecteer de **[!UICONTROL Messages]** verbinding om de belangrijkste overseinenpagina te openen. Selecteer vervolgens de knop Nieuw bericht om de `Compose Message` pagina te openen.
 
 Selecteer in de `Edit` modus de hoofdcomponent op de pagina die de berichttekst bevat.
 
@@ -118,33 +139,54 @@ Nadat de overerving is geannuleerd, kan het `configure` pictogram worden geselec
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
-* **[!UICONTROL Omleiden URL]** Voer de URL in van de pagina die wordt weergegeven nadat het bericht is verzonden. Bijvoorbeeld, `../messaging.html`.
+* **[!UICONTROL Redirect URL]**
+Voer de URL in van de pagina die wordt weergegeven nadat het bericht is verzonden. Bijvoorbeeld, 
+`../messaging.html`.
 
-* **[!UICONTROL Annuleer URL]** Ga URL van de getoonde pagina in als de afzender het bericht annuleert. Bijvoorbeeld, `../messaging.html`.
+* **[!UICONTROL Cancel URL]**
+Voer de URL van de weergegeven pagina in als de afzender het bericht annuleert. Bijvoorbeeld, 
+`../messaging.html`.
 
-* **[!UICONTROL Maximale lengte van onderwerp]** van het Bericht Het maximum aantal karakters toegestaan op het Onderwerp gebied. Bijvoorbeeld 500. Standaard is geen limiet.
+* **[!UICONTROL Maximum length of Message Subject]**
+Het maximum aantal tekens dat is toegestaan in het veld Onderwerp. Bijvoorbeeld 500. Standaard is geen limiet.
 
-* **[!UICONTROL Maximale lengte van berichttekst]** Het maximum aantal tekens dat is toegestaan in het veld Inhoud. Bijvoorbeeld 10000. Standaard is geen limiet.
+* **[!UICONTROL Maximum length of Message Body]**
+Het maximum aantal tekens dat is toegestaan in het veld Inhoud. Bijvoorbeeld 10000. Standaard is geen limiet.
 
-* **[!UICONTROL De selecteur]** van de dienst (*Vereist*) plaatste dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van de Gemeenschappen van](messaging.md#messaging-operations-service)AEM Gemeenschappen.
+* **[!UICONTROL Service selector]**
+(*Vereist*) plaats dit aan de waarde van het bezit **`serviceSelector.name`** van de Dienst [van de Verrichtingen van het Overseinen van](messaging.md#messaging-operations-service)AEM Communities.
 
 #### Tabblad Weergave {#display-tab-1}
 
 ![chlimage_1-403](assets/chlimage_1-403.png)
 
-* **[!UICONTROL Onderwerpveld]** tonen Indien ingeschakeld, geeft u het `Subject` veld weer en schakelt u het toevoegen van een onderwerp aan het bericht in. Standaard is niet ingeschakeld.
+* **[!UICONTROL Show Subject Field]**
+Indien ingeschakeld, geeft u de optie 
+`Subject` en schakelt u het toevoegen van een onderwerp aan het bericht in. Standaard is niet ingeschakeld.
 
-* **[!UICONTROL Onderwerplabel]** Voer de tekst in die naast het `Subject` veld moet worden weergegeven. Standaard is dit `Subject`.
+* **[!UICONTROL Subject Label]**
+Voer de tekst in die naast de 
+`Subject` field. Standaard is dit `Subject`.
 
-* **[!UICONTROL Toon het Gebied van het Dossier]** van de Band indien gecontroleerd, toon het `Attachment` gebied en laat toe toevoegend dossiergehechtheid aan het bericht toe. Standaard is niet ingeschakeld.
+* **[!UICONTROL Show Attach File Field]**
+Indien ingeschakeld, geeft u de optie 
+`Attachment` en schakel het toevoegen van bestandsbijlagen aan het bericht in. Standaard is niet ingeschakeld.
 
-* **[!UICONTROL Bestandslabel]** bijvoegen Geef de tekst op die naast het `Attachment` veld moet worden weergegeven. Standaard is dit **`Attach File`**.
+* **[!UICONTROL Attach File Label]**
+Voer de tekst in die naast de 
+`Attachment` field. Standaard is dit **`Attach File`**.
 
-* **[!UICONTROL Inhoudsveld]** tonen Indien ingeschakeld, geeft u het `Content` veld weer en schakelt u het toevoegen van een berichttekst in. Standaard is niet ingeschakeld.
+* **[!UICONTROL Show Content Field]**
+Indien ingeschakeld, geeft u de optie 
+`Content` en schakelt u het toevoegen van een berichttekst in. Standaard is niet ingeschakeld.
 
-* **[!UICONTROL Inhoudslabel]** Voer de tekst in die naast het `Content` veld moet worden weergegeven. Standaard is dit **`Body`**.
+* **[!UICONTROL Content Label]**
+Voer de tekst in die naast de 
+`Content` field. Standaard is dit **`Body`**.
 
-* **[!UICONTROL Met de Rich Text Editor]** Indien ingeschakeld, wordt het gebruik van een tekstvak voor aangepaste inhoud met een eigen RTF-editor aangegeven. Standaard is niet ingeschakeld.
+* **[!UICONTROL With Rich Text Editor]**
+Als deze optie is ingeschakeld, wordt het gebruik van een tekstvak met aangepaste inhoud met een eigen RTF-editor aangegeven. Standaard is niet ingeschakeld.
 
-* **[!UICONTROL Tijdstempelpatronen]** bieden tijdstempelpatronen voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
+* **[!UICONTROL Timestamp patterns]**
+Geef tijdstempelpatronen op voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
 
