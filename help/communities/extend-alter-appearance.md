@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 70be208d-185b-4b27-8e01-74e62f656344
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '272'
+ht-degree: 0%
 
 ---
 
@@ -59,7 +62,7 @@ Een manier om dit te doen is
 
 * Vanuit het hoofdmenu
 
-   * Selecteer **[!UICONTROL Gereedschappen > Bewerkingen > Replicatie]**
+   * Selecteer **[!UICONTROL Tools > Operations > Replication]**
    * Selecteer `Activate Tree`
    * Instellen `Start Path`: tot `/apps/custom`
    * Uitschakelen `Only Modified`
