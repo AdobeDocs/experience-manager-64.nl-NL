@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: Handleiding voor AEM 6.4-middelen
+user-guide-title: AEM 6.4 Gebruikershandleiding voor middelen
 user-guide-description: Create, manage, deliver, and optimize digital assets.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -13,7 +13,7 @@ ht-degree: 31%
 ---
 
 
-# Handleiding voor AEM 6.4-middelen {#assets}
+# AEM 6.4 Gebruikershandleiding voor middelen {#assets}
 
 + [Gebruikershandleiding voor middelen](home.md)
 + [AEM 6.4 Opmerkingen bij de release van activa](https://docs.adobe.com/content/help/en/experience-manager-64/release-notes/assets.html)
@@ -21,11 +21,11 @@ ht-degree: 31%
 + [Verbeteringen in gebruikerservaring](ux-improvements.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
 + AEM Assets gebruiken {#using}
-   + [Ervaring met homepage van AEM Assets](assets-home-page.md)
+   + [AEM Assets-ervaring voor homepage](assets-home-page.md)
    + [Middelen zoeken in AEM](search-assets.md)
    + [GQL zoeken in volledige tekst](gql-search.md)
    + [Meertalige activa](multilingual-assets.md)
-   + [Adobe Stock-elementen gebruiken in AEM Assets](aem-assets-adobe-stock.md)
+   + [Adobe Stock-middelen gebruiken in AEM Assets](aem-assets-adobe-stock.md)
    + [Map-assets en verzamelingen reviewen](bulk-approval.md)
    + [Activiteitsstroom in tijdlijn](activity-stream.md)
    + [Procesmiddelen](assets-workflow.md)
@@ -35,9 +35,9 @@ ht-degree: 31%
    + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
-   + [Het vormen Dynamic Media - wijze Scene7](config-dms7.md)
-   + [Dynamic Media configureren - hybride modus](config-dynamic.md)
-   + [Het oplossen van problemen - Dynamic Media Scene7 wijze](troubleshoot-dms7.md)
+   + [Dynamische media configureren - Scene7-modus](config-dms7.md)
+   + [Dynamische media configureren - hybride modus](config-dynamic.md)
+   + [Problemen met dynamische media oplossen - Scene7-modus](troubleshoot-dms7.md)
    + [Dynamic Media-assets beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Voorinstellingen voor Dynamic Media-viewer beheren](managing-viewer-presets.md)
@@ -48,7 +48,7 @@ ht-degree: 31%
    + [Dynamic Media-afbeeldingsprofielen](image-profiles.md)
    + [Smart Imaging](imaging-faq.md)
    + [Video](s7-video.md)
-   + [Scene7 eigenschappen toevoegen aan uw pagina](scene7.md)
+   + [Scene7-functies aan uw pagina toevoegen](scene7.md)
    + [HTTP2-levering van content](http2.md)
    + [Dynamic Media-assets leveren](delivering-dynamic-media-assets.md)
    + [Hotlinkbeveiliging in Dynamic Media activeren](hotlink-protection.md)
@@ -74,17 +74,17 @@ ht-degree: 31%
 + Elementen uitbreiden {#extending}
    + [Elementen aanpassen en uitbreiden](extending-assets.md)
    + [Middelen verwerken met behulp van media-handlers en workflows](media-handlers.md)
-   + [Extending Assets Search](searchx.md)
-   + [Installeer en vorm ImageMagick om met AEM Assets te werken](best-practices-for-imagemagick.md)
-   + [Integrating Assets with Activity Stream](extending-activity-stream.md)
-   + [Extending Asset Editor](asseteditorx.md)
+   + [Zoeken naar elementen uitbreiden](searchx.md)
+   + [ImageMagick installeren en configureren om met AEM Assets te werken](best-practices-for-imagemagick.md)
+   + [Elementen integreren met activiteitsstroom](extending-activity-stream.md)
+   + [Editor van element uitbreiden](asseteditorx.md)
    + [HTTP-API voor assets](mac-api-assets.md)
-   + [Assets Proxy Development](proxy.md)
+   + [Ontwikkeling van proxy&#39;s](proxy.md)
 + Elementen beheren {#administer}
    + [Ondersteunde indelingen voor middelen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Metagegevens voor elementen beheren](metadata.md)
-   + [XMP-terugverwijzing naar uitvoeringen](xmp-writeback.md)
+   + [Terugverwijzing naar vertoningen XMP](xmp-writeback.md)
    + [Delen van koppelingen van middelen](link-sharing.md)
    + [Rapporten over assets](asset-reports.md)
    + [Verbeterde slimme tags](enhanced-smart-tags.md)
@@ -99,18 +99,18 @@ ht-degree: 31%
    + [Richtlijnen voor migratie van middelen](assets-migration-guide.md)
    + [XMP-metadata](xmp.md)
    + [Elementennetwerkoverwegingen](assets-network-considerations.md)
-   + [AEM Assets tegenover AEM MediaLibrary](medialibrary.md)
+   + [AEM Assets versus AEM MediaLibrary](medialibrary.md)
    + [PDF-rasterizer gebruiken](aem-pdf-rasterizer.md)
    + [Beperkingen voor het uploaden van middelen configureren](configuring-asset-upload-restrictions.md)
-   + [Aanbevolen werkwijzen voor AEM- en Creative Cloud-integratie](aem-cc-integration-best-practices.md)
+   + [Aanbevolen werkwijzen op het gebied van integratie met AEM en Creative Cloud](aem-cc-integration-best-practices.md)
    + [AEM Assets integreren met InDesign-server](indesign.md)
    + [Metadataprofielen](metadata-profiles.md)
-   + [Digital Rights Management in Assets](drm.md)
+   + [Digital Rights Management in activa](drm.md)
    + [Demo-pakket gebruiken voor Asset Insights](touch-ui-using-demo-package-for-asset-insights.md)
    + [Aanbevolen werkwijzen voor het verschuiven van elementen](assets-offloading-best-practices.md)
    + [Aanbevolen werkwijzen voor bestandsindelingen voor elementen](assets-file-format-best-practices.md)
    + [Aanbevolen werkwijzen voor middelenbewaking](assets-monitoring-best-practices.md)
-   + [Camera Raw-ondersteuning](camera-raw.md)
+   + [Camera Raw ondersteuning](camera-raw.md)
    + [MIME-type activa detecteren met Apache Tika](detect-asset-mime-type-with-tika.md)
    + [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md)
    + [Ondersteuning voor IPTC-metagegevens](iptc-support.md)
@@ -119,7 +119,7 @@ ht-degree: 31%
    + [Watermerken](watermarking.md)
    + [Bulkmetagegevens importeren en exporteren](metadata-import-export.md)
    + [Elementsjablonen](asset-templates.md)
-   + [Aanbevolen werkwijzen delen via AEM naar Creative Cloud-map](aem-cc-folder-sharing-best-practices.md)
+   + [Aanbevolen werkwijzen voor het delen van mappen AEM naar Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Metagegevensschema van map](folder-metadata-schema.md)
    + [Slimme tags beheren](managing-smart-tags.md)
 + Brand Portal {#brandportal}
@@ -165,7 +165,7 @@ ht-degree: 31%
    + [Richtlijnen voor training voor Smart Content Service](smart-tags-training-guidelines.md)
    + [Video-uitvoeringen](video-renditions.md)
 + 3D-middelen {#three-d}
-   + [Opmerkingen bij de release AEM 3D](../release-notes/aem3d-release-notes.md)
+   + [Opmerkingen bij de 3D-release AEM](../release-notes/aem3d-release-notes.md)
    + [Werken met 3D-elementen](assets-3d.md)
    + [AEM 3D installeren en configureren](install-config-3d.md)
    + [Geavanceerde configuratie-instellingen](advanced-config-3d.md)
