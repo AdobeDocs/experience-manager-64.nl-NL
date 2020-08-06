@@ -1,6 +1,6 @@
 ---
-title: Cloud Service Configurations
-seo-title: Cloud Service Configurations
+title: Configuraties van Cloud Servicen
+seo-title: Configuraties van Cloud Servicen
 description: U kunt de bestaande instanties uitbreiden om uw eigen configuraties te maken
 seo-description: U kunt de bestaande instanties uitbreiden om uw eigen configuraties te maken
 uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '579'
+ht-degree: 1%
 
 ---
 
 
-# Cloud Service Configurations{#cloud-service-configurations}
+# Configuraties van Cloud Servicen{#cloud-service-configurations}
 
 Configuraties zijn ontworpen om de logica en structuur te bieden voor het opslaan van serviceconfiguraties.
 
@@ -30,7 +33,7 @@ De beginselen die bij de ontwikkeling van de configuraties worden gebruikt, zijn
 * Verwezen van analytische node(s) per pad.
 * Gemakkelijk uitbreidbaar.
 * Biedt de flexibiliteit om rekening te houden met complexere configuraties, zoals [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics).
-* Ondersteuning voor afhankelijkheden (voor [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -plug-ins is bijvoorbeeld een configuratie voor [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) vereist).
+* Ondersteuning voor afhankelijkheden ( [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -plug-ins hebben bijvoorbeeld een [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics) -configuratie nodig).
 
 ## Structuur {#structure}
 
@@ -137,7 +140,7 @@ propertyname
 
 Zie [com.day.cq.wcm.webservicesupport](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/webservicesupport/package-summary.html)voor documentatie over de API.
 
-### AEM-integratie {#aem-integration}
+### AEM integratie {#aem-integration}
 
 De beschikbare services worden vermeld op het tabblad **Cloud Services** van het dialoogvenster **Pagina-eigenschappen** (van elke pagina die overerft van `foundation/components/page` of `wcm/mobile/components/page`).
 
@@ -218,10 +221,10 @@ Deze services worden standaard geleverd:
 * [Trackerfragmenten](/help/sites-administering/external-providers.md) (Google, WebTrends, enz.)
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [&amp;Doel testen](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
-* [&amp;Zoeken bevorderen](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
+* [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
 * [Scene7](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >
->Zie ook [Een aangepaste Cloud-service](/help/sites-developing/extending-cloud-config-custom-cloud.md)maken.
+>Zie ook Een aangepaste Cloud Service [](/help/sites-developing/extending-cloud-config-custom-cloud.md)maken.
 
