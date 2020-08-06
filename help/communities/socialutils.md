@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4ade0d6b-041e-4a2f-98f8-3b8fcae0fb29
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ## Pakket met sociale hulpmiddelen is vervangen {#socialutils-package-deprecated}
 
-Het pakket **com.adobe.cq.social.ugcbase.SocialUtils** is afgekeurd in AEM 6.1.
+Het pakket **com.adobe.cq.social.ugcbase.SocialUtils** is vervangen in AEM 6.1.
 
 In de volgende tabellen worden de methoden weergegeven die moeten worden gebruikt in plaats van de methoden SocialUtils.
 
-## SocialResourceUtilities-pakket {#socialresourceutilities-package}
+## SocialResourceUtilities-pakket  {#socialresourceutilities-package}
 
 | Methoden in com.adobe.cq.social.srp.utilities.api.SocialResourceUtilities |
 |---|
