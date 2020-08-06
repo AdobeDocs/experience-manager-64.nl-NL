@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
-user-guide-title: AEM 6.4 Handleiding voor beheer
+user-guide-title: AEM 6.4 Gebruikershandleiding voor het beheer
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -13,7 +13,7 @@ ht-degree: 6%
 ---
 
 
-# AEM 6.4 Handleiding voor beheer {#administering}
+# AEM 6.4 Gebruikershandleiding voor het beheer {#administering}
 
 + [Overzicht van de gebruikershandleiding beheren](home.md)
 + Sitefuncties {#introduction}
@@ -34,7 +34,7 @@ ht-degree: 6%
    + [Wizard Taalkopie](tc-wizard.md)
    + [Verbeterde vertaling](tc-enhancements.md)
    + [Aanbevolen werkwijzen voor vertaling](tc-bp.md)
-   + [Veelgestelde vragen over AEM](aem-faqs.md)
+   + [Veelgestelde vragen AEM](aem-faqs.md)
 + Bewerkingen {#operations}
    + [Dashboards](dashboards.md)
    + [Operations-dashboard](operations-dashboard.md)
@@ -48,14 +48,14 @@ ht-degree: 6%
    + [E-mailmelding configureren](notification.md)
    + [Het vormen RTE voor het Produceren van Toegankelijke Plaatsen](rte-accessible-content.md)
    + [De externe koppelingencontrole](external-link-checker.md)
-   + [Problemen met AEM oplossen](troubleshoot.md)
-   + [Controllerlog onderhoud in AEM 6](operations-audit-log.md)
+   + [AEM](troubleshoot.md)
+   + [Onderhoud controlelogbestand in AEM 6](operations-audit-log.md)
    + [Editor](enable-classic-ui-editor.md)
    + [Toegang tot werkstromen beheren](workflows-managing.md)
    + [cURL gebruiken met AEM](curl.md)
    + [Ongedaan maken configureren voor paginabewerking](config-undo.md)
    + [Proxyserver (proxy.jar)](proxy-jar.md)
-   + [Configureren voor AEM-toepassingen](config-apps.md)
+   + [Configureren voor AEM toepassingen](config-apps.md)
    + [Workflows beheren](workflows.md)
    + [Zoekformulieren configureren](search-forms.md)
    + [Gereedschapsconsoles](tools-consoles.md)
@@ -71,25 +71,25 @@ ht-degree: 6%
    + [Beheer van gebruikers-, groep- en toegangsrechten](user-group-ac-admin.md)
    + [Beveiligingscontrolelijst](security-checklist.md)
    + [OWASP Top 10](owasp-top10.md)
-   + [AEM wordt uitgevoerd in productiekaartmodus](production-ready.md)
+   + [AEM uitvoeren in productielocatie](production-ready.md)
    + [Identity Management](identity-management.md)
-   + [Ondersteuning voor verificatie en Admin Console van Adobe IMS voor door AEM beheerde services](ims-config-and-admin-console.md)
+   + [Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor AEM Managed Services](ims-config-and-admin-console.md)
    + [Een gesloten gebruikersgroep maken](cug.md)
    + [Het verminderen van rangschikkingskwesties in AEM](mitigating-serialization-issues.md)
    + [Gebruikerssynchronisatie](sync.md)
    + [Ondersteuning voor ingekapselde token](encapsulated-token.md)
    + [Single Sign On](/help/sites-deploying/single-sign-on.md)
-   + [Gebruikersbeheerbewerkingen in AEM controleren](audit-user-management-operations.md)
+   + [Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren](audit-user-management-operations.md)
    + [Standaard SSL](ssl-by-default.md)
    + [SAML 2.0-verificatiehandler](saml-2-0-authenticationhandler.md)
    + [Gesloten gebruikersgroepen in AEM](closed-user-groups.md)
    + [granietbewerkingen - gebruikers- en groepsbeheer](granite-user-group-admin.md)
-   + [CRXDE Lite inschakelen in AEM](enabling-crxde-lite.md)
+   + [CRXDE Lite in AEM inschakelen](enabling-crxde-lite.md)
    + [LDAP configureren met AEM 6](ldap-config.md)
    + [Het beheerderswachtwoord configureren bij installatie](security-configure-admin-password.md)
-   + [Servicegebruikers in AEM](security-service-users.md)
+   + [Gebruikers van de service in AEM](security-service-users.md)
    + [Coderingsondersteuning voor configuratieeigenschappen](encryption-support-for-configuration-properties.md)
-   + [Behandeling van GDPR-verzoeken voor de AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
+   + [Behandeling van GDPR-verzoeken aan de AEM Stichting](handling-gdpr-requests-for-aem-platform.md)
    + [Filter voor inhoudsafzetting](content-disposition-filter.md)
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
@@ -99,7 +99,7 @@ ht-degree: 6%
    + [Het vormen Segmentatie met ContextHub](segmentation.md)
    + [Segmentatie configureren](campaign-segmentation.md)
    + [De importmodule voor ontwerpen voor bestemmingspagina&#39;s uitbreiden en configureren](extending-the-design-importer-for-landingpages.md)
-   + [Openingspagina&#39;s integreren met Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
+   + [Landingpagina&#39;s integreren met Adobe Analytics](integrating-landing-pages-with-adobe-analytics.md)
 + eCommerce {#ecommerce}
    + [eCommerce](ecommerce.md)
    + [Concepten](concepts.md)
@@ -107,7 +107,7 @@ ht-degree: 6%
    + [Magento](https://www.adobe.io/apis/experiencecloud/commerce-integration-framework/integrations.html#!AdobeDocs/commerce-cif-documentation/master/integrations/02-AEM-Magento.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
    + [Salesforce Commerce Cloud](https://github.com/adobe/commerce-salesforce)
-   + [AEM-handel - GDPR-gereedheid](gdpr-compliance-commerce.md)
+   + [AEM handel - gereedheid van de GDPR](gdpr-compliance-commerce.md)
 + Integratie {#integration}
    + [Integreren met services van derden](third-party-services.md)
    + [Integratie met Salesforce](salesforce.md)
@@ -115,7 +115,7 @@ ht-degree: 6%
    + [Integreren met Livefyre](livefyre.md)
    + [Integreren met Adobe Analytics](adobeanalytics.md)
    + [Verbinding maken met Adobe Analytics en frameworks maken](adobeanalytics-connect.md)
-   + [Koppelingen bijhouden configureren voor Adobe Analytics](adobeanalytics-link.md)
+   + [Koppeling bijhouden configureren voor Adobe Analytics](adobeanalytics-link.md)
    + [Componentgegevens toewijzen aan Adobe Analytics-eigenschappen](adobeanalytics-mapping.md)
    + [Video bijhouden configureren voor Adobe Analytics](adobeanalytics-video.md)
    + [Veelgestelde vragen over HTTP2-levering van content](scene7-http2faq.md)
@@ -129,35 +129,35 @@ ht-degree: 6%
    + [Kennisgeving over de gebruiksduur van Flash-viewers](flash-viewers-eol.md)
    + [Integreren met Adobe Creative Cloud](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-integration-best-practices.html)
    + [Productfeed](product-feed.md)
-   + [Integreren met dynamisch tagbeheer van Adobe](dtm.md)
+   + [Integreren met dynamisch Adobe-tagbeheer](dtm.md)
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
-   + [AEM-portfolio&#39;s en -portfolio&#39;s](aem-as-portal.md)
+   + [AEM en portlets](aem-as-portal.md)
    + [Integreren met Dynamic Media Classic (Scene7)](scene7.md)
-   + [AEM Livefyre Recipes](aem-livefyre-recipes.md)
+   + [AEM leverontvangers](aem-livefyre-recipes.md)
    + [Problemen met integratie oplossen](troubleshooting-integration-issues.md)
    + [Integreren met BrightStor Content Optimizer](brightedge.md)
    + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)
    + [Catalogusproducent](catalog-producer.md)
-   + [Integratie van AEM Assets met Experience Cloud en Creative Cloud configureren](configure-assets-cc-integration.md)
+   + [AEM Assets-integratie configureren met Experience Cloud en Creative Cloud](configure-assets-cc-integration.md)
    + [Integreren met Silverpop Engage](silverpop.md)
    + [Integreren met Adobe Campaign](campaign.md)
    + [Integreren met ExactTarget](exacttarget.md)
-   + [Analytics met externe providers](external-providers.md)
+   + [Analyse met externe providers](external-providers.md)
    + [Integratie met de Adobe Marketing Cloud](marketing-cloud.md)
    + [De integratie met Adobe Target handmatig configureren](target-configuring.md)
    + [Vereisten voor integratie met Adobe Target](target-requirements.md)
    + [Adobe-classificaties](adobeanalytics-classifications.md)
    + [Integreren met Adobe Search&amp;Promote](search-and-promote.md)
    + [Oplossingsintegratie](integration.md)
-   + [Target-integratie met ervaringsfragmenten](experience-fragments-target.md)
+   + [Doelintegratie met ervaringsfragmenten](experience-fragments-target.md)
    + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)
 + Best practices voor {#bestpractices}
    + [Best practices voor](administer-best-practices.md)
    + [Aanbevolen werkwijzen voor vertaling](tc-bp.md)
    + [Beste praktijken MSM](msm-best-practices.md)
    + [AEM Sites - GDPR-gereedheid](gdpr-compliance-sites.md)
-   + [Behandeling van GDPR-verzoeken voor de AEM Foundation](handling-gdpr-requests-for-aem-platform.md)
-   + [AEM-handel - GDPR-gereedheid](gdpr-compliance-commerce.md)
+   + [Behandeling van GDPR-verzoeken aan de AEM Stichting](handling-gdpr-requests-for-aem-platform.md)
+   + [AEM handel - gereedheid van de GDPR](gdpr-compliance-commerce.md)
 + Inhoudsbeheer {#contentmanagement}
    + [Werken met pakketten](package-manager.md)
    + [Offloader middelenwerkstroom](workflow-offloader.md)
