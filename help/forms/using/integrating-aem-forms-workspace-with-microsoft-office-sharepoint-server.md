@@ -1,8 +1,8 @@
 ---
-title: AEM-formulierwerkruimte integreren met Microsoft Office SharePoint Server
-seo-title: AEM-formulierwerkruimte integreren met Microsoft Office SharePoint Server
-description: 'U kunt AEM-formulierwerkruimte integreren met Microsoft Office SharePoint Server. '
-seo-description: 'U kunt AEM-formulierwerkruimte integreren met Microsoft Office SharePoint Server. '
+title: De werkruimte van AEM formulieren integreren met Microsoft Office SharePoint Server
+seo-title: De werkruimte van AEM formulieren integreren met Microsoft Office SharePoint Server
+description: 'U kunt AEM formulierwerkruimte integreren met Microsoft Office SharePoint Server. '
+seo-description: 'U kunt AEM formulierwerkruimte integreren met Microsoft Office SharePoint Server. '
 uuid: d43396d4-117f-47ea-91e4-10ee96107bc8
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,27 +10,30 @@ topic-tags: Configuration
 discoiquuid: 1bada670-3e0e-40f4-b9be-8b090df910be
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '575'
+ht-degree: 0%
 
 ---
 
 
-# AEM-formulierwerkruimte integreren met Microsoft Office SharePoint Server {#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
+# De werkruimte van AEM formulieren integreren met Microsoft Office SharePoint Server {#integrating-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
 **- Eisen**
 
-**De vereiste kennis** alvorens u de Werkruimte van Vormen AEM aan de Server van SharePoint kunt toevoegen, moet u toegang tot de Server van SharePoint met de aangewezen voorrechten hebben, en u moet URL kennen om tot Werkruimte toegang te hebben. In de onderstaande stappen wordt ervan uitgegaan dat u bekend bent met SharePoint Server. Voor meer informatie over de Delen van het Web in de Server van SharePoint, zie de Delen van het Web in Windows SharePoint Services.
+**De vereiste kennis** alvorens u de Werkruimte van AEM Forms aan de Server van SharePoint kunt toevoegen, moet u toegang tot de Server van SharePoint met de aangewezen voorrechten hebben, en u moet URL kennen om tot Werkruimte toegang te hebben. In de onderstaande stappen wordt ervan uitgegaan dat u bekend bent met SharePoint Server. Voor meer informatie over de Delen van het Web in de Server van SharePoint, zie de Delen van het Web in Windows SharePoint Services.
 
 **Gebruikersniveau** Beginnen
 
-U kunt de Werkruimte van Vormen AEM als Deel van het Web in de Server van Microsoft Office SharePoint (bijvoorbeeld, de Server 2007 van SharePoint van Microsoft Office) gebruiken. Gebruikers hebben toegang tot de AEM Forms Workspace door verbinding te maken met uw SharePoint-server via een webbrowser voor een uniforme ervaring. In dit artikel, leert u de basisstappen om AEM de Werkruimte van Vormen als Deel van het Web in de Server van Microsoft Office SharePoint te tonen. U kunt de in dit artikel beschreven stappen uitvoeren om een uniforme ervaring te bieden, zodat gebruikers die verbinding maken met uw SharePoint-server toegang hebben tot de AEM Forms Workspace vanaf dezelfde poort.
+U kunt de Werkruimte van AEM Forms als Deel van het Web in de Server van Microsoft Office SharePoint (bijvoorbeeld, de Server 2007 van SharePoint van Microsoft Office) gebruiken. Gebruikers kunnen toegang krijgen tot de AEM Forms Workspace door verbinding te maken met uw SharePoint-server via een webbrowser voor een uniforme ervaring. In dit artikel, leert u de basisstappen om de Werkruimte van AEM Forms als Deel van het Web in de Server van Microsoft Office SharePoint te tonen. U kunt de in dit artikel beschreven stappen uitvoeren om een uniforme ervaring te bieden, zodat gebruikers die verbinding maken met uw SharePoint-server, vanaf dezelfde poort toegang hebben tot de AEM Forms Workspace.
 
 >[!NOTE]
 >
 >De stappen die in dit artikel worden vermeld zijn de specifieke Server 2007 van Microsoft SharePoint. U kunt HTML-werkruimte ook configureren met andere ondersteunde versies van Microsoft SharePoint.
 
-## De werkruimte van AEM-formulieren integreren met Microsoft Office SharePoint Server 2007 {#integrate-aem-forms-workspace-with-microsoft-office-sharepoint-server}
+## AEM Forms Workspace integreren met Microsoft Office SharePoint Server 2007 {#integrate-aem-forms-workspace-with-microsoft-office-sharepoint-server}
 
-Voer de volgende stappen uit om de Werkruimte van Vormen AEM in een Deel van het Web te integreren:
+Voer de volgende stappen uit om AEM Forms Workspace in een Deel van het Web te integreren:
 
 1. In Webbrowser, navigeer aan de plaats van SharePoint zoals, https://*[myMOSSserver]:*44299/default.aspx waar *[myMOSSserver]* de naam of het IP adres van de server van SharePoint is.
 
@@ -49,11 +52,11 @@ Voer de volgende stappen uit om de Werkruimte van Vormen AEM in een Deel van het
 
    ![Het vakje van het Deel van het Web van de Kijker van de pagina in de server van SharePoint van Microsoft Office.](assets/page-viewer-web-part-box-in-microsoft-office-sharepoint-server.png)
 
-   **** Afbeelding: *Het vakje van het Deel van het Web van de Kijker van de Pagina in de server van Microsoft Office SharePoint.*
+   **Afbeelding:** *Het vakje van het Deel van het Web van de Kijker van de Pagina in de server van SharePoint van Microsoft Office.*
 
 1. Voer op de pagina Paginaviewer de volgende taken uit:
 
-   1. Typ in het vak Koppeling de URL van de AEM Forms Workspace, bijvoorbeeld https://*[AEM_forms_Server]:*8080/lc/ws, waarbij *[AEM_forms_Server]* de IP of naam van de AEM-formulierserver vertegenwoordigt.
+   1. Typ in het vak Koppeling de URL van de AEM Forms Workspace, bijvoorbeeld https://*[AEM_forms_Server]:*8080/lc/ws, waarbij *[AEM_forms_Server]* de IP of naam van de AEM formulierserver vertegenwoordigt.
    1. Klik op **Weergave** en wijzig de hoogte, breedte en titel zodat u de volledige gebruikersinterface van de werkruimte kunt zien. U kunt de hoogte en breedte bijvoorbeeld instellen op respectievelijk 6 en 11 inch.
    1. Klik op Koppeling **** testen. Er wordt een nieuw webbrowservenster weergegeven met Workspace erin.
    1. (Optioneel) Klik op **Lay-out** en wijzig de lay-out van de werkruimte in het webonderdeel.
@@ -65,7 +68,7 @@ Voer de volgende stappen uit om de Werkruimte van Vormen AEM in een Deel van het
 
 Nadat u de bovenstaande stappen hebt uitgevoerd, ziet uw SharePoint-site eruit zoals in de volgende afbeelding (Afbeelding 2):
 
-![AEM-werkruimte voor formulieren geïntegreerd met Microsoft Office SharePoint-server](assets/aem-forms-workspace.jpg)
+![AEM Forms Workspace geïntegreerd met Microsoft Office SharePoint Server](assets/aem-forms-workspace.jpg)
 
-**** Afbeelding: Werkruimte *voor AEM-formulieren geïntegreerd met Microsoft Office SharePoint-server*
+**Afbeelding:** *AEM Forms Workspace geïntegreerd met Microsoft Office SharePoint Server*
 
