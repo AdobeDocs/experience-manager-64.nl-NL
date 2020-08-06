@@ -1,8 +1,8 @@
 ---
-title: AEM-probleem bij ontwerpen oplossen
-seo-title: AEM-probleem bij ontwerpen oplossen
-description: In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen bij het gebruik van AEM, samen met suggesties voor het oplossen van problemen met deze problemen.
-seo-description: In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen bij het gebruik van AEM, samen met suggesties voor het oplossen van problemen met deze problemen.
+title: Problemen met AEM bij ontwerpen oplossen
+seo-title: Problemen met AEM bij ontwerpen oplossen
+description: De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
+seo-description: De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
 uuid: eb95e5ba-1eed-4ffb-80c1-9b8468820c22
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '455'
+ht-degree: 6%
 
 ---
 
 
-# AEM-probleem bij ontwerpen oplossen{#troubleshooting-aem-when-authoring}
+# Problemen met AEM bij ontwerpen oplossen{#troubleshooting-aem-when-authoring}
 
-In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen bij het gebruik van AEM, samen met suggesties voor het oplossen van problemen met deze problemen.
+De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
 
 >[!NOTE]
 >
@@ -25,7 +28,7 @@ In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen b
 
 >[!NOTE]
 >
->De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in het [Oplossen van problemen AEM (voor Beheerders)](/help/sites-administering/troubleshoot.md)worden beschreven. Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over het oplossen van problemen met AEM.
+>De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in de AEM van het Oplossen van [problemen (voor Beheerders)](/help/sites-administering/troubleshoot.md)worden beschreven. Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
