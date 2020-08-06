@@ -1,6 +1,6 @@
 ---
-title: Omgeving instellen voor de app AEM Forms
-seo-title: Omgeving instellen voor de app AEM Forms
+title: Omgeving instellen voor AEM Forms-app
+seo-title: Omgeving instellen voor AEM Forms-app
 description: Hardware, software en licenties voor het samenstellen en implementeren van de AEM Forms-app.
 seo-description: Hardware, software en licenties voor het samenstellen en implementeren van de AEM Forms-app.
 uuid: 0c8f5259-8e9f-45ce-ade4-e14f1a41c0de
@@ -11,13 +11,16 @@ topic-tags: forms-app
 discoiquuid: 72c3a451-fa57-4b12-8d25-fc2e6fa98adb
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '230'
+ht-degree: 0%
 
 ---
 
 
-# Omgeving instellen voor de app AEM Forms {#set-up-environment-for-aem-forms-app}
+# Omgeving instellen voor AEM Forms-app {#set-up-environment-for-aem-forms-app}
 
-U hebt de volgende hardware, software en licenties nodig om de app AEM Forms te maken en te implementeren:
+U hebt de volgende hardware, software en licenties nodig om de AEM Forms-app te maken en te implementeren:
 
 ## Voor Windows-apparaten {#for-windows-devices}
 
