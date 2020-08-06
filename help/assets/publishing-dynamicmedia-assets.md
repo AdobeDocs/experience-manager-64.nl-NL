@@ -1,5 +1,5 @@
 ---
-title: Dynamische media-elementen publiceren
+title: Publishing Dynamic Media Assets
 seo-title: Dynamische media-elementen publiceren
 description: Dynamische media-elementen publiceren
 seo-description: Dynamische media-elementen publiceren
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '407'
+ht-degree: 7%
 
 ---
 
 
 # Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren en op **[!UICONTROL Publiceren]** te tikken. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via URL of via insluiten op een webpagina opnemen.
+U publiceert uw dynamische media-elementen door de elementen te selecteren en te tikken **[!UICONTROL Publish]**. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via URL of via insluiten op een webpagina opnemen.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie het [Vormen Dynamische Media - wijze](config-dms7.md)Scene7.
+U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie Dynamische media [configureren - Scene7-modus](config-dms7.md).
 
-In de **[!UICONTROL Kaartweergave]** wordt direct onder de naam van een element een pictogram van een kleine bol weergegeven om aan te geven dat het is gepubliceerd. In de **[!UICONTROL Lijstweergave]** geeft een kolom **[!UICONTROL Gepubliceerd]** aan welke elementen worden gepubliceerd of welke niet.
+In de **[!UICONTROL Card View]** verschijnt een pictogram van een kleine wereldbol direct onder de naam van een asset om aan te geven dat deze is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
 >[!NOTE]
 >
@@ -37,6 +40,7 @@ Zie ook De video-viewer [insluiten op een webpagina.](embed-code.md)
 >
 >* Elementen moeten worden gepubliceerd om de URL te kunnen gebruiken. Als de elementen niet worden gepubliceerd, werkt het kopiëren en plakken van de URL in een webbrowser niet.
 >* Voorinstellingen voor afbeeldingen en viewervoorinstellingen moeten worden geactiveerd en gepubliceerd voor live levering.
+
 >
 
 
