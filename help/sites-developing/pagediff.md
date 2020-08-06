@@ -28,11 +28,11 @@ Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met ops
 
 ## Bewerkingsdetails {#operation-details}
 
-Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken opnieuw gemaakt door AEM op de achtergrond om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud [voor vergelijking](/help/sites-authoring/page-diff.md#presentation-of-differences)naast elkaar te kunnen weergeven.
+Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken, op de achtergrond opnieuw gemaakt door AEM om het schuiven te vergemakkelijken. Dit is nodig om de inhoud [voor vergelijking](/help/sites-authoring/page-diff.md#presentation-of-differences)naast elkaar te kunnen weergeven.
 
-Deze recreatiebewerking wordt intern door AEM uitgevoerd en is transparant voor de gebruiker en vereist geen interventie. Nochtans zou een beheerder die de bewaarplaats bijvoorbeeld in CRX DE Lite bekijkt deze ontspannen versies binnen de inhoudsstructuur zien.
+Deze recreatiebewerking wordt intern AEM uitgevoerd en is transparant voor de gebruiker en vereist geen interventie. Nochtans zou een beheerder die de bewaarplaats bijvoorbeeld in CRX DE Lite bekijkt deze ontspannen versies binnen de inhoudsstructuur zien.
 
-Afhankelijk van het AEM-patchniveau is het gedrag anders en kunnen bepaalde machtigingen vereist zijn om correct te werken.
+Afhankelijk van het AEM flardniveau, is het gedrag verschillend en kan bepaalde toestemmingen vereisen om behoorlijk te werken.
 
 ### Vóór AEM 6.4.3 {#prior-to-aem}
 
@@ -40,7 +40,7 @@ Wanneer de inhoud wordt vergeleken, wordt de hele structuur tot aan de te vergel
 
 `/content/versionhistory/<userId>/<site structure>`
 
-Omdat AEM bij het gebruik van het mechanisme voor pagina-afbreking de vorige versie van de pagina opnieuw maakt, moet de gebruiker bepaalde JCR-machtigingen hebben om deze functie te kunnen gebruiken.
+Omdat bij het gebruik van het mechanisme voor pagina-afbreking AEM de vorige versie van de pagina opnieuw wordt gemaakt, moet de gebruiker bepaalde JCR-machtigingen hebben om deze functie te kunnen gebruiken.
 
 >[!CAUTION]
 >
@@ -58,11 +58,11 @@ Er wordt automatisch een opschoningstaak uitgevoerd om deze tijdelijke inhoud op
 
 ## Beperkingen voor ontwikkelaars {#developer-limitations}
 
-Eerder, in Klassieke UI, moest de speciale ontwikkelingsoverweging worden gemaakt om AEM verschil (zoals het gebruiken van `cq:text` markeringslib, of douane te vergemakkelijken die de dienst `DiffService` OSGi in componenten integreert) te vergemakkelijken. Dit is niet meer nodig voor de nieuwe functie voor Diff, aangezien het diff cliënt-kant via DOM vergelijking voorkomt.
+Eerder, in Klassieke UI, moest de speciale ontwikkelingsoverweging worden gemaakt om AEM het verschillen (zoals het gebruiken van `cq:text` markeringslib, of douane te vergemakkelijken die de dienst `DiffService` OSGi in componenten integreert) te vergemakkelijken. Dit is niet meer nodig voor de nieuwe functie voor Diff, aangezien het diff cliënt-kant via DOM vergelijking voorkomt.
 
 Er zijn echter een aantal beperkingen die door de ontwikkelaar in overweging moeten worden genomen.
 
-* Deze functie gebruikt CSS-klassen die geen naamruimte hebben met het AEM-product. Als andere aangepaste CSS-klassen of CSS-klassen van derden met dezelfde namen op de pagina worden opgenomen, kan dit van invloed zijn op de weergave van het diff.
+* Deze functie gebruikt CSS-klassen die geen naamruimte zijn met de AEM Product. Als andere aangepaste CSS-klassen of CSS-klassen van derden met dezelfde namen op de pagina worden opgenomen, kan dit van invloed zijn op de weergave van het diff.
 
    * `html-added`
    * `html-removed`
