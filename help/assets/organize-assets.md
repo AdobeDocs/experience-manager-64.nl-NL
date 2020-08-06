@@ -1,6 +1,6 @@
 ---
 title: Uw digitale middelen organiseren
-description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend de Manager van de Ervaring.
+description: Organiseer uw digitale elementen, afbeeldingen, bestanden, mappen enzovoort met behulp van Experience Manager.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 Alle digitale elementen, metagegevens en inhoud van Microsoft Office- en PDF-documenten worden uitgepakt en doorzoekbaar gemaakt. Bij zoeken is geavanceerd filteren op elementen mogelijk en worden de juiste machtigingen volledig gerespecteerd. Metagegevens worden uitgebreid besproken in metagegevens in Digital Asset Management.
 
-AEM Assets ondersteunen meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een niet-geordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
+AEM Assets ondersteunt meerdere manieren om inhoud te ordenen. U kunt de mappen hiërarchisch ordenen met behulp van mappen, maar u kunt ze ook ordenen op een niet-geordende ad-hocmanier, bijvoorbeeld met tags. Gebruikers kunnen labels bewerken in de DAM Asset Editor, waar submiddelen, uitvoeringen en metagegevens worden weergegeven.
 
 ## Elementen in mappen ordenen {#organize-using-folders}
 
@@ -39,9 +39,9 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 
 ## Elementen ordenen met tags {#use-tags-to-organize-assets}
 
-Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met de zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en de AI-algoritmen van Adobe Sensei gebruiken voor het detecteren van elementen.
+Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met behulp van zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en Adobe Sensei-algoritmen gebruiken voor het detecteren van elementen.
 
-De Middelen van de Adobe Experience Manager gebruiken een zelf-leert algoritme om hoogst beschrijvende markeringen tot stand te brengen die u toestaan om het juiste middel in slechts een paar klikken te vinden. Slimme tags toepassen maakt gebruik van Adobe Sensei, ons raamwerk voor kunstmatige intelligentie en het leren van machines, dat u kunt opleiden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
+Adobe Experience Manager Assets gebruikt een zelfstudie algoritme om zeer beschrijvende tags te maken waarmee u het juiste middel met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, ons raamwerk voor kunstmatige intelligentie en het leren van machines, dat getraind kan worden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
@@ -51,7 +51,7 @@ Raadpleeg de volgende artikelen voor meer informatie:
 
 ## Indelen als verzamelingen {#organize-as-collections}
 
-Met behulp van middelen verzamelen in de Elementen van de Manager van de Ervaring, kunt u de capaciteit stroomlijnen om activa tot stand te brengen uit te geven en te delen tussen gebruikers. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen met een statische referentielijst van elementen, mappen en verzamelingen en verzamelingen die elementen ophalen op basis van zoekcriteria.  U kunt ook verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
+Met de inzamelingen van activa in de Middelen van de Experience Manager, kunt u de capaciteit stroomlijnen om activa tot stand te brengen uit te geven en te delen tussen gebruikers. Maak verschillende soorten verzamelingen op basis van de manier waarop u ze gebruikt, waaronder verzamelingen met een statische referentielijst van elementen, mappen en verzamelingen en verzamelingen die elementen ophalen op basis van zoekcriteria.  U kunt ook verzamelingen maken met elementen van verschillende locaties en deze delen met meerdere gebruikers met verschillende toegangsniveaus, weergavebevoegdheden en bewerkingsbevoegdheden.
 
 Zie Verzamelingen [beheren voor meer informatie](managing-collections-touch-ui.md)
 
@@ -71,4 +71,4 @@ Voor meer informatie over verschillende profielen die u kunt maken en beheren om
 * [Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s](processing-profiles.md)
 * [Metadataprofielen](metadata-profiles.md)
 * [Videoprofielen](video-profiles.md)
-* [Dynamic Media voor afbeeldingsprofielen](image-profiles.md)
+* [Dynamische afbeeldingsprofielen voor media](image-profiles.md)
