@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 13a908ae-6965-4438-96d0-93516b500884
 translation-type: tm+mt
 source-git-commit: 0982b1378c5edad000ad3dea4406093d4f13c496
+workflow-type: tm+mt
+source-wordcount: '666'
+ht-degree: 0%
 
 ---
 
@@ -49,7 +52,7 @@ myStoreCandidate = function(){};
 ContextHub.Utils.inheritance.inherit(myStoreCandidate,ContextHub.Store.PersistedStore);
 ```
 
-Realistisch, zullen uw kandidaten van de douaneopslag extra functies bepalen of zullen de aanvankelijke configuratie van de opslag met voeten treden. Verschillende [voorbeeldwinkelkandidaten](/help/sites-developing/ch-samplestores.md) zijn in de onderstaande opslagplaats geïnstalleerd `/libs/granite/contexthub/components/stores`. Om van deze steekproeven te leren, gebruik CRXDE Lite om de dossiers te openen javascript.
+Realistisch, zullen uw kandidaten van de douaneopslag extra functies bepalen of zullen de aanvankelijke configuratie van de opslag met voeten treden. Verschillende [voorbeeldwinkelkandidaten](/help/sites-developing/ch-samplestores.md) zijn in de onderstaande opslagplaats geïnstalleerd `/libs/granite/contexthub/components/stores`. Als u van deze voorbeelden wilt leren, gebruikt u CRXDE Lite om de JavaScript-bestanden te openen.
 
 ### Registreren van een ContextHub Store-kandidaat {#registering-a-contexthub-store-candidate}
 
