@@ -47,7 +47,7 @@ Elke rollout configuratie gebruikt een rollout trekker die de rollout veroorzaak
 
 ### Geïnstalleerde uitrolconfiguraties {#installed-rollout-configurations}
 
-De volgende lijst maakt een lijst van de rollout configuraties die met AEM worden geïnstalleerd. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u een nieuwe rollout configuratie [](#creating-a-rollout-configuration)tot stand brengen.
+De volgende lijst maakt een lijst van de rollout configuraties die met AEM geïnstalleerd zijn. De lijst omvat de trekker en synchronisatieacties van elke rollout configuratie. Als de geïnstalleerde acties van de rollout configuratie niet aan uw vereisten voldoen, kunt u een nieuwe rollout configuratie [](#creating-a-rollout-configuration)tot stand brengen.
 
 <table> 
  <tbody> 
@@ -122,7 +122,7 @@ De volgende lijst maakt een lijst van de rollout configuraties die met AEM worde
 
 ### Geïnstalleerde synchronisatiehandelingen {#installed-synchronization-actions}
 
-In de volgende tabel worden de synchronisatiehandelingen weergegeven die met AEM zijn geïnstalleerd. Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u een Nieuwe [Synchronisatie-actie](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)tot stand brengen.
+De volgende lijst maakt een lijst van de synchronisatieacties die met AEM geïnstalleerd zijn. Als de geïnstalleerde acties niet aan uw vereisten voldoen, kunt u een Nieuwe [Synchronisatie-actie](/help/sites-developing/extending-msm.md#creating-a-new-synchronization-action)tot stand brengen.
 
 <table> 
  <tbody> 
@@ -240,7 +240,7 @@ In de volgende tabel worden de synchronisatiehandelingen weergegeven die met AEM
   </tr> 
   <tr> 
    <td>catalogRolloutHooks</td> 
-   <td>Voert catalogus-generatie-specifieke rollout haken uit. Roept de methode executePageRolloutHooks en executeProductRolloutHooks van de methode van de CatalogGenerator aan.<br /> Zie com.adobe.cq.commerce.pim.api.CatalogGenerator in AEM Javadocs.</td> 
+   <td>Voert catalogus-generatie-specifieke rollout haken uit. Roept de methode executePageRolloutHooks en executeProductRolloutHooks van de methode van de CatalogGenerator aan.<br /> Zie com.adobe.cq.commerce.pim.api.CatalogGenerator in AEM JavaDocs.</td> 
    <td> </td> 
   </tr> 
   <tr> 
@@ -262,7 +262,7 @@ De nieuwe rollout configuratie is dan beschikbaar aan u wanneer het plaatsen van
 
 ### Eigenschappen en knooppunttypen uitsluiten van synchronisatie {#excluding-properties-and-node-types-from-synchronization}
 
-U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties steunen zodat zij geen specifieke knooptypes en eigenschappen beïnvloeden. Veel eigenschappen en subknooppunten die bijvoorbeeld betrekking hebben op de interne werking van AEM, moeten niet in een live kopie worden opgenomen. Alleen de inhoud die relevant is voor de gebruiker van de pagina moet worden gekopieerd.
+U kunt verscheidene diensten vormen OSGi die overeenkomstige synchronisatieacties steunen zodat zij geen specifieke knooptypes en eigenschappen beïnvloeden. Veel eigenschappen en subknooppunten die bijvoorbeeld betrekking hebben op de interne werking van AEM, mogen niet in een live kopie worden opgenomen. Alleen de inhoud die relevant is voor de gebruiker van de pagina moet worden gekopieerd.
 
 Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
