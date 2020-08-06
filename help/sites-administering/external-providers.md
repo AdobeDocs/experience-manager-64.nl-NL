@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '452'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Analyses kunnen u belangrijke en interessante informatie geven over het gebruik 
 Verschillende configuraties buiten de box zijn beschikbaar voor integratie met de juiste service, bijvoorbeeld:
 
 * [Adobe Analytics](/help/sites-administering/adobeanalytics.md)
-* [Adobe-doel](/help/sites-administering/target.md)
+* [Adobe Target](/help/sites-administering/target.md)
 
 U kunt uw eigen instantie van de **Algemene Fragmenten** van Analytics ook vormen om een nieuwe de dienstconfiguraties te bepalen.
 
@@ -53,7 +56,7 @@ Met dergelijke fragmenten kunnen gegevens worden verzameld en rapporten worden g
 
 >[!CAUTION]
 >
->De demosite Geometrixx-Outdoor is zo geconfigureerd dat de kenmerken die worden verschaft in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` eindtag) in het bijbehorende `js` script.
+>De demosite Geometrixx-Buiten is zo geconfigureerd dat de kenmerken die worden opgegeven in de Pagina-eigenschappen worden toegevoegd aan de HTML-broncode (net boven de `</html>` eindtag) in het bijbehorende `js` script.
 >
 >
 >Als uw eigen `/apps` niet van de standaardpaginacomponent ( `/libs/foundation/components/page`) erft moet u (of uw ontwikkelaars) ervoor zorgen dat de overeenkomstige `js` manuscripten inbegrepen zijn, bijvoorbeeld door of `cq/cloudserviceconfigs/components/servicescomponents`, of het gebruiken van een gelijkaardig mechanisme op te nemen.
@@ -67,7 +70,7 @@ Voor de basisconfiguratie:
 
 1. Open de **console van Hulpmiddelen** .
 
-1. Vouw **Cloud Services Configurations** in het linkerdeelvenster uit.
+1. Vouw **Cloud Services Configurations** uit in het linkerdeelvenster.
 
 1. Dubbelklik op **Generic Analytics Snippet** om de pagina te openen:
 
