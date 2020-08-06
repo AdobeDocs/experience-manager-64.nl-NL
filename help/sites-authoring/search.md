@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '520'
+ht-degree: 6%
 
 ---
 
@@ -70,12 +73,13 @@ U kunt als volgt uw bronnen zoeken en filteren:
    * Zoekdirectory
    * Tags
    * Zoekcriteria; bijvoorbeeld Gewijzigde datums, Publish Status, LiveCopy Status.
+
    >[!NOTE]
    >
    >De zoekcriteria kunnen variëren:
    >
    >* Afhankelijk van het type resource dat u hebt geselecteerd; Zo zijn bijvoorbeeld de activa- en Gemeenschapscriteria begrijpelijkerwijs gespecialiseerd.
-   >* U kunt uw exemplaar als [zoekformulieren](/help/sites-administering/search-forms.md) aanpassen (afhankelijk van de locatie in AEM).
+   >* U kunt uw exemplaar als de Forms [van het](/help/sites-administering/search-forms.md) Onderzoek (aangewezen aan de plaats binnen AEM) aanpassen.
 
 
    ![screen_shot_2018-03-23at101619](assets/screen_shot_2018-03-23at101619.png)
@@ -113,7 +117,7 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
    * Gebruik **x** (tegen de naam van de opgeslagen zoekopdracht) om een nieuwe query te starten (de opgeslagen zoekopdracht zelf wordt niet verwijderd).
    * **Bewerk Opgeslagen zoekopdracht**, wijzig de zoekvoorwaarden en **sla** nogmaals op.
 
-Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder in het zoekvenster op Opgeslagen zoekopdracht **** bewerken te klikken.
+Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
 
