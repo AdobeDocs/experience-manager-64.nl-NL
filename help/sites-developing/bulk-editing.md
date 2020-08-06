@@ -36,6 +36,7 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* Niet beschikbaar in de klassieke gebruikersinterface.
 >* Niet beschikbaar voor pagina&#39;s in een live kopie.
 >* Alleen beschikbaar voor pagina&#39;s met hetzelfde brontype.
+
 >
 
 
@@ -56,13 +57,14 @@ Vanwege de mogelijkheid van verschillende waarden zijn pagina-eigenschappen niet
 >* `/libs/granite/ui/components/foundation/form/datepicker`
 >* `/libs/granite/ui/components/foundation/form/pathbrowser`
 >* `/libs/granite/ui/components/foundation/form/checkbox`
+
 >
 
 
 
 Velden worden ingeschakeld in de paginacomponent (*niet* in de sjabloon):
 
-1. Met CRXDE Lite (of een gelijkwaardige methode) opent u uw paginacomponent.
+1. Met CRXDE Lite (of een gelijkwaardige methode) opent u de pagina-component.
 
    Bijvoorbeeld: `/apps/core/wcm/components/page/v1/page`
 
@@ -76,6 +78,7 @@ Velden worden ingeschakeld in de paginacomponent (*niet* in de sjabloon):
    * **Naam**: `allowBulkEdit`
    * **Type**: `Boolean`
    * **Waarde**: `true`
+
    Bijvoorbeeld voor de standaard pagina [stichting component](/help/sites-authoring/default-components-foundation.md):
 
    `/libs/foundation/components/page`
