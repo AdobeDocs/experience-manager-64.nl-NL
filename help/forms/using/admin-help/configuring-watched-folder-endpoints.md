@@ -36,7 +36,7 @@ Nadat u de service Gecontroleerde map hebt geconfigureerd, voegt u een eindpunt 
 U kunt op de volgende twee manieren een controlemap maken:
 
 * Wanneer het vormen van de montages voor een gecontroleerd omslageindpunt, typ de volledige weg aan de ouderfolder in de doos van de Weg en voeg de naam van de gecontroleerde omslag toe die moet worden gecreeerd, zoals aangetoond in dit voorbeeld:
-   `  C:\MyPDFs\MyWatchedFolder`Aangezien de map MyWatchedFolder nog niet bestaat, proberen AEM-formulieren deze op die locatie te maken.
+   `  C:\MyPDFs\MyWatchedFolder`Omdat de map MyWatchedFolder nog niet bestaat, proberen AEM formulieren deze op die locatie te maken.
 
 * Creeer een omslag op het dossiersysteem alvorens een gecontroleerd omslageindpunt te vormen, en typ dan de volledige weg in de doos van de Weg.
 
@@ -63,13 +63,13 @@ Als de taak meer dan één invoerbestand bevat, moet de gebruiker een map buiten
 
 >[!NOTE]
 >
->Controleer of de toepassingsserver de toegang tot de bestanden in de gecontroleerde map heeft verwijderd. Als AEM-formulieren de bestanden niet kunnen verwijderen uit de invoermap nadat ze zijn gescand, wordt het bijbehorende proces voor onbepaalde tijd aangeroepen.
+>Controleer of de toepassingsserver de toegang tot de bestanden in de gecontroleerde map heeft verwijderd. Als AEM formulieren de bestanden na het scannen niet uit de invoermap kunnen verwijderen, wordt het bijbehorende proces voor onbepaalde tijd aangeroepen.
 
 ## Uitvoer van gecontroleerde map {#watched-folder-output}
 
-Wanneer de invoer een map is en de uitvoer uit meerdere bestanden bestaat, wordt in AEM-formulieren een uitvoermap gemaakt met dezelfde naam als de invoermap en worden de uitvoerbestanden naar die map gekopieerd. Wanneer de uitvoer bestaat uit een documentkaart die een sleutelwaardepaar bevat, zoals de uitvoer van een uitvoerproces, wordt de sleutel gebruikt als de naam van het uitvoerbestand.
+Wanneer de invoer een map is en de uitvoer uit meerdere bestanden bestaat, maakt AEM formulier een uitvoermap met dezelfde naam als de invoermap en worden de uitvoerbestanden naar die map gekopieerd. Wanneer de uitvoer bestaat uit een documentkaart die een sleutelwaardepaar bevat, zoals de uitvoer van een uitvoerproces, wordt de sleutel gebruikt als de naam van het uitvoerbestand.
 
-De namen van uitvoerbestanden die het resultaat zijn van een eindpuntproces, mogen geen andere tekens bevatten dan letters, cijfers en een punt (.) vóór de bestandsextensie. AEM-formulieren zetten andere tekens om in hexadecimale waarden.
+De namen van uitvoerbestanden die het resultaat zijn van een eindpuntproces, mogen geen andere tekens bevatten dan letters, cijfers en een punt (.) vóór de bestandsextensie. AEM formulieren converteren andere tekens naar hun hexadecimale waarden.
 
 Clienttoepassingen nemen de resultaatdocumenten op in de map met gecontroleerde resultaten. Procesfouten worden aangemeld in de map met gecontroleerde mapfouten.
 
@@ -129,7 +129,7 @@ Gebruik de volgende montages om een gecontroleerd omslageindpunt te vormen.
 
 **Aantal herhalingen:** Het aantal keren dat de gecontroleerde map de map of map scant. De waarde -1 geeft aan dat een scanbewerking voor onbepaalde tijd wordt uitgevoerd. De standaardwaarde is -1.
 
-**Throttle:** Als deze optie is geselecteerd, wordt het aantal controletaken dat door AEM-formulieren op een bepaald moment wordt verwerkt, beperkt. Het maximumaantal taken wordt bepaald door de waarde voor Batchgrootte. (Zie Informatie over vertragen.)
+**Throttle:** Als deze optie is geselecteerd, beperkt deze het aantal controletaken dat op een bepaald moment AEM formulieren verwerkt. Het maximumaantal taken wordt bepaald door de waarde voor Batchgrootte. (Zie Informatie over vertragen.)
 
 **Gebruikersnaam:** (Verplicht) De gebruikersnaam die wordt gebruikt wanneer een doelservice wordt aangeroepen vanuit de gecontroleerde map. De standaardwaarde is SuperAdmin.
 
@@ -346,7 +346,8 @@ Wanneer de bronbestanden in de werkgebiedmap niet kunnen worden verwerkt in de g
 
    * In Toepassingen en de Diensten, verander de Include parameter van het Patroon van het Dossier voor het gecontroleerde omslageindpunt in iets dat geen van de nieuwe inputdossiers (bijvoorbeeld, ga binnen `NOMATCH`) zal aanpassen.
    * Onderbreek het proces dat nieuwe invoerbestanden maakt.
-   Wacht tot alle bestanden zijn hersteld en verwerkt in AEM-formulieren. De meeste bestanden moeten worden hersteld en nieuwe invoerbestanden moeten correct worden verwerkt. De tijdsduur dat u wacht tot de gecontroleerde map de bestanden heeft hersteld en verwerkt, is afhankelijk van de lengte van de bewerking die moet worden aangeroepen en het aantal bestanden dat moet worden hersteld.
+
+   Wacht tot AEM formulieren alle bestanden herstellen en verwerken. De meeste bestanden moeten worden hersteld en nieuwe invoerbestanden moeten correct worden verwerkt. De tijdsduur dat u wacht tot de gecontroleerde map de bestanden heeft hersteld en verwerkt, is afhankelijk van de lengte van de bewerking die moet worden aangeroepen en het aantal bestanden dat moet worden hersteld.
 
 1. Bepaal welke bestanden niet kunnen worden verwerkt. Ga naar de volgende stap als u op een geschikte hoeveelheid tijd hebt gewacht en de vorige stap hebt voltooid en er nog steeds onverwerkte bestanden in de map met werkgebieden staan.
 
@@ -405,7 +406,7 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
 
 ## Servicespecifieke aanbevelingen voor gecontroleerde mappen {#service-specific-recommendations-for-watched-folders}
 
-Voor alle services moet u de batchgrootte en het herhalingsinterval van de gecontroleerde map aanpassen, zodat de snelheid waarmee gecontroleerde map nieuwe bestanden en mappen oppakt voor verwerking niet hoger is dan de snelheid van de taken die door de AEM-formulierserver kunnen worden verwerkt. Welke parameters werkelijk moeten worden gebruikt, is afhankelijk van het aantal gecontroleerde mappen dat wordt geconfigureerd, welke services gecontroleerde mappen gebruiken en hoe intensief de taken zijn voor de processor.
+Voor alle services moet u de batchgrootte en het herhalingsinterval van de gecontroleerde map aanpassen, zodat de snelheid waarmee gecontroleerde map nieuwe bestanden en mappen oppakt voor verwerking niet hoger is dan de snelheid van de taken die door de AEM formulierserver kunnen worden verwerkt. Welke parameters werkelijk moeten worden gebruikt, is afhankelijk van het aantal gecontroleerde mappen dat wordt geconfigureerd, welke services gecontroleerde mappen gebruiken en hoe intensief de taken zijn voor de processor.
 
 ### Aanbevelingen voor PDF-service genereren {#generate-pdf-service-recommendations}
 
