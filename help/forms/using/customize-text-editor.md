@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a80254a2-245c-48fa-b460-958eeda085af
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '614'
+ht-degree: 0%
 
 ---
 
@@ -47,11 +50,11 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/config
+      **Pad:** /libs/fd/cm/config
 
-      **** Locatie: /apps/
+      **Locatie:** /apps/
 
-      **** Identieke knooppunttypen: Geselecteerd
+      **Identieke knooppunttypen:** Geselecteerd
 
       ![Overlay-knooppunt](assets/2-2.png)
 
@@ -163,6 +166,7 @@ Ga als volgt te werk om lettertypen aan te passen door het bestand tbxeditor-con
       * Eigenschappen zoals hoogte- en letterspatiëring
       * Standaardwaarden van lettertypefamilie en -grootte, hoogte, letterspatiëring en datumnotatie
       * Opsommingstekens
+
       Als u bijvoorbeeld een Japans lettertype met de naam Sazanami Mincho Medium wilt toevoegen, moet u het volgende item in het XML-bestand invoeren: `<font>Sazanami Mincho Medium</font>`. Dit lettertype moet ook op de clientcomputer zijn geïnstalleerd om het lettertype te kunnen aanpassen en er toegang toe te hebben. Zie Aangepaste lettertypen [toevoegen aan de clientcomputer](#addcustomfonts)voor meer informatie.
 
       U kunt ook de standaardinstellingen voor verschillende aspecten van tekst wijzigen en de lettertypen uit de teksteditor verwijderen door de items te verwijderen.
@@ -181,7 +185,7 @@ Raadpleeg de volgende secties voor meer informatie over het installeren van lett
 
 ## Lettertypeaanpassingen openen {#access-font-customizations}
 
-Nadat u wijzigingen hebt aangebracht in de lettertypen in het bestand tbxeditor-config.xml in CRX en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt om toegang te krijgen tot AEM-formulieren, worden de wijzigingen weergegeven in de teksteditor.
+Nadat u wijzigingen hebt aangebracht in de lettertypen in het bestand tbxeditor-config.xml in CRX en de vereiste lettertypen hebt geïnstalleerd op de clientcomputer die wordt gebruikt voor toegang tot AEM Forms, worden de wijzigingen weergegeven in de teksteditor.
 
 Het lettertype Sazanami Mincho Medium dat bijvoorbeeld wordt toegevoegd aan het bestand [Customize fonts door het bestand tbxeditor-config.xml in de CRX](#customizefonts) -procedure te bewerken, wordt als volgt weergegeven in de gebruikersinterface van de teksteditor:
 
