@@ -1,8 +1,8 @@
 ---
 title: Mobiele toepassingen maken
 seo-title: Mobiele toepassingen maken
-description: 'Deze pagina verstrekt een volledig geleidelijke artikel op hoe te om een mobiele toepassing te bouwen gebruikend code beschikbaar bij GitHub is hier beschikbaar.Bouw uw toepassing om aan een apparaat of simulator voor het testen of voor het publiceren aan app winkels te installeren. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Bouwt. '
-seo-description: 'Deze pagina verstrekt een volledig geleidelijke artikel op hoe te om een mobiele toepassing te bouwen gebruikend code beschikbaar bij GitHub is hier beschikbaar.Bouw uw toepassing om aan een apparaat of simulator voor het testen of voor het publiceren aan app winkels te installeren. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Bouwt. '
+description: 'Deze pagina verstrekt een volledig geleidelijke artikel op hoe te om een mobiele toepassing te bouwen gebruikend code beschikbaar bij GitHub is hier beschikbaar.Bouw uw toepassing om aan een apparaat of simulator voor het testen of voor het publiceren aan app winkels te installeren. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Build. '
+seo-description: 'Deze pagina verstrekt een volledig geleidelijke artikel op hoe te om een mobiele toepassing te bouwen gebruikend code beschikbaar bij GitHub is hier beschikbaar.Bouw uw toepassing om aan een apparaat of simulator voor het testen of voor het publiceren aan app winkels te installeren. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Build. '
 uuid: 1ff6fe1a-24cc-4973-a2cd-8d356bc649b0
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: b2778086-8280-4306-bf3a-f6ec2a0e04df
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1094'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-Stel uw toepassing samen om deze op een apparaat of simulator te installeren voor testdoeleinden of voor publicatie in de App Store. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Bouwt.
+Stel uw toepassing samen om deze op een apparaat of simulator te installeren voor testdoeleinden of voor publicatie in de App Store. U kunt toepassingen plaatselijk bouwen gebruikend de Interface van de Lijn van het Bevel PhoneGap, of in de wolk gebruikend PhoneGap Build.
 
 Een volledig geleidelijke artikel op hoe te om een mobiele toepassing te bouwen gebruikend code beschikbaar bij GitHub is [hier](https://helpx.adobe.com/experience-manager/using/aem62_mobile.html)beschikbaar.
 
@@ -45,13 +48,13 @@ AEM biedt twee methoden voor het verplaatsen van bulkinhoud naar de publicatie-i
 
 Er wordt bijvoorbeeld een mobiele toepassing met de naam phonegapapp gemaakt. Het volgende knooppunt moet worden verplaatst naar de instantie publish: /content/phonegap/content/phonegapapp.
 
-**** Tip: Als u een pakket van de auteurinstantie naar de publicatieinstantie wilt verplaatsen, gebruikt u de opdracht Dupliceren in het pakket.
+**Tip:** Als u een pakket van de auteurinstantie naar de publicatieinstantie wilt verplaatsen, gebruikt u de opdracht Dupliceren in het pakket.
 
 ![chlimage_1-16](assets/chlimage_1-16.png)
 
 ## Samenstellen met de PhoneGap-opdrachtregelinterface {#building-using-the-phonegap-command-line-interface}
 
-Compileer de toepassing PhoneGap op uw computer gebruikend bevel-lijn Interface PhoneGap (CLI). AEM maakt een ZIP-bestand dat de inhoud van uw mobiele toepassing, configuraties voor het synchroniseren van inhoud en andere vereiste elementen bevat om de AEM-inhoud in uw toepassing op te nemen. Download het ZIP-bestand en neem het op in uw build.
+Compileer de toepassing PhoneGap op uw computer gebruikend bevel-lijn Interface PhoneGap (CLI). Als u de AEM-inhoud in uw toepassing wilt opnemen, AEM maakt u een ZIP-bestand dat de inhoud van uw mobiele toepassing, configuraties voor inhoudssynchronisatie en andere vereiste elementen bevat. Download het ZIP-bestand en neem het op in uw build.
 
 ### Uw ontwikkelomgeving voorbereiden {#preparing-your-build-environment}
 
@@ -66,7 +69,7 @@ Om te bouwen gebruikend CLI PhoneGap, moet u Node.js en het de cliëntnut instal
 
    Op een Unix- of Linux-systeem moet u mogelijk een voorvoegsel voor de opdracht toevoegen `sudo`.
 
-   De terminal toont de resultaten van een reeks HTTP KRIJGT bevelen. Wanneer de installatie succesvol is, toont de terminal waar de bibliotheken geïnstalleerd gelijkaardig aan het volgende voorbeeld zijn:
+   De terminal toont de resultaten van een reeks opdrachten van HTTP-GET. Wanneer de installatie succesvol is, toont de terminal waar de bibliotheken geïnstalleerd gelijkaardig aan het volgende voorbeeld zijn:
 
    ```xml
    /usr/local/bin/phonegap -> /usr/local/lib/node_modules/phonegap/bin/phonegap.js
@@ -126,24 +129,24 @@ Gebruik de CLI van PhoneGap om de toepassing te compileren en te installeren. Vo
 
 ## Samenstellen met PhoneGap Build {#building-using-phonegap-build}
 
-Gebruik de PhoneGap-cloudservice om uw app te maken. Om deze procedure uit te voeren, moet u eerst een PhoneGap creëren bouwt configuratie.
+Gebruik de PhoneGap-cloudservice om uw app te maken. Om deze procedure uit te voeren, moet u eerst een configuratie van de PhoneGap Build tot stand brengen.
 
 ### Verbinding maken met PhoneGap Build {#connecting-to-phonegap-build}
 
-Maak een PhoneGap Build-configuratie zodat u de PhoneGap Build-services kunt gebruiken vanuit AEM. Geef de gebruikersnaam en het wachtwoord op van de PhoneGap Build-account die u wilt gebruiken om uw mobiele toepassingen te maken.
+Creeer een configuratie van de PhoneGap Build zodat u de diensten van de PhoneGap Build van binnen AEM kunt gebruiken. Geef de gebruikersnaam en het wachtwoord op van de PhoneGap Build-account waarmee u mobiele toepassingen gaat maken.
 
 1. Open de pagina Gereedschappen. ([http://localhost:4502/tools.html](http://localhost:4502/tools.html)).
-1. Klik in het gedeelte CQ-bewerkingen op Cloud Services.
+1. Klik in het gebied CQ-bewerkingen op Cloud Services.
 1. Klik op de koppeling Nu configureren voor PhoneGap Build.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
 1. Typ in het dialoogvenster Configuratie maken een waarde voor de eigenschap Titel. Door gebrek, wordt de waarde van het bezit van de Naam afgeleid uit de titel, nochtans kunt u een naam ingaan. Klik op Maken.
-1. Typ in het dialoogvenster PhoneGap Build-configuratie uw PhoneGap Build-gebruikersnaam en -wachtwoord en klik op OK.
+1. Typ in het dialoogvenster Configuratie PhoneGap Build uw gebruikersnaam en wachtwoord voor de PhoneGap Build en klik op OK.
 
 ### PhoneGap Build gebruiken {#using-phonegap-build}
 
-Verzend uw toepassingsmiddelen naar PhoneGap Build voor het compileren voor de diverse mobiele platforms.
+Verzend uw toepassingsbronnen naar PhoneGap Build voor compilatie voor de verschillende mobiele platforms.
 
 1. Open uw mobiele toepassing op de pagina Mobiele toepassingen. ([http://localhost:4502/mobile.html/content/phonegap](http://localhost:4502/mobile.html/content/phonegap))
 1. (Optioneel) Als u de toepassing voor volledige installaties wilt maken, selecteert u de toepassing en klikt u op het pictogram Cache wissen.
@@ -158,11 +161,11 @@ Verzend uw toepassingsmiddelen naar PhoneGap Build voor het compileren voor de d
 
    ![](do-not-localize/chlimage_1-3.png)
 
-   **** Opmerking: De bètaversie van AEM Beta leidt tot geen Inbox bericht wanneer de bouw met succes voltooit.
+   **Opmerking:** De bètaversie van AEM Bèta leidt tot geen Inbox- bericht wanneer de bouwstijl met succes voltooit.
 
-1. Klik in het dialoogvenster Succes op PhoneGap Build om de Adobe PhoneGap Build-pagina te openen op [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Als u wacht tot uw app wordt weergegeven, kunt u de statuspagina van [PhoneGap Build](https://status.build.phonegap.com/) controleren.
+1. Klik in het dialoogvenster Succes op PhoneGap Build om de Adobe PhoneGap Build-pagina te openen op [https://build.phonegap.com/apps](https://build.phonegap.com/apps). Als u wacht tot uw app wordt weergegeven, kunt u de pagina [PhoneGap BuildStatus](https://status.build.phonegap.com/) controleren.
 
-   Voor informatie over het installeren van de bouwstijl, zie de documentatie [van de Bouwstijl PhoneGap](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29).
+   Voor informatie over het installeren van de bouwstijl, zie de Documentatie van de [PhoneGap Build](https://docs.build.phonegap.com/en_US/3.1.0/#googtrans%28en%29).
 
    >[!NOTE]
    >
