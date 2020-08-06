@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: acf5c17a-95b7-43ba-9734-241e20f4f374
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '298'
+ht-degree: 1%
 
 ---
 
@@ -36,7 +39,7 @@ De opslag ContextHub handhaaft contextgegevens over de cliënt. De JavaScript AP
 Elke opslag ContextHub is een geval van een vooraf bepaald opslagtype:
 
 * ContextHub verstrekt verscheidene types [van](/help/sites-developing/ch-samplestores.md)steekproefopslag.
-* Gebruik AEM-consoles om winkels te [maken](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
+* Gebruik AEM consoles om winkels te [maken](/help/sites-administering/contexthub-config.md#creating-a-contexthub-store).
 * Ontwikkelaars kunnen aangepaste winkeltypen [maken](/help/sites-developing/ch-extend.md#creating-custom-store-candidates).
 * Ontwikkelaars hebben [toegang tot opslaggegevens](/help/sites-developing/ch-adding.md#interacting-with-contexthub-stores) via JavaScript.
 
@@ -51,7 +54,7 @@ De [toolbar](/help/sites-authoring/ch-previewing.md) ContextHub laat marketers e
 Elke module ContextHub UI is een geval van een vooraf bepaald moduletype:
 
 * ContextHub verstrekt verscheidene types [van](/help/sites-developing/ch-samplemodules.md)steekproefmodule.
-* Gebruik AEM-consoles om gebruikersinterfacemodules [toe te](/help/sites-administering/contexthub-config.md#adding-a-ui-module)voegen en deze [te groeperen in UI-modi](/help/sites-administering/contexthub-config.md#adding-a-ui-mode).
+* Gebruik AEM consoles om UI-modules [toe te](/help/sites-administering/contexthub-config.md#adding-a-ui-module)voegen en deze [te groeperen in UI-modi](/help/sites-administering/contexthub-config.md#adding-a-ui-mode).
 
 * Ontwikkelaars kunnen aangepaste moduletypen [](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)maken.
 
