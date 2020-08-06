@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 8eebfcd6-0597-44ed-b718-bf9a1baa6c12
 translation-type: tm+mt
 source-git-commit: 12905ca1540e5b280975724a7fb3635dc4afffca
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
@@ -27,6 +30,7 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
    * **fileSizeLimit** -> value_in_mb (say 5) (standaard 2 MB)
    * **buttonText** -> Knoptekst voor pop-upvenster (&quot;Bijvoegen&quot; standaard)
    * **accepteren** -> bestandstypen die worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standaard)
+
    >[!NOTE]
    >
    >In Microsoft Internet Explorer 9 kunnen gebruikers bestanden bijvoegen die groter zijn dan de opgegeven limiet. Het is een bekend probleem.
