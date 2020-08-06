@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '526'
+ht-degree: 2%
 
 ---
 
@@ -20,13 +23,13 @@ Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, de workflow v
 
 ![](do-not-localize/correspondence-management.png)
 
-De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing post, rekeningen, en welkomstkits.
+De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits.
 
 ## Belangrijkste mogelijkheden {#key-capabilities}
 
 Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 
-* De integratie van buiten de doos met vormgegevensmodel om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
+* De integratie van buiten-de-doos met het model van vormgegevens om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
 * Geïntegreerde ontwerpinterface voor afdrukken en webkanalen met de mogelijkheid om webkanaal automatisch te genereren via het afdrukkanaal
 * Grafieken om informatie in gemakkelijk te begrijpen visuele formaten in druk en Web te presenteren
 * Documentfragmenten ondersteunen regeleditor en formuliergegevensmodel
@@ -37,7 +40,7 @@ Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 
 De [welkomstkit voor een voorbeeldtoepassing van een creditcardklant](/help/forms/using/finance-reference-site-walkthrough.md#credit-card-application-walkthrough) laat de mogelijkheden van een interactieve communicatie zien.
 
-## Interactieve communicatie maken {#interactive-communication-creation}
+## Interactieve communicatie maken  {#interactive-communication-creation}
 
 ![interactive_communication-01](assets/interactive_communication-01.jpg)
 
@@ -113,7 +116,7 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   <tr>
    <td>Grafieken</td> 
    <td>Grafieken die worden ondersteund in afdruk en webkanaal</td> 
-   <td> Niet ondersteund</td> 
+   <td>Niet ondersteund</td> 
   </tr>
   <tr>
    <td>Thema's</td> 
@@ -122,12 +125,12 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   </tr>
   <tr>
    <td>Controle en verificatie</td> 
-   <td> Niet ondersteund</td> 
+   <td>Niet ondersteund</td> 
    <td>Ondersteund</td> 
   </tr>
   <tr>
    <td>Concepten en instantie beheren</td> 
-   <td> Niet ondersteund</td> 
+   <td>Niet ondersteund</td> 
    <td>Ondersteund</td> 
   </tr>
   <tr>
@@ -137,12 +140,12 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   </tr>
   <tr>
    <td>Handtekening agent</td> 
-   <td> Niet ondersteund</td> 
+   <td>Niet ondersteund</td> 
    <td>Ondersteund</td> 
   </tr>
   <tr>
    <td>Externe functies</td> 
-   <td> Niet ondersteund</td> 
+   <td>Niet ondersteund</td> 
    <td>Ondersteund</td> 
   </tr>
  </tbody>
