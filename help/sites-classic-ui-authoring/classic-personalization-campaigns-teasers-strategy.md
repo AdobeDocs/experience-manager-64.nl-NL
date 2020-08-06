@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a31407-96a4-467c-9468-da4095ca38d5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 4%
 
 ---
 
@@ -27,10 +30,10 @@ Campagnes gebruiken vaak theaters als een mechanisme om een specifiek segment va
 
 * **Campagnepagina** &#39;s worden opgeslagen in de sectie Campagnes van de website. Elke campagne heeft een afzonderlijke pagina waarop de teasdefinities staan. De container, of overzichtspagina, bevat ook bepaalde informatie en statistieken over de afzonderlijke laserpagina&#39;s.
 
-Teasers binnen AEM bestaan uit verschillende onderdelen:
+Teasers binnen AEM bestaan uit verschillende delen:
 
 * **De teaspagina** &#39;s worden opgeslagen onder de aangewezen campagnepagina en houden de definities van de teasparagrafen beschikbaar voor elke specifieke campagne. Deze definities worden gebruikt bij de weergave van de laseralinea&#39;s; inclusief variaties in de inhoud, het segment dat moet worden gebruikt voor het selecteren van een variatie- en versterkingsfactor.
-* De component **** Taser is beschikbaar in het vak en u kunt een instantie van de specifieke tasalinea in een inhoudspagina maken. U kunt de lasercomponent van het hulpstuk slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **** Opmerking:De component Teaser is afgekeurd in AEM 6.2.
+* De component **** Taser is beschikbaar in het vak en u kunt een instantie van de specifieke tasalinea in een inhoudspagina maken. U kunt de lasercomponent van het hulpapparaat slepen, dan uw teasdefinitie specificeren om uw eigen teasparagraaf tot stand te brengen. **Opmerking:** De component Teaser is afgekeurd in AEM 6.2.
 
 * **Taseralinea** &#39;s zijn de werkelijke instanties van het gummetje in een inhoudspagina. Deze maken een deel van de bezoekers bekend met inhoud die op hun belangen is toegespitst.
 * Pagina&#39;s die de inhoud van de campagne bevatten, hebben de focus op een specifiek bezoekerssegment. Doorgaans leiden de laseralinea&#39;s de bezoeker naar dergelijke pagina&#39;s.
@@ -119,7 +122,7 @@ Als we dit vervolgens toepassen op een bezoeker waar:
 
 We zien het resultaat:
 
-* succes van overeenkomst - los om het even welke segmenten die aan het meetapparaat worden toegewezen met succes voor de huidige bezoeker op?
+* succes van overeenkomst - los om het even welke segmenten die aan het meetapparaat worden toegewezen succesvol voor de huidige bezoeker op?
 * versterkingsfactor - de hoogste versterkingsfactor van alle toepasselijke segmenten
 * clickstream-score - het cumulatieve totaal voor alle toepasselijke tagtreffers
 
