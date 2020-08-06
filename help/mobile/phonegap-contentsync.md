@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 7941987a-2f4c-4c62-8ab2-0f6f30ceb064
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '2909'
+ht-degree: 0%
 
 ---
 
@@ -19,23 +22,23 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 >[!NOTE]
 >
->Dit document maakt deel uit van de [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, een aanbevolen startpunt voor AEM Mobile-referentie.
+>Dit document maakt deel uit van de [Aan de slag met de AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, een aanbevolen startpunt voor AEM Mobile-referentie.
 
-Gebruik Content Sync om inhoud te verpakken zodat deze kan worden gebruikt in systeemeigen mobiele toepassingen. Pagina&#39;s die in AEM zijn gemaakt, kunnen als toepassingsinhoud worden gebruikt, zelfs als het apparaat offline is. Omdat AEM-pagina&#39;s zijn gebaseerd op webstandaarden, werken ze bovendien op verschillende platforms, zodat u ze in elke native wrapper kunt insluiten. Deze strategie beperkt de ontwikkelingsinspanningen en stelt u in staat om toepassingsinhoud eenvoudig bij te werken.
+Gebruik Content Sync om inhoud te verpakken zodat deze kan worden gebruikt in systeemeigen mobiele toepassingen. Pagina&#39;s die in AEM zijn gemaakt, kunnen als toepassingsinhoud worden gebruikt, zelfs als het apparaat offline is. Omdat AEM pagina&#39;s zijn gebaseerd op webstandaarden, werken ze bovendien op verschillende platforms, zodat u ze in elke native wrapper kunt insluiten. Deze strategie beperkt de ontwikkelingsinspanningen en stelt u in staat om toepassingsinhoud eenvoudig bij te werken.
 
 >[!NOTE]
 >
->PhoneGap-apps die u met AEM-gereedschappen maakt, zijn al geconfigureerd om AEM-pagina&#39;s als inhoud te gebruiken via Content Sync.
+>PhoneGap-toepassingen die u met AEM gereedschappen maakt, zijn al geconfigureerd om AEM pagina&#39;s als inhoud te gebruiken via Content Sync.
 
 Met het raamwerk van Content Sync wordt een archiefbestand gemaakt dat de webinhoud bevat. De inhoud kan van alles zijn, variërend van eenvoudige pagina&#39;s, afbeeldingen en PDF-bestanden of volledige webtoepassingen. De API voor het synchroniseren van inhoud biedt toegang tot het archiefbestand via mobiele apps of om processen te maken zodat de inhoud kan worden opgehaald en opgenomen in de app.
 
 De volgende reeks stappen illustreert een typisch geval van gebruik voor de Synchronisatie van de Inhoud:
 
-1. De AEM-ontwikkelaar maakt een configuratie voor inhoudssynchronisatie waarmee de inhoud wordt opgegeven die moet worden opgenomen.
+1. De AEM ontwikkelaar maakt een configuratie voor inhoudssynchronisatie waarmee de inhoud wordt opgegeven die moet worden opgenomen.
 1. Met het raamwerk voor inhoudssynchronisatie wordt de inhoud verzameld en in cache opgeslagen.
 1. Op een mobiel apparaat wordt de mobiele toepassing gestart en wordt inhoud van de server opgevraagd. Deze inhoud wordt in een ZIP-bestand geleverd.
 1. De client pakt de ZIP-inhoud uit in het lokale bestandssysteem. De mapstructuur in het ZIP-bestand simuleert de paden die een client (bijvoorbeeld een browser) normaal gesproken van de server zou aanvragen.
@@ -50,7 +53,7 @@ De volgende reeks stappen illustreert een typisch geval van gebruik voor de Sync
 
 Maak een configuratie voor Content Sync om de inhoud op te geven van het ZIP-bestand dat aan de client wordt geleverd. U kunt een willekeurig aantal configuraties voor Content Sync maken. Elke configuratie heeft een naam voor identificatiedoeleinden.
 
-Om een configuratie van de Synchronisatie van de Inhoud tot stand te brengen, voeg een `cq:ContentSyncConfig` knoop aan de bewaarplaats toe, met het `sling:resourceType` bezit dat aan wordt geplaatst `contentsync/config`. Het `cq:ContentSyncConfig` knooppunt kan zich overal in de opslagplaats bevinden, maar het knooppunt moet toegankelijk zijn voor gebruikers op de AEM-publicatieinstantie. Daarom zou u de hieronder knoop moeten toevoegen `/content`.
+Om een configuratie van de Synchronisatie van de Inhoud tot stand te brengen, voeg een `cq:ContentSyncConfig` knoop aan de bewaarplaats toe, met het `sling:resourceType` bezit dat aan wordt geplaatst `contentsync/config`. Het `cq:ContentSyncConfig` knooppunt kan zich overal in de opslagplaats bevinden, maar het knooppunt moet toegankelijk zijn voor gebruikers op de AEM publicatieinstantie. Daarom zou u de hieronder knoop moeten toevoegen `/content`.
 
 Voeg onderliggende knooppunten toe aan het knooppunt cq:ContentSyncConfig om de inhoud van het ZIP-bestand voor het synchroniseren van inhoud op te geven. De volgende eigenschappen van elk onderliggend knooppunt identificeren een inhoudsitem dat moet worden opgenomen en hoe dit wordt verwerkt wanneer het wordt toegevoegd:
 
@@ -87,7 +90,7 @@ Als u in de bewaarplaats [](/help/sites-deploying/configuring-osgi.md#osgi-confi
 Om downloadtoegang voor een specifieke configuratie van de Synchronisatie van de Inhoud te vormen, voeg het volgende bezit aan de `cq:ContentSyncConfig` knoop toe:
 
 * Naam: toegestaan
-* Type:String
+* Type: String
 * Waarde: De naam van de gebruiker of groep die kan worden gedownload.
 
 Met uw app kunnen gebruikers bijvoorbeeld updates rechtstreeks installeren via Content Sync. Als u wilt dat alle gebruikers de update kunnen downloaden, stelt u de waarde van de eigenschap Authorizable in op `everyone`.
@@ -103,10 +106,10 @@ U kunt de standaardgebruiker overschrijven en een gebruiker of groep opgeven die
 Als u de standaardgebruiker wilt overschrijven, geeft u een gebruiker of groep op die updates uitvoert voor een specifieke configuratie van Content Sync door de volgende eigenschap toe te voegen aan de node cq:ContentSyncConfig:
 
 * Naam: updategebruiker
-* Type:String
+* Type: String
 * Waarde: De naam van de gebruiker of groep die de updates kan uitvoeren.
 
-Als de knoop cq:ContentSyncConfig geen updateuser bezit heeft, werkt de standaard anonieme gebruiker het geheime voorgeheugen bij.
+Als het knooppunt cq:ContentSyncConfig geen updateuser-eigenschap heeft, werkt de standaardanonieme gebruiker de cache bij.
 
 ### Configuratietypen {#configuration-types}
 
@@ -140,7 +143,7 @@ Oorspronkelijke uitvoeringen van elementen verzamelen.
 
 Het afbeeldingstype wordt gebruikt om het logo We.Retail in het ZIP-bestand op te nemen.
 
-**pagina** &#39;s AEM-pagina&#39;s renderen en elementen waarnaar wordt verwezen, verzamelen.
+**pagina** &#39;s AEM pagina&#39;s weergeven en elementen waarnaar wordt verwezen, verzamelen.
 
 * **pad** - Pad naar pagina.
 * **extension** - Extension die moet worden gebruikt in het verzoek. Voor pagina&#39;s is dit bijna altijd *html*, maar andere zijn nog mogelijk.
@@ -168,11 +171,11 @@ Elke eigenschap kan een van de volgende waarden hebben:
 
 * `REWRITE_RELATIVE`: herschrijft het pad met een relatieve positie ten opzichte van het bestand page.html op het bestandssysteem.
 
-* `REWRITE_EXTERNAL`: herschrijft de weg door aan het middel op de server te richten, gebruikend de dienst [van](/help/sites-developing/externalizer.md)ExternalAlizer AEM.
+* `REWRITE_EXTERNAL`: herschrijft de weg door aan het middel op de server te richten, gebruikend de AEM [dienst](/help/sites-developing/externalizer.md)ExternalAlizer.
 
-De dienst AEM genoemd **PathRewriterTransformerFactory** staat u toe om de specifieke html attributen te vormen die zullen worden herschreven. De dienst kan in de console van het Web worden gevormd en heeft een configuratie voor elk bezit van de `rewrite` knoop: `clientlibs`, `images` en `links`.
+De AEM dienst genoemd **PathRewriterTransformerFactory** staat u toe om de specifieke html attributen te vormen die zullen worden herschreven. De dienst kan in de console van het Web worden gevormd en heeft een configuratie voor elk bezit van de `rewrite` knoop: `clientlibs`, `images` en `links`.
 
-Deze functie is toegevoegd aan AEM 5.5.
+Deze functie is toegevoegd in AEM 5.5.
 
 ### Configuratie voorbeeldinhoud synchroniseren {#example-content-sync-configuration}
 
@@ -224,7 +227,7 @@ Hieronder ziet u een voorbeeldconfiguratie voor Content Sync.
 
 In het voorbeeld moet de pagina met gebeurtenislijsten de startpagina zijn. Deze informatie wordt verstrekt in het **indexPage** bezit en kan zo gemakkelijk op elk ogenblik worden veranderd. Een tweede eigenschap definieert het pad van het bestand *events.plist* . Aangezien wij later zullen zien, kan de cliënttoepassing manifest nu lezen en volgens het handelen.
 
-Zodra de configuratie is ingesteld, kan de inhoud worden gedownload met een browser of een andere HTTP-client, of als u zich ontwikkelt voor iOS, kunt u de speciale WAppKitSync-clientbibliotheek gebruiken. De downloadlocatie bestaat uit het pad van de configuratie en de extensie *.zip* , bijvoorbeeld wanneer u met een lokale AEM-instantie werkt: *http://localhost:4502/content/weretail_go.zip*
+Zodra de configuratie is ingesteld, kan de inhoud worden gedownload met een browser of een andere HTTP-client, of als u zich ontwikkelt voor iOS, kunt u de speciale WAppKitSync-clientbibliotheek gebruiken. De downloadlocatie bestaat uit het pad van de configuratie en de extensie *.zip* , bijvoorbeeld wanneer u met een lokale AEM werkt: *http://localhost:4502/content/weretail_go.zip*
 
 ### De console voor het synchroniseren van inhoud {#the-content-sync-console}
 
@@ -282,7 +285,7 @@ De *fabrieksdefinitie* bevat de algemene interface en het aangepaste type, gesch
 
 ### Een aangepaste updatehandler implementeren {#implementing-a-custom-update-handler}
 
-Elke pagina Web.Retail Mobile bevat een logo in de linkerbovenhoek dat we natuurlijk in het ZIP-bestand willen opnemen. Voor het optimaliseren van het cachegeheugen verwijst AEM echter niet naar de werkelijke locatie van het afbeeldingsbestand in de opslagplaats, waardoor we het configuratietype **kopiëren** niet gewoon kunnen gebruiken. Wat wij in plaats daarvan moeten doen is ons eigen **logoconfiguratietype** verstrekken dat het beeld bij de plaats beschikbaar maakt die door AEM wordt gevraagd. In het volgende codevoorbeeld wordt de volledige implementatie van de logo-updatehandler getoond:
+Elke pagina Web.Retail Mobile bevat een logo in de linkerbovenhoek dat we natuurlijk in het ZIP-bestand willen opnemen. Voor het optimaliseren van het cachegeheugen verwijst AEM echter niet naar de werkelijke locatie van het afbeeldingsbestand in de opslagplaats, waardoor we het configuratietype **kopiëren** niet gewoon kunnen gebruiken. Wat wij in plaats daarvan moeten doen is ons eigen **logoconfiguratietype** te verstrekken dat het beeld bij de plaats op verzoek van AEM ter beschikking stelt. In het volgende codevoorbeeld wordt de volledige implementatie van de logo-updatehandler getoond:
 
 #### LogoUpdateHandler.java {#logoupdatehandler-java}
 
@@ -368,10 +371,10 @@ Content Sync levert inhoud op intelligente wijze: Alleen gegevenswijzigingen sin
 
 Alle overgedragen gegevens kunnen in dezelfde mappenstructuur worden geëxtraheerd, er zijn geen extra stappen (bijvoorbeeld afhankelijkheidscontroles) vereist voor het ophalen van gegevens. In het geval van iOS worden alle gegevens opgeslagen in een submap in de map Documents van de iOS-app.
 
-Typisch uitvoeringspad van een op iOS gebaseerde AEM Mobile-app:
+Typisch uitvoeringspad van een AEM Mobile-app op iOS:
 
 * De gebruiker start de toepassing op een iOS-apparaat.
-* App probeert verbinding te maken met AEM-back-end en vraagt om gegevenswijzigingen sinds de laatste uitvoering.
+* App probeert verbinding te maken met AEM back-end en vraagt om gegevenswijzigingen sinds de laatste uitvoering.
 * De server haalt de gegevens in kwestie op en zet ze in een bestand neer.
 * De gegevens worden geretourneerd naar het clientapparaat waar ze worden uitgepakt in de documentenmap.
 * De component UIWebView start/vernieuwt.
