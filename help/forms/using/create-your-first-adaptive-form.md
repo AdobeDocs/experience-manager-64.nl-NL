@@ -1,6 +1,6 @@
 ---
-title: ' Uw eerste adaptieve formulier maken'
-seo-title: ' Uw eerste adaptieve formulier maken'
+title: Uw eerste adaptieve formulier maken
+seo-title: Uw eerste adaptieve formulier maken
 description: 'Leer zakelijke klassen, interactieve en responsieve formulieren te maken. '
 seo-description: 'Leer zakelijke klassen, interactieve en responsieve formulieren te maken. '
 page-status-flag: de-activated
@@ -9,6 +9,9 @@ topic-tags: introduction
 discoiquuid: 4e247e70-c50a-4571-8ac1-fbbb07100262
 translation-type: tm+mt
 source-git-commit: fae6d621ad61a26db99994482c16c9d9a5f88ad9
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -38,11 +41,11 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM Fo
 
 ### Vereiste {#prerequisite}
 
-* Stel een AEM-auteurinstantie in.
+* Stel een AEM auteur-instantie in.
 * Installeer de invoegtoepassing [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) op de auteurinstantie.
 * Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in de zelfstudie zijn gebaseerd op MySQL-database en gebruiken het [MySQL JDBC-databasestuurprogramma](https://dev.mysql.com/downloads/connector/j/5.1.html)van Oracle.
 
-* Stel een database in die klantgegevens bevat met de onderstaande velden. Een database is niet essentieel om een adaptief formulier te maken. Deze zelfstudie gebruikt een database om het gegevensmodel van het formulier en de persistentiemogelijkheden van AEM Forms weer te geven.
+* Stel een database in die klantgegevens bevat met de onderstaande velden. Een database is niet essentieel om een adaptief formulier te maken. Deze zelfstudie gebruikt een database voor het weergeven van het formuliergegevensmodel en de persistentiemogelijkheden van AEM Forms.
 
 ![adaptiveformdata](assets/adaptiveformdata.png)
 
@@ -59,13 +62,13 @@ Doelstellingen:
 * Verzendactie maken om een e-mail met formulierinhoud te verzenden
 * Een adaptief formulier voorvertonen en verzenden
 
-   [ ![zie-de-gids-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
+   [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
 ## Stap 2: Formuliergegevensmodel maken {#step-create-form-data-model}
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Met een formuliergegevensmodel kunt u een adaptief formulier aansluiten op verschillende gegevensbronnen. Bijvoorbeeld: AEM-gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. Een gegevensmodel van de Vorm is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het formuliergegevensmodel met een adaptief formulier gebruiken om gegevens op te halen, bij te werken, te verwijderen en aan verbonden gegevensbronnen toe te voegen.
+Met een formuliergegevensmodel kunt u een adaptief formulier aansluiten op verschillende gegevensbronnen. Bijvoorbeeld AEM gebruikersprofiel, RESTful Webdiensten, op SOAP-Gebaseerde Webdiensten, OData diensten, en relationele gegevensbestanden. Een gegevensmodel van de Vorm is een verenigd schema van de gegevensvertegenwoordiging van bedrijfsentiteiten en de diensten beschikbaar in verbonden gegevensbronnen. U kunt het formuliergegevensmodel met een adaptief formulier gebruiken om gegevens op te halen, bij te werken, te verwijderen en aan verbonden gegevensbronnen toe te voegen.
 
 Doelstellingen:
 
@@ -75,7 +78,7 @@ Doelstellingen:
 * Lezen- en schrijfservices configureren voor het gegevensmodel van het formulier
 * Formuliergegevensmodel testen en geconfigureerde services met testgegevens
 
-   [ ![zie-de-gids-sm](assets/see-the-guide-sm.png)](create-form-data-model.md)
+   [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](create-form-data-model.md)
 
 ## Stap 3: Regels toepassen op aangepaste formuliervelden {#step-apply-rules-to-adaptive-form-fields}
 
@@ -100,26 +103,26 @@ Doelstellingen:
 * Een thema maken voor een adaptief formulier met de themaeditor
 * Weblettertypen gebruiken in een aangepast thema
 
-   [ ![zie-de-gids-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
+   [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
 ## Stap 5: Het adaptieve formulier testen {#step-test-your-adaptive-form}
 
 ![11-test-uw-adaptieve vorm](assets/11-test-your-adaptive-form.png)
 
-Adaptieve formulieren zijn een integraal onderdeel van de interactie van uw klant. Het is belangrijk dat u de aangepaste formulieren test met elke wijziging die u erin aanbrengt. Het testen van elk veld van een formulier is vervelend. AEM Forms biedt een SDK (Calvin SDK) waarmee u het testen van adaptieve formulieren kunt automatiseren. Met Calvin kunt u het testen van uw adaptieve formulieren automatiseren in de webbrowser.
+Adaptieve formulieren zijn een integraal onderdeel van de interactie van uw klant. Het is belangrijk dat u de aangepaste formulieren test met elke wijziging die u erin aanbrengt. Het testen van elk veld van een formulier is vervelend. AEM Forms beschikt over een SDK (Calvin SDK) om het testen van adaptieve formulieren te automatiseren. Met Calvin kunt u het testen van uw adaptieve formulieren automatiseren in de webbrowser.
 
 Doelstellingen:
 
 * Calvin SDK installeren
 * Testsuite en testcase maken voor het wijzigen van adresformulier
 
-Voor meer informatie over SDK raadpleegt u Geautomatiseerde tests [gebruiken met AEM-adaptief formulier](/help/forms/using/calvin.md).
+Meer informatie over SDK vindt u in Geautomatiseerde tests [gebruiken met AEM adaptieve vorm](/help/forms/using/calvin.md).
 
 ## Stap 6: Het aangepaste formulier publiceren {#step-publish-your-adaptive-form}
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-U kunt adaptieve formulieren publiceren als een zelfstandig formulier (toepassing op één pagina), opnemen in de pagina [met AEM-](/help/forms/using/embed-adaptive-form-aem-sites.md)sites of op een AEM-site aanbieden met [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
+U kunt adaptieve formulieren publiceren als een zelfstandig formulier (toepassing op één pagina), opnemen in AEM [sitepagina](/help/forms/using/embed-adaptive-form-aem-sites.md)of op een AEM site aanbieden met behulp van [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
 
 Doelstellingen:
 
