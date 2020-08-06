@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 46f135de-a0bf-451d-bdcc-fb29188250aa
 translation-type: tm+mt
 source-git-commit: 3db2abacf2161f8de715a2972bafacdad43563ef
+workflow-type: tm+mt
+source-wordcount: '562'
+ht-degree: 0%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 3db2abacf2161f8de715a2972bafacdad43563ef
 
 Vanaf AEM Communities 6.1 is een unieke aanpak gekozen voor de verwerking van door gebruikers gegenereerde inhoud (UGC) die door sitebezoekers (leden) uit de publicatieomgeving is ingediend.
 
-Deze benadering is fundamenteel verschillend van de manier het platform AEM plaatsinhoud behandelt die over het algemeen van het auteursmilieu wordt beheerd.
+Deze benadering is fundamenteel verschillend van de manier het AEM platform plaatsinhoud behandelt die over het algemeen van het auteursmilieu wordt beheerd.
 
-Het AEM-platform gebruikt een knooppuntenarchief dat site-inhoud van auteur dupliceert om te publiceren, terwijl AEM-gemeenschappen één algemene opslag voor UGC gebruiken die nooit wordt gerepliceerd.
+Het AEM platform gebruikt een knoopopslag die site-inhoud van auteur voor publicatie repliceert, terwijl AEM Communities één algemene opslag voor UGC gebruikt die nooit wordt gerepliceerd.
 
 Voor de gemeenschappelijke opslag UGC, is het noodzakelijk om een leverancier van het [opslagmiddel (SRP)](working-with-srp.md)te kiezen. De aanbevolen opties zijn:
 
@@ -35,13 +38,13 @@ Het vereisen van een gemeenschappelijke opslagresultaten in de volgende geadvise
 
 >[!NOTE]
 >
->Voor AEM-gemeenschappen wordt [UGC nooit gerepliceerd](working-with-srp.md#ugc-never-replicated).
+>Voor AEM Communities wordt [UGC nooit gerepliceerd](working-with-srp.md#ugc-never-replicated).
 >
->Wanneer de plaatsing geen [gemeenschappelijke opslag](working-with-srp.md)omvat, zal UGC slechts op publiceren AEM of auteursinstantie zichtbaar zijn waarop het was ingegaan.
+>Wanneer de plaatsing geen [gemeenschappelijke opslag](working-with-srp.md)omvat, zal UGC slechts op AEM publiceren of auteursinstantie zichtbaar zijn waarop het was ingegaan.
 
 >[!NOTE]
 >
->Voor meer informatie over het platform AEM, zie [Aanbevolen Plaatsingen](../../help/sites-deploying/recommended-deploys.md) en [Inleiding aan het Platform](../../help/sites-deploying/data-store-config.md)AEM.
+>Voor meer informatie over het AEM platform, zie [Aanbevolen Plaatsingen](../../help/sites-deploying/recommended-deploys.md) en [Inleiding aan het AEM Platform](../../help/sites-deploying/data-store-config.md).
 
 ## Voor productie {#for-production}
 
@@ -86,7 +89,7 @@ Wanneer de topologie publiceer landbouwbedrijf is, zijn de relevante onderwerpen
 
 Voor non-production milieu&#39;s, verstrekt [JSRP](jsrp.md) eenvoud in vestiging een ontwikkelomgeving met één auteursinstantie en één publicatieinstantie.
 
-Als u [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) kiest voor productie, is het ook mogelijk om een vergelijkbare ontwikkelomgeving in te stellen met behulp van Adobe on-demand-opslag of MongoDB. Voor een voorbeeld, zie [hoe te MongoDB voor Demo](demo-mongo.md)plaatsen.
+Als het kiezen van [ASRP](asrp.md), [DSRP](dsrp.md) of [MSRP](msrp.md) voor productie, is het ook mogelijk aan opstelling een gelijkaardige ontwikkelomgeving gebruikend Adobe op bestelling opslag of MongoDB. Voor een voorbeeld, zie [hoe te MongoDB voor Demo](demo-mongo.md)plaatsen.
 
 ## Verwijzingen {#references}
 
