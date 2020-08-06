@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
 translation-type: tm+mt
 source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+workflow-type: tm+mt
+source-wordcount: '6889'
+ht-degree: 0%
 
 ---
 
@@ -36,12 +39,12 @@ Het doel van de nieuwe implementatie is om waar nodig bestaande functionaliteit 
 
 ### De nieuwe implementatie van de aangepaste gebruikersgroep {#the-new-custom-user-group-implementation}
 
-Een CUG zoals deze bekend is in de context van AEM bestaat uit de volgende stappen:
+Een CUG zoals deze in de context van AEM bekend is, bestaat uit de volgende stappen:
 
 * Beperk leestoegang op de boom die moet worden beschermd en sta slechts lezen voor hoofden toe die of met een bepaalde instantie van de GG vermeld zijn of van de evaluatie van de GG helemaal worden uitgesloten. Dit wordt het **machtigingselement** genoemd.
 * Verificatie afdwingen voor een bepaalde structuur en optioneel een specifieke aanmeldingspagina opgeven voor die structuur die vervolgens wordt uitgesloten. Dit wordt genoemd het **authentificatieelement** .
 
-De nieuwe implementatie is ontworpen om een lijn te trekken tussen de authenticatie en de autorisatieonderdelen. Vanaf AEM 6.3, is het mogelijk om gelezen toegang te beperken zonder uitdrukkelijk een authentificatievereiste toe te voegen. Bijvoorbeeld, als een bepaalde instantie authentificatie helemaal vereist of een bepaalde boom verblijft reeds in een subboom die authentificatie reeds vereist.
+De nieuwe implementatie is ontworpen om een lijn te trekken tussen de authenticatie en de autorisatieonderdelen. Met ingang van AEM 6.3 is het mogelijk leestoegang te beperken zonder expliciet een verificatievereiste toe te voegen. Bijvoorbeeld, als een bepaalde instantie authentificatie helemaal vereist of een bepaalde boom verblijft reeds in een subboom die authentificatie reeds vereist.
 
 Eveneens, kan een bepaalde boom met een authentificatievereiste worden gemerkt zonder de efficiënte toestemmingsopstelling te veranderen. De combinaties en de resultaten worden vermeld in de [Combinerende het Beleid van de KUG en de sectie van de Vereiste](/help/sites-administering/closed-user-groups.md#combining-cug-policies-and-the-authentication-requirement) van de Authentificatie.
 
@@ -66,7 +69,7 @@ De implementatie van PrincipalSetPolicy die wordt gebruikt om CUGs te vertegenwo
 * Het beleid van de CUG kan worden genesteld, begint een genestelde KUG een nieuwe KUG zonder de belangrijkste reeks van &quot;ouder&quot;KUG over te nemen;
 * Het effect van het beleid, als de evaluatie wordt toegelaten, wordt geërft aan volledige subtree neer aan volgende genestelde KUG.
 
-Dit beleid van CUG wordt opgesteld aan een instantie AEM door een afzonderlijke vergunningsmodule genoemd oak-vergunning-insect. Deze module komt met zijn eigen beheer van toegangsbeheer en toestemmingsevaluatie. Met andere woorden, de standaardAEM opstelling verscheept een configuratie van de Oak inhoudsbewaarplaats die veelvoudige vergunningsmechanismen combineert. Zie [deze pagina op de Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)voor meer informatie.
+Dit beleid van CUG wordt opgesteld aan een AEM instantie door een afzonderlijke vergunningsmodule genoemd oak-vergunning-insect. Deze module komt met zijn eigen beheer van toegangsbeheer en toestemmingsevaluatie. Met andere woorden, de standaard AEM installatie verzendt een configuratie van de opslagplaats voor eik-inhoud die meerdere machtigingsmechanismen combineert. Zie [deze pagina op de Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)voor meer informatie.
 
 In deze samengestelde opstelling vervangt een nieuwe KUG niet de bestaande inhoud van het toegangsbeheer in bijlage aan de doelknoop, maar wordt ontworpen om een aanvulling te zijn die ook later kan worden verwijderd zonder het originele toegangsbeheer te beïnvloeden, dat door gebrek in AEM een toegangsbeheerlijst zou zijn.
 
@@ -91,7 +94,7 @@ Het effect van één enkel beleid van CUG op toestemmingsevaluatie kan als volgt
 * Het heeft echter geen gevolgen voor broers en zussen noch voorouders van het toegangsbeheerknooppunt;
 * De overerving van een bepaalde CUG houdt bij genestelde KUG tegen.
 
-#### Aanbevolen werkwijzen {#best-practices}
+#### Best practices voor {#best-practices}
 
 Bij het definiëren van beperkte leestoegang via CUG&#39;s moet rekening worden gehouden met de volgende aanbevolen procedures:
 
@@ -127,7 +130,7 @@ Hetzelfde geldt voor de `granite:loginPath` eigenschap. Er wordt alleen aan vold
 
 Aangezien dit type van authentificatievereiste naar verwachting tot bepaalde looppaswijzen en tot een kleine ondergroep van bomen binnen de inhoudsbewaarplaats zal worden beperkt, is het volgen van het vereiste mixintype en de login wegeigenschappen voorwaardelijk en verbindend aan een overeenkomstige configuratie die de gesteunde wegen bepaalt (zie de Opties van de Configuratie hieronder). Bijgevolg zullen alleen wijzigingen binnen het bereik van deze ondersteunde paden een update van de OSGi-registratie activeren, elders worden zowel het mixintype als de eigenschap genegeerd.
 
-De standaardAEM opstelling maakt nu gebruik van deze configuratie door toe te staan om de mixin op de wijze van de auteurslooppas te plaatsen maar het slechts van kracht te hebben op replicatie aan te publiceren instantie. Zie [deze pagina](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) voor meer informatie over hoe Sling de verificatievereiste afdwingt.
+De standaard AEM opstelling maakt nu gebruik van deze configuratie door toe te staan om de mixin op de wijze van de auteurslooppas te plaatsen maar het slechts van kracht te hebben op replicatie aan te publiceren instantie. Zie [deze pagina](https://sling.apache.org/documentation/the-sling-engine/authentication/authenticationframework.html) voor meer informatie over hoe Sling de verificatievereiste afdwingt.
 
 Het toevoegen van het `granite:AuthenticationRequired` mixintype binnen de gevormde gesteunde wegen zal de registratie OSGi van de verantwoordelijke manager om veroorzaken worden bijgewerkt die een nieuwe, extra ingang met het `sling.auth.requirements` bezit bevatten. Als een bepaalde authentificatievereiste het facultatieve `granite:loginPath` bezit specificeert, wordt de waarde additioneel geregistreerd met de Authenticator met een &#39;-&#39; prefix om van authentificatievereiste te worden uitgesloten.
 
@@ -137,7 +140,7 @@ Van Apache Sling-verificatievereisten wordt verwacht dat deze worden overgeërfd
 
 #### Evaluatie van aanmeldingspad {#evaluation-of-login-path}
 
-De evaluatie van het aanmeldingspad en de omleiding naar de bijbehorende bron bij verificatie is momenteel een implementatiedetails van de Adobe Granite Login Selector Authentication Handler ( `com.day.cq.auth.impl.LoginSelectorHandler`), een Apache Sling AuthenticationHandler die standaard met AEM is geconfigureerd.
+De evaluatie van de login weg en redirect aan het overeenkomstige middel op authentificatie is momenteel een implementatiedetail van de Handler van de Authentificatie van de Selecteur van de Aanmelden van de Adobe Granite ( `com.day.cq.auth.impl.LoginSelectorHandler`), die een Apache Sling AuthenticationHandler is die met AEM door gebrek wordt gevormd.
 
 Bij het aanroepen van `AuthenticationHandler.requestCredentials` deze handler wordt geprobeerd de aanmeldingspagina voor toewijzingen te bepalen waarnaar de gebruiker wordt omgeleid. Dit omvat de volgende stappen:
 
@@ -169,7 +172,7 @@ De `LoginPathProvider` code die wordt geïmplementeerd door de nieuwe ondersteun
 >
 >De evaluatie wordt slechts uitgevoerd voor verzoeken verbonden aan middelen die met in de gevormde gesteunde wegen worden gevestigd. Voor andere verzoeken zullen de alternatieve manieren om de login weg te bepalen worden geëvalueerd.
 
-#### Aanbevolen werkwijzen {#best-practices-1}
+#### Best practices voor {#best-practices-1}
 
 Bij het bepalen van de verificatievereisten moet rekening worden gehouden met de volgende beste praktijken:
 
@@ -277,7 +280,7 @@ if (cugPolicy.addPrincipals(toAdd1, toAdd2) || cugPolicy.removePrincipals(toRemo
 
 ### Effectief CUG-beleid ophalen {#retrieve-effective-cug-policies}
 
-Het beheer van het toegangsbeheer JCR bepaalt een beste inspanningsmethode om het beleid terug te winnen dat op een bepaalde weg van kracht wordt. Wegens het feit dat de evaluatie van het beleid van de CUG voorwaardelijk is en van de overeenkomstige configuratie afhangt om worden toegelaten, `getEffectivePolicies` is het roepen een geschikte manier om te verifiëren of een bepaald beleid van de CUG in een bepaalde installatie van kracht wordt.
+Het beheer van de toegangscontrole JCR bepaalt een beste inspanningsmethode om het beleid terug te winnen dat op een bepaalde weg van kracht wordt. Wegens het feit dat de evaluatie van het beleid van de CUG voorwaardelijk is en van de overeenkomstige configuratie afhangt om worden toegelaten, `getEffectivePolicies` is het roepen een geschikte manier om te verifiëren of een bepaald beleid van de CUG in een bepaalde installatie van kracht wordt.
 
 >[!NOTE]
 >
@@ -422,7 +425,7 @@ session.save();
 
 Er is geen speciale openbare API om alle effectieve verificatievereisten te lezen zoals die zijn geregistreerd bij de Apache Sling Authenticator. Nochtans, wordt de lijst blootgesteld in de systeemconsole bij `https://<serveraddress>:<serverport>/system/console/slingauth` onder de sectie van de &quot;Configuratie van de Vereiste van de **Authentificatie**&quot;.
 
-In de volgende afbeelding ziet u de verificatievereisten van een AEM-publicatieinstantie met demo-inhoud. Het gemarkeerde pad van de communitypagina toont hoe een vereiste die wordt toegevoegd door de implementatie die in dit document wordt beschreven, wordt weerspiegeld in de Apache Sling Authenticator.
+In de volgende afbeelding ziet u de verificatievereisten van een AEM-publicatie-instantie met demo-inhoud. Het gemarkeerde pad van de communitypagina toont hoe een vereiste die wordt toegevoegd door de implementatie die in dit document wordt beschreven, wordt weerspiegeld in de Apache Sling Authenticator.
 
 >[!NOTE]
 >
@@ -434,7 +437,7 @@ In de volgende afbeelding ziet u de verificatievereisten van een AEM-publicatiei
 
 Er is momenteel geen openbare API om de login weg terug te winnen die op anoniem toegang tot van een middel zal ingaan dat authentificatie vereist. Zie sectieEvaluatie van Login Weg voor implementatiedetails op hoe de login weg wordt teruggewonnen.
 
-Naast de aanmeldingspaden die met deze functie zijn gedefinieerd, zijn er echter andere manieren om het omleiden naar de aanmelding op te geven. Hiermee moet rekening worden gehouden bij het ontwerpen van het inhoudsmodel en de verificatievereisten van een bepaalde AEM-installatie.
+Naast de aanmeldingspaden die met deze functie zijn gedefinieerd, zijn er echter andere manieren om het omleiden naar de aanmelding op te geven. Hiermee moet rekening worden gehouden bij het ontwerpen van het inhoudsmodel en de verificatievereisten van een bepaalde AEM.
 
 #### De overerfde Auth-vereiste ophalen {#retrieve-the-inherited-auth-requirement}
 
@@ -464,7 +467,7 @@ while (isSupported(node)) {
 
 ### Het combineren van het Beleid van de KUG en de Vereisten van de Authentificatie {#combining-cug-policies-and-the-authentication-requirement}
 
-De volgende lijst maakt een lijst van de geldige combinaties beleid van de CUG en het authentificatievereiste in een instantie AEM die beide modules heeft die door configuratie worden toegelaten.
+De volgende lijst maakt een lijst van de geldige combinaties beleid van de CUG en het authentificatievereiste in een AEM instantie die beide modules heeft die door configuratie worden toegelaten.
 
 | **Verificatie vereist** | **Aanmeldingspad** | **Beperkte leestoegang** | **Verwacht effect** |
 |---|---|---|---|
@@ -486,11 +489,11 @@ Zie ook de de afbeeldingsdocumentatie van de KUG voor een uitvoerige afbeelding 
 
 ### Autorisatie: Instellen en configureren {#authorization-setup-and-configuration}
 
-De nieuwe onderdelen met betrekking tot machtigingen zijn opgenomen in de **Oak CUG Authorization** bundle ( `org.apache.jackrabbit.oak-authorization-cug`), een onderdeel van de standaard AEM-installatie. De bundel bepaalt een gescheiden vergunningsmodel dat wordt opgesteld als extra manier om gelezen toegang te beheren.
+De nieuwe onderdelen met betrekking tot machtigingen zijn opgenomen in de **Oak CUG Authorization** bundle ( `org.apache.jackrabbit.oak-authorization-cug`), een onderdeel van de AEM standaardinstallatie. De bundel bepaalt een gescheiden vergunningsmodel dat wordt opgesteld als extra manier om gelezen toegang te beheren.
 
 #### CUG-autorisatie instellen {#setting-up-cug-authorization}
 
-Het instellen van een CUG-vergunning wordt in de [desbetreffende Apache-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability)uitvoerig beschreven. Door gebrek, heeft AEM de vergunning van de KUG die in alle looppaswijzen wordt opgesteld. De stapsgewijze instructies kunnen ook worden gebruikt om de CUG-autorisatie uit te schakelen in die installaties waarvoor een andere instelling van de autorisatie vereist is.
+Het instellen van een CUG-vergunning wordt in de [desbetreffende Apache-documentatie](https://jackrabbit.apache.org/oak/docs/security/authorization/cug.html#pluggability)uitvoerig beschreven. Door gebrek, AEM heeft de vergunning van de GECG die in alle looppaswijzen wordt opgesteld. De stapsgewijze instructies kunnen ook worden gebruikt om de CUG-autorisatie uit te schakelen in die installaties waarvoor een andere instelling van de autorisatie vereist is.
 
 #### Filter Referrer configureren {#configuring-the-referrer-filter}
 
@@ -515,7 +518,7 @@ De volgende twee componenten OSGi zijn geïntroduceerd om authentificatievereist
  <tbody> 
   <tr> 
    <td>Label</td> 
-   <td> Apache Jackrabbit Oak CUG Configuration</td> 
+   <td>Apache Jackrabbit Oak CUG Configuration</td> 
   </tr> 
   <tr> 
    <td>Beschrijving</td> 
@@ -547,7 +550,7 @@ De volgende twee componenten OSGi zijn geïntroduceerd om authentificatievereist
  <tbody> 
   <tr> 
    <td>Label</td> 
-   <td> Apache Jackrabbit Oak CUG Exclusive List</td> 
+   <td>Apache Jackrabbit Oak CUG Exclusive List</td> 
   </tr> 
   <tr> 
    <td>Beschrijving</td> 
@@ -582,9 +585,9 @@ De beschikbare configuratieopties verbonden aan de CUG-vergunning module zijn ve
 
 #### Exclusief stafmedewerkers van de CUG-evaluatie {#excluding-principals-from-cug-evaluation}
 
-Van de vorige uitvoering zijn individuele beginselen van de CUG-evaluatie vrijgesteld. De nieuwe vergunning van de GECG behandelt dit met een specifieke interface genoemd CugExclude. Apache Jackrabbit Oak 1.4 schepen met een standaardimplementatie die een vaste reeks principes evenals een uitgebreide implementatie uitsluit die individuele belangrijkste namen toestaat te vormen. De laatste is geconfigureerd in AEM-publicatie-instanties.
+Van de vorige uitvoering zijn individuele beginselen van de CUG-evaluatie vrijgesteld. De nieuwe vergunning van de GECG behandelt dit met een specifieke interface genoemd CugExclude. Apache Jackrabbit Oak 1.4 schepen met een standaardimplementatie die een vaste reeks principes evenals een uitgebreide implementatie uitsluit die individuele belangrijkste namen toestaat te vormen. De laatste is geconfigureerd in AEM publicatieinstanties.
 
-Het gebrek aangezien AEM 6.3 de volgende hoofden verhindert door beleid van de CUSG worden beïnvloed:
+Het gebrek sinds AEM 6.3 verhindert de volgende hoofden door beleid van de CG worden beïnvloed:
 
 * beheerprincipes (beheerder, groep beheerders)
 * servicegebruikersprincipes
@@ -598,13 +601,13 @@ Alternatief, is het mogelijk om een douaneimplementatie van de interface te vers
 
 ### Verificatie: Instellen en configureren {#authentication-setup-and-configuration}
 
-De nieuwe, aan verificatie gerelateerde onderdelen zijn opgenomen in de bundel **Adobe Granite Authentication Handler** ( `com.adobe.granite.auth.authhandler` versie 5.6.48). Deze bundel maakt deel uit van de standaardinstallatie van AEM.
+De nieuwe onderdelen met betrekking tot verificatie zijn opgenomen in de bundel **Adobe Granite Authentication Handler** ( `com.adobe.granite.auth.authhandler` versie 5.6.48). Deze bundel maakt deel uit van de AEM standaardinstallatie.
 
-Om de vervanging van de authentificatievereiste voor de verouderde steun van de CUG te plaatsen, moeten sommige componenten OSGi in een bepaalde installatie aanwezig en actief zijn AEM. Zie **Kenmerken van OSGi-componenten** hieronder voor meer informatie.
+Om de vervanging van het authentificatievereiste voor de verouderde steun van de GN te plaatsen, moeten sommige componenten OSGi aanwezig en actief in een bepaalde AEM installatie zijn. Zie **Kenmerken van OSGi-componenten** hieronder voor meer informatie.
 
 >[!NOTE]
 >
->Wegens de verplichte configuratieoptie met RequirementHandler, zullen de authentificatie verwante delen slechts actief zijn als de eigenschap door een reeks gesteunde wegen te specificeren is toegelaten. Bij een standaard AEM-installatie is de functie uitgeschakeld in de uitvoeringsmodus van de auteur en ingeschakeld voor /content in de publicatiemodus.
+>Wegens de verplichte configuratieoptie met RequirementHandler, zullen de authentificatie verwante delen slechts actief zijn als de eigenschap door een reeks gesteunde wegen te specificeren is toegelaten. Bij een standaard AEM installatie is de functie uitgeschakeld in de modus voor het uitvoeren van de auteur en ingeschakeld voor /content in de modus voor publiceren.
 
 **Kenmerken van OSGi-componenten**
 
@@ -646,7 +649,7 @@ De volgende 2 componenten OSGi zijn geïntroduceerd om authentificatievereisten 
 
 **com.adobe.granite.auth.requirements.impl.DefaultRequirementHandler**
 
-| Label |  Adobe Granite-verificatievereiste en Aanmeldingspad-handler |
+| Label | Adobe Granite-verificatie vereist en Aanmeldingspad-handler |
 |---|---|
 | Beschrijving | `RequirementHandler` implementatie die de vereisten voor Apache Sling-verificatie en de bijbehorende uitsluiting voor de bijbehorende aanmeldingspaden bijwerkt. |
 | Configuratieeigenschappen | `supportedPaths` |
@@ -655,7 +658,7 @@ De volgende 2 componenten OSGi zijn geïntroduceerd om authentificatievereisten 
 
 #### Configuratieopties {#configuration-options-1}
 
-Voor de verificatie-gerelateerde onderdelen van de CUG-rewrite wordt slechts één configuratieoptie gebruikt die is gekoppeld aan de Adobe Granite Authentication Requiment and Login Path Handler:
+De authentificatiegerelateerde delen van CUG herschrijven slechts met één enkele configuratieoptie verbonden aan de Vereiste van de Authentificatie van de Adobe Granite en de Bediener van de Weg van de Login komen:
 
 **&quot;De Vereiste van de authentificatie en de Bediener van de Weg van de Login&quot;**
 
@@ -678,7 +681,7 @@ Voor de verificatie-gerelateerde onderdelen van de CUG-rewrite wordt slechts é�
 
 ## Standaardconfiguratie sinds AEM 6.3 {#default-configuration-since-aem}
 
-De nieuwe installaties van AEM zullen door gebrek de nieuwe implementaties zowel voor de vergunning als authentificatiegerelateerde delen van de eigenschap van CUG gebruiken. De oude implementatie &quot;Ondersteuning voor Adobe Granite Closed User Group (CUG)&quot; is vervangen en wordt standaard uitgeschakeld in alle AEM-installaties. De nieuwe implementaties zullen in plaats daarvan als volgt worden toegelaten:
+De nieuwe installaties van AEM zullen door gebrek de nieuwe implementaties zowel voor de vergunning als authentificatiegerelateerde delen van de eigenschap van CUG gebruiken. De oude implementatie &quot;Adobe Granite Closed User Group (CUG) Support&quot; is vervangen en wordt standaard uitgeschakeld in alle AEM installaties. De nieuwe implementaties zullen in plaats daarvan als volgt worden toegelaten:
 
 ### Auteursinstanties {#author-instances}
 
@@ -690,7 +693,7 @@ De nieuwe installaties van AEM zullen door gebrek de nieuwe implementaties zowel
 
 >[!NOTE]
 >
->Er is geen configuratie voor **Apache Jackrabbit Oak CUG Exclude List** and **Adobe Granite Authentication Requirement and Login Path Handler** aanwezig op standaard ontwerpinstanties.
+>Er is geen configuratie voor **Apache Jackrabbit Oak CUG Exclude List** and **Adobe granite Authentication Requirement and Login Path Handler** is aanwezig op standaard authoringinstanties.
 
 ### Exemplaren publiceren {#publish-instances}
 
@@ -704,9 +707,9 @@ De nieuwe installaties van AEM zullen door gebrek de nieuwe implementaties zowel
 |---|---|
 | Hoofdnaambeheerders | Sluit beheerders hoofd van de evaluatie van de KUG uit. |
 
-| **&quot;Adobe Granite Authentication Requirement and Login Path Handler&quot;** | **Toelichting** |
+| **&quot;Adobe Granite Authentication Required and Login Path Handler&quot;** | **Toelichting** |
 |---|---|
-| Ondersteunde paden `/content` | Verificatievereisten zoals gedefinieerd in de repository door middel van het `granite:AuthenticationRequired` mixintype worden hieronder `/content` van kracht `Session.save()`. Verschuivende verificator wordt bijgewerkt. Het toevoegen van het mixintype buiten de ondersteunde paden wordt genegeerd. |
+| Ondersteunde paden  `/content` | Verificatievereisten zoals gedefinieerd in de repository door middel van het `granite:AuthenticationRequired` mixintype worden hieronder `/content` van kracht `Session.save()`. Verschuivende verificator wordt bijgewerkt. Het toevoegen van het mixintype buiten de ondersteunde paden wordt genegeerd. |
 
 ## Het onbruikbaar maken van de Vereiste van de Authorificatie en van de Authentificatie van de CUG {#disabling-cug-authorization-and-authentication-requirement}
 
@@ -718,7 +721,7 @@ Raadpleeg de [documentatie van de pluggability](https://jackrabbit.apache.org/oa
 
 ### De verificatievereiste uitschakelen {#disable-the-authentication-requirement}
 
-Om de ondersteuning voor de verificatievereiste die door de `granite.auth.authhandler` module wordt geboden, uit te schakelen, is het voldoende om de configuratie te verwijderen die is gekoppeld aan de **Adobe Granite Authentication Requirement and Login Path Handler**.
+Om steun voor het authentificatievereiste zoals verstrekt door de `granite.auth.authhandler` module onbruikbaar te maken is het voldoende om de configuratie verbonden aan de Vereiste van de Authentificatie van **Adobe graniet en de Bediener** van de Weg van de Login te verwijderen.
 
 >[!NOTE]
 >
@@ -738,9 +741,9 @@ Het importmechanisme van Apache Jackrabbit FileVault is aangepast aan het type t
 
 Zie de bovenstaande sectie [Apache Jackrabbit FileVault](/help/sites-administering/closed-user-groups.md#apache-jackrabbit-filevault) .
 
-### Adobe Graniet-replicatie {#adobe-granite-replication}
+### Adobe granietreplicatie {#adobe-granite-replication}
 
-De replicatiemodule is lichtjes aangepast om het beleid van de CUG tussen verschillende instanties te kunnen herhalen AEM:
+De replicatiemodule is lichtjes aangepast om het beleid van de CUG tussen verschillende AEM instanties te kunnen herhalen:
 
 * `DurboImportConfiguration.isImportAcl()` wordt letterlijk geïnterpreteerd en heeft alleen invloed op de uitvoering van het toegangsbeheerbeleid `javax.jcr.security.AccessControlList`
 
@@ -749,9 +752,9 @@ De replicatiemodule is lichtjes aangepast om het beleid van de CUG tussen versch
 
 Er is één beperking van het repliceren van beleid van CUG. Als een bepaald beleid van de KUG wordt verwijderd zonder het overeenkomstige mixin knooptype te verwijderen `rep:CugMixin,` zal de verwijdering niet op replicatie worden weerspiegeld. Dit probleem is opgelost door de mix bij het verwijderen van het beleid altijd te verwijderen. De beperking kan desondanks opduiken als het mixintype handmatig wordt toegevoegd.
 
-### Adobe Granite Authentication Handler {#adobe-granite-authentication-handler}
+### Adobe graniet-verificatiehandler {#adobe-granite-authentication-handler}
 
-De verificatiehandler **Adobe Granite HTTP Header Authentication Handler** die bij de `com.adobe.granite.auth.authhandler` bundel wordt geleverd, bevat een verwijzing naar de `CugSupport` interface die door dezelfde module wordt gedefinieerd. Het wordt gebruikt om het &quot;domein&quot;in bepaalde omstandigheden te berekenen, die terug naar het domein vallen dat met de manager wordt gevormd.
+De verificatiehandler **Adobe Granite HTTP Header Authentication Handler** die wordt geleverd met de `com.adobe.granite.auth.authhandler` bundel bevat een verwijzing naar de `CugSupport` interface die wordt gedefinieerd door dezelfde module. Het wordt gebruikt om het &quot;domein&quot;in bepaalde omstandigheden te berekenen, die terug naar het domein vallen dat met de manager wordt gevormd.
 
 Dit is aangepast om de verwijzing naar `CugSupport` facultatief te maken om maximale achterwaartse verenigbaarheid te verzekeren als een bepaalde opstelling besluit om de vervangen implementatie opnieuw toe te laten. Installaties die de implementatie gebruiken, krijgen niet langer het domein dat uit de CUG-implementatie wordt geëxtraheerd, maar geven altijd het domein weer zoals gedefinieerd met de **Adobe Granite HTTP Header Authentication Handler**.
 
@@ -776,7 +779,7 @@ Het doel van deze sectie is een overzicht te geven van de wijzigingen die in de 
 
 ### Verschillen in de Opstelling en de Configuratie van de KUG {#diferences-in-cug-setup-and-configuration}
 
-De vervangen OSGi-component **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) is vervangen door nieuwe componenten zodat deze onderdelen van de vroegere CUG-functionaliteit afzonderlijk kunnen verwerken voor verificatie en verificatie.
+De vervangen OSGi-component **Adobe Granite Closed User Group (CUG) Support** ( `com.day.cq.auth.impl.cug.CugSupportImpl`) is vervangen door nieuwe componenten om autorisatie- en verificatiegerelateerde onderdelen van de vroegere CUG-functionaliteit afzonderlijk te kunnen verwerken.
 
 ## Verschillen in het beheren van CUG&#39;s in de inhoud van de opslagplaats {#differences-in-managing-cugs-in-the-repository-content}
 
@@ -798,7 +801,7 @@ Deze beweging van resterende eigenschappen JCR aan een specifiek toegangsbeheerb
 
 **Doelknooppunt gedefinieerd door beleid**
 
-Van het beleid van de CUG wordt verwacht om bij de knoop worden gecreeerd JCR die de subboom bepaalt aan beperkte lees toegang te worden onderworpen. Dit is waarschijnlijk een AEM-pagina als de CUG wordt verwacht voor de gehele boomstructuur.
+Van het beleid van de CUG wordt verwacht om bij de knoop worden gecreeerd JCR die de subboom bepaalt aan beperkte lees toegang te worden onderworpen. Dit is waarschijnlijk een AEM pagina als de CUG wordt verwacht voor de gehele boom.
 
 Merk op dat het plaatsen van het beleid van de GIDS slechts bij jcr:inhoudsknoop die onder een bepaalde pagina wordt gevestigd slechts toegang tot de inhoud van een bepaalde pagina zal beperken maar niet op om het even welke siblings of kindpagina&#39;s van kracht zal worden. Dit kan een geldig gebruiksgeval zijn en het is mogelijk om met een bewaargegevensopslagredacteur te bereiken die toestaat om fijnkorrelige inhoud van de toegangsinhoud toe te passen. Nochtans, contrasteert het de vroegere implementatie waar het plaatsen van een cq:cugEnabled bezit op jcr:content knoop intern aan de paginaknooppunt werd opnieuw in kaart gebracht. Deze toewijzing wordt niet meer uitgevoerd.
 
@@ -806,7 +809,7 @@ Merk op dat het plaatsen van het beleid van de GIDS slechts bij jcr:inhoudsknoop
 
 De beweging van de oude steun van de GIDS aan een extra vergunningsmodel, verandert de manier efficiënte gelezen toestemmingen worden geëvalueerd. Zoals beschreven in de documentatie [](https://jackrabbit.apache.org/oak/docs/security/authorization/composite.html)Jackrabbit, `CUGcontent` zal een bepaalde principal die wordt toegestaan om het te bekijken slechts leestoegang worden verleend als de toestemmingsevaluatie van alle modellen die in de Oak bewaarplaats worden geketend leestoegang verleent.
 
-Met andere woorden, voor de evaluatie van de efficiënte toestemmingen, zowel zullen de `CUGPolicy` als de standaardingangen van de toegangscontrole in aanmerking worden genomen en de lees toegang op de inhoud van de GIDS zal slechts worden verleend als het door beide types van beleid wordt verleend. In een standaard publiceert AEM installatie waar leestoegang tot de volledige `/content` boom voor iedereen wordt verleend, zal het effect van het beleid van CUG het zelfde als met de oude implementatie zijn.
+Met andere woorden, voor de evaluatie van de efficiënte toestemmingen, zowel zullen de `CUGPolicy` als de standaardingangen van de toegangscontrole in aanmerking worden genomen en de lees toegang op de inhoud van de GIDS zal slechts worden verleend als het door beide types van beleid wordt verleend. In een standaard AEM publiceer installatie waar leestoegang tot de volledige `/content` boom voor iedereen wordt verleend, zal het effect van het beleid van CUG het zelfde als met de oude implementatie zijn.
 
 **Evaluatie op aanvraag**
 
@@ -815,7 +818,7 @@ Met het machtigingsmodel CUG kunt u het beheer van toegangsbeheer en de evaluati
 * toegangsbeheerbeheer wordt toegelaten als de module één of vele gesteunde wegen heeft waar de KUGs kan worden gecreeerd
 * De evaluatie van de toestemming wordt slechts toegelaten als de toegelaten **** Evaluatie van de optieGG extra wordt gecontroleerd.
 
-In de nieuwe standaard van AEM opstellingsevaluatie van het beleid van de GIDS wordt het slechts toegelaten met &quot;publiceer&quot;looppaswijze. Zie de details op de [standaardconfiguratie sinds AEM 6.3](#default-configuration-since-aem) voor meer details. Dit kan worden gecontroleerd door het efficiënte beleid voor een bepaalde weg aan het beleid te vergelijken dat in de inhoud wordt opgeslagen. Het efficiënte beleid zal slechts worden getoond in het geval de toestemmingsevaluatie voor CUGs wordt toegelaten.
+In de nieuwe AEM standaardopstellingsevaluatie van het beleid van de GIDS wordt het slechts toegelaten met &quot;publiceer&quot;looppaswijze. Zie de details op de [standaardconfiguratie sinds AEM 6.3](#default-configuration-since-aem) voor meer details. Dit kan worden gecontroleerd door het efficiënte beleid voor een bepaalde weg aan het beleid te vergelijken dat in de inhoud wordt opgeslagen. Het efficiënte beleid zal slechts worden getoond in het geval de toestemmingsevaluatie voor CUGs wordt toegelaten.
 
 Zoals hierboven verklaard wordt het beleid van de toegangscontrole van de KUG nu altijd opgeslagen in de inhoud maar de evaluatie van de efficiënte toestemmingen die uit dat beleid voortvloeien zal slechts worden afgedwongen als de Beoordeling van de **KUG Toegelaten** in de systeemconsole bij de Configuratie van de **KUG van het Oak van het Jasje van Apache wordt aangezet.** Deze optie is standaard alleen beschikbaar in de uitvoermodus Publiceren.
 
@@ -839,7 +842,7 @@ Wat het `granite:loginPath` betreft, is hetzelfde recht vereist om de eigenschap
 
 #### Doelknooppunt gedefinieerd door mixintype {#target-node-defined-by-mixin-type}
 
-Er worden verificatievereisten verwacht die worden gemaakt op het JCR-knooppunt dat de subboomstructuur definieert voor gedwongen aanmelding. Dit is waarschijnlijk een AEM-pagina als de CUG naar verwachting de gehele structuur beïnvloedt en de UI voor de nieuwe implementatie als gevolg hiervan het mixintype voor auth-requirements op het paginaknooppunt toevoegt.
+Er worden verificatievereisten verwacht die worden gemaakt op het JCR-knooppunt dat de subboomstructuur definieert voor gedwongen aanmelding. Dit zal waarschijnlijk een AEM Pagina zijn voor het geval dat de CUG naar verwachting de volledige boom zal beïnvloeden en UI voor de nieuwe implementatie zal bijgevolg het auto-vereiste mixintype op de paginaknooppunt toevoegen.
 
 Het plaatsen van het beleid van de GIDS slechts bij jcr:inhoudsknoop die onder een bepaalde pagina wordt gevestigd zal slechts toegang tot de inhoud beperken, maar zal niet op de paginaknoop zelf noch op om het even welke kindpagina&#39;s van invloed zijn.
 
@@ -847,7 +850,7 @@ Dit kan een geldig scenario zijn en is mogelijk met een bewaargegevensverwerker 
 
 #### Ondersteunde paden configureren {#configured-supported-paths}
 
-Zowel zullen het `granite:AuthenticationRequired` mixintype als granite:loginPath bezit slechts binnen het werkingsgebied worden gerespecteerd dat door de reeks **Gesteunde de configuratieoptie van Wegen** huidig met de Vereiste van de Authentificatie van **Adobe Granite en de Bediener** van de Weg van de Login wordt bepaald. Als er geen paden zijn opgegeven, is de functie voor de vereiste verificatie geheel uitgeschakeld. In dit geval wordt het mixintype en de eigenschap van kracht wanneer het wordt toegevoegd aan of ingesteld op een bepaald JCR-knooppunt.
+Zowel zullen het `granite:AuthenticationRequired` mixintype als granite:loginPath bezit slechts binnen het werkingsgebied worden gerespecteerd dat door de reeks **Gesteunde de configuratieoptie van Wegen** huidig met de Vereiste van de Authentificatie van **Adobe graniet en de Handler** van de Weg van de Login wordt bepaald. Als er geen paden zijn opgegeven, is de functie voor de vereiste verificatie geheel uitgeschakeld. In dit geval wordt het mixintype en de eigenschap van kracht wanneer het wordt toegevoegd aan of ingesteld op een bepaald JCR-knooppunt.
 
 ### Toewijzing van JCR-inhoud, OSGi-services en -configuraties {#mapping-of-jcr-content-osgi-services-and-configurations}
 
@@ -863,14 +866,14 @@ CUG-toewijzing sinds AEM 6.3
 
 De oude implementatie van de CUG-ondersteuning is vervangen en wordt in toekomstige versies verwijderd. Het wordt aanbevolen over te schakelen op de nieuwe implementaties wanneer u een upgrade uitvoert van een lagere versie dan AEM 6.3.
 
-Voor een geüpgrade AEM-installatie is het van belang ervoor te zorgen dat slechts één CUG-implementatie is ingeschakeld. De combinatie van de nieuwe en de oude, verouderde ondersteuning van CUG wordt niet getest en kan ongewenste werking veroorzaken:
+Voor bijgewerkte AEM installatie, is het belangrijk om ervoor te zorgen dat slechts één implementatie van CUG wordt toegelaten. De combinatie van de nieuwe en de oude, verouderde ondersteuning van CUG wordt niet getest en kan ongewenste werking veroorzaken:
 
 * botsingen in de Stijlauthenticator met betrekking tot authentificatievereisten
 * ontkende leestoegang wanneer de ACL opstelling verbonden aan de oude collides van de CUG met een nieuw beleid van de CUG.
 
 ### Bestaande CUG-inhoud migreren {#migrating-existing-cug-content}
 
-Adobe biedt een hulpmiddel voor het migreren naar de nieuwe implementatie van CUG. Voer de volgende stappen uit om het te gebruiken:
+Adobe biedt een hulpmiddel voor het migreren naar de nieuwe CUG-implementatie. Voer de volgende stappen uit om het te gebruiken:
 
 1. Ga naar `https://<serveraddress>:<serverport>/system/console/cug-migration` het gereedschap.
 1. Voer het hoofdpad in waarop u CUG&#39;s wilt controleren en druk op de knop **Droge uitvoering** uitvoeren. Hiermee wordt gescand op CUG&#39;s die kunnen worden geconverteerd naar de geselecteerde locatie.
