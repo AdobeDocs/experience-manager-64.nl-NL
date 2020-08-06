@@ -1,8 +1,8 @@
 ---
 title: Sneltoetsen bij het bewerken van pagina's
 seo-title: Sneltoetsen bij het bewerken van pagina's
-description: Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassing bij het bewerken van pagina's, andere op het gebruik van consoles.
-seo-description: Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassing bij het bewerken van pagina's, andere op het gebruik van consoles.
+description: In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina's, andere op het gebruik van consoles.
+seo-description: In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina's, andere op het gebruik van consoles.
 uuid: a1753e0b-5701-426c-b974-2e8b8d81a30d
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 68fa88c5-a759-49fa-ab9b-8dc63c049d5f
 translation-type: tm+mt
 source-git-commit: cd3ba0afcce0144abbc981ec1b23005ee2ec1502
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 2%
 
 ---
 
 
 # Sneltoetsen bij het bewerken van pagina&#39;s{#keyboard-shortcuts-when-editing-pages}
 
-Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op het [gebruik van consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op het [gebruik van consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
@@ -29,6 +32,7 @@ Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassin
 >
 >* Windows: Houd Ctrl ingedrukt en klik op de gewenste componenten.
 >* Mac: Houd Cmd ingedrukt en klik op de vereiste componenten.
+
 >
 
 
@@ -70,7 +74,7 @@ Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassin
   <tr> 
    <td> </td> 
    <td><strong><code>Ctrl-X</code></strong></td> 
-   <td>Geselecteerde alinea('s) knippen.<strong><br /></strong> Opmerking: De geknipte alinea verdwijnt pas als deze op de nieuwe locatie is geplakt.</td> 
+   <td>Geselecteerde alinea('s) knippen.<strong><br /> Opmerking:</strong> De geknipte alinea verdwijnt pas als deze op de nieuwe locatie is geplakt.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -95,7 +99,7 @@ Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassin
   <tr> 
    <td> </td> 
    <td><strong><code>Alt-right-click</code></strong></td> 
-   <td>Standaardcontextmenu (browser) forceren.<br /><strong> </strong>Opmerking: De contextmenu's van AEM komen slechts in klassieke UI voor.</td> 
+   <td>Standaardcontextmenu (browser) forceren.<br /> <strong>Opmerking:</strong> AEM contextmenu's vindt alleen plaats in de klassieke gebruikersinterface.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -165,7 +169,7 @@ Voor bureaubladontwikkelaars zijn aanvullende sneltoetsen beschikbaar wanneer u 
   </tr> 
   <tr> 
    <td>Bewerkingsmodus</td> 
-   <td><br /> Stel het volgende achtervoegsel in de URL in: <code>?debugClientLibs=true</code><br /> Gebruik vervolgens:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
+   <td>Stel het volgende achtervoegsel in de URL in:<br /> <code>?debugClientLibs=true</code><br /> Gebruik vervolgens:<br /> <strong><code>Ctrl-Shift-U</code></strong></td> 
    <td>De tijdinstellingsstatistieken voor het laden van pagina's weergeven.</td> 
   </tr> 
  </tbody> 
