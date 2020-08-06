@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1159'
+ht-degree: 0%
 
 ---
 
@@ -18,23 +21,23 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Vereisten {#prerequisites}
 
-* Inzicht in AEM- [paginasjabloon](/help/sites-authoring/templates.md) en [adaptieve formulierontwerp](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Inzicht in AEM [paginasjabloon](/help/sites-authoring/templates.md) en [adaptieve formulierontwerp](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
-* Inzicht in AEM- [clientbibliotheken](/help/sites-developing/clientlibs.md)
+* Inzicht in AEM [clientbibliotheken](/help/sites-developing/clientlibs.md)
 
 ## Adaptief formuliersjabloon {#adaptive-form-template}
 
-Een adaptieve formuliersjabloon is een speciaal AEM-paginasjabloon met bepaalde eigenschappen en inhoudsstructuur waarmee u een adaptief formulier kunt maken. De sjabloon heeft vooraf geconfigureerde lay-outs, stijlen en initiële basisinhoudsstructuur.
+Een adaptieve formuliersjabloon is gespecialiseerd AEM Paginasjabloon, met bepaalde eigenschappen en inhoudsstructuur die worden gebruikt om een adaptief formulier te maken. De sjabloon heeft vooraf geconfigureerde lay-outs, stijlen en initiële basisinhoudsstructuur.
 
 Als u een formulier hebt gemaakt, worden wijzigingen in de oorspronkelijke structuur van de sjablooninhoud niet meer doorgevoerd in het formulier.
 
 ## Standaard adaptieve formuliersjablonen {#default-adaptive-form-templates}
 
-AEM QuickStart biedt de volgende adaptieve formuliersjablonen:
+AEM QuickStart bevat de volgende adaptieve formuliersjablonen:
 
-* Eenvoudig: Hiermee kunt u een adaptief formulier met meerdere tabbladen maken met een lay-out voor tabbladen aan linkerzijde, waar u tabbladen in willekeurige volgorde kunt bekijken.
-* Eenvoudig met Adobe-handtekening: Hiermee kunt u een formulier maken met meerdere tabbladen en wizard. Er wordt een lay-out met tabs links gebruikt waarmee u tabbladen in willekeurige volgorde kunt bezoeken. Voor ondertekening en verificatie worden ontwerpservices van Adobe Document Cloud gebruikt.
-* Lege sjabloon: Hiermee kunt u een formulier maken zonder koptekst, voettekst en eerste inhoud. U kunt componenten toevoegen, zoals tekstvakken, knoppen en afbeeldingen. Met de lege sjabloon kunt u een formulier maken dat u kunt [insluiten in AEM-sitepagina&#39;s](/help/forms/using/embed-adaptive-form-aem-sites.md).
+* Eenvoudig: Hiermee kunt u een adaptief formulier met meerdere tabbladen maken met een lay-out voor tabbladen links, waar u tabbladen in willekeurige volgorde kunt bekijken.
+* Basis met Adobe Sign: Hiermee kunt u een formulier maken met meerdere tabbladen en wizard. Er wordt een lay-out met tabs links gebruikt waarmee u tabbladen in willekeurige volgorde kunt bezoeken. Voor ondertekening en verificatie worden Adobe Document Cloud-ontwerpservices gebruikt.
+* Lege sjabloon: Hiermee kunt u een formulier maken zonder koptekst, voettekst en eerste inhoud. U kunt componenten toevoegen, zoals tekstvakken, knoppen en afbeeldingen. Met de lege sjabloon kunt u een formulier maken dat u kunt [insluiten in AEM sitepagina](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
 Deze sjablonen hebben de `sling:resourceType` eigenschap ingesteld op de corresponderende paginacomponent. De paginacomponent geeft de CQ-pagina weer, die een adaptieve formuliercontainer bevat, die op zijn beurt weer een adaptief formulier maakt.
 
@@ -67,7 +70,7 @@ In de volgende tabel wordt de koppeling tussen sjablonen en paginacomponent opge
 
 ## Een aangepaste formuliersjabloon maken met behulp van een sjablooneditor {#creating-an-adaptive-form-template-using-template-editor}
 
-U kunt de structuur en de initiële inhoud van een adaptief formulier opgeven met de Sjablooneditor. U wilt bijvoorbeeld dat alle formulierauteurs weinig tekstvakken, navigatieknoppen en een verzendknop in een inschrijvingsformulier hebben. U kunt een sjabloon maken die auteurs kunnen gebruiken om een formulier te maken dat consistent is met andere inschrijvingsformulieren. Met de AEM-sjablooneditor kunt u:
+U kunt de structuur en de initiële inhoud van een adaptief formulier opgeven met de Sjablooneditor. U wilt bijvoorbeeld dat alle formulierauteurs weinig tekstvakken, navigatieknoppen en een verzendknop in een inschrijvingsformulier hebben. U kunt een sjabloon maken die auteurs kunnen gebruiken om een formulier te maken dat consistent is met andere inschrijvingsformulieren. Met AEM Sjablooneditor kunt u:
 
 * Koptekst- en voettekstcomponenten van een formulier toevoegen in de structuurlaag
 * Geef de initiële inhoud voor het formulier op.
@@ -84,13 +87,13 @@ U kunt deze componenten maken met de basispaginacomponent voor uw website. U kun
 
 Voer de volgende stappen uit om een douanemalplaatje, zoals simpleEnrollmentTemplate tot stand te brengen.
 
-1. Navigeer naar CRXDE Lite op uw auteursinstantie.
+1. Navigeer naar CRXDE Lite op de ontwerpinstantie.
 
 1. Maak onder de map /apps de mapstructuur voor uw toepassing. Als de toepassingsnaam bijvoorbeeld mijn bedrijf is, maakt u een map met deze naam. De toepassingsmap bevat doorgaans componenten, configuratie, sjablonen, bron en installatiemappen. In dit voorbeeld maakt u de mappen voor componenten, configuratie en sjablonen.
 
 1. Navigeer naar de map /libs/fd/af/templates.
 1. Kopieer het `simpleEnrollmentTemplate` knooppunt.
-1. Navigeer naar de map /apps/mijnbedrijf/sjablonen. Klik er met de rechtermuisknop op en selecteer **[!UICONTROL Plakken]**.
+1. Navigeer naar de map /apps/mijnbedrijf/sjablonen. Klik er met de rechtermuisknop op en selecteer **[!UICONTROL Paste]**.
 1. Wijzig zo nodig de naam van het sjabloonknooppunt dat u hebt gekopieerd. Wijzig bijvoorbeeld de naam ervan in een inschrijfsjabloon.
 
 1. Navigeer naar de locatie /apps/mijnbedrijf/sjablonen/inschrijvingssjabloon.
@@ -103,7 +106,7 @@ Voer de volgende stappen uit om een douanemalplaatje, zoals simpleEnrollmentTemp
 
 1. Navigeer naar de locatie /apps/mijnbedrijf/sjablonen/inschrijving-sjabloon/jcr:content.
 
-1. Open het tabblad **[!UICONTROL Eigenschappen]** en wijzig de waarde van de `cq:designPath` eigenschap in /etc/designs/mijnbedrijf.
+1. Open het **[!UICONTROL Properties]** tabblad en wijzig de waarde van de `cq:designPath` eigenschap in /etc/designs/mijnbedrijf.
 
 1. Creëer nu een /etc/designs/mycompany knoop voor het `cq:Page` type.
 
