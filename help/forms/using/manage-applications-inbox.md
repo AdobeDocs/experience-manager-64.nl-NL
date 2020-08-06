@@ -1,8 +1,8 @@
 ---
-title: Forms-toepassingen en -taken beheren in AEM Inbox
-seo-title: Forms-toepassingen en -taken beheren in AEM Inbox
-description: Met AEM Inbox kunt u Forms-centric workflows starten door toepassingen te verzenden en taken te beheren.
-seo-description: Met AEM Inbox kunt u Forms-centric workflows starten door toepassingen te verzenden en taken te beheren.
+title: Forms-toepassingen en -taken beheren in AEM Postvak In
+seo-title: Forms-toepassingen en -taken beheren in AEM Postvak In
+description: Met AEM Inbox kunt u op Forms gerichte workflows starten door toepassingen in te dienen en taken te beheren.
+seo-description: Met AEM Inbox kunt u op Forms gerichte workflows starten door toepassingen in te dienen en taken te beheren.
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Forms-toepassingen en -taken beheren in AEM Inbox {#manage-forms-applications-and-tasks-in-aem-inbox}
+# Forms-toepassingen en -taken beheren in AEM Postvak In {#manage-forms-applications-and-tasks-in-aem-inbox}
 
-Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. U moet een workflowtoepassing maken om een Forms-workflow beschikbaar te maken als toepassing in Inbox. Zie Een Forms-centric workflow [starten op OSGi voor meer informatie over workflowtoepassingen en andere manieren om Forms-workflows te starten](/help/forms/using/aem-forms-workflow.md#launch).
+Een van de vele manieren om een Forms-centric workflow te starten of activeren is via toepassingen in AEM Inbox. U moet een workflowtoepassing maken om een Forms-workflow als toepassing beschikbaar te maken in Inbox. Zie Een op Forms gerichte workflow [starten op OSGi voor meer informatie over workflowtoepassingen en andere manieren om Forms-workflows te starten](/help/forms/using/aem-forms-workflow.md#launch).
 
-Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM-componenten, waaronder Forms-workflows. Wanneer een formulierwerkstroom met een taakstap Toewijzen wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger. Als de toegewezen persoon een groep is, wordt de taak in het Postvak In van alle groepsleden weergegeven totdat een persoon de taak aanvraagt of delegeert.
+Daarnaast consolideert AEM Inbox meldingen en taken van verschillende AEM, waaronder Forms-workflows. Wanneer een formulierwerkstroom met een taakstap Toewijzen wordt geactiveerd, wordt de bijbehorende toepassing weergegeven als een taak in het Postvak In van de ontvanger. Als de toegewezen persoon een groep is, wordt de taak in het Postvak In van alle groepsleden weergegeven totdat een persoon de taak aanvraagt of delegeert.
 
 De gebruikersinterface van Inbox verstrekt lijst en kalendermeningen om taken te bekijken. U kunt ook de weergave-instellingen configureren. U kunt taken filteren op basis van verschillende parameters. Zie [Uw Postvak IN](/help/sites-authoring/inbox.md)voor meer informatie over weergave en filters.
 
@@ -29,11 +29,11 @@ Samenvattend kunt u met Inbox een nieuwe toepassing maken en toegewezen taken be
 
 >[!NOTE]
 >
->U moet lid zijn van de groep met gebruikers van de workflow om AEM Inbox te kunnen gebruiken.
+>U moet lid van de werkstroom-gebruikers groep zijn om AEM Inbox te kunnen gebruiken.
 
 ## Toepassing maken {#create-application}
 
-1. Ga naar AEM Inbox om `https://[server]:[port]/aem/inbox`.
+1. Ga naar AEM Postvak IN om `https://[server]:[port]/aem/inbox`.
 1. Tik in de gebruikersinterface van het Postvak IN op **[!UICONTROL Create > Application]**. De pagina Select Application (Toepassing selecteren) wordt weergegeven.
 1. Selecteer een toepassing en klik op **[!UICONTROL Create]**. Het adaptieve formulier dat aan de toepassing is gekoppeld, wordt geopend. Vul de formulieren in en tik op **[!UICONTROL Submit]**. De bijbehorende workflow wordt gestart en er wordt een taak gemaakt in het Postvak In van de ontvanger.
 
@@ -52,14 +52,16 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 1. Voer een van de volgende handelingen uit:
 
    * Tik op **[!UICONTROL Delegate]** om de taak te delegeren. Het dialoogvenster Item delegeren wordt geopend. Selecteer een gebruiker, voeg desgewenst een opmerking toe en tik op **[!UICONTROL OK]**.
+
    ![gedelegeerde](assets/delegate.png)
 
    * Tik op **[!UICONTROL Open]** om de taak op te eisen. Het dialoogvenster Toewijzen aan zelf wordt geopend. Tik **[!UICONTROL Proceed]** om de taak op te eisen. De geclaimde taak wordt met u weergegeven als de toegewezen persoon in uw Postvak IN.
+
    ![vordering](assets/claim.png)
 
 ### Details weergeven en handelingen uitvoeren op taken {#view-details-and-perform-actions-on-tasks}
 
-Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende werkstroom Formulieren.
+Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende Forms-workflow.
 
 1. Tik om de miniatuur van de taak te selecteren. Opties voor het openen of delegeren van de geselecteerde taak worden bovenaan weergegeven.
 1. Tik **[!UICONTROL Open]** om taakdetails weer te geven en acties te ondernemen. De gedetailleerde taakweergave wordt geopend. In deze weergave kunt u taakdetails weergeven en acties ondernemen voor de taak.
@@ -101,7 +103,7 @@ Wanneer u de taak uitvoert, gaat deze verder in de workflow.
 
 ### Voltooide taken weergeven {#view-completed-tasks}
 
-In AEM Inbox worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status, begin- en einddatum enzovoort. Voltooide taken weergeven:
+AEM In Postvak In worden alleen actieve taken weergegeven. Voltooide taken worden niet in de lijst weergegeven. U kunt echter Inbox-filters gebruiken om taken te filteren op basis van verschillende parameters, zoals taaktype, status, begin- en einddatum enzovoort. Voltooide taken weergeven:
 
 1. Tik in AEM Inbox op ![schakelpaneel1](assets/toggle-side-panel1.png) om de filterkiezer te openen.
 1. Tik op **[!UICONTROL Task Status]** accordeon en selecteer **[!UICONTROL Complete]**. Alle voltooide taken worden weergegeven.
