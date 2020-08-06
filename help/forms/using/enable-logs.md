@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '646'
+ht-degree: 4%
 
 ---
 
@@ -23,7 +26,7 @@ U kunt het hulpprogramma Logger configureren om logboeken te maken voor HTML5-fo
 
 Voer de volgende stappen uit om logbestanden aan de serverzijde te configureren:
 
-1. Ga naar `https://[server]:[port]/system/console/configMgr`. Zoek en open de configuratieoptie *Apace Sling-logboeklogger* . Er wordt een dialoogvenster weergegeven:
+1. Go to `https://[server]:[port]/system/console/configMgr`. Zoek en open de configuratieoptie *Apace Sling-logboeklogger* . Er wordt een dialoogvenster weergegeven:
 
    ![ Het dialoogvenster voor het instellen van de optie Apace Sling-logboekregistratie](assets/logconfig.png)
 
@@ -168,7 +171,7 @@ Bijvoorbeeld:
 >
 >Het standaardlogniveau voor elke logcategorie a (xfa), b (xfaView), en c (xfaPerf) is 2 (ERROR). Dienovereenkomstig, voor logboekconfiguratie: 2-b6, de logboekniveaus voor verschillende categorieën zijn:\
 >a (xfa): 2 (FOUT OP standaardniveau)\
->b (xfaView): 6 (door de gebruiker opgegeven TRACE)\
+>b (xfaView): 6 (door gebruiker opgegeven TRACE)\
 >a (xfaPerf): 2 (FOUT OP standaardniveau)
 
 ### Registreren inschakelen met Configuratiebeheer {#enabling-logging-using-configuration-manager}
@@ -176,12 +179,12 @@ Bijvoorbeeld:
 Als u de Manager van de Configuratie voor het toelaten van registreren gebruikt, worden de logboeken geproduceerd voor elk teruggeven verzoek tot het registreren opnieuw onbruikbaar wordt gemaakt.
 
 1. Meld u aan bij CQ Configuration Manager op `https://[server]:[port]/system/console/configMgr` en meld u aan met de beheerdersreferenties.
-1. Zoek naar en klik op Configuraties van **mobiele formulieren**.
+1. Zoek naar en klik op **Mobiele Forms Configurations**.
 1. Voer in het tekstvak Opties voor foutopsporing de logboekconfiguraties in zoals in de vorige sectie, bijvoorbeeld **2-a4-b5-c6**
 
-   ![Formulierconfiguratie](assets/forms_configuration.png)
+   ![Forms-configuratie](assets/forms_configuration.png)
 
-   Formulierconfiguratie
+   Forms-configuratie
 
 ## Logbestanden uploaden {#uploading-logs}
 
