@@ -1,8 +1,8 @@
 ---
 title: Clientcontext
 seo-title: Clientcontext
-description: Leer hoe u de clientcontext in AEM kunt gebruiken.
-seo-description: Leer hoe u de clientcontext in AEM kunt gebruiken.
+description: Leer hoe u de clientcontext in AEM gebruikt.
+seo-description: Leer hoe u de clientcontext in AEM gebruikt.
 uuid: c3881210-32c7-4f78-84f4-5d378d4d3d99
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d13c68ba-be49-440b-8bbe-a10edbfb9b9b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1918'
+ht-degree: 0%
 
 ---
 
@@ -57,11 +60,11 @@ In de clientcontext kunnen de volgende eigenschappen worden weergegeven ([afhank
 * de X **-positie van de** muis
 * de **Y** -positie van de muis
 
-**Activiteitenstroom** Dit biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms; bijvoorbeeld de AEM-forums, blogs, beoordelingen, enz.
+**Activiteitenstroom** Dit biedt informatie over de sociale activiteit van de gebruiker op verschillende platforms; bijvoorbeeld de AEM forums , blogs , beoordelingen , enz .
 
 **Met Campagne** kunnen auteurs een specifieke ervaring voor een campagne simuleren. Deze component overschrijft de normale campagneresolutie en ervaringsselectie om het testen van verschillende permutaties mogelijk te maken.
 
-De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt gewoonlijk geselecteerd gebaseerd op segmentatie.
+De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt normaal geselecteerd gebaseerd op segmentatie.
 
 **Cart** toont winkelwagengegevens, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enz.), opgeloste aanbiedingen (titel, bericht, enz.) en vouchers (code, beschrijving, enz.).
 
@@ -167,7 +170,7 @@ U kunt ook een profiel selecteren met de selectieregelaar:
 
    ![](do-not-localize/clientcontext_resetprofile.png)
 
-### Het browserplatform wijzigen {#changing-the-browser-platform}
+### Het Platform Browser wijzigen {#changing-the-browser-platform}
 
 1. Dubbelklik op het pictogram dat het browserplatform vertegenwoordigt. De kiezer wordt geopend, de pijlen worden gebruikt om te navigeren en de beschikbare platforms/browsers te bekijken:
 
@@ -203,25 +206,25 @@ Het bewerken van een clientcontext kan worden gebruikt om de waarden van bepaald
 
 ### Een component Property toevoegen {#adding-a-property-component}
 
-Nadat u de het ontwerppagina **** ClientContext hebt geopend, kunt u een volledig nieuw bezit ook **toevoegen** gebruikend de beschikbare componenten (de componenten zijn vermeld op zowel hulpdekick als van het dialoogvenster Nieuwe Component **van het** Tussenvoegsel dat na een dubbele klik op de componenten of de activa van de **Belemmering hier** doos wordt geopend):
+Nadat u de het ontwerppagina **van de** ClientContext hebt geopend, kunt u een volledig nieuwe bezit ook **toevoegen** gebruikend de beschikbare componenten (de componenten zijn vermeld op zowel sidekick als van het dialoogvenster van de Component **van het** Tussenvoegsel Nieuwe dat na een dubbele klik op de componenten of de activa van de **Belemmering hier** doos wordt geopend):
 
 ![clientContext_alisonparker_new](assets/clientcontext_alisonparker_new.png)
 
 ### Een component Property verwijderen {#removing-a-property-component}
 
-Nadat u de **het ontwerppagina** ClientContext hebt geopend, kunt u een bezit ook **verwijderen** als niet meer vereist. Dit omvat eigenschappen die buiten de box worden geleverd; Deze **** instellingen worden opnieuw ingesteld als ze zijn verwijderd.
+Nadat u de **ClientContext-ontwerppagina** hebt geopend, kunt u een eigenschap ook **verwijderen** als dit niet langer nodig is. Dit omvat eigenschappen die buiten de box worden geleverd; **Herstellen** herstelt deze als ze zijn verwijderd.
 
 ## Gegevens opslaan in clientcontext via JSONP {#storing-data-in-client-context-via-jsonp}
 
 Volg dit voorbeeld om de JSONP component van de de contextopslag van de Opslag te gebruiken om externe gegevens aan de Context van de Cliënt toe te voegen. Maak vervolgens een segment op basis van de informatie uit die gegevens. Het voorbeeld gebruikt de dienst JSONP die WIPmania.com verleent. De service retourneert informatie over de geolocatie op basis van het IP-adres van de webclient.
 
-In dit voorbeeld wordt de voorbeeldwebsite Geometrixx Outdoor gebruikt om toegang te krijgen tot Client Context en het gemaakte segment te testen. U kunt een andere website gebruiken zolang de pagina Clientcontext heeft ingeschakeld. (Zie Clientcontext [toevoegen aan een pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
+In dit voorbeeld wordt de voorbeeldwebsite van Geometrixx Outdoors gebruikt om toegang te krijgen tot Client Context en het gemaakte segment te testen. U kunt een andere website gebruiken zolang de pagina Clientcontext heeft ingeschakeld. (Zie Clientcontext [toevoegen aan een pagina](/help/sites-developing/client-context.md#adding-client-context-to-a-page).)
 
 ### De JSONP Store-component toevoegen {#add-the-jsonp-store-component}
 
 Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebruik het om geolocatieinformatie over de Webcliënt terug te winnen en op te slaan.
 
-1. Open de Engelse homepage van de Geometrixx-site Buiten op de AEM-auteurinstantie. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Open de Engelse homepage van de site Geometrixx Outdoors op de AEM auteur. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Druk op Ctrl+Alt+c (vensters) of Control+Option+c (Mac) om de clientcontext te openen.
 1. Klik op het bewerkingspictogram boven aan Client Context om Client Context Designer te openen.
 
@@ -241,7 +244,7 @@ Voeg de component van de Winkel JSONP aan de Context van de Cliënt toe en gebru
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
 1. Klik op OK.
-1. Ga terug naar de startpagina Geometrixx Buiten en vernieuw de pagina. De Context van de cliënt omvat nu de informatie van de component van de Winkel JSONP.
+1. Ga terug naar de startpagina van Geometrixx Outdoors en vernieuw de pagina. De Context van de cliënt omvat nu de informatie van de component van de Winkel JSONP.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
