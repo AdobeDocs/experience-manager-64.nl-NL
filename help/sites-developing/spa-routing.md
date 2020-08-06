@@ -12,7 +12,7 @@ discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
 translation-type: tm+mt
 source-git-commit: 04a369c5eb4c0cb87f3dae8cd4360678315ebe2a
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '527'
 ht-degree: 0%
 
 ---
@@ -30,7 +30,7 @@ Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verp
 
 ## Project routeren {#project-routing}
 
-App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het projectfront. Dit document beschrijft het verpletteren specifiek voor het model dat door de server AEM is teruggekeerd. De gegevensstructuur van het paginamodel stelt URL van het onderliggende middel bloot. Het front-end project kan om het even welke douane of derdebibliotheek gebruiken die verpletterende functionaliteit verstrekt. Zodra een route een fragment van model verwacht, kan een vraag aan de `PageModelManager.getData()` functie worden gemaakt. Wanneer een modelroute is veranderd moet een gebeurtenis worden teweeggebracht om luisterbibliotheken zoals de Redacteur van de Pagina te waarschuwen.
+App bezit het verpletteren en dan uitgevoerd door de ontwikkelaars van het projectfront. Dit document beschrijft specifiek het verpletteren voor het model dat door de AEM server is teruggekeerd. De gegevensstructuur van het paginamodel stelt URL van het onderliggende middel bloot. Het front-end project kan om het even welke douane of derdebibliotheek gebruiken die verpletterende functionaliteit verstrekt. Zodra een route een fragment van model verwacht, kan een vraag aan de `PageModelManager.getData()` functie worden gemaakt. Wanneer een modelroute is veranderd moet een gebeurtenis worden teweeggebracht om luisterbibliotheken zoals de Redacteur van de Pagina te waarschuwen.
 
 ## Architectuur {#architecture}
 
@@ -66,7 +66,7 @@ Dit gedrag wordt standaard automatisch ingeschakeld. Om het onbruikbaar te maken
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Merk op dat elke route van het KUUROORD aan een toegankelijk middel in AEM (b.v., &quot; `/content/mysite/mypage"`) zou moeten beantwoorden aangezien de `PageModelManager` automatisch zal proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Alhoewel, indien nodig, kan het KUUROORD een &quot;bloklijst&quot;van routes ook bepalen die door `PageModelManager`: zouden moeten worden genegeerd:
+Merk op dat elke route van het KUUROORD aan een toegankelijk middel in AEM (b.v., &quot; `/content/mysite/mypage"`) zou moeten beantwoorden aangezien `PageModelManager` automatisch zal proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Alhoewel, indien nodig, kan het KUUROORD een &quot;lijst van afgewezen personen&quot;van routes ook bepalen die door `PageModelManager`: zouden moeten worden genegeerd:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
