@@ -1,6 +1,6 @@
 ---
-title: Webtoepassingen maken die formulieren renderen
-seo-title: Webtoepassingen maken die formulieren renderen
+title: Webtoepassingen maken die Forms renderen
+seo-title: Webtoepassingen maken die Forms renderen
 description: 'null'
 seo-description: 'null'
 uuid: 00de10c5-79bd-4d8a-ae18-32f1fd2623bf
@@ -12,21 +12,24 @@ topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1842'
+ht-degree: 0%
 
 ---
 
 
-# Webtoepassingen maken die formulieren renderen {#creating-web-applications-thatrenders-forms}
+# Webtoepassingen maken die Forms renderen {#creating-web-applications-thatrenders-forms}
 
-## Webtoepassingen maken die formulieren renderen {#creating-web-applications-that-renders-forms}
+## Webtoepassingen maken die Forms renderen {#creating-web-applications-that-renders-forms}
 
-U kunt een webtoepassing maken die Java-servlets gebruikt om de Forms-service aan te roepen en formulieren te genereren. Een voordeel van het gebruik van een Java™ servlet is dat u de terugkeerwaarde van het proces aan cliëntbrowser kunt schrijven. Een Java-servlet kan dus worden gebruikt als de koppeling tussen de service Forms die een formulier retourneert en een webbrowser van de client.
+U kunt een webtoepassing maken die Java-servlets gebruikt om de Forms-service aan te roepen en formulieren te genereren. Een voordeel van het gebruik van een Java™ servlet is dat u de terugkeerwaarde van het proces aan cliëntbrowser kunt schrijven. Met andere woorden, een Java-servlet kan worden gebruikt als de koppeling tussen de Forms-service die een formulier retourneert en een clientwebbrowser.
 
 >[!NOTE]
 >
->In deze sectie wordt beschreven hoe u een webtoepassing maakt die een Java-servlet gebruikt die de service Forms aanroept en op fragmenten gebaseerde formulieren weergeeft. (Zie Formulieren [renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
+>In deze sectie wordt beschreven hoe u een webtoepassing maakt die een Java-servlet gebruikt die de Forms-service aanroept en op fragmenten gebaseerde formulieren weergeeft. (Zie Forms [renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
 
-Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server, waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
+Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
 
 In deze sectie wordt besproken hoe u een webtoepassing kunt maken waarmee de gebruiker op Amerika gebaseerde formuliergegevens of op Canada gebaseerde formuliergegevens kan selecteren, zoals in de volgende afbeelding wordt getoond.
 
@@ -56,11 +59,11 @@ waarbij &lt;*install directory*> het installatiepad is. Ten behoeve van de clien
 
 Als u toegang wilt krijgen tot het formulierontwerp Purchase Order Dynamic.xdp, geeft u `Applications/FormsApplication/1.0/FormsFolder/Purchase Order Dynamic.xdp` de naam van het formulier op (de eerste parameter die aan de `renderPDFForm` methode is doorgegeven) en `repository:///` de URI-waarde van de basisinhoud.
 
-De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaatst van de map Data naar `C:\Adobe`(het bestandssysteem dat hoort bij de J2EE-toepassingsserver die als host fungeert voor AEM-formulieren). De bestandsnamen zijn Purchase Order *Canada.xml* en Purchase Order *US.xml*.
+De XML-gegevensbestanden die door de webtoepassing worden gebruikt, zijn verplaatst van de map Data naar `C:\Adobe`(het bestandssysteem dat hoort bij de J2EE-toepassingsserver die als host fungeert voor AEM Forms). De bestandsnamen zijn Purchase Order *Canada.xml* en Purchase Order *US.xml*.
 
 >[!NOTE]
 >
->Zie de Help bij [Workbench voor informatie over het maken van een Forms-toepassing met Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
+>Raadpleeg de Help bij [Workbench voor informatie over het maken van een Forms-toepassing met Workbench](https://www.adobe.com/go/learn_aemforms_workbench_63).
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -75,11 +78,11 @@ Voer de volgende stappen uit om een webtoepassing te maken die formulieren weerg
 
 >[!NOTE]
 >
->Sommige van deze stappen zijn afhankelijk van de J2EE-toepassing waarop AEM Forms is geïmplementeerd. De methode die u bijvoorbeeld gebruikt om een WAR-bestand te implementeren, is afhankelijk van de J2EE-toepassingsserver die u gebruikt. In deze sectie wordt ervan uitgegaan dat AEM Forms wordt geïmplementeerd op JBoss®.
+>Sommige van deze stappen zijn afhankelijk van de J2EE-toepassing waarop AEM Forms wordt geïmplementeerd. De methode die u bijvoorbeeld gebruikt om een WAR-bestand te implementeren, is afhankelijk van de J2EE-toepassingsserver die u gebruikt. In deze sectie wordt ervan uitgegaan dat AEM Forms wordt geïmplementeerd op JBoss®.
 
 ### Een webproject maken {#creating-a-web-project}
 
-De eerste stap voor het maken van een webtoepassing die een Java-servlet bevat die de service Forms kan aanroepen, is het maken van een nieuw webproject. De Java-IDE waarop dit document is gebaseerd, is Eclipse 3.3. Gebruikend IDE van de Verduistering, creeer een Webproject en voeg de vereiste JAR dossiers aan uw project toe. Voeg ten slotte een HTML-pagina met de naam *index.html* en een Java-servlet toe aan uw project.
+De eerste stap voor het maken van een webtoepassing die een Java-servlet bevat die de Forms-service kan aanroepen, is het maken van een nieuw webproject. De Java-IDE waarop dit document is gebaseerd, is Eclipse 3.3. Gebruikend IDE van de Verduistering, creeer een Webproject en voeg de vereiste JAR dossiers aan uw project toe. Voeg ten slotte een HTML-pagina met de naam *index.html* en een Java-servlet toe aan uw project.
 
 In de volgende lijst worden de JAR-bestanden weergegeven die u aan uw webproject moet toevoegen:
 
@@ -88,7 +91,7 @@ In de volgende lijst worden de JAR-bestanden weergegeven die u aan uw webproject
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor de locatie van deze JAR-bestanden.
 
 **Een webproject maken:**
 
@@ -120,7 +123,7 @@ Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem
 
 ### Java-toepassingslogica voor de servlet maken {#creating-java-application-logic-for-the-servlet}
 
-U maakt Java-toepassingslogica waarmee de service Forms wordt geactiveerd vanuit het Java-servlet. De volgende code toont de syntaxis van `RenderFormFragment` Java Servlet:
+U maakt Java-toepassingslogica die de Forms-service aanroept vanuit de Java-servlet. De volgende code toont de syntaxis van `RenderFormFragment` Java Servlet:
 
 ```as3
      public class RenderFormFragment extends HttpServlet implements Servlet { 
@@ -139,21 +142,22 @@ Normaal gesproken plaatst u geen clientcode in een Java-servlet `doGet` of - `do
 
 Als u een formulier wilt genereren op basis van fragmenten met de API van de Forms-service, voert u de volgende taken uit:
 
-1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
+1. Neem client-JAR-bestanden, zoals adobe-forms-client.jar, op in het klassenpad van uw Java-project. Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
 1. Haal de waarde op van het keuzerondje dat vanuit het HTML-formulier wordt verzonden en geef aan of Amerikaanse of Canadese gegevens moeten worden gebruikt. Als er een Amerikaans bestand wordt verzonden, maakt u een `com.adobe.idp.Document` waarin de gegevens worden opgeslagen die zich bevinden in het bestand *Purchase Order US.xml*. Op dezelfde manier maakt u, indien Canadees, een `com.adobe.idp.Document` bestand waarin de gegevens in het bestand *Purchase Order Canada.xml* zijn opgeslagen.
 1. Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 1. Maak een `FormsServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
 1. Maak een `URLSpec` object dat URI-waarden opslaat met de constructor ervan.
 1. Roep de `URLSpec` methode van het `setApplicationWebRoot` object aan en geef een tekenreekswaarde door die de hoofdmap van de toepassing vertegenwoordigt.
-1. Roep de `URLSpec` methode van het `setContentRootURI` object aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudshoofdmap opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Vormen een uitzondering. Geef op om naar de opslagplaats voor AEM-formulieren te verwijzen. `repository://`.
+1. Roep de `URLSpec` methode van het `setContentRootURI` object aan en geef een tekenreekswaarde door die de URI-waarde van de inhoudshoofdmap opgeeft. Zorg ervoor dat het formulierontwerp en de fragmenten zich in de URI van de inhoudsbasis bevinden. Als niet, werpt de dienst van Forms een uitzondering. Geef een verwijzing op naar de AEM Forms-opslagplaats `repository://`.
 1. Roep de `URLSpec` methode van het `setTargetURL` object aan en geef een tekenreekswaarde door die de doel-URL-waarde opgeeft waarnaar formuliergegevens worden gepost. Als u de doel-URL in het formulierontwerp definieert, kunt u een lege tekenreeks doorgeven. U kunt ook de URL opgeven waarnaar een formulier wordt verzonden om berekeningen uit te voeren.
 1. Roep de methode van het `FormsServiceClient` `renderPDFForm` object aan en geef de volgende waarden door:
 
    * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie.
    * Een `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd (gemaakt in stap 2).
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie.
-   * Een `URLSpec` object dat URI-waarden bevat die vereist zijn voor de Forms-service om een formulier te genereren op basis van fragmenten.
+   * Een `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist om een formulier te genereren op basis van fragmenten.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. Maak een `com.adobe.idp.Document` object door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
@@ -164,7 +168,7 @@ Als u een formulier wilt genereren op basis van fragmenten met de API van de For
 1. Maak een bytearray die deze met de formuliergegevensstroom vult door de `InputStream` `read`methode van het object aan te roepen en de bytearray als een argument door te geven.
 1. Roep de `javax.servlet.ServletOutputStream` methode van het `write` object aan om de formuliergegevensstroom naar de webbrowser van de client te verzenden. Geef de bytearray door aan de `write` methode.
 
-In het volgende codevoorbeeld ziet u het Java-servlet dat de service Forms aanroept en een formulier genereert op basis van fragmenten.
+In het volgende codevoorbeeld ziet u het Java-servlet dat de Forms-service activeert en een formulier genereert op basis van fragmenten.
 
 ```as3
  /* 
@@ -303,7 +307,7 @@ In het volgende codevoorbeeld ziet u het Java-servlet dat de service Forms aanro
 
 ### De webpagina maken {#creating-the-web-page}
 
-De webpagina index.html biedt een ingangspunt voor de Java-server en roept de service Forms aan. Deze webpagina is een standaard-HTML-formulier dat twee keuzerondjes en een verzendknop bevat. De naam van de keuzerondjes is keuzerondjes. Wanneer de gebruiker op de verzendknop klikt, worden de formuliergegevens naar de `RenderFormFragment` Java-server verzonden.
+De webpagina index.html biedt een ingangspunt voor de Java-server en roept de Forms-service aan. Deze webpagina is een standaard-HTML-formulier dat twee keuzerondjes en een verzendknop bevat. De naam van de keuzerondjes is keuzerondjes. Wanneer de gebruiker op de verzendknop klikt, worden de formuliergegevens naar de `RenderFormFragment` Java-server verzonden.
 
 De Java-servlet legt de gegevens vast die vanuit de HTML-pagina zijn gepost met de volgende Java-code:
 
@@ -369,7 +373,7 @@ De volgende HTML-code bevindt zich in het bestand index.html dat tijdens de inst
 
 ### De webtoepassing verpakken {#packaging-the-web-application}
 
-Als u de Java-servlet wilt implementeren die de service Forms aanroept, moet u uw webtoepassing verpakken naar een WAR-bestand. Zorg ervoor dat externe JAR-bestanden waarvan de bedrijfslogica van de component afhankelijk is, zoals adobe-livecycle-client.jar en adobe-forms-client.jar, ook worden opgenomen in het WAR-bestand.
+Als u de Java-servlet wilt implementeren die de Forms-service aanroept, moet u uw webtoepassing verpakken naar een WAR-bestand. Zorg ervoor dat externe JAR-bestanden waarvan de bedrijfslogica van de component afhankelijk is, zoals adobe-livecycle-client.jar en adobe-forms-client.jar, ook worden opgenomen in het WAR-bestand.
 
 **Een webtoepassing verpakken naar een WAR-bestand:**
 
