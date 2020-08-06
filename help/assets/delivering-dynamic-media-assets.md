@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ec394bd3-2fa6-4f50-b974-bc10f643ecac
 translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+workflow-type: tm+mt
+source-wordcount: '330'
+ht-degree: 10%
 
 ---
 
@@ -22,7 +25,7 @@ Hoe u dynamische media-elementen kunt leveren (zowel video als afbeeldingen), ha
 Met Dynamische media hebt u verschillende opties:
 
 * Als uw website op AEM wordt gehost, wilt u de dynamische media-elementen rechtstreeks aan uw pagina toevoegen.
-* Als uw website zich niet op AEM bevindt, kunt u kiezen uit:
+* Als uw website niet op AEM staat, kunt u kiezen uit:
 
    * Uw video of afbeelding insluiten op uw website.
    * Koppel URL&#39;s aan uw webtoepassing. Gebruik koppelingen wanneer u een videospeler wilt leveren als een pop-up- of modaal venster.
