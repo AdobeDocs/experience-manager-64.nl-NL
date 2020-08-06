@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '857'
+ht-degree: 0%
 
 ---
 
@@ -21,12 +24,12 @@ source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
 
 Voor ontwikkelings- en demonstratiedoeleinden is het nodig één auteur en één publicatieexemplaar uit te voeren.
 
-Volg de standaard AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies die in
+Volg de standaard AEM [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) instructies die resulteren in
 
 * auteursomgeving op [localhost:4502](http://localhost:4502/)
 * publicatieomgeving op [localhost:4503](http://localhost:4503/)
 
-voor AEM-gemeenschappen,
+Voor AEM Communities:
 
 * De auteursomgeving is bedoeld voor
 
@@ -51,7 +54,7 @@ Deze zelfstudie maakt een [community-site](overview.md#enablement-community)voor
 
 * [Laatste releases](deploy-communities.md#latest-releases)
 
-Ga naar Aan de slag met [AEM-gemeenschappen](overview.md#engagement-community)voor een zelfstudie waarmee een community-site voor [](getting-started.md)betrokkenheid wordt gemaakt.
+Ga naar [Aan de slag met AEM Communities](overview.md#engagement-community)voor een zelfstudie waarmee een community-site [voor](getting-started.md)betrokkenheid wordt gemaakt.
 
 ## Functies van Enablement configureren {#configure-enablement-features}
 
@@ -59,7 +62,7 @@ Om deze zelfstudie te volgen, is het nodig om enablement [correct te installeren
 
 ## Analyses configureren {#configure-analytics}
 
-Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md), is meer informatie beschikbaar in de [rapporten](reports.md) die worden gegenereerd over bronnen voor activering en leerpaden die zijn toegewezen aan communityleden (studenten).
+Wanneer [Adobe Analytics voor de communautaire plaats](analytics.md)wordt gevormd, is meer informatie beschikbaar in de [rapporten](reports.md) die over de middelen van het toelaten en leerwegen worden geproduceerd die aan communautaire leden (studenten) worden toegewezen.
 
 ## E-mail voor meldingen configureren {#configure-email-for-notifications}
 
@@ -97,7 +100,7 @@ Volg daarna de instructies op
 1. [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-tag-permissions)
 1. [De labels publiceren](../../help/sites-administering/tags.md#publishing-tags)
 
-Voorbeeldpakket met tags gemaakt voor de zelfstudies om aan de slag te gaan met AEM Communities
+Voorbeeld van pakket met tags die zijn gemaakt voor de Tutorials Aan de slag van AEM Communities
 
 [Bestand ophalen](assets/communities_tutorialtags-10.zip)
 
@@ -125,8 +128,8 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 
 * **ID**: riley
 * **E-mail**: riley.taylor@mailinator.com
-* **Wachtwoord**:password
-* **Wachtwoord** bevestigen:password
+* **Wachtwoord**: password
+* **Wachtwoord** bevestigen: password
 * **Voornaam**: Riley
 * **Achternaam**: Taylor
 
@@ -136,8 +139,8 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 
 * **ID**: sidney
 * **E-mail**: sidney.croft@mailinator.com
-* **Wachtwoord**:password
-* **Wachtwoord** bevestigen:password
+* **Wachtwoord**: password
+* **Wachtwoord** bevestigen: password
 * **Voornaam**: Sidney
 * **Achternaam**: Uitsnijden
 
@@ -147,8 +150,8 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 
 * **ID**: quin
 * **E-mail**: quinn.harper@mailinator.com
-* **Wachtwoord**:password
-* **Wachtwoord** bevestigen:password
+* **Wachtwoord**: password
+* **Wachtwoord** bevestigen: password
 * **Voornaam**: Quinn
 * **Achternaam**: Harper
 
@@ -161,10 +164,10 @@ Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rolle
 * **Omschrijving**: een steekproefgroep voor het toewijzen van enablement middelen
 * **Leden toevoegen aan groep** &#39;toevoegen&#39;:
 
-   *  riley
-   *  sidney
+   * riley
+   * sidney
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
 ### Eigenschappen van de communautaire klasse Ski {#community-ski-class-properties}
 
@@ -190,15 +193,15 @@ Maak een gebruiker op de *auteur* die de rol van communautaire beheerder krijgt 
 
    * Bijvoorbeeld gebruikersnaam &#39;admin&#39; / wachtwoord &#39;admin&#39;
 
-* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Gereedschappen, Bewerkingen > Beveiliging > Gebruikers]**
-* Selecteer in het menu **[!UICONTROL Bewerken]** de optie Gebruiker **[!UICONTROL toevoegen]**
+* Navigeer vanuit de hoofdconsole naar **[!UICONTROL Tools, Operations > Security > Users]**
+* From the **[!UICONTROL Edit]** menu, select **[!UICONTROL Add User]**
 
-* In het `Create New User` dialoogvenster
+* In the `Create New User` dialog enter
 
    * **ID&amp;ast;**: sirius
    * **E-mailadres**: sirius.nilson@mailinator.com
-   * **Wachtwoord&amp;ast;**:password
-   * **Wachtwoord&amp;amp bevestigen;ten;**:password
+   * **Wachtwoord&amp;ast;**: password
+   * **Wachtwoord&amp;amp bevestigen;ten;**: password
    * **Voornaam**: Sirius
    * **Achternaam&amp;ast;**: Nilson
 
@@ -211,7 +214,7 @@ Omlaag schuiven naar `Add User to Groups`:
    * Selecteer `Community Administrators`
    * Selecteer `Community Enablement Managers`
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
 
