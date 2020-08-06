@@ -1,8 +1,8 @@
 ---
-title: Structuur van de interface voor AEM-aanraking
-seo-title: Structuur van de interface voor AEM-aanraking
-description: De interface die geoptimaliseerd is voor aanrakingen, zoals geïmplementeerd in AEM, heeft verschillende onderliggende principes en bestaat uit verschillende hoofdelementen
-seo-description: De interface die geoptimaliseerd is voor aanrakingen, zoals geïmplementeerd in AEM, heeft verschillende onderliggende principes en bestaat uit verschillende hoofdelementen
+title: Structuur van de interface voor AEM aanraakbediening
+seo-title: Structuur van de interface voor AEM aanraakbediening
+description: De interface die is geoptimaliseerd voor aanrakingen, zoals geïmplementeerd in AEM, heeft verschillende onderliggende principes en bestaat uit verschillende sleutelelementen
+seo-description: De interface die is geoptimaliseerd voor aanrakingen, zoals geïmplementeerd in AEM, heeft verschillende onderliggende principes en bestaat uit verschillende sleutelelementen
 uuid: 9a255238-1adc-4a40-9c37-30cb53ffb26c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '886'
+ht-degree: 0%
 
 ---
 
 
-# Structuur van de interface voor AEM-aanraking{#structure-of-the-aem-touch-enabled-ui}
+# Structuur van de interface voor AEM aanraakbediening{#structure-of-the-aem-touch-enabled-ui}
 
-De interface met AEM-aanraakfuncties heeft verschillende onderliggende principes en bestaat uit verschillende belangrijke elementen:
+De AEM interface met aanraakbediening heeft verschillende onderliggende principes en bestaat uit verschillende belangrijke elementen:
 
 ## Consoles {#consoles}
 
 ### Basislay-out en -formaat {#basic-layout-and-resizing}
 
-De interface biedt zowel mobiele apparaten als bureaubladapparaten, maar in plaats van twee stijlen te maken, heeft Adobe besloten één stijl te gebruiken die voor alle schermen en apparaten werkt.
+De interface kan zowel voor mobiele apparaten als voor desktopapparaten worden gebruikt, maar in plaats van twee stijlen te maken, heeft Adobe besloten één stijl te gebruiken die voor alle schermen en apparaten werkt.
 
-Alle modules gebruiken de zelfde basislay-out, in AEM kan dit als worden gezien:
+Alle modules gebruiken de zelfde basislay-out, in AEM dit kan worden gezien als:
 
 ![chlimage_1-142](assets/chlimage_1-142.png)
 
@@ -140,7 +143,7 @@ Een laag is een onafhankelijke bundel van functionaliteit die kan worden geactiv
 
 De lagen bieden geavanceerde functionaliteit voor de gehele pagina, in tegenstelling tot specifieke handelingen voor een afzonderlijke component.
 
-AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het ontwerpen van pagina&#39;s. zoals bewerken, voorvertonen en notities aanbrengen.
+AEM wordt geleverd met verschillende lagen die al zijn geïmplementeerd voor het ontwerpen van pagina&#39;s; zoals bewerken, voorvertonen en notities aanbrengen.
 
 >[!NOTE]
 >
