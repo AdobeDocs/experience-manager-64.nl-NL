@@ -12,6 +12,9 @@ discoiquuid: 666b967a-e94b-4f94-a676-00adf150580f
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 2%
 
 ---
 
@@ -47,6 +50,7 @@ Nadat u een lancering creeert kunt u de lanceringsnaam en de datum van de lancer
       * **Titel**
       * **Live datum**: dit komt overeen met de startdatum
       * **Gereed voor productie**
+
       Zie [Launches - de Orde van Gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van deze gebieden.
 
    * Op het tabblad **Afbeelding** kunt u een afbeeldingsbestand uploaden.
