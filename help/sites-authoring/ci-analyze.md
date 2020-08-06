@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: ead74e39-3b07-488e-aeb1-fcb4aa6ff200
 translation-type: tm+mt
 source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
+workflow-type: tm+mt
+source-wordcount: '681'
+ht-degree: 0%
 
 ---
 
@@ -19,16 +22,16 @@ source-git-commit: 3addef2141ebb831f8677d011d68faf88e648dc2
 
 Open de pagina [Inzicht](/help/sites-authoring/content-insights.md) inhoud om de prestaties van de pagina te analyseren die u ontwerpt. Configureer de rapportageperiode om uw analyse te concentreren.
 
-## Analyses en aanbevelingen voor een pagina openen {#opening-analytics-and-recommendations-for-a-page}
+## Analyses en Recommendations openen voor een pagina {#opening-analytics-and-recommendations-for-a-page}
 
-Gebruik de volgende procedure om de Analytics en Aanbevelingen voor een pagina te zien:
+Gebruik de volgende procedure om de Analytics en Recommendations voor een pagina te zien:
 
 1. Navigeer naar de pagina die u wilt analyseren.
-1. Klik of tik op **Analytics and Recommendations** op de werkbalk.
+1. Klik of tik op **Analytics en Recommendations** op de werkbalk.
 
    >[!NOTE]
    >
-   >Analyses en aanbevelingen voor een pagina worden alleen weergegeven als u AEM hebt geconfigureerd voor [integratie met Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
+   >Analyses en Recommendations voor een pagina worden alleen weergegeven als u AEM hebt geconfigureerd voor [integratie met Adobe Analytics](/help/sites-administering/adobeanalytics-connect.md).
 
    ![screen_shot_2017-11-29at135651](assets/screen_shot_2017-11-29at135651.png)
 
@@ -73,9 +76,9 @@ De granulariteit beïnvloedt de rapporten die gegevens tegen tijd, zoals de Meni
 
 1. Klik of tik op de gewenste granulariteit. Zodra geselecteerd, werkt het rapport automatisch bij om op granulariteit te wijzen.
 
-## Taken toewijzen voor SEO-aanbevelingen {#assigning-tasks-for-seo-recommendations}
+## Taken toewijzen voor SEO Recommendations {#assigning-tasks-for-seo-recommendations}
 
-Gebruik het rapport SEO Recommendations om taken tot stand te brengen voor het verbeteren van paginazicht aan onderzoeksmotoren. Voor elke aanbeveling in het rapport die geen controleteken heeft, kunt u een taak tot stand brengen die u aan een gebruiker toewijst om het vereiste werk uit te voeren.
+Gebruik het SEO Recommendations-rapport om taken te maken waarmee u de zichtbaarheid van pagina&#39;s voor zoekprogramma&#39;s kunt verbeteren. Voor elke aanbeveling in het rapport die geen controleteken heeft, kunt u een taak tot stand brengen die u aan een gebruiker toewijst om het vereiste werk uit te voeren.
 
 ![chlimage_1-252](assets/chlimage_1-252.png)
 
@@ -108,4 +111,4 @@ Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
 >[!NOTE]
 >
-> De taak die wordt gecreeerd omvat ook de weg aan de pagina waarop de aanbeveling SEO van toepassing is.
+>De taak die wordt gecreeerd omvat ook de weg aan de pagina waarop de aanbeveling SEO van toepassing is.
