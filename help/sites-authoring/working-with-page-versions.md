@@ -79,6 +79,7 @@ Als er eenmaal een versie is gemaakt, kunt u desgewenst terugkeren naar die vers
 >* Herstel de eerste versie; d.w.z. 1.0.
 >* Maak opnieuw nieuwe versies.
 >* De gegenereerde labels en knooppuntnamen zijn nu 1.0.0, 1.0.1, 1.0.2 enzovoort.
+
 >
 
 
