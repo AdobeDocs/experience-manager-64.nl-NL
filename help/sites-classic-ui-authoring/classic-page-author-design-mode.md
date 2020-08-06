@@ -1,8 +1,8 @@
 ---
 title: Componenten configureren in ontwerpmodus
 seo-title: Componenten configureren in ontwerpmodus
-description: 'Wanneer een AEM-instantie buiten de verpakking wordt geïnstalleerd, is er direct een selectie van componenten beschikbaar in het hulpstuk. Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten in- en uit te schakelen. '
-seo-description: 'Wanneer een AEM-instantie buiten de verpakking wordt geïnstalleerd, is er direct een selectie van componenten beschikbaar in het hulpstuk. Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten in- en uit te schakelen. '
+description: 'Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in sidekick. Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten in- en uit te schakelen. '
+seo-description: 'Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in sidekick. Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten in- en uit te schakelen. '
 page-status-flag: de-activated
 uuid: 57249965-3a30-49ce-9fb0-864c5daaa262
 contentOwner: User
@@ -12,13 +12,16 @@ content-type: reference
 discoiquuid: 93f98f7b-7ab8-4d9c-b179-dc99b80ffc91
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
 
 # Componenten configureren in ontwerpmodus{#configuring-components-in-design-mode}
 
-Wanneer een AEM-instantie buiten de verpakking wordt geïnstalleerd, is er direct een selectie van componenten beschikbaar in het hulpstuk.
+Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in sidekick.
 
 Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten [in of uit te](#enabledisablecomponentsusingdesignmode)schakelen. Wanneer toegelaten en gevestigd op uw pagina kunt u de wijze van het Ontwerp dan gebruiken om aspecten van het componentenontwerp [te](#configuringcomponentsusingdesignmode) vormen door de attributenparameters uit te geven.
 
