@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '953'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging o
 
 >[!NOTE]
 >
->U kunt zich ook aanmelden bij documentbeveiliging via Acrobat en andere clienttoepassingen met uw gebruikersaanmeldingsaccount. (Zie Toegang tot documentbeveiliging [instellen vanuit clienttoepassingen](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
+>U kunt zich ook aanmelden bij de documentbeveiliging via Acrobat en andere clienttoepassingen met uw gebruikersaanmeldingsaccount. (Zie Toegang tot documentbeveiliging [instellen vanuit clienttoepassingen](using-document-security-web-pages.md#setting-up-access-to-document-security-from-client-applications).)
 
 Als u de webpagina&#39;s wilt openen, hebt u voor documentbeveiliging een browser en de URL en uw aanmeldingsgegevens nodig. De URL voor gebruikers is anders dan de URL voor beheerders.
 
@@ -41,13 +44,13 @@ Voor beheerders wordt tijdens de installatie een standaard superbeheerdersaccoun
 
 >[!NOTE]
 >
->U kunt de webpagina&#39;s ook openen vanuit Acrobat en andere clienttoepassingen. Zie de Help bij Acrobat of de juiste Help bij Acrobat Reader DC-extensies voor meer informatie.
+>U kunt de webpagina&#39;s ook openen vanuit Acrobat en andere clienttoepassingen. Raadpleeg de Help bij Acrobat of de betreffende Acrobat Reader DC-extensies voor meer informatie.
 
 1. Typ de URL in uw browser:
 
-   URL voor documentbeveiliging: `https://`*[hostpoort ]*`:`*[]*`/edc`
+   URL voor documentbeveiliging: `https://`*[host ]*-`:`*[poort]* `/edc`
 
-   of beheerconsole-URL: `https://`*[hostpoort ]*`:`*[]*`/adminui`
+   of beheerconsole-URL: `https://`*[host ]*-`:`*[poort]* `/adminui`
 
 1. Typ uw gebruikersnaam en wachtwoord in het aanmeldingsvenster en klik op OK.
 1. Klik in Beheerconsole op Services > Documentbeveiliging.
@@ -82,7 +85,7 @@ Gebruik deze koppelingen om toegang te krijgen tot de verschillende pagina&#39;s
 
 ## Toegang tot documentbeveiliging instellen vanuit clienttoepassingen {#setting-up-access-to-document-security-from-client-applications}
 
-Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie de Help bij ** Acrobat of de juiste *RightsManagementExtension Help* voor informatie over het configureren van de verbinding in de clienttoepassing.
+Clienttoepassingen moeten zijn ingesteld om verbinding te maken met documentbeveiliging om documenten te beveiligen, documenten te openen die met een beleid zijn beveiligd en verbinding te maken met webpagina&#39;s voor documentbeveiliging. Zie de Help bij ** Acrobat of de juiste Help bij ** RightsManagementExtension voor informatie over het configureren van de verbinding in de clienttoepassing.
 
 Documentbeveiliging is toegankelijk via SSL (Secure Sockets Layer). U moet het certificaat van de website installeren in het certificaatarchief, zodat u toegang hebt tot documentbeveiliging via de clienttoepassingen.
 
