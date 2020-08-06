@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f5316a73-84e2-4a18-98c1-a384eeaa77cf
 translation-type: tm+mt
 source-git-commit: 43421a3068fdc8cc7a88c98a2e9045b54cc8f99e
+workflow-type: tm+mt
+source-wordcount: '446'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 43421a3068fdc8cc7a88c98a2e9045b54cc8f99e
 
 ## Info over JSRP {#about-jsrp}
 
-Wanneer AEM Communities JSRP als opslagoptie gebruikt (de standaardinstelling), wordt inhoud van de community opgeslagen in JCR en door de gebruiker gegenereerde inhoud (UGC) is alleen toegankelijk vanuit de auteur of de publicatie-instantie waarnaar deze is gepost.
+Wanneer AEM Communities JSRP als opslagoptie gebruikt (de standaardinstelling), wordt inhoud van de community opgeslagen in JCR en door de gebruiker gegenereerde inhoud (UGC) is alleen toegankelijk van de auteur of de publicatieinstantie waarnaar deze is gepost.
 
 Wegens de eenvoud van plaatsing, is JSRP over het algemeen best geschikt voor demonstratie of ontwikkelingsmilieu&#39;s van één publiceer instantie en één auteursinstantie.
 
@@ -35,12 +38,12 @@ De console [van de Configuratie van de](srp-config.md) Opslag staat voor de sele
 
 In de auteursomgeving, om de console van de Configuratie van de Opslag te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Gemeenschappen > Opslagconfiguratie]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Storage Configuration]**
 
 ![chlimage_1-234](assets/chlimage_1-234.png)
 
-* JSRP ( **[!UICONTROL JCR Storage Resource Provider) selecteren]**
-* Selecteer **[!UICONTROL Verzenden]**
+* Selecteer **[!UICONTROL JCR Storage Resource Provider (JSRP)]**
+* Selecteer **[!UICONTROL Submit]**
 
 ### De configuratie publiceren {#publishing-the-configuration}
 
@@ -48,12 +51,12 @@ Terwijl JSRP de standaardconfiguratie is, om ervoor te zorgen dat de identieke c
 
 * Op auteur:
 
-   * Vanuit globale navigatie: **[!UICONTROL Extra > Implementatie > Replicatie]**
-   * Boomstructuur **[!UICONTROL activeren selecteren]**
-   * **[!UICONTROL Startpad]**:
+   * Vanuit globale navigatie: **[!UICONTROL Tools > Deployment > Replication]**
+   * Selecteer **[!UICONTROL Activate Tree]**
+   * **[!UICONTROL Start Path]**:
 
       * Bladeren naar `/conf/global/settings/community/srpc/`
-   * Selecteer **[!UICONTROL Activeren]**
+   * Selecteer **[!UICONTROL Activate]**
 
 
 ## Gebruikersgegevens beheren {#managing-user-data}
@@ -69,7 +72,7 @@ Voor informatie over *gebruikers*, *gebruikersprofielen* en *gebruikersgroepen*,
 
 Zorg ervoor JSRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Standaard is de leverancier van de opslagbron JSRP.
 
-Ga bij alle auteurs naar de opslagconfiguratieconsole of controleer de AEM-opslagplaats op alle AEM-exemplaren en publiceer deze:
+Ga bij alle auteur- en publiceer AEM naar de opslagconfiguratieconsole of controleer de AEM opslagplaats:
 
 * in JCR, als [/conf/global/settings/community](http://localhost:4502/crx/de/index.jsp#/conf/global/settings/community)
 
