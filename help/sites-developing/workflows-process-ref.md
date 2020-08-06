@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dbdf981f-791b-4ff7-8ca8-039d0bdc9c92
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '1141'
+ht-degree: 0%
 
 ---
 
@@ -34,9 +37,9 @@ Processtappen worden gedefinieerd door een Java-klasse of een ECMAScript.
 
 De nuttige lading is de entiteit waarop een werkschemainstantie handelt. De payload wordt impliciet geselecteerd door de context waarbinnen een werkschemainstantie is begonnen.
 
-Als bijvoorbeeld een workflow wordt toegepast op een AEM-pagina *P* , wordt *P* van stap tot stap doorgegeven terwijl de workflow verder gaat, waarbij elke stap optioneel op *P* reageert.
+Als bijvoorbeeld een workflow wordt toegepast op een AEM pagina *P* , wordt *P* van stap tot stap doorgegeven terwijl de workflow verder gaat, waarbij elke stap optioneel op *P* reageert.
 
-In het meest voorkomende geval is de lading een JCR-knooppunt in de repository (bijvoorbeeld een AEM Page of Asset). Een JCR-knooppuntlading wordt doorgegeven als een tekenreeks die een JCR-pad of een JCR-id (UUID) is. In sommige gevallen kan de payload een JCR-eigenschap (doorgegeven als een JCR-pad), een URL, een binair object of een algemeen Java-object zijn. De individuele processtappen die op de lading handelen zullen gewoonlijk een lading van een bepaald type verwachten, of verschillend afhankelijk van het ladingstype handelen. Voor elk hieronder beschreven proces wordt het verwachte ladingstype, indien van toepassing, beschreven.
+In het meest voorkomende geval is de lading een JCR-knooppunt in de repository (bijvoorbeeld een AEM Pagina of Element). Een JCR-knooppuntlading wordt doorgegeven als een tekenreeks die een JCR-pad of een JCR-id (UUID) is. In sommige gevallen kan de payload een JCR-eigenschap (doorgegeven als een JCR-pad), een URL, een binair object of een algemeen Java-object zijn. De individuele processtappen die op de lading handelen zullen gewoonlijk een lading van een bepaald type verwachten, of verschillend afhankelijk van het ladingstype handelen. Voor elk hieronder beschreven proces wordt het verwachte ladingstype, indien van toepassing, beschreven.
 
 ### Argumenten {#arguments}
 
@@ -55,7 +58,7 @@ Argumenten worden als één tekenreeks ingevoerd in de eigenschap **Procesargume
 
 Na deze time-outperiode is de workflowstap niet meer operationeel. Sommige workflowprocessen respecteren de time-out, andere niet en worden genegeerd.
 
-### Permissions {#permissions}
+### Machtigingen {#permissions}
 
 De sessie die aan de gebruiker `WorkflowProcess` wordt doorgegeven, wordt ondersteund door de servicegebruiker voor de workflowprocesservice, die de volgende machtigingen heeft in de hoofdmap van de opslagplaats:
 
@@ -79,7 +82,7 @@ De geadviseerde manier om dit te doen is een de dienstgebruiker te gebruiken die
 >
 >Een kortetermijnoplossing is ook beschikbaar voor achterwaartse compatibiliteitsdoeleinden wanneer codeveranderingen niet haalbaar zijn:
 >
->* De webconsole gebruiken ( `/system/console/configMgr` zoek de **Adobe Granite Workflow Configuration Service**
+>* Gebruikend de Console van het Web ( `/system/console/configMgr` bepaal de plaats van de Dienst van de Configuratie van het Werkschema van **Adobe Granite**
    >
    >
 * de modus Verouderd **workflowproces inschakelen**
@@ -116,7 +119,7 @@ Het `ProcessAssembler` proces voert veelvoudige subprocessen opeenvolgend in é�
 
 * **Java-klasse**: `com.day.cq.workflow.impl.process.ProcessAssembler`
 
-* **Payload**: Een DAM-element, AEM-pagina of geen payload (afhankelijk van de vereisten van subprocessen).
+* **Payload**: Een DAM-middel, AEM pagina of geen lading (afhankelijk van de vereisten van subprocessen).
 * **Argumenten**:
 
 ```
@@ -154,7 +157,7 @@ De volgende processen voeren eenvoudige taken uit of dienen als voorbeelden.
 >
 >U ***mag*** niets in het `/libs` pad wijzigen.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 ### delete {#delete}
 
@@ -163,8 +166,8 @@ Het item in het opgegeven pad wordt verwijderd.
 * **ECMAScript-pad**: `/libs/workflow/scripts/delete.ecma`
 
 * **Payload**: JCR-pad
-* **Argumenten**:Geen
-* **Time-out**:Genegeerd
+* **Argumenten**: Geen
+* **Time-out**: Genegeerd
 
 ### nop {#noop}
 
@@ -172,9 +175,9 @@ Dit is het null-proces. Het voert geen verrichting uit, maar registreert een zui
 
 * **ECMAScript-pad**: `/libs/workflow/scripts/noop.ecma`
 
-* **Payload**:Geen
-* **Argumenten**:Geen
-* **Time-out**:Genegeerd
+* **Payload**: Geen
+* **Argumenten**: Geen
+* **Time-out**: Genegeerd
 
 ### rule-false {#rule-false}
 
@@ -182,9 +185,9 @@ Dit is een ongeldig proces dat `false` op de `check()` methode terugkeert.
 
 * **ECMAScript-pad**: `/libs/workflow/scripts/rule-false.ecma`
 
-* **Payload**:Geen
-* **Argumenten**:Geen
-* **Time-out**:Genegeerd
+* **Payload**: Geen
+* **Argumenten**: Geen
+* **Time-out**: Genegeerd
 
 ### sample {#sample}
 
@@ -192,9 +195,9 @@ Dit is een voorbeeld van een ECMAScript-proces.
 
 * **ECMAScript-pad**: `/libs/workflow/scripts/sample.ecma`
 
-* **Payload**:Geen
-* **Argumenten**:Geen
-* **Time-out**:Genegeerd
+* **Payload**: Geen
+* **Argumenten**: Geen
+* **Time-out**: Genegeerd
 
 ### urlcaller {#urlcaller}
 
@@ -202,7 +205,7 @@ Dit is een eenvoudig workflowproces dat de opgegeven URL aanroept. Doorgaans wor
 
 * **ECMAScript-pad**: `/libs/workflow/scripts/urlcaller.ecma`
 
-* **Payload**:Geen
+* **Payload**: Geen
 * **Argumenten**:
 
 ```
@@ -214,17 +217,17 @@ Dit is een eenvoudig workflowproces dat de opgegeven URL aanroept. Doorgaans wor
 
 Bijvoorbeeld: `http://localhost:4502/my.jsp, mylogin, mypassword`
 
-* **Time-out**:Genegeerd
+* **Time-out**: Genegeerd
 
 ### LockProcess {#lockprocess}
 
 Vergrendelt de lading van de workflow.
 
-* **** Java, klasse: `com.day.cq.workflow.impl.process.LockProcess`
+* **Java, klasse:** `com.day.cq.workflow.impl.process.LockProcess`
 
-* **** Payload: JCR_PATH en JCR_UID
-* **** Argumenten:Geen
-* **** Time-out:Genegeerd
+* **Payload:** JCR_PATH en JCR_UID
+* **Argumenten:** Geen
+* **Time-out:** Genegeerd
 
 De stap heeft geen effect in de volgende omstandigheden:
 
@@ -235,11 +238,11 @@ De stap heeft geen effect in de volgende omstandigheden:
 
 Ontgrendelt de lading van de workflow.
 
-* **** Java, klasse: `com.day.cq.workflow.impl.process.UnlockProcess`
+* **Java, klasse:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
-* **** Payload: JCR_PATH en JCR_UID
-* **** Argumenten:Geen
-* **** Time-out:Genegeerd
+* **Payload:** JCR_PATH en JCR_UID
+* **Argumenten:** Geen
+* **Time-out:** Genegeerd
 
 De stap heeft geen effect in de volgende omstandigheden:
 
@@ -252,11 +255,11 @@ Het volgende proces voert een versie-verwante taak uit.
 
 ### CreateVersionProcess {#createversionprocess}
 
-Hiermee maakt u een nieuwe versie van de payload van de workflow (AEM-pagina of DAM-element).
+Hiermee maakt u een nieuwe versie van de taakbelasting van de werkstroom (AEM pagina of DAM-element).
 
 * **Java-klasse**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
 * **Payload**: Een JCR-pad of UUID die verwijst naar een pagina of DAM-element
-* **Argumenten**:Geen
+* **Argumenten**: Geen
 * **Time-out**: Eerbiedigd
 
