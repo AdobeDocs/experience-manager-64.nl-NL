@@ -27,7 +27,7 @@ Deze sectie beschrijft onderwerpen over het ontwikkelen van componenten voor geb
 
 >[!NOTE]
 >
->Wanneer u een component in auteur AEM richt, maakt de component een reeks server-zijvraag aan Adobe Target om de campagne te registreren, opstellingsaanbiedingen, en de segmenten van Adobe Target terug te winnen (indien gevormd). Er worden geen serveraanroepen vanuit AEM uitgevoerd die naar Adobe Target publiceren.
+>Wanneer u een component in AEM auteur richt, maakt de component een reeks server-zijvraag aan Adobe Target om de campagne te registreren, opstellingsaanbiedingen, en de segmenten van Adobe Target terug te winnen (indien gevormd). Er worden geen serveraanroepen vanuit AEM naar Adobe Target gepubliceerd.
 
 ## Gericht op Adobe Target op uw pagina&#39;s inschakelen {#enabling-targeting-with-adobe-target-on-your-pages}
 
@@ -46,9 +46,9 @@ Voeg beide volgende codeblokken toe aan de sectie &lt;head> van de pagina:
 <cq:include script="/libs/cq/cloudserviceconfigs/components/servicelibs/servicelibs.jsp"/>
 ```
 
-Met deze code voegt u de vereiste analytische JavaScript-objecten toe en worden de cloudservicebibliotheken geladen die aan de website zijn gekoppeld. Voor de Target-service worden de bibliotheken geladen via `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
+Met deze code voegt u de vereiste analytische JavaScript-objecten toe en worden de cloudservicebibliotheken geladen die aan de website zijn gekoppeld. Voor de service Doel worden de bibliotheken geladen via `/libs/cq/analytics/components/testandtarget/headlibs.jsp`
 
-De set bibliotheken die wordt geladen, is afhankelijk van het type doelclientbibliotheek (mbox.js of at.js) dat wordt gebruikt in de Target-configuratie:
+De set bibliotheken die wordt geladen, is afhankelijk van het type doelclientbibliotheek (mbox.js of at.js) dat wordt gebruikt in de doelconfiguratie:
 
 **Voor standaard mbox.js**
 
@@ -90,7 +90,7 @@ De set bibliotheken die wordt geladen, is afhankelijk van het type doelclientbib
  <script type="text/javascript" src="/etc/clientlibs/foundation/testandtarget/atjs-integration.js"></script>
 ```
 
-De Target-functionaliteit aan de clientzijde wordt beheerd door het `CQ_Analytics.TestTarget` object. Daarom zal de pagina wat init code zoals in het volgende voorbeeld bevatten:
+De functionaliteit van het Doel op de cliëntkant wordt beheerd door het `CQ_Analytics.TestTarget` voorwerp. Daarom zal de pagina wat init code zoals in het volgende voorbeeld bevatten:
 
 ```
 <script type="text/javascript">
@@ -157,7 +157,7 @@ Voeg de volgende code direct voor de `</body>` eindtag toe:
 <cq:include path="cloudservices" resourceType="cq/cloudserviceconfigs/components/servicecomponents"/>
 ```
 
-Het JSP-script van deze component genereert aanroepen naar de Target javascript API en implementeert andere vereiste configuraties. De HTML die het script genereert, is vergelijkbaar met het volgende voorbeeld:
+Het JSP manuscript van deze component produceert vraag aan het Doel javascript API en voert andere vereiste configuraties uit. De HTML die het script genereert, is vergelijkbaar met het volgende voorbeeld:
 
 ```xml
 <div class="servicecomponents cloudservices">
@@ -185,7 +185,7 @@ Het JSP-script van deze component genereert aanroepen naar de Target javascript 
 </div>
 ```
 
-### Een aangepast Target-bibliotheekbestand gebruiken {#using-a-custom-target-library-file}
+### Een aangepast doelbibliotheekbestand gebruiken {#using-a-custom-target-library-file}
 
 >[!NOTE]
 >
@@ -195,35 +195,35 @@ Het JSP-script van deze component genereert aanroepen naar de Target javascript 
 >
 >De vakken zijn standaard verborgen. De klasse mboxDefault bepaalt dit gedrag. Verborgen vakken zorgen ervoor dat bezoekers de standaardinhoud niet zien voordat deze wordt omgewisseld. het verbergen van vakken heeft echter invloed op waargenomen prestaties .
 
-Het standaard mbox.js- dossier dat wordt gebruikt om dozen tot stand te brengen wordt gevestigd bij `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Als u een bestand mbox.js van de klant wilt gebruiken, voegt u het bestand toe aan de Target-cloudconfiguratie. Als u het bestand wilt toevoegen, moet het `mbox.js` bestand beschikbaar zijn op het bestandssysteem.
+Het standaard mbox.js- dossier dat wordt gebruikt om dozen tot stand te brengen wordt gevestigd bij `/etc/clientlibs/foundation/testandtarget/mbox/source/mbox.js`. Als u een bestand mbox.js van de klant wilt gebruiken, voegt u het bestand toe aan de configuratie van de doelcloud. Als u het bestand wilt toevoegen, moet het `mbox.js` bestand beschikbaar zijn op het bestandssysteem.
 
-Bijvoorbeeld, als u de dienst [van identiteitskaart van de](https://docs.adobe.com/content/help/en/id-service/using/home.html) Marketing Cloud wilt gebruiken moet u mbox.js downloaden zodat het de correcte waarde voor de `imsOrgID` variabele bevat, die op uw huurder gebaseerd is. Deze variabele is vereist voor integratie met de service Marketing Cloud ID. Zie [Adobe Analytics voor meer informatie als de rapportbron voor Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) en [Voordat u gaat implementeren](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
+Bijvoorbeeld, als u de dienst [van identiteitskaart van de](https://docs.adobe.com/content/help/en/id-service/using/home.html) Marketing Cloud wilt gebruiken moet u mbox.js downloaden zodat het de correcte waarde voor de `imsOrgID` variabele bevat, die op uw huurder gebaseerd is. Deze variabele wordt vereist voor het integreren met de dienst van identiteitskaart van de Marketing Cloud. Voor informatie, zie [Adobe Analytics als Rapporterende Bron voor Adobe Target](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/a4t.html) en [alvorens u uitvoert](https://docs.adobe.com/content/help/en/target/using/integrate/a4t/before-implement.html).
 
 >[!NOTE]
 >
->Als een aangepaste mbox is gedefinieerd in een Target-configuratie, moet iedereen leestoegang hebben tot **/etc/cloudservices** op publicatieservers. Zonder deze toegang leidt het laden van mbox.js-bestanden op de publicatiewebsite tot een fout van 404.
+>Als een aangepaste mbox is gedefinieerd in een doelconfiguratie, moet iedereen leestoegang hebben tot **/etc/cloudservices** op publicatieservers. Zonder deze toegang leidt het laden van mbox.js-bestanden op de publicatiewebsite tot een fout van 404.
 
-1. Ga naar de pagina CQ- **gereedschappen** en selecteer **Cloud Servicen**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
-1. Selecteer Adobe Target in de boomstructuur en dubbelklik in de lijst met configuraties op de Target-configuratie.
+1. Ga naar de pagina CQ- **gereedschappen** en selecteer **Cloud Services**. ([http://localhost:4502/libs/cq/core/content/tools/cloudservices.html](http://localhost:4502/libs/cq/core/content/tools/cloudservices.html))
+1. Selecteer Adobe Target in de boomstructuur en dubbelklik in de lijst met configuraties op de doelconfiguratie.
 1. Klik op Bewerken op de configuratiepagina.
 1. Voor het bezit van Custom mbox.js, doorbladert de klik en selecteert het dossier.
-1. Als u de wijzigingen wilt toepassen, voert u het wachtwoord voor uw Adobe Target-account in, klikt u op Opnieuw verbinden met Target en klikt u op OK als de verbinding is gelukt. Klik vervolgens op OK in het dialoogvenster Component bewerken.
+1. Als u de wijzigingen wilt toepassen, voert u het wachtwoord voor uw Adobe Target-account in, klikt u op Opnieuw verbinden met doel en klikt u op OK als de verbinding tot stand is gebracht. Klik vervolgens op OK in het dialoogvenster Component bewerken.
 
-Uw Target-configuratie bevat een aangepast bestand mbox.js. De vereiste code in [de kopsectie](/help/sites-developing/target.md#the-head-section) van uw pagina voegt het bestand toe aan het clientbibliotheekframework in plaats van een verwijzing naar de testandtarget.js-bibliotheek.
+Uw doelconfiguratie bevat een aangepast bestand mbox.js. De vereiste code in [de kopsectie](/help/sites-developing/target.md#the-head-section) van de pagina voegt het bestand toe aan het clientbibliotheekframework in plaats van een verwijzing naar de testandtarget.js-bibliotheek.
 
-## De Target-opdracht voor componenten uitschakelen {#disabling-the-target-command-for-components}
+## Het onbruikbaar maken van het Bevel van het Doel voor Componenten {#disabling-the-target-command-for-components}
 
-De meeste componenten kunnen in gerichte componenten worden omgezet gebruikend het bevel van Target op het contextmenu.
+De meeste componenten kunnen in gerichte componenten worden omgezet gebruikend het bevel van het Doel op het contextmenu.
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
-Als u de Target-opdracht uit het contextmenu wilt verwijderen, voegt u de volgende eigenschap toe aan het knooppunt cq:editConfig van de component:
+Als u de opdracht Doel uit het contextmenu wilt verwijderen, voegt u de volgende eigenschap toe aan het knooppunt cq:editConfig van de component:
 
 * Naam: `cq:disableTargeting`
 * Type: `Boolean`
 * Waarde: `True`
 
-Als u bijvoorbeeld het aanwijzen van doelen voor de titelcomponenten van de pagina&#39;s van de Geometrixx demo-site wilt uitschakelen, voegt u de eigenschap toe aan het `/apps/geometrixx/components/title/cq:editConfig` knooppunt.
+Bijvoorbeeld, om het richten voor de titelcomponenten van de pagina&#39;s van de Plaats van de Demo van de Geometrixx uit te schakelen, voeg het bezit aan de `/apps/geometrixx/components/title/cq:editConfig` knoop toe.
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
@@ -252,9 +252,9 @@ De code op de weergegeven HTML-pagina die de mbox maakt, is vergelijkbaar met he
 
 De waarden van elke parameter zijn verschillend voor elke orde. Daarom hebt u een component nodig die de code genereert op basis van de eigenschappen van de aankoop. Met het CQ [eCommerce Integration Framework](/help/sites-administering/ecommerce.md) kunt u integreren met uw productcatalogus en een winkelwagentje en afhandelingspagina implementeren.
 
-Het Geometrixx-monster Buiten geeft de volgende bevestigingspagina weer wanneer een bezoeker producten koopt:
+In het voorbeeld Geometrixx Outdoors wordt de volgende bevestigingspagina weergegeven wanneer een bezoeker producten koopt:
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 De volgende code voor het JSP manuscript van een component heeft toegang tot de eigenschappen van het het winkelwagentje en drukt dan de code voor het creëren van mbox.
 
@@ -315,9 +315,9 @@ Wanneer de component is opgenomen in de uitcheckpagina in het vorige voorbeeld, 
 </script>
 ```
 
-## De Target-component begrijpen {#understanding-the-target-component}
+## De doelcomponent begrijpen {#understanding-the-target-component}
 
-Met de Target-component kunnen auteurs dynamische vakken maken op basis van CQ-inhoudscomponenten. (Zie [Inhoud voorbereiden](/help/sites-authoring/content-targeting-touch.md).) De Target-component bevindt zich op /libs/cq/personalization/components/target.
+Met de component Target kunnen auteurs dynamische vakken maken op basis van CQ-inhoudscomponenten. (Zie [Inhoud voorbereiden](/help/sites-authoring/content-targeting-touch.md).) De doelcomponent bevindt zich op /libs/cq/personalization/components/target.
 
 Het target.jsp manuscript toegang tot de paginaeigenschappen om de het richten motor te bepalen voor de component te gebruiken, en voert dan het aangewezen manuscript uit:
 
