@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Vooraf gedefinieerde rapporten in procesrapportage {#pre-defined-reports-in-process-reporting}
 
-AEM Forms verwerken rapporteringsschepen met de volgende *out-of-the-box* rapporten:
+AEM Forms Process Reporting biedt de volgende *out-of-the-box* -rapporten:
 
-* **[Lange processen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Een rapport van alle processen van AEM Forms die meer dan een gespecificeerde tijd namen om te voltooien
+* **[Lange processen](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-long-running-processes-p)**: Een rapport van alle AEM Forms-processen die meer dan een opgegeven tijd hebben geduurd om te worden voltooid
 
-* **[Tijdschema](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**proces: Een rapport van een opgegeven proces voor AEM Forms per tijdsduur
+* **[Tijdschema](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-process-duration-report-br-p)**proces: Een rapport van een opgegeven AEM Forms-proces per tijdsduur
 
 * **[Volume](/help/forms/using/process-reporting/pre-defined-reports-in-process-reporting.md#p-workflow-volume-report-p)**werkstroom: Een rapport van de lopende en voltooide instanties van gespecificeerd proces door datum
 
 ## Lange processen {#long-running-processes}
 
-Het rapport Lange lopende processen geeft de processen van AEM Forms weer die meer dan een opgegeven tijd hebben geduurd om te voltooien.
+Het rapport Lange actieve processen geeft de AEM Forms-processen weer die meer dan een opgegeven tijd in beslag hebben genomen.
 
 ### Een lang lopend procesrapport uitvoeren {#to-execute-a-long-running-process-report-br}
 
@@ -44,7 +44,7 @@ Het rapport Lange lopende processen geeft de processen van AEM Forms weer die me
 
    Parameters:
 
-   * **Duur**(*verplicht*): Geef een duur en tijdseenheid op. Geef alle processen van AEM Forms weer die langer dan de opgegeven duur zijn uitgevoerd.
+   * **Duur**(*verplicht*): Geef een duur en tijdseenheid op. Alle AEM Forms-processen weergeven die langer dan de opgegeven duur zijn uitgevoerd.
    * **Gestart na** (*optioneel*): Selecteer een datum. Filter het rapport om procesinstanties weer te geven die na de opgegeven datum zijn gestart.
    * **Gestart voor** (*optioneel*): Selecteer een datum. Filter het rapport om procesinstanties weer te geven die vóór de opgegeven datum zijn gestart.
 
@@ -62,7 +62,7 @@ Het rapport Lange lopende processen geeft de processen van AEM Forms weer die me
 
 ## Rapport Procesduur {#process-duration-report-br}
 
-In het rapport Procesduur wordt het aantal exemplaren van een Forms-proces weergegeven met het aantal dagen dat elke instantie is uitgevoerd.
+In het rapport Procesduur wordt het aantal instanties van een Forms-proces weergegeven op basis van het aantal dagen dat elke instantie is uitgevoerd.
 
 ### Een rapport over de procesduur uitvoeren {#to-execute-a-process-duration-report-br}
 
@@ -93,7 +93,7 @@ In het rapport Procesduur wordt het aantal exemplaren van een Forms-proces weerg
 
 ## Workflow Volume-rapport {#workflow-volume-report}
 
-Het rapport Volume werkstroom geeft het aantal exemplaren van een AEM Forms-proces dat momenteel wordt uitgevoerd en voltooid per kalenderdag weer.
+Het workflowvolutrapport geeft het aantal exemplaren van een AEM Forms-proces dat momenteel wordt uitgevoerd en voltooid, per kalenderdag weer.
 
 ### Om een rapport van het Volume van het Werkschema uit te voeren {#to-execute-a-workflow-volume-report-br}
 
