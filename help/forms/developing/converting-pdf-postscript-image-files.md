@@ -60,7 +60,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 Voordat u een servicebewerking PDF converteren via programmacode kunt uitvoeren, moet u een client voor PDF-service converteren maken. Als u de Java API gebruikt, maakt u een `ConvertPdfServiceClient` object. Als u de webservice-API gebruikt, maakt u een `ConvertPDFServiceService` object.
 
-Deze sectie gebruikt de functionaliteit van de Webdienst die in AEM Forms wordt geïntroduceerd. Voor toegang tot nieuwe functionaliteit moet u een proxyobject maken met het `lc_version` kenmerk. (Zie &quot;Toegang tot nieuwe functionaliteit met behulp van webservices&quot; in [AEM Forms aanroepen met behulp van webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+Deze sectie gebruikt webservicefunctionaliteit die in AEM Forms is geïntroduceerd. Voor toegang tot nieuwe functionaliteit moet u een proxyobject maken met het `lc_version` kenmerk. (Zie &quot;Toegang tot nieuwe functionaliteit via webservices&quot; in [AEM Forms aanroepen met behulp van webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
 **Verwijzen naar het PDF-document dat moet worden geconverteerd naar een PostScript-bestand**
 
@@ -76,7 +76,7 @@ Op dezelfde manier geldt dat als u de `ExpandToFit` optie selecteert (waarmee de
 
 >[!NOTE]
 >
->Zie de `ToPSOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over de runtime-waarden die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+>Zie de `ToPSOptionsSpec` klasseverwijzing in de [AEM Forms API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor informatie over de runtime-waarden die u kunt instellen.
 
 **Het PDF-document converteren naar een PostScript-bestand**
 
@@ -119,7 +119,7 @@ Converteer een PDF-document naar PostScript met de API (Java) voor PDF-service c
 1. Stel opties voor de uitvoering van de conversie in.
 
    * Maak een `ToPSOptionsSpec` object door de constructor ervan aan te roepen.
-   * Stel runtime-opties in door een geschikte methode aan te roepen die tot het `ToPSOptionsSpec` object behoort. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u de `ToPSOptionsSpec` methode van het object aan en geeft u een `setPsLevel` `PSLevel` opsommingswaarde door die het PostScript-niveau opgeeft. Zie de `ToPSOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over alle runtime-waarden die u kunt instellen](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+   * Stel runtime-opties in door een geschikte methode aan te roepen die tot het `ToPSOptionsSpec` object behoort. Als u bijvoorbeeld het PostScript-niveau wilt definiëren dat wordt gemaakt, roept u de `ToPSOptionsSpec` methode van het object aan en geeft u een `setPsLevel` `PSLevel` opsommingswaarde door die het PostScript-niveau opgeeft. Zie de `ToPSOptionsSpec` klasseverwijzing in de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor informatie over alle runtimewaarden die u kunt instellen.
 
 1. Converteer het PDF-document naar een PostScript-bestand.
 
@@ -127,6 +127,7 @@ Converteer een PDF-document naar PostScript met de API (Java) voor PDF-service c
 
    * Een `com.adobe.idp.Document` object dat het PDF-document vertegenwoordigt dat naar een PostScript-bestand moet worden geconverteerd.
    * Een `ToPSOptionsSpec` object dat opties voor PostScript-runtime opgeeft.
+
    De `toPS2` methode retourneert een `Document` object dat het nieuwe PostScript-document bevat.
 
 1. Sla het PostScript-bestand op.
@@ -159,12 +160,12 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (webs
 1. Maak een Convert PDF-client.
 
    * Maak een `ConvertPdfServiceClient` object met de standaardconstructor.
-   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `ConvertPdfServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -188,6 +189,7 @@ Converteer een PDF-document naar PostScript met de Convert PDF Service API (webs
 
    * Een `BLOB` object dat het PDF-document vertegenwoordigt dat naar een PostScript-bestand moet worden geconverteerd
    * Een `ToPSOptionsSpec` object dat uitvoeringsopties opgeeft
+
    Nadat de conversie is voltooid, extraheert u de binaire gegevens die het PostScript-document vertegenwoordigen door toegang te krijgen tot de `BLOB` eigenschap van het `MTOM` object. Hiermee wordt een bytearray geretourneerd die u naar een PostScript-bestand kunt schrijven.
 
 1. Sla het PostScript-bestand op.
@@ -240,7 +242,7 @@ U moet het PDF-document opvragen om het naar een afbeelding te converteren. U ku
 
 **Uitvoeringsopties instellen**
 
-U moet runtime opties instellen, zoals de afbeeldingsindeling en de resolutiewaarden. Zie de `ToImageOptionsSpec` klasseverwijzing in de API-naslaggids voor [AEM Forms voor informatie over de runtimewaarden](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).
+U moet runtime opties instellen, zoals de afbeeldingsindeling en de resolutiewaarden. Zie de `ToImageOptionsSpec` klasseverwijzing in de [AEM Forms API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor informatie over de runtimewaarden.
 
 **De PDF converteren naar een afbeelding**
 
@@ -282,6 +284,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de API (Java) voor
 
    * Maak een `ToImageOptionsSpec` object met de constructor ervan.
    * Roep de vereiste methoden aan die bij dit object horen. Stel het afbeeldingstype bijvoorbeeld in door de `setImageConvertFormat` methode aan te roepen en een `ImageConvertFormat` opsommingswaarde door te geven die het indelingstype aangeeft.
+
    >[!NOTE]
    >
    >Het instellen van de `ImageConvertFormat` opsommingswaarde is verplicht.
@@ -292,6 +295,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de API (Java) voor
 
    * Een `com.adobe.idp.Document` object dat staat voor het PDF-bestand dat moet worden geconverteerd.
    * Een `com.adobe.livecycle.converpdfservice.client.ToImageOptionsSpec` object dat de verschillende voorkeuren voor de indeling van de doelafbeelding bevat.
+
    De `toImage2` methode retourneert een `java.util.List` object dat afbeeldingen bevat. Elk element in de verzameling is een `com.adobe.idp.Document` instantie.
 
 1. Haal de afbeeldingsbestanden op uit een verzameling.
@@ -317,12 +321,12 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
 1. Maak een geconverteerde PDF-client.
 
    * Maak een `ConvertPdfServiceClient` object met de standaardconstructor.
-   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
+   * Maak een `ConvertPdfServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ConvertPDFService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Geef dit echter op `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `ConvertPdfServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `ConvertPdfServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `ConvertPdfServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -339,6 +343,7 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
 
    * Maak een `ToImageOptionsSpec` object met de constructor ervan.
    * Roep de vereiste methoden aan die bij dit object horen. Stel bijvoorbeeld het afbeeldingstype in door de `setImageConvertFormat` methode aan te roepen en een `ImageConvertFormat` opsommingswaarde door te geven die het indelingstype aangeeft.
+
    >[!NOTE]
    >
    >Het instellen van de `ImageConvertFormat` opsommingswaarde is verplicht.
@@ -347,8 +352,9 @@ Een PDF-document converteren naar een afbeeldingsindeling met de Convert PDF Ser
 
    Roep de methode van het `ConvertPDFServiceService` `toImage2` object aan en geef de volgende waarden door:
 
-   * Een `BLOB` object dat staat voor het bestand dat moet worden omgezet
+   * Een `BLOB` object dat het om te zetten bestand vertegenwoordigt
    * Een `ToImageOptionsSpec` object dat de verschillende voorkeuren voor de indeling van de doelafbeelding bevat
+
    De `toImage2` methode retourneert een `MyArrayOfBLOB` object dat de nieuwe afbeeldingsbestanden bevat.
 
 1. Haal de afbeeldingsbestanden op uit een verzameling.
