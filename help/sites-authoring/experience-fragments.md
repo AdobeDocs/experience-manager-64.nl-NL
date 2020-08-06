@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
 source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+workflow-type: tm+mt
+source-wordcount: '1246'
+ht-degree: 3%
 
 ---
 
@@ -53,7 +56,7 @@ Er moeten ervaringsfragmenten worden gebruikt:
 
 * Wanneer u AEM gebruikt als platform voor het leveren van inhoud voor derden.
 
-   * Elke oplossing die AEM als platform voor de levering van inhoud wil gebruiken
+   * Om het even welke oplossing die AEM als platform van de inhoudslevering wil gebruiken
    * Inhoud insluiten in aanraakpunten van derden
 
 * Als u ervaring hebt met verschillende variaties of uitvoeringen.
@@ -91,7 +94,7 @@ In het volgende voorbeeld ziet u de gestructureerde fragmenten van de ervaring `
 
 >[!CAUTION]
 >
->De volgende schermafbeelding is als cloudservice genomen van de WKND-site met Adobe Experience Manager.
+>De volgende schermafbeelding is als Cloud Service van de WKND-site genomen met Adobe Experience Manager.
 
 ![Mappen voor ervaringsfragmenten](assets/xf-folders.png)
 
@@ -111,70 +114,70 @@ Om een omslag voor uw Fragments van de Ervaring tot stand te brengen en te vorme
 
 >[!NOTE]
 >
->Dit is de geadviseerde methode om de **[!UICONTROL Toegestane Malplaatjes]** te specificeren, aangezien de waarden niet op verbetering zullen worden beschreven.
+>Dit is de geadviseerde methode om het te specificeren, **[!UICONTROL Allowed Templates]** aangezien de waarden niet bij verbetering zullen worden beschreven.
 
-1. Navigeer naar de map met vereiste **[!UICONTROL ervaringsfragmenten]** .
+1. Navigeer naar de gewenste **[!UICONTROL Experience Fragments]** map.
 
-1. Selecteer de map en vervolgens **[!UICONTROL Eigenschappen]**.
+1. Selecteer de map en vervolgens **[!UICONTROL Properties]**.
 
-1. Geef de reguliere expressie op voor het ophalen van de vereiste sjablonen in het veld **[!UICONTROL Toegestane sjablonen]** .
+1. Geef de reguliere expressie op voor het ophalen van de vereiste sjablonen in het **[!UICONTROL Allowed Templates]** veld.
 
    Bijvoorbeeld:
    `/conf/(.*)/settings/wcm/templates/experience-fragment(.*)?`
 
    ![Ervaar fragmenteigenschappen - Toegestane sjablonen](assets/xf-folders-templates.png)
 
-1. Selecteer **[!UICONTROL Opslaan en Sluiten]**.
+1. Selecteer **[!UICONTROL Save and Close]**.
 
 ### Vorm de Toegestane Malplaatjes voor uw Instantie {#configure-allowed-templates-instance}
 
 >[!CAUTION]
 >
->Het wordt afgeraden de **[!UICONTROL toegestane sjablonen]** met deze methode te wijzigen, omdat de opgegeven sjablonen tijdens de upgrade kunnen worden overschreven.
+>Het wordt afgeraden de sjablonen **[!UICONTROL Allowed Templates]** met deze methode te wijzigen, omdat de opgegeven sjablonen tijdens de upgrade kunnen worden overschreven.
 >
 >Gebruik dit dialoogvenster alleen ter informatie.
 
-1. Navigeer naar de vereiste **[!UICONTROL console van Fragments]** van de Ervaring.
+1. Navigeer naar de vereiste **[!UICONTROL Experience Fragments]** console.
 
-1. Selecteer **[!UICONTROL configuratieopties]**:
+1. Selecteer **[!UICONTROL Configuration options]**:
 
    ![Knop Configuratie](assets/xf-folders-18.png)
 
-1. Geef de vereiste sjablonen op in het dialoogvenster Fragmenten **[!UICONTROL voor ervaring]** configureren:
+1. Geef de vereiste sjablonen op in het **[!UICONTROL Configure Experience Fragments]** dialoogvenster:
 
    ![Fragmenten voor ervaring configureren](assets/xf-folders-19.png)
 
-1. Selecteer **[!UICONTROL Opslaan]**.
+1. Selecteer **[!UICONTROL Save]**.
 
 ## Een ervaringsfragment maken {#creating-an-experience-fragment}
 
 Een ervaringsfragment maken:
 
-1. Selecteer Fragmenten **[!UICONTROL van de]** Ervaring van de Globale Navigatie.
+1. Selecteer een optie **[!UICONTROL Experience Fragments]** in de globale navigatie.
 
    ![screen_shot_2018-04-05at92221am1](assets/screen_shot_2018-04-05at92221am1.png)
 
-1. Navigeer naar de gewenste map en selecteer **[!UICONTROL Maken]**.
+1. Navigeer naar de gewenste map en selecteer **[!UICONTROL Create]**.
 
-1. Selecteer Fragment **[!UICONTROL van de]** Ervaring om de **[!UICONTROL Create tovenaar van het Fragment]** van de Ervaring te openen.
+1. Selecteer deze optie **[!UICONTROL Experience Fragment]** om de **[!UICONTROL Create Experience Fragment]** wizard te openen.
 
-   Selecteer de vereiste **[!UICONTROL sjabloon]** en **[!UICONTROL kies Volgende]**:
+   Selecteer de gewenste **[!UICONTROL Template]** optie en **[!UICONTROL Next]** klik vervolgens op:
 
    ![xf-authoring-02](assets/xf-authoring-02.png)
 
 
-1. Voer de **[!UICONTROL eigenschappen]** voor het fragment Ervaring in.
+1. Enter the **[!UICONTROL Properties]** for your Experience Fragment.
 
-   Een **[!UICONTROL titel]** is verplicht. Als de **[!UICONTROL naam]** leeg blijft, wordt deze afgeleid van de **[!UICONTROL titel]**.
+   A **[!UICONTROL Title]** is verplicht. Als het **[!UICONTROL Name]** leeg wordt gelaten, wordt het afgeleid van het **[!UICONTROL Title]**.
 
    ![xf-authoring-03](assets/xf-authoring-03.png)
 
-1. Klik op **[!UICONTROL Maken]**.
+1. Klik op **[!UICONTROL Create]**.
 
    Er wordt een bericht weergegeven. Selecteer:
 
-   * **[!UICONTROL Gereed]** om terug te keren naar de console
-   * **[!UICONTROL Openen]** om de fragmenteditor te openen
+   * **[!UICONTROL Done]** om naar de console terug te keren
+   * **[!UICONTROL Open]** om de fragmenteditor te openen
 
 ## Uw ervaringsfragment bewerken {#editing-your-experience-fragment}
 
@@ -182,13 +185,13 @@ De Experience Fragment Editor biedt u vergelijkbare mogelijkheden als de normale
 
 De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kunt maken:
 
-1. Sleep een **[!UICONTROL categorietwitter]** vanuit de [Componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser).
+1. Sleep een bestand **[!UICONTROL Category Teaser]** vanuit de [Componentbrowser](/help/sites-authoring/author-environment-tools.md#components-browser).
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. Selecteer **[!UICONTROL Vorm](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)**van de componententoolbar.
-1. Voeg het **[!UICONTROL element]** toe en definieer desgewenst de **[!UICONTROL eigenschappen]** .
-1. Bevestig de definities met **[!UICONTROL Gereed]** (vinkje).
+1. Selecteer een optie **[!UICONTROL Configure](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** op de werkbalk van de component.
+1. Add the **[!UICONTROL Asset]** and define the **[!UICONTROL Properties]** as required.
+1. Bevestig de definities met **[!UICONTROL Done]** (vinkje).
 1. Voeg desgewenst meer componenten toe.
 
 ## Een ervaringsfragmentvariatie maken {#creating-an-experience-fragment-variation}
@@ -196,25 +199,26 @@ De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kun
 U kunt variaties van uw Fragment van de Ervaring tot stand brengen, afhankelijk van uw behoeften:
 
 1. Open het fragment om het te [bewerken](/help/sites-authoring/experience-fragments.md#editing-your-experience-fragment).
-1. Open het tabblad **[!UICONTROL Variaties]** .
+1. Open het **[!UICONTROL Variations]** tabblad.
 
    ![xf-authoring-06](assets/xf-authoring-06.png)
 
 1. **Met Maken** kunt u:
 
-   * **[!UICONTROL Variatie]**
-   * **[!UICONTROL Variatie als live-kopie]**.
+   * **[!UICONTROL Variation]**
+   * **[!UICONTROL Variation as live-copy]**.
 
 1. Definieer de vereiste eigenschappen:
 
-   * **[!UICONTROL Sjabloonmodel]**
-   * **[!UICONTROL Titel]**
-   * **[!UICONTROL Naam]**; indien niet ingevuld, wordt het afgeleid van de titel
-   * **[!UICONTROL Beschrijving]**
-   * **[!UICONTROL Variatietags]**
-   ![xf-authoring-06](assets/xf-authoring-07.png)
+   * **[!UICONTROL Template]**
+   * **[!UICONTROL Title]**
+   * **[!UICONTROL Name]**; indien niet ingevuld, wordt het afgeleid van de titel
+   * **[!UICONTROL Description]**
+   * **[!UICONTROL Variation tags]**
 
-1. Bevestig met **[!UICONTROL Gereed]** (vinkpictogram), de nieuwe variant wordt weergegeven in het paneel:
+   ![xf-authoring-07](assets/xf-authoring-07.png)
+
+1. Bevestig met **[!UICONTROL Done]** (tik pictogram), de nieuwe variatie zal in het paneel worden getoond:
 
    ![xf-authoring-08](assets/xf-authoring-08.png)
 
@@ -233,7 +237,8 @@ U kunt het fragment van de Ervaring nu gebruiken wanneer het ontwerpen van uw pa
 1. Voeg het daadwerkelijke fragment van de Ervaring aan de componenteninstantie toe; ofwel:
 
    * Sleep het vereiste fragment vanuit de middelenbrowser en zet het neer op de component
-   * Selecteer **[!UICONTROL Vorm]** van de componententoolbar en specificeer het te gebruiken fragment, bevestig met **Gedaan** (tikken)
+   * Select **[!UICONTROL Configure]** from the component toolbar and specify the fragment to use, confirm with **Done** (tick)
+
    ![xf-authoring-10](assets/xf-authoring-10.png)
 
    >[!NOTE]
@@ -252,7 +257,7 @@ Een nieuw bouwblok maken:
 
    ![xf-authoring-12](assets/xf-authoring-12.png)
 
-1. Selecteer op de werkbalk Componenten de optie **[!UICONTROL Omzetten in bouwsteen]**:
+1. From the components toolbar, select **[!UICONTROL Convert to building block]**:
 
    ![xf-authoring-13-icon](assets/xf-authoring-13-icon.png)
 
@@ -260,19 +265,19 @@ Een nieuw bouwblok maken:
 
    ![xf-authoring-13](assets/xf-authoring-13.png)
 
-1. Voer de naam van het **[!UICONTROL bouwblok]** in en bevestig dit met **[!UICONTROL Omzetten]**:
+1. Voer de naam van het **[!UICONTROL Building Block]** object in en bevestig het met **[!UICONTROL Convert]**:
 
    ![xf-authoring-14](assets/xf-authoring-14.png)
 
-1. Het **bouwblok** wordt weergegeven op het tabblad en kan worden geselecteerd in het alineasysteem:
+1. De **bouwsteen** wordt weergegeven op het tabblad en kan worden geselecteerd in het alineasysteem:
 
    ![xf-authoring-15](assets/xf-authoring-15.png)
 
 ### Een bouwblok beheren {#managing-a-building-block}
 
-Uw bouwsteen is zichtbaar in de Blokken van de **[!UICONTROL Bouwstijl]** tabel. Voor elk blok zijn de volgende acties beschikbaar:
+De bouwsteen is zichtbaar in het **[!UICONTROL Building Blocks]** lusje. Voor elk blok zijn de volgende acties beschikbaar:
 
-* Ga naar stramien: de hoofdvariant openen op een nieuw tabblad
+* Ga naar master: open de mastervariatie op een nieuw tabblad
 * Naam wijzigen
 * Verwijderen
 
