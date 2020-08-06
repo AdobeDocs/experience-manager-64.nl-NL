@@ -1,6 +1,6 @@
 ---
-title: Aangepaste formulieren synchroniseren met XFA-formuliersjablonen
-seo-title: Aangepaste formulieren synchroniseren met XFA-formuliersjablonen
+title: Adaptieve Forms synchroniseren met XFA-formuliersjablonen
+seo-title: Adaptieve Forms synchroniseren met XFA-formuliersjablonen
 description: Aangepaste formulieren synchroniseren met XFA/XDP-bestanden.
 seo-description: Aangepaste formulieren synchroniseren met XFA/XDP-bestanden.
 uuid: 6613a9bf-c862-4c18-a5b5-f574d301e936
@@ -9,11 +9,14 @@ topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
 
-# Aangepaste formulieren synchroniseren met XFA-formuliersjablonen {#synchronizing-adaptive-forms-with-xfa-form-templates}
+# Adaptieve Forms synchroniseren met XFA-formuliersjablonen {#synchronizing-adaptive-forms-with-xfa-form-templates}
 
 ## Inleiding {#introduction}
 
@@ -21,11 +24,11 @@ U kunt een adaptief formulier maken op basis van een XFA-formuliersjabloon ( `*.
 
 U kunt velden uit het XDP-bestand opnieuw gebruiken in het aangepaste formulier. Deze velden worden gebonden velden genoemd. De eigenschappen van de gebonden velden (zoals scripts, labels en weergave-indeling) worden uit het XDP-bestand gekopieerd. U kunt er ook voor kiezen de waarde van sommige van deze eigenschappen te overschrijven.
 
-Met AEM Forms kunt u ervoor zorgen dat de velden van de adaptieve formulieren gesynchroniseerd blijven met eventuele wijzigingen die later worden aangebracht in de bijbehorende velden in het XDP-bestand. In dit artikel wordt uitgelegd hoe u deze synchronisatie kunt inschakelen.
+AEM Forms biedt een manier om u te helpen de velden van de adaptieve formulieren synchroon te houden met alle wijzigingen die later worden aangebracht in de corresponderende velden in het XDP-bestand. In dit artikel wordt uitgelegd hoe u deze synchronisatie kunt inschakelen.
 
 ![U kunt velden van een XFA-formulier naar een adaptief formulier slepen](assets/drag-drop-xfa.gif.gif)
 
-In de ontwerpomgeving van AEM Forms kunt u velden van een XFA-formulier (links) naar een adaptief formulier slepen (rechts)
+In de AEM Forms-ontwerpomgeving kunt u velden van een XFA-formulier (links) naar een adaptief formulier slepen (rechts)
 
 ## Vereisten {#prerequisites}
 
@@ -41,7 +44,7 @@ Als u de elementen in het voorbeeld in het artikel wilt gebruiken, downloadt u h
 
 In het artikel wordt een voorbeeld gebruikt om te tonen hoe u het aangepaste formulier synchroniseert met een bijgewerkte XFA-formuliersjabloon. De in het voorbeeld gebruikte middelen zijn beschikbaar in een pakket dat u kunt downloaden vanuit de sectie [Downloads](/help/forms/using/synchronizing-adaptive-forms-xfa.md#p-downloads-p) in dit artikel.
 
-Nadat u het pakket hebt geüpload, kunt u deze elementen weergeven in de gebruikersinterface van AEM-formulieren.
+Nadat u het pakket hebt geüpload, kunt u deze elementen weergeven in de gebruikersinterface van AEM Forms.
 
 Installeer het pakket met behulp van pakketbeheer: `https://<server>:<port>/crx/packmgr/index.jsp`
 
@@ -64,19 +67,19 @@ Het pakket bevat de volgende elementen:
 
 ## Wijzigingen detecteren in XDP-bestand {#detecting-changes-in-xdp-file}
 
-Telkens wanneer er een wijziging optreedt in een XDP-bestand of een fragment, geeft de interface van AEM-formulieren alle adaptieve formulieren weer die zijn gebaseerd op het XDP-bestand of het fragment.
+Telkens wanneer er een wijziging optreedt in een XDP-bestand of een fragment, geeft de gebruikersinterface van AEM Forms alle adaptieve formulieren weer die zijn gebaseerd op het XDP-bestand of het fragment.
 
-Nadat u een XDP-bestand hebt bijgewerkt, moet u het opnieuw uploaden in de gebruikersinterface van AEM-formulieren om de wijzigingen te laten markeren.
+Nadat u een XDP-bestand hebt bijgewerkt, moet u het opnieuw uploaden in de AEM Forms-gebruikersinterface om de wijzigingen te kunnen markeren.
 
 Laten we het `sample-form.xdp` bestand bijvoorbeeld als volgt bijwerken:
 
 1. Navigeer naar Uw referenties `https://<server>:<port>/projects.html.` invoeren als u hierom wordt gevraagd.
-1. Klik op het tabblad Formulieren aan de linkerkant.
+1. Klik op het tabblad Forms aan de linkerkant.
 1. Download het `sample-form.xdp` bestand op uw lokale computer. Het XDP-bestand wordt gedownload als een `.zip` bestand dat kan worden geëxtraheerd met elk hulpprogramma voor het decomprimeren van bestanden.
 
 1. Open het `sample-form.xdp` bestand en wijzig de titel van het veld TextField1 van **Tekstveld** in **Mijn tekstveld**.
 
-1. Upload het `sample-form.xdp` bestand weer naar de gebruikersinterface van AEM-formulieren.
+1. Upload het `sample-form.xdp` bestand weer naar de gebruikersinterface van AEM Forms.
 
 Als een XDP-bestand wordt bijgewerkt, wordt in de editor een pictogram weergegeven wanneer u de adaptieve formulieren bewerkt op basis van het XDP-bestand. Dit pictogram geeft aan dat het adaptieve formulier niet meer synchroon is met het XDP-bestand. Zie het pictogram naast in het zijpaneel in de volgende afbeelding.
 
@@ -84,7 +87,8 @@ Als een XDP-bestand wordt bijgewerkt, wordt in de editor een pictogram weergegev
 
 ## Aangepaste formulieren synchroniseren met het nieuwste XDP-bestand {#synchronizing-adaptive-forms-with-the-latest-xdp-file}
 
-Wanneer een adaptief formulier dat niet meer synchroon is met het XDP-bestand de volgende keer wordt geopend voor ontwerpen, wordt het volgende bericht weergegeven: Het **schema/formuliersjabloon voor het adaptieve formulier is bijgewerkt.`Click Here`om het met de nieuwe versie opnieuw te baseren.**
+Wanneer een adaptief formulier dat niet meer synchroon is met het XDP-bestand de volgende keer wordt geopend voor ontwerpen, wordt het volgende bericht weergegeven:
+**Schema/formuliersjabloon voor het adaptieve formulier is bijgewerkt.`Click Here`om het met de nieuwe versie opnieuw te baseren.**
 
 Wanneer u op het bericht klikt, worden de velden in het adaptieve formulier gesynchroniseerd met de bijbehorende velden in het XDP-bestand.
 
@@ -104,7 +108,7 @@ Als u de eigenschappen in het adaptieve voorbeeldformulier wilt bijwerken, klikt
 >
 >Het label AF Numeriek veld is niet gewijzigd omdat u deze eigenschap in het dialoogvenster Eigenschappen van component hebt overschreven, zoals wordt beschreven in Inhoud [toevoegen aan adaptieve formulieren](#p-add-content-to-adaptive-form-br-p).
 
-### Nieuwe velden van XDP-bestand toevoegen aan adaptief formulier {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
+### Nieuwe velden van XDP-bestand toevoegen aan adaptief formulier   {#adding-new-fields-from-xdp-file-to-adaptive-form-nbsp}
 
 Alle velden die later aan het oorspronkelijke XDP-bestand worden toegevoegd, worden weergegeven op het tabblad Formulierhiërarchie en u kunt deze nieuwe velden naar het aangepaste formulier slepen.
 
@@ -117,7 +121,7 @@ Als een veld dat eerder naar een adaptief formulier is gekopieerd, uit een XDP-b
 De volgende stappen illustreren deze gebruiksstroom voor de elementen in het voorbeeld dat in dit artikel wordt gebruikt:
 
 1. Werk het `sample-form.xdp` bestand bij en verwijder NumericField1.
-1. Het `sample-form.xdp` bestand uploaden in de gebruikersinterface van AEM-formulieren
+1. Het `sample-form.xdp` bestand uploaden in de gebruikersinterface van AEM Forms
 1. Open het `sample-xfa-af` aangepaste formulier voor ontwerpen. Het volgende foutbericht wordt weergegeven: Schema/formuliersjabloon voor het adaptieve formulier is bijgewerkt. `Click Here` om het met de nieuwe versie opnieuw te baseren.
 
 1. Klik op de koppeling (aangeduid als &quot; `Click Here`&quot;) in het bericht. Er wordt een foutbericht weergegeven met de mededeling dat het veld niet meer bestaat in het XDP-bestand.
@@ -130,7 +134,7 @@ Het veld dat is verwijderd, wordt ook gemarkeerd met een pictogram om een fout i
 
 >[!NOTE]
 >
->De velden in het adaptieve formulier met een onjuiste binding (een ongeldige `bindRef` waarde in het dialoogvenster Bewerken) worden ook beschouwd als verwijderde velden. Als de auteur deze fouten niet herstelt en het adaptieve formulier niet publiceert, wordt het veld behandeld als een normaal, niet-gebonden adaptief formulierveld en wordt het veld opgenomen in de niet-gebonden sectie van het XML-uitvoerbestand.
+>De velden in het adaptieve formulier met een onjuiste binding (een ongeldige `bindRef` waarde in het dialoogvenster Bewerken) worden ook beschouwd als verwijderde velden. Als de auteur deze fouten niet corrigeert en het adaptieve formulier niet publiceert, wordt het veld behandeld als een normaal, niet-gebonden adaptief formulierveld en wordt het veld opgenomen in de niet-gebonden sectie van het XML-uitvoerbestand.
 
 ## Downloads {#downloads}
 
