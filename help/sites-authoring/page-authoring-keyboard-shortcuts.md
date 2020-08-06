@@ -1,8 +1,8 @@
 ---
 title: Sneltoetsen bij het bewerken van pagina's
 seo-title: Sneltoetsen bij het bewerken van pagina's
-description: Er zijn verschillende sneltoetsen beschikbaar in AEM, waaronder enkele voor paginabewerking
-seo-description: Er zijn verschillende sneltoetsen beschikbaar in AEM, waaronder enkele voor paginabewerking
+description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
+seo-description: In AEM zijn verschillende sneltoetsen beschikbaar, waaronder enkele voor paginabewerking
 uuid: bf9428fc-73b5-499f-b9ed-62fa72272126
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 6a3c69b5-6df6-4b8f-afa4-7d3e9dd458b5
 translation-type: tm+mt
 source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+workflow-type: tm+mt
+source-wordcount: '238'
+ht-degree: 2%
 
 ---
 
 
 # Sneltoetsen bij het bewerken van pagina&#39;s{#keyboard-shortcuts-when-editing-pages}
 
-Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op het [gebruik van consoles](/help/sites-authoring/keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing bij het bewerken van pagina&#39;s, andere op het [gebruik van consoles](/help/sites-authoring/keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De [wijzigingstoetsen](/help/sites-authoring/page-authoring-keyboard-shortcuts.md#os-specific-modifier-keys) die vereist zijn voor AEM-sneltoetsen variëren afhankelijk van het besturingssysteem.
+>Welke [wijzigingstoetsen](/help/sites-authoring/page-authoring-keyboard-shortcuts.md#os-specific-modifier-keys) vereist zijn voor AEM sneltoetsen, is afhankelijk van het besturingssysteem.
 
 ## Sneltoetsen bewerken {#editing-keyboard-shortcuts}
 
@@ -41,7 +44,7 @@ Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassin
 
 >[!NOTE]
 >
-> &amp;ast;Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, is de `Ctrl-Shift-m` sneltoets niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
+>&amp;ast; Wanneer de gebruiker in de voorvertoningsmodus begint te communiceren met de pagina, is de `Ctrl-Shift-m` sneltoets niet meer beschikbaar. De sneltoets wordt pas weer beschikbaar als de gebruiker op de bovenste editor-balk klikt of naar de modus Bewerken teruggaat.
 
 Er zijn verschillende sneltoetsen beschikbaar voor desktopgebruikers wanneer ze de [consoles](/help/sites-authoring/keyboard-shortcuts.md)gebruiken.
 
