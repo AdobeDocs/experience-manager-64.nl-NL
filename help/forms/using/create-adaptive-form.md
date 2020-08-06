@@ -8,6 +8,9 @@ uuid: 0010d274-a683-499e-9fa6-ce355d7898a0
 discoiquuid: 55c08940-8c25-4938-8e49-25bce20aaf22
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1416'
+ht-degree: 1%
 
 ---
 
@@ -37,13 +40,13 @@ Aan het einde van het artikel hebt u een formulier dat vergelijkbaar is met het 
 
 ## Stap 1: Het adaptieve formulier maken {#step-create-the-adaptive-form}
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Formulieren en documenten**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
+1. Meld u aan bij de AEM auteur en navigeer naar **Adobe Experience Manager** > **Forms** > **Forms &amp; Documents**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments).
 1. Tik op **Maken** en selecteer **Adaptief formulier**. Er verschijnt een optie voor het selecteren van een sjabloon. Tik op de sjabloon **Blanco** om deze te selecteren en tik op **Volgende**.
 
 1. Er verschijnt een optie voor het **toevoegen van eigenschappen** . De velden **Titel** en **Naam** zijn verplicht:
 
-   * **** Titel: Geef `Add new or update shipping address` op in het veld Titel. In het titelveld wordt de weergavenaam van het formulier opgegeven. Met de titel kunt u het formulier identificeren in de gebruikersinterface van AEM Forms.
-   * **** Naam: Geef `shipping-address-add-update-form` op in het veld Naam. In het veld Naam wordt de naam van het formulier opgegeven. Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
+   * **Titel:** Geef `Add new or update shipping address` op in het veld Titel. In het titelveld wordt de weergavenaam van het formulier opgegeven. Met de titel kunt u het formulier identificeren in de gebruikersinterface van AEM Forms.
+   * **Naam:** Geef `shipping-address-add-update-form` op in het veld Naam. In het veld Naam wordt de naam van het formulier opgegeven. Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
 
 1. Tik op **Maken**. Er wordt een adaptief formulier gemaakt en er wordt een dialoogvenster weergegeven om het formulier te openen voor bewerking. Tik op **Openen** om het nieuwe formulier te openen op een nieuw tabblad. Het formulier wordt geopend voor bewerking. De zijbalk wordt ook weergegeven om het nieuwe formulier aan te passen aan de behoeften.
 
@@ -53,7 +56,7 @@ Aan het einde van het artikel hebt u een formulier dat vergelijkbaar is met het 
 
 ## Stap 2: Kop- en voettekst toevoegen {#step-add-header-and-footer}
 
-AEM Forms biedt vele componenten om informatie op een adaptief formulier weer te geven. De componenten Koptekst en Voettekst geven een formulier een consistent uiterlijk. Een koptekst bevat doorgaans het logo van een bedrijf, de titel van het formulier en het overzicht. Een voettekst bevat doorgaans copyrightinformatie en koppelingen naar andere pagina&#39;s.
+AEM Forms biedt veel componenten om informatie op een adaptief formulier weer te geven. De componenten Koptekst en Voettekst geven een formulier een consistent uiterlijk. Een koptekst bevat doorgaans het logo van een bedrijf, de titel van het formulier en het overzicht. Een voettekst bevat doorgaans copyrightinformatie en koppelingen naar andere pagina&#39;s.
 
 1. Tik ![in-/uitschakelen van zijpaneel](assets/toggle-side-panel.png) > ![vergroten](assets/treeexpandall.png). De componentbrowser wordt geopend. Sleep de component **Koptekst** van de deelbrowser naar het aangepaste formulier.
 1. Tik op **logo**. De werkbalk wordt weergegeven. Tik op ![aaem_6_3_edit](assets/aem_6_3_edit.png) op de werkbalk, typ **We.Retail** en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -173,7 +176,7 @@ Met de volgende stappen kunt u de handeling voor het verzenden van e-mail config
    | Van | `donotreply@weretail.com` |
    | Naar | `${customer_Email}` |
    | Subject | Bevestiging: Je hebt een verzendadres toegevoegd op de website We.Retail. |
-   | E-mailsjabloon | Hallo, het volgende adres wordt toegevoegd als het verzendadres voor je account: `${customer_Name}`<br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Met alle respect, wij.Retail |
+   | E-mailsjabloon | Hallo, het volgende adres wordt toegevoegd als het verzendadres voor je account: `${customer_Name}`<br>`${customer_Name}`, `${customer_Shipping_Address}`, `${customer_State}`, `${customer_ZIPCode}`<br> Regels, Wij.Retail |
    | Bijlagen opnemen | Ingeschakeld |
 
    Uw formulier is klaar. U kunt nu een voorbeeld van het formulier bekijken en de functionaliteit testen. Als u de naam hebt gebruikt die in de zelfstudie wordt genoemd en u het formulier opent op de computer waarop de AEM Forms-server wordt uitgevoerd, is het formulier beschikbaar op [http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html](http://localhost:4502/editor.html/content/forms/af/shipping-address-add-update-form.html).
