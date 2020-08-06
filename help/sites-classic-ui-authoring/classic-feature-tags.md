@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: c117b9d1-e4ae-403f-8619-6e48d424a761
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '758'
+ht-degree: 0%
 
 ---
 
@@ -29,11 +32,11 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 1. Georganiseerde tags toepassen: met de mogelijkheid om codes en subcodes te maken, wordt het mogelijk volledige taxonomische systemen uit te drukken, met inbegrip van termen, subtermen en hun relaties. Zo kunt u een tweede (of derde) inhoudshiërarchie maken die parallel is aan de officiële inhoudshiërarchie.
 1. Gecontroleerde labeling: U kunt de codering beheren door machtigingen toe te passen op tags en/of naamruimten om het maken en de toepassing van tags te beheren.
 1. Flexibele tags: Tags hebben vele namen en gezichten: tags, taxonomie termen, categorieën, labels en nog veel meer. Zij zijn flexibel in hun inhoudsmodel en in de manier waarop zij kunnen worden gebruikt; bijvoorbeeld bij het schetsen van doeldemografie, het categoriseren en classificeren van inhoud of het creëren van een secundaire inhoudshiërarchie.
-1. Verbeterd zoeken: De standaardzoekcomponent in AEM bevat over het algemeen gemaakte tags en toegepaste tags waarop filters kunnen worden toegepast om de resultaten te beperken tot de relevante waarden.
+1. Verbeterd zoeken: de standaardzoekcomponent in AEM bevat over het algemeen gemaakte tags en toegepaste tags waarop filters kunnen worden toegepast om de resultaten te beperken tot die welke relevant zijn.
 1. SEO inschakelen: tags die zijn toegepast als pagina-eigenschappen, worden automatisch weergegeven in de tags van de pagina, zodat deze zichtbaar zijn voor zoekprogramma&#39;s.
 1. Eenvoudig, geavanceerd: U kunt eenvoudig tags maken op basis van een woord en een knop. Daarna kunt u een titel, beschrijving en een onbeperkt label toevoegen om meer semantiek aan de tag toe te voegen.
-1. Kernconsistentie: het coderingssysteem is een kernonderdeel van AEM en wordt door alle AEM-mogelijkheden gebruikt om inhoud te categoriseren. Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
-1. Combineert structuur en flexibiliteit: AEM is ideaal voor het werken met gestructureerde informatie, door het nesten van pagina&#39;s en wegen. Het is even krachtig wanneer het werken met ongestructureerde informatie, toe te schrijven aan de ingebouwde full-text onderzoek. Tags combineren de sterke punten van structuur en flexibiliteit.
+1. Kernconsistentie: het coderingssysteem is een kernonderdeel van AEM en wordt door alle AEM gebruikt om inhoud te categoriseren . Verder is de API voor codering beschikbaar voor ontwikkelaars die toepassingen met codering willen maken die toegang hebben tot dezelfde taxonomieën.
+1. Combineert structuur en flexibiliteit: AEM is ideaal voor het werken met gestructureerde informatie, door het nesten van pagina&#39;s en paden. Het is even krachtig wanneer het werken met ongestructureerde informatie, toe te schrijven aan de ingebouwde full-text onderzoek. Tags combineren de sterke punten van structuur en flexibiliteit.
 
 Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor elementen ontwerpt, moet u rekening houden met de lichte en toegankelijke manier waarop u tags kunt toewijzen.
 
@@ -41,7 +44,7 @@ Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor eleme
 
 In de auteursomgeving, kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in het gebied van **Markeringen/Trefwoorden** in te gaan.
 
-Als u [vooraf gedefinieerde codes](/help/sites-administering/tags.md)wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** de `Tags/Keywords` veldkeuzelijst om een optie te selecteren in de lijst met toegestane codes voor de pagina. Het tabblad **Standaardcodes** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` voorvoegsel is voor de taxonomie.
+Als u [vooraf gedefinieerde codes](/help/sites-administering/tags.md)wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** de `Tags/Keywords` veldkeuzelijst om een optie te selecteren in de lijst met toegestane codes voor de pagina. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
