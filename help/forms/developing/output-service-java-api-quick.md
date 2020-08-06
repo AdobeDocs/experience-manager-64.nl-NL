@@ -30,7 +30,7 @@ Java API Quick Start (SOAP) is beschikbaar voor de Output-service.
 
 [Snel starten (SOAP-modus): Documenten doorgeven aan de uitvoerservice met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-documents-to-the-output-service-using-the-java-api)
 
-[Snel starten (SOAP-modus): Een document in de gegevensopslagruimte AEM Forms doorgeven aan de uitvoerservice met behulp van de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
+[Snel starten (SOAP-modus): Een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)
 
 [Snel starten (SOAP-modus): Een PDF-document maken op basis van fragmenten met de Java API](#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api)
 
@@ -44,11 +44,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de Output-service.
 
 [Snel starten (SOAP-modus): Een PDF-document transformeren met de Java API](output-service-java-api-quick.md#quick-start-soap-mode-transforming-a-pdf-document-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle Beginnen die in Programmering met vormen worden gevestigd AEM zijn gebaseerd op het werkende systeem van de Server van Vormen. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
+>Quick Start-programma&#39;s in Programming met AEM formulieren zijn gebaseerd op het besturingssysteem Forms Server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 
 ## Snel starten (SOAP-modus): Een PDF-document maken met de Java API {#quick-start-soap-mode-creating-a-pdf-document-using-the-java-api}
