@@ -1,14 +1,17 @@
 ---
 title: Pagina-nulinhoud wijzigen in Designer
 seo-title: Pagina-nulinhoud wijzigen in Designer
-description: Weet u hoe u het bericht kunt wijzigen dat wordt weergegeven op pagina Nul van een XFA PDF wanneer u het weergeeft in een niet-Adobe PDF-viewer?
-seo-description: Weet u hoe u het bericht kunt wijzigen dat wordt weergegeven op pagina Nul van een XFA PDF wanneer u het weergeeft in een niet-Adobe PDF-viewer?
+description: Weet u hoe u het bericht kunt wijzigen dat wordt weergegeven op Pagina Nul van een XFA PDF wanneer u het weergeeft in een niet-Adobe PDF viewer?
+seo-description: Weet u hoe u het bericht kunt wijzigen dat wordt weergegeven op Pagina Nul van een XFA PDF wanneer u het weergeeft in een niet-Adobe PDF viewer?
 uuid: 5697f203-bb24-437d-a692-bc4bc2609b88
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f458054e-885c-4c7a-afcd-ad1e4465e0c1
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Pagina-inhoud nul wordt standaard weergegeven wanneer een niet-Adobe PDF-viewer,
 
 Met de AEM Forms Feature Pack 1-versie van Designer kunt u het bericht wijzigen dat wordt weergegeven op Pagina Nul. Voer de volgende stappen uit om het bericht Pagina nul te wijzigen:
 
-1. Zorg ervoor dat de versie van Designer van AEM Forms Feature Pack 1 is geïnstalleerd. U kunt de versie controleren van het ongeveer scherm van ontwerper.
+1. Zorg ervoor dat u de AEM Forms Feature Pack 1-versie van Designer hebt geïnstalleerd. U kunt de versie controleren van het ongeveer scherm van ontwerper.
 
 1. Open het formulier waarvoor u de inhoud Pagina nul wilt wijzigen.
 
