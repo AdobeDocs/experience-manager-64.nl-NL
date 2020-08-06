@@ -1,8 +1,8 @@
 ---
-title: 'Verschil tussen functies in HTML5-formulieren en PDF-formulieren '
-seo-title: 'Verschil tussen functies in HTML5-formulieren en PDF-formulieren '
-description: Functie wordt ondersteund in HTML5-formulieren en PDF-formulieren
-seo-description: Functie wordt ondersteund in HTML5-formulieren en PDF-formulieren
+title: 'Verschil tussen functies in HTML5-formulieren en PDF forms '
+seo-title: 'Verschil tussen functies in HTML5-formulieren en PDF forms '
+description: Functie wordt ondersteund in HTML5-formulieren en -PDF forms
+seo-description: Functie wordt ondersteund in HTML5-formulieren en -PDF forms
 uuid: b0a96da5-31d3-4f99-b100-91ad51736ffb
 contentOwner: robhagat
 content-type: reference
@@ -11,19 +11,22 @@ topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 2%
 
 ---
 
 
-# Verschil tussen functies in HTML5-formulieren en PDF-formulieren {#feature-differentiation-between-html-forms-and-pdf-forms}
+# Verschil tussen functies in HTML5-formulieren en PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
-In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor HTML5-formulieren en PDF-formulieren:
+In de volgende tabel vindt u ondersteuning van de functies die worden geboden voor HTML5-formulieren en -PDF forms:
 
 <table> 
  <tbody>
   <tr>
    <th>Functie</th> 
-   <th>HTML5-formulieren</th> 
+   <th>HTML5 Forms</th> 
    <th>PDF</th> 
   </tr>
   <tr>
@@ -48,7 +51,7 @@ In de volgende tabel vindt u ondersteuning voor functies die worden geboden voor
   </tr>
   <tr>
    <td>Paginering<br /> </td> 
-   <td><p>Een HTML5-formulier wordt opgedeeld in deelvensters en vakken zodat het er net zo uitziet als PDF-formulieren. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier is verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen en wordt er geen lege ruimte (spatie) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier verborgen wordt verwijderd of gemarkeerd, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td> 
+   <td><p>Een HTML5-formulier is onderverdeeld in deelvensters en vakken, zodat het er net zo uitziet als PDF forms. De grootte van de pagina wordt dynamisch berekend. Als alle inhoud van een pagina in een HTML5-formulier is verwijderd of gemarkeerd als verborgen, wordt de lege pagina verborgen en wordt er geen lege ruimte (spatie) weergegeven tussen pagina's boven en onder de lege pagina.</p> <p>Als gegevens worden samengevoegd of scripts inhoud aan een pagina toevoegen, wordt de lengte van de pagina aangepast aan de nieuwe inhoud. Er worden geen nieuwe pagina's aan het formulier toegevoegd voor de nieuwe inhoud. </p> <p><strong>Opmerking:</strong> Wanneer alle inhoud van een pagina in een HTML5-formulier verborgen wordt verwijderd of gemarkeerd, blijft de lege pagina (lege ruimte) zichtbaar tussen de eerste en de tweede pagina, maar niet tussen andere pagina's.</p> </td> 
    <td>Paginering in PDF is afhankelijk van samengevoegde gegevensinhoud of van gebruikersinhoud en het aantal pagina's wordt op basis daarvan verhoogd/verlaagd.</td> 
   </tr>
   <tr>
