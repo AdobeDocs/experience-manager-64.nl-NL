@@ -1,8 +1,8 @@
 ---
-title: Uw Adobe Mobile Services Cloud Service configureren
-seo-title: Uw Adobe Mobile Services Cloud Service configureren
-description: Volg deze pagina om uw Adobe Mobile Services Cloud Service te configureren.
-seo-description: Volg deze pagina om uw Adobe Mobile Services Cloud Service te configureren.
+title: Uw Adobe Mobile Services-Cloud Service configureren
+seo-title: Uw Adobe Mobile Services-Cloud Service configureren
+description: Volg deze pagina om uw Adobe Mobiele Cloud Service van de Diensten te vormen.
+seo-description: Volg deze pagina om uw Adobe Mobiele Cloud Service van de Diensten te vormen.
 uuid: 21fe5b24-dc4d-4ee4-9e7f-ed4783baf276
 contentOwner: User
 content-type: reference
@@ -12,15 +12,18 @@ discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 0%
 
 ---
 
 
-# Uw Adobe Mobile Services Cloud Service configureren {#configure-your-adobe-mobile-services-cloud-service}
+# Uw Adobe Mobile Services-Cloud Service configureren {#configure-your-adobe-mobile-services-cloud-service}
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 De **Mobile Metrics Tile** op het bevelcentrum verstrekt analyses in real time voor uw mobiele toepassing.
 
@@ -41,13 +44,13 @@ Adobe Mobile Analytics SDK biedt het volgende:
 
 ![chlimage_1-22](assets/chlimage_1-22.png)
 
-Metrische tegel in AEM Command Center
+Metrische tegel AEM Command Center
 
-## Cloudservice configureren {#configuring-the-cloud-service}
+## De Cloud Service configureren {#configuring-the-cloud-service}
 
-Als u Adobe Mobile Services Analytics wilt gebruiken, moet u de AEM Mobile Analytics Cloud Service configureren met uw Adobe Analytics-accountgegevens.
+Als u gebruik wilt maken van Adobe Mobile Services Analytics, moet u de AEM Mobile Analytics Cloud Service configureren met uw Adobe Analytics-accountgegevens.
 
-1. Klik op het pictogram aan de rechterbovenzijde om de Cloud Services toe te voegen of te bewerken vanuit de tegel **Cloud Services** beheren op het dashboard voor de app.
+1. Klik op het pictogram rechtsboven om de Cloud Services uit het **element Cloud Services** beheren van het dashboard van de app toe te voegen of te bewerken.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
