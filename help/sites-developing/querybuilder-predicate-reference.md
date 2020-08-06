@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '2323'
+ht-degree: 2%
 
 ---
 
@@ -58,9 +61,11 @@ Ondersteunt facetextractie. Hiermee worden emmers voor elke `true` of `false` wa
 
 #### Eigenschappen {#properties}
 
-* **boolproperty**, bijvoorbeeld `myFeatureEnabled` of `jcr:content/myFeatureEnabled`
+* **boolproperty** relatief pad naar eigenschap, bijvoorbeeld 
+`myFeatureEnabled` or `jcr:content/myFeatureEnabled`
 
-* **value** value to check property for, &quot; `true`&quot; or &quot; `false`&quot;
+* **value** value to check property for, &quot; 
+`true`&quot; or &quot; `false`&quot;
 
 ### contentfragment {#contentfragment}
 
@@ -97,7 +102,7 @@ Dit is een voorspelling die alleen kan worden gefilterd en kan geen zoekindex ge
 ### daterange {#daterange}
 
 Hiermee worden de JCR-DATE-eigenschappen vergeleken met een datum-/tijdinterval. Dit gebruikt ISO8601\
-notatie voor datums en tijden ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) en staat ook gedeeltelijke vertegenwoordigingen toe, zoals `YYYY-MM-DD`. Het tijdstempel kan ook worden opgegeven als het aantal milliseconden dat is verstreken sinds 1970 in de UTC-tijdzone, de unieke tijdnotatie.
+notatie voor datums en tijden ( `YYYY-MM-DDTHH:mm:ss.SSSZ`) en staat ook gedeeltelijke vertegenwoordigingen toe, zoals `YYYY-MM-DD`. U kunt de tijdstempel ook opgeven als het aantal milliseconden dat is verstreken sinds 1970 in de UTC-tijdzone, de unieke tijdnotatie.
 
 U kunt zoeken naar iets tussen twee tijdstempels, alles wat nieuwer of ouder is dan een bepaalde datum, en u kunt ook kiezen tussen inclusieve en open intervallen.
 
@@ -384,7 +389,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 * **lowerBound**
 
-   onderaan gebonden om eigenschap te controleren voor
+   ondergrens om eigenschap te controleren voor
 
 * **lowerOperation**
 
@@ -496,7 +501,8 @@ Filteren wordt niet ondersteund. Biedt geen ondersteuning voor facetextractie.
 
 * **gelijkaardig** absolute weg aan de knoop waarvoor om gelijkaardige knopen te vinden
 
-* **local** a relative path to a descendant node or `.` for the current node (optional, default is &quot; `.`&quot;)
+* **lokaal** een relatief pad naar een afstammend knooppunt of 
+`.` voor het huidige knooppunt (optioneel, standaard is &quot; `.`&quot;)
 
 ### tag {#tag}
 
@@ -556,7 +562,7 @@ Biedt geen ondersteuning voor facetextractie.
 
 * **lang**
 
-   alleen in een bepaalde gelokaliseerde tagtitel zoeken (bijvoorbeeld &quot; `de`&quot;)
+   om alleen in een bepaalde gelokaliseerde tagtitel te zoeken (bijvoorbeeld &quot; `de`&quot;)
 
 * **all**
 
