@@ -1,8 +1,8 @@
 ---
 title: Modi uitvoeren
 seo-title: Modi uitvoeren
-description: Leer hoe u uw AEM-instantie voor specifieke doeleinden kunt afstemmen met behulp van uitvoeringsmodi.
-seo-description: Leer hoe u uw AEM-instantie voor specifieke doeleinden kunt afstemmen met behulp van uitvoeringsmodi.
+description: Leer hoe u uw AEM voor specifieke doeleinden kunt afstemmen met behulp van runmodi.
+seo-description: Leer hoe u uw AEM voor specifieke doeleinden kunt afstemmen met behulp van runmodi.
 uuid: 8a0c6e5c-4fae-43e2-b745-eee58f346ceb
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 12329e26-40bc-4c94-bc60-6d9cbd01345f
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '765'
+ht-degree: 0%
 
 ---
 
 
 # Modi uitvoeren{#run-modes}
 
-Met de uitvoermodi kunt u uw AEM-instantie instellen voor een bepaald doel. bijvoorbeeld auteur of publicatie, test, ontwikkeling, intranet of andere.
+Met de uitvoermodi kunt u uw AEM instellen voor een bepaald doel. bijvoorbeeld auteur of publicatie, test, ontwikkeling, intranet of andere.
 
 U kunt:
 
@@ -119,8 +122,8 @@ Deze mappen zijn van het type `nt:folder` en moeten de juiste bundel bevatten.
 
 Als u configuraties voor veelvoudige looppaswijzen hebt bepaald dan moet u bepalen welke op opstarten moet worden gebruikt. Er zijn verschillende methoden om op te geven welke uitvoeringsmodus moet worden gebruikt. de volgorde van resolutie is :
 
-1. [ `sling.properties` bestand](#using-the-sling-properties-file)
-1. [ `-r` , optie](#using-the-r-option)
+1. [ `sling.properties` file](#using-the-sling-properties-file)
+1. [ `-r` option](#using-the-r-option)
 1. [systeemeigenschappen (`-D`)](#using-a-system-property-in-the-start-script)
 
 1. [Bestandsnaamdetectie](#filename-detection-renaming-the-jar-file)
@@ -141,7 +144,7 @@ U kunt het `sling.properties` bestand gebruiken om de vereiste uitvoermodus te d
 
 ### De optie -r gebruiken {#using-the-r-option}
 
-Een aangepaste uitvoeringsmodus kan worden geactiveerd door de `-r` optie te gebruiken wanneer u de snelstartmodus start. Gebruik bijvoorbeeld de volgende opdracht om een AEM-instantie te starten met de uitvoermodus ingesteld op dev. &quot;
+Een aangepaste uitvoeringsmodus kan worden geactiveerd door de `-r` optie te gebruiken wanneer u de snelstartmodus start. Gebruik bijvoorbeeld de volgende opdracht om een AEM instantie te starten met de uitvoermodus ingesteld op dev. &quot;
 
 ```shell
 java -jar cq-56-p4545.jar -r dev
