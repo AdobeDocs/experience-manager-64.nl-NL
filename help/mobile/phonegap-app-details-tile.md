@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: a87834c9-247c-49fa-9978-a969230db91c
 translation-type: tm+mt
 source-git-commit: c58437f791daa11669198d916f0756ff4830677c
+workflow-type: tm+mt
+source-wordcount: '1290'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c58437f791daa11669198d916f0756ff4830677c
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 De **Manage App** Tile op het dashboard van de App verstrekt de capaciteit om details over de Toepassing te wijzigen. Als u de pagina Details wilt openen, klikt u op de detailkoppeling van de app Beheren. Vanuit de beheerpagina kunt u de configuratie-instellingen (config.xml) van de PhoneGap-toepassing bewerken en uw toepassing voorbereiden voor verzending naar de verschillende opslagruimten van toepassingen.
 
@@ -39,7 +42,7 @@ Op dit tabblad kunt u de **naam**, de **auteur**, de **korte beschrijving** en d
 
 Elk mobiel toepassingsplatform beschrijft welke gegevens worden verzameld, specifiek gericht op elke toepassingsopslag.
 
-De getoonde platforms worden gedreven door de inhoud PhoneGap config.xml:
+Weergegeven Platforms worden aangestuurd door de inhoud PhoneGap config.xml:
 
 ```xml
 <widget>  
@@ -48,13 +51,13 @@ De getoonde platforms worden gedreven door de inhoud PhoneGap config.xml:
 </widget>
 ```
 
-Elke winkel voor toepassingen van leveranciers, zoals de Apple App Store of Google Play Store, heeft bijvoorbeeld een of meer schermafbeeldingen van uw mobiele toepassing nodig om uw toepassingsgegevens aan klanten weer te geven. Deze schermafbeeldingen kunnen strikte vereisten hebben rond afmetingen en inhoud (in feite moeten ze de toepassing echt vertegenwoordigen). AEM Apps verleent steun voor het selecteren en het beheren van deze screenshots voor de gesteunde platforms en meningshavenafmetingen zoals vereist door de toepassingsopslag van elke verkoper.
+Elke winkel voor toepassingen van leveranciers, zoals de Apple App Store of Google Play Store, heeft bijvoorbeeld een of meer schermafbeeldingen van uw mobiele toepassing nodig om uw toepassingsgegevens aan klanten weer te geven. Deze schermafbeeldingen kunnen strikte vereisten hebben rond afmetingen en inhoud (in feite moeten ze de toepassing echt vertegenwoordigen). AEM Apps biedt ondersteuning voor het selecteren en beheren van deze schermafbeeldingen voor de ondersteunde platforms en het bekijken van poortafmetingen, zoals vereist door de toepassingsopslag van elke leverancier.
 
 >[!NOTE]
 >
->Met de app AEM Verify kunt u schermafbeeldingen rechtstreeks naar uw toepassingsgegevens in AEM verzenden.
+>De app AEM verifiëren biedt de mogelijkheid om schermafbeeldingen rechtstreeks naar uw toepassingsgegevens in AEM te verzenden.
 >
->Zie [Mobile Quickstart voor AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) voor meer informatie.
+>Zie [Mobile Quickstart voor AEM Verifiëren](/help/mobile/phonegap-mobile-quickstart.md) voor meer informatie.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
@@ -66,7 +69,7 @@ Elke winkel voor toepassingen van leveranciers, zoals de Apple App Store of Goog
 
 #### Algemene metagegevens {#common-metadata}
 
-Elke toepassing zou bijbehorende meta-gegevens moeten hebben die in het vormen van verschillende aspecten van de toepassing helpen. De pagina App beheren wordt gescheiden in twee verschillende gebieden die betrekking hebben op de verzameling van metagegevens. Platformspecifieke metagegevens en algemene metagegevens.
+Elke toepassing zou bijbehorende meta-gegevens moeten hebben die in het vormen van verschillende aspecten van de toepassing helpen. De pagina App beheren wordt gescheiden in twee verschillende gebieden die betrekking hebben op de verzameling van metagegevens. Specifieke metagegevens en algemene metagegevens Platforms.
 
 Er zijn algemene configuratie en metagegevens voor alle platforms.
 
@@ -86,17 +89,17 @@ In deze sectie definieert u de URL van de Content Update Server, de openingspagi
 >
 >Bovenaan in de weergave Details ziet u de toepassingsversie, PhoneGap-versie en URL bijwerken. Elk van deze waarden kan worden ingesteld in de sectie Algemene metagegevens. De toepassings-id kan echter niet worden bewerkt.
 
-#### Metagegevens platform {#platform-metadata}
+#### Metagegevens Platform {#platform-metadata}
 
-Elk platform dat in PhoneGap config.xml wordt bepaald kan de eigenschappen van het douaneplatform bevatten. Een AEM-ontwikkelaar moet de inhoudsstructuur bijdragen om deze eigenschappen vast te leggen. Een voorbeeld van platformspecifieke eigenschappen vindt u bij iOS.
+Elk platform dat in PhoneGap config.xml wordt bepaald kan de eigenschappen van het douaneplatform bevatten. Een AEM ontwikkelaar moet de inhoudsstructuur bijdragen om deze eigenschappen vast te leggen. Een voorbeeld van platformspecifieke eigenschappen vindt u bij iOS.
 
 Metagegevens voor alle geconfigureerde platforms worden nu tegelijkertijd weergegeven op het tabblad Geavanceerd van de tegel App beheren.
 
 >[!NOTE]
 >
->De gedeelten met platformmetagegevens worden niet gebruikt door PhoneGap tijdens een CLI- of Remote PhoneGap-build, maar AEM probeert metagegevens vast te leggen voor platforms, zodat deze later kunnen worden gebruikt wanneer ze worden verzonden naar de toepassingsopslag van de beoogde leverancier.
+>De gedeelten met platformmetagegevens worden niet gebruikt door PhoneGap tijdens een CLI- of Remote PhoneGap-build, maar AEM pogingen om metagegevens voor platforms vast te leggen, zodat deze later kunnen worden gebruikt wanneer ze worden verzonden naar de toepassingsopslag van de beoogde leverancier.
 
-Voor platforms die niet door AEM worden begrepen, is het nog mogelijk voor een ontwikkelaar van AEM om UI uit te breiden om deze meta-gegevens te vangen die later kunnen worden uitgevoerd en tijdens het proces van de toepassingsvoorlegging worden gebruikt.
+Voor platforms die niet door AEM worden begrepen, is het nog mogelijk voor een AEM ontwikkelaar om UI uit te breiden om deze meta-gegevens te vangen die later kunnen worden uitgevoerd en tijdens het proces van de toepassingsvoorlegging worden gebruikt.
 
 #### iOS-metagegevens {#ios-metadata}
 
@@ -128,7 +131,7 @@ Het bezit van de Server URL van de Update van de Inhoud is URL die aan een te pu
 
 >[!NOTE]
 >
->Als uw instantie van de auteurserver aan veelvoudige publicatie serverinstanties (gemeenschappelijke architectuur voor AEM) dupliceert, zal elke publicatieserver de zelfde updateinhoud hebben omdat de update op de auteur wordt voortgebouwd en aan alle publicatieinstanties wordt herhaald. In principe worden taakverdeling en failover volledig ondersteund.
+>Als de instantie van de auteurserver aan veelvoudige publicatie serverinstanties (gemeenschappelijke architectuur voor AEM) dupliceert, zal elke publicatieserver de zelfde updateinhoud hebben omdat de update op de auteur wordt voortgebouwd en aan alle publicatieinstanties wordt herhaald. In principe worden taakverdeling en failover volledig ondersteund.
 
 ### Het tabblad Plug-ins {#the-plugins-tab}
 
@@ -148,7 +151,7 @@ Op het tabblad **Schermafbeeldingen** worden de ondersteunde schermresoluties we
 
 ### Het tabblad Verificatie {#the-authentication-tab}
 
-Op het tabblad **Verificatie** kunt u een OAuth-client selecteren die aan uw toepassing moet worden gekoppeld en kan een ontwikkelaar de OAuth-verificatie van Adobe Experience Manager gebruiken.
+Op het tabblad **Verificatie** kunt u een OAuth-client selecteren die aan uw toepassing moet worden gekoppeld en kan een ontwikkelaar Adobe Experience Manager OAuth-verificatie gebruiken.
 
 ![chlimage_1-124](assets/chlimage_1-124.png)
 
@@ -162,7 +165,7 @@ Nadat u kennis hebt genomen van het beheren van App Tile in het toepassingsdashb
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 * [Inhoudsservices](/help/mobile/develop-content-as-a-service.md)
 
-### Additional Resources {#additional-resources}
+### Aanvullende bronnen {#additional-resources}
 
 Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 
