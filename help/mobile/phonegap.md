@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: d9ab4d38-1c17-477d-9341-02bda80f3c23
 translation-type: tm+mt
 source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+workflow-type: tm+mt
+source-wordcount: '215'
+ht-degree: 1%
 
 ---
 
@@ -18,15 +21,15 @@ source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM-platform vormt.
+Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM platform vormt.
 
-Voor het starten van een nieuwe AEM Mobile-app-ervaring is een combinatie van rollen vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een nieuwe AEM Mobile-toepassing:
+Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolcombinatie vereist voordat deze gereed is voor het bewerken van inhoud. De volgende rollen bieden een beginpunt voor het maken van een nieuwe AEM Mobile-toepassing:
 
 * **Beheerder**
-* **Ontwikkelaar**
-* **Author**
+* **Developer**
+* **Auteur**
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}
 
@@ -44,7 +47,7 @@ Zie de volgende bronnen om aan de slag te gaan:
 
 Om over de Diensten **van de** Inhoud te leren, zie het Overzicht [van de Diensten van de](/help/mobile/develop-content-as-a-service.md) Inhoud beginnen.
 
-## Additional Resources {#additional-resources}
+## Aanvullende bronnen {#additional-resources}
 
 Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkheden van een beheerder en ontwikkelaar:
 
