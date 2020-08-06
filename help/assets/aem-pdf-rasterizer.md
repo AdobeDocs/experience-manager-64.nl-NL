@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # PDF Rasterizer gebruiken {#using-pdf-rasterizer}
 
-Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar Adobe Experience Manager-elementen (AEM), genereert de standaardbibliotheek mogelijk geen nauwkeurige uitvoer. In dergelijke gevallen kan de Adobe PDF Rasterizer-bibliotheek betrouwbaardere en nauwkeurigere uitvoer genereren dan de uitvoer uit een standaardbibliotheek.
+Wanneer u grote, inhoudintensieve PDF- of AI-bestanden uploadt naar Adobe Experience Manager (AEM) Assets, genereert de standaardbibliotheek mogelijk geen nauwkeurige uitvoer. In dergelijke gevallen kan de Adobe PDF Rasterizer-bibliotheek betrouwbaardere en nauwkeurigere uitvoer genereren dan de uitvoer uit een standaardbibliotheek.
 
 Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
@@ -21,22 +21,24 @@ Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 * AI- of PDF-bestanden met miniaturen die niet uit het vak zijn gegenereerd.
 * AI-bestanden met Pantone Matching System (PMS)-kleuren.
 
-Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversies. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
+Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn beter in kwaliteit dan uitvoer in de buitenverpakking en bieden daarom een consistente kijkervaring op verschillende apparaten. De Adobe PDF Rasterizer-bibliotheek ondersteunt geen kleurruimteconversie. De uitvoer wordt altijd naar RGB uitgevoerd, ongeacht de kleurruimte van het bronbestand.
 
-1. Installeer het PDF-rasterpakket op uw AEM-exemplaar via [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
+1. Installeer het PDF-rasterpakket op uw AEM via [Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg).
 
    >[!NOTE]
    >
    >De PDF Rasterizer-bibliotheek is alleen beschikbaar voor Windows en Linux.
 
-1. Toegang tot de AEM Assets workflowconsole vanaf `https://[AEM_server]:[port]/workflow`.
+1. Open de AEM Assets-workflowconsole vanaf `https://[AEM_server]:[port]/workflow`.
 1. Open de **[!UICONTROL DAM Update Asset]** workflowpagina.
 1. Configureer de volgende opties om de standaardminiatuur en het genereren van webvertoningen voor PDF- en AI-bestanden over te slaan:
 
    * Open de **[!UICONTROL Thumbnail Process]** stap en voeg deze toe `application/pdf` of `application/postscript` in het **[!UICONTROL Skip Mime Types]** veld.
+
    ![skip_mime_types-2](assets/skip_mime_types-2.png)
 
    * Voeg op het **[!UICONTROL Web Enabled Image]** tabblad naar wens toe `application/pdf` of `application/postscript` onder **[!UICONTROL Skip List]** .
+
    ![web_enabled_imageskiplist](assets/web_enabled_imageskiplist.png)
 
 1. Open de **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** stap en verwijder het MIME-type waarvoor u de standaardgeneratie voorvertoningsafbeeldingsuitvoeringen wilt overslaan. Verwijder bijvoorbeeld het MIME-type *application/pdf*, ** application/postscript of *application/illustrator* uit de **[!UICONTROL MIME Types]** lijst.
@@ -49,6 +51,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
    * MIME-typen: *application/pdf* of *application/postscript*
    * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: 319:319, 140:100, 48:48. Voeg indien nodig aangepaste miniatuurconfiguratie toe.
+
    De opdrachtregelargumenten voor de `PDFRasterizer` opdracht kunnen het volgende bevatten:
 
    **-d**: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.
@@ -80,6 +83,7 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
    * MIME-typen: `application/pdf` of `application/postscript`
    * Opdrachten: `PDFRasterizer -d -p 1 -s 1280 -t PNG -i ${file}`
    * Miniatuurgrootten toevoegen: 319:319, 140:100, 48:48. Voeg indien nodig aangepaste miniatuurconfiguratie toe.
+
    De opdrachtregelargumenten voor de opdracht PDFRasterizer kunnen het volgende bevatten:
 
    **-d**: Vlag om het vloeiend weergeven van tekst, vectorillustraties en afbeeldingen mogelijk te maken. Hiermee maakt u afbeeldingen van betere kwaliteit. Het opnemen van deze parameter zorgt er echter voor dat de opdracht langzaam wordt uitgevoerd en dat de afbeeldingen groter worden.
