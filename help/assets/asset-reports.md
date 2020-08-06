@@ -1,12 +1,12 @@
 ---
 title: Rapporten over het gebruik en het delen van uw digitale middelen.
-description: Meldt over uw middelen in [!DNL Adobe Experience Manager Assets] die u helpen gebruik, activiteit, en het delen van uw digitale activa te begrijpen.
+description: Rapporten over uw elementen [!DNL Adobe Experience Manager Assets] in die u helpen gebruik, activiteit, en het delen van uw digitale activa begrijpen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6faa69ee1d38ad16add95263c53f18ea0a413fd2
 workflow-type: tm+mt
-source-wordcount: '1003'
-ht-degree: 7%
+source-wordcount: '998'
+ht-degree: 8%
 
 ---
 
@@ -95,7 +95,7 @@ Als u rapporten wilt genereren, moet u ervoor zorgen dat:
 
    ![De pagina van details van het rapport van het Aandeel van de Verbinding](assets/link_share.png)
 
-1. Klik op **[!UICONTROL Next]** de werkbalk.
+1. Klik op **[!UICONTROL Next]** op de werkbalk.
 
 1. Op de **[!UICONTROL Configure Columns]** pagina zijn enkele kolommen standaard geselecteerd om in het rapport te worden weergegeven. U kunt meer kolommen selecteren. Schakel een geselecteerde kolom uit om deze uit te sluiten in het rapport.
 
@@ -105,7 +105,7 @@ Als u rapporten wilt genereren, moet u ervoor zorgen dat:
 
    ![Rapportkolommen selecteren of deselecteren](assets/custom_columns.png)
 
-1. Klik op **[!UICONTROL Create]** de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
+1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 1. Voor de [!UICONTROL Asset Reports] pagina, is de status van de rapportgeneratie gebaseerd op de huidige staat van de rapportbaan, bijvoorbeeld [!UICONTROL Success], [!UICONTROL Failed], [!UICONTROL Queued], of [!UICONTROL Scheduled]. Dezelfde status wordt weergegeven in het vak met meldingen. Klik op de rapportkoppeling om de rapportpagina weer te geven. Alternatively, select the report, and click **[!UICONTROL View]** from the toolbar.
 
    ![Een gegenereerd rapport](assets/report_page.png)
@@ -146,7 +146,7 @@ Ga als volgt te werk om aangepaste kolommen aan deze rapporten toe te voegen:
 
    Als u meer aangepaste kolommen wilt toevoegen, klikt u op stap 5 **[!UICONTROL Add]** en 6 en herhaalt u deze.
 
-1. Klik op **[!UICONTROL Create]** de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
+1. Klik op **[!UICONTROL Create]** op de werkbalk. Een bericht meldt dat de rapportgeneratie is in werking gesteld.
 
 ## De zuiveringsservice configureren {#configure-purging-service}
 
