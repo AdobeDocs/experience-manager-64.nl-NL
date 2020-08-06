@@ -9,15 +9,18 @@ topic-tags: author
 discoiquuid: 7c39383b-b430-40a1-9bcb-f5aaccb616ad
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '491'
+ht-degree: 0%
 
 ---
 
 
-# Verzendrevisoren koppelen aan een formulier {#associating-submission-reviewers-with-a-form}
+# Verzendrevisoren koppelen aan een formulier  {#associating-submission-reviewers-with-a-form}
 
 Wanneer u een formulier maakt, kunt u gebruikers die de verzendingen van het formulier bekijken, via de portal Formulieren opgeven en feedback geven. Uw organisatie kan feedback verzamelen en de ingediende formulieren opnieuw bewerken.
 
-Met AEM Forms kunt u een revisorgroep aan een formulier koppelen. Gebruikers die aan een revisiegroep van een formulier zijn toegevoegd, zien de verzendingen van dit formulier en geven feedback.
+In AEM Forms kunt u een revisorgroep aan een formulier koppelen. Gebruikers die aan een revisiegroep van een formulier zijn toegevoegd, zien de verzendingen van dit formulier en geven feedback.
 
 Revisieersgroepen die aan een formulier zijn toegewezen, kunnen alleen de verzendingen van het opgegeven formulier bekijken.
 
@@ -29,8 +32,8 @@ Als u een revisorgroep aan een formulier wilt koppelen, bewerkt u het metagegeve
 
 Het schema voor metagegevens bewerken:
 
-1. Klik in de auteursmodus onder Experience Manager op **[!UICONTROL Gereedschappen > Elementen > Metagegevensschema&#39;s]**.
-1. Navigeer op de pagina Schema-formulieren naar **[!UICONTROL Formulieren > Formulieren die zijn geschreven in AEM]**.
+1. Klik in de modus Schrijver onder Experience Manager op **[!UICONTROL Tools > Assets > Metadata Schemas]**.
+1. Navigeer naar de pagina Schema Forms **[!UICONTROL Forms > Forms Authored in AEM]**.
 
    De URL van de pagina is:
 
@@ -40,9 +43,9 @@ Het schema voor metagegevens bewerken:
     aem-authored
    ```
 
-1. Selecteer **[!UICONTROL Adaptief formulier]** en klik op **[!UICONTROL Bewerken]**.
-1. Klik op **[!UICONTROL Geavanceerd]** op de pagina Formulier bewerken.
-1. Sleep op het tabblad Geavanceerd de component **[!UICONTROL Tekst]** enkele regel die beschikbaar is onder Formulier samenstellen.
+1. Select **[!UICONTROL Adaptive Form]** and click **[!UICONTROL Edit]**.
+1. Klik op de pagina Formulier bewerken **[!UICONTROL Advanced]**.
+1. Sleep op het tabblad Geavanceerd de **[!UICONTROL Single Line Text]** component die beschikbaar is onder Formulier samenstellen.
 1. Selecteer de toegevoegde tekstcomponent om zijn montages te zien.
 
    Voer onder Instellingen `./jcr:content/metadata/form-submission-reviewer-group` in het veld Toewijzen aan eigenschap in.
@@ -56,16 +59,16 @@ Met gebruikersgroepen kunt u verschillende sets revisoren aan verschillende adap
 
 Voordat u de volgende stappen uitvoert, raadpleegt u [Vereiste](/help/forms/using/adding-reviewers-form.md#prerequisite).
 
-Als u een groep wilt maken en er leden aan wilt toevoegen, navigeert u naar **[!UICONTROL Gereedschappen > Bewerkingen > Beveiliging > Groepen]**.\
+Navigeer naar een groep en voeg er leden aan toe **[!UICONTROL Tools > Operations > Security > Groups]**.\
 Voor meer informatie, zie het Beleid van de [Gebruiker en de Diensten](/help/sites-administering/security.md).\
-Zorg ervoor dat u de groep toevoegt u als lid van de uit-van-de-doos gebruikersgroep creeert: revisoren **voor het verzenden van formulieren**. Deze gebruikersgroep wordt geleverd met AEM Forms en zorgt ervoor dat gebruikers worden toegevoegd als revisoren voor verzending.
+Zorg ervoor dat u de groep toevoegt u als lid van de uit-van-de-doos gebruikersgroep creeert: **formulieren-verzend-revisoren**. Deze gebruikersgroep wordt geleverd bij AEM Forms en zorgt ervoor dat gebruikers worden toegevoegd als revisoren voor verzending.
 
 Gebruikersgroepen koppelen aan een adaptief formulier:
 
-1. Navigeer in de ontwerpmodus naar **[!UICONTROL Formulieren > Formulieren en documenten]**.
-1. Selecteer een aangepast formulier met de optie **[!UICONTROL Selecteren]** en klik op Eigenschappen **** weergeven.
-1. Klik in het venster Eigenschappen van het formulier op **[!UICONTROL Bewerken]** en klik vervolgens op **[!UICONTROL GEAVANCEERD]**.
-1. Voer de groep in het groepsveld voor de revisorgroep voor verzending in en klik op **[!UICONTROL Gereed]**.
+1. Navigeer in de ontwerpmodus naar **[!UICONTROL Forms > Forms & Documents]**.
+1. Selecteer een aangepast formulier met de **[!UICONTROL Select]** optie **[!UICONTROL View Properties]**.
+1. Klik in het venster Eigenschappen van het formulier **[!UICONTROL Edit]** en klik vervolgens op **[!UICONTROL ADVANCED]**.
+1. Voer de groep in het groepsveld voor de revisorgroep voor verzending in en klik op **[!UICONTROL Done]**.
 
    Het veld Subrevisorgroep wordt weergegeven met de naam die u hebt opgegeven in het bewerkte metagegevensschema van adaptieve formulieren.
 
