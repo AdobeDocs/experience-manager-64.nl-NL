@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Inleiding {#introduction}
 
-Het vluchthandboek in AEM 6 helpt systeembeheerders de gezondheid van het AEM systeem in een oogopslag te controleren. Het verstrekt ook auto-geproduceerde diagnoseinformatie over relevante aspecten van AEM en staat toe om op zichzelf staande onderhoudsautomatisering te vormen en in werking te stellen om projectverrichtingen en steungevallen beduidend te verminderen. Het vectordashboard kan worden uitgebreid met aangepaste gezondheidscontroles en onderhoudstaken. Verder kunnen gegevens van het Operations-dashboard via JMX worden benaderd via externe bewakingstools.
+Het vluchthandboek in AEM 6 helpt systeembeheerders de AEM systeemgezondheid in een oogopslag te controleren. Het verstrekt ook auto-geproduceerde diagnoseinformatie over relevante aspecten van AEM en staat toe om op zichzelf staande onderhoudsautomatisering te vormen en in werking te stellen om projectverrichtingen en steungevallen beduidend te verminderen. Het vectordashboard kan worden uitgebreid met aangepaste gezondheidscontroles en onderhoudstaken. Verder kunnen gegevens van het Operations-dashboard via JMX worden benaderd via externe bewakingstools.
 
 **Het vectordashboard:**
 
@@ -39,7 +39,7 @@ Het kan worden betreden door naar **Hulpmiddelen** - **Verrichtingen** van het A
 
 ## Gezondheidsrapportage {#health-reports}
 
-Het Health Report-systeem biedt informatie over de gezondheid van een AEM-instantie via Sling Health Checks. Dit kan via OSGI-, JMX- en HTTP-aanvragen (via JSON) of via de Touch UI. Het biedt metingen en drempel van bepaalde configureerbare tellers aan en in sommige gevallen, zal informatie over hoe te om de kwestie op te lossen aanbieden.
+Het systeem van het Gezondheidsrapport verstrekt informatie over de gezondheid van een AEM instantie door Sling Health Checks. Dit kan via OSGI-, JMX- en HTTP-aanvragen (via JSON) of via de Touch UI. Het biedt metingen en drempel van bepaalde configureerbare tellers aan en in sommige gevallen, zal informatie over hoe te om de kwestie op te lossen aanbieden.
 
 Het heeft verschillende functies, die hieronder worden beschreven.
 
@@ -47,7 +47,7 @@ Het heeft verschillende functies, die hieronder worden beschreven.
 
 De **Gezondheidsrapporten** zijn een systeem van kaarten die wijzen op goede of slechte gezondheid met betrekking tot een specifiek productgebied. Deze kaarten zijn visualisaties van de Sling Health Checks, die gegevens van JMX en andere bronnen samenvoegen en verwerkte informatie opnieuw blootstellen als MBans. Deze MBeans kunnen ook in de [JMX Webconsole](/help/sites-administering/jmx-console.md), onder **org.apache.sling.health check** domein worden geïnspecteerd.
 
-De interface Gezondheidsrapporten kan worden geopend via de **Hulpmiddelen** - **Verrichtingen** - het menu van **Gezondheidsrapporten** op het Welkome scherm van AEM, of direct door volgende URL:
+De interface Gezondheidsrapporten kan worden geopend via de **Hulpmiddelen** - **Verrichtingen** - het menu van **Gezondheidsrapporten** op het AEM Welkomstscherm, of direct door volgende URL:
 
 `https://<serveraddress>:port/libs/granite/operations/content/healthreports/healthreportlist.html`
 
@@ -114,6 +114,7 @@ Voor het maken van een individuele health check zijn twee stappen nodig: een Sli
 
       * **Type:** `String`
       * **Waarde:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/exampleHealthCheck`
+
    >[!NOTE]
    >
    >Het bovenstaande bronnenpad wordt als volgt gemaakt: als de naam van het product van de Health Check &quot;test&quot; is, voegt u &quot;test&quot; toe aan het einde van het pad `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck`
@@ -153,6 +154,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
    * **Tags (hc.tags):** De labels voor deze Health Check. Als deze samengestelde health check bedoeld is om deel uit te maken van een andere samengestelde health check (bijvoorbeeld in een hiërarchie van gezondheidscontroles), voegt u de codes toe waarop deze samenstelling betrekking heeft.
    * **Naam MBean (hc.bean.name):** De naam van de boon die aan de JMX MBean van deze samengestelde gezondheidscontrole zal worden gegeven.
    * **Filterlabels (filter.tags):** Dit is een eigenschap die specifiek is voor samengestelde gezondheidscontroles. Dit zijn de tags die de samenstelling moet samenvoegen. De samengestelde health check wordt onder de groep geaggregeerd voor alle gezondheidscontroles waarbij een tag aanwezig is die overeenkomt met een van de filtertags van deze samenstelling. Een samengestelde health check met de **test** en **controle** van filterlabels zal bijvoorbeeld alle individuele en samengestelde gezondheidscontroles samenvoegen die een van de **test** - en **controletags** hebben in hun tageigenschap ( `hc.tags`).
+
    >[!NOTE]
    >
    >Voor elke nieuwe configuratie van de Apache Sling Composite Health Check wordt een nieuwe JMX-maboon gemaakt.**
@@ -164,6 +166,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
    * **Naam:** `Composite Health Check`
 
       * **Type:** `nt:unstructured`
+
    Met de volgende eigenschappen:
 
    * **Naam:** `sling:resourceType`
@@ -174,13 +177,14 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
 
       * **Type:** `String`
       * **Waarde:** `/system/sling/monitoring/mbeans/org/apache/sling/healthcheck/HealthCheck/diskusage`
+
    >[!NOTE]
    >
    >Als u individuele gezondheidscontroles creeert die logisch gezien onder een samengestelde controle behoren die reeds in het dashboard door gebrek aanwezig is, zullen zij automatisch worden gevangen en onder de respectieve samengestelde controle gegroepeerd. Wegens dit, is er geen behoefte om een nieuw configuratieknooppunt voor deze controles tot stand te brengen.
    >
    >Bijvoorbeeld, als u een individuele veiligheidsgezondheidscontrole creeert, alles u moet doen het toewijzen het &quot;**veiligheid**&quot;markering, en het geïnstalleerd is, zal het automatisch onder de de samengestelde controle van Controles in het Dashboard van Verrichtingen verschijnen.
 
-### Gezondheidscontroles bij AEM {#health-checks-provided-with-aem}
+### Aan AEM verstrekte gezondheidscontroles {#health-checks-provided-with-aem}
 
 <table> 
  <tbody> 
@@ -198,7 +202,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
     <ul> 
      <li>Hiermee wordt de status Kritiek geretourneerd als de <code>queueSize</code> waarde de <code>maxQueueSize</code> waarde overschrijdt (dat wil zeggen wanneer gebeurtenissen worden neergezet)</li> 
      <li>retourneert Warn als de <code>queueSize</code> waarde zich boven de waarde <code>maxQueueSize * WARN_THRESHOLD</code> (de standaardwaarde is 0,75) bevindt </li> 
-    </ul> <p>De maximumlengte van elke rij komt uit afzonderlijke configuraties (Oak en AEM), en is niet configureerbaar van deze gezondheidscontrole. De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health check:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td> 
+    </ul> <p>De maximumlengte van elke rij komt uit afzonderlijke configuraties (Eak en AEM), en is niet configureerbaar van deze gezondheidscontrole. De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DObservationQueueLengthHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health check:name=ObservationQueueLengthHealthCheck,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Transversale begrenzingen voor query</td> 
@@ -246,8 +250,8 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
      <li>elke onderhoudstaak gaat vergezeld van een bijbehorende gezondheidscontrole</li> 
      <li>als een taak niet aan een onderhoudsvenster wordt toegevoegd, zal zijn gezondheidscontrole Kritiek terugkeren</li> 
      <li>u moet het Logboek van de Controle en het onderhoudstaken van de Woorden van het Werkschema vormen of anders hen verwijderen uit de onderhoudsvensters. Als verlaten unconfigured, zullen deze taken op de eerste geprobeerd looppas ontbreken, zodat zal de controle van het Onderhoud van het Systeem de Kritieke status terugkeren.</li> 
-     <li><strong>Met AEM 6.4</strong>, is er ook een controle voor de <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">taak van het Onderhoud</a> van Binaries van Lucene</li> 
-     <li>op AEM 6.2 en lager, keert de controle van het systeemonderhoud een Waarschuwingsstatus onmiddellijk na opstarten terug omdat de taken nooit lopen. Vanaf 6.3 retourneren ze OK als het eerste onderhoudsvenster nog niet is bereikt.</li> 
+     <li><strong>Met AEM 6.4</strong>, is er ook een controle voor de <a href="/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks">taak van het Onderhoud</a> van de Bindingen van Lucene</li> 
+     <li>bij AEM 6.2 en lager, keert de controle van het systeemonderhoud een Status van de Waarschuwing onmiddellijk na opstarten terug omdat de taken nooit lopen. Vanaf 6.3 retourneren ze OK als het eerste onderhoudsvenster nog niet is bereikt.</li> 
     </ul> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsystemchecks%2Ctype%3DHealthCheck">org.apache.sling.health check:name=systemchecks,type=HealthCheck</a>.</p> </td> 
   </tr> 
   <tr> 
@@ -331,13 +335,14 @@ Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. 
    >
    >Raadpleeg de documentatie bij [Nagios voor meer informatie over het installeren van Nagios en NRPE op uw systeem](https://library.nagios.com/library/products/nagioscore/manuals/).
 
-1. Voeg een hostdefinitie voor de AEM-server toe. Dit kan via de Interface van het Web Nagios XI, door de Manager van de Configuratie te gebruiken worden gedaan:
+1. Voeg een hostdefinitie voor de AEM server toe. Dit kan via de Interface van het Web Nagios XI, door de Manager van de Configuratie te gebruiken worden gedaan:
 
    1. Open een browser en wijs naar de Nagios-server.
    1. Druk de **Configure** knoop in het hoogste menu.
    1. Druk in het linkerdeelvenster op **Core Config Manager** onder **Geavanceerde configuratie**.
    1. Druk op de koppeling **Gastheren** onder de sectie **Controle** .
    1. Voeg de hostdefinitie toe:
+
    ![chlimage_1-416](assets/chlimage_1-416.png)
 
    Hieronder ziet u een voorbeeld van een hostconfiguratiebestand voor het geval u Nagios Core gebruikt:
@@ -354,7 +359,7 @@ Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. 
    }
    ```
 
-1. Installeer Nagios en NRPE op de AEM-server.
+1. Installeer Nagios en NRPE op de AEM server.
 1. Installeer de [insteekmodule check_http_json](https://github.com/phrawzty/check_http_json) op beide servers.
 1. Definieer een algemene JSON-controleopdracht op beide servers:
 
@@ -368,7 +373,7 @@ Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. 
    }
    ```
 
-1. Voeg een service voor gebruikt geheugen toe aan de AEM-server:
+1. Voeg een dienst voor gebruikt geheugen op de AEM server toe:
 
    ```xml
    define service {
@@ -398,7 +403,7 @@ De belangrijkste kenmerken zijn:
 * De capaciteit om tot heap en draaddumps toegang te hebben
 * De verzoeken en analysatoren van de vraagprestaties
 
-U kunt het scherm van de Hulpmiddelen van de Diagnose bereiken door naar **Hulpmiddelen - Verrichtingen - Diagnose** van het Welkome scherm van AEM te gaan. U kunt het scherm ook openen door de volgende URL rechtstreeks te openen: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
+U kunt het scherm van de Hulpmiddelen van de Diagnose bereiken door naar **Hulpmiddelen - Verrichtingen - Diagnose** van het AEM Welkome scherm te gaan. U kunt het scherm ook openen door de volgende URL rechtstreeks te openen: `https://serveraddress:port/libs/granite/operations/content/diagnosis.html`
 
 ![chlimage_1-418](assets/chlimage_1-418.png)
 
@@ -462,7 +467,7 @@ Door gebrek, worden de langzaamste 20 paginaverzoeken gevangen, maar de grens ka
 
 ### Query-prestaties {#query-performance}
 
-De pagina van de Prestaties van de Vraag staat de analyse van de langzaamste vragen toe die door het systeem worden uitgevoerd. Deze informatie wordt verstrekt door de bewaarplaats in een JMX boon. In Jackrabbit verschaft de `com.adobe.granite.QueryStat` JMX Mbean deze informatie, terwijl deze in de eik-opslagplaats wordt aangeboden door `org.apache.jackrabbit.oak.QueryStats.`
+De pagina van de Prestaties van de Vraag staat de analyse van de langzaamste vragen toe die door het systeem worden uitgevoerd. Deze informatie wordt door de opslagplaats in een JMX-boon verstrekt. In Jackrabbit verschaft de `com.adobe.granite.QueryStat` JMX Mbean deze informatie, terwijl deze in de eik-opslagplaats wordt aangeboden door `org.apache.jackrabbit.oak.QueryStats.`
 
 De pagina wordt weergegeven:
 
@@ -478,7 +483,7 @@ De pagina wordt weergegeven:
 
 Voor om het even welke bepaalde vraag, probeert het Eak om de beste manier te vinden om uit te voeren gebaseerd op de indexen van het Eak die in de bewaarplaats onder het **eik worden bepaald:index** knoop. Afhankelijk van de vraag, kunnen de verschillende indexen door Oak worden gekozen. Begrijpen hoe een query wordt uitgevoerd, is de eerste stap voor het optimaliseren van de query.
 
-De verklaarvraag is een hulpmiddel dat verklaart hoe het Eak een vraag uitvoert. Het kan worden betreden door naar **Hulpmiddelen te gaan - Verrichtingen - Diagnose** van het Welkome Scherm AEM, dan klikkend op de Prestaties **van de** Vraag en overschakelend over aan het **Uitleg lusje van de Vraag** .
+De verklaarvraag is een hulpmiddel dat verklaart hoe het Eak een vraag uitvoert. Het kan worden betreden door naar **Hulpmiddelen te gaan - Verrichtingen - Diagnose** van het AEM Welkome Scherm, dan klikkend op de Prestaties **van de** Vraag en overschakelend over aan het **Uitleg lusje van de Vraag** .
 
 **Functies**
 
@@ -515,7 +520,7 @@ De interface kan worden gebruikt om indexen in de tabel te filteren door de filt
 
 ### Statuspostcode downloaden {#download-status-zip}
 
-Hierdoor wordt het downloaden van een ritssluiting met nuttige informatie over de systeemstatus en configuratie geactiveerd. Het archief bevat instantieconfiguraties, een lijst met bundels, OSGI-, Sling-meetgegevens en statistische gegevens. Dit kan resulteren in een groot bestand. U kunt het effect van grote statusdossiers verminderen door het **venster van de Status van de Download te gebruiken **venster. Het venster is toegankelijk via: **AEM > Gereedschappen > Bewerkingen > Diagnose > Statuspostcode downloaden.**
+Hierdoor wordt het downloaden van een ritssluiting met nuttige informatie over de systeemstatus en configuratie geactiveerd. Het archief bevat instantieconfiguraties, een lijst met bundels, OSGI-, Sling-meetgegevens en statistische gegevens. Dit kan resulteren in een groot bestand. U kunt het effect van grote statusdossiers verminderen door het **venster van de Status van de Download te gebruiken **venster. Het venster is toegankelijk via: **AEM > Gereedschappen > Bewerkingen > Diagnose > Status ZIP downloaden.**
 
 In dit venster kunt u selecteren wat u wilt exporteren (logbestanden en of thread-dumps) en het aantal dagen logbestanden dat is opgenomen in de download ten opzichte van de huidige datum.
 
@@ -533,7 +538,7 @@ U kunt ook een momentopname van de heap downloaden om deze later te analyseren. 
 
 De pagina Automatisch onderhoud is een plaats waar u aanbevolen onderhoudstaken die zijn gepland voor periodieke uitvoering, kunt weergeven en volgen. De taken zijn geïntegreerd met het systeem van de health check. De taken kunnen ook manueel van de interface worden uitgevoerd.
 
-Om aan de pagina van het Onderhoud in het Dashboard van Verrichtingen te krijgen, moet u naar **Hulpmiddelen - Verrichtingen - Dashboard - Onderhoud** van het Welkome scherm van AEM gaan, of direct deze verbinding volgen:
+Om aan de pagina van het Onderhoud in het Dashboard van Verrichtingen te krijgen, moet u naar **Hulpmiddelen - Verrichtingen - Dashboard - Onderhoud** van het AEM Welkome scherm gaan, of direct deze verbinding volgen:
 
 `https://serveraddress:port/libs/granite/operations/content/maintenance.html`
 
@@ -559,11 +564,11 @@ U kunt de timing ook configureren door op het tandwielpictogram te drukken op ee
 
 >[!NOTE]
 >
->Aangezien AEM 6.1, kunnen de bestaande onderhoudsvensters ook worden gevormd om maandelijks te lopen.
+>Sinds AEM 6.1 kunnen de bestaande onderhoudsvensters ook elke maand worden geconfigureerd.
 
 ### Opschonen van revisie {#revision-clean-up}
 
-Voor meer informatie over het uitvoeren van Revision Clean Up voor AEM 6.4, [zie dit specifieke artikel](/help/sites-deploying/revision-cleanup.md).
+Voor meer informatie over het uitvoeren van de Opschonen van de Revisie voor AEM 6.4, [zie dit specifieke artikel](/help/sites-deploying/revision-cleanup.md).
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
@@ -572,9 +577,9 @@ Door de taak van de Opruiming van de Bindingen van Lucene te gebruiken, kunt u l
 Hoewel de onderhoudstaak werd ontwikkeld om op Lucene betrekking hebbende revisiehuisvuil te verminderen, zijn er algemene efficiëntiewinsten wanneer het runnen van de taak:
 
 * De wekelijkse uitvoering van de taak van de huisvuilinzameling van de gegevensopslag zal sneller voltooien
-* Het kan ook de algehele AEM-prestaties licht verbeteren
+* Het kan ook de algemene AEM prestaties licht verbeteren
 
-U kunt tot de taak van de Opruiming van de Bindingen van Lucene van toegang hebben: **AEM > Gereedschappen > Bewerkingen > Onderhoud > Dagelijks onderhoud > Overbodig schoonmaken** van Lucene Binaries.
+U kunt tot de taak van de Opruiming van de Bindingen van Lucene van toegang hebben: **AEM > Gereedschappen > Bewerkingen > Onderhoud > Dagelijks onderhoud > Opruiming** van Lucene Binaries.
 
 ### Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
@@ -608,7 +613,7 @@ U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies
 
    ![version_purge_taskconfiguration](assets/version_purge_taskconfiguration.png)
 
-**Met AEM 6.4**, kunt u de het onderhoudstaak van de Woorden van de Versie als volgt tegenhouden:
+**Met AEM 6.4** kunt u de onderhoudstaak van het Wissen van de Versie als volgt tegenhouden:
 
 * Automatisch - Als het geplande onderhoudsvenster wordt gesloten voordat de taak kan worden voltooid, wordt de taak automatisch beëindigd. Het wordt hervat wanneer het volgende onderhoudsvenster wordt geopend.
 * Handmatig - Klik op het pictogram **Stoppen** om de taak handmatig te stoppen op de onderhoudskaart Version Purge. Bij de volgende uitvoering wordt de taak veilig hervat.
@@ -692,7 +697,7 @@ Hierdoor wordt een overeenkomstige bron toegevoegd op /apps/granite/operations/c
 
 ## Systeemoverzicht {#system-overview}
 
-Het **systeemoverzicht dashboard** geeft een overzicht op hoog niveau van de configuratie, hardware en gezondheid van de AEM-instantie. Dit betekent dat de gezondheidsstatus van het systeem transparant is en dat alle informatie wordt samengevoegd in één dashboard.
+Het **systeemoverzicht dashboard** geeft een overzicht op hoog niveau van de configuratie, hardware en gezondheid van de AEM. Dit betekent dat de gezondheidsstatus van het systeem transparant is en dat alle informatie wordt samengevoegd in één dashboard.
 
 >[!NOTE]
 >
@@ -772,7 +777,7 @@ U kunt ook een `JSON` bestand downloaden met een overzicht van de dashboardgegev
    <td>Instantie</td> 
    <td> 
     <ul> 
-     <li>de AEM-versie</li> 
+     <li>de AEM</li> 
      <li>lijst met uitvoeringsmodi</li> 
      <li>de datum waarop de instantie is gestart</li> 
     </ul> </td> 
