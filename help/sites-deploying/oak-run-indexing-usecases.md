@@ -11,29 +11,32 @@ discoiquuid: 084075b8-826d-4f27-9342-35f33368f24f
 noindex: true
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '1392'
+ht-degree: 0%
 
 ---
 
 
 # Gebruiksscenario&#39;s voor indexeren van eikenrun.jar{#oak-run-jar-indexing-use-cases}
 
-Oak-looppas steunt het indexeren van gebruiksgevallen op de bevellijn zonder het moeten de uitvoering van deze gebruiksgevallen via de console JMX van AEM organiseren.
+De eiken-looppas steunt het indexeren gebruiksgevallen op de bevellijn zonder het moeten de uitvoering van deze gebruiksgevallen via AEM console JMX organiseren.
 
 De overkoepelende voordelen van het gebruiken van de eak-looppas.jar de bevelbenadering van het indexbevel voor het beheren van indexen van het Eak zijn:
 
-1. De opdracht Indexeren volgens einde biedt een nieuwe indexeringstoolset voor AEM 6.4.
+1. De opdracht Indexeren volgens einde biedt een nieuwe indexeringsgereedschapset voor AEM 6.4.
 1. De eik-looppas vermindert tijd-aan-herdex die re-indextijden op grotere bewaarplaatsen vermindert.
-1. Oak-run vermindert middelverbruik tijdens het opnieuw indexeren in AEM, resulterend in over het algemeen betere systeemprestaties.
+1. Door de eik-run neemt het verbruik van bronnen af tijdens het opnieuw indexeren van AEM, wat resulteert in betere systeemprestaties.
 1. Oak-run zorgt voor out-of-band re-indexering, ondersteunende situaties waarin productie beschikbaar moet zijn, en kan onderhoud of downtime die anders vereist is om opnieuw te indexeren, niet tolereren.
 
 Secties hieronder bieden voorbeeldopdrachten. Indexopdrachten die worden uitgevoerd door een eikel, ondersteunen alle NodeStore- en BlobStore-instellingen. De voorbeelden hieronder zijn rond montages die FileDataStore en SegmentNodeStore hebben.
 
 ## Hoofdlettergebruik 1 - Consistentiecontrole index {#usercase1indexconsistencycheck}
 
-Dit is een gebruiksgeval met betrekking tot indexcorruptie. In sommige gevallen kon niet worden vastgesteld welke indexen corrupt zijn. Daarom heeft Adobe de volgende gereedschappen beschikbaar gesteld:
+Dit is een gebruiksgeval met betrekking tot indexcorruptie. In sommige gevallen kon niet worden vastgesteld welke indexen corrupt zijn. Daarom heeft Adobe instrumenten verstrekt die:
 
 1. voert indexconsistentiecontroles op alle indexen uit en verstrekt een rapport waarop indexen geldig zijn en die ongeldig zijn;
-1. De werktuigen zijn bruikbaar, ook als de AEM niet toegankelijk is;
+1. De werktuigen zijn ook bruikbaar als AEM niet toegankelijk is;
 1. Het is gebruiksvriendelijk.
 
 Controleren op beschadigde indexen kan worden uitgevoerd via `--index-consistency-check` bewerking:
@@ -72,7 +75,7 @@ Dit hulpmiddel kan nu door Steun en de Beheerder van het Systeem worden gebruikt
 
 ## Hoofdlettergebruik 2 - Indexstatistieken {#usecase2indexstatistics}
 
-Voor het diagnosticeren van sommige gevallen rond vraagprestaties vereiste Adobe vaak bestaande indexdefinitie, index verwante statistieken van de klantenopstelling. Tot dusverre werd deze informatie verspreid over meerdere bronnen. Om het oplossen van problemen gemakkelijker te maken, heeft Adobe tooling gecreeerd die zal:
+Voor het diagnostiseren van sommige gevallen rond de Adobe van vraagprestaties vereiste vaak bestaande indexdefinitie, op index betrekking hebbende statistieken van de klantenopstelling. Tot dusverre werd deze informatie verspreid over meerdere bronnen. Om het oplossen van problemen gemakkelijker te maken, heeft Adobe tooling gecreeerd die zal:
 
 1. Alle indexdefinities in één JSON-bestand op het systeem dumpen.
 
@@ -115,14 +118,14 @@ Enkele punten die u wilt opmerken bij het opnieuw indexeren:
 * Het opnieuw indexeren gaat veel langzamer op `DocumentNodeStore` `SegmentNodeStore` instellingen dan op instellingen waar alle inhoud lokaal is.
 
 * Met het huidige ontwerp, terwijl het opnieuw indexeren gebeurt wordt de async indexeer geblokkeerd en alle andere async indexen worden verouderd en krijgen geen update voor de duur van het indexeren. Daarom kunnen gebruikers, als het systeem in gebruik is, geen bijgewerkte resultaten zien;
-* Bij de herindexering wordt de hele gegevensopslagruimte doorlopen, wat een hoge belasting kan betekenen voor de AEM-installatie en zo van invloed kan zijn op de gebruikerservaring;
+* Bij de herindexering wordt de gehele gegevensopslagruimte doorkruist, wat een grote belasting kan betekenen voor de installatie van de AEM en zo van invloed kan zijn op de gebruikerservaring.
 * Voor een `DocumentNodeStore` installatie waar herindexering een aanzienlijke hoeveelheid tijd kan kosten, als de verbinding met de Mongo-database halverwege de bewerking mislukt, moet de indexering vanaf nul worden hervat;
 
 * In sommige gevallen kan het opnieuw indexeren veel tijd in beslag nemen door het extraheren van tekst. Dit is vooral specifiek voor instellingen met veel PDF-bestanden, waar de tijd die aan tekstextractie wordt besteed invloed kan hebben op de indexatietijd.
 
 Om deze doelstellingen te bereiken, ondersteunt de werkset Indexering volgens het eikenstel verschillende modi voor herindexering die naar wens kunnen worden gebruikt. De opdracht voor indexeren met eikenuitvoering biedt de volgende voordelen:
 
-* **out-of-band herindexering** - het opnieuw omdraaien van eiken kan los van een lopende AEM-opstelling worden uitgevoerd en zo de impact op de in gebruik zijnde AEM-instantie minimaliseren;
+* **out-of-band herindexering** - het opnieuw omdraaien van eiken kan los van een lopende AEM worden uitgevoerd en zo de impact op de in gebruik zijnde AEM minimaliseren;
 
 * **opnieuw indexeren** buiten de rijstrook - Het opnieuw indexeren vindt plaats zonder dat dit invloed heeft op indexeringsbewerkingen. Dit betekent dat de asynchrone indexeerder andere indexen kan blijven indexeren;
 
@@ -140,7 +143,7 @@ java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-wr
 
 Dit biedt de volgende voordelen
 
-* Minimale invloed op het uitvoeren van AEM-instanties. De meeste leesbewerkingen kunnen worden uitgevoerd op secundaire servers en het uitvoeren van AEM-caches heeft geen nadelige invloed op alle verplaatsingen die nodig zijn voor opnieuw indexeren.
+* Minimale invloed op het uitvoeren van AEM instanties. De meeste leesbewerkingen kunnen worden uitgevoerd op secundaire servers en het uitvoeren van AEM caches heeft geen negatieve invloed op alle verplaatsingen die nodig zijn voor het opnieuw indexeren van de cache.
 * Gebruikers kunnen ook een JSON van een nieuwe of bijgewerkte index opgeven via de `--index-definitions-file` optie.
 
 ### Opnieuw indexeren - SegmentNodeStore {#reindexsegmentnodestore}
@@ -157,9 +160,8 @@ Voor `SegmentNodeStore` installaties heeft slechts één proces toegang tot segm
 
 Dit zou het volgende inhouden:
 
-1. 
-Staptekst
-1. Sluit de gegevensopslagruimte aan `oak-run` op de gegevensopslagruimte die door AEM wordt gebruikt in de modus Alleen-lezen en voer indexering uit. Een voorbeeld van hoe u dit kunt bereiken:
+1. Staptekst
+1. Sluit de gegevensopslagruimte `oak-run` aan op dezelfde gegevensopslagruimte die door AEM wordt gebruikt in de modus Alleen-lezen en voer indexering uit. Een voorbeeld van hoe u dit kunt bereiken:
 
    ```shell
    java -jar oak-run-1.7.6.jar index --fds-path=/Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/datastore/ --checkpoint 26b7da38-a699-45b2-82fb-73aa2f9af0e2 --reindex --index-paths=/oak:index/lucene /Users/dhasler/dev/cq/quickstart/target/crx-quickstart/repository/segmentstore/
@@ -167,11 +169,11 @@ Staptekst
 
 1. Importeer ten slotte de gemaakte indexbestanden via de `IndexerMBean#importIndex` bewerking vanaf het pad waar de indexeringsbestanden zijn opgeslagen nadat de bovenstaande opdracht is uitgevoerd en eik-run.
 
-In dit scenario hoeft u de AEM-server niet te stoppen of een nieuwe instantie in te stellen. Als indexering echter gepaard gaat met een verplaatsing van de hele opslagplaats, zou de I/O-belasting van de installatie toenemen, wat negatieve gevolgen zou hebben voor de prestaties bij uitvoering.
+In dit scenario hoeft u de AEM server niet te stoppen of een nieuwe instantie in te stellen. Als indexering echter gepaard gaat met een verplaatsing van de hele opslagplaats, zou de I/O-belasting van de installatie toenemen, wat negatieve gevolgen zou hebben voor de prestaties bij uitvoering.
 
-#### Online opnieuw indexeren - SegmentNodeStore - De AEM-instantie wordt afgesloten {#onlinereindexsegmentnodestoreaeminstanceisdown}
+#### Online opnieuw indexeren - SegmentNodeStore - de AEM instantie is gesloten {#onlinereindexsegmentnodestoreaeminstanceisdown}
 
-Voor `SegmentNodeStore` installaties die opnieuw worden gedexeerd, kunt u dit doen via één enkele opdracht voor het uitvoeren van een eik. De AEM-instantie moet echter worden afgesloten.
+Voor `SegmentNodeStore` installaties die opnieuw worden gedexeerd, kunt u dit doen via één enkele opdracht voor het uitvoeren van een eik. De AEM instantie moet echter worden afgesloten.
 
 U kunt het opnieuw indexeren met het volgende bevel teweegbrengen:
 
@@ -179,17 +181,17 @@ U kunt het opnieuw indexeren met het volgende bevel teweegbrengen:
 java -jar oak-run*.jar index --reindex --index-paths=/oak:index/lucene --read-write --fds-path=/path/to/datastore  /path/to/segmentstore/ 
 ```
 
-Het verschil tussen deze aanpak en de hierboven beschreven aanpak is dat het maken van controlepunten en het importeren van indexen automatisch worden uitgevoerd. Het nadeel is dat AEM tijdens het proces omlaag moet zijn.
+Het verschil tussen deze aanpak en de hierboven beschreven aanpak is dat het maken van controlepunten en het importeren van indexen automatisch worden uitgevoerd. Het nadeel is dat AEM tijdens het proces moet omlaag zijn.
 
 #### Opnieuw indexeren buiten bandbreedte - SegmentNodeStore {#outofbandreindexsegmentnodestore}
 
-In dit geval kunt u opnieuw indexeren op een gekloonde instelling om de invloed op de actieve AEM-instantie tot een minimum te beperken:
+In dit geval kunt u opnieuw indexeren op een gekloonde instelling om de invloed op de actieve AEM te minimaliseren:
 
 1. Een controlepunt maken via een JMX-bewerking. U kunt dit doen door naar de [JMX Console](/help/sites-administering/jmx-console.md) te gaan en naar `CheckpointManager`. Klik vervolgens op de bewerking **createCheckpoint(long p1)** met een hoge waarde voor de vervaldatum in seconden (bijvoorbeeld **2592000**).
 1. De `crx-quickstart` map naar een nieuwe computer kopiëren
 1. Herindexeren uitvoeren via de opdracht Index uitvoeren
 
-1. De gegenereerde indexbestanden kopiëren naar de AEM-server
+1. De gegenereerde indexbestanden kopiëren naar AEM server
 
 1. Importeer de indexbestanden via JMX.
 
@@ -209,5 +211,5 @@ Het proces dat u voor dit gebruiksgeval moet overwegen is:
 
 1. De bijgewerkte JSON wordt vervolgens aan de systeembeheerder gegeven
 1. De Beheerder van het systeem volgt de out-of-band benadering en bereidt de index op een verschillende installatie voor
-1. Zodra dit wordt voltooid, zullen de geproduceerde indexdossiers op een lopende installatie van AEM worden ingevoerd.
+1. Zodra dit wordt voltooid, zullen de geproduceerde indexdossiers op een lopende AEM installatie worden ingevoerd.
 
