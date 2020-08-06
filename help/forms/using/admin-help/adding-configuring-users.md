@@ -40,7 +40,7 @@ Wanneer u gebruikers creeert, kunt u hen aan groepen toevoegen en rollen toewijz
 
    >[!NOTE]
    >
-   >Als u om het even welke login kwestie met de gebruiker tegenkomt, zie [AEM Forms over gebruiker JEE er niet in slaagt aan login op AEM Forms op OSGi kant](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
+   >Als er een aanmeldingsprobleem optreedt met de gebruiker, raadpleegt u [AEM Forms on JEE user failed to login on AEM Forms on OSGi side](https://helpx.adobe.com/aem-forms/kb/AEM-users-fails-to-login.html).
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -72,7 +72,7 @@ Gebruik bijvoorbeeld geen onderstrepingstekens (_) in canonieke namen `sample_us
 
 **Landinstelling:** Landinstelling ISO van gebruiker
 
-**Sleutel zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM-formulieren kunnen bedrijfscalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [Domeinen](/help/forms/using/admin-help/adding-domains.md#adding-domains)toevoegen.)
+**Sleutel zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM formulieren kunnen zakelijke kalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier waarop u zakelijke kalendersleutels toewijst aan gebruikers hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie [Domeinen](/help/forms/using/admin-help/adding-domains.md#adding-domains)toevoegen.)
 
 Als u een lokaal of hybride domein gebruikt, wordt de informatie over gebruikers opgeslagen slechts in het gegevensbestand van het Beheer van de Gebruiker. Stel voor deze gebruikers de Business Calendar Key in op een tekenreeks. Wijs vervolgens de agenda-key van het bedrijf (de tekenreeks) toe aan een zakelijke kalender in de formulierworkflow.
 
@@ -88,7 +88,7 @@ In ondernemingsdomeinen, gebruik een niet-DN attribuut als gebruiker - identitei
 
 Controleer of de gebruikersnaam uniek is. Gebruik geen code die is toegewezen aan een verwijderde gebruiker.
 
-AEM-formulieren kunnen geen onderscheid maken tussen gebruikersaccounts die identieke gebruikers-id&#39;s en wachtwoorden hebben, maar tot verschillende domeinen behoren. Maak geen accounts met dezelfde gebruikersnaam op meerdere domeinen om dit probleem te voorkomen.
+AEM formulieren kunnen geen onderscheid maken tussen gebruikersaccounts die identieke gebruikers-id&#39;s en wachtwoorden hebben, maar tot verschillende domeinen behoren. Maak geen accounts met dezelfde gebruikersnaam op meerdere domeinen om dit probleem te voorkomen.
 
 Wanneer u SQL Server als uw database gebruikt, kunt u geen gebruikers-id maken die meer dan 255 tekens bevat.
 
@@ -131,6 +131,7 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 
    * Klik op de zoekgegevens **[!UICONTROL Find Group]** en vul deze in.
    * Als u de gebruiker aan een nieuwe groep wilt toevoegen, schakelt u het selectievakje voor de groep in, klikt u **[!UICONTROL OK]** en klikt u op **[!UICONTROL Save]**.
+
    >[!NOTE]
    >
    >Lokale gebruikers kunnen niet worden toegevoegd aan directorygroepen. Directorygebruikers kunnen echter wel aan lokale groepen worden toegevoegd.
@@ -158,20 +159,20 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 
 >[!NOTE]
 >
->Met AEM Forms op JEE kunnen gebruikers van de invoegtoepassing voor AEM-formulieren die op een OSGi worden uitgevoerd, ook worden herkend als AEM-gebruikers. Dit is vereist voor scenario&#39;s waarbij Single Sign-On tussen AEM Forms in JEE- en AEM-formulieren invoegtoepassingen op een OSGi vereist zijn (bijvoorbeeld HTML-werkruimte). Bovengenoemde schrappingsverrichting verwijdert een gebruiker slechts uit AEM Forms op JEE. De gebruiker wordt niet geschrapt van AEM Forms toe:voegen-op lopend op milieu OSGi. Maar om het even welke login poging die na het schrappen van de gebruiker wordt gemaakt (een login poging aan AEM Forms toe:voegen-op server JEE of AEM Forms toe:voegen-on op milieu OSGi) wordt ontkend.
+>Met AEM Forms on JEE kunnen gebruikers van de add-on AEM formulieren die op een OSGi worden uitgevoerd, ook worden herkend als AEM gebruikers. Dit is vereist voor scenario&#39;s waarbij een eenmalige aanmelding tussen AEM Forms op JEE en AEM formulieren invoegtoepassing op een OSGi vereist is (bijvoorbeeld HTML-werkruimte). Met bovengenoemde verwijderingsbewerking wordt alleen een gebruiker uit AEM Forms op JEE verwijderd. De gebruiker wordt niet geschrapt van AEM Forms toe:voegen-op lopend op milieu OSGi. Maar om het even welke login poging die na het schrappen van de gebruiker wordt gemaakt (een login poging aan de server van AEM Forms toe:voegen-op JEE of toe:voegen-on AEM Forms op milieu OSGi) wordt ontkend.
 
 ## Aangepaste handler voor aanmeldingsfouten maken {#create-custom-login-error-handler}
 
-Als een gebruiker zonder de vereiste AEM-formulieren en CQ-machtigingen zich probeert aan te melden bij de volgende toepassingen die zijn ingesloten in CQ, wordt de gebruiker omgeleid naar de standaard CQ 404-pagina met de fouttrace:
+Als een gebruiker zonder de vereiste AEM en CQ-machtigingen zich probeert aan te melden bij de volgende toepassingen die zijn ingesloten in CQ, wordt de gebruiker omgeleid naar de standaard CQ 404-pagina met de fouttrace:
 
 * Correspondentenbeheeroplossing
-* AEM-formulierwerkruimte
+* Werkruimte AEM formulieren
 
-   ***opmerking **: De Flex-werkruimte is verouderd voor de release van AEM-formulieren.*
+   ***opmerking **: De Flex-werkruimte is verouderd voor AEM formulierrelease.*
 
 * formulierbeheer
 * Procesrapportage
 
 CQ verstrekt een mechanisme om standaard 404 manager jsp met voeten te treden.
 
-Voor details op hoe te om de fout behandelende pagina aan te passen, zie het [Aanpassen van Pagina&#39;s die door de Handler](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) van de Fout in de Documentatie van de Adobe Experience Manager worden getoond.
+Zie Pagina&#39;s [aanpassen die worden weergegeven door de foutafhandeling](https://docs.adobe.com/docs/en/cq/current/developing/customizing_error_handler_pages.html) in de Adobe Experience Manager-documentatie voor meer informatie over het aanpassen van de pagina voor foutafhandeling.
