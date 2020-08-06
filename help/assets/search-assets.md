@@ -1,16 +1,19 @@
 ---
 title: Middelen zoeken in AEM
-description: Leer hoe u de vereiste elementen in AEM kunt vinden met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
+description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '550'
+ht-degree: 1%
 
 ---
 
 
 # Middelen zoeken in AEM {#search-assets-in-aem}
 
-Leer hoe u de vereiste elementen in AEM kunt vinden met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
+Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 
 Gebruik het deelvenster Filters om te zoeken naar elementen, mappen, tags en metagegevens. U kunt delen van een tekenreeks zoeken met de jokertekenasterisk.
 
@@ -46,7 +49,7 @@ U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen/verwij
 
 Met het deelvenster Filters kunt u meer granulariteit toevoegen aan uw zoekervaring en de zoekfunctionaliteit veelzijdiger maken. U kunt gemakkelijk naar het gewenste detailniveau gaan.
 
-Als u bijvoorbeeld een afbeelding zoekt, kunt u met de voorspelling **[!UICONTROL Bestandstype]** kiezen of u een bitmapafbeelding of een vectorafbeelding wilt.
+Als u bijvoorbeeld een afbeelding zoekt, kunt u met de voorspelling **[!UICONTROL File Type]** kiezen of u een bitmapafbeelding of een vectorafbeelding wilt.
 
 ![image_type](assets/image_type.png)
 
