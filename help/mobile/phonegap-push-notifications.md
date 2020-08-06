@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: ed8c51d2-5aac-4fe8-89e8-c175d4ea1374
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '3293'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-Het is van cruciaal belang dat u gebruikers van uw AEM Mobile-app onmiddellijk op de hoogte kunt stellen van belangrijke meldingen voor de waarde van een mobiele app en de marketingcampagnes. Hieronder wordt beschreven welke stappen moeten worden uitgevoerd om uw app pushmeldingen te laten ontvangen en hoe u pushberichten van AEM Mobile kunt configureren en verzenden naar de toepassing die op de telefoon is geïnstalleerd. Daarnaast wordt in deze sectie beschreven hoe u de functie [Diepe koppeling](#deeplinking) kunt configureren voor uw pushberichten.
+Het is van cruciaal belang dat u gebruikers van de AEM Mobile-app onmiddellijk op de hoogte kunt stellen van belangrijke meldingen voor de waarde van een mobiele app en de marketingcampagnes. Hieronder wordt beschreven welke stappen moeten worden uitgevoerd om uw app pushmeldingen te laten ontvangen, en hoe u pushberichten van AEM Mobile naar de toepassing kunt configureren en verzenden die op de telefoon is geïnstalleerd. Daarnaast wordt in deze sectie beschreven hoe u de functie [Diepe koppeling](#deeplinking) kunt configureren voor uw pushberichten.
 
 >[!NOTE]
 >
->*Pushmeldingen zijn niet gegarandeerd; ze lijken meer op aankondigingen . Er wordt alles aan gedaan om ervoor te zorgen dat iedereen ze ontvangt, maar het is geen gegarandeerd leveringsmechanisme. De tijd die nodig is om een push-systeem te leveren kan ook variëren van minder dan een seconde tot maximaal een half uur.*
+>*Pushmeldingen worden niet gegarandeerd geleverd; ze lijken meer op aankondigingen . Er wordt alles aan gedaan om ervoor te zorgen dat iedereen ze ontvangt, maar het is geen gegarandeerd leveringsmechanisme. De tijd die nodig is om een push-systeem te leveren kan ook variëren van minder dan een seconde tot maximaal een half uur.*
 
-Het gebruik van pushberichten met AEM vereist een aantal verschillende technologieën. Ten eerste moet een serviceprovider voor pushberichten worden gebruikt om de meldingen en apparaten te beheren (dit gebeurt nog niet door AEM). Twee leveranciers worden gevormd uit-van-de-doos met AEM: [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (of SNS) en [Pushwoosh](https://www.pushwoosh.com/). Ten tweede moet de pushtechnologie voor het desbetreffende mobiele besturingssysteem de juiste service doorlopen — Apple&#39;s Push Notification Service (APNS) voor iOS-apparaten. en Google Cloud Messaging (of GCM) voor Android-apparaten. Hoewel AEM niet rechtstreeks met deze platformspecifieke services communiceert, moeten sommige gerelateerde configuratiegegevens samen met de meldingen door AEM worden verstrekt om deze services in staat te stellen de push uit te voeren.
+Het gebruik van pushberichten met AEM vereist een aantal verschillende technologieën. Ten eerste moet een serviceprovider voor pushberichten worden gebruikt om de meldingen en apparaten te beheren (AEM doet dit nog niet). Twee leveranciers worden gevormd uit-van-de-doos met AEM: [Amazon Simple Notification Service](https://aws.amazon.com/sns/) (of SNS) en [Pushwoosh](https://www.pushwoosh.com/). Ten tweede moet de pushtechnologie voor het desbetreffende mobiele besturingssysteem de juiste service doorlopen — Apple&#39;s Push Notification Service (APNS) voor iOS-apparaten. en Google Cloud Messaging (of GCM) voor Android-apparaten. Hoewel AEM niet rechtstreeks met deze platformspecifieke services communiceert, moeten sommige gerelateerde configuratiegegevens samen met de meldingen worden verstrekt om deze services in staat te stellen de push uit te voeren.
 
 Na installatie en configuratie (zoals hieronder uitgelegd) werkt het als volgt:
 
@@ -36,22 +39,22 @@ Na installatie en configuratie (zoals hieronder uitgelegd) werkt het als volgt:
 1. De kernleverancier duwt het bericht aan alle apparaten die voor die duw worden geregistreerd. Voor elk apparaat gebruikt het het cellulaire gegevensnetwerk of WiFi, welke momenteel beschikbaar op het apparaat is.
 1. De melding wordt weergegeven op het apparaat als de app waarvoor deze is geregistreerd, niet wordt uitgevoerd. Een gebruiker die op de melding tikt, start de app en geeft de melding weer in de app. Als de toepassing al wordt uitgevoerd, wordt alleen de melding in de app weergegeven.
 
-Deze versie van AEM biedt ondersteuning voor mobiele iOS- en Android-apparaten.
+Deze versie van AEM biedt ondersteuning voor mobiele apparaten met iOS en Android.
 
 ## Overzicht en procedure {#overview-and-procedure}
 
 Als u pushberichten wilt gebruiken in een AEM Mobile-app, moet u de volgende stappen op hoog niveau uitvoeren.
 
-Een AEM-ontwikkelaar zal doorgaans:
+Een AEM ontwikkelaar:
 
 1. Registreren bij Apple en Google Messaging Services
 1. Registreer met de dienst van het duw overseinen en vorm het
 1. Pushondersteuning toevoegen aan de app
 1. Een telefoon voorbereiden voor testen
 
-Terwijl een AEM-beheerder:
+Terwijl een AEM beheerder:
 
-1. Push on AEM-apps configureren
+1. Push-on voor AEM toepassingen configureren
 1. De app ontwikkelen en implementeren
 1. Een pushmelding verzenden
 1. deep linking configureren *(optioneel)*
@@ -76,7 +79,7 @@ U moet de stappen [hier](https://developer.android.com/google/gcm/gs.html) volge
 
 In de volgende stappen wordt een andere methode getoond voor het maken van GCM API-sleutels:
 
-1. Meld u aan bij google en ga naar de pagina [Developer van](https://developers.google.com/mobile/add?platform=android&cntapi=gcm)Google.
+1. Meld u aan bij google en ga naar de pagina [Developer van](https://developers.google.com/mobile/add?platform=android&amp;cntapi=gcm)Google.
 1. Kies uw app in de lijst (of maak een nieuwe).
 1. Voer onder Android-pakketnaam uw toepassings-id in, bijvoorbeeld `com.adobe.cq.mobile.weretail.outdoorsapp`. (Als dat niet werkt, probeert u het opnieuw met &quot;test.test&quot;.)
 1. Klik op **Doorgaan om services te kiezen en te configureren**
@@ -93,21 +96,21 @@ AEM is geconfigureerd om een van de drie services te gebruiken voor pushberichte
 
 * Amazon SNS
 * Pushwoosh
-* Adobe Mobile Services
+* Adobe mobiele services
 
-*Met Amazon SNS* - en *Pushwoosh* -configuraties kunt u geduwd worden van binnen AEM-schermen.
+*Met Amazon SNS* - en *Pushwoosh* -configuraties kunt u geduwd worden van binnen AEM schermen.
 
 *Met de configuratie van Adobe Mobile Services* kunt u pushberichten configureren en verzenden vanuit Adobe Mobile Services met een Adobe Analytics-account (maar de app moet worden gemaakt met deze configuratieset om pushmeldingen van AMS in te schakelen).
 
-#### De Amazon SNS-communicatieservice gebruiken {#using-the-amazon-sns-messaging-service}
+#### Het gebruiken van de het overseinendienst van Amazon SNS {#using-the-amazon-sns-messaging-service}
 
 >[!NOTE]
 >
->*U vindt[hier](https://aws.amazon.com/sns/)informatie over Amazon SNS en een koppeling om een nieuwe AWS-account te maken. Je krijgt een gratis account voor een jaar.*
+>*Hier vindt u informatie over Amazon SNS en een koppeling om een nieuwe AWS-account te maken. U vindt deze[koppeling](https://aws.amazon.com/sns/). Je krijgt een gratis account voor een jaar.*
 
-Als u geen gebruik wilt maken van Amazon SNS, kunt u deze stappen overslaan.
+Als u geen SNS van Amazon wilt gebruiken kunt u deze stappen overslaan.
 
-Voer de volgende stappen uit om Amazon SNS in te stellen voor pushmeldingen:
+Ga als volgt te werk om Amazon SNS in te stellen voor pushberichten:
 
 1. **Registreren met Amazon SNS**
 
@@ -121,6 +124,7 @@ Voer de volgende stappen uit om Amazon SNS in te stellen voor pushmeldingen:
    1. Klik op Toegangssleutels, en in de ruimte hieronder, klik **creëren Nieuwe Sleutel** van de Toegang.
    1. Klik op Toegangssleutel **** tonen en kopieer en sla de toegangstoets-id en de beveiligingssleutel voor toegang op. Als u de optie kiest om de toetsen te downloaden, krijgt u een CSV-bestand dat dezelfde waarden bevat.
    1. Andere aan beveiliging gerelateerde certificaten en andere kunnen op deze pagina worden beheerd.
+
    >[!NOTE]
    >
    >Een toegangstoets kan voor meerdere apps worden gebruikt.
@@ -138,22 +142,23 @@ Voer de volgende stappen uit om Amazon SNS in te stellen voor pushmeldingen:
    1. Klik op Onderwerp **** maken en kies een onderwerpnaam. Registreer alle velden, zoals Onderwerpnaam, Onderwerpeigenaar, Gebied en Weergavenaam.
    1. Klik op **Andere onderwerphandelingen** > Onderwerpbeleid **** bewerken. Onder **Toestaan deze gebruikers om aan dit onderwerp** in te schrijven, uitgezochte **Iedereen.**
    1. Klik op **Beleid** bijwerken.
+
    >[!NOTE]
    >
    >U kunt veelvoudige onderwerpen voor verschillende scenario&#39;s zoals dev, test, demo, etc. tot stand brengen. De rest van de configuratie van SNS kan het zelfde blijven. Ontwikkel app met het verschillende onderwerp; naar dat onderwerp verzonden pushmeldingen worden alleen ontvangen door de toepassing die met dat onderwerp is gemaakt.
 
-1. **Platformtoepassingen maken**
+1. **Platform-toepassingen maken**
 
-   1. Klik op Toepassingen en vervolgens op Platformtoepassing maken. Kies een naam en selecteer een platform (APNS voor iOS, GCM voor Android). Afhankelijk van het platform moeten andere velden worden ingevuld:
+   1. Klik op Toepassingen en vervolgens op Toepassing Platform maken. Kies een naam en selecteer een platform (APNS voor iOS, GCM voor Android). Afhankelijk van het platform moeten andere velden worden ingevuld:
 
       1. Voor APNS moeten een P12-bestand, een wachtwoord, een certificaat en een persoonlijke sleutel worden ingevoerd. Deze hadden in de stap *Gebruikend de Dienst van het Push- Bericht van Apple (APNS)* hierboven moeten worden verkregen.
       1. Voor GCM moet een API-sleutel worden ingevoerd. Dit had u in de stap *Werken met de bovenstaande GCM-service* (Google Cloud Messaging) moeten verkrijgen.
-   1. Herhaal de bovenstaande stap eenmaal voor elk platform dat u wilt ondersteunen. Als u zowel naar iOS als naar Android wilt gaan, moeten er twee platformtoepassingen worden gemaakt.
+   1. Herhaal de bovenstaande stap eenmaal voor elk platform dat u wilt ondersteunen. Als u naar zowel iOS als Android wilt gaan, moeten twee Platforms-toepassingen worden gemaakt.
 
 
 1. **Een identiteitsgroep maken**
 
-   1. Met [Cognito](https://console.aws.amazon.com/cognito) maakt u een identiteitsgroep waarin de basisgegevens van niet-geverifieerde gebruikers worden opgeslagen. Op dit moment worden alleen de regio&#39;s &#39;us-East&#39; en &#39;eu&#39; ondersteund door Amazon Cognito.
+   1. Met [Cognito](https://console.aws.amazon.com/cognito) maakt u een identiteitsgroep waarin de basisgegevens van niet-geverifieerde gebruikers worden opgeslagen. Opmerking: Amazon Cognito biedt momenteel alleen ondersteuning voor &quot;us-East&quot;- en &quot;eu&quot;-regio&#39;s.
    1. Geef deze een naam en schakel het selectievakje &#39;Toegang tot niet-geverifieerde identiteiten inschakelen&#39; in.
    1. Klik op Toestaan op de volgende pagina (&quot;*Uw Cognito-identiteiten vereisen toegang tot uw bronnen*&quot;).
    1. Rechtsboven op de pagina klikt u op de koppeling &#39;*Naamgroep bewerken&#39;*. De id van de identiteitspool wordt weergegeven. Sla deze tekst op voor later.
@@ -166,6 +171,7 @@ Voer de volgende stappen uit om Amazon SNS in te stellen voor pushmeldingen:
    1. Klik op de rol die in de vorige stap is gemaakt, met de naam Cognito_&lt;yourIdentityPoolName>Unauth_Role. Neem de weergegeven &quot;Rol ARN&quot; op.
    1. Open Inline-beleid als dit nog niet geopend is. Hier moet een beleid worden weergegeven met een naam zoals oneClick_Cognito_&lt;yourIdentityPoolName>Unauth_Role_1234567890123.
    1. Klik op &quot;Beleid bewerken&quot;. Vervang de inhoud van het Beleidsdocument door dit fragment van JSON:
+
    <table> 
     <tbody> 
      <tr> 
@@ -200,7 +206,7 @@ Pushwoosh gebruiken:
 
 >[!NOTE]
 >
->*Als een tweede app in AEM met dezelfde app-id (en andere gerelateerde waarden) is geconfigureerd: API Access Token en GCM-id), alle pushmeldingen die via de tweede app op AEM worden verzonden, gaan naar een andere app met die app-id.*
+>*Als een tweede app is geconfigureerd in AEM met dezelfde app-id (en andere gerelateerde waarden: API Access Token en GCM-id), alle pushmeldingen die via de tweede app op AEM worden verzonden, gaan naar een andere app met die app-id.*
 
 ### Stap 3: Pushondersteuning toevoegen aan de app {#step-add-push-support-to-the-app}
 
@@ -256,27 +262,27 @@ Met XCode 8.1, alvorens de Berichten van de Duw te gebruiken moet u naar het lus
 
 U kunt als volgt de app op een Android-telefoon installeren met CLI (zie hieronder: **Stap 6 - bouw en stel app**) op, moet u eerst de telefoon op &quot;ontwikkelaarwijze&quot;zetten. Zie Opties voor [ontwikkelaars op](https://developer.android.com/tools/device.html#developer-device-options) apparaten inschakelen voor meer informatie hierover.
 
-### Stap 5: Push on AEM-apps configureren {#step-configure-push-on-aem-apps}
+### Stap 5: Push-on voor AEM toepassingen configureren {#step-configure-push-on-aem-apps}
 
 Alvorens te bouwen en aan uw gevormde mobiele apparaat op te stellen, moet u de berichtmontages voor de overseinendienst vormen u besloot te gebruiken.
 
 1. Maak de juiste machtigingsgroepen voor pushberichten.
 1. Meld u aan bij AEM als de juiste gebruiker en klik op het tabblad Apps.
 1. Klik op de app.
-1. Zoek de tegel Cloud Services beheren en klik op het potlood om uw cloudconfiguraties te wijzigen.
-1. Selecteer in de berichtconfiguratie Amazon SNS Connection, Pushwoosh Connection of Adobe Mobile Services.
+1. Zoek het element Cloud Services beheren en klik op het potlood om de wolkenconfiguratie te wijzigen.
+1. Selecteer als berichtconfiguratie Amazon SNS Connection, Pushwoosh Connection of Adobe Mobile Services.
 1. Voer de providereigenschappen in en klik op Verzenden om deze op te slaan, en op Gereed. Zij worden in dit stadium niet op afstand gecontroleerd, behalve in het geval van AMS.
-1. U moet nu de configuratie zien die u zojuist hebt ingevoerd in de tegel Cloud Services beheren.
+1. U zou nu moeten zien config u enkel op de Manage Cloud Services tegel inging.
 
 ### Stap 6: De app ontwikkelen en implementeren {#step-build-and-deploy-the-app}
 
-**** Opmerking: Raadpleeg ook onze instructies [hier](/help/mobile/building-app-mobile-phonegap.md) over het ontwikkelen van PhoneGap-toepassingen.
+**Opmerking:** Raadpleeg ook onze instructies [hier](/help/mobile/building-app-mobile-phonegap.md) over het ontwikkelen van PhoneGap-toepassingen.
 
 Er zijn twee manieren om uw app te maken en te implementeren met PhoneGap.
 
-**** Opmerking: Voor het testen van pushberichten zijn emulators niet voldoende omdat pushberichten een afzonderlijk protocol gebruiken tussen de pushprovider (Apple of Google) en het apparaat. De huidige hardware en emulators van Mac/PC ondersteunen dit niet.
+**Opmerking:** Voor het testen van pushberichten zijn emulators niet voldoende omdat pushberichten een afzonderlijk protocol gebruiken tussen de pushprovider (Apple of Google) en het apparaat. De huidige hardware en emulators van Mac/PC ondersteunen dit niet.
 
-1. *PhoneGap Build* is een service die wordt aangeboden door PhoneGap en waarmee u uw app op hun servers kunt maken en rechtstreeks naar uw apparaat kunt downloaden. Raadpleeg de documentatie [](https://build.phonegap.com/) van PhoneGap Build voor meer informatie over het instellen en gebruiken van PhoneGap Build.
+1. *PhoneGap Build* is een service die wordt aangeboden door PhoneGap en waarmee u uw app op de servers kunt maken en rechtstreeks naar uw apparaat kunt downloaden. Raadpleeg de documentatie bij de [PhoneGap Build](https://build.phonegap.com/) voor meer informatie over het instellen en gebruiken van PhoneGap Build.
 
 1. *Met PhoneGap Command Line Interface* (CLI) kunt u een uitgebreide set PhoneGap-opdrachten op uw opdrachtregel gebruiken om uw app te maken, te debuggen en te implementeren. Raadpleeg de documentatie [van de](https://docs.phonegap.com/en/edge/guide_cli_index.md.html#The%20Command-Line%20Interface) PhoneGap-ontwikkelaar voor meer informatie over het instellen en gebruiken van PhoneGap CLI.
 
@@ -286,7 +292,7 @@ Voer de volgende stappen uit om een nieuw bericht te maken en te verzenden.
 
 1. Een nieuwe melding maken
 
-   * Zoek in het dashboard van uw AEM Mobile-app de tegel voor pushmeldingen.
+   * Zoek in het dashboard van uw AEM Mobile-app de tegel Push Notifications.
    * Kies &quot;Maken&quot; in het menu in de rechterbovenhoek. Merk op dat deze knoop niet beschikbaar zal zijn tot de wolkenconfig eerst wordt geplaatst.
    * Voer in de wizard Melding maken een titel en een bericht in en klik vervolgens op de knop &quot;Maken&quot;. Uw melding is nu klaar om direct of later te worden verzonden. Deze kan worden bewerkt en het bericht en/of de titel kan worden gewijzigd en opgeslagen.
 
@@ -298,18 +304,18 @@ Voer de volgende stappen uit om een nieuw bericht te maken en te verzenden.
 
 1. De resultaten verwerken
 
-   * Als de pushmeldingenservice (Amazon SNS of Pushwoosh) de verzendaanvraag ontvangt, deze als geldig bevestigt en deze naar de native providers (APNS en GCM) verzendt, wordt het dialoogvenster Verzenden zonder bericht gesloten. In de meldingslijst wordt de status van die melding vermeld als Verzonden.
+   * Als de pushmeldingenservice (Amazon SNS of Pushwoosh) het verzendverzoek ontvangt, deze als geldig bevestigt en het naar de native providers (APNS en GCM) verzendt, wordt het verzenddialoogvenster zonder bericht gesloten. In de meldingslijst wordt de status van die melding vermeld als Verzonden.
    * Als het verzenden van de push-berichten mislukt, wordt in het dialoogvenster een bericht weergegeven dat het probleem aangeeft. In de meldingslijst wordt de status van die melding weergegeven als Fout, maar als het probleem is verholpen, kan de melding opnieuw worden verzonden. In het geval van een fout, zou de extra fouteninformatie in het logboek van de serverfout moeten verschijnen.
    * Er zijn enkele platformverschillen tussen iOS- en Android-pushmeldingen. Onder hen:
 
       * De toepassing wordt gestart nadat deze is geïmplementeerd op Android en wordt gemaakt met CLI. Op iOS moet u de toepassing handmatig starten. Aangezien de stap voor pushregistratie plaatsvindt bij het opstarten, kunnen Android-apps direct pushmeldingen ontvangen (omdat deze zijn gestart en geregistreerd) terwijl iOS-apps dat niet doen.
       * Op Android staat de tekst van de knop OK in alle hoofdletters (en in alle andere knoppen die worden toegevoegd aan de meldingen in de app), maar in iOS niet.
 
-Voor AMS-pushmeldingen moeten meldingen worden samengesteld en verzonden vanaf de AMS-server. AMS biedt extra mogelijkheden voor pushmeldingen die verder gaan dan die welke door AEM&#39;s meldingen met AWS en Pushwoosh worden geboden.
+Voor AMS-pushmeldingen moeten meldingen worden samengesteld en verzonden vanaf de AMS-server. AMS biedt extra mogelijkheden voor pushmeldingen naast die welke worden geboden door AEM berichten met AWS en Pushwoosh.
 
 >[!NOTE]
 >
->*Pushmeldingen zijn niet gegarandeerd; ze lijken meer op aankondigingen . Er wordt alles aan gedaan om ervoor te zorgen dat iedereen het hoort, maar het is geen gegarandeerd leveringsmechanisme. De tijd die nodig is om een push-systeem te leveren kan ook variëren van minder dan een seconde tot maximaal een half uur.*
+>*Pushmeldingen worden niet gegarandeerd geleverd; ze lijken meer op aankondigingen . Er wordt alles aan gedaan om ervoor te zorgen dat iedereen het hoort, maar het is geen gegarandeerd leveringsmechanisme. De tijd die nodig is om een push-systeem te leveren kan ook variëren van minder dan een seconde tot maximaal een half uur.*
 
 ### Diepe koppeling met pushmeldingen configureren {#configuring-deep-linking-with-push-notifications}
 
@@ -325,11 +331,11 @@ Maak het bericht, voeg een knoptekst en koppelingspad toe voor de optionele kopp
 >
 >Als u de tegel voor pushmeldingen in het dashboard wilt openen, volgt u de onderstaande stappen.
 
-1. Klik op de bewerking in de rechterbovenhoek van de tegel **Cloud Services** beheren.
+1. Klik op de bewerking in de rechterbovenhoek van het **element Cloud Services** beheren.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
-1. Selecteer de **Pushwoosh Connection**. Click **Next**.
+1. Selecteer de **Pushwoosh Connection**. Klik op **Next**.
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
