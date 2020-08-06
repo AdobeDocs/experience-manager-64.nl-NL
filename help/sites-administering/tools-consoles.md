@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 2bf8496d-a485-4b39-a6c9-07222b66d0cd
 translation-type: tm+mt
 source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+workflow-type: tm+mt
+source-wordcount: '883'
+ht-degree: 9%
 
 ---
 
 
 # Gereedschapsconsoles{#tools-consoles}
 
-Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde hulpmiddelen die u helpen uw websites, digitale elementen en andere aspecten van de opslagplaats voor inhoud te beheren. Er zijn momenteel twee flavors van de console van **Hulpmiddelen** afhankelijk van UI u gebruikt:
+Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flavors van de console van **Hulpmiddelen** afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
@@ -42,7 +45,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
    <td>De context <a href="/help/sites-developing/client-context.md">van de</a> Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. Hier worden de standaard- en marketingcloudconfiguraties gehouden.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Configuraties voor cloudservices<br /> </td> 
+   <td>Configuraties van Cloud Services<br /> </td> 
    <td> </td> 
    <td>Bevat configuraties die gerelateerd zijn aan <a href="/help/sites-administering/marketing-cloud.md">Integratie met de Adobe Marketing Cloud</a>.</td> 
   </tr> 
@@ -104,7 +107,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">Externe koppelingencontrole</a></td> 
    <td> </td> 
-   <td>Scant alle inhoudspagina's binnen uw instantie AEM en controleert om het even welke externe verbindingen. Er wordt een lijst met geldige en ongeldige koppelingen weergegeven.</td> 
+   <td>Scant alle inhoudspagina's binnen uw AEM instantie en controleert om het even welke externe verbindingen. Er wordt een lijst met geldige en ongeldige koppelingen weergegeven.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">Mobiel</a></td> 
@@ -124,7 +127,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   <tr> 
    <td><a href="/help/sites-administering/package-manager.md">Pakketten</a></td> 
    <td> </td> 
-   <td>Een alternatieve koppeling naar Pakketbeheer waarmee de pakketten worden weergegeven die voor AEM WCM zijn geladen. Gelijkaardig aan de informatie die in de Manager van het Pakket van CRX wordt getoond.</td> 
+   <td>Een alternatieve verbinding aan de Manager van het Pakket die de pakketten toont die voor AEM WCM zijn geladen. Gelijkaardig aan de informatie die in de Manager van het Pakket van CRX wordt getoond.</td> 
   </tr> 
   <tr> 
    <td>Replicatie - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">replicatieagents</a></td> 
@@ -200,7 +203,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
  <tbody> 
   <tr> 
    <th>Sectie</th> 
-   <th>Option</th> 
+   <th>Optie</th> 
    <th>Doel</th> 
   </tr> 
   <tr> 
@@ -235,7 +238,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/security.md">Gebruikers en groepen</a></td> 
+   <td><a href="/help/sites-administering/security.md">Gebruikers en groepen </a></td> 
    <td>Uw gebruikers en groepen beheren.</td> 
   </tr> 
   <tr> 
@@ -246,7 +249,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   <tr> 
    <td> </td> 
    <td><a href="https://helpx.adobe.com/cloud-manager/using/using-cloud-manager.html">Cloud Services</a></td> 
-   <td>Maak verbinding met Adobe Marketing Cloud.</td> 
+   <td>Verbind met Adobe Marketing Cloud.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -285,7 +288,7 @@ Met de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde h
   </tr> 
   <tr> 
    <td> </td> 
-   <td><a href="/help/sites-administering/package-manager.md#package-share">Pakket delen</a></td> 
+   <td><a href="/help/sites-administering/package-manager.md#package-share">Package Share</a></td> 
    <td>Download toepassingen van Adobe en de gemeenschap.<br /> </td> 
   </tr> 
   <tr> 
