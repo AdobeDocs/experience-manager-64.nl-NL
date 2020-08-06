@@ -1,8 +1,8 @@
 ---
 title: Aangepaste verzendactie schrijven voor adaptieve formulieren
 seo-title: Aangepaste verzendactie schrijven voor adaptieve formulieren
-description: Met AEM Forms kunt u een aangepaste handeling Verzenden maken voor adaptieve formulieren. In dit artikel wordt de procedure beschreven voor het toevoegen van aangepaste verzendactie voor adaptieve formulieren.
-seo-description: Met AEM Forms kunt u een aangepaste handeling Verzenden maken voor adaptieve formulieren. In dit artikel wordt de procedure beschreven voor het toevoegen van aangepaste verzendactie voor adaptieve formulieren.
+description: Met AEM Forms kunt u aangepaste verzendactie maken voor adaptieve formulieren. In dit artikel wordt de procedure beschreven voor het toevoegen van aangepaste verzendactie voor adaptieve formulieren.
+seo-description: Met AEM Forms kunt u aangepaste verzendactie maken voor adaptieve formulieren. In dit artikel wordt de procedure beschreven voor het toevoegen van aangepaste verzendactie voor adaptieve formulieren.
 uuid: c98947b1-21db-47d0-8f94-2ab668a477fc
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: customization
 discoiquuid: 607b2242-d81c-4e7a-9e56-e6dabffccbb6
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '1658'
+ht-degree: 0%
 
 ---
 
 
 # Aangepaste verzendactie schrijven voor adaptieve formulieren {#writing-custom-submit-action-for-adaptive-forms}
 
-Voor adaptieve formulieren zijn acties verzenden vereist om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) bevat [OOTB-verzendacties](/help/forms/using/configuring-submit-actions.md) die aangepaste taken demonstreren die u kunt uitvoeren met de door de gebruiker verzonden gegevens. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
+Voor adaptieve formulieren zijn acties verzenden vereist om door de gebruiker opgegeven gegevens te verwerken. Een handeling Verzenden bepaalt de taak die wordt uitgevoerd voor de gegevens die u verzendt met behulp van een adaptief formulier. Adobe Experience Manager (AEM) bevat [OOTB-verzendacties](/help/forms/using/configuring-submit-actions.md) die aangepaste taken demonstreren die u kunt uitvoeren met behulp van door de gebruiker verzonden gegevens. U kunt bijvoorbeeld taken uitvoeren, zoals het verzenden van e-mail of het opslaan van de gegevens.
 
 ## Workflow voor een handeling Verzenden {#workflow-for-a-submit-action}
 
-Het stroomschema geeft de workflow weer voor een handeling Verzenden die wordt geactiveerd wanneer u in een adaptief formulier op de knop **[!UICONTROL Verzenden]** klikt. De bestanden in de component Bestandsbijlage worden geüpload naar de server en de formuliergegevens worden bijgewerkt met de URL&#39;s van de geüploade bestanden. Binnen de client worden de gegevens opgeslagen in de JSON-indeling. De client verzendt een Ajax-aanvraag naar een interne servlet die de opgegeven gegevens in massa neemt en deze in XML-indeling retourneert. De client sorteert deze gegevens met actievelden. De gegevens worden via een handeling Formulier verzenden verzonden naar de uiteindelijke servlet (Guide verzendt servlet). Dan, door:sturen servlet de controle aan de Submit actie. De handeling Verzenden kan het verzoek doorsturen naar een andere kiesbron of de browser omleiden naar een andere URL.
+Het stroomschema geeft de workflow weer voor een handeling Verzenden die wordt geactiveerd wanneer u op de **[!UICONTROL Submit]** knop klikt in een adaptief formulier. De bestanden in de component Bestandsbijlage worden geüpload naar de server en de formuliergegevens worden bijgewerkt met de URL&#39;s van de geüploade bestanden. Binnen de client worden de gegevens opgeslagen in de JSON-indeling. De client verzendt een Ajax-aanvraag naar een interne servlet die de opgegeven gegevens in massa neemt en deze in XML-indeling retourneert. De client sorteert deze gegevens met actievelden. De gegevens worden via een handeling Formulier verzenden verzonden naar de uiteindelijke servlet (Guide verzendt servlet). Dan, door:sturen servlet de controle aan de Submit actie. De handeling Verzenden kan het verzoek doorsturen naar een andere kiesbron of de browser omleiden naar een andere URL.
 
 ![Stroomdiagram dat de workflow voor een verzendactie weergeeft](assets/diagram1.png)
 
@@ -82,19 +85,19 @@ Als de handeling geen voorwaarts pad biedt, leidt de verzendserver de browser om
 >
 >Een auteur verstrekt Redirect URL (gebruikend de Dank u Configuratie van de Pagina). [OOTB verzendt Acties](/help/forms/using/configuring-submit-actions.md) gebruikt Redirect URL om browser van het middel om te leiden dat de voorwaartse weg verwijzingen.
 >
->U kunt een douane schrijven voorlegt actie die een verzoek aan een middel of servlet door:sturen. Adobe raadt aan dat het script dat de verwerking van bronnen uitvoert voor het voorwaartse pad, de aanvraag omleidt naar de Redirect URL wanneer de verwerking is voltooid.
+>U kunt een douane schrijven voorlegt actie die een verzoek aan een middel of servlet door:sturen. Adobe adviseert dat het manuscript dat middel behandeling voor de voorwaartse weg uitvoert het verzoek aan Redirect URL opnieuw richt wanneer de verwerking voltooit.
 
 ## Handeling verzenden {#submit-action}
 
 Een handeling Verzenden is een tekenreeks:Map die het volgende bevat:
 
-* **addfields.jsp**: Dit script bevat de actievelden die tijdens de uitvoering aan het HTML-bestand worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die vereist zijn tijdens verzending in het script post.POST.jsp.
+* **addfields.jsp**: Dit script bevat de actievelden die tijdens de uitvoering aan het HTML-bestand worden toegevoegd. Gebruik dit script om verborgen invoerparameters toe te voegen die zijn vereist tijdens verzending in het script post.POST.jsp.
 * **dialog.xml**: Dit script is vergelijkbaar met het dialoogvenster CQ-component. Het verstrekt configuratieinformatie die de auteur aanpast. De velden worden weergegeven op het tabblad Handelingen verzenden in het dialoogvenster Formulier bewerken Adaptief wanneer u de handeling Verzenden selecteert.
 * **post.POST.jsp**: Het Submit servlet roept dit manuscript met de gegevens die u en de extra gegevens in de vorige secties indient. Elke vermelding van het uitvoeren van een handeling op deze pagina houdt in dat het script post.POST.jsp wordt uitgevoerd. Als u de handeling Verzenden wilt registreren met de adaptieve formulieren die u wilt weergeven in het dialoogvenster Formulier bewerken, voegt u de volgende eigenschappen toe aan de lijst:Map:
 
    * **guideComponentType** van type String en value **fd/af/components/guidesubmittype**
    * **guideDataModel** van het type String die het type adaptief formulier opgeeft waarvoor de handeling Verzenden van toepassing is. **xfa** wordt ondersteund voor op XFA gebaseerde adaptieve formulieren, terwijl **xsd** wordt ondersteund voor op XSD gebaseerde adaptieve formulieren. **basic** wordt ondersteund voor adaptieve formulieren die geen XDP of XSD gebruiken. Voeg de corresponderende tekenreeksen toe om de handeling weer te geven op meerdere typen adaptieve formulieren. Scheid elke tekenreeks door een komma. Als u bijvoorbeeld een handeling zichtbaar wilt maken op op XFA- en XSD-gebaseerde adaptieve formulieren, geeft u de waarden **xfa** en **xsd** op.
-   * **jcr:beschrijving** van het type String. De waarde van deze eigenschap wordt weergegeven in de actielijst Verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De OOTB-acties zijn aanwezig in de CRX-opslagruimte op de locatie **/libs/fd/af/components/guidesubmittype**.
+   * **jcr:beschrijving** van het type String. De waarde van deze eigenschap wordt weergegeven in de actielijst Verzenden op het tabblad Handelingen verzenden van het dialoogvenster Formulier bewerken Adaptief. De OOTB-acties zijn aanwezig in de CRX-opslagplaats op de locatie **/libs/fd/af/components/guidesubmittype**.
 
 ## Een aangepaste verzendhandeling maken {#creating-a-custom-submit-action}
 
