@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 37c8b1bd-0e60-42d2-80ed-dece3f5c2342
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 1%
 
 ---
 
@@ -28,7 +31,7 @@ Workflows bevatten doorgaans stappen die vereisen dat een persoon een activiteit
 
 ## Meldingen van beschikbare workflowacties {#notifications-of-available-workflow-actions}
 
-Wanneer u een tijdelijk onderdeel hebt toegewezen (bijvoorbeeld Inhoud **** goedkeuren), worden verschillende waarschuwingen en/of meldingen weergegeven:
+Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
 * De [meldingsindicator](/help/sites-authoring/inbox.md) (werkbalk) wordt verhoogd:
 
@@ -46,6 +49,7 @@ Wanneer u een tijdelijk onderdeel hebt toegewezen (bijvoorbeeld Inhoud **** goed
 
       * Gebruik de pijlen links/rechts om door de statusinformatie van de verschillende workflows te navigeren.
       * Klik/tik op het daadwerkelijke aantal om een drop-down lijst van alle toepasselijke werkschema&#39;s te openen, dan selecteer het werkschema u in de statusbar wilt tonen.
+
    ![wf-59](assets/wf-59.png)
 
    >[!NOTE]
@@ -79,7 +83,7 @@ U kunt een deelnemersstap uitvoeren vanuit:
 
 Voer de volgende procedure uit om het werkitem te voltooien:
 
-1. Open het **[AEM-vak](/help/sites-authoring/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Voltooid** op de werkbalk.
 1. Het dialoogvenster **Werkitem** voltooien wordt geopend. Selecteer de **Volgende Stap** van de drop-down selecteur en voeg een **Commentaar** toe indien nodig.
@@ -108,7 +112,7 @@ U kunt ook de tijdlijn gebruiken om een stap te voltooien en uit te voeren:
 
 1. Afhankelijk van de workflow kunt u de volgende stap selecteren:
 
-   ![wf-67](assets/wf-67.png)
+   ![wf-68](assets/wf-67.png)
 
 1. Selecteer **Geavanceerd** om de handeling te bevestigen.
 
@@ -138,7 +142,7 @@ U kunt een deelnemersstap delegeren vanuit:
 
 Gebruik de volgende procedure om een het werkpunt te delegeren:
 
-1. Open het **[AEM-vak](/help/sites-authoring/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Delegeren** op de werkbalk.
 1. Het dialoogvenster wordt geopend. Geef de **gebruiker** op in de keuzelijst (dit kan ook een groep zijn) en voeg zo nodig een **opmerking** toe.
@@ -188,7 +192,7 @@ U kunt stap terug op een deelnemersstap van één van beiden uitvoeren:
 
 Gebruik de volgende procedure om terug te gaan:
 
-1. Open het **[AEM-vak](/help/sites-authoring/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Stap terug** om het dialoogvenster te openen.
 
@@ -250,7 +254,7 @@ U kunt de details van het werkitem openen vanuit:
 
 U opent als volgt een workflowitem en bekijkt de details:
 
-1. Open het **[AEM-vak](/help/sites-authoring/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Openen** om de informatielusjes te openen.
 
@@ -273,7 +277,7 @@ U kunt details van de lading bekijken verbonden aan de werkschemainstantie. In e
 
 Om de lading, en middelen, van de werkschemainstantie te bekijken:
 
-1. Open het **[AEM-vak](/help/sites-authoring/inbox.md)**.
+1. Open het **[AEM Postvak IN](/help/sites-authoring/inbox.md)**.
 1. Selecteer het werkstroomitem waarop u actie wilt uitvoeren (tik op de miniatuur of klik erop).
 1. Selecteer **Payload** weergeven op de werkbalk om het dialoogvenster te openen.
 
