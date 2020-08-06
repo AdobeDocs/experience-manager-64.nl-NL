@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 0%
 
 ---
 
@@ -36,13 +39,13 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 **http://localhost:4503/content/sites/enable/en.html**
 
-![chlimage_1-432](assets/chlimage_1-433.png)
+![chlimage_1-433](assets/chlimage_1-433.png)
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
 Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering aangeboden. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
 
-Deze homepage bevat vier menu-items: en `Assignments, Ski Catalog, What's New` `Discussions`, maar u kunt deze bereiken zonder u aan te melden.
+Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `Discussions`, maar geen van deze bestanden kan worden bereikt zonder u aan te melden.
 
 >[!NOTE]
 >
@@ -51,7 +54,7 @@ Deze homepage bevat vier menu-items: en `Assignments, Ski Catalog, What's New` `
 
 ### Anonieme toegang tot JCR voorkomen {#prevent-anonymous-access-on-jcr}
 
-Een bekende beperking stelt de inhoud van de communautaire plaats aan anonieme bezoekers door jcr inhoud en json bloot, hoewel het **[!UICONTROL toestaan van anonieme toegang]** voor de inhoud van de plaats wordt onbruikbaar gemaakt. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
+Een bekende beperking maakt de inhoud van de site van de community toegankelijk voor anonieme bezoekers via jcr-inhoud en json , hoewel deze voor de inhoud van de site **[!UICONTROL allow anonymous access]** is uitgeschakeld. Nochtans, kan dit gedrag worden gecontroleerd gebruikend de Beperkingen van het Schuiven als oplossing.
 
 Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegang door anonieme gebruikers via jcr-inhoud en json:
 
@@ -61,12 +64,12 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
    >
    >Ga niet naar de gelokaliseerde site.
 
-1. Ga naar **[!UICONTROL Pagina-eigenschappen]**.
+1. Go to **[!UICONTROL Page Properties]**.
 
    ![pageProperties-1](assets/page-properties-1.png)
 
-1. Ga naar het tabblad **[!UICONTROL Geavanceerd]** .
-1. Schakel **[!UICONTROL verificatievereiste]** in.
+1. Ga naar **[!UICONTROL Advanced]** tabblad.
+1. Inschakelen **[!UICONTROL Authentication Requirement]**.
 
    ![site-verificatie-1](assets/site-authentication-1.png)
 
@@ -136,7 +139,7 @@ Het bericht, naast gealigneerde matiging, zijn er opties om het onderwerp op soc
 
 ![chlimage_1-439](assets/chlimage_1-439.png)
 
-### Nieuwe functies {#what-s-new}
+### What&#39;s New {#what-s-new}
 
 Het `What's New` menu-item is de titel op basis van de functie [](functions.md#activity-stream-function) activity stream in de structuur van deze gemeenschapssite.
 
@@ -201,12 +204,12 @@ Met een kleine activiteit en interactie met de Middelen bij publiceren, is het b
 
 * Op auteur
 * Aanmelden met beheerdersrechten
-* Navigeer van het belangrijkste menu aan **[!UICONTROL Gemeenschappen > Middelen]**
+* Navigeer van het hoofdmenu naar **[!UICONTROL Communities > Resources]**
 * Selecteer de `Enablement Tutorial` site
 * Selecteer het `Report`pictogram voor een samenvatting van alle Middelen
 * Selecteer een Middel en dan het `Report`pictogram voor een rapport over dat Middel
 
-Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven. Het kan 1 tot 12 uur duren voordat deze gegevens worden weergegeven. Standaard SCORM-rapportage is echter al beschikbaar.
+Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven, wat 1 tot 12 uur kan duren. Standaard SCORM-rapportage is echter al beschikbaar.
 
 #### Rapport Ski-lesbronnen {#ski-lessons-resource-report}
 
@@ -214,7 +217,7 @@ Het is waarschijnlijk te vroeg om gegevens van Adobe Analytics weer te geven. He
 
 #### Gebruikersrapport Ski Lessen {#ski-lessons-user-report}
 
-* Selecteer **[!UICONTROL Gemeenschappen > Bronnen]**
+* Selecteer **[!UICONTROL Communities > Resources]**
 
 * Kaart openen `Enablement Tutorial`
 * Kaart openen `Ski Lessons`
@@ -234,14 +237,14 @@ Voor rapporten over toewijzingen:
 
 * Op auteur
 * Aanmelden met beheerdersrechten
-* Ga naar **[!UICONTROL Gemeenschappen > Rapporten > Rapport Toewijzingen]**
-* Selecteer een **[!UICONTROL site]** in het keuzemenu (selecteer `Enablement Tutorial`)
+* Ga naar **[!UICONTROL Communities > Reports > Assignments Report]**
+* Selecteer een **[!UICONTROL Site]** optie in het keuzemenu (selecteer `Enablement Tutorial`)
 
-* Selecteer **[!UICONTROL Groep]** (selecteer `Community Ski Class`)
+* Selecteren **[!UICONTROL Group]** (selecteren `Community Ski Class`)
 
-* Een **[!UICONTROL toewijzing]** selecteren (selecteren `Ski Lessons`)
+* Selecteer een **[!UICONTROL Assignment]** (selecteer `Ski Lessons`)
 
-* Genereren **[!UICONTROL selecteren]**
+* Selecteer **[!UICONTROL Generate]**
 
 ![chlimage_1-445](assets/chlimage_1-445.png)
 
@@ -249,14 +252,14 @@ Voor rapporten over weergaven:
 
 * Op auteur
 * Aanmelden met beheerdersrechten
-* Ga naar **[!UICONTROL Gemeenschappen > Rapporten > Rapport Weergaven]**
-* Selecteer een **[!UICONTROL site]** in het keuzemenu (selecteer `Enablement Tutorial`)
+* Ga naar **[!UICONTROL Communities > Reports > Views Report]**
+* Selecteer een **[!UICONTROL Site]** optie in het keuzemenu (selecteer `Enablement Tutorial`)
 
-* Selecteer **[!UICONTROL Inhoudstype]** (selecteer `all`)
+* Selecteren **[!UICONTROL Content Type]** (selecteren `all`)
 
-* Selecteer een **[!UICONTROL datumbereik]** (selecteer `Last 7 days`)
+* Selecteer een **[!UICONTROL date range]** (selecteer `Last 7 days`)
 
-* Genereren **[!UICONTROL selecteren]**
+* Selecteer **[!UICONTROL Generate]**
 
 ![chlimage_1-446](assets/chlimage_1-446.png)
 
