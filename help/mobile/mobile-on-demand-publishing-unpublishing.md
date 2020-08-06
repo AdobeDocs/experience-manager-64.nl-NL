@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 8c88a2ff-766f-481b-b6dc-0b3e2eed8596
 translation-type: tm+mt
 source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+workflow-type: tm+mt
+source-wordcount: '302'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, kunt u de inhoud publiceren. Ook kunt u de publicatie van uw inhoud ongedaan maken.
 
 >[!NOTE]
 >
->Zie [Ontwerpoverwegingen voor mobiele AEM-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in de online Help voor meer informatie over ontwerpoverwegingen voor mobiele AEM-apps.
+>Zie [Ontwerpoverwegingen voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Help voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps.
 
 ## De inhoud publiceren/verwijderen {#publishing-unpublishing-the-content}
 
@@ -53,9 +56,9 @@ De algemene workflow voor het publiceren/publiceren van een artikel:
 
 Zie
 
-* [AEM-inhoud ontwikkelen voor AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Inhoud beheren voor AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
+* [AEM voor AEM Mobile On-demand Services ontwikkelen](/help/mobile/aem-mobile-on-demand.md)
+* [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
 Of nog moet over de auteursonderwerpen leren, zie
 
-[AEM-inhoud ontwerpen voor AEM Mobile On-Demand Services-apps](/help/mobile/mobile-apps-ondemand.md)
+[AEM voor AEM Mobile On-demand Services-apps maken](/help/mobile/mobile-apps-ondemand.md)
