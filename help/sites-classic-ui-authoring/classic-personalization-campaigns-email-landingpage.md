@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '658'
+ht-degree: 0%
 
 ---
 
@@ -28,12 +31,12 @@ Als u een effectieve bestemmingspagina voor nieuwsbrieven wilt maken, moet u het
 
 >[!NOTE]
 >
->Adobe is niet van plan deze functionaliteit verder te verbeteren (Leads en lijsten beheren).\
->De aanbeveling is om [Adobe Campaign en de integratie](/help/sites-administering/campaign.md)daarvan in AEM te benutten.
+>Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads en lijsten beheren).\
+>De aanbeveling is om [Adobe Campaign en zijn AEM te stimuleren](/help/sites-administering/campaign.md).
 
 ## Een lijst maken voor de nieuwsbrief {#creating-a-list-for-the-newsletter}
 
-Maak een lijst, bijvoorbeeld **Geometrixx Newsletter**, in MCM voor de nieuwsbrief waarop mensen zich moeten abonneren. Lijsten maken wordt beschreven in [Lijsten](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)maken.
+Maak een lijst in MCM, bijvoorbeeld **Geometrixx Newsletter**, voor de nieuwsbrief waarop mensen zich moeten abonneren. Lijsten maken wordt beschreven in [Lijsten](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingnewlists)maken.
 
 In het volgende voorbeeld ziet u een voorbeeld van een lijst:
 
@@ -41,9 +44,9 @@ In het volgende voorbeeld ziet u een voorbeeld van een lijst:
 
 ## Een aanmeldingsformulier maken {#create-a-sign-up-form}
 
-Maak een registratieformulier voor nieuwsbrieven waarmee gebruikers zich op tags kunnen abonneren. De voorbeeldwebsite Geometrixx biedt een nieuwsbrief op de werkbalk Geometrixx waarin u het formulier kunt maken.
+Maak een registratieformulier voor nieuwsbrieven waarmee gebruikers zich op tags kunnen abonneren. De voorbeeldwebsite van de Geometrixx bevat een nieuwsbrief op de werkbalk Geometrixx waar u het formulier kunt maken.
 
-Zie informatie over het maken van formulieren in de documentatie bij [Formulieren voor informatie over het maken van uw eigen nieuwsbrief](/help/sites-authoring/default-components.md#form). De nieuwsbrief gebruikt de markeringen van de bibliotheek van de Markering. Zie [Tagbeheer](/help/sites-authoring/tags.md#tagadministration)voor meer tags.
+Voor het maken van uw eigen nieuwsbrief raadpleegt u de informatie over het maken van formulieren in de documentatie [van](/help/sites-authoring/default-components.md#form)Forms. De nieuwsbrief gebruikt de markeringen van de bibliotheek van de Markering. Zie [Tagbeheer](/help/sites-authoring/tags.md#tagadministration)voor meer tags.
 
 De verborgen gebieden in het volgende voorbeeld verstrekken de volledige minimale hoeveelheid informatie (e-mail); bovendien kunt u later meer velden toevoegen, maar dit heeft invloed op de conversiesnelheid.
 
@@ -53,7 +56,7 @@ In het volgende voorbeeld wordt een formulier gemaakt op http://localhost:4502/c
 
    ![mcm_newsletterpage](assets/mcm_newsletterpage.png)
 
-1. Klik op **Bewerken** in de component Formulier om het formulier te configureren voor een pagina Bedankt (zie [Dankuwel pagina&#39;s](#creating-a-thank-you-page)maken).
+1. Klik op **Bewerken** in de component Formulier om het formulier te configureren voor naar de pagina Bedankt (zie [Dankuwel pagina&#39;s](#creating-a-thank-you-page)maken).
 
    ![dc_formstart_thankyou](assets/dc_formstart_thankyou.png)
 
