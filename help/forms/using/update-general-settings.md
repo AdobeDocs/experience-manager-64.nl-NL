@@ -1,8 +1,8 @@
 ---
 title: Algemene instellingen bijwerken
 seo-title: Algemene instellingen bijwerken
-description: Toepassingsinstellingen van AEM Forms zoals het Homescherm bijwerken en de opties voor Startpunten en Bijlagen ophalen
-seo-description: Toepassingsinstellingen van AEM Forms zoals het Homescherm bijwerken en de opties voor Startpunten en Bijlagen ophalen
+description: AEM Forms-app-instellingen zoals het Homescherm bijwerken en Startpunten en bijlageopties ophalen
+seo-description: AEM Forms-app-instellingen zoals het Homescherm bijwerken en Startpunten en bijlageopties ophalen
 uuid: 234cd2da-2b47-4d60-82ed-68363d782632
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,19 +10,22 @@ topic-tags: forms-app
 discoiquuid: a3aac07e-7d67-4a4f-b941-ff25a981092f
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '404'
+ht-degree: 0%
 
 ---
 
 
 # Algemene instellingen bijwerken {#updating-general-settings}
 
-Met de algemene instellingen van de app AEM Forms kunt u instellingen opgeven, zoals het ophalen van bijlagen, de offlinemodus, het landingsscherm, de standaardcategorie en de frequentie voor automatisch opslaan.
+Met de algemene instellingen van de AEM Forms-app kunt u instellingen opgeven, zoals het ophalen van bijlagen, de offline modus, het landingsscherm, de standaardcategorie en de automatische opslagfrequentie.
 
 ## De algemene instellingen in uw app bijwerken {#working-with-the-form}
 
 Wanneer u uw app synchroniseert met de AEM Forms-server, worden alle formulieren en gedefinieerde taken gedownload naar uw mobiele apparaat.
 
-De app-oplossing AEM Forms uit de doos downloadt de bijlagen die aan elk formulier zijn gekoppeld niet wanneer uw app wordt gesynchroniseerd.
+De uit-van-de-doos AEM Forms app-oplossing downloadt niet de gehechtheid verbonden aan elk vorm wanneer uw app wordt gesynchroniseerd.
 
 Wijzig op het tabblad Algemeen de instellingen voor downloadbijlagen, offline modus, landingsscherm, automatisch opslaan en synchroniseren. U kunt het [startscherm](/help/forms/using/home-screen.md) van uw app wijzigen.
 
@@ -31,7 +34,7 @@ Wijzig op het tabblad Algemeen de instellingen voor downloadbijlagen, offline mo
 1. Tik op de knop Menu linksboven in het scherm Home om naar het scherm Instelling te gaan en tik vervolgens op **Instellingen**.
 1. Tik in het scherm Instellingen op het tabblad Algemeen.
 
-   ![Algemene instellingen in de app AEM Forms](assets/gen-settings-2.png)
+   ![Algemene instellingen in de AEM Forms-toepassing](assets/gen-settings-2.png)
 
    >[!NOTE]
    >
@@ -43,21 +46,21 @@ U kunt de volgende wijzigingen aanbrengen in de instellingen van uw app.
 
 * **Taakbijlagen** ophalen: Geef op of u de bijbehorende bijlagen wilt downloaden wanneer elke taak naar uw app wordt gedownload.
 
-* **Offlinemodus**: De offlineservice voor de app AEM Forms in- of uitschakelen. Zie [Werken in de offlinemodus](/help/forms/using/work-offline-mode.md) voor meer informatie.
+* **Offlinemodus**: De offlineservice voor de AEM Forms-app in- of uitschakelen. Zie [Werken in de offlinemodus](/help/forms/using/work-offline-mode.md) voor meer informatie.
 
 * **Landingsscherm**: De startlocatie ([startscherm](/help/forms/using/home-screen.md)) voor de app instellen.
 
    Beschikbare opties:
 
-   * Formulieren
+   * Forms
    * Taken
    * Favorieten
 
-* **Standaardcategorie**: Hiermee selecteert u de categorie formulieren die u wilt weergeven op het beginscherm. Wanneer u Alles selecteert, kunt u alle formulieren in het beginscherm zien. Categorieën worden ingevuld op basis van de formulieren die in de app zijn geladen. Formulieren zijn beschikbaar in de app op basis van de formulierinstellingen die zijn opgegeven op de AEM Forms-server.
+* **Standaardcategorie**: Hiermee selecteert u de categorie formulieren die u wilt weergeven op het beginscherm. Wanneer u Alles selecteert, kunt u alle formulieren in het beginscherm zien. Categorieën worden ingevuld op basis van de formulieren die in de app zijn geladen. Forms is beschikbaar in de app op basis van de formulierinstellingen die zijn opgegeven op de AEM Forms-server.
 
 * **Frequentie** automatisch opslaan: De frequentie instellen waarmee uw [mobiele app formuliergegevens](/help/forms/using/autosave-data-app.md) lokaal opslaat.
 
-* **Synchronisatiefrequentie**: Hiermee stelt u de frequentie in waarmee uw [mobiele app wordt gesynchroniseerd](/help/forms/using/sync-app.md) met de AEM Forms-server in de online modus.
+* **Synchronisatiefrequentie**: De frequentie instellen waarmee uw [mobiele app wordt gesynchroniseerd](/help/forms/using/sync-app.md) met de AEM Forms-server in de online modus.
 
 **Lokale gegevens** wissen: Wis de database, inclusief instellingen en lokale gegevens voor alle gebruikers en bestandsopslag vanaf het apparaat.
 
