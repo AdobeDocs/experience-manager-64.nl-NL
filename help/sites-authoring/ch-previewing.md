@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: f281ef8c-0831-470c-acb7-189f20452a50
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 3%
 
 ---
 
@@ -58,7 +61,7 @@ Sommige modules UI tonen popup bekleed wanneer geklikt of getikt. Het pop-upmenu
 
 ![screen_shot_2018-03-23at094003](assets/screen_shot_2018-03-23at094003.png)
 
-### Pop-upformulieren {#popup-forms}
+### Popup-Forms {#popup-forms}
 
 De popup bekleding van een module kan vormelementen omvatten die u toelaten om de gegevens in de opslag te veranderen ContextHub. Als de pagina-inhoud wordt bepaald door de opslaggegevens, kunt u het formulier gebruiken en de wijzigingen in de pagina-inhoud observeren.
 
