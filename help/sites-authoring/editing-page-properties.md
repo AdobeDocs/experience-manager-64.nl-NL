@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1672'
+ht-degree: 4%
 
 ---
 
@@ -42,6 +45,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
       * De nieuwe tag wordt dan weergegeven met een kleine ster aan de rechterkant die aangeeft dat het een nieuwe tag is.
    * Met de vervolgkeuzefunctie kunt u bestaande tags selecteren.
    * Een x wordt weergegeven wanneer u met de muis over een tag-item in het selectievak beweegt. Hiermee kunt u die tag voor deze pagina verwijderen.
+
    Zie Tags [gebruiken voor meer informatie over tags](/help/sites-authoring/tags.md).
 
 * **Verbergen in navigatie**
@@ -181,7 +185,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-authoring/personalization.md)op te geven.
 
-### Permissions {#permissions}
+### Machtigingen {#permissions}
 
 * **Machtigingen**
 
@@ -190,6 +194,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
    * [Machtigingen toevoegen](/help/sites-administering/user-group-ac-admin.md)
    * [Gesloten gebruikersgroep bewerken](/help/sites-administering/cug.md#applying-your-closed-user-group-to-content-pages)
    * De [effectieve machtigingen weergeven](/help/sites-administering/user-group-ac-admin.md)
+
    >[!CAUTION]
    >
    >Op het tabblad **Machtigingen** kunt u CUG-configuraties bewerken op basis van de aanwezigheid van de `granite:AuthenticationRequired` mix. Als de paginamachtigingen gebruikend afgekeurde configuraties van de GIDS worden gevormd, die op de aanwezigheid van `cq:cugEnabled` bezit worden gebaseerd, zal een waarschuwingsbericht worden getoond en de toestemmingen van de GG zullen niet editable zijn, noch zal de Vereiste van de Authentificatie op het [Geavanceerde](/help/sites-authoring/editing-page-properties.md#advanced) lusje editable zijn.
@@ -231,7 +236,7 @@ U kunt pagina-eigenschappen definiëren:
 
 * Vanuit de pagina-editor:
 
-   * Pagina- **informatie** gebruiken (en vervolgens Eigenschappen **** openen)
+   * **Pagina-informatie** gebruiken (en vervolgens **Eigenschappen openen**)
 
 ### Vanuit de siteconsole - Eén pagina {#from-the-sites-console-single-page}
 
@@ -243,6 +248,7 @@ Klik of tikken op **Eigenschappen** om de pagina-eigenschappen te definiëren:
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+
    De pagina-eigenschappen worden weergegeven met de juiste tabbladen.
 
 1. Bekijk of bewerk de eigenschappen naar wens.
@@ -259,7 +265,7 @@ Wanneer u een pagina bewerkt, kunt u met **Pagina-informatie** de pagina-eigensc
 
    ![screen_shot_2018-03-22at095740](assets/screen_shot_2018-03-22at095740.png)
 
-1. Selecteer Eigenschappen **** openen en er wordt een dialoogvenster geopend waarin u de eigenschappen kunt bewerken, gesorteerd op het juiste tabblad. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
+1. Select **Open Properties** and a dailog will open allowing you to edit the properties, sorted by the appropriate tab. De volgende knoppen zijn ook beschikbaar aan de rechterkant van de werkbalk:
 
    * **Annuleren**
    * **Opslaan en sluiten**
@@ -268,7 +274,7 @@ Wanneer u een pagina bewerkt, kunt u met **Pagina-informatie** de pagina-eigensc
 
 ### Van de Console van Plaatsen - Meerdere Pagina&#39;s {#from-the-sites-console-multiple-pages}
 
-Vanuit de **Sites** -console kunt u meerdere pagina&#39;s selecteren en vervolgens de pagina-eigenschappen **bekijken en/of bewerken met** Weergave-eigenschappen. Dit wordt het bulkbewerken van pagina-eigenschappen genoemd.
+Vanuit de **Sites**-console kunt u meerdere pagina&#39;s selecteren en vervolgens **Eigenschappen weergeven** gebruiken om de pagina-eigenschappen te bekijken en/of te bewerken. Dit wordt het bulkgewijs bewerken van pagina-eigenschappen genoemd.
 
 >[!NOTE]
 >
@@ -283,7 +289,7 @@ U kunt meerdere pagina&#39;s selecteren voor bulkbewerking op verschillende mani
 
 ![screen_shot_2018-03-22at100039](assets/screen_shot_2018-03-22at100039.png)
 
-Nadat u de pagina&#39;s hebt geselecteerd en vervolgens op de optie **Eigenschappen** hebt geklikt of getikt, worden de bulkeigenschappen weergegeven:
+After selecting the pages and then clicking or tapping the **Properties** option, the bulk properties will be shown:
 
 ![screen_shot_2018-03-22at100114](assets/screen_shot_2018-03-22at100114.png)
 
@@ -314,6 +320,7 @@ Nadat u de optie Bulk bewerken hebt ingevoerd, kunt u:
 
       * Alleen eigenschappen met een gemeenschappelijke waarde worden weergegeven in de weergavemodus.
       * Als het veld meerdere waarden heeft (bijvoorbeeld Codes), worden waarden alleen weergegeven als *alle* waarden gemeenschappelijk zijn. Als slechts enkele van deze voorbeelden algemeen zijn, worden deze alleen weergegeven tijdens het bewerken.
+
    Wanneer er geen eigenschappen met een gemeenschappelijke waarde bestaan, wordt een bericht weergegeven.
 
 * **Bewerken**
