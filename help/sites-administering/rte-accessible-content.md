@@ -1,8 +1,8 @@
 ---
 title: Het vormen RTE voor het Produceren van Toegankelijke Plaatsen
 seo-title: Het vormen RTE voor het Produceren van Toegankelijke Plaatsen
-description: Leer hoe u de AEM Rich Text Editor configureert om toegankelijke sites te maken.
-seo-description: Leer hoe u de AEM Rich Text Editor configureert om toegankelijke sites te maken.
+description: Leer hoe te om de AEM Rich Text Editor te vormen om toegankelijke plaatsen te produceren.
+seo-description: Leer hoe te om de AEM Rich Text Editor te vormen om toegankelijke plaatsen te produceren.
 uuid: 87539fee-3ecc-49f4-af3d-8dde72399c28
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
 translation-type: tm+mt
 source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+workflow-type: tm+mt
+source-wordcount: '937'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ U kunt deze eigenschappen [vormen en aanpassen door insteekmodules](#configuring
 
 De RTE is beschikbaar in een verscheidenheid van componenten van zowel aanraking-toegelaten als klassieke UI. De primaire component voor het gebruik van de RTE is echter de **component Text** .
 
-De **component Text** in AEM is beschikbaar voor zowel de aanraakinterface als de klassieke UI. In de volgende afbeeldingen ziet u de teksteditor met veel insteekmodules, waaronder `paraformat`:
+De component **Text** in AEM is beschikbaar voor zowel aanraakinterface als klassieke UI&#39;s. In de volgende afbeeldingen ziet u de teksteditor met veel insteekmodules, waaronder `paraformat`:
 
 * De **component Text** in de interface met aanraakbediening:
 
@@ -50,6 +53,7 @@ De **component Text** in AEM is beschikbaar voor zowel de aanraakinterface als d
 >
 >* [Insteekmodules en hun functies](/help/sites-administering/rich-text-editor.md#aboutplugins)
 >* [Insteekmodules en hun functies - Interface met aanraakbediening](/help/sites-administering/rich-text-editor.md#aboutplugins)
+
 >
 
 
@@ -63,7 +67,7 @@ De volledige instructies bij het vormen van RTE zijn beschikbaar op het [Vormen 
 * [Activeer een Insteekmodule en vorm het eigenschappenBezit](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 * [Het vormen van Andere Functionaliteit van RTE](/help/sites-administering/rich-text-editor.md#enable-rte-functionalities-by-activating-plug-ins)
 
-Door een plug-in te configureren in de juiste `rtePlugins` subvertakking in CRXDE Lite (zie de volgende afbeelding), kunt u alle of specifieke functies voor die plug-in activeren.
+Door een plug-in in de juiste `rtePlugins` subvertakking in CRXDE Lite te configureren (zie de volgende afbeelding), kunt u alle of specifieke functies voor die plug-in activeren.
 
 ![CRXDE Lite die een voorbeeld rtePlugin toont.](assets/chlimage_1-208.png)
 
@@ -77,12 +81,13 @@ Nieuwe semantische blokformaten kunnen voor selectie beschikbaar worden gesteld 
 1. De paragraafformaten zijn dan beschikbaar aan de inhoudauteur van de selectiegebieden in RTE. Zij kunnen worden betreden:
 
    * Het pictogram Alinea ([schuifbalk](https://en.wikipedia.org/wiki/Pilcrow)) gebruiken in de interface met aanraakbediening:
+
    ![Alineapictogram (kussen).](do-not-localize/chlimage_1-7.png)
 
    * Het veld **Indeling** (keuzelijst) gebruiken in de klassieke gebruikersinterface.
 
 
-Met structuurelementen beschikbaar in RTE via de opties voor alineaopmaak biedt AEM een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan moeten ze de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen. Zo zorgt u voor meer opmaak, betere opties voor gebruikers die met hun eigen stijlpagina&#39;s en correct gestructureerde inhoud bladeren.
+Met de structuurelementen beschikbaar in RTE via de opties van het paragraafformaat, AEM verstrekt een goede basis voor de ontwikkeling van toegankelijke inhoud. Inhoudsauteurs kunnen de RTE niet gebruiken om de tekengrootte of kleuren of andere verwante kenmerken op te maken, waardoor inlineopmaak niet mogelijk is. In plaats daarvan moeten ze de juiste structuurelementen selecteren, zoals koppen, en algemene stijlen gebruiken die u hebt gekozen bij de optie Stijlen. Zo zorgt u voor meer opmaak, betere opties voor gebruikers die met hun eigen stijlpagina&#39;s en correct gestructureerde inhoud bladeren.
 
 ## De functie Bron bewerken gebruiken {#use-of-the-source-edit-feature}
 
