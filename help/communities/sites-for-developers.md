@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc7a085e-d6de-4bc8-bd7e-6b43f8d172d2
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '619'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Daartoe:
 /**apps**/social/console/components/hbs/sitepage/**&lt;*template-name*>**.hbs
 
 **Eigenschap**: page-template\
-**Type**:String\
+**Type**: String\
 **Waarde**: &lt;*template-name*> (geen extensie)
 
 **Configuratieknooppunt**:
@@ -68,23 +71,23 @@ Identificeer het douanemalplaatje door een `page-template` bezit aan de configur
 
 ![chlimage_1-80](assets/chlimage_1-80.png)
 
-Ben zeker om allen **te** sparen en douanecode aan alle instanties te herhalen AEM (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd).
+Ben zeker om allen **te** sparen en douanecode aan alle AEM instanties (de douanecode is niet inbegrepen wanneer de inhoud van de communautaire plaats van de console wordt gepubliceerd) te herhalen.
 
 De geadviseerde praktijk voor het herhalen van douanecode is een pakket [tot stand te](../../help/sites-administering/package-manager.md#creating-a-new-package) brengen en het op alle instanties op te stellen.
 
 ## Een communautaire site exporteren {#exporting-a-community-site}
 
-Wanneer een communitysite is gemaakt, kan de site worden geëxporteerd als een AEM-pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
+Wanneer een gemeenschapssite is gemaakt, kan de site worden geëxporteerd als een AEM pakket dat is opgeslagen in pakketbeheer en dat kan worden gedownload en geüpload.
 
 Dit is beschikbaar bij de console [van de Plaatsen van](sites-console.md#exporting-the-site)Gemeenschappen.
 
 Merk op dat UGC en douanecode niet inbegrepen in het pakket van de communautaire plaats is.
 
-Om UGC uit te voeren, gebruik het Hulpmiddel [van de Migratie van de Gemeenschappen](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM UGC, een open bronmigratiehulpmiddel beschikbaar op GitHub.
+Om UGC uit te voeren, gebruik het Hulpmiddel [van de Migratie van](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)AEM Communities UGC, een open bronmigratiehulpmiddel beschikbaar op GitHub.
 
 ## Een Community-site verwijderen {#deleting-a-community-site}
 
-Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de community plaatst via Communities > Sites console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
+Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen weergegeven wanneer u de muisaanwijzer boven de communitysite plaatst via Communities > Sites console. Als u tijdens de ontwikkeling een gemeenschapssite wilt verwijderen en een nieuwe site wilt starten, kunt u deze functionaliteit gebruiken. Als u een gemeenschapssite verwijdert, worden de volgende aan die site gekoppelde items verwijderd:
 
 * [UGC](#user-generated-content)
 * [Gebruikersgroepen](#community-user-groups)
@@ -93,13 +96,14 @@ Vanaf AEM Communities 6.3 Service Pack 1 wordt het pictogram Site verwijderen we
 
 ### Unieke site-id van community {#community-unique-site-id}
 
-U kunt als volgt de unieke site-id identificeren die is gekoppeld aan de community-site met behulp van CRXDE:
+U kunt als volgt de unieke site-id identificeren die aan de gemeenschapssite is gekoppeld met behulp van CRXDE:
 
 * Ga naar de taalhoofdmap van de site, zoals `/content/sites/*<site name>*/en/rep:policy`
 
 * Zoek het `allow<#>` knooppunt met een `rep:principalName` notatie in deze notatie `rep:principalName = *community-enable-nrh9h-members*`
 
-* De site-id is de derde component van `rep:principalName`bijvoorbeeld: `rep:principalName = community-enable-nrh9h-members`
+* De site-id is de derde component van `rep:principalName`bijvoorbeeld: 
+`rep:principalName = community-enable-nrh9h-members`
 
    * **sitenaam** = *inschakelen*
    * **site-id** = *nrh9h*
@@ -132,10 +136,10 @@ Bijvoorbeeld, `community-engage-x0e11-members`.
 
 Vanaf de hoofdconsole:
 
-* Elementen **[!UICONTROL selecteren]**
-* Modus **[!UICONTROL Selecteren]** openen
+* Selecteer **[!UICONTROL Assets]**
+* Modus **[!UICONTROL Select]** Enter
 * Map selecteren met de [unieke site-id](#community-unique-site-id)
-* Selecteer **[!UICONTROL Verwijderen]** (moet mogelijk **[!UICONTROL Meer selecteren...]**)
+* Selecteren **[!UICONTROL Delete]** (moet mogelijk een selectie maken **[!UICONTROL More...]**)
 
 ### Databasegegevens {#database-records}
 
