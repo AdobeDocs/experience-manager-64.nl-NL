@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1eaf7afe-a181-45df-8766-bd564b1ad22a
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '1152'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ AEM geeft de inhoud van de opslagplaats als volgt weer:
 
 * Een knooppunt van het type `nt:file` wordt weergegeven als een bestand. Knooppunten onder het `nt:file` knooppunt worden niet weergegeven, maar vormen de inhoud van het bestand.
 
-Wanneer u WebDAV gebruikt om mappen en bestanden te maken en te bewerken, maakt en bewerkt AEM de benodigde `nt:folder` knooppunten en `nt:file` knooppunten. Als u WebDAV wilt gebruiken voor het importeren en exporteren van inhoud, moet u zoveel mogelijk met knooppunttypen `nt:file` en `nt:folder` knooppunttypen werken.
+Wanneer u WebDAV gebruikt om mappen en bestanden te maken en te bewerken, AEM maakt en bewerkt u de benodigde `nt:folder` knooppunten en `nt:file` knooppunten. Als u WebDAV wilt gebruiken voor het importeren en exporteren van inhoud, moet u zoveel mogelijk werken met knooppunttypen `nt:file` en `nt:folder` knooppunttypen.
 
 >[!NOTE]
 >
@@ -81,7 +84,7 @@ De URL voor de WebDAV-server heeft de volgende structuur:
   <tr>
    <td><strong>Beschrijving</strong></td> 
    <td>Host en poort waarop AEM wordt uitgevoerd</td> 
-   <td>Pad voor de webapp van de AEM-opslagplaats</td> 
+   <td>Pad voor de webapp van de AEM repository</td> 
    <td>Pad waaraan WebDAV-servlet is toegewezen</td> 
    <td>Naam van de werkruimte</td> 
   </tr>
@@ -106,9 +109,9 @@ Er zijn instructies voor het aansluiten van de volgende besturingssystemen:
 
 ### Windows {#windows}
 
-Als u een Microsoft Windows 7-systeem (en hoger) wilt verbinden met een AEM-instantie die niet is beveiligd met SSL, moet de optie voor het instellen van een basisverificatie via een onbeveiligd netwerk expliciet zijn ingeschakeld in Windows. Dit vereist een verandering in de Registratie van Vensters van WebClient.
+Als u een Microsoft Windows 7-systeem (en hoger) wilt verbinden met een AEM-instantie die niet met SSL is beveiligd, moet de optie voor het instellen van een basisverificatie via een onbeveiligd netwerk expliciet zijn ingeschakeld in Windows. Dit vereist een verandering in de Registratie van Vensters van WebClient.
 
-Zodra het register wordt bijgewerkt, dan kan de instantie AEM als aandrijving worden in kaart gebracht.
+Zodra de registratie wordt bijgewerkt, dan kan de AEM instantie als aandrijving worden in kaart gebracht.
 
 #### Windows 7 en meer configuratie {#windows-and-greater-configuration}
 
@@ -124,7 +127,7 @@ Om de registratie bij te werken om basisauthentificatie over een onbeveiligd net
 
    Voeg de subsleutel toe als deze niet aanwezig is.
 
-1. De registerwijziging treedt pas in werking als u het systeem opnieuw hebt gestart.
+1. De registerwijziging wordt pas van kracht als u het systeem opnieuw hebt gestart.
 
 Zie [Microsoft Support KB 841215](https://support.microsoft.com/default.aspx/kb/841215) voor meer informatie over deze registerwijziging.
 
@@ -156,6 +159,7 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
    * **Station**: Kies een beschikbare letter
    * **Map**: `http://localhost:4502`
    * Controleer **Connect met verschillende referenties.**
+
    Klik op Voltooien
 
    ![chlimage_1-113](assets/chlimage_1-113.png)
@@ -164,7 +168,7 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
    >
    >Als AEM op een andere haven wordt gevestigd, gebruik dat havenaantal in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u deze door `localhost` de respectievelijke servernaam of het IP-adres.
 
-1. Voer gebruikersnaam `admin` en wachtwoord in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheeraccount te gebruiken voor tests.
+1. Voer gebruikersnaam `admin` en wachtwoord in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
    ![chlimage_1-114](assets/chlimage_1-114.png)
 
@@ -172,21 +176,21 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
    ![chlimage_1-115](assets/chlimage_1-115.png)
 
-Windows heeft AEM nu toegewezen als een station via WebDAV en u kunt deze als elk ander station gebruiken.
+Windows heeft nu AEM toegewezen als een station via WebDAV en u kunt deze als elk ander station gebruiken.
 
 ### macOS {#macos}
 
 Er zijn geen configuratiestappen vereist om via WebDAV verbinding te maken op MacOS. U hoeft alleen maar verbinding te maken met de WebDAV-server.
 
 1. Navigeer naar een willekeurig **Finder** -venster en klik op **Ga** en **Verbind met server** of druk op **Command+k**.
-1. Voer in het venster **Verbinding maken met server** de AEM-locatie in:
+1. Voer in het venster **Verbinding maken met server** de AEM in:
 
    * `http://localhost:4502`
    >[!NOTE]
    >
    >Als AEM op een andere haven wordt gevestigd, gebruik dat havenaantal in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u deze door `localhost` de respectievelijke servernaam of het IP-adres.
 
-1. Wanneer u voor authentificatie wordt veroorzaakt, ga gebruikersbenaming `admin` en wachtwoord in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheeraccount te gebruiken voor tests.
+1. Wanneer u voor authentificatie wordt veroorzaakt, ga gebruikersbenaming `admin` en wachtwoord in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
 macOS heeft nu verbinding met AEM via WebDAV en u kunt deze gebruiken als elke andere map op de Mac.
 
@@ -208,19 +212,19 @@ Verbinding maken met AEM via WebDAV met GNOME:
    >Als AEM op een andere haven wordt gevestigd, gebruik dat havenaantal in plaats van 4502. Als u de opslagplaats voor inhoud niet op uw lokale computer uitvoert, vervangt u deze door `localhost` de respectievelijke servernaam of het IP-adres.
 
 1. Voer in **map**`/dav`
-1. Voer de gebruikersnaam in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheeraccount te gebruiken voor tests.
+1. Voer de gebruikersnaam in `admin`. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 1. Laat de poort leeg en voer een naam voor de verbinding in.
-1. Klik op **Verbinden**. AEM vraagt om uw wachtwoord.
+1. Klik op **Verbinden**. AEM vraagt u om uw wachtwoord.
 1. Voer het wachtwoord in `admin` en klik op **Verbinden**.
 
-GNOME heeft nu AEM als een volume gemonteerd en u kunt het als elk ander volume gebruiken.
+GNOME heeft nu AEM gemonteerd als een volume en u kunt het gebruiken als elk ander volume.
 
 #### KDE {#kde}
 
 1. Open de wizard Netwerkmap.
 1. Selecteer **WebFolder**(webdav) en klik daarna.
 1. Typ in **Naam** een naam voor de verbinding.
-1. Voer in **Gebruiker** het advies in van `admin.` Adobe om de vooraf geconfigureerde beheerdersaccount te gebruiken.
+1. Voer in **Gebruiker** de `admin.` Adobe in en raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken.
 1. Voer in **Server**`http://localhost:4502/crx/repository/crx.default`
 
    >[!NOTE]
@@ -232,4 +236,4 @@ GNOME heeft nu AEM als een volume gemonteerd en u kunt het als elk ander volume 
 1. Klik op **Opslaan en Verbinden**.
 1. Voer het wachtwoord in als u hierom wordt gevraagd `admin` en klik op **Verbinden**.
 
-KDE heeft nu AEM als een volume gemonteerd en u kunt het als elk ander volume gebruiken.
+KDE heeft nu AEM gemonteerd als een volume en u kunt het als elk ander volume gebruiken.
