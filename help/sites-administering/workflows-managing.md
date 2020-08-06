@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5150867a-02a9-45c9-b2fd-e536b60ffa8c
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '573'
+ht-degree: 0%
 
 ---
 
@@ -53,7 +56,7 @@ De modellen van het werkschema erven een standaard toegangsbeheerlijst (ACL) voo
 
 Als het werkschemamodel binnen wordt opgeslagen `/var/workflow/models` dan kunt u specifieke ACL, relevant voor slechts dat werkschema, op de omslag toewijzen:
 
-1. Open CRXDE Lite in uw Webbrowser (bijvoorbeeld, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in uw webbrowser (bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Selecteer in de nodestructuur het knooppunt voor de map workflowmodellen:
 
    `/var/workflow/models`
@@ -66,6 +69,7 @@ Als het werkschemamodel binnen wordt opgeslagen `/var/workflow/models` dan kunt 
    * **Type**: `Deny`
    * **Bevoegdheden**: `jcr:read`
    * **rep:glob**: verwijzing naar de specifieke workflow
+
    ![wf-108](assets/wf-108.png)
 
    De tabel **Toegangsbeheerlijst** bevat nu de beperking voor `content-authors` het `prototype-wfm-01` workflowmodel.
@@ -88,7 +92,7 @@ Vergelijkbaar met de DAM-workflows die zijn opgeslagen onder
 
 U kunt ACL aan de omslag zelf dan toevoegen.
 
-1. Open CRXDE Lite in uw Webbrowser (bijvoorbeeld, [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in uw webbrowser (bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Selecteer in de knooppuntstructuur het knooppunt voor de afzonderlijke map in de map met workflowmodellen. bijvoorbeeld:
 
    `/var/workflow/models/prototypes`
@@ -101,6 +105,7 @@ U kunt ACL aan de omslag zelf dan toevoegen.
    * **Opdrachtgever**: `content-authors`
    * **Type**: `Deny`
    * **Bevoegdheden**: `jcr:read`
+
    >[!NOTE]
    >
    >Zoals met [pas ACL voor het specifieke werkschemamodel op /var/workflow/modellen](/help/sites-administering/workflows-managing.md#apply-an-acl-for-the-specific-workflow-model-to-var-workflow-models) toe kunt u rep:glob omvatten om toegang tot een specifieke werkschema te beperken.
