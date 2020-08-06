@@ -1,8 +1,8 @@
 ---
 title: AEM 3D installeren en configureren
 seo-title: AEM 3D installeren en configureren
-description: Leer AEM 3D installeren en configureren
-seo-description: Leer AEM 3D installeren en configureren
+description: Leer hoe u AEM 3D installeert en configureert
+seo-description: Leer hoe u AEM 3D installeert en configureert
 uuid: a60732ff-fd66-4f29-b901-42a3cfd58b65
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -24,18 +24,18 @@ De installatie en configuratie van AEM 3D (versie 3.0) omvat het volgende:
 
 1. De Autodesk® FBX® SDK-bibliotheek installeren.
 1. Het native 3D-codepakket downloaden en installeren.
-1. De workflow voor het opnemen van 3D-elementen configureren en AEM opnieuw starten.
+1. De 3D-workflow voor het opnemen van elementen configureren en AEM opnieuw starten.
 1. De instellingen van AEM 3D valideren.
 
 Zie ook [Werken met 3D-elementen](assets-3d.md).
 
-Zie ook de opmerkingen [bij de release van](/help/release-notes/aem3d-release-notes.md) AEM 3D Assets voor voorwaarden, ondersteunde browsers en andere belangrijke informatie over releases.
+Zie ook [AEM opmerkingen bij](/help/release-notes/aem3d-release-notes.md) de release 3D Assets voor voorwaarden, ondersteunde browsers en andere belangrijke informatie over releases.
 
 Zie ook [Werken met de component](using-the-3d-sites-component.md)3D-sites.
 
 >[!NOTE]
 >
->Voordat u het 3D-pakket downloadt en installeert, moet u controleren of alle vereiste AEM-pakketten correct zijn geïnstalleerd. Zie de opmerkingen bij de release van [AEM 3D.](install-config-3d.md)
+>Voordat u het 3D-pakket downloadt en installeert, moet u controleren of u alle vereiste AEM hebt geïnstalleerd. Zie de [AEM 3D-releaseopmerkingen.](install-config-3d.md)
 
 ## De Autodesk FBX SDK-bibliotheek installeren {#installing-the-autodesk-fbx-sdk-library}
 
@@ -64,15 +64,15 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
 1. De FBX SDK installeren:
 
-   * Windows. Installeer op hetzelfde station als waar AEM zich bevindt.
-   * Mac. Installeer op dezelfde partitie als AEM.
+   * Windows. Installeer op hetzelfde station als AEM.
+   * Mac. Installeren naar dezelfde partitie waar AEM zich bevindt.
    * Linux. Pak het gedownloade pakket uit en volg de instructies in `<yourFBXSDKpath>/Install_FbxFileSdk.txt`. Installeer de SDK waarop `/usr`.
 
 ## Het native 3D-codepakket downloaden en installeren {#downloading-and-installing-the-native-d-code-package}
 
 >[!NOTE]
 >
->Voordat u verdergaat met de installatie en configuratie van AEM 3D, raadt Adobe u aan eventuele toepasselijke servicepacks en andere gerelateerde functiepakketten te implementeren. Zie Opmerkingen bij de [release van AEM 3D](/help/release-notes/aem3d-release-notes.md).
+>Alvorens u met de installatie en de configuratie van AEM 3D te werk gaat, adviseert Adobe dat u om het even welke toepasselijke de dienstpakken en andere verwante eigenschapspakken opstelt. Zie [AEM opmerkingen bij de 3D-release](/help/release-notes/aem3d-release-notes.md).
 
 Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
@@ -96,17 +96,17 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 1. Vouw in het **[!UICONTROL Install Package]** dialoogvenster **Geavanceerde instellingen** uit en stel vervolgens in **[!UICONTROL Access Control Handling]** op **Samenvoegen**.
 1. Klik **[!UICONTROL Install]** om de installatie van het pakket te starten.
 
-   Het bestand `sample-3D-content.zip` wordt in de **[!UICONTROL Assets]** hoofdmap geplaatst. Zie [De installatie van AEM 3D](#validating-the-setup-of-aem-d) valideren voor meer informatie.
+   Het bestand `sample-3D-content.zip` wordt in de **[!UICONTROL Assets]** hoofdmap geplaatst. Zie De [instellingen van AEM 3D](#validating-the-setup-of-aem-d) valideren voor meer informatie.
 
 ## De workflow voor het opnemen van 3D-elementen configureren en AEM opnieuw starten {#configuring-the-d-asset-ingestion-workflow-and-restarting-aem}
 
 **De workflow** voor het opnemen van 3D-elementen configureren:
 
-1. Klik in AEM op het AEM-logo voor toegang tot de algemene navigatieconsole, klik vervolgens op het **[!UICONTROL Tools]** pictogram en navigeer naar **[!UICONTROL Workflow > Models]**.
+1. Klik AEM op het AEM logo om de globale navigatieconsole te openen, klik vervolgens op het **[!UICONTROL Tools]** pictogram en navigeer naar **[!UICONTROL Workflow > Models]**.
 1. Houd de muisaanwijzer boven de **[!UICONTROL Workflow Models]** workflow op de **[!UICONTROL DAM Update Asset]** pagina en selecteer het vinkje wanneer het selectievakje wordt weergegeven.
 
 1. On the toolbar, click **[!UICONTROL Edit]**.
-1. Klik op het **[!UICONTROL DAM Update Asset]** scherm in het zwevende AEM-deelvenster op het **[!UICONTROL Plus]** pictogram rechts van Workflow om de lijst uit te vouwen. Selecteer **[!UICONTROL Process Step]** in de lijst.
+1. Klik op het **[!UICONTROL DAM Update Asset]** scherm in het zwevende deelvenster AEM op het **[!UICONTROL Plus]** pictogram rechts van Workflow om de lijst uit te vouwen. Selecteer **[!UICONTROL Process Step]** in de lijst.
 1. Sleep **[!UICONTROL Process Step]** en zet het neer in het werkschema vlak voor **[!UICONTROL DAM Update Asset Workflow Completed]** component dichtbij het eind van het werkschema.
 
    ![3d_process_step_underaem6-4](assets/3d_process_step_underaem6-4.png)
@@ -123,13 +123,13 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 1. Klik in de rechterbovenhoek van de **[!UICONTROL DAM Update Asset]** pagina **[!UICONTROL Sync]** om het bewerkte workflowmodel op te slaan.
 1. Start AEM opnieuw.
 
-   Na het opnieuw opstarten kunt u 3D-inhoud uploaden en deze door AEM laten verwerken.
+   Na het opnieuw opstarten kunt u 3D-inhoud uploaden en deze AEM verwerken.
 
-   Ga verder met het [valideren van de installatie van AEM 3D](#validating-the-setup-of-aem-d).
+   Ga verder met het [valideren van de instellingen van AEM 3D](#validating-the-setup-of-aem-d).
 
 ## De instellingen van AEM 3D valideren {#validating-the-setup-of-aem-d}
 
-1. Klik in AEM op **[!UICONTROL Tools > Assets]**, download `sample-3D-content.zip`het gedownloade bestand en vouw het uit. (U kunt nu verwijderen `sample-3D-content.zip` in AEM.)
+1. Klik in AEM op **[!UICONTROL Tools > Assets]**, download `sample-3D-content.zip`en vouw het gedownloade bestand uit. (U kunt nu verwijderen `sample-3D-content.zip` in AEM.)
 
    Zorg ervoor dat u in de resterende stappen bent om feedback over uploads en verwerking weer **[!UICONTROL Card View]** te geven.
 
@@ -178,7 +178,7 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
-## Ondersteuning voor Adobe Dimension-middelen configureren {#configuring-support-for-adobe-dimension-assets}
+## Ondersteuning voor Adobe Dimension-elementen configureren {#configuring-support-for-adobe-dimension-assets}
 
 >[!NOTE]
 >
@@ -186,19 +186,19 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
 U kunt desgewenst ondersteuning configureren in AEM 3D voor Adobe Dimension-elementen.
 
-U moet een externe conversieservice configureren om het invoegen, voorvertonen en publiceren van Adobe Dimension 3D-middelen in AEM toe te staan. De service converteert van de eigen Adobe Dimension-indeling (`.dn`) naar een variant van glTF (opgemaakt als een `.glb` bestand) die als uitvoering met het Dn-element wordt opgeslagen. De `.glb` vertoning wordt gebruikt voor webweergave van het 3D-element in AEM Assets, sites en schermen en is ook beschikbaar voor downloaden voor gebruik met toepassingen van derden.
+U moet een externe conversieservice configureren om het invoegen, voorvertonen en publiceren van Adobe Dimension 3D-elementen in AEM toe te staan. De service converteert van de eigen Adobe Dimension-indeling (`.dn`) naar een variant van glTF (opgemaakt als een `.glb` bestand) die als uitvoering met het Dn-element wordt opgeslagen. De `.glb` vertoning wordt gebruikt voor webweergave van het 3D-element in AEM Assets, Sites en Schermen en is ook beschikbaar voor downloaden voor gebruik met toepassingen van derden.
 
 >[!NOTE]
 >
->De conversieservice wordt door Adobe gehost in Amazon AWS. Nadat de service op de juiste wijze is geconfigureerd, worden naar AEM geüploade `.dn` bestanden vervolgens veilig naar de conversieservice gekopieerd via tijdelijke opslag in Amazon S3. Het omzettingsresultaat wordt door tijdelijke S3-opslag teruggezet naar AEM. Alle overdrachten en opslag worden beveiligd. Bovendien blijft de inhoud in S3 en de conversieservice slechts kort bestaan (doorgaans niet meer dan een paar minuten).
+>De conversieservice wordt gehost door Adobe in Amazon AWS. Nadat de service correct is geconfigureerd, worden naar AEM geüploade `.dn` bestanden vervolgens veilig naar de conversieservice gekopieerd via tijdelijke opslag in Amazon S3. Het omzettingsresultaat wordt naar AEM overgedragen door middel van tijdelijke S3-opslag. Alle overdrachten en opslag worden beveiligd. Bovendien blijft de inhoud in S3 en de conversieservice slechts kort bestaan (doorgaans niet meer dan een paar minuten).
 
-**Ondersteuning configureren voor Adobe Dimension-elementen**:
+**Ondersteuning voor Adobe Dimension-elementen** configureren:
 
-1. Neem contact op met uw Adobe AEM-accountmanager, inrichtingsdeskundige of ondersteuningsmedewerker om referenties aan te vragen voor **AEM3D Services**.
+1. Neem contact op met uw Adobe AEM accountmanager, inrichtingsdeskundige of ondersteuningsmedewerker om referenties voor **AEM3D-services** aan te vragen.
 
    >[!NOTE]
    >
-   >Er is slechts één set referenties vereist voor elke organisatie, ongeacht het aantal AEM-instanties waarop de referenties zijn geïnstalleerd.
+   >Er is slechts één set referenties vereist voor elke organisatie, ongeacht het aantal AEM instanties waarop de referenties zijn geïnstalleerd.
 
 1. Controleer of u de volgende gegevens hebt ontvangen:
 
@@ -222,9 +222,9 @@ U moet een externe conversieservice configureren om het invoegen, voorvertonen e
    1. Navigeer naar `/libs/settings/dam/v3D/services/dncr` binnen **[!UICONTROL CRXDE Lite]**.
    1. Stel de `outputFormat` eigenschap in op `Dn` of `generic`.
 
-      Wanneer deze optie is ingesteld op `Dn`, bevat de `.glb` conversie Adobe-specifieke extensies, zoals IBL-belichting, voor de beste kwaliteit bij het weergeven van Dn-elementen in AEM. De omgezette .glb-uitvoering kan echter niet goed worden gerenderd in toepassingen van derden.
+      Wanneer deze optie is ingesteld op `Dn`, bevat de `.glb` conversie Adobe-specifieke extensies, zoals IBL-verlichting, voor de beste kwaliteit bij het bekijken van Dn-elementen in AEM. De omgezette .glb-uitvoering kan echter niet goed worden gerenderd in toepassingen van derden.
 
-      Wanneer deze optie is ingesteld op `generic`, is de `.glb` vertoning algemeen zonder Adobe-specifieke extensies. Met deze instelling kan het bestand worden gebruikt in toepassingen van derden, terwijl weergave met de AEM 3D-viewer visueel suboptimaal is.
+      Wanneer ingesteld op `generic`, is de `.glb` vertoning algemeen zonder Adobe-specifieke extensies. Met deze instelling kan het bestand worden gebruikt in toepassingen van derden, terwijl weergave met de AEM 3D-viewer visueel suboptimaal is.
 
 1. Schakel de Dn-bestandsindeling als volgt in **[!UICONTROL CRXDE Lite]**:
 
