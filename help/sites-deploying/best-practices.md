@@ -11,13 +11,16 @@ topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
 translation-type: tm+mt
 source-git-commit: c9591211c80d453de5172c90501d2d2907eba4e6
+workflow-type: tm+mt
+source-wordcount: '438'
+ht-degree: 0%
 
 ---
 
 
 # Best practices implementeren{#deploying-best-practices}
 
-Het opstellen van beste praktijken beschrijft hoe te om AEM op de meest efficiënte en meest efficiënte manier op te stellen of te handhaven. Deze groeiende lijst met onderwerpen omvat diverse gebieden in AEM.
+Het opstellen van beste praktijken beschrijft hoe te om AEM op de meest efficiënte en meest efficiënte manier op te stellen of te handhaven. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
 Op de volgende gebieden is documentatie beschikbaar over het implementeren en onderhouden van best practices en aanbevelingen:
 
@@ -70,7 +73,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## Gemeenschappen {#communities}
 
-AEM-gemeenschappen vereenvoudigen de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM-gemeenschappen worden hier beschreven:
+AEM Communities vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM Communities worden hier beschreven:
 
 [Community Content Store](/help/communities/working-with-srp.md) - Bespreekt de nieuwe functie voor gedeelde opslag voor door gebruikers gegenereerde inhoud (UGC) en de overwegingen voor het kiezen van de onderliggende [topologie](/help/communities/topologies.md).
 
@@ -80,9 +83,9 @@ AEM-gemeenschappen vereenvoudigen de oprichting en het beheer van on-premise gem
 
 De beste werkwijzen rond de gebruikersinterface worden hier beschreven:
 
-[Aanbevelingen voor gebruikersinterface voor klanten](/help/sites-deploying/ui-recommendations.md)
+[Gebruikersinterface Recommendations voor klanten](/help/sites-deploying/ui-recommendations.md)
 
-AEM heeft momenteel twee gebruikersinterface&#39;s: klassieke en aanraakgeoptimaliseerde interface in dezelfde release. Daarom moeten klanten een besluit nemen over welk gebruik tijdens de projectimplementatie moet worden gemaakt. Dit document is bedoeld om u te helpen bij het zoeken naar de juiste keuze.
+AEM heeft momenteel twee UI&#39;s: klassieke en aanraakgeoptimaliseerde interface in dezelfde release. Daarom moeten klanten een besluit nemen over welk gebruik tijdens de projectimplementatie moet worden gemaakt. Dit document is bedoeld om u te helpen bij het zoeken naar de juiste keuze.
 
 ## Prestaties {#performance}
 
@@ -98,7 +101,7 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   <tr>
    <td>Dispatcher gebruiken met een CDN</td> 
    <td><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html#using-dispatcher-with-a-cdn">Dispatcher gebruiken met een CDN</a></td> 
-   <td>Een CDN (Content Delivery Network), zoals Akamai Edge Delivery of Amazon Cloud Front, levert inhoud van een locatie dichtbij de eindgebruiker.</td> 
+   <td>Een CDN (Content Delivery Network), zoals Akamai Edge Delivery of Amazon Cloud Front, levert inhoud op een locatie die dicht bij de eindgebruiker ligt.</td> 
   </tr>
   <tr>
    <td>Optimalisatie van prestaties</td> 
@@ -108,7 +111,7 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   <tr>
    <td>Prestatietesten</td> 
    <td><a href="/help/sites-deploying/best-practices-for-performance-testing.md">Best practices voor het testen van prestaties</a></td> 
-   <td>Beschrijft beste praktijken voor het runnen van prestatietests op een plaatsing AEM.<br /> </td> 
+   <td>Beschrijft beste praktijken voor het runnen van prestatietests op een AEM plaatsing.<br /> </td> 
   </tr>
  </tbody>
 </table>
