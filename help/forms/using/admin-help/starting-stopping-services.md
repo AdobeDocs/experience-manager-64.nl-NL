@@ -11,32 +11,35 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b93060bd-c6e1-40d2-8acd-ccafb8ed56da
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '287'
+ht-degree: 0%
 
 ---
 
 
 # Starten en stoppen van services {#starting-and-stopping-services}
 
-Er zijn twee soorten diensten die deel van AEM vormen:
+Er zijn twee soorten diensten die deel van AEM vormen uitmaken:
 
-* Services die de toepassingsserver en database voor AEM-formulieren besturen.
-* Services voor het besturen van AEM-formuliermodules
+* Services die de toepassingsserver en database voor AEM formulieren besturen.
+* Diensten die AEM vormen modules controleren
 
 ## De diensten verbonden aan AEM vormmodules beginnen of tegenhouden {#start-or-stop-the-services-associated-with-aem-forms-modules}
 
-AEM-formuliermodules (bijvoorbeeld Forms, Rights Management, Output) werken als services. Het kan gebeuren dat u de services voor deze AEM-formuliermodules moet stoppen of starten. U moet bijvoorbeeld een AEM-formulierservice stoppen en opnieuw starten nadat u een instelling voor de service hebt gewijzigd.
+AEM formuliermodules (bijvoorbeeld Forms, Rights Management, Output) werken als services. Het kan gebeuren dat u de services voor deze AEM formuliermodules moet stoppen of starten. U moet bijvoorbeeld een AEM formulierservice stoppen en opnieuw starten nadat u een instelling voor de service hebt gewijzigd.
 
 1. Klik in de beheerconsole op **Services** > **Toepassingen en services** > **Servicebeheer**.
 1. Voor de pagina van het Beheer van de Dienst, selecteer de controledoos naast de dienst om te stoppen of te beginnen en Einde of Begin te klikken.
 
 ## De diensten van het begin of van het einde voor de toepassingsserver en gegevensbestand {#start-or-stop-services-for-the-application-server-and-database}
 
-Een volledige implementatie van AEM-formulieren omvat een toepassingsserver en databaseservices:
+Een volledige implementatie van AEM formulieren omvat een toepassingsserver en databaseservices:
 
-* *`[application server]`* voor AEM-formulieren
-* *`[database]`* voor AEM-formulieren
+* *`[application server]`* voor AEM
+* *`[database]`* voor AEM
 
-In Windows zijn deze services toegankelijk via het deelvenster **** Systeembeheer **>** Services. Als u bijvoorbeeld AEM-formulieren op JBoss hebt geïnstalleerd met de methode key turnkey, zijn de volgende services beschikbaar op uw systeem:
+In Windows zijn deze services toegankelijk via het deelvenster **** Systeembeheer **>** Services. Als u bijvoorbeeld AEM formulieren op JBoss hebt geïnstalleerd met de methode key turnkey, zijn de volgende services beschikbaar op uw systeem:
 
 * JBoss voor Adobe Experience Manager-formulieren
 * MySQL voor Adobe Experience Manager-formulieren
