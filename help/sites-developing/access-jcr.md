@@ -1,8 +1,8 @@
 ---
-title: Programmatoegang tot het JCR AEM
-seo-title: Programmatoegang tot het JCR AEM
-description: U kunt via programmacode knooppunten en eigenschappen wijzigen in de AEM-opslagplaats, die deel uitmaakt van de Adobe Marketing Cloud
-seo-description: U kunt via programmacode knooppunten en eigenschappen wijzigen in de AEM-opslagplaats, die deel uitmaakt van de Adobe Marketing Cloud
+title: Programmatoegang tot het AEM JCR
+seo-title: Programmatoegang tot het AEM JCR
+description: U kunt via programmacode knooppunten en eigenschappen wijzigen die zich bevinden in de AEM opslagplaats, die deel uitmaakt van de Adobe Marketing Cloud
+seo-description: U kunt via programmacode knooppunten en eigenschappen wijzigen die zich bevinden in de AEM opslagplaats, die deel uitmaakt van de Adobe Marketing Cloud
 uuid: 2051d03f-430a-4cae-8f6d-e5bc727d733f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '616'
+ht-degree: 0%
 
 ---
 
 
-# Programmatoegang tot het JCR AEM{#how-to-programmatically-access-the-aem-jcr}
+# Programmatoegang tot het AEM JCR{#how-to-programmatically-access-the-aem-jcr}
 
-U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-opslagplaats, die deel uitmaakt van de Adobe Marketing Cloud. Als u toegang wilt krijgen tot de CQ-opslagplaats, gebruikt u de JCR-API (Java Content Repository). Met de Java JCR API kunt u (CRUD)-bewerkingen maken, vervangen, bijwerken en verwijderen op inhoud in de Adobe CQ-opslagplaats. Ga voor meer informatie over de Java JCR API naar [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
+U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-opslagplaats, die deel uitmaakt van de Adobe Marketing Cloud. Als u toegang wilt krijgen tot de CQ-opslagplaats, gebruikt u de JCR-API (Java Content Repository). U kunt de Java JCR API gebruiken om (CRUD)-bewerkingen te maken, te vervangen, bij te werken en te verwijderen op inhoud in de Adobe CQ-opslagplaats. Ga voor meer informatie over de Java JCR API naar [https://jackrabbit.apache.org/jcr/jcr-api.html](https://jackrabbit.apache.org/jcr/jcr-api.html).
 
 >[!NOTE]
 >
->Dit ontwikkelingsartikel wijzigt de JCR van Adobe CQ van een externe toepassing van Java. U kunt het JCR daarentegen wijzigen vanuit een OSGi-bundel met behulp van de JCR API. Zie [Blijvende CQ-gegevens in de Java Content Repository](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html)voor meer informatie.
+>Dit ontwikkelingsartikel wijzigt het JCR van Adobe CQ van een externe toepassing van Java. U kunt het JCR daarentegen wijzigen vanuit een OSGi-bundel met behulp van de JCR API. Zie [Blijvende CQ-gegevens in de Java Content Repository](https://helpx.adobe.com/experience-manager/using/persisting-cq-data-java-content1.html)voor meer informatie.
 
 >[!NOTE]
 >
@@ -29,11 +32,11 @@ U kunt via programmacode knooppunten en eigenschappen wijzigen in de Adobe CQ-op
 
 >[!NOTE]
 >
->Zie Adobe Experience Manager-gegevens [aanvragen met de JCR-API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)voor meer informatie over het uitvoeren van query&#39;s op de JCR-API.
+>Zie Adobe Experience Manager-gegevens [opvragen met de JCR-API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)voor meer informatie over het uitvoeren van query&#39;s op de JCR-API.
 
 ## Een instantie Repository maken {#create-a-repository-instance}
 
-Hoewel er verschillende manieren zijn om verbinding te maken met een opslagplaats en een verbinding tot stand te brengen, gebruikt dit ontwikkelingsartikel een statische methode die tot de `org.apache.jackrabbit.commons.JcrUtils` klasse behoort. De naam van de methode is `getRepository`. Deze methode heeft een tekenreeksparameter die de URL van de Adobe CQ-server vertegenwoordigt. Bijvoorbeeld `http://localhost:4503/crx/server`.
+Hoewel er verschillende manieren zijn om verbinding te maken met een opslagplaats en een verbinding tot stand te brengen, gebruikt dit ontwikkelingsartikel een statische methode die tot de `org.apache.jackrabbit.commons.JcrUtils` klasse behoort. De naam van de methode is `getRepository`. Deze methode gebruikt een tekenreeksparameter die de URL van de Adobe CQ-server vertegenwoordigt. Bijvoorbeeld `http://localhost:4503/crx/server`.
 
 De `getRepository`methode retourneert een `Repository`instantie, zoals in het volgende codevoorbeeld wordt getoond.
 
@@ -86,7 +89,7 @@ System.out.println(node.getPath());
 System.out.println(node.getProperty("message").getString());
 ```
 
-## Knooppunten maken in de Adobe CQ-opslagplaats {#create-nodes-in-the-adobe-cq-repository}
+## Maak knooppunten in de Adobe CQ Repository {#create-nodes-in-the-adobe-cq-repository}
 
 Het volgende Java-codevoorbeeld vertegenwoordigt een Java-klasse die verbinding maakt met Adobe CQ, een `Session`instantie maakt en nieuwe knooppunten toevoegt. Een knoop wordt toegewezen een gegevenswaarde en dan wordt de waarde van de knoop en zijn weg geschreven aan de console. Als u klaar bent met de sessie, moet u zich afmelden.
 
@@ -140,7 +143,7 @@ try {
 }
 ```
 
-Nadat u het volledige codevoorbeeld in werking stelt en de knopen creeert, kunt u de nieuwe knopen in **[!UICONTROL CRXDE Lite]** bekijken, zoals aangetoond in de volgende illustratie.
+Nadat u het volledige codevoorbeeld in werking stelt en de knopen creeert, kunt u de nieuwe knopen in de **[!UICONTROL CRXDE Lite]**, zoals aangetoond in de volgende afbeelding bekijken.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
 
