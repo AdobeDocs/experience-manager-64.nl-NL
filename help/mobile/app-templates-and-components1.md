@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: 7f31c6a7-92d5-4a87-a9f0-68a82b834d5a
 translation-type: tm+mt
 source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+workflow-type: tm+mt
+source-wordcount: '428'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Een malplaatje wordt gebruikt om een Pagina tot stand te brengen en bepaalt welke componenten binnen het geselecteerde werkingsgebied kunnen worden gebruikt. Een sjabloon is een hiërarchie van knooppunten die dezelfde structuur heeft als de pagina die moet worden gemaakt, maar zonder daadwerkelijke inhoud.
 
@@ -30,7 +33,7 @@ Elke sjabloon bevat een selectie van componenten die beschikbaar zijn voor gebru
 
 >[!NOTE]
 >
->Zie [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)voor meer informatie over het ontwikkelen van uw AEM-toepassing met gebruik van CRXDE Lite.
+>Zie [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)voor meer informatie over het ontwikkelen van uw AEM met behulp van CRXDE Lite.
 
 Een sjabloon is de basis van een pagina.
 
@@ -60,6 +63,7 @@ Dit knooppunt bevat *een knooppunt jcr:content (cq:PageContent)* dat wordt gebru
 >
 >* [Sjablonen](/help/sites-developing/templates.md)
 >* [Onderdelen](/help/sites-developing/components.md)
+
 >
 
 
@@ -68,10 +72,10 @@ Nadat u het basisbegrip van Malplaatjes en Componenten hebt, zie de volgende mid
 
 * [Sjablonen en componenten maken en toevoegen](/help/mobile/mobile-ondemand-app-templates.md)
 * [Inhoud-eigenschappen gebruiken om inhoud te exporteren](/help/mobile/on-demand-content-properties-exporting.md)
-* [Aanbevolen werkwijzen](/help/mobile/best-practices-aem-mobile.md)
+* [Best practices voor](/help/mobile/best-practices-aem-mobile.md)
 * [AEM Mobile Content Services ontwikkelen](/help/mobile/developing-content-services.md)
 
-### Additional Resources {#additional-resources}
+### Aanvullende bronnen {#additional-resources}
 
 Raadpleeg de volgende koppelingen voor meer informatie over aanvullende onderwerpen op mobiele apps:
 
