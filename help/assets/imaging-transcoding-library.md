@@ -1,6 +1,6 @@
 ---
 title: Afbeeldingstransformatiebibliotheek
-description: Leer hoe u de Imaging Transcoding Library van Adobe configureert en gebruikt, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals codering, transcodering, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
+description: Leer hoe u de bibliotheek Imaging Transcoding Adobe kunt configureren en gebruiken, een oplossing voor beeldverwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals coderen, transcoderen, het resamplen van afbeeldingen en het vergroten of verkleinen van afbeeldingen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 65f45bdb34279f5834c0466457101ca2f309d5f1
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Afbeeldingstransformatiebibliotheek {#imaging-transcoding-library}
 
-De grafische transformatiebibliotheek van Adobe is een merkgebonden oplossing voor beeldverwerking die kernfuncties voor beeldverwerking kan uitvoeren, zoals:
+Imaging Transcoding Library is een oplossing voor imaging-verwerking die kernfuncties voor het verwerken van afbeeldingen kan uitvoeren, zoals:
 
 * Codering
 * Transcodering (ondersteunde indelingen converteren)
@@ -27,7 +27,7 @@ De bibliotheek voor grafische transformatie biedt CMYK-ondersteuning en volledig
 Naast de ondersteuning van een groot aantal bestandsindelingen en profielen biedt Imaging Transcoding Library aanzienlijke voordelen ten opzichte van andere oplossingen van derden op het gebied van prestaties, schaalbaarheid en kwaliteit. Hier volgen enkele belangrijke voordelen van het gebruik van de bibliotheek voor het transformeren van afbeeldingen:
 
 * **Schalen met grotere bestandsgrootte of resolutie**: Schalen wordt vooral bereikt door de gepatenteerde mogelijkheid om de afbeeldingstranscoderingsbibliotheek tijdens het decoderen van bestanden te vergroten of te verkleinen. Hierdoor wordt gegarandeerd dat het runtimegeheugengebruik altijd optimaal is en geen kwadratische functie voor het vergroten van de bestandsgrootte of het oplossen van megapixels is. De bibliotheek voor het transformeren van afbeeldingen kan grotere en hoge-resolutiebestanden (met hogere megapixels) verwerken. Gereedschappen van derden, zoals ImageMagick, kunnen grote bestanden en vastlopen niet verwerken tijdens het verwerken van dergelijke bestanden.
-* **Afbeeldingscompressie en -algoritmen** voor Photoshop-kwaliteit: Consistentie met de industriestandaard wat betreft de kwaliteit van de downsampling (vloeiend, scherp en automatisch bicubisch) en de compressiekwaliteit. De bibliotheek voor grafische transformatie beoordeelt verder de kwaliteitsfactor van de invoerafbeelding en gebruikt op intelligente wijze optimale tabellen en kwaliteitsinstellingen voor de uitvoerafbeelding. Hierdoor ontstaan bestanden van optimale grootte zonder dat dit ten koste gaat van de visuele kwaliteit.
+* **Compressie- en formaatalgoritmen** voor Photoshop-kwaliteit: Consistentie met de industriestandaard wat betreft de kwaliteit van de downsampling (vloeiend, scherp en automatisch bicubisch) en de compressiekwaliteit. De bibliotheek voor grafische transformatie beoordeelt verder de kwaliteitsfactor van de invoerafbeelding en gebruikt op intelligente wijze optimale tabellen en kwaliteitsinstellingen voor de uitvoerafbeelding. Hierdoor ontstaan bestanden van optimale grootte zonder dat dit ten koste gaat van de visuele kwaliteit.
 * **Hoge doorvoer:** De reactietijd is lager en de productie is constant hoger dan ImageMagick. Daarom zou de Bibliotheek van de Transcodering van Beelden de wachttijd voor gebruikers en de kosten van het ontvangen moeten verminderen.
 * **Beter schalen bij gelijktijdig laden:** De afbeeldingstransformatiebibliotheek functioneert optimaal onder gelijktijdige laadvoorwaarden. Deze server biedt een hoge doorvoer met optimale CPU-prestaties, een optimaal geheugengebruik en een lage responstijd, wat de hostingkosten helpt te verlagen.
 
@@ -95,7 +95,7 @@ Als u de bibliotheek wilt configureren, maakt u een .conf-bestand om de biblioth
 
 1. Voer `ldconfig` bevel uit om de noodzakelijke verbindingen en het geheime voorgeheugen tot stand te brengen.
 
-1. Bewerk het `.bash_profile` bestand in de account die wordt gebruikt om AEM te starten. Voeg toe `LD_LIBRARY_PATH` door het volgende toe te voegen.
+1. Bewerk het `.bash_profile` bestand in de account waarmee AEM wordt gestart. Voeg toe `LD_LIBRARY_PATH` door het volgende toe te voegen.
 
    ```shell
    LD_LIBRARY_PATH=.
@@ -129,6 +129,7 @@ Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van
    * `SWitchEngine -input ${file} -destMime PNG -resize 140x100 -output ${directory}cq5dam.thumbnail.140.100.png`
    * `SWitchEngine -input ${file} -destMime PNG -resize 319 -output ${directory}cq5dam.thumbnail.319.319.png`
    * `SWitchEngine -input ${file} -destMime JPEG -resize 1280 -preserveCMYK -output ${directory}cq5dam.web.1280.1280.jpeg`
+
    ![schil](assets/chlimage_1-199.png)
 
 1. (Optioneel) Genereer miniaturen van een tussentijdse uitvoering met één opdracht. De tussenliggende vertoning fungeert als bron voor het genereren van statische weergaven en webuitvoeringen. Deze methode is sneller dan de eerdere methode. Met deze methode kunt u echter geen aangepaste parameters op miniaturen toepassen.
@@ -139,7 +140,7 @@ Als u bijvoorbeeld miniaturen wilt maken voor een TIFF-afbeelding met behulp van
 
 1. Synchroniseer het bijgewerkte [!UICONTROL DAM Update Asset] workflowmodel. Sla de workflow op.
 
-Controleer de configuratie, upload een TIFF-afbeelding en controleer het bestand error.log. Je zult berichten met `INFO` aanhalingstekens van `SwitchEngineHandlingProcess execute: executing command line`. In de logboeken worden de gegenereerde uitvoeringen vermeld. Nadat de workflow is voltooid, kunt u de nieuwe uitvoeringen weergeven in AEM.
+Controleer de configuratie, upload een TIFF-afbeelding en controleer het bestand error.log. Je zult berichten met `INFO` aanhalingstekens van `SwitchEngineHandlingProcess execute: executing command line`. In de logboeken worden de gegenereerde uitvoeringen vermeld. Nadat de workflow is voltooid, kunt u de nieuwe uitvoeringen in AEM bekijken.
 
 >[!MORELIKETHIS]
 >
