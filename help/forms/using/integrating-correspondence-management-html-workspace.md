@@ -1,8 +1,8 @@
 ---
-title: Toepassingen van derden integreren in de werkruimte van AEM Forms
-seo-title: Toepassingen van derden integreren in de werkruimte van AEM Forms
-description: Hoe kan ik-toepassingen van andere leveranciers, zoals Correspondence Management, integreren in de werkruimte van AEM Forms.
-seo-description: Hoe kan ik-toepassingen van andere leveranciers, zoals Correspondence Management, integreren in de werkruimte van AEM Forms.
+title: Toepassingen van derden integreren in de AEM Forms-werkruimte
+seo-title: Toepassingen van derden integreren in de AEM Forms-werkruimte
+description: Hoe kan ik-toepassingen van andere leveranciers, zoals Correspondence Management, integreren in de AEM Forms-werkruimte.
+seo-description: Hoe kan ik-toepassingen van andere leveranciers, zoals Correspondence Management, integreren in de AEM Forms-werkruimte.
 uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# Toepassingen van derden integreren in de werkruimte van AEM Forms {#integrating-third-party-applications-in-aem-forms-workspace}
+# Toepassingen van derden integreren in de AEM Forms-werkruimte {#integrating-third-party-applications-in-aem-forms-workspace}
 
-De werkruimte van AEM Forms ondersteunt het beheer van taken en het invullen van formulieren en documenten. Deze formulieren en documenten kunnen XDP Forms, Flex®-formulieren of (afgekeurde) hulplijnen zijn die zijn gerenderd in XDP-, PDF-, HTML- of Flex-indeling.
+De werkruimte van AEM Forms ondersteunt het beheer van taken en voltooiingsactiviteiten voor formulieren en documenten. Deze formulieren en documenten kunnen XDP Forms, Flex®-formulieren of (afgekeurde) hulplijnen zijn die zijn gerenderd in XDP-, PDF-, HTML- of Flex-indeling.
 
-Deze mogelijkheden worden verder versterkt. AEM Forms ondersteunen nu samenwerking met toepassingen van derden die functionaliteit ondersteunen die lijkt op de werkruimte van AEM Forms. Een veelvoorkomend onderdeel van deze functionaliteit is de workflow van de toewijzing en de daaropvolgende goedkeuring van een taak. AEM Forms verstrekken één enkele verenigde ervaring voor de ondernemingsgebruikers van AEM Forms zodat al dergelijke taaktaken of goedkeuringen voor de gesteunde toepassingen door de werkruimte van AEM Forms kunnen worden behandeld.
+Deze mogelijkheden worden verder versterkt. AEM Forms ondersteunt nu samenwerking met toepassingen van derden die functionaliteit ondersteunen die vergelijkbaar is met de AEM Forms-werkruimte. Een veelvoorkomend onderdeel van deze functionaliteit is de workflow van de toewijzing en de daaropvolgende goedkeuring van een taak. AEM Forms biedt een enkele uniforme ervaring voor AEM Forms-zakelijke gebruikers, zodat al dergelijke taaktoewijzingen of goedkeuringen voor de ondersteunde toepassingen kunnen worden verwerkt via de AEM Forms-werkruimte.
 
-Laten we Correspondentiebeheer bijvoorbeeld beschouwen als de voorbeeldkandidaat voor integratie met de werkruimte AEM Forms. Correspondentiebeheer heeft het concept van een &#39;brief&#39;, die kan worden weergegeven en acties mogelijk maakt.
+Laten we Correspondence Management bijvoorbeeld beschouwen als de voorbeeldkandidaat voor integratie met de AEM Forms-werkruimte. Correspondentiebeheer heeft het concept van een &#39;brief&#39;, die kan worden weergegeven en acties mogelijk maakt.
 
 ## Correspondentenbeheermiddelen maken {#create-correspondence-management-assets}
 
