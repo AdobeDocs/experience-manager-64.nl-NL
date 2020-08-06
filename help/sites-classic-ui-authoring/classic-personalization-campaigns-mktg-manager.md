@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1218'
+ht-degree: 0%
 
 ---
 
@@ -56,15 +59,15 @@ Via de MCM hebt u toegang tot:
 
 * **[Leads](#leads)**
 
-   Hier kun je je leads beheren. U kunt leads maken of importeren, specifieke details voor afzonderlijke leads bewerken of verwijderen wanneer u deze niet meer nodig hebt. U kunt ook leads in verschillende groepen plaatsen, genaamd Lijsten. **** Opmerking: Adobe is niet van plan deze functionaliteit verder te verbeteren.
+   Hier kun je je leads beheren. U kunt leads maken of importeren, specifieke details voor afzonderlijke leads bewerken of verwijderen wanneer u deze niet meer nodig hebt. U kunt ook leads in verschillende groepen plaatsen, genaamd Lijsten. **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie met AEM [te](/help/sites-administering/campaign.md)benutten.
+   De aanbeveling is om Adobe Campaign en de integratie naar AEM [te](/help/sites-administering/campaign.md)benutten.
 
 * **[Lijsten](#lists)**
 
-   Hier kunt u uw lijsten (van leads) beheren.**** Opmerking: Adobe is niet van plan deze functionaliteit verder te verbeteren.
+   Hier kunt u uw lijsten (van leads) beheren.**Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie met AEM [te](/help/sites-administering/campaign.md)benutten.
+   De aanbeveling is om Adobe Campaign en de integratie naar AEM [te](/help/sites-administering/campaign.md)benutten.
 
 * **[Campagnes](#campaigns)**Hier kunt u uw merken, campagnes en ervaringen beheren.
 
@@ -78,10 +81,10 @@ Het dashboard bevat vier deelvensters die u een overzicht bieden van uw lijsten 
 
 >[!NOTE]
 >
->Adobe is niet van plan deze functionaliteit verder te verbeteren (Leads beheren).\
->De aanbeveling is om [Adobe-campagne en de integratie met AEM](/help/sites-administering/campaign.md)te benutten.
+>Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads beheren).\
+>De aanbeveling is om [Adobe Campaign en de integratie tot AEM](/help/sites-administering/campaign.md)te maken.
 
-In AEM MCM, kunt u leiden organiseren en toevoegen door of hen manueel in te gaan of een komma-gescheiden lijst in te voeren; bijvoorbeeld een mailinglijst. Aanvullende manieren om leads te genereren zijn afkomstig van aanmeldingspogingen in een nieuwsbrief of aanmeldingspogingen van de gebruikersgemeenschap (als deze zijn geconfigureerd, kunnen ze een workflow activeren die leads vult). Regelafstand wordt meestal gecategoriseerd en in een lijst geplaatst, zodat u later handelingen kunt uitvoeren op de hele lijst. bijvoorbeeld het verzenden van een aangepaste e-mail naar een bepaalde lijst.
+In AEM MCM, kunt u leiden organiseren en toevoegen door of hen manueel in te gaan of een komma-gescheiden lijst in te voeren; bijvoorbeeld een mailinglijst. Aanvullende manieren om leads te genereren zijn afkomstig van aanmeldingspogingen voor nieuwsbrieven of communityaanmeldingen (als deze zijn geconfigureerd, kunnen ze een workflow activeren die leads vult). Regelafstand wordt meestal gecategoriseerd en in een lijst geplaatst, zodat u later handelingen kunt uitvoeren op de hele lijst. bijvoorbeeld het verzenden van een aangepaste e-mail naar een bepaalde lijst.
 
 Onder **Leads** in het linkerdeelvenster kunt u uw leads maken, importeren, bewerken en verwijderen en vervolgens naar wens activeren of deactiveren. U kunt een lead aan een lijst toevoegen of zien tot welke lijsten deze al behoort.
 
@@ -95,8 +98,8 @@ Onder **Leads** in het linkerdeelvenster kunt u uw leads maken, importeren, bewe
 
 >[!NOTE]
 >
->Adobe is niet van plan deze functionaliteit verder te verbeteren (lijsten beheren).\
->De aanbeveling is om [Adobe-campagne en de integratie met AEM](/help/sites-administering/campaign.md)te benutten.
+>Adobe is niet van plan deze mogelijkheid verder te verbeteren (lijsten beheren).\
+>De aanbeveling is om [Adobe Campaign en de integratie tot AEM](/help/sites-administering/campaign.md)te maken.
 
 Met lijsten kunt u uw leads ordenen in groepen. Met lijsten, kunt u uw marketing campagnes aan een uitgezochte groep mensen richten; U kunt bijvoorbeeld een doelnieuwsbrief naar een lijst sturen.
 
@@ -120,8 +123,7 @@ Klik in de MCM op Campagnes om bestaande campagnes te openen ****.
 
 * **In het linkervenster**:
 
-   
-Er is een lijst van alle merken en campagnes.
+   Er is een lijst van alle merken en campagnes.
 
    Een enkele klik op een merk zal allebei:
 
@@ -130,8 +132,7 @@ Er is een lijst van alle merken en campagnes.
 
 * **In het rechterdeelvenster**:
 
-   
-Pictogrammen worden voor elk merk getoond (historische campagnes worden niet weergegeven).
+   Pictogrammen worden voor elk merk getoond (historische campagnes worden niet weergegeven).
 
    U kunt dubbelklikken op deze opties om het merkoverzicht te openen.
 
@@ -142,7 +143,7 @@ Pictogrammen worden voor elk merk getoond (historische campagnes worden niet wee
 Vanaf hier kunt u:
 
 * Zie het aantal campagnes en ervaringen (nummer weergegeven in het linkervenster) dat voor dit merk bestaat.
-* **Een** nieuw bestand maken... campagne voor dit merk.
+* Een **nieuw bestand maken...** campagne voor dit merk.
 
 * Wijzig de tijdlijn die wordt weergegeven. Selecteer **Week**, **Maand** of **Kwart**, gebruik de pijlen om specifieke periodes te selecteren of op **Vandaag** terug te komen.
 
@@ -170,7 +171,7 @@ Voor de afzonderlijke campagnes zijn twee weergaven beschikbaar:
    Vanaf hier kunt u:
 
    * Verander timespan u bekijkt door de pijlen te gebruiken, of terugkeer aan **Vandaag**.
-   * **Aanraakpunt** toevoegen gebruiken... om een nieuw aanraakpunt voor een bestaande ervaring toe te voegen.
+   * Aanraakpunt **toevoegen gebruiken...** om een nieuw aanraakpunt voor een bestaande ervaring toe te voegen.
    * Klik op een teaser (in het rechterdeelvenster) om de **Aan-tijd** en **Uit-tijd** in te stellen.
 
 1. **Lijstweergave**
@@ -185,14 +186,14 @@ Voor de afzonderlijke campagnes zijn twee weergaven beschikbaar:
 
    Vanaf hier kunt u:
 
-   * **Een** nieuw bestand maken... ervaring; Adobe Target biedt bijvoorbeeld, theaters en nieuwsbrieven.
+   * Een **nieuw bestand maken...** ervaring; Adobe Target biedt bijvoorbeeld, theaters en nieuwsbrieven.
    * **Bewerk** de details van een specifieke laserpagina of nieuwsbrief (u kunt ook dubbelklikken).
-   * **De** eigenschappen definiëren... voor een specifieke laserpagina of nieuwsbrief.
+   * De **eigenschappen definiëren...** voor een specifieke laserpagina of nieuwsbrief.
    * **Simuleer** de vormgeving van een ervaring (laserpagina of nieuwsbrief).
 
       Wanneer de gesimuleerde pagina is geopend, kunt u het hulpprogramma openen om over te schakelen naar de bewerkingsmodus voor die pagina.
 
-   * **** Analyseren... de afbeeldingen die voor een pagina zijn gegenereerd.
+   * **Analyseren...** de afbeeldingen die voor een pagina zijn gegenereerd.
    * **Verwijder** items wanneer deze niet meer nodig zijn.
    * **Zoek** de tekst (het veld Titel van de ervaring wordt doorzocht).
    * Met **Geavanceerd** zoeken kunt u filters op de zoekopdracht toepassen.
@@ -207,7 +208,7 @@ Van hieruit kunt u ook het hulpslot openen (klik op de kleine pijl-omlaag) om de
 
 ### Uw ervaringen met campagnes analyseren {#analyzing-your-campaign-experiences}
 
-Klik in de MCM op **Campagnes**. **Zorg ervoor dat de lijstweergave actief is, selecteer vervolgens de vereiste campagneervaring en selecteer** Analyseren... . Er wordt een grafiek weergegeven met de paginamonpressies die in de loop der tijd worden weergegeven.
+Klik in de MCM op **Campagnes**. Zorg ervoor dat de lijstweergave actief is, selecteer vervolgens de vereiste campagneervaring en selecteer **Analyseren...**. Er wordt een grafiek weergegeven met de paginamonpressies die in de loop der tijd worden weergegeven.
 
 ![mcm_campagne analyseren](assets/mcm_campaignanalyze.png)
 
