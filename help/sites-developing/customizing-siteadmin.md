@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73e57f20-4022-46ab-aa5c-ec866298b645
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '798'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ De console van het Beleid van Websites kan worden uitgebreid om douanekolommen t
 
 Dit geleidelijke leerprogramma verklaart hoe te om een nieuwe kolom in de console van het Beleid van Websites te tonen door de `ListInfoProvider` interface uit te voeren. Het bestaat uit de volgende stappen:
 
-1. [Creërend de dienst](#creating-the-osgi-service) OSGI en plaatsend de bundel die het aan de server AEM bevat.
+1. [Creërend de dienst](#creating-the-osgi-service) OSGI en opstellend de bundel die het aan de AEM server bevat.
 1. (facultatief) [Testen van de nieuwe dienst](#testing-the-new-service) door een vraag uit te geven JSON om het voorwerp te verzoeken JSON dat wordt gebruikt om de console te bouwen.
 1. [De nieuwe kolom](#displaying-the-new-column) weergeven door de knooppuntstructuur van de console in de opslagplaats uit te breiden.
 
@@ -33,6 +36,7 @@ Dit geleidelijke leerprogramma verklaart hoe te om een nieuwe kolom in de consol
 >
 >* de Digital Assets-console
 >* de Community console
+
 >
 
 
@@ -58,7 +62,7 @@ De volgende voorbeeldimplementatie:
 
 Om de dienst te creëren OSGI:
 
-1. In CRXDE Lite, [creeer een bundel](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
+1. Maak in CRXDE Lite een [bundel](/help/sites-developing/developing-with-crxde-lite.md#managing-a-bundle).
 1. Voeg de voorbeeldcode hieronder toe.
 1. Maak de bundel.
 
@@ -109,21 +113,22 @@ public class StarredListInfoProvider implements ListInfoProvider {
 >* Uw implementatie moet op basis van het ingediende verzoek en/of de bron beslissen of de informatie al dan niet aan het JSON-object moet worden toegevoegd.
 >* Als uw `ListInfoProvider` implementatie een eigenschap definieert die al in het reactieobject bestaat, wordt de waarde ervan overschreven door de eigenschap die u opgeeft.\
    >  U kunt [de dienstrangschikking](https://www.osgi.org/javadoc/r2/org/osgi/framework/Constants.html#SERVICE_RANKING) gebruiken om de uitvoeringsorde van veelvoudige `ListInfoProvider` implementaties te beheren.
+
 >
 
 
 
 ### De nieuwe service testen {#testing-the-new-service}
 
-Wanneer u de console van het Beleid van Websites opent en door uw plaats doorbladert, geeft browser een ajax vraag uit om het voorwerp te krijgen JSON dat wordt gebruikt om de console te bouwen. Wanneer u bijvoorbeeld naar de `/content/geometrixx` map bladert, wordt het volgende verzoek naar de AEM-server verzonden om de console te maken:
+Wanneer u de console van het Beleid van Websites opent en door uw plaats doorbladert, geeft browser een ajax vraag uit om het voorwerp te krijgen JSON dat wordt gebruikt om de console te bouwen. Wanneer u bijvoorbeeld naar de `/content/geometrixx` map bladert, wordt het volgende verzoek naar de AEM server verzonden om de console te maken:
 
-[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+[http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 Om ervoor te zorgen dat de nieuwe dienst na het hebben opgesteld de bundel die het bevat loopt:
 
 1. Verwijs uw browser naar de volgende URL:
 
-   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&limit=30&predicate=siteadmin)
+   [http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin](http://localhost:4502/content/geometrixx.pages.json?start=0&amp;limit=30&amp;predicate=siteadmin)
 
 1. In de reactie moeten de nieuwe eigenschappen als volgt worden weergegeven:
 
@@ -131,9 +136,9 @@ Om ervoor te zorgen dat de nieuwe dienst na het hebben opgesteld de bundel die h
 
 ### De nieuwe kolom weergeven {#displaying-the-new-column}
 
-De laatste stap bestaat uit het aanpassen van de knooppuntenstructuur van de console van het Beleid Websites om het nieuwe bezit voor alle pagina&#39;s van Geometrixx te tonen door te bedekken `/libs/wcm/core/content/siteadmin`. Ga als volgt te werk:
+De laatste stap bestaat uit het aanpassen van de knooppuntstructuur van de console van het Beleid Websites om het nieuwe bezit voor alle pagina&#39;s van de Geometrixx te tonen door te bedekken `/libs/wcm/core/content/siteadmin`. Ga als volgt te werk:
 
-1. In CRXDE Lite, creeer de knoopstructuur `/apps/wcm/core/content` met knopen van type `sling:Folder` om op de structuur te wijzen `/libs/wcm/core/content`.
+1. Maak in CRXDE Lite de knooppuntstructuur `/apps/wcm/core/content` met knooppunten van het type `sling:Folder` om de structuur te weerspiegelen `/libs/wcm/core/content`.
 
 1. Kopieer het knooppunt `/libs/wcm/core/content/siteadmin` en plak het hieronder `/apps/wcm/core/content`.
 
@@ -164,7 +169,7 @@ De laatste stap bestaat uit het aanpassen van de knooppuntenstructuur van de con
 
    Om dit aan uw versie van plaatsadmin op te leiden `/apps/wcm/core/content/siteadmin` bepaal het bezit `sling:vanityOrder` om een waarde te hebben hoger dan die bepaald op `/libs/wcm/core/content/siteadmin`. De standaardwaarde is 300, dus om het even wat hoger is is geschikt.
 
-1. Ga naar de console van het Beleid van Websites en navigeer aan de plaats van Geometrixx:
+1. Ga naar de console van het Beleid van Websites en navigeer aan de plaats van de Geometrixx:
 
    [http://localhost:4502/siteadmin#/content/geometrixx](http://localhost:4502/siteadmin#/content/geometrixx).
 
