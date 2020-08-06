@@ -1,8 +1,8 @@
 ---
-title: AEM Core Concepts
+title: AEM kernconcepten
 seo-title: De basisbeginselen
-description: Een overzicht van de kernconcepten van hoe AEM wordt gestructureerd en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
-seo-description: Een overzicht van de kernconcepten van hoe AEM wordt gestructureerd en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
+description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
+seo-description: Een overzicht van de kernconcepten van hoe AEM gestructureerd is en hoe zich bovenop het te ontwikkelen met inbegrip van het begrijpen van JCR, Sling, OSGi, de verzender, de werkschema's, en MSM
 uuid: e49f29db-a5d6-48a0-af32-f8785156746e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# AEM Core Concepts {#aem-core-concepts}
+# AEM kernconcepten {#aem-core-concepts}
 
 >[!NOTE]
 >
->Voordat u ingaat op de kernconcepten van AEM, raadt Adobe u aan de WKND-zelfstudie in het document Aan de [slag met het ontwikkelen van AEM-sites](/help/sites-developing/getting-started.md) te voltooien voor een overzicht van het AEM-ontwikkelingsproces en de introductie van kernconcepten.
+>Alvorens in de kernconcepten van AEM te duiken, adviseert Adobe de Leergids van WKND in het [Begonnen Ontwikkelen van AEM Sites](/help/sites-developing/getting-started.md) document voor een overzicht van het AEM ontwikkelingsproces en inleiding aan kernconcepten te voltooien.
 
 ## Vereisten voor ontwikkeling op AEM {#prerequisites-for-developing-on-aem}
 
@@ -50,7 +50,7 @@ Het pakket [JCR API 2.0](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/
 
 ## Experience Server (CRX) en Jackrabbit {#experience-server-crx-and-jackrabbit}
 
-De Server van de Ervaring verstrekt de Diensten van de Ervaring waarop AEM wordt voortgebouwd, en die kunnen worden gebruikt om douanetoepassingen te bouwen, en het sluit de Inhoudsopslagplaats van de Inhoud op Jackrabbit in.
+De Server van de Ervaring verstrekt de Diensten van de Ervaring die AEM worden voortgebouwd, en die kunnen worden gebruikt om douanetoepassingen te bouwen, en het sluit de Inhoudsbewaarplaats van de Inhoud op Jackrabbit in.
 
 [Apache Jackrabbit](https://jackrabbit.apache.org/) is een open source, volledig conform, implementatie van de JCR API 2.0.
 
@@ -58,11 +58,11 @@ De Server van de Ervaring verstrekt de Diensten van de Ervaring waarop AEM wordt
 
 ### Inleiding tot verkoop {#introduction-to-sling}
 
-AEM wordt gebouwd gebruikend [Sling](https://sling.apache.org/site/index.html), een de toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Bij Sling wordt een JCR-opslagplaats gebruikt, zoals Apache Jackrabbit, of, in het geval van AEM, de CRX Content Repository, als gegevensopslagruimte. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
+AEM wordt gebouwd gebruikend [Sling](https://sling.apache.org/site/index.html), een de toepassingskader van het Web dat op de principes van REST wordt gebaseerd die gemakkelijke ontwikkeling van inhoud-georiënteerde toepassingen verstrekken. Bij Sling wordt een JCR-opslagplaats gebruikt, zoals Apache Jackrabbit, of in het geval van AEM de CRX Content Repository, als gegevensopslagruimte. Sling is toegevoegd aan de Apache Software Foundation - meer informatie is te vinden op Apache.
 
 Met Verschuiving is het type inhoud dat moet worden gerenderd niet de eerste verwerkingsoverweging. De belangrijkste overweging is in plaats daarvan of de URL wordt omgezet in een inhoudsobject waarvoor vervolgens een script kan worden gevonden om de rendering uit te voeren. Dit biedt uitstekende ondersteuning voor auteurs van webinhoud om pagina&#39;s samen te stellen die eenvoudig aan hun vereisten kunnen worden aangepast.
 
-De voordelen van deze flexibiliteit worden duidelijk in toepassingen met een groot aantal verschillende inhoudselementen, of wanneer u pagina&#39;s nodig hebt die gemakkelijk kunnen worden aangepast. Met name bij de implementatie van een systeem voor het beheer van webinhoud, zoals de WCM in de AEM-oplossing.
+De voordelen van deze flexibiliteit worden duidelijk in toepassingen met een groot aantal verschillende inhoudselementen, of wanneer u pagina&#39;s nodig hebt die gemakkelijk kunnen worden aangepast. Met name wanneer het uitvoeren van een systeem van het Beheer van de Inhoud van het Web zoals WCM in de AEM oplossing.
 
 Zie [Sling ontdekken in 15 minuten](https://sling.apache.org/documentation/getting-started/discover-sling-in-15-minutes.html) voor de eerste stappen voor het ontwikkelen met Sling.
 
@@ -70,7 +70,7 @@ In het volgende diagram wordt de resolutie van het script Sling uitgelegd: het t
 
 ![chlimage_1-84](assets/chlimage_1-84.png)
 
-Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters u kunt gebruiken wanneer het behandelen van SlingPostServlet, de standaardmanager voor alle POST- verzoeken die u eindeloze opties voor het creëren, het wijzigen, het schrappen, het kopiëren en het bewegen van knopen in de bewaarplaats geeft.
+Het volgende diagram verklaart alle verborgen, maar krachtige, verzoekparameters u kunt gebruiken wanneer het behandelen van SlingPostServlet, de standaardmanager voor alle verzoeken van de POST die u eindeloze opties voor het creëren, het wijzigen, het schrappen, het kopiëren en het bewegen van knopen in de bewaarplaats geeft.
 
 ![chlimage_1-85](assets/chlimage_1-85.png)
 
@@ -93,7 +93,7 @@ Vanwege de inhoudgerichte filosofie implementeert Sling een REST-georiënteerde 
 
 ### URL-decompositie {#url-decomposition}
 
-Bij Sling wordt de verwerking gestuurd door de URL van de gebruikersaanvraag. Dit bepaalt de inhoud die door de aangewezen manuscripten moet worden getoond. Hiervoor wordt informatie opgehaald uit de URL.
+Bij Sling wordt de verwerking aangedreven door de URL van het gebruikersverzoek. Dit bepaalt de inhoud die door de aangewezen manuscripten moet worden getoond. Hiervoor wordt informatie opgehaald uit de URL.
 
 Als we de volgende URL analyseren:
 
@@ -153,13 +153,13 @@ Het pad dat door de code wordt opgegeven, `sling:resourceType` kan als volgt zij
 * absoluut
 * relatief, ten opzichte van een configuratieparameter
 
-   Adobe raadt u aan relatieve paden toe te passen om de draagbaarheid te vergroten.
+   Relatieve paden worden aanbevolen door Adobe omdat ze de draagbaarheid verhogen.
 
 Alle Sling-scripts worden opgeslagen in submappen van `/apps` of `/libs`, die in deze volgorde worden doorzocht (zie Componenten [aanpassen en Overige elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 Een paar andere punten die u kunt opmerken zijn:
 
-* wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven volgens de HTTP-specificatie, bijvoorbeeld job.POST.esp (zie hieronder).
+* Wanneer de methode (GET, POST) vereist is, wordt deze in hoofdletters opgegeven volgens de HTTP-specificatie, bijvoorbeeld job.POST.esp (zie hieronder).
 * verschillende scriptengines worden ondersteund :
 
    * `.esp, .ecma`: ECMAScript (JavaScript) Pages (uitvoering op de server)
@@ -167,7 +167,7 @@ Een paar andere punten die u kunt opmerken zijn:
    * `.java`: Java Servlet Compiler (uitvoering op de server)
    * `.jst`: JavaScript-sjablonen (uitvoering op de client)
 
-De lijst met scriptengines die door de opgegeven instantie van AEM worden ondersteund, wordt weergegeven in de Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
+De lijst met scriptengines die door het opgegeven exemplaar van AEM worden ondersteund, wordt weergegeven in de Felix Management Console ( `http://<host>:<port>/system/console/slingscripting`).
 
 Daarnaast ondersteunt Apache Sling integratie met andere populaire scriptengines (zoals Groovy, JRuby, Freemarker) en biedt Apache Sling een manier om nieuwe scriptengines te integreren.
 
@@ -177,7 +177,7 @@ Met behulp van het bovenstaande voorbeeld, als het `sling:resourceType` dan `hr/
 
    Het script wordt /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
-* POST- verzoeken (alle verzoektypes behalve GET/HEAD, moet de methodenaam in hoofdletters zijn)
+* Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
 
    POST wordt gebruikt in de scriptnaam.
 
@@ -317,7 +317,7 @@ Een OSGi-framework biedt u vervolgens dynamisch laden/verwijderen, configureren 
 >
 >De pagina Basisonderwijs bevat met name een verzameling presentaties en zelfstudies.
 
-Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules uit te breiden. Sling, en daarom CQ5, gebruikt de implementatie van [Apache Felix](https://felix.apache.org/) van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het OSGi Service Platform. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
+Deze architectuur staat u toe om het Verkopen met toepassing specifieke modules uit te breiden. Sling, en dus CQ5, gebruikt de implementatie van [Apache Felix](https://felix.apache.org/) van OSGI (Open Services Gateway-initiatief) en is gebaseerd op de specificaties van versie 4.2 van het Platform OSGi Service. Het zijn beide inzamelingen van bundels OSGi die binnen een kader OSGi lopen.
 
 Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw installatie:
 
@@ -331,7 +331,7 @@ Hierdoor kunt u de volgende handelingen uitvoeren op elk van de pakketten in uw 
 
 Zie [de Console](/help/sites-deploying/web-console.md)van het Web, Configuratie [](/help/sites-deploying/configuring-osgi.md) OSGI en de Montages [van de Configuratie](/help/sites-deploying/osgi-configuration-settings.md) OSGi voor meer informatie.
 
-## Ontwikkelingsobjecten in de AEM-omgeving {#development-objects-in-the-aem-environment}
+## Ontwikkelingsobjecten in de AEM {#development-objects-in-the-aem-environment}
 
 De volgende zaken zijn van belang voor ontwikkeling:
 
@@ -355,7 +355,7 @@ Met currentNode als het huidige knoopvoorwerp.
 
 Raadpleeg de [JavaDocs voor meer informatie over het manipuleren van Node-objecten](https://docs.adobe.com/docs/en/spec/javax.jcr/javadocs/jcr-2.0/javax/jcr/Node.html).
 
-**Widget** In AEM wordt alle gebruikersinvoer beheerd door widgets. Deze worden vaak gebruikt om het bewerken van een stuk inhoud te besturen.
+**Widget** In AEM alle gebruikersinvoer wordt beheerd door widgets. Deze worden vaak gebruikt om het bewerken van een stuk inhoud te besturen.
 
 Dialoogvensters worden samengesteld door Widgets te combineren.
 
@@ -380,7 +380,7 @@ De definitie van een component omvat:,
 
 Een sjabloon is een hiërarchie van knooppunten die dezelfde structuur heeft als de pagina die moet worden gemaakt, maar zonder daadwerkelijke inhoud.
 
-Hiermee worden de paginacomponent gedefinieerd die wordt gebruikt om de pagina en de standaardinhoud (primaire inhoud op hoofdniveau) weer te geven. De inhoud definieert hoe de inhoud wordt gerenderd als AEM-inhoud.
+Hiermee worden de paginacomponent gedefinieerd die wordt gebruikt om de pagina en de standaardinhoud (primaire inhoud op hoofdniveau) weer te geven. De inhoud definieert hoe deze wordt gerenderd als AEM inhoudcentrisch is.
 
 **Component Pagina (bovenste component)** De component die moet worden gebruikt om de pagina weer te geven.
 
@@ -432,7 +432,7 @@ De volgende lijst geeft een overzicht van de structuur die u in de repository zu
 
 * `/libs`
 
-   Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de AEM-functies buiten het vak, zoals zoeken of repliceren. De inhoud in `/libs` moet niet worden gewijzigd omdat dit van invloed is op de manier waarop AEM werkt. Functies die specifiek zijn voor uw website, moeten worden ontwikkeld onder `/apps` (zie Componenten [aanpassen en Overige elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
+   Bibliotheken en definities die tot de kern van AEM behoren. De submappen in `/libs` vertegenwoordigen de functies die buiten het vak AEM, zoals zoeken of repliceren. De inhoud in `/libs` moet niet worden gewijzigd omdat dit van invloed is op de manier waarop AEM werkt. Functies die specifiek zijn voor uw website, moeten worden ontwikkeld onder `/apps` (zie Componenten [aanpassen en Overige elementen](/help/sites-developing/dev-guidelines-bestpractices.md#customizing-components-and-other-elements)).
 
 * `/tmp`
 
@@ -448,7 +448,7 @@ Met AEM bestaat een productieomgeving vaak uit twee verschillende typen instanti
 
 ## De verzender {#the-dispatcher}
 
-Dispatcher is het Adobe-programma voor zowel caching als taakverdeling. Meer informatie vindt u onder [de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
+De Dispatcher is een Adobe voor zowel caching als/of taakverdeling. Meer informatie vindt u onder [de Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html).
 
 ## FileVault (systeem voor bronrevisie) {#filevault-source-revision-system}
 
@@ -458,7 +458,7 @@ Raadpleeg de documentatie bij het gereedschap [FileVault](/help/sites-developing
 
 ## Workflows {#workflows}
 
-Uw inhoud is vaak onderhevig aan organisatorische processen, waaronder stappen zoals goedkeuring en aftekening door verschillende deelnemers. Deze processen kunnen worden voorgesteld als workflows, [gedefinieerd en ontwikkeld binnen AEM](/help/sites-developing/workflows-models.md), en vervolgens worden toegepast op de [juiste inhoudspagina](/help/sites-administering/workflows.md) &#39;s of [digitale elementen](/help/assets/assets-workflow.md) .
+Uw inhoud is vaak onderhevig aan organisatorische processen, waaronder stappen zoals goedkeuring en aftekening door verschillende deelnemers. Deze processen kunnen als werkschema&#39;s worden vertegenwoordigd, [bepaald en ontwikkeld binnen AEM](/help/sites-developing/workflows-models.md), dan toegepast op de [aangewezen inhoudspagina](/help/sites-administering/workflows.md) of [digitale activa](/help/assets/assets-workflow.md) zoals vereist.
 
 De Workflow Engine wordt gebruikt om de implementatie van uw workflows en de daarop volgende toepassing op uw inhoud te beheren.
 
