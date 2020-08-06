@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e30e5a21-ac86-4653-bd1f-7351852db3f3
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '2289'
+ht-degree: 0%
 
 ---
 
@@ -40,9 +43,9 @@ Afhankelijk van het type ervaring dat u maakt, moet u een [ervaring](#creating-a
    1. [Maak een aantrekkelijke openingspagina](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage)voor nieuwsbrieven.
    1. [Stuur de nieuwsbrief](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) naar abonnees of leads.
 
-* Als u een Adobe Target-aanbieding (voorheen Test&amp;Target) maakt:
+* Bij het maken van een Adobe Target-aanbieding (voorheen Test&amp;Target):
 
-   1. [Maak een Adobe Target-ervaring](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
+   1. [Maak een Adobe Target-aanbiedingservaring](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#creatingatesttargetofferexperience).
    1. [Integreren met Adobe Target](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#integratewithadobetesttarget)
 
 >[!NOTE]
@@ -55,7 +58,7 @@ Een nieuw merk maken:
 
 1. Open **MCM** en selecteer **Campagnes** in de linkerruit.
 
-1. **Selecteer** Nieuw... om de **titel** en de **naam** en template in te voeren die voor uw nieuwe merk moeten worden gebruikt:
+1. Selecteer **Nieuw...** om de **titel** en de **naam** en template in te voeren die voor uw nieuwe merk moeten worden gebruikt:
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
@@ -79,7 +82,7 @@ Een nieuwe campagne maken:
 
    Het overzicht wordt weergegeven (leeg als het merk nieuw is).
 
-1. **Klik op** Nieuw... en geeft u de **titel**, **naam** en sjabloon op die voor uw nieuwe campagne moeten worden gebruikt.
+1. Klik op **Nieuw...** en geeft u de **titel**, **naam** en sjabloon op die voor uw nieuwe campagne moeten worden gebruikt.
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
@@ -89,16 +92,16 @@ Een nieuwe campagne maken:
 
 Campagneeigenschappen configureren die het gedrag bepalen:
 
-* **** Prioriteit: De prioriteit van deze campagne ten opzichte van andere campagnes. Wanneer de veelvoudige campagnes gelijktijdig zijn, controleert de campagne die de hoogste prioriteit heeft de bezoekerservaring.
-* **** Aan- en uittijd: Deze eigenschappen bepalen de periode waarin de campagne de ervaring van de bezoeker bepaalt. Het bezit op Tijd controleert de tijd wanneer de campagne begint de ervaring te controleren. De eigenschap Uit-tijd bepaalt wanneer de campagnes de ervaring niet meer besturen.
-* **** Afbeelding: De afbeelding die de campagne in AEM vertegenwoordigt.
-* **** Cloudservices: De Cloud Service-configuraties waarmee de campagne is geïntegreerd. (Zie [Integreren met Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
+* **Prioriteit:** De prioriteit van deze campagne ten opzichte van andere campagnes. Wanneer de veelvoudige campagnes gelijktijdig zijn, controleert de campagne die de hoogste prioriteit heeft de bezoekerservaring.
+* **Aan- en uittijd:** Deze eigenschappen bepalen de periode waarin de campagne de ervaring van de bezoeker bepaalt. Het bezit op Tijd controleert de tijd wanneer de campagne begint de ervaring te controleren. De eigenschap Uit-tijd bepaalt wanneer de campagnes de ervaring niet meer besturen.
+* **Afbeelding:** De afbeelding die de campagne in AEM vertegenwoordigt.
+* **Cloud Services:** De configuraties van de Cloud Service waarmee de campagne wordt geïntegreerd. (Zie [Integreren met Adobe Marketing Cloud](/help/sites-administering/marketing-cloud.md).)
 
-* **** Adobe-doel: Eigenschappen voor het configureren van campagnes die zijn geïntegreerd met Adobe Target. (See [Integrating with Adobe Target](/help/sites-administering/target.md).)
+* **Adobe Target:** Eigenschappen die campagnes vormen die met Adobe Target worden geïntegreerd. (See [Integrating with Adobe Target](/help/sites-administering/target.md).)
 
 1. Kies uw merk in **Campagnes**. Selecteer uw campagne in het rechterdeelvenster en klik op **Eigenschappen**.
 
-   U kunt verschillende eigenschappen invoeren, zoals een **titel**, een **beschrijving** en alle gewenste **cloudservices** .
+   U kunt verschillende eigenschappen invoeren, zoals een **titel**, een **beschrijving** en alle gewenste **Cloud Services** .
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
@@ -134,7 +137,7 @@ Nu u het basisskelet voor uw ervaring hebt gecreeerd, moet u met de volgende act
    * [Stuur de nieuwsbrief](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#sendingnewsletters) naar abonnees of leads.
    * [Maak een aantrekkelijke openingspagina](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#settingupanewsletterlandingpage)voor nieuwsbrieven.
 
-* [Adobe-doelaanbieding](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
+* [Adobe Target-voorstel](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md#testtargetoffers):
 
    * [Integreren met Adobe Target](/help/sites-administering/target.md)
 
@@ -144,7 +147,7 @@ Als u bestaande ervaringen hebt, kunt u een aanraakpunt rechtstreeks vanuit de k
 
 1. Selecteer de kalenderweergave voor uw campagne.
 
-1. **Klik op Aanraakpunt** toevoegen... om het dialoogvenster te openen. Geef de ervaring op die u wilt toevoegen:
+1. Klik op Aanraakpunt **toevoegen...** om het dialoogvenster te openen. Geef de ervaring op die u wilt toevoegen:
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
@@ -154,8 +157,8 @@ Als u bestaande ervaringen hebt, kunt u een aanraakpunt rechtstreeks vanuit de k
 
 >[!NOTE]
 >
->Adobe is niet van plan deze functionaliteit verder te verbeteren (Leads beheren).\
->De aanbeveling is om Adobe Campaign en de integratie met AEM [te](/help/sites-administering/campaign.md)benutten.
+>Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads beheren).\
+>De aanbeveling is om Adobe Campaign en de integratie naar AEM [te](/help/sites-administering/campaign.md)benutten.
 
 In AEM MCM kunt u verbindingen organiseren en toevoegen door ze handmatig in te voeren of door een lijst met door komma&#39;s gescheiden waarden te importeren, bijvoorbeeld een mailinglijst. Aanvullende manieren om leads te genereren zijn afkomstig van nieuwsbrief-ups of community-aanmeldingen (als deze zijn geconfigureerd, kunnen ze een workflow activeren die leads vult).
 
@@ -202,7 +205,7 @@ Aan actieve of deactieve leads:
 
    ![screen_shot_2012-02-21at120620pm](assets/screen_shot_2012-02-21at120620pm.png)
 
-   Net als bij AEM-pagina&#39;s wordt de publicatiestatus aangegeven in de kolom **Gepubliceerd** .
+   Net als bij AEM pagina&#39;s wordt de publicatiestatus aangegeven in de kolom **Gepubliceerd** .
 
    ![screen_shot_2012-02-21at122901pm](assets/screen_shot_2012-02-21at122901pm.png)
 
@@ -233,11 +236,11 @@ Om lood van een komma-gescheiden lijst te importeren:
 
    ![screen_shot_2012-02-21at123055pm](assets/screen_shot_2012-02-21at123055pm.png)
 
-1. Click **Next**. Hier kunt u de leads bekijken om te controleren of deze correct zijn.
+1. Klik op **Next**. Hier kunt u de leads bekijken om te controleren of deze correct zijn.
 
    ![screen_shot_2012-02-21at123104pm](assets/screen_shot_2012-02-21at123104pm.png)
 
-1. Click **Next**. Selecteer de lijst waartoe de leads moeten behoren. Als u niet wilt dat ze tot een lijst behoren, verwijdert u de gegevens in het veld. Standaard maakt AEM een lijstnaam met de datum en tijd. Klik op **Importeren**.
+1. Klik op **Next**. Selecteer de lijst waartoe de leads moeten behoren. Als u niet wilt dat ze tot een lijst behoren, verwijdert u de gegevens in het veld. AEM maakt standaard een lijstnaam die de datum en tijd bevat. Klik op **Importeren**.
 
    ![screen_shot_2012-02-21at123123pm](assets/screen_shot_2012-02-21at123123pm.png)
 
@@ -253,7 +256,7 @@ Om lood aan reeds bestaande lijsten toe te voegen:
 
    ![screen_shot_2012-02-21at123835pm](assets/screen_shot_2012-02-21at123835pm.png)
 
-1. Selecteer in het menu **Gereedschappen** de optie **Toevoegen aan lijst... .** Het venster **Toevoegen aan lijst **wordt geopend.
+1. Selecteer in het menu **Gereedschappen** de optie **Toevoegen aan lijst....** Het venster **Toevoegen aan lijst **wordt geopend.
 
    ![screen_shot_2012-02-21at124019pm](assets/screen_shot_2012-02-21at124019pm.png)
 
@@ -293,14 +296,14 @@ Als u bestaande leads in de MCM wilt verwijderen, schakelt u het selectievakje n
 
 >[!NOTE]
 >
->Voordat u de bestaande lead verwijdert, bevestigt AEM dat u deze wilt verwijderen. Nadat het wordt geschrapt, kan het niet worden teruggewonnen.
+>Voordat u gaat verwijderen, bevestigt AEM dat u de bestaande lead wilt verwijderen. Nadat het wordt geschrapt, kan het niet worden teruggewonnen.
 
 ## Werken met lijsten {#working-with-lists}
 
 >[!NOTE]
 >
->Adobe is niet van plan deze functionaliteit verder te verbeteren (lijsten beheren).\
->De aanbeveling is om Adobe Campaign en de integratie met AEM [te](/help/sites-administering/campaign.md)benutten.
+>Adobe is niet van plan deze mogelijkheid verder te verbeteren (lijsten beheren).\
+>De aanbeveling is om Adobe Campaign en de integratie naar AEM [te](/help/sites-administering/campaign.md)benutten.
 
 Met lijsten kunt u uw leads ordenen in groepen. Met lijsten kunt u uw marketingcampagnes richten op een bepaalde groep personen. U kunt bijvoorbeeld een doelnieuwsbrief naar een lijst sturen. Lijsten zijn zichtbaar in MCM, of in het Dashboard of door **Lijsten** te klikken. Beide verstrekken u de naam van de lijst en het aantal leden.
 
@@ -314,7 +317,7 @@ Als u op **Lijsten** klikt, kunt u ook bekijken of de lijst lid is van een ander
 
 Een nieuwe lijst (groep) maken:
 
-1. **Klik in het MCM-dashboard op** Nieuwe lijst... of in **Lijsten**, klik **Nieuw** ... Het venster Lijst maken wordt geopend.
+1. Klik in het MCM-dashboard op **Nieuwe lijst...** of in **Lijsten**, klik **Nieuw** ... Het venster Lijst maken wordt geopend.
 
    ![screen_shot_2012-02-21at125147pm](assets/screen_shot_2012-02-21at125147pm.png)
 
@@ -344,7 +347,7 @@ Als u bestaande lijsten wilt verwijderen, schakelt u in de MCM het selectievakje
 
 >[!NOTE]
 >
->Voordat u de bestaande lijsten verwijdert, bevestigt AEM dat u deze wilt verwijderen. Nadat het wordt geschrapt, kan het niet worden teruggewonnen.
+>AEM bevestigt vóór het verwijderen dat u de bestaande lijsten wilt verwijderen. Nadat het wordt geschrapt, kan het niet worden teruggewonnen.
 
 ### Lijsten samenvoegen {#merging-lists}
 
