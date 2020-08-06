@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: bc06d9bd-af6c-47b1-b46f-aab990ef5816
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1048'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Een referentie bevat uw persoonlijke sleutelgegevens die nodig zijn voor het ondertekenen of identificeren van documenten. Een certificaat is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM Forms gebruikt certificaten en referenties voor verschillende doeleinden:
 
-* Acrobat Reader DC-extensies gebruiken een referentie om gebruiksrechten voor Adobe Reader in PDF-documenten in te schakelen. (Zie Gebruiksrechten [toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
+* Acrobat Reader DC-extensies gebruiken een referentie om Adobe Reader-gebruiksrechten in PDF-documenten in te schakelen. (Zie Gebruiksrechten [toepassen op PDF-documenten](/help/forms/developing/assigning-usage-rights.md#applying-usage-rights-to-pdf-documents).)
 * De handtekeningservice krijgt toegang tot certificaten en referenties tijdens het uitvoeren van bewerkingen zoals het digitaal ondertekenen van PDF-documenten. (Zie PDF-documenten [digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
 U kunt programmatically met de dienst van de Referentie in wisselwerking staan gebruikend Java API van de Manager van het Vertrouwen. U kunt de volgende taken uitvoeren:
@@ -35,15 +38,15 @@ U kunt programmatically met de dienst van de Referentie in wisselwerking staan g
 
 ## Referenties importeren met de Betrouwbaarheidsbeheer-API {#importing-credentials-by-using-the-trust-manager-api}
 
-Met de API voor Betrouwbaarheidsbeheer kunt u via programmacode een referentie importeren in AEM Forms. U kunt bijvoorbeeld een referentie importeren die wordt gebruikt om een PDF-document te ondertekenen. (Zie PDF-documenten [digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
+Met de Betrouwbaarheidsbeheer-API kunt u via programmacode een referentie naar AEM Forms importeren. U kunt bijvoorbeeld een referentie importeren die wordt gebruikt om een PDF-document te ondertekenen. (Zie PDF-documenten [digitaal ondertekenen](/help/forms/developing/digitally-signing-certifying-documents.md#digitally-signing-pdf-documents).)
 
-Wanneer u een referentie importeert, geeft u een alias voor de referentie op. De alias wordt gebruikt voor het uitvoeren van een formulierbewerking waarvoor een referentie vereist is. Zodra ingevoerd, kan een referentie in beleidsconsole worden bekeken, zoals aangetoond in de volgende illustratie. De alias voor de referentie is *Secure*.
+Wanneer u een referentie importeert, geeft u een alias voor de referentie op. De alias wordt gebruikt om een Forms-bewerking uit te voeren waarvoor een referentie vereist is. Zodra ingevoerd, kan een referentie in beleidsconsole worden bekeken, zoals aangetoond in de volgende illustratie. De alias voor de referentie is *Secure*.
 
 ![ww_ww_truststore](assets/ww_ww_truststore.png)
 
 >[!NOTE]
 >
->U kunt met webservices geen referentie importeren in AEM Forms.
+>U kunt met webservices geen referentie naar AEM Forms importeren.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -63,28 +66,28 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een crediteurenserviceclient maken**
 
-Voordat u via programmacode een referentie kunt importeren in AEM Forms, moet u een client voor de referentieservice maken. Zie Verbindingseigenschappen [](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)instellen voor meer informatie.
+Voordat u via programmacode een referentie naar AEM Forms kunt importeren, maakt u een client voor de referentieservice. Zie Verbindingseigenschappen [](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)instellen voor meer informatie.
 
 **Referentie van de referentie**
 
-Verwijs naar een referentie die u wilt importeren in AEM-formulieren. De snelle start die aan deze sectie is gekoppeld, verwijst naar een P12-bestand in het bestandssysteem.
+Verwijs naar een referentie die u in AEM Forms wilt importeren. De snelle start die aan deze sectie is gekoppeld, verwijst naar een P12-bestand in het bestandssysteem.
 
 **De importbewerking uitvoeren**
 
-Nadat u naar de referentie hebt verwezen, importeert u de referentie in AEM Forms. Als de referentie niet correct is geïmporteerd, wordt een uitzondering gegenereerd. Wanneer u een referentie importeert, geeft u een alias voor de referentie op.
+Importeer de referentie naar AEM Forms nadat u naar de referentie hebt verwezen. Als de referentie niet correct is geïmporteerd, wordt een uitzondering gegenereerd. Wanneer u een referentie importeert, geeft u een alias voor de referentie op.
 
 **Zie ook**
 
 [Referenties importeren met de Java API](credentials.md#import-credentials-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -94,7 +97,7 @@ Nadat u naar de referentie hebt verwezen, importeert u de referentie in AEM Form
 
 ### Referenties importeren met de Java API {#import-credentials-using-the-java-api}
 
-Importeer een referentie in AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
+Een referentie importeren in AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
 
 1. Projectbestanden opnemen
 
@@ -118,7 +121,7 @@ Importeer een referentie in AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
       * Een tekenreekswaarde die de aliaswaarde voor de referentie opgeeft.
       * De `com.adobe.idp.Document` instantie die de referentie opslaat.
       * Een tekenreekswaarde die het wachtwoord opgeeft dat aan de referentie is gekoppeld.
-      * De tekenreeks-array die de gebruikswaarde bevat. U kunt deze waarde bijvoorbeeld opgeven `truststore.usage.type.sign`. Als u een Reader Extension-referentie wilt importeren, geeft u op `truststore.usage.type.lcre`.
+      * De tekenreeks-array die de gebruikswaarde bevat. U kunt deze waarde bijvoorbeeld opgeven `truststore.usage.type.sign`. Geef op om een Reader Extension-referentie te importeren. `truststore.usage.type.lcre`
 
 **Zie ook**
 
@@ -126,7 +129,7 @@ Importeer een referentie in AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
 
 [Snel starten (SOAP-modus): Referenties importeren met de Java API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-importing-credentials-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -136,7 +139,7 @@ U kunt een referentie programmatically schrappen door de Manager API van het Ver
 
 >[!NOTE]
 >
->U kunt met webservices geen referentie verwijderen uit AEM Forms.
+>U kunt met webservices geen referentie naar AEM Forms verwijderen.
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -153,10 +156,10 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-truststore-client.jar
-* adobe-utilities.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een crediteurenserviceclient maken**
 
@@ -170,7 +173,7 @@ Als u een referentie wilt verwijderen, geeft u de alias op die overeenkomt met d
 
 [Referenties importeren met de Java API](credentials.md#import-credentials-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -178,7 +181,7 @@ Als u een referentie wilt verwijderen, geeft u de alias op die overeenkomt met d
 
 ### Referenties verwijderen met de Java API {#deleting-credentials-using-the-java-api}
 
-Verwijder een referentie uit AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
+Een referentie uit AEM Forms verwijderen met de Betrouwbaarheidsbeheer-API (Java):
 
 1. Projectbestanden opnemen
 
@@ -199,6 +202,6 @@ Verwijder een referentie uit AEM Forms met de Betrouwbaarheidsbeheer-API (Java):
 
 [Snel starten (SOAP-modus): Referenties verwijderen met de Java API](/help/forms/developing/credential-service-java-api-quick.md#quick-start-soap-mode-deleting-credentials-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
