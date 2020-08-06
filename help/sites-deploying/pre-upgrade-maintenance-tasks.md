@@ -23,7 +23,7 @@ ht-degree: 0%
 Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudstaken uitvoert om ervoor te zorgen dat het systeem klaar is en kan worden teruggedraaid als zich problemen voordoen:
 
 * [Zorgen voor voldoende schijfruimte](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#ensure-sufficient-disk-space)
-* [Maak een volledige back-up van AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
+* [Volledige back-up AEM](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#fully-back-up-aem)
 * [Back-up maken van wijzigingen in /etc](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#backup-changes-etc)
 * [Het bestand quickstart.properties genereren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#generate-quickstart-properties)
 * [Werkstroom- en controlelogbestanden leegmaken configureren](/help/sites-deploying/pre-upgrade-maintenance-tasks.md#configure-wf-audit-purging)
@@ -42,9 +42,9 @@ Voordat u begint met de upgrade, is het belangrijk dat u de volgende onderhoudst
 
 Bij het uitvoeren van de upgrade moet, naast de activiteiten voor het bijwerken van de inhoud en code, een migratie naar de opslagplaats worden uitgevoerd. De migratie zal een exemplaar van de bewaarplaats in het nieuwe formaat van de Tar van het Segment tot stand brengen. Hierdoor hebt u voldoende schijfruimte nodig om een tweede, mogelijk grotere versie van uw opslagplaats te behouden.
 
-## Maak een volledige back-up van AEM {#fully-back-up-aem}
+## Volledige back-up AEM {#fully-back-up-aem}
 
-Er moet een volledige back-up van AEM worden gemaakt voordat de upgrade wordt gestart. Maak indien van toepassing een back-up van de opslagplaats, de installatie van de toepassing, de datastore en de Mongo-exemplaren. Zie [Back-up en herstel](/help/sites-administering/backup-and-restore.md)voor meer informatie over het maken van back-ups en het herstellen van een AEM-instantie.
+Er moet een volledige back-up van AEM worden gemaakt voordat de upgrade wordt gestart. Maak indien van toepassing een back-up van de opslagplaats, de installatie van de toepassing, de datastore en de Mongo-exemplaren. Zie [Back-up en herstellen](/help/sites-administering/backup-and-restore.md)voor meer informatie over het maken van back-ups en het herstellen van een AEM.
 
 ## Back-up maken van wijzigingen in /etc {#backup-changes-etc}
 
@@ -52,11 +52,11 @@ Het upgradeproces is een goede manier om bestaande inhoud en configuraties onder
 
 ## Het bestand quickstart.properties genereren {#generate-quickstart-properties}
 
-Wanneer u AEM start vanuit het jar-bestand, wordt een `quickstart.properties` bestand gegenereerd onder `crx-quickstart/conf`. Als AEM in het verleden slechts met het beginmanuscript is begonnen, zal dit dossier niet aanwezig zijn en zal de verbetering ontbreken. Controleer of dit bestand bestaat en start AEM opnieuw vanuit het jar-bestand als dit niet aanwezig is.
+Wanneer AEM wordt gestart vanuit het jar-bestand, wordt een `quickstart.properties` bestand gegenereerd onder `crx-quickstart/conf`. Als AEM in het verleden alleen is gestart met het beginscript, is dit bestand niet aanwezig en mislukt de upgrade. Controleer of dit bestand bestaat en start AEM opnieuw vanaf het jar-bestand als dit niet aanwezig is.
 
 ## Werkstroom- en controlelogbestanden leegmaken configureren {#configure-wf-audit-purging}
 
-De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` taken vereisen afzonderlijke configuraties OSGi en zullen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. Documentatie voor het vormen van werkschemazuiveringstaken kan bij de Instanties [van het Werkschema van het Beheer worden gevonden en de configuratie van de de onderhoudstaak van het controlelogboek kan bij het Onderhoud van het Logboek van de](/help/sites-administering/workflows-administering.md) Controle in AEM 6 [](/help/sites-administering/operations-audit-log.md)worden gevonden.
+De `WorkflowPurgeTask` en `com.day.cq.audit.impl.AuditLogMaintenanceTask` taken vereisen afzonderlijke configuraties OSGi en zullen niet zonder hen werken. Als ze tijdens de uitvoering van een pre-upgrade-taak mislukken, is het ontbreken van configuraties de meest waarschijnlijke reden. Daarom zorg ervoor om configuraties OSGi voor deze taken toe te voegen of hen volledig te verwijderen uit de lijst van pre-verbeteringstaken als u niet wenst om hen in werking te stellen. Documentatie voor het vormen van werkschemazuiveringstaken kan bij het Beheer van de Instanties [van het Werkschema en de configuratie van de de onderhoudstaak van het controlelogboek worden gevonden bij het Onderhoud van het Logboek van de](/help/sites-administering/workflows-administering.md) Controle in AEM 6 [](/help/sites-administering/operations-audit-log.md).
 
 Voor werkschema en controlelogboek het zuiveren op CQ 5.6 evenals controlelogboek het zuiveren op AEM 6.0, zie werkschema en [controleknopen](https://helpx.adobe.com/experience-manager/kb/howtopurgewf.html)zuiveren.
 
@@ -64,9 +64,9 @@ Voor werkschema en controlelogboek het zuiveren op CQ 5.6 evenals controlelogboe
 
 Vanwege de mate van aanpassing die AEM toestaat, passen omgevingen gewoonlijk niet op dezelfde manier upgrades uit. Dit maakt het creëren van een gestandaardiseerde procedure voor verbeteringen een moeilijk proces.
 
-In eerdere versies was het ook moeilijk voor AEM-upgrades die zijn gestopt of die niet veilig zijn hervat. Dit leidde tot situaties waarin het opnieuw opstarten van de volledige upgradeprocedure noodzakelijk was of waarin defecte upgrades werden uitgevoerd zonder dat dit tot waarschuwingen leidde.
+In vorige versies was het ook moeilijk voor AEM upgrades die waren gestopt of die niet veilig zijn hervat. Dit leidde tot situaties waarin het opnieuw opstarten van de volledige upgradeprocedure noodzakelijk was of waarin defecte upgrades werden uitgevoerd zonder dat dit tot waarschuwingen leidde.
 
-Om deze problemen te verhelpen, heeft Adobe het upgradeproces op verschillende manieren verbeterd, waardoor het robuuster en gebruiksvriendelijker wordt. De onderhoudstaken die vóór de upgrade moesten worden uitgevoerd, worden geoptimaliseerd en geautomatiseerd. Ook zijn er ná de upgrade-rapporten toegevoegd, zodat het proces volledig kan worden onderzocht in de hoop dat eventuele problemen gemakkelijker kunnen worden gevonden.
+Om deze problemen aan te pakken, heeft Adobe het upgradeproces verschillende verbeteringen aangebracht, waardoor het robuuster en gebruiksvriendelijker wordt. De onderhoudstaken die vóór de upgrade moesten worden uitgevoerd, worden geoptimaliseerd en geautomatiseerd. Ook zijn er ná de upgrade-rapporten toegevoegd, zodat het proces volledig kan worden onderzocht in de hoop dat eventuele problemen gemakkelijker kunnen worden gevonden.
 
 De preupgrade onderhoudstaken worden momenteel verspreid over verschillende interfaces die gedeeltelijk of volledig manueel worden uitgevoerd. De pre-verbeterings onderhoudsoptimalisering die in AEM 6.3 wordt geïntroduceerd laat een verenigde manier toe om deze taken teweeg te brengen en hun resultaat op bestelling te kunnen inspecteren.
 
@@ -74,7 +74,7 @@ Alle taken die zijn opgenomen in de optimaliseringsstap vóór de upgrade zijn c
 
 ### How to Set It Up {#how-to-set-it-up}
 
-In AEM 6.3 en later worden de optimalisatietaken voor het onderhoud van de upgrade opgenomen in de snelstartaansluiting. Als u een upgrade uitvoert vanaf een oudere versie van AEM 6, worden deze beschikbaar gesteld via afzonderlijke pakketten die u kunt downloaden van Package Manager.
+In AEM 6.3 en later worden de optimalisatietaken voor het onderhoud van de upgrade opgenomen in de snelstartjar. Als u een upgrade uitvoert vanaf een oudere versie van AEM 6, worden deze beschikbaar gesteld via afzonderlijke pakketten die u kunt downloaden van Package Manager.
 
 U vindt de pakketten op de volgende locaties:
 
@@ -123,7 +123,7 @@ De takenlijst is afhankelijk van de uitvoeringsmodus die wordt gebruikt om de in
   <tr> 
    <td><code>WorkflowPurgeTask</code></td> 
    <td>crx2/crx3</td> 
-   <td>U moet de configuratie-OSGi voor OSGi van de Adobe Granite-workflow configureren voordat u deze uitvoert.</td> 
+   <td>Moet de Adobe Granite Workflow zuivert Configuratie OSGi vormen alvorens te lopen.</td> 
   </tr> 
   <tr> 
    <td><code>GenerateBundlesListFileTask</code></td> 
@@ -220,12 +220,12 @@ Hieronder ziet u een lijst met alle beschikbare methoden die in het document wor
   <tr> 
    <td><code>runAllPreUpgradeHealthChecks(shutDownOnSuccess)</code></td> 
    <td>ACTIE</td> 
-   <td><p>Voert alle controles van de pre-verbeteringsgezondheid uit en bewaart hun status in een dossier genoemd <code>preUpgradeHCStatus.properties</code> dat in de sling huisweg wordt gevestigd. Als de <code>shutDownOnSuccess</code> parameter aan wordt geplaatst <code>true</code>, zal de instantie AEM worden gesloten, maar slechts als alle pre-verbeteringsgezondheidscontroles een O.K. status hebben.</p> <p>Het eigenschappenbestand wordt gebruikt als voorwaarde voor een toekomstige upgrade<br /> en het upgradeproces wordt gestopt als de uitvoering van de health check<br /> voor de upgrade is mislukt. Als u het resultaat van de gezondheidscontroles vóór de upgrade<br /> wilt negeren en de upgrade toch wilt starten, kunt u het bestand verwijderen.</p> </td> 
+   <td><p>Voert alle controles van de pre-verbeteringsgezondheid uit en bewaart hun status in een dossier genoemd <code>preUpgradeHCStatus.properties</code> dat in de sling huisweg wordt gevestigd. Als de <code>shutDownOnSuccess</code> parameter aan <code>true</code>wordt geplaatst, zal de AEM instantie worden gesloten, maar slechts als alle pre-verbeteringsgezondheidscontroles een O.K. status hebben.</p> <p>Het eigenschappenbestand wordt gebruikt als voorwaarde voor een toekomstige upgrade<br /> en het upgradeproces wordt gestopt als de uitvoering van de health check<br /> voor de upgrade is mislukt. Als u het resultaat van de gezondheidscontroles vóór de upgrade<br /> wilt negeren en de upgrade toch wilt starten, kunt u het bestand verwijderen.</p> </td> 
   </tr> 
   <tr> 
    <td><code>detectUsageOfUnavailableAPI(aemVersion)</code></td> 
    <td>ACTIE</td> 
-   <td>Hiermee worden alle geïmporteerde pakketten weergegeven waaraan niet meer wordt voldaan wanneer<br /> de upgrade naar de opgegeven AEM-versie wordt uitgevoerd. De AEM-doelversie moet als parameter worden<br /> opgegeven.</td> 
+   <td>Hiermee worden alle geïmporteerde pakketten weergegeven waaraan niet meer wordt voldaan wanneer<br /> de upgrade naar de opgegeven AEM wordt uitgevoerd. De AEM van het doel moet als parameter worden<br /> gegeven.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -237,6 +237,7 @@ Hieronder ziet u een lijst met alle beschikbare methoden die in het document wor
 >* De JMX-console
 >* Een externe toepassing die verbinding maakt met JMX
 >* cURL
+
 >
 
 
@@ -245,11 +246,11 @@ Hieronder ziet u een lijst met alle beschikbare methoden die in het document wor
 
 >[!NOTE]
 >
->Deze stap is alleen vereist als u een upgrade uitvoert vanaf een AEM 5-versie. Deze kan volledig worden overgeslagen voor upgrades uit oudere AEM 6-versies.
+>Deze stap is alleen vereist als u een upgrade uitvoert vanaf een versie van AEM 5. Het kan volledig voor verbeteringen van oudere AEM 6 versies worden overgeslagen.
 
 De manier waarop de aangepaste versie `LoginModules` wordt geconfigureerd voor verificatie op het niveau van de opslagplaats is fundamenteel gewijzigd in Apache Oak.
 
-In versies AEM die CRX2 configuratie gebruikten werd geplaatst in het `repository.xml` dossier, terwijl vanaf AEM 6 het in de dienst van de Fabriek van de Configuratie van Apache Felix JAAS via de Console van het Web wordt gedaan.
+In AEM versies die de configuratie van CRX2 gebruikten werd geplaatst in het `repository.xml` dossier, terwijl vanaf AEM 6 het in de dienst van de Fabriek van de Configuratie van Apache Felix JAAS via de Console van het Web wordt gedaan.
 
 Daarom moeten bestaande configuraties na de upgrade worden uitgeschakeld en opnieuw worden gemaakt voor Apache Oak.
 
@@ -276,15 +277,15 @@ Om de douanemodules onbruikbaar te maken die in de configuratie JAAS van worden 
 >
 >Zie [Verificatie met de External Login Module](https://jackrabbit.apache.org/oak/docs/security/authentication/externalloginmodule.html)voor meer informatie.
 >
->Voor een voorbeeld van `LoginModule` configuratie in AEM 6, zie [het Vormen LDAP met AEM 6](/help/sites-administering/ldap-config.md).
+>Voor een voorbeeld van `LoginModule` configuratie in AEM 6, zie het [Vormen LDAP met AEM 6](/help/sites-administering/ldap-config.md).
 
 ## Updates verwijderen uit de map /install {#remove-updates-install-directory}
 
 >[!NOTE]
 >
->Verwijder alleen pakketten uit de map crx-quickstart/install NA het afsluiten van de AEM-instantie. Dit zal één van de laatste stappen zijn alvorens de op zijn plaats verbeteringsprocedure te beginnen.
+>Verwijder alleen pakketten uit de map crx-quickstart/install NA het afsluiten van de AEM. Dit zal één van de laatste stappen zijn alvorens de op zijn plaats verbeteringsprocedure te beginnen.
 
-Verwijder om het even welke de dienstpakken, eigenschapspakken of hotfixes die door de `crx-quickstart/install` folder op het lokale dossiersysteem zijn opgesteld. Hierdoor wordt voorkomen dat oude hotfixes en servicepacks onbedoeld boven op de nieuwe AEM-versie worden geïnstalleerd nadat de update is voltooid.
+Verwijder om het even welke de dienstpakken, eigenschapspakken of hotfixes die door de `crx-quickstart/install` folder op het lokale dossiersysteem zijn opgesteld. Hierdoor wordt voorkomen dat oude hotfixes en servicepacks onbedoeld boven op de nieuwe AEM worden geïnstalleerd nadat de update is voltooid.
 
 ## Koude stand-byinstanties stoppen {#stop-tarmk-coldstandby-instance}
 
@@ -316,11 +317,11 @@ Na het runnen van revisie schoonmaakbeurt op CRX3 instanties, zou u de Inzamelin
 >
 >Deze onderhoudstaak voorafgaand aan de upgrade is alleen nodig als:
 >
->* U voert een upgrade uit vanaf AEM-versies die ouder zijn dan AEM 6.3
+>* U voert een upgrade uit vanaf AEM oudere versies dan AEM 6.3
 >* Tijdens de upgrade worden de hieronder vermelde fouten aangetroffen.
 
 
-Er zijn uitzonderlijke gevallen waarin servicegebruikers waarschijnlijk niet correct zijn gecodeerd als normale gebruikers in een oudere AEM-versie.
+Er zijn uitzonderlijke gevallen wanneer de de dienstgebruikers in een oudere AEM versies zouden kunnen uiteindelijk verkeerd geëtiketteerd worden als regelmatige gebruikers.
 
 Als dit gebeurt, zal de verbetering met een bericht als dit ontbreken:
 
@@ -343,18 +344,18 @@ Om dit probleem te verhelpen, moet u het volgende doen:
 
 ## Upgrade het databaseschema indien nodig {#upgrade-the-database-schema-if-needed}
 
-Gewoonlijk zorgt de onderliggende Apache Oak-stapel die AEM gebruikt voor persistentie ervoor dat het databaseschema indien nodig wordt bijgewerkt.
+Gewoonlijk zorgt de onderliggende Apache Oak-stapel AEM voor persistentie ervoor dat het databaseschema indien nodig wordt bijgewerkt.
 
-Er kunnen zich echter gevallen voordoen wanneer het schema niet automatisch kan worden bijgewerkt. Dit zijn meestal hoge beveiligingsomgevingen waarin de database wordt uitgevoerd onder een gebruiker met zeer beperkte bevoegdheden. Als dit gebeurt, zal AEM het oude schema blijven gebruiken.
+Er kunnen zich echter gevallen voordoen wanneer het schema niet automatisch kan worden bijgewerkt. Dit zijn meestal hoge beveiligingsomgevingen waarin de database wordt uitgevoerd onder een gebruiker met zeer beperkte bevoegdheden. Als dit gebeurt, blijft AEM het oude schema gebruiken.
 
 Om dit te verhinderen, moet u het schema bevorderen door de hieronder procedure te volgen:
 
-1. Sluit de AEM-instantie die moet worden bijgewerkt.
+1. Sluit de AEM instantie die moet worden bijgewerkt.
 1. Voer een upgrade uit op het databaseschema. Raadpleeg de documentatie bij het databasetype om te zien welke gereedschappen u nodig hebt om dit te bereiken.
 
    Zie [deze pagina op de Apache-website](https://jackrabbit.apache.org/oak/docs/nodestore/document/rdb-document-store.html#upgrade)voor meer informatie over hoe het schema-upgrades door eikel worden verwerkt.
 
-1. Ga verder met de upgrade van AEM.
+1. Ga verder met het upgraden van AEM.
 
 ## Logbestanden roteren {#rotate-log-files}
 
