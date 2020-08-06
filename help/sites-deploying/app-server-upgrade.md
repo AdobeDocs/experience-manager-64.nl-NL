@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 translation-type: tm+mt
 source-git-commit: 510b6765e11a5b3238407322d847745f09183d63
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
 
 # Upgradestappen voor installatie van toepassingsservers{#upgrade-steps-for-application-server-installations}
 
-In deze sectie wordt de procedure beschreven die moet worden gevolgd om AEM voor installatie van de toepassingsserver bij te werken.
+Deze sectie beschrijft de procedure die moet worden gevolgd om AEM voor de installaties van de Server van de Toepassing bij te werken.
 
 Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure is bedoeld voor het documenteren van upgrades die zijn uitgevoerd van **AEM versie 5.6 naar 6.3**.
 
@@ -27,13 +30,13 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    jboss-install-folder/bin/standalone.sh
    ```
 
-1. Als AEM 5.6 reeds wordt opgesteld, controleer dat de bundels correct functioneren door te lopen:
+1. Als AEM 5.6 al is geïmplementeerd, controleert u of de bundels correct werken door:
 
    ```shell
    wget https://<serveraddress:port>/cq/system/console/bundles
    ```
 
-1. Verwijder vervolgens de implementatie van AEM 5.6:
+1. Verwijder vervolgens AEM 5.6:
 
    ```shell
    rm jboss-install-folder/standalone/deployments/cq.war
@@ -51,7 +54,7 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    >
    >In dit voorbeeld is de eikenopslagplaats de tijdelijke map waarin de nieuwe geconverteerde opslagplaats zich bevindt. Voordat u deze stap uitvoert, moet u de nieuwste versie crx2oak.jar gebruiken.
 
-1. Verwijder de benodigde eigenschappen in het bestand sling.properties door het volgende te doen:
+1. Verwijder de benodigde eigenschappen uit het bestand sling.properties door het volgende te doen:
 
    1. Open het bestand op `crx-quickstart/launchpad/sling.properties`
    1. Staptekst Verwijder de volgende eigenschappen en sla het bestand op:
@@ -90,7 +93,8 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
    * `org.apache.jackrabbit.oak.plugins.blob.datastore.FileDataStore.cfg`
-   Deze twee dossiers zullen AEM vormen om een TarMK knoopopslag en een opslag van de gegevensopslag van het Dossier te gebruiken.
+
+   Deze twee dossiers zullen AEM vormen om een TarMK knoopopslag en een de gegevensopslag van het Dossier te gebruiken.
 
 1. Bewerk de configuratiebestanden om deze gebruiksklaar te maken. Meer specifiek:
 
@@ -111,7 +115,7 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. U moet nu de uitvoeringsmodi wijzigen in het oorlogsbestand AEM 6.3. Hiertoe maakt u eerst een tijdelijke map met de AEM 6.3-oorlog. De naam van de map in dit voorbeeld is temp ****. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
+1. U moet nu de uitvoeringswijzen in het AEM 6.3 oorlogsdossier veranderen. Hiertoe maakt u eerst een tijdelijke map waarin de AEM 6.3-oorlog is ondergebracht. De naam van de map in dit voorbeeld is temp ****. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
