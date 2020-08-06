@@ -1,8 +1,8 @@
 ---
-title: Onlineopmerkingen inschakelen voor de plug-in voor de webbrowser van Adobe Reader
-seo-title: Onlineopmerkingen inschakelen voor de plug-in voor de webbrowser van Adobe Reader
-description: Leer hoe u online opmerkingen kunt inschakelen voor de Adobe Reader-plug-in voor webbrowsers.
-seo-description: Leer hoe u online opmerkingen kunt inschakelen voor de Adobe Reader-plug-in voor webbrowsers.
+title: Onlineopmerkingen inschakelen voor Adobe Reader-plug-in voor webbrowsers
+seo-title: Onlineopmerkingen inschakelen voor Adobe Reader-plug-in voor webbrowsers
+description: Leer hoe u online opmerkingen kunt inschakelen voor de insteekmodule voor Adobe Reader-webbrowsers.
+seo-description: Leer hoe u online opmerkingen kunt inschakelen voor de insteekmodule voor Adobe Reader-webbrowsers.
 uuid: 3ac5270f-2b8a-47b1-b0ca-a5607476923f
 contentOwner: admin
 content-type: reference
@@ -11,12 +11,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9c4f8e1e-c2f7-4648-9a2a-104bd540a47a
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 0%
 
 ---
 
 
-# Onlineopmerkingen inschakelen voor de plug-in voor de webbrowser van Adobe Reader {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
+# Onlineopmerkingen inschakelen voor Adobe Reader-plug-in voor webbrowsers {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
 
-Als u de werkbalk Opmerkingen en markeringen wilt inschakelen in een PDF-bestand dat wordt weergegeven met de Adobe Reader-plug-in voor de webbrowser, moet er een back-end voor samenwerking zijn ingesteld, zoals een revisieserver. Als er geen back-end voor samenwerking beschikbaar is, moet u het PDF-bestand opslaan op uw computer, het bestand reviseren en markeren in Adobe Reader en het terugsturen naar de maker.
+Als u de werkbalk Opmerkingen en markeringen wilt inschakelen in een PDF-bestand dat wordt weergegeven met de insteekmodule voor de webbrowser van Adobe Reader, moet er een back-end voor samenwerking zijn, zoals een revisieserver. Als er geen back-end voor samenwerking beschikbaar is, moet u het PDF-bestand opslaan op uw computer, het bestand beoordelen en markeren in Adobe Reader en het terugsturen naar de maker.
 
-Als online opmerkingen vereist zijn in een omgeving zonder samenwerkingsverband, neemt u contact op met de Technische Ondersteuning van Adobe voor meer informatie.
+Als online opmerkingen vereist zijn in een omgeving zonder samenwerkingsverband, neemt u contact op met de Adobe Support voor meer informatie.
