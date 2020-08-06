@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1ef15e76-fe7c-4ced-a20d-c0a9385e3ee4
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '2861'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Voor AEM Communities, is de console van Middelen waar de Managers [van](users.md
 
 ## Vereisten {#requirements}
 
-Alvorens enablement middelen voor een communautaire plaats toe te voegen, moeten de instanties AEM behoorlijk worden gevormd, die omvatten:
+Alvorens enablement middelen voor een communautaire plaats toe te voegen, moeten de AEM instanties behoorlijk worden gevormd, die omvatten:
 
 * SCORM
 * FFmpeg
@@ -34,7 +37,7 @@ Voor details, zie het [Vormen Enablement](enablement.md).
 
 >[!NOTE]
 >
->Met de versie van [AEM 6.3](deploy-communities.md#latestfeaturepack) en de gelijkwaardige eigenschap van Gemeenschappen verpakt [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) en [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest het Pak van de Eigenschap), vereist de enablement eigenschap niet meer een [gegevensbestand](mysql.md)MySQL.
+>Met de versie van [AEM 6.3](deploy-communities.md#latestfeaturepack) en de gelijkwaardige de eigenschappakken van Gemeenschappen [AEM 6.2 FP3](deploy-communities.md#latestfeaturepack) en [AEM 6.1 FP7](https://docs.adobe.com/content/docs/en/aem/6-1/deploy/communities.html#Latest het Pak van de Eigenschap), vereist de enablement eigenschap niet meer een [gegevensbestand](mysql.md)MySQL.
 
 ## Terminologie {#terminology}
 
@@ -123,17 +126,17 @@ Wanneer de bron deel uitmaakt van een cursus, dient u een leerpad toe te wijzen 
 
 ![chlimage_1-169](assets/chlimage_1-169.png)
 
-* **[!UICONTROL Afbeelding toevoegen]**
+* **[!UICONTROL Add Image]**
 
    (*facultatief*) Een beeld om op de kaart voor het enablement middel in de de taakpagina van het lid evenals de console van Middelen te tonen. De afbeelding wordt geselecteerd in het lokale bestandssysteem van de server. Als er geen afbeelding wordt opgegeven, wordt een miniatuur gegenereerd voor de geüploade bron.
 
    ***Opmerking***: de aanbevolen afbeeldingsgrootte is niet gewoon 480 x 480 pixels. Door het responsieve ontwerp van de kaarten tot verschillende browserafmetingen, varieert de weergavegrootte van 220 x 165 pixels tot 400 x 165 pixels.
 
-* **[!UICONTROL Sitenaam]**
+* **[!UICONTROL Site Name]**
 
    (*alleen*-lezen) De communitysite waaraan de bron wordt toegevoegd.
 
-* **[!UICONTROL Naam van bron&amp;ast;]**
+* **[!UICONTROL Resource Name&ast;]**
 
    (*vereist*) De weergavenaam voor de bron. Een geldige knooppuntnaam wordt gecreeerd van de vertoningsnaam.
 
@@ -141,27 +144,27 @@ Wanneer de bron deel uitmaakt van een cursus, dient u een leerpad toe te wijzen 
 
    (*optioneel*) U kunt een of meer tags kiezen die de enablement-bron aan een of meer catalogi koppelen. Zie [Tagging Enablement Resources](tag-resources.md).
 
-* **[!UICONTROL Tonen in catalogus]**
+* **[!UICONTROL Show in Catalog]**
 
    Als deze optie uitgeschakeld is, wordt de resource voor activering niet weergegeven in een catalogus. Indien gecontroleerd, zal het enablement middel in alle catalogi tenzij [voorgefiltreerd](catalog-developer-essentials.md#pre-filters) of de lidfilters van UI verschijnen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Beschrijving]**
+* **[!UICONTROL Description]**
 
    (*facultatief*) De beschrijving aan vertoning voor het enablement middel.
 
-* **[!UICONTROL Klein element]**
+* **[!UICONTROL Small Asset]**
 
-   (*optioneel*) Selectie uit AEM-middelen. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
+   (*optioneel*) Selectie in AEM Assets. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
 
-* **[!UICONTROL Groot element]**
+* **[!UICONTROL Large Asset]**
 
-   (*optioneel*) Selectie uit AEM-middelen. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
+   (*optioneel*) Selectie in AEM Assets. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
 
-* **[!UICONTROL Content Fragment-element]**
+* **[!UICONTROL Content Fragment Asset]**
 
-   (*optioneel*) Selectie uit AEM-middelen. A content fragment that may be referenced in the publish environment, but is not in use by default.
+   (*optioneel*) Selectie in AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
 
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 ### 2 Inhoud toevoegen {#add-content}
 
@@ -173,17 +176,19 @@ Selecteer `'+' icon`in de rechterbovenhoek het item om het proces voor het kieze
 
 ![chlimage_1-171](assets/chlimage_1-171.png)
 
-* **[!UICONTROL Uploaden vanaf mijn lokale bestanden]** Uploaden vanaf het lokale bestandssysteem gebruikt de native bestandsbrowser om een bestand te selecteren en te uploaden. Ondersteunde bestandstypen zijn SCORM.zip (HTML5 of SWF), MP4-video, SWF, PDF en afbeeldingstypen (JPG, PNG, GIF, BMP). De bestandsnaam wordt de naam van het element, dat wordt toegevoegd aan de elementenbibliotheek.
+* **[!UICONTROL Upload from my local files]**
+Als u bestanden uploadt vanuit het lokale bestandssysteem, gebruikt u de native bestandsbrowser om een bestand te selecteren en te uploaden. Ondersteunde bestandstypen zijn SCORM.zip (HTML5 of SWF), MP4-video, SWF, PDF en afbeeldingstypen (JPG, PNG, GIF, BMP). De bestandsnaam wordt de naam van het element, dat wordt toegevoegd aan de elementenbibliotheek.
 
-* **[!UICONTROL Blader door]** Selecteren in Middelenbibliotheek. De selectie is beperkt tot de selecties die zichtbaar zijn binnen de site van de community.
+* **[!UICONTROL Browse Asset Library]**
+Selecteer een optie in de middelenbibliotheek. De selectie is beperkt tot de selecties die zichtbaar zijn binnen de site van de community.
 
-* **[!UICONTROL Een externe URL toevoegen]**
+* **[!UICONTROL Add an external URL]**
 
    Voer een koppeling in naar de leerinhoud.
 
    Voer in het dialoogvenster dat wordt geopend het volgende in:
 
-   * **[!UICONTROL Titel]**
+   * **[!UICONTROL Title]**
 
       De naam van het element voor de enablement-bron.
 
@@ -191,13 +196,13 @@ Selecteer `'+' icon`in de rechterbovenhoek het item om het proces voor het kieze
 
       De URL naar een element.
 
-* **[!UICONTROL Een Adobe Connect-URL toevoegen]**
+* **[!UICONTROL Add an Adobe Connect URL]**
 
    Voer een koppeling naar een Adobe Connect-sessie in.
 
    Voer in het dialoogvenster dat wordt geopend het volgende in:
 
-   * **[!UICONTROL Titel]**
+   * **[!UICONTROL Title]**
 
       De naam van het element voor de enablement-bron.
 
@@ -205,17 +210,17 @@ Selecteer `'+' icon`in de rechterbovenhoek het item om het proces voor het kieze
 
       De URL naar een Adobe Connect-sessie.
 
-* **[!UICONTROL Een externe bron definiëren]**
+* **[!UICONTROL Define an External Resource]**
 
    Voer de locatie in waar het materiaal moet worden weergegeven. De waarden voor de successtatus en de score worden handmatig ingevoerd (zie [Rapporten](reports.md)). Een geüploade omslagafbeelding kan worden gebruikt voor aanvullende informatie.
 
    Voer in het dialoogvenster dat wordt geopend het volgende in:
 
-   * **[!UICONTROL Titel]**
+   * **[!UICONTROL Title]**
 
       De naam van het element voor de enablement-bron.
 
-   * **[!UICONTROL Locatie]**
+   * **[!UICONTROL Location]**
 
       De locatie van een fysieke site, zoals een lesruimte.
 
@@ -223,13 +228,13 @@ Selecteer `'+' icon`in de rechterbovenhoek het item om het proces voor het kieze
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
-* **[!UICONTROL Bronomslagafbeelding]**
+* **[!UICONTROL Resource Cover Image]**
 
    De omslagafbeelding is een afbeelding die wordt weergegeven wanneer de bron van de activering voor het eerst wordt weergegeven. De omslagafbeelding wordt bijvoorbeeld weergegeven wanneer een videobron nog niet wordt afgespeeld. Als een aangepaste afbeelding niet wordt geüpload, wordt een standaardafbeelding weergegeven. Voor videobronnen kan het mogelijk zijn een miniatuur [te](enablement.md#ffmpeg)genereren, maar alleen wanneer deze is geüpload en niet wanneer er naar de video wordt verwezen als een URL. Voor locatiebronnen kan de afbeelding worden gebruikt om aanvullende informatie te verschaffen.
 
    De aanbevolen grootte voor de omslagafbeelding is 640 x 360 px.
 
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 ### 3 Instellingen {#settings}
 
@@ -241,29 +246,30 @@ Selecteer `'+' icon`in de rechterbovenhoek het item om het proces voor het kieze
 >
 >Als een lid in zowel een middel als een het leren weg wordt ingeschreven die verwijzingen dat middel, zullen hun taken zowel het enige middel als het middel binnen de het leren weg tonen.
 
-* **[!UICONTROL Sociale instellingen]**
+* **[!UICONTROL Social Settings]**
 
    Met deze instellingen bepaalt u of studenten invoer kunnen leveren met betrekking tot de activeringsbron. De [moderatie montages](sites-console.md#moderation) zijn die van de oudercommunautaire plaats.
 
-   * **[!UICONTROL Opmerkingen toestaan]**
+   * **[!UICONTROL Allow Commenting]**
 
       Als deze optie is ingeschakeld, mogen leden opmerkingen maken over de bron. Standaard is ingeschakeld.
 
-   * **[!UICONTROL Classificaties toestaan]**
+   * **[!UICONTROL Allow Ratings]**
 
       Als deze optie is ingeschakeld, mogen leden de bron beoordelen. Standaard is ingeschakeld.
 
-   * **[!UICONTROL Anonieme toegang toestaan]**
+   * **[!UICONTROL Allow Anonymous Access]**
 
       Als deze optie ingeschakeld is, mogen anonieme sitebezoekers de bron in een catalogus bekijken wanneer de site van de community anonieme toegang toestaat. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Vervaldatum]**
+* **[!UICONTROL Due Date]**
+
    *(Optioneel)* Er kan een datum worden geselecteerd waarop de toewijzing moet worden voltooid.
 
 * **[!UICONTROL Resource Author]**
    *(Optioneel)* De auteur van de enablement-bron. Gebruik het keuzemenu om gebruikers te selecteren die lid zijn van de [ledengroep](#members-group).
 
-* **[!UICONTROL Resource contact&amp;ast;]**
+* **[!UICONTROL Resource Contact&ast;]**
    *(Vereist)* Een persoon die het lid kan contacteren betreffende het enablement middel. Gebruik het keuzemenu om gebruikers te selecteren die lid zijn van de [ledengroep](#members-group).
 
 * **[!UICONTROL Resource Expert]**
@@ -273,9 +279,10 @@ Selecteer `'+' icon`in de rechterbovenhoek het item om het proces voor het kieze
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
-* **[!UICONTROL Toewijzingen toevoegen]** Gebruik het keuzemenu om te selecteren uit [leden](#members-group) - de gebruikers en gebruikersgroepen (weergegeven in vet lettertype) - die u wilt inschrijven als studenten. Wanneer leden zich aanmelden bij de communitysite, worden de bronnen voor activering (en leerpaden) waarin ze zijn ingeschreven, weergegeven op de pagina [Toewijzingen](functions.md#assignments-function) .
+* **[!UICONTROL Add Assignees]**
+Met het keuzemenu kunt u kiezen uit [leden](#members-group) - de gebruikers en gebruikersgroepen (weergegeven in vet gedrukte tekst) - die u wilt inschrijven als studenten. Wanneer leden zich aanmelden bij de communitysite, worden de bronnen voor activering (en leerpaden) waarin ze zijn ingeschreven, weergegeven op de pagina [Toewijzingen](functions.md#assignments-function) .
 
-* Selecteer **[!UICONTROL Maken]**
+* select **[!UICONTROL Create]**
 
 ![chlimage_1-175](assets/chlimage_1-175.png)
 
@@ -306,17 +313,17 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-* **[!UICONTROL Afbeelding toevoegen]**
+* **[!UICONTROL Add Image]**
 
    (*facultatief*) Een beeld aan vertoning op de kaart voor de het leren weg in de de taakpagina van het lid evenals de console van Middelen. De afbeelding wordt geselecteerd in het lokale bestandssysteem van de server. Als er geen afbeelding wordt opgegeven, wordt een miniatuur gegenereerd voor de geüploade bron.
 
    ***Opmerking***: de aanbevolen afbeeldingsgrootte is niet langer gewoon 480 x 480 pixels. Door het responsieve ontwerp van de kaarten tot verschillende browserafmetingen, varieert de weergavegrootte van 220 x 165 pixels tot 400 x 165 pixels.
 
-* **[!UICONTROL Sitenaam]**
+* **[!UICONTROL Site Name]**
 
    (*alleen*-lezen) De communitysite waaraan de bron wordt toegevoegd.
 
-* **[!UICONTROL Leerpadnaam]**
+* **[!UICONTROL Learning Path Name]**
 
    (*vereist*) De weergavenaam voor het leerpad. Een geldige knooppuntnaam wordt gecreeerd van de vertoningsnaam.
 
@@ -324,45 +331,47 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 
    (*optioneel*) U kunt een of meer tags kiezen die het leerpad koppelen aan een of meer catalogi. Zie [Tagging Enablement Resources](tag-resources.md).
 
-* **[!UICONTROL Tonen in catalogus]**
+* **[!UICONTROL Show in Catalog]**
 
    Als deze optie is uitgeschakeld, wordt het leerpad niet weergegeven in een catalogus. Als gecontroleerd, zal de het leren weg in alle catalogi tenzij [vooraf gefiltreerd](catalog-developer-essentials.md#pre-filters) of de lidfilters van UI verschijnen. Als u het leerpad in een catalogus weergeeft, hebt u indirect toegang tot alle bijbehorende bronnen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Beschrijving]**
+* **[!UICONTROL Description]**
 
    (*facultatief*) De beschrijving aan vertoning voor het enablement middel.
 
-* **[!UICONTROL Klein element]**
+* **[!UICONTROL Small Asset]**
 
-   (*optioneel*) Selectie uit AEM-middelen. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
+   (*optioneel*) Selectie in AEM Assets. Een miniatuurafbeelding die de bron vertegenwoordigt in de publicatieomgeving, zoals in een catalogus.
 
-* **[!UICONTROL Groot element]**
+* **[!UICONTROL Large Asset]**
 
-   (*optioneel*) Selectie uit AEM-middelen. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
+   (*optioneel*) Selectie in AEM Assets. Een grote afbeelding die de bron in de publicatieomgeving vertegenwoordigt, bijvoorbeeld op de hoofdpagina voor een bron.
 
-* **[!UICONTROL Content Fragment-element]**
+* **[!UICONTROL Content Fragment Asset]**
 
-   (*optioneel*) Selectie uit AEM-middelen. A content fragment that may be referenced in the publish environment, but is not in use by default.
+   (*optioneel*) Selectie in AEM Assets. A content fragment that may be referenced in the publish environment, but is not in use by default.
 
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 ### Voorwaarden toevoegen {#add-prerequisites}
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-* **[!UICONTROL Vereiste leerpaden]**(*optioneel*) Als andere gepubliceerde leerpaden zijn geselecteerd, moeten deze zijn voltooid voordat een student dit leerpad kan selecteren.
+* **[!UICONTROL Prerequisite Learning Paths]**
+(
+*(optioneel*) Wanneer u andere gepubliceerde leerpaden selecteert, moeten deze zijn voltooid voordat een student dit leerpad kan selecteren.
 
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 ### Bronnen toevoegen {#add-resources}
 
 ![chlimage_1-179](assets/chlimage_1-179.png)
 
-* **[!UICONTROL Volgorde afdwingen in leerpad]**
+* **[!UICONTROL Enforce Order in Learning Path]**
 
    (*optioneel*) Als deze optie is ingesteld op Aan, is de volgorde waarin de bronnen voor activering worden toegevoegd de volgorde waarin studenten het leerpad moeten doorlopen. Standaard uitgeschakeld.
 
-* **[!UICONTROL Bronnen]**
+* **[!UICONTROL Resources]**
 
    Één of meerdere Middelen die uit *published *published *enablement middelen worden gekozen die voor de huidige communautaire plaats worden gecreeerd.
 
@@ -370,21 +379,21 @@ Voor actiemiddelen die deel uitmaken van een leerpad, mogen de taken alleen word
 >
 >U kunt alleen de bronnen selecteren die beschikbaar zijn op hetzelfde niveau als het leerpad. Bijvoorbeeld, voor een leerweg die in een groep wordt gecreeerd slechts zijn de middelen van het groepsniveau beschikbaar; voor een leerpad dat in een gemeenschapssite is gemaakt, zijn de bronnen in die site beschikbaar voor toevoeging aan het leerpad.
 
-* Selecteer **[!UICONTROL Volgende]**.
+* Selecteer **[!UICONTROL Next]**.
 
-###  Instellingen {#settings-1}
+### Instellingen {#settings-1}
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-* **[!UICONTROL Inschrijvingen toevoegen]**
+* **[!UICONTROL Add Enrollments]**
 
    Gebruik het keuzemenu om te kiezen uit de leden en lidgroepen (vet weergegeven) die lid zijn van de [ledengroep](#members-group)van de site van de community. U hoeft geen toewijzingen toe te voegen wanneer u het leerpad maakt. De eigenschappen van het leerpad kunnen worden gewijzigd om later studenten toe te voegen.
 
-* **[!UICONTROL Leerpad contactpersoon&amp;ast;]**
+* **[!UICONTROL Learning Path Contact&ast;]**
 
    *(Vereist)* Een persoon waarmee het lid contact kan opnemen met betrekking tot het leerpad. Gebruik het keuzemenu om een keuze te maken uit de gebruikers die lid zijn van de [ledengroep](#members-group)van de community.
 
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
 
 >[!NOTE]
 >
@@ -405,14 +414,14 @@ Voor de geselecteerde enablement-bron is het mogelijk:
 * Eigenschappen weergeven (standaard)
 * Eigenschappen bewerken
 * Verwijderen
-* Publiceren
+* Publicatie
 * Publiceren ongedaan maken
 
 Om een nieuwe versie van het enablement middel te uploaden, wordt het geadviseerd om een nieuwe middel tot stand te brengen, en dan leden van de oude versie uit te schrijven en hen in de nieuwe versie in te schrijven.
 
 ### Bron bewerken {#edit-resource}
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 Door het potloodpictogram te selecteren, worden de stappen voor het creëren van een enablement middel getoond beschikbaar gemaakt zodat om het even welke verstrekte informatie kan worden gewijzigd.
 
@@ -424,15 +433,15 @@ Als de enige verandering taken op de stap van Montages moet wijzigen, dan leidt 
 
 Door het trashcan-pictogram te selecteren, wordt de enablement-resource na bevestiging `Delete`d.
 
-### Publiceren {#publish}
+### Publicatie {#publish}
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 
 Voordat studenten een toegewezen activeringscursus kunnen zien, moet deze worden gepubliceerd:
 
 * Het pictogram op de wereld selecteren voor `Publish`
-* Selecteer nogmaals **[!UICONTROL Publiceren]** in het dialoogvenster dat verschijnt
-* Selecteer **[!UICONTROL Sluiten]**
+* Selecteer **[!UICONTROL Publish]** nogmaals in het dialoogvenster dat verschijnt
+* Selecteer **[!UICONTROL Close]**
 
 Hoewel in het dialoogvenster staat dat de handeling in de wachtrij staat, wordt deze vaak onmiddellijk gepubliceerd.
 
@@ -452,9 +461,9 @@ Voor alle leerpaden kunt u een rapport weergeven op basis van bronnen of student
 
 ![chlimage_1-186](assets/chlimage_1-186.png)
 
-Dit Rapport is specifiek voor het huidige enablement middel of het leren weg. De mate van rapportage hangt af van het feit of [Adobe Analytics](analytics.md) al dan niet een licentie heeft en is ingeschakeld voor de site van de gebruikersgemeenschap. De rapporten [Tijdlijn](#timeline), [Betrokkenheid](#viewer-engagement)van de Viewer en [Betrokkenheid van apparaat](#engagement-by-device) worden geïmporteerd uit Adobe Analytics op basis van het [opiniepeilingsinterval](analytics.md#report-importer).
+Dit Rapport is specifiek voor het huidige enablement middel of het leren weg. De mate van rapportage hangt af van het feit of [Adobe Analytics](analytics.md) al dan niet een licentie heeft en ingeschakeld is voor de site van de community. De rapporten [Tijdlijn](#timeline), [Betrokkenheid](#viewer-engagement)van de Kijker, en [Betrokkenheid door Apparaat](#engagement-by-device) worden ingevoerd uit Adobe Analytics die op het [steminterval](analytics.md#report-importer)wordt gebaseerd.
 
-Voor alle instellingsbronnen, ongeacht of Adobe Analytics is ingeschakeld, zijn er rapporten over de status [en](#assignee-status) beoordelingen [van](#ratings) ontvangers en een tabel met [rapportoverzicht](#report-summary) .
+Voor alle enablement middelen, ongeacht of Adobe Analytics wordt toegelaten, zijn er rapporten over de Status [](#assignee-status) van de Ontvanger en de [Waarderingen](#ratings) evenals een [Summiere](#report-summary) lijst van het Rapport.
 
 ![chlimage_1-187](assets/chlimage_1-187.png)
 
@@ -492,13 +501,13 @@ De verticale as is het aantal studenten dat deze bron heeft bekeken.
 
 De horizontale as is de duur van deze resource.
 
-[Org-id voor marketingcloud vereist](sites-console.md#enablement).
+[Marketing Cloud-Org-id vereist](sites-console.md#enablement).
 
 #### Betrokkenheid per apparaat {#engagement-by-device}
 
 In het rapport Analytics Engagement by Device (Betrokkenheid bij analyse per apparaat) voor videobronnen wordt het percentage van weergaven beschreven dat vanaf desktop en mobiel is afgespeeld.
 
-[Org-id voor marketingcloud vereist](sites-console.md#enablement).
+[Marketing Cloud-Org-id vereist](sites-console.md#enablement).
 
 #### Status van ontvanger {#assignee-status}
 
@@ -546,7 +555,7 @@ U kunt de weergave van de tabel aanpassen door kolommen te selecteren met de `Sh
 
 De lijst van Rapporten Summiere kan in formaat CSV worden gedownload gebruikend een knoop bij de bovenkant van de console.
 
-* voor een enablement resource: `Download Resource Report as CSV` , knop
-* voor een leerpad: `Download Learning Path Report as CSV` , knop
+* voor een enablement resource: `Download Resource Report as CSV` knop
+* voor een leerpad: `Download Learning Path Report as CSV` knop
 
 De volledige samenvatting van Rapporten wordt gedownload ongeacht kolommen voor vertoning worden gekozen.
