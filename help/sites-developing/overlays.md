@@ -1,8 +1,8 @@
 ---
 title: Bedekkingen
 seo-title: Bedekkingen
-description: 'AEM gebruikt het beginsel van bekledingen om u toe te staan om de consoles en andere functionaliteit uit te breiden en aan te passen '
-seo-description: 'AEM gebruikt het beginsel van bekledingen om u toe te staan om de consoles en andere functionaliteit uit te breiden en aan te passen '
+description: 'AEM gebruikt het principe van overlays om consoles en andere functies uit te breiden en aan te passen '
+seo-description: 'AEM gebruikt het principe van overlays om consoles en andere functies uit te breiden en aan te passen '
 uuid: d14c08fe-04c0-4925-8c99-c6644357919d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
 translation-type: tm+mt
 source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
 
 AEM (en daarvoor, CQ) heeft het beginsel van bekledingen lang gebruikt om u toe te staan om de [consoles](/help/sites-developing/customizing-consoles-touch.md) en andere functionaliteit (bijvoorbeeld, [paginascreatie](/help/sites-developing/customizing-page-authoring-touch.md)) uit te breiden en aan te passen.
 
-Bedekking is een term die in veel contexten kan worden gebruikt. In deze context (het uitbreiden van AEM) betekent een bekleding het nemen van de vooraf bepaalde functionaliteit en het opleggen van uw eigen definities over dat (om de standaardfunctionaliteit aan te passen).
+Bedekking is een term die in veel contexten kan worden gebruikt. In deze context (het uitbreiden van AEM) betekent een overlay het nemen van de vooraf bepaalde functionaliteit en het opleggen van uw eigen definities over dat (om de standaardfunctionaliteit aan te passen).
 
 In een standaardinstantie wordt de vooraf gedefinieerde functionaliteit onder gehouden `/libs` en het wordt aanbevolen de bedekking (aanpassingen) onder de `/apps` vertakking te definiëren. AEM gebruikt een onderzoekspad om een middel te vinden, eerst zoekend de `/apps` tak en toen de `/libs` tak (de [onderzoekspad kan worden gevormd](#configuring-the-search-paths)). Dit mechanisme betekent dat uw bedekking (en de aanpassingen die daar worden bepaald) prioriteit zal hebben.
 
-Sinds AEM 6.0 zijn er wijzigingen aangebracht in de manier waarop overlays worden geïmplementeerd en gebruikt:
+Sinds AEM 6.0 zijn wijzigingen aangebracht in de manier waarop overlays worden geïmplementeerd en gebruikt:
 
-* Vanaf AEM 6.0 - voor [graniet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)-gerelateerde overlays (d.w.z. de interface met aanraakbediening)
+* AEM 6.0 en hoger - voor [graniet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)-gerelateerde overlays (d.w.z. de interface met aanraakbediening)
 
    * Methode
 
@@ -40,7 +43,7 @@ Sinds AEM 6.0 zijn er wijzigingen aangebracht in de manier waarop overlays worde
       * Alleen opnieuw definiëren wat werkelijk vereist is.
 
 
-* Niet-graniet overlays en overlays die ouder zijn dan AEM 6.0
+* Niet-graniet-overlays en -overlays vóór AEM 6.0
 
    * Methode
 
