@@ -12,6 +12,9 @@ discoiquuid: f176c42b-b16b-42c9-af22-4b6421de5a90
 pagetitle: Liking Essentials
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 0%
 
 ---
 
