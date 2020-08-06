@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23768c73-ac64-4727-8313-160c8c131b05
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 1%
 
 ---
 
@@ -157,7 +160,7 @@ De eigenschappen zijn verdeeld over verschillende tabbladen:
 
    Selecteer een [merk om een bereik voor het instellen van doelen](/help/sites-classic-ui-authoring/classic-personalization-campaigns.md)op te geven.
 
-### Permissions {#permissions}
+### Machtigingen {#permissions}
 
 * **Machtigingen** (interface met aanraakgeoptimaliseerde interface)
 
