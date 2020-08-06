@@ -12,6 +12,9 @@ discoiquuid: a28539fc-c1dd-43bf-a47b-5f158c5611a7
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '515'
+ht-degree: 19%
 
 ---
 
@@ -32,18 +35,18 @@ Als uw lancering op een [levende exemplaar](/help/sites-administering/msm.md) ge
 * zie vergrendelingssymbolen (kleine hangsloten) wanneer u een component (inhoud en/of eigenschappen) bewerkt.
 * Zie het tabblad **Live kopie** in **Pagina-eigenschappen**
 
-Een livecopy wordt gebruikt om inhoud *van* de brontak *aan* uw lanceringstak te synchroniseren (om uw lancering bijgewerkt met veranderingen te houden die in de bron worden aangebracht).
+Een livekopie wordt gebruikt om content te synchroniseren *van* de bronvertakking *naar* de startvertakking (om uw lancering up-to-date te houden als er veranderingen in de bron worden aangebracht).
 
 U kunt wijzigingen aanbrengen op dezelfde manier als waarop u een standaard live kopie kunt bewerken. bijvoorbeeld:
 
 * Als u op een gesloten hangslot klikt, wordt deze synchronisatie verbroken en kunt u nieuwe updates voor de inhoud uitvoeren wanneer u de toepassing start. Als de vergrendeling is opgeheven (open hanglock), worden de wijzigingen niet overschreven door wijzigingen die op dezelfde locatie in de bronvertakking zijn aangebracht.
-* **Overerving voor een bepaalde pagina onderbreken** (en **hervatten**).
+* **Overname** voor een bepaalde pagina onderbreken (en **hervatten**).
 
 Zie Inhoud [van live kopie](/help/sites-administering/msm-livecopy.md#changing-live-copy-content) wijzigen voor meer informatie.
 
 ## Een startpagina vergelijken met de bijbehorende bronpagina {#comparing-a-launch-page-to-its-source-page}
 
-Als u de wijzigingen wilt bijhouden die u hebt aangebracht, kunt u de opstarter weergeven in **Referenties** en de opstartpagina vergelijken met de bijbehorende bronpagina:
+Als u de door u aangebrachte wijzigingen wilt bijhouden, kunt u de start weergeven in **Referenties** en de startpagina vergelijken met de bijbehorende bronpagina:
 
 1. Navigeer in de **Sites** -console naar de bronpagina van de opstart en selecteer deze [](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 1. Open het deelvenster **[Verwijzingen](/help/sites-authoring/basic-handling.md#references)**en selecteer **Starten**.
@@ -67,9 +70,10 @@ U kunt op elk gewenst moment pagina&#39;s toevoegen aan of verwijderen uit het b
    * [Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
 
       * Selecteer Starten **bewerken**.
+
    De bronpagina&#39;s worden weergegeven.
 
-1. Breng de gewenste wijzigingen aan en bevestig het bestand met **Opslaan**.
+1. Breng de gewenste wijzigingen aan en bevestig vervolgens met **Opslaan**.
 
    >[!NOTE]
    >
@@ -86,12 +90,13 @@ U kunt op elk gewenst moment de eigenschappen voor een opstart bewerken:
       * Selecteer **Eigenschappen**.
    * [Referenties (Sites-console)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties weer te geven:
 
-      * Selecteer Eigenschappen **** bewerken.
+      * Select **Edit Properties**.
+
    De details worden weergegeven.
 
-1. Breng de gewenste wijzigingen aan en bevestig het bestand met **Opslaan**.
+1. Breng de gewenste wijzigingen aan en bevestig vervolgens met **Opslaan**.
 
-   Zie [Lanceringen - de Orde van Gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van de gebieden van de Datum **van de** Lancering en Klaar **van de** Productie.
+   Zie [Lanceringen - de volgorde van gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor informatie over het doel en de interactie van de velden **Startdatum** en **Geschikt voor productie**.
 
 ## De opstartstatus van een pagina vaststellen {#discovering-the-launch-status-of-a-page}
 
