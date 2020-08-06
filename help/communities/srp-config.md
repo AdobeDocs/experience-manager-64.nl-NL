@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '202'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
 
 Opslagconfiguratie is het middel om de opslag te identificeren die voor communautaire inhoud wordt gekozen, die ook als gebruiker geproduceerde inhoud (UGC) wordt bekend.
 
-Dit het plaatsen informeert de code van Gemeenschappen AEM over welke implementatie van de leverancier van het opslagmiddel (SRP) moet worden gebruikt wanneer de toegang tot van UGC en moet op de topologie wijzen die wordt gevestigd toen AEM werd opgesteld.
+Dit het plaatsen informeert de code van AEM Communities over welke implementatie van de leverancier van het opslagmiddel (SRP) moet worden gebruikt wanneer het toegang tot van UGC en moet op de topologie wijzen die wordt gevestigd toen AEM werd opgesteld.
 
 Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek
 
@@ -32,7 +35,7 @@ Voor een bespreking van opslagopties en plaatsingstopologieën, bezoek
 
 In de auteursomgeving, om de console van de opslagconfiguratie te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Extra > Gemeenschappen > Opslagconfiguratie]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Storage Configuration]**
 
 U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
 
@@ -43,11 +46,11 @@ U selecteert als volgt een andere opslagoptie dan de standaard-JCR:
    * Zie details voor het [selecteren van DSRP](dsrp.md#select-dsrp)
    * Zie details voor het [selecteren van ASRP](asrp.md#select-asrp)
 
-* Selecteer **[!UICONTROL Verzenden]**
+* Selecteer **[!UICONTROL Submit]**
 
 ### Informatie over JCR-opslag {#about-jcr-storage}
 
-Houd er rekening mee dat als er geen selectie wordt gemaakt, de standaard de AEM-opslagplaats JCR is.
+Houd er rekening mee dat als er geen selectie wordt gemaakt, de standaardinstelling de AEM opslagplaats JCR is.
 
 JCR is *geen* algemene winkel die door de auteur- en publicatieomgeving wordt gedeeld. Community-inhoud is alleen zichtbaar van de auteur- of publicatieomgeving waarin deze is gemaakt.
 
