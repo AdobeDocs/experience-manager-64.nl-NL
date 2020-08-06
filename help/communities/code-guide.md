@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 244cd43c-a573-495d-b80c-b97ba9d19b75
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '188'
+ht-degree: 1%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Richtlijnen, tips en trucs {#guidelines-tips-and-tricks}
 
-Het werken met AEM-gemeenschappen heeft zich ontwikkeld van sterk afhankelijk zijn van Java Server Pages tot flexibiliteit bij het kiezen van sjabloontalen waarbij bedrijfslogica, stijl en pagina-inhoud van elkaar verschillen.
+Het werken met AEM Communities is geëvolueerd van sterk afhankelijk zijn van de Pagina&#39;s van de Server van Java aan flexibiliteit in het kiezen van het opmaken van scripttalen waar bedrijfslogica, stijl, en paginacontent van elkaar verschillend zijn.
 
 De verdere flexibiliteit in het werken met gebruiker geproduceerde inhoud (UGC) is door de SocialeResourceProvider API, die de behoefte aan bewustzijn elimineert waarvan de optie [SRP](srp.md) voor de plaatsing werd gekozen.
 
-Hieronder vindt u verschillende coderingsrichtlijnen en aanbevolen procedures voor AEM Community-ontwikkelaars:
+Hieronder vindt u verschillende codeerrichtlijnen en aanbevolen procedures voor AEM Communities-ontwikkelaars:
 
 ### Code {#code}
 
