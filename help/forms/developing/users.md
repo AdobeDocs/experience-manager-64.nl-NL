@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
 translation-type: tm+mt
 source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+workflow-type: tm+mt
+source-wordcount: '6191'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
 
 **Over Gebruikersbeheer**
 
-U kunt de API voor gebruikersbeheer gebruiken om clienttoepassingen te maken die rollen, machtigingen en hoofden (die gebruikers of groepen kunnen zijn) kunnen beheren en om gebruikers te verifiëren. De API voor gebruikersbeheer bestaat uit de volgende API&#39;s voor AEM-formulieren:
+U kunt de API voor gebruikersbeheer gebruiken om clienttoepassingen te maken die rollen, machtigingen en hoofden (die gebruikers of groepen kunnen zijn) kunnen beheren en om gebruikers te verifiëren. Gebruikersbeheer-API bestaat uit de volgende AEM Forms API&#39;s:
 
 * Directory Manager-service-API
 * API voor verificatiebeheer
@@ -29,7 +32,7 @@ Het Beheer van de gebruiker laat u toe om, rollen en toestemmingen toe te wijzen
 
 In het [Toevoegen van Gebruikers](users.md#adding-users) zult u begrijpen hoe te om gebruikers programmatically toe te voegen. In deze sectie wordt de directoryservice-API gebruikt.
 
-In het [Schrappen van Gebruikers](users.md#deleting-users) zult u begrijpen hoe te om gebruikers programmatically te schrappen. In deze sectie wordt de directoryservice-API gebruikt.
+Bij het [schrappen van Gebruikers](users.md#deleting-users) zult u begrijpen hoe te om gebruikers programmatically te schrappen. In deze sectie wordt de directoryservice-API gebruikt.
 
 In het [Leiden Gebruikers en Groepen](users.md#managing-users-and-groups) zult u het verschil tussen een lokale gebruiker en een foldergebruiker begrijpen, en voorbeelden van zien hoe te om Java en de dienst APIs van het Web te gebruiken om gebruikers en groepen programmatically te beheren. In deze sectie wordt de directoryservice-API gebruikt.
 
@@ -39,7 +42,7 @@ In het [Verifiëren van Gebruikers](users.md#authenticating-users) zult u voorbe
 
 **Het verificatieproces begrijpen**
 
-Gebruikersbeheer biedt ingebouwde verificatiefunctionaliteit en biedt u ook de mogelijkheid om deze te verbinden met uw eigen verificatieprovider. Wanneer het Beheer van de Gebruiker een authentificatieverzoek ontvangt (bijvoorbeeld, probeert een gebruiker om binnen te registreren), gaat het gebruikersinformatie tot de authentificatieleverancier over om voor authentiek te verklaren. Gebruikersbeheer ontvangt de resultaten van de verificatieprovider nadat de gebruiker is geverifieerd.
+Gebruikersbeheer biedt ingebouwde verificatiefuncties en biedt u ook de mogelijkheid om deze te verbinden met uw eigen verificatieprovider. Wanneer het Beheer van de Gebruiker een authentificatieverzoek ontvangt (bijvoorbeeld, probeert een gebruiker om binnen te registreren), gaat het gebruikersinformatie tot de authentificatieleverancier over om voor authentiek te verklaren. Gebruikersbeheer ontvangt de resultaten van de verificatieprovider nadat de gebruiker is geverifieerd.
 
 Het volgende diagram toont de interactie onder een eind - gebruiker die aan login, Gebruikersbeheer, en de authentificatieleverancier probeert.
 
@@ -80,7 +83,7 @@ De volgende lijst beschrijft elke stap van het authentificatieproces.
 
 >[!NOTE]
 >
->Als de servertijdzone van de cliënttijdzone verschillend is, wanneer het verbruiken van WSDL voor de Vormen AEM produceert de dienst PDF op een inheemse stapel van de ZEEP gebruikend een .NET cliënt op een cluster van de Server van de Toepassing WebSphere, kan de volgende de authentificatiefout van het Beheer van de Gebruiker voorkomen:
+>Als de servertijdzone van de cliënttijdzone verschillend is, wanneer het verbruiken van WSDL voor AEM Forms produceert de dienst PDF op een inheemse stapel van de ZEEP gebruikend een .NET cliënt op een cluster van de Server van de Toepassing WebSphere, kan de volgende de authentificatiefout van het Beheer van de Gebruiker voorkomen:
 
 `[com.adobe.idp.um.webservices.WSSecurityHandler] errorCode:12803 errorCodeHEX:0x3203 message:WSSecurityHandler: UM authenticate returns exception : An error was discovered processing the <wsse:Security> header. (WSSecurityEngine: Invalid timestamp The security semantics of message have expired).`
 
@@ -104,7 +107,7 @@ Een `objectSID` waarde zou veranderen als een voorwerp van één Actief domein v
 
 ## Gebruikers toevoegen {#adding-users}
 
-U kunt de API voor directoryservice (Java en webservice) gebruiken om gebruikers programmatisch aan AEM-formulieren toe te voegen. Nadat u een gebruiker hebt toegevoegd, kunt u die gebruiker gebruiken wanneer u een servicebewerking uitvoert waarvoor een gebruiker nodig is. U kunt bijvoorbeeld een taak toewijzen aan de nieuwe gebruiker.
+U kunt de API voor directoryservice (Java en webservice) gebruiken om gebruikers programmatisch aan AEM Forms toe te voegen. Nadat u een gebruiker hebt toegevoegd, kunt u die gebruiker gebruiken wanneer u een servicebewerking uitvoert waarvoor een gebruiker nodig is. U kunt bijvoorbeeld een taak toewijzen aan de nieuwe gebruiker.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -113,7 +116,7 @@ Voer de volgende stappen uit om een gebruiker toe te voegen:
 1. Inclusief projectbestanden.
 1. Creeer een cliënt DirectoryManagerService.
 1. Gebruikersgegevens definiëren.
-1. Voeg de gebruiker toe aan AEM-formulieren.
+1. Voeg de gebruiker toe aan AEM Forms.
 1. Controleer of de gebruiker is toegevoegd.
 
 **Projectbestanden opnemen**
@@ -135,9 +138,9 @@ Wanneer u een nieuwe gebruiker door de Dienst API van de Manager van de Folder t
 * **Familienaam**: De familienaam voor de gebruiker (bijvoorbeeld, `Blue)`.
 * **Landinstelling**: Lokale informatie voor de gebruiker.
 
-**De gebruiker toevoegen aan AEM-formulieren**
+**De gebruiker toevoegen aan AEM Forms**
 
-Nadat u gebruikersgegevens hebt gedefinieerd, kunt u de gebruiker toevoegen aan AEM-formulieren. Als u een gebruiker wilt toevoegen, roept u de `DirectoryManagerServiceClient` methode van het `createLocalUser` object aan.
+Nadat u gebruikersgegevens hebt gedefinieerd, kunt u de gebruiker aan AEM Forms toevoegen. Als u een gebruiker wilt toevoegen, roept u de `DirectoryManagerServiceClient` methode van het `createLocalUser` object aan.
 
 **Controleren of de gebruiker is toegevoegd**
 
@@ -149,7 +152,7 @@ U kunt controleren of de gebruiker is toegevoegd om ervoor te zorgen dat er geen
 
 [Gebruikers toevoegen met de webservice-API](users.md#add-users-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -176,16 +179,18 @@ Voeg gebruikers toe met de API voor directoryservice (Java):
    * Stel de canonieke naam in door de `UserImpl` methode van het `setCanonicalName` object aan te roepen. Geef een tekenreekswaarde door die de canonieke naam van de gebruiker aangeeft. U kunt bijvoorbeeld opgeven `wblue`.
    * Stel de opgegeven naam in door de `UserImpl` methode van het `setGivenName` object aan te roepen. Geef een tekenreekswaarde door die de opgegeven naam van de gebruiker aangeeft. U kunt bijvoorbeeld opgeven `Wendy`.
    * Stel de familienaam in door de `UserImpl` methode van het `setFamilyName` object aan te roepen. Geef een tekenreekswaarde door die de familienaam van de gebruiker aangeeft. U kunt bijvoorbeeld opgeven `Blue`.
+
    >[!NOTE]
    >
    >Roep een methode aan die tot het `UserImpl` object behoort om andere waarden in te stellen. U kunt bijvoorbeeld de waarde van de landinstelling instellen door de `UserImpl` methode van het `setLocale` object aan te roepen.
 
-1. Voeg de gebruiker toe aan AEM-formulieren.
+1. Voeg de gebruiker toe aan AEM Forms.
 
    Roep de methode van het `DirectoryManagerServiceClient` `createLocalUser` object aan en geef de volgende waarden door:
 
    * Het `UserImpl` object dat de nieuwe gebruiker vertegenwoordigt
    * Een tekenreekswaarde die het wachtwoord van de gebruiker vertegenwoordigt
+
    De `createLocalUser` methode retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
 
 1. Controleer of de gebruiker is toegevoegd.
@@ -200,7 +205,7 @@ Voeg gebruikers toe met de API voor directoryservice (Java):
 
 [Snel starten (SOAP-modus): Gebruikers toevoegen met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-adding-users-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -219,12 +224,12 @@ Voeg gebruikers toe met de API (webservice) van Directory Manager:
 1. Creeer een cliënt DirectoryManagerService.
 
    * Maak een `DirectoryManagerServiceClient` object met de standaardconstructor.
-   * Maak een `DirectoryManagerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u opgeeft `?blob=mtom`.
+   * Maak een `DirectoryManagerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u opgeeft `?blob=mtom`.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `DirectoryManagerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -239,12 +244,13 @@ Voeg gebruikers toe met de API (webservice) van Directory Manager:
    * Stel de opgegeven naamwaarde in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `givenName` object.
    * Stel de naam van de familie in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `familyName` object.
 
-1. Voeg de gebruiker toe aan AEM-formulieren.
+1. Voeg de gebruiker toe aan AEM Forms.
 
    Roep de methode van het `DirectoryManagerServiceClient` `createLocalUser` object aan en geef de volgende waarden door:
 
    * Het `UserImpl` object dat de nieuwe gebruiker vertegenwoordigt
    * Een tekenreekswaarde die het wachtwoord van de gebruiker vertegenwoordigt
+
    De `createLocalUser` methode retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
 
 1. Controleer of de gebruiker is toegevoegd.
@@ -257,13 +263,13 @@ Voeg gebruikers toe met de API (webservice) van Directory Manager:
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Gebruikers verwijderen {#deleting-users}
 
-Met de API voor directoryservice (Java en webservice) kunt u gebruikers programmatisch verwijderen uit AEM Forms. Nadat u een gebruiker schrapt, kan de gebruiker niet meer worden gebruikt om een de dienstverrichting uit te voeren die een gebruiker vereist. U kunt bijvoorbeeld geen taak toewijzen aan een verwijderde gebruiker.
+U kunt de API voor directoryservice (Java en webservice) gebruiken om gebruikers via programmacode uit AEM Forms te verwijderen. Nadat u een gebruiker schrapt, kan de gebruiker niet meer worden gebruikt om een de dienstverrichting uit te voeren die een gebruiker vereist. U kunt bijvoorbeeld geen taak toewijzen aan een verwijderde gebruiker.
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -286,7 +292,7 @@ Alvorens u programmatically een verrichting van de Dienst API van de Manager van
 
 U kunt opgeven dat een gebruiker moet worden verwijderd met de id-waarde van de gebruiker.
 
-**De gebruiker verwijderen uit AEM-formulieren**
+**De gebruiker verwijderen uit AEM Forms**
 
 Als u een gebruiker wilt verwijderen, roept u de `DirectoryManagerServiceClient` methode van het `deleteLocalUser` object aan.
 
@@ -296,7 +302,7 @@ Als u een gebruiker wilt verwijderen, roept u de `DirectoryManagerServiceClient`
 
 [Gebruikers verwijderen met de webservice-API](users.md#delete-users-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -332,7 +338,7 @@ Gebruikers verwijderen met de API voor directoryservice (Java):
 
 [Snel starten (SOAP-modus): Gebruikers verwijderen met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-deleting-users-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -347,12 +353,12 @@ Gebruikers verwijderen met de API voor directoryservice (webservice):
 1. Creeer een cliënt DirectoryManagerService.
 
    * Maak een `DirectoryManagerServiceClient` object met de standaardconstructor.
-   * Maak een `DirectoryManagerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u opgeeft `blob=mtom.`
+   * Maak een `DirectoryManagerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u opgeeft `blob=mtom.`
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `DirectoryManagerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -371,13 +377,13 @@ Gebruikers verwijderen met de API voor directoryservice (webservice):
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Groepen maken {#creating-groups}
 
-Met de API voor directorybeheer (Java en webservice) kunt u programmatisch groepen voor AEM-formulieren maken. Nadat u een groep creeert, kunt u die groep gebruiken om een de dienstverrichting uit te voeren die een groep vereist. U kunt bijvoorbeeld een gebruiker aan de nieuwe groep toewijzen. (Zie Gebruikers en groepen [](users.md#managing-users-and-groups)beheren.)
+Met de API voor directorybeheer (Java en webservice) kunt u programmatisch AEM Forms-groepen maken. Nadat u een groep creeert, kunt u die groep gebruiken om een de dienstverrichting uit te voeren die een groep vereist. U kunt bijvoorbeeld een gebruiker aan de nieuwe groep toewijzen. (Zie Gebruikers en groepen [](users.md#managing-users-and-groups)beheren.)
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -397,10 +403,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een DirectoryManagerService-client maken**
 
@@ -426,7 +432,7 @@ Nadat u een groep hebt gemaakt, kunt u een actie uitvoeren met de groep. U kunt 
 
 [Groepen maken met de Java API](users.md#create-groups-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -460,6 +466,7 @@ Maak een groep met de API voor directoryservice (Java):
    * Roep de `Group` methode van het `setDescription` object aan en geef een tekenreekswaarde door die de beschrijving van de groep aangeeft.
    * Roep de `Group` methode van het `setDomainName` object aan en geef een tekenreekswaarde door die de domeinnaam opgeeft.
    * Roep de `DirectoryManagerServiceClient` methode van het `createLocalGroup` object aan en geef de `Group` instantie door.
+
    De `createLocalUser` methode retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
 
 1. Voer een handeling uit met de groep.
@@ -473,11 +480,11 @@ Maak een groep met de API voor directoryservice (Java):
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Gebruikers en groepen beheren {#managing-users-and-groups}
+## Managing Users and Groups {#managing-users-and-groups}
 
 Dit onderwerp beschrijft hoe u (Java) kunt gebruiken om, domeinen, gebruikers, en groepen programmatically toe te wijzen te verwijderen.
 
@@ -518,7 +525,7 @@ Zodra u de de dienstcliënt hebt gecreeerd, kunt u de gebruiker of de verrichtin
 
 [Gebruikers en groepen beheren met de webservice-API](users.md#managing-users-and-groups-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -530,7 +537,7 @@ Voer de volgende taken uit om gebruikers, groepen en domeinen programmatisch te 
 
 1. Inclusief projectbestanden.
 
-   Neem client-JAR-bestanden, zoals adobe-usermanager-client.jar, op in het klassenpad van uw Java-project. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
+   Neem client-JAR-bestanden, zoals adobe-usermanager-client.jar, op in het klassenpad van uw Java-project. Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
 
 1. Creeer een cliënt DirectoryManagerService.
 
@@ -552,7 +559,7 @@ Voer de volgende taken uit om gebruikers, groepen en domeinen programmatisch te 
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -562,7 +569,7 @@ Om gebruikers, groepen, en domeinen programmatically te beheren gebruikend de Di
 
 1. Inclusief projectbestanden.
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Folder verbruikt. (Zie [AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Folder verbruikt. (Zie AEM Forms [aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
    * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie het [Creëren van een .NET cliëntassemblage die Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding). gebruikt)
 
 1. Creeer een cliënt DirectoryManagerService.
@@ -589,15 +596,15 @@ Om gebruikers, groepen, en domeinen programmatically te beheren gebruikend de Di
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Rollen en machtigingen beheren {#managing-roles-and-permissions}
 
 Dit onderwerp beschrijft hoe u de Dienst API van de Manager van de Vergunning (Java) kunt gebruiken om, rollen en toestemmingen programmatically toe te wijzen te verwijderen en te bepalen.
 
-In Vormen AEM, is een *rol* een groep toestemmingen voor de toegang tot van één of meerdere systeem-vlakke middelen. Deze toestemmingen worden gecreeerd door het Beheer van de Gebruiker en door de de dienstcomponenten afgedwongen. Een beheerder kan bijvoorbeeld de rol &quot;Policy Set Author&quot; aan een groep gebruikers toewijzen. Het Beheer van rechten zou dan de gebruikers van die groep met die rol toestaan om beleidsreeksen door beleidsconsole tot stand te brengen.
+In AEM Forms is een *rol* een groep machtigingen voor toegang tot een of meer systeembronnen. Deze toestemmingen worden gecreeerd door het Beheer van de Gebruiker en door de de dienstcomponenten afgedwongen. Een beheerder kan bijvoorbeeld de rol &quot;Policy Set Author&quot; aan een groep gebruikers toewijzen. Het Rights Management zou dan de gebruikers van die groep met die rol toestaan om beleidsreeksen door beleidsconsole tot stand te brengen.
 
-Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. De standaardrollen (*systeemrollen)* zijn reeds ingezetene in Vormen AEM. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
+Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. De standaardrollen (*systeemrollen)* zijn reeds ingezeten in AEM Forms. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
 
 Rollen maken het eenvoudiger om machtigingen te beheren. Wanneer een rol aan een hoofd wordt toegewezen, wordt een reeks toestemmingen automatisch toegewezen aan dat hoofd, en alle specifieke op toegang betrekking hebbende besluiten voor het hoofd zijn gebaseerd op die algemene reeks toegewezen toestemmingen.
 
@@ -627,7 +634,7 @@ Zodra u de de dienstcliënt hebt gecreeerd, kunt u de rol of toestemmingsverrich
 
 [Rollen en machtigingen beheren met de webservice-API](users.md#managing-roles-and-permissions-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -651,6 +658,7 @@ Voer de volgende taken uit om rollen en machtigingen te beheren met de API (Java
 
    * Een `java.lang.String` object dat de rol-id bevat
    * Een array van `java.lang.String` objecten met de belangrijkste id&#39;s.
+
    Als u een rol uit een principal wilt verwijderen, roept u de methode van het `AuthorizationManagerServiceClient` `unassignRole` object aan en geeft u de volgende waarden door:
 
    * Een `java.lang.String` object dat de rol-id bevat.
@@ -661,9 +669,9 @@ Voer de volgende taken uit om rollen en machtigingen te beheren met de API (Java
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[Snel starten (SOAP-modus):Rollen en machtigingen beheren met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
+[Snel starten (SOAP-modus): Rollen en machtigingen beheren met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -687,7 +695,7 @@ Rollen en machtigingen beheren met behulp van de API (webservice) voor machtigin
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -698,6 +706,7 @@ Rollen en machtigingen beheren met behulp van de API (webservice) voor machtigin
 
    * Een `string` object dat de rol-id bevat
    * Een `MyArrayOf_xsd_string` object dat de belangrijkste id&#39;s bevat.
+
    Als u een rol uit een principal wilt verwijderen, roept u de methode van het `AuthorizationManagerServiceService` `unassignRole` object aan en geeft u de volgende waarden door:
 
    * Een `string` object dat de rol-id bevat.
@@ -708,7 +717,7 @@ Rollen en machtigingen beheren met behulp van de API (webservice) voor machtigin
 
 [Overzicht van de stappen](users.md#summary-of-steps)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
 ## Gebruikers verifiëren {#authenticating-users}
 
@@ -716,7 +725,7 @@ In dit onderwerp wordt beschreven hoe u de API (Java) voor verificatiebeheer kun
 
 Mogelijk is gebruikersverificatie vereist voor interactie met een ondernemingsdatabase of andere opslagruimten voor bedrijfsgegevens die beveiligde gegevens opslaan.
 
-Neem bijvoorbeeld een scenario waarin een gebruiker een gebruikersnaam en wachtwoord invoert op een webpagina en de waarden verzendt naar een J2EE-toepassingsserver die als host fungeert voor Forms. Een aangepaste toepassing Forms kan de gebruiker verifiëren met de service Verificatiebeheer.
+Neem bijvoorbeeld een scenario waarin een gebruiker een gebruikersnaam en wachtwoord invoert op een webpagina en de waarden verzendt naar een J2EE-toepassingsserver die als host fungeert voor Forms. Een aangepaste Forms-toepassing kan de gebruiker verifiëren met de service Verificatiebeheer.
 
 Als de authentificatie succesvol is, heeft de toepassing toegang tot een beveiligd ondernemingsgegevensbestand. Anders wordt een bericht naar de gebruiker verzonden waarin wordt aangegeven dat de gebruiker geen geautoriseerde gebruiker is.
 
@@ -760,7 +769,7 @@ Voer de volgende stappen uit om een gebruiker programmatisch te verifiëren:
 1. Inclusief projectbestanden.
 1. Maak een AuthenticationManagerService-client.
 1. Roep de verificatiebewerking aan.
-1. Indien nodig, wint de context terug zodat de cliënttoepassing het aan een andere dienst van Vormen AEM voor authentificatie kan door:sturen.
+1. Indien nodig, wint de context terug zodat de cliënttoepassing het aan een andere dienst van AEM Forms voor authentificatie kan door:sturen.
 
 **Projectbestanden opnemen**
 
@@ -776,11 +785,11 @@ Zodra u de de dienstcliënt hebt gecreeerd, kunt u de authentificatieverrichting
 
 **De verificatiecontext ophalen**
 
-Nadat u de gebruiker hebt geverifieerd, kunt u een context maken op basis van de geverifieerde gebruiker. Vervolgens kunt u de inhoud gebruiken om een andere AEM Forms-service aan te roepen. U kunt de context bijvoorbeeld gebruiken om een PDF-document met een wachtwoord te maken `EncryptionServiceClient` en te versleutelen. Zorg ervoor dat de gebruiker die voor authentiek werd verklaard de genoemde rol heeft `Services User` die wordt vereist om de dienst van Vormen AEM aan te halen.
+Nadat u de gebruiker hebt geverifieerd, kunt u een context maken op basis van de geverifieerde gebruiker. Vervolgens kunt u de inhoud gebruiken om een andere AEM Forms-service aan te roepen. U kunt de context bijvoorbeeld gebruiken om een PDF-document met een wachtwoord te maken `EncryptionServiceClient` en te versleutelen. Zorg ervoor dat de gebruiker die voor authentiek werd verklaard de genoemde rol heeft `Services User` die wordt vereist om de dienst van AEM Forms aan te halen.
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -806,6 +815,7 @@ Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentif
 
    * Een `java.lang.String` object dat de naam van de gebruiker bevat.
    * Een bytearray (een `byte[]` object) met het wachtwoord van de gebruiker. U kunt het `byte[]` object verkrijgen door de `java.lang.String` methode van het `getBytes` object aan te roepen.
+
    De methode authenticate retourneert een `AuthResult` object dat informatie bevat over de geverifieerde gebruiker.
 
 1. Haal de verificatiecontext op.
@@ -820,8 +830,8 @@ Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentif
 
 1. Inclusief projectbestanden.
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Authentificatie verbruikt. (Zie [AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in het [Aanhalen van Vormen AEM gebruikend Codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.)
+   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Authentificatie verbruikt. (Zie AEM Forms [aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in het [Aanhalen van AEM Forms gebruikend Codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.)
 
 1. Maak een AuthenticationManagerService-client.
 
@@ -837,15 +847,15 @@ Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentif
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Gebruikers programmatisch synchroniseren {#programmatically-synchronizing-users}
 
-U kunt gebruikers programmatically synchroniseren door de API van het Beheer van de Gebruiker te gebruiken. Wanneer u gebruikers synchroniseert, werkt u AEM Forms bij met gebruikersgegevens die zich in uw gegevensopslagruimte bevinden. Stel bijvoorbeeld dat u nieuwe gebruikers toevoegt aan de gegevensopslagruimte van uw gebruiker. Nadat u een synchronisatiebewerking hebt uitgevoerd, worden de nieuwe gebruikers gebruikers van AEM-formulieren. Ook gebruikers die niet meer in uw gebruikerslijst staan, worden uit AEM-formulieren verwijderd.
+U kunt gebruikers programmatically synchroniseren door de API van het Beheer van de Gebruiker te gebruiken. Wanneer u gebruikers synchroniseert, werkt u AEM Forms bij met gebruikersgegevens in uw gegevensopslagruimte. Stel bijvoorbeeld dat u nieuwe gebruikers toevoegt aan de gegevensopslagruimte van uw gebruiker. Nadat u een synchronisatiebewerking hebt uitgevoerd, worden de nieuwe gebruikers AEM formuliergebruikers. Ook gebruikers die niet meer in je gebruikerslijst staan, worden uit AEM Forms verwijderd.
 
-In het volgende diagram ziet u hoe AEM-formulieren worden gesynchroniseerd met een gebruikersinterface.
+In het volgende diagram ziet u hoe AEM Forms synchroniseert met een gebruikersinterface.
 
 ![ps_ps_umauth_sync](assets/ps_ps_umauth_sync.png)
 
@@ -910,7 +920,7 @@ Nadat u programmatically een synchronisatieverrichting uitvoert, kunt u bepalen 
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -946,6 +956,6 @@ Gebruikers synchroniseren met de API voor gebruikersbeheer (Java):
 
 [Gebruikers programmatisch synchroniseren](users.md#programmatically-synchronizing-users)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
