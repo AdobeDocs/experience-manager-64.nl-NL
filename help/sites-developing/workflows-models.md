@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2dba11-0d2d-4aed-b941-c8ade9bb7bfa
 translation-type: tm+mt
 source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
+workflow-type: tm+mt
+source-wordcount: '2233'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 93d0bb274c87ecb272583aaf2cb04b0f5df9f4f7
 
 >[!CAUTION]
 >
->Zie de documentatie [van](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html) AEM 6.3 voor informatie over het gebruik van de klassieke interface.
+>Voor gebruik van de klassieke interface raadpleegt u de documentatie [van](https://helpx.adobe.com/experience-manager/6-3/sites-developing/workflows-models.html) AEM 6.3 ter referentie.
 
 U maakt een [workflowmodel](/help/sites-developing/workflows.md#model) om de reeks stappen te definiëren die worden uitgevoerd wanneer een gebruiker de workflow start. U kunt ook modeleigenschappen definiëren, zoals of de workflow van voorbijgaande aard is of meerdere bronnen gebruikt.
 
@@ -29,7 +32,7 @@ Wanneer een gebruiker een workflow start, wordt een instantie gestart; Dit is he
 
 Wanneer u voor het eerst een nieuw workflowmodel maakt, bevat dit model:
 
-* De stappen, het Begin **[!UICONTROL van de]** Stroom en het Eind **[!UICONTROL van de]** Stroom.
+* De stappen **[!UICONTROL Flow Start]** en **[!UICONTROL Flow End]**.
 
    Deze vertegenwoordigen het begin en einde van de workflow. Deze stappen zijn vereist en kunnen niet worden bewerkt of verwijderd.
 
@@ -39,14 +42,14 @@ Wanneer u voor het eerst een nieuw workflowmodel maakt, bevat dit model:
 
 Een nieuwe workflow maken met de editor:
 
-1. Open de console **[!UICONTROL Workflowmodellen]** ; door middel van **[!UICONTROL hulpmiddelen]**, **[!UICONTROL Werkschema]**, **[!UICONTROL Modellen]** of, bijvoorbeeld:
+1. Open de **[!UICONTROL Workflow Models]** console; door middel van **[!UICONTROL Tools]**, **[!UICONTROL Workflow]****[!UICONTROL Models]** of, bijvoorbeeld:
 
    [http://localhost:4502/aem/workflow](http://localhost:4502/aem/workflow)
 
-1. Selecteer **[!UICONTROL Maken]** en vervolgens **[!UICONTROL Model]** maken.
-1. Het dialoogvenster **[!UICONTROL Werkstroommodel]** toevoegen wordt geopend. Voer de **[!UICONTROL titel]** en de **[!UICONTROL naam]** (optioneel) in voordat u **[!UICONTROL Gereed]** selecteert.
-1. Het nieuwe model wordt vermeld in de console van de Modellen van het **[!UICONTROL Werkschema]** .
-1. Selecteer uw nieuwe workflow en gebruik vervolgens [**[!UICONTROL Bewerken ]**om deze te openen voor configuratie](#editing-a-workflow):
+1. Selecteer **[!UICONTROL Create]**, dan **[!UICONTROL Create Model]**.
+1. The **[!UICONTROL Add Workflow Model]** dialog box appears. Voer de **[!UICONTROL Title]** en **[!UICONTROL Name]** (optioneel) in voordat u gaat selecteren **[!UICONTROL Done]**.
+1. Het nieuwe model wordt vermeld in de **[!UICONTROL Workflow Models]** console.
+1. Selecteer uw nieuwe werkschema, dan gebruik [**[!UICONTROL Edit]** om het voor configuratie](#editing-a-workflow)te openen:
 
    ![wf-01](assets/wf-01.png)
 
@@ -70,17 +73,17 @@ U kunt elk bestaand workflowmodel bewerken in:
 
 Het bewerken van een [**standaard- of verouderde **workflow](#editing-a-default-or-legacy-workflow-for-the-first-time)(out-of-the-box) heeft een extra stap om ervoor te zorgen dat er een[veilige kopie](/help/sites-developing/workflows-best-practices.md#locations-workflow-models)wordt gemaakt voordat de wijzigingen worden aangebracht.
 
-Wanneer updates van uw workflow zijn voltooid, moet u **[!UICONTROL Synchroniseren]** gebruiken om een runtimemodel **[!UICONTROL te]** genereren. Zie [Uw workflow](#sync-your-workflow-generate-a-runtime-model) synchroniseren voor meer informatie.
+Wanneer updates van uw werkstroom voltooid zijn, moet u **[!UICONTROL Sync]** aan **[!UICONTROL Generate a Runtime Model]**. Zie [Uw workflow](#sync-your-workflow-generate-a-runtime-model) synchroniseren voor meer informatie.
 
 ### Uw workflow synchroniseren - Een runtimemodel genereren {#sync-your-workflow-generate-a-runtime-model}
 
-**Met Sync** (rechts op de editor-werkbalk) wordt een [runtimemodel](/help/sites-developing/workflows.md#runtime-model)gegenereerd. Het runtimemodel is het model dat daadwerkelijk wordt gebruikt wanneer een gebruiker een workflow start. Als u uw wijzigingen niet **[!UICONTROL synchroniseert]** , zijn de wijzigingen niet beschikbaar tijdens de runtime.
+**Met Sync** (rechts op de editor-werkbalk) wordt een [runtimemodel](/help/sites-developing/workflows.md#runtime-model)gegenereerd. Het runtimemodel is het model dat daadwerkelijk wordt gebruikt wanneer een gebruiker een workflow start. Als u **[!UICONTROL Sync]** uw wijzigingen niet aanbrengt, zijn de wijzigingen niet beschikbaar tijdens de runtime.
 
-Wanneer u (of een andere gebruiker) wijzigingen aanbrengt in de workflow, moet u **[!UICONTROL Synchroniseren]** gebruiken om een runtimemodel te genereren, zelfs wanneer afzonderlijke dialoogvensters (bijvoorbeeld voor stappen) hun eigen opslagopties hebben.
+Wanneer u (of een andere gebruiker) wijzigingen aanbrengt in de workflow, moet u een runtimemodel genereren, zelfs wanneer afzonderlijke dialoogvensters (bijvoorbeeld voor stappen) hun eigen opslagopties hebben. **[!UICONTROL Sync]**
 
-Wanneer de wijzigingen worden gesynchroniseerd met het (opgeslagen) runtimemodel, wordt in plaats daarvan **[!UICONTROL Gesynchroniseerd]** weergegeven.
+Wanneer de wijzigingen worden gesynchroniseerd met het (opgeslagen) runtimemodel, **[!UICONTROL Synched]** wordt dit weergegeven.
 
-Sommige stappen hebben verplichte velden en/of ingebouwde validatie. Wanneer niet aan deze voorwaarden wordt voldaan, wordt een fout weergegeven wanneer u probeert het model te **[!UICONTROL synchroniseren]** . Wanneer bijvoorbeeld geen deelnemer is gedefinieerd voor een stap **[!UICONTROL Deelnemer]** :
+Sommige stappen hebben verplichte velden en/of ingebouwde validatie. Wanneer niet aan deze voorwaarden wordt voldaan, wordt een fout weergegeven wanneer u naar **[!UICONTROL Sync]** het model probeert te gaan. Wanneer bijvoorbeeld geen deelnemer is gedefinieerd voor een **[!UICONTROL Participant]** stap:
 
 ![wf-21](assets/wf-21.png)
 
@@ -88,17 +91,17 @@ Sommige stappen hebben verplichte velden en/of ingebouwde validatie. Wanneer nie
 
 Wanneer u een [standaardmodel en/of verouderd model](/help/sites-developing/workflows.md#workflow-types) opent voor bewerking:
 
-* De **[!UICONTROL Stappen]** browser is niet beschikbaar (linkerkant).
-* De werkbalk bevat een handeling **[!UICONTROL Bewerken]** (rechterkant).
+* De **[!UICONTROL Steps]** browser is niet beschikbaar (links).
+* De werkbalk bevat een **[!UICONTROL Edit]** handeling (rechterkant).
 * In eerste instantie worden het model en de eigenschappen ervan in de modus Alleen-lezen weergegeven als:
 
    * Standaardworkflows bevinden zich in `/libs`
    * Oudere workflows bevinden zich in `/etc`
 
-Als u **[!UICONTROL Bewerken]** selecteert, wordt:
+Selecteren **[!UICONTROL Edit]** zal:
 
 * neem een kopie van de workflow naar `/conf`
-* de browser **[!UICONTROL Stappen]** beschikbaar stellen
+* de **[!UICONTROL Steps]** browser beschikbaar stellen
 * laten u toe om veranderingen aan te brengen
 
 >[!NOTE]
@@ -109,29 +112,30 @@ Als u **[!UICONTROL Bewerken]** selecteert, wordt:
 
 ### Een stap toevoegen aan een model {#adding-a-step-to-a-model}
 
-U moet stappen aan uw model toevoegen om de uit te voeren activiteit te vertegenwoordigen - elke stap voert een specifieke activiteit uit. Een selectie van step-componenten is beschikbaar in een standaard AEM-instantie.
+U moet stappen aan uw model toevoegen om de uit te voeren activiteit te vertegenwoordigen - elke stap voert een specifieke activiteit uit. Een selectie van stapcomponenten is beschikbaar in een standaard AEM instantie.
 
-Wanneer u een model bewerkt, worden de beschikbare stappen weergegeven in de verschillende groepen van de **[!UICONTROL Stappen]** browser. Bijvoorbeeld:
+Wanneer u een model bewerkt, worden de beschikbare stappen weergegeven in de verschillende groepen van de **[!UICONTROL Steps]** browser. Bijvoorbeeld:
 
 ![wf-10](assets/wf-10.png)
 
 >[!NOTE]
 >
->Voor informatie over de primaire stapcomponenten die met AEM worden geïnstalleerd, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
+>Voor informatie over de primaire stapcomponenten die met AEM geïnstalleerd zijn, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
 
 **Een stap toevoegen aan een model**:
 
-1. Open een bestaand workflowmodel voor bewerking. Selecteer in de **[!UICONTROL Workflows Model]** -console het vereiste model en **[!UICONTROL bewerk]** het vervolgens.
-1. Open de **[!UICONTROL Stappen]** browser; met **[!UICONTROL Zijpaneel]** in-/uitschakelen, helemaal links op de bovenste werkbalk. Hier kunt u:
+1. Open een bestaand workflowmodel voor bewerking. Van de **[!UICONTROL Workflows Model]** console, selecteer het vereiste model, dan **[!UICONTROL Edit]**.
+1. Open de **[!UICONTROL Steps]** browser; helemaal links van **[!UICONTROL Toggle Side Panel]** de bovenste werkbalk. Hier kunt u:
 
    * **[!UICONTROL Filter]** voor specifieke stappen.
    * Gebruik de keuzelijst om de selectie te beperken tot een specifieke groep stappen.
    * Selecteer het pictogram Beschrijving tonen ![wf-stepinfo-icon](assets/wf-stepinfo-icon.png) om meer details over de aangewezen stap te tonen.
+
    ![wf-02](assets/wf-02.png)
 
 1. Sleep de desbetreffende stap(en) naar de gewenste locatie in het model.
 
-   Bijvoorbeeld een **[!UICONTROL deelnemersstap]**.
+   Bijvoorbeeld een **[!UICONTROL Participant Step]**.
 
    Nadat het aan de stroom wordt toegevoegd kunt u de stap [](#configuring-a-workflow-step)vormen.
 
@@ -151,17 +155,18 @@ Wanneer u een model bewerkt, worden de beschikbare stappen weergegeven in de ver
 
 ### Een workflowstap configureren {#configuring-a-workflow-step}
 
-U kunt het gedrag van een workflowstap **configureren** en aanpassen met de dialoogvensters **[!UICONTROL Step Properties]** .
+U kunt het gedrag van een workflowstap **configureren** en aanpassen in de **[!UICONTROL Step Properties]** dialoogvensters.
 
-1. U opent als volgt het dialoogvenster **[!UICONTROL Step Properties]** :
+1. U opent als volgt het **[!UICONTROL Step Properties]** dialoogvenster voor een stap:
 
-   * Tik op de stap in het workflowmodel en selecteer **[!UICONTROL Configureren]** op de werkbalk van de component.
+   * Tik op de stap in het workflowmodel en selecteer deze op de werkbalk **[!UICONTROL Configure]** van de component.
    * Dubbelklik op de stap.
+
    >[!NOTE]
    >
-   >Voor informatie over de primaire stapcomponenten die met AEM worden geïnstalleerd, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
+   >Voor informatie over de primaire stapcomponenten die met AEM geïnstalleerd zijn, zie de Verwijzing [van de Stappen van het](/help/sites-developing/workflows-step-ref.md)Werkschema.
 
-1. Configureer desgewenst de **[!UICONTROL stapeigenschappen]** ; Welke eigenschappen beschikbaar zijn, is afhankelijk van het type stap. Er kunnen ook verschillende tabbladen beschikbaar zijn. Bijvoorbeeld, de standaard Stap **[!UICONTROL van de]** Deelnemer, in een nieuw werkschema als `Step 1`:
+1. de **[!UICONTROL Step Properties]** vereiste configuratie; Welke eigenschappen beschikbaar zijn, is afhankelijk van het type stap. Er kunnen ook verschillende tabbladen beschikbaar zijn. De standaardinstelling is bijvoorbeeld **[!UICONTROL Participant Step]** in een nieuwe workflow aanwezig als `Step 1`:
 
    ![wf-11](assets/wf-11.png)
 
@@ -175,37 +180,37 @@ U kunt het gedrag van een workflowstap **configureren** en aanpassen met de dial
 U kunt een [tijdelijk](/help/sites-developing/workflows.md#transient-workflows) workflowmodel maken bij het maken van een nieuw model of door een bestaand model te bewerken:
 
 1. Open het workflowmodel voor [bewerking](#editing-a-workflow).
-1. Selecteer Eigenschappen **[!UICONTROL workflowmodel]** op de werkbalk.
-1. Activeer in het dialoogvenster de **[!UICONTROL tijdelijke workflow]** (of deactiveer indien nodig):
+1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar.
+1. Activeer **[!UICONTROL Transient Workflow]** (of deactiveer desgewenst) in het dialoogvenster:
 
    ![wf-07](assets/wf-07.png)
 
-1. Bevestig de wijziging met **[!UICONTROL Opslaan en sluiten]**. gevolgd door **[!UICONTROL Sync]** (editor toolbar) om het runtimemodel te genereren.
+1. Bevestig de wijziging met **[!UICONTROL Save & Close]**; gevolgd door **[!UICONTROL Sync]** (editor toolbar) om het runtimemodel te genereren.
 
    Zie [Uw workflow](#sync-your-workflow-generate-a-runtime-model) synchroniseren voor meer informatie.
 
 >[!NOTE]
 >
->Wanneer u een workflow uitvoert in de modus [transient](/help/sites-developing/workflows.md#transient-workflows) , slaat AEM geen workflowhistorie op. Daarom wordt in de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) geen informatie over die workflow weergegeven. [](/help/sites-authoring/basic-handling.md#timeline)
+>Wanneer u een workflow uitvoert in de modus [Overgang](/help/sites-developing/workflows.md#transient-workflows) , slaat AEM geen historie van de workflow op. Daarom wordt in de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) geen informatie over die workflow weergegeven. [](/help/sites-authoring/basic-handling.md#timeline)
 
 ### Workflowmodellen beschikbaar stellen in Touch UI {#make-workflow-models-available-in-touchui}
 
-Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontbreekt in het pop-upmenu Selectie in de **[!UICONTROL tijdlijntrack]** van de aanraakinterface, volgt u de configuratie om het beschikbaar te maken. De volgende stappen illustreren het gebruik van het workflowmodel met de naam **[!UICONTROL Verzoek om activering]**.
+Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontbreekt in het pop-upmenu voor selectie in de **[!UICONTROL Timeline]** Touch-gebruikersinterface, volgt u de configuratie om het beschikbaar te maken. De volgende stappen illustreren het gebruiken van het geroepen werkschemamodel **[!UICONTROL Request for Activation]**.
 
-1. Bevestig dat het model niet beschikbaar is in een interface met aanraakbediening. Een element openen met `/assets.html/content/dam` pad. Selecteer een element. Open **[!UICONTROL tijdlijn]** in linkerraster. Klik op Workflow **** starten en bevestig dat het model **[!UICONTROL Verzoek om activering]** niet aanwezig is in de keuzelijst.
+1. Bevestig dat het model niet beschikbaar is in een interface met aanraakbediening. Een element openen met `/assets.html/content/dam` pad. Selecteer een element. Openen **[!UICONTROL Timeline]** in linkerspoor. Klik **[!UICONTROL Start Workflow]** en bevestig dat het **[!UICONTROL Request for Activation]** model niet aanwezig is in de popup lijst.
 
-1. Navigeer door **[!UICONTROL Gereedschappen > Algemeen > Tags]**. Selecteer **[!UICONTROL Workflow]**.
+1. Navigeer door **[!UICONTROL Tools > General > Tagging]**. Selecteer **[!UICONTROL Workflow]**.
 
-1. Selecteer **[!UICONTROL Maken > Tag]** maken. Stel **[!UICONTROL Titel]** in op `DAM` en **[!UICONTROL Naam]** op `dam`. Selecteer **[!UICONTROL Verzenden]**.
+1. Selecteer **[!UICONTROL Create > Create Tag]**. Instellen **[!UICONTROL Title]** als `DAM` en **[!UICONTROL Name]** als `dam`. Selecteer **[!UICONTROL Submit]**.
    ![Tag maken in workflowmodel](assets/workflow_create_tag.png)
 
-1. Ga naar **[!UICONTROL Gereedschappen > Workflow > Modellen]**. Selecteer **[!UICONTROL Verzoek om activering]** en selecteer vervolgens **[!UICONTROL Bewerken]**.
+1. Ga naar **[!UICONTROL Tools > Workflow > Models]**. Selecteer **[!UICONTROL Request for Activation]** en selecteer vervolgens **[!UICONTROL Edit]**.
 
-1. Selecteer **[!UICONTROL Bewerken]** en open vervolgens Eigenschappen **[!UICONTROL workflowmodel]**. Ga naar het tabblad **[!UICONTROL Standaard]** .
+1. Selecteer **[!UICONTROL Edit]** , open dan **[!UICONTROL Workflow Model Properties]**. Go to the **[!UICONTROL Basic]** tab.
 
-1. Toevoegen `Workflow : DAM` aan veld **[!UICONTROL Tags]** . Bevestig de selectie met de controle (kruis).
+1. Toevoegen `Workflow : DAM` aan **[!UICONTROL Tags]** veld. Bevestig de selectie met de controle (kruis).
 
-1. Bevestig de toevoeging van de tag met **[!UICONTROL Opslaan en sluiten]**.
+1. Bevestig de toevoeging van de tag met **[!UICONTROL Save & Close]**.
    ![Pagina-eigenschappen van model bewerken](assets/workflow_model_edit_activation1.png)
 
 1. Voltooi het proces met **[!UICONTROL Sync]**. De workflow is nu beschikbaar in de interface voor aanraakbediening.
@@ -215,13 +220,13 @@ Als een workflowmodel aanwezig is in de klassieke gebruikersinterface, maar ontb
 U kunt een workflowmodel configureren voor [Multi Resource Support](/help/sites-developing/workflows.md#multi-resource-support) bij het maken van een nieuw model of door een bestaand model te bewerken:
 
 1. Open het workflowmodel voor [bewerking](#editing-a-workflow).
-1. Selecteer Eigenschappen **[!UICONTROL workflowmodel]** op de werkbalk.
+1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar.
 
-1. Activeer in het dialoogvenster **[!UICONTROL Ondersteuning]** voor meerdere bronnen (of deactiveer indien nodig):
+1. Activeer **[!UICONTROL Multi Resource Support]** (of deactiveer desgewenst) in het dialoogvenster:
 
    ![wf-08](assets/wf-08.png)
 
-1. Bevestig de wijziging met **[!UICONTROL Opslaan en sluiten]**. gevolgd door **[!UICONTROL Sync]** (editor toolbar) om het runtimemodel te genereren.
+1. Bevestig de wijziging met **[!UICONTROL Save & Close]**; gevolgd door **[!UICONTROL Sync]** (editor toolbar) om het runtimemodel te genereren.
 
    Zie [Uw workflow](#sync-your-workflow-generate-a-runtime-model) synchroniseren voor meer informatie.
 
@@ -231,21 +236,21 @@ U kunt een workflowmodel configureren voor [Multi Resource Support](/help/sites-
 
 >[!CAUTION]
 >
->Als werkstroomfasen zijn gedefinieerd in **[!UICONTROL Pagina-eigenschappen]**, maar niet worden gebruikt voor werkstroomstappen, wordt op de voortgangsbalk geen voortgang weergegeven (ongeacht de huidige werkstroomstap).
+>Als werkstroomfasen zijn gedefinieerd in **[!UICONTROL Page Properties]**, maar niet worden gebruikt voor een van de werkstroomstappen, wordt op de voortgangsbalk geen voortgang weergegeven (ongeacht de huidige werkstroomstap).
 
 De stadia die beschikbaar moeten zijn, worden gedefinieerd in de workflowmodellen; bestaande workflowmodellen kunnen worden bijgewerkt met werkgebieddefinities. U kunt een willekeurig aantal fasen voor het workflowmodel definiëren.
 
-U definieert als volgt **[!UICONTROL fasen]** voor uw workflow:
+U definieert als volgt **[!UICONTROL Stages]** voor uw workflow:
 
 1. Open uw workflowmodel voor bewerking.
-1. Selecteer Eigenschappen **[!UICONTROL workflowmodel]** op de werkbalk. Open vervolgens het tabblad **[!UICONTROL Staven]** .
-1. Voeg de gewenste **[!UICONTROL stappen]** toe (en plaats deze). U kunt een willekeurig aantal fasen voor het workflowmodel definiëren.
+1. Select **[!UICONTROL Workflow Model Properties]** from the toolbar. Open vervolgens het **[!UICONTROL Stages]** tabblad.
+1. Voeg uw vereiste gegevens toe (en plaats deze) **[!UICONTROL Stages]**. U kunt een willekeurig aantal fasen voor het workflowmodel definiëren.
 
    Bijvoorbeeld:
 
    ![wf-08-1](assets/wf-08-1.png)
 
-1. Klik op **[!UICONTROL Opslaan en sluiten]** om de eigenschappen op te slaan.
+1. Klik **[!UICONTROL Save & Close]** om de eigenschappen op te slaan.
 1. Wijs een werkgebied aan elk van de stappen in het werkschemamodel toe. Bijvoorbeeld:
 
    ![wf-09](assets/wf-09.png)
@@ -269,31 +274,31 @@ U definieert als volgt **[!UICONTROL fasen]** voor uw workflow:
 
 1. Een nieuw pakket maken met [Pakketbeheer](/help/sites-administering/package-manager.md#package-manager):
 
-   1. Navigeer aan de Manager van het Pakket door middel van **[!UICONTROL Hulpmiddelen]**, **[!UICONTROL Plaatsing]**, **[!UICONTROL Pakketten]**.
-   1. Klik op Pakket **** maken.
-   1. Geef de **[!UICONTROL pakketnaam]** op en geef desgewenst andere gegevens op.
-   1. Click **[!UICONTROL OK]**.
+   1. Navigeer aan de Manager van het Pakket als **[!UICONTROL Tools]**, **[!UICONTROL Deployment]**, **[!UICONTROL Packages]**.
+   1. Klik op **[!UICONTROL Create Package]**.
+   1. Geef de **[!UICONTROL Package Name]** gegevens en eventuele andere gegevens op.
+   1. Klik op **[!UICONTROL OK]**.
 
-1. Klik op **[!UICONTROL Bewerken]** op de werkbalk van het nieuwe pakket.
+1. Klik op **[!UICONTROL Edit]** de werkbalk van het nieuwe pakket.
 
-1. Open het tabblad **[!UICONTROL Filters]** .
+1. Open het **[!UICONTROL Filters]** tabblad.
 
-1. Selecteer Filter **** toevoegen en geef het pad van het *ontwerp* van het workflowmodel op:
+1. Selecteer **[!UICONTROL Add Filter]** en geef het pad van het *ontwerp* van het workflowmodel op:
 
    `/conf/global/settings/workflow/models/<*your-model-name*>`
 
-   Klik op **[!UICONTROL Gereed]**.
+   Klik op **[!UICONTROL Done]**.
 
-1. Selecteer Filter **** toevoegen en geef het pad van het workflowmodel voor de *runtime* op:
+1. Selecteer **[!UICONTROL Add Filter]** en geef het pad van het workflowmodel van de *runtime* op:
 
    `/var/workflow/models/<*your-model-name*>`
 
-   Klik op **[!UICONTROL Gereed]**.
+   Klik op **[!UICONTROL Done]**.
 
 1. Voeg extra filters toe voor om het even welke douanescripts die door uw model worden gebruikt.
-1. Klik op **[!UICONTROL Opslaan]** om uw filterdefinities te bevestigen.
-1. Selecteer **[!UICONTROL Samenstellen]** op de werkbalk van de pakketdefinitie.
-1. Selecteer **[!UICONTROL Downloaden]** op de pakketwerkbalk.
+1. Klik **[!UICONTROL Save]** om uw filterdefinities te bevestigen.
+1. Selecteer een optie **[!UICONTROL Build]** op de werkbalk van de pakketdefinitie.
+1. Selecteer **[!UICONTROL Download]** de pakketwerkbalk.
 
 ## Workflows gebruiken om formulierverzendingen te verwerken {#using-workflows-to-process-form-submissions}
 
@@ -302,9 +307,9 @@ U kunt een formulier configureren voor verwerking door de geselecteerde workflow
 U configureert als volgt de workflow die met het formulier moet worden gebruikt:
 
 1. Maak een nieuwe pagina en open deze voor bewerking.
-1. Voeg een **[!UICONTROL component Form]** aan de pagina toe.
-1. Configureer de **[!UICONTROL component Start]** van formulier die op de pagina werd weergegeven.
-1. Gebruik **[!UICONTROL Start Workflow]** om de gewenste workflow te kiezen uit de beschikbare workflows:
+1. Voeg een **[!UICONTROL Form]** component aan de pagina toe.
+1. Configureer de **[!UICONTROL Form Start]** component die op de pagina werd weergegeven.
+1. Kies **[!UICONTROL Start Workflow]** de gewenste workflow uit de beschikbare opties:
 
    ![wf-12](assets/wf-12.png)
 
@@ -317,12 +322,12 @@ Het is een goede praktijk wanneer het testen van een werkschema om een verscheid
 Test bijvoorbeeld de nieuwe workflow als volgt:
 
 1. [Start uw workflowmodel](/help/sites-administering/workflows-starting.md) vanaf de console.
-1. Bepaal de **[!UICONTROL Payload]** en bevestig.
+1. Definieer het **[!UICONTROL Payload]** en bevestig het bestand.
 
 1. Voer de vereiste handelingen uit zodat de workflow doorgaat.
 1. Controleer de logbestanden terwijl de workflow wordt uitgevoerd.
 
-U kunt AEM ook configureren om **[!UICONTROL FOUTOPSPORING]** -berichten weer te geven in de logbestanden. Zie [Logging](/help/sites-deploying/configure-logging.md) voor verdere informatie en wanneer de ontwikkeling wordt gebeëindigd, plaats het Niveau **[!UICONTROL van het]** Logboek terug naar **[!UICONTROL Info]**.
+U kunt ook AEM configureren om **[!UICONTROL DEBUG]** berichten in de logbestanden weer te geven. Zie [Logging](/help/sites-deploying/configure-logging.md) voor verdere informatie en wanneer de ontwikkeling wordt gebeëindigd, plaats de **[!UICONTROL Log Level]** terug aan **[!UICONTROL Info]**.
 
 ## Voorbeelden {#examples}
 
@@ -334,25 +339,26 @@ In het volgende voorbeeld wordt een variatie in de `Publish Example` workflow ge
 
    De nieuwe workflow bevat:
 
-   * **[!UICONTROL Stroom starten]**
+   * **[!UICONTROL Flow Start]**
    * `Step 1`
-   * **[!UICONTROL Einde stroom]**
+   * **[!UICONTROL Flow End]**
 
 1. Verwijderen `Step 1` (omdat dit het verkeerde staptype is voor dit voorbeeld):
 
-   * Klik op de stap en selecteer **[!UICONTROL Verwijderen]** in de werkbalk van de component. Bevestig de handeling.
+   * Klik op de stap en selecteer deze in de **[!UICONTROL Delete]** werkbalk van de component. Bevestig de handeling.
 
-1. Sleep vanuit de **[!UICONTROL workflowselectie]** van de stappenbrowser een stap **[!UICONTROL voor de]** deelnemer naar de workflow en plaats deze tussen **[!UICONTROL Stroombegin]** en **[!UICONTROL Stroomeinde*]*.
+1. Sleep vanuit de **[!UICONTROL Workflow]** selectie van de stappenbrowser een bestand **[!UICONTROL Participant Step]** naar de workflow en plaats het tussen **[!UICONTROL Flow Start]** en **[!UICONTROL Flow End*]*.
 1. U opent als volgt het dialoogvenster Eigenschappen:
 
-   * Klik op de deelnemersstap en selecteer **[!UICONTROL Vorm]** van de componententoolbar.
+   * Klik op de deelnemersstap en selecteer deze op de **[!UICONTROL Configure]** werkbalk van de component.
    * Dubbelklik op de stap voor deelnemers.
 
-1. Voer op het tabblad **[!UICONTROL Algemeen]** zowel `Validate Content` de **[!UICONTROL titel]** als de **[!UICONTROL beschrijving]** in.
-1. Open het tabblad **[!UICONTROL Gebruiker/Groep]** :
+1. Voer op het **[!UICONTROL Common]** tabblad `Validate Content` voor zowel de **[!UICONTROL Title]** als **[!UICONTROL Description]**.
+1. Open het **[!UICONTROL User/Group]** tabblad:
 
-   * Activeer **[!UICONTROL Bericht per e-mail]**.
-   * Selecteer `Administrator` ( `admin`) voor het veld **[!UICONTROL Gebruiker/Groep]** .
+   * Activeer **[!UICONTROL Notify user via email]**.
+   * Selecteer `Administrator` ( `admin`) voor het **[!UICONTROL User/Group]** veld.
+
    >[!NOTE]
    >
    >De gegevens van [de mailservice en gebruikersaccount moeten geconfigureerd](/help/sites-administering/notification.md)zijn voor het verzenden van e-mails.
@@ -361,27 +367,27 @@ In het volgende voorbeeld wordt een variatie in de `Publish Example` workflow ge
 
    U wordt teruggestuurd naar het overzicht van het workflowmodel, waar de naam van de deelnemer is gewijzigd in `Validate Content`.
 
-1. Sleep een **[!UICONTROL of gesplitst]** naar de werkstroom en plaats deze tussen `Validate Content` en **[!UICONTROL stroomeinde]**.
-1. Open de **[!UICONTROL of gesplitst]** voor configuratie.
+1. Sleep een **[!UICONTROL Or Split]** element naar de werkstroom en plaats deze tussen `Validate Content` en **[!UICONTROL Flow End]**.
+1. Open het bestand **[!UICONTROL Or Split]** voor configuratie.
 1. Configureren:
 
-   * **[!UICONTROL Vaak]**: selecteren **[!UICONTROL 2 vertakkingen]**
-   * **[!UICONTROL Tak 1]**: Selecteer **[!UICONTROL StandaardRoute]**.
-   * **[!UICONTROL Tak 2]**: verzekert **[!UICONTROL StandaardRoute]** niet wordt geselecteerd.
+   * **[!UICONTROL Common]**: select **[!UICONTROL 2 Branches]**
+   * **[!UICONTROL Branch 1]**: select **[!UICONTROL Default Route]**.
+   * **[!UICONTROL Branch 2]**: ervoor zorgen **[!UICONTROL Default Route]** dat deze niet is geselecteerd.
 
-1. Bevestig uw updates voor de **[!UICONTROL OR-splitsing]**.
-1. Sleep een Stap **[!UICONTROL van de]** Deelnemer aan de linkertak, open de eigenschappen, specificeer de volgende waarden, dan bevestig de veranderingen:
+1. Bevestig uw updates aan de **[!UICONTROL OR Split]**.
+1. Sleep een **[!UICONTROL Participant Step]** naar de linkervertakking, open de eigenschappen, geef de volgende waarden op en bevestig de wijzigingen:
 
-   * **[!UICONTROL Titel]**: `Reject Publish Request`
-   * **[!UICONTROL Gebruiker/groep]**: bijvoorbeeld: `projects-administrators`
-   * **[!UICONTROL Gebruikers via e-mail]** op de hoogte stellen: Activeer deze functie om de gebruiker per e-mail op de hoogte te stellen.
+   * **[!UICONTROL Title]**: `Reject Publish Request`
+   * **[!UICONTROL User/Group]**: bijvoorbeeld: `projects-administrators`
+   * **[!UICONTROL Notify user via email]**: Activeer deze functie om de gebruiker per e-mail op de hoogte te stellen.
 
-1. Sleep een Stap **[!UICONTROL van het]** Proces aan de juiste tak, open de eigenschappen, specificeer de volgende waarden, dan bevestig de veranderingen:
+1. Sleep een **[!UICONTROL Process Step]** naar de rechtervertakking, open de eigenschappen, geef de volgende waarden op en bevestig de wijzigingen:
 
-   * **[!UICONTROL Titel]**: `Publish Page as Requested`
-   * **[!UICONTROL Proces]**: selecteren `Activate Page`. Dit proces publiceert de geselecteerde pagina naar de uitgeversinstanties.
+   * **[!UICONTROL Title]**: `Publish Page as Requested`
+   * **[!UICONTROL Process]**: select `Activate Page`. Dit proces publiceert de geselecteerde pagina naar de uitgeversinstanties.
 
-1. Klik op **[!UICONTROL Synchroniseren]** (editor-werkbalk) om het runtimemodel te genereren.
+1. Klik op **[!UICONTROL Sync]** (editor-werkbalk) om het runtimemodel te genereren.
 
    Zie [Uw workflow](#sync-your-workflow-generate-a-runtime-model) synchroniseren voor meer informatie.
 
@@ -389,13 +395,13 @@ In het volgende voorbeeld wordt een variatie in de `Publish Example` workflow ge
 
    ![wf-13](assets/wf-13.png)
 
-1. Pas deze workflow toe op de pagina, zodat gebruikers die de stap Inhoud **** valideren **[!UICONTROL voltooien]** , kunnen kiezen of ze de pagina willen **[!UICONTROL publiceren zoals gevraagd]** of de publicatieaanvraag **[!UICONTROL willen]** afwijzen.
+1. Pas deze workflow toe op de pagina, zodat gebruikers die naar **[!UICONTROL Complete]** de **[!UICONTROL Validate Content]** stap gaan, kunnen kiezen of ze **[!UICONTROL Publish Page as Requested]** of **[!UICONTROL Reject Publish Request]**.
 
    ![chlimage_1-182](assets/chlimage_1-182.png)
 
 ### Voorbeeld: Een regel definiëren voor een OR-splitsing {#example-defining-a-rule-for-an-or-split}
 
-**[!UICONTROL OF Met de stappen Splitsen]** kunt u voorwaardelijke verwerkingspaden in uw workflow introduceren.
+**[!UICONTROL OR Split]** Met de stappen kunt u voorwaardelijke verwerkingspaden in uw workflow opnemen.
 
 Een OR-regel definiëren:
 
@@ -407,24 +413,24 @@ Een OR-regel definiëren:
    >
    >De scripts moeten een [functie hebben `check()`](#function-check) die een Booleaanse waarde retourneert.
 
-1. Bewerk de workflow en voeg de **[!UICONTROL OR-splitsing]** toe aan het model.
-1. Bewerk de eigenschappen van **[!UICONTROL vertakking 1]** van de **[!UICONTROL OR-splitsing]**:
+1. Bewerk de workflow en voeg de code toe **[!UICONTROL OR Split]** aan het model.
+1. Bewerk de eigenschappen van **[!UICONTROL Branch 1]** de **[!UICONTROL OR Split]**:
 
-   * Bepaal dit als **[!UICONTROL StandaardRoute]** door de **[!UICONTROL Waarde]** te plaatsen aan `true`.
-   * Als **[!UICONTROL Regel]**, plaats de weg aan het manuscript. Bijvoorbeeld:
+   * Definieer dit als de **[!UICONTROL Default Route]** voorinstelling door de waarde **[!UICONTROL Value]** in te stellen op `true`.
+   * Stel het pad **[!UICONTROL Rule]** in op het script. Bijvoorbeeld:
 
       `/apps/myapp/workflow/scripts/myscript1.ecma`
    >[!NOTE]
    >
    >U kunt de vertakkingsvolgorde desgewenst wijzigen.
 
-1. Bewerk de eigenschappen van **[!UICONTROL vertakking 2]** van de **[!UICONTROL OR-splitsing]**.
+1. Bewerk de eigenschappen van de **[!UICONTROL Branch 2]** van de **[!UICONTROL OR Split]**.
 
-   * Als **[!UICONTROL Regel]**, plaats de weg aan het andere manuscript. Bijvoorbeeld:
+   * Stel het pad **[!UICONTROL Rule]** in op het andere script. Bijvoorbeeld:
 
       `/apps/myapp/workflow/scripts/myscript2.ecma`
 
-1. Stel de eigenschappen van de afzonderlijke stappen in elke vertakking in. Controleer of de **[!UICONTROL gebruiker/groep]** is ingesteld.
+1. Stel de eigenschappen van de afzonderlijke stappen in elke vertakking in. Zorg ervoor dat het **[!UICONTROL User/Group]** is ingesteld.
 1. Klik op **Synchroniseren** (editor-werkbalk) om uw wijzigingen in het runtimemodel voort te zetten.
 
    Zie [Uw workflow](#sync-your-workflow-generate-a-runtime-model) synchroniseren voor meer informatie.
@@ -458,4 +464,4 @@ function check() {
 
 U kunt om het even welke uit-van-de-doos workflows aanpassen. Voor aangepast gedrag bedekt u de details van de juiste workflow.
 
-Bijvoorbeeld **[!UICONTROL Verzoek om activering]**. Deze workflow wordt gebruikt voor het publiceren van pagina&#39;s binnen **[!UICONTROL sites]** en wordt automatisch geactiveerd wanneer een auteur van inhoud niet de juiste replicatierechten heeft. Zie [Paginaontwerp aanpassen - De activeringsaanvraag](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) aanpassen voor meer informatie.
+Bijvoorbeeld, **[!UICONTROL Request for Activation]**. Deze workflow wordt gebruikt voor het publiceren van pagina&#39;s binnen **[!UICONTROL Sites]** en wordt automatisch geactiveerd wanneer een auteur van inhoud niet de juiste replicatierechten heeft. Zie [Paginaontwerp aanpassen - De activeringsaanvraag](/help/sites-developing/customizing-page-authoring-touch.md#customizing-the-request-for-activation-workflow) aanpassen voor meer informatie.
