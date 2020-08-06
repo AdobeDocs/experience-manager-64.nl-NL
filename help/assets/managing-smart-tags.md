@@ -7,6 +7,9 @@ contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
 translation-type: tm+mt
 source-git-commit: 7771cbb218d80247f65e92cbe7e8cdfd9720b75e
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 2%
 
 ---
 
@@ -20,16 +23,16 @@ Als u slimme tags modereert, kunt u zoekopdrachten op basis van tags naar afbeel
 U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan ten opzichte van een afbeelding te vergroten. Door een tag voor een afbeelding te promoten, neemt de kans toe dat de afbeelding in de zoekresultaten wordt weergegeven wanneer een zoekopdracht op basis van de desbetreffende tag wordt uitgevoerd.
 
 1. Zoek in het vak Universeel zoeken naar elementen op basis van een tag.
-1. Controleer de zoekresultaten om een afbeelding te identificeren die u niet relevant vindt voor uw zoekopdracht.
-1. Selecteer de afbeelding en klik/tik op het pictogram **[!UICONTROL Codes]** beheren op de werkbalk.
-1. Controleer de tags op de pagina **[!UICONTROL Codes]** beheren. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifiek label, selecteert u het label en klikt of tikt u op het pictogram **[!UICONTROL Verwijderen]** op de werkbalk. U kunt ook op het symbool (**[!UICONTROL X]**) naast het label klikken of tikken.
-1. Als u een hogere rangorde aan een tag wilt toewijzen, selecteert u de tag en klikt of tikt u op het pictogram **[!UICONTROL Promote]** op de werkbalk. Het label dat u wilt promoten, wordt verplaatst naar de sectie **[!UICONTROL Codes]** .
-1. Klik op **[!UICONTROL Opslaan]** of tik op Opslaan en klik vervolgens op **[!UICONTROL OK]** of tik op OK om het dialoogvenster Succes te sluiten.
+1. Inspect de zoekresultaten om een afbeelding te identificeren die je niet relevant vindt voor je zoekopdracht.
+1. Select the image, and then click/tap the **[!UICONTROL Manage Tags]** icon from the toolbar.
+1. Controleer de tags op de **[!UICONTROL Manage Tags]** pagina. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifieke tag, selecteert u de tag en klikt of tikt u op het **[!UICONTROL Delete]** pictogram op de werkbalk. U kunt ook op het symbool (**[!UICONTROL X]**) naast het label klikken of tikken.
+1. Als u een hogere rangorde aan een tag wilt toewijzen, selecteert u de tag en klikt of tikt u op het **[!UICONTROL Promote]** pictogram op de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
+1. Klik of tik op **[!UICONTROL Save]** en klik of tik vervolgens op **[!UICONTROL OK]** om het dialoogvenster Succes te sluiten.
 1. Navigeer naar de pagina met eigenschappen voor de afbeelding. Let erop dat de tag die u hebt bevorderd een grote relevantie krijgt en daarom hoger wordt weergegeven in de zoekresultaten.
 
-## AEM-zoekresultaten begrijpen met slimme tags {#understand-search-results-with-smart-tags}
+## AEM zoekresultaten begrijpen met slimme tags {#understand-search-results-with-smart-tags}
 
-Standaard combineert AEM-zoekopdrachten de zoektermen met een `AND` component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR` component toe om te zoeken naar zoektermen in de lijst, worden slimme tags toegepast. Kijk bijvoorbeeld naar zoeken `woman running`. Elementen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met slimme tags `woman` `running` of met slimme tags, wordt echter weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Standaard combineert AEM zoekopdracht de zoektermen met een `AND` component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR` component toe om te zoeken naar zoektermen in de lijst, worden slimme tags toegepast. For example, consider searching for `woman running`. Elementen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met slimme tags `woman` `running` of met slimme tags, wordt echter weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
 
 * elementen met zowel trefwoorden `woman` als `running` metagegevens.
 * elementen die zijn gelabeld met een van de trefwoorden.
