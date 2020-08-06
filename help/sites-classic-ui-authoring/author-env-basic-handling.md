@@ -1,8 +1,8 @@
 ---
 title: Basisbewerkingen
 seo-title: Basisbewerkingen
-description: Een overzicht van de basisafhandeling bij gebruik van de AEM-auteuromgeving. Het gebruikt de console van Plaatsen als basis.
-seo-description: Een overzicht van de basisafhandeling bij gebruik van de AEM-auteuromgeving. Het gebruikt de console van Plaatsen als basis.
+description: Een overzicht van basisbehandeling wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de console van Plaatsen als basis.
+seo-description: Een overzicht van basisbehandeling wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de console van Plaatsen als basis.
 uuid: ab488d7c-7b7f-4a23-a80c-99d37ac84246
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9737ead9-e324-43c9-9780-7abd292f4e5b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1215'
+ht-degree: 2%
 
 ---
 
@@ -19,11 +22,12 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->* Deze pagina is ontworpen om een overzicht van basisbehandeling te geven wanneer het gebruiken van het auteursmilieu van AEM. Het gebruikt de console van **Plaatsen** als basis.
+>* Deze pagina is ontworpen om een overzicht van basisbehandeling te geven wanneer het gebruiken van het AEM auteursmilieu. Het gebruikt de console van **Plaatsen** als basis.
    >
    >
 * Bepaalde functionaliteit is niet in alle consoles beschikbaar en/of in sommige consoles is aanvullende functionaliteit beschikbaar. Specifieke informatie over de afzonderlijke consoles en de bijbehorende functionaliteit zal op andere pagina&#39;s nader worden besproken.
->* Sneltoetsen zijn beschikbaar in AEM. Met name bij het [gebruik van consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en het [bewerken van pagina](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)&#39;s.
+>* Sneltoetsen zijn beschikbaar in alle AEM. Met name bij het [gebruik van consoles](/help/sites-classic-ui-authoring/author-env-keyboard-shortcuts.md) en het [bewerken van pagina](/help/sites-classic-ui-authoring/classic-page-author-keyboard-shortcuts.md)&#39;s.
+
 >
 
 
@@ -32,7 +36,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 De klassieke UI verstrekt een selectie van consoles, die bekende mechanismen gebruiken om te navigeren en acties in werking te stellen, met inbegrip van klik, tweemaal klikken en [contextmenu](#context-menus).
 
-Op login zal het Welkome scherm worden getoond, verstrekt dit een lijst van verbindingen aan consoles en de diensten:
+Bij aanmelding wordt het welkomstscherm weergegeven, met een lijst koppelingen naar consoles en services:
 
 ![screen_shot_2012-01-30at61745pm](assets/screen_shot_2012-01-30at61745pm.png)
 
@@ -48,11 +52,11 @@ De belangrijkste consoles zijn:
   </tr> 
   <tr> 
    <td><strong>Welkom</strong></td> 
-   <td>Geeft een overzicht en directe toegang (via koppelingen) tot de hoofdfunctionaliteit van AEM.</td> 
+   <td>Biedt een overzicht en directe toegang (via koppelingen) tot de hoofdfunctionaliteit van AEM.</td> 
   </tr> 
   <tr> 
    <td><strong>Digitale middelen</strong><br /> </td> 
-   <td>Met deze consoles kunt u digitale elementen <a href="/help/sites-classic-ui-authoring/classicui-assets.md">zoals afbeeldingen, video's, documenten en audiobestanden importeren en</a> beheren. Deze elementen kunnen vervolgens worden gebruikt door elke website die op dezelfde AEM-instantie wordt uitgevoerd. </td> 
+   <td>Met deze consoles kunt u digitale elementen <a href="/help/sites-classic-ui-authoring/classicui-assets.md">zoals afbeeldingen, video's, documenten en audiobestanden importeren en</a> beheren. Deze elementen kunnen vervolgens worden gebruikt door elke website die op hetzelfde AEM wordt uitgevoerd. </td> 
   </tr> 
   <tr> 
    <td><strong>Lanceringen</strong></td> 
@@ -68,7 +72,7 @@ De belangrijkste consoles zijn:
   </tr> 
   <tr> 
    <td><strong>Opties</strong></td> 
-   <td>De consoles <a href="/help/sites-administering/tools-consoles.md">van</a> Hulpmiddelen verlenen toegang tot een aantal gespecialiseerde hulpmiddelen en consoles die u helpen uw websites, digitale activa en andere aspecten van uw inhoudsbewaarplaats beheren.</td> 
+   <td>The <a href="/help/sites-administering/tools-consoles.md">Tools consoles</a> provide access to a number of specialized tools and consoles that help you administer your websites, digital assets and other aspects of your content repository.</td> 
   </tr> 
   <tr> 
    <td><strong>Gebruikers</strong></td> 
@@ -180,8 +184,8 @@ Het volgende is beschikbaar: een subset van deze velden wordt standaard weergege
    <td>Geeft aan of de pagina is gewijzigd en geeft de wijzigingsdatum en -tijd weer. Als u wijzigingen wilt opslaan, moet u de pagina activeren.</td> 
   </tr> 
   <tr> 
-   <td>Scene7 publiceren</td> 
-   <td>Wijst erop of de pagina aan Scene7 is gepubliceerd.<br /> </td> 
+   <td>Scene7 Publiceren</td> 
+   <td>Geeft aan of de pagina is gepubliceerd naar Scene7.<br /> </td> 
   </tr> 
   <tr> 
    <td>Status</td> 
