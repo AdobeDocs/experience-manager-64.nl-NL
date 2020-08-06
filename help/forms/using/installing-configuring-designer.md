@@ -12,6 +12,9 @@ discoiquuid: 36560809-dba9-49cf-a8ee-23c6766382ef
 noindex: true
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '165'
+ht-degree: 47%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld met WorkBench. Voer de volgende stappen uit als u een zelfstandig installatieprogramma voor Designer gebruikt:
 
-1. Neem contact op met de Technische Ondersteuning van Adobe om het installatieprogramma van Designer te downloaden.
+1. Neem contact op met de ondersteuning van Adobe om het installatieprogramma van Designer te downloaden.
 
    >[!NOTE]
    >
@@ -29,7 +32,7 @@ Designer is beschikbaar als zelfstandig installatieprogramma en is ook gebundeld
 1. Start het Designer-installatieprogramma door te dubbelklikken op setup.exe.
 1. Ga verder en geef uw details en het serienummer op het scherm Personaliseren op.
 1. Als u de licentieovereenkomst wilt accepteren, klikt u op Volgende om door te gaan.
-1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een andere locatie wilt installeren. Klik op Volgende.
+1. (Optioneel) Wijzig het standaardinstallatiepad als u Designer op een andere locatie wilt installeren. Klik op Next.
 1. Klik op Vorige als u voorkeuren wilt wijzigen. Klik op Installeren om Designer te installeren.
 1. Klik na de installatie op Voltooien.
 
