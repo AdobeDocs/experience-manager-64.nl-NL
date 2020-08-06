@@ -12,25 +12,28 @@ topic-tags: operations
 discoiquuid: e23de3c3-f8a0-459f-801e-a0942fb1c6aa
 translation-type: tm+mt
 source-git-commit: 4602c684ccea9a7f45c4d7eda2f2be25707ca1b3
+workflow-type: tm+mt
+source-wordcount: '1652'
+ht-degree: 0%
 
 ---
 
 
-# Documenten doorgeven aan de Forms Service {#passing-documents-to-the-formsservice}
+# Documenten doorgeven aan de Forms-service {#passing-documents-to-the-formsservice}
 
-Met de AEM Forms-service worden interactieve PDF-formulieren weergegeven op clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. Een interactief PDF-formulier is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. Vanaf AEM Forms kunt u een `com.adobe.idp.Document` object met het formulierontwerp doorgeven aan de service Forms. De service Forms geeft vervolgens het formulierontwerp weer dat zich in het `com.adobe.idp.Document` object bevindt.
+De AEM Forms-service rendert interactieve PDF forms naar clientapparaten, meestal webbrowsers, om informatie van gebruikers te verzamelen. Een interactief PDF-formulier is gebaseerd op een formulierontwerp dat gewoonlijk als een XDP-bestand wordt opgeslagen en in Designer wordt gemaakt. Vanaf AEM Forms kunt u een `com.adobe.idp.Document` object met het formulierontwerp doorgeven aan de Forms-service. De Forms-service geeft vervolgens het formulierontwerp weer dat zich in het `com.adobe.idp.Document` object bevindt.
 
-Een voordeel van het doorgeven van een `com.adobe.idp.Document` object aan de service Forms is dat andere servicebewerkingen een `com.adobe.idp.Document` instantie retourneren. Dat wil zeggen dat u een `com.adobe.idp.Document` instantie van een andere servicebewerking kunt ophalen en renderen. Stel bijvoorbeeld dat een XDP-bestand wordt opgeslagen in een knooppunt Content Services (afgekeurd) met de naam `/Company Home/Form Designs`, zoals in de volgende afbeelding wordt getoond.
+Een voordeel van het doorgeven van een `com.adobe.idp.Document` object aan de Forms-service is dat andere servicebewerkingen een `com.adobe.idp.Document` instantie retourneren. Dat wil zeggen dat u een `com.adobe.idp.Document` instantie van een andere servicebewerking kunt ophalen en renderen. Stel bijvoorbeeld dat een XDP-bestand wordt opgeslagen in een knooppunt Content Services (afgekeurd) met de naam `/Company Home/Form Designs`, zoals in de volgende afbeelding wordt getoond.
 
-U kunt Loan.xdp programmatically terugwinnen van (afgekeurd) (van de Diensten van de Inhoud) en het XDP dossier tot de dienst van Vormen binnen een `com.adobe.idp.Document` voorwerp overgaan.
+U kunt Loan.xdp programmatically terugwinnen van (afgekeurd) (van de Inhoud) en het XDP dossier tot de dienst van Forms binnen een `com.adobe.idp.Document` voorwerp overgaan.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Forms-service.
 
 ## Overzicht van de stappen {#summary-of-steps}
 
-Als u een document dat is verkregen van Content Services (afgekeurd) (afgekeurd) wilt doorgeven aan de service Forms, voert u de volgende taken uit:
+Als u een document dat is verkregen van Content Services (afgekeurd) (afgekeurd) wilt doorgeven aan de Forms-service, voert u de volgende taken uit:
 
 1. Inclusief projectbestanden.
 1. Maak een Forms en een Document Management Client API-object.
@@ -44,19 +47,19 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Forms en een Document Management Client API-object maken**
 
-Voordat u een API-bewerking voor Forms-service programmatisch kunt uitvoeren, maakt u een API-object voor Forms Client. Omdat met deze workflow een XDP-bestand wordt opgehaald van Content Services (afgekeurd), maakt u ook een Document Management API-object.
+Voordat u een API-bewerking voor Forms-services programmatisch kunt uitvoeren, maakt u een Forms Client API-object. Omdat met deze workflow een XDP-bestand wordt opgehaald van Content Services (afgekeurd), maakt u ook een Document Management API-object.
 
 **Het formulierontwerp ophalen van Content Services (afgekeurd)**
 
-Haal het XDP-bestand op van Content Services (afgekeurd) met behulp van de Java- of webservice-API. Het XDP-bestand wordt geretourneerd binnen een `com.adobe.idp.Document` instantie (of een `BLOB` instantie als u webservices gebruikt). U kunt het `com.adobe.idp.Document` exemplaar dan aan de dienst van Vormen overgaan.
+Haal het XDP-bestand op van Content Services (afgekeurd) met behulp van de Java- of webservice-API. Het XDP-bestand wordt geretourneerd binnen een `com.adobe.idp.Document` instantie (of een `BLOB` instantie als u webservices gebruikt). U kunt de `com.adobe.idp.Document` instantie vervolgens doorgeven aan de Forms-service.
 
 **Een interactief PDF-formulier renderen**
 
-Als u een interactief formulier wilt genereren, geeft u het exemplaar dat door Content Services (afgekeurd) is geretourneerd, door aan de service Forms. `com.adobe.idp.Document`
+Als u een interactief formulier wilt genereren, geeft u het exemplaar dat door Content Services (afgekeurd) is geretourneerd, door aan de Forms-service. `com.adobe.idp.Document`
 
 >[!NOTE]
 >
->U kunt een formulier met het formulierontwerp doorgeven aan de service Forms. `com.adobe.idp.Document` Twee nieuwe methoden noemen `renderPDFForm2` en `renderHTMLForm2` accepteren een `com.adobe.idp.Document` object dat een formulierontwerp bevat.
+>U kunt een formulier met het formulierontwerp doorgeven aan de Forms-service. `com.adobe.idp.Document` Twee nieuwe methoden noemen `renderPDFForm2` en `renderHTMLForm2` accepteren een `com.adobe.idp.Document` object dat een formulierontwerp bevat.
 
 **Een handeling uitvoeren met de gegevensstroom van het formulier**
 
@@ -64,15 +67,15 @@ Afhankelijk van het type clienttoepassing kunt u het formulier naar een clientwe
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Forms Service API Quick Start](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-## Documenten doorgeven aan de Forms Service met de Java API {#pass-documents-to-the-forms-service-using-the-java-api}
+## Documenten doorgeven aan de Forms-service met de Java API {#pass-documents-to-the-forms-service-using-the-java-api}
 
-Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik te maken van de Forms service en Content Services (afgekeurd) API (Java):
+Geef een document door dat is verkregen van Content Services (afgekeurd) met de Forms-service en Content Services (afgekeurd) API (Java):
 
 1. Projectbestanden opnemen
 
@@ -91,6 +94,7 @@ Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik
    * Een tekenreekswaarde die de opslaglocatie opgeeft waar de inhoud wordt toegevoegd. De standaardopslag is `SpacesStore`. Deze waarde is een verplichte parameter.
    * Een tekenreekswaarde die het volledig gekwalificeerde pad opgeeft van de inhoud die moet worden opgehaald (bijvoorbeeld `/Company Home/Form Designs/Loan.xdp`). Deze waarde is een verplichte parameter.
    * Een tekenreekswaarde die de versie opgeeft. Deze waarde is een optionele parameter en u kunt een lege tekenreeks doorgeven. In dit geval wordt de laatste versie opgehaald.
+
    De `retrieveContent` methode retourneert een `CRCResult` object dat het XDP-bestand bevat. Haal een `com.adobe.idp.Document` instantie op door de `CRCResult` methode van het `getDocument` object aan te roepen.
 
 1. Een interactief PDF-formulier renderen
@@ -102,6 +106,7 @@ Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat. Deze waarde is een optionele parameter en u kunt opgeven `null` of u geen runtime-opties wilt opgeven.
    * Een `URLSpec` object dat URI-waarden bevat. Deze waarde is een optionele parameter en u kunt deze opgeven `null`.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Deze waarde is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. Een handeling uitvoeren met de gegevensstroom van het formulier
@@ -116,19 +121,19 @@ Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): Documenten doorgeven aan de Forms Service met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
+[Snel starten (SOAP-modus): Documenten doorgeven aan de Forms-service met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Documenten doorgeven aan de Forms Service met behulp van de webservice-API {#pass-documents-to-the-forms-service-using-the-web-service-api}
+## Documenten doorgeven aan de Forms Service met de API voor webservices {#pass-documents-to-the-forms-service-using-the-web-service-api}
 
-Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik te maken van de Forms service en Content Services (afgekeurd) API (webservice):
+Geef een document door dat is verkregen van Content Services (afgekeurd) met de Forms-service en Content Services (afgekeurd) API (webservice):
 
 1. Projectbestanden opnemen
 
-   Creeer een project van Microsoft .NET dat MTOM gebruikt. Omdat deze cliënttoepassing de twee diensten van Vormen AEM aanhaalt, creeer twee de dienstverwijzingen. Gebruik de volgende definitie van WSDL voor de de dienstverwijzing verbonden aan de dienst van Vormen: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
+   Creeer een project van Microsoft .NET dat MTOM gebruikt. Omdat deze cliënttoepassing de twee diensten van AEM Forms aanhaalt, creeer twee de dienstverwijzingen. Gebruik de volgende definitie van WSDL voor de de dienstverwijzing verbonden aan de dienst van Forms: `http://localhost:8080/soap/services/FormsService?WSDL&lc_version=9.0.1`.
 
    Gebruik de volgende definitie WSDL voor de de dienstverwijzing verbonden aan de dienst van het Beheer van het Document: `http://localhost:8080/soap/services/DocumentManagementService?WSDL&lc_version=9.0.1`.
 
@@ -141,15 +146,16 @@ Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik
 1. Een Forms en een Document Management Client API-object maken
 
    * Maak een `FormsServiceClient` object met de standaardconstructor.
-   * Maak een `FormsServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/FormsService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `FormsServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/FormsService?WSDL`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `FormsServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `FormsServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `FormsServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `FormsServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+
    >[!NOTE]
    >
    >Herhaal deze stappen voor de `DocumentManagementServiceClient`* serviceclient. *
@@ -178,6 +184,7 @@ Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik
    * Een lange uitvoerparameter die wordt gebruikt om het aantal pagina&#39;s op te slaan.
    * Een tekenreeks-uitvoerparameter die wordt gebruikt om de waarde van de landinstelling op te slaan.
    * Een `FormsResult` uitvoerparameter die wordt gebruikt om het interactieve PDF-formulier op te slaan `.`
+
    De `renderPDFForm2` methode retourneert een `FormsResult` object dat het interactieve PDF-formulier bevat.
 
 1. Een handeling uitvoeren met de gegevensstroom van het formulier
@@ -190,4 +197,4 @@ Geef een document dat is verkregen van Content Services (afgekeurd) door gebruik
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
