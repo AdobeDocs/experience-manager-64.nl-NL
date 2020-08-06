@@ -18,13 +18,13 @@ ht-degree: 0%
 
 # Documentbeveiliging | Gebruikersgegevens verwerken {#document-security-handling-user-data}
 
-Met documentbeveiliging voor AEM Forms kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. U kunt documenten beschermen door beleid te gebruiken. Een beleid is een inzameling van informatie die veiligheidsmontages en een lijst van erkende gebruikers omvat. U kunt een beleid op één of meerdere documenten toepassen en gebruikers machtigen die in AEM Forms JEE gebruikersbeheer worden toegevoegd.
+Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. U kunt documenten beschermen door beleid te gebruiken. Een beleid is een inzameling van informatie die veiligheidsmontages en een lijst van erkende gebruikers omvat. U kunt een beleid op één of meerdere documenten toepassen en gebruikers machtigen die in het gebruikersbeheer van AEM Forms JEE worden toegevoegd.
 
 <!-- Fix broken link For more information about how document security works, see AEM Forms JEE administration help. -->
 
 ## Gebruikersgegevens en gegevensopslag {#user-data-and-data-stores}
 
-Met documentbeveiliging worden beleidsregels en gegevens met betrekking tot beveiligde documenten, waaronder gebruikersgegevens, opgeslagen in een database, zoals My Sql, Oracle, MS SQL Server en IBM DB2. Bovendien de gegevens voor geautoriseerde gebruikers in een beleid in opslag in gebruikersbeheer. Voor informatie over gegevens die in gebruikersbeheer worden opgeslagen, zie het Beheer van de Gebruiker van [Formulieren: Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
+Met documentbeveiliging worden beleidsregels en gegevens met betrekking tot beveiligde documenten, waaronder gebruikersgegevens, opgeslagen in een database, zoals My Sql, Oracle, MS SQL Server en IBM DB2. Bovendien de gegevens voor geautoriseerde gebruikers in een beleid in opslag in gebruikersbeheer. Zie Gebruikersbeheer van [Forms voor informatie over gegevens die zijn opgeslagen in gebruikersbeheer: Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
 
 In de volgende tabel wordt aangegeven hoe gegevens in databasetabellen worden gerangschikt door documentbeveiliging.
 
@@ -129,7 +129,7 @@ Select * from edcinviteduserentity where principalId = '<principal_id>';
 >
 >Om gegevens uit de `EdcAuditEntity` lijst uit te voeren, gebruik [EventManager.exportEvents](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/index.html?com/adobe/livecycle/rightsmanagement/client/EventManager.html) API die [EventSearchFilter](https://helpx.adobe.com/experience-manager/6-4/forms/ProgramLC/javadoc/com/adobe/livecycle/rightsmanagement/client/infomodel/EventSearchFilter.html) als parameter neemt om controlegegevens uit te voeren die op `principalId`, `policyId`of `licenseId`worden gebaseerd.
 
-Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Zie [Formuliergebruikersbeheer voor meer informatie: Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
+Om volledige gegevens over een gebruiker in het systeem te krijgen, moet u tot gegevens van het gebruikersbeheergegevensbestand toegang hebben en uitvoeren. Zie [Forms-gebruikersbeheer voor meer informatie: Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
 
 ### Gebruikersgegevens verwijderen {#delete-user-data}
 
@@ -159,6 +159,7 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
    1. Open de XML-blob van elke rij in de `EdcPolicyXMLEntity` of `EdcPolicyArchiveEntity` tabel en extraheer het XML-bestand. Het XML-bestand is vergelijkbaar met het onderstaande bestand.
    1. Bewerk het XML-bestand om de blob voor de hoofd-id te verwijderen.
    1. Herhaal stap 1 en 2 voor het andere bestand.
+
    >[!NOTE]
    >
    >U moet de volledige blob binnen de `Principal` tag voor een hoofd-id verwijderen, anders wordt de beleid-XML mogelijk beschadigd of onbruikbaar.
@@ -197,6 +198,7 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
    1. Meld u als beheerder aan bij de Forms JEE-beheerconsole op https://[*server*]:[*port*]/adminui.
    1. Ga naar **[!UICONTROL Services > Document Security > Policy Sets]**.
    1. Open een beleidsset en verwijder de gebruiker uit het beleid.
+
    **Webpagina voor documentbeveiliging gebruiken**
 
    Gebruikers met documentbeveiliging die gemachtigd zijn om persoonlijke beleidsregels te maken, kunnen gebruikersgegevens uit hun beleid verwijderen. Daartoe:
@@ -204,10 +206,11 @@ Ga als volgt te werk om documentbeveiligingsgegevens voor een hoofd-id uit datab
    1. Gebruikers met een persoonlijk beleid melden zich aan op de webpagina voor documentbeveiliging op https://[*server*]:[*poort*]/edc.
    1. Ga naar **[!UICONTROL Services > Document Security > My Policies]**.
    1. Open een beleid en verwijder de gebruiker uit het beleid.
+
    >[!NOTE]
    >
    >De beheerders kunnen, tot gebruikersgegevens van persoonlijk beleid van andere gebruikers zoeken toegang hebben en schrappen in het **[!UICONTROL Services > Document Security > My Policies]** gebruiken van beleidsconsole.
 
-1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Voor gedetailleerde stappen, zie het Beheer van de Gebruiker van [Formulieren | Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
+1. Verwijder de gegevens voor de hoofd-id uit de gebruikersbeheerdatabase. Zie Gebruikersbeheer van [Forms voor meer informatie | Gebruikersgegevens](/help/forms/using/user-management-handling-user-data.md)verwerken.
 1. Start de AEM Forms-server.
 
