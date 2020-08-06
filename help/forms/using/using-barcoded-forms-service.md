@@ -1,8 +1,8 @@
 ---
 title: Barcoded Forms Service
-seo-title: De service AEM Forms Barcoded Forms gebruiken
-description: 'Met de service AEM Forms Barcoded Forms kunt u gegevens ophalen uit elektronische afbeeldingen van streepjescodes. '
-seo-description: 'Met de service AEM Forms Barcoded Forms kunt u gegevens ophalen uit elektronische afbeeldingen van streepjescodes. '
+seo-title: AEM Forms Barcoded Forms Service gebruiken
+description: 'Gebruik de AEM Forms Barcoded Forms-service om gegevens te extraheren uit elektronische afbeeldingen van streepjescodes. '
+seo-description: 'Gebruik de AEM Forms Barcoded Forms-service om gegevens te extraheren uit elektronische afbeeldingen van streepjescodes. '
 uuid: 96e0a1e6-3f53-4fea-85c2-4de3cff52d73
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-De service Barcoded Forms extraheert gegevens uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Streepjescodegegevens kunnen op verschillende manieren worden opgemaakt, zoals XML, tekenreeks met scheidingstekens of elke aangepaste indeling die met JavaScript is gemaakt.
+De Barcoded Forms-service extraheert gegevens uit elektronische afbeeldingen van streepjescodes. De service accepteert TIFF- en PDF-bestanden die een of meer streepjescodes bevatten als invoer en extraheert de streepjescodegegevens. Streepjescodegegevens kunnen op verschillende manieren worden opgemaakt, zoals XML, tekenreeks met scheidingstekens of elke aangepaste indeling die met JavaScript is gemaakt.
 
 De service Barcoded Forms ondersteunt de volgende **tweedimensionale (2D)** symbolen die worden geleverd als gescande TIFF- of PDF-documenten:
 
@@ -40,7 +40,7 @@ De service ondersteunt ook de volgende **eendimensionale** symbolen die worden g
 Met de service Barcoded Forms kunt u de volgende taken uitvoeren:
 
 * Hiermee extraheert u streepjescodegegevens uit streepjescodeafbeeldingen (TIFF of PDF). De gegevens worden opgeslagen als tekst met scheidingstekens.
-* Zet afgebakende tekstgegevens om in XML (XDP of XFDF). XML-gegevens kunnen gemakkelijker worden geparseerd dan tekst met scheidingstekens. Ook, kunnen de gegevens in formaat XDP of XFDF als input voor andere diensten in AEM Forms worden gebruikt.
+* Zet afgebakende tekstgegevens om in XML (XDP of XFDF). XML-gegevens kunnen gemakkelijker worden geparseerd dan tekst met scheidingstekens. Gegevens in XDP- of XFDF-indeling kunnen ook worden gebruikt als invoer voor andere services in AEM Forms.
 
 Voor elke streepjescode in een afbeelding zoekt de service Barcoded Forms de streepjescode, decodeert deze en extraheert de gegevens. De service retourneert de streepjescodegegevens (waarbij indien nodig eenheidcodering wordt gebruikt) in een inhoudselement van een XML-document. De volgende gescande TIFF-afbeelding van een formulier bevat bijvoorbeeld twee streepjescodes:
 
@@ -95,11 +95,11 @@ De service Barcoded Forms retourneert het volgende XML-document na het decoderen
 
 ### Workflows die formulieren met streepjescodes gebruiken {#workflows-that-use-barcoded-forms}
 
-Formulierauteurs maken met Designer interactieve formulieren met streepjescodes. (Zie [Help bij](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.) Wanneer een gebruiker een formulier met streepjescodes invult in Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
+Formulierauteurs maken met Designer interactieve formulieren met streepjescodes. (Zie [Help bij](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.) Wanneer een gebruiker een formulier met streepjescodes invult met Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
 
-De service Barcoded Forms is handig voor het converteren van gegevens op papier naar elektronische indeling. Wanneer bijvoorbeeld een formulier met streepjescodes wordt gevuld en afgedrukt, kan de afgedrukte kopie worden gescand en worden gebruikt als invoer voor de service Barcoded Forms.
+De service Barcoded Forms is handig voor het converteren van gegevens die op papier staan naar elektronisch formaat. Wanneer bijvoorbeeld een formulier met streepjescodes wordt gevuld en afgedrukt, kan de afgedrukte kopie worden gescand en worden gebruikt als invoer voor de service Barcoded Forms.
 
-De gecontroleerde omslageindpunten worden typisch gebruikt om toepassingen te beginnen die de Barcoded dienst van Vormen gebruiken. Zo kunnen documentscanners TIFF- of PDF-afbeeldingen van formulieren met streepjescodes opslaan in een controlemap. Het gecontroleerde omslageindpunt gaat de beelden tot de dienst voor het decoderen over.
+De gecontroleerde omslageindpunten worden typisch gebruikt om toepassingen te beginnen die de Barcoded dienst van Forms gebruiken. Zo kunnen documentscanners TIFF- of PDF-afbeeldingen van formulieren met streepjescodes opslaan in een controlemap. Het gecontroleerde omslageindpunt gaat de beelden tot de dienst voor het decoderen over.
 
 ### Aanbevolen indelingen voor codering en decodering {#recommended-encoding-and-decoding-formats}
 
@@ -123,7 +123,7 @@ Wanneer u BCF APIs gebruikt, overweeg de volgende beperkingen:
 
 ### Andere beperkingen {#other-limitations}
 
-Houd ook rekening met de volgende beperkingen bij het gebruik van de service Barcoded Forms:
+Overweeg ook &quot;de volgende beperkingen wanneer u de Barcoded Forms-service gebruikt:
 
 * De service biedt volledige ondersteuning voor AcroForms en statische formulieren met 2D-streepjescodes die zijn opgeslagen met Adobe Reader of Acrobat. Voor 1D-streepjescodes voegt u het formulier echter samen of levert u het als gescand PDF- of TIFF-document.
 * Dynamische XFA-formulieren worden niet volledig ondersteund. Als u 1D- en 2D-streepjescodes op de juiste manier wilt decoderen in een dynamisch formulier, voegt u het formulier samen of geeft u het op als gescand PDF- of TIFF-document.
@@ -132,7 +132,7 @@ Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen 
 
 ## Eigenschappen van de service configureren   {#configureproperties}
 
-Met de **AEMFD Barcoded Forms Service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van de AEM-console is `https://[host]:[port]/system/console/configMgr`.
+U kunt de **AEMFD Barcoded Forms Service** in AEM Console gebruiken om eigenschappen voor deze dienst te vormen. De standaard-URL van AEM console is `https://[host]:[port]/system/console/configMgr`.
 
 ## De service gebruiken {#using}
 
@@ -231,9 +231,9 @@ De volgende voorbeeldcode decodeert een streepjescode in een document en slaat d
 %>
 ```
 
-### De BCF-service gebruiken met AEM Workflows {#using-the-bcf-service-with-aem-workflows}
+### Het gebruiken van de dienst BCF met AEM Werkstromen {#using-the-bcf-service-with-aem-workflows}
 
-Het runnen van de Barcoded dienst van Vormen van een werkschema is gelijkaardig aan het runnen van de dienst van JSP/Servlet. Het enige verschil is bij het runnen van de dienst van JSP/Servlet het documentvoorwerp wint automatisch een geval van voorwerp ResourceResolver van het voorwerp ResourceResolverHelper terug. Dit automatische mechanisme werkt niet wanneer de code vanuit een workflow wordt aangeroepen.
+Het runnen van de Gecodeerde dienst van Forms van een werkschema is gelijkaardig aan het runnen van de dienst van JSP/Servlet. Het enige verschil is bij het runnen van de dienst van JSP/Servlet het documentvoorwerp wint automatisch een geval van voorwerp ResourceResolver van het voorwerp ResourceResolverHelper terug. Dit automatische mechanisme werkt niet wanneer de code vanuit een workflow wordt aangeroepen.
 
 Voor een workflow geeft u expliciet een instantie van het object ResourceResolver door aan de klasseconstructor Document. Vervolgens gebruikt het object Document het aangeboden ResourceResolver-object om inhoud uit de opslagruimte te lezen.
 
