@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 09536869-3806-4b89-adfd-68f408298c55
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '248'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Voor sommige functies voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
 
 Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit door een reeks elementen [beschikbaar te stellen die u kunt gebruiken wanneer u het inhoudsfragment op een pagina](/help/sites-authoring/content-fragments.md#using-associated-content)gebruikt, en tegelijk de tijd te verkorten die nodig is om naar het juiste element te zoeken.
 
@@ -31,11 +34,11 @@ Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met 
 
 Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan een verzameling](managing-collections-touch-ui.md#adding-assets-to-a-collection). Zodra dat gedaan is kunt u:
 
-1. Open het fragment en selecteer **[!UICONTROL Gekoppelde inhoud]** in het zijpaneel.
+1. Open your fragment and select **[!UICONTROL Associated Content]** from the side panel.
 
    ![chlimage_1-207](assets/chlimage_1-207.png)
 
-1. Selecteer Inhoud **** koppelen of Verzameling **** koppelen (afhankelijk van of verzamelingen al zijn gekoppeld of niet).
+1. Select **[!UICONTROL Associate Content]** or **[!UICONTROL Associate Collection]** (as appropriate, depending on whether any collections have already been associated or not).
 1. Selecteer de gewenste verzameling.
 
    U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
