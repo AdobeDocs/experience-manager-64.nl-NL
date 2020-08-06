@@ -1,8 +1,8 @@
 ---
 title: Aangepaste weergaven maken in HTML5-formulieren
 seo-title: Aangepaste weergaven maken in HTML5-formulieren
-description: U kunt aangepaste widgets aansluiten op mobiele formulieren. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
-seo-description: U kunt aangepaste widgets aansluiten op mobiele formulieren. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
+description: U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
+seo-description: U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen.
 uuid: afb16f42-e404-478b-82dd-4b5b59c4f184
 contentOwner: robhagat
 content-type: reference
@@ -11,19 +11,22 @@ topic-tags: hTML5_forms
 discoiquuid: 5d860f05-3257-4cf7-93dd-77d226d59b39
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '672'
+ht-degree: 0%
 
 ---
 
 
 # Aangepaste weergaven maken in HTML5-formulieren {#create-custom-appearances-in-html-forms}
 
-U kunt aangepaste widgets aansluiten op mobiele formulieren. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De XFA-engine gebruikt verschillende widgets. Zie [Weergaveframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
+U kunt aangepaste widgets aansluiten op een mobiele Forms. U kunt bestaande jQuery-widgets uitbreiden of uw eigen aangepaste widgets ontwikkelen met het raamwerk voor weergaven. De XFA-engine gebruikt verschillende widgets. Zie [Weergaveframework voor adaptieve formulieren en HTML5-formulieren](/help/forms/using/introduction-widgets.md) voor meer informatie.
 
-![Een voorbeeld van standaard- en aangepaste widget](assets/custom-widgets.jpg)**Figure:** Een *voorbeeld van de standaard- en aangepaste widget*
+![Een voorbeeld van standaard- en aangepaste widget](assets/custom-widgets.jpg)**Figure:** *Een voorbeeld van de standaard- en aangepaste widget*
 
 ## Aangepaste widgets integreren met HTML5-formulieren {#integrating-custom-widgets-with-html-forms}
 
-### Een profiel maken {#create-a-profile-nbsp}
+### Een profiel maken  {#create-a-profile-nbsp}
 
 U kunt een profiel maken of een bestaand profiel kiezen om een aangepaste widget toe te voegen. Zie Aangepast profiel [maken voor meer informatie over het maken van profielen](/help/forms/using/custom-profile.md).
 
@@ -70,7 +73,7 @@ Als u uw eigen widget wilt maken, neemt u in het hierboven gemaakte profiel verw
 window.formBridge.registerConfig("widgetConfig" , widgetConfigObject);
 ```
 
-### Aangepaste widget registreren met XFA Scripting Engine {#register-custom-widget-with-xfa-scripting-engine-nbsp}
+### Aangepaste widget registreren met XFA Scripting Engine  {#register-custom-widget-with-xfa-scripting-engine-nbsp}
 
 Wanneer de aangepaste widgetcode gereed is, registreert u de widget met de scriptengine met behulp van de `registerConfig`API voor [Form Bridge](/help/forms/using/form-bridge-apis.md). Het neemt widgetConfigObject als input.
 
