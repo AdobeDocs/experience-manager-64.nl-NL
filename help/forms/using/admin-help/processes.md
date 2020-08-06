@@ -22,7 +22,7 @@ ht-degree: 0%
 
 De pagina van de Lijst van het Proces toont de processen die een gebruiker in werking heeft gesteld of die automatisch begonnen zijn.
 
-1. Klik in de beheerconsole op Services > Forms workflow > Forms workflow. De proceslijst bevat de volgende informatie:
+1. Klik in de beheerconsole op Services > Forms-workflow > Forms-workflow. De proceslijst bevat de volgende informatie:
 
    **Procesnaam - Versie:** De naam van het proces, zoals gedefinieerd in Workbench.
 
@@ -96,7 +96,7 @@ Wanneer u een procesinstantie onderbreekt, verandert zijn status in RUNNING, en 
 
 Wanneer u een procesinstantie opheft die andere processen (kindprocessen) gebruikend hun aanroepverrichting heeft aangehaald, worden de kindprocessen ook opgeschort.
 
-1. Klik in de beheerconsole op Services > Forms workflow > Forms workflow.
+1. Klik in de beheerconsole op Services > Forms-workflow > Forms-workflow.
 1. Selecteer het proces op de pagina Procesinstantie en klik op Onderbreken of Opschorten.
 
 ### Een procesinstantie beëindigen {#terminate-a-process-instances}
@@ -107,7 +107,7 @@ U kunt procesinstanties beëindigen die om het even welke status hebben.
 
 Wanneer u een procesinstantie beëindigt, verandert zijn status in BEËINDIGEN, dan BEËINDIGD, en het proces houdt bij zijn huidige verrichting op. Er worden geen verdere bewerkingen uitgevoerd en alle bijbehorende bewerkingen en taken worden beëindigd.
 
-1. Klik in de beheerconsole op Services > Forms workflow > Forms workflow.
+1. Klik in de beheerconsole op Services > Forms-workflow > Forms-workflow.
 1. Selecteer het proces op de pagina Procesinstantie en klik op Beëindigen.
 
 ## Werken met procesinstantiedetails {#working-with-process-instance-details}
@@ -179,7 +179,7 @@ U kunt geen processen beëindigen die gatewayelementen in het procesdiagram hebb
 
 U kunt een bewerking met de status STALLED opnieuw proberen.
 
-Wanneer u een bewerking opnieuw uitvoert, wordt een aanvraag voor het opnieuw starten van de bewerking verzonden naar de Forms-workflow. Als het verzoek succesvol is, verandert de status in RUNNING. Als de bewerking niet opnieuw kan worden gestart, blijft deze STALLED en moet u deze wellicht beëindigen.
+Wanneer u een bewerking opnieuw uitvoert, wordt een verzoek verzonden om de bewerking opnieuw te starten. Als het verzoek succesvol is, verandert de status in RUNNING. Als de bewerking niet opnieuw kan worden gestart, blijft deze STALLED en moet u deze wellicht beëindigen.
 
 1. Voor de pagina van de Details van de Instantie van het Proces, klik de Verrichtingen tabel.
 1. Selecteer de bewerking en klik op Opnieuw.
@@ -188,7 +188,7 @@ Wanneer u een bewerking opnieuw uitvoert, wordt een aanvraag voor het opnieuw st
 
 De pagina van de Details van de Verrichting toont een overzicht van één verrichting in een proces en zijn huidige gebruikerstoewijzingen.
 
-1. Klik in de beheerconsole op Services > Forms workflow > Forms workflow.
+1. Klik in de beheerconsole op Services > Forms-workflow > Forms-workflow.
 1. Klik op een procesnaam om de procesinstanties ervan weer te geven. Klik op een procesinstantie om de pagina Details procesinstantie weer te geven en selecteer vervolgens een bewerking om de pagina Bewerkingsdetails weer te geven.
 
    Voor elke taak, toont de lijst de volgende informatie:
