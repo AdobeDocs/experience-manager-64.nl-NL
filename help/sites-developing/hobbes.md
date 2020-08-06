@@ -11,6 +11,9 @@ topic-tags: testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
 translation-type: tm+mt
 source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
+workflow-type: tm+mt
+source-wordcount: '716'
+ht-degree: 1%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: d6c10927d437cfc9371e4baeff5a91ed9a0503c8
 
 AEM biedt een raamwerk voor het automatiseren van tests voor uw AEM UI. Met behulp van het framework schrijft en voert u tests voor de gebruikersinterface rechtstreeks in een webbrowser uit. Het framework biedt API voor JavaScript voor het maken van tests.
 
-Het AEM-testframework gebruikt Hobbes.js, een testbibliotheek die in Javascript is geschreven. Het Hobbes.js-framework is ontwikkeld voor het testen van AEM als onderdeel van het ontwikkelingsproces. Het framework is nu beschikbaar voor gebruik door het publiek om uw AEM-toepassingen te testen.
+Het AEM testframework gebruikt Hobbes.js, een testbibliotheek die in Javascript is geschreven. Het Hobbes.js-framework is ontwikkeld voor het testen van AEM als onderdeel van het ontwikkelingsproces. Het framework is nu beschikbaar voor gebruik door het publiek om uw AEM toepassingen te testen.
 
 >[!NOTE]
 >
@@ -115,7 +118,7 @@ Zie de documentatie [van de](https://helpx.adobe.com/experience-manager/6-4/site
 
    >[!NOTE]
    >
-   >**Alleen AEM-formulieren**
+   >**Alleen AEM Forms**
    >
    >Als u adaptieve formulieren wilt testen, voegt u de volgende waarden toe aan de categorieën en afhankelijkheden. Bijvoorbeeld:
    >
