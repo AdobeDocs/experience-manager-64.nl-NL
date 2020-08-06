@@ -1,8 +1,8 @@
 ---
 title: Werken met logbestanden
 seo-title: Werken met logbestanden
-description: Leer hoe u AEM kunt oplossen door met logboeken te werken.
-seo-description: Leer hoe u AEM kunt oplossen door met logboeken te werken.
+description: Leer hoe te om AEM problemen op te lossen door met logboeken te werken.
+seo-description: Leer hoe te om AEM problemen op te lossen door met logboeken te werken.
 uuid: b64e0b25-5228-4c2f-9cc1-dde524134026
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b4c1cb82-865b-48dd-b5c0-946e6610ce8e
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '246'
+ht-degree: 2%
 
 ---
 
