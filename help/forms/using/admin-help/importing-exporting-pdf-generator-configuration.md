@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e25c1b35-73eb-4353-8e39-a2d4cdccd101
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '395'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Het configuratiebestand bevat de conversiegegevens van de PDF Generator, waarond
 
 >[!NOTE]
 >
->U kunt de time-outinstelling voor PDF Generator niet wijzigen door een aangepast native2pdfconfig.xml-bestand te importeren. De time-outinstelling in dat bestand is alleen ter informatie en geeft de huidige instelling weer in PDF Generator. Zie &quot;Prestatieparameters van PDF Generator instellen&quot; in AEM-formulieren [installeren en implementeren als u de time-outinstelling wilt wijzigen](https://www.adobe.com/go/learn_aemforms_installJBoss_63).
+>U kunt de time-outinstelling voor PDF Generator niet wijzigen door een aangepast native2pdfconfig.xml-bestand te importeren. De time-outinstelling in dat bestand is alleen ter informatie en geeft de huidige instelling weer in PDF Generator. Zie &quot;Prestatieparameters van PDF Generator instellen&quot; in [Formulieren](https://www.adobe.com/go/learn_aemforms_installJBoss_63)installeren en implementeren om de time-outinstelling te wijzigen.
 
 ## Het huidige configuratiebestand exporteren {#export-your-current-configuration-file}
 
@@ -29,9 +32,9 @@ Het configuratiebestand bevat de conversiegegevens van de PDF Generator, waarond
 1. Als u de instellingen wilt exporteren, selecteert u de gewenste optie:
 
    * Selecteer Volledige configuratie downloaden om alle benoemde instellingen te exporteren.
-   * Selecteer Minimale configuratie downloaden als u slechts één instelling, beveiligingsinstelling of bestandstype voor Adobe PDF wilt exporteren.
+   * Als u slechts één Adobe PDF-instelling, beveiligingsinstelling of bestandstype-instelling wilt exporteren, selecteert u Minimale configuratie downloaden.
 
-      Als u een minimale configuratie exporteert, selecteert u de instellingen voor Adobe PDF, beveiliging en bestandstype om te exporteren.
+      Als u een minimale configuratie exporteert, selecteert u de instellingen voor Adobe PDF, beveiliging en bestandstype die u wilt exporteren.
 
 1. Klik op Downloaden en sla het XML-bestand op de gewenste locatie op.
 
