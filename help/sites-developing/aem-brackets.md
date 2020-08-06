@@ -1,6 +1,6 @@
 ---
-title: AEM Brackets Extension
-seo-title: AEM Brackets Extension
+title: Extensie AEM
+seo-title: Extensie AEM
 description: 'null'
 seo-description: 'null'
 uuid: 2f0dfa42-eb34-44ae-90eb-b5f321c03b79
@@ -11,28 +11,31 @@ content-type: reference
 discoiquuid: 8231a30a-dcb7-4156-bb45-c5a23e5b56ef
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '926'
+ht-degree: 0%
 
 ---
 
 
-# AEM Brackets Extension{#aem-brackets-extension}
+# Extensie AEM{#aem-brackets-extension}
 
 ## Overzicht {#overview}
 
-De extensie AEM Brackets biedt een vloeiende workflow voor het bewerken van AEM-componenten en -clientbibliotheken en maakt gebruik van de kracht van de [coderingseditor](https://brackets.io/) Brackets, waarmee u vanuit de code-editor toegang hebt tot Photoshop-bestanden en -lagen. De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM-kennis om aan projecten deel te nemen. Deze extensie biedt ook enige ondersteuning voor de [HTML-sjabloontaal (HTML Template Language)](https://helpx.adobe.com/experience-manager/htl/user-guide.html), die de complexiteit van JSP wegneemt om de ontwikkeling van componenten eenvoudiger en veiliger te maken.
+De extensie AEM Brackets biedt een vloeiende workflow voor het bewerken van AEM componenten en clientbibliotheken en maakt gebruik van de kracht van de [Brackets](https://brackets.io/) -code-editor. Hiermee hebt u vanuit de code-editor toegang tot Photoshop-bestanden en -lagen. De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM kennis ook om aan projecten deel te nemen. Deze extensie biedt ook enige ondersteuning voor de [HTML-sjabloontaal (HTML Template Language)](https://helpx.adobe.com/experience-manager/htl/user-guide.html), die de complexiteit van JSP wegneemt om de ontwikkeling van componenten eenvoudiger en veiliger te maken.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
 ### Features {#features}
 
-De belangrijkste kenmerken van de extensie AEM Brackets zijn:
+De hoofdkenmerken van de extensie AEM Brackets zijn:
 
 * Geautomatiseerde synchronisatie van gewijzigde bestanden naar de AEM-ontwikkelingsinstantie.
 * Handmatige tweerichtingssynchronisatie van bestanden en mappen.
 * Volledige tevreden-pakket synchronisatie van het project.
 * HTML-codevoltooiing voor expressies en `data-sly-*` blokinstructies.
 
-Bovendien zijn er veel handige functies voor AEM-ontwikkelaars van lettertypen:
+Bovendien zijn er veel handige functies voor AEM ontwikkelaars van lettertypen:
 
 * Photoshop-bestandsondersteuning voor het ophalen van gegevens uit een PSD-bestand, zoals lagen, metingen, kleuren, lettertypen, tekst, enzovoort.
 * Coderingstips uit de PSD om deze geëxtraheerde informatie gemakkelijk opnieuw te gebruiken in de code.
@@ -52,18 +55,18 @@ Download de nieuwste versie Brackets van [vierkante haken.io](https://brackets.i
 Ga als volgt te werk om de extensie te installeren:
 
 1. Open haakjes. Selecteer **Extension Manager in het menu Bestand****...**
-1. Typ **AEM** in de zoekbalk en zoek naar **AEM Brackets Extension**.
+1. Ga **AEM** in de onderzoeksbar in en zoek **AEM Uitbreiding** van Brackets.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
 1. Klik op **Installeren**.
-1. Sluit het dialoogvenster en Extension Manager nadat de installatie is voltooid.
+1. Sluit het dialoogvenster en de Extension Manager nadat de installatie is voltooid.
 
 ## Aan de slag {#getting-started}
 
 ### Het content-package project {#the-content-package-project}
 
-Nadat de extensie is geïnstalleerd, kunt u beginnen met het ontwikkelen van AEM-componenten door een map met een inhoudspakket te openen vanuit uw bestandssysteem met haakjes.
+Nadat de extensie is geïnstalleerd, kunt u beginnen met het ontwikkelen van AEM componenten door een inhoudspakketmap te openen vanuit uw bestandssysteem met haakjes.
 
 Het project moet ten minste het volgende bevatten:
 
@@ -75,13 +78,13 @@ Kies in het menu **Bestand** van haakjes de optie **Map openen...** en kies de `
 
 >[!NOTE]
 >
->Als u geen eigen project met een content-package hebt, kunt u het [HTL TodoMVC-voorbeeld](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)uitproberen. Voor GitHub, klik **Download ZIP**, haalt de dossiers plaatselijk uit, en zoals hierboven geïnstrueerd, open de `jcr_root` omslag in Brackets. Volg vervolgens de onderstaande stappen om de **projectinstellingen** in te stellen en upload ten slotte het hele pakket naar de AEM-ontwikkelingsinstantie door een **Exportinhoudspakket** uit te voeren zoals verder is aangegeven in de sectie Volledige synchronisatie van het inhoudspakket.
+>Als u geen eigen project met een content-package hebt, kunt u het [HTL TodoMVC-voorbeeld](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)uitproberen. Voor GitHub, klik **Download ZIP**, haalt de dossiers plaatselijk uit, en zoals hierboven geïnstrueerd, open de `jcr_root` omslag in Brackets. Volg vervolgens de onderstaande stappen om de **projectinstellingen** in te stellen en upload ten slotte het hele pakket naar de AEM ontwikkelingsinstantie door een **Exportinhoudspakket** uit te voeren zoals verder onderaan in de sectie Volledige synchronisatie van het inhoudspakket.
 >
->Na deze stappen, zou u tot `/content/todo.html` URL op uw AEM ontwikkelingsinstantie moeten kunnen toegang hebben en u kunt wijzigingen aan de code in Brackets beginnen en zien hoe, na te doen verfrist zich in Webbrowser, de veranderingen onmiddellijk aan de server AEM werden gesynchroniseerd.
+>Na deze stappen, zou u tot `/content/todo.html` URL op uw AEM ontwikkelingsinstantie moeten kunnen toegang hebben en u kunt wijzigingen aan de code in Brackets beginnen en zien hoe, nadat doen verfrist zich in Webbrowser, de veranderingen onmiddellijk aan de AEM server werden gesynchroniseerd.
 
 ### Projectinstellingen {#project-settings}
 
-Als u de inhoud wilt synchroniseren van en naar een AEM-ontwikkelingsinstantie, moet u de projectinstellingen definiëren. U doet dit door naar het menu **AEM** te gaan en **Projectinstellingen te kiezen...**
+Als u de inhoud wilt synchroniseren van en naar een AEM-ontwikkelingsinstantie, moet u de projectinstellingen definiëren. U doet dit door naar het menu **AEM** te gaan en **Projectinstellingen te kiezen..**
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -94,11 +97,11 @@ Met de projectinstellingen kunt u het volgende definiëren:
 
 ## Inhoud synchroniseren {#synchronizing-content}
 
-De extensie AEM Brackets biedt de volgende typen inhoudssynchronisatie voor bestanden en mappen die worden toegestaan door de filterregels die zijn gedefinieerd in `filter.xml`:
+De extensie AEM Brackets biedt de volgende typen inhoudssynchronisatie voor bestanden en mappen die zijn toegestaan door de filterregels die zijn gedefinieerd in `filter.xml`:
 
 ### Geautomatiseerde synchronisatie van gewijzigde bestanden {#automated-synchronization-of-changed-files}
 
-Hiermee worden alleen wijzigingen gesynchroniseerd van Brackets naar de AEM-instantie, maar nooit andersom.
+Hiermee worden wijzigingen alleen gesynchroniseerd van haakjes naar de AEM-instantie, maar nooit andersom.
 
 ### Handmatige tweerichtingssynchronisatie {#manual-bidirectional-synchronization}
 
@@ -112,7 +115,7 @@ In de Ontdekkingsreiziger van het Project, open het contextafhankelijke menu doo
 
 ### Volledige synchronisatie van inhoudspakketten {#full-content-package-synchronization}
 
-In het menu **AEM** staan de opties Inhoudspakket **** exporteren of Inhoudspakket **** importeren toe dat het hele project met de server wordt gesynchroniseerd.
+In het **AEM** menu, staan de opties van het Pakket **van de Inhoud van de** Uitvoer of van het Pakket **van de Inhoud van de** Invoer toe om het volledige project met de server te synchroniseren.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -137,7 +140,7 @@ Als u op het meldingspictogram klikt, wordt het dialoogvenster Synchronisatie-st
 
 ## HTML-code bewerken {#editing-htl-code}
 
-De extensie AEM Brackets bevat ook enkele automatische aantekeningen die het schrijven van HTML-kenmerken en -expressies vergemakkelijken.
+De extensie AEM Brackets beschikt ook over enkele automatische aantekeningen waarmee het schrijven van HTML-kenmerken en -expressies wordt vergemakkelijkt.
 
 ### Kenmerk automatisch voltooid {#attribute-auto-completion}
 
@@ -150,12 +153,12 @@ In een expressie `${}`worden veelvoorkomende variabelenamen automatisch aangevul
 
 ## Meer informatie {#more-information}
 
-De extensie AEM Brackets is een opensource-project dat op GitHub wordt gehost door de [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) -organisatie onder de Apache-licentie, versie 2.0:
+De extensie AEM Brackets is een opensource-project dat op GitHub wordt gehost door de [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) -organisatie, onder de Apache-licentie, versie 2.0:
 
 * Codeopslagplaats: [https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension](https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension)
 * Apache-licentie, versie 2.0: [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-De de coderedacteur van Brackets is ook een open-bronproject, dat op GitHub door de [Incorporated](https://github.com/adobe) organisatie van Adobe Systems wordt ontvangen:
+De de coderedacteur van Brackets is ook een open-bronproject, dat op GitHub door de organisatie van [Adobe Systems Incorporated](https://github.com/adobe) wordt ontvangen:
 
 * Codeopslagplaats: [https://github.com/adobe/brackets](https://github.com/adobe/brackets)
 
