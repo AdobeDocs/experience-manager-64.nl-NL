@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 4ef78c8c-783f-4aac-a499-692cd4acef75
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '3911'
+ht-degree: 35%
 
 ---
 
@@ -104,7 +107,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr> 
    <td><code>numPages</code></td> 
    <td>Retourneert het aantal pagina's in het document.</td> 
-   <td>Pagineringsbeleid van HTML5-formulieren is niet hetzelfde als pagineringsbeleid voor PDF-formulieren. De numPages-API kan dus in beide gevallen een andere waarde retourneren.</td> 
+   <td>Pagineringsbeleid van HTML5-formulieren is niet hetzelfde als pagineringsbeleid voor PDF forms. De numPages-API kan dus in beide gevallen een andere waarde retourneren.</td> 
   </tr> 
   <tr> 
    <td><code>platform</code></td> 
@@ -114,7 +117,7 @@ JavaScript, FormCalc-eigenschappen en methoden die in HTML5-formulieren worden o
   <tr> 
    <td><code>title</code></td> 
    <td>Hiermee geeft u de titel van het document op. Deze optie is alleen beschikbaar voor clienttoepassingen.</td> 
-   <td>Er wordt een titel van een HTML-document in het formulier geretourneerd, in plaats van de titel van de metagegevens van het formulier, zoals in het geval van PDF-formulieren.</td> 
+   <td>Er wordt een titel van een HTML-document in formulier geretourneerd, in plaats van de titel van de metagegevens van het formulier, zoals in het geval van PDF forms.</td> 
   </tr> 
   <tr> 
    <td><code>version</code></td> 
@@ -1170,7 +1173,7 @@ FormCalc is een XFA-specifieke taal voor het maken van centrische logica en bere
  </tbody> 
 </table>
 
-### Ondersteuning voor Acrobat API {#acrobat-api-support}
+### Acrobat API-ondersteuning {#acrobat-api-support}
 
 1. **Rekenkundige functies**
 
