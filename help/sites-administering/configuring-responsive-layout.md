@@ -12,6 +12,9 @@ discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
 translation-type: tm+mt
 source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
+workflow-type: tm+mt
+source-wordcount: '1324'
+ht-degree: 1%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
 >
 >Dit kan worden vergeleken met de mechanismen voor [mobiel web](/help/sites-developing/mobile-web.md) , die een adaptief webontwerp gebruiken (voornamelijk voor de klassieke gebruikersinterface).
 
-AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een combinatie van mechanismen:
+AEM realiseert responsieve lay-out voor uw pagina&#39;s gebruikend een combinatie mechanismen:
 
 * [**Containercomponent **](/help/sites-authoring/responsive-layout.md#adding-a-layout-container-and-its-content-edit-mode)layout
 
@@ -42,7 +45,8 @@ AEM realiseert een responsieve indeling voor uw pagina&#39;s met behulp van een 
 
          U kunt de lay-outcontainer als standaard voor de pagina hebben, terwijl het toestaan van de gebruiker om verdere lay-outcontainers binnen dit toe te voegen; bijvoorbeeld om kolombesturing te bereiken.
 
-* **[Lay-outmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Zodra de lay-outcontainer op de pagina is geplaatst, kunt u de **modus Lay-out**gebruiken om inhoud binnen het responsieve raster te plaatsen.
+* **[Lay-outmodus](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**Als de lay-outcontainer op de pagina is geplaatst, kunt u de opdracht
+**Lay-outmodus** om inhoud binnen het responsieve raster te plaatsen.
 
 * [**Emulator **](/help/sites-authoring/responsive-layout.md#selecting-a-device-to-emulate)Hiermee kunt u responsieve websites maken en bewerken die de lay-out op basis van de grootte van het apparaat/venster opnieuw rangschikken door de grootte van componenten interactief aan te passen. De gebruiker kan dan zien hoe de inhoud wordt gerenderd met de emulator.
 
@@ -114,11 +118,12 @@ Als u een bestaand project (met bestaande inhoud) migreert, moet u:
 >* Onderbrekingspunten toevoegen aan de sjablonen
 >* Voeg dezelfde onderbrekingspunten toe aan de bestaande pagina&#39;s\
    >  Aangezien de overerving in verrichting is, kunt u dit tot de wortelpagina van uw inhoud beperken.
+
 >
 
 
 
-#### Onderbrekingspunten configureren met behulp van CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
+#### Onderbrekingspunten configureren met CRXDE Lite {#configuring-breakpoints-using-crxde-lite}
 
 1. Navigeer met behulp van CRXDE Lite (of equivalent) naar:
 
@@ -200,7 +205,7 @@ De volgende twee voorbeelden illustreren de definitie:
 
 #### CSS voor onderbrekingspunten die MINDER gebruiken {#css-for-breakpoints-using-less}
 
-AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, deze moeten voor uw projecten worden omvat.
+AEM gebruikt LESS om delen van noodzakelijke CSS te produceren, moeten deze voor uw projecten worden omvat.
 
 U zult ook een [cliëntbibliotheek](https://docs.adobe.com/content/docs/en/aem/6-0/develop/the-basics/clientlibs.html) moeten tot stand brengen om extra configuratie en functievraag te verstrekken. Het volgende LESS extract is een voorbeeld van het minimum u aan uw project moet toevoegen:
 
