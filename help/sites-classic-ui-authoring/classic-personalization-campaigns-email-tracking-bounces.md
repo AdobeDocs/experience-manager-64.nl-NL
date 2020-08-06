@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fde9027b-9057-48c3-ae34-3f3258c5b371
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '761'
+ht-degree: 0%
 
 ---
 
@@ -19,17 +22,17 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe is niet van plan het bijhouden van geopende/verzonden e-mailberichten door de AEM SMTP-service verder te verbeteren.
+>Adobe is niet van plan om het bijhouden van geopende/aangekondigde e-mails die door AEM SMTP-service worden verzonden, verder te verbeteren.
 >
->De aanbeveling is om Adobe Campagne en zijn integratie [van AEM te](/help/sites-administering/campaign.md)gebruiken.
+>De aanbeveling is Adobe Campaign en de AEM ervan [te benutten](/help/sites-administering/campaign.md).
 
-Wanneer u een nieuwsbrief naar veel gebruikers verzendt, bevat de lijst meestal enkele ongeldige e-mailadressen. Het verzenden van nieuwsbrieven naar die adressen stuitert terug. AEM is in staat die grenzen te beheren en kan ophouden met het verzenden van nieuwsbrieven naar die adressen nadat de gevormde stuiterteller wordt overschreden. Door gebrek, wordt het stuiterende tarief geplaatst aan 3 maar configureerbaar.
+Wanneer u een nieuwsbrief naar veel gebruikers verzendt, bevat de lijst meestal enkele ongeldige e-mailadressen. Het verzenden van nieuwsbrieven naar die adressen stuitert terug. AEM kan deze grenzen beheren en kan stoppen met het verzenden van nieuwsbrieven naar die adressen nadat de geconfigureerde stuiterteller is overschreden. Door gebrek, wordt het stuiterende tarief geplaatst aan 3 maar configureerbaar.
 
-Als u AEM wilt instellen om teruggestuurde e-mailberichten bij te houden, moet u AEM instellen om een bestaande postbus te opiniepeilen waar teruggestuurde e-mails worden ontvangen (dit is meestal het e-mailadres &#39;van&#39; dat u opgeeft waar u de nieuwsbrief verzendt). AEM pollt dit Postvak IN en importeert alle e-mailberichten onder het pad dat is opgegeven in de stemconfiguratie. Vervolgens wordt een workflow geactiveerd om te zoeken naar de verzonden e-mailadressen binnen de gebruikers en wordt de eigenschapswaarde van bounceCounter van de gebruiker dienovereenkomstig bijgewerkt. Nadat de gevormde maximumgrenzen worden overschreden, wordt de gebruiker verwijderd uit de nieuwsbrief lijst.
+Als u AEM wilt instellen om teruggestuurde e-mailberichten bij te houden, moet u AEM instellen om een bestaande postbus te opiniepeilen waar teruggestuurde e-mails worden ontvangen (dit is meestal het e-mailadres &#39;van&#39; dat u opgeeft waar u de nieuwsbrief verzendt). AEM opiniepeilt dit postvak en importeert alle e-mailberichten onder het pad dat in de stemconfiguratie is opgegeven. Vervolgens wordt een workflow geactiveerd om te zoeken naar de verzonden e-mailadressen binnen de gebruikers en wordt de eigenschapswaarde van bounceCounter van de gebruiker dienovereenkomstig bijgewerkt. Nadat de gevormde maximumgrenzen worden overschreden, wordt de gebruiker verwijderd uit de nieuwsbrief lijst.
 
 ## De importmodule voor diervoeders configureren {#configuring-the-feed-importer}
 
-Met de importfunctie kunt u herhaaldelijk inhoud uit externe bronnen importeren in uw opslagplaats. Met deze configuratie van de voederimporteur, controleert AEM de brievenbus van de afzender op verbrande e-mails.
+Met de importfunctie kunt u herhaaldelijk inhoud uit externe bronnen importeren in uw opslagplaats. Met deze configuratie van de voederimporteur, AEM controleert de brievenbus van de afzender op bekende e-mails.
 
 De importmodule configureren voor het bijhouden van onaangekondigde e-mails:
 
