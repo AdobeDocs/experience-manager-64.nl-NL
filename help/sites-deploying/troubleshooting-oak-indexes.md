@@ -11,15 +11,18 @@ topic-tags: deploying
 discoiquuid: ea70758f-6726-4634-bfb4-a957187baef0
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '1486'
+ht-degree: 0%
 
 ---
 
 
 # Probleemoplossing voor Oak-indexen{#troubleshooting-oak-indexes}
 
-## Langzaam opnieuw indexeren {#slow-re-indexing}
+## Langzaam opnieuw indexeren  {#slow-re-indexing}
 
-Met het interne herindexeringsproces van AEM worden gegevens in de gegevensopslagruimte verzameld en opgeslagen in Oak-indexen ter ondersteuning van het opvragen van inhoud door prestaties. In uitzonderlijke omstandigheden kan het proces langzaam of zelfs vastlopen. Deze pagina fungeert als gids voor het oplossen van problemen, zodat u kunt zien of de indexering langzaam verloopt, de oorzaak vindt en het probleem verhelpt.
+AEM intern herindexeringsproces verzamelt gegevens in de opslagplaats en slaat deze op in Eak-indexen om het vragen van inhoud door prestaties te ondersteunen. In uitzonderlijke omstandigheden kan het proces langzaam of zelfs vastlopen. Deze pagina fungeert als gids voor het oplossen van problemen, zodat u kunt zien of de indexering langzaam verloopt, de oorzaak vindt en het probleem verhelpt.
 
 Het is belangrijk om onderscheid te maken tussen opnieuw indexeren die een onterecht lange hoeveelheid tijd vergt, en opnieuw indexeren die een lange hoeveelheid tijd vergt omdat het enorme hoeveelheden inhoud indexeert. De tijd die nodig is om de inhoud te indexeren, wordt bijvoorbeeld geschaald met de hoeveelheid inhoud, zodat grote productieopslagplaatsen langer nodig hebben om opnieuw te indexeren dan kleine opslagplaatsen.
 
@@ -27,10 +30,10 @@ Zie de [Beste praktijken op Vragen en het Indexeren](/help/sites-deploying/best-
 
 ## Eerste detectie {#initial-detection}
 
-De initiële detectie vertraagde indexering vereist het evalueren van de `IndexStats` JMX MBans. Ga als volgt te werk voor de betreffende AEM-instantie:
+De initiële detectie vertraagde indexering vereist het evalueren van de `IndexStats` JMX MBans. Ga als volgt te werk voor de betreffende AEM instantie:
 
 1. Open de webconsole en klik op het tabblad JMX of ga naar https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)).
-1. Navigeer naar de `IndexStats` beans.
+1. Navigate to the `IndexStats` Mbeans.
 1. Open de `IndexStats` MBans voor &quot; `async`&quot; en &quot; `fulltext-async`&quot;.
 
 1. Voor beide MBeans, controleer of **Done** timestamp en **LastIndexTime** timestamp minder dan 45 minuten van de huidige tijd zijn.
@@ -39,37 +42,39 @@ De initiële detectie vertraagde indexering vereist het evalueren van de `IndexS
 
 ## De indexering wordt gepauzeerd na een gedwongen sluiting {#indexing-is-paused-after-a-forced-shutdown}
 
-Een gedwongen sluiting resulteert in het opschorten van asynchrone indexering tot 30 minuten na het opnieuw beginnen, en vereist typisch nog 15 minuten om de eerste re-indexerende pas te voltooien, voor een totaal van ongeveer 45 minuten (het binden terug naar het [Eerste tijdkader van de Opsporing](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) van 45 minuten). Als u vermoedt dat indexering is gepauzeerd na een geforceerde afsluiting:
+Een gedwongen sluiting resulteert in AEM het opschorten van asynchrone indexering tot 30 minuten na het opnieuw beginnen, en typisch vereist nog 15 minuten om de eerste re-indexerende pas te voltooien, voor een totaal van ongeveer 45 minuten (het terugkoppelen aan het [Eerste tijdkader van de Opsporing](/help/sites-deploying/troubleshooting-oak-indexes.md#initial-detection) van 45 minuten). Als u vermoedt dat indexering is gepauzeerd na een geforceerde afsluiting:
 
-1. In de eerste plaats moet worden nagegaan of de AEM-instantie op geforceerde wijze is afgesloten (het AEM-proces is met kracht gedood of er is een stroomstoring opgetreden) en vervolgens opnieuw is opgestart.
+1. Ten eerste, bepaal of de AEM instantie op gedwongen wijze werd afgesloten (het AEM proces werd met kracht gedood, of er een stroomuitval plaatsvond) en vervolgens opnieuw werd opgestart.
 
-   * [Het registreren](/help/sites-deploying/configure-logging.md) van AEM kan voor dit doel worden herzien.
+   * [AEM het registreren](/help/sites-deploying/configure-logging.md) kan voor dit doel worden herzien.
 
-1. Als de gedwongen sluiting optrad, na opnieuw opstarten, schorst AEM automatisch het opnieuw indexeren tot 30 minuten.
+1. Als de gedwongen sluiting optrad, na opnieuw beginnen, AEM automatisch het opnieuw indexeren voor maximaal 30 minuten opschort.
 1. Wacht ongeveer 45 minuten op AEM om normale asynchrone indexeringsverrichtingen te hervatten.
 
 ## Thread pool overloaded {#thread-pool-overloaded}
 
 >[!NOTE]
 >
->Voor AEM 6.1 moet u ervoor zorgen dat [AEM 6.1 GVB 11](https://helpx.adobe.com/experience-manager/release-notes-aem-6-1-cumulative-fix-pack.html) is geïnstalleerd.
+>Voor AEM 6.1 moet ervoor worden gezorgd dat [AEM 6.1 GVB 11](https://helpx.adobe.com/experience-manager/release-notes-aem-6-1-cumulative-fix-pack.html) is geïnstalleerd.
 
-In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asychronous indexing te beheren overbelast worden. Om het indexeren proces te isoleren, kan een draadpool worden gevormd om ander AEM werk te verhinderen zich in te mengen met de capaciteit van het Eak om inhoud op geschikte wijze te indexeren. Om dit te doen, zou u moeten:
+In uitzonderlijke omstandigheden, kan de draadpool die wordt gebruikt om asychronous indexing te beheren overbelast worden. Om het indexeren proces te isoleren, kan een draadpool worden gevormd om ander AEM werk te verhinderen met de capaciteit van het Eak om inhoud op geschikte wijze te indexeren. Om dit te doen, zou u moeten:
 
 1. Definieer een nieuwe, geïsoleerde draadpool voor de Apache Sling Scheduler voor asynchrone indexering:
 
-   * Navigeer in de betrokken AEM-instantie naar AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler of ga naar https://&lt;host>:&lt;port>/system/console/configMgr (bijvoorbeeld [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
+   * Navigeer in de betreffende AEM naar AEM OSGi Web Console>OSGi>Configuration>Apache Sling Scheduler of ga naar https://&lt;host>:&lt;port>/system/console/configMgr (bijvoorbeeld [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr))
    * Voeg een item aan het veld &quot;Toegestane threads&quot; toe met de waarde &quot;eikel&quot;.
    * Klik op Opslaan in de rechterbenedenhoek om de wijzigingen op te slaan.
+
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
 1. Controleer of de nieuwe Apache Sling Scheduler-thread-pool is geregistreerd en wordt weergegeven in de Apache Sling Scheduler-webconsole.
 
-   * Navigeer naar de AEM OSGi Webconsole>Status>Sling Scheduler of ga naar https://&lt;host>:&lt;port>/system/console/status-slingplanner (bijvoorbeeld [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
+   * Navigeer naar de AEM OSGi Web console>Status>Sling Scheduler of ga naar https://&lt;host>:&lt;port>/system/console/status-slingplanner (bijvoorbeeld [http://localhost:4502/system/console/status-slingscheduler](http://localhost:4502/system/console/status-slingscheduler))
    * Controleer of de volgende poolitems bestaan:
 
       * ApacheSlingoak
       * ApacheSlingdefault
+
    ![chlimage_1-120](assets/chlimage_1-120.png)
 
 ## De waarnemingswachtrij is vol {#observation-queue-is-full}
@@ -122,10 +127,10 @@ Ga als volgt te werk om een vast opnieuw indexeringsproces te identificeren en t
 
 
 
-1. Start AEM opnieuw nadat u alle informatie hebt verzameld die in Stap 1 is beschreven.
+1. Na het verzamelen van alle informatie die in Stap 1 wordt geschetst, begin AEM opnieuw.
 
    * Het opnieuw opstarten van AEM kan het probleem oplossen in geval van een hoge gelijktijdige belasting (overloop van de waarnemingswachtrij of iets dergelijks).
-   * Als het probleem niet wordt opgelost door het opnieuw opstarten, opent u een probleem met de [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) van Adobe en verstrekt u alle informatie die in stap 1 is verzameld.
+   * Als het probleem niet wordt opgelost door een nieuwe toepassing, opent u een probleem met de [Adobe-klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) en verstrekt u alle informatie die in stap 1 is verzameld.
 
 ## Het veilig aborteren van asynchrone re-indexering {#safely-aborting-asynchronous-re-indexing}
 
@@ -141,8 +146,9 @@ Voer de volgende stappen uit om opnieuw indexeren veilig af te breken:
    * Navigeer naar de juiste IndexStats MBean via de JMX-console door naar AEM OSGi Web Console>Main>JMX of https://&lt;host>:&lt;port>/system/console/jmx (bijvoorbeeld [http://localhost:4502/system/console/jmx](http://localhost:4502/system/console/jmx)) te gaan.
    * Open de IndexStats MBean op basis van de opnieuw indexerende weg die u wilt tegenhouden ( `async`, `async-reindex`, of `fulltext-async`)
 
-      * Om de aangewezen weg en zo de IndexStats MBean instantie te identificeren, bekijk het &quot;async&quot;bezit van de Indexen van het Eak. De eigenschap &quot;async&quot; bevat de naam van het pad: `async`, `async-reindex`, of `fulltext-async`.
-      * Het pad is ook beschikbaar via Indexbeheer van AEM in de kolom &quot;Async&quot;. Navigeer naar Operations>Diagnosis>Indexbeheer om Indexbeheer te openen.
+      * Om de aangewezen weg en zo de IndexStats MBean instantie te identificeren, bekijk het &quot;async&quot;bezit van de Indexen van het Eak. De eigenschap &quot;async&quot; bevat de naam van het pad: `async`, `async-reindex`of `fulltext-async`.
+      * De strook is ook beschikbaar door tot AEM Manager van de Index in de kolom &quot;Async&quot;toegang te hebben. Navigeer naar Operations>Diagnosis>Indexbeheer om Indexbeheer te openen.
+
    ![chlimage_1-121](assets/chlimage_1-121.png)
 
 1. Roep het `abortAndPause()` bevel op aangewezen `IndexStats` MBean aan.
@@ -157,6 +163,7 @@ Voer de volgende stappen uit om opnieuw indexeren veilig af te breken:
 
          * `/oak:index/someNewIndex@type=disabled`
       * of verwijder de indexdefinitie volledig
+
    Leg de wijzigingen vast in de opslagplaats wanneer deze zijn voltooid.
 
 1. Tot slot hervat asychronous indexing on the aborted indexing lane.
@@ -165,4 +172,4 @@ Voer de volgende stappen uit om opnieuw indexeren veilig af te breken:
 
 ## Langzaam opnieuw indexeren voorkomen {#preventing-slow-re-indexing}
 
-Het is aan te bevelen om tijdens stille periodes (bijvoorbeeld, niet tijdens een grote inhoudspen), en ideaal tijdens onderhoudsvensters opnieuw te indexeren wanneer het laden van AEM gekend en gecontroleerd is. Zorg er ook voor dat de herindexering niet plaatsvindt tijdens andere onderhoudsactiviteiten.
+Het is aan te bevelen om tijdens stille periodes (bijvoorbeeld, niet tijdens een grote inhoudspen), en ideaal tijdens onderhoudsvensters opnieuw te indexeren wanneer AEM lading gekend en gecontroleerd is. Zorg er ook voor dat de herindexering niet plaatsvindt tijdens andere onderhoudsactiviteiten.
