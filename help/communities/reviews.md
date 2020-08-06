@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1236'
+ht-degree: 0%
 
 ---
 
@@ -41,77 +44,94 @@ Selecteer de geplaatste `Reviews` component die u wilt openen en selecteer het `
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
-Geef onder het tabblad **[!UICONTROL Toegestane beoordelingen]** de volledige lijst met classificaties op die aan de leden moet worden weergegeven. De eerste rating moet een algemene/algemene rating zijn, aangezien de rating de gemiddelde rating voor de `Review Summary (Display)` component vormt. De volgende twee classificaties in de standaardconfiguratie moeten een andere titel krijgen dan &quot;Subrating 1&quot; of &quot;Subrating 2&quot;.
+Geef onder het **[!UICONTROL Allowed Ratings]** tabblad de volledige lijst met classificaties op die aan de leden moet worden weergegeven. De eerste rating moet een algemene/algemene rating zijn, aangezien de rating de gemiddelde rating voor de `Review Summary (Display)` component vormt. De volgende twee classificaties in de standaardconfiguratie moeten een andere titel krijgen dan &quot;Subrating 1&quot; of &quot;Subrating 2&quot;.
 
 ![chlimage_1-342](assets/chlimage_1-342.png)
 
-* **[!UICONTROL Toegestane waarderingen]**
+* **[!UICONTROL Allowed Ratings]**
 
    Een lijst met waarderingen waaruit een lid kan kiezen.
 
    Gebruik de toetsen Pijl-omhoog, Pijl-omlaag en Pijl-verwijderen om de zichtbare selecties te wijzigen.
 
-   Klik op Item **** toevoegen om een andere beoordelingskeuze toe te voegen.
+   Klik **[!UICONTROL Add Item]** om een andere beoordelingskeuze toe te voegen.
 
-Voer onder het tabblad **[!UICONTROL Vereiste beoordelingen]** opnieuw items in uit de lijst **[!UICONTROL Toegestane beoordelingen]** die moeten worden beoordeeld. Als een item alleen wordt opgegeven op het tabblad Toegestane waarderingen, kan het item niet worden gemarkeerd wanneer het door het lid wordt verzonden.
+Voer onder het **[!UICONTROL Required Ratings]** tabblad opnieuw items in uit de lijst met items **[!UICONTROL Allowed Ratings]** die moeten worden beoordeeld. Als een item alleen wordt opgegeven op het tabblad Toegestane waarderingen, kan het item niet worden gemarkeerd wanneer het door het lid wordt verzonden.
 
 Op de website worden vereiste classificaties gemarkeerd met een sterretje. Als een item vereist is en niet is gemarkeerd, wordt een bericht weergegeven aan het lid en wordt de verzending geweigerd totdat alle vereiste beoordelingen zijn gemarkeerd.
 
 ![chlimage_1-343](assets/chlimage_1-343.png)
 
-* **[!UICONTROL Vereiste beoordelingen]**
+* **[!UICONTROL Required Ratings]**
 
    Een subset van toegestane ratings die aangeeft welke ratings vereist zijn.
 
    Gebruik de toetsen Pijl-omhoog, Pijl-omlaag en Pijl-verwijderen om de zichtbare selecties te wijzigen.
 
-   Klik op Item **** toevoegen om een andere antwoordkeuze toe te voegen.
+   Klik **[!UICONTROL Add Item]** om een andere reactieoptie toe te voegen.
 
 >[!NOTE]
 >
->Als een item wordt ingevoerd op het tabblad **[!UICONTROL Vereiste waarderingen]** dat niet is opgegeven op het tabblad **[!UICONTROL Toegestane waarderingen]** , wordt het item niet opgenomen in de te beoordelen items.
+>Als een item wordt ingevoerd op het **[!UICONTROL Required Ratings]** tabblad dat niet is opgegeven op het **[!UICONTROL Allowed Ratings]** tabblad, wordt het item niet opgenomen in de items waarvan een score moet worden toegekend.
 
-Geef op onder het tabblad **[!UICONTROL Revisies]** op hoe revisies worden verwerkt.
+Geef onder het **[!UICONTROL Reviews]** tabblad op hoe revisies worden verwerkt.
 
-![chlimage_1-340](assets/chlimage_1-344.png)
+![chlimage_1-344](assets/chlimage_1-344.png)
 
-* **[!UICONTROL Reacties]** toestaan Als deze optie is ingeschakeld, kunt u reacties op revisies toestaan. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Replies]**
+Als deze optie is ingeschakeld, kunt u reacties op revisies toestaan. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Gesloten]** Als deze optie is ingeschakeld, wordt de revisie gesloten voor nieuwe revisies en reacties. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Closed]**
+Als deze optie is ingeschakeld, wordt de revisie afgesloten voor nieuwe revisies en antwoorden. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Bestand uploaden]** toestaan als deze optie is ingeschakeld, mogen bestandsbijlagen worden geüpload voor de revisie. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow File Uploads]**
+Als deze optie is ingeschakeld, mogen bestandsbijlagen worden geüpload voor de revisie. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Maximale bestandsgrootte]** is alleen relevant als **[!UICONTROL Uploaden]** van bestand toestaan is ingeschakeld. Dit veld beperkt de grootte (in bytes) van een geüpload bestand. De standaardwaarde is 10 MB.
+* **[!UICONTROL Max File Size]**
+Alleen relevant als **[!UICONTROL Allow File Uploads]** is gecontroleerd. Dit veld beperkt de grootte (in bytes) van een geüpload bestand. De standaardwaarde is 10 MB.
 
-* **[!UICONTROL Maximale berichtlengte]** Maximum aantal tekens dat in het tekstvak mag worden ingevoerd. De standaardwaarde is 4096 tekens.
+* **[!UICONTROL Max Message Length]**
+Maximumaantal tekens dat in het tekstvak kan worden ingevoerd. De standaardwaarde is 4096 tekens.
 
-* **[!UICONTROL Alleen toegestane bestandstypen]** relevant als **[!UICONTROL Uploaden]** van bestand toestaan is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+* **[!UICONTROL Allowed File Types]**
+Alleen relevant als **[!UICONTROL Allow File Uploads]** is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen worden opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
-* **[!UICONTROL De Rich Text Editor]** Als deze optie is ingeschakeld, kunnen berichten worden ingevoerd met markeringen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Rich Text Editor]**
+Als deze optie ingeschakeld is, kunnen er berichten met markeringen worden ingevoerd. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Stemmen]** toestaan Indien ingeschakeld, neemt u de functie Stemmen op voor een onderwerp. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Voting]**
+Indien ingeschakeld, neemt u de functie Stemmen op voor een onderwerp. De optie Standaard is uitgeschakeld.
 
-Geef op onder het tabblad **[!UICONTROL Gebruikersmodernisering]** op hoe de geposte revisies worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte revisies worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
 
 ![chlimage_1-345](assets/chlimage_1-345.png)
 
-* **[!UICONTROL Pre-Moderation]** Als deze optie is ingeschakeld, moeten revisies worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Pre-Moderation]**
+Als deze optie is ingeschakeld, moeten revisies worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Revisies]** verwijderen Als deze optie is ingeschakeld, kan het lid dat de revisie heeft geplaatst deze verwijderen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Delete Reviews]**
+Als deze optie is ingeschakeld, kan het lid dat de revisie heeft geplaatst deze verwijderen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Ontken Revisies]** Als deze optie is ingeschakeld, staan moderatoren toe om beoordelingen te weigeren. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Deny Reviews]**
+Als gecontroleerd, sta moderators toe om overzichten te ontkennen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Sluit Revisies/open Revisies]** als deze optie is ingeschakeld, staan moderatoren toe de revisies te sluiten en opnieuw te openen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Close / Reopen Reviews]**
+Als deze optie ingeschakeld is, kan de moderator de revisies sluiten en opnieuw openen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Als u Revisies]** markeren inschakelt, kunnen leden beoordelingen als onjuist markeren. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Flag Reviews]**
+Als deze optie is ingeschakeld, kunnen leden beoordelingen als onjuist markeren. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Lijst]** met redenen voor vlagAls deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst aangeven waarom een revisie niet geschikt is. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Flag Reason List]**
+Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst de reden kiezen waarom een revisie als onjuist is gemarkeerd. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Reden]** voor aangepaste markering Als dit selectievakje is ingeschakeld, kunnen leden hun eigen reden opgeven om een revisie als ongeschikt te bestempelen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Custom Flag Reason]**
+Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een revisie als ongeschikt te bestempelen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL De Drempel]** van de modernisering gaat het aantal tijden in een overzicht door leden moet worden gemarkeerd alvorens moderators worden meegedeeld. De standaardwaarde is één keer (1).
+* **[!UICONTROL Moderation Threshold]**
+Voer het aantal keren in dat een revisie door leden moet worden gemarkeerd voordat moderatoren op de hoogte worden gesteld. De standaardwaarde is één keer (1).
 
-* **[!UICONTROL Laginglimiet]** Voer het aantal keren in dat een revisie moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan de **[!UICONTROL moderatiedrempel]**. De standaardwaarde is 5.
+* **[!UICONTROL Flagging Limit]**
+Voer het aantal keren in dat een revisie moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **[!UICONTROL Moderation Threshold]** getal. De standaardwaarde is 5.
 
 ### Een revisieoverzicht (weergave) toevoegen aan een pagina {#adding-a-review-summary-display-to-a-page}
 
@@ -135,15 +155,15 @@ Wanneer de [vereiste client-side bibliotheken](reviews-basics.md#essentials-for-
 
 Selecteer de geplaatste `Reviews Summary (Display)` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
 
-![chlimage_1-347](assets/chlimage_1-347.png)
+![chlimage_1-349](assets/chlimage_1-347.png)
 
-Onder het tabblad Overzicht **** revisie
+Onder het **[!UICONTROL Review Summary]** tabblad
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![chlimage_1-347](assets/chlimage_1-348.png)
 
 * `Review Path`
 
-   ga of doorblader aan de geplaatste instantie van de `reviews`component in om samen te vatten, bijvoorbeeld, als toegevoegd aan de Web-pagina van de plaats van de [Ingenieur Geometrixx,](getting-started.md) de weg zou zijn:
+   ga of doorblader aan de geplaatste instantie van de `reviews`component in om samen te vatten, bijvoorbeeld, als toegevoegd aan de Web-pagina van de plaats van de Ingenieur van de [Geometrixx,](getting-started.md) de weg zou zijn:
 
    /content/sites/engc/nl/page/jcr:content/content/primary/reviews
 
@@ -159,23 +179,23 @@ Door het Type van Middel van Commentaar te veranderen, zal het commentaarsysteem
 
 Zodra de types van douanemiddel bekend zijn, ga de Wijze [van het](../../help/sites-authoring/default-components-designmode.md) Ontwerp in en klik op de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
-Onder het lusje van de Types **[!UICONTROL van Middel, specificeer douane resourceType voor nieuwe instanties van de]** `Comments or Voting`componenten:
+Geef onder het **[!UICONTROL Resource Types]** tabblad het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting`componenten:
 
-![chlimage_1-349](assets/chlimage_1-349.png)
+![chlimage_1-347](assets/chlimage_1-349.png)
 
-* **[!UICONTROL Type bron van opmerking]**
+* **[!UICONTROL Comment Resource Type]**
 
    Navigeer naar het resourceType van een uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
 
    Deze bron identificeert het resourceType van de UGC die is gemaakt wanneer een bezoeker een opmerking plaatst.
 
-* **[!UICONTROL Type stembron]**
+* **[!UICONTROL Voting Resource Type]**
 
    Navigeer aan resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
 
    Met deze bron wordt het bronnentype van de UGC geïdentificeerd die wordt gemaakt wanneer een bezoeker een stem plaatst.
 
-* **[!UICONTROL Brontype voor opmerkingensysteem]**
+* **[!UICONTROL Comment System Resource Type]**
 
    Navigeer aan resourceType van een uitgebreide `comments`component (het Systeem van de Commentaar) in /apps. Leeg laten tenzij het paginasjabloon het opmerkingensysteem [dynamisch in het onderliggende script bevat](scf.md#add-or-include-a-communities-component) in plaats van als bron (knooppunt comments) aan de pagina te worden toegevoegd. Lees meer over de [{include} helper](handlebars-helpers.md#include)
 
