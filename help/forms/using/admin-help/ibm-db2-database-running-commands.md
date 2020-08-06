@@ -1,8 +1,8 @@
 ---
 title: '"IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud"'
 seo-title: '"IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud"'
-description: 'Dit document bevat een lijst met IBM DB2-opdrachten die worden aanbevolen voor regelmatig onderhoud van uw AEM-formulierdatabase. '
-seo-description: 'Dit document bevat een lijst met IBM DB2-opdrachten die worden aanbevolen voor regelmatig onderhoud van uw AEM-formulierdatabase. '
+description: 'Dit document bevat een lijst met IBM DB2-opdrachten die worden aanbevolen voor regelmatig onderhoud van de database met AEM formulieren. '
+seo-description: 'Dit document bevat een lijst met IBM DB2-opdrachten die worden aanbevolen voor regelmatig onderhoud van de database met AEM formulieren. '
 uuid: 235d59df-b9b9-4770-8b7d-00713701c3c2
 contentOwner: admin
 content-type: reference
@@ -11,17 +11,20 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '413'
+ht-degree: 0%
 
 ---
 
 
 # IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud {#ibm-db-database-running-commands-for-regular-maintenance}
 
-De volgende IBM DB2-opdrachten worden aanbevolen voor regelmatig onderhoud van uw AEM-formulierdatabase. Voor gedetailleerde informatie over onderhoud en prestaties het stemmen voor uw gegevensbestand DB2, zie de Gids *van het Beleid van* IBM DB2.
+De volgende IBM DB2-opdrachten worden aanbevolen voor regelmatig onderhoud van de database met AEM formulieren. Voor gedetailleerde informatie over onderhoud en prestaties het stemmen voor uw gegevensbestand DB2, zie de Gids *van het Beleid van* IBM DB2.
 
-* **** runframes: Dit bevel werkt statistieken bij die de fysieke kenmerken van een gegevensbestandlijst, samen met zijn bijbehorende indexen beschrijven. Dynamische SQL-instructies die door AEM-formulieren worden gegenereerd, gebruiken automatisch deze bijgewerkte statistieken, maar statische SQL-instructies die in een database zijn gemaakt, vereisen dat de `db2rbind` opdracht ook wordt uitgevoerd.
-* **** db2rbind: Deze opdracht koppelt alle pakketten in de database. Gebruik deze opdracht nadat u het `runstats` hulpprogramma hebt uitgevoerd om alle pakketten in de database opnieuw te valideren.
-* **** reorg tabel of index: Dit bevel controleert of een reorganisatie van sommige lijsten en indexen wordt vereist.
+* **runframes:** Dit bevel werkt statistieken bij die de fysieke kenmerken van een gegevensbestandlijst, samen met zijn bijbehorende indexen beschrijven. Dynamische SQL-instructies die door AEM formulieren worden gegenereerd, gebruiken automatisch deze bijgewerkte statistieken, maar statische SQL-instructies die in een database zijn gemaakt, vereisen dat de `db2rbind` opdracht ook wordt uitgevoerd.
+* **db2rbind:** Deze opdracht koppelt alle pakketten in de database. Gebruik deze opdracht nadat u het `runstats` hulpprogramma hebt uitgevoerd om alle pakketten in de database opnieuw te valideren.
+* **reorg tabel of index:** Dit bevel controleert of een reorganisatie van sommige lijsten en indexen wordt vereist.
 
    Aangezien uw gegevensbestanden groeien en veranderen, is het opnieuw berekenen van lijststatistieken kritiek aan het verbeteren van gegevensbestandprestaties en zou regelmatig moeten worden gedaan. Deze opdrachten kunnen handmatig worden uitgevoerd met behulp van scripts of met behulp van een uitsnijdtaak.
 
@@ -35,7 +38,7 @@ Voor grotere gegevensbestanden, zoals voor 100.000 gebruikers of 10.000 groepen,
 
 ## De opdracht runtime gebruiken in uw AEM-formulierdatabase {#use-the-runstats-command-on-your-aem-forms-database}
 
-Voer de `runstats` opdracht uit op de volgende databasetabellen en -indexen van AEM-formulieren.
+Voer de `runstats` opdracht uit op de volgende AEM databasetabellen en -indexen van formulieren.
 
 >[!NOTE]
 >
@@ -65,9 +68,9 @@ Raadpleeg de documentatie van de fabrikant van de database voor de juiste syntax
      TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY FOR INDEXES ALL
 ```
 
-## Voer de opdracht reorg uit op uw AEM-formulierdatabase {#run-the-reorg-command-on-your-aem-forms-database}
+## Voer de opdracht reorg uit op de database van uw AEM formulieren {#run-the-reorg-command-on-your-aem-forms-database}
 
-Voer de `reorg` opdracht uit op de volgende databasetabellen en -indexen van AEM-formulieren. Raadpleeg de documentatie van de fabrikant van de database voor de juiste syntaxis en het juiste gebruik.
+Voer de `reorg` opdracht uit op de volgende AEM databasetabellen en -indexen van formulieren. Raadpleeg de documentatie van de fabrikant van de database voor de juiste syntaxis en het juiste gebruik.
 
 ```as3
      TABLE <schema>.EDCPRINCIPALGROUPENTITY 
