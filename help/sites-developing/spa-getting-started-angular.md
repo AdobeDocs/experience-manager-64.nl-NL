@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '1065'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ De auteurseigenschap van het KUUROORD biedt een uitvoerige oplossing voor het st
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het Hoekkader. Voor het overeenkomstige document voor het kader van de Reactie zie Begonnen [Worden met SPAs in AEM - Reageren](/help/sites-developing/spa-getting-started-react.md).
+>Dit artikel is gebaseerd op het Hoekkader. Voor het overeenkomstige document voor het kader van de Reactie zie [Begonnen met SPAs in AEM - Reageer](/help/sites-developing/spa-getting-started-react.md).
 
 >[!NOTE]
 >De eigenschap van de Redacteur van de Toepassing van de Enige-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
@@ -55,7 +58,7 @@ Naast de verwachte Hoekafhankelijkheid, kan de steekproefSPA extra bibliotheken 
 
 ### Afhankelijkheden {#dependencies}
 
-Het `package.json` dossier bepaalt de vereisten van het algemene pakket van SPA. De minimaal vereiste AEM-afhankelijkheden worden hier vermeld.
+Het `package.json` dossier bepaalt de vereisten van het algemene pakket van SPA. De minimum vereiste AEM gebiedsdelen zijn hier vermeld.
 
 ```
 "dependencies": {
@@ -110,11 +113,11 @@ Bij het ontwikkelen van de app wordt [Webpack](https://webpack.js.org/) gebruikt
 
 `"build": "ng build --build-optimizer=false && clientlib",`
 
-Nadat het pakket is gemaakt, kan het worden geüpload naar een AEM-instantie.
+Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
-### AEM-projectarchetype {#aem-project-archetype}
+### Projectarchetype AEM {#aem-project-archetype}
 
-Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
+Om het even welk AEM project zou hefboomwerking het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)van het Project, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -255,11 +258,11 @@ export class ImageComponent {
 MapTo('my-angular-app/components/image')(ImageComponent, ImageEditConfig);
 ```
 
-Het centrale idee van SPAs in AEM is het idee om de componenten van SPA aan componenten AEM in kaart te brengen en de component bij te werken wanneer de inhoud (en vice versa) wordt gewijzigd. Zie het Overzicht [van de Redacteur van het document](/help/sites-developing/spa-overview.md) SPA van dit communicatie model.
+Het centrale idee van SPAs in AEM is het idee om de componenten van SPA aan AEM componenten in kaart te brengen en de component bij te werken wanneer de inhoud (en vice versa) wordt gewijzigd. Zie het Overzicht [van de Redacteur van het document](/help/sites-developing/spa-overview.md) SPA van dit communicatie model.
 
 `MapTo('my-angular-app/components/image')(Image, ImageEditConfig);`
 
-De `MapTo` methode brengt de component van het KUUROORD aan de component AEM in kaart. Het ondersteunt het gebruik van één tekenreeks of een array van tekenreeksen.
+De `MapTo` methode brengt de component van het KUUROORD aan de AEM in kaart. Het ondersteunt het gebruik van één tekenreeks of een array van tekenreeksen.
 
 `ImageEditConfig` is een configuratievoorwerp dat tot het toelaten van de auteursmogelijkheden van een component bijdraagt door de noodzakelijke meta-gegevens voor de redacteur te verstrekken om placeholders te produceren
 
@@ -288,10 +291,10 @@ Componenten in een toepassing van één pagina moeten regelmatig informatie uitw
 
 ## Volgende stappen {#next-steps}
 
-Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [Begonnen het Worden met de Redacteur AEM SPA - het Leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)van Gebeurtenissen WKND.
+Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [Begonnen het Worden met de Redacteur van het AEMKUUROORD - het Leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)van Gebeurtenissen WKND.
 
-Voor verdere informatie over hoe te om zich te organiseren om SPAs voor AEM te ontwikkelen zie het artikel [het Ontwikkelen van SPAs voor AEM](/help/sites-developing/spa-architecture.md).
+Voor verdere informatie over hoe te om zich te organiseren om SPAs voor AEM te ontwikkelen zie het artikel [het Ontwikkelen SPAs voor AEM](/help/sites-developing/spa-architecture.md).
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt, zie het artikel [Dynamisch Model aan de Afbeelding van de Component voor SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPAs in AEM voor een kader buiten React of Hoekig uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor AEM werkt, verwijs naar het artikel van het Blauwdruk [van het](/help/sites-developing/spa-blueprint.md) KUUROORD.
+Als u wenst om SPAs in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor AEM werken, naar het artikel van de Vervaging van het [KUUROORD](/help/sites-developing/spa-blueprint.md) verwijzen.
