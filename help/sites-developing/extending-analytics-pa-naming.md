@@ -1,8 +1,8 @@
 ---
 title: Serverpaginanamen voor analyse implementeren
 seo-title: Serverpaginanamen voor analyse implementeren
-description: Adobe Analytics gebruikt de eigenschap s.pageName om unieke pagina's te identificeren en de gegevens die voor de pagina's worden verzameld te koppelen
-seo-description: Adobe Analytics gebruikt de eigenschap s.pageName om unieke pagina's te identificeren en de gegevens die voor de pagina's worden verzameld te koppelen
+description: Adobe Analytics gebruikt de eigenschap s.pageName om unieke pagina's te identificeren en de gegevens te koppelen die voor de pagina's worden verzameld
+seo-description: Adobe Analytics gebruikt de eigenschap s.pageName om unieke pagina's te identificeren en de gegevens te koppelen die voor de pagina's worden verzameld
 uuid: 37b92099-0cce-4b2d-b55c-928f636dbd7e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: be2aa297-5b78-4b1d-8ff1-e6a585a177dd
 translation-type: tm+mt
 source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+workflow-type: tm+mt
+source-wordcount: '885'
+ht-degree: 0%
 
 ---
 
 
 # Serverpaginanamen voor analyse implementeren{#implementing-server-side-page-naming-for-analytics}
 
-Adobe Analytics gebruikt de `s.pageName` eigenschap om pagina&#39;s op unieke wijze te identificeren en om de gegevens die voor de pagina&#39;s worden verzameld, te koppelen. Doorgaans voert u de volgende taken uit in AEM om een waarde toe te wijzen aan deze eigenschap die AEM naar Analytics verzendt:
+Adobe Analytics gebruikt de `s.pageName` eigenschap om pagina&#39;s op unieke wijze te identificeren en om de gegevens die voor de pagina&#39;s worden verzameld, te koppelen. Typisch, voert u de volgende taken in AEM uit om een waarde aan dit bezit toe te wijzen dat AEM naar Analytics verzendt:
 
-* Gebruik het Cloud Service Framework van Analytics om een CQ-variabele toe te wijzen aan de `s.pageName` eigenschap Analytics. (Zie Componentgegevens [toewijzen met de eigenschappen](/help/sites-administering/adobeanalytics-mapping.md)van Adobe Analytics.)
+* Gebruik het Cloud Service Framework van Analytics om een CQ-variabele toe te wijzen aan de `s.pageName` eigenschap Analytics. (Zie Componentgegevens [toewijzen met Adobe Analytics-eigenschappen](/help/sites-administering/adobeanalytics-mapping.md).)
 
-* Ontwerp de paginacomponent zodat deze de CQ-variabele bevat die u aan de `s.pageName` eigenschap toewijst. (Zie Adobe Analytics Tracking [implementeren voor aangepaste componenten](/help/sites-developing/extending-analytics-components.md).)
+* Ontwerp de paginacomponent zodat deze de CQ-variabele bevat die u aan de `s.pageName` eigenschap toewijst. (Zie Adobe Analytics-tracking [implementeren voor aangepaste componenten](/help/sites-developing/extending-analytics-components.md).)
 
-Om analysegegevens in de console van Plaatsen en in Inzicht van de Inhoud bloot te stellen, vereist AEM de waarde van het `s.pageName` bezit voor elke pagina. De AEM Analytics Java API bepaalt de `AnalyticsPageNameProvider` interface die u uitvoert om de console van Plaatsen en Inzichten van de Inhoud van de waarde van het `s.pageName` bezit te voorzien. Uw `AnaltyicsPageNameProvider` dienst verhelpt het pageName bezit op de server voor rapporteringsdoeleinden, aangezien het dynamisch kan worden geplaatst gebruikend Javascript op de cliënt voor het volgen doeleinden.
+Om analysegegevens in de console van Plaatsen en in Inzicht van de Inhoud bloot te stellen, AEM vereist de waarde van het `s.pageName` bezit voor elke pagina. De AEM Analytics Java API bepaalt de `AnalyticsPageNameProvider` interface die u uitvoert om de console van Plaatsen en Inzicht van de Inhoud van de waarde van het `s.pageName` bezit te voorzien. Uw `AnaltyicsPageNameProvider` dienst verhelpt het pageName bezit op de server voor rapporteringsdoeleinden, aangezien het dynamisch kan worden geplaatst gebruikend Javascript op de cliënt voor het volgen doeleinden.
 
 ## De service Default Analytics Page Name Provider {#the-default-analytics-page-name-provider-service}
 
-De `DefaultPageNameProvider` dienst is de standaarddienst die de waarde van het `s.pageName` bezit bepaalt om voor het terugwinnen van de gegevens van Analytics voor een pagina te gebruiken. De service werkt samen met de component voor de pagina van de AEM-basis ( `/libs/foundation/components/page`). Deze paginacomponent definieert de volgende CQ-variabelen die aan de `s.pageName` eigenschap moeten worden toegewezen:
+De `DefaultPageNameProvider` dienst is de standaarddienst die de waarde van het `s.pageName` bezit bepaalt om voor het terugwinnen van de gegevens van Analytics voor een pagina te gebruiken. De service werkt samen met de component AEM pagina ( `/libs/foundation/components/page`). Deze paginacomponent definieert de volgende CQ-variabelen die aan de `s.pageName` eigenschap moeten worden toegewezen:
 
 * `pagedata.path`: De waarde wordt ingesteld op het paginapad.
 * `pagedata.title`: De waarde wordt ingesteld op de paginatitel.
