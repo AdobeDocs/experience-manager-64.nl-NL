@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '15466'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 **Informatie over de Document Security Service**
 
-Met de documentbeveiligingsservice kunnen gebruikers op dynamische wijze instellingen voor vertrouwelijkheid toepassen op Adobe PDF-documenten en de documenten beheren, ongeacht hoe breed ze zijn verspreid.
+Met de Document Security-service kunnen gebruikers op dynamische wijze instellingen voor vertrouwelijkheid toepassen op Adobe PDF-documenten en de controle houden over de documenten, ongeacht de mate waarin deze worden verspreid.
 
 Met de Document Security-service wordt voorkomen dat informatie buiten het bereik van de gebruiker wordt verspreid doordat gebruikers de controle kunnen behouden over de manier waarop ontvangers het met een beleid beveiligde PDF-document gebruiken. Een gebruiker kan opgeven wie een document mag openen, hoe hij het kan gebruiken en het document na de verspreiding ervan controleren. Een gebruiker kan ook dynamisch de toegang tot een document beheren dat met een beleid is beveiligd en kan de toegang tot het document zelfs dynamisch intrekken.
 
@@ -41,7 +44,7 @@ U kunt deze taken uitvoeren met de documentbeveiligingsservice:
 * Beleid verwijderen. Zie Beleid [verwijderen voor meer informatie](protecting-documents-policies.md#deleting-policies).
 * Beleid toepassen op PDF-documenten. Zie Beleid [toepassen op PDF-documenten](protecting-documents-policies.md#applying-policies-to-pdf-documents)voor meer informatie.
 * Beleid verwijderen uit PDF-documenten. Zie Beleid [verwijderen uit PDF-documenten](protecting-documents-policies.md#removing-policies-from-pdf-documents)voor meer informatie.
-* Met een beleid beveiligde documenten controleren. Zie Met [beleid beveiligde PDF-documenten](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)controleren voor meer informatie.
+* Met een beleid beveiligde documenten van Inspect. Zie Met [beleid beveiligde PDF-documenten](protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)controleren voor meer informatie.
 * Toegang tot PDF-documenten intrekken. Zie Toegang tot documenten [intrekken voor meer informatie](protecting-documents-policies.md#revoking-access-to-documents).
 * Toegang tot ingetrokken documenten opnieuw instellen. Zie Toegang [tot ingetrokken documenten](protecting-documents-policies.md#reinstating-access-to-revoked-documents)opnieuw instellen voor meer informatie.
 * Watermerken maken. Zie Watermerken [maken voor meer informatie](protecting-documents-policies.md#creating-watermarks).
@@ -49,7 +52,7 @@ U kunt deze taken uitvoeren met de documentbeveiligingsservice:
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ## Beleid maken {#creating-policies}
 
@@ -58,7 +61,7 @@ U kunt beleid programmatisch maken met de Java API voor documentbeveiliging of d
 Het beleid laat u toe om deze taken uit te voeren:
 
 * Geef de personen op die het document kunnen openen. Ontvangers kunnen tot uw organisatie behoren of zich buiten uw organisatie bevinden.
-* Geef op hoe ontvangers het document kunnen gebruiken. U kunt de toegang tot verschillende functies van Acrobat en Adobe Reader beperken. Deze functies omvatten de mogelijkheid om tekst af te drukken en te kopiëren, handtekeningen toe te voegen en opmerkingen toe te voegen aan een document.
+* Geef op hoe ontvangers het document kunnen gebruiken. U kunt de toegang tot verschillende Acrobat- en Adobe Reader-functies beperken. Deze functies omvatten de mogelijkheid om tekst af te drukken en te kopiëren, handtekeningen toe te voegen en opmerkingen toe te voegen aan een document.
 * Wijzig de toegangs- en beveiligingsinstellingen op elk gewenst moment, zelfs nadat u het document met beveiliging hebt gedistribueerd.
 * Controleer het gebruik van het document nadat u het hebt verspreid. U kunt zien hoe het document wordt gebruikt en wie het gebruikt. U kunt bijvoorbeeld erachter komen wanneer iemand het document heeft geopend.
 
@@ -130,7 +133,7 @@ Wanneer u een beleid maakt met de webservice-API, verwijst u naar een bestaand X
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -148,20 +151,20 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw project:
 
-* adobe-rights management-client.jar
-* namespace.jar (als AEM-formulieren worden geïmplementeerd op JBoss)
-* jaxb-api.jar (als AEM-formulieren worden geïmplementeerd op JBoss)
-* jaxb-impl.jar (als AEM-formulieren worden geïmplementeerd op JBoss)
-* jaxb-libs.jar (als AEM-formulieren worden geïmplementeerd op JBoss)
-* jaxb-xjc.jar (als AEM-formulieren worden geïmplementeerd op JBoss)
-* relaxngDatatype.jar (als AEM-formulieren worden geïmplementeerd op JBoss)
-* xsdlib.jar (als AEM-formulieren worden geïmplementeerd op JBoss)
+* adobe-rightsmanagement-client.jar
+* namespace.jar (als AEM Forms wordt opgesteld op JBoss)
+* jaxb-api.jar (als AEM Forms wordt geïmplementeerd op JBoss)
+* jaxb-impl.jar (als AEM Forms wordt geïmplementeerd op JBoss)
+* jaxb-libs.jar (als AEM Forms wordt geïmplementeerd op JBoss)
+* jaxb-xjc.jar (als AEM Forms wordt geïmplementeerd op JBoss)
+* relaxngDatatype.jar (als AEM Forms wordt geïmplementeerd op JBoss)
+* xsdlib.jar (als AEM Forms wordt geïmplementeerd op JBoss)
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-utilities.jar
 * jbossall-client.jar (gebruik een ander JAR-bestand als AEM Forms niet is geïmplementeerd op JBoss)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een API-object voor documentbeveiliging maken**
 
@@ -186,13 +189,13 @@ Wanneer u kenmerken instelt die tot een beleid behoren, kunt u ook versleuteling
 
 * **AES256**: Vertegenwoordigt het AES encryptiealgoritme met een sleutel met 256 bits.
 * **AES128**: Vertegenwoordigt het AES encryptiealgoritme met een sleutel met 128 bits.
-* **** NoEncryption: Vertegenwoordigt geen encryptie.
+* **NoEncryption:** Vertegenwoordigt geen encryptie.
 
 Wanneer u de `NoEncryption` optie opgeeft, kunt u de `PlaintextMetadata` optie niet instellen op `false`. Wanneer u dit probeert, wordt een uitzondering gegenereerd.
 
 >[!NOTE]
 >
->Zie de `Policy` interfacebeschrijving in de API-naslaggids voor [](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM-formulieren voor informatie over andere kenmerken die u kunt instellen.
+>Zie de `Policy` interfacebeschrijving in de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor informatie over andere kenmerken die u kunt instellen.
 
 **Een beleidsitem maken**
 
@@ -247,7 +250,8 @@ Een beleid maken met de API voor documentbeveiliging (Java):
 
       * Het `Policy` object dat het te registreren beleid vertegenwoordigt.
    * Een tekenreekswaarde die staat voor de beleidsset waartoe het beleid behoort.
-   Als u een beheerdersaccount voor AEM-formulieren binnen de verbindingsinstellingen gebruikt om het `DocumentSecurityClient` object te maken, geeft u de naam van de beleidsset op wanneer u de `registerPolicy` methode aanroept. Als u een `null` waarde voor de beleidsreeks overgaat, wordt het beleid gecreeerd in de beheerders *Mijn het beleidsreeks van Beleid* .
+
+   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om het `DocumentSecurityClient` object te maken, geeft u de naam van de beleidsset op wanneer u de `registerPolicy` methode aanroept. Als u een `null` waarde voor de beleidsreeks overgaat, wordt het beleid gecreeerd in de beheerders *Mijn het beleidsreeks van Beleid* .
 
    Als u een gebruiker van de Veiligheid van het Document binnen verbindingsmontages gebruikt, dan kunt u de overbelaste `registerPolicy` methode aanhalen die slechts het beleid goedkeurt. U hoeft dus geen naam voor de beleidsset op te geven. Nochtans, wordt het beleid toegevoegd aan de beleidsreeks genoemd *Mijn Beleid*. Als u niet het nieuwe beleid aan deze beleidreeks wilt toevoegen, dan specificeer een naam van de beleidsreeks wanneer u de `registerPolicy` methode aanhaalt.
 
@@ -279,7 +283,7 @@ Een beleid maken met de API voor documentbeveiliging (webservice):
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -304,7 +308,8 @@ Een beleid maken met de API voor documentbeveiliging (webservice):
 
    * Het `PolicySpec` object dat het te registreren beleid vertegenwoordigt.
    * Een tekenreekswaarde die staat voor de beleidsset waartoe het beleid behoort. U kunt een `null` waarde specificeren die in het beleid resulteert dat aan de *MyPolicy* beleidsreeks wordt toegevoegd.
-   Als u een beheerdersaccount voor AEM-formulieren binnen de verbindingsinstellingen gebruikt om het `DocumentSecurityClient` object te maken, geeft u de naam van de beleidsset op wanneer u de `registerPolicy` methode aanroept.
+
+   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om het `DocumentSecurityClient` object te maken, geeft u de naam van de beleidsset op wanneer u de `registerPolicy` methode aanroept.
 
    Als u een gebruiker van de Veiligheid van het Document SecurityDocument binnen verbindingsmontages gebruikt, dan kunt u de overbelaste `registerPolicy` methode aanhalen die slechts het beleid goedkeurt. U hoeft dus geen naam voor de beleidsset op te geven. Nochtans, wordt het beleid toegevoegd aan de beleidsreeks genoemd *Mijn Beleid*. Als u niet het nieuwe beleid aan deze beleidreeks wilt toevoegen, dan specificeer een naam van de beleidsreeks wanneer u de `registerPolicy` methode aanhaalt.
 
@@ -327,7 +332,7 @@ Als u beleidskenmerken wilt wijzigen met behulp van een webservice (bijvoorbeeld
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-1}
 
@@ -359,7 +364,7 @@ Wanneer het wijzigen van de off-line huurperiode van een beleid gebruikend een W
 
 >[!NOTE]
 >
->Zie de `Policy` interfacebeschrijving in de API-naslaggids voor [](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)AEM-formulieren voor informatie over andere kenmerken die u kunt instellen.
+>Zie de `Policy` interfacebeschrijving in de [AEM Forms API-naslag](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor informatie over andere kenmerken die u kunt instellen.
 
 **Het beleid bijwerken**
 
@@ -418,7 +423,7 @@ Wijzig een bestaand beleid met de API voor documentbeveiliging (webservice):
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -452,7 +457,7 @@ U kunt een bestaand beleid verwijderen met de Java API voor documentbeveiliging 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-2}
 
@@ -472,7 +477,7 @@ Voordat u programmatisch een Document Security-servicebewerking kunt uitvoeren, 
 
 **Het beleid verwijderen**
 
-Als u een beleid wilt verwijderen, geeft u het beleid op dat u wilt verwijderen en de beleidsset waartoe het beleid behoort. De gebruiker van wie de montages worden gebruikt om Vormen aan te halen AEM moet toestemming hebben om het beleid te schrappen; anders treedt een uitzondering op. En als u probeert een beleid te verwijderen dat niet bestaat, treedt een uitzondering op.
+Als u een beleid wilt verwijderen, geeft u het beleid op dat u wilt verwijderen en de beleidsset waartoe het beleid behoort. De gebruiker van wie de montages worden gebruikt om AEM Forms aan te halen moet toestemming hebben om het beleid te schrappen; anders treedt een uitzondering op. En als u probeert een beleid te verwijderen dat niet bestaat, treedt een uitzondering op.
 
 ### Beleid verwijderen met de Java API {#delete-policies-using-the-java-api}
 
@@ -521,7 +526,7 @@ Verwijder een beleid met de API voor documentbeveiliging (webservice):
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -545,13 +550,13 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 U kunt een beleid toepassen op een PDF-document om het document te beveiligen. Als u een beleid toepast op een PDF-document, beperkt u de toegang tot het document. U kunt geen beleid op een document toepassen als het document reeds met een beleid wordt beveiligd.
 
-Terwijl het document is geopend, kunt u ook de toegang tot functies van Acrobat en Adobe Reader beperken, zoals de mogelijkheid om tekst af te drukken en te kopiëren, wijzigingen aan te brengen en handtekeningen en opmerkingen aan een document toe te voegen. Bovendien kunt u een met een beleid beveiligd PDF-document intrekken wanneer u niet langer wilt dat gebruikers het document openen.
+Terwijl het document is geopend, kunt u ook de toegang tot Acrobat- en Adobe Reader-functies beperken, zoals de mogelijkheid om tekst af te drukken en te kopiëren, wijzigingen aan te brengen en handtekeningen en opmerkingen aan een document toe te voegen. Bovendien kunt u een met een beleid beveiligd PDF-document intrekken wanneer u niet langer wilt dat gebruikers het document openen.
 
 U kunt het gebruik van een document dat met een beleid is beveiligd controleren nadat u het hebt verspreid. Dat wil zeggen dat u kunt zien hoe het document wordt gebruikt en wie het gebruikt. U kunt bijvoorbeeld zien wanneer iemand het document heeft geopend.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-3}
 
@@ -585,7 +590,7 @@ Nadat de documentbeveiligingsservice een beleid heeft toegepast op een PDF-docum
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -621,6 +626,7 @@ Een beleid toepassen op een PDF-document met behulp van de API voor documentbeve
       * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde null zijn).
       * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan `null` (als deze parameter null is, moet de vorige parameterwaarde `null`) zijn.
       * A `com.adobe.livecycle.rightsmanagement.Locale` die de scène vertegenwoordigt die voor het selecteren van het malplaatje van MS Office wordt gebruikt. Deze parameterwaarde is optioneel en wordt niet gebruikt voor PDF-documenten. Geef op om een PDF-document te beveiligen. `null`
+
       De `protectDocument` methode retourneert een `RMSecureDocumentResult` object dat het met een beleid beveiligde PDF-document bevat.
 
 
@@ -639,7 +645,7 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -658,12 +664,12 @@ Een beleid toepassen op een PDF-document met behulp van de API voor documentbeve
 1. Maak een API-object voor Document Security Client.
 
    * Maak een `RightsManagementServiceClient` object met de standaardconstructor.
-   * Maak een `RightsManagementServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service Forms (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `RightsManagementServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `RightsManagementServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -691,6 +697,7 @@ Een beleid toepassen op een PDF-document met behulp van de API voor documentbeve
    * Een parameter van de koordoutput die wordt gebruikt om de waarde van beleidsidentificatie op te slaan.
    * Een parameter van de koordoutput die wordt gebruikt om de beleid-beschermde herkenningstekenwaarde op te slaan.
    * Een parameter van de koordoutput die wordt gebruikt om het mime type (bijvoorbeeld, `application/pdf`) op te slaan.
+
    De `protectDocument` methode retourneert een `BLOB` object dat het met een beleid beveiligde PDF-document bevat.
 
 1. Sla het PDF-document op.
@@ -713,7 +720,7 @@ U kunt een beleid verwijderen uit een document dat met een beleid is beveiligd o
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-4}
 
@@ -739,7 +746,7 @@ U kunt een met een beleid beveiligd PDF-document ophalen om een beleid te verwij
 
 **Het beleid verwijderen uit het PDF-document**
 
-U kunt een beleid uit een beleid-beschermd PDF document verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als dat niet het geval is, moet het beleid dat wordt gebruikt om een document te beveiligen de `SWITCH_POLICY` toestemming bevatten om een beleid uit een PDF-document te verwijderen. De gebruiker die is opgegeven in de verbindingsinstellingen voor AEM Forms, moet ook over deze bevoegdheid beschikken. Anders wordt een uitzondering gegenereerd.
+U kunt een beleid uit een beleid-beschermd PDF document verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als dat niet het geval is, moet het beleid dat wordt gebruikt om een document te beveiligen de `SWITCH_POLICY` toestemming bevatten om een beleid uit een PDF-document te verwijderen. De gebruiker die is opgegeven in de AEM Forms-verbindingsinstellingen moet ook over deze machtiging beschikken. Anders wordt een uitzondering gegenereerd.
 
 **Het onbeveiligde PDF-document opslaan**
 
@@ -747,7 +754,7 @@ Nadat de documentbeveiligingsservice een beleid uit een PDF-document heeft verwi
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -807,7 +814,7 @@ Een beleid verwijderen uit een PDF-document dat met een beleid is beveiligd met 
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -840,9 +847,9 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Toegang tot documenten intrekken {#revoking-access-to-documents}
 
@@ -852,7 +859,7 @@ De mogelijkheid om de toegang tot een document in te trekken biedt extra beveili
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-5}
 
@@ -887,7 +894,7 @@ Als u een document wilt intrekken dat met een beleid is beveiligd, geeft u de li
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -950,7 +957,7 @@ De toegang tot een met beleid beveiligd PDF-document intrekken met de API voor d
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -984,9 +991,9 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 [Beleid verwijderen uit Word-documenten](protecting-documents-policies.md#removing-policies-from-word-documents)
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Toegang tot ingetrokken documenten opnieuw instellen {#reinstating-access-to-revoked-documents}
 
@@ -994,7 +1001,7 @@ U kunt de toegang tot een ingetrokken PDF-document opnieuw instellen, zodat alle
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-6}
 
@@ -1023,7 +1030,7 @@ Als u de toegang tot een ingetrokken PDF-document wilt herstellen, moet u de lic
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1082,7 +1089,7 @@ Toegang tot een ingetrokken document opnieuw instellen met de API voor documentb
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -1110,19 +1117,19 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Met beleid beveiligde PDF-documenten controleren {#inspecting-policy-protected-pdf-documents}
 
 U kunt de API (Java en webservice) voor documentbeveiliging gebruiken om PDF-documenten die met een beleid zijn beveiligd, te inspecteren. Als u PDF-documenten inspecteert die met een beleid zijn beveiligd, wordt informatie over het met een beleid beveiligde PDF-document geretourneerd. U kunt bijvoorbeeld bepalen welk beleid is gebruikt om het document te beveiligen en op welke datum het document is beveiligd.
 
-U kunt deze taak niet uitvoeren als uw versie van LiveCycle 8.x of een eerdere versie is. Ondersteuning voor het inspecteren van documenten die met een beleid zijn beveiligd, wordt toegevoegd aan AEM Forms. Als u probeert een document te inspecteren dat met een beleid is beveiligd met LiveCycle 8.x (of eerder), wordt een uitzondering gegenereerd.
+U kunt deze taak niet uitvoeren als uw versie van LiveCycle 8.x of een vroegere versie is. Ondersteuning voor het inspecteren van documenten die met een beleid zijn beveiligd, wordt toegevoegd in AEM Forms. Als u probeert een document te inspecteren dat met een beleid is beveiligd met behulp van LiveCycle 8.x (of eerder), wordt een uitzondering gegenereerd.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-7}
 
@@ -1145,7 +1152,7 @@ Voordat u via programmacode een bewerking met de documentbeveiligingsservice kun
 
 Als u een document wilt inspecteren dat met een beleid is beveiligd, haalt u het op. Als u een document probeert te inspecteren dat niet met een beleid wordt beveiligd of wordt ingetrokken, wordt een uitzondering gegenereerd.
 
-**Document controleren**
+**Het document Inspect**
 
 Nadat u een document hebt opgehaald dat met een beleid is beveiligd, kunt u het controleren.
 
@@ -1159,17 +1166,17 @@ Als het document wordt beveiligd met een beleid dat in een beleidsreeks (buiten 
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Met beleid beveiligde PDF-documenten controleren met de Java API {#inspect-policy-protected-pdf-documents-using-the-java-api}
+### Met Inspect Policy beveiligde PDF-documenten met de Java API {#inspect-policy-protected-pdf-documents-using-the-java-api}
 
-Controleer een PDF-document met beveiligingsbeleid met de API (Java) voor documentbeveiliging:
+Inspect a policy-protected PDF document by the Document Security Service API (Java):
 
 1. Inclusief projectbestanden.
 
-   Neem client-JAR-bestanden, zoals adobe-rightManagement-client.jar, op in het klassenpad van uw Java-project. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
+   Neem client-JAR-bestanden, zoals adobe-rightManagement-client.jar, op in het klassenpad van uw Java-project. Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
 
 1. Maak een API-object voor Document Security Client.
 
@@ -1181,10 +1188,10 @@ Controleer een PDF-document met beveiligingsbeleid met de API (Java) voor docume
    * Maak een `java.io.FileInputStream` object dat het met een beleid beveiligde PDF-document vertegenwoordigt met behulp van de constructor. Geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
    * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
 
-1. Controleer het document.
+1. Inspect het document.
 
    * Maak een `DocumentManager` object door de `RightsManagementClient` methode van het `getDocumentManager` object aan te roepen.
-   * Controleer het document dat met een beleid is beveiligd door de `LicenseManager` methode van het `inspectDocument` object aan te roepen. Geef het `com.adobe.idp.Document` object door dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult` object dat informatie bevat over het document dat met een beleid is beveiligd.
+   * Inspect het document dat met een beleid is beveiligd door de `LicenseManager` methode van het `inspectDocument` object aan te roepen. Geef het `com.adobe.idp.Document` object door dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult` object dat informatie bevat over het document dat met een beleid is beveiligd.
 
 1. Verkrijg informatie over het beleid-beschermde document.
 
@@ -1196,9 +1203,9 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 * &quot;Snel starten (SOAP-modus): Met beleid beveiligde PDF-documenten controleren met de Java API&quot;
 
-### Met beleid beveiligde PDF-documenten controleren met de webservice-API {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
+### Met Inspect Policy beveiligde PDF-documenten met de webservice-API {#inspect-policy-protected-pdf-documents-using-the-web-service-api}
 
-Controleer een PDF-document dat met een beleid is beveiligd met de API (webservice) voor documentbeveiliging:
+Inspect a policy protected PDF document by the Document Security Service API (webservice):
 
 1. Inclusief projectbestanden.
 
@@ -1216,7 +1223,7 @@ Controleer een PDF-document dat met een beleid is beveiligd met de API (webservi
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -1230,9 +1237,9 @@ Controleer een PDF-document dat met een beleid is beveiligd met de API (webservi
    * Vul de bytearray met streamgegevens door de `System.IO.FileStream` `Read` methode van het object aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
    * Vul het `BLOB` object door het `MTOM` veld ervan toe te wijzen met de inhoud van de bytearray.
 
-1. Controleer het document.
+1. Inspect het document.
 
-   Controleer het document dat met een beleid is beveiligd door de `RightsManagementServiceClient` methode van het `inspectDocument` object aan te roepen. Geef het `BLOB` object door dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult` object dat informatie bevat over het document dat met een beleid is beveiligd.
+   Inspect het document dat met een beleid is beveiligd door de `RightsManagementServiceClient` methode van het `inspectDocument` object aan te roepen. Geef het `BLOB` object door dat het met een beleid beveiligde PDF-document bevat. Deze methode retourneert een `RMInspectResult` object dat informatie bevat over het document dat met een beleid is beveiligd.
 
 1. Verkrijg informatie over het beleid-beschermde document.
 
@@ -1247,9 +1254,9 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Watermerken maken {#creating-watermarks}
 
@@ -1261,7 +1268,7 @@ Watermerken helpen de veiligheid van een document te waarborgen door het documen
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -1378,7 +1385,7 @@ Een nieuw watermerk moet bij de dienst van de Veiligheid van het Document worden
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1436,7 +1443,7 @@ Een watermerk maken met de API voor documentbeveiliging (webservice):
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -1466,9 +1473,9 @@ Zie Snel aan de slag voor codevoorbeelden met de Document Security-service:
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Watermerken wijzigen {#modifying-watermarks}
 
@@ -1482,7 +1489,7 @@ Wanneer u een watermerk wijzigt, is de wijziging van invloed op toekomstige docu
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-9}
 
@@ -1524,7 +1531,7 @@ Nadat u de kenmerken van een watermerk hebt gewijzigd, moet u het watermerk bijw
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -1583,7 +1590,7 @@ Wijzig een watermerk met de API voor documentbeveiliging (webservice):
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -1613,20 +1620,20 @@ Zie het volgende snelle begin voor codevoorbeelden met gebruik van de Document S
 
 ## Zoeken naar gebeurtenissen {#searching-for-events}
 
-De dienst van het Beheer van Rechten volgt specifieke acties aangezien zij voorkomen, zoals het toepassen van een beleid op een document, het openen van een beleid-beschermd document, en het intrekken van toegang tot documenten. De controle van de gebeurtenis moet voor de dienst van het Beheer van Rechten worden toegelaten of de gebeurtenissen worden niet gevolgd.
+De dienst van het Rights Management volgt specifieke acties aangezien zij voorkomen, zoals het toepassen van een beleid op een document, het openen van een beleid-beschermd document, en het intrekken van toegang tot documenten. Gebeurteniscontrole moet zijn ingeschakeld voor de service Rights Management of gebeurtenissen worden niet bijgehouden.
 
 Gebeurtenissen behoren tot een van de volgende categorieën:
 
 * Beheerdersgebeurtenissen zijn handelingen die betrekking hebben op een beheerder, zoals het maken van een nieuwe beheerdersaccount.
 * Documentgebeurtenissen zijn handelingen die betrekking hebben op een document, zoals het sluiten van een document dat met een beleid is beveiligd.
 * Beleidsgebeurtenissen zijn acties die betrekking hebben op een beleid, zoals het maken van een nieuw beleid.
-* De gebeurtenissen van de dienst zijn acties met betrekking tot de dienst van het Beheer van Rechten, zoals het synchroniseren met de gebruikersfolder.
+* De gebeurtenissen van de dienst zijn acties met betrekking tot de dienst van het Rights Management, zoals het synchroniseren met de gebruikersfolder.
 
-U kunt zoeken naar specifieke gebeurtenissen met de API of webservice van Rights Management Java. Door naar gebeurtenissen te zoeken, kunt u taken uitvoeren, zoals het creëren van een logboekdossier van bepaalde gebeurtenissen.
+U kunt zoeken naar specifieke gebeurtenissen met de Rights Management Java API of de webservice-API. Door naar gebeurtenissen te zoeken, kunt u taken uitvoeren, zoals het creëren van een logboekdossier van bepaalde gebeurtenissen.
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van het Beheer van Rechten, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van het Rights Management, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 ### Overzicht van de stappen {#summary_of_steps-10}
 
@@ -1641,9 +1648,9 @@ Voer de volgende stappen uit om te zoeken naar een Rights Management-gebeurtenis
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepassing maakt met Java, neemt u de benodigde JAR-bestanden op. Als u webservices gebruikt, moet u ervoor zorgen dat u de proxybestanden opneemt.
 
-**Een Rights Management-client-API-object maken**
+**Een Rights Management Client API-object maken**
 
-Alvorens u een de dienstverrichting van het Beheer van Rechten programmatically kunt uitvoeren, moet u een de dienstcliëntvoorwerp van het Beheer van Rechten tot stand brengen. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient` object. Als u de webservice-API voor Rights Management gebruikt, maakt u een `DocumentSecurityServiceService` object.
+Alvorens u een de dienstverrichting van het Rights Management programmatically kunt uitvoeren, moet u een voorwerp van de de dienstcliënt van het Rights Management tot stand brengen. Als u de Java API gebruikt, maakt u een `DocumentSecurityClient` object. Als u de API voor webservices van het Rights Management gebruikt, maakt u een `DocumentSecurityServiceService` object.
 
 **Geef de gebeurtenissen op waarnaar u wilt zoeken**
 
@@ -1651,23 +1658,23 @@ U moet de gebeurtenis opgeven waarnaar u wilt zoeken. U kunt bijvoorbeeld zoeken
 
 **Zoeken naar de gebeurtenis**
 
-Nadat u de gebeurtenis hebt opgegeven waarnaar moet worden gezocht, kunt u de Rights Management Java API of de Rights Management-webservice-API gebruiken om naar de gebeurtenis te zoeken.
+Nadat u de gebeurtenis hebt opgegeven waarnaar moet worden gezocht, kunt u de Java API voor Rights Managementen of de API voor webservices van Rights Managementen gebruiken om naar de gebeurtenis te zoeken.
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Zoeken naar gebeurtenissen met de Java API {#search-for-events-using-the-java-api}
 
-U kunt naar gebeurtenissen zoeken met de Rights Management API (Java):
+U kunt naar gebeurtenissen zoeken met de API voor Rights Managementen (Java):
 
 1. Projectbestanden opnemen
 
    Neem client-JAR-bestanden, zoals adobe-rightManagement-client.jar, op in het klassenpad van uw Java-project.
 
-1. Een Rights Management-client-API-object maken
+1. Een Rights Management Client API-object maken
 
    Maak een `DocumentSecurityClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
 
@@ -1676,6 +1683,7 @@ U kunt naar gebeurtenissen zoeken met de Rights Management API (Java):
    * Maak een `EventManager` object door de `DocumentSecurityClient` methode van het `getEventManager` object aan te roepen. Deze methode retourneert een `EventManager` object.
    * Maak een `EventSearchFilter` object door de constructor ervan aan te roepen.
    * Geef de gebeurtenis op waarnaar moet worden gezocht door de methode van het `EventSearchFilter` object aan te roepen en een lid van het type static data door te geven dat behoort tot de `setEventCode` `EventManager` klasse die de gebeurtenis vertegenwoordigt waarnaar moet worden gezocht. Als u bijvoorbeeld wilt zoeken naar het beleid, maakt u een gebeurtenis door `EventManager.POLICY_CREATE_EVENT`.
+
    >[!NOTE]
    >
    >U kunt aanvullende zoekcriteria definiëren door `EventSearchFilter` objectmethoden aan te roepen. Roep bijvoorbeeld de `setUserName` methode op om een gebruiker op te geven die aan de gebeurtenis is gekoppeld.
@@ -1686,13 +1694,13 @@ U kunt naar gebeurtenissen zoeken met de Rights Management API (Java):
 
 **Codevoorbeelden**
 
-Voor codevoorbeelden die de dienst van het Beheer van Rechten gebruiken, zie het volgende Snel Begint:
+Voor codevoorbeelden die de dienst van het Rights Management gebruiken, zie Snel begint:
 
 * &quot;Snel starten (SOAP): Zoeken naar gebeurtenissen met de Java API&quot;
 
 ### Zoeken naar gebeurtenissen met de webservice-API {#search-for-events-using-the-web-service-api}
 
-U kunt naar gebeurtenissen zoeken met de Rights Management API (webservice):
+U kunt naar gebeurtenissen zoeken met de Rights Management-API (webservice):
 
 1. Projectbestanden opnemen
 
@@ -1702,7 +1710,7 @@ U kunt naar gebeurtenissen zoeken met de Rights Management API (webservice):
    >
    >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
-1. Een Rights Management-client-API-object maken
+1. Een Rights Management Client API-object maken
 
    * Maak een `DocumentSecurityServiceClient` object met de standaardconstructor.
    * Maak een `DocumentSecurityServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/RightsManagementService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
@@ -1710,7 +1718,7 @@ U kunt naar gebeurtenissen zoeken met de Rights Management API (webservice):
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -1724,6 +1732,7 @@ U kunt naar gebeurtenissen zoeken met de Rights Management API (webservice):
    * Geef het einde van de tijdsperiode waarin de gebeurtenis heeft plaatsgevonden op door het `EventSpec` gegevenslid van het `lastTime.date` object in te stellen op `DataTime` instantie die het einde van het datumbereik vertegenwoordigt wanneer de gebeurtenis heeft plaatsgevonden.
    * Wijs de waarde toe `true` aan het `EventSpec` gegevenslid van het `lastTime.dateSpecified` object.
    * Stel de gebeurtenis waarnaar moet worden gezocht in door een tekenreekswaarde toe te wijzen aan het `EventSpec` `eventCode` gegevenslid van het object. In de volgende tabel worden de numerieke waarden weergegeven die u aan deze eigenschap kunt toewijzen:
+
    <table> 
     <thead> 
     <tr> 
@@ -1929,16 +1938,16 @@ U kunt naar gebeurtenissen zoeken met de Rights Management API (webservice):
 
 **Codevoorbeelden**
 
-Voor codevoorbeelden die de dienst van het Beheer van Rechten gebruiken, zie het volgende Snel Begint:
+Voor codevoorbeelden die de dienst van het Rights Management gebruiken, zie Snel begint:
 
 * &quot;Snel starten (MTOM): Zoeken naar gebeurtenissen met de webservice-API&quot;
 * &quot;Quick Start (SwaRef): Zoeken naar gebeurtenissen met de webservice-API&quot;
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
 ## Beleid toepassen op Word-documenten {#applying-policies-to-word-documents}
 
@@ -1948,7 +1957,7 @@ U kunt het gebruik van een beleid-beschermd document van Word controleren nadat 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-11}
 
@@ -1982,7 +1991,7 @@ Nadat de documentbeveiligingsservice een beleid heeft toegepast op een Word-docu
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -2018,6 +2027,7 @@ Een beleid toepassen op een Word-document met behulp van de API voor documentbev
       * Een tekenreekswaarde die de naam vertegenwoordigt van het gebruikersbeheerdomein van de gebruiker die de uitgever van het document is. Deze parameterwaarde is optioneel en kan null zijn (als deze parameter null is, moet de volgende parameterwaarde null zijn).
       * Een tekenreekswaarde die de naam vertegenwoordigt van de canonieke naam van de gebruiker van de gebruikersmanager die de uitgever van het document is. Deze parameterwaarde is optioneel en kan `null` (als deze parameter `null`is, moet de vorige parameterwaarde zijn `null`).
       * A `com.adobe.livecycle.rightsmanagement.Locale` die de scène vertegenwoordigt die voor het selecteren van het malplaatje van MS Office wordt gebruikt. Deze parameterwaarde is optioneel en u kunt deze opgeven `null`.
+
       De `protectDocument` methode retourneert een `RMSecureDocumentResult` object dat het door het beleid beveiligde Word-document bevat.
 
 
@@ -2053,7 +2063,7 @@ Pas een beleid op een document van Word toe door de Veiligheid API van het Docum
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DocumentSecurityServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -2081,6 +2091,7 @@ Pas een beleid op een document van Word toe door de Veiligheid API van het Docum
    * Een parameter van de koordoutput die wordt gebruikt om de waarde van beleidsidentificatie op te slaan.
    * Een parameter van de koordoutput die wordt gebruikt om de beleid-beschermde herkenningstekenwaarde op te slaan.
    * Een parameter van de koordoutput die wordt gebruikt om het mime type (bijvoorbeeld, `application/doc`) op te slaan.
+
    De `protectDocument` methode retourneert een `BLOB` object dat het door het beleid beveiligde Word-document bevat.
 
 1. Sla het Word-document op.
@@ -2102,7 +2113,7 @@ U kunt een beleid uit een beleid-beschermd document van Word verwijderen om veil
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Veiligheid van het Document, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Document Security-service.
 
 ### Overzicht van de stappen {#summary_of_steps-12}
 
@@ -2128,7 +2139,7 @@ U moet een beleid-beschermd document van Word terugwinnen om een beleid te verwi
 
 **Het beleid verwijderen uit het Word-document**
 
-U kunt een beleid uit een beleid-beschermd document van Word verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als niet, dan moet het beleid dat wordt gebruikt om een document te beveiligen de `SWITCH_POLICY` toestemming bevatten om een beleid uit een document van Word te verwijderen. De gebruiker die is opgegeven in de verbindingsinstellingen voor AEM Forms, moet ook over deze bevoegdheid beschikken. Anders wordt een uitzondering gegenereerd.
+U kunt een beleid uit een beleid-beschermd document van Word verwijderen op voorwaarde dat een beheerder in de verbindingsmontages wordt gespecificeerd. Als niet, dan moet het beleid dat wordt gebruikt om een document te beveiligen de `SWITCH_POLICY` toestemming bevatten om een beleid uit een document van Word te verwijderen. De gebruiker die is opgegeven in de AEM Forms-verbindingsinstellingen moet ook over deze machtiging beschikken. Anders wordt een uitzondering gegenereerd.
 
 **Het onbeveiligde Word-document opslaan**
 
@@ -2136,7 +2147,7 @@ Nadat de documentbeveiligingsservice een beleid uit een Word-document heeft verw
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -2196,7 +2207,7 @@ Verwijder een beleid uit een beleid-beschermd document van Word door de Veilighe
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `RightsManagementServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
    * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -2228,4 +2239,4 @@ Zie het volgende snelle begin voor codevoorbeelden met gebruik van de Document S
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
