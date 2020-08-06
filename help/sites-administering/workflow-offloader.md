@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 0%
 
 ---
 
 
 # Offloader middelenwerkstroom{#assets-workflow-offloader}
 
-Met de Offloader van de middelenworkflow kunt u meerdere instanties van Adobe Experience Manager (AEM)-middelen inschakelen om de verwerkingsbelasting van de primaire instantie (leader) te verminderen. De verwerkingsbelasting wordt verdeeld over de instantie leader en de verschillende instanties offloader (worker) die u eraan toevoegt. Door de verwerkingsbelasting van elementen te verdelen, verhoogt u de efficiëntie en snelheid waarmee AEM-elementen elementen elementen verwerken. Daarnaast kunt u speciale bronnen toewijzen om elementen van een bepaald MIME-type te verwerken. U kunt bijvoorbeeld een specifiek knooppunt in uw topologie toewijzen om alleen InDesign-elementen te verwerken.
+Met de Offloader van de workflow Middelen kunt u meerdere instanties van Adobe Experience Manager (AEM) Assets inschakelen om de verwerkingsbelasting van de primaire instantie (leader) te verminderen. De verwerkingsbelasting wordt verdeeld over de instantie leader en de verschillende instanties offloader (worker) die u eraan toevoegt. Door de verwerkingsbelasting van elementen te verdelen, verhoogt u de efficiëntie en snelheid waarmee AEM Assets elementen verwerkt. Daarnaast kunt u speciale bronnen toewijzen om elementen van een bepaald MIME-type te verwerken. Bijvoorbeeld, kunt u een specifieke knoop in uw topologie toewijzen om de activa van InDesign slechts te verwerken.
 
 ## Offloader-topologie configureren {#configure-offloader-topology}
 
 Gebruik Configuration Manager om de URL voor de instantie leader en de hostnamen van instanties van offloader toe te voegen voor verbindingsaanvragen voor de instantie leader.
 
-1. Tik/klik op het AEM-logo en kies **Gereedschappen** > **Bewerkingen** > **Webconsole** om Configuratiebeheer te openen.
+1. Tik/klik op het AEM en kies **Gereedschappen** > **Bewerkingen** > **Webconsole** om Configuratiebeheer te openen.
 1. Selecteer in de webconsole **Sling** > **Topologiebeheer**.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
@@ -44,11 +47,11 @@ Gebruik Configuration Manager om de URL voor de instantie leader en de hostnamen
 
 ## Offloading uitschakelen {#disable-offloading}
 
-1. Tik/klik op het AEM-logo en kies **Gereedschappen** > **Implementatie** > **Offloaden**. Op de pagina **Offloading Browser** worden onderwerpen en de serverinstanties weergegeven die de onderwerpen kunnen gebruiken.
+1. Tik/klik op het AEM en kies **Gereedschappen** > **Implementatie** > **Offloaden**. Op de pagina **Offloading Browser** worden onderwerpen en de serverinstanties weergegeven die de onderwerpen kunnen gebruiken.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-1. Schakel het *onderwerp com/adobe/granite/workflow/offloading* uit op de leaderinstanties waarmee gebruikers communiceren om AEM-elementen te uploaden of te wijzigen.
+1. Schakel het onderwerp *com/adobe/granite/workflow/offloading* op de leaderinstanties uit waarmee gebruikers communiceren om AEM elementen te uploaden of te wijzigen.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
@@ -56,7 +59,7 @@ Gebruik Configuration Manager om de URL voor de instantie leader en de hostnamen
 
 Configureer workflowstartprogramma&#39;s om de workflow voor het ontladen **van bedrijfsmiddelen bij** DAM Update op de leaderinstantie te gebruiken in plaats van de workflow voor **Dam Update Asset** .
 
-1. Tik/klik op het AEM-logo en kies **Gereedschappen** > **Workflow** > **Launchers** om de **Workflow Launchers** -console te openen.
+1. Tik/klik op het AEM logo en kies **Gereedschappen** > **Workflow** > **Launchers** om de **Workflowstartconsole** te openen.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
@@ -69,7 +72,7 @@ Configureer workflowstartprogramma&#39;s om de workflow voor het ontladen **van 
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Tik/klik op het AEM-logo en kies **Gereedschappen** > **Workflow** > **Modellen** om de pagina **Workflowmodellen** te openen.
+1. Tik/klik op het AEM en kies **Gereedschappen** > **Workflow** > **Modellen** om de pagina **Workflowmodellen** te openen.
 1. Selecteer de workflow voor het ontladen **van** DAM-elementen bijwerken en tik op de werkbalk op **Bewerken** of klik op Bewerken om de details weer te geven.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
@@ -82,7 +85,7 @@ Configureer workflowstartprogramma&#39;s om de workflow voor het ontladen **van 
 
 Schakel de workflowstartprogramma&#39;s uit die de workflow **DAM Update Asset** uitvoeren op de leaderinstantie.
 
-1. Tik/klik op het AEM-logo en kies **Gereedschappen** > **Workflow** > **Launchers** om de **Workflow Launchers** -console te openen.
+1. Tik/klik op het AEM logo en kies **Gereedschappen** > **Workflow** > **Launchers** om de **Workflowstartconsole** te openen.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
