@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 55667e62-a61b-4794-b292-8d54929c41ac
 translation-type: tm+mt
 source-git-commit: 39dc4bc0b52cf34519f0375acdf4c0b34510dbbf
+workflow-type: tm+mt
+source-wordcount: '2721'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: 39dc4bc0b52cf34519f0375acdf4c0b34510dbbf
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 ## Paginasjablonen voor mobiele apps {#page-templates-for-mobile-apps}
 
-De paginacomponenten die u voor uw app maakt, zijn gebaseerd op de component /libs/mobileapps/components/angular/ng-page ([geopend in CRXDE Lite op een lokale server](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Deze component bevat de volgende JSP manuscripten die uw component of erft of met voeten treedt:
+De paginacomponenten die u voor uw app maakt, zijn gebaseerd op de component /libs/mobileapps/components/angular/ng-page ([open in CRXDE Lite op een lokale server](http://localhost:4502/crx/de/index.jsp#/libs/mobileapps/components/angular/ng-page)). Deze component bevat de volgende JSP manuscripten die uw component of erft of met voeten treedt:
 
 * ng-page.jsp
 * head.jsp
@@ -60,7 +63,7 @@ De hoofdtekst van een hoekpagina wordt anders weergegeven, afhankelijk van het f
 
 In de auteurmodus wordt elke afzonderlijke pagina afzonderlijk weergegeven. Hoekig handelt het verpletteren tussen pagina&#39;s niet, noch een ng-mening die wordt gebruikt om een gedeeltelijk malplaatje te laden dat de componenten van de pagina bevat. In plaats daarvan wordt de inhoud van de paginasjabloon (template.jsp) via de `cq:include` tag aan de serverzijde toegevoegd.
 
-Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, Sidetrap, ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van rendering op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in de AEM-auteurmodus.
+Deze strategie maakt de auteur-functies mogelijk (zoals het toevoegen en bewerken van componenten in het alineasysteem, Sidetrap, ontwerpmodus, enz.) om zonder wijzigingen te werken. Pagina&#39;s die afhankelijk zijn van renderen op de client, zoals de pagina&#39;s voor apps, functioneren niet goed in AEM auteursmodus.
 
 Merk op dat template.jsp omvat in een `div` element verpakt is dat de `ng-controller` richtlijn bevat. Met deze structuur kunt u de DOM-inhoud koppelen aan de controller. Daarom, hoewel de pagina&#39;s die zich op de cliëntkant teruggeven ontbreken, individuele componenten die dit doen goed werken (zie sectie over Componenten hieronder).
 
@@ -98,7 +101,7 @@ Met dit script wordt de hoekmodule van de toepassing gedefinieerd. De output van
 ng-app="<c:out value='${applicationName}'/>"
 ```
 
-Dit kenmerk geeft aan hoekig te zijn dat de inhoud van dit DOM-element moet worden gekoppeld aan de volgende module. In deze module worden de weergaven (in AEM zijn dit cq:Page-bronnen) gekoppeld aan de overeenkomstige besturingselementen.
+Dit kenmerk geeft aan hoekig te zijn dat de inhoud van dit DOM-element moet worden gekoppeld aan de volgende module. Deze module koppelt de meningen (in AEM dit cq:de middelen van de Pagina) met overeenkomstige controlemechanismen.
 
 Deze module bepaalt ook een top-level controlemechanisme genoemd `AppController` die de `wcmMode` variabele aan het werkingsgebied blootstelt, en vormt URI waarvan om de updatelading van de Synchronisatie van de Inhoud te halen.
 
@@ -117,7 +120,7 @@ Met dit script wordt een JavaScript-fragment gegenereerd dat de volgende vorm mo
 
 Deze code wijst aan $routeProvider (die in angular-app-module.js.jsp wordt bepaald) erop dat &quot;/&lt;path>&quot;door het middel bij moet worden behandeld, `templateUrl`en getelegrafeerd door `controller` (die wij aan volgende zullen krijgen).
 
-Indien nodig, kunt u dit manuscript met voeten treden om complexere wegen, met inbegrip van die met variabelen te behandelen. Een voorbeeld van dit kan in het /apps/geometrixx-outdoors-app/components/angular/ng-template-page/angular-route-fragment.js.jsp manuscript worden gezien dat met AEM wordt geïnstalleerd:
+Indien nodig, kunt u dit manuscript met voeten treden om complexere wegen, met inbegrip van die met variabelen te behandelen. Een voorbeeld van dit kan in het /apps/geometrixx-outdoors-app/components/angular/ng-template-page/angular-route-fragment.js.jsp manuscript worden gezien dat met AEM geïnstalleerd is:
 
 ```xml
 // note the :id suffix on the path
@@ -153,7 +156,7 @@ Als een component op deze manier deel moet uitmaken van de controller, moet de c
 
 Eerst geïntroduceerd in de body.jsp sectie, template.jsp bevat eenvoudig parsys van de pagina. In publiceer wijze, wordt deze inhoud van verwijzingen voorzien direct (bij &lt;page-path>.template.html) en geladen in het KUUROORD via templateUrl die op $routeProvider wordt gevormd.
 
-Parsys in dit manuscript kan worden gevormd om het even welk type van component goed te keuren. Nochtans, moet de zorg worden gegeven wanneer het behandelen van componenten die voor een traditionele website (in tegenstelling tot een KUUROORD) worden gebouwd. De component voor de basisafbeelding werkt bijvoorbeeld alleen correct op de toepassingspagina op het hoogste niveau, omdat deze niet is ontworpen om te verwijzen naar elementen die zich in een app bevinden.
+Parsys in dit manuscript kan worden gevormd om het even welk type van component goed te keuren. Nochtans, moet de zorg worden gegeven wanneer het behandelen van componenten die voor een traditionele website (in tegenstelling tot een SPA) worden gebouwd. De component voor de basisafbeelding werkt bijvoorbeeld alleen correct op de toepassingspagina op het hoogste niveau, omdat deze niet is ontworpen om te verwijzen naar elementen die zich in een app bevinden.
 
 ### angular-module-list.js.jsp {#angular-module-list-js-jsp}
 
@@ -177,7 +180,7 @@ Hef dit script op om uw CSS-clientlibs op te nemen.
 
 ## App-componenten {#app-components}
 
-Toepassingscomponenten moeten niet alleen werken op een AEM-instantie (publiceren of auteur), maar ook wanneer de toepassingsinhoud via Content Sync naar het bestandssysteem wordt geëxporteerd. Het onderdeel moet daarom de volgende kenmerken bevatten:
+App-componenten moeten niet alleen werken op een AEM-instantie (publiceren of auteur), maar ook wanneer de toepassingsinhoud via Content Sync naar het bestandssysteem wordt geëxporteerd. Het onderdeel moet daarom de volgende kenmerken bevatten:
 
 * Er moet relatief worden verwezen naar alle elementen, sjablonen en scripts in een PhoneGap-toepassing.
 * De afhandeling van koppelingen verschilt als de AEM-instantie werkt in de auteur- of publicatiemodus.
@@ -240,7 +243,7 @@ In componenten die door JSON-gegevens worden aangedreven (zoals &#39;ng-text&#39
 
 #### controller.js.jsp {#controller-js-jsp-1}
 
-Zoals beschreven in AEM-paginasjablonen, kan elke component een JavaScript-fragment uitvoeren om de JSON-inhoud te gebruiken die door de `data` belofte wordt vrijgegeven. Volgens de Hoekconventies mag een controller alleen worden gebruikt voor het toewijzen van variabelen aan het bereik.
+Zoals beschreven in AEM paginasjablonen, kan elke component een JavaScript-fragment uitvoeren om de JSON-inhoud te gebruiken die door de `data` belofte wordt vrijgegeven. Volgens de Hoekconventies mag een controller alleen worden gebruikt voor het toewijzen van variabelen aan het bereik.
 
 #### angular.json.jsp {#angular-json-jsp}
 
@@ -311,7 +314,7 @@ Deze folder bevat de [haken](https://devgirl.org/2013/11/12/three-hooks-your-cor
 
 #### .cordova/haken/after-platform_add/ {#cordova-hooks-after-platform-add}
 
-De folder after-platform_add bevat het `copy_AMS_Conifg.js` dossier. Met dit script wordt een configuratiebestand gekopieerd ter ondersteuning van de verzameling analyses van Adobe Mobile Services.
+De folder after-platform_add bevat het `copy_AMS_Conifg.js` dossier. Dit manuscript kopieert een configuratiedossier om de inzameling van Adobe Mobiele Analytics van de Diensten te steunen.
 
 #### .cordova/haken/after-prepare/ {#cordova-hooks-after-prepare}
 
@@ -321,7 +324,7 @@ De map after-prepare bevat het `copy_resource_files.js` bestand. Met dit script 
 
 De map before_platform_add bevat het `install_plugins.js` bestand. Dit script doorloopt een lijst met Cordova-insteekmodules voor insteekmodules, waarbij de id-id&#39;s die het detecteert, worden geïnstalleerd, is nog niet beschikbaar.
 
-Deze strategie vereist niet dat u de stop- ins aan AEM bundelt en installeert telkens als het Maven `content-package:install` bevel wordt uitgevoerd. De alternatieve strategie om de bestanden in uw SCM-systeem te controleren, vereist herhaalde bundeling en installatie-activiteiten.
+Deze strategie vereist niet dat u de stop-ins bundelt en installeert aan AEM telkens als het Maven `content-package:install` bevel wordt uitgevoerd. De alternatieve strategie om de bestanden in uw SCM-systeem te controleren, vereist herhaalde bundeling en installatie-activiteiten.
 
 #### .cordova/haken/andere haken {#cordova-hooks-other-hooks}
 
@@ -364,7 +367,7 @@ De map plugins wordt gevuld met elke plug-in in het `.cordova/hooks/before_platf
 
 #### www/ {#www}
 
-De map www bevat alle webinhoud (HTML-, JS- en CSS-bestanden) die de weergave en het gedrag van de app implementeert. Met uitzondering van de hieronder beschreven uitzonderingen, komt deze inhoud van AEM voort en wordt deze via Content Sync geëxporteerd naar de statische vorm ervan.
+De map www bevat alle webinhoud (HTML-, JS- en CSS-bestanden) die de weergave en het gedrag van de app implementeert. Met uitzondering van de hieronder beschreven uitzonderingen, komt deze inhoud van AEM en wordt deze via Content Sync geëxporteerd naar de statische vorm ervan.
 
 #### www/config.xml {#www-config-xml}
 
@@ -390,7 +393,7 @@ De map res bevat afbeeldingen en pictogrammen voor het welkomstscherm. Het `copy
 
 #### www/etc {#www-etc}
 
-Door overeenkomst, in AEM bevat de /etc knoop statische clientlib inhoud. De map etc bevat de topuntheek-, AngularJS- en Geometrixx ng-clientlibsall-bibliotheken.
+Door overeenkomst, in AEM bevat de /etc knoop statische clientlib inhoud. De map etc bevat de topunthandels, AngularJS en Geometrixx-clientlibsall-bibliotheken.
 
 #### www/apps {#www-apps}
 
@@ -401,7 +404,7 @@ De map apps bevat code die verwant is aan de splash-pagina. Het unieke kenmerk v
 De inhoudsmap bevat de rest van de webinhoud van de app. De inhoud kan de volgende bestanden bevatten, maar is niet beperkt tot:
 
 * HTML-pagina-inhoud, die rechtstreeks in AEM is gemaakt
-* Afbeeldingselementen die zijn gekoppeld aan AEM-componenten
+* Afbeeldingselementen die zijn gekoppeld aan AEM componenten
 * JavaScript-inhoud die door serverscripts wordt gegenereerd
 * JSON-bestanden die pagina- of componentinhoud beschrijven
 
