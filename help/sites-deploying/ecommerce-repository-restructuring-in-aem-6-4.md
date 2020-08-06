@@ -10,13 +10,16 @@ topic-tags: repo_restructuring
 discoiquuid: 28c92e7d-2106-4333-afa6-c5528a00d7b4
 translation-type: tm+mt
 source-git-commit: 6449921348ef3758ec95ddba8b478691008153f3
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
 
 # Herstructurering van de opslagplaats voor elektronische handel in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Zoals beschreven op de pagina &quot;parent [Repository Reform&quot; in AEM 6.4](/help/sites-deploying/repository-restructuring.md) , moeten klanten die een upgrade naar AEM 6.4 uitvoeren deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM E-Commerce Solution. Sommige veranderingen vereisen werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
+Zoals beschreven in de [herstructurering van de moederopslagplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die tot AEM 6.4 opwaarderen deze pagina moeten gebruiken om de werkinspanning te beoordelen verbonden aan veranderingen in de opslagplaats die gevolgen hebben voor de AEM E-Commerce-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
 
 ## Met 6.4-upgrade {#with-upgrade}
 
