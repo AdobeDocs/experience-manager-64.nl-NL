@@ -1,14 +1,17 @@
 ---
 title: Een adaptief formulier maken met behulp van een set adaptieve formulieren
 seo-title: Een adaptief formulier maken met behulp van een set adaptieve formulieren
-description: 'Met AEM Forms combineert u adaptieve formulieren tot één groot adaptief formulier en begrijpt u de functies ervan. '
-seo-description: 'Met AEM Forms combineert u adaptieve formulieren tot één groot adaptief formulier en begrijpt u de functies ervan. '
+description: 'Met AEM Forms kunt u adaptieve formulieren samenvoegen tot één groot adaptief formulier en de functies ervan begrijpen. '
+seo-description: 'Met AEM Forms kunt u adaptieve formulieren samenvoegen tot één groot adaptief formulier en de functies ervan begrijpen. '
 uuid: 1423038b-8261-455b-b4ff-7be7222448c9
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 75ee94f7-e939-409b-b8cb-8fdc3f79bb63
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '597'
+ht-degree: 0%
 
 ---
 
@@ -137,8 +140,8 @@ Voer de volgende stappen uit om een adaptief formulier toe te voegen als een ond
 
 1. Open het bovenliggende formulier in de bewerkingsmodus.
 1. Klik in de zijbalk op **Middelen** - ![middelen-browser](assets/assets-browser.png). Selecteer onder Elementen de optie **Adaptief formulier** in de vervolgkeuzelijst.
-   [ Aanpassingsformulier ![selecteren onder Activa](assets/asset.png)](assets/asset-1.png)
+   [ ![Aangepast formulier selecteren onder Activa](assets/asset.png)](assets/asset-1.png)
 
 1. Sleep het adaptieve formulier dat u wilt toevoegen als een onderliggend formulier.
-   [ Sleep het adaptieve formulier ![naar uw](assets/drag-drop.png)](assets/drag-drop-1.png)site en zet het neer. Het adaptieve formulier dat u neerzet, wordt toegevoegd als een onderliggend formulier.
+   [ ![Sleep het adaptieve formulier naar uw](assets/drag-drop.png)](assets/drag-drop-1.png)site en zet het neer. Het adaptieve formulier dat u neerzet, wordt toegevoegd als een onderliggend formulier.
 
