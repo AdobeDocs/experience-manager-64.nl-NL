@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '1089'
+ht-degree: 0%
 
 ---
 
@@ -48,117 +51,117 @@ Selecteer de geplaatste `Calendar`component die u wilt openen en selecteer het `
 
 #### Het tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **[!UICONTROL Instellingen]** op of labels mogen worden toegepast op kalenderitems.
+Geef op het **[!UICONTROL Settings]** tabblad op of labels mogen worden toegepast op kalenderitems.
 
-* **[!UICONTROL Gebeurtenissen per pagina]**
+* **[!UICONTROL Events Per Page]**
 
    Hiermee definieert u het aantal gebeurtenissen dat per pagina wordt weergegeven. De standaardwaarde is 10.
 
-* **[!UICONTROL Gematigd]**
+* **[!UICONTROL Moderated]**
 
    Als deze optie is ingeschakeld, moet het posten van kalendergebeurtenissen en opmerkingen worden goedgekeurd voordat deze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Gesloten]**
+* **[!UICONTROL Closed]**
 
    Als deze optie is ingeschakeld, wordt de kalender gesloten voor nieuwe gebeurtenisitems en opmerkingen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL RTF-editor]**
+* **[!UICONTROL Rich Text Editor]**
 
    Als deze optie is ingeschakeld, kunnen kalendergebeurtenissen en opmerkingen worden ingevoerd met een markering. Standaard is ingeschakeld.
 
-* **[!UICONTROL Tags toestaan]**
+* **[!UICONTROL Allow Tagging]**
 
    Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan de gebeurtenissen die ze posten (zie tabblad **Tagveld** ). Standaard is ingeschakeld.
 
-* **[!UICONTROL Uploaden van bestanden toestaan]**
+* **[!UICONTROL Allow File Uploads]**
 
    Als deze optie is ingeschakeld, staat u toe dat bestandsbijlagen worden toegevoegd aan een agendagebeurtenis of -opmerking. Standaard is ingeschakeld.
 
-* **[!UICONTROL Volgen toestaan]**
+* **[!UICONTROL Allow Following]**
 
    Als deze optie is ingeschakeld, kunnen leden gebeurtenissen volgen die naar de kalender zijn gepost. Standaard is ingeschakeld.
 
-* **[!UICONTROL Max. bestandsgrootte]**
+* **[!UICONTROL Max File Size]**
 
    Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
-* **[!UICONTROL Toegestane bestandstypen]**
+* **[!UICONTROL Allowed File Types]**
 
    Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
-* **[!UICONTROL Maximale bestandsgrootte afbeelding bijvoegen]**
+* **[!UICONTROL Max Attach Image File Size]**
 
    Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
 
-* **[!UICONTROL Toegestane omslagafbeeldingstypen]**
+* **[!UICONTROL Allowed Cover Image Types]**
 
    Een door komma&#39;s gescheiden lijst met extensies voor afbeeldingsbestanden met het &quot;punt&quot;-scheidingsteken. Standaard is dit `.jpg,.jpeg,.png,.gif,.bmp`.
 
-* **[!UICONTROL Reacties met verbindingen toestaan]**
+* **[!UICONTROL Allow Threaded Replies]**
 
    Als deze optie is ingeschakeld, kunt u reacties op opmerkingen die zijn geplaatst voor de agendagebeurtenis toestaan. Standaard is ingeschakeld.
 
-* **[!UICONTROL Gebruikers toestaan opmerkingen en gebeurtenissen te verwijderen]**
+* **[!UICONTROL Allow Users to Delete Comments and Events]**
 
    Als deze optie is ingeschakeld, kunnen leden de opmerkingen en kalendergebeurtenissen die ze hebben gepost, verwijderen. Standaard is ingeschakeld.
 
-* **[!UICONTROL Stemmen toestaan]**
+* **[!UICONTROL Allow Voting]**
 
    Indien ingeschakeld, neemt u de functie Stemmen op met een agendagebeurtenis. Standaard is ingeschakeld.
 
-* **[!UICONTROL Broodkruimels tonen]**
+* **[!UICONTROL Show Breadcrumbs]**
 
    Breedkruimels tonen op gebeurtenispagina. Standaard is ingeschakeld.
 
-* **[!UICONTROL Filter datumbereik]**
+* **[!UICONTROL Date Range Filter]**
 
    Definieert het aantal dagen dat aan de huidige datum wordt toegevoegd om de waarde &quot;Aan&quot; van het filter voor de paginalijst van kalendergebeurtenissen te berekenen. Het standaardnummer is 30.
 
-* **[!UICONTROL Aanbevolen inhoud toestaan]**
+* **[!UICONTROL Allow Featured Content]**
 
    Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
 
-Onder het lusje van de Moderatie **[!UICONTROL van de]** Gebruiker, specificeer hoe de geposte onderwerpen en de antwoorden (gebruiker geproduceerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte onderwerpen en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-* **[!UICONTROL Posten weigeren]**
+* **[!UICONTROL Deny Posts]**
 
    Als deze optie wordt ingeschakeld, zullen de verantwoordelijken van de leden hun functie kunnen ontkennen en voorkomen dat de functie op het openbare forum verschijnt. Standaard is ingeschakeld.
 
-* **[!UICONTROL Gebeurtenissen sluiten/opnieuw openen]**
+* **[!UICONTROL Close/Reopen Events]**
 
    Als deze optie ingeschakeld is, kunnen vertrouwde moderatoren van leden een gebeurtenis sluiten voor verdere bewerkingen en opmerkingen, en kunnen ze ook een gebeurtenis opnieuw openen. Standaard is ingeschakeld.
 
-* **[!UICONTROL Vlagberichten]**
+* **[!UICONTROL Flag Posts]**
 
    Als deze optie is ingeschakeld, kunnen leden gebeurtenissen of opmerkingen van anderen als ongeschikt markeren. Standaard is ingeschakeld.
 
-* **[!UICONTROL Lijst met redenen voor vlag]**
+* **[!UICONTROL Flag Reason List]**
 
    Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom zij een gebeurtenis of opmerking als ongeschikt aanmerken. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Reden voor aangepaste vlag]**
+* **[!UICONTROL Custom Flag Reason]**
 
    Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een gebeurtenis of opmerking als ongeschikt aan te duiden. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Moderniseringsdrempel]**
+* **[!UICONTROL Moderation Threshold]**
 
    Voer het aantal keren in dat een gebeurtenis of opmerking moet worden gemarkeerd door leden voordat moderatoren op de hoogte worden gesteld. De standaardwaarde is 1 (één keer).
 
-* **[!UICONTROL Limiet voor markering]**
+* **[!UICONTROL Flagging Limit]**
 
    Voer het aantal keren in dat een gebeurtenis of opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **[!UICONTROL Tagveld]** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **[!UICONTROL Instellingen]** , beperkt op basis van de gekozen naamruimten.
+Onder het **[!UICONTROL Tag field]** tabblad zijn de tags die kunnen worden toegepast, indien toegestaan onder het **[!UICONTROL Settings]** tabblad, beperkt op basis van de gekozen naamruimten.
 
-* **[!UICONTROL Toegestane naamruimten]**
+* **[!UICONTROL Allowed Namespaces]**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **[!UICONTROL Instellingen]** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` wordt gecontroleerd onder het **[!UICONTROL Settings]** lusje. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
-* **[!UICONTROL Suggestiegrenswaarde]**
+* **[!UICONTROL Suggestion Limit]**
 
    Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De standaardwaarde is `-1` (geen limieten).
 
@@ -168,9 +171,9 @@ Onder het tabblad **[!UICONTROL Tagveld]** zijn de tags die kunnen worden toegep
 
 #### Tabblad Vertaling {#translation-tab}
 
-Als op het tabblad **[!UICONTROL Vertaling]** vertaling is ingeschakeld voor de site van de gebruikersgemeenschap, kan de vertaling zo worden ingesteld dat de volledige thread (gebeurtenis en opmerkingen) wordt vertaald in plaats van specifieke posts.
+Als op het **[!UICONTROL Translation]** tabblad vertaling is ingeschakeld voor de communitysite, kan de vertaling zo worden ingesteld dat de volledige thread (gebeurtenis en opmerkingen) wordt vertaald in plaats van specifieke posts.
 
-* **[!UICONTROL Alles vertalen]**
+* **[!UICONTROL Translate All]**
 
    Als deze optie is ingeschakeld, worden de gebeurtenis en de opmerkingen vertaald naar de voorkeurstaal van de gebruiker. Standaard is ingeschakeld.
 
