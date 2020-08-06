@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 430a27b5-f344-404f-8bf8-0d91b49b605e
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '340'
+ht-degree: 0%
 
 ---
 
@@ -19,18 +22,18 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Wanneer u een mobiele pagina ontwerpt, wordt de pagina weergegeven op een manier die het mobiele apparaat emuleert. Wanneer u de pagina ontwerpt, kunt u schakelen tussen verschillende emulators om te zien wat de eindgebruiker ziet wanneer hij of zij de pagina opent.
 
-Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdrukken en de functie voor aanraken op basis van de mogelijkheden van de apparaten om een pagina weer te geven. Wanneer de eindgebruiker tot een mobiele pagina toegang heeft, ontdekt AEM het apparaat en verzendt de vertegenwoordiging die aan zijn apparatengroep beantwoordt.
+Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdrukken en de functie voor aanraken op basis van de mogelijkheden van de apparaten om een pagina weer te geven. Wanneer de eindgebruiker tot een mobiele pagina toegang heeft, AEM ontdekt het apparaat en verzendt de vertegenwoordiging die aan zijn apparatengroep beantwoordt.
 
 >[!NOTE]
 >
 >Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie Een actieve kopie [maken voor verschillende kanalen](/help/sites-administering/msm-livecopy.md).)
 >
->AEM-ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [Apparaatgroepfilters maken.](/help/sites-developing/groupfilters.md))
+>AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [Apparaatgroepfilters maken.](/help/sites-developing/groupfilters.md))
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
 1. Ga in uw browser naar de **Siteadmin** -console.
-1. Open de pagina **Producten** onder **Websites** > **Geometrixx Mobiele demo Site** >> **Engels**.
+1. Open de pagina **Producten** onder **Websites** > **Geometrixx Mobile Demo Site** >> **Engels**.
 
 1. Schakel over naar een andere emulator. Hiervoor kunt u:
 
@@ -38,7 +41,7 @@ Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
    * Klik op de knop **Bewerken** in de **stapel** en selecteer het apparaat in de vervolgkeuzelijst.
 
 1. Sleep de component **Tekst en afbeelding** van het tabblad Mobiel van de Sidetrap naar de pagina.
-1. Bewerk de component en voeg wat tekst toe. Klik op **OK** om de wijzigingen op te slaan.
+1. Bewerk de component en voeg wat tekst toe. Click **OK** to save the changes.
 
 De pagina ziet er hetzelfde uit als:
 
