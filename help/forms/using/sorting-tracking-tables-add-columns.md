@@ -1,8 +1,8 @@
 ---
 title: Trackingtabellen aanpassen
 seo-title: Trackingtabellen aanpassen
-description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van Vormen AEM wordt getoond.
-seo-description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van Vormen AEM wordt getoond.
+description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van AEM Forms wordt getoond.
+seo-description: Hoe te om de vertoning van de details van gebruikersprocessen in de taaklijst aan te passen die in het volgende lusje van de werkruimte van AEM Forms wordt getoond.
 uuid: 13d6ebf2-99d5-434f-85f9-b0cba5f5751a
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: bb7a6e9f-4f28-4d97-8a0c-949259fd6857
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 1%
 
 ---
 
 
 # Trackingtabellen aanpassen{#customize-tracking-tables}
 
-Het tabblad Tekstspatiëring in de werkruimte van AEM-formulieren wordt gebruikt om de details weer te geven van procesinstanties waarbij de aangemelde gebruiker is betrokken. Als u de volgende tabellen wilt weergeven, selecteert u eerst een procesnaam in het linkerdeelvenster om de lijst met exemplaren in het middelste venster weer te geven. Selecteer een procesinstantie om een takenlijst te zien die door deze instantie in de juiste ruit wordt geproduceerd. Standaard geven de tabelkolommen de volgende taakkenmerken weer (het bijbehorende kenmerk in het taakmodel staat tussen haakjes):
+Het tabblad Tekstspatiëring in de AEM Forms-werkruimte wordt gebruikt om de details weer te geven van procesinstanties waarbij de aangemelde gebruiker is betrokken. Als u de volgende tabellen wilt weergeven, selecteert u eerst een procesnaam in het linkerdeelvenster om de lijst met exemplaren in het middelste venster weer te geven. Selecteer een procesinstantie om een takenlijst te zien die door deze instantie in de juiste ruit wordt geproduceerd. Standaard geven de tabelkolommen de volgende taakkenmerken weer (het bijbehorende kenmerk in het taakmodel staat tussen haakjes):
 
 * ID ( `taskId`)
 * Naam ( `stepName`)
@@ -113,7 +116,7 @@ De resterende kenmerken in het taakmodel die beschikbaar zijn voor weergave in d
  </tbody> 
 </table>
 
-Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [Inleiding tot het aanpassen van de werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) van Vormen AEM voor hoe u semantische veranderingen kunt aanbrengen gebruikend werkruimte SDK en een geminificeerde pakket van de veranderde bron bouwen.
+Voor de volgende aanpassingen in de takenlijst, moet u semantische veranderingen in de broncode doen. Zie [Inleiding tot het aanpassen van de AEM Forms-werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) voor semantische wijzigingen met behulp van de SDK van de werkruimte en het samenstellen van een geminimaliseerd pakket van de gewijzigde bron.
 
 ## Tabelkolommen en hun volgorde wijzigen {#changing-table-columns-and-their-order}
 
