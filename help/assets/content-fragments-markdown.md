@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: bde54663-9050-4a5a-93cb-7cd84ac7f071
 translation-type: tm+mt
 source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 4%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 22a5e6a75fdc1f15e6e612c5ef495ac01e50252d
 
 >[!CAUTION]
 >
->Voor sommige functies voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
 
 Wanneer u [creeert](content-fragments-variations.md#authoring-your-content), gebruikt de redacteur van het inhoudsfragment *prijsverhogingssyntaxis* om u toe te staan om inhoud gemakkelijk te schrijven:
 
