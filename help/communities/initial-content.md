@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '442'
+ht-degree: 3%
 
 ---
 
@@ -45,29 +48,30 @@ Nu er een [paginamalplaatje](initial-app.md#createthepagetemplate)is, kunnen wij
 
    U kunt ook rechtstreeks toegang krijgen tot de klassieke UI voor websites door naar [/sitebeheerder te bladeren.](http://localhost:4502/siteadmin)
 
-1. Selecteer **[!UICONTROL Websites]** in het deelvenster Verkenner en selecteer vervolgens op de werkbalk **[!UICONTROL Nieuw > Nieuwe pagina]**.
+1. Selecteer in het verkenner-venster **[!UICONTROL Websites]** en selecteer vervolgens op de werkbalk **[!UICONTROL New > New Page]**.
 
-   Voer in het dialoogvenster Pagina **** maken het volgende in:
+   Voer in het **[!UICONTROL Create Page]** dialoogvenster het volgende in:
 
    * Titel: `SCF Sandbox Site`
    * Naam: `an-scf-sandbox`
-   * Selecteer **[!UICONTROL een SCF-sandbox-afspeelsjabloon]**
-   * Klik op **[!UICONTROL Maken]**
+   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klik op **[!UICONTROL Create]**
+
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**:
+1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site`en klik op **[!UICONTROL New > New Page]**:
 
    * Titel: `SCF Sandbox`
    * Naam: `en`
    * Selecteer **een SCF-sandbox-afspeelsjabloon **
    * Klik op **Maken **
 
-1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL Nieuw > Nieuwe pagina]**
+1. Selecteer in het verkenner-venster de pagina die u net hebt gemaakt `/Websites/SCF Sandbox Site/SCF Sandbox`en klik op **[!UICONTROL New > New Page]**
 
    * Titel: `SCF Play`
    * Naam: `play`
-   * Selecteer **[!UICONTROL een SCF-sandbox-afspeelsjabloon]**
-   * Klik op **[!UICONTROL Maken]**
+   * Selecteer **[!UICONTROL An SCF Sandbox Play Template]**
+   * Klik op **[!UICONTROL Create]**
 
 1. Zo wordt de website nu weergegeven in de websiteconsole. U ziet dat onderliggende pagina&#39;s van het item dat is geselecteerd in het deelvenster Verkenner, worden weergegeven in het rechterdeelvenster waar ze kunnen worden beheerd.
 
@@ -98,7 +102,7 @@ De oplossing moet er als volgt uitzien:
 
 ![chlimage_1-41](assets/chlimage_1-41.png)
 
-* Klik op Alles **[!UICONTROL opslaan]**
+* Klik op **[!UICONTROL Save All]**
 
 [ Problemen met opslaan? Opnieuw aanmelden! ]
 
