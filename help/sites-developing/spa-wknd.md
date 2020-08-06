@@ -22,11 +22,11 @@ ht-degree: 0%
 
 Ga in de ontwikkeling van het KUUROORD met dit multi-part leerprogramma binnen dat u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing verplettert om uw eigen KUUROORD uit te voeren.
 
-## Zelfstudies {#tutorials}
+## Tutorials {#tutorials}
 
-Voor een voorbeeld van begin tot eind van de bouw van uw eigen enig-paginatoepassing die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie de WKND KUUROPleidingen:
+Voor een voorbeeld van begin tot eind om uw eigen enig-paginatoepassing te bouwen die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie de Tutorials van KND SPA:
 
-* [Begonnen het worden met de Redacteur van het KUUROORD AEM en Hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Begonnen het worden met de Redacteur van het KUUROORD AEM en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Aan de slag met de AEM redacteur van het KUUROORD en Hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Begonnen het worden met de AEM Redacteur van het KUUROORD en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Alvorens u met uw eigen project van het KUUROORD voor AEM nochtans begint, ben zeker om het [Ontwikkelen van SPAs voor AEM](/help/sites-developing/spa-architecture.md) document ook te herzien.
+Alvorens u met uw eigen project van het KUUROORD voor AEM begint, ben zeker om het [Ontwikkelen SPAs voor AEM](/help/sites-developing/spa-architecture.md) document ook te herzien.
