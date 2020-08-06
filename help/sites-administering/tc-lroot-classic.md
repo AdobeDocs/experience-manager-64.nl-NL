@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '335'
+ht-degree: 0%
 
 ---
 
 
 # Een taalbasis maken met de klassieke gebruikersinterface{#creating-a-language-root-using-the-classic-ui}
 
-De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot stand te brengen. Zie Een [hoofdmap](/help/sites-administering/tc-prep.md#creating-a-language-root)maken voor meer informatie.
+De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot stand te brengen. Zie [Een hoofdmap](/help/sites-administering/tc-prep.md#creating-a-language-root)maken voor meer informatie.
 
 1. Selecteer in de websiteconsole in de boomstructuur Websites de hoofdpagina van de site. ([http://localhost:4502/siteadmin#](http://localhost:4502/siteadmin#))
 1. Voeg een nieuwe kindpagina toe die de taalversie van de plaats vertegenwoordigt:
@@ -28,6 +31,7 @@ De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot
       * De ondersteunde taalcode is tweeletterige code in kleine letters, zoals gedefinieerd door ISO-639-1
       * De ondersteunde landcode is tweeletterige, kleine letters of hoofdletters volgens ISO 3166
    1. Selecteer de sjabloon en klik op Maken.
+
    ![newpagefr](assets/newpagefr.png)
 
 1. Selecteer in de websiteconsole in de boomstructuur Websites de hoofdpagina van de site.
