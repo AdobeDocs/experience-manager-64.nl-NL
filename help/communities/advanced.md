@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
 translation-type: tm+mt
 source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 1%
 
 ---
 
@@ -37,11 +40,11 @@ De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
 * Configureerbare geavanceerde scores-engine
 * Geavanceerde regels voor scoring:
-   * `scoringType` ingesteld op **[!UICONTROL geavanceerd]**
+   * `scoringType` instellen op **[!UICONTROL advanced]**
    * Opsommingstekens vereist
 
 * Geavanceerde regels voor badging:
-   * `badgingType` ingesteld op **[!UICONTROL geavanceerd]**
+   * `badgingType` instellen op **[!UICONTROL advanced]**
    * `badgingLevels` vastgesteld op het aantal te gunnen deskundigen
    * Vereist een `badgingPaths` array van badges in plaats van drempelwaarden voor arraytoewijzing punten aan badges
 
@@ -55,31 +58,31 @@ De geavanceerde het schrapen motor verstrekt een configuratie OSGi met parameter
 
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
-* **[!UICONTROL Scoregewichten]** Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moeten worden gegeven wanneer het berekenen van de score. Een of meer onderwerpen kunnen zijn ingegaan, maar beperkt tot **één werkwoord per onderwerp**. Zie [Onderwerpen en Verbs](implementing-scoring.md#topics-and-verbs).
+* **[!UICONTROL Scoring weights]**
+Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moeten worden gegeven wanneer het berekenen van de score. Een of meer onderwerpen kunnen zijn ingegaan, maar beperkt tot **één werkwoord per onderwerp**. Zie [Onderwerpen en Verbs](implementing-scoring.md#topics-and-verbs).
 
    Is ingevoerd zoals `topic,verb` met de vrijgekomen komma. Bijvoorbeeld:
 
    `/social/forum/hbs/social/forum\,ADD`
 
-   
-Het gebrek wordt geplaatst aan ADD werkwoord voor QnA en forumcomponenten.
+   Het gebrek wordt geplaatst aan ADD werkwoord voor QnA en forumcomponenten.
 
 
-* **[!UICONTROL Scorebereik]**
+* **[!UICONTROL Scoring range]**
 
    Het bereik voor geavanceerde scores wordt gedefinieerd door deze waarde (hoogst haalbare score) en 0 (laagste haalbare score).
 
    De standaardwaarde is 100, zodat het scorebereik 0-100 is.
 
 
-* **[!UICONTROL Tijdsinterval van verval van entiteit]**
+* **[!UICONTROL Entity decay time interval]**
 
    Deze parameter vertegenwoordigt het aantal uren waarna alle entiteitscores worden gedecayed. Dit is nodig als u oude inhoud niet meer wilt opnemen in scores voor een communitysite.
 
    De standaardwaarde is 216000 uur (~24 jaar).
 
 
-* **[!UICONTROL Toename van scores]**
+* **[!UICONTROL Scoring growth rate]**
 
    Geeft de score aan. tussen 0 en scores, waarvoorbij de groei vertraagt om het aantal deskundigen te beperken.
 
