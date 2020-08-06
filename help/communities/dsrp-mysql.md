@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Deze instructies beschrijven hoe te met de server te verbinden MySQL en het gege
 
    * [MySQL Server](https://dev.mysql.com/downloads/mysql/) Community Server versie 5.6 of hoger
 
-      * Kan op dezelfde host als AEM worden uitgevoerd of extern worden uitgevoerd
+      * Kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
    * [MySQL Workbench](https://dev.mysql.com/downloads/tools/workbench/)
 
 
@@ -84,7 +87,7 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 1. Selecteer het `+` pictogram rechts van `MySQL Connections`.
 1. Voer in het dialoogvenster de waarden in die geschikt zijn voor uw platform `Setup New Connection`
 
-   Voor demonstratiedoeleinden, met de auteurAEM instantie en MySQL op de zelfde server:
+   Voor demonstratiedoeleinden, met de auteur AEM instantie en MySQL op de zelfde server:
 
    * Verbindingsnaam: `Communities`
    * Verbindingsmethode: `Standard (TCP/IP)`
@@ -112,7 +115,7 @@ Open de verbinding van de Gemeenschappen om het gegevensbestand te installeren.
 
 ### Het SQL-script ophalen {#obtain-the-sql-script}
 
-Het SQL-script is afkomstig uit de AEM-opslagplaats:
+Het SQL-script is afkomstig uit de AEM opslagplaats:
 
 1. Bladeren naar CRXDE Lite
 
@@ -163,11 +166,11 @@ Zodra het manuscript wordt uitgevoerd, is het noodzakelijk om de `SCHEMAS`sectie
 
 De configuratie OSGi voor de Pool **van Verbindingen JDBC van de** Dag vormt de Bestuurder MySQL JDBC.
 
-Alle publicatie- en auteur-AEM-instanties moeten verwijzen naar dezelfde MySQL-server.
+Alle publicatie- en auteur-AEM moeten verwijzen naar dezelfde MySQL-server.
 
-Wanneer MySQL op een server verschillend van AEM loopt, moet de server hostname in plaats van &quot;localhost&quot;in de schakelaar worden gespecificeerd JDBC.
+Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in plaats van &quot;localhost&quot;in de schakelaar worden gespecificeerd JDBC.
 
-* Op elke auteur en publiceer AEM-instantie
+* Op elke auteur en publiceer AEM instantie
 * Aangemeld met beheerdersrechten
 * De [webconsole openen](../../help/sites-deploying/configuring-osgi.md)
 
@@ -180,23 +183,23 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet de server hostname 
 
 * Voer de volgende waarden in:
 
-   * **[!UICONTROL JDBC-stuurprogrammaklasse]**: `com.mysql.jdbc.Driver`
-   * **[!UICONTROL URI]** JDBC-verbinding: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
+   * **[!UICONTROL JDBC driver class]**: `com.mysql.jdbc.Driver`
+   * **[!UICONTROL JDBC connection URI]**: `jdbc:mysql://localhost:3306/communities?characterEncoding=UTF-8`
 
-      Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM-server
+      Geef server op in plaats van localhost als MySQL-server niet hetzelfde is als &#39;deze&#39; AEM server
 
       *gemeenschappen* is de standaardgegevensbestand (schema) naam
 
-   * **[!UICONTROL Gebruikersnaam]**: `root`
+   * **[!UICONTROL Username]**: `root`
 
       Of ga gevormde Gebruikersnaam voor de server MySQL in, als niet &quot;wortel&quot;
 
-   * **[!UICONTROL Wachtwoord]**:
+   * **[!UICONTROL Password]**:
 
       Wis dit gebied als geen wachtwoord voor MySQL wordt geplaatst,
 
       else ga het gevormde wachtwoord voor de Gebruikersnaam MySQL in
-   * **[!UICONTROL Naam]** gegevensbron: naam ingevoerd voor de verbinding [](#new-connection-settings)MySQL, bijvoorbeeld &quot;gemeenschappen&quot;
+   * **[!UICONTROL Datasource name]**: naam ingevoerd voor de verbinding [](#new-connection-settings)MySQL, bijvoorbeeld &quot;gemeenschappen&quot;
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
