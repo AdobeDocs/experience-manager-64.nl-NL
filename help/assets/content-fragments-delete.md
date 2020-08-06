@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eaf65bdd-9091-4985-90bd-5eb2148965e3
 translation-type: tm+mt
 source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
+workflow-type: tm+mt
+source-wordcount: '468'
+ht-degree: 12%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3fa80e73fb6e9400fbeba29d80aa57e080b6f333
 
 >[!CAUTION]
 >
->Voor sommige functies voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
 
 ## Machtigingen - Verwijderen of Niet verwijderen {#permissions-delete-or-not-delete}
 
@@ -41,7 +44,7 @@ Met betrekking tot het schrappen van toestemmingen, moeten de Fragmenten van de 
 
 >[!NOTE]
 >
->Wanneer een gebruiker geen rechten voor [Verwijderen](/help/sites-administering/security.md#actions) heeft, werkt de editor voor inhoudsfragmenten in de modus *Alleen* -lezen.
+>When a user does not have any [Delete](/help/sites-administering/security.md#actions) permissions, the Content Fragment editor operates in *read-only* mode.
 
 >[!NOTE]
 >
@@ -49,7 +52,7 @@ Met betrekking tot het schrappen van toestemmingen, moeten de Fragmenten van de 
 
 ## Machtigingen alleen vereist voor Editor-functionaliteit {#permissions-required-for-editor-functionality-only}
 
-Voor gebruikers die een inhoudsfragment moeten bewerken/bijwerken, **zonder hen toe te staan om een volledig fragment** te verwijderen, moeten specifieke machtigingen worden toegewezen, aangezien de basisbewerking van de inhoudsfragmenteditor vereist dat voorbijgaande subelementen kunnen worden verwijderd.
+Voor gebruikers die een contentfragment moeten bewerken of bijwerken, **zonder hun toe te staan om een volledig fragment te verwijderen**, moeten specifieke machtigingen worden toegewezen, aangezien de basisbewerking van de contentfragmenteditor vereist dat tijdelijke subelementen kunnen worden verwijderd.
 
 Bijvoorbeeld bij het manipuleren van variaties; ook bij het bewerken van metagegevens of het beheren van bijbehorende inhoud.
 
