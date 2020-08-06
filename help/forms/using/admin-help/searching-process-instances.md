@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '467'
+ht-degree: 0%
 
 ---
 
@@ -27,13 +30,13 @@ Een algemene zoekopdracht naar een proces is het meest geschikt als u de proces-
 
 Voer de basiscriteria in om een algemene zoekopdracht uit te voeren. Als u meerdere criteria invoert, wordt de zoekopdracht uitgevoerd met een impliciete AND-voorwaarde.
 
-1. Klik in de beheerconsole op Services > Forms workflow > Process Search.
+1. Klik in de beheerconsole op Services > Forms-workflow > Zoeken in processen.
 1. Geef op de pagina Zoeken in proces onder Algemeen zoeken de volgende criteria op:
 
-   * **** Proces-id: Het positieve geheel dat elke unieke procesinstantie identificeert.
-   * **** Processtatus: Selecteer een status in de lijst.
-   * **** Toepassing: Selecteer een toepassing in de lijst. Slechts worden de opgestelde toepassingen getoond.
-   * **** Procesnaam - Versie: Selecteer een procesnaam in het menu. Slechts worden de opgestelde processen getoond.
+   * **Proces-id:** Het positieve geheel dat elke unieke procesinstantie identificeert.
+   * **Processtatus:** Selecteer een status in de lijst.
+   * **Toepassing:** Selecteer een toepassing in de lijst. Slechts worden de opgestelde toepassingen getoond.
+   * **Procesnaam - Versie:** Selecteer een procesnaam in het menu. Slechts worden de opgestelde processen getoond.
 
 1. Klik op Zoeken. De pagina Procesinstantie wordt weergegeven met een overzicht van de gevonden varianten.
 
@@ -41,7 +44,7 @@ Voer de basiscriteria in om een algemene zoekopdracht uit te voeren. Als u meerd
 
 U kunt specifieke kenmerken invoeren om een gedetailleerde zoekopdracht uit te voeren. Een gedetailleerde zoekopdracht is het meest geschikt als u veel procesinstanties uitvoert en u de mogelijke zoekopdrachten aan de hand van bepaalde criteria moet beperken.
 
-1. Klik in de beheerconsole op Services > Forms workflow > Process Search.
+1. Klik in de beheerconsole op Services > Forms-workflow > Zoeken in processen.
 1. Geef op de pagina Zoeken in proces onder Gedetailleerd zoeken de eerste criteria op die u hebt ingesteld:
 
    * Selecteer een kenmerk in de lijst Kenmerk.
