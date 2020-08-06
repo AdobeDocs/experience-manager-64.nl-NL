@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 22%
 
 ---
 
@@ -24,16 +27,16 @@ Zie Voorinstellingen voor viewers [beheren als u een beheerder bent en viewervoo
 Zie ook Voorinstellingen voor [viewers](managing-viewer-presets.md#publishing-viewer-presets)publiceren.
 
 Het is mogelijk dat u geen viewervoorinstellingen hoeft te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
-Om het even welke problemen met kijkersvoorinstellingen, zie het Oplossen van [Problemen Dynamische Media - Scene7](troubleshoot-dms7.md#viewers).
+Voor problemen met viewervoorinstellingen raadpleegt u [Problemen met dynamische media oplossen - Scene7](troubleshoot-dms7.md#viewers).
 
 ## Een voorinstelling voor een dynamische mediasviewer toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
-1. Open het middel en in de linkerrails en tik op **[!UICONTROL Viewers]**.
+1. Open de asset en tik in het linkerspoor op **[!UICONTROL Viewers]**.
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-   * De knoppen **[!UICONTROL URL]** en **[!UICONTROL Insluiten]** worden weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
-   * Het systeem bevat een groot aantal voorinstellingen voor viewers wanneer u Viewers selecteert in de **[!UICONTROL Gedetailleerde weergave]** van een element. U kunt het aantal weergegeven voorinstellingen verhogen. Zie Het aantal weergegeven [](managing-viewer-presets.md)viewervoorinstellingen verhogen.
+   * De knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** worden weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
+   * Het systeem bevat een groot aantal viewervoorinstellingen wanneer u Viewers selecteert in **[!UICONTROL Detail View]** van een asset. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen verhogen](managing-viewer-presets.md).
 
 1. Selecteer een viewer in het linkerdeelvenster om deze toe te passen op het element, zoals in het rechterdeelvenster wordt weergegeven. U kunt de URL ook [kopiëren en met andere gebruikers delen](linking-urls-to-yourwebapplication.md) .
 
