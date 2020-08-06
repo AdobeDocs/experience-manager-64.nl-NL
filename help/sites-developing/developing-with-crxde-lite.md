@@ -20,28 +20,28 @@ ht-degree: 0%
 
 # Ontwikkelen met CRXDE Lite {#developing-with-crxde-lite}
 
-In deze sectie wordt beschreven hoe u uw AEM-toepassing kunt ontwikkelen met behulp van CRXDE Lite.
+In deze sectie wordt beschreven hoe u uw AEM toepassing kunt ontwikkelen met behulp van CRXDE Lite.
 
 Raadpleeg de overzichtsdocumentatie voor meer informatie over de verschillende ontwikkelomgevingen die beschikbaar zijn.
 
-CRXDE Lite is ingebed in AEM en laat u toe om standaardontwikkelingstaken in browser uit te voeren. Met CRXDE Lite, kunt u een project tot stand brengen, dossiers (zoals .jsp en .java), omslagen, malplaatjes, componenten, dialogen, knopen, eigenschappen en bundels creëren en uitgeven terwijl het registreren.
+CRXDE Lite is ingebed in AEM en laat u toe om standaardontwikkelingstaken in browser uit te voeren. Met CRXDE Lite kunt u een project maken, bestanden (zoals .jsp en .java), mappen, sjablonen, componenten, dialoogvensters, knooppunten, eigenschappen en bundels maken en bewerken tijdens het vastleggen.
 
-CRXDE Lite wordt geadviseerd wanneer u geen directe toegang tot de server van AEM hebt, wanneer u een toepassing door de uit-van-de-doos componenten en de bundels van Java uit te breiden of te wijzigen of wanneer u geen specifieke debugger, codevoltooiing en syntaxismarkering nodig hebt.
+CRXDE Lite wordt aanbevolen wanneer u geen directe toegang hebt tot de AEM server, wanneer u een toepassing ontwikkelt door de componenten en Java-bundels die buiten de box vallen uit te breiden of te wijzigen of wanneer u geen speciale debugger, codevoltooiing en syntaxismarkering nodig hebt.
 
 >[!NOTE]
 >
->Vanaf AEM 6.4.8.1 is anonieme toegang van CRXDE Lite niet meer mogelijk.
+>Vanaf AEM 6.4.8.1 is anonieme toegang tot CRXDE Lite niet meer mogelijk.
 >Gebruikers worden omgeleid naar het aanmeldingsscherm.
 
 >[!NOTE]
 >
->Het wordt aanbevolen de [AEM Developer Tools voor Eclipse](/help/sites-developing/aem-eclipse.md) en de [AEM HTML Brackets Extension](/help/sites-developing/aem-brackets.md) tijdens de projectontwikkeling te gebruiken.
+>Het wordt aanbevolen de [AEM Developer Tools for Eclipse](/help/sites-developing/aem-eclipse.md) en de [AEM HTML Brackets Extension](/help/sites-developing/aem-brackets.md) te gebruiken tijdens de projectontwikkeling.
 
 ## Aan de slag met CRXDE Lite {#getting-started-with-crxde-lite}
 
 Ga als volgt te werk om aan de slag te gaan met CRXDE Lite:
 
-1. Installeer AEM.
+1. AEM installeren.
 1. Voer in uw browser https://`<host>`:`<port>`/crx/de in. Standaard is dit `http://localhost:4502/crx/de`.
 1. Voer uw **gebruikersnaam** en **wachtwoord** in. Standaard is dit `admin` en `admin`.
 
@@ -55,7 +55,7 @@ U kunt nu CRXDE Lite gebruiken om uw toepassing te ontwikkelen.
 
 ### Overzicht van de gebruikersinterface {#overview-of-the-user-interface}
 
-CRXDE Lite biedt de volgende functionaliteit aan:
+CRXDE Lite biedt de volgende functionaliteit:
 
 <table> 
  <tbody> 
@@ -73,7 +73,7 @@ CRXDE Lite biedt de volgende functionaliteit aan:
   </tr> 
   <tr> 
    <td>Venster Bewerken</td> 
-   <td><p><strong>Tabblad Start</strong> : Hiermee kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot bronnen voor ontwikkelaars (documentatie, ontwikkelaarsblog, kennisbasis) en ondersteuning (Adobe-startpagina en ondersteuningscentrum).<br /> </p> <p>Dubbelklik op een bestand in het deelvenster <strong>Verkenner</strong> om de inhoud weer te geven. zoals bijvoorbeeld een .jsp- of een .java-bestand. U kunt het dan wijzigen en de veranderingen bewaren.</p> <p>Nadat een bestand is bewerkt in het deelvenster <strong>Bewerken</strong> , zijn de volgende gereedschappen beschikbaar op de werkbalk:<br /> </p> - <strong>Tonen in boom: </strong>geeft het bestand weer in de gegevensopslagstructuur.<br /> - <strong>Zoeken/vervangen ...</strong>: zoeken of vervangen.<br /> <br /> Dubbelklik op de statusregel van het deelvenster <strong>Bewerken</strong> om het dialoogvenster <strong>Ga naar regel</strong> te openen, zodat u een specifiek regelnummer kunt invoeren waarnaar u wilt gaan.<br /> </td> 
+   <td><p><strong>Tabblad Start</strong> : kunt u zoeken in inhoud en/of documentatie en toegang krijgen tot bronnen voor ontwikkelaars (documentatie, blog voor ontwikkelaars, kennisbasis) en ondersteuning (Adobe homepage en ondersteuningscentrum).<br /> </p> <p>Dubbelklik op een bestand in het deelvenster <strong>Verkenner</strong> om de inhoud weer te geven. zoals bijvoorbeeld een .jsp- of een .java-bestand. U kunt het dan wijzigen en de veranderingen bewaren.</p> <p>Nadat een bestand is bewerkt in het deelvenster <strong>Bewerken</strong> , zijn de volgende gereedschappen beschikbaar op de werkbalk:<br /> </p> - <strong>Tonen in boom: </strong>geeft het bestand weer in de gegevensopslagstructuur.<br /> - <strong>Zoeken/vervangen ...</strong>: zoeken of vervangen.<br /> <br /> Dubbelklik op de statusregel van het deelvenster <strong>Bewerken</strong> om het dialoogvenster <strong>Ga naar regel</strong> te openen, zodat u een specifiek regelnummer kunt invoeren waarnaar u wilt gaan.<br /> </td> 
   </tr> 
   <tr> 
    <td>Eigenschappen, tabblad<br /> </td> 
@@ -105,7 +105,7 @@ CRXDE Lite biedt de volgende functionaliteit aan:
   </tr> 
   <tr> 
    <td>Maken ...<br /> </td> 
-   <td><p>Vervolgkeuzemenu voor het maken van het volgende onder het geselecteerde knooppunt:<br /> </p> <p>- <strong>Knooppunt</strong>: een knooppunt met een willekeurig knooppunttype<br /> </p> <p>- <strong>Bestand</strong>: nt:bestandnode en het bijbehorende nt:resource subnode</p> <p>- <strong>Map</strong>: nt:mapknooppunt</p> <p>- <strong>Sjabloon</strong>: AEM-sjabloon</p> <p>- <strong>Component</strong>: AEM-component</p> <p>- <strong>Dialoog</strong>: AEM-dialoogvenster</p> </td> 
+   <td><p>Vervolgkeuzemenu voor het maken van het volgende onder het geselecteerde knooppunt:<br /> </p> <p>- <strong>Knooppunt</strong>: een knooppunt met een willekeurig knooppunttype<br /> </p> <p>- <strong>Bestand</strong>: nt:bestandnode en het bijbehorende nt:resource subnode</p> <p>- <strong>Map</strong>: nt:mapknooppunt</p> <p>- <strong>Sjabloon</strong>: AEM sjabloon</p> <p>- <strong>Component</strong>: AEM</p> <p>- <strong>Dialoog</strong>: Dialoogvenster AEM</p> </td> 
   </tr> 
   <tr> 
    <td>Verwijderen<br /> </td> 
@@ -133,7 +133,7 @@ CRXDE Lite biedt de volgende functionaliteit aan:
   </tr> 
   <tr> 
    <td>Opties<br /> </td> 
-   <td><p>Vervolgkeuzemenu met de volgende gereedschappen:</p> <p>- <strong>Serverconfiguratie ...</strong>: om toegang te krijgen tot de Felix-console.</p> <p>- <strong>Query ...</strong>: om een query uit te voeren op de repository.</p> <p>- <strong>Bevoegdheden ...</strong>: om het beheer van bevoegdheden te openen, waar u bevoegdheden kunt weergeven en toevoegen.</p> <p>- Toegangscontrole <strong>testen ...</strong>: een plaats waar u de toestemming voor bepaalde weg en/of hoofd kunt testen.</p> <p>- Type <strong>knooppunt</strong>exporteren: om knooppunttypes in het systeem als knoopaantekening uit te voeren.</p> <p>- Type <strong>knooppunt importeren ...</strong>: om knooppunttypen te importeren met gebruik van codenotatie.</p>  <p>- Foutopsporing SiteCatalyst <strong>installeren...</strong>: instructies voor het installeren van Analytics Debugger.</p> </td> 
+   <td><p>Vervolgkeuzemenu met de volgende gereedschappen:</p> <p>- <strong>Serverconfiguratie ...</strong>: om toegang te krijgen tot de Felix-console.</p> <p>- <strong>Query ...</strong>: om een query uit te voeren op de repository.</p> <p>- <strong>Bevoegdheden ...</strong>: om het beheer van bevoegdheden te openen, waar u bevoegdheden kunt weergeven en toevoegen.</p> <p>- Toegangscontrole <strong>testen ...</strong>: een plaats waar u de toestemming voor bepaalde weg en/of hoofd kunt testen.</p> <p>- Type <strong>knooppunt</strong>exporteren: om knooppunttypes in het systeem als knoopaantekening uit te voeren.</p> <p>- Type <strong>knooppunt importeren ...</strong>: om knooppunttypen te importeren met gebruik van codenotatie.</p>  <p>- Foutopsporing voor SiteCatalyst <strong>installeren...</strong>: instructies voor het installeren van Analytics Debugger.</p> </td> 
   </tr> 
   <tr> 
    <td>Aanmeldingswidget<br /> </td> 
@@ -144,7 +144,7 @@ CRXDE Lite biedt de volgende functionaliteit aan:
 
 ### Een map maken {#creating-a-folder}
 
-Een map maken met CRXDE Lite:
+Een map met CRXDE Lite maken:
 
 1. Open CRXDE Lite in uw browser.
 1. Klik in het navigatievenster met de rechtermuisknop op de map waaronder u de nieuwe map wilt maken, selecteer **Maken ...** en **Map maken..**.
@@ -266,7 +266,7 @@ Een nieuw script maken:
 
 ### Nodetypen exporteren en importeren {#exporting-and-importing-node-types}
 
-Met CRXDE Lite kunt u knooptypedefinities in [CND (Compacte Namespace en de Definitie van het Type van Knoop) invoeren en/of uitvoeren notatie](http://jackrabbit.apache.org/jcr/node-type-notation.html).
+Met CRXDE Lite kunt u knooppunttypedefinities importeren en/of exporteren in [CND-notatie (compacte naamruimte en definitie van knooppunttype)](http://jackrabbit.apache.org/jcr/node-type-notation.html).
 
 Een definitie van het knooppunttype exporteren:
 
@@ -287,7 +287,7 @@ Een definitie van het knooppunttype importeren:
 
 ### Logboekregistratie {#logging}
 
-Met CRXDE Lite kunt u het dossier tonen `error.log` dat op het dossiersysteem bij `<crx-install-dir>/crx-quickstart/server/logs` en het filtreren met het aangewezen logboekniveau wordt gevestigd. Ga als volgt te werk:
+Met CRXDE Lite kunt u het bestand weergeven `error.log` dat zich op het bestandssysteem bevindt `<crx-install-dir>/crx-quickstart/server/logs` en dit filteren met het gewenste logniveau. Ga als volgt te werk:
 
 1. Open CRXDE Lite in uw browser.
 1. Selecteer op het tabblad **Console** onder aan het venster in het keuzemenu rechts de optie **Serverlogbestanden**.
