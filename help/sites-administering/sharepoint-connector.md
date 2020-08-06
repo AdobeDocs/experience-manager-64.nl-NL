@@ -22,14 +22,14 @@ ht-degree: 0%
 
 De Schakelaar van JCR van de dag voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
 
-Dit artikel bevat informatie over de Adobe JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
+Dit artikel omvat details rond de Schakelaar van JCR van Adobe voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0.
 
 De SharePoint-connector ondersteunt de volgende basisfuncties:
 
 * Inhoud en metagegevens lezen vanuit SharePoint.
 * SharePoint-beveiligingsinstellingen voor benaderde inhoud bevestigen door native SharePoint-verificatie en -verificatie toe te passen
 * Inhoudsintegratie met Inhoudszoeker
-* AEM-componenten gebruiken, zoals External Resource, om SharePoint-afbeeldingen en video&#39;s weer te geven
+* Het gebruiken van AEM componenten, zoals Extern Middel om beelden en video&#39;s van SharePoint te tonen
 * SharePoint synchroniseren met AEM Assets
 
 Alle functies worden uitgevoerd gebruikend de inheemse Webdiensten van SharePoint als interface aan de inhoud en de diensten van SharePoint.
@@ -49,14 +49,14 @@ Ga als volgt te werk om aan de slag te gaan met de connector:
 * Download het verdelingsdossier van het schakelaarpakket van het Aandeel van het Pakket.
 * Kopieer een geldig bestand *license.properties* naar de map die het bestand *cq-quickstart-6.4.0.jar* bevat.
 
-* Dubbelklik of tik op het .jar-bestand om AEM te starten of start het bestand via de opdrachtregel.
+* Dubbelklik op of tik op het .jar-bestand om het te AEM of start het bestand via de opdrachtregel.
 * Installeer het aansluitingspakket via Package Manager.
 * Configureer de verbindingsopties.
 
 ## SharePoint-connector installeren {#installing-sharepoint-connector}
 
 De connector is een inhoudspakket dat eenvoudige installatie mogelijk maakt. Installeer het pakket met behulp van Package Manager en stel vervolgens de URL van de SharePoint-server in\
-en andere configuratieopties. De SharePoint-inhoud is beschikbaar in de AEM-opslagruimte.
+en andere configuratieopties. De inhoud van SharePoint is beschikbaar in de AEM bewaarplaats.
 
 ### Installatievereisten {#installation-requirements}
 
@@ -74,7 +74,7 @@ De SharePoint-connector is beschikbaar voor downloaden vanuit [pakketshare](http
 
 De schakelaar steunt het volgende:
 
-* AEM-versies:
+* AEM versies:
 
    * AEM 6.4, 6.3
 
@@ -83,7 +83,7 @@ De schakelaar steunt het volgende:
    * Microsoft Office SharePoint Server (MOSS) 2010
    * Microsoft Office SharePoint Server (MOSS) 2013
 
-* Neem contact op met het Adobe-kantoor voor uw regio als u ondersteuning nodig hebt voor aangepaste implementaties van de connector (OEM, speciale vereisten, aangepaste verificatiemethoden).
+* Als u steun voor douaneplaatsingen van de schakelaar (OEM, speciale vereisten, aangepaste authentificatiemethodes) vereist, contacteer het bureau van de Adobe voor uw regio.
 
 >[!NOTE]
 >
@@ -91,16 +91,16 @@ De schakelaar steunt het volgende:
 
 ### Standaardinstallatie {#standard-installation}
 
-AEM-pakket delen wordt gebruikt om productfuncties, voorbeelden en hotfixes te distribueren. Raadpleeg de documentatie bij [Pakketdeling voor meer informatie](/help/sites-administering/package-manager.md#package-share).
+AEM Pakket delen wordt gebruikt om producteigenschappen, voorbeelden, en hete moeilijke situaties te verspreiden. Raadpleeg de documentatie bij [Pakketdeling voor meer informatie](/help/sites-administering/package-manager.md#package-share).
 
-Als u Pakketdeling wilt openen op de welkomstpagina van AEM, tikt u op **Gereedschappen** of klikt u op **Pakket delen**. U hebt een geldige Adobe ID nodig die uw bedrijfs-e-mailadres bevat. Nadat u zich hebt aangemeld bij uw account, kunt u bovendien een aanvraag indienen voor toegang tot het delen van pakketten.
+Als u Pakketdeling wilt openen op de welkomstpagina AEM, tikt u op **Gereedschappen** of klikt u op **Pakketdelen**. U hebt een geldige Adobe ID nodig die uw bedrijfs-e-mailadres bevat. Nadat u zich hebt aangemeld bij uw account, kunt u bovendien een aanvraag indienen voor toegang tot het delen van pakketten.
 
 #### Integreren met AEM {#integrating-with-aem}
 
 Om het pakket van de schakelaarinhoud te installeren.
 
-1. Open een Adobe Support-ticket om het pakket met connectorfuncties aan te vragen.
-1. Download het pakket wanneer het beschikbaar is en open dan de Manager van het Pakket voor uw instantie AEM.
+1. Open een Adobe Support-ticket om een aanvraag in te dienen voor het connectorfunctiepakket.
+1. Download het pakket wanneer het beschikbaar is en open dan de Manager van het Pakket voor uw AEM instantie.
 1. Tik/klik op **Installeren** op de pagina met pakketbeschrijving.
 1. Tik in het dialoogvenster Pakket **** installeren op of klik op **Installeren**.
 
@@ -135,9 +135,9 @@ De schakelaar kan ook voor veelvoudige werkruimten worden gevormd. In dit geval 
 `<name>` is de naam van de JCR-werkruimte en\
 `<url>` is de URL van de SharePoint-server voor die werkruimte.
 
-Voer in AEM nog één stap uit, afgezien van de bovenstaande configuratiestappen. Maak een lijst met de bundel &#39;**com.day.cq.dam.cq-dam-jcr-connectors**&#39;.
+Voer in AEM nog een stap uit, apart van de bovenstaande configuratiestappen. Lijst van gewenste personen de bundel &quot;**com.day.cq.dam.cq-dam-jcr-connectors**&quot;.
 
-Voer de volgende stappen uit om lijstbundels in AEM toe te staan:
+Voer de volgende stappen uit om bundels in AEM te lijsten van gewenste personen:
 
 1. Navigeer naar de OSGi Management Console: http://localhost:4502/system/console/configMgr.
 
@@ -194,21 +194,21 @@ Naar keuze, kunt u de vertraging van de Synchronisatie tussen verschillende sync
 SharePoint omvat de Klassieke en op eisen gebaseerde authentificatiemethodes, die allebei de volgende authentificatietypen steunen:
 
 * Basis
-* Op formulieren gebaseerd
+* Op Forms gebaseerd
 
 Met name zijn de volgende verificatietypen beschikbaar:
 
 * Klassiek-basis
-* Op basis van klassieke formulieren
+* Op basis van Classic-Forms
 * Vorderingen — Basis
-* Op basis van claims-formulieren
+* Op Forms gebaseerde claims
 
 De AEM JCR-connector voor Microsoft SharePoint 2010 en Microsoft SharePoint 2013, versie 4.0. steunt op eisen-gebaseerde authentificatie (die door Microsoft wordt voorgesteld), die op de volgende wijzen werkt:
 
 * **Basic-/NTLM-verificatie**: De schakelaar probeert eerst om het gebruiken van basisauthentificatie te verbinden. Als deze optie niet beschikbaar is, wordt overgeschakeld naar verificatie op basis van NTLM.
-* **Op formulieren gebaseerde verificatie**: SharePoint valideert gebruikers op geloofsbrieven die de gebruikers in een login vorm (typisch een Web-pagina) typen. Het systeem geeft een teken voor voor authentiek verklaarde verzoeken uit die een sleutel voor het opnieuw vestigen van de identiteit voor verdere verzoeken bevat.
+* **Op Forms gebaseerde verificatie**: SharePoint valideert gebruikers op geloofsbrieven die de gebruikers in een login vorm (typisch een Web-pagina) typen. Het systeem geeft een teken voor voor authentiek verklaarde verzoeken uit die een sleutel voor het opnieuw vestigen van de identiteit voor verdere verzoeken bevat.
 
-**Verificatie op basis van formulieren configureren**
+**Op Forms gebaseerde verificatie configureren**
 
 Ga naar: [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles)
 
@@ -228,9 +228,9 @@ Ga naar: [http://localhost:4502/system/console/bundles](http://localhost:4502/sy
 1. Stel de waarde van SharePoint Connection Factory in op `com.day.crx.spi.sharepoint.security.WindowsAuthenticationConnectionFactory`.
 1. Click **Save**.
 
-Alleen een gebruiker die op zowel AEM als SharePoint is geverifieerd, heeft via de connector toegang tot de SharePoint-inhoud.
+Slechts kan een gebruiker die op zowel AEM als SharePoint voor authentiek wordt verklaard tot de inhoud van SharePoint door de schakelaar toegang hebben.
 
-U kunt de schakelaaruitbreiding voor authentificatie ook gebruiken om een module van de douaneauthentificatie tot stand te brengen, die, bijvoorbeeld, toegang door gebruikers AEM aan specifieke gebruikers van SharePoint in kaart brengt. Maak AEM-gebruikers die overeenkomen met SharePoint-gebruikers (gebruikersnaam en wachtwoord moeten overeenkomen) om SharePoint-inhoud te kunnen zien die aan de verbindingsinstantie is toegewezen.
+U kunt de schakelaaruitbreiding voor authentificatie ook gebruiken om een module van de douaneauthentificatie tot stand te brengen, die, bijvoorbeeld, toegang door AEM gebruikers aan specifieke gebruikers van SharePoint in kaart brengt. Creeer AEM gebruikers die aan de gebruikers van SharePoint (gebruikersnaam en wachtwoord zouden moeten aanpassen) beantwoorden om de inhoud van SharePoint te kunnen zien die aan de schakelaarinstantie in kaart wordt gebracht.
 
 Een gebruiker maken in AEM:
 
@@ -264,7 +264,7 @@ De gebruiker toevoegen in de beheergroep:
 
 #### Verschillende verificatiemethoden van de SharePoint-server worden ondersteund {#supporting-different-authentication-methods-of-the-sharepoint-server}
 
-In zijn standaardversie, steunt de schakelaar de standaardIIS **Windows** authentificatie (Basis) en op vorm-gebaseerde authentificatie (op teken gebaseerd). De [andere authentificatiemethodes](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) kunnen door het rekbaarheidsmechanisme worden gesteund.
+In zijn standaardversie, steunt de schakelaar de standaardIIS **Windows** authentificatie (Basis) en op Forms-Gebaseerde authentificatie (op teken gebaseerd). De [andere authentificatiemethodes](https://technet.microsoft.com/en-us/library/cc262350.aspx#section2) kunnen door het rekbaarheidsmechanisme worden gesteund.
 
 De volgende stappen bevatten richtlijnen voor het uitbreiden van de standaardverificatie ter ondersteuning van verschillende verificatiemethoden van de SharePoint-server:
 
