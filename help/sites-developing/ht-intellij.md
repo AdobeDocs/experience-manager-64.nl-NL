@@ -1,8 +1,8 @@
 ---
-title: AEM-projecten ontwikkelen met behulp van IntelliJ IDEA
-seo-title: AEM-projecten ontwikkelen met behulp van IntelliJ IDEA
-description: IntelliJ IDEA gebruiken om AEM-projecten te ontwikkelen
-seo-description: IntelliJ IDEA gebruiken om AEM-projecten te ontwikkelen
+title: Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA
+seo-title: Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA
+description: IntelliJ IDEA gebruiken om AEM projecten te ontwikkelen
+seo-description: IntelliJ IDEA gebruiken om AEM projecten te ontwikkelen
 uuid: 382b5008-2aed-4e08-95be-03c48f2b549e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: df6410a2-794e-4fa2-ae8d-37271274d537
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '657'
+ht-degree: 0%
 
 ---
 
 
-# AEM-projecten ontwikkelen met behulp van IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
+# Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA{#how-to-develop-aem-projects-using-intellij-idea}
 
 ## Overzicht {#overview}
 
@@ -24,7 +27,7 @@ Om met AEM ontwikkeling op IntelliJ te beginnen, zijn de volgende stappen vereis
 Elk van hen wordt meer in detail uitgelegd in de rest van dit hoe-te.
 
 * IntelliJ installeren
-* Stel uw AEM-project in op basis van Maven
+* Uw AEM instellen op basis van Maven
 * JSP-ondersteuning voor IntelliJ in de Maven POM voorbereiden
 * Importeer het Maven Project in IntelliJ
 
@@ -38,11 +41,11 @@ Download IntelliJ IDEA vanaf [de pagina Downloads bij JetBrains](https://www.jet
 
 Volg vervolgens de installatie-instructies op die pagina.
 
-### Stel uw AEM-project in op basis van Maven {#set-up-your-aem-project-based-on-maven}
+### Uw AEM instellen op basis van Maven {#set-up-your-aem-project-based-on-maven}
 
-Stel vervolgens uw project in met Maven zoals beschreven in [Hoe kan ik AEM-projecten bouwen met Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Stel vervolgens uw project in met Maven zoals beschreven in [Hoe kan ik AEM projecten samenstellen met Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Om met projecten AEM in IntelliJ IDEA te beginnen, is de basisopstelling in [Aan de slag in 5 notulen](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) voldoende.
+Om met AEM projecten in IntelliJ IDEA te beginnen, volstaat de basisopstelling in [Aan de slag in 5 Minuten](https://maven.apache.org/guides/getting-started/maven-in-five-minutes.html) .
 
 ### JSP-ondersteuning voorbereiden voor IntelliJ IDEA {#prepare-jsp-support-for-intellij-idea}
 
@@ -51,7 +54,7 @@ IntelliJ IDEA kan ook ondersteuning bieden bij het werken met JSP, bijvoorbeeld
 * tagbibliotheken automatisch invullen
 * bewustzijn van objecten die worden gedefinieerd door `<cq:defineObjects />` en `<sling:defineObjects />`
 
-Om dat te werken, volg de instructies over [hoe te met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [hoe te om AEM- Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
+Om dat te werken, volg de instructies over [hoe te met JSPs](/help/sites-developing/ht-projects-maven.md#how-to-work-with-jsps) in [hoe te AEM Projecten te bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 ### Het Maven-project importeren {#import-the-maven-project}
 
@@ -69,7 +72,7 @@ Om dat te werken, volg de instructies over [hoe te met JSPs](/help/sites-develop
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
 1. Ga door de volgende dialogen door te klikken **Volgende** en **Einde**.
-1. U bent nu ingesteld op AEM Development met IntelliJ IDEA
+1. U bent nu opstelling voor AEM Ontwikkeling gebruikend IntelliJ IDEA
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
@@ -116,7 +119,7 @@ IntelliJ IDEA moet begrijpen waar te om JSPs voor het zuiveren te vinden. Aangez
 
 #### AEM configureren voor foutopsporingsmodus {#configure-aem-for-debug-mode}
 
-De laatste vereiste stap is het starten van AEM met de JVM-opties die door IntelliJ IDEA worden voorgesteld.
+De laatste vereiste stap is AEM te beginnen met de JVM-opties die door IntelliJ IDEA worden voorgesteld.
 
 U kunt dit doen door het AEM jar dossier direct te beginnen en deze opties toe te voegen, bijvoorbeeld met de volgende bevellijn:
 
