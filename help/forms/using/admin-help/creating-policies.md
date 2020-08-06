@@ -1,8 +1,8 @@
 ---
 title: Beleid maken en beheren
 seo-title: Beleid maken en beheren
-description: Een beleid is een reeks vertrouwelijkheidsmontages en gebruikers die tot een document kunnen toegang hebben waarop het beleid wordt toegepast. U kunt verschillende soorten beleid maken en beheren met AEM-formulieren.
-seo-description: Een beleid is een reeks vertrouwelijkheidsmontages en gebruikers die tot een document kunnen toegang hebben waarop het beleid wordt toegepast. U kunt verschillende soorten beleid maken en beheren met AEM-formulieren.
+description: Een beleid is een reeks vertrouwelijkheidsmontages en gebruikers die tot een document kunnen toegang hebben waarop het beleid wordt toegepast. U kunt verschillende soorten beleid maken en beheren met behulp van AEM.
+seo-description: Een beleid is een reeks vertrouwelijkheidsmontages en gebruikers die tot een document kunnen toegang hebben waarop het beleid wordt toegepast. U kunt verschillende soorten beleid maken en beheren met behulp van AEM.
 uuid: 72be06f3-3e90-495e-8425-72380d95704a
 contentOwner: admin
 content-type: reference
@@ -40,11 +40,11 @@ Wanneer u de documentbeveiliging voor het eerst installeert, bevat deze één ge
 
 **Microsoft Outlook-beleid dat automatisch wordt gegenereerd**
 
-Met Acrobat kunt u beleid toepassen op documenten die u als e-mailbijlagen verzendt in Microsoft Outlook. In Outlook kunt u een document beveiligen met behulp van een bestaand beleid of met behulp van een automatisch gegenereerd beleid dat Acrobat genereert met standaardinstellingen voor vertrouwelijkheid en dat van toepassing is op het document dat aan een e-mailbericht is gekoppeld. (Zie * [Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
+Met Acrobat kunt u beleid toepassen op documenten die u als e-mailbijlagen verzendt in Microsoft Outlook. In Vooruitzichten, kunt u een document beschermen door een bestaand beleid te gebruiken of door een auto-geproduceerd beleid te gebruiken dat Acrobat met standaard vertrouwelijkheidsmontages produceert en op het document van toepassing is dat aan een e-mailbericht in bijlage is. (Zie * [Acrobat Help](https://help.adobe.com/en_US/acrobat/pro/using/index.html)*.)
 
 >[!NOTE]
 >
->Een beleid is alleen beschikbaar in Outlook als u dit beleid instelt als een favoriet in Acrobat. Alle andere beleid, met inbegrip van die daar u de Uitgever bent, wordt niet getoond in Vooruitzichten.
+>Opdat een beleid in Vooruitzichten beschikbaar is, moet u het beleid als favoriet in Acrobat plaatsen. Alle andere beleid, met inbegrip van die daar u de Uitgever bent, wordt niet getoond in Vooruitzichten.
 
 ## Wie beleid en beleidssets kan maken en beheren {#who-can-create-and-manage-policies-and-policy-sets}
 
@@ -73,7 +73,7 @@ De status van het document bepaalt wanneer de wijziging van kracht wordt:
 
 >[!NOTE]
 >
->Beleid dat door Acrobat automatisch wordt gegenereerd voor ontvangers van documenten die in Microsoft Outlook zijn gekoppeld aan e-mailberichten, wordt niet weergegeven in de beleidslijst. U kunt dit beleid alleen weergeven door de pagina Documentdetails voor het bijbehorende document te openen.
+>Het beleid dat Acrobat automatisch genereert voor de ontvangers van documenten die in Microsoft Outlook aan e-mailberichten zijn gekoppeld, wordt niet weergegeven in de beleidslijst. U kunt dit beleid alleen weergeven door de pagina Documentdetails voor het bijbehorende document te openen.
 
 Wanneer u beleid bewerkt, gelden de volgende beperkingen:
 
@@ -81,7 +81,7 @@ Wanneer u beleid bewerkt, gelden de volgende beperkingen:
 * Coördinatoren van beleidssets kunnen beleid binnen beleidssets alleen bewerken als ze de juiste machtigingen hebben. De beheerder van de supergebruiker of van de beleidsreeks plaatst deze toestemmingen in het de beheerderinterface van de documentveiligheid.
 * Als het beleid een watermerk heeft gevormd dat de beheerder schrapte aangezien het beleid werd gecreeerd, zal dit watermerk niet meer op documenten worden toegepast als u het beleid uitgeeft en bewaart. Verwijderde watermerken blijven alleen van kracht voor bestaand beleid zolang u het beleid niet bewerkt. Als u het beleid bewerkt, moet u een ander watermerk selecteren om het verwijderde watermerk te vervangen.
 * U kunt geen anonieme toegang tot een document verlenen door het beleid uit te geven dat momenteel wordt toegepast. Als u het beleid bewerkt, moeten gebruikers zich nog steeds aanmelden om het document te openen. Om anonieme toegang tot dit document toe te passen, verwijder eerst het beleid in de cliënttoepassing en pas dan een ander beleid toe dat anonieme toegang toestaat.
-* Het beleid dat Acrobat automatisch genereert voor de ontvangers van een document dat in Microsoft Outlook is gekoppeld aan een e-mailbericht, wordt niet weergegeven in de beleidslijst. Als u dit beleid wilt openen, zoekt u het document op de pagina Documenten, opent u de pagina Documentdetails en klikt u op de naam van het beleid in de lijst met documentdetails.
+* Het beleid dat Acrobat automatisch genereert voor de ontvangers van een document dat aan een e-mailbericht in Microsoft Outlook is gekoppeld, wordt niet weergegeven in de beleidslijst. Als u dit beleid wilt openen, zoekt u het document op de pagina Documenten, opent u de pagina Documentdetails en klikt u op de naam van het beleid in de lijst met documentdetails.
 
 **Een beleid maken of bewerken**
 
@@ -102,10 +102,12 @@ Wanneer u beleid bewerkt, gelden de volgende beperkingen:
    * dubbel aanhalingsteken (&quot;)
    * backslash (\)
    * slash (/)
+
    Als u het volgende teken in de naam of beschrijving gebruikt, worden deze omgezet in spaties:
 
    * regelterugloop (ASCII-teken 13)
    * nieuwe regel (ASCII-teken 10).
+
    >[!NOTE]
    >
    >U kunt een beleidsnaam maken die uitgebreide tekens bevat. wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als identiek beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of er al een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
@@ -176,15 +178,15 @@ Deze documentmachtigingen zijn beschikbaar op het tabblad Machtigingen. U kunt d
 
 **Willekeurig:** De gebruiker kan de PDF wijzigen.
 
-**Samenwerken:** De gebruiker mag met anderen samenwerken, gebruikend de Collaborate opties in de Acrobaat van Adobe. Met deze machtiging kan de gebruiker formuliergegevens kopiëren, zelfs als de machtiging Kopiëren niet expliciet in het beleid is opgegeven.
+**Samenwerken:** De gebruiker mag met anderen samenwerken, gebruikend de Collaborate opties in Adobe Acrobat. Met deze machtiging kan de gebruiker formuliergegevens kopiëren, zelfs als de machtiging Kopiëren niet expliciet in het beleid is opgegeven.
 
 **Pagina&#39;s wijzigen:** Gebruiker mag pagina&#39;s toevoegen en verwijderen en inhoud bewerken in de PDF.
 
-**Vullen en ondertekenen:** De gebruiker mag formuliervelden in de PDF invullen en ondertekenen.
+**Fill &amp; Sign:** De gebruiker mag formuliervelden in de PDF invullen en ondertekenen.
 
 **Kopiëren:** Hiermee kan de gebruiker tekst kopiëren uit een document dat met dit beleid is beveiligd.
 
-**Schermlezer:** Deze machtiging wordt weergegeven als u het selectievakje Aangepaste machtigingen voor PDF tonen inschakelt. Als deze optie is geselecteerd, heeft Adobe Acrobat toestemming om tijdelijke codes toe te voegen aan de PDF om de leesbaarheid met een schermlezer te verbeteren.
+**Reader scherm:** Deze machtiging wordt weergegeven als u het selectievakje Aangepaste machtigingen voor PDF tonen inschakelt. Als deze optie is geselecteerd, heeft Adobe Acrobat toestemming om tijdelijke codes toe te voegen aan de PDF om de leesbaarheid met een schermlezer te verbeteren.
 
 Deze documentmachtigingen zijn beschikbaar op het tabblad Opties. U kunt deze machtigingen toepassen op PDF-, PTC Pro/E- en Microsoft Office-bestanden:
 
@@ -246,7 +248,7 @@ Als u de globale authentificatiemontages met voeten treedt, kunt u de authentifi
 
 >[!NOTE]
 >
->Uitgebreide verificatie wordt ondersteund op Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
+>Uitgebreide verificatie wordt ondersteund door Apple Mac OS X met Adobe Acrobat versie 11.0.6 en hoger.
 
 ### Geavanceerde instellingen {#advanced-settings}
 
@@ -262,11 +264,11 @@ Als u een beleid uitgeeft en de beheerder een gevormd watermerk schrapte dat u e
 >
 >Voor beleid dat anonieme gebruikerstoegang verleent, worden de gebruikersnaam en het herkenningsteken van een anonieme gebruiker niet getoond als watermerk zelfs als u dit type van watermerk selecteert.
 
-**Alleen gecertificeerde insteekmodules van Acrobat gebruiken voor PDF:** Als deze optie is geselecteerd voor een beleid, moet Acrobat 8.0 en hoger worden uitgevoerd in de gecertificeerde modus wanneer documenten worden geopend die zijn beveiligd met het beleid. Wanneer Acrobat wordt uitgevoerd in de gecertificeerde modus, worden er geen plug-ins van derden geladen.
+**Alleen gecertificeerde Acrobat-plug-ins voor PDF gebruiken:** Als deze optie is geselecteerd voor een beleid, moet Acrobat 8.0 en hoger in de gecertificeerde modus worden uitgevoerd wanneer documenten worden geopend die met het beleid zijn beveiligd. Als Acrobat wordt uitgevoerd in de gecertificeerde modus, worden er geen plug-ins van derden geladen.
 
 Selecteer deze optie als u zich zorgen maakt over het schrijven van een insteekmodule door een ontvanger van een document die de documentbeveiliging in Acrobat 8.0 en hoger kan omzeilen. Selecteer deze optie niet als ontvangers van het document plug-ins van derden in Acrobat moeten gebruiken om te communiceren met documenten.
 
-Met deze optie wordt alleen de gecertificeerde modus in Acrobat 8.0 of hoger ingeschakeld. de beheerder moet de toegang voor Acrobat 7.0 uitschakelen.
+Met deze optie wordt alleen de gecertificeerde modus ingeschakeld in Acrobat 8.0 of hoger. de beheerder moet de toegang voor Acrobat 7.0 uitschakelen.
 
 (Zie De documentbeveiligingsserver [](/help/forms/using/admin-help/configuring-client-server-options.md#configure-the-document-security-server)configureren.)
 
@@ -282,7 +284,7 @@ Het gedeelte Onveranderbare geavanceerde instellingen bevat de volgende instelli
 
 * AES 128-bits
 * AES 256-bits. Alleen Acrobat 9.0 en hoger ondersteunen deze optie. Als u AES 256-versleuteling wilt gebruiken voor PDF-bestanden, moet u de JCE-bestanden (Unlimited Strength Jurdiction Policy) (Java Cryptography Extension) ophalen en installeren. Deze bestanden vervangen de bestanden local_policy.jar en US_export_policy.jar in de map [JAVE_HOME]/lib/security. Als u bijvoorbeeld Sun JDK 1.6 gebruikt, kopieert u de gedownloade bestanden naar de map [dep root]/Java/jdk1.6.0_26/lib/security. U kunt deze bestanden downloaden van [Java SE-downloads](https://java.sun.com/javase/downloads/index.jsp).
-* Geen versleuteling. Deze optie wordt momenteel ondersteund in Acrobat 9.0 en hoger. Als u deze optie selecteert, zijn de opties voor documentbeperkingen uitgeschakeld. Deze optie kan handig zijn als u documentbeveiliging wilt gebruiken voor documentcontrole of versiebeheer, maar het document niet wilt versleutelen.
+* Geen versleuteling. Acrobat 9.0 en hoger ondersteunen deze optie momenteel. Als u deze optie selecteert, zijn de opties voor documentbeperkingen uitgeschakeld. Deze optie kan handig zijn als u documentbeveiliging wilt gebruiken voor documentcontrole of versiebeheer, maar het document niet wilt versleutelen.
 
 **Documentbeperkingen:** Selecteer de PDF-documentcomponenten die u wilt versleutelen. Met andere clienttoepassingen wordt het gehele document versleuteld, maar niet de gekoppelde of ingesloten bestanden. U kunt uit deze opties kiezen:
 
@@ -324,7 +326,7 @@ U kunt meer gedetailleerde informatie over een beleid bekijken dat in de lijst v
 
 >[!NOTE]
 >
->Beleid dat door Acrobat automatisch wordt gegenereerd voor ontvangers van documenten die in Microsoft Outlook zijn gekoppeld aan e-mailberichten, wordt niet weergegeven in de beleidslijst. U kunt dit beleid alleen weergeven door de pagina Documentdetails voor het bijbehorende document te openen.
+>Het beleid dat Acrobat automatisch genereert voor de ontvangers van documenten die in Microsoft Outlook aan e-mailberichten zijn gekoppeld, wordt niet weergegeven in de beleidslijst. U kunt dit beleid alleen weergeven door de pagina Documentdetails voor het bijbehorende document te openen.
 
 1. Voor de pagina van de documentveiligheid, klik Beleid en klik dan het Mijn lusje van Beleid.
 1. Voltooi de zoekinformatie om te zoeken naar persoonlijk beleid.
@@ -369,10 +371,12 @@ Externe gebruikers kunnen beleid alleen kopiëren als de beheerder deze mogelijk
    * dubbel aanhalingsteken (&quot;)
    * backslash (\)
    * slash (/)
+
    Als u het volgende teken in de naam of beschrijving gebruikt, worden deze omgezet in spaties:
 
    * regelterugloop (ASCII-teken 13)
    * nieuwe regel (ASCII-teken 10).
+
    >[!NOTE]
    >
    >U kunt een beleidsnaam maken die uitgebreide tekens bevat. wanneer echter een vergelijking wordt gemaakt tussen twee tekenreeksen, worden tekens met en zonder accent, zoals &quot;e&quot; en &quot;é&quot;, als identiek beschouwd. Wanneer iemand een beleid maakt, wordt een vergelijking gemaakt om te controleren of er al een beleid met dezelfde naam bestaat. De vergelijking kan geen onderscheid maken tussen namen die hetzelfde zijn, behalve voor tekens met accent. Aangenomen wordt dat het beleid al aan de database is toegevoegd en dat het nieuwe beleid niet wordt toegevoegd.
@@ -392,7 +396,7 @@ Uitgenodigde gebruikers kunnen beleid slechts schrappen als de beheerder dit ver
 
 >[!NOTE]
 >
->U moet de clienttoepassing gebruiken om het beleid uit documenten te verwijderen. (Zie Acrobat Help of de juiste Help bij Acrobat Reader DC-extensies.)
+>U moet de clienttoepassing gebruiken om het beleid uit documenten te verwijderen. (Zie de Help bij Acrobat of de desbetreffende Help bij Acrobat Reader DC-extensies.)
 
 ## De beleidslijst sorteren {#sort-the-policy-list}
 
