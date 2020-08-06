@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
 translation-type: tm+mt
 source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
+workflow-type: tm+mt
+source-wordcount: '211'
+ht-degree: 1%
 
 ---
 
@@ -25,9 +28,9 @@ Als u de avatar niet naast elke geposte opmerking wilt weergeven:
 
 1. Kopiëren `comment.hbs`van `libs`naar `apps`
    1. Selecteer `/libs/social/commons/components/hbs/comments/comment/comment.hbs`
-   1. Kopie **[!UICONTROL selecteren]**
+   1. Selecteer **[!UICONTROL Copy]**
    1. Selecteer `/apps/social/commons/components/hbs/comments/comment`
-   1. Plakken **[!UICONTROL selecteren]**
+   1. Selecteer **[!UICONTROL Paste]**
 1. De bedekking openen `comment.hbs`
    * Dubbelklik op knooppunt `comment.hbs`in `/apps/social/commons/components/hbs/comments/comment folder`
 1. Zoek de volgende regels en verwijder of verwijder deze of verwijder ze:
@@ -53,9 +56,9 @@ Duw de bedekte commentaarcomponent aan de publicatieinstantie gebruikend het Hul
 >
 >Een robuustere vorm van replicatie zou zijn om een pakket in de Manager van het Pakket te creëren en het te [activeren](../../help/sites-administering/package-manager.md#replicating-packages) . Een pakket kan worden geëxporteerd en gearchiveerd.
 
-Selecteer in de globale navigatie **[!UICONTROL Extra > Implementatie > Replicatie]** en **[!UICONTROL activeer vervolgens de structuur]**.
+Selecteer en **[!UICONTROL Tools > Deployment > Replication]** **[!UICONTROL Activate Tree]** kies in de globale navigatie.
 
-Voer voor het beginpad in `/apps/social/commons` en selecteer **[!UICONTROL Activeren]**.
+Voer voor het beginpad in `/apps/social/commons` en selecteer **[!UICONTROL Activate]**.
 
 ![chlimage_1-42](assets/chlimage_1-42.png)
 
