@@ -1,8 +1,8 @@
 ---
 title: Referentielettersjablonen
 seo-title: Referentielettersjablonen
-description: 'AEM Forms biedt indelingssjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
-seo-description: 'AEM Forms biedt indelingssjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
+description: 'AEM Forms biedt lay-outsjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
+seo-description: 'AEM Forms biedt lay-outsjablonen voor correspondentiebeheer die u kunt gebruiken om snel letters te maken. '
 uuid: 3b2312d9-daa0-435b-976f-4969b54c5056
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 content-type: reference
@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: afeb9f4d-3feb-4a0e-8884-e3ec1309b33b
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '496'
+ht-degree: 0%
 
 ---
 
