@@ -1,8 +1,8 @@
 ---
-title: Zelfstudies
-seo-title: Zelfstudies
-description: Voorbeelden om te helpen bij het leren en werken met het sociale-componentkader van AEM Communities (SCF)
-seo-description: Voorbeelden om te helpen bij het leren en werken met het sociale-componentkader van AEM Communities (SCF)
+title: Tutorials
+seo-title: Tutorials
+description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
+seo-description: Voorbeelden om te helpen bij het leren en werken met het AEM Communities Social Component Framework (SCF)
 uuid: c99a9d56-9630-4a79-bcd7-a15f01d6c13d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a420b0b1-65f4-4103-a7c9-263657c7870f
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '264'
+ht-degree: 0%
 
 ---
 
 
-# Zelfstudies {#tutorials}
+# Tutorials {#tutorials}
 
-Dit zijn voorbeelden die helpen bij het leren en werken met AEM 6.1 Community [social component framework (SCF)](scf.md).
+Dit zijn voorbeelden om te helpen bij het leren en werken met AEM 6.1 Community [social component framework (SCF)](scf.md).
 
 ## Aanpassing op de client {#client-side-customization}
 
@@ -47,7 +50,7 @@ Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github
 
    ToDo MVC demonstreert hoe u een SCF+SRP-component helemaal opnieuw kunt ontwikkelen
 
-* [Aan de slag met AEM-gemeenschappen](getting-started.md)
+* [Aan de slag met AEM Communities](getting-started.md)
 
 * [MongoDB voor demo instellen](demo-mongo.md)
 
@@ -57,9 +60,9 @@ Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github
 
 ## Demo-gebruikers {#demo-users}
 
-Het pakket met Geometrixx-voorbeelden bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend) en, zolang de de steekproefpakketten van Geometrixx geïnstalleerd blijven, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de gids [van de Componenten van de](components-guide.md)Gemeenschap.
+Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de gids [van de Componenten van de](components-guide.md)Gemeenschap.
 
-Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Gereedschappen > Bewerkingen > Beveiliging > Gebruikers]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
+Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Tools > Operations > Security > Users]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
 Als een [communitysite is gemaakt](getting-started.md), is het mogelijk demogebruikers toe te wijzen aan de gebruikersgroepen [van de](users.md)community.
 
