@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 25b7ac08-6cdc-4dd5-a756-d6169b86f9ab
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '679'
+ht-degree: 1%
 
 ---
 
@@ -34,7 +37,7 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | POST | lid maakt een agendagebeurtenis |
 | TOEVOEGEN | opmerkingen van leden over een agendagebeurtenis |
 | BIJWERKEN | agendagebeurtenis of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | agendagebeurtenis of commentaar van lid wordt verwijderd |
+| DELETE | agendagebeurtenis of commentaar van lid wordt verwijderd |
 
 [Opmerkingen Component](essentials-comments.md)SocialEvent `topic`= com/adobe/cq/social/comment
 
@@ -43,7 +46,7 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | POST | lid maakt een opmerking |
 | TOEVOEGEN | reactie van lid op opmerking |
 | BIJWERKEN | commentaar van lid is bewerkt |
-| VERWIJDEREN | commentaar van lid is verwijderd |
+| DELETE | commentaar van lid is verwijderd |
 
 [File Library Component](essentials-file-library.md)SocialEvent `topic`= com/adobe/cq/social/fileLibrary
 
@@ -52,7 +55,7 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | POST | lid maakt een map |
 | ATTACH | lid uploadt een bestand |
 | BIJWERKEN | lid werkt een map of bestand bij |
-| VERWIJDEREN | lid verwijdert een map of bestand |
+| DELETE | lid verwijdert een map of bestand |
 
 [Forum Component](essentials-forum.md)SocialEvent `topic`= com/adobe/cq/social/forum
 
@@ -61,7 +64,7 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | POST | lid maakt forum-onderwerp |
 | TOEVOEGEN | reacties van leden op forum onderwerp |
 | BIJWERKEN | onderwerp of antwoord van lid wordt bewerkt |
-| VERWIJDEREN | forumonderwerp of antwoord van lid wordt verwijderd |
+| DELETE | forumonderwerp of antwoord van lid wordt verwijderd |
 
 [Journal Component](blog-developer-basics.md)SocialEvent `topic`= com/adobe/cq/social/journaal
 
@@ -70,7 +73,7 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | POST | lid maakt een blogartikel |
 | TOEVOEGEN | commentaar van leden op blogartikel |
 | BIJWERKEN | blogartikel of commentaar van lid wordt bewerkt |
-| VERWIJDEREN | blogartikel of commentaar van lid is verwijderd |
+| DELETE | blogartikel of commentaar van lid is verwijderd |
 
 [QnA Component](qna-essentials.md)SocialEvent `topic` = com/adobe/cq/social/qna
 
@@ -81,7 +84,7 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 | BIJWERKEN | Vraag of antwoord van lid wordt bewerkt |
 | SELECT | het antwoord van lid is geselecteerd |
 | SELECTEREN OPHEFFEN | het antwoord van het lid is gedeselecteerd |
-| VERWIJDEREN | Vraag of antwoord van lid wordt verwijderd |
+| DELETE | Vraag of antwoord van lid wordt verwijderd |
 
 [Reviews Component](reviews-basics.md)SocialEvent `topic`= com/adobe/cq/social/review
 
@@ -89,7 +92,7 @@ Voor de onderdelen van Communities die in de release worden geleverd, wordt in d
 |---|---|
 | POST | lid maakt beoordeling |
 | BIJWERKEN | beoordeling door lid wordt bewerkt |
-| VERWIJDEREN | beoordeling door lid is verwijderd |
+| DELETE | beoordeling door lid is verwijderd |
 
 [Beoordelingscomponent](rating-basics.md)SocialEvent `topic`= com/adobe/cq/social/tally
 
@@ -231,7 +234,7 @@ public class RecipeEvent extends SocialEvent<RecipeEvent.RecipeActions> {
 
 Het is mogelijk naar gebeurtenissen te luisteren om te wijzigen wat er in de activiteitsstroom wordt weergegeven.
 
-Het volgende pseudo-codevoorbeeld verwijdert DELETE-gebeurtenissen voor de component Comments uit de activiteitsstroom.
+In het volgende pseudo-codevoorbeeld worden DELETE-gebeurtenissen voor de component Comments verwijderd uit de activiteitsstroom.
 
 ### Pseudo-code voor EventListener {#pseudo-code-for-eventlistener}
 
