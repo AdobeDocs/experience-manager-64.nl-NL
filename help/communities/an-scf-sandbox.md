@@ -1,8 +1,8 @@
 ---
 title: Een SCF-sandbox maken
 seo-title: Een SCF-sandbox maken
-description: Deze zelfstudie is vooral bedoeld voor ontwikkelaars, die nog niet bekend zijn met AEM en die SCF-componenten willen gebruiken.  Het door de verwezenlijking van een zandbakplaats SCF
-seo-description: Deze zelfstudie is vooral bedoeld voor ontwikkelaars, die nog niet bekend zijn met AEM en die SCF-componenten willen gebruiken.  Het door de verwezenlijking van een zandbakplaats SCF
+description: Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geinteresseerd zijn.  Het door de verwezenlijking van een zandbakplaats SCF
+seo-description: Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geinteresseerd zijn.  Het door de verwezenlijking van een zandbakplaats SCF
 uuid: ee52e670-e1e6-4bcd-9548-c963142e6704
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
 translation-type: tm+mt
 source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+workflow-type: tm+mt
+source-wordcount: '523'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
 # Een SCF-sandbox maken {#create-an-scf-sandbox}
 
 
-Vanaf AEM 6.1-gemeenschappen is het maken van een communitysite de eenvoudigste manier om snel een sandbox te maken. Zie [Aan de slag met AEM-gemeenschappen](getting-started.md).
+Vanaf AEM 6.1 Gemeenschappen is het maken van een communitysite de eenvoudigste manier om snel een sandbox te maken. Zie [Aan de slag met AEM Communities](getting-started.md).
 
 Een ander nuttig hulpmiddel voor ontwikkelaars is de gids [van de Componenten van de](components-guide.md)Gemeenschap, die voor exploratie en snelle prototyping van de componenten en de eigenschappen van Gemeenschappen toelaat.
 
-Het maken van een website kan nuttig zijn voor het begrijpen van de structuur van een AEM-website, die functies van de Gemeenschappen kan bevatten, en het aanbieden van eenvoudige pagina&#39;s waarop kan worden nagegaan hoe met het [sociale-componentkader (SCF)](scf.md)kan worden gewerkt.
+Het maken van een website kan nuttig zijn voor het begrijpen van de structuur van een AEM website, die functies van de Gemeenschappen kan bevatten, en voor het verschaffen van eenvoudige pagina&#39;s waarop kan worden nagegaan hoe met het [sociale-componentkader (SCF)](scf.md)kan worden gewerkt.
 
-Deze zelfstudie is vooral bedoeld voor ontwikkelaars, die nog niet bekend zijn met AEM en die SCF-componenten willen gebruiken. Het doorloopt de verwezenlijking van een zandbak SCF, gelijkend op de zelfstudie voor [hoe te om een Volledig Getoonde Website](../../help/sites-developing/website.md) van Internet tot stand te brengen die op plaatsstructuren zoals navigatie, embleem, onderzoek, toolbar, en het vermelden van kindpagina&#39;s concentreert.
+Dit leerprogramma is hoofdzakelijk voor ontwikkelaars, nieuw aan AEM, die in het gebruiken van componenten SCF geinteresseerd zijn. Het doorloopt de verwezenlijking van een zandbak SCF, gelijkend op de zelfstudie voor [hoe te om een Volledig Getoonde Website](../../help/sites-developing/website.md) van Internet tot stand te brengen die op plaatsstructuren zoals navigatie, embleem, onderzoek, toolbar, en het vermelden van kindpagina&#39;s concentreert.
 
 De ontwikkeling vindt op een auteursgeval plaats, terwijl het experimenteren met de plaats best op een publicatiegeval is.
 
@@ -46,26 +49,26 @@ De stappen in deze zelfstudie zijn:
 
 ## Vereisten {#prerequisites}
 
-In deze zelfstudie wordt ervan uitgegaan dat u één AEM-auteur en één AEM-publicatieexemplaar hebt geïnstalleerd waarop de [nieuwste versie](deploy-communities.md#latest-releases) van de Gemeenschappen is geïnstalleerd.
+In deze zelfstudie wordt ervan uitgegaan dat u één AEM auteur en één AEM publicatieexemplaar hebt geïnstalleerd waarop de [nieuwste versie](deploy-communities.md#latest-releases) van de Gemeenschappen is geïnstalleerd.
 
-Hier volgen enkele handige koppelingen voor ontwikkelaars die nog niet bekend zijn met het AEM-platform:
+Hier volgen enkele handige koppelingen voor ontwikkelaars die nog niet vertrouwd zijn met het AEM platform:
 
-* [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) - voor het implementeren van AEM-instanties
+* [Aan de slag](../../help/sites-deploying/deploy.md#getting-started) - voor het implementeren van AEM
 
    * [De basisbeginselen](../../help/sites-developing/the-basics.md) - Voor ontwikkelaars van websites en functies
    * [Eerste stappen voor auteurs](../../help/sites-authoring/first-steps.md) - Voor het ontwerpen van pagina-inhoud
 
-## De ontwikkelomgeving van CRXDE Lite gebruiken {#using-crxde-lite-development-environment}
+## CRXDE Lite Development Environment gebruiken {#using-crxde-lite-development-environment}
 
-AEM-ontwikkelaars besteden een groot deel van hun tijd in de ontwikkelomgeving van [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) aan een auteurinstantie. CRXDE Lite verleent een minder beperkte toegang tot de bewaarplaats CRX. Klassieke UI-gereedschappen en UI-consoles met aanraakbediening bieden meer gestructureerde toegang tot specifieke delen van de CRX-opslagplaats.
+AEM ontwikkelaars besteden veel van hun tijd in de ontwikkelomgeving van [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) aan een schrijverinstantie. CRXDE Lite biedt minder beperkte toegang tot de CRX-opslagplaats. Klassieke UI-gereedschappen en UI-consoles met aanraakbediening bieden meer gestructureerde toegang tot specifieke delen van de CRX-opslagplaats.
 
 Nadat u zich hebt aangemeld met beheerdersrechten, kunt u op verschillende manieren toegang krijgen tot CRXDE Lite:
 
-1. Selecteer in globale navigatie de navigatie- **[!UICONTROL gereedschappen > CRXDE Lite]**.
+1. Selecteer navigatie bij globale navigatie **[!UICONTROL Tools > CRXDE Lite]**.
 
    ![chlimage_1-350](assets/chlimage_1-350.png)
 
-2. Van de [klassieke UI welkomstpagina](http://localhost:4502/welcome.html), scrol neer en klik **[!UICONTROL CRXDE Lite]** in het juiste paneel.
+2. Van de [klassieke UI welkomstpagina](http://localhost:4502/welcome.html), scrol neer en klik in het juiste paneel **[!UICONTROL CRXDE Lite]** .
 
    ![chlimage_1-351](assets/chlimage_1-351.png)
 
@@ -73,7 +76,7 @@ Nadat u zich hebt aangemeld met beheerdersrechten, kunt u op verschillende manie
 
    Bijvoorbeeld op een lokale auteur-instantie: ` [http://localhost:4502/crx/de](http://localhost:4502/crx/de)`
 
-Om met CRXDE Lite te werken, moet u binnen met ontwikkelaar of beheerdervoorrechten ondertekenen. Voor de standaardinstantie localhost kunt u zich aanmelden met
+Als u met CRXDE Lite wilt werken, moet u zich aanmelden met ontwikkelaars- of beheerdersprikkels. Voor de standaardinstantie localhost kunt u zich aanmelden met
 
 * `username: admin`
 * `password: admin`
