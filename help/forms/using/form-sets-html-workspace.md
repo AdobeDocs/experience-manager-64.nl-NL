@@ -1,8 +1,8 @@
 ---
-title: Werken met indelingen in de werkruimte van AEM-formulieren
-seo-title: Werken met indelingen in de werkruimte van AEM-formulieren
-description: Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Leer hoe u met formsets kunt werken in de werkruimte van AEM-formulieren.
-seo-description: Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Leer hoe u met formsets kunt werken in de werkruimte van AEM-formulieren.
+title: Werken met indelingen in de AEM Forms-werkruimte
+seo-title: Werken met indelingen in de AEM Forms-werkruimte
+description: Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Leer hoe u in de AEM Forms-werkruimte met formsets kunt werken.
+seo-description: Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Leer hoe u in de AEM Forms-werkruimte met formsets kunt werken.
 uuid: 77f81465-bd60-4aee-8507-585fe08adb78
 contentOwner: vishgupt
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: c1793e2e-413c-4b6f-b96b-09e011f06263
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '384'
+ht-degree: 1%
 
 ---
 
 
-# Werken met indelingen in de werkruimte van AEM-formulieren {#working-with-formsets-in-aem-forms-workspace}
+# Werken met indelingen in de AEM Forms-werkruimte {#working-with-formsets-in-aem-forms-workspace}
 
-Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Zie [Formset in AEM Forms](/help/forms/using/formset-in-aem-forms.md)voor meer informatie over formsets en hoe u deze instelt.
+Een formulierset is een verzameling HTML5-formulieren die zijn gegroepeerd en worden weergegeven als één set formulieren voor eindgebruikers. Wanneer eindgebruikers een formulierset beginnen te vullen, worden ze naadloos van het ene formulier naar het andere overgezet. De reeks formulieren kan vervolgens met één klik worden verzonden. Zie [Formset in AEM Forms](/help/forms/using/formset-in-aem-forms.md)voor meer informatie over formsets en hoe u deze kunt instellen.
 
-De werkruimte van de Vormen van AEM steunt formsets. Met formsets kunnen meerdere formulieren die betrekking hebben op een service of proces worden gegroepeerd om een bedrijfsproces te automatiseren en aan de eindgebruikers worden gepresenteerd. In dat geval kunnen de gebruikers de gehele set als één geheel invullen en hoeven afzonderlijke formulieren of processen niet te worden opgeslagen, verzonden en bijgehouden.
+De AEM Forms-werkruimte ondersteunt formsets. Met formsets kunnen meerdere formulieren die betrekking hebben op een service of proces worden gegroepeerd om een bedrijfsproces te automatiseren en aan de eindgebruikers worden gepresenteerd. In dat geval kunnen de gebruikers de gehele set als één geheel invullen en hoeven afzonderlijke formulieren of processen niet te worden opgeslagen, verzonden en bijgehouden.
 
 ## Een formulierset koppelen aan het beginpunt in een AEM Forms-werkruimte-app {#attaching-a-formset-to-startpoint-in-an-aem-forms-workspace-app-br}
 
@@ -36,11 +39,11 @@ De werkruimte van de Vormen van AEM steunt formsets. Met formsets kunnen meerder
 
 1. Implementeer de toepassing nadat u andere relevante proceseigenschappen hebt bijgewerkt.
 
-## Indeling gebruiken in de werkruimte van AEM-formulieren {#using-formset-in-nbsp-aem-forms-workspace}
+## Indeling gebruiken in de AEM Forms-werkruimte {#using-formset-in-nbsp-aem-forms-workspace}
 
-Zodra een formset aan een startpunt is gekoppeld, kan het startpunt worden aangeroepen, net zoals elk ander startpunt wordt aangeroepen, vanuit de werkruimte van AEM-formulieren.
+Zodra een formset aan een startpunt is gekoppeld, kan het startpunt worden aangeroepen, net als elk ander startpunt dat wordt aangeroepen, vanuit de AEM Forms-werkruimte.
 
-De volgende bewerkingen worden ondersteund in de indeling via de werkruimte van AEM-formulieren:
+De volgende bewerkingen worden ondersteund in de indeling in de AEM Forms-werkruimte:
 
 * Opslaan als concept
 * Vergrendelen
