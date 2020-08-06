@@ -1,8 +1,8 @@
 ---
 title: Ad hoc Vragen in Proces het Melden
 seo-title: Ad hoc Vragen in Proces het Melden
-description: Aangepaste query's maken om te zoeken naar AEM-formulieren op JEE-proces en taakdetails in Process Reporting
-seo-description: Aangepaste query's maken om te zoeken naar AEM-formulieren op JEE-proces en taakdetails in Process Reporting
+description: Aangepaste query's maken om te zoeken naar AEM Forms in JEE-proces en taakdetails in Process Reporting
+seo-description: Aangepaste query's maken om te zoeken naar AEM Forms in JEE-proces en taakdetails in Process Reporting
 uuid: bcd9eecd-5c83-402d-8533-a27f6b346191
 content-type: reference
 topic-tags: process-reporting
@@ -10,13 +10,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 812f9212-2732-4966-a7fa-389aa2332c7e
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1686'
+ht-degree: 0%
 
 ---
 
 
 # Ad hoc Vragen in Proces het Melden {#ad-hoc-queries-in-process-reporting}
 
-Ad-hoc vragen in het Rapport van het Proces staan u toe om douanequery&#39;s tot stand te brengen die u kunt gebruiken om naar proces en taakdetails van de AEM Forms procesinstanties te zoeken die in uw milieu van Vormen AEM worden bepaald.
+Ad-hoc vragen in het Rapport van het Proces staan u toe om douanevragen tot stand te brengen die u kunt gebruiken om naar proces en taakdetails van de het procesinstanties van AEM Forms te zoeken die in uw milieu van AEM Forms worden bepaald.
 
 Ook, kunnen de ad hoc vragen worden bepaald gebruikend proces en de filters van het taakbezit. Deze filters kunnen vervolgens worden opgeslagen en gebruikt om de rapporten later uit te voeren.
 
@@ -69,7 +72,7 @@ U gebruikt Proces/Taak Onderzoek om filters te bepalen voor het vragen van proce
 
       >[!NOTE]
       >
-      >De veldlijst bevat de velden die specifiek zijn voor het proces/de taak van AEM Forms.
+      >De veldlijst bevat de velden die specifiek zijn voor AEM Forms-proces/-taak.
 
    1. Selecteer een voorwaarde.
 
@@ -120,25 +123,27 @@ Met de opties in het deelvenster **Mijn filters** kunt u **lc_pr_add_filter** , 
 
 1. De volgende velden worden weergegeven in een zoekresultaat van het proces:
 
-   * **Proces-id**: De id van het proces. Het veld is aan hyperlinks gekoppeld. Als u in dit veld op een proces-id klikt, wordt u voor het proces omgeleid naar het deelvenster **[!UICONTROL Procesdetails]** .
-   * **Initiator**: De gebruiker van de Vormen AEM die de procesinstantie begon
+   * **Proces-id**: De id van het proces. Het veld is aan hyperlinks gekoppeld. Als u in dit veld op een proces-id klikt, wordt u voor het proces omgeleid naar het **[!UICONTROL Process Details]** deelvenster.
+   * **Initiator**: De AEM Forms-gebruiker die de procesinstantie heeft gestart
    * **Aanmaaktijd**: De datum en tijd waarop de procesinstantie is gestart
    * **Voltooide tijd**: De datum en tijd waarop de procesinstantie is voltooid
    * **Duur**: De duur van begin tot voltooiing van de procesinstantie
    * **Status**: De huidige status van de procesinstantie.
+
    Standaard wordt het resultaat gesorteerd op procesid. Als u het resultaat echter op een van de velden wilt sorteren, klikt u op de veldtitel.
 
    Aangezien het sorteren een knevelverrichting is, klik een kolomkopbal om het resultaat oplopend te sorteren en het opnieuw te klikken om aflopend te sorteren.
 
    Op dezelfde manier worden de volgende gebieden getoond in een Resultaat van het Onderzoek van de Taak:
 
-   * **Taak-id**: De id van de taak. Het veld is aan hyperlinks gekoppeld. Als u in dit veld op een taak-id klikt, wordt u voor de taak omgeleid naar het deelvenster **[!UICONTROL Taakdetails]** .
-   * **Initiator**: De gebruiker van de Vormen AEM die de procesinstantie begon
+   * **Taak-id**: De id van de taak. Het veld is aan hyperlinks gekoppeld. Als u in dit veld op een taak-id klikt, wordt u voor de taak omgeleid naar het **[!UICONTROL Task Details]** deelvenster.
+   * **Initiator**: De AEM Forms-gebruiker die de procesinstantie heeft gestart
    * **Aanmaaktijd**: De datum en tijd waarop de procesinstantie is gestart
 
    * **Voltooide tijd**: De datum en tijd waarop de procesinstantie is voltooid
    * **Duur**: De duur van begin tot voltooiing van de procesinstantie
    * **Status**: De huidige status van de procesinstantie.
+
    Door gebrek, wordt het resultaat gesorteerd door identiteitskaart van de Taak. Als u het resultaat echter op een van de velden wilt sorteren, klikt u op de veldtitel. Het resultaat wordt gesorteerd op de kolom die wordt aangegeven met een donkerdere pijl naast de kolomkop.
 
    Aangezien het sorteren een knevelverrichting is, klik een gebiedsheader om het resultaat oplopend te sorteren en het opnieuw te klikken om aflopend te sorteren. De huidige sorteervolgorde (oplopend/aflopend) wordt aangegeven door de richting van de donkere pijl naast de kolomkop.
@@ -150,6 +155,7 @@ Met de opties in het deelvenster **Mijn filters** kunt u **lc_pr_add_filter** , 
 
    * **Vernieuwen**: Verfrist het rapport met de recentste gegevens die in de opslag liggen
    * **Exporteren naar CSV**: Exporteer de rapportgegevens naar een bestand met komma&#39;s als scheidingsteken.
+
    >[!NOTE]
    >
    >Wanneer u een rapport exporteert, wordt het volledige resultaat van de zoekopdracht geëxporteerd naar een CSV-bestand en niet alleen naar de huidige pagina
@@ -162,7 +168,7 @@ Op dezelfde manier gebruikt u het deelvenster **Taakdetails** om de details van 
 
 ### Proces-/taakdetails weergeven {#to-view-process-task-details}
 
-U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijken AEM:
+U kunt de details van een specifiek AEM Forms-proces/een specifieke-taak bekijken:
 
 * **Van een Proces/Taak het Resultaat van het Onderzoek**
 * **Door de proces-/taak-id in te voeren in het deelvenster Proces/Taakdetails**
@@ -195,6 +201,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    * Procesduur
    * Processtatus
    * Procesinitiator
+
    **Deelvenster rechtsboven:** Geeft de volgende details weer van de taken waaruit het geselecteerde proces bestaat:
 
    * Taak-id
@@ -205,6 +212,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    * Einddatum taak
    * Taakduur
    * Taakstatus
+
    **Deelvenster Rechtsonder:** Geeft de volgende details van de procesgeschiedenis van het geselecteerde proces weer:
 
    * Procesnaam
@@ -212,6 +220,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    * Tijdstip van procesupdate
    * Einddatum proces
    * Processtatus
+
    **Resultaat taakdetails**
 
    ![task_details](assets/task_details.png)
@@ -226,12 +235,14 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
    * Taakduur
    * Taakstatus
    * Geselecteerde taakroute
+
    **Deelvenster rechtsboven:** Hier worden de volgende details weergegeven van de formulieren waaruit de geselecteerde taak bestaat:
 
    * Formulier-id
    * Aanmaakdatum van formulier
    * Tijdstip van updatedatum van formulier
    * URL van formuliersjabloon
+
    **Deelvenster Rechtsonder:** Geeft de volgende details van de procesgeschiedenis van de geselecteerde taak weer:
 
    * Type taaktoewijzing
@@ -260,7 +271,7 @@ U kunt de details van een specifiek proces/een specifieke taak van Vormen bekijk
 
    ![process_details-1](assets/process_details-1.png)
 
-   De velden in het resultaat van de query&#39;s **Proces/Taakdetails** zijn velden die specifiek zijn voor een AEM Forms-proces/taak.
+   De velden in het resultaat van de query&#39;s **Proces/Taakdetails** zijn velden die specifiek zijn voor een AEM Forms-proces of -taak.
 
    Voor een proces, toont het vraagresultaat de details van de taken in het proces.
 
