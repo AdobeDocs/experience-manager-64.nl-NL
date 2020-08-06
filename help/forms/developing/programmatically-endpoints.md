@@ -28,14 +28,14 @@ De dienst van de Registratie van het Eindpunt verstrekt de capaciteit om eindpun
 * SOAP
 * Controlemap
 * E-mail
-* (Verouderd voor AEM-formulieren) Verwijderen
+* (Verouderd voor AEM formulieren) Verwijderen
 * Taakbeheer
 
    >[!NOTE]
    >
-   >SOAP, EJB en (Verouderd voor AEM-formulieren op JEE) Eindpunten verwijderen worden automatisch gemaakt voor elke geactiveerde service. De eindpunten SOAP en EJB laten ZEEP en EJB voor alle de dienstverrichtingen toe.
+   >SOAP, EJB, en (Vervangen voor AEM vormen op JEE) het verwijderen eindpunten worden automatisch gecreeerd voor elke geactiveerde dienst. De eindpunten SOAP en EJB laten ZEEP en EJB voor alle de dienstverrichtingen toe.
 
-   Een Remoting eindpunt laat Flex cliënten toe om verrichtingen op de dienst van AEM Forms aan te halen die het eindpunt aan wordt toegevoegd. Een Flex bestemming met de zelfde naam zoals het eindpunt wordt gecreeerd en Flex cliënten kunnen tot RemoteObjects leiden die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
+   Een Remoting eindpunt laat de cliënten van Flex toe om verrichtingen op de dienst van AEM Forms aan te halen die het eindpunt aan wordt toegevoegd. Een bestemming van Flex met de zelfde naam zoals het eindpunt wordt gecreeerd en de cliënten van Flex kunnen tot RemoteObjects leiden die aan deze bestemming richten om verrichtingen op de relevante dienst aan te halen.
 
    De e-mail, de Manager van de Taak, en de Gecontroleerde eindpunten van de Omslag stellen slechts een specifieke verrichting van de dienst bloot. Het toevoegen van deze eindpunten vereist een tweede configuratiestap om een methode te selecteren om te roepen, configuratieparameters te plaatsen, en input en outputparameterafbeeldingen te specificeren.
 
@@ -55,7 +55,7 @@ De dienst van de Registratie van het Eindpunt verstrekt de capaciteit om eindpun
 
 ## EJB-eindpunten toevoegen {#adding-ejb-endpoints}
 
-U kunt een eindpunt EJB aan de dienst programmatically toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt EJB aan de dienst toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze te gebruiken EJB. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de EJB-modus selecteren. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+U kunt programmatically een eindpunt EJB aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt EJB aan de dienst toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze te gebruiken EJB. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de EJB-modus selecteren. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
@@ -81,10 +81,10 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. De volgende JAR-besta
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een EndpointRegistry-client-object maken**
 
@@ -144,7 +144,7 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 
 1. Laat het eindpunt toe.
 
-   Schakel het eindpunt in door de methode enable van het `EndpointRegistryClient` object aan te roepen en het `Endpoint` object door te geven dat door de `createEndpoint` methode is geretourneerd.
+   Schakel het eindpunt in door de methode Enable van het `EndpointRegistryClient` object aan te roepen en het `Endpoint` object door te geven dat door de `createEndpoint` methode is geretourneerd.
 
 **Zie ook**
 
@@ -158,7 +158,7 @@ Voeg een EJB eindpunt toe door Java API te gebruiken:
 
 ## SOAP-eindpunten toevoegen {#adding-soap-endpoints}
 
-U kunt een eindpunt van de ZEEP aan de dienst programmatically toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt van de ZEEP toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze van de ZEEP te gebruiken. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de SOAP-modus selecteren.
+U kunt programmatically een eindpunt van de ZEEP aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt van de ZEEP toe te voegen, laat u een cliënttoepassing toe om de dienst aan te halen door de wijze van de ZEEP te gebruiken. Met andere woorden, wanneer u verbindingseigenschappen instelt die nodig zijn om AEM Forms aan te roepen, kunt u de SOAP-modus selecteren.
 
 >[!NOTE]
 >
@@ -186,8 +186,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
 Deze JAR-bestanden zijn vereist om een SOAP-eindpunt te maken. Nochtans, vereist u toevoegingsJAR dossiers als u het eindpunt van de ZEEP gebruikt om de dienst aan te halen. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over AEM Forms JAR-bestanden.
 
@@ -265,7 +265,7 @@ Voeg een eindpunt van de ZEEP aan de dienst toe door Java API te gebruiken:
 
 U kunt programmatically een Gecontroleerd eindpunt van de Omslag aan de dienst toevoegen door AEM Forms Java API te gebruiken. Als u een eindpunt van een gecontroleerde map toevoegt, kunnen gebruikers een bestand (zoals een PDF-bestand) in een map plaatsen. Wanneer het dossier in de omslag wordt geplaatst, wordt de gevormde dienst dan aangehaald en manipuleert het dossier. Nadat de service de opgegeven bewerking heeft uitgevoerd, wordt het gewijzigde bestand opgeslagen in een opgegeven uitvoermap. Een gecontroleerde map is geconfigureerd om te worden gescand met een vast interval of met een uitsnijdschema, zoals elke maandag, woensdag en vrijdag om 12.00 uur.
 
-Voor het programmatically toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst, overweeg het volgende kortstondige proces genoemd *EncryptDocument*. (Zie [Werken](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)met AEM Forms begrijpen.)
+Voor het programmatically toevoegen van een Gecontroleerd eindpunt van de Omslag aan de dienst, overweeg het volgende kortstondige proces genoemd *EncryptDocument*. (Zie [AEM Forms-processen](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)begrijpen.)
 
 ![aw_aw_encryptdocumentprocess](assets/aw_aw_encryptdocumentprocess.png)
 
@@ -296,10 +296,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een EndpointRegistry-client-object maken**
 
@@ -417,6 +417,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
 
    * Een tekenreekswaarde die de naam van de configuratiewaarde opgeeft. Geef bij het instellen van de `url` configuratiewaarde op `url`.
    * Een tekenreekswaarde die de waarde van de configuratiewaarde opgeeft. Geef bij het instellen van de `url` configuratiewaarde de locatie van de gecontroleerde map op.
+
    >[!NOTE]
    >
    >Als u alle configuratiewaarden wilt zien die zijn ingesteld voor de EncryptDocument-service, raadpleegt u het Java-codevoorbeeld in [QuickStart: Het toevoegen van een Gecontroleerd Punt van de Omslag gebruikend Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-a-watched-folder-endpoint-using-the-java-api).
@@ -429,6 +430,7 @@ Voeg een Gecontroleerd eindpunt van de Omslag toe door AEM Forms Java API te geb
    * Een tekenreekswaarde die het gegevenstype van de invoerparameter opgeeft. Het gegevenstype van de `InDoc` invoerparameter is bijvoorbeeld `com.adobe.idp.Document`.
    * Een tekenreekswaarde die het toewijzingstype aangeeft. U kunt bijvoorbeeld opgeven `variable`.
    * Een tekenreekswaarde die de waarde van het toewijzingstype opgeeft. U kunt bijvoorbeeld &amp;ast;.pdf opgeven als bestandspatroon.
+
    >[!NOTE]
    >
    >Roep de `setInputParameterMapping` methode aan voor elke invoerparameterwaarde die moet worden gedefinieerd. Omdat het EncryptDocument-proces slechts één invoerparameter heeft, moet u deze methode eenmaal aanroepen.
@@ -496,7 +498,7 @@ De [QuickStart: Als u een eindpunt van een gecontroleerde map toevoegt met de Ja
 
 U kunt programmatically een eindpunt E-mail aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een e-maileindpunt toe te voegen, laat u gebruikers toe om een e-mailbericht met één of meerdere dossiergehechtheid naar een gespecificeerde e-mailrekening te verzenden. Dan vormen de de dienstverrichting wordt aangehaald en manipuleert de dossiers. Nadat de service de opgegeven bewerking heeft uitgevoerd, stuurt het een e-mailbericht naar de afzender met de gewijzigde bestanden als bestandsbijlagen.
 
-Voor het programmatically toevoegen van een E-maileindpunt aan de dienst, overweeg het volgende kortstondige proces genoemd *MyApplication \ EncryptDocument*. Voor informatie over kortstondige processen, zie het [Begrijpen van de Processen](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)van AEM Forms.
+Voor het programmatically toevoegen van een E-maileindpunt aan de dienst, overweeg het volgende kortstondige proces genoemd *MyApplication \ EncryptDocument*. Voor informatie over kortstondige processen, zie het [Begrip van de Processen](/help/forms/developing/aem-forms-processes.md#understanding-aem-forms-processes)van AEM Forms.
 
 ![ae_ae_encryptdocumentprocess](assets/ae_ae_encryptdocumentprocess.png)
 
@@ -527,10 +529,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een EndpointRegistry-client-object maken**
 
@@ -589,7 +591,7 @@ Wanneer u een e-maileindpunt maakt, moet u parameterwaarden voor invoer definië
 
 Als u parameterwaarden voor invoer wilt definiëren die vereist zijn voor een e-maileindpunt, geeft u de volgende waarden op:
 
-**Naam** invoerparameter: De naam van de invoerparameter. De naam van een inputwaarde wordt gespecificeerd in Workbench voor een proces. Als de invoerwaarde bij een servicebewerking hoort (een Forms-service die geen proces is dat in Workbench is gemaakt), wordt de invoernaam opgegeven in het bestand component.xml. De naam van de invoerparameter voor het in deze sectie geïntroduceerde proces is bijvoorbeeld `InDoc`.
+**Naam** invoerparameter: De naam van de invoerparameter. De naam van een inputwaarde wordt gespecificeerd in Workbench voor een proces. Als de inputwaarde tot een de dienstverrichting (de dienst van Forms die geen proces is in Workbench wordt gecreeerd) behoort, wordt de inputnaam gespecificeerd in het component.xml- dossier. De naam van de invoerparameter voor het in deze sectie geïntroduceerde proces is bijvoorbeeld `InDoc`.
 
 **Type** toewijzing: Gebruikt om de inputwaarden te vormen die worden vereist om de de dienstverrichting aan te halen. Er zijn twee soorten toewijzingstypen:
 
@@ -660,6 +662,7 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
 
    * Een tekenreekswaarde die de naam van de configuratiewaarde opgeeft. Geef bij het instellen van de `smtpHost` configuratiewaarde op `smtpHost`.
    * Een tekenreekswaarde die de waarde van de configuratiewaarde opgeeft. Wanneer het plaatsen van de `smtpHost` configuratiewaarde, specificeer een koordwaarde die de naam van de server SMTP specificeert.
+
    >[!NOTE]
    >
    >Om alle configuratiewaarden te zien die voor de dienst EncryptDocument worden geplaatst die in deze sectie wordt geïntroduceerd, zie het de codevoorbeeld van Java dat bij [QuickStart wordt gevestigd: Een e-maileindpunt toevoegen met de Java API](/help/forms/developing/endpoint-registry-java-api-quick.md#quickstart-adding-an-email-endpoint-using-the-java-api).
@@ -672,6 +675,7 @@ Voeg een eindpunt E-mail toe door Java API te gebruiken:
    * Een tekenreekswaarde die het gegevenstype van de invoerparameter opgeeft. Het gegevenstype van de `InDoc` invoerparameter is bijvoorbeeld `com.adobe.idp.Document`.
    * Een tekenreekswaarde die het toewijzingstype aangeeft. U kunt bijvoorbeeld opgeven `variable`.
    * Een tekenreekswaarde die de waarde van het toewijzingstype opgeeft. U kunt bijvoorbeeld &amp;ast;.pdf opgeven als bestandspatroon.
+
    >[!NOTE]
    >
    >Roep de `setInputParameterMapping` methode aan voor elke invoerparameterwaarde die moet worden gedefinieerd. Omdat het EncryptDocument-proces slechts één invoerparameter heeft, moet u deze methode eenmaal aanroepen.
@@ -746,9 +750,9 @@ De [QuickStart: Als u een e-maileindpunt toevoegt met de Java API](/help/forms/d
 
 >[!NOTE]
 >
->API&#39;s van LiveCycle Remoting zijn verouderd voor AEM-formulieren op JEE.
+>LiveCycle Remoting API&#39;s zijn vervangen voor AEM formulieren op JEE.
 
-U kunt programmatically een Remoting eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Remoting eindpunt toe te voegen, laat u een Flex toepassing toe om de dienst aan te halen door remoting te gebruiken. (Zie AEM Forms [aanroepen met (Vervangen voor AEM-formulieren) AEM Forms verwijderen](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
+U kunt programmatically een Remoting eindpunt aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een Remoting eindpunt toe te voegen, laat u een toepassing van Flex toe om de dienst aan te halen door het remoting te gebruiken. (Zie AEM Forms [aanroepen met (Verouderd voor AEM formulieren) AEM Forms Remoting](/help/forms/developing/invoking-aem-forms-using-remoting.md#invoking-aem-forms-using-remoting).)
 
 Voor programmatically het toevoegen van een Remoting eindpunt aan de dienst, overweeg het volgende kortstondige proces genoemd *EncryptDocument*.
 
@@ -780,10 +784,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een EndpointRegistry-client-object maken**
 
@@ -805,7 +809,7 @@ Nadat u het Verwijderen eindpuntattributen plaatst, kunt u een Remoting eindpunt
 
 **Het eindpunt inschakelen**
 
-Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer een Remoting eindpunt wordt toegelaten, laat het een Flex cliënt toe om de dienst aan te halen.
+Nadat u een nieuw eindpunt creeert, moet u het toelaten. Wanneer een Remoting eindpunt wordt toegelaten, laat het een cliënt van Flex toe om de dienst aan te halen.
 
 **Zie ook**
 
@@ -857,7 +861,7 @@ Voeg een Remoting eindpunt toe door Java API te gebruiken:
 
 ## TaskManager-eindpunten toevoegen {#adding-taskmanager-endpoints}
 
-U kunt een eindpunt TaskManager aan de dienst programmatically toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt TaskManager aan de dienst toe te voegen, laat u een gebruiker van de Werkruimte toe om de dienst aan te halen. Namelijk kan een gebruiker die in Werkruimte werkt een proces aanhalen dat een overeenkomstig eindpunt TaskManager heeft.
+U kunt programmatically een eindpunt TaskManager aan de dienst toevoegen door AEM Forms Java API te gebruiken. Door een eindpunt TaskManager aan de dienst toe te voegen, laat u een gebruiker van de Werkruimte toe om de dienst aan te halen. Namelijk kan een gebruiker die in Werkruimte werkt een proces aanhalen dat een overeenkomstig eindpunt TaskManager heeft.
 
 >[!NOTE]
 >
@@ -882,10 +886,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een EndpointRegistry-client-object maken**
 
@@ -1003,10 +1007,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een EndpointRegistry-client-object maken**
 
@@ -1053,7 +1057,7 @@ Wijzig een eindpunt door Java API te gebruiken:
 
 1. Haal het eindpunt op dat u wilt wijzigen.
 
-   * Hiermee wordt een lijst opgehaald met alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode van het `EndpointRegistryClient` object aan te roepen en een `getEndpoints` `PagingFilter` object door te geven dat als filter fungeert. U kunt een `(PagingFilter)null` waarde doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` object waarbij elk element een `Endpoint` object is. Zie `PagingFilter` AEM Forms API Reference [voor meer informatie over een](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)object.
+   * Hiermee wordt een lijst opgehaald met alle eindpunten waartoe de huidige gebruiker (opgegeven in de eigenschappen van de verbinding) toegang heeft door de methode van het `EndpointRegistryClient` object aan te roepen en een `getEndpoints` `PagingFilter` object door te geven dat als filter fungeert. U kunt een `(PagingFilter)null` waarde doorgeven om alle eindpunten te retourneren. Deze methode retourneert een `java.util.List` object waarbij elk element een `Endpoint` object is. Zie `PagingFilter` AEM Forms API Reference [voor informatie over een](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)object.
    * Doorloop het `java.util.List` object om te bepalen of het eindpunten heeft. Als er eindpunten zijn, is elk element een `EndPoint` instantie.
    * Bepaal de dienst die aan een eindpunt beantwoordt door de methode van `EndPoint` `getServiceId` objecten aan te halen. Deze methode retourneert een tekenreekswaarde die de servicenaam opgeeft.
    * Bepaal het type eindpunt door de `EndPoint` methode van het `getConnectorId` object aan te roepen. Deze methode retourneert een tekenreekswaarde die het type eindpunt opgeeft. Bijvoorbeeld, als het eindpunt een Gecontroleerd eindpunt van de Omslag is, keert deze methode terug `WatchedFolder`.
@@ -1105,10 +1109,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
 
 **Een EndpointRegistry-client-object maken**
 
@@ -1178,7 +1182,7 @@ Om aan te tonen hoe te om informatie over eindpuntschakelaars terug te winnen, w
 
 >[!NOTE]
 >
->Dit onderwerp gebruikt `ConnectorRegistryClient` API om informatie over eindpuntschakelaars terug te winnen. (Zie [API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor AEM Forms.)
+>Dit onderwerp gebruikt `ConnectorRegistryClient` API om informatie over eindpuntschakelaars terug te winnen. (Zie [AEM Forms API-naslaggids](https://www.adobe.com/go/learn_aemforms_javadocs_63_en).)
 
 ### Overzicht van de stappen {#summary_of_steps-8}
 
@@ -1197,10 +1201,10 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
-Als AEM Forms worden geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, vervangt u adobe-utilities.jar en jbossall-client.jar door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms worden geïmplementeerd. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle JAR-bestanden voor AEM Forms.
+Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBoss is, vervangt u adobe-utilities.jar en jbossall-client.jar door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle AEM Forms JAR-bestanden.
 
 **Creeer een voorwerp van de Cliënt ConnectorRegistry**
 
