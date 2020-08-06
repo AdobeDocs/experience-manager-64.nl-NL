@@ -1,8 +1,8 @@
 ---
 title: Spaties en entiteiten
 seo-title: AEM Mobile Content Services ontwikkelen
-description: Deze pagina bevat een openingspagina voor de ontwikkeling van AEM Mobile Content Services.
-seo-description: Deze pagina bevat een openingspagina voor de ontwikkeling van AEM Mobile Content Services.
+description: Deze pagina dient een openingspagina voor het ontwikkelen van AEM Mobile Content Services.
+seo-description: Deze pagina dient een openingspagina voor het ontwikkelen van AEM Mobile Content Services.
 uuid: eab5a61b-a9e8-4863-90a3-df1f18510cd8
 contentOwner: Jyotika Syal
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ef568577-c74e-4fc2-b66e-eedac2948310
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '1209'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Een spatie is een handige locatie voor het opslaan van entiteiten die via de REST-API van Content Services worden weergegeven. Dit is vooral handig omdat een app (of elk kanaal) aan veel entiteiten kan worden gekoppeld. Als u entiteiten dwingt zich in een ruimte te bevinden, kunt u de best practices voor het groeperen van de vereisten van een app bundelen. U kunt desgewenst een toepassing in AEM koppelen aan een klein aantal spaties.
 
@@ -30,13 +33,13 @@ Een spatie is een handige locatie voor het opslaan van entiteiten die via de RES
 
 Als de gebruiker een aantal inhoud en elementen toegankelijk wil maken voor een mobiele app, maakt de gebruiker de ruimte met behulp van het AEM Mobile-dashboard.
 
-Voor het eerst wordt op het AEM Mobile-dashboard alleen Apps weergegeven nadat u **Content Services** hebt geselecteerd, een gebruiker die de inhoudsservices niet heeft geconfigureerd voor gebruik met spaties.
+Voor het eerst wordt op het AEM Mobile-dashboard, dat geen inhoudsservices heeft geconfigureerd voor gebruik met spaties, alleen Apps weergegeven nadat **Content Services** is geselecteerd.
 
 >[!CAUTION]
 >
 >**Voorwaarden voor het toevoegen van een spatie**
 >
->Schakel AEM Content Services **** inschakelen in om te werken met spaties en schakel deze in het dashboard voor uw AEM Mobile-toepassing in.
+>Schakel het selectievakje **Enable AEM Content Services** to work with Spaces in en schakel het in het dashboard van de AEM Mobile-toepassing in.
 >
 >Zie [Inhoudsservices](/help/mobile/developing-content-services.md) beheren voor meer informatie.
 
@@ -101,7 +104,7 @@ Spaties kunnen mappen bevatten voor een betere organisatie van de inhoud en elem
 >
 >Taalkopie is niet volledig functioneel voor deze release. De structuur wordt alleen ingesteld.
 
-Met de functie **Taalkopie** kunnen auteurs hun hoofdtaalkopie kopiëren en vervolgens een project en workflow maken om de inhoud automatisch te vertalen. Met Taalkopie maakt u de juiste structuur. Nadat u een map in een ruimte hebt toegevoegd, kunt u het taalexemplaar aan de ruimte toevoegen.
+Met de functie **Taalkopie** kunnen auteurs hun master taalkopie kopiëren en vervolgens een project en workflow maken om de inhoud automatisch te vertalen. Met Taalkopie maakt u de juiste structuur. Nadat u een map in een ruimte hebt toegevoegd, kunt u het taalexemplaar aan de ruimte toevoegen.
 
 >[!NOTE]
 >
@@ -119,7 +122,7 @@ Met de functie **Taalkopie** kunnen auteurs hun hoofdtaalkopie kopiëren en verv
    >
    >De knopen van het Exemplaar van de Taal kunnen slechts als direct kind van de Ruimte bestaan.
 
-1. **** Taal&amp;amp voor **inhoudspakket kiezen;ast; en voer de** titel&amp;amp in; in het dialoogvenster **Taalkopie** maken.
+1. Taal&amp;amp voor **inhoudspakket kiezen;ast;** en voer de **titel&amp;amp in;** in het dialoogvenster **Taalkopie** maken.
 
    Klik op **Maken**.
 
@@ -136,7 +139,7 @@ Met de functie **Taalkopie** kunnen auteurs hun hoofdtaalkopie kopiëren en verv
 ### Een map uit de ruimte verwijderen {#removing-a-folder-from-the-space}
 
 1. Selecteer de map in de lijst met ruimte-inhoud
-1. Klik op **Verwijderen** op de werkbalk
+1. Click **Delete** from the toolbar
 
    >[!NOTE]
    >
@@ -144,7 +147,7 @@ Met de functie **Taalkopie** kunnen auteurs hun hoofdtaalkopie kopiëren en verv
 
 ## Werken met entiteiten in een spatie {#working-with-entities-in-a-space}
 
-De entiteiten vertegenwoordigen inhoud die door het eindpunt van de Webdienst wordt blootgesteld. Entiteiten worden opgeslagen in ruimtes zodat ze gemakkelijk kunnen worden gevonden en onafhankelijk blijven van de AEM-opslagstructuur die hun gerelateerde inhoud bevat.
+De entiteiten vertegenwoordigen inhoud die door het eindpunt van de Webdienst wordt blootgesteld. Entiteiten worden opgeslagen in spaties, zodat ze gemakkelijk kunnen worden gevonden en onafhankelijk blijven van de AEM opslagplaats die de bijbehorende inhoud bevat.
 
 U kunt entiteiten in één of andere logische inzameling willen groeperen. Hiertoe kunt u een willekeurig aantal mappen maken.
 
@@ -162,7 +165,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Kies het model voor de entiteit. Dit is het type entiteit dat u wilt maken. Klik op Volgende.
+1. Kies het model voor de entiteit. Dit is het type entiteit dat u wilt maken. Klik op Next.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
