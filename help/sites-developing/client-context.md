@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7b97fc27-30de-4ef9-9efe-673aec50cff2
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '2992'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Clientcontext bestaat hoofdzakelijk uit de volgende aspecten:
 * De interface die de gebruikersgegevens weergeeft en tools biedt om de gebruikerservaring te simuleren.
 * Een [javascript-API](/help/sites-developing/ccjsapi.md) voor interactie met sessiewinkels.
 
-Om een standalone zittingsopslag tot stand te brengen en het toe te voegen aan de Context van de Cliënt, of een zittingsopslag te creëren die aan een component van de Opslag van de Context gebonden is. AEM installeert verschillende Context Store-componenten die u direct kunt gebruiken. U kunt deze componenten als basis voor uw componenten gebruiken.
+Om een standalone zittingsopslag tot stand te brengen en het toe te voegen aan de Context van de Cliënt, of een zittingsopslag te creëren die aan een component van de Opslag van de Context gebonden is. AEM installeert diverse Context Store-componenten die u direct kunt gebruiken. U kunt deze componenten als basis voor uw componenten gebruiken.
 
 Voor informatie over het openen van de Context van de Cliënt, het vormen van de informatie die het toont, en het simuleren van de gebruikerservaring, zie de Context [van de](/help/sites-administering/client-context.md)Cliënt.
 
@@ -44,7 +47,7 @@ Het clientcontextframework biedt een [javascript-API](/help/sites-developing/ccj
 
 Sessieopslaggegevens blijven op de client staan. De context van de Cliënt schrijft geen gegevens terug naar de server. Als u gegevens naar de server wilt verzenden, gebruikt u een formulier of ontwikkelt u aangepaste javascript.
 
-Elke zittingsopslag is een inzameling van bezit-waarde paren. De zittingsopslag vertegenwoordigt een inzameling van gegevens (van om het even welke soort), waarvan de conceptuele betekenis door de ontwerper en/of de ontwikkelaar kan worden beslist. In het volgende voorbeeld wordt een object gedefinieerd dat de profielgegevens vertegenwoordigt die in de sessieopslag kunnen worden opgeslagen:
+Elke zittingsopslag is een inzameling van bezit-waarde paren. De zittingsopslag vertegenwoordigt een inzameling van gegevens (van om het even welke soort), waarvan de conceptuele betekenis door de ontwerper en/of de ontwikkelaar kan worden beslist. In het volgende voorbeeld wordt een object gedefinieerd dat de profielgegevens vertegenwoordigt die de sessieopslag kan bevatten:
 
 ```
 {
@@ -68,7 +71,7 @@ Een zittingsopslag kan over browser zittingen worden voortgeduurd, of kan slecht
 
 ### Context Store-componenten {#context-store-components}
 
-Een component van de contextopslag is een component AEM die aan de Context van de Cliënt kan worden toegevoegd. Typisch, tonen de componenten van de contextopslag gegevens van een zittingsopslag waaraan zij worden geassocieerd. Nochtans, is de informatie die de componentenvertoning van de contextopslag niet beperkt tot zittingsopslaggegevens.
+Een component van de contextopslag is een AEM component die aan de Context van de Cliënt kan worden toegevoegd. Typisch, tonen de componenten van de contextopslag gegevens van een zittingsopslag waaraan zij worden geassocieerd. Nochtans, is de informatie die de componentenvertoning van de contextopslag niet beperkt tot zittingsopslaggegevens.
 
 Contextarchiefcomponenten kunnen de volgende items bevatten:
 
@@ -184,23 +187,21 @@ Creeer een component van de contextopslag om zittingsopslaggegevens in de Contex
 
 #### De geleverde Context Store-componenten uitbreiden {#extending-the-provided-context-store-components}
 
-AEM verstrekt genericstore en de genericstoreproperties componenten van de contextopslag die u kunt uitbreiden. De structuur van uw opslaggegevens bepaalt de component die u uitbreidt:
+AEM verstrekt de genericstore en de genericstoreproperties contextstore componenten die u kunt uitbreiden. De structuur van uw opslaggegevens bepaalt de component die u uitbreidt:
 
 * Eigenschap-waardeparen: De `GenericStoreProperties` component uitbreiden. Deze component geeft automatisch opslagruimten van eigenschap-waarde paren terug. Er zijn verschillende interactiepunten beschikbaar:
 
-   * `prolog.jsp` en `epilog.jsp`: componentinteractie waarmee u logica aan de serverzijde kunt toevoegen voor of na het renderen van de component.
+   * `prolog.jsp` en `epilog.jsp`: componentinteractie waarmee u logica aan de serverzijde kunt toevoegen voor- of nadat de component is gerenderd.
 
 * Complexe gegevens: De `GenericStore` component uitbreiden. Uw zittingsopslag zal dan een &quot;renderer&quot;methode nodig hebben die zal worden geroepen telkens als de component moet worden teruggegeven. De renderfunctie wordt aangeroepen met twee parameters:
 
    * `@param {String} store`
 
-      
-De winkel die moet worden gerenderd
+      De winkel die moet worden gerenderd
 
    * `@param {String} divId`
 
-      
-Id van de div waarin de opslag moet worden teruggegeven.
+      Id van de div waarin de opslag moet worden teruggegeven.
 
 >[!NOTE]
 >
@@ -300,7 +301,7 @@ De `/libs/cq/personalization/components/contextstores/profiledata` component van
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-### Sessieopslaggegevens renderen voor componenten van het energieopslagsysteem {#rendering-session-store-data-for-genericstore-components}
+### Sessieopslaggegevens renderen voor onderdelen van het generieke archief {#rendering-session-store-data-for-genericstore-components}
 
 Om opslaggegevens terug te geven die een component van de algemeen opslag gebruiken, moet u:
 
@@ -327,13 +328,11 @@ Uw zittingsopslag zal dan een &quot;renderer&quot;methode nodig hebben die zal w
 
 * `@param {String} store`
 
-   
-De winkel die moet worden gerenderd
+   De winkel die moet worden gerenderd
 
 * `@param {String} divId`
 
-   
-Id van de div waarin de opslag moet worden teruggegeven.
+   Id van de div waarin de opslag moet worden teruggegeven.
 
 ## Interactie met Sessiewinkels {#interacting-with-session-stores}
 
@@ -497,7 +496,7 @@ In dit voorbeeld maakt u een contextopslagcomponent die gegevens van een externe
 
 Maak een CQ-toepassing en voeg de geoloc-component toe.
 
-1. Open CRXDE Lite in uw Webbrowser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
+1. Open CRXDE Lite in uw webbrowser ([http://localhost:4502/crx/de](http://localhost:4502/crx/de)).
 1. Klik met de rechtermuisknop op de `/apps` map en klik op Maken > Map maken. Geef een naam op voor `myapp` en klik op OK.
 1. Maak hieronder `myapp`ook een map met de naam `contextstores`. &quot;
 1. Klik met de rechtermuisknop op de `/apps/myapp/contextstores` map en klik op Maken > Component maken. Geef de volgende eigenschapswaarden op en klik op Volgende:
@@ -505,7 +504,7 @@ Maak een CQ-toepassing en voeg de geoloc-component toe.
    * Label: **geoloc**
    * Titel: **Locatiewinkel**
    * Supertype: **`cq/personalization/components/contextstores/genericstoreproperties`**
-   * Groep: Context **client**
+   * Groep: **Clientcontext**
 
 1. Klik in het dialoogvenster Component maken op Volgende op elke pagina totdat de knop OK is ingeschakeld. Klik vervolgens op OK.
 1. Klik op Alles opslaan.
@@ -524,7 +523,7 @@ Voor de component Context Store is een dialoogvenster voor bewerken vereist. Het
 
 1. Klik met de rechtermuisknop op het `/apps/myapp/contextstores/geoloc/dialog/items/items/tab1/items` knooppunt en klik op Maken > Knooppunt maken. Geef de volgende eigenschapswaarden op en klik op OK:
 
-   * Naam: **statisch**
+   * Naam: **static**
    * Type: **cq:Widget**
 
 1. Voeg de volgende eigenschappen toe aan het knooppunt:
@@ -602,7 +601,7 @@ Voeg de code aan het JSP dossier van de geologische component toe om de opslagge
 
 Voeg de component van de Opslag van de Plaats aan de Context van de Cliënt toe zodat het wordt geïnitialiseerd wanneer de pagina laadt.
 
-1. Open de startpagina Geometrixx Outdoor op de auteurinstantie ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
+1. Open de homepage van Geometrixx Outdoors op de auteurinstantie ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html)).
 1. Klik op Ctrl-Alt-c (vensters) of Control-option-c (Mac) om Client Context te openen.
 1. Klik op het bewerkingspictogram boven aan Client Context om Client Context Designer te openen.
 
@@ -612,9 +611,9 @@ Voeg de component van de Opslag van de Plaats aan de Context van de Cliënt toe 
 
 ### Zie Locatie-informatie in clientcontext {#see-the-location-information-in-client-context}
 
-Open de startpagina Geometrixx Outdoor in de bewerkingsmodus en open vervolgens Client Context om de gegevens van de Locatie Store-component te bekijken.
+Open de homepage van Geometrixx Outdoors in geef wijze uit en open dan de Context van de Cliënt om de gegevens van de component van de Opslag van de Plaats te zien.
 
-1. Open de Engelse pagina van de Geometrixx-site Buiten. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
+1. Open de Engelse pagina van de site Geometrixx Outdoors. ([http://localhost:4502/content/geometrixx-outdoors/en.html](http://localhost:4502/content/geometrixx-outdoors/en.html))
 1. Druk op Ctrl+Alt+c (vensters) of Control+Option+c (Mac) om de clientcontext te openen.
 
 ## Een aangepaste clientcontext maken {#creating-a-customized-client-context}
@@ -627,15 +626,13 @@ Als u een tweede clientcontext wilt maken, moet u de vertakking dupliceren:
 
    `/content`
 
-   
-bevat de inhoud van de aangepaste clientcontext.
+   bevat de inhoud van de aangepaste clientcontext.
 
 * De map:
 
    `/contextstores`
 
-   
-staat u toe om verschillende configuraties voor de contextopslag te bepalen.
+   staat u toe om verschillende configuraties voor de contextopslag te bepalen.
 
 Als u de aangepaste clientcontext wilt gebruiken, bewerkt u de eigenschap\
 `path`\
