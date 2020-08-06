@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 79d426a6-bad5-4f6d-a027-ca935576bcb9
 translation-type: tm+mt
 source-git-commit: b4a2dee750fd646ba54aed243c9fb90379565d5d
+workflow-type: tm+mt
+source-wordcount: '130'
+ht-degree: 13%
 
 ---
 
@@ -22,7 +25,7 @@ De manier waarop u uw dynamische media-elementen - zowel video als afbeeldingen 
 Met Dynamische media hebt u verschillende opties:
 
 * Als uw website op AEM wordt gehost, wilt u de dynamische media-elementen rechtstreeks aan uw pagina toevoegen.
-* Als uw website zich niet op AEM bevindt, raadpleegt u Dynamische media-elementen [](/help/assets/delivering-dynamic-media-assets.md) leveren in de gebruikersinterface met aanraakbediening.
+* Als uw website niet op AEM staat, raadpleegt u Dynamische media-elementen [](/help/assets/delivering-dynamic-media-assets.md) leveren in de gebruikersinterface met aanraakbediening.
 
 Raadpleeg de volgende onderwerpen voor meer informatie:
 
