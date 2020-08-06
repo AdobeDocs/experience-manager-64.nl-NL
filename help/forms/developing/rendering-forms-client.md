@@ -1,6 +1,6 @@
 ---
-title: Formulieren weergeven op de client
-seo-title: Formulieren weergeven op de client
+title: Forms renderen op de client
+seo-title: Forms renderen op de client
 description: 'null'
 seo-description: 'null'
 uuid: 09bcc23d-28b0-473a-87f1-bc17e87620f4
@@ -12,21 +12,24 @@ topic-tags: operations
 discoiquuid: 08d36e9f-cafc-478e-9781-8fc29ac6262e
 translation-type: tm+mt
 source-git-commit: a750aeb9f41347da93f1ceb16c5646bc94bee67b
+workflow-type: tm+mt
+source-wordcount: '1664'
+ht-degree: 0%
 
 ---
 
 
-# Formulieren weergeven op de client {#rendering-forms-at-the-client}
+# Forms renderen op de client {#rendering-forms-at-the-client}
 
-## Formulieren weergeven op de client {#rendering-forms-at-the-client-inner}
+## Forms renderen op de client {#rendering-forms-at-the-client-inner}
 
-U kunt de levering van PDF-inhoud optimaliseren en de mogelijkheid van de Forms-service om netwerkbelasting te verwerken verbeteren door de renderfunctie op de client van Acrobat of Adobe Reader te gebruiken. Dit proces wordt een formulier op de client weergegeven. Als u een formulier op de client wilt genereren, moet het clientapparaat (meestal een webbrowser) Acrobat 7.0 of Adobe Reader 7.0 of hoger gebruiken.
+U kunt de levering van PDF-inhoud optimaliseren en het vermogen van de Forms-service om netwerkbelasting te verwerken verbeteren door de renderingmogelijkheden op de client van Acrobat of Adobe Reader te gebruiken. Dit proces wordt een formulier op de client weergegeven. Als u een formulier op de client wilt genereren, moet het clientapparaat (meestal een webbrowser) Acrobat 7.0 of Adobe Reader 7.0 of hoger gebruiken.
 
-Wijzigingen in een formulier die het resultaat zijn van scriptuitvoering op de server, worden niet weerspiegeld in een formulier dat op de client wordt gegenereerd, tenzij het basissubformulier het `restoreState` kenmerk bevat dat is ingesteld op `auto`. Zie [Formulierontwerper voor meer informatie over dit kenmerk.](https://www.adobe.com/go/learn_aemforms_designer_63)
+Wijzigingen in een formulier die het resultaat zijn van scriptuitvoering op de server, worden niet weerspiegeld in een formulier dat op de client wordt gegenereerd, tenzij het basissubformulier het `restoreState` kenmerk bevat dat is ingesteld op `auto`. Zie [Forms Designer voor meer informatie over dit kenmerk.](https://www.adobe.com/go/learn_aemforms_designer_63)
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van Vormen, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Forms-service.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -44,7 +47,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Forms Client API-object maken**
 
-Voordat u een API-bewerking voor Forms-service programmatisch kunt uitvoeren, moet u een Forms-service-client maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient` object. Als u de API voor webservices van Forms gebruikt, maakt u een `FormsService` object.
+Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvoeren, moet u een Forms-serviceclient maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient` object. Als u de Forms-API voor webservices gebruikt, maakt u een `FormsService` object.
 
 **Opties voor renderen tijdens runtime van client instellen**
 
@@ -55,12 +58,12 @@ Een optionele uitvoeringsoptie die u kunt instellen, is de `SeedPDF` optie. Met 
 U kunt Designer gebruiken om een eenvoudig dynamisch PDF-bestand te maken dat u als PDF-bestand met zaad kunt gebruiken. De volgende stappen zijn vereist om deze taak uit te voeren:
 
 1. Bepaal of u fonts in het PDF-bestand met zaad wilt insluiten. Het PDF-bestand met het zaadbestand moet aanvullende fonts bevatten die vereist zijn voor het formulier dat wordt gegenereerd. Wanneer u lettertypen insluit in het PDF-bestand voor het zaadbestand, moet u ervoor zorgen dat u geen licentieovereenkomsten voor lettertypen schendt. In Designer kunt u bepalen of u fonts wettelijk kunt insluiten. Als er fonts zijn die u niet in het formulier kunt insluiten wanneer u het opslaat, wordt in Designer een bericht weergegeven met de fonts die u niet kunt insluiten. Dit bericht wordt niet weergegeven in Designer voor statische PDF-documenten.
-1. Als u het PDF-zaadbestand maakt in Designer, wordt u geadviseerd ten minste een tekstveld toe te voegen dat een bericht bevat. Het bericht moet worden gericht aan gebruikers van eerdere versies van Adobe Reader en aangeven dat zij Acrobat 7.0 of hoger of Adobe Reader 7.0 of hoger nodig hebben om het document te kunnen bekijken.
+1. Als u het PDF-zaadbestand maakt in Designer, wordt u geadviseerd ten minste een tekstveld toe te voegen dat een bericht bevat. Het bericht moet worden gericht aan gebruikers van eerdere versies van Adobe Reader en aangeven dat ze Acrobat 7.0 of hoger of Adobe Reader 7.0 of hoger nodig hebben om het document te kunnen bekijken.
 1. Sla het PDF-zaadbestand op als een dynamisch PDF-bestand met de bestandsnaamextensie PDF.
 
 >[!NOTE]
 >
->U hoeft de optie PDF-runtime voor het genereren van een formulier op de client niet te definiëren. Als u geen PDF-zaadbestand opgeeft, maakt de Forms-service een shell-pdf die geen COS-objecten bevat maar wel een PDF-omslag met daarin de daadwerkelijke XDP-inhoud ingesloten. Met de stappen in deze sectie wordt de optie voor het uitvoeren van de PDF-zaadbewerking niet ingesteld. Zie de handleiding Adobe PDF Reference voor informatie over COS-objecten.
+>U hoeft de optie PDF-runtime voor het genereren van een formulier op de client niet te definiëren. Als u geen PDF-bestand voor een zaadbestand opgeeft, maakt de Forms-service een shell-pdf die geen COS-objecten bevat maar wel een PDF-omslag met daarin de daadwerkelijke XDP-inhoud ingesloten. Met de stappen in deze sectie wordt de optie voor het uitvoeren van de PDF-zaadbewerking niet ingesteld. Zie de handleiding Adobe PDF Reference voor informatie over COS-objecten.
 
 **Een formulier weergeven op de client**
 
@@ -68,7 +71,7 @@ Als u een formulier op de client wilt genereren, moet u ervoor zorgen dat de ren
 
 **De formuliergegevensstroom naar de webbrowser van de client schrijven**
 
-De service Forms maakt een formuliergegevensstroom die u naar de webbrowser van de client moet schrijven. Als het formulier wordt geschreven naar de webbrowser van de client, wordt het gegenereerd door Acrobat 7.0 of Adobe Reader 7.0 of hoger en is het zichtbaar voor de gebruiker.
+De Forms-service maakt een formuliergegevensstroom die u naar de webbrowser van de client moet schrijven. Als het formulier wordt geschreven naar de webbrowser van de client, wordt het gegenereerd door Acrobat 7.0 of Adobe Reader 7.0 of hoger en is het zichtbaar voor de gebruiker.
 
 **Zie ook**
 
@@ -76,19 +79,19 @@ De service Forms maakt een formuliergegevensstroom die u naar de webbrowser van 
 
 [Een formulier op de client renderen met de API voor webservices](#render-a-form-at-the-client-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[Forms Service API, snel aan de slag](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
+[Forms Service API Quick Start](/help/forms/developing/forms-service-api-quick-starts.md#forms-service-api-quick-starts)
 
-[Documenten doorgeven aan de Forms Service](/help/forms/developing/passing-documents-forms-service.md)
+[Documenten doorgeven aan de Forms-service](/help/forms/developing/passing-documents-forms-service.md)
 
-[Webtoepassingen maken die formulieren renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
+[Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
 ### Een formulier op de client renderen met de Java API {#render-a-form-at-the-client-using-the-java-api}
 
-Een formulier op de client renderen met de API voor formulieren (Java):
+Een formulier op de client renderen met de Forms API (Java):
 
 1. Projectbestanden opnemen
 
@@ -108,11 +111,12 @@ Een formulier op de client renderen met de API voor formulieren (Java):
 
    Roep de methode van het `FormsServiceClient` `renderPDFForm` object aan en geef de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een AEM Forms-toepassing, moet u controleren of u het volledige pad opgeeft, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een AEM Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
    * Een `com.adobe.idp.Document` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef een leeg `com.adobe.idp.Document` object door als u geen gegevens wilt samenvoegen.
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat die vereist zijn om een formulier op de client te genereren.
-   * Een `URLSpec` object dat URI-waarden bevat die vereist zijn voor de Forms-service om een formulier te genereren.
+   * Een `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist om een formulier te genereren.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
+
    De `renderPDFForm` methode retourneert een `FormsResult` object dat een formuliergegevensstroom bevat die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
@@ -129,17 +133,17 @@ Een formulier op de client renderen met de API voor formulieren (Java):
 
 [Snel starten (SOAP-modus): Een formulier weergeven op de client met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-rendering-a-form-at-the-client-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 ### Een formulier op de client renderen met de API voor webservices {#render-a-form-at-the-client-using-the-web-service-api}
 
-Een formulier op de client renderen met de API voor formulieren (webservice):
+Een formulier op de client renderen met de Forms API (webservice):
 
 1. Projectbestanden opnemen
 
-   * Maak Java-proxyklassen die de Forms service WSDL gebruiken.
+   * Maak Java-proxyklassen die gebruikmaken van de Forms-service WSDL.
    * Neem de Java-proxyklassen op in het klassepad.
 
 1. Een Forms Client API-object maken
@@ -155,15 +159,16 @@ Een formulier op de client renderen met de API voor formulieren (webservice):
 
    Roep de methode van het `FormsService` `renderPDFForm` object aan en geef de volgende waarden door:
 
-   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u controleren of u het volledige pad opgeeft, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
-   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Formulieren [vooraf invullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
+   * Een tekenreekswaarde die de naam van het formulierontwerp opgeeft, inclusief de bestandsnaamextensie. Als u verwijst naar een formulierontwerp dat deel uitmaakt van een Forms-toepassing, moet u het volledige pad opgeven, bijvoorbeeld `Applications/FormsApplication/1.0/FormsFolder/Loan.xdp`.
+   * Een `BLOB` object dat gegevens bevat die met het formulier moeten worden samengevoegd. Geef door als u geen gegevens wilt samenvoegen. `null` (Zie Forms [vooraf vullen met stroombare indelingen](/help/forms/developing/prepopulating-forms-flowable-layouts.md).)
    * Een `PDFFormRenderSpec` object dat uitvoeringsopties opslaat die vereist zijn om een formulier op de client te genereren.
-   * Een `URLSpec` object dat URI-waarden bevat die door de service Forms worden vereist.
+   * Een `URLSpec` object dat URI-waarden bevat die door de Forms-service worden vereist.
    * Een `java.util.HashMap` object dat bestandsbijlagen opslaat. Dit is een optionele parameter en u kunt opgeven `null` of u geen bestanden aan het formulier wilt koppelen.
    * Een leeg `com.adobe.idp.services.holders.BLOBHolder` object dat door de methode wordt gevuld. Met deze parameter wordt het gerenderde PDF-formulier opgeslagen.
    * Een leeg `javax.xml.rpc.holders.LongHolder` object dat door de methode wordt gevuld. (In dit argument wordt het aantal pagina&#39;s in het formulier opgeslagen).
    * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld. (In dit argument wordt de waarde van de landinstelling opgeslagen.)
    * Een leeg `com.adobe.idp.services.holders.FormsResultHolder` object dat de resultaten van deze bewerking zal bevatten.
+
    De `renderPDFForm` methode vult het `com.adobe.idp.services.holders.FormsResultHolder` object dat als laatste argumentwaarde wordt doorgegeven, met een formuliergegevensstroom die naar de webbrowser van de client moet worden geschreven.
 
 1. De formuliergegevensstroom naar de webbrowser van de client schrijven
@@ -178,6 +183,6 @@ Een formulier op de client renderen met de API voor formulieren (webservice):
 
 **Zie ook**
 
-[Formulieren weergeven op de client](#rendering-forms-at-the-client)
+[Forms renderen op de client](#rendering-forms-at-the-client)
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
