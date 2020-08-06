@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: e862c8a9-b5b6-4857-a154-03d3ffac3e67
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '1282'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ Controleer dit door naar /etc/replication/agents.author.html te gaan dan op de r
 1. Het zou ook het geval kunnen zijn dat de configuratie DefaultJobManager in een inconsistente staat krijgt. Dit kan gebeuren wanneer iemand handmatig de configuratie van de &#39;Apache Sling Job Event Handler&#39; wijzigt via de OSGiconsole (Schakel bijvoorbeeld de eigenschap &#39;Job Processing Enabled&#39; uit en schakel deze weer in en sla de configuratie op).
 
    * Op dit punt wordt de configuratie DefaultJobManager die in crx-quickstart/launchpad/config/org/apache/sling/event/impl/jobs/DefaultJobManager.config wordt opgeslagen in een inconsistente staat. En alhoewel het bezit van de Gebeurtenis van de Baan van de &quot;Apache het Verdelen van de Baan van de Gebeurtenis&quot;om in gecontroleerde staat toont te zijn toegelaten, wanneer men aan het Verschuivende lusje van de Gebeurtenis navigeert, toont het het bericht - DE VERWERKING VAN DE TAAK WORDT UITGESCHAKELD en de replicatie werkt niet.
-   * Om deze kwestie op te lossen, zou men aan de pagina van de Configuratie van de console moeten navigeren OSGi en de &quot;Apache Sling Job Event Handler&quot;configuratie schrappen. Dan begin de Hoofdknoop van de cluster opnieuw om de configuratie terug in een verenigbare staat te krijgen. Dit zou de kwestie moeten bevestigen en de replicatie zal beginnen opnieuw te werken.
+   * Om deze kwestie op te lossen, zou men aan de pagina van de Configuratie van de console moeten navigeren OSGi en de &quot;Apache Sling Job Event Handler&quot;configuratie schrappen. Dan begin de Master knoop van de cluster opnieuw om de configuratie terug in een verenigbare staat te krijgen. Dit zou de kwestie moeten bevestigen en de replicatie zal beginnen opnieuw te werken.
 
 **Een replication.log maken**
 
@@ -75,13 +78,13 @@ Soms kan het zeer nuttig zijn om al replicatieregistreren te plaatsen om in een 
 1. Zoek de Apache Sling Logging Logger-fabriek en maak een instantie door op de knop **+** rechts van de fabrieksconfiguratie te klikken. Hiermee wordt een nieuw logbestand gemaakt.
 1. Stel de configuratie als volgt in:
 
-   * Logniveau:DEBUG
+   * Logniveau: DEBUG
    * Pad logbestand: *(CQ5.4 en 5.3)* ../logs/replication.log *(CQ5.5)* logs/replication.log
    * Categorieën: com.day.cq.replication
 
 1. Als u vermoedt dat het probleem op enigerlei wijze te maken heeft met sling, kunt u dit Java-pakket ook toevoegen onder categorieën:org.apache.sling.event
 
-### Wachtrij replicatieagent pauzeren {#pausing-replication-agent-queue}
+### Wachtrij replicatieagent pauzeren  {#pausing-replication-agent-queue}
 
 Soms kan het geschikt zijn om de replicatiewachtrij te pauzeren om de belasting van het auteursysteem te verminderen zonder deze uit te schakelen. Momenteel is dit alleen mogelijk door een hack van het tijdelijk configureren van een ongeldige poort. Vanaf 5.4 kon u pauzeknoop in replicatieagentenrij zien het één of andere beperking heeft
 
