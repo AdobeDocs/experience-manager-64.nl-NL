@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: fbe70162-ced6-4989-9322-e12772edbcbc
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1895'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom worden streepjescodes en handtekeningvelden niet in mijn formulier weergegeven?
 
-   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in HTML- of mobiele scenario&#39;s. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw veld voor het schrijven van handtekeningen dat u kunt gebruiken in plaats van een handtekeningveld. U kunt ook een [aangepaste widget](/help/forms/using/custom-widgets.md) voor streepjescodes toevoegen en integreren.
+   Antwoord: Streepjescodes en handtekeningvelden zijn niet relevant in HTML- of mobiele scenario&#39;s. Deze velden worden weergegeven als een niet-interactief gebied. AEM Forms Designer biedt echter een nieuw scriptveld voor handtekeningen dat kan worden gebruikt in plaats van een handtekeningveld. U kunt ook een [aangepaste widget](/help/forms/using/custom-widgets.md) voor streepjescodes toevoegen en integreren.
 
 1. Wordt RTF-tekst ondersteund voor het XFA-tekstveld?
 
@@ -87,15 +90,15 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 1. Waarom sommige tekst wordt afgekapt of onjuist wordt weergegeven in HTML5?
 
-   Antwoord: Wanneer een tekstelement Tekenen of Bijschrift niet voldoende ruimte heeft om inhoud weer te geven, wordt de tekst afgebroken weergegeven in mobiele formulieruitvoering. Deze afkapping is ook zichtbaar in de ontwerpweergave van AEM Forms Designer. Hoewel deze afkapping kan worden verwerkt in de PDF&#39;s, kan deze niet worden verwerkt in de HTML5-formulieren. U voorkomt dit probleem door voldoende ruimte te bieden om tekst te tekenen of te ondertitelen zodat de tekst niet wordt afgekapt in de ontwerpmodus van de AEM Forms Designer.
+   Antwoord: Wanneer een tekstelement Tekenen of Bijschrift niet voldoende ruimte heeft om inhoud weer te geven, wordt de tekst afgebroken weergegeven in mobiele formulieruitvoering. Deze afkapping is ook zichtbaar in de ontwerpweergave van AEM Forms Designer. Hoewel deze afkapping kan worden verwerkt in de PDF&#39;s, kan deze niet worden verwerkt in de HTML5-formulieren. U voorkomt dit probleem door voldoende ruimte te bieden voor Tekenen of Bijschrifttekst, zodat deze niet wordt afgekapt in de ontwerpmodus van AEM Forms Designer.
 
 1. Ik observeer layoutproblemen met betrekking tot ontbrekende inhoud of overlappende inhoud. Wat is de reden?
 
-   Antwoord: Als er naast een ander overlappend element op dezelfde positie een element Tekst tekenen of Afbeelding tekenen is (bijvoorbeeld een rechthoek), is de inhoud Tekst tekenen niet zichtbaar als deze later in de documentvolgorde komt (in de Hiërarchieweergave van AEM Forms Designer). PDF ondersteunt transparante lagen, maar HTML/browsers bieden geen ondersteuning voor transparante lagen.
+   Antwoord: Als er naast een ander overlappend element op dezelfde positie een element Tekst tekenen of Afbeelding tekenen is (bijvoorbeeld een rechthoek), is de inhoud Tekst tekenen niet zichtbaar als deze later in de documentvolgorde komt (in de AEM Forms Designer-hiërarchie). PDF ondersteunt transparante lagen, maar HTML/browsers bieden geen ondersteuning voor transparante lagen.
 
 1. Waarom worden sommige lettertypen in het HTML-formulier anders weergegeven dan de lettertypen die bij het ontwerpen van het formulier worden gebruikt?
 
-   Antwoord: In HTML5-formulieren worden geen fonts ingesloten (in tegenstelling tot PDF-formulieren waarin fonts in het formulier zijn ingesloten). Zorg ervoor dat de in de XDP opgegeven fonts beschikbaar zijn op de server en op de clientcomputer, zodat de HTML-versie van het formulier naar behoren wordt weergegeven. Als de vereiste lettertypen niet beschikbaar zijn op de server, worden er vervangende lettertypen gebruikt. Bovendien worden standaardlettertypen van de browser gebruikt om de tekst weer te geven als u lettertypen in formuliersjablonen gebruikt die niet beschikbaar zijn op het clientapparaat.
+   Antwoord: In HTML5-formulieren worden geen fonts ingesloten (in tegenstelling tot PDF forms waarin fonts in het formulier zijn ingesloten). Zorg ervoor dat de in de XDP opgegeven fonts beschikbaar zijn op de server en op de clientcomputer, zodat de HTML-versie van het formulier naar behoren wordt weergegeven. Als de vereiste lettertypen niet beschikbaar zijn op de server, worden er vervangende lettertypen gebruikt. Bovendien worden standaardlettertypen van de browser gebruikt om de tekst weer te geven als u lettertypen in formuliersjablonen gebruikt die niet beschikbaar zijn op het clientapparaat.
 
 1. Worden vAlign- en hAlign-kenmerken ondersteund in HTML-formulieren?
 
@@ -109,11 +112,11 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    Antwoord: Ja, HTML5-formulieren hebben een aantal beperkingen. Als het aantal cijfers groter is dan het aantal dat is opgegeven in de afbeeldingsvoorwaarde, worden de getallen niet gelokaliseerd en weergegeven in de Engelse landinstelling.
 
-1. Waarom zijn HTML-formulieren groter dan PDF-formulieren?
+1. Waarom zijn HTML-formulieren groter dan PDF forms?
 
    Er zijn veel tussenliggende gegevensstructuren en -objecten vereist, zoals formulierdom, gegevensdom en indelingsdom, om een XDP naar een HTML-formulier te renderen.
 
-   Voor PDF-formulieren beschikt Adobe Acrobat over een ingebouwde XTG-engine voor het maken van tussenliggende gegevensstructuren en objecten. Acrobat is ook belast met layout en scripts.
+   Voor PDF forms beschikt Adobe Acrobat over een ingebouwde XTG-engine voor het maken van tussenliggende gegevensstructuren en objecten. Acrobat houdt zich ook bezig met layout en scripts.
 
    Voor HTML5-formulieren beschikken browsers niet over een ingebouwde XTG-engine om tussenliggende gegevensstructuren te maken, en hebben ze geen objecten van onbewerkte XDP-bytes. Voor HTML5-formulieren worden dus tussenstructuren gegenereerd op de server en naar de client verzonden. Op client gebruikt de op JavaScript gebaseerde script- en indelingsengine deze tussenliggende structuren.
 
@@ -161,7 +164,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
 ## Scripts {#scripting}
 
-1. Zijn er beperkingen in de JavaScript-implementatie voor HTML-formulieren?
+1. Zijn er beperkingen in de JavaScript-implementatie voor HTML Forms?
 
    Antwoord:
 
@@ -188,7 +191,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    1. Open de CRXde-lijst en navigeer naar het `/content/xfaforms/profiles/default` knooppunt.
    1. Voeg een eigenschap `mfDataDependentFloatingField` van het type String toe en stel de waarde van de eigenschap in op `true`**.**
-   1. Klik op Alles **opslaan**. De zwevende velden worden nu ingeschakeld voor de HTML-formulieren met behulp van het bijgewerkte renderprofiel.
+   1. Klik op Alles **opslaan**. De zwevende velden worden nu ingeschakeld voor de HTML Forms met behulp van het bijgewerkte renderprofiel.
 
       >[!NOTE]
       >
