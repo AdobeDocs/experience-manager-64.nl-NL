@@ -1,6 +1,6 @@
 ---
-title: PDF-portfolio's samenstellen
-seo-title: PDF-portfolio's samenstellen
+title: PDF-Portfolio samenstellen
+seo-title: PDF-Portfolio samenstellen
 description: 'null'
 seo-description: 'null'
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
@@ -12,19 +12,22 @@ topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
 source-git-commit: b995edbd3fefc8e2f593661b40d650ba6836f686
+workflow-type: tm+mt
+source-wordcount: '1785'
+ht-degree: 0%
 
 ---
 
 
-# PDF-portfolio&#39;s samenstellen {#assembling-pdf-portfolios}
+# PDF-Portfolio samenstellen {#assembling-pdf-portfolios}
 
-U kunt een PDF-portfolio samenstellen met de API voor het samenstellen van Java en webservices. In een portfolio kunnen diverse typen documenten worden gecombineerd, zoals tekstbestanden, afbeeldingsbestanden (bijvoorbeeld een JPEG-bestand) en PDF-documenten. De indeling van het portfolio kan worden ingesteld op verschillende stijlen, zoals *Raster met voorvertoning*, de indeling *Op afbeelding* of zelfs *Draaien*.
+U kunt een PDF-Portfolio samenstellen met de API voor Java samenstellen en webservices. In een portfolio kunnen diverse typen documenten worden gecombineerd, zoals tekstbestanden, afbeeldingsbestanden (bijvoorbeeld een JPEG-bestand) en PDF-documenten. De indeling van het portfolio kan worden ingesteld op verschillende stijlen, zoals *Raster met voorvertoning*, de indeling *Op afbeelding* of zelfs *Draaien*.
 
 De volgende afbeelding is een schermafbeelding van een portfolio met de stijl *Op afbeelding* .
 
 ![ap_ap_portfolio](assets/ap_ap_portfolio.png)
 
-Het maken van een PDF-portfolio is een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM-formulieren kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document waarmee een PDF-portfolio wordt gemaakt.
+Het maken van een PDF-Portfolio is een papierloos alternatief voor het doorgeven van een verzameling documenten. Met AEM Forms kunt u portfolio&#39;s maken door de Assembler-service aan te roepen met een gestructureerd DDX-document. Het volgende DDX-document is een voorbeeld van een DDX-document dat een PDF-Portfolio maakt.
 
 ```as3
  <DDX xmlns="https://ns.adobe.com/DDX/1.0/"> 
@@ -52,7 +55,7 @@ Het DXX-document moet een `Portfolio` tag met een geneste `Navigator` tag bevatt
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -60,7 +63,7 @@ Het DXX-document moet een `Portfolio` tag met een geneste `Navigator` tag bevatt
 
 ## Overzicht van de stappen {#summary-of-steps}
 
-Voer de volgende taken uit om een PDF-portfolio te maken:
+Voer de volgende taken uit om een PDF-Portfolio te maken:
 
 1. Inclusief projectbestanden.
 1. Maak een PDF Assembler-client.
@@ -80,7 +83,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
 **Een PDF Assembler-client maken**
 
@@ -88,13 +91,13 @@ Alvorens u programmatically een verrichting van de Assembler kunt uitvoeren, cre
 
 **Verwijzen naar een bestaand DDX-document**
 
-Er moet naar een DDX-document worden verwezen om een PDF-portfolio samen te stellen. Dit DDX-document moet de `Portfolio`, `Navigator` en, `PackageFiles` elementen bevatten.
+Er moet naar een DDX-document worden verwezen om een PDF-Portfolio samen te stellen. Dit DDX-document moet de `Portfolio`, `Navigator` en, `PackageFiles` elementen bevatten.
 
 **Verwijzing naar de vereiste documenten**
 
-Als u een PDF-portfolio wilt samenstellen, verwijst u naar alle bestanden die de samen te stellen documenten vertegenwoordigen. Geef bijvoorbeeld alle afbeeldingsbestanden die in het DDX-document zijn opgegeven, door aan de Assembler-service. U ziet dat naar deze bestanden wordt verwezen in het DDX-document dat in deze sectie is opgegeven: *myImage.png* en *saint_bernard.jpg*.
+Als u een PDF-Portfolio wilt samenstellen, verwijst u naar alle bestanden die de samen te stellen documenten vertegenwoordigen. Geef bijvoorbeeld alle afbeeldingsbestanden die in het DDX-document zijn opgegeven, door aan de Assembler-service. U ziet dat naar deze bestanden wordt verwezen in het DDX-document dat in deze sectie is opgegeven: *myImage.png* en *saint_bernard.jpg*.
 
-Wanneer u een PDF-portfolio samenstelt, geeft u een NAV-bestand (een navigatorbestand) door aan de Assembler-service. Het NAV-bestand dat u doorgeeft aan de Assembler-service, is afhankelijk van het type PDF-portfolio dat u wilt maken. Als u bijvoorbeeld een indeling *Op afbeelding* wilt maken, geeft u het bestand AdobeOnImage.nav door. U kunt NAV-bestanden zoeken in de volgende map:
+Wanneer u een PDF-Portfolio samenstelt, geeft u een NAV-bestand (een navigatorbestand) door aan de Assembler-service. Het NAV-bestand dat u doorgeeft aan de Assembler-service, is afhankelijk van het type PDF-Portfolio dat u maakt. Als u bijvoorbeeld een indeling *Op afbeelding* wilt maken, geeft u het bestand AdobeOnImage.nav door. U kunt NAV-bestanden zoeken in de volgende map:
 
 `<Install folder>\Acrobat 9.0\Acrobat\Navigators`
 
@@ -102,7 +105,7 @@ Kopieer het NAV-bestand uit de installatiemap van Acrobat 9 (of hoger). Plaats h
 
 >[!NOTE]
 >
->De snelle start die bij het samenstellen van PDF-portfolio&#39;s hoort, is gebaseerd op AdobeOnImage.nav.
+>De snelle start die bij het samenstellen van PDF-Portfolio hoort, gebruikt AdobeOnImage.nav.
 
 **Uitvoeringsopties instellen**
 
@@ -110,27 +113,27 @@ U kunt runtime opties plaatsen die het gedrag van de dienst van de Assembler con
 
 **Het portfolio samenstellen**
 
-Als u een PDF-portfolio wilt samenstellen, roept u de `invokeDDX` bewerking aan. De service Assembler retourneert de PDF-portfolio in een verzamelingsobject.
+Als u een PDF-Portfolio wilt samenstellen, roept u de `invokeDDX` bewerking aan. De Assembler-service retourneert de PDF-Portfolio in een verzamelingsobject.
 
 **De geassembleerde portfolio opslaan**
 
-Een PDF-portfolio wordt geretourneerd in een verzamelingsobject. Doorloop het verzamelingsobject en sla het PDF-portfolio op als een PDF-bestand.
+Een PDF-Portfolio wordt geretourneerd in een verzamelingsobject. Doorloop het verzamelingsobject en sla PDF-Portfolio op als een PDF-bestand.
 
 **Zie ook**
 
-[Een PDF-portfolio samenstellen met de Java API](#assemble-a-pdf-portfolio-using-the-java-api)
+[Een PDF-Portfolio samenstellen met de Java API](#assemble-a-pdf-portfolio-using-the-java-api)
 
-[Een PDF-portfolio samenstellen met de API voor webservices](#assemble-a-pdf-portfolio-using-the-web-service-api)
+[Een PDF-Portfolio samenstellen met de webservice-API](#assemble-a-pdf-portfolio-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
 [PDF-documenten programmatisch samenstellen](/help/forms/developing/programmatically-assembling-pdf-documents.md)
 
-## Een PDF-portfolio samenstellen met de Java API {#assemble-a-pdf-portfolio-using-the-java-api}
+## Een PDF-Portfolio samenstellen met de Java API {#assemble-a-pdf-portfolio-using-the-java-api}
 
-U kunt een PDF-portfolio samenstellen met de API (Java) voor vergaderingsservice:
+U kunt een PDF-Portfolio samenstellen met de API (Java) voor vergaderingsservice:
 
 1. Inclusief projectbestanden.
 
@@ -166,29 +169,30 @@ U kunt een PDF-portfolio samenstellen met de API (Java) voor vergaderingsservice
    Roep de `AssemblerServiceClient` methode van het `invokeDDX` object aan en geef de volgende vereiste waarden door:
 
    * Een `com.adobe.idp.Document` object dat staat voor het te gebruiken DDX-document
-   * Een `java.util.Map` object dat de bestanden bevat die zijn vereist om een PDF-portfolio te maken.
+   * Een `java.util.Map` object dat de bestanden bevat die zijn vereist om een PDF-Portfolio te maken.
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief het standaardfont en het taaklogniveau
-   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de geassembleerde PDF-portfolio en eventuele uitzonderingen bevat.
+
+   De `invokeDDX` methode retourneert een `com.adobe.livecycle.assembler.client.AssemblerResult` object dat de geassembleerde PDF-Portfolio en eventuele uitzonderingen bevat.
 
 1. Sla het samengevoegde portfolio op.
 
-   Voer de volgende handelingen uit om het PDF-portfolio te verkrijgen:
+   Voer de volgende handelingen uit om de PDF-Portfolio te verkrijgen:
 
    * Roep de `AssemblerResult` methode van het `getDocuments` object aan. Deze methode retourneert een `java.util.Map` object.
    * Doorloop het `java.util.Map` object totdat u het resulterende `com.adobe.idp.Document` object vindt.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het PDF-portfolio te extraheren.
+   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om de PDF-Portfolio te extraheren.
 
 **Zie ook**
 
-[Snel starten (SOAP-modus): PDF-portfolio&#39;s samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
+[Snel starten (SOAP-modus): PDF-Portfolio samenstellen met de Java API](/help/forms/developing/assembler-service-java-api-quick.md#quick-start-soap-mode-assembling-pdf-portfolios-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Een PDF-portfolio samenstellen met de API voor webservices {#assemble-a-pdf-portfolio-using-the-web-service-api}
+## Een PDF-Portfolio samenstellen met de webservice-API {#assemble-a-pdf-portfolio-using-the-web-service-api}
 
-U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingsservice:
+U kunt een PDF-Portfolio samenstellen met de API (webservice) van de Assembler Service:
 
 1. Inclusief projectbestanden.
 
@@ -201,12 +205,12 @@ U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingss
 1. Maak een PDF Assembler-client.
 
    * Maak een `AssemblerServiceClient` object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Maak een `AssemblerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `AssemblerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -226,7 +230,7 @@ U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingss
    * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
    * Vul de bytearray met streamgegevens door de `System.IO.FileStream` `Read` methode van het object aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
    * Vul het `BLOB` object door het `MTOM` veld ervan toe te wijzen met de inhoud van de bytearray.
-   * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelobject wordt gebruikt om invoerbestanden op te slaan die nodig zijn om een PDF-portfolio te maken.
+   * Create a `MyMapOf_xsd_string_To_xsd_anyType` object. Dit verzamelingsobject wordt gebruikt om invoerbestanden op te slaan die nodig zijn om een PDF-Portfolio te maken.
    * Maak voor elk invoerbestand een `MyMapOf_xsd_string_To_xsd_anyType_Item` object.
    * Wijs een tekenreekswaarde toe die de sleutelnaam aan het `MyMapOf_xsd_string_To_xsd_anyType_Item` `key` gebied van het voorwerp vertegenwoordigt. Deze waarde moet overeenkomen met de waarde van het element dat is opgegeven in het DDX-document. (Voer deze taak uit voor elk invoerbestand.)
    * Wijs het `BLOB` object dat het invoerbestand opslaat toe aan het `MyMapOf_xsd_string_To_xsd_anyType_Item` veld van het `value` object. (Voer deze taak uit voor elk invoer-PDF-document.)
@@ -244,11 +248,12 @@ U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingss
    * Een `BLOB` object dat staat voor het DDX-document
    * Het `MyMapOf_xsd_string_To_xsd_anyType` object dat de vereiste bestanden bevat
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeDDX` methode retourneert een `AssemblerResult` object dat de resultaten van de taak en eventuele uitzonderingen bevat die zich hebben voorgedaan.
 
 1. Sla het samengevoegde portfolio op.
 
-   Voer de volgende handelingen uit om het nieuwe PDF-portfolio te verkrijgen:
+   Voer de volgende handelingen uit om de nieuwe PDF-Portfolio te verkrijgen:
 
    * Open het `AssemblerResult` veld van het `documents` object. Dit is een `Map` object dat de resulterende PDF-documenten bevat.
    * Doorloop het `Map` object om elk resulterend document te verkrijgen. Dan, giet dat serielid `value` aan een `BLOB`.
@@ -256,6 +261,6 @@ U kunt een PDF-portfolio samenstellen met de API (webservice) voor vergaderingss
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
