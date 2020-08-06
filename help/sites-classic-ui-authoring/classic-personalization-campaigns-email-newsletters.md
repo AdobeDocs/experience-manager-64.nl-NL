@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: b9618913-5433-4baf-9ff6-490a26860505
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1128'
+ht-degree: 0%
 
 ---
 
 
 # E-mail naar e-mailserviceproviders publiceren{#publishing-an-email-to-email-service-providers}
 
-U kunt nieuwsbrieven aan de e-maildiensten zoals Ingenieur publiceren ExactTarget en Silverpop. In dit document wordt beschreven hoe u AEM configureert om een nieuwsbrief naar deze e-mailservices te publiceren.
+U kunt nieuwsbrieven aan de e-maildiensten zoals Ingenieur publiceren ExactTarget en Silverpop. In dit document wordt beschreven hoe u AEM kunt configureren om een nieuwsbrief naar deze e-mailservices te publiceren.
 
 >[!NOTE]
 >
@@ -35,13 +38,13 @@ Voer de volgende stappen uit om uw e-mail naar het e-mailservicebureau te public
 
 ## Een e-mail maken {#creating-an-email}
 
-Een e-mail of nieuwsbrief die u aan een e-maildienst wilt publiceren kan onder een campagne worden gecreeerd gebruikend het malplaatje van de **Nieuwsbrief** van Geometrixx. U kunt ook de sjabloon **Geometrixx Buiten-e-mail** gebruiken. Voorbeeld-e-mail/nieuwsbrief-gebaseerd op het malplaatje van **Geometrixx Buiten E-mail** is beschikbaar bij `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
+Een e-mail of nieuwsbrief die u aan een e-maildienst wilt publiceren kan onder een campagne worden gecreeerd gebruikend het malplaatje van de **Geometrixx Newsletter** . U kunt ook de E-mailsjabloon **Geometrixx Outdoors** gebruiken. Voorbeeld-e-mail/nieuwsbrief op basis van de sjabloon E-mail **Geometrixx Outdoors** is beschikbaar op `https://<hostname>:<port>/cf#/content/campaigns/geometrixx-outdoors/e-mails.html`.
 
 Een nieuwe e-mail tot stand brengen die aan de gevormde e-maildienst wordt gepubliceerd:
 
 1. Ga naar **Websites** en dan **Campagnes**. Selecteer een campagne.
 1. Klik op **Nieuw** om het venster **Pagina** maken te openen.
-1. Voer de titel, naam en selecteer de sjabloon **Geometrixx Newsletter** in de lijst met beschikbare sjablonen.
+1. Voer de titel, naam en selecteer de sjabloon **Geometrixx-nieuwsbrief** in de lijst met beschikbare sjablonen.
 1. Klik op **Maken**.
 1. Open het gemaakte e-mailbericht.
 1. Schakel over naar de ontwerpmodus om de componenten te selecteren die u wilt weergeven in het hulpgedeelte.
@@ -108,7 +111,8 @@ De **component E-mailgereedschappen** voor ExactTarget kan meer e-mailfunctional
 >* De URL&#39;s in de e-mailprogramma&#39;s worden alleen vervangen (in de ontvangen e-mail) door de werkelijke waarden wanneer een e-mailbericht wordt verzonden met de functie **Eenvoudig verzenden** of **Met instructies verzenden** , maar niet met de functie Verzenden **** testen.
    >
    >
-* Twee van de e-mailprogramma&#39;s zijn vereist: Fysiek **mailadres (vereist)** en **Profielcentrum (vereist)**. Wanneer e-mail aan ExactTarget wordt gepubliceerd, worden deze twee e-mail-hulpmiddelen toegevoegd aan de bodem van elke post door gebrek.
+* Twee van de e-mailprogramma&#39;s zijn vereist: **Fysiek mailadres (vereist)** en **Profielcentrum (vereist)**. Wanneer e-mail aan ExactTarget wordt gepubliceerd, worden deze twee e-mail-hulpmiddelen toegevoegd aan de bodem van elke post door gebrek.
+
 >
 
 
@@ -151,7 +155,7 @@ E-mails/nieuwsbrieven kunnen aan uw E-maildienst worden gepubliceerd door deze s
 
    ![chlimage_1-6](assets/chlimage_1-6.jpeg)
 
-   Als dit gelukt is, bevestigt AEM dat u de e-mail kunt weergeven in ExactTarget of Silverpop Engage.
+   AEM bevestigt dat u de e-mail kunt weergeven in ExactTarget of Silverpop Engage.
 
    In het geval van ExactTarget kan de gepubliceerde e-mail zijn weergegeven door op Gepubliceerde e-mail **** weergeven te klikken. Dit neemt u rechtstreeks aan de gepubliceerde nieuwsbrief in ExactTarget ([https://members.exacttarget.com/](https://members.exacttarget.com/).).
 
@@ -159,7 +163,7 @@ E-mails/nieuwsbrieven kunnen aan uw E-maildienst worden gepubliceerd door deze s
 >
 >Als een e-mail/nieuwsbrief met dezelfde naam wordt gepubliceerd als een e-mail/nieuwsbrief die reeds is gepubliceerd, wordt de eerdere e-mail/nieuwsbrief niet vervangen. In plaats daarvan wordt een nieuwe e-mail/nieuwsbrief met dezelfde naam gemaakt (de id&#39;s van twee nieuwsbrieven zijn echter anders).
 >
->Als u de e-mail/nieuwsbrief naar de e-mailserviceprovider publiceert, wordt de e-mail/nieuwsbrief ook naar de publicatie-instantie van AEM gepubliceerd.
+>Als u de e-mail/nieuwsbrief naar de e-mailserviceprovider publiceert, wordt ook de e-mail/nieuwsbrief naar de AEM-publicatie-instantie gepubliceerd.
 
 
 ### Een gepubliceerde e-mail bijwerken {#updating-a-published-e-mail}
