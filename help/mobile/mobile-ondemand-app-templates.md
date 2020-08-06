@@ -1,8 +1,8 @@
 ---
 title: Sjablonen en componenten maken en toevoegen
 seo-title: Sjablonen en componenten maken en toevoegen
-description: Volg deze pagina voor meer informatie over het maken en toevoegen van sjablonen en componenten aan uw app. De pagina gebruikt Geometrixx Unlimited App als de app die een voorbeeld-app-sjabloon en paginasjablonen bevat.
-seo-description: Volg deze pagina voor meer informatie over het maken en toevoegen van sjablonen en componenten aan uw app. De pagina gebruikt Geometrixx Unlimited App als de app die een voorbeeld-app-sjabloon en paginasjablonen bevat.
+description: Volg deze pagina voor meer informatie over het maken en toevoegen van sjablonen en componenten aan uw app. De pagina gebruikt de Geometrixx Unlimited-app als de app die een voorbeeld-app-sjabloon en paginasjablonen bevat.
+seo-description: Volg deze pagina voor meer informatie over het maken en toevoegen van sjablonen en componenten aan uw app. De pagina gebruikt de Geometrixx Unlimited-app als de app die een voorbeeld-app-sjabloon en paginasjablonen bevat.
 uuid: 3a93017c-8094-413f-a01c-9b72025a2b20
 contentOwner: User
 content-type: reference
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: ec4ada04-e429-4ad4-a060-2dccac847cf0
 translation-type: tm+mt
 source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
+workflow-type: tm+mt
+source-wordcount: '1198'
+ht-degree: 0%
 
 ---
 
@@ -18,11 +21,11 @@ source-git-commit: e9a322b73631e6cc48446ef44cda824dfbe4ea63
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 AEM Mobile On-Demand biedt een volledig geconfigureerde toepassingssjabloon, een artikelsjabloon en artikelcomponenten.
 
-De wij.Unlimited App is een steekproefmalplaatje dat shell van een volledig configureerbare en handelbare mobiele toepassing AEM op bestelling vertegenwoordigt.
+We.Unlimited App is een voorbeeldsjabloon die de shell van een volledig configureerbare en beheerbare AEM Mobile On-Demand-toepassing vertegenwoordigt.
 
 Als u deze voorbeeldsjabloon selecteert wanneer u een nieuwe app maakt, beschikt u over een dashboard met uitgebreide AEM Mobile-functies.
 
@@ -30,26 +33,26 @@ Als u deze voorbeeldsjabloon selecteert wanneer u een nieuwe app maakt, beschikt
 
 >[!NOTE]
 >
->Raadpleeg het [AEM Mobile Application Dashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)voor informatie over het beheer van uw toepassing en mobiele toepassingsinhoud vanuit het AEM Mobile Apps Control Center.
+>Raadpleeg het [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)voor informatie over uw toepassing en inhoud van mobiele apps vanuit AEM Mobile Apps Control Center.
 
 ## App-sjablonen maken {#creating-app-templates}
 
 Een App-sjabloon wordt gebruikt om een nieuwe app te maken en fungeert als een verzameling paginasjablonen en -componenten die een basislijn of basis van een app vormen. De sjabloon stempelt enkele fundamentele eigenschappen uit om de app op de juiste manier te leiden. Over het algemeen zou een klant niet te veel apps maken.
 
-App-sjablonen bieden een eenvoudige manier om gebruik te maken van bestaande ontwerpen die zijn gemaakt door ontwikkelaars en die worden gebruikt voor het maken van nieuwe apps in AEM.
+Toepassingssjablonen bieden een eenvoudige manier om gebruik te maken van bestaande ontwerpen die door ontwikkelaars zijn gemaakt en die worden gebruikt voor het maken van nieuwe apps in AEM.
 
 Wanneer u een nieuwe app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
 
 Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 
-1. Ga naar de AEM Mobile-app-catalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
+1. Ga naar de AEM Mobile-toepassingscatalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
 1. Selecteer **Maken** —> **App** zoals hieronder wordt weergegeven
 
 Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Zie Handelingen voor [inhoudsbeheer voor meer informatie over het opnieuw bezoeken, maken van artikelen, banners en verzamelingen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
 >[!NOTE]
 >
->U kunt ook een voorbeeld-app-sjabloon selecteren, bijvoorbeeld **We.Unlimited** -app, die u ontvangt van een AEM-ontwikkelaar. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
+>U kunt ook een voorbeeldsjabloon voor de app selecteren, bijvoorbeeld **We.Unlimited** , die u ontvangt van een AEM ontwikkelaar. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
 
 >[!CAUTION]
 >
@@ -64,14 +67,14 @@ Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en ver
 
 ## Inhoudssjablonen maken {#creating-content-templates}
 
-Elk eenheidstype heeft twee out-of-the-box malplaatjes. Dit zijn:
+Elk eenheidstype heeft twee out-of-the-box malplaatjes. Deze zijn:
 
-* **** Standaardsjablonen: gebruikt voor het maken van inhoud met de toepasselijke standaardeigenschappen/structuur
-* **** Geïmporteerde sjablonen: gebruikt voor het importeren van inhoud van AEM Mobile met de toepasselijke standaardeigenschappen/structuur
+* **Standaardsjablonen:** gebruikt voor het maken van inhoud met de toepasselijke standaardeigenschappen/structuur
+* **Geïmporteerde sjablonen:** gebruikt voor het importeren van inhoud uit AEM Mobile met de toepasselijke standaardeigenschappen/structuur
 
 ### Artikelsjablonen {#article-templates}
 
-Het onbeperkte artikel is een voorbeeldsjabloon die een typische AEM Mobile On-Demand-artikellay-out vertegenwoordigt.
+Het artikel Onbeperkt is een voorbeeldsjabloon die een gebruikelijke lay-out van AEM Mobile On-Demand-artikelen vertegenwoordigt.
 
 1. Klik op **+** in **Artikelen** beheren om een nieuw artikel te maken. U kunt een **Onbeperkt artikel** of een **RTF-artikel** kiezen. In de onderstaande afbeelding ziet u de optie waarmee u een van deze twee artikelsjablonen kunt kiezen.
 
@@ -86,7 +89,7 @@ Het onbeperkte artikel is een voorbeeldsjabloon die een typische AEM Mobile On-D
 
 ### Componenten toevoegen aan artikel {#adding-components-to-article}
 
-Nadat een auteur is gemaakt, kan hij of zij de inhoud van een artikel bewerken door componenten zoals tekst en afbeeldingen toe te voegen. Artikelen zijn een uitbreiding van AEM-paginasjablonen.
+Nadat een auteur is gemaakt, kan hij of zij de inhoud van een artikel bewerken door componenten zoals tekst en afbeeldingen toe te voegen. Artikelen zijn een uitbreiding van AEM paginasjablonen.
 
 Selecteer een artikel dat u wilt bewerken en klik op **Bewerken** om componenten aan het artikel toe te voegen.
 
@@ -98,15 +101,15 @@ Kies &#39;**+**&#39; in het linkerdeelvenster om componenten aan uw artikel toe 
 
 ### Sjablonen voor gebruik buiten de box maken {#creating-out-of-the-box-templates}
 
-Er zijn geen out-of-the-box malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanemalplaatjes zouden moeten uitbreiden, zie de malplaatjesteekproef [van het](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)Artikel van de Onbeperkte app van Geometrixx.
+Er zijn geen out-of-the-box de Malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanesjablonen zouden moeten uitbreiden, zie de malplaatjesteekproef [van het](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)Artikel van de Geometrixx Unlimited App.
 
-De belangrijkste eigenschappen buiten de normale vereiste eigenschappen van het AEM malplaatje omvatten;
+De belangrijkste eigenschappen buiten de normale AEM vereiste eigenschappen omvatten;
 
 ***dps-resourceType=&quot;dps:Article&quot;***
 
-Deze eigenschap zorgt ervoor dat de AEM-pagina wordt herkend als een doelpagina voor artikel met AEM Mobile.
+Deze eigenschap zorgt ervoor dat de AEM pagina wordt herkend als een voor AEM Mobile bedoelde artikelpagina.
 
-Net als voor AEM-sjablonen kunt u standaardeigenschappen of onderliggende knooppunten toevoegen aan de ***jcr:content*** van de sjabloon.
+Net als AEM sjablonen kunt u standaardeigenschappen of onderliggende knooppunten toevoegen aan de ***jcr:content*** van de sjabloon.
 
 ### Banner- en verzamelingssjablonen {#banner-and-collection-templates}
 
@@ -125,11 +128,11 @@ Een eenvoudige component is inbegrepen in de codebewaarplaats, waarvan de bron i
 >Er zijn momenteel geen out-of-the-box-componenten beschikbaar voor AEM Mobile.
 
 
-U kunt componenten aan uw pagina toevoegen. Elke component kan in een AEM Mobile-app worden gebruikt, maar wordt bij toepassing mogelijk niet correct gerenderd.
+U kunt componenten aan uw pagina toevoegen. Elke component kan in een AEM Mobile-toepassing worden gebruikt, maar bij toepassing wordt de rendering mogelijk niet correct uitgevoerd.
 
-Aangepaste componenten kunnen echter niet correct worden geëxporteerd en geüpload naar AEM Mobile On-Demand Services zonder een aangepaste handler voor het synchroniseren van exportinhoud die in AEM wordt weergegeven.
+Aangepaste componenten kunnen echter niet correct naar AEM Mobile On-demand Services worden geëxporteerd en geüpload zonder een aangepaste handler voor het synchroniseren van exportinhoud die in AEM wordt weergegeven.
 
-Wanneer de component al is opgenomen in een AEM-pagina, samen met enkele andere bouwsteencomponenten, kunt u een andere component aan de pagina toevoegen of een bestaande component bewerken.
+Wanneer de component al op een AEM pagina is opgenomen, kunt u samen met enkele andere bouwsteencomponenten een andere component aan de pagina toevoegen of een bestaande component bewerken.
 
 **Een andere component aan de pagina toevoegen:**
 
@@ -147,11 +150,11 @@ Wanneer de component al is opgenomen in een AEM-pagina, samen met enkele andere 
 
 >[!NOTE]
 >
->U kunt een component tot stand brengen in AEM en het zelfde aanpassen gebruikend het [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Als u de bestaande component naar wens hebt aangepast, kunt u deze aan uw pagina toevoegen met de optie **Bewerken** onder Artikelen **** beheren, zoals in de bovenstaande afbeelding wordt getoond.
+>U kunt een component in AEM creëren en het zelfde aanpassen gebruikend [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Als u de bestaande component naar wens hebt aangepast, kunt u deze aan uw pagina toevoegen met de optie **Bewerken** onder Artikelen **** beheren, zoals in de bovenstaande afbeelding wordt getoond.
 
 >[!NOTE]
 >
->Raadpleeg de [aanbevolen procedures voor het ontwikkelen](/help/mobile/best-practices-aem-mobile.md) van sjablonen en componenten in AEM Mobile.
+>Raadpleeg de [Best Practices for Templates and Components Development](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
 
 ### De volgende stappen {#the-next-steps}
 
