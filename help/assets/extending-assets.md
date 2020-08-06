@@ -4,15 +4,18 @@ description: Leer manieren waarop u Asset Share en Asset Editor kunt aanpassen e
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '261'
+ht-degree: 0%
 
 ---
 
 
 # Elementen aanpassen en uitbreiden {#customizing-and-extending-assets}
 
-De Asset Editor is het belangrijkste toegangspunt waarmee gebruikers van een Adobe Enterprise Manager-website (AEM) de digitale middelen in uw opslagplaats kunnen zoeken, weergeven en bewerken.
+De Asset Editor is het belangrijkste toegangspunt dat gebruikers van een Adobe Enterprise Manager-website (AEM) gebruiken om de digitale middelen in uw opslagplaats te zoeken, weer te geven en te manipuleren.
 
-Als ontwikkelaar van AEM, kunt u de Redacteur van Activa op een aantal manieren aanpassen en uitbreiden, die gebruikers van een specifiek op maat gemaakte interface en een reeks functionaliteit voorstellen.
+Als AEM ontwikkelaar kunt u de Editor van middelen op verschillende manieren aanpassen en uitbreiden, zodat gebruikers een specifiek op maat gemaakte interface en functieset krijgen.
 
 De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd:
 
@@ -33,6 +36,6 @@ De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepa
 
 ## Uitvoeringen aanpassen {#customizing-renditions}
 
-In de terminologie van AEM-activa is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
+In AEM Assets-terminologie is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan een kleurenafbeelding met volledige kleuren bijvoorbeeld een uitvoering in de oorspronkelijke grootte hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
 
 De uitvoeringen waarin een bepaald element beschikbaar is, kunnen worden aangepast en nieuwe uitvoeringen worden gemaakt.
