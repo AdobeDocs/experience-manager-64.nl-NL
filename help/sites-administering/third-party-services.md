@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: e0d6478a-4420-46a6-96fe-082a30ee82f0
 translation-type: tm+mt
 source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+workflow-type: tm+mt
+source-wordcount: '339'
+ht-degree: 0%
 
 ---
 
 
 # Integreren met services van derden{#integrating-with-third-party-services}
 
-Met AEM, kunt u met de volgende niet-Adobe producten uit de doos integreren:
+Met AEM, kunt u met de volgende niet Adobe producten uit de doos integreren:
 
 * Amazon SNS-verbinding - Amazon-webservices
 * BrightStor Content Optimizer - inhoud geoptimaliseerd voor zoekopdrachten
@@ -31,13 +34,13 @@ Met AEM, kunt u met de volgende niet-Adobe producten uit de doos integreren:
 * Twitter - sociale netwerken
 * YouTube - video delen
 
-Daarnaast kunt u AEM integreren met de [marketingcloud](/help/sites-administering/marketing-cloud.md) en met [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
+Bovendien kunt u AEM met de [Marketing Cloud](/help/sites-administering/marketing-cloud.md) en met de [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)integreren.
 
 ## Integratie met Salesforce {#integrating-with-salesforce}
 
 Salesforce.com is het bedrijf voor cloud computing op bedrijfsniveau dat de overstap naar de sociale onderneming leidt.
 
-Zie [Integratie met Salesforce](/help/sites-administering/salesforce.md)voor informatie over de integratie van uw AEM-site en Salesforce.
+Zie [Integratie met Salesforce](/help/sites-administering/salesforce.md)voor informatie over het integreren van uw AEM en Salesforce.
 
 ## Integreren met Silverpop Engage {#integrating-with-silverpop-engage}
 
@@ -47,17 +50,17 @@ Zie [Integratie met Salesforce](/help/sites-administering/salesforce.md)voor inf
 
 Silverpop Engage biedt marketingautomatisering, e-mail, mobiele en sociale mogelijkheden.
 
-Voor informatie over het integreren van uw plaats AEM en ExactTarget, zie het [Integreren met de Ingenieur](/help/sites-administering/silverpop.md)Silverpop.
+Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie het [Integreren met de Ingenieur](/help/sites-administering/silverpop.md)Silverpop.
 
 ## Integreren met ExactTarget {#integrating-with-exacttarget}
 
-Met de e-mailmarketingoplossingen van ExactTarget kunnen organisaties van elke omvang zeer gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes ontwerpen en leveren.
+De e-mailmarketingoplossingen van ExactTarget stellen organisaties van elke omvang in staat om gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes te ontwerpen en te leveren.
 
-Voor informatie over het integreren van uw plaats AEM en ExactTarget, zie het [Vormen ExactTarget](/help/sites-administering/exacttarget.md).
+Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie het [Vormen ExactTarget](/help/sites-administering/exacttarget.md).
 
 ## Integratie met Facebook en Twitter {#integrating-with-facebook-and-twitter}
 
-Facebook en Twitter zijn populaire sociale netwerkservices. Dankzij de integratie van AEM met Facebook en Twitter kunnen organisaties een aanmeldingsoptie voor Facebook of Twitter voor digitale eigenschappen in eigendom aanbieden en vervolgens de gebruikerservaring aanpassen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
+Facebook en Twitter zijn populaire sociale netwerkservices. AEM integratie met Facebook en Twitter stelt organisaties in staat een aanmeldingsoptie voor Facebook of Twitter in te voeren voor digitale eigenschappen die in eigendom zijn en de gebruikerservaring aan te passen op basis van profielgegevens. Marketers kunnen ook profielgegevens combineren met gegevens uit aanvullende bronnen, zoals een systeem voor klantenrelatiebeheer of een websiteprofiel, om een uniforme weergave van de klant te maken.
 
 Zie [Sociale aanmelding](/help/communities/social-login.md) voor meer informatie.
 
