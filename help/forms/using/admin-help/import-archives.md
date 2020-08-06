@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: b6f6463a-2ae4-43d2-8d16-cc20a954e50e
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1465'
+ht-degree: 0%
 
 ---
 
@@ -26,7 +29,7 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
 1. Klik op Bladeren om het te importeren archief te zoeken en klik vervolgens op Voorvertoning.
 1. Controleer de lijst met bronnen en objecten die samen met het archief worden geïnstalleerd. Zorg ervoor dat er geen conflicten zijn met bestaande bronnen, objecten en serviceconfiguraties omdat er geen mogelijkheden voor ongedaan maken beschikbaar zijn.
 
-   Als u selecteert om de de dienstconfiguraties in te voeren, voert AEM alle dossiers van de procesconfiguratie (eindpunten, veiligheidsprofielen, en de parameters van de de dienstconfiguratie) in die door de processen in LCA worden gebruikt.
+   Als u selecteert om de de dienstconfiguraties in te voeren, AEM vormen invoer alle dossiers van de procesconfiguratie (eindpunten, veiligheidsprofielen, en de parameters van de de dienstconfiguratie) die door de processen in LCA worden gebruikt.
 
 1. Klik op Importeren.
 1. Controleer de resultaten bij importeren en klik op Configuratie overslaan om het importproces te voltooien of klik op Configureren om het archief te configureren.
@@ -47,51 +50,51 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.
 
-1. Klik op Volgende.
+1. Klik op Next.
 1. Als een proces of de dienst in LCA configuratieparameters heeft, vormt een pagina van Parameters, waar u de de dienstparameters vormt en daarna klikt.
 1. Breng op de pagina Beveiligingsprofiel configureren alle wijzigingen aan die u nodig hebt:
 
-   * **** Vereisen bezoekers om voor authentiek te verklaren: Deze instelling geeft aan of de service met of zonder referenties kan worden aangeroepen.
+   * **Vereisen bezoekers om voor authentiek te verklaren:** Deze instelling geeft aan of de service met of zonder referenties kan worden aangeroepen.
 
       Als de *Bezoekers momenteel worden vereist voor authentiek te verklaren* wordt getoond, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders wordt de oproeping geweigerd . Om de behoefte te verwijderen om voor authentiek te verklaren, staat de klik Niet voor authentiek verklaarde Bezoekers toe.
 
       Als de *Bezoekers niet worden vereist voor authentiek te verklaren* wordt getoond, moet de bezoeker van de dienst niet voor authentiek worden verklaard. De aanroeping van de dienst zal altijd slagen omdat er geen vergunningscontrole is. Om authentificatie te vereisen, vereist de klik Bezoekers om voor authentiek te verklaren.
 
-   * **** Uitvoeren als: Specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
+   * **Uitvoeren als:** Specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
 
-      **** Niet opgegeven: Het standaardgedrag wordt gebruikt.
+      **Niet opgegeven:** Het standaardgedrag wordt gebruikt.
 
-      **** Invoker: Gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
+      **Invoker:** Gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
 
-      **** Systeem: De service wordt uitgevoerd met volledige rechten. Dit is de standaardinstelling voor langlevende processen.
+      **Systeem:** De service wordt uitgevoerd met volledige rechten. Dit is de standaardinstelling voor langlevende processen.
 
-      **** Benoemde gebruiker: Laat u toe om de dienst als specifieke gebruiker in werking te stellen. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven, waar u naar de gebruiker kunt zoeken en deze kunt selecteren.
+      **Benoemde gebruiker:** Laat u toe om de dienst als specifieke gebruiker in werking te stellen. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven, waar u naar de gebruiker kunt zoeken en deze kunt selecteren.
 
    * Als u een principal aan het beveiligingsprofiel wilt toevoegen, klikt u op Afbeelding toevoegen en selecteert u de gebruiker of groep die u als principal wilt toevoegen. Klik daarna en selecteer dan de toestemmingen u aan dit hoofd wilt toewijzen:
 
-      **** INVOKE_PERM: Om alle verrichtingen op de dienst aan te halen
+      **INVOKE_PERM:** Om alle verrichtingen op de dienst aan te halen
 
-      **** MODIFY_CONFIG_PERM: Om de configuratie van de dienst te wijzigen
+      **MODIFY_CONFIG_PERM:** Om de configuratie van de dienst te wijzigen
 
-      **** SUPERVISOR_PERM: Om de gegevens van de procesinstantie voor de dienst te bekijken die van een proces wordt gecreeerd
+      **SUPERVISOR_PERM:** Om de gegevens van de procesinstantie voor de dienst te bekijken die van een proces wordt gecreeerd
 
-      **** START_STOP_PERM: Om de dienst te beginnen en te stoppen
+      **START_STOP_PERM:** Om de dienst te beginnen en te stoppen
 
-      **** ADD_REMOVE_ENDPOINTS_PERM: Om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
+      **ADD_REMOVE_ENDPOINTS_PERM:** Om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
 
-      **** CREATE_VERSION_PERM: Een nieuwe versie van de service maken
+      **CREATE_VERSION_PERM:** Een nieuwe versie van de service maken
 
-      **** DELETE_VERSION_PERM: Een versie van de service verwijderen
+      **DELETE_VERSION_PERM:** Een versie van de service verwijderen
 
-      **** MODIFY_VERSION_PERM: Om een versie van de dienst te wijzigen
+      **MODIFY_VERSION_PERM:** Om een versie van de dienst te wijzigen
 
-      **** READ_PERM: De service weergeven
+      **READ_PERM:** De service weergeven
 
       Klik op Voltooid om de principal aan het beveiligingsprofiel toe te voegen.
 
 1. Klik Voltooid om de configuratie te voltooien.
 
-## AEM-formulieren configureren die deel uitmaken van een archiefbestand {#configure-the-aem-forms-that-are-part-of-an-archive-file}
+## De AEM formulieren configureren die deel uitmaken van een archiefbestand {#configure-the-aem-forms-that-are-part-of-an-archive-file}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Toepassingsbeheer en klik op het tabblad Archieven.
 1. Selecteer op de pagina Archiefbeheer het archiefbestand dat u wilt configureren.
@@ -114,45 +117,45 @@ Met het tabblad Archieven kunt u LCA&#39;s importeren en beheren die in Workbenc
    * Om een REST eindpunt toe te voegen, voegt de klik REST toe en specificeert een naam en een beschrijving voor het eindpunt. Noteer de URL voor de aanroep van REST die wordt weergegeven op de pagina REST Endpoint toevoegen.
    * Als u een eindpunt wilt verwijderen, schakelt u het selectievakje naast het eindpunt in en klikt u op Verwijderen.
 
-1. Klik op Volgende.
+1. Klik op Next.
 1. Als een proces of de dienst in LCA configuratieparameters heeft, vormt een pagina van Parameters, waar u de de dienstparameters vormt en daarna klikt.
 1. Op de Configure pagina van het Profiel van de Veiligheid, kunt u om het even welke veranderingen aanbrengen die u vereist:
 
-   * **** Vereisen bezoekers om voor authentiek te verklaren: Deze instelling geeft aan of de service met of zonder referenties kan worden aangeroepen.
+   * **Vereisen bezoekers om voor authentiek te verklaren:** Deze instelling geeft aan of de service met of zonder referenties kan worden aangeroepen.
 
       Als de *Bezoekers momenteel worden vereist voor authentiek te verklaren* wordt getoond, moet de bezoeker van de dienst voor authentiek worden verklaard en het gebruikershoofd voor die bezoeker moet worden gemachtigd om de dienst aan te halen; anders wordt de oproeping geweigerd . Om de behoefte te verwijderen om voor authentiek te verklaren, staat de klik Niet voor authentiek verklaarde Bezoekers toe.
 
       Als de *Bezoekers niet worden vereist voor authentiek te verklaren* wordt getoond, kan de bezoeker van de dienst of niet voor authentiek worden verklaard. De aanroeping van de dienst zal altijd slagen omdat er geen vergunningscontrole is. Om authentificatie te vereisen, vereist de klik Bezoekers om voor authentiek te verklaren.
 
-   * **** Uitvoeren als: Specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
+   * **Uitvoeren als:** Specificeert runtime identiteit die door de dienst wordt gebruikt nadat het is aangehaald. Klik op Wijzigen om deze optie te wijzigen. Kies een van de volgende opties:
 
-      **** Niet opgegeven: Het standaardgedrag wordt gebruikt.
+      **Niet opgegeven:** Het standaardgedrag wordt gebruikt.
 
-      **** Invoker: Gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
+      **Invoker:** Gebruikt de zelfde identiteit zoals de gebruiker die de dienst aanhaalde.
 
-      **** Systeem: De service wordt uitgevoerd met volledige rechten. Dit is de standaardinstelling voor langlevende processen.
+      **Systeem:** De service wordt uitgevoerd met volledige rechten. Dit is de standaardinstelling voor langlevende processen.
 
-      **** Benoemde gebruiker: Laat u toe om de dienst als specifieke gebruiker in werking te stellen. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven, waar u naar de gebruiker kunt zoeken en deze kunt selecteren.
+      **Benoemde gebruiker:** Laat u toe om de dienst als specifieke gebruiker in werking te stellen. Dit is de standaardinstelling voor kortstondige processen. Wanneer u deze optie selecteert, klikt u op Gebruiker selecteren om de pagina Afzonderlijk kapitaal selecteren weer te geven, waar u naar de gebruiker kunt zoeken en deze kunt selecteren.
 
    * Als u een principal aan het beveiligingsprofiel wilt toevoegen, klikt u op Afbeelding toevoegen en selecteert u de gebruiker of groep die u als principal wilt toevoegen. Klik daarna en selecteer dan de toestemmingen u aan dit hoofd wilt toewijzen:
 
-      **** INVOKE_PERM: Om alle verrichtingen op de dienst aan te halen
+      **INVOKE_PERM:** Om alle verrichtingen op de dienst aan te halen
 
-      **** MODIFY_CONFIG_PERM: Om de configuratie van de dienst te wijzigen
+      **MODIFY_CONFIG_PERM:** Om de configuratie van de dienst te wijzigen
 
-      **** SUPERVISOR_PERM: Om de gegevens van de procesinstantie voor de dienst te bekijken die van een proces wordt gecreeerd
+      **SUPERVISOR_PERM:** Om de gegevens van de procesinstantie voor de dienst te bekijken die van een proces wordt gecreeerd
 
-      **** START_STOP_PERM: Om de dienst te beginnen en te stoppen
+      **START_STOP_PERM:** Om de dienst te beginnen en te stoppen
 
-      **** ADD_REMOVE_ENDPOINTS_PERM: Om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
+      **ADD_REMOVE_ENDPOINTS_PERM:** Om, eindpunten voor de dienst toe te voegen te verwijderen en te wijzigen
 
-      **** CREATE_VERSION_PERM: Een nieuwe versie van de service maken
+      **CREATE_VERSION_PERM:** Een nieuwe versie van de service maken
 
-      **** DELETE_VERSION_PERM: Een versie van de service verwijderen
+      **DELETE_VERSION_PERM:** Een versie van de service verwijderen
 
-      **** MODIFY_VERSION_PERM: Om een versie van de dienst te wijzigen
+      **MODIFY_VERSION_PERM:** Om een versie van de dienst te wijzigen
 
-      **** READ_PERM: De service weergeven
+      **READ_PERM:** De service weergeven
 
       Klik op Voltooid om de principal aan het beveiligingsprofiel toe te voegen.
 
