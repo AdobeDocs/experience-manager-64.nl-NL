@@ -380,7 +380,7 @@ Het vereiste LiveCycle-proces dat het e-mailserviceproces mogelijk maakt.
 
 1. Klik op **[!UICONTROL Import]**.
 
-#### Het toevoegen van ServiceName aan de Op de lijst met gewenste personen gestane lijst van de Dienst {#adding-servicename-to-the-allowlisted-service-list}
+#### Het toevoegen van ServiceName aan de Toegevoegde op lijst van gewenste personen lijst van de Dienst {#adding-servicename-to-the-allowlisted-service-list}
 
 Vermelding in de AEM server de diensten van de LiveCycle u tot de AEM server wilt toegang hebben.
 
