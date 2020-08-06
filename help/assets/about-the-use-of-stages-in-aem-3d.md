@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 7b9d3b81-3bb4-4ca6-b6e1-f9adfb455855
 translation-type: tm+mt
 source-git-commit: 9cc06c16122b98146c51ac61d7fa27553a9d971e
+workflow-type: tm+mt
+source-wordcount: '171'
+ht-degree: 0%
 
 ---
 
@@ -21,8 +24,8 @@ Fases zijn lichte 3D-scènebestanden die de standaardweergaveomgeving (lichten, 
 
 >[!NOTE]
 >
->De **[!UICONTROL OBJ 3D]** -indeling ondersteunt geen lichten. Daarom kan het niet worden gebruikt om fasen aan AEM 3D te verstrekken.
+>De **[!UICONTROL OBJ 3D]** indeling ondersteunt geen lichten. Daarom kan het niet worden gebruikt om stadia aan AEM 3D te verstrekken.
 
 De bestandsindeling van het werkgebied bepaalt welke renderer u met dat werkgebied kunt gebruiken. Als Autodesk® Maya® bijvoorbeeld wordt gebruikt voor renderen van hoge kwaliteit, moet het werkgebied een indeling `.ma` `.mb` of indeling hebben. Als u alleen de standaard Rapid Refine™-renderer wilt gebruiken, is elke ondersteunde bestandsindeling voor het werkgebied acceptabel.
 
-Alle renderinstellingen in AEM 3D, behalve het type en de grootte van de uitvoerafbeelding, moeten vooraf worden geconfigureerd en in het werkgebiedbestand worden opgeslagen voordat ze naar AEM worden geüpload.
+Alle renderinstellingen in AEM 3D, behalve het type en de grootte van de uitvoerafbeelding, moeten vooraf zijn geconfigureerd en in het werkgebiedbestand worden opgeslagen voordat ze worden geüpload naar AEM.
