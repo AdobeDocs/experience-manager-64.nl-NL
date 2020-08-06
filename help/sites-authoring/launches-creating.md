@@ -12,6 +12,9 @@ discoiquuid: 4ec6b408-a165-4617-8d90-e89d8a415bb3
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1008'
+ht-degree: 14%
 
 ---
 
@@ -24,7 +27,7 @@ Maak een lancering om het bijwerken van een nieuwe versie van bestaande Web-pagi
 * De onderliggende pagina&#39;s van de bronpagina worden standaard in de opstart opgenomen. U kunt desgewenst alleen de bronpagina gebruiken.
 * Standaard worden de startpagina&#39;s automatisch bijgewerkt door [Live Copy](/help/sites-administering/msm.md) . U kunt opgeven dat er een statische kopie wordt gemaakt om automatische wijzigingen te voorkomen.
 
-U kunt desgewenst de datum **(en de tijd) van** start opgeven om te bepalen wanneer de startpagina&#39;s moeten worden bevorderd en geactiveerd. Nochtans werkt de Datum **van de** Lancering slechts in combinatie met de Klaar **vlag van de** Productie (zie het [Uitgeven van een Configuratie](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)van de Lancering); voor de acties om automatisch te voorkomen, moeten beide worden geplaatst.
+U kunt desgewenst de **Startdatum** (en -tijd) opgeven om te bepalen wanneer de startpagina&#39;s moeten worden gepromoveerd en geactiveerd. De **startdatum** werkt echter alleen in combinatie met de markering **Geschikt voor productie** (zie [Een startconfiguratie bewerken](/help/sites-authoring/launches-editing.md#editing-a-launch-configuration)). Opdat de acties automatisch zouden optreden, moeten beide worden ingesteld.
 
 ## Starten maken {#creating-a-launch}
 
@@ -40,14 +43,15 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    * **Lanceringen**:
 
-      1. Selecteer **Starten** maken op de werkbalk om de wizard te openen.
+      1. Select **Create Launch** from the toolbar to open the wizard.
    * **Sites**:
 
-      1. Selecteer **Maken** op de werkbalk om het selectievak te openen.
+      1. Select **Create** from the toolbar to open the selection box.
       1. Selecteer vervolgens Starten **maken** om de wizard te openen.
+
    >[!NOTE]
    >
-   >In de **Sites** -console kunt u ook de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) gebruiken om een pagina te selecteren voordat u **Maken** selecteert.
+   >In de **Sites**-console kunt u ook de [selectiemodus](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) gebruiken om een pagina te selecteren voordat u **Maken** selecteert.
    >
    >Hiermee gebruikt u de geselecteerde pagina als de eerste bronpagina.
 
@@ -55,6 +59,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
 
    * Navigeer naar de gewenste locatie.
    * Selecteer de bronpagina(&#39;s) en bevestig (vinkje).
+
    Herhaal deze bewerking zo nodig.
 
    ![chlimage_1-225](assets/chlimage_1-225.png)
@@ -70,6 +75,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
    * **Inclusief subpagina**&#39;s:
 
       * Geef op of u de opstart wilt maken met of zonder de onderliggende pagina&#39;s.  Deze subpagina&#39;s worden standaard opgenomen.
+
    Ga verder met **Volgende**.
 
    ![chlimage_1-226](assets/chlimage_1-226.png)
@@ -84,6 +90,7 @@ U kunt een lancering van of Sites of de console van Lanceringen tot stand brenge
       Deze optie is standaard geselecteerd.
 
    * **Startdatum**: de datum en het tijdstip waarop de lanceerkopie moet worden geactiveerd (afhankelijk van de markering **Productie gereed** ; zie [Launches - de Orde van Gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events)).
+
    ![chlimage_1-227](assets/chlimage_1-227.png)
 
 1. Gebruik **Maken** om het proces te voltooien en een nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
@@ -131,7 +138,7 @@ Door een geneste opstart te maken (opstart binnen een opstart) kunt u een opstar
 Het maken van een geneste opstart vanuit de **Launches** -console is in principe hetzelfde als het maken van een andere opstartafbeelding, met uitzondering dat u naar de opstartaftakking moet navigeren `/content/launches`:
 
 1. Selecteer in de **Launches** -console **Maken**.
-1. Selecteer Pagina&#39;s **** toevoegen en navigeer naar de startvertakking door `/content/launches` in het filter op te geven. Selecteer de vereiste start en bevestig met **Selecteren**:
+1. Selecteer **Pagina&#39;s toevoegen** en ga naar de startvertakking door `/content/launches` in het filter op te geven. Selecteer de vereiste start en bevestig dit met **Selecteren**:
 
    ![chlimage_1-230](assets/chlimage_1-230.png)
 
@@ -144,13 +151,13 @@ Het maken van een geneste opstart vanuit de **Launches** -console is in principe
 Een geneste start maken via de **Sites** -console op basis van een bestaande introductie:
 
 1. Heb toegang tot de [Lancering van Verwijzingen (de console van Plaatsen)](/help/sites-authoring/launches.md#launches-in-references-sites-console) om de beschikbare acties te tonen.
-1. Selecteer Starten **** maken om de wizard te openen (aangezien de bron al is geselecteerd, slaat deze de stap Bron **** selecteren over).
+1. Selecteer **Start maken** om de wizard te openen (aangezien de bron al is geselecteerd, wordt de stap **Bron selecteren** overgeslagen).
 
 1. Voer de **opstarthandleiding** en alle andere vereiste gegevens in (zoals bij een normale opstart).
 
 1. Gebruik **Maken** om het proces te voltooien en een nieuwe start te maken. In het bevestigingsvenster wordt u gevraagd of u het programma direct wilt starten.
 
-   Als u **Gereed** selecteert, wordt u teruggestuurd naar de **References** -rail van de **Sites** -console. Als u de juiste pagina selecteert, wordt de nieuwe startpagina weergegeven.
+   Als u **Gereed** selecteert, keert u terug naar het spoor met **Referenties** van de **Sites**-console. Als u de juiste pagina selecteert, wordt de nieuwe startpagina weergegeven.
 
 ### Een Starten verwijderen {#deleting-a-launch}
 
