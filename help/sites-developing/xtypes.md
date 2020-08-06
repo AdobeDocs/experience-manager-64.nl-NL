@@ -1,8 +1,8 @@
 ---
 title: xtypes gebruiken (klassieke UI)
 seo-title: xtypes gebruiken (klassieke UI)
-description: Meer informatie over alle xtypes die beschikbaar zijn in AEM
-seo-description: Meer informatie over alle xtypes die beschikbaar zijn in AEM
+description: Meer informatie over alle xtypes die beschikbaar zijn bij AEM
+seo-description: Meer informatie over alle xtypes die beschikbaar zijn bij AEM
 uuid: 6497caa4-2f9b-4f21-9023-88d485fd1d78
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '6414'
+ht-degree: 0%
 
 ---
 
 
 # xtypes gebruiken (klassieke UI){#using-xtypes-classic-ui}
 
-Op deze pagina worden alle xtypes beschreven die beschikbaar zijn in Adobe Experience Manager (AEM).
+Deze pagina beschrijft alle xtypes die bij Adobe Experience Manager (AEM) beschikbaar zijn.
 
 In de taal ExtJS, is xtype een symbolische naam die aan een klasse wordt gegeven. U kunt de paragraaf &quot;Component XTypes&quot;van het [Overzicht van ExtJS 2](https://www.sencha.com/learn/overview-of-extjs-2) voor een gedetailleerde verklaring lezen over wat xtype is en hoe het kan worden gebruikt.
 
-Raadpleeg de documentatie bij de [widget-API voor een volledige informatie over alle beschikbare widgets in AEM](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html).
+Raadpleeg de documentatie [van de](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)widget-API voor een volledige informatie over alle beschikbare widgets in AEM.
 
-Om te weten te komen waarin de componenten een bepaalde xtype in AEM worden gebruikt, kunt u de volgende vraag van Xpath in CRXDE gebruiken door &quot;checkbox&quot;met xtype te vervangen dat u geinteresseerd bent in:
+Om te weten te komen waarin de componenten een bepaalde xtype in AEM worden gebruikt, kunt u de volgende vraag Xpath in CRXDE gebruiken door &quot;checkbox&quot;met xtype te vervangen dat u in geinteresseerd bent:
 
 `//element(*, cq:Widget)[@xtype='checkbox']`
 
@@ -35,7 +38,7 @@ Om te weten te komen waarin de componenten een bepaalde xtype in AEM worden gebr
 
 ## xtypes {#xtypes}
 
-Hieronder vindt u een lijst met de beschikbare typen in Adobe Experience Manager:
+Hieronder vindt u een lijst met beschikbare typen in Adobe Experience Manager:
 
 * aantekening
 
@@ -127,7 +130,7 @@ Hieronder vindt u een lijst met de beschikbare typen in Adobe Experience Manager
 
    Het pakket CQ.Ext.chart biedt de mogelijkheid om gegevens te visualiseren met flash-opschriften. Elke grafiek bindt direct aan een CQ.Ext.data.Store toelatend automatische updates van de grafiek. Om de blik en het gevoel van een grafiek te veranderen, zie de [chartStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) en [extraStyle](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.chart.Chart) configuratieopties.
 
-*  selectievakje
+* selectievakje
 
    [CQ.Ext.form.Checkbox](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.Checkbox)
 
@@ -357,7 +360,7 @@ Hieronder vindt u een lijst met de beschikbare typen in Adobe Experience Manager
 
    [CQ.Ext.form.FieldSet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FieldSet)
 
-   Standaardcontainer die wordt gebruikt voor het groeperen van items binnen een [formulier](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel)....
+   Standaardcontainer die wordt gebruikt voor het groeperen van items binnen een [formulier](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.FormPanel). ...
 
 * fileuploaddialogon
 
@@ -505,7 +508,7 @@ Hieronder vindt u een lijst met de beschikbare typen in Adobe Experience Manager
 
    MediaBrowseDialog is een dialoog voor het doorbladeren van de media bibliotheek.
 
-*  menu
+* menu
 
    [CQ.Ext.menu.Menu](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.menu.Menu)
 
@@ -579,7 +582,7 @@ Hieronder vindt u een lijst met de beschikbare typen in Adobe Experience Manager
 
    [CQ.wcm.OfflineImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.OfflineImporter)
 
-   De OfflineImporter is een programma voor het importeren en converteren van Microsoft Word-documenten naar AEM-pagina&#39;s. Met deze functie kan inhoud offline worden bewerkt met een tekstverwerker.
+   De OfflineImporter is een hulpmiddel om de documenten van Microsoft Word in AEM pagina&#39;s in te voeren en om te zetten. Met deze functie kan inhoud offline worden bewerkt met een tekstverwerker.
 
 * eigenaarschap
 
@@ -741,7 +744,7 @@ Hieronder vindt u een lijst met de beschikbare typen in Adobe Experience Manager
 
    [CQ.Ext.Slider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.Slider)
 
-   Schuifregelaar die ondersteuning biedt voor verticale of horizontale oriëntatie, toetsenbordaanpassingen, configureerbare magnetisch uitlijnen, asklikken en animatie. Kan als een item aan elke container worden toegevoegd. Voorbeeld:...
+   Schuifregelaar die ondersteuning biedt voor verticale of horizontale oriëntatie, toetsenbordaanpassingen, configureerbare magnetisch uitlijnen, asklikken en animatie. Kan als een item aan elke container worden toegevoegd. Voorbeeld: ...
 
 * presentatie
 
@@ -869,7 +872,7 @@ Hieronder vindt u een lijst met de beschikbare typen in Adobe Experience Manager
 
    [CQ.Ext.form.TimeField](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.Ext.form.TimeField)
 
-   Biedt een invoerveld voor de tijd met een vervolgkeuzelijst en automatische tijdvalidatie. Voorbeeld:...
+   Biedt een invoerveld voor de tijd met een vervolgkeuzelijst en automatische tijdvalidatie. Voorbeeld: ...
 
 * tip
 
