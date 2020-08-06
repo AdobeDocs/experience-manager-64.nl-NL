@@ -11,17 +11,20 @@ topic-tags: best-practices
 discoiquuid: 3f06f7a1-bdf0-4700-8a7f-1d73151893ba
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '4620'
+ht-degree: 0%
 
 ---
 
 
 # Beste praktijken voor Vragen en het Indexeren{#best-practices-for-queries-and-indexing}
 
-Samen met de overgang aan Oak in AEM 6, werden sommige belangrijke veranderingen aangebracht in de manier dat de vragen en de indexen worden beheerd. Onder Jasje 2 is alle inhoud standaard geïndexeerd en kan deze vrij worden opgevraagd. In eikel moeten indexen handmatig onder het `oak:index` knooppunt worden gemaakt. Een vraag kan zonder een index worden uitgevoerd, maar voor grote datasets, zal het zeer langzaam uitvoeren, of zelfs afbreken.
+Samen met de overgang aan Eak in AEM 6, werden sommige belangrijke veranderingen aangebracht in de manier dat de vragen en de indexen worden beheerd. Onder Jasje 2 is alle inhoud standaard geïndexeerd en kan deze vrij worden opgevraagd. In eikel moeten indexen handmatig onder het `oak:index` knooppunt worden gemaakt. Een vraag kan zonder een index worden uitgevoerd, maar voor grote datasets, zal het zeer langzaam uitvoeren, of zelfs afbreken.
 
 Dit artikel zal schetsen wanneer om indexen tot stand te brengen evenals wanneer zij niet nodig zijn, trucs vermijden gebruikend vragen wanneer zij niet noodzakelijk zijn, en uiteinden voor het optimaliseren van uw indexen en vragen om zo optimaal mogelijk te presteren.
 
-Bovendien, zorg ervoor om de documentatie van het [Eik te lezen over het schrijven van vragen en indexen](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in vragen van het Eak die in overweging moeten worden genomen wanneer het migreren van code van een vorige installatie AEM.
+Bovendien, zorg ervoor om de documentatie van het [Eik te lezen over het schrijven van vragen en indexen](/help/sites-deploying/queries-and-indexing.md). Naast indexen die een nieuw concept in AEM 6 zijn, zijn er syntactische verschillen in vragen van het Eak die in overweging moeten worden genomen wanneer het migreren van code van een vorige AEM installatie.
 
 ## Wanneer moet u query&#39;s gebruiken? {#when-to-use-queries}
 
@@ -35,7 +38,7 @@ Bovendien, wanneer het ontwerpen van een taxonomie, is het belangrijk om te over
 
 ### Zoekopdrachten in componenten {#queries-in-components}
 
-Aangezien de vragen één van de meer belastende verrichtingen op een systeem kunnen zijn AEM, is het een goed idee om hen in uw componenten te vermijden. Als u meerdere query&#39;s hebt uitgevoerd telkens wanneer een pagina wordt gerenderd, kan dit vaak de prestaties van het systeem nadelig beïnvloeden. Er zijn twee strategieën die kunnen worden gebruikt om het uitvoeren van query&#39;s bij het renderen van componenten te voorkomen: het **doorlopen van knooppunten** en het **vooraf instellen van resultaten**.
+Aangezien de vragen één van de meer het belasten verrichtingen op een AEM systeem kunnen zijn, is het een goed idee om hen in uw componenten te vermijden. Als u meerdere query&#39;s hebt uitgevoerd telkens wanneer een pagina wordt gerenderd, kan dit vaak de prestaties van het systeem nadelig beïnvloeden. Er zijn twee strategieën die kunnen worden gebruikt om het uitvoeren van query&#39;s bij het renderen van componenten te voorkomen: **het doorlopen van knooppunten** en het **vooraf instellen van resultaten**.
 
 #### Doorlopende knooppunten {#traversing-nodes}
 
@@ -123,7 +126,7 @@ Lage drempelwaarden instellen voor `oak.queryLimitInMemory` (bijv. 10000) en eik
 
 Dit helpt middelintensieve vragen (d.w.z. te vermijden. niet ondersteund door een index of ondersteund door minder dekkende index). Bijvoorbeeld, zou een vraag die 1 miljoen knopen leest tot verhoogde I/O leiden, en negatief de algemene toepassingsprestaties beïnvloeden. Elke query die vanwege bovenstaande limieten mislukt, moet worden geanalyseerd en geoptimaliseerd.
 
-#### **Na de implementatie**{#post-deployment}
+#### **Na de implementatie** {#post-deployment}
 
 * Controleer de logboeken voor vragen die de grote knoop traversal of grote het geheugenconsumptie van de heap veroorzaken: &quot;
 
@@ -135,14 +138,14 @@ Dit helpt middelintensieve vragen (d.w.z. te vermijden. niet ondersteund door ee
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * De query optimaliseren om het gebruik van heapgeheugen te beperken
 
-Voor AEM 6.0 - 6.2 versies, kunt u de drempel voor knoopsverplaatsing via parameters JVM in het AEM beginmanuscript aanpassen om grote vragen te verhinderen het milieu te overbelasten.
+Voor AEM 6.0 - 6.2 versies, kunt u de drempel voor knoopsverplaatsing via parameters JVM in het AEM startmanuscript aanpassen om grote vragen te verhinderen het milieu te overbelasten.
 
 De aanbevolen waarden zijn:
 
 * `-Doak.queryLimitInMemory=500000`
 * `-Doak.queryLimitReads=100000`
 
-In AEM 6.3, zijn de bovengenoemde 2 parameters preconfigured OOTB, en kunnen via OSGi QueryEngineSettings worden voortgeduurd.
+In AEM 6.3, zijn bovengenoemde 2 parameters preconfigured OOTB, en kunnen via OSGi QueryEngineSettings worden voortgeduurd.
 
 Meer informatie is beschikbaar onder: [https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits](https://jackrabbit.apache.org/oak/docs/query/query-engine.html#Slow_Queries_and_Read_Limits)
 
@@ -150,7 +153,7 @@ Meer informatie is beschikbaar onder: [https://jackrabbit.apache.org/oak/docs/qu
 
 ### Moet ik een index maken? {#should-i-create-an-index}
 
-De eerste vraag die u moet stellen bij het maken of optimaliseren van indexen is of ze echt nodig zijn voor een bepaalde situatie. Als u de vraag in kwestie slechts één of slechts af en toe en bij een off-piek tijd voor het systeem door een partijproces gaat in werking stellen, kan het beter zijn om geen index bij allen tot stand te brengen.
+De eerste vraag die u moet stellen bij het maken of optimaliseren van indexen is of deze echt nodig zijn voor een bepaalde situatie. Als u de vraag in kwestie slechts één of slechts af en toe en bij een off-piek tijd voor het systeem door een partijproces gaat in werking stellen, kan het beter zijn om geen index bij allen tot stand te brengen.
 
 Nadat u een index hebt gemaakt, moet de index ook worden bijgewerkt telkens wanneer de geïndexeerde gegevens worden bijgewerkt. Aangezien dit prestatiesimplicaties voor het systeem draagt, zouden de indexen slechts moeten worden gecreeerd wanneer zij eigenlijk worden vereist.
 
@@ -168,17 +171,17 @@ In het algemeen, wordt het geadviseerd u de indexen van Lucene tenzij er een dwi
 
 ### Solr Indexering {#solr-indexing}
 
-AEM verleent ook steun voor Solr indexeren door gebrek. Dit wordt hoofdzakelijk gebruikt om volledige tekstonderzoek te steunen, maar het kan ook worden gebruikt om om het even welk type van vraag te steunen JCR. Solr moet in overweging worden genomen wanneer de AEM-instanties niet over de CPU-capaciteit beschikken om het aantal query&#39;s af te handelen dat vereist is bij zoekintensieve implementaties, zoals websites met zoekopdrachten, met een groot aantal gelijktijdige gebruikers. Ook, kan Solr in een op crawler gebaseerde benadering worden uitgevoerd om sommige van de geavanceerdere eigenschappen van het platform te gebruiken.
+AEM biedt standaard ook ondersteuning voor Solr-indexering. Dit wordt hoofdzakelijk gebruikt om volledige tekstonderzoek te steunen, maar het kan ook worden gebruikt om om het even welk type van vraag te steunen JCR. Solr zou moeten worden overwogen wanneer de AEM instanties niet de capaciteit van cpu hebben om het aantal vragen te behandelen die in onderzoek intensieve plaatsingen zoals onderzoek gedreven websites met een hoog aantal gezamenlijke gebruikers worden vereist. Ook, kan Solr in een op crawler gebaseerde benadering worden uitgevoerd om sommige van de geavanceerdere eigenschappen van het platform te gebruiken.
 
-Solr-indexen kunnen worden geconfigureerd om ingesloten op de AEM-server te worden uitgevoerd voor ontwikkelomgevingen of kunnen worden geoffload naar een externe instantie om de schaalbaarheid van zoekopdrachten in de productie- en staging-omgevingen te verbeteren. Hoewel het offloaden van onderzoek scalability zal verbeteren, zal het latentie introduceren en daarom, wordt niet geadviseerd tenzij vereist. Voor meer informatie over hoe te om de integratie van Solr te vormen en hoe te om de indexen van Solr tot stand te brengen zie de Vragen van het [Eik en het Indexeren documentatie](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
+Solr indexen kunnen worden gevormd om ingebed op de AEM server voor ontwikkelingsmilieu&#39;s in werking te stellen of aan een verre instantie kunnen worden geoffload om onderzoeksscalability op de productie en het opvoeren milieu&#39;s te verbeteren. Hoewel het offloaden van onderzoek scalability zal verbeteren, zal het latentie introduceren en daarom, wordt niet geadviseerd tenzij vereist. Voor meer informatie over hoe te om de integratie van Solr te vormen en hoe te om de indexen van Solr tot stand te brengen zie de Vragen van het [Eik en het Indexeren documentatie](/help/sites-deploying/queries-and-indexing.md#the-solr-index).
 
 >[!NOTE]
 >
 >Terwijl het nemen van de geïntegreerde Solr onderzoeksbenadering zou voor het ontladen van indexeren aan een Solr server toestaan. Als de geavanceerdere eigenschappen van de server van Solr door een kruipende gebaseerde benadering worden gebruikt, zal het extra configuratiewerk worden vereist. De hoofddraad heeft een [open bronschakelaar](https://www.aemsolrsearch.com/#/) gecreeerd om deze types van implementaties te versnellen.
 
-Het nadeel aan het nemen van deze benadering is dat terwijl door gebrek, de vragen AEM ACLs zullen respecteren en zo resultaten verbergen die een gebruiker geen toegang tot heeft, het externaliseren van onderzoek aan een Solr server zal niet deze eigenschap steunen. Als de zoekactie op deze manier extern moet worden uitgevoerd, moet er extra op worden gelet dat de gebruikers geen resultaten krijgen die ze niet zouden moeten zien.
+Het nadeel aan het nemen van deze benadering is dat terwijl door gebrek, AEM vragen ACLs zullen respecteren en zo resultaten verbergen die een gebruiker geen toegang tot heeft, het externaliseren van onderzoek aan een Solr server zal niet deze eigenschap steunen. Als de zoekactie op deze manier extern moet worden uitgevoerd, moet er extra op worden gelet dat de gebruikers geen resultaten krijgen die ze niet zouden moeten zien.
 
-Mogelijke gebruiksgevallen waarin deze aanpak passend kan zijn, zijn gevallen waarin zoekgegevens uit meerdere bronnen moeten worden samengevoegd. U hebt bijvoorbeeld een site die wordt gehost op AEM en een tweede site die wordt gehost op een platform van derden. Solr zou kunnen worden gevormd om de inhoud van beide plaatsen te kruipen en hen op te slaan in een bijeengevoegde index. Op die manier kunnen zoekopdrachten naar andere sites worden uitgevoerd.
+Mogelijke gebruiksgevallen waarin deze aanpak passend kan zijn, zijn gevallen waarin zoekgegevens uit meerdere bronnen moeten worden samengevoegd. U hebt bijvoorbeeld een site die wordt gehost op AEM en een tweede site die wordt gehost op een extern platform. Solr zou kunnen worden gevormd om de inhoud van beide plaatsen te kruipen en hen op te slaan in een bijeengevoegde index. Op die manier kunnen zoekopdrachten naar andere sites worden uitgevoerd.
 
 ### Design Considerations {#design-considerations}
 
@@ -226,6 +229,7 @@ Herindexering van de eiken-indexen moet worden vermeden, tenzij in onderstaande 
 >* de vraag correct is
 >* de query wordt omgezet naar de verwachte index (met [Uitdrukkelijke query](/help/sites-administering/operations-dashboard.md#diagnosis-tools))
 >* het indexeringsproces is voltooid
+
 >
 
 
@@ -234,7 +238,7 @@ Herindexering van de eiken-indexen moet worden vermeden, tenzij in onderstaande 
 
 De enige aanvaardbare voorwaarden voor het opnieuw indexeren van eiken-indexen zijn als de configuratie van een eiken-index is gewijzigd.
 
-*Herindexering moet altijd met de nodige aandacht worden benaderd met betrekking tot het effect ervan op de algehele prestaties van AEM en moet worden uitgevoerd tijdens perioden van lage activiteit of onderhoudsvensters.*
+*Herindexering moet altijd met de nodige aandacht worden benaderd voor het effect ervan op AEM algehele prestaties en moet worden uitgevoerd tijdens perioden van lage activiteit of onderhoudsvensters.*
 
 De volgende details en resoluties zijn mogelijk:
 
@@ -303,7 +307,7 @@ De volgende details en resoluties zijn mogelijk:
 
 In de volgende tabel worden de enige aanvaardbare fouten en uitzonderlijke situaties beschreven waarin het opnieuw indexeren van eiken-indexen het probleem zal oplossen.
 
-Als er een probleem optreedt met AEM dat niet voldoet aan de onderstaande criteria, indexen **niet** opnieuw indexeren, omdat dit het probleem niet verhelpt.
+Als er problemen optreden bij AEM die niet voldoen aan de onderstaande criteria, kunt u **geen** indexen opnieuw indexeren, omdat dit probleem dan niet wordt opgelost.
 
 De volgende details en resoluties zijn mogelijk:
 
@@ -339,7 +343,7 @@ De volgende details en resoluties zijn mogelijk:
 
       Deze voorwaarde is indicatief van een misconfigured datastore die in OM HET EVEN WELK binair getal (bijvoorbeeld kan resulteren. binaire elementen) om te ontbreken.
 
-      Herstel in dit geval de laatst bekende goede versie van de opslagplaats om alle ontbrekende binaire bestanden te herstellen.
+      In dit geval herstelt u de laatst bekende goede versie van de opslagplaats om alle ontbrekende binaire bestanden te herstellen.
 
 #### Binair Lucene-index is beschadigd {#lucene-index-binary-is-corrupt}
 
@@ -368,14 +372,14 @@ De volgende details en resoluties zijn mogelijk:
    * Als dit de kwestie niet oplost en de `AsyncIndexUpdate` uitzonderingen blijven bestaan:
 
       1. [De foutindex opnieuw indexeren](#how-to-re-index)
-      1. Bestand ook een [ondersteuningsticket](https://helpx.adobe.com/support.html) van Adobe
+      1. Bestand ook een [Adobe Support](https://helpx.adobe.com/support.html) -ticket
 
 
 ### Procedure voor opnieuw indexeren {#how-to-re-index}
 
 >[!NOTE]
 >
->In AEM 6.4 is [eak-run.jar de ENIGE gesteunde methode](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) voor het opnieuw indexeren op MongoMK of RDBMK bewaarplaatsen.
+>In AEM 6.4 is [eak-run.jar de ENIGE ondersteunde methode](/help/sites-deploying/indexing-via-the-oak-run-jar.md#reindexingapproachdecisiontree) voor het opnieuw indexeren op MongoMK- of RDBMK-repositories.
 
 #### Eigenschapindexen opnieuw indexeren {#re-indexing-property-indexes}
 
@@ -386,7 +390,7 @@ De volgende details en resoluties zijn mogelijk:
 
 * Wijzig de index van de eigenschap asynchroon met de webconsole via **PropertyIndexAsyncReindex** MBean.
 
-    bijvoorbeeld:
+   bijvoorbeeld:
 
    [http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex](http://localhost:4502/system/console/jmx/org.apache.jackrabbit.oak%3Aname%3Dasync%2Ctype%3DPropertyIndexAsyncReindex)
 
@@ -399,7 +403,7 @@ De volgende details en resoluties zijn mogelijk:
 
 >[!NOTE]
 >
->In de voorgaande sectie wordt een overzicht gegeven van en een overzicht gegeven van de aanwijzingen voor het opnieuw indexeren van de eiken in de [Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) in de context van AEM.
+>In de voorgaande sectie wordt een overzicht gegeven van de aanwijzingen voor het opnieuw indexeren van de eiken in de [Apache Oak-documentatie](https://jackrabbit.apache.org/oak/docs/query/indexing.html#reindexing) in de context van de AEM en worden deze in kaders geplaatst.
 
 ### Tekstvoorextractie van binaire tekens {#text-pre-extraction-of-binaries}
 
@@ -414,11 +418,11 @@ De preextractie van de tekst is het proces om tekst uit binaire getallen, direct
 
 Het opnieuw indexeren van een **bestaande** lucene index met binaire toegelaten extractie
 
-* het opnieuw indexeren van de verwerking van **alle** kandidaatinhoud in de gegevensopslagruimte; wanneer de binaire getallen waaruit volledige tekst wordt geëxtraheerd talrijk of complex zijn, wordt een grotere rekenlast voor de volledige tekstextractie op AEM gelegd. De pre-extractie van de tekst beweegt het &quot;computer dure werk&quot;van tekst-extractie in een geïsoleerd proces dat tot de Opslag van Gegevens van AEM direct toegang heeft, vermijdend overheadkosten en middelgeschil in AEM.
+* het opnieuw indexeren van de verwerking van **alle** kandidaatinhoud in de gegevensopslagruimte; wanneer de binaire getallen waaruit volledige tekst kan worden geëxtraheerd talrijk of complex zijn, wordt een grotere rekenlast voor het extraheren van volledige tekst op AEM geplaatst. De pre-extractie van de tekst beweegt het &quot;computer dure werk&quot;van tekst-extractie in een geïsoleerd proces dat tot AEM Opslag van Gegevens direct toegang heeft, vermijdend overheadkosten en middelgeschil in AEM.
 
-De plaatsing van een **nieuwe** lucene index aan AEM met binaire toegelaten extractie steunen
+Ondersteuning van de implementatie van een **nieuwe** lucene-index voor AEM met binaire extractie ingeschakeld
 
-* Wanneer een nieuwe index (met binaire toegelaten extractie) in AEM wordt opgesteld, indexeert het eikel automatisch alle kandidaatinhoud op de volgende async full-text indexlooppas. Om dezelfde redenen die hierboven bij het opnieuw indexeren zijn beschreven, kan dit leiden tot een te hoge belasting van de AEM.
+* Wanneer een nieuwe index (met binaire toegelaten extractie) in AEM wordt opgesteld, indexeert het Eak automatisch alle kandidaatinhoud op de volgende async full-text indexlooppas. Om dezelfde redenen die hierboven bij het opnieuw indexeren worden beschreven, kan dit leiden tot een te grote belasting bij AEM.
 
 #### Wanneer kan de voorextractie van tekst NIET worden gebruikt? {#when-can-text-pre-extraction-not-be-used}
 
@@ -426,7 +430,7 @@ Tekstomloop kan niet worden gebruikt voor nieuwe inhoud die aan de opslagplaats 
 
 Nieuwe inhoud wordt toegevoegd aan de dataopslag zal natuurlijk en incrementeel door het async full-text indexeren proces (door gebrek, om de 5 seconden) worden geïndexeerd.
 
-Onder normale verrichting van AEM, bijvoorbeeld uploadend Activa via het Web UI of programmatic ingest van Activa, zal AEM automatisch en incrementeel full-text index de nieuwe binaire inhoud. Aangezien de hoeveelheid gegevens incrementeel en relatief klein is (ongeveer de hoeveelheid gegevens die in 5 seconden aan de opslagplaats kan worden gepresteerd), kan AEM de full-text extractie uit de binaire getallen uitvoeren tijdens het indexeren zonder de algemene systeemprestaties te beïnvloeden.
+Onder normale verrichting van AEM, bijvoorbeeld het uploaden van Activa via het Web UI of programmatic ingest van Activa, zal AEM automatisch en incrementeel full-text index de nieuwe binaire inhoud. Aangezien de hoeveelheid gegevens incrementeel en relatief klein is (ongeveer de hoeveelheid gegevens die in 5 seconden aan de opslagplaats kan worden gepresteerd), kan AEM de full-text extractie uit de binaire getallen uitvoeren tijdens het indexeren zonder de algemene systeemprestaties te beïnvloeden.
 
 #### Vereisten voor het gebruik van tekstvoorextractie {#prerequisites-to-using-text-pre-extraction}
 
@@ -435,9 +439,9 @@ Onder normale verrichting van AEM, bijvoorbeeld uploadend Activa via het Web UI 
 * Een onderhoudsvenster voor het genereren van het CSV-bestand EN voor het opnieuw indexeren van de bestanden
 * Oak-versie: 1.0.18+, 1.2.3+
 * [eak-run.](https://mvnrepository.com/artifact/org.apache.jackrabbit/oak-run/)jarversion 1.7.4+
-* Een bestandssysteemmap/-share voor het opslaan van geëxtraheerde tekst die toegankelijk is via de indexerende AEM-instantie(s)
+* Een bestandssysteemmap/-share om geëxtraheerde tekst op te slaan die toegankelijk is via de indexerende AEM instantie(s)
 
-   * De OSGi-config van de pre-extractie van de Tekst vereist een weg van het dossiersysteem aan de gehaalde tekstdossiers, zodat moeten zij direct van de instantie AEM (lokale aandrijving of dossieraandeel onderaan) toegankelijk zijn
+   * De OSGi-config van de preextractie van de Tekst vereist een weg van het dossiersysteem aan de gehaalde tekstdossiers, zodat moeten zij direct van de AEM instantie (lokale aandrijving of het dossier delen onderstel) toegankelijk zijn
 
 #### Voorvertoning van tekst uitvoeren {#how-to-perform-text-pre-extraction}
 
@@ -461,7 +465,7 @@ Merk op dat de volledige opslag van de Knoop (zoals die door de wegen in het eik
 
 **Tekst vooraf uitpakken naar bestandssysteem**
 
-*Stap 2(a-c) kan tijdens normale verrichting van AEM worden uitgevoerd als het slechts met de Opslag van Gegevens in wisselwerking staat.*
+*Stap 2 (a-c) kan tijdens normale verrichting van AEM worden uitgevoerd is het slechts met de Opslag van Gegevens in wisselwerking staat.*
 
 2 bis. Execute to pre-extract text for the binary nodes enumerated in the CSV file generated in (1b) `oak-run.jar --tika`
 
@@ -469,7 +473,7 @@ Merk op dat de volledige opslag van de Knoop (zoals die door de wegen in het eik
 
 2 quater.  Geëxtraheerde tekst wordt opgeslagen op een bestandssysteem in een indeling die instelbaar is door het opnieuw indexeren van de eik (3a)
 
-De vooraf geëxtraheerde tekst wordt in de CSV geïdentificeerd door de binaire vingerafdruk. Als het binaire bestand hetzelfde is, kan dezelfde vooraf geëxtraheerde tekst worden gebruikt voor alle AEM-instanties. Aangezien AEM-publicatie doorgaans een subset van AEM-auteur is, kan de vooraf geëxtraheerde tekst van AEM-auteur vaak ook worden gebruikt om AEM-publicatie opnieuw te indexeren (ervan uitgaande dat de AEM-publicatie bestandssysteemtoegang heeft tot de geëxtraheerde tekstbestanden).
+De vooraf geëxtraheerde tekst wordt in de CSV geïdentificeerd door de binaire vingerafdruk. Als het binaire bestand hetzelfde is, kan dezelfde vooraf geëxtraheerde tekst worden gebruikt in AEM instanties. Aangezien AEM-publicatie doorgaans een subset van AEM-auteur is, kan de vooraf geëxtraheerde tekst van AEM-auteur vaak ook worden gebruikt om AEM-publicatie opnieuw te indexeren (ervan uitgaande dat de AEM-publicatie bestandssysteemtoegang heeft tot de geëxtraheerde tekstbestanden).
 
 Aan vooraf geëxtraheerde tekst kan stapsgewijs worden toegevoegd. De voorextractie van tekst slaat de extractie van eerder geëxtraheerde binaire bestanden over. Het is daarom aan te raden om vooraf geëxtraheerde tekst te behouden voor het geval dat in de toekomst opnieuw indexering moet worden uitgevoerd (ervan uitgaande dat de geëxtraheerde inhoud niet prohibitief groot is). Als dit het geval is, evalueert het Zijden van de inhoud in het tussentijdse stadium, aangezien de tekst goed samenperst).
 
