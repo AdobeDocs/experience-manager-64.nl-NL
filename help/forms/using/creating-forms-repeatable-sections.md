@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 01724ca0-6901-45e7-b045-f44814ed574e
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1136'
+ht-degree: 16%
 
 ---
 
@@ -21,9 +24,9 @@ Tijdens het aanvragen van een baan verschaft de werkzoekende bijvoorbeeld eerder
 
 U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te maken:
 
-## Instance Manager gebruiken via scripts {#using-instance-manager-via-scripts-nbsp}
+## Instance Manager gebruiken via scripts  {#using-instance-manager-via-scripts-nbsp}
 
-1. Selecteer in de bewerkingsmodus een deelvenster en tik vervolgens op ![cmp](assets/cmppr.png). Schakel in het zijpaneel onder Eigenschappen de optie Deelvenster **opnieuw** maken in. Geef waarden op voor de velden **[!UICONTROL Maximaal]** en **[!UICONTROL Minimaal]** .
+1. Selecteer in de bewerkingsmodus een deelvenster en tik vervolgens op ![cmp](assets/cmppr.png). Schakel in het zijpaneel onder Eigenschappen de optie Deelvenster **opnieuw** maken in. Geef waarden op voor de velden **[!UICONTROL Maximum]** en **[!UICONTROL Minimum]** velden.
 
    In het veld Maximaal wordt het maximale aantal keer opgegeven dat een deelvenster op de pagina kan worden weergegeven. U kunt -1 opgeven in het veld Maximum aantal om het deelvenster een oneindig aantal keren weer te geven.
 
@@ -45,10 +48,12 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
          * Als u een knop in het deelvenster Toevoegen wilt maken, selecteert u **Instantie** toevoegen en sleept u het deelvenster met het ![schakelpaneel](assets/toggle-side-panel.png) . U kunt het deelvenster ook selecteren met het **object Drop of hier selecteren.**
          * Als u een knop in het deelvenster Verwijderen wilt maken, selecteert u Instantie **** verwijderen en sleept u het deelvenster met het ![deelvenster](assets/toggle-side-panel.png) en/of selecteert u het met het object **Drop of selecteert u hier naartoe.**
+
       Selecteer **Code-editor** in de rij Formulierobjecten en -functies. Klik op Regels **** bewerken en in het codegebied:
 
       * Als u een knop in het deelvenster Toevoegen wilt maken, geeft u `this.panel.instanceManager.addInstance()`
       * Als u een knop in het deelvenster Verwijderen wilt maken, geeft u `this.panel.instanceManager.removeInstance(this.panel.instanceIndex)`
+
       Klik op **Gereed**.
 
       >[!NOTE]
@@ -83,7 +88,7 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
       >`Panel1.instanceManager.instances[1].textbox.value`
       >
       >
-      > Zie voor meer informatie: Klasse: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).
+      >Zie voor meer informatie: Klasse: InstanceManager#instances in [AEM Forms Java API reference](https://adobe.com/go/learn_aemforms_documentation_63).
 
       >[!NOTE]
       >
@@ -103,9 +108,9 @@ U kunt een van de volgende methoden gebruiken om herhaalbare deelvensters te mak
 
 
 
-## De accordeonlay-out gebruiken voor het bovenliggende deelvenster {#using-the-accordion-layout-for-the-parent-panel-nbsp}
+## De accordeonlay-out gebruiken voor het bovenliggende deelvenster   {#using-the-accordion-layout-for-the-parent-panel-nbsp}
 
-Een deelvenster heeft verschillende layoutopties. De optie Layout voor accordeonontwerp heeft geen ondersteuning voor herhaalbare deelvensters. Voer de volgende stappen uit naar het herhaalbare deelvenster met de optie Layout voor accordeonontwerp:
+Een deelvenster heeft verschillende layoutopties. De optie Layout voor accordeonontwerp biedt geen ondersteuning voor herhaalbare deelvensters. Voer de volgende stappen uit naar het herhaalbare deelvenster met de optie Layout voor accordeonontwerp:
 
 1. Tik op ![cmp in het bovenliggende deelvenster dat u wilt herhalen](assets/cmppr.png). U kunt de eigenschappen in de zijbalk zien. Selecteer in de vervolgkeuzelijst **Lay-out** de optie **Accordeon**.
 1. Tik in een deelvenster op ![cmp](assets/cmppr.png)dat moet worden herhaald. U kunt de deelvenstereigenschappen in de zijbalk zien. Schakel het tabblad **Deelvenster reproduceerbaar** maken in en geef waarde op voor de velden **Maximaal** en **Minimaal** .
@@ -114,7 +119,7 @@ Een deelvenster heeft verschillende layoutopties. De optie Layout voor accordeon
 
 ## Herhalende subformulieren gebruiken vanuit formuliersjabloon (XDP/XSD) {#using-repeating-subforms-from-form-template-xdp-xsd}
 
-Herhalbaar subformulier is vergelijkbaar met de herhaalbare deelvensters in Adaptieve formulieren. Voer in AEM Forms Designer de volgende stappen uit om een herhalend subformulier te maken:
+Herhalbaar subformulier is vergelijkbaar met de herhaalbare deelvensters in Adaptief Forms. Voer in AEM Forms Designer de volgende stappen uit om een herhalend subformulier te maken:
 
 1. Selecteer in het palet Hiërarchie het bovenliggende subformulier van het subformulier dat u wilt herhalen.
 1. Klik in het palet Object op het tabblad Subformulier en selecteer Overlopen in de lijst Inhoud.
