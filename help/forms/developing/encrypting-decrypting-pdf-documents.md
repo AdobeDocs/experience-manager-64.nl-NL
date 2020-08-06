@@ -22,7 +22,7 @@ ht-degree: 0%
 
 **Over de coderingsservice**
 
-Met de coderingsservice kunt u documenten versleutelen en decoderen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document is versleuteld met een wachtwoord, moet de gebruiker het wachtwoord voor openen opgeven voordat het document kan worden weergegeven in Adobe Reader of Adobe Acrobat. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met de openbare sleutel die overeenkomt met het certificaat (persoonlijke sleutel) dat is gebruikt om het PDF-document te versleutelen.
+Met de coderingsservice kunt u documenten versleutelen en decoderen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document is versleuteld met een wachtwoord, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Adobe Acrobat kan worden weergegeven. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met de openbare sleutel die overeenkomt met het certificaat (persoonlijke sleutel) dat is gebruikt om het PDF-document te versleutelen.
 
 U kunt deze taken uitvoeren met behulp van de coderingsservice:
 
@@ -43,7 +43,7 @@ Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het
 
 >[!NOTE]
 >
->Als u een versleuteld PDF-document uploadt naar de gegevensopslagruimte van AEM Forms, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de gegevensopslagruimte van AEM Forms. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Als u een versleuteld PDF-document uploadt naar de AEM Forms-opslagplaats, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de AEM Forms-opslagplaats. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
@@ -69,8 +69,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
 **Een Encryption Client API-object maken**
 
@@ -82,7 +82,7 @@ U moet een niet-versleuteld PDF-document verkrijgen om het document met een wach
 
 **Opties voor codering tijdens runtime instellen**
 
-Als u een PDF-document met een wachtwoord wilt versleutelen, geeft u vier waarden op, waaronder twee wachtwoordwaarden. Het eerste wachtwoord wordt gebruikt om het PDF-document te versleutelen en moet worden opgegeven bij het openen van het PDF-document. De tweede wachtwoordwaarde, de hoofdwachtwoordwaarde, wordt gebruikt om versleuteling uit het PDF-document te verwijderen. Wachtwoordwaarden zijn hoofdlettergevoelig en deze twee wachtwoordwaarden kunnen niet dezelfde waarden zijn.
+Als u een PDF-document met een wachtwoord wilt versleutelen, geeft u vier waarden op, waaronder twee wachtwoordwaarden. Het eerste wachtwoord wordt gebruikt om het PDF-document te versleutelen en moet worden opgegeven bij het openen van het PDF-document. De tweede wachtwoordwaarde, de waarde voor het master wachtwoord, wordt gebruikt om versleuteling te verwijderen uit het PDF-document. Wachtwoordwaarden zijn hoofdlettergevoelig en deze twee wachtwoordwaarden kunnen niet dezelfde waarden zijn.
 
 U moet opgeven welke PDF-documentbronnen u wilt versleutelen. U kunt het gehele PDF-document versleutelen, met uitzondering van de metagegevens van het document of alleen de bijlagen van het document. Als u alleen de bijlagen van het document versleutelt, wordt een gebruiker om een wachtwoord gevraagd wanneer hij of zij toegang probeert te krijgen tot de bestandsbijlagen.
 
@@ -141,9 +141,9 @@ Codeer een PDF-document met een wachtwoord met behulp van de API voor versleutel
    * Geef de bronnen van het PDF-document op die u wilt versleutelen door de methode van het `PasswordEncryptionOptionSpec` object aan te roepen en een `setEncryptOption` `PasswordEncryptionOption` opsommingswaarde door te geven die de documentbronnen aangeeft die u wilt versleutelen. Als u bijvoorbeeld het gehele PDF-document wilt versleutelen, inclusief de metagegevens en de bijlagen, geeft u op `PasswordEncryptionOption.ALL`.
    * Maak een `java.util.List` object dat de versleutelingsmachtigingen opslaat met de `ArrayList` constructor.
    * Geef een machtiging op door de methode van het `java.util.List` `add` object aan te roepen en een opsommingswaarde door te geven die overeenkomt met de machtiging die u wilt instellen. Als u bijvoorbeeld de machtiging wilt instellen waarmee een gebruiker gegevens in het PDF-document kan kopiëren, geeft u op `PasswordEncryptionPermission.PASSWORD_EDIT_COPY`. (Herhaal deze stap voor elke machtiging die moet worden ingesteld).
-   * Geef de compatibiliteitsoptie Acrobat op door de methode van het `PasswordEncryptionOptionSpec` `setCompatability` object aan te roepen en een opsommingswaarde door te geven die het compatibiliteitsniveau van Acrobat opgeeft. U kunt bijvoorbeeld opgeven `PasswordEncryptionCompatability.ACRO_7`.
+   * Geef de Acrobat-compatibiliteitsoptie op door de methode van het `PasswordEncryptionOptionSpec` `setCompatability` object aan te roepen en een opsommingswaarde door te geven die het Acrobat-compatibiliteitsniveau opgeeft. U kunt bijvoorbeeld opgeven `PasswordEncryptionCompatability.ACRO_7`.
    * Geef de wachtwoordwaarde op waarmee een gebruiker het gecodeerde PDF-document kan openen door de methode van het `PasswordEncryptionOptionSpec` `setDocumentOpenPassword` object aan te roepen en een tekenreekswaarde door te geven die het open wachtwoord vertegenwoordigt.
-   * Geef de waarde van het hoofdwachtwoord op waarmee een gebruiker versleuteling uit het PDF-document kan verwijderen door de methode van het `PasswordEncryptionOptionSpec` `setPermissionPassword` object aan te roepen en een tekenreekswaarde door te geven die het hoofdwachtwoord vertegenwoordigt.
+   * Geef de waarde voor het master wachtwoord op waarmee een gebruiker versleuteling uit het PDF-document kan verwijderen door de methode van het `PasswordEncryptionOptionSpec` `setPermissionPassword` object aan te roepen en een tekenreekswaarde door te geven die het master wachtwoord vertegenwoordigt.
 
 1. Voeg het wachtwoord toe.
 
@@ -151,6 +151,7 @@ Codeer een PDF-document met een wachtwoord met behulp van de API voor versleutel
 
    * Het `com.adobe.idp.Document` object dat het PDF-document bevat dat met het wachtwoord moet worden gecodeerd.
    * Het `PasswordEncryptionOptionSpec` object dat opties voor codering tijdens runtime bevat.
+
    De `encryptPDFUsingPassword` methode retourneert een `com.adobe.idp.Document` object dat een PDF-document met een wachtwoord bevat.
 
 1. Sla het versleutelde PDF-document op als een PDF-bestand.
@@ -183,12 +184,12 @@ Codeer een PDF-document met een wachtwoord met de API voor versleuteling (webser
 1. Maak een Encryption Client API-object.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -205,9 +206,9 @@ Codeer een PDF-document met een wachtwoord met de API voor versleuteling (webser
 
    * Maak een `PasswordEncryptionOptionSpec` object met de constructor ervan.
    * Geef de bronnen van het PDF-document op die u wilt versleutelen door een `PasswordEncryptionOption` opsommingswaarde toe te wijzen aan het `PasswordEncryptionOptionSpec` gegevenslid van het `encryptOption` object. Als u de volledige PDF wilt versleutelen, inclusief de metagegevens en de bijlagen, wijst u `PasswordEncryptionOption.ALL` dit gegevenslid toe.
-   * Geef de compatibiliteitsoptie Acrobat op door een `PasswordEncryptionCompatability` opsommingswaarde toe te wijzen aan het `PasswordEncryptionOptionSpec` gegevenslid van het `compatability` object. Wijs bijvoorbeeld toe `PasswordEncryptionCompatability.ACRO_7` aan dit gegevenslid.
+   * Geef de Acrobat-compatibiliteitsoptie op door een `PasswordEncryptionCompatability` opsommingswaarde toe te wijzen aan het `PasswordEncryptionOptionSpec` gegevenslid van het `compatability` object. Wijs bijvoorbeeld toe `PasswordEncryptionCompatability.ACRO_7` aan dit gegevenslid.
    * Geef de wachtwoordwaarde op waarmee een gebruiker het gecodeerde PDF-document kan openen door een tekenreekswaarde toe te wijzen die het geopende wachtwoord vertegenwoordigt voor het `PasswordEncryptionOptionSpec` gegevenslid van het `documentOpenPassword` object.
-   * Geef de wachtwoordwaarde op waarmee een gebruiker versleuteling uit het PDF-document kan verwijderen door een tekenreekswaarde toe te wijzen die het hoofdwachtwoord vertegenwoordigt aan het `PasswordEncryptionOptionSpec` gegevenslid van het `permissionPassword` object.
+   * Geef de wachtwoordwaarde op waarmee een gebruiker versleuteling uit het PDF-document kan verwijderen door een tekenreekswaarde toe te wijzen die het master wachtwoord vertegenwoordigt voor het `PasswordEncryptionOptionSpec` gegevenslid van het `permissionPassword` object.
 
 1. Voeg het wachtwoord toe.
 
@@ -215,6 +216,7 @@ Codeer een PDF-document met een wachtwoord met de API voor versleuteling (webser
 
    * Het `BLOB` object dat het PDF-document bevat dat met het wachtwoord moet worden gecodeerd.
    * Het `PasswordEncryptionOptionSpec` object dat opties voor codering tijdens runtime bevat.
+
    De `encryptPDFUsingPassword` methode retourneert een `BLOB` object dat een PDF-document met een wachtwoord bevat.
 
 1. Sla het versleutelde PDF-document op als een PDF-bestand.
@@ -245,11 +247,11 @@ Een certificaat met een openbare sleutel bevat de openbare sleutel van een gebru
 
 >[!NOTE]
 >
->Als u een versleuteld PDF-document uploadt naar de gegevensopslagruimte van AEM Forms, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de gegevensopslagruimte van AEM Forms. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
+>Als u een versleuteld PDF-document uploadt naar de AEM Forms-opslagplaats, kan het PDF-document niet worden gedecodeerd en de XDP-inhoud niet worden uitgepakt. U wordt aangeraden een document niet te coderen voordat u het uploadt naar de AEM Forms-opslagplaats. (Zie Bronnen [schrijven](/help/forms/developing/aem-forms-repository.md#writing-resources).)
 
 >[!NOTE]
 >
->Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM Forms. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 >[!NOTE]
 >
@@ -276,8 +278,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
 **Een Encryption Client API-object maken**
 
@@ -355,7 +357,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 
    * Maak een `CertificateEncryptionOptionSpec` object door de constructor ervan aan te roepen.
    * Geef de bronnen van het PDF-document op die u wilt versleutelen door de methode van het `CertificateEncryptionOptionSpec` object aan te roepen en een `setOption` `CertificateEncryptionOption` opsommingswaarde door te geven die de documentbronnen aangeeft die u wilt versleutelen. Als u bijvoorbeeld het gehele PDF-document wilt versleutelen, inclusief de metagegevens en de bijlagen, geeft u op `CertificateEncryptionOption.ALL`.
-   * Geef de compatibiliteitsoptie Acrobat op door de methode van het `CertificateEncryptionOptionSpec` object aan te roepen en een `setCompat` `CertificateEncryptionCompatibility` opsommingswaarde door te geven die het compatibiliteitsniveau van Acrobat aangeeft. U kunt bijvoorbeeld opgeven `CertificateEncryptionCompatibility.ACRO_7`.
+   * Geef de Acrobat-compatibiliteitsoptie op door de methode van het `CertificateEncryptionOptionSpec` object aan te roepen en een `setCompat` `CertificateEncryptionCompatibility` opsommingswaarde door te geven die het Acrobat-compatibiliteitsniveau opgeeft. U kunt bijvoorbeeld opgeven `CertificateEncryptionCompatibility.ACRO_7`.
 
 1. Maak een met een certificaat gecodeerd PDF-document.
 
@@ -364,6 +366,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
    * Het `com.adobe.idp.Document` object dat het te versleutelen PDF-document bevat.
    * Het `java.util.List` object dat certificaatgegevens opslaat.
    * Het `CertificateEncryptionOptionSpec` object dat opties voor codering tijdens runtime bevat.
+
    De `encryptPDFUsingCertificates` methode retourneert een `com.adobe.idp.Document` object dat een met een certificaat gecodeerd PDF-document bevat.
 
 1. Sla het versleutelde PDF-document op als een PDF-bestand.
@@ -396,12 +399,12 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 1. Maak een Encryption Client API-object.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -431,7 +434,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 
    * Maak een `CertificateEncryptionOptionSpec` object met de constructor ervan.
    * Geef de bronnen van het PDF-document op die u wilt versleutelen door een `CertificateEncryptionOption` opsommingswaarde toe te wijzen aan het `CertificateEncryptionOptionSpec` gegevenslid van het `option` object. Als u het gehele PDF-document wilt versleutelen, inclusief de metagegevens en de bijlagen, wijst u `CertificateEncryptionOption.ALL` dit gegevenslid toe.
-   * Geef de compatibiliteitsoptie Acrobat op door een `CertificateEncryptionCompatibility` opsommingswaarde toe te wijzen aan het `CertificateEncryptionOptionSpec` gegevenslid van het `compat` object. Wijs bijvoorbeeld toe `CertificateEncryptionCompatibility.ACRO_7` aan dit gegevenslid.
+   * Geef de Acrobat-compatibiliteitsoptie op door een `CertificateEncryptionCompatibility` opsommingswaarde toe te wijzen aan het `CertificateEncryptionOptionSpec` gegevenslid van het `compat` object. Wijs bijvoorbeeld toe `CertificateEncryptionCompatibility.ACRO_7` aan dit gegevenslid.
 
 1. Maak een met een certificaat gecodeerd PDF-document.
 
@@ -440,6 +443,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
    * Het `BLOB` object dat het te versleutelen PDF-document bevat.
    * De `Object` array die certificaatinformatie opslaat.
    * Het `CertificateEncryptionOptionSpec` object dat opties voor codering tijdens runtime bevat.
+
    De `encryptPDFUsingCertificates` methode retourneert een `BLOB` object dat een met een certificaat gecodeerd PDF-document bevat.
 
 1. Sla het versleutelde PDF-document op als een PDF-bestand.
@@ -459,7 +463,7 @@ Codeer een PDF-document met een certificaat met behulp van de API voor versleute
 
 ## Versleuteling op basis van een certificaat verwijderen {#removing-certificate-based-encryption}
 
-Op certificaten gebaseerde versleuteling kan uit een PDF-document worden verwijderd, zodat gebruikers het PDF-document kunnen openen in Adobe Reader of Acrobat. Als u versleuteling wilt verwijderen uit een PDF-document dat is versleuteld met een certificaat, moet naar een openbare sleutel worden verwezen. Nadat de versleuteling is verwijderd uit een PDF-document, is het niet meer beveiligd.
+Op een certificaat gebaseerde versleuteling kan uit een PDF-document worden verwijderd, zodat gebruikers het PDF-document in Adobe Reader of Acrobat kunnen openen. Als u versleuteling wilt verwijderen uit een PDF-document dat is versleuteld met een certificaat, moet naar een openbare sleutel worden verwezen. Nadat de versleuteling is verwijderd uit een PDF-document, is het niet meer beveiligd.
 
 >[!NOTE]
 >
@@ -484,8 +488,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
 **Een coderingsserviceclient maken**
 
@@ -543,6 +547,7 @@ Op een certificaat gebaseerde versleuteling verwijderen uit een PDF-document met
 
    * Het `com.adobe.idp.Document` object dat het versleutelde PDF-document bevat.
    * Een tekenreekswaarde die de aliasnaam van de persoonlijke sleutel opgeeft die overeenkomt met de sleutel die wordt gebruikt om het PDF-document te versleutelen.
+
    De `removePDFCertificateSecurity` methode retourneert een `com.adobe.idp.Document` object dat een onbeveiligd PDF-document bevat.
 
 1. Sla het PDF-document op.
@@ -575,12 +580,12 @@ Verwijder op een certificaat gebaseerde codering met de API voor codering (webse
 1. Maak een versleutelingsserviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -599,6 +604,7 @@ Verwijder op een certificaat gebaseerde codering met de API voor codering (webse
 
    * Het `BLOB` object dat bestandsstreamgegevens bevat die een gecodeerd PDF-document vertegenwoordigen.
    * Een tekenreekswaarde die de aliasnaam van de openbare sleutel opgeeft die overeenkomt met de persoonlijke sleutel die wordt gebruikt om het PDF-document te versleutelen.
+
    De `removePDFCredentialSecurity` methode retourneert een `BLOB` object dat een onbeveiligd PDF-document bevat.
 
 1. Sla het PDF-document op.
@@ -643,8 +649,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
 **Een coderingsserviceclient maken**
 
@@ -656,7 +662,7 @@ U moet een versleuteld PDF-document verkrijgen om op een wachtwoord gebaseerde v
 
 **Het wachtwoord verwijderen**
 
-Als u op wachtwoorden gebaseerde versleuteling uit een versleuteld PDF-document wilt verwijderen, hebt u zowel een versleuteld PDF-document als een hoofdwachtwoordwaarde nodig waarmee de versleuteling uit het PDF-document wordt verwijderd. Het wachtwoord waarmee een PDF-document met een wachtwoord wordt geopend, kan niet worden gebruikt om versleuteling te verwijderen. Er wordt een hoofdwachtwoord opgegeven wanneer het PDF-document met een wachtwoord is versleuteld. (Zie PDF-documenten [versleutelen met een wachtwoord](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
+Als u op wachtwoorden gebaseerde versleuteling uit een versleuteld PDF-document wilt verwijderen, hebt u zowel een versleuteld PDF-document als een master wachtwoordwaarde nodig waarmee de versleuteling uit het PDF-document wordt verwijderd. Het wachtwoord waarmee een PDF-document met een wachtwoord wordt geopend, kan niet worden gebruikt om versleuteling te verwijderen. Er wordt een master wachtwoord opgegeven wanneer het PDF-document met een wachtwoord is versleuteld. (Zie PDF-documenten [versleutelen met een wachtwoord](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password).)
 
 **Het PDF-document opslaan**
 
@@ -695,7 +701,8 @@ Verwijder op wachtwoord gebaseerde codering uit een PDF-document met de API voor
    Verwijder op wachtwoord gebaseerde codering uit het PDF-document door de methode van het `EncryptionServiceClient` `removePDFPasswordSecurity` object aan te roepen en de volgende waarden door te geven:
 
    * Een `com.adobe.idp.Document` object dat het gecodeerde PDF-document bevat.
-   * Een tekenreekswaarde die de waarde van het hoofdwachtwoord opgeeft waarmee de versleuteling uit het PDF-document wordt verwijderd.
+   * Een tekenreekswaarde die de waarde opgeeft voor het master wachtwoord dat wordt gebruikt om versleuteling te verwijderen uit het PDF-document.
+
    De `removePDFPasswordSecurity` methode retourneert een `com.adobe.idp.Document` object dat een onbeveiligd PDF-document bevat.
 
 1. Sla het PDF-document op.
@@ -722,12 +729,12 @@ Verwijder op wachtwoord gebaseerde codering met de API voor codering (webservice
 1. Maak een versleutelingsserviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -746,6 +753,7 @@ Verwijder op wachtwoord gebaseerde codering met de API voor codering (webservice
 
    * Het `BLOB` object dat bestandsstreamgegevens bevat die een gecodeerd PDF-document vertegenwoordigen.
    * Een tekenreekswaarde die de wachtwoordwaarde opgeeft die wordt gebruikt om versleuteling te verwijderen uit het PDF-document. Deze waarde wordt opgegeven wanneer het PDF-document met een wachtwoord wordt versleuteld.
+
    De `removePDFPasswordSecurity` methode retourneert een `BLOB` object dat een onbeveiligd PDF-document bevat.
 
 1. Sla het PDF-document op.
@@ -763,7 +771,7 @@ Verwijder op wachtwoord gebaseerde codering met de API voor codering (webservice
 
 ## Versleutelde PDF-documenten ontgrendelen {#unlocking-encrypted-pdf-documents}
 
-Een PDF-document dat met een wachtwoord of certificaat is gecodeerd, moet worden ontgrendeld voordat een andere AEM Forms-bewerking kan worden uitgevoerd. Als u een bewerking probeert uit te voeren op een versleuteld PDF-document, wordt een uitzondering gegenereerd. Nadat u een versleuteld PDF-document hebt ontgrendeld, kunt u er een of meer bewerkingen op uitvoeren. Deze bewerkingen kunnen tot andere services behoren, zoals de Acrobat Reader DC extensions Service.
+Een PDF-document dat met een wachtwoord of certificaat is gecodeerd, moet worden ontgrendeld voordat een andere AEM Forms-bewerking kan worden uitgevoerd. Als u een bewerking probeert uit te voeren op een versleuteld PDF-document, wordt een uitzondering gegenereerd. Nadat u een versleuteld PDF-document hebt ontgrendeld, kunt u er een of meer bewerkingen op uitvoeren. Deze bewerkingen kunnen tot andere services behoren, zoals de Acrobat Reader DC Extension Service.
 
 >[!NOTE]
 >
@@ -788,8 +796,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
 **Een coderingsserviceclient maken**
 
@@ -805,7 +813,7 @@ Als u een PDF-document met wachtwoordversleuteling wilt ontgrendelen, hebt u zow
 
 Als u een met een certificaat gecodeerd PDF-document wilt ontgrendelen, hebt u zowel een versleuteld PDF-document als de alias van de openbare sleutel nodig die overeenkomt met de persoonlijke sleutel waarmee het PDF-document is versleuteld.
 
-**Een AEM Forms-bewerking uitvoeren**
+**AEM Forms-bewerkingen uitvoeren**
 
 Nadat een versleuteld PDF-document is ontgrendeld, kunt u er een andere servicebewerking op uitvoeren, zoals gebruiksrechten op toepassen. Deze bewerking behoort tot de Acrobat Reader DC Extensions-service.
 
@@ -847,15 +855,17 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (Java):
 
    * Een `com.adobe.idp.Document` object dat het PDF-document met een wachtwoord bevat.
    * Een tekenreekswaarde die de wachtwoordwaarde opgeeft waarmee een PDF-document met een wachtwoord wordt geopend. Deze waarde wordt opgegeven wanneer het PDF-document met een wachtwoord wordt versleuteld.
+
    Als u een PDF-document wilt ontgrendelen dat met een certificaat is versleuteld, roept u de `unlockPDFUsingCredential` methode op en geeft u de volgende waarden door:
 
    * Een `com.adobe.idp.Document` object dat het met een certificaat gecodeerde PDF-document bevat.
    * Een tekenreekswaarde die de aliasnaam opgeeft van de openbare sleutel die overeenkomt met de persoonlijke sleutel die wordt gebruikt om het PDF-document te versleutelen.
-   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere Java-methode voor AEM Forms om een bewerking uit te voeren.
+
+   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere AEM Forms Java-methode om een bewerking uit te voeren.
 
 1. Voer een AEM Forms-bewerking uit.
 
-   Voer een AEM Forms uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op een niet-vergrendeld PDF-document, geeft u het `com.adobe.idp.Document` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
+   Voer een AEM Forms-bewerking uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op een niet-vergrendeld PDF-document, geeft u het `com.adobe.idp.Document` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
 
 **Zie ook**
 
@@ -884,12 +894,12 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (webserv
 1. Maak een versleutelingsserviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -910,15 +920,17 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (webserv
 
    * Een `BLOB` object dat het PDF-document met een wachtwoord bevat.
    * Een tekenreekswaarde die de wachtwoordwaarde opgeeft waarmee een PDF-document met een wachtwoord wordt geopend. Deze waarde wordt opgegeven wanneer het PDF-document met een wachtwoord wordt versleuteld.
+
    Als u een PDF-document wilt ontgrendelen dat met een certificaat is versleuteld, roept u de `unlockPDFUsingCredential` methode op en geeft u de volgende waarden door:
 
    * Een `BLOB` object dat het met een certificaat gecodeerde PDF-document bevat.
    * Een tekenreekswaarde die de aliasnaam van de openbare sleutel opgeeft die overeenkomt met de persoonlijke sleutel die wordt gebruikt om het PDF-document te versleutelen.
-   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere methode AEM Forms om een bewerking uit te voeren.
+
+   De methoden `unlockPDFUsingPassword` en `unlockPDFUsingCredential` retourneren beide een `com.adobe.idp.Document` object dat u doorgeeft aan een andere AEM Forms-methode om een bewerking uit te voeren.
 
 1. Voer een AEM Forms-bewerking uit.
 
-   Voer een AEM Forms uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op het ontgrendelde PDF-document, geeft u het `BLOB` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
+   Voer een AEM Forms-bewerking uit op het ontgrendelde PDF-document om aan uw zakelijke vereisten te voldoen. Als u bijvoorbeeld gebruiksrechten wilt toepassen op het ontgrendelde PDF-document, geeft u het `BLOB` object dat is geretourneerd door de methode `unlockPDFUsingPassword` of `unlockPDFUsingCredential` de methode door aan de `ReaderExtensionsServiceClient` methode van het `applyUsageRights` object.
 
 **Zie ook**
 
@@ -930,13 +942,13 @@ Een versleuteld PDF-document ontgrendelen met de API voor versleuteling (webserv
 
 ## Type codering bepalen {#determining-encryption-type}
 
-U kunt programmatisch bepalen welk type versleuteling een PDF-document beveiligt met de Java Encryption Service API of de webservice Encryption Service API. Soms is het nodig dynamisch te bepalen of een PDF-document is versleuteld en, zo ja, het versleutelingstype. U kunt bijvoorbeeld bepalen of een PDF-document is beveiligd met op een wachtwoord gebaseerde codering of met een beleid voor rechtenbeheer.
+U kunt programmatisch bepalen welk type versleuteling een PDF-document beveiligt met de Java Encryption Service API of de webservice Encryption Service API. Soms is het nodig dynamisch te bepalen of een PDF-document is versleuteld en, zo ja, het versleutelingstype. U kunt bijvoorbeeld bepalen of een PDF-document is beveiligd met op een wachtwoord gebaseerde codering of met een beleid voor Rights Managementen.
 
 Een PDF-document kan worden beveiligd door de volgende coderingstypen:
 
 * Codering op basis van wachtwoord
 * Op een certificaat gebaseerde codering
-* Een beleid dat door de dienst van het Beheer van Rechten wordt gecreeerd
+* Een beleid dat door de dienst van het Rights Management wordt gecreeerd
 * Een ander type codering
 
 >[!NOTE]
@@ -961,8 +973,8 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-encryption-client.jar
-* adobe-utilities.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
-* jbossall-client.jar (vereist als AEM Forms worden geïmplementeerd op JBoss Application Server)
+* adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
 **Een serviceclient maken**
 
@@ -1038,12 +1050,12 @@ Bepaal het type versleuteling waarmee een PDF-document wordt beveiligd met de AP
 1. Maak een serviceclient.
 
    * Maak een `EncryptionServiceClient` object met de standaardconstructor.
-   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
+   * Maak een `EncryptionServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/EncryptionService?WSDL`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.)
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `EncryptionServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `EncryptionServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
