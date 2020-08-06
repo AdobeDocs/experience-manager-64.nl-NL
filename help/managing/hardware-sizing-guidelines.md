@@ -1,8 +1,8 @@
 ---
 title: Richtlijnen voor hardwareaanpassing
 seo-title: Richtlijnen voor hardwareaanpassing
-description: Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM- project op te stellen.
-seo-description: Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM- project op te stellen.
+description: Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM project op te stellen.
+seo-description: Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM project op te stellen.
 uuid: 83f928e3-986b-461b-8b3e-8faacd11172e
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 3f4feb38-eca0-4852-88f8-9b20625e18ad
 translation-type: tm+mt
 source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+workflow-type: tm+mt
+source-wordcount: '2843'
+ht-degree: 0%
 
 ---
 
 
 # Richtlijnen voor hardwareaanpassing {#hardware-sizing-guidelines}
 
-Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM- project op te stellen. Het rangschikken van ramingen hangt van de architectuur van het project, de ingewikkeldheid van de oplossing, het verwachte verkeer en de projectvereisten af. Deze gids helpt u om de hardwarebehoeften voor een specifieke oplossing te bepalen, of een hogere en lagere schatting voor de hardwarevereisten te vinden.
+Deze het rangschikken richtlijnen bieden een benadering van de hardwaremiddelen die worden vereist om een AEM project op te stellen. Het rangschikken van ramingen hangt van de architectuur van het project, de ingewikkeldheid van de oplossing, het verwachte verkeer en de projectvereisten af. Deze gids helpt u om de hardwarebehoeften voor een specifieke oplossing te bepalen, of een hogere en lagere schatting voor de hardwarevereisten te vinden.
 
 De belangrijkste factoren die in aanmerking moeten worden genomen zijn (in deze volgorde):
 
@@ -49,7 +52,7 @@ De belangrijkste factoren die in aanmerking moeten worden genomen zijn (in deze 
 
 ## Architectuur {#architecture}
 
-Een standaard AEM-instelling bestaat uit een auteur en een publicatieomgeving. Deze omgevingen hebben verschillende vereisten met betrekking tot de onderliggende hardwaregrootte en systeemconfiguratie. Gedetailleerde overwegingen voor beide omgevingen worden beschreven in de secties [auteur](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) en [publicatieomgeving](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) .
+Een standaardinstelling voor AEM bestaat uit een auteur en een publicatieomgeving. Deze omgevingen hebben verschillende vereisten met betrekking tot de onderliggende hardwaregrootte en systeemconfiguratie. Gedetailleerde overwegingen voor beide omgevingen worden beschreven in de secties [auteur](/help/managing/hardware-sizing-guidelines.md#author-environment-specific-calculations) en [publicatieomgeving](/help/managing/hardware-sizing-guidelines.md#publish-environment-specific-calculations) .
 
 In een typisch projectopstelling, hebt u verscheidene milieu&#39;s waarop aan de fasen van het werkgebiedproject:
 
@@ -63,7 +66,7 @@ In een typisch projectopstelling, hebt u verscheidene milieu&#39;s waarop aan de
 
 * **Productieomgeving** publiceren voor gepubliceerde inhoud.
 
-Bovendien kunnen de omgevingen variëren, variërend van een systeem met één server en een toepassingsserver tot een zeer geschaalde set met meerdere servers, meerdere CPU-geclusterde instanties. Wij adviseren dat u een afzonderlijke computer voor elk productiesysteem gebruikt en dat u geen andere toepassingen op deze computers in werking stelt.
+Bovendien kunnen de omgevingen variëren, variërend van een systeem met één server en een toepassingsserver tot een zeer geschaalde set van multi-server, multi-CPU geclusterde instanties. Wij adviseren dat u een afzonderlijke computer voor elk productiesysteem gebruikt en dat u geen andere toepassingen op deze computers in werking stelt.
 
 ## Algemene overwegingen voor hardwaregrootte {#generic-hardware-sizing-considerations}
 
@@ -98,7 +101,7 @@ Overweeg een installatie van redundante arrays van onafhankelijke schijven (RAID
 
 AEM werkt goed in gevirtualiseerde omgevingen, maar er kunnen factoren zijn zoals CPU of I/O die niet rechtstreeks kunnen worden gelijkgesteld met fysieke hardware. Een aanbeveling is om een hogere I/O-snelheid (in het algemeen) te kiezen, aangezien dit in de meeste gevallen een cruciale factor is. Benchmarking van uw omgeving is nodig om precies te begrijpen welke bronnen nodig zijn.
 
-### Parallelisatie van AEM-instanties {#parallelization-of-aem-instances}
+### Parallelisatie van AEM instanties {#parallelization-of-aem-instances}
 
 #### Misbruikszekerheid {#fail-safeness}
 
@@ -141,13 +144,13 @@ Uit bovenstaande twee tests blijkt duidelijk dat de productie varieert naargelan
 
 ### Caching {#caching}
 
-In de auteursomgeving is de caching efficiency typisch veel lager, omdat de veranderingen in de website frequenter zijn en ook de inhoud hoogst interactief en gepersonaliseerd is. Met behulp van de verzender kunt u AEM-bibliotheken, JavaScripts, CSS-bestanden en lay-outafbeeldingen in cache plaatsen. Hierdoor worden sommige aspecten van het ontwerpproces versneld. Als u de webserver configureert om extra headers in te stellen voor het in cache plaatsen van de browser op deze bronnen, wordt het aantal HTTP-aanvragen verminderd en wordt de systeemresponsiviteit van de auteurs verbeterd.
+In de auteursomgeving is de caching efficiency typisch veel lager, omdat de veranderingen in de website frequenter zijn en ook de inhoud hoogst interactief en gepersonaliseerd is. Met behulp van de verzender kunt u AEM bibliotheken, JavaScripts, CSS-bestanden en lay-outafbeeldingen in cache plaatsen. Hierdoor worden sommige aspecten van het ontwerpproces versneld. Als u de webserver configureert om extra headers in te stellen voor het in cache plaatsen van de browser op deze bronnen, wordt het aantal HTTP-aanvragen verminderd en wordt de systeemresponsiviteit van de auteurs verbeterd.
 
 ### Auteurs die parallel werken {#authors-working-in-parallel}
 
 In de auteursomgeving zijn het aantal auteurs die parallel werken en de lading hun interactie aan het systeem toevoegen de belangrijkste beperkende factoren. Daarom adviseren wij dat u uw systeem schrapt dat op de gedeelde productie van gegevens wordt gebaseerd.
 
-Voor dergelijke scenario&#39;s voert Adobe benchmarktests uit op een cluster van auteurinstanties met twee knooppunten die niets delen.
+Voor dergelijke scenario&#39;s voert Adobe benchmarktests uit op een twee knooppunten die geen cluster van auteursinstanties delen.
 
 * **Benchmarktest 1a**
 
@@ -169,7 +172,7 @@ Voor dergelijke scenario&#39;s voert Adobe benchmarktests uit op een cluster van
 >
 >De productiesnelheid maakt geen onderscheid tussen transactietypen binnen een laadprofiel. De benadering die wordt gebruikt om productie te meten zorgt ervoor dat een vast aandeel van elk type van transactie in de werklast wordt opgenomen.
 
-Uit de twee bovenstaande tests blijkt duidelijk dat AEM goed kan worden geschaald voor auteurs die elementaire bewerkingen met AEM uitvoeren. Over het algemeen is AEM het meest effectief bij het schalen van leesbewerkingen.
+Uit de bovenstaande twee tests blijkt duidelijk dat AEM schaalbaar is voor auteurs die elementaire bewerkingen met AEM uitvoeren. Over het algemeen is AEM het meest effectief bij het schalen van leesbewerkingen.
 
 Op een typische website, gebeurt het meeste creatie tijdens de projectfase. Nadat de website live is gegaan, gooit het aantal auteurs die parallel werken doorgaans naar een lager (operationele modus) gemiddelde.
 
@@ -177,13 +180,13 @@ U kunt het aantal computers (of CPU&#39;s) dat vereist is voor de ontwerpomgevin
 
 `n = numberOfParallelAuthors / 30`
 
-Deze formule kan dienen als algemene richtlijn voor het schrapen van cpu&#39;s wanneer de auteurs basishandelingen met AEM uitvoeren. Hierbij wordt ervan uitgegaan dat het systeem en de toepassing zijn geoptimaliseerd. De formule geldt echter niet voor geavanceerde functies zoals MSM of Elementen (zie de onderstaande secties).
+Deze formule kan als algemene richtlijn voor het schrapen van cpu&#39;s dienen wanneer de auteurs basishandelingen met AEM uitvoeren. Hierbij wordt ervan uitgegaan dat het systeem en de toepassing zijn geoptimaliseerd. De formule geldt echter niet voor geavanceerde functies zoals MSM of Elementen (zie de onderstaande secties).
 
 Zie ook de aanvullende opmerkingen over [Parallelization](/help/managing/hardware-sizing-guidelines.md#parallelization-of-aem-instances) en [Performance Optimization](/help/sites-deploying/configuring-performance.md).
 
-### Hardwareaanbevelingen {#hardware-recommendations}
+### Hardware Recommendations {#hardware-recommendations}
 
-Gewoonlijk kunt u voor uw auteursomgeving dezelfde hardware gebruiken als voor uw het publiceren milieu wordt geadviseerd. Websiteverkeer is doorgaans veel lager op ontwerpsystemen, maar de efficiëntie van de cache is ook lager. De fundamentele factor hierbij is echter het aantal auteurs dat parallel werkt, en het soort acties dat in het systeem wordt ondernomen. In het algemeen is AEM-clustering (van de auteursomgeving) het meest effectief bij het schalen van leesbewerkingen. Met andere woorden, een AEM-cluster kan goed worden geschaald met auteurs die elementaire bewerkingsbewerkingen uitvoeren.
+Gewoonlijk kunt u voor uw auteursomgeving dezelfde hardware gebruiken als voor uw het publiceren milieu wordt geadviseerd. Websiteverkeer is doorgaans veel lager op ontwerpsystemen, maar de efficiëntie van de cache is ook lager. De fundamentele factor hierbij is echter het aantal auteurs dat parallel werkt, en het soort acties dat in het systeem wordt ondernomen. In het algemeen is AEM clustering (van de auteursomgeving) het meest effectief bij het schalen van leesbewerkingen; met andere woorden , een AEM cluster kan goed worden geschaald met auteurs die elementaire bewerkingen uitvoeren .
 
 De benchmarktests bij Adobe zijn uitgevoerd met het RedHat 5.5-besturingssysteem, dat wordt uitgevoerd op een Hewlett-Packard ProLiant DL380 G5-hardwareplatform met de volgende configuratie:
 
@@ -194,13 +197,13 @@ De benchmarktests bij Adobe zijn uitgevoerd met het RedHat 5.5-besturingssysteem
 * Twee 146 GB SAS-schijven (10.000 rpm) geconfigureerd als een RAID0-stripe-set
 * SPEC CINT2006 Rate benchmark score is 110
 
-AEM-instanties werden uitgevoerd met een minimale heapgrootte van 256M, een maximale heapgrootte van 1024M.
+AEM instanties werden uitgevoerd met een minimale heapgrootte van 256M, een maximale heapgrootte van 1024M.
 
 ## Omgevingsspecifieke berekeningen publiceren {#publish-environment-specific-calculations}
 
 ### Efficiëntie en verkeer in cache {#caching-efficiency-and-traffic}
 
-Efficiëntie van de cache is van cruciaal belang voor de snelheid van de website. In de volgende tabel wordt aangegeven hoeveel pagina&#39;s per seconde een geoptimaliseerd AEM-systeem kan verwerken met een reverse-proxy, zoals de verzender:
+Efficiëntie van de cache is van cruciaal belang voor de snelheid van de website. In de volgende tabel wordt aangegeven hoeveel pagina&#39;s per seconde een geoptimaliseerd AEM kan verwerken met een reverse-proxy, zoals de verzender:
 
 | Cacheverhouding | Pagina&#39;s/s (piek) | Miljoen pagina&#39;s/dag (gemiddeld) |
 |---|---|---|
@@ -215,7 +218,7 @@ Efficiëntie van de cache is van cruciaal belang voor de snelheid van de website
 >
 >Disclaimer: De nummers zijn gebaseerd op een standaardhardwareconfiguratie en kunnen variëren afhankelijk van de gebruikte hardware.
 
-De cacheverhouding is het percentage pagina&#39;s dat de verzender kan retourneren zonder toegang te hebben tot AEM. 100% geeft aan dat de verzender alle aanvragen beantwoordt, 0% betekent dat AEM elke pagina berekent.
+De cacheratio is het percentage pagina&#39;s dat de verzender kan retourneren zonder toegang te hebben tot AEM. 100% geeft aan dat de verzender alle aanvragen beantwoordt, 0% betekent dat elke pagina AEM wordt berekend.
 
 ### Complexiteit van sjablonen en toepassingen {#complexity-of-templates-and-applications}
 
@@ -223,7 +226,7 @@ Als u complexe sjablonen gebruikt, heeft AEM meer tijd nodig om een pagina te re
 
 ### Formule {#formula}
 
-Met de volgende formule kunt u een schatting berekenen voor de totale complexiteit van uw AEM-oplossing:
+Met de volgende formule kunt u een schatting berekenen van de totale complexiteit van uw AEM oplossing:
 
 `complexity = applicationComplexity + ((1-cacheRatio) * templateComplexity)`
 
@@ -256,7 +259,7 @@ De variabelen in de vergelijking zijn als volgt:
   </tr>
   <tr>
    <td>templateComplexiteit</td>
-   <td>Gebruik een waarde tussen 1 en 10 om de complexiteit van uw sjablonen aan te geven. Hogere getallen duiden op complexere sjablonen, waarbij de waarde 1 wordt gebruikt voor sites met gemiddeld 10 componenten per pagina, de waarde 5 voor een gemiddelde paginaconcentratie van 40 componenten en 10 voor een gemiddelde van meer dan 100 componenten.</td>
+   <td>Gebruik een waarde tussen 1 en 10 om de complexiteit van uw sjablonen aan te geven. Hogere getallen duiden op complexere sjablonen, waarbij de waarde 1 wordt gebruikt voor sites met gemiddeld 10 componenten per pagina, de waarde 5 voor een gemiddelde paginaconcentratie van 40 componenten en 10 voor gemiddeld meer dan 100 componenten.</td>
   </tr>
   <tr>
    <td>activering</td>
@@ -265,7 +268,7 @@ De variabelen in de vergelijking zijn als volgt:
  </tbody>
 </table>
 
-Als u een complexere website hebt, hebt u ook krachtigere webservers nodig, zodat AEM een aanvraag binnen een aanvaardbare tijd kan beantwoorden.
+Als u een complexere website hebt, hebt u ook krachtigere webservers nodig, zodat AEM een verzoek binnen een aanvaardbare tijd kan beantwoorden.
 
 * Complexiteit onder 4:
    * 1024 MB JVM RAM&amp;ast;
@@ -281,7 +284,7 @@ Als u een complexere website hebt, hebt u ook krachtigere webservers nodig, zoda
 
 >[!NOTE]
 >
-> &amp;ast; Reserve genoeg RAM voor uw werkend systeem naast het geheugen dat voor uw JVM wordt vereist.
+>&amp;ast; Reserve genoeg RAM voor uw werkend systeem naast het geheugen dat voor uw JVM wordt vereist.
 
 ## Aanvullende gebruiksspecifieke berekeningen {#additional-use-case-specific-calculations}
 
@@ -291,7 +294,7 @@ Naast de berekening voor een standaardwebtoepassing moet u wellicht rekening hou
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
-Wijs minstens 16 GB heap toe en configureer de DAM Update Asset-workflow om het [Camera Raw-pakket](/help/assets/camera-raw.md) te gebruiken voor het opnemen van Raw-afbeeldingen.
+Wijs minstens 16 GB heap toe en configureer de DAM Update Asset-workflow om het [Camera Raw pakket](/help/assets/camera-raw.md) te gebruiken voor het opnemen van Raw-afbeeldingen.
 
 >[!NOTE]
 >
@@ -305,7 +308,7 @@ Wijs minstens 16 GB heap toe en configureer de DAM Update Asset-workflow om het 
 
 ### Beheer van meerdere sites {#multi-site-manager}
 
-Het hulpbronnenverbruik wanneer u AEM MSM gebruikt in een ontwerpomgeving, is sterk afhankelijk van de specifieke gebruiksgevallen. Basisfactoren zijn:
+Het hulpmiddelverbruik wanneer het gebruiken van AEM MSM op een auteursmilieu hangt sterk van de specifieke gebruiksgevallen af. Basisfactoren zijn:
 
 * Aantal actieve kopieën
 * Frequentie van rollouts
@@ -314,15 +317,15 @@ Het hulpbronnenverbruik wanneer u AEM MSM gebruikt in een ontwerpomgeving, is st
 
 Het testen van het geplande gebruiksgeval met een representatief inhoudsuittreksel kan u helpen uw begrip van het middelgebruik verbeteren. Als u de resultaten met de geplande productie extrapoleert, kunt u de extra middelen beoordelen die voor AEM MSM worden vereist.
 
-Houd er ook rekening mee dat tegelijkertijd werkende auteurs bijwerkingen van de prestaties zullen waarnemen als AEM MSM-gebruiksgevallen meer middelen verbruiken dan gepland.
+Houd er ook rekening mee dat auteurs die parallel werken, nadelige gevolgen voor de prestaties zullen waarnemen als AEM MSM-gebruiksgevallen meer middelen verbruiken dan gepland.
 
-### AEM-gemeenschappen — Afwegingsoverwegingen {#aem-communities-sizing-considerations}
+### Overwegingen voor AEM Communities-formaat {#aem-communities-sizing-considerations}
 
-AEM-sites die functies van AEM Communities (communitysites) bevatten, ervaren een hoge mate van interactie van sitebezoekers (leden) in de publicatieomgeving.
+AEM sites die AEM Communities-functies (communitysites) bevatten, ervaren veel interactie van sitebezoekers (leden) in de publicatieomgeving.
 
 De rangschikkingsoverwegingen voor een communautaire plaats hangen van de verwachte interactie door communautaire leden af en of optimale prestaties voor paginacontent van hoger belang is.
 
-Door de gebruiker gegenereerde inhoud (UGC) wordt apart van de pagina-inhoud opgeslagen. Terwijl het platform AEM een knoopopslag gebruikt die plaatsinhoud van auteur aan publicatie herhaalt, gebruiken de Gemeenschappen AEM één enkele, gemeenschappelijke opslag voor UGC die nooit wordt herhaald.
+Door de gebruiker gegenereerde inhoud (UGC) wordt apart van de pagina-inhoud opgeslagen. Terwijl het AEM platform een knoopopslag gebruikt die plaatsinhoud van auteur aan publicatie herhaalt, gebruikt AEM Communities één enkele, gemeenschappelijke opslag voor UGC die nooit wordt herhaald.
 
 Voor de opslag UGC, is het noodzakelijk om een leverancier van het opslagmiddel (SRP) te kiezen, die de gekozen plaatsing beïnvloedt.\
 Zie
