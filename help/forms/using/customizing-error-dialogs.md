@@ -1,8 +1,8 @@
 ---
 title: Foutdialoogvensters aanpassen
 seo-title: Foutdialoogvensters aanpassen
-description: Hoe kan ik-om de foutendialogen van de werkruimte van Vormen van LiveCycle aan te passen om verschillende foutenbeschrijvingen toe te voegen.
-seo-description: Hoe kan ik-om de foutendialogen van de werkruimte van Vormen van LiveCycle aan te passen om verschillende foutenbeschrijvingen toe te voegen.
+description: Hoe kan ik-om de foutendialogen van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
+seo-description: Hoe kan ik-om de foutendialogen van de werkruimte van LiveCycle AEM Forms aan te passen om verschillende foutenbeschrijvingen toe te voegen.
 uuid: 5ed1da68-bd5b-4a36-9a14-9d61733237e6
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: f547c0c1-3917-4092-9d63-c1b3aaefcef0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '166'
+ht-degree: 1%
 
 ---
 
 
 # Foutdialoogvensters aanpassen {#customizing-error-dialogs}
 
-In de werkruimte van AEM-formulieren kunt u foutmeldingen aanpassen. Voer de [algemene stappen voor de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) van de AEM Forms-werkruimte uit, gevolgd door de onderstaande stappen, om de foutmeldingen aan te passen.
+In de AEM Forms-werkruimte kunt u de foutmeldingen aanpassen. Voer de [algemene stappen voor de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md) van de AEM Forms-werkruimte uit, gevolgd door de onderstaande stappen, om de foutmeldingen aan te passen.
 
 ## Tekst aanpassen {#customizing-text}
 
