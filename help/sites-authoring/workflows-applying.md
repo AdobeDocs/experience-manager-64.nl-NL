@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '673'
+ht-degree: 12%
 
 ---
 
@@ -39,13 +42,14 @@ Workflows kunnen worden gestart vanaf:
 >
 >* [Hoe te om werkschema&#39;s op activa](/help/assets/assets-workflow.md)toe te passen DAM.
 >* [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md).
+
 >
 
 
 
 >[!NOTE]
 >
->AEM-beheerders kunnen workflows [starten met verschillende andere methoden](/help/sites-administering/workflows-starting.md).
+>AEM beheerders kunnen workflows [starten met verschillende andere methoden](/help/sites-administering/workflows-starting.md).
 
 ## Een workflow starten vanuit de siteconsole {#starting-a-workflow-from-the-sites-console}
 
@@ -98,6 +102,7 @@ U kunt details opgeven:
    * **Titel werkstroom**
 
       * U kunt een titel voor dit exemplaar specificeren, om u te helpen het in een later stadium identificeren.
+
    Afhankelijk van het workflowmodel zijn ook de volgende opties beschikbaar. Hierdoor kan het pakket dat als lading is gemaakt, worden bewaard nadat de workflow is voltooid.
 
    * **Workflowpakket behouden**
@@ -106,7 +111,7 @@ U kunt details opgeven:
       * U kunt een titel voor het pakket opgeven om het te identificeren.
    >[!NOTE]
    >
-   >De optie Workflowpakket **bijeenhouden is beschikbaar wanneer de workflow is geconfigureerd voor** Multi Resource Support [](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) en er meerdere bronnen zijn geselecteerd.
+   >De optie **Workflowpakket bijhouden** is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere resources en er meerdere resources zijn geselecteerd.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
 
    Als u klaar bent, gebruikt u **Volgende** om door te gaan.
 
@@ -124,14 +129,16 @@ U kunt details opgeven:
          * Alleen directe kinderen opnemen.
          * Alleen gewijzigde pagina&#39;s opnemen.
          * Alleen al gepubliceerde pagina&#39;s opnemen.
+
          Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
 
       * **Selectie** verwijderen om die bron uit de workflow te verwijderen.
+
    ![wf-53](assets/wf-53.png)
 
    >[!NOTE]
    >
-   >Als u aanvullende bronnen toevoegt, kunt u **Terug** gebruiken om de instelling voor het werkstroompakket **** Behouden aan te passen in de stap **Eigenschappen** .
+   >Als u aanvullende resources toevoegt, kunt u **Terug** gebruiken om de instelling voor **Workflowpakket behouden** aan te passen in de stap **Eigenschappen**.
 
 1. Gebruik **Maken** om de wizard te sluiten en de instantie van de workflow te maken. Een bericht wordt getoond in de console van Plaatsen.
 
