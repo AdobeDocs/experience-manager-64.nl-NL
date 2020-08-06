@@ -1,7 +1,7 @@
 ---
 title: Basisstructuur
 seo-title: Basisstructuur
-description: Soms moet u een grote set pagina's maken die dezelfde structuur hebben maar andere inhoud hebben. Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig pagina's maken op basis van deze structuur.
+description: Soms moet u een grote set pagina's maken die dezelfde structuur hebben maar andere inhoud hebben. Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig op deze structuur gebaseerde pagina's maken.
 seo-description: Soms moet u een grote set pagina's maken die dezelfde structuur hebben maar andere inhoud hebben. Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina's weerspiegelen. Met dit formulier kunt u eenvoudig pagina's maken op basis van deze structuur.
 uuid: b1fdf2c0-e6d0-488a-96e5-dfbd6beb7610
 contentOwner: Chris Bohnert
@@ -11,13 +11,16 @@ topic-tags: site-features
 discoiquuid: 884b3e75-78b5-421a-938e-97fe6d77c8c2
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1507'
+ht-degree: 0%
 
 ---
 
 
 # Basisstructuur{#scaffolding}
 
-Soms moet u een grote set pagina&#39;s maken die dezelfde structuur hebben maar andere inhoud hebben. Via de standaard-AEM-interface moet u elke pagina maken, de juiste componenten naar de pagina slepen en elk van de pagina&#39;s afzonderlijk invullen.
+Soms moet u een grote set pagina&#39;s maken die dezelfde structuur hebben maar andere inhoud hebben. Via de standaardinstelling voor AEM moet u elke pagina maken, de juiste componenten naar de pagina slepen en elk van de pagina&#39;s afzonderlijk invullen.
 
 Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die de gewenste structuur voor uw pagina&#39;s weerspiegelen. Met dit formulier kunt u eenvoudig pagina&#39;s maken op basis van deze structuur.
 
@@ -53,7 +56,7 @@ Het lichaam van het substraat is de vorm. Wanneer een gebruiker een pagina wil m
 * **Titel**: Dit is de naam van de pagina die moet worden gemaakt. Dit veld is altijd aanwezig op elk substraat.
 * **Tekst**: Dit veld komt overeen met een tekstcomponent op de resulterende pagina.
 * **Afbeelding**: Dit veld komt overeen met een afbeeldingscomponent op de resulterende pagina.
-* **Afbeelding/Geavanceerd**: **Titel**:De titel van de afbeelding.
+* **Afbeelding/Geavanceerd**: **Titel**: De titel van de afbeelding.
 
 * **Afbeelding/Geavanceerd**: **Alt-tekst**: De alt-tekst voor de afbeelding.
 
