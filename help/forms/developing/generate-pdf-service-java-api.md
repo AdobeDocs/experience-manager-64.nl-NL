@@ -28,11 +28,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de service Generate PDF.
 
 [Snel starten (SOAP-modus): Een PDF-document converteren naar een RTF-bestand met de Java API (SOAP-modus)](generate-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-an-rtf-file-using-the-java-api-soap-mode)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
->Het snelle Begin dat in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Vormen op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Begin die in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Een Microsoft Word-document converteren naar een PDF-document met de Java API {#quick-start-soap-mode-converting-a-microsoft-word-document-to-a-pdf-document-using-the-java-api}
 
