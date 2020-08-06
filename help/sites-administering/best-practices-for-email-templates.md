@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
 source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
+workflow-type: tm+mt
+source-wordcount: '1054'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 8e6eaa5053bb94fa33e027594bdc2e30ad16d62e
 
 In dit document worden enkele van de aanbevolen procedures beschreven voor het ontwerpen van e-mailberichten. Dit resulteert in een goed ontwikkelde sjabloon voor e-mailcampagnes.
 
-De demo-campagne in AEM volgt al deze best practices. Hoe de beste praktijken in de demo campagne worden uitgevoerd wordt beschreven voor elke beste praktijken.
+De demo-campagne in AEM volgt al deze beste praktijken. Hoe de beste praktijken in de demo campagne worden uitgevoerd wordt beschreven voor elke beste praktijken.
 
 Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 
@@ -30,14 +33,14 @@ Gebruik deze aanbevolen procedures bij het maken van uw eigen nieuwsbrief.
 >* `/content/campaigns/teasers/en/campaign-promotion-global`
 >
 >
-Zorg ervoor dat het bestand zich onder een stramienpagina bevindt:
+Zorg ervoor dat het bestand zich onder een master pagina bevindt:
 >
 >* `/content/campaigns/teasers/master/en/campaign-promotion-global`
 
 
 >[!NOTE]
 >
->Wanneer u een mailsjabloon voor Adobe Campaign maakt, moet u de eigenschap **Mapping** opnemen met de waarde **mapRecipient** in het knooppunt **jcr:content** van de sjabloon. U kunt de Adobe Campagne-sjabloon niet selecteren in **Pagina-eigenschappen** van AEM (veld is uitgeschakeld).
+>Wanneer u een mailsjabloon voor Adobe Campaign maakt, moet u de eigenschap **Mapping** met de waarde **mapRecipient** opnemen in het knooppunt **jcr:content** van de sjabloon, anders kunt u de Adobe Campaign-sjabloon niet selecteren in **Pagina-eigenschappen** van AEM (veld is uitgeschakeld).
 
 ## Sjabloon/pagina-component {#template-page-component}
 
@@ -121,14 +124,14 @@ Zorg ervoor dat het bestand zich onder een stramienpagina bevindt:
 | **Beste praktijken** | **Implementatie** |
 |---|---|
 | Gebruik W3C-validatie om de HTML-code te corrigeren. Zorg ervoor dat alle open labels goed zijn gesloten. | Code is gevalideerd. Voor XHTML-overgangsdocument ontbreekt alleen het ontbrekende xmlns-kenmerk voor het `<html>` element. |
-| Let niet op met JavaScript of Flash: deze technologieën worden grotendeels niet ondersteund door e-mailclients. | JavaScript en Flash worden niet gebruikt in de sjabloon voor nieuwsbrieven. |
+| Let niet op met JavaScript of Flash - deze technologieën worden grotendeels niet ondersteund door e-mailclients. | JavaScript en Flash worden niet gebruikt in de sjabloon voor nieuwsbrieven. |
 | Voeg een gewone tekstversie toe voor het verzenden van meerdere onderdelen. | Er is een nieuwe widget toegevoegd aan de pagina-eigenschappen om eenvoudig een plaintekstversie uit de pagina-inhoud te extraheren. Dit kan als uitgangspunt voor de definitieve plaintext versie worden gebruikt. |
 
 ## Sjablonen en voorbeelden voor nieuwsbrieven voor campagnes {#campaign-newsletter-templates-and-examples}
 
-AEM wordt geleverd met verschillende sjablonen en componenten uit de verpakking die u nodig hebt om campagnebulletins te maken. U kunt deze sjablonen en componenten gebruiken om uw aangepaste nieuwsbrieven te maken.
+AEM wordt geleverd met verschillende sjablonen en componenten uit de doos die u kunt gebruiken om campagnebulletins te maken. U kunt deze sjablonen en componenten gebruiken om uw aangepaste nieuwsbrieven te maken.
 
-### Templates {#templates}
+### Sjablonen {#templates}
 
 Er zijn drie enigszins verschillende sjabloontypen beschikbaar uit het vak om een solide basis aan te bieden en de verscheidenheid aan mogelijkheden voor inhoudsstroom uit te breiden. U kunt deze eenvoudig gebruiken om een aangepaste nieuwe letter te maken.
 
@@ -154,4 +157,4 @@ Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemal
 >
 >Deze componenten zijn geoptimaliseerd voor e-mailinhoud. dat wil zeggen dat zij zich houden aan de beste praktijken die in dit document worden beschreven. Het gebruiken van andere uit-van-de-doos componenten zal gewoonlijk deze regels overtreden.
 
-Deze componenten worden in detail beschreven in de componenten [van de Campagne van](/help/sites-authoring/adobe-campaign-components.md)Adobe.
+Deze componenten worden gedetailleerd beschreven in [Adobe Campaign-componenten](/help/sites-authoring/adobe-campaign-components.md).
