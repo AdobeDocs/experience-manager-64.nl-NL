@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
@@ -18,14 +21,14 @@ source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
 
 ## Overzicht {#overview}
 
-U kunt verschillende typen gebruikers hebben met verschillende vaardigheden die werken met Adaptieve formulieren. Hoewel ervaren gebruikers de juiste kennis hebben om met scripts en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die alleen met de indeling en basiseigenschappen van adaptieve formulieren moeten werken.
+U kunt verschillende typen gebruikers hebben met verschillende vaardigheden die werken met Adaptive Forms. Hoewel ervaren gebruikers de juiste kennis hebben om met scripts en complexe regels te werken, kunnen er gebruikers op basisniveau zijn die alleen met de indeling en basiseigenschappen van adaptieve formulieren moeten werken.
 
-Met AEM Forms kunt u de toegang tot regeleditors beperken tot gebruikers op basis van hun rol of functie. In de Adaptive montages van de Dienst van de Configuratie van Vormen, kunt u de [gebruikersgroepen](/help/sites-administering/security.md) specificeren die tot regelredacteur kunnen bekijken en toegang hebben.
+AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te beperken die op hun rol of functie wordt gebaseerd. In de Adaptive Forms Configuration Service-instellingen kunt u de [gebruikersgroepen](/help/sites-administering/security.md) opgeven die de regeleditor kunnen weergeven en openen.
 
 ## Geef gebruikersgroepen op die toegang kunnen krijgen tot de regeleditor {#specify-user-groups-that-can-access-rule-editor}
 
 1. Meld u als beheerder aan bij AEM Forms.
-1. Klik in de auteurinstantie op ![](assets/adobeexperiencemanager.png)adobeexperienceManagerAdobe Experience Manager > Tools ![hammer](assets/hammer.png) > Operations > Web Console. De webconsole wordt in een nieuw venster geopend.
+1. Klik in de auteurinstantie op ![](assets/adobeexperiencemanager.png)adobeexperienceAdobe Experience Manager > ![Tools hammer](assets/hammer.png) > Operations > Web Console. De webconsole wordt in een nieuw venster geopend.
 
    ![1](assets/1.png)
 
