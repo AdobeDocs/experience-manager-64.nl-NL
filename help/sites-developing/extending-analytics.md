@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
 translation-type: tm+mt
 source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Met AEM Analytics kunt u gebruikersinteractie op uw website volgen. Als ontwikke
 
 >[!NOTE]
 >
->Deze informatie is in principe algemeen, maar gebruikt [Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
+>Deze informatie is eigenlijk algemeen, maar gebruikt [Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor specifieke voorbeelden.
 >
 >Zie [Componenten](/help/sites-developing/components.md)ontwikkelen voor algemene informatie over het ontwikkelen van componenten en dialoogvensters.
 
@@ -58,7 +61,7 @@ Een voorbeeld zou als kunnen kijken:
 </span>
 ```
 
-Bij het laden van de pagina worden alle `data-tracking` kenmerken verzameld en toegevoegd aan de gebeurtenisopslag van de ContextHub, waar ze kunnen worden toegewezen aan Adobe Analytics-gebeurtenissen. Gebeurtenissen die niet worden toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [Verbinding maken met Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor meer informatie over toewijzingsgebeurtenissen.
+Bij paginading, zullen alle `data-tracking` attributen worden verzameld en aan de gebeurtenisopslag van ContextHub toegevoegd, waar zij aan de gebeurtenissen van Adobe Analytics kunnen worden in kaart gebracht. Gebeurtenissen die niet zijn toegewezen, worden niet bijgehouden door Adobe Analytics. Zie [Verbinding maken met Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor meer informatie over toewijzingsgebeurtenissen.
 
 ### Aangepaste gebeurtenissen bijhouden na laden van pagina {#tracking-custom-events-after-page-load}
 
