@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 31cc7819-cc4d-4804-9fab-005d8bef0714
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '137'
+ht-degree: 0%
 
 ---
 
 
-# Aan de slag met AEM Communities for Enablement {#getting-started-with-aem-communities-for-enablement}
+# Aan de slag met AEM Communities for Enablement  {#getting-started-with-aem-communities-for-enablement}
 
 AEM Communities helpt merken consistente ervaringen te creëren op digitale en persoonlijke kanalen door het inschakelen van werknemers en klanten te vergemakkelijken met een catalogus van bronnen voor activering, toegewezen inhoud en dynamische aanbevelingen, allemaal geleverd binnen een sociale gemeenschap om betrokkenheid te bevorderen.
 
 Hieronder volgt een zelfstudie over het snel opzetten van een [enablement-gemeenschap](overview.md#enablement-community) voor demonstratie- of ontwikkelingsdoeleinden.
 
-Ga naar [Aan de slag met AEM-gemeenschappen](overview.md#engagement-community)voor een zelfstudie over het snel instellen van een [betrokkenheidsgemeenschap](getting-started.md).
+Ga naar [Aan de slag met AEM Communities](overview.md#engagement-community)voor een zelfstudie over het snel instellen van een [betrokkenheidsgemeenschap](getting-started.md).
 
 >[!NOTE]
 >
