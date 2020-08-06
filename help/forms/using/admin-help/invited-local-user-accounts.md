@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1220'
+ht-degree: 0%
 
 ---
 
@@ -52,7 +55,7 @@ U kunt informatie weergeven over lokale gebruikers, zoals naam, e-mailadres, org
 
 ## Een e-mail verzenden naar een niet-geregistreerde externe gebruiker {#send-an-email-to-an-unregistered-external-user}
 
-Wanneer u een uitgenodigde gebruiker toevoegt, verzendt de documentveiligheid automatisch een registratie-e-mailverzoek. U kunt ook handmatig een registratie-e-mailbericht genereren dat wordt verzonden naar een uitgenodigde gebruiker die zich nog niet heeft geregistreerd. U kunt dit bijvoorbeeld doen om een nieuwe uitnodiging te verzenden als de registratie-e-mail van een uitgenodigde gebruiker verloopt.
+Wanneer u een uitgenodigde gebruiker toevoegt, verzendt de documentveiligheid automatisch een registratie-e-mailverzoek. U kunt ook handmatig een registratie-e-mail genereren om te verzenden naar een uitgenodigde gebruiker die zich nog niet heeft geregistreerd. U kunt dit bijvoorbeeld doen om een nieuwe uitnodiging te verzenden als de registratie-e-mail van een uitgenodigde gebruiker verloopt.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers.
 1. Schakel in de gebruikerslijst het selectievakje in waarnaar elke gebruiker een registratiebericht verzendt en klik op Uitnodiging-e-mail opnieuw verzenden.
@@ -94,7 +97,7 @@ Als u een gebruikersaccount verwijdert, kan alleen u of een andere beheerder de 
 
 >[!NOTE]
 >
->Uitgenodigde gebruikers die zijn verwijderd via de gebruikersbeheerinterface van AEM-formulieren, kunnen pas opnieuw worden uitgenodigd als ze opnieuw zijn verwijderd via de volgende procedure.
+>Uitgenodigde gebruikers die zijn verwijderd via de gebruikersbeheerinterface van AEM formulieren, kunnen pas opnieuw worden uitgenodigd als ze opnieuw zijn verwijderd via de volgende procedure.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers en klik op het tabblad Uitgenodigde gebruikers.
 1. Schakel het selectievakje naast een of meer gebruikers in, klik op Verwijderen en klik op OK.
