@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '1247'
+ht-degree: 0%
 
 ---
 
@@ -32,7 +35,7 @@ Interactieve prestaties worden gemeten in termen van responstijd van de pagina. 
 
 **2. Middelenverwerking** Een probleem bij de verwerking van bedrijfsmiddelen is wanneer gebruikers elementen uploaden en het duurt enkele minuten voordat elementen gemakkelijk worden omgezet en opgenomen in AEM DAM.
 
-De prestaties van de verwerking van bedrijfsmiddelen worden gemeten in termen van de gemiddelde voltooiingstijd van het werkstroomproces. Dit is de tijd die nodig is om het workflowproces voor het bijwerken van bedrijfsmiddelen aan te roepen tot de voltooiing ervan. Dit kan worden bepaald vanuit de gebruikersinterface van de workflowrapporten. De standaardprestaties van het doel zijn afhankelijk van de grootte en het type van de verwerkte elementen en het aantal uitvoeringen. Voorbeelden van doelprestaties kunnen als volgt zijn:
+De prestaties van de verwerking van bedrijfsmiddelen worden gemeten in termen van de gemiddelde voltooiingstijd van het werkstroomproces. Dit is de tijd die nodig is om het workflowproces voor het bijwerken van bedrijfsmiddelen aan te roepen tot de voltooiing ervan, die kan worden bepaald vanuit de gebruikersinterface van workflowrapporten. De standaardprestaties van het doel zijn afhankelijk van de grootte en het type van de verwerkte elementen en het aantal uitvoeringen. Voorbeelden van doelprestaties kunnen als volgt zijn:
 
 * minder dan 10 seconden voor afbeeldingen die kleiner zijn dan 1280x1280 pixels, met gebruik van standaardexpressies
 * Minder dan één minuut voor afbeeldingen die kleiner zijn dan 100 MB met behulp van standaarduitvoeringen
@@ -47,7 +50,7 @@ De uitvoerprestaties worden gemeten in kilobits per seconde. De typische doelpre
 Om te kunnen schatten welke hardware u nodig hebt om activa te verwerken, moeten de volgende aspecten in aanmerking worden genomen:
 
 * De resolutie van de afbeeldingen in een hoeveelheid pixels
-* De heap die is toegewezen aan het AEM-proces
+* De heap die is toegewezen aan AEM proces
 
 De verwerkingstijd wordt bepaald door de hoeveelheid pixels in de afbeelding. Meer pixels betekent dat de verwerking langer duurt.\
 Het afbeeldingstype, de compressiesnelheid of de gerelateerde grootte van het bestand waarin de afbeelding is opgeslagen, hebben geen significante invloed op de algehele prestaties.
@@ -60,7 +63,7 @@ De DAM-processen zijn zeer geschikt om in gelijke mate te worden uitgevoerd. Het
 
 Voor een uitgebreide verwerking van digitale elementen zijn geoptimaliseerde hardwarebronnen nodig. De belangrijkste factoren zijn de beeldgrootte en de maximale doorvoer van verwerkte afbeeldingen.
 
-Wijs minstens 16 GB heap toe en configureer de DAM Update Asset-workflow om het [Camera Raw-pakket](/help/assets/camera-raw.md) te gebruiken voor het opnemen van Raw-afbeeldingen.
+Wijs minstens 16 GB heap toe en configureer de DAM Update Asset-workflow om het [Camera Raw pakket](/help/assets/camera-raw.md) te gebruiken voor het opnemen van Raw-afbeeldingen.
 
 ## Het systeem begrijpen {#understanding-the-system}
 
@@ -72,9 +75,9 @@ De volgende legenda beschrijft de mogelijke gebieden van de prestatiesdaling met
 
 **Tijdelijk bestandssysteem** Een traag lokaal bestandssysteem kan problemen met interactieve prestaties veroorzaken, vooral als het gaat om zoeken, omdat de zoekindexen op de lokale schijf worden opgeslagen. Het kan extra problemen van de activaverwerking veroorzaken als het proces van de bevellijn wordt gebruikt.
 
-**AEM DAM Finder** Interactieve prestatiesproblemen, die vaak in onderzoeken worden ervaren worden veroorzaakt door hoog gebruik van cpu toe te schrijven aan vele gezamenlijke gebruikers of andere cpu-verbruikende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als een hoge processorbelasting wordt veroorzaakt door de verwerking van bedrijfsmiddelen en veel gelijktijdige gebruikers, wordt u aangeraden extra clusterknooppunten toe te voegen.
+**AEM DAM Finder** Interactieve prestatiesproblemen, vaak ervaren in onderzoeken worden veroorzaakt door hoog gebruik van cpu toe te schrijven aan vele gelijktijdige gebruikers of andere cpu-verbruikende processen op de zelfde instantie. U kunt de prestaties verbeteren door van virtuele machines over te schakelen op speciale machines en ervoor te zorgen dat er geen andere services op de computer worden uitgevoerd. Als een hoge processorbelasting wordt veroorzaakt door de verwerking van bedrijfsmiddelen en veel gelijktijdige gebruikers, wordt u aangeraden extra clusterknooppunten toe te voegen.
 
-**AEM DAM Workflow** Lange-actieve workflowprocessen tijdens het opnemen van bedrijfsmiddelen veroorzaken prestatieproblemen bij de verwerking van bedrijfsmiddelen. Afhankelijk van het type elementen dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. De dag adviseert dat u het aantal andere processen vermindert die op het systeem lopen en het aantal beschikbare cpu&#39;s verhoogt door clusterknopen toe te voegen.
+**AEM DAM-workflow** Langdurige workflowprocessen tijdens het opnemen van bedrijfsmiddelen veroorzaken prestatieproblemen bij de verwerking van bedrijfsmiddelen. Afhankelijk van het type elementen dat wordt verwerkt, kan dit wijzen op CPU-overbenutting. De dag adviseert dat u het aantal andere processen vermindert die op het systeem lopen en het aantal beschikbare cpu&#39;s verhoogt door clusterknopen toe te voegen.
 
 **De slechte connectiviteit van de Connectiviteit** NAS van de Connectiviteit aan NAS veroorzaakt interactieve prestatiesproblemen, omdat de toegang tot van nieuwe knopen tijdens activaverwerking als gevolg van netwerklatentie wordt vertraagd. Bovendien, beïnvloedt de langzame netwerkproductie negatief productie, maar ook prestaties van de activaverwerking, omdat het laden en het bewaren van uitvoeringen wordt vertraagd.
 
@@ -102,7 +105,7 @@ Voor elk DAM-project moet u een systeem voor het testen van de prestaties instel
 
 De volgende prestatietwekken zijn tot dusver gebruikt in projecten:
 
-* Selectieve uitvoering genereren: U kunt alleen de uitvoeringen genereren die u nodig hebt door voorwaarden toe te voegen aan de workflow voor het verwerken van elementen, zodat alleen voor bepaalde elementen duurdere uitvoeringen worden gegenereerd.
+* Selectieve uitvoering genereren: genereren alleen de uitvoeringen die u nodig hebt door voorwaarden toe te voegen aan de workflow voor het verwerken van elementen, zodat alleen voor bepaalde elementen duurdere uitvoeringen worden gegenereerd.
 * Gedeelde gegevensopslag tussen instanties: wanneer het runnen van laag op schijfruimte kan dit de hoeveelheid schijfruimte beduidend verminderen nodig ten koste van hogere configuratieinspanningen en het verliezen van auto-schoonmaak van de datastore.
 
 ## Meer informatie {#further-reading}
