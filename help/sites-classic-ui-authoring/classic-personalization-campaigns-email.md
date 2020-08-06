@@ -1,8 +1,8 @@
 ---
 title: E-mailmarketing
 seo-title: E-mailmarketing
-description: E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM-inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
-seo-description: E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM-inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
+description: E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
+seo-description: E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
 uuid: 798e06cd-64dd-4a8d-8a7a-9a7ba80045f6
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eb72f934-4b0f-4a71-b2a2-3ddf78db8c3c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1771'
+ht-degree: 0%
 
 ---
 
@@ -19,14 +22,14 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->Adobe is niet van plan om open/aangekondigde e-mailberichten die door de AEM SMTP-service worden verzonden, verder te verbeteren.\
->De aanbeveling is om Adobe Campagne en zijn integratie [van AEM te](/help/sites-administering/campaign.md)gebruiken.
+>Adobe is niet van plan de e-mails die door de AEM SMTP-service worden verzonden, verder te verbeteren.\
+>De aanbeveling is Adobe Campaign en de AEM ervan [te benutten](/help/sites-administering/campaign.md).
 
-E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM-inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
+E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
 
 Nadat u de nieuwsbrieven hebt gemaakt, kunt u deze direct of op een ander gepland tijdstip naar de specifieke groep gebruikers sturen (via een workflow). Bovendien kunnen gebruikers zich abonneren op nieuwsbrieven in de door hen gekozen indeling.
 
-Daarnaast kunt u met AEM de functionaliteit voor nieuwsbrieven beheren, waaronder het onderhouden van onderwerpen, het archiveren van nieuwsbrieven en het weergeven van nieuwsbrieven.
+Daarnaast kunt AEM u de functionaliteit voor nieuwsbrieven beheren, waaronder het onderhouden van onderwerpen, het archiveren van nieuwsbrieven en het weergeven van nieuwsbrieven.
 
 >[!NOTE]
 >
@@ -96,13 +99,13 @@ In dit document worden de basisbeginselen van het maken van nieuwsbrieven in AEM
    * **Standaardlijst met ontvangers**
 
       Standaardlijst die de nieuwsbrief moet ontvangen.
-   **Deze kunnen in een later stadium van de** Eigenschappen worden bijgewerkt... .
+   Deze kunnen in een later stadium van de **Eigenschappen worden bijgewerkt...** .
 
 1. Klik op **OK** om op te slaan.
 
 ## Inhoud toevoegen aan nieuwsbrieven {#adding-content-to-newsletters}
 
-U kunt inhoud, inclusief dynamische inhoud, op dezelfde manier aan uw nieuwsbrief toevoegen als in een willekeurige AEM-component. In Geometrixx, heeft het malplaatje van de Nieuwsbrief bepaalde componenten beschikbaar voor het toevoegen van en het wijzigen van inhoud in nieuwsbrieven.
+U kunt inhoud, inclusief dynamische inhoud, op dezelfde manier aan uw nieuwsbrief toevoegen als in elke AEM. In Geometrixx, heeft het malplaatje van de Nieuwsbrief bepaalde componenten beschikbaar voor het toevoegen van en het wijzigen van inhoud in nieuwsbrieven.
 
 1. Klik in de MCM op het tabblad **Campagnes** en dubbelklik op de nieuwsbrief waaraan u inhoud wilt toevoegen of bewerken. De nieuwsbrief wordt geopend.
 
@@ -111,7 +114,7 @@ U kunt inhoud, inclusief dynamische inhoud, op dezelfde manier aan uw nieuwsbrie
 
    >[!NOTE]
    >
-   >U kunt nieuwsbrieven personaliseren door variabelen te gebruiken. In de nieuwsbrief van Geometrixx, zijn de variabelen beschikbaar in de component van de Tekst. Waarden voor de variabelen worden overgenomen van de gegevens in het gebruikersprofiel.
+   >U kunt nieuwsbrieven personaliseren door variabelen te gebruiken. In de nieuwsbrief van de Geometrixx zijn de variabelen beschikbaar in de component van de Tekst. Waarden voor de variabelen worden overgenomen van de gegevens in het gebruikersprofiel.
 
    ![mcm_nieuwsbrief_content](assets/mcm_newsletter_content.png)
 
@@ -193,6 +196,7 @@ De nieuwsbrief-instellingen aanpassen:
    1. Wijzig indien nodig het **onderwerp** van de e-mail.
    1. Selecteer een **lijst** met standaardontvangers in de vervolgkeuzelijst.
    1. Click **OK**.
+
    Wanneer u de nieuwsbrief test of verzendt, zullen de ontvangers e-mail met het gespecificeerde e-mailadres en onderwerp ontvangen.
 
 ## Nieuwsbrieven voor vliegtests {#flight-testing-newsletters}
@@ -291,11 +295,11 @@ In deze sectie wordt beschreven hoe u zich op een nieuwsbrief kunt abonneren.
 
 ### Abonneren op een nieuwsbrief {#subscribing-to-a-newsletter-1}
 
-Een abonnement nemen op een nieuwsbrief (met de Geometrixx-website als voorbeeld):
+Abonneren op een nieuwsbrief (de website van de Geometrixx als voorbeeld gebruiken):
 
 1. Klik op **Websites** en navigeer naar de **werkbalk** Geometrixx en open deze.
 
    ![chlimage_1-169](assets/chlimage_1-169.png)
 
-1. Voer in het veld **Aanmelden bij** Geometrixx Newsletter uw e-mailadres in en klik op **Aanmelden**. U bent nu geabonneerd op de nieuwsbrief.
+1. Voer in het veld **Aanmelden bij** nieuwsbrief van Geometrixx uw e-mailadres in en klik op **Aanmelden**. U bent nu geabonneerd op de nieuwsbrief.
 
