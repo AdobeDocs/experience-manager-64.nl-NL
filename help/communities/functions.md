@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cc993b71-e2f2-48e7-ad4e-469cb5ce2dc1
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '2431'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
 
 Het type functies dat wordt verwacht van een community-ervaring is bekend. De communautaire eigenschappen zijn beschikbaar als communautaire functies. In wezen zijn ze een of meer pagina&#39;s die vooraf zijn bekabeld om een community-functie te implementeren. Hiervoor is meer nodig dan alleen het toevoegen van een component aan een pagina in de modus Schrijven. Zij zijn de bouwstenen die worden gebruikt om de structuur van een malplaatje [van de](sites.md) communautaire plaats te bepalen waarvan de communautaire plaatsen worden [gecreeerd](sites-console.md).
 
-Nadat een gemeenschapssite is gemaakt, kan inhoud aan de resulterende pagina&#39;s worden toegevoegd met de standaard [AEM-ontwerpmodus](../../help/sites-authoring/editing-content.md).
+Wanneer een communitysite is gemaakt, kan inhoud aan de resulterende pagina&#39;s worden toegevoegd met de standaard [AEM ontwerpmodus](../../help/sites-authoring/editing-content.md).
 
 Een aantal communautaire functies zijn onmiddellijk beschikbaar zoals die in de console van communautaire functies worden gezien. In toekomstige versies worden meer communityfuncties geleverd en er kunnen ook aangepaste functies worden gemaakt.
 
@@ -31,13 +34,13 @@ Een aantal communautaire functies zijn onmiddellijk beschikbaar zoals die in de 
 
 In de auteursomgeving, om de console van communautaire functies te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen > Communautaire functies]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Community Functions]**
 
 ![chlimage_1-379](assets/chlimage_1-379.png)
 
 ## Vooraf gebouwde functies {#pre-built-functions}
 
-Hieronder volgt een korte beschrijving van de functies die aan AEM-gemeenschappen worden geleverd. Elke functie bestaat uit een of meer AEM-pagina&#39;s die onderdelen van de Gemeenschappen bevatten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een sjabloon [voor](sites.md)gemeenschapssites.
+Hieronder volgt een korte beschrijving van de functies die bij AEM Communities worden geleverd. Elke functie bestaat uit een of meer AEM pagina&#39;s die onderdelen van de Gemeenschappen bevatten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een sjabloon [voor](sites.md)gemeenschapssites.
 
 Een communitysitesjabloon biedt de structuur voor een communitysite, zoals aanmeldingsgegevens, gebruikersprofielen, meldingen, berichten, berichten, het menu van de site, zoeken, thema&#39;s en brandingfuncties.
 
@@ -51,9 +54,12 @@ Wanneer een communautaire functie aan een malplaatje van de communautaire plaats
 
 ![chlimage_1-380](assets/chlimage_1-380.png)
 
-* **[!UICONTROL Titel]**(*vereist*) De tekst die wordt weergegeven in het menu met functies voor de site
+* **[!UICONTROL Title]**
+(
+*(vereist*) De tekst die wordt weergegeven in het menu met functies voor de site
 
-* **[!UICONTROL URL]**(*vereist*) De naam die wordt gebruikt om URI te genereren. De naam moet voldoen aan de [naamgevingsconventies](../../help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
+* **[!UICONTROL URL]**
+(*vereist*) De naam die wordt gebruikt om URI te genereren. De naam moet voldoen aan de [naamgevingsconventies](../../help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
 
 Als u bijvoorbeeld de site gebruikt die u hebt gemaakt op basis van de zelfstudie [Aan de slag](getting-started.md) , als
 
@@ -75,11 +81,14 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-382](assets/chlimage_1-382.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Weergave]** Mijn activiteiten weergeven Als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die door het huidige lid binnen de gemeenschap zijn gegenereerd. Standaard is ingeschakeld.
+* **[!UICONTROL Show "My Activities" view]**
+Als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die door het huidige lid binnen de gemeenschap worden gegenereerd. Standaard is ingeschakeld.
 
-* **[!UICONTROL De weergave]** Alle activiteiten weergeven Als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad dat alle activiteiten bevat die zijn gegenereerd binnen de gemeenschap waartoe het huidige lid toegang heeft. Standaard is ingeschakeld.
+* **[!UICONTROL Show "All Activities" view]**
+Als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad dat alle activiteiten bevat die zijn gegenereerd binnen de gemeenschap waartoe het huidige lid toegang heeft. Standaard is ingeschakeld.
 
-* **[!UICONTROL Weergave]**&quot;News Feed&quot; weergeven Als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
+* **[!UICONTROL Show "News Feed" view]**
+Als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
 
 ### Toewijzingsfunctie {#assignments-function}
 
@@ -98,13 +107,17 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-383](assets/chlimage_1-383.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Geprivilegieerde leden]** toestaan Als deze optie is ingeschakeld, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap het bestand maken. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Privileged Members]**
+Als deze optie is ingeschakeld, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap het bestand maken. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Uploaden]** van bestand toestaan Als deze optie is ingeschakeld, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is ingeschakeld.
+* **[!UICONTROL Allow File Uploads]**
+Als deze optie is ingeschakeld, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is ingeschakeld.
 
-* **[!UICONTROL Reacties]** met verbindingen toestaan Als deze optie niet is ingeschakeld, staat de blog reacties (opmerkingen) op een artikel toe, maar antwoorden op opmerkingen zijn niet toegestaan. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Threaded Replies]**
+Als deze optie niet is ingeschakeld, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is ingeschakeld.
 
-* **[!UICONTROL Aanbevolen inhoud]** toestaan Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
+* **[!UICONTROL Allow Featured Content]**
+Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
 
 ### Kalenderfunctie {#calendar-function}
 
@@ -115,15 +128,20 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-384](assets/chlimage_1-384.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Vastzetten]** toestaan Als deze optie is ingeschakeld, kunnen de reacties op het onderwerp worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Pinning]**
+Als deze optie is ingeschakeld, kunnen de reacties op onderwerpen worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is ingeschakeld.
 
-* **[!UICONTROL Geprivilegieerde leden]** toestaan Als deze optie is ingeschakeld, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap het bestand maken. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Privileged Members]**
+Als deze optie is ingeschakeld, staat de blog alleen geprivilegieerde leden toe artikelen te maken door de selectie van een groep [](users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap het bestand maken. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Uploaden]** van bestand toestaan Als deze optie is ingeschakeld, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is ingeschakeld.
+* **[!UICONTROL Allow File Uploads]**
+Als deze optie is ingeschakeld, bevat de blog de mogelijkheid voor leden om bestanden te uploaden. Standaard is ingeschakeld.
 
-* **[!UICONTROL Reacties]** met verbindingen toestaan Als deze optie niet is ingeschakeld, staat de blog reacties (opmerkingen) op een artikel toe, maar antwoorden op opmerkingen zijn niet toegestaan. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Threaded Replies]**
+Als deze optie niet is ingeschakeld, staat de blog reacties (opmerkingen) op een artikel toe, maar zijn reacties op opmerkingen niet toegestaan. Standaard is ingeschakeld.
 
-* **[!UICONTROL Aanbevolen inhoud]** toestaan Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
+* **[!UICONTROL Allow Featured Content]**
+Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
 
 ### Catalogusfunctie {#catalog-function}
 
@@ -136,7 +154,7 @@ Wanneer de configuratie aan een sjabloon is toegevoegd, kunt u met de configurat
 ![catalogusfunctie](assets/catalogfunc.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Alle naamruimten selecteren]**
+* **[!UICONTROL Select All Namespaces]**
 
    * Met de geselecteerde tagnaamruimten wordt gedefinieerd welke tags bezoekers kunnen selecteren voor het filteren van de lijst met activeringsbronnen die in de catalogus wordt vermeld.
    * Als deze optie is ingeschakeld, zijn alle naamruimten voor tags die zijn toegestaan voor de communitysite, beschikbaar.
@@ -168,15 +186,20 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-385](assets/chlimage_1-385.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Vastzetten]** toestaan Als deze optie is ingeschakeld, kunnen de reacties op het onderwerp worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Pinning]**
+Als deze optie is ingeschakeld, kunnen de reacties op onderwerpen worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is ingeschakeld.
 
-* **[!UICONTROL Geprivilegieerde leden]** toestaan Als deze optie is ingeschakeld, staat het forum geprivilegieerde leden alleen toe om onderwerpen te posten door de selectie van een groep [](users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Privileged Members]**
+Indien gecontroleerd, zal het forum bevoorrechte leden slechts toestaan om onderwerpen te posten door selectie van een [bevoorrechte ledengroep](users.md#privileged-members-group)toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Uploaden]** van bestanden toestaan Als deze optie is ingeschakeld, kunnen leden in het forum bestanden uploaden. Standaard is ingeschakeld.
+* **[!UICONTROL Allow File Uploads]**
+Als deze optie is ingeschakeld, kunnen leden bestanden uploaden. Standaard is ingeschakeld.
 
-* **[!UICONTROL Reacties]** met verbindingen toestaan Als deze optie niet is ingeschakeld, staat het forum opmerkingen over een onderwerp toe, maar antwoorden op deze opmerkingen zijn niet toegestaan. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Threaded Replies]**
+Als het forum niet wordt gecontroleerd, zal het commentaar op een onderwerp toestaan, maar antwoorden op die commentaren worden niet toegestaan. Standaard is ingeschakeld.
 
-* **[!UICONTROL Aanbevolen inhoud]** toestaan Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
+* **[!UICONTROL Allow Featured Content]**
+Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
 
 ### Functie Groepen {#groups-function}
 
@@ -188,7 +211,7 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 
 De groepsfunctie biedt leden van de gemeenschap de mogelijkheid om subgemeenschappen binnen de gemeenschapssite in de publicatieomgeving te maken.
 
-Afhankelijk van [montages](sites-console.md#groupmanagement) wanneer de functie van Groepen in een malplaatje [van de](sites.md)communautaire plaats inbegrepen is, kunnen de groepen openbaar of privé zijn en één of meerdere malplaatjes van de communautaire groep kunnen worden gevormd om een keus van malplaatjes te verstrekken wanneer de communautaire groep eigenlijk wordt gecreeerd (zoals van het publicatiemilieu). In een sjabloon [voor een](tools-groups.md) community-groep wordt aangegeven welke Gemeenschappen-functies worden gemaakt voor de groepspagina&#39;s, zoals forums en kalenders.
+Afhankelijk van [montages](sites-console.md#groupmanagement) wanneer de functie van Groepen in een malplaatje [van de](sites.md)communautaire plaats inbegrepen is, kunnen de groepen openbaar of privé zijn en één of meerdere malplaatjes van de communautaire groep kunnen worden gevormd om een keus van malplaatjes te verstrekken wanneer de communautaire groep eigenlijk wordt gecreeerd (zoals van het publicatiemilieu). Een sjabloon [voor een](tools-groups.md) community-groep geeft aan welke functies van Gemeenschappen worden gemaakt voor de groepspagina&#39;s, zoals forums en kalenders.
 
 Wanneer een communautaire groep wordt gecreeerd, wordt een lidgroep dynamisch gecreeerd voor de nieuwe groep, waaraan de leden kunnen worden toegewezen of zich aansluiten. Zie Gebruikers en gebruikersgroepen [](users.md)beheren voor meer informatie.
 
@@ -199,11 +222,14 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend:
 ![chlimage_1-386](assets/chlimage_1-386.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Selecteer het keuzemenu Sjablonen]** groeperen A waarmee u een of meer ingeschakelde groepssjablonen kunt selecteren waaruit de toekomstige maker van een nieuwe communitygroep (in de publicatieomgeving) kan kiezen.
+* **[!UICONTROL Select Group Templates]**
+Een keuzemenu waarmee u een of meer ingeschakelde groepssjablonen kunt selecteren waaruit de toekomstige maker van een nieuwe communitygroep (in de publicatieomgeving) kan kiezen.
 
-* **[!UICONTROL Geprivilegieerde leden]** toestaan Als deze optie is ingeschakeld, staat het forum geprivilegieerde leden alleen toe onderwerpen te posten door de selectie van een [geprivilegieerde groep](users.md#privileged-members-group)leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Privileged Members]**
+Indien gecontroleerd, zal het forum bevoorrechte leden slechts toestaan om onderwerpen te posten door selectie van een [bevoorrechte groep](users.md#privileged-members-group)van de ledenveiligheid toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Publicatieontwerp]** toestaan Als deze optie is ingeschakeld, kunnen geautoriseerde leden van de gemeenschap een groep maken in de publicatieomgeving. Als deze optie niet is ingeschakeld, kunnen alleen nieuwe groepen (subgemeenschappen) worden gemaakt in de auteursomgeving via de console Groepen van de sites van de Gemeenschappen.
+* **[!UICONTROL Allow Publish Creation]**
+Als deze optie is ingeschakeld, kunnen geautoriseerde leden van de gemeenschap een groep maken in de publicatieomgeving. Als deze optie niet is ingeschakeld, kunnen alleen nieuwe groepen (subgemeenschappen) worden gemaakt in de auteursomgeving via de console Groepen van de sites van de Gemeenschappen.
 
    Standaard is dit `checked`.
 
@@ -216,13 +242,17 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met d
 ![chlimage_1-387](assets/chlimage_1-387.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Geprivilegieerde leden]** toestaan Als deze optie is ingeschakeld, staat het forum geprivilegieerde leden alleen toe onderwerpen te posten door de selectie van een [geprivilegieerde groep](users.md#privileged-members-group)leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Privileged Members]**
+Indien gecontroleerd, zal het forum bevoorrechte leden slechts toestaan om onderwerpen te posten door selectie van een [bevoorrechte groep](users.md#privileged-members-group)van de ledenveiligheid toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Als Bestand uploaden]** toestaan is ingeschakeld, kunnen leden bestanden uploaden. Standaard is ingeschakeld.
+* **[!UICONTROL Allow File Uploads]**
+Als deze optie is ingeschakeld, kunnen leden bestanden uploaden. Standaard is ingeschakeld.
 
-* **[!UICONTROL Laat Verbonden Reacties]** toe als niet gecontroleerd, zal het idee antwoorden (commentaren) op een onderwerp toestaan, maar de antwoorden op commentaren worden niet toegestaan. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Threaded Replies]**
+Als deze optie niet is ingeschakeld, is het mogelijk om antwoorden (opmerkingen) op een onderwerp toe te staan, maar om opmerkingen te beantwoorden is het niet toegestaan. Standaard is ingeschakeld.
 
-* **[!UICONTROL Aanbevolen inhoud]** toestaan Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
+* **[!UICONTROL Allow Featured Content]**
+Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
 
 ### Leaderboard-functie {#leaderboard-function}
 
@@ -235,21 +265,24 @@ Wanneer u een sjabloon toevoegt, wordt het volgende dialoogvenster geopend met d
 ![chlimage_1-388](assets/chlimage_1-388.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Badge]** weergeven Als deze optie is ingeschakeld, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
+* **[!UICONTROL Display Badge]**
+Als deze optie is ingeschakeld, wordt een kolom voor badge-pictogrammen opgenomen in het leaderboard.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Naam]** badge weergeven Als deze optie is ingeschakeld, wordt een kolom met de naam van de badge opgenomen in het leaderboard.
+* **[!UICONTROL Display Badge Name]**
+Als deze optie is ingeschakeld, wordt een kolom met de naam van de badge opgenomen in het leaderboard.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Avatar]** weergeven Als deze optie is ingeschakeld, wordt de avatar-afbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het lidprofiel.
+* **[!UICONTROL Display Avatar]**
+Als deze optie is ingeschakeld, wordt de avatarafbeelding van het lid opgenomen in het leaderboard, naast de naamkoppeling naar het profiel van het lid.
 
    De optie Standaard is uitgeschakeld.
 
 ### Paginacode {#page-function}
 
-De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: aanmelden, menu, meldingen, berichten, berichten, thema&#39;s en branding. Inhoud kan aan de pagina worden toegevoegd met de [standaard-AEM-ontwerpmodus](../../help/sites-authoring/editing-content.md).
+De paginafunctie voegt een lege pagina aan de communautaire plaats toe dat het in de eigenschappen van de communautaire plaats wordt getelegrafeerd: aanmelden, menu, meldingen, berichten, berichten, thema&#39;s en branding. Inhoud kan aan de pagina worden toegevoegd met de [standaard AEM ontwerpmodus](../../help/sites-authoring/editing-content.md).
 
 Als u een sjabloon toevoegt, is de enige configuratie de instellingen [Titel en URL](#title-and-url-settings).
 
@@ -262,19 +295,24 @@ Wanneer toegevoegd aan een malplaatje, staat de configuratie beperking aan bevoo
 ![chlimage_1-389](assets/chlimage_1-389.png)
 
 * Zie [Titel- en URL-instellingen](#title-and-url-settings)
-* **[!UICONTROL Vastzetten]** toestaan Als deze optie is ingeschakeld, kunnen de reacties op het onderwerp worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Pinning]**
+Als deze optie is ingeschakeld, kunnen de reacties op onderwerpen worden vastgezet aan het begin van de lijst met opmerkingen. Standaard is ingeschakeld.
 
-* **[!UICONTROL Geprivilegieerde leden]** toestaan Als deze optie is ingeschakeld, staat het QnA-forum geprivilegieerde leden alleen toe vragen te plaatsen door de selectie van een groep [](users.md#privileged-members-group)geprivilegieerde leden toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Privileged Members]**
+Indien gecontroleerd, zal het forum QnA bevoorrechte leden slechts toestaan om vragen te posten door selectie van een [bevoorrechte ledengroep](users.md#privileged-members-group)toe te staan. Als deze optie niet is ingeschakeld, mogen alle leden van de gemeenschap posten. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Uploaden van bestanden toestaan]** Als deze optie is ingeschakeld, biedt het QnA-forum de mogelijkheid voor leden om bestanden te uploaden. Standaard is ingeschakeld.
+* **[!UICONTROL Allow File Uploads]**
+Als deze optie is ingeschakeld, bevat het QnA-forum de mogelijkheid voor leden om bestanden te uploaden. Standaard is ingeschakeld.
 
-* **[!UICONTROL Reacties]** met verbindingen toestaan Als deze optie niet is ingeschakeld, kan op het QnA-forum worden gezocht naar opmerkingen (antwoorden) op een geposte vraag, maar antwoorden op antwoorden zijn niet toegestaan. Standaard is ingeschakeld.
+* **[!UICONTROL Allow Threaded Replies]**
+Als het QnA-forum niet wordt gecontroleerd, kan er commentaar (antwoorden) worden gegeven op een geposte vraag, maar antwoorden op antwoorden zijn niet toegestaan. Standaard is ingeschakeld.
 
-* **[!UICONTROL Aanbevolen inhoud]** toestaan Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
+* **[!UICONTROL Allow Featured Content]**
+Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). Standaard is ingeschakeld.
 
 ## Community-functie maken {#create-community-function}
 
-De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt op basis van dezelfde AEM-blauwdruk en deze kunnen vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus voor auteurs.
+De capaciteit om een communautaire functie tot stand te brengen wordt bereikt door het `Create Community Function` pictogram te selecteren dat bij de bovenkant van de console van de Functies van de Gemeenschap wordt gevestigd. Er kunnen meerdere functies worden gemaakt die op dezelfde AEM blauwdruk zijn gebaseerd en vervolgens op unieke wijze worden aangepast door het openen in de bewerkingsmodus voor auteurs.
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
@@ -284,13 +322,16 @@ De capaciteit om een communautaire functie tot stand te brengen wordt bereikt do
 
 In het deelvenster Community Function Name worden een naam, beschrijving en of de functie is ingeschakeld of uitgeschakeld geconfigureerd:
 
-* **[!UICONTROL Community Function Name]** De functienaam die wordt gebruikt voor weergave en opslag
+* **[!UICONTROL Community Function Name]**
+De functienaam die wordt gebruikt voor weergave en opslag
 
-* **[!UICONTROL Community Function Description]** The function description for display
+* **[!UICONTROL Community Function Description]**
+De functiebeschrijving voor de weergave
 
-* **[!UICONTROL Uitgeschakeld/Ingeschakeld]** Een schakeloptie die bepaalt of de functie waarnaar wordt verwezen, is ingeschakeld
+* **[!UICONTROL Disabled/Enabled]**
+Een schakeloptie die bepaalt of de functie waarnaar wordt verwezen
 
-### AEM-vervaging {#aem-blueprint}
+### AEM {#aem-blueprint}
 
 ![chlimage_1-392](assets/chlimage_1-392.png)
 
@@ -316,7 +357,7 @@ Selecteer het `Open Community Function` pictogram om de bewerkingsmodus voor de 
 
 ### Componenten configureren {#configuring-components}
 
-Een gemeenschapsfunctie wordt geïmplementeerd als een live kopie van een AEM-blauwdruk, waarvan de details worden gedocumenteerd onder [Multi-Site Manager](../../help/sites-administering/msm.md).
+Een gemeenschapsfunctie wordt geïmplementeerd als een live kopie van een AEM blauwdruk, waarvan de details worden gedocumenteerd onder [beheer](../../help/sites-administering/msm.md)van meerdere sites.
 
 Het is mogelijk om niet alleen pagina-inhoud te schrijven, maar componenten te configureren.
 
