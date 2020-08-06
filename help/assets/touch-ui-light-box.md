@@ -4,6 +4,9 @@ description: Meer informatie over Lichtbak in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '244'
+ht-degree: 0%
 
 ---
 
@@ -14,18 +17,18 @@ Meer informatie over Lichtbak in AEM Assets.
 
 Lichtbak is een speciaal type verzameling dat eenvoudig toegang biedt tot elementen. U kunt snel toegang krijgen tot Lichtbak om elementen toe te voegen of te verwijderen. Het fungeert als een persoonlijke galerie voor afbeeldingen.
 
-Als u een gebruiker van de Middelen van de Manager van de Ervaring van Adobe (AEM) bent, wordt Lichtbak automatisch gecreeerd wanneer u eerste login aan de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
+Als u Adobe Experience Manager (AEM) Assets-gebruiker bent, wordt er automatisch een lichtbak gemaakt wanneer u zich voor het eerst aanmeldt bij de toepassing. Dit is exclusief voor uw aanmelding. Andere gebruikers hebben geen toegang tot uw lichtbak.
 
 ## Elementen toevoegen aan lichtbak {#adding-assets-to-lightbox}
 
 1. Selecteer in de gebruikersinterface Elementen de elementen die u aan Lichtbak wilt toevoegen.
-1. Sleep de elementen naar de zone **[!UICONTROL Drop in Lightbox]** . Laat los wanneer Dropzone actief wordt, en zijn etiket verandert in **[!UICONTROL Daling aan Add]**.
+1. Sleep de elementen naar de **[!UICONTROL Drop in Lightbox]** zone. Laat los wanneer de Dropzone actief wordt, en het label verandert in **[!UICONTROL Drop to Add]**.
 
    ![add_to_lightbox](assets/add_to_lightbox.png)
 
-1. Tik/klik in het dialoogvenster op **[!UICONTROL Toevoegen]** en sluit het vervolgens om het proces te voltooien. De geselecteerde elementen worden toegevoegd aan Lichtbak.
+1. Tik/klik in het dialoogvenster **[!UICONTROL Add]** en sluit het vervolgens om het proces te voltooien. De geselecteerde elementen worden toegevoegd aan Lichtbak.
 1. Ga naar de console Verzamelingen om Lichtbak weer te geven.
-1. Tik/klik op **[!UICONTROL Lichtbak]** om de elementen in het vak weer te geven.
+1. Tik/klik **[!UICONTROL Lightbox]** om de elementen in het venster weer te geven.
 
    >[!NOTE]
    >
@@ -35,6 +38,6 @@ Als u een gebruiker van de Middelen van de Manager van de Ervaring van Adobe (AE
 
 1. Navigeer naar de verzamelingsconsole, tik op Lichtbak of klik op Lichtbak om de bijbehorende elementen weer te geven.
 1. Selecteer de elementen die u wilt verwijderen.
-1. Tik op de werkbalk of klik op **[!UICONTROL Verwijderen]**.
-1. Tik/klik in het dialoogvenster op **[!UICONTROL Verwijderen]** om de verwijderactie te bevestigen. De elementen worden verwijderd uit Lichtbak.
+1. From the toolbar, tap/click **[!UICONTROL Remove]**.
+1. Tik/klik in het dialoogvenster om de verwijderactie te bevestigen. **[!UICONTROL Remove]** De elementen worden verwijderd uit Lichtbak.
 
