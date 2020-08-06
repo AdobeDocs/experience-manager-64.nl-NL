@@ -28,7 +28,7 @@ U kunt een volledig aangepast formulierfragment maken of een deelvenster in een 
 
 ### Geheel fragment maken {#create-fragment-from-scratch}
 
-1. Meld u aan bij de auteur-instantie van AEM Forms op https://[*hostname*]:[*port*]/aem/forms.html.
+1. Meld u aan bij de AEM Forms-auteur op https://[*hostnaam*]:[*poort*]/aem/forms.html.
 1. Klik op **[!UICONTROL Create > Adaptive Form Fragment]**.
 1. Geef een titel, naam, beschrijving en tags voor het fragment op.
 
@@ -39,7 +39,7 @@ U kunt een volledig aangepast formulierfragment maken of een deelvenster in een 
 1. Klik om het **[!UICONTROL Form Model]** tabblad te openen en selecteer in het **[!UICONTROL Select From]** keuzemenu een van de volgende modellen voor het fragment:
 
    * **[!UICONTROL None]**: Hiermee geeft u op het fragment helemaal opnieuw te maken zonder een formuliermodel te gebruiken.
-   * **[!UICONTROL Form Template]**: Hiermee geeft u op het fragment te maken met een XDP-sjabloon die naar AEM Forms is geüpload. Selecteer de juiste XDP-sjabloon als het formuliermodel voor het fragment.
+   * **[!UICONTROL Form Template]**: Geeft op om het fragment te maken met een XDP-sjabloon die naar AEM Forms is geüpload. Selecteer de juiste XDP-sjabloon als het formuliermodel voor het fragment.
 
    ![Een adaptief formulier maken met een formuliersjabloon als model](assets/form-template-model.png)
 
@@ -59,7 +59,7 @@ U kunt een volledig aangepast formulierfragment maken of een deelvenster in een 
 
 1. Klik **[!UICONTROL Create]** en klik vervolgens **[!UICONTROL Open]** om het fragment met een standaardsjabloon te openen in de bewerkingsmodus.
 
-In de bewerkingsmodus kunt u elke adaptieve formuliercomponent van het AEM-hulpstuk naar het fragment slepen en neerzetten. Zie [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md)voor informatie over adaptieve formuliercomponenten.
+In de bewerkingsmodus kunt u elke adaptieve formuliercomponent van het AEM hulpstuk naar het fragment slepen en neerzetten. Zie [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md)voor informatie over adaptieve formuliercomponenten.
 
 Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als het formuliermodel voor uw fragment, wordt een nieuw tabblad met de hiërarchie van het formuliermodel weergegeven in de zoeker naar inhoud. Hiermee kunt u formuliermodelelementen naar het fragment slepen en neerzetten. De toegevoegde formuliermodelelementen worden geconverteerd naar formuliercomponenten, terwijl de oorspronkelijke eigenschappen van de gekoppelde XDP of XSD behouden blijven.
 
@@ -107,17 +107,17 @@ Als u bovendien een XML-schema of XDP-formuliersjabloon hebt geselecteerd als he
 
 ### Fragmentweergave configureren {#configure-fragment-appearance}
 
-Elk fragment dat u in adaptieve formulieren invoegt, wordt weergegeven als een voorlopige afbeelding. De plaatsaanduiding bevat titels van maximaal tien onderliggende deelvensters in het fragment. U kunt AEM Forms configureren om het volledige fragment weer te geven in plaats van de voorlopige afbeelding.
+Elk fragment dat u in adaptieve formulieren invoegt, wordt weergegeven als een voorlopige afbeelding. De plaatsaanduiding bevat titels van maximaal tien onderliggende deelvensters in het fragment. U kunt AEM Forms zo configureren dat het volledige fragment wordt weergegeven in plaats van de voorlopige afbeelding.
 
 Voer de volgende stappen uit om volledige fragmenten in formulieren weer te geven:
 
-1. Ga naar de configuratiepagina van de AEM-webconsole op https:[*host*]:[*port*]/system/console/configMgr.
+1. Ga naar AEM webconsoleconfiguratiepagina op https:[*host*]:[*port*]/system/console/configMgr.
 1. Zoek en klik **[!UICONTROL Adaptive Form Configuration Service]** om het in uitgeeft wijze te openen.
 1. Schakel **[!UICONTROL Enable Placeholder in place of Fragment]** het selectievakje uit om volledige fragmenten te tonen in plaats van de voorlopige afbeelding.
 
 ### Een fragment invoegen in een adaptief formulier {#insert-a-fragment-in-an-adaptive-form}
 
-De adaptieve formulierfragmenten die u maakt, worden weergegeven op het tabblad Adaptieve formulierfragmenten van de zoeker naar AEM-inhoud. Een adaptief formulierfragment invoegen in een adaptief formulier:
+De adaptieve formulierfragmenten die u maakt, worden weergegeven op het tabblad Adaptieve formulierfragmenten van de zoeker AEM inhoud. Een adaptief formulierfragment invoegen in een adaptief formulier:
 
 1. Open het adaptieve formulier in de bewerkingsmodus waarin u een adaptief formulierfragment wilt invoegen.
 1. Klik op de zijbalk op de knop voor **[!UICONTROL Assets]** middelen-browser ![](assets/assets-browser.png) . Selecteer een optie in het keuzemenu **[!UICONTROL Adaptive Form Fragments]** in de middelenbrowser.
@@ -158,11 +158,11 @@ U kunt het fragmentelement en de bijbehorende bindingen wijzigen in het dialoogv
 
 >[!NOTE]
 >
->U kunt een gebonden adaptief formulierfragment ook slepen en neerzetten vanuit de adaptieve formulierfragmentbibliotheek in de zoekfunctie voor AEM-inhoud en de juiste bindingsverwijzing opgeven in het dialoogvenster Component bewerken van het adaptieve deelvenster voor formulierfragmenten.
+>U kunt een gebonden adaptief formulierfragment ook slepen en neerzetten vanuit de bibliotheek met adaptief formulierfragment in AEM zoekfunctie voor inhoud en de juiste bindingsverwijzing opgeven in het dialoogvenster Component bewerken van het adaptieve deelvenster voor formulierfragmenten.
 
 ## Fragmenten beheren {#manage-fragments}
 
-U kunt verschillende bewerkingen uitvoeren op adaptieve formulierfragmenten met de gebruikersinterface van AEM Forms.
+U kunt verschillende bewerkingen op adaptieve formulierfragmenten uitvoeren met de gebruikersinterface van AEM Forms.
 
 1. Go to `https://[hostname]:[port]/aem/forms.html`.
 
@@ -227,7 +227,7 @@ Als u een adaptief formulier met adaptieve formulierfragmenten wilt lokaliseren,
 * Als u in een op XDP gebaseerd adaptief formulier een deelvenster opslaat als fragment dat een ander XDP-fragment bevat, wordt het resulterende fragment automatisch gebonden aan het onderliggende XDP-fragment. In het geval van een adaptief XSD-formulier wordt het resulterende fragment gebonden aan de hoofdmap van het schema.
 * Wanneer u een adaptief formulierfragment maakt, wordt in CRXDe Lite een fragmentknooppunt gemaakt, dat vergelijkbaar is met het knooppunt guideContainer voor een adaptief formulier.
 * Een fragment in een adaptief formulier dat een ander formuliergegevensmodel gebruikt, wordt niet ondersteund. Een op XDP gebaseerd fragment wordt bijvoorbeeld niet ondersteund in een adaptief XSD-formulier en omgekeerd.
-* Adaptieve formulierfragmenten zijn beschikbaar voor gebruik via het tabblad Adaptieve formulierfragmenten in de zoekfunctie voor AEM-inhoud.
+* Adaptieve formulierfragmenten zijn beschikbaar voor gebruik via het tabblad Adaptieve formulierfragmenten in AEM zoekfunctie.
 * Expressies, scripts of stijlen in een op zichzelf staand adaptief formulierfragment blijven behouden wanneer deze via verwijzing worden ingevoegd of in een adaptieve vorm worden ingesloten.
 * U kunt een adaptief formulierfragment, dat via verwijzing wordt ingevoegd, niet bewerken vanuit een adaptief formulier. Als u het fragment wilt bewerken, bewerkt u het zelfstandige, adaptieve formulierfragment of sluit u het fragment in het adaptieve formulier in.
 * Wanneer u een adaptief formulier publiceert, moet u de stand-alone adaptieve formulierfragmenten publiceren die door verwijzing in het adaptieve formulier zijn ingevoegd.
@@ -237,7 +237,7 @@ Als u een adaptief formulier met adaptieve formulierfragmenten wilt lokaliseren,
 
    `127.0.0.1 <Host machine>`
 
-   **Hostcomputer**: De Apple Mac-computer waarop AEM Forms wordt geïmplementeerd.
+   **Hostcomputer**: De Apple Mac-computer waarop AEM Forms is geïmplementeerd.
 
 ## Referentiefragmenten {#reference-fragments}
 
