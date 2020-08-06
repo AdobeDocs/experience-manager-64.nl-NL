@@ -26,7 +26,7 @@ Deze zelfstudie is een stap in de [serie Uw eerste adaptieve formulier](create-y
 
 ## Over de zelfstudie  {#about-the-tutorial}
 
-U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt thema&#39;s uit de doos toepassen die van de adaptieve redacteur van vormen worden voorzien of douanethema&#39;s van uw tot stand brengen. AEM Forms beschikken over een [themaeditor](themes.md) om aangepaste thema&#39;s te maken. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
+U kunt thema&#39;s gebruiken om een adaptief formulier een unieke vormgeving en stijl te geven. U kunt thema&#39;s uit de doos toepassen die van de adaptieve redacteur van vormen worden voorzien of douanethema&#39;s van uw tot stand brengen. AEM Forms biedt een [themaeditor](themes.md) voor het maken van aangepaste thema&#39;s. Met één thema kunt u hetzelfde adaptieve formulier weergeven dat u op mobiele apparaten, tablets of desktops hebt geopend. Eerdere kennis van CSS of LESS is niet vereist voor het gebruik van de themaeditor, maar is wel gewenst.
 
 Aan het einde van de zelfstudie leert u:
 
@@ -79,6 +79,7 @@ Voor het hierboven weergegeven ontwerp zijn wijzigingen vereist in de plaatsaand
    1. Tik op de afbeelding met het logo in de koptekstcomponent en tik op de ![eigenschappen cmp](assets/cmppr.png) . Tik in de afbeeldingseigenschap op X om de bestaande logoafbeelding te verwijderen.
    1. Tik op Uploaden, selecteer het logo.png en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png) om de wijzigingen op te slaan. De afbeelding is gedownload in de sectie [Voordat u begint](/help/forms/using/style-your-adaptive-form.md#before-you-start) .
    1. Tik op koptekst `We.Retail`en tik op ![aaem_6_3_edit](assets/aem_6_3_edit.png) **edit**. Wijzig de koptekst in `we retail`. Pas vette opmaak alleen toe op `we`de insteekmodule `we retail`.
+
    ![we-retail-logo-text](assets/we-retail-logo-text.png)
 
 1. Titel verwijderen en plaatsaanduidingstekst toevoegen:
@@ -87,6 +88,7 @@ Voor het hierboven weergegeven ontwerp zijn wijzigingen vereist in de plaatsaand
    1. Kopieer de inhoud van het veld **Titel** naar het veld **Plaatsaanduidingstekst** .
    1. Verwijder de inhoud van het veld **Titel** en tik op ![em_6_3_forms_save](assets/aem_6_3_forms_save.png).
    1. Herhaal de vorige drie stappen voor alle tekstvakken, het numerieke vak en het e-mailveld in het formulier.
+
    ![aangepast-vorm](assets/updated-adaptive-form.png)
 
 ## Stap 3: Een aangepast thema maken voor uw aangepaste formulier {#step-create-a-custom-theme-for-your-adaptive-form}
@@ -99,13 +101,13 @@ In deze zelfstudie maakt u een stijl van de kop- en voettekst, tekst en numeriek
 
 ### Een thema maken {#create-a-theme}
 
-1. Meld u aan bij de AEM-auteur en navigeer naar **Adobe Experience Manager** > **Formulieren** > **Thema**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
+1. Meld u aan bij de AEM auteur en navigeer naar **Adobe Experience Manager** > **Forms** > **Thema&#39;s**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-themes).
 1. Tik **[!UICONTROL Create]** en selecteer **[!UICONTROL Theme]**. De pagina Thema maken met de velden die nodig zijn om een thema te maken, wordt weergegeven. De velden Titel en Naam zijn verplicht:
 
    * **Titel:** Geef een titel van het thema op. Bijvoorbeeld **Globaal thema.** Met de titel kunt u het thema herkennen aan de lijst met thema&#39;s.
    * **Naam:** Geef de naam van het thema op. Bijvoorbeeld **Global-Theme.** Er wordt een knooppunt met de opgegeven naam gemaakt in de repository. Wanneer u een titel begint te typen, wordt automatisch een waarde voor het naamveld gegenereerd. U kunt de voorgestelde waarde wijzigen. Het naamveld mag alleen alfanumerieke tekens, afbreekstreepjes en onderstrepingstekens bevatten. Alle ongeldige invoer wordt vervangen door een afbreekstreepje.
 
-1. Tik op **Maken**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Tik op **Openen** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor het opmaken gebruikt de themaeditor een adaptief formulier dat niet in de verpakking is en wordt geleverd met AEM Forms.
+1. Tik op **Maken**. Er wordt een thema gemaakt en er verschijnt een dialoogvenster waarin u het formulier kunt openen om het te bewerken. Tik op **Openen** om het nieuwe thema op een nieuw tabblad te openen. Het thema wordt geopend in de themaeditor. Voor het opmaken gebruikt de themaeditor een adaptief formulier dat niet in de doos bij AEM Forms wordt geleverd.
 
    Voor informatie over het gebruiken van thema redacteur UI, zie [Ongeveer de themaredacteur](/help/forms/using/themes.md#aboutthethemeeditor).
 
@@ -133,7 +135,7 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
    | Lettertypekleur | FFFFFF |
    | Fontgrootte | 54px |
 
-1. Tik op de koptekstwidget en tik op **Koptekst**. De opties voor het opmaken van de koptekstwidget worden links weergegeven. Breid de **Afmetingen en Positie** accordion uit, plaats de **Hoogte** aan `120px`, en tik ![a_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tik op de koptekstwidget en tik op **Koptekst**. De opties voor het opmaken van de koptekstwidget worden links weergegeven. Breid de **Dimension en Positie** accordion uit, plaats de **Hoogte** aan `120px`, en tik ![a_6_3_forms_save](assets/aem_6_3_forms_save.png).
 1. Breid de achtergrondaccordeon van de kopbalwidget uit, plaats de **Achtergrondkleur** aan `F6921E.`
 
    Houd de muis boven **Afbeelding en verloop** > **+ Toevoegen** en tik op **Afbeelding**. Stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
@@ -144,7 +146,7 @@ Koptekst en voettekst geven een consistent en duidelijk beeld van een adaptief f
    | Positie | Rechts onder |
    | Naast elkaar | Niet herhalen |
 
-1. Tik in de themaeditor op het logo in de koptekst en tik op **Koptekstlogo**. Vouw de accordeon Dimensions &amp; Position uit, stel de volgende eigenschappen in en tik op ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+1. Tik in de themaeditor op het logo in de koptekst en tik op **Koptekstlogo**. Breid de Dimension en Positie accordeon uit, stel de volgende eigenschappen in en tik ![aaem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 <table> 
  <tbody> 
@@ -215,12 +217,12 @@ U kunt meerdere componenten in een adaptief formulier gebruiken om gegevens vast
    <td>18px</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Breedte</td> 
    <td>60%</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Marge</td> 
    <td> 
     <ul> 
@@ -299,7 +301,7 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
 
    ![style-option](assets/style-option.png)
 
-1. Tik op de knop **Bijvoegen** en tik op ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Stel de volgende eigenschappen in in de **accordeon Afmetingen en Positie** :
+1. Tik op de knop **Bijvoegen** en tik op ![aem_6_3_](assets/aem_6_3_edit.png)editicon. Stel de volgende eigenschappen in in de **Dimension- en positieaccordeon** :
 
    | Eigenschap | Waarde |
    |---|---|
@@ -316,17 +318,17 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
    <td>Waarde</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Zwevend</td> 
    <td>Links</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Breedte</td> 
    <td>73%</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Opvulling</td> 
    <td> 
     <ul> 
@@ -334,12 +336,12 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Hoogte</td> 
    <td>40px</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie<br /> </td> 
+   <td>Dimension en positie<br /> </td> 
    <td>Marge</td> 
    <td><br /> 
     <ul> 
@@ -405,12 +407,12 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
    <td>Waarde</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Zwevend</td> 
    <td>Rechts</td> 
   </tr> 
   <tr> 
-   <td>Afmetingen en positie</td> 
+   <td>Dimension en positie</td> 
    <td>Marge</td> 
    <td> 
     <ul> 
@@ -439,14 +441,14 @@ Sommige stijlen zijn alleen van toepassing op een bepaalde component. Dergelijke
 
 U kunt verschillende lettertypen gebruiken om een adaptief formulier te ontwerpen. Op alle apparaten waarop het adaptieve formulier wordt weergegeven, worden mogelijk niet de fonts gebruikt om het adaptieve formulier te ontwerpen. U kunt een service voor weblettertypen gebruiken om de vereiste lettertypen aan het doelapparaat te leveren.
 
-Adobe Typekit is een service voor weblettertypen. U kunt de service configureren en gebruiken met adaptieve formulieren. Zo gebruikt u Adobe Typekit in een adaptieve vorm:
+Adobe Typekit is een service voor weblettertypen. U kunt de service configureren en gebruiken met adaptieve formulieren. Adobe Typekit in een adaptieve vorm gebruiken:
 
 >[!NOTE]
 >
->![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit wordt nu Adobe-lettertypen genoemd en wordt geleverd bij Creative Cloud en andere abonnementen. [Meer](https://fonts.adobe.com/)informatie.
+>![Typekit-to-adobe-fonts](assets/typekit-to-adobe-fonts.png) Typekit wordt nu Adobe Fonts genoemd en wordt geleverd bij Creative Cloud- en andere abonnementen. [Meer](https://fonts.adobe.com/)informatie.
 
-1. Maak een [Adobe Typekit](https://typekit.com/) -account, maak een kit, voeg het lettertype Myriad Pro toe aan de kit, publiceer de kit en verkrijg de kit-id. Adobe Typekit-lettertypen (weblettertypen) zijn vereist voor een adaptief formulier.
-1. Navigeer op de AEM Forms-server naar ![adobeExperience](assets/adobeexperiencemanager.png) Manager **Adobe Experience Manager** > **Tools** ![hammer](assets/hammer.png) > **Deployment** ****>Cloud Servicen. Navigeer op de pagina Cloud Servicen naar Services **van** derden > **Typekit** en klik op Nu **configureren** onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop + om een nieuwe instantie te maken.
+1. Maak een [Adobe Typekit](https://typekit.com/) -account, maak een kit, voeg Myriad Pro-lettertype aan de kit toe, publiceer de kit en verkrijg de kit-id. U hebt Adobe Typekit-lettertypen (weblettertypen) in een adaptieve vorm nodig.
+1. Ga op de AEM Forms-server naar ![adobeExperience](assets/adobeexperiencemanager.png) Manager **Adobe Experience Manager** > **Tools** ![hammer](assets/hammer.png) > **Deployment** ****>Cloud Services. Navigeer op de pagina Cloud Services naar Services **van** derden > **Typekit** en klik op **Nu configureren** onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop + om een nieuwe instantie te maken.
 
    Geef in het dialoogvenster Configuratie maken een **titel** op voor de configuratie en klik op **Maken**. U wordt opnieuw gericht aan de configuratiepagina. Geef in het dialoogvenster Component bewerken dat wordt weergegeven uw **kit-id** op en klik op **OK**.
 
