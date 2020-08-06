@@ -1,66 +1,69 @@
 ---
 title: Mappen publiceren naar Brand Portal
-description: Leer hoe te om activa aan het Portaal van het Merk te publiceren en te publiceren.
+description: Leer hoe u middelen publiceert en publiceert naar Brand Portal.
 contentOwner: VG
 translation-type: tm+mt
 source-git-commit: f09853921dec6602952f369982a1563c7e4a9727
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 39%
 
 ---
 
 
-# Publiceer activa aan het Portaal van het Merk {#publish-assets-to-brand-portal}
+# Assets publiceren naar Brand Portal {#publish-assets-to-brand-portal}
 
-Als beheerder van de Activa van de Manager van de Ervaring van Adobe (AEM), kunt u activa aan de instantie van het Portaal van het Merk van de Activa publiceren AEM (of plannen publiceren werkschema aan een recentere datum/tijd) voor uw organisatie. Nochtans, moet u activa AEM met het Portaal van het Merk eerst vormen. Voor details, zie de Activa van AEM met het Portaal [van het Merk](configure-aem-assets-with-brand-portal.md)vormen.
+Als beheerder van Adobe Experience Manager-middelen (AEM) kunt u elementen publiceren naar de AEM Assets Brand Portal-instantie (of de publicatieworkflow plannen op een latere datum of tijd) voor uw organisatie. U moet echter eerst AEM Assets configureren met Brand Portal. Zie [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md) voor meer informatie.
 
-Nadat u activa publiceert, is het beschikbaar aan gebruikers in het Portaal van het Merk.
+Nadat u een middel publiceert, is het beschikbaar aan gebruikers in het Portaal van het Merk.
 
-Als u verdere wijzigingen aan de originele activa in activa AEM aanbrengt, worden de veranderingen niet weerspiegeld in het Portaal van het Merk tot u de activa opnieuw publiceert. Deze eigenschap zorgt ervoor dat de werk-in-vooruitgang veranderingen niet beschikbaar in het Portaal van het Merk zijn. Slechts zijn de goedgekeurde veranderingen die door een beheerder worden gepubliceerd beschikbaar in het Portaal van het Merk.
+Als u de oorspronkelijke elementen in AEM Assets wijzigt, worden de wijzigingen pas doorgevoerd in Brand Portal als u de elementen opnieuw publiceert. Met deze functie zorgt u ervoor dat wijzigingen die momenteel worden uitgevoerd, niet beschikbaar zijn in Brand Portal. Alleen goedgekeurde wijzigingen die door een beheerder zijn gepubliceerd, zijn beschikbaar in Brand Portal.
 
-Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan het Portaal van het Merk publiceren. Om activa aan het Portaal van het Merk te publiceren, volg deze stappen:
+Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan het Portaal van het Merk publiceren. Voer de volgende stappen uit om elementen te publiceren naar Brand Portal:
 
 >[!NOTE]
 >
->Adobe adviseert het gespreide publiceren, bij voorkeur tijdens niet-piekuren, zodat de auteur AEM geen bovenmatige middelen bezet.
+>Adobe raadt gefaseerde publicatie aan, bij voorkeur niet tijdens piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
 
-1. Van de console van Activa, hang over de gewenste activa en selecteer **[!UICONTROL publiceren]** optie van de snelle acties.
+1. Houd de muisaanwijzer boven de gewenste elementen in de middelenconsole en selecteer de gewenste optie in de **[!UICONTROL Publish]** snelhandelingen.
 
-   Alternatief, selecteer de activa u aan het Portaal van het Merk wilt publiceren.
+   U kunt ook de elementen selecteren die u naar Brand Portal wilt publiceren.
 
    ![publish2bp-2](assets/publish2bp-2.png)
 
-2. Om de activa aan het Portaal van het Merk te publiceren, zijn de volgende twee opties beschikbaar:
-   * [Onmiddellijk activa publiceren](#publish-now)
-   * [Publiceer later activa](#publish-later)
+2. Voor het publiceren van de elementen naar Brand Portal zijn de volgende twee opties beschikbaar:
+   * [Elementen direct publiceren](#publish-now)
+   * [Assets later publiceren](#publish-later)
 
-## Publiceer nu activa {#publish-now}
+## Assets nu publiceren {#publish-now}
 
-De geselecteerde activa aan het Portaal van het Merk publiceren, doe één van beiden van het volgende:
+Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand Portal te publiceren:
 
-* Van de toolbar, publiceert het uitgezochte **[!UICONTROL Snel]**. Dan van het uitgezochte menu, **[!UICONTROL publiceer aan het Portaal]** van het Merk.
+* Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
 
-* Van de uitgezochte toolbar, **[!UICONTROL beheer Publicatie]**.
+* Selecteer **[!UICONTROL Manage Publication]** in de werkbalk.
 
-   1. Dan van de uitgezochte **[!UICONTROL Actie]** **[!UICONTROL publiceer aan het Portaal]** van het Merk, en van het **[!UICONTROL Plannen]** uitgezocht **[!UICONTROL nu]**. Tik/ klik op **[!UICONTROL Volgende].**
+   1. Kies vervolgens **[!UICONTROL Action]** de optie **[!UICONTROL Publish to Brand Portal]** en **[!UICONTROL Scheduling]** selecteer **[!UICONTROL Now]**. Tik of klik op **[!UICONTROL Next].**
 
-   2. Binnen **[!UICONTROL Reikwijdte]**, bevestig uw selectie en tik/klik **[!UICONTROL publiceren aan het Portaal]** van het Merk.
+   2. Bevestig **[!UICONTROL Scope]** binnen uw selectie en tik/klik op **[!UICONTROL Publish to Brand Portal]**.
 
-Een bericht lijkt verklarend dat de activa omhoog voor het publiceren aan het Portaal van het Merk een rij zijn gevormd. Login aan de interface van het Portaal van het Merk om de gepubliceerde activa te zien.
+Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de interface Brand Portal om de gepubliceerde elementen te bekijken.
 
-## Publiceer later activa {#publish-later}
+## Assets later publiceren {#publish-later}
 
-Om het publiceren van de activa aan het Portaal van het Merk aan een recentere datum of een tijd te plannen:
+Voer de volgende handelingen uit om het publiceren van de assets naar Brand Portal op een latere datum of tijd te plannen:
 
-1. Zodra u te publiceren activa/omslagen hebt geselecteerd, selecteer **[!UICONTROL beheren Publicatie]** van de hulpmiddelbar bij de bovenkant.
-2. Voor **[!UICONTROL Manage pagina van de Publicatie]** , uitgezocht **[!UICONTROL publiceer aan het Portaal]** van het Merk van **[!UICONTROL Actie]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Planning]**.
+1. Als u middelen/mappen hebt geselecteerd om te publiceren, selecteert u deze in de **[!UICONTROL Manage Publication]** werkbalk bovenaan.
+2. Selecteer op **[!UICONTROL Manage Publication]** de pagina **[!UICONTROL Publish to Brand Portal]** een optie **[!UICONTROL Action]** en selecteer een **[!UICONTROL Later]** optie **[!UICONTROL Scheduling]**.
 
-   ![uitgeverij-laterbp-1](assets/publishlaterbp-1.png)
+   ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
-3. Selecteer een **[!UICONTROL activeringsdatum]** en geef tijd op. Tik/ klik op **[!UICONTROL Volgende]**.
-4. Selecteer een **[!UICONTROL activeringsdatum]** en geef tijd op. Tik/ klik op **[!UICONTROL Volgende]**.
-5. Specificeer een titel van het Werkschema onder **[!UICONTROL Werkschema]**. Tik/ klik op **[!UICONTROL Publiceren Later]**.
+3. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Tik of klik op **[!UICONTROL Next]**.
+4. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Tik of klik op **[!UICONTROL Next]**.
+5. Geef een titel voor de workflow op onder **[!UICONTROL Workflows]**. Tik of klik op **[!UICONTROL Publish Later]**.
 
-   ![publicatieworkflow](assets/publishworkflow.png)
+   ![publishworkflow](assets/publishworkflow.png)
 
-Nu, login aan het Portaal van het Merk om te zien of zijn de gepubliceerde activa beschikbaar op de Portaalinterface van het Merk.
+Meld u nu aan bij Brand Portal om te zien of de gepubliceerde middelen beschikbaar zijn op de interface Brand Portal.
 
 ![bp_631_landing_page](assets/bp_landing_page.png)
