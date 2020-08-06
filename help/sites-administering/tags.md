@@ -1,8 +1,8 @@
 ---
 title: Tags beheren
 seo-title: Tags beheren
-description: Leer hoe u tags kunt beheren in AEM.
-seo-description: Leer hoe u tags kunt beheren in AEM.
+description: Leer hoe u tags in AEM beheert.
+seo-description: Leer hoe u tags in AEM beheert.
 uuid: 77e1280a-feea-4edd-94b6-4fb825566c42
 contentOwner: Chiradeep Majumdar
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1764'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ In Adobe Experience Manager (AEM) kan een tag een eigenschap zijn van
 
 * een metagegevensknooppunt voor een element (zie Metagegevens [beheren voor digitale elementen](/help/assets/metadata.md))
 
-Naast pagina&#39;s en elementen worden codes gebruikt voor functies van AEM Communities
+Naast pagina&#39;s en elementen worden tags gebruikt voor AEM Communities-functies
 
 * door gebruiker gegenereerde inhoud (zie [UGC-codes coderen)](/help/communities/tag-ugc.md)
 
@@ -90,7 +93,7 @@ De naamruimte is zelf een tag en hoeft geen subtags te bevatten. Als u echter ee
 
 Zodra de vereiste informatie is ingevoerd
 
-* Selecteer **Maken**
+* select **Create**
 
 ### Bewerkingen op codes {#operations-on-tags}
 
@@ -102,7 +105,7 @@ Als u een naamruimte of andere tag selecteert, worden de volgende bewerkingen be
 * [Bewerken](#editing-tags)
 * [Verplaatsen](#moving-tags)
 * [Samenvoegen](#merging-tags)
-* [Publiceren](#publishing-tags)
+* [Publicatie](#publishing-tags)
 * [Publiceren ongedaan maken](#unpublishing-tags)
 * [Verwijderen](#deleting-tags)
 
@@ -110,7 +113,7 @@ Als u een naamruimte of andere tag selecteert, worden de volgende bewerkingen be
 
 Wanneer het browservenster niet breed genoeg is om alle pictogrammen weer te geven, worden de meest rechtse pictogrammen gegroepeerd onder een **`... More`** pictogram. Hierin wordt een vervolgkeuzelijst van de verborgen bewerkingspictogrammen weergegeven wanneer deze zijn geselecteerd.
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 ### Een naamruimtetag selecteren {#selecting-a-namespace-tag}
 
@@ -140,7 +143,7 @@ De eerste weergave is een aantal toegepaste labels.
 
 Als u de pijl rechts van de telling selecteert, worden de referentienamen weergegeven.
 
-Het pad naar de verwijzing wordt weergegeven als knopinfo wanneer u de muisaanwijzer op een verwijzing plaatst.
+Het pad naar de verwijzing wordt als knopinfo weergegeven wanneer u de muisaanwijzer op een verwijzing plaatst.
 
 ![chlimage_1-192](assets/chlimage_1-192.png)
 
@@ -160,7 +163,7 @@ Wanneer een naamruimte of andere tag is geselecteerd (door het pictogram naast d
 
 Zodra de vereiste informatie is ingevoerd
 
-* Selecteer **Maken**
+* select **Create**
 
 ### Tags bewerken {#editing-tags}
 
@@ -187,11 +190,13 @@ Wanneer een naamruimte of andere tag is geselecteerd en u het **`Move`** pictogr
 ![chlimage_1-198](assets/chlimage_1-198.png)
 
 * **Pad**
+
    *(Alleen-lezen)* Het huidige pad naar de geselecteerde tag.
 
 * **Ga naar** Bladeren naar het nieuwe pad waaronder u de tag wilt verplaatsen.
 
-* **Als u de naam wijzigt in** Aanvankelijk wordt de huidige `name`tag weergegeven. Er `name`kan een nieuwe waarde worden ingevoerd.
+* **Als Naam wijzigen in** In eerste instantie wordt de huidige 
+`name`van de tag. Er `name`kan een nieuwe waarde worden ingevoerd.
 
 * 
 * Selecteer **Opslaan**
@@ -207,6 +212,7 @@ Als u een naamruimte of andere tag selecteert, wordt met het pictogram **`Merge`
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
 * **Pad**
+
    *(Alleen-lezen)* Het pad van de geselecteerde tag die moet worden samengevoegd met een andere tag.
 
 * **Voeg samen in** Bladeren om het pad te selecteren van de tag waarin u wilt samenvoegen.
