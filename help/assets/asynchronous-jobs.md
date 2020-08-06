@@ -1,37 +1,37 @@
 ---
-title: Configureer asynchrone bewerkingen in [!DNL-Adobe Experience Manager].
-description: U kunt asynchroon een aantal bronnenintensieve taken uitvoeren om de prestaties te optimaliseren in [!DNL Experience Manager Assets].
+title: Configureer asynchrone bewerkingen in [!DNL Adobe Experience Manager].
+description: U kunt asynchroon een aantal bronintensieve taken uitvoeren om de prestaties [!DNL Experience Manager Assets]te optimaliseren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
 workflow-type: tm+mt
-source-wordcount: '567'
-ht-degree: 2%
+source-wordcount: '559'
+ht-degree: 22%
 
 ---
 
 
-# Asynchrone bewerkingen {#asynchronous-operations}
+# Asynchronous operations {#asynchronous-operations}
 
 Om negatieve gevolgen voor prestaties te verminderen, [!DNL Adobe Experience Manger Assets] verwerkt bepaalde langlopende en middel-intensieve activa verrichtingen asynchroon. Asynchrone verwerking omvat het navragen van veelvoudige taken en uiteindelijk het uitvoeren van hen op een periodieke manier afhankelijk van de beschikbaarheid van systeemmiddelen. Deze bewerkingen omvatten:
 
-* Veel elementen verwijderen.
-* Veel elementen of elementen met veel verwijzingen verplaatsen.
+* Veel assets verwijderen.
+* Veel assets verplaatsen, of assets met veel verwijzingen verplaatsen.
 * Metagegevens van elementen bulksgewijs exporteren en importeren.
 
 U kunt de status van asynchrone taken vanaf de **[!UICONTROL Async Job Status]** pagina weergeven.
 
 >[!NOTE]
 >
->Standaard worden de [!DNL Assets] taken parallel uitgevoerd. Als `N` het aantal CPU-cores is, kunnen `N/2` taken standaard parallel worden uitgevoerd. Om douanemontages voor de taakrij te gebruiken, wijzig de **[!UICONTROL Async Operation Default Queue]** configuratie van [!UICONTROL Web Console]. Voor meer informatie, zie [rijconfiguraties](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
+>Standaard worden de [!DNL Assets] taken parallel uitgevoerd. If `N` is the number of CPU cores, `N/2` tasks can execute in parallel, by default. Om douanemontages voor de taakrij te gebruiken, wijzig de **[!UICONTROL Async Operation Default Queue]** configuratie van [!UICONTROL Web Console]. Voor meer informatie raadpleegt u [wachtrijconfiguraties](https://sling.apache.org/documentation/bundles/apache-sling-eventing-and-job-handling.html#queue-configurations).
 
-## De status van asynchrone bewerkingen controleren {#monitoring-the-status-of-asynchronous-operations}
+## Monitor the status of asynchronous operations {#monitoring-the-status-of-asynchronous-operations}
 
-Wanneer [!DNL Assets] u een bewerking asynchroon verwerkt, ontvangt u een melding in uw [!DNL Experience Manager] Postvak [IN](/help/sites-authoring/inbox.md) en via een e-mail. Navigeer naar de **[!UICONTROL Async Job Status]** pagina om de status van de asynchrone bewerkingen in detail weer te geven.
+Whenever [!DNL Assets] processes an operation asynchronously, you receive a notification in your [!DNL Experience Manager] [Inbox](/help/sites-authoring/inbox.md) and via an email. Navigeer naar de pagina **[!UICONTROL Async Job Status]** om de status van de asynchrone bewerkingen in detail weer te geven.
 
 1. Klik in de [!DNL Experience Manager] interface op **[!UICONTROL Operations]** > **[!UICONTROL Jobs]**.
 
-1. Controleer in de **[!UICONTROL Async Job Status]** pagina de details van de bewerkingen.
+1. Controleer op de pagina **[!UICONTROL Async Job Status]** de details van de bewerkingen.
 
    ![Status en details van asynchrone bewerkingen](assets/job_status.png)
 
@@ -42,13 +42,13 @@ Wanneer [!DNL Assets] u een bewerking asynchroon verwerkt, ontvangt u een meldin
    * **[!UICONTROL Fail]** of **[!UICONTROL Error]**: De bewerking kan niet worden verwerkt.
    * **[!UICONTROL Scheduled]**: De bewerking is gepland voor verwerking op een later tijdstip.
 
-1. Als u een actieve bewerking wilt stoppen, selecteert u deze in de lijst en klikt u op het pictogram **[!UICONTROL Stop]** ![](assets/do-not-localize/stop_icon.svg) Stoppen op de werkbalk.
+1. To stop an active operation, select it from the list and click **[!UICONTROL Stop]** ![stop icon](assets/do-not-localize/stop_icon.svg) from the toolbar.
 
-1. Als u extra details wilt weergeven, bijvoorbeeld beschrijving en logbestanden, selecteert u de bewerking en klikt u op **[!UICONTROL Open]** open_icon ![](assets/do-not-localize/edit_icon.svg) op de werkbalk. De pagina met taakdetails wordt weergegeven.
+1. To view extra details, for example description and logs, select the operation and click **[!UICONTROL Open]** ![open_icon](assets/do-not-localize/edit_icon.svg) from the toolbar. De pagina met taakdetails wordt weergegeven.
 
    ![Details van een importtaak voor metagegevens](assets/job_details.png)
 
-1. Als u de bewerking uit de lijst wilt verwijderen, selecteert u deze op de werkbalk. **[!UICONTROL Delete]** Klik op **[!UICONTROL Download]** CSV om de gegevens in een CSV-bestand te downloaden.
+1. Als u de bewerking uit de lijst wilt verwijderen, selecteert u **[!UICONTROL Delete]** op de werkbalk. Klik op **[!UICONTROL Download]** om de details naar een csv-bestand te downloaden.
 
    >[!NOTE]
    >
@@ -92,5 +92,5 @@ Als het aantal te verplaatsen elementen, mappen of verwijzingen het ingestelde d
 >[!MORELIKETHIS]
 >
 >* [E-mail configureren in Experience Manager](/help/sites-administering/notification.md).
->* [Metagegevens van elementen in bulk](/help/assets/metadata-import-export.md)importeren en exporteren.
+>* [Importeer/exporteer metadata van assets bulksgewijs](/help/assets/metadata-import-export.md).
 
