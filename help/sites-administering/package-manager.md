@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8e568c59-5455-422f-94a6-baf6d2aae070
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '5365'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Een pakket bevat ook vault meta-informatie, met inbegrip van de filterdefinities
 
 >[!NOTE]
 >
->Pakketten vertegenwoordigen de huidige versie van de inhoud op het moment dat het pakket wordt gemaakt. Ze bevatten geen eerdere versies van de inhoud die door AEM in de opslagplaats wordt bewaard.
+>Pakketten vertegenwoordigen de huidige versie van de inhoud op het moment dat het pakket wordt gemaakt. Ze bevatten geen vorige versies van de inhoud die AEM in de opslagplaats bewaart.
 
 U kunt de volgende handelingen uitvoeren op of met pakketten:
 
@@ -49,8 +52,8 @@ U kunt de volgende handelingen uitvoeren op of met pakketten:
 * De definitie van bestaande pakketten wijzigen
 * Bestaande pakketten opnieuw samenstellen
 * Pakketten terugbrengen
-* Pakketten van AEM naar uw bestandssysteem downloaden
-* Pakketten van uw bestandssysteem uploaden naar uw lokale AEM-instantie
+* Pakketten downloaden van AEM naar uw bestandssysteem
+* Pakketten van uw dossiersysteem in uw lokale AEM instantie uploaden
 * Inhoud van pakket valideren vóór installatie
 * Een droge runtime installeren
 * Pakketten installeren (AEM installeert pakketten niet automatisch na het uploaden)
@@ -83,7 +86,7 @@ Het dialoogvenster **Pakketinstellingen** is beschikbaar via de knop **Bewerken*
 | Beschrijving | Een korte beschrijving van het pakket. HTML-opmaak kan worden gebruikt voor opmaak. |
 | Miniatuur | Het pictogram dat bij de pakketvermelding wordt weergegeven. Klik op Bladeren om een lokaal bestand te selecteren. |
 
-![chlimage_1-340](assets/chlimage_1-344.png)
+![chlimage_1-344](assets/chlimage_1-344.png)
 
 <table> 
  <tbody> 
@@ -171,7 +174,7 @@ In de volgende tabel worden deze regels beschreven en worden voorbeelden gegeven
   </tr> 
   <tr> 
    <td> include</td> 
-   <td>U kunt een pad definiëren of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt opnemen.<br /> Als u een map <br /> opneemt, wordt: 
+   <td>U kunt een pad definiëren of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt opnemen.<br /> <br /> Als u een map opneemt, wordt: 
     <ul> 
      <li>deze map <i></i> en alle bestanden en mappen in die map (dat wil zeggen de volledige substructuur) opnemen</li> 
      <li><strong>geen</strong> andere bestanden of mappen van onder het opgegeven hoofdpad opnemen</li> 
@@ -180,7 +183,7 @@ In de volgende tabel worden deze regels beschreven en worden voorbeelden gegeven
   </tr> 
   <tr> 
    <td> uitsluiten</td> 
-   <td>U kunt een pad opgeven of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt uitsluiten.<br /> Als u een map <br /> uitsluit, worden die map <i></i> en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten.<br /> </td> 
+   <td>U kunt een pad opgeven of een reguliere expressie gebruiken om alle knooppunten op te geven die u wilt uitsluiten.<br /> <br /> Als u een map uitsluit, worden die map <i></i> en alle bestanden en mappen in die map (dus de volledige substructuur) uitgesloten.<br /> </td> 
    <td>/libs/wcm/foundation/components(/.*)?</td> 
   </tr> 
  </tbody> 
@@ -210,7 +213,7 @@ Officieel hotfix-pakket:
 
 ![](do-not-localize/chlimage_1-28.png)
 
-Officieel AEM-installatiepakket of extensiepakket:
+Officiële AEM installatie of extensiepakket:
 
 Officiële kenmerkpakketten:
 
@@ -218,7 +221,7 @@ Officiële kenmerkpakketten:
 
 ## Pakketbeheer {#package-manager}
 
-Pakketbeheer beheert de pakketten in uw lokale AEM-installatie. Nadat u de noodzakelijke toestemmingen [hebt](#permissions-needed-for-using-the-package-manager) toegewezen kunt u de Manager van het Pakket voor diverse acties gebruiken, met inbegrip van het vormen, het bouwen, het downloaden en het installeren van uw pakketten. De belangrijkste te vormen elementen zijn:
+De pakketmanager beheert de pakketten op uw lokale AEM installatie. Nadat u de noodzakelijke toestemmingen [hebt](#permissions-needed-for-using-the-package-manager) toegewezen kunt u de Manager van het Pakket voor diverse acties gebruiken, met inbegrip van het vormen, het bouwen, het downloaden en het installeren van uw pakketten. De belangrijkste te vormen elementen zijn:
 
 * [Pakketinstellingen](#package-settings)
 * [Pakketfilters](#package-filters)
@@ -236,7 +239,7 @@ Zie Machtigingen [](/help/sites-administering/security.md) instellen voor instru
 
 Een nieuwe pakketdefinitie maken:
 
-1. Voor het welkomstscherm AEM, klik **Pakketten** (of van de console van **Hulpmiddelen** dubbelklik op **Pakketten**).
+1. Voor het AEM Welkome scherm, klik **Pakketten** (of van de console van **Hulpmiddelen** dubbelklik op **Pakketten**).
 
 1. Selecteer vervolgens **Pakketbeheer**.
 1. Klik op Pakket **** maken.
@@ -266,7 +269,7 @@ Een nieuwe pakketdefinitie maken:
       Een tekstveld waarmee u een versie kunt aangeven. Deze wordt aan de pakketnaam toegevoegd met de naam van het ZIP-bestand.
    Klik op **OK** om het pakket te maken.
 
-1. AEM geeft het nieuwe pakket weer in de juiste groepsmap.
+1. AEM maakt een lijst van het nieuwe pakket in de aangewezen groepsomslag.
 
    ![packageItem](assets/packagesitem.png)
 
@@ -292,9 +295,9 @@ Een nieuwe pakketdefinitie maken:
 
    ![packagefilter](assets/packagesfilter.png)
 
-   Opgeven:
+   Geef het volgende op:
 
-   * **Basispad**: de inhoud die moet worden verpakt; dit kan de basis van een substructuur zijn.
+   * **Basispad** De inhoud die moet worden verpakt; dit kan de basis van een substructuur zijn.
    * **Regels** zijn facultatief; voor eenvoudige pakketdefinities is het niet nodig regels op te nemen of uit te sluiten .
 
       Indien nodig kunt u regels [**voor **opnemen** of **uitsluiten](#package-filters)definiëren om de pakketinhoud precies te definiëren.
@@ -329,7 +332,7 @@ Een pakket wordt vaak gemaakt op hetzelfde moment als wanneer u de pakketdefinit
    >
    >Dit is met name van belang wanneer u een pakket opnieuw opstelt omdat de inhoud van het pakket wordt overschreven.
 
-1. Click **OK**. AEM bouwt het pakket en geeft alle inhoud weer die aan het pakket is toegevoegd. Wanneer AEM volledig is, wordt bevestigd dat het pakket is gemaakt en (wanneer u het dialoogvenster sluit) worden de gegevens in de pakketlijst bijgewerkt.
+1. Click **OK**. AEM bouwt het pakket en geeft alle inhoud weer die aan het pakket is toegevoegd. Na voltooiing AEM wordt bevestigd dat het pakket is gemaakt en (wanneer u het dialoogvenster sluit) worden de gegevens in de pakketlijst bijgewerkt.
 
 ### Een pakket opnieuw inpakken {#rewrapping-a-package}
 
@@ -379,7 +382,7 @@ Nadat een pakket is gemaakt, kunt u de inhoud weergeven:
 
 ### Pakketten naar uw bestandssysteem downloaden {#downloading-packages-to-your-file-system}
 
-In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem kunt downloaden met **Package Manager**.
+In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem kunt downloaden met **Pakketbeheer**.
 
 >[!NOTE]
 >
@@ -387,11 +390,12 @@ In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem
 >
 >Vanuit Pakket delen kunt u:
 >
->* U kunt pakketten rechtstreeks downloaden van [Package Share naar uw lokale AEM-instantie](#downloading-and-installing-packages-from-package-share).\
+>* download pakketten van het Aandeel van het [Pakket rechtstreeks in uw lokale AEM instantie](#downloading-and-installing-packages-from-package-share).\
    >  Na het downloaden wordt het pakket geïmporteerd in uw dataopslag, waarna u het pakket direct via **Package Manager** op uw lokale instantie kunt installeren. Deze pakketten bevatten hotfixes en andere gedeelde pakketten.
    >
    >
 * Download pakketten van [Package Share naar uw bestandssysteem](#downloading-packages-to-your-file-system-from-package-share).
+
 >
 
 
@@ -403,7 +407,7 @@ In deze sectie wordt beschreven hoe u een pakket van AEM naar uw bestandssysteem
 
 1. Klik op de koppeling die wordt gevormd door de naam van het ZIP-bestand (onderstreept) voor het pakket dat u wilt downloaden; bijvoorbeeld `export-for-offline.zip`.
 
-   AEM downloadt het pakket naar uw computer (via een standaarddialoogvenster voor het downloaden van browsers).
+   AEM downloadt het pakket naar de computer (via een standaarddialoogvenster voor het downloaden van browsers).
 
 ### Pakketten uploaden vanuit uw bestandssysteem {#uploading-packages-from-your-file-system}
 
@@ -425,7 +429,7 @@ Een pakket uploaden:
 
    * **Bestand**
 
-      **U kunt de bestandsnaam rechtstreeks typen of de optie** Bladeren gebruiken... om het vereiste pakket in uw lokale bestandssysteem te selecteren (klik na de selectie op **OK**).
+      U kunt de bestandsnaam rechtstreeks typen of de optie **Bladeren gebruiken...** om het vereiste pakket in uw lokale bestandssysteem te selecteren (klik na de selectie op **OK**).
 
    * **Uploaden forceren**
 
@@ -458,7 +462,7 @@ Deze opties worden hieronder beschreven.
 
    **Hoe het is gemeld**
 
-   Om het even welke versioned gebiedsdelen die niet door de instantie AEM kunnen worden tevredengesteld zijn vermeld in het Logboek **van de** Activiteit van de Manager van het Pakket.
+   Om het even welke versioned gebiedsdelen die niet door de AEM instantie kunnen worden tevredengesteld zijn vermeld in het Logboek **van de** Activiteit van de Manager van het Pakket.
 
    **Foutstatussen**
 
@@ -472,7 +476,7 @@ Deze opties worden hieronder beschreven.
 
    **Wat wordt gecontroleerd**
 
-   Deze validatie bepaalt of het pakket dat wordt geïnstalleerd een bestand bevat dat al wordt bedekt in de AEM-doelinstantie.
+   Deze validatie bepaalt of het pakket dat wordt geïnstalleerd een bestand bevat dat al wordt bedekt in de AEM.
 
    Als u bijvoorbeeld een bestaande overlay hebt bij `/apps/sling/servlet/errorhandler/404.jsp`, een pakket met `/libs/sling/servlet/errorhandler/404.jsp`een bestaande overlay, zodat het bestaande bestand bij wordt gewijzigd `/libs/sling/servlet/errorhandler/404.jsp`.
 
@@ -512,14 +516,14 @@ Deze opties worden hieronder beschreven.
 
    >[!CAUTION]
    >
-   >Als beste praktijken wordt het geadviseerd dat de pakketten niet AEM-Verstrekte ACLs zouden moeten beïnvloeden aangezien dit in onverwacht productgedrag kan resulteren.
+   >Als beste praktijken wordt het geadviseerd dat de pakketten geen AEM-Verstrekte ACLs zouden moeten beïnvloeden aangezien dit in onverwacht productgedrag kan resulteren.
 
 #### Validatie uitvoeren {#performing-validation}
 
 De validatie van pakketten kan op twee verschillende manieren worden uitgevoerd:
 
 * Via de interface van Package Manager
-* Via HTTP POST-aanvraag, zoals met cURL
+* Via HTTP-POST request zoals with cURL
 
 >[!NOTE]
 >
@@ -538,9 +542,9 @@ De validatie van pakketten kan op twee verschillende manieren worden uitgevoerd:
 
 1. De gekozen validatie(s) worden dan uitgevoerd. De resultaten worden getoond in het activiteitenlogboek van de Manager van het Pakket.
 
-**Pakketvalidatie via HTTP POST Request**
+**Pakketvalidatie via HTTP-POST-aanvraag**
 
-De POST-aanvraag heeft de volgende vorm.
+Het verzoek van de POST heeft de volgende vorm.
 
 ```
 https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImports,overlays,acls
@@ -553,6 +557,7 @@ https://<host>:<port>/crx/packmgr/service.jsp?cmd=validate&type=osgiPackageImpor
 >* `osgiPackageImports`
 >* `overlays`
 >* `acls`
+
 >
 >
 De waarde van `type` default is ingesteld op `osgiPackageImports` if not passed.
@@ -569,13 +574,13 @@ Hieronder ziet u een voorbeeld van het gebruik van cURL voor het uitvoeren van e
 
 >[!NOTE]
 >
->De reactie op een HTTP POST-validatieaanvraag is een JSON-object met de resultaten van de validatie.
+>De reactie op een aanvraag van een HTTP-validatie-POST is een JSON-object met de resultaten van de validatie.
 
 ### Pakketten installeren {#installing-packages}
 
 Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinhoud geïnstalleerd en functioneel te hebben, moet het allebei zijn:
 
-* geladen in AEM ( [geüpload vanaf uw bestandssysteem](#uploading-packages-from-your-file-system) of [gedownload van pakketshare](#downloading-and-installing-packages-from-package-share))
+* geladen in AEM ( [geüpload van uw bestandssysteem](#uploading-packages-from-your-file-system) of [gedownload van pakketshare](#downloading-and-installing-packages-from-package-share))
 
 * geïnstalleerd
 
@@ -591,6 +596,7 @@ Nadat u een pakket hebt geüpload, moet u de inhoud installeren. Om de pakketinh
    >
 * Zie een lijst met pakketinhoud:\
    >  Open het pakket en klik op **Inhoud**.
+
 >
 
 
@@ -666,6 +672,7 @@ Een pakket verwijderen uit de lijst(en) in Package Manager:
 
    * Klik op **Verwijderen** in het werkbalkmenu.
    * Klik met de rechtermuisknop en selecteer **Verwijderen**.
+
    ![packagesdelete](assets/packagesdelete.png)
 
 1. AEM vraagt om bevestiging dat u het pakket wilt schrappen. Klik op **OK** om de verwijdering te bevestigen.
@@ -683,7 +690,7 @@ Kopieer de inhoud van een pakket en installeer het naar de publicatie-instantie:
 1. Klik op het pictogram of de naam van het pakket dat u wilt repliceren om het uit te vouwen.
 1. Selecteer **Repliceren** in het keuzemenu Meer **** op de werkbalk.
 
-## Pakket delen {#package-share}
+## Package Share {#package-share}
 
 Het Aandeel van het Pakket is een gecentraliseerde server die openbaar wordt gemaakt om inhoud-Pakketten te delen.
 
@@ -702,7 +709,7 @@ Toegang krijgen tot delen pakket:
 * De pagina [Aanmelden gebruiken](#signing-in-to-package-share)
 * De eerste keer dat u de aanmeldpagina gebruikt, moet u:
 
-   * [Registreren voor een Adobe-id](#registering-for-package-share) en/of uw bestaande Adobe-id [valideren](#validating-your-adobe-id)
+   * [Registreren voor een Adobe ID](#registering-for-package-share) en/of uw bestaande Adobe ID [valideren](#validating-your-adobe-id)
    * zodat uw account voor delen van [pakket](#package-share-account) kan worden gemaakt
 
 >[!NOTE]
@@ -714,19 +721,20 @@ Toegang krijgen tot delen pakket:
 1. Klik in het welkomstscherm van AEM op **Gereedschappen** -> **Implementatie**
 1. Selecteer vervolgens **Pakket delen**. U moet:
 
-   * aanmelden met uw Adobe-id
-   * [Een Adobe-id maken](#registering-for-package-share)
+   * aanmelden bij uw Adobe ID
+   * [Een Adobe ID maken](#registering-for-package-share)
+
    >[!NOTE]
    >
-   >De eerste keer dat u zich aanmeldt met uw Adobe-id, moet u de [validatie van uw e-mailadres](#validating-your-adobe-id)voltooien.
+   >De eerste keer dat u zich aanmeldt bij uw Adobe ID, moet u de [validatie van uw e-mailadres](#validating-your-adobe-id)voltooien.
 
    >[!NOTE]
    >
    >Als u uw wachtwoord bent vergeten, kunt u het aanmelden met de **probleemoplossing gebruiken?** in het dialoogvenster Aanmelden.
 
-#### Adobe-id valideren {#validating-your-adobe-id}
+#### Adobe ID valideren {#validating-your-adobe-id}
 
-De eerste keer dat u zich aanmeldt bij Delen via pakket met uw Adobe-id, wordt uw e-mailadres gevalideerd.
+De eerste keer dat u zich aanmeldt bij Delen via pakket met uw Adobe ID, wordt uw e-mailadres gevalideerd.
 
 1. U ontvangt een e-mail met een koppeling.
 1. Klik op deze koppeling.
@@ -743,13 +751,13 @@ De eerste keer dat u zich aanmeldt bij Delen via pakket met uw Adobe-id, wordt u
 
 #### Registreren voor delen pakket {#registering-for-package-share}
 
-Als u toegang tot het Delen van pakketten nodig hebt, moet u zich registreren voor een Adobe-id:
+Als u toegang tot het Delen van pakketten nodig hebt, moet u zich registreren voor een Adobe ID:
 
-* De aanmeldingspagina [voor delen van](#signing-in-to-package-share) pakket bevat een koppeling voor het registreren van een Adobe-id.
-* U kunt zich vanuit bepaalde Adobe-bureaubladsoftware registreren voor een Adobe-id.
-* U kunt zich ook online registreren op de [Adobe-pagina](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&nl=1)Aanmelden.
+* De aanmeldingspagina [voor delen van](#signing-in-to-package-share) pakketten bevat een koppeling voor het registreren van een Adobe ID.
+* U kunt zich vanuit bepaalde Adobe-desktopsoftware registreren voor een Adobe ID.
+* U kunt zich ook online registreren op de pagina [](https://www.adobe.com/cfusion/membership/index.cfm?nf=1&amp;nl=1)Adobe Sign In.
 
-Een Adobe-id kan worden gemaakt door het volgende op te geven:
+Een Adobe ID kan worden gemaakt door het volgende op te geven:
 
 * uw e-mailadres
 * een wachtwoord naar keuze
@@ -780,13 +788,13 @@ Om deze kwestie te vermijden, kunt u tot het Aandeel van het Pakket van een IPv4
 
 Delen van pakket is momenteel niet beschikbaar als uw bedrijf een http-proxy uitvoert waarvoor verificatie is vereist.
 
-Delen van pakketten is alleen beschikbaar als uw AEM-server toegang heeft tot internet zonder dat verificatie is vereist. Om de volmacht voor alle diensten te vormen die de HTTP- cliënt (met inbegrip van pakketaandeel) gebruiken gebruik de configuratie [OSGi van de Client 3.1 van de Commons van de Dag van HTTP- Cliënt 3.1 bundel](/help/sites-deploying/osgi-configuration-settings.md).
+Delen van pakketten is alleen beschikbaar als uw AEM server toegang heeft tot internet zonder dat verificatie is vereist. Om de volmacht voor alle diensten te vormen die de HTTP- cliënt (met inbegrip van pakketaandeel) gebruiken gebruik de configuratie [OSGi van de Client 3.1 van de Commons van de Dag van HTTP- Cliënt 3.1 bundel](/help/sites-deploying/osgi-configuration-settings.md).
 
 ### Binnen pakket delen {#inside-package-share}
 
 In de pakketten van het Aandeel van het Pakket worden geschikt in boomsubstructuren:
 
-* Adobe-pakketten van Adobe.
+* Adobe pakketten verstrekt door Adobe.
 * Gedeelde pakketten die door andere bedrijven zijn geleverd en door Adobe zijn gepubliceerd.
 * Uw bedrijfspakketten die privé zijn.
 
@@ -803,10 +811,10 @@ U kunt de voorwaardelijke operator ook wijzigen van OR in AND aan de rechterkant
 
 ### Pakketten downloaden en installeren vanuit Pakketdeling {#downloading-and-installing-packages-from-package-share}
 
-Om pakketten van het Aandeel van het Pakket te downloaden en hen op uw lokale instantie te installeren, is het gemakkelijker om tot het Aandeel van het Pakket van uw instantie toegang te hebben AEM. Hiermee wordt het pakket gedownload en onmiddellijk geregistreerd in uw Package Manager, vanwaar het kan worden geïnstalleerd.
+Om pakketten van het Aandeel van het Pakket te downloaden en hen op uw lokale instantie te installeren, is het gemakkelijker om tot het Aandeel van het Pakket van uw AEM instantie toegang te hebben. Hiermee wordt het pakket gedownload en onmiddellijk geregistreerd in uw Package Manager, vanwaar het kan worden geïnstalleerd.
 
 1. Klik in het welkomstscherm van AEM op **Gereedschappen** en selecteer **Pakket delen** om de pagina Pakket delen te openen.
-1. Meld u aan bij Pakket delen met uw accountgegevens. De openingspagina wordt weergegeven met een overzicht van de Adobe-map, de Gedeelde map en een specifieke pagina voor uw bedrijf.
+1. Meld u aan bij Pakket delen met uw accountgegevens. De landingspagina wordt weergegeven met een lijst met de map Adobe, de map Gedeeld en een specifieke pagina voor uw bedrijf.
 
    >[!NOTE]
    >
@@ -814,23 +822,23 @@ Om pakketten van het Aandeel van het Pakket te downloaden en hen op uw lokale in
 
 1. Navigeer naar het pakket dat u wilt downloaden en klik op **Downloaden**.
 
-1. Ga terug of navigeer naar **Package Manager** op uw AEM-instantie. Navigeer vervolgens naar het pakket dat u net hebt gedownload.
+1. Ga terug of navigeer aan de Manager **van het** Pakket op uw AEM instantie. Navigeer vervolgens naar het pakket dat u net hebt gedownload.
 
    >[!NOTE]
    >
-   >Als u het pakket wilt zoeken dat u hebt gedownload, volgt u hetzelfde pad als in Pakket delen. Bijvoorbeeld, als u een pakket van de volgende weg in het Aandeel van het Pakket downloadt:
+   >Als u het pakket wilt zoeken dat u hebt gedownload, volgt u hetzelfde pad als in Pakket delen. Bijvoorbeeld, als u een pakket van de volgende weg in het Aandeel van het Pakket downloadde:
    >
    >**Pakketten** > **Openbaar** > **Hotfixes**
    Vervolgens wordt het pakket in Package Manager op uw lokale instantie ook weergegeven onder:
    **Pakketten** > **Openbaar** > **Hotfixes**
 
-1. Klik op **Installeren** om het pakket te installeren in uw lokale AEM-installatie.
+1. Klik op **Installeren** om het pakket te installeren op uw lokale AEM.
 
    >[!NOTE]
    Als het pakket al op uw exemplaar is geïnstalleerd, verschijnt de **Geïnstalleerde** indicator naast het pakket in plaats van de **Install** knoop.
 
    >[!CAUTION]
-   Door een pakket te installeren, kan bestaande inhoud in de opslagplaats worden overschreven. Daarom adviseren wij dat u eerst een **Test uitvoert installeert** . Op deze manier kunt u controleren of de inhoud van het pakket conflicten oplevert met uw bestaande inhoud.
+   Door een pakket te installeren, kan bestaande inhoud in de opslagplaats worden overschreven. Daarom adviseren wij dat u eerst **Test uitvoert installeert** . Op deze manier kunt u controleren of de inhoud van het pakket conflicten oplevert met uw bestaande inhoud.
 
 ### Pakketten naar uw bestandssysteem downloaden vanuit het delen van pakketten {#downloading-packages-to-your-file-system-from-package-share}
 
@@ -844,7 +852,7 @@ Om pakketten van het Aandeel van het Pakket te downloaden en hen op uw lokale in
 
 Met het Aandeel van het Pakket, kunt u pakketten uploaden aan uw bedrijf-intern gebied van pakketaandeel. Hierdoor kunnen ze worden gedeeld binnen uw bedrijf.
 
-Deze pakketten zijn *niet* beschikbaar voor de algemene AEM-community, maar zijn beschikbaar voor alle gebruikers die zijn geregistreerd bij uw bedrijf.
+Deze pakketten zijn *niet* beschikbaar voor de algemene AEM, maar zijn beschikbaar voor alle gebruikers die bij uw bedrijf zijn geregistreerd.
 
 Om pakketten te uploaden uw bedrijf-interne Delen van het Pakket:
 
@@ -860,7 +868,7 @@ Pakketten in de thuislijst van Package Manager of in andere mappen kunnen niet w
 
    Wanneer u bent aangemeld, geeft AEM details weer over het te uploaden pakket:
 
-   ![chlimage_1-347](assets/chlimage_1-347.png)
+   ![chlimage_1-349](assets/chlimage_1-347.png)
 
 1. Klik op **Delen** om het pakket te uploaden naar het interne pakket voor delen van uw bedrijf.
 
@@ -885,5 +893,5 @@ U kunt alleen pakketten verwijderen die u hebt geüpload door als volgt te werk 
 
 ### Pakketten semi-privé maken {#making-packages-semi-private}
 
-U kunt pakketten delen buiten uw organisatie, maar niet openbaar. Deze pakketten worden als semi-particulier beschouwd. Voor het delen van deze semi-persoonlijke pakketten hebt u hulp nodig van de ondersteuning van Adobe. Hiertoe opent u een ticket met de ondersteuning van Adobe en vraagt u een pakket beschikbaar te stellen buiten uw organisatie. Ze vragen u om een lijst met Adobe-id&#39;s die u toegang tot uw pakketten wilt verlenen.
+U kunt pakketten delen buiten uw organisatie, maar niet openbaar. Deze pakketten worden als semi-particulier beschouwd. Als u deze semi-private pakketten wilt delen, hebt u hulp nodig van Adobe Support. Om dit te doen, open een kaartje met de Steun van Adobe die om een pakket verzoekt wordt ter beschikking gesteld buiten uw organisatie. Ze vragen je om een lijst met Adobe ID die je toegang wilt geven tot je pakketten.
 
