@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d4004ffe-c981-487d-b803-dc4492ae5998
 translation-type: tm+mt
 source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 0%
 
 ---
 
@@ -55,12 +58,12 @@ Houd rekening met het volgende wanneer u een domeinnaam en id kiest:
 
 ### Algemene overwegingen {#general-considerations}
 
-* Als u een andere databaseprovider dan DB2 gebruikt, kan de domein-id maximaal 50 bytes bevatten. Als u ASCII-tekens van één byte gebruikt, is de limiet 50 tekens. Als de domein-id multibyte-tekens bevat, wordt deze limiet verlaagd. Als u bijvoorbeeld een domein maakt waarvan de id 3-byte tekens bevat, is de limiet 16 tekens. Bovendien kunt u geen domeinen maken die 4-byte tekens bevatten. Als u een domein-id maakt die deze limiet overschrijdt, zijn AEM-formulieren in een onstabiele status. Als u wilt herstellen van deze instabiele status, raadpleegt u &quot; [Een domein verwijderen dat uitgebreide of multibyte-tekens](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)bevat&quot; op deze pagina.
-* Het aantal ondernemingsdomeinen en lokale domeinen die binnen vormen kunnen worden tot stand gebracht AEM hangt van de lengte van elk van de domein IDs af. Wanneer u een onderneming of hybride domein toevoegt, werkt het Beheer van de Gebruiker het configInstance koord in de knoop AuthProviders van het AEM dossier van de vormenconfiguratie (config.xml) bij. De configInstance-tekenreeks bevat een door dubbele punten gescheiden lijst met de absolute paden van alle domeinen die aan de machtigingsprovider zijn gekoppeld. Deze tekenreeks mag niet groter zijn dan 8192 tekens. Wanneer deze limiet is bereikt, kunt u geen extra domeinen maken.
+* Als u een andere databaseprovider dan DB2 gebruikt, kan de domein-id maximaal 50 bytes bevatten. Als u ASCII-tekens van één byte gebruikt, is de limiet 50 tekens. Als de domein-id multibyte-tekens bevat, wordt deze limiet verlaagd. Als u bijvoorbeeld een domein maakt waarvan de id 3-byte tekens bevat, is de limiet 16 tekens. Bovendien kunt u geen domeinen maken die 4-byte tekens bevatten. Als u een domein-id maakt die deze limiet overschrijdt, zijn AEM formulieren in een onstabiele status. Als u wilt herstellen van deze instabiele status, raadpleegt u &quot; [Een domein verwijderen dat uitgebreide of multibyte-tekens](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)bevat&quot; op deze pagina.
+* Het aantal ondernemingsdomeinen en lokale domeinen die binnen AEM vormen kunnen worden tot stand gebracht hangt van de lengte van elk van de domein IDs af. Wanneer u een onderneming of een hybride domein toevoegt, werkt het Beheer van de Gebruiker het configInstance koord in de knoop AuthProviders van het dossier van de AEM vormenconfiguratie (config.xml) bij. De configInstance-tekenreeks bevat een door dubbele punten gescheiden lijst met de absolute paden van alle domeinen die aan de machtigingsprovider zijn gekoppeld. Deze tekenreeks mag niet groter zijn dan 8192 tekens. Wanneer deze limiet is bereikt, kunt u geen extra domeinen maken.
 
 ### Overwegingen bij het gebruik van DB2 {#considerations-when-using-db2}
 
-Wanneer u DB2 gebruikt voor uw AEM-formulierdatabase, hangt de maximaal toegestane lengte van de domein-id af van het gebruikte type tekens:
+Wanneer u DB2 gebruikt voor uw AEM formulierdatabase, hangt de maximaal toegestane lengte van de domein-id af van het type tekens dat wordt gebruikt:
 
 * 100 single-byte (ASCII) (bijvoorbeeld tekens die worden gebruikt in het Engels, Frans of Duits)
 * 50 double-byte (bijvoorbeeld tekens die worden gebruikt in Chinese, Japanse of Koreaanse talen)
@@ -68,10 +71,10 @@ Wanneer u DB2 gebruikt voor uw AEM-formulierdatabase, hangt de maximaal toegesta
 
 ### Overwegingen bij het gebruik van MySQL {#considerations-when-using-mysql}
 
-Wanneer u MySQL gebruikt als uw AEM-formulierdatabase, gelden de volgende beperkingen:
+Wanneer u MySQL gebruikt als AEM formulierdatabase, gelden de volgende beperkingen:
 
-* Gebruik alleen single-byte (ASCII)-tekens voor de domein-id en domeinnaam. Als u uitgebreide ASCII-tekens gebruikt, zijn AEM-formulieren niet stabiel en kan er een uitzondering optreden als u probeert het domein te verwijderen. Om van deze instabiele staat terug te krijgen, zie &quot; een domein [verwijderen dat uitgebreide of multi-byte karakters](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot;onderwerp op deze pagina bevat.
-* U kunt geen twee domeinen tot stand brengen die de zelfde naam hebben maar in geval verschillen. Als u bijvoorbeeld een domein met de naam *Adobe* probeert te maken terwijl er al een domein met de naam *adobe* bestaat, treedt er een fout op.
+* Gebruik alleen single-byte (ASCII)-tekens voor de domein-id en domeinnaam. Als u uitgebreide ASCII-tekens gebruikt, zijn AEM niet stabiel en kan er een uitzondering optreden als u probeert het domein te verwijderen. Om van deze instabiele staat terug te krijgen, zie &quot; een domein [verwijderen dat uitgebreide of multi-byte karakters](adding-domains.md#remove-a-domain-that-contains-extended-or-multi-byte-characters)&quot;onderwerp op deze pagina bevat.
+* U kunt geen twee domeinen tot stand brengen die de zelfde naam hebben maar in geval verschillen. Als u bijvoorbeeld een domein met de naam *Adobe* probeert te maken wanneer er al een domein met de naam *adobe* bestaat, treedt er een fout op.
 * Gebruikersbeheer kan geen onderscheid maken tussen twee domeinnamen die alleen verschillen in het gebruik van uitgebreide tekens. Als u bijvoorbeeld een domein met de naam *abcde* en een domein met de naam *âbcdè * maakt, worden ze als hetzelfde beschouwd.
 
 ### Een domein verwijderen dat uitgebreide of multi-byte tekens bevat {#remove-a-domain-that-contains-extended-or-multi-byte-characters}
