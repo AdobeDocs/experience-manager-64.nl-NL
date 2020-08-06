@@ -9,6 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcda96ff-6c7d-46c4-a9e8-7e0fb245cde9
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1233'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +25,9 @@ Voor het ontwerpen van een adaptief formulier met behulp van een JSON-schema als
 * [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md)
 * [JSON Schema](https://json-schema.org/)
 
-## Een JSON-schema gebruiken als formuliermodel {#using-a-json-schema-as-form-model}
+## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
 
-AEM Forms ondersteunt het maken van een adaptief formulier met een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan de [v4-specificaties](https://json-schema.org/draft-04/schema).
+AEM Forms ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan de [v4-specificaties](https://json-schema.org/draft-04/schema).
 
 De belangrijkste kenmerken van het gebruik van een JSON-schema zijn:
 
@@ -434,7 +437,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
  </tbody> 
 </table>
 
-## Niet-ondersteunde constructies {#non-supported-constructs}
+## Niet-ondersteunde constructies  {#non-supported-constructs}
 
 De volgende JSON-schemaconstructies worden niet ondersteund door adaptieve formulieren:
 
