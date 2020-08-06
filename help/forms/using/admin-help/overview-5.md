@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 207c6335-f700-48f1-814b-992692534f6c
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
@@ -24,6 +27,6 @@ PDF Generator converteert verschillende bestandsindelingen naar PDF. Ook wordt P
 Er zijn drie manieren om bestanden naar PDF Generator te verzenden voor verwerking:
 
 * Beheerders hebben toegang tot de PDFG-pagina&#39;s in de beheerconsole. (Zie Bestanden [converteren met PDF Generator](/help/forms/using/admin-help/converting-files-using-pdf-generator.md).)
-* Gebruikers kunnen de eindgebruikerpagina&#39;s van PDFG openen door zich aan te melden `http(s)://[server]:[port]/pdfgui`. Vanaf dat punt hebben ze toegang tot de PDFG Network Printer, PDF maken, HTML naar PDF, PDF exporteren en PDF-pagina&#39;s optimaliseren.
+* Gebruikers kunnen de eindgebruikerpagina&#39;s van PDFG openen door zich aan te melden `http(s)://[server]:[port]/pdfgui`. Vanaf dat punt hebben ze toegang tot de pagina&#39;s PDFG Network Printer, PDF maken, HTML naar PDF, Export PDF en Optimize PDF.
 * U kunt eindpunten voor de diensten vormen. (Zie <!--Fix broken link Managing Endpoints and --> [Aanbevelingen](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#generate-pdf-service-recommendations)voor PDF-service genereren.)
 
