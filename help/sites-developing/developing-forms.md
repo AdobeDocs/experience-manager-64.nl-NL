@@ -1,6 +1,6 @@
 ---
-title: Formulieren ontwikkelen (klassieke gebruikersinterface)
-seo-title: Formulieren ontwikkelen (klassieke gebruikersinterface)
+title: Forms ontwikkelen (klassieke gebruikersinterface)
+seo-title: Forms ontwikkelen (klassieke gebruikersinterface)
 description: Meer informatie over het ontwikkelen van formulieren
 seo-description: Meer informatie over het ontwikkelen van formulieren
 uuid: 124e63ba-8d87-4173-aa35-7809b39811d7
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 0ef6a3b1-e7ce-4268-a5be-a565646ecc29
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '1952'
+ht-degree: 0%
 
 ---
 
 
-# Formulieren ontwikkelen (klassieke gebruikersinterface){#developing-forms-classic-ui}
+# Forms ontwikkelen (klassieke gebruikersinterface){#developing-forms-classic-ui}
 
 De basisstructuur van een formulier is:
 
@@ -23,7 +26,7 @@ De basisstructuur van een formulier is:
 * Formulierelementen
 * Einde formulier
 
-Al deze worden gerealiseerd met een reeks standaardcomponenten [van de](/help/sites-authoring/default-components.md)Vorm, beschikbaar in een standaardinstallatie AEM.
+Al deze worden gerealiseerd met een reeks standaardcomponenten [van het](/help/sites-authoring/default-components.md)Vorm, beschikbaar in een standaard AEM installatie.
 
 Naast het [ontwikkelen van nieuwe componenten](/help/sites-developing/developing-components-samples.md) voor gebruik op uw formulieren kunt u ook:
 
@@ -81,7 +84,7 @@ Let op: als de waarden in de afbeelding `String[]` als volgt zijn opgemaakt:
 * `AK=Alaska`
 * *enz.*
 
-Vervolgens genereert AEM de lijst als:
+AEM genereert de lijst vervolgens als:
 
 * `<option value="AL">Alabama</option>`
 * `<option value="AK">Alaska</option>`
@@ -92,7 +95,7 @@ Deze functie kan bijvoorbeeld goed worden gebruikt in een meertalige instelling.
 
 Een formulier heeft een handeling nodig. Met een handeling wordt de bewerking gedefinieerd die wordt uitgevoerd wanneer het formulier wordt verzonden met de gebruikersgegevens.
 
-Een reeks acties wordt geleverd met een standaard AEM-installatie. U ziet deze onder:
+Een reeks acties wordt voorzien van een standaard AEM installatie, deze kunnen onder worden gezien:
 
 `/libs/foundation/components/form/actions`
 
@@ -136,7 +139,7 @@ U kunt uw eigen actie toevoegen onder `/apps` als volgt:
       De naam van het script is `forward.<extension`>, bijvoorbeeld `forward.jsp`
 
       Dit script kan een pad definiëren. Het huidige verzoek wordt dan door:sturen aan de gespecificeerde weg.
-   De noodzakelijke vraag is `FormsHelper#setForwardPath` (2 varianten). Doorgaans wordt een validatie, oftewel logica, uitgevoerd om het doelpad te vinden en vervolgens door te sturen naar dat pad, zodat de standaard Sling POST-server de werkelijke opslag in JCR kan uitvoeren.
+   De noodzakelijke vraag is `FormsHelper#setForwardPath` (2 varianten). Doorgaans wordt een validatie, oftewel logica, uitgevoerd om het doelpad te vinden en vervolgens door te sturen naar dat pad, zodat de standaard Sling POST-servlet de werkelijke opslag in JCR kan uitvoeren.
 
    Er zou ook een ander servlet kunnen zijn die de daadwerkelijke verwerking doet, in een dergelijk geval de formulieractie en de actie `forward.jsp` zou slechts als &quot;lijm&quot;code dienst doen. Een voorbeeld van dit is de postactie bij `/libs/foundation/components/form/actions/mail`, die details aan door:sturen `<currentpath>.mail.html`waar een postservlet heeft.
 
@@ -144,6 +147,7 @@ U kunt uw eigen actie toevoegen onder `/apps` als volgt:
 
    * a `post.POST.jsp` is nuttig voor kleine verrichtingen die volledig door de actie zelf worden gedaan
    * terwijl het nuttig `forward.jsp` is wanneer slechts delegatie wordt vereist.
+
    De uitvoeringsvolgorde voor de scripts is:
 
    * Tijdens het weergeven van het formulier ( `GET`):
@@ -185,7 +189,7 @@ U kunt uw eigen actie toevoegen onder `/apps` als volgt:
 
       Dit script kan worden gebruikt om opschoning uit te voeren.
 
-1. Gebruik de component van **Vormen** in parsys. De **keuzelijst Type** handeling bevat nu uw nieuwe handeling.
+1. Gebruik de component **Forms** in een parsys. De **keuzelijst Type** handeling bevat nu uw nieuwe handeling.
 
    >[!NOTE]
    >
@@ -254,7 +258,7 @@ Vervolgens kunt u het volgende definiëren:
 
 U kunt het formulier zo configureren dat formuliercomponenten worden weergegeven of verborgen op basis van de waarde van andere velden in het formulier.
 
-Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder specifieke omstandigheden nodig is. Op een feedbackformulier wordt bijvoorbeeld aan klanten gevraagd of ze productinformatie per e-mail naar hen willen sturen. Als u Ja selecteert, wordt een tekstveld weergegeven waarmee de klant zijn e-mailadres kan typen.
+Het is handig de zichtbaarheid van een formulierveld te wijzigen als het veld alleen onder bepaalde omstandigheden nodig is. Op een feedbackformulier wordt bijvoorbeeld aan klanten gevraagd of ze productinformatie per e-mail naar hen willen sturen. Als u Ja selecteert, wordt een tekstveld weergegeven waarmee de klant zijn e-mailadres kan typen.
 
 In het dialoogvenster Regels **tonen/verbergen** bewerken kunt u opgeven onder welke voorwaarden een formuliercomponent wordt weergegeven of verborgen.
 
@@ -292,6 +296,7 @@ In JavaScript gebruiken voorwaarden de waarde van de eigenschap Elementnaam om n
       * **om het even welk** - als slechts één of meerdere voorwaarden waar moeten zijn om de component te tonen of te verbergen
    * Selecteer in de voorwaardelijn (een wordt standaard weergegeven) een component, operator en geef een waarde op.
    * Voeg desgewenst meer voorwaarden toe door op Voorwaarde **** toevoegen te klikken.
+
    Bijvoorbeeld:
 
    ![chlimage_1-227](assets/chlimage_1-227.png)
