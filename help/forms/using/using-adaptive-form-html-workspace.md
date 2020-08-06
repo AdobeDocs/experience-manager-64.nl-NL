@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 2f514072-81d9-48de-8369-cca94a330f1d
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '684'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
 
 AEM Forms on JEE biedt de mogelijkheid om een adaptief formulier te gebruiken in HTML Workspace.
 
-Omdat u tijdens het ontwerpen van processen een XDP kunt selecteren, is de mogelijkheid om te bladeren vanuit een bestaande adaptieve AEM-opslagplaats toegevoegd. Het vermogen geeft de ontwerper van het Proces de capaciteit om een adaptief vorm in BeginPunt evenals in Taak te vormen.
+Aangezien u tijdens het ontwerpen van processen een XDP kunt selecteren, is de mogelijkheid om vanuit een bestaande adaptieve AEM opslagplaats te bladeren toegevoegd. Het vermogen geeft de ontwerper van het Proces de capaciteit om een adaptief vorm in BeginPunt evenals in Taak te vormen.
 
 ## Procesontwerpervaring {#process-design-experience}
 
@@ -30,17 +33,17 @@ Voer het volgende uit om het gebruik van adaptieve formulieren in procesontwerp 
 
 ### LiveCycle-toepassing exporteren en importeren {#livecycle-application-export-and-import}
 
-Omdat adaptieve formulieren zich in de AEM-opslagplaats bevinden, bevat de export van de LiveCycle-toepassing alleen de referenties voor gebruikte adaptieve formulieren. Daarom is het exporteren en importeren van LiveCycle-toepassing een proces dat uit twee stappen bestaat. De LiveCycle-toepassing bevat procesdefinities, enzovoort. Een afzonderlijk pakket met adaptieve formulieren wordt als een ZIP-bestand geëxporteerd vanuit AEM. Tijdens het importeren wordt de LiveCycle-toepassing geïmporteerd via Workbench en worden adaptieve formulieren geïmporteerd via AEM.
+Omdat adaptieve formulieren zich in de AEM opslagplaats bevinden, bevat de export van de LiveCycle-toepassing alleen de referenties voor gebruikte adaptieve formulieren. Daarom is het exporteren en importeren van LiveCycle-toepassingen een proces in twee stappen. De toepassing LiveCycle bevat procesdefinities, enzovoort. Een afzonderlijk pakket met adaptieve formulieren wordt vanuit AEM geëxporteerd als een ZIP-bestand. Tijdens het importeren wordt de LiveCycle-toepassing geïmporteerd via Workbench en worden adaptieve formulieren geïmporteerd via AEM.
 
 ## Gebruikerservaring van adaptief formulier in HTML Workspace {#user-experience-of-adaptive-form-in-html-workspace}
 
 De HTML-werkruimte bevat enkele adaptieve formulierspecifieke besturingselementen naast de besturingselementen die beschikbaar zijn voor mobiele formulieren. Een gebruiker kan bijlagen toevoegen, opslaan, ondertekenen, verzenden en door de aangepaste formulieren in HTML Workspace navigeren wanneer de gebruiker een taak of beginpunt opent. Hieronder volgen de specifieke kenmerken:
 
-1. Voor **attach **files worden Taakbijlagen gebruikt, net als voor mobiele formulieren. Een knop van het type bestandsbijlage van het adaptieve formulier is verborgen.
+1. Voor **attach **files gebruiken Taakbijlagen, net als voor Mobile Forms. Een knop van het type bestandsbijlage van het adaptieve formulier is verborgen.
 
-1. Als u een adaptief formulier wilt opslaan, klikt u op **Opslaan**, net als in Mobiele formulieren. Elke knop voor het type Opslaan van het adaptieve formulier is verborgen.
+1. Als u een adaptief formulier wilt opslaan, klikt u op **Opslaan**, net als in Mobile Forms. Elke knop voor het type Opslaan van het adaptieve formulier is verborgen.
 
-1. Als u een adaptief formulier wilt verzenden, gebruikt u de beschikbare **knop Verzenden** of routehandelingen, zoals het geval was in Mobiele formulieren. De knop Verzendtype van het adaptieve formulier is verborgen.
+1. Als u een adaptief formulier wilt verzenden, gebruikt u de beschikbare **knop Verzenden** of routeacties, zoals in Mobile Forms. De knop Verzendtype van het adaptieve formulier is verborgen.
 
 1. **Zichtbaarheid van de werkbalk Adaptief formulier Global**: Als de procesontwerper de algemene werkbalk of de werkbalk op hoofdniveau verbergt, worden de werkbalk en de knoppen niet weergegeven op adaptieve formulieren.
 
@@ -63,7 +66,7 @@ De HTML-werkruimte bevat enkele adaptieve formulierspecifieke besturingselemente
    ![Nieuw proces maken](assets/create_new_process.png)
 
 1. Creeer een Punt van het Begin of wijs Taak toe en klik het tweemaal.
-1. Selecteer onder de sectie **[!UICONTROL Presentatie en gegevens]** een CRX-element **** gebruiken en klik op de ellipsen vóór het element.
+1. Selecteer onder de **[!UICONTROL Presentation & Data]** sectie de ellipsen **[!UICONTROL use a CRX asset]** en klik op het element.
 
    ![Een CRX-element gebruiken](assets/use_crx_asset.png)
 
