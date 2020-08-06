@@ -1,8 +1,8 @@
 ---
 title: Workflows ontwikkelen en uitbreiden
 seo-title: Workflows ontwikkelen en uitbreiden
-description: AEM verstrekt verscheidene hulpmiddelen en middelen voor het creëren van werkschemamodellen, het ontwikkelen van werkschemastappen en voor programmatically het in wisselwerking staan met werkschema's
-seo-description: AEM verstrekt verscheidene hulpmiddelen en middelen voor het creëren van werkschemamodellen, het ontwikkelen van werkschemastappen en voor programmatically het in wisselwerking staan met werkschema's
+description: AEM biedt verschillende gereedschappen en bronnen voor het maken van workflowmodellen, het ontwikkelen van workflowstappen en voor programmatisch communiceren met workflows.
+seo-description: AEM biedt verschillende gereedschappen en bronnen voor het maken van workflowmodellen, het ontwikkelen van workflowstappen en voor programmatisch communiceren met workflows.
 uuid: 5a857589-3b13-4519-bda2-b1dab6005550
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1535'
+ht-degree: 0%
 
 ---
 
 
 # Workflows ontwikkelen en uitbreiden{#developing-and-extending-workflows}
 
-AEM verstrekt verscheidene hulpmiddelen en middelen voor het creëren van werkschemamodellen, het ontwikkelen van werkschemastappen, en voor programmatically het in wisselwerking staan met werkschema&#39;s.
+AEM biedt verschillende gereedschappen en bronnen voor het maken van workflowmodellen, het ontwikkelen van workflowstappen en voor programmatisch communiceren met workflows.
 
-Met workflows kunt u processen automatiseren voor het beheer van bronnen en het publiceren van inhoud in uw AEM-omgeving. Workflows bestaan uit een reeks stappen waarbij elke stap een afzonderlijke taak uitvoert. U kunt logica en runtime gegevens gebruiken om besluiten te nemen over wanneer een proces kan verdergaan en de volgende stap van één van veelvoudige mogelijke stappen selecteren.
+Met workflows kunt u processen automatiseren voor het beheer van bronnen en het publiceren van inhoud in uw AEM. Workflows bestaan uit een reeks stappen waarbij elke stap een afzonderlijke taak uitvoert. U kunt logica en runtime gegevens gebruiken om besluiten te nemen over wanneer een proces kan verdergaan en de volgende stap van één van veelvoudige mogelijke stappen selecteren.
 
-Zo bevatten bedrijfsprocessen voor het maken en publiceren van webpagina&#39;s goedkeurings- en aftekeningstaken van verschillende deelnemers. Deze processen kunnen worden gemodelleerd met AEM-workflows en worden toegepast op specifieke inhoud.
+Zo bevatten bedrijfsprocessen voor het maken en publiceren van webpagina&#39;s goedkeurings- en aftekeningstaken van verschillende deelnemers. Deze processen kunnen worden gemodelleerd gebruikend AEM werkschema&#39;s en op specifieke inhoud worden toegepast.
 
 De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pagina&#39;s nadere bijzonderheden worden gegeven:
 
@@ -38,10 +41,11 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >
 >* Als u deelneemt aan workflows, raadpleegt u [Workflows](/help/sites-authoring/workflows.md)gebruiken.
 >* Zie Workflows [beheren voor het beheren van workflows](/help/sites-administering/workflows.md).
->* Zie Digitale elementen [wijzigen met Adobe Experience Manager Workflows voor een end-to-end Community-artikel.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
->* Zie [Vraag het aan de deskundigen van AEM Webinar over Werkschema](https://bit.ly/ATACE218).
->* Zie Een aangepaste stap [](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)voor Adobe Experience Manager 6.3 voor een end-to-end Community-artikel.
->* Wijzigingen in de locatie van informatie zie Herstructurering van [bewaarplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) en [Workflowbeste praktijken - Locaties](/help/sites-developing/workflows-best-practices.md#locations).
+>* Zie Digitale middelen [wijzigen met Adobe Experience Manager Workflows voor een end-to-end communautair artikel.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+>* Zie het [Vraag het de AEM van de Deskundigen Webinar over Werkschema](https://bit.ly/ATACE218).
+>* Voor een end-to-end communautair artikel zie het [Creëren van een douane Adobe Experience Manager 6.3 Dynamische stap](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)van de Deelnemer.
+>* Wijzigingen in de locatie van informatie zie Herstructurering van [bewaarplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) en [Werkstroom Beste praktijken - Locaties](/help/sites-developing/workflows-best-practices.md#locations).
+
 >
 
 
@@ -125,7 +129,7 @@ Er zijn verschillende typen werkstromen die worden aangegeven in de console Work
 
 * **Standaard**
 
-   Dit zijn de werkstromen buiten de doos inbegrepen in een standaardAEM instantie.
+   Dit zijn de werkstromen buiten-van-de-doos inbegrepen in een standaard AEM instantie.
 
 * Aangepaste workflows (geen indicator in de console)
 
@@ -157,6 +161,7 @@ Er zijn tijdelijke workflows geïntroduceerd voor het laden van een groot aantal
 >* Het ladingstype (bijvoorbeeld video) vereist externe stappen voor verwerking; in dergelijke gevallen is de runtimegeschiedenis nodig om de status te bevestigen.
 >* De werkstroom voert een **EN-splitsing** in. in dergelijke gevallen is de runtimegeschiedenis nodig om de status te bevestigen.
 >* Wanneer de tijdelijke werkstroom een deelnemersstap ingaat, verandert deze modus (bij uitvoering) in een niet-overgangswerkstroom. aangezien de taak aan een persoon wordt doorgegeven , moet de geschiedenis worden voortgezet
+
 >
 
 
@@ -195,6 +200,7 @@ Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
 
    * U kunt meerdere werkgebiednamen maken.
    * Vervolgens wordt aan elke stap een afzonderlijke werkgebiednaam toegewezen (een werkgebiednaam kan aan een of meer stappen worden toegewezen).
+
    | **Naam stap** | **Werkgebied (toegewezen aan de stap)** |
    |---|---|
    | Stap 1 | Maken |
@@ -206,9 +212,9 @@ Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
 
 1. Wanneer de workflow wordt uitgevoerd, kan de gebruiker de voortgang bekijken op basis van de namen van het werkgebied (in plaats van de namen van de stappen). De voortgang van de workflow wordt weergegeven op het tabblad [WORKFLOW INFO van het venster met taakdetails van het werkitem](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) dat in het [Postvak](/help/sites-authoring/inbox.md)wordt weergegeven.
 
-### Workflows en formulieren {#workflows-and-forms}
+### Workflows en Forms {#workflows-and-forms}
 
-Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Dit kan met de [kerncomponenten van componenten](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) beschikbaar in een standaardAEM instantie, of met de oplossing [](/help/forms/using/aem-forms-workflow.md)van Vormen AEM zijn.
+Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Dit kan met de [kerncomponenten van componenten](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) beschikbaar in een standaard AEM instantie, of met de oplossing [van](/help/forms/using/aem-forms-workflow.md)AEM Forms zijn.
 
 Bij het maken van een nieuw formulier kan het verzenden van het formulier eenvoudig worden gekoppeld aan een workflowmodel. bijvoorbeeld om de inhoud op een bepaalde locatie van de gegevensopslagruimte op te slaan of om een gebruiker op de hoogte te stellen van de verzending van het formulier en de inhoud ervan.
 
