@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Cookie-gebruik configureren{#configuring-cookie-usage}
 
-AEM verleent de dienst die u toelaat om te vormen en te controleren hoe de koekjes met uw Web-pagina&#39;s worden gebruikt:
+AEM verstrekt de dienst die u toelaat om te vormen en te controleren hoe de koekjes met uw Web-pagina&#39;s worden gebruikt:
 
 * Een configureerbare server-zijdienst handhaaft een lijst van koekjes die kunnen worden gebruikt.
 * Met een javascript-API kan uw JavaScript-code controleren of een cookie kan worden gebruikt.
@@ -41,7 +41,7 @@ Om de dienst te vormen, kunt u de Console [van het](/help/sites-deploying/config
 
 ## Cookiegebruik valideren {#validating-cookie-usage}
 
-Gebruik JavaScript op de client om Adobe Granite Opt-Out Service aan te roepen om te controleren of u een cookie kunt gebruiken. Gebruik het JavaScript-object Granite.OptOutUtil om een van de volgende taken uit te voeren:
+Gebruik client-side javascript om Adobe Granite Opt-Out Service aan te roepen om te controleren of u een cookie kunt gebruiken. Gebruik het JavaScript-object Granite.OptOutUtil om een van de volgende taken uit te voeren:
 
 * Vraag een lijst met cookienamen aan die aangeven dat de gebruiker geen toestemming geeft cookies te gebruiken voor traceringsdoeleinden.
 * Verkrijg een lijst van koekjes die kunnen worden gebruikt.
