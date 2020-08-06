@@ -11,17 +11,20 @@ topic-tags: development-tools
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '507'
+ht-degree: 0%
 
 ---
 
 
 # Introductie van Java API Snel starten {#introducing-java-api-quickstart}
 
-Met de Adobe AEM Forms API Quick Start kunt u uw inspanningen versnellen om programma&#39;s te ontwikkelen die communiceren met de services van AEM Forms. *Snel* starten zijn volledige programma&#39;s die u kunt kopiëren en plakken in uw eigen projecten en als uitgangspunt kunt gebruiken. U kunt een Snel Begin in werking stellen om te zien hoe het zich gedraagt en het voor uw eigen behoeften wijzigt.
+Met de Adobe AEM Forms API Quick Start kunt u uw inspanningen versnellen om programma&#39;s te ontwikkelen die communiceren met de AEM Forms-services. *Snel* starten zijn volledige programma&#39;s die u kunt kopiëren en plakken in uw eigen projecten en als uitgangspunt kunt gebruiken. U kunt een Snel Begin in werking stellen om te zien hoe het zich gedraagt en het voor uw eigen behoeften wijzigt.
 
-De verrichtingen van de Vormen van AEM kunnen worden uitgevoerd gebruikend sterk-getypte API van Vormen AEM en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
-Quick Start van de API voor sterk getypte Java bevat een lijst met JAR-bestanden die vereist zijn om de Java-toepassing uit te voeren. De meeste Java Quick Starts zijn consoletoepassing die binnen loopt `main`. De snel aan de slag zijnde API van Forms Java is echter sterk getypt en is geïmplementeerd als Java servlet die wordt uitgevoerd in een webtoepassing.
+Quick Start van de API voor sterk getypte Java bevat een lijst met JAR-bestanden die vereist zijn om de Java-toepassing uit te voeren. De meeste Java Quick Starts zijn consoletoepassing die binnen loopt `main`. De Snel starten van de Forms Java met sterk getypte API wordt echter geïmplementeerd als Java-servlet die wordt uitgevoerd in een webtoepassing.
 
 De lijst met JAR-bestanden bevindt zich in een opmerkingssectie aan het begin van het snelstarten. De volgende opmerking bevindt zich bijvoorbeeld in een functie voor het snel starten van een uitvoer en is een typische JAR-bestandenlijst die wordt weergegeven in elke Java Quick Start.
 
@@ -62,17 +65,17 @@ De lijst met JAR-bestanden bevindt zich in een opmerkingssectie aan het begin va
 
 ## Meerdere services snel aan de slag {#multiple-services-quick-start}
 
-De meeste snelle Beginnen die in *Programming met AEM Forms *worden gevestigd roepen de specifieke dienst aan om een verrichting uit te voeren. Sommige Snel starten roepen echter meerdere services van AEM Forms aan om een bepaalde workflow uit te voeren. In de volgende lijst vindt u een snelle Java-start waarmee meerdere AEM Forms-services worden aangeroepen:
+De meeste Snelle Begint die in *Programming met AEM Forms *wordt gevestigd roepen de specifieke dienst aan om een verrichting uit te voeren. Sommige Quick Start-programma&#39;s roepen echter meerdere AEM Forms-services aan om een bepaalde workflow uit te voeren. In de volgende lijst vindt u een snelle start van Java waarbij meerdere AEM Forms-services worden aangeroepen:
 
-[Snel starten (SOAP-modus): Een document in de opslagplaats voor AEM-formulieren doorgeven aan de uitvoerservice met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (hiermee wordt de service Opslagplaats en Uitvoer geactiveerd)
+[Snel starten (SOAP-modus): Een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api) (hiermee wordt de Repository- en Output-service aangeroepen)
 
 [Snel starten (SOAP-modus): Een PDF-document maken op basis van fragmenten met de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-creating-a-pdf-document-based-on-fragments-using-the-java-api) (hiermee wordt de Assembler- en Output-service geactiveerd)
 
-[Snel starten (SOAP-modus): PDF-documenten maken met verzonden XML-gegevens met behulp van de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (roept de service Formulieren, Uitvoer en Documentbeheer aan)
+[Snel starten (SOAP-modus): PDF-documenten maken met verzonden XML-gegevens met behulp van de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-creating-pdf-documents-with-submitted-xml-data-using-the-java-api) (roept de service Forms, Output en Document Management aan)
 
-[Snel starten (SOAP-modus): Documenten doorgeven aan de Forms Service met behulp van de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (hiermee wordt de service Formulieren en documentbeheer aangeroepen)
+[Snel starten (SOAP-modus): Documenten doorgeven aan de Forms-service met de Java API](/help/forms/developing/forms-service-api-quick-starts.md#quick-start-soap-mode-passing-documents-to-the-forms-service-using-the-java-api) (hiermee wordt de Forms- en Document Management-service aangeroepen)
 
-[Snel starten (SOAP-modus): Een op XFA gebaseerd formulier digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (hiermee wordt de service Formulieren en handtekening aangeroepen)
+[Snel starten (SOAP-modus): Een op XFA gebaseerd formulier digitaal ondertekenen met de Java API](/help/forms/developing/signature-service-java-api-quick.md#quick-start-soap-mode-digitally-signing-a-xfa-based-form-using-the-java-api) (hiermee wordt de Forms- en Signature-service aangeroepen)
 
 [Snel starten (SOAP-modus): Rollen en machtigingen beheren met de Java API](/help/forms/developing/user-manager-java-api-quick.md#quick-start-soap-mode-managing-roles-and-permissions-using-the-java-api) (roept DirectoryManager en de AuthorizationManager-service aan)
 
@@ -80,9 +83,9 @@ De meeste snelle Beginnen die in *Programming met AEM Forms *worden gevestigd ro
 
 >[!NOTE]
 >
->Het snelle Begin dat in Programmering met Vormen wordt gevestigd AEM is gebaseerd die Vormen op de Server van de Toepassing JBoss® en het werkende systeem van Microsoft® Windows® worden opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
+>Quick Start in Programming with AEM Forms is gebaseerd op AEM Forms dat wordt geïmplementeerd op JBoss® Application Server en het Microsoft® Windows®-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals UNIX®, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. (Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).)
 
 >[!NOTE]
 >
->De meeste van de Webdienst Snel Begint wordt geschreven in C# en gebruikt het .NET kader. Nochtans, kunt u de logica van de cliënttoepassing tot stand brengen die de diensten van Vormen AEM in om het even welke ontwikkelomgeving kan aanhalen die de normen van de ZEEP steunt. (Zie [AEM-formulieren aanroepen met behulp van webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
+>De meeste van de Webdienst Snel Begint wordt geschreven in C# en gebruikt het .NET kader. Nochtans, kunt u de logica van de cliënttoepassing tot stand brengen die de diensten van AEM Forms in om het even welke ontwikkelomgeving kan aanhalen die de normen van de ZEEP steunt. (Zie AEM Forms [aanroepen met webservices](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-web-services).)
 
