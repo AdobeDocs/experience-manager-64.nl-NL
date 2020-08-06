@@ -1,6 +1,6 @@
 ---
 title: Ontwikkeling van proxy's
-description: 'Een proxy is een AEM-instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een AEM-proxy, ondersteunde bewerkingen, proxycomponenten en een aangepaste proxyworker kunt configureren. '
+description: 'Een proxy is een AEM instantie die proxyworkers gebruikt om taken te verwerken. Leer hoe u een AEM proxy, ondersteunde bewerkingen, proxycomponenten en een aangepaste proxyworker kunt configureren. '
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM) Assets gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
 
-Een proxy is een specifieke (en soms aparte) AEM-instantie die proxyworkers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een AEM Assets-proxy kan dit worden gebruikt voor het laden van elementen voor rendering binnen AEM Assets. De [IDS-proxyworker](indesign.md) gebruikt bijvoorbeeld een InDesign-server om bestanden te verwerken voor gebruik in AEM-middelen.
+Een proxy is een specifieke (en soms aparte) AEM instantie die proxyworkers gebruikt als processors die verantwoordelijk zijn voor het afhandelen van een taak en het maken van een resultaat. Een volmachtsarbeider kan voor een grote verscheidenheid van taken worden gebruikt. In het geval van een AEM Assets-proxy kan dit worden gebruikt voor het laden van elementen voor rendering binnen AEM Assets. De [IDS-proxyworker](indesign.md) gebruikt bijvoorbeeld een InDesign Server om bestanden te verwerken voor gebruik in AEM Assets.
 
-Wanneer de proxy een afzonderlijke AEM-instantie is, wordt de belasting van de AEM-ontwerpinstantie(s) verminderd. Standaard voert AEM Assets de taken voor middelenverwerking uit in dezelfde JVM (extern via Proxy) om de belasting op de AEM-ontwerpinstantie te verminderen.
+Wanneer de proxy een afzonderlijke AEM-instantie is, wordt de belasting van de AEM ontwerpinstantie(s) verminderd. Standaard voert AEM Assets de elementverwerkingstaken uit in dezelfde JVM (extern via Proxy) om de belasting van de AEM-ontwerpinstantie te verminderen.
 
 ## Proxy (HTTP-toegang) {#proxy-http-access}
 
@@ -103,7 +103,7 @@ Hieronder ziet u een voorbeeld van API-gebruik:
  proxyJobService.removeJob(jobId);
 ```
 
-### Cloud Service Configurations {#cloud-service-configurations}
+### Configuraties van Cloud Servicen {#cloud-service-configurations}
 
 >[!NOTE]
 >
@@ -113,7 +113,7 @@ Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via cl
 
 >[!NOTE]
 >
->Zie de configuratie [van de Worker van de Volmacht van de Server](indesign.md#configuring-the-proxy-worker-for-indesign-server) InDesign en de configuratie [van de Diensten van de](../sites-developing/extending-cloud-config.md) Wolk van de Server voor meer informatie.
+>Zie de configuratie [van de Worker van de Volmacht van de](indesign.md#configuring-the-proxy-worker-for-indesign-server) Server InDesign en de configuratie [van](../sites-developing/extending-cloud-config.md) Cloud Services voor meer informatie.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -132,9 +132,9 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 
 ### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
 
-De [IDS-proxyworker](indesign.md) is een voorbeeld van een AEM Assets-proxy-worker die al buiten het vak is opgegeven om de verwerking van InDesign-elementen uit te besteden.
+De [IDS-proxyworker](indesign.md) is een voorbeeld van een AEM Assets-proxyworker die al buiten het vak is geplaatst om de verwerking van InDesign-elementen uit te besteden.
 
-U kunt ook uw eigen AEM Assets-proxy-worker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw AEM Assets-verwerkingstaken verzendt en uitbesteedt.
+U kunt ook uw eigen AEM Assets-proxyworker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw AEM Assets-verwerkingstaken kan verzenden en uitbesteden.
 
 Als u uw eigen aangepaste proxyworker wilt instellen, moet u:
 
@@ -178,7 +178,7 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 >
 >Wat het AEM Assets-proxyframework niet buiten de box biedt, is het poolmechanisme.
 >
->De integratie InDesign staat de toegang van een pool van indesign servers (IDSPool) toe. Deze pooling is specifiek voor de integratie van InDesign en maakt geen deel uit van het AEM Assets-proxyframework.
+>De integratie van InDesign staat de toegang van een pool van indesign servers (IDSPool) toe. Deze pooling is specifiek voor InDesign-integratie en maakt geen deel uit van het AEM Assets-proxyframework.
 
 >[!NOTE]
 >
