@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8d85d72-0215-4680-a334-e37a530fba58
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '278'
+ht-degree: 2%
 
 ---
 
@@ -58,7 +61,7 @@ De `following`component maakt een lijst van de leden die of het huidige lid volg
    <td>
     <ul> 
      <li>Naam: <strong><code>outgoing</code></strong></li> 
-     <li>Type:Boolean</li> 
+     <li>Type: Boolean</li> 
      <li>Waarde:<br /> 
       <ul> 
        <li><i>true </i>- in de <code>following</code> component worden de leden weergegeven die het momenteel aangemelde lid zijn <code>follows</code></li> 
