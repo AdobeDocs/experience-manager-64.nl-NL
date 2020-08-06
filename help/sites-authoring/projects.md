@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 42b224e5-1256-44b6-9b46-4cd6de5927fb
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1394'
+ht-degree: 9%
 
 ---
 
 
 # Projecten{#projects}
 
-Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Banden. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere types van informatie omvatten, zoals die in detail in de Tegels van het [Project worden beschreven.](#project-tiles)
+Met projecten kunt u resources groeperen in één entiteit. Een gemeenschappelijke, gedeelde omgeving maakt het gemakkelijk om uw projecten te beheren. De soorten middelen u met een project kunt associëren worden bedoeld in AEM als Tegels. De tegels kunnen project en teaminformatie, activa, werkschema&#39;s, en andere types van informatie omvatten, zoals die in detail in de Tegels van het [Project worden beschreven.](#project-tiles)
 
 >[!CAUTION]
 >
@@ -82,7 +85,7 @@ Net als bij elementen kunt u [elementverzamelingen](/help/assets/managing-collec
 
 ![chlimage_1-172](assets/chlimage_1-172.png)
 
-Voeg een verzameling toe door op Verzameling **** toevoegen te klikken en de gewenste verzameling in de lijst te selecteren.
+Voeg een verzameling toe door op **Verzameling toevoegen** te klikken en de juiste verzameling in de lijst te selecteren.
 
 ### Ervaringen {#experiences}
 
@@ -90,7 +93,7 @@ Met de tegel **Ervaring** kunt u een mobiele app, website of publicatie aan het 
 
 ![chlimage_1-173](assets/chlimage_1-173.png)
 
-De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele toepassing of een publicatie. Voeg ervaringen toe door op het plusteken (+) te klikken of op Ervaring **** toevoegen te klikken en het type ervaring te selecteren.
+De pictogrammen geven aan welke ervaring wordt weergegeven: website, mobiele applicatie of een publicatie. Voeg ervaringen toe door op het plusteken (+) te klikken of op **Ervaring toevoegen** te klikken en het type ervaring te selecteren.
 
 ![chlimage_1-174](assets/chlimage_1-174.png)
 
@@ -100,7 +103,7 @@ Selecteer het pad voor de miniaturen en wijzig, indien van toepassing, de miniat
 
 Met de tegel Koppelingen kunt u externe koppelingen aan uw project koppelen.
 
-![chlimage_1-175](assets/chlimage_1-175.png)
+![chlimage_1-174](assets/chlimage_1-175.png)
 
 U kunt de koppeling een naam geven die gemakkelijk herkenbaar is en u kunt de miniatuur wijzigen.
 
@@ -130,7 +133,7 @@ Klik op de ellips onder aan de **Vertaaltaak** -kaart om de elementen in de vert
 
 In deze tegel, kunt u de leden van het projectteam specificeren. Wanneer het uitgeven, kunt u de naam van het teamlid ingaan en de gebruikersrol toewijzen.
 
-![chlimage_1-181](assets/chlimage_1-181.png)
+![chlimage_1-101](assets/chlimage_1-181.png)
 
 U kunt teamleden toevoegen en verwijderen uit het team. Bovendien kunt u de [gebruikersrol](#user-roles-in-a-project) uitgeven die aan het teamlid wordt toegewezen.
 
@@ -156,7 +159,7 @@ Meer informatie wordt beschreven in de werkstroom E-mail [aanvragen.](/help/site
 
 U kunt uw project toewijzen om bepaalde workflows te volgen. Als om het even welke werkschema&#39;s lopen, toont hun status in de tegel van **Werkschema** in Projecten.
 
-![chlimage_1-185](assets/chlimage_1-185.png)
+![chlimage_1-186](assets/chlimage_1-185.png)
 
 U kunt uw project toewijzen om bepaalde workflows te volgen. Afhankelijk van welk project u kiest, hebt u verschillende beschikbare werkschema&#39;s.
 
@@ -176,7 +179,7 @@ Met Taken kunt u de status van projectgerelateerde taken, waaronder workflows, c
 
 ## Projectsjablonen {#project-templates}
 
-AEM verzendt drie verschillende sjablonen uit de doos:
+AEM schepen met drie verschillende sjablonen uit de doos:
 
 * Een eenvoudig project - een referentiemonster voor alle projecten die niet in andere categorieën passen (een &#39;catch-all&#39;-project). Het omvat drie basisrollen (Eigenaars, Editors, en Waarnemers) en vier werkschema&#39;s (de Goedkeuring van het Project, de Lancering van het Verzoek, de Pagina van het Aanbrengen van het Verzoek en E-mail van het Verzoek).
 * Een mediaproject - een referentiemonsteringsproject voor aan media gerelateerde activiteiten. Het omvat verscheidene media verwante projectrollen (Fotografen, Editors, Copywriters, Ontwerpers, Eigenaars en Waarnemers). Het omvat ook twee workflows met betrekking tot media-inhoud - Verzoek om kopie (voor het aanvragen en reviseren van tekst) en Fotoopname van product (voor het beheren van productgerelateerde fotografie)
@@ -240,5 +243,5 @@ Voor creatieve projecten worden ook extra rollen - bijvoorbeeld fotografen - geg
 
 >[!NOTE]
 >
->Wanneer u het project creeert en gebruikers aan de diverse rollen toevoegt, worden de groepen verbonden aan het project automatisch gecreeerd om bijbehorende toestemmingen te beheren. Bijvoorbeeld, zou een project genoemd Mijn project drie groepen **MijnProjecteigenaars**, **Mijn Projecteditors**, **Mijn projectwaarnemers** hebben. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
+>Wanneer u het project creëert en gebruikers aan de verschillende rollen toevoegt, worden de groepen die aan het project gekoppeld zijn, automatisch gecreëerd om bijbehorende machtigingen te beheren. Bijvoorbeeld: een project met de naam Mijn project zou drie groepen hebben: **Mijn projecteigenaars**, **Mijn projecteditors**, **Mijn projectwaarnemers**. Als het project echter wordt verwijderd, worden deze groepen niet automatisch verwijderd. Een beheerder moet de groepen handmatig verwijderen in **Gereedschappen** > **Beveiliging** > **Groepen**.
 
