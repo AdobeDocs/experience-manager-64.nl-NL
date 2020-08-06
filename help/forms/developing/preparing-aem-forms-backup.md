@@ -1,6 +1,6 @@
 ---
-title: AEM-formulieren voorbereiden voor back-up
-seo-title: AEM-formulieren voorbereiden voor back-up
+title: AEM Forms for Backup voorbereiden
+seo-title: AEM Forms for Backup voorbereiden
 description: 'null'
 seo-description: 'null'
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
@@ -11,15 +11,18 @@ topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
 source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+workflow-type: tm+mt
+source-wordcount: '2484'
+ht-degree: 0%
 
 ---
 
 
-# AEM-formulieren voorbereiden voor back-up {#preparing-aem-forms-for-backup}
+# AEM Forms for Backup voorbereiden {#preparing-aem-forms-for-backup}
 
 ## Over de service Back-up en herstel {#about-the-backup-and-restore-service}
 
-Met de service Back-up en herstel kunt u AEM Forms in de *back-upmodus* plaatsen, zodat hot back-ups kunnen worden uitgevoerd. De service Back-up en herstel voert geen back-up van AEM Forms uit of herstelt uw systeem. In plaats daarvan wordt de server in een status gezet voor consistente en betrouwbare back-ups, terwijl de server verder kan worden uitgevoerd. U bent verantwoordelijk voor de acties om een back-up te maken van de Global Document Storage (GDS) en de database die is verbonden met de formulierserver. De GDS is een map waarin bestanden worden opgeslagen die worden gebruikt in een langlevend proces.
+Met de service Back-up en herstel kunt u AEM Forms in de *back-upmodus* plaatsen, zodat hot back-ups kunnen worden uitgevoerd. De service Back-up en herstel voert geen back-up van AEM Forms uit of herstelt uw systeem niet. In plaats daarvan wordt de server in een status gezet voor consistente en betrouwbare back-ups, terwijl de server verder kan worden uitgevoerd. U bent verantwoordelijk voor de acties om een back-up te maken van de Global Document Storage (GDS) en de database die is verbonden met de formulierserver. De GDS is een map waarin bestanden worden opgeslagen die worden gebruikt in een langlevend proces.
 
 De back-upmodus is een toestand die de server invoert zodat bestanden in de GDS niet worden gewist terwijl een back-upprocedure plaatsvindt. In plaats daarvan worden submappen gemaakt onder de GDS-map om een record bij te houden van bestanden die moeten worden gewist nadat de back-upmodus is beëindigd. Een bestand is bedoeld om het systeem opnieuw te laten opstarten en kan dagen, of zelfs jaren, beslaan. Deze bestanden vormen een essentieel onderdeel van de algemene status van de formulierserver en kunnen PDF-bestanden, beleidsregels of formuliersjablonen bevatten. Als een van deze bestanden verloren gaat of beschadigd raakt, kunnen de processen op de formulierserver instabiel worden en kunnen er gegevens verloren gaan.
 
@@ -31,7 +34,7 @@ Met de service Back-up en herstel kunt u bestaande of nieuwe toepassingen uitbre
 
 >[!NOTE]
 >
->Net als bij elk ander aspect van de implementatie van AEM Forms, moet uw back-up- en herstelstrategie worden ontwikkeld en getest in een ontwikkelings- of testomgeving voordat deze in de productie wordt gebruikt om ervoor te zorgen dat de volledige oplossing naar behoren werkt, zonder gegevensverlies.
+>Net als bij elk ander aspect van uw AEM Forms-implementatie, moet uw back-up- en herstelstrategie worden ontwikkeld en getest in een ontwikkelings- of testomgeving voordat deze in de productie wordt gebruikt om ervoor te zorgen dat de volledige oplossing werkt zoals u had verwacht zonder gegevensverlies.
 
 U kunt deze taken uitvoeren met behulp van de service Back-up en herstel:
 
@@ -40,7 +43,7 @@ U kunt deze taken uitvoeren met behulp van de service Back-up en herstel:
 
 >[!NOTE]
 >
->Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor Vormen AEM, zie [beleidshulp](https://www.adobe.com/go/learn_aemforms_admin_63).
+>Raadpleeg de [Help bij](https://www.adobe.com/go/learn_aemforms_admin_63)het beheer voor meer informatie over wat u moet overwegen bij het maken van back-ups voor AEM Forms.
 
 >[!NOTE]
 >
@@ -54,7 +57,7 @@ U gaat reservewijze in om voor hete steunen van een vormenserver toe te staan. A
 * De tijd voor de reserveprocedure om te voltooien.
 * Een vlag om erop te wijzen of om op ononderbroken reservewijze te zijn, die slechts nuttig is als u het rollen steunen uitvoert.
 
-Voordat u toepassingen gaat schrijven om de back-upmodus te activeren, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de formulierserver in de back-upmodus hebt gezet. Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor Vormen AEM, zie [beleidshulp](https://www.adobe.com/go/learn_aemforms_admin_63).
+Voordat u toepassingen gaat schrijven om de back-upmodus te activeren, is het raadzaam de back-upprocedures te begrijpen die worden gebruikt nadat u de formulierserver in de back-upmodus hebt gezet. Raadpleeg de [Help bij](https://www.adobe.com/go/learn_aemforms_admin_63)het beheer voor meer informatie over wat u moet overwegen bij het maken van back-ups voor AEM Forms.
 
 >[!NOTE]
 >
@@ -75,7 +78,7 @@ Voer de volgende stappen uit om een toepassing te maken die de back-upmodus acti
 
 Neem de benodigde bestanden op in uw ontwikkelingsproject. Deze bestanden zijn belangrijk om in uw project op te nemen voor het correct compileren van uw code en het gebruik van de API voor back-up- en herstelservice.
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
 
 **Een BackupService Client API-object maken**
 
@@ -109,7 +112,7 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
    * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-   * jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+   * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
 1. Een BackupService Client API-object maken
 
@@ -138,7 +141,7 @@ Voer de back-upmodus in met de API voor back-up- en herstelservice:
 
 1. Maak een back-up van de GDS en de database
 
-   Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties die u wilt uitvoeren voor de back-up maken geen deel uit van de AEM Forms SDK en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
+   Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
 
 ### Back-upmodus starten met de webservice-API {#enter-backup-mode-using-the-web-service-api}
 
@@ -173,13 +176,13 @@ Voer de back-upmodus in met behulp van de webservice van de API voor back-up en 
 
 1. Maak een back-up van de GDS en de database
 
-   Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties die u wilt uitvoeren voor de back-up maken geen deel uit van de AEM Forms SDK en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
+   Maak een back-up van de GDS (Global Document Storage) en de database waarmee de formulierserver is verbonden. De acties om de back-up uit te voeren maken geen deel uit van de SDK van AEM Forms en kunnen zelfs handmatige stappen bevatten die specifiek zijn voor de back-upprocedures in uw organisatie.
 
 ## Back-upmodus op de formulierserver laten staan {#leaving-backup-mode-on-the-forms-server}
 
 U verlaat de back-upmodus, zodat de formulierserver bestanden hervat van de GDS (Global Document Storage) op de formulierserver.
 
-Voordat u toepassingen schrijft om naar de modus Verlaten te gaan, is het raadzaam de back-upprocedures te begrijpen die met AEM Forms worden gebruikt. Voor meer informatie over wat te overwegen wanneer het uitvoeren van steunen voor Vormen AEM, zie [beleidshulp](https://www.adobe.com/go/learn_aemforms_admin_63).
+Voordat u toepassingen schrijft om in de modus Verlaten te gaan, is het raadzaam de back-upprocedures te begrijpen die bij AEM Forms worden gebruikt. Raadpleeg de [Help bij](https://www.adobe.com/go/learn_aemforms_admin_63)het beheer voor meer informatie over wat u moet overwegen bij het maken van back-ups voor AEM Forms.
 
 >[!NOTE]
 >
@@ -198,7 +201,7 @@ Voer de volgende stappen uit om de back-upmodus te verlaten:
 
 Neem alle benodigde bestanden op in uw ontwikkelingsproject. Deze bestanden zijn belangrijk voor het correct compileren van uw code en het gebruik van de API voor back-up- en herstelservice.
 
-Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
+Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
 
 **Een BackupService Client API-object maken**
 
@@ -224,7 +227,7 @@ Maak een back-upmodus met de API voor back-up en herstel (Java):
    * adobe-livecycle-client.jar
    * adobe-usermanager-client.jar
    * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
-   * jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss Application Server)
+   * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss Application Server)
 
 1. Een BackupService Client API-object maken
 
