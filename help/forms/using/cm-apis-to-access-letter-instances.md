@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 9c27f976-972a-4250-b56d-b84a7d72f8c8
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '592'
+ht-degree: 1%
 
 ---
 
@@ -106,7 +109,7 @@ submittedLetterInstances = letterInstanceService.getAllLetterInstances(query);
 
 Haal de letter-instantie op die wordt aangegeven door de opgegeven letter-instantie-id. De waarde wordt null geretourneerd als de instantie-id niet overeenkomt.
 
-**** Syntaxis: `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
+**Syntaxis:** `public LetterInstanceVO getLetterInstance(String letterInstanceId) throws ICCException;`
 
 ```java
 @Reference
@@ -139,7 +142,7 @@ Instantie letter kan van het type Verzonden of Concept zijn. Wanneer u beide let
 * In het geval van een verzonden letter wordt een PDF geopend die de letter vertegenwoordigt. Ingediende instantie Letter die op de server blijft staan, bevat ook de dataXML en de verwerkte XDP, die kan worden gebruikt voor het uitvoeren en verder gebruiken van een case, zoals het maken van een PDF/A.
 * In het geval van een Concept-letterinstantie wordt de interface voor het maken van correspondentie opnieuw geladen naar de exacte vorige status zoals tijdens het maken van het concept
 
-### Lettertypeinstantie concept openen {#opening-draft-letter-instance-nbsp}
+### Lettertypeinstantie concept openen  {#opening-draft-letter-instance-nbsp}
 
 CCR UI steunt de parameter cmLetterInstanceId, die kan worden gebruikt om brief opnieuw te laden.
 
