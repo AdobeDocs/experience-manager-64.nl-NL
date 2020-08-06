@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '486'
+ht-degree: 4%
 
 ---
 
@@ -34,7 +37,7 @@ Het is mogelijk om de verbindingen te vormen die zichtbaar zijn. Dit kan voor sp
 
 ## Koppelingen in hoofdconsole (linkerdeelvenster) {#links-in-main-console-left-pane}
 
-Dit maakt een lijst van de belangrijkste consoles van AEM.
+Hier worden de belangrijkste consoles van AEM weergegeven.
 
 ![cq_welcomescreenmainconsole](assets/cq_welcomescreenmainconsole.png)
 
@@ -42,21 +45,21 @@ Dit maakt een lijst van de belangrijkste consoles van AEM.
 
 Machtigingen op knooppuntniveau bepalen of de koppeling zichtbaar is of niet. De betrokken knooppunten zijn:
 
-* **** Websites: `/libs/wcm/core/content/siteadmin`
+* **Websites:** `/libs/wcm/core/content/siteadmin`
 
-* **** Digitale middelen: `/libs/wcm/core/content/damadmin`
+* **Digitale middelen:** `/libs/wcm/core/content/damadmin`
 
-* **** Gemeenschap: `/libs/collab/core/content/admin`
+* **Gemeenschap:** `/libs/collab/core/content/admin`
 
-* **** Campagnes: `/libs/mcm/content/admin`
+* **Campagnes:** `/libs/mcm/content/admin`
 
-* **** Postvak IN: `/libs/cq/workflow/content/inbox`
+* **Postvak IN:** `/libs/cq/workflow/content/inbox`
 
-* **** Gebruikers: `/libs/cq/security/content/admin`
+* **Gebruikers:** `/libs/cq/security/content/admin`
 
-* **** Gereedschappen: `/libs/wcm/core/content/misc`
+* **Gereedschappen:** `/libs/wcm/core/content/misc`
 
-* **** Tags: `/libs/cq/tagging/content/tagadmin`
+* **Tags:** `/libs/cq/tagging/content/tagadmin`
 
 Bijvoorbeeld:
 
@@ -135,7 +138,7 @@ Er zijn drie secties (die iets uit elkaar liggen) die standaard worden opgegeven
    <td><code>/libs/cq/core/content/welcome/features/packages</code></td> 
   </tr> 
   <tr> 
-   <td> Pakket delen</td> 
+   <td> Package Share</td> 
    <td><code>/libs/cq/core/content/welcome/features/share</code></td> 
   </tr> 
   <tr> 
@@ -196,6 +199,7 @@ In `/libs/cq/core/components/welcome/welcome.jsp` gebruik wordt gemaakt van [Con
 >Voer de volgende vraag uit om de bestaande lijst te zien:
 >
 >* `select * from cq:Console`
+
 >
 
 
