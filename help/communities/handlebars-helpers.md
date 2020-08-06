@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b6c1697-d693-41f4-8337-f41658465107
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '1540'
+ht-degree: 2%
 
 ---
 
@@ -25,7 +28,7 @@ Handlebars Helpers (helpers) zijn methodes callable van de manuscripten van Hand
 
 De implementatie omvat een client-side en een server-side definitie. Ontwikkelaars kunnen ook aangepaste hulplijnen maken.
 
-De aangepaste SCF-helpers die bij AEM-gemeenschappen worden geleverd, worden gedefinieerd in de [clientbibliotheek](../../help/sites-developing/clientlibs.md):
+De aangepaste SCF-helpers die bij AEM Communities worden geleverd, worden gedefinieerd in de [clientbibliotheek](../../help/sites-developing/clientlibs.md):
 
 * /etc/clientlibs/social/commons/scf/helpers.js
 
@@ -45,7 +48,7 @@ Als safeString is ingesteld op true, is de geretourneerde tekenreeks een SafeStr
 
 ### Parameters {#parameters}
 
-* **context**:String
+* **context**: String
 
    (optioneel) Standaard is de lege tekenreeks
 
@@ -57,7 +60,7 @@ Als safeString is ingesteld op true, is de geretourneerde tekenreeks een SafeStr
 
    (optioneel) De standaardwaarde is het aantal woorden in de bijgesneden tekenreeks.
 
-* **safeString**:Boolean
+* **safeString**: Boolean
 
    (optioneel) Retourneert een Handlebars.SafeString(), indien true. De standaardwaarde is false.
 
@@ -93,7 +96,7 @@ Een hulpmiddel om twee reeksen onder een div toe te voegen, één voor de volled
 
 ### Parameters {#parameters-1}
 
-* **context**:String
+* **context**: String
 
    (optioneel) Standaard is de lege tekenreeks.
 
@@ -101,15 +104,15 @@ Een hulpmiddel om twee reeksen onder een div toe te voegen, één voor de volled
 
    (optioneel) Het aantal tekens dat moet worden weergegeven wanneer geen volledige tekst wordt weergegeven. De standaardwaarde is 100.
 
-* **moreText**:String
+* **moreText**: String
 
    (optioneel) De tekst die moet worden weergegeven om aan te geven dat er meer tekst moet worden weergegeven. Standaard is &quot;meer&quot;.
 
-* **ellipsesText**:String
+* **ellipsesText**: String
 
    (optioneel) De tekst die moet worden weergegeven om aan te geven dat er verborgen tekst is. Standaard is &quot;...&quot;.
 
-* **safeString**:Boolean
+* **safeString**: Boolean
 
    (optioneel) Booleaanse waarde die aangeeft of Handlebars.SafeString() al dan niet moet worden toegepast voordat het resultaat wordt geretourneerd. De standaardwaarde is false.
 
@@ -137,7 +140,7 @@ Een hulpmiddel om een geformatteerde datumreeks terug te keren.
 
    (optioneel) Een millisecondenverschuiving vanaf 1 januari 1970 (tijdperk). De standaardwaarde is de huidige datum.
 
-* **indeling**:String
+* **indeling**: String
 
    (optioneel) De datumnotatie die moet worden toegepast. De standaardwaarde is &quot;YYYY-MM-DDTHH:mm:ss.sssZ&quot; en het resultaat wordt weergegeven als &quot;2015-03-18T18:17:13-07:00&quot;
 
@@ -161,11 +164,11 @@ Een hulpmiddel om inhoud terug te keren afhankelijk van een voorwaardelijk gelij
 
 ### Parameters {#parameters-3}
 
-* **lvalue**:String
+* **lvalue**: String
 
    De linkerwaarde die moet worden vergeleken
 
-* **waarde**:String
+* **waarde**: String
 
    De rechterwaarde die moet worden vergeleken
 
@@ -185,11 +188,11 @@ Een blokhelper die de huidige waarde van wijze [](https://helpx.adobe.com/experi
 
 ### Parameters {#parameters-4}
 
-* **context**:String
+* **context**: String
 
    (optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **modus**:String
+* **modus**: String
 
    (optioneel) Een door komma&#39;s gescheiden lijst met [WCM-modi](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) die moeten worden getest, indien ingesteld.
 
@@ -211,15 +214,15 @@ Zie ook [Internationaliserende Tekenreeksen in JavaScript-code](../../help/sites
 
 ### Parameters {#parameters-5}
 
-* **context**:String
+* **context**: String
 
    (optioneel) De tekenreeks die moet worden vertaald. Vereist als er geen standaard is opgegeven.
 
-* **standaard**:String
+* **standaard**: String
 
    (optioneel) De standaardtekenreeks die moet worden omgezet. Vereist als er geen context is opgegeven.
 
-* **opmerking**:String
+* **opmerking**: String
 
    (optioneel) Een vertaaltip
 
@@ -236,7 +239,7 @@ Een hulpmiddel om een component als niet bestaand middel in een malplaatje te om
 
 Hierdoor kan de bron beter programmatisch worden aangepast dan mogelijk is voor een bron die als JCR-knooppunt wordt toegevoegd. Zie Een onderdeel [](scf.md#add-or-include-a-communities-component)van een Gemeenschappen toevoegen of opnemen.
 
-Slechts een paar communautaire componenten zijn inbegrepen. Voor AEM 6.1 zijn de meegeleverde opmerkingen [opmerkingen](essentials-comments.md), [beoordeling](rating-basics.md), [beoordelingen](reviews-basics.md)en [stemming](essentials-voting.md).
+Slechts een paar communautaire componenten zijn inbegrepen. Voor AEM 6.1 zijn de meegeleverde opmerkingen [opmerkingen](essentials-comments.md), [beoordelingen](rating-basics.md), [beoordelingen](reviews-basics.md)en [stemmingen](essentials-voting.md).
 
 Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionaliteit gelijkend op [cq:omvat](../../help/sites-developing/taglib.md) voor manuscripten JSP.
 
@@ -250,19 +253,19 @@ Deze hulp, die slechts op de server-kant aangewezen is, verstrekt functionalitei
 
    gebruik `this.id` om het middel bij `id` voor het teruggeven van gevraagde resourceType te verkrijgen
 
-* **resourceType**:String
+* **resourceType**: String
 
    (facultatief) middeltype zal aan middeltype van context in gebreke blijven
 
-* **sjabloon**:String
+* **sjabloon**: String
 
    pad naar componentscript
 
-* **pad**:String
+* **pad**: String
 
    (vereist) Het pad naar de bron. Als het pad relatief is, moet een context worden opgegeven, anders wordt de lege tekenreeks geretourneerd.
 
-* **authoringDisabled**:Boolean
+* **authoringDisabled**: Boolean
 
    (optioneel) Standaard is false. Uitsluitend voor intern gebruik.
 
@@ -282,19 +285,19 @@ Deze hulp, aangewezen slechts op de server-kant, verstrekt functionaliteit gelij
 
 ### Parameters {#parameters-7}
 
-* **categorieën**:String
+* **categorieën**: String
 
    (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle JavaScript- en CSS-bibliotheken voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-* **thema**:String
+* **thema**: String
 
    (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle themabibliotheken (zowel CSS als JS) voor de opgegeven categorieën. De themanaam wordt uit de aanvraag geëxtraheerd.
 
-* **js**:String
+* **js**: String
 
    (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle bibliotheken Javascript voor de bepaalde categorieën.
 
-* **css**:String
+* **css**: String
 
    (optioneel) Een lijst met door komma&#39;s gescheiden clientbibliotheekcategorieën. Dit omvat alle CSS-bibliotheken voor de opgegeven categorieën.
 
