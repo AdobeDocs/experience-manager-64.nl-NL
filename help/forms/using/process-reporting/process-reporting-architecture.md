@@ -1,8 +1,8 @@
 ---
 title: Hoe procesrapportage werkt
 seo-title: Hoe procesrapportage werkt
-description: Beschrijving van de services die de AEM Forms on JEE Process Reporting en een inleiding vormen op de interface Process Reporting UI
-seo-description: Beschrijving van de services die de AEM Forms on JEE Process Reporting en een inleiding vormen op de interface Process Reporting UI
+description: Beschrijving van de diensten die de AEM Forms vormen voor JEE Process Reporting en een inleiding op de Process Reporting UI
+seo-description: Beschrijving van de diensten die de AEM Forms vormen voor JEE Process Reporting en een inleiding op de Process Reporting UI
 uuid: 00a2dd6d-8a6f-4c7b-b03e-81cfd4bcf50d
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,17 +10,20 @@ topic-tags: process-reporting
 discoiquuid: 4afc68fc-6b39-4c31-95fa-2ef3111c57da
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '371'
+ht-degree: 0%
 
 ---
 
 
 # Hoe procesrapportage werkt {#how-process-reporting-works}
 
-Process Reporting is de rapportmodule van de AEM Forms on JEE.
+Procesrapportage is de rapporteringsmodule van de AEM Forms op JEE.
 
-Met Process Reporting kunt u rapporten uitvoeren over processen en taken in AEM Forms.
+Met Process Reporting kunt u rapporten uitvoeren over AEM Forms-processen en -taken.
 
-Bij Process Reporting wordt gebruikgemaakt van de ingesloten Process Reporting-opslagplaats om Forms-gegevens te publiceren. Vervolgens worden die gegevens gebruikt om rapporten uit te voeren.
+Procesrapportage gebruikt de ingesloten Process Reporting-opslagplaats om Forms-gegevens te publiceren. Vervolgens worden die gegevens gebruikt om rapporten uit te voeren.
 
 Procesrapportage bestaat uit de volgende modules:
 
@@ -38,7 +41,7 @@ Procesrapportage bestaat uit de volgende modules:
 
 ### ProcessDataPublisher-service {#processdatapublisher-service-br}
 
-De ProcessDataPublisher-server wordt periodiek uitgevoerd in de AEM Forms-database en extraheert de gegevens die zijn gewijzigd sinds de laatste uitvoering van de service. De gegevens worden vervolgens gepubliceerd naar de service Gegevensopslag verwerken.
+De ProcessDataPublisher-server wordt regelmatig uitgevoerd in de AEM Forms-database en extraheert de gegevens die zijn gewijzigd sinds de laatste uitvoering van de service. De gegevens worden vervolgens gepubliceerd naar de service Gegevensopslag verwerken.
 
 Voor details bij het vormen van de dienst, zie de dienst [](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)van ProcessDataPublisher vormen.
 
