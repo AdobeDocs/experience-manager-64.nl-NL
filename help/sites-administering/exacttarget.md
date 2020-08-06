@@ -11,18 +11,21 @@ content-type: reference
 discoiquuid: d1cff2bb-9fdf-49cb-a695-d437bba5653d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '465'
+ht-degree: 0%
 
 ---
 
 
 # Integreren met ExactTarget{#integrating-with-exacttarget}
 
-Door AEM te integreren met Exact Target kunt u in AEM gemaakte e-mailberichten beheren en verzenden via Exact Target. U kunt hiermee ook de beheerfuncties voor leads van Exact Target gebruiken via AEM-formulieren op AEM-pagina&#39;s.
+Door AEM te integreren met Exact Target kunt u in AEM gemaakte e-mailberichten beheren en verzenden via Exact Target. U kunt hiermee ook de beheerfuncties voor leads van Exact Target gebruiken via AEM formulieren op AEM pagina&#39;s.
 
 De integratie biedt u de volgende functies:
 
 * De capaciteit om E-mail in AEM tot stand te brengen en hen te publiceren aan Exact Doel voor distributie.
-* De capaciteit om actie van een vorm te plaatsen AEM om een Exact abonnee van het Doel tot stand te brengen.
+* De capaciteit om actie van een AEM vorm te plaatsen om een Exact abonnee van het Doel tot stand te brengen.
 
 Nadat ExactTarget is geconfigureerd, kunt u nieuwsbrieven of e-mails naar ExactTarget publiceren. Zie Nieuwsbrieven [publiceren naar een e-mailservice](/help/sites-authoring/personalization.md).
 
@@ -32,9 +35,9 @@ De configuraties ExactTarget kunnen via de Diensten van de Wolk of Hulpmiddelen 
 
 ### ExactTarget configureren via Cloudservices {#configuring-exacttarget-via-cloudservices}
 
-Een ExactTarget-configuratie maken in Cloud Services:
+Om een configuratie ExactTarget in Cloud Services te creëren:
 
-1. Klik op **Cloud Services** op de welkomstpagina. (Of rechtstreeks toegang om `https://<hostname>:<port>/etc/cloudservices.html`.)
+1. Klik op de welkomstpagina op **Cloud Services**. (Of rechtstreeks toegang om `https://<hostname>:<port>/etc/cloudservices.html`.)
 1. Klik **ExactTarget** en dan **vormen**. Het ExactTarget configuratievenster opent.
 
    ![chlimage_1-182](assets/chlimage_1-182.png)
@@ -63,7 +66,7 @@ Een ExactTarget-configuratie maken in Cloud Services:
 Om een configuratie ExactTarget in Hulpmiddelen tot stand te brengen:
 
 1. Klik op de welkomstpagina op **Gereedschappen**. Of navigeer daar rechtstreeks door naar `https://<hostname>:<port>/misadmin#/etc`te gaan.
-1. Selecteer **Hulpmiddelen**, dan de Configuraties van de Diensten van de **Wolk,** dan **ExactTarget**.
+1. Selecteer **Hulpmiddelen**, dan **Cloud Services Configurations,** dan **ExactTarget**.
 1. Klik op **Nieuw** om het venster **Pagina maken **maken te openen.
 
    ![chlimage_1-34](assets/chlimage_1-34.jpeg)
@@ -75,6 +78,6 @@ Om een configuratie ExactTarget in Hulpmiddelen tot stand te brengen:
 
 Meerdere configuraties toevoegen:
 
-1. Klik op de welkomstpagina op **Cloud Services** en klik op **ExactTarget**. Klik op de knop **Configuraties** tonen die wordt weergegeven als een of meer ExactTarget-configuraties beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
+1. Voor de welkomstpagina, klik **Cloud Services** en klik **ExactTarget**. Klik op de knop **Configuraties** tonen die wordt weergegeven als een of meer ExactTarget-configuraties beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
 1. Klik op het **+** -teken naast Beschikbare configuraties. Hiermee opent u het venster **Configuraties** maken. Volg de vorige configuratieprocedure om een nieuwe configuratie tot stand te brengen.
 
