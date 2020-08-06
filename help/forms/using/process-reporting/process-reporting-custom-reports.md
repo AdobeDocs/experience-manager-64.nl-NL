@@ -1,8 +1,8 @@
 ---
 title: Aangepaste rapporten in procesrapportage
 seo-title: Aangepaste rapporten in procesrapportage
-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de Vormen AEM op het Melden UI van het Proces JEE.
-seo-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan de Vormen AEM op het Melden UI van het Proces JEE.
+description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan AEM Forms op het Proces van JEE meldt UI.
+seo-description: U kunt douanerapporten tot stand brengen en deze rapporten toevoegen aan AEM Forms op het Proces van JEE meldt UI.
 uuid: 8974ec2d-ac54-4b44-9758-b1cf44b732fa
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: process-reporting
 discoiquuid: c668bd53-f2d8-4f8c-83f2-be0afd65392a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '1042'
+ht-degree: 0%
 
 ---
 
@@ -45,7 +48,7 @@ CRX QueryBuilder REST-interface stelt de functionaliteit van de Asset Share Quer
    >
    >In elke vraag, richt de wegparameter aan de crx opslagplaats en de karakters zijn ontsnapt volgens de norm URL.
 
-## De service maken met de API van Query Builder {#creating-a-service-using-query-builder-api-nbsp}
+## De service maken met de API van Query Builder  {#creating-a-service-using-query-builder-api-nbsp}
 
 De eerste vereiste voor het maken van een service met de API voor Query Builder is het [maken en implementeren van CQ OSGI-bundel](https://docs.adobe.com/docs/v5_2/html-resources/cq5_guide_developer/cq5_guide_developer.html) en het [gebruik van de Query Builder-API](https://docs.adobe.com/docs/en/cq/current/dam/customizing_and_extendingcq5dam/query_builder.html).
 
@@ -420,7 +423,7 @@ Het voorbeeldbestand `pom.xml`dat u boven de service wilt maken, is:
 </project>
 ```
 
-## Een aparte UI maken {#creating-a-separate-ui-nbsp}
+## Een aparte UI maken  {#creating-a-separate-ui-nbsp}
 
 De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn het [Verdelen van Grondbeginselen](https://docs.adobe.com/docs/en/cq/5-6-1/developing/the_basics.html), het [Creëren van een Knoop](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX en het verstrekken van aangewezen [toegangsvoorrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -628,7 +631,7 @@ response.setCharacterEncoding("utf-8");
 </html>
 ```
 
-## Het integreren rapport UI in bestaand Proces Meldend UI {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
+## Het integreren rapport UI in bestaand Proces Meldend UI  {#integrating-report-ui-in-existing-process-reporting-ui-nbsp}
 
 De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van resultaten zijn het [Verdelen van Grondbeginselen](https://wem.help.adobe.com/enterprise/en_US/10-0/wem/developing/the_basics.html), het [Creëren van een Knoop](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Creating%20a%20Node) CRX en het verstrekken van aangewezen [toegangsvoorrechten](https://docs.adobe.com/docs/en/crx/current/developing/development_tools/developing_with_crxde_lite.html#Access%20Control).
 
@@ -640,6 +643,7 @@ De eerste vereisten aan het creëren van een afzonderlijke UI voor het tonen van
    * **link**- Geeft een relatieve koppeling aan naar de renderer van de afzonderlijke UI. De verbinding wordt gecreeerd Stap 1.
    * **description**- Geeft de beschrijving van één regel op voor het rapport. U kunt het beschrijvingsveld leeg laten.
    * **icon**- Geeft de afbeelding aan die het rapport pictorially moet vertegenwoordigen. U kunt het pictogramveld leeg laten.
+
    ![Eigenschappen van knooppunt ](assets/nodeproperties.png)
 
    Eigenschappen van knooppunt
