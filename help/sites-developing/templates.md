@@ -12,13 +12,16 @@ discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '982'
+ht-degree: 0%
 
 ---
 
 
-# Templates{#templates}
+# Sjablonen{#templates}
 
-De malplaatjes worden gebruikt op diverse punten in AEM:
+Sjablonen worden op verschillende punten in AEM gebruikt:
 
 * Als u een pagina [maakt, moet u een sjabloon](#templates-pages)selecteren. dit wordt gebruikt als basis voor de nieuwe pagina . De sjabloon definieert de structuur van de resulterende pagina, eventuele initiële inhoud en de [componenten](/help/sites-authoring/default-components.md) die kunnen worden gebruikt (ontwerpeigenschappen).
 
@@ -76,17 +79,17 @@ Statische sjablonen:
 
 >[!NOTE]
 >
->Met ingang van AEM 6.4 wordt het gebruik van statische sjablonen niet beschouwd als een goede praktijk. Gebruik in plaats hiervan Bewerkbare sjablonen.
+>Vanaf AEM 6.4 wordt het gebruik van statische sjablonen niet als een goede praktijk beschouwd. Gebruik in plaats hiervan Bewerkbare sjablonen.
 >
->[Met de gereedschappen voor AEM-modernisering](modernization-tools.md) kunt u migreren van statische naar bewerkbare sjablonen.
+>[AEM de hulpmiddelen van de Modernisering](modernization-tools.md) kunnen u helpen van statische aan editable malplaatjes migreren.
 
 ### Beschikbaarheid sjabloon {#template-availability}
 
 >[!CAUTION]
 >
->AEM biedt veelvoudige eigenschappen aan om de malplaatjes te controleren die onder **Plaatsen** worden toegestaan. Het combineren ervan kan echter leiden tot zeer complexe regels die moeilijk te volgen en te beheren zijn.
+>AEM biedt meerdere eigenschappen aan om de sjablonen te beheren die zijn toegestaan onder **Sites**. Het combineren ervan kan echter leiden tot zeer complexe regels die moeilijk te volgen en te beheren zijn.
 >
->Daarom raadt Adobe u aan eenvoudig te beginnen door het volgende te definiëren:
+>Daarom adviseert Adobe dat u eenvoudig begint, door te bepalen:
 >
 >* alleen de `cq:allowedTemplates` eigenschap
    >
