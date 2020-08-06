@@ -375,7 +375,7 @@ Informatie over de CRX-opslagplaats
   </tr> 
   <tr> 
    <td>crx.cluster.preferredMaster</td> 
-   <td>true geeft aan dat dit clusterknooppunt de voorkeursmaster van de cluster is.</td> 
+   <td>true geeft aan dat dit clusterknooppunt de voorkeursserver master van het cluster is.</td> 
   </tr> 
   <tr> 
    <td>option.transactions.supported</td> 
@@ -440,7 +440,7 @@ Informatie over de CRX-opslagplaats
   </tr> 
   <tr> 
    <td>crx.cluster.master</td> 
-   <td>true geeft aan dat dit opslagruimteknooppunt het hoofdknooppunt van de cluster is.</td> 
+   <td>true geeft aan dat dit opslagruimteknooppunt het master knooppunt van de cluster is.</td> 
   </tr> 
   <tr> 
    <td>level.1.supported</td> 
@@ -523,7 +523,7 @@ Alleen-lezen.
 
 **ClusterId** De id van deze opslagplaats cluster. Alleen-lezen.
 
-**ClusterMasterId** De id van het hoofdknooppunt van deze opslagruimtecluster. Alleen-lezen.
+**ClusterMasterId** De id van het master knooppunt van deze opslagruimtecluster. Alleen-lezen.
 
 **ClusterNodeId** De id van dit knooppunt van de opslagcluster. Alleen-lezen.
 
@@ -597,16 +597,16 @@ Alleen-lezen.
 
 * Geretourneerde waarde: none
 
-**nowClusterMaster** Hiermee wordt dit opslagruimteknooppunt ingesteld als het hoofdknooppunt van de cluster. Als deze opdracht nog niet het hoofdniveau heeft, wordt de listener van de huidige hoofdinstantie gestopt en wordt een hoofdlistener op het huidige knooppunt gestart. Dit knooppunt wordt vervolgens ingesteld als het hoofdknooppunt en wordt opnieuw opgestart, waardoor alle andere knooppunten in de cluster (dat wil zeggen knooppunten die door de master worden beheerd) verbinding maken met deze instantie.
+**nowClusterMaster** Hiermee wordt dit opslagruimteknooppunt ingesteld als het master knooppunt van de cluster. Als deze opdracht nog niet is master, wordt de listener van de huidige master instantie gestopt en wordt een master listener op het huidige knooppunt gestart. Dit knooppunt wordt vervolgens ingesteld als het master knooppunt en wordt opnieuw opgestart, waardoor alle andere knooppunten in het cluster (dat wil zeggen knooppunten die door de master worden bestuurd) verbinding maken met deze instantie.
 
 * Argumenten: none
 * Geretourneerde waarde: none
 
-**joinCluster** voegt deze opslagruimte toe aan een cluster als een knooppunt dat door de clustermaster wordt beheerd. Voor verificatiedoeleinden moet u een gebruikersnaam en wachtwoord opgeven. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
+**joinCluster** voegt deze opslagruimte toe aan een cluster als een knooppunt dat door de master cluster wordt beheerd. Voor verificatiedoeleinden moet u een gebruikersnaam en wachtwoord opgeven. De verbinding gebruikt basisauthentificatie. De beveiligingsreferenties zijn base-64 gecodeerd voordat ze naar de server worden verzonden.
 
 * Argumenten:
 
-   * `master`: Een tekenreekswaarde die het IP-adres of de computernaam vertegenwoordigt van de computer waarop het knooppunt van de hoofdopslagruimte wordt uitgevoerd.
+   * `master`: Een tekenreekswaarde die het IP-adres of de computernaam vertegenwoordigt van de computer waarop het knooppunt van de master opslagplaats wordt uitgevoerd.
    * `username`: De naam die moet worden gebruikt voor verificatie met de cluster.
    * `password`: Het wachtwoord dat voor verificatie moet worden gebruikt.
 
