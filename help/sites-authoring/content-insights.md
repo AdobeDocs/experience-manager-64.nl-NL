@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 60f980fd-049e-43c1-8b5d-60a8279b357a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ De lay-out van de pagina Inzicht in inhoud wordt aangepast aan de schermafmeting
 
 ## Rapportgegevens
 
-De pagina Insight voor inhoud bevat rapporten waarin gegevens van Adobe SiteCatalyst, Adobe Target, Adobe Social en BrightStor worden gebruikt:
+De pagina Content Insight bevat rapporten waarin Adobe SiteCatalyst-, Adobe Target-, Adobe Social- en BrightStor-gegevens worden gebruikt:
 
 * SiteCatalyst: De rapporten voor de volgende metriek zijn beschikbaar:
 
@@ -36,7 +39,7 @@ De pagina Insight voor inhoud bevat rapporten waarin gegevens van Adobe SiteCata
 * Doel: Meldt over campagneactiviteit waarvoor uw pagina voorstellen omvat.
 * HelderheidRand: Rapporten over de paginafuncties die de zichtbaarheid van de pagina voor zoekprogramma&#39;s verbeteren, en adviseren functies die moeten worden geïmplementeerd.
 
-Zie Analyses en aanbevelingen [openen voor een pagina](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
+Zie Analytics [openen en Recommendations voor een pagina](/help/sites-authoring/ci-analyze.md#opening-analytics-and-recommendations-for-a-page).
 
 ## Rapportageperiode
 
@@ -48,7 +51,7 @@ Zie [De rapportageperiode](/help/sites-authoring/ci-analyze.md#changing-the-repo
 
 >[!NOTE]
 >
->De rapporten met inzichten van inhoud vereisen dat uw beheerder AEM met SiteCatalyst, Target en BrightStor heeft geïntegreerd. Zie [Integreren met SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integreren met Adobe Target](/help/sites-administering/target.md)en [Integreren met BrightStor](/help/sites-administering/brightedge.md).
+>Voor de rapporten met inzichten van inhoud moet uw beheerder AEM hebben geïntegreerd met SiteCatalyst, Doel en BrightStor. Zie [Integreren met SightCatalyst](/help/sites-administering/adobeanalytics.md), [Integreren met Adobe Target](/help/sites-administering/target.md)en [Integreren met BrightStor](/help/sites-administering/brightedge.md).
 
 ## Het weergavenrapport {#the-views-report}
 
@@ -89,11 +92,11 @@ Voor elke campagne waarvoor de pagina actief is, verschijnt een rapport genoemd 
 
 ![chlimage_1-316](assets/chlimage_1-316.png)
 
-## Rapport SEO-aanbevelingen {#the-seo-recommendations-report}
+## Het SEO Recommendations-rapport {#the-seo-recommendations-report}
 
-Het rapport SEO Recommendations bevat de resultaten van de BrightEdge-analyse voor de pagina. Het rapport is een controlelijst van paginafuncties die aangeeft welke functies de pagina heeft en niet bevat voor het maximaliseren van de zoekbaarheid met zoekmachines.
+Het SEO Recommendations-rapport bevat de resultaten van de BrightEdge-analyse voor de pagina. Het rapport is een controlelijst van paginafuncties die aangeeft welke functies de pagina heeft en niet bevat voor het maximaliseren van de zoekbaarheid met zoekmachines.
 
-Met dit rapport kunt u taken maken die u wilt verbeteren en de zoekbaarheid van pagina&#39;s verbeteren. De aanbevelingen wijzen erop dat de taken voor de uitvoering van de aanbeveling zijn gecreeerd. Zie Taken [toewijzen voor SEO-aanbevelingen](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
+Met dit rapport kunt u taken maken die u wilt verbeteren en de zoekbaarheid van pagina&#39;s verbeteren. Recommendations geeft aan dat er taken zijn gecreëerd voor de tenuitvoerlegging van de aanbeveling. Zie Taken [toewijzen voor SEO Recommendations](/help/sites-authoring/ci-analyze.md#assigning-tasks-for-seo-recommendations).
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
