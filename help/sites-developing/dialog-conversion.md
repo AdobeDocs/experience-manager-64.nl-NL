@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dafe26ae-b2c5-4070-b8b1-cc1da147b464
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '2172'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ Het hulpmiddel zal de nieuwe dialoog tot stand brengen gebruikend de norm, grani
 
 >[!NOTE]
 >
->Omdat de klassieke interface niet meer wordt ontwikkeld of verbeterd, raadt Adobe klanten aan een upgrade uit te voeren naar de standaardgebruikersinterface van Granite om te profiteren van de nieuwste technologie.
+>Omdat klassieke UI niet meer wordt ontwikkeld of verbeterd, adviseert Adobe dat de klanten aan het gebrek van de gebruikersinterface van Granite UI aan voordeel van de recentste technologie bevorderen.
 >
 >Hoewel het over het algemeen een goede praktijk is om naar het meest recente platform te migreren, is migratie van Coral 2 naar Coral 3 niet van cruciaal belang. Een nieuw project moet echter worden gestart op basis van Coral 3.
 
@@ -46,7 +49,7 @@ U kunt de code van deze pagina op GitHub vinden
 
 >[!NOTE]
 >
->AEM wordt niet verzonden met het hulpprogramma voor het omzetten van dialoogvensters. U moet het downloaden en installeren om het te gebruiken.
+>AEM wordt niet verzonden met het gereedschap voor het omzetten van dialoogvensters. U moet het downloaden en installeren om het te gebruiken.
 
 Voer de volgende stappen uit om het gereedschap voor het converteren van dialoogvensters te installeren.
 
@@ -75,9 +78,10 @@ Gebruik de volgende stappen om een of meer dialoogvensters om te zetten:
 
    De tabel bevat een lijst met alle bestaande oudere dialoogvensters onder het ingevoerde pad. In elk dialoogvenster wordt het type weergegeven. De volgende typen zijn beschikbaar:
 
-   * **** Klassiek: Knooppunten van het type `cq:Dialog` met knooppuntnaam `dialog` of `design_dialog`
-   * **** Koraal 2: Nodes genoemd `cq:dialog` of `cq:design_dialog` die een graniet UI/Koral 2 middeltype bij hun knoop van de kindinhoud hebben
-   Elke rij bevat een koppeling om het dialoogvenster weer te geven en een koppeling naar CRXDE Lite om de bijbehorende knooppuntstructuur weer te geven.
+   * **Klassiek:** Knooppunten van het type `cq:Dialog` met knooppuntnaam `dialog` of `design_dialog`
+   * **Koraal 2:** Nodes genoemd `cq:dialog` of `cq:design_dialog` die een graniet UI/Koral 2 middeltype bij hun knoop van de kindinhoud hebben
+
+   Elke rij bevat een koppeling om het dialoogvenster weer te geven en een koppeling naar CRXDE Lite om de knooppuntstructuur weer te geven.
 
    >[!NOTE]
    >
@@ -87,7 +91,7 @@ Gebruik de volgende stappen om een of meer dialoogvensters om te zetten:
 
    ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. De geselecteerde dialogen worden weergegeven met de resultaten van hun conversies. Als de conversie succesvol was, bevat de rij koppelingen naar het omgezette dialoogvenster of naar het openen van het dialoogvenster in CRXDE Lite.
+1. De geselecteerde dialogen worden weergegeven met de resultaten van hun conversies. Als de conversie is gelukt, bevat de rij koppelingen naar het omgezette dialoogvenster of naar het openen van het dialoogvenster in CRXDE Lite.
 
    Klik of tik op **Terug** om terug te keren naar het gereedschap Dialoogomzetting.
 
@@ -113,7 +117,7 @@ Het hulpmiddel van de dialoogomzetting gebruikt deze benadering om een bepaalde 
 
 Het herschrijfalgoritme neemt als parameter de boom die moet worden herschreven en een reeks herschrijfregels. Het doorloopt de boom in pre-orde en voor elke knoop controleert als een regel voor de subboom van toepassing is die bij die knoop wordt geworteld. De eerste regel die overeenkomt, wordt toegepast op die substructuur om deze te herschrijven. De traversal begint vervolgens opnieuw bij de basis. Het algoritme stopt zodra de gehele boom is doorlopen en geen enkele regel een subboomstructuur heeft gevonden. Als optimaliseringsmaatregel, houdt het algoritme spoor van een reeks knopen die definitief zijn en daarom moet niet voor gelijken in verdere traversals opnieuw worden gecontroleerd. Het is aan rewrite regels om te bepalen welke knopen van de herschreven boom definitief zijn, en die door toekomstige overgangen van het algoritme zouden moeten worden herzien.
 
-Het ingangspunt voor de omzetting is het `DialogConversionServlet`, dat op POST-verzoeken aan `/libs/cq/dialogconversion/content/convert.json`wordt geregistreerd. Deze accepteert een padaanvraagparameter. Dit is een array die de paden naar de dialoogvensters bevat die moeten worden omgezet. Voor elk dialoogvenster herschrijft de servlet vervolgens de corresponderende dialoogstructuur door alle gedefinieerde regels voor het herschrijven van dialoogvensters toe te passen.
+Het ingangspunt voor de omzetting is het `DialogConversionServlet`, dat op verzoeken van de POST aan `/libs/cq/dialogconversion/content/convert.json`. wordt geregistreerd. Deze accepteert een padaanvraagparameter. Dit is een array die de paden naar de dialoogvensters bevat die moeten worden omgezet. Voor elk dialoogvenster herschrijft de servlet vervolgens de corresponderende dialoogstructuur door alle gedefinieerde regels voor het herschrijven van dialoogvensters toe te passen.
 
 ### Regeltypen herschrijven {#rewrite-rule-types}
 
