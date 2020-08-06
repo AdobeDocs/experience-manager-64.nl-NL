@@ -1,8 +1,8 @@
 ---
 title: Connector configureren voor EMC Documentum
 seo-title: Connector configureren voor EMC Documentum
-description: Leer hoe u de Connector voor EMC Documentum configureert voor communicatie tussen AEM-formulieren en EMC Documentum.
-seo-description: Leer hoe u de Connector voor EMC Documentum configureert voor communicatie tussen AEM-formulieren en EMC Documentum.
+description: Leer hoe u de Connector voor EMC Documentum configureert voor communicatie tussen AEM formulieren en EMC Documentum.
+seo-description: Leer hoe u de Connector voor EMC Documentum configureert voor communicatie tussen AEM formulieren en EMC Documentum.
 uuid: fc96900a-ec8a-4efd-ad8e-25e9967e649b
 contentOwner: admin
 content-type: reference
@@ -20,13 +20,13 @@ ht-degree: 1%
 
 # Connector configureren voor EMC Documentum {#configuring-connector-for-emc-documentum}
 
-Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM-formulieren en EMC Documentum. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
+Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM formulieren en EMC Documentum. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
 
 Bij het instellen van een connector voor EMC Documentum moeten de serververbinding en de gegevens van de opslagplaats worden geconfigureerd.
 
 >[!NOTE]
 >
->In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In de huidige release worden de elementen opgeslagen in de oorspronkelijke opslagplaats voor AEM-formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de AEM-formulieropslagplaats vindt plaats wanneer u een upgrade uitvoert naar AEM-formulieren. Zie de handleiding voor de upgrade van AEM-formulieren voor uw toepassingsserver voor meer informatie.
+>In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In de huidige versie worden de elementen opgeslagen in de systeemeigen opslagruimte voor AEM formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de opslagplaats voor AEM formulieren vindt plaats wanneer u een upgrade uitvoert naar AEM formulieren. Zie de handleiding voor het upgraden van AEM formulieren voor uw toepassingsserver voor meer informatie.
 
 ## De serververbinding configureren {#configuring-the-server-connection}
 
@@ -78,7 +78,7 @@ U kunt configureren welke repository service provider moet worden gebruikt met D
 
 ## Opslaggegevens configureren {#configuring-repository-credentials}
 
-De Documentum referentie-informatie wordt gebruikt in de context van het AEM-formuliersysteem. Referenties van opslagplaats zijn specifiek voor bepaalde gegevensbanken in Documentum. U kunt geloofsbrieven voor om het even welk aantal bewaarplaatsen verstrekken; u kunt echter slechts één set gegevens per gegevensopslagruimte opgeven.
+De Documentum referentie-informatie wordt gebruikt in de AEM systeemcontext. Referenties van opslagplaats zijn specifiek voor bepaalde gegevensbanken in Documentum. U kunt geloofsbrieven voor om het even welk aantal bewaarplaatsen verstrekken; u kunt echter slechts één set gegevens per gegevensopslagruimte opgeven.
 
 ### Creditering gegevensopslagruimte toevoegen {#add-a-repository-credential}
 
@@ -108,7 +108,7 @@ Als de Content Repository Connector voor EMC Documentum Service en/of de Reposit
 
 Er zijn enkele handmatige stappen vereist om ervoor te zorgen dat de functie Verzoek om delen van taakwachtrij in Workspace correct functioneert met Connector voor EMC Documentum.
 
-1. Nadat AEM-formulieren zijn geïmplementeerd en Workbench is geïnstalleerd, meldt u zich aan bij Workbench en opent u de weergave Bronnen. U bepaalt waar het bestand QueueSharing.swf zich in deze weergave bevindt.
+1. Nadat AEM formulieren zijn geïmplementeerd en Workbench is geïnstalleerd, meldt u zich aan bij Workbench en opent u de weergave Bronnen. U bepaalt waar het bestand QueueSharing.swf zich in deze weergave bevindt.
 1. Sleep het bestand QueueSharing.swf van de Bronweergave naar het bureaublad van Windows of een equivalente locatie, afhankelijk van uw besturingssysteem.
 1. Klik in de beheerconsole op Services > Connector voor EMC Documentum > Configuration Settings.
 1. Wijzig de geconfigureerde opslagprovider onder Informatie over opslagprovider in EMC Documentum Repository Provider.
