@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '156'
+ht-degree: 0%
 
 ---
 
 
-# De externe koppelingencontrole{#the-external-link-checker}
+# The External Link Checker{#the-external-link-checker}
 
-Een externe koppelingencontrole wordt verstrekt binnen AEM. De koppelingencontrole:
+Binnen AEM wordt een externe koppelingencontrole aangeboden. De koppelingencontrole:
 
 * scant alle inhoudspagina&#39;s
 * genereert een lijst met alle geldige en ongeldige koppelingen
@@ -40,6 +43,7 @@ De externe koppelingencontrole gebruiken:
    * tijd sinds de koppeling voor het laatst is gevalideerd
    * tijd sinds de koppeling voor het laatst beschikbaar was
    * tijd sinds de koppeling voor het laatst is geopend
+
    wordt weergegeven.
 
 1. Ongeldige koppelingen op de afzonderlijke inhoudspagina&#39;s worden weergegeven als verbroken:
