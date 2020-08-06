@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: a0319701-21eb-4b7f-8b2e-ac81a7a75875
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '815'
+ht-degree: 1%
 
 ---
 
@@ -21,13 +24,13 @@ Gebruik standaard upload- of synchronisatiemechanismen om 3D-elementen en de bij
 
 Zie Elementen [uploaden](managing-assets-touch-ui.md#uploading-assets).
 
-Adobe raadt u aan alle bestanden waarnaar wordt verwezen, te uploaden voordat het primaire 3D-modelbestand wordt geüpload of tegelijkertijd. Dit is echter geen vereiste.
+Adobe raadt u aan alle bestanden waarnaar wordt verwezen, te uploaden voordat of tegelijkertijd het primaire 3D-modelbestand wordt geüpload. Dit is echter geen vereiste.
 
 Wanneer het uploaden is voltooid, worden uw 3D-bestanden geconverteerd en wordt extra verwerking toegepast om het element voor te bereiden op weergave en rendering.
 
 ## Aanbevolen procedures voor het uploaden van 3D-elementen {#best-practices-for-uploading-d-assets}
 
-* Over het algemeen gelden er geen beperkingen voor het uploaden van 3D-inhoud in de maphiërarchie van AEM Assets. De geautomatiseerde oplossing van bestandsafhankelijkheden van AEM 3D heeft echter bereikbeperkingen om de tijd te regelen die nodig is om grote opslagruimten voor bedrijfsmiddelen te doorzoeken. Daarom raadt Adobe u aan dat wanneer u 3D-elementen en hun bestandsafhankelijke bestanden uploadt, u dit doet binnen een redelijke afstand tot elk bestand (algemene bovenliggende map). Nadat de bestandsafhankelijkheden zijn opgelost, kunt u zowel het 3D-element als de afhankelijke elementen overal in de opslagplaats verplaatsen zonder de bestaande relaties te verliezen.
+* Over het algemeen gelden er geen beperkingen voor het uploaden van 3D-inhoud in de AEM Assets-maphiërarchie. AEM de geautomatiseerde oplossing van bestandsafhankelijkheden in 3D heeft echter bereikbeperkingen om te bepalen hoe lang het duurt om grote opslagplaatsen voor bedrijfsmiddelen te doorzoeken. Daarom raadt Adobe aan dat wanneer u 3D-elementen en hun bestandsafhankelijke bestanden uploadt, u dit doet binnen een redelijke afstand tot elk bestand (algemene bovenliggende map). Nadat de bestandsafhankelijkheden zijn opgelost, kunt u zowel het 3D-element als de afhankelijke elementen overal in de opslagplaats verplaatsen zonder de bestaande relaties te verliezen.
 * Adobe raadt u aan een consistente mapstructuur voor 3D-inhoud te kiezen *voordat* u gaat uploaden. De volgende tips zijn enkele aanbevolen benaderingen die u kunt kiezen:
 
    * **Een aparte map bijhouden voor elk 3D-element dat u uploadt**.
@@ -50,13 +53,13 @@ Wanneer het uploaden is voltooid, worden uw 3D-bestanden geconverteerd en wordt 
 
 Het omzetten en verwerken van 3D-bestanden verbruikt doorgaans aanzienlijke CPU- en geheugenbronnen op een server. Het kost ook veel tijd. De verwerkingstijden variëren vaak sterk afhankelijk van de grootte van het model en de mogelijkheden van de server. Een typisch klein model met minder dan 100 k vlakken is bijvoorbeeld meestal klaar om in minder dan één minuut te worden bekeken; het wordt volledig verwerkt in 2-3 minuten. Terwijl een groot model met meer dan een miljoen gezichten tientallen minuten kan duren om volledig te verwerken.
 
-Conversie-, verwerkings- en rendertaken worden zo nodig in een wachtrij geplaatst om te voorkomen dat de server te veel wordt vertraagd. Het bericht &quot;Wachten op verwerking...&quot; wordt soms weergegeven in de **[!UICONTROL Kaartweergave]** op het moment dat u elementen uploadt. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat het huidige element wordt verwerkt.
+Conversie-, verwerkings- en rendertaken worden zo nodig in een wachtrij geplaatst om te voorkomen dat de server te veel wordt vertraagd. Het bericht &quot;Wachten op verwerking...&quot; wordt soms weergegeven in de **[!UICONTROL Card View]** periode waarin u elementen hebt geüpload. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat het huidige element wordt verwerkt.
 
 Er zijn mechanismen beschikbaar om het CPU-gebruik voor innameverwerking en voor rendering te beperken. Zie [Geavanceerde configuratiemontages](advanced-config-3d.md) voor informatie over hoe te om de grenzen van cpu te vormen.
 
 ## De verwerkingsstatus van uw geüploade 3D-bestanden controleren {#monitoring-the-processing-status-of-your-uploaded-d-files}
 
-Alleen in de **[!UICONTROL kaartweergave]** worden de verwerkingsstatus en de voortgang weergegeven als een voortgangsbanner op de kaart van het element. Elk geüpload 3D-model ondergaat doorgaans de volgende 4-6 geordende verwerkingsstadia:
+De verwerkingsstatus en de voortgang worden **[!UICONTROL Card View]** alleen als een voortgangsbanner weergegeven op de kaart van het element. Elk geüpload 3D-model ondergaat doorgaans de volgende 4-6 geordende verwerkingsstadia:
 
 <table> 
  <tbody> 
@@ -105,5 +108,5 @@ Alleen in de **[!UICONTROL kaartweergave]** worden de verwerkingsstatus en de vo
 
 >[!NOTE]
 >
->U kunt een 3D-element weergeven in de **[!UICONTROL gedetailleerde weergave]** of renderen nadat het voorvertoningswerkgebied maken is voltooid. U hoeft niet te wachten tot alle verwerkingsfasen zijn voltooid.
+>U kunt een 3D-element weergeven in **[!UICONTROL Detail View]** of renderen nadat het voorvertoningswerkgebied maken is voltooid. U hoeft niet te wachten tot alle verwerkingsfasen zijn voltooid.
 
