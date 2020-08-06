@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 542467ef-3793-4347-8424-c365c5a166f6
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 3%
 
 ---
 
@@ -80,11 +83,11 @@ Het voorbeeld van de [zelfstudie](getting-started-enablement.md)Enablement gebru
 * Een onderliggende filternode toevoegen
 
    * Selecteer het `catalog`knooppunt
-   * Knooppunt **[!UICONTROL maken selecteren]**
+   * Selecteer **[!UICONTROL Create Node]**
 
       * Naam: `filters`
       * Type: `nt:unstructured`
-   * Alles **[!UICONTROL opslaan selecteren]**
+   * Selecteer **[!UICONTROL Save All]**
 
 
 * Eigenschap toevoegen `se_resource-tags` aan `filters` knooppunt
@@ -93,10 +96,10 @@ Het voorbeeld van de [zelfstudie](getting-started-enablement.md)Enablement gebru
    * Een eigenschap voor meerdere objecten toevoegen
 
       * Naam: `se_resource-tags`
-      * Type:String
-      * Waarde: *&lt;enter a[TagID](#pre-filter-tagids)>*
-      * Meerdere **[!UICONTROL selecteren]**
-      * Selecteer **[!UICONTROL Toevoegen]**
+      * Type: String
+      * Waarde: *&lt;Voer een[TagID](#pre-filter-tagids)in>*
+      * Selecteer **[!UICONTROL Multi]**
+      * Selecteer **[!UICONTROL Add]**
 
          * Selecteer in het pop-updialoogvenster `+` om aanvullende voorfilter-ID&#39;s toe te voegen
 
