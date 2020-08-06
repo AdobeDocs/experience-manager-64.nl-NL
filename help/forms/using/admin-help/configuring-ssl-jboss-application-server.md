@@ -26,7 +26,7 @@ U kunt keytool uitvoeren met één opdracht die alle informatie bevat die nodig 
 
 In deze procedure:
 
-* `[appserver root]` is de thuismap van de toepassingsserver waarop AEM-formulieren worden uitgevoerd.
+* `[appserver root]` is de thuismap van de toepassingsserver waarop AEM formulieren worden uitgevoerd.
 * `[type]` Dit is een mapnaam die varieert, afhankelijk van het type installatie dat u hebt uitgevoerd.
 
 ## SSL-referenties maken {#create-an-ssl-credential}
@@ -142,11 +142,11 @@ In deze procedure:
    * Voor sleutelinstallaties:
 
       * Van het Controlebord van Vensters, klik Administratieve Hulpmiddelen, en klik dan de Diensten.
-      * Selecteer JBoss voor Adobe Experience Manager formulieren.
+      * Selecteer JBoss voor Adobe Experience Manager-formulieren.
       * Selecteer Actie > Stoppen.
       * Wacht tot de status van de service wordt weergegeven als gestopt.
       * Selecteer Actie > Begin.
-   * Voor vooraf geconfigureerde of handmatig geconfigureerde JBoss-installaties van Adobe:
+   * Voor Adobe preconfigured of manueel gevormde installaties JBoss:
 
       * Navigeer vanaf een opdrachtprompt naar *`[appserver root]`*/bin.
       * Stop de server door het volgende bevel in te gaan:
@@ -163,7 +163,7 @@ In deze procedure:
 
 1. Als u beheerconsole wilt openen met SSL, typt u `https://[host name]:[port]/adminui` in een webbrowser:
 
-   De standaard-SSL-poort voor JBoss is 8443. Geef deze poort vanaf hier op wanneer u AEM-formulieren opent.
+   De standaard-SSL-poort voor JBoss is 8443. Geef vanaf hier deze poort op wanneer u AEM formulieren opent.
 
 ## Vraag om een referentie van een CA {#request-a-credential-from-a-ca}
 
