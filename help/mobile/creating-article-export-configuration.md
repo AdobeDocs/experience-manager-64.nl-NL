@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: bc681589-5d46-44cd-888d-b0722a2fd006
 translation-type: tm+mt
 source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
+workflow-type: tm+mt
+source-wordcount: '321'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 >[!CAUTION]
 >
@@ -27,11 +30,11 @@ source-git-commit: 622e613d556acda7cd98d4b3d20a20133756fd92
 >
 >Alvorens over het creëren van en het wijzigen van gedeelde middelen te leren, zie de Synchronisatie [van de](/help/mobile/mobile-ondemand-contentsync.md) Inhoud om de basisconcepten te begrijpen.
 
-AEM Mobile-gebruikers gebruiken Content Sync om live-inhoud te exporteren naar statische inhoud voor gebruik in mobiele apps. Deze export vindt plaats wanneer inhoud wordt geüpload naar Mobile On-Demand Services van AEM Mobile.
+AEM Mobile-gebruikers gebruiken Content Sync om live-inhoud te exporteren naar statische inhoud voor gebruik in Mobile Apps. Deze export vindt plaats wanneer inhoud vanuit AEM Mobile wordt geüpload naar Mobile On-Demand Services.
 
 De eigenschap ***dps-exportTemplate*** die in de bovenstaande tabel wordt vermeld, definieert het pad naar de exportconfiguraties van de app. Stel deze eigenschap in om gedeelde bronnen te maken en te wijzigen.
 
-In de volgende bronnen wordt beschreven hoe u inhoud exporteert van Adobe Experience Manager (AEM) voor uploaden naar AEM Mobile.
+In de volgende bronnen wordt beschreven hoe u inhoud uit Adobe Experience Manager (AEM) exporteert om te uploaden naar AEM Mobile.
 
 Artikelen hebben inhoud die moet worden geëxporteerd en geüpload. Een deel van deze inhoud kan worden gedeeld tussen artikelen.
 
@@ -44,15 +47,16 @@ De configuratie ContentSync gevonden bij **&lt;dps-exportTemplate>/dps-article>*
 >U kunt de onderstaande stappen uitvoeren om voorbeelden van gedeelde bronnen weer te geven, alleen als u beschikt over:
 >
 >* de voorbeeldinhoud geïnstalleerd
->* AEM-instantie uitvoeren
+>* uitvoeren, AEM
 >* geen gevormde douanecontext of een verschillende haven
+
 >
 
 
 
 Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 
-1. Open CRXDE Lite op uw AEM server.
+1. Open CRXDE Lite op uw AEM.
 1. Blader naar dit pad [/etc/contentSync/templates/dps-we-onbeperkt-app/dps-article](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-article)om de gedeelde voorbeeldbronnen weer te geven.
 
    U kunt alle eigenschappen bekijken die voor het creëren van uw gedeelde middelen zoals aangetoond in het hieronder cijfer worden vereist:
@@ -61,5 +65,5 @@ Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 
 >[!NOTE]
 >
->Artikelen moeten worden geüpload of geëxporteerd naar AEM Mobile On-Demand Services wanneer de inhoud van artikelen verandert.
+>Artikelen moeten worden geüpload of geëxporteerd naar AEM Mobile On-demand Services wanneer de inhoud van een artikel verandert.
 
