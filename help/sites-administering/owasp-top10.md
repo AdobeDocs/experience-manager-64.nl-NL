@@ -1,8 +1,8 @@
 ---
 title: OWASP Top 10
 seo-title: OWASP Top 10
-description: Leer hoe AEM de 10 belangrijkste beveiligingsrisico's van OWASP aanpakt.
-seo-description: Leer hoe AEM de 10 belangrijkste beveiligingsrisico's van OWASP aanpakt.
+description: Leer hoe AEM omgaat met de 10 belangrijkste beveiligingsrisico's van OWASP.
+seo-description: Leer hoe AEM omgaat met de 10 belangrijkste beveiligingsrisico's van OWASP.
 uuid: a5a7e130-e15b-47ae-ba21-448f9ac76074
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -38,7 +38,7 @@ XSS is een hoogste prioriteit tijdens zowel het testen als de ontwikkeling, en o
 
 ## 3. Verbroken verificatie- en sessiebeheer {#broken-authentication-and-session-management}
 
-AEM gebruikt geluidstechnieken en beproefde verificatietechnieken, waarbij wordt uitgegaan van [Apache Jackrabbit](https://jackrabbit.apache.org/) en [Apache Sling](https://sling.apache.org/). Browsersessies/HTTP-sessies worden niet gebruikt in AEM.
+AEM gebruikt geluidstechnieken en beproefde verificatietechnieken, waarbij wordt uitgegaan van [Apache Jackrabbit](https://jackrabbit.apache.org/) en [Apache Sling](https://sling.apache.org/). Browser/HTTP-sessies worden niet gebruikt in AEM.
 
 ## 4. Verwijzingen naar onveilige directe objecten {#insecure-direct-object-references}
 
@@ -46,13 +46,13 @@ Alle toegang tot gegevensvoorwerpen wordt bemiddelen door de bewaarplaats en daa
 
 ## 5. Cross-Site Request-vervalsing (CSRF) {#cross-site-request-forgery-csrf}
 
-Smeedraaien voor aanvragen tussen sites (CSRF) wordt beperkt door automatisch een cryptografisch token te injecteren in alle formulieren en AJAX-verzoeken en dit token te verifiëren op de server voor elke POST.
+Smeedraaien voor aanvragen tussen sites (CSRF) wordt beperkt door automatisch een cryptografisch token in alle formulieren en AJAX te injecteren en dit token op de server voor elke POST te controleren.
 
-Daarnaast wordt AEM geleverd met een op referentie-header gebaseerd filter, dat kan worden geconfigureerd om POST-verzoeken van specifieke hosts (gedefinieerd in een lijst) *alleen* toe te staan.
+Bovendien AEM schepen met een verwijzing-kopbal gebaseerde filter, die kan worden gevormd om POST verzoeken van specifieke gastheren (die in een lijst worden bepaald *slechts* toe te staan).
 
 ## 6. Beveiligingsfout {#security-misconfiguration}
 
-Het is onmogelijk te garanderen dat alle software altijd correct is geconfigureerd. Wij streven er echter naar zoveel mogelijk begeleiding te bieden en de configuratie zo eenvoudig mogelijk te maken. Bovendien wordt AEM geleverd met [geïntegreerde beveiligingscontroles](/help/sites-administering/operations-dashboard.md) die u helpen de beveiligingsconfiguratie in één oogopslag te controleren.
+Het is onmogelijk te garanderen dat alle software altijd correct is geconfigureerd. Wij streven er echter naar zoveel mogelijk begeleiding te bieden en de configuratie zo eenvoudig mogelijk te maken. Bovendien AEM schepen met [geïntegreerde Controle](/help/sites-administering/operations-dashboard.md) van de Gezondheid van de Veiligheid die u helpen veiligheidsconfiguratie in een blik controleren.
 
 Controleer de [lijst](/help/sites-administering/security-checklist.md) Beveiligingscontrole voor meer informatie, die u stapsgewijze verhardingsinstructies biedt.
 
