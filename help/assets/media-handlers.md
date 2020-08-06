@@ -15,17 +15,17 @@ ht-degree: 3%
 
 Adobe Experience Manager Assets biedt een set standaardworkflows en mediahandlers voor het verwerken van elementen. Een workflow definieert een typische middelenbeheer- en verwerkingstaak en delegeert de specifieke taken aan de mediafunctionarissen, bijvoorbeeld het genereren van miniaturen of het uitnemen van metagegevens.
 
-Er kan een workflow worden gedefinieerd die automatisch wordt uitgevoerd wanneer een element van een bepaald type of een bepaalde indeling naar de server wordt geüpload. De verwerkingsstappen worden gedefinieerd als een reeks mediamanagers van AEM Assets. AEM verstrekt sommige [ingebouwde managers,](#default-media-handlers) en de extra degenen kunnen of [douane worden ontwikkeld](#creating-a-new-media-handler) of worden bepaald door het proces aan een hulpmiddel [van de](#command-line-based-media-handler)bevellijn te delegeren.
+Er kan een workflow worden gedefinieerd die automatisch wordt uitgevoerd wanneer een element van een bepaald type of een bepaalde indeling naar de server wordt geüpload. De verwerkingsstappen worden gedefinieerd als een reeks AEM Assets-mediafuncties. AEM verstrekt sommige [ingebouwde managers,](#default-media-handlers) en de extra degenen kunnen of [douane worden ontwikkeld](#creating-a-new-media-handler) of worden bepaald door het proces aan een hulpmiddel [van de](#command-line-based-media-handler)bevellijn te delegeren.
 
-Mediahandlers zijn services binnen AEM Assets die specifieke handelingen op elementen uitvoeren. Wanneer bijvoorbeeld een MP3-audiobestand naar AEM wordt geüpload, wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Meestal worden media-afhandelingen gebruikt in combinatie met workflows. De meeste gangbare MIME-typen worden ondersteund in AEM. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden/te maken, media-handlers uit te breiden/te maken of media-handlers uit te schakelen/in te schakelen.
+Mediahandlers zijn services in AEM Assets die specifieke handelingen uitvoeren op elementen. Wanneer bijvoorbeeld een MP3-audiobestand naar AEM wordt geüpload, wordt met een workflow een MP3-handler geactiveerd die de metagegevens extraheert en een miniatuur genereert. Meestal worden media-afhandelingen gebruikt in combinatie met workflows. De meeste gangbare MIME-typen worden ondersteund in AEM. U kunt specifieke taken uitvoeren op elementen door workflows uit te breiden/te maken, media-handlers uit te breiden/te maken of media-handlers uit te schakelen/in te schakelen.
 
 >[!NOTE]
 >
->Raadpleeg de pagina met door [Middelen ondersteunde indelingen](assets-formats.md) voor een beschrijving van alle indelingen die worden ondersteund door AEM Assets en van de functies die voor elke indeling worden ondersteund.
+>Raadpleeg de pagina met door [Middelen ondersteunde indelingen](assets-formats.md) voor een beschrijving van alle indelingen die door AEM Assets worden ondersteund en van de functies die voor elke indeling worden ondersteund.
 
 ## Standaardmediahandlers {#default-media-handlers}
 
-De volgende media managers zijn beschikbaar binnen AEM Assets en behandelen de gemeenschappelijkste types MIME:
+De volgende media handlers zijn beschikbaar binnen AEM Assets en behandelen de gemeenschappelijkste types MIME:
 
 | Naam handler | Servicenaam (in de systeemconsole) | Ondersteunde MIME-typen |
 |---|---|---|
@@ -59,7 +59,7 @@ Het is mogelijk om de actieve media managers te bekijken:
 
 De managers van media zijn de diensten die gewoonlijk in combinatie met werkschema&#39;s worden gebruikt.
 
-AEM beschikt over enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op het **[!UICONTROL Models]** tabblad om deze weer te geven: de werkstroomtitels die met AEM Assets beginnen zijn de activa - specifieke.
+AEM heeft enkele standaardworkflows om elementen te verwerken. Open de workflowconsole en klik op het **[!UICONTROL Models]** tabblad om deze weer te geven: de workflowtitels die met AEM Assets beginnen, zijn de middelen-specifieke.
 
 Bestaande workflows kunnen worden uitgebreid en nieuwe workflows kunnen worden gemaakt om elementen volgens specifieke vereisten te verwerken.
 
@@ -129,7 +129,7 @@ Ga als volgt te werk:
 
 Raadpleeg de [ontwikkelprogramma](../sites-developing/dev-tools.md) &#39;s voor het installeren en instellen van Eclipse met een Maven-plug-in en voor het instellen van de afhankelijkheden die nodig zijn voor het Maven-project.
 
-Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, worden de metagegevens van het bestand geëxtraheerd en worden twee miniaturen met een watermerk gegenereerd.
+Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM uploadt, worden de metagegevens van het bestand geëxtraheerd en worden twee miniaturen met een watermerk gegenereerd.
 
 1. Maak in Eclipse een `myBundle` Maven-project:
 
@@ -140,8 +140,8 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
       * Groep-id: com.day.cq5.myhandler
       * Artefact-id: myBundle
-      * Naam: Mijn AEM-bundel
-      * Omschrijving: Dit is mijn AEM-bundel
+      * Naam: Mijn AEM
+      * Omschrijving: Dit is mijn AEM bundel
    1. Klik op **[!UICONTROL Finish]**.
 
 
@@ -435,9 +435,9 @@ Nadat u de volgende procedure hebt uitgevoerd en een tekstbestand in AEM laadt, 
 
 ## Media-handler op basis van opdrachtregel {#command-line-based-media-handler}
 
-Met AEM kunt u alle opdrachtregelprogramma&#39;s binnen een workflow uitvoeren om elementen (zoals ImageMagick) om te zetten en de nieuwe uitvoering aan het element toe te voegen. U hoeft het opdrachtregelprogramma alleen te installeren op de schijf die als host fungeert voor de AEM-server en een processtap toe te voegen en te configureren voor de workflow. Met het aangeroepen proces kunt u filteren op basis van specifieke MIME-typen en meerdere miniaturen maken op basis van de nieuwe uitvoering. `CommandLineProcess`
+AEM kunt u elk opdrachtregelprogramma binnen een workflow uitvoeren om elementen (zoals ImageMagick) om te zetten en de nieuwe vertoning aan het element toe te voegen. U hoeft het opdrachtregelprogramma alleen te installeren op de schijf die als host fungeert voor de AEM server en een processtap toe te voegen en te configureren voor de workflow. Met het aangeroepen proces kunt u filteren op basis van specifieke MIME-typen en meerdere miniaturen maken op basis van de nieuwe uitvoering. `CommandLineProcess`
 
-De volgende omzettingen kunnen automatisch binnen AEM Assets worden in werking gesteld en worden opgeslagen:
+De volgende conversies kunnen automatisch worden uitgevoerd en opgeslagen in AEM Assets:
 
 * EPS- en AI-transformatie met [ImageMagick](https://www.imagemagick.org/script/index.php) en [Ghostscript](https://www.ghostscript.com/)
 * FLV-videotranscodering met [Mpeg](https://ffmpeg.org/)
@@ -451,18 +451,18 @@ De volgende omzettingen kunnen automatisch binnen AEM Assets worden in werking g
 Het `CommandLineProcess` proces voert de volgende bewerkingen uit in de volgorde waarin deze worden weergegeven:
 
 * Hiermee wordt het bestand gefilterd op basis van specifieke mime-typen, indien opgegeven.
-* Maakt een tijdelijke map op de schijf die als host fungeert voor de AEM-server.
+* Maakt een tijdelijke map op de schijf waarop de AEM server wordt gehost.
 * Hiermee wordt het oorspronkelijke bestand gestroomd naar de tijdelijke map.
 * Voert de opdracht uit die door de argumenten van de stap wordt gedefinieerd. De opdracht wordt uitgevoerd in de tijdelijke map met de machtigingen van de gebruiker die AEM uitvoert.
-* Hiermee wordt het resultaat weer in de weergavemap van de AEM-server gestroomd.
+* Hiermee wordt het resultaat weer in de weergavemap van de AEM server gestroomd.
 * Hiermee verwijdert u de tijdelijke map.
 * Hiermee maakt u miniaturen op basis van deze uitvoeringen, indien opgegeven. Het aantal en de afmetingen van de miniaturen worden bepaald door de argumenten van de stap.
 
 ### Een voorbeeld met ImageMagick {#an-example-using-imagemagick}
 
-In het volgende voorbeeld ziet u hoe u de processtap voor de opdrachtregel instelt, zodat telkens wanneer een element met het mime-type gif of tiff aan /content/dam op de AEM-server wordt toegevoegd, een gespiegelde afbeelding van het origineel samen met drie extra miniaturen (140x100, 48x48 en 10x250) wordt gemaakt.
+In het volgende voorbeeld ziet u hoe u de processtap voor de opdrachtregel instelt, zodat telkens wanneer een element met het mime-type gif of tiff aan /content/dam op de AEM server wordt toegevoegd, een gespiegelde afbeelding van het origineel samen met drie extra miniaturen (140x100, 48x48 en 10x250) wordt gemaakt.
 
-Gebruik ImageMagick om dit te doen. Installeer ImageMagick op de schijf die als host fungeert voor de AEM-server:
+Gebruik ImageMagick om dit te doen. Installeer ImageMagick op de schijf die als host fungeert voor de AEM server:
 
 1. Installeer ImageMagick. Zie [documentatie](https://www.imagemagick.org/script/download.php) ImageMagick voor meer informatie.
 1. Stel het gereedschap zo in dat u het op de opdrachtregel kunt omzetten.
@@ -504,7 +504,7 @@ This section describes how to set the **[!UICONTROL Process Arguments]** of the 
 | tn:&lt;width>:&lt;height> | Optioneel argument. Het proces leidt tot een duimnagel met de afmetingen die in het argument worden bepaald. <br>Er kunnen verschillende miniaturen worden gedefinieerd. |
 | cmd: &lt;command> | Definieert de opdracht die wordt uitgevoerd. De syntaxis hangt van het hulpmiddel van de bevellijn af. Er kan slechts één opdracht worden gedefinieerd. <br>De volgende variabelen kunnen worden gebruikt om de opdracht te maken:<br>`${filename}`: naam van het invoerbestand, bijvoorbeeld original.jpg <br> `${file}`: volledige padnaam van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp/original.jpg <br> `${directory}`: directory van het invoerbestand, bijvoorbeeld /tmp/cqdam0816.tmp <br>`${basename}`: naam van het invoerbestand zonder de extensie, bijvoorbeeld origineel <br>`${extension}`: extensie van het invoerbestand, bijvoorbeeld jpg |
 
-Bijvoorbeeld als ImageMagick is geïnstalleerd op de schijf die als host fungeert voor de AEM-server en als u een processtap maakt met **CommandLineProcess** als Implementation en de volgende waarden als **procesargumenten**:
+Bijvoorbeeld als ImageMagick op de schijf geïnstalleerd is die de AEM server ontvangt en als u een processtap gebruikend **CommandLineProcess** als Implementatie en de volgende waarden als Argumenten **van het** Proces creeert:
 
 `mime:image/gif,mime:image/tiff,tn:140:100,tn:48:48,tn:10:250,cmd:convert ${directory}/${filename} -flip ${directory}/${basename}.flipped.jpg`
 
