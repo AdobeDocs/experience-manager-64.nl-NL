@@ -68,12 +68,15 @@ Controleer de volgende parameters:
    Zorg ervoor dat de status van de volgende bundels &quot;actief&quot; is:
 
    * scala-lang.bundle [osgi]
+
    (com.adobe.livecyclescala-lang.bundle)
 
    * Adobe XFA Forms Renderer
+
    (com.adobe.livecycle.adobe-lc-forms-core)
 
    * Adobe XFA Forms LC Connector
+
    (com.adobe.livecycle.adobe-lc-forms-lc-connector)
 
 ## Probleem: Formulierweergaven zonder stijlen {#problem-form-renders-without-styles}
@@ -114,7 +117,7 @@ Controleer de volgende parameters:
 
 ## Probleem: Kan het formulier niet verzenden {#problem-unable-to-submit-the-form}
 
-1. Zorg ervoor dat u toegangsrechten hebt tot de AEM-server en dat u verbinding hebt met de server.
+1. Zorg ervoor dat u toegangsrechten hebt tot de AEM server en dat u verbinding hebt met de server.
 1. Controleer of de parameter submitUrl correct is.
 1. Schakel de logbestanden aan de clientzijde in zoals vermeld in [Logs voor de HTML5-formulieren](/help/forms/using/enable-logs.md) met de optie Foutopsporing als **1-a5-b5-c5**. Geef het formulier vervolgens weer en klik op Verzenden. Open browser zuivert console en controleer als er een fout is.
 1. Zoek de serverlogboeken zoals vermeld in [Logs voor de HTML5-formulieren](/help/forms/using/enable-logs.md). Controleer of er tijdens de verzending een fout is opgetreden in de serverlogboeken.
