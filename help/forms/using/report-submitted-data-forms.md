@@ -10,6 +10,9 @@ topic-tags: developer-reference
 discoiquuid: 9457effd-3595-452f-a976-ad9eda6dc909
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '570'
+ht-degree: 5%
 
 ---
 
@@ -92,7 +95,7 @@ Geef de volgende parameters op in de aanvraag-URL:
   </tr> 
   <tr> 
    <td><code>cutPoints</code> <br /> (optioneel)</td> 
-   <td>Hiermee geeft u een door komma's gescheiden lijst met formuliereigenschappen op die in de resultaten moeten worden opgenomen. <br /> De standaardeigenschappen zijn: <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
+   <td>Hiermee geeft u een door komma's gescheiden lijst met formuliereigenschappen op die in de resultaten moeten worden opgenomen. De standaardeigenschappen zijn:<br /> <code>formName</code>, <code>formPath</code>, <code>submitID</code>, <code>formType</code>, <code>jcr:lastModified</code>, <code>owner</code></td> 
   </tr> 
   <tr> 
    <td><code>search</code> <br /> (optioneel)</td> 
@@ -157,7 +160,7 @@ https://[host:[port]/content/forms/portal/submission.review.json?func=addComment
 1403873422601300
 ```
 
-## GET /content/forms/portal/submission.review.json?func=getComments {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
+## GET /content/forms/portal/submission.review.json?func=getComments   {#get-content-forms-portal-submission-review-json-func-getcomments-nbsp}
 
 Retourneert alle opmerkingen die op het opgegeven verzendexemplaar zijn geplaatst.
 
