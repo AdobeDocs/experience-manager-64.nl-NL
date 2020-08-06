@@ -24,11 +24,11 @@ De pagina met taakdetails bevat informatie over een taak en de bijbehorende proc
 U kunt de volgende informatie toevoegen aan de pagina met taakdetails:
 
 * Informatie beschikbaar in het JSON-object van een taak (taaksectie in de JSON-objectbeschrijving [van de](/help/forms/using/html-workspace-json-object-description.md)AEM Forms-werkruimte)
-* Informatie beschikbaar in het JSON-object van een procesinstantie (sectie Procesinstantie in de werkruimte [AEM Forms JSON-objectbeschrijving](/help/forms/using/html-workspace-json-object-description.md))
+* Informatie beschikbaar in het JSON-object van een procesinstantie (sectie Procesinstantie in de JSON-objectbeschrijving [van de](/help/forms/using/html-workspace-json-object-description.md)AEM Forms-werkruimte)
 
 De pagina met taakdetails aanpassen:
 
-1. Voer de [algemene stappen uit voor het aanpassen van de werkruimte AEM Forms.](/help/forms/using/generic-steps-html-workspace-customization.md)
+1. Voer [algemene stappen uit voor aanpassing van de AEM Forms-werkruimte.](/help/forms/using/generic-steps-html-workspace-customization.md)
 1. Als u aanvullende informatie wilt weergeven, voegt u overeenkomende sleutel-waardeparen toe aan het `translation.json` bestand in `todo`blok > `details`blok > `app`blok > [ blok `required`].
 
    Het [ blok `required`] verwijst naar beschikbare blokken, zoals het taakblok voor taakinformatie, procesblok voor procesinformatie, en het huidige het taakblok voor lopende taakinformatie.
@@ -54,7 +54,7 @@ De pagina met taakdetails aanpassen:
 
    >[!NOTE]
    >
-   >Voeg overeenkomstige sleutel-waardeparen voor alle gesteunde talen toe.
+   >Voeg overeenkomstige sleutel-waarde paren voor alle gesteunde talen toe.
 
 1. Kopiëren `/libs/ws/js/runtime/templates/taskdetails.html` naar `/apps/ws/js/runtime/templates/taskdetails.html`.
 
@@ -85,6 +85,6 @@ De pagina met taakdetails aanpassen:
 
 >[!NOTE]
 >
->Als u de pagina met taakdetails wilt aanpassen met taken die zijn gemaakt op het tabblad **Start-proces **AEM Forms-werkruimte, voegt u de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/startprocess.html`.
+>Als u de pagina met taakdetails wilt aanpassen met taken die zijn gemaakt op het tabblad **Proces starten **van de AEM Forms-werkruimte, voegt u de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/startprocess.html`.
 >
 >Als u nieuwe stijlen wilt toevoegen voor de informatie die op de detailpagina is toegevoegd, wijzigt u het CSS-bestand met de sectie Wijzigingen *in de* gebruikersinterface in Aanpassing [werkruimte](/help/forms/using/changing-locale-user-interface.md).
