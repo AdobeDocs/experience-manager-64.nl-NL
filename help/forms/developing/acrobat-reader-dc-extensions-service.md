@@ -1,6 +1,6 @@
 ---
-title: Acrobat Reader DC-extensies ServiceJava API Quick Start (SOAP)
-seo-title: Acrobat Reader DC-extensies ServiceJava API Quick Start (SOAP)
+title: Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)
+seo-title: Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: 8e72ca94-a8c1-43aa-9845-a0da597051c5
@@ -17,9 +17,9 @@ ht-degree: 0%
 ---
 
 
-# Acrobat Reader DC-extensies ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
+# Acrobat Reader DC extensions ServiceJava API Quick Start (SOAP) {#acrobat-reader-dc-extensions-servicejava-api-quick-start-soap}
 
-De volgende snelstarthandleidingen zijn beschikbaar voor de Acrobat Reader DC Extensions-service.
+De volgende snelstarthandleidingen zijn beschikbaar voor de service Acrobat Reader DC Extensions.
 
 [Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API](#quick-start-soap-mode-applying-usage-rights-using-the-java-api)
 
@@ -27,11 +27,11 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de Acrobat Reader DC Ex
 
 [Snel starten (SOAP-modus): Crediteringsgegevens ophalen met de Java API](acrobat-reader-dc-extensions-service.md#quick-start-soap-mode-retrieving-credential-information-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus):gebruiksrechten toepassen met de Java API {#quick-start-soap-mode-applying-usage-rights-using-the-java-api}
 
