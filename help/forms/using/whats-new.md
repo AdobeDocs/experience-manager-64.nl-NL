@@ -1,6 +1,6 @@
 ---
-title: Overzicht van nieuwe functies| AEM 6.4-vormen
-seo-title: Overzicht van nieuwe functies| AEM 6.4-vormen
+title: Overzicht van nieuwe functies | AEM 6.4 Forms
+seo-title: Overzicht van nieuwe functies | AEM 6.4 Forms
 description: Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms.
 seo-description: Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms.
 uuid: 152068ec-47a8-43f4-b9c8-3a17d1f085fe
@@ -10,17 +10,20 @@ topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
 source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+workflow-type: tm+mt
+source-wordcount: '2012'
+ht-degree: 0%
 
 ---
 
 
-# Overzicht van nieuwe functies| AEM 6.4-vormen {#new-features-summary-aem-forms}
+# Overzicht van nieuwe functies | AEM 6.4 Forms {#new-features-summary-aem-forms}
 
 Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms.
 
-AEM Forms bevat verschillende nieuwe functies en verbeteringen waarmee u creatie, beheer en gebruikerservaring verder kunt stroomlijnen met adaptieve formulieren en interactieve communicatie.
+AEM Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van aangepaste formulieren en interactieve communicatie verder stroomlijnen.
 
-Lees verder voor een snelle inleiding op nieuwe functies en verbeteringen. Raadpleeg de documentatie voor bronnen die informatie bieden. Zie ook de [opmerkingen bij](/help/release-notes/forms.md)de release van AEM 6.4 Forms. Voor volledige documentatie over AEM 6.4-formulieren gaat u naar de gebruikershandleiding voor [AEM 6.4-formulieren](/help/forms/home.md).
+Lees verder voor een snelle inleiding op nieuwe functies en verbeteringen. Raadpleeg de documentatie voor bronnen die informatie bieden. Zie ook AEM 6.4 Opmerkingen bij de [release](/help/release-notes/forms.md)van Forms. Voor volledige AEM 6.4 Forms-documentatie gaat u naar [AEM 6.4 Forms User Guide](/help/forms/home.md).
 
 ## Interactieve communicatie {#interactive-communications}
 
@@ -34,7 +37,7 @@ Interactieve communicatie biedt aanzienlijke voordelen:
 
 * Biedt OOTB-integratie met het Model van formuliergegevens om eenvoudige en gestroomlijnde toegang mogelijk te maken tot back-end databases en andere CRM-systemen zoals MS Dynamics
 * Biedt een geïntegreerde ontwerpinterface voor afdrukken en webkanalen
-* Biedt een op slepen en neerzetten gebaseerde ontwerpinterface, vergelijkbaar met Adaptive Forms authoring, voor zowel afdrukken als webkanalen.
+* Biedt een op slepen en neerzetten gebaseerde ontwerpinterface, vergelijkbaar met Adaptive Forms authoring, voor zowel afdrukken- als webkanalen.
 
 De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen tot stand te brengen. Als u de letters in AEM 6.3 Forms en AEM 6.2 Forms wilt blijven gebruiken, moet u een compatibiliteitspakket installeren.
 
@@ -65,9 +68,9 @@ Zie Kanaal en webkanaal [](/help/forms/using/web-channel-print-channel.md)afdruk
 
 Interactieve communicatie ondersteunt thema&#39;s. U kunt thema&#39;s maken en deze toepassen op uw interactieve communicatie. Een thema bevat opmaakgegevens voor componenten en deelvensters. U kunt een thema op verschillende interactieve mededelingen opnieuw gebruiken om hen gemeenschappelijke en verenigbare verschijning en branding te geven.
 
-AEM Forms omvat een uit het doosthema voor Interactieve Mededelingen. Met behulp van een thema kunt u ook aanpassen hoe een interactieve communicatie er op een apparaat uitziet.
+AEM Forms bevat een thema uit het vak voor interactieve communicatie. Met behulp van een thema kunt u ook aanpassen hoe een interactieve communicatie er op een apparaat uitziet.
 
-Zie [Thema&#39;s in AEM-formulieren](/help/forms/using/themes.md)voor meer informatie.
+Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md)voor meer informatie.
 
 ### Interface van Enhanced Agent {#enhanced-agent-interface}
 
@@ -107,13 +110,13 @@ Meer informatie:
 
 ### Compatibiliteitspakket voor bestaande activa {#compatibility-package-for-existing-assets}
 
-Standaard worden lettermiddelen uit eerdere versies van AEM Forms niet ondersteund in deze release. Als u de letters van AEM 6.3 Forms en AEM 6.2 Forms wilt blijven gebruiken, moet u het compatibiliteitspakket installeren.
+Standaard worden lettermiddelen uit vorige versies van AEM Forms niet ondersteund in deze release. Als u de letters van AEM 6.3 Forms en AEM 6.2 Forms wilt blijven gebruiken, moet u het compatibiliteitspakket installeren.
 
 ## Gegevensintegratie {#data-integration}
 
 ![](do-not-localize/data-integeration-1.png)
 
-[Met de gegevensintegratie](/help/forms/using/data-integration.md) van AEM Forms kunt u verschillende gegevensbronnen configureren. zoals databases, RESTful- of SOAP-webdiensten, en OData-diensten; om een formuliergegevensmodel te maken dat u kunt gebruiken voor het binden van gegevens, het vooraf invullen en aanroepen van services in adaptieve formulieren en documenten.
+[Met AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md) kunt u verschillende gegevensbronnen configureren. zoals databases, RESTful- of SOAP-webdiensten, en OData-diensten; om een formuliergegevensmodel te maken dat u kunt gebruiken voor het binden van gegevens, het vooraf invullen en aanroepen van services in adaptieve formulieren en documenten.
 
 Deze release bevat verschillende nieuwe functies en verbeteringen voor gegevensintegratie.
 
@@ -127,7 +130,7 @@ Zie Formuliergegevensmodel [](/help/forms/using/create-form-data-models.md)maken
 
 ### Berekende eigenschappen maken {#create-computed-properties}
 
-Formulierauteurs en -ontwikkelaars kunnen berekende eigenschappen maken in het formuliergegevensmodel. Zij laten u toe om een waarde voor het bezit te berekenen door regels of logica op gegevens te creëren beschikbaar in gevormde gegevensbronnen. Een regel is een expressie die wordt geëvalueerd wanneer de gegevens in het formuliergegevensmodel worden geladen of wanneer de waarden van de eigenschappen in de expressie veranderen. Bijvoorbeeld, berekent een berekende eigenschap met de naam Installaties het maandelijkse bedrag dat voor een lening moet worden betaald op basis van de rentevoet in de gegevensbron en het bedrag en de looptijd van de lening die de gebruiker in het formulier heeft opgegeven.
+Forms-auteurs en -ontwikkelaars kunnen berekende eigenschappen maken in het formuliergegevensmodel. Zij laten u toe om een waarde voor het bezit te berekenen door regels of logica op gegevens te creëren beschikbaar in gevormde gegevensbronnen. Een regel is een expressie die wordt geëvalueerd wanneer de gegevens in het formuliergegevensmodel worden geladen of wanneer de waarden van de eigenschappen in de expressie veranderen. Bijvoorbeeld, berekent een berekende eigenschap met de naam Installaties het maandelijkse bedrag dat voor een lening moet worden betaald op basis van de rentevoet in de gegevensbron en het bedrag en de looptijd van de lening die de gebruiker in het formulier heeft opgegeven.
 
 Een berekende eigenschap bevindt zich lokaal in een formuliergegevensmodel en bestaat niet in een gegevensbron. U kunt berekende eigenschappen gebruiken in adaptieve formulieren en interactieve communicatie.
 
@@ -147,9 +150,9 @@ Een update in gegevensbronentiteiten of -eigenschappen wordt niet automatisch we
 
 ### Gegevensbronnen configureren met de Touch-gebruikersinterface {#configure-data-sources-using-touch-user-interface}
 
-Met deze release is de configuratie van de cloudservices voor gegevensbronnen beschikbaar in de Touch-gebruikersinterface. De locatie voor het configureren van cloudservices is ook gewijzigd in **[!UICONTROL Extra > Cloudservices > Gegevensbronnen]**. See [Configure data sources](/help/forms/using/configure-data-sources.md).
+Met deze release is de configuratie van de cloudservices voor gegevensbronnen beschikbaar in de Touch-gebruikersinterface. De locatie voor het configureren van cloudservices is veranderd in **[!UICONTROL Tools > Cloud Services > Data Sources]**. See [Configure data sources](/help/forms/using/configure-data-sources.md).
 
-## Adaptieve formulieren {#adaptive-forms}
+## Adaptieve Forms {#adaptive-forms}
 
 ![vereenvoudiging-van-authoring-forms-and-documents_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png)
 
@@ -161,30 +164,30 @@ Deze release bevat verschillende verbeteringen voor de lazy-laadfunctie:
 
 * De componenten Bestandsbijlage en Voorwaarden en Voorwaarden worden ondersteund in formulierfragmenten waarvoor het laden is uitgesteld.
 * Aangepaste formulierfragmenten waarvoor het laden is uitgeschakeld, worden ondersteund in herhaalbare deelvensters.
-* Adaptieve formulieren met uitgestelde laadfragmenten worden ondersteund in de app AEM Forms.
+* Aangepaste formulieren met uitgestelde laadfragmenten worden ondersteund in de AEM Forms-app.
 
-## Forms-Centric AEM-workflows {#forms-centric-aem-workflows}
+## Forms-Centric AEM Workflows {#forms-centric-aem-workflows}
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
-Met Forms-Centric AEM Workflows kunt u snel workflows voor verschillende taken op de OSGi-stapel maken en implementeren. U hoeft niet langer de op de JEE-stack beschikbare mogelijkheid voor Process Management te installeren, de implementatie te vereenvoudigen en de kosten van toepassingsservers en -infrastructuren te elimineren. Voor meer informatie, zie [Forms-centric werkschema&#39;s op OSGi](/help/forms/using/aem-forms-workflow.md).
+Met Forms-Centric AEM Workflows kunt u snel workflows voor verschillende taken op de OSGi-stapel maken en implementeren. U hoeft niet langer de op de JEE-stack beschikbare procesbeheerfunctionaliteit te installeren, de implementatie te vereenvoudigen en de kosten van toepassingsservers en -infrastructuren te elimineren. Voor meer informatie, zie [Forms-centric werkschema&#39;s op OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Hier volgen de verbeteringen in Forms-Centric AEM Workflows:・
 
-* De werkstroommodeleditor is beschikbaar in de Touch-gebruikersinterface. Zo kunt u de tijd die nodig is om formuliergerichte AEM-workflows te maken, verkorten.
+* De werkstroommodeleditor is beschikbaar in de Touch-gebruikersinterface. Hiermee kunt u de tijd die nodig is om formuliergerichte AEM workflows te maken, verminderen.
 * Workflowstap voor het verzenden van e-mails. U kunt de stap E-mail bijvoorbeeld gebruiken om een document met een record te verzenden wanneer een werkstroom is voltooid.
-* Workflowstap voor het gebruik van formuliergegevensmodelservices in een workflowmodel. Deze stap staat u toe om de diensten van de gegevensintegratie aan te halen zonder enige douanecode te schrijven. Bijvoorbeeld, kunt u de GET dienst aanhalen om werknemersdetails uit een gegevensbestandarchieven te verkrijgen zonder enige douanecode te schrijven.
+* Workflowstap voor het gebruik van formuliergegevensmodelservices in een workflowmodel. Deze stap staat u toe om de diensten van de gegevensintegratie aan te halen zonder enige douanecode te schrijven. Bijvoorbeeld, kunt u de dienst van de GET aanhalen om werknemersdetails uit een gegevensbestandarchieven te verkrijgen zonder enige douanecode te schrijven.
 
 ## AEM Forms App {#aem-forms-app}
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
-Met de app AEM Forms kunnen veldwerkers hun mobiele apparaten synchroniseren met een AEM Forms-server en aan hun formulieren werken. De toepassing werkt naadloos wanneer het apparaat offline is door gegevens lokaal op het apparaat op te slaan en de gegevens met de server te synchroniseren wanneer het apparaat weer online is. Zie de app [](/help/forms/using/aem-forms-app.md)AEM Forms voor meer informatie.
+Met de AEM Forms-app kunnen veldwerkers hun mobiele apparaten synchroniseren met een AEM Forms-server en aan hun formulieren werken. De toepassing werkt naadloos wanneer het apparaat offline is door gegevens lokaal op het apparaat op te slaan en de gegevens met de server te synchroniseren wanneer het apparaat weer online is. Zie de [AEM Forms-app](/help/forms/using/aem-forms-app.md)voor meer informatie.
 
-Hieronder vindt u de verbeteringen in de app AEM Forms:
+Hieronder vindt u de verbeteringen in de AEM Forms-app:
 
-* Adaptieve formulieren met uitgestelde laadfragmenten worden ondersteund in de app AEM Forms.
-* Aangepaste formulieren met formuliergegevensmodel worden ondersteund in de app AEM Forms.
+* Aangepaste formulieren met uitgestelde laadfragmenten worden ondersteund in de AEM Forms-app.
+* Aangepaste formulieren met formuliergegevensmodel worden ondersteund in de AEM Forms-app.
 
 ## Documentbeveiliging {#document-security}
 
@@ -192,10 +195,10 @@ Hieronder vindt u de verbeteringen in de app AEM Forms:
 
 Met documentbeveiliging kunt u veilig alle informatie verspreiden die u in een ondersteunde indeling hebt opgeslagen. Documentbeveiliging zorgt ervoor dat alleen geautoriseerde gebruikers uw documenten kunnen gebruiken. Hier volgen de belangrijkste wijzigingen in de documentbeveiliging:
 
-* Documentbeveiliging biedt een [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) om een document lokaal te beschermen, zonder het document naar de AEM Forms-server te verzenden. Alleen beveiligingsgegevens en beleidsdetails gaan via het netwerk naar de AEM Forms-server. AEM 6.4 Forms heeft de Portable Protection Library (PPL) geïntroduceerd in een OSGi-bundelindeling. Nu kunt u de PPL-bibliotheek rechtstreeks op een AEM Forms-server installeren en de mogelijkheden van AEM en PPL samen gebruiken.
+* Documentbeveiliging biedt een [Portable Protection Library (PPL)](/help/forms/using/document-security-offerings.md) om een document lokaal te beschermen, zonder het document naar de AEM Forms-server te verzenden. Alleen beveiligingsgegevens en beleidsgegevens gaan via het netwerk naar de AEM Forms-server. AEM 6.4 Forms heeft de Portable Protection Library (PPL) geïntroduceerd in een OSGi-bundelindeling. Nu kunt u de PPL-bibliotheek rechtstreeks op een AEM Forms-server installeren en de mogelijkheden van AEM en PPL samen gebruiken.
 * De veiligheid C++ SDK van het document en C++ bibliotheek PPL kunnen met Microsoft Visual Studio 2013 worden gecompileerd. De eerder ondersteunde versie was Microsoft Visual Studio 2010.
 
-## Ondersteunde platforms {#supported-platforms}
+## Ondersteunde Platforms {#supported-platforms}
 
 AEM Forms kan worden ingesteld met elke combinatie van ondersteunde besturingssystemen, toepassingsservers, databases, databasestuurprogramma&#39;s, JDK, LDAP-servers en e-mailservers. De belangrijkste wijzigingen in ondersteunde platforms zijn:
 
