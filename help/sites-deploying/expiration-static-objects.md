@@ -1,8 +1,8 @@
 ---
 title: Verlopen van statische objecten
 seo-title: Verlopen van statische objecten
-description: Leer hoe u AEM zo configureert dat statische objecten niet verlopen (gedurende een redelijke periode).
-seo-description: Leer hoe u AEM zo configureert dat statische objecten niet verlopen (gedurende een redelijke periode).
+description: Leer hoe u AEM zodanig configureert dat statische objecten niet verlopen (gedurende een redelijke periode).
+seo-description: Leer hoe u AEM zodanig configureert dat statische objecten niet verlopen (gedurende een redelijke periode).
 uuid: ee019a3d-4133-4d40-98ec-e0914b751fb3
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '436'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ Verlopen worden gespecificeerd door de norm van HTTP betreffende &quot;vervaldat
 >
 >Deze configuratie staat volledig los van (en werkt niet voor) de Dispatcher.
 >
->Het doel van de Dispatcher is om gegevens voor AEM in cache te plaatsen.
+>Het doel van de Dispatcher is om gegevens vóór AEM in cache te plaatsen.
 
 Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, kunnen en moeten in cache worden geplaatst. De configuratie voor de Apache HTTPD-server kan er als volgt uitzien - afhankelijk van de omgeving:
 
