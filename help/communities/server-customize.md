@@ -1,8 +1,8 @@
 ---
 title: Aanpassing op de server
 seo-title: Aanpassing op de server
-description: Server-kant aanpassen in AEM-gemeenschappen
-seo-description: Server-kant aanpassen in AEM-gemeenschappen
+description: Server-kant aanpassen in AEM Communities
+seo-description: Server-kant aanpassen in AEM Communities
 uuid: 5e9bc6bf-69dc-414c-a4bd-74a104d7bd8f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: df5416ec-5c63-481b-99ed-9e5a91df2432
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '898'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 ### Interface van SocialComponent {#socialcomponent-interface}
 
-SocialComponents zijn POJO&#39;s die een bron voor een AEM Communities-functie vertegenwoordigen. Idealiter vertegenwoordigt elke SocialComponent een specifiek resourceType met blootgestelde GETters die gegevens aan de cliënt verstrekken zodat wordt het middel nauwkeurig vertegenwoordigd. Alle bedrijfslogica en meningslogica wordt ingekapseld in SocialComponent, met inbegrip van de zittingsinformatie van de plaatsbezoeker, indien nodig.
+Sociale componenten zijn POJO&#39;s die een bron voor een AEM Communities-functie vertegenwoordigen. Idealiter vertegenwoordigt elke SocialComponent een specifiek resourceType met blootgestelde GETters die gegevens aan de cliënt verstrekken zodat wordt het middel nauwkeurig vertegenwoordigd. Alle bedrijfslogica en meningslogica wordt ingekapseld in SocialComponent, met inbegrip van de zittingsinformatie van de plaatsbezoeker, indien nodig.
 
 De interface bepaalt een basisreeks GETters die noodzakelijk zijn om een middel te vertegenwoordigen. Belangrijk, bepaalt de interface Map&lt;String, Object> getAsMap () en String toJSONString () methodes die noodzakelijk zijn om de malplaatjes van Handlebars terug te geven en GET JSON eindpunten voor middelen bloot te stellen.
 
@@ -61,13 +64,13 @@ Een SocialComponentFactoryManager is de dienst OSGi en heeft toegang tot andere 
 
 Een handgreep van de OSGi-dienst wordt verkregen door een beroep te doen op `com.adobe.cq.social.scf.SocialComponentFactoryManager`
 
-### HTTP-API - POST-aanvragen {#http-api-post-requests}
+### HTTP API - POST-aanvragen {#http-api-post-requests}
 
 #### PostOperation-klasse {#postoperation-class}
 
-De POST-eindpunten van de HTTP API zijn PostOperation-klassen die worden gedefinieerd door de `SlingPostOperation`interface (pakket `org.apache.sling.servlets.post`) te implementeren.
+De eindpunten van de HTTP API-POST zijn PostOperation-klassen die worden gedefinieerd door de `SlingPostOperation`interface (pakket `org.apache.sling.servlets.post`) te implementeren.
 
-De `PostOperation`eindpuntimplementatie wordt ingesteld `sling.post.operation`op een waarde waarop de bewerking zal reageren. Alle POST-aanvragen met een parameter:operation die op die waarde is ingesteld, worden gedelegeerd aan deze implementatieklasse.
+De `PostOperation`eindpuntimplementatie wordt ingesteld `sling.post.operation`op een waarde waarop de bewerking zal reageren. Alle verzoeken van de POST met een:parameter van de verrichting die aan die waarde wordt geplaatst zullen aan deze implementatieklasse worden gedelegeerd.
 
 De `PostOperation`activeert de instantie `SocialOperation`die de handelingen uitvoert die nodig zijn voor de bewerking.
 
@@ -110,15 +113,15 @@ Staat voor verdere wijziging van middelen toe of het aanhalen van douanegebeurte
 
 #### OperationExtension-klasse {#operationextension-class}
 
-`OperationExtension`de klassen zijn douanestukken van code die in een verrichting kunnen worden ingespoten die voor aanpassing van verrichtingen toestaat om aan bedrijfsbehoeften te voldoen. De consumenten van de component kunnen dynamisch en oplopend functionaliteit toevoegen aan de component. Met het extensie-/haakpatroon kunnen ontwikkelaars zich uitsluitend richten op de extensies zelf en is het overbodig volledige bewerkingen en componenten te kopiëren en te overschrijven.
+`OperationExtension`de klassen zijn douanestukken van code die in een verrichting kunnen worden ingespoten die voor aanpassing van verrichtingen toestaat om aan bedrijfsbehoeften te voldoen. De consumenten van de component kunnen dynamisch en oplopend functionaliteit toevoegen aan de component. Met het extensie-/haakpatroon kunnen ontwikkelaars zich uitsluitend richten op de extensies zelf. Bovendien is het overbodig om volledige bewerkingen en componenten te kopiëren en te overschrijven.
 
 ## Voorbeeldcode {#sample-code}
 
-Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) -opslagplaats. Zoek naar projecten die met of `aem-communities` of `aem-scf`.
+De code van de steekproef is beschikbaar in de bewaarplaats van [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) . Zoek naar projecten die met of `aem-communities` of `aem-scf`.
 
-## Aanbevolen werkwijzen {#best-practices}
+## Best practices voor {#best-practices}
 
-Bekijk de sectie [Codeerrichtlijnen](code-guide.md) voor diverse codeerrichtlijnen en beste praktijken voor ontwikkelaars van AEM Communities.
+Bekijk de sectie [Codeerrichtlijnen](code-guide.md) voor verschillende codeerrichtlijnen en aanbevolen procedures voor AEM Communities-ontwikkelaars.
 
 Zie ook de Leverancier van het Middel van de [Opslag (SRP) voor UGC](srp.md) om over de toegang tot van gebruiker geproduceerde inhoud te leren.
 
