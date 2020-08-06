@@ -1,6 +1,6 @@
 ---
-title: Adobe-campagne als doel instellen
-seo-title: Adobe-campagne als doel instellen
+title: Je Adobe Campaign als doelgroep instellen
+seo-title: Je Adobe Campaign als doelgroep instellen
 description: De opstellingssegmentatie omvat het creëren van segmenten, een merk, een campagne, en ervaringen.
 seo-description: De opstellingssegmentatie omvat het creëren van segmenten, een merk, een campagne, en ervaringen.
 uuid: 520cd006-0aa8-43f3-b754-efb7397bb92f
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '831'
+ht-degree: 0%
 
 ---
 
 
-# Adobe-campagne als doel instellen{#targeting-your-adobe-campaign}
+# Je Adobe Campaign als doelgroep instellen{#targeting-your-adobe-campaign}
 
-Als u de Adobe Campagne-nieuwsbrief als doel wilt instellen, moet u eerst segmentatie instellen. Deze segmentatie is alleen beschikbaar in de klassieke gebruikersinterface. Daarna kunt u doelgerichte ervaringen maken voor Adobe Campaign.
+Als u uw Adobe Campaign-nieuwsbrief als doel wilt instellen, moet u eerst segmentatie instellen. Deze is alleen beschikbaar in de klassieke gebruikersinterface. Daarna kunt u gerichte ervaringen voor Adobe Campaign maken.
 
 ## Segmentatie instellen in AEM {#setting-up-segmentation-in-aem}
 
@@ -25,7 +28,7 @@ De opstellingssegmentatie omvat het creëren van segmenten, een merk, een campag
 
 >[!NOTE]
 >
->Segment-id moet worden toegewezen aan de id aan de zijde Adobe Campagne.
+>Segment-id moet worden toegewezen aan de segment aan de Adobe Campaign-zijde.
 
 ### Segmenten maken {#creating-segments}
 
@@ -36,7 +39,7 @@ Segmenten maken:
 1. Selecteer de gemaakte pagina in de structuurweergave aan de linkerkant.
 1. Maak een segment, bijvoorbeeld voor mannelijke gebruikers, door een nieuwe pagina te maken onder het segment dat u met de naam Mannelijk hebt gemaakt en selecteer de sjabloon **Segment (Adobe Campaign)** .
 1. Open de gemaakte segmentpagina en sleep een **segment-id** van de assistent naar de pagina.
-1. Dubbelklik op de eigenschap, voer de id in die in dit geval wordt weergegeven, het mannelijke segment dat is gedefinieerd in Adobe Campaign (bijvoorbeeld **MALE** ) en klik op **OK**. Het volgende bericht moet worden weergegeven: `targetData.segmentCode == "MALE"`
+1. Dubbelklik op het kenmerk, voer in dit geval de id in die staat, het mannelijke segment dat in Adobe Campaign is gedefinieerd (bijvoorbeeld **MALE** ) en klik op **OK**. Het volgende bericht moet worden weergegeven: `targetData.segmentCode == "MALE"`
 1. Herhaal de stappen voor een ander segment, bijvoorbeeld een segment dat zich richt op vrouwelijke gebruikers.
 
 ### Een merk maken {#creating-a-brand}
@@ -61,7 +64,7 @@ Zo creëert u ervaringen voor segmenten:
 1. Maak ervaringen voor uw segmenten door te klikken op Pagina **** maken en een titel voor uw pagina in te voeren, bijvoorbeeld Mannelijk als u een ervaring voor het Mannelijke segment maakt, en de sjabloon **Ervaring** te selecteren.
 1. Open de pagina voor het maken van ervaring.
 1. Klik op **Bewerken** en klik vervolgens onder Segmenten op Item **** toevoegen.
-1. Voer bijvoorbeeld het pad naar het mannelijke segment in `/etc/segmentation/ac-segments/male` en klik op **OK**. Het volgende bericht moet worden weergegeven: De *ervaring is gericht op: Mannelijk*
+1. Voer bijvoorbeeld het pad naar het mannelijke segment in `/etc/segmentation/ac-segments/male` en klik op **OK**. Het volgende bericht moet worden weergegeven: *De ervaring is gericht op: Mannelijk*
 1. Herhaal de vorige stappen om een ervaring voor alle segmenten, bijvoorbeeld het vrouwelijke doel tot stand te brengen.
 
 ## Een nieuwsbrief met doelinhoud maken {#creating-a-newsletter-with-targeted-content}
@@ -72,7 +75,7 @@ U kunt de nieuwsbrief met gerichte inhoud in zowel aanraking-toegelaten als klas
 
 Een nieuwsbrief met doelinhoud maken:
 
-1. Een nieuwsbrief met doelinhoud maken: Klik onder E-mailcampagnes in Geometrixx buiten, klik of tik op **Maken** > **Pagina** en selecteer een van de sjablonen voor Adobe Campagne Mail.
+1. Een nieuwsbrief met doelinhoud maken: Klik onder E-mailcampagnes in Geometrixx Outdoors op **Maken** > **Pagina** en selecteer een van de Adobe Campaign Mail-sjablonen.
 
    >[!NOTE]
    >
@@ -86,7 +89,7 @@ Een nieuwsbrief met doelinhoud maken:
 
    >[!NOTE]
    >
-   >Standaard gebruiken de e-mailvoorbeelden die bij AEM worden geleverd Adobe Campaign als de doelengine. Voor aangepaste nieuwsbrieven moet u mogelijk Adobe Campaign selecteren als de doelengine. Tik of klik op + wanneer u een doelwit voor de nieuwe activiteit opgeeft, typ of klik op de werkbalk en selecteer **Adobe Campagne** als de doelengine.
+   >Standaard gebruiken de e-mailvoorbeelden die bij AEM worden geleverd Adobe Campaign als de doelengine. Voor aangepaste nieuwsbrieven moet u wellicht Adobe Campaign selecteren als de doelengine. Tik of klik op + wanneer u een doel instelt op de werkbalk, voer een titel in voor de nieuwe activiteit en selecteer **Adobe Campaign** als de doelengine.
 
 1. Klik op **Standaard** en vervolgens op de component Tekst en personalisatie die u hebt toegevoegd en u ziet de opsomming met een pijl erin. Klik op het pictogram om deze component als doel in te stellen.
 
@@ -94,17 +97,17 @@ Een nieuwsbrief met doelinhoud maken:
 
 1. Navigeer naar een ander segment (Mannelijk) en klik op Aanbieding **** toevoegen en klik op het plusteken +. Bewerk vervolgens het voorstel.
 1. Navigeer naar een ander segment (Vrouwen) en klik op Aanbieding **** toevoegen en het plusteken +. Bewerk dit voorstel vervolgens.
-1. Klik op **Volgende** om Toewijzing te bekijken en klik vervolgens op **Volgende** om de instellingen weer te geven die niet van toepassing zijn op Adobe Campagne. Klik vervolgens op **Opslaan**.
+1. Klik op **Volgende** om Toewijzing te bekijken en klik vervolgens op **Volgende** om de instellingen weer te geven die niet van toepassing zijn op Adobe Campaign. Klik vervolgens op **Opslaan**.
 
-   AEM genereert automatisch de juiste doelcode voor Adobe Campaign wanneer de inhoud wordt gebruikt in een levering in Adobe Campaign
+   AEM genereert automatisch de juiste doelcode voor Adobe Campaign wanneer de inhoud wordt gebruikt in een levering binnen Adobe Campaign
 
-1. Maak in Adobe Campaign uw levering - selecteer **E-maillevering met AEM-inhoud** en selecteer de lokale AEM-account, al naar gelang wat van toepassing is, en bevestig uw wijzigingen.
+1. Maak in Adobe Campaign uw levering - selecteer **E-maillevering met AEM inhoud** en selecteer de lokale AEM-account, al naar gelang wat van toepassing is, en bevestig uw wijzigingen.
 
-   In de HTML-weergave staan de verschillende ervaringen van doelcomponenten in de Adobe-campagne voor code.
+   In de HTML-weergave staan de verschillende ervaringen van doelcomponenten in Adobe Campaign-code voor doelcomponenten.
 
    ![chlimage_1-166](assets/chlimage_1-166.png)
 
    >[!NOTE]
    >
-   >Als u de segmenten ook instelt in Adobe Campaign, kunt u door op **Voorvertoning** te klikken de ervaringen voor elk segment zien.
+   >Als u de segmenten ook instelt in Adobe Campaign en u op **Voorvertoning** klikt, ziet u de ervaringen voor elk segment.
 
