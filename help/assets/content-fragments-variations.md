@@ -22,14 +22,14 @@ ht-degree: 10%
 
 >[!CAUTION]
 >
->Voor sommige functies voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](../release-notes/sp-release-notes.md)vereist.
+>Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](../release-notes/sp-release-notes.md)vereist.
 
-[Variaties](content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van inhoudsfragmenten, omdat u hiermee kopieën van de basisinhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s.
+[Variaties](content-fragments.md#constituent-parts-of-a-content-fragment) zijn een belangrijk kenmerk van inhoudsfragmenten, omdat u hiermee kopieën van de master inhoud kunt maken en bewerken voor gebruik op specifieke kanalen en/of scenario&#39;s.
 
 Op het tabblad **Variaties** kunt u:
 
 * [De inhoud](#authoring-your-content) van het fragment invoeren
-* [Variaties](#managing-variations) van de **basisinhoud** maken en beheren
+* [Variaties](#managing-variations) van de **Master** inhoud maken en beheren
 
 Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitgegeven; bijvoorbeeld:
 
@@ -41,15 +41,15 @@ Voer een reeks andere acties uit afhankelijk van het gegevenstype dat wordt uitg
 * [Belangrijke statistieken](#viewing-key-statistics) weergeven (over tekst met meerdere regels)
 * [Tekst samenvatten](#summarizing-text)
 
-* [Variaties synchroniseren met stramieninhoud](#synchronizing-with-master)
+* [Variaties synchroniseren met Master inhoud](#synchronizing-with-master)
 
 >[!CAUTION]
 >
->Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent voor opnieuw bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
+>Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
 ## Inhoud ontwerpen {#authoring-your-content}
 
-Wanneer u het inhoudsfragment opent voor bewerking, is het tabblad **Variaties** standaard geopend. Hier kunt u de inhoud ontwerpen, voor stramien of variaties die u hebt. U kunt:
+Wanneer u het inhoudsfragment opent voor bewerking, is het tabblad **Variaties** standaard geopend. Hier kunt u de inhoud ontwerpen, voor Master of andere variaties. U kunt:
 
 * direct wijzigingen aanbrengen op het tabblad **Variaties**
 * Open de [volledige-schermeditor](#full-screen-editor) voor:
@@ -90,7 +90,7 @@ De volgende acties zijn ook beschikbaar (voor alle [indelingen](#formats)) wanne
 * Selecteer de [indeling](#formats) ([RTF](#rich-text), [Onbewerkte tekst](#plain-text), [Markering](#markdown))
 * [Tekststatistieken tonen](#viewing-key-statistics)
 * [Inhoud uploaden](#uploading-content)
-* [Synchroniseren met stramien](#synchronizing-with-master) (wanneer u een variatie bewerkt)
+* [Synchroniseren met Master](#synchronizing-with-master) (bij het bewerken van een variatie)
 * [Tekst samenvatten](#summarizing-text)
 * [Uw tekst notities](content-fragments-variations.md#annotating-a-content-fragment) aanbrengen
 
@@ -199,6 +199,7 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 >* [Duits (de) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
 >* [Italiaans (it) van softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
 >* [Spaans (es) van Software Distribution](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-es)
+
 >
 
 
@@ -206,7 +207,7 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
 1. Selecteer **[!UICONTROL Master]** of de gewenste variatie.
 1. Open de editor voor het volledige scherm.
 
-1. Selecteer een optie **[!UICONTROL Summarize text]** op de werkbalk.
+1. Select **[!UICONTROL Summarize text]** from the toolbar.
 
    ![cf-17](assets/cf-17.png)
 
@@ -216,6 +217,7 @@ Samenvattende tekst is ontworpen om gebruikers te helpen de lengte van hun tekst
    * Alle zinnen die moeten worden verwijderd, worden rood gemarkeerd met doorhaling.
    * Klik op een gemarkeerde zin om deze in de samengevatte inhoud te houden.
    * Klik op een niet-gemarkeerde zin om deze te verwijderen.
+
    ![cfm-6420-23](assets/cfm-6420-23.png)
 
 1. Selecteer deze optie **[!UICONTROL Summarize]** om de wijzigingen te bevestigen.
@@ -277,6 +279,7 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. U ku
 
    * navigeren naar het vereiste element in DAM
    * zoeken naar de middelen in DAM
+
    Selecteer het gewenste element door op de miniatuur te klikken.
 
 1. Use **[!UICONTROL Select]** to add the asset to the paragraph system of your content fragment at the current location.
@@ -293,7 +296,7 @@ Ze worden zonder opmaak toegevoegd aan de alineasequentie van het fragment. U ku
 
 ### Een variatie maken {#creating-a-variation}
 
-Met behulp van variaties kunt u de inhoud van het **stramien** afstemmen op het doel (indien nodig).
+Met behulp van variaties kunt u de **Master** inhoud nemen en deze afhankelijk van het doel variëren (indien nodig).
 
 Een nieuwe variatie maken:
 
@@ -305,7 +308,7 @@ Een nieuwe variatie maken:
 
    >[!NOTE]
    >
-   >Wanneer u een nieuwe variant maakt, wordt deze altijd gekopieerd naar het **stramien** , niet naar de variant die momenteel is geopend.
+   >Wanneer u een nieuwe variant maakt, wordt deze altijd **Master** en niet gekopieerd.
 
 ### Een variatie bewerken {#editing-a-variation}
 
@@ -344,13 +347,13 @@ Een bestaande wijziging verwijderen:
 
 >[!NOTE]
 >
->U kunt **stramien** niet verwijderen.
+>U kunt **Master** niet verwijderen.
 
-### Synchroniseren met stramien {#synchronizing-with-master}
+### Synchroniseren met Master {#synchronizing-with-master}
 
-**Stramien** maken integraal deel uit van een inhoudsfragment en bevatten per definitie de hoofdkopie van de inhoud, terwijl de variaties de afzonderlijke bijgewerkte en op maat gemaakte versies van die inhoud bevatten. Wanneer Master wordt bijgewerkt, is het mogelijk dat deze wijzigingen ook relevant zijn voor de variaties en daarom aan hen moeten worden doorgegeven.
+**Master** is een integraal onderdeel van een inhoudsfragment en bevat per definitie de master kopie van de inhoud, terwijl de afzonderlijke bijgewerkte en op maat gemaakte versies van die inhoud behouden blijven. Wanneer Master wordt bijgewerkt, is het mogelijk dat deze wijzigingen ook relevant zijn voor de variaties en daarom aan hen moeten worden doorgegeven.
 
-Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchroniseren van het huidige element van de variatie met stramien. Op deze manier kunt u automatisch wijzigingen kopiëren die in het stramien zijn aangebracht naar de gewenste variatie.
+Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchroniseren van het huidige element van de variatie met Master. Op deze manier kunt u automatisch wijzigingen kopiëren die u hebt aangebracht in de Master variatie.
 
 >[!CAUTION]
 >
@@ -362,16 +365,17 @@ Wanneer u een variatie bewerkt, hebt u toegang tot de handeling voor het synchro
 >
 >Het overbrengen van wijzigingen *van een variatie naar **master ***is niet beschikbaar als optie.
 
-1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat het **stramien** is bewerkt.
+1. Open het inhoudsfragment in de fragmenteditor. Zorg ervoor dat het **Master** is bewerkt.
 2. Selecteer een specifieke variant en kies vervolgens de gewenste synchronisatiehandeling uit:
 
-   * de keuzelijst **Handelingen** - Huidig element **synchroniseren met stramien**
-   * de werkbalk van de volledige schermeditor - **Synchroniseren met stramien**
+   * de keuzelijst **Handelingen** - Huidig element **synchroniseren met master**
+   * de werkbalk van de volledige schermeditor - **Synchroniseren met master**
 
-3. Stramien en variatie worden naast elkaar weergegeven:
+3. Master en de variatie wordt naast elkaar weergegeven:
 
    * groen geeft de inhoud aan die is toegevoegd (aan de variatie)
    * rood geeft aan dat inhoud is verwijderd (uit de variatie)
+
    ![cfm-6420-27](assets/cfm-6420-27.png)
 
 4. Selecteer deze optie **[!UICONTROL Synchronize]**, de variatie wordt bijgewerkt en weergegeven.
