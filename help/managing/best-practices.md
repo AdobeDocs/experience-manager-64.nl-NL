@@ -1,8 +1,8 @@
 ---
 title: Projecten beheren - Checklist voor aanbevolen procedures
 seo-title: Projecten beheren - Checklist voor aanbevolen procedures
-description: 'Het beheren van een project om de Manager van de Ervaring van Adobe (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status. '
-seo-description: 'Het beheren van een project om de Manager van de Ervaring van Adobe (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status. '
+description: 'Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status. '
+seo-description: 'Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip. De controlelijsten van het Project zijn voorgenomen als reeks beste praktijken voor projectlevering. Ze begeleiden u door alle fasen van de levenscyclus van het project en zorgen voor controle op hoog niveau van uw huidige status. '
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
@@ -11,13 +11,16 @@ topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
 source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+workflow-type: tm+mt
+source-wordcount: '3313'
+ht-degree: 0%
 
 ---
 
 
 # Projecten beheren - Checklist voor aanbevolen procedures{#managing-projects-best-practices-checklist}
 
-Het beheren van een project om de Manager van de Ervaring van Adobe (AEM) uit te voeren vereist planning en begrip om u zich van de kwesties en (verwante) besluiten bewust te zijn die u (zowel vóór als terwijl het uitvoeren van uw project) moet maken.
+Het beheren van een project om Adobe Experience Manager (AEM) uit te voeren vereist planning en begrip om u bewust te zijn van de kwesties en (verwante) besluiten die u (zowel vóór als tijdens het uitvoeren van uw project) moet maken.
 
 Om u te helpen, bestaan de beste praktijken uit:
 
@@ -194,6 +197,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
    * Hoe zij met elkaar en met gebruikers zullen in wisselwerking staan.
    * De gegevens die door toepassingen moeten worden verbruikt en geproduceerd, in plaats van hun interne structuur.
+
    De definities moeten betrekking hebben op:
 
    * Basiscodestructuur voor het project
@@ -225,7 +229,7 @@ De planning van de ontwikkeling is zeer belangrijk om ervoor te zorgen dat uw pr
 
 * **Ervaar ontwerp**
 
-   De ervaring van het Ontwerp (XD) impliceert het ontwerpen van de gebruikerservaring voor uw oplossing.
+   Het Ontwerp van de ervaring (XD) impliceert het ontwerpen van de gebruikerservaring voor uw oplossing.
 
    De gebruikerservaring moet worden geanalyseerd en ontwikkeld voor zowel uw auteurs als de eindgebruikers van uw website.
 
@@ -251,6 +255,7 @@ Op een vergelijkbare basis moeten de bewerkingen correct worden gepland om ervoo
    * Definitie van het gebruik van bevoegdheden die van invloed zijn op de publicatieomgeving; bijvoorbeeld: `replicate`
    * Voor gebruikers met minimale bevoegdheden moeten workflows worden gedefinieerd
    * Gebruikers in de `editor` groep mogen geen `admin` rechten hebben en mogen geen deel uitmaken van de `administrators` groep
+
    Zie [Gebruikersbeheer en -beveiliging](/help/sites-administering/security.md)voor meer informatie.
 
 * **Toezicht en onderhoud**
@@ -259,6 +264,7 @@ Op een vergelijkbare basis moeten de bewerkingen correct worden gepland om ervoo
 
    * Wat moet er worden gecontroleerd?
    * onderhoudstaken; zowel regelmatig als in bijzondere gevallen
+
    Zie ook [Controle en Onderhoud](/help/sites-deploying/monitoring-and-maintaining.md) voor meer informatie.
 
 * **Migratie**
@@ -287,7 +293,7 @@ Ontwikkeling is een cruciale fase die meer vereist dan alleen codering.
          * een instrument voor het beheer van bouwwerken; zoals Maven
          * een instrument voor continue integratie; zoals Jenkins
          * een instrument voor versiebeheer; zoals GIT/SVN
-         * een manager van de gegevensopslagplaats voor bouwwerken; zoals Archiva/Nexus
+         * een beheerder van een constructiegegevensopslagplaats; zoals Archiva/Nexus
    * Integratie/afhankelijkheden van software van derden
    * [Integratie/afhankelijkheid van oplossingen](/help/sites-administering/integration.md)
    * Implementatiecadade
@@ -358,6 +364,7 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze aan strenge tests worden on
 
    * De oplossing voldoet aan de vereisten van de gebruiker/klant
    * De klant/gebruikers accepteren de oplossing (functie, ontwerp en prestaties)
+
    Er zou een geformaliseerde controlelijst voor klantenoverdracht moeten zijn; ideaal geautomatiseerd en elke avond tegen een momentopname. De resultaten moeten naar de projectmanager en het ontwikkelingsteam worden verzonden
 
 * **Prestatietests en belastingtests**
@@ -369,9 +376,10 @@ Zodra de nieuwe toepassing beschikbaar is, moet deze aan strenge tests worden on
    * [Prestatietesten](/help/sites-deploying/configuring-performance.md)
    * [Hoe te plannen en het testen in werking te stellen](/help/sites-developing/planning.md)
    * [Basisrichtsnoeren voor prestaties](/help/sites-deploying/configuring-performance.md#basic-performance-guidelines)
+
    >[!NOTE]
    >
-   >Dit proces zal moeten worden voortgezet bij normaal gebruik van AEM, maar deze eerste fasen zijn het meest cruciaal.
+   >Dit proces moet worden voortgezet bij normaal gebruik van AEM, maar deze eerste fasen zijn het meest cruciaal.
 
 ### Uitrol {#rollout}
 
@@ -475,8 +483,8 @@ De projectmanager is:
 De oplossingsarchitect:
 
 * is verantwoordelijk voor het ontwerp op hoog niveau van de oplossing en het systeem.
-* Helpt de implementatiestrategie voor AEM te bepalen. Bijvoorbeeld, of om een gegroepeerde installatie, of een koude reserve uit te voeren, of wanneer een netwerk van de inhoudslevering (CDN) nodig is.
-* Definieer ook de AEM-oplossingsarchitectuur op basis van de vereisten van de client. Dit kan het concept voor gebruikersrollen (met verwante rechten), het verband tussen malplaatjes en componenten omvatten, of wanneer om multi-plaatsbeheer te gebruiken.
+* Hiermee kunt u de implementatiestrategie voor AEM definiëren. Bijvoorbeeld, of om een gegroepeerde installatie, of een koude reserve uit te voeren, of wanneer een netwerk van de inhoudslevering (CDN) nodig is.
+* Bepaal ook de AEM oplossingsarchitectuur die op de cliëntvereisten wordt gebaseerd. Dit kan het concept voor gebruikersrollen (met verwante rechten), het verband tussen malplaatjes en componenten omvatten, of wanneer om multi-plaatsbeheer te gebruiken.
 
 ### Zakelijke analist {#business-analyst}
 
@@ -578,7 +586,7 @@ De te leveren producten worden vaak gebruikt als **Vereiste Documenten** voor of
 
 Voor beste praktijken bij het opstellen, het beheren, het ontwikkelen, of het ontwerpen, zie het volgende:
 
-* Andere beste praktijken en richtsnoeren met betrekking tot het beheer van een AEM-project:
+* Andere beste praktijken en richtsnoeren met betrekking tot het beheer van een AEM project:
    * [Richtlijnen voor hardwareaanpassing](/help/managing/hardware-sizing-guidelines.md)
    * [Enterprise DevOps](/help/managing/enterprise-devops.md)
    * [Aanbevolen werkwijzen voor SEO- en URL-beheer](/help/managing/seo-and-url-management.md)
@@ -591,9 +599,9 @@ Voor beste praktijken bij het opstellen, het beheren, het ontwikkelen, of het on
 
 ## Belangrijkste documentatiegebieden {#key-documentation-areas}
 
-* AEM-documentatie
+* Documentatie AEM
 
-   Daarnaast zijn de volgende secties van de AEM-documentatie van bijzonder belang (deze lijst is echter niet limitatief):
+   Daarnaast zijn de volgende onderdelen van AEM documentatie van bijzonder belang (deze lijst is echter niet limitatief):
 
    * [Beveiliging](/help/sites-developing/security.md)
    * [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
