@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1207'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Elke stap in het diagram is verbonden met een documentatiemiddel of een aanbevel
 
 ## Vereisten en veronderstellingen {#prerequisites-and-assumptions}
 
-De aanname is dat een prestatieprobleem wordt waargenomen op een bepaalde pagina (een AEM-console of een webpagina) en consistent kan worden gereproduceerd. Een manier om de prestaties te testen of te controleren is een voorwaarde voordat het onderzoek wordt gestart.
+De aanname is dat een prestatieprobleem wordt waargenomen op een bepaalde pagina (een AEM console of een webpagina) en consistent kan worden gereproduceerd. Een manier om de prestaties te testen of te controleren is een voorwaarde voordat het onderzoek wordt gestart.
 
 De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher, externe host of AEM) verantwoordelijk is voor het prestatieprobleem en vervolgens te bepalen welk gebied (server of netwerk) moet worden onderzocht.
 
@@ -80,8 +83,8 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   </tr> 
   <tr> 
    <td><strong>Stap 5</strong></td> 
-   <td>Probeert de Dispatcher elk verzoek te verifiëren via AEM?</td> 
-   <td>Controleer of de verzender <code>HEAD</code> aanvragen voor verificatie naar AEM verzendt voordat de in de cache opgeslagen bron wordt geleverd. U kunt dit doen door <code>HEAD</code> verzoeken in AEM te zoeken <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td> 
+   <td>Probeert de Dispatcher elk verzoek via AEM te verifiëren?</td> 
+   <td>Controleer of de verzender <code>HEAD</code> aanvragen naar AEM verzendt voor verificatie voordat de in de cache opgeslagen bron wordt geleverd. U kunt dit doen door <code>HEAD</code> verzoeken in de AEM te zoeken <code>access.log</code>. For more information, see <a href="/help/sites-deploying/configure-logging.md">Logging</a>.<br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Stap 6</strong></td> 
@@ -115,7 +118,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   </tr> 
   <tr> 
    <td><strong>Stap 12</strong></td> 
-   <td>Problemen met AEM-server oplossen</td> 
+   <td>Problemen met AEM server oplossen</td> 
    <td>Controleer de volgende substappen in het diagram voor meer informatie.</td> 
   </tr> 
   <tr> 
@@ -136,7 +139,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr> 
    <td><strong>Stap 16</strong></td> 
    <td>Profielserver</td> 
-   <td><p>Voor informatie over het profileren van hulpmiddelen kunt u met AEM gebruiken, zie <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Hulpmiddelen voor het Toezicht en het Analyseren van Prestaties</a>.<br /> </p> </td> 
+   <td><p>Voor informatie over het profileren van hulpmiddelen u met AEM kunt gebruiken, zie <a href="/help/sites-deploying/monitoring-and-maintaining.md#tools-for-monitoring-and-analyzing-performance">Hulpmiddelen voor het Toezicht en het Analyseren van Prestaties</a>.<br /> </p> </td> 
   </tr> 
   <tr> 
    <td><strong>Stap 17</strong></td> 
@@ -171,7 +174,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr> 
    <td><strong>Stappen 22 en 22.1</strong></td> 
    <td>Cacheverhouding</td> 
-   <td><a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio"> Zie De </a>cacheverhouding<br />van de verzender berekenen. <br /> </td> 
+   <td>Zie De <a href="/help/sites-deploying/configuring-performance.md#calculating-the-dispatcher-cache-ratio">cacheverhouding</a>van de verzender berekenen.<br /> <br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Stap 23</strong></td> 
@@ -231,7 +234,7 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   </tr> 
   <tr> 
    <td><strong>Stap 32</strong></td> 
-   <td>Gebruik sessiebeheer op verzendniveau om AEM-server te offloaden</td> 
+   <td>Gebruik sessiebeheer op verzendniveau om AEM server te offloaden</td> 
    <td><p><a href="https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#enabling-secure-sessions-sessionmanagement">Beveiligde sessies inschakelen</a></p> </td> 
   </tr> 
   <tr> 
@@ -271,12 +274,12 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   <tr> 
    <td><strong>Stappen 37 en 38</strong></td> 
    <td>Lazy-loading</td> 
-   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Zie de Gem-sessie over AEM-webprestaties.</a><br /> </td> 
+   <td><a href="https://docs.adobe.com/ddc/en/gems/aem-web-performance.html">Zie Gem-sessie over AEM webprestaties.</a><br /> </td> 
   </tr> 
   <tr> 
    <td><strong>Stap 39</strong></td> 
    <td>Gebruik pre-verbindt om verbindingsoverheadkosten te verminderen</td> 
-   <td>Zie de hierboven vermelde Gem-sessie. <a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> Daarnaast is er extra documentatie beschikbaar die vooraf verbinding maakt met W3c: https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
+   <td>Zie de hierboven vermelde Gem-sessie. Daarnaast is er extra documentatie beschikbaar die vooraf verbinding maakt met W3c:<a href="https://www.w3.org/TR/resource-hints/#dfn-preconnect"> https://www.w3.org/TR/resource-hints/#dfn-preconnect</a></td> 
   </tr> 
   <tr> 
    <td><strong>Stappen 40 en 41</strong><br /> </td> 
