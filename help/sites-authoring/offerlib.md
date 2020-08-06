@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 889b5ffc-3652-47d8-b576-128f3cee513a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 2%
 
 ---
 
@@ -34,7 +37,7 @@ Wanneer u een merk maakt met de console Aanbiedingen, wordt dit ook weergegeven 
 
    ![chlimage_1-306](assets/chlimage_1-306.png)
 
-1. Klik of tik op **Maken** en **maak merk**.
+1. Klik of tik op **Maken** en **maak het merk**.
 1. Selecteer de merksjabloon en klik of tik op **Volgende**.
 1. Typ een titel voor het merk zoals u deze wilt weergeven in de consoles van Aanbiedingen en Activiteiten. Typ of selecteer eventueel een of meer tags die u aan het merk wilt koppelen.
 1. Klik of tik op **Maken**.
@@ -83,7 +86,7 @@ U kunt een voorstel van een omslag in een aanbiedingsbibliotheek of van onderzoe
 
 Een voorstel verwijderen wanneer het niet meer nodig is. Wanneer u probeert om een voorstel te schrappen dat in een ervaring wordt gebruikt, wordt u ertoe aangezet om de schrapping te bevestigen. Als u bevestigt, wordt het aanbod verwijderd en wordt het uit de ervaringen verwijderd.
 
-U kunt een voorstel schrappen terwijl het bekijken van of omslaginhoud in een aanbiedingsbibliotheek of onderzoeksresultaten.
+U kunt een aanbieding verwijderen terwijl u de mapinhoud in een aanbiedingsbibliotheek of de zoekresultaten bekijkt.
 
 1. Tik of klik op het pictogram naast de aanbieding in de console Aanbiedingen en klik of tik op **Verwijderen**.
 
