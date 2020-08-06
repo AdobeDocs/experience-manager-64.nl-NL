@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: cb232931-60b7-4956-bc77-10636c19325e
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '497'
+ht-degree: 3%
 
 ---
 
@@ -35,7 +38,7 @@ Als het portaal de sjabloonnaam Letter heeft, kan de URL\
 
 >[!NOTE]
 >
->Het roepen op een dergelijke manier is niet veilig aangezien de noodzakelijke parameters als GET verzoek worden overgegaan, door het zelfde (duidelijk zichtbare) in URL bloot te stellen.
+>Op deze manier aanroepen is niet veilig omdat de noodzakelijke parameters als een verzoek van de GET worden doorgegeven, door het zelfde (duidelijk zichtbare) in URL toegankelijk te maken.
 
 >[!NOTE]
 >
@@ -43,7 +46,7 @@ Als het portaal de sjabloonnaam Letter heeft, kan de URL\
 
 ## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
 
-Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om eenvoudig URL te raken bij `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST- verzoek te roepen (die hen voor de eindgebruiker verbergen). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om eenvoudig URL te raken bij `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST te roepen verzoek (die hen voor het eind verbergen). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 
