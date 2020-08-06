@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: a09e2c83-083d-427a-8336-0567e00c5712
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '342'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ In de interface Correspondentie maken geven gebruikers van agents een voorverton
 
 Om ongeoorloofd gebruik van deze gegevens te voorkomen, kunnen organisaties een watermerk aan de voorproefPDF opleggen. Het standaardwatermerk is &quot;VOORVERTONING&quot;, dat in de PDF wordt weergegeven.
 
-Als u het watermerk wilt inschakelen in de voorbeeld-PDF, selecteert u de optie Watermerk **[!UICONTROL toepassen tijdens voorvertoning in]** Correspondentiebeheerconfiguraties **[!UICONTROL bij]** `https://[server]:[port]/system/console/configMgr`.
+Als u het watermerk wilt inschakelen in de voorbeeld-PDF, selecteert u de optie **[!UICONTROL Apply Watermark]** Tijdens voorvertoning in **[!UICONTROL Correspondence Management Configurations]** bij `https://[server]:[port]/system/console/configMgr`.
 
 ![default-watermark](assets/default-watermark.png)
 
@@ -31,7 +34,7 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
 ## Het watermerk aanpassen in de PDF-voorvertoning in de gebruikersinterface Correspondentie maken {#customizewatermark-}
 
 1. Ga naar Beheerder `https://[server]:[port]/[ContextPath]/crx/de` en meld u aan.
-1. Maak in de map apps een map met de naam **[!UICONTROL previewwatermark]** met een pad/structuur die lijkt op de map met het voorvertoningswatermerk in de map libs:
+1. Maak in de map apps een map met de naam pad/structuur, vergelijkbaar met de map met het voorvertoningswatermerk in de map libs: **[!UICONTROL previewwatermark]**
 
    1. Klik met de rechtermuisknop op de map **previewwatermark **bij het volgende pad en selecteer **Overlayknooppunt**:
 
@@ -39,11 +42,11 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/configFiles/previewwatermark
+      **Pad:** /libs/fd/cm/configFiles/previewwatermark
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
       >[!NOTE]
       >
@@ -54,9 +57,9 @@ U kunt de volgende stappen gebruiken om de tekst en de vormgeving van het waterm
       >* Een functiepakket installeren
 
 
-   1. Klik op **OK** en vervolgens op Alles **** opslaan. De **[!UICONTROL map met het voorvertoningswatermerk]** wordt gemaakt in het opgegeven pad.
+   1. Klik op **OK** en vervolgens op Alles **** opslaan. De **[!UICONTROL previewwatermark]** map wordt gemaakt in het opgegeven pad.
 
-1. Kopieer en plak het ddx-bestand vanuit de map &quot;/libs/fd/cm/configFiles/previewwatermark&quot; naar de map &quot;/apps/fd/cm/configFiles/previewwatermark&quot; en klik op Alles **** opslaan.
+1. Kopieer en plak het ddx-bestand vanuit de map &quot;/libs/fd/cm/configFiles/previewwatermark&quot; naar de map &quot;/apps/fd/cm/configFiles/previewwatermark&quot; en klik op **[!UICONTROL Save All]**.
 1. Breng de gewenste wijzigingen aan in het ddx-bestand onder /apps/fd/cm/configFiles/previewwatermark/.
 
    ```
