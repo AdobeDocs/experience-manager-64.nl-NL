@@ -1,8 +1,8 @@
 ---
 title: Componenten voor inhoudsfragmenten
 seo-title: Componenten voor inhoudsfragmenten
-description: AEM-inhoudsfragmenten worden gemaakt en beheerd als pagina-onafhankelijke elementen
-seo-description: AEM-inhoudsfragmenten worden gemaakt en beheerd als pagina-onafhankelijke elementen
+description: AEM inhoudsfragmenten worden gemaakt en beheerd als pagina-onafhankelijke elementen
+seo-description: AEM inhoudsfragmenten worden gemaakt en beheerd als pagina-onafhankelijke elementen
 uuid: 289ed9cb-9531-43a9-b0d8-a3499e2e9ee5
 contentOwner: Alison Heimoz
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: 76b63c7c-f7ea-46be-8d10-6c1a30af2e2b
 pagetitle: Components for Content Fragments
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '946'
+ht-degree: 1%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 >[!CAUTION]
 >
->Voor sommige functies voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)vereist.
+>Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md)vereist.
 
 ## Componenten voor het ontwerpen van fragmenten {#components-for-fragment-authoring}
 
@@ -38,11 +41,11 @@ Zie Beheer-API voor [inhoudsfragmenten - Client-Side](/help/sites-developing/cus
 >
 >In deze sectie wordt de oorspronkelijke component beschreven die is geleverd voor gebruik met inhoudsfragmenten (**inhoudsfragment** in de groep **Algemeen** ).
 
-Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina](/help/sites-authoring/content-fragments.md)&#39;s. U kunt ook een bestaand contentfragmentelement gebruiken door het van de elementenbrowser naar de pagina [te](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) slepen (zoals bij andere elementen, zoals de basiscomponentafbeelding). De inhoudsfragmentcomponent die buiten de box valt, geeft slechts één [element](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) van het inhoudsfragment waarnaar wordt verwezen weer. In het dialoogvenster met componenten kunt u het [element, de variatie en het bereik van fragmentalinea](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) &#39;s definiëren die u op de pagina wilt weergeven.
+Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments.md). U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. [Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina](/help/sites-authoring/content-fragments.md)&#39;s. U kunt ook een bestaand contentfragmentelement gebruiken door het van de elementenbrowser naar de pagina [te](/help/sites-authoring/content-fragments.md#adding-a-content-fragment-to-your-page) slepen (zoals bij andere elementen, zoals de basiscomponentafbeelding). De inhoudsfragmentcomponent die buiten de box valt, geeft slechts één [element](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) van het inhoudsfragment waarnaar wordt verwezen weer. In het dialoogvenster met componenten kunt u het [element, de variatie en het bereik van fragmentalinea](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) &#39;s definiëren die u op de pagina wilt weergeven.
 
 >[!NOTE]
 >
->Deze component van het Fragment van de Inhoud werd geïntroduceerd in AEM 6.2 als verbeterde versie van de component van het Artikel, die is afgekeurd.
+>Deze component Content Fragment is in AEM 6.2 geïntroduceerd als een verbeterde versie van de component Article, die is vervangen.
 
 >[!NOTE]
 >
@@ -93,7 +96,7 @@ Als de alineabstructuur van dit exemplaar verandert (door de variatie, het eleme
 
 * Is zo gevormd dat slechts de eerste paragraaf wordt getoond:
 
-   * De inhoud in-tussen zal niet worden getoond (tweede parsys wordt niet meer teruggegeven toe te schrijven aan de nieuwe configuratie).
+   * De inhoud tussen zal niet worden getoond (tweede parsys wordt niet meer teruggegeven toe te schrijven aan de nieuwe configuratie).
 
 ### De component Inhoudsfragment aanpassen {#customizing-the-content-fragment-component}
 
