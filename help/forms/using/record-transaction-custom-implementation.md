@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 0d961630-573b-4c8e-902f-996f1d1265b6
 translation-type: tm+mt
 source-git-commit: 0fb4d181b700e223becfee8e3e68a84d6f964c1d
+workflow-type: tm+mt
+source-wordcount: '236'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +21,13 @@ source-git-commit: 0fb4d181b700e223becfee8e3e68a84d6f964c1d
 
 Gebruik de API TransactionRecorder om handelingen op te nemen die niet automatisch als transacties worden beschouwd
 
-U kunt een aangepaste code gebruiken om een PDF-formulier te verzenden, om een voorbeeld-URL voor de gebruikersinterface van de agent te verzenden naar eindgebruikers voor een interactieve communicatie of om een formulier te verzenden met behulp van aangepaste methoden in plaats van verzendmethoden te gebruiken die bij AEM Forms worden geleverd. Alle eerder vermelde handelingen en aangepaste implementaties van API&#39;s van AEM Forms worden niet als transacties beschouwd. AEM Forms verstrekt API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke acties als transacties te registreren.
+You can use a custom code to submit a PDF Form, to send Agent UI preview URL to end users to preview an interactive communication, or to submit a form using custom methods instead of using submit methods provided with AEM Forms. Alle eerder genoemde acties en aangepaste implementaties van AEM Forms API&#39;s worden niet als transacties beschouwd. AEM Forms biedt een API, [TransactionRecorder](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/aem/transaction/core/ITransactionRecorder.html), om dergelijke handelingen op te nemen als transacties.
 
 Om een transactie te registreren, schrijf het [standaardsling servlet](https://helpx.adobe.com/experience-manager/using/custom-sling-servlets.html) en vraag servlet van een cliënt om een transactie te registreren. U kunt servlet roepen gebruikend AJAX of een andere standaardmethode.
 
 ## Voorbeeld van code op de server {#sample-server-sided-code}
 
-U kunt de onderstaande voorbeeldcode gebruiken om de TransactionRecorder API van een klasse JAVA in werking te stellen gebruikend een douaneOSGi bundel.
+U kunt de onderstaande voorbeeldcode gebruiken om de API TransactionRecorder uit te voeren vanuit een JAVA-klasse met behulp van een aangepaste OSGi-bundel.
 
 ```java
 import com.adobe.aem.transaction.core.ITransactionRecorder;
