@@ -1,8 +1,8 @@
 ---
 title: We.Gov-referentiesite doorloopt
 seo-title: We.Gov-referentiesite doorloopt
-description: 'Raadpleeg de analyse van de website Web.Gov om te begrijpen hoe AEM Forms overheden helpt bij het beheren van individuele informatie. '
-seo-description: 'Raadpleeg de analyse van de website Web.Gov om te begrijpen hoe AEM Forms overheden helpt bij het beheren van individuele informatie. '
+description: 'Raadpleeg de analyse van de website van We.Gov om te begrijpen hoe AEM Forms overheden helpt bij het beheren van individuele informatie. '
+seo-description: 'Raadpleeg de analyse van de website van We.Gov om te begrijpen hoe AEM Forms overheden helpt bij het beheren van individuele informatie. '
 uuid: 348f9067-28b5-47ed-8e83-0dbadeff0854
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: introduction
 discoiquuid: 25a6d702-9995-4c63-99d8-3e5d710bb0c4
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '2654'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
 
 ## Voorwaarde {#pre-requisite}
 
-Stel uw Web.Gov-verwijzingssite in zoals wordt beschreven in de referentiesites voor AEM-formulieren [instellen en configureren](/help/forms/using/setup-reference-sites.md).
+Stel uw Web.Gov-referentiesite in zoals beschreven in de [AEM Forms-referentiesites](/help/forms/using/setup-reference-sites.md)instellen en configureren.
 
 ## Referentiescenario {#reference-site-scenario}
 
@@ -54,9 +57,9 @@ Het scenario omvat de volgende personen:
 
 ## Sarah start haar toelatingscontrole {#sarah-initiates-her-eligibility-check}
 
-Een aanvrager kan nagaan of hij in aanmerking komt voor kinderbijslag. Op de site kunnen gebruikers vragen beantwoorden, zodat ze kunnen bepalen of hun toepassing in aanmerking komt voor een uitkering. Sarah, een adoptieouder, is een kandidaat-aanvrager. De subsidiabiliteitsvorm is een deel van de Aanvraag voor de diensten van de Steun van het Kind van de plaats Web.Gov. Om haar geschiktheid te controleren, klikt Sarah op **[!UICONTROL Kinderondersteuning]** op de website We.Gov. Op de pagina Onderliggende ondersteuning klikt Sarah op **[!UICONTROL Uw geschiktheid]** controleren.
+Een aanvrager kan nagaan of hij in aanmerking komt voor kinderbijslag. Op de site kunnen gebruikers vragen beantwoorden, zodat ze kunnen bepalen of hun toepassing in aanmerking komt voor een uitkering. Sarah, een adoptieouder, is een kandidaat-aanvrager. De subsidiabiliteitsvorm is een deel van de Aanvraag voor de diensten van de Steun van het Kind van de plaats Web.Gov. Om haar geschiktheid te controleren, klikt Sarah **[!UICONTROL Child Support]** op de website We.Gov. Sarah klikt op de pagina Onderliggende ondersteuning **[!UICONTROL Check Your Eligibility]**.
 
-Naast de bovenstaande aanpak kan Sarah op de homepage klikken op **[!UICONTROL Aan de slag]** . Sarah is genavigeerd aan de Al pagina van Toepassingen, waar zij onder **[!UICONTROL Toepassing voor de Diensten]** van de Steun van het Kind kan klikken van toepassing is. Sarah wordt vervolgens meegenomen naar de toelatingscontrole.
+In aanvulling op de bovenstaande aanpak kan Sarah klikken **[!UICONTROL Get Started]** op de homepage. Sarah is naar de pagina Alle toepassingen gegaan, waar ze onder Toepassen kan klikken **[!UICONTROL Application for Child Support Services]**. Sarah wordt vervolgens meegenomen naar de toelatingscontrole.
 
 Op de pagina Geschiktheid voor kinderen controleren wordt Sarah een reeks vragen gesteld om te bepalen of ze in aanmerking komt voor kinderbijslag. Aan de hand van de reeks vragen wordt haar gevraagd:
 
@@ -94,24 +97,24 @@ De regels bekijken:
 
 ## Sarah start haar aanvraag voor kinderondersteuning {#sarah-starts-her-application-for-child-support}
 
-Sarah klikt op Toepassing **** starten nadat ze ervan in kennis is gesteld dat ze in aanmerking komt voor kinderopvang.\
+Sarah klikt **[!UICONTROL Start Application]** nadat ze ervan in kennis is gesteld dat ze in aanmerking komt voor kinderopvang.\
 In de Toepassing voor de pagina van de Diensten van de Steun van het Kind, verstrekt Sarah details in de volgende secties:
 
-* **[!UICONTROL Over aanvrager]**: Laat Sarah haar details in deze sectie verstrekken.
+* **[!UICONTROL About Applicant]**: Laat Sarah haar details in deze sectie verstrekken.
 
-* **[!UICONTROL Onderliggende informatie]**: Laat Sarah de informatie van het kind verstrekken, die onder de hulpdiensten wordt behandeld.
+* **[!UICONTROL Child Information]**: Laat Sarah de informatie van het kind verstrekken, die onder de hulpdiensten wordt behandeld.
 
-* **[!UICONTROL Betaling]**: Laat Sarah haar bankgegevens verstrekken waarin We.Gov maandelijkse supportcompensatie kan storten.
+* **[!UICONTROL Payment]**: Laat Sarah haar bankgegevens verstrekken waarin We.Gov maandelijkse supportcompensatie kan storten.
 
-* **[!UICONTROL Betaling]** kosten: Laat Sarah haar creditcardgegevens verstrekken om de aanvraagkosten te betalen.
+* **[!UICONTROL Fee Payment]**: Laat Sarah haar creditcardgegevens verstrekken om de aanvraagkosten te betalen.
 
-Standaard wordt Sarah naar de sectie **[!UICONTROL Over aanvrager]** geleid.
+Standaard wordt Sarah naar de **[!UICONTROL About Applicant]** sectie gebracht.
 
 ![Onderliggende supporttoepassing op bureaublad](assets/desktop.png)
 
-Sarah kan op elk gewenst moment op **[!UICONTROL Kom later]** terug en hervat met haar toepassing. Wanneer ze op **[!UICONTROL Kom later]** terug klikt, wordt haar voortgang opgeslagen als concept en krijgt ze een optie om het concept via e-mail te verzenden.
+Sarah kan op elk gewenst moment klikken **[!UICONTROL Come back later]** en hervatten met haar toepassing. Wanneer ze klikt **[!UICONTROL Come back later]**, wordt haar voortgang opgeslagen als een concept en krijgt ze een optie om het concept via e-mail te verzenden.
 
-Als ze op E-mail **** verzenden klikt, ontvangt ze een e-mail met een koppeling naar het concept van haar formulier.
+Als ze klikt **[!UICONTROL Send Email]**, ontvangt ze een e-mail met een koppeling naar het concept van haar formulier.
 
 Het onderliggende ondersteuningsformulier op de website We.Gov gebruikt adaptieve formulieren. Ze kan de koppeling in haar e-mail gebruiken en het formulier op haar mobiele apparaat invullen.
 
@@ -123,27 +126,27 @@ Het onderliggende ondersteuningsformulier op de website We.Gov gebruikt adaptiev
 
 Sarah kan details in om het even welke sectie verstrekken, maar het aanvraagrecht wordt goedgekeurd slechts nadat zij vereiste informatie in alle secties verstrekt. Een aanvraag is onvolledig zonder betaling van kosten en velden met een sterretje zijn verplicht.
 
-### <strong>Sarah geeft haar informatie</strong>{#strong-sarah-provides-her-information-strong}
+### <strong>Sarah geeft haar informatie</strong> {#strong-sarah-provides-her-information-strong}
 
-Nadat Sarah klikt de Toepassing **[!UICONTROL van het]** Begin, wordt zij genomen aan de sectie van de Informatie van de Aanvrager van de pagina van de Diensten van de Steun van het Kind. Onder Informatie van de Aanvrager, navigeert Sarah door de lusjes en verstrekt haar persoonlijke informatie voor de toepassing. Ze klikt op **[!UICONTROL Volgende]** om door de tabbladen te navigeren.
+Nadat Sarah klikt **[!UICONTROL Start Application]**, wordt zij genomen naar de sectie van de Informatie van de Aanvrager van de pagina van de Diensten van de Steun van het Kind. Onder Informatie van de Aanvrager, navigeert Sarah door de lusjes en verstrekt haar persoonlijke informatie voor de toepassing. Ze klikt **[!UICONTROL Next]** om door de tabbladen te navigeren.
 
 Onder Informatie van de aanvrager wordt haar verzocht nadere informatie te verstrekken onder de volgende tabbladen:
 
-* **[!UICONTROL Basisinformatie]**
+* **[!UICONTROL Basic Information]**
 
 Sarah geeft haar identiteitsbewijs en haar persoonlijke gegevens onder Basic Information. Sarah&#39;s persoonlijke gegevens bevatten haar naam, e-mailadres en socialezekerheidsnummer.
 
-* **[!UICONTROL Relatie]**
+* **[!UICONTROL Relationship]**
 
    In Relationship voert Sarah informatie in over haar huwelijkse staat.
 
-* **[!UICONTROL Aanvullende informatie]**
+* **[!UICONTROL Additional Information]**
 
    Onder Extra Informatie voert Sarah een ID-nummer, haar geboortedatum en het huidige adres en telefoonnummer in.
 
 ### Sarah geeft onderliggende informatie {#sarah-provides-child-information}
 
-Nadat Sarah haar persoonlijke informatie verstrekt en **[!UICONTROL Volgende]** klikt, wordt zij genomen aan de sectie van de Informatie van het Kind.
+Nadat Sarah haar persoonlijke informatie verstrekt en klikt **[!UICONTROL Next]**, wordt zij genomen aan de sectie van de Informatie van het Kind.
 
 In de sectie van de Informatie van het Kind, verstrekt zij de volgende details:
 
@@ -155,7 +158,7 @@ Sarah kiest haar alleenstaande kind, Joe, en gaat zijn naam in.
 
 ### Sarah geeft betalingsgegevens {#sarah-provides-payment-information}
 
-Nadat Sarah informatie van het geadopteerde kind (of de kinderen) verstrekt en **[!UICONTROL daarna]** klikt, wordt zij genomen aan de sectie van de Informatie **[!UICONTROL van de]** Betaling.
+Nadat Sarah informatie verstrekt over het geadopteerde kind (of de kinderen) en klikt **[!UICONTROL Next]**, wordt zij genomen naar de **[!UICONTROL Payment Information]** sectie.
 
 In het gedeelte Betalingsgegevens geeft ze de bankrekeninggegevens op waarmee ze de kinderbijslag kan ontvangen.\
 Ze voert haar 10-cijferige bankrekeningnummer in.
@@ -163,7 +166,7 @@ Ze voert haar 10-cijferige bankrekeningnummer in.
 ## Sarah betaalt de aanvraagkosten en ondertekent het formulier {#sarah-pays-the-application-fee-and-signs-the-form}
 
 Nadat Sarah akkoord gaat met de voorwaarden van de aanvraag, betaalt ze de aanvraagkosten van $25. Voor de verwerking van haar toepassing zijn aanvraagkosten verschuldigd.\
-Sarah voert haar creditcardgegevens in en klikt op Nu **[!UICONTROL betalen]**. Nadat u de kosten hebt betaald, wordt een PDF-versie van de toepassing weergegeven met een handtekeningveld.
+Sarah voert haar creditcardgegevens in en klikt **[!UICONTROL Pay Now]**. Nadat u de kosten hebt betaald, wordt een PDF-versie van de toepassing weergegeven met een handtekeningveld.
 
 ![sarah-sign-1](assets/sarah-sign-1.png)
 
@@ -171,7 +174,7 @@ Sarah kan kiezen of ze wil intypen, tekenen om te schrijven, een afbeelding van 
 
 Haar aanvraag wordt ingediend bij de website We.Gov.
 
-### <strong>Sarah ontvangt een bevestigingsbericht</strong>{#strong-sarah-receives-an-acknowledgement-email-strong}
+### <strong>Sarah ontvangt een bevestigingsbericht</strong> {#strong-sarah-receives-an-acknowledgement-email-strong}
 
 Nadat Sarah de aanvraagkosten heeft betaald, ontvangt ze een bevestigingsmail van de website We.Gov.\
 We.Gov verwerkt de aanvraag en Sarah wordt ervan op de hoogte gesteld dat ze maandelijks een vergoeding ontvangt nadat haar aanvraag is goedgekeurd.
@@ -218,7 +221,7 @@ Wanneer Sarah de toepassing voor onderliggende ondersteuning invult en verzendt,
 
 ### Zie het zelf {#see-it-yourself-2}
 
-Pagina openen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tik op de pagina op **[!UICONTROL Aanmelden]**, schakel het selectievakje **[!UICONTROL Aanmelden als representatief]** in en meld u aan bij de AEM-Postvak IN met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios. De toepassing voor onderliggende ondersteuning wordt weergegeven. Zie Formuliertoepassingen en -taken [beheren in AEM Inbox](/help/forms/using/manage-applications-inbox.md)voor informatie over het gebruik van AEM Inbox voor formuliergerichte workflowtaken.
+Pagina openen `https://<hostname***>:<PublishPort>/content/we-gov/en.html`. Tik op de pagina **[!UICONTROL Sign In]** en schakel het **[!UICONTROL Login as representative]** selectievakje in. Meld u vervolgens aan bij de AEM in het vak met behulp van grios/wachtwoord als gebruikersnaam/wachtwoord voor Gloria Rios. De toepassing voor onderliggende ondersteuning wordt weergegeven. Zie Forms-toepassingen en -taken [beheren in AEM Postvak IN](/help/forms/using/manage-applications-inbox.md)voor informatie over het gebruik van AEM Postvak IN voor op formulieren gerichte workflowtaken.
 
 ![Gloria&#39;s inbox in We.Gov](assets/gloria-inbox.png)
 
@@ -229,26 +232,26 @@ Gloria kan de aanvraag van het dashboard van de aanvraag zien, goedkeuren of afw
 Gloria, hoofd van goedkeuringen bij We.Gov, opent haar AEM inbox. Ze ziet een herzieningstaak in haar takenlijst. Zij opent en bekijkt de overzichtstaak.
 
 Ze ziet een PDF van het formulier gevuld met gegevens die Sarah heeft ingevoerd samen met de documenten die Sarah geüpload heeft.\
-Gloria kan de aanvraag goedkeuren of afwijzen. Gloria klikt echter op **[!UICONTROL Beoordeling vereist]** om de aanvraag te beoordelen.
+Gloria kan de aanvraag goedkeuren of afwijzen. Gloria klikt echter **[!UICONTROL Assessment Required]** om de aanvraag te laten beoordelen.
 
 ![gloria-send-evaluatie](assets/gloria-sends-assessment.png)
 
-De toepassing van Sarah is een startpunt in de AEM-workflow. De AEM-workflow wordt gestart wanneer het aanvraagformulier voor onderliggende ondersteuning wordt verzonden. De AEM-workflow creëert een taak voor Gloria, die in haar AEM-postvak verschijnt. Wanneer Gloria om onsite beoordeling verzoekt, wordt een nieuwe taak gecreeerd voor de gebiedsagent.
+De toepassing van Sarah is een startpunt in de AEM werkstroom. De AEM wordt gestart wanneer het aanvraagformulier voor onderliggende ondersteuning wordt verzonden. De AEM werkstroom leidt tot een taak voor Gloria, die in haar AEM inbox verschijnt. Wanneer Gloria om onsite beoordeling verzoekt, wordt een nieuwe taak gecreeerd voor de gebiedsagent.
 
 ### Zie het zelf {#see-it-yourself-3}
 
-Als de configuratie is voltooid, wordt de AEM-workflow direct gestart nadat het formulier is verzonden. Meld u aan bij de inbox met Gloria&#39; geloofsbrieven.
+Als de configuratie is voltooid, begint de AEM onmiddellijk nadat het formulier is verzonden. Meld u aan bij de inbox met Gloria&#39; geloofsbrieven.
 
-Ga naar het veld https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-gov/en.html. Tik op de pagina op **[!UICONTROL Aanmelden]** en schakel het selectievakje **[!UICONTROL Aanmelden als representatief]** in op de standaardgegevens van Gloria:
+Ga naar het veld https://&lt;***hostnaam***>:&lt;***PublishPort***>/content/we-gov/en.html. Tik op de pagina **[!UICONTROL Sign In]** en schakel het **[!UICONTROL Login as representative]** selectievakje in met de standaardgegevens van Gloria:
 
 * Gebruikersnaam: griet
-* Wachtwoord:password
+* Wachtwoord: password
 
 In haar AEM inbox, wordt de toepassing van Sarah toegevoegd als overzichtstaak. Selecteer de taak en klik op **Beoordeling vereist** om door te gaan naar de volgende stap.
 
 ### Conard krijgt de evaluatietaak {#conard-assessment-task}
 
-Wanneer Gloria op **[!UICONTROL Beoordeling vereist]** klikt, krijgt Conard de overzichtstaak in zijn AEM Inbox. De taak is de volgende stap in de AEM-workflow die in het workflowmodel is gedefinieerd. Hij ziet de herzieningstaak en opent deze.
+Wanneer Gloria klikt **[!UICONTROL Assessment Required]**, krijgt Conard de overzichtstaak in zijn AEM Inbox. De taak is de volgende stap in de AEM workflow die in het workflowmodel is gedefinieerd. Hij ziet de herzieningstaak en opent deze.
 
 Conard krijgt de beoordelingstaak van de aanvrager zoals hieronder getoond.
 
@@ -256,26 +259,26 @@ Conard krijgt de beoordelingstaak van de aanvrager zoals hieronder getoond.
 
 De beoordeling van de kindsteun is een vorm verbonden aan de taak. Hij krijgt de details van Sarah, samen met de bewijsstukken (bijgevoegd in taakomschrijving). Conard vult het beoordelingsformulier in het veld op een apparaat en dient in voor herbeoordeling.
 
-Conard verifieert alle details die Sarah heeft verstrekt, en Sarah ondertekent de beoordeling. Met AEM Forms kunt u de locatie en het tijdstempel ophalen en toevoegen aan de handtekening.
+Conard verifieert alle details die Sarah heeft verstrekt, en Sarah ondertekent de beoordeling. AEM Forms kan de locatie en het tijdstempel ophalen en toevoegen aan de handtekening.
 
 ![voorleggen voor herbeoordeling](assets/submit-for-re-evaluation.png)
 
-Conard klikt op **[!UICONTROL Verzenden voor herevaluatie]** en de AEM-workflow legt de evaluatie voor aan de organisatie We.Gov.
+Conard klikt **[!UICONTROL Submit For Reevaluation]**, en het AEM werkschema legt de beoordeling aan de organisatie Wij.Gov voor.
 
 ### Hoe werkt het {#how-it-works-4}
 
-Wanneer Gloria om beoordeling verzoekt, wordt de volgende stap in het werkschema van AEM in werking gesteld, en de beoordelingstaak wordt toegevoegd in Postvak van Conard. Conard is de werknemer persona.
+Wanneer Gloria om beoordeling verzoekt, wordt de volgende stap in AEM werkschema in werking gesteld, en de beoordelingstaak wordt toegevoegd in de Postbus van Conard. Conard is de werknemer persona.
 
 Conard bezoekt Sarah&#39;s plaats, controleert of de informatie die Sarah heeft verstrekt echt is en vult het beoordelingsformulier in. Conard kan een PDF openen van het volledige formulier dat Sarah heeft ingevuld.
 
 ### Zie het zelf {#see-it-yourself-4}
 
-Open de AEM-inbox op uw tablet en gebruik de aanmeldingsgegevens van Conard om u aan te melden.
+Open de AEM inbox op uw tablet en gebruik de referenties van Conard om u aan te melden.
 
 Conard&#39;s standaardgeloofsbrieven zijn:
 
 * Gebruikersnaam: csimms
-* Wachtwoord:password
+* Wachtwoord: password
 
 U kunt een nieuwe taak van het Verzoek van de Beoordeling zien die in inbox wordt toegevoegd. Dien de voltooide beoordeling in en ga door naar de volgende stap.
 
@@ -305,7 +308,7 @@ Open de taak om de status van de laatste actie te zien. De aanvraag goedkeuren o
 
 Nadat Gloria de aanvraag heeft goedgekeurd, ontvangt Sarah van We.Gov een e-mail met de mededeling dat haar aanvraag is goedgekeurd.
 
-De knop Document **** weergeven in de e-mail verwijst naar haar inschrijvingsgegevens. Sarah klikt op Document **[!UICONTROL weergeven.]**
+De **[!UICONTROL View Document]** knop in de e-mail verwijst naar haar inschrijvingsgegevens. Sarah kliks **[!UICONTROL View Document.]**
 
 ![goedkeurings-ingeschreven-kit-email](assets/approval-enrolment-kit-email.png)
 
@@ -331,28 +334,28 @@ U kunt ook het volgende openen om het document in uw browser te bekijken: `https
 
 ## We.Gov analyseert de prestaties van de toepassing {#we-gov-analyzes-the-performance-of-the-application}
 
-Wij.Gov, van tijd tot tijd, herziet de prestaties van hun toepassing van de de diensten van de kindsteun om het even welke kwesties te controleren die klanten zouden kunnen onder ogen zien. Zij gebruiken deze analyse om geïnformeerde besluiten over de veranderingen te nemen die in de toepassing van de diensten van de kindsteun worden vereist om de gebruikerservaring te verbeteren, het afstotingspercentage van vormen te verminderen, en daardoor omzetting te verbeteren. Ze maken gebruik van de integratie van AEM Forms met Adobe Analytics voor hun analyse. In de volgende afbeelding ziet u het dashboard voor de analysemogelijkheden.
+Wij.Gov, van tijd tot tijd, herziet de prestaties van hun toepassing van de de diensten van de kindsteun om het even welke kwesties te controleren die klanten zouden kunnen onder ogen zien. Zij gebruiken deze analyse om geïnformeerde besluiten over de veranderingen te nemen die in de toepassing van de diensten van de kindsteun worden vereist om de gebruikerservaring te verbeteren, het afstotingspercentage van vormen te verminderen, en daardoor omzetting te verbeteren. Zij maken gebruik van de integratie van AEM Forms met Adobe Analytics voor hun analyse. In de volgende afbeelding ziet u het dashboard voor de analysemogelijkheden.
 
 ![child-support-analytics-dashboard](assets/child-support-analytics-dashboard.png)
 
 ### Hoe werkt het {#how-it-works-7}
 
-De prestatiemetriek voor de de toepassingsvorm van de de hulpdiensten van het kind wordt gevolgd gebruikend de Analytics van Adobe. Zie Analyses [configureren voor formulieren en documenten](/help/forms/using/configure-analytics-forms-documents.md)voor meer informatie over het configureren van Adobe Analytics en rapporten.
+De prestatiemetriek voor de de toepassingsvorm van de de dienstentoepassing van de kindsteun wordt gevolgd gebruikend Adobe Analytics. Zie Analyses voor formulieren en documenten [configureren voor meer informatie over het configureren van Adobe Analytics en het weergeven van rapporten](/help/forms/using/configure-analytics-forms-documents.md).
 
 ### Zie het zelf {#see-it-yourself-7}
 
 Voor u om het analytische rapport te bekijken en te onderzoeken, verstrekken wij zaadgegevens voor de toepassing van de diensten van de kindsteun in de verwijzingsplaats. Alvorens u zaadgegevens gebruikt, zie Analytics [](/help/forms/using/setup-reference-sites.md#configureanalytics)vormen. Voer de volgende stappen in auteurinstantie uit om het rapport met de zaadgegevens te bekijken:
 
-1. Ga naar **[!UICONTROL Forms &amp; Documents]** UI op https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
+1. Ga naar **[!UICONTROL Forms & Documents]** UI op https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
 1. Klik om de map **Web.Gov** te openen.
-1. Selecteer het adaptieve formulier **[!UICONTROL Application for Child Support Services]** en klik vervolgens op **[!UICONTROL Analytics]** inschakelen op de werkbalk.
+1. Selecteer het aangepaste formulier en klik op **[!UICONTROL Application for Child Support Services]** **[!UICONTROL Enable Analytics]** de werkbalk.
 
-1. Selecteer het formulier opnieuw en klik op **[!UICONTROL Analyserapport]** op de werkbalk om het rapport te genereren. In eerste instantie wordt een leeg rapport weergegeven.
+1. Selecteer het formulier opnieuw en klik op **[!UICONTROL Analytics Report]** de werkbalk om het rapport te genereren. In eerste instantie wordt een leeg rapport weergegeven.
 
 Analytische rapporten genereren met zaadgegevens:
 
-1. Typ in de adresbrowser van de CRXDE-lijst: **/apps/we-gov/demo-artifacts/analyticsTestData/Child-supportservice Analytics Data**
+1. Typ in de adresbrowser van de CRXDE-lijst: **/apps/we-gov/demo-artifacts/analyticsTestData/Child support service Analytics Test Data**
 1. De zaadgegevens worden geselecteerd in de linkerzijfolderstructuur.
 1. Dubbelklik op het geselecteerde bestand om de inhoud ervan in het rechterdeelvenster te openen.
 1. Kopieer alle inhoud in het bestand met testgegevens.
