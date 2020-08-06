@@ -1,8 +1,8 @@
 ---
 title: Gebruikersbeheer
 seo-title: Gebruikersbeheer
-description: Met gebruikersbeheer kunt u SSO inschakelen tussen AEM-formuliermodules en met Netegrity SiteMinder beveiligde toepassingen door gebruik te maken van SAML. Dit document bevat meer informatie over Gebruikersbeheer.
-seo-description: Met gebruikersbeheer kunt u SSO inschakelen tussen AEM-formuliermodules en met Netegrity SiteMinder beveiligde toepassingen door gebruik te maken van SAML. Dit document bevat meer informatie over Gebruikersbeheer.
+description: Met Gebruikersbeheer kunt u SSO inschakelen tussen AEM formuliermodules en met Netegrity SiteMinder beveiligde toepassingen door SAML te gebruiken. Dit document bevat meer informatie over Gebruikersbeheer.
+seo-description: Met Gebruikersbeheer kunt u SSO inschakelen tussen AEM formuliermodules en met Netegrity SiteMinder beveiligde toepassingen door SAML te gebruiken. Dit document bevat meer informatie over Gebruikersbeheer.
 uuid: f0c8331a-d995-483d-97b7-259df53b1a1a
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
 
 # Gebruikersbeheer {#user-management}
 
-Met Gebruikersbeheer kunt u SSO (Single Sign-On) inschakelen tussen AEM-formuliermodules en toepassingen die met Netegrity SiteMinder zijn beveiligd door SAML (Security Assertion Markup Language) te gebruiken. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM-formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
+Met Gebruikersbeheer kunt u SSO (Single Sign-On) inschakelen tussen AEM formuliermodules en toepassingen die met Netegrity SiteMinder zijn beveiligd door SAML (Security Assertion Markup Language) te gebruiken. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
 Zie de [IBM DB2-database voor informatie over het verbeteren van de prestaties van de database en directorysynchronisatie voor DB2: Opdrachten uitvoeren voor normaal onderhoud](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
@@ -27,7 +30,7 @@ Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeh
 
 ## Gebruikersrechten instellen voor gebruik met Documentbeveiliging {#setting-user-privileges-for-use-with-document-security}
 
-Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM-formulieromgeving documentbeveiliging bevat, verleent u een gebruiker die de beheerder van deze gebruikers is, het recht uitgenodigde en lokale gebruikers te beheren. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie Rollen [](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)maken en configureren.)
+Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM formulieromgeving Documentbeveiliging bevat, geeft u de gebruiker het recht uitgenodigde en lokale gebruikers te beheren. Dit is de beheerder van deze gebruikers. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie Rollen [](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)maken en configureren.)
 
 Om gebruikers en groepen in geselecteerde domeinen tijdens de onderzoeken van de beleidsgebruiker te bekijken, moet een superbeheerder of beheerder van de beleidsreeks domeinen (die in Beheer van de Gebruiker worden gecreeerd) selecteren en toevoegen aan de zichtbare gebruiker en groepslijst voor elke gemaakte beleidsreeks.
 
@@ -35,11 +38,11 @@ De zichtbare gebruiker en de groepslijst zijn zichtbaar aan de coördinator van 
 
 >[!NOTE]
 >
-> Het creëren van domeinen moet worden gedaan alvorens om het even welk beleid kan worden gecreeerd.
+>Het creëren van domeinen moet worden gedaan alvorens om het even welk beleid kan worden gecreeerd.
 
 ### Zichtbare gebruikers en groepen instellen {#set-visible-users-and-groups}
 
-Nadat u de AEM-formulieromgeving hebt geïnstalleerd en geconfigureerd met Documentbeveiliging, stelt u alle relevante domeinen in Gebruikersbeheer in.
+Nadat u de AEM formulieromgeving hebt geïnstalleerd en geconfigureerd met Documentbeveiliging, stelt u alle relevante domeinen in Gebruikersbeheer in.
 
 1. Klik in de beheerconsole op Services > Documentbeveiliging > Beleid en klik vervolgens op het tabblad Beleidssets.
 1. Selecteer Globale beleidsset en klik vervolgens op het tabblad Zichtbare gebruikers en groepen.
@@ -53,5 +56,5 @@ Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen gee
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor de release van AEM-formulieren.
+>De Flex-werkruimte is verouderd voor AEM formulierrelease.
 
