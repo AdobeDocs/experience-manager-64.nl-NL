@@ -1,8 +1,8 @@
 ---
 title: Dashboards
 seo-title: Dashboards
-description: Leer nieuwe AEM-dashboards maken, configureren en ontwikkelen.
-seo-description: Leer nieuwe AEM-dashboards maken, configureren en ontwikkelen.
+description: Leer hoe u nieuwe AEM-dashboards maakt, configureert en ontwikkelt.
+seo-description: Leer hoe u nieuwe AEM-dashboards maakt, configureert en ontwikkelt.
 uuid: 3eadbba2-0ce1-41be-a9f8-e6cafa109893
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '846'
+ht-degree: 0%
 
 ---
 
 
 # Dashboards{#dashboards}
 
-Wanneer u AEM gebruikt, kunt u veel inhoud van verschillende typen beheren (bijvoorbeeld pagina&#39;s, elementen). AEM-dashboards bieden een gebruiksvriendelijke en aanpasbare manier om pagina&#39;s te definiëren waarop geconsolideerde gegevens worden weergegeven.
+Wanneer u AEM gebruikt, kunt u veel verschillende inhoudstypen beheren (zoals pagina&#39;s, elementen). AEM dashboards verstrekken een makkelijk te gebruiken en aanpasbare manier om pagina&#39;s te bepalen die geconsolideerde gegevens tonen.
 
 >[!NOTE]
 >
->AEM-dashboards worden gemaakt per gebruiker, zodat een gebruiker alleen toegang heeft tot zijn of haar eigen dashboard.
+>AEM dashboards worden gecreeerd op een per gebruikersbasis, zodat kan een gebruiker tot hun eigen dashboard slechts toegang hebben.
 >
 >
 >Nochtans, kunnen de malplaatjes [van het](#creating-a-dashboard-template) dashboard worden gebruikt om gemeenschappelijke configuratie en lay-out te delen Dashboard.
@@ -46,7 +49,7 @@ Ga als volgt te werk om een nieuw dashboard te maken:
 
 ### Een dashboard klonen {#cloning-a-dashboard}
 
-Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud vanuit verschillende weergaven te bekijken. Om u te helpen om een nieuw dashboard te maken, biedt AEM een kloonfunctie waarmee u een bestaand dashboard kunt dupliceren. Ga als volgt te werk om een dashboard te klonen:
+Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud vanuit verschillende weergaven te bekijken. AEM biedt een kloonfunctie waarmee u een bestaand dashboard kunt dupliceren, zodat u een nieuw dashboard kunt maken. Ga als volgt te werk om een dashboard te klonen:
 
 1. Klik in de sectie **Gereedschappen** op **Configuratieconsole**.
 
@@ -72,7 +75,7 @@ Mogelijk wilt u meerdere dashboards hebben om snel informatie over uw inhoud van
 
 ### Overzicht {#overview}
 
-Dashboardcomponenten zijn niets meer dan gewone [AEM-componenten](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
+De componenten van het dashboard zijn niets meer dan regelmatige [AEM componenten](/help/sites-developing/developing-components-samples.md). In deze sectie worden de rapportonderdelen beschreven die bij AEM worden geleverd.
 
 ### Webanalytische rapportagecomponenten {#web-analytics-reporting-components}
 
@@ -82,7 +85,7 @@ Elke rapportcomponent bevat ten minste drie tabbladen:
 
 * **Standaard**: bevat de hoofdconfiguratie.
 
-* **** Rapport: bevat specifiek de configuratie van elk rapport.
+* **Rapport:** bevat specifiek de configuratie van elk rapport.
 * **Stijl**: bevat opmaakconfiguratie zoals diagramgrootte en -marge.
 
 De rapportcomponenten worden geïnitialiseerd met een standaardconfiguratie die u helpt snel opstelling uw dashboard.
@@ -95,7 +98,7 @@ Het tabblad **Standaard** biedt toegang tot de volgende configuratiegegevens:
 
 **Type** verzoek De manier waarop gegevens worden aangevraagd.
 
-**SiteCatalyst-configuratie (optioneel)** De configuratie die u wilt gebruiken om verbinding te maken met SiteCatalyst. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
+**SiteCatalyst Configuratie (optioneel)** De configuratie die u wilt gebruiken om verbinding te maken met SiteCatalyst. Indien niet verstrekt wordt de configuratie verondersteld om op de pagina van het Dashboard (via paginaeigenschappen) te worden gevormd.
 
 **ID rapportsuite (optioneel)** De SiteCatalyst-rapportsuite die u wilt gebruiken om de grafiek te genereren.
 
@@ -167,7 +170,7 @@ Dashboards zijn normale pagina&#39;s ( `cq:Page`), daarom kunnen om het even wel
 
 Er is een standaardcomponentengroep `Dashboard` die analytische rapporteringscomponenten bevat die op het malplaatje door gebrek worden toegelaten.
 
-### Een dashboardsjabloon maken {#creating-a-dashboard-template}
+### Creating A Dashboard Template {#creating-a-dashboard-template}
 
 Een sjabloon definieert de standaardinhoud van een nieuw dashboard. U kunt verschillende sjablonen gebruiken voor het maken van verschillende typen dashboards.
 
@@ -179,7 +182,7 @@ Dashboardsjablonen worden net als andere paginasjablonen gemaakt, maar worden on
 
 ### Een dashboardcomponent ontwikkelen {#developing-a-dashboard-component}
 
-Het ontwikkelen van een dashboardcomponent bestaat uit het maken van een gewone AEM-component. Deze sectie beschrijft een voorbeeld van een component die hoogste 10 van contribuanten toont.
+Het ontwikkelen van een dashboardcomponent bestaat uit het maken van een gewone AEM. Deze sectie beschrijft een voorbeeld van een component die hoogste 10 van contribuanten toont.
 
 ![chlimage_1-31](assets/chlimage_1-31.png)
 
