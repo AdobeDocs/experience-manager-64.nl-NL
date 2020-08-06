@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: 4a034e15-3394-4be3-9e8e-bc894668946a
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '712'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Als ontwikkelaar kunt u uw app op elk gewenst moment op een apparaat of in een emulator uitvoeren, op voorwaarde dat u de ontwikkelomgeving hebt geconfigureerd.
 
 Als u de volgende voorbeelden wilt uitvoeren, hebt u een systeem nodig waarop OSx (Mac) met Xcode wordt uitgevoerd of een Mac/Win/Linux-systeem waarop de Android-SDK is geïnstalleerd.
 
-## Verbeter uw ontwikkelomgeving {#bootstrap-your-development-environment}
+## Bootstrap uw ontwikkelomgeving {#bootstrap-your-development-environment}
 
 [PhoneGap CLI instellen](https://docs.phonegap.com/en/4.0.0/guide_cli_index.md.html#The%20Command-Line%20Interface)
 
@@ -43,7 +46,7 @@ Voor Android: Voor het ontwikkelen voor iPhones en iPads hebt u de Android Stuid
 
 Als u de ontwikkelomgeving hebt opgestart, downloadt u de bron van de AEM App Build Tile:
 
-* Klik op de PhoneGap Build tile dropdown chevron.
+* Klik op de PhoneGap Build tieldropdown chevron.
 
 ![chlimage_1-45](assets/chlimage_1-45.png)
 
@@ -91,6 +94,7 @@ phonegap run ios
 >1. Navigeer in helloWorld (cd helloWorld)
 >1. Voer &#39;phonegap run android (of vervang android door ios as above) uit.
 >1. Emulator opent de uitvoering van de zojuist gemaakte PhoneGap-app met de tekst &#39;Apparaatklaar&#39; als de JavaScript-bridge naar native actief is.
+
 >
 >
 Dit zal verifiëren dat u CLI van PhoneGap ontwikkelomgeving is correct in werking gesteld.
