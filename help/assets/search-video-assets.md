@@ -1,9 +1,12 @@
 ---
 title: Video-elementen zoeken
-description: Gebruik trefwoorden, bestandseigenschappen, zoals een MIME-type, -grootte of onlangs gewijzigde tijdstempel, om het bestand snel in AEM Assets te zoeken.
+description: Gebruik trefwoorden, bestandseigenschappen, zoals een MIME-type, grootte of onlangs gewijzigde tijdstempel om het bestand snel in AEM Assets te vinden.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
@@ -18,13 +21,13 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 
 | Zoekveld | Waarden van eigenschappen zoeken |
 |---|---|
-| MIME-typen | [!UICONTROL Afbeeldingen], [!UICONTROL documenten], [!UICONTROL multimedia], [!UICONTROL archieven]of andere. |
-| [!UICONTROL Laatst gewijzigd] | Uur, Dag, Week, Maand of Jaar. |
-| [!UICONTROL Bestandsgrootte] | Klein, Normaal of Groot. |
-| [!UICONTROL Status publiceren] | Gepubliceerd of Niet gepubliceerd. |
-| [!UICONTROL Status van goedkeuring] | Goedgekeurd of geweigerd. |
-| [!UICONTROL Afdrukstand] | Horizontaal, Verticaal of Vierkant. |
-| [!UICONTROL Stijl] | Kleur, of Zwart-wit. |
+| MIME-typen | [!UICONTROL Images], [!UICONTROL Documents], [!UICONTROL Multimedia], [!UICONTROL Archives]of Overige. |
+| [!UICONTROL Last Modified] | Uur, Dag, Week, Maand of Jaar. |
+| [!UICONTROL File Size] | Klein, Normaal of Groot. |
+| [!UICONTROL Publish] Status | Gepubliceerd of Niet gepubliceerd. |
+| [!UICONTROL Approval] Status | Goedgekeurd of geweigerd. |
+| [!UICONTROL Orientation] | Horizontaal, Verticaal of Vierkant. |
+| [!UICONTROL Style] | Kleur, of Zwart-wit. |
 | Videohoogte | Specified as a minimum and maximum value.Value is stored in the metadata of video renditions only. |
 | Videobreedte | Specified as a minimum and maximum value.Value is stored in the metadata of video renditions only. |
 | Video-indeling | DVI, Flash, MPEG4, MPEG, OGG Theora, QuickTime, Windows Media.Value wordt opgeslagen in de metagegevens van de bronvideo en alle uitvoeringen. |
@@ -33,7 +36,7 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 | Audiocodec | Libvorbis, Lame Mp3, AAC Encoding.Value wordt opgeslagen in de meta-gegevens van videovertoningen slechts. |
 | Audiobitsnelheid | Specified as a minimum and maximum value.Value is stored in the metadata of video renditions only. |
 
-1. Tik op de pagina **[!UICONTROL Experience Manager]** in de linkertrack op **[!UICONTROL Elementen]**.
+1. Tik op de **[!UICONTROL Experience Manager]** pagina in de linkerspoorstaaf **[!UICONTROL Assets]**.
 
    Als de linkerspoorstaaf niet zichtbaar is, tik het pictogram van het Spoorstaaf in-/uitschakelen (de lijnen in het pictogram zijn donkergrijs of blauw).
 
@@ -55,4 +58,4 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 
       Voer een trefwoord in in in plaats van op Enter te drukken, vouw een lijst met video- of audio-eigenschappen uit en stel vervolgens de gewenste waarden in.
 
-1. (Optioneel) Tik onder aan de pagina op Slimme verzameling **** opslaan en voer een naam voor de zoekopdracht in. Schakel **[!UICONTROL Openbaar]** in als u de opgeslagen zoekopdracht beschikbaar wilt maken voor andere gebruikers van de Adobe Experience Manager-account. Schakel de optie uit als u de zoekopdracht alleen aan u wilt laten uitvoeren wanneer u bent aangemeld bij de account. Tik op **[!UICONTROL Opslaan]**.
+1. (Optioneel) Tik onder aan de pagina **[!UICONTROL Save Smart Collection]** op een naam voor de zoekopdracht. Controleer **[!UICONTROL Public]** of de opgeslagen zoekopdracht beschikbaar moet worden gemaakt voor andere gebruikers van de Adobe Experience Manager-account. Schakel de optie uit als u de zoekopdracht alleen aan u wilt laten uitvoeren wanneer u bent aangemeld bij de account. Tik op **[!UICONTROL Save]**.
