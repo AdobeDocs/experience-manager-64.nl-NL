@@ -1,8 +1,8 @@
 ---
-title: SBZ's voor AEM ontwikkelen
-seo-title: SBZ's voor AEM ontwikkelen
-description: Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen van een front-end ontwikkelaar om een KUUROORD voor AEM te ontwikkelen evenals geeft een overzicht van de architectuur van AEM met betrekking tot SPAs om in mening te houden wanneer het opstellen van een ontwikkelde KUUROORD op AEM.
-seo-description: Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen van een front-end ontwikkelaar om een KUUROORD voor AEM te ontwikkelen evenals geeft een overzicht van de architectuur van AEM met betrekking tot SPAs om in mening te houden wanneer het opstellen van een ontwikkelde KUUROORD op AEM.
+title: Het ontwikkelen van SPAs voor AEM
+seo-title: Het ontwikkelen van SPAs voor AEM
+description: Dit artikel stelt belangrijke vragen in overweging wanneer het in dienst nemen van een front-end ontwikkelaar om een KUUROORD voor AEM te ontwikkelen evenals geeft een overzicht van de architectuur van AEM met betrekking tot SPAs om in mening te houden wanneer het opstellen van een ontwikkelde KUUROORD op AEM.
+seo-description: Dit artikel stelt belangrijke vragen in overweging wanneer het in dienst nemen van een front-end ontwikkelaar om een KUUROORD voor AEM te ontwikkelen evenals geeft een overzicht van de architectuur van AEM met betrekking tot SPAs om in mening te houden wanneer het opstellen van een ontwikkelde KUUROORD op AEM.
 uuid: c77b37be-6acc-4cb4-9ae3-ba09583e6fff
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 3f4c17cf-6f77-4a87-b27b-f13a6a976523
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '2199'
+ht-degree: 0%
 
 ---
 
 
-# SBZ&#39;s voor AEM ontwikkelen{#developing-spas-for-aem}
+# Het ontwikkelen van SPAs voor AEM{#developing-spas-for-aem}
 
 Toepassingen van één pagina (SPAs) kunnen dwingende ervaringen voor websitegebruikers aanbieden. De ontwikkelaars willen plaatsen kunnen bouwen gebruikend het kader van het KUUROORD en de auteurs willen inhoud binnen AEM voor een plaats foutloos uitgeven die gebruikend dergelijke kaders wordt gebouwd.
 
@@ -27,20 +30,20 @@ Dit artikel stelt belangrijke vragen om te overwegen wanneer het in dienst nemen
 >
 >De redacteur van het KUUROORD is de geadviseerde oplossing voor projecten die het kader van het KUUROORD gebaseerde cliënt-kant teruggeven (b.v. Reageren of Hoekig) vereisen.
 
-## AEM-projectarchetype {#aem-project-archetype}
+## Projectarchetype AEM {#aem-project-archetype}
 
-Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
+Om het even welk AEM project zou hefboomwerking het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)van het Project, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## SBO-ontwikkelingsbeginselen voor AEM {#spa-development-principles-for-aem}
 
 Het ontwikkelen van enige paginatoepassingen op AEM veronderstelt dat de front-end ontwikkelaar standaardbeste praktijken wanneer het creëren van een KUUROORD waarneemt. Als als front-end ontwikkelaar u deze algemene beste praktijken evenals weinig AEM-specifieke principes volgt, zal uw SPA functioneel met [AEM en zijn inhoud-creatie mogelijkheden](/help/sites-developing/spa-walkthrough.md#content-editing-experience-with-spa)zijn.
 
 * **[Draagbaarheid](/help/sites-developing/spa-architecture.md#portability)-**Zoals bij alle onderdelen moeten de onderdelen zo draagbaar mogelijk zijn. Het KUUROORD zou met draagbaar en herbruikbare componenten moeten worden gebouwd, vermijdend statische wegen die naar de inhoudsstructuur verwijzen.
-* **[AEM drijft de Structuur](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**van de Plaats - de front-end ontwikkelaar leidt tot componenten en bezit hun interne structuur, maar baseert zich op AEM om de inhoudsstructuur van de plaats te bepalen.
+* **[AEM de Structuur](/help/sites-developing/spa-architecture.md#aem-drives-site-structure)**van de Plaats van Drives - de front-end ontwikkelaar leidt tot componenten en bezit hun interne structuur, maar baseert zich op AEM om de inhoudsstructuur van de plaats te bepalen.
 * **[Dynamische rendering](/help/sites-developing/spa-architecture.md#dynamic-rendering)**- Alle rendering moet dynamisch zijn.
 * **[Het dynamische Verpletteren](#dynamic-routing)**- het KUUUROORD is verantwoordelijk voor het verpletteren en AEM luistert aan het en haalt de componentengegevens die op het worden gebaseerd. Om het even welk verpletteren zou ook dynamisch moeten zijn.
 
-Als u deze principes in mening houdt aangezien u uw SPA ontwikkelt, zal het zo flexibel en zo toekomstig bewijs mogelijk zijn terwijl het toelaten van alle gesteunde auteursfunctionaliteit AEM.
+Als u deze principes in mening houdt aangezien u uw SPA ontwikkelt, zal het zo flexibel en zo toekomstig bewijs mogelijk zijn terwijl het toelaten van alle gesteunde AEM auteursfunctionaliteit.
 
 Als u niet AEM auteurseigenschappen te hoeven steunen, kunt u een verschillend het ontwerpmodel [van het](/help/sites-developing/spa-architecture.md#spa-design-models)SPA moeten overwegen.
 
@@ -48,13 +51,13 @@ Als u niet AEM auteurseigenschappen te hoeven steunen, kunt u een verschillend h
 
 Zoals bij het ontwikkelen van om het even welke component, zouden uw componenten op een zodanige manier moeten worden ontworpen dat hun draagbaarheid wordt gemaximaliseerd. Patronen die de draagbaarheid of herbruikbaarheid van de onderdelen in de weg staan, moeten worden vermeden om ervoor te zorgen dat de onderdelen compatibel, flexibel en duurzaam zijn.
 
-De ontwikkelaar moet het gebruik van statische paden die naar de inhoudsstructuur verwijzen, vermijden omdat paden op elk moment door de auteurs van de inhoud kunnen worden gewijzigd. Dit beperkt ook de herbruikbaarheid van de bibliotheek en verhindert het AEM Malplaatjesredacteur worden gebruikt aangezien zijn structuur in een andere plaats dan de inhoud wordt gevestigd.
+De ontwikkelaar moet het gebruik van statische paden die naar de inhoudsstructuur verwijzen, vermijden omdat paden op elk moment door de auteurs van de inhoud kunnen worden gewijzigd. Dit beperkt ook de herbruikbaarheid van de bibliotheek en het verhindert de AEM Redacteur van het Malplaatje worden gebruikt aangezien zijn structuur in een andere plaats dan de inhoud wordt gevestigd.
 
 Het resulterende KUUROORD zou met hoogst draagbare en herbruikbare componenten moeten worden gebouwd.
 
-### AEM Drives Site Structure {#aem-drives-site-structure}
+### Sitestructuur AEM stations {#aem-drives-site-structure}
 
-De front-end ontwikkelaar moet zichzelf als verantwoordelijke voor het creëren van een bibliotheek van componenten van het KUUROORD zien die worden gebruikt om app te bouwen. De front-end ontwikkelaar heeft volledige controle over de interne structuur van de componenten. [AEM is echter altijd eigenaar van de structuur van de site.](/help/sites-developing/spa-overview.md)
+De front-end ontwikkelaar moet zichzelf als verantwoordelijke voor het creëren van een bibliotheek van componenten van het KUUROORD zien die worden gebruikt om app te bouwen. De front-end ontwikkelaar heeft volledige controle over de interne structuur van de componenten. [AEM bezit echter altijd de structuur van de site.](/help/sites-developing/spa-overview.md)
 
 Dit betekent dat de front-end ontwikkelaar klanteninhoud vóór of na het ingangspunt van de componenten kan toevoegen en derde vraag binnen de component kan ook maken. De front-end ontwikkelaar heeft echter geen volledige controle over hoe de componenten bijvoorbeeld nesten.
 
@@ -62,7 +65,7 @@ Dit betekent dat de front-end ontwikkelaar klanteninhoud vóór of na het ingang
 
 Het SPA zou zich slechts op dynamische teruggeven van inhoud moeten baseren. Dit is de standaardverwachting waarbij AEM alle onderliggende elementen van de inhoudsstructuur ophaalt en rendert.
 
-Elke expliciete rendering die naar specifieke inhoud verwijst, wordt beschouwd als statische rendering, maar wordt wel ondersteund, is niet compatibel met de ontwerpfuncties voor inhoud van AEM. Dit druist ook in tegen het beginsel van [portabiliteit](/help/sites-developing/spa-architecture.md#portability).
+Elke expliciete rendering die naar specifieke inhoud verwijst, wordt als statische rendering beschouwd en wordt wel ondersteund, maar is niet compatibel met AEM functies voor het schrijven van inhoud. Dit druist ook in tegen het beginsel van [portabiliteit](/help/sites-developing/spa-architecture.md#portability).
 
 ### Dynamische routering {#dynamic-routing}
 
@@ -72,7 +75,7 @@ Om het even welke statische verpletterende werken tegen het [beginsel van portab
 
 ## SPA-ontwerpmodellen {#spa-design-models}
 
-Als de [principes van het ontwikkelen van SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) worden gevolgd, dan zal uw SPA functioneel met alle gesteunde inhoud AEM auteurseigenschappen zijn.
+Als de [principes van het ontwikkelen van SPAs in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem) worden gevolgd, dan zal uw SPA functioneel met alle gesteunde AEM tevreden auteurseigenschappen zijn.
 
 Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is. In de volgende tabel vindt u een overzicht van de verschillende ontwerpmodellen, hun voordelen en hun nadelen.
 
@@ -84,19 +87,19 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
    <th><strong>Nadelen</strong></th> 
   </tr>
   <tr>
-   <td>AEM wordt gebruikt als koploze CMS zonder het kader van SDK van de Redacteur van het <a href="/help/sites-developing/spa-reference-materials.md">KUUROORD te gebruiken.</a></td> 
+   <td>AEM wordt gebruikt als headless CMS zonder het kader van SDK van de Redacteur van het <a href="/help/sites-developing/spa-reference-materials.md">KUUROORD te gebruiken.</a></td> 
    <td>De front-end ontwikkelaar heeft volledige controle over de app.</td> 
-   <td><p>Inhoudsauteurs kunnen geen gebruikmaken van de AEM-ervaring voor het schrijven van inhoud.</p> <p>De code is noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td> 
+   <td><p>Inhoudsauteurs kunnen geen gebruik maken van AEM ervaring voor het schrijven van inhoud.</p> <p>De code is noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td> 
   </tr>
   <tr>
    <td>De voorste eindontwikkelaar gebruikt het kader van SDK van de Redacteur van het KUUROORD maar opent slechts enkele gebieden aan de inhoudauteur.</td> 
    <td>De ontwikkelaar behoudt de controle over de app door alleen authoring in beperkte delen van de app in te schakelen.</td> 
-   <td><p>Inhoudsauteurs zijn beperkt tot een beperkt aantal AEM-programma's voor het schrijven van inhoud.</p> <p>De code riskeert noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td> 
+   <td><p>Inhoudsauteurs zijn beperkt tot een beperkt aantal AEM toepassingen voor het schrijven van inhoud.</p> <p>De code riskeert noch draagbaar noch herbruikbaar als het statische verwijzingen of het verpletteren bevat.</p> <p>Hiermee wordt het gebruik van de sjablooneditor niet toegestaan, zodat de ontwikkelaar van de front-end via het JCR bewerkbare sjablonen moet bijhouden.</p> </td> 
   </tr>
   <tr>
    <td>Het project hefboomwerkingen volledig de Redacteur SDK van het KUUROORD en de frontend componenten worden ontwikkeld als bibliotheek en de inhoudsstructuur van app wordt gedelegeerd aan AEM.</td> 
-   <td><p>De app is herbruikbaar en draagbaar.</p> <p>De auteur van de inhoud kan de app bewerken met behulp van de AEM-ervaring voor het schrijven van inhoud.<br /> </p> <p>Het KUUROORD is compatibel met de malplaatjeredacteur.</p> </td> 
-   <td><p>De ontwikkelaar heeft geen controle over de structuur van de app en het gedeelte van de inhoud dat aan AEM is gedelegeerd.</p> <p>De ontwikkelaar kan gedeelten van de app nog steeds reserveren voor de inhoud die niet met AEM kan worden gemaakt.</p> </td> 
+   <td><p>De app is herbruikbaar en draagbaar.</p> <p>De auteur van de inhoud kan de app bewerken met AEM ervaring voor het schrijven van inhoud.<br /> </p> <p>Het KUUROORD is compatibel met de malplaatjeredacteur.</p> </td> 
+   <td><p>De ontwikkelaar heeft geen controle over de structuur van de app en het gedeelte van de inhoud dat aan AEM is gedelegeerd.</p> <p>De ontwikkelaar kan gedeelten van de app nog steeds reserveren voor de inhoud die niet is bedoeld om te worden gemaakt met AEM.</p> </td> 
   </tr>
  </tbody>
 </table>
@@ -105,9 +108,9 @@ Er kunnen zich echter gevallen voordoen waarin dit niet volledig noodzakelijk is
 >
 >Hoewel alle modellen in AEM worden gesteund, slechts door de derde uit te voeren (en daardoor na de geadviseerde ontwikkelingsbeginselen van het [KUUROORD in AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)) zullen de inhoudsauteurs met de inhoud van het KUUROORD in AEM kunnen in wisselwerking staan en uitgeven aangezien zij gewend zijn.
 
-## Bestaande SPA&#39;s migreren naar AEM {#migrating-existing-spas-to-aem}
+## Het migreren van Bestaande SPAs aan AEM {#migrating-existing-spas-to-aem}
 
-Over het algemeen als uw SPA de Beginselen van de Ontwikkeling van het [KUUROORD voor AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)volgt, dan zal uw KUUROORD in AEM werken en editable zijn gebruikend de Redacteur van het KUUROORD AEM.
+Over het algemeen als uw SPA de Beginselen van de Ontwikkeling van het [KUUROORD voor AEM](/help/sites-developing/spa-architecture.md#spa-development-principles-for-aem)volgt, dan zal uw KUUROORD in AEM werken en editable zijn gebruikend de Redacteur van het AEM KUUROORD.
 
 Volg deze stappen om uw bestaande SPA klaar te krijgen om met AEM te werken.
 
@@ -119,21 +122,21 @@ Volg deze stappen om uw bestaande SPA klaar te krijgen om met AEM te werken.
 
    AEM biedt een pagina- en alineasysteem voor gebruik.
 
-1. **Maak een AEM-component voor elke JS-component.**
+1. **Maak een AEM component voor elke JS-component.**
 
-   De AEM-componenten definiëren het dialoogvenster en de JSON-uitvoer.
+   De AEM componenten bepalen de dialoog en output JSON.
 
 ## Instructies voor front-end ontwikkelaars {#instructions-for-front-end-developers}
 
-De belangrijkste taak in het aanmoedigen van een front-end ontwikkelaar om een KUUROORD voor AEM tot stand te brengen is op de componenten en hun modellen JSON in te stemmen.
+De belangrijkste taak in het aanmoedigen van een front-end ontwikkelaar om een KUUROORD voor AEM tot stand te brengen moet over de componenten en hun modellen JSON akkoord gaan.
 
 Het volgende is een overzicht van de stappen een front-end ontwikkelaar moet volgen wanneer het ontwikkelen van een KUUROORD voor AEM.
 
 1. **Onderdelen en hun JSON-model overeenkomen**
 
-   Voor-eind ontwikkelaars en de achterste ontwikkelaars van AEM moeten overeenkomen over welke componenten noodzakelijk zijn en een model zodat is er een één-op-één gelijke van de componenten van het KUUROORD aan de achterste eindcomponenten.
+   Voor-eind ontwikkelaars en achterste AEM ontwikkelaars moeten het eens zijn over welke componenten noodzakelijk zijn en een model zodat is er een één-op-één gelijke van de componenten van het KUUROORD aan de achterste eindcomponenten.
 
-   AEM-componenten zijn nog steeds vooral nodig om bewerkingsdialoogvensters te bieden en het componentmodel te exporteren.
+   AEM componenten zijn nog steeds nodig, vooral om te zorgen voor bewerkingsdialoogvensters en om het componentmodel te exporteren.
 
 1. **In React componenten, heb toegang tot het model via`this.props.cqModel`**
 
@@ -169,10 +172,10 @@ Het volgende is een overzicht van de stappen een front-end ontwikkelaar moet vol
 
 ## AEM-agnost {#aem-agnostic}
 
-Deze codeblokken laten zien hoe uw React- en hoekcomponenten niets nodig hebben dat specifiek is voor Adobe of AEM.
+Deze codeblokken illustreren hoe uw React- en Hoekcomponenten niets nodig hebben dat specifiek is voor Adobe of AEM.
 
 * Alles wat zich in de JavaScript-component bevindt, is AEM-agnostisch.
-* Wat echter specifiek voor AEM is, is dat de JS-component aan een AEM-component moet worden toegewezen met de MapTo-hulpfunctie.
+* Nochtans specifiek voor AEM is dat de component JS aan een AEM component met de hulp moet worden in kaart gebracht MapTo.
 
 ![screen_shot_2018-12-11at144019](assets/screen_shot_2018-12-11at144019.png)
 
@@ -183,10 +186,10 @@ De `MapTo` hulplijn is de &quot;lijm&quot; die het mogelijk maakt de achterkant 
 
 Voor meer informatie over het gebruiken `MapTo` en het bouwen van SPAs voor AEM in het algemeen, zie de Begonnen gids Aan de slag voor uw gekozen kader.
 
-* [Aan de slag met SPA&#39;s in AEM - Reageren](/help/sites-developing/spa-getting-started-react.md)
+* [Begonnen het worden met SPAs in AEM - Reageer](/help/sites-developing/spa-getting-started-react.md)
 * [Aan de slag met SPA&#39;s in AEM - hoekig](/help/sites-developing/spa-getting-started-angular.md)
 
-## AEM-architectuur en SPA&#39;s {#aem-architecture-and-spas}
+## AEM Architectuur en SPA&#39;s {#aem-architecture-and-spas}
 
 De algemene architectuur van AEM met inbegrip van ontwikkeling, creatie, en het publiceren milieu&#39;s verandert niet wanneer het gebruiken van SPAs. Nochtans is het nuttig om te begrijpen hoe de ontwikkeling van het KUUROORD in deze architectuur past.
 
@@ -201,7 +204,7 @@ De algemene architectuur van AEM met inbegrip van ontwikkeling, creatie, en het 
 
 * **AEM-auteur**
 
-   De inhoud wordt gecreeerd op de auteur AEM, met inbegrip van creatie SPAs.
+   De inhoud wordt gecreeerd op de AEM auteur, met inbegrip van creatieve SPAs.
 
    Wanneer een KUUROORD gebruikend de Redacteur van het KUUROORD op het auteursmilieu wordt uitgegeven:
 
@@ -224,14 +227,14 @@ De algemene architectuur van AEM met inbegrip van ontwikkeling, creatie, en het 
 
 >[!NOTE]
 >
->Binnen AEM is het niet nodig om bouwstijlmechanismen uit te voeren JavaScript of Javascript zelf uit te voeren. AEM slechts gastheren de gecompileerde artefacten van de toepassing van het KUUROORD.
+>In AEM is het niet nodig om JavaScript-bouwmechanismen uit te voeren of om JavaScript zelf uit te voeren. AEM slechts gastheren de gecompileerde artefacten van de toepassing van het KUUROORD.
 
 ## Volgende stappen {#next-steps}
 
-Voor een overzicht van hoe een eenvoudige KUUROORD in AEM wordt gestructureerd en hoe het werkt, zie de begonnen gids voor zowel [React](/help/sites-developing/spa-getting-started-react.md) als [Hoekig](/help/sites-developing/spa-getting-started-angular.md).
+Voor een overzicht van hoe een eenvoudige KUUROORD in AEM gestructureerd is en hoe het werkt, zie de begonnen gids voor zowel [Reageren](/help/sites-developing/spa-getting-started-react.md) als [Hoekig](/help/sites-developing/spa-getting-started-angular.md).
 
-Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [Begonnen het Worden met de Redacteur AEM SPA - het Leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)van Gebeurtenissen WKND.
+Voor een geleidelijke gids aan het creëren van uw eigen SPA, zie [Begonnen het Worden met de Redacteur van het AEMKUUROORD - het Leerprogramma](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-spa-wknd-tutorial-develop.html)van Gebeurtenissen WKND.
 
 Voor verdere details over het dynamische model aan componentenafbeelding en hoe het binnen SPAs in AEM werkt, zie het artikel [Dynamisch Model aan de Afbeelding van de Component voor SPAs](/help/sites-developing/spa-dynamic-model-to-component-mapping.md).
 
-Als u wenst om SPAs in AEM voor een kader buiten React of Hoekig uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor AEM werkt, verwijs naar het artikel van het Blauwdruk [van het](/help/sites-developing/spa-blueprint.md) KUUROORD.
+Als u wenst om SPAs in AEM voor een kader buiten React of Angular uit te voeren of eenvoudig een diepe duik in te nemen hoe het KUUROORD SDK voor AEM werken, naar het artikel van de Vervaging van het [KUUROORD](/help/sites-developing/spa-blueprint.md) verwijzen.
