@@ -1,8 +1,8 @@
 ---
 title: Aangepaste formuliertoewijzingen maken
 seo-title: Aangepaste formuliertoewijzingen maken
-description: Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u in AEM een formulier maken dat is toegewezen aan die aangepaste tabel
-seo-description: Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u in AEM een formulier maken dat is toegewezen aan die aangepaste tabel
+description: Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u beter een formulier maken in AEM dat is toegewezen aan die aangepaste tabel
+seo-description: Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u beter een formulier maken in AEM dat is toegewezen aan die aangepaste tabel
 uuid: f3bde513-6edb-4eb6-9048-40045ee08c4a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
 
 # Aangepaste formuliertoewijzingen maken{#creating-custom-form-mappings}
 
-Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u in AEM een formulier maken dat aan die aangepaste tabel wordt toegewezen.
+Wanneer u een aangepaste tabel maakt in Adobe Campaign, kunt u beter een formulier maken in AEM dat aan die aangepaste tabel wordt toegewezen.
 
-In dit document wordt beschreven hoe u aangepaste formuliertoewijzingen kunt maken. Wanneer u de stappen in dit document voltooit, biedt u uw gebruikers een gebeurtenispagina waarop zij zich kunnen aanmelden voor een aanstaande gebeurtenis. Daarna volgt u deze gebruikers via Adobe Campaign.
+In dit document wordt beschreven hoe u aangepaste formuliertoewijzingen kunt maken. Wanneer u de stappen in dit document voltooit, biedt u uw gebruikers een gebeurtenispagina waarop zij zich kunnen aanmelden voor een aanstaande gebeurtenis. Vervolgens volgt u deze gebruikers via Adobe Campaign.
 
 ## Vereisten {#prerequisites}
 
@@ -38,12 +41,12 @@ Als u aangepaste formuliertoewijzingen wilt maken, moet u de volgende stappen op
 1. Breid de **zaadlijst** uit.
 1. Een aangepaste toewijzing maken.
 1. Maak een levering op basis van de aangepaste toewijzing.
-1. Het formulier samenstellen in AEM, waarvoor de gemaakte levering wordt gebruikt.
+1. Het formulier samenstellen in AEM, waarbij de gemaakte levering wordt gebruikt.
 1. Verzend het formulier om het te testen.
 
-### Aangepaste tabel maken in Adobe-campagne {#creating-the-custom-table-in-adobe-campaign}
+### Aangepaste tabel maken in Adobe Campaign {#creating-the-custom-table-in-adobe-campaign}
 
-Begin door een douanetabel in de Campagne van Adobe te creëren. In dit voorbeeld gebruiken we de volgende definitie om een gebeurtenistabel te maken:
+Begin door een douanetabel in Adobe Campaign te creëren. In dit voorbeeld gebruiken we de volgende definitie om een gebeurtenistabel te maken:
 
 ```xml
 <element autopk="true" label="Event" labelSingular="Event" name="event">
@@ -58,7 +61,7 @@ Nadat u de gebeurtenistabel hebt gemaakt, voert u de wizard **Databasestructuur*
 
 ### De zaadtabel uitbreiden {#extending-the-seed-table}
 
-Tik/klik in Adobe Campagne op **Toevoegen** om een nieuwe extensie van de tabel met **zaadadressen (nms)** te maken.
+Tik/klik in Adobe Campaign op **Toevoegen** om een nieuwe extensie van de tabel met **zaadadressen (nms)** te maken.
 
 ![chlimage_1-194](assets/chlimage_1-194.png)
 
@@ -89,15 +92,15 @@ In **Beleid/het** Beheer van de Campagne, ga naar **Toewijzingen** van het Doel 
 
 In deze stap, voegt u een leveringsmalplaatje toe dat de gecreeerde afbeelding **van het** Doel gebruikt.
 
-In **Middelen/Malplaatjes**, navigeer aan het Malplaatje van de Levering en dupliceer de bestaande levering AEM. Wanneer u klikt **aan**, selecteer creeer gebeurtenis **richt afbeelding**.
+In **Middelen/Malplaatjes**, navigeer aan het Malplaatje van de Levering en dupliceer de bestaande AEM levering. Wanneer u klikt **aan**, selecteer creeer gebeurtenis **richt afbeelding**.
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
 ### Het formulier samenstellen in AEM {#building-the-form-in-aem}
 
-In AEM, zorg ervoor u een Dienst van de Wolk in **Pagina Eigenschappen** hebt gevormd.
+Controleer in AEM of u een Cloud Service hebt geconfigureerd in **Pagina-eigenschappen**.
 
-Selecteer vervolgens op het tabblad **Adobe-campagne** de levering die is gemaakt in [Een aangepaste leveringssjabloon](#creating-a-custom-delivery-template)maken.
+Selecteer vervolgens op het tabblad **Adobe Campaign** de levering die is gemaakt bij het [maken van een aangepaste leveringssjabloon](#creating-a-custom-delivery-template).
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
@@ -115,7 +118,7 @@ Controleer in de configuratie van het formulier of u het selectievakje inschakel
 
 ### Het formulier verzenden {#submitting-the-form}
 
-U kunt het formulier nu verzenden en valideren aan de zijde van Adobe Campagne, ongeacht of de waarden zijn opgeslagen.
+U kunt nu het formulier verzenden en op de Adobe Campaign valideren of de waarden zijn opgeslagen.
 
 ![chlimage_1-200](assets/chlimage_1-200.png)
 
@@ -123,7 +126,7 @@ U kunt het formulier nu verzenden en valideren aan de zijde van Adobe Campagne, 
 
 **&quot;Ongeldig type voor waarde &#39;02/02/2015&#39; van element &#39;@eventdate&#39; (document van type &#39;Event ([adb:event])&#39;)&quot;**
 
-Bij het verzenden van het formulier wordt deze fout aangemeld bij **error.log** in AEM.
+Bij het verzenden van het formulier wordt deze fout aangemeld bij de AEM **error.log** .
 
 Dit wordt veroorzaakt door een ongeldige indeling voor het datumveld. U kunt dit omzeilen door dd- **mm-jjjj** als waarde op te geven.
 
