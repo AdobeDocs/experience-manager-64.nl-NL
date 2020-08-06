@@ -126,7 +126,7 @@ public LiveAction createAction(Resource resource) throws WCMException {
 }
 ```
 
-### Toegang krijgen tot Target Nodes, Source Nodes en de LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
+### Toegang tot doelknooppunten, bronknooppunten en de LiveRelationship {#accessing-target-nodes-source-nodes-and-the-liverelationship}
 
 De volgende objecten worden opgegeven als parameters van de `execute` methode van het `LiveAction` object:
 
@@ -336,7 +336,7 @@ Voeg gebiedsdelen toe zodat de compiler van de Verduistering de klassen kan van 
    ```
 
 1. Open het POM- dossier voor de bundel van de Ontdekkingsreiziger **van het** Project bij `MyLiveActionFactory-bundle/pom.xml`.
-1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en bewaar dan het dossier:
+1. Klik in de editor op het `pom.xml` tabblad en zoek de sectie Project/afhankelijkheden. Voeg de volgende XML binnen het gebiedsdeelelement toe en sla dan het dossier op:
 
    ```xml
     <dependency>
@@ -523,7 +523,7 @@ De volgende `LiveActionFactory` klasse voert een `LiveAction` die berichten over
    mvn -PautoInstallPackage clean install
    ```
 
-   Het AEM- `error.log` bestand moet aangeven dat de bundel is gestart.
+   Het AEM `error.log` bestand moet aangeven dat de bundel is gestart.
 
    Bijvoorbeeld [http://localhost:4502/system/console/status-slinglogs](http://localhost:4502/system/console/status-slinglogs).
 
@@ -603,7 +603,7 @@ In some cases, the **Chapters** selection is not required in the create site wiz
 
 ## Taalnamen en standaardlanden wijzigen {#changing-language-names-and-default-countries}
 
-AEM gebruikt een standaardreeks taal en landcodes.
+AEM gebruikt een standaardset taal- en landcodes.
 
 * De standaardtaalcode is de tweeletterige code in kleine letters, zoals gedefinieerd door ISO-639-1.
 * De standaardlandcode is de tweelettercode in kleine letters of hoofdletters, zoals gedefinieerd in ISO 3166.
@@ -626,7 +626,7 @@ De taallijst wordt opgeslagen onder het `/libs/wcm/core/resources/languages` kno
 
 De talen wijzigen:
 
-1. Open CRXDE Lite in uw Webbrowser; bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
+1. Open CRXDE Lite in uw webbrowser; bijvoorbeeld [http://localhost:4502/crx/de](http://localhost:4502/crx/de)
 1. Selecteer de `/apps` map en klik op **Maken** en **Map maken.**
 
    Geef de nieuwe map een naam `wcm`.
