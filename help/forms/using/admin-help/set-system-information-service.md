@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 14de0652-717d-4c84-b7b4-b7b78f325baa
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '117'
+ht-degree: 0%
 
 ---
 
 
 # De System Information Service instellen {#set-up-the-system-information-service}
 
-De systeeminformatiedienst verstrekt REST APIs om informatie terug te winnen. Om de dienst van de systeeminformatie te gebruiken, laat het REST eindpunt van beleidsconsole toe. Voer de volgende stappen uit om het REST-eindpunt in te schakelen:
+De systeeminformatiedienst verstrekt REST APIs om informatie terug te winnen. Om de dienst van de systeeminformatie te gebruiken, laat het eindpunt van REST van beleidsconsole toe. Voer de volgende stappen uit om het REST-eindpunt in te schakelen:
 
 1. Meld u aan bij de beheerconsole. De standaard-URL van de beheerconsole is `https://[hostname]:[port]/adminui.`
 1. Ga naar Services > Toepassingen en services > Servicebeheer.
