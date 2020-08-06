@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1851'
+ht-degree: 0%
 
 ---
 
 
 # Moderatieconsole {#moderation-console}
 
-In AEM-gemeenschappen is het mogelijk om de inhoud [van de gemeenschap in grote hoeveelheden te](moderate-ugc.md) modereren vanuit zowel de auteur- als de publicatieomgeving door beheerders en moderatoren van de gemeenschap (vertrouwde leden van de gemeenschap die als moderatoren zijn toegewezen).
+In AEM Communities, is de bulk [moderatie van communautaire inhoud](moderate-ugc.md) van zowel auteur als publicatiemilieu&#39;s door beheerders en communautaire moderatoren (vertrouwde op communautaire leden die als moderators worden toegewezen) mogelijk.
 
 Beheerders en moderatoren van de gemeenschap kunnen ook [in-context moderatie](in-context.md) in het publicatiemilieu uitvoeren.
 
@@ -144,7 +147,7 @@ De site beperkt de UGC waarnaar wordt verwezen, tot advertenties aan geselecteer
 
 >[!NOTE]
 >
->Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen die niet met de tovenaar [van de](sites-console.md)plaatsverwezenlijking, zoals de steekproeven Geometrixx worden gecreeerd.
+>Wanneer de bulkmoderatieconsole door een beheerder wordt betreden, worden alle verwijzingen naar UGC getoond, met inbegrip van plaatsen die niet met de tovenaar [van de](sites-console.md)plaatsinrichting, zoals de steekproeven van Geometrixx worden gecreeerd.
 >
 >Wanneer de bulkmoderatieconsole bij publiceren door een vertrouwd communautair lid wordt betreden, dan slechts worden de verwijzingen naar UGC die voor communautaire plaatsen worden gecreeerd het lid aan gematigd wordt toegelaten getoond, en met de filter van de Plaats kunnen worden gefiltreerd.
 
@@ -204,13 +207,13 @@ De status beperkt de UGC waarnaar wordt verwezen, tot posten van de geselecteerd
 
 Als u een vlag voert, wordt de UGC waarnaar wordt verwezen, beperkt tot publicaties die zijn gemarkeerd of verborgen.
 
-Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door nogmaals de knop **[!UICONTROL Vlag]** te selecteren. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
+Wanneer een stuk inhoud is gemarkeerd, blijft het gemarkeerd totdat u de markering van dat stuk inhoud ongedaan maakt door de **[!UICONTROL Flag]** knop nogmaals te selecteren. Er zijn geen markeringsniveaus, zoals belangrijk of opgevolgd.
 
 ![chlimage_1-476](assets/chlimage_1-476.png)
 
 #### Leden {#members}
 
-Leden beperken de UGC waarnaar wordt verwezen, die aan UGC wordt weergegeven en die door de ingevoerde lidnaam wordt gepost.
+Leden beperken de UGC waarnaar wordt verwezen, die aan UGC wordt weergegeven en die door de ingevoerde lidnaam is gepost.
 
 ![chlimage_1-477](assets/chlimage_1-477.png)
 
@@ -220,7 +223,7 @@ Gepost in de Laatste grenzen UGC van verwijzingen aan posten die in het laatste 
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-#### Sentiment {#sentiment}
+#### Zin {#sentiment}
 
 [Sentiment](moderate-ugc.md#sentiment) beperkt de UGC waarnaar wordt verwezen tot posten met een sentiment-waarde die positief, negatief of neutraal is.
 
