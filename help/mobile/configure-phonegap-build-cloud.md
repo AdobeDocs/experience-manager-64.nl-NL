@@ -1,6 +1,6 @@
 ---
-title: Uw Adobe PhoneGap Build Cloud-service configureren
-seo-title: Uw Adobe PhoneGap Build Cloud-service configureren
+title: Adobe PhoneGap Build-Cloud Service configureren
+seo-title: Adobe PhoneGap Build-Cloud Service configureren
 description: Volg deze pagina om de cloudservices te configureren en uw toepassing samen te stellen met PhoneGap-build.
 seo-description: Volg deze pagina om de cloudservices te configureren en uw toepassing samen te stellen met PhoneGap-build.
 uuid: 59aa99c3-1425-4cc5-9839-a57a6a545d45
@@ -11,47 +11,50 @@ topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '698'
+ht-degree: 0%
 
 ---
 
 
-# Uw Adobe PhoneGap Build Cloud-service configureren {#configure-your-adobe-phonegap-build-cloud-service}
+# Adobe PhoneGap Build-Cloud Service configureren {#configure-your-adobe-phonegap-build-cloud-service}
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-De **PhoneGap Build-tegel** op het dashboard van de toepassing biedt de mogelijkheid om uw PhoneGap mobiele toepassing te maken en distribueren via de Adobe PhoneGap Build-service.
+De **PhoneGap Build-tegel** op het toepassingsdashboard biedt de mogelijkheid om uw mobiele PhoneGap-toepassing te maken en distribueren via de Adobe PhoneGap Build-service.
 
-Alle ondersteunde platforms die zijn gedefinieerd in de tegel **App** beheren, worden gebouwd met PhoneGap Build tijdens het uitvoeren van een externe build met de **PhoneGap Build** Tile.
+Alle ondersteunde platforms die zijn gedefinieerd in de tegel **App** beheren, worden met PhoneGap Build gemaakt wanneer u een externe build met de **PhoneGap Build** -tegel duwt.
 
 U kunt een externe build naar [https://build.phonegap.com](https://build.phonegap.com) duwen of de bron downloaden om lokaal met [PhoneGap CLI](https://docs.phonegap.com/references/phonegap-cli/)te bouwen.
 
 ![PhoneGap Build-tegel](assets/chlimage_1-60.png)
 
-## Cloudservice configureren {#configuring-the-cloud-service}
+## De Cloud Service configureren {#configuring-the-cloud-service}
 
-Als u gebruik wilt maken van PhoneGap Build, moet u de AEM PhoneGap Build Cloud Service configureren met uw PhoneGap Build-accountgegevens.
+Om uit PhoneGap Build voordeel te halen moet u de AEM Cloud Service van de PhoneGap Build met uw de rekeningsinformatie van de PhoneGap Build vormen.
 
 Als u momenteel geen account hebt, navigeert u naar [https://build.phonegap.com](https://build.phonegap.com) en meldt u zich aan! Als u een Adobe Creative Cloud-lidmaatschap hebt, hebt u mogelijk ondersteuning voor maximaal 25 persoonlijke apps (apps zonder open bron).
 
-Nadat u hebt gecontroleerd of uw PhoneGap Build-account actief is, navigeert u naar uw AEM Cloud Management Console, met name de [PhoneGap Build Cloud Service](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Nadat u hebt gecontroleerd of uw account actief is, navigeert u naar de AEM Cloud Management Console, met name de [PhoneGap Build](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-Met het **beheerblok voor cloudservices** kunt u een nieuwe configuratie voor cloudservices configureren.
+Met de tegel Cloud Services **** beheren kunt u een nieuwe cloudserviceconfiguratie configureren.
 
-### Het element Cloud Services beheren gebruiken {#using-manage-cloud-services-tile}
+### De tegel Cloud Services beheren gebruiken {#using-manage-cloud-services-tile}
 
-Voordat u begint met het maken van uw app met **PhoneGap Build** -tegel, moet u de cloudservices configureren met behulp van de tegel **Cloud Services** beheren op het mobiele dashboard van AEM.
+Voordat u uw app gaat maken met **PhoneGap Build** -tegel, moet u de cloudservices configureren met behulp van de tegel Cloud Services **** beheren op het AEM Mobile-dashboard.
 
 Volg onderstaande stappen om cloudservices voor uw app te configureren:
 
-1. Klik in de rechterbovenhoek van de tegel **Cloud Services** beheren.
+1. Klik in de rechterbovenhoek van het element **Cloud Services** beheren.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. Kies de optie **PhoneGap Build** in het scherm **Cloud Service** toevoegen of bewerken.
+1. Kies de optie **PhoneGap Build** in het scherm Cloud Service **** toevoegen of bewerken.
 
-   Click **Next**.
+   Klik op **Next**.
 
    ![chlimage_1-62](assets/chlimage_1-62.png)
 
@@ -67,7 +70,7 @@ Nadat u de cloudservices hebt geconfigureerd, kunt u uw toepassing samenstellen 
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Als u een externe build wilt aanroepen met Adobe PhoneGap Build, klikt u op Extern **** maken.
+Als u een externe build met Adobe PhoneGap Build wilt aanroepen, klikt u op Extern **** maken.
 
 >[!NOTE]
 >
@@ -77,7 +80,7 @@ Als u een externe build wilt aanroepen met Adobe PhoneGap Build, klikt u op Exte
 
 PhoneGap biedt een opdrachtregelinterface waarmee u uw toepassing lokaal kunt maken.
 
-Compileer de toepassing PhoneGap op uw computer gebruikend de de lijninterface van het Bevel PhoneGap (CLI). AEM maakt een ZIP-bestand dat de inhoud van uw mobiele toepassing, configuraties voor het synchroniseren van inhoud en andere vereiste elementen bevat om de AEM-inhoud in uw toepassing op te nemen. Download het ZIP-bestand en neem het op in uw build.
+Compileer de toepassing PhoneGap op uw computer gebruikend de de lijninterface van het Bevel PhoneGap (CLI). Als u de AEM-inhoud in uw toepassing wilt opnemen, AEM maakt u een ZIP-bestand dat de inhoud van uw mobiele toepassing, configuraties voor inhoudssynchronisatie en andere vereiste elementen bevat. Download het ZIP-bestand en neem het op in uw build.
 
 Om van de interface van de bevellijn van PhoneGap voordeel te halen, zult u opstelling uw lokale milieu moeten omvatten:
 
@@ -98,12 +101,12 @@ phonegap run ios (or android, ...)
 >
 >add —emulate aan het eind van deze lijn als u niet het op uw aangesloten apparaat wilt in werking stellen.
 
-Nadat u hebt gecontroleerd of het bovenstaande werkt, gebruikt u de **PhoneGap Build** Tile om de bron **te** downloaden. Sla het bestand op en decomprimeer het naar uw lokale systeem. Zodra dat gebeurt:
+Nadat u hebt gecontroleerd dat het bovenstaande werkt, gebruikt u de **PhoneGap Build** -tegel om de bron **te** downloaden. Sla het bestand op en decomprimeer het naar uw lokale systeem. Zodra dat gebeurt:
 
 * naar dat opgeslagen bestand (map) navigeren
 * run &#39;phonegap run ios&#39; (of android, enz.)
 
-### Additional Resources {#additional-resources}
+### Aanvullende bronnen {#additional-resources}
 
 Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkheden van auteurs en ontwikkelaars:
 
