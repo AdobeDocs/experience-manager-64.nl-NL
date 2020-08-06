@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 3504afe1-abf5-4fbf-a0d2-e093361764bd
 translation-type: tm+mt
 source-git-commit: e12b8e370badfa0eb0d549cff18dc2ef43226758
+workflow-type: tm+mt
+source-wordcount: '284'
+ht-degree: 0%
 
 ---
 
 
 # Toegankelijke complexe tabellen maken in HTML5-formulieren {#create-accessible-complex-tables-in-html-forms}
 
-Bij de standaardimplementatie van tabellen in HTML5 Forms worden HTML DIV-elementen gebruikt om een tabel te renderen. Bij het renderen worden ARIA-rollen gebruikt om aan de toegankelijkheidsvereisten te voldoen.
+De standaardimplementatie van tabellen in HTML5 Forms gebruikt HTML DIV-elementen om een tabel te renderen. Bij het renderen worden ARIA-rollen gebruikt om aan de toegankelijkheidsvereisten te voldoen.
 
 HTML5 Forms biedt een alternatieve uitvoering voor de tabellen om toegankelijkheidsproblemen met schermlezers te voorkomen die de ARIA-rollen die worden gebruikt met gegevenstabellen niet volledig ondersteunen. Deze tabellen zijn gebaseerd op de nieuwe tabelindeling die in Designer is geïntroduceerd en die ook ondersteuning biedt voor:
 
@@ -31,13 +34,13 @@ Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als 
  </extras>
 ```
 
-De tabellen die zijn gemarkeerd als *complexTable* volgen de native HTML-uitvoering en bieden betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op Cellen **** samenvoegen.
+De tabellen die zijn gemarkeerd als *complexTable* volgen de native HTML-uitvoering en bieden betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Merge Cells]**.
 
-*****Opmerking: Het maken van een rijbereik werkt alleen voor uiterst linkse cellen.*
+***Opmerking:**Het maken van een rijbereik werkt alleen voor uiterst linkse cellen.*
 
-Als u een rij als rijkop wilt markeren, selecteert u alle cellen in de rij, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op Koptekst **** markeren.
+Als u een rij als rijkop wilt markeren, selecteert u alle cellen in de rij, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Mark Header]**.
 
-Als u een cel als kolomkop wilt markeren, selecteert u een willekeurige cel in de kolom, klikt u met de rechtermuisknop op de selectie en klikt u vervolgens op Koptekst **** markeren.
+Als u een cel als kolomkop wilt markeren, selecteert u een willekeurige cel in de kolom, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Mark Header]**.
 
 Beperkingen in de nieuwe *indeling AccessibleTable* :
 
