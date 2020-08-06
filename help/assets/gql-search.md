@@ -4,6 +4,9 @@ description: Ontdek de GQL-functie voor full-text zoeken in AEM Assets. Gebruik 
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+workflow-type: tm+mt
+source-wordcount: '836'
+ht-degree: 0%
 
 ---
 
@@ -20,12 +23,12 @@ Als u bijvoorbeeld wilt zoeken naar elementen met de titel &quot;Doel&quot;, voe
 
 ## Zoeken in middelen {#searching-assets}
 
-1. Klik of tik op het pictogram **[!UICONTROL Zoeken]** op de werkbalk van de gebruikersinterface Elementen om het vak Zoeken weer te geven.
+1. Klik of tik op het **[!UICONTROL Search]** pictogram op de werkbalk van de gebruikersinterface Elementen om het vak Zoeken weer te geven.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Met de curseur in het vakje van het Onderzoek, druk binnengaan.
-1. Klik of tik op het GlobalNav-pictogram om het deelvenster **[!UICONTROL Filters]** weer te geven.
+1. Klik of tik op het GlobalNav-pictogram om het **[!UICONTROL Filters]** deelvenster weer te geven.
 1. Geef in het vak Universeel zoeken de waarde &quot;Doel&quot; op. Als u de zoekopdracht wilt beperken tot een specifieke map, klikt of tikt u op het pictogram Bladeren in het deelvenster Filters en selecteert u de map. In dit geval wordt alleen gezocht naar de map en de submappen eronder.
 
    >[!NOTE]
@@ -34,7 +37,7 @@ Als u bijvoorbeeld wilt zoeken naar elementen met de titel &quot;Doel&quot;, voe
 
    ![gql_search](assets/gql_search.png)
 
-1. Press **[!UICONTROL Enter]**. In de gebruikersinterface van AEM-middelen worden alleen die elementen weergegeven waarvan de titel precies overeenkomt met &quot;Doel&quot;.
+1. Druk op **[!UICONTROL Enter]**. In de AEM Assets-gebruikersinterface worden alleen die elementen weergegeven waarvan de titel precies overeenkomt met &quot;Doel&quot;.
 
 Met de zoekfunctie voor volledige tekst van GQL kunt u op het volgende gebaseerde elementen zoeken:
 
@@ -50,27 +53,27 @@ Met de zoekfunctie voor volledige tekst van GQL kunt u zoeken naar elementen op 
 
 | Eigenschap | Zoekindeling (facetwaarde) |
 |---|---|
-| [!UICONTROL Titel] | titel:John |
+| [!UICONTROL Title] | titel:John |
 | [!UICONTROL Creator] | maker:John |
-| [!UICONTROL Medewerker] | contribuant:John |
-| [!UICONTROL Locatie] | locatie:India |
-| [!UICONTROL Beschrijving] | beschrijving:&quot;Voorbeeldafbeelding&quot; |
-| [!UICONTROL Gereedschap Maker] | creatortool:&quot;Adobe Photoshop 7.0&quot; |
-| [!UICONTROL Copyrighteigenaar] | copyrightowner:&quot;Adobe Systems&quot; |
-| [!UICONTROL Medewerker] | contribuant:John |
-| [!UICONTROL Gebruiksvoorwaarden] | usageterms:&quot;CopyRights Reserved&quot; |
-| [!UICONTROL Gemaakt] | gemaakt:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Vervaldatum] | verloopt:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Op tijd] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Uit-tijd] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
-| [!UICONTROL Tijdsbereik] (verloopt dateontime, offtime) | Veld facet: lager gebonden..bovenaan |
-| [!UICONTROL Pad] | /content/dam/&lt;naam map> |
-| [!UICONTROL PDF-titel] | pdftitle:&quot;Adobe-document&quot; |
+| [!UICONTROL Contributor] | contribuant:John |
+| [!UICONTROL Location] | locatie:India |
+| [!UICONTROL Description] | beschrijving:&quot;Voorbeeldafbeelding&quot; |
+| [!UICONTROL Creator tool] | creatortool:&quot;Adobe Photoshop 7.0&quot; |
+| [!UICONTROL Copyright Owner] | copyrightowner:&quot;Adobe Systems&quot; |
+| [!UICONTROL Contributor] | contribuant:John |
+| [!UICONTROL Usage Terms] | usageterms:&quot;CopyRights Reserved&quot; |
+| [!UICONTROL Created] | gemaakt:YYYY-MM-DDTHH:MM:SS.000+05:30.YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Expires Date] | verloopt:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL On time] | ontime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Off time] | offtime:YYYY-MM-DDTHH:MM:SS.000+05:30..YYYY-MM-DDTHH:MM:SS.000+05:30 |
+| [!UICONTROL Range of time] (verloopt dateontime, offtime) | Veld facet: lager gebonden..bovenaan |
+| [!UICONTROL Path] | /content/dam/&lt;naam map> |
+| [!UICONTROL PDF Title] | pdftitle:&quot;Adobe-document&quot; |
 | [!UICONTROL Subject] | onderwerp: &quot;Opleiding&quot; |
 | [!UICONTROL Tags] | tags:&quot;Locatie en reizen&quot; |
 | [!UICONTROL Type] | type:&quot;image\png&quot; |
-| [!UICONTROL Breedte van afbeelding] | breedte:ondergrens..bovenaan |
-| [!UICONTROL Hoogte van afbeelding] | hoogte:ondergrens..bovenaan |
+| [!UICONTROL Width of image] | breedte:ondergrens..bovenaan |
+| [!UICONTROL Height of image] | hoogte:ondergrens..bovenaan |
 | [!UICONTROL Person] | persoon:John |
 
 Hier volgen enkele voorbeelden van zoekindelingen voor complexe query&#39;s:
@@ -99,7 +102,7 @@ titel:&quot;Reynolds&quot;
 
 titel:&quot;Vergadering&quot;;
 
-* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoeken naar een Adobe-tekenreeks in elementen met de naam title=Jan Smit)
+* Elementen weergeven die een bepaalde tekenreeks bevatten en een specifieke eigenschapswaarde hebben (bijvoorbeeld: zoeken naar Adobe van tekenreeksen in elementen met title=Jan Doe)
 
 &amp;ast;Adobe&amp;ast; titel:&quot;Jan Smit &quot;OR title:&quot;Jan Smit&quot; &amp;ast;Adobe&amp;ast;
 
@@ -121,13 +124,13 @@ Het zoeken naar volledige tekst ondersteunt ook operatoren zoals -, ^, enzovoort
 U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoekopdrachten op basis van trefwoorden te stimuleren. Met andere woorden, de afbeeldingen waarvoor u specifieke trefwoorden promoot, worden boven aan de zoekresultaten weergegeven wanneer u op basis van deze trefwoorden zoekt.
 
 1. Open vanuit de interface Elementen de pagina met eigenschappen voor het element waarvoor u een trefwoord wilt opwaarderen.
-1. Schakel over naar het tabblad **[!UICONTROL Geavanceerd]** en klik op **[!UICONTROL Toevoegen]** onder **[!UICONTROL Hoogte voor zoektrefwoorden]**.
+1. Schakel over naar het **[!UICONTROL Advanced]** tabblad en klik/tik **[!UICONTROL Add]** onder **[!UICONTROL Elevate for search keywords]**.
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. Geef in het vak **[!UICONTROL Zoeken bevorderen]** een trefwoord op waarvoor u de zoekactie naar de afbeelding wilt opvoeren en klik op **[!UICONTROL Toevoegen]**. Geef indien nodig meerdere trefwoorden op dezelfde manier op.
+1. Geef in het **[!UICONTROL Search Promote]** vak een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik/tik op de afbeelding **[!UICONTROL Add]**. Geef indien nodig meerdere trefwoorden op dezelfde manier op.
 
    ![add_search_word](assets/add_search_word.png)
 
-1. Klik/tik op **[!UICONTROL Opslaan en sluiten]**.
+1. Klik of tik op **[!UICONTROL Save & Close]**.
 1. Zoek naar het sleutelwoord gebruikend het vakje van Onderzoek. De middelen waarvoor u dit trefwoord hebt gepromoot, worden weergegeven in de beste zoekresultaten.
