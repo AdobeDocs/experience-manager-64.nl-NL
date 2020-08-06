@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ec062567-1c6b-497b-a1e7-1dbac2d60852
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 0%
 
 ---
 
@@ -21,6 +24,6 @@ Gebruik de pagina van het Beheer van het Domein om een bestaand domein als verou
 
 Als u een domein met de zelfde naam zoals een geschrapt domein creeert, wordt het geschrapte domein opnieuw opgenomen samen met de informatie die het bevatte. Het DefaultDom-domein kan niet worden verwijderd.
 
-1. Klik in de beheerconsole op **[!UICONTROL Instellingen > Gebruikersbeheer > Domeinbeheer]**.
-1. Schakel het selectievakje voor het domein dat u wilt verwijderen in, klik op **[!UICONTROL Verwijderen]** en klik op **[!UICONTROL OK]**.
+1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Domain Management]**.
+1. Schakel het selectievakje in voor het domein dat u wilt verwijderen, klik **[!UICONTROL Delete]** en klik op **[!UICONTROL OK]**.
 
