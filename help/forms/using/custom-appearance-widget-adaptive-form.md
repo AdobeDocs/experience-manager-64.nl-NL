@@ -1,8 +1,8 @@
 ---
 title: Aangepaste weergaven maken voor adaptieve formuliervelden
 seo-title: Aangepaste weergaven maken voor adaptieve formuliervelden
-description: 'De weergave van componenten buiten de box aanpassen in Adaptieve formulieren. '
-seo-description: 'De weergave van componenten buiten de box aanpassen in Adaptieve formulieren. '
+description: 'De weergave van out-of-the-box componenten aanpassen in Adaptive Forms. '
+seo-description: 'De weergave van out-of-the-box componenten aanpassen in Adaptive Forms. '
 uuid: 1f2d2ac4-44e1-45f9-a6a0-eb95931b0633
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 1115697c-cb7d-441a-876f-3c01761568c0
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1718'
+ht-degree: 0%
 
 ---
 
@@ -64,8 +67,8 @@ De opdracht downloadt de Maven-plug-ins en archetype-informatie van de opslagpla
 * **artefactId**: Artefact-id die wordt gebruikt door het gegenereerde Maven-project.
 * **versie**: Versie voor het gegenereerde Maven-project.
 * **pakket**: Pakket gebruikt voor de bestandsstructuur.
-* **artifactName**: Artefactnaam van het gegenereerde AEM-pakket.
-* **packageGroup**: Pakketgroep van het gegenereerde AEM-pakket.
+* **artifactName**: Artefactnaam van het gegenereerde AEM.
+* **packageGroup**: Pakketgroep van het gegenereerde AEM.
 * **widgetName**: Weergavenaam die ter referentie wordt gebruikt.
 
 Het gegenereerde project heeft de volgende structuur:
@@ -118,7 +121,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Functie</strong></td> 
+   <td><strong>-functie</strong></td> 
    <td><strong>Beschrijving</strong></td> 
   </tr> 
   <tr> 
@@ -129,7 +132,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
    <td><code>getEventMap</code></td> 
    <td>Retourneert een kaart voor het converteren van HTML-gebeurtenissen naar XFA-gebeurtenissen. <br /> <code class="code">{
       blur: XFA_EXIT_EVENT,
-      }</code><br /> In dit voorbeeld wordt getoond dat <code>blur</code> een HTML-gebeurtenis is en dat <code>XFA_EXIT_EVENT</code> de bijbehorende XFA-gebeurtenis is. </td> 
+      }</code><br /> In dit voorbeeld wordt getoond dat het een HTML-gebeurtenis <code>blur</code> is en dat het de overeenkomstige XFA-gebeurtenis <code>XFA_EXIT_EVENT</code> is. </td> 
   </tr> 
   <tr> 
    <td><code>getOptionsMap</code></td> 
@@ -158,7 +161,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
    * Breid de `getOptionsMap` methode uit om het even welke optie met voeten te treden die als gevolg van een verandering in widget wordt beïnvloed. De functie retourneert een toewijzing die details bevat voor de actie die moet worden uitgevoerd bij wijziging van een optie. De sleutels zijn de opties die aan widget worden verstrekt en de waarden zijn de functies die worden geroepen wanneer een verandering in de optie wordt ontdekt.
    * De `getEventMap` methode wijst gebeurtenissen toe die door de widget worden geactiveerd, met de gebeurtenissen die door het adaptieve formuliermodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen toe voor de standaardwidget en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
    * De afbeeldingsvoorwaarde weergeven `showDisplayValue` en bewerken kan worden overschreven zodat deze een ander gedrag heeft. `showValue` Pas de afbeeldingsvoorwaarde toe.
-   * De `getCommitValue` methode wordt aangeroepen door het adaptieve formulierframework wanneer de `commit`gebeurtenis plaatsvindt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Zie Expressies voor [adaptieve formulieren](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)voor meer informatie.
+   * De `getCommitValue` methode wordt aangeroepen door het adaptieve formulierframework wanneer de `commit`gebeurtenis plaatsvindt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Zie [Adaptieve Forms-expressies](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p)voor meer informatie.
    * Het sjabloonbestand biedt voorbeeldimplementatie voor verschillende methoden. Verwijder methoden die niet moeten worden uitgebreid.
 
 ### Een clientbibliotheek maken {#create-a-client-library}
@@ -167,7 +170,7 @@ Het voorbeeldproject dat door het Maven archetype wordt geproduceerd leidt autom
 
 ### Samenstellen en installeren {#build-and-install}
 
-Om het project te bouwen, voer het volgende bevel op shell uit om een pakket te produceren CRX dat op de server moet worden geïnstalleerd AEM.
+Om het project te bouwen, voer het volgende bevel op shell uit om een pakket te produceren CRX dat op de AEM server moet worden geïnstalleerd.
 
 `mvn clean install`
 
@@ -183,7 +186,7 @@ De aangepaste weergave toepassen op een adaptief formulierveld:
 1. Open het dialoogvenster **Eigenschap** voor het veld waarop u de aangepaste weergave wilt toepassen.
 1. Werk op het tabblad **Stijl** de `CSS class` eigenschap bij en voeg de naam van de vormgeving toe aan de `widget_<widgetName>` indeling. Bijvoorbeeld: **widget_numericstepper**
 
-## Voorbeeld: Een aangepaste weergave maken {#sample-create-a-custom-appearance-nbsp}
+## Voorbeeld: Een aangepaste weergave maken   {#sample-create-a-custom-appearance-nbsp}
 
 Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot stand te brengen om als numerieke stapper of schuif te verschijnen. Voer de volgende stappen uit:
 
@@ -215,11 +218,11 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
 1. Open het gereedschap Eclipse en voer de volgende handelingen uit om het Eclipse-project te importeren:
 
-   1. Selecteer **[!UICONTROL Bestand > Importeren > Bestaande projecten in werkruimte]**.
+   1. Selecteer **[!UICONTROL File > Import > Existing Projects into Workspace]**.
 
    1. Blader naar de map waarin u de `archetype:generate` opdracht hebt uitgevoerd en selecteer deze.
 
-   1. Click **[!UICONTROL Finish]**.
+   1. Klik op **[!UICONTROL Finish]**.
 
       ![eclipse-screenshot](assets/eclipse-screenshot.png)
 
@@ -308,8 +311,8 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
 
 1. Open het adaptieve formulier in de bewerkingsmodus waarop u de aangepaste weergave wilt toepassen en voer de volgende handelingen uit:
 
-   1. Klik met de rechtermuisknop op het veld waarop u de weergave wilt toepassen en klik op **[!UICONTROL Bewerken]** om het dialoogvenster Component bewerken te openen.
+   1. Klik met de rechtermuisknop op het veld waarop u de weergave wilt toepassen en klik om het dialoogvenster Component bewerken **[!UICONTROL Edit]** te openen.
 
-   1. Werk op het tabblad Stijl de eigenschap voor de **[!UICONTROL CSS-klasse]** bij die u wilt toevoegen `widget_numericStepper`.
+   1. Werk op het tabblad Stijl de **[!UICONTROL CSS class]** eigenschap bij die u wilt toevoegen `widget_numericStepper`.
 
 De nieuwe weergave die u zojuist hebt gemaakt, is nu beschikbaar voor gebruik.
