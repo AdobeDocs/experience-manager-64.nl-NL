@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8fe97181-600e-42ac-af25-d5d4db248740
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '656'
+ht-degree: 1%
 
 ---
 
@@ -28,8 +31,8 @@ Om een enablement middel aan de nieuwe communautaire plaats toe te voegen:
    ![chlimage_1-200](assets/chlimage_1-200.png)
 * Selecteer de communitysite waaraan de activeringsbronnen worden toegevoegd
    * Selecteer `Enablement Tutorial`
-* Selecteer in het menu ` Create`
-* Bron **[!UICONTROL selecteren]**
+* From the menu, select ` Create`
+* Selecteer **[!UICONTROL Resource]**
 
 ![chlimage_1-201](assets/chlimage_1-201.png)
 
@@ -37,15 +40,15 @@ Om een enablement middel aan de nieuwe communautaire plaats toe te voegen:
 
 Vul de basisinformatie voor de Middel in:
 
-* **[!UICONTROL Sitenaam]**:
+* **[!UICONTROL Site Name]**:
 ingesteld op de naam van de geselecteerde communitysite: Zelfstudie inschakelen
-* **[!UICONTROL Naam van bron&amp;ast;]**: Skiles 1
-* **[!UICONTROL Tags]**:Zelfstudie: Sport/Skieten
-* **[!UICONTROL Tonen in catalogus]**: Aan
-* **[!UICONTROL Omschrijving]**: Sneeuw schuiven voor beginners
-* **[!UICONTROL Afbeelding]**toevoegen: Voeg een beeld toe om het Middel aan het lid in hun mening van Toewijzingen te vertegenwoordigen
+* **[!UICONTROL Resource Name&ast;]**: Skiles 1
+* **[!UICONTROL Tags]**: Zelfstudie: Sport/Skieten
+* **[!UICONTROL Show in Catalog]**: Aan
+* **[!UICONTROL Description]**: Sneeuw schuiven voor beginners
+* **[!UICONTROL Add Image]**: Voeg een beeld toe om het Middel aan het lid in hun mening van Toewijzingen te vertegenwoordigen
    ![chlimage_1-202](assets/chlimage_1-202.png)
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 ### Inhoud toevoegen {#add-content}
 
@@ -59,30 +62,36 @@ Upload een resource. Als een videobron een aangepaste afbeelding uploadt om weer
 
 ![chlimage_1-205](assets/chlimage_1-205.png)
 
-* Selecteer **[!UICONTROL Volgende]**
+* select **[!UICONTROL Next]**
 
-###  Instellingen {#settings}
+### Instellingen {#settings}
 
-* **[!UICONTROL Sociale instellingen]** Laat de standaardinstellingen ongewijzigd om het maken van opmerkingen en het beoordelen van activeringsbronnen door studenten te ervaren.
-* **[!UICONTROL Vervaldatum]**
+* **[!UICONTROL Social Settings]**
+Laat de standaardinstellingen ongewijzigd om het maken van opmerkingen en het beoordelen van activeringsbronnen door studenten te ervaren.
+* **[!UICONTROL Due Date]**
+
    *(Optioneel)* Er kan een datum worden geselecteerd waarop de toewijzing moet worden voltooid.
 * **[!UICONTROL Resource Author]**
+
    *(Optioneel)* Laat dit veld leeg.
-* **[!UICONTROL Resource contact&amp;ast;]**
+* **[!UICONTROL Resource Contact&ast;]**
+
    *(Vereist)* Gebruik het keuzemenu om lid te selecteren `Quinn Harper`.
 * **[!UICONTROL Resource Expert]**
+
    *(Optioneel)* Laat dit veld leeg.
    **Opmerking**: als gebruikers of groepen niet zichtbaar zijn, controleert u of ze aan de `Community Enable Members` groep zijn toegevoegd en op de publicatie-instantie zijn *opgeslagen* .
-   ![chlimage_1-205](assets/chlimage_1-206.png)
-* Selecteer **[!UICONTROL Volgende]**
+   ![chlimage_1-206](assets/chlimage_1-206.png)
+* Selecteer **[!UICONTROL Next]**
 
 ### Toewijzingen {#assignments}
 
-* **[!UICONTROL Voeg Toewijzers]** verlaten unset toe aangezien dit enablement middel aan een het leren weg zal worden toegevoegd. Als een leerling aan het individuele enablement middel evenals een learningpPath wordt toegewezen die het enablement middel bevat, zal de leerling tweemaal aan het enablement middel worden toegewezen.
+* **[!UICONTROL Add Assignees]**
+Laat de set ongedaan omdat deze activeringsbron wordt toegevoegd aan een leerpad. Als een leerling aan het individuele enablement middel evenals een learningpPath wordt toegewezen die het enablement middel bevat, zal de leerling tweemaal aan het enablement middel worden toegewezen.
 
 ![chlimage_1-207](assets/chlimage_1-207.png)
 
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
 
 ![chlimage_1-208](assets/chlimage_1-208.png)
 
@@ -119,24 +128,24 @@ Keer terug naar de lijst van de Leergids van Enablement van de Middelen van het.
 Een leerpad is een logische groepering van bronnen voor activering die een cursus vormen.
 
 * Van de console van Middelen, selecteer `+ Create`
-* Leerpad **[!UICONTROL selecteren]**
+* Selecteer **[!UICONTROL Learning Path]**
 
 ![chlimage_1-212](assets/chlimage_1-212.png)
 
-Voeg de **[!UICONTROL basisinformatie]** toe:
+Voeg de **[!UICONTROL Basic Info]**:
 
-* **[!UICONTROL Naam]** leerpad: Ski Lessen
-* **[!UICONTROL Tags]**:Zelfstudie: Skieten
-* **[!UICONTROL Tonen in catalogus]**: ongecontroleerd laten
-* **[!UICONTROL Upload een beeld]** om de het leren weg in de console van Middelen te vertegenwoordigen
+* **[!UICONTROL Learning Path Name]**: Ski Lessen
+* **[!UICONTROL Tags]**: Zelfstudie: Skieten
+* **[!UICONTROL Show in Catalog]**: ongecontroleerd laten
+* **[!UICONTROL Upload an image]** om de het leren weg in de console van Middelen te vertegenwoordigen
 
 ![chlimage_1-213](assets/chlimage_1-213.png)
 
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 Sla het volgende deelvenster over omdat er geen in de eerste plaats leerpaden zijn die u wilt toevoegen.
 
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 In het deelvenster Bronnen toevoegen
 
@@ -148,20 +157,23 @@ In het deelvenster Bronnen toevoegen
 >
 >U kunt alleen de bronnen selecteren die beschikbaar zijn op hetzelfde niveau als het leerpad. Bijvoorbeeld, voor een leerweg die in een groep wordt gecreeerd slechts zijn de middelen van het groepsniveau beschikbaar; voor een leerpad dat in een gemeenschapssite is gemaakt, zijn de bronnen in die site beschikbaar voor toevoeging aan het leerpad.
 
-* Selecteer **[!UICONTROL Verzenden]**.
+* Selecteer **[!UICONTROL Submit]**.
 
 ![chlimage_1-214](assets/chlimage_1-214.png) ![chlimage_1-215](assets/chlimage_1-215.png)
 
-* Selecteer **[!UICONTROL Volgende]**
+* Selecteer **[!UICONTROL Next]**
 
 ![chlimage_1-216](assets/chlimage_1-216.png)
 
-* **[!UICONTROL Toewijzingen toevoegen]** Gebruik het keuzemenu om de `Community Ski Class` groep te selecteren. Deze groep moet leden `Riley Taylor` en `Sidney Croft.`
+* **[!UICONTROL Add Assignees]**
+Gebruik het keuzemenu om het 
+`Community Ski Class` groep, die leden `Riley Taylor` en `Sidney Croft.`
 
-* **[!UICONTROL Leerpad contactpersoon&amp;ast;]**
+* **[!UICONTROL Learning Path Contact&ast;]**
+
    *(Vereist)* Gebruik het keuzemenu om lid te selecteren `Quinn Harper`.
 
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
 
 ![chlimage_1-217](assets/chlimage_1-217.png)
 
