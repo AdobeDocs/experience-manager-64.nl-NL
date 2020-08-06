@@ -1,8 +1,8 @@
 ---
 title: Grondbeginselen van Community-componenten
 seo-title: Grondbeginselen van Community-componenten
-description: Functies van Gemeenschappen toevoegen aan AEM-sites in bewerkingsmodus en componenten configureren
-seo-description: Functies van Gemeenschappen toevoegen aan AEM-sites in bewerkingsmodus en componenten configureren
+description: Functies van Gemeenschappen toevoegen aan AEM sites in bewerkingsmodus en componenten configureren
+seo-description: Functies van Gemeenschappen toevoegen aan AEM sites in bewerkingsmodus en componenten configureren
 uuid: c017a7c5-40d1-4592-9317-96fd727dac86
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 21714581-7645-4b47-a9b0-9f1424013240
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '380'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
 
 ## Overzicht {#overview}
 
-In het gedeelte dat wordt geschreven in de documentatie wordt beschreven hoe u de functies van Communities toevoegt aan AEM-sites in de modus Bewerken van auteur en hoe u componentconfiguraties beschrijft.
+In het gedeelte dat wordt geschreven in de documentatie wordt beschreven hoe u de functies van een Gemeenschappen toevoegt aan AEM sites in de bewerkingsmodus van de auteur en hoe u componentconfiguraties beschrijft.
 
-Componenten kunnen worden onderzocht met behulp van een AEM-instantie en de interactieve handleiding voor [Community Components](components-guide.md).
+Componenten kunnen worden onderzocht met behulp van een AEM en de interactieve [Community Components-handleiding](components-guide.md).
 
 ## Toegang tot onderdelen van Gemeenschappen {#accessing-communities-components}
 
@@ -33,7 +36,7 @@ De beschikbare communautaire componenten zijn [hier](author-communities.md#avail
 >
 >Voor algemene ontwerpinformatie raadpleegt u de [handleiding voor het maken van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 >
->Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md).
+>Als u niet bekend bent met AEM, bekijkt u de documentatie over de [basisafhandeling](../../help/sites-authoring/basic-handling.md).
 
 ### Ontwerpmodus invoeren {#entering-design-mode}
 
@@ -79,13 +82,13 @@ Voor ontwerpinformatie:
 
 Voor administratieve informatie:
 
-* Tagnaamruimten maken (taxonomie): Tags [beheren](../../help/sites-administering/tags.md)
+* Tagnaamruimten maken (taxonomie): [Tags beheren](../../help/sites-administering/tags.md)
 * Configuratie van community-site: zie [TAGS](sites-console.md#tagging)
 * [Door gebruiker gegenereerde inhoud labelen](../../help/sites-authoring/tags.md)
 * [Tags toewijzen](tag-resources.md)
 
 Voor informatie over ontwikkelaars:
 
-* [AEM Tagging Framework](../../help/sites-developing/framework.md)
+* [Kader voor tags AEM](../../help/sites-developing/framework.md)
 * [Grondbeginselen van tags](tag.md)
 
