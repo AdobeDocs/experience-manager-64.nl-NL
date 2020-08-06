@@ -1,8 +1,8 @@
 ---
 title: De volgorde van de evaluatie voor verificatie wijzigen
 seo-title: De volgorde van de evaluatie voor verificatie wijzigen
-description: 'U kunt de volgorde wijzigen waarin AEM-formulieren meerdere verificatieproviders evalueren. '
-seo-description: 'U kunt de volgorde wijzigen waarin AEM-formulieren meerdere verificatieproviders evalueren. '
+description: 'U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren. '
+seo-description: 'U kunt de volgorde wijzigen waarin AEM formulieren meerdere verificatieproviders evalueren. '
 uuid: c2693e5b-cf09-4bb8-815a-2b20ebf6eea0
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5434df9c-ecf6-450a-aa7e-d9ab69b66fe6
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '167'
+ht-degree: 0%
 
 ---
 
 
 # De volgorde van de evaluatie voor verificatie wijzigen {#change-the-order-of-evaluation-for-authentication}
 
-Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijzigen waarin AEM-formulieren deze evalueren voor verificatie. De orde van de authentificatieleveranciers die in het config.xml- dossier worden vermeld bepaalt de orde van evaluatie voor authentificatie.
+Als u meerdere verificatieproviders hebt geconfigureerd, kunt u de volgorde wijzigen waarin AEM formulieren deze evalueren voor verificatie. De orde van de authentificatieleveranciers die in het config.xml- dossier worden vermeld bepaalt de orde van evaluatie voor authentificatie.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden importeren en exporteren.
 1. Als u de huidige configuratie-instelling naar een bestand wilt exporteren, klikt u op Exporteren en slaat u het configuratiebestand op een andere locatie op.
