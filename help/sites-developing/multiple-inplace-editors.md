@@ -1,6 +1,6 @@
 ---
 title: Vorm RTE voor veelvoudige op zijn plaats redacteurs.
-description: Creeer veelvoudige op zijn plaats redacteurs in Adobe Experience Manager door de Rich Redacteur van de Tekst te vormen.
+description: U kunt meerdere lokale editors maken in Adobe Experience Manager door de Rich Text Editor te configureren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
@@ -71,6 +71,7 @@ Voer de volgende stappen uit om meerdere editors te configureren:
 
    * Naam: De naam van elke knoop is de naam van het bezit dat het vertegenwoordigt, zoals het geval met dalingsdoelstellingen is. Bijvoorbeeld `image` en `text`.
    * Type: `cq:ChildEditorConfig`
+
    >[!NOTE]
    >
    >Er is een correlatie tussen de gedefinieerde neerzetdoelen en de onderliggende editors. De naam van de `cq:ChildEditorConfig` knoop wordt beschouwd als dalingsdoel identiteitskaart, voor gebruik als parameter aan de geselecteerde kindredacteur. Als het bewerkbare subgebied bijvoorbeeld geen neerzetdoel heeft in een tekstcomponent, wordt de naam van de onderliggende editor nog steeds beschouwd als een id om het overeenkomende bewerkbare gebied te identificeren.
@@ -85,7 +86,7 @@ Voer de volgende stappen uit om meerdere editors te configureren:
 
 ### Aanvullende configuratie voor Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
-De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Voor details, zie de Rich [Redacteur](/help/sites-administering/rich-text-editor.md)van de Tekst vormen. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. Adobe raadt u aan het nieuwe configuratieknooppunt te maken, `cq:InplaceEditingConfig` aangezien elke afzonderlijke RTE een andere configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
+De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Voor details, zie de Rich [Redacteur](/help/sites-administering/rich-text-editor.md)van de Tekst vormen. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. Adobe adviseert het creëren van de nieuwe configuratieknoop onder `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
 
 ```xml
     texttext
@@ -118,5 +119,5 @@ Voor algemene informatie over het toevoegen van een op plaats-redacteur zie het 
 
 >[!MORELIKETHIS]
 >
->* [Rich Text Editor configureren in Experience Manager](/help/sites-administering/rich-text-editor.md).
+>* [Vorm Rich Text Editor in Experience Manager](/help/sites-administering/rich-text-editor.md).
 
