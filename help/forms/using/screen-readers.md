@@ -10,13 +10,16 @@ topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '345'
+ht-degree: 0%
 
 ---
 
 
 # Schermlezers voor HTML5-formulieren {#screen-readers-for-html-forms}
 
-Met HTML5-formuliercomponenten wordt XFA-formuliersjablonen weergegeven in de HTML5-indeling. Deze formulieren kunnen worden weergegeven in alle standaardbrowsers die HTML5 ondersteunen. Ter ondersteuning van vergelijkbare ervaringen met het vastleggen van gegevens in PDF- en HTML5-formulieren, blijft de indeling van PDF-formulieren behouden in HTML5-formulieren.
+Met HTML5-formuliercomponenten wordt XFA-formuliersjablonen weergegeven in de HTML5-indeling. Deze formulieren kunnen worden weergegeven in alle standaardbrowsers die HTML5 ondersteunen. Ter ondersteuning van vergelijkbare ervaringen met het vastleggen van gegevens in PDF- en HTML5-formulieren, blijft de indeling van PDF forms behouden in HTML5-formulieren.
 
 HTML5-formulieren maken gebruik van standaard HTML-constructies die het gebruik van gewone toegankelijkheidsgereedschappen voor HTML in deze formulieren mogelijk maken. Als een formulier is ontworpen volgens de aanbevolen procedures voor toegankelijke formulieren, werkt het met alle ondersteunde schermlezers. Bovendien worden dergelijke formulieren ingeschakeld voor toetsenbordnavigatie.
 
