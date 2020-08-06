@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f48fa5ba-749b-4d3d-a4dd-c802006c8f07
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '1923'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
 
 ## Wat is Hoest Dag 2 {#what-is-tough-day}
 
-Tough Day 2 is een toepassing waarmee u de limieten van uw AEM-instantie kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt [deze opname](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) bekijken voor een presentatie van de toepassing.
+Dag 2 is een toepassing waarmee u de grenzen van uw AEM-instantie kunt testen. Het kan uit de doos met de standaardtestreeks worden gelopen of het kan worden gevormd om aan uw testende behoeften te passen. U kunt [deze opname](https://docs.adobe.com/ddc/en/gems/Toughday2---A-new-and-improved-stress-testing-and-benchmarking-tool.html) bekijken voor een presentatie van de toepassing.
 
 ## Hoe wordt Tough Day 2 uitgevoerd {#how-to-run-tough-day}
 
@@ -124,19 +127,19 @@ U vindt de relevante parameters in de onderstaande lijst:
 
 | **Parameter** | **Beschrijving** | **Standaardwaarde** | **Mogelijke waarden** |
 |---|---|---|---|
-| `--installsamplecontent=<Val>` | Installeert of slaat het standaard Tough Day 2 inhoudspakket over. | true |  true of false |
+| `--installsamplecontent=<Val>` | Installeert of slaat het standaard Tough Day 2 inhoudspakket over. | true | true of false |
 | `--protocol=<Val>` | Het protocol dat voor de gastheer wordt gebruikt. | http | http of https |
 | `--host=<Val>` | De hostnaam of IP die als doel zal worden ingesteld. |  |  |
 | `--port=<Val>` | De poort van de host. | 4502 |  |
-| `--user=<Val>` | De gebruikersnaam voor de instantie. |  beheerder |  |
-| `--password=<Val>` | Wachtwoord voor de opgegeven gebruiker. |  beheerder |  |
+| `--user=<Val>` | De gebruikersnaam voor de instantie. | beheerder |  |
+| `--password=<Val>` | Wachtwoord voor de opgegeven gebruiker. | beheerder |  |
 | `--duration=<Val>` | De duur van de tests. Kan worden uitgedrukt in (**s**)seconden, (**m**)minuten, (**h**)uren en (**d**)dagen. | 1d |  |
 | `--timeout=<Val>` | Hoe lang een test zal lopen alvorens het zal worden onderbroken en als ontbroken gemerkt. Uitgedrukt in seconden. | 180 |  |
 | `--suite=<Val>` | De waarde kan één of een lijst (gescheiden door komma&#39;s) van vooraf bepaalde testsuites zijn. | nachtmerrie |  |
 | `--configfile=<Val>` | Het doelafbeeldingsconfiguratiebestand. |  |  |
 | `--contextpath=<Val>` | Contextpad van instantie. |  |  |
 | `--loglevel=<Val>` | Het logniveau voor de Tough Day 2-motor. | INFO | ALLES, FOUTOPSPORING, INFO, WAARSCHUWING, FOUT, FATAAL, UIT |
-| `--dryrun=<Val>` | Indien waar (true), wordt de resulterende configuratie afgedrukt en worden geen tests uitgevoerd. | false |  true of false |
+| `--dryrun=<Val>` | Indien waar (true), wordt de resulterende configuratie afgedrukt en worden geen tests uitgevoerd. | false | true of false |
 
 ## Aanpassen {#customizing}
 
@@ -163,7 +166,7 @@ tests:
   - add : CreateAssetTreeTest
 ```
 
-### Meerdere exemplaren van dezelfde test toevoegen {#adding-multiple-instances-of-the-same-test}
+### Meerdere exemplaren van dezelfde test toevoegen  {#adding-multiple-instances-of-the-same-test}
 
 U kunt ook meerdere exemplaren van dezelfde test toevoegen en uitvoeren, maar elke instantie moet een unieke naam hebben. De voorbeelden tonen hieronder hoe te om twee instanties van de zelfde test toe te voegen of door bevellijnparameters of een yaml configuratiedossier te gebruiken.
 
@@ -238,7 +241,7 @@ tests:
   - add : CreatePageTreeTest
 ```
 
-Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met de parameter `config`* *. U moet ook de naam van de suite en de werkelijke naam van de test opgeven (niet de naam van de testklasse). U kunt de testnaam in het `name` bezit van de Klasse van de Test vinden. Lees voor meer informatie over het zoeken naar testeigenschappen de sectie [Testeigenschappen](/help/sites-developing/tough-day.md#changing-the-test-properties) wijzigen.
+Bestaande tests in een bepaalde suite kunnen ook opnieuw worden geconfigureerd met behulp van de `config`* *parameter. U moet ook de naam van de suite en de werkelijke naam van de test opgeven (niet de naam van de testklasse). U kunt de testnaam in het `name` bezit van de Klasse van de Test vinden. Lees voor meer informatie over het zoeken naar testeigenschappen de sectie [Testeigenschappen](/help/sites-developing/tough-day.md#changing-the-test-properties) wijzigen.
 
 In het voorbeeld onder de standaardtitel van het element voor de `CreatePageTreeTest` (benoemd `UploadAsset`) wordt gewijzigd in &quot;NewAsset&quot;.
 
@@ -346,7 +349,7 @@ Langzame Dag 2 output zowel testmetriek als logboeken. Lees de volgende secties 
 
 ### Metrisch testen {#test-metrics}
 
-Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren. **Metriek met de**&amp;ast; Het symbool wordt alleen gemeld na geslaagde uitvoering:
+Op Tough Day 2 worden momenteel 9 testmetriek gerapporteerd die u kunt evalueren. Metriek met de **&amp;ast;** Het symbool wordt alleen gemeld na geslaagde uitvoering:
 
 | **Naam** | **Beschrijving** |
 |---|---|
