@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '379'
+ht-degree: 0%
 
 ---
 
 
 # Taken in een organisatiehiërarchie beheren met de beheerweergave {#managing-tasks-in-an-organizational-hierarchy-using-manager-view}
 
-In de werkruimte van Vormen AEM, kunnen de managers tot de taken nu toegang hebben die aan iedereen in hun hiërarchie-direct of indirect rapport-worden toegewezen en diverse acties op hen uitvoeren. De taken zijn beschikbaar op het tabblad Te doen in de werkruimte van AEM-formulieren. De acties die op de taken van directe rapporten worden gesteund zijn:
+In de werkruimte van AEM Forms, kunnen de managers tot de taken nu toegang hebben die aan iedereen in hun hiërarchie worden toegewezen - directe of indirecte rapporten - en diverse acties op hen uitvoeren. De taken zijn beschikbaar op het tabblad Te doen in de AEM Forms-werkruimte. De acties die op de taken van directe rapporten worden gesteund zijn:
 
 **Door:sturen** een taak van direct rapport aan om het even welke gebruiker.
 
@@ -27,10 +30,10 @@ In de werkruimte van Vormen AEM, kunnen de managers tot de taken nu toegang hebb
 
 **Weigeren** Een taak afwijzen die door een andere gebruiker naar een direct rapport is doorgestuurd. Deze optie is beschikbaar voor de taken die door andere gebruikers aan een direct rapport door:sturen.
 
-De Vormen van AEM beperkt de toegang van gebruikers tot slechts die taken waarvoor de gebruiker toegangsbeheer (ACL) heeft. Een dergelijke controle zorgt ervoor dat een gebruiker alleen de taken kan ophalen waarop de gebruiker toegangsmachtigingen heeft. Met behulp van externe webservices en implementaties om de hiërarchie te definiëren, kan een organisatie de definitie van manager en directe rapporten aanpassen aan hun behoeften.
+AEM Forms beperkt de toegang van gebruikers tot slechts die taken waarvoor de gebruiker toegangsbeheer (ACL) heeft. Een dergelijke controle zorgt ervoor dat een gebruiker alleen de taken kan ophalen waarop de gebruiker toegangsmachtigingen heeft. Met behulp van externe webservices en implementaties om de hiërarchie te definiëren, kan een organisatie de definitie van manager en directe rapporten aanpassen aan hun behoeften.
 
-1. Maak een DSC. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;onderwerp in [Programmering met de gids van Vormen](https://www.adobe.com/go/learn_aemforms_programming_63) AEM.
-1. In DSC, bepaal een nieuwe SPI voor hiërarchiebeheer om directe rapporten en hiërarchie binnen de gebruikers van Vormen AEM te bepalen. Hier volgt een voorbeeld van een Java™-codefragment.
+1. Maak een DSC. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;onderwerp in [Programmering met de gids van AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. In DSC, bepaal nieuw SPI voor hiërarchiebeheer om directe rapporten en hiërarchie binnen de gebruikers van AEM Forms te bepalen. Hier volgt een voorbeeld van een Java™-codefragment.
 
    ```as3
    public class MyHierarchyMgmtService 
