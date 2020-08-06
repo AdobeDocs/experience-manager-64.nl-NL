@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 18f54a1c-52aa-414d-b494-1f19b5c10345
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '357'
+ht-degree: 1%
 
 ---
 
@@ -58,7 +61,7 @@ De commentaarcomponent vestigt een commentaarsysteem zodat elke afzonderlijke po
 
 Paginering en het gebruik van URL&#39;s voor het in cache plaatsen en koppelen vereisen dat de URL uniek is per opmerkingsysteem. Daarom is slechts één instantie van een opmerkingssysteem per pagina toegestaan.
 
-Andere functies zijn al het opmerkingensysteem. Dit zijn:
+Andere functies zijn al het opmerkingensysteem. Deze zijn:
 
 * [Blog](blog-developer-basics.md)
 * [Kalender](calendar-basics-for-developers.md)
