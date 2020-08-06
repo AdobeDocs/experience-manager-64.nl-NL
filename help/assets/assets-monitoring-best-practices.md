@@ -1,6 +1,6 @@
 ---
 title: Aanbevolen werkwijzen voor middelenbewaking
-description: Aanbevolen procedures voor het controleren van de omgeving en prestaties van uw AEM-instantie nadat deze is geïmplementeerd.
+description: Beste werkwijzen voor het controleren van de omgeving en de prestaties van uw AEM instantie nadat deze is geïmplementeerd.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -13,7 +13,7 @@ ht-degree: 0%
 
 # Best practices voor middelenbewaking {#assets-monitoring-best-practices}
 
-Vanuit het standpunt van de Middelen van de Manager van de Ervaring van Adobe (AEM), zou de controle het waarnemen van en het melden van de volgende processen en de technologieën moeten omvatten:
+Vanuit het oogpunt van de activa van Adobe Experience Manager (AEM) dient de monitoring het observeren en rapporteren van de volgende processen en technologieën te omvatten:
 
 * SysteemCPU
 * Systeemgeheugengebruik
@@ -26,7 +26,7 @@ Vanuit het standpunt van de Middelen van de Manager van de Ervaring van Adobe (A
 
 * Gezondheidscontroles op de OSGi-console
 
-AEM-middelen kunnen doorgaans op twee manieren worden gecontroleerd: live controle en langdurige bewaking.
+AEM Assets kan doorgaans op twee manieren worden bewaakt: live bewaking en langdurige bewaking.
 
 ## Live bewaking {#live-monitoring}
 
@@ -41,10 +41,10 @@ U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling o
 * [IFP](http://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Installeer Ftop op de meeste systemen van Linux gebruikend `yum install iftop` of `apt-get install iftop`.
 
 * Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in niet-productiemilieu&#39;s kunt gebruiken. Voor meer details, zie [hoe te om Vluchtrecorder van Java te gebruiken om CQ Runtime Problemen](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq)te diagnostiseren.
-* AEM-bestand error.log: U kunt het AEM error.log- dossier voor details van fouten onderzoeken die in het systeem worden geregistreerd. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren die u zou moeten onderzoeken.
+* AEM error.log-bestand: U kunt het bestand AEM error.log onderzoeken voor meer informatie over fouten die in het systeem zijn aangemeld. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren die u zou moeten onderzoeken.
 * [Workflowconsole](../sites-administering/workflows.md): Gebruik de workflowconsole om workflows te controleren die achterblijven of vastlopen.
 
-Gewoonlijk gebruikt u deze gereedschappen samen om een uitgebreid idee te krijgen van de prestaties van uw AEM-instantie.
+Doorgaans gebruikt u deze gereedschappen samen om een uitgebreid idee te krijgen van de prestaties van uw AEM.
 
 >[!NOTE]
 >
@@ -54,11 +54,11 @@ Gewoonlijk gebruikt u deze gereedschappen samen om een uitgebreid idee te krijge
 
 ## Controle op lange termijn {#long-term-monitoring}
 
-Bij langdurige bewaking van een AEM-instantie moeten dezelfde delen die live worden gecontroleerd, langer worden gecontroleerd. Het omvat ook het definiëren van waarschuwingen die specifiek zijn voor uw omgeving.
+Bij langdurige bewaking van een AEM instantie moeten dezelfde delen die live worden bewaakt, langer worden bewaakt. Het omvat ook het definiëren van waarschuwingen die specifiek zijn voor uw omgeving.
 
 ### Aggregatie en rapportage van stamhout {#log-aggregation-and-reporting}
 
-Er zijn verscheidene hulpmiddelen beschikbaar om logboeken samen te voegen, bijvoorbeeld Splunk(TM) en Elastic Search/Logstash/Kabana (ELK). Om de uptime van uw instantie te evalueren AEM, is het belangrijk voor u om logboekgebeurtenissen te begrijpen specifiek voor uw systeem en alarm tot stand te brengen die op hen wordt gebaseerd. Een goede kennis van uw ontwikkeling en verrichtingspraktijken kan u helpen beter begrijpen hoe te om uw proces van de logboeksamenvoeging te stemmen om kritieke alarm te produceren.
+Er zijn verscheidene hulpmiddelen beschikbaar om logboeken samen te voegen, bijvoorbeeld Splunk(TM) en Elastic Search/Logstash/Kabana (ELK). Om de uptime van uw AEM instantie te evalueren, is het belangrijk voor u om logboekgebeurtenissen te begrijpen specifiek voor uw systeem en alarm tot stand te brengen die op hen wordt gebaseerd. Een goede kennis van uw ontwikkeling en verrichtingspraktijken kan u helpen beter begrijpen hoe te om uw proces van de logboeksamenvoeging te stemmen om kritieke alarm te produceren.
 
 ### Milieu-monitoring {#environment-monitoring}
 
@@ -71,11 +71,11 @@ De bewaking van het milieu omvat de bewaking van het volgende:
 * JMX MBeans
 * Externe websites
 
-U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk item te controleren. Met deze gereedschappen kunt u waarschuwingen definiëren die specifiek zijn voor uw systeem, zoals een hoog systeemgebruik, een back-up van de workflow, storingen in de health check of niet-geverifieerde toegang tot uw website. Adobe raadt geen bepaalde gereedschappen aan boven andere. Zoek het hulpmiddel dat voor u werkt, en hefboomwerking het om de besproken punten te controleren.
+U hebt externe hulpmiddelen nodig, zoals NewRelic(TM) en AppDynamics(TM) om elk item te controleren. Met deze gereedschappen kunt u waarschuwingen definiëren die specifiek zijn voor uw systeem, zoals een hoog systeemgebruik, een back-up van de workflow, storingen in de health check of niet-geverifieerde toegang tot uw website. Adobe adviseert geen bepaalde hulpmiddelen over anderen. Zoek het hulpmiddel dat voor u werkt, en hefboomwerking het om de besproken punten te controleren.
 
 #### Interne toepassingsbewaking {#internal-application-monitoring}
 
-De interne toepassingscontrole omvat het controleren van de toepassingscomponenten die de AEM-stapel, met inbegrip van JVM, de inhoudsbewaarplaats vormen, en controle door de code van de douanetoepassing die op het platform wordt gebouwd. In het algemeen wordt het uitgevoerd via JMX-boonen die rechtstreeks kunnen worden gecontroleerd door veel populaire monitoroplossingen, zoals SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) en andere. Voor systemen die geen directe verbinding met JMX ondersteunen, kunt u shellscripts schrijven om de JMX-gegevens te extraheren en aan deze systemen beschikbaar te maken in een indeling die ze zelf begrijpen.
+De interne toepassingscontrole omvat het controleren van de toepassingscomponenten die de AEM stapel, met inbegrip van JVM, de inhoudsbewaarplaats vormen, en controle door de code van de douanetoepassing die op het platform wordt gebouwd. In het algemeen wordt het uitgevoerd via JMX-boonen die rechtstreeks kunnen worden gecontroleerd door veel populaire monitoroplossingen, zoals SolarWinds (TM), HP OpenView(TM), Hyperic(TM), Zabbix(TM) en andere. Voor systemen die geen directe verbinding met JMX ondersteunen, kunt u shellscripts schrijven om de JMX-gegevens te extraheren en aan deze systemen beschikbaar te maken in een indeling die ze zelf begrijpen.
 
 Externe toegang tot de JMX-mabeans is niet standaard ingeschakeld. Voor meer informatie over controle door JMX, zie [Controle en Beheer Gebruikend Technologie](https://docs.oracle.com/javase/7/docs/technotes/guides/management/agent.html)JMX.
 
@@ -83,7 +83,7 @@ In veel gevallen is een basislijn nodig om een statistiek effectief te kunnen co
 
 **JVM-bewaking**
 
-Net als bij elke op Java gebaseerde toepassingsstapel, is AEM afhankelijk van de bronnen die er via de onderliggende Java Virtual Machine aan worden geleverd. U kunt de status van veel van deze bronnen controleren via Platform MXBeans die door JVM beschikbaar worden gemaakt. Voor meer informatie over MXBeans, zie het [Gebruiken van de Server van het Platform MBean en Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
+Net als bij elke op Java gebaseerde toepassingsstapel, is AEM afhankelijk van de bronnen die er via de onderliggende Java Virtual Machine aan worden geleverd. U kunt de status van veel van deze bronnen controleren via Platform MXBeans die door JVM beschikbaar worden gemaakt. Voor meer informatie over MXBeans, zie het [Gebruiken van de Server van Platform MBean en Platform MXBeans](https://docs.oracle.com/javase/7/docs/technotes/guides/management/mxbeans.html).
 
 Hier volgen enkele basislijnparameters die u kunt controleren voor JVM:
 
@@ -105,9 +105,9 @@ Threads
 * Alarmdrempel: Wanneer het aantal draden groter is dan 150% van de basislijn.
 * Alarmdefinitie: Of er is een actief wegloopproces, of een inefficiënte verrichting verbruikt een grote hoeveelheid middelen. Analyseer een draadstortplaats om bij een definitie aan te komen.
 
-**AEM-bewaking**
+**AEM**
 
-AEM stelt ook een reeks statistieken en verrichtingen door JMX bloot. Deze kunnen helpen systeemgezondheid beoordelen en potentiële problemen identificeren alvorens zij gebruikers beïnvloeden. Zie de [documentatie](/help/sites-administering/jmx-console.md) over AEM JMX MBeans voor meer informatie.
+AEM stelt ook een reeks statistieken en verrichtingen via JMX bloot. Deze kunnen helpen systeemgezondheid beoordelen en potentiële problemen identificeren alvorens zij gebruikers beïnvloeden. Zie de [documentatie](/help/sites-administering/jmx-console.md) over AEM JMX MBans voor meer informatie.
 
 Hier volgen enkele basislijnparameters die u voor AEM kunt controleren:
 
@@ -186,13 +186,13 @@ Hier zijn een aantal uit-van-de-doos gezondheidscontroles die nuttig zijn om te 
 
 ## Gemeenschappelijke kwesties en resoluties  {#common-issues-and-resolutions}
 
-Tijdens het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met instanties op te lossen AEM:
+Tijdens het proces van controle, als u problemen ontmoet, zijn hier sommige het oplossen van problementaken die u kunt uitvoeren om gemeenschappelijke kwesties met AEM instanties op te lossen:
 
 * Als u TarMK gebruikt, voert u de Tar-compressie vaak uit. Zie [Bewaarplaats](/help/sites-deploying/storage-elements-in-aem-6.md#maintaining-the-repository)onderhouden voor meer informatie.
 * Logboeken `OutOfMemoryError` controleren. Zie [Geheugenproblemen](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)analyseren voor meer informatie.
 * Controleer de logboeken om het even welke verwijzingen naar unindexed vragen, boomstamtraversals, of indextraversals. Deze wijzen op unindexed vragen of op ontoereikend geïndexeerde vragen. Voor beste praktijken bij het optimaliseren van vraag en het indexeren prestaties, zie [Beste praktijken voor Vragen en het Indexeren](/help/sites-deploying/best-practices-for-queries-and-indexing.md).
 * Gebruik de workflowconsole om te controleren of uw workflows naar behoren werken. Indien mogelijk kunt u meerdere workflows samenvoegen tot één workflow.
 * Herzie live monitoring en zoek naar extra knelpunten of hoge consumenten van specifieke hulpbronnen.
-* Onderzoek de uitgang punten van het cliëntnetwerk en de ingangen richten aan het AEM instantienetwerk, met inbegrip van de verzender. Dit zijn vaak knelpunten. Zie [Elementennetwerkoverwegingen](assets-network-considerations.md)voor meer informatie.
-* Upsize uw AEM server. U kunt een AEM-instantie van onvoldoende grootte hebben. De klantenservice van Adobe kan u helpen te identificeren of uw server ondermaats is.
+* Onderzoek de uitgangspunten van het cliëntnetwerk en de ingangen richten aan het AEM instantienetwerk, met inbegrip van de verzender. Dit zijn vaak knelpunten. Zie [Elementennetwerkoverwegingen](assets-network-considerations.md)voor meer informatie.
+* Upsize uw AEM server. U hebt mogelijk een te grote AEM. De klantenservice van Adobe kan u helpen bepalen of uw server te klein is.
 * Onderzoek de `access.log` en de `error.log` dossiers voor ingangen rond de tijd van iets fout ging. Zoek naar patronen die op anomalieën van de douanecode kunnen wijzen. Voeg deze toe aan de lijst met gebeurtenissen die u controleert.
