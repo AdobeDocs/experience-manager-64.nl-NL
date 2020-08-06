@@ -1,8 +1,8 @@
 ---
 title: Integreren met Adobe Analytics
 seo-title: Integreren met Adobe Analytics
-description: Leer hoe u AEM kunt integreren met Adobe Analytics.
-seo-description: Leer hoe u AEM kunt integreren met Adobe Analytics.
+description: Leer hoe u AEM met Adobe Analytics kunt integreren.
+seo-description: Leer hoe u AEM met Adobe Analytics kunt integreren.
 uuid: 8329d891-1897-46f6-80ee-40244b079c0e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,12 +22,12 @@ ht-degree: 21%
 
 Door Adobe Analytics en AEM te integreren, kunt u uw webpaginageactiviteit volgen:
 
-* Met een Adobe Analytics-configuratie kan AEM verifiëren met Adobe Analytics.
+* Met een Adobe Analytics-configuratie kunnen AEM verifiëren met Adobe Analytics.
 * Een framework geeft de gegevens aan die naar uw Adobe Analytics-rapportenpakket worden verzonden.
 
 De gegevens omvatten pagina- en gebruikersgegevens; bijvoorbeeld:
 
-* gegevens die door AEM-componenten worden verzameld
+* gegevens die AEM componenten verzamelen
 * koppelingsklikken
 * videogebruiksinformatie
 * het aantal pagina-bezoeken van Adobe Analytics
@@ -35,7 +35,7 @@ De gegevens omvatten pagina- en gebruikersgegevens; bijvoorbeeld:
 Met de volgende pagina&#39;s kunt u de integratie configureren:
 
 * [Verbinding maken met Adobe Analytics en frameworks maken](/help/sites-administering/adobeanalytics-connect.md)
-* [Koppelingen bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
+* [Koppeling bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-link.md)
 * [Componentgegevens toewijzen aan Adobe Analytics-eigenschappen](/help/sites-administering/adobeanalytics-mapping.md)
 * [Video bijhouden configureren voor Adobe Analytics](/help/sites-administering/adobeanalytics-video.md)
 
@@ -50,7 +50,7 @@ U kunt de [Opt-in tovenaar](/help/sites-administering/opt-in.md) ook gebruiken o
 Zie:
 
 * [De Adobe Analytics-integratie](/help/sites-developing/extending-analytics.md) uitbreiden voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het Adobe Analytics-framework aanpassen.
-* Het kennisbankartikel, [Adobe Analytics-integratie - Problemen](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html)oplossen, voor informatie over het oplossen van problemen met uw integratie in Adobe Analytics.
+* Het kennisbankartikel, integratie van [Adobe Analytics - het oplossen van problemenkwesties](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), voor informatie over het oplossen van problemen uw integratie van Adobe Analytics.
 
 >[!NOTE]
 >
