@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: fa68c786-5102-4cc3-b61c-2565ee919768
 translation-type: tm+mt
 source-git-commit: 39b6af8ee815e8f6fa6e0b4a0a6dc80f29165243
+workflow-type: tm+mt
+source-wordcount: '1194'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ ContextHub verstrekt verscheidene modules van steekproefUI die u in uw oplossing
 * Waar u de broncode kunt vinden, zodat u deze kunt openen voor leerdoeleinden.
 * Hoe te om de module UI te vormen.
 
-Voor informatie over het toevoegen van modules UI aan ContextHub, zie het [Toevoegen van een Module](/help/sites-administering/contexthub-config.md#adding-a-ui-module)UI. Voor informatie over het ontwikkelen van modules UI, zie het [Creëren van de Moduletypes](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)ContextHub.
+Voor informatie over het toevoegen van modules UI aan ContextHub, zie het [Toevoegen van een Module](/help/sites-administering/contexthub-config.md#adding-a-ui-module)UI. Voor informatie over het ontwikkelen van modules UI, zie het [Creëren van de Moduletypes](/help/sites-developing/ch-extend.md#creating-contexthub-ui-module-types)ContextHub UI.
 
 ## Contextthub.base UI-moduletype {#contexthub-base-ui-module-type}
 
@@ -31,11 +34,11 @@ Het contexthub.base moduletype UI is het basistype voor alle andere UI moduletyp
 
 De volgende functies zijn beschikbaar:
 
-* **** Titel en pictogram: Geef een titel op voor de gebruikersinterface-module en een pictogram. Naar het pictogram kan worden verwezen met een URL of vanuit de pictogrambibliotheek van de Koral UI.
-* **** Gegevens opslaan: Identificeer één of meerdere opslag waarvan om gegevens terug te winnen.
-* **** Inhoud: Specificeer de inhoud die in de module UI verschijnt aangezien het in de toolbar ContextHub verschijnt.
-* **** Inhoud pop-up: Geef de inhoud op die in een pop-up wordt weergegeven wanneer op de gebruikersinterface wordt geklikt of er op wordt getikt.
-* **** Modus Volledig scherm: Bepaal of de modus Volledig scherm is toegestaan.
+* **Titel en pictogram:** Geef een titel op voor de gebruikersinterface-module en een pictogram. Naar het pictogram kan worden verwezen met een URL of vanuit de pictogrambibliotheek van de Koral UI.
+* **Gegevens opslaan:** Identificeer één of meerdere opslag waarvan om gegevens terug te winnen.
+* **Inhoud:** Specificeer de inhoud die in de module UI verschijnt aangezien het in de toolbar ContextHub verschijnt.
+* **Inhoud pop-up:** Geef de inhoud op die in een pop-up wordt weergegeven wanneer op de gebruikersinterface wordt geklikt of er op wordt getikt.
+* **Modus Volledig scherm:** Bepaal of de modus Volledig scherm is toegestaan.
 
 De broncode bevindt zich in /libs/granite/contexthub/code/ui/container/js/ContextHub.UI.BaseModuleRenderer.js.
 
@@ -43,29 +46,29 @@ De broncode bevindt zich in /libs/granite/contexthub/code/ui/container/js/Contex
 
 Configureer de module contexthub.base UI met behulp van een Javascript-object in JSON-indeling. Omvat om het even welke volgende eigenschappen om de eigenschappen van de UI module te vormen:
 
-* **** afbeelding: Een URL naar een afbeelding die als pictogram moet worden weergegeven.
-* **** pictogram: De naam van een [Coral UI-pictogramklasse](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) . Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.
+* **afbeelding:** Een URL naar een afbeelding die als pictogram moet worden weergegeven.
+* **pictogram:** De naam van een [Coral UI-pictogramklasse](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) . Als u een waarde opgeeft voor zowel het pictogram als de afbeeldingseigenschappen, wordt de afbeelding gebruikt.
 
-* **** titel: Een titel voor de module UI. De titel wordt weergegeven wanneer de aanwijzer op het pictogram van de gebruikersinterface wordt gepauzeerd.
-* **** volledig scherm: Een booleaanse waarde die aangeeft of de UI-module de modus Volledig scherm ondersteunt. Wordt gebruikt `true` om volledig scherm te ondersteunen en modus Volledig scherm `false` te voorkomen.
+* **titel:** Een titel voor de module UI. De titel wordt weergegeven wanneer de aanwijzer op het pictogram van de gebruikersinterface wordt gepauzeerd.
+* **volledig scherm:** Een booleaanse waarde die aangeeft of de UI-module de modus Volledig scherm ondersteunt. Wordt gebruikt `true` om volledig scherm te ondersteunen en modus Volledig scherm `false` te voorkomen.
 
-* **** sjabloon: Een malplaatje [Handlebars](https://handlebarsjs.com/) dat de inhoud specificeert in de toolbar ContextHub terug te geven. Gebruik maximaal twee `<p>` tags.
+* **sjabloon:** Een malplaatje [Handlebars](https://handlebarsjs.com/) dat de inhoud specificeert in de toolbar ContextHub terug te geven. Gebruik maximaal twee `<p>` tags.
 
-* **** storeMapping: Een sleutel-/winkeltoewijzing. Gebruik de sleutel in malplaatjes Handlebar om tot de bijbehorende ContextHub opslaggegevens toegang te hebben.
-* **** lijst: Een array met items die als een lijst in een pop-up moeten worden weergegeven wanneer op de UI-module wordt geklikt. Als u dit item opneemt, neemt u geen popoverTemplate op. De waarde is een array van objecten met de volgende toetsen:
+* **storeMapping:** Een sleutel-/winkeltoewijzing. Gebruik de sleutel in malplaatjes Handlebar om tot de bijbehorende ContextHub opslaggegevens toegang te hebben.
+* **lijst:** Een array met items die als een lijst in een pop-up moeten worden weergegeven wanneer op de UI-module wordt geklikt. Als u dit item opneemt, neemt u geen popoverTemplate op. De waarde is een array van objecten met de volgende toetsen:
 
    * titel: De tekst die voor dit item moet worden weergegeven
    * afbeelding: (Optioneel) Een URL naar een afbeelding die links moet worden weergegeven
    * pictogram: (Optioneel) Een CUI-pictogramklasse die links moet worden weergegeven. genegeerd als een afbeelding is opgegeven
    * geselecteerd: (Optioneel) Een Booleaanse waarde die aangeeft of dit item moet worden weergegeven als geselecteerd (true=selected). Geselecteerde items worden standaard weergegeven met een vet lettertype. Gebruik een `listType` eigenschap om andere weergaven te configureren (zie hieronder).
 
-* **** listType: De stijl die moet worden gebruikt voor items in de keuzelijst. Gebruik een van de volgende waarden:
+* **listType:** De stijl die moet worden gebruikt voor items in de keuzelijst. Gebruik een van de volgende waarden:
 
    * vinkje
-   *  selectievakje
+   * selectievakje
    * radio
 
-* **** popoverTemplate: Een malplaatje Handlebars dat de inhoud specificeert in popover terug te geven wanneer de module UI wordt geklikt. Als u dit item opneemt, moet u het `list` item niet opnemen.
+* **popoverTemplate:** Een malplaatje Handlebars dat de inhoud specificeert in popover terug te geven wanneer de module UI wordt geklikt. Als u dit item opneemt, moet u het `list` item niet opnemen.
 
 ### Voorbeeld {#example}
 
@@ -109,7 +112,7 @@ Instanties van de module Contextthub.browserinfo UI vereisen geen waarde voor de
 
 De module contexthub.datetime UI toont de datum en de tijd die in een opslag genoemd datetime wordt opgeslagen die op de [contexthub.datetime](/help/sites-developing/ch-samplestores.md#contexthub-datetime-sample-store-candidate) opslagkandidaat gebaseerd is.
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![chlimage_1-70](assets/chlimage_1-78.png)
 
 De module verstrekt een popover vorm die u toelaat om de datum en de tijd in de opslag te veranderen.
 
