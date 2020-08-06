@@ -1,6 +1,6 @@
 ---
 title: Richtlijnen voor afstelling van middelenprestaties
-description: Belangrijke aandachtsgebieden rond AEM-configuratie, wijzigingen in hardware, software en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
+description: De belangrijkste aandachtsgebieden rond AEM configuratie, veranderingen in hardware, software, en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
@@ -15,9 +15,9 @@ ht-degree: 0%
 
 Een installatie van Adobe Experience Manager (AEM) Assets bevat een aantal hardware-, software- en netwerkcomponenten. Afhankelijk van uw plaatsingsscenario, kunt u specifieke configuratieveranderingen in hardware, software, en netwerkcomponenten vereisen om prestatiesknelpunten te verwijderen.
 
-Bovendien zorgt het identificeren en volgen van bepaalde richtlijnen voor hardware- en softwareoptimalisatie voor een solide basis waarmee uw implementatie van AEM-middelen kan voldoen aan de verwachtingen op het gebied van prestaties, schaalbaarheid en betrouwbaarheid.
+Bovendien zorgt het identificeren en naleven van bepaalde richtlijnen voor de optimalisatie van hardware en software ervoor dat uw AEM Assets-implementatie voldoet aan de verwachtingen op het gebied van prestaties, schaalbaarheid en betrouwbaarheid.
 
-De slechte prestaties in AEM Assets kunnen gebruikerservaring rond interactieve prestaties, activa verwerking, downloadsnelheid, en andere gebieden beïnvloeden.
+Slechte prestaties in AEM Assets kunnen van invloed zijn op de interactieve prestaties, de verwerking van bedrijfsmiddelen, de downloadsnelheid en andere aspecten.
 
 In feite, is de prestatiesoptimalisering een fundamentele taak die u uitvoert alvorens u doelmetriek voor om het even welk project vestigt.
 
@@ -25,11 +25,11 @@ Hier zijn bepaalde belangrijke aandachtsgebieden waaromheen u prestatieproblemen
 
 ## Platform {#platform}
 
-Hoewel AEM op een aantal platforms wordt ondersteund, heeft Adobe de grootste ondersteuning voor native gereedschappen op Linux en Windows gevonden. Dit levert optimale prestaties en vereenvoudigt de implementatie. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een AEM Assets-implementatie. Net als bij elke AEM-implementatie moet u TarMK waar mogelijk implementeren. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van de workflow voor de implementatie van AEM-middelen te verhogen.
+Hoewel AEM op een aantal platforms wordt ondersteund, heeft Adobe de grootste ondersteuning voor native gereedschappen gevonden in Linux en Windows. Dit levert optimale prestaties en vereenvoudigt de implementatie. In het ideale geval moet u een 64-bits besturingssysteem implementeren om te voldoen aan de hoge geheugenvereisten van een AEM Assets-implementatie. Zoals bij om het even welke AEM plaatsing, zou u TarMK moeten uitvoeren waar mogelijk. Hoewel TarMK niet voorbij één enkele auteurinstantie kan schrapen, wordt het gevonden om beter te presteren dan MongoMK. U kunt TarMK-offloadinstanties toevoegen om de verwerkingskracht van uw AEM Assets-implementatie voor workflows te verhogen.
 
 ### Temp-map {#temp-folder}
 
-Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de folder van de Temp van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. In Amazon EC2 kan bijvoorbeeld een [tijdelijk station](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) worden gebruikt voor de map temp.
+Om de uploadtijden van middelen te verbeteren, gebruik krachtige opslag voor de folder van de Temp van Java. In Linux en Windows kan een RAM-station of SSD worden gebruikt. In cloudomgevingen kan een vergelijkbaar type snelle opslag worden gebruikt. In Amazon EC2 kan bijvoorbeeld een [ephalefstation](https://docs.aws.amazon.com/AWSEC2/latest/UserGuide/InstanceStorage.html) voor de map temp worden gebruikt.
 
 Ervan uitgaande dat de server over voldoende geheugen beschikt, configureert u een RAM-station. Voer in Linux de volgende opdrachten uit om een 8 GB RAM-station te maken:
 
@@ -50,7 +50,7 @@ Zodra het hoge prestaties tijdelijke volume klaar is, dan plaats de parameter JV
 
 ### Java-versie {#java-version}
 
-Omdat Oracle de release van updates voor Java 7 sinds april 2015 heeft stopgezet, raadt Adobe aan AEM Assets te implementeren op Java 8. In sommige gevallen heeft het een verbeterde prestatie aangetoond.
+Aangezien Oracle de release van updates voor Java 7 sinds april 2015 heeft stopgezet, raadt Adobe aan AEM Assets te implementeren op Java 8. In sommige gevallen heeft het een verbeterde prestatie aangetoond.
 
 ### JVM-parameters {#jvm-parameters}
 
@@ -66,11 +66,11 @@ U moet de volgende JVM-parameters instellen:
 
 ### Configuratie bestandsgegevensopslag {#file-data-store-configuration}
 
-Het wordt aanbevolen de gegevensopslag te scheiden van de segmentopslag voor alle gebruikers van AEM Assets. Bovendien kan het vormen van de `maxCachedBinarySize` en `cacheSizeInMB` parameters helpen prestaties maximaliseren. Stel dit in `maxCachedBinarySize` op de kleinste bestandsgrootte die in de cache kan worden opgeslagen. Geef de grootte op van de cache in het geheugen die moet worden gebruikt voor de datastore binnen `cacheSizeInMB`. Adobe raadt u aan deze waarde in te stellen tussen 2 en 10 procent van de totale heapgrootte. Het testen van de belasting/prestaties kan echter helpen de ideale instelling te bepalen.
+Het wordt aanbevolen de gegevensopslag te scheiden van de segmentwinkel voor alle AEM Assets-gebruikers. Bovendien kan het vormen van de `maxCachedBinarySize` en `cacheSizeInMB` parameters helpen prestaties maximaliseren. Stel dit in `maxCachedBinarySize` op de kleinste bestandsgrootte die in de cache kan worden opgeslagen. Geef de grootte op van de cache in het geheugen die moet worden gebruikt voor de datastore binnen `cacheSizeInMB`. Adobe raadt u aan deze waarde in te stellen tussen 2 en 10 procent van de totale heapgrootte. Het testen van de belasting/prestaties kan echter helpen de ideale instelling te bepalen.
 
 ### De maximale grootte van de cache voor gebufferde afbeeldingen configureren {#configure-the-maximum-size-of-the-buffered-image-cache}
 
-Wanneer u grote hoeveelheden middelen uploadt naar Adobe Experience Manager, kunt u de geconfigureerde maximale grootte van de cache voor gebufferde afbeeldingen verkleinen om onverwachte pieken in het geheugengebruik mogelijk te maken en te voorkomen dat JVM uitvalt met OutOfMemoryErrors. Bekijk een voorbeeld van een systeem met een maximale heap (- `Xmx`param) van 5 GB, een Oak BlobCache ingesteld op 1 GB en een documentcache ingesteld op 2 GB. In dit geval neemt de gebufferde cache maximaal 1,25 GB en geheugen in beslag, waardoor er slechts 0,75 GB geheugen overblijft voor onverwachte pieken.
+Wanneer u grote hoeveelheden assets uploadt naar Adobe Experience Manager, om onverwachte pieken in het geheugenverbruik mogelijk te maken en om te voorkomen dat JVM uitvalt met OutOfMemoryErrors, verkleint u de geconfigureerde maximumgrootte van de cache voor gebufferde images. Bekijk een voorbeeld van een systeem met een maximale heap (- `Xmx`param) van 5 GB, een Oak BlobCache ingesteld op 1 GB en een documentcache ingesteld op 2 GB. In dit geval neemt de gebufferde cache maximaal 1,25 GB en geheugen in beslag, waardoor er slechts 0,75 GB geheugen overblijft voor onverwachte pieken.
 
 Vorm de als buffer opgetreden voor geheim voorgeheugengrootte in de Console van het Web OSGi. Stel de eigenschap in `https://host:port/system/console/configMgr/com.day.cq.dam.core.impl.cache.CQBufferedImageCache``cq.dam.image.cache.max.memory` bytes in. 1073741824 is bijvoorbeeld 1 GB (1024 x 1024 x 1024 = 1 GB).
 
@@ -82,7 +82,7 @@ Het uitvoeren van S3 of de Gedeelde Datastore van het Dossier kan helpen om schi
 
 ### S3-gegevensopslag {#s-data-store}
 
-Met de volgende S3 Data Store-configuratie ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) kon Adobe 12,8 TB binaire grote objecten (BLOB&#39;s) uitpakken uit een bestaande bestandsgegevensopslag naar een S3-gegevensopslag op een klantsite:
+De volgende S3 configuratie van de Opslag van Gegevens ( `org.apache.jackrabbit.oak.plugins.blob.datastore.S3DataStore.cfg`) hielp Adobe 12.8 TB binaire grote voorwerpen (BLOBs) uit een bestaande opslag van dossiergegevens in een S3 gegevensopslag bij een klantenplaats halen:
 
 ```conf
 accessKey=<snip>
@@ -107,12 +107,12 @@ accessKey=<snip>
 
 ## Netwerkoptimalisatie {#network-optimization}
 
-Adobe raadt u aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die HTTP-verkeer sluizen, wat het uploaden van bestanden negatief beïnvloedt en bestanden beschadigt. Bij grote bestanden uploaden dient u ervoor te zorgen dat gebruikers een bekabelde verbinding met het netwerk hebben omdat een WiFi-netwerk snel verzadigd raakt. Voor richtlijnen bij het identificeren van netwerkknelpunten, zie de Gids [van de Grootte van](assets-sizing-guide.md)Activa. Om netwerkprestaties te beoordelen door netwerktopologie te analyseren, zie de Overwegingen van het Netwerk van [Activa](assets-network-considerations.md).
+Adobe raadt aan HTTPS in te schakelen omdat veel bedrijven firewalls hebben die HTTP-verkeer sluizen, wat het uploaden van bestanden negatief beïnvloedt en bestanden beschadigt. Bij grote bestanden uploaden dient u ervoor te zorgen dat gebruikers een bekabelde verbinding met het netwerk hebben omdat een WiFi-netwerk snel verzadigd raakt. Voor richtlijnen bij het identificeren van netwerkknelpunten, zie de Gids [van de Grootte van](assets-sizing-guide.md)Activa. Om netwerkprestaties te beoordelen door netwerktopologie te analyseren, zie de Overwegingen van het Netwerk van [Activa](assets-network-considerations.md).
 
-Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid beschikbare bandbreedte en de lading op uw instantie AEM af. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
+Primair, hangt uw strategie van de netwerkoptimalisering van de hoeveelheid beschikbare bandbreedte en de lading op uw AEM instantie af. De gemeenschappelijke configuratieopties, met inbegrip van firewalls of volmachten kunnen helpen netwerkprestaties verbeteren. Hier volgen enkele belangrijke punten:
 
-* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw instantie AEM hebt. De juiste bandbreedtetoewijzing is vooral belangrijk als AEM op AWS wordt ontvangen.
-* Als uw AEM-instantie wordt gehost op AWS, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
+* Afhankelijk van uw instantietype (klein, gematigd, groot), zorg ervoor dat u voldoende netwerkbandbreedte voor uw AEM instantie hebt. De adequate bandbreedtetoewijzing is vooral belangrijk als AEM op AWS wordt ontvangen.
+* Als uw AEM op AWS wordt gehost, kunt u profiteren van een veelzijdig schalingsbeleid. De instantie vergroten als gebruikers een hoge belasting verwachten. Downsize het voor matige/lage lading.
 * HTTPS: De meeste gebruikers hebben firewalls die het verkeer van HTTP snuffelen, wat het uploaden van dossiers of zelfs corrupte dossiers tijdens het uploaden negatief kan beïnvloeden.
 * Grote bestanden uploaden: Zorg ervoor dat gebruikers een bekabelde verbinding met het netwerk hebben (WiFi-verbindingen verzadigen snel).
 
@@ -126,7 +126,7 @@ Stel waar mogelijk de DAM Update Asset-workflow in op Transient. De instelling v
 >
 >Standaard is de DAM Update Asset-workflow ingesteld op Transient in AEM 6.3. In dit geval kunt u de volgende procedure overslaan.
 
-1. Open `http://localhost:4502/miscadmin` de AEM-instantie die u wilt configureren.
+1. Open `http://localhost:4502/miscadmin` op de AEM instantie u wilt vormen.
 
 1. Vouw in de navigatiestructuur **[!UICONTROL Tools]** > **[!UICONTROL Workflow]** > **[!UICONTROL Models]** > **[!UICONTROL dam]**.
 1. Dubbelklik **[!UICONTROL DAM Update Asset]**.
@@ -135,21 +135,21 @@ Stel waar mogelijk de DAM Update Asset-workflow in op Transient. De instelling v
 
    >[!NOTE]
    >
-   >Bepaalde functies ondersteunen geen tijdelijke workflows. Configureer geen tijdelijke workflows als deze functies vereist zijn voor de implementatie van AEM-middelen.
+   >Bepaalde functies ondersteunen geen tijdelijke workflows. Configureer geen tijdelijke workflows als deze functies vereist zijn voor uw AEM Assets-implementatie.
 
    Als er geen tijdelijke workflows kunnen worden gebruikt, voert u de workflow regelmatig uit om gearchiveerde DAM Update Asset-workflows te verwijderen om ervoor te zorgen dat de systeemprestaties niet afnemen.
 
    Normaal gesproken dient u wekelijks penseelworkflows uit te voeren. Nochtans, in middel-intensieve scenario&#39;s, zoals tijdens brede activaopname, kunt u het vaker in werking stellen.
 
-   Om werkschemazuivering te vormen, voeg een nieuwe configuratie van de Woorden van het Werkschema van Adobe Granite door de console OSGi toe. Vervolgens configureert en plant u de workflow als onderdeel van het wekelijkse onderhoudsvenster.
+   Om werkschemazuivering te vormen, voeg een nieuwe Adobe Granite configuratie van de Wrijving van het Werkschema door de console OSGi toe. Vervolgens configureert en plant u de workflow als onderdeel van het wekelijkse onderhoudsvenster.
 
    Als het leegmaken te lang duurt, is het wel even. Daarom dient u ervoor te zorgen dat uw reinigingstaken zijn voltooid om situaties te voorkomen waarin het leegmaken van werkstromen mislukt vanwege het grote aantal werkstromen.
 
-   Bijvoorbeeld, na het runnen van talrijke niet-transient werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u het Werkschema van [ACS AEM Commons Remover](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis in werking stellen. Het verwijdert overbodige, voltooide workflowexemplaren direct in plaats van te wachten tot de Adobe Granite Workflow Purge-planner wordt uitgevoerd.
+   Bijvoorbeeld, na het runnen van talrijke niet-transient werkschema&#39;s (die tot de knopen van de werkschemainstantie leidt), kunt u [ACS AEM de Werkstroom van de Gemeenschap terugwinnen](https://adobe-consulting-services.github.io/acs-aem-commons/features/workflow-remover.html) op een ad hoc basis in werking stellen. Het verwijdert overtollige, voltooide werkschemainstanties onmiddellijk eerder dan het wachten op de Adobe Granite planner van de Wrijving van het Werkschema van de.
 
 ### Maximumaantal parallelle banen {#maximum-parallel-jobs}
 
-Standaard voert AEM een maximumaantal parallelle taken uit dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door DAM Update Asset-workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat AEM andere processen uitvoert die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
+AEM wordt standaard een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door DAM Update Asset-workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat AEM andere processen uitvoeren die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
 1. Ga naar [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent)op AEM-auteur.
 1. Klik op Bewerken in elke werkstroomwachtrij die relevant is voor uw implementatie, bijvoorbeeld de Granite Transient Workflow Queue.
@@ -165,11 +165,11 @@ Vanaf AEM 6.2 en met een eigenschappak voor AEM 6.1, kunt u het ontladen met bin
 
 ### DAM Update Asset Configuration {#dam-update-asset-configuration}
 
-De DAM Update Asset-workflow bevat een volledige reeks stappen die zijn geconfigureerd voor taken, zoals het genereren van Scene7 PTIFF en de integratie van InDesign Server. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het workflowmodel voor DAM Update Asset te maken en overbodige stappen te verwijderen. In dit geval werkt u de draagraketten voor DAM Update Asset bij en wijst u deze naar het nieuwe model.
+De DAM Update Asset-workflow bevat een volledige reeks stappen die zijn geconfigureerd voor taken, zoals het genereren en integreren van Scene7 PTIFF. Het is echter mogelijk dat de meeste gebruikers niet meerdere van deze stappen nodig hebben. Adobe raadt u aan een aangepaste kopie van het workflowmodel voor DAM Update Asset te maken en overbodige stappen te verwijderen. In dit geval werkt u de draagraketten voor DAM Update Asset bij en wijst u deze naar het nieuwe model.
 
 >[!NOTE]
 >
->Als u de DAM Update Asset-workflow intensief uitvoert, kan de bestandsdatatastore aanzienlijk groter worden. De resultaten van een door Adobe uitgevoerd experiment hebben aangetoond dat de grootte van de datastore met ongeveer 400 GB kan toenemen als binnen 8 uur ongeveer 5500 workflows worden uitgevoerd.
+>Als u de DAM Update Asset-workflow intensief uitvoert, kan de bestandsdatatastore aanzienlijk groter worden. De resultaten van een door Adobe uitgevoerd experiment hebben aangetoond dat de datastore-grootte met ongeveer 400 GB kan toenemen als binnen 8 uur ongeveer 5500 workflows worden uitgevoerd.
 >
 >Het is een tijdelijke verhoging, en datastore wordt hersteld aan zijn originele grootte nadat u de taak van de datastore huisvuilinzameling in werking stelt.
 >
@@ -179,11 +179,11 @@ De DAM Update Asset-workflow bevat een volledige reeks stappen die zijn geconfig
 
 #### Genereren van uitvoering bij uitvoering {#runtime-rendition-generation}
 
-Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun website of voor distributie aan zakelijke partners. Omdat elke uitvoering de afdruk van het middel in de opslagplaats vergroot, raadt Adobe u aan deze functie zorgvuldig te gebruiken. Om de hoeveelheid bronnen te verminderen die nodig is om afbeeldingen te verwerken en op te slaan, kunt u deze afbeeldingen tijdens runtime genereren in plaats van als uitvoeringen tijdens het opnemen.
+Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun website of voor distributie aan zakelijke partners. Aangezien elke uitvoering de afdruk van het middel in de opslagplaats vergroot, raadt Adobe u aan deze functie zorgvuldig te gebruiken. Om de hoeveelheid bronnen te verminderen die nodig is om afbeeldingen te verwerken en op te slaan, kunt u deze afbeeldingen tijdens runtime genereren in plaats van als uitvoeringen tijdens het opnemen.
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een alternatieve benadering is Scene7-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de AEM-infrastructuur, maar ook de volledige publicatielaag.
+Een andere manier is om Scene7-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de AEM-infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 
@@ -208,13 +208,13 @@ Daarnaast stelt u het pad van de tijdelijke map van ImageMagick in het bestand *
 
 >[!CAUTION]
 >
->Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de AEM-prestaties. Voor meer informatie, zie [installeren en ImageMagick](best-practices-for-imagemagick.md)vormen.
+>Een fout-configuratie kan uw server onstabiel maken als ImageMagick alle beschikbare schijfruimte gebruikt. De beleidswijzigingen die vereist zijn om grote bestanden met ImageMagick te verwerken, kunnen van invloed zijn op de AEM. Voor meer informatie, zie [installeren en ImageMagick](best-practices-for-imagemagick.md)vormen.
 
 >[!NOTE]
 >
 >U vindt de bestanden ImageMagick `policy.xml` en `configure.xml` ImageMagick `/usr/lib64/ImageMagick-*/config/` in plaats van `/etc/ImageMagick/`. Zie [documentatie](https://www.imagemagick.org/script/resources.php) ImageMagick voor details op de plaatsen van het configuratiedossier.
 
-Als u AEM gebruikt op Adobe Managed Services (AMS), kunt u contact opnemen met de klantenservice van Adobe als u een groot aantal grote PSD- of PSB-bestanden wilt verwerken. Experience Manager kan PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels, niet verwerken.
+Als u AEM gebruikt op Adobe Managed Services (AMS), neemt u contact op met de klantenservice van de Adobe als u van plan bent een groot aantal grote PSD- of PSB-bestanden te verwerken. Experience Manager verwerkt PSB-bestanden met zeer hoge resolutie die groter zijn dan 30000 x 23000 pixels mogelijk niet.
 
 <!-- 
 
@@ -272,21 +272,21 @@ To disable Page Extraction:
 1. Repeat steps 3-6 for other launcher items that use **DAM Parse Word Documents** workflow model.
 -->
 
-### XMP-schrijfback {#xmp-writeback}
+### XMP {#xmp-writeback}
 
-XMP-schrijfback werkt het oorspronkelijke element bij wanneer metagegevens worden gewijzigd in AEM. Dit resulteert in het volgende:
+XMP terugschrijven werkt het oorspronkelijke element bij wanneer metagegevens worden gewijzigd in AEM. Dit resulteert in het volgende:
 
 * Het element zelf wordt gewijzigd
 * Er wordt een versie van het element gemaakt
 * DAM Update-element wordt uitgevoerd op het element
 
-De vermelde resultaten verbruiken aanzienlijke middelen. Daarom raadt Adobe aan om de functie voor het terugdraaien [van XMP uit te](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html)schakelen als dit niet verplicht is.
+De vermelde resultaten verbruiken aanzienlijke middelen. Daarom adviseert Adobe [onbruikbaar makend XMP Terugschrijven](https://helpx.adobe.com/experience-manager/kb/disable-xmp-writeback.html), als het niet wordt vereist.
 
-Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve kringactiviteit resulteren XMP als de loopwerkstroomvlag wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
+Het invoeren van een grote hoeveelheid meta-gegevens kan in middel-intensieve XMP terugzetactiviteit resulteren als de loopwerkstroomvlag wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server, zodat de prestaties voor andere gebruikers niet worden beïnvloed.
 
 ## Replicatie {#replication}
 
-Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bijvoorbeeld in een Sites-implementatie, raadt Adobe u aan kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publiceert instanties herhaalt, die de auteursinstantie vrijmaken.
+Bij het repliceren van activa aan een groot aantal publiceer instanties, bijvoorbeeld in een implementatie van Plaatsen, adviseert Adobe u kettingreplicatie te gebruiken. In dit geval dupliceert de auteurinstantie naar één enkel publicatiegeval dat beurtelings aan andere publicatieinstanties herhaalt, die de auteursinstantie vrijmaken.
 
 ### Kettingreplicatie configureren {#configure-chain-replication}
 
@@ -296,7 +296,7 @@ Als u elementen wilt repliceren naar een groot aantal publicatie-instanties, bij
 
 >[!NOTE]
 >
->Adobe raadt automatische activering van elementen niet aan. Indien nodig raadt Adobe u echter aan dit als de laatste stap in een workflow te doen, meestal DAM Update Asset.
+>Adobe beveelt geen automatische activering van elementen aan. Indien nodig raadt Adobe u echter aan dit als de laatste stap in een workflow te doen, meestal DAM Update Asset.
 
 ## Indexen zoeken {#search-indexes}
 
@@ -306,7 +306,7 @@ Maak aangepaste indexen voor query&#39;s die u vaak uitvoert. Voor details, zie 
 
 ### Lucene-indexconfiguraties {#lucene-index-configurations}
 
-Sommige optimalisaties kunnen worden uitgevoerd op de indexconfiguraties van de eikel die de prestaties van AEM-elementen kunnen helpen verbeteren:
+Sommige optimalisaties kunnen worden uitgevoerd op de Oak-indexconfiguraties die de AEM Assets-prestaties kunnen helpen verbeteren:
 
 Werk de configuratie van LuceneIndexProvider bij:
 
@@ -366,7 +366,7 @@ Lucene-tekstextractie uitschakelen:
 
 Als uw gebruikers niet de inhoud van activa hoeven te kunnen zoeken, bijvoorbeeld, die de tekst in Pdf- documenten doorzoeken, dan kunt u indexprestaties verbeteren door deze eigenschap onbruikbaar te maken.
 
-1. Ga naar AEM package manager /crx/packmgr/index.jsp
+1. Ga naar AEM pakketbeheer /crx/packmgr/index.jsp
 1. Upload en installeer het onderstaande pakket
 
 [Bestand ophalen](assets/disable_indexingbinarytextextraction-10.zip)
@@ -385,32 +385,32 @@ Op dezelfde manier kan het enige tijd duren voordat het bestand, wanneer bestand
 
 ## Prestaties testen {#performance-testing}
 
-Stel voor elke AEM-implementatie een systeem voor het testen van de prestaties in dat knelpunten snel kan opsporen en oplossen. Hier volgen enkele belangrijke aandachtsgebieden.
+Stel voor elke AEM implementatie een testregeling voor de prestaties in waarmee knelpunten snel kunnen worden opgespoord en opgelost. Hier volgen enkele belangrijke aandachtsgebieden.
 
 ### Netwerktests {#network-testing}
 
 Voor alle kwesties van netwerkprestaties van de klant, voer de volgende taken uit:
 
 * De netwerkprestaties van de test van binnen het klantennetwerk
-* Test de netwerkprestaties vanuit het Adobe-netwerk. Voor klanten van AMS, werk met uw CSE om van binnen het netwerk van Adobe te testen.
+* De netwerkprestaties van de test van binnen het netwerk van Adobe. Voor klanten van AMS, werk met uw CSE om van binnen het netwerk van Adobe te testen.
 * De netwerkprestaties van de test van een ander toegangspunt
 * Door een hulpmiddel van de netwerkbenchmark te gebruiken
 * Testen tegen de verzender
 
-### AEM-instantietests {#aem-instance-testing}
+### AEM {#aem-instance-testing}
 
 Om latentie te minimaliseren en hoge productie door efficiënt gebruik van cpu en ladingdeling te bereiken, controleer de prestaties van uw AEM instantie regelmatig. Met name:
 
 * Laadtests uitvoeren op de AEM-instantie
 * Uploadprestaties en reactiesnelheid van de gebruikersinterface bewaken
 
-## Checklist voor prestaties van AEM-middelen {#aem-assets-performance-checklist}
+## Controlelijst voor AEM Assets-prestaties {#aem-assets-performance-checklist}
 
 * Schakel HTTPS in om rondom eventuele bedrijfs-HTTP-verkeersfragmenten te komen.
 * Gebruik een bekabelde verbinding voor het uploaden van zware middelen.
 * Stel optimale JVM-parameters in.
 * Configureer een FileSystem DataStore of een S3 DataStore.
-* Genereren van subelementen uitschakelen. Als deze optie is ingeschakeld, maakt de workflow van AEM een afzonderlijk element voor elke pagina in een element van meerdere pagina&#39;s. Elk van deze pagina&#39;s is een individueel middel dat extra schijfruimte verbruikt, versioning, en extra werkschemaverwerking vereist. Als u geen afzonderlijke pagina&#39;s nodig hebt, schakelt u het genereren van subelementen en het uitnemen van pagina&#39;s uit.
+* Genereren van subelementen uitschakelen. Als deze optie is ingeschakeld, maakt AEM workflow een afzonderlijk element voor elke pagina in een element van meerdere pagina&#39;s. Elk van deze pagina&#39;s is een individueel middel dat extra schijfruimte verbruikt, versioning, en extra werkschemaverwerking vereist. Als u geen afzonderlijke pagina&#39;s nodig hebt, schakelt u het genereren van subelementen en het uitnemen van pagina&#39;s uit.
 * Schakel tijdelijke workflows in.
 * Stem de wachtrijen voor de Granite-workflow af om gelijktijdige taken te beperken.
 * Vorm ImageMagick om middelconsumptie te beperken.
