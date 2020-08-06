@@ -1,8 +1,8 @@
 ---
 title: Publikaties
 seo-title: Publikaties
-description: AEM-gemeenschappen hebben meldingen die gebeurtenissen weergeven die van belang zijn voor de ondertekenende community
-seo-description: AEM-gemeenschappen hebben meldingen die gebeurtenissen weergeven die van belang zijn voor de ondertekenende community
+description: AEM Communities heeft meldingen die gebeurtenissen weergeven die van belang zijn voor het aanmeldingscommunity-lid
+seo-description: AEM Communities heeft meldingen die gebeurtenissen weergeven die van belang zijn voor het aanmeldingscommunity-lid
 uuid: d6ef12f1-7367-49a5-b891-56800a38b2ab
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '537'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
 
 ## Overzicht {#overview}
 
-AEM Communities biedt een meldingssectie waarin gebeurtenissen worden weergegeven die van belang zijn voor de ondertekenaars in een community.
+AEM Communities biedt een meldingssectie waarin gebeurtenissen worden weergegeven die van belang zijn voor de ondertekenaars in het community-lid.
 
 Meldingen zijn vergelijkbaar met [activiteiten](essentials-activities.md) en [abonnementen](subscriptions.md) , omdat ze het gevolg kunnen zijn van
 
