@@ -10,6 +10,9 @@ content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 translation-type: tm+mt
 source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+workflow-type: tm+mt
+source-wordcount: '5897'
+ht-degree: 0%
 
 ---
 
@@ -29,36 +32,36 @@ U kunt:
 
 ## Een thema maken, downloaden of uploaden {#creating-downloading-or-uploading-a-theme}
 
-Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. Het thema wordt opgeslagen als een afzonderlijke entiteit, compleet met meta-eigenschappen zoals formulieren. Thema&#39;s die een afzonderlijke entiteit zijn, maken hergebruik in meerdere adaptieve vormen en interactieve communicatie mogelijk. U kunt een thema ook naar een ander exemplaar van AEM Forms verplaatsen en het opnieuw gebruiken.
+Met AEM Forms kunt u thema&#39;s maken, downloaden of uploaden. Net als andere elementen, zoals formulieren, documenten en letters, wordt een thema gemaakt. Het thema wordt opgeslagen als een afzonderlijke entiteit, compleet met meta-eigenschappen zoals formulieren. Thema&#39;s die een afzonderlijke entiteit zijn, maken hergebruik in meerdere adaptieve vormen en interactieve communicatie mogelijk. U kunt een thema ook naar een andere AEM Forms-instantie verplaatsen en opnieuw gebruiken.
 
 ### Een thema maken {#creating-a-theme}
 
 Voer de volgende stappen uit om een thema te maken:
 
-1. Klik op **[!UICONTROL Adobe Experience Manager]**, klik op **[!UICONTROL Formulieren]** en klik vervolgens op **[!UICONTROL Thema]**&#39;s.
+1. Klik **[!UICONTROL Adobe Experience Manager]**, klik **[!UICONTROL Forms]**, en klik dan **[!UICONTROL Themes]**.
 
-1. Klik op de pagina Thema&#39;s op **[!UICONTROL Maken > Thema]**.
+1. Klik op de pagina Thema&#39;s **[!UICONTROL Create > Theme]**.
 
    Er wordt een wizard gestart om een thema te maken.
 
-1. Geef op het tabblad Standaard van de wizard Thema maken de **[!UICONTROL titel]** en de **[!UICONTROL naam]** van het thema op. Dit zijn verplichte velden.
+1. Geef op het tabblad Standaard van de wizard Thema maken het thema **[!UICONTROL Title]** en **[!UICONTROL Name]** het thema op. Dit zijn verplichte velden.
 
 1. Op het tabblad Geavanceerd krijgt u twee velden:
 
-   * **[!UICONTROL Clientlib-locatie]**: Locatie in de opslagplaats waar de clientlibs voor het thema worden opgeslagen.
-   * **[!UICONTROL Clientlib-categorie]**: Verstrekt een tekstgebied om cliëntlib categorienaam voor het thema in te gaan.
+   * **[!UICONTROL Clientlib Location]**: Locatie in de opslagplaats waar de clientlibs voor het thema worden opgeslagen.
+   * **[!UICONTROL Clientlib Category]**: Verstrekt een tekstgebied om cliëntlib categorienaam voor het thema in te gaan.
 
-1. Klik op **[!UICONTROL Maken]** en klik vervolgens op **[!UICONTROL Bewerken]** om het thema te openen in de Thema-editor of klik op **[!UICONTROL Gereed]** om terug te keren naar de themapagina.
+1. Klik **[!UICONTROL Create]** en klik vervolgens **[!UICONTROL Edit]** om het thema te openen in de Thema-editor, of klik om terug te keren **[!UICONTROL Done]** naar de themapagina.
 
 ### Een thema downloaden {#downloading-a-theme}
 
-U kunt thema&#39;s exporteren als ZIP-bestand en deze gebruiken in andere projecten of AEM-instanties. Een thema downloaden:
+U kunt thema&#39;s exporteren als ZIP-bestand en deze gebruiken in andere projecten of AEM. Een thema downloaden:
 
-1. Klik op **[!UICONTROL Adobe Experience Manager]**, klik op **[!UICONTROL Formulieren]** en klik vervolgens op **[!UICONTROL Thema]**&#39;s.
+1. Klik **[!UICONTROL Adobe Experience Manager]**, klik **[!UICONTROL Forms]**, en klik dan **[!UICONTROL Themes]**.
 
-1. Selecteer een thema op de pagina Thema&#39;s en klik op **[!UICONTROL Downloaden]**. Er wordt een dialoogvenster weergegeven met de details van het thema.
+1. Selecteer een thema op de pagina Thema&#39;s en klik op **[!UICONTROL Download]**. Er wordt een dialoogvenster weergegeven met de details van het thema.
 
-1. Klik op **[!UICONTROL Downloaden]**. Het thema wordt gedownload als een ZIP-bestand.
+1. Klik op **[!UICONTROL Download]**. Het thema wordt gedownload als een ZIP-bestand.
 
 >[!NOTE]
 >
@@ -70,10 +73,10 @@ U kunt gemaakte thema&#39;s gebruiken met voorinstellingen voor stijlen voor uw 
 
 Een thema uploaden:
 
-1. Klik op **[!UICONTROL Adobe Experience Manager]**, klik op **[!UICONTROL Formulieren]** en klik vervolgens op **[!UICONTROL Thema]**&#39;s.
+1. Klik **[!UICONTROL Adobe Experience Manager]**, klik **[!UICONTROL Forms]**, en klik dan **[!UICONTROL Themes]**.
 
-1. Klik op de pagina Thema&#39;s op **[!UICONTROL Maken > Bestand uploaden]**.
-1. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **[!UICONTROL Uploaden]**.
+1. Klik op de pagina Thema&#39;s **[!UICONTROL Create > File Upload]**.
+1. Blader in de vraag Bestand uploaden naar en selecteer een themapakket op uw computer en klik op **[!UICONTROL Upload]**.
 
    Het geüploade thema is beschikbaar op de themapagina.
 
@@ -172,7 +175,7 @@ Lijst met meta-eigenschappen van een thema (bevindt zich op de pagina met eigens
      <li>Het door de gebruiker gedefinieerde opslagpad binnen '/etc' waar de clientlibs die overeenkomen met dit thema, worden opgeslagen.</li> 
      <li>Standaardwaarde - '/etc/clientlibs/fd/themes' + relatief pad van themaelement.</li> 
      <li>Als de locatie niet bestaat, wordt de maphiërarchie automatisch gegenereerd.</li> 
-     <li>Wanneer deze waarde wordt gewijzigd, wordt de clientlib-knooppuntstructuur verplaatst naar de nieuwe ingevoerde locatie.<br /><em> <strong></strong>Opmerking: Als u de standaardclientlib-locatie wijzigt, wijst u in de CRXDE-opslagplaats <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>aan <code>forms-users</code> en <code>crx:replicate</code>aan <code>jcr:read </code><code>fd-service</code> de nieuwe locatie toe. Verbind ook andere ACL door <span class="kbd">ontkent jcr:addChildNodes</span> voor toe te voegen <code>forms-user</code></em></li> 
+     <li>Wanneer deze waarde wordt gewijzigd, wordt de clientlib-knooppuntstructuur verplaatst naar de nieuwe ingevoerde locatie.<br /> <em><strong>Opmerking:</strong> Als u de standaardclientlib-locatie wijzigt, wijst u in de CRXDE-opslagplaats <code>crx:replicate, rep:write, rep:glob:*, rep:itemNames:: js.txt, jcr:read </code>aan <code>forms-users</code> en <code>crx:replicate</code>aan <code>jcr:read </code><code>fd-service</code> de nieuwe locatie toe. Verbind ook andere ACL door <span class="kbd">ontkent jcr:addChildNodes</span> voor toe te voegen <code>forms-user</code></em></li> 
     </ul> </td> 
   </tr> 
   <tr> 
@@ -202,31 +205,30 @@ De Thema-editor bestaat uit twee deelvensters:
 
 * **Zijbalk**- Wordt aan de linkerkant weergegeven. Het heeft de volgende punten:
 
-   * **** Kiezer: Hiermee geeft u de component weer die u voor opmaak hebt geselecteerd en de eigenschappen die u kunt opmaken. De kiezer vertegenwoordigt alle componenten van een type. Als u een tekstvakcomponent in een thema voor het stileren selecteert, erven alle tekstvakjes in uw formulier of interactieve mededeling de stijl. Met kiezers kunt u een algemene component of een specifieke component voor opmaak selecteren. Een veldcomponent is bijvoorbeeld een algemeen onderdeel en een tekstvak is een specifiek onderdeel.
+   * **Kiezer:** Hiermee geeft u de component weer die u voor opmaak hebt geselecteerd en de eigenschappen die u kunt opmaken. De kiezer vertegenwoordigt alle componenten van een type. Als u een tekstvakcomponent in een thema voor het stileren selecteert, erven alle tekstvakjes in uw formulier of interactieve mededeling de stijl. Met kiezers kunt u een algemene component of een specifieke component voor opmaak selecteren. Een veldcomponent is bijvoorbeeld een algemeen onderdeel en een tekstvak is een specifiek onderdeel.
 
       **Algemene stijlcomponent:**
 
-      
-Een veld kan een numeriek veld zijn, zoals leeftijd, of een veld in een tekstvak, zoals een adres.
+      Een veld kan een numeriek veld zijn, zoals leeftijd, of een veld in een tekstvak, zoals een adres.
 
       Wanneer u een veld opmaakt, worden alle velden opgemaakt, zoals pagina, naam en adres.
 
       **Stijlspecifieke component**:
 
-      
-Een specifieke component is van invloed op objecten van de specifieke categorie. Wanneer u de stijl van de numerieke vakcomponent in het thema toepast, overerft alleen het object van het numerieke vak de stijl.
+      Een specifieke component is van invloed op objecten van de specifieke categorie. Wanneer u de stijl van de numerieke vakcomponent in het thema toepast, overerft alleen het object van het numerieke vak de stijl.
 
       Een tekstveld zoals een adres is bijvoorbeeld langer en een numeriek veld van een vak zoals de leeftijd is korter. U kunt een numeriek veld selecteren, de lengte ervan verkleinen en op het formulier toepassen. De breedte van alle velden van numerieke vakken wordt verkleind in het formulier.
 
       Wanneer u alle veldcomponenten met een specifieke achtergrondkleur aanpast, nemen alle velden, zoals leeftijd, naam en adres, de achtergrondkleur over. Wanneer u een numeriek vak selecteert, zoals de leeftijd, en de breedte en breedte van alle numerieke vakken zoals de leeftijd verkleint, wordt het aantal personen in een familie verminderd. De breedte van tekstvakken wordt niet gewijzigd.
 
-   * **** Status: Hiermee kunt u stijlen van een object in een specifieke status aanpassen. U kunt bijvoorbeeld opgeven hoe een object eruitziet als het zich in de standaardtoestand, de standaardfocus, de uitgeschakelde toestand, de aanwijsstatus of de foutstatus bevindt.
-   * **** Eigenschapcategorieën: De stijleigenschappen worden in verschillende categorieën verdeeld. Bijvoorbeeld afmeting en positie, tekst, achtergrond, rand en effecten. Onder elke categorie geeft u opmaakgegevens op. Onder Achtergrond kunt u bijvoorbeeld Achtergrondkleur en Afbeelding en Verloop opgeven.
-   * **** Geavanceerd: Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
+   * **Status:** Hiermee kunt u stijlen van een object in een specifieke status aanpassen. U kunt bijvoorbeeld opgeven hoe een object eruitziet als het zich in de standaardtoestand, de standaardfocus, de uitgeschakelde toestand, de aanwijsstatus of de foutstatus bevindt.
+   * **Eigenschapcategorieën:** De stijleigenschappen worden in verschillende categorieën verdeeld. Bijvoorbeeld Dimension en positie, Tekst, Achtergrond, Rand en Effecten. Onder elke categorie geeft u opmaakgegevens op. Onder Achtergrond kunt u bijvoorbeeld Achtergrondkleur en Afbeelding en Verloop opgeven.
+   * **Geavanceerd:** Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
    * **CSS** weergeven: Hiermee kunt u CSS van de geselecteerde component weergeven
-   In de Sidebar is onder aan de zijbalk ook een pijl aanwezig. Als u op de pijl klikt, hebt u nog twee opties: Fout bij **simuleren** en **simuleren.** Deze opties worden samen met de hierboven beschreven opties [hieronder](/help/forms/using/themes.md#using-rail)uitgebreid besproken.
 
-   [ De redacteur van het ![thema met de spoorstaaf en Canvas benadrukte.](assets/themes.png)](assets/themes-1.png)**** **A. Zijbalk** B. Canvas
+   In de zijbalk onder in het scherm staat bovendien een pijl. Als u op de pijl klikt, hebt u nog twee opties: **Simuleer Succes** en **Simuleer Fout.** Deze opties worden samen met de hierboven beschreven opties [hieronder](/help/forms/using/themes.md#using-rail)uitgebreid besproken.
+
+   [ ![Thema-editor met Rail en Canvas gemarkeerd.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
 
 ### Stijlcomponenten {#styling-components}
 
@@ -249,7 +251,7 @@ Thema&#39;s in AEM Forms ondersteunen het opmaken van elementen in de lay-out va
 Voorbeelden van deelvensters buiten het vak zijn:
 
 * Tabs links
-* Tabs bovenaan
+* Bovenaan tabs
 * Accordeon
 * Responsief
 * Wizard
@@ -299,14 +301,14 @@ Met de plusknop in de elementenbibliotheek kunt u de stijl permanent opslaan met
 
 Wanneer u een aangepaste naam voor een stijl opgeeft, is de stijl gekoppeld aan een thema en is deze niet meer beschikbaar voor andere thema&#39;s. Een opgeslagen stijl verwijderen:
 
-1. Klik op de CANVAS-werkbalk op **[!UICONTROL Themaopties]** ![bij themaopties](assets/theme-options.png) > Stijlen **** beheren.
-1. Selecteer een opgeslagen stijl in het dialoogvenster Stijlen beheren en klik op **[!UICONTROL Verwijderen]**.
+1. Klik op de CANVAS-werkbalk op **[!UICONTROL Theme Options]** theme-options ![>](assets/theme-options.png) **[!UICONTROL Manage Styles]**.
+1. Selecteer in het dialoogvenster Stijlen beheren een opgeslagen stijl en klik op **[!UICONTROL Delete]**.
 
    ![De opgeslagen stijl verwijderen](assets/manage-styles.png)
 
 ### Wijzigingen live voorvertonen, opslaan en negeren {#live-preview-save-and-discard-changes}
 
-Wijzigingen in de opmaak worden direct weerspiegeld in het formulier of de interactieve communicatie die op het canvas is geladen. Met Live voorvertoning kunt u interactief de invloed van de opmaak definiëren en bekijken. Wanneer u de opmaak van een component wijzigt, wordt de knop **[!UICONTROL Gereed]** ingeschakeld in het zijpaneel. Als u de wijzigingen wilt behouden, klikt u op de knop **[!UICONTROL Gereed]** .
+Wijzigingen in de opmaak worden direct weerspiegeld in het formulier of de interactieve communicatie die op het canvas is geladen. Met Live voorvertoning kunt u interactief de invloed van de opmaak definiëren en bekijken. Wanneer u de opmaak van een component wijzigt, wordt de **[!UICONTROL Done]** knop in het zijpaneel ingeschakeld. Als u de wijzigingen wilt behouden, gebruikt u de **[!UICONTROL Done]** knop.
 
 >[!NOTE]
 >
@@ -318,9 +320,9 @@ Wanneer u een thema maakt, wordt dit gemaakt met een formulier dat wordt gelever
 
 Het huidige formulier of de interactieve communicatie in het Thema Editor Canvas vervangen:
 
-1. Klik in het deelvenster THEMA EDITOR op **[!UICONTROL Themaopties]** ![theme-options](assets/theme-options.png) **[!UICONTROL > Configure]**.
+1. Klik in het deelvenster THEMA EDITOR op **[!UICONTROL Theme Options]** thema-opties ![](assets/theme-options.png) **[!UICONTROL > Configure]**.
 
-1. Blader op het tabblad Algemeen door een formulier of interactieve communicatie voor het veld **[!UICONTROL Adaptief formulier/Document]** en selecteer dit.
+1. Blader op het tabblad Algemeen door een formulier of interactieve communicatie voor het **[!UICONTROL Adaptive Form/Document]** veld en selecteer deze.
 
 ### Opnieuw/Ongedaan maken {#redo-undo}
 
@@ -328,13 +330,13 @@ U kunt de ongewenste wijzigingen die per ongeluk optreden, ongedaan maken of opn
 
 ![opnieuw uitvoeren-ongedaan maken](assets/redo-undo.png)
 
-**** Afbeelding: Knoppen *Ongedaan maken/Opnieuw uitvoeren in Canvas*
+**Afbeelding:** *Knoppen Ongedaan maken/Opnieuw uitvoeren in Canvas*
 
 De knoppen voor Opnieuw/Ongedaan maken verschijnen wanneer u een component opmaakt in de Thema-editor.
 
 ## De Thema-editor gebruiken {#using-the-theme-editor}
 
-Met de Thema-editor kunt u een thema bewerken dat u hebt gemaakt of geüpload. Navigeer naar **[!UICONTROL Formulieren en documenten > Thema]**&#39;s, selecteer een thema en open dit. Het thema wordt geopend in de Thema-editor.
+Met de Thema-editor kunt u een thema bewerken dat u hebt gemaakt of geüpload. Navigeer naar **[!UICONTROL Forms & Documents > Themes]**, selecteer een thema en open het. Het thema wordt geopend in de Thema-editor.
 
 Zoals hierboven is beschreven, heeft de Thema-editor twee deelvensters: Zijbalk en canvas.
 ![themaeditor](assets/theme-editor.png)
@@ -347,21 +349,21 @@ Het thema wordt gemaakt met het formulier dat u wilt uitvouwen of met een formul
 
 In de werkbalk Canvas ziet u:
 
-* **[!UICONTROL Zijpaneel]** in-/ ![uitschakelen](assets/toggle-side-panel.png): Hiermee kunt u zijbalk tonen of verbergen.
+* **[!UICONTROL Toggle Side Panel]** ![schakelpaneel](assets/toggle-side-panel.png): Hiermee kunt u zijbalk tonen of verbergen.
 
-* **[!UICONTROL Themaopties]** ![voor thema&#39;s](assets/theme-options.png): Biedt drie opties
+* **[!UICONTROL Theme Options]** ![thema-opties](assets/theme-options.png): Biedt drie opties
 
    * Configureren: Hier vindt u opties waarmee u het voorbeeldformulier of de interactieve communicatie, de basisclientlib- en typekit-configuratie kunt selecteren.
    * Thema-CSS weergeven: Hiermee genereert u CSS voor het geselecteerde thema.
    * Stijlen beheren: Biedt opties voor het beheer van tekst- en afbeeldingsstijlen
    * Help: Voert een afbeelding met instructies rondleiding door de Thema-editor uit.
 
-* **[!UICONTROL Emulatorliniaal]**![](assets/ruler.png): Emuleert het uiterlijk van uw thema voor verschillende weergavegrootten. Een weergavegrootte wordt beschouwd als een onderbrekingspunt in de emulator. U kunt een onderbrekingspunt selecteren en een stijl voor het specificeren. Desktop en Tablet zijn bijvoorbeeld twee breekpunten. U kunt verschillende stijlen opgeven voor elk onderbrekingspunt.
+* **[!UICONTROL Emulator]** ![liniaal](assets/ruler.png): Emuleert het uiterlijk van uw thema voor verschillende weergavegrootten. Een weergavegrootte wordt beschouwd als een onderbrekingspunt in de emulator. U kunt een onderbrekingspunt selecteren en een stijl voor het specificeren. Desktop en Tablet zijn bijvoorbeeld twee breekpunten. U kunt verschillende stijlen opgeven voor elk onderbrekingspunt.
 
 Wanneer u een component selecteert in het canvas, ziet u de componentwerkbalk er bovenop. Met de componentwerkbalk kunt u componenten selecteren of overschakelen op algemene componenten. U selecteert bijvoorbeeld een numeriek tekstvak in een deelvenster. De werkbalk van de component bevat de volgende opties:
 
-* **[!UICONTROL Widget]** numeriek vak: Hiermee kunt u de component selecteren om het uiterlijk in het zijpaneel aan te passen.
-* **[!UICONTROL Widget]** veld: Hiermee kunt u de algemene component voor opmaak selecteren. In dit voorbeeld worden alle tekstinvoercomponenten (tekstvak/numeriek vak/numerieke stepper/datum-invoer) geselecteerd voor opmaak.
+* **[!UICONTROL Numeric Box Widget]**: Hiermee kunt u de component selecteren om het uiterlijk in het zijpaneel aan te passen.
+* **[!UICONTROL Field Widget]**: Hiermee kunt u de algemene component voor opmaak selecteren. In dit voorbeeld worden alle tekstinvoercomponenten (tekstvak/numeriek vak/numerieke stepper/datum-invoer) geselecteerd voor opmaak.
 
 * ![op veldniveau](assets/field-level.png): Hiermee kunt u overschakelen op een algemene component voor opmaken. Als u een numeriek vak selecteert en op dit pictogram tikt, wordt de veldcomponent geselecteerd. Als u een veldcomponent selecteert en op dit pictogram tikt, wordt het deelvenster geselecteerd. Als u op dit pictogram blijft tikken om het te selecteren, selecteert u uiteindelijk de lay-out voor opmaak.
 
@@ -371,7 +373,7 @@ Wanneer u een component selecteert in het canvas, ziet u de componentwerkbalk er
 
 ![Component, werkbalk](assets/overlay.png)
 
-**** Afbeelding: De werkbalk *Component in het numerieke vak op Canvas*
+**Afbeelding:** *De werkbalk Component op het numerieke vak in Canvas*
 
 ### Zijbalk gebruiken {#using-rail}
 
@@ -399,7 +401,7 @@ De opties voor het aanpassen van statusstijlen variëren voor verschillende comp
    <td><strong>Gebruiken</strong></td> 
   </tr> 
   <tr> 
-   <td><p>Afmetingen en positie</p> </td> 
+   <td><p>Dimension en positie</p> </td> 
    <td><p>Hiermee kunt u de uitlijning, grootte, positionering en plaatsing van componenten in het thema opmaken. </p> <p>De opties zijn weergave-instellingen, opvulling, marge, breedte, hoogte en Z-index. </p> </td> 
   </tr> 
   <tr> 
@@ -437,13 +439,11 @@ U voegt bijvoorbeeld een numeriek veld aan het formulier toe en u geeft de opmaa
 
 * **Simuleren voltooid**:
 
-   
-Hiermee kunt u zien hoe een component eruitziet als u de stijl voor de successtatus opgeeft. In een formulier stellen klanten bijvoorbeeld een wachtwoord in. Gebruikers kunnen een wachtwoord instellen op basis van de richtlijnen die u opgeeft. Wanneer een gebruiker een wachtwoord typt dat voldoet aan alle richtlijnen die u opgeeft, wordt het tekstvak groen. Als het tekstvak groen wordt, is de status geslaagd. U kunt stijlen voor een component in successtaat specificeren, en zijn verschijning simuleren gebruikend de Simulate optie van het Succes.
+   Hiermee kunt u zien hoe een component eruitziet als u de stijl voor de successtatus opgeeft. In een formulier stellen klanten bijvoorbeeld een wachtwoord in. Gebruikers kunnen een wachtwoord instellen op basis van de richtlijnen die u opgeeft. Wanneer een gebruiker een wachtwoord typt dat voldoet aan alle richtlijnen die u opgeeft, wordt het tekstvak groen. Als het tekstvak groen wordt, is de status geslaagd. U kunt stijlen voor een component in successtaat specificeren, en zijn verschijning simuleren gebruikend de Simulate optie van het Succes.
 
 * **Simulatiefout**:
 
-   
-Hiermee kunt u zien hoe een component eruitziet als u de opmaak voor de foutstatus opgeeft. In een formulier stellen klanten bijvoorbeeld een wachtwoord in. Gebruikers kunnen een wachtwoord instellen op basis van de richtlijnen die u opgeeft. Wanneer een gebruiker een wachtwoord typt dat niet aan alle richtlijnen voldoet, wordt het tekstvak rood. Als het tekstvak rood wordt, treedt er een fout op. U kunt stijlen voor een component in foutenstaat specificeren, en zijn verschijning simuleren gebruikend de Simulate optie van de Fout.
+   Hiermee kunt u zien hoe een component eruitziet als u de opmaak voor de foutstatus opgeeft. In een formulier stellen klanten bijvoorbeeld een wachtwoord in. Gebruikers kunnen een wachtwoord instellen op basis van de richtlijnen die u opgeeft. Wanneer een gebruiker een wachtwoord typt dat niet aan alle richtlijnen voldoet, wordt het tekstvak rood. Als het tekstvak rood wordt, treedt er een fout op. U kunt stijlen voor een component in foutenstaat specificeren, en zijn verschijning simuleren gebruikend de Simulate optie van de Fout.
 
 ### Een component opmaken {#styling-a-component}
 
@@ -454,17 +454,17 @@ Voer de volgende stappen uit om de opmaak voor een bepaalde component aan te pas
 1. Selecteer in de Thema-editor het numerieke vak op het canvas.
 1. Wanneer u het numerieke vak selecteert, ziet u de werkbalk met de componenten met drie opties:
 
-   * **[!UICONTROL Widget Numeriek vak]**
-   * **[!UICONTROL Widget veld]**
+   * **[!UICONTROL Numeric Box Widget]**
+   * **[!UICONTROL Field Widget]**
 
    * ![op veldniveau](assets/field-level.png)
 
-1. Selecteer **[!UICONTROL Widget]** numeriek vak.
+1. Selecteer **[!UICONTROL Numeric Box Widget]**.
 1. De titel van het zijpaneel verandert in de widget Numerieke vak en bevat opties waarmee u de vormgeving kunt aanpassen.
 
-   Gebruik de optie **[!UICONTROL Afmeting en positie]** in het zijpaneel om de grootte van de component aan te passen. Controleer of de status **[!UICONTROL Standaard]** is.
+   Gebruik de **[!UICONTROL Dimension & Position]** optie in de zijbalk om de grootte van de component aan te passen. Ervoor zorgen dat de staat is **[!UICONTROL Default]**.
 
-Selecteer in plaats van de widget **[!UICONTROL Numerieke vak]** te selecteren de optie **[!UICONTROL Veldwidget]** op de werkbalk van de component en voer de bovenstaande stappen uit. Wanneer u afmetingen selecteert voor de optie **[!UICONTROL Veldwidget]** , hebben alle tekstvakken behalve het numerieke vak dezelfde grootte.
+Selecteer in plaats van **[!UICONTROL Numeric Box Widget]** deze optie te selecteren **[!UICONTROL Field Widget]** op de werkbalk van de component en voer de bovenstaande stappen uit. Wanneer u afmetingen voor **[!UICONTROL Field Widget]** optie selecteert, hebben alle tekstvakken behalve het numerieke vak dezelfde grootte.
 
 ### Velden voor een bepaalde status opmaken {#styling-fields-given-state}
 
@@ -477,12 +477,12 @@ Voer de volgende stappen uit om de opmaak van een component in een specifieke st
    In de zijbalk ziet u opties waarmee u de opmaak van de component kunt aanpassen.
 
 1. Selecteer een staat in de zijbalk. Bijvoorbeeld de status Fout.
-1. Gebruik opties zoals **[!UICONTROL Rand, Achtergrond]** in de zijbalk om het uiterlijk van de component aan te passen.
-1. Met de optie Fout **** simuleren onder aan het zijpaneel kunt u zien hoe de opmaak er uitziet tijdens het bewerken.
+1. Gebruik opties zoals **[!UICONTROL Border, Background]** in de zijbalk om de vormgeving van de component aan te passen.
+1. Gebruik de **[!UICONTROL Simulate Error]** optie onder aan het zijpaneel om te zien hoe de opmaak er uitziet tijdens het bewerken.
 
 Wanneer u de opmaak van een component aanpast nadat u de status ervan hebt opgegeven, wordt de aanpassing alleen voor de component weergegeven voor de opgegeven status. Als u bijvoorbeeld de opmaak voor de component aanpast wanneer de aanwijsstatus is geselecteerd. De aanpassing wordt weergegeven voor de component wanneer u de aanwijzer over de component beweegt in het gegenereerde formulier of de interactieve communicatie waarop u het thema toepast.
 
-Gebruik de modus Voorbeeld om gedrag van andere staten dan fout en succes te simuleren. Als u de modus Voorbeeld wilt gebruiken, klikt u op **[!UICONTROL Voorvertoning]** op de paginaboolbalk.
+Gebruik de modus Voorbeeld om gedrag van andere staten dan fout en succes te simuleren. Als u de modus Voorvertoning wilt gebruiken, klikt u op **[!UICONTROL Preview]** de paginabalk.
 
 ### Lay-outs voor kleinere schermen opmaken {#styling-layouts-for-smaller-displays}
 
@@ -501,13 +501,13 @@ U kunt formulieren of interactieve communicatiecomponenten opmaken voor meerdere
 
 ### Weblettertypen in een thema gebruiken {#using-web-fonts-in-a-theme}
 
-U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier of interactieve communicatie. De [Typekit](https://typekit.com/), de service voor weblettertypen van Adobe, is beschikbaar als een configuratie. Als u Typekit wilt gebruiken, maakt u een kit en lettertypen en haalt u de Kit-id op van de [Typekit-website](https://typekit.com/).
+U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een adaptief formulier of interactieve communicatie. De out-of-the-box, [Typekit](https://typekit.com/), de dienst van het Webdoopvont, is beschikbaar als configuratie. Als u Typekit wilt gebruiken, maakt u een kit en lettertypen en haalt u de Kit-id op van de [Typekit-website](https://typekit.com/).
 
 Voer de volgende stappen uit om Typekit in AEM te configureren:
 
-1. Klik in de auteur op ![](assets/adobeexperiencemanager.png)**[!UICONTROL adobeexperienceManagerAdobe Experience Manager > Tools ]**![hammer](assets/hammer.png)> Deployment > Cloud Services****.
-1. Ga op de pagina **[!UICONTROL Cloud Services]** naar **[!UICONTROL Services]** van derden > **[!UICONTROL Typekit]** en klik op Nu **** configureren onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
-1. Geef in het dialoogvenster Configuratie **** maken een titel op voor de configuratie en klik op **[!UICONTROL Maken]**.
+1. Klik in de auteur-instantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager > Tools]** ![hammer](assets/hammer.png) **[!UICONTROL > Deployment > Cloud Services]**.
+1. Navigeer op de **[!UICONTROL Cloud Services]** pagina naar **[!UICONTROL Third Party Services]** > **[!UICONTROL Typekit]** en klik **[!UICONTROL Configure Now]** onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
+1. Geef in het **[!UICONTROL Create Configuration]** dialoogvenster een titel op voor de configuratie en klik op **[!UICONTROL Create]**.
 
    U wordt opnieuw gericht aan de configuratiepagina.
 
@@ -516,8 +516,8 @@ Voer de volgende stappen uit om Typekit in AEM te configureren:
 Voer de volgende stappen uit om een thema te vormen om de configuratie te gebruiken TypeKit:
 
 1. Open een thema in de themaeditor voor de auteurinstantie.
-1. Navigeer in de themaeditor naar **[!UICONTROL Themaopties]** ![theme-options](assets/theme-options.png) > **[!UICONTROL Configure]**.
-1. Selecteer een kit in het veld **[!UICONTROL Typekit-configuratie]** en klik op **[!UICONTROL Opslaan]**.
+1. Navigeer in de themaeditor naar **[!UICONTROL Theme Options]** themaopties ![>](assets/theme-options.png) **[!UICONTROL Configure]**.
+1. Selecteer een kit in **[!UICONTROL Typekit Configuration]** het veld en klik op **[!UICONTROL Save]**.
 
    U ziet nu dat de lettertypen zijn toegevoegd aan de eigenschap font-family van het thema.
 
@@ -525,7 +525,7 @@ Voer de volgende stappen uit om een thema te vormen om de configuratie te gebrui
 
 U kunt de dienst van de themaconfiguratie gebruiken om meer doopvonten aan de themaredacteur toe te voegen. Voer de volgende stappen uit om lettertypen toe te voegen:
 
-1. Meld u aan bij de AEM-webconsole met beheerdersrechten. De URL voor de AEM-webconsole is `https://[server]:[port]/system/console/configMgr`.
+1. Meld u aan bij AEM webconsole met beheerdersrechten. URL voor de AEM webconsole is `https://[server]:[port]/system/console/configMgr`.
 1. Open **[!UICONTROL Adaptive Form Theme Configuration Service]**.
 
    ![theme-config](assets/theme-config.png)
@@ -564,24 +564,24 @@ In het onderstaande voorbeeld ziet u gemaskeerde en niet-gemaskerde stijlen in e
 
 Een thema toepassen op een adaptief formulier:
 
-1. Open het formulier in de bewerkingsmodus. Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en klikt u op **[!UICONTROL Openen]**.
-1. Selecteer in de bewerkingsmodus een component, klik vervolgens op ![veldniveau](assets/field-level.png) > **[!UICONTROL Aangepaste formuliercontainer]** en klik vervolgens op ![cmr](assets/cmppr.png).
+1. Open het formulier in de bewerkingsmodus. Als u een formulier wilt openen in de bewerkingsmodus, selecteert u een formulier en klikt u op **[!UICONTROL Open]**.
+1. Selecteer in de bewerkingsmodus een component, klik op ![veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en klik vervolgens op ![cmr](assets/cmppr.png).
 
    U kunt eigenschappen van het formulier bewerken in de zijbalk.
 
-1. Klik op de zijbalk op **[!UICONTROL Stijlen]**.
-1. Selecteer uw thema in de vervolgkeuzelijst **[!UICONTROL Adaptief formulierthema]** en klik op **[!UICONTROL Gereed]** ![selectievakje](assets/check-button.png).
+1. In the sidebar, click **[!UICONTROL Styling]**.
+1. Selecteer het thema in de **[!UICONTROL Adaptive Form Theme]** keuzelijst en klik op **[!UICONTROL Done]**![ Selecteren](assets/check-button.png).
 
 Een thema toepassen op een interactieve communicatie:
 
-1. Open de interactieve communicatie in de bewerkingsmodus. Als u een interactieve communicatie wilt openen in de bewerkingsmodus, selecteert u een formulier en klikt u op **[!UICONTROL Openen]**.
-1. Selecteer in de bewerkingsmodus een component, klik vervolgens op ![veldniveau](assets/field-level.png) >**[!UICONTROL Documentcontainer]** en klik vervolgens op ![cmp](assets/cmppr.png).
+1. Open de interactieve communicatie in de bewerkingsmodus. Als u een interactieve communicatie wilt openen in de bewerkingsmodus, selecteert u een formulier en klikt u **[!UICONTROL Open]**.
+1. Selecteer in de bewerkingsmodus een component, klik vervolgens op ![veldniveau](assets/field-level.png) >**[!UICONTROL Document Container]** en klik vervolgens op ![cmr](assets/cmppr.png).
 
    U kunt eigenschappen van het formulier bewerken in de zijbalk.
 
-1. Selecteer in de zijbalk onder **[!UICONTROL Standaard]** uw thema in de vervolgkeuzelijst **[!UICONTROL Thema]** en klik op **[!UICONTROL Gereed]** ![selectievakje](assets/check-button.png).
+1. Selecteer in de zijbalk onder **[!UICONTROL Basic]** de optie Thema in de **[!UICONTROL Theme]** vervolgkeuzelijst en klik op **[!UICONTROL Done]**![ Selecteren](assets/check-button.png).
 
-### Het thema van een formulier tijdens runtime wijzigen {#change-theme-of-a-form-at-runtime}
+### Het thema van een formulier wijzigen tijdens runtime {#change-theme-of-a-form-at-runtime}
 
 Met een thema kunt u verschillende onderdelen van een formulier opmaken. Met de `themeOverride` eigenschap kunt u het thema van een formulier dynamisch wijzigen. Een typische URL van een formulier is:
 
@@ -595,13 +595,13 @@ Met de `themeOverride` optie kunt u een pad naar een thema opgeven. Het wijzigt 
 
 ## Specifieke weergave ophalen met thema&#39;s {#specific-af-appearance}
 
-Met AEM Forms, samen met standaard uit-van-de-doos canvasthema, zijn er vele andere thema&#39;s. Als u een formulier of interactieve communicatie met andere thema&#39;s wilt ontwerpen, alsmede aanvullende wijzigingen, kopieert u het thema uit de map Themabibliotheek. Plak de gekopieerde thema&#39;s buiten de map Themabibliotheek en bewerk het gekopieerde thema op basis van de gewenste wijzigingen.
+Met AEM Forms zijn er, samen met het standaard canvasthema voor buitengebruik, veel andere thema&#39;s. Als u een formulier of interactieve communicatie met andere thema&#39;s wilt ontwerpen, alsmede aanvullende wijzigingen, kopieert u het thema uit de map Themabibliotheek. Plak de gekopieerde thema&#39;s buiten de map Themabibliotheek en bewerk het gekopieerde thema op basis van de gewenste wijzigingen.
 
 Voer de volgende stappen uit om een thema te kopiëren:
 
-1. Navigeer in de ontwerpversie naar **[!UICONTROL Adobe Experience Manager > Formulieren > Thema]**&#39;s.
+1. Navigeer in ontwerpinstantie naar **[!UICONTROL Adobe Experience Manager > Forms > Themes]**.
 1. Open de map Themabibliotheek.
-1. Houd de aanwijzer in de map Themabibliotheek boven het corresponderende, uit-de-box thema en tik op **[!UICONTROL Kopiëren]**.
+1. Houd de aanwijzer in de map Themabibliotheek boven het overeenkomende thema dat buiten de keuzelijst valt en tik op **[!UICONTROL Copy]**.
 1. Plak het gekopieerde thema buiten de map Themabibliotheek.
 1. Pas het gekopieerde thema aan.
 
@@ -613,11 +613,11 @@ Nadat u het thema hebt aangepast, past u het toe op uw formulier of interactieve
 
 ## Gevolgen voor andere adaptieve gevallen van formuliergebruik {#impact-on-other-adaptive-form-use-cases}
 
-* **** Een formulier publiceren/publiceren ongedaan maken: Bij het publiceren van een formulier wordt het thema dat op is toegepast, ook gepubliceerd (als het nog niet is gepubliceerd)
-* **** Een formulier importeren/exporteren: Bij het importeren of exporteren van een formulier wordt het bijbehorende thema ook automatisch geïmporteerd of geëxporteerd.
-* **** Referenties van een formulier: De sectie Verwijzingen in formulierverwijzingen bevat een extra item voor het thema.
-* **** Tijdstip van laatste wijziging van een formulier: Wordt bijgewerkt wanneer het gekoppelde thema wordt gewijzigd.
-* **** A/B-tests: U kunt een ander thema toepassen op twee versies van het formulier in A/B-tests. De informatie over de twee thema&#39;s wordt afzonderlijk opgeslagen op de twee hulplijncontainers.
+* **Een formulier publiceren/publiceren ongedaan maken:** Bij het publiceren van een formulier wordt het thema dat op is toegepast, ook gepubliceerd (als het nog niet is gepubliceerd)
+* **Een formulier importeren/exporteren:** Bij het importeren of exporteren van een formulier wordt het bijbehorende thema ook automatisch geïmporteerd of geëxporteerd.
+* **Referenties van een formulier:** De sectie Verwijzingen in formulierverwijzingen bevat een extra item voor het thema.
+* **Tijdstip van laatste wijziging van een formulier:** Wordt bijgewerkt wanneer het gekoppelde thema wordt gewijzigd.
+* **A/B-tests:** U kunt een ander thema toepassen op twee versies van het formulier in A/B-tests. De informatie over de twee thema&#39;s wordt afzonderlijk opgeslagen op de twee hulplijncontainers.
 
 ## CSS-generatiereeks {#css-generation-sequence}
 
@@ -643,22 +643,23 @@ De gegenereerde CSS kunt u met de volgende opties zien:
 
 * **Elementen uit een ander thema vermijden**
 
-   Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Als u bijvoorbeeld **[!UICONTROL Pagina]** ![bewerken-knop](assets/edit-button.png)> **[!UICONTROL Achtergrond > Toevoegen > Afbeelding]** selecteert, wordt een dialoogvenster weergegeven waarin u afbeeldingen in een ander thema kunt zoeken en toevoegen.
+   Wanneer u een thema bewerkt, kunt u door elementen (zoals afbeeldingen) bladeren en elementen uit andere thema&#39;s toevoegen. U bewerkt bijvoorbeeld de achtergrond van een pagina. Als u bijvoorbeeld de optie **[!UICONTROL Page]** Bewerken- ![knop](assets/edit-button.png)> **[!UICONTROL Background > Add > Image]** selecteert, wordt er een dialoogvenster weergegeven waarin u naar afbeeldingen in een ander thema kunt bladeren en deze kunt toevoegen.
 
 * U kunt problemen met uw huidige thema oplossen als een element wordt toegevoegd uit een ander thema en het andere thema wordt verplaatst of verwijderd. U wordt aangeraden te voorkomen dat u bladeren en elementen uit andere thema&#39;s toevoegt.
 
-* **Het gebruiken van basis clientlib, themageditor, en gealigneerde het stileren**
+* **Basisclientlib, themageditor en inline styling gebruiken**
 
    * **Basis clientlib**:
 
       De basisclientbibliotheek bevat opmaakgegevens. Stijlinformatie in bibliotheken aan de clientzijde in thema&#39;s gebruiken.
 
-      1. Ga naar **[!UICONTROL Experience Manager > Formulieren > Thema]**&#39;s.
-      1. Selecteer een thema op de pagina Thema&#39;s en klik op Eigenschappen **** weergeven.
-      1. Klik op **[!UICONTROL Geavanceerd]** op de pagina Eigenschappen die wordt geopend.
+      1. Ga naar **[!UICONTROL Experience Manager > Forms > Themes]**.
+      1. Selecteer een thema op de pagina Thema&#39;s en klik op **[!UICONTROL View Properties]**.
+      1. Klik op de pagina Eigenschappen die wordt geopend **[!UICONTROL Advanced]**.
       1. Blader op het tabblad Geavanceerd in het veld Clientlib-locatie naar de clientbibliotheek die u wilt gebruiken en selecteer deze.
-      1. Click **[!UICONTROL Save]**.
-      De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en voor de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.\
+      1. Klik op **[!UICONTROL Save]**.
+
+      De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en schakel over in de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.\
       U kunt ook een thema maken, er kopieën van maken en vervolgens de opmaak wijzigen die in de gekopieerde thema&#39;s wordt geboden voor vergelijkbare gebruiksdoeleinden.
 
       Zie Specifieke weergave [ophalen met thema&#39;s](#specific-af-appearance)
