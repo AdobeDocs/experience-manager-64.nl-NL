@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '797'
+ht-degree: 1%
 
 ---
 
@@ -55,7 +58,7 @@ Meer informatie vindt u in de [JSP EL-specificatie](https://download.oracle.com/
    * byte
    * java.lang.Double
    * Dubbel
-   * java.lang.long
+   * java.lang.Long
    * Lang
    * java.lang.Float
    * Zwevend
@@ -107,7 +110,7 @@ U kunt een aangepaste bundel maken om uw eigen externe functies te exporteren vo
    * byte
    * java.lang.Double
    * Dubbel
-   * java.lang.long
+   * java.lang.Long
    * Lang
    * java.lang.Float
    * Zwevend
