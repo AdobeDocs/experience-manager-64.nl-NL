@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a1070d9e-fb7c-4134-b6d5-ffa2d3e9718d
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '1081'
+ht-degree: 1%
 
 ---
 
@@ -167,6 +170,7 @@ U kunt de volgende kenmerken toevoegen aan elementen van een XML-schema om speci
 >
 >* Het eerste teken van de elementnaam omzetten in hoofdletters
 >* Witruimte invoegen bij grenzen van camelhoofdletters.
+
 >
 >
 Als u bijvoorbeeld het schema-element toevoegt, wordt het bijschrift dat in het aangepaste formulier wordt gegenereerd, `userFirstName` `User First Name`opgeslagen.
