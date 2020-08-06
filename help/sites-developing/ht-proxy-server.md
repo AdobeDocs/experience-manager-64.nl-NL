@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dfbc1d2f-80c1-4564-a01c-a5028b7257d7
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '967'
+ht-degree: 0%
 
 ---
 
@@ -46,7 +49,7 @@ Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als h
 
 `<remoteport>`
 
-Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling van een nieuw geïnstalleerde AEM-installatie is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM-auteurinstantie is `4502`.
+Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling van een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM auteur-instantie is `4502`.
 
 `<localport>`
 
@@ -132,7 +135,7 @@ Ervan uitgaande dat de AEM-instantie wordt uitgevoerd, starten `localhost:4502` 
 
 De CQ/CRX-instantie kan nu worden benaderd via de proxy bij `localhost:4444` en alle communicatie via deze poort wordt aangemeld bij `test.log`.
 
-Als we nu de uitvoer van de proxy bekijken, zien we de interactie tussen de browser en de AEM-instantie.
+Als we nu de uitvoer van de proxy bekijken, zien we de interactie tussen de browser en de AEM.
 
 Bij het opstarten geeft de proxy de volgende resultaten:
 
@@ -162,7 +165,7 @@ C-0-#000684 -> [59-7913-4285-8857-832c087bafd5_c484727d3b3665ad%3acrx.default; y
 C-0-#000824 -> [ ]
 ```
 
-De AEM-instantie reageert met de inhoud van het bestand `test.html`:
+De AEM instantie reageert met de inhoud van het bestand `test.html`:
 
 ```shell
 S-0-#000000 -> [HTTP/1.1 200 OK ]
@@ -206,7 +209,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Controleren of Keep-Alive werkt**
 
-Levend houden is een eigenschap van HTTP die een cliënt toestaat om de verbinding van TCP aan de server opnieuw te gebruiken om veelvoudige verzoeken (voor de paginacode, beelden, stijlbladen, etc.) te maken. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
+Levend houden is een eigenschap van HTTP die een cliënt toestaat om de verbinding van TCP aan de server opnieuw te gebruiken om veelvoudige verzoeken (voor de paginacode, beelden, stijlbladen etc.) te maken. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
 Controleren of in leven houden werkt:
 
