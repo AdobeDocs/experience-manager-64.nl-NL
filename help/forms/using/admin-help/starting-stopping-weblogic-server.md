@@ -1,8 +1,8 @@
 ---
 title: WebLogic Server starten en stoppen
 seo-title: WebLogic Server starten en stoppen
-description: Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM-formuliermodules wilt implementeren. In dit document wordt beschreven hoe u de WebLogic-server start en stopt.
-seo-description: Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM-formuliermodules wilt implementeren. In dit document wordt beschreven hoe u de WebLogic-server start en stopt.
+description: Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM formuliermodules wilt implementeren. In dit document wordt beschreven hoe u de WebLogic-server start en stopt.
+seo-description: Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM formuliermodules wilt implementeren. In dit document wordt beschreven hoe u de WebLogic-server start en stopt.
 uuid: 957787fe-4cea-4ecd-b49a-c33023c5c309
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c908d064-6596-473a-b218-22a2496c83f7
 translation-type: tm+mt
 source-git-commit: f1558c7dec34649d00afcd04245ea552e8c6b978
+workflow-type: tm+mt
+source-wordcount: '642'
+ht-degree: 0%
 
 ---
 
 
 # WebLogic Server starten en stoppen {#starting-and-stopping-weblogic-server}
 
-Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM-formuliermodules wilt implementeren. Zorg ervoor dat WebLogic Server wordt gestopt of uitgevoerd, afhankelijk van de taak die u uitvoert.
+Bij verschillende procedures moet u de instantie van WebLogic Server starten of stoppen waar u AEM formuliermodules wilt implementeren. Zorg ervoor dat WebLogic Server wordt gestopt of uitgevoerd, afhankelijk van de taak die u uitvoert.
 
 <table> 
  <thead> 
@@ -40,7 +43,7 @@ Bij verschillende procedures moet u de instantie van WebLogic Server starten of 
    <td><p>Wordt uitgevoerd</p></td> 
   </tr> 
   <tr> 
-   <td><p>AEM-formulierproducten implementeren</p></td> 
+   <td><p>AEM formulierproducten implementeren</p></td> 
    <td><p>Wordt uitgevoerd</p></td> 
   </tr> 
  </tbody> 
