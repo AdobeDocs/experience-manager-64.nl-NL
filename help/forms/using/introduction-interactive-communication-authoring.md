@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1315'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Wanneer u een nieuwe [creeert of een bestaande Interactieve Communicatie](/help/
 
 ![gebruikersinterface voor interactieve communicatie ontwerpen](assets/form-editor.png)
 
-******A. Zijbalk** B. Pagina, werkbalk **C.** Inhoudsgebied
+**A.** Zijbalk **B.** Pagina, werkbalk **C.** Inhoudsgebied
 
 ## Zijbalk {#sidebar}
 
@@ -41,7 +44,7 @@ Wanneer u een nieuwe [creeert of een bestaande Interactieve Communicatie](/help/
 
 [Klik om te vergroten](assets/sidebar-comps-1.png)
 
-**************A. Kanaalbrowser** B. Inhoudsbrowser **C.** Eigenschappen browser **D. Middelenbrowser** E. Browser van componenten **F. Browser van Gegevensbronnen - het Model van Gegevens** G. Browser voor gegevensbronnen - stramieninhoud
+**A.** Kanaalbrowser **B.** Inhoudsbrowser **C.** Eigenschappen browser **D.** Middelenbrowser **E.** Browser van componenten **F.** Browser van Gegevensbronnen - het Model van Gegevens **G.** Browser voor gegevensbronnen - Master inhoud
 
 De zijbalk bevat het volgende:
 
@@ -57,8 +60,7 @@ De zijbalk bevat het volgende:
 
    Hiermee kunt u de eigenschappen van een component bewerken. De eigenschappen veranderen afhankelijk van de component. Als u bijvoorbeeld de eigenschappen van de documentcontainer wilt zien:
 
-   
-Selecteer een component, tik vervolgens op ![veldniveau](assets/field-level.png) > **Documentcontainer** en tik vervolgens op ![cmp](assets/cmppr.png).
+   Selecteer een component, tik vervolgens op ![veldniveau](assets/field-level.png) > **Documentcontainer** en tik vervolgens op ![cmp](assets/cmppr.png).
 
 * **Bandenbrowser**
 
@@ -74,11 +76,11 @@ Selecteer een component, tik vervolgens op ![veldniveau](assets/field-level.png)
 | Documentfragment | ✓ | ✓ | Staat u toe om een herbruikbare component, een tekst, een lijst, of een voorwaarde, aan een Interactieve Communicatie toe te voegen. De herbruikbare component die u toevoegt aan een interactieve communicatie kan gebaseerd zijn op een formuliergegevensmodel of geen formuliergegevensmodel. |
 | Afbeelding | ✓ | ✓ | Hiermee kunt u een afbeelding invoegen. |
 | Deelvenster | - | ✓ | De component van het Comité is placeholder voor het groeperen van andere componenten samen en controleert hoe een groep componenten in een Interactieve Mededeling worden uiteengezet. Met een deelvenstercomponent kunt u ook een groep componenten herhaalbaar maken voor de eindgebruiker, bijvoorbeeld in meerdere items die nodig zijn om de gegevens van het onderwijs in te vullen. Het is ook een goede praktijk om een paneel elk voor een lusje van een Interactieve Communicatie met veelvoudige lusjes te gebruiken. |
-| Tabel |  &amp;ast; | ✓ | Hiermee voegt u een tabel toe waarin u gegevens in rijen en kolommen kunt ordenen. |
+| Tabel | &amp;ast; | ✓ | Hiermee voegt u een tabel toe waarin u gegevens in rijen en kolommen kunt ordenen. |
 | Doelgebied | &amp;ast;&amp;ast; | ✓ | Hiermee voegt u een doelgebied in een webkanaal in om de webkanaalspecifieke componenten te ordenen. |
 | Tekst | - | ✓ | Hiermee voegt u tekst toe aan het webkanaal van een interactieve communicatie. Tekst kan formuliergegevensmodelobjecten gebruiken om de inhoud dynamisch te maken. |
 
- &amp;ast; Gebruik Layoutfragmenten in het kanaal Afdrukken om tabellen toe te voegen.
+&amp;ast; Gebruik Layoutfragmenten in het kanaal Afdrukken om tabellen toe te voegen.
 
 &amp;ast;&amp;ast; In het kanaal van de Druk, zijn de doelgebieden vooraf bepaald in het XDP/drukmalplaatje. U kunt geen nieuwe doelgebieden toevoegen gebruikend Interactieve Communicatie auteursUI.
 
@@ -106,7 +108,7 @@ Wanneer u een component selecteert, ziet u een werkbalk waarmee u ermee kunt wer
 
 A. **Configureren**: Wanneer u op **Configureren** tikt, zijn componenteigenschappen zichtbaar in de zijbalk.
 
-B. Regels **** bewerken: Wanneer u op Regels bewerken tikt, wordt de Regeleditor weergegeven waarin u regels voor de geselecteerde component kunt bewerken en maken. In de Regeleditor kunt u ook andere formulierobjecten (componenten) selecteren en regels voor die formulierobjecten bewerken/maken.
+B. **Regels** bewerken: Wanneer u op Regels bewerken tikt, wordt de Regeleditor weergegeven waarin u regels voor de geselecteerde component kunt bewerken en maken. In de Regeleditor kunt u ook andere formulierobjecten (componenten) selecteren en regels voor die formulierobjecten bewerken/maken.
 
 C. **Kopie**: Met de kopieeroptie kunt u een component kopiëren en op andere plaatsen in de interactieve communicatie plakken.
 
@@ -114,7 +116,7 @@ D. **Knippen**: U kunt de besnoeiingsoptie gebruiken om een component van één 
 
 E. **Verwijderen**: Hiermee kunt u de component uit de interactieve communicatie verwijderen.
 
-F. Component **** invoegen: Hiermee kunt u een component invoegen boven de geselecteerde component.
+F. **Component** invoegen: Hiermee kunt u een component invoegen boven de geselecteerde component.
 
 G. **Plakken**: Hiermee kunt u de component die u hebt geknipt of gekopieerd, plakken met de hierboven beschreven opties.
 
@@ -147,7 +149,7 @@ De werkbalk Pagina bovenaan biedt opties waarmee u een voorvertoning van de inte
 
       * Ontdek waar Interactieve communicatie uit bestaat.
       * Foutopsporing waar en wanneer gebeurt, wat weer helpt om problemen op te lossen.
-   * Doel:Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in het zijpaneel staan, in- of uitschakelen.
+   * Doel: Hiermee kunt u aangepaste componenten, of componenten buiten het vak die niet in het zijpaneel staan, in- of uitschakelen.
 
 
 * Voorvertoning: Hiermee kunt u een voorvertoning weergeven van de Interactieve communicatie wanneer u deze publiceert.
