@@ -1,6 +1,6 @@
 ---
-title: Java APIQuick Start (SOAP) Barcoded Forms Service
-seo-title: Java APIQuick Start (SOAP) Barcoded Forms Service
+title: Barcoded Forms Service Java APIQuick Start (SOAP)
+seo-title: Barcoded Forms Service Java APIQuick Start (SOAP)
 description: 'null'
 seo-description: 'null'
 uuid: a6739695-ee0b-4480-8cef-0f91a72deaad
@@ -20,15 +20,15 @@ ht-degree: 0%
 
 # Barcoded Forms Service Java API Quick Start (SOAP) {#barcoded-forms-service-java-apiquick-start-soap}
 
-Java API Quick Start (SOAP) is beschikbaar voor de service Barcoded Forms:
+Java API Quick Start (SOAP) is beschikbaar voor de Barcoded Forms-service:
 
 [Snel starten (SOAP-modus): Gecodeerde formuliergegevens decoderen met de Java API](barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start die in Programming met AEM Forms wordt gevestigd is gebaseerd op de Server die van Vormen op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Beginnen die in Programmering met AEM Forms worden gevestigd zijn gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Gecodeerde formuliergegevens decoderen met de Java API {#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api}
 
