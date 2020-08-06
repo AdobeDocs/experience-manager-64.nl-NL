@@ -1,5 +1,5 @@
 ---
-title: Snelle gids voor het ontwerpen van pagina's
+title: Quick Guide to Authoring Pages
 seo-title: Snelle gids voor het ontwerpen van pagina's
 description: Een snelle gids op hoog niveau voor de belangrijkste acties van het ontwerpen van pagina-inhoud
 seo-description: Een snelle gids op hoog niveau voor de belangrijkste acties van het ontwerpen van pagina-inhoud
@@ -71,7 +71,7 @@ Alvorens het overzicht van details te geven, is hier een kleine inzameling van a
 
 ## Uw pagina zoeken {#finding-your-page}
 
-1. Open de **console van Plaatsen** (gebruikend de optie van **Plaatsen** in de [Globale Navigatie](/help/sites-authoring/basic-handling.md#global-navigation) - dit wordt teweeggebracht (drop-down) wanneer u de verbinding van de Adobe Experience Manager (linksboven) selecteert.
+1. Open de **Sites** -console (met de optie **Sites** in de [globale navigatie](/help/sites-authoring/basic-handling.md#global-navigation) - deze wordt geactiveerd (vervolgkeuzelijst) wanneer u de Adobe Experience Manager-koppeling selecteert (linksboven).
 
 1. Navigeer omlaag door op de desbetreffende pagina te tikken of te klikken. Hoe de paginabronnen worden vertegenwoordigd, is afhankelijk van de weergave die u gebruikt: [Kaart, Lijst of Kolom](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources):
 
@@ -144,6 +144,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
       * openen, zijpaneel
       * het selecteren van het componentenlusje ( [componentenbrowser](/help/sites-authoring/author-environment-tools.md#components-browser))
       * Sleep de vereiste component naar de pagina.
+
       Het zijpaneel kan worden geopend (en gesloten) met:
 
       ![](do-not-localize/screen_shot_2018-03-21at160738.png)
@@ -153,6 +154,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
       * Open de werkbalk van de component met Tik of klik. Open het dialoogvenster met het pictogram **Bewerken** (potlood).
       * Open de editor op plaats voor de component met Tikken en vasthouden of dubbelklikken. De beschikbare acties worden weergegeven (voor sommige componenten is dit een beperkte selectie).
       * U kunt als volgt alle beschikbare acties weergeven:
+
       ![](do-not-localize/screen_shot_2018-03-21at160706.png)
 
    * [De eigenschappen van een bestaande component configureren](/help/sites-authoring/editing-content.md#component-edit-dialog)
@@ -175,12 +177,14 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
    * [Annotaties](/help/sites-authoring/annotations.md#annotations) toevoegen aan de pagina:
 
       * Selecteer de modus **Annoteren** (pictogram spraakballon). Annotaties toevoegen met het pictogram **Annotatie** toevoegen (plus). Sluit de annotatiemodus af met behulp van de X rechtsboven.
+
       ![](do-not-localize/screen_shot_2018-03-21at160813.png)
 
    * [Een voorvertoning van een pagina](/help/sites-authoring/editing-content.md#preview-mode) weergeven (om te zien hoe deze wordt weergegeven in de publicatieomgeving)
 
       * Selecteer **Voorvertoning** op de werkbalk.
    * Ga terug naar de bewerkingsmodus (of selecteer een andere modus) met de vervolgkeuzelijst **Bewerken** .
+
    >[!NOTE]
    >
    >Als u wilt navigeren met koppelingen in de inhoud, moet u de modus [Voorvertoning](/help/sites-authoring/editing-content.md#preview-mode)gebruiken.
@@ -196,6 +200,7 @@ Er zijn twee (hoofd)methoden voor het [bewerken van pagina-eigenschappen](/help/
 
       * [Snelle acties (alleen Kaartweergave/Bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
       * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action).
+
    ![screen_shot_2018-03-21at160850](assets/screen_shot_2018-03-21at160850.png)
 
 * De pagina-eigenschappen worden weergegeven. U kunt naar wens updates uitvoeren en vervolgens Opslaan gebruiken om deze bij te houden
@@ -218,12 +223,14 @@ Er zijn twee hoofdmethoden om uw pagina [te](/help/sites-authoring/publishing-pa
 
       * [Snelle acties (alleen Kaartweergave/Bureaublad)](#quick-actions-card-view-desktop-only) voor de juiste bron.
       * De werkbalk wanneer de [pagina is geselecteerd](#selecting-your-page-for-further-action) (geeft ook toegang tot [Later](/help/sites-authoring/publishing-pages.md#manage-publication)publiceren).
+
    ![screen_shot_2018-03-21at160957](assets/screen_shot_2018-03-21at160957.png)
 
 * Tijdens het [bewerken van de pagina](#editing-your-page-content):
 
    1. Open het menu **Pagina-informatie** .
    1. Selecteer **Pagina** publiceren.
+
    ![screen_shot_2018-03-21at161026](assets/screen_shot_2018-03-21at161026.png)
 
 * U kunt het publiceren van een pagina vanuit de console alleen ongedaan maken via de optie **Publicatie beheren**, die alleen beschikbaar is op de werkbalk (niet via de snelle acties).
