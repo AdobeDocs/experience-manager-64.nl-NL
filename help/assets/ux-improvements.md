@@ -1,24 +1,27 @@
 ---
 title: Verbeterde gebruikerservaring in middelen
-description: In dit artikel wordt een beschrijving gegeven van de verbeteringen in AEM 6.4 Assets.
+description: In dit artikel worden de verbeteringen in AEM 6.4 Assets beschreven.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '625'
+ht-degree: 0%
 
 ---
 
 
 # Verbeterde gebruikerservaring in middelen {#user-experience-enhancements-in-assets}
 
-AEM 6.4-middelen bieden verschillende gebruiksverbeteringen die een naadloze gebruikerservaring bieden en de productiviteit verhogen. De toename in de snelheid waarmee u uw go-to-market inhoud kunt creëren/beheren verbetert de inhoudssnelheid van de zaken.
+AEM 6.4 De middelen omvatten verscheidene bruikbaarheidsverbeteringen die een naadloze gebruikerservaring verstrekken en productiviteit verbeteren. De toename in de snelheid waarmee u uw go-to-market inhoud kunt creëren/beheren verbetert de inhoudssnelheid van de zaken.
 
 De interface is responsiever, waardoor u efficiënt een grote portfolio met elementen kunt beheren. U kunt snel een lange lijst met items doorzoeken, weergeven, sorteren en vloeiend schuiven.
 
-U kunt de verschillende weergaven aanpassen: Kaart-, Lijst- en Kolomweergaven. U kunt bijvoorbeeld de grootte configureren van miniaturen die u wilt weergeven in de kaartweergave. Voor de lijstweergave kunt u het detailniveau configureren dat u wilt weergeven voor elementen in de lijst. AEM 6.4-middelen beschikken over een nieuwe structuurweergave waarmee u eenvoudig door de gegevensopslagruimte van middelen kunt navigeren en uw middelen kunt zoeken.
+U kunt de verschillende weergaven aanpassen: Kaart-, Lijst- en Kolomweergaven. U kunt bijvoorbeeld de grootte configureren van miniaturen die u wilt weergeven in de kaartweergave. Voor de lijstweergave kunt u het detailniveau configureren dat u wilt weergeven voor elementen in de lijst. AEM 6.4 Elementen bevat een nieuwe structuurweergave waarmee u eenvoudig door de gegevensopslagruimte van middelen kunt navigeren en uw middelen kunt zoeken.
 
 ## Lazy loading {#lazy-loading}
 
-Wanneer u naar elementen bladert of deze zoekt in AEM 6.4 Assets, worden maximaal 200 elementen tegelijk weergegeven. U kunt sneller door de resultaten scrollen, die vooral wanneer het doorbladeren door een lange lijst van resultaten nuttig is. Omdat een aanzienlijk aantal elementen tegelijk wordt geladen, verloopt het bladeren soepel.
+Wanneer u in AEM 6.4 Middelen naar elementen bladert of deze zoekt, worden maximaal 200 elementen tegelijk weergegeven. U kunt sneller door de resultaten scrollen, die vooral wanneer het doorbladeren door een lange lijst van resultaten nuttig is. Omdat een aanzienlijk aantal elementen tegelijk wordt geladen, verloopt het bladeren soepel.
 
 Als u op een element tikt of erop klikt om de detailpagina weer te geven, kunt u gewoon terugkeren naar de resultatenpagina door op de knop Terug op de werkbalk te tikken of erop te klikken.
 
@@ -28,11 +31,11 @@ Afhankelijk van het apparaat dat u gebruikt en de hoeveelheid details die u nodi
 
 Voer de volgende stappen uit om het formaat van miniaturen in de kaartweergave te wijzigen:
 
-1. Tik op het pictogram Lay-out of klik op het pictogram Lay-out op de werkbalk en kies de optie **[!UICONTROL Weergave-instellingen]** .
+1. Tik op het pictogram Lay-out of klik op het pictogram Lay-out op de werkbalk en kies de **[!UICONTROL View Settings]** optie.
 
    ![view_settings](assets/view_settings.png)
 
-1. Selecteer in het dialoogvenster **[!UICONTROL Weergave-instellingen]** de gewenste miniatuurgrootte en tik/klik op **[!UICONTROL Bijwerken]**.
+1. Selecteer in het **[!UICONTROL View Settings]** dialoogvenster de gewenste miniatuurgrootte en tik/klik op **[!UICONTROL Update]**.
 
    ![view_settings_dialog](assets/view_settings_dialog.png)
 
@@ -50,21 +53,21 @@ In de lijstweergave worden in de eerste kolom nu standaard de bestandsnamen van 
 
 ![list_view](assets/list_view.png)
 
-U kunt kiezen om de hoeveelheid details te vormen u wilt tonen. Tik/klik op het pictogram Lay-out, kies de optie **[!UICONTROL Weergave-instellingen]** en geef de kolommen op die u wilt weergeven in het dialoogvenster **[!UICONTROL Weergave-instellingen]** .
+U kunt kiezen om de hoeveelheid details te vormen u wilt tonen. Tik/klik op het pictogram Lay-out, kies de **[!UICONTROL View Settings]** optie en geef de kolommen op die u wilt weergeven in het **[!UICONTROL View Settings]** dialoogvenster.
 
 ![view_settings_dialoglistview](assets/view_settings_dialoglistview.png)
 
 ## Verbeteringen in de kolomweergave {#column-view-improvements}
 
-Naast de Kaart- en lijstweergaven kunt u nu vanuit de kolomweergave naar de detailpagina van een element navigeren. Selecteer een element in de kolomweergave en tik op **[!UICONTROL Meer details]** onder de elementmomentopname.
+Naast de Kaart- en lijstweergaven kunt u nu vanuit de kolomweergave naar de detailpagina van een element navigeren. Selecteer een element in de kolomweergave en tik/klik vervolgens onder de elementmomentopname. **[!UICONTROL More Details]**
 
 ![meer_details](assets/more_details.png)
 
 ## Boomstructuurweergave {#tree-view}
 
-AEM 6.4-middelen beschikken over een structuurweergave waarmee u gemakkelijk door de hiërarchie van elementen kunt bladeren en naar het gewenste middel of de gewenste map kunt navigeren.
+AEM 6.4 Elementen bevat een structuurweergave waarmee u gemakkelijk door de hiërarchie van elementen kunt bladeren en naar het gewenste middel of de gewenste map kunt navigeren.
 
-Als u de structuurweergave wilt openen, tikt u op het pictogram GlobalNav in het deelvenster `Assets UI`en kiest u **[!UICONTROL Inhoudsstructuur]** in het menu.
+Als u de structuurweergave wilt openen, tikt u op het pictogram GlobalNav in het deelvenster `Assets UI`en kiest u een optie in het **[!UICONTROL Content tree]** menu.
 
 ![content_tree](assets/content_tree.png)
 
@@ -82,9 +85,9 @@ Afhankelijk van de gekozen indeling kunt u de detailpagina voor een element op d
 
 | **Weergave** | **De pagina met elementdetails openen** |
 |---|---|
-| [!UICONTROL Kaartweergave] | Tik op het element of klik op het element. |
-| [!UICONTROL Lijstweergave] | Tik/klik op het rijitem voor het element in de lijst. |
-| [!UICONTROL Kolomweergave] | Tik/klik op de knop **[!UICONTROL Meer details]** in de elementmomentopname. |
+| [!UICONTROL Card View] | Tik op het element of klik op het element. |
+| [!UICONTROL List View] | Tik/klik op het rijitem voor het element in de lijst. |
+| [!UICONTROL Column View] | Tik/klik op de **[!UICONTROL More Details]** knop in de elementmomentopname. |
 
 Gebruik de knoppen Vorige/Volgende om heen en weer te gaan tussen de elementen.
 
