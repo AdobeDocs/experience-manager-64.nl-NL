@@ -9,6 +9,9 @@ topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '710'
+ht-degree: 0%
 
 ---
 
@@ -41,7 +44,7 @@ Voer de volgende stappen uit om een element toe te voegen aan de metagegevens:
    `(agebox.value >= 21) ? true : false`
 
    ![Metagegevensscript](assets/add-element-metadata.png)
-   **** Afbeelding: Script dat is ingevoerd op het tabblad Metagegevens **
+   **Afbeelding:** *Script dat is ingevoerd op het tabblad Metagegevens*
 
 1. Click **OK**.
 
@@ -63,5 +66,5 @@ U selecteert een adaptieve formuliercontainer en voegt in de formuliereigenschap
 
 >[!NOTE]
 >
->Het bovenstaande voorbeeld is alleen bedoeld voor leerdoeleinden. Zorg ervoor dat u naar metagegevens zoekt op de juiste locatie zoals deze is geconfigureerd in de implementatie van AEM Forms.
+>Het bovenstaande voorbeeld is alleen bedoeld voor leerdoeleinden. Zorg ervoor dat u naar metagegevens zoekt op de juiste locatie zoals deze is geconfigureerd in uw AEM Forms-implementatie.
 
