@@ -1,8 +1,8 @@
 ---
 title: Een pagina met een portal voor formulieren maken
 seo-title: Een pagina met een portal voor formulieren maken
-description: Met Forms Portal kunnen webontwikkelaars componenten gebruiken om een formulierportal te maken en aan te passen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
-seo-description: Met Forms Portal kunnen webontwikkelaars componenten gebruiken om een formulierportal te maken en aan te passen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
+description: Forms Portal beschikt over componenten waarmee webontwikkelaars een formulierportal kunnen maken en aanpassen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
+seo-description: Forms Portal beschikt over componenten waarmee webontwikkelaars een formulierportal kunnen maken en aanpassen op websites die zijn gemaakt met Adobe Experience Manager (AEM).
 uuid: 328f3342-d6ca-4413-9f1d-1a550df74bde
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7387dfe8-0029-4ad0-b319-fc519928318b
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1579'
+ht-degree: 1%
 
 ---
 
@@ -26,9 +29,9 @@ Forms Portal-componenten zijn niet standaard beschikbaar voor gebruik. Zorg ervo
 
 **Voorspellen** voor documentservices omvatten vooraf ingestelde datums, voorspelling van volledige tekst, voorspelling van eigenschappen en voorspelde componenten voor labels. Deze componenten worden gebruikt om onderzoek in het Onderzoek &amp; component van de Registratie te vormen.
 
-Zodra zij op een pagina van de plaatsen AEM worden toegelaten, zijn deze componentencategorieën beschikbaar voor gebruik in componentenbrowser.
+Zodra zij op een AEM plaatspagina worden toegelaten, zijn deze componentencategorieën beschikbaar voor gebruik in componentenbrowser.
 
-![](assets/component-categories.png) AEM Forms portalcomponenten in de deelbrowser **** Afbeelding: Categorieën van onderdelen in de portal *Formulieren*
+![AEM Forms Portal-componenten in de deelbrowser](assets/component-categories.png)**Afbeelding:** *Componentcategorieën van Forms Portal*
 
 ## Zoeken &amp; listercomponent {#search-amp-lister-component}
 
@@ -39,17 +42,17 @@ De component Search &amp; Lister, beschikbaar onder de componentencategorie van 
 
 U kunt de component Search &amp; Lister van de de componentencategorie van de Diensten van het Document in componentenbrowser op de pagina slepen. Wanneer de component wordt toegevoegd, ziet deze er ongeveer als volgt uit.
 
-![](assets/fp-grid-viw.png) Component zoeken en opslaan in een pagina **** Afbeelding: Component *zoeken en labelen op een pagina met rasterlay-out*
+![Component zoeken en opslaan in een pagina](assets/fp-grid-viw.png)**Afbeelding:** *Component zoeken en labelen op een pagina met rasterlay-out*
 
 ### Lijstvenster {#list-pane}
 
 Het deelvenster Lijst is een gebied waarin uw formulieren worden weergegeven. De component Zoeken en register bevat verschillende configuratieopties waarmee u de weergave van formulieren in het deelvenster Lijst kunt bepalen.
 
-Tik op de component Search and Lister en tik vervolgens op ![settings_icon](assets/settings_icon.png)om het deelvenster Lijst te configureren. Het dialoogvenster Component **** bewerken wordt geopend.
+Tik op de component Search and Lister en tik vervolgens op ![settings_icon](assets/settings_icon.png)om het deelvenster Lijst te configureren. Het **[!UICONTROL Edit Component]** dialoogvenster wordt geopend.
 
-![](assets/edit-list.png) Deelvenster Lijst in bewerkingsmodus **** Figuur: Het deelvenster *Lijst in de bewerkingsmodus*
+![Deelvenster Lijst in bewerkingsmodus](assets/edit-list.png)**Figuur:** *Het deelvenster Lijst in de bewerkingsmodus*
 
-Het dialoogvenster **[!UICONTROL Bewerken]** bevat verschillende tabbladen met configuratieopties die in de onderstaande tabel worden beschreven. Tik op **[!UICONTROL OK]** om de configuratie op te slaan als u klaar bent.
+Het **[!UICONTROL Edit]** dialoogvenster bevat verschillende tabbladen met configuratieopties die in de onderstaande tabel worden beschreven. Tik **[!UICONTROL OK]** om de configuratie op te slaan als u klaar bent.
 
 <table> 
  <tbody> 
@@ -61,7 +64,7 @@ Het dialoogvenster **[!UICONTROL Bewerken]** bevat verschillende tabbladen met c
   <tr> 
    <td><span class="uicontrol"><strong>Elementmappen</strong></span></td> 
    <td>Item toevoegen</td> 
-   <td>Vormt de mappen waarin elementen worden geüpload met behulp van de gebruikersinterface van AEM Forms. Standaard worden alle geüploade elementen weergegeven. Zie <a href="/help/forms/using/introduction-managing-forms.md" target="_blank">Inleiding tot het beheren van formulieren</a>voor meer informatie over de gebruikersinterface van AEM Forms.</td> 
+   <td>Hiermee configureert u de mappen waarin elementen worden geüpload met de gebruikersinterface van AEM Forms. Standaard worden alle geüploade elementen weergegeven. Zie <a href="/help/forms/using/introduction-managing-forms.md" target="_blank">Inleiding tot het beheren van formulieren</a>voor meer informatie over de gebruikersinterface van AEM Forms.</td> 
   </tr> 
   <tr> 
    <td><p><span class="uicontrol"><strong>Weergave</strong></span></p> </td> 
@@ -106,7 +109,7 @@ Het dialoogvenster **[!UICONTROL Bewerken]** bevat verschillende tabbladen met c
   <tr> 
    <td><span class="uicontrol"><strong>Formulierkoppeling</strong></span></td> 
    <td>Rendertype</td> 
-   <td>Bepaalt het overzicht met formulieren op basis van het opgegeven rendertype. De beschikbare opties zijn PDF en HTML. Als u bijvoorbeeld alleen HTML selecteert als rendertype, worden de PDF-formulieren uitgefilterd.</td> 
+   <td>Bepaalt het overzicht met formulieren op basis van het opgegeven rendertype. De beschikbare opties zijn PDF en HTML. Als u bijvoorbeeld alleen HTML selecteert als rendertype, worden de PDF forms uitgefilterd.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -116,10 +119,10 @@ Het dialoogvenster **[!UICONTROL Bewerken]** bevat verschillende tabbladen met c
   <tr> 
    <td> </td> 
    <td>URL verzenden</td> 
-   <td><p>Vormt een servlet waar de vormgegevens worden voorgelegd.</p> <p><strong></strong> Opmerking: U kunt URL <em>verzenden voor een formulier op verschillende plaatsen opgeven en de volgorde van prioriteit is als volgt:</em></p> 
+   <td><p>Vormt een servlet waar de vormgegevens worden voorgelegd.</p> <p><strong>Opmerking:</strong> <em>De verzendURL voor een formulier kan op verschillende plaatsen worden opgegeven en de prioriteitsvolgorde is als volgt:</em></p> 
     <ol> 
      <li><em>VerzendURL die is ingesloten in het formulier (in de knop Verzenden) heeft de hoogste prioriteit.</em></li> 
-     <li><em>VerzendURL die wordt vermeld in de gebruikersinterface van AEM-formulieren heeft de tweede hoogste prioriteit.</em></li> 
+     <li><em>Verzenden van URL die wordt vermeld in de gebruikersinterface van AEM Forms heeft de tweede hoogste prioriteit.</em></li> 
      <li><em>De laagste prioriteit voor het verzenden van een URL die in het formulierportaal wordt vermeld.</em></li> 
     </ol> </td> 
   </tr> 
@@ -148,11 +151,11 @@ Het dialoogvenster **[!UICONTROL Bewerken]** bevat verschillende tabbladen met c
 
 ### Zoekvenster {#search-pane}
 
-In het deelvenster Zoeken kunt u de componenten Datumvoorspelling, Volledig voorspelling van tekst, Voorspelling van eigenschappen en Voorspelling van tags toevoegen uit de categorie Voorspelingen documentservices in AEM Sidetrap. Met deze componenten wordt de zoekfunctionaliteit geïmplementeerd die gebruikers kunnen gebruiken om te zoeken op de weergegeven formulieren.
+In het deelvenster Zoeken kunt u de componenten Datumvoorspelling, Volledig voorspelling van tekst, Voorspelling van eigenschappen en Voorspelcode toevoegen uit de categorie Voorspelingen documentservices in AEM Sidetrap. Met deze componenten wordt de zoekfunctionaliteit geïmplementeerd die gebruikers kunnen gebruiken om te zoeken op de weergegeven formulieren.
 
-**** Tip: U *kunt de lijst met formulieren die op uw formulierportal worden weergegeven, instellen op basis van vooraf ingestelde criteria en de zoekfunctionaliteit voor eindgebruikers verbergen. Als u de lijst met formulieren wilt beheren, gebruikt u de componenten Predicate om zoekfilters toe te passen. U kunt ook de standaardfilterwaarden opgeven en de zoekopdracht uitschakelen op het tabblad Weergave van het dialoogvenster Component bewerken.*
+**Tip:** *U kunt de lijst met formulieren die op uw formulierportal worden weergegeven, bepalen op basis van vooraf ingestelde criteria en de zoekfunctionaliteit voor eindgebruikers verbergen. Als u de lijst met formulieren wilt beheren, gebruikt u de componenten Predicate om zoekfilters toe te passen. U kunt ook de standaardfilterwaarden opgeven en de zoekopdracht uitschakelen op het tabblad Weergave van het dialoogvenster Component bewerken.*
 
-![](assets/search-with-predicates.png) Deelvenster Zoeken met datum, volledige tekst, eigenschappen en voorspelde **** afbeelding van labels: Deelvenster *Zoeken met datum, volledige tekst, eigenschappen en voorspelling van tags*
+![Deelvenster Zoeken met datum, volledige tekst, eigenschappen en voorspelde](assets/search-with-predicates.png)**afbeelding van labels:** *Deelvenster Zoeken met datum, volledige tekst, eigenschappen en voorspelling van tags*
 
 #### Datumvoorspelling {#date-predicate}
 
@@ -163,11 +166,11 @@ De component Date Predicate configureren:
 1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
 1. Geef het volgende op:
 
-   * **** Type: De enige beschikbare optie is **[!UICONTROL Datum]** van laatste wijziging.
-   * **** Tekst: Label of bijschrift voor de component Date Predicate. De standaardwaarde is **[!UICONTROL Datum]** laatste wijziging.
-   * **** Label begindatum: Label of bijschrift van begindatumveld.
-   * **** Label einddatum: Label of bijschrift voor einddatumveld.
-   * **** Verbergen: Standaarddatumfilter toepassen om formulieren weer te geven.
+   * **[!UICONTROL Type:]** De enige beschikbare optie is **[!UICONTROL Last Modified Date]**.
+   * **[!UICONTROL Text:]** Label of bijschrift voor de component Date Predicate. De standaardwaarde is **[!UICONTROL Last Modified Date]**.
+   * **[!UICONTROL Start Date Label:]** Label of bijschrift van begindatumveld.
+   * **[!UICONTROL End Date Label:]** Label of bijschrift voor einddatumveld.
+   * **[!UICONTROL Hide:]** Standaarddatumfilter toepassen om formulieren weer te geven.
 
 1. Tik op **[!UICONTROL OK]**.
 
@@ -178,8 +181,8 @@ De component Full Text Predicate implementeert het zoeken naar volledige tekst o
 De component Full Text Predicate configureren:
 
 1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster Bewerken wordt geopend.
-1. Geef de titel op in het veld **[!UICONTROL Hoofdtitel]** .
-1. Tik op **[!UICONTROL OK]**.
+1. Geef de titel op in het **[!UICONTROL Main Title]** veld.
+1. Tik op **[!UICONTROL Ok]**.
 
 #### Predicate eigenschappen {#properties-predicate}
 
@@ -187,10 +190,10 @@ De component Properties Predicate implementeert het zoeken naar formulieren op b
 
 De component Properties Predicate configureren:
 
-1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster **** Bewerken wordt geopend.
-1. Geef op het tabblad **[!UICONTROL Algemeen]** het zoeklabel op. The default value is **[!UICONTROL Properties]**.
+1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). De **[!UICONTROL Edit dialog]** knop wordt geopend.
+1. Geef op het **[!UICONTROL General]** tabblad het zoeklabel op. De standaardwaarde is **[!UICONTROL Properties]**.
 
-1. Tik op het tabblad **[!UICONTROL Opties]** op Item **** toevoegen.
+1. In the **[!UICONTROL Options]** tab, tap **[!UICONTROL Add Item]**.
 1. Selecteer een eigenschap in de vervolgkeuzelijst en geef een zoeklabel voor de eigenschap op in het veld onder de vervolgkeuzelijst.
 1. Herhaal stap 4 om meer eigenschappen toe te voegen. U kunt ook een standaardfilterwaarde opgeven om formulieren weer te geven op basis van de opgegeven criteria en de eigenschap verbergen om door eindgebruikers te worden gezocht. Schakel het selectievakje Verbergen voor een eigenschap in en geef de standaardwaarde voor het filter op.
 
@@ -200,11 +203,11 @@ De component Properties Predicate configureren:
 
 #### Voorspelfunctie voor tags {#tags-predicate}
 
-De component Voorspelfunctie voor tags implementeert het zoeken naar formulieren op basis van codes die zijn gedefinieerd in Forms Manager.
+De component Voorspelfunctie voor tags implementeert het zoeken naar formulieren op basis van tags die zijn gedefinieerd in Forms Manager.
 
 U configureert als volgt de component Tags voorspellen:
 
-1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). Het dialoogvenster **** Bewerken wordt geopend.
+1. Tik op de component en tik vervolgens op ![settings_icon](assets/settings_icon.png). De **[!UICONTROL Edit dialog]** knop wordt geopend.
 1. Tik op de pijl-omlaag naast het veld Codes.
 1. Selecteer de juiste tags.
 1. Tik op **[!UICONTROL OK]**.
@@ -213,11 +216,11 @@ De geselecteerde labels worden samen met de selectievakjes voor selectie weergeg
 
 ## Formulieren weergeven op een pagina {#list-forms-on-a-page-br}
 
-Als u formulieren op een pagina wilt weergeven, voegt u de component **[!UICONTROL Zoeken en opslaan]** toe aan de pagina en configureert u het deelvenster **[!UICONTROL Lijst]**. Als u wilt dat eindgebruikers formulieren met datum, tekst en tags kunnen doorzoeken, voegt u een onderdeel van het deelvenster **[!UICONTROL Zoeken]** toe.
+Als u formulieren op een pagina wilt weergeven, voegt u de **[!UICONTROL Search & Lister]** component aan de pagina toe en configureert u de **[!UICONTROL List Pane]** component. Voeg een **[!UICONTROL Search Pane]** component toe om eindgebruikers in staat te stellen formulieren met datum, tekst en tags te doorzoeken.
 
 Als u een formulier vanaf een willekeurige locatie op de pagina wilt koppelen, gebruikt u de component Koppeling. Zie Koppelingscomponent [insluiten in een pagina](/help/forms/using/embedding-link-component-page.md)voor meer informatie over de koppelingscomponent.
 
-Met de component **[!UICONTROL Concepten en verzendingen]** kunt u de formulieren weergeven die zich in een concept bevinden en de formulieren die al zijn verzonden. Zie [De component](/help/forms/using/draft-submission-component.md)Concepten en verzendingen aanpassen voor meer informatie.
+Gebruik de **[!UICONTROL Drafts and Submissions]** component om een overzicht te geven van de formulieren in een concept-status en de formulieren die al zijn verzonden. Zie [De component](/help/forms/using/draft-submission-component.md)Concepten en verzendingen aanpassen voor meer informatie.
 
 ## Geschikt voor mobiele apparaten {#mobile-device-friendliness}
 
@@ -225,7 +228,7 @@ De component Forms Portal Search &amp; Lister is gebruiksvriendelijk voor mobiel
 
 In de volgende afbeelding ziet u de component Search &amp; Lister wanneer deze wordt geopend op een mobiel apparaat:
 
-![](assets/search_lister.png) Screenshot van de component **Search and Lister** Figure: Onderdeel *Zoeken en register*
+![Screenshot van de component](assets/search_lister.png)Search and Lister **Figure:** *Onderdeel Zoeken en bibliotheken*
 
 ## De pagina&#39;s van een portal voor formulieren aanpassen {#customizing-a-forms-portal-page-br}
 
