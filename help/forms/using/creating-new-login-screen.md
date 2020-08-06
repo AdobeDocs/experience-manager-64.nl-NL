@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: cfaa6b49-3fd0-4c08-84a2-e86c7e7e3532
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '490'
+ht-degree: 2%
 
 ---
 
 
 # Een nieuw aanmeldingsscherm maken {#creating-a-new-login-screen}
 
-U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aanmeldingsscherm van AEM Forms gebruiken. De wijzigingen zijn bijvoorbeeld van invloed op het aanmeldingsscherm van de werkruimte Formulierbeheer en AEM-formulieren.
+U kunt het aanmeldingsscherm wijzigen van alle AEM Forms-modules die het AEM Forms-aanmeldingsscherm gebruiken. De wijzigingen zijn bijvoorbeeld van invloed op het aanmeldingsscherm van zowel de Forms Manager- als de AEM Forms-werkruimte.
 
 ## Vereiste {#prerequisite}
 
@@ -45,6 +48,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
 
    1. Wijzig de naam van de map in de naam van de landinstelling die u wilt ondersteunen. Bijvoorbeeld, `ar`.
    1. Wijzig de `jcr:language` waarde van de eigenschap in `ar`(voor de `ar` map).
+
    >[!NOTE]
    >
    >Als de landinstelling een combinatie van een taalcode is, wijzigt u bijvoorbeeld `ar-DZ`de mapnaam en de eigenschapswaarde in `ar-DZ`.
@@ -192,6 +196,7 @@ U kunt het aanmeldingsscherm wijzigen van alle modules van AEM Forms die het aan
       * Van `/libs/livecycle/core/components/login`
       * to `/apps/livecycle/core/components/login`
    1. Wijzigen `/apps/livecycle/core/components/login/login.jsp` om de zojuist toegevoegde tekst op te nemen.
+
    ![vastleggen](assets/capture.png)
 
    ```
