@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: e1431ad9-3bae-4ac3-97e2-96dcbfce1f71
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '549'
+ht-degree: 0%
 
 ---
 
@@ -39,7 +42,7 @@ Voer de volgende stappen uit om een aangepaste indeling toe te passen op één v
 
 ### De indeling van alle velden van een formulier aanpassen {#customize-layout-of-all-the-fields-of-a-form}
 
-Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u op één plaats opmaak van formuliercomponenten opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Zie [Thema&#39;s in AEM-formulieren](/help/forms/using/themes.md)voor meer informatie over thema&#39;s.
+Met AEM Forms kunt u nu een thema maken en dit toepassen op uw formulier. Met de Thema-editor kunt u op één plaats opmaak van formuliercomponenten opgeven. Wanneer u een thema maakt, geeft u de stijl op componentniveau op. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md)voor meer informatie over thema&#39;s.
 
 Maak een thema met de Thema-editor om de indeling van alle velden in het formulier aan te passen. Nadat u een thema hebt gemaakt, voert u de volgende stappen uit om het op een formulier toe te passen:
 
