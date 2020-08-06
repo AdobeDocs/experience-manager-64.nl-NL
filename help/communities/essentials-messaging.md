@@ -106,6 +106,7 @@ Zie ook Aanpassingen aan de [clientzijde](client-customize.md)
 >
 >* `setInboxPath`()
 >* `setSentItemsPath`()
+
 >
 >
 Bijvoorbeeld:
