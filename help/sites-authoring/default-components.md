@@ -1,8 +1,8 @@
 ---
 title: Onderdelen
 seo-title: Onderdelen
-description: AEM wordt geleverd met een groot aantal verschillende componenten die uitgebreide functionaliteit bieden voor auteurs van websites
-seo-description: AEM wordt geleverd met een groot aantal verschillende componenten die uitgebreide functionaliteit bieden voor auteurs van websites
+description: AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden aan auteurs van websites
+seo-description: AEM wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden aan auteurs van websites
 uuid: 55caeec3-add7-4d05-a620-07e33901adb7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 53c37f8c-eb75-4134-9f91-8adb0a574360
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 2%
 
 ---
 
 
 # Onderdelen{#components}
 
-Adobe Experience Manager (AEM) wordt geleverd met een groot aantal offline componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Deze zijn beschikbaar wanneer u een pagina [](/help/sites-authoring/editing-content.md) bewerkt en zijn gegroepeerd op hoofdfunctioneel gebied (de zogenaamde componentgroep) voor filterdoeleinden.
+Adobe Experience Manager (AEM) wordt geleverd met een groot aantal out-of-the-box componenten die uitgebreide functionaliteit bieden voor auteurs van websites. Deze zijn beschikbaar wanneer u een pagina [](/help/sites-authoring/editing-content.md) bewerkt en zijn gegroepeerd op hoofdfunctioneel gebied (de zogenaamde componentgroep) voor filterdoeleinden.
 
 De componenten zijn beschikbaar wanneer u een pagina [](/help/sites-authoring/editing-content.md)bewerkt. Om het filtreren te helpen, worden de componenten gegroepeerd door belangrijkste functionele gebied (d.w.z. componentengroep).
 
 >[!NOTE]
 >
->Deze sectie bespreekt slechts componenten die uit-van-de-doos in een standaardAEM installatie beschikbaar zijn.
+>Deze sectie bespreekt slechts componenten die uit-van-de-doos in een standaard AEM installatie beschikbaar zijn.
 >
 >Afhankelijk van uw instantie kunt u aangepaste componenten hebben die uitdrukkelijk voor uw vereisten worden ontwikkeld. Deze kunnen zelfs de zelfde naam hebben zoals sommige componenten hier besproken.
 
@@ -49,7 +52,7 @@ Componenten worden gesorteerd op basis van verschillende categorieën, component
 
 ## Overzicht van alle componenten {#overview-of-all-components}
 
-De [componentenconsole](/help/sites-authoring/default-components-console.md) geeft een overzicht van de componentengroepen, en componenten, die door uw installatie AEM worden verstrekt. U kunt belangrijke informatie over de individuele componenten en hun gebruik bekijken.
+De [componentenconsole](/help/sites-authoring/default-components-console.md) geeft een overzicht van de componentengroepen, en componenten, die door uw AEM installatie worden verstrekt. U kunt belangrijke informatie over de individuele componenten en hun gebruik bekijken.
 
 ## Componenten - Belangrijkste gebieden {#components-major-areas}
 
@@ -59,7 +62,7 @@ De volgende pagina&#39;s bevatten koppelingen naar enkele aanvullende, belangrij
 
 * [Communities](/help/communities/author-communities.md) - Componenten bieden interactieve functies voor een website, zoals forums en opmerkingen. Veel van deze componenten worden inbegrepen wanneer een [Communautaire Plaats](/help/communities/overview.md) wordt gecreeerd.
 
-* [eCommerce](/help/sites-administering/ecommerce.md) - De eCommerce-functie binnen AEM omvat ook een reeks componenten. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
+* [eCommerce](/help/sites-administering/ecommerce.md) - De functie eCommerce in AEM omvat ook een reeks componenten. Het werkelijke gebruik kan afhankelijk zijn van de gebruikte motor.
 
 ### Componenten configureren {#configuring-components}
 
