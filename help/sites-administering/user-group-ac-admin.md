@@ -10,6 +10,9 @@ content-type: reference
 discoiquuid: cc0637ef-4a9e-454f-899d-655c9caebe2b
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3137'
+ht-degree: 0%
 
 ---
 
@@ -107,6 +110,7 @@ De lijst van toegangsrechten die van toepassing zijn op het onderwerp is samenge
 >* CRX houdt geen rekening met enige gebruikershiërarchie wanneer het de lijst compileert.
 >* CRX gebruikt een groepshiërarchie slechts wanneer u een groep als lid van een andere groep omvat. Er is geen automatische overerving van groepsmachtigingen.
 >* De volgorde waarin u de groepen opgeeft, heeft geen invloed op de toegangsrechten.
+
 >
 
 
@@ -169,7 +173,7 @@ In dit geval:
 
 De rechten van de toegang van veelvoudige groepshoofden worden geëvalueerd gebaseerd op hun orde, zowel binnen de hiërarchie als binnen één enkele toegangsbeheerlijst.
 
-### Aanbevolen werkwijzen {#best-practices}
+### Best practices voor {#best-practices}
 
 In de volgende tabel vindt u een aantal aanbevelingen en aanbevolen procedures:
 
@@ -195,7 +199,7 @@ In de volgende tabel vindt u een aantal aanbevelingen en aanbevolen procedures:
   </tr> 
   <tr> 
    <td><i>Eenvoudig houden</i></td> 
-   <td><p>Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie zal goed worden terugbetaald.</p> <p>Door een duidelijke structuur toe te passen, wordt het permanente onderhoud en de administratie vereenvoudigd, zodat uw huidige collega's en/of toekomstige opvolgers gemakkelijk kunnen begrijpen wat er wordt geïmplementeerd.</p> </td> 
+   <td><p>Het investeren van wat tijd en gedachte wanneer het vormen van een nieuwe installatie zal goed worden terugbetaald.</p> <p>Door een duidelijke structuur toe te passen, wordt het permanente onderhoud en de administratie vereenvoudigd, zodat zowel uw huidige collega's als toekomstige opvolgers gemakkelijk kunnen begrijpen wat er wordt geïmplementeerd.</p> </td> 
   </tr> 
   <tr> 
    <td><i>Testen</i></td> 
@@ -267,6 +271,7 @@ Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logbo
 >
 >* gebruikers
 >* groepen met veel leden
+
 >
 
 
@@ -278,7 +283,7 @@ Als een rekening zich een andere imiteert, is het erg moeilijk te zien. De logbo
 1. Navigeer door de boomstructuur.
 1. Klik op de vereiste account om te openen voor bewerking.
 1. Breng een wijziging aan en klik vervolgens op Opslaan (groen verdeelstreepje) voor die vermelding.
-1. **Klik op** Sluiten **om te voltooien of** Lijst... om terug te keren naar de lijst met alle gebruikersaccounts.
+1. Klik op **Sluiten** om te voltooien of **Lijst...** om terug te keren naar de lijst met alle gebruikersaccounts.
 
 ### Een gebruikersaccount verwijderen {#removing-a-user-account}
 
@@ -379,7 +384,7 @@ In de kolom **Overgenomen** staat lidmaatschap dat is overgeërfd als gevolg van
 1. Navigeer door de boomstructuur.
 1. Klik op de vereiste account om te openen voor bewerking.
 1. Breng een wijziging aan en klik vervolgens op Opslaan (groen verdeelstreepje) voor die vermelding.
-1. **Klik op** Sluiten **om te voltooien of** Lijst... om terug te keren naar de lijst van alle groepsrekeningen.
+1. Klik op **Sluiten** om te voltooien of **Lijst...** om terug te keren naar de lijst van alle groepsrekeningen.
 
 ### Een groepsaccount verwijderen {#removing-a-group-account}
 
@@ -414,7 +419,7 @@ U kunt leden toevoegen aan de huidige groep:
 1. Ofwel:
 
    * Voer de naam in van het vereiste lid (gebruiker- of groepsaccount).
-   * **Of gebruik** Bladeren... om te zoeken naar de principal (gebruiker- of groepsaccount) die u wilt toevoegen en deze te selecteren.
+   * Of gebruik **Bladeren...** om te zoeken naar de principal (gebruiker- of groepsaccount) die u wilt toevoegen en deze te selecteren.
 
 1. Klik op Opslaan (groen verdeelstreepje) voor de nieuwe eigenschap.
 
@@ -422,7 +427,7 @@ Of verwijder een bestaand lid met het prullenbaksymbool.
 
 ## Toegangsbeheer {#access-right-management}
 
-Met het lusje van het Controle **van de** Toegang van CRXDE Lite kunt u het beleid van de toegangscontrole bepalen en de verwante voorrechten toewijzen.
+Met het tabblad **Toegangsbeheer** van CRXDE Lite kunt u het beleid voor toegangsbeheer definiëren en de bijbehorende rechten toewijzen.
 
 Als u bijvoorbeeld voor **Huidig pad** de vereiste bron selecteert in het linkerdeelvenster, klikt u op het tabblad Toegangsbeheer in het rechterbenedendeelvenster:
 
@@ -446,7 +451,8 @@ Het beleid kan worden geselecteerd voor:
 
 * **Huidige weg** Zoals in het bovenstaande voorbeeld, selecteer een middel binnen de bewaarplaats. Het beleid voor dit &quot;huidige pad&quot; wordt weergegeven.
 
-* **Repository** Selecteert toegangsbeheer op archiefniveau. Bijvoorbeeld, wanneer het plaatsen van het `jcr:namespaceManagement` voorrecht, dat slechts relevant voor de bewaarplaats is, niet een knoop.
+* **Repository** Selecteert toegangsbeheer op archiefniveau. Als u bijvoorbeeld de opdracht 
+`jcr:namespaceManagement` privilege, dat alleen relevant is voor de gegevensopslagruimte, niet voor een knooppunt.
 
 * **Principal** A principal die in de repository is geregistreerd.
 
@@ -474,7 +480,7 @@ De volgende rechten zijn beschikbaar voor selectie wanneer u een toegangsbeheeri
   </tr> 
   <tr> 
    <td><code>jcr:read</code></td> 
-   <td>Haal een knooppunt op en lees de eigenschappen en waarden ervan.</td> 
+   <td>Hiermee wordt een knooppunt opgehaald en worden de eigenschappen en waarden ervan gelezen.</td> 
   </tr> 
   <tr> 
    <td><code>rep:write</code></td> 
@@ -550,7 +556,7 @@ De volgende rechten zijn beschikbaar voor selectie wanneer u een toegangsbeheeri
   </tr> 
   <tr> 
    <td><code>jcr:write</code></td> 
-   <td><br /> Dit is een verzamelrecht dat het volgende bevat: - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
+   <td>Dit is een verzamelrecht dat het volgende bevat:<br /> - jcr:modifyProperties<br /> - jcr:addChildNodes<br /> - jcr:removeNode<br /> - jcr:removeChildNodes</td> 
   </tr> 
   <tr> 
    <td><code>rep:privilegeManagement</code></td> 
@@ -620,7 +626,7 @@ De volgorde in de lijst geeft de volgorde aan waarin het beleid wordt toegepast.
 
 ### Een toegangsbeheerbeleid testen {#testing-an-access-control-policy}
 
-1. **Selecteer op de werkbalk van CRXDE Lite eerst** Gereedschappen **en vervolgens Toegangsbeheer** testen... .
+1. Selecteer op de werkbalk CRXDE Lite eerst **Gereedschappen** en vervolgens Toegangsbeheer **testen...**.
 
 1. Er wordt een nieuw dialoogvenster geopend in het rechterbovenvenster. Selecteer het **pad** en/of de **hoofdmap** die u wilt testen.
 
