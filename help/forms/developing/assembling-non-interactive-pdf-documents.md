@@ -12,6 +12,9 @@ topic-tags: operations
 discoiquuid: 8a75c201-bd88-4809-be08-69de94656489
 translation-type: tm+mt
 source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+workflow-type: tm+mt
+source-wordcount: '1760'
+ht-degree: 0%
 
 ---
 
@@ -38,7 +41,7 @@ Wanneer u daarentegen twee of meer invoer-PDF-documenten doorgeeft aan de Assemb
 
 Dit DDX-document bevat het `NoXFA` element dat de Assembler-service opgeeft een niet-interactief PDF-document te retourneren.
 
-De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder dat de uitvoerservice onderdeel is van de installatie van AEM-formulieren als het invoer-PDF-document is gebaseerd op een Acrobat-formulier of een statisch XFA-formulier. Als het invoer-PDF-document echter een dynamisch XFA-formulier is, moet de uitvoerservice onderdeel zijn van de installatie van AEM-formulieren. Als de Output-service geen onderdeel is van uw AEM-formulierinstallatie wanneer een dynamisch XFA-formulier wordt geassembleerd, wordt een uitzondering gegenereerd. Zie [Documentuitvoerstromen](/help/forms/developing/creating-document-output-streams.md)maken.
+De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder dat de Output-service onderdeel is van de installatie van AEM formulieren als het invoer-PDF-document is gebaseerd op een Acrobat-formulier of een statisch XFA-formulier. Als het invoer-PDF-document echter een dynamisch XFA-formulier is, moet de Output-service onderdeel zijn van de installatie van AEM formulieren. Als de Output-service geen onderdeel is van de installatie van AEM formulieren wanneer een dynamisch XFA-formulier wordt samengesteld, wordt een uitzondering gegenereerd. Zie [Documentuitvoerstromen](/help/forms/developing/creating-document-output-streams.md)maken.
 
 >[!NOTE]
 >
@@ -46,7 +49,7 @@ De service Assembler kan niet-interactieve PDF-documenten samenstellen zonder da
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
 >[!NOTE]
 >
@@ -74,9 +77,9 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-usermanager-client.jar
 * adobe-assembler-client.jar
 * adobe-utilities.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd.
+als AEM Forms wordt geïmplementeerd op een andere ondersteunde J2EE-toepassingsserver dan JBoss, moet u de bestanden adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms is geïmplementeerd.
 
 **Een Assembler-client maken**
 
@@ -104,7 +107,7 @@ Als slechts één PDF-document wordt doorgegeven aan de Assembler-service, retou
 
 **Zie ook**
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -145,6 +148,7 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (Jav
    * Een `com.adobe.idp.Document` object dat het DDX-document vertegenwoordigt. Controleer of dit DDX-document de waarde bevat `inDoc` voor het PDF-bronelement.
    * Een `com.adobe.idp.Document` object dat het interactieve PDF-document bevat.
    * Een `com.adobe.livecycle.assembler.client.AssemblerOptionSpec` object dat de runtime-opties opgeeft, inclusief standaardniveau voor lettertypen en taaklogbestanden.
+
    De `invokeOneDocument` methode retourneert een `com.adobe.idp.Document` object dat een niet-interactief PDF-document bevat.
 
 1. Sla het niet-interactieve PDF-document op.
@@ -169,12 +173,12 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
 1. Maak een Assembler-client.
 
    * Maak een `AssemblerServiceClient` object met de standaardconstructor.
-   * Maak een `AssemblerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde door die de WSDL opgeeft voor de service AEM Forms (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Maak een `AssemblerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AssemblerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
    * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `AssemblerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `AssemblerServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -207,6 +211,7 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
    * Een `BLOB` object dat staat voor het DDX-document
    * Een `BLOB` object dat staat voor het interactieve PDF-document
    * Een `AssemblerOptionSpec` object dat uitvoeringsopties opgeeft
+
    De `invokeOneDocument` methode retourneert een `BLOB` object dat een niet-interactief PDF-document bevat.
 
 1. Sla het niet-interactieve PDF-document op.
@@ -220,4 +225,4 @@ U kunt een niet-interactief PDF-document samenstellen met behulp van de API (web
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
