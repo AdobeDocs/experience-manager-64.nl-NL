@@ -1,8 +1,8 @@
 ---
-title: Gebruikersbeheerbewerkingen in AEM controleren
-seo-title: Gebruikersbeheerbewerkingen in AEM controleren
-description: Leer hoe u gebruikersbeheerbewerkingen in AEM kunt controleren.
-seo-description: Leer hoe u gebruikersbeheerbewerkingen in AEM kunt controleren.
+title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
+seo-title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
+description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
+seo-description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
 translation-type: tm+mt
 source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+workflow-type: tm+mt
+source-wordcount: '319'
+ht-degree: 0%
 
 ---
 
 
-# Gebruikersbeheerbewerkingen in AEM controleren{#how-to-audit-user-management-operations-in-aem}
+# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren{#how-to-audit-user-management-operations-in-aem}
 
 ## Inleiding {#introduction}
 
@@ -37,10 +40,11 @@ Om de logboekoutput aan een afzonderlijk logboekdossier om te leiden, zult u een
 1. Zoek naar **Apache Sling Logging Logger Configuration**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een nieuwe fabrieksconfiguratie te maken.
 1. Maak de volgende configuratie:
 
-   * **** Logniveau:Informatie
-   * **** Logbestand: logs/useraudit.log
-   * **** Berichtpatroon: niveau standaard
-   * **** Logger: com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+   * **Logniveau:** Informatie
+   * **Logbestand:** logs/useraudit.log
+   * **Berichtpatroon:** niveau standaard
+   * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
+
    Als u beide loggers wilt invoeren in het veld **Logger** , moet u de naam van de eerste gebruiker invoeren en vervolgens een ander veld maken door op de knop &quot;+&quot; te drukken en de naam van de tweede registreerder in te voeren.
 
 ## Voorbeeld-uitvoer {#example-output}
