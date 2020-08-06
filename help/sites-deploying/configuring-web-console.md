@@ -1,8 +1,8 @@
 ---
 title: Webconsole
 seo-title: Webconsole
-description: Leer hoe u de webconsole in AEM kunt gebruiken.
-seo-description: Leer hoe u de webconsole in AEM kunt gebruiken.
+description: Leer hoe u de webconsole in AEM gebruikt.
+seo-description: Leer hoe u de webconsole in AEM gebruikt.
 uuid: 047274ff-4d7d-4c7d-95be-06f363beae2e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -10,25 +10,28 @@ content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '730'
+ht-degree: 1%
 
 ---
 
 
 # Webconsole{#web-console}
 
-De webconsole in AEM is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het OSGi R4-dienstenplatform uit te voeren, dat het OSGi-framework en de standaarddiensten omvat.
+De webconsole in AEM is gebaseerd op de [Apache Felix Web Management Console](https://felix.apache.org/documentation/subprojects/apache-felix-web-console.html). Apache Felix is een communautaire inspanning om het Platform van de Dienst van OSGi R4 uit te voeren, dat het kader OSGi en de standaarddiensten omvat.
 
 >[!NOTE]
 >
 >Op de console van het Web om het even welke beschrijvingen die standaardmontages vermelden hebben op het Verschuiven gebreken.
 >
->AEM heeft zijn eigen gebreken en zodat zouden de vastgestelde gebreken van die op de console kunnen verschillen worden gedocumenteerd.
+>AEM heeft zijn eigen gebreken en zo zouden de geplaatste gebreken van die op de console kunnen verschillen worden gedocumenteerd.
 
 De console van het Web biedt een selectie lusjes voor het handhaven van de bundels OSGi aan, die omvatten:
 
-* [Configuratie](#configuration): gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters
+* [Configuratie](#configuration): gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme om AEM systeemparameters te vormen
 * [Bundels](#bundles): gebruikt voor het installeren van bundels
-* [Componenten](#components): gebruikt voor het regelen van de status van componenten die vereist zijn voor AEM
+* [Componenten](#components): gebruikt voor de controle van de status van onderdelen die vereist zijn voor AEM
 
 Alle aangebrachte wijzigingen worden onmiddellijk toegepast op het actieve systeem. U hoeft de computer niet opnieuw op te starten.
 
@@ -64,7 +67,7 @@ Er zijn twee soorten configuraties beschikbaar bij de drop-down lijsten op dit s
 
    Hiermee kunt u de bestaande configuraties bijwerken. Deze hebben een Persistent Identity (PID) en kunnen:
 
-   * standaard en integraal bij de AEM; deze zijn vereist als de waarden worden verwijderd en de standaardinstellingen worden hersteld.
+   * standaard en integraal van AEM; deze zijn vereist als de waarden worden verwijderd en de standaardinstellingen worden hersteld.
    * instanties die zijn gemaakt op basis van fabrieksconfiguraties; Deze instanties worden gemaakt door de gebruiker. Verwijderen verwijdert de instantie.
 
 * **Fabrieksconfiguraties**
@@ -165,7 +168,7 @@ Op het tabblad **Componenten** kunt u de verschillende componenten in- en/of uit
 
    `http://localhost:4502/system/console/components`
 
-Er wordt een lijst met componenten weergegeven. Er zijn verschillende pictogrammen beschikbaar waarmee u configuratiedetails voor een specifieke component kunt inschakelen, uitschakelen of (waar van toepassing) openen.
+Er wordt een lijst met componenten weergegeven. Er zijn verschillende pictogrammen beschikbaar waarmee u configuratiedetails voor een specifieke component kunt inschakelen, uitschakelen of (indien van toepassing) openen.
 
 ![screen_shot_2012-02-15at52144pm-1](assets/screen_shot_2012-02-15at52144pm-1.png)
 
