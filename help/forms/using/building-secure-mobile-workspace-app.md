@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Een veilige AEM Forms-app voor iOS maken {#building-a-secure-aem-forms-app-for-ios}
 
-U moet het Xcode-project voor de app AEM Forms archiveren om het installatieprogramma (een .ipa-bestand) en een eigenschappenlijst (een .plist-bestand) te maken. Het eigenschappenlijstbestand bevat configuratiegegevens van de interne app die wordt gehost, zoals de naam en de hostlocatie van de app. Zie Informatie [over bestanden](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)in de eigenschappenlijst Informatie voor meer informatie over het eigenschappenlijstbestand.
+U moet het Xcode-project voor de AEM Forms-app archiveren om het installatieprogramma (een .ipa-bestand) en een eigenschappenlijst (een .plist-bestand) te maken. Het eigenschappenlijstbestand bevat configuratiegegevens van de interne app die wordt gehost, zoals de naam en de hostlocatie van de app. Zie Informatie [over bestanden](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)in de eigenschappenlijst Informatie voor meer informatie over het eigenschappenlijstbestand.
 
 1. Meld u aan bij de volgende website:
 
@@ -41,4 +41,4 @@ U moet het Xcode-project voor de app AEM Forms archiveren om het installatieprog
 1. From the **[!UICONTROL Settings]** list, expand **[!UICONTROL Code Signing]**.
 1. Selecteer **[!UICONTROL Code Signing Identity]** bij deze de juiste handtekening. Zorg ervoor dat dezelfde handtekening is geselecteerd voor **[!UICONTROL Debug]**, **[!UICONTROL Release]** en **[!UICONTROL Any iOS SDK]**.
 1. Selecteer onder **[!UICONTROL PROJECT]**, **[!UICONTROL AEM Forms]** en zorg ervoor dat de juiste handtekening is geselecteerd voor **[!UICONTROL Code Signing Identity]**, **[!UICONTROL Debug]**, **[!UICONTROL Release]** en **[!UICONTROL Any iOS SDK]**.
-1. De app AEM Forms maken en distribueren. Zie [Het installatieprogramma voor de app](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)AEM Forms maken voor gedetailleerde instructies voor het maken en distribueren van de app AEM Forms.
+1. AEM Forms-app ontwikkelen en distribueren. Zie [Het installatieprogramma voor de AEM Forms-app](setup-xcode-project-build-installer.md#build-the-installer-for-the-mobile-workspace-app)maken voor gedetailleerde instructies voor het maken en distribueren van de AEM Forms-app.
