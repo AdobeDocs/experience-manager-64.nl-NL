@@ -1,8 +1,8 @@
 ---
 title: Woordenboeken beheren met Vertaler
 seo-title: Woordenboeken beheren met Vertaler
-description: AEM verstrekt een console voor het beheren van de diverse vertalingen van teksten die in component UI worden gebruikt
-seo-description: AEM verstrekt een console voor het beheren van de diverse vertalingen van teksten die in component UI worden gebruikt
+description: AEM biedt een console voor het beheer van de verschillende vertalingen van teksten die worden gebruikt in de gebruikersinterface van componenten
+seo-description: AEM biedt een console voor het beheer van de verschillende vertalingen van teksten die worden gebruikt in de gebruikersinterface van componenten
 uuid: 4eea3110-e958-473e-8d22-c84fa435edbd
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ topic-tags: components
 discoiquuid: adf3364c-11f1-45c6-b41d-2c7d48b626f9
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '2345'
+ht-degree: 0%
 
 ---
 
 
 # Woordenboeken beheren met Vertaler{#using-translator-to-manage-dictionaries}
 
-AEM verstrekt een console voor het beheren van de diverse vertalingen van teksten die in component UI worden gebruikt. Deze console is beschikbaar op
+AEM biedt een console voor het beheer van de verschillende vertalingen van teksten die worden gebruikt in de gebruikersinterface van componenten. Deze console is beschikbaar op
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Gebruik het gereedschap Vertaler voor het beheren van Engelse tekenreeksen en de bijbehorende vertalingen. De woordenboeken worden gemaakt in de opslagplaats, bijvoorbeeld /apps/mijnproject/i18n.
+Met het gereedschap Vertaal kunt u tekenreeksen in het Engels en de bijbehorende vertalingen beheren. De woordenboeken worden gemaakt in de opslagplaats, bijvoorbeeld /apps/mijnproject/i18n.
 
 Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md) en Inhoud [vertalen van door de gebruiker gegenereerde inhoud](/help/communities/translate-ugc.md)als u de pagina of door de gebruiker gegenereerde inhoud wilt vertalen.
 
@@ -29,7 +32,7 @@ Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor he
 >
 >Bewerk alleen woordenboeken die voor uw project zijn gemaakt en onder `/apps`zich bevinden.
 >
->De AEM- systeemwoordenboeken zijn ook beschikbaar in dit hulpmiddel. Wijzig de AEM-systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de AEM-gebruikersinterface. Ook, kunnen de veranderingen bij verbetering worden verloren. De AEM-systeemwoordenboeken bevinden zich onder `/libs`.
+>AEM systeemwoordenboeken zijn ook beschikbaar in dit hulpmiddel. Wijzig de AEM systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de interface van de AEM. Ook, kunnen de veranderingen bij verbetering worden verloren. AEM systeemwoordenboeken bevinden zich onder `/libs`.
 
 >[!NOTE]
 >
@@ -45,7 +48,7 @@ Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen a
 
 1. Klik op **Woordenboek** omzetten.
 
-   ![chlimage_1-205](assets/chlimage_1-206.png)
+   ![chlimage_1-206](assets/chlimage_1-206.png)
 
 1. Selecteer de optie Maken of Toevoegen, afhankelijk van uw behoefte. Er wordt een dialoogvenster geopend.
 
@@ -63,7 +66,7 @@ Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen a
 
 Maak een woordenboek voor het beheer van uw gelokaliseerde UI-tekenreeksen. Nadat u een woordenboek hebt gemaakt, kunt u het gereedschap Vertaling gebruiken om het te beheren.
 
-1. Gebruikend CRXDE Lite, voeg de wortelknoop ( `sling:Folder`) voor uw nieuw woordenboek als structuur toe om de taaldefinities te houden:
+1. Met CRXDE Lite voegt u het basisknooppunt ( `sling:Folder`) voor het nieuwe woordenboek toe als structuur voor de taaldefinities:
 
    ` /apps/<projectName>/i18n`
 
@@ -83,7 +86,7 @@ Maak een woordenboek voor het beheer van uw gelokaliseerde UI-tekenreeksen. Nada
    >
    >Dit is de structuur van de [Sling i18n module](https://sling.apache.org/site/internationalization-support.html).
 
-1. Laad de vertaler en het woordenboekpad opnieuw (bijv. `/apps/myProject/i18n`) beschikbaar in de vervolgkeuzelijst op de werkbalk. Selecteer deze optie om tekenreeksen en de bijbehorende vertalingen toe te voegen.
+1. Laad de vertaler en het woordenboekpad opnieuw (bijv. `/apps/myProject/i18n`) is beschikbaar in de vervolgkeuzelijst op de werkbalk. Selecteer deze optie om tekenreeksen en de bijbehorende vertalingen toe te voegen.
 
    >[!NOTE]
    >
@@ -99,7 +102,7 @@ Gebruik het gereedschap Vertalen om de tekenreeksen in uw woordenboeken te beher
 >
 >Bewerk alleen woordenboeken die voor uw project zijn gemaakt en onder `/apps`zich bevinden.
 >
->Wijzig de AEM-systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de AEM-gebruikersinterface. Ook, kunnen de veranderingen bij verbetering worden verloren. De AEM-systeemwoordenboeken bevinden zich onder `/libs`.
+>Wijzig de AEM systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de interface van de AEM. Ook, kunnen de veranderingen bij verbetering worden verloren. AEM systeemwoordenboeken bevinden zich onder `/libs`.
 
 ### Tekenreeksen toevoegen, wijzigen en verwijderen {#adding-changing-and-removing-strings}
 
@@ -174,8 +177,8 @@ Gebruik de volgende procedure om een tekenreeks uit een woordenboek te verwijder
 
 De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselectie:
 
-* **** Filteren op tekst: Een patroon dat overeenkomt met de Engelse tekenreeks, opmerking of vertalingen. Alleen items die overeenkomen met het patroon of een deel ervan, worden weergegeven in de tabel.
-* **** Wijzigingen: Willekeurig, Gewijzigd, Nieuw, Verwijderd: Items weergeven die zijn gewijzigd en niet zijn opgeslagen.
+* **Filteren op tekst:** Een patroon dat overeenkomt met de Engelse tekenreeks, opmerking of vertalingen. Alleen items die overeenkomen met het patroon of een deel ervan, worden weergegeven in de tabel.
+* **Wijzigingen: Willekeurig, Gewijzigd, Nieuw, Verwijderd:** Items weergeven die zijn gewijzigd en niet zijn opgeslagen.
 
    * Willekeurig: Items weergeven die zijn gewijzigd, toegevoegd of verwijderd.
    * Gewijzigd: Items weergeven die zijn gewijzigd.
@@ -184,7 +187,7 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
    * Meerdere selecties: Items weergeven die alle geselecteerde eigenschappen hebben.
 
 * **Bevat opmerking**: Items met opmerkingen voor vertalers weergeven.
-* **** Ontbrekende vertalingen: Toon punten waar minstens één taal geen vertaling heeft.
+* **Ontbrekende vertalingen:** Toon punten waar minstens één taal geen vertaling heeft.
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -204,14 +207,16 @@ Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertal
    >
    >Bewerk alleen woordenboeken die voor uw project zijn gemaakt en onder `/apps`zich bevinden.
    >
-   >De AEM- systeemwoordenboeken zijn ook beschikbaar in dit hulpmiddel. Wijzig de AEM-systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de AEM-gebruikersinterface. Ook, kunnen de veranderingen bij verbetering worden verloren. De AEM-systeemwoordenboeken bevinden zich onder `/libs`.
+   >AEM systeemwoordenboeken zijn ook beschikbaar in dit hulpmiddel. Wijzig de AEM systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de interface van de AEM. Ook, kunnen de veranderingen bij verbetering worden verloren. AEM systeemwoordenboeken bevinden zich onder `/libs`.
 
 1. Als u de vertaalde teksten voor een van de tekenreeksen wilt bewerken, kunt u het volgende doen:
 
    * Dubbelklik op de gewenste taal voor de vereiste tekenreeks om die ene tekst te bewerken:
+
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
    * Dubbelklik op de velden **Tekenreeks** of **Opmerking** voor de vereiste tekenreeks om het dialoogvenster **Tekenreeks** bewerken te openen, bewerk de vertaling(en) naar wens en klik vervolgens op **OK** om het dialoogvenster te sluiten:
+
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
 1. Klik op **Opslaan** op de werkbalk om de wijzigingen vast te leggen.
@@ -291,6 +296,7 @@ Gebruik de volgende procedure om talen toe te voegen of te verwijderen.
 
       * fr
       * es
+
    >[!NOTE]
    >
    >De taalcodes moeten in kleine letters worden geschreven.
@@ -305,7 +311,7 @@ Gebruik de volgende procedure om talen toe te voegen of te verwijderen.
 
 ### Talen beschikbaar maken voor auteurs {#making-languages-available-to-authors}
 
-Nadat u een woordenboek hebt gedefinieerd voor een taal die nieuw is voor uw AEM-instantie, moet u deze beschikbaar stellen voor selectie door de auteurs (bijvoorbeeld voor gebruik in **Voorkeuren**):
+Nadat u een woordenboek hebt gedefinieerd voor een taal die nieuw is voor uw AEM-exemplaar, moet u deze beschikbaar stellen voor selectie door de auteurs (bijvoorbeeld voor gebruik in **Voorkeuren**):
 
 1. U wijzigt de lijst met beschikbare talen in **Voorkeuren** van de **beveiligingsconsole** als volgt:
 
@@ -367,7 +373,7 @@ De standaarddefinities wijzigen:
 
 ## Woordenboeken publiceren {#publishing-dictionaries}
 
-Neem uw woordenboeken op in het releasebeheerproces van uw AEM-toepassingen. Neem bijvoorbeeld het woordenboek op in het inhoudspakket van uw toepassing voor implementatie op de publicatieinstantie. Deze strategie biedt de volgende voordelen:
+Neem uw woordenboeken op in het releasebeheerproces van uw AEM toepassingen. Neem bijvoorbeeld het woordenboek op in het inhoudspakket van uw toepassing voor implementatie op de publicatieinstantie. Deze strategie biedt de volgende voordelen:
 
 * Er zijn woordenboeken beschikbaar voor componenten in de publicatieomgeving.
 * Wijzigingen in de UI-tekenreeksen van componenten worden samen met de bijgewerkte vertalingen geïmplementeerd.
