@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: f5721ddc-df5c-496c-be61-38d1cab63ad4
 translation-type: tm+mt
 source-git-commit: 3b26eacff87d3ce84cf5db6133b44c955055c737
+workflow-type: tm+mt
+source-wordcount: '369'
+ht-degree: 11%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 3b26eacff87d3ce84cf5db6133b44c955055c737
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-Artikelen, banners en verzamelingen worden weergegeven als cq:pagina&#39;s in AEM.
+Artikelen, banners en verzamelingen worden weergegeven als cq:Pagina&#39;s in AEM.
 
-Ze delen dezelfde algemene eigenschappen die u kunt vinden in elke cq:Page, in aanvulling op verschillende hieronder getoonde eigenschappen die de metagegevens van de Mobile On-Demand Services van Adobe Experience Manager (AEM) vertegenwoordigen en ondersteunende eigenschappen voor integratie.
+Ze delen dezelfde gemeenschappelijke eigenschappen die in elke cq:pagina worden gevonden, naast diverse hieronder getoonde eigenschappen die de metagegevens van de mobiele on-demand services van Adobe Experience Manager (AEM) vertegenwoordigen en ondersteunende eigenschappen voor integratie.
 
 In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud beschreven.
 
@@ -34,9 +37,9 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 | dps-id | Tekenreeks |  | toegewezen door AEM Mobile en opgeslagen door AEM zodra geüpload naar AEM Mobile of geïmporteerd uit AEM Mobile |
 | dps-resourceType | Tekenreeks | dps:Artikel | dps:banner | dps:Verzameling | eigenschap type entiteit |
 | dps-versie | Tekenreeks |  | versie van AEM Mobile-entiteit (ook opgenomen in de volledige AMM-id) |
-| dps-lastSynced | Date |  | datum van laatste synchronisatie/import van AEM Mobile naar AEM |
+| dps-lastSynced | Date |  | datum van laatste synchronisatie/import uit AEM Mobile naar AEM |
 | dps-lastUploaded | Date |  | datum van laatste upload van AEM naar AEM Mobile |
-| dps-lastUploadedBy | String:userid |  | De gebruiker die het laatste uploadverzoek van AEM aan AEM Mobile uitvoerde |
+| dps-lastUploadedBy | String:userid |  | De gebruiker van id die het laatste uploadverzoek van AEM aan AEM Mobile uitvoerde |
 
 ## Eigenschappen van kernmetagegevens {#core-metadata-properties}
 
@@ -89,7 +92,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 
 | Node Name | Type | Standaardwaarden of Verwachte waarden | Beschrijving |
 |--- |--- |--- |--- |
-| image | jcr:primaryType=nt:ongestructureerde <br> sling:resourceType=foundation/components/image |  |  |
+| afbeelding | jcr:primaryType=nt:ongestructureerde <br> sling:resourceType=foundation/components/image |  |  |
 
 ### Entities {#entities}
 
