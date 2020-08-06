@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '640'
+ht-degree: 0%
 
 ---
 
@@ -25,17 +28,17 @@ Lees verder voor meer informatie over asynchrone verzending in adaptieve formuli
 Om asynchrone voorlegging voor een adaptief formulier te configureren:
 
 1. Selecteer in de modus Aangepast formulier het object Form Container en tik op ![cmr1](assets/cmppr1.png) om de eigenschappen ervan te openen.
-1. Schakel in de sectie **[!UICONTROL Verzendeigenschappen]** de optie Asynchrone verzending **[!UICONTROL gebruiken in]**.
-1. Selecteer in de sectie **[!UICONTROL Bij verzenden]** een van de volgende opties voor het verzenden van een formulier.
+1. Schakel in de sectie **[!UICONTROL Submission]** Eigenschappen **[!UICONTROL Use asynchronous submission]**.
+1. Selecteer in de **[!UICONTROL On Submit]** sectie een van de volgende opties voor het verzenden van formulieren.
 
-   * **[!UICONTROL Omleiden naar URL]**: Hiermee wordt de opgegeven URL of pagina bij het verzenden van het formulier gebruikt. U kunt een URL opgeven of bladeren om het pad naar een pagina te kiezen in het veld URL **[!UICONTROL omleiden/pad]** .
-   * **[!UICONTROL Bericht]** tonen: Hiermee wordt een bericht weergegeven bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de optie Bericht tonen. Het tekstveld ondersteunt RTF-opmaak.
+   * **[!UICONTROL Redirect to URL]**: Hiermee wordt de opgegeven URL of pagina bij het verzenden van het formulier gebruikt. U kunt een URL opgeven of bladeren om het pad naar een pagina in het **[!UICONTROL Redirect URL/Path]** veld te kiezen.
+   * **[!UICONTROL Show Message]**: Hiermee wordt een bericht weergegeven bij het verzenden van het formulier. U kunt een bericht schrijven in het tekstveld onder de optie Bericht tonen. Het tekstveld ondersteunt RTF-opmaak.
 
 1. Tik op ![knop1](assets/check-button1.png) om de eigenschappen op te slaan.
 
 ## Hoe asynchrone verzending werkt {#how-asynchronous-submission-works}
 
-AEM Forms biedt offline succeshandlers en fouthandlers voor het verzenden van formulieren. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een formulier wordt verzonden, worden de gegevens voor validatie naar de server verzonden, die een reactie op de client retourneert met informatie over de gebeurtenis &#39;success&#39; of &#39;error&#39; voor de verzending. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren.
+AEM Forms biedt offline succeshandlers en foutafhandelaars voor het verzenden van formulieren. Handlers zijn client-side functies die worden uitgevoerd op basis van de serverreactie. Wanneer een formulier wordt verzonden, worden de gegevens voor validatie naar de server verzonden, die een reactie op de client retourneert met informatie over de gebeurtenis &#39;success&#39; of &#39;error&#39; voor de verzending. De informatie wordt als parameters doorgegeven aan de relevante handler om de functie uit te voeren.
 
 Bovendien kunnen auteurs en ontwikkelaars van formulieren regels op formulierniveau schrijven om standaardhandlers te overschrijven. Zie Standaardhandlers [negeren met behulp van regels](#custom)voor meer informatie.
 
@@ -94,9 +97,9 @@ Formulierontwikkelaars en auteurs kunnen regels schrijven op formulierniveau in 
 Voer de volgende stappen uit om regels in coderedacteur te schrijven om succes en foutengebeurtenissen te behandelen.
 
 1. Open het aangepaste formulier in de ontwerpmodus, selecteer een formulierobject en tik op ![bewerkingsregels1](assets/edit-rules1.png) om de regeleditor te openen.
-1. Selecteer **[!UICONTROL Formulier]** in de structuur Formulierobjecten en tik op **[!UICONTROL Maken]**.
-1. Selecteer **[!UICONTROL Code-editor]** in het keuzemenu Modus.
-1. Tik in de code-editor op Code **** bewerken. Tik op **[!UICONTROL Bewerken]** in het bevestigingsvenster.
-1. Kies **[!UICONTROL Verzending]** met succes of **[!UICONTROL Fout in verzending]** in de vervolgkeuzelijst **[!UICONTROL Gebeurtenis]** .
-1. Schrijf een regel voor de geselecteerde gebeurtenis en tik op **[!UICONTROL Gereed]** om de regel op te slaan.
+1. Selecteer **[!UICONTROL Form]** in de structuur Formulierobjecten en tik op **[!UICONTROL Create]**.
+1. Selecteer een optie **[!UICONTROL Code Editor]** in het keuzemenu Modus selecteren.
+1. Tik in de code-editor op **[!UICONTROL Edit Code]**. Tik op **[!UICONTROL Edit]** het bevestigingsvenster.
+1. Kies **[!UICONTROL Successful Submission]** of **[!UICONTROL Error in Submission]** uit de **[!UICONTROL Event]** vervolgkeuzelijst.
+1. Schrijf een regel voor de geselecteerde gebeurtenis en tik **[!UICONTROL Done]** om de regel op te slaan.
 
