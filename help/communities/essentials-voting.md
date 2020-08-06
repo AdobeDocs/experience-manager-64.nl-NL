@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
 translation-type: tm+mt
 source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+workflow-type: tm+mt
+source-wordcount: '289'
+ht-degree: 0%
 
 ---
 
@@ -37,7 +40,7 @@ Anonieme stemplaatsing wordt niet ondersteund. De bezoekers van de site moeten z
   </tr> 
   <tr> 
    <td> <a href="client-customize.md#clientlibs-for-scf"><strong>clientlibs</strong></a></td> 
-   <td> cq.social.hbs.stemden</td> 
+   <td> cq.social.hbs.voting</td> 
   </tr> 
   <tr> 
    <td> <strong>templates</strong></td> 
