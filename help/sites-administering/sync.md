@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
 source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+workflow-type: tm+mt
+source-wordcount: '2502'
+ht-degree: 0%
 
 ---
 
@@ -73,8 +76,8 @@ Hieronder vindt u de stappen die nodig zijn om gebruikerssynchronisatie in te sc
 
 1. Controleer of de laatste code is geïnstalleerd:
 
-* [AEM-platformupdates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
-* [Updates van AEM-gemeenschappen](/help/communities/deploy-communities.md#latest-releases)
+* [AEM platformupdates](https://helpx.adobe.com/experience-manager/kb/aem62-available-hotfixes.html)
+* [AEM Communities-updates](/help/communities/deploy-communities.md#latest-releases)
 
 ### 1. Apache Sling Distribution Agent - Sync Agents Factory {#apache-sling-distribution-agent-sync-agents-factory}
 
@@ -125,13 +128,14 @@ Hieronder vindt u de stappen die nodig zijn om gebruikerssynchronisatie in te sc
 >
 >* De standaardgebruiker die is toegewezen, is **`admin`**.
 >* Niet gebruiken `*communities-user-admin *user*.*`
+
 >
 
 
 
 #### Hoe te om ACL toe te voegen {#addacls}
 
-* toegang tot CRXDE Lite
+* access CRXDE Lite
 
    * bijvoorbeeld [http://localhost:4503/crx/de](http://localhost:4503/crx/de)
 
@@ -139,7 +143,7 @@ Hieronder vindt u de stappen die nodig zijn om gebruikerssynchronisatie in te sc
 * in het rechterdeelvenster selecteert u het `Access Control` tabblad
 * selecteer de `+` knoop om een ACL ingang toe te voegen
 
-   * **Opdrachtgever**: gebruiker *zoeken naar gebruikerssynchronisatie*
+   * **Opdrachtgever**: *zoeken naar gebruiker gemaakt voor gebruikerssynchronisatie*
    * **Type**: `Allow`
    * **Bevoegdheden**: `jcr:all`
    * **Beperkingen** rep:glob: `*/activities/*`
@@ -202,7 +206,7 @@ Zodra een geautoriseerde gebruiker, een lid van de **`administrators`**gebruiker
 
 ![chlimage_1-390](assets/chlimage_1-390.png)
 
-### 5. Adobe Granite Distribution - Diff Observer Factory {#diffobserver}
+### 5. Adobe granietdistributie - Diff Observer Factory {#diffobserver}
 
 **Groepssynchronisatie inschakelen**
 
@@ -382,7 +386,7 @@ Herhaal deze stappen totdat alle publicatie-instanties een unieke id voor verkop
 
 Voor een correcte synchronisatie van updates is het nodig om de builder van het vault-pakket te wijzigen voor gebruikerssynchronisatie:
 
-* op elke publicatie-instantie van AEM
+* op elke AEM publicatie-instantie
 * toegang tot de [webconsole](/help/sites-deploying/configuring-osgi.md)
 
    * bijvoorbeeld [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
@@ -433,7 +437,7 @@ Om de staat van de distributierij te controleren:
 
 * op auteur:
 
-   * gebruiken van [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
+   * gebruiken, [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md)
 
       * zoeken naar items in `/var/sling/distribution/packages`
 
@@ -482,7 +486,7 @@ In de lijst is een URL opgenomen voor elke publicatie-instantie die de diagnosti
 
 ### Configuratie onjuist toegevoegd {#improperconfig}
 
-Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou de *existing *default configuratie *uitgegeven* moeten zijn.
+Wanneer de gebruikerssynchronisatie niet werkt, is het meest voorkomende probleem dat er extra configuraties zijn *toegevoegd*. In plaats daarvan, zou *existing *default configuratie *uitgegeven* moeten zijn.
 
 Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van het Web zouden moeten verschijnen. Als er meerdere exemplaren worden weergegeven, moet de toegevoegde configuratie worden verwijderd.
 
@@ -490,7 +494,7 @@ Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van he
 
 ![chlimage_1-399](assets/chlimage_1-399.png)
 
-#### (auteur) Eén Adobe Granite Distribution - Gecodeerde wachtwoordtransportgeheime provider {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
+#### (auteur) Één Adobe Granite Distribution - de Gecodeerde Leverancier van het Vervoer van het Wachtwoord {#author-one-adobe-granite-distribution-encrypted-password-transport-secret-provider}
 
 ![chlimage_1-400](assets/chlimage_1-400.png)
 
@@ -498,7 +502,7 @@ Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van he
 
 ![chlimage_1-401](assets/chlimage_1-401.png)
 
-#### (publiceren) Eén Adobe Granite Distribution - Diff Observer Factory {#publish-one-adobe-granite-distribution-diff-observer-factory}
+#### (publiceren) Eén Adobe granietdistributie - Afd. Observer Factory {#publish-one-adobe-granite-distribution-diff-observer-factory}
 
 ![chlimage_1-402](assets/chlimage_1-402.png)
 
