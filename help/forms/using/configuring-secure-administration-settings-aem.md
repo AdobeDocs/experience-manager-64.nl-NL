@@ -1,8 +1,8 @@
 ---
-title: Beveiligde beheerinstellingen configureren voor AEM-formulieren op JEE
-seo-title: Beveiligde beheerinstellingen configureren voor AEM-formulieren op JEE
-description: Leer hoe te om gebruikersrekeningen en de diensten te beheren die, hoewel vereist in een privé ontwikkelomgeving, niet in een productiemilieu van Vormen AEM op JEE worden vereist.
-seo-description: Leer hoe te om gebruikersrekeningen en de diensten te beheren die, hoewel vereist in een privé ontwikkelomgeving, niet in een productiemilieu van Vormen AEM op JEE worden vereist.
+title: Beveiligde beheerinstellingen voor AEM Forms configureren op JEE
+seo-title: Beveiligde beheerinstellingen voor AEM Forms configureren op JEE
+description: Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
+seo-description: Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
 uuid: 04e45d06-f57d-406c-8228-15f483199430
 content-type: reference
 topic-tags: Security
@@ -10,25 +10,28 @@ products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: d211d8b0-e75f-49c3-808d-5d0e26ad3a6b
 translation-type: tm+mt
 source-git-commit: 4466161992d877b17d43fe73e3298dd6252733c0
+workflow-type: tm+mt
+source-wordcount: '884'
+ht-degree: 0%
 
 ---
 
 
-# Beveiligde beheerinstellingen configureren voor AEM-formulieren op JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
+# Beveiligde beheerinstellingen voor AEM Forms configureren op JEE {#configuring-secure-administration-settings-for-aem-forms-on-jee}
 
-Leer hoe te om gebruikersrekeningen en de diensten te beheren die, hoewel vereist in een privé ontwikkelomgeving, niet in een productiemilieu van Vormen AEM op JEE worden vereist.
+Leer hoe u gebruikersaccounts en services beheert die, hoewel vereist in een particuliere ontwikkelomgeving, niet vereist zijn in een productieomgeving van AEM Forms op JEE.
 
 Over het algemeen gebruiken ontwikkelaars de productieomgeving niet om hun toepassingen te bouwen en te testen. Daarom moet u gebruikersrekeningen en de diensten beheren die, hoewel vereist in een privé ontwikkelomgeving, niet in een productiemilieu worden vereist.
 
-Dit artikel beschrijft methodes om de algemene aanvalsoppervlakte door beleidsopties te verminderen die de Vormen AEM op JEE verstrekt.
+Dit artikel beschrijft methodes om de algemene aanvalsoppervlakte door beleidsopties te verminderen die AEM Forms op JEE verstrekt.
 
 ## Het onbruikbaar maken van niet essentiële verre toegang tot de diensten {#disabling-non-essential-remote-access-to-services}
 
-Nadat de Vormen van AEM op JEE worden geïnstalleerd en gevormd, zijn vele diensten beschikbaar voor verre aanroeping over ZEEP en Onderneming JavaBeans™ (EJB). De term ver, in dit geval, verwijst naar om het even welke bezoeker die netwerktoegang tot de havens van de Formaat van de ZEEP, EJB, of van het Bericht van de Actie (AMF) voor de toepassingsserver heeft.
+Nadat AEM Forms op JEE is geïnstalleerd en geconfigureerd, zijn veel services beschikbaar voor externe aanroeping via SOAP en Enterprise JavaBeans™ (EJB). De term extern verwijst in dit geval naar elke aanroeper die netwerktoegang heeft tot de SOAP-, EJB- of AMF-poorten (Action Message Format) voor de toepassingsserver.
 
-Hoewel de Vormen AEM op de diensten JEE geldige geloofsbrieven vereisen om voor een erkende bezoeker worden overgegaan, zou u slechts verre toegang tot de diensten moeten toestaan die u ver toegankelijk moet zijn. Om beperkte toegankelijkheid te bereiken, zou u de reeks ver toegankelijke diensten tot het minimum mogelijk voor een werkend systeem moeten verminderen en dan verre aanroeping voor de extra diensten toelaten die u nodig hebt.
+Hoewel AEM Forms op de diensten JEE geldige geloofsbrieven vereisen om voor een erkende bezoeker worden overgegaan, zou u slechts verre toegang tot de diensten moeten toestaan die u ver toegankelijk moet zijn. Om beperkte toegankelijkheid te bereiken, zou u de reeks ver toegankelijke diensten tot het minimum mogelijk voor een werkend systeem moeten verminderen en dan verre aanroeping voor de extra diensten toelaten die u nodig hebt.
 
-AEM-formulieren op JEE-services hebben altijd minstens SOAP-toegang nodig. Deze services zijn gewoonlijk vereist voor gebruik door Workbench, maar omvatten ook services die door de Workspace-webtoepassing worden aangeroepen.
+AEM Forms on JEE services hebben altijd minstens SOAP-toegang nodig. Deze services zijn gewoonlijk vereist voor gebruik door Workbench, maar omvatten ook services die door de Workspace-webtoepassing worden aangeroepen.
 
 Voltooi deze procedure gebruikend de Webpagina van Toepassingen en van de Diensten in de Console van het Beleid:
 
@@ -99,13 +102,14 @@ Sommige services van formulierservers staan niet-geverifieerde (anonieme) aanroe
    * WorkspacePropertyService
    * OutputService
    * FormsService
+
    Als u om het even welk van deze diensten voor verre aanroeping wilt blootstellen, zou u ook moeten overwegen onbruikbaar makend anonieme toegang voor deze diensten. Anders, kan om het even welke bezoeker met netwerktoegang tot deze dienst de dienst aanhalen zonder geldige geloofsbrieven over te gaan.
 
    De anonieme toegang zou voor om het even welke diensten moeten worden onbruikbaar gemaakt die niet nodig zijn. Vele interne diensten vereisen anonieme authentificatie om worden toegelaten omdat zij door potentieel om het even welke gebruiker in het systeem moeten worden aangehaald zonder vooraf geautoriseerd.
 
 ## De standaard algemene time-out wijzigen {#changing-the-default-global-time-out}
 
-Eindgebruikers kunnen zich via Workbench, AEM Forms-webtoepassingen of aangepaste toepassingen die AEM Forms-serverservices oproepen, verifiëren op AEM Forms. Één globale onderbreking wordt geplaatst gebruikt om te specificeren hoe lang dergelijke gebruikers met Vormen AEM (gebruikend een op SAML-Gebaseerde Bevestiging) kunnen interactie aangaan alvorens zij worden gedwongen om opnieuw voor authentiek te verklaren. De standaardinstelling is twee uur. In een productieomgeving moet de hoeveelheid tijd tot het minimaal aanvaardbare aantal minuten worden beperkt.
+Eindgebruikers kunnen zich bij AEM Forms verifiëren via Workbench, AEM Forms-webtoepassingen of aangepaste toepassingen die de AEM Forms-serverservices aanroepen. Één globale onderbreking wordt geplaatst gebruikt om te specificeren hoe lang dergelijke gebruikers met AEM Forms (gebruikend een op SAML-Gebaseerde Bevestiging) kunnen interactie aangaan alvorens zij worden gedwongen om opnieuw voor authentiek te verklaren. De standaardinstelling is twee uur. In een productieomgeving moet de hoeveelheid tijd tot het minimaal aanvaardbare aantal minuten worden beperkt.
 
 ### Limiet voor opnieuw verifiëren minimaliseren {#minimize-reauthentication-time-limit}
 
@@ -116,7 +120,7 @@ Eindgebruikers kunnen zich via Workbench, AEM Forms-webtoepassingen of aangepast
    ```
 
 1. Klik op **Instellingen > Gebruikersbeheer > Configuratie > Configuratiebestanden** importeren en exporteren.
-1. Klik op **Exporteren** om een bestand config.xml te maken met de bestaande instellingen voor AEM-formulieren.
+1. Klik op **Exporteren** om een bestand config.xml te maken met de bestaande AEM Forms-instellingen.
 1. Open het XML-bestand in een editor en zoek de volgende gegevens:
 
    `<entry key=”assertionValidityInMinutes” value=”120”/>`
