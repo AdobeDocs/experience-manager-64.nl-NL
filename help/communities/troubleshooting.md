@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cdb2d80a-2fbf-4ee6-b89b-b5d74e6d3bfc
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '373'
+ht-degree: 1%
 
 ---
 
@@ -62,7 +65,7 @@ Tijdens het opstarten (niet 1st - maar om het even welke daarna) kan de volgende
 
 * 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; is vervangen door &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Deze waarschuwing kan veilig worden genegeerd aangezien jknack.handlebars.Handlebars, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage)wordt gebruikt, met zijn eigen i18n helpernut komt. Bij het opstarten wordt deze vervangen door een AEM-specifieke [i18n-helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig worden genegeerd aangezien jknack.handlebars.Handlebars, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage)wordt gebruikt, met zijn eigen i18n helpernut komt. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n-helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij logbestanden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
@@ -81,7 +84,7 @@ Deze waarschuwingen kunnen veilig worden genegeerd.
 
 ### Fout in logbestanden: NoClassDefFoundError voor IndexElementFactory {#error-in-logs-noclassdeffounderror-for-indexelementfactory}
 
-Als u AEM 5.6.1 GA upgradet naar de nieuwste cq-socialecommunes-pkg-1.4.x of naar AEM 6.0, treedt het logbestand tijdens het opstarten op met fouten. Dit probleem wordt opgelost, zoals blijkt uit de fout die niet wordt gezien bij het opnieuw opstarten.
+Als u AEM 5.6.1 GA upgradet naar de nieuwste cq-socialecommunes-pkg-1.4.x of naar AEM 6.0, resulteert dit in fouten in het logbestand tijdens het opstarten voor een aandoening die zichzelf zal verhelpen, zoals blijkt uit de fout die niet wordt gezien bij het opnieuw opstarten.
 
 ```xml
 14.11.2013 20:52:39.453 ERROR [Apache Sling JCR Resource Event Queue Processor for path '/'] com.adobe.cq.social.storage.index.impl.IndexService Error occurred while processing event java.util.ConcurrentModificationException
