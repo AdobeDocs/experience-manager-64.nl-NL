@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 917b4fec-d5fe-4402-b69c-3c9645e6f934
 translation-type: tm+mt
 source-git-commit: 03d738e50be604959af93c863fbdc711ee4b083e
+workflow-type: tm+mt
+source-wordcount: '352'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ Er zijn controlelijsten voor elke persoon (rol) betrokken bij uw project. Deze d
 
 ## Downloaden {#download}
 
-Checklist voor best practices voor AEM-projecten v2
+Controlelijst voor beste praktijken voor AEM project v2
 
 [Bestand ophalen](assets/aem_project_bp_checklistv2.xlsx)
 
