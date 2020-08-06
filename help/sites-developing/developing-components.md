@@ -1,8 +1,8 @@
 ---
-title: AEM-componenten ontwikkelen
-seo-title: AEM-componenten ontwikkelen
-description: AEM-componenten worden gebruikt om de inhoud die op uw webpagina's beschikbaar is, vast te houden, op te maken en weer te geven.
-seo-description: AEM-componenten worden gebruikt om de inhoud die op uw webpagina's beschikbaar is, vast te houden, op te maken en weer te geven.
+title: AEM ontwikkelen
+seo-title: AEM ontwikkelen
+description: AEM componenten worden gebruikt om de inhoud die op uw webpagina's beschikbaar is, vast te houden, op te maken en weer te geven.
+seo-description: AEM componenten worden gebruikt om de inhoud die op uw webpagina's beschikbaar is, vast te houden, op te maken en weer te geven.
 uuid: bf789fb8-0bb8-406c-b4d6-c360b02a46d8
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,13 +12,16 @@ discoiquuid: 655c576f-d6e3-40a5-ab1f-6382a0c7443c
 legacypath: /content/docs/en/aem/6-2/develop/components/components-touch-optimized
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '3444'
+ht-degree: 0%
 
 ---
 
 
-# AEM-componenten ontwikkelen{#developing-aem-components}
+# AEM ontwikkelen{#developing-aem-components}
 
-AEM-componenten worden gebruikt om de inhoud die op uw webpagina&#39;s beschikbaar is, vast te houden, op te maken en weer te geven.
+AEM componenten worden gebruikt om de inhoud die op uw webpagina&#39;s beschikbaar is, vast te houden, op te maken en weer te geven.
 
 * Wanneer u pagina [&#39;s](/help/sites-authoring/default-components.md)ontwerpt, kunnen de componenten de auteurs de inhoud bewerken en configureren.
 
@@ -42,11 +45,11 @@ AEM-componenten worden gebruikt om de inhoud die op uw webpagina&#39;s beschikba
 
 ## Codevoorbeelden {#code-samples}
 
-Deze pagina bevat de referentiedocumentatie (of koppelingen naar referentiedocumentatie) die vereist is voor het ontwikkelen van nieuwe componenten voor AEM. Zie AEM-componenten [ontwikkelen - Codevoorbeelden](/help/sites-developing/developing-components-samples.md) voor enkele praktische voorbeelden.
+Deze pagina bevat de referentiedocumentatie (of koppelingen naar referentiedocumentatie) die vereist is voor het ontwikkelen van nieuwe componenten voor AEM. Zie [Ontwikkelen AEM Componenten - Codevoorbeelden](/help/sites-developing/developing-components-samples.md) voor enkele praktische voorbeelden.
 
 ## Structuur {#structure}
 
-De basisstructuur van een component wordt behandeld op de pagina [AEM Components - de Basisbeginselen](/help/sites-developing/components-basics.md#structure). Dat document behandelt zowel de aanraakinterface als de klassieke gebruikersinterface. Zelfs als u niet de klassieke montages in uw nieuwe component te hoeven gebruiken kan het helpen om zich van hen bewust te zijn wanneer het erven van bestaande componenten.
+De basisstructuur van een component wordt behandeld op de pagina [AEM Componenten - de Basisbeginselen](/help/sites-developing/components-basics.md#structure). Dat document behandelt zowel de aanraakinterface als de klassieke gebruikersinterface. Zelfs als u niet de klassieke montages in uw nieuwe component te hoeven gebruiken kan het helpen om zich van hen bewust te zijn wanneer het erven van bestaande componenten.
 
 ## Bestaande componenten en dialoogvensters uitbreiden {#extending-existing-components-and-dialogs}
 
@@ -94,7 +97,7 @@ Het mechanisme om logica en verschijning te scheiden helpt verduidelijken wat vo
 
 ### Java gebruiken {#using-java}
 
-[De HTML Java Use-API laat een HTML- dossier toe om helpermethodes in een douaneJava klasse](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html)toegang te hebben. Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
+[Met de HTML Java Use-API kan een HTML-bestand toegang krijgen tot hulplijnmethoden in een aangepaste Java-klasse](https://helpx.adobe.com/experience-manager/htl/using/use-api-java.html). Hierdoor kunt u Java-code gebruiken om de logica voor het selecteren en configureren van de inhoud van de component te implementeren.
 
 ### Werken met JavaScript {#using-javascript}
 
@@ -104,7 +107,7 @@ Het mechanisme om logica en verschijning te scheiden helpt verduidelijken wat vo
 
 Moderne websites zijn sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn.
 
-Om dit probleem te verhelpen, biedt AEM bibliotheekmappen **aan de** clientzijde, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, in categorieën kunt indelen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden verzonden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
+Om dit probleem te verhelpen, biedt AEM **Client-side bibliotheekmappen**, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt definiëren wanneer en hoe elke categorie code aan de client moet worden verzonden. Het client-side bibliotheeksysteem zorgt vervolgens voor het maken van de juiste koppelingen in de uiteindelijke webpagina om de juiste code te laden.
 
 Lees het [Gebruiken van Cliënt-zij HTML Bibliotheken](/help/sites-developing/clientlibs.md) voor meer informatie.
 
@@ -122,7 +125,7 @@ Voor componenten met een teruggeven die voor de Wijze van WCM gevoelig zijn, moe
 
 >[!NOTE]
 >
->In de interface met aanraakfuncties worden alleen de waarden `EDIT` en `PREVIEW` gebruikt voor het cookie met de [WCM-modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) .
+>In de interface met aanraakfuncties worden alleen de waarden `EDIT` en `PREVIEW` gebruikt voor het cookie in de [WCM-modus](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/WCMMode.html) .
 
 ## Een dialoogvenster maken en configureren {#creating-and-configuring-a-dialog}
 
@@ -130,24 +133,24 @@ Dialogen worden gebruikt om auteur toe te staan om met de component in wisselwer
 
 ### Gebruikersinterface voor koralen en graniet {#coral-ui-and-granite-ui}
 
-[Koraal UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) en [graniet UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) bepalen het moderne uiterlijk van AEM.
+[De koraal UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html) en [Granite UI](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) bepalen de moderne blik en het gevoel van AEM.
 
 [De graniet-interface biedt een groot aantal basiscomponenten (widgets)](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) die nodig zijn om een dialoogvenster in de ontwerpomgeving te maken. Indien nodig kunt u deze selectie uitbreiden en uw eigen widget maken.
 
-Zie voor meer informatie over het ontwikkelen van componenten met behulp van koralen en graniet de volgende bronnen: De componenten van de Manager van de Ervaring van de [bouw die Koraal/Granite middeltypes](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html)gebruiken.
+Zie voor meer informatie over het ontwikkelen van componenten met behulp van koralen en graniet de volgende bronnen: [Componenten van Experience Managers maken met behulp van koraal-/granietbrontypen](https://helpx.adobe.com/experience-manager/using/aem64_coral_resourcetypes.html).
 
 Zie voor meer informatie:
 
 * Koraalinterface
 
    * Biedt een consistente gebruikersinterface voor alle cloudoplossingen
-   * [Concepten van de AEM Touch-Enabled UI - Coral UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+   * [Concepten van de AEM interface met aanraakfuncties - koraalinterface](/help/sites-developing/touch-ui-concepts.md#coral-ui)
    * [Handleiding voor koraal](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/index.html)
 
 * Graniet-interface
 
    * Verstrekt de prijsverhoging van de Koraal UI die in het Verdelen componenten voor de bouw van consoles UI en dialogen wordt verpakt
-   * [Concepten van de AEM Touch-Enabled UI - granite UI](/help/sites-developing/touch-ui-concepts.md#coral-ui)
+   * [Concepten van de AEM interface met aanraakfuncties - graniet-interface](/help/sites-developing/touch-ui-concepts.md#coral-ui)
    * [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >[!NOTE]
@@ -191,7 +194,7 @@ Zie voor voorbeelden:
 
 >[!NOTE]
 >
->Als er voor een component geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening, wordt het klassieke dialoogvenster UI gebruikt als fallback binnen een compatibiliteitslaag. Als u een dergelijk dialoogvenster wilt aanpassen, moet u het dialoogvenster voor klassieke gebruikersinterface aanpassen. Zie [AEM-componenten voor de klassieke gebruikersinterface](/help/sites-developing/developing-components-classic.md).
+>Als er voor een component geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening, wordt het klassieke dialoogvenster UI gebruikt als fallback binnen een compatibiliteitslaag. Als u een dergelijk dialoogvenster wilt aanpassen, moet u het dialoogvenster voor klassieke gebruikersinterface aanpassen. Zie [AEM Componenten voor de Klassieke UI](/help/sites-developing/developing-components-classic.md).
 
 ### Dialoogvenstervelden aanpassen {#customizing-dialog-fields}
 
@@ -199,8 +202,9 @@ Zie voor voorbeelden:
 >
 >Zie:
 >
->* de AEM Gems-sessie over [Aanpassen van dialoogvelden](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
+>* de sessie van AEM Gems over [het aanpassen van de Gebieden](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)van de Dialoog.
 >* de verwante steekproefcode die onder de Steekproef van de [Code wordt behandeld - hoe te de Gebieden](/help/sites-developing/developing-components-samples.md#code-sample-how-to-customize-dialog-fields)van de Dialoog aanpassen.
+
 >
 
 
@@ -339,7 +343,7 @@ Zie [Paginaontwerp uitbreiden - Nieuwe handeling toevoegen aan een componentwerk
 
 Als uw nieuwe component verwijst naar inhoud van andere pagina&#39;s, kunt u overwegen of u het de gedeelten **Geleende inhoud** en **Inhoud** van de [**Verwijzingen **](/help/sites-authoring/basic-handling.md#references)Rail wilt beïnvloeden.
 
-AEM uit de doos controleert slechts de component van de Verwijzing. Om uw component toe te voegen moet u de OSGi bundel **WCM de Configuratie** van de Verwijzing van de Inhoud Authoring van de Inhoud vormen.
+Uit-de-doos AEM slechts de component van de Verwijzing. Om uw component toe te voegen moet u de OSGi bundel **WCM de Configuratie** van de Verwijzing van de Inhoud Authoring van de Inhoud vormen.
 
 Maak een nieuw item in de definitie en geef de component op, samen met de eigenschap die moet worden gecontroleerd. Bijvoorbeeld:
 
@@ -360,13 +364,14 @@ Dit kan gebeuren door:
 
 ## Een alineasysteem configureren, zodat een componentinstantie wordt gemaakt wanneer u een element sleept {#configuring-a-paragraph-system-so-that-dragging-an-asset-creates-a-component-instance}
 
-AEM biedt de mogelijkheid om een paragraafsysteem op uw pagina te vormen zodat [een geval van uw nieuwe component automatisch wordt gecreeerd wanneer een gebruiker (aangewezen) activa op een geval van die pagina](/help/sites-authoring/editing-content.md) (in plaats van het moeten altijd een lege component aan de pagina slepen) sleept.
+AEM biedt de mogelijkheid om een alineasysteem op uw pagina te configureren, zodat automatisch [een instantie van uw nieuwe component wordt gemaakt wanneer een gebruiker een (geschikt) element naar een instantie van die pagina](/help/sites-authoring/editing-content.md) sleept (in plaats van altijd een lege component naar de pagina te slepen).
 
 Dit gedrag, en de vereiste activa-aan-component verhouding kan worden gevormd:
 
 1. Onder de alinea-definitie van het paginaontwerp. Bijvoorbeeld:
 
    * `/etc/designs/<myApp>/page/par`
+
    Een nieuw knooppunt maken:
 
    * Naam: `cq:authoring`
@@ -382,6 +387,7 @@ Dit gedrag, en de vereiste activa-aan-component verhouding kan worden gevormd:
 
    * Naam: tekst; het verdient aanbeveling dat de naam het element en het type van het verwante onderdeel aanduidt; bijvoorbeeld
    * Type: `nt:unstructured`
+
    Elke eigenschap heeft de volgende eigenschappen:
 
    * `assetGroup`:
@@ -427,18 +433,18 @@ U kunt de code van deze pagina op GitHub vinden
 >
 >De automatische verwezenlijking van componenteninstanties kan nu gemakkelijk binnen UI worden gevormd wanneer het gebruiken van de Componenten [van de](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Kern en Bewerkbare Malplaatjes. Zie [Paginasjablonen](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) maken voor meer informatie over het definiëren van de componenten die automatisch worden gekoppeld aan bepaalde mediatypen.
 
-## De extensie AEM Brackets gebruiken {#using-the-aem-brackets-extension}
+## De extensie AEM accolades gebruiken {#using-the-aem-brackets-extension}
 
-De extensie [AEM Brackets](/help/sites-developing/aem-brackets.md) biedt een vloeiende workflow voor het bewerken van AEM-componenten en -clientbibliotheken. Deze is gebaseerd op de [Brackets](https://brackets.io/) -code-editor.
+De extensie [AEM Brackets](/help/sites-developing/aem-brackets.md) biedt een vloeiende workflow voor het bewerken van AEM componenten en clientbibliotheken. Deze is gebaseerd op de [Brackets](https://brackets.io/) -code-editor.
 
 De extensie:
 
-* Vereenvoudigt synchronisatie (geen Maven of File Vault vereist) om de efficiëntie van ontwikkelaars te verhogen en helpt ook front-end ontwikkelaars met beperkte AEM-kennis om aan projecten deel te nemen.
+* Vereenvoudigt synchronisatie (geen Maven of File Vault vereist) om de efficiëntie van ontwikkelaars te verhogen en helpt ook front-end ontwikkelaars met beperkte AEM kennis om aan projecten deel te nemen.
 * Verstrekt wat [HTML](https://helpx.adobe.com/experience-manager/htl/user-guide.html) steun, de malplaatjetaal die wordt ontworpen om componentenontwikkeling te vereenvoudigen en veiligheid te verhogen.
 
 >[!NOTE]
 >
->Brackets is het aanbevolen mechanisme voor het maken van componenten. Het vervangt CRXDE Lite - creeert de functionaliteit van de Component, die voor klassieke UI werd ontworpen.
+>Brackets is het aanbevolen mechanisme voor het maken van componenten. Het vervangt CRXDE Lite - creeer de functionaliteit van de Component, die voor klassieke UI werd ontworpen.
 
 ## Migreren vanuit een klassieke component {#migrating-from-a-classic-component}
 
@@ -459,9 +465,9 @@ Bij het migreren van een component die is ontworpen voor gebruik met de klassiek
    * U moet een nieuw dialoogvenster maken voor gebruik in de interface met aanraakbediening. Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening echter gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
    * Het gereedschap [](/help/sites-developing/dialog-conversion.md) Dialoogomzetting is bedoeld om u te helpen bestaande componenten uit te breiden.
    * [Het in kaart brengen ExtJS aan de Componenten](/help/sites-developing/touch-ui-concepts.md#extjs-and-corresponding-granite-ui-components) van Granite UI verstrekt een geschikt overzicht van xtypes ExtJS en knooptypes van ExtJS met hun gelijkwaardige middeltypes van Granite UI.
-   * Het aanpassen van gebieden, voor meer informatie zie de zitting van AEM Gems over het [Aanpassen van de Gebieden](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)van de Dialoog.
+   * Het aanpassen van gebieden, voor meer informatie zie de zitting van AEMGems over het [Aanpassen van de Gebieden](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)van de Dialoog.
    * Migreren van typen naar UI-validatie voor [graniet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/components/foundation/clientlibs/foundation/js/validation/index.html)
-   * Gebruikend JS luisteraars, voor meer informatie zie de [Behandeling van de Gebeurtenissen](#handling-field-events) van het Gebied en de zitting van AEM Gems over het [Aanpassen van de Gebieden](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)van de Dialoog.
+   * Gebruikend JS luisteraars, voor meer informatie zie de [Behandeling van de Gebeurtenissen](#handling-field-events) van het Gebied en de zitting van AEMGems over het [Aanpassen van de Gebieden](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)van de Dialoog.
 
 ### cq:listenercode migreren {#migrating-cq-listener-code}
 
