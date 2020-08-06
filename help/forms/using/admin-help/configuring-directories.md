@@ -44,7 +44,7 @@ Voor elk ondernemingsdomein u vormt, specificeer de folders die de authentificat
 
 ### Een aangepaste SPI toevoegen {#add-a-custom-spi}
 
-Voor informatie over het creëren van een douaneSPI, zie &quot;het Ontwikkelen van SPIs voor vormen AEM&quot;in [Programmering met vormen](https://www.adobe.com/go/learn_aemforms_programming_63)AEM. Start de server opnieuw om een nieuw geïmplementeerde aangepaste SPI beschikbaar te maken voor associatie met het domein.
+Voor informatie over het creëren van een douaneSPI, zie &quot;het Ontwikkelen van SPIs voor AEM vormen&quot;in [Programmering met AEM vormen](https://www.adobe.com/go/learn_aemforms_programming_63). Start de server opnieuw om een nieuw geïmplementeerde aangepaste SPI beschikbaar te maken voor associatie met het domein.
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op Nieuw Enterprise-domein of selecteer een bestaand ondernemingsdomein.
@@ -137,7 +137,7 @@ Hoewel Base-DN een verplichte instelling is in de beheerconsole, vereisen sommig
 
 **Initialen:** Schema, kenmerk voor initialen van de gebruiker
 
-**Zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen (de sleutel van de bedrijfskalender) wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM-formulieren kunnen bedrijfscalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier u zaken kalendersleutels aan gebruikers toewijst hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie Business Calendars configureren.)
+**Zakelijke agenda:** Laat u toe om een bedrijfskalender aan een gebruiker in kaart te brengen, die op de waarde voor dit het plaatsen (de sleutel van de bedrijfskalender) wordt gebaseerd. Zakelijke kalenders definiëren zakelijke en niet-zakelijke dagen. AEM formulieren kunnen zakelijke kalenders gebruiken voor het berekenen van toekomstige datums en tijden voor gebeurtenissen zoals herinneringen, deadlines en escalaties. De manier u zaken kalendersleutels aan gebruikers toewijst hangt af van of u een onderneming, lokaal, of hybride domein gebruikt. (Zie Business Calendars configureren.)
 
 Als u een ondernemingsdomein gebruikt, kunt u het BedrijfsKalender plaatsen aan een gebied in de folder in kaart brengen LDAP. Als elk gebruikersrecord in uw map bijvoorbeeld een *landveld* bevat en u bedrijfscalenders wilt toewijzen op basis van het land waar de gebruiker zich bevindt, geeft u de veldnaam van het *land* op als de waarde voor de instelling van de bedrijfscalender. Vervolgens kunt u de agenda-agenda-sleutels (de waarden die zijn gedefinieerd voor het *landveld* in de LDAP-lijst) toewijzen aan de zakelijke kalenders in de formulierworkflow.
 
@@ -159,7 +159,7 @@ De hoeveelheid ruimte die wordt gebruikt voor het weergeven van de naam van de z
 
 **Tijdzone:** Het attribuut van het schema dat de tijdzone bevat waar de gebruiker wordt gevestigd. De waarde bestaat uit een tekenreeks zoals Plaats/Land.
 
-**Besturingselement Virtuele lijstweergave (VLV) inschakelen:** Een LDAP-besturingselement waarmee AEM-formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de map veel gebruikers bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar gebruikers. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV voor groepen ook toelaten. Als u VLV-controle (Virtual List View) inschakelen selecteert, geeft u een naam op in het vak Sorteerveld.
+**Besturingselement Virtuele lijstweergave (VLV) inschakelen:** Een LDAP-besturingselement waarmee AEM formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de map veel gebruikers bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar gebruikers. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV voor groepen ook toelaten. Als u VLV-controle (Virtual List View) inschakelen selecteert, geeft u een naam op in het vak Sorteerveld.
 
 >[!NOTE]
 >
@@ -201,7 +201,7 @@ Als DN als uniek herkenningsteken wordt gespecificeerd, te hoeven u niet om het 
 
 **Tijdstempel wijzigen:** Als u synchronisatie met de delta-directory wilt inschakelen, stelt u deze waarde in om Tijdstempel te wijzigen. (Zie Synchronisatie van delta-directory inschakelen.)
 
-**Besturingselement Virtuele lijstweergave (VLV) inschakelen:** Een LDAP-besturingselement waarmee AEM-formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de directory vele groepen bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar groepen. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV ook inschakelen voor gebruikers. Als u Enable Virtual List View (VLV) Control selecteert, geeft u een naam voor het veld Sorteren op.
+**Besturingselement Virtuele lijstweergave (VLV) inschakelen:** Een LDAP-besturingselement waarmee AEM formulieren gegevens in batches kunnen ophalen van de directoryserver. Als u Sun One gebruikt als uw LDAP-directory en de directory vele groepen bevat, maakt u met VLV een index die door Gebruikersbeheer kan worden gebruikt bij het zoeken naar groepen. Deze functie is handig wanneer u een normale gebruikersaccount gebruikt die slechts een beperkte hoeveelheid gegevens kan synchroniseren. U kunt VLV ook inschakelen voor gebruikers. Als u Enable Virtual List View (VLV) Control selecteert, geeft u een naam voor het veld Sorteren op.
 
 >[!NOTE]
 >
@@ -221,7 +221,7 @@ Als DN als uniek herkenningsteken wordt gespecificeerd, te hoeven u niet om het 
 
 De synchronisatie van de folder is een belangrijke vereiste voor Gebruikersbeheer. De gebruikers en de groepen worden gesynchroniseerd van een ondernemingsfolder aan het AEM vormengegevensbestand voor het toewijzen van rollen en toestemmingen. Het aantal gebruikers varieert van 100 tot 100000+ afhankelijk van de vereisten, en het stelt een technische uitdaging om gegevens efficiënt te synchroniseren.
 
-Het protocol LDAP verstrekt een mechanisme om grote gegevensreeksen op een gepagineerde manier te vragen door verzoekcontroles te gebruiken. Wanneer u Microsoft Active Directory gebruikt, gebruikt LDAP naar AEM de synchronisatie van de formulierdatabase PagedResultsControl voor het ophalen van gegevens in batches van een bepaalde grootte. De Zon ONE Server van de Folder steunt deze controle niet. Om een gepagineerde vraag tegen de Server van de Folder van de Zon te voltooien ONE, gebruik de Virtuele controle van de Mening van de Lijst (VLV). Deze controle impliceert zowel folder server-zijconfiguratie als cliënt-zijimplementatie.
+Het protocol LDAP verstrekt een mechanisme om grote gegevensreeksen op een gepagineerde manier te vragen door verzoekcontroles te gebruiken. Als u Microsoft Active Directory gebruikt, gebruikt LDAP om de synchronisatie van de formulierdatabase te AEM PagedResultsControl voor het ophalen van gegevens in batches van een bepaalde grootte. De Zon ONE Server van de Folder steunt deze controle niet. Om een gepagineerde vraag tegen de Server van de Folder van de Zon te voltooien ONE, gebruik de Virtuele controle van de Mening van de Lijst (VLV). Deze controle impliceert zowel folder server-zijconfiguratie als cliënt-zijimplementatie.
 
 >[!NOTE]
 >
@@ -233,7 +233,7 @@ Het protocol LDAP verstrekt een mechanisme om grote gegevensreeksen op een gepag
 
 ### Het vormen van de Zon ONE Server van de Folder voor VLV {#configuring-the-sun-one-directory-server-for-vlv}
 
-Voor het maken van een VLV is een paar items nodig die de `vlvSearch` - en `vlvIndex` objectklassen bevatten. Het vlvSearch-item bevat een zoekbasis en het `vlvFilter` kenmerk, dat de objectklasse opgeeft die de kenmerken bevat die u wilt sorteren. De `vlvIndex` objectklasse bevat het `vlvSort` attribuut, dat een of meer te sorteren kenmerken opgeeft en de volgorde waarin ze worden gesorteerd. (A minteken (-) geeft de omgekeerde alfabetische volgorde aan.) Voor het gebruik van VLV met AEM-formulieren zijn aparte vermeldingen voor gebruikers en groepen vereist.
+Voor het maken van een VLV is een paar items nodig die de `vlvSearch` - en `vlvIndex` objectklassen bevatten. Het vlvSearch-item bevat een zoekbasis en het `vlvFilter` kenmerk, dat de objectklasse opgeeft die de kenmerken bevat die u wilt sorteren. De `vlvIndex` objectklasse bevat het `vlvSort` attribuut, dat een of meer te sorteren kenmerken opgeeft en de volgorde waarin ze worden gesorteerd. (A minteken (-) geeft de omgekeerde alfabetische volgorde aan.) Voor het gebruik van VLV met AEM formulieren zijn aparte vermeldingen voor gebruikers en groepen vereist.
 
 >[!NOTE]
 >
@@ -260,7 +260,7 @@ Hier volgt een voorbeeldscript voor LDIF voor VLV-invoer voor gebruikers:
 
 **Objecten met een script maken**
 
-1. Het voorbeeldscript heeft een LDAP-item met de naam `lcuser`. Dit item is bedoeld voor VLV-gerelateerde configuratie voor gebruikerssynchronisatie in AEM-formulieren. Pas de volgende eigenschappen dienovereenkomstig aan:
+1. Het voorbeeldscript heeft een LDAP-item met de naam `lcuser`. Dit item is bedoeld voor VLV-gerelateerde configuratie voor gebruikerssynchronisatie in AEM formulieren. Pas de volgende eigenschappen dienovereenkomstig aan:
 
    **Invoernaam:** De naam van het item in dit voorbeeld is `lcuser`. Als `lcuser` deze is gewijzigd, moet deze in alle delen van het voorbeeldscript worden gewijzigd.
 
