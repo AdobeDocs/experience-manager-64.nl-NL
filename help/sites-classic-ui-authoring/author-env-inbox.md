@@ -1,8 +1,8 @@
 ---
 title: Uw inbox
 seo-title: Uw inbox
-description: U kunt meldingen ontvangen van verschillende gebieden van AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
-seo-description: U kunt meldingen ontvangen van verschillende gebieden van AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
+description: U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
+seo-description: U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
 uuid: 90a3b4db-add9-47d4-a95d-fcc3863d6255
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 71f16254-336f-41bf-bf75-f69ba1051d59
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '611'
+ht-degree: 0%
 
 ---
 
 
 # Uw inbox{#your-inbox}
 
-U kunt meldingen ontvangen van verschillende gebieden van AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
+U kunt meldingen ontvangen van verschillende AEM, zoals meldingen over werkitems of taken die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren.
 
 U ontvangt deze meldingen in twee Postvakken, die worden gescheiden door het type meldingen:
 
@@ -42,6 +45,7 @@ Om uw meldingen weer te geven:
 
    * [Abonneren op meldingen](#subscribing-to-notifications)
    * [Je meldingen verwerken](#processing-your-notifications)
+
    ![chlimage_1-8](assets/chlimage_1-8.jpeg)
 
 ## Abonneren op meldingen {#subscribing-to-notifications}
@@ -58,17 +62,18 @@ Abonneren op meldingen:
    >
    >`https://<host>:<port>/libs/wcm/core/content/inbox.html`
 
-1. **Klik op** Configureren... in de linkerbovenhoek om het configuratiedialoogvenster te openen.
+1. Klik op **Configureren...** in de linkerbovenhoek om het configuratiedialoogvenster te openen.
 
    ![screen_shot_2012-02-08at111056am](assets/screen_shot_2012-02-08at111056am.png)
 
 1. Selecteer het berichtkanaal:
 
-   * **Postvak IN**: meldingen worden weergegeven in uw AEM-postvak.
+   * **Postvak IN**: meldingen worden weergegeven in uw AEM Postvak IN.
    * **E-mail**: meldingen worden per e-mail verzonden naar het e-mailadres dat is gedefinieerd in uw gebruikersprofiel.
+
    >[!NOTE]
    >
-   >U dient enkele instellingen te configureren om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Zie E-mailmelding [configureren](/help/sites-administering/notification.md#configuringemailnotification) om e-mailmeldingen in AEM te configureren.
+   >U dient enkele instellingen te configureren om via e-mail op de hoogte te worden gesteld. Het is ook mogelijk om de e-mailsjabloon aan te passen of een e-mailsjabloon voor een nieuwe taal toe te voegen. Raadpleeg [E-mailmelding](/help/sites-administering/notification.md#configuringemailnotification) configureren om e-mailberichten in AEM te configureren.
 
 1. Selecteer de paginahandelingen waarvan u een melding wilt ontvangen:
 
@@ -92,13 +97,14 @@ Abonneren op meldingen:
       Alleen een melding ontvangen voor handelingen op de pagina die door het pad wordt gedefinieerd, instellen **Exact?** op **Ja**.
 
    * Om de regel toe te staan, plaats **Regel** aan **Toestaan**. Als de reeks aan **ontkent**, wordt de regel ontkend maar niet verwijderd en kan later worden toegestaan.
+
    Als u een definitie wilt verwijderen, selecteert u de rij door op een tabelcel te klikken en op **Verwijderen** te klikken.
 
 1. Klik op **OK** om de configuratie op te slaan.
 
 ## Je meldingen verwerken {#processing-your-notifications}
 
-Als u ervoor hebt gekozen om meldingen te ontvangen in uw AEM-postvak, vult uw Postvak IN met meldingen. U kunt uw meldingen [](#viewing-your-notifications) weergeven en vervolgens de gewenste meldingen selecteren voor:
+Als u ervoor hebt gekozen om meldingen in uw AEM-postvak te ontvangen, vult uw postvak in met meldingen. U kunt uw meldingen [](#viewing-your-notifications) weergeven en vervolgens de gewenste meldingen selecteren voor:
 
 * Goedkeuren door op **Goedkeuren** te klikken: De waarde in de kolom **Lezen** is ingesteld op **true**.
 
