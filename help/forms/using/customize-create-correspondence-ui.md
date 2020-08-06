@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Met Correspondence Management kunt u het servicesjabloon van de oplossing vernie
 
 U kunt het logo in de interface Correspondentie maken wijzigen met het logo van uw organisatie.
 
-![](assets/0_1_introscreenshot.png) Het aangepaste pictogram in de UI **** Figuur Correspondence maken: Het *aangepaste pictogram in de gebruikersinterface voor correspondentie maken*
+![Het aangepaste pictogram in de UI](assets/0_1_introscreenshot.png)**Figuur Correspondence maken:** *Het aangepaste pictogram in de gebruikersinterface voor correspondentie maken*
 
 ### Het logo wijzigen in de gebruikersinterface Correspondentie maken {#changing-the-logo-in-the-create-correspondence-ui}
 
@@ -59,11 +62,11 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
+      **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
       ![Pad overlay-knooppunt](assets/0_1_5ioverlaynodedialog.png)
 
@@ -83,11 +86,11 @@ Gebruik de volgende stappen om de vereiste mapstructuur in de tak /apps te maken
    1. Klik met de rechtermuisknop op de map **imgs** in het volgende pad en selecteer **Overlay Node**: `/libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs`
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
+      **Pad:** /libs/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs
 
-      **** Locatie bedekking: /apps/
+      **Locatie bedekking:** /apps/
 
-      **** Identieke knooppunttypen:Ingeschakeld
+      **Identieke knooppunttypen:** Ingeschakeld
 
    1. Click **OK**.
 
@@ -105,9 +108,9 @@ Upload uw aangepaste logobestand naar CRX. De standaard HTML-regels bepalen de r
 * Als de hoogte van de logoafbeelding groter is dan 50 px, wordt de afbeelding in de gebruikersinterface Correspondentie maken verkleind tot een maximale hoogte van 50 px, aangezien dit de hoogte van de koptekst is. Wanneer u de afbeelding verkleint, blijft de hoogte-breedteverhouding van de afbeelding behouden in de gebruikersinterface Correspondentie maken.
 * Als de afbeelding klein is, wordt de schaal van de gebruikersinterface Correspondentie maken niet vergroot. Zorg er dus voor dat u een logoafbeelding van minimaal 48 pixels hoog en voldoende breed gebruikt voor meer duidelijkheid.
 
-Gebruik de volgende stappen om het aangepaste logobestand naar CRX te uploaden:
+Ga als volgt te werk om het aangepaste logobestand naar CRX te uploaden:
 
-1. Ga naar `https://[server]:[port]/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
+1. Go to `https://[server]:[port]/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
 1. Klik in CRXDE met de rechtermuisknop op de map **imgs** in het volgende pad en selecteer **Maken > Bestand** maken:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/imgs/`
@@ -139,7 +142,7 @@ Gebruik de volgende stappen om het aangepaste logobestand naar CRX te uploaden:
    De ondersteunde indelingen voor afbeeldingsbestanden zijn gebaseerd op de browser die u gebruikt voor toegang tot AEM Forms. Alle browsers ondersteunen JPEG, GIF en PNG. Zie de browserspecifieke documentatie over de ondersteunde afbeeldingsindelingen voor meer informatie.
 
    ![Voorbeeld van aangepast logobestand](assets/geometrixx-outdoors.png)
-   **** Afbeelding: *Voorbeeld: CustomLogo.png te gebruiken als aangepast logo*
+   **Afbeelding:** *Voorbeeld: CustomLogo.png te gebruiken als het aangepaste logo*
 
 1. Klik op Alles **opslaan**.
 
@@ -149,7 +152,7 @@ Voor de aangepaste logoafbeelding moet een extra stijlpagina worden geladen in d
 
 Gebruik de volgende stappen om de stijlpagina in te stellen voor het renderen van het logo:
 
-1. Ga naar `https://[server]:[port]/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
+1. Go to `https://[server]:[port]/[contextpath]/crx/de`. Meld u indien nodig aan als beheerder.
 1. Maak een bestand met de naam customcss.css (u kunt geen andere bestandsnaam gebruiken) op de volgende locatie:
 
    `/apps/fd/cm/ccr/gui/components/admin/clientlibs/ccrui/css/`
@@ -172,5 +175,5 @@ Gebruik de volgende stappen om de stijlpagina in te stellen voor het renderen va
 
 Wis de browsercache en open vervolgens de instantie Correspondentie-UI maken in uw browser. Je moet het aangepaste logo zien.
 
-![](assets/0_1_introscreenshot-1.png) E-mailgebruikersinterface maken met aangepaste logo **** Afbeelding: Het *aangepaste pictogram in de gebruikersinterface voor correspondentie maken*
+![E-mailgebruikersinterface maken met aangepaste logo](assets/0_1_introscreenshot-1.png)**Afbeelding:** *Het aangepaste pictogram in de gebruikersinterface voor correspondentie maken*
 
