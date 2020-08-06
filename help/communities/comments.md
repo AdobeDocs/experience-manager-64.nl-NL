@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b074ebfa-2894-4a2d-aa8e-28168049971a
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '939'
+ht-degree: 0%
 
 ---
 
@@ -56,97 +59,97 @@ Selecteer de geplaatste `Comments` component die u wilt openen en selecteer het 
 
 ### Tabblad Opmerkingen {#comments-tab}
 
-Geef op onder het tabblad **[!UICONTROL Opmerkingen]** op hoe bezoekers opmerkingen invoeren.
+Geef onder het **[!UICONTROL Comments]** tabblad op hoe bezoekers opmerkingen invoeren.
 
-* **[!UICONTROL Antwoorden toestaan]**
+* **[!UICONTROL Allow replies]**
 
    Als deze optie is ingeschakeld, kunnen leden reageren op bestaande opmerkingen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Opmerkingen per pagina]**
+* **[!UICONTROL Comments Per Page]**
 
    Hiermee beperkt u het aantal opmerkingen dat per pagina wordt weergegeven en het aantal reacties dat wordt weergegeven. De standaardwaarde is 10.
 
-* **[!UICONTROL Uploaden van bestanden toestaan]**
+* **[!UICONTROL Allow File Uploads]**
 
    Als deze optie is ingeschakeld, wordt het tekstinvoervak weergegeven voor de optie voor het uploaden van een bestand. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Max. bestandsgrootte]**
+* **[!UICONTROL Max File Size]**
 
    Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Met deze waarde beperkt u de grootte van het geüploade bestand. Standaardlimiet is 10 MB.
 
-* **[!UICONTROL Max. berichtlengte]**
+* **[!UICONTROL Max Message Length]**
 
    Maximumaantal tekens dat in het tekstvak kan worden ingevoerd. De standaardwaarde is 4096 tekens.
 
-* **[!UICONTROL Toegestane bestandstypen]**
+* **[!UICONTROL Allowed File Types]**
 
    Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het scheidingsteken &#39;punt&#39;. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, zijn deze niet toegestaan. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
-* **[!UICONTROL RTF-editor]**
+* **[!UICONTROL Rich Text Editor]**
 
    Als deze optie is ingeschakeld, kunnen opmerkingen worden ingevoerd met een markering. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Stemmen toestaan]**
+* **[!UICONTROL Allow Voting]**
 
    Als deze optie is ingeschakeld, wordt het tekstinvoervak weergegeven met de optie om omhoog of omlaag te stemmen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Volgen toestaan]**
+* **[!UICONTROL Allow Following]**
 
    Als deze optie is ingeschakeld, kunnen leden opmerkingen volgen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Badges weergeven]**
+* **[!UICONTROL Display Badges]**
 
    Als deze optie is ingeschakeld, kunnen verdiende en toegekende badges worden weergegeven. De optie Standaard is uitgeschakeld.
 
 ### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef op onder het tabblad **[!UICONTROL Gebruikersmodernisering]** op hoe de geposte opmerkingen worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte opmerkingen worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
 
-* **[!UICONTROL Pre-moderatie]**
+* **[!UICONTROL Pre-Moderation]**
 
    Als deze optie is ingeschakeld, moeten opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Opmerkingen verwijderen]**
+* **[!UICONTROL Delete Comments]**
 
    Als deze optie is ingeschakeld, kan het lid dat de opmerking heeft geplaatst deze verwijderen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Opmerkingen weigeren]**
+* **[!UICONTROL Deny Comments]**
 
    Indien gecontroleerd, sta moderators toe om commentaren te ontkennen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Opmerkingen sluiten/opnieuw openen]**
+* **[!UICONTROL Close/Reopen Comments]**
 
    Als deze optie ingeschakeld is, kan de moderator opmerkingen sluiten en opnieuw openen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Opmerkingen markeren]**
+* **[!UICONTROL Flag Comments]**
 
    Als deze optie is ingeschakeld, kunnen leden opmerkingen als onjuist markeren. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Lijst met redenen voor vlag]**
+* **[!UICONTROL Flag Reason List]**
 
    Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst de reden kiezen waarom een opmerking als onjuist wordt gemarkeerd. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Reden voor aangepaste vlag]**
+* **[!UICONTROL Custom Flag Reason]**
 
    Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een opmerking als ongeschikt te markeren. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Moderniseringsdrempel]**
+* **[!UICONTROL Moderation Threshold]**
 
    Voer het aantal keren in dat een opmerking moet worden gemarkeerd door leden voordat moderatoren op de hoogte worden gesteld. De standaardwaarde is één keer (1).
 
-* **[!UICONTROL Limiet voor markering]**
+* **[!UICONTROL Flagging Limit]**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan de **[!UICONTROL moderatiedrempel]**. De standaardwaarde is 5.
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **[!UICONTROL Moderation Threshold]** getal. De standaardwaarde is 5.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef op onder het tabblad **[!UICONTROL Sorteerinstellingen]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het **[!UICONTROL Sort Settings]** tabblad op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
-* **[!UICONTROL Veld sorteren]**
+* **[!UICONTROL Sort Field]**
 
    Trek omlaag om een van `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`te selecteren.
 
-* **[!UICONTROL Sorteervolgorde]**
+* **[!UICONTROL Sort Order]**
 
    Trek omlaag om een van `Ascending` of `Descending`te selecteren.
 
@@ -156,23 +159,23 @@ Door het Type van Middel van Commentaar te veranderen, zal het commentaarsysteem
 
 Zodra de types van douanemiddel bekend zijn, ga de Wijze [van het](../../help/sites-authoring/default-components-designmode.md) Ontwerp in en klik op de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
-Onder het lusje van de Types **[!UICONTROL van Middel, specificeer douane resourceType voor nieuwe instanties van de]** `Comments or Voting`componenten:
+Geef onder het **[!UICONTROL Resource Types]** tabblad het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting`componenten:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
-* **[!UICONTROL Type bron van opmerking]**
+* **[!UICONTROL Comment Resource Type]**
 
    Navigeer naar het resourceType van een uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
 
    Deze bron identificeert het resourceType van de UGC die is gemaakt wanneer een bezoeker een opmerking plaatst.
 
-* **[!UICONTROL Type stembron]**
+* **[!UICONTROL Voting Resource Type]**
 
    Navigeer aan resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
 
    Met deze bron wordt het bronnentype van de UGC geïdentificeerd die wordt gemaakt wanneer een bezoeker een stem plaatst.
 
-* **[!UICONTROL Brontype voor opmerkingensysteem]**
+* **[!UICONTROL Comment System Resource Type]**
 
    Navigeer aan resourceType van een uitgebreide `comments`component (het Systeem van de Commentaar) in /apps. Leeg laten tenzij het paginasjabloon het opmerkingensysteem [dynamisch in het onderliggende script bevat](scf.md#add-or-include-a-communities-component) in plaats van als bron (knooppunt comments) aan de pagina te worden toegevoegd. Lees meer over de [{include} helper](handlebars-helpers.md#include).
 
