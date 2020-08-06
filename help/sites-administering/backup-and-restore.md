@@ -1,8 +1,8 @@
 ---
 title: Back-up en herstel
 seo-title: Back-up en herstel
-description: Leer hoe u back-ups maakt van uw AEM-inhoud en deze terugzet.
-seo-description: Leer hoe u back-ups maakt van uw AEM-inhoud en deze terugzet.
+description: Leer hoe u back-ups maakt van uw AEM en deze terugzet.
+seo-description: Leer hoe u back-ups maakt van uw AEM en deze terugzet.
 uuid: 446a466f-f508-4430-9e50-42cd4463760e
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '2295'
+ht-degree: 0%
 
 ---
 
 
 # Back-up en herstel{#backup-and-restore}
 
-Er zijn twee manieren om back-ups te maken van inhoud in de opslagplaats in AEM en deze te herstellen:
+Er zijn twee manieren om back-ups te maken van opslagplaats-inhoud in AEM:
 
 * U kunt een externe back-up van de opslagplaats maken en deze op een veilige locatie opslaan. Als de repository wordt afgebroken, kunt u deze terugzetten naar de vorige status.
 * U kunt interne versies van de inhoud van de opslagplaats maken. Deze versies worden samen met de inhoud opgeslagen in de opslagplaats, zodat u snel knooppunten en bomen kunt herstellen die u hebt gewijzigd of verwijderd.
@@ -51,7 +54,7 @@ Aangezien de momentopnamesteun gewoonlijk slechts een paar seconden neemt, is de
 
 ## Online back-up {#online-backup}
 
-Met deze back-upmethode wordt een back-up gemaakt van de gehele opslagruimte, inclusief alle toepassingen die erin worden geïmplementeerd, zoals AEM. De back-up bestaat uit inhoud, versiegeschiedenis, configuratie, software, hotfixes, aangepaste toepassingen, logbestanden, zoekindexen enzovoort. Als u zich het groeperen gebruikt en als de gedeelde omslag subdirectory van `crx-quickstart` (of fysiek, of het gebruiken van een softlink) is, wordt de gedeelde folder ook gesteund.
+Deze back-upmethode maakt een back-up van de gehele opslagplaats, inclusief alle toepassingen die erin worden geïmplementeerd, zoals AEM. De back-up bestaat uit inhoud, versiegeschiedenis, configuratie, software, hotfixes, aangepaste toepassingen, logbestanden, zoekindexen enzovoort. Als u zich het groeperen gebruikt en als de gedeelde omslag subdirectory van `crx-quickstart` (of fysiek, of het gebruiken van een softlink) is, wordt de gedeelde folder ook gesteund.
 
 U kunt de volledige opslagplaats (en alle toepassingen) later herstellen.
 
@@ -59,30 +62,30 @@ Deze methode werkt als een &quot;hot&quot; of &quot;online&quot; back-up, zodat 
 
 Bij het maken van een back-up hebt u de volgende opties:
 
-* Back-ups maken van een map met behulp van het geïntegreerde hulpprogramma voor back-ups van AEM.
+* Back-up maken op een directory met AEM geïntegreerde back-upprogramma.
 * Back-ups maken van een map met behulp van een bestandssysteemmomentopname
 
 In elk geval maakt de back-up een afbeelding (of opname) van de opslagplaats. Vervolgens moet de back-upagent van het systeem ervoor zorgen dat dit image daadwerkelijk wordt overgebracht naar een speciaal back-upsysteem (tapestation).
 
 >[!NOTE]
 >
->Als de functie AEM Online Backup wordt gebruikt op een AEM-instantie met een aangepaste binlobstore-configuratie, wordt aangeraden het pad van de datastore te configureren zodat deze zich buiten de map &quot; `crx-quickstart`&quot; bevindt en apart een back-up van de datastore te maken.
+>Als AEM functie voor online back-up wordt gebruikt op een AEM instantie met een aangepaste binlobstore-configuratie, wordt aanbevolen het pad van de datastore te configureren zodat deze zich buiten de map &quot; `crx-quickstart`&quot; bevindt en apart een back-up van de datastore te maken.
 
 >[!CAUTION]
 >
->Bij de online back-up wordt alleen een back-up van het bestandssysteem gemaakt. Als u de inhoud van de opslagplaats en/of de gegevensopslagbestanden in een database opslaat, moet van die database een aparte back-up worden gemaakt. Als u AEM met MongoDB gebruikt, zie documentatie over hoe te om de inheemse reservehulpmiddelen [van](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/)MongoDB te gebruiken.
+>Bij de online back-up wordt alleen een back-up van het bestandssysteem gemaakt. Als u de inhoud van de opslagplaats en/of de gegevensopslagbestanden in een database opslaat, moet van die database een aparte back-up worden gemaakt. Als u AEM gebruikt met MongoDB, zie documentatie over hoe te om de inheemse [reservehulpmiddelen](https://docs.mongodb.org/manual/tutorial/backup-with-mongodump/)van MongoDB te gebruiken.
 
-### AEM Online Backup {#aem-online-backup}
+### AEM online back-up {#aem-online-backup}
 
 Met een online back-up van uw opslagplaats kunt u back-upbestanden maken, downloaden en verwijderen. Het is een &quot;hot&quot; of &quot;online&quot; back-upfunctie, die dus kan worden uitgevoerd terwijl de opslagplaats normaal wordt gebruikt in de lees-schrijfmodus.
 
 >[!CAUTION]
 >
->Voer AEM Online Backup niet tegelijk uit met [Datastore Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) of [Revision Cleanup](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
+>Voer AEM Online back-up niet tegelijk uit met [Datastore Garbage Collection](/help/sites-administering/data-store-garbage-collection.md) of [Revision Cleanup](/help/sites-deploying/revision-cleanup.md#how-to-run-offline-revision-cleanup). Dit heeft een negatief effect op de systeemprestaties.
 
 Wanneer u een back-up start, kunt u een **doelpad** en/of een **vertraging** opgeven.
 
-**Doelpad** De back-upbestanden worden meestal opgeslagen in de bovenliggende map van de map met het JAR-bestand (.jar) voor snelstartbestanden. Bijvoorbeeld, als u het Jar dossier AEM onder /InstallationKits/AEM wordt gevestigd, dan zal de steun onder /InstallationKits worden geproduceerd. U kunt ook een doel opgeven op de gewenste locatie.
+**Doelpad** De back-upbestanden worden meestal opgeslagen in de bovenliggende map van de map met het JAR-bestand (.jar) voor snelstartbestanden. Bijvoorbeeld, als u het AEM jar dossier onder /InstallationKits/AEM wordt gevestigd, dan zal de steun onder /InstallationKits worden geproduceerd. U kunt ook een doel opgeven op de gewenste locatie.
 
 Als **TargetPath** een folder is, wordt het beeld van de bewaarplaats gecreeerd in deze folder. Als dezelfde map meerdere malen (of altijd) wordt gebruikt voor het opslaan van een back-up,
 
@@ -100,6 +103,7 @@ Als **TargetPath** een folder is, wordt het beeld van de bewaarplaats gecreeerd 
 >* het compressieproces wordt uitgevoerd door de gegevensopslagplaats en kan de prestaties ervan beïnvloeden.
 >* Het vertraagt het back-upproces.
 >* Tot Java 1.6 kan Java alleen ZIP-bestanden maken van maximaal 4 gigabyte.
+
 >
 >
 Als u een ZIP als reserveformaat moet tot stand brengen, zou u steun aan een folder moeten en dan een compressieprogramma gebruiken om het ZIP dossier tot stand te brengen.
@@ -111,11 +115,11 @@ Een vertraging van 1 milliseconde resulteert doorgaans in 10% CPU-gebruik en een
 
 >[!NOTE]
 >
->Zie [Hoe werkt](#how-aem-online-backup-works) AEM Online Backup voor interne details van het proces.
+>Zie [Hoe AEM Online Back-up werkt](#how-aem-online-backup-works) voor interne details van het proces.
 
 Een back-up maken:
 
-1. Meld u als beheerder aan bij AEM.
+1. Meld u aan bij AEM als beheerder.
 
 1. Ga naar **Hulpmiddelen - Verrichtingen - Steun.**
 1. Klik op **Maken**. De back-upconsole wordt geopend.
@@ -151,7 +155,7 @@ Een back-up maken:
    >
    >Als u een back-up hebt gemaakt in een map: nadat het back-upproces is voltooid, schrijft AEM niet naar de doelmap.
 
-### AEM Online Backup automatiseren {#automating-aem-online-backup}
+### AEM online back-up automatiseren {#automating-aem-online-backup}
 
 Indien mogelijk, zou de online steun moeten in werking worden gesteld wanneer er weinig lading op het systeem, bijvoorbeeld in de ochtend is.
 
@@ -176,7 +180,7 @@ De curl-opdracht wordt onmiddellijk geretourneerd, dus u moet deze map controler
 
 #### Back-up maken op een niet-standaard doelmap {#backing-up-to-a-non-default-target-directory}
 
-Meestal wordt het back-upbestand of de back-upmap op de server gemaakt in de bovenliggende map van de map die de `crx-quickstart` map bevat.
+Gewoonlijk wordt het back-upbestand of de back-upmap gemaakt op de server in de bovenliggende map van de map die de `crx-quickstart` map bevat.
 
 Als u de back-up (van beide typen naar een andere locatie wilt opslaan, kunt u een absoluut pad instellen naar de `target` parameter in de `curl` opdracht.
 
@@ -192,7 +196,7 @@ curl -u admin:admin -X POST http://localhost:4502/system/console/jmx/com.adobe.g
 
 >[!NOTE]
 >
->Een back-up kan ook worden geactiveerd [met behulp van de door AEM](/help/sites-administering/jmx-console.md)verschafte MBans.
+>Een steun kan ook worden teweeggebracht [gebruikend MBans die door AEM](/help/sites-administering/jmx-console.md)wordt verstrekt.
 
 ### Back-up van bestandssysteemmomentopname {#filesystem-snapshot-backup}
 
@@ -202,14 +206,14 @@ Het hier beschreven proces is speciaal geschikt voor grote opslagplaatsen.
 >
 >Als u deze back-upbenadering wilt gebruiken, moet uw systeem bestandssysteemmomentopnamen ondersteunen. Voor Linux betekent dit bijvoorbeeld dat uw bestandssystemen op een logisch volume moeten worden geplaatst.
 
-1. Voer een momentopname van het AEM-bestandssysteem uit.
+1. Voer een momentopname van het AEM in.
 
 1. De momentopname van het bestandssysteem koppelen.
 1. Maak een back-up en maak de opname ongedaan.
 
-### Hoe AEM Online Backup werkt {#how-aem-online-backup-works}
+### Hoe AEM online back-up werkt {#how-aem-online-backup-works}
 
-AEM Online Backup bestaat uit een reeks interne acties om de integriteit te garanderen van de gegevens waarvan een back-up wordt gemaakt en van de back-upbestanden die worden gemaakt. Deze worden hieronder weergegeven voor de gegadigden.
+AEM Online back-up bestaat uit een reeks interne acties om de integriteit te garanderen van de gegevens waarvan een back-up wordt gemaakt en van de back-upbestanden die worden gemaakt. Deze worden hieronder weergegeven voor de gegadigden.
 
 Voor de online back-up wordt het volgende algoritme gebruikt:
 
@@ -220,7 +224,7 @@ Voor de online back-up wordt het volgende algoritme gebruikt:
 
       Wanneer de back-up wordt gestart, wordt een leeg bestand met de naam `backupInProgress.txt` gemaakt in de doelmap. Dit bestand wordt verwijderd wanneer de back-up is voltooid.
 
-1. De bestanden worden van de bronmap naar de doelmap (of de tijdelijke map wanneer u een ZIP-bestand maakt) gekopieerd. De segmentstore wordt gekopieerd vóór de datastore om beschadiging van de opslagplaats te voorkomen. De index- en cachegegevens worden weggelaten wanneer u de back-up maakt. Dit heeft tot gevolg dat gegevens van `crx-quickstart/repository/cache` en `crx-quickstart/repository/index` niet in de back-up worden opgenomen. De voortgangsbalkindicator van het proces ligt tussen 0% - 70% wanneer u een ZIP-bestand maakt, of 0% - 100% als er geen ZIP-bestand wordt gemaakt.
+1. De bestanden worden van de bronmap naar de doelmap (of de tijdelijke map wanneer u een ZIP-bestand maakt) gekopieerd. De segmentstore wordt gekopieerd vóór de datastore om beschadiging van de opslagplaats te voorkomen. De index- en cachegegevens worden weggelaten wanneer u de back-up maakt. Dit heeft tot gevolg dat gegevens van `crx-quickstart/repository/cache` en niet `crx-quickstart/repository/index` worden opgenomen in de back-up. De voortgangsbalkindicator van het proces ligt tussen 0% - 70% wanneer u een ZIP-bestand maakt, of 0% - 100% als er geen ZIP-bestand wordt gemaakt.
 
 1. Als de back-up wordt gemaakt naar een bestaande map, worden de &quot;oude&quot; bestanden in de doelmap verwijderd. Oude bestanden zijn bestanden die niet in de bronmap staan.
 
@@ -248,7 +252,7 @@ U kunt een back-up als volgt herstellen:
 
 ## Back-up van pakket {#package-backup}
 
-Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, waarmee u back-ups kunt maken van inhoud en deze weer kunt terugzetten. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
+Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, die de indeling Inhoudspakket gebruiken om back-ups te maken van inhoud en deze te herstellen. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
 
 Voor details over de eigenschappen en de nadelen van elk van deze individuele formaten van het inhoudspakket, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
 
@@ -260,7 +264,7 @@ Wanneer u reservekopieën maakt van knooppunten met de functie Pakketbeheer of I
 * De het typedefinities van Knoop die voor de inhoud worden gebruikt u file.
 * De naamruimtedefinities die worden gebruikt voor de inhoud waarvan u een back-up maakt.
 
-Bij het maken van back-ups verliest AEM de volgende informatie:
+Bij het maken van een back-up gaat AEM de volgende informatie verloren:
 
 * De versiegeschiedenis.
 
