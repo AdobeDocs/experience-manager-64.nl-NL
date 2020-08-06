@@ -29,7 +29,7 @@ Voer de volgende stappen uit om elementen te downloaden:
 1. Selecteer de map of selecteer een of meer middelen in de map.
 1. Tik op de werkbalk op **[!UICONTROL Download.]**
 
-   ![Beschikbare opties voor het downloaden van middelen van Experience Manager Assets](/help/assets/assets/asset_download_dialog.png)
+   ![Beschikbare opties voor het downloaden van Experience Manager-elementen](/help/assets/assets/asset_download_dialog.png)
 
    *Afbeelding: Opties in het dialoogvenster Downloaden.*
 
@@ -73,6 +73,6 @@ De functie `Asset Download Servlet` kan worden uitgeschakeld in een [!DNL Experi
 >[!MORELIKETHIS]
 >
 >* [Met DRM beveiligde middelen](drm.md)downloaden.
->* [Download middelen via de Experience Manager-bureaubladtoepassing op Win- of Mac-bureaublad](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
->* [Download elementen via Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
+>* [Download middelen via de Experience Manager desktop app op Win- of Mac-bureaublad](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>* [Download Adobe Assets Link vanuit de ondersteunde Adobe Creative Cloud-apps](https://helpx.adobe.com/nl/enterprise/using/manage-assets-using-adobe-asset-link.html).
 
