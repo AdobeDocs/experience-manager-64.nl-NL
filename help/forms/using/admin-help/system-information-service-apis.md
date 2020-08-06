@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
 translation-type: tm+mt
 source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+workflow-type: tm+mt
+source-wordcount: '356'
+ht-degree: 0%
 
 ---
 
@@ -51,10 +54,10 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.services</p></td> 
    <td><p>https://[server]:[poort]/rest/services/ SystemInfo.services</p></td> 
-   <td><p>Haalt status- en configuratieparameters van AEM-formulierservices op.</p></td> 
+   <td><p>Haalt status- en configuratieparameters van AEM formulierservices op.</p></td> 
   </tr> 
   <tr>
-   <td><p>SystemInfo.priorityDetails</p></td> 
+   <td><p>SystemInfo.vitalDetails</p></td> 
    <td><p>https://[server]:[poort]/rest/services/ SystemInfo.essentialDetails</p></td> 
    <td><p>Haalt serveruptime, JVM-argumenten, systeemgeheugen, heapgrootte, naam van het besturingssysteem, aantal actieve threads en aantal threads op. </p></td> 
   </tr> 
@@ -85,7 +88,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.licenseInfo</p></td> 
    <td><p>https://[server]:[poort]/rest/services/ SystemInfo.licenseInfo</p></td> 
-   <td><p>Hiermee worden versie- en licentiegegevens van geïnstalleerde AEM-formuliercomponenten opgehaald. </p></td> 
+   <td><p>Hiermee worden versie- en licentiegegevens opgehaald van geïnstalleerde AEM formulieronderdelen. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfNo.serverConfig</p></td> 
