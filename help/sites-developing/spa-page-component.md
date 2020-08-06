@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5d607b9f-584b-4ffc-ab0b-d0318dc69dec
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '783'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ De paginacomponent voor een SPA verstrekt niet de elementen van HTML van zijn ki
 
 ## Paginamodel beheren {#page-model-management}
 
-De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. Het KUUROORD moet met de `PageModelManager` module in wisselwerking staan wanneer het initialiseert om het aanvankelijke paginamodel en register voor modelupdates te halen - meestal geproduceerd wanneer de auteur de pagina via de Redacteur van de Pagina uitgeeft. Het `PageModelManager` is toegankelijk door het project van het KUUUROORD als npm pakket. Als tolk tussen AEM en de SPA `PageModelManager` is het de bedoeling de SPA te begeleiden.
+De resolutie en het beheer van het paginamodel worden gedelegeerd aan een opgegeven [ `PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) module. Het KUUROORD moet met de `PageModelManager` module in wisselwerking staan wanneer het initialiseert om het aanvankelijke paginamodel en register voor modelupdates te halen - meestal geproduceerd wanneer de auteur de pagina via de Redacteur van de Pagina uitgeeft. Het `PageModelManager` is toegankelijk door het project van het KUUUROORD als npm pakket. Als tolk tussen AEM en de SPA, `PageModelManager` is het bedoeld om de SPA te begeleiden.
 
 Om toe te staan dat de pagina wordt geschreven, `cq.authoring.pagemodel.messaging` moet een genoemde cliëntbibliotheek worden toegevoegd om een communicatie kanaal tussen het KUUROORD en de paginaredacteur te verstrekken. Als de de paginacomponent van het KUUROORD van de pagina wcm/kerncomponent erft dan zijn er de volgende opties om de categorie van de `cq.authoring.pagemodel.messaging` cliëntbibliotheek beschikbaar te maken:
 
@@ -42,7 +45,7 @@ Vergeet niet de opname van de `cq.authoring.pagemodel.messaging` categorie te be
 
 ## Gegevenstype communicatie {#communication-data-type}
 
-Het gegevenstype voor communicatie wordt ingesteld als een HTML-element binnen de component AEM Page met behulp van het `data-cq-datatype` kenmerk. Wanneer het gegevenstype van communicatiegegevens aan JSON wordt geplaatst, krijgen de GET verzoeken de Sling Model eindpunten van een component. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. De bibliotheek van het Model van de Pagina waarschuwt dan het KUUROORD van updates.
+Het gegevenstype voor communicatie wordt ingesteld als een HTML-element binnen de component AEM pagina met behulp van het `data-cq-datatype` kenmerk. Wanneer het gegevenstype van communicatiegegevens is ingesteld op JSON, bereiken de aanvragen van de GET de eindpunten van het verzendmodel van een component. Nadat een update in de pagina-editor plaatsvindt, wordt de JSON-representatie van de bijgewerkte component verzonden naar de bibliotheek Paginamodel. De bibliotheek van het Model van de Pagina waarschuwt dan het KUUROORD van updates.
 
 **SPA-paginacomponent -`body.html`**
 
@@ -92,7 +95,7 @@ De eigenschappen van het meta-middel die de inhoud van het KUUROORD beschrijven:
 >
 >Dit document gebruikt de app We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Om het even welk AEM project zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM moeten, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden op het Geweven Archetype voor Kit van de Aanzet van het KUUROORD moeten worden gebaseerd.
+>Om het even welk AEM project zou hefboomwerking het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)van het Project, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen het KUUROORD SDK.Alle projecten van het KUUROORD op AEM zouden op het Maven Archetype voor Kit van de Aanzet van het KUUUROORD moeten worden gebaseerd.
 
 ## Overlaysynchronisatie van paginaeditor {#page-editor-overlay-synchronization}
 
@@ -100,7 +103,7 @@ De synchronisatie van de overlays wordt gegarandeerd door dezelfde Mutation Obse
 
 ## Sling Model JSON Geëxporteerde structuurconfiguratie {#sling-model-json-exported-structure-configuration}
 
-Wanneer de verpletterende mogelijkheden worden toegelaten, is de veronderstelling dat de uitvoer JSON van SPA de verschillende routes van de toepassing dankzij de uitvoer JSON van de AEM navigatiecomponent bevat. De output JSON van de navigatiecomponent AEM kan in het de inhoudbeleid van de wortelpagina van het KUUROORD door de volgende twee eigenschappen worden gevormd:
+Wanneer de verpletterende mogelijkheden worden toegelaten, is de veronderstelling dat de uitvoer JSON van SPA de verschillende routes van de toepassing dankzij de uitvoer JSON van de AEM navigatiecomponent bevat. De output JSON van de AEM navigatiecomponent kan in het de inhoudbeleid van de wortelpagina van het KUUROORD door de volgende twee eigenschappen worden gevormd:
 
 * `structureDepth`: Aantal dat overeenkomt met de diepte van de geëxporteerde structuur
 * `structurePatterns`: Regex van array van regexes die overeenkomt met de pagina die geëxporteerd moet worden
