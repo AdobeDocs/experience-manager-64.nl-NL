@@ -11,11 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e5398abd-f62c-485d-9f4b-a316c0de2b6b
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1462'
+ht-degree: 0%
 
 ---
 
 
-# caching configureren voor uitvoer {#configuring-caching-for-output}
+# caching configureren voor uitvoer  {#configuring-caching-for-output}
 
 De Output-service voegt XML-formuliergegevens samen met een formulierontwerp dat in Designer is gemaakt, om een uitvoerstroom van een document in verschillende indelingen te maken.
 
@@ -23,13 +26,13 @@ De pagina van de Output in beleidsconsole bevat montages die de manier controler
 
 De service Uitvoer plaatst de volgende items in cache:
 
-* **** formulierontwerpen: De Output-service plaatst formulierontwerpen in cache die worden opgehaald uit de gegevensopslagruimte of HTTP-bronnen. Dit in cache plaatsen verbetert de prestaties, omdat bij volgende renderaanvragen het formulierontwerp door de Output-service wordt opgehaald uit de cache in plaats van uit de gegevensopslagruimte.
-* **** fragmenten en afbeeldingen: De service Uitvoer kan fragmenten en afbeeldingen die in formulierontwerpen worden gebruikt, in cache plaatsen. Wanneer deze objecten in cache worden geplaatst door de uitvoerservice, worden de prestaties verbeterd omdat de fragmenten en afbeeldingen alleen worden gelezen uit de opslagplaats op de eerste aanvraag.
+* **formulierontwerpen:** De Output-service plaatst formulierontwerpen in cache die worden opgehaald uit de gegevensopslagruimte of HTTP-bronnen. Dit in cache plaatsen verbetert de prestaties, omdat bij volgende renderaanvragen het formulierontwerp door de Output-service wordt opgehaald uit de cache in plaats van uit de gegevensopslagruimte.
+* **fragmenten en afbeeldingen:** De service Uitvoer kan fragmenten en afbeeldingen die worden gebruikt in formulierontwerpen in cache plaatsen. Wanneer deze objecten in cache worden geplaatst door de uitvoerservice, worden de prestaties verbeterd omdat de fragmenten en afbeeldingen alleen worden gelezen uit de opslagplaats op de eerste aanvraag.
 
 Output slaat het cachegeheugen op twee locaties op:
 
-* **** in het geheugen: Items worden in het geheugen opgeslagen zodat ze snel kunnen worden geopend. De cache in het geheugen heeft een beperkte grootte en wordt verwijderd wanneer u de server opnieuw start.
-* **** op schijf: Items worden opgeslagen in het bestandssysteem van de server. De schijfcache heeft een grotere capaciteit dan de cache in het geheugen en deze blijft behouden wanneer u de server opnieuw start. De locatie van de schijfcache is afhankelijk van de toepassingsserver. Zie [Bestandslocaties voor Uitvoer](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)opgeven voor informatie over het wijzigen van de locatie van de schijfcache.
+* **in het geheugen:** Items worden in het geheugen opgeslagen zodat ze snel kunnen worden geopend. De cache in het geheugen heeft een beperkte grootte en wordt verwijderd wanneer u de server opnieuw start.
+* **op schijf:** Items worden opgeslagen in het bestandssysteem van de server. De schijfcache heeft een grotere capaciteit dan de cache in het geheugen en deze blijft behouden wanneer u de server opnieuw start. De locatie van de schijfcache is afhankelijk van de toepassingsserver. Zie [Bestandslocaties voor Uitvoer](/help/forms/using/admin-help/specify-file-locations-output.md#specify-file-locations-for-output)opgeven voor informatie over het wijzigen van de locatie van de schijfcache.
 
 ## De cachemodus opgeven {#specifying-the-cache-mode}
 
@@ -38,7 +41,7 @@ Output ondersteunt twee modi voor caching:
 * onvoorwaardelijk
 * het gebruiken van het punt van de geheim voorgeheugencontrole
 
-Als u tussen cachemodi schakelt, start u de uitvoerservice opnieuw om de wijziging van kracht te laten worden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u de services die aan de AEM-formuliermodules [](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) zijn gekoppeld, starten of stoppen voor instructies.
+Als u tussen cachemodi schakelt, start u de uitvoerservice opnieuw om de wijziging van kracht te laten worden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u [De services die aan AEM formuliermodules](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) zijn gekoppeld starten of stoppen voor instructies.
 
 De tijd van het punt van de geheim voorgeheugencontrole wordt automatisch teruggesteld wanneer u tussen wijzen schakelt.
 
@@ -78,7 +81,7 @@ U kunt de inhoud van de cache op elk gewenst moment wissen. Na het opnieuw inste
 
 ## Cacheinstellingen configureren {#configuring-cache-settings}
 
-U kunt instellingen opgeven die Output gebruikt voor caching, zodat de prestaties van uw AEM-formulieromgeving worden geoptimaliseerd.
+U kunt instellingen opgeven die Output gebruikt voor caching, zodat de prestaties van de omgeving van uw AEM formulieren worden geoptimaliseerd.
 
 Klik in de beheerconsole op Services > Uitvoer om deze instellingen te openen.
 
@@ -88,23 +91,23 @@ Klik in de beheerconsole op Services > Uitvoer om deze instellingen te openen.
 
 ### Algemene cache-instellingen opgeven {#specifying-global-cache-settings}
 
-De instellingen in het gebied **Algemene cacheinstellingen** zijn van toepassing op alle typen caches. Als u een van deze instellingen wijzigt, start u de service Uitvoer opnieuw om de wijziging van kracht te laten worden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u de services die aan de AEM-formuliermodules [](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) zijn gekoppeld, starten of stoppen voor instructies.
+De instellingen in het gebied **Algemene cacheinstellingen** zijn van toepassing op alle typen caches. Als u een van deze instellingen wijzigt, start u de service Uitvoer opnieuw om de wijziging van kracht te laten worden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u [De services die aan AEM formuliermodules](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) zijn gekoppeld starten of stoppen voor instructies.
 
-**** Max. documentgrootte cache (kB): De maximale grootte, in kilobytes, van een formulierontwerp of andere bron die in een cache in het geheugen kan worden opgeslagen. Dit is een algemene instelling die van toepassing is op alle cache in het geheugen. Als de bron groter is dan deze waarde, wordt deze niet in het geheugen opgeslagen. De standaardwaarde is 1024 kilobytes. Deze instelling heeft geen invloed op de cache van de schijf.
+**Max. documentgrootte cache (kB):** De maximale grootte, in kilobytes, van een formulierontwerp of andere bron die in een cache in het geheugen kan worden opgeslagen. Dit is een algemene instelling die van toepassing is op alle cache in het geheugen. Als de bron groter is dan deze waarde, wordt deze niet in het geheugen opgeslagen. De standaardwaarde is 1024 kilobytes. Deze instelling heeft geen invloed op de cache van de schijf.
 
-**** Cache voor het renderen van formulieren ingeschakeld: Deze optie is standaard ingeschakeld, wat betekent dat weergegeven formulieren in de cache worden geplaatst voor volgende opvraging. Deze instelling heeft weinig effect op de prestaties van de uitvoerservice omdat niet-interactieve documenten niet in de cache worden opgeslagen. Deze optie heeft geen effect wanneer u de uitvoerservice gebruikt voor niet-interactieve documenten die op de client worden gerenderd.
+**Cache voor het renderen van formulieren ingeschakeld:** Deze optie is standaard ingeschakeld, wat betekent dat weergegeven formulieren in de cache worden geplaatst voor volgende opvraging. Deze instelling heeft weinig effect op de prestaties van de uitvoerservice omdat niet-interactieve documenten niet in de cache worden opgeslagen. Deze optie heeft geen effect wanneer u de uitvoerservice gebruikt voor niet-interactieve documenten die op de client worden gerenderd.
 
 ### Formulierontwerpen in cache plaatsen {#caching-form-designs}
 
 Wanneer de Output-service een renderaanvraag ontvangt, haalt deze het formulierontwerp op van de gegevensopslagruimte of van een HTTP-bron en plaatst deze in cache. Dit in cache plaatsen verbetert de prestaties, omdat bij volgende renderaanvragen het formulierontwerp door de Output-service wordt opgehaald uit de cache in plaats van uit de gegevensopslagruimte.
 
-De Output-service plaatst formulierontwerpen altijd in cache op schijf. Als formulierontwerpen worden opgeslagen op de server, worden deze bestanden beschouwd als de schijfcache. De Output-service plaatst formulierontwerpen ook in het geheugen in cache, afhankelijk van de instelling in het gebied **In-geheugensjablooncache** . Als u een van deze instellingen wijzigt, start u de service Uitvoer opnieuw om de wijziging in werking te laten treden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u de services die aan de AEM-formuliermodules [](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) zijn gekoppeld, starten of stoppen voor instructies.
+De Output-service plaatst formulierontwerpen altijd in cache op schijf. Als formulierontwerpen worden opgeslagen op de server, worden deze bestanden beschouwd als de schijfcache. De Output-service plaatst formulierontwerpen ook in het geheugen in cache, afhankelijk van de instelling in het gebied **In-geheugensjablooncache** . Als u een van deze instellingen wijzigt, start u de service Uitvoer opnieuw om de wijziging in werking te laten treden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u [De services die aan AEM formuliermodules](/help/forms/using/admin-help/starting-stopping-services.md#start-or-stop-the-services-associated-with-aem-forms-modules) zijn gekoppeld starten of stoppen voor instructies.
 
-**** Cachegrootte sjabloonconfiguratie: Het maximumaantal voorwerpen van de malplaatjeconfiguratie in geheugen te houden. De standaardwaarde is 100. U wordt aangeraden deze waarde groter dan of gelijk aan de waarde voor Grootte sjablooncache in te stellen. Deze instelling heeft geen invloed op de cache van de schijf.
+**Cachegrootte sjabloonconfiguratie:** Het maximumaantal voorwerpen van de malplaatjeconfiguratie in geheugen te houden. De standaardwaarde is 100. U wordt aangeraden deze waarde groter dan of gelijk aan de waarde voor Grootte sjablooncache in te stellen. Deze instelling heeft geen invloed op de cache van de schijf.
 
-**** Grootte sjablooncache: Het maximumaantal sjablooninhoudsobjecten dat in het geheugen moet worden bewaard. De standaardwaarde is 100. Deze instelling heeft geen invloed op de cache van de schijf.
+**Grootte sjablooncache:** Het maximumaantal sjablooninhoudsobjecten dat in het geheugen moet worden bewaard. De standaardwaarde is 100. Deze instelling heeft geen invloed op de cache van de schijf.
 
-**** Ingeschakeld: Dit selectievakje is standaard ingeschakeld, wat betekent dat formuliersjablonen in het geheugen worden opgeslagen. Als deze optie niet is geselecteerd, worden formuliersjablonen alleen op de schijf in het cachegeheugen opgeslagen.
+**Ingeschakeld:** Dit selectievakje is standaard ingeschakeld, wat betekent dat formuliersjablonen in het geheugen worden opgeslagen. Als deze optie niet is geselecteerd, worden formuliersjablonen alleen op de schijf in het cachegeheugen opgeslagen.
 
 ### Fragmenten en afbeeldingen in cache plaatsen {#caching-fragments-and-images}
 
@@ -114,13 +117,13 @@ Met de volgende instellingen kunt u het in cache plaatsen op schijf van fragment
 
 **In cache plaatsen** van bronnen Selecteer een van de volgende opties in de lijst:
 
-**** Ingeschakeld voor fragmenten en afbeeldingen: De service Uitvoer plaatst fragmenten en afbeeldingen in het cachegeheugen. Dit is de standaardoptie.
+**Ingeschakeld voor fragmenten en afbeeldingen:** De service Uitvoer plaatst fragmenten en afbeeldingen in het cachegeheugen. Dit is de standaardoptie.
 
-**** Ingeschakeld voor fragmenten: De uitvoerservice plaatst fragmenten in cache, maar geen afbeeldingen.
+**Ingeschakeld voor fragmenten:** De uitvoerservice plaatst fragmenten in cache, maar geen afbeeldingen.
 
-**** Uitgeschakeld: De service Uitvoer slaat geen fragmenten of afbeeldingen in de cache op.
+**Uitgeschakeld:** De service Uitvoer slaat geen fragmenten of afbeeldingen in de cache op.
 
-**** Overbodig verwijderen (seconden): Hiermee geeft u op hoe vaak de service Uitvoer oude ongeldige cachebestanden verwijdert. De service Uitvoer verwijdert geen geldige cachebestanden. Als u het opschoningsinterval wijzigt, start u de service Uitvoer opnieuw om de wijziging in werking te laten treden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u De services die aan AEM-formuliermodules zijn gekoppeld voor instructies starten of stoppen.
+**Overbodig verwijderen (seconden):** Hiermee geeft u op hoe vaak de service Uitvoer oude ongeldige cachebestanden verwijdert. De service Uitvoer verwijdert geen geldige cachebestanden. Als u het opschoningsinterval wijzigt, start u de service Uitvoer opnieuw om de wijziging in werking te laten treden. Als u deze service opnieuw wilt starten, gebruikt u Workbench of raadpleegt u De services die zijn gekoppeld aan AEM formuliermodules starten of stoppen voor instructies.
 
 ## Groeperingsoverwegingen voor caches {#clustering-considerations-for-caches}
 
