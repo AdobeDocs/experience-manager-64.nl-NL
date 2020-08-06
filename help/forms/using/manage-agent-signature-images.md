@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: 7313c108-39fa-4cf4-8955-2d54be41d476
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '717'
+ht-degree: 0%
 
 ---
 
@@ -29,10 +32,10 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
 ## Handtekeningafbeelding voor agent toevoegen {#adding-agent-signature-image}
 
-1. Zorg ervoor dat de afbeelding met de handtekening van de agent dezelfde naam heeft als de AEM-gebruikersnaam van de gebruiker. (Extensie is niet nodig voor de bestandsnaam van de afbeelding.)
+1. Zorg ervoor dat de afbeelding met de handtekening van de agent dezelfde naam heeft als de AEM gebruikersnaam van de gebruiker. (Extensie is niet nodig voor de bestandsnaam van de afbeelding.)
 1. Maak in CRX een map met de naam `cmUserRoot` in de inhoudsmap.
 
-   1. Ga naar `https://[server]:[port]/crx/de`. Meld u indien nodig aan als beheerder.
+   1. Go to `https://[server]:[port]/crx/de`. Meld u indien nodig aan als beheerder.
 
    1. Klik met de rechtermuisknop op de **inhoudsmap** en selecteer **Maken** > Map **** maken.
 
@@ -46,7 +49,7 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
 1. In de Ontdekkingsreiziger van de Inhoud, navigeer aan de omslag cmUserRoot en voeg het beeld van de agentenhandtekening in het toe.
 
-   1. Ga naar `https://[server]:[port]/crx/explorer/index.jsp`. Meld u indien nodig aan als beheerder.
+   1. Go to `https://[server]:[port]/crx/explorer/index.jsp`. Meld u indien nodig aan als beheerder.
    1. Klik op **Inhoudsverkenner**. De Content Explorer wordt in een nieuw venster geopend.
    1. Navigeer in Content Explorer naar de map cmUserRoot en selecteer deze. Klik met de rechtermuisknop op de map **cmUserRoot** en selecteer **Nieuw knooppunt**.
 
@@ -54,9 +57,9 @@ U kunt ook de aangepaste standaardfunctie negeren om uw eigen logica te definië
 
       Maak de volgende ingangen in de rij voor nieuwe knoop en klik dan het groene vinkje.
 
-      **** Naam: JohnDoe (of de naam van uw dossier van de agentenhandtekening)
+      **Naam:** JohnDoe (of de naam van uw dossier van de agentenhandtekening)
 
-      **** Type: nt:bestand
+      **Type:** nt:bestand
 
       Onder de `cmUserRoot` map wordt een nieuwe map gemaakt met de naam `JohnDoe` (of de naam die u in de vorige stap hebt opgegeven).
 
