@@ -1,8 +1,8 @@
 ---
 title: MSRP - MongoDB Storage Resource Provider
 seo-title: MSRP - MongoDB Storage Resource Provider
-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
-seo-description: Stel AEM Communities in om een relationele database te gebruiken als de algemene opslag
+description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
+seo-description: AEM Communities instellen om een relationele database te gebruiken als de algemene opslag
 uuid: 9fc06d4f-a60f-4ce3-8586-bcc836aa7de6
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 ## Over MSRP {#about-msrp}
 
-Wanneer de AEM Communities wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
+Wanneer AEM Communities wordt gevormd om MSRP als zijn gemeenschappelijke opslag te gebruiken, is de gebruiker geproduceerde inhoud (UGC) toegankelijk van alle auteur en publiceer instanties zonder de behoefte aan synchronisatie of replicatie.
 
 Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-options) SRP en [Aanbevolen Topologieën](topologies.md).
 
@@ -33,7 +33,7 @@ Zie ook [Kenmerken van Opties](working-with-srp.md#characteristics-of-srp-option
    * Versie 2.6 of hoger
    * Het is niet nodig om mongo&#39;s te configureren of te sharding
    * Het gebruik van een [replicaset wordt sterk aanbevolen](#mongoreplicaset)
-   * Kan op dezelfde host als AEM worden uitgevoerd of extern worden uitgevoerd
+   * Kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
 
 * [Apache Solr](https://lucene.apache.org/solr/):
 
@@ -86,10 +86,12 @@ Op auteur, om tot de console van de Configuratie van de Opslag toegang te hebben
       *Standaard*: *&lt;blank>*
    * **[!UICONTROL Solr URL]**
 De URL die wordt gebruikt om te communiceren met Solr in zelfstandige modus.
-Leeg laten als deze wordt uitgevoerd in de SolrCloud-modus.\
+Leeg laten als deze wordt uitgevoerd in de SolrCloud-modus.
+\
       *Standaard*: https://127.0.0.1:8983/solr/
    * **[!UICONTROL Solr Collection]**
-De naam van de Solr-verzameling.\
+De naam van de Solr-verzameling.
+\
       *Standaard*: verzameling1
 * Selecteer **[!UICONTROL Submit]**
 
@@ -129,7 +131,7 @@ Voor configuratiedetails, zie de Configuratie van [Solr voor SRP](solr.md).
 
 Als bevordering van een vroegere die versie met MSRP wordt gevormd, zal het noodzakelijk zijn
 
-1. Voer de [upgrade uit naar AEM Communities](upgrade.md)
+1. Voer de [upgrade naar AEM Communities uit](upgrade.md)
 1. Nieuwe Solr-configuratiebestanden installeren
    * Voor [standaard MLS](solr.md#installing-standard-mls)
    * Voor [geavanceerde MLS](solr.md#installing-advanced-mls)
@@ -217,7 +219,7 @@ Om MSRP voor een demonstratie of ontwikkelomgeving te plaatsen, zie [HowTo Opste
 
 Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn door de configuratie van de opslagoptie te controleren. Standaard is de leverancier van de opslagbron JSRP.
 
-Op alle auteur en publiceer AEM instanties, vernieuw de console [van de Configuratie van de](srp-config.md) Opslag of controleer de bewaarplaats AEM:
+Ga bij alle auteur- en publiceer AEM naar de [opslagconfiguratieconsole](srp-config.md) of controleer de AEM opslagplaats:
 
 * In JCR, indien [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
@@ -226,13 +228,13 @@ Op alle auteur en publiceer AEM instanties, vernieuw de console [van de Configur
 
 ### UGC verdwijnt na upgrade {#ugc-disappears-after-upgrade}
 
-Als een upgrade wordt uitgevoerd vanaf een bestaande AEM Communities 6.0-site, moet een reeds bestaande UGC worden geconverteerd om te voldoen aan de vereiste structuur voor de [SRP](srp.md) API na een upgrade naar AEM Communities 6.3.
+Als u een upgrade uitvoert vanaf een bestaande AEM Communities 6.0-site, moet een reeds bestaande UGC worden geconverteerd om te voldoen aan de structuur die is vereist voor de [SRP](srp.md) API na een upgrade naar AEM Communities 6.3.
 
 Er is een open bronhulpmiddel beschikbaar op GitHub voor dit doel:
 
 * [AEM Communities UGC-migratiehulpprogramma](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration)
 
-Het migratiehulpmiddel kan worden aangepast om UGC uit vroegere versies van sociale gemeenschappen AEM voor invoer in AEM Communities 6.1 of later uit te voeren.
+Het migratiehulpmiddel kan worden aangepast om UGC uit vroegere versies van AEM sociale gemeenschappen voor invoer in AEM Communities 6.1 of later uit te voeren.
 
 ### Fout: niet-gedefinieerde veldprovider_id {#error-undefined-field-provider-id}
 
@@ -258,8 +260,8 @@ Als u de fout wilt verhelpen, moet u bij het volgen van de instructies voor het 
 Als een poging om een beveiligde verbinding te maken met de MongoDB-server mislukt als gevolg van een ontbrekende klassedefinitie, moet de MongoDB-stuurprogrammabundel, die beschikbaar is `mongo-java-driver`in de openbare gegevensopslagruimte, worden bijgewerkt.
 
 1. Download het stuurprogramma van [https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar](https://search.maven.org/#artifactdetails%7Corg.mongodb%7Cmongo-java-driver%7C2.13.2%7Cjar) (versie 2.13.2 of hoger)
-1. Kopieer de bundel naar de map &#39;crx-quickstart/install&#39; voor een AEM-instantie
-1. De AEM-instantie opnieuw starten
+1. Kopieer de bundel naar de map &quot;crx-quickstart/install&quot; voor een AEM-instantie
+1. De AEM opnieuw starten
 
 ## Bronnen {#resources}
 
