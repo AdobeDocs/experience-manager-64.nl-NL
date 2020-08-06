@@ -11,6 +11,9 @@ topic-tags: forms-workspace
 discoiquuid: 2228dcdd-5c9c-46b3-9888-489756c04887
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '421'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Op de pagina Volgen kunt u zoeken naar actieve of voltooide processen die u hebt
 
 ## Zoeken naar processen en taken {#search-for-processes-and-tasks}
 
-U kunt naar procesinstanties en bijbehorende taken zoeken op basis van procesnamen of met behulp van zoeksjablonen die zijn ingesteld door de beheerder van de AEM-werkruimte.
+U kunt naar procesinstanties en bijbehorende taken zoeken op basis van procesnamen of met behulp van zoeksjablonen die zijn ingesteld door de beheerder van de AEM Forms-werkruimte.
 
 U kunt instellen welke kolommen worden weergegeven in de zoekresultaten.
 
