@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17c9b69a-3c6f-47e3-a828-841bb90eba8b
 translation-type: tm+mt
 source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+workflow-type: tm+mt
+source-wordcount: '237'
+ht-degree: 1%
 
 ---
 
@@ -22,9 +25,9 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer formulier in de lijst Uitvoertype een van de volgende opties:
 
-   **** Volledige HTML: Het formulier weergeven binnen volledige HTML-tags (een volledige HTML-pagina). Dit is de standaardwaarde.
+   **Volledige HTML:** Het formulier weergeven binnen volledige HTML-tags (een volledige HTML-pagina). Dit is de standaardwaarde.
 
-   **** Hoofdtekst van formulier: Het formulier weergeven binnen `<BODY>` -codes (geen volledige HTML-pagina).
+   **Hoofdtekst van formulier:** Het formulier weergeven binnen `<BODY>` -codes (geen volledige HTML-pagina).
 
 1. Klik op Opslaan.
 
@@ -32,11 +35,11 @@ source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
 
 1. Selecteer onder Formulieruitvoer in de lijst Renderen op een van de volgende opties:
 
-   **** Client: PDF-formulieren renderen in Adobe Acrobat of Adobe Reader. Rendering op de client verbetert de prestaties van AEM-formulieren en is alleen van toepassing op PDFForm-transformatie.
+   **Client:** PDF forms renderen in Adobe Acrobat of Adobe Reader. Rendering op de client verbetert de prestaties van AEM formulieren en is alleen van toepassing op PDFForm-transformatie.
 
-   **** Server: PDF-formulieren genereren op de toepassingsserver.
+   **Server:** PDF forms renderen op de toepassingsserver.
 
-   **** Automatisch: Het PDF-formulier weergeven op de locatie die is opgegeven door de `dynamicRender` configuratiewaarde van het XDP-bestand. Dit is de standaardwaarde.
+   **Automatisch:** Het PDF-formulier weergeven op de locatie die is opgegeven door de `dynamicRender` configuratiewaarde van het XDP-bestand. Dit is de standaardwaarde.
 
 1. Klik op Opslaan.
 
