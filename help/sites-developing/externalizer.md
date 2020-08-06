@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '533'
+ht-degree: 0%
 
 ---
 
 
 # URL&#39;s extern maken{#externalizing-urls}
 
-In AEM, is **ExternalAlizer** de dienst OSGI die u toestaat om een middelweg programmatically om te zetten (b.v. `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld, `https://www.mycompany.com/path/to/my/page`) door de weg met vooraf gevormde DNS te bevestigen.
+In AEM, is **ExternalAlizer** de dienst OSGI die u toestaat om een middelweg programmatically om te zetten (b.v. `/path/to/my/page`) in een externe en absolute URL (bijvoorbeeld `https://www.mycompany.com/path/to/my/page`) door het pad vooraf te definiëren met een vooraf geconfigureerde DNS.
 
 Omdat een instantie zijn uiterlijk zichtbare URL niet kan kennen als het achter een Weblaag loopt, en omdat soms een verbinding buiten het verzoekwerkingsgebied moet worden gecreeerd, verstrekt deze dienst een centrale plaats om die externe URLs te vormen en hen te bouwen.
 
@@ -42,20 +45,22 @@ Om een domeinafbeelding voor de dienst **Externalzer** te bepalen:
 
    `<unique-name> [scheme://]server[:port][/contextpath]`, waarbij:
 
-   * **het schema** is meestal http of https, maar kan ook ftp enz. zijn.; gebruik https om https-koppelingen af te dwingen, indien gewenst;wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
+   * **het schema** is meestal http of https, maar kan ook ftp enz. zijn.; gebruik https om https-koppelingen af te dwingen, indien gewenst; wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
    * **server** is de hostnaam (kan een domeinnaam of ip-adres zijn).
    * **poort** (optioneel) is het poortnummer.
    * **contextpath** (optioneel) wordt alleen ingesteld als AEM is geïnstalleerd als een webapp onder een ander contextpad.
+
    Bijvoorbeeld: `production https://my.production.instance`
 
-   De volgende toewijzingsnamen zijn vooraf gedefinieerd en moeten altijd worden ingesteld als AEM erop vertrouwt:
+   De volgende toewijzingsnamen zijn vooraf gedefinieerd en moeten altijd worden ingesteld op basis van AEM:
 
    * **lokaal** - de lokale instantie
    * **auteur** - het auteurssysteem DNS
    * **publish** - het publiek onder ogen ziet website DNS
+
    >[!NOTE]
    >
-   >Met een aangepaste configuratie kunt u een nieuwe categorie toevoegen, zoals &quot;productie&quot;, &quot;staging&quot; of zelfs externe niet-AEM-systemen, zoals &quot;mijn-interne webservice&quot;. Dit is handig als u hardcodering van dergelijke URL&#39;s op verschillende plaatsen in de codebase van een project wilt voorkomen.
+   >Met een aangepaste configuratie kunt u een nieuwe categorie toevoegen, zoals &quot;productie&quot;, &quot;staging&quot; of zelfs externe niet-AEM systemen, zoals &quot;mijn-interne webservice&quot;. Dit is handig om hardcodering van dergelijke URL&#39;s op verschillende plaatsen in de codebase van een project te voorkomen.
 
 1. Klik op **Opslaan** om de wijzigingen op te slaan.
 
