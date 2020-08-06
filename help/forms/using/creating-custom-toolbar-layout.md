@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: c69bb229-d680-4a55-9b2d-cd5ad0f83a9e
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '555'
+ht-degree: 0%
 
 ---
 
@@ -20,13 +23,13 @@ source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
 
 Wanneer u een adaptief formulier maakt, kunt u een werkbalklay-out voor het formulier opgeven. De werkbalkindeling definieert de opdrachten en de indeling van de werkbalk op het formulier.
 
-De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om deze kwestie te helpen behandelen, verstrekt AEM cliënt-zijOmslagen van de Bibliotheek, die u toestaan om uw cliënt-zijcode in de bewaarplaats op te slaan, het in categorieën te organiseren, en te bepalen wanneer en hoe elke categorie van code aan de cliënt moet worden gediend. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Voor gedetailleerde informatie, zie [hoe de cliënt-zijbibliotheken in AEM werken.](/help/sites-developing/clientlibs.md)
+De indeling van werkbalken is sterk afhankelijk van verwerking op de client door complexe JavaScript- en CSS-code. Het organiseren en optimaliseren van het gebruik van deze code kan een ingewikkeld probleem zijn. Om dit probleem te verhelpen, biedt AEM Client-side bibliotheekmappen, waarmee u uw code aan de clientzijde in de opslagplaats kunt opslaan, deze in categorieën kunt ordenen en kunt bepalen wanneer en hoe elke categorie code aan de client moet worden aangeboden. Het bibliotheeksysteem aan de clientzijde zorgt ervoor dat de juiste koppelingen in de uiteindelijke webpagina worden gemaakt om de juiste code te laden. Voor gedetailleerde informatie, zie [hoe de cliënt-zijbibliotheken in AEM werken.](/help/sites-developing/clientlibs.md)
 
-![](assets/default_toolbar_layout.png) Voorbeeldlay-out van de werkbalk **** Afbeelding: Voorbeeldindeling van de werkbalk **
+![Voorbeeldlay-out van de werkbalk](assets/default_toolbar_layout.png)**Afbeelding:** *Voorbeeldindeling van de werkbalk*
 
 Aangepaste formulieren bieden een set out-of-the-box-indelingen:
 
-![](assets/toolbar1.png) De lay-outs van de toolbar beschikbaar uit-van-de-doos **** Cijfer: Lay-outs voor *werkbalken zijn beschikbaar*
+![De lay-outs van de toolbar beschikbaar uit-van-de-doos ](assets/toolbar1.png)**Cijfer:** *Werkbalklay-outs beschikbaar buiten de box*
 
 Bovendien kunt u een aangepaste werkbalklay-out maken.
 
@@ -223,4 +226,4 @@ CustomToolbarLayoutDemo.zip
 >
 >De beschrijving die u in de vorige stap hebt bijgewerkt, wordt weergegeven in de vervolgkeuzelijst Indeling.
 
-![](assets/toolbar_1.png) Bureaubladweergave van de werkbalk **** Aangepaste layout: Weergave *Computer van de werkbalk met aangepaste layout*
+![Bureaubladweergave van de werkbalk](assets/toolbar_1.png)**Aangepaste layout:** *Bureaubladweergave van de werkbalk met de aangepaste layout*
