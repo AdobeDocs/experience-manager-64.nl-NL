@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4dc54701-68b9-49dd-a212-b0b53330c1c0
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '1131'
+ht-degree: 0%
 
 ---
 
@@ -59,15 +62,15 @@ Voer de volgende stappen uit om de inhoud van uw site te beschermen tegen toegan
    >
    >Ga niet naar de gelokaliseerde site.
 
-1. Ga naar **[!UICONTROL Pagina-eigenschappen]**.
+1. Go to **[!UICONTROL Page Properties]**.
 
    ![plaatsverificatie](assets/site-authentication.png)
 
-1. Ga naar het tabblad **[!UICONTROL Geavanceerd]** .
+1. Ga naar **[!UICONTROL Advanced]** tabblad.
 
    ![page-eigenschappen](assets/page-properties.png)
 
-1. Schakel **[!UICONTROL verificatievereiste]** in.
+1. Inschakelen **[!UICONTROL Authentication Requirement]**.
 1. Voeg het pad van de aanmeldingspagina toe. Bijvoorbeeld, `/content/......./GetStarted`.
 1. Publiceer de pagina.
 
@@ -93,6 +96,7 @@ U ziet dat de kalenderpagina de startpagina is omdat de gekozen Sjabloon Referen
 >
 >* [Community Components](author-communities.md) (voor auteurs)
 >* [Component, Function en Feature Essentials](essentials.md) (voor ontwikkelaars)
+
 >
 
 
@@ -119,15 +123,15 @@ Groepen kunnen ook in de auteursomgeving worden gecreeerd en binnen de communaut
 
 Een referentiegroep maken:
 
-1. Nieuwe **[!UICONTROL groep selecteren]**
-1. **[!UICONTROL Het tabblad Instellingen]**
+1. Selecteer **[!UICONTROL New Group]**
+1. **[!UICONTROL Settings tab]**
    * Groepsnaam: `Sports`
    * Beschrijving: `A parent group for various sporting groups`
    * Groepsnaam URL: `sports`
    * selecteren `Open Group` (alle leden van de gemeenschap laten deelnemen door lid te worden)
-1. **[!UICONTROL Tabblad Sjabloon]**
+1. **[!UICONTROL Template tab]**
    * Selecteren `Reference Group` (bevat een groepfunctie in de structuur om geneste groepen toe te staan)
-1. Groep **[!UICONTROL maken selecteren]**
+1. Selecteer **[!UICONTROL Create Group]**
 
 ![chlimage_1-317](assets/chlimage_1-317.png)
 
@@ -152,7 +156,8 @@ Voeg bijvoorbeeld twee n toe `ew groups.`
 * This template does *not *include the groups function, so no more nesting of groups will be unable
 * Op auteur, verstrekt de console [van](groups.md) Groepen een derde keus - een `Public Group` (facultatief lidmaatschap)
 
-Nadat beide groepen zijn gemaakt, selecteert u de Baseball-groep, een open groep en ziet u de koppelingen: `Discussions``What's New` `Members`De koppelingen van de groep worden weergegeven onder de koppelingen van de hoofdsite en resulteren in de volgende weergave:
+Nadat beide groepen zijn gemaakt, selecteert u de Baseball-groep, een open groep en ziet u de koppelingen: `Discussions` `What's New` `Members`
+De koppelingen van de groep worden weergegeven onder de koppelingen van de hoofdsite en resulteren in de volgende weergave:
 
 ![chlimage_1-319](assets/chlimage_1-319.png)
 
@@ -173,15 +178,15 @@ Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer
 
 ## Koppeling naar webpagina {#web-page-link}
 
-Selecteer de koppeling Webpagina om de basiswebpagina weer te geven die in de site is opgenomen. De standaard AEM-ontwerpgereedschappen kunnen worden gebruikt om inhoud aan deze pagina toe te voegen in de ontwerpomgeving.
+Selecteer de koppeling Webpagina om de basiswebpagina weer te geven die in de site is opgenomen. U kunt de standaardinstellingen AEM de ontwerpgereedschappen gebruiken om inhoud aan deze pagina toe te voegen in de ontwerpomgeving.
 
 Ga bijvoorbeeld naar de **auteur** -instantie, open de `engage` map in de console [](sites-console.md)Communitysites en selecteer het pictogram Site **** openen om de modus Schrijfbewerking te openen. Selecteer vervolgens de voorvertoningsmodus om de `Web Page`koppeling te selecteren en selecteer vervolgens de bewerkingsmodus om titel- en tekstcomponenten toe te voegen. Ten slotte publiceert u alleen de pagina of de hele site opnieuw.
 
-![chlimage_1-325](assets/chlimage_1-321.png)
+![chlimage_1-321](assets/chlimage_1-321.png)
 
 ## Beheerkoppeling {#administration-link}
 
-Wanneer het communautaire lid moderatievoorrechten heeft, dan zal de verbinding van het Beleid zichtbaar zijn en het selecteren zal de geposte communautaire inhoud tonen en het toestaan om op een manier gelijkend op de [moderatieconsole](moderate-ugc.md) in het auteursmilieu worden [gematigd](moderation.md) .
+Wanneer het communautaire lid moderatievoorrechten heeft, dan zal de verbinding van het Beleid zichtbaar zijn en het selecteren zal het geposte communautaire inhoud tonen en het toestaan om op een manier gelijkend op de [moderatieconsole](moderate-ugc.md) in het auteursmilieu worden [gematigd](moderation.md) .
 
 Gebruik de knop Vorige van de browser om terug te keren naar de gepubliceerde site. De meeste consoles zijn niet toegankelijk via globale navigatie in de publicatieomgeving.
 
