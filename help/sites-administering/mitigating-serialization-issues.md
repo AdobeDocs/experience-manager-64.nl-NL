@@ -1,8 +1,8 @@
 ---
 title: Het verminderen van rangschikkingskwesties in AEM
 seo-title: Het verminderen van rangschikkingskwesties in AEM
-description: Leer hoe u problemen met serienummering in AEM kunt verhelpen.
-seo-description: Leer hoe u problemen met serienummering in AEM kunt verhelpen.
+description: Leer hoe te om rangschikkingskwesties in AEM te verlichten.
+seo-description: Leer hoe te om rangschikkingskwesties in AEM te verlichten.
 uuid: c3989dc6-c728-40fd-bc47-f8427ed71a49
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,15 +22,15 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Het AEM-team van Adobe heeft nauw samengewerkt met het open-source-project [NotSoSerial](https://github.com/kantega/notsoserial) om de kwetsbaarheden die in **CVE-2015-7501** worden beschreven, te helpen verhelpen. NotSoSerial is in licentie gegeven onder de [Apache 2-licentie](https://www.apache.org/licenses/LICENSE-2.0) en bevat een ASM-code die onder een eigen [BSD-achtige licentie](https://asm.ow2.org/license.html)valt.
+Het AEM-team bij Adobe werkt nauw samen met het open-source-project [NotSoSerial](https://github.com/kantega/notsoserial) om de kwetsbaarheden die in **CVE-2015-7501** worden beschreven, te helpen verhelpen. NotSoSerial is in licentie gegeven onder de [Apache 2-licentie](https://www.apache.org/licenses/LICENSE-2.0) en bevat een ASM-code die onder een eigen [BSD-achtige licentie](https://asm.ow2.org/license.html)valt.
 
-De agent die bij dit pakket is inbegrepen, is de gewijzigde distributie van Adobe van NotSoSerial.
+De agent jar inbegrepen met dit pakket is Adobe aangepaste distributie van NotSoSerial.
 
-NotSoSerial is een oplossing op Java-niveau voor een probleem op Java-niveau en is niet specifiek voor AEM. Er wordt een Preflight-controle toegevoegd aan een poging om een object te deserialiseren. Met deze controle wordt een klassenaam getest op basis van een lijst met toegestane en/of bloklijsten in de firewallstijl. Vanwege het beperkte aantal klassen in de standaardbloklijst is het onwaarschijnlijk dat dit van invloed is op uw systemen of code.
+NotSoSerial is een oplossing op Java-niveau voor een probleem op Java-niveau en is niet AEM specifiek. Er wordt een Preflight-controle toegevoegd aan een poging om een object te deserialiseren. Deze controle zal een klassennaam tegen een firewall-stijl lijst van gewenste personen en/of lijst van afgewezen personen testen. Vanwege het beperkte aantal klassen in de standaard lijst van afgewezen personen is het onwaarschijnlijk dat dit van invloed is op uw systemen of code.
 
-Door gebrek, zal de agent een bloklijstcontrole tegen huidige bekende kwetsbare klassen uitvoeren. Deze bloklijst is bedoeld om u tegen de huidige lijst van exploitaties te beschermen die dit type van kwetsbaarheid gebruiken.
+Door gebrek, zal de agent een lijst van afgewezen personen controle tegen huidige bekende kwetsbare klassen uitvoeren. Deze lijst van afgewezen personen is bedoeld om u te beschermen tegen de huidige lijst van exploitaties die dit type van kwetsbaarheid gebruiken.
 
-De bloklijst en staan lijst toe kan worden gevormd door de instructies in het [Vormen van de sectie van de Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel te volgen.
+De lijst van afgewezen personen en de lijst van gewenste personen kunnen worden gevormd door de instructies in het [Vormen van de sectie van de Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) van dit artikel te volgen.
 
 De agent is bedoeld om de recentste bekende kwetsbare klassen te helpen verlichten. Als uw project niet-vertrouwde gegevens deserializing, kan het nog kwetsbaar aan ontkenning van de dienstaanvallen, uit geheugenaanvallen, en onbekende toekomstige deserialization exploiteert.
 
@@ -40,7 +40,7 @@ Adobe biedt officieel ondersteuning voor Java 6, 7 en 8, maar volgens ons biedt 
 
 >[!NOTE]
 >
->Als u eerder de rangschikkingshotfix voor AEM 6.1 hebt geïnstalleerd, te verwijderen gelieve de bevelen van het agentenbegin van uw de uitvoeringslijn van Java.
+>Als u eerder rangschikkingshotfix voor AEM 6.1 hebt geïnstalleerd, te verwijderen gelieve de bevelen van het agentenbegin van uw de uitvoeringslijn van Java.
 
 1. Installeer de bundel **com.adobe.cq.cq-serialization-tester** .
 
@@ -57,7 +57,7 @@ De agent NotSoSerial is niet inbegrepen in de standaarddistributie van AEM voor 
    java -jar aem-quickstart-6.2.0.jar -unpack
    ```
 
-1. Ga naar de locatie van de nieuwe AEM QuickStart-server zonder animatie en kopieer de `crx-quickstart/opt/notsoserial/` map naar de `crx-quickstart` map van de installatie van de AEM-toepassingsserver.
+1. Ga naar de locatie van de nieuw uitgevulde AEM QuickStart en kopieer de `crx-quickstart/opt/notsoserial/` map naar de `crx-quickstart` map van de installatie van de AEM toepassingsserver.
 
 1. Wijzig de eigendom van `/opt` de gebruiker die de server uitvoert:
 
@@ -69,7 +69,7 @@ De agent NotSoSerial is niet inbegrepen in de standaarddistributie van AEM voor 
 
 ## De agent configureren {#configuring-the-agent}
 
-De standaardconfiguratie is geschikt voor de meeste installaties. Dit omvat een bloklijst met bekende klassen voor externe uitvoering en een lijst met toegestane pakketten waarbij de deserialisatie van vertrouwde gegevens relatief veilig moet zijn.
+De standaardconfiguratie is geschikt voor de meeste installaties. Dit omvat een lijst van afgewezen personen van bekende klassen die kwetsbaar zijn voor externe uitvoering en een lijst van gewenste personen van pakketten waar deserialization van vertrouwde gegevens relatief veilig zou moeten zijn.
 
 De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd door:
 
@@ -83,15 +83,15 @@ De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd do
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Deze configuratie bevat het toestaan lijst, de bloklijst, en deserialization registreren.
+Deze configuratie bevat de lijst van gewenste personen, de lijst van afgewezen personen, en deserialization registreren.
 
 **Aanbieding toestaan**
 
-In de sectie voor het toestaan van lijsten zijn dit klassen of voorvoegsels van pakketten die kunnen worden gedeserialiseerd. Houd er rekening mee dat als u deserialiseert voor klassen van uw eigen klasse, u klassen of pakketten moet toevoegen aan deze lijst met toegestane klassen.
+In de sectie voor het toestaan van lijsten zijn dit klassen of voorvoegsels van pakketten die kunnen worden gedeserialiseerd. Houd er rekening mee dat als u deserialiseert voor klassen van uw eigen klasse, u klassen of pakketten aan deze lijst van gewenste personen moet toevoegen.
 
 **Aanbieding blokkeren**
 
-In de sectie met bloklijsten staan klassen die nooit voor deserialisatie zijn toegestaan. De aanvankelijke reeks van deze klassen is beperkt tot klassen die aan verre uitvoeringsaanvallen kwetsbaar zijn gevonden. De bloklijst wordt toegepast voordat er vermelde items zijn toegestaan.
+In de sectie met bloklijsten staan klassen die nooit voor deserialisatie zijn toegestaan. De aanvankelijke reeks van deze klassen is beperkt tot klassen die aan verre uitvoeringsaanvallen kwetsbaar zijn gevonden. De lijst van afgewezen personen wordt toegepast voordat vermelde items worden toegestaan.
 
 **Diagnostische registratie**
 
@@ -113,7 +113,7 @@ Voor meer informatie over het oplossen van problemenkwesties met de agent, zie d
 
 >[!NOTE]
 >
->Als u `org.apache.commons.collections.functors` aan de lijst Allow toevoegt, zal de gezondheidscontrole altijd ontbreken.
+>Als u `org.apache.commons.collections.functors` aan de lijst van gewenste personen toevoegt, zal de gezondheidscontrole altijd ontbreken.
 
 ## Fouten afhandelen met laden van dynamische agent {#handling-errors-with-dynamic-agent-loading}
 
@@ -133,7 +133,7 @@ Volg onderstaande instructies om de agent handmatig te laden:
 
    >[!NOTE]
    >
-   >De Adobe-distributie van de agentjar NotSoSerial vindt u in de `crx-quickstart/opt/notsoserial/` map van uw AEM-installatie.
+   >De distributie van de Adobe van de agent NotSoSerial kan in de `crx-quickstart/opt/notsoserial/` omslag van uw AEM installatie worden gevonden.
 
 1. De JVM stoppen en opnieuw starten;
 
