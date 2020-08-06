@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: ef564750-f107-41cb-887e-fc6d22b7d32e
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '553'
+ht-degree: 0%
 
 ---
 
@@ -61,7 +64,7 @@ De inhoud van een geplakte adaptieve formulieren kan op de volgende manieren wor
 
    U kunt de eigenschappen van metagegevens van het adaptieve formulier wijzigen, bijvoorbeeld de titel en beschrijving. Zie [Formuliermetagegevens beheren voor meer informatie over eigenschappen van metagegevens en de manier waarop deze kunnen worden gewijzigd](/help/forms/using/manage-form-metadata.md)
 
-1. **XFA/XSD wijzigen voor adaptieve XFA/XSD-formulieren:**
+1. **XFA/XSD wijzigen voor adaptieve Forms op basis van XFA/XSD:**
 
    U kunt de XFA/XSD wijzigen die in adaptieve formulieren wordt gebruikt. Zie Metagegevens van formulieren [beheren voor informatie over het wijzigen van deze adaptieve formulieren](/help/forms/using/manage-form-metadata.md)
 
