@@ -1,8 +1,8 @@
 ---
 title: CAPTCHA gebruiken in aangepaste vormen
 seo-title: CAPTCHA gebruiken in aangepaste vormen
-description: Leer hoe u de AEM CAPTCHA- of Google reCAPTCHA-service configureert in adaptieve formulieren.
-seo-description: Leer hoe u de AEM CAPTCHA- of Google reCAPTCHA-service configureert in adaptieve formulieren.
+description: Leer hoe u AEM CAPTCHA- of Google reCAPTCHA-service configureert in adaptieve formulieren.
+seo-description: Leer hoe u AEM CAPTCHA- of Google reCAPTCHA-service configureert in adaptieve formulieren.
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -21,13 +21,13 @@ ht-degree: 0%
 
 CAPTCHA (Complete Automated Public Turing test to tell Computers and Humans Apart) is een programma dat vaak wordt gebruikt bij online transacties om onderscheid te maken tussen mensen en geautomatiseerde programma&#39;s of bots. Het stelt een uitdaging en evalueert de reactie van de gebruiker om te bepalen of het een mens of bot is die met de site communiceert. Het verhindert de gebruiker om te werk te gaan als de test ontbreekt en de hulp maakt online transacties veilig door bots te houden spam of kwaadwillige doeleinden posten.
 
-AEM Forms ondersteunen CAPTCHA in adaptieve vormen. U kunt de reCAPTCHA-service van Google gebruiken om CAPTCHA te implementeren.
+AEM Forms ondersteunt CAPTCHA in adaptieve vormen. U kunt de reCAPTCHA-service van Google gebruiken om CAPTCHA te implementeren.
 
 >[!NOTE]
 >
->AEM Forms ondersteunen alleen reCaptcha v2. Andere versies worden niet ondersteund.
+>AEM Forms biedt alleen ondersteuning voor reCaptcha v2. Andere versies worden niet ondersteund.
 >
->CAPTCHA in adaptieve formulieren wordt niet ondersteund in de offlinemodus in de AEM Forms-app.
+>CAPTCHA in adaptieve formulieren wordt niet ondersteund in de offlinemodus van de AEM Forms-app.
 
 ## De ReCAPTCHA-service van Google configureren {#google-recaptcha}
 
@@ -35,7 +35,7 @@ Auteurs van formulieren kunnen de reCAPTCHA-service van Google gebruiken om CAPT
 
 ![recaptcha](assets/recaptcha.png)
 
-De service reCAPTCHA implementeren in AEM Forms:
+De reCAPTCHA-service implementeren in AEM Forms:
 
 1. Haal [reCAPTCHA API sleutelpaar](https://www.google.com/recaptcha/admin) op van Google. De site bevat een sleutel en een geheim.
 1. Configuratiecontainer maken voor cloudservices.
@@ -45,7 +45,7 @@ De service reCAPTCHA implementeren in AEM Forms:
 
       1. Selecteer de **[!UICONTROL global]** map in de configuratiegrowser en tik op **[!UICONTROL Properties]**.
       1. Schakel in het dialoogvenster Configuration Properties de optie **[!UICONTROL Cloud Configurations]**.
-      1. Tik **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster te sluiten.
+      1. Tik **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
    1. Tik in de configuratievenster op **[!UICONTROL Create]**.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map en schakel deze in **[!UICONTROL Cloud Configurations]**.
    1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor cloudserviceconfiguraties.
@@ -53,10 +53,11 @@ De service reCAPTCHA implementeren in AEM Forms:
 
 1. Configureer de cloudservice voor reCAPTCHA.
 
-   1. Ga voor de AEM-auteur naar ![Gereedschappen](assets/tools.png) > **Cloud Servicen**.
+   1. Ga voor de AEM auteur naar ![Gereedschappen](assets/tools.png) > **Cloud Services**.
    1. Tik op **[!UICONTROL reCAPTCHA]**. De pagina Configurations wordt geopend. Selecteer de configuratiecontainer die in de vorige stap is gemaakt en tik op **[!UICONTROL Create]**.
    1. Geef Naam, Sitecode en Geheime sleutel voor de service reCAPTCHA op en tik **[!UICONTROL Create]** om de configuratie van de cloudservice te maken.
    1. Geef in het dialoogvenster Component bewerken de site en de geheime sleutels op die in stap 1 zijn verkregen. Tik **[!UICONTROL Save Settings]** en tik vervolgens **[!UICONTROL OK]** om de configuratie te voltooien.
+
    Zodra de reCAPTCHA-service is geconfigureerd, is deze beschikbaar voor gebruik in adaptieve formulieren. Zie CAPTCHA [gebruiken in adaptieve vormen](#using-captcha)voor meer informatie.
 
 ## CAPTCHA gebruiken in aangepaste vormen {#using-captcha}
@@ -85,7 +86,7 @@ CAPTCHA in adaptieve vorm gebruiken:
 
    >[!NOTE]
    >
-   >Selecteer geen **[!UICONTROL Default]** optie in het vervolgkeuzemenu Captcha omdat de standaard AEM CAPTCHA-service is afgekeurd.
+   >Selecteer geen **[!UICONTROL Default]** uit de de dienstdrop-down Captcha aangezien de standaard AEM dienst CAPTCHA wordt afgekeurd.
 
 1. Sla de eigenschappen op.
 
