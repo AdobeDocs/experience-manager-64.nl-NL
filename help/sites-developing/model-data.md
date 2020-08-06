@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 39546c0a-b72f-42df-859b-98428ee0d5fb
 translation-type: tm+mt
 source-git-commit: 80d451aa6a325d1b668d7d0ddae95a1a14ee877a
+workflow-type: tm+mt
+source-wordcount: '1828'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 80d451aa6a325d1b668d7d0ddae95a1a14ee877a
 
 De volgende details zijn ideeën en opmerkingen van David Nuescheler.
 
-David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd aangeschaft. Hij is nu mede-chef en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Bewaarplaats van de Inhoud van Java (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
+David was mede-oprichter en CTO of Day Software AG, een toonaangevende leverancier van software voor contentbeheer en contentinfrastructuur, die in 2010 door Adobe werd opgevraagd. Hij is nu mede en VP van de Technologie van de Onderneming bij Adobe en leidt ook de ontwikkeling van JSR-170, de toepassing van de Bewaarplaats van de Inhoud van Java (JCR) programmeringsinterface (API), de technologienorm voor inhoudsbeheer.
 
 Meer updates zijn ook te vinden op [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
@@ -200,7 +203,7 @@ Hoewel er zeker goede gebruiksgevallen zijn om enkel een binair bezit te gebruik
 /content/myblog/posts/iphone_shipping/attachments/front.jpg/jcr:content [nt:resource]
 ```
 
-### Regel 7:Id&#39;s zijn slecht. {#rule-ids-are-evil}
+### Regel 7: Id&#39;s zijn slecht. {#rule-ids-are-evil}
 
 #### Toelichting {#explanation-7}
 
