@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 968c2574-ec9a-45ca-9c64-66f4caeec285
 translation-type: tm+mt
 source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+workflow-type: tm+mt
+source-wordcount: '1074'
+ht-degree: 0%
 
 ---
 
@@ -92,7 +95,7 @@ De opdracht Keytool bevindt zich gewoonlijk in de map JavaJre/bin en moet versch
      <li><p><code><i>[User name]</i></code> Dit is de identificatie van de gebruiker die eigenaar is van het sleutelarchief.</p></li> 
      <li><p><code><i>[Group Name]</i></code> is de identificatie van de ondernemingsgroep waartoe de eigenaar van het sleutelarchief behoort.</p></li> 
      <li><p><code><i>[Company Name]</i></code> is de naam van uw organisatie.</p></li> 
-     <li><p><code><i>[City Name]</i></code> Dit is de stad waar uw organisatie zich bevindt.</p></li> 
+     <li><p><code><i>[City Name]</i></code> is de stad waar uw organisatie zich bevindt.</p></li> 
      <li><p><code><i>[State or province]</i></code> is de staat of provincie waar uw organisatie zich bevindt.</p></li> 
      <li><p><code><i>[Country Code]</i></code> Dit is de tweelettercode voor het land waar uw organisatie zich bevindt.</p></li> 
     </ul></td> 
@@ -144,7 +147,7 @@ Zie het bestand keytool.html in de JDK-documentatie voor meer informatie over he
 1. Kopieer het bestand ads-ca.cer naar alle hostcomputers die beveiligde communicatie met de toepassingsserver nodig hebben.
 1. Voeg het certificaat in een nieuw sleutelarchiefbestand in (het sleutelarchief van Aangepast vertrouwen) door de volgende opdracht in te voeren:
 
-   [JAVA_HOME]`/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
+   [JAVA_HOME] `/bin/keytool -import -v -noprompt -alias bedrock -file "ads-ca.cer" -keystore "ads-ca.jks" -storepass store_password -keypass key_password`
 
    >[!NOTE]
    >
@@ -177,7 +180,7 @@ Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangep
 1. Klik op **Wijzigen** om de lijst met sleutelarchieven op te halen als een vervolgkeuzelijst en selecteer **Aangepaste identiteit en aangepast vertrouwen**.
 1. Geef onder Identiteit de volgende waarden op:
 
-   **Aangepast identiteitssleutelarchief**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, waarbij *[appserverdomain] *het werkelijke pad is en de *[servernaam]* de naam van de toepassingsserver.
+   **Aangepast identiteitssleutelarchief**: *[appserverdomain]*/adobe/*[server name]*/ads-credentials.jks, waarbij *[appserverdomain] *het daadwerkelijke pad is en de *[servernaam]* de naam van de toepassingsserver.
 
    **Type** aangepast identiteitssleutelarchief: JKS
 
@@ -185,11 +188,11 @@ Configureer WebLogic zodanig dat deze gebruikmaakt van het sleutelarchief Aangep
 
 1. Geef onder Vertrouwd de volgende waarden op:
 
-   **Aangepaste sleutelarchiefbestandsnaam** vertrouwen: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, waarbij `*[appserverdomain]*` het werkelijke pad is
+   **Aangepaste sleutelarchiefbestandsnaam** vertrouwen: `*[appserverdomain]*/adobe/*[server]*/ads-ca.jks`, waar `*[appserverdomain]*` is het werkelijke pad?
 
    **Type** aangepast sleutelarchief vertrouwen: JKS
 
-   **Wachtwoordgroep** voor aangepast vertrouwen: *mypassword* (aangepast wachtwoord vertrouwenssleutel)
+   **Wachtwoordgroep** voor aangepast vertrouwen: *mypassword* (aangepast wachtwoord voor vertrouwenssleutel)
 
 1. Onder Algemeen, in Configuratie, uitgezochte **SSL**.
 1. Standaard is Keystore geselecteerd voor Identiteit en Vertrouwenslocaties. Als dat niet het geval is, wijzigt u deze in sleutelarchief.
