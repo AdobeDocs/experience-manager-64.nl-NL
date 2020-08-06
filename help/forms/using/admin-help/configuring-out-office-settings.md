@@ -1,8 +1,8 @@
 ---
 title: Het vormen uit de Montages van het Bureau
 seo-title: Het vormen uit de Montages van het Bureau
-description: Met de functie Buiten-kantoor kunt u opgeven wanneer een gebruiker buiten het kantoor komt en taken die zijn toegewezen door AEM-formulieren niet kan uitvoeren.
-seo-description: Met de functie Buiten-kantoor kunt u opgeven wanneer een gebruiker buiten het kantoor komt en taken die zijn toegewezen door AEM-formulieren niet kan uitvoeren.
+description: Met de functie Buiten-kantoor kunt u opgeven wanneer een gebruiker buiten het kantoor komt en geen taken kan uitvoeren die door AEM formulieren zijn toegewezen.
+seo-description: Met de functie Buiten-kantoor kunt u opgeven wanneer een gebruiker buiten het kantoor komt en geen taken kan uitvoeren die door AEM formulieren zijn toegewezen.
 uuid: 0d01df0a-aa6a-40e5-bf24-423ed1c932cc
 contentOwner: admin
 content-type: reference
@@ -11,13 +11,16 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 30312159-58a5-4781-b554-29dcbce696cb
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '691'
+ht-degree: 0%
 
 ---
 
 
 # Het vormen uit de Montages van het Bureau {#configuring-out-of-office-settings}
 
-Met de functie Buiten-kantoor kunnen gebruikers of beheerders opgeven wanneer een gebruiker buiten het kantoor komt en geen taken kan uitvoeren die door AEM-formulieren zijn toegewezen. Terwijl een gebruiker aan uit Bureau wordt geplaatst, worden hun taken toegewezen aan één of meerdere aangewezen gebruikers. Gebruikers kunnen hun instellingen voor Buiten-Office wijzigen in Workspace of beheerders kunnen de instellingen namens een gebruiker wijzigen in de formulierworkflow.
+De functie Buiten het Bureau laat gebruikers of beheerders toe om te specificeren wanneer een gebruiker uit het bureau zal zijn en niet om taken te voltooien die door AEM vormen worden toegewezen. Terwijl een gebruiker aan uit Bureau wordt geplaatst, worden hun taken toegewezen aan één of meerdere aangewezen gebruikers. Gebruikers kunnen hun instellingen voor Buiten-Office wijzigen in Workspace of beheerders kunnen de instellingen namens een gebruiker wijzigen in de formulierworkflow.
 
 Wanneer het creëren van een proces, kan de gebruiker Workbench specificeren of een taak wegens uit de montages van het Bureau kan worden opnieuw gericht.
 
@@ -28,7 +31,7 @@ Wanneer het creëren van een proces, kan de gebruiker Workbench specificeren of 
 
    **Zoeken op naam**
 
-   Selecteer de optie Zoeken op naam. Typ de gebruikersnaam volledig of gedeeltelijk en klik op Zoeken. Als u het veld leeg laat, wordt met Forms een lijst met alle gebruikers geretourneerd
+   Selecteer de optie Zoeken op naam. Typ de gebruikersnaam volledig of gedeeltelijk en klik op Zoeken. Als u het veld leeg laat, wordt een lijst met alle gebruikers geretourneerd in de Forms-workflow
 
    **Zoeken op datumbereik**
 
