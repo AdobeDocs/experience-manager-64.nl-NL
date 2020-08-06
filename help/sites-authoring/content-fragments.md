@@ -1,8 +1,8 @@
 ---
 title: Pagina's ontwerpen met inhoudsfragmenten
 seo-title: Pagina's ontwerpen met inhoudsfragmenten
-description: Met AEM-inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
-seo-description: Met AEM-inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
+description: Met AEM inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
+seo-description: Met AEM inhoudsfragmenten kunt u pagina-onafhankelijke inhoud ontwerpen, maken, beheren en gebruiken
 uuid: 66ccdff8-1658-4374-8562-97f81f434488
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
 translation-type: tm+mt
 source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+workflow-type: tm+mt
+source-wordcount: '1120'
+ht-degree: 6%
 
 ---
 
@@ -19,20 +22,21 @@ source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
 
 >[!CAUTION]
 >
->Voor sommige functies voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
 
-Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments.md).
+Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments.md).
 
 U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
-Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragmenten ook worden gebruikt om AEM-inhoud via Content Services te leveren aan andere kanalen dan AEM-pagina&#39;s.
+Samen met de bijgewerkte JSON-exportfunctie kunnen gestructureerde inhoudsfragmenten ook worden gebruikt om AEM inhoud via Content Services te leveren aan andere kanalen dan AEM pagina&#39;s.
 
 >[!NOTE]
 >
->**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)**zijn verschillende functies in AEM:
+>**Inhoudsfragmenten** en **[ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)**hebben verschillende functies in AEM:
 >
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **de inhoud van de ervaringsfragmenten** volledig wordt ingedeeld; een fragment van een webpagina.
+
 >
 >
 De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
@@ -53,7 +57,7 @@ Met de inhoudsfragmenten kunt u:
 
 * **Schrijvers kopiëren**
 
-   * Schrijf in de fragmenteditor voor AEM-inhoud.
+   * Schrijf in de fragmenteditor voor AEM inhoud.
    * Kan inhoudvariaties maken.
    * Kan relevante inhoud aan het inhoudsfragment koppelen.
    * Kan versioning/workflow gebruiken.
@@ -71,17 +75,18 @@ Met de inhoudsfragmenten kunt u:
 
 1. Open de pagina om deze te bewerken.
 
-1. Voeg de component **[!UICONTROL Inhoudsfragment]** toe. vanuit de browser **[!UICONTROL Components]** of **[!UICONTROL Insert New Component]**.
+1. Voeg de **[!UICONTROL Content Fragment]** component toe; vanuit de **[!UICONTROL Components]** browser of **[!UICONTROL Insert New Component]**.
 
 1. U kunt:
 
-   * Open de **[!UICONTROL middelenbrowser]** en filter voor **[!UICONTROL inhoudsfragmenten]** (de standaardinstelling is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
-   * Selecteer de component van het inhoudsfragment, dan **[!UICONTROL vorm]** van de toolbar. In het dialoogvenster kunt u het selectiedialoogvenster openen waarin u het gewenste **[!UICONTROL inhoudsfragment]** kunt selecteren.
+   * Open de **[!UICONTROL Assets]** browser en het filter voor **[!UICONTROL Content Fragments]** (de standaardwaarde is Afbeeldingen). Sleep het gewenste fragment vervolgens naar de componentinstantie.
+   * Selecteer de component van het inhoudsfragment, dan **[!UICONTROL Configure]** van de toolbar. In het dialoogvenster kunt u het dialoogvenster Selectie openen en de gewenste opties selecteren **[!UICONTROL Content Fragment]**.
+
    >[!NOTE]
    >
    >Een andere methode is om een specifiek inhoudsfragment rechtstreeks naar de pagina te slepen. Hiermee wordt automatisch de bijbehorende component (inhoudsfragment) gemaakt.
 
-1. In eerste instantie wordt de inhoud van het **[!UICONTROL hoofdelement]** en de **[!UICONTROL stramienpagina]** (variatie) weergegeven. U kunt desgewenst andere elementen en/of variaties [](#selecting-the-element-or-variation) selecteren.
+1. In eerste instantie wordt de inhoud van het **[!UICONTROL Main]** Element en **[!UICONTROL Master]** (variatie) weergegeven. U kunt desgewenst andere elementen en/of variaties [](#selecting-the-element-or-variation) selecteren.
 
    ![cfm-6420-01](assets/cfm-6420-01.png)
 
@@ -95,44 +100,45 @@ Met de inhoudsfragmenten kunt u:
 
 ## Het element of de variatie selecteren {#selecting-the-element-or-variation}
 
-Open het dialoogvenster **[!UICONTROL Configuratie]** van het fragment om het fragment te configureren voor gebruik op de huidige pagina. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
+Open het **[!UICONTROL Configuration]** dialoogvenster van het fragment om het fragment te configureren voor gebruik op de huidige pagina. Het dialoogvenster kan afhankelijk zijn van de gebruikte component.
 
 In het juiste configuratiedialoogvenster kunt u de beschikbare parameters selecteren, waaronder:
 
-* **[!UICONTROL Inhoudsfragment]**
+* **[!UICONTROL Content Fragment]**
 
    Geef op welk fragment moet worden gebruikt.
 
-* **[!UICONTROL Weergavemodus]**:
+* **[!UICONTROL Display Mode]**:
 
-   * **[!UICONTROL Element voor één tekst]**
-   * **[!UICONTROL Meerdere elementen]**
+   * **[!UICONTROL Single Text Element]**
+   * **[!UICONTROL Multiple Element]**
 
 * **[!UICONTROL Element]**
 
-   * De standaard **[!UICONTROL Hoofd]** zal altijd beschikbaar zijn.
+   * De standaard **[!UICONTROL Main]** is altijd beschikbaar.
    * Er is een selectie beschikbaar als het fragment met een geschikte sjabloon is gemaakt.
+
    >[!NOTE]
    >
    >De beschikbare elementen zijn afhankelijk van de gebruikte sjabloon.
 
-* **[!UICONTROL Variatie]**
+* **[!UICONTROL Variation]**
 
-   * Het standaardstramien **** is altijd beschikbaar.
+   * De standaard **[!UICONTROL Master]** is altijd beschikbaar.
    * Er is een selectie beschikbaar als er variaties zijn gemaakt voor het fragment.
 
-* **[!UICONTROL Alinea]**&#39;s: het bereik van de alinea(&#39;s) specificeren dat moet worden opgenomen:
+* **[!UICONTROL Paragraphs]**: het bereik van de alinea(&#39;s) specificeren dat moet worden opgenomen:
 
-   * **[!UICONTROL Alles]**
-   * **[!UICONTROL Bereik]**: bijvoorbeeld, `1`, `3-5``9-*`
+   * **[!UICONTROL All]**
+   * **[!UICONTROL Range]**: bijvoorbeeld, `1`, `3-5``9-*`
 
-      * **[!UICONTROL Koppen als eigen alinea&#39;s verwerken]**
+      * **[!UICONTROL Handle headings as their own paragraphs]**
 
-* **[!UICONTROL Koppen als eigen alinea&#39;s verwerken]**
+* **[!UICONTROL Handle headings as their own paragraphs]**
 
 ## Snelle verbinding met de fragmenteditor {#quick-connection-to-fragment-editor}
 
-U kunt de fragmentbron voor bewerking (het element) openen met het pictogram **[!UICONTROL Bewerken]** op de componentwerkbalk. Hierdoor kunt u het inhoudsfragment [](/help/assets/content-fragments.md)bewerken en beheren.
+U kunt de fragmentbron voor bewerking (het element) openen met het **[!UICONTROL Edit]** pictogram op de componentwerkbalk. Hierdoor kunt u het inhoudsfragment [](/help/assets/content-fragments.md)bewerken en beheren.
 
 >[!CAUTION]
 >
@@ -140,7 +146,7 @@ U kunt de fragmentbron voor bewerking (het element) openen met het pictogram **[
 
 ## Tussenliggende inhoud toevoegen {#adding-in-between-content}
 
-Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is hier **[!UICONTROL een tijdelijke aanduiding voor componenten]** Slepen tussen elke HTML-alinea (en boven/onder) van het fragment.
+Wanneer een specifiek inhoudsfragment aan de pagina wordt toegevoegd, is er een **[!UICONTROL Drag components here]** plaatsaanduiding tussen elke HTML-alinea (en boven/onder) van het fragment.
 
 Hierdoor kunt u tussenliggende (dat wil zeggen [tussenliggende inhoud)](/help/assets/content-fragments.md#in-between-content-when-page-authoring-with-content-fragments) extra inhoud aan de fragmentinhoud toevoegen (op een van de beschikbare punten) zonder dat u het basisfragment hoeft te wijzigen.
 
@@ -171,13 +177,14 @@ Voor tussenliggende inhoud kunt u:
 >* Tussen componenten heeft een absolute positie binnen de reeks componenten in de fragmentstroom. Deze positie verandert niet, zelfs niet wanneer de inhoud van alinea&#39;s in het fragment verandert.\
    >  Hierdoor kan het lijken alsof de relatieve positionering is gewijzigd, aangezien de tussenliggende alinea&#39;s geen contextafhankelijke relatie hebben met de (fragment)alinea&#39;s naast de alinea&#39;s.
 >* Tenzij de twee alinea&#39;s met elkaar in strijd zijn; in dat geval wordt de tussenliggende inhoud niet weergegeven (hoewel deze inhoud intern nog steeds aanwezig is).
+
 >
 
 
 
 ## Gekoppelde inhoud gebruiken {#using-associated-content}
 
-Als u inhoud [aan het](/help/assets/content-fragments-assoc-content.md) inhoudsfragment [hebt](/help/assets/content-fragments.md) gekoppeld, zijn deze elementen beschikbaar in het zijpaneel (nadat u het fragment op de inhoudspagina hebt geplaatst). Gekoppelde inhoud is in feite een speciale bron van inhoud voor [tussen inhoud](#adding-in-between-content).
+Als u [content hebt gekoppeld](/help/assets/content-fragments-assoc-content.md) aan het [contentfragment](/help/assets/content-fragments.md), zijn deze assets beschikbaar in het zijpaneel (nadat u het fragment op de contentpagina hebt geplaatst). Gekoppelde content is in feite een speciale bron van content voor [tussenliggende content](#adding-in-between-content).
 
 >[!NOTE]
 >
@@ -185,9 +192,9 @@ Als u inhoud [aan het](/help/assets/content-fragments-assoc-content.md) inhoudsf
 
 >[!NOTE]
 >
->Als er meerdere inhoudsfragmenten op één pagina staan, wordt op het tabblad **[!UICONTROL Gekoppelde inhoud]** de voor alle fragmenten geschikte elementen weergegeven.
+>Als er meerdere inhoudsfragmenten op één pagina staan, worden op het **[!UICONTROL Associated Content]** tabblad de elementen weergegeven die geschikt zijn voor alle fragmenten.
 
-Nadat u een fragment met de bijbehorende inhoud aan de pagina hebt toegevoegd, wordt een nieuw tabblad (**[!UICONTROL Gekoppelde inhoud]**) geopend in het zijpaneel.
+Nadat u een fragment met de bijbehorende inhoud aan de pagina hebt toegevoegd, wordt een nieuw tabblad (**[!UICONTROL Associated Content]**) geopend in het zijpaneel.
 
 Van hieruit kunt u de elementen naar de gewenste locatie slepen (naar een bestaande component of naar de gewenste positie waar de juiste component wordt gemaakt):
 
