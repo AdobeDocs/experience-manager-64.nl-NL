@@ -1,8 +1,8 @@
 ---
 title: Optimalisatie van prestaties
 seo-title: Optimalisatie van prestaties
-description: Leer hoe u bepaalde aspecten van AEM configureert om de prestaties te optimaliseren.
-seo-description: Leer hoe u bepaalde aspecten van AEM configureert om de prestaties te optimaliseren.
+description: Leer hoe u bepaalde aspecten van AEM kunt configureren om de prestaties te optimaliseren.
+seo-description: Leer hoe u bepaalde aspecten van AEM kunt configureren om de prestaties te optimaliseren.
 uuid: a4d9fde4-a4c7-4ee5-99b6-29b0ee7dc35b
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 translation-type: tm+mt
 source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+workflow-type: tm+mt
+source-wordcount: '6722'
+ht-degree: 1%
 
 ---
 
@@ -41,6 +44,7 @@ Deze omgeving bevat inhoud die u beschikbaar maakt voor uw gebruikers. Het aanta
 >
 >* Nadat u de configuratie hebt geconfigureerd voor optimalisatie van de prestaties, volgt u de procedures op [Tough Day](/help/sites-developing/tough-day.md) om de omgeving onder zware belasting te testen.
 >* Zie ook tips voor het afstemmen van [prestaties](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html).
+
 >
 
 
@@ -73,7 +77,7 @@ Aangezien de systeembelasting verandert en de prestatieprofielen van uw systeem 
 
 ![chlimage_1-4](assets/chlimage_1-4.jpeg)
 
-Als u live gaat met een website en na de introductie ontdekt dat u problemen hebt met de prestaties, is er slechts één reden voor dat: Uw belasting- en prestatietests hebben de realiteit niet nauwkeurig genoeg gesimuleerd.
+Als u live gaat met een website en na de introductie ontdekt dat u problemen hebt met de prestaties, is er slechts één reden voor die problemen: Uw belasting- en prestatietests hebben de realiteit niet nauwkeurig genoeg gesimuleerd.
 
 Het simuleren van de realiteit is moeilijk en hoeveel moeite u redelijkerwijs zult willen investeren om &quot;echt&quot; te worden hangt af van de aard van uw project. &quot;Reëel&quot; betekent niet alleen &quot;echte code&quot; en &quot;echt verkeer&quot;, maar ook &quot;echte inhoud&quot;, met name met betrekking tot de grootte en structuur van de inhoud. Houd er rekening mee dat uw sjablonen zich totaal anders gedragen, afhankelijk van de grootte en structuur van de opslagplaats.
 
@@ -151,7 +155,7 @@ Als u de prestaties wilt verbeteren, kunt u het volgende overwegen:
 * De gemiddelde grootte van geüploade afbeeldingen (en de grootte van de uitvoeringen die per afbeelding worden gegenereerd) in megabytes.
 * Bepaal de gemiddelde gegevenssnelheid:
 
-![chlimage_1-78](assets/chlimage_1-78.png)
+![chlimage_1-70](assets/chlimage_1-78.png)
 
 * 80% van alle bewerkingen wordt uitgevoerd in 20% van de tijd, dus tijdens de piektijd hebt u vier keer de gemiddelde gegevenssnelheid. Dit is uw prestatiedoel.
 
@@ -161,7 +165,7 @@ Prestaties (of het ontbreken ervan) zijn een van de eerste dingen die uw gebruik
 
 Zie Prestaties [](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance)controleren voor meer informatie over hoe u prestatiebewaking kunt uitvoeren.
 
-De problemen die prestatieskwesties veroorzaken zijn vaak moeilijk te volgen, zelfs wanneer hun gevolgen gemakkelijk zijn te zien.
+De problemen die prestatieproblemen veroorzaken, zijn vaak moeilijk op te sporen, zelfs als de effecten ervan gemakkelijk te zien zijn.
 
 Een basisuitgangspunt is een goede kennis van uw systeem wanneer het zoals normaal werkt. Tenzij u weet hoe uw omgeving eruit ziet en zich gedraagt wanneer deze goed functioneert, kan het moeilijk zijn het probleem op te sporen wanneer de prestaties achteruitgaan. Dit betekent dat u wat tijd moet besteden aan het onderzoeken van uw systeem wanneer het regelmatig loopt en ervoor moet zorgen dat het verzamelen van prestatiesinformatie een lopende taak is. Dit zal u een basis voor vergelijking verstrekken als de prestaties lijden.
 
@@ -210,7 +214,7 @@ Bepaalde aspecten van CQ (en/of de onderliggende CRX) kunnen worden geconfiguree
 
 ### Indexering zoeken {#search-indexing}
 
-Vanaf AEM 6.0 maakt Adobe Experience Manager gebruik van een op eak gebaseerde opslagarchitectuur.
+Vanaf AEM 6.0 gebruikt Adobe Experience Manager een op eik gebaseerde opslagarchitectuur.
 
 Hier vindt u de bijgewerkte indexeringsgegevens:
 
@@ -226,11 +230,11 @@ Wanneer bijvoorbeeld afbeeldingen (of DAM-elementen in het algemeen) worden geü
 De workflowengine gebruikt Apache Sling-taakwachtrijen voor het verwerken en plannen van de verwerking van werkitems. De volgende taakrijservices zijn standaard gemaakt in de Apache Sling Job Queue Configuration-service factory voor het verwerken van werkstroomtaken:
 
 * Wachtrij voor Granite-werkstroom: De meeste workflowstappen, zoals die welke DAM-elementen verwerken, gebruiken de Granite Workflow Queue-service.
-* Extra werkstroom voor externe procestaak: Deze service wordt gebruikt voor speciale externe workflowstappen die doorgaans worden gebruikt om contact op te nemen met een extern systeem en om de resultaten te bekijken. De InDesign Media Extraction Process-stap wordt bijvoorbeeld geïmplementeerd als een extern proces. De workflowengine gebruikt de externe wachtrij voor het verwerken van de opiniepeiling. (Zie [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
+* Extra werkstroom voor externe procestaak: Deze service wordt gebruikt voor speciale externe workflowstappen die doorgaans worden gebruikt om contact op te nemen met een extern systeem en om de resultaten te bekijken. De stap InDesign Media Extraction Process wordt bijvoorbeeld geïmplementeerd als een extern proces. De workflowengine gebruikt de externe wachtrij voor het verwerken van de opiniepeiling. (Zie [com.day.cq.workflow.exec.WorkflowExternalProcess](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/WorkflowExternalProcess.html).)
 
 Vorm deze diensten om het maximumaantal gelijktijdig lopende werkschemaprocessen te beperken.
 
-**** Opmerking: Het vormen van deze baanrijen beïnvloedt alle werkschema&#39;s tenzij u een baanrij voor een specifiek werkschemamodel hebt gecreeerd (zie [Vorm de Rij voor een Specifiek hieronder Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) van het Werkschema).
+**Opmerking:** Het vormen van deze baanrijen beïnvloedt alle werkschema&#39;s tenzij u een baanrij voor een specifiek werkschemamodel hebt gecreeerd (zie [Vorm de Rij voor een Specifiek hieronder Model](/help/sites-deploying/configuring-performance.md#configure-the-queue-for-a-specific-workflow) van het Werkschema).
 
 **Configuratie in de opslagplaats**
 
@@ -367,7 +371,7 @@ Gebaseerd op de volgende beginselen.
 
 **Transacties**
 
-* De term transactie wordt gebruikt om het verzoek van een volledige Web-pagina, met inbegrip van de pagina zelf en alle verdere vraag te vertegenwoordigen; d.w.z. de paginaaanvraag, eventuele AJAX-aanroepen, afbeeldingen en andere objecten.**Downloaden aanvragen**
+* De term transactie wordt gebruikt om het verzoek van een volledige Web-pagina, met inbegrip van de pagina zelf en alle verdere vraag te vertegenwoordigen; d.w.z. de paginaaanvraag, eventuele AJAX, afbeeldingen en andere objecten.**Downloaden aanvragen**
 * Om elk verzoek volledig te analyseren kunt u elk element van de vraagstapel vertegenwoordigen, dan totaal de gemiddelde verwerkingstijd voor elk.
 
 ### De prestatiedoelstellingen definiëren {#defining-the-performance-goals}
@@ -384,7 +388,7 @@ Kritieke onderdelen moeten worden getest - zowel onder gemiddelde als onder piek
 
 In beide gevallen kunt u het verwachte aantal transacties per seconde definiëren wanneer een vooraf gedefinieerd aantal gebruikers het systeem gebruikt.
 
-| Component | Testtype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Component | Testtype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Homepage voor één gebruiker | Gemiddelde | 1 | 1 |  |  |
 |  | Piek | 1 | 3 |  |  |
@@ -395,7 +399,7 @@ In beide gevallen kunt u het verwachte aantal transacties per seconde definiëre
 
 Wanneer u de componenten in combinatie test, wordt het gedrag van de toepassingen beter weerspiegeld. Ook hier moeten de gemiddelde en piekomstandigheden worden getest.
 
-| Scenario | Component | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Scenario | Component | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Gemengd gemiddelde | Homepage | 10 | 1 |  |  |
 |  | Zoeken | 10 | 1 |  |  |
@@ -412,7 +416,7 @@ Wanneer u de componenten in combinatie test, wordt het gedrag van de toepassinge
 
 In de eerste dagen nadat uw website beschikbaar is gemaakt, kunt u een hogere mate van belangstelling verwachten. Dit zal waarschijnlijk zelfs groter zijn dan de piekwaarden u voor hebt getest. Het wordt ten zeerste aanbevolen Going Live-scenario&#39;s te testen om ervoor te zorgen dat het systeem op deze situatie kan inspelen.
 
-| Scenario | Testtype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Scenario | Testtype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Going Live peak | Homepage | 200 | 20 |  |  |
 |  | Zoeken | 100 | 10 |  |  |
@@ -429,7 +433,7 @@ Foutscenario&#39;s moeten ook worden getest om ervoor te zorgen dat het systeem 
 
 Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet alle scenario&#39;s regelmatig zullen plaatsvinden. Het is echter van belang dat de gevolgen voor het hele systeem worden beïnvloed.
 
-| Foutscenario | Fouttype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Foutscenario | Fouttype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Overbelasting van component zoeken | Zoeken op jokerteken (sterretje) | 10 | 1 |  | Alleen &amp;ast;&amp;ast;&amp;ast; worden doorzocht. |
 |  | Woord stoppen | 20 | 2 |  | Zoeken naar een stopwoord. |
@@ -440,7 +444,7 @@ Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet a
 
 Bepaalde problemen zullen pas worden ondervonden nadat het systeem gedurende een ononderbroken periode functioneert; hetzij uren, hetzij zelfs dagen. Een duurtest wordt gebruikt om een constante gemiddelde belasting over een vereiste periode te testen. Elke verslechtering van de prestaties kan vervolgens worden geanalyseerd.
 
-| Scenario | Testtype | #Users | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
+| Scenario | Testtype | #Gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
 | Duurzaamheidstest (72 uur) | Homepage | 10 | 1 |  |  |
 |  | Zoeken | 10 | 1 |  |  |
@@ -481,11 +485,11 @@ Nadat alle tests zijn voltooid, wilt u rapporteren over:
 
 ## Prestaties optimaliseren bij gebruik van Dispatcher {#optimizing-performance-when-using-the-dispatcher}
 
-De [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) is het hulpprogramma voor het in cache plaatsen en/of taakverdeling van Adobe. Wanneer u de Dispatcher gebruikt, kunt u overwegen uw website te optimaliseren voor de prestaties van de cache.
+De [voucher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) is het gereedschap Adobe in evenwicht brengen en/of laden in evenwicht brengen. Wanneer u de Dispatcher gebruikt, kunt u overwegen uw website te optimaliseren voor de prestaties van de cache.
 
 >[!NOTE]
 >
->Dispatcher-versies zijn onafhankelijk van AEM, maar de Dispatcher-documentatie is ingesloten in de AEM-documentatie. Gebruik altijd de Dispatcher-documentatie die is ingesloten in de documentatie voor de nieuwste versie van AEM.
+>De versies van de Verzender zijn onafhankelijk van AEM, nochtans wordt de documentatie van de Verzender ingebed in de AEM documentatie. Gebruik altijd de Dispatcher-documentatie die is ingesloten in de documentatie voor de meest recente versie van AEM.
 >
 >U bent mogelijk omgeleid naar deze pagina als u een koppeling naar de Dispatcher-documentatie hebt gevolgd die is ingesloten in de documentatie voor een vorige versie van AEM.
 
@@ -497,6 +501,7 @@ De Dispatcher biedt een aantal ingebouwde mechanismen die u kunt gebruiken om de
 >
 >* kan alles opslaan dat u als pagina kunt opslaan en aanvragen via een URL
 >* kan geen andere items opslaan, zoals cookies, sessiegegevens en formuliergegevens.
+
 >
 >
 In het algemeen, impliceren veel caching strategieën het selecteren van goede URLs en het verlaten van deze extra gegevens.
@@ -516,19 +521,19 @@ De formule voor het berekenen van de cacheverhouding is:
 
 * (Het totale aantal verzoeken **minus** het aantal verzoeken om publicatie) **gedeeld** door het totale aantal verzoeken.
 
-Bijvoorbeeld, als het totale aantal verzoeken 129491 is en het aantal verzoeken door de Publish instantie wordt gediend 58959 is de geheim voorgeheugenverhouding: **(129491 - 58959)/129491= 54,5%**.
+Bijvoorbeeld, als het totale aantal verzoeken 129491 is en het aantal verzoeken door de Publish instantie wordt gediend 58959 is de geheim voorgeheugenverhouding: **(129491 - 58959)/129491 = 54,5%**.
 
 Als u geen één aan één uitgever/verzender het telegraferen hebt, zult u verzoeken van alle verzenders en uitgevers samen moeten toevoegen om een nauwkeurige meting te krijgen. Zie ook [Aanbevolen Inzet](/help/sites-deploying/recommended-deploys.md).
 
 >[!NOTE]
 >
->Voor de beste prestaties raadt Adobe een cacheverhouding van 90% tot 95% aan.
+>Voor de beste prestaties raadt Adobe een cacheverhouding aan van 90% tot 95%.
 
 #### Consistente paginacodering gebruiken {#using-consistent-page-encoding}
 
 Met Dispatcher versie 4.1.11 kunt u responsheaders in cache plaatsen. Als u geen antwoordheaders in de cache plaatst bij Dispatcher, kunnen er problemen optreden als u pagina-coderingsinformatie opslaat in de koptekst. Als Dispatcher dan een pagina uit de cache bedient, wordt de standaardcodering van de webserver gebruikt voor de pagina. Dit probleem kan op twee manieren worden voorkomen:
 
-* Als u slechts één codering gebruikt, moet u ervoor zorgen dat de codering die op de webserver wordt gebruikt, gelijk is aan de standaardcodering van de AEM-website.
+* Als u slechts één codering gebruikt, moet u ervoor zorgen dat de codering die op de webserver wordt gebruikt, gelijk is aan de standaardcodering van de AEM website.
 * Gebruik een `<META>` tag in de HTML- `head` sectie om de codering in te stellen, zoals in het volgende voorbeeld:
 
 ```xml
@@ -588,7 +593,7 @@ U kunt bijvoorbeeld de titel van de pagina myPage.html opslaan in het bestand my
 
 >[!NOTE]
 >
->Het afbeeldingsbestand bestaat niet noodzakelijkerwijs fysiek in de AEM-instantie. U kunt een script gebruiken waarmee het afbeeldingsbestand dynamisch wordt gemaakt. Dispatcher slaat het bestand vervolgens op de webserver op.
+>Het afbeeldingsbestand bestaat niet noodzakelijkerwijs fysiek op de AEM. U kunt een script gebruiken waarmee het afbeeldingsbestand dynamisch wordt gemaakt. Dispatcher slaat het bestand vervolgens op de webserver op.
 
 #### Beeldbestanden die voor navigatie worden gebruikt ongeldig maken {#invalidating-image-files-used-for-navigation}
 
@@ -617,6 +622,7 @@ Dispatcher kan geen gepersonaliseerde gegevens in het voorgeheugen onderbrengen,
 >
 >* Gebruik iFrames om de pagina op te splitsen in één onderdeel dat voor alle gebruikers hetzelfde is en één onderdeel dat voor alle pagina&#39;s van de gebruiker hetzelfde is. Vervolgens kunt u beide onderdelen in cache plaatsen.
 >* gebruik client-side JavaScript om gepersonaliseerde informatie weer te geven. U moet er echter voor zorgen dat de pagina nog steeds correct wordt weergegeven als een gebruiker JavaScript uitschakelt.
+
 >
 
 
@@ -632,7 +638,7 @@ Er zijn twee manieren waarop een browser het type bestand kan bepalen:
 1. Door de uitbreiding (bijvoorbeeld .html, .gif, .jpg, enz.)
 1. Door het MIME-type dat de server met het bestand verzendt.
 
-Voor de meeste bestanden wordt het MIME-type geïmpliceerd in de bestandsextensie. d.w.z.:
+Voor de meeste bestanden wordt het MIME-type geïmpliceerd in de bestandsextensie. i.e.:
 
 1. Door de uitbreiding (bijvoorbeeld .html, .gif, .jpg, enz.)
 1. Door het MIME-type dat de server met het bestand verzendt.
@@ -746,7 +752,7 @@ De parameter van de reservevertraging wordt verstrekt om de mate te beperken tot
 
 * Als u een back-up gelijktijdig uitvoert met een normale toepassingsbelasting, heeft dit een negatieve invloed op de doorvoer van de normale laadbewerking.
 * De impact kan gering zijn — slechts 5% — of zeer significant zijn — waardoor de productie met maar liefst 75% afneemt, en dit hangt waarschijnlijk meer af van de toepassing dan wat dan ook.
-* Back-up is geen zware belasting voor de CPU, en dus zouden CPU-intensieve productiewerklasten minder worden beïnvloed door back-up dan I/O-intensieve werklasten.
+* Back-up is geen zware belasting voor de CPU en dus zouden CPU-intensieve productiewerklasten minder worden beïnvloed door back-up dan I/O-intensieve werklasten.
 
 ![chlimage_1-83](assets/chlimage_1-83.png)
 
