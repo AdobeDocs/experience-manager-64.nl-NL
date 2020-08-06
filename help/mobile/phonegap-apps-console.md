@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-In het ontwikkelingsproces voor mobiele toepassingen van AEM wordt erkend dat gebruikers met verschillende expertise bijdragen aan de ontwikkeling van mobiele toepassingen. De volgende procesafbeelding illustreert de algemene volgorde waarin inhoudsauteurs en toepassingsontwikkelaars taken uitvoeren.
+In het AEM ontwikkelingsproces voor mobiele toepassingen wordt erkend dat gebruikers met verschillende expertise bijdragen aan de ontwikkeling van mobiele toepassingen. De volgende procesafbeelding illustreert de algemene volgorde waarin inhoudsauteurs en toepassingsontwikkelaars taken uitvoeren.
 
 ![chlimage_1-10](assets/chlimage_1-10.gif)
 
@@ -75,12 +75,12 @@ Mobiele toepassingen zijn gebaseerd op een blauwdruk die een paginastructuur en 
 * **Omschrijving:** Een beschrijving van de aanvraag.
 * **Server-URL:** De URL die OTA-inhoud (Over-the-Air) biedt, wordt bijgewerkt naar de toepassing. De standaardwaarde is de URL van de publicatieserver van de instantie die wordt gebruikt om een toepassing te maken (deze is afkomstig van de externalizer-service). Opmerking: dit moet een publicatieserverinstantie zijn in plaats van een auteur, die verificatie vereist.
 
-U kunt ook een afbeeldingsbestand opgeven dat u als toepassingsminiatuur wilt gebruiken, de PhoneGap Build-configuratie selecteren die u wilt gebruiken en de analytische configuratie voor de Mobile App selecteren die u wilt gebruiken. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
+U kunt ook een afbeeldingsbestand opgeven dat u als miniatuur van de toepassing wilt gebruiken, de configuratie van de PhoneGap Build selecteren en de analytische configuratie voor de mobiele app selecteren die u wilt gebruiken. Deze afbeelding wordt alleen gebruikt als miniatuur voor uw mobiele toepassing in de console voor mobiele apps in Experience Manager.
 
-Er zijn extra (en optionele) tabbladen voor het samenstellen van de cloudservice en het integreren van de insteekmodule Adobe Mobile Services SDK in uw app.
+Er zijn extra (en optionele) tabbladen voor het samenstellen van cloudservice en het integreren van de Adobe Mobile Services SDK-plug-in in uw app.
 
 * Opbouwen: Klik hier op Configuraties beheren en stel de build.phonegap.com-service in. Vervolgens kunt u in de vervolgkeuzelijst de nieuwe PhoneGap-service voor de build-cloud selecteren.
-* Analytics: Klik op Configuraties beheren en stel de [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) -cloudservice in. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
+* Analyse: Klik op Configuraties beheren en stel de [Adobe Mobile Services SDK](https://docs.adobe.com/content/help/en/mobile-services/using/manage-app-settings-ug/configuring-app/download-sdk.html) -cloudservice in. Vervolgens kunt u in het keuzemenu de nieuwe mobiele service selecteren die u wilt integreren in uw mobiele app.
 
 >[!NOTE]
 >
@@ -94,11 +94,11 @@ In de volgende procedure wordt de Touch UI gebruikt om een mobiele toepassing te
    ![](do-not-localize/chlimage_1-7.png)
 
 1. (Optioneel) Geef op het tabblad Geavanceerd een beschrijving voor de toepassing op en wijzig de URL van de server indien nodig.
-1. (Optioneel) Als u PhoneGap Build gebruikt om de toepassing te compileren, selecteert u op het tabblad Build de configuratie die u wilt gebruiken.
+1. (Optioneel) Als u de toepassing compileert met PhoneGap Build, selecteert u op het tabblad Build de configuratie die u wilt gebruiken.
 
    Klik op Configuraties beheren om een PhoneGap-build-configuratie te maken.
 
-1. (Optioneel) Als u SiteCatalyst gebruikt om de toepassingsactiviteiten te volgen, selecteert u op het tabblad Analytics de configuratie die u wilt gebruiken.
+1. (Optioneel) Als u SiteCatalyst gebruikt om de toepassingsactiviteit bij te houden, selecteert u op het tabblad Analyse de configuratie die u wilt gebruiken.
 
    Klik op Configuraties beheren als u een mobiele toepassingsconfiguratie wilt maken.
 
@@ -135,7 +135,7 @@ Nadat u een mobiele toepassing hebt gemaakt, kunt u de eigenschappen wijzigen.
 
    ![](do-not-localize/chlimage_1-12.png)
 
-1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Build en Analytics en klik of tik op het pictogram Done.
+1. Configureer de eigenschappen op de tabbladen Standaard, Geavanceerd, Samenstellen en Analyse en klik of tik op het pictogram Gereed.
 
    ![](do-not-localize/chlimage_1-13.png)
 
@@ -171,14 +171,14 @@ Voer de volgende procedure uit op de instantie waar u het cachegeheugen wilt bij
 
 ### App-sjablonen gebruiken {#using-app-templates}
 
-Deze functie is beschikbaar in Apps 6.1 Feature Pack 2 en biedt een eenvoudige manier om bestaande app-sjablonen te gebruiken voor het maken van nieuwe apps in AEM.
+Deze functie is beschikbaar in Apps 6.1 Feature Pack 2 en biedt een eenvoudige manier om bestaande app-sjablonen te gebruiken voor het maken van nieuwe apps binnen AEM.
 
 Wat is een toepassingssjabloon? Beschouw het als een verzameling paginasjablonen en componenten die een basislijn of basis van een app vormen.
 Wanneer u een nieuwe app maakt op basis van de sjabloon van een andere app, krijgt u een app met een beginpunt dat representatief is voor de app waarin deze is gemaakt.
 
 U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingssjabloon) hebben om van deze functie gebruik te kunnen maken.
 
-Het nieuwste AEM Apps 6.1 voorbeeldenpakket bevat een bijgewerkte versie van de Geometrixx-app met een toepassingssjabloon. U kunt ook de StarterKit installeren die ook een sjabloon biedt.
+Het meest recente AEM Apps 6.1 voorbeeldenpakket bevat een bijgewerkte versie van de Geometrixx-app met een toepassingssjabloon. U kunt ook de StarterKit installeren die ook een sjabloon biedt.
 
 Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 
@@ -195,7 +195,7 @@ Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 1. Klik op Next.
 1. Geef een app-id en -titel op, maar u wilt mogelijk ook een naam en een beschrijving opnemen.
 
-   1. Bovendien kunt u een PNG-bestand (ondersteunde PhoneGap-pictogramindeling) opgeven als pictogram door in AEM-elementen te bladeren.
+   1. Bovendien kunt u een PNG-bestand (ondersteunde PhoneGap-pictogramindeling) opgeven als pictogram door AEM elementen te bladeren.
    1. U kunt al deze velden bewerken nadat de app is gemaakt in de tegel App beheren. Met uitzondering van de toepassings-id kunt u deze niet wijzigen nadat de toepassings-id is ingesteld.
 
 ![chlimage_1-150](assets/chlimage_1-150.png)
@@ -209,15 +209,15 @@ Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 
 >[!NOTE]
 >
->Als u het referentietoepassingspakket Geometrixx Buiten van AEM verwijdert en een toepassing hebt gemaakt op basis van de sjabloon, is die app niet langer functioneel. De toepassing Geometrixx Buiten kan worden verwijderd, maar de toepassingssjabloon moet blijven staan als deze wordt gebruikt door andere mobiele toepassingen.
+>Als u de Geometrixx Outdoors-referentie-app verwijdert van AEM en een app hebt gemaakt op basis van de sjabloon, werkt die app niet meer. De app Geometrixx Outdoors kan worden verwijderd, maar de toepassingssjabloon moet blijven staan als deze wordt gebruikt door andere mobiele toepassingen.
 
-## De voorbeeldtoepassing Geometrixx buitenshuis verkennen {#exploring-the-sample-geometrixx-outdoors-app}
+## De voorbeeldtoepassing Geometrixx Outdoors verkennen {#exploring-the-sample-geometrixx-outdoors-app}
 
-Geometrixx Outdoor App is een voorbeeld van een PhoneGap-toepassing die de functies van de standaardblauwdruk van de PhoneGap-toepassing en de mobiele voorbeeldcomponenten demonstreert.
+Geometrixx Outdoors App is een voorbeeld van een PhoneGap-toepassing die de functies van de standaardblauwdruk van de PhoneGap-toepassing en de mobiele voorbeeldcomponenten demonstreert.
 
-Als u de toepassing wilt openen, klikt u in de track op Mobiele toepassingen en selecteert u vervolgens Geometrixx Outdoor App.
+Als u de toepassing wilt openen, klikt u in de track op Mobiele toepassingen en selecteert u vervolgens Geometrixx Outdoors App.
 
-### Algemene paginafuncties - Geometrixx mobiele app {#common-page-features-geometrixx-mobile-app}
+### Functies voor algemene pagina&#39;s - mobiele Geometrixx-app {#common-page-features-geometrixx-mobile-app}
 
 Elke pagina van de mobiele app bevat de volgende functies:
 
@@ -238,7 +238,7 @@ De inhoud van de startpagina bestaat uit de volgende navigatiegereedschappen:
 * Een component Menu List die koppelingen biedt naar de onderliggende pagina&#39;s Gear, Reviews, News en About US.
 * Een Veeggebaar waarmee de onderliggende pagina&#39;s worden weergegeven.
 
-### De tandwielpagina - de mobiele toepassing Geometrixx {#the-gear-page-geometrixx-mobile-app}
+### De tandwielpagina - de mobiele toepassing van Geometrixx {#the-gear-page-geometrixx-mobile-app}
 
 De pagina Gear biedt gebruikers toegang tot productpagina&#39;s. Een component van de menulijst verleent toegang tot de kindpagina&#39;s van de pagina van het Gear. De onderliggende pagina&#39;s zijn productcategorieën die de website bevat.
 
@@ -249,7 +249,7 @@ De pagina Gear biedt gebruikers toegang tot productpagina&#39;s. Een component v
 
 Elke categoriepagina gebruikt dezelfde inhoudsstructuur als de pagina Verwerk. De carrousel biedt toegang tot onderliggende pagina&#39;s die subcategorieën van producten zijn. De subcategoriepagina&#39;s bevatten productaanbiedingen met koppelingen naar productpagina&#39;s.
 
-### De productpagina - de mobiele toepassing Geometrixx {#the-products-page-geometrixx-mobile-app}
+### De productpagina - de mobiele toepassing van Geometrixx {#the-products-page-geometrixx-mobile-app}
 
 Op de pagina Producten en de bijbehorende hiërarchie van onderliggende pagina&#39;s wordt een classificatiesysteem voor productpagina&#39;s geïmplementeerd. De laagste pagina&#39;s in elke vertakking van de hiërarchie zijn een productpagina die een ng component van het Product bevat.
 
@@ -261,13 +261,13 @@ Bevat een knop Terug. Met het alineasysteem kunt u componenten toevoegen.
 
 Als u de toepassing gebruikt, is de pagina Revisies beschikbaar via de carrousel op de pagina Engels.
 
-### De nieuwspagina - de mobiele app Geometrixx {#the-news-page-geometrixx-mobile-app}
+### De nieuwspagina - Geometrixx Mobile-app {#the-news-page-geometrixx-mobile-app}
 
 Bevat een knop Terug. Met het alineasysteem kunt u componenten toevoegen.
 
 Wanneer u de toepassing gebruikt, is de pagina News beschikbaar via de carrousel op de Engelse pagina.
 
-### De pagina Over ons - Geometrixx mobiele app {#the-about-us-page-geometrixx-mobile-app}
+### De pagina Over ons - Geometrixx Mobile App {#the-about-us-page-geometrixx-mobile-app}
 
 De pagina Over ons bevat een aantal twee kolomrijcomponenten. Elke kolom bevat een component Image of Text. De componenten zijn bewerkbaar en in het alineasysteem kunt u componenten toevoegen.
 
