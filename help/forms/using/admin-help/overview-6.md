@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e107abb-861f-4063-b600-c87e34639019
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
@@ -19,13 +22,13 @@ source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
 
 U kunt SSL-referenties (Secure Sockets Layer) maken en SSL op de toepassingsserver configureren om de communicatie met uw toepassingsserver te verbeteren.
 
-Voor Rights Management is als beveiligingsproduct de configuratie van SSL vereist. Wanneer het vormen van SSL certificaten, zorg ervoor dat u slechts sleutels RSA gebruikt. SSL-certificaten met DSA-sleutels worden niet ondersteund.
+Als beveiligingsproduct vereist Rights Management de configuratie van SSL. Wanneer het vormen van SSL certificaten, zorg ervoor dat u slechts sleutels RSA gebruikt. SSL-certificaten met DSA-sleutels worden niet ondersteund.
 
 De verstrekte informatie is van toepassing op kant-en-klare, automatische en handmatige installaties. Het biedt een voorbeeld van een methode voor het vormen van SSL aan. U kunt andere methodes ook gebruiken die voor uw netwerk of organisatie geschikter zijn.
 
 >[!NOTE]
 >
->Het wordt aanbevolen de installatie, configuratie en implementatie van uw AEM-formuliermodules te voltooien en ervoor te zorgen dat de producten correct worden uitgevoerd voordat u SSL op de toepassingsserver configureert.
+>Het wordt aanbevolen dat u de installatie, configuratie en implementatie van uw AEM formuliermodules voltooit en ervoor zorgt dat de producten correct worden uitgevoerd voordat u SSL op de toepassingsserver configureert.
 
 >[!NOTE]
 >
