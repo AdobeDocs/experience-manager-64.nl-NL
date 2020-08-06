@@ -34,7 +34,7 @@ Java API Quick Start (SOAP) is beschikbaar voor componenten en services.
 
 [Snel starten (SOAP-modus): Componenten verwijderen met de Java API](components-services-java-api-quick.md#quick-start-soap-mode-removing-components-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -42,7 +42,7 @@ De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms ste
 
 >[!NOTE]
 >
->De snelle die begin in Programmering met AEM- vormen wordt gevestigd zijn gebaseerd op de server van Vormen die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u specifieke paden voor vensters door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de server van Forms die op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u specifieke paden voor vensters door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
