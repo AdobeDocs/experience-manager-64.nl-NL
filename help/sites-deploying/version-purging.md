@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Versie leegmaken{#version-purging}
 
-In een standaardinstallatie maakt AEM een nieuwe versie van een pagina of knooppunt wanneer u een pagina activeert nadat u de inhoud hebt bijgewerkt.
+In een standaardinstallatie AEM maakt een nieuwe versie van een pagina of knooppunt wanneer u een pagina activeert nadat u de inhoud hebt bijgewerkt.
 
 >[!NOTE]
 >
@@ -100,7 +100,7 @@ De volgende opties zijn beschikbaar:
 
 >[!NOTE]
 >
->Het wordt niet aanbevolen een groot aantal versies in de opslagplaats te bewaren. Bij het configureren van de verwijderbewerking van de versie dient u dus niet te veel versies uit te sluiten van de opschoning, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Neem contact op met de ondersteuning van Adobe om alternatieve manieren te vinden voor het optimaliseren van de grootte van de opslagplaats als u een groot aantal versies nodig hebt.
+>Het wordt niet aanbevolen een groot aantal versies in de opslagplaats te bewaren. Bij het configureren van de verwijderbewerking van de versie dient u dus niet te veel versies uit te sluiten van de opschoning, anders wordt de grootte van de opslagplaats niet op de juiste wijze geoptimaliseerd. Als u een groot aantal versies bewaart vanwege een zakelijke behoefte, neemt u contact op met de ondersteuning van Adobe om te zoeken naar andere manieren om de grootte van de opslagplaats te optimaliseren.
 
 ### Bewaaropties combineren {#combining-retention-options}
 
