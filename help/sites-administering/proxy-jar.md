@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ff0b1e93-2fd2-4dc1-898f-4ba4db1b3d98
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1173'
+ht-degree: 0%
 
 ---
 
@@ -31,7 +34,7 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 * SMTP voor e-mailberichten
 * LDAP voor gebruikersbeheer
 
-U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een AEM-pagina aanvraagt.
+U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een AEM pagina aanvraagt.
 
 ## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
 
@@ -147,7 +150,7 @@ Als AEM wordt uitgevoerd op localhost:4303, start u de proxyserver als volgt:
 java -jar proxy.jar localhost 4303 4444 -logfile test.log
 ```
 
-U kunt tot de server ( ) zonder de volmachtsserver toegang hebben, maar als u het via toegang hebt, zal de volmachtsserver de mededeling registreren. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk vervolgens naar het logbestand.
+U kunt tot de server ( ) zonder de volmachtsserver toegang hebben, maar als u het via toegang hebt, zal de volmachtsserver de mededeling registreren. Open een browser en open een pagina die met de bovenstaande sjabloon is gemaakt. Kijk daarna naar het logbestand.
 
 >[!NOTE]
 >
@@ -180,7 +183,7 @@ C-0-#000369 -> [Connection: Keep-Alive ]
 
 De proxyserver is een goed hulpmiddel om te controleren of cookies correct zijn ingesteld of niet. Hier zien we het volgende:
 
-* Cq3session-cookie gegenereerd door AEM
+* cq3session, cookie gegenereerd door AEM
 * het schakelaar koekje van de showwijze dat door CFC wordt geproduceerd
 * een cookie met de naam JSESSIONID; dit wordt automatisch gemaakt door JSP als dit niet expliciet wordt uitgeschakeld met &lt;%@ page session=&quot;false&quot; %>:
 
