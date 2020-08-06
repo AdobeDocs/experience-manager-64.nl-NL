@@ -20,7 +20,7 @@ ht-degree: 0%
 
 ![](do-not-localize/data-integeration.png)
 
-Dankzij de gegevensintegratie van AEM Forms kunt u verschillende back-endgegevensbronnen gebruiken om een formuliergegevensmodel te maken dat u als schema kunt gebruiken in verschillende adaptieve formulieren en interactieve communicatieworkflows. Hiervoor moeten gegevensbronnen worden geconfigureerd en een formuliergegevensmodel worden gemaakt op basis van gegevensmodelobjecten en -services die beschikbaar zijn in gegevensbronnen. Raadpleeg de volgende secties voor meer informatie:
+Met AEM Forms-gegevensintegratie kunt u verschillende backendgegevensbronnen gebruiken om een formuliergegevensmodel te maken dat u als schema kunt gebruiken in verschillende adaptieve formulieren en interactieve communicatieworkflows. Hiervoor moeten gegevensbronnen worden geconfigureerd en een formuliergegevensmodel worden gemaakt op basis van gegevensmodelobjecten en -services die beschikbaar zijn in gegevensbronnen. Raadpleeg de volgende secties voor meer informatie:
 
 * [AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md)
 * [Gegevensbronnen configureren](/help/forms/using/configure-data-sources.md)
@@ -90,7 +90,7 @@ Met de formuliergegevensmodeleditor kunt u voorbeeldgegevens voor gegevensmodelo
 
 Een voorvertoning weergeven van een interactieve communicatie met voorbeeldgegevens van het formuliergegevensmodel:
 
-1. Navigeer naar de AEM-auteurinstantie. **[!UICONTROL Forms > Forms & Documents]**
+1. Navigeer naar AEM auteurinstantie. **[!UICONTROL Forms > Forms & Documents]**
 1. Selecteer een interactieve communicatie en tik op **[!UICONTROL Preview]** de werkbalk om een voorvertoning van de interactieve communicatie te selecteren **[!UICONTROL Web Channel]****[!UICONTROL Print Channel]** of **[!UICONTROL Both Channels]** weer te geven.
 1. Controleer of u [*Kanaal*] voorvertonen hebt geselecteerd en tik op de knop **[!UICONTROL Test Data of Form Data Model]** **[!UICONTROL Preview]**.
 
@@ -102,7 +102,7 @@ Als u een voorbeeld van een adaptief formulier met voorbeeldgegevens wilt bekijk
 
 ## Vooraf invullen met service voor formuliergegevensmodellen {#prefill}
 
-AEM Forms bieden de service Prefill-service voor het out-of-the-box formuliergegevensmodel die u kunt inschakelen voor adaptieve formulieren en interactieve communicatie op basis van het formuliergegevensmodel. De Prefill-service zoekt naar gegevensbronnen voor gegevensmodelobjecten in het adaptieve formulier en de interactieve communicatie en vult daarom gegevens aan tijdens het weergeven van het formulier of de communicatie.
+AEM Forms biedt een vooraf ingevulde service voor het out-of-the-box formuliergegevensmodel die u kunt inschakelen voor adaptieve formulieren en interactieve communicatie op basis van het formuliergegevensmodel. De Prefill-service zoekt naar gegevensbronnen voor gegevensmodelobjecten in het adaptieve formulier en de interactieve communicatie en vult daarom gegevens aan tijdens het weergeven van het formulier of de communicatie.
 
 Als u de voorkeursservice Formuliergegevensmodel wilt inschakelen voor een adaptief formulier, opent u de eigenschappen van de container van het adaptieve formulier en selecteert u deze in de **[!UICONTROL Form Data Model Prefill service]** **[!UICONTROL Prefill Service]** vervolgkeuzelijst in de basisaccordeon. Sla vervolgens de eigenschappen op.
 
@@ -116,7 +116,7 @@ Dialoogvenster Eigenschappen bewerken voor interactieve communicatie
 
 ## Ingediende adaptieve formuliergegevens naar gegevensbronnen schrijven {#write-af}
 
-Wanneer een gebruiker een formulier verzendt dat is gebaseerd op een formuliergegevensmodel, kunt u het formulier zo configureren dat de verzonden gegevens voor een gegevensmodelobject naar de bijbehorende gegevensbronnen worden geschreven. Met het oog op dit gebruik bieden AEM Forms de verzendactie [van het](/help/forms/using/configuring-submit-actions.md)formuliergegevensmodel. Deze actie is alleen beschikbaar buiten het vak voor adaptieve formulieren op basis van een formuliergegevensmodel. Het schrijft voorgelegde gegevens voor een voorwerp van het gegevensmodel in zijn gegevensbron.
+Wanneer een gebruiker een formulier verzendt dat is gebaseerd op een formuliergegevensmodel, kunt u het formulier zo configureren dat de verzonden gegevens voor een gegevensmodelobject naar de bijbehorende gegevensbronnen worden geschreven. Met het oog hierop biedt AEM Forms een [formuliergegevensmodel voor het verzenden van een actie](/help/forms/using/configuring-submit-actions.md). Deze actie is alleen beschikbaar buiten het vak voor adaptieve formulieren op basis van een formuliergegevensmodel. Het schrijft voorgelegde gegevens voor een voorwerp van het gegevensmodel in zijn gegevensbron.
 
 Als u de handeling Verzenden van het formuliergegevensmodel wilt configureren, opent u de eigenschappen van de container voor adaptieve formulieren en selecteert u een optie in de vervolgkeuzelijst Handeling verzenden onder de verzendingaccordion. **[!UICONTROL Submit using Form Data Model]** Blader vervolgens naar een gegevensmodelobject en selecteer dit in de **[!UICONTROL Name of the data model object to submit]** vervolgkeuzelijst. Sla de eigenschappen op.
 
