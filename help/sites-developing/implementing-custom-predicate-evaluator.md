@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
 translation-type: tm+mt
 source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+workflow-type: tm+mt
+source-wordcount: '795'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Deze sectie beschrijft hoe te om de Bouwer [van de](/help/sites-developing/query
 
 ## Overzicht {#overview}
 
-De [zoekfunctie](/help/sites-developing/querybuilder-api.md) biedt een eenvoudige manier om de opslagplaats voor inhoud op te vragen. AEM wordt geleverd met een set voorspellende beoordelaars die u helpen met uw gegevens om te gaan.
+De [zoekfunctie](/help/sites-developing/querybuilder-api.md) biedt een eenvoudige manier om de opslagplaats voor inhoud op te vragen. AEM wordt geleverd met een set evaluatoren die u helpen met uw gegevens om te gaan.
 
 Nochtans zou u uw vragen kunnen willen vereenvoudigen door een douane uit te voeren predikt beoordelaar die wat ingewikkeldheid verbergt en een betere semantiek verzekert.
 
@@ -103,7 +106,7 @@ Het groeperen van replicatiemagegevens predikt met een douane predikaat evaluato
 
 >[!NOTE]
 >
->De opstelling van nieuwe projecten AEM die maven gebruiken wordt gedocumenteerd door [hoe te AEM Projecten bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
+>De opstelling van nieuwe AEM die maven gebruiken wordt gedocumenteerd door [hoe te AEM Projecten bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
 Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. Het `PredicateEvaluator` is een onderdeel van het `cq-search` artefact, dus het moet worden toegevoegd aan het Maven-pomabestand.
 
