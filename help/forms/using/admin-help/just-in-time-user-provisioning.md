@@ -11,27 +11,30 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '599'
+ht-degree: 0%
 
 ---
 
 
 # Just-in-Time gebruikersprovisioning {#just-in-time-user-provisioning}
 
-AEM-formulieren bieden ondersteuning voor just-in-time provisioning van gebruikers die nog niet bestaan in Gebruikersbeheer. Met just-in-time levering, worden de gebruikers automatisch toegevoegd aan het Beheer van de Gebruiker nadat hun geloofsbrieven met succes voor authentiek worden verklaard. Daarnaast worden relevante rollen en groepen dynamisch toegewezen aan de nieuwe gebruiker.
+AEM formulieren ondersteunen de just-in-time levering van gebruikers die nog niet in Gebruikersbeheer bestaan. Met just-in-time levering, worden de gebruikers automatisch toegevoegd aan het Beheer van de Gebruiker nadat hun geloofsbrieven met succes voor authentiek worden verklaard. Daarnaast worden relevante rollen en groepen dynamisch toegewezen aan de nieuwe gebruiker.
 
 ## De behoefte aan just-in-time gebruikerslevering {#need-for-just-in-time-user-provisioning}
 
 Zo werkt traditionele verificatie:
 
-1. Wanneer een gebruiker zich aanmeldt bij AEM-formulieren, geeft Gebruikersbeheer de gebruikersgegevens opeenvolgend door aan alle beschikbare verificatieproviders. (De login geloofsbrieven omvatten een gebruikersbenaming/wachtwoordcombinatie, kaartje Kerberos, handtekening PKCS7, etc.)
+1. Wanneer een gebruiker zich aanmeldt bij AEM formulieren, geeft Gebruikersbeheer de gebruikersgegevens opeenvolgend door aan alle beschikbare verificatieproviders. (De login geloofsbrieven omvatten een gebruikersbenaming/wachtwoordcombinatie, kaartje Kerberos, handtekening PKCS7, etc.)
 1. De verificatieprovider valideert de referenties.
 1. De authentificatieleverancier controleert dan of de gebruiker in het gegevensbestand van het Beheer van de Gebruiker bestaat. De volgende resultaten zijn mogelijk:
 
-   **** Bestaat: Als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatie succes terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
+   **Bestaat:** Als de gebruiker huidig en ontgrendeld is, keert het Beheer van de Gebruiker authentificatie succes terug. Als de gebruiker echter niet actief is of is vergrendeld, retourneert het Gebruikersbeheer een verificatiefout.
 
-   **** Bestaat niet: Gebruikersbeheer retourneert een verificatiefout.
+   **Bestaat niet:** Gebruikersbeheer retourneert een verificatiefout.
 
-   **** Ongeldig: Gebruikersbeheer retourneert een verificatiefout.
+   **Ongeldig:** Gebruikersbeheer retourneert een verificatiefout.
 
 1. Het resultaat dat door de authentificatieleverancier is teruggekeerd wordt geëvalueerd. Als de verificatieprovider het succes van de verificatie heeft geretourneerd, mag de gebruiker zich aanmelden. Anders, controleert het Beheer van de Gebruiker met de volgende authentificatieleverancier (stappen 2-3).
 1. Verificatiefout wordt geretourneerd als geen enkele verificatieprovider de gebruikersgegevens valideert.
@@ -42,7 +45,7 @@ Wanneer just-in-time levering wordt uitgevoerd, wordt een nieuwe gebruiker dynam
 
 ### API&#39;s voor just-in-time provisioning {#apis-for-just-in-time-provisioning}
 
-AEM-formulieren bieden de volgende API&#39;s voor just-in-time provisioning:
+AEM formulieren bevatten de volgende API&#39;s voor instelbare provisioning:
 
 ```as3
 package com.adobe.idp.um.spi.authentication  ; 
@@ -98,7 +101,7 @@ public Boolean assign(User user);
 
 ## Achter de schermen {#behind-the-scenes}
 
-Stel dat een gebruiker zich probeert aan te melden bij AEM-formulieren en dat een verificatieprovider zijn gebruikersgegevens accepteert. Als de gebruiker nog niet bestaat in de gebruikersbeheerdatabase, mislukt de identiteitscontrole voor de gebruiker. AEM-formulieren voeren nu de volgende handelingen uit:
+Stel dat een gebruiker zich probeert aan te melden bij AEM formulieren en dat een verificatieprovider zijn gebruikersgegevens accepteert. Als de gebruiker nog niet bestaat in de gebruikersbeheerdatabase, mislukt de identiteitscontrole voor de gebruiker. AEM formulieren voeren nu de volgende handelingen uit:
 
 1. Maak een `UserProvisioningBO` object met de verificatiegegevens en plaats dit in een referentie-overzicht.
 1. Gebaseerd op domeininformatie die door is teruggekeerd `UserProvisioningBO`, haal en haal geregistreerd `IdentityCreator` en `AssignmentProvider` voor het domein aan.
