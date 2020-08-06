@@ -1,8 +1,8 @@
 ---
 title: Inleiding tot Process Reporting
 seo-title: Inleiding tot Process Reporting
-description: Inleiding en belangrijkste mogelijkheden van AEM-formulieren bij JEE Process Reporting
-seo-description: Inleiding en belangrijkste mogelijkheden van AEM-formulieren bij JEE Process Reporting
+description: Inleiding en belangrijkste mogelijkheden van AEM Forms bij JEE Process Reporting
+seo-description: Inleiding en belangrijkste mogelijkheden van AEM Forms bij JEE Process Reporting
 uuid: a33ea729-7e1f-4093-bdb6-b8dc3afd59a7
 content-type: reference
 topic-tags: process-reporting
@@ -10,6 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '309'
+ht-degree: 0%
 
 ---
 
@@ -18,17 +21,17 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ![procesrapportage](assets/process-reporting.png)
 
-De Rapportering van het proces is een browser-gebaseerd hulpmiddel dat u gebruikt om rapporten over de processen en de taken van Vormen van AEM tot stand te brengen en te bekijken.
+De Rapportering van het proces is een browser-gebaseerd hulpmiddel dat u gebruikt om rapporten over de processen en de taken van AEM Forms tot stand te brengen en te bekijken.
 
 De Rapportering van het proces verstrekt een reeks out-of-the-box rapporten die u toestaan om, informatie over lange lopende processen, procesduur, en werkschemavolume te filtreren te bekijken.
 
 De extra Rapportering van het Proces verstrekt een interface om ad hoc vragen in werking te stellen en de meningen van het douanerapport in het Proces te integreren Meldend gebruikersinterface.
 
-Zie Ondersteunde platforms voor [AEM-formulieren](/help/forms/using/aem-forms-jee-supported-platforms.md)voor een lijst met ondersteunde browsers.
+Zie Ondersteunde Platforms voor [AEM Forms voor een lijst met ondersteunde browsers](/help/forms/using/aem-forms-jee-supported-platforms.md).
 
 Procesrapportage is gebaseerd op modules die:
 
-* Procesgegevens lezen uit AEM Forms Database
+* Procesgegevens uit AEM Forms-database lezen
 * Procesgegevens publiceren naar een ingesloten Process Reporting-opslagplaats
 * Biedt een op een browser gebaseerde gebruikersinterface voor het weergeven van rapporten
 
@@ -58,7 +61,7 @@ U kunt de rapportfilters dan opslaan om op een recentere datum of een tijd te lo
 
 ![bestandsbeheer](assets/file-management.png)
 
-AEM Forms-servers voeren een groot aantal processen parallel uit. Deze processen blijven bij de overgang van de ene naar de andere staat. Door Forms-gegevens regelmatig naar de Process Reporting-opslagplaats te publiceren, blijft bij Process Reporting de overgangsgegevens behouden over de processen die in AEM Forms worden uitgevoerd.
+AEM Forms-servers voeren een groot aantal processen parallel uit. Deze processen blijven bij de overgang van de ene naar de andere staat. Door Forms-gegevens regelmatig naar de Process Reporting repository te publiceren, behoudt Process Reporting de overgangsinformatie over de processen die in AEM Forms worden uitgevoerd.
 
 ### Toegangsbeheer {#access-control-br}
 
