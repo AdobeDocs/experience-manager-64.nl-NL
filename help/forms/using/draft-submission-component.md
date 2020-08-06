@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 219dd379-5bc9-40b0-bdc2-2fb347da29d8
 translation-type: tm+mt
 source-git-commit: 2abf448e0231eb6fcd9295f498a24e81e1ead11a
+workflow-type: tm+mt
+source-wordcount: '791'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ In de component Concepten en verzendingen worden alle formulieren weergegeven di
 
 De component Concepten en verzendingen heeft twee tabbladen: Concepten en verzendingen.
 
-Als u het verzenden van een adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de handeling **** Verzenden in op **[Forms Portal Handeling](/help/forms/using/configuring-submit-actions.md)verzenden.**U kunt ook de optie Formulierportal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
+Als u het verzenden van een adaptief formulier wilt weergeven op het tabblad Verzending, stelt u de handeling **** Verzenden in op **[Forms Portal Handeling](/help/forms/using/configuring-submit-actions.md)verzenden.**U kunt ook de optie Forms Portal verzenden inschakelen. Wanneer een gebruiker het formulier verzendt, wordt het formulier toegevoegd aan het tabblad Verzending.
 
 De conceptfunctionaliteit is uit het vak ingeschakeld. Wanneer een gebruiker op een adaptief formulier op **Opslaan** klikt, wordt het formulier toegevoegd aan het tabblad Concepten.
 
@@ -60,45 +63,45 @@ Voer de volgende stappen uit om een component Concepten en verzendingen toe te v
   <tr>
    <td> </td>
    <td>Weergaveopties</td>
-   <td><p>Hiermee geeft u de tabbladen op die u wilt weergeven. U kunt ervoor kiezen om conceptformulieren, verzonden formulieren of beide weer te geven. </p> <p><strong></strong> Opmerking<em>: Als u voor <strong>weergaveopties</strong>een andere optie dan <strong>Beide</strong>selecteert, wordt de optie <strong>Standaardtabblad</strong> niet gebruikt.</em></p> </td>
+   <td><p>Hiermee geeft u de tabbladen op die u wilt weergeven. U kunt ervoor kiezen om conceptformulieren, verzonden formulieren of beide weer te geven. </p> <p><strong>Opmerking</strong>:<em> Als u voor <strong>weergaveopties</strong>een andere optie dan <strong>Beide</strong>selecteert, wordt de optie <strong>Standaardtabblad</strong> niet gebruikt.</em></p> </td>
   </tr>
   <tr>
    <td> </td>
    <td>Standaardtabblad</td>
-   <td>Hiermee geeft u het tabblad op dat moet worden weergegeven wanneer de pagina voor het portal Formulieren wordt geladen. U kunt kiezen tussen het tabblad <strong>Formulieren</strong> in concept en het tabblad <strong>Formulieren</strong>in verzending.</td>
+   <td>Hiermee geeft u het tabblad op dat moet worden weergegeven wanneer de pagina voor het portal Formulieren wordt geladen. U kunt kiezen tussen het tabblad <strong>Concept van Forms</strong> en het tabblad <strong>Ingediende Forms</strong>.</td>
   </tr>
   <tr>
-   <td>Configuratie van tabblad Conceptformulieren</td>
+   <td>Concept configuratie Forms-tabblad</td>
    <td>Aangepaste titel</td>
-   <td>Hiermee geeft u de titel op van het tabblad <strong>Conceptformulieren</strong> . De standaardwaarde is <strong>Conceptformulieren.</strong></td>
+   <td>Hiermee geeft u de titel op van het tabblad <strong>Concept-Forms</strong> . De standaardwaarde is <strong>Concept Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Lay-outsjabloon</td>
-   <td><p>Hiermee geeft u de indeling op die u wilt gebruiken voor de lijst Conceptformulieren.</p> <p><strong></strong> Opmerking: Gebruik niet de optie Standaard (Vervangen).<br /> </p> </td>
+   <td><p>Hiermee geeft u de lay-out op die moet worden gebruikt voor de lijst Concept Forms.</p> <p><strong>Opmerking:</strong> Gebruik niet de optie Standaard (Vervangen).<br /> </p> </td>
   </tr>
   <tr>
-   <td>Tabconfiguratie verzonden formulieren</td>
+   <td>Ingediende Forms Tab-configuratie</td>
    <td>Aangepaste titel </td>
-   <td>Hiermee geeft u de titel op van het <strong>tabblad </strong>Ingediende formulieren. De standaardwaarde is <strong>Verzendformulieren.</strong></td>
+   <td>Hiermee geeft u de titel op van het <strong>tabblad </strong>Verzonden Forms. De standaardwaarde is <strong>Verzonden Forms.</strong></td>
   </tr>
   <tr>
    <td> </td>
    <td>Lay-outsjabloon</td>
-   <td>Hiermee geeft u de indeling op die u wilt gebruiken voor de<strong> lijst Verzendformulieren </strong>. </td>
+   <td>Hiermee geeft u de indeling op die moet worden gebruikt voor de<strong> lijst Verzendde Forms </strong>. </td>
   </tr>
  </tbody>
 </table>
 
 ## De opslag aanpassen {#customizing-the-storage}
 
-Wanneer u de verzendactie Formulierportaal gebruikt of de optie Gegevens opslaan in formulierportaal in adaptieve vorm inschakelt, worden de formuliergegevens opgeslagen in de AEM-opslagruimte. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens op te slaan in een AEM-opslagplaats. In plaats daarvan moet u de concepten en verzendingscomponent integreren met een beveiligde opslag, zoals een bedrijfsdatabase, om concepten en verzonden formuliergegevens op te slaan.
+Wanneer u de verzendactie Forms Portal gebruikt of de optie voor het opslaan van gegevens in het formulierportaal in een adaptieve vorm inschakelt, worden de formuliergegevens opgeslagen in AEM opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. In plaats daarvan moet u de concepten en verzendingscomponent integreren met een beveiligde opslag, zoals een bedrijfsdatabase, om concepten en verzonden formuliergegevens op te slaan.
 
-Met Forms Portal kunt u gegevens opslaan in een lokale AEM-opslagruimte, een externe AEM-opslagruimte of een database. Met AEM Forms kunt u de implementatie aanpassen van het opslaan van gebruikersgegevens voor concepten en verzendingen. U kunt standaardmethoden negeren om op te geven hoe concepten en verzendgegevens worden opgeslagen bij een door u gekozen opslaglocatie. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
+Met Forms Portal kunt u gegevens opslaan in een lokale AEM, externe AEM opslagplaats of in een database. Met AEM Forms kunt u de implementatie van het opslaan van gebruikersgegevens voor concepten en verzendingen aanpassen. U kunt standaardmethoden negeren om op te geven hoe concepten en verzendgegevens worden opgeslagen bij een door u gekozen opslaglocatie. U kunt de gegevens bijvoorbeeld opslaan in een gegevensopslagruimte die momenteel in uw organisatie is geïmplementeerd.
 
-Forms Portal biedt vanuit de boxservices (API&#39;s) gegevens op in de crx-opslagruimte van lokale en externe AEM Forms-publicatieexemplaren. U kunt de standaardimplementaties, die in het [Vormen van de opslagdiensten voor concepten en voorleggingsartikel worden beschreven, met douaneimplementaties vervangen om standaardfunctionaliteit te vervangen](/help/forms/using/configuring-draft-submission-storage.md) . Voor gedetailleerde informatie over de methodes die in een douaneimplementatie worden vereist om inhoud op een beveiligde plaats op te slaan, zie het [Aanpassen van de Diensten](/help/forms/using/custom-draft-submission-data-services.md) van de Gegevens van het Ontwerp en van de Verzending en de Opslag van de [Douane voor concepten en verzendingscomponent.](/help/forms/using/adding-custom-storage-provider-forms.md)
+Forms Portal biedt vanuit de boxservices (API&#39;s) voor het opslaan van gegevens in de crx-opslagruimte van lokale en externe AEM Forms-publicatie-instanties. U kunt de standaardimplementaties, die in het [Vormen van de opslagdiensten voor concepten en voorleggingsartikel worden beschreven, met douaneimplementaties vervangen om standaardfunctionaliteit te vervangen](/help/forms/using/configuring-draft-submission-storage.md) . Voor gedetailleerde informatie over de methodes die in een douaneimplementatie worden vereist om inhoud op een beveiligde plaats op te slaan, zie het [Aanpassen van de Diensten](/help/forms/using/custom-draft-submission-data-services.md) van de Gegevens van het Ontwerp en van de Verzending en de Opslag van de [Douane voor concepten en verzendingscomponent.](/help/forms/using/adding-custom-storage-provider-forms.md)
 
-De documentatie van de Vormen AEM verstrekt een [Steekproef voor het integreren van concepten &amp; verzendingscomponent met gegevensbestand](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Met de voorbeeldimplementatie kunt u uw eigen aangepaste implementatie ontwikkelen.
+AEM Forms-documentatie biedt een [voorbeeld voor het integreren van concepten en verzendingscomponenten in de database](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/integrate-draft-submission-database.html). Met de voorbeeldimplementatie kunt u uw eigen aangepaste implementatie ontwikkelen.
 
 ## Verwante artikelen
 
