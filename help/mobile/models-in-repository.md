@@ -11,6 +11,9 @@ noindex: true
 redirecttarget: /content/help/en/experience-manager/6-4/mobile/using/administer-mobile-apps
 translation-type: tm+mt
 source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
+workflow-type: tm+mt
+source-wordcount: '1332'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 5fe3d533e51a0536064b22e9549578bb5ba754a4
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Een model bevat een reeks gegevenstypen die de eigenschappen bepalen die uiteindelijk door inhoudsdiensten zullen worden teruggegeven. Een model bepaalt ook de verhoudingen tussen andere modellen om gegevensintegriteit af te dwingen.
 
@@ -62,7 +65,7 @@ Een overlay van */libs/settings/mobileapps/models/formbuilderconfig/datatypes* m
 
 Een bedekking voor het gegevenstype String kan bijvoorbeeld worden toegevoegd om het fieldResourceType te wijzigen in een aangepaste component.
 
-Voor meer informatie bij het Verdelen van Middel zie het Samenvoegen, [Gebruikend het Verschuiven Samenvoegen van het Middel in AEM](/help/sites-developing/sling-resource-merger.md).
+Voor meer informatie bij het Verdelen van Middel zie het Samenvoegen, [Gebruikend het Verspreiden van de Samenvoeging van het Middel in AEM](/help/sites-developing/sling-resource-merger.md).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
 
@@ -105,13 +108,13 @@ In de volgende tabel worden de eigenschappen weergegeven die voor een model zijn
 
 ### Een model bewerken {#editing-a-model}
 
-Als u een model bewerkt, opent u het basisdialoogvenster dat is gekoppeld aan een model en kunt u het bewerken. In het algemeen is de basisstructuur een onderliggend knooppunt van het model, maar kan deze buiten het model worden geplaatst als dat gewenst is door het pad ervan op te geven met de eigenschap &#39;cq:scaffolding&#39;. Dit is nuttig als u dezelfde basisstructuur wilt delen tussen meerdere modellen die verschillende eigenschappen moeten hebben.
+Als u een model bewerkt, opent u het basisdialoogvenster dat is gekoppeld aan een model en kunt u het bewerken. Over het algemeen is de basisstructuur een onderliggend knooppunt van het model, maar kan deze buiten het model worden geplaatst als dat gewenst is door het pad ervan op te geven met de eigenschap &#39;cq:scaffolding&#39;. Dit is nuttig als u dezelfde basisstructuur wilt delen tussen meerdere modellen die verschillende eigenschappen moeten hebben.
 
 Wanneer het basiselement voor het model wordt gevonden, zal de modeleditor alles renderen wat zich onder &#39;jcr:content/cq:dialog/content&#39; bevindt. Momenteel wordt alleen een vaste indeling met maximaal drie kolommen ondersteund door de instelprogramma-engine voor de client-side versie. Rechts van het weergegeven formulierdialoogvenster wordt een lijst weergegeven met alle gegevenstypen die zijn opgegeven in de configuratie van de gegevenstypen. U kunt gegevenstypen bewerken door erop te klikken. De rechterspoorstaaf zal dan op het eigenschappen lusje voor het geselecteerde gegevenstype schakelen. U kunt nieuwe gegevenstypen toevoegen door deze naar het voorvertoningscanvas te slepen. Klik op Opslaan om de wijzigingen door te geven aan de server. Klik op Annuleren om de modeleditor te sluiten.
 
 >[!NOTE]
 >
->Alle modellen zijn Malplaatjes, zodat volgen zij alle regels van het Malplaatje AEM. Dit staat het gebruiken van eigenschappen zoals ** allowedParentsen *allowedChildren* eigenschappen toe. Deze zijn effectief bij het maken van nieuwe entiteiten op basis van een model. De sjabloonregels zorgen ervoor dat entiteiten alleen op bepaalde modellen kunnen worden gebaseerd, afhankelijk van hun hiërarchie.
+>Alle modellen zijn Malplaatjes, zodat volgen zij alle AEM regels van het Malplaatje. Dit staat het gebruiken van eigenschappen zoals ** allowedParentsen *allowedChildren* eigenschappen toe. Deze zijn effectief bij het maken van nieuwe entiteiten op basis van een model. De sjabloonregels zorgen ervoor dat entiteiten alleen op bepaalde modellen kunnen worden gebaseerd, afhankelijk van hun hiërarchie.
 >
 >Zie Een model [maken onder de sectie Ontwerpen voor mobiele apps voor meer informatie over het bewerken van een model in het dashboard](/help/mobile/administer-mobile-apps.md) .
 
