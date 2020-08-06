@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
 translation-type: tm+mt
 source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 2%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in de [koptekst](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende dialoogvenster [Mijn voorkeuren](#my-preferences) kunt u de gebruikersopties wijzigen.
+Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
 
 ## Gebruikersinstellingen {#user-settings}
 
@@ -67,7 +70,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Bureaubladhandelingen voor elementen weergeven**
 
-   Voor deze optie moet de AEM-bureaubladtoepassing worden gebruikt.
+   Voor deze optie moet AEM bureaubladtoepassing worden gebruikt.
 
 * **Annotatiekleur**
 
@@ -78,7 +81,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Relatieve datumpresentatie**
 
-   Om de leesbaarheid te verbeteren, worden data binnen de laatste zeven dagen als relatieve data (bijvoorbeeld drie dagen geleden) en oudere data als exacte data weergegeven (bijvoorbeeld 20 maart 2017).
+   Om de leesbaarheid te verbeteren, worden AEM datums in de laatste zeven dagen weergegeven als relatieve datums (bijvoorbeeld drie dagen geleden) en oudere datums als exacte datums (bijvoorbeeld 20 maart 2017).
 
    Met deze optie bepaalt u hoe datums in het systeem worden weergegeven. De volgende opties zijn beschikbaar:
 
@@ -95,6 +98,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    * [Sneltoetsen voor het bewerken van pagina&#39;s](/help/sites-authoring/page-authoring-keyboard-shortcuts.md)
    * [Sneltoetsen voor consoles](/help/sites-authoring/keyboard-shortcuts.md)
+
    Met deze optie schakelt u sneltoetsen in. Deze worden standaard ingeschakeld, maar kunnen worden uitgeschakeld, bijvoorbeeld als een gebruiker bepaalde toegankelijkheidsvereisten heeft.
 
 * **Klassieke ontwerpervaring gebruiken**
