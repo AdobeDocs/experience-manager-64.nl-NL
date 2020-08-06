@@ -1,8 +1,8 @@
 ---
-title: AEM Forms workspace JSON object description
-seo-title: AEM Forms workspace JSON object description
-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
-seo-description: Conceptual information about the JSON JavaScript objects used in LiveCycle AEM Forms workspace for customization, extension, modification, and reuse.
+title: JSON-objectbeschrijving in de AEM Forms-werkruimte
+seo-title: JSON-objectbeschrijving in de AEM Forms-werkruimte
+description: Conceptuele informatie over de JSON JavaScript-objecten die in de LiveCycle AEM Forms-werkruimte worden gebruikt voor aanpassing, uitbreiding, wijziging en hergebruik.
+seo-description: Conceptuele informatie over de JSON JavaScript-objecten die in de LiveCycle AEM Forms-werkruimte worden gebruikt voor aanpassing, uitbreiding, wijziging en hergebruik.
 uuid: 91c923c8-144a-4453-ba91-6a5193f1c4c4
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '2134'
+ht-degree: 8%
 
 ---
 
 
-# AEM Forms workspace JSON object description {#aem-forms-workspace-json-object-description}
+# JSON-objectbeschrijving in de AEM Forms-werkruimte {#aem-forms-workspace-json-object-description}
 
-JSON objects used in AEM Forms workspace are described below.
+JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder beschreven.
 
 1. Categorie
 
@@ -32,12 +35,12 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>name</td> 
    <td>F</td> 
-   <td>Category name</td> 
+   <td>Categorienaam</td> 
   </tr>
   <tr>
    <td>id</td> 
    <td>F</td> 
-   <td>Category ID<br type="_moz" /> </td> 
+   <td>Categorie-id<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>description<br type="_moz" /> </td> 
@@ -460,10 +463,10 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>processSpecificDesignates<br type="_moz" /> </td> 
    <td>F</td> 
-   <td>Het bevat een array met objecten voor processpecifieke aanwijzen buiten het kantoor. In each process-specific designate object, processName contains the name of the process, isNotDesignated is true if no user is assigned for corresponding process, and userDesignated is null if no user assigned else details of the user assigned for corresponding process.<br type="_moz" /> </td> 
+   <td>Het bevat een array met objecten voor processpecifieke aanwijzen buiten het kantoor. In elk proces-specifiek wijs voorwerp toe, bevat processName de naam van het proces, isNotDesignated is waar als geen gebruiker voor het overeenkomstige proces wordt toegewezen, en userDesignated is ongeldig als geen gebruiker anders details van de gebruiker toewees voor het overeenkomstige proces.<br type="_moz" /> </td> 
   </tr>
   <tr>
-   <td>processes<br type="_moz" /> </td> 
+   <td>processen<br type="_moz" /> </td> 
    <td>T</td> 
    <td>Het bevat een lijst van alle processen die aan de gebruiker beschikbaar zijn.<br type="_moz" /> </td> 
   </tr>
@@ -674,7 +677,7 @@ JSON objects used in AEM Forms workspace are described below.
  </tbody>
 </table>
 
-1. Task Attachment
+1. Taakbijlage
 
    U kunt bijlagen toevoegen aan een taak. Bijlage kan van het type bijlage en nota zijn. Hieronder vindt u de eigenschappen van het bijlageobject.
 
@@ -753,12 +756,12 @@ JSON objects used in AEM Forms workspace are described below.
   <tr>
    <td>formattedDescription<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Beschrijving van opgemaakte bijlage. Wordt gebruikt om speciale tekens weer te geven die aanwezig zijn in de beschrijving van de bijlage in de werkruimte van AEM-formulieren.<br type="_moz" /> </td> 
+   <td>Beschrijving van opgemaakte bijlage. Wordt gebruikt om speciale tekens weer te geven die aanwezig zijn in de beschrijving van de bijlage in de AEM Forms-werkruimte.<br type="_moz" /> </td> 
   </tr>
   <tr>
    <td>formattedFileName<br type="_moz" /> </td> 
    <td>T</td> 
-   <td>Opgemaakte bijlagenaam. Wordt gebruikt om speciale tekens weer te geven die zich in de naam van de bijlage in de werkruimte van AEM-formulieren bevinden. Dit is alleen voor notities.<br type="_moz" /> </td> 
+   <td>Opgemaakte bijlagenaam. Wordt gebruikt om speciale tekens weer te geven die zich in de naam van de bijlage in de AEM Forms-werkruimte bevinden. Dit is alleen voor notities.<br type="_moz" /> </td> 
   </tr>
  </tbody>
 </table>
