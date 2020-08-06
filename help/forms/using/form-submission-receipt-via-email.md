@@ -1,8 +1,8 @@
 ---
 title: Een bevestiging van het verzenden van een formulier verzenden via e-mail
 seo-title: Een bevestiging van het verzenden van een formulier verzenden via e-mail
-description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren waarmee een bevestiging naar een gebruiker wordt verzonden bij het verzenden van het formulier.
-seo-description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren waarmee een bevestiging naar een gebruiker wordt verzonden bij het verzenden van het formulier.
+description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren. Hiermee wordt een bevestiging verzonden naar een gebruiker bij het verzenden van het formulier.
+seo-description: Met AEM Forms kunt u de handeling voor het verzenden van e-mail configureren. Hiermee wordt een bevestiging verzonden naar een gebruiker bij het verzenden van het formulier.
 uuid: 77b3c836-6011-48bd-831c-ebc214218efb
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '586'
+ht-degree: 0%
 
 ---
 
@@ -34,7 +37,7 @@ Met de e-mailactie kan een auteur automatisch e-mail verzenden naar een of meer 
 
 >[!NOTE]
 >
->Als u de actie E-mail wilt gebruiken, moet u de AEM-mailservice configureren zoals wordt beschreven in [De mailservice](/help/sites-administering/notification.md#configuring-the-mail-service)configureren.
+>Om de actie E-mail te gebruiken, moet u de AEM postdienst vormen zoals die in het [Vormen van de postdienst](/help/sites-administering/notification.md#configuring-the-mail-service)wordt beschreven.
 
 ### E-mailactie inschakelen op een adaptief formulier {#enabling-email-action-on-an-adaptive-form}
 
@@ -64,7 +67,7 @@ Met de e-mailactie kan een auteur automatisch e-mail verzenden naar een of meer 
    >
    >Als u de actie **PDF-** e-mail kiest, moet u de optie Bijlagen opnemen selecteren.
 
-1. Klik op **OK** om de wijzigingen op te slaan.
+1. Click **OK** to save the changes.
 
 ### Aangepaste formulierveldnamen gebruiken om e-mailinhoud dynamisch te maken {#using-adaptive-form-field-names-to-dynamically-create-email-content}
 
