@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: adc697e1-4a1c-4985-8690-79ed77736fec
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1814'
+ht-degree: 0%
 
 ---
 
@@ -111,11 +114,11 @@ De standaardfuncties van **Knippen** en **Kopiëren** zijn beschikbaar. Er zijn 
 
 * Plakken als tekst
 
-    Hiermee worden alle stijlen en opmaak verwijderd, zodat alleen de onbewerkte tekst wordt geplakt.
+   Hiermee worden alle stijlen en opmaak verwijderd, zodat alleen de onbewerkte tekst wordt geplakt.
 
 * Plakken vanuit Word
 
-    Hiermee plakt u de inhoud als HTML (met de vereiste aanpassingen).
+   Hiermee plakt u de inhoud als HTML (met de vereiste aanpassingen).
 
 ### Ongedaan maken, Opnieuw {#undo-redo}
 
@@ -175,8 +178,8 @@ U kunt:
 
 * rechtstreeks tekst in een URI
 * Gebruik het site-overzicht om een pagina binnen uw website te selecteren
-* Voer de URI in en voeg vervolgens het doelanker toe;bijv. `www.TargetUri.org#AnchorName`
-* alleen een anker invoeren (als u naar &quot;de huidige pagina&quot; wilt verwijzen);bijv. `#anchor`
+* Voer de URI in en voeg vervolgens het doelanker toe; bijv. `www.TargetUri.org#AnchorName`
+* alleen een anker invoeren (als u naar &quot;de huidige pagina&quot; wilt verwijzen); bijv. `#anchor`
 * zoeken naar een pagina in de zoeker naar inhoud en vervolgens het paginapictogram naar het dialoogvenster Hyperlink slepen
 
 >[!NOTE]
@@ -310,23 +313,23 @@ De basiseigenschappen van de tabel kunnen worden geconfigureerd voordat u op **O
 
 * **Breedte**
 
-    De totale breedte van de tabel.
+   De totale breedte van de tabel.
 
 * **Hoogte**
 
-    De totale hoogte van de tabel.
+   De totale hoogte van de tabel.
 
 * **Rand**
 
-    De grootte van de tabelrand.
+   De grootte van de tabelrand.
 
 * **Celopvulling**
 
-    Hiermee definieert u de witruimte tussen de celinhoud en de randen.
+   Hiermee definieert u de witruimte tussen de celinhoud en de randen.
 
 * **Celafstand**
 
-    Hiermee bepaalt u de afstand tussen de cellen.
+   Hiermee bepaalt u de afstand tussen de cellen.
 
 >[!NOTE]
 >
@@ -408,6 +411,7 @@ Als u een geneste tabel maakt, wordt er een nieuwe, op zichzelf staande tabel in
 >
 >* Windows IE: Gebruik Ctrl+klikken terwijl u de muis ingedrukt houdt (meestal links) om meerdere cellen te selecteren.
 >* Firefox: Sleep de muis om een celbereik te selecteren.
+
 >
 
 
@@ -444,5 +448,5 @@ In de bronmodus ziet het er als volgt uit (vaak is de bron veel langer, dus moet
 
 >[!CAUTION]
 >
->Bij het verlaten van bronwijze, voert AEM bepaalde bevestigingscontroles uit (bijvoorbeeld, die ervoor zorgen dat de tekst correct bevat/in blokken wordt genest). Dit kan leiden tot wijzigingen in uw bewerkingen.
+>Wanneer AEM de bronmodus verlaat, worden bepaalde validatiecontroles uitgevoerd (bijvoorbeeld om te controleren of de tekst op de juiste wijze in blokken is opgeslagen of genest). Dit kan leiden tot wijzigingen in uw bewerkingen.
 
