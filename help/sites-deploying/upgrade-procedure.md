@@ -12,6 +12,9 @@ discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '835'
+ht-degree: 0%
 
 ---
 
@@ -20,9 +23,9 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 >[!NOTE]
 >
->De upgrade vereist downtime voor de Auteur-laag, aangezien de meeste AEM-upgrades op hun plaats worden uitgevoerd. Door deze beste praktijken te volgen, kan de Publish laagonderbreking worden geminimaliseerd of worden geëlimineerd.
+>De upgrade vereist downtime voor de Auteur-laag omdat de meeste AEM upgrades op hun plaats worden uitgevoerd. Door deze beste praktijken te volgen, kan de Publish laagonderbreking worden geminimaliseerd of worden geëlimineerd.
 
-Wanneer u uw AEM-omgevingen upgradet, moet u rekening houden met de verschillen in benadering tussen het upgraden van auteursomgevingen of het publiceren van omgevingen om de downtime voor zowel uw auteurs als eindgebruikers te minimaliseren. Deze pagina schetst de procedure op hoog niveau voor de bevordering van een topologie AEM die momenteel op een versie van AEM 6.x loopt. Aangezien het proces tussen auteur en publicatieniveaus evenals op Mongo en TarMK gebaseerde plaatsingen verschilt, is elke rij en microkernel vermeld in een afzonderlijke sectie. Wanneer het uitvoeren van uw plaatsing, adviseren wij eerst uw auteursmilieu te bevorderen, bepalend succes, en dan aan de publicatiemilieu&#39;s te werk te gaan.
+Wanneer u uw AEM-omgevingen upgradet, moet u rekening houden met de verschillen in aanpak tussen het upgraden van auteursomgevingen of het publiceren van omgevingen om downtime voor zowel uw auteurs als eindgebruikers tot een minimum te beperken. Deze pagina schetst de procedure op hoog niveau voor de bevordering van een AEM topologie die momenteel op een versie van AEM 6.x loopt. Aangezien het proces tussen auteur en publicatieniveaus evenals op Mongo en TarMK gebaseerde plaatsingen verschilt, is elke rij en microkernel vermeld in een afzonderlijke sectie. Wanneer het uitvoeren van uw plaatsing, adviseren wij eerst uw auteursmilieu te bevorderen, bepalend succes, en dan aan de publicatiemilieu&#39;s te werk te gaan.
 
 ## TarMK-auteurreeks {#tarmk-author-tier}
 
@@ -105,7 +108,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 1. De instanties van de Auteur opnieuw, één voor één
 1. Verwijder de gekloonde gegevensopslag.
 
-### Indien mislukt (Terugdraaien) {#if-unsuccessful}
+### Indien mislukt (Terugdraaien)  {#if-unsuccessful}
 
 ![mongo-rollback](assets/mongo-rollback.jpg)
 
