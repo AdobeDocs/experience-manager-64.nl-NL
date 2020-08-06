@@ -19,7 +19,7 @@ ht-degree: 1%
 
 # Programmaticaal AEM Document Services gebruiken {#using-aem-document-services-programmatically}
 
-De klassen van de cliënt die worden vereist om Gemaakt te bouwen Projecten gebruikend de Diensten van het Document van AEM zijn beschikbaar in de [Cliënt SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) van AEM Forms. Voor informatie rond beproefde projecten, zie [hoe te om uw AEM- project te bouwen gebruikend Maven](/help/sites-developing/ht-projects-maven.md).
+Clientklassen die zijn vereist om Maven Projecten te bouwen met AEM Document Services zijn beschikbaar in de [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar. Voor informatie rond beproefde projecten, zie [hoe te om uw AEM te bouwen gebruikend Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
@@ -1035,7 +1035,7 @@ public class ModifySignatureField {
 U kunt een PDF-document beveiligen door het te certificeren met een bepaald type handtekening, een zogenaamde gecertificeerde handtekening. Een gecertificeerde handtekening wordt op de volgende manieren onderscheiden van een digitale handtekening:
 
 * Dit moet de eerste handtekening zijn die op het PDF-document wordt toegepast. Met andere woorden, wanneer de gecertificeerde handtekening wordt toegepast, moeten andere handtekeningvelden in het document niet-ondertekend zijn. Er is slechts één gecertificeerde handtekening toegestaan in een PDF-document. Als u een PDF-document wilt ondertekenen en certificeren, moet u het certificeren voordat u het ondertekent. Nadat u een PDF-document hebt gecertificeerd, kunt u digitale extra handtekeningvelden ondertekenen.
-* De auteur of maker van het document kan opgeven dat het document op bepaalde manieren kan worden gewijzigd zonder de gecertificeerde handtekening ongeldig te maken. Het document kan bijvoorbeeld het invullen van formulieren of het plaatsen van opmerkingen toestaan. Als de auteur aangeeft dat een bepaalde wijziging niet is toegestaan, beperkt Acrobat gebruikers om het document op die manier te wijzigen. Als dergelijke wijzigingen worden aangebracht, is de gecertificeerde handtekening ongeldig. Bovendien wordt in Acrobat een waarschuwing weergegeven wanneer een gebruiker het document opent. (Bij niet-gecertificeerde handtekeningen zijn wijzigingen niet mogelijk en maken normale bewerkingsbewerkingen de oorspronkelijke handtekening niet ongeldig.)
+* De auteur of maker van het document kan opgeven dat het document op bepaalde manieren kan worden gewijzigd zonder de gecertificeerde handtekening ongeldig te maken. Het document kan bijvoorbeeld het invullen van formulieren of het plaatsen van opmerkingen toestaan. Als de auteur aangeeft dat een bepaalde wijziging niet is toegestaan, beperkt Acrobat gebruikers het document op die manier te wijzigen. Als dergelijke wijzigingen worden aangebracht, is de gecertificeerde handtekening ongeldig. Bovendien geeft Acrobat een waarschuwing wanneer een gebruiker het document opent. (Bij niet-gecertificeerde handtekeningen zijn wijzigingen niet mogelijk en maken normale bewerkingsbewerkingen de oorspronkelijke handtekening niet ongeldig.)
 * Op het moment van ondertekening wordt het document gescand op specifieke typen inhoud die de inhoud van een document dubbelzinnig of misleidend kunnen maken. Een annotatie kan bijvoorbeeld bepaalde tekst op een pagina verbergen die belangrijk is voor het begrijpen van wat wordt gecertificeerd. Over deze inhoud kan een toelichting (wettelijke verklaring) worden gegeven.
 
 **Syntaxis**:
@@ -1067,7 +1067,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Bevat de opties die vereist zijn voor Reader Extended van een PDF-document</td> 
+   <td>Hier vindt u de vereiste opties voor het Readers van een PDF-document</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1341,7 +1341,7 @@ Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificer
 
 **PDF-documenten versleutelen met een wachtwoord**
 
-Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat het document door een andere bewerking Document Services voor AEM Forms wordt gebruikt, moet een PDF-document met een wachtwoord worden ontgrendeld.
+Wanneer u een PDF-document versleutelt met een wachtwoord, moet de gebruiker het wachtwoord opgeven om het PDF-document te openen in Adobe Reader of Acrobat. Voordat het document door een andere bewerking in AEM Forms Document Services wordt gebruikt, moet een PDF-document met een wachtwoord worden ontgrendeld.
 
 **PDF-documenten versleutelen met certificaten**
 
@@ -1362,13 +1362,13 @@ Bovendien bevatten de certificaatintrekkingslijsten (CRL&#39;s) informatie over 
 
 >[!NOTE]
 >
->Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan de AEM Trust Store.
+>Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM Trust Store.
 
 **Gebruiksrechten toepassen op PDF-documenten**
 
-U kunt gebruiksrechten toepassen op PDF-documenten met de Java Client API en webservice van Reader Extensions. Gebruiksrechten hebben betrekking op functionaliteit die standaard beschikbaar is in Acrobat, maar niet in Adobe Reader, zoals de mogelijkheid om opmerkingen toe te voegen aan een formulier of formuliervelden in te vullen en het formulier op te slaan. PDF-documenten waarop gebruiksrechten zijn toegepast, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een document met ingeschakelde rechten opent in Adobe Reader, kan bewerkingen uitvoeren die zijn ingeschakeld voor dat specifieke document.
+U kunt gebruiksrechten toepassen op PDF-documenten met de Java Client API en webservice voor Reader Extensions. Gebruiksrechten hebben betrekking op functionaliteit die standaard beschikbaar is in Acrobat, maar niet in Adobe Reader, zoals de mogelijkheid om opmerkingen toe te voegen aan een formulier of formuliervelden in te vullen en het formulier op te slaan. PDF-documenten waarop gebruiksrechten zijn toegepast, worden documenten met ingeschakelde rechten genoemd. Een gebruiker die een document met ingeschakelde rechten opent in Adobe Reader, kan bewerkingen uitvoeren die zijn ingeschakeld voor dat specifieke document.
 
-Voordat u Reader kunt gebruiken om een PDF-document met een certificaat uit te breiden, moet u ervoor zorgen dat u het certificaat toevoegt aan het AEM-sleutelarchief.
+Voordat u een PDF-document met een certificaat kunt Readers, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM sleutelarchief.
 
 **PDF-documenten digitaal ondertekenen**
 
@@ -1382,11 +1382,11 @@ De openbare sleutel wordt opgeslagen in het certificaat van de gebruiker dat bes
 
 >[!NOTE]
 >
->Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in het AEM-sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
+>Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in AEM sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
 >[!NOTE]
 >
->AEM Forms ondersteunt ook de *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificatie voor het digitaal ondertekenen van PDF-documenten.
+>AEM Forms biedt ook ondersteuning voor *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificaties voor het digitaal ondertekenen van PDF-documenten.
 
 **PDF-documenten certificeren**
 
@@ -1410,7 +1410,7 @@ Een annotatie kan bijvoorbeeld bepaalde tekst op een pagina verbergen die belang
 
 >[!NOTE]
 >
->Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in het AEM-sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
+>Voordat u een PDF-document digitaal kunt ondertekenen, moet u ervoor zorgen dat u de referentie toevoegt in AEM sleutelarchief. De referentie is de persoonlijke sleutel die wordt gebruikt voor ondertekening.
 
 
 **Syntaxis**:
@@ -1445,7 +1445,7 @@ secureDocument(Document inDoc,
   </tr> 
   <tr> 
    <td><code>readerExtensionOptions</code></td> 
-   <td>Bevat de opties die vereist zijn voor Reader om een PDF-document uit te breiden</td> 
+   <td>Bevat de opties die vereist zijn voor Reader Een PDF-document uitbreiden</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1756,7 +1756,7 @@ public class PassEncryptCertifyExtend {
 }
 ```
 
-**Voorbeeld 2**: Dit voorbeeld wordt gebruikt voor het uitvoeren van PKI-versleuteling, het ondertekenen van een handtekeningveld en Reader Extending the PDF document.
+**Voorbeeld 2**: Dit voorbeeld wordt gebruikt om PKI-versleuteling uit te voeren, een handtekeningveld te ondertekenen en het PDF-document uit te breiden met de Reader.
 
 ```java
 /*************************************************************************
@@ -3389,7 +3389,7 @@ public class GetPDFEncryption {
 
 ### Wachtwoordversleuteling verwijderen uit PDF {#removing-password-encryption-from-pdf}
 
-Verwijder op wachtwoorden gebaseerde versleuteling uit een PDF-document zodat gebruikers het PDF-document in Adobe Reader of Acrobat kunnen openen zonder een wachtwoord op te geven. Nadat u op een wachtwoord gebaseerde versleuteling uit een PDF-document hebt verwijderd, is het document niet meer beveiligd.
+Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document zodat gebruikers het PDF-document in Adobe Reader of Acrobat kunnen openen zonder een wachtwoord op te geven. Nadat u op een wachtwoord gebaseerde versleuteling uit een PDF-document hebt verwijderd, is het document niet meer beveiligd.
 
 **Syntaxis**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
@@ -3731,7 +3731,7 @@ try {
 
 Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het formulierontwerp en de XML-gegevens als letterlijke waarden zijn opgeslagen op een netwerklocatie, lokaal of op een HTTP-locatie, gebruikt u de [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) -API.
 
-**Syntax:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
+**Syntaxis:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
 #### Invoerparameter {#input-parameter}
 
@@ -4269,7 +4269,7 @@ String outputFolder="C:/Output";
 
 ## Forms Service {#forms-service}
 
-De service Forms biedt API&#39;s voor het importeren en exporteren van gegevens van en naar een interactief PDF-formulier. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat die worden gebruikt voor het weergeven en verzamelen van informatie van gebruikers. De service ondersteunt de volgende API&#39;s:
+De Forms-service biedt API&#39;s voor het importeren en exporteren van gegevens van en naar een interactief PDF-formulier. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat die worden gebruikt voor het weergeven en verzamelen van informatie van gebruikers. De service ondersteunt de volgende API&#39;s:
 
 * **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):**Hiermee exporteert u gegevens uit een PDF-formulier.
 * **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):**Hiermee importeert u gegevens in een interactief PDF-formulier.
@@ -4449,7 +4449,7 @@ De GeneratePDFService verstrekt APIs om diverse dossierformaten zoals .doc, .doc
 
 >[!NOTE]
 >
->De HTMLtoPDF-API is verouderd voor AEM Forms-server die wordt uitgevoerd op het AIX-besturingssysteem.
+>De HTMLtoPDF-API is verouderd voor AEM Forms-servers die op het AIX-besturingssysteem worden uitgevoerd.
 
 #### PDF Generator-API beschikbaar voor Microsoft Windows en Linux {#pdf-generator-api-available-on-microsoft-windows-and-linux}
 
@@ -4900,7 +4900,7 @@ File htmlToPdf(String inputUrl, String fileTypeSettingsName, String securitySett
 
 ### DistillerService {#distillerservice}
 
-De service Distiller converteert PostScript, Encapsulated PostScript (EPS) en PRN-bestanden (printertekst) naar PDF-bestanden. De Distiller-service wordt vaak gebruikt om grote hoeveelheden gedrukte documenten om te zetten in elektronische documenten, zoals facturen en instructies. Door documenten naar PDF te converteren, kunnen bedrijven hun klanten ook een papieren versie en een elektronische versie van een document sturen. De ondersteunde bestandsindelingen zijn .ps, .eps en .prn. De service ondersteunt de volgende API:
+De Distiller-service converteert PostScript-, Encapsulated PostScript- (EPS) en PRN-bestanden (printertekst) naar PDF-bestanden. De Distiller-service wordt vaak gebruikt om grote hoeveelheden gedrukte documenten om te zetten in elektronische documenten, zoals facturen en verklaringen. Door documenten naar PDF te converteren, kunnen bedrijven hun klanten ook een papieren versie en een elektronische versie van een document sturen. De ondersteunde bestandsindelingen zijn .ps, .eps en .prn. De service ondersteunt de volgende API:
 
 De service createPDF retourneert een Java.util.Map met resultaten. De kaarttoetsen zijn:
 
