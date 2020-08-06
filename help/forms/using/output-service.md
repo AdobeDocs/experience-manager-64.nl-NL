@@ -1,8 +1,8 @@
 ---
 title: Uitvoerservice
 seo-title: Uitvoerservice
-description: Beschrijft de Dienst van de Output, die deel van de Diensten van het Document van AEM uitmaakt
-seo-description: Beschrijft de Dienst van de Output, die deel van de Diensten van het Document van AEM uitmaakt
+description: Beschrijft de Dienst van de Output, die deel van AEM Diensten van het Document uitmaakt
+seo-description: Beschrijft de Dienst van de Output, die deel van AEM Diensten van het Document uitmaakt
 uuid: acd64bbb-91df-49bc-9216-2e860812bbe9
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: 8b96ba2d-007e-472a-875f-2caedd35ecf4
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '524'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
 
 ## Overzicht {#overview}
 
-De dienst van de output is de dienst OSGi die deel van de Diensten van het Document AEM uitmaakt. De uitvoerservice ondersteunt verschillende uitvoerindelingen en functies voor het uitvoerontwerp van AEM Forms Designer. De uitvoerservice kan XFA-sjablonen en XML-gegevens converteren om afdrukdocumenten in verschillende indelingen te genereren.
+De dienst van de output is de dienst OSGi die deel van AEM Diensten van het Document uitmaakt. De uitvoerservice ondersteunt verschillende uitvoerindelingen en functies voor het ontwerpen van uitvoer van AEM Forms Designer. De uitvoerservice kan XFA-sjablonen en XML-gegevens converteren om afdrukdocumenten in verschillende indelingen te genereren.
 
 Met uitvoerservice kunt u toepassingen maken waarmee u:
 
