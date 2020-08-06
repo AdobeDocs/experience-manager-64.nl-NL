@@ -11,6 +11,9 @@ topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '542'
+ht-degree: 5%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
 
 Standaardconfiguratieeigenschappen voor interactieve communicatie bewerken
 
-Interactieve communicatie bevat eigenschappen die automatisch worden geconfigureerd nadat het invoegpakket voor [AEM-formulieren is geïnstalleerd](/help/forms/using/installing-configuring-aem-forms-osgi.md) . De interactieve auteurs van Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend de pagina van de Configuratie **van de Console van de Console van de** Ervaring van Adobe Manager.
+Interactieve communicatie bevat eigenschappen die automatisch worden geconfigureerd nadat het [AEM Forms-add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) -pakket is geïnstalleerd. De interactieve auteurs van de Communicatie kunnen deze standaardconfiguratieeigenschappen uitgeven gebruikend de pagina van de Configuratie **van de Console van** Adobe Experience Manager.
 
-Open de pagina Configuratie webconsole van **Adobe Experience Manager** met de volgende URL:
+Open de configuratiepagina van de **Adobe Experience Manager-webconsole** met de volgende URL:
 
 https://&lt;server>:&lt;port>/&lt;contextPath>/system/console/configMgr
 
@@ -34,7 +37,7 @@ De configuratie-eigenschappen omvatten:
 
 ## Configuratie van documentfragmenten {#document-fragments-configuration}
 
-Tik op Configuratie **van** documentfragmenten op de pagina Configuratie **** van de webconsole van Adobe Experience Manager om de configuratie-eigenschappen voor documentfragmenten weer te geven.
+Tik op Configuratie **van** documentfragmenten op de pagina Configuratie **van** Adobe Experience Manager-webconsole om de configuratie-eigenschappen voor documentfragmenten weer te geven.
 
 <table> 
  <tbody> 
@@ -61,26 +64,26 @@ Tik op Configuratie **van** documentfragmenten op de pagina Configuratie **** va
    <td>Inspringing</td> 
    <td>De breedte van één inspringingseenheid die wordt toegepast op tekst in documentfragmenten van de lijst.</td> 
    <td>12.7mm</td> 
-   <td> Getal</td> 
+   <td>Getal</td> 
   </tr> 
   <tr> 
    <td>Roman Numbers Minimum Width</td> 
    <td>Minimumbreedte die moet worden toegepast op het opsommingsteken of nummerveld bij gebruik van Romeinse nummers in documentfragmenten van de lijst. </td> 
    <td>12.7mm</td> 
-   <td> Getal</td> 
+   <td>Getal</td> 
   </tr> 
   <tr> 
    <td>Minimumbreedte aantal</td> 
    <td>Minimumbreedte die op het opsommingsteken of nummerveld moet worden toegepast wanneer u genummerde lijsten gebruikt, met uitzondering van Romeinse nummers in documentfragmenten van de lijst.</td> 
    <td>8.0mm</td> 
-   <td> Getal</td> 
+   <td>Getal</td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Correspondentenconfiguratie maken {#create-correspondence-configuration}
 
-Tik op Correspondentieconfiguratie **** maken op de pagina Configuratie **** van de webconsole van Adobe Experience Manager om de configuratieeigenschappen voor de gebruikersinterface van de Agent weer te geven.
+Tik op Correspondentieconfiguratie **** maken op de pagina Configuratie **van de** Adobe Experience Manager-webconsole om de configuratie-eigenschappen voor de gebruikersinterface van de agent weer te geven.
 
 | Eigenschap | Beschrijving | Standaard | Acceptabele waarden |
 |---|---|---|---|
@@ -89,17 +92,17 @@ Tik op Correspondentieconfiguratie **** maken op de pagina Configuratie **** van
 
 ## Adaptieve vorm en interactieve communicatie Webkanaalconfiguratie {#adaptive-form-and-interactive-communication-web-channel-configuration}
 
-Tik op de pagina Configuratie **van de webconsole van** **** Adobe Experience Manager op Adaptive Form en Interactive Communication Web Channel om de configuratieeigenschappen voor Adaptive Forms en Interactive Communications Web Channel weer te geven. De volgende lijst beschrijft de eigenschappen met betrekking tot Interactieve Mededelingen:
+Tik op de pagina Configuratie **van het Web Console van** Adobe Experience Manager op Adaptief formulier en Interactieve communicatie Web Channel om de configuratieeigenschappen voor Adaptief Forms en Interactive Communications Web Channel weer te geven **** . De volgende lijst beschrijft de eigenschappen met betrekking tot Interactieve Mededelingen:
 
 | Eigenschap | Beschrijving | Standaard | Acceptabele waarden |
 |---|---|---|---|
-| Tijdelijke aanduiding tonen | Schakel het selectievakje in om de weergave van plaatsaanduidingen in te schakelen voor velden die zijn opgenomen in adaptieve formulieren en interactieve communicatie. |  Geselecteerd | Niet van toepassing |
-| Maximum aantal cacheitems | Stel het maximumaantal adaptieve formulieren en interactieve communicatie in dat kan worden opgehaald met behulp van het cachegeheugen. | 100 |  Getal |
-| Bestandsnaam uniek maken | Schakel het selectievakje in als u unieke namen wilt gebruiken voor bestanden die als bijlagen zijn opgenomen in Adaptieve formulieren en interactieve communicatie. | Niet geselecteerd | Niet van toepassing |
+| Tijdelijke aanduiding tonen | Schakel het selectievakje in om de weergave van plaatsaanduidingen in te schakelen voor velden die zijn opgenomen in adaptieve formulieren en interactieve communicatie. | Geselecteerd | Niet van toepassing |
+| Maximum aantal cacheitems | Stel het maximumaantal adaptieve formulieren en interactieve communicatie in dat kan worden opgehaald met behulp van het cachegeheugen. | 100 | Getal |
+| Bestandsnaam uniek maken | Schakel het selectievakje in om unieke namen te hebben voor bestanden die als bijlagen zijn opgenomen in Adaptieve Forms en Interactieve communicatie. | Niet geselecteerd | Niet van toepassing |
 
 ## Adaptieve vorm en interactieve communicatie webkanaalthemaconfiguratie {#adaptive-form-and-interactive-communication-web-channel-theme-configuration}
 
-Tik op de pagina Configuratie **van het thema Adaptief formulier en Interactieve communicatie Web Channel op de pagina Configuratie** van de webconsole van de **** Adobe Experience Manager om de configuratieeigenschappen voor Adaptieve formulieren en Interactieve communicatiekanaalthema&#39;s weer te geven.
+Tik op de pagina Configuratie **van het thema Adaptief formulier en Interactieve communicatie via het webkanaal op de pagina Configuratie** van de **** Adobe Experience Manager-webconsole om de configuratieeigenschappen voor Adaptieve Forms en Interactieve communicatiekanaalthema&#39;s weer te geven.
 
 <table> 
  <tbody> 
@@ -111,7 +114,7 @@ Tik op de pagina Configuratie **van het thema Adaptief formulier en Interactieve
   </tr> 
   <tr> 
    <td>Naam lettertypenlijst</td> 
-   <td>Lijst met lettertypen die beschikbaar zijn voor gebruik bij het maken van adaptieve formulieren en interactieve communicatie.</td> 
+   <td>Lijst met lettertypen die beschikbaar zijn voor gebruik tijdens het maken van Adaptieve Forms en Interactieve communicatie.</td> 
    <td><p>Georgia</p> <p>Boek-antiaqua</p> <p>Times New Roman</p> <p>Arial</p> <p>Arial Black</p> <p>Gevolgen</p> <p>Palatino Linotype</p> </td> 
    <td>Alle geldige Adobe-serverlettertypen</td> 
   </tr> 
