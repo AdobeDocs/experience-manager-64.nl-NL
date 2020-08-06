@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5aa69b10-2cd0-4d34-8104-8c3b88405926
 translation-type: tm+mt
 source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+workflow-type: tm+mt
+source-wordcount: '688'
+ht-degree: 0%
 
 ---
 
@@ -27,11 +30,11 @@ Dit zijn allemaal [OSGi configuraties](/help/sites-deploying/configuring-osgi.md
 
 >[!NOTE]
 >
->Aanmelden bij AEM is gebaseerd op verkoopbeginselen. Zie Logboekregistratie [](https://sling.apache.org/site/logging.html) voor meer informatie.
+>Aanmelden in AEM is gebaseerd op verkoopbeginselen. Zie Logboekregistratie [](https://sling.apache.org/site/logging.html) voor meer informatie.
 
 ## Globale logboekregistratie {#global-logging}
 
-[Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het hoofdlogger te configureren. Hiermee worden de algemene instellingen voor het aanmelden bij AEM gedefinieerd:
+[Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het hoofdlogger te configureren. Hiermee worden de algemene instellingen voor het aanmelden van AEM gedefinieerd:
 
 * het registratieniveau
 * de locatie van het centrale logbestand
@@ -56,7 +59,7 @@ Naast de globale registrerenmontages, staat AEM u toe om specifieke montages voo
 
 Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk dossier te kanaliseren. Dit kan met name nuttig zijn tijdens de ontwikkeling of het testen; bijvoorbeeld, wanneer u een verhoogd logboekniveau voor de specifieke dienst nodig hebt.
 
-AEM gebruikt het volgende om logboekberichten aan dossier te schrijven:
+AEM gebruikt het volgende om logberichten naar bestand te schrijven:
 
 1. Een **dienst** OSGi (registreerder) schrijft een logboekbericht.
 1. Een **Logging Logger** neemt dit bericht en formatteert het volgens uw specificatie.
@@ -82,7 +85,7 @@ Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende 
 
 ### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
 
-Bepaalde Loggers en Schrijvers zijn inbegrepen in een standaardAEM installatie.
+Bepaalde loggers en schrijvers zijn opgenomen in een standaard AEM installatie.
 
 Het eerste is een speciaal geval aangezien het zowel de `request.log` als `access.log` dossiers controleert:
 
