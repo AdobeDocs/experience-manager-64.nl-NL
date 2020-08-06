@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dcde4e03-78ab-4779-96a1-05ac41f14701
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '224'
+ht-degree: 0%
 
 ---
 
@@ -39,15 +42,21 @@ Selecteer de geplaatste `Liking` component die u wilt openen en selecteer het `C
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-Geef op het tabblad **[!UICONTROL Teksten en labels]** de eigenschappen op die worden gebruikt voor het opnemen van ‘like’.
+Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
-* **[!UICONTROL Positief antwoordlabel]**(*vereist*) De eigenschapsnaam voor een positieve reactie.
+* **[!UICONTROL Positive Response Label]**
+(
+*Vereist*) De eigenschapsnaam voor een positieve reactie.
 
-* **[!UICONTROL Negatief antwoordlabel]**(*vereist*) De eigenschapsnaam voor een negatieve reactie.
+* **[!UICONTROL Negative Response Label]**
+(
+*Vereist*) De eigenschapsnaam voor een negatieve reactie.
 
-* **[!UICONTROL Tally Name]**(*Required*) De interne, identificeerbare bezitsnaam voor deze instantie van een stemcomponent.
+* **[!UICONTROL Tally Name]**
+(
+*Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
