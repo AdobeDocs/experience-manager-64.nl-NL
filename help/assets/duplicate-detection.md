@@ -4,17 +4,20 @@ description: Leer hoe u dubbele elementen in AEM kunt detecteren.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 26e860cd513d70d748f872e2ce445a042d075bc6
+workflow-type: tm+mt
+source-wordcount: '140'
+ht-degree: 0%
 
 ---
 
 
 # Dubbele detectie inschakelen {#enabling-duplicate-detection}
 
-Als u probeert middelen te uploaden die in de Middelen van de Manager van de Ervaring van Adobe (AEM) bestaan, identificeert de dubbele opsporingseigenschap het als dubbel. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
+Als u probeert een middel te uploaden dat in de Middelen van Adobe Experience Manager (AEM) bestaat, identificeert de dubbele opsporingseigenschap het als dubbel. Dubbele detectie is standaard uitgeschakeld. Voer de volgende stappen uit om de functie in te schakelen:
 
-1. Open de pagina Configuratie **[!UICONTROL webconsole van]** Adobe Experience Manager op `https://[server]:[port]/system/console/configMgr`.
-1. Bewerk de configuratie voor de serlet **[!UICONTROL Day CQ DAM Create Asset]**.
-1. Selecteer de optie Dupliceren **** detecteren en klik op **[!UICONTROL Opslaan]**.
+1. Open de **[!UICONTROL Adobe Experience Manager Web Console Configuration]** pagina om `https://[server]:[port]/system/console/configMgr`.
+1. Bewerk de configuratie voor de servlet **[!UICONTROL Day CQ DAM Create Asset]**.
+1. Selecteer de **[!UICONTROL detect duplicate]** optie en klik/tik op **[!UICONTROL Save]**.
 
    ![Selecteer de optie Duplicaat detecteren in de servlet](assets/chlimage_1-377.png)
 
