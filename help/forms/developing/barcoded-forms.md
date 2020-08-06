@@ -11,6 +11,9 @@ topic-tags: operations
 discoiquuid: eb28ac30-265c-4611-8247-1f4bc826f254
 translation-type: tm+mt
 source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+workflow-type: tm+mt
+source-wordcount: '1891'
+ht-degree: 0%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
 
 De service voor streepjescodes automatiseert het vastleggen van gegevens van invulformulieren en integreert vastgelegde informatie in de belangrijkste IT-systemen van een organisatie.
 
-Met de service voor streepjescodes kunt u eendimensionale en tweedimensionale streepjescodes toevoegen aan interactieve PDF-formulieren. U kunt de gecodeerde formulieren vervolgens publiceren naar een website of ze via e-mail of cd verspreiden. Wanneer een gebruiker een formulier met streepjescodes invult in Adobe Reader, Acrobat Professional of Acrobat Standard, wordt de streepjescode automatisch bijgewerkt om de door de gebruiker opgegeven formuliergegevens te coderen. De gebruiker kan het formulier elektronisch verzenden of afdrukken naar papier en het verzenden per post, fax of hand. U kunt de gebruiker-geleverde gegevens als deel van een geautomatiseerde werkschema later halen, verpletterend de gegevens onder goedkeuringsprocessen en bedrijfssystemen.
+Met de service voor streepjescodes kunt u eendimensionale en tweedimensionale streepjescodes toevoegen aan interactieve PDF forms. U kunt de gecodeerde formulieren vervolgens publiceren naar een website of ze via e-mail of cd verspreiden. Wanneer een gebruiker een formulier met streepjescodes invult in Adobe Reader, Acrobat Professional of Acrobat Standard, wordt de streepjescode automatisch bijgewerkt om de door de gebruiker opgegeven formuliergegevens te coderen. De gebruiker kan het formulier elektronisch verzenden of afdrukken naar papier en het verzenden per post, fax of hand. U kunt de gebruiker-geleverde gegevens als deel van een geautomatiseerde werkschema later halen, verpletterend de gegevens onder goedkeuringsprocessen en bedrijfssystemen.
 
-Voor meer informatie over de streepjescoded vormendienst, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service voor streepjesgecodeerde formulieren.
 
 ## Gecodeerde formuliergegevens decoderen {#decoding-barcoded-form-data}
 
@@ -31,7 +34,7 @@ U kunt de API van de service voor streepjesgecodeerde formulieren gebruiken om g
 
 >[!NOTE]
 >
->Voor meer informatie over de streepjescoded vormendienst, zie de Verwijzing van de [Diensten voor Vormen](https://www.adobe.com/go/learn_aemforms_services_63)AEM.
+>Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service voor streepjesgecodeerde formulieren.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -53,15 +56,15 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-livecycle-client.jar
 * adobe-usermanager-client.jar
 * adobe-barcodedforms-client.jar
-* adobe-utilities.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
-* jbossall-client.jar (vereist als AEM-formulieren worden geïmplementeerd op JBoss)
-* xercesImpl.jar (bevindt zich in &lt;installatiemap>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdparty)
+* adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
+* xercesImpl.jar (bevindt zich in &lt;install directory>/Adobe/Adobe_Experience_Manager_forms/sdk/client-libs\thirdParty)
 
-Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBOSS is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Zie [Including AEM Forms Java library files](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle JAR-bestanden voor AEM Forms.
+Als AEM Forms wordt geïmplementeerd op een ondersteunde J2EE-toepassingsserver die geen JBOSS is, moet u adobe-utilities.jar en jbossall-client.jar vervangen door JAR-bestanden die specifiek zijn voor de J2EE-toepassingsserver waarop AEM Forms wordt geïmplementeerd. Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van alle AEM Forms JAR-bestanden.
 
 **Een gestreepte API-object voor formulieren maken**
 
-Voordat u via programmacode een bewerking met een streepjescodeneservice kunt uitvoeren, moet u een service-client voor Barcoded Forms maken. Als u de Java API gebruikt, maakt u een `BarcodedFormsServiceClient` object. Als u de API voor webservices voor streepjescodes gebruikt, maakt u een `BarcodedFormsServiceService` object.
+Voordat u via programmacode een bewerking met een service voor streepjescodes kunt uitvoeren, moet u een Forms-serviceclient met streepjescodes maken. Als u de Java API gebruikt, maakt u een `BarcodedFormsServiceClient` object. Als u de API voor webservices voor streepjescodes gebruikt, maakt u een `BarcodedFormsServiceService` object.
 
 **Een PDF-formulier ophalen dat gecodeerde gegevens bevat**
 
@@ -100,7 +103,7 @@ U kunt de omgezette gegevens verwerken om aan uw bedrijfsvereisten te voldoen. N
 
 [Gecodeerde formuliergegevens decoderen met de webservice-API](barcoded-forms.md#decode-barcoded-form-data-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -135,6 +138,7 @@ Formuliergegevens decoderen met de API voor streepjescodes (Java):
    * Een `java.lang.Boolean` object dat opgeeft of een EAN-13-streepjescode moet worden gedecodeerd.
    * Een `java.lang.Boolean` object dat opgeeft of een EAN-8-streepjescode moet worden gedecodeerd.
    * Een `com.adobe.livecycle.barcodedforms.CharSet` opsommingswaarde waarmee de coderingswaarde voor de tekenset wordt opgegeven die in de streepjescode wordt gebruikt.
+
    De `decode` methode retourneert een `org.w3c.dom.Document` object dat gedecodeerde formuliergegevens bevat.
 
 1. De gegevens converteren naar een XML-gegevensbron
@@ -145,6 +149,7 @@ Formuliergegevens decoderen met de API voor streepjescodes (Java):
    * Een `com.adobe.livecycle.barcodedforms.Delimiter` opsommingswaarde die het regelscheidingsteken opgeeft. U wordt aangeraden dit op te geven `Delimiter.Carriage_Return`.
    * Een `com.adobe.livecycle.barcodedforms.Delimiter` opsommingswaarde waarmee het veldscheidingsteken wordt opgegeven. Geef bijvoorbeeld op `Delimiter.Tab`.
    * Een `com.adobe.livecycle.barcodedforms.XMLFormat` opsommingswaarde die aangeeft of de streepjescodegegevens moeten worden omgezet in XDP- of XFDF XML-gegevens. Geef bijvoorbeeld `XMLFormat.XDP` op of u de gegevens wilt converteren naar XDP-gegevens.
+
    >[!NOTE]
    >
    >Geef niet dezelfde waarden op voor de parameters voor regelscheidingsteken en veldscheidingsteken.
@@ -161,7 +166,7 @@ Formuliergegevens decoderen met de API voor streepjescodes (Java):
 
 [Snel starten (SOAP-modus): Gecodeerde formuliergegevens decoderen met de Java API](/help/forms/developing/barcoded-forms-service-java-api.md#quick-start-soap-mode-decoding-barcoded-form-data-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -171,8 +176,8 @@ Formuliergegevens decoderen met de API voor gecodeerde formulieren (webservice):
 
 1. Projectbestanden opnemen
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de streepjescoded dienst WSDL verbruikt. Zie [AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)voor meer informatie.
-   * Verwijs naar de cliëntassemblage van Microsoft .NET. Voor informatie, zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in het [Aanhalen van Vormen AEM gebruikend Codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
+   * Creeer een de cliëntassemblage van Microsoft .NET die de streepjescoded dienst WSDL verbruikt. Zie AEM Forms [aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)voor meer informatie.
+   * Verwijs naar de cliëntassemblage van Microsoft .NET. Voor informatie, zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in het [Aanhalen van AEM Forms gebruikend het Coderen](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.
 
 1. Een gestreepte API-object voor formulieren maken
 
@@ -200,6 +205,7 @@ Formuliergegevens decoderen met de API voor gecodeerde formulieren (webservice):
    * Een `Boolean` object dat opgeeft of een EAN-13-streepjescode moet worden gedecodeerd.
    * Een `Boolean` object dat opgeeft of een EAN-8-streepjescode moet worden gedecodeerd.
    * Een `CharSet` opsommingswaarde waarmee de coderingswaarde voor de tekenset wordt opgegeven die in de streepjescode wordt gebruikt.
+
    De `decode` methode retourneert een tekenreekswaarde die gedecodeerde formuliergegevens bevat.
 
 1. De gegevens converteren naar een XML-gegevensbron
@@ -210,6 +216,7 @@ Formuliergegevens decoderen met de API voor gecodeerde formulieren (webservice):
    * Een `Delimiter` opsommingswaarde die het regelscheidingsteken opgeeft. U wordt aangeraden dit op te geven `Delimiter.Carriage_Return`.
    * Een `Delimiter` opsommingswaarde waarmee het veldscheidingsteken wordt opgegeven. Geef bijvoorbeeld op `Delimiter.Tab`.
    * Een `XMLFormat` opsommingswaarde die aangeeft of de streepjescodegegevens moeten worden omgezet in XDP- of XFDF XML-gegevens. Geef bijvoorbeeld `XMLFormat.XDP` op of u de gegevens wilt converteren naar XDP-gegevens.
+
    >[!NOTE]
    >
    >Geef niet dezelfde waarden op voor de parameters voor regelscheidingsteken en veldscheidingsteken.
@@ -225,4 +232,4 @@ Formuliergegevens decoderen met de API voor gecodeerde formulieren (webservice):
 
 **Zie ook**
 
-[AEM-formulieren aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
+[AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
