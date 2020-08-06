@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '323'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ U kunt een HTML5-formulier opslaan als concept en het invullen van het formulier
 
 ## Aangepast profiel om de functie Opslaan als concept toe te staan {#custom-profile-to-allow-save-as-draft-feature}
 
-AEM Forms geeft in het vak een profiel **Opslaan als concept** . U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit in te schakelen voor een HTML5-formulier. U kunt HTML-renderprofiel voor een formulier opgeven in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+AEM Forms geeft het profiel **Opslaan als concept** op uit het vak. U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit in te schakelen voor een HTML5-formulier. U kunt HTML-renderprofiel voor een formulier opgeven in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
 Als u de functie Opslaan als concept wilt inschakelen voor uw bestaande [aangepaste profiel](/help/forms/using/custom-profile.md), voegt u de volgende eigenschappen toe aan het aangepaste profielknooppunt:
 
@@ -65,9 +68,9 @@ Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding 
    <td>fp.enablePortalSubmit</td> 
    <td>Tekenreeks</td> 
    <td>true</td> 
-   <td>Concepten en formulieren na verzending in<br /> de component Formulierportaalconcepten en -verzendingen weergeven</td> 
+   <td>Concepten en formulieren na verzending in<br /> Forms Portal-component Concepten en verzenden weergeven</td> 
   </tr> 
  </tbody> 
 </table>
 
-Standaard worden in AEM Forms de gebruikersgegevens opgeslagen die zijn gekoppeld aan het concept en de verzending van een formulier in het knooppunt /content/forms/fp op het knooppunt Publish. U kunt een aangepaste opslagprovider toevoegen. Zie [Aangepaste opslag voor concepten en verzendingen voor meer informatie](/help/forms/using/adding-custom-storage-provider-forms.md).
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt een aangepaste opslagprovider toevoegen. Zie [Aangepaste opslag voor concepten en verzendingen voor meer informatie](/help/forms/using/adding-custom-storage-provider-forms.md).
