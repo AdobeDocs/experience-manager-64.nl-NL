@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '840'
+ht-degree: 6%
 
 ---
 
@@ -47,7 +50,7 @@ Met Launches kunt u:
 
 * Een kopie van de bronpagina&#39;s maken:
 
-   * Het exemplaar is uw lancering.
+   * De kopie is uw lancering.
    * De bronpagina&#39;s op het hoogste niveau worden **Productie** genoemd.
 
       * De bronpagina&#39;s kunnen uit meerdere (afzonderlijke) vertakkingen worden genomen.
@@ -60,7 +63,7 @@ Met Launches kunt u:
 * De startconfiguratie bewerken:
 
    * Voeg pagina&#39;s en/of vertakkingen toe aan/van de lancering of verwijder deze.
-   * Starteigenschappen bewerken; zoals **Titel**, **Startdatum**, **Productie Klaar** vlag.
+   * Bewerk starteigenschappen, zoals markeringen voor **Titel**, **Startdatum**, **Geschikt voor productie**.
 
 * U kunt de inhoud handmatig of automatisch publiceren:
 
@@ -71,9 +74,9 @@ Met Launches kunt u:
       * Alle pagina&#39;s of alleen gewijzigde pagina&#39;s promoten.
    * Automatisch - dit omvat het volgende:
 
-      * Het veld **Launch**(**Live**) **date** : dit kan worden ingesteld wanneer u een opstart maakt of bewerkt.
+      * The **Launch**(**Live**) **date** field: this can be set when creating or editing a launch.
       * De markering **Production Ready** : dit kan alleen worden ingesteld wanneer u een opstart bewerkt.
-      * Als de markering **Production Ready** is ingesteld, wordt het starten automatisch bevorderd tot de productiepagina&#39;s op de opgegeven **startdatum**(**Live**) **datum**. Na de promotie worden de productiepagina&#39;s automatisch gepubliceerd.
+      * If the **Production Ready** flag is set, the launch will be automatically promoted to the production pages on the specified **Launch**(**Live**) **date**. Na de promotie worden de productiepagina’s automatisch gepubliceerd.
 
          Als er geen datum is ingesteld, heeft de markering geen effect.
 
@@ -82,12 +85,14 @@ Met Launches kunt u:
 
    * Wijzigingen in de bronpagina&#39;s worden automatisch geïmplementeerd in de opstartafbeelding (als deze zijn ingesteld op basis van overerving); d.w.z. als een live kopie).
    * U kunt wijzigingen aanbrengen in de opstartafbeelding zonder deze automatische updates of de bronpagina&#39;s te onderbreken.
+
    ![chlimage_1-234](assets/chlimage_1-234.png)
 
 * [Een geneste opstart](/help/sites-authoring/launches-creating.md#creating-a-nested-launch) maken - een opstart binnen een opstart:
 
    * De bron is een bestaande opstart.
    * U kunt een geneste lancering [aan om het even welk doel](/help/sites-authoring/launches-promoting.md#promoting-a-nested-launch) bevorderen; Dit kan een bovenliggende opstart of de bronpagina&#39;s op het hoogste niveau (Productie) zijn.
+
    ![chlimage_1-235](assets/chlimage_1-235.png)
 
    >[!CAUTION]
