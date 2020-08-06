@@ -10,6 +10,9 @@ topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '2394'
+ht-degree: 0%
 
 ---
 
@@ -35,39 +38,41 @@ Terwijl het creëren van een Interactieve Communicatie, kunt u grafieken toevoeg
 
 Voltooi de volgende stappen om een grafiek aan een Interactieve Mededeling toe te voegen:
 
-1. Sleep vanuit de component Components in het zijpaneel van de AEM de component Chart naar een van de volgende items in het afdruk- of webkanaal van een interactieve communicatie:
+1. Sleep vanuit de component Components in het AEM zijpaneel de component Chart in een van de volgende vormen van afdrukken of webkanaal van een interactieve communicatie:
 
    * Kanaal afdrukken: Doelgebied en afbeeldingsveld
    * Webkanaal: Deelvenster en Doelgebied
+
    De gelaten vallen component van de Grafiek, leidt tot placeholder voor een grafiek.
 
-1. Tik de grafiekcomponent in de Interactieve Communicatie redacteur en van de toolbar van de Component **[!UICONTROL vormen (]** configure_icon ![](assets/configure_icon.png)).
+1. Tik de grafiekcomponent in de Interactieve Communicatie redacteur en van de toolbar van de Component uitgezocht **[!UICONTROL Configure (]** configure_icon ![](assets/configure_icon.png)).
 
    De zijbalk Eigenschappen wordt weergegeven met de eigenschappen Standaard van het diagram in de focus.
 
    ![Basiseigenschappen van een lijntekstdiagram in een afdrukkanaal](assets/chart_basicproperties.png)
-   **** Afbeelding: *Basiseigenschappen van een lijntypegrafiek in een afdrukkanaal*
+   **Afbeelding:** *Basiseigenschappen van een lijntekstdiagram in een afdrukkanaal*
 
    ![Basiseigenschappen van een lijntekstdiagram in een webkanaal](assets/basicpropertieswebchannel.png)
-   **** Afbeelding: *Basiseigenschappen van een lijntypegrafiek in het webkanaal*
+   **Afbeelding:** *Basiseigenschappen van een lijntekstdiagram in een webkanaal*
 
 1. Configureer de basiseigenschappen van het diagram voor afdrukkanaal en webkanaal. Naast de algemene eigenschappen zijn er eigenschappen die specifiek zijn voor afdrukken, webkanalen en het diagramtype.
 
-   * **[!UICONTROL Naam]**: Naam van het grafiekobject. De naam van de grafiek die u hier specificeert verschijnt niet in de grafiekoutput maar in regels wordt gebruikt om naar de grafiek te verwijzen.
-   * **[!UICONTROL Type]** diagram: Geef het diagramtype op: Schijf, Kolom, Donut, Lijn, Lijn en Punt, Punt, of Gebied.
-   * **[!UICONTROL Object]** verbergen:Selecteer deze optie om het diagram in de uiteindelijke uitvoer te verbergen.
-   * Geef het volgende op voor de **[!UICONTROL x-as]** en de **[!UICONTROL y-as]**:
+   * **[!UICONTROL Name]**: Naam van het grafiekobject. De naam van de grafiek die u hier specificeert verschijnt niet in de grafiekoutput maar in regels wordt gebruikt om naar de grafiek te verwijzen.
+   * **[!UICONTROL Chart Type]**: Geef het diagramtype op: Schijf, Kolom, Donut, Lijn, Lijn en Punt, Punt, of Gebied.
+   * **[!UICONTROL Hide Object]**: Selecteer deze optie om het diagram in de uiteindelijke uitvoer te verbergen.
+   * Geef het volgende op voor **[!UICONTROL x-axis]** en **[!UICONTROL y-axis]**:
 
-      * **[!UICONTROL Titel]**: Geef de titels voor de X- en Y-as op die moeten worden weergegeven in de interactieve communicatie.
-      * **[!UICONTROL Gegevensmodelobject *]**: Blader door gegevensmodelobjecten voor de X- en Y-as van het diagram en selecteer deze in het formuliergegevensmodel dat u tijdens het maken van de interactieve communicatie hebt opgegeven. Kies twee eigenschappen voor verzamel-/arraytype van hetzelfde bovenliggende gegevensmodelobject die relevant zijn ten opzichte van elkaar om te plotten op de X- en Y-as van een grafiek.
-      * **[!UICONTROL Functie]**: Als u statistische functies wilt gebruiken om de waarden op de as te berekenen, selecteert u functie voor de X-/Y-as. Voor meer informatie over functies, zie de functies van het [Gebruik in grafiek](#usefunction) en [Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek](#applicationsumfrequency).
+      * **[!UICONTROL Title]**: Geef de titels voor de X- en Y-as op die moeten worden weergegeven in de interactieve communicatie.
+      * **[!UICONTROL Data Model Object *]**: Blader door gegevensmodelobjecten voor de X- en Y-as van het diagram en selecteer deze in het formuliergegevensmodel dat u tijdens het maken van de interactieve communicatie hebt opgegeven. Kies twee eigenschappen voor verzamel-/arraytype van hetzelfde bovenliggende gegevensmodelobject die relevant zijn ten opzichte van elkaar om te plotten op de X- en Y-as van een grafiek.
+      * **[!UICONTROL Function]**: Als u statistische functies wilt gebruiken om de waarden op de as te berekenen, selecteert u functie voor de X-/Y-as. Voor meer informatie over functies, zie de functies van het [Gebruik in grafiek](#usefunction) en [Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek](#applicationsumfrequency).
+
    >[!NOTE]
    >
    >Voor een afdrukkanaal moet het gegevensmodelobject dat u koppelt op de X-as van het type Number, String of Date zijn. Op de Y-as moet het gegevensmodelobject dat u koppelt van het type Number zijn. U wordt aangeraden de rechterlegenda in het afdrukkanaal te gebruiken.
 
    Voor meer informatie over grafiekeigenschappen, zie [Basis eigenschappen in grafieken](#basicpropertiescharts).
 
-1. (Alleen kanaal afdrukken) Geef in de Instellingen van de agent op of de agent dit diagram moet gebruiken. Als het **[!UICONTROL niet verplicht voor de Agent is om Deze optie van de Grafiek]** te gebruiken niet wordt geselecteerd, kan de agent het oogpictogram voor de grafiek op het lusje van de Inhoud van de UI van de Agent tikken om de grafiek te tonen/te verbergen.
+1. (Alleen kanaal afdrukken) Geef in de Instellingen van de agent op of de agent dit diagram moet gebruiken. Als deze **[!UICONTROL t Is Mandatory For the Agent To Use This Chart]** optie niet wordt geselecteerd, kan de agent het oogpictogram voor de grafiek op het lusje van de Inhoud van de UI van de Agent tikken om de grafiek te tonen/te verbergen.
 
    ![chart_agentproperties](assets/chart_agentproperties.png)
 
@@ -85,26 +90,26 @@ Laten we de minimaal vereiste informatie in basiseigenschappen in detail begrijp
 
 Hiervoor moet u het volgende opgeven:
 
-* **[!UICONTROL Type]** diagram - in dit voorbeeld Kolom voor het afdrukkanaal en Donut voor het webkanaal
-* **[!UICONTROL Gegevensmodelobjecten]** als bron voor de X- en Y-as van het diagram - in dit voorbeeld transactiehoeveelheid voor de X-as en kostennaam voor de Y-as
-* **[!UICONTROL Titel]** voor de X- en Y-as (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld Hoeveelheid ($) voor de X-as en Kosten voor de Y-as.
-* **[!UICONTROL Labelrichting]** (alleen in dit voorbeeld voor kolomtypegrafiek in het afdrukkanaal) - in dit voorbeeld `Tilt Left`
+* **[!UICONTROL Chart Type]** - in dit voorbeeld, Kolom voor het gedrukte kanaal en Donut voor het Webkanaal
+* **[!UICONTROL Data Model Objects]** als bron voor de X- en Y-as van het diagram - in dit voorbeeld, de hoeveelheid transacties voor de X-as en de naam van de kosten voor de Y-as
+* **[!UICONTROL Title]** voor de X- en Y-as (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld Hoeveelheid ($) voor de X-as en Uitgaven voor de Y-as.
+* **[!UICONTROL Label Direction]** (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld `Tilt Left`
 
-* **[!UICONTROL Knopinfo]** die met de muis over een uitgave (alleen webkanaal) wordt weergegeven - in dit voorbeeld `${x}: $ ${y}`wordt weergegeven als [Etiket uitgave: $ Amount] (Voorbeeld: Bezoek themapark: $ 315)
+* **[!UICONTROL Tooltip]** om met de muis boven een uitgave weer te geven (alleen webkanaal) - in dit voorbeeld `${x}: $ ${y}`, dat als [kostenlabel wordt weergegeven: $ Amount] (Voorbeeld: Bezoek themapark: $ 315)
 
-![](assets/chartprintchannel.png) De grafiek van de kolom in de drukoutput van een Interactieve Communicatie **** Cijfer: De grafiek van de *Kolom in de drukoutput van een Interactieve Mededeling*
+![De grafiek van de kolom in de drukoutput van een Interactieve Communicatie](assets/chartprintchannel.png)**Cijfer:** *Kolomdiagram in de afdrukuitvoer van een interactieve communicatie*
 
-******A. Y-as - Hoeveelheid opgehaald uit de eigenschap van het formuliergegevensmodel en de eigenschap Titel ingesteld op Bedrag ($)** B. Labelrichting van X-as ingesteld op Linkerkant **C.** X-as kantelen - beschrijving van kosten die is opgehaald uit de eigenschap van het gegevensmodel van het formulier en de eigenschap Titel ingesteld op Kosten
+**A.** Y-as - Hoeveelheid opgehaald uit de eigenschap van het formuliergegevensmodel en de eigenschap Titel ingesteld op Bedrag ($) **B.** Labelrichting van X-as ingesteld op Linkerkant **C.** X-as kantelen - beschrijving van kosten die is opgehaald uit de eigenschap van het gegevensmodel van het formulier en de eigenschap Titel ingesteld op Kosten
 
-![](assets/chartwebchannel.png) Donut grafiek in de Weboutput van een Interactieve Communicatie **** Cijfer: *Donut grafiek in de Weboutput van een Interactieve Communicatie*
+![Donut grafiek in de Weboutput van een Interactieve Communicatie](assets/chartwebchannel.png)**Cijfer:** *Donut grafiek in de Weboutput van een Interactieve Mededeling*
 
-******A. De eigenschap Binnenste straal van de donut wordt ingesteld op** B. De eigenschap Legend tonen is geselecteerd en de eigenschap Positie van Legend is ingesteld op **C.** De knopinfo geeft de details van het item weer bij muisklik. De knopinfo wordt ingesteld op ${x}: ${y}
+**A.** De eigenschap Binnenste straal van de donut wordt ingesteld op **B.** De eigenschap Legend tonen is geselecteerd en de eigenschap Positie van Legend is ingesteld op **C.** De knopinfo geeft de details van het item weer bij muisklik. De knopinfo wordt ingesteld op ${x}: ${y}
 
 ## Voorbeeld 2: Toepassing van de functies van de Som en van de Frequentie in een lijngrafiek {#applicationsumfrequency}
 
 Door functies in een grafiek toe te passen, kunt u gegevens plotten die niet direct door het model van vormgegevens worden verstrekt. In dit voorbeeld, gebruiken wij een voorbeeld van de creditcardverklaring om te begrijpen hoe de functies van de Som en van de Frequentie op de grafiek kunnen worden toegepast.
 
-![](assets/creditcarddatalinechartcopy.png) Het diagram van de lijn zonder een functie met drie &quot;Bed en Ontbijt&quot;transacties **** Figuur: *Regeldiagram zonder functie met drie transacties &quot;Bed en Ontbijt&quot;*
+![Het diagram van de lijn zonder een functie met drie &quot;Bed en Ontbijt&quot;transacties](assets/creditcarddatalinechartcopy.png)**Figuur:** *Regeldiagram zonder functie met drie &quot;Bed and Breakfast&quot;-transacties*
 
 ### Sum, functie {#sum-function}
 
@@ -132,7 +137,7 @@ Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 
 **X-as > Titel** geeft de titel voor de x-as op.
 
-**** X-as > Gegevensmodelobject&amp;ast; Geef de naam op van het gegevensmodelverzamelingsitem dat op de x-as moet worden getekend.
+**X-as > Gegevensmodelobject&amp;ast;** Geef de naam op van het gegevensmodelverzamelingsitem dat op de x-as moet worden getekend.
 
 **X-as > Functie** Geeft de statistische/aangepaste functie op die moet worden gebruikt voor het berekenen van de waarden op de x-as. Voor meer informatie over functies, zie de functies van het Gebruik in grafiek en Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek.
 
@@ -140,7 +145,7 @@ Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 
 **Y-as > Titel** geeft de titel voor de y-as op.
 
-**** Y-as > Gegevensmodelobject&amp;ast; Hiermee geeft u het verzamelitem van het formuliergegevensmodel op dat op de y-as moet worden getekend. In het kanaal van de Druk, zou het gegevensmodelvoorwerp voor de y-as van type Number moeten zijn.
+**Y-as > Gegevensmodelobject&amp;ast;** Hiermee geeft u het verzamelitem van het formuliergegevensmodel op dat op de y-as moet worden getekend. In het kanaal van de Druk, zou het gegevensmodelvoorwerp voor de y-as van type Number moeten zijn.
 
 **Y-as > Functie** Geeft de statistische/aangepaste functie op die moet worden gebruikt voor het berekenen van de waarden op y-as. Voor meer informatie over functies, zie de functies van het Gebruik in grafiek en Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek.
 
