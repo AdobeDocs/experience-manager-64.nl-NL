@@ -4,13 +4,16 @@ description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '591'
+ht-degree: 0%
 
 ---
 
 
 # Verwante activa {#related-assets}
 
-Met de functie Verwante elementen kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie. U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
+Met de functie Verwante elementen kunt u elementen handmatig koppelen op basis van de behoeften van uw organisatie (AEM). U kunt bijvoorbeeld een licentiebestand koppelen aan een element of aan een afbeelding/video over een vergelijkbaar onderwerp. U kunt elementen die bepaalde algemene kenmerken delen, aan elkaar koppelen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen. Als u bijvoorbeeld een PDF-bestand hebt dat is gegenereerd vanuit een INDD-bestand, kunt u het PDF-bestand koppelen aan het INDD-bronbestand.
 
 Op deze manier hebt u de flexibiliteit om een bestand met een lage resolutie (bijvoorbeeld PDF/JPG) te delen aan leveranciers/agentschappen en het bestand met een hoge resolutie (bijvoorbeeld INDD) alleen op verzoek beschikbaar te maken.
 
@@ -28,35 +31,36 @@ Op deze manier hebt u de flexibiliteit om een bestand met een lage resolutie (bi
 
    ![chlimage_1-274](assets/chlimage_1-274.png)
 
-1. Als u een ander element wilt koppelen aan het element dat u hebt geselecteerd, klikt of tikt u op het pictogram **[!UICONTROL Relate]** op de werkbalk.
+1. Als u een ander element wilt koppelen aan het element dat u hebt geselecteerd, klikt of tikt u op het **[!UICONTROL Relate]** pictogram op de werkbalk.
 
    ![chlimage_1-275](assets/chlimage_1-275.png)
 
 1. Voer een van de volgende handelingen uit:
 
-   * Als u het bronbestand voor het element wilt koppelen, selecteert u **[!UICONTROL Bron]** in de lijst.
-   * Als u een afgeleid bestand wilt koppelen, selecteert u **[!UICONTROL Afgeleid]** van de lijst.
-   * Als u een relatie in twee richtingen wilt maken tussen de elementen, selecteert u **[!UICONTROL Overige]** in de lijst.
+   * Als u het bronbestand voor het element wilt koppelen, selecteert u in de **[!UICONTROL Source]** lijst.
+   * Als u een afgeleid bestand wilt koppelen, selecteert u het in de **[!UICONTROL Derived]** lijst.
+   * Als u een relatie in twee richtingen tussen de elementen wilt maken, selecteert u deze in de **[!UICONTROL Others]** lijst.
+
    ![chlimage_1-276](assets/chlimage_1-276.png)
 
-1. Navigeer in het scherm **[!UICONTROL Element]** selecteren naar de locatie van het element dat u wilt koppelen en selecteer het.
+1. Navigeer in het **[!UICONTROL Select Asset]** scherm naar de locatie van het element dat u wilt koppelen en selecteer het.
 
    ![chlimage_1-277](assets/chlimage_1-277.png)
 
-1. Klik op het pictogram **[!UICONTROL Bevestigen]** of tik erop.
-1. Klik op **[!UICONTROL OK]** of tik erop om het dialoogvenster te sluiten. Afhankelijk van uw keuze voor relatie in stap 3 wordt het gerelateerde actief vermeld onder een geschikte categorie in de **[!UICONTROL verwante]** sectie. Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het weergegeven onder **[!UICONTROL Bron]**.
+1. Klik op het **[!UICONTROL Confirm]** pictogram of tik erop.
+1. Klik/tik **[!UICONTROL OK]** om het dialoogvenster te sluiten. Afhankelijk van uw keuze voor relatie in stap 3 wordt het gerelateerde actief vermeld onder een geschikte categorie in de **[!UICONTROL Related]** sectie. Als het element dat u hebt verwant bijvoorbeeld het bronbestand voor het huidige element is, wordt het onder **[!UICONTROL Source]** weergegeven.
 
    ![chlimage_1-278](assets/chlimage_1-278.png)
 
-1. Als u de koppeling tussen een element wilt verbreken, klikt of tikt u op het pictogram **[!UICONTROL Verhouding ongedaan maken]** op de werkbalk.
+1. Als u de koppeling tussen een element wilt verbreken, klikt of tikt u op het **[!UICONTROL Unrelate]** pictogram op de werkbalk.
 
    ![chlimage_1-279](assets/chlimage_1-279.png)
 
-1. Selecteer de elementen die u niet wilt koppelen in het dialoogvenster Relaties **** verwijderen en klik op **[!UICONTROL Onafhankelijk]** maken.
+1. Selecteer de elementen die u niet wilt koppelen in het **[!UICONTROL Remove Relations]** dialoogvenster en klik op of tik op **[!UICONTROL Unrelate]**.
 
    ![chlimage_1-280](assets/chlimage_1-280.png)
 
-1. Klik op **[!UICONTROL OK]** of Tik op OK om het dialoogvenster te sluiten. De activa waarvoor u betrekkingen schrapte worden geschrapt van de lijst van verwante activa onder de **[!UICONTROL Verwante]** sectie.
+1. Klik/Tik **[!UICONTROL OK]** om het dialoogvenster te sluiten. De elementen waarvoor u relaties hebt verwijderd, worden verwijderd uit de lijst met verwante elementen onder de **[!UICONTROL Related]** sectie.
 
 ## Verwante elementen vertalen {#translating-related-assets}
 
@@ -64,7 +68,7 @@ Het maken van bron-/afgeleide relaties tussen elementen met de functie Verwante 
 
 ![chlimage_1-281](assets/chlimage_1-281.png)
 
-Als het bronbestand is gerelateerd aan een ander element, haalt AEM Assets het element waarnaar wordt verwezen op en neemt het dit voor vertaling op.
+Als het bronbestand is gerelateerd aan een ander element, haalt AEM Assets het element waarnaar wordt verwezen op en neemt het dit op voor vertaling.
 
 ![chlimage_1-282](assets/chlimage_1-282.png)
 
@@ -81,7 +85,7 @@ Als het bronbestand is gerelateerd aan een ander element, haalt AEM Assets het e
 
    ![chlimage_1-285](assets/chlimage_1-285.png)
 
-1. Selecteer het element en klik/tik op **[!UICONTROL Tonen in elementen]** op de werkbalk om de vertaalstatus voor het element weer te geven.
+1. Selecteer het element en klik/tik op de werkbalk om de vertaalstatus voor het element weer te geven. **[!UICONTROL Reveal in Assets]**
 
    ![chlimage_1-286](assets/chlimage_1-286.png)
 
@@ -89,6 +93,6 @@ Als het bronbestand is gerelateerd aan een ander element, haalt AEM Assets het e
 
    ![chlimage_1-287](assets/chlimage_1-287.png)
 
-1. Selecteer het element dat betrekking heeft op de bron en klik op **[!UICONTROL Tonen in elementen]**. Het vertaalde gerelateerde element wordt weergegeven.
+1. Selecteer het element dat betrekking heeft op de bron en klik op het element of tik op het element **[!UICONTROL Reveal in Assets]**. Het vertaalde gerelateerde element wordt weergegeven.
 
    ![chlimage_1-288](assets/chlimage_1-288.png)
