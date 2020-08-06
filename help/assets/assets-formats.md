@@ -1,6 +1,6 @@
 ---
 title: Ondersteunde bestandsindelingen in AEM Assets
-description: Lijst met bestandsindelingen en MIME-typen die worden ondersteund door AEM Assets en de functies die worden ondersteund voor elke indeling.
+description: Lijst met bestandsindelingen en MIME-typen die door AEM Assets worden ondersteund en de functies die voor elke indeling worden ondersteund.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 2baa172088f646752e85168d432d46942ac8244e
@@ -15,7 +15,7 @@ ht-degree: 2%
 
 AEM Assets ondersteunt een groot aantal bestandsindelingen en elke functie biedt verschillende ondersteuning voor verschillende MIME-typen.
 
-Als u AEM Assets wilt integreren met andere DAM-oplossingen (Digital Asset Management) en desktopsoftware, gebruikt u het XMP (Extensible Metadata Platform) van Adobe.
+Om AEM Assets te integreren met andere standaarden compatibele oplossingen voor digitaal assetmanagement (DAM) en desktopsoftware, gebruikt u Extensible Metadata Platform (XMP).
 
 Gebruik de legenda om het steunniveau te begrijpen.
 
@@ -45,9 +45,9 @@ Rasterindelingen voor afbeeldingen die worden ondersteund voor functies voor mid
 | PICT |  |  |  |  |  |  | ✓ |
 | PSB | ✓ | ✓ | ✓ | ✓ |  |  |  |
 
-**‡** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+**‡** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
-Rasterindelingen voor afbeeldingen worden ondersteund voor functies van Dynamic Media:
+Rasterindelingen voor afbeeldingen die worden ondersteund voor functies van dynamische media zijn:
 
 | Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -65,7 +65,7 @@ Rasterindelingen voor afbeeldingen worden ondersteund voor functies van Dynamic 
 | PICT | ✓ |  |  |  |  |
 | PSB |  |  |  |  |  |
 
-**‡** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
+**‡** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
 Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
@@ -73,15 +73,15 @@ Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
 * Metagegevensterugkoppeling werkt voor PSB-bestandsindeling wanneer deze wordt toegevoegd aan de `NComm` handler.
 
-* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het gebruik van Dynamic Media voor het weergeven en genereren van dynamische uitvoeringen voor EPS-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het gebruik van dynamische media voor het weergeven en genereren van dynamische uitvoeringen voor EPS-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in PostScript Document Structuring Convention (PS-Adobe) versie 3.0 of hoger.
+* Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in versie 3.0 of hoger van de PostScript Document Structuring Convention (PS-Adobe).
 
 ## Niet-ondersteunde rasterafbeeldingsindelingen in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
 In de volgende lijst worden de subtypen beschreven van bestandsindelingen voor rasterafbeeldingen die *niet* worden ondersteund in Dynamic Media.
 
-Zie ook Niet-ondersteunde bestandsindelingen [detecteren voor Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Zie ook Niet-ondersteunde bestandsindelingen [detecteren voor dynamische media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
 * PSB-bestanden.
@@ -110,7 +110,7 @@ Zie [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
-Met de Adobe Camera Raw-bibliotheek kunnen AEM Assets Raw-afbeeldingen innemen. Zie Ondersteuning voor [Camera Raw](camera-raw.md).
+Met de Adobe Camera Raw-bibliotheek kan AEM Assets onbewerkte afbeeldingen opnemen. Zie [Camera Raw ondersteuning](camera-raw.md).
 
 ## Documentindelingen {#supported-document-formats}
 
@@ -137,7 +137,7 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-Documentindelingen die worden ondersteund voor functies van Dynamic Media zijn als volgt:
+De volgende documentindelingen worden ondersteund voor dynamische mediafuncties:
 
 | Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
 |---|:---:|:---:|:---:|:---:|:---:|
@@ -162,11 +162,11 @@ Documentindelingen die worden ondersteund voor functies van Dynamic Media zijn a
 
 Overweeg het volgende naast de bovenstaande functionaliteit:
 
-* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het genereren van dynamische uitvoeringen voor PDF-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen als u dynamische media wilt gebruiken om dynamische uitvoeringen voor PDF-bestanden te genereren.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het gebruik van Dynamic Media voor het weergeven en genereren van dynamische uitvoeringen voor AI-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het gebruik van dynamische media voor het weergeven en genereren van dynamische uitvoeringen voor AI-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Zie de bestandsindeling [InDesign (INDD) als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor INDD-bestanden te genereren](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Zie de bestandsindeling [InDesign (INDD) voor informatie over het genereren van dynamische uitvoeringen voor INDD-bestanden](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## Multimedia-indelingen {#supported-multimedia-formats}
 
@@ -216,7 +216,7 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 De ondersteunde archiefindelingen en de toepasbaarheid van de algemene DAM-workflows worden behandeld in de volgende tabel.
 
-| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Levering Dynamic Media |
+| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamische levering van media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -224,13 +224,13 @@ De ondersteunde archiefindelingen en de toepasbaarheid van de algemene DAM-workf
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**†** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en die in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn. De ZIP-archieven die met `Deflate64` algoritme zijn gemaakt, worden in AEM slechts beperkt ondersteund. Archiveer- en niet-archiefbewerkingen worden niet ondersteund. Bewerkingen zoals uploaden, bladeren en downloaden worden echter ondersteund.
+**†** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn. De ZIP-archieven die met `Deflate64` algoritme zijn gemaakt, worden in AEM beperkt ondersteund. Archiveer- en niet-archiefbewerkingen worden niet ondersteund. Bewerkingen zoals uploaden, bladeren en downloaden worden echter ondersteund.
 
 ## Overige ondersteunde indelingen {#other-supported-formats}
 
 De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsindelingen wordt in de onderstaande tabel beschreven.
 
-| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Levering Dynamic Media |
+| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamische levering van media |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -243,9 +243,9 @@ De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsinde
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 
-Standaard detecteert AEM het bestandstype met de bestandsextensie. AEM kan het van de inhoud van de dossiers ontdekken. Selecteer voor de laatste optie [!UICONTROL Detect MIME from content] in [!UICONTROL Day CQ DAM Mime Type Service] de AEM-webconsole.
+Standaard wordt het bestandstype AEM de bestandsextensie gebruikt. AEM kan het van de inhoud van de dossiers ontdekken. Voor laatstgenoemde, uitgezochte [!UICONTROL Detect MIME from content] optie in [!UICONTROL Day CQ DAM Mime Type Service] de Console van het AEM.
 
-Een lijst van gesteunde types MIME is beschikbaar in CRXDE Lite bij `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
+Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
 | Bestandsextensie | MIME-type/internet-mediatype | Standaardwaarde voor jobParam | Toegestane jobParam-waarde |
 |---|---|---|---|
