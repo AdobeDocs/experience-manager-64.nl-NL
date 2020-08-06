@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 10bf1d44-9660-44d9-b2c3-dd9a252efc3a
 translation-type: tm+mt
 source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+workflow-type: tm+mt
+source-wordcount: '1169'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Met Adobe Experience Manager (AEM) kunt u gebruiksvriendelijke adaptieve formuli
 
 Lees de volgende artikelen voor meer informatie over adaptieve formulieren voordat u meer leert over de verschillende lay-outmogelijkheden van adaptieve formulieren.
 
-[Inleiding tot AEM-formulieren](/help/forms/using/introduction-aem-forms.md)
+[Inleiding tot AEM Forms](/help/forms/using/introduction-aem-forms.md)
 
 [Inleiding tot ontwerpformulieren](/help/forms/using/introduction-forms-authoring.md)
 
@@ -51,21 +54,21 @@ Een auteur van een formulier kan een indeling koppelen aan elk deelvenster van e
 
 De schermindelingen van het deelvenster zijn beschikbaar op de `/libs/fd/af/layouts/panel` locatie.
 
-![](assets/layouts.png) Lijst met deelvensterindelingen voor het hoofddeelvenster van een adaptief formulier **** Afbeelding: Lijst met *deelvensterindelingen in adaptieve formulieren*
+![Lijst met deelvensterindelingen voor het hoofddeelvenster van een adaptief formulier](assets/layouts.png)**Afbeelding:** *Lijst met deelvensterindelingen in adaptieve formulieren*
 
 ### Responsief - alles op één pagina zonder navigatie {#responsive-everything-on-one-page-without-navigation-br}
 
 Met deze deelvensterlay-out maakt u een responsieve lay-out die zich aanpast aan de schermgrootte van uw apparaat zonder dat u hiervoor speciale navigatie nodig hebt.
 
-Met deze indeling kunt u meerdere adaptieve **[!UICONTROL deelvensterformuliercomponenten]** achter elkaar in het deelvenster plaatsen.
+Met deze lay-out kunt u meerdere **[!UICONTROL Panel adaptive form]** componenten achter elkaar in het deelvenster plaatsen.
 
 ![Een formulier met een responsieve indeling zoals wordt weergegeven op een klein scherm](assets/responsive_layout_seen_on_small_screen.png)
 
-**** Afbeelding: Een formulier *met een responsieve indeling zoals wordt weergegeven op een klein scherm*
+**Afbeelding:** *Een formulier met een responsieve indeling zoals wordt weergegeven op een klein scherm*
 
 ![Een formulier met een responsieve indeling zoals weergegeven op een groot scherm](assets/responsive_layout_seen_on_large_screen.png)
 
-**** Afbeelding: Een formulier *met een responsieve indeling zoals weergegeven op een groot scherm*
+**Afbeelding:** *Een formulier met een responsieve indeling zoals weergegeven op een groot scherm*
 
 ### Wizard - Een formulier dat uit meerdere stappen bestaat en één stap tegelijk weergeeft {#wizard-a-multi-step-form-showing-one-step-at-a-time}
 
@@ -79,11 +82,11 @@ window.guideBridge.validate([], this.panel.navigationContext.currentItem.somExpr
 
 ![De voltooiingsuitdrukking van de stap in de lay-out van de Tovenaar voor een multi-step vorm](assets/layout-sidebar.png)
 
-**** Afbeelding: Uitdrukking voor *stapvoltooiing in wizardlay-out voor een formulier dat uit meerdere stappen bestaat*
+**Afbeelding:** *De voltooiingsuitdrukking van de stap in de lay-out van de Tovenaar voor een multi-step vorm*
 
 ![Een formulier met wizardindeling](assets/wizard-layout.png)
 
-**** Afbeelding: Een formulier *met wizard*
+**Afbeelding:** *Een formulier met wizard*
 
 ### Layout voor accordeonontwerp {#layout-for-accordion-design}
 
@@ -93,7 +96,7 @@ De summiere uitdrukking kan worden gebruikt om de waarden te tonen die door de e
 
 ![Herhaalbare deelvensters met de indeling Accordeon in adaptieve formulieren](assets/repeatable_panels_using_accordion_layout.png)
 
-**** Afbeelding: Herhalbare deelvensters die zijn gemaakt met de indeling Accordeon **
+**Afbeelding:** *Herhaalbare deelvensters die zijn gemaakt met de accordeonindeling*
 
 ### Lay-out met tabs - links worden tabs weergegeven {#tabbed-layout-tabs-appear-on-the-left}
 
@@ -101,7 +104,7 @@ Met deze indeling kunt u de `Panel adaptive form` component in een deelvenster m
 
 ![In de lay-out Tabbed, verschijnen de lusjes op de linkerzijde](assets/tabbed_layout_left.png)
 
-**** Afbeelding: *Tabs die links van een deelvenster worden weergegeven*
+**Afbeelding:** *Tabs die links van een deelvenster worden weergegeven*
 
 ### Lay-out met tabs - tabs worden boven aan het scherm weergegeven {#tabbed-layout-tabs-appear-on-the-top}
 
@@ -109,7 +112,7 @@ Met deze indeling kunt u de `Panel adaptive form` component in een deelvenster m
 
 ![Lay-out met tabs in adaptieve formulieren met bovenaan tabs](assets/tabbed_layout_top.png)
 
-**** Afbeelding: De *tabs die boven in een deelvenster worden weergegeven*
+**Afbeelding:** *Tabs die boven in een deelvenster worden weergegeven*
 
 ## Mobiele lay-outs {#mobile-layouts}
 
@@ -119,9 +122,9 @@ Deze indeling bepaalt de navigatie met behulp van een navigatiebalk en een navig
 
 De mobiele lay-outs zijn beschikbaar op `/libs/fd/af/layouts/mobile/` locatie. De volgende mobiele lay-outs zijn standaard beschikbaar in adaptieve formulieren.
 
-![Lijst met mobiele lay-outs in adaptieve formulieren](assets/mobile-navigation.png)
+![Lijst met mobiele indelingen in adaptieve formulieren](assets/mobile-navigation.png)
 
-**** Afbeelding: *Lijst met mobiele lay-outs in adaptieve formulieren*
+**Afbeelding:** *Lijst met mobiele indelingen in adaptieve formulieren*
 
 Als u een mobiele indeling gebruikt, kunt u het formuliermenu gebruiken om toegang te krijgen tot verschillende formulierdeelvensters. U kunt hiertoe tikken op ![het pictogram em6forms_form_menu](assets/aem6forms_form_menu.png) .
 
@@ -131,7 +134,7 @@ In deze indeling worden, zoals in de naam wordt gesuggereerd, deelvenstertitels 
 
 ![Mobiele lay-outs met titels van deelvensters in de formulierkoppen](assets/mobile_layout_with.png)
 
-**** Afbeelding: *Mobiele lay-outs met titels van deelvensters in de formulierkoppen*
+**Afbeelding:** *Mobiele lay-outs met titels van deelvensters in de formulierkoppen*
 
 ### Indeling zonder deelvenstertitels in de koptekst van het formulier {#layout-without-panel-titles-in-the-form-header}
 
@@ -139,7 +142,7 @@ In deze indeling worden, zoals in de naam wordt gesuggereerd, alleen het navigat
 
 ![Mobiele lay-outs zonder titels in de formulierkoppen](assets/mobile_layout_without.png)
 
-**** Afbeelding: *Mobiele lay-outs zonder titels in de formulierkoppen*
+**Afbeelding:** *Mobiele lay-outs zonder titels in de formulierkoppen*
 
 ## Werkbalklay-outs {#toolbar-layouts}
 
@@ -147,7 +150,7 @@ Met een werkbalkindeling bepaalt u de positie en weergave van alle actieknoppen 
 
 ![Een lijst met werkbalkindelingen in aangepaste formulieren om de indeling van knoppen te bepalen](assets/toolbar-layouts.png)
 
-**** Afbeelding: *Een lijst met werkbalkindelingen in adaptieve formulieren*
+**Afbeelding:** *Een lijst met werkbalkindelingen in adaptieve formulieren*
 
 De schermindelingen van de werkbalk zijn beschikbaar op de `/libs/fd/af/layouts/toolbar` locatie. Aangepaste formulieren bieden standaard de volgende werkbalkopmaak.
 
@@ -159,7 +162,7 @@ U kunt ook meerdere werkbalken toevoegen die actieknoppen bevatten die zijn geco
 
 ![Standaardweergave voor werkbalk](assets/toolbar_layout_default.png)
 
-**** Afbeelding: Standaardweergave voor werkbalk **
+**Afbeelding:** *Standaardweergave voor werkbalk*
 
 ### Vaste mobiele lay-out voor werkbalk {#mobile-fixed-layout-for-toolbar}
 
@@ -171,5 +174,5 @@ Voor de mobiele lay-out kunt u actieknoppen toevoegen met behulp van pictogramme
 
 ![Vaste mobiele lay-out voor werkbalk](assets/toolbar_layout_mobile_fixed.png)
 
-**** Afbeelding: Vaste indeling voor *mobiele apparaten op de werkbalk*
+**Afbeelding:** *Vaste mobiele lay-out voor werkbalk*
 
