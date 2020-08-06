@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '249'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
 ## Uitproberen {#trying-it-out}
 
-1. Bewerk de pagina Arctic Surfing in de sectie Experience van de taalstramienvertakking.
+1. Bewerk de pagina Arctic Surfing in de sectie Experience van de master taalvertakking.
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
@@ -41,7 +44,7 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
 1. Als u de formaatgreep van de component vastgrijpt en sleept, wordt automatisch het layoutraster weergegeven om u te helpen met het wijzigen van de grootte.
 
-   ![chlimage_1-181](assets/chlimage_1-181.png)
+   ![chlimage_1-101](assets/chlimage_1-181.png)
 
 ## Aanvullende informatie {#further-information}
 
