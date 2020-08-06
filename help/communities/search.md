@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
 translation-type: tm+mt
 source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -45,15 +48,18 @@ Selecteer de geplaatste `Search` component die u wilt openen en selecteer het `C
 
 ![chlimage_1-374](assets/chlimage_1-374.png)
 
-Geef op onder het tabblad **[!UICONTROL Zoekinstellingen]** op hoe wordt gezocht in welke paden een zoekopdracht wordt uitgevoerd door een bezoeker.
+Geef op onder het **[!UICONTROL Search Settings]** tabblad op hoe wordt gezocht in welke paden een query wordt ingevoerd door een bezoeker.
 
 ![chlimage_1-375](assets/chlimage_1-375.png)
 
-* **[!UICONTROL Zoekpaden]** Door zoekpaden toe te voegen met de knop Item toevoegen, wordt de zoekopdracht beperkt. Als voorbeeld, om het onderzoek tot een specifiek forum te beperken, selecteer een forumcomponent die binnen een pagina wordt geplaatst:
+* **[!UICONTROL Search Paths]**
+Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt. Als voorbeeld, om het onderzoek tot een specifiek forum te beperken, selecteer een forumcomponent die binnen een pagina wordt geplaatst:
 
    * `/content/community-components/en/forum/jcr:content/content/forum`
 
-* **[!UICONTROL Resulterende pagina]** De resultaten worden weergegeven op een aparte pagina die met de browser is opgegeven om een pagina met de `Search Results` component te selecteren.
+* **[!UICONTROL Result Page]**
+De resultaten worden weergegeven op een aparte pagina die u in de browser hebt opgegeven om een pagina met de 
+`Search Results` component.
 
 ## Zoekresultaten {#search-results}
 
@@ -79,13 +85,15 @@ Selecteer de geplaatste `Search Results` component die u wilt openen en selectee
 
 ![chlimage_1-377](assets/chlimage_1-377.png)
 
-Op het tabblad Instellingen **[!UICONTROL van]** zoekresultaat kunt u opgeven welke paden in de zoekopdracht worden opgenomen wanneer een bezoeker een query invoert.
+Onder het **[!UICONTROL Search Result Settings]** tabblad kunt u opgeven welke paden in de zoekopdracht worden opgenomen wanneer een bezoeker een query invoert.
 
 ![chlimage_1-378](assets/chlimage_1-378.png)
 
-* **[!UICONTROL Zoekresultaten per pagina]** bepalen het aantal onderwerpen/posts dat per pagina wordt weergegeven. De standaardwaarde is 10.
+* **[!UICONTROL Search Results Per Page]**
+Bepaal het aantal onderwerpen/posten dat per pagina wordt getoond. De standaardwaarde is 10.
 
-* **[!UICONTROL Zoekpaden]** Door zoekpaden toe te voegen met de knop Item toevoegen, wordt de zoekopdracht beperkt.
+* **[!UICONTROL Search Paths]**
+Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt.
 
 ## Additional Information {#additional-information}
 
