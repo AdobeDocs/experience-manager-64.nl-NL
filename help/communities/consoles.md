@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 5fa9ee8b-5893-4ae9-a986-bfdbb00f355f
 translation-type: tm+mt
 source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 0%
 
 ---
 
 
 # Communityconsoles {#communities-consoles}
 
-De AEM-consoles, die beschikbaar zijn in de auteursomgeving van het wereldwijde navigatievenster, bieden toegang tot beheertaken zoals
+De AEM Communities-consoles, die beschikbaar zijn in de ontwerpomgeving van het wereldwijde navigatievenster, bieden toegang tot beheertaken zoals
 
-* [Een communitysite maken](sites-console.md)
+* [Een community-site maken](sites-console.md)
 * Groepen [toevoegen](groups.md) die op de site zijn genest
 * Sjablonen voor [communitysites beheren](sites.md)
 * Leden van [gemeenschappen beheren](members.md)
@@ -64,7 +67,7 @@ Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te 
 
 * [Rapporten](reports.md)
 
-   In de rapportconsole kunnen rapporten over toewijzingen, paginaweergaven en geposte inhoud (UGC) worden gegenereerd wanneer Adobe Analytics is [ingeschakeld voor een communitysite](sites-console.md#analytics). De console is alleen beschikbaar in de auteursomgeving.
+   In de rapportconsole kunnen rapporten over toewijzingen, paginaweergaven en geposte inhoud (UGC) worden gegenereerd wanneer een communitysite Adobe Analytics [heeft](sites-console.md#analytics)ingeschakeld. De console is alleen beschikbaar in de auteursomgeving.
 
 * [Bronnen](resources.md)
 
@@ -72,4 +75,4 @@ Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te 
 
 ## Tools Console {#tools-console}
 
-Toegang tot [Community Tools](tools.md) (voorheen de beheerconsole) vanaf globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen]**
+Toegang tot [Community Tools](tools.md) (voorheen de beheerconsole) vanaf globale navigatie: **[!UICONTROL Tools > Communities]**
