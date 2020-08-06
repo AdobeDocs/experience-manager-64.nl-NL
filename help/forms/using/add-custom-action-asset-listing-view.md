@@ -10,6 +10,9 @@ topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 translation-type: tm+mt
 source-git-commit: 7e58d1d861f832d073fb178868804995ee8d855b
+workflow-type: tm+mt
+source-wordcount: '1312'
+ht-degree: 2%
 
 ---
 
@@ -45,7 +48,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de selectiemap en voer daarbij de volgende stappen uit:
 
-   1. Klik met de rechtermuisknop op de map **[!UICONTROL Items]** in het volgende pad en selecteer **[!UICONTROL Overlayknooppunt]**:
+   1. Klik met de rechtermuisknop op de **[!UICONTROL items]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -60,30 +63,31 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
+      **[!UICONTROL Path:]** /libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items
 
-      **** Locatie: /apps/
+      **[!UICONTROL Location:]** /apps/
 
-      **** Identieke knooppunttypen: Geselecteerd
+      **[!UICONTROL Match Node Types:]** Geselecteerd
 
       ![Overlay-knooppunt](assets/2_createnodedownloadflatpdf.png)
 
-   1. Click **[!UICONTROL OK]**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik op **[!UICONTROL OK]**. De mapstructuur wordt gemaakt in de map apps.
 
-      Klik op Alles **[!UICONTROL opslaan]**.
+      Klik op **[!UICONTROL Save All]**.
 
 1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: downloadFlatPDF) gebruikend de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map **[!UICONTROL Items]** en selecteer **[!UICONTROL Maken]** > **[!UICONTROL Knooppunt]** maken.
+   1. Klik met de rechtermuisknop op de **[!UICONTROL items]** map en selecteer **[!UICONTROL Create]** > **[!UICONTROL Create Node]**.
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **[!UICONTROL OK]**:
 
-      **** Naam: downloadFlatPDF (of de naam die u aan deze eigenschap wilt geven)
+      **[!UICONTROL Name:]** downloadFlatPDF (of de naam die u aan deze eigenschap wilt geven)
 
-      **** Type:nt:ongestructureerd
+      **[!UICONTROL Type:]** nt:ongestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
-   1. Voeg de volgende eigenschappen toe aan het knooppunt (hier downloadFlatPDF) en klik op Alles **** opslaan:
+   1. Voeg de volgende eigenschappen toe aan het knooppunt (hier downloadFlatPDF) en klik **[!UICONTROL Save All]**:
+
    <table> 
     <tbody> 
     <tr> 
@@ -136,23 +140,23 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Maak in de map apps een map met de naam js met een pad/structuur die lijkt op de map met items in de map admin met de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map **[!UICONTROL js]** in het volgende pad en selecteer **[!UICONTROL Overlay Node]**: &quot;
+   1. Klik met de rechtermuisknop op de **[!UICONTROL js]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**: &quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
+      **[!UICONTROL Path:]** /libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js
 
-      **** Locatie: /apps/
+      **[!UICONTROL Location:]** /apps/
 
-      **** Identieke knooppunttypen: Geselecteerd
+      **[!UICONTROL Match Node Types:]** Geselecteerd
 
-   1. Click **[!UICONTROL OK]**. De mapstructuur wordt gemaakt in de map apps. Klik op Alles **[!UICONTROL opslaan]**.
+   1. Klik op **[!UICONTROL OK]**. De mapstructuur wordt gemaakt in de map apps. Klik op **[!UICONTROL Save All]**.
 
 1. Maak in de map js een bestand met de naam formaction.js met de code voor de afhandeling van handelingen van de knop door de volgende stappen uit te voeren:
 
-   1. Klik met de rechtermuisknop op de map **[!UICONTROL js]** in het volgende pad en selecteer **[!UICONTROL Maken > Bestand]** maken:
+   1. Klik met de rechtermuisknop op de **[!UICONTROL js]** map op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -163,7 +167,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js/formaction.js`
 
-      Voeg vervolgens de volgende code aan het einde toe in het bestand formaction.js (onder de tak /apps) en klik op Alles **** opslaan:
+      Voeg vervolgens de volgende code aan het einde toe in het bestand formaction.js (onder de tak /apps) en klik op **[!UICONTROL Save All]**:
 
       ```
       /* Action url for xml file to be added.*/
@@ -226,35 +230,35 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de map met actionhandlers. Ga hierbij als volgt te werk:
 
-   1. Klik met de rechtermuisknop op de map **[!UICONTROL Items]** in het volgende pad en selecteer **[!UICONTROL Overlayknooppunt]**:
+   1. Klik met de rechtermuisknop op de **[!UICONTROL items]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
    1. Zorg ervoor dat het dialoogvenster Overlay-knooppunt de volgende waarden heeft:
 
-      **** Pad: /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
+      **[!UICONTROL Path:]** /libs/fd/cm/ma/gui/content/commons/actionhandlers/items/
 
-      **** Locatie: /apps/
+      **[!UICONTROL Location:]** /apps/
 
-      **** Identieke knooppunttypen: Geselecteerd
+      **[!UICONTROL Match Node Types:]** Geselecteerd
 
-   1. Click **[!UICONTROL OK]**. De mapstructuur wordt gemaakt in de map apps.
+   1. Klik op **[!UICONTROL OK]**. De mapstructuur wordt gemaakt in de map apps.
 
-   1. Klik op Alles **[!UICONTROL opslaan]**.
+   1. Klik op **[!UICONTROL Save All]**.
 
 1. Voeg onder het nieuwe knooppunt Items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: letterpdfdownloader) met behulp van de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de map met items en selecteer **[!UICONTROL Maken > Knooppunt]** maken.
+   1. Klik met de rechtermuisknop op de map met items en selecteer **[!UICONTROL Create > Create Node]**.
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **[!UICONTROL OK]**:
 
-      **** Naam: letterpdfdownloader (Of de naam die u aan deze eigenschap wilt geven) moet uniek zijn. Als u hier een andere naam gebruikt, geeft u hetzelfde op in de variabele ACTION_URL van het bestand formaction.js.)
+      **[!UICONTROL Name:]** letterpdfdownloader (Of de naam die u aan deze eigenschap wilt geven) moet uniek zijn. Als u hier een andere naam gebruikt, geeft u hetzelfde op in de variabele ACTION_URL van het bestand formaction.js.)
 
-      **** Type:nt:ongestructureerd
+      **[!UICONTROL Type:]** nt:ongestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
 
-   1. Voeg de volgende eigenschap toe aan het knooppunt (hier letterpdfdownloader) en klik op Alles **** opslaan:
+   1. Voeg de volgende eigenschap toe aan het knooppunt (hier letterpdfdownloader) en klik **[!UICONTROL Save All]**:
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
@@ -264,18 +268,18 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Klik met de rechtermuisknop op de **[!UICONTROL beheermap]** op het volgende pad en selecteer **[!UICONTROL Maken > Bestand]** maken:
+   1. Klik met de rechtermuisknop op de **[!UICONTROL admin]** map op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       Geef het bestand een naam als POST.jsp. (De bestandsnaam moet alleen POST.jsp zijn.)
 
-   1. Dubbelklik op het bestand **[!UICONTROL POST.jsp]** om het te openen in CRX.
-   1. Voeg de volgende code toe aan het POST.jsp-bestand en klik op **[!UICONTROL Alles]** opslaan:
+   1. Dubbelklik op het **[!UICONTROL POST.jsp]** bestand om het te openen in CRX.
+   1. Voeg de volgende code aan POST.jsp- dossier toe en klik **[!UICONTROL Save All]**:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie de API [voor](https://adobe.com/go/learn_aemforms_javadocs_63_en)AEM-formulieren voor meer informatie over AEM Forms API&#39;s.
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over AEM Forms API&#39;s.
 
-      Zie AEM [Components](/help/sites-developing/components.md)voor meer informatie over AEM-bibliotheken.
+      Zie AEM [Componenten](/help/sites-developing/components.md)voor meer informatie over AEM bibliotheken.
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
@@ -348,9 +352,9 @@ Nadat u aangepaste functionaliteit hebt toegevoegd om de platte PDF van uw briev
 
 1. Ga naar `https://[server]:[port]/[ContextPath]/projects.html` en meld u aan.
 
-1. Selecteer **[!UICONTROL Formulieren > Letters]**. Correspondentiebeheer geeft een overzicht van de beschikbare letters in het systeem.
-1. Klik op **[!UICONTROL Selecteren]** en klik vervolgens op een letter om deze te selecteren.
-1. Selecteer **[!UICONTROL Meer]** > &lt;Alleen PDF downloaden> (De aangepaste functionaliteit die u hebt gemaakt met de instructies in dit artikel). Het dialoogvenster Letter downloaden als PDF wordt geopend.
+1. Selecteer **[!UICONTROL Forms > Letters]**. Correspondentiebeheer geeft een overzicht van de beschikbare letters in het systeem.
+1. Klik **[!UICONTROL Select]** en klik vervolgens op een letter om deze te selecteren.
+1. Selecteer **[!UICONTROL More]** > &lt;Flat PDF downloaden> (De aangepaste functionaliteit die is gemaakt met de instructies in dit artikel). Het dialoogvenster Letter downloaden als PDF wordt geopend.
 
    De naam, functionaliteit en alt-text van het menu-item zijn gebaseerd op de aanpassing die in [Scenario is gemaakt: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte PDF-versie van een letter te downloaden.](#addcommandtoletters)
 
@@ -360,7 +364,7 @@ Nadat u aangepaste functionaliteit hebt toegevoegd om de platte PDF van uw briev
 
    >[!NOTE]
    >
-   >Voordat u de brief als een platte PDF downloadt, kunt u het XML-bestand met de gegevens in de brief maken met de optie Rapport **** maken.
+   >Voordat u de brief als een platte PDF downloadt, kunt u het XML-bestand met de gegevens in de brief maken met de **[!UICONTROL Create Report]** optie.
 
    ![Letter downloaden als PDF](assets/6_downloadflatpdf.png)
 
