@@ -12,6 +12,9 @@ discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
 translation-type: tm+mt
 source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+workflow-type: tm+mt
+source-wordcount: '1615'
+ht-degree: 0%
 
 ---
 
@@ -56,7 +59,7 @@ De console Groepen openen:
 
 ![chlimage_1-133](assets/chlimage_1-133.png)
 
-Selecteer de map **** Groepen om deze te openen.
+Selecteer het **[!UICONTROL Groups folder]** om het te openen.
 
 Als deze groep wordt geopend, worden alle bestaande groepen weergegeven, ongeacht of deze groepen bij de auteur of bij de publicatie zijn gemaakt.
 
@@ -64,24 +67,24 @@ Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
 ![chlimage_1-134](assets/chlimage_1-134.png)
 
-* Knop Groep **** maken selecteren
+* Knop Selecteren **[!UICONTROL Create Group]**
 
 ### Stap 1: Template voor communautaire groep {#step-community-group-template}
 
 ![meertalige groep](assets/multilingualgroup.png)
 
-* **[!UICONTROL Titel]** van communautaire groep: Een weergavetitel voor de groep.
+* **[!UICONTROL Community Group Title]**: Een weergavetitel voor de groep.
 
    De titel wordt op de gepubliceerde site voor de groep weergegeven.
 
-* **[!UICONTROL Omschrijving]** van communautaire groep: Een beschrijving van de groep.
-* **[!UICONTROL Hoofdmap]** van communautaire groep: Het hoofdpad naar de groep.
+* **[!UICONTROL Community Group Description]**: Een beschrijving van de groep.
+* **[!UICONTROL Community Group Root]**: Het hoofdpad naar de groep.
 
    De standaardhoofdmap is de bovenliggende site, maar de hoofdmap kan naar een willekeurige locatie op de website worden verplaatst. Het wordt afgeraden dit te wijzigen.
 
-* **[!UICONTROL Extra beschikbare talen in de gebruikersgroep]** : Gebruik het keuzemenu om de beschikbare taal of talen voor de groep van de gemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
+* **[!UICONTROL Additional Available Community Group Languages(s)]** menu: Gebruik het keuzemenu om de beschikbare taal of talen voor de groep van de gemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
 
-* **[!UICONTROL Naam]** communautaire groep: De naam van de hoofdpagina van de groep die wordt weergegeven in de URL
+* **[!UICONTROL Community Group Name]**: De naam van de hoofdpagina van de groep die wordt weergegeven in de URL
 
    * Controleer de naam tweemaal omdat deze na het maken van de groep niet gemakkelijk kan worden gewijzigd
    * De basis-URL wordt onder de `Community Group Name`
@@ -89,7 +92,7 @@ Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
       *Bijvoorbeeld*, `http://localhost:4502/content/sites/mysight/en/mygroup.html`
 
-* **[!UICONTROL Menu Sjabloon]** communautaire groep: Gebruik het keuzemenu om een beschikbare [communitygroepsjabloon](tools.md)te kiezen.
+* **[!UICONTROL Community Group Template]** menu: Gebruik het keuzemenu om een beschikbare [communitygroepsjabloon](tools.md)te kiezen.
 
 ### Stap 2: Ontwerp {#step-design}
 
@@ -97,7 +100,7 @@ Van deze console van Groepen, is het mogelijk om nieuwe groepen te ontwerpen.
 
 ![communitygroepthema](assets/communitygrouptheme.png)
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. Een van de vele vooraf geladen Bootstrap-thema&#39;s kan zijn geselecteerd om de geselecteerde communitygroepsjabloon te vormgeven, anders kan een Bootstrap-thema worden geüpload.
+Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site responsief en flexibel te ontwerpen. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitygroepsjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
@@ -183,7 +186,7 @@ Wanneer het proces is voltooid, wordt de kaart voor de nieuwe subcommunity-site 
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
-De pagina-inhoud van een groep kan met dezelfde gereedschappen worden gemaakt als elke andere AEM-pagina. Als u de groep wilt openen voor ontwerpen, selecteert u het pictogram Site openen dat wordt weergegeven wanneer u de muisaanwijzer op de groepskaart plaatst.
+De pagina-inhoud van een groep kan met dezelfde gereedschappen worden gemaakt als elke andere AEM. Als u de groep wilt openen voor ontwerpen, selecteert u het pictogram Site openen dat wordt weergegeven wanneer u de muisaanwijzer op de groepskaart plaatst.
 
 ## Groepseigenschappen wijzigen {#modifying-group-properties}
 
