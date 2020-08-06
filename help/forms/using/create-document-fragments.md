@@ -80,12 +80,14 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    1. Voer **Factuurnummer** in als de naam van de variabele.
    1. Selecteer **String** als type.
    1. Tik op **Maken**.
+
    ![variable_create_string](assets/variable_create_string.png)
 
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
    * Billperiod: Het type String
    * BillDate: Het type Date
+
    ![variables_bill_details](assets/variables_bill_details.png)
 
 1. Maak statische tekst voor de volgende velden met behulp van het rechterdeelvenster:
@@ -94,6 +96,7 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    * Bill Period
    * Bill Date
    * Uw abonnement
+
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
 1. Plaats de curseur naast het gebied van **Factuur Geen** en klik de variabele **InvoiceNumber** van het lusje van **Variabelen** in de linkerruit tweemaal.
@@ -138,6 +141,7 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    1. Voer **Placesupply** in als de naam van de variabele.
    1. Selecteer **String** als type.
    1. Tik op **Maken**.
+
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
    * Statcode: Het type Number
@@ -154,6 +158,7 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    * Relatie-nummer
    * Statuscode
    * Aantal verbindingen
+
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
 1. Plaats de cursor naast het veld **Mobiel nummer** en dubbelklik op de eigenschap **klant** > **mobile** .
@@ -197,6 +202,7 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    1. Voer **Vorige balans** in als naam voor de variabele.
    1. Selecteer **Getal** als type.
    1. Tik op **Maken**.
+
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
    * Betalingen: Het type Number
@@ -214,6 +220,7 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    * Te betalen bedrag
    * Vervaldatum
    * Betalingskosten na vervaldatum zijn $ 20
+
    ![bill_summary_static](assets/bill_summary_static.png)
 
 1. Plaats de cursor naast het veld **Vorige balans** en dubbelklik op de variabele **Vorige balans** .
@@ -265,6 +272,7 @@ Voer de volgende stappen uit om statische tekst te maken en formuliergegevensmod
    * Kosten voor toegevoegde services
    * Totale kosten
    * TOTAAL BETAALBAAR
+
    ![summary_charges_static](assets/summary_charges_static.png)
 
 1. Selecteer het tabblad Objecten **gegevensmodel** .
@@ -286,6 +294,7 @@ Voer de volgende stappen uit om statische tekst te maken en formuliergegevensmod
    1. Selecteer **Gegevensmodellen en Variabelen** en dan **rekeningen** > **callloads**.
    1. Selecteren **is kleiner dan** de operator.
    1. Selecteer **Aantal** en ga de waarde als **60** in.
+
    Gebaseerd op deze voorwaarde, wordt de rij van de Heffingen van de Diensten van de Waarde Toegevoegde getoond slechts als de waarde voor het gebied van de Heffingen van de Vraag minder dan 60 is.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
