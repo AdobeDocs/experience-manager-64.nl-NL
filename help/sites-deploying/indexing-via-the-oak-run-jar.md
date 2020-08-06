@@ -10,6 +10,9 @@ topic-tags: deploying
 discoiquuid: c8a505ab-a075-47da-8007-43645a8c3ce5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '879'
+ht-degree: 0%
 
 ---
 
@@ -20,8 +23,8 @@ De eiken-looppas steunt alle indexerende gebruiksgevallen op de bevellijn zonder
 
 1. Het is een nieuwe indexerende toolset voor AEM 6.4
 1. Het vermindert tijd-aan-herdex die nuttige gevolgen re-indextijden op grotere bewaarplaatsen heeft
-1. Het vermindert het verbruik van hulpbronnen tijdens het opnieuw indexeren in AEM, wat resulteert in betere systeemprestaties voor andere AEM-activiteiten
-1. Oak-run biedt out-of-band ondersteuning: Als de productieomstandigheden het niet toestaan om op productieinstanties opnieuw te indexeren, kan een gekloonde milieu voor re-indexering worden gebruikt om kritieke prestatieseffect te vermijden.
+1. Het vermindert hulpmiddelverbruik tijdens het re-indexeren in AEM die in betere systeemprestaties voor andere AEM activiteiten resulteert
+1. Oak-run biedt out-of-band ondersteuning: Als de productieomstandigheden het niet toestaan om reindex op productieinstanties in werking te stellen, kan een gekloonde milieu voor re-indexering worden gebruikt om kritieke prestatieseffect te vermijden.
 
 Hieronder vindt u een lijst met gebruiksgevallen die kunnen worden gebruikt bij het uitvoeren van indexeringsbewerkingen via het `oak-run` gereedschap.
 
@@ -44,7 +47,7 @@ Hieronder vindt u een lijst met gebruiksgevallen die kunnen worden gebruikt bij 
 
 * `oak-run.jar` Hiermee plaatst u alle indexdefinities, belangrijke indexstatussen en indexinhoud voor offline analyse.
 
-* Veilig om uit te voeren op een AEM-instantie in gebruik.
+* Veilig om uit te voeren op een AEM.
 
 ![image2017-12-19_9-47-40](assets/image2017-12-19_9-47-40.png)
 
@@ -70,7 +73,7 @@ Afhankelijk van de `oak-run.jar` indexeringsbenadering zullen er diverse stappen
 
 >[!NOTE]
 >
->Oranje duidt activiteiten aan waarbij AEM zich in een onderhoudsvenster moet bevinden.
+>Oranje duidt activiteiten aan waarbij AEM zich in een onderhoudsvenster moeten bevinden.
 
 ### Online opnieuw indexeren voor MongoMK of RDBMK met behulp van eak-run.jar {#onlinere-indexingformongomk}
 
@@ -78,9 +81,9 @@ Afhankelijk van de `oak-run.jar` indexeringsbenadering zullen er diverse stappen
 >
 >Voor meer gedetailleerde informatie betreffende dit scenario, zie [Reindex - DocumentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#reindexdocumentnodestore).
 
-Dit is de aanbevolen methode voor het opnieuw indexeren van AEM-installaties van MongoMK (en RDBMK). Er mag geen andere methode worden gebruikt.
+Dit is de aanbevolen methode voor het opnieuw indexeren van MongoMK (en RDBMK) AEM installaties. Er mag geen andere methode worden gebruikt.
 
-Dit proces moet slechts tegen één enkele instantie AEM in de cluster worden uitgevoerd.
+Dit proces moet slechts tegen één enkele AEM instantie in de cluster worden uitgevoerd.
 
 ![5](assets/5.png)
 
@@ -96,7 +99,7 @@ Dit proces moet slechts tegen één enkele instantie AEM in de cluster worden ui
 
 * **AEM-publicatiekoppelingen (publicatiekoppelingen voor AE moeten altijd TarMK zijn)**
 
-   * Voor publicatielandbouwbedrijf moet het voor alle OF de stappen op één enkele uitvoeren publiceren en dan de opstelling voor anderen klonen (het nemen van alle gebruikelijke precaties wanneer het klonen van AEM instanties; sling.id - moet hier iets aan koppelen)
+   * Voor publicatielandbouwbedrijf moet het voor alle OF de stappen op één enkele uitvoeren publiceren en dan de opstelling voor anderen klonen (het nemen van alle gebruikelijke precaties wanneer het klonen AEM instanties; sling.id - moet hier iets aan koppelen)
 
 ### Online opnieuw indexeren voor TarMK {#onlinere-indexingfortarmk}
 
@@ -106,7 +109,7 @@ Dit proces moet slechts tegen één enkele instantie AEM in de cluster worden ui
 
 Dit is de methode die wordt gebruikt vóór de implementatie van de nieuwe indexeringsmogelijkheden van eak-run.jar. Dit kan worden gedaan door de `reindex=true` eigenschap in te stellen op de eiken-index.
 
-Deze benadering kan worden gebruikt als de tijd en prestatiesgevolgen aan index voor de klant aanvaardbaar zijn. Dit geldt vaak voor kleine tot middelgrote AEM-installaties.
+Deze benadering kan worden gebruikt als de tijd en prestatiesgevolgen aan index voor de klant aanvaardbaar zijn. Dit is vaak het geval bij kleine tot middelgrote AEM.
 
 ![6](assets/6.png)
 
@@ -114,13 +117,13 @@ Deze benadering kan worden gebruikt als de tijd en prestatiesgevolgen aan index 
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Reindex - SegmentNodeStore - de Instantie AEM loopt](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
+>Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Reindex - SegmentNodeStore - de AEM Instantie loopt](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoretheaeminstanceisrunning).
 
 Het online opnieuw indexeren van TarMK is sneller dan Online TarkMK die hierboven wordt beschreven opnieuw indexeert. Nochtans, vereist het ook uitvoering tijdens een onderhoudsvenster, met de methode dat het venster korter zal zijn, en meer stappen worden vereist om het re-indexeren uit te voeren.
 
 >[!NOTE]
 >
->Oranje duidt op transacties waarbij AEM moet worden uitgevoerd in een onderhoudsperiode.
+>Oranje duidt op transacties waarbij AEM moeten worden uitgevoerd in een reserveperiode.
 
 ![7](assets/7.png)
 
@@ -128,27 +131,27 @@ Het online opnieuw indexeren van TarMK is sneller dan Online TarkMK die hierbove
 
 >[!NOTE]
 >
->Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Opnieuw indexeren - SegmentNodeStore - de Instantie AEM is gesloten](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
+>Voor meer gedetailleerde informatie betreffende dit scenario, zie [Online Opnieuw indexeren - SegmentNodeStore - de AEM Instantie is gesloten](/help/sites-deploying/oak-run-indexing-usecases.md#onlinereindexsegmentnodestoreaeminstanceisdown).
 
-Offline opnieuw indexeren van TarMK is de eenvoudigste `oak-run.jar` gebaseerde re-indexerende benadering voor TarMK aangezien het één enkele `oak-run.jar` commentaar vereist. De AEM-instantie moet echter worden afgesloten.
+Offline opnieuw indexeren van TarMK is de eenvoudigste `oak-run.jar` gebaseerde re-indexerende benadering voor TarMK aangezien het één enkele `oak-run.jar` commentaar vereist. De AEM instantie moet echter worden afgesloten.
 
 >[!NOTE]
 >
->Met rood worden bewerkingen aangegeven waarbij AEM moet worden afgesloten.
+>Rood geeft bewerkingen aan waarbij AEM moet worden afgesloten.
 
 ![8](assets/8.png)
 
-### Out-of-band re-Indexing TarMK gebruikend oak-run.jar {#out-of-bandre-indexingtarmkusingoak-run-jar}
+### Out-of-band re-Indexing TarMK gebruikend oak-run.jar  {#out-of-bandre-indexingtarmkusingoak-run-jar}
 
 >[!NOTE]
 >
 >Voor meer gedetailleerde informatie betreffende dit scenario, zie [uit Band opnieuw indexeren - SegmentNodeStore](/help/sites-deploying/oak-run-indexing-usecases.md#outofbandreindexsegmentnodestore).
 
-Het opnieuw indexeren van out-of-band minimaliseert het effect van het opnieuw indexeren op in-use AEM instanties.
+Het opnieuw indexeren van out-of-band minimaliseert het effect van het opnieuw indexeren op de instanties van de in-gebruiks AEM.
 
 >[!NOTE]
 >
->Met rood worden bewerkingen aangegeven waarbij AEM kan worden afgesloten.
+>Rood geeft bewerkingen aan waarbij AEM kan worden afgesloten.
 
 ![9](assets/9.png)
 
@@ -162,21 +165,21 @@ Het opnieuw indexeren van out-of-band minimaliseert het effect van het opnieuw i
 
 >[!NOTE]
 >
->ACS Zorg ervoor dat Index een door de gemeenschap ondersteund project is en niet door de ondersteuning van Adobe wordt ondersteund.
+>ACS verzekert Index een communautair gesteund project is, en niet door de Steun van Adobe wordt gesteund.
 
-Zo kan de definitie van de verzendindex worden gedefinieerd via een inhoudspakket, wat later leidt tot een nieuwe index via de herindexmarkering op `true`. Dit werkt voor kleinere instellingen waarbij het opnieuw indexeren niet lang duurt.
+Zo kan de definitie van de verzendindex worden gedefinieerd via een inhoudspakket, wat later leidt tot een nieuwe index door de herindexmarkering in te stellen op `true`. Dit werkt voor kleinere instellingen waarbij het opnieuw indexeren niet lang duurt.
 
 Voor meer informatie, zie [ACS verzekert de documentatie](https://adobe-consulting-services.github.io/acs-aem-commons/features/ensure-oak-index/index.html) van de Index voor details.
 
 ### Indexdefinities maken en bijwerken op TarMK met behulp van eak-run.jar {#creatingandupdatingindexdefinitionsontarmkusingoak-run-jar}
 
-Als het tijd- of prestatieseffect van het opnieuw indexeren met niet- `oak-run.jar` methodes te hoog is, kan de volgende `oak-run.jar` gebaseerde benadering worden gebruikt om de definities van de Index van Lucene in een op TarMK gebaseerde AEM installatie in te voeren en opnieuw te indexeren.
+Als de tijd of het prestatieseffect van het opnieuw indexeren gebruikend niet `oak-run.jar` methodes te hoog is, kan de volgende `oak-run.jar` gebaseerde benadering worden gebruikt om de definities van de Index van Lucene in een op TarMK gebaseerde AEM in te voeren en opnieuw te indexeren.
 
 ![10](assets/10.png)
 
 ### Indexdefinities maken en bijwerken op MonogMK met behulp van eak-run.jar {#creatingandupdatingindexdefinitionsonmonogmkusingoak-run-jar}
 
-Als het tijd- of prestatieeffect van het opnieuw indexeren met niet- `oak-run.jar` methodes te hoog is, kan de volgende `oak-run.jar` gebaseerde benadering worden gebruikt om de definities van de Index van Lucene in op MongoMK gebaseerde AEM installaties in te voeren en opnieuw te indexeren.
+Als de tijd of het prestatieseffect van het opnieuw indexeren gebruikend niet `oak-run.jar` methodes te hoog is, kan de volgende `oak-run.jar` gebaseerde benadering worden gebruikt om de definities van de Index van Lucene in op MongoMK gebaseerde AEM in te voeren en opnieuw te indexeren.
 
 ![11](assets/11.png)
 
