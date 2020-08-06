@@ -21,15 +21,15 @@ ht-degree: 1%
 
 ## Voorbeeldoverzicht {#sample-overview}
 
-Met concepten en verzendingscomponenten van een AEM Forms-portal kunnen gebruikers hun formulieren opslaan als concepten en deze later verzenden vanaf elk apparaat. Gebruikers kunnen hun ingevulde formulieren ook via een portal bekijken. Om deze functionaliteit in te schakelen, bieden AEM Forms gegevens- en metagegevensservices voor het opslaan van de gegevens die een gebruiker heeft ingevuld in het formulier en de metagegevens van het formulier die zijn gekoppeld aan concepten en verzonden formulieren. Deze gegevens worden standaard opgeslagen in de CRX-opslagplaats. Als gebruikers echter via de publicatieversie van AEM met formulieren werken, wat doorgaans buiten de bedrijfsfirewall valt, willen organisaties wellicht gegevensopslag aanpassen om deze beter te beveiligen en betrouwbaarder te maken.
+Met concepten en verzendingscomponenten van AEM Forms-portaalsites kunnen gebruikers hun formulieren opslaan als concepten en later verzenden vanaf elk apparaat. Gebruikers kunnen hun ingevulde formulieren ook via een portal bekijken. Om deze functionaliteit in te schakelen, biedt AEM Forms gegevens- en metagegevensservices waarmee de gegevens die een gebruiker heeft ingevuld, worden opgeslagen in het formulier en de metagegevens van het formulier die zijn gekoppeld aan concepten en verzonden formulieren. Deze gegevens worden standaard opgeslagen in de CRX-opslagplaats. Als gebruikers echter via AEM publicatieexemplaar met formulieren werken, wat doorgaans buiten de bedrijfsfirewall valt, willen organisaties wellicht gegevensopslag aanpassen om deze beter te beveiligen en betrouwbaarder te maken.
 
 Het voorbeeld, dat in dit document wordt besproken, is een referentie-implementatie van aangepaste gegevens en metagegevensservices om concepten en verzendingscomponenten te integreren in een database. De database die wordt gebruikt in de voorbeeldimplementatie is **MySQL 5.6.24**. U kunt echter de concepten en verzendingscomponent integreren met elke database van uw keuze.
 
 >[!NOTE]
 >
 >* De voorbeelden en configuraties die in dit document worden uitgelegd, zijn in overeenstemming met MySQL 5.6.24 en u moet deze op de juiste wijze vervangen voor uw databasesysteem.
->* Zorg ervoor dat u de nieuwste versie van het invoegpakket AEM Forms hebt geïnstalleerd. Raadpleeg het artikel over releases van [AEM Forms](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor de lijst met beschikbare pakketten.
->* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptieve formulieren.
+>* Controleer of u de nieuwste versie van het AEM Forms-invoegpakket hebt geïnstalleerd. Raadpleeg het artikel over [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor een lijst met beschikbare pakketten.
+>* Het voorbeeldpakket werkt alleen met verzendacties voor Adaptive Forms.
 
 
 ## Het voorbeeld instellen en configureren {#set-up-and-configure-the-sample}
@@ -42,7 +42,7 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
 
    [Bestand ophalen](assets/aem-fp-db-integration-sample-pkg-6.1.2.zip)
 
-1. Ga naar AEM package manager op https://[*host*]:[*port*]/crx/packmgr/.
+1. Ga naar AEM pakketbeheer op https://[*host*]:[*port*]/crx/packmgr/.
 1. Klik op **[!UICONTROL Upload Package]**.
 
 1. Blader naar het **zip-pakket aem-fp-db-integration-sample-pkg-6.1.2.zip** en klik op **[!UICONTROL OK]**.
@@ -55,11 +55,11 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
    | **Eigenschap** | **Beschrijving** | **Waarde** |
    |---|---|---|
    | Forms Portal Conceptgegevensservice | Id voor conceptgegevensservice | formsportal.sampledataservice |
-   | Forms Portal-service met metagegevens | Identificatiecode voor service met metagegevens van concept | formsportal.samplemetadataservice |
+   | Forms Portal Draft Metadata Service | Identificatiecode voor service met metagegevens van concept | formsportal.samplemetadataservice |
    | Forms Portal verzendt Data Service | Id voor verzendgegevensservice | formsportal.sampledataservice |
    | Forms Portal verzendt metagegevensservice | Id voor verzendmetagegevensservice | formsportal.samplemetadataservice |
-   | Formulierportaal in afwachting van de service Gegevens ondertekenen | Identifier voor de dataservice in afwachting van ondertekening | formsportal.sampledataservice |
-   | Forms Portal Pending Sign Metadata Service | Identificatiecode voor de metagegevensservice in afwachting van ondertekening | formsportal.samplemetadataservice |
+   | Forms Portal in afwachting van Sign Data Service | Identifier voor de dataservice in afwachting van ondertekening | formsportal.sampledataservice |
+   | Forms Portal in afwachting van Sign Metadata Service | Identificatiecode voor de metagegevensservice in afwachting van ondertekening | formsportal.samplemetadataservice |
 
    >[!NOTE]
    >
@@ -76,10 +76,11 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
 
    Een andere naam opgeven voor de metagegevenstabel:
 
-   * Zoek in de configuratie van de webconsole naar en klik op Forms Portal Metadata Service Sample Implementation. U kunt de waarden van gegevensbron, meta-gegevens/extra naam van de meta-gegevenslijst veranderen.
+   * Zoek in de webconsoleconfiguratie naar en klik op Voorbeeldimplementatie van Forms Portal Metadata Service. U kunt de waarden van gegevensbron, meta-gegevens/extra naam van de meta-gegevenslijst veranderen.
+
    Een andere naam voor de gegevenstabel opgeven:
 
-   * In de Configuratie van de Console van het Web, vind en klik de Steekproef van de Dienst van Gegevens van het Portaal van Vormen Implementatie. U kunt de waarden van gegevensbron en naam van de gegevenslijst veranderen.
+   * Zoek en klik in de webconsoleconfiguratie op Voorbeeldimplementatie van Forms Portal Data Service. U kunt de waarden van gegevensbron en naam van de gegevenslijst veranderen.
    >[!NOTE]
    >
    >Als u de tabelnamen wijzigt, geeft u deze op in de configuratie Formulierportal.
@@ -162,6 +163,7 @@ Voer de volgende stappen uit, op alle auteur en publiceer instanties, om de stee
 >
 > * Het JDBC-stuurprogramma voor MySQL wordt niet bij het voorbeeld geleverd. Zorg ervoor dat u daarvoor de provisioned hebt en verstrek de vereiste informatie om de JDBC verbindingspool te vormen.
 > * Wijs de auteur aan en publiceer instanties om het zelfde gegevensbestand te gebruiken. De waarde van het veld URI van de JDBC-verbinding moet gelijk zijn voor alle auteur- en publicatie-instanties.
+
 >
 
 
@@ -324,7 +326,7 @@ Het volgende ZIP bevat `FormsPortalSampleDataServiceImpl` en `FormsPortalSampleM
 
 ## De lengte van de bestandsnaam controleren  {#verify-length-of-the-file-name}
 
-Voor de implementatie van de database van Forms Portal wordt een extra tabel met metagegevens gebruikt. De tabel heeft een samengestelde primaire sleutel die is gebaseerd op de kolommen Key en id van de tabel. MySQL staat primaire sleutels tot de lengte van 255 karakters toe. U kunt het volgende validatiescript aan de clientzijde gebruiken om de lengte te controleren van de bestandsnaam die aan de bestandswidget is gekoppeld. De validatie wordt uitgevoerd wanneer een bestand wordt gekoppeld. Het script dat in de volgende procedure wordt weergegeven, geeft een bericht weer wanneer de bestandsnaam groter is dan 150 (inclusief de extensie). U kunt het script wijzigen om te controleren op een ander aantal tekens.
+De implementatie van de database van Forms Portal maakt gebruik van extra metagegevenstabel. De tabel heeft een samengestelde primaire sleutel die is gebaseerd op de kolommen Key en id van de tabel. MySQL staat primaire sleutels tot de lengte van 255 karakters toe. U kunt het volgende validatiescript aan de clientzijde gebruiken om de lengte te controleren van de bestandsnaam die aan de bestandswidget is gekoppeld. De validatie wordt uitgevoerd wanneer een bestand wordt gekoppeld. Het script dat in de volgende procedure wordt weergegeven, geeft een bericht weer wanneer de bestandsnaam groter is dan 150 (inclusief de extensie). U kunt het script wijzigen om te controleren op een ander aantal tekens.
 
 Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/clientlibs.md) te maken en het script te gebruiken:
 
@@ -401,7 +403,7 @@ Voer de volgende stappen uit om [een clientbibliotheek](/help/sites-developing/c
    >
    >Het script is bedoeld voor een component van de box-widget voor bijlagen (OOTB). Als u de OOTB gehechtheidswidget hebt aangepast dan verander het bovengenoemde manuscript om respectieve veranderingen op te nemen.
 
-1. Voeg de volgende eigenschap toe aan de map die in stap 2 is gemaakt en klik op **[!UICONTROL Save All]**.
+1. Voeg de volgende eigenschap toe aan de map die u in stap 2 hebt gemaakt en klik op **[!UICONTROL Save All]**.
 
    * **[!UICONTROL Name:]** categorieën
 
