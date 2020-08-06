@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8c2567f3-7220-436a-b9f2-2824a98c1ccc
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -26,17 +29,17 @@ Wanneer een proces stagneert, worden geen verdere verrichtingen in werking geste
 
 Voor elk opgebouwd punt, toont de lijst de volgende informatie:
 
-**** Naam van bewerking of tak: De naam van de bewerking of vertakking.
+**Naam van bewerking of tak:** De naam van de bewerking of vertakking.
 
-**** Status: Altijd STALLED voor opgezette items.
+**Status:** Altijd STALLED voor opgezette items.
 
-**** Fout: Een korte beschrijving van het probleem.
+**Fout:** Een korte beschrijving van het probleem.
 
-**** Proces-id: Het positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
+**Proces-id:** Het positieve gehele getal dat door de formulierworkflow wordt toegewezen wanneer het proces wordt geïnstantieerd (wanneer een gebruiker of een geautomatiseerde stap een proces start). U kunt deze id gebruiken om de procesinstantie door de levenscyclus te volgen.
 
-**** Procesnaam - Versie: De naam van het proces dat is toegewezen in Workbench.
+**Procesnaam - Versie:** De naam van het proces dat is toegewezen in Workbench.
 
-**** Opgeslagen datum: De datum en tijd waarop de bewerking of vertakking is gestapeld.
+**Opgeslagen datum:** De datum en tijd waarop de bewerking of vertakking is gestapeld.
 
 U kunt de volgende taken op de Geroepen pagina van Verrichtingen of Geroepen Tanden doen:
 
@@ -51,7 +54,7 @@ Wanneer u een procesinstantie beëindigt, houdt het op lopend en geen verdere ve
 
 Op de Geroepen pagina van Verrichtingen of de Geroepen pagina van Vertakkingen, kunt u de verrichting of de tak opnieuw proberen.
 
-Wanneer u een bewerking opnieuw uitvoert, wordt een aanvraag voor het opnieuw starten van de bewerking verzonden naar de Forms-workflow. Als de fout die het proces aan stagnatie veroorzaakte is opgelost en het verzoek om opnieuw te proberen succesvol is, begint het proces opnieuw lopend van het punt het, en zijn statusveranderingen in RUNNING. Als de bewerking niet opnieuw kan worden gestart, blijft deze STALLED en moet u deze wellicht beëindigen.
+Wanneer u een bewerking opnieuw uitvoert, wordt een verzoek verzonden om de bewerking opnieuw te starten. Als de fout die het proces aan stagnatie veroorzaakte is opgelost en het verzoek om opnieuw te proberen succesvol is, begint het proces opnieuw lopend van het punt het, en zijn statusveranderingen in RUNNING. Als de bewerking niet opnieuw kan worden gestart, blijft deze STALLED en moet u deze wellicht beëindigen.
 
 ### Een gestapelde bewerking beëindigen {#terminate-a-stalled-operation}
 
@@ -73,11 +76,11 @@ U kunt opgezette bewerkingen ook beëindigen of opnieuw proberen en opgezette ve
 
 ## Het proces wordt niet vastgezet als de escalatiegebruiker niet bestaat {#process-does-not-stall-when-escalation-user-does-not-exist}
 
-De fouten komen voor wanneer de Assign verrichting van de Taak in de dienst van de Gebruiker van de Vormen AEM wordt gevormd om de taak aan een andere gebruiker na een specifieke periode te escaleren, en de escalatiegebruiker wordt geschrapt nadat de Assign verrichting van de Taak uitvoert maar alvorens de escalatie voorkomt.
+De fouten komen voor wanneer de Assign verrichting van de Taak in de dienst van de Gebruiker van de AEM vormen wordt gevormd om de taak aan een andere gebruiker na een specifieke periode te escaleren, en de escalatiegebruiker wordt geschrapt nadat de Assign verrichting van de Taak uitvoert maar alvorens de escalatie voorkomt.
 
 Wanneer deze situatie voorkomt, verandert de staat van het proces en de taak niet in de gevormde escalatietijd, en de escalatie komt niet voor maar het proces stagneert niet. Het volgende bericht wordt weergegeven in het serverlogboek:
 
-&quot;Het hoofd dat voor escalatie wordt gespecificeerd is ongeldig, voor taskID: *nummer*, opgegeven wachtrij: *getal*.&quot;
+&quot;Het hoofd dat voor escalatie wordt gespecificeerd is ongeldig, voor taskID: *getal*, opgegeven wachtrij: *getal*.&quot;
 
 Als de escalatiegebruiker wordt geschrapt alvorens de taak wordt geproduceerd (alvorens de Assign verrichting van de Taak uitvoert), wordt de processtalls of de InvalidPrincipal uitzonderingsgebeurtenis geworpen.
 
