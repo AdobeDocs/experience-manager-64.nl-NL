@@ -1,8 +1,8 @@
 ---
 title: API-hulplijnen
 seo-title: API-hulplijnen
-description: Documentatie voor de API's die AEM biedt voor het ontwikkelen van toepassingen
-seo-description: Documentatie voor de API's die AEM biedt voor het ontwikkelen van toepassingen
+description: Documentatie voor de API's die AEM voor het ontwikkelen van toepassingen
+seo-description: Documentatie voor de API's die AEM voor het ontwikkelen van toepassingen
 uuid: 4ace24c8-8bdf-4c68-b21d-ad2c03cf7362
 contentOwner: Guillaume Carlino
 topic-tags: introduction
@@ -12,13 +12,16 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 39d1cb2e-18f5-4d08-b983-a06b1f470c51
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '274'
+ht-degree: 0%
 
 ---
 
 
 # API-hulplijnen{#api-guides}
 
-AEM biedt verschillende API&#39;s voor het ontwikkelen van toepassingen. De volgende lijst bevat de documentatie voor API&#39;s die door AEM worden ondersteund:
+AEM biedt verschillende API&#39;s voor het ontwikkelen van toepassingen. De volgende lijst bevat de documentatie voor API&#39;s die worden ondersteund door AEM:
 
 * [Adobe AEM 6.4.0 API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html)
 
@@ -34,14 +37,14 @@ AEM biedt verschillende API&#39;s voor het ontwikkelen van toepassingen. De volg
 
 * [Editor Core JavaScript API Reference](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)
 
-JavaScript API-referenties van de AEM Single-Page Application (SPA) Editor SDK-framework:
+AEM Single-Page Application (SPA) Editor SDK framework JavaScript API-referenties:
 
 * [Componenttoewijzing](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
 * [Paginamodellenbeheer](https://www.npmjs.com/package/@adobe/cq-spa-page-model-manager)
 * [Bewerkbare componenten Reageren](https://www.npmjs.com/package/@adobe/cq-react-editable-components)
 * [Hoekbewerkbare componenten](https://www.npmjs.com/package/@adobe/cq-angular-editable-components)
 
-API&#39;s voor AEM-levering en inhoudsbeheer:
+API&#39;s voor levering en inhoudsbeheer AEM:
 
 * Core Components (JSON)
 
