@@ -1,8 +1,8 @@
 ---
-title: AEM Tagging Framework
-seo-title: AEM Tagging Framework
-description: Inhoud labelen en de infrastructuur voor AEM-tags gebruiken
-seo-description: Inhoud labelen en de infrastructuur voor AEM-tags gebruiken
+title: Kader voor tags AEM
+seo-title: Kader voor tags AEM
+description: Inhoud labelen en gebruikmaken van de infrastructuur voor tags AEM
+seo-description: Inhoud labelen en gebruikmaken van de infrastructuur voor tags AEM
 uuid: 55ba5977-217b-4b0f-a794-ddb9216ee62b
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# AEM Tagging Framework{#aem-tagging-framework}
+# Kader voor tags AEM{#aem-tagging-framework}
 
-Inhoud labelen en de infrastructuur voor AEM-tags gebruiken:
+U kunt als volgt de inhoud labelen en de infrastructuur voor AEM tags gebruiken:
 
 * De tag moet bestaan als een knooppunt van het type [`cq:Tag`](#tags-cq-tag-node-type) onder de [taxonomy root node](#taxonomy-root-node)
 
@@ -174,7 +174,7 @@ Een gebruikelijke praktijk omvat:
 
 Toepassingsontwikkelaars kunnen codering aan een inhoudstype koppelen als de registratie ([CND](https://jackrabbit.apache.org/node-type-notation.html)) van het knooppunt de `cq:Taggable` mixin of de `cq:OwnerTaggable` mixin bevat.
 
-De `cq:OwnerTaggable` mix, die overerft van `cq:Taggable`, is bedoeld om aan te geven dat de inhoud kan worden geclassificeerd door de eigenaar/auteur. In AEM is het alleen een kenmerk van het `cq:PageContent` knooppunt. Het `cq:OwnerTaggable` coderingskader vereist geen mixine.
+De `cq:OwnerTaggable` mix, die overerft van `cq:Taggable`, is bedoeld om aan te geven dat de inhoud kan worden geclassificeerd door de eigenaar/auteur. In AEM, is het slechts een attribuut van de `cq:PageContent` knoop. Het `cq:OwnerTaggable` coderingskader vereist geen mixine.
 
 >[!NOTE]
 >
@@ -184,6 +184,7 @@ De `cq:OwnerTaggable` mix, die overerft van `cq:Taggable`, is bedoeld om aan te 
    >
    >
 * assets ( `cq:Asset`) waarbij het `jcr:content/metadata` knooppunt altijd de `cq:Taggable` mixin heeft.
+
 >
 
 
@@ -192,7 +193,7 @@ De `cq:OwnerTaggable` mix, die overerft van `cq:Taggable`, is bedoeld om aan te 
 
 Node Type definities bestaan in de bewaarplaats als Cnd- dossiers. De CND-notatie wordt [hier](https://jackrabbit.apache.org/node-type-notation.html)gedefinieerd als onderdeel van de JCR-documentatie.
 
-De belangrijkste definities voor de in de AEM opgenomen knooppunttypen zijn:
+De belangrijkste definities voor de in AEM opgenomen knooppunttypen zijn:
 
 ```xml
 [cq:Tag] > mix:title, nt:base
@@ -215,7 +216,7 @@ De `cq:tags` eigenschap is een array String die wordt gebruikt om een of meer ta
 
 >[!NOTE]
 >
->Als u de functionaliteit voor AEM-labeling wilt gebruiken, mogen aangepaste toepassingen alleen `cq:tags`tageigenschappen definiëren.
+>Als u AEM tagfuncties wilt gebruiken, moeten aangepaste toepassingen alleen tageigenschappen definiëren `cq:tags`.
 
 ## Labels verplaatsen en samenvoegen {#moving-and-merging-tags}
 
@@ -259,7 +260,7 @@ Hieronder volgt een beschrijving van de effecten in de opslagplaats bij het verp
 
 ## Tags migreren {#tags-migration}
 
-Experience Manager 6.4 en later worden tags onder opgeslagen `/content/cq:tags`, die eerder onder `/etc/tags`. In scenario&#39;s waarin de Adobe Experience Manager is bijgewerkt vanaf de vorige versie, zijn de tags echter nog steeds aanwezig op de oude locatie `/etc/tags`. In geüpgrade systemen moeten codes worden gemigreerd onder `/content/cq:tags`.
+Experience Manager 6.4 en verder worden de markeringen opgeslagen onder `/content/cq:tags`, die vroeger werden opgeslagen onder `/etc/tags`. In scenario&#39;s waarin Adobe Experience Manager vanaf de vorige versie is geüpgraded, zijn de tags echter nog steeds aanwezig onder de oude locatie `/etc/tags`. In geüpgrade systemen moeten codes worden gemigreerd onder `/content/cq:tags`.
 
 >[!NOTE]
 >
@@ -333,13 +334,13 @@ println "---------------------------------Success-------------------------------
 
 Het script haalt alle tags op die `/etc/tags` in de waarde van de `cq:movedTo/cq:backLinks` eigenschap staan. Vervolgens wordt de opgehaalde resultaatset doorlopen en worden de waarden van `cq:movedTo` en de `cq:backlinks` eigenschap omgezet in `/content/cq:tags` paden (wanneer `/etc/tags` deze worden gedetecteerd in de waarde).
 
-**Als de geüpgrade AEM-instantie wordt uitgevoerd op de klassieke UI**
+**Als de bijgewerkte AEM-instantie wordt uitgevoerd op de klassieke UI**
 
 >[!NOTE]
 >
 >Klassieke UI is niet nul onderbreking volgzaam en steunt geen nieuw weg van de markeringsbasis. Als u klassieke UI wilt gebruiken dan `/etc/tags` moet worden gecreeerd gevolgd door `cq-tagging` componentenherstart.
 
-In het geval van bijgewerkte AEM-instanties die worden ondersteund door de API van TagManager en worden uitgevoerd in de klassieke gebruikersinterface:
+In het geval van bijgewerkte AEM die door TagManager API worden gesteund en in Klassieke UI lopen:
 
 1. Als verwijzingen naar het oude basispad van een tag `/etc/tags` zijn vervangen door tagId of een nieuwe taglocatie `/content/cq:tags`, kunt u tags migreren naar de nieuwe locatie `/content/cq:tags` in CRX, gevolgd door het opnieuw opstarten van de component.
 
