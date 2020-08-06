@@ -25,9 +25,9 @@ Deze zelfstudie is een stap in de [serie Uw eerste adaptieve formulier](/help/fo
 
 ## Over de zelfstudie {#about-the-tutorial}
 
-Met de AEM Forms-gegevensintegratiemodule kunt u een formuliergegevensmodel maken van verschillende bronnen met back-endgegevens, zoals het AEM-gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
+Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
-Voor meer informatie over de integratie van vormgegevens en het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
+Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md)voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel.
 
 Deze zelfstudie begeleidt u door de stappen voor het voorbereiden, maken, configureren en koppelen van een formuliergegevensmodel aan een adaptief formulier. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -58,7 +58,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 1. Installeer het JDBC-stuurprogramma voor MySQL-database als een OSGi-bundel:
 
-   1. Meld u aan bij de Auteur-instantie van AEM Forms als beheerder en ga naar de bundels van de AEM-webconsole. De standaard-URL is [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
+   1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. De standaard-URL is [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
    1. Tik op **Installeren/bijwerken**. Het dialoogvenster **Bundels** uploaden/installeren wordt weergegeven.
 
@@ -66,7 +66,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 1. MySQL-database configureren als gegevensbron:
 
-   1. Ga naar AEM-webconsole op [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+   1. Ga naar AEM webconsole op [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
    1. Zoek de configuratie **van Apache Sling Connection Pooled DataSource** . Tik om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
@@ -80,6 +80,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
       * **Testen op rendement:** Schakel de optie **Testen op terugkeer** in.
       * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld, **uitgezocht &amp;ast; van klantgegevens**.
       * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
+
       Laat andere eigenschappen de [standaardwaarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) behouden en tik op **Opslaan**.
    Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
 
@@ -91,7 +92,7 @@ AEM Forms biedt een intuïtieve gebruikersinterface voor het [maken van een form
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
-1. Navigeer in de auteur van AEM naar **Forms** > **Data** Integrations.
+1. Navigeer in AEM auteurinstantie naar **Forms** > **Data** Integrations.
 1. Tik op **Maken** > **Formuliergegevensmodel**.
 1. Geef in het dialoogvenster Formuliergegevensmodel een **naam** op voor het formuliergegevensmodel. Bijvoorbeeld **klant-verzend-facturerings-details**. Tik op **Volgende**.
 1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteer **WeRetailMySQL** -gegevensbron en tik op **Maken**.
@@ -109,7 +110,7 @@ Het configureren van het formuliergegevensmodel omvat:
 
 Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
-1. Navigeer in de auteur van AEM naar **Forms > Gegevensintegratie**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
+1. Navigeer bij AEM auteurinstantie naar **Forms > Gegevensintegratie**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
 1. Hier wordt het formuliergegevensmodel weergegeven dat u eerder hebt gemaakt en waarin de **klant gegevens over** de facturering opgeeft. Open het in bewerkingsmodus.
 
    De geselecteerde gegevensbron **WeRetailMySQL** wordt gevormd in het model van vormgegevens.
@@ -130,6 +131,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
       * get
       * update
+
    Tik op Geselecteerde **gegevensmodelobjecten en -services** toevoegen aan het formuliergegevensmodel.
 
    ![weretail-schema](assets/weretail-schema.png)
@@ -174,6 +176,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
          customerdetail-schema
       * **Retourarray**: Schakel de optie **Retourarray** uit.
       * **Argumenten**: Selecteer een argument met de naam **ID**.
+
       Tik **op Gereed**. De dienst om klantendetails van het gegevensbestand terug te winnen MySQL wordt gevormd.
 
       ![verzendadres-herwinning](assets/shiiping-address-retrieval.png)
@@ -194,6 +197,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
       * **Uitvoertype**: Selecteer **BOOLEAN**.
       * **Argumenten**: Selecteer een argument met de naam **ID** en **klantgegevens**.
+
       Tik **op Gereed**. De **updateservice** om klantendetails in het gegevensbestand bij te werken MySQL wordt gevormd.
 
       ![send-address-update](assets/shiiping-address-update.png)
