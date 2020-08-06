@@ -31,25 +31,26 @@ U kunt de gebruikersinterface voor gecontroleerde mappen gebruiken voor:
 
 Controleer het volgende voordat u een gecontroleerde map configureert:
 
-* Gecontroleerde mappen zijn een geavanceerde functie van AEM-formulieren. Hiervoor is een invoegpakket voor AEM-formulieren vereist. Zorg ervoor dat het juiste invoegpakket voor AEM Forms is geïnstalleerd en geconfigureerd.
-* U kunt de gecontroleerde map maken op een gedeelde of lokale opslaglocatie. Zorg ervoor dat gebruikers van AEM-formulieren die zijn geconfigureerd om de gecontroleerde map uit te voeren, lees- en schrijfmachtigingen hebben voor de gecontroleerde map.
+* Gecontroleerde mappen zijn een geavanceerde functie voor AEM formulieren. U kunt hiervoor AEM formulierinvoegpakket gebruiken. Zorg ervoor dat het juiste AEM Forms-invoegtoepassingspakket is geïnstalleerd en geconfigureerd.
+* U kunt de gecontroleerde map maken op een gedeelde of lokale opslaglocatie. Zorg ervoor dat AEM gebruiker die is geconfigureerd om de gecontroleerde map uit te voeren, lees- en schrijfmachtigingen heeft voor de gecontroleerde map.
 * U kunt een service, workflow of script gebruiken om een bewerking met een gecontroleerde map te automatiseren. Zorg ervoor dat de bijbehorende service, workflow of een script is gemaakt en klaar is om te worden uitgevoerd. Voor informatie over het creëren van de Dienst, het Werkschema, en het Manuscript, zie [Verschillende methodes om dossiers](/help/forms/using/watched-folder-in-aem-forms.md#various-methods-for-processing-files)te verwerken.
 * Een gecontroleerde map heeft verschillende eigenschappen. Zie [Gecontroleerde mapeigenschappen](/help/forms/using/watched-folder-in-aem-forms.md#watchedfolderproperties).
 
 Voer de volgende stappen uit om een controlemap te maken:
 
-1. Tik op het pictogram **Adobe Experience Manager** in de linkerbovenhoek van het scherm.
-1. Tik op **Gereedschappen** > **Formulieren** > Gecontroleerde map **configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
+1. Tik op het **Adobe Experience Manager** -pictogram in de linkerbovenhoek van het scherm.
+1. Tik op **Gereedschappen** > **Forms** > Gecontroleerde map **configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
 1. Tik op **Nieuw**. Er wordt een lijst weergegeven met velden die vereist zijn om de controlemap te maken:
 
    * **Naam**: Hiermee wordt de gecontroleerde map aangegeven. Gebruik voor de naam alleen alfanumerieke tekens.
-   * **Pad**: Hier geeft u de locatie van de gecontroleerde map op. In een gegroepeerde omgeving, moet dit plaatsen aan een gedeelde netwerkomslag richten die voor elke gebruiker toegankelijk is die AEM op verschillende knopen van een cluster in werking stelt.
+   * **Pad**: Hier geeft u de locatie van de gecontroleerde map op. In een gegroepeerd milieu, moet dit plaatsen aan een gedeelde netwerkomslag richten die voor elke gebruiker toegankelijk is die AEM op verschillende knopen van een cluster in werking stelt.
    * **Bestanden verwerken met**: Het type proces dat moet worden gestart. U kunt werkschema, manuscript, of de dienst specificeren.
    * **Servicenaam/Script-pad/workflowpad**: Het gedrag van het veld is gebaseerd op de waarde die is opgegeven voor het veld **Bestanden verwerken met** . U kunt de volgende waarden opgeven:
 
       * Geef voor Workflow het workflowmodel op dat moet worden uitgevoerd. Bijvoorbeeld /etc/workflow/models/&lt;workflow_naam>/jcr:content/model
       * Geef bij Script het JCR-pad op van het script dat moet worden uitgevoerd. Bijvoorbeeld /etc/watchfolder/test/testScript.ecma
       * Voor de Dienst, specificeer de filter die voor de plaats van de plaats van een dienst OSGi wordt gebruikt. De service is geregistreerd als een implementatie van com.adobe.aemfd.watchfolder.service.api.ContentProcessor Interface. De volgende code is bijvoorbeeld een aangepaste implementatie van de interface ContentProcessor met een aangepaste eigenschap (foo=bar).
+
    >[!NOTE]
    >
    >Als u **Service** hebt geselecteerd voor het veld **Bestanden verwerken met** , moet de waarde van het veld Servicenaam (inputProcessorType) tussen haakjes staan. Bijvoorbeeld (foo=bar).
@@ -105,7 +106,7 @@ Voer de volgende stappen uit om een controlemap te maken:
 
       Als het scaninterval klein is, scannen de threads de invoermap vaak. Als bestanden vaak in de controlemap worden neergezet, moet u het scaninterval klein houden. Als de dossiers niet vaak worden gelaten vallen, gebruik een groter aftasteninterval zodat de andere diensten de draden kunnen gebruiken.
 
-   * **Throttle On:** Als deze optie is ingeschakeld, wordt het aantal controletaken dat door AEM-formulieren op een bepaald moment wordt verwerkt, beperkt. De waarde voor Batchgrootte bepaalt het maximale aantal taken. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
+   * **Throttle On:** Als deze optie is ingeschakeld, beperkt deze het aantal gecontroleerde maptaken dat op een bepaald moment AEM formulieren verwerkt. De waarde voor Batchgrootte bepaalt het maximale aantal taken. For more information, see [throttling](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md#about-throttling)
    * **Bestaande bestanden met dezelfde naam** overschrijven: Als u de waarde True instelt, worden de bestanden in de map results en preserve overschreven. Wanneer ingesteld op Onwaar, worden bestanden en mappen met het numerieke indexachtervoegsel gebruikt voor de naam. De standaardwaarde is False.
    * **Bestanden behouden bij fout:** Als u deze optie instelt op Waar, blijven de invoerbestanden behouden in het geval van een fout. De standaardwaarde is true.
    * **Bestanden opnemen met patroon:** Geef een door puntkomma&#39;s (;) gescheiden lijst met patronen op die in de gecontroleerde map wordt gebruikt om te bepalen welke mappen en bestanden worden gescand en opgehaald. Als bijvoorbeeld het Include Patroon van het Dossier input&amp;amp is;ast;, alle dossiers en omslagen die input&amp;amp aanpassen;ast; worden opgepakt. Voor meer informatie, zie de Hulp van het [Beleid](/help/forms/using/admin-help/configuring-watched-folder-endpoints.md)
@@ -119,7 +120,7 @@ Voer de volgende stappen uit om een controlemap te maken:
 U kunt niet alleen de naam van de gecontroleerde map wijzigen, maar ook alle eigenschappen van een bestaande controlemap wijzigen. Voer de volgende stappen uit om eigenschappen van een bestaande controlemap te wijzigen:
 
 1. Tik op het **Adobe Experience Manager** -pictogram in de linkerbovenhoek van het scherm.
-1. Tik op **Gereedschappen** > **Formulieren** > Gecontroleerde map **configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
+1. Tik op **Gereedschappen** > **Forms** > Gecontroleerde map **configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
 1. Selecteer links in het scherm Gecontroleerde map de controlemap en tik op **Bewerken.** Er wordt een lijst weergegeven met velden die nodig zijn om de controlemap te maken. De velden op het tabblad **Standaard** zijn verplicht. Het geavanceerde tabblad bevat meer velden. De meeste van deze velden bevatten een standaardwaarde. U kunt deze eigenschappen naar wens wijzigen.
 1. Tik op **Bijwerken** nadat u de eigenschappen hebt gewijzigd. De gewijzigde eigenschappen worden opgeslagen.
 
