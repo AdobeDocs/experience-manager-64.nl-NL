@@ -1,6 +1,6 @@
 ---
 title: Aanbevolen werkwijzen voor het verschuiven van elementen
-description: Aanbevolen gebruiksscenario's en aanbevolen procedures voor het offloaden van asset-opname- en replicatieworkflows in AEM Assets.
+description: Aanbevolen gebruiksgevallen en aanbevolen procedures voor het offloaden van workflows voor het opnemen en repliceren van bedrijfsmiddelen in AEM Assets.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
@@ -15,17 +15,17 @@ ht-degree: 0%
 
 >[!WARNING]
 >
->Deze functie is verouderd vanaf AEM 6.4 en wordt verwijderd uit AEM 6.5. Plan dienovereenkomstig.
+>Deze functie is vervangen AEM 6.4 en wordt verwijderd in AEM 6.5. Plan dienovereenkomstig.
 
-Het verwerken van grote bestanden en het uitvoeren van workflows in Adobe Experience Manager (AEM)-middelen kan aanzienlijke CPU-, geheugen- en I/O-bronnen in beslag nemen. Met name de grootte van middelen, workflows, het aantal gebruikers en de frequentie waarmee activa worden ingevoerd, kunnen van invloed zijn op de algehele systeemprestaties. Tot de meest hulpbronnenintensieve bewerkingen behoren het opnemen en replicatieworkflows van AEM-middelen. Een intensief gebruik van deze workflows op één AEM-ontwerpinstantie kan een negatief effect hebben op de efficiëntie van het schrijven.
+Het verwerken van grote bestanden en het uitvoeren van workflows in Adobe Experience Manager (AEM) Assets kan aanzienlijke CPU-, geheugen- en I/O-bronnen in beslag nemen. Met name de grootte van middelen, workflows, het aantal gebruikers en de frequentie waarmee activa worden ingevoerd, kunnen van invloed zijn op de algehele systeemprestaties. De meest hulpbron-intensieve verrichtingen omvatten AEM activa opnemen en replicatiewerkschema&#39;s. Een intensief gebruik van deze workflows op één AEM ontwerpinstantie kan een negatief effect hebben op de ontwerpefficiëntie.
 
 Als u deze taken verschuift naar speciale arbeidersinstanties, kunnen de CPU-, geheugen- en IO-overheadkosten worden verminderd. Over het algemeen is het de bedoeling om taken die intensieve CPU-/geheugen-/IO-bronnen verbruiken, over te brengen naar speciale arbeidersinstanties. In de volgende secties vindt u aanbevolen gevallen voor het offloaden van middelen.
 
-## AEM Assets verschuiven {#aem-assets-offloading}
+## AEM Assets-offloading {#aem-assets-offloading}
 
 AEM Assets implementeert een native asset-specific workflowextensie voor offloading. Het bouwt op de generische werkschemauitbreiding voort die het het ontladen kader verstrekt, maar omvat extra activa-specifieke eigenschappen in de implementatie. Het doel van het offloaden van middelen is om de workflow voor DAM Update Asset op efficiënte wijze uit te voeren op een geüpload element. Bij het offloaden van elementen kunt u de innameworkflows beter beheren.
 
-## AEM Assets onderdelen verschuiven {#aem-assets-offloading-components}
+## AEM Assets-offloadonderdelen {#aem-assets-offloading-components}
 
 In het volgende diagram worden de belangrijkste componenten in het offloadproces van bedrijfsmiddelen weergegeven:
 
@@ -39,7 +39,7 @@ De workflow voor het offloaden van middelen uit DAM-update wordt uitgevoerd op d
 
 De manager van de baan verdeelt nieuwe banen aan arbeidersinstanties. Wanneer het ontwerpen van het distributiemechanisme, is het belangrijk om onderwerpenablement in aanmerking te nemen. Taken kunnen alleen worden toegewezen aan gevallen waarin het taakonderwerp is ingeschakeld. Maak het onderwerp `com/adobe/granite/workflow/offloading` op primair onbruikbaar, en laat het op de worker toe om ervoor te zorgen dat de baan aan de worker wordt toegewezen.
 
-### AEM-offloading {#aem-offloading}
+### AEM {#aem-offloading}
 
 Het offloading-framework identificeert de workflow voor het offloaden van taken die zijn toegewezen aan arbeidersinstanties en gebruikt replicatie om deze fysiek te vervoeren, inclusief hun nuttige last (bijvoorbeeld afbeeldingen die moeten worden ingeslikt) naar workers.
 
@@ -49,7 +49,7 @@ Zodra een baan op de arbeider wordt geschreven, roept de baanmanager de baancons
 
 ## Sling Topology {#sling-topology}
 
-De het Verdelen topologiegroepen AEM instanties en laat hen toe om zich van elkaar bewust te zijn, onafhankelijk van de onderliggende persistentie. Dit kenmerk van de het Verdelen topologie laat u topologieën voor niet-gegroepeerde, gegroepeerde, en gemengde scenario&#39;s tot stand brengen. Een instantie kan eigenschappen aan de volledige topologie blootstellen. Het kader verstrekt callbacks voor het luisteren aan veranderingen in de topologie (instanties en eigenschappen). De het verkopen topologie verstrekt de stichting voor het Verdelen van verdeelde banen.
+De het Verdelen topologiegroepen AEM instanties en laten hen toe om zich van elkaar bewust te zijn, onafhankelijk van de onderliggende persistentie. Dit kenmerk van de het Verdelen topologie laat u topologieën voor niet-gegroepeerde, gegroepeerde, en gemengde scenario&#39;s tot stand brengen. Een instantie kan eigenschappen aan de volledige topologie blootstellen. Het kader verstrekt callbacks voor het luisteren aan veranderingen in de topologie (instanties en eigenschappen). De het verkopen topologie verstrekt de stichting voor het Verdelen van verdeelde banen.
 
 ### Verspreide banen verkopen {#sling-distributed-jobs}
 
@@ -73,14 +73,14 @@ Het het ontladen kader komt ook met een gebruikersinterface (UI) om baanonderwer
 
 Elke implementatie is uniek en er is dus geen standaardconfiguratie voor alle offloading. In de volgende secties vindt u richtlijnen en tips en tips voor het oplossen van problemen bij het offloaden van bedrijfsmiddelen.
 
-Het ontladen van activa brengt ook algemene kosten met zich mee voor het systeem, waaronder bedrijfsoverheadkosten. Als u problemen ondervindt met het laden van middelen, raadt Adobe u aan eerst de configuratie te verbeteren zonder deze te offloaden. Overweeg de volgende opties voordat u overschakelt op het offloaden van elementen:
+Het ontladen van activa brengt ook algemene kosten met zich mee voor het systeem, waaronder bedrijfsoverheadkosten. Als u problemen ondervindt met het laden van elementen, raadt Adobe u aan eerst de configuratie te verbeteren zonder dat u dit hoeft te offloaden. Overweeg de volgende opties voordat u overschakelt op het offloaden van elementen:
 
 * Hardware schalen
 * Workflows optimaliseren
 * Tijdelijke workflows gebruiken
 * Het aantal cores beperken dat wordt gebruikt voor workflows
 
-Als u tot de conclusie komt dat het offloaden van middelen een geschikte aanpak voor u is, geeft Adobe de volgende richtlijnen:
+Als u tot de conclusie komt dat Offloading van activa een aangewezen benadering voor u is, verstrekt Adobe de volgende begeleiding:
 
 * Een op TarMK gebaseerde implementatie wordt aanbevolen
 * Op TarMK gebaseerde elementen offloading is niet ontworpen voor uitgebreide horizontale schaling
@@ -88,15 +88,15 @@ Als u tot de conclusie komt dat het offloaden van middelen een geschikte aanpak 
 
 ### Aanbevolen middelen na implementatie {#recommended-assets-offloading-deployment}
 
-Met AEM en Oak, zijn er verscheidene plaatsingsscenario&#39;s mogelijk. Voor het offloaden van middelen, wordt een op TarMK gebaseerde plaatsing met gedeelde datastore geadviseerd. Het volgende diagram schetst de geadviseerde plaatsing:
+Met AEM en eikel, zijn er verscheidene plaatsingsscenario&#39;s mogelijk. Voor het offloaden van middelen, wordt een op TarMK gebaseerde plaatsing met gedeelde datastore geadviseerd. Het volgende diagram schetst de geadviseerde plaatsing:
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
-Voor details rond het vormen van een datastore, zie het [Vormen van knoopopslag en gegevensopslag in AEM](../sites-deploying/data-store-config.md).
+Voor details rond het vormen van een datastore, zie het [Vormen knoopopslag en gegevensopslag in AEM](../sites-deploying/data-store-config.md).
 
 ### Automatisch agentenbeheer uitschakelen {#turning-off-automatic-agent-management}
 
-Adobe raadt u aan om automatisch agentbeheer uit te schakelen omdat dit geen ondersteuning biedt voor replicatie zonder binaire getallen en omdat dit verwarring kan veroorzaken wanneer u een nieuwe offloadtopologie instelt. Bovendien steunt het niet automatisch de voorwaartse replicatiestroom die door binair-minder replicatie wordt vereist.
+Adobe adviseert dat u automatisch agentenbeheer uitzet omdat het binair-geen replicatie steunt en verwarring kan veroorzaken wanneer vestiging een nieuwe het ontladen topologie. Bovendien steunt het niet automatisch de voorwaartse replicatiestroom die door binair-minder replicatie wordt vereist.
 
 1. Open Configuration Manager via de URL `http://localhost:4502/system/console/configMgr`.
 1. Open de configuratie voor `OffloadingAgentManager` (`http://localhost:4502/system/console/configMgr/com.adobe.granite.offloading.impl.transporter.OffloadingAgentManager`).
@@ -143,7 +143,7 @@ Om het vervoer van het werkschemamodel onbruikbaar te maken, wijzig de DAM Updat
 
 ### Het pollinterval optimaliseren {#optimizing-the-polling-interval}
 
-Offloading van werkstroom wordt geïmplementeerd met behulp van een externe workflow op de primaire werkstroom, die opiniepeilt voor de voltooiing van de offloaded workflow op de worker. Het standaardpollinginterval voor de externe werkstroomprocessen is vijf seconden. Adobe raadt u aan het pollinginterval van de stap Middelen die wordt verwijderd, te verhogen tot ten minste 15 seconden om de overhead van de primaire items te verminderen.
+Offloading van werkstroom wordt geïmplementeerd met behulp van een externe workflow op de primaire werkstroom, die opiniepeilt voor de voltooiing van de offloaded workflow op de worker. Het standaardpollinginterval voor de externe werkstroomprocessen is vijf seconden. Adobe raadt u aan het pollinginterval van de stap Elementen die wordt verschoven naar ten minste 15 seconden te verhogen om de overhead bij offloading op de primaire server te verminderen.
 
 1. Open de workflowconsole via [http://localhost:4502/libs/cq/workflow/content/console.html](http://localhost:4502/libs/cq/workflow/content/console.html).
 
