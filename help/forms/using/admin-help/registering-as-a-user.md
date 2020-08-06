@@ -10,6 +10,9 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '728'
+ht-degree: 0%
 
 ---
 
@@ -21,11 +24,11 @@ U kunt documenten gebruiken die met een beleid zijn beveiligd en die u van een g
 * Een gebruiker van de documentveiligheid die u een beleid-beschermd document wil verzenden voegt u aan een beleid toe.
 * Een documentbeveiligingsbeheerder maakt een account voor u.
 
-   Nadat u zich hebt geregistreerd en uw account hebt geactiveerd, kunt u met beleid beveiligde documenten gebruiken die u via een beleid kunt gebruiken. Als de documentbeveiligingsbeheerder deze functies inschakelt voor uitgenodigde gebruikers, kunt u gemachtigd zijn de volgende taken uit te voeren:
+   Nadat u zich hebt geregistreerd en uw account hebt geactiveerd, kunt u met beleid beveiligde documenten gebruiken die u via een beleid kunt gebruiken. Als de documentbeveiligingsbeheerder deze functies inschakelt voor uitgenodigde gebruikers, hebt u mogelijk toestemming om deze taken uit te voeren:
 
-* Documenten beveiligen met behulp van beveiligingsbeleid.
+* Protect-documenten met behulp van beveiligingsbeleid voor documenten.
 * Maak uw eigen gebruikersbeleid dat u op uw documenten kunt toepassen.
-* Andere externe gebruikers uitnodigen om een document te gebruiken dat met een beleid is beveiligd door ze aan het beleid toe te voegen.
+* Andere externe gebruikers uitnodigen om een document te gebruiken dat met een beleid is beveiligd door hen aan het beleid toe te voegen.
 
    Wanneer u zich registreert, hoeft u zich niet opnieuw te registreren om andere documenten te gebruiken die met een beleid zijn beveiligd. Uw account blijft actief totdat een beleidsbeheerder deze uitschakelt of verwijdert.
 
