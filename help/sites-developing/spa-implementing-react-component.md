@@ -1,8 +1,8 @@
 ---
 title: Het uitvoeren van een Component van de Reactie voor SPA
 seo-title: Het uitvoeren van een Component van de Reactie voor SPA
-description: Dit artikel stelt een voorbeeld van voor hoe te om een eenvoudige, bestaande component van de Reactie aan het werk met de Redacteur aan te passen AEM SPA.
-seo-description: Dit artikel stelt een voorbeeld van voor hoe te om een eenvoudige, bestaande component van de Reactie aan het werk met de Redacteur aan te passen AEM SPA.
+description: Dit artikel stelt een voorbeeld van voor hoe te om een eenvoudige, bestaande component van het Reageren aan het werk met de AEMRedacteur van het KUUROORD aan te passen.
+seo-description: Dit artikel stelt een voorbeeld van voor hoe te om een eenvoudige, bestaande component van het Reageren aan het werk met de AEMRedacteur van het KUUROORD aan te passen.
 uuid: aebca2ea-a020-45e1-8043-f8c21154c660
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 86a981fe-25f3-451a-b262-8c497619e0ac
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '587'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 Toepassingen van één pagina (SPAs) kunnen dwingende ervaringen voor websitegebruikers aanbieden. De ontwikkelaars willen plaatsen kunnen bouwen gebruikend het kader van het KUUROORD en de auteurs willen inhoud binnen AEM voor een plaats foutloos uitgeven die gebruikend het kader van het KUUROORD wordt gebouwd.
 
-De auteurseigenschap van het KUUROORD biedt een uitvoerige oplossing voor het steunen van SPAs binnen AEM aan. Dit artikel stelt een voorbeeld van voor hoe te om een eenvoudige, bestaande component van de Reactie aan het werk met de Redacteur aan te passen AEM SPA.
+De auteurseigenschap van het KUUROORD biedt een uitvoerige oplossing voor het steunen van SPAs binnen AEM aan. Dit artikel stelt een voorbeeld van voor hoe te om een eenvoudige, bestaande component van het Reageren aan het werk met de AEMRedacteur van het KUUROORD aan te passen.
 
 >[!NOTE]
 >De eigenschap van de Redacteur van de Toepassing van de Enige-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
@@ -28,7 +31,7 @@ De auteurseigenschap van het KUUROORD biedt een uitvoerige oplossing voor het st
 
 ## Inleiding {#introduction}
 
-Dankzij het eenvoudige en lichte contract dat door AEM wordt vereist en tussen SPA en de Redacteur van het KUUROORD gevestigd, is het nemen van een bestaande toepassing Javascript en het aanpassen van het voor gebruik met een KUUROORD in AEM een ongecompliceerde kwestie.
+Dankzij het eenvoudige en lichte contract dat door AEM wordt vereist en tussen SPA en de Redacteur van het KUUROORD gevestigd, is het nemen van een bestaande toepassing Javascript en het aanpassen van het voor gebruik met een KUUROORD in AEM een duidelijke kwestie.
 
 Dit artikel illustreert het voorbeeld van de weercomponent op het Web.Retail steekproefSPA van het Dagboek.
 
@@ -37,7 +40,7 @@ U zou met de [structuur van een toepassing van het KUUROORD voor AEM](/help/site
 >[!CAUTION]
 >Dit document gebruikt de app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal alleen voor demonstratiedoeleinden. Het mag niet worden gebruikt voor projectwerkzaamheden.
 >
->Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
+>Om het even welk AEM project zou hefboomwerking het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)van het Project, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## De component Weer {#the-weather-component}
 
@@ -47,11 +50,11 @@ De weercomponent staat linksboven in de app Web.Retail Journal. Het toont het hu
 
 ![screen_shot_2018-06-08at143224](assets/screen_shot_2018-06-08at143224.png)
 
-Wanneer het ontwerpen van inhoud van het KUUROORD in de Redacteur van het KUUROORD, verschijnt de weercomponent zoals een andere component AEM, volledig met een toolbar, en is editable.
+Wanneer het ontwerpen van inhoud van het KUUROORD in de Redacteur van het KUUROORD, verschijnt de weercomponent zoals een andere AEM component, volledig met een toolbar, en is editable.
 
 ![screen_shot_2018-06-08at143304](assets/screen_shot_2018-06-08at143304.png)
 
-De stad kan in een dialoog enkel als om het even welke andere component van AEM worden bijgewerkt.
+De plaats kan in een dialoog enkel als om het even welke andere AEM component worden bijgewerkt.
 
 ![screen_shot_2018-06-08at143446](assets/screen_shot_2018-06-08at143446.png)
 
@@ -70,7 +73,7 @@ Hieronder vindt u fragmenten uit de NPM-documentatie van het gebruik van de comp
 Het herzien van de code van de aangepaste weercomponent ( `Weather.js`) in de toepassing van het Dagboek Wij.Retail:
 
 * **Regel 16**: De widget Open Weer reageren wordt naar wens geladen.
-* **Regel 46**: De `MapTo` functie verwant deze React component aan een overeenkomstige component AEM zodat het in de Redacteur van het KUUROORD kan worden uitgegeven.
+* **Regel 46**: De `MapTo` functie verwant deze React component aan een overeenkomstige AEM component zodat het in de Redacteur van het KUUROORD kan worden uitgegeven.
 
 * **Lijnen 22-29**: De waarde `EditConfig` wordt gedefinieerd, waarbij wordt gecontroleerd of de stad is gevuld en de waarde wordt gedefinieerd als deze leeg is.
 
