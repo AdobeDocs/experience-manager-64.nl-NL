@@ -33,7 +33,7 @@ U kunt documenten beschermen door beleid te gebruiken. Een *beleid* is een inzam
 
 Gebruikers met documentbeveiliging maken beleid via de webpagina&#39;s van eindgebruikers. Beheerders gebruiken de webpagina&#39;s voor documentbeveiliging om beleidssets te maken die gedeeld beleid bevatten dat beschikbaar is voor alle geautoriseerde gebruikers.
 
-Hoewel het beleid in documentveiligheid wordt opgeslagen, past u hen op documenten door uw cliënttoepassing toe. Hoe u beleid toepast op PDF-documenten wordt gedetailleerd beschreven in de Help bij *Acrobat*. Het toepassen van beleid met andere toepassingen, zoals Microsoft Office, wordt beschreven in de Hulp *van de uitbreidingen van* Acrobat Reader van gelijkstroom voor de toepassing.
+Hoewel het beleid in documentveiligheid wordt opgeslagen, past u hen op documenten door uw cliënttoepassing toe. Hoe u beleid toepast op PDF-documenten wordt in de Help bij *Acrobat* uitgebreid beschreven. Het toepassen van beleid door andere toepassingen, zoals Microsoft Office te gebruiken, wordt gedocumenteerd in de *Acrobat Reader DC Extension* Help voor de toepassing.
 
 Wanneer u een beleid op een document toepast, beschermen de vertrouwelijkheidsmontages die in het beleid worden gespecificeerd de informatie die het document bevat. Met de instellingen voor vertrouwelijkheid worden ook bestanden (tekst, audio of video) in een PDF-document beveiligd. U kunt het document dat met een beleid is beveiligd, verspreiden onder ontvangers die door het beleid zijn gemachtigd.
 
@@ -85,6 +85,7 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
    * Gebeurtenissen weergeven
    * Delegeren
    * Externe gebruikers uitnodigen
+
    **Documentbeveiligingsbeheerder**
 
    De gebruikers met deze rol kunnen de server van de documentveiligheid vormen, gebruikend de pagina van de Configuratie in de sectie van de documentveiligheid van beleidsconsole. Deze toestemming wordt geassocieerd met de rol, leidt Configuratie.
@@ -103,6 +104,7 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
    * Documentuitgevers beheren
    * Gebeurtenissen weergeven
    * Delegeren
+
    >[!NOTE]
    >
    >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
@@ -114,6 +116,7 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
    * Uitgenodigde en lokale gebruikers beheren
    * Externe gebruikers uitnodigen
    * Webpagina&#39;s voor eindgebruikers openen
+
    >[!NOTE]
    >
    >De gebruikers met deze rol moeten de rol van de Gebruiker van de beleidsconsole ook hebben om aan beleidsconsole kunnen login en om het even welke op configuratie betrekking hebbende montages uitgeven.
@@ -124,6 +127,7 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
 
    * Externe gebruikers uitnodigen
    * Webpagina&#39;s voor eindgebruikers openen
+
    **Eindgebruiker van documentbeveiliging**
 
    Gebruikers met deze rol hebben toegang tot webpagina&#39;s van eindgebruikers met documentbeveiliging. Deze rol kan ook aan beheerders worden toegewezen om beheerders toe te staan om beleid tot stand te brengen gebruikend de eindgebruikerpagina&#39;s. Deze toestemming wordt geassocieerd met de rol de eindgebruikerWeb-pagina&#39;s van de Toegang.
@@ -131,7 +135,7 @@ Verschillende typen gebruikers werken met documentbeveiliging om verschillende t
 * De gebruikers binnen de organisatie die geldige rekeningen van de documentveiligheid hebben creëren hun eigen beleid, gebruiken beleid om documenten te beschermen, hun beleid-beschermde documenten te volgen en te beheren, en gebeurtenissen te controleren die met hun documenten verwant zijn.
 * Coördinatoren van beleidssets beheren documenten, gebeurtenissen weergeven en andere beleidssetcoördinatoren beheren (op basis van hun machtigingen). Beheerders wijzen gebruikers aan als beleidssetcoördinatoren voor bepaalde beleidssets.
 * Gebruikers die zich buiten uw organisatie bevinden (bijvoorbeeld een zakelijke partner), kunnen documenten met een beveiligingsbeleid gebruiken als zij zich in de beveiligingsmap van het document bevinden, als de beheerder een account voor hen maakt of als zij zich met documentbeveiliging registreren via een geautomatiseerd e-mailuitnodigingsproces. Afhankelijk van hoe de beheerder de toegangsmontages toelaat, kunnen de uitgenodigde gebruikers ook toestemming hebben om beleid op documenten toe te passen, om hun beleid tot stand te brengen te wijzigen en te schrappen, en andere externe gebruikers uit te nodigen om hun beleid-beschermde documenten te gebruiken.
-* Ontwikkelaars gebruiken de SDK voor AEM-formulieren om aangepaste toepassingen te integreren met documentbeveiliging.
+* Ontwikkelaars gebruiken de SDK voor AEM formulieren om aangepaste toepassingen te integreren met documentbeveiliging.
 
 De beheerders van de veiligheid van het document kunnen douanerollen tot stand brengen door de volgende toestemmingen in Gebruikersbeheer te gebruiken:
 
@@ -146,7 +150,7 @@ De beheerders van de veiligheid van het document kunnen douanerollen tot stand b
 
 Een *beleid* bepaalt een reeks vertrouwelijkheidsmontages en gebruikers die tot een document kunnen toegang hebben waarop het beleid wordt toegepast. Met een beleid kunnen ook de machtigingen voor een document dynamisch worden gewijzigd. Het geeft de persoon die het document verzekert toestemming om de vertrouwelijkheidsmontages te veranderen om toegang tot het document in te trekken of het beleid te veranderen.
 
-Beleidsbeveiliging kan op een PDF-document worden toegepast met Adobe Acrobat® Pro en Acrobat Standard. Beleidsbeveiliging kan worden toegepast op andere bestandstypen, zoals Microsoft Word-, Excel- en PowerPoint-bestanden, door de clienttoepassing te gebruiken terwijl de juiste Acrobat Reader DC-extensies zijn geïnstalleerd.
+Beleidsbeveiliging kan op een PDF-document worden toegepast met Adobe Acrobat® Pro en Acrobat Standard. Beleidsbescherming kan worden toegepast op andere bestandstypen, zoals Microsoft Word-, Excel- en PowerPoint-bestanden, door de clienttoepassing te gebruiken terwijl de juiste Acrobat Reader DC-extensies zijn geïnstalleerd.
 
 ### Hoe beleid werkt {#how-policies-work}
 
@@ -156,12 +160,12 @@ De vertrouwelijkheidsinstellingen in een beleid bepalen hoe de ontvangers het do
 
 >[!NOTE]
 >
->De instellingen voor vertrouwelijkheid die via een beleid worden toegepast, overschrijven instellingen die mogelijk op een PDF-document in Acrobat zijn toegepast met behulp van de beveiligingsopties voor wachtwoorden of certificaten. (Zie de Help van Acrobat voor meer informatie.)
+>De instellingen voor vertrouwelijkheid die via een beleid worden toegepast, overschrijven instellingen die mogelijk op een PDF-document in Acrobat zijn toegepast met behulp van de beveiligingsopties voor wachtwoorden of certificaten. (Zie Acrobat Help voor meer informatie.)
 
 Gebruikers en beheerders maken beleid via de webpagina&#39;s voor documentbeveiliging. Er kan slechts één beleid tegelijk worden toegepast op een document. U kunt een beleid toepassen door een van de volgende methoden te gebruiken:
 
 * Open het document in Acrobat of een andere clienttoepassing en selecteer een beleid om het document te beveiligen.
-* Een document verzenden als e-mailbijlage in Microsoft Outlook. In dit geval kunt u een beleid selecteren in een lijst met beleidsregels of een automatisch gegenereerd beleid selecteren dat Acrobat maakt met standaardinstellingen voor vertrouwelijkheid om het document alleen voor de ontvangers van e-mailberichten te beschermen.
+* Een document verzenden als e-mailbijlage in Microsoft Outlook. In dit geval kunt u een beleid selecteren in een lijst met beleidsregels of een automatisch gegenereerd beleid selecteren dat Acrobat maakt met een standaardset met instellingen voor vertrouwelijkheid om het document alleen voor de ontvangers van e-mailberichten te beschermen.
 
 Een beleid kan uit een document worden verwijderd door de cliënttoepassing te gebruiken.
 
@@ -179,9 +183,9 @@ Als offlinegebruik is ingeschakeld, kunnen ontvangers met een beleid beveiligde 
 
 ### Hoe beleidsbeveiligde documenten werken {#how-policy-protected-documents-work}
 
-Als u met een beleid beveiligde documenten wilt openen en gebruiken, moet het beleid uw naam als ontvanger bevatten en moet u over een geldige account voor documentbeveiliging beschikken. Voor PDF-documenten hebt u Acrobat of Adobe Reader® nodig. Voor andere bestandstypen hebt u de juiste toepassing voor het bestand nodig als de Acrobat Reader DC-extensies zijn geïnstalleerd.
+Als u met een beleid beveiligde documenten wilt openen en gebruiken, moet het beleid uw naam als ontvanger bevatten en moet u over een geldige account voor documentbeveiliging beschikken. Voor PDF-documenten hebt u Acrobat of Adobe Reader® nodig. Voor andere bestandstypen hebt u de juiste toepassing nodig voor het bestand waarop de Acrobat Reader DC-extensies zijn geïnstalleerd.
 
-Wanneer u probeert een document te openen dat met een beleid is beveiligd, maken Acrobat, Adobe Reader of de Acrobat Reader DC-extensies verbinding met documentbeveiliging om u te verifiëren. Vervolgens kunt u doorgaan met het aanmelden. Als het documentgebruik wordt gecontroleerd, verschijnt een berichtbericht. Nadat de documentveiligheid bepaalt welke documenttoestemmingen te verlenen, beheert het de decryptie van het document. Vervolgens kunt u het document gebruiken op basis van de instellingen voor vertrouwelijkheid van het beleid.
+Wanneer u probeert om een document te openen dat met een beleid is beveiligd, maakt Acrobat, Adobe Reader of de Acrobat Reader DC-extensies verbinding met documentbeveiliging om u te verifiëren. Vervolgens kunt u doorgaan met het aanmelden. Als het documentgebruik wordt gecontroleerd, verschijnt een berichtbericht. Nadat de documentveiligheid bepaalt welke documenttoestemmingen te verlenen, beheert het de decryptie van het document. Vervolgens kunt u het document gebruiken op basis van de instellingen voor vertrouwelijkheid van het beleid.
 
 ![rm_psopen_online](assets/rm_psopen_online.png)
 
