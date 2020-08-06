@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1630'
+ht-degree: 5%
 
 ---
 
@@ -48,6 +51,7 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
 >* Deze [workflow is mogelijk aangepast](/help/sites-developing/workflows-models.md) door uw ontwikkelingsteam.
 >* Er wordt kort een bericht weergegeven om u te laten weten dat de workflow is geactiveerd.
+
 >
 
 
@@ -56,7 +60,7 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 
 Afhankelijk van uw locatie kunt u publiceren:
 
-* [Vanuit de paginaeditor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
+* [Vanuit de pagina-editor](/help/sites-authoring/publishing-pages.md#publishing-from-the-editor)
 * [Van de plaatsenconsole](/help/sites-authoring/publishing-pages.md#publishing-from-the-console)
 
 ### Publiceren vanuit de Editor {#publishing-from-the-editor}
@@ -70,10 +74,11 @@ Als u een pagina bewerkt, kunt u deze rechtstreeks vanuit de editor publiceren.
 1. Afhankelijk van het feit of de pagina verwijzingen bevat die moeten worden gepubliceerd:
 
    * De pagina wordt rechtstreeks gepubliceerd als er geen referenties zijn die moeten worden gepubliceerd.
-   * Als de pagina verwijzingen heeft die moeten publiceren, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
+   * Als de pagina verwijzingen heeft die het publiceren vereisen, zullen deze in de **Publish** tovenaar worden vermeld, waar u of kunt:
 
       * Geef aan welke elementen/tags/etc. Als u samen met de pagina wilt publiceren, gebruikt u **Publiceren** om het proces te voltooien.
       * Gebruik **Annuleren** om de handeling af te breken.
+
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
 1. Als u **Publiceren** selecteert, wordt de pagina gekopieerd naar de publicatieomgeving. In de paginaeditor wordt een informatiebanner weergegeven die de publicatieactie bevestigt.
@@ -125,10 +130,11 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![screen_shot_2018-03-21at153309](assets/screen_shot_2018-03-21at153309.png)
 
-1. De wizard **Publicatie** beheren wordt gestart. In de eerste stap, **Opties**, kunt u:
+1. De wizard **Publicatie beheren** wordt gestart. In de eerste stap, **Opties**, kunt u:
 
    * Kies of u de geselecteerde pagina&#39;s wilt publiceren of de publicatie ervan ongedaan wilt maken.
    * Kies of u deze handeling nu of op een latere datum wilt uitvoeren.
+
    Als u later publiceert, wordt een workflow gestart om de geselecteerde pagina of pagina&#39;s op het opgegeven tijdstip te publiceren. Als u de publicatie later ongedaan maakt, wordt een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald moment ongedaan te maken.
 
    Als u een publicatie/publicatie later wilt annuleren, gaat u naar de [workflowconsole](/help/sites-administering/workflows.md) om de bijbehorende workflow te beëindigen.
@@ -141,7 +147,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
 
    ![screen_shot_2018-03-21at153354](assets/screen_shot_2018-03-21at153354.png)
 
-   U kunt de knop Inhoud **** toevoegen gebruiken om extra pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die moeten worden gepubliceerd voor het geval u deze niet hebt geselecteerd voordat u de wizard Publicatie beheren start.
+   U kunt de knop **Inhoud toevoegen** gebruiken om extra pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die moeten worden gepubliceerd voor het geval u deze niet hebt geselecteerd voordat u de wizard Publicatie beheren start.
 
    Klik op de knop Inhoud toevoegen om de [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) te starten en de inhoud te selecteren.
 
@@ -152,6 +158,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
    * Inclusief de onderliggende elementen.
    * Verwijder het uit de selectie.
    * De gepubliceerde referenties beheren.
+
    ![screen_shot_2018-03-21at153450](assets/screen_shot_2018-03-21at153450.png)
 
    Klik op **Inclusief onderliggende items** om een dialoogvenster te openen waarin u:
@@ -159,6 +166,7 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
    * Alleen directe kinderen opnemen.
    * Alleen gewijzigde pagina&#39;s opnemen.
    * Alleen al gepubliceerde pagina&#39;s opnemen.
+
    Klik op **Toevoegen** om de onderliggende pagina&#39;s toe te voegen aan de lijst met pagina&#39;s die gepubliceerd of niet gepubliceerd moeten worden op basis van de selectieopties. Klik op **Annuleren** om de selectie te annuleren en terug te keren naar de wizard.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
@@ -196,7 +204,8 @@ Een pagina publiceren of de publicatie ervan ongedaan maken met Publicatie beher
    * Definieer de titel van de workflow.
    * Behoud het workflowpakket, op voorwaarde dat de workflow ondersteuning biedt voor [meerdere cursussen](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support).
    * Definieer een titel van het workflowpakket als de optie om het workflowpakket te behouden is gekozen.
-   Klik op **Publiceren** of **Later publiceren **om de publicatie te voltooien.
+
+   Click **Publish** or **Publish Later **to complete the publication.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
@@ -206,7 +215,7 @@ Als u de publicatie van een pagina ongedaan maakt, wordt deze verwijderd uit uw 
 
 Op een [manier die vergelijkbaar is met publiceren](/help/sites-authoring/publishing-pages.md#publishing-pages), kunnen een of meer pagina&#39;s niet worden gepubliceerd:
 
-* [Vanuit de paginaeditor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
+* [Vanuit de pagina-editor](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-editor)
 * [Van de plaatsenconsole](/help/sites-authoring/publishing-pages.md#unpublishing-from-the-console)
 
 ### Publicatie ongedaan maken vanuit de Editor {#unpublishing-from-the-editor}
@@ -218,7 +227,7 @@ Als u een pagina bewerkt en de publicatie van die pagina ongedaan wilt maken, se
 Net zoals u de optie Publicatie beheren [gebruikt om te publiceren](/help/sites-authoring/publishing-pages.md#manage-publication), kunt u deze ook gebruiken om de publicatie ongedaan te maken.
 
 1. Selecteer de pagina of pagina&#39;s in de siteconsole en klik op de knop Publicatie **beheren** .
-1. De wizard **Publicatie** beheren wordt gestart. In de eerste stap, **Opties**, selecteer om **Unpublish** in plaats van de standaardoptie van **Publiceren** te schrappen.
+1. De wizard **Publicatie beheren** wordt gestart. In de eerste stap, bij **Opties**, selecteert u **Publicatie ongedaan maken** in plaats van de standaardoptie **Publiceren**.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -235,7 +244,7 @@ Wanneer u een aanzienlijk aantal inhoudspagina&#39;s hebt ingevoerd of bijgewerk
 Hiervoor kunt u de optie Publicatie [](/help/sites-authoring/publishing-pages.md#manage-publication) beheren op de siteconsole gebruiken.
 
 1. Selecteer in de siteconsole de hoofdpagina van de boomstructuur die u wilt publiceren of waarvan u de publicatie ongedaan wilt maken, en selecteer Publicatie **beheren**.
-1. De wizard **Publicatie** beheren wordt gestart. Kies of u wilt publiceren of de publicatie ongedaan wilt maken en wanneer dit moet gebeuren en selecteer **Volgende** om door te gaan.
+1. De wizard **Publicatie beheren** wordt gestart. Kies of u wilt publiceren of de publicatie ongedaan wilt maken en wanneer dit moet gebeuren en selecteer **Volgende** om door te gaan.
 1. Selecteer in de stap **Bereik** de basispagina en selecteer **Onderliggende** elementen opnemen.
 
    ![chlimage_1-56](assets/chlimage_1-56.png)
@@ -244,6 +253,7 @@ Hiervoor kunt u de optie Publicatie [](/help/sites-authoring/publishing-pages.md
 
    * Alleen directe kinderen opnemen
    * Alleen reeds gepubliceerde pagina&#39;s opnemen
+
    Deze opties zijn standaard geselecteerd, dus u moet niet vergeten deze te deselecteren. Klik op **Toevoegen** om de inhoud te bevestigen en toe te voegen aan de publicatie/publicatie.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
@@ -254,7 +264,7 @@ Hiervoor kunt u de optie Publicatie [](/help/sites-authoring/publishing-pages.md
 
    U kunt ook de verwijzingen controleren die via de optie **Gepubliceerde verwijzingen** moeten worden gepubliceerd.
 
-1. [Ga verder met de normale](#manage-publication) wizard Publicatie beheren om de publicatie of publicatie van de boomstructuur te voltooien.
+1. [Ga naar de normale](#manage-publication) wizard Publicatie beheren om de publicatie of publicatie van de boomstructuur te voltooien.
 
 ## Publicatiestatus bepalen {#determining-publication-status}
 
@@ -264,7 +274,7 @@ U kunt de publicatiestatus van een pagina bepalen:
 
    ![screen_shot_2018-03-21at154336](assets/screen_shot_2018-03-21at154336.png)
 
-   De publicatiestatus wordt weergegeven in [kaart](/help/sites-authoring/basic-handling.md#card-view)-, [kolom](/help/sites-authoring/basic-handling.md#column-view)- en [lijstweergaven](/help/sites-authoring/basic-handling.md#list-view) in de siteconsole.
+   De publicatiestatus wordt weergegeven in [kaart](/help/sites-authoring/basic-handling.md#card-view)-, [kolom](/help/sites-authoring/basic-handling.md#column-view)- en [lijstweergaven](/help/sites-authoring/basic-handling.md#list-view) in de Sites-console.
 
 * In de [tijdlijn](/help/sites-authoring/basic-handling.md#timeline)
 
