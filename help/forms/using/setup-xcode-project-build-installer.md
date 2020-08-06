@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # Het Xcode-project instellen en de iOS-app ontwikkelen {#set-up-the-xcode-project-and-build-the-ios-app}
 
-AEM Forms bevat de volledige broncode van de app AEM Forms. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` is een deel van het `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket op de Distributie van de Software.
+AEM Forms biedt de volledige broncode van de AEM Forms-app. De bron bevat alle componenten om een aangepaste AEM Forms-app te maken. Het archief van de broncode, `adobe-lc-mobileworkspace-src-<version>.zip` is een deel van het `adobe-aemfd-forms-app-src-pkg-<version>.zip` pakket op de Distributie van de Software.
 
-Voer de volgende stappen uit om de bron van de AEM Forms-app op te halen:
+Voer de volgende stappen uit om de AEM Forms-toepassingsbron op te halen:
 
-1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In het **[!UICONTROL Filters]** gedeelte:
    1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
@@ -58,18 +58,18 @@ In de volgende tabel vindt u de inhoud van de `adobe-lc-mobileworkspace-src-[ver
   </tr> 
   <tr> 
    <td><p><code>AEM Forms.xcodeproj</code></p> </td> 
-   <td><p>Xcode-project voor AEM Forms-app</p> </td> 
+   <td><p>Xcode-project voor AEM Forms-toepassing</p> </td> 
   </tr> 
   <tr> 
    <td><p><code>www</code></p> </td> 
-   <td><p>HTML-, CSS-, afbeeldings- en JavaScript-bestanden voor het AEM Forms-app-project</p> </td> 
+   <td><p>HTML-, CSS-, afbeeldings- en JavaScript-bestanden voor het AEM Forms-toepassingsproject</p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen van apparaten aan de iOS Provisioning Portal, zie de Opstelling van de Ondertekening van de Code [iOS, Proces, en het Oplossen van problemen](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingCertificates/MaintainingCertificates.html).
 
-## Standaardapp voor AEM Forms maken {#set-up-the-xcode-project}
+## Standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
 
 1. Voer de volgende stappen uit om een project in Xcode op te zetten en een het ondertekenen identiteit te verstrekken:
 
@@ -82,7 +82,7 @@ Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen v
 1. Klik op **AEM Forms** onder **DOELSTELLINGEN** en selecteer **AEM Forms**. Selecteer het tabblad **Build Settings** , zoek de sectie **Code Signing Entitlement** , en voer in de velden Debug and Release een van de volgende handelingen uit:
 
    * Laat de velden ongespecificeerd om een standaard mobiele werkruimte-app te maken
-   * Geef de velden op die moeten worden beschreven in [Een app voor beveiligde AEM Forms voor iOS](/help/forms/using/building-secure-mobile-workspace-app.md) maken om een app voor veilige AEM Forms te maken.
+   * Geef de velden op die moeten worden beschreven in [Een Secure AEM Forms-app voor iOS](/help/forms/using/building-secure-mobile-workspace-app.md) maken om een veilige AEM Forms-app te maken.
 
 1. Klik in het tabblad **Build Settings** op **All** (Alles **) en klik vervolgens op** Combinate.
 1. Vouw in de lijst **Instellingen** de optie **Code ondertekenen** uit.
@@ -126,11 +126,11 @@ Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen v
 
    >[!NOTE]
    >
-   >Deze stap wordt vereist slechts als de AEM Forms app met een server moet verbinden die niet de vereisten van de Veiligheid van het Vervoer van de Toepassing volgt.
+   >Deze stap is alleen vereist als de AEM Forms-toepassing verbinding moet maken met een server die niet voldoet aan de beveiligingsvereisten voor het vervoer van de app.
 
-1. Selecteer onder **PROJECT** de **AEM Forms** en zorg ervoor dat de juiste handtekening is geselecteerd voor **Code Signing Identity**, **Debug**, **Release** **** en Any iOS SDK.
+1. Selecteer onder **PROJECT****AEM Forms** en zorg ervoor dat de juiste handtekening is geselecteerd voor **Code Signing Identity**, **Debug**, **Release** **** en Any iOS SDK.
 1. Sluit een iPad met provisioning aan op een Mac-computer.
-1. Selecteer het provisioned apparaat voor het project van **AEM Forms** .
+1. Selecteer het ingericht apparaat voor het **AEM Forms** -project.
 
    ![ipad](assets/ipad.png)
 
@@ -139,12 +139,12 @@ Voor gedetailleerde informatie over het ondertekenen van code en het toevoegen v
 1. Selecteer **Product** > **Reinigen**.
 1. Selecteer **Product** > **Bouwstijl**.
 
-## Het installatieprogramma voor de app AEM Forms maken {#build-the-installer-for-the-mobile-workspace-app}
+## Het installatieprogramma voor de AEM Forms-app maken {#build-the-installer-for-the-mobile-workspace-app}
 
 U moet het Xcode-project archiveren om het installatieprogramma (een .ipa-bestand) en een eigenschappenlijst (een .plist-bestand) te maken. Het eigenschappenlijstbestand bevat configuratiegegevens van de interne app die wordt gehost, zoals de naam en de hostlocatie van de app. Zie Informatie [over bestanden](https://developer.apple.com/library/ios/#documentation/general/Reference/InfoPlistKeyReference/Articles/AboutInformationPropertyListFiles.html)in de eigenschappenlijst Informatie voor meer informatie over het eigenschappenlijstbestand.
 
 1. Sluit een iPad met provisioning aan op een Mac-computer. Voor gedetailleerde informatie over het leveren van een iPad raadpleegt u [Ontwikkelingshulpprogramma&#39;s maken en downloaden](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppStoreDistributionTutorial/CreatingYourTeamProvisioningProfile/CreatingYourTeamProvisioningProfile.html)
-1. Selecteer het provisioned apparaat voor het project van **AEM Forms** .
+1. Selecteer het ingericht apparaat voor het **AEM Forms** -project.
 
    ![ipad-1](assets/ipad-1.png)
 
