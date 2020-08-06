@@ -68,6 +68,7 @@ De `/libs/cq/workflow/components/model/step` component is de dichtstbijzijnde ge
 
    * **Vaak**: voor het bewerken van de titel en beschrijving.
    * **Geavanceerd**: voor het bewerken van eigenschappen voor e-mailmeldingen.
+
    ![wf-44](assets/wf-44.png) ![wf-45](assets/wf-45.png)
 
    >[!NOTE]
@@ -121,6 +122,7 @@ Gebruik de volgende procedure om standaardwaarden op te geven voor de velden **T
 >* In het dialoogvenster Bewerken van de stap worden de titel en beschrijving opgeslagen op de volgende locaties: >
 >* `./jcr:title`
 >* `./jcr:description` locaties
+
 >
 >  
 Aan deze vereiste wordt voldaan wanneer het dialoogvenster Bewerken gebruikmaakt van het tabblad Algemeen dat de `/libs/cq/flow/components/step/step` component implementeert.
@@ -132,6 +134,7 @@ Aan deze vereiste wordt voldaan wanneer het dialoogvenster Bewerken gebruikmaakt
 
    * Naam: `cq:editConfig`
    * Type: `cq:EditConfig`
+
    >[!NOTE]
    >
    >Voor meer informatie over de knoop cq:editConfig, zie het [Vormen het Edit Gedrag van een Component](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
@@ -182,6 +185,7 @@ Om de component voor gebruik in een specifiek werkschemascenario te concentreren
 
    * Naam: `cq:editConfig`
    * Type: `cq:EditConfig`
+
    Voor meer informatie over de knoop cq:editConfig, zie het [Vormen het Edit Gedrag van een Component](/help/sites-developing/developing-components.md#configuring-the-edit-behavior).
 
 1. Voeg onder het knooppunt cq:EditConfig het volgende knooppunt toe:
@@ -203,7 +207,7 @@ Om de component voor gebruik in een specifiek werkschemascenario te concentreren
 
 1. Om de capaciteit van modelontwikkelaars te verwijderen om uw bezitswaarden te veranderen, vervang de dialoog van het componentensupertype.
 
-### Formulieren en dialoogvensters toevoegen aan stappen van deelnemers {#adding-forms-and-dialogs-to-participant-steps}
+### Forms en dialoogvensters toevoegen aan stappen van deelnemers {#adding-forms-and-dialogs-to-participant-steps}
 
 Pas uw component van de deelnemersstap aan om eigenschappen te verstrekken die in de componenten van de Stap [van de Stap](/help/sites-developing/workflows-step-ref.md#form-participant-step) van de Stap van de Deelnemer van de [Vorm en van de Stap](/help/sites-developing/workflows-step-ref.md#dialog-participant-step) van de Dialoog worden gevonden:
 
@@ -216,6 +220,7 @@ Voer de volgende procedure op uw nieuwe component uit (zie het [Creëren van de 
 
    * Naam: `cq:editConfig`
    * Type: `cq:EditConfig`
+
    Voor meer informatie over de knoop cq:editConfig, zie het [Vormen het Edit Gedrag van een Component](/help/sites-developing/components-basics.md#edit-behavior).
 
 1. Voeg onder het knooppunt cq:EditConfig het volgende knooppunt toe:
@@ -528,7 +533,7 @@ if (workflowData.getPayloadType() == "JCR_PATH") {
 
 Het script gebruiken:
 
-1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het op in de opslagplaats hieronder `/apps/myapp/workflow/scripts`
+1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het op in de onderstaande opslagplaats `/apps/myapp/workflow/scripts`
 1. Als u een titel wilt opgeven die het script aangeeft in het dialoogvenster **Stap** verwerken, voegt u de volgende eigenschappen toe aan het `jcr:content` knooppunt van het script:
 
    | Naam | Type | Waarde |
@@ -645,7 +650,7 @@ function getParticipant() {
 }
 ```
 
-1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het op in de opslagplaats hieronder `/apps/myapp/workflow/scripts`
+1. Maak het script (bijvoorbeeld met CRXDE Lite) en sla het op in de onderstaande opslagplaats `/apps/myapp/workflow/scripts`
 1. Als u een titel wilt opgeven die het script aangeeft in het dialoogvenster **Stap** verwerken, voegt u de volgende eigenschappen toe aan het `jcr:content` knooppunt van het script:
 
    | Naam | Type | Waarde |
@@ -665,6 +670,7 @@ function getParticipant() {
 >
 >* [`com.day.cq.wcm.workflow.process.ActivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/ActivatePageProcess.html)
 >* [`com.day.cq.wcm.workflow.process.DeactivatePageProcess`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/workflow/process/DeactivatePageProcess.html)
+
 >
 
 
@@ -805,7 +811,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
    >
    >Deze stap is niet van toepassing op de klassieke UI Model redacteur.
 
-1. Plaats de gekopieerde stap vervolgens in de map /apps; zoals:
+1. Plaats vervolgens de gekopieerde stap in de map /apps; zoals:
 
    `/apps/cq/workflow/components/model/myCustomStep`
 
@@ -847,6 +853,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
       * Projecten
       * WCM-workflow
       * Workflow
+
    ![wf-35](assets/wf-35.png)
 
 1. U kunt nu een workflowmodel openen voor bewerking. In stappen kunt u browser filtreren om **Mijn Stap** van de Douane te zien:
@@ -887,6 +894,7 @@ Na het [Creëren van de BasisStap](#creating-the-basic-step), bepaal de stap **v
       Plaatst de standaardtitel op de stappenkaart in de modelkaart en op het gebied van de **Titel** van **Mijn Douane - de configuratiedialoog van de Eigenschappen** van de Stap.
 
    * U kunt ook uw eigen aangepaste eigenschappen definiëren.
+
    ![wf-40](assets/wf-40.png)
 
 1. Vorm de eigenschappen op de knoop `cq:listeners`.
@@ -899,6 +907,7 @@ Na het [Creëren van de BasisStap](#creating-the-basic-step), bepaal de stap **v
    * `afterdelete: CQ.workflow.flow.Step.afterDelete`
    * `afteredit: CQ.workflow.flow.Step.afterEdit`
    * `afterinsert: CQ.workflow.flow.Step.afterInsert`
+
    Deze configuratie is essentieel voor het goed functioneren van de redacteur. In de meeste gevallen mag deze configuratie niet worden gewijzigd.
 
    Nochtans, staat het plaatsen aan waar (op de `cq:inherit` `cq:editConfig` knoop, zie hierboven) u toe om deze configuratie te erven, zonder het te moeten uitdrukkelijk omvatten in uw stapdefinitie. Als er geen overerving is, moet u dit knooppunt met de volgende eigenschappen en waarden toevoegen.
@@ -1030,7 +1039,7 @@ Het `_cq_dialog/.content.xml` voorbeeld dat in dit voorbeeld wordt gebruikt:
 >
 >Dialoogvensters van de klassieke UI-modeleditor werken nog steeds met de standaardinterface-editor met aanraakbediening.
 >
->Alhoewel AEM een hulpmiddel van de [dialoogomzetting](/help/sites-developing/dialog-conversion.md) heeft als u uw klassieke dialoog UI geleidelijke dialogen aan standaarddialogen UI wilt bevorderen. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
+>Hoewel AEM een gereedschap voor [dialoogconversie](/help/sites-developing/dialog-conversion.md) heeft als u dialoogvensters met klassieke UI-stappen wilt upgraden naar standaarddialoogvensters met gebruikersinterface. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
 >
 >* Als een bijgewerkt dialoogvenster leeg is, kunt u dialoogvensters bekijken `/libs` die vergelijkbare functionaliteit hebben als voorbeelden van hoe u een oplossing kunt bieden. Bijvoorbeeld:
    >
@@ -1040,6 +1049,7 @@ Het `_cq_dialog/.content.xml` voorbeeld dat in dit voorbeeld wordt gebruikt:
 >* `/libs/dam/components`
 >* `/libs/wcm/workflow/components/autoassign`
 >* `/libs/cq/projects`
+
 >
 >  
 U mag niets wijzigen in `/libs`, maar ze gewoon als voorbeelden gebruiken. Als u een van de bestaande stappen wilt gebruiken, kopieert u deze naar de bestaande stappen `/apps` en wijzigt u deze.
