@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
 translation-type: tm+mt
 source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+workflow-type: tm+mt
+source-wordcount: '2307'
+ht-degree: 5%
 
 ---
 
@@ -31,7 +34,7 @@ In deze sectie wordt beschreven hoe u pagina&#39;s kunt maken en beheren met Ado
 
 ## Uw website ordenen {#organizing-your-website}
 
-Als auteur moet u uw website organiseren binnen AEM. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
+Als auteur moet u uw website binnen AEM organiseren. Dit betekent dat u inhoudspagina&#39;s maakt en een naam geeft, zodat:
 
 * U kunt deze gemakkelijk vinden in de ontwerpomgeving
 * Bezoekers naar uw site kunnen deze gemakkelijk in de publicatieomgeving bekijken
@@ -108,7 +111,7 @@ De **titel** en **naam** van de pagina kunnen afzonderlijk worden gemaakt, maar 
 >
 >Houd er ook rekening mee dat sommige browsers (bijvoorbeeld oudere versies van IE) URL&#39;s tot een bepaalde lengte alleen kunnen accepteren, dus er is ook een technische reden om paginanamen kort te houden.
 
-Bij het maken van een nieuwe pagina [valideert AEM de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en de JCR worden opgelegd.
+Bij het maken van een nieuwe pagina [valideert AEM de paginanaam volgens de conventies](/help/sites-developing/naming-conventions.md) die worden opgelegd door AEM en het JCR.
 
 De minimaal toegestane tekens zijn:
 
@@ -135,7 +138,7 @@ Als u bij het maken van een nieuwe pagina alleen een **paginatitel** opgeeft, le
 
 #### Naam {#name}
 
-Wanneer u een **paginanaam** opgeeft bij het maken van een nieuwe pagina, zal AEM de naam [valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd. U kunt geen ongeldige tekens verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
+Wanneer u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, [valideert AEM de naam volgens de conventies](/help/sites-developing/naming-conventions.md) die worden opgelegd door AEM en JCR. U kunt geen ongeldige tekens verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd met een verklarende melding.
 
 ![screen_shot_2018-03-22at104817](assets/screen_shot_2018-03-22at104817.png)
 
@@ -147,11 +150,11 @@ Wanneer u een **paginanaam** opgeeft bij het maken van een nieuwe pagina, zal AE
 
 ### Sjablonen {#templates}
 
-In AEM, specificeert een malplaatje een gespecialiseerd type van pagina. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
+In AEM geeft een sjabloon een speciaal type pagina op. Een sjabloon wordt gebruikt als basis voor elke nieuwe pagina die wordt gemaakt.
 
 De sjabloon definieert de structuur van een pagina, inclusief een miniatuurafbeelding en andere eigenschappen. U hebt bijvoorbeeld aparte sjablonen voor productpagina&#39;s, sitemaps en contactgegevens. Sjablonen bestaan uit [componenten](#components).
 
-AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
+AEM wordt geleverd met verschillende sjablonen die buiten de box zijn geplaatst. Welke sjablonen beschikbaar zijn, is afhankelijk van de afzonderlijke website. De belangrijkste velden zijn:
 
 * **Titel** De titel die op de resulterende webpagina wordt weergegeven.
 
@@ -165,7 +168,7 @@ AEM wordt geleverd met verschillende sjablonen die u kunt vinden. Welke sjablone
 
 ### Onderdelen {#components}
 
-Componenten zijn de elementen die door AEM worden geleverd, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks [kant-en-klare componenten](/help/sites-authoring/default-components-console.md) die uitgebreide functionaliteit bieden. Deze omvatten:
+Componenten zijn de elementen die worden verschaft door AEM, zodat u specifieke typen inhoud kunt toevoegen. AEM wordt geleverd met een reeks [kant-en-klare componenten](/help/sites-authoring/default-components-console.md) die uitgebreide functionaliteit bieden. Deze omvatten:
 
 * Tekst
 * Afbeelding
@@ -195,12 +198,14 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
 
    * Selecteer de sjabloon die u wilt gebruiken om de nieuwe pagina te maken en klik op **Volgende** of tik op Volgende om door te gaan.
    * **Annuleer** om het proces af te breken.
+
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
 1. Vanaf het laatste werkgebied van de wizard kunt u:
 
    * Gebruik de drie tabbladen om de [pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) in te voeren die u aan de nieuwe pagina wilt toewijzen. Klik vervolgens op **Maken** of tik op Maken om de pagina daadwerkelijk te maken.
    * Gebruik **Vorige** om terug te keren naar de sjabloonselectie.
+
    Hoofdvelden zijn:
 
    * **Titel**:
@@ -209,8 +214,9 @@ Tenzij alle pagina&#39;s vooraf voor u zijn gemaakt, moet u een pagina maken voo
    * **Naam**:
 
       * Hiermee wordt de URI gegenereerd. Indien niet opgegeven, wordt de naam afgeleid van de titel.
-      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, zal AEM de naam [valideren volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR zijn ingesteld.
+      * Als u bij het maken van een nieuwe pagina een **paginanaam** opgeeft, [valideert AEM de naam volgens de conventies](/help/sites-developing/naming-conventions.md) die door AEM en JCR worden opgelegd.
       * U **kunt geen ongeldige tekens** verzenden in het veld **Naam** . Wanneer AEM ongeldige tekens detecteert, wordt het veld gemarkeerd en wordt een verklarende melding weergegeven om aan te geven welke tekens moeten worden verwijderd/vervangen.
+
    >[!NOTE]
    >
    >Zie conventies voor [paginanamen](#page-naming-conventions).
@@ -245,6 +251,7 @@ Nadat u een pagina hebt gemaakt of naar een bestaande pagina (in de console) heb
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#product-navigation) en de werkbalk
+
    Selecteer vervolgens het pictogram **Bewerken** :
 
    ![screen_shot_2018-03-22at105355](assets/screen_shot_2018-03-22at105355.png)
@@ -264,6 +271,7 @@ U kunt een pagina en alle bijbehorende subpagina&#39;s naar een nieuwe locatie k
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#product-navigation) en de werkbalk
+
    En dan het paginapictogram **Kopiëren** :
 
    ![screen_shot_2018-03-22at105425](assets/screen_shot_2018-03-22at105425.png)
@@ -306,6 +314,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    * [Snelle acties](/help/sites-authoring/basic-handling.md#quick-actions)
    * [Selectiemodus](/help/sites-authoring/basic-handling.md#product-navigation) en de werkbalk
+
    Selecteer vervolgens het paginapictogram **Verplaatsen** :
 
    ![screen_shot_2018-03-22at105534](assets/screen_shot_2018-03-22at105534.png)
@@ -316,6 +325,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
 
    * Geef de naam op die de pagina moet hebben nadat deze is verplaatst en klik op **Volgende** of tik op Volgende om door te gaan.
    * **Annuleer** om het proces af te breken.
+
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
    De paginanaam kan hetzelfde blijven als u alleen de pagina verplaatst.
@@ -331,6 +341,7 @@ AEM biedt u de functionaliteit om interne koppelingen bij te werken die verwijze
       * Selecteer de bestemming door de duimnagel van de bestemming te klikken.
       * Klik op **Volgende** om door te gaan.
    * Gebruik **Vorige** om terug te keren naar de specificatie van de paginanaam.
+
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
    >[!NOTE]
@@ -397,6 +408,7 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
 >* Mappen kunnen alleen rechtstreeks onder **Sites** of onder andere mappen worden gemaakt. Ze kunnen niet onder een pagina worden gemaakt.
 >* Met de standaardhandelingen kunt u eigenschappen verplaatsen, kopiëren, plakken, verwijderen, publiceren, verwijderen en weergeven/bewerken uitvoeren op een map.
 >* Mappen zijn niet beschikbaar voor selectie in een live kopie.
+
 >
 
 
