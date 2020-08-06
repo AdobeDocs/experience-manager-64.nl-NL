@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 0be8b88c-6f57-4dcc-ae11-77b378a2decd
 translation-type: tm+mt
 source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+workflow-type: tm+mt
+source-wordcount: '1922'
+ht-degree: 0%
 
 ---
 
 
 # Best practices voor workflow{#workflow-best-practices}
 
-Met workflows kunt u activiteiten van Adobe Experience Manager (AEM) automatiseren.
+Met workflows kunt u Adobe Experience Manager-activiteiten (AEM) automatiseren.
 
-Ze vertegenwoordigen vaak een groot deel van de verwerking die plaatsvindt in een AEM-omgeving. Wanneer aangepaste workflowstappen niet worden geschreven volgens de best practices, of workflows buiten de box niet zodanig zijn geconfigureerd dat ze zo efficiënt mogelijk worden uitgevoerd, kan het systeem hiervan de gevolgen ondervinden.
+Ze vertegenwoordigen vaak een groot deel van de verwerking die plaatsvindt in een AEM omgeving. Wanneer aangepaste workflowstappen niet volgens de beste praktijken worden geschreven, of workflows buiten de doos niet zodanig worden geconfigureerd dat ze zo efficiënt mogelijk worden uitgevoerd, kan het systeem hiervan de gevolgen ondervinden.
 
 Daarom wordt u ten zeerste aangeraden de implementaties van uw workflows zorgvuldig te plannen.
 
@@ -50,19 +53,19 @@ Zie de [AEM Assets Performance Tuning Guide](/help/assets/performance-tuning-gui
 
 ### Het maximumaantal gelijktijdige workflows configureren {#configure-the-maximum-number-of-concurrent-workflows}
 
-Met AEM kunnen meerdere workflowthreads tegelijk worden uitgevoerd. Door gebrek wordt het aantal draden gevormd om de helft van het aantal bewerkerkernen op het systeem te zijn.
+AEM kunnen meerdere workflowthreads tegelijk uitvoeren. Door gebrek wordt het aantal draden gevormd om de helft van het aantal bewerkerkernen op het systeem te zijn.
 
-Wanneer de workflows die worden uitgevoerd veeleisend zijn aan systeembronnen, kan dit betekenen dat er weinig over is voor AEM om te gebruiken voor andere taken, zoals het renderen van de ontwerpinterface. Hierdoor kan het systeem traag zijn tijdens activiteiten zoals het uploaden van grote hoeveelheden afbeeldingen.
+In gevallen waarin de workflows die worden uitgevoerd veeleisend zijn aan systeembronnen, kan dit betekenen dat er weinig over AEM is om te gebruiken voor andere taken, zoals het renderen van de ontwerpgebruikersinterface. Hierdoor kan het systeem traag zijn tijdens activiteiten zoals het uploaden van grote hoeveelheden afbeeldingen.
 
-Om dit probleem aan te pakken, raadt Adobe aan het aantal parallelle taken **** te configureren op een niveau tussen de helft en driekwart van het aantal processorcores op het systeem. Hierdoor moet het systeem voldoende capaciteit hebben om snel te kunnen reageren wanneer deze workflows worden verwerkt.
+Om dit probleem aan te pakken, raadt Adobe aan om het aantal **Maximum Parallelle Banen** te vormen tussen de helft tot driekwart van het aantal bewerkercores op het systeem. Hierdoor moet het systeem voldoende capaciteit hebben om snel te kunnen reageren wanneer deze workflows worden verwerkt.
 
 Om **Maximum Parallelle Banen** te vormen, kunt u of:
 
-* Vorm de Configuratie **[OSGi](/help/sites-deploying/configuring-osgi.md)**van de console van het Web AEM; voor **Wachtrij: Granite Workflow Queue**(een Apache **Sling Job Queue Configuration**).
+* Vorm de Configuratie **[OSGi](/help/sites-deploying/configuring-osgi.md)**van de AEM console van het Web; voor **Wachtrij: Granite Workflow Queue**(een Apache **Sling Job Queue Configuration**).
 
-* Vorm de rij van de optie van Banen **van de** Verkoop van de Console van het Web AEM kan; voor configuratie **taakwachtrij: Granite Workflow Queue**, at `http://localhost:4502/system/console/slingevent`.
+* Vorm de rij van de optie van Banen **van de** Verkoop van de console van het Web van de AEM kan; voor configuratie **taakwachtrij: Granite Workflow Queue**, at `http://localhost:4502/system/console/slingevent`.
 
-Daarnaast is er een aparte configuratie voor de externe wachtrij **van de externe procestaak van de** Granite-workflow. Dit wordt gebruikt voor werkstroomprocessen die externe binaire bestanden, zoals **InDesign Server** of **Image Magick**, starten.
+Daarnaast is er een aparte configuratie voor de externe wachtrij **van de externe procestaak van de** Granite-workflow. Dit wordt gebruikt voor werkschemaprocessen die externe binaire getallen, zoals **InDesign Server** of **Beeld Magick** lanceren.
 
 ### Afzonderlijke taakwachtrij configureren {#configure-individual-job-queues}
 
@@ -72,11 +75,11 @@ Afzonderlijke taakwachtrijen kunnen ook worden toegevoegd voor tijdelijke werkst
 
 ### Workflow leegmaken configureren {#configure-workflow-purging}
 
-In een standaardinstallatie biedt AEM een onderhoudsconsole waar dagelijkse en wekelijkse onderhoudsactiviteiten kunnen worden gepland en geconfigureerd; bijvoorbeeld in :
+In een standaardinstallatie AEM een onderhoudsconsole biedt waar dagelijkse en wekelijkse onderhoudsactiviteiten kunnen worden gepland en geconfigureerd; bijvoorbeeld :
 
 `http://localhost:4502/libs/granite/operations/content/maintenance.html`
 
-Door gebrek, heeft het Venster **van het** Wekelijkse Onderhoud een taak van het Wissen **van het** Werkschema, maar dit moet worden gevormd alvorens het zal lopen. Om werkstroompurges te configureren, moet een nieuwe configuratie **voor het leegmaken van de werkstroom van** Adobe Granite in de webconsole worden toegevoegd.
+Door gebrek, heeft het Venster **van het** Wekelijkse Onderhoud een taak van het Wissen **van het** Werkschema, maar dit moet worden gevormd alvorens het zal lopen. Om werkschemazuiveringen te vormen, moet een nieuwe Configuratie **van de Woorden van het Werkschema van** Adobe Granite in de console van het Web worden toegevoegd.
 
 Zie het [vluchthandboek](/help/sites-administering/operations-dashboard.md)voor meer informatie over onderhoudstaken in AEM.
 
@@ -106,6 +109,7 @@ Workflowmodellen worden in de opslagplaats opgeslagen volgens het type:
    >
    >* plaats om het even welke modellen van uw douanewerkschema in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
@@ -141,6 +145,7 @@ Werkstroomstartdefinities worden ook volgens het type opgeslagen in de opslagpla
    >
    >* plaats om het even welke douane werkschemalanceerders in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
@@ -170,8 +175,9 @@ Workflowscripts worden ook in de repository opgeslagen volgens het type:
    >
    >Niet:
    >
-   >* Plaats om het even welke manuscripten van uw douanewerkschema in deze omslag
+   >* plaats om het even welke manuscripten van uw douanewerkschema in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
@@ -199,6 +205,7 @@ Workflowmeldingen worden ook opgeslagen in de repository volgens het type:
    >
    >* Plaats om het even welke definities van uw douanewerkschemabericht in deze omslag
    >* alles bewerken in `/libs`
+
    >
    >Aangezien om het even welke veranderingen bij verbetering of wanneer het installeren van heet-moeilijke situaties kunnen worden beschreven, cumulatieve moeilijke fixpakken of de dienstpakken.
 
