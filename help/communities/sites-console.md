@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '3127'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ De console van de Plaatsen van Gemeenschappen verleent toegang tot:
 * Sitebeheer
 * [Geneste groepen](groups.md) maken en bewerken (subgemeenschappen)
 
-Zie [Aan de slag met AEM-gemeenschappen](getting-started.md) om te zien hoe snel een gemeenschapssite kan worden gemaakt in de auteursomgeving en hoe u groepen van gemeenschappen kunt maken vanuit de auteur- en publicatieomgeving.
+Zie [Aan de slag met AEM Communities](getting-started.md) om te zien hoe snel een communitysite kan worden gemaakt in de ontwerpomgeving en hoe u communitygroepen kunt maken van de auteur- en publicatieomgevingen.
 
 >[!NOTE]
 >
@@ -42,7 +45,7 @@ Voordat u een community-site maakt, moet u *het volgende doen* :
 De beste praktijken, om ervoor te zorgen de plaats bereid is om vele eigenschappen te steunen, moeten de volgende stappen nemen:
 
 * Installeer het [nieuwste functiepakket](deploy-communities.md#latestfeaturepack)
-* Adobe [Analytics](analytics.md) inschakelen voor AEM-gemeenschappen
+* Adobe Analytics [](analytics.md) inschakelen voor AEM Communities
 * E- [mail configureren](email.md)
 * Communautaire [beheerders identificeren](users.md#creating-community-members)
 * [OAuth-handler](social-login.md#adobe-granite-oauth-authentication-handler) inschakelen voor aanmelden bij een sociaal netwerk
@@ -79,21 +82,21 @@ Het ontwerpproces is een reeks stappen die worden gepresenteerd als deelvensters
 
 In het deelvenster Sjabloon site worden de titel, beschrijving, hoofdmap van site, basistaal, naam en Sjabloon van site opgegeven:
 
-* **[!UICONTROL Titel]** van communautaire site: Een weergavetitel voor de site.
+* **[!UICONTROL Community Site Title]**: Een weergavetitel voor de site.
 
    De titel wordt weergegeven op de gepubliceerde site en in de interface voor sitebeheer.
 
-* **[!UICONTROL Beschrijving]** van communautaire site: Een beschrijving van de site.
+* **[!UICONTROL Community Site Description]**: Een beschrijving van de site.
 
    De beschrijving wordt niet weergegeven op de gepubliceerde site.
 
-* **[!UICONTROL Hoofdmap]** van gemeenschapssite: Het hoofdpad naar de site.
+* **[!UICONTROL Community Site Root]**: Het hoofdpad naar de site.
 
    De standaardhoofdmap is `/content/sites`, maar de hoofdmap kan naar een willekeurige locatie op de website worden verplaatst.
 
-* **[!UICONTROL Basistaal]** van gemeenschapssite: (ongewijzigd laten voor één taal: (Engels) gebruik het keuzemenu om één *of meerdere* basistalen van de beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel), en Chinees (Vereenvoudigd) te kiezen. Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de beste praktijken die worden beschreven in Inhoud [vertalen voor Meerdere sites](../../help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
+* **[!UICONTROL Community Site Base Language]**: (ongewijzigd laten voor één taal: (Engels) gebruik het keuzemenu om één *of meerdere* basistalen van de beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel), en Chinees (Vereenvoudigd) te kiezen. Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de beste praktijken die worden beschreven in Inhoud [vertalen voor Meerdere sites](../../help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
 
-* **[!UICONTROL Naam]** van communautaire site: De naam van de hoofdpagina van de site die wordt weergegeven in de URL
+* **[!UICONTROL Community Site Name]**: De naam van de hoofdpagina van de site die wordt weergegeven in de URL
 
    * Controleer de naam tweemaal omdat deze na het maken van de site niet gemakkelijk kan worden gewijzigd
    * De basis-URL ( `https://*server:port/site root/site name*)` wordt weergegeven onder de `Community Site Name`
@@ -101,9 +104,9 @@ In het deelvenster Sjabloon site worden de titel, beschrijving, hoofdmap van sit
 
       *Bijvoorbeeld*, `http://localhost:4502/content/sites/mysight/en.html`
 
-* **[!UICONTROL Menu Sjabloon]** communautaire site: Gebruik het keuzemenu om een beschikbare sjabloon voor een [community-site](tools.md)te kiezen.
+* **[!UICONTROL Community Site Template]** menu: Gebruik het keuzemenu om een beschikbare sjabloon voor een [community-site](tools.md)te kiezen.
 
-Selecteer **[!UICONTROL Volgende]**
+Selecteer **[!UICONTROL Next]**
 
 ### Stap 2: Ontwerp {#step-design}
 
@@ -113,7 +116,7 @@ Het deelvenster Ontwerp bevat twee subdeelvensters voor het selecteren van het t
 
 ![site-theme-1](assets/sitetheme-1.png)
 
-Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site een responsief, flexibel ontwerp te geven. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de geselecteerde communitysitesjabloon op te maken of u kunt een Bootstrap-thema uploaden.
+Het framework gebruikt [Twitter Bootstrap](https://twitterbootstrap.org/) om de site responsief en flexibel te ontwerpen. U kunt een van de vele vooraf geladen Bootstrap-thema&#39;s selecteren om de stijl van de geselecteerde communitysitesjabloon te bepalen of u kunt een Bootstrap-thema uploaden.
 
 Als deze optie is geselecteerd, wordt het thema bedekt met een ondoorzichtig blauw vinkje.
 
@@ -136,7 +139,7 @@ Houd rekening met het volgende wanneer u een afbeelding maakt of selecteert:
    * Minder dan de breedte van de browser wordt de afbeelding horizontaal herhaald
    * Groter dan de breedte van de browser, lijkt de afbeelding te zijn uitgesneden
 
-Selecteer **[!UICONTROL Volgende]**.
+Selecteer **[!UICONTROL Next]**.
 
 ### Stap 3: Instellingen {#step-settings}
 
@@ -172,7 +175,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 >
 >Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang krijgen, zich mogelijk niet zelf registreren en geen gebruik maken van sociale aanmelding.
 
-* **[!UICONTROL Gebruikersregistratie toestaan]**
+* **[!UICONTROL Allow User Registration]**
 
    Als deze optie ingeschakeld is, kunnen bezoekers van de site leden van de community worden via zelfregistratie.
 
@@ -180,7 +183,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
    Schakel de optie voor een *privésite* van de community uit. Standaard is ingeschakeld.
 
-* **[!UICONTROL Anonieme toegang toestaan]**
+* **[!UICONTROL Allow Anonymous Access]**
 
    Als deze optie is ingeschakeld, is de site van de community *geopend* en kan elke bezoeker van de site toegang krijgen tot de site.
 
@@ -188,7 +191,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
    Schakel de optie voor een *privésite* van de community uit. Standaard is ingeschakeld.
 
-* **[!UICONTROL Berichten toestaan]**
+* **[!UICONTROL Allow Messaging]**
 
    Als deze optie is ingeschakeld, kunnen leden berichten naar elkaar en naar de groep binnen de site van de community verzenden.
 
@@ -196,7 +199,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Sociale aanmeldingen toestaan:Facebook]**
+* **[!UICONTROL Allow Social Logins: Facebook]**
 
    Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Facebook-accountgegevens. De geselecteerde [Facebook-wolkenconfiguratie](social-login.md#create-a-facebook-connect-cloud-service) moet zo worden geconfigureerd dat gebruikers worden toegevoegd aan de groep leden van de site van de gemeenschap zodra de communitysite is gemaakt.
 
@@ -204,7 +207,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
    Laat de optie voor een *privésite* van de community uitgeschakeld. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Sociale aanmeldingen toestaan:Twitter]**
+* **[!UICONTROL Allow Social Logins: Twitter]**
 
    Als deze optie is ingeschakeld, kunnen bezoekers van de site zich aanmelden met hun Twitter-accountgegevens. De geselecteerde [Twitter-wolkenconfiguratie](social-login.md#create-a-twitter-connect-cloud-service) moet zo worden geconfigureerd dat gebruikers aan de ledengroep van de site van de community worden toegevoegd zodra de communitysite is gemaakt.
 
@@ -214,10 +217,10 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
 >[!NOTE]
 
-**[!UICONTROL Sociale aanmeldingen toestaan]**
+**[!UICONTROL Allowing Social Logins]**
 >Hoewel er voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](../../help/sites-administering/production-ready.md)noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding bij Facebook en Twitter](social-login.md).
 >
-#### TAGS {#tagging}
+#### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
 
@@ -235,15 +238,15 @@ De [rollen van leden](users.md) van de gemeenschap worden toegewezen met deze mo
 
 Het zoeken naar leden van een community is eenvoudig met &#39;type-ahead&#39;-zoekopdracht.
 
-* **[!UICONTROL Community-managers]**
+* **[!UICONTROL Community Managers]**
 
    Begin te typen om een of meer leden van de gemeenschap of leden te selecteren die leden van de gemeenschap en leden van groepen kunnen beheren.
 
-* **[!UICONTROL Communautaire moderatoren]**
+* **[!UICONTROL Community Moderators]**
 
    Begin te typen om één of meerdere leden van de gemeenschap of lidgroepen te selecteren die als moderatoren van gebruiker geproduceerde inhoud moeten worden vertrouwd.
 
-* **[!UICONTROL Geprivilegieerde leden van de Gemeenschap]**
+* **[!UICONTROL Community Privileged Members]**
 
    Begin te typen om één of meerdere leden van de gemeenschap of lidgroepen te selecteren die de capaciteit moeten krijgen om nieuwe inhoud tot stand te brengen wanneer `Allow Privileged Member` is geselecteerd voor een [communautaire functie](functions.md).
 
@@ -253,11 +256,11 @@ Het zoeken naar leden van een community is eenvoudig met &#39;type-ahead&#39;-zo
 
 De globale instelling voor het modereren van door gebruikers gegenereerde inhoud (UGC) wordt door deze instellingen beheerd. Individuele componenten hebben extra montages om matiging te controleren.
 
-* **[!UICONTROL Inhoud is vooraf gemodereerd]**
+* **[!UICONTROL Content is Premoderated]**
 
    Als deze optie is ingeschakeld, wordt de geposte community-inhoud pas weergegeven nadat deze is goedgekeurd door een moderator. De optie Standaard is uitgeschakeld. Voor meer informatie, zie het [Modereren van Communautaire Inhoud](moderate-ugc.md#premoderation).
 
-* **[!UICONTROL Markeringsdrempel voordat inhoud wordt verborgen]**
+* **[!UICONTROL Flagging threshold before content is hidden]**
 
    Als de waarde groter is dan 0, moet het aantal keren dat een onderwerp of bericht moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de post nooit verborgen voor de openbare weergave. De standaardwaarde is 5.
 
@@ -265,15 +268,15 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
 ![chlimage_1-453](assets/chlimage_1-453.png)
 
-* **[!UICONTROL Analyse inschakelen]**
+* **[!UICONTROL Enable Analytics]**
 
-   Deze optie is alleen beschikbaar wanneer Adobe Analytics is [geconfigureerd](analytics.md) voor communautaire functies.
+   Alleen beschikbaar wanneer Adobe Analytics is [geconfigureerd](analytics.md) voor functies van Communities.
 
    De optie Standaard is uitgeschakeld. Als deze optie is ingeschakeld, wordt een extra selectiemenu weergegeven:
 
 ![chlimage_1-454](assets/chlimage_1-454.png)
 
-* **[!UICONTROL Verwijzing naar Cloud Config Framework]**
+* **[!UICONTROL Cloud Config Framework Reference]**
 
    Selecteer in het keuzemenu het cloudserviceframework Analytics dat voor deze communitysite is geconfigureerd.
 
@@ -283,35 +286,36 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
 ![chlimage_1-455](assets/chlimage_1-455.png)
 
-* **[!UICONTROL Machine Translation]** toestaan Als deze optie is ingeschakeld (de standaardinstelling is uitgeschakeld), is de functie voor machinevertaling ingeschakeld voor UGC op de site. Dit heeft geen invloed op andere inhoud, zoals pagina-inhoud, zelfs niet als de site is ingesteld als een meertalige site. Zie Door gebruiker gegenereerde inhoud [](translate-ugc.md) vertalen voor informatie over het configureren van een gelicentieerde vertaalservice voor AEM-gemeenschappen. Zie Inhoud [vertalen voor meertalige sites](../../help/sites-administering/translation.md) voor een volledig overzicht.
+* **[!UICONTROL Allow Machine Translation]**
+Als deze optie is ingeschakeld (de standaardinstelling is uitgeschakeld), wordt automatische omzetting ingeschakeld voor UGC binnen de site. Dit heeft geen invloed op andere inhoud, zoals pagina-inhoud, zelfs niet als de site is ingesteld als een meertalige site. Zie Door gebruiker gegenereerde inhoud [](translate-ugc.md) vertalen voor informatie over het configureren van een vertaalservice met licentie voor AEM Communities. Zie Inhoud [vertalen voor meertalige sites](../../help/sites-administering/translation.md) voor een volledig overzicht.
 
 ![chlimage_1-456](assets/chlimage_1-456.png)
 
-* **[!UICONTROL Machine Translation inschakelen voor geselecteerde talen]**
+* **[!UICONTROL Enable Machine Translation for selected languages]**
 
    De talen die voor machinevertaling zijn ingeschakeld, worden standaard ingesteld op de systeeminstelling die is opgegeven in de configuratie [voor](translate-ugc.md#translation-integration-configuration)vertaalintegratie. Deze standaardinstellingen kunnen voor deze site worden overschreven door standaardinstellingen te verwijderen en/of andere talen te selecteren in het keuzemenu.
 
-* **[!UICONTROL Vertaalprovider kiezen]**
+* **[!UICONTROL Choose translation provider]**
 
    Standaard is de serviceprovider een testservice die alleen `microsoft`voor demonstraties wordt gebruikt. Als er geen licentie is voor een vertaalservicebureau, **moet de optie Machine Translation** toestaan zijn uitgeschakeld.
 
-* **[!UICONTROL Globale gedeelde opslag kiezen]**
+* **[!UICONTROL Choose global shared store]**
 
    Voor een website met veelvoudige taalexemplaren, verstrekt een globale gedeelde opslag één enkele draad van gesprek, zichtbaar van elke taalexemplaar. Dit wordt bereikt door een van de talen te selecteren die als een taalkopie worden opgenomen. De standaardinstelling is *Geen wereldwijde gedeelde opslag*.
 
-* **[!UICONTROL Configuratie van vertaalprovider kiezen]**
+* **[!UICONTROL Choose translation provider config]**
 
    Kies een [vertaalintegratieframework](../../help/sites-administering/tc-tic.md) dat voor de vertaalprovider met licentie is gemaakt.
 
 * **Selecteer de vertaalopties voor uw communitysite**
 
-   * **[!UICONTROL Gehele pagina vertalen]**
+   * **[!UICONTROL Translate entire page]**
 
       Als deze optie is geselecteerd, wordt alle UGC op een pagina vertaald in de basistaal van de pagina.
 
       Standaard is *niet geselecteerd*.
 
-   * **[!UICONTROL Alleen selectie vertalen]**
+   * **[!UICONTROL Translate selection only]**
 
       Als deze optie is geselecteerd, wordt naast elke advertentie een vertaaloptie weergegeven waarmee afzonderlijke posts kunnen worden vertaald in de basistaal van de pagina.
 
@@ -319,13 +323,13 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
 * **Persistopties selecteren**
 
-   * **[!UICONTROL Vertaal bijdragen op verzoek van gebruiker en blijf daarna voortbestaan]**
+   * **[!UICONTROL Translate contributions on user request and persist afterwards]**
 
       Als deze optie is geselecteerd, wordt de inhoud pas omgezet wanneer een aanvraag wordt ingediend. Nadat de vertaling is vertaald, wordt de vertaling opgeslagen in de opslagplaats.
 
       Standaard is *niet geselecteerd*.
 
-   * **[!UICONTROL Geen vertalingen behouden]**
+   * **[!UICONTROL Don't persist translations]**
 
       Indien geselecteerd, worden de vertalingen niet opgeslagen in de bewaarplaats.
 
@@ -333,7 +337,8 @@ De globale instelling voor het modereren van door gebruikers gegenereerde inhoud
 
       Standaard is *niet geselecteerd*.
 
-* **[!UICONTROL Slimme rendering]** selecteren een van
+* **[!UICONTROL Smart Render]**
+Selecteer een van de volgende opties
 
    * `Always show contributions in the original language` (standaardwaarde)
    * `Always show contributions in user preferred language`
@@ -349,11 +354,11 @@ De `ENABLEMENT`montages zijn van toepassing wanneer het gekozen malplaatje van d
 
    (Vereist) Alleen leden van de `Community Enablementmanagers` groep kunnen worden geselecteerd om deze activeringscommunity te beheren. Enablement managers zijn verantwoordelijk voor het toewijzen van leden aan bronnen. Zie ook Gebruikers en gebruikersgroepen [beheren](users.md).
 
-* **[!UICONTROL Org-id marketingcloud]**
+* **[!UICONTROL Marketing Cloud Org Id]**
 
    (optioneel) De id voor een [Video Heartbone Analytics](analytics.md#video-heartbeat-analytics) -licentie.
 
-Selecteer **[!UICONTROL Volgende]**.
+Selecteer **[!UICONTROL Next]**.
 
 ### Stap 4: Communitysite maken {#step-create-communities-site}
 
@@ -384,7 +389,7 @@ Wanneer u de muisaanwijzer op een site of een sitekaart plaatst, worden pictogra
 
 ![chlimage_1-460](assets/chlimage_1-460.png)
 
-De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke andere AEM-website. Als u de site wilt openen voor ontwerpen, selecteert u het `Open Site` pictogram dat wordt weergegeven wanneer u de muis op de site plaatst. De site wordt op een nieuw tabblad geopend, zodat de console Communitysites toegankelijk blijft.
+De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke andere AEM website. Als u de site wilt openen voor ontwerpen, selecteert u het `Open Site` pictogram dat wordt weergegeven wanneer u de muis op de site plaatst. De site wordt op een nieuw tabblad geopend, zodat de console Communitysites toegankelijk blijft.
 
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
@@ -393,11 +398,11 @@ Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking]
 
 ## Site-eigenschappen wijzigen {#modifying-site-properties}
 
-![chlimage_1-461](assets/chlimage_1-462.png)
+![chlimage_1-462](assets/chlimage_1-462.png)
 
 De eigenschappen van een bestaande site die tijdens het maken van de site zijn opgegeven, kunnen worden gewijzigd door het `Edit Site`pictogram te selecteren dat met de muis op de site wordt weergegeven.
 
-`Details of the following properties match the descriptions provided in the` Sectie [Site maken](#site-creation) .
+`Details of the following properties match the descriptions provided in the` [Sectie Site maken](#site-creation) .
 
 ![chlimage_1-463](assets/chlimage_1-463.png)
 
@@ -429,13 +434,11 @@ In het deelvenster STRUCTUUR kunt u de structuur wijzigen die oorspronkelijk is 
 
    * **`trashcan icon`**
 
-      
-functies verwijderen (verwijderen) uit de sitestructuur
+      functies verwijderen (verwijderen) uit de sitestructuur
 
    * **`grid icon`**
 
-      
-de volgorde van functies wijzigen zoals deze wordt weergegeven op de navigatiebalk op hoofdniveau van de site
+      de volgorde van functies wijzigen zoals deze wordt weergegeven op de navigatiebalk op hoofdniveau van de site
 
 >[!NOTE]
 U kunt de volgorde van alle functies in de sitestructuur wijzigen, behalve van de functie bovenaan. Daarom kan de homepage van de plaats van gemeenschappen niet worden veranderd.
@@ -497,7 +500,7 @@ Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subc
 
 ## De site exporteren {#exporting-the-site}
 
-![chlimage_1-468](assets/chlimage_1-467.png)
+![chlimage_1-467](assets/chlimage_1-467.png)
 
 Selecteer het exportpictogram als u de muisaanwijzer op de site plaatst, om een pakket van de communitysite te maken dat zowel in [pakketbeheer](../../help/sites-administering/package-manager.md) wordt opgeslagen als wordt gedownload.\
 UGC is niet opgenomen in het sitepakket.
@@ -516,7 +519,7 @@ De naam die voor de lidgroepen wordt gemaakt, bevat de *site-naam* die in [Stap 
 
 Als de naam bijvoorbeeld &quot;connect&quot; was voor een site met de naam &quot;Getting Started Tutorial&quot;, zou de gebruikersgroep voor moderatoren het volgende zijn:
 
-* Titel:Maatschappelijke experts
+* Titel: Maatschappelijke experts
 * Naam: community-*engid*-moderators
 
 Bericht dat om het even welke leden rollen als moderatoren of groepsbeheerders terwijl het creëren van de plaats toewezen, aan de aangewezen groep zal worden toegewezen evenals aan de lidgroep toegewezen. Deze groepen en lidtoewijzingen worden gemaakt bij publicatie wanneer de nieuwe site wordt gepubliceerd.
@@ -535,28 +538,28 @@ Standaard leidt een communitysite naar een voorbeeld van een aanmeldingspagina a
 
 Om correct om te leiden, zodra een plaats is gevormd en ertoe aangezet om te publiceren, voltooi deze stappen om authentificatiemislukking te krijgen om aan de communautaire plaats om te leiden:
 
-* Op elke publicatie-instantie van AEM
+* Op elke AEM-publicatie-instantie
 * Aanmelden met beheerdersrechten
 * Toegang tot de [webconsole](../../help/sites-deploying/configuring-osgi.md)
    * Bijvoorbeeld: [http://localhost:4503/system/console/configMgr](http://localhost:4503/system/console/configMgr)
 
 * Zoeken `Adobe Granite Login Selector Authentication Handler`
 * Selecteer het `pencil`pictogram om de configuratie voor bewerking te openen
-* Voer de volgende **[!UICONTROL aanmeldingspagina-toewijzingen]** in:
+* Voer een **[!UICONTROL Login Page Mappings]** van de volgende opties in:
 
    `/content/sites/<site-name>/path/to/login/page:/content/sites/<site-name>`
 
-    bijvoorbeeld:
+   bijvoorbeeld:
 
    `/content/sites/engage/en/signin:/content/sites/engage/en`
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
 ![chlimage_1-468](assets/chlimage_1-468.png)
 
 ### Omleiding van verificatie testen {#test-authentication-redirection}
 
-Op zelfde AEM publiceert instantie die met een login paginaplaat voor de communautaire plaats wordt gevormd:
+Op zelfde AEM publiceer instantie die met een login paginaplaat voor de communautaire plaats wordt gevormd:
 
 * Naar de homepage van de website van de community bladeren
    * Bijvoorbeeld: [http://localhost:4503/content/sites/engage/en.html](http://localhost:4503/content/sites/engage/en.html)
