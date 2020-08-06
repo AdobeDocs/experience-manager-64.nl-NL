@@ -11,6 +11,9 @@ topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
 translation-type: tm+mt
 source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+workflow-type: tm+mt
+source-wordcount: '186'
+ht-degree: 2%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
 Het integratieframework bevat een integratielaag met een API. Zo kunt u:
 
 * plug-in een eCommerce-systeem en haal productgegevens naar AEM
-* AEM-componenten voor handelsmogelijkheden ontwikkelen, onafhankelijk van de specifieke eCommerce-engine
+* bouwen AEM componenten voor handelsmogelijkheden onafhankelijk van de specifieke eCommerce-motor
 
 Meer informatie:
 
@@ -47,5 +50,5 @@ Zie de [API-documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/d
 
 >[!NOTE]
 >
->Zie [Aangepaste Adobe Experience Manager 6.2 eCommerce-providers](https://helpx.adobe.com/experience-manager/using/ecommerce62.html)maken voor een volledig artikel met alle stappen voor het samenstellen van een eCommerce-provider.
+>Voor een volledig artikel waarin alle stappen worden beschreven om een eCommerce-leverancier te bouwen zie het [Creëren van douaneAdobe Experience Manager 6.2 eCommerce-leveranciers](https://helpx.adobe.com/experience-manager/using/ecommerce62.html).
 
