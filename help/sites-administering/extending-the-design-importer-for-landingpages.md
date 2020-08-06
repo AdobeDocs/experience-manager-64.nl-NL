@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: f8991416-995b-4160-a705-d131e78089ee
 translation-type: tm+mt
 source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+workflow-type: tm+mt
+source-wordcount: '3509'
+ht-degree: 0%
 
 ---
 
@@ -90,19 +93,19 @@ Een voorbeeldfragment van de bestemmingspagina HTML na toevoeging van de canvasd
 </html>
 ```
 
-### De HTML voorbereiden om bewerkbare AEM-componenten op te nemen {#preparing-the-html-to-include-editable-aem-components}
+### De HTML voorbereiden op het opnemen van bewerkbare AEM componenten {#preparing-the-html-to-include-editable-aem-components}
 
-Wanneer u een openingspagina importeert, kunt u de pagina ongewijzigd importeren. Dit betekent dat u na het importeren van de bestemmingspagina geen van de geïmporteerde items kunt bewerken in AEM (u kunt nog steeds extra AEM-componenten toevoegen op de pagina).
+Wanneer u een openingspagina importeert, kunt u de pagina ongewijzigd importeren. Dit betekent dat u, nadat de openingspagina is geïmporteerd, geen van de geïmporteerde items in AEM kunt bewerken (u kunt nog steeds extra AEM op de pagina toevoegen).
 
-Voordat u de openingspagina importeert, wilt u wellicht bepaalde delen van de openingspagina converteren, zodat deze bewerkbare AEM-componenten zijn. Hierdoor kunt u delen van de bestemmingspagina snel bewerken, zelfs nadat het ontwerp van de bestemmingspagina is geïmporteerd.
+Voordat u de openingspagina importeert, wilt u wellicht bepaalde delen van de openingspagina converteren, zodat deze bewerkbare AEM zijn. Hierdoor kunt u delen van de bestemmingspagina snel bewerken, zelfs nadat het ontwerp van de bestemmingspagina is geïmporteerd.
 
 U doet dit door de inhoud toe te voegen `data-cq-component` aan de juiste component in het HTML-bestand dat u importeert.
 
-In de volgende sectie wordt beschreven hoe u uw HTML-bestand kunt bewerken, zodat u bepaalde delen van uw bestemmingspagina&#39;s omzet in verschillende bewerkbare AEM-componenten. Componenten worden in detail beschreven in [Landing Pages Components](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
+In de volgende sectie wordt beschreven hoe u uw HTML-bestand kunt bewerken, zodat u bepaalde delen van uw bestemmingspagina&#39;s omzet in verschillende bewerkbare AEM. Componenten worden in detail beschreven in [Landing Pages Components](/help/sites-classic-ui-authoring/classic-personalization-campaigns-landingpage.md).
 
 >[!NOTE]
 >
->De prijsverhoging van HTML om delen van de landende pagina in componenten om te zetten AEM heeft zowel een lange vorm als een steno markeringsverklaring. Beide worden beschreven voor elke component.
+>De prijsverhoging van HTML om delen van de landende pagina in AEM componenten om te zetten heeft zowel een lange vorm als een steno markeringsverklaring. Beide worden beschreven voor elke component.
 
 ### Beperkingen {#limitations}
 
@@ -140,7 +143,7 @@ HTML-opmaak voor het invoegen van een tekstcomponent ( `foundation/components/te
 
 Als u de bovenstaande markering opneemt in de HTML, doet u het volgende:
 
-* Maakt een bewerkbare AEM-tekstcomponent ( `sling:resourceType=foundation/components/text`) op de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
+* Hiermee maakt u een bewerkbare AEM tekstcomponent ( `sling:resourceType=foundation/components/text`) op de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
 * Stelt de `text` eigenschap van de gemaakte tekstcomponent in op de HTML die in de `div`component is ingesloten.
 
 **Declaratie** van stenorcomponent:
@@ -180,7 +183,7 @@ HTML-opmaak om een titelcomponent ( `wcm/landingpage/components/title`) in te vo
 
 Als u de bovenstaande markering opneemt in de HTML, doet u het volgende:
 
-* Maakt een bewerkbare AEM-titelcomponent ( `sling:resourceType=wcm/landingpage/components/title`) in de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
+* Hiermee maakt u een bewerkbare AEM titelcomponent ( `sling:resourceType=wcm/landingpage/components/title`) in de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
 * Stelt de `jcr:title` eigenschap van de gemaakte component title in op de tekst binnen de tag heading die binnen div wordt omlopen.
 * Stelt de `type` eigenschap in op de tag heading, in dit geval `h1`.
 
@@ -204,7 +207,7 @@ HTML-opmaak om een afbeeldingscomponent (basis/componenten/afbeelding) in te voe
 
 Als u de bovenstaande markering opneemt in de HTML, doet u het volgende:
 
-* Maakt een bewerkbare AEM-afbeeldingscomponent ( `sling:resourceType=foundation/components/image`) in de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
+* Hiermee maakt u een bewerkbare AEM afbeeldingscomponent ( `sling:resourceType=foundation/components/image`) in de bestemmingspagina die na het importeren van het ontwerppakket is gemaakt.
 * Stelt de `fileReference` eigenschap van de gemaakte afbeeldingscomponent in op het pad naar de afbeelding die is opgegeven in het kenmerk src.
 * Stelt de `alt` eigenschap in op de waarde van het alt-kenmerk in de tag img.
 * Stelt de `title` eigenschap in op de waarde van het titelkenmerk in de tag img.
@@ -243,7 +246,7 @@ Deze component CTA kan worden gebruikt om een tekstverbinding op de het landen p
 Ondersteunde eigenschappen
 
 * Label, met opties voor vet, cursief en onderstrepen
-* Doel-URL, ondersteunt derde partijen en URL van AEM
+* Doel-URL, ondersteunt derden en AEM URL
 * Renderopties voor pagina&#39;s (zelfde venster, nieuw venster, enz.)
 
 HTML-tag waarin u wilt opnemen, klikt u door de component in de geïmporteerde postcode. Hier ziet u hoe u URL&#39;s als doel instelt, &#39;Productdetails weergeven&#39; verwijst naar label enzovoort.
@@ -276,7 +279,7 @@ Ondersteunde eigenschappen
 
 * Uitsnijden, roteren van afbeelding
 * Tekst, beschrijving, grootte in px aanwijzen
-* Doel-URL, ondersteunt derde partijen en URL van AEM
+* Doel-URL, ondersteunt derden en AEM URL
 * Renderopties voor pagina&#39;s (zelfde venster, nieuw venster, enz.)
 
 HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde postcode. Hier wordt href toegewezen aan doel-URL, img src de renderingafbeelding, &#39;title&#39; wordt gebruikt als aanwijstekst enzovoort.
@@ -362,7 +365,7 @@ HTML-tag om de grafische koppelingscomponent op te nemen in de geïmporteerde po
 
 ### Parsys {#parsys}
 
-De component AEM parsys is een containercomponent die andere componenten AEM kan bevatten. Het is mogelijk om een component parsys in ingevoerde HTML toe te voegen. Hierdoor kan de gebruiker bewerkbare AEM-componenten aan de bestemmingspagina toevoegen of verwijderen, zelfs nadat deze zijn geïmporteerd.
+De AEM parsys component is een containercomponent die andere AEM componenten kan bevatten. Het is mogelijk om een component parsys in ingevoerde HTML toe te voegen. Hierdoor kan de gebruiker bewerkbare AEM aan de bestemmingspagina toevoegen of verwijderen, zelfs nadat deze is geïmporteerd.
 
 Het alineasysteem biedt gebruikers de mogelijkheid om componenten toe te voegen met behulp van het hulpwerktuig.
 
@@ -377,7 +380,7 @@ HTML-opmaak om een component parsys ( `foundation/components/parsys`) in te voeg
 
 Als u de bovenstaande markering opneemt in de HTML, gebeurt het volgende:
 
-* Voegt een component AEM parsys (stichting/componenten/parsys) in de landende pagina in die na het invoeren van het ontwerppakket wordt gecreeerd.
+* Voegt een AEM parsys component (stichting/componenten/parsys) in de landende pagina in die na het invoeren van het ontwerppakket wordt gecreeerd.
 * Initialiseert het hulpdekick met standaardcomponenten. De nieuwe componenten kunnen aan de landende pagina worden toegevoegd door componenten van sidekick op de parsys component te slepen.
 * Twee titelcomponenten maken ook deel uit van parsys.
 
@@ -405,7 +408,7 @@ De html prijsverhoging om een doelcomponent op te nemen en ook verschillende erv
 
 ## Aanvullende importopties {#additional-importing-options}
 
-Naast het specificeren of de ingevoerde componenten editable componenten AEM zijn, kunt u het volgende ook vormen alvorens het ontwerppakket in te voeren:
+Naast het specificeren of ingevoerde componenten editable AEM componenten zijn, kunt u het volgende ook vormen alvorens het ontwerppakket in te voeren:
 
 * Pagina-eigenschappen instellen door de metagegevens uit te nemen die zijn gedefinieerd in de geïmporteerde HTML.
 * De tekenreekscodering opgeven in de HTML.
@@ -447,7 +450,7 @@ Stel dat u een component hebt waarnaar u in de HTML wilt verwijzen met kenmerk d
 
 Het pad in de data-cq-component moet het resourceType van de component zijn.
 
-### Aanbevolen werkwijzen {#best-practices}
+### Best practices voor {#best-practices}
 
 Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor componentconversie tijdens het importeren.
 
@@ -463,7 +466,7 @@ Het gebruik van CSS-kiezers die lijken op de volgende, wordt niet aanbevolen voo
 
 Dit is te wijten aan het feit dat extra HTML-elementen, zoals de &lt;div>-tag, na het importeren aan de gegenereerde HTML worden toegevoegd.
 
-* Scripts die op de hierboven beschreven structuur vertrouwen, worden ook niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor conversie naar AEM-componenten.
+* Scripts die op de hierboven beschreven structuur vertrouwen, worden ook niet aanbevolen voor gebruik met elementen die zijn gemarkeerd voor conversie naar AEM componenten.
 * Het gebruik van stijlen op de opmaakcodes voor componentconversie zoals &lt;div data-cq-component=&quot;&amp;ast;&quot;> wordt niet aanbevolen.
 * De ontwerplay-out moet de beste praktijken van HTML5 Boilerplate volgen. Meer informatie vindt u op: [https://html5boilerplate.com/](https://html5boilerplate.com/).
 
@@ -508,7 +511,7 @@ In de onderstaande tabel worden de eigenschappen kort beschreven:
   <tr> 
    <td>Vooraf-processor bij het openen van pagina</td> 
    <td>Zoekpatroon </td> 
-   <td>Het patroon waarnaar moet worden gezocht, in de inhoud van het archiefitem. Deze reguliere expressie komt overeen met de inhoud van het item regel voor regel. Bij overeenkomst wordt de overeenkomende tekst vervangen door het opgegeven vervangingspatroon.<br /> <br /> Zie de onderstaande opmerking over de huidige beperkingen van de voorafgaande processor voor het invoeren van landingspagina's.</td> 
+   <td>Het patroon waarnaar moet worden gezocht, in de inhoud van het archiefitem. Deze reguliere expressie komt overeen met de inhoud van het item regel voor regel. Bij overeenkomst wordt de overeenkomende tekst vervangen door het opgegeven vervangingspatroon.<br /> <br /> Zie de onderstaande opmerking over de huidige beperkingen van het vooraf invoeren van de bestemmingspagina.</td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -541,7 +544,7 @@ Als het ontwerppakket een parsys componentenprijsverhoging bevat, dan na het inv
 
 ### Foutberichten die tijdens het importeren worden weergegeven {#error-messages-displayed-during-import}
 
-In het geval van fouten (het geïmporteerde pakket is bijvoorbeeld geen geldige postcode), wordt het pakket niet geïmporteerd tijdens het importeren van het ontwerp en wordt boven op de pagina net boven het vak slepen en neerzetten een foutbericht weergegeven. Hier worden voorbeelden van foutscenario&#39;s gegeven. Nadat u de fout hebt gecorrigeerd, kunt u de bijgewerkte zip opnieuw importeren op dezelfde lege landingspagina. Er zijn verschillende scenario&#39;s waarin fouten worden gegenereerd:
+In het geval van fouten (het geïmporteerde pakket is bijvoorbeeld geen geldige postcode), wordt het pakket niet geïmporteerd tijdens het importeren van het ontwerp. In plaats daarvan wordt boven op de pagina net boven het vak Slepen en neerzetten een foutbericht weergegeven. Hier worden voorbeelden van foutscenario&#39;s gegeven. Nadat u de fout hebt gecorrigeerd, kunt u de bijgewerkte zip opnieuw importeren op dezelfde lege landingspagina. Er zijn verschillende scenario&#39;s waarin fouten worden gegenereerd:
 
 * Geïmporteerd ontwerppakket is geen geldig zip-archief.
 * Het geïmporteerde ontwerppakket bevat geen index.html op het hoofdniveau.
@@ -585,7 +588,7 @@ met een CSS toegepast op de klasse `box` als volgt:
 { width: 450px; padding:10px; border: 1px #C5DBE7 solid; margin: 0px auto 0 auto; background-image:url(assets/box.gif); background-repeat:repeat-x,y; font-family:Verdana, Arial, Helvetica, sans-serif; font-size:12px; color:#6D6D6D; }
 ```
 
-Vervolgens `box img` wordt de indeling gebruikt in de ontwerpimportmodule. De resulterende landingspagina lijkt de opmaak niet te behouden. Houd er rekening mee dat AEM div-tags toevoegt aan de CSS en de code dienovereenkomstig herschrijft om dit probleem te verhelpen. Anders zijn sommige CSS-regels ongeldig.
+Vervolgens `box img` wordt de indeling gebruikt in de ontwerpimportmodule. De resulterende landingspagina lijkt de opmaak niet te behouden. Als u dit wilt omzeilen, moet u er rekening mee houden dat AEM div-tags aan het CSS toevoegt en de code dienovereenkomstig herschrijft. Anders zijn sommige CSS-regels ongeldig.
 
 ```xml
 .box img
