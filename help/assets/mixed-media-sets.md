@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1397'
+ht-degree: 17%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 Met gemengde mediasets kunt u in één presentatie een combinatie van afbeeldingen, afbeeldingssets, centrifuges en video&#39;s aanbieden.
 
-De gemengde Reeksen van Media worden aangewezen door een banner met het woord **[!UICONTROL GemengdMediaSet]**. Als de gemengde mediaset wordt gepubliceerd, staat bovendien de publicatiedatum, die wordt aangegeven door het pictogram **[!UICONTROL Wereld]** , op de banner samen met de laatste wijzigingsdatum, die wordt aangegeven door het **[!UICONTROL potloodpictogram]** .
+Gemengde mediasets worden aangegeven door een banner met het woord **[!UICONTROL MixedMediaSet]**. Als de gemengde mediaset wordt gepubliceerd, wordt bovendien de publicatiedatum, die door het pictogram **[!UICONTROL World]** wordt aangegeven, samen met de laatste wijzigingsdatum op de banner weergegeven. Dit wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
-![chlimage_1-348](assets/chlimage_1-348.png)
+![chlimage_1-349](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
@@ -33,25 +36,25 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
 1. [Upload uw elementen](#uploading-assets).
 
-   Begin door de beelden en video&#39;s voor uw Gemengde Reeksen van Media te uploaden. Maak indien nodig uw [afbeeldingssets](image-sets.md) en [centrifuges](spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, moet u rekening houden met zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
+   Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Maak indien nodig uw eigen [afbeeldingsets](image-sets.md) en [spinsets](spin-sets.md). Omdat gebruikers kunnen inzoomen op afbeeldingen in de viewer voor gemengde mediasets, moet u rekening houden met zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie.
 
 1. [Gemengde mediasets maken.](#creating-mixed-media-sets)
 
-   Als u een gemengde mediaset wilt maken, tikt u op de pagina **[!UICONTROL Middelen]** op **[!UICONTROL Maken > Gemengde mediaset]** en geeft u de set een naam. Kies de elementen en kies de volgorde waarin de afbeeldingen worden weergegeven.
+   Tik op de **[!UICONTROL Assets]** pagina op de set om een gemengde mediaset te maken **[!UICONTROL Create > Mixed Media Set]** en geef deze een naam. Kies de elementen en kies de volgorde waarin de afbeeldingen worden weergegeven.
 
    See [Working with Selectors.](working-with-selectors.md)
 
 1. Stel indien nodig [gemengde voorinstellingen](managing-viewer-presets.md)voor de Media Viewer in.
 
-   Beheerders kunnen voorinstellingen voor gemengde mediaset maken of wijzigen. Als u de gemengde media met een viewervoorinstelling wilt weergeven, selecteert u de gemengde mediaset en selecteert u **[!UICONTROL Viewers]** in het keuzemenu voor de linkertrack.
+   Beheerders kunnen viewervoorinstellingen voor gemengde mediasets maken of wijzigen. Als u de gemengde media met een viewervoorinstelling wilt weergeven, selecteert u de gemengde mediaset en selecteert u **[!UICONTROL Viewers]** in de vervolgkeuzelijst van het linkerspoor.
 
-   Zie **[!UICONTROL Gereedschappen > Middelen > Voorinstellingen]** viewer om voorinstellingen voor viewers te maken of te bewerken.
+   Zie **[!UICONTROL Tools > Assets > Viewer Presets]** viewervoorinstellingen maken of bewerken.
 
    Zie Voorinstellingen voor viewers [toevoegen en bewerken.](managing-viewer-presets.md)
 
 1. [Voorvertoning gemengde mediasets.](#previewing-mixed-media-sets)
 
-   Selecteer de gemengde Mediaset en u kunt er een voorvertoning van weergeven. Klik op de miniatuurpictogrammen om de gemengde mediaset in de geselecteerde viewer te bekijken. U kunt verschillende Viewers kiezen in het menu **[!UICONTROL Viewers]** , dat beschikbaar is in het linkervervolgkeuzemenu.
+   Selecteer de gemengde Mediaset en u kunt er een voorvertoning van weergeven. Klik op de miniatuurpictogrammen om de gemengde mediaset in de geselecteerde viewer te bekijken. U kunt verschillende Viewers van het **[!UICONTROL Viewers]** menu kiezen, beschikbaar van het linkerspoordrop-down menu.
 
 1. [Gemengde mediasets publiceren.](#publishing-mixed-media-sets)
 
@@ -59,21 +62,21 @@ Ga als volgt te werk om snel aan de slag te gaan met gemengde mediasets:
 
 1. [Koppel URL&#39;s aan uw webtoepassing](linking-urls-to-yourwebapplication.md) of [sluit de video- of afbeeldingsviewer](embed-code.md)in.
 
-   Met AEM-elementen worden URL-aanroepen voor gemengde mediasets gemaakt en geactiveerd nadat u de gemengde mediasets hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
+   AEM Assets maakt URL-aanroepen voor gemengde mediasets en activeert deze nadat u de gemengde mediasets hebt gepubliceerd. U kunt deze URL&#39;s kopiëren wanneer u elementen voorvertoont. U kunt ze ook insluiten op uw website.
 
-   Selecteer de Gemengde Reeks van Media, dan in het linkerspoordrop-down menu, uitgezochte **[!UICONTROL Kijkers]**.
+   Select the Mixed Media Set, then in the left rail drop-down menu, select **[!UICONTROL Viewers]**.
 
-   Zie Een gemengde mediaset [koppelen aan een webpagina](linking-urls-to-yourwebapplication.md) en de video- of afbeeldingsviewer [](embed-code.md)insluiten.
+   Zie [Een gemengde mediaset koppelen aan een webpagina](linking-urls-to-yourwebapplication.md) en [De video- of afbeeldingsviewer insluiten](embed-code.md).
 
 Indien nodig kunt u [gemengde mediasets](#editing-mixed-media-sets)bewerken. Daarnaast kunt u de eigenschappen [van](managing-assets-touch-ui.md#editing-properties)gemengde mediaset weergeven en wijzigen.
 
 >[!NOTE]
 >
->Als u kwesties creeert reeksen hebt, zie het [Oplossen van problemen Dynamische Media - wijze](troubleshoot-dms7.md)Scene7.
+>Zie [Problemen met dynamische media oplossen - Scene7-modus](troubleshoot-dms7.md)voor informatie over het maken van sets.
 
 ## Elementen uploaden {#uploading-assets}
 
-Begin door de beelden en video&#39;s voor uw Gemengde Reeksen van Media te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, dient u rekening te houden met zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn.
+Begin door de afbeeldingen en video&#39;s voor uw gemengde mediasets te uploaden. Omdat gebruikers kunnen inzoomen op afbeeldingen in de gemengde Media Set Viewer, dient u rekening te houden met zoomen wanneer u afbeeldingen kiest. Zorg ervoor dat de afbeeldingen ten minste 2000 pixels groot zijn in de grootste dimensie.
 
 Als u bovendien centrifuges of afbeeldingssets wilt toevoegen aan de gemengde mediaset, maakt u deze ook.
 
@@ -85,21 +88,21 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
 **Een gemengde mediaset** maken:
 
-1. Navigeer in Elementen naar de plaats waar u een gemengde mediaset wilt maken, klik op **Maken** en selecteer **[!UICONTROL Gemengde mediaset]**. U kunt de set ook maken vanuit een map die uw elementen bevat.
+1. In Assets, navigate to where you want to create a mixed media set, and click **Create**, and select **[!UICONTROL Mixed Media Set]**. U kunt de set ook maken vanuit een map die uw assets bevat.
 
    ![chlimage_1-349](assets/chlimage_1-349.png)
 
-1. Op de **[!UICONTROL Gemengde pagina van de Redacteur]** van de Reeks van Media, in **[!UICONTROL Titel]**, ga een naam voor de Gemengde Reeks van Media in. De naam wordt in de banner weergegeven in de gemengde mediaset. Voer eventueel een beschrijving in.
+1. Voer op de **[!UICONTROL Mixed Media Set Editor]** pagina in **[!UICONTROL Title]** een naam in voor de gemengde mediaset. De naam wordt in de banner weergegeven in de gemengde mediaset. Voer eventueel een beschrijving in.
 
    ![chlimage_1-350](assets/chlimage_1-350.png)
 
    >[!NOTE]
    >
-   >Wanneer u de gemengde mediaset maakt, kunt u de miniatuur van de gemengde mediaset wijzigen of AEM toestaan de miniatuur automatisch te selecteren op basis van de elementen in de gemengde mediaset. Als u een miniatuur wilt selecteren, klikt u op de miniatuur **** Wijzigen en selecteert u een willekeurige afbeelding (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). Als u een miniatuur hebt geselecteerd en vervolgens besluit dat u een miniatuur van de gemengde mediaset wilt genereren, selecteert u **[!UICONTROL Schakelen naar automatische miniatuur]**.
+   >Wanneer u de gemengde mediaset maakt, kunt u de miniatuur van de gemengde mediaset wijzigen of AEM de miniatuur automatisch selecteren op basis van de elementen in de gemengde mediaset. Als u een miniatuur wilt selecteren, klikt u op een willekeurige afbeelding **[!UICONTROL Change thumbnail]** en selecteert u deze (u kunt ook naar andere mappen navigeren om afbeeldingen te zoeken). If you have selected a thumbnail and then decide that you want AEM to generate one from the mixed media set, select **[!UICONTROL Switch to Automatic thumbnail]**.
 
-1. Tik op de **[!UICONTROL Asset Selector]** om de elementen te selecteren die u wilt opnemen in de gemengde mediaset. Selecteer deze en tik op **[!UICONTROL Selecteren]**.
+1. Tap the **[!UICONTROL Asset Selector]** to select assets that you want to include in your Mixed Media Set. Selecteer deze en tik op **[!UICONTROL Select]**.
 
-   Met de **[!UICONTROL Asset Selector]** kunt u naar elementen zoeken door een trefwoord in te voeren en op **[!UICONTROL Return]** te tikken. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Wijzig de weergave door het pictogram Weergave te selecteren en de weergave **[!UICONTROL Lijst]**, **[!UICONTROL Kolom]** of **[!UICONTROL Kaart]** te selecteren.
+   With the **[!UICONTROL Asset Selector]**, you can search for assets by typing in a keyword and tapping **[!UICONTROL Return]**. U kunt ook filters toepassen om de zoekresultaten te verfijnen. U kunt filteren op pad, verzameling, bestandstype en tag. Selecteer het filter en tik op het pictogram **[!UICONTROL Filter]** op de werkbalk. Change the view by selecting the View icon and selecting **[!UICONTROL List]**, **[!UICONTROL Column]**, or **[!UICONTROL Card]** view.
 
    See [Working with Selectors](working-with-selectors.md).
 
@@ -109,15 +112,15 @@ Wanneer u elementen aan de set toevoegt, worden deze automatisch in alfanumeriek
 
    ![chlimage_1-352](assets/chlimage_1-352.png)
 
-   Als u miniaturen wilt toevoegen, klikt u op het pictogram **[!UICONTROL +]** naast de afbeelding en navigeert u naar de gewenste miniatuur. Tik op **[!UICONTROL Opslaan]** als u alle miniatuurafbeeldingen hebt geselecteerd.
+   If you want to add thumbnails, click the **[!UICONTROL +]** icon next to the image and navigate to the thumbnail you want. Tik op alle miniatuurafbeeldingen wanneer u klaar bent met het selecteren **[!UICONTROL Save]**.
 
    >[!NOTE]
    >
-   >Tik op Element **[!UICONTROL toevoegen als u elementen]** wilt toevoegen.
+   >Tik op **[!UICONTROL Add Asset]** als u elementen wilt toevoegen.
 
-1. Als u een element wilt verwijderen, schakelt u het desbetreffende selectievakje in en tikt u op Element **** verwijderen.
-1. Als u een voorinstelling wilt toepassen, tikt u op **[!UICONTROL Voorinstelling]** in de rechterbovenhoek en selecteert u een voorinstelling die u op de elementen wilt toepassen.
-1. Click **[!UICONTROL Save]**. De nieuwe gemengde mediaset wordt weergegeven in de map waarin u deze hebt gemaakt.
+1. Als u een element wilt verwijderen, schakelt u het desbetreffende selectievakje in en tikt u op **[!UICONTROL Delete Asset]**.
+1. Tik in de rechterbovenhoek op een voorinstelling om deze toe te passen. Selecteer vervolgens de voorinstelling die u op de elementen wilt toepassen. **[!UICONTROL Preset]**
+1. Klik op **[!UICONTROL Save]**. De nieuwe gemengde mediaset wordt weergegeven in de map waarin u deze hebt gemaakt.
 
 ## Gemengde mediasets bewerken {#editing-mixed-media-sets}
 
@@ -133,28 +136,29 @@ U kunt diverse bewerkingstaken rechtstreeks in de gebruikersinterface uitvoeren 
 
 1. Voer een van de volgende handelingen uit:
 
-   * Houd de muisaanwijzer boven een element uit een gemengde mediaset en tik op **[!UICONTROL Bewerken]** (potloodpictogram).
-   * Tik met de muis over een gemengde mediaset op **[!UICONTROL Selecteren]** (vinkpictogram) en tik vervolgens op **[!UICONTROL Bewerken]** op de werkbalk.
-   * Tik op een element uit een gemengde mediaset en tik vervolgens op **[!UICONTROL Bewerken]** (potloodpictogram) op de werkbalk.
+   * Houd de muisaanwijzer boven een element uit een gemengde mediaset en tik op **[!UICONTROL Edit]** (potloodpictogram).
+   * Houd de muisaanwijzer boven een element uit een gemengde mediaset, tik op **[!UICONTROL Select]** (vinkpictogram) en tik vervolgens op **[!UICONTROL Edit]** de werkbalk.
+   * Tik op een element uit een gemengde mediaset en tik vervolgens op **[!UICONTROL Edit]** (potloodpictogram) op de werkbalk.
 
 1. Voer in de Editor gemengde mediaset een van de volgende handelingen uit:
 
-   * Tik in het linkerdeelvenster op **[!UICONTROL Elementen]** (afbeeldingspictogram) en sleep een element naar een nieuwe locatie om de volgorde van de elementen te wijzigen.
-   * Tik op Element **** toevoegen om elementen toe te voegen. Navigeer naar de elementen. Tik op het pictogram van het vinkje voor elk element dat u wilt toevoegen. Houd de muisaanwijzer boven de afbeelding van het element (niet de naam van het element). Tik in de rechterbovenhoek op **[!UICONTROL Selecteren]**.
-   * Tik op **[!UICONTROL Elementen]** (afbeeldingspictogram) in het linkerdeelvenster en selecteer vervolgens het element om een element te verwijderen. Tik op de werkbalk op Element **[!UICONTROL verwijderen]**.
-   * Tik in het linkerdeelvenster op **[!UICONTROL Elementen]** (afbeeldingspictogram) om elementen op naam in oplopende of aflopende volgorde te sorteren. Tik rechts van de kop **[!UICONTROL Middelen]** op de pictogrammen voor de invoegpunt omhoog of omlaag.
+   * Tik in het linkerdeelvenster op **[!UICONTROL Assets]** (afbeeldingspictogram) en sleep een element naar een nieuwe locatie om de volgorde van de elementen te wijzigen.
+   * Tik op **[!UICONTROL Add Asset]** de werkbalk om elementen toe te voegen. Navigeer naar de elementen. Tik op het pictogram van het vinkje voor elk element dat u wilt toevoegen. Houd de muisaanwijzer boven de afbeelding van het element (niet de naam van het element). Tik in de rechterbovenhoek op **[!UICONTROL Select]**.
+   * Tik op **[!UICONTROL Assets]** (afbeeldingspictogram) en selecteer het element om een element te verwijderen. Tik op de werkbalk **[!UICONTROL Delete Asset]**.
+   * Tik in het linkerdeelvenster op **[!UICONTROL Assets]** (afbeeldingspictogram) om elementen op naam in oplopende of aflopende volgorde te sorteren. Tik rechts van de **[!UICONTROL Assets]** kop op of omlaag de invoegpictogrammen.
+
    >[!NOTE]
    >
-   >* Als u een volledige gemengde mediaset wilt verwijderen, navigeert u vanuit elke weergavemodus (zoals de **[!UICONTROL Kaart]** - of **[!UICONTROL Kolomweergave]** ) naar de gemengde mediaset. Houd de cursor boven het element en tik op het vinkje om het te selecteren. Druk op **[!UICONTROL Backspace]** op het toetsenbord of tik op **[!UICONTROL Meer]** (drie punten) op de werkbalk en tik vervolgens op **[!UICONTROL Delete]**.
-   >* U kunt de elementen in een gemengde mediaset bewerken door naar de set te navigeren, op Leden **** instellen in de linkertrack te tikken en vervolgens op het pictogram **[!UICONTROL Potlood]** op een afzonderlijk element te tikken om het bewerkingsvenster te openen.
+   >* To delete an entire Mixed Media Set, from any viewing mode (such as **[!UICONTROL Card]** view or **[!UICONTROL Column]** view) navigate to the Mixed Media Set. Wijs de asset aan en tik op het vinkje om deze te selecteren. Druk op **[!UICONTROL Backspace]** het toetsenbord of tik op **[!UICONTROL More]** (drie punten) op de werkbalk en tik vervolgens op **[!UICONTROL Delete]**.
+   >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
 1. Tik **[!UICONTROL opslaan** wanneer u klaar bent met bewerken.
 
    >[!NOTE]
    >
-   >* Als u de elementen in een gemengde mediaset wilt bewerken, navigeert u naar de gemengde mediaset. Tik (niet selecteren) op de set om deze te openen op de pagina Voorvertoning **[!UICONTROL van AEM-]** set. Tik in het linkerspoor op het inlasteken omlaag om de vervolgkeuzelijst te openen en tik vervolgens op Leden **** instellen. Houd de muisaanwijzer op een element op de pagina Leden **** instellen en tik op **[!UICONTROL Bewerken]** (potloodpictogram) om de bewerkingspagina te openen.
-   >* Als u een volledige gemengde mediaset wilt verwijderen, navigeert u vanuit elke weergavemodus (zoals de weergave **[!UICONTROL Kaart]** of **[!UICONTROL Kolom]** ) naar de gemengde mediaset. Houd de muisaanwijzer boven de set en tik op **[!UICONTROL Selecteren]** (vinkpictogram). Druk op **[!UICONTROL Backspace]** op uw toetsenbord of tik op **[!UICONTROL Meer]** (rij met drie punten) en tik vervolgens op **[!UICONTROL Delete]**.
+   >* Als u de assets in een gemengde mediaset wilt bewerken, gaat u naar de gemengde mediaset. Tap (do not select) the set to open it in the AEM **[!UICONTROL Set Preview]** page. In the left rail, tap the down caret to open the drop-down list, then tap **[!UICONTROL Set Members]**. In the **[!UICONTROL Set Members]** page, hover on an asset, then tap **[!UICONTROL Edit]** (pencil icon) to open the editing page.
+   >* To delete an entire Mixed Media Set - From any viewing mode (such as **[!UICONTROL Card]** view or **[!UICONTROL Column]** view), navigate to the Mixed Media Set. Hover on the set, then tap **[!UICONTROL Select]** (checkmark icon). Druk op **[!UICONTROL Backspace]** het toetsenbord of tik op **[!UICONTROL More]** (rij met drie punten) en tik vervolgens op **[!UICONTROL Delete]**.
 
 
 ## Voorvertoning van gemengde mediasets {#previewing-mixed-media-sets}
