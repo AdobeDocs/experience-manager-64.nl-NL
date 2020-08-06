@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
 translation-type: tm+mt
 source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+workflow-type: tm+mt
+source-wordcount: '890'
+ht-degree: 0%
 
 ---
 
@@ -45,12 +48,15 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 
 1. In beide gevallen voert u
 
-   * **Titel**(*vereist*) De weergavetotel voor de tag. Tijdens het invoeren van elk teken
+   * **Titel**
+(
+*Vereist*) De weergavetoetiek voor de tag. Tijdens het invoeren van elk teken
 
       Het wordt aanbevolen deze speciale tekens niet te gebruiken:
 
       * `colon (:)` - naamruimtescheidingsteken
       * `forward slash (/)` - scheidingsteken voor subtags
+
       Deze tekens worden niet weergegeven als ze worden ingevoerd.
 
    * **Naam**
@@ -61,7 +67,7 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 
       (*Optioneel*) Een beschrijving van de tag.
 
-   * Selecteer **Maken**
+   * select **Create**
 
 
 ## Tags bewerken {#editing-tags}
@@ -95,7 +101,7 @@ U kunt als volgt de klassieke UI-tagingconsole openen:
 Als u wilt helpen dat tagbeheerders en ontwikkelaars de taxonomie opschonen of de naam van een tag-id wijzigen, kunt u een tag naar een nieuwe locatie verplaatsen:
 
 1. Open de **Tagingconsole** .
-1. **Selecteer de tag en klik op** Verplaatsen... in de bovenste werkbalk (of in het contextmenu).
+1. Selecteer de tag en klik op **Verplaatsen...** in de bovenste werkbalk (of in het contextmenu).
 1. Definieer in het dialoogvenster **Tag** verplaatsen:
 
    * **naar**, de bestemmingsknoop.
@@ -118,7 +124,7 @@ U kunt tags samenvoegen wanneer een taxonomie duplicaten bevat. Wanneer label A 
 Een tag samenvoegen in een andere tag:
 
 1. Open de **Tagingconsole** .
-1. **Selecteer de tag en klik op** Samenvoegen... in de bovenste werkbalk (of in het contextmenu).
+1. Selecteer de tag en klik op **Samenvoegen...** in de bovenste werkbalk (of in het contextmenu).
 1. Definieer in het dialoogvenster **Samenvoegcode** :
 
    * **in**, de bestemmingsknoop.
@@ -138,7 +144,7 @@ Zo ziet u hoe vaak een tag wordt gebruikt:
 
 ## Tags beheren in verschillende talen {#managing-tags-in-different-languages}
 
-De optionele `title`eigenschap van een tag kan in meerdere talen worden vertaald. De tag `titles` kan vervolgens worden weergegeven volgens de taal van de gebruiker of de paginataal.
+De optionele `title`eigenschap van een tag kan in meerdere talen worden vertaald. Het label `titles` kan vervolgens worden weergegeven volgens de taal van de gebruiker of de paginataal.
 
 ### Tagtitels definiëren in meerdere talen {#defining-tag-titles-in-multiple-languages}
 
