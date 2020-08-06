@@ -15,38 +15,39 @@ ht-degree: 1%
 
 Adobe Experience Manager (AEM) Assets gebruikt:
 
-* Een proxy om het laden van bepaalde verwerkingstaken te verdelen. Een volmacht is een instantie AEM die met een volmachtsarbeider communiceert om een specifieke taak te vervullen, en andere instanties AEM om de resultaten te leveren.
+* Een proxy om het laden van bepaalde verwerkingstaken te verdelen. Een volmacht is een AEM instantie die met een volmachtsarbeider communiceert om een specifieke taak, en andere AEM instanties te vervullen om de resultaten te leveren.
 * Een proxyworker om een specifieke taak te definiëren en te beheren.
 
 Deze kunnen betrekking hebben op een groot aantal verschillende taken; bijvoorbeeld met een Adobe InDesign Server bestanden verwerken.
 
-Voor het volledig uploaden van bestanden naar AEM Assets die u met Adobe InDesign hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met de Server van Adobe InDesign te communiceren, waar de [manuscripten](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) worden in werking gesteld om meta-gegevens te halen en diverse vertoningen voor AEM Assets te produceren. De proxyworker maakt de tweewegscommunicatie mogelijk tussen de InDesign-server en de AEM-instantie(s) in een cloudconfiguratie.
+Voor het volledig uploaden van bestanden naar AEM Assets die u met Adobe InDesign hebt gemaakt, wordt een proxy gebruikt. Dit gebruikt een volmachtsarbeider om met de Adobe InDesign Server te communiceren, waar de [manuscripten](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) worden in werking gesteld om meta-gegevens te halen en diverse vertoningen voor AEM Assets te produceren. De volmachtsarbeider laat de bidirectionele communicatie tussen de InDesign Server en de AEM instantie(s) in een wolkenconfiguratie toe.
 
 >[!NOTE]
 >
->Adobe InDesign wordt geleverd als twee producten:
+>Adobe InDesign bestaat uit twee producten:
 >
 >* [InDesign](https://www.adobe.com/products/indesign.html)\
    >  Zo kunt u paginalay-outs ontwerpen voor afdrukken en/of digitale distributie.
    >
    >
 * [InDesign Server](https://www.adobe.com/products/indesignserver.html)\
-   >  Met deze engine kunt u programmatisch geautomatiseerde documenten maken op basis van wat u met InDesign hebt gemaakt. Het werkt als dienst die een interface aan zijn motor [ExtendScript](https://www.adobe.com/devnet/scripting.html) aanbiedt.\
+   >  Met deze engine kunt u programmatisch geautomatiseerde documenten maken op basis van wat u met InDesign hebt gemaakt. Het werkt als dienst die een interface aan zijn motor van [ExtendScript](https://www.adobe.com/devnet/scripting.html) aanbiedt.\
    >  De scripts worden geschreven in ExtendScript, wat vergelijkbaar is met javascript. Zie [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)voor meer informatie over InDesign-scripts.
+
 >
 
 
 
 ## Hoe de extractie werkt {#how-the-extraction-works}
 
-De InDesign-server kan worden geïntegreerd met AEM Assets, zodat bestanden die zijn gemaakt met InDesign ( `.indd`) kunnen worden geüpload, vertoningen kunnen worden gegenereerd, *alle* media kunnen worden uitgepakt (bijvoorbeeld video) en opgeslagen als elementen:
+De InDesign Server kan met AEM Assets worden geïntegreerd, zodat bestanden die met InDesign ( `.indd`) zijn gemaakt, kunnen worden geüpload, vertoningen worden gegenereerd, *alle* media kunnen worden uitgepakt (bijvoorbeeld video) en als elementen kunnen worden opgeslagen:
 
 >[!NOTE]
 >
->In eerdere versies van AEM konden XMP en de miniatuur worden geëxtraheerd. Nu kunnen alle media worden geëxtraheerd.
+>In eerdere versies van AEM konden XMP en de miniatuur worden opgehaald. Alle media kunnen nu worden uitgepakt.
 
-1. Upload uw `.indd` bestand naar AEM Assets.
-1. Een framework verzendt opdrachtscripts naar de InDesign-server via SOAP (Simple Object Access Protocol).
+1. Upload je `.indd` bestand naar AEM Assets.
+1. Een framework verzendt opdrachtscript(s) naar de InDesign Server via SOAP (Simple Object Access Protocol).
 
    Dit opdrachtscript:
 
@@ -57,6 +58,7 @@ De InDesign-server kan worden geïntegreerd met AEM Assets, zodat bestanden die 
       * Er worden PDF- en JPG-uitvoeringen gegenereerd.
       * HTML- en IDML-uitvoeringen worden gegenereerd.
    * Plaats de resulterende bestanden terug naar AEM Assets.
+
    >[!NOTE]
    >
    >IDML is een op XML gebaseerde indeling die *alles* in het InDesign-bestand rendert. Het wordt opgeslagen als gecomprimeerd pakket gebruikend [compressie Zip](https://www.techterms.com/definition/zip) .
@@ -65,7 +67,7 @@ De InDesign-server kan worden geïntegreerd met AEM Assets, zodat bestanden die 
 
    >[!CAUTION]
    >
-   >Als InDesign Server niet is geïnstalleerd of niet is geconfigureerd, kunt u nog steeds een `.indd` bestand uploaden naar AEM. De gegenereerde uitvoeringen zijn echter beperkt tot `png` en `jpeg`, u kunt geen paginauitvoeringen genereren `html`, `idml` of de pagina-uitvoeringen.
+   >Als de InDesign Server niet geïnstalleerd of niet gevormd is, dan kunt u een `.indd` dossier in AEM nog uploaden. De gegenereerde uitvoeringen zijn echter beperkt tot `png` en `jpeg`, u kunt geen paginauitvoeringen genereren `html`, `idml` of de pagina-uitvoeringen.
 
 1. Na de extractie en uitvoering:
 
@@ -73,28 +75,28 @@ De InDesign-server kan worden geïntegreerd met AEM Assets, zodat bestanden die 
    * De geëxtraheerde tekst en bestanden worden opgeslagen in AEM Assets.
    * Alle uitvoeringen worden opgeslagen in AEM Assets, in het element zelf.
 
-## De InDesign-server integreren met AEM {#integrating-the-indesign-server-with-aem}
+## De InDesign Server integreren met AEM {#integrating-the-indesign-server-with-aem}
 
-Als u de InDesign-server wilt integreren voor gebruik met AEM Assets en nadat u de proxy hebt geconfigureerd, moet u:
+Om de InDesign Server voor gebruik met AEM Assets en na het vormen van uw volmacht te integreren, moet u:
 
-1. [Installeer de InDesign-server](#installing-the-indesign-server).
-1. Indien nodig, [vorm het Werkschema](#configuring-the-aem-assets-workflow)van AEM Assets.
+1. [Installeer de InDesign Server](#installing-the-indesign-server).
+1. Indien nodig, [configureer de AEM Assets Workflow](#configuring-the-aem-assets-workflow).
 
    Dit is alleen nodig als de standaardwaarden niet geschikt zijn voor uw instantie.
 
-1. Configureer een [proxyworker voor de InDesign-server](#configuring-the-proxy-worker-for-indesign-server).
+1. Configureer een [proxyworker voor de InDesign Server](#configuring-the-proxy-worker-for-indesign-server).
 
-### De InDesign-server installeren {#installing-the-indesign-server}
+### De InDesign Server installeren {#installing-the-indesign-server}
 
-U installeert en start de InDesign-server voor gebruik met AEM:
+U installeert en start de InDesign Server voor gebruik met AEM:
 
-1. Download en installeer Adobe InDesign Server.
+1. Download en installeer de Adobe InDesign Server.
 
    >[!NOTE]
    >
    >InDesign Server (CS6 en hoger).
 
-1. Indien nodig kunt u de configuratie van uw InDesign Server-instantie aanpassen.
+1. Indien nodig, kunt u de configuratie van uw instantie van de InDesign Server aanpassen.
 
 1. Start de server vanaf de opdrachtregel:
 
@@ -117,7 +119,7 @@ AEM Assets has a pre-configured workflow **DAM Update Asset**, that has several 
 
 Dit werkschema is opstelling met standaardwaarden die voor uw opstelling op de diverse auteursinstanties (dit is een standaardwerkschema, zodat is de verdere informatie beschikbaar onder het [Uitgeven van een Werkschema](/help/sites-developing/workflows-models.md#configuring-a-workflow-step)) kunnen worden aangepast. Als u de standaardwaarden (met inbegrip van de haven van de ZEEP) gebruikt, dan is geen configuratie nodig.
 
-Na de installatie wordt door het uploaden van InDesign-bestanden naar AEM Assets (op een van de gebruikelijke manieren) de workflow geactiveerd die nodig is om het element te verwerken en de verschillende uitvoeringen voor te bereiden. Test uw configuratie door een `.indd` bestand te uploaden naar AEM Assets om te bevestigen dat de verschillende uitvoeringen die onder IDS zijn gemaakt, worden weergegeven `<*your_asset*>.indd/Renditions`
+Na de installatie wordt door het uploaden van InDesign-bestanden naar AEM Assets (op een van de gebruikelijke manieren) de workflow geactiveerd die nodig is om het element te verwerken en de verschillende uitvoeringen voor te bereiden. Test uw configuratie door een `.indd` bestand naar AEM Assets te uploaden om te bevestigen dat de verschillende uitvoeringen die door IDS onder zijn gemaakt, worden weergegeven `<*your_asset*>.indd/Renditions`
 
 #### Media extraheren {#media-extraction}
 
@@ -131,21 +133,21 @@ Argumenten voor het uitnemen van media en scriptpaden
 
 * **ExtendScript-bibliotheek**: Dit is een eenvoudige http-methodebibliotheek, vereist door de andere scripts.
 
-* **Scripts** uitbreiden: Hier kunt u verschillende scriptcombinaties opgeven. Als u uw eigen scripts op de InDesign-server wilt uitvoeren, slaat u de scripts op `/apps/settings/dam/indesign/scripts`.
+* **Scripts** uitbreiden: Hier kunt u verschillende scriptcombinaties opgeven. Als u wilt dat uw eigen scripts op de InDesign Server worden uitgevoerd, slaat u de scripts op `/apps/settings/dam/indesign/scripts`.
 
    Zie [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting)voor meer informatie over InDesign-scripts.
 
 >[!CAUTION]
 >
->Wijzig de ExtendScript-bibliotheek niet. De bibliotheek biedt de HTTP-functionaliteit die nodig is voor communicatie met Sling. Met deze instelling geeft u de bibliotheek op die naar de Adobe InDesign-server moet worden verzonden voor gebruik.
+>Wijzig de ExtendScript-bibliotheek niet. De bibliotheek biedt de HTTP-functionaliteit die nodig is voor communicatie met Sling. Met deze instelling geeft u de bibliotheek op die naar de Adobe InDesign Server moet worden verzonden voor gebruik.
 
-Het `ThumbnailExport.jsx` script dat wordt uitgevoerd door de workflowstap Media Extraction, genereert een miniatuuruitvoering in de JPG-indeling. Deze vertoning wordt gebruikt door de werkstroomstap Miniaturen verwerken om de statische uitvoeringen te genereren die door AEM worden vereist.
+Het `ThumbnailExport.jsx` script dat wordt uitgevoerd door de workflowstap Media Extraction, genereert een miniatuuruitvoering in de JPG-indeling. Deze vertoning wordt gebruikt door de werkstroomstap Miniaturen verwerken om de statische uitvoeringen te genereren die AEM vereist.
 
-U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u de standaardinstellingen niet verwijdert, omdat deze vereist zijn door de gebruikersinterface van de AEM Assets. Tot slot verwijdert de workflowstap Voorvertoning afbeelding verwijderen de miniatuuruitvoering .jpg, omdat deze niet langer nodig is.
+U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u de standaardinstellingen niet verwijdert, omdat deze vereist zijn door de gebruikersinterface van AEM Assets. Tot slot verwijdert de workflowstap Voorvertoning afbeelding verwijderen de miniatuuruitvoering .jpg, omdat deze niet langer nodig is.
 
 #### Pagina uitnemen {#page-extraction}
 
-Hiermee maakt u een AEM-pagina van de geëxtraheerde elementen. Een extractiemanager wordt gebruikt om gegevens uit een vertoning (momenteel HTML of IDML) te halen. Deze gegevens worden vervolgens gebruikt om een pagina te maken met de PageBuilder.
+Hierdoor wordt een AEM pagina gemaakt van de geëxtraheerde elementen. Een extractiemanager wordt gebruikt om gegevens uit een vertoning (momenteel HTML of IDML) te halen. Deze gegevens worden vervolgens gebruikt om een pagina te maken met de PageBuilder.
 
 To customize, you can edit the **[!UICONTROL Arguments]** tab of the **Page Extraction** step.
 
@@ -178,13 +180,13 @@ Standaard is de IDML-exporthandler beschikbaar. Het werkt op de vertoning die in
 
    ![proxy_disworkerconfig](assets/proxy_idsworkerconfig.png)
 
-   * **IDS-pool**: Het (de) eindpunt(en) van de ZEEP die voor het communiceren met de Server InDesign moeten worden gebruikt. U kunt items toevoegen, verwijderen en bestellen.
+   * **IDS-pool**: Het (de) eindpunt(en) van de ZEEP die voor het communiceren met de InDesign Server moeten worden gebruikt. U kunt items toevoegen, verwijderen en bestellen.
 
 1. Klik **[!UICONTROL OK]** om op te slaan.
 
 ### Het vormen van Dag CQ Verbinding Externalzer  {#configuring-day-cq-link-externalizer}
 
-Als de InDesign-server en AEM op verschillende hosts worden uitgevoerd of als deze toepassingen niet op de standaardpoorten worden uitgevoerd, configureert u **Day CQ Link External** om de hostnaam, poort en inhoudsweg voor de InDesign-server in te stellen.
+Als de server van de InDesign en AEM op verschillende gastheren of één van beide of beide toepassingen lopen niet op standaardhavens, vorm **Dag CQ Verbinding Externalzer** om de gastheernaam, de haven, en de inhoudspad voor de server van de InDesign te plaatsen.
 
 1. Open Configuration Manager via de URL `https://[AEM_server]:[port]/system/console/configMgr`.
 1. Locate the configuration **[!UICONTROL Day CQ Link Externalizer]**, and click the **[!UICONTROL Edit]** icon to open it.
@@ -192,13 +194,13 @@ Als de InDesign-server en AEM op verschillende hosts worden uitgevoerd of als de
 
    ![chlimage_1-290](assets/chlimage_1-290.png)
 
-### Parallelle taakverwerking inschakelen voor InDesign Server(s) {#enabling-parallel-job-processing-for-indesign-server-s}
+### Parallelle taakverwerking inschakelen voor InDesign Server(en) {#enabling-parallel-job-processing-for-indesign-server-s}
 
 U kunt nu parallelle taakverwerking inschakelen voor IDS.
 
-Eerst moet u bepalen hoeveel parallelle taken ( `x`) een InDesign-server maximaal kan verwerken:
+Eerst moet u het maximumaantal parallelle banen ( `x`) bepalen een InDesign Server kan verwerken:
 
-* Op één multiprocessorcomputer is het maximumaantal parallelle taken (x) dat een InDesign-server kan verwerken één minder dan het aantal processors met IDS.
+* Op één multiprocessorcomputer is het maximumaantal parallelle taken (x) dat een InDesign Server kan verwerken één minder dan het aantal processors met IDS.
 * Wanneer u IDS op veelvoudige machines in werking stelt moet u het totale aantal beschikbare bewerkers (dat wil zeggen op alle machines) tellen dan het totale aantal machines aftrekken.
 
 Om het aantal parallelle banen te vormen IDS:
@@ -217,27 +219,27 @@ Om het aantal parallelle banen te vormen IDS:
    * **[!UICONTROL Maximum Parallel Jobs]** - `<*x*>` (zoals hierboven berekend)
 
 1. Sla deze wijzigingen op.
-1. Schakel het `enable.multisession.name` selectievakje onder `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`in als u ondersteuning voor meerdere sessies wilt inschakelen voor Adobe CS6 en hoger.
+1. Schakel het `enable.multisession.name` selectievakje onder `com.day.cq.dam.ids.impl.IDSJobProcessor.name configuration`in als u ondersteuning voor meerdere sessies wilt inschakelen voor Adobe CS6 en later.
 1. Creeer een [pool van de arbeiders van &lt; `*x*>` IDS door de eindpunten van de ZEEP aan de configuratie](#configuring-the-proxy-worker-for-indesign-server)van de Arbeider toe te voegen IDS.
 
-   Als er meerdere computers zijn waarop InDesign-servers worden uitgevoerd, voegt u SOAP-eindpunten (aantal processors per computer -1) toe voor elke computer.
+   Als er meerdere computers zijn waarop InDesign Server wordt uitgevoerd, voegt u SOAP-eindpunten (aantal processors per computer -1) toe voor elke computer.
 
    >[!NOTE]
    >
-   >Wanneer u werkt met een pool met workers, kunt u een geblokkeerde lijst met IDS-workers inschakelen.
+   >Wanneer u werkt met een groep workers, kunt u de lijst van afgewezen personen van IDS-workers inschakelen.
    >
    >Om dit te doen, laat checkbox &quot;enable.retry.name&quot;, onder de `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuratie toe, die IDS baanterugwinning toelaat.
    >
    >Ook, onder de `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuratie, plaats een positieve waarde voor `max.errors.to.blacklist` parameter die aantal baanterugwinnen alvorens IDS van de lijst van baanmanagers bepaalt
    >
-   >De IDS-worker wordt standaard opnieuw gevalideerd nadat de configureerbare (`retry.interval.to.whitelist.name`) tijd in minuten is verstreken. Als de worker online wordt gevonden, wordt deze verwijderd uit de geblokkeerde lijst.
+   >De IDS-worker wordt standaard opnieuw gevalideerd nadat de configureerbare (`retry.interval.to.whitelist.name`) tijd in minuten is verstreken. Als de worker online wordt gevonden, wordt deze uit de lijst van afgewezen personen verwijderd.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
 
 ## Ondersteuning inschakelen voor Adobe InDesign-server 10.0 of hoger {#enabling-support-for-indesign-server-or-higher}
 
-Voer voor InDesign Server 10.0 of hoger de volgende stappen uit om ondersteuning voor meerdere sessies in te schakelen.
+Voer voor InDesign-server 10.0 of hoger de volgende stappen uit om ondersteuning voor meerdere sessies mogelijk te maken.
 
 1. Open de Manager van de Configuratie van uw [!DNL Assets] instantie `https://[aem_server]:[port]/system/console/configMgr`.
 1. Bewerk de configuratie `com.day.cq.dam.ids.impl.IDSJobProcessor.name`.
@@ -247,10 +249,10 @@ Voer voor InDesign Server 10.0 of hoger de volgende stappen uit om ondersteuning
 >
 >Voor [!DNL InDesign Server] integratie met [!DNL Assets], gebruik een multi-core bewerker omdat de zittingssteuneigenschap noodzakelijk voor de integratie niet op single-core systemen wordt gesteund.
 
-## Experience Manager-referenties configureren {#configure-aem-credentials}
+## Referenties van Experience Manager configureren {#configure-aem-credentials}
 
-U kunt de standaardbeheerdersreferenties (gebruikersnaam en wachtwoord) wijzigen voor toegang tot de InDesign-server vanuit uw AEM-instantie zonder de integratie met de Adobe InDesign-server te verbreken.
+U kunt de standaardbeheerdergeloofsbrieven (gebruikersnaam en wachtwoord) veranderen om tot de server van de InDesign van uw AEM instantie toegang te hebben zonder de integratie met de server van Adobe InDesign te breken.
 
-1. Ga naar `/etc/cloudservices/proxy.html`.
+1. Go to `/etc/cloudservices/proxy.html`.
 1. Geef in het dialoogvenster de nieuwe gebruikersnaam en het nieuwe wachtwoord op.
 1. Sla de referenties op.
