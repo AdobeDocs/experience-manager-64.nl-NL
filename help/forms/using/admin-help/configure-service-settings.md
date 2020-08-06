@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Servicemontages configureren {#configure-service-settings}
 
-U kunt de pagina van het Beheer van de Dienst gebruiken om montages voor elk van de diensten te vormen die deel van AEM vormen. De beschikbare montages variëren afhankelijk van de dienst die wordt gevormd.
+U kunt de pagina van het Beheer van de Dienst gebruiken om montages voor elk van de diensten te vormen die deel van AEM vormen uitmaken. De beschikbare montages variëren afhankelijk van de dienst die wordt gevormd.
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Stop de service voordat u deze wijzigt. (Zie [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
@@ -69,7 +69,7 @@ De volgende instellingen zijn beschikbaar voor de service voor formulieren met s
 
 ## Instellingen voor Central Migration Bridge Service (Verouderd) {#central-migration-bridge-service-settings}
 
-De Central Migration Bridge-service ( `CentralMigrationBridge`) roept een subset van de functionaliteit van Adobe Central Pro Output Server (Central) aan, die de opdrachten JFMERGE, JFTRANS en XMLIMPORT bevat. Met de Central Migration Bridge-service kunt u de volgende Central-elementen opnieuw gebruiken in AEM-formulieren:
+De centrale dienst van de Brug van de Migratie ( `CentralMigrationBridge`) roept een ondergroep van de functionaliteit van Adobe Central Pro Output Server (Centraal) aan, die JFMERGE, JFTRANS, en bevelen XMLIMPORT omvat. Met de Central Migration Bridge-service kunt u de volgende Central-elementen opnieuw gebruiken in AEM formulieren:
 
 * sjabloonontwerp (&amp;ast;.ifd)
 * uitvoersjablonen (&amp;ast;.mdf)
@@ -87,7 +87,7 @@ Met de Content Repository Connector voor EMC Documentum Service ( `EMCDocumentum
 
 De volgende instelling is beschikbaar voor de Content Repository Connector voor EMC Documentum service.
 
-**Standaardpad voor elementkoppelingsobject:** Het standaardgedeelte van het pad in de Documentum repository voor het opslaan van het Asset Link-object. Het feitelijke pad bestaat uit het standaardpad en de locatie van de formuliersjabloon in de opslagplaats voor AEM-formulieren.
+**Standaardpad voor elementkoppelingsobject:** Het standaardgedeelte van het pad in de Documentum repository voor het opslaan van het Asset Link-object. Het feitelijke pad bestaat uit het standaardpad en de locatie van de formuliersjabloon in de opslagplaats voor AEM formulieren.
 
 Als het standaardpad bijvoorbeeld is ingesteld op `/LiveCycleES/ConnectorforEMCDocumentum/AssetLinkObjects`en de formuliersjabloon is opgeslagen in een map `/Docbase/forms/`, wordt het Asset Link-object opgeslagen op de volgende locatie:
 
@@ -101,7 +101,7 @@ Met de Content Repository Connector voor IBM FileNet kunt u processen maken die 
 
 De volgende instelling is beschikbaar voor de Content Repository Connector voor IBM FileNet-service.
 
-**Standaardpad voor elementkoppelingsobject:** Het standaardgedeelte van het pad in de IBM FileNet-opslagruimte voor het opslaan van het Asset Link-object. Het feitelijke pad bestaat uit het standaardpad en de locatie van de formuliersjabloon in de opslagplaats voor AEM-formulieren.
+**Standaardpad voor elementkoppelingsobject:** Het standaardgedeelte van het pad in de IBM FileNet-opslagruimte voor het opslaan van het Asset Link-object. Het feitelijke pad bestaat uit het standaardpad en de locatie van de formuliersjabloon in de opslagplaats voor AEM formulieren.
 
 Als het standaardpad bijvoorbeeld is ingesteld op `/LiveCycleES/ConnectorforIBMFileNet/AssetLinkObjects`en de formuliersjabloon is opgeslagen in een map `/Docbase/forms/`, wordt het Asset Link-object opgeslagen op de volgende locatie:
 
@@ -131,7 +131,7 @@ De volgende instellingen zijn beschikbaar voor de service PDF converteren.
 
 **Vloeiend maken toepassen op afbeeldingen:** Hiermee minimaliseert u abrupte wijzigingen in afbeeldingen.
 
-## Instellingen voor Distiller-service {#distiller-service-settings}
+## Distiller-service-instellingen {#distiller-service-settings}
 
 De Distiller-service ( `DistillerService`) converteert via een netwerk PostScript-, Encapsulated PostScript- (EPS) en PRN-bestanden naar PDF-bestanden.
 
@@ -153,13 +153,13 @@ U kunt nieuwe instellingen maken via de gebruikersinterface van de PDF Generator
 
 **Beveiligingsinstellingen:** Vooraf geconfigureerde beveiligingsinstellingen die worden toegepast op gegenereerde PDF-documenten. De standaardwaarde is Geen beveiliging. U moet beveiligingsinstellingen maken met de PDF Generator en de instelling hier invoeren.
 
-**Poolgrootte:** De aanvankelijke grootte van de pool. Wanneer de dienst Distiller wordt opgesteld, wordt dit aantal gebruikt om het aantal instanties van de de dienstimplementatie te bepalen die en aan de vrije pool in afwachting van aanroepingsverzoeken worden gecreeerd en toegewezen. De de dienstcontainer kan dan onmiddellijk aan aanroepingsverzoeken antwoorden zonder het moeten een de dienstinstantie eerst initialiseren.
+**Poolgrootte:** De aanvankelijke grootte van de pool. Wanneer de dienst van Distiller wordt opgesteld, wordt dit aantal gebruikt om het aantal instanties van de de dienstimplementatie te bepalen die worden gecreeerd en aan de vrije pool toegewezen wachtend op aanroepingsverzoeken. De de dienstcontainer kan dan onmiddellijk aan aanroepingsverzoeken antwoorden zonder het moeten een de dienstinstantie eerst initialiseren.
 
 ## Documentbeheerservice-instellingen {#document-management-service-settings}
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een inhoudsbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)beheren voor informatie over het configureren van Inhoudsservices (afgekeurd).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)beheren voor informatie over het configureren van Inhoudsservices (afgekeurd).
 
 Met de service Documentbeheer ( `DocumentManagementService`) kunnen processen de functionaliteit voor inhoudsbeheer gebruiken die door Content Services (Afgekeurd) wordt geboden. De verrichtingen van het Beheer van het document verstrekken basistaken die worden vereist om ruimten en inhoud in het systeem van het inhoudsbeheer te handhaven. Voorbeelden van dergelijke taken zijn kopiëren, verwijderen, verplaatsen, ophalen en opslaan, spaties en koppelingen maken en inhoudskenmerken ophalen en instellen.
 
@@ -211,7 +211,7 @@ De volgende instellingen zijn beschikbaar voor de e-mailservice.
 
 ## Instellingen voor versleutelingsservice {#encryption-service-settings}
 
-Met de coderingsservice ( `EncryptionService`) kunt u documenten coderen en decoderen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document is versleuteld met een wachtwoord, moet de gebruiker het wachtwoord voor openen opgeven voordat het document kan worden weergegeven in Adobe Reader of Adobe Acrobat. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met de openbare sleutel die overeenkomt met het certificaat (persoonlijke sleutel) dat is gebruikt om het PDF-document te versleutelen.
+Met de coderingsservice ( `EncryptionService`) kunt u documenten coderen en decoderen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document is versleuteld met een wachtwoord, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Adobe Acrobat kan worden weergegeven. Als een PDF-document met een certificaat is versleuteld, moet de gebruiker het PDF-document decoderen met de openbare sleutel die overeenkomt met het certificaat (persoonlijke sleutel) dat is gebruikt om het PDF-document te versleutelen.
 
 De volgende instellingen zijn beschikbaar voor de coderingsservice.
 
@@ -249,7 +249,7 @@ Met de service PDF genereren ( `GeneratePDFService`) converteert u bestanden in 
 
 De volgende instellingen zijn beschikbaar voor de service PDF genereren.
 
-**Adobe PDF-instellingen:** De naam van de vooraf geconfigureerde Adobe PDF-instellingen die op een conversietaak moeten worden toegepast, als deze instellingen niet zijn opgegeven als onderdeel van de API-oproepparameters. De Adobe PDF-instellingen worden geconfigureerd in de beheerconsole door te klikken op Services > PDF Generator > Adobe PDF-instellingen. Deze instellingen zijn alleen van toepassing op conversies op basis van PDFMaker.
+**Adobe PDF-instellingen:** De naam van de vooraf geconfigureerde Adobe PDF-instellingen die op een conversietaak moeten worden toegepast, als deze instellingen niet zijn opgegeven als onderdeel van de API-oproepparameters. De Adobe PDF-instellingen worden geconfigureerd in de beheerconsole door te klikken op Services > PDF Generator > Adobe PDF Settings. Deze instellingen zijn alleen van toepassing op conversies op basis van PDFMaker.
 
 **Beveiligingsinstellingen:** De naam van de vooraf geconfigureerde beveiligingsinstellingen die op een conversietaak moeten worden toegepast, als deze instellingen niet zijn opgegeven als onderdeel van de API-oproepparameters. De beveiligingsinstellingen worden geconfigureerd in de beheerconsole door te klikken op Services > PDF Generator > Beveiligingsinstellingen.
 
@@ -257,11 +257,11 @@ De volgende instellingen zijn beschikbaar voor de service PDF genereren.
 
 **Acrobat WebCapture gebruiken (alleen Windows):** Als deze instelling true is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van HTML naar PDF. Dit kan de kwaliteit van de PDF-bestanden die met HTML worden gemaakt verbeteren, maar de prestaties kunnen iets lager zijn. De standaardwaarde is false.
 
-**Acrobat-afbeeldingsconversie gebruiken (alleen Windows):** Als deze instelling true is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van afbeeldingen naar PDF. Deze instelling is alleen handig als het standaard conversiemechanisme voor zuiver Java een aanzienlijk deel van de invoerafbeeldingen niet kan converteren. De standaardwaarde is false.
+**Acrobat-afbeeldingsomzetting gebruiken (alleen Windows):** Als deze instelling true is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van afbeeldingen naar PDF. Deze instelling is alleen handig als het standaard conversiemechanisme voor zuiver Java een aanzienlijk deel van de invoerafbeeldingen niet kan converteren. De standaardwaarde is false.
 
-**AutoCAD-conversies op Acrobat inschakelen (alleen Windows):** Als deze instelling true is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van DWG naar PDF. Deze instelling is alleen handig als AutoCAD niet op de server is geïnstalleerd of als het conversiemechanisme van AutoCAD bestanden niet kan converteren.
+**Op Acrobat gebaseerde AutoCAD-conversies inschakelen (alleen Windows):** Als deze instelling true is, gebruikt de service PDF genereren Acrobat X Pro voor alle conversies van DWG naar PDF. Deze instelling is alleen handig als AutoCAD niet op de server is geïnstalleerd of als het conversiemechanisme van AutoCAD bestanden niet kan converteren.
 
-**Reguliere expressies voor het zoeken naar verboden SpecialCharacters in gebruikersnaam (alleen Windows):** Hiermee geeft u tekens op die invloed hebben op de bewerkingen PDF exporteren en PDF optimaliseren wanneer de tekens in de naam van een gebruiker worden weergegeven.
+**Reguliere expressies voor het zoeken naar verboden SpecialCharacters in gebruikersnaam (alleen Windows):** Hiermee geeft u tekens op die de Export PDF- en Optimize PDF-bewerkingen verstoren wanneer de tekens in de naam van een gebruiker worden weergegeven.
 
 **Poolgrootte van ImageToPDF:** De groepsgrootte van de standaard (zuivere Java) convertor voor afbeeldingen naar PDF in de service PDF genereren. Met deze instelling bepaalt u de maximale gelijktijdige conversies van afbeeldingen naar PDF die de service PDF genereren kan uitvoeren. De standaardwaarde van deze instelling (aanbevolen voor systemen met één processor) is 3, die u kunt verhogen voor systemen met meerdere processors.
 
@@ -269,7 +269,7 @@ De volgende instellingen zijn beschikbaar voor de service PDF genereren.
 
 **Grootte OCR-pool:** De poolgrootte van de PaperCaptureService die de PDF Generator voor OCR gebruikt. De standaardwaarde van deze instelling (aanbevolen voor systemen met één processor) is 3, die u kunt verhogen voor systemen met meerdere processors. Deze instelling is alleen geldig op Windows-systemen.
 
-**Lettertypefamilie voor conversie van HTML naar PDF:** De naam van de lettertypefamilie die in PDF-documenten wordt gebruikt wanneer het lettertype dat in de oorspronkelijke HTML wordt gebruikt, niet beschikbaar is op de AEM-formulierserver. Geef een lettertypefamilie op als u HTML-pagina&#39;s wilt converteren waarin niet-beschikbare lettertypen worden gebruikt. Pagina&#39;s die zijn geschreven in regionale talen kunnen bijvoorbeeld niet-beschikbare lettertypen gebruiken.
+**Lettertypefamilie voor conversie van HTML naar PDF:** De naam van de lettertypefamilie die in PDF-documenten wordt gebruikt wanneer het lettertype dat in de oorspronkelijke HTML wordt gebruikt, niet beschikbaar is op de AEM formulierserver. Geef een lettertypefamilie op als u HTML-pagina&#39;s wilt converteren waarin niet-beschikbare lettertypen worden gebruikt. Pagina&#39;s die zijn geschreven in regionale talen kunnen bijvoorbeeld niet-beschikbare lettertypen gebruiken.
 
 **Opnieuw Logica voor native conversies** controleert PDF-generatiepogingen als de eerste poging tot conversie is mislukt:
 
@@ -287,7 +287,7 @@ Voer de PDF-conversie opnieuw uit als de tijd die voor de eerste omzetpoging is 
 
 ## Instellingen voor hulplijnen ES4-hulpprogramma&#39;s {#guides-es4-utilities-service-settings}
 
-Wanneer u een Guide maakt, worden sommige bronnen, zoals de definitie van de Guide, ingesloten in de Guide. Bronnen kunnen ook bestaan als verwijzingen naar toepassingselementen die lokaal zijn opgeslagen of op de AEM-formulierserver. De Guide bevat geen gegevens en de waarden voor de verzendlocatie en -invoer zijn niet geschikt voor alle externe omgevingen.
+Wanneer u een Guide maakt, worden sommige bronnen, zoals de definitie van de Guide, ingesloten in de Guide. Bronnen kunnen ook bestaan als verwijzingen naar toepassingselementen die lokaal of op de AEM formulierserver zijn opgeslagen. De Guide bevat geen gegevens en de waarden voor de verzendlocatie en -invoer zijn niet geschikt voor alle externe omgevingen.
 
 In de meeste gevallen zijn de standaardservices voor het weergeven van hulplijnen voldoende om een hulplijn voor te bereiden voor gebruik in Workspace of andere externe omgevingen. (In de mening van de Diensten, in Workbench, is de standaarddienst Gidsen (systeem)/Processes/Gids van de Rendering - 1.0.) Met de Guide Utilities Service ( `GuidesUtility`) kunt u, indien nodig, een aangepast proces maken voor het renderen van een Guide.
 
@@ -304,7 +304,7 @@ Met behulp van de Guide-hulpprogramma&#39;s kunt u de volgende rendering van hul
 
 De standaardwaarden voor de Guide Utilities-service ondersteunen de meeste gevallen van gebruik. Indien nodig kunt u echter de volgende waarden wijzigen.
 
-**publicPaths:** Deze optie is vervangen. Gebruik deze optie niet bij AEM-formulieren.
+**publicPaths:** Deze optie is vervangen. Gebruik deze optie niet bij AEM formulieren.
 
 **pathInfoExpiryInSeconds:** Het interval waarna een verzoek om weginformatie van een cliënt verloopt. De standaardwaarde is 1.
 
@@ -324,7 +324,7 @@ De standaardwaarden voor de Guide Utilities-service ondersteunen de meeste geval
 
 **macOverlapIntervalInMinutes:** Tijdsduur dat de vorige sleutel geldig blijft nadat een nieuwe wordt gegenereerd. De standaardwaarde is 1440 minuten (1 dag).
 
-**macKeySeed:** Een zaadwaarde voor het produceren van veilige URL. Wanneer deze optie is, wordt de sleutel nooit verfrist. Als u hetzelfde zaad op verschillende servers instelt, genereren die servers veilige URL&#39;s die compatibel zijn. Dit kan handig zijn als er meerdere formulierservers worden gebruikt achter een taakverdelingsmechanisme. Voer een willekeurige reeks tekens en getallen in als het zaad.
+**macKeySeed:** Een zaadwaarde voor het produceren van veilige URL. Wanneer deze optie is, wordt de sleutel nooit verfrist. Als u hetzelfde zaad op verschillende servers instelt, genereren die servers veilige URL&#39;s die compatibel zijn. Dit kan handig zijn als er meerdere formulierservers worden gebruikt achter een taakverdelingsmechanisme. Voer een willekeurige reeks tekens en cijfers in als het zaad.
 
 ### Hulplijnen gebruiken in een servercluster {#using-guides-in-a-server-cluster}
 
@@ -334,7 +334,7 @@ Als u Gidsen in een servercluster gebruikt die geen kleverige zittingen gebruikt
 
 De macKeySeed-waarde is het zaad voor de random number generator die wordt gebruikt om de veilige URL&#39;s te genereren. Het plaatsen van deze waarde veroorzaakt elke clusterknoop om de willekeurige aantalgenerator op de zelfde manier te initialiseren, en toegang tot zelfde veilige URLs te hebben. U kunt elke willekeurige tekenreeks voor deze zaadwaarde gebruiken.
 
-Wijzig de macKeySeed-waarde wanneer u de beveiligde URL&#39;s moet vernieuwen. Het vernieuwen van veilige URLs hangt van uw veiligheidsbeleid af, en is gelijkaardig aan verfrist beleid voor het veranderen van het hoofdwortelwachtwoord van de server. De macSeedValue is analoog aan het hoofdwachtwoord voor veilige URLs, omdat het wordt gebruikt om een nieuw uniek willekeurig aantal voor gebruik in veilige het produceren van URL en herwinning te produceren.
+Wijzig de macKeySeed-waarde wanneer u de beveiligde URL&#39;s moet vernieuwen. Het vernieuwen van veilige URLs hangt van uw veiligheidsbeleid af, en is gelijkaardig aan verfrist beleid voor het veranderen van het master wortelwachtwoord van de server. De macSeedValue is analoog aan het master wachtwoord voor veilige URLs, omdat het wordt gebruikt om een nieuw uniek willekeurig aantal voor gebruik in veilige het produceren van URL en herwinning te produceren.
 
 U moet de cluster opnieuw starten omdat macSeedValue alleen-lezen is bij het opstarten van het systeem. Alle knopen moeten opnieuw beginnen om de waarde te lezen, omdat zij het onafhankelijk gebruiken om hun interne willekeurige aantallen met de zaadwaarde te initialiseren.
 
@@ -344,17 +344,17 @@ De dienst JDBC ( `JdbcService`) laat processen toe om met gegevensbestanden in w
 
 De volgende instelling is beschikbaar voor de JDBC-service.
 
-**datasourceName:** Een tekenreekswaarde die de JNDI-naam vertegenwoordigt van de gegevensbron die moet worden gebruikt om verbinding te maken met de databaseserver. De gegevensbron moet worden gedefinieerd op de toepassingsserver waarop de formulierserver wordt gehost. De standaardwaarde is de JNDI-naam van de gegevensbron voor de AEM-formulierdatabase.
+**datasourceName:** Een tekenreekswaarde die de JNDI-naam vertegenwoordigt van de gegevensbron die moet worden gebruikt om verbinding te maken met de databaseserver. De gegevensbron moet worden gedefinieerd op de toepassingsserver waarop de formulierserver wordt gehost. De standaardwaarde is de JNDI-naam van de gegevensbron voor de AEM formulierdatabase.
 
 ## JMS-service-instellingen {#jms-service-settings}
 
 De dienst JMS ( `JMS`) laat interactie met de leveranciers van het Systeem van het Overseinen van Java (JMS) toe die zowel punt-aan-punt overseinen uitvoeren als overseinen publiceren/intekenen.
 
-Configureer de JMS-service met standaardeigenschappen, zodat de servicebewerkingen verbinding kunnen maken met een JMS-provider en een bijbehorende JNDI-service. De waarden van de de diensteigenschappen worden geplaatst aan standaardwaarden die op de Server van de Toepassing JBoss worden gebaseerd. Wijzig deze waarden als u een andere toepassingsserver gebruikt om AEM-formulieren te hosten.
+Configureer de JMS-service met standaardeigenschappen, zodat de servicebewerkingen verbinding kunnen maken met een JMS-provider en een bijbehorende JNDI-service. De waarden van de de diensteigenschappen worden geplaatst aan standaardwaarden die op de Server van de Toepassing JBoss worden gebaseerd. Wijzig deze waarden als u een andere toepassingsserver gebruikt om AEM formulieren te hosten.
 
 De volgende instellingen zijn beschikbaar voor de JMS-service.
 
-**URL provider:** De URL van de JNDI-serviceprovider. De standaardwaarde is gebaseerd op de Server van de Toepassing JBoss. De volgende URL zijn standaardwaarden voor de toepassingsservers die door AEM-formulieren worden ondersteund:
+**URL provider:** De URL van de JNDI-serviceprovider. De standaardwaarde is gebaseerd op de Server van de Toepassing JBoss. De volgende URL zijn standaardwaarden voor de toepassingsservers die AEM formulieren ondersteunen:
 
 **JBoss:** `<server name>:1099`
 
@@ -366,7 +366,7 @@ De volgende instellingen zijn beschikbaar voor de JMS-service.
 
 **JNDI-wachtwoord:** Het wachtwoord dat is gekoppeld aan de gebruikersnaam die is opgegeven voor JNDI-gebruikersnaam. De standaardwaarde is gast.
 
-**Oorspronkelijke contextfabriek:** De Java-klasse die als eerste contextfabriek moet worden gebruikt. De dienst JMS gebruikt deze klasse om een aanvankelijke context tot stand te brengen, die het uitgangspunt voor het oplossen van namen van onderwerpen en rijen is. De standaardwaarde is de aanvankelijke contextfabriek voor de dienst JMS op JBoss. De volgende klassen zijn de eerste contextfabrieken voor de toepassingsservers die door AEM-formulieren worden ondersteund:
+**Oorspronkelijke contextfabriek:** De Java-klasse die als eerste contextfabriek moet worden gebruikt. De dienst JMS gebruikt deze klasse om een aanvankelijke context tot stand te brengen, die het uitgangspunt voor het oplossen van namen van onderwerpen en rijen is. De standaardwaarde is de aanvankelijke contextfabriek voor de dienst JMS op JBoss. De volgende klassen zijn de eerste contextfabrieken voor de toepassingsservers die AEM formulieren ondersteunen:
 
 **JBoss:** org.jnp.interfaces.NamingContextFactory
 
@@ -376,7 +376,7 @@ De volgende instellingen zijn beschikbaar voor de JMS-service.
 
 **Gebruikersnaam verbinding:** Het wachtwoord dat is gekoppeld aan de gebruikersnaam die is opgegeven voor de gebruikersnaam van de Verbinding. De standaardwaarde is gast.
 
-**Verbindingswachtwoord:** Het wachtwoord dat aan de gebruikersnaam wordt geassocieerd voor de Gebruikersnaam van de Verbinding wordt gespecificeerd. De standaardwaarde is gast.
+**Verbindingswachtwoord:** Het wachtwoord dat is gekoppeld aan de gebruikersnaam die is opgegeven voor de gebruikersnaam van de Verbinding. De standaardwaarde is gast.
 
 **Andere eigenschappen:** De naam van het bezit en waardeparen die u aan de JNDI dienstverlener kunt overgaan. Deze eigenschappen hangen van de implementatie en de configuratie van de leverancier af die u gebruikt.
 
@@ -392,7 +392,7 @@ De volgende instellingen zijn beschikbaar voor de LDAP-service.
 
 **Oorspronkelijke contextfabriek:** De klasse Java die als contextfabriek moet worden gebruikt. Deze klasse wordt gebruikt om een verbinding met de LDAP-server te maken. De standaardwaarde is com.sun.jndi.ldap.LDAPCtxFactory, die geschikt is voor de meeste LDAP-servers.
 
-**URL provider:** De URL die moet worden gebruikt om verbinding te maken met de LDAP-service. De notatie van de waarde is `ldap://server name:port`
+**URL provider:** De URL die moet worden gebruikt om verbinding te maken met de LDAP-service. The format of the value is `ldap://server name:port`
 
 *servernaam* is de naam van de computer die als host fungeert voor de LDAP-server
 
@@ -410,7 +410,7 @@ Afhankelijk van de LDAP-server kan de gebruikersnaam een eenvoudige gebruikersna
 
 ## Microsoft SharePoint-configuratieservice-instellingen {#microsoft-sharepoint-configuration-service-settings}
 
-Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)`kunt u referenties opgeven voor de gebruiker van AEM-formulieren die imitatierechten heeft. Voor informatie over imitatierechten, zie het [Vormen van de Schakelaar voor Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
+Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)`kunt u referenties opgeven voor de gebruiker van AEM formulieren die imitatierechten heeft. Voor informatie over imitatierechten, zie het [Vormen van de Schakelaar voor Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html).
 
 De volgende montages zijn beschikbaar voor de de configuratieservice van Microsoft SharePoint:
 
@@ -423,7 +423,7 @@ De volgende montages zijn beschikbaar voor de de configuratieservice van Microso
 
 **Versleuteling:** Geeft aan of gegevens die op het mobiele apparaat zijn opgeslagen, moeten worden gecodeerd.
 
-**Forms-toepassing:** Hiermee schakelt u de functie Formulieren in de mobiele clienttoepassingen in. Als deze optie is geselecteerd, kunnen gebruikers formulieren openen en processen starten vanaf hun mobiele apparaten.
+**Forms-toepassing:** Hiermee schakelt u de Forms-functie in de mobiele clienttoepassingen in. Als deze optie is geselecteerd, kunnen gebruikers formulieren openen en processen starten vanaf hun mobiele apparaten.
 
 **Taken:** Hiermee schakelt u de functie Taken in de mobiele clienttoepassingen in. Als deze optie is geselecteerd, kunnen gebruikers hun taaklijsten openen en taken uitvoeren vanaf hun mobiele apparaten.
 
@@ -443,7 +443,7 @@ De volgende montages zijn beschikbaar voor de de configuratieservice van Microso
 
 **BlackBerry:** Hiermee kunnen BlackBerry-apparaten verbinding maken met de server.
 
-**Android Microsoft Exchange ActiveSync vereist:** Geeft aan of Microsoft Exchange ActiveSync beleidsmanager (EAS) moet worden geïnstalleerd en actief moet zijn op Android-apparaten. Als deze optie is geselecteerd, moet EAS worden afgedwongen op het Android-apparaat. Wanneer deze optie niet is geselecteerd, wordt geen controle uitgevoerd, hoewel andere vereisten nog steeds worden afgedwongen.
+**Android Microsoft Exchange ActiveSync vereist:** Geeft aan of Microsoft Exchange ActiveSync beleidsmanager (EA) moet worden geïnstalleerd en actief moet zijn op Android-apparaten. Als deze optie is geselecteerd, moet EA worden afgedwongen op het Android-apparaat. Wanneer deze optie niet is geselecteerd, wordt geen controle uitgevoerd, hoewel andere vereisten nog steeds worden afgedwongen.
 
 **Minimale lengte pincode voor Android:** Android-apparaten moeten een algemene instelling hebben die bepaalt dat de pincode of het wachtwoord ten minste deze lengte heeft. Het hebben van een SPELD van de gespecificeerde lengte is slechts niet voldoende. De lengte van de SPELD moet door het systeem worden afgedwongen zodat de gebruikers niet de SPELD kunnen later verwijderen of verkorten. De standaardwaarde is 4.
 
@@ -453,7 +453,7 @@ De volgende montages zijn beschikbaar voor de de configuratieservice van Microso
 
 ## Instellingen voor uitvoerservice {#output-service-settings}
 
-Met de Output-service `(OutputService)`kunt u XML-formuliergegevens samenvoegen met een formulierontwerp dat is gemaakt in AEM-formulierontwerper om een uitvoerstroom van het document in een van de volgende indelingen te maken:
+Met de Output-service `(OutputService)`kunt u XML-formuliergegevens samenvoegen met een formulierontwerp dat is gemaakt in AEM Designer voor het maken van een uitvoerstroom van een document in een van de volgende indelingen:
 
 * Een PDF- of PDF/A-documentuitvoerstroom.
 * Een Adobe PostScript-uitvoerstroom.
@@ -482,9 +482,9 @@ De volgende instellingen zijn beschikbaar voor de service PDFG Config ( `PDFGCon
 
 **Opstartmap van PS:** Het pad van de bestandssysteemmap waarin de opstartbestanden zijn opgeslagen die door Adobe Acrobat Distiller worden vereist. De standaardwaarde is [user.home]/Application Data/Adobe/Adobe PDF/Distiller/Startup.
 
-**PS Opstartbestand:** De naam van het opstartbestand dat door Adobe Acrobat Distiller wordt vereist. De standaardwaarde is example.ps.
+**PS Opstartbestand:** De naam van het opstartbestand dat Adobe Acrobat Distiller nodig heeft. De standaardwaarde is example.ps.
 
-**Time-out serverconversie:** De maximale time-out voor taakconversie (in seconden) voor de service PDF genereren en Distiller. Met deze instelling wordt de maximale time-out voor conversie beperkt die kan worden opgegeven in het bestand config.xml en in de beheerconsolepagina&#39;s voor PDF Generator. De standaardwaarde is 270.
+**Time-out serverconversie:** De maximale time-out voor taakconversie (in seconden) voor de service PDF genereren en de service Distiller. Met deze instelling wordt de maximale time-out voor conversie beperkt die kan worden opgegeven in het bestand config.xml en in de beheerconsolepagina&#39;s voor PDF Generator. De standaardwaarde is 270.
 
 **Globale time-out server:** Tijdens het uitvoeren van PDF-conversies houdt een formulierserver rekening met de time-outlimiet. Configureer de time-outwaarde om het probleem op te lossen.
 
@@ -508,7 +508,7 @@ De standaardwaarde voor seconden van PDFG Cleanup Scan is `43200` (12 uur). De s
 
 ## formulierworkflows voor Data Services-services {#forms-workflow-data-services-service-settings}
 
-De volgende diensten breiden de Diensten van Gegevens uit en stellen assembleurs bloot die de Werkruimte gebruikt om met de server te spreken. Wijzig de configuratieopties voor deze services alleen als u hiervoor instructies hebt gekregen van de ondersteuning van Adobe. Deze diensten zijn niet bedoeld voor directe toegang:
+De volgende diensten breiden de Diensten van Gegevens uit en stellen assembleurs bloot die de Werkruimte gebruikt om met de server te spreken. Wijzig de configuratieopties voor deze services niet, tenzij u hiervoor de instructie krijgt van de Adobe Support. Deze diensten zijn niet bedoeld voor directe toegang:
 
 * `ProcessManagementLcdsAttachmentService`
 * `ProcessManagementLcdsPropertyService`
@@ -516,19 +516,19 @@ De volgende diensten breiden de Diensten van Gegevens uit en stellen assembleurs
 
 ## Service-instellingen verwijderen {#remoting-service-settings}
 
-De meeste services zijn zo geconfigureerd dat u toegang hebt tot deze services via AEM-formulieren (afgekeurd voor AEM-formulieren) verwijderen. Zie [Programmeren met AEM-formulieren](https://adobe.com/go/learn_aemforms_programming_63)voor informatie over (Vervangen voor AEM-formulieren) AEM-formulieren Verwijderen.
+De meeste services zijn zo geconfigureerd dat u ze kunt openen via het verwijderen van formulieren (Verouderd voor AEM formulieren) AEM formulieren. Zie [Programmeren met AEM formulieren](https://adobe.com/go/learn_aemforms_programming_63)voor informatie over (Verouderd voor AEM formulieren) AEM formulieren Verwijderen.
 
 De volgende instellingen zijn beschikbaar voor de service Remoting.
 
 **Flex-clientverificatiemethode:** Bepaalt het type van reactie dat de server terug naar de cliënt verzendt wanneer de aangehaalde dienst toegelaten veiligheid is, steunt de aangehaalde verrichting geen anonieme aanroepen, en de cliënt gaat of in geen of ongeldige geloofsbrieven over. Kies Aangepast of Standaard. De standaardwaarde is Standaard.
 
-**Serienummering van klassen zonder serienummering toestaan:** Bij de meeste eindpunten van AEM-formulieren kunnen alleen klassen met serienummering worden gebruikt voor aanroepen. In oudere versies, stond het Remoting eindpunt niet-Serializable klassen toe om voor aanroeping van op Flex-Gebaseerde cliënten worden gebruikt. Om een beveiligingskwetsbaarheid te voorkomen die in APS11-15 wordt beschreven, is deze kwetsbaarheid gewijzigd. Als u niet-Serializable klassen met het Flex Remoting eindpunt wilt blijven gebruiken, selecteer dit checkbox.
+**Serienummering van klassen zonder serienummering toestaan:** De meeste AEM vormen eindpunten staan slechts Serializable klassen toe om voor aanroeping worden gebruikt. In oudere versies, stond het Remoting eindpunt niet-Serializable klassen toe om voor aanroeping van op Flex-Gebaseerde cliënten worden gebruikt. Om een beveiligingskwetsbaarheid te voorkomen die in APS11-15 wordt beschreven, is deze kwetsbaarheid gewijzigd. Als u niet-Serializable klassen met het Flex Remoting eindpunt wilt blijven gebruiken, selecteer dit checkbox.
 
 ## Instellingen voor opslagplaats {#repository-service-settings}
 
-De dienst van de Bewaarplaats ( `RepositoryService`) verleent de opslag van middelen en beheersdiensten aan AEM vormen. Wanneer ontwikkelaars een toepassing maken, kunnen ze de elementen in de opslagplaats implementeren in plaats van in een bestandssysteem. De elementen kunnen elk type element bevatten, zoals XML-formulieren, PDF forms (inclusief Acrobat-formulieren), formulierfragmenten, afbeeldingen, profielen, beleid, SWF-bestanden, DDX-bestanden, XML-schema&#39;s, WSDL-bestanden en testgegevens.
+De dienst van de Bewaarplaats ( `RepositoryService`) verleent de opslag van middelen en beheersdiensten aan AEM vormen. Wanneer ontwikkelaars een toepassing maken, kunnen ze de elementen in de opslagplaats implementeren in plaats van in een bestandssysteem. De elementen kunnen elk type onderpand bevatten, zoals XML-formulieren, PDF forms (inclusief Acrobat-formulieren), formulierfragmenten, afbeeldingen, profielen, beleid, SWF-bestanden, DDX-bestanden, XML-schema&#39;s, WSDL-bestanden en testgegevens.
 
-U kunt de standaardopslagplaats gebruiken die bij AEM-formulieren wordt geleverd, of een externe opslagplaats gebruiken (EMC Documentum Content Server, IBM FileNet Content Manager of IBM Content Manager).
+U kunt de standaardopslagplaats gebruiken die bij AEM formulieren wordt geleverd, of een gegevensopslagruimte van derden gebruiken (EMC Documentum Content Server, IBM FileNet Content Manager of IBM Content Manager).
 
 De dienst van de Leverancier van de opslagplaats is een de dienstafgevaardigde die als interface aan een leveranciersdienst dienst dienst dienst dienst doet. Hierdoor kunt u verbinding maken met een gemeenschappelijke API en hoeft u zich niet te realiseren welke provider de opslagmogelijkheden implementeert. De dienst van de Leverancier van de Bewaarplaats verstrekt gegevensbestandopslag voor de de dienstmiddelen van de Bewaarplaats.
 
@@ -538,19 +538,19 @@ De volgende instelling is beschikbaar voor de Repository-service.
 
 ## Instellingen voor handtekeningenservice {#signature-service-settings}
 
-Met de service Handtekening ( `SignatureService`) kan uw organisatie de beveiliging en privacy beschermen van Adobe PDF-documenten die worden gedistribueerd en ontvangen. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat documenten niet worden gewijzigd. Als u een document wijzigt, wordt de handtekening verbroken. Aangezien beveiligingsfuncties op het document zelf worden toegepast, blijft het document gedurende de gehele levenscyclus beveiligd en beheerd. buiten de firewall, wanneer het offline wordt gedownload, en wanneer het terug naar uw organisatie wordt voorgelegd.
+Met de service Handtekening ( `SignatureService`) kan uw organisatie de beveiliging en privacy beschermen van Adobe PDF-documenten die ze verspreidt en ontvangt. Deze service gebruikt digitale handtekeningen en certificering om ervoor te zorgen dat documenten niet worden gewijzigd. Als u een document wijzigt, wordt de handtekening verbroken. Aangezien beveiligingsfuncties op het document zelf worden toegepast, blijft het document gedurende de gehele levenscyclus beveiligd en beheerd. buiten de firewall, wanneer het offline wordt gedownload, en wanneer het terug naar uw organisatie wordt voorgelegd.
 
 De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
-**Naam van de externe HSM SPI-service:** Deze optie is voor gebruik wanneer HSM op een verre computer wordt geïnstalleerd. Geef deze optie op wanneer AEM-formulieren op een 64-bits Windows zijn geïnstalleerd en u HSM-apparaten gebruikt voor ondertekening.
+**Naam van de externe HSM SPI-service:** Deze optie is voor gebruik wanneer HSM op een verre computer wordt geïnstalleerd. Geef deze optie op wanneer AEM formulieren op een 64-bits Windows zijn geïnstalleerd en u HSM-apparaten gebruikt voor ondertekening.
 
-**URL van de externe HSM-webservice:** Geef deze optie op wanneer AEM-formulieren zijn geïnstalleerd op 64-bits Windows en u HSM-apparaten gebruikt voor ondertekening.
+**URL van de externe HSM-webservice:** Geef deze optie op wanneer AEM formulieren zijn geïnstalleerd op 64-bits Windows en u HSM-apparaten gebruikt voor ondertekening.
 
 **Certificering om wijzigingen in het laden van formulieren op te nemen:** Als deze optie is geselecteerd, wordt de XFA-formulierstatus gecertificeerd in aanvulling op de XFA-sjabloon. Houd er rekening mee dat het inschakelen van deze optie negatieve gevolgen kan hebben voor de prestaties. De standaardwaarde is true.
 
 **JavaScript-scripts voor documenten uitvoeren:** Hiermee wordt opgegeven of JavaScript-scripts voor documenten moeten worden uitgevoerd tijdens handtekeningbewerkingen. De standaardwaarde is false.
 
-**Documenten verwerken met Acrobat 9-compatibiliteit:** Hiermee geeft u aan of Acrobat 9-compatibiliteit moet worden ingeschakeld. Als deze optie bijvoorbeeld is geselecteerd, wordt Zichtbare certificering in dynamische PDF&#39;s ingeschakeld. De standaardwaarde is false.
+**Documenten verwerken met Acrobat 9-compatibiliteit:** Geeft aan of Acrobat 9-compatibiliteit moet worden ingeschakeld. Als deze optie bijvoorbeeld is geselecteerd, wordt Zichtbare certificering in dynamische PDF&#39;s ingeschakeld. De standaardwaarde is false.
 
 **Intrekkingsgegevens insluiten tijdens ondertekenen:** Hiermee geeft u aan of intrekkingsinformatie wordt ingesloten tijdens het ondertekenen van het PDF-document. De standaardwaarde is false.
 
@@ -560,9 +560,9 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Intrekkingscontrole:** Hiermee geeft u de volgorde op van de intrekkingscontrole wanneer controle mogelijk is via de mechanismen certificaatintrekkingslijst (CRL) en het online certificaatstatusprotocol (OCSP). De standaardwaarde is OCSPFirst.
 
-**Maximale grootte archiveringsgegevens voor intrekking:** De maximale grootte van de archiefgegevens voor intrekking in kilobytes. AEM-formulieren proberen zoveel mogelijk intrekkingsgegevens op te slaan zonder de limiet te overschrijden. De standaardwaarde is 10 kB.
+**Maximale grootte archiveringsgegevens voor intrekking:** De maximale grootte van de archiefgegevens voor intrekking in kilobytes. AEM formulieren proberen zoveel mogelijk intrekkingsgegevens op te slaan zonder de limiet te overschrijden. De standaardwaarde is 10 kB.
 
-**Ondertekeningen ondersteunen die zijn gemaakt op basis van prerelease-build van Adobe-producten:** Als deze optie is geselecteerd, wordt een handtekening die is gemaakt met de pre-releaseversie van Adobe-producten correct gevalideerd. De standaardwaarde is false.
+**Ondertekeningen ondersteunen die zijn gemaakt op basis van prerelease-build van Adobe-producten:** Als u deze optie selecteert, wordt een handtekening die is gemaakt met pre-releaseversie van Adobe-producten correct gevalideerd. De standaardwaarde is false.
 
 **Optie voor controletijd:** Hiermee geeft u de tijd op waarop het certificaat van een ondertekenaar wordt geverifieerd. De standaardwaarde is Beveiligde tijd anders dan huidige tijd.
 
@@ -570,7 +570,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Gebruik de validatiegegevens die in het document zijn opgeslagen voor de validatie van handtekeningen:** Als deze optie is geselecteerd, worden validatiegegevens (waaronder informatie over intrekking en tijdstempel) die in het document zijn ingesloten, gebruikt om handtekeningen te valideren. De standaardwaarde is true.
 
-**Maximaal aantal geneste verificatiesessies toegestaan:** Het maximum aantal geneste verificatiesessies dat is toegestaan. AEM-formulieren gebruiken deze waarde om een oneindige lus te voorkomen bij het controleren van de OCSP- of CRL-ondertekenaarcertificaten wanneer het OCSP- of CRL-certificaat niet correct is ingesteld. De standaardwaarde is 10.
+**Maximaal aantal geneste verificatiesessies toegestaan:** Het maximum aantal geneste verificatiesessies dat is toegestaan. AEM formulieren gebruiken deze waarde om een oneindige lus te voorkomen wanneer de OCSP- of CRL-ondertekenaarcertificaten worden gecontroleerd wanneer het OCSP- of CRL-certificaat niet correct is ingesteld. De standaardwaarde is 10.
 
 **Maximale schuintrekken klok voor verificatie:** De maximale tijd, in minuten, die de ondertekeningstijd na de validatietijd kan zijn. Als de klok meer schuin is dan deze waarde, is de handtekening niet geldig. De standaardwaarde is 65 minuten.
 
@@ -628,7 +628,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Grootte TSP-respons:** Geschatte grootte, in bytes, van de TSP-respons. Deze waarde moet de maximale grootte vertegenwoordigen van de tijdstempelreactie die de geconfigureerde tijdstempelprovider kan retourneren. Wijzig dit alleen als u er absoluut zeker van bent. De minimumwaarde is 60B en de maximumwaarde is 10240B. De standaardwaarde is 4096B.
 
-**Tijdstempelserverextensie** negeren: Selecteer de optie **Tijdstempelserverextensie** negeren om te voorkomen dat de AEM Forms verbinding maakt met de opgegeven tijdstempelserver. Als u deze optie selecteert, voorkomt u procesfouten die optreden als gevolg van een time-out tussen AEM Forms en tijdstempelservers.
+**Tijdstempelserverextensie** negeren: Schakel de optie **Tijdstempelserverextensie** negeren in om te voorkomen dat de AEM Forms-server verbinding maakt met de opgegeven tijdstempelserver. Als u deze optie selecteert, voorkomt u procesfouten die optreden als gevolg van een time-out van de verbinding tussen AEM Forms en tijdstempelservers.
 
 ### Opties voor certificaatintrekkingslijst {#certificate-revocation-list-options}
 
@@ -743,7 +743,7 @@ Als het pad niet absoluut maar relatief is, wordt de map in de controlemap gemaa
 
 **Behouden bij fout:** Indien waar (true), blijven de oorspronkelijke bestanden behouden in de map met foutmeldingen.
 
-**Throttle:** Als deze optie is geselecteerd, wordt het aantal controletaken dat door AEM-formulieren op een bepaald moment wordt verwerkt, beperkt. De waarde voor Batchgrootte bepaalt het maximale aantal taken (zie Informatie over vertragen).
+**Throttle:** Als deze optie is geselecteerd, beperkt deze het aantal controletaken dat op een bepaald moment AEM formulieren verwerkt. De waarde voor Batchgrootte bepaalt het maximale aantal taken (zie Informatie over vertragen).
 
 ## Instellingen webservice {#web-service-service-settings}
 
@@ -832,9 +832,9 @@ Er zijn standaardbeveiligingsprofielen geïnstalleerd, die vervolgens kunnen wor
    * **DELETE_VERSION_PERM:** Een versie van de service verwijderen
    * **MODIFY_VERSION_PERM:** Om een versie van de dienst te wijzigen
    * **READ_PERM:** De service weergeven
-   * **PROCESS_OWNER_PERM:** Voor gebruik in een toekomstige versie van AEM-formulieren. Gebruik deze machtiging niet.
-   * **SERVICE_MANAGER_PERM:** Voor gebruik in een toekomstige versie van AEM-formulieren. Gebruik deze machtiging niet.
-   * **SERVICE_AGENT_PERM:** Voor gebruik in een toekomstige versie van AEM-formulieren. Gebruik deze machtiging niet.
+   * **PROCESS_OWNER_PERM:** Voor gebruik in een toekomstige versie van AEM formulieren. Gebruik deze machtiging niet.
+   * **SERVICE_MANAGER_PERM:** Voor gebruik in een toekomstige versie van AEM formulieren. Gebruik deze machtiging niet.
+   * **SERVICE_AGENT_PERM:** Voor gebruik in een toekomstige versie van AEM formulieren. Gebruik deze machtiging niet.
 
 1. Klik op Toevoegen.
 
