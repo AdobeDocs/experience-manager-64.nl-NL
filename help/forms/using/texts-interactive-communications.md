@@ -78,7 +78,7 @@ U kunt een bestaand tekstdocumentfragment bewerken met de volgende stappen. U ku
 
 ## Een tekstdocumentfragment aanpassen met eigenschappen van het formuliergegevensmodel {#formdatamodel}
 
-U kunt tekstdocumentfragmenten personaliseren door de eigenschappen van het formuliergegevensmodel in te voegen. Door eigenschappen van het formuliergegevensmodel in tekst in te voegen, kunt u specifieke gegevens voor ontvangers ophalen en vullen vanuit de bijbehorende gegevensbron terwijl u een voorbeeld van een interactieve communicatie bekijkt. Voor meer informatie over het model van vormgegevens, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
+U kunt tekstdocumentfragmenten personaliseren door de eigenschappen van het formuliergegevensmodel in te voegen. Door eigenschappen van het formuliergegevensmodel in tekst in te voegen, kunt u specifieke gegevens voor ontvangers ophalen en vullen vanuit de bijbehorende gegevensbron terwijl u een voorbeeld van een interactieve communicatie bekijkt. Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md)voor meer informatie over het formuliergegevensmodel.
 
 Als u een formuliergegevensmodel hebt opgegeven tijdens het maken van een tekst, worden de eigenschappen in het formuliergegevensmodel weergegeven in het linkerdeelvenster van de teksteditor. Het opgegeven formuliergegevensmodel moet hetzelfde zijn voor het tekstdocumentfragment en de interactieve communicatie waarin het fragment voorkomt.
 
@@ -158,6 +158,7 @@ Met de regeleditor in een tekst kunt u regels maken om tekenreeksen tekst of stu
 
    * Eigenschappen van gekoppeld formuliergegevensmodel
    * Alle variabelen die u hebt gemaakt
+
    Selecteer de gewenste optie die u wilt evalueren.
 
    ![ruleeditor](assets/ruleeditor.png)
@@ -264,6 +265,7 @@ Met de functie Zoeken en vervangen kunt u elke tekenreeks in een tekstdocumentfr
 
    * Als er een ander exemplaar van de zoektekst wordt gevonden, wordt dat exemplaar gemarkeerd in het tekstdocumentfragment. Als u **[!UICONTROL Replace]** opnieuw tikt, wordt de gemarkeerde instantie vervangen en gaat de cursor verder als een derde exemplaar wordt gevonden.
    * Als er geen ander exemplaar wordt gevonden, wordt in het dialoogvenster Zoeken en vervangen een bericht weergegeven: Einde van module bereikt.
+
    U kunt ook op Alles vervangen tikken om alle overeenkomsten in één keer te vervangen.
 
    Zoeken en vervangen bevat ook een krachtige zoekopdracht voor reguliere expressies. Als u regex wilt gebruiken in de zoekopdracht, selecteert u **[!UICONTROL Reg ex]** en tikt u op **[!UICONTROL Find]** of **[!UICONTROL Replace]**.
