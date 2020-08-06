@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 85d655bb-1b6b-4b4d-ae39-eca3ef9b7fd7
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '880'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +60,7 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 
 1. Gebruikersaccounts toevoegen. (Zie Een gebruikersaccount [](enabling-multi-threaded-file-conversions.md#add-a-user-account)toevoegen.)
 1. Vervolgens brengt u wijzigingen aan in het bestand /etc/sudoers. De standaardmachtigingen voor dit bestand zijn 440. Wijzig de machtiging voor dit bestand in schrijfbaar.
-1. Voeg vermeldingen toe voor extra gebruikers (behalve de beheerder die de formulierserver uitvoert) in het bestand /etc/sudoers. Als u bijvoorbeeld AEM-formulieren uitvoert als een gebruiker met de naam lcadm en een server met de naam myhost, en u gebruikers1 en user2 wilt imiteren, voegt u de volgende vermeldingen toe aan /etc/sudoers:
+1. Voeg vermeldingen toe voor extra gebruikers (behalve de beheerder die de formulierserver uitvoert) in het bestand /etc/sudoers. Als u bijvoorbeeld AEM formulieren uitvoert als een gebruiker met de naam lcadm en een server met de naam myhost, en u gebruikers1 en user2 wilt imiteren, voegt u de volgende vermeldingen toe aan /etc/sudoers:
 
    ```as3
     lcadm myhost=(user1) NOPASSWD: ALL 
@@ -112,5 +115,5 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 ### Het wachtwoord voor een account wijzigen {#change-the-password-for-an-account}
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
-1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig het. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
+1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig dit. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
 
