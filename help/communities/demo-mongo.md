@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0b126218-b142-4d33-a28c-a91ab4fe99ac
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '839'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +60,7 @@ Deze configuratie is geschikt voor *niet-productieomgevingen* , zoals voor ontwi
    * Het gedefinieerde pad naar de gegevensdirectory wordt &lt;mongo-dbpath> genoemd
 
 
-* MongoDB kan op dezelfde host als AEM worden uitgevoerd of extern worden uitgevoerd
+* MongoDB kan op dezelfde host worden uitgevoerd als AEM of extern worden uitgevoerd
 
 ### MongoDB starten {#start-mongodb}
 
@@ -69,7 +72,7 @@ Hiermee wordt een MongoDB-server gestart met de standaardpoort 27017.
 
 >[!NOTE]
 >
->Als MongoDB wordt gestart *na* AEM, **start** u alle **AEM** -instanties opnieuw zodat deze op de juiste wijze verbinding maken met MongoDB.
+>Als MongoDB wordt gestart *na* AEM, **start** u alle **AEM** instanties opnieuw zodat ze op de juiste wijze verbinding maken met MongoDB.
 
 ### Optie voor demoproductie: MongoDB-replicaset instellen {#demo-production-option-setup-mongodb-replica-set}
 
@@ -79,7 +82,7 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
 * bin/mongo
 
    * cfg = {&quot;_id&quot;: &quot;rs0&quot;,&quot;version&quot;: 1,&quot;leden&quot;: [{&quot;_id&quot;: 0,&quot;host&quot;: &quot;127.0.0.1:27017&quot;}]}
-   * rs.initic(cfg)
+   * rs.initiate(cfg)
 
 * bin/mongod —poort 27018 —dbpath data1 —replSet rs0&amp;
 * bin/mongod —poort 27019 —dbpath data2 —replSet rs0&amp;
@@ -105,7 +108,7 @@ De volgende opdrachten zijn een voorbeeld van het instellen van een replicaset m
    * Er is geen service nodig
    * De geïnstalleerde map Solr wordt &lt;solr-install> genoemd
 
-### Solr voor AEM-gemeenschappen configureren {#configure-solr-for-aem-communities}
+### Solr voor AEM Communities configureren {#configure-solr-for-aem-communities}
 
 Om een inzameling Solr voor MSRP voor demo te vormen, zijn er twee te nemen besluiten (selecteer de verbindingen aan belangrijkste documentatie voor details):
 
@@ -138,9 +141,9 @@ U kunt een eenvoudige solrCloud-instelling (geen productie) uitvoeren door solr 
 
 ## MongoDB identificeren als een gemeenschappelijke winkel {#identify-mongodb-as-common-store}
 
-Start de auteur en publiceer zo nodig AEM-instanties.
+Start de auteur en publiceer AEM indien nodig.
 
-Als AEM actief was voordat MongoDB werd gestart, moeten de AEM-instanties opnieuw worden gestart.
+Als AEM actief was voordat MongoDB werd gestart, moeten de AEM instanties opnieuw worden gestart.
 
 Volg de instructies op de hoofddocumentatiepagina: [MSRP - MongoDB Common Store](msrp.md)
 
@@ -150,7 +153,7 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
 1. Blader in het publicatieexemplaar naar de pagina [Community Components Guide](http://localhost:4503/content/community-components/en/comments.html) en selecteer de component Comments.
 1. Meld u aan om een opmerking te plaatsen:
-1. Typ tekst in het tekstinvoervak voor opmerkingen en klik op **[!UICONTROL Plaatsen]**
+1. Typ tekst in het tekstinvoervak voor opmerkingen en klik op **[!UICONTROL Post]**
 
    ![chlimage_1-191](assets/chlimage_1-191.png)
 
@@ -160,7 +163,7 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
    Opmerking: terwijl er knopen JCR onder *asipath* op auteur zijn, zijn deze voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
 
-1. UGC weergeven in **[!UICONTROL mongodb Communities > Collections > Content]**
+1. UGC weergeven in mongodb **[!UICONTROL Communities > Collections > Content]**
 
    ![chlimage_1-193](assets/chlimage_1-193.png)
 
@@ -170,6 +173,7 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
    * Gebruiker `core selector` om te selecteren `collection1`
    * Selecteer `Query`
    * Selecteer `Execute Query`
+
    ![chlimage_1-194](assets/chlimage_1-194.png)
 
 ## Problemen oplossen {#troubleshooting}
@@ -180,8 +184,9 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 
 1. Zorg ervoor MSRP is gevormd om de standaardleverancier te zijn:
 
-   * Ga bij alle auteurs naar de [opslagconfiguratieconsole en publiceer AEM-instanties](srp-config.md)
-   of controleer de AEM-opslagplaats:
+   * Voor alle auteur en publiceer AEM instanties, herzie de console van de Configuratie van de [Opslag](srp-config.md)
+
+   of controleer de AEM opslagplaats:
 
    * In JCR, indien [/etc/socialconfig](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/)
 
