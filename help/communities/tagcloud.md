@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 23a5a65e-774d-4789-9659-09e8be0c2bcd
 translation-type: tm+mt
 source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+workflow-type: tm+mt
+source-wordcount: '534'
+ht-degree: 0%
 
 ---
 
@@ -45,41 +48,51 @@ Selecteer de geplaatste `Social Tag Cloud` component die u wilt openen en select
 
 ![chlimage_1-304](assets/chlimage_1-304.png)
 
-Geef op onder het tabblad **[!UICONTROL Sociale tag Cloud]** op welke tags u wilt weergeven en geef, als de tags actieve koppelingen zijn, de locatie van de pagina op voor zoekresultaten.:
+Geef op onder het **[!UICONTROL Social Tag Cloud]** tabblad op welke tags u wilt weergeven en, als de tags actieve koppelingen zijn, de locatie van de pagina voor zoekresultaten.:
 
 ![chlimage_1-305](assets/chlimage_1-305.png)
 
-* **[!UICONTROL Sociale tags die moeten worden weergegeven]** Identificeren welke UGC-tags moeten worden weergegeven. De meerkeuzeopties zijn
+* **[!UICONTROL Social Tags to Display]**
+Bepaal welke UGC-tags moeten worden weergegeven. De meerkeuzeopties zijn
 
    * `From page and child pages`
    * `All tags`
+
    De standaardinstelling is `From page and child pages`, waarbij &quot;pagina&quot; verwijst naar de onderstaande **pagina** -instelling.
 
-* **[!UICONTROL Pagina]**(vereist als niet `All tags)` het pad naar de UGC voor een pagina. Standaard is de huidige pagina als deze leeg blijft.
+* **[!UICONTROL Page]**
+(vereist indien niet 
+`All tags)` Het pad naar de UGC voor een pagina. Standaard is de huidige pagina als deze leeg blijft.
 
-* **[!UICONTROL Geen koppelingen op labels]** Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en de optie Pad **[!UICONTROL zoekresultaat]** moet zijn ingesteld.
+* **[!UICONTROL No links on tags]**
+Als deze optie is ingeschakeld, worden de labels in de labelcloud weergegeven als onbewerkte tekst. Als deze optie is uitgeschakeld, worden de tags weergegeven als actieve koppelingen die zoeken op alle inhoud waarop de tag wordt toegepast. De optie Standaard is uitgeschakeld en moet **[!UICONTROL Search Result Path]** worden ingesteld.
 
-* **[!UICONTROL Resultaatpad]** zoeken Het pad naar een pagina waarop een `Search Result` component is geplaatst, geconfigureerd om te verwijzen naar UGC, dat het UGC-pad bevat dat is opgegeven door de instelling **Pagina** .
+* **[!UICONTROL Search Result Path]**
+Het pad naar een pagina waarop een 
+`Search Result` is geplaatst, geconfigureerd om te verwijzen naar UGC, dat het UGC-pad bevat dat is opgegeven met de instelling **Pagina** .
 
 ## Weergave van sociale-tagcloud wijzigen {#change-display-of-social-tag-cloud}
 
 Als u de weergave van de **sociale-tagcloud** wilt bewerken, voert u de [ontwerpmodus](../../help/sites-authoring/default-components-designmode.md) in en dubbelklikt u op de geplaatste `Social Tag Cloud` component om een dialoogvenster met een extra tabblad te openen.
 
-Geef op het tabblad **[!UICONTROL Sociale tag - Cloud (Ontwerp)]** op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
+Geef op het **[!UICONTROL Social Tag Cloud (Design)]** tabblad op hoe tags moeten worden weergegeven. Een tag kan een eenvoudige tag zijn, een enkel woord in de standaardnaamruimte of een hiërarchische taxonomie:
 
 ![chlimage_1-306](assets/chlimage_1-306.png)
 
-* **[!UICONTROL Volledige titelpaden]** tonen Indien ingeschakeld, worden de titels voor de bovenliggende tags en naamruimte voor elke toegepaste tag weergegeven.
+* **[!UICONTROL Show full title paths]**
+Als deze optie is ingeschakeld, worden de titels voor de bovenliggende tags en naamruimte voor elke toegepaste tag weergegeven.
 
    Bijvoorbeeld:
 
    * Ingeschakeld: `Geometrixx Media: Gadgets / Cars`
    * Niet ingeschakeld: `Cars`
+
    Er is geen verschil voor een eenvoudige tag.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Alleen bladlabels]** weergeven Als deze optie is ingeschakeld, worden alleen toegepaste labels weergegeven die geen andere codes bevatten.
+* **[!UICONTROL Show only leaf tags]**
+Als deze optie is ingeschakeld, worden alleen toegepaste tags weergegeven die geen andere tags bevatten.
 
    Voorbeeld: op basis van de tagID van
 
@@ -88,14 +101,17 @@ Geef op het tabblad **[!UICONTROL Sociale tag - Cloud (Ontwerp)]** op hoe tags m
    Er zijn drie tags die kunnen worden toegepast: `Geometrixx Media (the namespace)`, `Gadgets`en `Cars`
 
    * Ingeschakeld: alleen `Cars` wordt weergegeven, indien toegepast
-   * Niet ingeschakeld: `Geometrixx Media` en `Gadgets`ook `Cars` indien toegepast
+   * Niet ingeschakeld: `Geometrixx Media` en `Gadgets`ook `Cars` worden weergegeven, indien van toepassing
+
    Een eenvoudige tag is een bladtag.
 
    De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Sjabloon]** koppelen Een andere sjabloon dan een standaard die wordt gebruikt om de koppelingen in een tagcloud weer te geven wanneer koppelingen zijn ingeschakeld via het dialoogvenster voor bewerken van componenten.
+* **[!UICONTROL Link Template]**
+Een andere sjabloon dan een standaard die wordt gebruikt om de koppelingen in een tagcloud weer te geven wanneer koppelingen zijn ingeschakeld via het dialoogvenster voor bewerken van componenten.
 
-* **[!UICONTROL Dezelfde grootte voor alle tags]** Als deze optie is ingeschakeld, worden alle woorden in de tagcloud dezelfde stijl toegewezen. Als deze optie is uitgeschakeld, worden woorden anders opgemaakt op basis van hun gebruik. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Same size for all tags]**
+Als deze optie is ingeschakeld, worden alle woorden in de tagcloud dezelfde stijl toegewezen. Als deze optie is uitgeschakeld, worden woorden anders opgemaakt op basis van hun gebruik. De optie Standaard is uitgeschakeld.
 
 ## Additional Information {#additional-information}
 
