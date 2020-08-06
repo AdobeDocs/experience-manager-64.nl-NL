@@ -13,6 +13,9 @@ pagetitle: Query Builder API
 tagskeywords: querybuilder
 translation-type: tm+mt
 source-git-commit: dbb6156b375382a23b9a3faece2dcdf47fd7cd82
+workflow-type: tm+mt
+source-wordcount: '2350'
+ht-degree: 0%
 
 ---
 
@@ -31,15 +34,15 @@ De REST API biedt toegang tot exact dezelfde functies via HTTP, waarbij reacties
 
 >[!NOTE]
 >
->De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR-API van Adobe Experience Manager vanuit een OSGi-bundel. Zie Adobe Experience Manager-gegevens [aanvragen met de JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)voor meer informatie.
+>De API van QueryBuilder wordt gebouwd gebruikend JCR API. U kunt ook een query uitvoeren op de JCR van Adobe Experience Manager door de JCR API te gebruiken vanuit een OSGi-bundel. Zie Adobe Experience Manager-gegevens [aanvragen met de JCR API](https://helpx.adobe.com/experience-manager/using/querying-experience-manager-data-using1.html)voor meer informatie.
 
 ## Gem-sessie {#gem-session}
 
-[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) is een aantal technische diepgaande duiken in Adobe Experience Manager die door Adobe-experts worden geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is zeer nuttig voor een overzicht en gebruik van het hulpmiddel.
+[AEM Gems](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-index.html) is een reeks technische diepteduiken in Adobe Experience Manager die door experts van Adobe zijn geleverd. Deze zitting die aan de vraagbouwer wordt gewijd is zeer nuttig voor een overzicht en gebruik van het hulpmiddel.
 
 >[!NOTE]
 >
->Zie de AEM Gem-sessie [Zoekformulieren die gemakkelijk zijn gemaakt met de AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) voor een gedetailleerd overzicht van de querybuilder.
+>Zie de AEM van de zitting [Onderzoek vormen van Gem die met AEM querybuilder](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-search-forms-using-querybuilder.html) voor een gedetailleerd overzicht van de vraagbouwer worden gemaakt.
 
 ## Voorbeeldquery&#39;s {#sample-queries}
 
@@ -291,7 +294,7 @@ property.3_value=bar
 
 Door gebrek, zal QueryBuilder JSON Servlet een standaardreeks eigenschappen voor elke knoop in het onderzoeksresultaat (b.v. weg, naam, titel, enz.) terugkeren. Als u de controle wilt krijgen over de eigenschappen die worden geretourneerd, kunt u een van de volgende handelingen uitvoeren:
 
-Opgeven
+Geef het volgende op
 
 ```
 p.hits=full
@@ -323,7 +326,7 @@ gescheiden door een spatie:
 
 `http://localhost:4502/bin/querybuilder.json?p.hits=selective&property=jcr%3atitle&property.value=Triangle`
 
-[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.properties=sling%3aresourceType%20jcr%3aprimaryType&property=jcr%3atitle&property.value=Triangle) p.hits=selectieve&amp; [](http://localhost:4502/bin/querybuilder.json?p.hits=selective&p.nodedepth=5&p.properties=sling%3aresourceType%20jcr%3apath&property=jcr%3atitle&property.value=Triangle)p.properties=sling%3resourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
+[ `http://localhost:4502/bin/querybuilder.json?`](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.properties=sling%3aresourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle) [p.hits=selectieve&amp;](http://localhost:4502/bin/querybuilder.json?p.hits=selective&amp;p.nodedepth=5&amp;p.properties=sling%3aresourceType%20jcr%3apath&amp;property=jcr%3atitle&amp;property.value=Triangle)p.properties=sling%3resourceType%20jcr%3aprimaryType&amp;property=jcr%3atitle&amp;property.value=Triangle
 
 ```xml
 property=jcr:title
@@ -423,7 +426,7 @@ Voor dergelijke belangrijkste eigenschappen, kunt u de vraag verkorten en &quot;
 
 >[!NOTE]
 >
->Leer hoe te om een bundel te bouwen OSGi die de API QueryBuilder gebruikt en die bundel OSGi binnen een toepassing van de Manager van de Ervaring van Adobe gebruikt, zie het [Creëren van de bundels OSGi van Adobe CQ die de](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API van de Bouwer van de Vraag gebruiken.
+>Leer hoe te om een bundel te bouwen OSGi die de API QueryBuilder gebruikt en die bundel OSGi binnen een toepassing van Adobe Experience Manager gebruikt, zie het [Creëren van de bundels OSGi van Adobe CQ die de](https://helpx.adobe.com/experience-manager/using/using-query-builder-api.html)API van de Bouwer van de Vraag gebruiken.
 
 Dezelfde query die via HTTP wordt uitgevoerd met de Query Builder (JSON) Servlet:
 
@@ -467,7 +470,7 @@ of anders de querybuilder json servlet op
 
 ( `path=/tmp` is slechts een voorbeeld).
 
-### Algemene aanbevelingen voor foutopsporing {#general-debugging-recommendations}
+### Algemene foutopsporing in Recommendations {#general-debugging-recommendations}
 
 ### Leg XPath voor uitleg beschikbaar via logboekregistratie {#obtain-explain-able-xpath-via-logging}
 
@@ -486,7 +489,7 @@ Verklaar **alle** vragen tijdens de ontwikkelingscyclus tegen de reeks van de do
 
 ### Vraag verklaarbare XPath via debugger van de Bouwer van de Vraag {#obtain-explain-able-xpath-via-the-query-builder-debugger}
 
-* Gebruik foutopsporing AEM QueryBuilder om een uitlegbare XPath-query te genereren:
+* Gebruik debugger AEM QueryBuilder om een verklaarbare vraag van XPath te produceren:
 
 Verklaar **alle** vragen tijdens de ontwikkelingscyclus tegen de reeks van de doelindex.
 
@@ -505,7 +508,7 @@ Verklaar **alle** vragen tijdens de ontwikkelingscyclus tegen de reeks van de do
 
 **Vraag verklaarbare XPath via debugger van de Bouwer van de Vraag**
 
-* Gebruik foutopsporing AEM QueryBuilder om een uitlegbare XPath-query te genereren:
+* Gebruik debugger AEM QueryBuilder om een verklaarbare vraag van XPath te produceren:
 
 ![chlimage_1-66](assets/chlimage_1-66.png)
 
