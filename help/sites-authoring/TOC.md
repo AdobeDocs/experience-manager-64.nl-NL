@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Handleiding voor ontwerpgebruikers
+user-guide-title: AEM 6.4 Handboek voor ontwerpen
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
 source-git-commit: e0b25517821971098978db078b2f205a8a380459
@@ -13,10 +13,10 @@ ht-degree: 42%
 ---
 
 
-# AEM 6.4 Handleiding voor ontwerpgebruikers {#authoring}
+# AEM 6.4 Handboek voor ontwerpen {#authoring}
 
 + [Overzicht van gebruikershandleiding voor ontwerpen](home.md)
-+ Essentiële taken, gereedschappen en concepten voor AEM Authoring {#essentials}
++ Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
    + [Eerste stappen voor auteurs](first-steps.md)
    + [Snelle gids voor het ontwerpen van pagina&#39;s](qg-page-authoring.md)
    + [Concept of Authoring](author.md)
@@ -39,7 +39,7 @@ ht-degree: 42%
    + [Exporteren naar CSV](csv-export.md)
    + [Onderdelen](default-components.md)
    + [Een pagina ontwerpen voor mobiele apparaten](mobile.md)
-   + [AEM-probleem bij ontwerpen oplossen](troubleshooting.md)
+   + [Problemen met AEM bij ontwerpen oplossen](troubleshooting.md)
    + [Sneltoetsen bij het bewerken van pagina&#39;s](page-authoring-keyboard-shortcuts.md)
    + [Best practices voor](best-practices.md)
 + Site- en paginafuncties {#siteandpage}
@@ -75,7 +75,7 @@ ht-degree: 42%
 + Paginaprestaties {#page-performance}
    + [Inhoudsinzicht](content-insights.md)
    + [Paginaprestaties analyseren](ci-analyze.md)
-   + [Analytics-gegevens pagina bekijken](pa-using.md)
+   + [Gegevens van paginaanalyse bekijken](pa-using.md)
    + [Search&amp;Promote toevoegen aan uw pagina](search-and-promote.md)
 + Personalisatie {#personalization}
    + [Personalisatie](personalization.md)
@@ -91,5 +91,5 @@ ht-degree: 42%
    + [Werken met Adobe Campaign](adobe-campaign.md)
    + [Werken met Adobe Campaign Classic en Adobe Campaign Standard](campaign.md)
    + [Je Adobe Campaign als doelgroep instellen](target-adobe-campaign.md)
-   + [Adobe Campaign-formulieren maken in AEM](adobe-campaign-forms.md)
+   + [Adobe Campaign Forms maken in AEM](adobe-campaign-forms.md)
    + [Adobe Campaign-componenten](adobe-campaign-components.md)
