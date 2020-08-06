@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: fe44a941-a09b-4421-b766-1d433291f2cc
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '247'
+ht-degree: 0%
 
 ---
 
@@ -23,14 +26,15 @@ Een fragment [van de](/help/sites-authoring/experience-fragments.md) Ervaring is
 
 Hiermee kan een auteur delen van een pagina (een fragment van een ervaring) opnieuw gebruiken zonder dat de inhoud moet worden gekopieerd en geplakt.
 
-Dit ondersteunt de gebruikscase van het CMS (Headless Content Management System), waarbij auteurs AEM alleen willen gebruiken voor ontwerpen, maar niet voor levering aan de klant. Een systeem/aanraakpunt van derden kan deze ervaring vervolgens gebruiken en aan de eindgebruiker leveren.
+Dit steunt het hoofdloze gebruik-geval van het Systeem van het Beheer van de Inhoud (CMS), waar de auteurs AEM slechts voor creatie, maar niet voor levering aan de klant willen gebruiken. Een systeem/aanraakpunt van derden kan deze ervaring vervolgens gebruiken en aan de eindgebruiker leveren.
 
 >[!NOTE]
 >
->**[Inhoudsfragmenten](/help/sites-developing/we-retail-content-fragments.md)**en **ervaringsfragmenten**zijn verschillende functies in AEM:
+>**[Inhoudsfragmenten](/help/sites-developing/we-retail-content-fragments.md)**en **ervaringsfragmenten**hebben verschillende functies in AEM:
 >
 >* **Inhoudsfragmenten** zijn redactionele inhoud, voornamelijk tekst en verwante afbeeldingen. Het zijn pure inhoud, zonder ontwerp en lay-out.
 >* **de inhoud van de ervaringsfragmenten** volledig wordt ingedeeld; een fragment van een webpagina.
+
 >
 >
 De Fragmenten van de ervaring kunnen inhoud in de vorm van Inhoudsfragmenten bevatten, maar niet andersom.
