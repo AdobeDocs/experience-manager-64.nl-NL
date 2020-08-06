@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '1506'
+ht-degree: 0%
 
 ---
 
@@ -54,12 +57,12 @@ Als u de componenten wilt aanpassen of uitbreiden, schrijft u alleen de overlays
    * De JS-sjabloon en CSS wijzigen
 * Voor look, Voel en UX
    * De JS-sjabloon, CSS en JavaScript [uitbreiden/overschrijven wijzigen](client-customize.md#extending-javascript)
-* Om de informatie te wijzigen beschikbaar aan het Malplaatje JS of aan het GET eindpunt
+* Om de informatie beschikbaar aan het Malplaatje JS of aan het eindpunt van GET te wijzigen
    * De [sociale component uitbreiden](server-customize.md#socialcomponent-interface)
 * Aangepaste verwerking toevoegen tijdens bewerkingen
    * Een [OperationExtension schrijven](server-customize.md#operationextension-class)
 * Een nieuwe aangepaste bewerking toevoegen
-   * Een nieuwe bewerking [Verschuiven na maken](server-customize.md#postoperation-class)
+   * Een nieuwe bewerking [Verschuiven na verzenden maken](server-customize.md#postoperation-class)
    * Gebruik indien nodig bestaande [OperationServices](server-customize.md#operationservice-class)
    * Voeg JavaScript-code toe om uw bewerking zo nodig vanaf de client aan te roepen
 
@@ -79,9 +82,9 @@ Bezoek het Overzicht [van de Leverancier van het Middel van de](srp.md) Opslag o
 
 De HTTP-API ondersteunt eenvoudige aanpassingen en keuzemogelijkheden van clientplatforms voor PhoneGap-apps, native apps en andere integraties en mashups. Bovendien staat HTTP API een communautaire plaats toe om als dienst zonder een cliënt te lopen, zodat de kadercomponenten in om het even welke webpage kunnen worden geïntegreerd die op om het even welke technologie wordt voortgebouwd.
 
-### HTTP-API - aanvragen OPHALEN {#http-api-get-requests}
+### HTTP API - GET {#http-api-get-requests}
 
-Voor elke SocialComponent, verstrekt het kader een op HTTP-Gebaseerd API eindpunt. Het eindpunt wordt betreden door een GET verzoek naar het middel met &quot;.social.json&quot;selecteur + uitbreiding te verzenden. Gebruikend Sling, wordt het verzoek overhandigd aan `DefaultSocialGetServlet`.
+Voor elke SocialComponent, verstrekt het kader een op HTTP-Gebaseerd API eindpunt. Het eindpunt wordt betreden door een verzoek van de GET naar het middel met &quot;.social.json&quot;selecteur + uitbreiding te verzenden. Gebruikend Sling, wordt het verzoek overhandigd aan `DefaultSocialGetServlet`.
 
 The `DefaultSocialGetServlet`
 
@@ -97,9 +100,9 @@ Een standaard GET servlet luistert naar .social.json verzoeken waaraan de Social
 
 ![chlimage_1-26](assets/chlimage_1-26.png)
 
-### HTTP-API - POST-aanvragen {#http-api-post-requests}
+### HTTP API - POST-aanvragen {#http-api-post-requests}
 
-Naast de GET (Gelezen) verrichtingen, bepaalt het kader een eindpuntpatroon om andere verrichtingen op een component toe te laten, met inbegrip van Create, Update en Schrapping. Deze eindpunten zijn HTTP-API&#39;s die invoer accepteren en reageren met HTTP-statuscodes of met een JSON-reactieobject.
+Naast de (Gelezen) verrichtingen van de GET, bepaalt het kader een eindpuntpatroon om andere verrichtingen op een component toe te laten, met inbegrip van Create, Update en Schrapping. Deze eindpunten zijn HTTP-API&#39;s die invoer accepteren en reageren met HTTP-statuscodes of met een JSON-reactieobject.
 
 Met dit eindpuntpatroon van het framework worden CUD-bewerkingen uitbreidbaar, herbruikbaar en getest.
 
@@ -129,7 +132,7 @@ HBS-scripts zijn eenvoudig, zonder logica, kunnen op zowel de server als de clie
 
 Het framework biedt verschillende helpers [van](handlebars-helpers.md) Handlebars die nuttig zijn bij het ontwikkelen van sociale componenten.
 
-Op de server, wanneer het Sling een GET verzoek oplost, identificeert het het manuscript dat zal worden gebruikt om op het verzoek te antwoorden. Als het manuscript een malplaatje HBS (.hbs) is, zal het Sling het verzoek aan de Motor van Handlebars delegeren. De Motor Handlebars zal dan de SocialComponent van aangewezen SocialComponentFactory krijgen, een context bouwen, en HTML teruggeven.
+Op de server, wanneer het Sling een verzoek van de GET verhelpt, identificeert het het manuscript dat zal worden gebruikt om op het verzoek te antwoorden. Als het manuscript een malplaatje HBS (.hbs) is, zal het Sling het verzoek aan de Motor van Handlebars delegeren. De Motor Handlebars zal dan de SocialComponent van aangewezen SocialComponentFactory krijgen, een context bouwen, en HTML teruggeven.
 
 ### Geen toegangsbeperking {#no-access-restriction}
 
@@ -155,9 +158,9 @@ Het resultaat is een JCR-onderliggend knooppunt onder een pari-knooppunt, dat ad
 
 Het opnemen van een component verwijst naar het proces waarbij een verwijzing naar een [&quot;niet-bestaande&quot; resource](srp.md#for-non-existing-resources-ners) (geen JCR-knooppunt) binnen de sjabloon wordt toegevoegd, zoals het gebruik van een scripttaal.
 
-Vanaf AEM 6.1, wanneer een component dynamisch inbegrepen in plaats van toegevoegd is, is het mogelijk om de eigenschappen van de component in auteur *design *mode uit te geven.
+Vanaf AEM 6.1, wanneer een component dynamisch in plaats van toegevoegd wordt omvat, is het mogelijk om de eigenschappen van de component in auteur *design *mode uit te geven.
 
-Slechts een beperkt aantal onderdelen van de AEM-gemeenschappen kan dynamisch worden opgenomen. Het zijn:
+Slechts een paar AEM Communities-componenten kunnen dynamisch worden opgenomen. Het zijn:
 
 * [Opmerkingen](essentials-comments.md)
 * [Classificatie](rating-basics.md)
