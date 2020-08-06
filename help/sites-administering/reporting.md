@@ -1,8 +1,8 @@
 ---
 title: Rapportage
 seo-title: Rapportage
-description: Leer hoe u met Rapportage werkt in AEM.
-seo-description: Leer hoe u met Rapportage werkt in AEM.
+description: Leer hoe u met Rapporten in AEM werkt.
+seo-description: Leer hoe u met Rapporten in AEM werkt.
 uuid: d6105d54-4d38-40a4-bd60-00057b84f7b8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2793'
+ht-degree: 0%
 
 ---
 
@@ -30,11 +33,11 @@ Om u te helpen de staat van uw instantie controleren en analyseren, verstrekt AE
 
 Alle rapporten kunnen van de console van **Hulpmiddelen** worden betreden. Selecteer **Rapporten** in de linkerruit, dan klik het vereiste rapport in de juiste ruit tweemaal om het voor het bekijken en/of configuratie te openen.
 
-De nieuwe instanties van een rapport kunnen ook van de console van **Hulpmiddelen** worden gecreeerd. **Selecteer** Rapporten **in de linkerruit, dan** Nieuw... op de werkbalk. Definieer een **titel** en een **naam**, selecteer het gewenste rapporttype en klik op **Maken**. Uw nieuwe rapportexemplaar zal in de lijst verschijnen. Dubbelklik op deze knop om deze te openen en sleep een component van de assistent om de eerste kolom te maken en de rapportdefinitie te starten.
+De nieuwe instanties van een rapport kunnen ook van de console van **Hulpmiddelen** worden gecreeerd. Selecteer **Rapporten** in de linkerruit, dan **Nieuw...** op de werkbalk. Definieer een **titel** en een **naam**, selecteer het gewenste rapporttype en klik op **Maken**. Uw nieuwe rapportexemplaar zal in de lijst verschijnen. Dubbelklik op deze knop om deze te openen en sleep een component van de assistent om de eerste kolom te maken en de rapportdefinitie te starten.
 
 >[!NOTE]
 >
->Naast de standaard AEM- rapporten die uit de doos beschikbaar zijn, kunt u uw eigen (volledig nieuwe) rapporten [](/help/sites-developing/dev-reports.md)ontwikkelen.
+>Naast de standaard AEM rapporten die uit de doos beschikbaar zijn, kunt u uw eigen (volledig nieuwe) rapporten [](/help/sites-developing/dev-reports.md)ontwikkelen.
 
 ## De grondbeginselen van de Aanpassing van het Rapport {#the-basics-of-report-customization}
 
@@ -54,6 +57,7 @@ Er zijn verschillende indelingen voor rapporten beschikbaar. De volgende rapport
 >* [Bij Health Check](#health-check) worden selectievelden gebruikt om de gegevens op te geven die u wilt rapporteren.
 >* [Schijfgebruik](#disk-usage) gebruikt koppelingen om de structuur van de opslagplaats verder te doorlopen.
 >* [Het werkstroomrapport](/help/sites-administering/reporting.md#workflow-report) geeft een overzicht van de werkstromen die op uw instantie worden uitgevoerd.
+
 >
 >
 De volgende procedures voor de kolomconfiguratie zijn dus niet geschikt. Zie de beschrijvingen van de afzonderlijke rapporten voor hun details.
@@ -148,7 +152,7 @@ Het rapport kan worden gegenereerd:
 
 1. Stel **Groepering** in op de vereiste kolom.
 1. **Bewerk** de configuratie om te bepalen hoe vaak de momentopnamen moeten worden gemaakt; uur of dag.
-1. **** Voltooien... de definitie waarmee de verzameling van momentopnamen wordt gestart.
+1. **Voltooien...** de definitie waarmee de verzameling van momentopnamen wordt gestart.
 
    De rode/groene schuifknop linksboven geeft aan wanneer momentopnamen worden verzameld.
 
@@ -177,7 +181,7 @@ Selecteer uw vereisten en klik op **Ga** om deze op het rapport toe te passen. A
 
 Wanneer momentopnamen worden verzameld, kunt u:
 
-* **Voltooien** gebruiken... opnieuw om de verzameling opnieuw te initialiseren.
+* Voltooien **gebruiken...** opnieuw om de verzameling opnieuw te initialiseren.
 
    **Voltooi** &quot;bevriest&quot;de structuur van het rapport (d.w.z. de kolommen toegewezen aan het rapport en die worden gegroepeerd, gesorteerd, gefiltreerd, enz.) en maakt momentopnamen.
 
@@ -295,7 +299,7 @@ Het componentenrapport bevat informatie over hoe uw website de componenten gebru
 
 [Kolommen met informatie](#selecting-and-positioning-the-data-columns) over:
 
-* Author
+* Auteur
 * Componentpad
 * Componenttype
 * Laatst gewijzigd
@@ -331,7 +335,6 @@ Het rapport begint in de basis ( / ) van de gegevensopslagruimte; door op een be
 Dit rapport analyseert het huidige aanvraaglogboek:
 
 `<cq-installation-dir>/crx-quickstart/logs/request.log`\
-
 om u te helpen de duurste aanvraag(en) binnen een bepaalde periode identificeren.
 
 Om het rapport te produceren kunt u specificeren:
@@ -358,13 +361,13 @@ Om het rapport te produceren kunt u specificeren:
 
    Resultaten naar een e-mailadres verzenden.
 
-   Optioneel;Standaard: blank
+   Optioneel; Standaard: blank
 
 * **Dagelijks uitvoeren om (uu:mm)**
 
    Specificeer een tijd voor het rapport automatisch op een dagelijkse basis moet worden in werking gesteld.
 
-   Optioneel;Standaard: blank
+   Optioneel; Standaard: blank
 
 ![verslaggeving](assets/reporthealth.png)
 
@@ -537,7 +540,7 @@ De benodigde machtigingen zijn afhankelijk van de handeling:
 * De gegevens van het rapport worden hoofdzakelijk verzameld gebruikend de voorrechten van de huidige gebruiker.
 * De historische gegevens worden verzameld gebruikend de voorrechten van de gebruiker die het rapport beëindigde.
 
-In een standaard AEM-installatie zijn de volgende machtigingen vooraf ingesteld voor de rapporten:
+In een standaard AEM installatie zijn de volgende toestemmingen vooraf ingesteld voor de rapporten:
 
 * **Gebruikersrapport**
 
