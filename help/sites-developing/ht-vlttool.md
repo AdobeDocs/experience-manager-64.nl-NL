@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a76425e9-fd3b-4c73-80f9-0ebabb8fd94f
 translation-type: tm+mt
 source-git-commit: f0e4d958cad182c7218314ba7b117c2347f947ca
+workflow-type: tm+mt
+source-wordcount: '2748'
+ht-degree: 2%
 
 ---
 
 
 # Het gereedschap VLT gebruiken {#how-to-use-the-vlt-tool}
 
-Het hulpprogramma Jackrabbit FileVault (VLT) is een hulpmiddel dat is ontwikkeld door [de Apache Foundation](https://www.apache.org/) en waarmee de inhoud van een Jackrabbit/AEM-instantie wordt toegewezen aan uw bestandssysteem. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, evenals configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekken.
+Het Jackrabbit FileVault-hulpprogramma (VLT) is een hulpmiddel dat is ontwikkeld door [de Apache Foundation](https://www.apache.org/) en waarmee de inhoud van een Jackrabbit/AEM-instantie wordt toegewezen aan uw bestandssysteem. Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, evenals configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekken.
 
 U voert het gereedschap VLT uit vanaf de opdrachtregel. In dit document wordt beschreven hoe u het gereedschap kunt gebruiken, inclusief hoe u aan de slag kunt en hoe u hulp kunt krijgen, en wordt een lijst met alle [opdrachten](#vlt-commands) en beschikbare [opties](#vlt-global-options)weergegeven.
 
@@ -30,8 +33,8 @@ Zie de pagina [FileVault Overview](https://jackrabbit.apache.org/filevault/overv
 Als u VLT wilt gaan gebruiken, moet u het volgende doen:
 
 1. Installeer VLT, werk omgevingsvariabelen bij en werk algemene genegeerde subversiebestanden bij.
-1. Stel de AEM-opslagplaats in (als u dat nog niet hebt gedaan).
-1. Bekijk de AEM-opslagplaats.
+1. Stel de AEM opslagplaats in (als u dat nog niet hebt gedaan).
+1. Bekijk de AEM opslagplaats.
 1. Synchroniseren met de repository.
 1. Test of de synchronisatie heeft gewerkt.
 
