@@ -1,8 +1,8 @@
 ---
 title: Standaard SSL
 seo-title: Standaard SSL
-description: Leer hoe u SSL standaard kunt gebruiken in AEM.
-seo-description: Leer hoe u SSL standaard kunt gebruiken in AEM.
+description: Leer hoe u in AEM SSL standaard kunt gebruiken.
+seo-description: Leer hoe u in AEM SSL standaard kunt gebruiken.
 uuid: 262474b0-f5fa-4cff-8727-9f39c5b5f760
 contentOwner: User
 content-type: reference
@@ -11,17 +11,20 @@ topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
 translation-type: tm+mt
 source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
 
 # Standaard SSL{#ssl-by-default}
 
-In een poging de beveiliging van AEM voortdurend te verbeteren, heeft Adobe de functie SSL standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM-instanties.
+In een poging om de veiligheid van AEM voortdurend te verbeteren, heeft Adobe een eigenschap genoemd SSL Door Standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM instanties.
 
 ## SSL standaard inschakelen {#enabling-ssl-by-default}
 
-U kunt SSL standaard configureren door te klikken op het betreffende Postvak IN-bericht op het startscherm van AEM. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op Alles **** weergeven. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
+U kunt SSL door Standaard te vormen door het relevante Inbox bericht van uw AEM homescherm te klikken. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op Alles **** weergeven. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
 
 Selecteer en open de waarschuwing HTTPS **configureren in de lijst** :
 
@@ -53,7 +56,7 @@ Voor deze functie is een servicegebruiker met de naam **ssl-service** gemaakt. Z
 
 Er zijn drie manieren om SSL standaard te automatiseren.
 
-### Via HTTP POST {#via-http-post}
+### Via HTTP-POST {#via-http-post}
 
 De eerste methode impliceert het posten aan de server SSLSetup die door de configuratietovenaar wordt gebruikt:
 
@@ -90,7 +93,7 @@ Content-Disposition: form-data; name="httpsPort"
 8443
 ```
 
-De servlet zal, net als elke andere sling POST servlet, met 200 OK of een de statuscode van foutHTTP antwoorden. U vindt details over de status in de HTML-hoofdtekst van de reactie.
+De servlet zal, net als elke sling POST servlet, met 200 OK of een foutHTTP- statuscode antwoorden. U vindt details over de status in de HTML-hoofdtekst van de reactie.
 
 Hieronder staan voorbeelden voor zowel een geslaagde reactie als een fout.
 
