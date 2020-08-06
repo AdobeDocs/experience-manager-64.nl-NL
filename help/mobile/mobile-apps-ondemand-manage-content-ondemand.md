@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 89fc3701-0472-4629-95d3-da577581a0f0
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
@@ -19,23 +22,23 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
 ## Overzicht van inhoud {#content-overview}
 
-Als u aan een online tijdschrift denkt, omvat de belangrijkste inhoud artikelen, advertenties, en de omslagen. Er kunnen drie hoofdtypen mobiele on-demand-inhoud worden gemaakt in AEM:
+Als u aan een online tijdschrift denkt, omvat de belangrijkste inhoud artikelen, advertenties, en de omslagen. Binnen AEM kunnen drie hoofdtypen mobiele on-demand-inhoud worden gemaakt:
 
 * **Artikelen**: tekst die is gebaseerd op illustraties om informatie over te brengen
-* **** Banners: typisch grafische promotionele verbindingen
-* **** Verzamelingen: een goed gedefinieerde *emmer* met inhoud weergeven, zoals artikelen of banners, die het thema van de omslag aanpast
+* **Banners:** typisch grafische promotionele verbindingen
+* **Verzamelingen:** een goed gedefinieerde *emmer* met inhoud weergeven, zoals artikelen of banners, die het thema van de omslag aanpast
 
-* **** Gedeelde bronnen: staat hergebruik of het delen van gemeenschappelijke stukken over artikelen toe
+* **Gedeelde bronnen:** staat hergebruik of het delen van gemeenschappelijke stukken over artikelen toe
 
 >[!NOTE]
 >
->Zie [Ontwerpoverwegingen voor mobiele AEM-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in de online Help voor meer informatie over ontwerpoverwegingen voor mobiele AEM-apps.
+>Zie [Ontwerpoverwegingen voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Help voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps.
 
 ## Inhoud maken en beheren {#creating-and-managing-content}
 
@@ -51,10 +54,10 @@ De volgende onderwerpen beschrijven het creëren en het beheer van inhoud, namel
 >
 >Meestal moet u Preflight uitvoeren voordat u inhoud publiceert. Zie [Voorvertonen met Preflight](/help/mobile/aem-mobile-manage-ondemand-services.md) voor meer informatie.
 
-### Additional Resources {#additional-resources}
+### Aanvullende bronnen {#additional-resources}
 
 Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 
-* [AEM-inhoud ontwikkelen voor AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md)
-* [Inhoud beheren voor AEM Mobile On-Demand Services](/help/mobile/aem-mobile.md)
+* [AEM voor AEM Mobile On-demand Services ontwikkelen](/help/mobile/aem-mobile-on-demand.md)
+* [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
 
