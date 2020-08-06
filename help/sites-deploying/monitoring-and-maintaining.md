@@ -1,6 +1,6 @@
 ---
-title: Uw AEM-instantie bewaken en onderhouden
-seo-title: Uw AEM-instantie bewaken en onderhouden
+title: Uw AEM controleren en onderhouden
+seo-title: Uw AEM controleren en onderhouden
 description: Leer hoe u AEM kunt controleren.
 seo-description: Leer hoe u AEM kunt controleren.
 uuid: 371791ab-2ea3-4d77-9db5-e1672c6b0831
@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Uw AEM-instantie bewaken en onderhouden{#monitoring-and-maintaining-your-aem-instance}
+# Uw AEM controleren en onderhouden{#monitoring-and-maintaining-your-aem-instance}
 
-Nadat uw AEM-instanties zijn geïmplementeerd, zijn bepaalde taken nodig om de werking, prestaties en integriteit van deze instanties te controleren en te onderhouden.
+Nadat uw AEM instanties zijn opgesteld zullen bepaalde taken nodig zijn om hun verrichting, prestaties en integriteit te controleren en te handhaven.
 
 Een belangrijke factor hierbij is dat u, om potentiële problemen te herkennen, moet weten hoe uw systemen er onder normale omstandigheden uitzien en zich gedragen. Dit kan het best worden gedaan door het systeem te controleren en informatie over een bepaalde periode te verzamelen.
 
@@ -32,7 +32,7 @@ Een belangrijke factor hierbij is dat u, om potentiële problemen te herkennen, 
 | Bestandssystemen worden gecontroleerd. | De CRX-opslagplaats zal &quot;bevriezen&quot; als er onvoldoende vrije schijfruimte is. Het wordt hervat zodra er ruimte beschikbaar is. | De &quot; `*ERROR* LowDiskSpaceBlocker`&quot;berichten kunnen in het logboekdossier worden gezien wanneer de vrije ruimte laag wordt. |
 | [Logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
 | Systeembewaking wordt (voortdurend) op de achtergrond uitgevoerd. | Inclusief CPU-, geheugen-, schijf- en netwerkgebruik. Gebruik bijvoorbeeld iostat / vmstat / perfmon. | De geregistreerde gegevens worden visualiseerd en kunnen voor het volgen van prestatiesproblemen worden gebruikt. Onbewerkte gegevens zijn ook toegankelijk. |
-| [AEM-prestaties worden gecontroleerd](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Met inbegrip van de Tellers [van het](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) Verzoek om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
+| [AEM prestaties worden gecontroleerd](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Met inbegrip van de Tellers [van het](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) Verzoek om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
 | U controleert uw [Replicators](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
 | Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
@@ -162,7 +162,7 @@ In het volgende voorbeeld:
 
 ## Werken met auditrecords en logbestanden {#working-with-audit-records-and-log-files}
 
-Controles en logbestanden met betrekking tot Adobe Experience Manager (AEM) zijn op verschillende locaties te vinden. Hieronder vindt u een overzicht van waar u kunt vinden.
+Op verschillende plaatsen zijn controledossiers en logbestanden met betrekking tot Adobe Experience Manager (AEM) te vinden. Hieronder vindt u een overzicht van waar u kunt vinden.
 
 ### Werken met logbestanden {#working-with-logs}
 
@@ -173,14 +173,14 @@ AEM WCM registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken 
 
 #### Bestandsrotatie logbestand {#log-file-rotation}
 
-De omwenteling van het dossier van het logboek verwijst naar het proces dat de groei van dossier door nieuw dossier periodiek te creëren beperkt. In AEM, `error.log` zal een geroepen logboekdossier één keer per dag volgens de bepaalde regels worden geroteerd:
+De omwenteling van het dossier van het logboek verwijst naar het proces dat de groei van dossier door nieuw dossier periodiek te creëren beperkt. In AEM, `error.log` zal een geroepen logboekdossier eenmaal per dag volgens de bepaalde regels worden geroteerd:
 
 * De naam van het `error.log` bestand wordt gewijzigd volgens het patroon {original_filename} `.yyyy-MM-dd`. Op 11 juli 2010 wordt bijvoorbeeld de naam van het huidige logbestand gewijzigd `error.log-2010-07-10`en wordt een nieuw logbestand `error.og` gemaakt.
 * Eerdere logbestanden worden niet verwijderd. Het is dus uw verantwoordelijkheid om oude logbestanden regelmatig te wissen om het schijfgebruik te beperken.
 
 >[!NOTE]
 >
->Als u uw AEM-installatie upgradet, ziet u dat bestaande logbestanden die niet meer door AEM worden gebruikt, op de schijf blijven staan. U kunt ze zonder risico verwijderen. Alle nieuwe logitems worden in de nieuwe logbestanden geschreven.
+>Als u uw AEM installatie bevordert, merk op dat om het even welk bestaand logboekdossier dat niet meer door AEM wordt gebruikt op de schijf zal blijven. U kunt ze zonder risico verwijderen. Alle nieuwe logitems worden in de nieuwe logbestanden geschreven.
 
 ### De logbestanden zoeken {#finding-the-log-files}
 
@@ -190,7 +190,7 @@ Verschillende logbestanden worden opgeslagen op de bestandsserver waarop u AEM h
 
    * `access.log`
 
-      Alle toegangsverzoeken aan AEM WCM en de gegevensopslagplaats worden hier geregistreerd.
+      Alle verzoeken om toegang tot AEM WCM en de opslagplaats worden hier geregistreerd.
 
    * `audit.log`
 
@@ -210,7 +210,7 @@ Verschillende logbestanden worden opgeslagen op de bestandsserver waarop u AEM h
 
    * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
-      Dit logboek wordt alleen gebruikt als dynamische media is ingeschakeld. Het s7access logboek registreert elk verzoek aan Dynamic Media door `/is/image` en `/is/content`.
+      Dit logboek wordt alleen gebruikt als dynamische media is ingeschakeld. Het s7access logboek registreert elk verzoek aan Dynamische Media door `/is/image` en `/is/content`.
 
    * `stderr.log`
 
@@ -232,7 +232,7 @@ Verschillende logbestanden worden opgeslagen op de bestandsserver waarop u AEM h
 
 >[!NOTE]
 >
->De logboeken van ImageServer en s7access zijn niet inbegrepen in het Volledige **pakket van de** Download dat van de **systeem/console/status-Bundlelist** pagina wordt geproduceerd. Als u problemen hebt met Dynamic Media, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
+>De logboeken van ImageServer en s7access zijn niet inbegrepen in het Volledige **pakket van de** Download dat van de **systeem/console/status-Bundlelist** pagina wordt geproduceerd. Als u problemen met dynamische media hebt, voegt u voor ondersteuningsdoeleinden ook de registratie van ImageServer en s7access toe wanneer u contact opneemt met de Klantenondersteuning.
 
 ### Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
 
@@ -254,7 +254,7 @@ De logniveaus zijn als volgt:
 
 | 0 | Fatale fout | De handeling is mislukt en het installatieprogramma kan niet doorgaan. |
 |---|---|---|
-| 1 | Fout | De handeling is mislukt. De installatie gaat door, maar een deel van AEM WCM was niet correct geïnstalleerd en zal niet werken. |
+| 1 | Fout | De handeling is mislukt. De installatie gaat door, maar een deel van AEM WCM is niet correct geïnstalleerd en werkt niet. |
 | 2 | Waarschuwing | De actie is geslaagd maar heeft problemen ondervonden. AEM WCM werkt mogelijk niet correct. |
 | 3 | Informatie | De actie is geslaagd. |
 
@@ -262,7 +262,7 @@ De logniveaus zijn als volgt:
 
 >[!NOTE]
 >
->Wanneer het werken met Adobe Experience Manager zijn er verscheidene methodes om de configuratiemontages voor dergelijke diensten te beheren; zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
+>Bij het werken met Adobe Experience Manager zijn er verschillende methoden om de configuratie-instellingen voor dergelijke services te beheren. zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor meer details en de geadviseerde praktijken.
 
 In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ander logniveau maken. U kunt dit in de repository doen door:
 
@@ -270,6 +270,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 1. Onder `/apps/<project-name>/config`, creeer een knoop voor de nieuwe [Logger van de Logboekregistratie van Apache Sling](/help/sites-deploying/osgi-configuration-settings.md#osgi-configuration-settings):
 
    * Naam:
+
    `org.apache.sling.commons.log.LogManager.factory.config-<identifier>` (aangezien dit een Logger is)
 
    Waar `<identifier>` wordt vervangen door vrije tekst die u (moet) invoeren om het exemplaar te identificeren (u kunt deze informatie niet weglaten). Bijvoorbeeld, `org.apache.sling.commons.log.LogManager.factory.config-MINE`
@@ -396,11 +397,13 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >
    >* een maximale bestandsgrootte
    >* een datum-/tijdschema
+
    >
    >om aan te geven wanneer een nieuw bestand wordt gemaakt (en de naam van het bestaande bestand wordt gewijzigd volgens het naampatroon).
    >
    >* Een formaatlimiet kan met een getal worden opgegeven. Als er geen grootteindicator is opgegeven, wordt deze gebruikt als het aantal bytes. U kunt ook een van de grootteindicatoren toevoegen - `KB`, `MB`of `GB` (hoofdlettergebruik wordt genegeerd).
    >* U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
+
    >
    >  De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
    >
@@ -453,7 +456,7 @@ Deze vermeldingen bevatten dezelfde gegevens als bij het bewerken van een pagina
 
 #### OSGi-auditrecords van de webconsole {#osgi-audit-records-from-the-web-console}
 
-OSGi-gebeurtenissen genereren ook auditrecords die u kunt zien op het tabblad **Configuratiestatus** -> **Logbestanden **tabblad in de AEM-webconsole:
+OSGi-gebeurtenissen genereren ook auditrecords die u kunt zien op het tabblad **Configuratiestatus** -> **Logbestanden **tabblad in de AEM webconsole:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -489,6 +492,7 @@ Om een replicatieagent te controleren:
    * **Logboek** van de mening om tot het logboek van om het even welke acties door de replicatieagent toegang te hebben.
    * **Verbinding** met de doelinstantie testen.
    * **Indien nodig opnieuw proberen** afdwingen voor alle wachtrij-items.
+
    >[!CAUTION]
    >
    >Gebruik de koppeling &quot;Verbinding testen&quot; niet voor het selectievakje Reverse Replication Outbox op een publicatie-instantie.
@@ -523,7 +527,7 @@ Hieronder worden gemeenschappelijke prestatieproblemen opgesomd die zich voordoe
 |  | Lokaal bladeren op de server is (relatief) snel. | Verhoog de netwerkbandbreedte. | Verminder de &#39;dikte&#39; van uw webpagina&#39;s (bijvoorbeeld minder afbeeldingen, geoptimaliseerde HTML). |
 | Webserver | Het CPU-gebruik op de webserver is hoog. | Cluster uw webservers. | Verminder de hits per pagina (bezoek). |
 |  |  | Gebruik een taakverdelingsmechanisme voor hardware. |  |
-| Toepassing | Het CPU-gebruik van de server is hoog. | Cluster uw AEM-instanties. | Zoeken naar CPU- en geheugenhogs en deze elimineren (gebruik coderevisie, timinguitvoer, enz.). |
+| Toepassing | Het CPU-gebruik van de server is hoog. | Cluster uw AEM. | Zoeken naar CPU- en geheugenhogs en deze elimineren (gebruik coderevisie, timinguitvoer, enz.). |
 |  | Hoge geheugenconsumptie. |  | Verbeter caching op alle niveaus. |
 |  | Lage responstijd. |  | Sjablonen en componenten optimaliseren (bijvoorbeeld structuur, logica). |
 | Bewaarplaats |  |  |  |
@@ -582,7 +586,7 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
   <tr> 
    <td>Heap Dumps</td> 
    <td>Onvoldoende geheugen, wat langzame prestaties tot gevolg heeft.</td> 
-   <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie voor de Java-oproep aan AEM.</p> <p>Raadpleeg de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td> 
+   <td><p>Voeg het volgende toe:<br /> <code>-XX:+HeapDumpOnOutOfMemoryError</code><br /> optie aan de vraag van java aan AEM.</p> <p>Raadpleeg de <a href="https://java.sun.com/javase/6/webnotes/trouble/TSG-VM/html/clopts.html#gbzrr">handleiding voor probleemoplossing voor Java SE 6 met HotSpot VM</a>.</p> </td> 
   </tr> 
   <tr> 
    <td>Systeemaanroepen</td> 
@@ -659,7 +663,7 @@ Het aanvraaglogboek registreert elke ingediende aanvraag, samen met het gegeven 
 09:43:41 [66] <- 200 text/html 797ms
 ```
 
-Door alle GET ingangen binnen een specifieke periodes (b.v. over diverse periodes van 24 uur) in totaal op te nemen kunt u verklaringen over het gemiddelde verkeer op uw website doen.
+Door alle GET-items in een bepaalde periode op te tellen (bijvoorbeeld over verschillende periodes van 24 uur), kunt u instructies geven over het gemiddelde verkeer op uw website.
 
 #### De reactietijden van de controle met request.log {#monitoring-response-times-with-the-request-log}
 
@@ -683,7 +687,7 @@ Dit logboek heeft één lijn per verzoek of reactie:
 * Een pijl die aangeeft of dit een aanvraag (pijl die naar rechts wijst) of een reactie (pijl naar links) is.
 * Voor verzoeken bevat de regel:
 
-   * de methode (doorgaans GET, HEAD of POST)
+   * de methode (gewoonlijk GET, HEAD of POST)
    * de gevraagde pagina
    * het protocol
 
@@ -732,7 +736,7 @@ Er moeten tests worden uitgevoerd om te bepalen hoeveel gelijktijdige gebruikers
 
 ### Het gebruiken van rlog.jar om verzoeken met lange duurtijden te vinden {#using-rlog-jar-to-find-requests-with-long-duration-times}
 
-AEM bevat diverse hulplijnen in:\
+AEM bevat diverse hulpgereedschappen in:\
 `<cq-installation-dir>/crx-quickstart/opt/helpers`
 
 Een van deze `rlog.jar`, kan worden gebruikt om snel te sorteren `request.log` zodat aanvragen op duur, van langste tot kortste tijd worden weergegeven.
@@ -841,7 +845,7 @@ Percentage of the requests served within a certain time (ms)
 100% 8106 (longest request)
 ```
 
-De bovenstaande nummers zijn afkomstig van een standaard MAcBook Pro-laptop (medio 2010) die toegang heeft tot de geometrixx-bedrijfspagina, zoals opgenomen in een standaard AEM-installatie. De pagina is heel eenvoudig, maar niet geoptimaliseerd voor prestaties.
+De bovenstaande nummers zijn afkomstig van een standaard MAcBook Pro-laptop (medio 2010) die toegang heeft tot de geometrixx-bedrijfspagina, zoals opgenomen in een standaard AEM installatie. De pagina is heel eenvoudig, maar niet geoptimaliseerd voor prestaties.
 
 `apachebench` geeft ook de tijd per verzoek als gemiddelde, over alle gezamenlijke verzoeken weer; zie `Time per request: 54.595 [ms]` (gemiddeld, over alle gelijktijdige aanvragen). U kunt de waarde van de parameter voor gelijktijdige uitvoering wijzigen `-c` (aantal meerdere aanvragen dat tegelijkertijd moet worden uitgevoerd) om effecten te zien.
 
@@ -877,9 +881,9 @@ Aanbevolen wordt dat elk project `html comments` voor serverprestaties omvat. Er
 
 De gereedschapsopdracht `jconsole` is beschikbaar in de JDK.
 
-1. Start uw AEM-instantie.
+1. Start de AEM.
 1. Uitvoeren `jconsole.`
-1. Selecteer uw AEM-instantie en **Connect**.
+1. Selecteer de AEM en **Connect**.
 
 1. Dubbelklik vanuit de `Local` toepassing `com.day.crx.quickstart.Main`; het Overzicht zal als gebrek worden getoond:
 
@@ -891,7 +895,7 @@ De gereedschapsopdracht `jconsole` is beschikbaar in de JDK.
 
 Sinds JDK 1.6 `jvisualvm` is de gereedschapsopdracht beschikbaar. Nadat u JDK 1.6 hebt geïnstalleerd, kunt u:
 
-1. Start uw AEM-instantie.
+1. Start de AEM.
 
    >[!NOTE]
    >
@@ -993,7 +997,7 @@ Gebruik opnieuw het aantal maanden dat sinds installatie is verstreken om het ge
 
 #### Als u AEM Assets gebruikt, hoeveel middelen handhaaft u momenteel in Middelen? {#if-you-use-aem-assets-how-many-assets-do-you-currently-maintain-in-assets}
 
-Als u wilt zien hoeveel DAM-elementen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
+Als u wilt zien hoeveel DAM-middelen u momenteel beheert, gebruikt u een query voor de opslagplaats. via CRXDE - Hulpmiddelen - Vraag:
 
 * **Type** `XPath`
 
@@ -1072,6 +1076,7 @@ Hieronder volgt een lijst met suggesties voor het controleren of er bepaalde pre
 >* [Geheugenproblemen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeMemoryProblems.html)
 >* [Analyseren met ingebouwde analyse](https://helpx.adobe.com/experience-manager/kb/AnalyzeUsingBuiltInProfiler.html)
 >* [Langzame en geblokkeerde processen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
+
 >
 
 
