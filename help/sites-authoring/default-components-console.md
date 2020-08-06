@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '262'
+ht-degree: 20%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Met de componentenconsole kunt u door alle componenten bladeren die voor uw instantie zijn gedefinieerd en sleutelinformatie voor elke component bekijken.
 
-U kunt deze openen via **Gereedschappen** -> **Algemeen** -> **Componenten**. In de console, zijn de kaart en lijstmening beschikbaar. Omdat er geen boomstructuur voor componenten is, is de kolommening niet beschikbaar.
+It can be accessed from **Tools** -> **General** -> **Components**. In de console zijn de kaart- en de lijstweergave beschikbaar. Omdat er geen boomstructuur voor componenten is, is de kolomweergave niet beschikbaar.
 
 ![chlimage_1-301](assets/chlimage_1-301.png)
 
@@ -29,9 +32,9 @@ U kunt deze openen via **Gereedschappen** -> **Algemeen** -> **Componenten**. In
 
 ## Zoeken {#search-features}
 
-Met het pictogram Alleen **** inhoud (linksboven) kunt u het deelvenster **Zoeken** openen om de componenten te zoeken en/of te filteren:
+Met het pictogram **Alleen content** (linksboven) kunt u het deelvenster **Zoeken** openen om de componenten te zoeken en/of te filteren:
 
-![chlimage_1-302](assets/chlimage_1-302.png)
+![chlimage_1-382](assets/chlimage_1-302.png)
 
 ## Componentdetails {#component-details}
 
