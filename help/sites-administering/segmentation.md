@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1459'
+ht-degree: 0%
 
 ---
 
@@ -28,11 +31,11 @@ Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstel
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud wordt bijgehouden in het gedeelte [Persoonlijke instellingen](/help/sites-authoring/personalization.md) van de website. [De hier gedefinieerde activiteiten](/help/sites-authoring/activitylib.md) kunnen op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
-Met AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het staat u ook toe om de resultaten van uw segmentdefinities te verifiëren.
+AEM kunt u de gebruikerservaring eenvoudig aanpassen. Het staat u ook toe om de resultaten van uw segmentdefinities te verifiëren.
 
 ## Segmenten openen {#accessing-segments}
 
-De [console van het publiek](/help/sites-authoring/managing-audiences.md) wordt gebruikt om segmenten voor ContextHub of de Context van de Cliënt evenals publiek voor uw rekening van het Doel van Adobe te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub. Raadpleeg de relevante documentatie voor [clientcontextsegmenten](/help/sites-administering/campaign-segmentation.md) en Adobe Target-segmenten.
+De [console van het publiek](/help/sites-authoring/managing-audiences.md) wordt gebruikt om segmenten voor ContextHub of de Context van de Cliënt evenals publiek voor uw rekening van Adobe Target te beheren. Deze documentatie behandelt het beheren van segmenten voor ContextHub. Voor de segmenten [van de Context van de](/help/sites-administering/campaign-segmentation.md) Cliënt en de segmenten van Adobe Target, te zien gelieve de relevante documentatie.
 
 Als u toegang wilt krijgen tot uw segmenten, selecteert u **Navigatie > Aanpassing aanpassen > Soorten publiek**.
 
@@ -163,7 +166,7 @@ Het volgende voorbeeld wordt gebruikt om bezoekers te selecteren die in onze lee
 
 Mannelijk en tussen 30 en 59 jaar
 
- OF
+OF
 
 Vrouwen tussen 30 en 59 jaar
 
