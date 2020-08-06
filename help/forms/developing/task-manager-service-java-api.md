@@ -36,7 +36,7 @@ De volgende Snelle Beginnen zijn beschikbaar voor de dienst van de Manager van d
 
 [Snel starten (SOAP-modus): Taakgegevens ophalen met de Java API](task-manager-service-java-api.md#quick-start-soap-mode-retrieving-task-information-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
@@ -44,7 +44,7 @@ De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms ste
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem Forms server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Taken toewijzen met de Java API {#quick-start-soap-mode-assigning-tasks-using-the-java-api}
 
