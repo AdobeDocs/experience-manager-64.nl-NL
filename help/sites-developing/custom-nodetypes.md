@@ -1,8 +1,8 @@
 ---
 title: Aangepaste knooppunttypen
 seo-title: Aangepaste knooppunttypen
-description: AEM is gebaseerd op Sling en gebruikt een JCR-opslagplaats met knooppunttypen die door beide worden aangeboden, maar AEM biedt ook een reeks aangepaste knooppunttypen
-seo-description: AEM is gebaseerd op Sling en gebruikt een JCR-opslagplaats met knooppunttypen die door beide worden aangeboden, maar AEM biedt ook een reeks aangepaste knooppunttypen
+description: AEM is gebaseerd op Sling en gebruikt een opslagplaats JCR met knooptypes die door allebei worden aangeboden, maar AEM verstrekt ook een waaier van de types van douaneknooppunten
+seo-description: AEM is gebaseerd op Sling en gebruikt een opslagplaats JCR met knooptypes die door allebei worden aangeboden, maar AEM verstrekt ook een waaier van de types van douaneknooppunten
 uuid: f2022504-e433-4b42-9cc1-eef41086483a
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 7%
 
 # Aangepaste knooppunttypen{#custom-node-types}
 
-Omdat AEM op het Verkopen gebaseerd is en een bewaarplaats JCR gebruikt, zijn de knooptypes die door beide worden aangeboden beschikbaar voor gebruik:
+Omdat AEM gebaseerd is op Sling en een gegevensopslagplaats JCR gebruikt, zijn de knooptypes die door beide worden aangeboden beschikbaar voor gebruik:
 
 * [JCR-knooppunttypen](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/3_Repository_Model.html#3.1.7%20Node%20Types)
 * [Sling Node Types](https://cwiki.apache.org/confluence/display/SLING/Sling+Node+Types)
@@ -468,7 +468,7 @@ Containerlijst.
 
 **Beschrijving**
 
-Het knooppunttype `cq:contentPage` bevat de bezit en kindknoopdefinities voor ContentBus inhoudspagina&#39;s. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
+Het knooptype `cq:contentPage` bevat de eigenschappen en onderliggende knoopdefinities voor ContentBus-inhoudspagina&#39;s. Alleen wanneer dit mixintype wordt toegevoegd aan een knooppunt van het type `cq:page`, wordt een knooppunt een ContentBus-inhoudspagina.
 
 De items in a `cq:Cq4ContentPage` zijn:
 
@@ -493,7 +493,7 @@ Opiniepeilingconfiguratie.
 * `@prop source (String) mandatory` - Data source URI, this is required and must not empty
 * `@prop target (String)` - De doellocatie waar gegevens die uit de gegevensbron zijn opgehaald, worden opgeslagen. Dit is optioneel en wordt standaard ingesteld op het knooppunt cq:PollConfig.
 * `@prop interval (Long)` - Het interval in seconden waarmee naar nieuwe of bijgewerkte gegevens van de gegevensbron wordt gezocht. Dit is optioneel en wordt standaard ingesteld op 30 minuten (1800 seconden).
-* [Aangepaste services voor het importeren van gegevens maken voor Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/polling.html)
+* [Aangepaste services voor het importeren van gegevens voor Adobe Experience Manager maken](https://helpx.adobe.com/experience-manager/using/polling.html)
 
 **Definitie**
 
