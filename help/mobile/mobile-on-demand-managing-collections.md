@@ -11,6 +11,9 @@ topic-tags: authoring-on-demand-services-app
 discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '824'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
@@ -35,6 +38,7 @@ Verzamelingen vertegenwoordigen een goed gedefinieerde *emmertje* gevuld met inh
    >
    >
 * [Verzamelingen beheren](https://helpx.adobe.com/digital-publishing-solution/help/creating-collections.html)
+
 >
 
 
@@ -73,12 +77,12 @@ De workflow voor het importeren van een nieuwe verzameling
 
 ## Een verzameling bewerken {#editing-a-collection}
 
-Met de ingebouwde AEM-editor voor slepen en neerzetten kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
+Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
 
 De workflow voor het bewerken van een verzameling:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer een AEM-artikel in de tegel Verzamelingen **beheren** .
+1. Selecteer een AEM artikel in de tegel **Verzamelingen** beheren.
 1. Klik op de gemarkeerde verzameling in de lijstweergave om deze te openen in de inhoudseditor.
 1. Gebruik de inhoudeditor om inhoud van verzamelingen (manuscripten, afbeeldingen, tekst, enz.) te slepen.
 
@@ -110,7 +114,7 @@ De algemene workflow voor het uploaden van een verzameling:
 
 ## Een verzameling verwijderen {#deleting-a-collection}
 
-Met deze bewerking verwijdert u de geselecteerde verzameling van Mobiel op aanvraag en optioneel van de lokale AEM-instantie.
+Met deze bewerking verwijdert u de geselecteerde verzameling van Mobiel op aanvraag en optioneel van de lokale AEM.
 
 De algemene workflow voor het verwijderen van een verzameling:
 
@@ -118,7 +122,7 @@ De algemene workflow voor het verwijderen van een verzameling:
 1. Selecteer het artikel dat u wilt verwijderen in de tegel **Verzamelingen** beheren.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
 1. Klik op **Verwijderen** op de actiebalk.
-1. Controleer of u zowel AEM- als Mobiel On-Demand wilt verwijderen.
+1. Controleer of u niet alleen mobiele apparaten op aanvraag maar ook AEM wilt verwijderen.
 1. Click **Delete**.
 1. Uw verzameling wordt nu verwijderd uit de lijst.
 
@@ -130,7 +134,7 @@ Verzamelingen zijn in wezen een categorie met verwante inhoud. Ze verzamelen inh
 >
 >Inhoud moet worden geüpload naar Mobile On-Demand voordat deze kan worden toegevoegd aan een verzameling.
 
-Verzamelingen zijn in wezen een categorie met verwante inhoud:Ze verzamelen inhoud, zoals artikelen, banners, in pakketten die de navigatiestructuur van uw toepassing definiëren. Verzamelingen kunnen worden genest.
+Verzamelingen zijn in wezen een categorie met verwante inhoud: Ze verzamelen inhoud, zoals artikelen, banners, in pakketten die de navigatiestructuur van uw toepassing definiëren. Verzamelingen kunnen worden genest.
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
 1. Een eerder geüpload artikel selecteren (of een banner/verzameling)
