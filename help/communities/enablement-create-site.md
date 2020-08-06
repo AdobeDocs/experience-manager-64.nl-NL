@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aff8b79f-dd4e-486e-9d59-5d09dfe34f27
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '1697'
+ht-degree: 1%
 
 ---
 
@@ -26,9 +29,9 @@ Ga als volgt te werk om een nieuwe communitysite te maken:
 De [instantie van de auteur gebruiken](http://localhost:4502/)
 
 * Aanmelden met beheerdersrechten
-* Ga naar **[!UICONTROL Gemeenschappen > Sites]**
+* Ga naar **[!UICONTROL Communities > Sites]**
 
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
 
 ### Stap 1: Sitesjabloon {#step-site-template}
 
@@ -45,16 +48,16 @@ Voer in de stap Sjabloon **** site een titel, beschrijving, de naam voor de URL 
 * **Cloudconfiguraties**: (leeg laten als er geen cloudconfiguraties zijn opgegeven) het pad naar de opgegeven cloudconfiguraties bieden.
 * **Basistaal** van gemeenschapssite: (ongewijzigd laten voor één taal: (Engels) gebruik het keuzemenu om één *of meerdere* basistalen van de beschikbare talen - Duits, Italiaans, Frans, Japans, Spaans, Portugees (Brazilië), Chinees (Traditioneel), en Chinees (Vereenvoudigd) te kiezen. Er wordt één communitysite gemaakt voor elke toegevoegde taal en deze wordt in dezelfde sitemap gebruikt volgens de beste praktijken die worden beschreven in Inhoud [vertalen voor Meerdere sites](../../help/sites-administering/translation.md). De hoofdpagina van elke site bevat een onderliggende pagina met de taalcode van een van de geselecteerde talen, zoals &#39;en&#39; voor Engels of &#39;fr&#39; voor Frans.
 
-* **[!UICONTROL Naam]** van communautaire site: `enable`
+* **[!UICONTROL Community Site Name]**: `enable`
 
    * de eerste URL wordt onder de naam van de communautaire site weergegeven
    * voor een geldige URL voegt u een basistaalcode + &quot;.html&quot; toe
 
       *bijvoorbeeld* http://localhost:4502/content/sites/ `enable/en.html`
 
-* **[!UICONTROL Sjabloon]** verwijzingssite: naar beneden halen om te kiezen `Reference Structured Learning Site Template`
+* **[!UICONTROL Reference Site Template]**: naar beneden halen om te kiezen `Reference Structured Learning Site Template`
 
-Selecteer **[!UICONTROL Volgende]**
+Selecteer **[!UICONTROL Next]**
 
 ### Stap 2: Ontwerp {#step-design}
 
@@ -72,7 +75,7 @@ Selecteer de gewenste stijl die u op de sjabloon wilt toepassen. Als deze optie 
 
 ![chlimage_1-284](assets/chlimage_1-284.png) ![chlimage_1](assets/chlimage_1.jpeg)
 
-Selecteer **[!UICONTROL Volgende]**.
+Selecteer **[!UICONTROL Next]**.
 
 ### Stap 3: Instellingen {#step-settings}
 
@@ -94,9 +97,9 @@ Controleer of de meeste selectievakjes zijn uitgeschakeld voor [Gebruikersbeheer
 
 ![chlimage_1-285](assets/chlimage_1-285.png)
 
-#### TAGS {#tagging}
+#### TAGGING {#tagging}
 
-De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM-naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](enablement-setup.md#create-tutorial-tags)zelfstudie).
+De tags die kunnen worden toegepast op community-inhoud, worden beheerd door AEM naamruimten te selecteren die eerder zijn gedefinieerd via de [Tagingconsole](../../help/sites-administering/tags.md#tagging-console) (zoals de naamruimte [van de](enablement-setup.md#create-tutorial-tags)zelfstudie).
 
 Als u bovendien Tagnaamruimten selecteert voor de communitysite, beperkt u de selectie die wordt weergegeven bij het definiëren van catalogi en machtigingsbronnen. Zie [Tags toewijzen Hulpbronnen](tag-resources.md) voor belangrijke informatie.
 
@@ -140,9 +143,9 @@ De selectie die in het schermafbeelding wordt gezien, `Communities`is het framew
 
 #### VERTALING {#translation}
 
-In de [vertalingsinstellingen](sites-console.md#translation) wordt aangegeven of UGC kan worden vertaald en in welke taal, indien van toepassing.
+In de [vertaalinstellingen](sites-console.md#translation) wordt aangegeven of UGC kan worden vertaald en in welke taal, indien van toepassing.
 
-* Controleren **[!UICONTROL machinevertaling toestaan]**
+* Vinkje **[!UICONTROL Allow Machine Translation]**
 * De standaardinstellingen gebruiken
 
 ![chlimage_1-289](assets/chlimage_1-289.png)
@@ -151,20 +154,23 @@ In de [vertalingsinstellingen](sites-console.md#translation) wordt aangegeven of
 
 Voor een machtigingsgemeenschap is het noodzakelijk om één of meerdere Communautaire Beheerders van Enablement te identificeren.
 
-* **[!UICONTROL De (vereiste) Leden van Enablement Managers]** van de `Community Enablement Managers` groep zijn beschikbaar om worden geselecteerd om deze communautaire plaats te beheren.
+* **[!UICONTROL Enablement Managers]**
+(vereist) Leden van de 
+`Community Enablement Managers` Deze groep is beschikbaar om te worden geselecteerd voor het beheer van deze communitysite.
 
    * Type &quot;s&quot;
    * Selecteer `Sirius Nilson`
 
-* **[!UICONTROL Org-id]** voor marketingcloud (optioneel) De id voor een Adobe Analytics-account die nodig is wanneer [Video Heartbeat Analytics](analytics.md#video-heartbeat-analytics) wordt opgenomen in de rapportage over activering.
+* **[!UICONTROL Marketing Cloud Org Id]**
+(optioneel) De id voor een Adobe Analytics-account die nodig is wanneer [Video Heartbone Analytics](analytics.md#video-heartbeat-analytics) wordt opgenomen in de rapportage over activering.
 
 ![chlimage_1-290](assets/chlimage_1-290.png)
 
-Selecteer **[!UICONTROL Volgende]**.
+Selecteer **[!UICONTROL Next]**.
 
-### Stap 4:Community-site maken {#step-create-community-site}
+### Stap 4: Community-site maken {#step-create-community-site}
 
-Selecteer **[!UICONTROL Maken]**.
+Selecteer **[!UICONTROL Create]**.
 
 ![chlimage_1-291](assets/chlimage_1-291.png)
 
@@ -228,14 +234,14 @@ Met behulp van de Community Group-console kunnen leden afzonderlijk worden toege
 
 In dit voorbeeld `Community Ski Class` wordt de groep toegevoegd als lid van de groep `Community Enable Members` en als lid `Quinn Harper`.
 
-* Ga naar **[!UICONTROL Communities > Groepen]** console
-* Groep leden **[!UICONTROL inschakelen]** Gemeenschap selecteren
-* Ga in `ski` Add Leden aan de onderzoeksdoos van de Groep **** binnen
-* Selecteer **[!UICONTROL Klasse]** communautair skigebied (groep studenten)
+* Navigeren naar **[!UICONTROL Communities > Groups]** console
+* Groep selecteren **[!UICONTROL Community Enable Members]**
+* In `ski` het **[!UICONTROL Add Members To Group]** zoekvak invoeren
+* Selecteren **[!UICONTROL Community Ski Class]** (groep studenten)
 * In `quinn` het zoekvak invoeren
-* Selecteer **[!UICONTROL Quinn Harper]** (resablement resource contact)
+* Selecteren **[!UICONTROL Quinn Harper]** (resablement resource contact)
 
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
 ![chlimage_1-295](assets/chlimage_1-295.png)
 
@@ -268,7 +274,7 @@ Aan de slag
 1. Vouw in de projectbrowser uit `/etc/map`
 1. Selecteer het `http` knooppunt
 
-   * Knooppunt **[!UICONTROL maken selecteren]**
+   * Selecteer **[!UICONTROL Create Node]**
 
       * **Naam** localhost.4503
 
@@ -292,7 +298,7 @@ Aan de slag
       * **Value** /content/sites/enable/en.html
 
 
-1. Alles **[!UICONTROL opslaan selecteren]**
+1. Selecteer **[!UICONTROL Save All]**
 1. (optioneel) De browsergeschiedenis verwijderen
 1. Bladeren naar http://localhost:4503/
 
@@ -300,7 +306,7 @@ Aan de slag
 
 >[!NOTE]
 >
->Als u deze optie wilt uitschakelen, voegt u de waarde van de `sling:match` eigenschap toe aan de naam &#39;x&#39; - `xlocalhost.4503/$` - en **[!UICONTROL Alles]** opslaan.
+>Als u deze optie wilt uitschakelen, voegt u de waarde van de `sling:match` eigenschap gewoon aan met &#39;x&#39; - `xlocalhost.4503/$` - en **[!UICONTROL Save All]**.
 
 ![chlimage_1-297](assets/chlimage_1-297.png)
 
@@ -312,11 +318,11 @@ Als het niet lukt om wijzigingen op te slaan, moet u ervoor zorgen dat de naam v
 
 #### Problemen oplossen: Doorsturen mislukt {#troubleshooting-fail-to-redirect}
 
-De &#39;**$**&#39; aan het einde van de reguliere-expressie- `sling:match`tekenreeks is van cruciaal belang, zodat alleen exact `http://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM naar de aanmeldingspagina probeert om te leiden, mislukt dit.
+De &#39;**$**&#39; aan het einde van de reguliere-expressie- `sling:match`tekenreeks is van cruciaal belang, zodat alleen exact `http://localhost:4503/` wordt toegewezen. Anders wordt de omleidingswaarde toegevoegd aan elk pad dat mogelijk bestaat na de server:poort in de URL. Wanneer AEM probeert om naar de aanmeldingspagina om te leiden, mislukt dit.
 
 ## Het aanpassen van de communautaire Plaats {#modifying-the-community-site}
 
-Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM-ontwerpactiviteiten uit te voeren.
+Nadat de site voor het eerst is gemaakt, kunnen auteurs het pictogram [](sites-console.md#authoring-site-content) Open Site gebruiken om standaard AEM ontwerpactiviteiten uit te voeren.
 
 Daarnaast kunnen beheerders het pictogram [Site](sites-console.md#modifying-site-properties) bewerken gebruiken om eigenschappen van de site, zoals de titel, te wijzigen.
 
@@ -334,7 +340,7 @@ Als dat niet het geval is, kan de catalogusfunctie eenvoudig worden toegevoegd. 
 
 Als de sitestructuur al de catalogusfunctie bevat, kan de titel worden gewijzigd.
 
-Als u de structuur van de site wilt wijzigen, navigeert u naar de **[!UICONTROL Community, Sites]** -console, opent u de `enable` map en selecteert u het pictogram Site **** bewerken om toegang te krijgen tot de eigenschappen van `Enablement Tutorial`.
+Als u de structuur van de site wilt wijzigen, navigeert u naar de **[!UICONTROL Communities, Sites]** console, opent u de `enable` map en selecteert u het pictogram Site **** bewerken om toegang te krijgen tot de eigenschappen van `Enablement Tutorial`.
 
 Selecteer het deelvenster STRUCTUUR om een catalogus toe te voegen of een bestaande catalogus te wijzigen:
 
@@ -343,7 +349,7 @@ Selecteer het deelvenster STRUCTUUR om een catalogus toe te voegen of een bestaa
 * **URL**: `catalog`
 
 * **Alle naamruimten** selecteren: blijven staan.
-* Selecteer **[!UICONTROL Opslaan]**
+* Selecteer **[!UICONTROL Save]**
 
 ![chlimage_1-299](assets/chlimage_1-299.png)
 
@@ -351,6 +357,6 @@ Gebruik het pictogram Positie om de functie Catalog naar de tweede positie te ve
 
 ![chlimage_1-300](assets/chlimage_1-300.png)
 
-Selecteer **[!UICONTROL Opslaan]** in de rechterbovenhoek om de wijzigingen in de communitysite op te slaan.
+Selecteer **[!UICONTROL Save]** in de rechterbovenhoek om de wijzigingen in de communitysite op te slaan.
 
 Vervolgens **publiceert** u de site opnieuw.
