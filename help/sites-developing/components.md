@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 45efff93-2fe5-4313-83a0-0e23a540da93
 translation-type: tm+mt
 source-git-commit: b6a5b222bf6629dc14a16531972a2a50e2b5ed37
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 4%
 
 ---
 
 
 # Overzicht van componenten{#components-overview}
 
-Deze pagina bevat een overzicht van Adobe Experience Manager-componenten, zoals de componenten die [worden gebruikt voor het ontwerpen](/help/sites-authoring/default-components-foundation.md)van pagina&#39;s.
+Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals de componenten die worden [gebruikt voor het ontwerpen](/help/sites-authoring/default-components-foundation.md)van pagina&#39;s.
 
 ## Wat zijn componenten? {#what-exactly-is-a-component}
 
@@ -26,7 +29,7 @@ Deze pagina bevat een overzicht van Adobe Experience Manager-componenten, zoals 
 * Ontwikkeld als zelfstandige eenheden in één map van de opslagplaats.
 * Geen verborgen configuratiebestanden hebben.
 * Kan andere componenten bevatten.
-* Kan overal in elk AEM-systeem worden uitgevoerd. Ze kunnen ook beperkt zijn tot bepaalde onderdelen.
+* Kan overal binnen om het even welk AEM systeem lopen. Ze kunnen ook beperkt zijn tot bepaalde onderdelen.
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten
@@ -40,13 +43,13 @@ Omdat componenten modulair zijn, kunt u:
 * Implementeer deze in uw live ontwerpomgeving, waar auteurs en/of beheerders inhoud kunnen toevoegen en configureren.
 * Implementeer deze in uw live publicatieomgeving(en), waar ze worden gebruikt om inhoud te renderen voor bezoekers van uw website. Bepaalde componenten, bijvoorbeeld voor Communities, accepteren ook invoer van uw gebruikers.
 
-Elke AEM-component:
+Elke AEM component:
 
 * Is een middeltype.
 * Is een inzameling van manuscripten die een specifieke functie volledig realiseren.
-* Kan *afzonderlijk* functioneren, wat ofwel binnen AEM ofwel een portaal betekent.
+* Kan in *isolatie* functioneren, wat ofwel binnen AEM ofwel een portaal betekent.
 
-## Buiten-de-box componenten binnen AEM {#out-of-the-box-components-within-aem}
+## Buiten-de-box Componenten binnen AEM {#out-of-the-box-components-within-aem}
 
 AEM wordt geleverd met verschillende [kant-en-klare componenten](/help/sites-authoring/default-components.md) die uitgebreide functionaliteit bieden, waaronder:
 
@@ -54,50 +57,50 @@ AEM wordt geleverd met verschillende [kant-en-klare componenten](/help/sites-aut
 * Pagina ( `responsivegrid` - alleen interface met aanraakbediening)
 * Tekst
 * Afbeelding, met bijbehorende tekst
-*  Werkbalk
+* Werkbalk
 
 De verstrekte componenten en hun gebruik binnen de [steekproefWeb.Retail websites](/help/sites-developing/we-retail.md) illustreren hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
 ### Basiscomponenten en basiscomponenten {#core-components-and-foundation-components}
 
-Er zijn twee door Adobe geleverde AEM-componenten beschikbaar:
+Er zijn twee reeksen van Adobe-Geleverde AEM beschikbare componenten:
 
 * [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Elementaire componenten](/help/sites-authoring/default-components-foundation.md)
 
 **De Componenten** van de kern werden geïntroduceerd met AEM 6.3 en bieden flexibele en eigenschap-rijke auteursfunctionaliteit. De [Wij.Retail verwijzingsplaats](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige beste praktijken van componentenontwikkeling vertegenwoordigen.
 
-**De Componenten** van de stichting zijn beschikbaar met AEM voor vele versies en zijn beschikbaar uit-van-de-doos in een standaardAEM installatie. Hoewel nog steeds ondersteund, zijn de meeste vervangen, worden ze niet meer uitgebreid en zijn ze gebaseerd op oudere technologieën.
+**De Componenten** van de stichting zijn beschikbaar met AEM voor vele versies en zijn beschikbaar uit-van-de-doos in een standaard AEM installatie. Hoewel nog steeds ondersteund, zijn de meeste vervangen, worden ze niet meer uitgebreid en zijn ze gebaseerd op oudere technologieën.
 
 >[!NOTE]
 >
 >[De Componenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) van de kern vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
 >
->[De modernisering van AEM-tools](modernization-tools.md) kan de migratie naar kerncomponenten vergemakkelijken.
+>[AEM moderniseringsinstrumenten](modernization-tools.md) kunnen de migratie naar kerncomponenten helpen.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw instantie AEM, gebruik de Console [van](/help/sites-authoring/default-components-console.md)Componenten.
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de Console [van](/help/sites-authoring/default-components-console.md)Componenten.
 
-Alternatief, kunt u CRXDE Lite ook gebruiken om een lijst van alle componenten beschikbaar in de bewaarplaats te krijgen.
+U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
-1. In **[!UICONTROL CRXDE Lite]**, uitgezochte **[!UICONTROL Hulpmiddelen]** van de toolbar, toen **[!UICONTROL Vraag]**, die de **[!UICONTROL Vraag]** tabel opent.
+1. Selecteer in **[!UICONTROL CRXDE Lite]** de werkbalk vervolgens **[!UICONTROL Tools]** de optie **[!UICONTROL Query]** waarmee het **[!UICONTROL Query]** tabblad wordt geopend.
 
-1. Selecteer op het tabblad **[!UICONTROL Query]** de optie `XPath` Type ****.
+1. Selecteer op het **[!UICONTROL Query]** tabblad `XPath` als **[!UICONTROL Type]**.
 
-1. Voer in het veld **[!UICONTROL Query]** -invoer de volgende tekenreeks in:
+1. Voer in het **[!UICONTROL Query]** invoerveld de volgende tekenreeks in:
 
    `//element(*, cq:Component)`
 
-1. Klik op **[!UICONTROL Uitvoeren]** en de componenten worden weergegeven.
+1. Klik **[!UICONTROL Execute]** en de componenten worden vermeld.
 
 ## Aanvullende bronnen {#further-reading}
 
 De volgende pagina&#39;s verstrekken meer gedetailleerde informatie over het ontwikkelen van deze-en ander-componenten:
 
-* [AEM-componenten - De basisbeginselen](/help/sites-developing/components-basics.md)
-* [AEM-componenten ontwikkelen](/help/sites-developing/developing-components.md)
-* [AEM-componenten ontwikkelen - Codevoorbeelden](/help/sites-developing/developing-components-samples.md)
+* [Componenten AEM - De basisbeginselen](/help/sites-developing/components-basics.md)
+* [AEM ontwikkelen](/help/sites-developing/developing-components.md)
+* [Ontwikkelen AEM componenten - Codevoorbeelden](/help/sites-developing/developing-components-samples.md)
 * [Meerdere lokale editors configureren](/help/sites-developing/multiple-inplace-editors.md)
 * [Ontwerpmodus](/help/sites-developing/developer-mode.md)
 * [Uw gebruikersinterface testen](/help/sites-developing/hobbes.md)
@@ -108,8 +111,8 @@ De volgende pagina&#39;s verstrekken meer gedetailleerde informatie over het ont
 * [Voorwaarden verbergen gebruiken](/help/sites-developing/hide-conditions.md)
 * Klassieke interface
 
-   * [AEM-componenten (klassieke gebruikersinterface)](/help/sites-developing/developing-components-classic.md)
+   * [AEM (klassieke gebruikersinterface)](/help/sites-developing/developing-components-classic.md)
    * [Widgets gebruiken en uitbreiden (klassieke UI)](/help/sites-developing/widgets.md)
    * [xtypes gebruiken (klassieke UI)](/help/sites-developing/xtypes.md)
-   * [Formulieren ontwikkelen (klassieke gebruikersinterface)](/help/sites-developing/developing-forms.md)
+   * [Forms ontwikkelen (klassieke gebruikersinterface)](/help/sites-developing/developing-forms.md)
 
