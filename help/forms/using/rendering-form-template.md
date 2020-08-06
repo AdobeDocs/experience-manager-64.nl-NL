@@ -1,8 +1,8 @@
 ---
 title: Formuliersjabloon weergeven voor HTML5-formulieren
 seo-title: Formuliersjabloon weergeven voor HTML5-formulieren
-description: HTML5-formulierprofielen zijn gekoppeld aan profielrenderingen. Profielrendering zijn JSP-pagina's die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door het aanroepen van de OSGi-service van Forms.
-seo-description: HTML5-formulierprofielen zijn gekoppeld aan profielrenderingen. Profielrendering zijn JSP-pagina's die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door het aanroepen van de OSGi-service van Forms.
+description: HTML5-formulierprofielen zijn gekoppeld aan profielrenderingen. Profielrendering zijn JSP-pagina's die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door het aanroepen van de Forms OSGi-service.
+seo-description: HTML5-formulierprofielen zijn gekoppeld aan profielrenderingen. Profielrendering zijn JSP-pagina's die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door het aanroepen van de Forms OSGi-service.
 uuid: 34daed78-0611-4355-9698-0d7f758e6b61
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: hTML5_forms
 discoiquuid: cb75b826-d044-44be-b364-790c046513e0
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '568'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## Eindpunt renderen {#render-endpoint}
 
-HTML5-formulieren hebben het idee van **profielen** die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. Aan deze profielen is een **profielrenderer** gekoppeld. Ze zijn JSP-pagina&#39;s die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door de Forms OSGi-service aan te roepen. Het JCR-pad van het knooppunt Profile bepaalt de URL van het eindpunt van de renderbewerking. Het standaardrendereindpunt van het formulier dat verwijst naar het standaardprofiel ziet er als volgt uit:
+HTML5-formulieren hebben het idee van **profielen** die als REST-eindpunten worden weergegeven om de mobiele weergave van formuliersjablonen mogelijk te maken. Aan deze profielen is een **profielrenderer** gekoppeld. Het zijn JSP-pagina&#39;s die verantwoordelijk zijn voor het genereren van HTML-representatie van het formulier door de Forms OSGi-service aan te roepen. Het JCR-pad van het knooppunt Profile bepaalt de URL van het eindpunt van de renderbewerking. Het standaardrendereindpunt van het formulier dat verwijst naar het standaardprofiel ziet er als volgt uit:
 
 https://&lt;*host*>:&lt;*port*>/content/xfaforms/profiles/default.html?contentRoot=&lt;*path of the folder containing form xdp*>&amp;template=&lt;*name of the xdp*>
 
@@ -28,7 +31,7 @@ Voor een douaneprofiel, verandert het eindpunt dienovereenkomstig. Het eindpunt 
 
 `http://localhost:4502/content/xfaforms/profiles/hrforms.html?contentRoot=c:/xdps&template=sampleForm.xdp`
 
-Als uw sjabloon zich in de AEM-opslagplaats bevindt in een toepassing met de naam FormSubmission, is de URI:
+Als uw sjabloon zich in de AEM opslagplaats bevindt in een toepassing met de naam FormSubmission, is de URI:
 
 ```
 http://localhost:4502/content/xfaforms/profiles/default.html?
@@ -70,7 +73,7 @@ De volgende aanvraagparameters worden ondersteund bij het weergeven van formulie
 
 ### De renderparameter doorgeven {#passing-the-render-parameter}
 
-HTML5-formulieren ondersteunen drie methoden voor het doorgeven van de renderparameters. U kunt parameters doorgeven via URL&#39;s, sleutel-waardeparen en profielknooppunten. In de renderparameter heeft sleutelwaardepaar de hoogste prioriteit gevolgd door het profielknooppunt. De URL-verzoekparameter heeft de minste prioriteit.
+HTML5-formulieren ondersteunen drie methoden voor het doorgeven van de renderparameters. U kunt parameters doorgeven via URL&#39;s, sleutelwaardeparen en profielknooppunten. In de renderparameter heeft sleutelwaardepaar de hoogste prioriteit gevolgd door het profielknooppunt. De URL-verzoekparameter heeft de minste prioriteit.
 
 * **Parameters** voor URL-verzoek: U kunt de renderparameters opgeven in de URL. In de URL-aanvraagparameters zijn de parameters zichtbaar voor de eindgebruiker. De volgende verzendings-URL bevat bijvoorbeeld een sjabloonparameter in de URL: `http://localhost:4502/content/xfaforms/profiles/default.html?contentRoot=/Applications/FormSubmission/1.0&template=sampleForm.xdp`
 
@@ -80,4 +83,4 @@ HTML5-formulieren ondersteunen drie methoden voor het doorgeven van de renderpar
 
 ### Parameters verzenden {#submit-parameters}
 
-HTML5-formulieren verzenden gegevens; serverscripts en webservices uitvoeren op AEM-servers. Zie [HTML5 Forms Service Proxy voor meer informatie over parameters die worden gebruikt om serverscripts en webservices uit te voeren op AEM-servers](/help/forms/using/service-proxy.md).
+HTML5-formulieren verzenden gegevens; serverscripts en webservices uitvoeren op AEM servers. Zie [HTML5 Forms Service Proxy voor meer informatie over parameters die worden gebruikt voor het uitvoeren van serverscripts en webservices op AEM servers](/help/forms/using/service-proxy.md).
