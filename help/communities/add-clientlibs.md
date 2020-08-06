@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '652'
+ht-degree: 4%
 
 ---
 
@@ -23,36 +26,36 @@ Maak een ClientLibraryFolder met de naam `clientlibs`die de JS en CSS bevat die 
 
 De `categories`eigenschapwaarde die aan deze clientbibliotheek wordt gegeven, is de id die wordt gebruikt om deze client direct vanaf een inhoudspagina in te sluiten of om deze in andere clientlibs in te sluiten.
 
-1. Met **[!UICONTROL CRXDE Lite]** uitvouwen `/etc/designs`
+1. Uitvouwen **[!UICONTROL CRXDE Lite]** en gebruiken `/etc/designs`
 
 1. Klik met de rechtermuisknop `an-scf-sandbox` en selecteer `Create Node`
 
    * Naam: `clientlibs`
    * Type: `cq:ClientLibraryFolder`
 
-1. Click **[!UICONTROL OK]**
+1. Klik op **[!UICONTROL OK]**
 
 ![chlimage_1-220](assets/chlimage_1-220.png)
 
-Voer op het tabblad **[!UICONTROL Eigenschappen]** voor het nieuwe `clientlibs` knooppunt de **`categories`** eigenschap in:
+Voer op het **[!UICONTROL Properties]** tabblad voor het nieuwe `clientlibs` knooppunt de **`categories`** eigenschap in:
 
-* Naam: **[!UICONTROL categorieën]**
+* Naam: **[!UICONTROL categories]**
 * Type: **[!UICONTROL String]**
 * Waarde: **[!UICONTROL apps.an-scf-sandbox]**
-* Click **[!UICONTROL Add]**
-* Klik op Alles **[!UICONTROL opslaan]**
+* Klik op **[!UICONTROL Add]**
+* Klik op **[!UICONTROL Save All]**
 
 Opmerking: De waarde voor categorieën wordt voorafgegaan door &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs.  BELANGRIJK: Voeg plaatsaanduiding `js.txt` en `css.txt` bestanden toe. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
 
 
 1. Rechtsklik ingeschakeld **`/etc/designs/an-scf-sandbox/clientlibs`**
-1. Bestand **[!UICONTROL maken selecteren...]**
-1. Voer **[!UICONTROL naam]** in: `css.txt`
+1. Selecteer **[!UICONTROL Create File...]**
+1. Enter **[!UICONTROL Name]**: `css.txt`
 
-1. Bestand **[!UICONTROL maken selecteren...]**
-1. Voer **[!UICONTROL naam]** in: `js.txt`
+1. Selecteer **[!UICONTROL Create File...]**
+1. Enter **[!UICONTROL Name]**: `js.txt`
 
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op **[!UICONTROL Save All]**
 
 ![chlimage_1-221](assets/chlimage_1-221.png)
 
@@ -75,7 +78,7 @@ Maak vervolgens een bestand onder clientlibs met de naam style.css en stel de in
 
 ## SCF-clips insluiten {#embed-scf-clientlibs}
 
-Voer op het tabblad **[!UICONTROL Eigenschappen]** voor het `clientlibs` knooppunt de eigenschap String met meerdere waarden in die u wilt **[!UICONTROL insluiten]**. Dit zal de noodzakelijke [cliënt-zijbibliotheken (clientlibs) voor componenten](client-customize.md#clientlibs-for-scf)inbedden SCF. Voor deze zelfstudie zullen we veel clientlibs toevoegen die nodig zijn voor de onderdelen van de Gemeenschappen.
+Op het **[!UICONTROL Properties]** lusje voor de `clientlibs` knoop, ga het multi-waardebezit van het Koord in **[!UICONTROL embed]**. Dit zal de noodzakelijke [cliënt-zijbibliotheken (clientlibs) voor componenten](client-customize.md#clientlibs-for-scf)inbedden SCF. Voor deze zelfstudie zullen we veel clientlibs toevoegen die nodig zijn voor de onderdelen van de Gemeenschappen.
 
 **Merk** op dat dit of niet de gewenste benadering voor een productiesite kan zijn aangezien er overwegingen van gemak tegenover grootte/snelheid van de clientlibs die voor elke pagina worden gedownload zijn.
 
@@ -86,7 +89,7 @@ In dit geval, sluiten wij hen allen, en zo zouden de eenvoudigere SCF clientlibs
 * Naam: **`embed`**
 * Type: **`String`**
 
-* Click **`Multi`**
+* Klik op **`Multi`**
 * Waarde: **`cq.social.scf`**
 
    *&lt;enter> pop-up een dialoogvenster*
@@ -99,9 +102,9 @@ In dit geval, sluiten wij hen allen, en zo zouden de eenvoudigere SCF clientlibs
    * **`cq.social.author.hbs.rating`**
    * **`cq.social.author.hbs.reviews`**
    * **`cq.social.author.hbs.voting`**
-   * Click **[!UICONTROL OK]**
+   * Klik op **[!UICONTROL OK]**
 
-* Klik op Alles **[!UICONTROL opslaan]**
+* Klik op **[!UICONTROL Save All]**
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
@@ -126,15 +129,15 @@ De instructie include behoort tot de <head><meta http-equiv="Content-Type" conte
 **Kopieer koplibs.jsp en neem clientlibs op:**
 
 1. Selecteer met **[!UICONTROL CRXDE Lite]****`/libs/foundation/components/page/headlibs.jsp`**
-1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Kopiëren]** (of selecteer Kopiëren in de werkbalk)
+1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Copy]** (of selecteer Kopiëren in de werkbalk)
 1. Selecteer **`/apps/an-scf-sandbox/components/playpage`**
-1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Plakken]** (of selecteer Plakken in de werkbalk)
+1. Klik met de rechtermuisknop en selecteer Plakken **[!UICONTROL Paste]** (of selecteer Plakken in de werkbalk)
 1. Dubbelklik op **`headlibs.jsp`** om het te openen
 1. De volgende regel toevoegen aan het einde van het bestand
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
 
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op **[!UICONTROL Save All]**
 
 
 ```xml
@@ -162,30 +165,30 @@ Dit pakket staat in de zelfstudie [Een voorbeeldpagina](create-sample-page.md) m
 Een pakket maken:
 
 
-* Van **[!UICONTROL CRXDE Lite]**, klik het pictogram van het [Pakket](http://localhost:4502/crx/packmgr/)
-* Klik op Pakket **[!UICONTROL maken]**
+* Klik vanuit **[!UICONTROL CRXDE Lite]** het pictogram [Pakket](http://localhost:4502/crx/packmgr/)
+* Klik op **[!UICONTROL Create Package]**
 
    * Pakketnaam: `an-scf-sandbox-minimal-pkg`
    * Versie: `0.1`
    * Groep: &lt;Als standaard verlaten>
-   * Click **[!UICONTROL OK]**
+   * Klik op **[!UICONTROL OK]**
 
-* Click **[!UICONTROL Edit]**
+* Klik op **[!UICONTROL Edit]**
 
-   * Tabblad **[!UICONTROL Filters]** selecteren
+   * Tabblad Selecteren **[!UICONTROL Filters]**
 
-      * Klik op **[!UICONTROL Toevoegen, filter]**
+      * Klik op **[!UICONTROL Add filter]**
       * Hoofdpad: &lt;browse to `/apps/an-scf-sandbox`>
-      * Klik op **[!UICONTROL Gereed]**
-      * Klik op **[!UICONTROL Toevoegen, filter]**
+      * Klik op **[!UICONTROL Done]**
+      * Klik op **[!UICONTROL Add filter]**
       * Hoofdpad: &lt;browse to `/etc/designs/an-scf-sandbox`>
-      * Klik op **[!UICONTROL Gereed]**
-      * Klik op **[!UICONTROL Toevoegen, filter]**
+      * Klik op **[!UICONTROL Done]**
+      * Klik op **[!UICONTROL Add filter]**
       * Hoofdpad: &lt;browse to `/content/an-scf-sandbox`>
-      * Klik op **[!UICONTROL Gereed]**
-   * Click **[!UICONTROL Save]**
+      * Klik op **[!UICONTROL Done]**
+   * Klik op **[!UICONTROL Save]**
 
 
-* Klik op **[!UICONTROL Samenstellen]**
+* Klik op **[!UICONTROL Build]**
 
-Nu kunt u **[!UICONTROL Downloaden]** selecteren om het op schijf op te slaan en Pakket **[!UICONTROL elders te]** uploaden, evenals **[!UICONTROL Meer > Repliceren]** selecteren om de zandbak aan een localhost te duwen publiceert instantie om het domein van uw zandbak uit te breiden.
+Nu kunt u selecteren **[!UICONTROL Download]** om het op schijf en **[!UICONTROL Upload Package]** **[!UICONTROL More > Replicate]** elders op te slaan en de sandbox naar een publicatieinstantie van een lokale host te duwen om het domein van uw sandbox uit te breiden.
