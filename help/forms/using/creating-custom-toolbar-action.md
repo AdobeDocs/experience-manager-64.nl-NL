@@ -1,8 +1,8 @@
 ---
 title: Een aangepaste werkbalkactie maken
 seo-title: Een aangepaste werkbalkactie maken
-description: Formulierontwikkelaars kunnen aangepaste werkbalkhandelingen maken voor adaptieve formulieren in AEM Forms. Het gebruik van aangepaste handelingen door formulierauteurs kan hun eindgebruikers meer workflows en opties bieden.
-seo-description: Formulierontwikkelaars kunnen aangepaste werkbalkhandelingen maken voor adaptieve formulieren in AEM Forms. Het gebruik van aangepaste handelingen door formulierauteurs kan hun eindgebruikers meer workflows en opties bieden.
+description: Formulierontwikkelaars kunnen aangepaste werkbalkacties maken voor adaptieve formulieren in AEM Forms. Het gebruik van aangepaste handelingen door formulierauteurs kan hun eindgebruikers meer workflows en opties bieden.
+seo-description: Formulierontwikkelaars kunnen aangepaste werkbalkacties maken voor adaptieve formulieren in AEM Forms. Het gebruik van aangepaste handelingen door formulierauteurs kan hun eindgebruikers meer workflows en opties bieden.
 uuid: 6761f389-1baa-4a59-a6e0-0f86f70fc692
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '529'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Vereisten {#prerequisite}
 
-Voordat u een aangepaste werkbalkactie maakt, moet u zich vertrouwd maken met Bibliotheken [aan de clientzijde en](/help/sites-developing/clientlibs.md) Ontwikkelen met CRXDE Lite [](/help/sites-developing/developing-with-crxde-lite.md).
+Voordat u een aangepaste werkbalkactie maakt, moet u bekend zijn met Bibliotheken [aan de clientzijde en](/help/sites-developing/clientlibs.md) Ontwikkelen met CRXDE Lite [](/help/sites-developing/developing-with-crxde-lite.md).
 
 ## Wat is een handeling? {#what-is-an-action-br}
 
@@ -26,7 +29,7 @@ Een adaptief formulier biedt een werkbalk waarmee een auteur van een formulier e
 
 ![Standaardwerkbalkhandelingen](assets/default_toolbar_actions.png)
 
-Naast de set met acties die standaard worden geleverd, kunt u aangepaste handelingen op de werkbalk maken. U kunt bijvoorbeeld een actie toevoegen waarmee de gebruiker alle aangepaste formuliervelden kan bekijken voordat een formulier wordt verzonden.
+Naast de set met acties die standaard worden geleverd, kunt u aangepaste handelingen op de werkbalk maken. U kunt bijvoorbeeld een handeling toevoegen waarmee de gebruiker alle aangepaste formuliervelden kan bekijken voordat een formulier wordt verzonden.
 
 ## Stappen om een aangepaste handeling in een aangepaste vorm te maken {#steps}
 
