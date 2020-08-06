@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '382'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Zie ook het npm-pakket: [https://www.npmjs.com/package/@adobe/cq-spa-component-m
 
 ## Modelgestuurde toepassing voor één pagina {#model-driven-single-page-application}
 
-Toepassingen met één pagina die gebruikmaken van de Javascript SPA SDK voor AEM, worden door een model gestuurd:
+Toepassingen van één pagina die gebruikmaken van de Javascript SPA SDK voor AEM zijn modelgestuurd:
 
 1. De front-end componenten registreren zich aan de Opslag van de Toewijzing van de [Component](/help/sites-developing/spa-dynamic-model-to-component-mapping.md#componentmapping-module).
 1. Dan herhaalt de [Container](/help/sites-developing/spa-blueprint.md#container), zodra voorzien van een model door de [ModelLeverancier](/help/sites-developing/spa-blueprint.md#the-model-provider), over zijn modelinhoud ( `:items`).
