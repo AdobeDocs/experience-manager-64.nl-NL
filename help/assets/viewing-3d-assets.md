@@ -1,8 +1,8 @@
 ---
 title: 3D-elementen weergeven
 seo-title: 3D-elementen weergeven
-description: Leer meer over de interactieve 3D-viewer die beschikbaar is op de pagina met elementdetails in AEM en hoe u deze kunt gebruiken om 3D-elementen weer te geven.
-seo-description: Leer meer over de interactieve 3D-viewer die beschikbaar is op de pagina met elementdetails in AEM en hoe u deze kunt gebruiken om 3D-elementen weer te geven.
+description: Meer informatie over de interactieve 3D-viewer die beschikbaar is op de pagina met elementdetails in AEM en over hoe u deze kunt gebruiken om 3D-elementen weer te geven.
+seo-description: Meer informatie over de interactieve 3D-viewer die beschikbaar is op de pagina met elementdetails in AEM en over hoe u deze kunt gebruiken om 3D-elementen weer te geven.
 uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
 source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+workflow-type: tm+mt
+source-wordcount: '1694'
+ht-degree: 0%
 
 ---
 
@@ -50,8 +53,8 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
 
    Zie [Informatie over het uploaden en verwerken van 3D-elementen in AEM](upload-processing-3d-assets.md).
 
-1. Tik in AEM op de **[!UICONTROL navigatiepagina]** op **[!UICONTROL Elementen]**.
-1. Tik in de rechterbovenhoek van de pagina vanuit de vervolgkeuzelijst **[!UICONTROL Weergave]** op **[!UICONTROL Kaartweergave]**.
+1. Tik vanaf AEM op de **[!UICONTROL Navigation]** pagina **[!UICONTROL Assets]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Navigeer naar een 3D-element dat u wilt weergeven.
 1. Tik op de kaart van het 3D-element om dit te openen op de pagina met elementdetails.
 1. Voer een van de volgende handelingen uit:
@@ -71,7 +74,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
       <td><p>In-/uitzoomen</p> <p>or</p> <p>Perp</p> </td> 
       <td><p>Tik of klik om te schakelen tussen de modi Zoomen en Perspectief.</p> <p>U kunt ook de <code>ALT/OPTION</code> toets ingedrukt houden tijdens de handeling om tijdelijk over te schakelen op de modus Perspectief<br /> . Laat de toets los om terug te keren naar de zoommodus.</p> 
       <ul> 
-      <li><strong>Met het gedrag voor in- en uitzoomen</strong>-Dolly wordt de camera dichter bij of verder van het element<br /> dat u bekijkt, geplaatst. Zoomen is het standaardgedrag voor het schuifwiel op een muis (indien beschikbaar 0, voor knijpbewegingen met twee vingers op mobiele apparaten of wanneer u Shift ingedrukt houdt terwijl u omhoog of omlaag sleept met de linkermuisknop.</li> 
+      <li><strong>In- en uitzoomen</strong>op Dolly, waarbij de camera dichter bij of verder van de middelen<br /> die u bekijkt, wordt geplaatst. Zoomen is het standaardgedrag voor het schuifwiel op een muis (indien beschikbaar 0, voor knijpbewegingen met twee vingers op mobiele apparaten of wanneer u Shift ingedrukt houdt terwijl u omhoog of omlaag sleept met de linkermuisknop.</li> 
       <li><strong>Perspectief</strong>- Hiermee wijzigt u de brandpuntsafstand (ook wel gezichtsveld genoemd) van de camera terwijl de relatieve grootte van het element in de weergave behouden blijft. Perspectief is het alternatieve gedrag voor het schuifwiel (indien beschikbaar), voor knijpbewegingen met twee vingers op mobiele apparaten of wanneer u Shift ingedrukt houdt terwijl u omhoog of omlaag sleept met de linkermuisknop.</li> 
       </ul> </td> 
       </tr> 
@@ -85,7 +88,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
       </tr> 
       <tr> 
       <td><p>Onderzoek</p> <p>or</p> <p>Doel</p> </td> 
-      <td><p>Tik of klik om te schakelen tussen de modus Onderzoek en de modus Doel.</p> 
+      <td><p>Tik of klik om te schakelen tussen de modi Onderzoek en Doel.</p> 
       <ul> 
       <li><strong>Onderzoek</strong>-Tik of klik om de wijze van het Doel in te gaan.</li> 
       <li><strong>Doel</strong>-Tik of klik ergens op een punt in het 3D-element om de weergave op dat deel van het element te centreren.<br /> Orbitacties gebruiken het nieuwe doelpunt.</li> 
@@ -98,34 +101,36 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
     </tbody> 
     </table>
 
-   * Tik in de rechterbovenhoek van de pagina met elementdetails op het pictogram **[!UICONTROL Werkgebiedkiezer]** . Selecteer een werkgebiednaam met de achtergrond en de belichting die u op het 3D-element wilt toepassen.
+   * Tik in de rechterbovenhoek van de pagina met elementdetails op het **[!UICONTROL Stage Selector]** pictogram. Selecteer een werkgebiednaam met de achtergrond en de belichting die u op het 3D-element wilt toepassen.
+
    ![chlimage_1-140](assets/chlimage_1-140.png)
 
    De stadia verstrekken milieu-achtergrond, grondvliegtuig, en verlichting-binnen waarin het 3D model wordt bekeken.
 
    Zie [Informatie over het gebruik van fasen in AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
-   * Tik in de rechterbovenhoek van de pagina met elementdetails op het pictogram **[!UICONTROL Camera selecteren]** en selecteer een cameraweergave die u op het 3D-element wilt toepassen.
+   * Tik in de rechterbovenhoek van de pagina met elementdetails op het **[!UICONTROL Camera Selector]** pictogram en selecteer een cameraweergave die u op het 3D-element wilt toepassen.
+
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
    De stadia verstrekken vaak vooraf bepaalde camera&#39;s. U kunt de huidige camera opnieuw selecteren om de vooraf gedefinieerde instellingen te herstellen.
 
    Zie [Informatie over het gebruik van fasen in AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Opslaan]**.
+1. In the upper-right corner of the page, tap **[!UICONTROL Save]**.
 1. Voer een van de volgende handelingen uit:
 
    * Het 3D-element renderen.
 
       Zie 3D- [elementen](rendering-3d-assets.md)renderen.
 
-   * Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Sluiten]** om terug te keren naar de pagina Middelen.
+   * Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Close]** om terug te keren naar de middelenpagina.
 
 ## 3D-elementen weergeven in de 3D-component Sites {#viewing-d-assets-in-the-sites-d-component}
 
 >[!NOTE]
 >
->Deze sectie is alleen van toepassing op de klassieke webGL-viewer die wordt gebruikt voor andere 3D-middelen dan Adobe Dimension.
+>Deze sectie is alleen van toepassing op de klassieke webGL-viewer die wordt gebruikt voor andere 3D-elementtypen dan Adobe Dimension.
 
 Afhankelijk van het type apparaat hebt u op verschillende manieren toegang tot de functies van de 3D-component.
 
@@ -147,11 +152,11 @@ Werken met 3D-componenten met apparaten met touchscreen:
 
 1. Gebruik een knijpbeweging met twee vingers om de camera dichter bij of verder van het object te plaatsen. Deze actie is vergelijkbaar met in- en uitzoomen en u kunt details van het object controleren. U kunt ook de toetsen + of - ingedrukt houden om de camera dichter bij of verder weg van het object te verplaatsen.
 
-1. Gebruik een slepen met twee vingers om de camera te pannen. Met deze actie verplaatst u de camera zijwaarts, zodat u verschillende delen van het object kunt bekijken terwijl u hebt ingezoomd. U kunt ook op de knop **[!UICONTROL Draaien/pannen in-/uitschakelen]** tikken om te schakelen naar de panmodus en vervolgens met één vinger de camera pannen. Tik op de knop **[!UICONTROL Draaien/pannen in-/uitschakelen]** om terug te keren naar de modus **[!UICONTROL Draaien]** .
+1. Gebruik een slepen met twee vingers om de camera te pannen. Met deze actie verplaatst u de camera zijwaarts, zodat u verschillende delen van het object kunt bekijken terwijl u hebt ingezoomd. U kunt ook op de **[!UICONTROL Orbit/Pan Toggle]** knop tikken om te schakelen naar de panmodus en vervolgens met één vinger de camera pannen. Tik op de **[!UICONTROL Orbit/Pan Toggle]** knop om terug te keren naar de **[!UICONTROL Orbit]** modus.
 
-1. Tik op Viewer **** opnieuw instellen om de camera opnieuw in te stellen. Met deze handeling wordt het object weer volledig weergegeven en wordt automatisch centrifugeren hervat als dit is ingeschakeld.
+1. Tik **[!UICONTROL Reset Viewer]** om de camera opnieuw in te stellen. Met deze handeling wordt het object weer volledig weergegeven en wordt automatisch centrifugeren hervat als dit is ingeschakeld.
 
-1. Tik op **[!UICONTROL Volledig scherm]** om de modus Volledig scherm te activeren (indien ondersteund door het apparaat). Tik nogmaals op **[!UICONTROL Volledig scherm]** om de 3D-viewer te herstellen in de modus voor het insluiten van pagina&#39;s.
+1. Tik **[!UICONTROL Full Screen]** om de modus Volledig scherm te activeren (indien ondersteund door het apparaat). Tik **[!UICONTROL Full Screen]** nogmaals om de 3D-viewer te herstellen in de modus Ingesloten pagina.
 
 ### Touchpad-apparaten {#touchpad-devices}
 
@@ -159,13 +164,13 @@ Werken met 3D-componenten met touchpad-apparaten:
 
 1. Gebruik een sleep met één vinger terwijl u de knop (links) van het aanraakvlak ingedrukt houdt om het gezichtspunt (&quot;camera&quot;) rondom het object te verplaatsen (&quot;baan&quot;). U kunt het object vanuit elke gewenste richting bekijken.
 
-1. Gebruik een slepen met twee vingers omlaag of omhoog met touchpad-knoppen omhoog om de camera dichter bij of verder weg van het object te plaatsen. Deze handeling is vergelijkbaar met in- of uitzoomen en het is mogelijk details op het object te inspecteren. U kunt ook op de knoppen **[!UICONTROL Inzoomen]** of **[!UICONTROL Uitzoomen]** klikken en deze ingedrukt houden om de camera dichter bij of verder van het object te plaatsen.
+1. Gebruik een slepen met twee vingers omlaag of omhoog met touchpad-knoppen omhoog om de camera dichter bij of verder weg van het object te plaatsen. Deze handeling is vergelijkbaar met in- of uitzoomen en het is mogelijk details op het object te inspecteren. U kunt ook op de camera klikken en deze ingedrukt houden **[!UICONTROL Zoom In]** **[!UICONTROL Zoom Out]** of de knoppen ingedrukt houden om de camera dichter bij of verder weg van het object te verplaatsen.
 
-1. Gebruik een sleep met één vinger terwijl u de toets **ALT/option** en de knop (links) van het aanraakvlak ingedrukt houdt om de camera te pannen. Met deze actie verplaatst u de camera zijwaarts, zodat u verschillende delen van het object kunt bekijken terwijl u hebt ingezoomd. U kunt ook op de knop **[!UICONTROL Draaien/pannen in-/uitschakelen]** klikken om te schakelen naar de modus **[!UICONTROL Pannen]** . Vervolgens sleept u met één vinger terwijl u de knop (links) ingedrukt houdt om de camera te pannen. Klik nogmaals op de knop **[!UICONTROL Draaien/pannen in-/uitschakelen]** om terug te keren naar de modus **[!UICONTROL Draaien]** .
+1. Gebruik een sleep met één vinger terwijl u de toets **ALT/option** en de knop (links) van het aanraakvlak ingedrukt houdt om de camera te pannen. Met deze actie verplaatst u de camera zijwaarts, zodat u verschillende delen van het object kunt bekijken terwijl u hebt ingezoomd. U kunt ook op de **[!UICONTROL Orbit/Pan Toggle]** knop klikken om naar de **[!UICONTROL Pan]** modus te schakelen. Vervolgens sleept u met één vinger terwijl u de knop (links) ingedrukt houdt om de camera te pannen. Klik nogmaals op de **[!UICONTROL Orbit/Pan Toggle]** knop om terug te keren naar de **[!UICONTROL Orbit]** modus.
 
-1. Klik op Viewer **** herstellen om de camera opnieuw in te stellen. Met deze handeling wordt het object weer volledig weergegeven en wordt automatisch centrifugeren hervat als dit is ingeschakeld.
+1. Klik **[!UICONTROL Reset Viewer]** om de camera opnieuw in te stellen. Met deze handeling wordt het object weer volledig weergegeven en wordt automatisch centrifugeren hervat als dit is ingeschakeld.
 
-1. Klik op **[!UICONTROL Volledig scherm]** om de modus Volledig scherm te activeren. Gebruik de **Escape** -toets op het toetsenbord of klik nogmaals op **[!UICONTROL Volledig scherm]** om de 3D-viewer te herstellen in de modus voor insluiten van pagina&#39;s.
+1. Klik **[!UICONTROL Full Screen]** om de modus Volledig scherm te activeren. Gebruik de **Escape** -toets op het toetsenbord of klik **[!UICONTROL Full Screen]** opnieuw om de 3D-viewer te herstellen naar de modus voor insluiten van pagina&#39;s.
 
 ### Muis- en trackbaltoestellen {#mouse-and-trackball-devices}
 
@@ -173,9 +178,9 @@ Werken met 3D-onderdelen met muis- en trackball-apparaten:
 
 1. Sleep terwijl u de linkermuisknop ingedrukt houdt om het gezichtspunt (&quot;camera&quot;) rond het object te verplaatsen (&quot;baan&quot;). U kunt het object vanuit elke gewenste richting bekijken.
 
-1. Gebruik het schuifwiel om de camera dichter bij of verder van het object te plaatsen. Dit lijkt op in- of uitzoomen en u kunt details van het object controleren. U kunt ook op de knoppen **[!UICONTROL Inzoomen]** of **[!UICONTROL Uitzoomen]** klikken en deze ingedrukt houden om de camera dichter bij of verder van het object te plaatsen.
+1. Gebruik het schuifwiel om de camera dichter bij of verder van het object te plaatsen. Dit lijkt op in- of uitzoomen en u kunt details van het object controleren. U kunt ook op de camera klikken en deze ingedrukt houden **[!UICONTROL Zoom In]** **[!UICONTROL Zoom Out]** of de knoppen ingedrukt houden om de camera dichter bij of verder weg van het object te verplaatsen.
 
-1. Sleep terwijl u de toets **ALT/option** ingedrukt houdt en de linkermuisknop om de camera te pannen. Hierdoor wordt de camera zijwaarts verplaatst, zodat u tijdens het inzoomen naar verschillende delen van het object kunt kijken. U kunt ook op de knop **[!UICONTROL Draaien/pannen in-/uitschakelen]** klikken om over te schakelen naar de modus **[!UICONTROL Pannen]** en vervolgens slepen terwijl u de linkermuisknop ingedrukt houdt om de camera te pannen. Klik nogmaals op **[!UICONTROL Draaien/pannen in-/uitschakelen]** om terug te keren naar de modus **[!UICONTROL Draaien]** .
-1. Klik op Viewer **** herstellen om de camera opnieuw in te stellen. Met deze handeling wordt het object weer volledig weergegeven en wordt automatisch centrifugeren hervat als dit is ingeschakeld.
-1. Klik op **[!UICONTROL Volledig scherm]** om de modus Volledig scherm te activeren. Gebruik de **[!UICONTROL Escape]** -toets op het toetsenbord of klik nogmaals op **[!UICONTROL Volledig scherm]** om de 3D-viewer te herstellen in de modus voor insluiten van pagina&#39;s.
+1. Sleep terwijl u de toets **ALT/option** ingedrukt houdt en de linkermuisknop om de camera te pannen. Hierdoor wordt de camera zijwaarts verplaatst, zodat u tijdens het inzoomen naar verschillende delen van het object kunt kijken. U kunt ook op de **[!UICONTROL Orbit/Pan Toggle]** knop klikken om naar de **[!UICONTROL Pan]** modus te schakelen en vervolgens slepen terwijl u de linkermuisknop ingedrukt houdt om de camera te pannen. Klik nogmaals op de knop **[!UICONTROL Orbit/Pan Toggle]** om terug te keren naar de **[!UICONTROL Orbit]** modus.
+1. Klik **[!UICONTROL Reset Viewer]** om de camera opnieuw in te stellen. Met deze handeling wordt het object weer volledig weergegeven en wordt automatisch centrifugeren hervat als dit is ingeschakeld.
+1. Klik **[!UICONTROL Full Screen]** om de modus Volledig scherm te activeren. Gebruik de **[!UICONTROL Escape]** toets op het toetsenbord of klik **[!UICONTROL Full Screen]** opnieuw om de 3D-viewer te herstellen in de modus Ingesloten pagina.
 
