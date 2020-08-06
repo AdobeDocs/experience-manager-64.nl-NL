@@ -1,8 +1,8 @@
 ---
 title: Gebruikers en gebruikersgroepen beheren
 seo-title: Gebruikers en gebruikersgroepen beheren
-description: Gebruikers van AEM-gemeenschappen kunnen zichzelf registreren en hun profielen bewerken
-seo-description: Gebruikers van AEM-gemeenschappen kunnen zichzelf registreren en hun profielen bewerken
+description: Gebruikers van AEM Communities kunnen zichzelf registreren en hun profielen bewerken
+seo-description: Gebruikers van AEM Communities kunnen zichzelf registreren en hun profielen bewerken
 uuid: aeba424e-ea7e-4da5-b94f-ea8af4caa7d2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 774c2553-b629-456b-afa7-5713490f4a0a
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '2168'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
 
 ## Overzicht {#overview}
 
-In AEM-gemeenschappen kunnen gebruikers zichzelf in de publicatieomgeving registreren en hun profielen bewerken. Op basis van de juiste machtigingen kunnen zij ook
+In AEM Communities kunnen gebruikers zichzelf registreren en hun profielen bewerken in de publicatieomgeving. Op basis van de juiste machtigingen kunnen zij ook
 
 * Subgemeenschappen maken op de site van de community (zie [groepen](creating-groups.md)van gemeenschappen)
 * [Door de gebruiker gegenereerde inhoud (UGC) is matig](moderation.md) .
@@ -34,7 +37,7 @@ Door ontwerp, leden en lidgroepen die in het publicatiemilieu worden gecreeerd z
 
 Wanneer gebruikers op auteur en leden die publiceren uit dezelfde lijst met gebruikers komen, zoals die vanuit dezelfde LDAP-directory zijn gesynchroniseerd, worden ze niet beschouwd als dezelfde gebruiker met dezelfde machtigingen en groepslidmaatschap in zowel de auteur- als de publicatieomgeving. De rol(en) van leden en gebruikers moet(en) afzonderlijk worden vastgesteld bij publicatie en auteur, al naargelang het geval.
 
-Voor een [publicatielandbouwbedrijf](topologies.md), moeten de registratie en de wijzigingen die op één publicatiegeval worden aangebracht met andere publicatieinstanties worden gesynchroniseerd om hen toegang tot de zelfde gebruikersgegevens te hebben. [Zie ](sync.md)Gebruikerssynchronisatie[, die een sectie bevat waarin wordt beschreven ](sync.md#what-happens-when)wat er gebeurt als... .
+Voor een [publicatielandbouwbedrijf](topologies.md), moeten de registratie en de wijzigingen die op één publicatiegeval worden aangebracht met andere publicatieinstanties worden gesynchroniseerd om hen toegang tot de zelfde gebruikersgegevens te hebben. Zie [Gebruikerssynchronisatie](sync.md), die een sectie bevat waarin wordt beschreven [wat er gebeurt als...](sync.md#what-happens-when).
 
 ### Bijdragelimieten {#contribution-limits}
 
@@ -72,14 +75,14 @@ Om gebruikers en gebruikersgroepen te beheren die in het auteursmilieu worden ge
 |---|---|
 | beheerders | De groep van beheerders bestaat uit systeembeheerders die alle capaciteiten van een communautaire Beheerder evenals de capaciteit hebben om de groep van Communautaire Beheerders te beheren. |
 | Communautaire administrateurs | De communautaire groep van Beheerders wordt automatisch een lid van alle communautaire plaatsen en om het even welke communautaire groepen die op de plaats worden gecreeerd. Een aanvankelijk lid van de groep van Communautaire Beheerders is de beheerdersgroep. In de auteursomgeving, kunnen de Communautaire Beheerders communautaire plaatsen tot stand brengen, plaatsen beheren, leden beheren (zij kunnen leden van de gemeenschap verbieden), en gematigde inhoud. |
-| Community &lt;naam *site*> Sitecontentmanager | Met Community Site Content Manager kunt u traditionele AEM-ontwerpen, inhoud maken en pagina&#39;s voor een community-site wijzigen. |
+| Community &lt;naam *site*> Sitecontentmanager | Met Community Site Content Manager kunt u traditionele AEM ontwerpen, inhoud maken en pagina&#39;s voor een communitysite wijzigen. |
 | Community Enablement Managers | De groep van de Managers van Enablement van de Gemeenschap bestaat uit gebruikers die voor taak beschikbaar zijn om de groep van de Managers van Enablement van een communautaire plaats te beheren. |
 | Community &lt;naam *site* > Siteenablementmanagers | De groep van de Managers van Enablement van de Plaats van de Gemeenschap bestaat uit gebruikers die zijn toegewezen om de [middelen](resources.md)van de plaatsing van een communautaire plaats te beheren. |
 | Geen | Een anonieme sitebezoeker heeft mogelijk geen toegang tot de auteursomgeving. |
 
 ### Systeembeheerders {#system-administrators}
 
-De leden van de beheerdersgroep zijn systeembeheerders die de aanvankelijke opstelling van een installatie AEM voor zowel de auteur als publicatiemilieu&#39;s kunnen uitvoeren.
+De leden van de beheerdersgroep zijn systeembeheerders die de aanvankelijke opstelling van een AEM installatie voor zowel de auteur als publicatiemilieu&#39;s kunnen uitvoeren.
 
 Voor demonstratie- en ontwikkelingsdoeleinden heeft de beheerdersgroep een lid waarvan de gebruikers-id *admin* is en het wachtwoord *admin*.
 
@@ -203,21 +206,21 @@ Op een instantie van de auteur:
 1. Aangemeld met beheerdersrechten, surf naar de klassieke UI-beveiligingsconsole.
 Bijvoorbeeld: [http://localhost:4502/useradmin](http://localhost:4502/useradmin)
 
-2. Selecteer in het menu Bewerken de optie **[!UICONTROL Gebruiker]** maken.
+2. From the Edit menu, select **[!UICONTROL Create User]**.
 3. Vul het `Create User` dialoogvenster in.
    * Pad moet `/home/users/community`
-4. Selecteer **[!UICONTROL Maken]**
+4. Selecteer **[!UICONTROL Create]**
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
 
 * Zoek in het linkerdeelvenster naar de nieuwe gebruiker en selecteer deze in het rechterdeelvenster.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
 In het linkervenster:
 
-1. Het zoekvak wissen en Gebruikers **[!UICONTROL verbergen selecteren]**
-2. Zoek en sleep `community-enablementmanagers` naar het tabblad **[!UICONTROL Groepen]** van de nieuwe gebruiker die in het rechterdeelvenster wordt weergegeven
+1. Het zoekvak wissen en **[!UICONTROL Hide Users]**
+2. Zoek en sleep `community-enablementmanagers` naar het **[!UICONTROL Groups]** tabblad van de nieuwe gebruiker in het rechterdeelvenster
 
 ![chlimage_1-132](assets/chlimage_1-132.png)
 
@@ -233,7 +236,7 @@ AEM ondersteunt het gebruik van LDAP voor verificatie van gebruikers en het make
 
 Hier volgt een aantal configuratiedetails die specifiek zijn voor leden van de gemeenschap en lidgroepen.
 
-1. LDAP configureren voor elke publicatie-instantie van AEM
+1. LDAP configureren voor elke AEM publicatie-instantie
 2. [De LDAP-identiteitsprovider](../../help/sites-administering/ldap-config.md#configuring-the-ldap-identity-provider)
 
    * Geen speciale instructies
@@ -242,9 +245,9 @@ Hier volgt een aantal configuratiedetails die specifiek zijn voor leden van de g
 
    * Stel de volgende eigenschappen in:
 
-      * **[!UICONTROL Automatische gebruikerslidmaatschap]**: `community-<site name>-<uid>-members`
-      * **[!UICONTROL Voorvoegsel]** gebruikerspad: `/community`
-      * **[!UICONTROL Voorvoegsel]** van pad voor groep: `/community`
+      * **[!UICONTROL User auto membership]**: `community-<site name>-<uid>-members`
+      * **[!UICONTROL User Path Prefix]**: `/community`
+      * **[!UICONTROL Group Path Prefix]**: `/community`
 
 4. [De externe aanmeldingsmodule](../../help/sites-administering/ldap-config.md#the-external-login-module)
 
@@ -252,9 +255,9 @@ Hier volgt een aantal configuratiedetails die specifiek zijn voor leden van de g
 
 Dit leidt ertoe dat gebruikers automatisch worden toegewezen aan de groep leden van de site van de community en dat de locatie van de opslagplaats wordt `/home/users/community` en `/home/groups/community`, zodat ze de juiste machtigingen overnemen om elkaars profiel te zien.
 
-* De `User auto membership` waarde moet de `rep:authorizableId` eigenschap zijn en niet de `givenName` (weergavenaam) uit het profiel.
+* De `User auto membership` waarde moet de `rep:authorizableId` eigenschap zijn en niet de `givenName` (weergavenaam) van het profiel.
 
-## Gebruikers synchroniseren tussen AEM-instanties {#synchronizing-users-among-aem-instances}
+## Gebruikers synchroniseren tussen AEM instanties {#synchronizing-users-among-aem-instances}
 
 Wanneer het gebruiken van [publiceer landbouwbedrijf](topologies.md), zorg ervoor de gebruikers de zelfde weg op elke publicatieinstantie hebben door de gebruikers eerst aan één instantie in te voeren en [toelatend gebruikerssynchronisatie](sync.md) aan Sling te verdelen de gebruikers aan andere publicatieinstanties.
 
