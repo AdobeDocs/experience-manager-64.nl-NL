@@ -10,6 +10,9 @@ topic-tags: develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 translation-type: tm+mt
 source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+workflow-type: tm+mt
+source-wordcount: '1257'
+ht-degree: 1%
 
 ---
 
@@ -93,12 +96,12 @@ Voordat u dit artikel kunt gebruiken voor het maken van testcase, moet u het vol
 
 In het volgende voorbeeld wordt het maken van een testsuite voor het testen van meerdere adaptieve formulieren besproken. U moet een afzonderlijk testcase maken voor elk formulier dat u moet testen. Als u in stap 11 vergelijkbare stappen uitvoert en de JavaScript-code wijzigt, kunt u uw eigen testsuite maken om uw aangepaste formulieren te testen.
 
-1. Ga naar CRXDE Lite in uw Webbrowser: `https://[server]:[port]/crx/de`.
-1. Klik met de rechtermuisknop op de submap /etc/clientlibs en klik op **[!UICONTROL Maken > Knooppunt]** maken. Voer een naam in (hier afTestRegistration), geef het type knooppunt op als cq:ClientLibraryFolder en klik op **[!UICONTROL OK]**.
+1. Ga naar CRXDE Lite in uw webbrowser: `https://[server]:[port]/crx/de`.
+1. Klik met de rechtermuisknop op de submap /etc/clientlibs en klik op **[!UICONTROL Create > Create Node]**. Voer een naam in (hier afTestRegistration), geef het type knooppunt op als cq:ClientLibraryFolder en klik **[!UICONTROL OK]**.
 
    De clientlibs-map bevat het registratieaspect van uw toepassing (JS en Init). U wordt aangeraden alle Hobbes-testreekobjecten te registreren die specifiek zijn voor een formulier in de clientlibs-map.
 
-1. Geef de volgende eigenschapswaarden op in het nieuwe knooppunt (hier afTestRegistration) en klik op Alles **** opslaan. Met deze eigenschappen herkent Hobbes de map als een test. Om deze cliëntbibliotheek als gebiedsdeel in andere cliëntbibliotheken opnieuw te gebruiken, noem het als granite.testing.calvin.tests.
+1. Geef de volgende eigenschapswaarden op in het nieuwe knooppunt (hier afTestRegistration) en klik op **[!UICONTROL Save All]**. Met deze eigenschappen herkent Hobbes de map als een test. Om deze cliëntbibliotheek als gebiedsdeel in andere cliëntbibliotheken opnieuw te gebruiken, noem het als granite.testing.calvin.tests.
 
 <table> 
  <tbody> 
@@ -126,7 +129,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
 ![1_aftestregistratie](assets/1_aftestregistration.png)
 
-1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik vervolgens op **[!UICONTROL Maken > Bestand]** maken. Geef het bestand de naam js.txt en klik op **[!UICONTROL OK]**.
+1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik vervolgens **[!UICONTROL Create > Create File]**. Geef het bestand de naam js.txt en klik op **[!UICONTROL OK]**.
 1. Voeg de volgende tekst toe aan het bestand js.txt:
 
    ```
@@ -134,9 +137,9 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
    js.txt
    ```
 
-1. Klik op Alles **** opslaan en sluit het bestand js.txt.
-1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik op **[!UICONTROL Maken > Bestand]** maken. Geef het bestand een naam in it.js en klik op **[!UICONTROL OK]**.
-1. Kopieer de volgende code naar het bestand init.js en klik op Alles **** opslaan:
+1. Klik **[!UICONTROL Save All]** en sluit dan het js.txt- dossier.
+1. Klik met de rechtermuisknop op het testknooppunt (hier **afTestRegistration)** en klik **[!UICONTROL Create > Create File]**. Geef het bestand een naam in it.js en klik op **[!UICONTROL OK]**.
+1. Kopieer de volgende code naar het bestand init.js en klik op **[!UICONTROL Save All]**:
 
    ```
    (function(window, hobs) {
@@ -154,7 +157,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
    De bovenstaande code maakt een testsuite met de naam **Adaptief formulier - Demo Test**. Als u een testsuite met een andere naam wilt maken, wijzigt u de naam.
 
-1. Klik op **[!UICONTROL Maken]** > **Knooppunt** maken om een knooppunt onder de clientlib-map te maken voor elk formulier dat u wilt testen. In dit voorbeeld wordt een knooppunt met de naam **testForm** gebruikt om een adaptief formulier met de naam **testForm** te testen. `.`Geef de volgende eigenschappen op en klik op **[!UICONTROL OK]**:
+1. Klik op **[!UICONTROL Create]** > **Knooppunt** maken om een knooppunt onder de clientlib-map te maken voor elk formulier dat u wilt testen. In dit voorbeeld wordt een knooppunt met de naam **testForm** gebruikt om een adaptief formulier met de naam **testForm** te testen. `.`Geef de volgende eigenschappen op en klik **[!UICONTROL OK]**:
 
    * Naam: testForm (uw formuliernaam)
    * Type: cq:ClientLibraryFolder
@@ -164,7 +167,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
    | **Eigenschap** | **Type** | **Waarde** |
    |---|---|---|
    | categorieën | Tekenreeks[] | granite.testing.hobbes.tests, granite.testing.hobbes.tests.testForm |
-   | afhankelijkheden | Tekenreeks[] | graniet.testing.calvin.tests |
+   | afhankelijkheden | Tekenreeks[] | granite.testing.calvin.tests |
 
    >[!NOTE]
    >
@@ -172,7 +175,7 @@ In het volgende voorbeeld wordt het maken van een testsuite voor het testen van 
 
    ![2_testformeigenschappen](assets/2_testformproperties.png)
 
-1. Klik met de rechtermuisknop op de map die u voor het testformulier hebt gemaakt (hier testForm) en selecteer **[!UICONTROL Maken > Bestand]** maken. Geef het bestand een naam met de scriptingTest.js, voeg de volgende code toe aan het bestand en klik op Alles **[!UICONTROL opslaan.]**
+1. Klik met de rechtermuisknop op de map die u voor het testformulier hebt gemaakt (hier testForm) en selecteer **[!UICONTROL Create > Create File]**. Geef het bestand scriptingTest.js een naam en voeg de volgende code toe aan het bestand en klik op **[!UICONTROL Save All.]**
 
    Als u de volgende code wilt gebruiken om een ander adaptief formulier te testen, wijzigt u het pad en de naam van het formulier in **navigateTo** (lijnen 11, 36 en 62) en de respectieve testgevallen. Zie API&#39;s van [Calvin voor meer informatie over API&#39;s voor het testen van verschillende aspecten van formulieren en formulierobjecten](https://helpx.adobe.com/aem-forms/6-3/calvin-sdk-javascript-api/calvin.html).
 
@@ -282,7 +285,7 @@ Testsets kunnen afzonderlijk worden uitgevoerd. Wanneer u een testsuite uitvoert
 
 Een vinkje geeft aan dat een test is geslaagd: ![vinkje](assets/checkmark.png)
 
-Een X-pictogram geeft aan dat een test is mislukt: ![kruis](assets/cross.png)
+Een X-pictogram geeft aan dat een test is mislukt: ![kruisen](assets/cross.png)
 
 Een testsuite uitvoeren:
 
@@ -302,7 +305,7 @@ Een testsuite uitvoeren:
 
    ![4_reviewresults](assets/4_reviewresults.png)
 
-De stappen voor het testen van uw AEM-adaptieve formulieren zijn vergelijkbaar met die voor het testen van uw AEM-interface. Raadpleeg de volgende onderwerpen in [Uw gebruikersinterface](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html)testen voor meer informatie over het testen van uw aangepaste formulieren:
+De stappen voor het testen van uw AEM adaptieve formulieren zijn vergelijkbaar met die voor het testen van de gebruikersinterface van uw AEM. Raadpleeg de volgende onderwerpen in [Uw gebruikersinterface](https://helpx.adobe.com//experience-manager/6-3/sites-developing/hobbes.html)testen voor meer informatie over het testen van uw aangepaste formulieren:
 
 * Testuiteinden weergeven
 * Meerdere tests uitvoeren
