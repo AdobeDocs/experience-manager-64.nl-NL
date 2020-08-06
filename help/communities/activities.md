@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ccaebb4c-cc1c-4ee7-b080-99667f348427
 translation-type: tm+mt
 source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+workflow-type: tm+mt
+source-wordcount: '448'
+ht-degree: 0%
 
 ---
 
@@ -48,15 +51,20 @@ Selecteer de geplaatste `Activity Streams` component die u wilt openen en select
 
 ![chlimage_1-196](assets/chlimage_1-196.png)
 
-Geef op onder het tabblad **[!UICONTROL Gebruikersactiviteiten]** op welke activiteiten u wilt weergeven:
+Geef onder het **[!UICONTROL User Activities]** tabblad op welke activiteiten u wilt weergeven:
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
 
-* **[!UICONTROL Max. aantal activiteiten]** Het aantal weer te geven activiteiten
-* **[!UICONTROL Het Pad]** van het Middel van de stroom laat leeg aan gebrek aan de communautaire plaats of de communautaire groep. Het pad naar de streambron identificeert de bron van activiteiten. De standaardwaarde is leeg.
-* **[!UICONTROL De Mening]** van de Activiteiten van de Gebruiker van de vertoning indien gecontroleerd, zal de activiteitenpagina een lusje omvatten dat activiteiten filtert die op die binnen de gemeenschap door het huidige lid worden geproduceerd. Standaard is ingeschakeld.
-* **[!UICONTROL Alle activiteiten weergeven]** Als deze optie is ingeschakeld, bevat de pagina Activiteiten een tabblad dat alle activiteiten bevat die zijn gegenereerd binnen de gemeenschap waartoe het huidige lid toegang heeft. Standaard is ingeschakeld.
-* **[!UICONTROL Weergeven na weergave]** Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
+* **[!UICONTROL Max number of activities]**
+Aantal weer te geven activiteiten
+* **[!UICONTROL Stream Resource Path]**
+Blanco laten om standaard in te stellen op de communitysite of -groep. Het pad naar de streambron identificeert de bron van activiteiten. De standaardwaarde is leeg.
+* **[!UICONTROL Display User Activities View]**
+indien deze optie is ingeschakeld , zal op de activiteitenpagina een tabblad staan waarop de activiteiten worden gefilterd op basis van de activiteiten die binnen de gemeenschap door het huidige lid worden gegenereerd . Standaard is ingeschakeld.
+* **[!UICONTROL Display All Activities View]**
+Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad dat alle activiteiten bevat die zijn gegenereerd binnen de gemeenschap waartoe het huidige lid toegang heeft. Standaard is ingeschakeld.
+* **[!UICONTROL Display Following View]**
+Als deze optie is ingeschakeld, bevat de pagina met activiteiten een tabblad waarop de activiteiten worden gefilterd op basis van de activiteiten die het huidige lid volgt. Standaard is ingeschakeld.
 
 ## Volgende weergave {#following-view}
 
