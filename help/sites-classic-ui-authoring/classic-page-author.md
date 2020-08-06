@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 3fe5b6cc-1494-43e1-add7-2f7828b676ad
 translation-type: tm+mt
 source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+workflow-type: tm+mt
+source-wordcount: '331'
+ht-degree: 0%
 
 ---
 
@@ -41,5 +44,5 @@ Om u te helpen bij het ontwerpen van pagina&#39;s, biedt de auteursomgeving func
 
 * **Met het contextmenu** Klikken met de rechtermuisknop op de meeste elementen op het scherm (bijvoorbeeld alinea&#39;s op de pagina) wordt een contextmenu met de juiste actieopties weergegeven.
 
-* **Zoeken zoals u typt** In bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die naar inhoud zoeken via de AEM-interface, worden dynamische overeenkomsten getoond terwijl u de query typt.
+* **Zoeken zoals u typt** In bepaalde scenario&#39;s (bijvoorbeeld padselectie in bewerkingsdialoogvensters) die naar inhoud zoeken via de AEM interface, worden dynamische overeenkomsten getoond terwijl u de query typt.
 
