@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: eedff940-4a46-4c24-894e-a5aa1080d23d
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1161'
+ht-degree: 0%
 
 ---
 
@@ -31,22 +34,22 @@ Het bestand is van toepassing op alle vertaalprojecten.
 
 >[!NOTE]
 >
->Na een upgrade naar 6.4 wordt aangeraden het bestand van /etc. te verplaatsen. Zie [Gemeenschappelijke herstructurering van de opslagplaats in AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) voor meer informatie.
+>Na een upgrade naar 6.4 wordt aangeraden het bestand van /etc. te verplaatsen. Zie [Gemeenschappelijke herstructurering van de gegevensbank in AEM 6.4](/help/sites-deploying/all-repository-restructuring-in-aem-6-4.md#translation-rules) voor meer informatie.
 
 De regels omvatten de volgende informatie:
 
 * Het pad van het knooppunt waarop de regel van toepassing is. De regel is ook op de nakomelingen van de knoop van toepassing.
 * De namen van de knoopeigenschappen die de te vertalen inhoud bevatten. Het bezit kan voor een specifiek middeltype of voor alle middeltypes specifiek zijn.
 
-U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle componenten van de AEM-stichtingstekst op uw pagina&#39;s toevoegen. De regel kan de `/content` knoop en het `text` bezit voor de `foundation/components/text` component identificeren.
+U kunt bijvoorbeeld een regel maken die de inhoud vertaalt die auteurs aan alle AEM basistekstcomponenten op uw pagina&#39;s toevoegen. De regel kan de `/content` knoop en het `text` bezit voor de `foundation/components/text` component identificeren.
 
 Er is een [console](#translation-rules-ui) die voor het vormen vertaalregels is toegevoegd. De definities in UI zullen het dossier voor u bevolken.
 
- Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md)voor een overzicht van de functies voor het vertalen van inhoud in AEM.
+Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md)voor een overzicht van de functies voor het vertalen van inhoud in AEM.
 
 >[!NOTE]
 >
->AEM steunt één-op-één afbeelding tussen middeltypes en verwijzingsattributen voor vertaling van referenced inhoud op een pagina.
+>AEM ondersteunt een-op-een-toewijzing tussen typen bronnen en verwijzingskenmerken voor het vertalen van inhoud waarnaar wordt verwezen op een pagina.
 
 ## De Syntaxis van de regel voor Pagina&#39;s, Componenten, en Activa {#rule-syntax-for-pages-components-and-assets}
 
@@ -95,7 +98,7 @@ In het volgende voorbeeld wordt de inhoud van alle `text` eigenschappen vertaald
 </node>
 ```
 
-## Regelsyntaxis voor het uitnemen van elementen van pagina&#39;s {#rule-syntax-for-extracting-assets-from-pages}
+## Regelsyntaxis voor het uitnemen van elementen van pagina&#39;s  {#rule-syntax-for-extracting-assets-from-pages}
 
 Gebruik de volgende regelsyntaxis om elementen op te nemen die zijn ingesloten in of waarnaar wordt verwezen vanuit componenten:
 
@@ -116,7 +119,7 @@ In het volgende voorbeeld worden afbeeldingen geëxtraheerd uit de basiscomponen
 
 ## Regels overschrijven {#overriding-rules}
 
-Het bestand translate_rules.xml bestaat uit een `nodelist` element met verschillende onderliggende `node` elementen. AEM leest de nodenlijst van boven naar onder. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text` eigenschappen wordt vertaald, behalve de `/content/mysite/en` vertakking van pagina&#39;s:
+Het bestand translate_rules.xml bestaat uit een `nodelist` element met verschillende onderliggende `node` elementen. AEM leest de nodenlijst van boven naar beneden. Wanneer de veelvoudige regels de zelfde knoop richten, wordt de regel die lager in het dossier is gebruikt. De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text` eigenschappen wordt vertaald, behalve de `/content/mysite/en` vertakking van pagina&#39;s:
 
 ```xml
 <nodelist>
@@ -150,7 +153,7 @@ De volgende regels zorgen er bijvoorbeeld voor dat alle inhoud in `text` eigensc
 
 Een console is ook beschikbaar voor het vormen van vertaalregels.
 
-Toegang tot dit bestand:
+U kunt als volgt toegang krijgen tot dit bestand:
 
 1. Navigeer naar **Gereedschappen** en vervolgens naar **Algemeen**.
 
@@ -213,9 +216,9 @@ Het resultaat in de xml ziet er als volgt uit:
 
 ## Het bestand Regels handmatig bewerken {#editing-the-rules-file-manually}
 
-Het bestand translatie_rules.xml dat met AEM wordt geïnstalleerd, bevat een standaardset vertaalregels. U kunt het bestand bewerken ter ondersteuning van de vereisten van uw vertaalprojecten. U kunt bijvoorbeeld regels toevoegen zodat de inhoud van uw aangepaste componenten wordt vertaald.
+Het bestand translatie_rules.xml dat met AEM is geïnstalleerd, bevat een standaardset vertaalregels. U kunt het bestand bewerken ter ondersteuning van de vereisten van uw vertaalprojecten. U kunt bijvoorbeeld regels toevoegen zodat de inhoud van uw aangepaste componenten wordt vertaald.
 
-Als u het bestand translatie_rules.xml bewerkt, moet u een reservekopie bewaren in een inhoudspakket. Door AEM-servicepacks te installeren of bepaalde AEM-pakketten opnieuw te installeren, kan het huidige bestand translate_rules.xml worden vervangen door het origineel. Om uw regels in deze situatie te herstellen, kunt u het pakket installeren dat uw reservekopie bevat.
+Als u het bestand translatie_rules.xml bewerkt, moet u een reservekopie bewaren in een inhoudspakket. Het installeren AEM de dienstpakken of het opnieuw installeren van bepaalde AEM pakketten kunnen het huidige vertaling_rules.xml- dossier met origineel vervangen. Om uw regels in deze situatie te herstellen, kunt u het pakket installeren dat uw reservekopie bevat.
 
 >[!NOTE]
 >
