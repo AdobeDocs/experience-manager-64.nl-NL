@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 95ab2e54-0f8d-49e0-ad20-774875f6f80a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '936'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 Omdat Granite de implementatie van de JCR API-specificatie in de CRX Repository integreert, heeft het een eigen gebruikers- en groepsbeheer.
 
-Deze rekeningen vormen de onderliggende basis van de [AEM-rekeningen](/help/sites-administering/security.md) en eventuele wijzigingen in de account die met het beheer van Granite zijn doorgevoerd, worden weerspiegeld als/wanneer de accounts worden geopend via de [AEM-gebruikersconsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (bijvoorbeeld `http://localhost:4502/useradmin`). Vanuit de AEM-gebruikersconsole kunt u ook de rechten en andere AEM-specificaties beheren.
+Deze rekeningen vormen de onderliggende basis van de [AEM rekeningen](/help/sites-administering/security.md) en alle wijzigingen die met het beheer van Granite zijn aangebracht, worden weerspiegeld als/wanneer de rekeningen worden geopend vanuit de [AEM gebruikersconsole](/help/sites-administering/security.md#accessing-user-administration-with-the-security-console) (bijvoorbeeld `http://localhost:4502/useradmin`). Vanuit de AEM gebruikersconsole kunt u ook de rechten en andere AEM beheren.
 
 De gebruikers- en groepsbeheerconsoles van graniet zijn beide beschikbaar via de **[Tools](/help/sites-administering/tools-consoles.md)**-console van de interface die geoptimaliseerd is voor aanrakingen:
 
@@ -89,7 +92,8 @@ Als u **Gebruikers** of **groepen** kiest in de console Tools, wordt de juiste c
    * **Info**
    * **Accountinstellingen**
 
-      * **Status** U kunt de account markeren als **actief** of **inactief**.
+      * **Status** U kunt de account markeren als: 
+**actief** of **inactief**.
    * **Foto**
 
       Hier kunt u een foto uploaden om als avatar te gebruiken.
@@ -187,7 +191,7 @@ Als u **Gebruikers** of **groepen** kiest in de console Tools, wordt de juiste c
 
    * **Beschrijving**
 
-       Een beschrijving van de groep.
+      Een beschrijving van de groep.
 
    * **Leden aan groep toevoegen**
 
