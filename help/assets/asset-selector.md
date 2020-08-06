@@ -1,9 +1,12 @@
 ---
 title: Asset Selector
-description: Leer hoe u met de functie voor het selecteren van middelen metagegevens voor elementen kunt zoeken, filteren, doorbladeren en ophalen in Adobe Experience Manager (AEM)-middelen. Leer ook hoe u de interface van de elementenkiezer kunt aanpassen.
+description: Leer hoe u met de kiezer voor middelen metagegevens voor elementen in Adobe Experience Manager-middelen (AEM) kunt zoeken, filteren, doorbladeren en ophalen. Leer ook hoe u de interface van de elementenkiezer kunt aanpassen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 0%
 
 ---
 
@@ -12,9 +15,9 @@ source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
 
 >[!NOTE]
 >
->Asset Selector werd in eerdere versies van AEM genoemd [Asset Picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) .
+>Asset Selector werd in eerdere versies van AEM [Asset Picker](https://helpx.adobe.com/experience-manager/6-2/assets/using/asset-picker.html) genoemd.
 
-Met de elementkiezer kunt u zoeken naar elementen in Adobe Experience Manager (AEM)-middelen, deze filteren en door deze elementen bladeren. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
+Met de functie voor het selecteren van elementen kunt u zoeken naar elementen in Adobe Experience Manager-elementen (AEM), deze filteren en door deze elementen bladeren. U kunt ook de metagegevens ophalen van elementen die u selecteert met de elementenkiezer. Als u de interface van de elementenkiezer wilt aanpassen, kunt u deze starten met ondersteunde aanvraagparameters. Met deze parameters wordt de context van de elementenkiezer voor een bepaald scenario ingesteld.
 
 Momenteel kunt u de aanvraagparameters `Asset Type` (*Afbeelding/Video/Tekst*) en `Selection mode` (*Enkel/Meervoudig*) doorgeven als contextuele informatie voor de elementenkiezer, die tijdens de selectie intact blijft.
 
@@ -48,8 +51,8 @@ U kunt de volgende aanvraagparameters in een URL doorgeven om de elementenkiezer
 
    ![chlimage_1-442](assets/chlimage_1-442.png)
 
-   Als u in het vak OmniSearch naar elementen zoekt, kunt u verschillende filters in het deelvenster **[!UICONTROL Filters]** selecteren om de zoekopdracht te verfijnen.
+   Als u in het vak OmniSearch naar elementen zoekt, kunt u verschillende filters in het **[!UICONTROL Filters]** deelvenster selecteren om de zoekopdracht te verfijnen.
 
    ![chlimage_1-443](assets/chlimage_1-443.png)
 
-1. Tik/klik op **[!UICONTROL Selecteren]** op de werkbalk.
+1. Tap/click **[!UICONTROL Select]** from the toolbar.
