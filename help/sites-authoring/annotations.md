@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: aa89326a-ad33-4b0b-8d09-c68c5a5c790a
 translation-type: tm+mt
 source-git-commit: b3d81da17c2de68d6ba3306bb35543eb0788e308
+workflow-type: tm+mt
+source-wordcount: '651'
+ht-degree: 0%
 
 ---
 
@@ -51,6 +54,7 @@ Een speciale [modus](/help/sites-authoring/author-environment-tools.md#page-mode
 >
 >* [Annoteren van elementen](/help/assets/managing-assets-touch-ui.md#annotating)
 >* [Video-elementen annoteren](/help/assets/managing-video-assets.md#annotating-video-assets)
+
 >
 
 
@@ -88,9 +92,11 @@ In de modus Annoteren kunt u annotaties voor uw inhoud maken, bewerken, verplaat
    ![](do-not-localize/screen_shot_2018-03-22at110640.png)
 
    * Kies of wijzig de kleur:
+
    ![](do-not-localize/chlimage_1-19.png)
 
    * Verwijder de annotatie.
+
    ![](do-not-localize/screen_shot_2018-03-22at110647.png)
 
 1. U kunt het dialoogvenster met annotaties sluiten door buiten het dialoogvenster te klikken of erop te tikken. Een afgekapte weergave (het eerste woord) van de annotatie wordt samen met eventuele schetsen weergegeven:
