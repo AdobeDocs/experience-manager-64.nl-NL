@@ -10,6 +10,9 @@ topic-tags: forms-workspace
 discoiquuid: 58f95138-5439-4540-a8dc-193b4cb42203
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '927'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Een XDP kan worden weergegeven als een PDF-formulier of een HTML-formulier. De n
 
 ### Nieuwe HTML Forms-service {#new-html-forms-service}
 
-De nieuwe service HTML Forms gebruikt de nieuwe functie in Forms om de weergave van XDP-formulieren als HTML te ondersteunen. De nieuwe service HTML Forms stelt de volgende methoden beschikbaar:
+De nieuwe HTML Forms-service maakt gebruik van de nieuwe functie in Forms ter ondersteuning van de rendering van XDP-formulieren als HTML. De nieuwe HTML Forms-service stelt de volgende methoden beschikbaar:
 
 ```java
 /*
@@ -140,7 +143,7 @@ Equivalente verzendprocessen.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Welke Profielen van de Actie uit de doos beschikbaar zullen zijn?**
 
-Voor XDP-formulieren:
+Voor XDP Forms:
 
 * Standaard (renderen/verzenden met de nieuwe processen Standaard renderen/verzenden)
 
@@ -154,7 +157,7 @@ De gebruiker moet het HTML-keuzerondje voor het standaardprofiel selecteren.
 
 ![gen_question_b_20](assets/gen_question_b_20.png) **Zal er om het even welk verbeteringseffect op het veranderen van het standaardgedrag van het actieprofiel zijn?**
 
-Ja, omdat de vorige renderings- en verzendservices die aan het standaardactieprofiel zijn gekoppeld verschillend waren, worden deze beschouwd als een aanpassing van de bestaande formulieren. Als u op Standaardwaarden **** herstellen klikt, worden de standaardservices voor renderen en verzenden ingesteld.
+Ja, omdat de vorige renderings- en verzendservices die aan het standaardactieprofiel zijn gekoppeld verschillend waren, worden deze beschouwd als een aanpassing van de bestaande formulieren. Als u klikt, worden de standaardservices voor renderen en verzenden **[!UICONTROL Restore Defaults]** ingesteld.
 
 Als u de bestaande services voor het renderen of verzenden van PDF-formulieren of aangepaste services (zoals custom1) hebt gewijzigd, wilt u nu dezelfde functionaliteit gebruiken voor HTML-uitvoering. U moet de nieuwe renderen herhalen of de dienst voorleggen (zoals custom2) en gelijkaardige aanpassingen op die toepassen. Pas nu het actieprofiel voor uw XDP aan begin gebruikend de diensten custom2, in plaats van custom1 voor terug of voorleggen.
 
