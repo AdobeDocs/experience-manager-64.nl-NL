@@ -1,6 +1,6 @@
 ---
-title: AEM-portfolio's en -portfolio's
-seo-title: AEM-portfolio's en -portfolio's
+title: AEM en portlets
+seo-title: AEM en portlets
 description: Meer informatie over portfolio's en portfolio's in AEM.
 seo-description: Meer informatie over portfolio's en portfolio's in AEM.
 uuid: 50d3f49e-abf3-4544-94ce-078245c685dd
@@ -11,44 +11,47 @@ content-type: reference
 discoiquuid: f25d901a-c62c-46b4-aab7-3ca3da1cea5b
 translation-type: tm+mt
 source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+workflow-type: tm+mt
+source-wordcount: '6097'
+ht-degree: 0%
 
 ---
 
 
-# AEM-portfolio&#39;s en -portfolio&#39;s{#aem-portals-and-portlets}
+# AEM en portlets{#aem-portals-and-portlets}
 
 In dit document wordt het volgende beschreven:
 
 * AEM Portal-architectuur
-* AEM beheren en configureren als portal
-* AEM gebruiken als portal
-* AEM-inhoud in een portlet installeren, configureren en weergeven (bijvoorbeeld een webserver)
+* Beheer en configuratie van AEM als portal
+* AEM gebruiken als portaal
+* Inhoud in een portlet installeren, configureren en weergeven (bijvoorbeeld een webserver)
 
-## AEM Portal Architecture {#aem-portal-architecture}
+## AEM Portal-architectuur {#aem-portal-architecture}
 
-De AEM-portalarchitectuur bevat definities van portalen en portlets.
+AEM portaalarchitectuur bevat definities van portalen en portlets.
 
 ### Wat is een portaal? {#what-is-a-portal}
 
 Een portal is een webtoepassing die verpersoonlijking, één aanmelding, integratie van inhoud uit verschillende bronnen en de presentatielaag van informatiesystemen host.
 
-U kunt JSR 286-Volgzame portlets in AEM in werking stellen. Met de portletcomponent kunt u een portlet op de pagina insluiten. Zie [Het AEM-inhoudsportfolio](#administering-the-aem-content-portlet)beheren.
+U kunt JSR 286-Volgzame portlets in AEM in werking stellen. Met de portletcomponent kunt u een portlet op de pagina insluiten. Zie [De AEM inhoudsportfolio](#administering-the-aem-content-portlet)beheren.
 
 ### Wat is een portlet? {#what-is-a-portlet}
 
 Portlets zijn webonderdelen die worden geïmplementeerd in een container en die dynamische inhoud genereren. De portletinterface wordt verpakt en opgesteld als .war dossier binnen van een portletcontainer. Als u AEM als portaal in werking stelt, hebt u het portlet .war dossier nodig om portlet in werking te stellen.
 
-Om AEM inhoud te vormen om in een portaal te verschijnen, zie het [Installeren van, het Vormen van, en het Gebruiken van AEM in een portlet](#installing-configuring-and-using-aem-in-a-portlet).
+Om AEM inhoud te vormen om in een portaal te verschijnen, zie het [Installeren, het Vormen, en het Gebruiken AEM in een portlet](#installing-configuring-and-using-aem-in-a-portlet).
 
 ### AEM Portal Director {#aem-portal-director}
 
 >[!CAUTION]
 >
->De AEM Portal Director is vanaf AEM 6.4 afgekeurd. Zie [Vervangen en Verwijderde functies](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
+>De AEM Portal Director is vanaf AEM 6.4 verouderd. Zie [Vervangen en Verwijderde functies](https://helpx.adobe.com/experience-manager/6-4/release-notes/deprecated-removed-features.html).
 
-## Het AEM-inhoudsportfolio beheren {#administering-the-aem-content-portlet}
+## Het AEM inhoudsportfolio beheren {#administering-the-aem-content-portlet}
 
-Met de AEM-inhoudsportlet kunt u AEM-inhoud in een portal weergeven. De portlet is beschikbaar bij `/crx-quickstart/opt/portal`, en kan op diverse manieren worden aangepast. Bijvoorbeeld, kunt u SSO/Authentificatie behandeling aanpassen door uw eigen authentificatieservice op te stellen die de vereiste authentificatieinformatie voor AEM produceert om het standaardgedrag te beschrijven. De plug-ins gebruiken een gedefinieerde API waarmee u uw eigen functionaliteit kunt toevoegen door de plug-in te bouwen op basis van de API. De insteekmodule kan in de lopende portlet worden opgesteld. Om correct te functioneren, heeft het een configuratie van de auteur AEM en publiceer instantie samen met de inhoudspad aan vertoning bij opstarten nodig.
+Met de AEM-inhoudsporlet kunt u AEM inhoud in een portal weergeven. De portlet is beschikbaar bij `/crx-quickstart/opt/portal`, en kan op diverse manieren worden aangepast. Bijvoorbeeld, kunt u SSO/Authentificatie behandeling aanpassen door uw eigen authentificatieservice op te stellen die de vereiste authentificatieinformatie voor AEM produceren om het standaardgedrag te beschrijven. De plug-ins gebruiken een gedefinieerde API waarmee u uw eigen functionaliteit kunt toevoegen door de plug-in te bouwen op basis van de API. De insteekmodule kan in de lopende portlet worden opgesteld. Om correct te functioneren, vereist het een configuratie van de AEM auteur en publiceer instantie samen met de inhoudspad om bij opstarten te tonen.
 
 Sommige configuraties kunnen door portletvoorkeur en anderen door OSGi de dienstconfiguraties worden veranderd. U verandert deze configuraties gebruikend **config** dossiers of de OSGi Webconsole.
 
@@ -107,7 +110,7 @@ De portlet kan met de volgende voorkeur worden gevormd:
  <tbody>
   <tr>
    <td>startPath</td>
-   <td><p>Dit is het beginpad van de portlet: het bepaalt de inhoud die aanvankelijk wordt getoond.</p> <p><strong>Belangrijk</strong>: Als portlet wordt gevormd om met auteur te verbinden AEM en instanties te publiceren die op een contextweg verschillend dan<strong> /</strong>lopen, moet u de kracht <strong>CQUrlInfo</strong> in de configuratie van de Manager van de Bibliotheek van HTML van deze instanties AEM (b.v. via de Webconsole van Felix) toelaten of zal het uitgeven niet werken en het voorkeurendialoog zal niet verschijnen.</p> </td>
+   <td><p>Dit is het beginpad van de portlet: het bepaalt de inhoud die aanvankelijk wordt getoond.</p> <p><strong>Belangrijk</strong>: Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan<strong> /</strong>lopen, moet u de kracht <strong>CQUrlInfo</strong> in de configuratie van de Manager van de Bibliotheek van HTML van deze AEM instanties (b.v. via de Webconsole van Felix) toelaten of zal het uitgeven niet werken en zal de voorkeurendialoog niet verschijnen.</p> </td>
   </tr>
   <tr>
    <td>htmlSelector</td>
@@ -123,7 +126,7 @@ De portlet kan met de volgende voorkeur worden gevormd:
   </tr>
   <tr>
    <td>urlParameterNames</td>
-   <td><p>Lijst met alternatieve URL-parameternamen die de nieuwe inhoud-URL kunnen bevatten die voor de portlet moet worden weergegeven. De lijst wordt van boven naar beneden verwerkt, de eerste parameter die een waarde bevat wordt gebruikt. Als er geen URL wordt gevonden, wordt de standaard-URL-parameter gebruikt. De opgegeven URL wordt ongewijzigd gebruikt.</p> <p>Dit het plaatsen is per opgestelde portlet - het moet ook globaal sommige url parameters in de configuratie OSGi voor de "Dagportaaldirecteur van de Portlet Brug van de Post"vormen.</p> </td>
+   <td><p>Lijst met alternatieve URL-parameternamen die de nieuwe inhoud-URL kunnen bevatten die voor de portlet moet worden weergegeven. De lijst wordt van boven naar beneden verwerkt, de eerste parameter die een waarde bevat wordt gebruikt. Als er geen URL wordt gevonden, wordt de standaard-URL-parameter gebruikt. De opgegeven URL wordt ongewijzigd gebruikt.</p> <p>Deze instelling is per geïmplementeerde portlet - het is ook nodig om wereldwijd enkele URL-parameters in de OSGi-configuratie voor de "Day Portal Director Portlet Bridge" te configureren.</p> </td>
   </tr>
   <tr>
    <td>preferentDialog</td>
@@ -138,7 +141,7 @@ De portlet kan met de volgende voorkeur worden gevormd:
 
 ### OSGi-webconsole {#osgi-web-console}
 
-Ervan uitgaande dat de portalserver wordt uitgevoerd op de host localhost, poort 8080 en dat de AEM-portletwebtoepassing is gekoppeld in de context *cqportlet* van de webtoepassing, is de URL naar de webconsole `http://localhost:8080/cqportlet/cqbridge/system/console`. De standaardgebruiker en het wachtwoord zijn **admin**.
+Ervan uitgaande dat de poortserver wordt uitgevoerd op de host localhost, poort 8080 en dat de webtoepassing AEM portlet is gemonteerd in de context *cqportlet* van de webtoepassing, is de URL naar de webconsole `http://localhost:8080/cqportlet/cqbridge/system/console`. De standaardgebruiker en het wachtwoord zijn **admin**.
 
 Open het tabblad **Configuraties** en selecteer **Portal Directory CQ Server Configuration**. Hier geeft u de basis-URL op voor de auteur en de publicatie-instantie. Deze procedure wordt beschreven in het [Vormen Portlet](#configuring-the-portlet).
 
@@ -148,7 +151,7 @@ Open het tabblad **Configuraties** en selecteer **Portal Directory CQ Server Con
 
 ### Configuraties leveren {#providing-configurations}
 
-Om geautomatiseerde plaatsingen en configuratielevering te steunen, heeft AEM inhoudsportlet ingebouwde configuratiesteun die configuraties van klassenpad probeert te lezen die aan de portlettoepassing wordt verstrekt.
+Om geautomatiseerde plaatsingen en configuratielevering te steunen, heeft AEM inhoudsplet ingebouwde configuratiesteun die probeert om configuraties van klassenpad te lezen die aan de portlettoepassing wordt verstrekt.
 
 Bij opstarten, wordt het systeembezit **com.day.cq.portet.config** gelezen om het huidige milieu te ontdekken. Gewoonlijk is de waarde van deze eigenschap iets als **dev**, **prod**, **test** enzovoort. Als er geen omgeving is ingesteld, worden er geen configuraties gelezen.
 
@@ -162,22 +165,22 @@ Het is mogelijk om een andere systeemeigenschap te gebruiken om de omgeving te d
 
 portlet, in zijn standaardconfiguratie, geheime voorgeheugens de reacties het van AEM WCM in een user-specific geheime voorgeheugen ontvangt. De caches moeten ongeldig worden gemaakt wanneer er wijzigingen optreden in de inhoud van de publicatie-instantie. Voor dit doel, in AEM WCM moet een replicatieagent op de auteursinstantie worden gevormd. De cache kan ook handmatig worden leeggemaakt. In dit deel worden beide procedures beschreven.
 
-portlet kan met zijn eigen geheime voorgeheugen worden gevormd, zodat de inhoud in portlet vertoningen zonder toegang tot AEM te vereisen. Het portaal is beschikbaar als inhoud in /libs/portal/director. Als u toegang wilt tot de inhoud, start u een AEM-instantie en downloadt u het bestand via CRXDE Lite of WebDAV.
+portlet kan met zijn eigen geheime voorgeheugen worden gevormd, zodat de inhoud in portlet vertoningen zonder toegang tot AEM te vereisen. Het portaal is beschikbaar als inhoud in /libs/portal/director. Als u toegang wilt tot de inhoud, start u een AEM instantie en downloadt u het bestand via CRXDE Lite of Webdav vanaf die locatie.
 
 U kunt deze bundel bij uitvoering implementeren of toevoegen aan de portlet-webtoepassing `WEB-INF/lib/resources/bundles` vóór de implementatie.
 
-Nadat het geheime voorgeheugen wordt opgesteld, plaatst portlet inhoud van publicatieinstantie in het voorgeheugen. De portletcache kan ongeldig worden gemaakt door een verzender uit AEM te verwijderen. Om portlet te vormen om zijn eigen geheime voorgeheugen te gebruiken:
+Nadat het geheime voorgeheugen wordt opgesteld, plaatst portlet inhoud van publicatieinstantie in het voorgeheugen. De portletcache kan ongeldig worden gemaakt door een dispatcher uit AEM te spoelen. Om portlet te vormen om zijn eigen geheime voorgeheugen te gebruiken:
 
 1. Vorm een replicatieagent in auteur die de poortserver richt.
-1. Ervan uitgaande dat de portalserver wordt uitgevoerd op host **localhost**, **poort 8080 **en de AEM portlet webtoepassing wordt gemonteerd in de context **cqportlet**, wordt de url om de cache leeg te maken `http://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Gebruik GET als methode.
+1. Ervan uitgaande dat de poortserver wordt uitgevoerd op host **localhost**, **poort 8080 **en de AEM portlet webtoepassing wordt gemonteerd in de context **cqportlet**, is de URL die de cache leegmaakt `http://localhost:8080/cqportlet/cqbridge/cqpcache?Path=$(path)`. Gebruik GET als methode.
 
    **Opmerking:** In plaats van een aanvraagparameter te gebruiken, kunt u een HTTP-koptekst met de naam **Path** verzenden.
 
 #### Het spoelen van het Geheime voorgeheugen via de Agent van de Replicatie {#flushing-the-cache-via-replication-agent}
 
-Net als bij de normale validatie van de verzender kan een replicatieagent worden geconfigureerd om de AEM portlet-cache van het portaal als doel in te stellen. Nadat u de replicatieagent vormt, spoelt elke regelmatige paginasactivering het poortgeheime voorgeheugen.
+Enkel als de normale berichtcher ongeldigverklaring, kan een replicatieagent worden gevormd om het portletgeheime voorgeheugen van de portlet van het portaal AEM te richten. Nadat u de replicatieagent vormt, spoelt elke regelmatige paginasactivering het poortgeheime voorgeheugen.
 
-Als u verscheidene poortknopen in werking stelt die portlet AEM in werking stellen, moet u een agent voor elke knoop tot stand brengen zoals die in deze procedure wordt beschreven.
+Als u verscheidene poortknopen in werking stelt die portlet van de AEM in werking stellen, moet u een agent voor elke knoop tot stand brengen zoals die in deze procedure wordt beschreven.
 
 Om een replicatieagent voor het portaal te vormen:
 
@@ -213,7 +216,7 @@ Om een replicatieagent voor het portaal te vormen:
 
    ![screen_shot_2012-02-15at42515pm](assets/screen_shot_2012-02-15at42515pm.png)
 
-1. Typ **GET** in het veld **** HTTP-methode.
+1. Typ **GET** in het veld **HTTP-methode**.
 1. Klik in het veld **HTTP-headers** op **+** om een nieuwe vermelding toe te voegen en typ **Pad: {pad}**.
 1. Indien nodig, klik het lusje van de **Volmacht** en ga volmachtsinformatie aan de agent in.
 1. Klik op **OK** om de wijzigingen op te slaan.
@@ -231,21 +234,21 @@ Bijvoorbeeld:
 
 ### Poortbeveiliging {#portal-security}
 
-Het portaal is het mechanisme voor rijverificatie. U kunt zich bij AEM of met een technische gebruiker, de poortgebruiker, een groep, etc. aanmelden. portlet heeft geen toegang tot het wachtwoord voor de gebruiker in het portaal, zodat als portlet niet alle geloofsbrieven kent om met succes een gebruiker aan te melden, moet een oplossing SSO worden gebruikt. In dit geval stuurt de AEM portlet alle vereiste informatie door naar AEM, die deze informatie vervolgens doorgeeft aan de onderliggende AEM-opslagplaats. Dit gedrag is pluggable en kan worden aangepast.
+Het portaal is het mechanisme voor rijverificatie. U kunt zich AEM of met een technische gebruiker, de poortgebruiker, een groep, etc. aanmelden. portlet heeft geen toegang tot het wachtwoord voor de gebruiker in het portaal, zodat als portlet niet alle geloofsbrieven kent om met succes een gebruiker aan te melden, moet een oplossing SSO worden gebruikt. In dit geval stuurt de AEM portlet alle vereiste informatie door naar AEM, die deze informatie vervolgens doorgeeft aan de onderliggende AEM dataopslag. Dit gedrag is pluggable en kan worden aangepast.
 
 ### Verificatie bij publicatie {#authentication-on-publish}
 
-In deze sectie worden de beschikbare verificatiemodi beschreven die de portlet kan gebruiken voor communicatie met de onderliggende AEM WCM-instanties.
+Deze sectie beschrijft de beschikbare authentificatiemodi portlet kan gebruiken in het communiceren met de onderliggende AEM instanties WCM.
 
-Standaard wordt geen gebruikersinformatie naar de publicatieinstantie van AEM verzonden; de inhoud wordt altijd weergegeven als de anonieme gebruiker. Als gebruikersspecifieke informatie vanuit AEM moet worden geleverd of als gebruikersverificatie voor publiceren vereist is, moet dit worden ingeschakeld.
+Standaard wordt geen gebruikersinformatie naar de publicatie-instantie van AEM verzonden; de inhoud wordt altijd weergegeven als de anonieme gebruiker. Als gebruikersspecifieke informatie van AEM moet worden afgeleverd of als gebruikersverificatie voor publicatie vereist is, moet dit worden ingeschakeld.
 
 #### Toegang tot de configuratie van de portlet-verificatie {#accessing-the-portlet-s-authentication-configuration}
 
-De configuratieopties van de authentificatie die portlet in AEM WCM instanties gebruikt zijn beschikbaar in de console van het Web (configuratie OSGi).
+De configuratieopties van de authentificatie die portlet in AEM instanties WCM gebruikt zijn beschikbaar in de console van het Web (configuratie OSGi).
 
 >[!NOTE]
 >
->Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor de diensten OSGi (console of bewaargegevensknooppunten) te beheren.
+>Wanneer het werken met AEM zijn er verscheidene methodes om de configuratiemontages voor de diensten OSGi (console of bewaarplaatsknooppunten) te beheren.
 >
 >Zie [het Vormen OSGi](/help/sites-deploying/configuring-osgi.md) voor volledige details.
 
@@ -265,12 +268,12 @@ Om tot de de authentificatieconfiguratie van portlet toegang te hebben:
 
    | Servicenaam | Beschrijving |
    |---|---|
-   | Verificator van Day Portal Director | Configureer welke verificatiemodus wordt gebruikt voor AEM WCM-instanties. Afhankelijk van de geselecteerde modus kan een technische gebruiker of de naam van het SSO-cookie worden opgegeven. Ook kan verificatie voor AEM WCM-publicatie-instanties worden ingeschakeld. |
-   | Dagportaal Director-bestandscache | Vorm de parameters van hoe portlet reacties in het voorgeheugen onderbrengt het van instanties AEM WCM ontvangt. |
-   | Day Portal Director HTTP Client Service | Configureer hoe de portlet via HTTP verbinding maakt met onderliggende AEM WCM-instanties. U kunt bijvoorbeeld een proxyserver opgeven. |
-   | Dagportaal Director Locale Handler | Vorm welke scènes portlet steunt. Verzoeken naar AEM WCM-instanties zijn gebaseerd op de landinstelling van de gebruiker. bijvoorbeeld, zou de taal *German *request `/content/geometrixx/de/`.... |
+   | Day Portal Director Authenticator | Vorm welke authentificatiemodus voor AEM instanties WCM wordt gebruikt. Afhankelijk van de geselecteerde modus kan een technische gebruiker of de naam van het SSO-cookie worden opgegeven. Ook, kan de authentificatie voor AEM WCM publicatieinstanties worden toegelaten. |
+   | Day Portal Director-bestandcache | Vorm de parameters van hoe portlet reacties in het voorgeheugen onderbrengt het van AEM instanties WCM ontvangt. |
+   | Day Portal Director HTTP Client Service | Vorm hoe portlet via HTTP met onderliggende AEM instanties WCM verbindt. U kunt bijvoorbeeld een proxyserver opgeven. |
+   | Dagportaal Director Locale Handler | Vorm welke scènes portlet steunt. Verzoeken om AEM WCM-instanties zijn gebaseerd op de landinstelling van de gebruiker. bijvoorbeeld, zou de taal *German *request `/content/geometrixx/de/`.... |
    | Day Portal Director Privilege Manager | Vorm of portlet de Websites tabel zou moeten testen die op de momenteel het programma geopende gebruiker wordt gebaseerd. |
-   | Renderer van werkbalk Dagportaal Director | Pas de weergave van de werkbalk van de portlet aan. |
+   | Day Portal Director Toolbar Renderer | Pas de weergave van de werkbalk van de portlet aan. |
 
 1. Bovendien kunt u de console van het Web en de registrerendienst vormen. Bijvoorbeeld, kunt u de admin geloofsbrieven voor de console van het Web veranderen door de verbinding van de Console van de Console van het Beheer van Apache te klikken Felix OSGi.
 
@@ -278,13 +281,13 @@ Om tot de de authentificatieconfiguratie van portlet toegang te hebben:
 
 In standaardwijze, worden alle verzoeken die door portlet voor de AEM WCM auteursinstantie worden uitgegeven voor authentiek verklaard gebruikend de zelfde technische gebruiker, ongeacht de huidige poortgebruiker. De modus Technische gebruiker is standaard ingeschakeld. U laat/maakt deze wijze in het respectieve configuratiescherm in de OSGi beheersconsole toe onbruikbaar:
 
-De opgegeven technische gebruiker moet aanwezig zijn in de AEM WCM-auteur-instantie en in de publicatie-instantie als **Verifiëren bij publiceren** is ingeschakeld. Zorg ervoor dat u de gebruikers voldoende toegangsrechten geeft voor ontwerpwerkzaamheden.
+De opgegeven technische gebruiker moet aanwezig zijn op de AEM WCM-auteur en op de publicatieinstantie als **Verifiëren bij publiceren** is ingeschakeld. Zorg ervoor dat u de gebruikers voldoende toegangsrechten geeft voor ontwerpwerkzaamheden.
 
 #### SSO {#sso}
 
 De portlet steunt SSO met AEM uit de doos. De authentificatordienst kan worden gevormd om SSO te gebruiken en de huidige poortgebruiker met formaat **Basis** als koekje over te brengen dat `cqpsso` aan AEM wordt genoemd. AEM zou moeten worden gevormd om de de authentificatiemanager van SSO voor weg te gebruiken /. De cookienaam moet ook hier worden gevormd.
 
-De AEM-opslagruimte `crx-quickstart/repository/repository.xml` moet dienovereenkomstig worden geconfigureerd:
+De `crx-quickstart/repository/repository.xml` gegevensopslagruimte voor AEM moet dienovereenkomstig worden geconfigureerd:
 
 ```xml
 <LoginModule class="com.day.crx.security.authentication.CRXLoginModule">
@@ -296,17 +299,17 @@ De AEM-opslagruimte `crx-quickstart/repository/repository.xml` moet dienovereenk
 
 #### SSO-verificatiemodus {#sso-authentication-mode}
 
-De portlet kan voor AEM WCM voor authentiek verklaren gebruikend het Single Sign On (SSO) regeling. In deze modus wordt de gebruiker die momenteel is aangemeld bij de portal doorgestuurd naar AEM WCM in de vorm van een SSO-cookie. Als de SSO-modus wordt gebruikt, moeten alle poortgebruikers met toegang tot de AEM-portlet bekend zijn bij de onderliggende AEM WCM-instanties, meestal in de vorm van een AEM WCM-verbinding met LDAP of door de gebruikers vooraf handmatig te hebben gemaakt. Ook, alvorens SSO in portlet toe te laten, moet de onderliggende AEM WCM auteursinstantie (en de publiceer instantie, als **voor authentiek verklaren bij Publish** wordt toegelaten) worden gevormd om op SSO-Gebaseerde verzoeken goed te keuren.
+portlet kan voor AEM WCM voor authentiek verklaren gebruikend het Enige Sign On (SSO) regeling. In deze modus wordt de gebruiker die momenteel is aangemeld bij de portal doorgestuurd naar AEM WCM in de vorm van een SSO-cookie. Als de wijze SSO wordt gebruikt, moeten alle poortgebruikers met toegang tot AEM portlet aan de onderliggende AEM instanties WCM bekend zijn, meestal in de vorm van AEM WCM die met LDAP worden verbonden, of door de gebruikers manueel te hebben gecreeerd vooraf. Ook, alvorens SSO in portlet toe te laten, moet de onderliggende AEM de auteursinstantie WCM (en de publiceer instantie, als **voor authentiek verklaren bij Publish** wordt toegelaten) worden gevormd om op SSO-Gebaseerde verzoeken goed te keuren.
 
 Om portlet te vormen om de de authentificatiemodus van SSO te gebruiken, voltooi de volgende stappen (die in detail in de volgende secties worden beschreven):
 
-* Schakel de opslagplaats van AEM WCM in om vertrouwde referenties te accepteren.
+* Schakel AEM WCM-opslagplaats in om vertrouwde referenties te accepteren.
 * SSO-verificatie inschakelen in de AEM WCM.
-* Schakel SSO-verificatie in de AEM-portlet in.
+* Schakel SSO-verificatie in de AEM portlet in.
 
 #### De opslagplaats van AEM WCM inschakelen om vertrouwde referenties te accepteren {#enabling-aem-wcm-s-repository-to-accept-trusted-credentials}
 
-Voordat SSO voor AEM WCM kan worden ingeschakeld, moet de onderliggende opslagplaats worden geconfigureerd om de vertrouwde referenties te accepteren die door AEM WCM worden verstrekt. Hiertoe configureert u het bestand repository.xml van AEM.
+Voordat SSO voor AEM WCM kan worden ingeschakeld, moet de onderliggende opslagplaats worden geconfigureerd om de vertrouwde referenties te accepteren die door AEM WCM worden verstrekt. Hiertoe configureert u AEM repository.xml.
 
 1. Open het volgende bestand in het bestandssysteem waarop AEM WCM is geïnstalleerd:
 
@@ -324,12 +327,12 @@ Voordat SSO voor AEM WCM kan worden ingeschakeld, moet de onderliggende opslagpl
 
 1. Start AEM WCM opnieuw om de wijzigingen van kracht te laten worden.
 
-#### SSO-verificatie inschakelen in AEM WCM {#enabling-sso-authentication-in-the-aem-wcm}
+#### SSO-verificatie inschakelen in de AEM WCM {#enabling-sso-authentication-in-the-aem-wcm}
 
-Om SSO in AEM WCM toe te laten, heb toegang tot de relevante configuratieingang in de AEM WCM van het Web Management Console (OSGi) van de Felix van de Felix:
+Om SSO in AEM WCM toe te laten, heb toegang tot de relevante configuratieingang in Apache Felix Web Management Console (OSGi) van AEM WCM:
 
 1. Open de console via de URI op https://&lt;AEM-host>:&lt;port>/system/console.
-1. Selecteer SSO-verificatiehandler in het menu Configuration. In dit voorbeeld, keurt de manager SSO verzoeken SSO voor alle wegen goed die op het koekje worden gebaseerd door portlet AEM wordt verstrekt. Uw configuratie kan variëren.
+1. Selecteer SSO-verificatiehandler in het menu Configuration. In dit voorbeeld, keurt de manager SSO verzoeken SSO voor alle wegen goed die op het koekje worden gebaseerd dat door AEM portlet wordt verstrekt. Uw configuratie kan variëren.
 
    | Pad | / | Laat manager SSO voor alle verzoeken toe |
    |---|---|---|
@@ -337,23 +340,23 @@ Om SSO in AEM WCM toe te laten, heb toegang tot de relevante configuratieingang 
 
 1. Klik op **Opslaan** om SSO in te schakelen. SSO is nu de primaire authentificatieregeling.
 
-Voor elk verzoek ontvangt AEM WCM, eerst wordt de op SSO-Gebaseerde authentificatie geprobeerd. Bij mislukking, wordt een fallback aan het gebruikelijke basisauthentificatieschema uitgevoerd. Normale verbindingen met AEM WCM zonder SSO blijven dus mogelijk.
+Voor elk verzoek AEM WCM ontvangt, eerst wordt de op SSO-Gebaseerde authentificatie geprobeerd. Bij mislukking, wordt een fallback aan het gebruikelijke basisauthentificatieschema uitgevoerd. Als zodanig blijven normale verbindingen met AEM WCM zonder SSO mogelijk.
 
-#### SSO-verificatie inschakelen in een AEM-portfolio {#enabling-sso-authentication-in-a-aem-portlet}
+#### SSO-verificatie inschakelen in een AEM portfolio {#enabling-sso-authentication-in-a-aem-portlet}
 
-Opdat de onderliggende instantie AEM WCM SSO- verzoeken goedkeurt, moet de de authentificatiemodus van portlet van **Technisch** aan **SSO** worden geschakeld.
+Opdat de onderliggende AEM instantie WCM SSO- verzoeken goedkeurt, moet de de authentificatiemodus van portlet van **Technisch** aan **SSO** worden geschakeld.
 
-SSO-verificatie inschakelen in een AEM-portlet:
+SSO-verificatie inschakelen in een AEM portlet:
 
 1. Open de console via de URI op https://&lt;aem-host>:&lt;port>/system/console.
-1. In het menu van de Configuratie, de uitgezochte Authenticator van de Directeur van het Dagportaal van de lijst van beschikbare configuraties.
+1. Selecteer in het menu Configuratie de optie Day Portal Director Authenticator in de lijst met beschikbare configuraties.
 1. Selecteer SSO in Modus. Laat de andere parameters hun standaardwaarden ongewijzigd.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
 1. Klik sparen om SSO voor portlet toe te laten.
 
-   Voor testdoeleinden, toegang portlet met de administratieve gebruiker van uw portaal, nadat u de zelfde gebruiker in AEM WCM met beheerdervoorrechten creeert.
+   Voor testdoeleinden, heb toegang tot portlet met de administratieve gebruiker van uw portaal, nadat u de zelfde gebruiker in AEM WCM met beheerdervoorrechten creeert.
 
 Na het uitvoeren van deze procedure, worden de verzoeken voor authentiek verklaard gebruikend SSO. Een typisch fragment van de mededeling van HTTP openbaart de aanwezigheid van de volgende SSO en Portlet specifieke kopballen:
 
@@ -375,9 +378,9 @@ C-12-#002289 -> [ ]
 
 ### Pinverificatie inschakelen {#enabling-pin-authentication}
 
-Als u niet de standaard gealigneerde het uitgeven eigenschappen van AEM inhoudsportlet gebruikt, maar het auteursdeel en het beleid van portlet buiten het portaal direct in de AEM auteursinstantie wilt, zou u de authentificatie van de SPELD moeten toelaten. U moet ook de configuratie van de beheersknopen veranderen.
+Als u niet de standaard gealigneerde het uitgeven eigenschappen van AEM inhoudsporlet gebruikt, maar het auteursende en beleidsdeel van portlet buiten het portaal direct in de AEM auteursinstantie wilt, zou u de authentificatie van de SPELD moeten toelaten. U moet ook de configuratie van de beheersknopen veranderen.
 
-Voor het openen van de pagina voor websitebeheer of het bewerken van een pagina vanuit de portlet gebruikt de AEM-inhoudsportlet de nieuwe pinverificatie. Door gebrek, wordt de speldauthentificatie onbruikbaar gemaakt, daarom moeten de volgende configuratieveranderingen in AEM worden aangebracht:
+Voor het openen van de pagina voor websitebeheer of het bewerken van een pagina vanuit de portlet gebruikt het AEM-inhoudsporlet de nieuwe pinverificatie. Door gebrek, wordt de speldauthentificatie onbruikbaar gemaakt, daarom moeten de volgende configuratieveranderingen in AEM worden aangebracht:
 
 1. Schakel vertrouwde verificatie in AEM in door de vertrouwde informatie toe te voegen in het bestand repository.xml:
 
@@ -399,15 +402,15 @@ Sommige functies van de portlet worden beschermd door voorrechten. De huidige ge
 * &quot;prefs&quot;: Als de gebruiker dit voorrecht heeft, mag de gebruiker de voorkeuren van de portlet zien/wijzigen.
 * &quot;cq-auteur:edit&quot; : Met dit recht mag de gebruiker de bewerkingsweergave van de inhoud aanroepen.
 * &quot;cq-maker:preview&quot;: Met deze machtiging mag de gebruiker de voorvertoning bekijken.
-* &quot;cq-signer:site-admin&quot; : Met dit recht mag de gebruiker de sitebeheerder openen in AEM.
+* &quot;cq-signer:site-admin&quot; : Met dit recht mag de gebruiker de sitebeheerder openen binnen AEM.
 
-De beste benadering om de voorrechten te beheren is poortrollen te gebruiken en rollen toe te wijzen aan deze voorrechten. Dit kan door een configuratie worden gedaan OSGi. De &quot;Manager van de Bevoegdheden van de Directeur van het Dagportaal van de Dag&quot;kan met een reeks rollen voor elk voorrecht worden gevormd. Als de gebruiker één van de rollen heeft, heeft de gebruiker het overeenkomstige voorrecht.
+De beste benadering om de voorrechten te beheren is poortrollen te gebruiken en rollen toe te wijzen aan deze voorrechten. Dit kan door een configuratie worden gedaan OSGi. De &quot;Dag Portal Director Privilege Manager&quot;kan met een reeks rollen voor elk voorrecht worden gevormd. Als de gebruiker één van de rollen heeft, heeft de gebruiker het overeenkomstige voorrecht.
 
-Bovendien is het mogelijk om deze rol te bepalen gebaseerd toegang op een per portlet instantiebasis. Het voorkeurendialoogvenster van de portlet bevat een invoerveld voor elk van de bovenstaande bevoegdheden. Voor elk voorrecht kan een komma-gescheiden lijst van portletrollen worden gevormd. Als een waarde wordt gevormd, treedt dit de globale configuratie van de dienst &quot;van de Manager van de Bevoegdheden van de Directeur van het Dagportaal van de Dag&quot;met voeten en het zou kunnen worden vereist om de zelfde rollen van dit globale plaatsen toe te voegen aangezien de rollen niet worden samengevoegd! Als geen waarde wordt gespecificeerd, wordt de globale configuratie gebruikt.
+Bovendien is het mogelijk om deze rol te bepalen gebaseerd toegang op een per portlet instantiebasis. Het voorkeurendialoogvenster van de portlet bevat een invoerveld voor elk van de bovenstaande bevoegdheden. Voor elk voorrecht kan een komma-gescheiden lijst van portletrollen worden gevormd. Als een waarde wordt gevormd, treedt dit de globale configuratie van de dienst &quot;van de Manager van de Bevoegdheden van het Dagportaal Director van de Voorrechten&quot;met voeten en het zou kunnen worden vereist om de zelfde rollen van dit globale plaatsen toe te voegen aangezien de rollen niet worden samengevoegd! Als geen waarde wordt gespecificeerd, wordt de globale configuratie gebruikt.
 
-### De AEM-portlettoepassing aanpassen {#customizing-the-aem-portlet-application}
+### De toepassing AEM portlet aanpassen {#customizing-the-aem-portlet-application}
 
-De verstrekte portlettoepassing AEM begint een container OSGi binnen de Webtoepassing enkel zoals AEM. Deze architectuur laat u van alle voordelen van OSGi gebruik maken:
+De verstrekte AEM portlet toepassing begint een container OSGi binnen de Webtoepassing enkel zoals AEM. Deze architectuur laat u van alle voordelen van OSGi gebruik maken:
 
 * Eenvoudig bij te werken en uit te breiden
 * Verstrekt hete updates van portlet zonder enige interactie van de portalserver
@@ -419,7 +422,7 @@ De werkbalk en de bijbehorende knoppen kunnen worden geconfigureerd en aangepast
 
 De OSGi Webconsole maakt een lijst van alle knoopconfiguraties op het lusje van de **Configuratie** . Voor elke knop kunt u bepalen in welke modus deze knop wordt weergegeven. Hiermee kunt u een knop uitschakelen door bijvoorbeeld alle modi te verwijderen.
 
-Standaard gebruikt de AEM-inhoudsportlet de inline bewerkingsfunctionaliteit. Als u echter liever overschakelt naar de AEM-auteurinstantie voor bewerking, schakelt u de **knop** SiteAdmin en de knop **ContentFinder** in, maar schakelt u de knop **** Bewerken uit. In dit geval, zorg ervoor om de authentificatie van de SPELD in AEM correct te vormen.
+Standaard gebruikt de AEM inhoudsportlet de inline bewerkingsfunctionaliteit. Als u echter liever overschakelt naar de AEM auteur voor bewerking, schakelt u de **knop** SiteAdmin en de knop **ContentFinder** in, maar schakelt u de knop **** Bewerken uit. In dit geval, zorg ervoor om de authentificatie van de SPELD in AEM correct te vormen.
 
 De de toolbarlay-out van portlet kan worden aangepast door een bundel door de Console van het Web van portlet te installeren Felix, die douane CSS/HTML bij een vooraf bepaalde plaats bevat.
 
@@ -488,7 +491,7 @@ De beheerweergave heeft vier knoppen: Bewerken, tabblad Websites, Vernieuwen en 
 
 | Tekenreeks voor plaatsaanduiding | Beschrijving |
 |---|---|
-| {buttonEdit} | Plaatsaanduiding wordt vervangen door de knop** Bewerken**, waarmee een nieuw venster wordt geopend met de huidige pagina in de bewerkingsmodus van AEM. |
+| {buttonEdit} | Plaatsaanduiding wordt vervangen door de knop** Bewerken**, waarmee een nieuw venster wordt geopend met de huidige pagina in AEM bewerkingsmodus. |
 | {buttonWebsites, tabblad} | Plaatsaanduiding, vervangen door een knop waarmee het tabblad Websites van AEM WCM wordt geopend. |
 | {buttonRefresh} | Hiermee vernieuwt u de huidige weergave. |
 | {buttonBack} | Schakelt portlet terug in publiceer mening. |
@@ -529,26 +532,26 @@ Als u een aangepaste indeling wilt installeren, opent u de sectie **Bundels** vo
 
 #### Pakketten {#packages}
 
-Als u pakketten voor uw installatie moet uploaden of maken, raadpleegt u Package Manager in de AEM-documentatie voor gedetailleerde instructies.
+Als u pakketten voor uw installatie moet uploaden of maken, raadpleegt u Package Manager in de AEM documentatie voor gedetailleerde instructies.
 
 ### Koppelingsverwerking {#link-handling}
 
-Alle koppelingen worden herschreven zodat ze binnen de poortcontext kunnen werken. Standaard worden koppelingen met renderparameters gebruikt. De Portal Directeur HTML Rewriter kan worden gevormd om actieverbindingen in plaats daarvan te gebruiken.
+Alle koppelingen worden herschreven zodat ze binnen de poortcontext kunnen werken. Standaard worden koppelingen met renderparameters gebruikt. De Portal Director HTML Rewriter kan worden geconfigureerd om handelingskoppelingen te gebruiken.
 
 U kunt ook aanvullende aanvraagparameters definiëren die moeten worden opgevraagd voor het inhoudspad dat moet worden weergegeven. Dit is bijvoorbeeld handig als er een koppeling van buitenaf naar specifieke inhoud bestaat.
 
-Daarnaast kan de Portal Director HTML Rewriter worden geconfigureerd met een lijst met reguliere expressies die zijn gedefinieerd, maar niet voor het herschrijven van koppelingen. Als u bijvoorbeeld relatieve koppelingen naar externe systemen hebt, moet u deze toevoegen aan deze uitsluitingslijst.
+Daarnaast kan de Portal Director HTML Rewriter worden geconfigureerd met een lijst met reguliere expressies die zijn gedefinieerd, zodat koppelingen niet kunnen worden herschreven. Als u bijvoorbeeld relatieve koppelingen naar externe systemen hebt, moet u deze toevoegen aan deze uitsluitingslijst.
 
 ### Lokalisatie {#localization}
 
-De AEM-inhoudsportlet heeft een ingebouwde lokalisatiefunctie die ervoor zorgt dat de inhoud van AEM in de juiste taal wordt weergegeven.
+De portlet voor AEM inhoud heeft een ingebouwde lokalisatiefunctie, die ervoor zorgt dat de inhoud van AEM in de juiste taal is.
 
 Dit gebeurt in twee stappen:
 
-1. De taaldetector van de poortmap detecteert de landinstelling van de poortgebruiker door de landinstelling van het portaal op te halen. Deze service moet worden geconfigureerd met de lijst met beschikbare talen in AEM.
-1. De Portaalmanager van de Plaats van de Directeur handelt de localisatie van het huidige verzoek af. Het neemt de weg van de gevraagde inhoud, bijvoorbeeld `/content/geometrixx/en/company.html`en volgens de configuratie, herschrijft het **en** met de daadwerkelijke scène van de gebruiker.
+1. De taaldetector van de poortmap detecteert de landinstelling van de poortgebruiker door de landinstelling van het portaal op te halen. Deze dienst moet met de lijst van beschikbare talen in AEM worden gevormd.
+1. De portaalversie van Director-handlers voor de landinstelling handelt de lokalisatie van het huidige verzoek af. Het neemt de weg van de gevraagde inhoud, bijvoorbeeld `/content/geometrixx/en/company.html`en volgens de configuratie, herschrijft het **en** met de daadwerkelijke scène van de gebruiker.
 
-De Portaalmanager van de Landinstelling van de Directeur kan met de wegen worden gevormd om scèneinformatie te controleren - gewoonlijk omvat dit alles onder `/content` en met de positie van de scèneinformatie in de weg. Standaard volgt de landinstellingshandler de aanbevolen procedure voor het structureren van meertalige sites in AEM.
+De portaalhandler voor Director-landinstellingen kan worden geconfigureerd met de paden om te controleren op informatie over de landinstelling. Dit omvat gewoonlijk alles onder `/content` en met de positie van de landinstellingsgegevens in het pad. Standaard volgt de landinstellingshandler de aanbevolen procedure voor het structureren van meertalige sites in AEM.
 
 Als er op uw site geen strenge regel voor de verwerking van de landinstellingsgegevens in het pad is, is het mogelijk om de landinstellingshandler te vervangen door uw eigen implementatie.
 
@@ -614,7 +617,7 @@ Wanneer het uitvoeren van zulk een dienst, zorg ervoor om het **service.ranking*
 | **Naam** | **Beschrijving** | **Standaardgedrag** |
 |---|---|---|
 | Authenticator | Verstrekt de authentificatieinformatie aan AEM | Gebruikt een configureerbare technische gebruiker voor zowel auteur als publiceert. Of SSO kan worden gebruikt. |
-| HTMLRewriter | Hiermee herschrijft u koppelingen, afbeeldingen, enzovoort. | Herschrijft AEM-koppelingen naar poortkoppelingen, kan worden uitgebreid met een UrlMapper en een TextMapper |
+| HTMLRewriter | Hiermee herschrijft u koppelingen, afbeeldingen, enzovoort. | Herschrijft AEM verbindingen aan poortverbindingen, kan door een UrlMapper en een TextMapper worden uitgebreid |
 | HttpClientService | Hiermee worden alle http-verbindingen afgehandeld | Standaardimplementatie |
 | LocaleHandler | De informatie over de landinstelling verwerken | Hiermee herschrijft u een koppeling naar de inhoud ten opzichte van de landinstelling. |
 | LocaleDetector | Detecteert de landinstelling van de gebruiker. | Gebruikt de landinstelling die door het portaal wordt opgegeven. |
@@ -623,15 +626,15 @@ Wanneer het uitvoeren van zulk een dienst, zorg ervoor om het **service.ranking*
 
 ### Portlet-gebeurtenissen {#portlet-events}
 
-De portlet API (JSR-286) specificeert portlet gebeurtenissen. AEM content portlet heeft een geïntegreerde bridge, die portlet events voor de AEM portlet distribueert als OSGi events - dit maakt het afhandelen van portlet gebeurtenissen pluggable.
+De portlet API (JSR-286) specificeert portlet gebeurtenissen. De AEM inhoudsporlet heeft een geïntegreerde brug, die portletgebeurtenissen voor AEM portlet als OSGi gebeurtenissen verspreidt - dit maakt behandeling van portlet gebeurtenissen pluggable.
 
 Als u specifieke gebeurtenissen wilt behandelen, verklaar deze als ontvangende gebeurtenissen in de plaatsingsbeschrijver (of vorm het door uw portalserver) en voer de dienst OSGi uit die de interface EventHandler (zie specificatie OSGi EventAdmin) verklaren.
 
 Wanneer een portlet gebeurtenis voorkomt, wordt een specifieke gebeurtenis OSGi verzonden die uw manager aanhaalt. De manager krijgt alle contextinformatie en kan de status van portlet dienovereenkomstig bijwerken of nieuwe gebeurtenissen verzenden. In feite kan binnen de handgreepmethode alle functionaliteit van de portlet-gebeurtenisfase worden gebruikt.
 
-## AEM gebruiken als portal {#using-aem-as-a-portal}
+## AEM gebruiken als portaal {#using-aem-as-a-portal}
 
-Met de component Portlet kunt u portletvensters toevoegen aan AEM-pagina&#39;s. Met gedeelde bibliotheken die u op de toepassingsserver installeert, kan de Portlet-component de geïmplementeerde portlet-toepassingen detecteren.
+Gebruik de component Portlet om portletvensters aan AEM pagina&#39;s toe te voegen. Met gedeelde bibliotheken die u op de toepassingsserver installeert, kan de Portlet-component de geïmplementeerde portlet-toepassingen detecteren.
 
 Als u AEM als portal wilt gebruiken, voert u de volgende taken uit:
 
@@ -646,7 +649,7 @@ Als u AEM als portal wilt gebruiken, voert u de volgende taken uit:
 
 ### De portletcomponent installeren {#installing-the-portlet-component}
 
-Het JAR-bestand van AEM Quickstart bevat de portlet-componentbestanden. Als u de bestanden wilt ophalen (cq-portlet-components.zip), kunt u de QuickStart uitvoeren of de inhoud extraheren.
+Het AEM QuickStart JAR-bestand bevat de portlet-componentbestanden. Als u de bestanden wilt ophalen (cq-portlet-components.zip), kunt u de QuickStart uitvoeren of de inhoud extraheren.
 
 1. Execute or extract the contents of the Quickstart JAR file, and locate the cq-portlet-components.zip file corresponding:
 
@@ -675,7 +678,7 @@ Voeg de portletcomponent aan het paragraafsysteem toe zodat het aan auteurs besc
 
 ### Uw portlettoepassingen configureren en implementeren {#configuring-and-deploying-your-portlet-applications}
 
-Implementeer de portlets naar de webcontainer van de toepassingsserver, zodat deze beschikbaar zijn voor de Portal-component. Voordat u de portlettoepassing implementeert, moet u de toepassing zo configureren dat deze de AEM-portalcontainer servlet laadt. Met deze configuratie heeft de component Portlet toegang tot de portlets.
+Implementeer de portlets naar de webcontainer van de toepassingsserver, zodat deze beschikbaar zijn voor de Portal-component. Voordat u de portlettoepassing implementeert, moet u de toepassing zo configureren dat deze de AEM portletcontainer servlet laadt. Met deze configuratie heeft de component Portlet toegang tot de portlets.
 
 1. Extraheer de inhoud van het WAR-bestand van de portlettoepassing.
 
@@ -702,7 +705,7 @@ Implementeer de portlets naar de webcontainer van de toepassingsserver, zodat de
 
 1. Implementeer de portlettoepassing op de toepassingsserver. Raadpleeg de documentatie bij de toepassingsserver voor meer informatie.
 
-### portlets toevoegen aan uw AEM-pagina {#adding-portlets-to-your-aem-page}
+### portlets toevoegen aan uw AEM pagina {#adding-portlets-to-your-aem-page}
 
 Met de component Portal kunt u een portletvenster toevoegen aan uw webpagina. Gebruik de componenteigenschappen om portlet aan vertoning te specificeren.
 
@@ -721,11 +724,11 @@ Met de component Portal kunt u een portletvenster toevoegen aan uw webpagina. Ge
    >
    >Als u dezelfde portlet meerdere keren op dezelfde pagina wilt gebruiken, geeft u elke portlet een andere venster-id.
 
-1. Click **OK**. De portlet wordt weergegeven op uw AEM-pagina.
+1. Click **OK**. De portlet wordt weergegeven op de AEM pagina.
 
    ![chlimage_1-12](assets/chlimage_1-12.png)
 
-## AEM in een portlet installeren, configureren en gebruiken {#installing-configuring-and-using-aem-in-a-portlet}
+## Het installeren, het Vormen, en het Gebruiken van AEM in een Portlet {#installing-configuring-and-using-aem-in-a-portlet}
 
 Om toegang te krijgen tot inhoud die wordt geleverd door AEM WCM, moet de portalserver worden uitgerust met de AEM Portal Director Portlet. U doet dit door portlet te installeren, te vormen en toe te voegen aan de portlet pagina door de stappen te gebruiken die in deze sectie worden verstrekt.
 
@@ -747,7 +750,7 @@ De portlet installeren:
 
 1. Meld u aan bij het portaal met beheerdersrechten.
 1. Navigeer naar het gedeelte Portlet Management van uw webportal.
-1. Klik op Installeren en blader naar de AEM-portlettoepassing (cq-portlet-webapp.war) die u hebt gedownload en voer andere belangrijke informatie over de portlet in.
+1. Klik op Installeren en blader naar de AEM portlet-toepassing (cq-portlet-webapp.war) die u hebt gedownload en voer andere belangrijke informatie over de portlet in.
 
    Voor andere essentiële portletinformatie, kunt u of de gebreken goedkeuren of de waarden veranderen. Als u de standaardwaarden accepteert, is portlet beschikbaar op https://&lt;wps-host>:&lt;port>/wps/PA_CQ5_Portlet. De OSGi-beheerconsole die door de portlet wordt geleverd, is beschikbaar op https://&lt;wps-host>:&lt;port>/wps/ PA_CQ5_Portlet/cqbridge/system/console (de standaardgebruikersnaam/het standaardwachtwoord is admin/admin).
 
@@ -755,7 +758,7 @@ De portlet installeren:
 
 ### De portlet configureren {#configuring-the-portlet}
 
-Nadat u portlet installeert, moet u het vormen zodat het de URLs van de onderliggende instanties AEM (auteur en publiceer) kent. U kunt ook andere opties configureren.
+Nadat u portlet installeert, moet u het vormen zodat het URLs van de onderliggende AEM (auteur en publiceer) kent. U kunt ook andere opties configureren.
 
 Om portlet te vormen:
 
@@ -764,17 +767,18 @@ Om portlet te vormen:
 
    >[!NOTE]
    >
-   >Als portlet wordt gevormd om met auteur te verbinden AEM en instanties te publiceren die op een contextweg verschillend dan** /** lopen, moet u de kracht **CQUrlInfo** in de configuratie van de Manager van de Bibliotheek van HTML van deze instanties (b.v. via de console van de Webconsole van Felix) toelaten of zal het uitgeven niet werken en zal het voorkeurendialoog niet verschijnen.
+   >Als portlet wordt gevormd om met AEM auteur te verbinden en instanties te publiceren die op een contextweg verschillend dan** /** lopen, moet u de kracht **CQUrlInfo** in de configuratie van de Manager van de Bibliotheek van HTML van deze AEM instanties (b.v. via de Webconsole van Felix) toelaten of zal het uitgeven niet werken en zal het voorkeurendialoog niet verschijnen.
 
 1. Sla de configuratiewijzigingen op in de toepassingsserver.
 
 1. Navigeer naar de OSGI-beheerconsole voor de portlet. De standaardlocatie is `https://<wps-host>:<port>/wps/PA_CQ5_Portlet/cqbridge/system/console/configMgr`. De standaardgebruikersnaam/het standaardwachtwoord is **admin/admin**.
 
-1. Selecteer de configuratie van de Configuratie **van de Server van CQ van de Directeur van het Portaal van de** Dag en geef de volgende waarden uit:
+1. Selecteer de configuratie van de Director CQ-serverconfiguratie **voor het** Dagportaal en bewerk de volgende waarden:
 
    * **Basis-URL** auteur: De basis-URL voor de AEM-auteurinstantie.
-   * **Basis-URL** publiceren: De basis-URL voor de publicatie-instantie van AEM.
+   * **Basis-URL** publiceren: De basis-URL voor de AEM-publicatie-instantie.
    * **Auteur wordt gebruikt als publicatie**: Wordt de instantie van de auteur gebruikt als publicatie-instantie (voor ontwikkeling)?
+
    ![chlimage_1-13](assets/chlimage_1-13.png)
 
 1. Click **Save**. U kunt nu portlet aan portlet aan portlet pagina&#39;s toevoegen en het portaal gebruiken.
@@ -785,11 +789,11 @@ Wanneer inhoud van AEM wordt gevraagd, gebruikt portlet de huidige vertoningswij
 
 Als portlet op de hulpwijze overschakelt en de `appendHelpViewModeAsSelector` wordt geselecteerd, dan wordt de `help` selecteur ook toegevoegd, bijvoorbeeld, `http://localhost:4503/content/geometrixx/en.portlet.html.help`. Als het portletvenster wordt gemaximaliseerd en het `appendMaxWindowStateAsSelector` wordt geselecteerd, dan wordt de selecteur ook toegevoegd, bijvoorbeeld, `http://localhost:4503/content/geometrixx/en.portlet.max.help`.
 
-De kiezers kunnen worden geëvalueerd in AEM en een andere sjabloon kan worden gebruikt voor verschillende kiezers.
+De kiezers kunnen in AEM worden geëvalueerd en een andere sjabloon kan voor verschillende kiezers worden gebruikt.
 
-### Een inhouds-URL-kaart gebruiken in AEM {#using-a-content-url-map-in-aem}
+### Een URL-toewijzing voor inhoud in AEM gebruiken {#using-a-content-url-map-in-aem}
 
-Doorgaans wijst het beginpad rechtstreeks naar de inhoud in AEM. Als u beginpaden echter in AEM wilt behouden in plaats van in de portletvoorkeuren, kunt u net als in AEM het beginpad naar een inhoudskaart plaatsen `/var/portlets`. In dit geval kan een script dat in AEM wordt uitgevoerd, de verzonden informatie van de portlet gebruiken om te bepalen welke URL de start-URL is. Het zou een omleiding aan correcte URL moeten uitgeven.
+Doorgaans wijst het beginpad rechtstreeks naar de inhoud in AEM. Als u beginpaden echter in AEM wilt behouden in plaats van in de portletvoorkeuren, kunt u, net als bij de portletvoorkeuren, het beginpad naar een inhoudsoverzicht AEM plaatsen `/var/portlets`. In dit geval, kan een manuscript dat in AEM loopt de voorgelegde informatie van portlet gebruiken om te beslissen welke url de begin URL is. Het zou een omleiding aan correcte URL moeten uitgeven.
 
 #### De portlet toevoegen aan de portaalpagina {#adding-the-portlet-to-the-portal-page}
 
