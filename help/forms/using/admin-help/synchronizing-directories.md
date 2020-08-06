@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '1040'
+ht-degree: 0%
 
 ---
 
@@ -23,7 +26,7 @@ De synchronisatie van de folder wordt gebruikt om details van de indexservers te
 
 U kunt ook een dagelijkse synchronisatieplanning instellen om de gebruikersbeheerdatabase automatisch te synchroniseren met wijzigingen of updates van de brondirectoryservers. Houd er echter rekening mee dat dit proces netwerk- en serverbronnen gebruikt. Kies periodes met weinig gebruikstijd en vermijd het plannen van onnodige synchronisaties die systeem en netwerkmiddelen opbinden. Als u overbodige synchronisaties wilt minimaliseren, gebruikt u in plaats daarvan de optie Direct synchroniseren.
 
-U kunt ook opgeven of gebruikers- en groepsgegevens bij het synchroniseren van domeinen moeten worden overgebracht naar Adobe LiveCycle Content Services 9 (afgekeurd).
+U kunt ook opgeven of gebruikers- en groepsgegevens moeten worden doorgegeven naar Adobe LiveCycle Content Services 9 (afgekeurd) bij het synchroniseren van domeinen.
 
 >[!NOTE]
 >
@@ -31,11 +34,11 @@ U kunt ook opgeven of gebruikers- en groepsgegevens bij het synchroniseren van d
 
 >[!NOTE]
 >
->Als het proces van de domeinsynchronisatie wordt onderbroken (bijvoorbeeld, is de toepassingsserver gesloten tijdens het proces), wacht terwijl alvorens u probeert om het domein te synchroniseren. Kijk naar de status om de status van synchronisatie te evalueren. Als Gebruikersbeheer een vergrendeling heeft verkregen voordat de toepassing wordt afgesloten, wacht u 10 minuten tot de vergrendeling is opgeheven nadat de server opnieuw is opgestart. Als de synchronisatiestatus &quot;Bezig&quot; is, maar de synchronisatie wordt onderbroken of geblokkeerd, probeert het Gebruikersbeheer de synchronisatie na 3 minuten opnieuw. Na drie mislukte pogingen, verklaart het Beheer van de Gebruiker de synchronisatie een mislukking en geeft het slot vrij.
+>Als het proces van de domeinsynchronisatie wordt onderbroken (bijvoorbeeld, is de toepassingsserver gesloten tijdens het proces), wacht terwijl alvorens u probeert om het domein te synchroniseren. Kijk naar de status om de status van synchronisatie te evalueren. Als Gebruikersbeheer een vergrendeling heeft verkregen voordat het programma wordt afgesloten, wacht u 10 minuten tot de vergrendeling is opgeheven nadat de server opnieuw is opgestart. Als de synchronisatiestatus &quot;Bezig&quot; is, maar de synchronisatie wordt onderbroken of geblokkeerd, probeert het Gebruikersbeheer de synchronisatie na 3 minuten opnieuw. Na drie mislukte pogingen, verklaart het Beheer van de Gebruiker de synchronisatie een mislukking en geeft het slot vrij.
 
 >[!NOTE]
 >
->Adobe® LiveCycle® Content Services ES (Afgekeurd) is een inhoudsbeheersysteem dat met LiveCycle is geïnstalleerd. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe-productlevenscyclusdocument](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)beheren voor informatie over het configureren van Inhoudsservices (afgekeurd).
+>Adobe® LiveCycle® Content Services ES (Afgekeurd) is een contentbeheersysteem dat is geïnstalleerd met LiveCycle. Hiermee kunnen gebruikers processen ontwerpen, beheren, bewaken en optimaliseren die op mensen zijn gericht. De ondersteuning voor Content Services (Afgekeurd) eindigt op 31-12-2014. Zie [Adobe product lifecycle document](https://www.adobe.com/support/products/enterprise/eol/eol_matrix.html). Zie [Inhoudsservices](https://help.adobe.com/en_US/livecycle/9.0/admin_contentservices.pdf)beheren voor informatie over het configureren van Inhoudsservices (afgekeurd).
 
 ## Synchronisatie van delta-directory inschakelen {#enable-delta-directory-synchronization}
 
@@ -69,7 +72,7 @@ U kunt Gebruikersbeheer configureren om periodiek te controleren op mislukte pog
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren.
 1. Onder de Uitdrukking van de Uitsnede van de Finisher van de Synch, ga een kroonuitdrukking in die het interval vertegenwoordigt waarmee het Beheer van de Gebruiker mislukte synchronisaties opnieuw probeert. Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taakplanningssysteem van Kwartz, versie 1.4.0.
 
-   De standaardwaarde is 0 0/13 &amp;ast; ?  &amp;ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
+   De standaardwaarde is 0 0/13 &amp;ast; ? &amp;ast; , wat betekent dat de controle elke 13 minuten plaatsvindt.
 
 ## Mappen handmatig synchroniseren {#manually-synchronize-directories}
 
