@@ -1,6 +1,6 @@
 ---
-title: Analyserapporten van AEM Forms weergeven en begrijpen
-seo-title: Analyserapporten van AEM Forms weergeven en begrijpen
+title: AEM Forms-analyserapporten weergeven en begrijpen
+seo-title: AEM Forms-analyserapporten weergeven en begrijpen
 description: AEM Forms integreert met Adobe Analytics en biedt u een overzicht en gedetailleerde analyses van uw gepubliceerde adaptieve formulieren.
 seo-description: AEM Forms integreert met Adobe Analytics en biedt u een overzicht en gedetailleerde analyses van uw gepubliceerde adaptieve formulieren.
 uuid: 193f472d-4aa3-4c31-b3c7-b5a2957dfb3d
@@ -10,21 +10,24 @@ topic-tags: integrations
 discoiquuid: a9045816-cae7-42cf-a734-6c3a25d0f522
 translation-type: tm+mt
 source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+workflow-type: tm+mt
+source-wordcount: '1075'
+ht-degree: 0%
 
 ---
 
 
-# Analyserapporten van AEM Forms weergeven en begrijpen {#view-and-understand-aem-forms-analytics-reports}
+# AEM Forms-analyserapporten weergeven en begrijpen {#view-and-understand-aem-forms-analytics-reports}
 
-Adobe Experience Manager Forms kan worden geïntegreerd met Adobe Analytics, waarmee u prestatiegegevens voor gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
+Adobe Experience Manager Forms is geïntegreerd met Adobe Analytics waarmee u prestatiegegevens voor gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
 
 ## Analyses instellen {#setting-up-analytics}
 
-De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Zie AEM-formulieren [installeren en configureren voor informatie over het installeren van het invoegpakket](/help/forms/using/installing-configuring-aem-forms-osgi.md).
+De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Zie AEM Forms [](/help/forms/using/installing-configuring-aem-forms-osgi.md)installeren en configureren voor informatie over het installeren van het invoegpakket.
 
-Naast het invoegpakket hebt u een Adobe Analytics-account nodig. Zie [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)voor meer informatie over de oplossing.
+Naast het invoegpakket hebt u een Adobe Analytics-account nodig. Zie [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)voor informatie over de oplossing.
 
-Zodra u het invoegpakket voor AEM Forms en een Adobe Analytics-account hebt, integreert u de Adobe Analytics-account met AEM Forms en schakelt u het bijhouden van formulieren of documenten in zoals wordt beschreven in Analytics en Reports [](/help/forms/using/configure-analytics-forms-documents.md)configureren.
+Zodra u het AEM Forms-add-onpakket en een Adobe Analytics-account hebt, integreert u Adobe Analytics-account met AEM Forms en schakelt u het bijhouden van gegevens in uw formulieren of documenten in zoals beschreven in Analyses en rapporten [](/help/forms/using/configure-analytics-forms-documents.md)configureren.
 
 ## Hoe gebruikersinteractiegegevens worden vastgelegd {#how-user-interaction-information-is-recorded}
 
@@ -48,21 +51,21 @@ Wanneer een gebruiker met het formulier werkt, worden de interacties opgenomen e
 
 Voer de volgende stappen uit om analyserapporten weer te geven:
 
-1. Meld u aan bij de AEM-portal op `https://[hostname]:[port]`
-1. Klik op **Formulieren > Formulieren en documenten**.
+1. Meld u aan bij het portaal AEM op `https://[hostname]:[port]`
+1. Klik op **Forms > Forms en documenten**.
 
 1. Selecteer het formulier waarvoor u de analyserapporten wilt weergeven.
 1. Selecteer **Meer > Analyserapporten**.
 
 ![analyserapport](assets/analyticsreport.png)
 
-**** A. Analyserapport, opdracht
+**A.** Analyserapport, opdracht
 
-In AEM Forms worden analyserapporten voor het formulier en voor elk deelvenster in het formulier weergegeven, zoals hieronder wordt weergegeven.
+AEM Forms geeft analyserapporten voor het formulier en voor elk deelvenster in het formulier weer, zoals hieronder wordt weergegeven.
 
 ![Samenvattend verslag van een adaptief formulier](assets/analyticsdashboard_callout.png)
 
-************ A. Conversies **B. Samenvatting op formulierniveau** C.**Overzicht op paneelniveau** D. Browsers van bezoekers - filter **E. Besturingssysteem van bezoekers - filter** F. Taal van bezoekers - filter
+**A.** Conversies **B.** Samenvatting op formulierniveau **C.** Overzicht op paneelniveau **D.** Browsers van bezoekers - filter **E.** Besturingssysteem van bezoekers - filter **F.** Taal van bezoekers - filter
 
 Standaard wordt het analyserapport voor de laatste zeven dagen weergegeven. U kunt rapporten weergeven voor de laatste 15 dagen, de laatste één maand enzovoort, of een datumbereik opgeven.
 
