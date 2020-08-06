@@ -30,7 +30,7 @@ De bijdragelimieten kunnen individueel van de console [van de](members.md) Leden
 
 Gebruikend de console van Leden, kunnen de bijdragegrenzen proactief voor een lid door een communautaire manager op elk ogenblik worden verwijderd, of reactief worden verwijderd wanneer een lid een bericht naar een communautaire manager verzendt die zulk een verzoek doet.
 
-## Configuratie van door de gebruiker gegenereerde inhoutheffingslimieten voor AEM Communities {#aem-communities-user-generated-content-contribution-limits-configuration}
+## Configuratie van door AEM Communities-gebruikers gegenereerde limiet voor bijdragen aan inhoud {#aem-communities-user-generated-content-contribution-limits-configuration}
 
 Deze OSGi-configuratie
 
@@ -53,7 +53,7 @@ Om deze configuratie te bereiken OSGi:
 
 * **[!UICONTROL Automatically Apply UGC Contribution Limits]**
 
-   Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het lid van de gemeenschap en kan van de [lidconsole](members.md)worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een toegestane lijst met domeinen worden nooit beperkt.
+   Als deze optie ingeschakeld is, worden automatisch bijdragelimieten ingesteld voor gebruikers die zich als leden van de gemeenschap registreren. Dit wordt weerspiegeld in het profiel van het lid van de gemeenschap en kan van de [lidconsole](members.md)worden toegelaten/worden onbruikbaar gemaakt. Nieuwe leden met een e-mailadres uit een lijst van gewenste personen domeinen hebben nooit een beperking.
 
    De optie Standaard is uitgeschakeld.
 
@@ -71,11 +71,11 @@ Om deze configuratie te bereiken OSGi:
 
 * **[!UICONTROL Domains]**
 
-   Een allowlist van een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
+   Een lijst met lijsten van gewenste personen van een of meer e-maildomeinen. Selecteer + pictogram om extra ingangen te maken.
 
-   Gebruikers met e-mailadressen in de lijst met toegestane domeinen worden niet beïnvloed wanneer de UGC-bijdragelimieten automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit verplicht om te posten.
+   Gebruikers met e-mailadressen in de lijst van gewenste personen van domeinen worden niet beïnvloed wanneer de UGC-bijdragelimieten automatisch worden toegepast. Als domein bijvoorbeeld aan de lijst met domeinen `mycompany.com` wordt toegevoegd, `me@mycompany.com` wordt een lid met een e-mailadres nooit verplicht om te posten.
 
-   De standaardwaarde is een lege allowlist.
+   Standaard is dit een lege lijst van gewenste personen.
 
 * **[!UICONTROL Messaging Recipients]**
 
