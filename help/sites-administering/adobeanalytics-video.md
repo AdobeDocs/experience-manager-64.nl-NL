@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Video bijhouden configureren voor Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
-Er zijn verschillende methoden beschikbaar voor het bijhouden van videogebeurtenissen. Twee hiervan zijn verouderde opties voor oudere versies van Adobe Analytics. Deze oudere optie is: Verouderde mijlpalen en oude seconden.
+Er zijn verschillende methoden beschikbaar voor het bijhouden van videogebeurtenissen, waarvan er twee oudere opties zijn voor oudere versies van Adobe Analytics. Deze oudere optie is: Verouderde mijlpalen en oude seconden.
 
 >[!NOTE]
 >
@@ -51,7 +51,7 @@ Gebruik de volgende procedure om een framework voor het bijhouden van video&#39;
    * [Legacy-mijlpalen](/help/sites-administering/adobeanalytics.md)
    * [Oudere seconden](/help/sites-administering/adobeanalytics.md)
 
-1. Wanneer u een methode voor bijhouden selecteert, wordt de lijst met CQ-variabelen dienovereenkomstig gewijzigd. Gebruik de volgende secties voor informatie over hoe u de component verder kunt configureren en de CQ-variabelen aan de Adobe Analytics-eigenschappen kunt toewijzen.
+1. Wanneer u een methode voor bijhouden selecteert, wordt de lijst met CQ-variabelen dienovereenkomstig gewijzigd. Gebruik de secties die volgen voor informatie over hoe te om de component verder te vormen en de CQ variabelen met de eigenschappen van Adobe Analytics in kaart te brengen.
 
 ## Mijlpalen {#milestones}
 
@@ -138,14 +138,14 @@ In de volgende tabel worden de standaard CQ-variabelen beschreven die voor de me
 
    De verschuivingswaarden moeten gehele getallen zijn die groter zijn dan 0. De standaardwaarde is `10,25,50,75`.
 
-1. Als u de CQ-variabelen wilt toewijzen aan de Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
+1. Als u de CQ-variabelen wilt toewijzen aan Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
 
    Zie de handleiding [Metingsvideo in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) voor informatie over het optimaliseren van de toewijzingen.
 
 1. [Voeg het framework](/help/sites-administering/adobeanalytics.md) toe aan de pagina.
-1. Als u de instelling wilt testen in de **voorvertoningsmodus**, speelt u de video af om Adobe Analytics-aanroepen te activeren.
+1. Als u de instelling wilt testen in de modus **** Voorvertoning, speelt u de video af om Adobe Analytics-aanroepen te activeren.
 
-De volgende voorbeelden van trackinggegevens van Adobe Analytics zijn van toepassing op het bijhouden van mijlpaden met behulp van trackverschuivingen van 4,8,16,20 en 24, en de volgende toewijzingen voor de CQ-variabelen:
+De volgende voorbeelden van Adobe Analytics-volggegevens zijn van toepassing op het bijhouden van mijlpaden met gebruik van trackverschuivingen van 4,8,16,20 en 24, en de volgende toewijzingen voor de CQ-variabelen:
 
 <table> 
  <tbody> 
@@ -222,9 +222,9 @@ In dit voorbeeld wordt de component Video als volgt weergegeven op de frameworkp
 
 >[!NOTE]
 >
->Als u de aanroepen naar Adobe Analytics wilt bekijken, gebruikt u een geschikt programma, zoals DigitalPulse Debugger of Flash.
+>Om de vraag te zien die aan Adobe Analytics wordt gemaakt gebruik een aangewezen hulpmiddel, zoals Debugger DigitalPulse of Fiddler.
 
-Aanroepen naar Adobe Analytics die het meegeleverde voorbeeld gebruiken, moeten er als volgt uitzien bij weergave met DigitalPulse-foutopsporing:
+De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit moeten kijken wanneer bekeken met Debugger DigitalPulse:
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -273,12 +273,12 @@ eventdata.events.milestoneXX
 
    De verschuivingswaarden moeten gehele getallen zijn die groter zijn dan 0.
 
-1. Als u de CQ-variabelen wilt toewijzen aan de Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
+1. Als u de CQ-variabelen wilt toewijzen aan Adobe Analytics-eigenschappen, sleept u de Adobe Analytics-eigenschappen van ContentFinder naast de CQ-variabele op de component.
 
    Zie de handleiding [Metingsvideo in Adobe Analytics](https://docs.adobe.com/content/help/en/media-analytics/using/sdk-implement/setup/setup-overview.html) voor informatie over het optimaliseren van de toewijzingen.
 
 1. [Voeg het framework](/help/sites-administering/adobeanalytics.md) toe aan de pagina.
-1. Als u de instelling wilt testen in de **voorvertoningsmodus**, speelt u de video af om Adobe Analytics-aanroepen te activeren.
+1. Als u de instelling wilt testen in de modus **** Voorvertoning, speelt u de video af om Adobe Analytics-aanroepen te activeren.
 
 ## Legacy-mijlpalen {#legacy-milestones}
 
@@ -291,7 +291,8 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, waarbij het verschil is 
 1. Stel de verschuiving track in.
 
    * e.g.10,50,75,100
-   De gegevens die naar Adobe Analytics worden verzonden, kunnen bovendien minder worden aangepast. er zijn slechts drie variabelen beschikbaar om in kaart te brengen :
+
+   Bovendien is de informatie die naar Adobe Analytics wordt verzonden minder aanpasbaar; er zijn slechts drie variabelen beschikbaar om in kaart te brengen :
 
 <table> 
  <tbody> 
@@ -318,7 +319,7 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, waarbij het verschil is 
 
    De **rest van de relevante informatie** in de oproep wordt samengevoegd tot **één** variabele met de naam **pev3**.
 
-   **Voorbeeldaanroepen** naar Adobe Analytics aan de hand van het voorbeeld moeten er als volgt uitzien bij weergave met DigitalPulse-foutopsporing:
+   **Voorbeeldaanroepen** naar Adobe Analytics met behulp van het gegeven voorbeeld moeten er als volgt uitzien bij weergave met DigitalPulse Debugger:
 
    ![lmilestones1](assets/lmilestones1.png)
 
@@ -333,7 +334,7 @@ Deze methode is vergelijkbaar met de methode Mijlpalen, waarbij het verschil is 
 
 ## Verouderde seconden {#legacy-seconds}
 
-Als u de methode** legacy seconds*** gebruikt, worden aanroepen van Adobe Analytics elke N-de seconde geactiveerd, waarbij N is opgegeven in het veld Trackverschuiving.
+Wanneer het gebruiken van de** erfenisseconden** methode, worden de vraag van Adobe Analytics teweeggebracht om de n-de seconde, waar N op het Spoor compensatieveld wordt gespecificeerd.
 
 1. Stel de verschuiving van track in op een willekeurig aantal seconden,
 
@@ -342,7 +343,7 @@ Als u de methode** legacy seconds*** gebruikt, worden aanroepen van Adobe Analyt
    >
    >Het veld Tracking-verschuiving accepteert alleen hele getallen die hoger zijn dan 0
 
-   De gegevens die naar Adobe Analytics worden verzonden, kunnen niet worden aangepast. Er zijn slechts drie variabelen beschikbaar voor toewijzing:
+   De gegevens die naar Adobe Analytics worden verzonden, kunnen minder worden aangepast. Er zijn slechts drie variabelen beschikbaar voor toewijzing:
 
 <table> 
  <tbody> 
@@ -369,7 +370,7 @@ Als u de methode** legacy seconds*** gebruikt, worden aanroepen van Adobe Analyt
 
    De **rest van de relevante informatie** in de oproep wordt samengevoegd tot **één** variabele met de naam **pev3**.
 
-   Aanroepen naar Adobe Analytics die het meegeleverde voorbeeld gebruiken, moeten er als volgt uitzien bij weergave met DigitalPulse-foutopsporing:
+   De vraag aan Adobe Analytics die het verstrekte voorbeeld gebruikt zou als dit moeten kijken wanneer bekeken met Debugger DigitalPulse:
 
    ![lseconds](assets/lseconds.png)
 
