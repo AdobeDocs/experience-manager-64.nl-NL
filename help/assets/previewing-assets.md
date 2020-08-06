@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 77296bff-8429-4240-af93-26076ae431ec
 translation-type: tm+mt
 source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+workflow-type: tm+mt
+source-wordcount: '1016'
+ht-degree: 2%
 
 ---
 
 
 # Dynamic Media-assets vooraf bekijken {#previewing-assets}
 
-U kunt **[!UICONTROL Voorproef]** gebruiken om te zien hoe een Dynamisch digitaal middel van Media kijkt wanneer het door een klant in hun eigen Webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor de **[!UICONTROL voorvertoning]**.
+U kunt gebruiken **[!UICONTROL Preview]** om te zien hoe een digitaal middel van Dynamische Media eruit ziet wanneer het door een klant in hun eigen Webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor het **[!UICONTROL Preview]** element.
 
 Een viewer is een verzameling van verschillende instellingen of &#39;voorinstellingen&#39;, zoals de weergavegrootte van de viewer, het zoomgedrag, kleurenschema&#39;s, randen, lettertypen enzovoort, die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven.
 
@@ -28,14 +31,14 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
 
 >[!NOTE]
 >
->Wanneer u in AEM op een webpagina (Sites) werkt, kunt u geen voorvertoning van elementen weergeven in de modus **[!UICONTROL Bewerken]** . U moet naar de modus **[!UICONTROL Voorvertoning]** gaan door in de rechterbovenhoek op **Voorvertoning** te klikken.
+>When you are on a webpage (Sites) in AEM, you cannot preview assets in **[!UICONTROL Edit]** mode. You need to go to **[!UICONTROL Preview]** mode by clicking **Preview** in the upper right-hand corner.
 
 **Een voorvertoning van elementen** weergeven:
 
-1. Tik op de pagina **Navigatie** in **[!UICONTROL Adobe Experience Manager op]** Middelen **en **Bestanden****op om elementen te openen.
-1. Tik in de rechterbovenhoek van de pagina vanuit de vervolgkeuzelijst **[!UICONTROL Weergave]** op **[!UICONTROL Lijstweergave]**.
-1. (Optioneel) Gebruik de kolom **[!UICONTROL Type]** om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
-1. Klik onder de kolom **[!UICONTROL Titel]** op de titelnaam (niet op de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
+1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Asset]s **, then **[!UICONTROL Files]**to access assets.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
+1. (Optioneel) Gebruik de **[!UICONTROL Type]** kolom om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
+1. Klik onder de **[!UICONTROL Title]** kolom op de titelnaam (niet op de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
 1. Voer afhankelijk van het type element waarop u hebt geklikt een van de volgende handelingen uit:
 
 <table> 
