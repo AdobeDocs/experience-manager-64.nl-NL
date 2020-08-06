@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
 translation-type: tm+mt
 source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+workflow-type: tm+mt
+source-wordcount: '343'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ Soms blijven de gegevens in een paar velden ongewijzigd wanneer gebruikers het f
 
 Voer de volgende stappen uit om een sjabloon te maken:
 
-1. Open een formulier en selecteer of vul de velden in die bijna identieke waarden hebben wanneer u het gebruikt. U kunt een bijlage opnemen met de sjabloon die u gewoonlijk toevoegt wanneer u het formulier invult.
+1. Open een formulier en selecteer of vul de velden met bijna identieke waarden telkens wanneer u het gebruikt. U kunt een bijlage opnemen met de sjabloon die u gewoonlijk toevoegt wanneer u het formulier invult.
 1. Tik op het pictogram **Opslaan als sjabloon** ![save_as_](assets/save_as_template.png)template. Er wordt een dialoogvenster weergegeven waarin u de naam van de sjabloon kunt opgeven.
 1. Geef de naam van de sjabloon op en tik op **Opslaan**. De sjabloon wordt weergegeven in de sjabloonmap.
 
