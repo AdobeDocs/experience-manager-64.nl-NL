@@ -1,8 +1,8 @@
 ---
 title: Segmentatie configureren
 seo-title: Segmentatie configureren
-description: Leer hoe te om segmentatie voor Campagne te vormen AEM.
-seo-description: Leer hoe te om segmentatie voor Campagne te vormen AEM.
+description: Leer hoe te om segmentatie voor AEM Campagne te vormen.
+seo-description: Leer hoe te om segmentatie voor AEM Campagne te vormen.
 uuid: f22e41b6-d9d9-4f18-9925-2d4aebc167b3
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 49c9c9ab-632a-40f7-8c30-d6a8c0f1b420
 translation-type: tm+mt
 source-git-commit: be46329cfe5c6fee28f616f2257e215df402e94d
+workflow-type: tm+mt
+source-wordcount: '1106'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Afhankelijk van de informatie die u reeds over uw plaatsbezoekers en de doelstel
 
 Deze segmenten worden vervolgens gebruikt om een bezoeker specifieke inhoud te bieden. Deze inhoud wordt bijgehouden in de sectie [Campagnes](/help/sites-authoring/personalization.md) van de website. De hier gedefinieerde taserpagina&#39;s kunnen als taseralinea&#39;s op elke pagina worden opgenomen en definiëren voor welk bezoekerssegment de gespecialiseerde inhoud van toepassing is.
 
-Met AEM kunt u eenvoudig segmenten, trasters en campagnes maken en bijwerken. Het staat u ook toe om de resultaten van uw definities te verifiëren.
+AEM kunt u eenvoudig segmenten, trasters en campagnes maken en bijwerken. Het staat u ook toe om de resultaten van uw definities te verifiëren.
 
 Met de **segmenteditor** kunt u eenvoudig een segment definiëren:
 
@@ -129,7 +132,7 @@ Het nieuwe segment definiëren:
 
    ![screen_shot_2012-02-02at101726am](assets/screen_shot_2012-02-02at101726am.png)
 
-1. **Gebruik de zijbalk of het contextmenu (klik met de rechtermuisknop en selecteer vervolgens** Nieuw... om het venster van de Component van het Tussenvoegsel Nieuwe te openen) om het segmentspoor te vinden u wenst. Vervolgens sleept u het naar de **Segmenteditor** , zodat het in de standaard **AND** -container wordt weergegeven.
+1. Gebruik de zijbalk of het contextmenu (klik met de rechtermuisknop en selecteer vervolgens **Nieuw...** om het venster van de Component van het Tussenvoegsel Nieuwe te openen) om het segmentspoor te vinden u wenst. Vervolgens sleept u het naar de **Segment-editor** die in de standaard **AND** -container wordt weergegeven.
 1. Dubbelklik op de nieuwe eigenschap om de specifieke parameters te bewerken; bijvoorbeeld de muispositie:
 
    ![screen_shot_2012-02-02at103135am-1](assets/screen_shot_2012-02-02at103135am-1.png)
@@ -143,7 +146,7 @@ Het nieuwe segment definiëren:
 
 ## AND en OR-containers gebruiken {#using-and-and-or-containers}
 
-U kunt complexe segmenten maken in AEM. Het helpt om zich van een paar basispunten bewust te zijn:
+U kunt complexe segmenten in AEM samenstellen. Het helpt om zich van een paar basispunten bewust te zijn:
 
 * Het hoogste niveau van de definitie is altijd de EN container die aanvankelijk wordt gecreeerd; dit kan niet worden veranderd, maar heeft geen effect op de rest van uw segmentdefinitie.
 * Zorg ervoor dat het nesten van de container zinvol is. De containers kunnen als steunen van uw booleaanse uitdrukking worden bekeken.
@@ -152,7 +155,7 @@ In het volgende voorbeeld worden bezoekers geselecteerd die:
 
 Mannelijk en tussen 16 en 65 jaar
 
- OF
+OF
 
 Vrouwen tussen 16 en 62 jaar
 
