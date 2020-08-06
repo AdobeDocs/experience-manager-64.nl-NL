@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
 source-git-commit: d653a5db1b12ae2d650db2894dfa602326f7a295
+workflow-type: tm+mt
+source-wordcount: '956'
+ht-degree: 0%
 
 ---
 
 
 # Scores en Badges Essentials {#scoring-and-badges-essentials}
 
-Met de functie voor scoren en badges van AEM-gemeenschappen kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
+De AEM Communities-functie voor scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
 
 De details van het instellen van de functie worden beschreven op
 
@@ -31,7 +34,7 @@ Deze pagina bevat aanvullende technische details:
 
 >[!CAUTION]
 >
->De implementatiestructuur die zichtbaar is in CRXDE Lite kan worden gewijzigd.
+>De in CRXDE Lite zichtbare implementatiestructuur kan worden gewijzigd.
 
 ## Badges weergeven {#displaying-badges}
 
@@ -79,21 +82,21 @@ Voor gedetailleerde instructies gaat u naar [Een aangepast logbestand](../../hel
 
 U kunt als volgt snel een logbestand instellen:
 
-1. U kunt bijvoorbeeld toegang krijgen tot de webconsolelogondersteuning **[!UICONTROL van]** Adobe Experience Manager
+1. U kunt bijvoorbeeld toegang krijgen tot de **[!UICONTROL Adobe Experience Manager Web Console Log Support]**
 
    * http://localhost:4502/system/console/slinglog
 
-1. Selecteer **[!UICONTROL Nieuwe logboekregistratie toevoegen]**
+1. Selecteer **[!UICONTROL Add new logger]**
 
-   1. Selecteren `DEBUG` voor **[!UICONTROL logniveau]**
-   1. Geef bijvoorbeeld een naam op voor het **[!UICONTROL logbestand]**
+   1. Selecteren `DEBUG` voor **[!UICONTROL Log Level]**
+   1. Voer bijvoorbeeld een naam in voor **[!UICONTROL Log File]**
 
       * logs/scoring-debug.log
-   1. Twee **[!UICONTROL Logger]** -items (klasse) invoeren (met `+` pictogram)
+   1. Twee items **[!UICONTROL Logger]** (klasse) invoeren (met `+` pictogram)
 
       * `com.adobe.cq.social.scoring`
       * `com.adobe.cq.social.badging`
-   1. Selecteer **[!UICONTROL Opslaan]**
+   1. Selecteer **[!UICONTROL Save]**
 
 
 
@@ -103,14 +106,14 @@ Logboekvermeldingen weergeven:
 
 * Vanuit de webconsole
 
-   * Onder het menu **[!UICONTROL Status]**
-   * Logbestanden **[!UICONTROL selecteren]**
+   * Onder het **[!UICONTROL Status]** menu
+   * Selecteer **[!UICONTROL Log Files]**
    * Zoek naar uw naam van het Logdossier, zoals `scoring-debug`
 
 * Op de lokale schijf van de server
 
    * Het logbestand bevindt zich op &lt;*server-install-dir*>/crx-quickstart/logs/&lt;*log-file-name*>.log
-   * Bijvoorbeeld: `.../crx-quickstart/logs/scoring-debug.log`
+   * Bijvoorbeeld, `.../crx-quickstart/logs/scoring-debug.log`
 
 ![chlimage_1-249](assets/chlimage_1-249.png)
 
@@ -122,7 +125,7 @@ In de beschrijvingen voor toegang tot scoring- en merkgegevens wordt JSRP gebrui
 
 **JSRP bij auteur**: experimenteren in de auteursomgeving resulteert in UGC die alleen zichtbaar is vanuit de auteursomgeving.
 
-**JSRP bij publicatie**: Op dezelfde wijze, als het testen op het publicatiemilieu, zal het noodzakelijk zijn om tot CRXDE Lite met administratieve voorrechten op een te publiceren instantie toegang te hebben. Als de publicatie-instantie wordt uitgevoerd in de [productiemodus](../../help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig om CRXDE Lite [in te](../../help/sites-administering/enabling-crxde-lite.md)schakelen.
+**JSRP bij publicatie**: ook als het testen op de publicatieomgeving , is het nodig om toegang te krijgen tot CRXDE Lite met beheerdersrechten voor een publicatie - instantie . Als de publicatie-instantie wordt uitgevoerd in de [productiemodus](../../help/sites-administering/production-ready.md) (geen samplcontent runmode), is het nodig om CRXDE Lite [in te schakelen](../../help/sites-administering/enabling-crxde-lite.md).
 
 De basislocatie van UGC op JSRP is `/content/usergenerated/asi/jcr/`.
 
@@ -133,15 +136,15 @@ De volgende API&#39;s zijn beschikbaar voor gebruik:
 * [com.adobe.cq.social.scoring.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/scoring/api/package-summary.html)
 * [com.adobe.cq.social.badging.api](https://docs.adobe.com/content/docs/en/aem/6-3/develop/ref/javadoc/com/adobe/cq/social/badging/api/package-summary.html)
 
-De nieuwste JavaDocs voor de geïnstalleerde [releases](deploy-communities.md#LatestReleases) zijn beschikbaar voor ontwikkelaars in de opslagplaats van Adobe. Zie [Maven gebruiken voor Gemeenschappen: Javadocs](maven.md#javadocs).
+De nieuwste JavaDocs voor de geïnstalleerde [releases](deploy-communities.md#LatestReleases) zijn beschikbaar voor ontwikkelaars van de opslagplaats van Adobe. Zie [Maven gebruiken voor Gemeenschappen: Javadocs](maven.md#javadocs).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 ### Voorbeeld instellen {#example-setup}
 
-De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen van scoring en badging voor een forum op twee verschillende AEM-sites:
+De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen van scoring en badging voor een forum op twee verschillende AEM sites:
 
-1. Een AEM-site met een unieke id (een communitysite die met een wizard is gemaakt):
+1. Een AEM site met een unieke id (een communitysite die met een wizard is gemaakt):
 
    * De Aan de slag-zelfstudie (Inschakelen) gebruiken die tijdens de [Aan de slag-zelfstudie is gemaakt](getting-started.md)
    * Zoek het knooppunt voor forumpagina
@@ -167,7 +170,7 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
 
 
 
-1. Een AEM-site *zonder* unieke id:
+1. Een AEM site *zonder* unieke id:
 
    * De hulplijn [Community-componenten gebruiken](components-guide.md)
    * Zoek het knooppunt voor forumpagina
@@ -176,12 +179,14 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
    * Eigenschappen voor scoring en badges toevoegen
 
       * 
+
          ```
          scoringRules = [/etc/community/scoring/rules/comments-scoring,
          /etc/community/scoring/rules/forums-scoring]
          ```
 
       * 
+
          ```
          badgingRules =[/etc/community/badging/rules/comments-scoring,
          /etc/community/badging/rules/forums-scoring]
@@ -220,7 +225,8 @@ Aangezien een gebruiker twee bronzen badges heeft verdiend en een moderatorbadge
    >  /etc/community/scoring/rules/site2/forums-scoring
    >
    >
-* unieke badge-afbeeldingen maken voor verschillende AEM-sites
+* maken van unieke badge-afbeeldingen voor verschillende AEM sites
+
 >
 
 
@@ -235,7 +241,7 @@ Voor onderzoeksdoeleinden, gebruikend JSRP bijvoorbeeld, is de basisomslag die s
 
 De onderliggende node van `scoring`is de naam van de scoreregel. Daarom is het verstandig om regelnamen op een server globaal uniek te scoren.
 
-Voor de site Geometrixx Engage bevinden de gebruiker en hun score zich in een pad dat is geconstrueerd met de naam van de scoreregel, site-id ( `engage-ba81p`) van de community, een unieke id en de id van de gebruiker:
+Voor de Geometrixx Engage-site bevinden de gebruiker en hun score zich in een pad dat is geconstrueerd met de naam van de scoreregel, site-id van de community ( `engage-ba81p`), een unieke id en de id van de gebruiker:
 
 * `.../scoring/forums-scoring/engage-ba81p/6d179715c0e93cb2b20886aa0434ca9b5a540401/riley`
 
