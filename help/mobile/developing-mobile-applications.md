@@ -1,8 +1,8 @@
 ---
 title: Mobiele toepassingen ontwikkelen in AEM
 seo-title: Mobiele toepassingen ontwikkelen in AEM
-description: Volg deze pagina om met Adobe PhoneGap Enterprise te beginnen met het ontwikkelen van een mobiele toepassing in AEM.
-seo-description: Volg deze pagina om met Adobe PhoneGap Enterprise te beginnen met het ontwikkelen van een mobiele toepassing in AEM.
+description: Volg deze pagina om te beginnen met het ontwikkelen van mobiele toepassingen in AEM met Adobe PhoneGap Enterprise.
+seo-description: Volg deze pagina om te beginnen met het ontwikkelen van mobiele toepassingen in AEM met Adobe PhoneGap Enterprise.
 uuid: d8442447-ee04-4bb2-a0d7-17dcc8979dba
 contentOwner: User
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fd7bcf17-af7e-4bd6-8137-48401d9743c5
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '602'
+ht-degree: 0%
 
 ---
 
@@ -19,33 +22,33 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-AEM maakt gebruik van Adobe PhoneGap en Adobe Publishing Solutions, waarmee u mobiele toepassingen met veel inhoud en toepassingen op verschillende platforms kunt maken en beheren:
+AEM maakt gebruik van Adobe PhoneGap en Adobe Publishing Solutions, waarmee u zowel content-rich als op toepassingen gebaseerde mobiele toepassingen voor meerdere platforms kunt maken en beheren:
 
 * Beheer al uw bedrijven mobiele apps op één locatie.
 * Bekijk toepassingen in ontwikkelings- en testomgevingen zonder de complexiteit van inrichtingsprofielen en de extra inspanning om uw app te maken en te uploaden voor delen.
-* Met de AEM-ontwerpomgeving kunt u rijke inhoud voor uw apps maken en beheren.
-* Gebruik HTML5 met Adobe PhoneGap om rijke ervaringen met apparaateigen mogelijkheden te creëren.
+* Gebruik de AEM ontwerpomgeving om rijke inhoud voor uw apps te maken en te beheren.
+* Gebruik HTML5 met Adobe PhoneGap om rijke ervaringen met apparaat-inheemse mogelijkheden tot stand te brengen.
 * Introduceer HTML5 Webviews aan nieuwe of reeds bestaande **inheemse** toepassingen door Cordova WebViews.
 * Maak, curseer en deel rijke multimedia-inhoud via alle leveringskanalen, waaronder web, mobiel-web, mobiele-app en drukwerk.
 
-AEM integreert met de Adobe **[PhoneGap Build-service](https://build.phonegap.com/)**om het proces voor het maken en implementeren van toepassingen te vereenvoudigen.
+AEM integreert met de dienst **[van de](https://build.phonegap.com/)**PhoneGap Build van de Adobe om de toepassing te vereenvoudigen bouwt en opstelt proces.
 
-**Met Adobe ContentSync** kunnen gebruikers eenvoudig pagina- en inhoudsupdates over-the-Air (OTA) downloaden naar hun apparaten zonder dat ze de toepassing opnieuw hoeven te installeren of moeten downloaden van de appStore, Google Play of andere toepassingsbronnen.
+**Met Adobe ContentSync** kunnen gebruikers eenvoudig pagina- en inhoudsupdates over-the-Air (OTA) downloaden naar hun apparaten zonder dat ze de toepassing opnieuw hoeven te installeren of van de appStore, Google Play of andere toepassingsbronnen hoeven te downloaden.
 
-**Adobe Analytics** is volledig geïntegreerd in AEM-apps en maakt gedetailleerde tracering van distributie, geolocatie, besturingssystemen, apparaten, klikstreams, iBeacon-tracking en meer mogelijk.
+**Adobe Analytics** is volledig geïntegreerd in AEM apps en maakt gedetailleerde tracering van distributie, geolocatie, besturingssystemen, apparaten, klikstreams, iBeacon-tracking en meer mogelijk.
 
 ## Apps maken {#creating-apps}
 
-Ontwikkelaars kunnen de [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) samen met extra bronnen in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) gebruiken om AEM-apps met PhoneGap op te starten, waaronder een referentie-native app met Cordova Webviews.
+Ontwikkelaars kunnen de [AEM PhoneGap Starter Kit](https://github.com/Adobe-Marketing-Cloud/aem-phonegap-starter-kit) samen met extra bronnen in [https://github.com/adobe-marketing-cloud-apps](https://github.com/adobe-marketing-cloud-apps) gebruiken om AEM toepassingen met PhoneGap op te starten, waaronder een referentie-native app met Cordova Webviews.
 
 De readme voor de Starter Kit Git-opslagplaats bevat een zelfstudie voor het gebruik van de startkit:
 
 * De branding aanpassen
 * Gemaakte doelstellingen van de steekproefbouw en plaatsing
 * Configuratie van opslagplaats voor bronbeheer
-* Installeren en implementeren in lokale of externe AEM-instanties
+* Installeren en implementeren in lokale of externe AEM
 * Verwijderen uit AEM
 
 >[!NOTE]
@@ -85,11 +88,11 @@ IOS-ontwikkelaars moeten op de hoogte zijn van een open probleem met Cordova-app
 * [App-prestaties bijhouden met Adobe Mobile Analytics](/help/mobile/phonegap-intro-to-app-analytics.md)
 * [Adobe Analytics toevoegen aan uw mobiele toepassing](/help/mobile/phonegap-add-analytics-to-apps.md)
 * [Pushmeldingen](/help/mobile/phonegap-push-notifications.md)
-* [Aanpassing van AEM Mobile-inhoud](/help/mobile/phonegap-aem-mobile-content-personalization.md)
+* [AEM Mobile-inhoud aanpassen](/help/mobile/phonegap-aem-mobile-content-personalization.md)
 * [De anatomie van een app](/help/mobile/phonegap-apps-arch.md)
 * [Is uw hybride app gereed voor AEM Mobile?](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-### Additional Resources {#additional-resources}
+### Aanvullende bronnen {#additional-resources}
 
 Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 
