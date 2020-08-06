@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 0%
 
 ---
 
@@ -35,7 +38,7 @@ SRP API is geen abstracte klasse, het is een interface. Een aangepaste implement
 
 De middelen om SRP API te gebruiken zijn door verstrekte nut, zoals die gevonden in het pakket SocialResourceUtilities.
 
-Wanneer het bevorderen van AEM 6.0 of vroeger, zal het noodzakelijk zijn om UGC voor alle SRPs te migreren, waarvoor een Open Bron hulpmiddel beschikbaar is. Zie [Bijwerken naar AEM-gemeenschappen 6.3](upgrade.md).
+Wanneer het bevorderen van AEM 6.0 of vroeger, zal het noodzakelijk zijn om UGC voor alle SRPs te migreren, waarvoor een Open Bron hulpmiddel beschikbaar is. Zie [Upgrade uitvoeren naar AEM Communities 6.3](upgrade.md).
 
 >[!NOTE]
 >
@@ -103,7 +106,7 @@ De volgende beschrijvingen van opslagplaats kunnen van hulp zijn wanneer het ont
 
 **componentlocatie**
 
-Wanneer een lid UGC in het publicatiemilieu ingaat, communiceren zij met een component als deel van een plaats AEM.
+Wanneer een lid UGC in het publicatiemilieu ingaat, communiceren zij met een component als deel van een AEM plaats.
 
 Een voorbeeld van een dergelijke component is de [commentaarcomponent](http://localhost:4502/content/community-components/en/comments.html) die aanwezig is op de site [Community Components Guide](components-guide.md) . Het pad naar het knooppunt met opmerkingen in de lokale opslagplaats is:
 
@@ -123,7 +126,7 @@ UGC wordt gecreeerd in geen van die plaatsen, en zou slechts moeten worden betre
 * Hoofdpad = /content/usergenerated/asi/srp-choice
 * UGC-knooppunt voor JSRP = /content/usergenerated/asi/jcr/content/community-components/nl/comments/jcr:content/content/include/comments/srzd-let_it_be_
 
-*Houd er rekening mee* dat voor JSRP het UGC-knooppunt *alleen* aanwezig is in de AEM-instantie (auteur of publicatie) waarop het knooppunt is ingevoerd. Als ingegaan op een publiceer instantie, zal de matiging niet van de moderatieconsole op auteur mogelijk zijn.
+*Houd er rekening mee* dat voor JSRP het UGC-knooppunt *alleen* aanwezig is op de AEM instantie (auteur of publicatie) waarop het knooppunt is ingevoerd. Als ingegaan op een publiceer instantie, zal de matiging niet van de moderatieconsole op auteur mogelijk zijn.
 
 ## Gerelateerde informatie {#related-information}
 
