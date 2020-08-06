@@ -8,6 +8,9 @@ topic-tags: publish
 discoiquuid: c447fc39-c0f3-4932-ac6c-465d1fb83f8c
 translation-type: tm+mt
 source-git-commit: 8b5a3e1f6616c3a07da91e4347596961ac4a8e22
+workflow-type: tm+mt
+source-wordcount: '541'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Met de stap Taak toewijzen kunt u taken maken en toewijzen aan een gebruiker of 
 
 ![E-mailmelding met een e-mailadres uit de vaksjabloon](do-not-localize/default-email-template.png)
 
-U kunt de weergave aanpassen en aangepaste metagegevens in een e-mailmelding gebruiken. AEM-formulieren bevatten een uitvouwsjabloon voor e-mailberichten. U kunt de sjabloon buiten het vak aanpassen of een nieuwe sjabloon maken.
+U kunt de weergave aanpassen en aangepaste metagegevens in een e-mailmelding gebruiken. AEM Forms geeft een sjabloon buiten het vak voor e-mailberichten op. U kunt de sjabloon buiten het vak aanpassen of een nieuwe sjabloon maken.
 
 Sjablonen voor e-mailmeldingen zijn gebaseerd op [HTML-e-mail](https://en.wikipedia.org/wiki/HTML_email). Deze e-mailberichten worden aangepast aan verschillende e-mailclients en schermgrootten. Bovendien wordt de opmaak van de e-mail gedefinieerd in de sjabloon.
 
@@ -30,7 +33,7 @@ In de volgende afbeelding wordt een aangepast e-mailbericht weergegeven:
 
 ## De bestaande sjabloon aanpassen {#customize-the-existing-template}
 
-AEM Forms biedt een sjabloon voor e-mailberichten. De sjabloon bevat een beschrijving van de titel, de vervaldatum, de prioriteit, de naam van de workflow en de koppeling naar de toegewezen taak. U kunt de sjabloon aanpassen om de weergave te wijzigen. Voer de volgende stappen uit om de sjabloon aan te passen:
+AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een beschrijving van de titel, de vervaldatum, de prioriteit, de naam van de workflow en de koppeling naar de toegewezen taak. U kunt de sjabloon aanpassen om de weergave te wijzigen. Voer de volgende stappen uit om de sjabloon aan te passen:
 
 1. Meld u aan bij CRXDE met beheerdersaccount.
 
@@ -46,7 +49,7 @@ AEM Forms biedt een sjabloon voor e-mailberichten. De sjabloon bevat een beschri
 
 ## Een e-mailsjabloon maken {#create-an-email-template}
 
-AEM Forms biedt een sjabloon voor e-mailberichten. De sjabloon bevat een beschrijving van de titel, de vervaldatum, de prioriteit, de naam van de workflow en de koppeling naar de toegewezen taak. U kunt ook een aangepaste e-mailsjabloon (uw eigen sjabloon) toevoegen voor taakstappen toewijzen. Voer de volgende stappen uit om een aangepaste e-mailsjabloon toe te voegen:
+AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een beschrijving van de titel, de vervaldatum, de prioriteit, de naam van de workflow en de koppeling naar de toegewezen taak. U kunt ook een aangepaste e-mailsjabloon (uw eigen sjabloon) toevoegen voor taakstappen toewijzen. Voer de volgende stappen uit om een aangepaste e-mailsjabloon toe te voegen:
 
 1. Meld u aan bij CRXDE met beheerdersaccount.
 
@@ -64,12 +67,12 @@ AEM Forms biedt een sjabloon voor e-mailberichten. De sjabloon bevat een beschri
 
 Uit de doos, wordt de taakstap van de Toewijzing gevormd om het standaardmalplaatje, htmlEmailTemplate.txt te gebruiken. U kunt een aangepaste sjabloon gebruiken. De sjabloon wijzigen:
 
-1. Open de stap Taak **** toewijzen.
+1. Open de **[!UICONTROL Assign Task]** stap.
 
-1. Ga naar **[!UICONTROL Toegewezen > HTML-e-mailsjabloon]**.
+1. Ga naar **[!UICONTROL Assignee > HTML Email Template]**.
 
 1. Selecteer de nieuwe HTML-e-mailsjabloon.
 
-1. Click **[!UICONTROL OK]**. De sjabloon is gewijzigd.
+1. Klik op **[!UICONTROL OK]**. De sjabloon is gewijzigd.
 
 In een e-mailmelding worden ook [metagegevens](/help/forms/using/use-metadata-in-email-notifications.md)gebruikt. Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt de sjabloon ook configureren voor het gebruik van [aangepaste metagegevens](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
