@@ -10,6 +10,9 @@ topic-tags: document_services
 discoiquuid: a9695d10-43ec-40eb-942f-7720abaa0973
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '702'
+ht-degree: 5%
 
 ---
 
@@ -18,31 +21,31 @@ source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
 
 ## Overzicht {#overview}
 
-Met de service Forms kunt u interactieve toepassingen maken voor het vastleggen van gegevens die formulieren valideren, verwerken, transformeren en leveren die doorgaans in Designer worden gemaakt. De service Forms geeft elk formulierontwerp dat u ontwikkelt, weer als PDF-document.
+Met de Forms-service kunt u interactieve toepassingen voor het vastleggen van gegevens maken die formulieren valideren, verwerken, transformeren en leveren die doorgaans in Designer worden gemaakt. De Forms-service geeft elk formulierontwerp dat u ontwikkelt, weer als PDF-document.
 
-Met Forms Service kunnen organisaties ook hun intelligente processen voor het vastleggen van gegevens uitbreiden met behulp van elektronische formulieren als Adobe PDF&#39;s. U kunt de service ook gebruiken voor het importeren en exporteren van gegevens van en naar bestaande PDF-formulieren.
+Met de Forms-service kunnen organisaties ook hun intelligente processen voor het vastleggen van gegevens uitbreiden met behulp van elektronische formulieren als Adobe-PDF&#39;s. U kunt de service ook gebruiken voor het importeren en exporteren van gegevens van en naar bestaande PDF forms.
 
-Gebruik de service Formulieren om het volgende te doen:
+Gebruik de Forms-service om het volgende te doen:
 
-* PDF-formulieren renderen op basis van sjabloon- en XML-gegevens.
-* Integratie van formuliergegevens inschakelen om gegevens te importeren in en te extraheren uit PDF-formulieren.
+* Render PDF forms op basis van sjabloon- en XML-gegevens.
+* Integratie van formuliergegevens inschakelen om gegevens te importeren in en te extraheren uit PDF forms.
 * Formulieren weergeven op basis van fragmenten.
 
-## PDF-formulieren maken {#creating-pdf-forms-nbsp}
+## PDF forms maken  {#creating-pdf-forms-nbsp}
 
-Met de Form-service kunt u PDF-formulieren maken voor het vastleggen van gegevens. Doorgaans begint u met een AEM Forms Designer-sjabloon. Met de bewerking `renderPDFForm` (koppeling naar JavaDoc) van de service Forms kunt u deze sjabloon converteren naar een PDF-formulier.
+Met de Form-service kunt u PDF forms maken voor het vastleggen van gegevens. Doorgaans begint u met een AEM Forms Designer-sjabloon. Met de bewerking `renderPDFForm` (koppeling naar JavaDoc) van de Forms-service kunt u deze sjabloon converteren naar een PDF-formulier.
 
 De eerste parameter van de `renderPDFForm` bewerking is de naam van het sjabloonbestand (bijvoorbeeld `ExpenseClaim.xdp`). U kunt het sjabloonbestand opslaan in een lokaal bestandssysteem, in een CRX-opslagplaats of op een HTTP- of FTP-locatie. U kunt de locatie van het sjabloonbestand opgeven door de hoofdmap van de inhoud in te stellen in de `PDFFormRenderOptions` parameter van de `renderPDFForm` bewerking. Zie Javadoc voor meer informatie over andere opties die u voor de `PDFFormRenderOptions` parameter kunt opgeven.
 
 De `renderPDFForm` bewerking kan ook XML-gegevens accepteren. De XML-gegevens worden met de sjabloon samengevoegd wanneer u een PDF-formulier maakt, zodat het gegenereerde PDF-formulier de opgegeven gegevens bevat. De tweede parameter voor de `renderPDFForm` bewerking kan een object Document (Javadoc) accepteren dat XML-gegevens bevat.
 
-## Gegevens uit PDF-formulieren extraheren {#extracting-data-from-pdf-forms-nbsp}
+## Gegevens extraheren uit PDF forms  {#extracting-data-from-pdf-forms-nbsp}
 
-Gebruik de bewerking `exportData` (Javadoc) van de service Forms om gegevens-XML uit een PDF-formulier te extraheren. Deze bewerking accepteert een document als eerste parameter. U kunt de gegevens exporteren als een XDP-document of als een XML-bestand. Als u de gegevens als een XML-bestand exporteert, worden de XDP-envelop door de geëxporteerde gegevens verwijderd en wordt een onbewerkt XML-bestand geretourneerd. U kunt deze rangschikking opgeven met de tweede parameter.
+Gebruik de bewerking `exportData` (Javadoc) van de Forms-service om gegevens-XML uit een PDF-formulier te extraheren. Deze bewerking accepteert een document als eerste parameter. U kunt de gegevens exporteren als een XDP-document of als een XML-bestand. Als u de gegevens als een XML-bestand exporteert, worden de XDP-envelop door de geëxporteerde gegevens verwijderd en wordt een onbewerkt XML-bestand geretourneerd. U kunt deze rangschikking opgeven met de tweede parameter.
 
-## Gegevens importeren in PDF-formulieren {#importing-data-into-pdf-forms}
+## Gegevens importeren in PDF forms {#importing-data-into-pdf-forms}
 
-Met Forms Service kunt u ook een PDF-formulier samenvoegen dat is gemaakt met AEM Forms Designer of de `renderPDFForm` bewerking met XML-gegevens. Met de bewerking `importData` (Javadoc) van Forms worden het PDF-formulier en de XML-gegevens geaccepteerd en wordt een PDF-formulier met XML-gegevens geretourneerd.
+Met de Forms-service kunt u ook een PDF-formulier dat is gemaakt met AEM Forms Designer of de `renderPDFForm` bewerking samenvoegen met XML-gegevens. De bewerking `importData` (Javadoc) van de Forms-service accepteert het PDF-formulier en de XML-gegevens en retourneert een PDF-formulier met XML-gegevens.
 
 ## Formulieren weergeven op basis van fragmenten {#rendering-forms-based-on-fragments}
 
