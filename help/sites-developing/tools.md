@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 0f977264-fe58-4478-bd38-aca5c75f36aa
 translation-type: tm+mt
 source-git-commit: 60f36a33471dbbd9ca877dbbedc82ade606a125c
+workflow-type: tm+mt
+source-wordcount: '311'
+ht-degree: 0%
 
 ---
 
@@ -57,7 +60,7 @@ Als deze voor het volgen dan worden gebruikt:
 * zij moeten eenvoudig worden gehouden .
 * het aantal afzonderlijke spreadsheets moet tot een minimum worden beperkt .
 * zij moeten regelmatig worden bijgewerkt .
-* er mag slechts één origineel worden bewaard en iedereen moet weten waar de originele kopie zich bevindt .
+* slechts één master kopie moet worden bewaard en iedereen moet weten waar de master kopie is.
 * zij moeten toegankelijk zijn voor alle projectleden .
 * als de veiligheid een kwestie is ( vaak voorkomt bij grote bedrijven ) en gemeenschappelijke toegang niet mogelijk is , kunnen kopieën worden verspreid zolang iedereen begrijpt dat het kopieën zijn en niet kunnen worden bijgewerkt .
 
