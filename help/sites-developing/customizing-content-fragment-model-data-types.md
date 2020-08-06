@@ -1,5 +1,5 @@
 ---
-title: PUBLICEREN NIET, MAAR VERWIJDER NIET HET aanpassen van gegevenstypen voor modellen van inhoudsfragmenten
+title: NIET PUBLICEREN, MAAR NIET DELETE aanpassen van gegevenstypen voor modellen van inhoudsfragmenten
 seo-title: Gegevenstypen aanpassen voor modellen van inhoudsfragmenten
 description: Gegevenstypen die worden gebruikt in Modellen van inhoudsfragment kunnen worden aangepast.
 seo-description: Gegevenstypen die worden gebruikt in Modellen van inhoudsfragment kunnen worden aangepast.
@@ -10,15 +10,18 @@ discoiquuid: a8b8155c-852c-4d16-b59b-7e19527c2bd4
 noindex: true
 translation-type: tm+mt
 source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+workflow-type: tm+mt
+source-wordcount: '1642'
+ht-degree: 0%
 
 ---
 
 
-# PUBLICEREN NIET, MAAR VERWIJDER NIET HET aanpassen van gegevenstypen voor modellen van inhoudsfragmenten{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
+# NIET PUBLICEREN, MAAR NIET DELETE aanpassen van gegevenstypen voor modellen van inhoudsfragmenten{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
 
 [Inhoudsfragmenten](/help/assets/content-fragments.md) zijn gebaseerd op [inhoudsfragmentmodellen](/help/assets/content-fragments-models.md). Deze modellen worden opgebouwd van [elementen](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) van verschillende gegevenstypen.
 
-Verschillende gegevenstypen zijn offline beschikbaar, zoals tekst op één regel, RTF-tekst op meerdere regels, numerieke velden, Booleaanse kiezers, opties voor vervolgkeuzemenu, datum en tijd en andere. AEM-gebruikers kunnen gegevenstypen selecteren op basis van de redactionele intentie van het (de) overeenkomstige fragment(en). Op deze manier kunt u eenvoudig met tekstmodellen werken in complexe modellen met verschillende soorten inhoud en de bijbehorende ervaring bij het ontwerpen van fragmenten.
+Verschillende gegevenstypen zijn offline beschikbaar, zoals tekst op één regel, RTF-tekst op meerdere regels, numerieke velden, Booleaanse kiezers, opties voor vervolgkeuzemenu, datum en tijd en andere. AEM gebruikers kunnen gegevenstypen selecteren op basis van de redactionele intentie van het (de) overeenkomstige fragment(en). Op deze manier kunt u eenvoudig met tekstmodellen werken in complexe modellen met verschillende soorten inhoud en de bijbehorende ervaring bij het ontwerpen van fragmenten.
 
 Gegevenstypen worden gedefinieerd door een [combinatie van knoopeigenschappen](#properties) die op [specifieke locaties in de opslagplaats](#locations-in-the-repository)worden gehouden. U kunt ook uw eigen [gegevenstypen](#creating-your-data-type) en [fieldProperties](#creating-your-own-fieldproperties-property)maken.
 
@@ -292,6 +295,7 @@ De knoopstructuur moet onder worden gecreeerd `/apps` om de gegevenstypes te bed
    * `fieldResourceType`
    * `fieldPropResourceType`
    * `fieldViewResourceType`
+
    Deze bepalen hoe de componenten voor uw gegevenstype zullen worden teruggegeven. Zij kunnen elke component zijn; inclusief uw eigen aangepaste componenten (hiervoor is een overeenkomende set ` [fieldProperties](#fieldproperties)`nodig).
 
    Definieer deze eigenschappen met de juiste waarden op het knooppunt voor het gegevenstype.
@@ -311,6 +315,7 @@ De knoopstructuur moet onder worden gecreeerd `/apps` om de gegevenstypes te bed
    * `renderType`
    * `valueType`
    * `listOrder`
+
    Definieer deze eigenschappen met de juiste waarden op het knooppunt voor het gegevenstype.
 
 ### Het gegevenstype gebruiken {#using-your-data-type}
@@ -335,7 +340,7 @@ U kunt uit uit-van-de-doos [fieldProperties](#fieldproperties)kiezen, of uw cre�
 
       `sling:include`
 
-   1. Deze component moet een veld renderen (als een gebruiker gegevens moet invoeren) of een verborgen invoer met de eigenschappen die nodig zijn voor het gegevenstype. Bijvoorbeeld, vereist een multifield component een kindknoop met het type van gebied het zou moeten dupliceren, daarom zou er een input moeten zijn die (door het slingPOST mechanics) een kindknoop van een specifiek type kan tot stand brengen.
+   1. Deze component moet een veld renderen (als een gebruiker gegevens moet invoeren) of een verborgen invoer met de eigenschappen die nodig zijn voor het gegevenstype. Bijvoorbeeld, vereist een multifield component een kindknoop met het type van gebied het zou moeten dupliceren, daarom zou er een input moeten zijn die (door de mechanica van de POST van de sling) een kindknoop van een specifiek type kan tot stand brengen.
 
 1. De basisnaam van deze component moet worden toegevoegd aan `fieldProperties`.
 1. Herhaal dit voor alle eigenschappen die u nodig hebt.
