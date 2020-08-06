@@ -1,8 +1,8 @@
 ---
 title: Een taak openen
 seo-title: Een taak openen
-description: Stappen om een taak te openen in de app AEM Forms.
-seo-description: Stappen om een taak te openen in de app AEM Forms.
+description: Stappen om een taak te openen in uw AEM Forms-app.
+seo-description: Stappen om een taak te openen in uw AEM Forms-app.
 uuid: 3f543391-a62b-40ef-aa28-59b7f99554f1
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,13 +10,16 @@ topic-tags: forms-app
 discoiquuid: cdce7a6a-2bbf-492f-bf91-5b8f07d02207
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '336'
+ht-degree: 0%
 
 ---
 
 
 # Een taak openen {#opening-a-task}
 
-Als de app AEM Forms synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM-werkstroomeditor is gedefinieerd. Bijvoorbeeld, zie [Conard krijgt de beoordelingstaak in de Geometrixx Gov verwijzingsplaats](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). U kunt wijzigingen aanbrengen in elke taak die momenteel aan u is toegewezen. Alle taken zijn beschikbaar op het lusje van de Taak. Taken die als concepten zijn opgeslagen, blijven op het tabblad Taken staan.
+Als de AEM Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd. Bijvoorbeeld, zie [Conard krijgt de beoordelingstaak in de de verwijzingsplaats](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)van het Gov van de Geometrixx. U kunt wijzigingen aanbrengen in elke taak die momenteel aan u is toegewezen. Alle taken zijn beschikbaar op het lusje van de Taak. Taken die als concepten zijn opgeslagen, blijven op het tabblad Taken staan.
 
 Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie Concepten [opslaan](/help/forms/using/save-as-draft.md).
 
@@ -35,7 +38,7 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie C
 
 **Een toepassing openen**
 
-1. Tik op de **toepassing** op het tabblad **Formulieren** .
+1. Tik op de **toepassing** op het tabblad **Forms** .
 
    Wanneer u een toepassing selecteert, wordt de beschrijving van de toepassing onder de toepassingsnaam weergegeven. Na de beschrijving worden de gebruikershandeling/handelingen die aan de toepassing zijn gekoppeld, weergegeven.
 
