@@ -1,8 +1,8 @@
 ---
-title: Overzicht van AEM-gemeenschappen
-seo-title: Overzicht van AEM-gemeenschappen
-description: Een overzicht van de functies en instellingen van AEM Communities
-seo-description: Een overzicht van de functies en instellingen van AEM Communities
+title: AEM Communities - Overzicht
+seo-title: AEM Communities - Overzicht
+description: Een overzicht van AEM Communities-functies en -instellingen
+seo-description: Een overzicht van AEM Communities-functies en -instellingen
 uuid: 6e3ac9d2-ca31-40ea-8cab-b8451074c498
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,27 +11,30 @@ content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
 source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+workflow-type: tm+mt
+source-wordcount: '1429'
+ht-degree: 0%
 
 ---
 
 
-# Overzicht van AEM-gemeenschappen {#aem-communities-overview}
+# AEM Communities - Overzicht {#aem-communities-overview}
 
-Met Adobe Experience Manager (AEM) Community&#39;s kunt u snel een onsite community-site maken die de prestaties verbetert, het sitebeheer verbetert en het converteren van sitebezoekers naar waardevolle leden van de community aanmoedigt.
+Adobe Experience Manager (AEM) Communities biedt de mogelijkheid om snel een lokale community-site te maken die de prestaties verbetert, het sitebeheer verbetert en de conversie van sitebezoekers naar waardevolle leden van de community aanmoedigt.
 
-Neem contact op met uw accountvertegenwoordiger voor informatie over licenties voor AEM-gemeenschappen en aanvullende licenties voor functies voor activering en Adobe Analytics.
+Neem contact op met uw accountvertegenwoordiger voor informatie over licenties voor AEM Communities en aanvullende licenties voor functies voor activering en Adobe Analytics.
 
 ## Functies van Gemeenschappen {#communities-features}
 
-AEM Communities maakt de ontwikkeling mogelijk van een relatie met sitebezoekers die informatie verschaft via blogs, vragen en antwoorden en agenda&#39;s voor gebeurtenissen, terwijl ze inzichten ophalen via forums, opmerkingen en andere inhoud van de community, die vaak UGC (door gebruikers gegenereerde inhoud) wordt genoemd.
+AEM Communities maakt het mogelijk om een relatie te ontwikkelen met sitebezoekers die informatie geven via blogs, vragen en antwoorden en gebeurtenissencalenders, terwijl ze inzichten krijgen via forums, opmerkingen en andere community-inhoud, die vaak UGC (door gebruikers gegenereerde inhoud) wordt genoemd.
 
-Verder maakt AEM Communities moderatie door vertrouwde leden in de publicatieomgeving mogelijk, sociale aanmelding bij Twitter en Facebook, inlinevertaling van community-inhoud, het maken van groepen uit de gepubliceerde gemeenschapssite, het scoren naar onderscheidingstempels, het delen van bestanden, meldingen en activiteitstromen.
+Verder maakt AEM Communities moderatie door vertrouwde leden in de publicatieomgeving mogelijk, sociale aanmelding bij Twitter en Facebook, inlinevertaling van community-inhoud, het maken van communitygroepen vanaf de gepubliceerde communitysite, het scoren naar onderscheidingstempels, het delen van bestanden, meldingen en activiteitenstreams.
 
-De eigenschappen van gemeenschappen kunnen worden aangetoond gebruikend de [AEM demomachine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) die openbaar op GitHub.com of met de nieuwe Web.Retail verwijzingsimplementatie beschikbaar is.
+De eigenschappen van gemeenschappen kunnen worden aangetoond gebruikend de [AEM Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) van de Demo openbaar op GitHub.com of met de nieuwe Web.Retail verwijzingsimplementatie beschikbaar.
 
 ## Communitysites {#community-sites}
 
-Een gemeenschapssite is een AEM-site die is gemaakt met een eenvoudige wizard die resulteert in een website met veel algemene functies die vooraf zijn getelegrafeerd naar de site.
+Een communitysite is een AEM site die is gemaakt met een eenvoudige wizard die resulteert in een website met veel algemene functies die vooraf zijn getelegrafeerd naar de site.
 
 De wizard [Site maken](sites-console.md):
 
@@ -43,7 +46,7 @@ De wizard [Site maken](sites-console.md):
    * Aanmelden
    * Vertaling
 * Biedt essentiële functies:
-   * Responsief ontwerp: Gebruikt [thema&#39;s Twitter Bootstrap](https://getbootstrap.com)
+   * Responsief ontwerp: Gebruikt [thema&#39;s Twitter-Bootstrap](https://getbootstrap.com)
    * Aanmelden: Zelfregistratie, [sociale aanmelding](social-login.md), gebruikersprofielen
    * Meldingen: De leden zien gebeurtenissen die voor hen van belang zijn
    * Berichten: Leden kunnen berichten verzenden of ontvangen op de site van de community
@@ -54,11 +57,11 @@ De wizard [Site maken](sites-console.md):
    * Branding: Optionele upload van een bannerafbeelding voor weergave op alle pagina&#39;s van de communitysite
    * Navigatiemenu: Navigatiekoppelingen zijn beschikbaar voor de functies die zijn opgenomen in het sjabloon voor de communautaire site
 
-Ga naar [Aan de slag met AEM-gemeenschappen](getting-started.md)om snel een nieuwe community-site te kunnen maken.
+Ga naar [Aan de slag met AEM Communities](getting-started.md)om snel een nieuwe community-site te maken.
 
 ## Persistentie van communautaire inhoud {#community-content-persistence}
 
-Om de prestaties en synchronisatie van inhoud van de gemeenschap te verbeteren, vereist de Gemeenschappen AEM een gemeenschappelijke opslag specifiek voor gebruiker geproduceerde inhoud (UGC) die tussen alle (auteur en publiceer) instanties AEM wordt gedeeld.
+Om de prestaties en synchronisatie van inhoud van de gebruikersgemeenschap te verbeteren, vereist AEM Communities een gemeenschappelijke opslag specifiek voor gebruiker geproduceerde inhoud (UGC) die tussen alle AEM (auteur en publiceer) instanties wordt gedeeld.
 
 De communautaire inhoud wordt gemakkelijk betreden door de leverancier van het opslagmiddel (SRP), die een laag verstrekt om toegang van de onderliggende topologie te scheiden en een gemeenschappelijke opslag voor UGC steunt.
 
@@ -66,7 +69,7 @@ Ga voor meer informatie over de persistentie en aanbevolen implementaties van co
 
 * [Opslag](working-with-srp.md)voor community-inhoud: bespreekt de beschikbare opslagopties SRP voor UGC
 * [Aanbevolen technologieën](topologies.md): bespreekt topologieën die op gebruiksgeval en keus SRP worden gebaseerd
-* [Opwaarderen naar AEM 6.3-gemeenschappen](upgrade.md): bevat nuttige informatie over UGC bij de overgang naar AEM 6.3.
+* [Opwaarderen naar AEM 6.3 Gemeenschappen](upgrade.md): biedt nuttige informatie over UGC bij de overgang naar AEM 6.3.
 
 ## Communityconsoles {#communities-consoles}
 
@@ -131,9 +134,9 @@ Zie de console [Sjablonen](sites.md)voor sites.
 
 ## Communautaire functies {#community-functions}
 
-De kenmerken die van een gemeenschapservaring worden verwacht, zijn bekend. Met AEM-gemeenschappen zijn deze functies beschikbaar als bouwstenen, ook wel bekend als gemeenschapsfuncties.
+De kenmerken die van een gemeenschapservaring worden verwacht, zijn bekend. In AEM Communities zijn deze functies beschikbaar als bouwstenen, ook wel bekend als gemeenschapsfuncties.
 
-Community-functies zijn normale AEM-pagina&#39;s die bestaan uit componenten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een sjabloon voor een Community-site.
+Community-functies zijn normale AEM pagina&#39;s die bestaan uit componenten die zijn samengevoegd tot een functie die eenvoudig kan worden opgenomen in een sjabloon voor een communautaire site.
 
 Zie de [Community Functions console](functions.md).
 
@@ -149,11 +152,11 @@ Zie ook:
 
 * [Sitegroepen console](groups.md) - subgemeenschappen maken in de ontwerpomgeving
 * [Groep sjablonen console](tools-groups.md) - sitestructuur maken voor groepen
-* [Aan de slag met AEM-gemeenschappen](getting-started.md) - zelfstudie voor het snel maken van een gemeenschapssite met geneste groepen
+* [Aan de slag met AEM Communities](getting-started.md) - zelfstudie voor het snel maken van een gemeenschapssite met geneste groepen
 
 ## Community-componenten {#community-components}
 
-De [onderdelen](author-communities.md) van de community waaruit een site van de community is gemaakt, kunnen worden gebruikt om elementen van de Community aan elke AEM-site toe te voegen.
+De [communautaire componenten](author-communities.md) waarvan een communautaire plaats wordt gebouwd kunnen worden gebruikt om de eigenschappen van Gemeenschappen aan om het even welke AEM Plaats toe te voegen.
 
 De [Community components guide](components-guide.md) is beschikbaar voor interactieve verkenning van de componenten.
 
@@ -181,7 +184,7 @@ Functies van een betrokkenheidsgemeenschap kunnen het volgende omvatten:
 * Scores en badges
 * Analyserapportage
 
-Ga naar Aan de [slag met AEM-gemeenschappen](getting-started.md)om snel een nieuwe betrokkenheidsgemeenschap te kunnen maken.
+Ga naar [Aan de slag met AEM Communities](getting-started.md)om snel een nieuwe betrokkenheidscommunity te maken.
 
 ### Enablement Community {#enablement-community}
 
@@ -198,25 +201,25 @@ Functies van een machtigingsgemeenschap kunnen zijn:
 
 Een enablement gemeenschap kan worden gecreeerd wanneer de toe:voegen- [functie Enablement wordt gevormd](enablement.md), die extra vergunning voor gebruik in een productiemilieu vereist. Een plaats van de enablgemeenschap zal de [toewijzingsfunctie](#community-functions)omvatten.
 
-Ga naar Aan de [slag met AEM Communities for Enablement](getting-started-enablement.md)om te ervaren hoe eenvoudig het maken van een nieuwe enablement-gemeenschap is.
+Ga naar [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)om te zien hoe eenvoudig het maken van een nieuwe community voor activering is.
 
-## AEM-demoestel {#aem-demo-machine}
+## AEM demo-machine {#aem-demo-machine}
 
-De [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) beheert en voert demo&#39;s uit voor AEM [Plaatsen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Activa](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Gemeenschappen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) [](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)enForms, die vaak meer opstelling dan eenvoudig een instantie van QuickStart vereisen. De AEM Demo Machine zal extra [infrastructuur](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) zoals MongoDB, Solr, MySQL, FFmpeg en e-mailservers installeren.
+De [AEM Demo Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine) beheert en voert demo&#39;s uit voor AEM [Plaatsen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Sites), [Activa](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Assets), [Gemeenschappen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Communities), [Apps](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Apps) [](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Scenario%20Forms)enForms, die vaak meer opstelling vereisen dan eenvoudig het lanceren van een instantie QuickStart. De AEM demo Machine zal extra [infrastructuur](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Infrastructure) zoals MongoDB, Solr, MySQL, MPEG en e-mailservers installeren.
 
-De AEM Demo-machine bestaat uit
+De AEM Demo-machine bestaat uit:
 
 * Een [grafische gebruikersinterface](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/User%20Interface)
 * Apache ANT-scripts met configureerbare [eigenschappen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Properties) en [doelen](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki/Command%20Line)
-* Te installeren pakkettenDe AEM-demovernemingssysteem is getest met CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2 en AEM 6.3 op Windows, Mac OS en Linux.
+* Te installeren pakkettenDe AEM demovernemingssysteem is getest met CQ 5.5, CQ 5.6.1, AEM 6.0, AEM 6.1, AEM 6.2 en AEM 6.3 op Windows, Mac OS en Linux.
 
-Voor AEM Demo Machine is een geldige AEM-licentie vereist.
+Voor AEM demo-machine is een geldige AEM vereist.
 
 >[!NOTE]
 >
->Bekijk een [video-introductie](https://www.youtube.com/watch?v=zEE_zkR9fVQ&feature=youtu.be) van de AEM Demo-machine (13:26).
+>Bekijk een [videoinleiding](https://www.youtube.com/watch?v=zEE_zkR9fVQ&amp;feature=youtu.be) op de AEM Demo-machine (13:26).
 
-## Documentatie AEM-gemeenschappen {#aem-communities-documentation}
+## AEM Communities-documentatie {#aem-communities-documentation}
 
 * Bezoek [Implementerende gemeenschappen](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
 
@@ -224,5 +227,5 @@ Voor AEM Demo Machine is een geldige AEM-licentie vereist.
 
 * Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het sociale-componentframework (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) om te leren hoe u auteur kunt maken met en Community-componenten kunt configureren.
+* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het maken en configureren van Community-componenten.
 
