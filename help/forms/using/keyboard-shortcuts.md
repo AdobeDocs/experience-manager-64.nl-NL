@@ -1,6 +1,6 @@
 ---
-title: Sneltoetsen voor AEM Forms
-seo-title: Sneltoetsen voor AEM Forms
+title: AEM Forms-sneltoetsen
+seo-title: AEM Forms-sneltoetsen
 description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
 seo-description: In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met de Aangepaste formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer.
 uuid: 1a16c2e6-c0f1-42e0-9ab4-692f3e58eeaf
@@ -17,7 +17,7 @@ ht-degree: 10%
 ---
 
 
-# Sneltoetsen voor AEM Forms {#aem-forms-keyboard-shortcuts}
+# AEM Forms-sneltoetsen {#aem-forms-keyboard-shortcuts}
 
 In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met Adaptieve formuliereditor, Thema-editor, Inhoudsbrowser en Correspondentiebeheer voor Windows- en Macintosh-besturingssystemen.
 
@@ -52,6 +52,7 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 >
 >* Windows: Houd Ctrl ingedrukt en klik op de gewenste componenten.
 >* MAC OS: Command en klikken op de vereiste componenten.
+
 >
 
 
@@ -78,8 +79,8 @@ In dit artikel worden de sneltoetsen weergegeven die kunnen worden gebruikt met 
 | Alle accordeons samenvouwen in de structuur Formulierobjecten van de inhoudbrowser wanneer deze de focus heeft | Ctrl+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen | Command+A om alle accordeons te selecteren, gevolgd door Pijl-links, die moeten worden samengevouwen |
 | De geselecteerde accordeon uitbreiden in de formulierobjectstructuur | Pijl-rechts | Pijl-rechts |
 | Geselecteerde accordeon samenvouwen in de formulierobjectstructuur | Pijl-links | Pijl-links |
-| Selecteer het volgende item in de structuur Formulierobjecten | Pijl-omlaag | Pijl-omlaag |
-| Selecteer het vorige item in de structuur Formulierobjecten | Pijl-omhoog | Pijl-omhoog |
+| Volgend item selecteren in de Forms Objects tree | Pijl-omlaag | Pijl-omlaag |
+| Vorig item selecteren in de Forms-objectenstructuur | Pijl-omhoog | Pijl-omhoog |
 
 [1] Vervangt Ctrl + Pijl-rechts voor Windows en Command + Pijl-rechts voor Mac OS.\
 [2] Vervangt Ctrl + Pijl-links voor Windows en Command + Pijl-links voor Mac OS.
