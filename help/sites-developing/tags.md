@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 2d0835e0-5602-49a9-b9ad-636ce5a8ad2a
 translation-type: tm+mt
 source-git-commit: 5f84641d87b88532f0fa0d92fada4e8cca3d9684
+workflow-type: tm+mt
+source-wordcount: '109'
+ht-degree: 2%
 
 ---
 
@@ -24,6 +27,6 @@ Door tags toe te wijzen, kunt u inhoud indelen en ordenen. Tags kunnen worden ge
 
 De volgende informatie is beschikbaar voor ontwikkelaars:
 
-* [AEM Tagging Framework](/help/sites-developing/framework.md) - Een beschrijving van de knooppunten en eigenschappen die worden gebruikt voor codering
+* [AEM Tagingframework](/help/sites-developing/framework.md) - Een beschrijving van de knooppunten en eigenschappen die worden gebruikt voor tags
 
-* [Tags maken in een AEM-toepassing](/help/sites-developing/building.md) - Een beschrijving van de API&#39;s die werken met het coderingsframework vanuit code aan de clientzijde en aan de serverzijde
+* [Tags maken in een AEM toepassing](/help/sites-developing/building.md) - Een beschrijving van de API&#39;s die werken met het coderingsframework vanuit code aan de clientzijde en aan de serverzijde
