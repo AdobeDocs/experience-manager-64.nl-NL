@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
 translation-type: tm+mt
 source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+workflow-type: tm+mt
+source-wordcount: '1711'
+ht-degree: 0%
 
 ---
 
@@ -24,7 +27,7 @@ source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
 
 >[!NOTE]
 >
->AEM 6.4.5.0 of recenter wordt vereist om de server van het KUUROORD te gebruiken teruggevende eigenschappen zoals die in dit document worden beschreven.
+>AEM 6.4.5.0 of later wordt vereist om de server van het KUUROORD te gebruiken die eigenschappen teruggeeft zoals die in dit document worden beschreven.
 
 ## Overzicht {#overview}
 
@@ -43,29 +46,29 @@ SSR verstrekt gewoonlijk één of andere waarde wanneer er duidelijk &quot;ja&qu
 * **SEO:** Is SSR eigenlijk nog vereist voor uw plaats om behoorlijk door de onderzoeksmotoren worden geïndexeerd die verkeer brengen? Vergeet niet dat de zoekmachine die als hoofdopzoekprogramma wordt gebruikt nu JS evalueert.
 * **Paginasnelheid:** Biedt SSR een meetbare snelheidsverbetering in levensechte omgevingen en vergroot de algehele gebruikerservaring?
 
-Slechts wanneer één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert Adobe het uitvoeren van SSR. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime.
+Slechts wanneer één minstens één van deze twee vragen met duidelijk &quot;ja&quot;voor uw project wordt beantwoord adviseert Adobe het uitvoeren van SSR. In de volgende secties wordt beschreven hoe u dit kunt doen met Adobe I/O Runtime.
 
-## Adobe I/O-runtime {#adobe-io-runtime}
+## Adobe I/O Runtime {#adobe-io-runtime}
 
-Als u [zeker weet dat voor uw project de implementatie van SSR](#when-to-use-ssr)is vereist, kunt u het beste Adobe I/O-runtime gebruiken.
+Als u er [zeker van bent dat voor uw project de implementatie van R](#when-to-use-ssr)vereist is, is de aanbevolen SSR-oplossing om Adobe I/O Runtime te gebruiken.
 
 Ga voor meer informatie over Adobe I/O Runtime naar
 
 * [https://www.adobe.io/apis/experienceplatform/runtime.html](https://www.adobe.io/apis/experienceplatform/runtime.html) - voor een overzicht van de dienst
 * [https://www.adobe.io/apis/experienceplatform/runtime/docs.html](https://www.adobe.io/apis/experienceplatform/runtime/docs.html) - voor gedetailleerde documentatie op het platform
 
-In de volgende secties wordt gedetailleerd beschreven hoe Adobe I/O Runtime kan worden gebruikt om SSR voor uw SPA in twee verschillende modellen uit te voeren:
+De volgende secties specificeren hoe Adobe I/O Runtime kan worden gebruikt om SSR voor uw KUUROORD in twee verschillende modellen uit te voeren:
 
 * [AEM-gestuurde communicatiestroom](#aem-driven-communication-flow)
-* [Door Adobe I/O-runtime gestuurde communicatiestroom](#adobe-io-driven-communication-flow)
+* [Adobe I/O-runtime-gestuurde communicatiestroom](#adobe-io-driven-communication-flow)
 
 >[!NOTE]
 >
->Adobe raadt een aparte Adobe I/O Runtime-instantie aan voor elke AEM-omgeving (auteur, publicatie, werkgebied, enz.).
+>Adobe raadt een aparte Adobe I/O Runtime-instantie aan voor elke AEM omgeving (auteur, publicatie, werkgebied, enz.).
 
 ## Configuratie renderfunctie voor externe inhoud {#remote-content-renderer-configuration}
 
-AEM moet weten waar de op afstand gerenderde inhoud kan worden opgehaald. Ongeacht [welk model u verkiest om voor SSR](#adobe-io-runtime)uit te voeren, zult u aan AEM moeten specificeren hoe te om tot deze verre het teruggeven dienst toegang te hebben.
+AEM moet weten waar de op afstand gerenderde inhoud kan worden opgehaald. Ongeacht [welk model u verkiest om voor SSR](#adobe-io-runtime)uit te voeren, zult u aan AEM moeten specificeren hoe te om tot deze verre teruggevende dienst toegang te hebben.
 
 Dit wordt gedaan via de **dienst RemoteContentRenderer - van de Fabriek** van de Configuratie OSGi. Zoek naar het koord &quot;RemoteContentRenderer&quot;in de console van de Configuratie van de Console van het Web bij `http://<host>:<port>/system/console/configMgr`.
 
@@ -82,7 +85,7 @@ De volgende velden zijn beschikbaar voor de configuratie:
 
 >[!NOTE]
 >
->Ongeacht of u ervoor kiest om de [AEM-gestuurde communicatiestroom](#aem-driven-communication-flow) of de door [Adobe I/O-runtime gestuurde flow](#adobe-io-driven-communication-flow)te implementeren, moet u een configuratie voor een externe inhoudrenderer definiëren.
+>Ongeacht of u verkiest om de [AEM-gedreven communicatie stroom](#aem-driven-communication-flow) of de [Adobe I/O Runtime-gedreven stroom](#adobe-io-driven-communication-flow)uit te voeren, moet u een verre configuratie van inhoudrenderer bepalen.
 >
 >Deze configuratie moet ook worden bepaald als u verkiest om een server [van Node.js te](#using-node-js)gebruiken.
 
@@ -92,12 +95,12 @@ De volgende velden zijn beschikbaar voor de configuratie:
 
 ## AEM-gestuurde communicatiestroom {#aem-driven-communication-flow}
 
-Wanneer u SSR gebruikt, bevat de workflow [voor](/help/sites-developing/spa-overview.md#workflow) componentinteractie van SPA&#39;s in AEM een fase waarin de initiële inhoud van de app wordt gegenereerd door Adobe I/O-runtime.
+Wanneer het gebruiken van SSR, omvat het werkschema [van de](/help/sites-developing/spa-overview.md#workflow) componenteninteractie van SPAs in AEM een fase waarin de aanvankelijke inhoud van app door Adobe I/O Runtime wordt geproduceerd.
 
-1. De browser vraagt de SSR-inhoud op van AEM.
-1. AEM publiceert het model naar Adobe I/O Runtime.
-1. De Adobe I/O-runtime retourneert de gegenereerde inhoud
-1. AEM dient de HTML die door Adobe I/O Runtime via het malplaatje van HTML van de achterste paginacomponent is teruggekeerd.
+1. De browser vraagt om de SSR-inhoud van AEM.
+1. AEM plaatst het model op Adobe I/O Runtime.
+1. Adobe I/O Runtime retourneert de gegenereerde inhoud
+1. AEM dient de HTML die door Adobe I/O Runtime wordt geretourneerd via de HTML-sjabloon van de backend page component.
 
 ![server-side rendering-cms-drivenaemnode](assets/server-side-rendering-cms-drivenaemnode-adobeio.png)
 
@@ -105,14 +108,14 @@ Wanneer u SSR gebruikt, bevat de workflow [voor](/help/sites-developing/spa-over
 
 De sectie [AEM-Gedreven Communicatie Stroom](#aem-driven-communication-flow) beschrijft de standaard en geadviseerde implementatie van server zijteruggeven met betrekking tot SPAs in AEM, waar AEM het bootstrapping en het dienen van inhoud uitvoert.
 
-Alternatief, kan SSR worden uitgevoerd zodat de Runtime van Adobe I/O van Adobe voor bootstrapping verantwoordelijk is, effectief omkeerend de communicatie stroom.
+Alternatief, kan SSR worden uitgevoerd zodat Adobe I/O Runtime voor bootstrapping verantwoordelijk is, effectief omkeerend de communicatie stroom.
 
 Beide modellen zijn geldig en worden ondersteund door AEM. Men moet echter eerst de voor- en nadelen van elk model in overweging nemen voordat men een bepaald model toepast.
 
 | Bootstrapping | Voordelen | Nadelen |
 |---|---|---|
-| via AEM | AEM beheert injectiebibliotheken waar dat<br>nodig isBronnen hoeven alleen op AEM te worden onderhouden | Mogelijk onbekend aan ontwikkelaar van SPA |
-| via Adobe I/O Runtime | Vertrouwelijker aan ontwikkelaars van het KUUROORD | Clientlib-bronnen die door de toepassing worden vereist, zoals CSS en JavaScript, moeten door de AEM-ontwikkelaar beschikbaar worden gesteld via de [`allowProxy` eigenschap](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br>Resources moeten worden gesynchroniseerd tussen AEM en Adobe I/O<br>RuntimeVoor het maken van de SPA is mogelijk een proxyserver voor Adobe I/O Runtime nodig. |
+| via AEM | AEM beheert waar<br>nodig injectiebibliothekenBronnen hoeven alleen op AEM te worden onderhouden | Mogelijk onbekend aan ontwikkelaar van SPA |
+| via Adobe I/O Runtime | Vertrouwelijker aan ontwikkelaars van het KUUROORD | Clientlib-bronnen die door de toepassing worden vereist, zoals CSS en JavaScript, moeten door de AEM-ontwikkelaar beschikbaar worden gesteld via de [`allowProxy` propertyResources moeten worden gesynchroniseerd tussen AEM en Adobe I/O-](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet)<br><br>runtimeOm het ontwerpen van de SPA mogelijk te maken, is mogelijk een proxyserver voor Adobe I/O Runtime nodig |
 
 ## Planning voor SSR {#planning-for-ssr}
 
@@ -124,13 +127,13 @@ Aangezien u overweegt het uitvoeren van server het zijteruggeven voor uw SPA, mo
 
 De componenten van het KUUROORD zouden door de cliënt (in browser) of serverkant kunnen worden teruggegeven. Bij rendering op de server zijn browsereigenschappen zoals venstergrootte en -locatie niet aanwezig. Daarom zouden de componenten van het KUUROORD isomorf moeten zijn, die geen veronderstelling maken over waar zij zullen worden teruggegeven.
 
-Als u SSR wilt gebruiken, moet u uw code zowel in AEM als in Adobe I/O Runtime implementeren, die verantwoordelijk is voor de rendering aan de serverzijde. De meeste code zijn hetzelfde, maar serverspecifieke taken verschillen.
+Als u SSR wilt gebruiken, moet u uw code zowel in AEM als op Adobe I/O Runtime implementeren, die verantwoordelijk is voor de rendering aan de serverzijde. De meeste code zijn hetzelfde, maar serverspecifieke taken verschillen.
 
 ## SSR voor SPA’s in AEM {#ssr-for-spas-in-aem}
 
-SSR voor SPA&#39;s in AEM vereist Adobe I/O-runtime, die wordt aangeroepen voor het renderen van de zijde van de toepassingsinhoudsserver. Binnen de HTML van de app wordt een resource in Adobe I/O Runtime aangeroepen om de inhoud te renderen.
+SSR voor SPAs in AEM vereist Adobe I/O Runtime, die voor de teruggave van de de serverkant van de toepassingsinhoud wordt geroepen. Binnen de HTML van de app wordt een resource op Adobe I/O Runtime aangeroepen om de inhoud te renderen.
 
-Net zoals AEM de Hoekse en Reacte kaders van het KUUROORD buiten de doos steunt, wordt de server zijrendering ook gesteund voor Hoekige en Reacte apps. Zie de NPM documentatie voor beide kaders voor verdere details.
+Enkel aangezien AEM de Hoekse en Reacte kaders van het KUUROORD uit-van-de doos steunt, wordt het teruggeven van de serverzijde ook gesteund voor Hoekige en Reacte apps. Zie de NPM documentatie voor beide kaders voor verdere details.
 
 * Reageren: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
 * Hoek: [https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component](https://github.com/adobe/aem-sample-we-retail-journal/blob/master/react-app/DEVELOPMENT.md#enabling-the-server-side-rendering-using-the-aem-page-component)
@@ -138,30 +141,30 @@ Net zoals AEM de Hoekse en Reacte kaders van het KUUROORD buiten de doos steunt,
 Voor een simplistisch voorbeeld raadpleegt u de app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal)We.Retail Journal. Het rendert de volledige kant van de toepassingsserver. Hoewel dit geen echt voorbeeld is, toont het wel wat nodig is om SSR uit te voeren.
 
 >[!CAUTION]
->De app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal is alleen bedoeld als demonstratie en gebruikt daarom Node.js als eenvoudig voorbeeld in plaats van de aanbevolen Adobe I/O-runtime. Dit voorbeeld zou niet voor om het even welk projectwerk moeten worden gebruikt.
+>De app [](https://github.com/Adobe-Marketing-Cloud/aem-sample-we-retail-journal) We.Retail Journal is alleen bedoeld als demonstratie en gebruikt daarom Node.js als eenvoudig voorbeeld in plaats van de aanbevolen Adobe I/O Runtime. Dit voorbeeld zou niet voor om het even welk projectwerk moeten worden gebruikt.
 
 >[!NOTE]
->Om het even welk project AEM zou hefboomwerking het Archetype [van het Project van](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)AEM, dat de projecten van het KUUROORD gebruikend React of Hoekig steunt en hefboomwerkingen SDK van het KUUROORD.
+>Om het even welk AEM project zou hefboomwerking het [AEM Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html)van het Project, dat de projecten van het KUUROORD gebruikend React of Angular steunt en hefboomwerkingen SDK van het KUUROORD.
 
 ## Node.js gebruiken {#using-node-js}
 
 Adobe I/O Runtime is de geadviseerde oplossing voor het uitvoeren SSR voor SPAs in AEM.
 
-Voor AEM-instanties ter plaatse is het ook mogelijk SSR te implementeren met een aangepaste Node.js-instantie op dezelfde manier als hierboven beschreven. Hoewel dit wordt ondersteund door Adobe, wordt dit niet aanbevolen.
+Voor on-premesis AEM instanties, is het ook mogelijk om SSR uit te voeren gebruikend een douaneinstantie Node.js op de zelfde manier zoals hierboven beschreven. Hoewel dit door Adobe wordt gesteund, wordt het niet geadviseerd.
 
-Node.js wordt niet ondersteund voor door Adobe gehoste AEM-instanties.
+Node.js wordt niet ondersteund voor door Adobe gehoste AEM instanties.
 
 >[!NOTE]
 >
->Als SSR via Node.js moet worden geïmplementeerd, raadt Adobe een aparte instantie Node.js aan voor elke AEM-omgeving (auteur, publicatie, werkgebied, enz.).
+>Als SSR via Node.js moet worden geïmplementeerd, raadt Adobe een aparte instantie Node.js aan voor elke AEM omgeving (auteur, publicatie, werkgebied, enz.).
 
 ## Renderer voor externe inhoud {#remote-content-renderer}
 
-De [Verre Configuratie](#remote-content-renderer-configuration) van Renderer van de Inhoud die wordt vereist om SSR met uw KUUROORD in AEM te gebruiken staps in een meer algemene het teruggeven dienst die kan worden uitgebreid en worden aangepast om aan uw behoeften te voldoen.
+De [Verre Configuratie](#remote-content-renderer-configuration) van Renderer van de Inhoud die wordt vereist om SSR met uw KUUROORD in AEM tikken in een meer algemene het teruggeven dienst te gebruiken die kan worden uitgebreid en worden aangepast om aan uw behoeften te voldoen.
 
 ### RemoteContentRenderingService {#remotecontentrenderingservice}
 
-`RemoteContentRenderingService` is een OSGi-service voor het ophalen van inhoud die op een externe server wordt gerenderd, zoals van Adobe I/O. De inhoud die naar de externe server wordt verzonden, is gebaseerd op de doorgegeven parameter request.
+`RemoteContentRenderingService` is de dienst OSGi om inhoud terug te winnen die op een verre server, zoals van Adobe I/O wordt teruggegeven. De inhoud die naar de externe server wordt verzonden, is gebaseerd op de doorgegeven parameter request.
 
 `RemoteContentRenderingService` kan door gebiedsinversie in of een douaneSling model of servlet worden geïnjecteerd wanneer de extra inhoudsmanipulatie wordt vereist.
 
@@ -191,7 +194,7 @@ De configuratie van de standaardmanager moet worden gevormd zoals die in de sect
 Om een servlet te hebben halen en wat inhoud terug te keren die in de pagina kan worden ingespoten:
 
 1. Controleer of uw externe server toegankelijk is.
-1. Voeg een van de volgende fragmenten toe aan de HTML-sjabloon van een AEM-component.
+1. Voeg een van de volgende fragmenten toe aan de HTML-sjabloon van een AEM component.
 1. Naar keuze, creeer of wijzig de configuraties OSGi.
 1. Door de inhoud van uw site bladeren
 
