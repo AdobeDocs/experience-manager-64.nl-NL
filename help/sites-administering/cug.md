@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
 translation-type: tm+mt
 source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+workflow-type: tm+mt
+source-wordcount: '808'
+ht-degree: 0%
 
 ---
 
@@ -40,7 +43,7 @@ U configureert een dergelijk gebied binnen uw website als volgt:
 
 Een gesloten gebruikersgroep maken:
 
-1. Ga naar **Gereedschappen - Beveiliging** vanaf het introductiescherm van AEM.
+1. Ga naar **Gereedschappen - Beveiliging** vanaf het AEM introductiescherm.
 
    >[!NOTE]
    >
@@ -87,7 +90,7 @@ De CUG toepassen op een pagina:
 
 1. Zoek naar en voeg uw GIDS in het volgende venster toe - in dit geval voeg de groep genoemd **cug_access** toe. Tot slot druk **sparen**.
 1. Klik **Toegelaten** om te bepalen dat deze pagina (en om het even welke kindpagina&#39;s) tot een KUG behoren.
-1. Geef de **aanmeldingspagina** op die de leden van de groep zullen gebruiken; bijvoorbeeld:
+1. Geef de **aanmeldingspagina** op die de groepsleden zullen gebruiken; bijvoorbeeld:
 
    `/content/geometrixx/en/toolbar/login.html`
 
@@ -97,7 +100,7 @@ De CUG toepassen op een pagina:
 1. Wijs indien nodig een **Realm** (een naam voor de paginagroepen) toe. Laat leeg als u de paginatitel wilt gebruiken.
 1. Klik op **OK** om de specificatie op te slaan.
 
-Zie [Identiteitsbeheer](/help/sites-administering/identity-management.md) voor informatie over profielen in het publicatiemilieu en het verstrekken van vormen voor het programma openen en uit.
+Zie [Identity Management](/help/sites-administering/identity-management.md) voor informatie over profielen in de publicatieomgeving en het opgeven van formulieren voor aanmelden en uitloggen.
 
 ## Koppeling met de realiteit {#linking-to-the-realm}
 
