@@ -1,6 +1,6 @@
 ---
 title: Decoratietag
-description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars, biedt AEM duidelijke en eenvoudige logica die de decoratietags controleert die inbegrepen componenten verpakken.
+description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten.
 translation-type: tm+mt
 source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
 workflow-type: tm+mt
@@ -20,12 +20,12 @@ Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element wor
    * indelingsgegevens
    * opmaakgegevens
 
-Voor ontwikkelaars, biedt AEM duidelijke en eenvoudige logica die de decoratietags controleert die inbegrepen componenten verpakken. Of en hoe de versietag wordt teruggegeven wordt bepaald door de combinatie twee factoren, die deze pagina in duiken:
+Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten. Of en hoe de versietag wordt teruggegeven wordt bepaald door de combinatie twee factoren, die deze pagina in duiken:
 
 * De component zelf kan zijn versietag met een reeks eigenschappen vormen.
 * De scripts die componenten bevatten (HTL, JSP, dispatcher, enz.) kunnen de aspecten van de decoratietag definiëren met daarin parameters.
 
-## Aanbevelingen {#recommendations}
+## Recommendations {#recommendations}
 
 Hier zijn sommige algemene aanbevelingen van wanneer om het omslagelement te omvatten dat in het vermijden zou moeten helpen lopen in onverwachte kwesties:
 
@@ -138,7 +138,7 @@ Resulterende uitvoer `/content/test.html`:
 
 ## JSP {#jsp}
 
-Wanneer u een component opneemt die `cq:includ`e of `sling:include`e gebruikt, is het standaardgedrag in AEM DIV te gebruiken om het element te verpakken. Nochtans, kan dit verpakken op twee manieren worden aangepast:
+Wanneer u een component opneemt die `cq:includ`e of `sling:include`e gebruikt, is het standaardgedrag in AEM een DIV-bestand te gebruiken om het element te laten omlopen. Nochtans, kan dit verpakken op twee manieren worden aangepast:
 
 * Geef AEM expliciet op om de component niet te laten omlopen met `cq:noDecoration`.
 * Gebruik een aangepaste HTML-tag om de component te laten omlopen met `cq:htmlTag`/ `cq:tagName` of `decorationTagName`.
