@@ -10,11 +10,14 @@ topic-tags: correspondence-management
 discoiquuid: cc473808-e71a-4834-bb30-91e6df783e60
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '205'
+ht-degree: 0%
 
 ---
 
 
-# Correspondentenbeheer:Problemen oplossen {#correspondence-management-troubleshooting}
+# Correspondentenbeheer: Problemen oplossen {#correspondence-management-troubleshooting}
 
 ## Fouten bij het opslaan van een letter {#errors-when-saving-a-letter}
 
