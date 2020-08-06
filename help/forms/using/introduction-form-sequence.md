@@ -10,6 +10,9 @@ topic-tags: author
 discoiquuid: 4a51ebc4-e019-4fc5-93a1-d97f695126f5
 translation-type: tm+mt
 source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+workflow-type: tm+mt
+source-wordcount: '536'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ Met adaptieve formulieren kunnen auteurs van formulieren in meerdere stappen geg
 
 In een typisch voorbeeld van het invullen van formulieren zijn er meer stappen nodig dan alleen het vastleggen van gegevens. Een volledig formulier dat wordt verzonden, kan andere stappen bevatten, zoals het digitaal ondertekenen van het formulier, het controleren van de informatie die is ingevuld in het formulier, het verwerken van betalingen, enzovoort. Het verschilt van geval tot geval.
 
-Als uw gebruiksgeval een reeks stappen voor gegevens vastlegt of er verordeningen zijn die bepaalde te volgen stappen vereisen, verstrekt de Vormen van AEM een manier om die gemeenschappelijke structuur tussen vormen af te dwingen. De vooraf ingestelde implementatie van de formulierstructuur definieert de reeks stappen voor een formulier. ![Voorbeeld van een formulierreeks die uit meerdere stappen bestaat](assets/formpipeline.png)
+Als uw gebruikscase een reeks stappen voor het vastleggen van gegevens verplicht stelt of als er regels zijn die bepaalde stappen moeten volgen, biedt AEM Forms een manier om die gemeenschappelijke structuur in alle formulieren af te dwingen. De vooraf ingestelde implementatie van de formulierstructuur definieert de reeks stappen voor een formulier. ![Voorbeeld van een formulierreeks die uit meerdere stappen bestaat](assets/formpipeline.png)
 
 We gebruiken een voorbeeld waarbij u een reeks moet maken voor het invullen, verifiëren, ondertekenen en bevestigen van een formulier. U kunt een dergelijke reeks als volgt maken:
 
@@ -37,7 +40,7 @@ We gebruiken een voorbeeld waarbij u een reeks moet maken voor het invullen, ver
    * **Bevestiging**: Het bevat de component **Samenvatting** die een bericht weergeeft ter bevestiging van het verzenden van het formulier nadat een gebruiker het formulier heeft ondertekend en de stap Bevestigen (Samenvatting) in de reeks heeft bereikt. Auteurs kunnen de tekst van de component Summary configureren, een bedankbericht weergeven, een koppeling naar de gegenereerde PDF weergeven, enzovoort.
 
 
-1. Selecteer de layout van het hoofddeelvenster als **[!UICONTROL wizard]**.
+1. Selecteer de layout van het hoofddeelvenster als **[!UICONTROL Wizard]**.
 1. Voer de overige stappen uit om de formuliersjabloon te maken. Zie Een aangepaste formuliersjabloon [](/help/forms/using/custom-adaptive-forms-templates.md)maken voor meer informatie.
 
 Nadat u de formuliervolgorde in de formuliersjabloon hebt gedefinieerd, kunt u er formulieren mee maken die de basisstructuur hebben gedefinieerd als de ingestelde reeks. U kunt het formulier echter altijd aan uw wensen aanpassen.
