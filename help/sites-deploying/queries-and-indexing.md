@@ -1,8 +1,8 @@
 ---
 title: Oak-query's en indexering
 seo-title: Oak-query's en indexering
-description: Leer hoe u indexen in AEM configureert.
-seo-description: Leer hoe u indexen in AEM configureert.
+description: Leer hoe te om indexen in AEM te vormen.
+seo-description: Leer hoe te om indexen in AEM te vormen.
 uuid: a1233d2e-1320-43e0-9b18-cd6d1eeaad59
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -87,6 +87,7 @@ De index van het Bezit is over het algemeen nuttig voor vragen die bezitsbeperki
 
    * **type:**  `property` (van het type String)
    * **propertyNames :**  `jcr:uuid` (van het type Name)
+
    In dit voorbeeld wordt de `jcr:uuid` eigenschap geïndexeerd, waarvan de taak is om de universeel unieke id (UUID) weer te geven van het knooppunt waaraan deze is gekoppeld.
 
 1. Sla de wijzigingen op.
@@ -108,7 +109,7 @@ De geordende index is een uitbreiding van de index van het Bezit. Het is echter 
 
 ### De index van volledige tekst met Lucene {#the-lucene-full-text-index}
 
-Een volledige tekstindex op basis van Apache Lucene is beschikbaar in AEM 6.
+Een volledige tekstindexeerfunctie op basis van Apache Lucene is beschikbaar in AEM 6.
 
 Als een full-text index wordt gevormd, dan gebruiken alle vragen die een full-text voorwaarde hebben de full-text index, geen kwestie als er andere voorwaarden zijn die worden geïndexeerd, en geen kwestie als er een wegbeperking is.
 
@@ -211,6 +212,7 @@ Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens
    * **Naam:** `class`
    * **Type:** `String`
    * **Waarde:** `org.apache.lucene.analysis.standard.StandardAnalyzer`
+
    De waarde is de naam van de klasse Analyzer die u wilt gebruiken.
 
    U kunt de analysator ook plaatsen om met een specifieke lucene versie te gebruiken door het facultatieve `luceneMatchVersion` koordbezit te gebruiken. Een geldige synthax voor gebruik met Lucene 4.7 zou zijn:
@@ -218,6 +220,7 @@ Als u een analysator in de doos wilt gebruiken, kunt u deze configureren volgens
    * **Naam:** `luceneMatchVersion`
    * **Type:** `String`
    * **Waarde:** `LUCENE_47`
+
    Als `luceneMatchVersion` deze optie niet is opgegeven, zal Oak de versie van Lucene gebruiken die bij het product is meegeleverd.
 
 1. Als u een stopwoordenbestand wilt toevoegen aan de configuraties van de analysator, kunt u een nieuw knooppunt onder het `default` knooppunt maken met de volgende eigenschappen:
@@ -283,9 +286,9 @@ Voor gevallen zoals het laden van stopwoorden waarbij inhoud van externe bestand
 
 Het doel van de Solr-index is voornamelijk zoeken in volledige tekst, maar het kan ook worden gebruikt om zoekopdrachten op pad, eigenschapsbeperkingen en beperkingen van primaire typen te indexeren. Dit betekent de Solr index in Oak voor om het even welk type van vraag JCR kan worden gebruikt.
 
-De integratie in AEM vindt plaats op het niveau van de opslagplaats, zodat Solr een van de mogelijke indexen is die kunnen worden gebruikt in Oak, de nieuwe implementatie van de opslagplaats die met AEM wordt geleverd.
+De integratie in AEM gebeurt op het niveau van de opslagplaats zodat Solr één van de mogelijke indexen is die in Oak kunnen worden gebruikt, de nieuwe opbergingsimplementatie die met AEM wordt verscheept.
 
-Het kan worden gevormd om als ingebedde server met de instantie van AEM, of als verre server te werken.
+Het kan worden gevormd om als ingebedde server met de AEM instantie, of als verre server te werken.
 
 ### AEM configureren met een ingesloten Solr-server {#configuring-aem-with-an-embedded-solr-server}
 
@@ -293,7 +296,7 @@ Het kan worden gevormd om als ingebedde server met de instantie van AEM, of als 
 >
 >Gebruik geen ingesloten Solr-server in een productieomgeving. Het mag alleen in een ontwikkelingsomgeving worden gebruikt.
 
-AEM kan met een ingebedde server van de Solr worden gebruikt die via de Console van het Web kan worden gevormd. In dit geval wordt de Solr-server uitgevoerd in dezelfde JVM als de AEM-instantie waarin deze is ingesloten.
+AEM kan met een ingebedde server van Solr worden gebruikt die via de Console van het Web kan worden gevormd. In dit geval wordt de Solr-server uitgevoerd in dezelfde JVM als de AEM-instantie waarin deze is ingesloten.
 
 U kunt de ingesloten Solr-server configureren door:
 
@@ -305,7 +308,7 @@ U kunt de ingesloten Solr-server configureren door:
 
    >[!NOTE]
    >
-   >De configuratie Solr home directory (solr.home.path) zoekt naar een map met dezelfde naam in de AEM-installatiemap.
+   >De configuratie Solr home directory (solr.home.path) zoekt naar een map met dezelfde naam in de installatiemap AEM.
 
 1. Open CRXDE en meld u aan als Admin.
 1. Voeg een knooppunt met de naam **solrlndex** van het type **eak:QueryIndexDefinition** toe onder **eikel:index** met de volgende eigenschappen:
@@ -318,15 +321,17 @@ U kunt de ingesloten Solr-server configureren door:
 
 ### AEM configureren met één externe Solr-server {#configuring-aem-with-a-single-remote-solr-server}
 
-AEM kan ook worden gevormd om met een verre serverinstantie van Solr te werken:
+AEM kan ook worden geconfigureerd om met een externe Solr-serverinstantie te werken:
 
 1. Download en extraheer de nieuwste versie van Solr. Raadpleeg de documentatie bij de installatie van [Apache Solr voor meer informatie over hoe u dit kunt doen](https://cwiki.apache.org/confluence/display/solr/Installing+Solr).
 1. Maak nu twee Solr-planken. U kunt dit doen door mappen te maken voor elke schijf in de map waarin Solr is geüpload:
 
    * Voor de eerste gedeelde map maakt u de map:
+
    `<solrunpackdirectory>\aemsolr1\node1`
 
    * Voor de tweede schijf maakt u de map:
+
    `<solrunpackdirectory>\aemsolr2\node2`
 
 1. Zoek de voorbeeldinstantie in het Solr-pakket. De map bevindt zich gewoonlijk in de hoofdmap van het pakket, de map &quot; `example`&quot;.
@@ -379,7 +384,7 @@ AEM kan ook worden gevormd om met een verre serverinstantie van Solr te werken:
 
 #### Aanbevolen configuratie voor Solr {#recommended-configuration-for-solr}
 
-Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. De toegewezen eigenschapsindexen die al in AEM aanwezig zijn, worden bij het programma gevoegd en mogen niet met andere toepassingen worden gebruikt.
+Hieronder is een voorbeeld van een basisconfiguratie die met alle drie plaatsingen kan worden gebruikt Solr die in dit artikel worden beschreven. De toegewezen eigenschapsindexen die al in AEM aanwezig zijn, worden samengevoegd en mogen niet met andere toepassingen worden gebruikt.
 
 om het behoorlijk te gebruiken, moet u de inhoud van het archief in de Solr Folder van het Huis direct plaatsen. In het geval van multi-knoopplaatsingen, zou het direct onder de wortelomslag van elke knoop moeten gaan.
 
@@ -387,14 +392,14 @@ Aanbevolen Solr-configuratiebestanden
 
 [Bestand ophalen](assets/recommended-conf.zip)
 
-### AEM-indexgereedschappen {#aem-indexing-tools}
+### Gereedschappen voor AEM indexeren {#aem-indexing-tools}
 
-AEM 6.1 integreert ook twee indexeringsgereedschappen in AEM 6.0 als onderdeel van de gemeenschappelijke toolset van Adobe Consulting Services:
+AEM 6.1 integreert ook twee indexerende hulpmiddelen in AEM 6.0 als deel van de Adobe Consulting Toolset van de Diensten van de Gemeenschappelijke Onderneming:
 
 1. **Verklaar Vraag**, een hulpmiddel dat wordt ontworpen om beheerders te helpen begrijpen hoe de vragen worden uitgevoerd;
 1. **De Manager** van de Index van het eiken, een Gebruikersinterface van het Web voor het handhaven van bestaande indexen.
 
-U kunt deze nu bereiken door naar **Gereedschappen - Bewerkingen - Dashboard - Diagnose** te gaan vanuit het AEM-welkomstscherm.
+U kunt hen nu bereiken door naar **Hulpmiddelen - Verrichtingen - Dashboard - Diagnose** van het AEM Welkome scherm te gaan.
 
 Raadpleeg de documentatie bij het [vluchthandboek](/help/sites-administering/operations-dashboard.md)voor meer informatie over het gebruik ervan.
 
@@ -426,7 +431,7 @@ Om het registreren toe te laten, moet u **DEBUG** niveaulogboeken voor de catego
 * org.apache.jackrabbit.oak.query
 * com.day.cq.search
 
-De categorie **com.day.cq.search** is alleen van toepassing als u het AEM-hulpprogramma dat u hebt opgegeven, gebruikt.
+De categorie **com.day.cq.search** is alleen van toepassing als u het AEM opgegeven hulpprogramma QueryBuilder gebruikt.
 
 >[!NOTE]
 >
