@@ -1,8 +1,8 @@
 ---
 title: Informatie weergeven in het deelvenster Taakoverzicht
 seo-title: Informatie weergeven in het deelvenster Taakoverzicht
-description: In de werkruimte van Vormen AEM, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
-seo-description: In de werkruimte van Vormen AEM, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
+description: In de werkruimte van AEM Forms, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
+seo-description: In de werkruimte van AEM Forms, kan een ruit van het Overzicht van de Taak worden gevormd om de taak samen te vatten of een andere Web-pagina te tonen.
 uuid: 2fcc3d9f-0ec2-4250-8dc1-9746fd72ea60
 contentOwner: robhagat
 content-type: reference
@@ -11,15 +11,18 @@ topic-tags: forms-workspace
 discoiquuid: 90d0f584-b598-4b21-85d7-31da5f13d404
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '305'
+ht-degree: 0%
 
 ---
 
 
 # Informatie weergeven in het deelvenster Taakoverzicht {#displaying-information-in-the-task-summary-pane}
 
-Als u een taak opent in de werkruimte van AEM-formulieren, wordt in het deelvenster Taakoverzicht een overzicht van de taak weergegeven. Deze extra en relevante informatie voor een taak voegt meer waarde toe aan de eindgebruiker van de werkruimte van Vormen AEM.
+Als u een taak opent in de AEM Forms-werkruimte, wordt in het deelvenster Taakoverzicht een overzicht van de taak weergegeven. Deze aanvullende en relevante informatie voor een taak voegt meer waarde toe aan de eindgebruiker van de AEM Forms-werkruimte.
 
-In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
+In de werkruimte van AEM Forms kunt u een webpagina van uw keuze weergeven in het deelvenster Taakoverzicht. Een proces kan worden gecreeerd om een ruit van het Overzicht van de Taak te tonen gebruikend Workbench.
 
 1. Maak een taakproces toewijzen in Workbench. Voor meer details over de verrichting van de Taak toewijzen, zie het onderwerp van de Verwijzing van de Dienst in [Workbench Hulp](https://help.adobe.com/en_US/AEMForms/6.1/WorkbenchHelp/).
 
@@ -49,4 +52,4 @@ In de werkruimte AEM Forms kunt u een webpagina van uw keuze weergeven in het de
    ```
 
    * Plaats de waarde van taak summiere url zoals `/lc/content/SampleSummary.html` in Assign de stap van de Taak.
-   * Wanneer de taak verbonden aan deze Assign stap van de Taak in de werkruimte van Vormen van AEM wordt geopend, `html.esp` bij `/apps/SampleSummary` wordt teruggegeven in de ruit van het taakoverzicht.
+   * Wanneer de taak verbonden aan deze Assign stap van de Taak in de werkruimte van AEM Forms wordt geopend, `html.esp` bij `/apps/SampleSummary` wordt teruggegeven in de ruit van het taakoverzicht.
