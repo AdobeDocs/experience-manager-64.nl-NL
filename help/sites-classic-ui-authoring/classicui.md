@@ -11,21 +11,24 @@ content-type: reference
 discoiquuid: edc78306-5e83-45a4-a44b-ce0d21ff0f31
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '243'
+ht-degree: 0%
 
 ---
 
 
 # Ontwerpen in de klassieke gebruikersinterface{#authoring-in-the-classic-ui}
 
-## Klassieke interface en interface met aanraakbediening {#classic-ui-and-touch-enabled-ui}
+## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
 
-De klassieke gebruikersinterface is de bureaubladgeoriënteerde gebruikersinterface die beschikbaar was sinds CQ5 (de voorganger voor AEM). De volgende documentatie over creatie is geconcentreerd op deze UI.
+De klassieke gebruikersinterface is de bureaubladgeoriënteerde gebruikersinterface die beschikbaar was sinds CQ5 (de predecessory naar AEM). De volgende documentatie over creatie is geconcentreerd op deze UI.
 
 De interface met aanraakbediening is de nieuwe standaardgebruikersinterface voor AEM, die is ontworpen voor zowel touch- als desktopapparaten. Zie de [standaarddocumentatie](/help/sites-authoring/author.md) voor het schrijven van programmacode voor meer informatie.
 
 >[!NOTE]
 >
->Omdat de interface op basis van aanrakingen de standaardinterface van AEM is, wordt de klassieke interface niet meer onderhouden. Dit betekent dat er bepaalde functionaliteit is die niet beschikbaar in klassieke UI is.
+>Omdat de gebruikersinterface met aanraakfuncties de standaardinterface van AEM is, blijft de klassieke gebruikersinterface niet langer behouden. Dit betekent dat er bepaalde functionaliteit is die niet beschikbaar in klassieke UI is.
 
 ## Concept of Authoring (en publicatie) {#concept-of-authoring-and-publishing}
 
