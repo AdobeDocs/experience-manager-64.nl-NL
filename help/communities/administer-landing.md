@@ -1,8 +1,8 @@
 ---
 title: Communitysites
 seo-title: Communitysites
-description: Overzicht van de documentatie van de AEM Communities
-seo-description: Overzicht van de documentatie van de AEM Communities
+description: Overzicht van de documentatie van AEM Communities
+seo-description: Overzicht van de documentatie van AEM Communities
 uuid: 9842ce6c-1af8-4b27-b199-07410e797ab2
 contentOwner: Janice Kendall
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,20 +11,23 @@ content-type: reference
 discoiquuid: 8799386a-c3b8-43cf-9f71-580ff2a81abc
 translation-type: tm+mt
 source-git-commit: e600df0bf1c4796b5446969b93a00f9edf280f5a
+workflow-type: tm+mt
+source-wordcount: '478'
+ht-degree: 0%
 
 ---
 
 
 # Communitysites {#communities-sites}
 
-Deze afdeling is bestemd voor degenen die AEM-gemeenschappen beheren en vertrouwd zijn met de kenmerken van AEM-gemeenschappen.
+Deze sectie is bedoeld voor degenen die AEM Communities beheren en vertrouwd zijn met de functies van AEM Communities.
 
 ## Overzicht {#overview}
 
 Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
-* [Overzicht van AEM-gemeenschappen](overview.md)
-* [Aan de slag met AEM-gemeenschappen](getting-started.md)
+* [AEM Communities - Overzicht](overview.md)
+* [Aan de slag met AEM Communities](getting-started.md)
 * [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
 
 ## Beheer en configuratieonderwerpen {#administration-and-configuration-topics}
@@ -54,13 +57,13 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 
 ### Door gebruiker gegenereerde inhoud {#user-generated-content}
 
-Een belangrijk kenmerk van AEM-gemeenschappen is het genereren van door gebruikers gegenereerde inhoud (UGC) door ondertekende bezoekers (leden) op de site. Ga voor meer informatie over het werken met UGC naar:
+Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers gegenereerde inhoud (UGC) door inloggers (leden). Ga voor meer informatie over het werken met UGC naar:
 
 * [Algemene UGC-winkel](working-with-srp.md): keuze van SRP voor gedeelde opslag van UGC
 * [Modererende UGC](moderate-ugc.md): Vertrouwde leden kunnen UGC in bulk of in context matigen
 * [UGC](tag-ugc.md)labelen: functies kunnen zo worden geconfigureerd dat leden inhoud kunnen labelen
 * [UGC](translate-ugc.md)vertalen: kunnen worden geconfigureerd om alle UGC te vertalen of kunnen leden geselecteerde posts vertalen
-* [Configuratie](analytics.md)analyse: Adobe Analytics toestaan om over diverse metriek betreffende lidactiviteit te rapporteren
+* [Configuratie](analytics.md)analyse: Adobe Analytics in staat stellen verslag uit te brengen over verschillende maatstaven met betrekking tot lidactiviteit
 
 ### Communautaire leden {#community-members}
 
@@ -78,18 +81,18 @@ Een belangrijk kenmerk van AEM-gemeenschappen is het genereren van door gebruike
 ### Functies Enablement {#enablement-features}
 
 * [Inschakelen](enablement.md)configureren: noodzakelijke informatie om de enablement-functies correct in te stellen
-* [Configuratie](analytics.md)analyse: noodzakelijke informatie voor het inschakelen van Adobe Analytics voor Community-functies
+* [Configuratie](analytics.md)analyse: noodzakelijke informatie om functies van Adobe Analytics for Communities mogelijk te maken
 * [Tags toewijzen](tag-resources.md): noodzakelijk voor het maken van enablement catalogi
 
 ### Implementatie {#deployment}
 
-Het gedeelte over de inzet bevat specifieke informatie voor AEM-gemeenschappen.
+De sectie Implementatie bevat specifieke informatie voor AEM Communities.
 
 De aard van het werken met inhoud van de gemeenschap beïnvloedt de structuur van de plaatsing:
 
 * [Aanbevolen topologieën voor Gemeenschappen](topologies.md)
 
-Het is belangrijk om de meest recente versie van Gemeenschappen op het platform van AEM te installeren:
+Het is belangrijk om de meest recente versie van Gemeenschappen op het AEM platform te installeren:
 
 * [Feitenpakket van de nieuwste gemeenschappen](deploy-communities.md#latestfeaturepack)
 
@@ -101,4 +104,4 @@ Zie de plaatsingspagina voor andere Gemeenschappen specifieke informatie, zoals 
 
 * Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het sociale-componentframework (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) om te leren hoe u auteur kunt maken met en Community-componenten kunt configureren.
+* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het maken en configureren van Community-componenten.
