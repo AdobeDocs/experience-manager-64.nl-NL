@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: cb621332-a149-4f8d-9425-fd815b033c38
 translation-type: tm+mt
 source-git-commit: c0fbebb86385931315edd05aabe2b23fcc39c4f9
+workflow-type: tm+mt
+source-wordcount: '2006'
+ht-degree: 0%
 
 ---
 
@@ -71,9 +74,9 @@ De volgende acties worden ondersteund met de REST API:
 
 >[!NOTE]
 >
->Met Firebug, een Firefox-extensie voor webontwikkeling, kunt u het HTTP-verkeer volgen wanneer de console wordt uitgevoerd. U kunt bijvoorbeeld de parameters en de waarden controleren die met een `POST` aanvraag naar de AEM-server worden verzonden.
+>Met Firebug, een Firefox-extensie voor webontwikkeling, kunt u het HTTP-verkeer volgen wanneer de console wordt uitgevoerd. U kunt bijvoorbeeld de parameters en de waarden controleren die met een `POST` aanvraag naar de AEM server worden verzonden.
 
-Op deze pagina wordt aangenomen dat AEM wordt uitgevoerd op localhost op de poort `4502` en dat de installatiecontext &quot; `/`&quot; (root) is. Als dit niet het geval is voor uw installatie, moeten de URI&#39;s, waarop de HTTP-aanvragen van toepassing zijn, dienovereenkomstig worden aangepast.
+Op deze pagina wordt aangenomen dat AEM op localhost op de poort wordt uitgevoerd `4502` en dat de installatiecontext &quot; `/`&quot; (root) is. Als dit niet het geval is voor uw installatie, moeten de URI&#39;s, waarop de HTTP-aanvragen van toepassing zijn, dienovereenkomstig worden aangepast.
 
 De voor `GET` aanvragen ondersteunde rendering is de JSON-rendering. De URL&#39;s voor `GET` moeten de `.json` extensie hebben, bijvoorbeeld:
 
@@ -130,7 +133,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
   </tr> 
   <tr> 
    <td><code>POST</code></td> 
-   <td>Wijzigt de status van de instantie. De nieuwe status wordt verzonden als de parameter <code>state</code> en moet een van de volgende waarden hebben: <code>RUNNING</code>, <code>SUSPENDED</code>, of <code>ABORTED</code>.<br /> Als de nieuwe status niet bereikbaar is (bijvoorbeeld wanneer een afgesloten instantie wordt opgeschort), wordt een <code>409</code> (<code>CONFLICT</code>) reactie teruggestuurd naar de client.</td> 
+   <td>Wijzigt de status van de instantie. De nieuwe status wordt verzonden als de parameter <code>state</code> en moet een van de volgende waarden hebben: <code>RUNNING</code>, <code>SUSPENDED</code>of <code>ABORTED</code>.<br /> Als de nieuwe status niet bereikbaar is (bijvoorbeeld wanneer een afgesloten instantie wordt opgeschort), wordt een <code>409</code> (<code>CONFLICT</code>) reactie teruggestuurd naar de client.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -242,7 +245,7 @@ Waar `*{uri}*` is het pad naar het modelknooppunt in de repository.
   </tr> 
   <tr> 
    <td><code>POST</code></td> 
-   <td>Hetzelfde gedrag als bij PUT. Nodig omdat AEM-widgets geen <code>PUT</code> bewerkingen ondersteunen.</td> 
+   <td>Hetzelfde gedrag als bij PUT. Nodig omdat AEM widgets geen <code>PUT</code> bewerkingen ondersteunen.</td> 
   </tr> 
   <tr> 
    <td><code>DELETE</code></td> 
@@ -376,7 +379,7 @@ De volgende HTTP-aanvraagmethoden zijn van toepassing op:
 
 ### Hoe te om een Lijst van alle Lopende Werkschema&#39;s met hun IDs te krijgen {#how-to-get-a-list-of-all-running-workflows-with-their-ids}
 
-Ga als volgt te werk om een lijst met alle actieve workflows op te halen:
+Voer een GET uit om een lijst met alle actieve workflows op te halen:
 
 `http://localhost:4502/etc/workflow/instances.RUNNING.json`
 
@@ -492,6 +495,7 @@ Bij het maken van een nieuw model:
 
    * `sling:resourceType`: `cq/workflow/components/pages/model`
    * `cq:template`: `/libs/cq/workflow/templates/model`
+
    Wanneer u een model creeert, moet u deze `cq:Page` knoop eerst tot stand brengen en zijn `jcr:content` knoop gebruiken als ouder van de modelknoop.
 
 * Het `id` argument dat sommige methodes voor het identificeren van het model vereisen is de absolute weg van de modelknoop in de bewaarplaats:
@@ -564,7 +568,7 @@ Verschillende methoden hebben de parameter:
 
 Deze parameter kan zo worden ingesteld dat `true` wordt aangegeven dat systeemworkflows van de relevante resultaten moeten worden uitgesloten.
 
-U [kunt de OSGi-configuratie](/help/sites-deploying/configuring-osgi.md) van **Adobe Granite Workflow PayloadMapCache** bijwerken die de workflow opgeeft die `Models` moet worden beschouwd als systeemworkflows. De standaardworkflowmodellen (runtime) zijn:
+U [kunt de OSGi configuratie](/help/sites-deploying/configuring-osgi.md) **Adobe Granite Workflow PayloadMapCache** bijwerken die de workflow opgeeft die `Models` als systeemworkflows moet worden beschouwd. De standaardworkflowmodellen (runtime) zijn:
 
 * `/var/workflow/models/scheduled_activation/jcr:content/model`
 * `/var/workflow/models/scheduled_deactivation/jcr:content/model`
