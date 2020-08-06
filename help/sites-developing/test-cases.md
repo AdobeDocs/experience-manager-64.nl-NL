@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 87a1f27a-765e-4882-9c06-5909e1610e1d
 translation-type: tm+mt
 source-git-commit: 0edddfde1e66ec487139f98e9ffafee885e61dfd
+workflow-type: tm+mt
+source-wordcount: '548'
+ht-degree: 0%
 
 ---
 
@@ -48,11 +51,11 @@ Het automatiseren van testgevallen is echter een belangrijke investering, dus mo
 
 ## Specifieke aspecten testen {#testing-specific-aspects}
 
-Bij het testen van AEM zijn enkele specifieke details van bijzonder belang:
+Bij het testen AEM zijn enkele specifieke details van bijzonder belang:
 
 Auteur- en publicatie-omgevingen
 
-Hoewel het in de [milieus](/help/sites-developing/the-basics.md#environments) aan de orde komt, is het de moeite waard om een doorslaggevende factor voor AEM-tests te benadrukken.
+Hoewel het in de [milieus](/help/sites-developing/the-basics.md#environments) aan de orde komt, is het de moeite waard te wijzen op een doorslaggevende factor van AEM met betrekking tot het testen.
 
 U moet AEM als twee toepassingen beschouwen:
 
