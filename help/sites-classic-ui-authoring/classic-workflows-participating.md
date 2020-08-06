@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 1d7a4889-82c5-4096-8567-8f66215a8458
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '584'
+ht-degree: 4%
 
 ---
 
@@ -45,13 +48,13 @@ U kunt de volgende handelingen uitvoeren om een werkitem te verwerken:
 
 ### Meldingen van toegewezen workflowhandelingen {#notifications-of-assigned-workflow-actions}
 
-Wanneer u een tijdelijk onderdeel hebt toegewezen (bijvoorbeeld Inhoud **** goedkeuren), worden verschillende waarschuwingen en/of meldingen weergegeven:
+Wanneer u een werkitem wordt toegewezen (bijvoorbeeld **Inhoud goedkeuren**), worden verschillende waarschuwingen en/of meldingen weergegeven:
 
 * In de kolom **Status** van de websiteconsole wordt aangegeven wanneer een pagina zich in een workflow bevindt:
 
    ![workflowstatus-1](assets/workflowstatus-1.png)
 
-* Wanneer aan u, of een groep waartoe u behoort, een werkitem wordt toegewezen als onderdeel van een workflow, wordt het werkitem weergegeven in uw AEM-werkstroomPostvak IN.
+* Wanneer u, of een groep die u tot behoort, een het werkpunt als deel van een werkschema wordt toegewezen, verschijnt het het werkpunt in uw Inbox van het Werkschema van de AEM.
 
    ![workflowinbox](assets/workflowinbox.png)
 
