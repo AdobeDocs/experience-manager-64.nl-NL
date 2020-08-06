@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 36c87684-e62a-4983-b123-87f56dbf7bc5
 translation-type: tm+mt
 source-git-commit: 9a1fe3265f1cd7907dfe576666a694b3c5b78d76
+workflow-type: tm+mt
+source-wordcount: '561'
+ht-degree: 1%
 
 ---
 
@@ -69,7 +72,7 @@ Door bijvoorbeeld de verwijzende URL (als gedragslijn) te combineren met demogra
 
 **De teaserpagina** A teaser wordt gericht aan een specifiek publiek. Het bevat herbruikbare inhoud die in de teasalinea kan worden gebruikt.
 
-**Campagne** Een campagne is een verzameling teaspagina&#39;s en e-mailmarketingpagina&#39;s, zoals nieuwsbrieven of uitnodigingen. Een campagne wordt meestal voor een beperkte periode uitgevoerd en wordt vervangen door een andere campagne.
+**Campagne** Een campagne is een verzameling teaspagina&#39;s en e-mailmarketingpagina&#39;s, zoals nieuwsbrieven of uitnodigingen. Een campagne loopt doorgaans gedurende een beperkte periode en wordt vervangen door een andere campagne.
 
 **Taser-alinea** Dit is een alinea die inhoud van een andere pagina ophaalt, afhankelijk van een selectiestrategie. Deze selectiestrategie kan segmenten en campagnes in overweging nemen.
 
