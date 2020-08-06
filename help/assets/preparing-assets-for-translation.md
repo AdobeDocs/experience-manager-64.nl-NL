@@ -15,7 +15,7 @@ ht-degree: 2%
 
 Meertalige elementen zijn elementen met binaire getallen, metagegevens en tags in meerdere talen. Over het algemeen bestaan binaire bestanden, metagegevens en tags voor elementen in één taal, die vervolgens naar andere talen worden vertaald voor gebruik in meertalige projecten.
 
-In Adobe Experience Manager (AEM)-middelen worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
+In Adobe Experience Manager (AEM) Assets worden meertalige middelen opgenomen in mappen, waarbij elke map de middelen in een andere taal bevat.
 
 Elke taalmap wordt een taalkopie genoemd. De hoofdmap van een taalkopie, de hoofdtaal genoemd, identificeert de taal van de inhoud in de taalkopie. Bijvoorbeeld: */content/dam/it* is de Italiaanse taalbasis voor de Italiaanse taalkopie. De exemplaren van de taal moeten een [correct-gevormde taalwortel](preparing-assets-for-translation.md#creating-a-language-root) gebruiken zodat de correcte taal wordt gericht wanneer de vertalingen van bronactiva worden uitgevoerd.
 
@@ -60,7 +60,7 @@ De hoofdpagina van de Italiaanse taalkopie van de voorbeeldhiërarchie heeft bij
 
 ## Taalwortels weergeven {#viewing-language-roots}
 
-De interface die is geoptimaliseerd voor aanrakingen biedt een paneel Referenties met een lijst met taalwortels die zijn gemaakt in AEM Assets.
+De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met een lijst met taalwortels die in AEM Assets zijn gemaakt.
 
 1. Selecteer in de middelenconsole de primaire taal waarvoor u taalkopieën wilt maken.
 1. Klik of tik op het pictogram GlobalNav en kies **[!UICONTROL References]** om het paneel Referentie te openen.
