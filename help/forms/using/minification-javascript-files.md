@@ -1,8 +1,8 @@
 ---
-title: Minification of the JavaScript files
-seo-title: Minification of the JavaScript files
-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
-seo-description: Instructions to generate minified code after AEM Forms workspace customizations to optimize the JS files for the web.
+title: Miniatuur van de JavaScript-bestanden
+seo-title: Miniatuur van de JavaScript-bestanden
+description: Instructies voor het genereren van geminificeerde code na aanpassingen in de AEM Forms-werkruimte om de JS-bestanden voor het web te optimaliseren.
+seo-description: Instructies voor het genereren van geminificeerde code na aanpassingen in de AEM Forms-werkruimte om de JS-bestanden voor het web te optimaliseren.
 uuid: ad91e380-a988-4740-9534-e09657e0322a
 contentOwner: robhagat
 content-type: reference
@@ -11,13 +11,16 @@ topic-tags: forms-workspace
 discoiquuid: c88a3013-5da2-4b09-9f29-ac1fb00822ec
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 0%
 
 ---
 
 
 # Miniatuur van de JavaScript-bestanden {#minification-of-the-javascript-files}
 
-Met Minificatie worden de overbodige tekens, zoals witruimte, nieuwe regel en opmerkingen, uit de broncode verwijderd. Dit verbetert de prestaties door de grootte van de code te verminderen. While minification does not impact the functionality, it reduces the readability of the code.
+Met Minificatie worden de overbodige tekens, zoals witruimte, nieuwe regel en opmerkingen, uit de broncode verwijderd. Dit verbetert de prestaties door de grootte van de code te verminderen. De miniatuur heeft geen invloed op de functionaliteit, maar vermindert de leesbaarheid van de code.
 
 Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen te genereren.
 
@@ -25,7 +28,7 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
 
    >[!NOTE]
    >
-   >Zie [Introductie tot het aanpassen van de werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) van Vormen AEM voor meer details over de pakketten.
+   >Zie [Inleiding tot het aanpassen van de AEM Forms-werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) voor meer informatie over de pakketten.
 
 1. Werk paden bij `main.js` onder client-html/src/main/webapp/js voor toegevoegde/bijgewerkte modellen/weergaven.
 
@@ -57,7 +60,7 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
                service="service"/>
    ```
 
-1. At client-html/src/main/webapp/js/minifier, run command:
+1. Voer de opdracht uit op client-html/src/main/webapp/js/minifier:
 
    ```shell
    mvn clean install
@@ -67,7 +70,7 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
 
 >[!NOTE]
 >
->Minification will only work on 64-bit JVM.
+>Minificatie werkt alleen op 64-bits JVM.
 
 >[!NOTE]
 >
