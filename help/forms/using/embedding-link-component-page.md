@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '432'
+ht-degree: 0%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
 
 ## Vereisten {#prerequisites}
 
-De koppelingscomponent is een lid van de categorie Document Services. Zorg ervoor dat de categorie Document Services zichtbaar is in de browser met AEM-componenten. Als de categorie niet wordt vermeld, voert u de stappen uit die worden weergegeven bij [Inschakelen van componenten](/help/forms/using/enabling-forms-portal-components.md)van de portal Formulieren.
+De koppelingscomponent is een lid van de categorie Document Services. Zorg ervoor dat de categorie Document Services zichtbaar is in de browser met AEM componenten. Als de categorie niet wordt vermeld, voert u de stappen uit die worden weergegeven bij [Inschakelen van componenten](/help/forms/using/enabling-forms-portal-components.md)van de portal Formulieren.
 
 ## Component koppelen {#link-component}
 
@@ -40,7 +43,7 @@ Voer de volgende stappen uit om een component van de Verbinding aan de pagina to
 
    * **Middelenpad**: Pad naar opslagplaats waar het element is opgeslagen.
    * **Type** rendering: De renderindeling: PDF, HTML of Automatisch. Met het rendertype Automatisch wordt de gebruikersomgeving gedetecteerd en wordt het formulier dienovereenkomstig weergegeven als HTML of als PDF. Als het formulier bijvoorbeeld wordt geopend vanaf een mobiel apparaat, geeft het rendertype Automatisch het formulier weer in HTML.
-   * **** URL verzenden:  URL aan servlet waar de vormgegevens worden voorgelegd.
+   * **URL verzenden:**  URL aan servlet waar de vormgegevens worden voorgelegd.
    * **HTML-profiel**: Profiel voor weergave van het formulier als HTML.
    * **PDF-profiel**: Profiel voor weergave van het formulier als PDF-document.
 
