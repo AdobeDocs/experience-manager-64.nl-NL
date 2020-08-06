@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a6d9b08d-e669-4b9b-b591-c21cd72b6e22
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '1234'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
 
 Individuele bezoekers van uw website kunnen alleen worden geïdentificeerd wanneer u hun de mogelijkheid biedt zich aan te melden. Er zijn verschillende redenen waarom u een aanmeldingsfunctie wilt opgeven:
 
-* [AEM](/help/communities/overview.md)Communitiesbezoekers van de site moeten zich aanmelden om inhoud naar de community te posten.
+* [AEM](/help/communities/overview.md)Communitiesbezoekers van de website moeten zich aanmelden om inhoud aan de community te plaatsen.
 * [Gesloten gebruikersgroepen](/help/sites-administering/cug.md)
 
    Mogelijk moet u de toegang tot uw website (of gedeelten ervan) beperken tot specifieke bezoekers.
@@ -51,7 +54,7 @@ Aanvullende functionaliteit kan worden geconfigureerd of ontwikkeld:
 >
 >De informatie die in het profiel is opgegeven, kan ook worden gebruikt om de gebruiker gerichte inhoud te bieden via [segmenten](/help/sites-administering/campaign-segmentation.md) en [campagnes](/help/sites-authoring/personalization.md).
 
-## Registratieformulieren {#registration-forms}
+## Registratie Forms {#registration-forms}
 
 U kunt een formulier gebruiken om de registratiegegevens te verzamelen en vervolgens het nieuwe account en profiel te genereren.
 
@@ -95,7 +98,7 @@ Als u de details van uw profiel wilt zien, klikt u op **Mijn profiel** in de rec
 
 U kunt een ander profiel bekijken gebruikend de [cliëntcontext](/help/sites-administering/client-context.md) (op het auteursmilieu en met voldoende voorrechten):
 
-1. Open een pagina; Bijvoorbeeld de pagina Geometrixx:
+1. Open een pagina; bijvoorbeeld de pagina Geometrixx:
 
    `http://localhost:4502/cf#/content/geometrixx/en.html`
 
@@ -117,7 +120,7 @@ U kunt een ander profiel bekijken gebruikend de [cliëntcontext](/help/sites-adm
 
 U kunt velden toevoegen aan de profieldefinitie. U kunt bijvoorbeeld het veld Favoriete kleur toevoegen aan het profiel Geometrixx:
 
-1. Navigeer vanuit de websiteconsole naar Geometrixx Outdoor Site > Engels > Gebruiker > Mijn profiel.
+1. Navigeer vanuit de websiteconsole naar Geometrixx Outdoors Site > Engels > Gebruiker > Mijn profiel.
 
 1. Dubbelklik op de pagina **Mijn profiel** om deze te openen voor bewerking.
 
@@ -130,6 +133,7 @@ U kunt velden toevoegen aan de profieldefinitie. U kunt bijvoorbeeld het veld Fa
    * **Naam** element - `favoriteColor`
    * **Titel** - `Favorite Color`
    * **Items** - meerdere kleuren toevoegen als items
+
    Klik op **OK** om op te slaan.
 
 1. Sluit de pagina, ga terug naar de console van **Websites** en activeer de Mijn pagina van het Profiel.
@@ -162,7 +166,7 @@ Dit gebeurt met:
 
    Handelingen met betrekking tot de staten beheren.
 
-Er kunnen meerdere statussen worden gedefinieerd; Bijvoorbeeld in Geometrixx zijn deze:
+Er kunnen meerdere statussen worden gedefinieerd; in de Geometrixx zijn bijvoorbeeld :
 
 * zich abonneren (of het afmelden) op berichten op nieuwsbrieven of commentaardraden
 * een verbinding met een vriend toevoegen en verwijderen
@@ -171,7 +175,7 @@ Er kunnen meerdere statussen worden gedefinieerd; Bijvoorbeeld in Geometrixx zij
 
 Een staatsleverancier beheert de huidige status van het betrokken eigendom, samen met de overgangen tussen de twee mogelijke statussen.
 
-De leveranciers van de staat worden uitgevoerd als componenten, zodat kan voor uw project worden aangepast. In Geometrixx omvatten deze:
+De leveranciers van de staat worden uitgevoerd als componenten, zodat kan voor uw project worden aangepast. In de Geometrixx omvatten deze:
 
 * Onderwerp gebruikersforum/abonneeforum
 * Vriend toevoegen/verwijderen
