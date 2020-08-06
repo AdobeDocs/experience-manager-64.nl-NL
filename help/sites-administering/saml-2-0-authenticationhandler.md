@@ -1,8 +1,8 @@
 ---
 title: SAML 2.0-verificatiehandler
 seo-title: SAML 2.0-verificatiehandler
-description: Leer over SAML 2.0 de Handler van de Authentificatie in AEM.
-seo-description: Leer over SAML 2.0 de Handler van de Authentificatie in AEM.
+description: Leer over de Handler van de Authentificatie SAML 2.0 in AEM.
+seo-description: Leer over de Handler van de Authentificatie SAML 2.0 in AEM.
 uuid: 51f97315-350a-42a4-af2c-2de87307c6ad
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # SAML 2.0-verificatiehandler{#saml-authentication-handler}
 
-AEM wordt geleverd met een [SAML](http://saml.xml.org/saml-specifications) -verificatiehandler. Deze manager verleent steun voor het [SAML](http://saml.xml.org/saml-specifications) 2.0 Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend de `HTTP POST` band.
+AEM schepen met een [SAML](http://saml.xml.org/saml-specifications) authentificatiemanager. Deze manager verleent steun voor het [SAML](http://saml.xml.org/saml-specifications) 2.0 Protocol van het Verzoek van de Authentificatie (Web-SSO profiel) gebruikend de `HTTP POST` band.
 
 Het steunt:
 
@@ -33,20 +33,21 @@ Deze manager slaat het gecodeerde SAML antwoordbericht in gebruiker-knoop ( `use
 
 >[!NOTE]
 >
->Zie [een demonstratie van de integratie](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html)van AEM en SAML.
+>Zie [een demonstratie van AEM en SAML integratie](https://helpx.adobe.com/experience-manager/kb/simple-saml-demo.html).
 >
 >Als u het einde van het communityartikel wilt lezen, klikt u op: [SAML integreren met Adobe Experience Manager](https://helpx.adobe.com/experience-manager/using/aem63_saml.html).
 
 ## De SAML 2.0-verificatiehandler configureren {#configuring-the-saml-authentication-handler}
 
-De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de configuratie van de [SAML](http://saml.xml.org/saml-specifications) 2.0-verificatiehandler met de naam **Adobe Granite SAML 2.0-verificatiehandler**. De volgende eigenschappen kunnen worden ingesteld.
+De console [van het](/help/sites-deploying/configuring-osgi.md) Web verleent toegang tot de configuratie van de Handler van de Authentificatie van [SAML](http://saml.xml.org/saml-specifications) 2.0 genoemd **Adobe Granite SAML 2.0 de Handler** van de Authentificatie. De volgende eigenschappen kunnen worden ingesteld.
 
 >[!NOTE]
 >
 >De SAML 2.0-verificatiehandler is standaard uitgeschakeld. U moet minstens één van de volgende eigenschappen plaatsen om de manager toe te laten:
 >
->* De POST-URL van de identiteitsprovider.
+>* De URL van de POST Identity Provider.
 >* De Service Provider Entiteit ID.
+
 >
 
 
@@ -107,7 +108,7 @@ SAML-beweringen worden ondertekend en kunnen optioneel worden versleuteld. Dit w
 
    ![chlimage_1-372](assets/chlimage_1-372.png)
 
-## De sleutel en certificaatketen van de Serviceleverancier toevoegen aan het AEM-sleutelarchief {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
+## De sleutel en certificaatketen van de Serviceleverancier toevoegen aan het AEM sleutelarchief {#add-the-service-provider-key-and-certificate-chain-to-the-aem-keystore}
 
 >[!NOTE]
 >
