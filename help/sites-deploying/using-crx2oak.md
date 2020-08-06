@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e938bdc7-f8f5-4da5-81f6-7f60c6b4b8e6
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1258'
+ht-degree: 0%
 
 ---
 
@@ -30,7 +33,7 @@ De lijst met wijzigingen en correcties voor de nieuwste versie vindt u in de [CR
 
 >[!NOTE]
 >
->Voor meer informatie over Apache Oak en belangrijkste concepten van AEM persistance, zie [Inleiding aan het Platform](/help/sites-deploying/platform.md)AEM.
+>Zie [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)voor meer informatie over Apache Oak en de belangrijkste concepten van AEM persistentie.
 
 ## Gevallen voor migratiegebruik {#migration-use-cases}
 
@@ -48,17 +51,17 @@ In het onderstaande diagram worden alle mogelijke migratiecombinaties weergegeve
 
 ## Features {#features}
 
-CRX2Oak wordt geroepen tijdens verbeteringen AEM op een manier waarin de gebruiker een vooraf bepaald migratieprofiel kan specificeren dat de herconfiguratie van persistentiemodi automatiseert. Dit wordt de snelstartmodus genoemd.
+CRX2Oak wordt geroepen tijdens AEM verbeteringen op een manier waarin de gebruiker een vooraf bepaald migratieprofiel kan specificeren dat de herconfiguratie van persistentiemodi automatiseert. Dit wordt de snelstartmodus genoemd.
 
-Het kan ook afzonderlijk worden uitgevoerd voor het geval het meer aanpassing vereist. In deze modus worden wijzigingen echter alleen doorgevoerd in de opslagplaats en moet een eventuele aanvullende herconfiguratie van AEM handmatig worden uitgevoerd. Dit wordt de standalone wijze genoemd.
+Het kan ook afzonderlijk worden uitgevoerd voor het geval het meer aanpassing vereist. Let er echter op dat in deze modus alleen wijzigingen worden aangebracht in de opslagplaats en dat eventuele aanvullende aanpassingen van AEM handmatig moeten worden uitgevoerd. Dit wordt de standalone wijze genoemd.
 
 Een ander ding om op te merken is dat met de standaardmontages op standalone wijze, slechts de Opslag van de Knoop zal worden gemigreerd en de nieuwe bewaarplaats zal de oude binaire opslag hergebruiken.
 
 ### Automatische QuickStart-modus {#automated-quickstart-mode}
 
-Sinds AEM 6.3 kan CRX2Oak door de gebruiker gedefinieerde migratieprofielen verwerken die kunnen worden geconfigureerd met alle migratieopties die al beschikbaar zijn. Hierdoor is meer flexibiliteit mogelijk en kan de configuratie van AEM worden geautomatiseerd. Functies die niet beschikbaar zijn als u het gereedschap in zelfstandige modus gebruikt.
+Sinds AEM 6.3 kan CRX2Oak door de gebruiker gedefinieerde migratieprofielen verwerken die kunnen worden geconfigureerd met alle migratieopties die al beschikbaar zijn. Hierdoor is meer flexibiliteit mogelijk en kunt u de configuratie van AEM automatiseren. Functies die niet beschikbaar zijn als u het gereedschap in zelfstandige modus gebruikt.
 
-Als u wilt overschakelen van CRX2Oak naar de snelstartmodus, moet u het pad naar de crx-quickstart-map in de AEM-installatiemap definiëren via deze omgevingsvariabele van het besturingssysteem:
+Als u wilt overschakelen van CRX2Oak naar de snelstartmodus, moet u het pad naar de crx-quickstart-map in de AEM installatiemap definiëren via deze omgevingsvariabele van het besturingssysteem:
 
 **Voor op UNIX gebaseerde systemen en macOS:**
 
@@ -102,7 +105,7 @@ Als gegevens moeten worden gekopieerd tussen twee opslagplaatsen en u hebt een i
 
 #### Versieondersteuning {#version-support}
 
-Standaard maakt AEM een versie van elk knooppunt of elke pagina die wordt gewijzigd en slaat het op in de opslagplaats. De versies kunnen vervolgens worden gebruikt om de pagina in een eerdere staat te herstellen.
+AEM maakt standaard een versie van elk knooppunt of elke pagina die wordt gewijzigd en slaat deze op in de opslagplaats. De versies kunnen vervolgens worden gebruikt om de pagina in een eerdere staat te herstellen.
 
 Deze versies worden echter nooit leeggemaakt, zelfs niet als de originele pagina wordt verwijderd. Wanneer het behandelen van bewaarplaatsen die lange tijd in werking zijn geweest, zou de migratie veel overtollige gegevens kunnen moeten verwerken die door weesversies worden veroorzaakt.
 
@@ -120,7 +123,7 @@ Een open-bronversie van CRX2Oak is beschikbaar in de vorm van eik-verbetering. A
 
 * CRX2-ondersteuning
 * Ondersteuning voor migratieprofiel
-* Ondersteuning voor automatische AEM-herconfiguratie
+* Ondersteuning voor automatische AEM herconfiguratie
 
 Raadpleeg de documentatie bij [Apache](https://jackrabbit.apache.org/oak/docs/migration.html) voor meer informatie.
 
@@ -149,9 +152,9 @@ Raadpleeg de documentatie bij [Apache](https://jackrabbit.apache.org/oak/docs/mi
 
 ### Opties voor versieopslag {#version-store-options}
 
-* `--copy-orphaned-versions`: Kopiëren van zwevende versies wordt overgeslagen. Ondersteunde parameters zijn: `true`, `false` en `yyyy-mm-dd`. Wordt standaard ingesteld op `true`.
+* `--copy-orphaned-versions`: Kopiëren van zwevende versies wordt overgeslagen. Ondersteunde parameters zijn: `true`, `false` en `yyyy-mm-dd`. Defaults to `true`.
 
-* `--copy-versions:` Kopieert de versieopslag. Parameters: `true`, `false`, `yyyy-mm-dd`. Wordt standaard ingesteld op `true`.
+* `--copy-versions:` Kopieert de versieopslag. Parameters: `true`, `false`, `yyyy-mm-dd`. Defaults to `true`.
 
 #### Padopties {#path-options}
 
@@ -195,11 +198,11 @@ U kunt ook foutopsporingsinformatie inschakelen voor het migratieproces om probl
   </tr> 
   <tr> 
    <td>Snelstartmodus</td> 
-   <td>U kunt <strong>-logboek-vlakke SPOOR</strong> of <strong>-logboek-vlakke </strong>opties DEBUG aan de bevellijn toevoegen wanneer het runnen van CRX2Oak. In deze modus worden logbestanden automatisch omgeleid naar het bestand <strong></strong>upgrade.log.</td> 
+   <td>U kunt <strong>-logboek-vlakke TRACE</strong> toevoegen of <strong>-logboek-vlakke </strong>opties DEBUG aan de bevellijn wanneer het runnen van CRX2Oak. In deze modus worden logbestanden automatisch omgeleid naar het bestand <strong></strong>upgrade.log.</td> 
   </tr> 
   <tr> 
    <td>Standalone modus</td> 
-   <td><p>Voeg toe <strong>-spoor</strong> opties aan de CRX2Oak bevellijn om de gebeurtenissen van het SPOOR op standaardoutput te tonen (u moet logboeken opnieuw richten zelf gebruikend redirection karakter: '&gt;' of 'tee' (opdracht voor latere inspectie).</p> </td> 
+   <td><p>Voeg toe <strong>-spoor</strong> opties aan de CRX2Oak bevellijn om de gebeurtenissen van TRACE op standaardoutput te tonen (u moet logboeken opnieuw richten zelf gebruikend redirection karakter: '&gt;' of 'tee' (opdracht voor latere inspectie).</p> </td> 
   </tr> 
  </tbody> 
 </table>
