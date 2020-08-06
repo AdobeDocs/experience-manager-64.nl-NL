@@ -1,8 +1,8 @@
 ---
 title: Ontwikkelen (algemeen)
 seo-title: Ontwikkelen (algemeen)
-description: Het integratieframework bevat een integratielaag met een API, waarmee u AEM-componenten kunt maken voor eCommerce-mogelijkheden
-seo-description: Het integratieframework bevat een integratielaag met een API, waarmee u AEM-componenten kunt maken voor eCommerce-mogelijkheden
+description: Het integratieframework bevat een integratielaag met een API, waarmee u AEM componenten voor eCommerce-mogelijkheden kunt maken
+seo-description: Het integratieframework bevat een integratielaag met een API, waarmee u AEM componenten voor eCommerce-mogelijkheden kunt maken
 uuid: 393bb28a-9744-44f4-9796-09228fcd466f
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -24,9 +24,9 @@ ht-degree: 0%
 >
 >[API-documentatie](/help/sites-developing/ecommerce.md#api-documentation) is ook beschikbaar.
 
-Het integratieframework bevat een integratielaag met een API. Hierdoor kunt u AEM-componenten voor eCommerce-mogelijkheden maken (onafhankelijk van uw specifieke eCommerce-engine). Het staat u ook toe om het interne gegevensbestand van CRX te gebruiken of in een systeem van de eCommerce te stoppen en productgegevens in AEM te trekken.
+Het integratieframework bevat een integratielaag met een API. Hierdoor kunt u AEM componenten voor eCommerce-mogelijkheden maken (onafhankelijk van uw specifieke eCommerce-engine). Het staat u ook toe om het interne gegevensbestand van CRX te gebruiken of in een systeem van de eCommerce te stoppen en productgegevens in AEM te trekken.
 
-Voor het gebruik van de integratielaag wordt een aantal AEM-componenten buiten de doos meegeleverd. Deze zijn momenteel:
+Een aantal uit-van-de-doos AEM componenten worden verstrekt om de integratielaag te gebruiken. Deze zijn momenteel:
 
 * Een product weergavecomponent
 * Een winkelwagentje
@@ -35,17 +35,17 @@ Voor het gebruik van de integratielaag wordt een aantal AEM-componenten buiten d
 * Uitchecken
 * Zoeken
 
-Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, een derderdesonderzoek (zoals Search&amp;Promote) of een combinatie van daarvan te gebruiken.
+Voor onderzoek wordt een integratiehaak verstrekt die u toestaat om het AEM onderzoek, een derdenonderzoek (zoals Search&amp;Promote) of een combinatie daarvan te gebruiken.
 
 ## Selectie van eCommerce-engine {#ecommerce-engine-selection}
 
-Het eCommerce-kader kan met elke eCommerce-oplossing worden gebruikt, waarbij de gebruikte motor door AEM moet worden geïdentificeerd - zelfs wanneer de algemene AEM-motor wordt gebruikt:
+Het eCommerce-kader kan met elke eCommerce-oplossing worden gebruikt, waarbij de gebruikte motor door AEM moet worden geïdentificeerd - zelfs bij gebruik van de AEM generieke motor:
 
 * eCommerce Engines zijn OSGi-services die de `CommerceService` interface ondersteunen
 
    * Motoren kunnen worden onderscheiden door een `commerceProvider` service-eigenschap
 
-* AEM ondersteunt `Resource.adaptTo()` voor `CommerceService` en `Product`
+* AEM ondersteuning `Resource.adaptTo()` voor `CommerceService` en `Product`
 
    * De `adaptTo` implementatie zoekt naar een `cq:commerceProvider` eigenschap in de hiërarchie van de bron:
 
@@ -59,7 +59,7 @@ Het eCommerce-kader kan met elke eCommerce-oplossing worden gebruikt, waarbij de
    * Bijvoorbeeld, zal een `cq:commerceProvider` bezit met de waardegeometrixx met de configuratie OSGi voor de Factory van de Handel van **Dag CQ voor Geometrixx-Buiten** (`com.adobe.cq.commerce.hybris.impl.GeoCommerceServiceFactory`) correleren - waar de parameter `commerceProvider` ook de waarde `geometrixx`heeft.
    * Hier kunnen verdere eigenschappen worden gevormd (wanneer aangewezen en beschikbaar).
 
-In een standaard AEM-installatie is een specifieke implementatie vereist, bijvoorbeeld:
+In een standaard AEM installatie is een specifieke implementatie vereist, bijvoorbeeld:
 
 |  |  |
 |---|---|
@@ -84,7 +84,7 @@ In een standaard AEM-installatie is een specifieke implementatie vereist, bijvoo
 
 >[!NOTE]
 >
->Gebruikend CRXDE Lite kunt u zien hoe dit in de productcomponent voor de algemene implementatie AEM wordt behandeld:
+>Gebruikend CRXDE Lite kunt u zien hoe dit in de productcomponent voor de AEM generische implementatie wordt behandeld:
 >
 >`/apps/geometrixx-outdoors/components/product`
 
@@ -125,16 +125,17 @@ Elke productbron kan worden vertegenwoordigd door een `Product API`. De meeste a
 >
 >In feite wordt een variant as bepaald door wat er `Product.getVariantAxes()` terugkeert:
 >
->* voor de generieke implementatie leest AEM het uit een bezit in de productgegevens ( `cq:productVariantAxes`)
+>* voor de generische implementatie AEM leest het uit een bezit in de productgegevens ( `cq:productVariantAxes`)
 >
 >
 Hoewel producten (in het algemeen) vele variantassen kunnen hebben, behandelt de uit-van-de-doos productcomponent slechts twee:
 >
 >1. `size`
 >1. plus één of meer
+
 >
 >   
-Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Buiten).
+Deze extra variant wordt geselecteerd via de `variationAxis` eigenschap van de productreferentie (gewoonlijk `color` voor Geometrixx Outdoors).
 
 #### Productverwijzingen en PIM-gegevens {#product-references-and-pim-data}
 
@@ -258,7 +259,7 @@ public class AxisFilter implements VariantFilter {
          * Een productknooppunt dat alle eigenschappen lokaal bevat (en geen eigenschap productData bevat), neemt productkenmerken rechtstreeks van zijn eigen voorouders over.
 
 
-* **AEM-algemene productstructuur**
+* **AEM-generieke productstructuur**
 
    * Elke variant moet een eigen bladnode hebben.
    * De interface van het product vertegenwoordigt zowel producten als varianten, maar het verwante gegevensopslagknooppunt is specifiek waarover het is.
@@ -334,16 +335,16 @@ public class AxisFilter implements VariantFilter {
 
 * Opslag
 
-   * In de AEM-generische gevalskaarten van worden opgeslagen in [ClientContext](/help/sites-administering/client-context.md)
+   * In het AEM-generieke geval worden karretjes opgeslagen in de [ClientContext](/help/sites-administering/client-context.md)
 
 **Personalisatie**
 
-* De aanpassing zou altijd door [ClientContext](/help/sites-administering/client-context.md)moeten worden aangedreven.
-* In alle gevallen wordt een ClientContext `/version/` van het winkelwagentje gemaakt:
+* Personalisatie moet altijd door de [ClientContext](/help/sites-administering/client-context.md)worden geleid.
+* In alle gevallen wordt een ClientContext van `/version/` de winkelwagen gemaakt:
 
    * De producten moeten volgens de `CommerceSession.addCartEntry()` methode worden toegevoegd.
 
-* In het volgende voorbeeld ziet u een voorbeeld van winkelwageninformatie in het ClientContext-winkelwagentje:
+* In het volgende voorbeeld ziet u een voorbeeld van de informatie over winkelwagentjes in de ClientContext wagen:
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
@@ -476,10 +477,10 @@ Het ingangspunt voor zoekAPI is de `CommerceService#search` methode die een `Com
 
       * `DiscountPromotionHandler`, waarbij een absolute of percentagekorting voor het hele winkelwagentje wordt toegepast
       * `PerfectPartnerPromotionHandler`, die een absolute productkorting of een percentagekorting toepast als het partnerproduct ook in de kar is
-   * ClientContext lost segmenten op en ClientContext `SegmentMgr` `CartMgr` lost bevorderingen op. Elke bevordering die aan minstens één opgelost segment onderworpen is zal worden in werking gesteld.
+   * De ClientContext lost segmenten op en de ClientContext `SegmentMgr` `CartMgr` lost bevorderingen op. Elke bevordering die aan minstens één opgelost segment onderworpen is zal worden in werking gesteld.
 
-      * De gecreeerde Bevorderingen worden teruggestuurd naar de server via een vraag AJAX om het karretje opnieuw te berekenen.
-      * Geactiveerde promoties (en toegevoegde vouchers) worden ook weergegeven in het deelvenster ClientContext.
+      * Geactiveerde promoties worden teruggestuurd naar de server via een AJAX oproep om het winkelwagentje opnieuw te berekenen.
+      * Afgelopen promoties (en toegevoegde vouchers) worden ook weergegeven in het deelvenster ClientContext.
 
 
 
