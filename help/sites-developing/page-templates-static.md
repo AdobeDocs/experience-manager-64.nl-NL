@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a483ac24-cfe7-4156-a3a8-c0f14282490c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1662'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ Een sjabloon is een knooppunt van het type cq:Template en heeft de volgende eige
    <td>Datum waarop de sjabloon is gemaakt.<br /> </td> 
   </tr> 
   <tr> 
-   <td>  jcr:beschrijving</td> 
+   <td> jcr:beschrijving</td> 
    <td> Tekenreeks</td> 
    <td>Beschrijving van de sjabloon.<br /> </td> 
   </tr> 
@@ -85,13 +88,13 @@ Een sjabloon is een knooppunt van het type cq:Template en heeft de volgende eige
    <td>Knooppunt met de inhoud van de sjabloon.<br /> </td> 
   </tr> 
   <tr> 
-   <td> miniatuur.png</td> 
-   <td>  nt:bestand</td> 
+   <td> thumbnail.png</td> 
+   <td> nt:bestand</td> 
    <td>Miniatuur van de sjabloon.<br /> </td> 
   </tr> 
   <tr> 
    <td> icon.png</td> 
-   <td>  nt:bestand</td> 
+   <td> nt:bestand</td> 
    <td>Pictogram van de sjabloon.<br /> </td> 
   </tr> 
  </tbody> 
@@ -131,7 +134,7 @@ Deze component wordt gebruikt om de structuur en het ontwerp van de inhoud te be
 
 ### De inhoud die door een sjabloon wordt geproduceerd {#the-content-produced-by-a-template}
 
-Sjablonen worden gebruikt om pagina&#39;s van het type te maken `cq:Page` (zoals eerder vermeld is een pagina een speciaal type component). Elke AEM-pagina heeft een gestructureerd knooppunt `jcr:content`. Dit:
+Sjablonen worden gebruikt om pagina&#39;s van het type te maken `cq:Page` (zoals eerder vermeld is een pagina een speciaal type component). Elke AEM heeft een gestructureerd knooppunt `jcr:content`. Dit:
 
 * is van het type cq:PageContent
 * is een gestructureerd knooppunttype dat een bepaalde content-definition bezit
@@ -145,14 +148,14 @@ AEM wordt bijvoorbeeld geleverd met verschillende sjablonen, waaronder een inhou
 
 | **Titel** | **Component** | **Locatie** | **Doel** |
 |---|---|---|---|
-| Startpagina | homepage | geometrixx | De sjabloon voor de startpagina Geometrixx. |
-| Inhoudspagina |  contentpagina | geometrixx | De sjabloon voor de inhoudspagina Geometrixx. |
+| Startpagina | homepage | geometrixx | De sjabloon voor de startpagina van Geometrixx. |
+| Inhoudspagina | contentpagina | geometrixx | De sjabloon voor de inhoudspagina van Geometrixx. |
 
 #### Standaardsjablonen weergeven {#displaying-default-templates}
 
 Ga als volgt te werk om een lijst met alle sjablonen in de repository weer te geven:
 
-1. Open in CRXDE Lite het menu **Hulpmiddelen** en klik **Vraag**.
+1. Open in CRXDE Lite het menu **Gereedschappen** en klik op **Query**.
 
 1. Op het tabblad Query
 1. Als **Type**, uitgezochte **XPath**.
@@ -180,11 +183,11 @@ Als ontwerpen alleen worden toegepast in de ontwerpmodus, zijn de volgende secti
 
 >[!NOTE]
 >
->In deze sectie wordt het gedrag beschreven van het gedrag bij het oplossen van ontwerppaden vanaf AEM 6.4.2.0.
+>In deze sectie wordt het gedrag van de ontwerppadresolutie vanaf AEM 6.4.2.0 beschreven.
 
 ### Resolutie ontwerppad {#design-path-resolution}
 
-Bij het renderen van inhoud op basis van een statische sjabloon probeert AEM het meest relevante ontwerp en de meest relevante stijlen toe te passen op de inhoud op basis van een doorloop in de inhoudshiërarchie.
+Wanneer het teruggeven van inhoud die op een statisch malplaatje wordt gebaseerd, AEM zal proberen om het meest relevante ontwerp en de stijlen op de inhoud toe te passen die op een traversal van de inhoudshiërarchie wordt gebaseerd.
 
 AEM bepaalt de meest relevante stijl voor een inhoudsknoop in de volgende orde:
 
@@ -267,7 +270,7 @@ In de volgende tabel wordt beschreven hoe AEM een ontwerp kiest.
 
 ## Paginasjablonen ontwikkelen {#developing-page-templates}
 
-AEM-paginasjablonen zijn gewoon modellen waarmee nieuwe pagina&#39;s worden gemaakt. Zij kunnen zo weinig, of zo veel, aanvankelijke inhoud bevatten zoals nodig, hun rol om de correcte aanvankelijke knoopstructuren tot stand te brengen, met de vereiste eigenschappen (hoofdzakelijk sling:resourceType) die worden geplaatst om het uitgeven en het teruggeven toe te staan.
+AEM paginasjablonen zijn gewoon modellen waarmee nieuwe pagina&#39;s worden gemaakt. Zij kunnen zo weinig, of zo veel, aanvankelijke inhoud bevatten zoals nodig, hun rol om de correcte aanvankelijke knoopstructuren tot stand te brengen, met de vereiste eigenschappen (hoofdzakelijk sling:resourceType) die worden geplaatst om het uitgeven en het teruggeven toe te staan.
 
 ### Een nieuwe sjabloon maken (op basis van een bestaande sjabloon) {#creating-a-new-template-based-on-an-existing-template}
 
@@ -316,7 +319,7 @@ Zie [Client-Side Libraries](/help/sites-developing/clientlibs.md) gebruiken voor
 
 In dit voorbeeld wordt getoond hoe u een sjabloon kunt gebruiken voor bepaalde inhoudspaden. De sjablonen die beschikbaar zijn voor de auteur van de pagina wanneer u nieuwe pagina&#39;s maakt, worden bepaald door de logica die is gedefinieerd in [Sjabloonbeschikbaarheid](/help/sites-developing/templates.md#template-availability).
 
-1. In CRXDE Lite, navigeer aan het malplaatje u voor uw pagina, bijvoorbeeld, het malplaatje van de Nieuwsbrief wilt gebruiken.
+1. Navigeer in CRXDE Lite naar de sjabloon die u voor de pagina wilt gebruiken, bijvoorbeeld de sjabloon Nieuwsbrief.
 1. Wijzig de `allowedPaths` eigenschap en andere eigenschappen die voor [sjabloonbeschikbaarheid](/help/sites-developing/templates.md#template-availability)worden gebruikt. Bijvoorbeeld: `allowedPaths`: `/content/geometrixx-outdoors/[^/]+(/.*)?` betekent dat deze sjabloon is toegestaan in een pad onder `/content/geometrixx-outdoors`.
 
    ![chlimage_1-252](assets/chlimage_1-252.png)
