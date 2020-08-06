@@ -1,8 +1,8 @@
 ---
 title: OSGi configureren
 seo-title: OSGi configureren
-description: OSGi is een fundamenteel element in de technologiestapel van de Manager van de Ervaring van Adobe (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren. In dit artikel wordt beschreven hoe u de configuratie-instellingen voor dergelijke bundels kunt beheren.
-seo-description: OSGi is een fundamenteel element in de technologiestapel van de Manager van de Ervaring van Adobe (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren. In dit artikel wordt beschreven hoe u de configuratie-instellingen voor dergelijke bundels kunt beheren.
+description: OSGi is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren. In dit artikel wordt beschreven hoe u de configuratie-instellingen voor dergelijke bundels kunt beheren.
+seo-description: OSGi is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren. In dit artikel wordt beschreven hoe u de configuratie-instellingen voor dergelijke bundels kunt beheren.
 uuid: b39059a5-dd61-486a-869a-0d7a732c3a47
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 translation-type: tm+mt
 source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+workflow-type: tm+mt
+source-wordcount: '2013'
+ht-degree: 0%
 
 ---
 
 
 # OSGi configureren{#configuring-osgi}
 
-[OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van de Manager van de Ervaring van Adobe (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
+[OSGi](https://www.osgi.org/) is een fundamenteel element in de technologiestapel van Adobe Experience Manager (AEM). Het wordt gebruikt om de samengestelde bundels van AEM en hun configuratie te controleren.
 
 OSGi &quot;*verstrekt de gestandaardiseerde primitieven die toepassingen toelaten om van kleine, herbruikbare en samenwerkende componenten worden gebouwd. Deze componenten kunnen in een toepassing worden samengesteld en worden opgesteld*&quot;.
 
@@ -75,9 +78,9 @@ Eventuele aangebrachte wijzigingen worden onmiddellijk toegepast op de relevante
 >
 >Op de console van het Web om het even welke beschrijvingen die standaardmontages vermelden hebben op het Verschuiven gebreken.
 >
->Adobe Experience Manager heeft zijn eigen standaardinstellingen en de ingestelde standaardinstellingen kunnen afwijken van de op de console gedocumenteerde waarden.
+>Adobe Experience Manager heeft zijn eigen gebreken en zodat zouden de vastgestelde gebreken van die op de console kunnen verschillen worden gedocumenteerd.
 
-Een configuratie bijwerken met de webconsole:
+Om een configuratie met de Webconsole bij te werken:
 
 1. Heb toegang tot het lusje van de **Configuratie** van de Console van het Web door één van beiden:
 
@@ -129,7 +132,7 @@ De console van het Web toont geen aanwijzing van waar in de bewaarplaats uw vera
 
 1. Maak het configuratiebestand door een eerste wijziging [aan te brengen in de webconsole](#osgi-configuration-with-the-web-console).
 1. Open CRXDE Lite.
-1. **Selecteer** Query in het menu **Gereedschappen**.. .
+1. Selecteer **Query in het menu** Gereedschappen **..** .
 1. Verzend een vraag van **Type** `SQL` aan onderzoek naar PID van de configuratie die u hebt bijgewerkt.
 
    Zo heeft **Apache Felix OSGi Management Console** bijvoorbeeld de persistente id (PID) van:
@@ -227,7 +230,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
    * Type: `sling:OsgiConfig`
    * Naam: de persistente identiteit (PID);
 
-      bijvoorbeeld het gebruik van AEM WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
+      bijvoorbeeld voor AEM gebruik van WCM Version Manager `com.day.cq.wcm.core.impl.VersionManagerImpl`
    >[!NOTE]
    >
    >Wanneer het maken van een Configuratie van de Fabriek voegt `-<identifier>` aan de naam toe.
@@ -243,6 +246,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
    * Naam: de parameternaam zoals aangetoond in de console van het Web; de naam wordt tussen haakjes weergegeven aan het einde van de veldbeschrijving. Bijvoorbeeld voor `Create Version on Activation` gebruik `versionmanager.createVersionOnActivation`
    * Type: in voorkomend geval.
    * Waarde: zoals vereist.
+
    U hoeft alleen eigenschappen te maken voor de parameters die u wilt configureren, anderen gebruiken nog steeds de standaardwaarden die door AEM zijn ingesteld.
 
 1. Sla alle wijzigingen op.
@@ -261,7 +265,7 @@ Om de nieuwe configuratie aan de bewaarplaats eigenlijk toe te voegen:
 
 ### Volgorde resolutie bij opstarten {#resolution-order-at-startup}
 
-De volgende rangorde wordt gebruikt:
+De volgende volgorde wordt gebruikt:
 
 1. Opslagknooppunten `/apps/*/config...`.met type- `sling:OsgiConfig` of eigenschapsbestanden.
 
@@ -312,7 +316,7 @@ In de volgende lijst ziet u een kleine selectie van de configuraties die beschik
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.WCMRequestFilter`
 
-* Publiceren - AEM WCM-paginatistieken:
+* Publiceren - AEM WCM-paginatiestatistieken:
 
    `libs/wcm/core/config.publish/com.day.cq.wcm.core.stats.PageViewStatistics`
 
@@ -320,7 +324,7 @@ In de volgende lijst ziet u een kleine selectie van de configuraties die beschik
 >
 >Aangezien deze configuraties zich in `/libs` deze configuraties bevinden, moeten ze niet direct worden bewerkt, maar worden gekopieerd naar het toepassingsgebied ( `/apps`) voordat ze worden aangepast.
 
-Om van alle configuratieknooppunten in uw instantie een lijst te maken, gebruik de functionaliteit van de **Vraag** in CRXDE Lite om de volgende SQL vraag voor te leggen:
+Als u alle configuratieknooppunten in uw instantie wilt weergeven, gebruikt u de functie **Query** in CRXDE Lite om de volgende SQL-query te verzenden:
 
 `select * from sling:OsgiConfig`
 
