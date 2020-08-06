@@ -12,13 +12,16 @@ content-type: reference
 discoiquuid: 5b488f41-2cc1-41f9-8c7f-da851d325949
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '134'
+ht-degree: 9%
 
 ---
 
 
 # Pagina&#39;s ontwerpen met inhoudsfragmenten{#page-authoring-with-content-fragments}
 
-Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als pagina-onafhankelijke elementen](/help/assets/content-fragments.md).
+Inhoudsfragmenten van Adobe Experience Manager (AEM) worden [gemaakt en beheerd als paginaonafhankelijke assets](/help/assets/content-fragments.md).
 
 U kunt hiermee kanaalneutrale inhoud maken, samen met (mogelijk kanaalspecifieke) variaties. Vervolgens kunt u deze fragmenten en de variaties ervan gebruiken bij het ontwerpen van de inhoudspagina&#39;s.
 
