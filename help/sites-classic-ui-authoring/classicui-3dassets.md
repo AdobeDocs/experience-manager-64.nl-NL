@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: c601a44a-6604-4cc2-b35a-60d2c5a950e1
 translation-type: tm+mt
 source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+workflow-type: tm+mt
+source-wordcount: '127'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
 
 Met AEM 3D (Adobe Experience Manager 3D) kunt u 3D-inhoud uploaden, beheren, weergeven en renderen. Ondersteuning voor weergave en rendering is geoptimaliseerd voor afzonderlijke objecten.
 
-Zie ook [Opmerkingen bij de release van AEM 3D](/help/release-notes/aem3d-release-notes.md).
+Zie ook [AEM Opmerkingen](/help/release-notes/aem3d-release-notes.md)bij de 3D-release.
 
-Zie ook AEM 3D [installeren en configureren](/help/assets/install-config-3d.md).
+Zie ook [Installeren en configureren AEM 3D](/help/assets/install-config-3d.md).
 
 >[!NOTE]
 >
->AEM 3D is alleen beschikbaar via de interface van AEM-aanrakingen, niet via de klassieke interface. Zie [Werken met 3D-elementen](/help/assets/assets-3d.md) in de standaardontwerpdocumentatie voor meer informatie.
+>AEM 3D is alleen beschikbaar via de AEM-aanraakinterface, niet via de klassieke gebruikersinterface. Zie [Werken met 3D-elementen](/help/assets/assets-3d.md) in de standaardontwerpdocumentatie voor meer informatie.
 
