@@ -1,8 +1,8 @@
 ---
 title: Eerste stappen voor auteurs
 seo-title: Eerste stappen voor auteurs
-description: Een overzicht van de belangrijkste taken die u gebruikt wanneer u begint met het ontwerpen van inhoud met AEM
-seo-description: Een overzicht van de belangrijkste taken die u gebruikt wanneer u begint met het ontwerpen van inhoud met AEM
+description: Een overzicht van de belangrijkste taken die u zult gebruiken wanneer het beginnen aan auteursinhoud met AEM
+seo-description: Een overzicht van de belangrijkste taken die u zult gebruiken wanneer het beginnen aan auteursinhoud met AEM
 uuid: 13aec50b-f902-4b5e-9e8b-bc94810d7b88
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9086b14c-cd75-4fc9-928e-81c8ad6b6292
 translation-type: tm+mt
 source-git-commit: b01e95110bffc1ee96e0814e782d716ed949c1b4
+workflow-type: tm+mt
+source-wordcount: '462'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ Het omvat:
 
 ## Overzicht {#overview}
 
-Deze presentatie (doorklikken) geeft een snel visueel overzicht van het gebruik van AEM voor het schrijven van uw eerste pagina. Koppelingen naar details over de afzonderlijke stappen worden vervolgens weergegeven onder [Aan de slag](#getting-started).
+Deze presentatie (doorklikken) geeft een snel visueel overzicht van het gebruik van AEM om uw eerste pagina te maken. Koppelingen naar details over de afzonderlijke stappen worden vervolgens weergegeven onder [Aan de slag](#getting-started).
 
 ## Aan de slag {#getting-started}
 
