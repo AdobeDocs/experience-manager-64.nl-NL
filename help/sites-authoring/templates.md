@@ -11,6 +11,9 @@ topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
 source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+workflow-type: tm+mt
+source-wordcount: '4811'
+ht-degree: 8%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
 
 Wanneer u een pagina maakt, moet u een sjabloon selecteren die wordt gebruikt als basis voor het maken van de nieuwe pagina. De sjabloon definieert de structuur van de resulterende pagina, eventuele eerste inhoud en de componenten die kunnen worden gebruikt.
 
-Met de Redacteur **van het** Malplaatje, is het creëren van en het handhaven van malplaatjes niet meer een ontwikkelaar-enige taak. Een type van macht-gebruiker, die een **malplaatjeauteur** wordt genoemd, kan ook worden betrokken. De ontwikkelaars worden nog vereist om het milieu te installeren, cliëntbibliotheken te creëren, en de te gebruiken componenten tot stand te brengen, maar zodra deze grondbeginselen op zijn plaats zijn heeft de **malplaatjeauteur** de flexibiliteit om malplaatjes zonder een ontwikkelingsproject tot stand te brengen en te vormen.
+Met de **Sjablooneditor** is het creëren en onderhouden van sjablonen niet meer alleen een taak voor ontwikkelaars. Een hoofdgebruiker die ook **maker van sjablonen** wordt genoemd, kan ook worden betrokken. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de **maker van sjablonen** sjablonen maken en configureren zonder een ontwikkelingsproject.
 
 Met de **Sjabloonconsole** kunnen sjabloonauteurs:
 
@@ -38,11 +41,11 @@ Voor gedetailleerde informatie over hoe de editable malplaatjes op een technisch
 
 >[!NOTE]
 >
->AEM 6.4.5.0 of recenter wordt vereist om editable malplaatjes met de Redacteur [van het](/help/sites-developing/spa-overview.md)KUUROORD te gebruiken.
+>AEM 6.4.5.0 of later wordt vereist om editable malplaatjes met de Redacteur [van het](/help/sites-developing/spa-overview.md)KUUROORD te gebruiken.
 
 >[!NOTE]
 >
->De **Redacteur** van het Malplaatje steunt niet direct het richten op het malplaatjeniveau. Pagina&#39;s die zijn gemaakt op basis van een bewerkbare sjabloon kunnen worden geactiveerd, maar de sjablonen zelf kunnen dat niet.
+>De **sjablooneditor** biedt geen ondersteuning voor rechtstreekse targeting op het sjabloonniveau. Pagina&#39;s die zijn gemaakt op basis van een bewerkbare sjabloon, kunnen als doel worden ingesteld, maar de sjablonen zelf kunnen dat niet.
 
 >[!CAUTION]
 >
@@ -62,14 +65,14 @@ De volgende punten zijn belangrijk om te overwegen alvorens u begint:
 
 ### Rollen {#roles}
 
-Het creëren van een nieuw malplaatje gebruikend de Console **van** Malplaatjes en de Redacteur **van het** Malplaatje vereist samenwerking tussen de volgende rollen:
+Om een nieuwe sjabloon te maken met behulp van de **sjabloonconsole** en de **sjablooneditor** is samenwerking tussen de volgende rollen vereist:
 
 * **Beheerder**:
 
    * Hiermee maakt u een nieuwe map voor sjablonen waarvoor `admin` rechten vereist zijn.
    * Dergelijke taken kunnen vaak ook door een ontwikkelaar worden uitgevoerd
 
-* **Ontwikkelaar**:
+* **Developer**:
 
    * Concentraties op de technische/interne details
    * Heeft ervaring nodig met de ontwikkelomgeving.
@@ -154,11 +157,11 @@ Een malplaatjeomslag zou voor uw project moeten worden gecreeerd om uw project-s
 
 ### Een nieuwe sjabloon maken - Sjabloonauteur {#creating-a-new-template-template-author}
 
-1. Open de **Sjabloonconsole** (via **Gereedschappen** -> **Algemeen**) en navigeer naar de vereiste map.
+1. Open the **Templates Console** (via **Tools** -> **General**) then navigate to the required folder.
 
    >[!NOTE]
    >
-   >In een standaard AEM-instantie bestaat de **algemene** map al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden.
+   >In een standaard AEM bestaat de **algemene** map al in de sjabloonconsole. Dit houdt standaardmalplaatjes vast en doet dienst als reserve als geen beleid en/of malplaatje-types in de huidige omslag worden gevonden.
    >
    >Het wordt aanbevolen een [sjabloonmap te gebruiken die voor uw project](/help/sites-developing/page-templates-editable.md#template-folders)is gemaakt.
 
@@ -203,7 +206,7 @@ Een sjabloon kan de volgende eigenschappen hebben:
 De eigenschappen weergeven en/of bewerken:
 
 1. Selecteer de sjabloon in de **Sjabloonconsole**.
-1. Selecteer Eigenschappen **** weergeven op de werkbalk of kies Snelle opties om het dialoogvenster te openen.
+1. Selecteer **Eigenschappen weergeven** op de werkbalk of kies Snelle opties om het dialoogvenster te openen.
 1. U kunt nu de sjablooneigenschappen weergeven of bewerken.
 
 >[!NOTE]
@@ -257,7 +260,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 
 1. Open het tabblad **Geavanceerd** .
 
-1. Gebruik onder **Sjablooninstellingen** het veld **** Toevoegen om het pad of de paden naar de sjabloon of sjablonen op te geven.
+1. Gebruik onder **Sjablooninstellingen** de optie **Veld toevoegen** om het pad of de paden naar de sjabloon of sjablonen op te geven.
 
    Het pad kan expliciet zijn of patronen gebruiken. Bijvoorbeeld:
 
@@ -282,7 +285,7 @@ Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaal
 Aangezien het malplaatje van verwijzingen wordt voorzien wanneer een pagina wordt teruggegeven, moet het volledig gevormde malplaatje worden gepubliceerd zodat het op het publicatiemilieu beschikbaar is.
 
 1. Selecteer de sjabloon in de **Sjabloonconsole**.
-1. Selecteer **Publiceren** op de werkbalk om de wizard te openen.
+1. Select **Publish** from the toolbar to open the wizard.
 1. Selecteer het **inhoudsbeleid** dat u samen wilt publiceren.
 
 1. Selecteer **Publiceren** op de werkbalk om de handeling te voltooien.
@@ -313,7 +316,7 @@ De volgende aspecten van een sjabloon kunnen worden bewerkt:
 
 * [Indeling](#editing-a-template-layout-template-author)
 
-   Hier kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf definiëren. **De lay-outmodus** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus **[Lay-out](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**voor het ontwerpen van pagina&#39;s.]
+   Hier kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf definiëren. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus **[Lay-out](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**voor het ontwerpen van pagina&#39;s].
 
 * [Paginabeleid](#editing-a-template-structure-template-author)
 
@@ -360,16 +363,18 @@ In de modus **Structuur** van de sjablooneditor:
    Er zijn verschillende manieren om componenten aan de sjabloon toe te voegen:
 
    * Vanuit de browser **Componenten** in het zijpaneel.
-   * Met de optie Component **** invoegen (**+** pictogram) op de werkbalk kunt u de componenten gebruiken die al in de sjabloon staan of de component **slepen hier** .
+   * By using the **Insert Component** option (**+** icon) available on the toolbar of components already on the template or the **Drag components here** box.
    * Sleep een element (vanuit de **middelenbrowser** in het zijpaneel) rechtstreeks naar de sjabloon om de juiste component ter plekke te genereren.
+
    Na toevoeging wordt elke component gemarkeerd met:
 
    * Een rand
    * Een markering waarmee het componenttype wordt weergegeven
    * Een markering die moet worden weergegeven wanneer de component is ontgrendeld
+
    >[!NOTE]
    >
-   >Wanneer u een uit-van-de-doos component van de **Titel** aan het malplaatje toevoegt zal het de standaardtekststructuur **** bevatten.
+   >Wanneer u een standaardcomponent voor de **Titel** aan de sjabloon toevoegt, zal het de **standaardtekststructuur** bevatten.
    >
    >
    >Als u dit wijzigt en uw eigen tekst toevoegt, wordt deze bijgewerkte tekst gebruikt wanneer een pagina wordt gemaakt op basis van de sjabloon.
@@ -413,6 +418,7 @@ In de modus **Structuur** van de sjablooneditor:
 
    * In de linkerkant van de dialoog onder **Beleid**, hebt u de capaciteit om een bestaand beleid te selecteren of bestaande te selecteren.
    * In de rechterkant van het dialoogvenster onder **Eigenschappen** kunt u de eigenschappen instellen die specifiek zijn voor het componenttype.
+
    De beschikbare eigenschappen zijn afhankelijk van de geselecteerde component. Voor een tekstcomponent definiëren de eigenschappen bijvoorbeeld de kopieer- en plakopties, opmaakopties en alineastijl.
 
    ***Beleid***
@@ -447,6 +453,7 @@ In de modus **Structuur** van de sjablooneditor:
 
    * Hoofd
    * Functies
+
    *Hoofd*
 
    Op het tabblad **Main** worden de belangrijkste instellingen van de component gedefinieerd.
@@ -473,7 +480,7 @@ In de modus **Structuur** van de sjablooneditor:
 
    >[!CAUTION]
    >
-   >In AEM worden uitsnijdverhoudingen gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die pagina&#39;s schrijven, zullen zich niet bewust zijn van enig verschil op voorwaarde dat u de **naam** duidelijk definieert aangezien dit is wat wordt weergegeven in de gebruikersinterface.
+   >Let op: in AEM uitsnijdverhoudingen worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. Gebruikers die pagina&#39;s schrijven, zullen zich niet bewust zijn van enig verschil op voorwaarde dat u de **naam** duidelijk definieert aangezien dit is wat wordt weergegeven in de gebruikersinterface.
 
    >[!NOTE]
    >
@@ -502,6 +509,7 @@ In de modus **Structuur** van de sjablooneditor:
    * Toegestane componenten
    * Standaardcomponenten
    * Instellingen voor responsie
+
    *Toegestane componenten*
 
    Op het tabblad **Toegestane componenten** definieert u welke componenten beschikbaar zijn voor de lay-outcontainer.
@@ -511,6 +519,7 @@ In de modus **Structuur** van de sjablooneditor:
    * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
+
    ![chlimage_1-374](assets/chlimage_1-374.png)
 
    *Standaardcomponenten*
@@ -519,7 +528,7 @@ In de modus **Structuur** van de sjablooneditor:
 
    Klik of tik **Toewijzing** toevoegen om een geheel nieuwe component en MIME typetoewijzing toe te voegen.
 
-   Selecteer een component in de lijst en klik of tik op Type **** toevoegen om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
+   Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
    ![chlimage_1-375](assets/chlimage_1-375.png)
 
@@ -539,15 +548,16 @@ In de modus **Structuur** van de sjablooneditor:
 
       * Al ingevoerde inhoud wordt beschouwd als eerste inhoud en is alleen zichtbaar in de modus **Oorspronkelijke inhoud** .
    * De bovenliggende elementen van de ontgrendelde component kunnen niet worden verplaatst, geknipt of verwijderd.
+
    ![chlimage_1-376](assets/chlimage_1-376.png)
 
-   Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële inhoud** of op de resulterende pagina&#39;s. Als u al componenten/inhoud aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven in de modus **Structuur** , maar in de modus **Oorspronkelijke inhoud** . In de **structuurmodus** wordt alleen de containercomponent zelf weergegeven met de lijst **Toegestane componenten**.
+   Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/content aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven in de modus **Structuur**, maar in de modus **Initiële content**. In de **modus Structuur** wordt alleen de containercomponent zelf weergegeven met de lijst **Toegestane componenten**.
 
    ![chlimage_1-377](assets/chlimage_1-377.png)
 
    Om ruimte te besparen, groeit de lay-outcontainer niet om de lijst van toegestane componenten aan te passen. In plaats daarvan wordt de container een schuifbare lijst.
 
-   De componenten die configureerbaar zijn worden getoond met een pictogram van het **Beleid** , dat kan worden getikt of worden geklikt om het beleid en de eigenschappen van die component uit te geven.
+   De componenten die configureerbaar zijn, worden weergegeven met een pictogram **Beleid**, waarop kan worden getikt of geklikt om het beleid en de eigenschappen van die component te bewerken.
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
@@ -561,7 +571,7 @@ In de modus **Structuur** van de sjablooneditor:
 
 **De modus Eerste inhoud** wordt gebruikt voor gedefinieerde inhoud die wordt weergegeven wanneer een pagina voor het eerst wordt gemaakt op basis van de sjabloon. De eerste inhoud kan vervolgens door auteurs van pagina&#39;s worden bewerkt.
 
-Hoewel alle inhoud die in de modus **Structuur** is gemaakt, zichtbaar is in **Initiële inhoud**, kunnen alleen de ontgrendelde componenten worden geselecteerd en bewerkt.
+Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **Initiële content**, kunnen alleen de ontgrendelde componenten worden geselecteerd en bewerkt.
 
 >[!NOTE]
 >
@@ -575,9 +585,9 @@ Hoewel alle inhoud die in de modus **Structuur** is gemaakt, zichtbaar is in **I
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
-* Als een containercomponent is ontgrendeld (in de modus **Structuur** ), kunt u nieuwe componenten aan de container toevoegen (in de modus **Oorspronkelijke inhoud** ). Componenten die in de modus **Oorspronkelijke inhoud** zijn toegevoegd, kunnen worden verplaatst naar of verwijderd uit de resulterende pagina&#39;s.
+* Als een containercomponent is ontgrendeld (in de modus **Structuur**), kunt u nieuwe componenten aan de container toevoegen (in de modus **Initiële content**). Componenten die in de modus **Initiële content** zijn toegevoegd, kunnen worden verplaatst naar of verwijderd uit de resulterende pagina&#39;s.
 
-   U kunt een component toevoegen met behulp van de **sleepcomponenten hier** of de optie Nieuwe component **** invoegen op de werkbalk van de betreffende container.
+   U kunt een component toevoegen met behulp van het gebied **Componenten hierheen slepen** of de optie **Nieuwe component invoegen** op de werkbalk van de betreffende container.
 
    ![chlimage_1-382](assets/chlimage_1-382.png) ![chlimage_1-383](assets/chlimage_1-383.png)
 
@@ -599,7 +609,7 @@ U kunt de sjabloonlay-out voor een reeks apparaten definiëren. [De responsieve 
 
 ### Een sjabloon bewerken - Paginaontwerp - Sjabloonauteur/ontwikkelaar {#editing-a-template-page-design-template-author-developer}
 
-Het paginaontwerp, inclusief de vereiste clientbibliotheken en het paginabeleid, blijft behouden onder de optie **Paginaontwerp** van het menu **Pagina-informatie** .
+Het paginaontwerp, inclusief de vereiste clientbibliotheken en de paginabeleidsregels, blijft behouden onder de optie **Paginaontwerp** van het menu **Pagina-informatie**.
 
 Het dialoogvenster **Paginaontwerp** openen:
 
@@ -608,6 +618,7 @@ Het dialoogvenster **Paginaontwerp** openen:
 
    * De linkerhelft definieert het [paginabeleid](/help/sites-authoring/templates.md#page-policies)
    * De rechterhelft definieert de [pagina-eigenschappen](/help/sites-authoring/templates.md#page-properties)
+
    ![chlimage_1-385](assets/chlimage_1-385.png)
 
 #### Paginabeleid {#page-policies}
@@ -675,7 +686,7 @@ Met de optie Eigenschappen **van** eerste pagina kunt u de eerste [pagina-eigens
 
 1. Bevestig uw definities met **Gedaan**.
 
-## Aanbevolen werkwijzen {#best-practices}
+## Best practices voor {#best-practices}
 
 Houd bij het maken van sjablonen rekening met:
 
@@ -698,6 +709,7 @@ Houd bij het maken van sjablonen rekening met:
 
       * Alleen structuur - onmiddellijk toegepast
       * Bevat initiële inhoud - alleen op pagina&#39;s die na de wijziging zijn gemaakt
+
    Wees extra voorzichtig als:
 
    * Componenten op ingeschakelde sjablonen vergrendelen of ontgrendelen.
@@ -705,6 +717,7 @@ Houd bij het maken van sjablonen rekening met:
 
       * Ontgrendelingscomponenten (die vergrendeld waren) ontbreken op bestaande pagina&#39;s.
       * Door componenten te vergrendelen (die bewerkbaar waren) wordt die inhoud niet op de pagina&#39;s weergegeven.
+
    >[!NOTE]
    >
    >AEM geeft expliciete waarschuwingen wanneer het veranderen van de slotstatus van componenten op malplaatjes die niet meer concepten zijn.
