@@ -1,8 +1,8 @@
 ---
 title: AEM 3D integreren met Autodesk Maya
 seo-title: AEM 3D integreren met Autodesk Maya
-description: U kunt AEM 3D desgewenst integreren met Autodesk® Maya®-software om ondersteuning in te schakelen voor systeemeigen Maya-bestanden (.MA en .MB) en om 3D-middelen in AEM te kunnen renderen met elke beschikbare Maya-renderer.
-seo-description: U kunt AEM 3D desgewenst integreren met Autodesk® Maya®-software om ondersteuning in te schakelen voor systeemeigen Maya-bestanden (.MA en .MB) en om 3D-middelen in AEM te kunnen renderen met elke beschikbare Maya-renderer.
+description: U kunt desgewenst AEM 3D integreren met Autodesk® Maya®-software om ondersteuning voor systeemeigen Maya-bestanden (.MA en .MB) in te schakelen en om 3D-assets te kunnen renderen in AEM met elke beschikbare Maya-renderer.
+seo-description: U kunt desgewenst AEM 3D integreren met Autodesk® Maya®-software om ondersteuning voor systeemeigen Maya-bestanden (.MA en .MB) in te schakelen en om 3D-assets te kunnen renderen in AEM met elke beschikbare Maya-renderer.
 uuid: 07ff17b6-bdfc-4617-8b16-42aaf5c73fc7
 contentOwner: Rick Brough
 topic-tags: 3D
@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
 source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+workflow-type: tm+mt
+source-wordcount: '836'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
 >
 >Deze taak is optioneel en heeft alleen betrekking op Windows.
 
-U kunt AEM 3D desgewenst integreren met Autodesk® Maya®-software om ondersteuning voor systeemeigen Maya-bestanden (`.MA` en `.MB`) mogelijk te maken en om 3D-middelen in AEM te kunnen renderen met elke beschikbare Maya-renderer.
+U kunt desgewenst AEM 3D integreren met Autodesk® Maya®-software om ondersteuning voor systeemeigen Maya-bestanden (`.MA` en `.MB`) mogelijk te maken en om 3D-middelen te kunnen renderen in AEM met elke beschikbare Maya-renderer.
 
 *Deze integratie geldt alleen* voor Windows.
 
@@ -29,7 +32,7 @@ Wanneer u integreert met Autodesk Maya, moet u Autodesk Maya installeren en conf
 
 Zie [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
-Zie ook [AEM 3D integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md).
+Zie ook AEM 3D [integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodesk-3ds-max.md).
 
 **AEM 3D integreren met Autodesk Maya**:
 
@@ -39,7 +42,7 @@ Zie ook [AEM 3D integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodes
 
    >[!NOTE]
    >
-   >AEM gebruikt alleen het rendergereedschap Maya-opdrachtregel (`render.exe`). Met één Maya-netwerklicentie kunnen maximaal vijf servers tegelijk Maya-inhoud verwerken of renderen.
+   >AEM gebruikt alleen het gereedschap Maya-opdrachtregel (`render.exe`). Met één Maya-netwerklicentie kunnen maximaal vijf servers tegelijk Maya-inhoud verwerken of renderen.
 
 1. Schakel in Maya de Autodesk FBX®-plug-in in.
 1. Installeer de insteekmodule voor het renderen van MentalRay of een andere gewenste renderer.
@@ -52,27 +55,27 @@ Zie ook [AEM 3D integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodes
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Als u Maya wilt inschakelen voor opnemen en renderen, opent u **[!UICONTROL CRXDE Lite]** en navigeert u naar `/libs/settings/dam/v3D/assetTypes/maya` en stelt u de eigenschap **[!UICONTROL Enabled]** in op `true`.
+1. Als u Maya wilt inschakelen voor opnemen en renderen, opent u de eigenschap **[!UICONTROL CRXDE Lite]** en navigeert u ernaar `/libs/settings/dam/v3D/assetTypes/maya` en stelt u deze in op **[!UICONTROL Enabled]** eigenschap `true`.
 
    ![image2018-6-22_12-42-7](assets/image2018-6-22_12-42-7.png)
 
-1. Als u de bestandsindeling JT (Siemens PLM Open CAD) wilt inschakelen, navigeert u naar de eigenschap `/libs/settings/dam/v3D/assetTypes/jt` Enabled **[!UICONTROL (Ingeschakeld]** ) en stelt u deze in op `true`.
-1. In AEM, laat Maya als renderer toe. Navigeer eerst naar **[!UICONTROL Gereedschappen > Algemeen > CRXDE Lite]**.
-1. Navigeer op de pagina **[!UICONTROL CRXDE Lite]** in het linkerpaneel naar het volgende:
+1. Als u de bestandsindeling JT (Siemens PLM Open CAD) wilt inschakelen, navigeert u naar de eigenschap `/libs/settings/dam/v3D/assetTypes/jt` en stelt u deze in op **[!UICONTROL Enabled]** `true`.
+1. Schakel in AEM Maya in als renderer. Begin door naar **[!UICONTROL Tools > General > CRXDE Lite]** te navigeren.
+1. Navigeer op de **[!UICONTROL CRXDE Lite]** pagina in het linkerdeelvenster naar het volgende:
 
    `/libs/settings/dam/v3D/renderers/maya`
 
    ![image2018-6-22_12-46-18](assets/image2018-6-22_12-46-18.png)
 
-1. Stel de eigenschap **[!UICONTROL Enabled]** in op `true`.
+1. Stel de **[!UICONTROL Enabled]** eigenschap in op `true`.
 
-1. Tik in de linkerbovenhoek van de **[!UICONTROL CRXDE Lite]** -pagina op Alles **[!UICONTROL opslaan]**.
+1. Near the upper-left corner of the **[!UICONTROL CRXDE Lite]** page, tap **[!UICONTROL Save All]**.
 
    Maya is nu ingeschakeld als een renderer.
 
-## De integratie van AEM 3D met Autodesk Maya testen {#testing-the-integration-of-aem-d-with-autodesk-maya}
+## De integratie van AEM 3D testen met Autodesk Maya {#testing-the-integration-of-aem-d-with-autodesk-maya}
 
-1. Open AEM-middelen en upload de `.MA` bestanden in `sample-3D-content/models` de `test3d` map.
+1. Open AEM Assets en upload de `.MA` bestanden in `sample-3D-content/models` de `test3d` map.
 
    Let op: `sample-3D-content.zip` is eerder gedownload voor validatie van de standaard 3D-functionaliteit.
 
@@ -84,12 +87,12 @@ Zie ook [AEM 3D integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodes
 
    De ervaring van de Voorproef is het zelfde als met `logo_sphere.fbx` en `stage-helipad.fbx`.
 
-1. Tik in de linkerbovenhoek van de pagina op of klik op de vervolgkeuzelijst en selecteer vervolgens **[!UICONTROL CRender]**.
+1. Tik in de linkerbovenhoek van de pagina of klik op de vervolgkeuzelijst en selecteer **[!UICONTROL CRender]**.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Renderer]** de optie **[!UICONTROL Autodesk Maya]** en tik vervolgens op **[!UICONTROL Start Render]**.
-1. Tik rechtsboven op de pagina of klik op **[!UICONTROL Sluiten]** om terug te keren naar de weergave **[!UICONTROL Kaart]** .
+1. Selecteer in de **[!UICONTROL Renderer]** vervolgkeuzelijst de optie **[!UICONTROL Autodesk Maya]** en tik op **[!UICONTROL Start Render]**.
+1. Tik of klik in de rechterbovenhoek van de pagina **[!UICONTROL Close]** om terug te keren naar de **[!UICONTROL Card]** weergave.
 
    Bekijk de berichtenbanner op het afbeeldingselement dat wordt gerenderd (`logo-sphere`, tenzij een andere afbeeldingsnaam is opgegeven). Een voortgangsbalk op de banner geeft de voortgang van het renderen weer.
 
@@ -99,28 +102,28 @@ Zie ook [AEM 3D integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodes
 
 1. Nadat de rendering is voltooid, opent u het gerenderde afbeeldingselement.
 
-   Controleer of de gerenderde afbeelding redelijk overeenkomt met de afbeelding die u weergaf op het moment dat u op Nu **[!UICONTROL renderen]** klikte.
+   Controleer of de gerenderde afbeelding redelijk overeenkomt met de afbeelding die u bekeek op het moment dat u klikte **[!UICONTROL Render Now]**.
 
 ## Extra door Maya ondersteunde indelingen inschakelen {#enabling-additional-formats-supported-by-maya}
 
 (Optioneel) Maya ondersteunt een aantal 3D-invoerindelingen, waarvan alle kunnen worden ingeschakeld zodat AEM het bestandstype herkent. Als deze optie is ingeschakeld, stuurt AEM het bestand naar Maya om het om te zetten in een indeling die direct door AEM kan worden ingeslikt.
 
-Afhankelijk van de indeling kan de ondersteuning van functies beperkt zijn (materialen kunnen bijvoorbeeld niet worden doorgegeven) en kan de kwaliteit/betrouwbaarheid beperkt zijn (bijvoorbeeld omgekeerde vlakken). Adobe biedt alleen ondersteuning voor het algemene mechanisme, maar geen specifieke conversie van indelingen.
+Afhankelijk van de indeling kan de ondersteuning van functies beperkt zijn (materialen kunnen bijvoorbeeld niet worden doorgegeven) en kan de kwaliteit/betrouwbaarheid beperkt zijn (bijvoorbeeld omgekeerde vlakken). Adobe ondersteunt alleen het algemene mechanisme, maar geen specifieke indelingsconversie.
 
-Zie [Ondersteunde indelingen voor het importeren van gegevens| Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-69BC066D-D4D8-4B12-900C-CF42E798A5D6-htm.html) voor informatie over de door Maya ondersteunde formaten.
+Zie [Ondersteunde indelingen voor het importeren van gegevens | Maya](https://knowledge.autodesk.com/support/maya/learn-explore/caas/CloudHelp/cloudhelp/2016/ENU/Maya/files/GUID-69BC066D-D4D8-4B12-900C-CF42E798A5D6-htm.html) voor informatie over de door Maya ondersteunde formaten.
 
 **Extra indelingen inschakelen die worden ondersteund door AEM**:
 
-1. Navigeer met **[!UICONTROL CRXDE Lite]** naar `/libs/settings/dam/v3D/assetTypes`.
-1. Maak een kopie van het **[!UICONTROL jt]** -knooppunt. Klik met de rechtermuisknop op het **[!UICONTROL JT]** -knooppunt en selecteer **[!UICONTROL Kopiëren]**, klik vervolgens met de rechtermuisknop op de map **[!UICONTROL assetTypes]** en selecteer **[!UICONTROL Plakken]**. Dit zou een nieuw knooppunt moeten veroorzaken `/apps/cq-scene7-v3D/config/assetTypes/Copy of jt`.
+1. Navigeer **[!UICONTROL CRXDE Lite]** naar `/libs/settings/dam/v3D/assetTypes`.
+1. Maak een kopie van het **[!UICONTROL jt]** knooppunt. Klik met de rechtermuisknop op het **[!UICONTROL jt]** knooppunt en selecteer **[!UICONTROL Copy]**, klik met de rechtermuisknop op de **[!UICONTROL assetTypes]** map en selecteer **[!UICONTROL Paste]**. Dit zou een nieuw knooppunt moeten veroorzaken `/apps/cq-scene7-v3D/config/assetTypes/Copy of jt`.
 1. Wijzig de naam van het nieuwe knooppunt om het een unieke naam te geven die het bestandstype vertegenwoordigt dat moet worden toegevoegd. Het achtervoegsel van het bestand kan worden gebruikt of een andere unieke id.
 
-1. Plaats het **[!UICONTROL Toegelaten]** bezit van de nieuwe knoop aan `true`.
+1. Stel de **[!UICONTROL Enabled]** eigenschap van het nieuwe knooppunt in op `true`.
 
-1. Stel de eigenschap **[!UICONTROL Extension]** van de nieuwe notitie in op het achtervoegsel/de extensie van het bestand dat wordt toegevoegd.
-1. Stel de eigenschap **[!UICONTROL MimeType]** in op een geschikte waarde. `application/x-` gevolgd door de waarde van de eigenschap **[!UICONTROL Extension]** moet werken voor de meeste bestandstypen.
-1. Zorg ervoor dat de eigenschap **[!UICONTROL Conversion]** is ingesteld op `fbx` en **[!UICONTROL IngestRegime]** op `Maya`.
-1. Klik linksboven op de pagina op Alles **** opslaan.
+1. Stel de **[!UICONTROL Extension]** eigenschap van de nieuwe notitie in op het achtervoegsel/de extensie van het bestand dat wordt toegevoegd.
+1. Stel de juiste waarde in voor de **[!UICONTROL MimeType]** eigenschap. `application/x-` gevolgd door de waarde van de **[!UICONTROL Extension]** eigenschap moet werken voor de meeste bestandstypen.
+1. Controleer of de **[!UICONTROL Conversion]** eigenschap is ingesteld op `fbx` en **[!UICONTROL IngestRegime]** op `Maya`.
+1. Klik **[!UICONTROL Save All]** linksboven op de pagina.
 
 De volgende schermafbeelding illustreert een toegevoegde bestandsindeling, waarbij COLLADA DAE als voorbeeld wordt gebruikt:
 
