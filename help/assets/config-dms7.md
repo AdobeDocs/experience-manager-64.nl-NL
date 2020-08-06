@@ -1,8 +1,8 @@
 ---
-title: Dynamic Media configureren - Scene7-modus
-seo-title: Dynamic Media configureren - Scene7-modus
-description: Informatie over het configureren van Dynamic Media - de Scene7-modus.
-seo-description: Informatie over het configureren van Dynamic Media - de Scene7-modus.
+title: Dynamische media configureren - Scene7-modus
+seo-title: Dynamische media configureren - Scene7-modus
+description: Informatie over het configureren van de modus Dynamische media - Scene7.
+seo-description: Informatie over het configureren van de modus Dynamische media - Scene7.
 uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -18,39 +18,39 @@ ht-degree: 3%
 ---
 
 
-# Dynamic Media configureren - Scene7-modus {#configuring-dynamic-media-scene-mode}
+# Dynamische media configureren - Scene7-modus {#configuring-dynamic-media-scene-mode}
 
-Als u Adobe Experience Manager opstelling voor verschillende milieu&#39;s, zoals voor ontwikkeling, voor het opvoeren, en voor levende productie gebruikt, moet u Dynamic Media Cloud Servicen voor elk van die milieu&#39;s vormen.
+Als u Adobe Experience Manager-instellingen gebruikt voor verschillende omgevingen, zoals een voor ontwikkeling, een voor staging en een voor live productie, moet u Dynamic Media-Cloud Services configureren voor elk van deze omgevingen.
 
 ## Architectuurdiagram van Dynamic Media - Scene7-modus {#architecture-diagram-of-dynamic-media-scene-mode}
 
-Het volgende architectuurdiagram beschrijft hoe Dynamic Media - de wijze van Scene7 werkt.
+In het volgende architectuurdiagram wordt beschreven hoe de modus Dynamische media - Scene7 werkt.
 
-Met de nieuwe architectuur, is AEM verantwoordelijk voor master activa en synchrone met Dynamic Media voor activa verwerking en het publiceren:
+Met de nieuwe architectuur is AEM verantwoordelijk voor master elementen en synchronisaties met Dynamic Media voor het verwerken en publiceren van bedrijfsmiddelen:
 
-1. Wanneer het master element naar AEM wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment worden door Dynamic Media alle processen voor het verwerken en genereren van elementen verwerkt, zoals videocodering en dynamische varianten van een afbeelding.
-1. Nadat de vertoningen worden geproduceerd, kunnen AEM veilig tot de verre Dynamic Media uitvoeringen toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de AEM instantie).
-1. Nadat de inhoud klaar is om te worden gepubliceerd en goedgekeurd, brengt het de dienst van Dynamic Media teweeg om inhoud uit te duwen aan leveringsservers en geheim voorgeheugeninhoud bij CDN.
+1. Wanneer het master element naar AEM wordt geüpload, wordt het naar Dynamic Media gerepliceerd. Op dat moment worden met Dynamic Media alle processen voor het genereren van elementen, zoals videocodering en dynamische varianten van een afbeelding, verwerkt.
+1. Nadat de vertoningen worden geproduceerd, kunnen AEM veilig tot de verre Dynamische vertoningen van Media toegang hebben en voorproef (geen binaire getallen worden teruggestuurd naar de AEM instantie).
+1. Nadat de inhoud klaar is om te worden gepubliceerd en goedgekeurd, brengt het de Dynamische dienst van Media in werking om inhoud uit te duwen naar leveringsservers en geheim voorgeheugeninhoud bij CDN.
 
 ![chlimage_1](assets/chlimage_1.png)
 
-## Dynamic Media inschakelen in de Scene7-modus {#enabling-dynamic-media-in-scene-mode}
+## Dynamische media inschakelen in Scene7-modus {#enabling-dynamic-media-in-scene-mode}
 
-[Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) zijn standaard uitgeschakeld. Als u gebruik wilt maken van dynamische mediafuncties, moet u deze inschakelen.
+[Dynamische media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) is standaard uitgeschakeld. Als u gebruik wilt maken van dynamische mediafuncties, moet u deze inschakelen.
 
 >[OPMERKING]
 >
->Dynamic Media - De Scene7-modus is alleen bedoeld voor de AEM Author-instantie. Als dusdanig, moet u `runmode=dynamicmedia_scene7`op de instantie van AEM Author vormen, niet de instantie van AEM Publish.
+>Dynamische media - de Scene7-modus is alleen voor de AEM-auteur-instantie. Als dusdanig, moet u `runmode=dynamicmedia_scene7`op de instantie van de Auteur AEM vormen, niet de instantie van de Publicatie AEM.
 
-Om Dynamic Media toe te laten, moet u AEM beginnen gebruikend `dynamicmedia_scene7` runmode van de bevellijn door het volgende in te gaan in een eindvenster (gebruikte voorbeeldhaven is 4502):
+Om Dynamische Media toe te laten, moet u AEM beginnen gebruikend `dynamicmedia_scene7` runmode van de bevellijn door het volgende in te gaan in een eindvenster (gebruikte voorbeeldhaven is 4502):
 
 ```shell
 java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=500000 -jar cq-quickstart-6.4.0.jar -gui -r author,dynamicmedia_scene7 -p 4502
 ```
 
-## (Optioneel) Voorinstellingen en configuraties voor Dynamic Media migreren van 6.3 naar 6.4 Nul-downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
+## (Optioneel) Dynamische voorinstellingen en configuraties van media migreren van 6.3 naar 6.4 Nul downtime {#optional-migrating-dynamic-media-presets-and-configurations-from-to-zero-downtime}
 
-Als u AEM Dynamic Media van 6.3 aan 6.4 bevordert (die nu de capaciteit voor nul onderbreking plaatsingen) omvat, moet u het volgende krullbevel in werking stellen om al uw voorinstellingen en configuraties van `/etc` aan `/conf` in CRXDE Lite te migreren.
+Als u AEM Dynamische Media van 6.3 aan 6.4 bevordert (die nu de capaciteit voor nul onderbreking plaatsingen) omvat, moet u het volgende krullbevel in werking stellen om al uw voorinstellingen en configuraties van `/etc` aan `/conf` in CRXDE Lite te migreren.
 
 >[OPMERKING]
 >
@@ -66,36 +66,36 @@ Voor alle upgrades, met of zonder het compatibiliteitspakket, kunt u de voorinst
 
 ## (Optioneel) Functiepakket 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen {#installing-feature-pack}
 
-Met Feature Pack 18912 kunt u elementen bulksgewijs toevoegen via FTP, of elementen migreren van Dynamic Media - Hybride modus of Dynamic Media Klassiek naar Dynamic Media - Scene7-modus op AEM. Het is verkrijgbaar bij Adobe Professional Services.
+Met Feature Pack 18912 kunt u opgenomen elementen bulksgewijs via FTP importeren of elementen migreren van Dynamic Media - Hybride modus of Dynamic Media Classic naar Dynamic Media - Scene7-modus op AEM. Het is verkrijgbaar bij Adobe Professional Services.
 
 Zie [Installeren van functiepak 18912 voor bulkassemigratie](bulk-ingest-migrate.md) voor meer informatie.
 
-## Cloud Servicen van Dynamic Media configureren {#configuring-dynamic-media-cloud-services}
+## Dynamische media-Cloud Services configureren {#configuring-dynamic-media-cloud-services}
 
-Wijzig het wachtwoord voordat u Dynamic Media Cloud Servicen configureert. Nadat u uw levering-e-mail met de geloofsbrieven van Dynamic Media ontvangt, moet u [login](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) aan Dynamic Media Klassiek om uw wachtwoord te veranderen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat de Cloud Service van Dynamic Media opstelling met de correcte geloofsbrieven is.
+Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bij Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat Dynamic Media Cloud Service is ingesteld met de juiste referenties.
 
 >[!NOTE]
 >
->Standaard is het configuratiepad voor Cloud Servicen `/content/dam`. Een ander configuratiepad wordt niet ondersteund door de Scene7-modus van Dynamic Media.
+>Standaard is het configuratiepad voor Cloud Services `/content/dam`. Een ander configuratiepad wordt niet ondersteund door de Scene7-modus Dynamic Media.
 
-Om Dynamic Media Cloud Servicen te vormen:
+Dynamische media-Cloud Services configureren:
 
 1. Tik in AEM op het AEM logo om toegang te krijgen tot de algemene navigatieconsole en tik op het pictogram Gereedschappen en tik vervolgens op **[!UICONTROL Cloud Services > Dynamic Media Configuration]**.
 1. Tik op de pagina Dynamic Media Configuration Browser in het linkerdeelvenster op **[!UICONTROL global]** en tik op **[!UICONTROL Create]**. Tik niet op het mappictogram of selecteer dit links van [!UICONTROL global].
-1. Voer op de [!UICONTROL Create Dynamic Media Configuration] pagina een titel, het e-mailadres van de account Dynamic Media, het wachtwoord in en selecteer vervolgens uw regio. Deze worden door Adobe in de provisioning-e-mail aan u verstrekt. Neem contact op met de ondersteuningsafdeling als u dit niet hebt ontvangen.
+1. Voer op de [!UICONTROL Create Dynamic Media Configuration] pagina een titel in, het e-mailadres van de Dynamic Media-account, het wachtwoord en selecteer vervolgens uw regio. Deze worden door Adobe in de provisioning-e-mail aan u verstrekt. Neem contact op met de ondersteuningsafdeling als u dit niet hebt ontvangen.
 
    Tik op **[!UICONTROL Connect to Dynamic Media]**.
 
    >[!NOTE]
    >
-   >Nadat u uw provisioning-e-mail met de gegevens van Dynamic Media hebt ontvangen, [meldt u zich aan bij](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat de service Dynamic Media cloud wordt ingesteld met de juiste referenties.
+   >Nadat u een e-mailbericht met dynamische media-referenties hebt ontvangen, [meldt u zich aan bij](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat de Dynamic Media Cloud Service wordt ingesteld met de juiste referenties.
 
 1. Als de verbinding tot stand is gebracht, kunt u ook het volgende instellen:
 
-   * **[!UICONTROL Company]** - de naam van de rekening Dynamic Media. Het is mogelijk dat u meerdere Dynamic Media-accounts hebt voor verschillende submerken, divisies of verschillende testomgevingen/productieomgevingen.
+   * **[!UICONTROL Company]** - de naam van de Dynamic Media-account. Het is mogelijk dat u meerdere Dynamic Media-accounts hebt voor verschillende submerken, divisies of verschillende testomgevingen/productieomgevingen.
    * **[!UICONTROL Company Root Folder Path]**
    * **[!UICONTROL Publishing Assets]** - de optie **[!UICONTROL Immediately]** houdt in dat wanneer elementen worden geüpload, het systeem de elementen opgeeft en de URL/Embed onmiddellijk levert. Er is geen tussenkomst van de gebruiker nodig om elementen te publiceren. De optie **[!UICONTROL Upon Activation]** houdt in dat u het element eerst expliciet moet publiceren voordat er een koppeling URL/Embed wordt opgegeven.
-   * **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen dat AEM nadat uitvoeringen zijn gegenereerd, veilig toegang hebben tot de externe uitvoeringen van Dynamic Media en deze kunnen voorvertonen (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
+   * **[!UICONTROL Secure Preview Server]** - Hiermee kunt u het URL-pad naar de voorvertoningsserver voor veilige vertoningen opgeven. Dat wil zeggen dat AEM na het genereren van uitvoeringen veilig toegang hebben tot de externe dynamische media-uitvoeringen en deze kunnen voorvertonen (er worden geen binaire bestanden teruggestuurd naar de AEM-instantie).
 
       Tenzij u een speciale regeling hebt om de server van uw eigen bedrijf of een speciale server te gebruiken, adviseert Adobe dat u het gebrek het plaatsen gebruikt.
    >[!NOTE]
@@ -107,31 +107,31 @@ Om Dynamic Media Cloud Servicen te vormen:
    ![dynamicmediaconfiguration2updated](assets/dynamicmediaconfiguration2updated.png)
 
 1. Tik op **[!UICONTROL Save]**.
-1. Als u de inhoud van Dynamic Media veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM auteur-instantie &quot;lijsten van gewenste personen&quot; om verbinding te maken met Dynamic Media:
+1. Als u de dynamische media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM auteur-instantie &quot;lijsten van gewenste personen&quot; om verbinding te maken met Dynamic Media:
 
-   * Meld u aan bij uw Klassieke account voor Dynamic Media: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+   * Meld u aan bij uw Dynamic Media Classic-account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
    * Tik op de navigatiebalk rechts boven aan de pagina **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
    * Selecteer op de pagina Publiceren afbeeldingsserver in de vervolgkeuzelijst Publicatie-context de optie **[!UICONTROL Test Image Serving]**.
    * Tik voor het filter Clientadres op **[!UICONTROL Add]**.
-   * Schakel het selectievakje in om het adres in te schakelen (inschakelen) en voer vervolgens het IP-adres van het exemplaar AEM Author in (niet Dispatcher IP).
+   * Schakel het selectievakje in om het adres in te schakelen (inschakelen) en voer vervolgens het IP-adres in van de instantie AEM-auteur (niet Dispatcher IP).
    * Tik op **[!UICONTROL Save]**.
 
-U wordt nu gebeëindigd met de basisconfiguratie; U kunt Dynamic Media gebruiken in de Scene7-modus.
+U wordt nu gebeëindigd met de basisconfiguratie; U kunt de modus Dynamische media - Scene7 gebruiken.
 
-Als u uw configuratie verder wilt aanpassen, kunt u naar keuze om het even welke taken voltooien onder [(Facultatief) Vormend Geavanceerde Montages in Dynamic Media - de wijze](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)van Scene7.
+Als u de configuratie verder wilt aanpassen, kunt u desgewenst alle taken uitvoeren onder [(Optioneel) Geavanceerde instellingen configureren in de modus](#optional-configuring-advanced-settings-in-dynamic-media-scene-mode)Dynamische media - Scene7.
 
-## (Optioneel) Geavanceerde instellingen configureren in Dynamic Media - Scene7-modus {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
+## (Optioneel) Geavanceerde instellingen configureren in de modus Dynamische media - Scene7 {#optional-configuring-advanced-settings-in-dynamic-media-scene-mode}
 
-Als u de configuratie en opstelling van Dynamic Media - de wijze van Scene7 verder wilt aanpassen, of zijn prestaties optimaliseren, kunt u één of meerdere van de volgende facultatieve taken voltooien:
+Als u de configuratie en opstelling van Dynamische Media - Scene7 wijze verder wilt aanpassen, of zijn prestaties optimaliseren, kunt u één of meerdere van de volgende facultatieve taken voltooien:
 
-* [(Optioneel) Instellingen voor de Scene7-modus en configuratie van Dynamic Media](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
+* [(Optioneel) Instellingen voor dynamische media instellen en configureren - Scene7-modus](#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p)
 
 * [(Optioneel) De prestaties van Dynamic Media afstemmen - Scene7-modus](#optional-tuning-the-performance-of-dynamic-media-scene-mode)
 * [(Optioneel) Elementen filteren voor replicatie](#optional-filtering-assets-for-replication)
 
-### (Optioneel) Instellingen voor de Scene7-modus en configuratie van Dynamic Media</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
+### (Optioneel) Instellingen voor dynamische media instellen en configureren - Scene7-modus</p> {#optional-setup-and-configuration-of-dynamic-media-scene-mode-settings-p}
 
-Wanneer u in looppaswijze **dynamicmedia_scene7** bent, gebruikt u het gebruikersinterface van Dynamic Media Classic (Scene7) om veranderingen in uw Dynamic Media montages aan te brengen.
+Wanneer u in looppas wijze **dynamicmedia_scene7** bent, gebruikt u het Dynamische Klassieke (Scene7) gebruikersinterface van Media om veranderingen in uw Dynamische montages van Media aan te brengen.
 
 Voor sommige van de bovenstaande taken moet u zich hier aanmelden bij Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
@@ -146,7 +146,7 @@ Setup- en configuratietaken zijn:
 
 #### Publicatie-instelling voor afbeeldingsserver {#publishing-setup-for-image-server}
 
-De instellingen voor Publicatie-instellingen bepalen hoe elementen standaard worden geleverd vanuit Dynamic Media. Als er geen instelling is opgegeven, levert het Dynamic Media een element op basis van de standaardinstellingen die zijn gedefinieerd in Publicatie-instelling. Als u bijvoorbeeld een aanvraag indient om een afbeelding te leveren die geen resolutiekenmerk bevat, levert dit een afbeelding op met de standaardinstelling Objectresolutie.
+De instellingen voor Publicatie-instellingen bepalen hoe elementen standaard worden geleverd via Dynamische media. Als er geen instelling is opgegeven, levert Dynamic Media een element op basis van de standaardinstellingen die zijn gedefinieerd in Publicatie-instelling. Als u bijvoorbeeld een aanvraag indient om een afbeelding te leveren die geen resolutiekenmerk bevat, levert dit een afbeelding op met de standaardinstelling Objectresolutie.
 
 Publicatie-instelling configureren: Tik in Dynamic Media Classic **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
 
@@ -162,11 +162,11 @@ Het scherm van de Server van het Beeld vestigt standaardmontages voor het levere
 
 #### Algemene instellingen van toepassing configureren {#configuring-application-general-settings}
 
-Tik in de klassieke algemene navigatiebalk van Dynamic Media op de [!UICONTROL Application General Settings] pagina om deze te openen **[!UICONTROL Setup > Application Setup > General Settings]**.
+Tik op de algemene navigatiebalk van Dynamic Media Classic om de [!UICONTROL Application General Settings] pagina te openen **[!UICONTROL Setup > Application Setup > General Settings]**.
 
-**[!UICONTROL Servers]** - Bij de provisioning van accounts voorzien Dynamic Media automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij uitdrukkelijk om dit te doen door AEM ondersteuning.
+**[!UICONTROL Servers]** - Dynamische media biedt via provisioning van accounts automatisch de toegewezen servers voor uw bedrijf. Deze servers worden gebruikt om URL-tekenreeksen voor uw website en toepassingen samen te stellen. Deze URL-aanroepen gelden specifiek voor uw account. Wijzig geen van de servernamen, tenzij uitdrukkelijk om dit te doen door AEM ondersteuning.
 
-**[!UICONTROL Overwrite Images]** - Dynamic Media staan niet toe dat twee bestanden dezelfde naam hebben. De URL-id van elk item (de bestandsnaam minus de extensie) moet uniek zijn. Met deze opties geeft u op hoe vervangende elementen worden geüpload: of zij het origineel vervangen of dupliceren. Dubbele elementen krijgen de naam &quot;-1&quot;. (De naam van bijvoorbeeld stoel.tif wordt gewijzigd in stoel-1.tif). Deze opties zijn van invloed op elementen die naar een andere map zijn geüpload dan het origineel of op elementen met een andere bestandsnaamextensie dan het origineel (zoals JPG, TIF of PNG).
+**[!UICONTROL Overwrite Images]** - Dynamische media staat niet toe dat twee bestanden dezelfde naam hebben. De URL-id van elk item (de bestandsnaam minus de extensie) moet uniek zijn. Met deze opties geeft u op hoe vervangende elementen worden geüpload: of zij het origineel vervangen of dupliceren. Dubbele elementen krijgen de naam &quot;-1&quot;. (De naam van bijvoorbeeld stoel.tif wordt gewijzigd in stoel-1.tif). Deze opties zijn van invloed op elementen die naar een andere map zijn geüpload dan het origineel of op elementen met een andere bestandsnaamextensie dan het origineel (zoals JPG, TIF of PNG).
 
 * **[!UICONTROL Overwrite in current folder, same base image name/extension]** - Deze optie is de strengste regel voor vervanging. Hiervoor moet u de vervangende afbeelding uploaden naar dezelfde map als het origineel en moet de vervangende afbeelding dezelfde bestandsnaamextensie hebben als het origineel. Als niet aan deze vereisten wordt voldaan, wordt een dubbel gecreeerd.
 
@@ -189,7 +189,7 @@ Met dynamisch kleurbeheer voor media kunt u correcte elementen kleuren. Met kleu
 
 De standaardeigenschappen voor kleuren configureren om kleurcorrectie in te schakelen bij het aanvragen van afbeeldingen:
 
-1. [Login in Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) gebruikend geloofsbrieven die tijdens levering worden verstrekt. Ga naar **[!UICONTROL Setup > Application Setup]**.
+1. [Meld u aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) met aanmeldingsgegevens die tijdens de provisioning worden geleverd. Ga naar **[!UICONTROL Setup > Application Setup]**.
 1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
 1. Blader naar de eigenschap die u wilt wijzigen, bijvoorbeeld een eigenschap in het **[!UICONTROL Color Management Attributes]** gebied.
 
@@ -214,7 +214,7 @@ Dit doet het volgende:
 
 #### Elementverwerking configureren {#configuring-asset-processing}
 
-U kunt bepalen welke elementtypen door Dynamic Media moeten worden verwerkt en geavanceerde parameters voor elementverwerking aanpassen. U kunt bijvoorbeeld parameters voor elementverwerking opgeven om het volgende te doen:
+U kunt bepalen welke elementtypen door Dynamic Media moeten worden verwerkt en de geavanceerde parameters voor elementverwerking aanpassen. U kunt bijvoorbeeld parameters voor elementverwerking opgeven om het volgende te doen:
 
 * Een Adobe PDF converteren naar een eCatalog-element.
 * Converteer een Adobe Photoshop-document (.PSD) naar een bannersjabloonelement voor personalisatie.
@@ -278,7 +278,7 @@ U kunt aangepaste MIME-typen voor niet-ondersteunde indelingen toevoegen in AEM 
 
 1. Klik in de rechterbenedenhoek van de pagina op **[!UICONTROL Save]**.
 
-   Op dit punt, kunt u het browser lusje sluiten dat de open pagina van de Configuratie van de Console van het Web van de Adobe Experience Manager heeft.
+   Op dit punt kunt u het browsertabblad sluiten waarop de pagina Configuratie Adobe Experience Manager-webconsole is geopend.
 
 1. Keer terug naar het browser lusje dat uw open AEM console heeft.
 
@@ -304,7 +304,7 @@ U kunt aangepaste MIME-typen voor niet-ondersteunde indelingen toevoegen in AEM 
 
 #### Voorinstellingen voor batchsets maken om automatisch afbeeldingssets en centrifuges te genereren {#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets}
 
-Met voorinstellingen voor batchsets kunt u het maken van afbeeldingssets of centrifuges automatiseren terwijl elementen naar Dynamic Media worden geüpload.
+Met voorinstellingen voor batchsets kunt u het maken van afbeeldingssets of centrifuges automatiseren terwijl elementen naar dynamische media worden geüpload.
 
 Bepaal eerst de naamgevingsconventie voor hoe elementen in een set moeten worden gegroepeerd. Vervolgens kunt u een voorinstelling voor een batch-set maken. Dit is een unieke, op zichzelf staande set instructies die definiëren hoe de set moet worden samengesteld met afbeeldingen die overeenkomen met de gedefinieerde naamgevingsconventies in het vooraf ingestelde recept.
 
@@ -322,7 +322,7 @@ Twee elementen zijn beschikbaar voor definitie, **[!UICONTROL Match]** en **[!UI
 
 **Standaardnaamgeving configureren:**
 
-1. Meld u aan bij uw Classic (Scene7)-account voor Dynamic Media: [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Meld u aan bij uw Dynamic Media Classic-account (Scene7): [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
@@ -348,7 +348,7 @@ Twee elementen zijn beschikbaar voor definitie, **[!UICONTROL Match]** en **[!UI
 
 **Een voorinstelling voor een batchset maken**
 
-Dynamic Media gebruiken voorinstellingen van batchsets om elementen te ordenen in sets afbeeldingen (alternatieve afbeeldingen, kleuropties, 360 centrifuge) die kunnen worden weergegeven in viewers. De voorinstellingen voor batchsets worden automatisch naast de processen voor het uploaden van elementen in Dynamic Media uitgevoerd.
+Dynamische media gebruikt vooraf ingestelde batch-sets om elementen te ordenen in sets afbeeldingen (alternatieve afbeeldingen, kleuropties, 360 centrifuges) die kunnen worden weergegeven in viewers. De voorinstellingen voor batchsets worden automatisch naast de processen voor het uploaden van elementen in Dynamic Media uitgevoerd.
 
 U kunt uw voorinstellingen voor batchsets maken, bewerken en beheren. Er zijn twee vormen van vooraf ingestelde batch-definities: een voor een standaardnaamgevingsconventie die u hebt ingesteld en een conventie voor aangepaste naamgevingsconventies die u direct maakt.
 
@@ -356,7 +356,7 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
 **Een voorinstelling voor een batchset maken:**
 
-1. Meld u aan bij uw Classic (Scene7)-account voor Dynamic Media: [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Meld u aan bij uw Dynamic Media Classic-account (Scene7): [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
@@ -372,18 +372,18 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
    * Als u een standaardnaamgevingsconventie gebruikt die u eerder hebt ingesteld onder **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, vouwt u uit **[!UICONTROL Asset Naming Conventions]** en tikt u vervolgens in de **[!UICONTROL File Naming]** vervolgkeuzelijst op **[!UICONTROL Default]**.
    * Tik op een nieuwe naamgevingsconventie als u de voorinstelling wilt instellen **[!UICONTROL Asset Naming Conventions]** en vervolgens in de **[!UICONTROL File Naming]** vervolgkeuzelijst op **[!UICONTROL Custom]**.
 
-1. Definieer bijvoorbeeld de volgorde waarin de afbeeldingen worden weergegeven nadat de set is gegroepeerd in Dynamic Media. [!UICONTROL Sequence order]
+1. Definieer bijvoorbeeld de volgorde waarin de afbeeldingen worden weergegeven nadat de set is gegroepeerd in Dynamische media. [!UICONTROL Sequence order]
 
    Uw elementen worden standaard alfanumeriek geordend. U kunt echter een door komma&#39;s gescheiden lijst met reguliere expressies gebruiken om de volgorde te definiëren.
 
-1. Geef voor **[!UICONTROL Set Naming]** en **[!UICONTROL Creation Convention]** het achtervoegsel of het voorvoegsel op voor de basisnaam die u in het dialoogvenster hebt gedefinieerd **[!UICONTROL Asset Naming Convention]**. Definieer ook waar de set wordt gemaakt in de mapstructuur van Dynamic Media.
+1. Geef voor **[!UICONTROL Set Naming]** en **[!UICONTROL Creation Convention]** het achtervoegsel of het voorvoegsel op voor de basisnaam die u in het dialoogvenster hebt gedefinieerd **[!UICONTROL Asset Naming Convention]**. Definieer ook waar de set wordt gemaakt in de mappenstructuur Dynamische media.
 
    Als u grote aantallen sets definieert, kunt u deze beter apart houden van de mappen die de elementen zelf bevatten. U kunt bijvoorbeeld een map met afbeeldingssets maken en hier gegenereerde sets plaatsen.
 
 1. In the **[!UICONTROL Details]** panel, tap **[!UICONTROL Save]**.
 1. Tik **[!UICONTROL Active]** naast de naam van de nieuwe voorinstelling.
 
-   Als u de voorinstelling activeert, zorgt u ervoor dat de voorinstelling voor de batchset wordt toegepast wanneer u elementen uploadt naar Dynamic Media.
+   Als u de voorinstelling activeert, weet u zeker dat de voorinstelling van de batch-set wordt toegepast wanneer u elementen uploadt naar Dynamic Media.
 
 **Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-centrifugeset**
 
@@ -411,7 +411,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 **Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-set met draaien:**
 
-1. Meld u aan bij uw Classic (Scene7)-account voor Dynamic Media: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Meld u aan bij uw Dynamic Media Classic-account (Scene7): [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
 
    Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
@@ -458,23 +458,23 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
 
 1. Geef voor **[!UICONTROL Set Naming]** en **[!UICONTROL Creation Convention]** het achtervoegsel of het voorvoegsel op voor de basisnaam die u in het dialoogvenster hebt gedefinieerd **[!UICONTROL Asset Naming Convention]**.
 
-   Bepaal ook waar de centrifugeset wordt gemaakt in de Classic-mapstructuur van Dynamic Media.
+   Definieer ook waar de centrifugeset wordt gemaakt in de structuur van de map Dynamic Media Classic.
 
    Als u grote aantallen sets definieert, kunt u deze beter apart houden van de mappen die de elementen zelf bevatten. Maak bijvoorbeeld een map met centrifuges waarin de gegenereerde sets hier worden geplaatst.
 
 1. In the **[!UICONTROL Details]** panel, tap **[!UICONTROL Save]**.
 1. Tik **[!UICONTROL Active]** naast de naam van de nieuwe voorinstelling.
 
-   Als u de voorinstelling activeert, zorgt u ervoor dat de voorinstelling voor de batchset wordt toegepast wanneer u elementen uploadt naar Dynamic Media.
+   Als u de voorinstelling activeert, weet u zeker dat de voorinstelling van de batch-set wordt toegepast wanneer u elementen uploadt naar Dynamic Media.
 
 ### (Optioneel) De prestaties van Dynamic Media afstemmen - Scene7-modus {#optional-tuning-the-performance-of-dynamic-media-scene-mode}
 
-Om Dynamic Media - de wijze van Scene7 vlot te laten lopen, adviseert Adobe de volgende synchronisatieprestaties/scalability fintuning uiteinden:
+Om de dynamische media - Scene7-modus vloeiend te houden, raadt Adobe de volgende tips voor synchronisatieprestaties/schaalbaarheid aan:
 
 * De vooraf gedefinieerde taakparameters bijwerken voor het verwerken van verschillende bestandsindelingen.
 * Het bijwerken van de vooraf gedefinieerde Granite-workflow (video-elementen) vormt een wachtrij voor arbeidersthreads.
 * Bij het bijwerken van de vooraf gedefinieerde Granite transient-workflow (afbeeldingen en niet-video-elementen) kunt u de workflowthreads voor workers in de wachtrij gebruiken.
-* De maximale uploadverbindingen naar de klassieke server van Dynamic Media bijwerken.
+* De maximale uploadverbindingen naar de Dynamic Media Classic-server bijwerken.
 
 #### De vooraf gedefinieerde taakparameters bijwerken voor de verwerking van verschillende bestandsindelingen
 
@@ -492,11 +492,11 @@ Adobe raadt u aan de volgende taakparameters voor PDF-, Postscript- en PSD-besta
 | PostScript | `psprocess=Rasterize&psresolution=150&pscolorspace=Auto&psalpha=false&psextractsearchwords=false&aiprocess=Thumbnail&airesolution=150&aicolorspace=Auto&aialpha=false` |
 | PSD | `process=None&layerNaming=Layername&anchor=Center&createTemplate=false&extractText=false&extendLayers=false` |
 
-Om om het even welk van deze parameters bij te werken, volg de stappen in het Toelaten van MIME op type-Gebaseerde Activa/Dynamic Media Klassieke de parametersteun [](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)van het uploadproces van de .
+Als u een van deze parameters wilt bijwerken, volgt u de stappen in Op MIME gebaseerde elementen [inschakelen/Dynamische media Klassieke ondersteuning](#enabling-mime-type-based-assets-scene-upload-job-parameter-support)voor taakparameters uploaden.
 
 #### De Granite Transient Workflow-wachtrij bijwerken {#updating-the-granite-transient-workflow-queue}
 
-De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]** workflow. In Dynamic Media wordt het gebruikt voor het opnemen en verwerken van afbeeldingen.
+De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]** workflow. In Dynamische media, wordt het gebruikt voor beeldopname en verwerking.
 
 **De Granite Transient Workflow-wachtrij** bijwerken:
 
@@ -510,7 +510,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
    Standaard is het maximale aantal parallelle taken afhankelijk van het aantal beschikbare CPU-cores. Op een 4-core server worden bijvoorbeeld twee threads toegewezen. (Een waarde tussen 0,0 en 1,0 is gebaseerd op verhouding, of om het even welke aantallen groter dan 1 zullen het aantal arbeidersdraden toewijzen.)
 
-   Adobe raadt aan 32 te **[!UICONTROL Maximum Parallel Jobs]** configureren voor voldoende ondersteuning voor het uploaden van bestanden naar Dynamic Media Classic.
+   Adobe raadt aan dat 32 **[!UICONTROL Maximum Parallel Jobs]** zijn geconfigureerd voor voldoende ondersteuning voor het uploaden van bestanden naar Dynamic Media Classic.
 
    ![chlimage_1](assets/chlimage_1.jpeg)
 
@@ -518,7 +518,7 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 #### De Granite Workflow-wachtrij bijwerken {#updating-the-granite-workflow-queue}
 
-De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In Dynamic Media gebruikte het om video met het **[!UICONTROL Dynamic Media Encode Video]** werkschema te verwerken.
+De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In Dynamische Media, gebruikte het om video met het **[!UICONTROL Dynamic Media Encode Video]** werkschema te verwerken.
 
 **De Granite Workflow-wachtrij bijwerken:**
 
@@ -540,16 +540,16 @@ De Granite Workflow-wachtrij wordt gebruikt voor niet-tijdelijke workflows. In D
 
 #### De Scene7-uploadverbinding bijwerken {#updating-the-scene-upload-connection}
 
-Met de instelling Scene7 Upload Connection worden AEM middelen gesynchroniseerd met Dynamic Media Classic servers.
+Met de instelling Scene7 Upload Connection worden AEM middelen gesynchroniseerd met Dynamic Media Classic-servers.
 
 **De Scene7-uploadverbinding bijwerken:**
 
 1. Ga naar `https://<server>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7UploadServiceImpl`
 1. Wijzig het nummer in het [!UICONTROL Number of connections] veld en/of het [!UICONTROL Active job timeout] veld naar wens.
 
-   De **[!UICONTROL Number of connections]** instelling bepaalt het maximum aantal HTTP-verbindingen dat is toegestaan voor het uploaden van AEM naar Dynamic Media. doorgaans is de vooraf gedefinieerde waarde van 10 verbindingen voldoende.
+   Met de **[!UICONTROL Number of connections]** instelling bepaalt u het maximum aantal HTTP-verbindingen dat is toegestaan voor AEM naar Dynamic Media-upload. doorgaans is de vooraf gedefinieerde waarde van 10 verbindingen voldoende.
 
-   De **[!UICONTROL Active job timeout]** instelling bepaalt de wachttijd voor geüploade Dynamic Media-elementen die moeten worden gepubliceerd in de leveringsserver. Deze waarde is standaard 2100 seconden of 35 minuten.
+   De **[!UICONTROL Active job timeout]** instelling bepaalt de wachttijd voor geüploade dynamische media-elementen die moeten worden gepubliceerd in de leveringsserver. Deze waarde is standaard 2100 seconden of 35 minuten.
 
    In de meeste gevallen is de instelling 2100 voldoende.
 
@@ -559,15 +559,15 @@ Met de instelling Scene7 Upload Connection worden AEM middelen gesynchroniseerd 
 
 ### (Optioneel) Elementen filteren voor replicatie {#optional-filtering-assets-for-replication}
 
-Bij niet-Dynamic Media implementaties repliceert u *all *assets (zowel afbeeldingen als video) van uw AEM auteursomgeving naar het AEM publicatieknooppunt. Deze workflow is nodig omdat de AEM ook de middelen levert.
+Bij niet-dynamische media-implementaties repliceert u *all *assets (zowel afbeeldingen als video) van uw AEM auteursomgeving naar het AEM publicatieknooppunt. Deze workflow is nodig omdat de AEM ook de middelen levert.
 
-Bij implementaties van Dynamic Media is het echter niet nodig dezelfde middelen te repliceren naar publicatieknooppunten, omdat  via de cloudservice worden geleverd. Zo voorkomt u extra opslagkosten en langere verwerkingstijden om elementen te repliceren. Andere inhoud, zoals sitepagina&#39;s, wordt nog steeds aangeboden vanaf de AEM publicatieknooppunten.
+Bij dynamische media-implementaties is het echter niet nodig om dezelfde middelen te repliceren naar publicatieknooppunten, omdat elementen via de cloudservice worden geleverd AEM. Zo voorkomt u extra opslagkosten en langere verwerkingstijden om elementen te repliceren. Andere inhoud, zoals sitepagina&#39;s, wordt nog steeds aangeboden vanaf de AEM publicatieknooppunten.
 
 Met de filters kunt u *uitsluiten* dat elementen worden gerepliceerd naar het AEM publicatieknooppunt.
 
 #### Standaardelementfilters gebruiken voor replicatie {#using-default-asset-filters-for-replication}
 
-Als u Dynamic Media voor beeldverwerking en/of video gebruikt, kunt u de standaardfilters gebruiken die wij ongewijzigd verstrekken. De volgende filters zijn standaard actief:
+Als u Dynamische media voor beeldverwerking en/of video gebruikt, kunt u de standaardfilters gebruiken die wij ongewijzigd verstrekken. De volgende filters zijn standaard actief:
 
 <table> 
  <tbody> 
@@ -578,7 +578,7 @@ Als u Dynamic Media voor beeldverwerking en/of video gebruikt, kunt u de standaa
    <td><strong>Uitvoeringen</strong></td> 
   </tr> 
   <tr> 
-   <td>Afbeeldingslevering Dynamic Media</td> 
+   <td>Dynamische levering van mediafbeelding</td> 
    <td><p>filterafbeeldingen</p> <p>filtersets</p> <p> </p> </td> 
    <td><p>Begint met <strong>afbeelding/</strong></p> <p>Bevat <strong>toepassing/</strong> en eindigt met <strong>set</strong>.</p> </td> 
    <td>De 'filter-images' die buiten het vak (voor afzonderlijke afbeeldingselementen, waaronder interactieve afbeeldingen) en 'filtersets' (voor centrifuges, afbeeldingssets, gemengde mediasets en Carousel-sets) worden gebruikt, zijn: 
@@ -587,7 +587,7 @@ Als u Dynamic Media voor beeldverwerking en/of video gebruikt, kunt u de standaa
     </ul> </td> 
   </tr> 
   <tr> 
-   <td>Dynamic Media Video Delivery</td> 
+   <td>Dynamische videoverstrekking media</td> 
    <td>filter-video</td> 
    <td>Begint met <strong>video/</strong></td> 
    <td>De uit-van-de-doos "filter-video"zal: 
