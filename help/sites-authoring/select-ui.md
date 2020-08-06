@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '920'
+ht-degree: 0%
 
 ---
 
@@ -29,22 +32,25 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar. Deze zijn toegank
 
 1. Interface met aanraakbediening
 
-   * Dit is de moderne standaard-AEM-interface.
+   * Dit is de moderne, standaard AEM UI.
    * Het is overwegend grijs, met een schone, vlakke interface.
    * De vormgeving is op alle apparaten hetzelfde en is ontworpen voor zowel touch- als desktopapparaten. De [weergave en selectie van uw bronnen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) verschillen echter enigszins (tikken tegenover klikken).
 
       * Desktop:
+
    ![screen_shot_2018-03-23at115248](assets/screen_shot_2018-03-23at115248.png)
 
    * Tabletapparaten (of desktops met een breedte van minder dan 1024 pixels):
+
    ![screen_shot_2018-03-23at115505](assets/screen_shot_2018-03-23at115505.png)
 
 1. Klassieke interface
 
-   * Dit is de oudere gebruikersinterface en is al jaren beschikbaar in AEM.
+   * Dit is de oudere gebruikersinterface en is al vele jaren in AEM beschikbaar.
    * Het is voornamelijk groen.
    * Het is ontworpen voor gebruik op desktopapparaten.
    * De volgende documentatie concentreert zich op moderne UI. Voor informatie over creatie in klassieke UI, zie de [Authoring documentatie voor Klassieke UI](/help/sites-classic-ui-authoring/classicui.md).
+
    ![chlimage_1-232](assets/chlimage_1-232.png)
 
 ## Wisselende UIs
@@ -167,6 +173,7 @@ De instellingen die door een gebruiker of systeembeheerder zijn gedefinieerd, ku
 >
 >* Handmatig de URL bewerken - Een niet-standaard URL kan leiden tot een onbekende situatie en een gebrek aan functionaliteit.
 >* Beide editors tegelijk openen, bijvoorbeeld in afzonderlijke vensters.
+
 >
 
 
