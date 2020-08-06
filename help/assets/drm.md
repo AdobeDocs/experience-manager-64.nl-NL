@@ -1,11 +1,11 @@
 ---
 title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
-description: Leer hoe u in [!DNL Experience Manager] de status en informatie voor gelicentieerde middelen beheert.
+description: Leer hoe u de status van verlopen van middelen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: fe99869df5616f8f483ab8a9517e850e45c7a117
 workflow-type: tm+mt
-source-wordcount: '1363'
+source-wordcount: '1355'
 ht-degree: 6%
 
 ---
@@ -114,7 +114,7 @@ De [!DNL Assets] console kan verschillende statussen voor elementen weergeven. A
 
    ![chlimage_1-155](assets/chlimage_1-155.png)
 
-1. Klik op **[!UICONTROL Publish]** de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u **[!UICONTROL More]** op de werkbalk en zoekt u de **[!UICONTROL Publish]** optie.
+1. Klik op **[!UICONTROL Publish]** op de werkbalk. Als u **Publiceren** niet ziet op de werkbalk, klikt u **[!UICONTROL More]** op de werkbalk en zoekt u de **[!UICONTROL Publish]** optie.
 
    ![chlimage_1-156](assets/chlimage_1-156.png)
 
@@ -182,7 +182,7 @@ Een actief wordt als beschermd beschouwd indien aan een van deze voorwaarden is 
 >
 >De locatie `/etc/dam/drm/licenses` die wordt gebruikt voor het opslaan van licenties in eerdere versies van [!DNL Experience Manager] is afgekeurd.
 >
->Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager] releases poort, raadt Adobe u aan deze pagina&#39;s onder `/apps/settings/dam/drm/licenses` of `/conf/&ast;/settings/dam/drm/licenses`op te slaan.
+>Als u licentiepagina&#39;s maakt of wijzigt of deze van vorige [!DNL Experience Manager] releases afgeeft, raadt Adobe u aan deze pagina&#39;s onder `/apps/settings/dam/drm/licenses` of `/conf/&ast;/settings/dam/drm/licenses`op te slaan.
 
 ### DRM-beveiligde bestanden downloaden {#downloading-drm-assets}
 
