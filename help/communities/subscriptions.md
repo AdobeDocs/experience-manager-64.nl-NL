@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
 translation-type: tm+mt
 source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+workflow-type: tm+mt
+source-wordcount: '361'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
 
 Vanaf het Communautair [KP1](deploy-communities.md#latestfeaturepack)kunnen de leden van de gemeenschap met de gemeenschap door e-mail interactie aangaan gebruikend een eigenschap die als abonnementen wordt bedoeld.
 
-Abonnementen zijn vergelijkbaar met [meldingen](notifications.md) omdat leden zich kunnen abonneren wanneer ze blogartikelen, forumonderwerpen of vragen in het kader van het kwaliteitscontrole-overzicht volgen.
+Abonnementen zijn vergelijkbaar met [meldingen](notifications.md) omdat leden zich kunnen abonneren wanneer ze blogartikelen, forumonderwerpen of vragen in het kader van het kwaliteitsbeheer volgen.
 
 Abonnementen worden onderscheiden van meldingen:
 
