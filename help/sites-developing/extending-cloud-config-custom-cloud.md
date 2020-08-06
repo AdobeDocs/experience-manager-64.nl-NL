@@ -1,8 +1,8 @@
 ---
-title: Een aangepaste Cloud-service maken
-seo-title: Een aangepaste Cloud-service maken
-description: De standaardset met Cloud Services kan worden uitgebreid met aangepaste Cloud-servicetypen
-seo-description: De standaardset met Cloud Services kan worden uitgebreid met aangepaste Cloud-servicetypen
+title: Een aangepaste Cloud Service maken
+seo-title: Een aangepaste Cloud Service maken
+description: De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen
+seo-description: De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen
 uuid: b105a0c1-b68c-4f57-8e3b-561c8051a08e
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: e48e87c6-43ca-45ba-bd6b-d74c969757cd
 translation-type: tm+mt
 source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+workflow-type: tm+mt
+source-wordcount: '437'
+ht-degree: 1%
 
 ---
 
 
-# Een aangepaste Cloud-service maken{#creating-a-custom-cloud-service}
+# Een aangepaste Cloud Service maken{#creating-a-custom-cloud-service}
 
-De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Service-typen. Hierdoor kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is vooral handig voor andere analisten, zoals Google Analytics, Chartbone enzovoort. Cloud Services worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
+De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servicen. Hierdoor kunt u aangepaste opmaakcodes op gestructureerde wijze in de pagina injecteren. Dit is in de eerste plaats handig voor andere leveranciers van analysemogelijkheden, zoals Google Analytics, Chartbone, enz. Cloud Services worden overgeërfd van bovenliggende pagina&#39;s naar onderliggende pagina&#39;s, waarbij de overerving op elk niveau kan worden verbroken.
 
 >[!NOTE]
 >
->Deze stapsgewijze handleiding voor het maken van een nieuwe Cloud Service is een voorbeeld met Google Analytics. Alles is mogelijk niet van toepassing op het gebruik.
+>Deze stapsgewijze handleiding voor het maken van een nieuwe Cloud Service is een voorbeeld van het gebruik van Google Analytics. Alles is mogelijk niet van toepassing op het gebruik.
 
 1. Maak in CRXDE Lite een nieuw knooppunt onder `/apps`:
 
@@ -37,13 +40,14 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
 
    * **Naam**: componenten
    * **Type**: `sling:Folder`
+
    and
 
    * **Naam**: sjablonen
    * **Type**: `sling:Folder`
 
 
-1. Klik met de rechtermuisknop op `/apps/acs/analytics/components`. **** Selecteer **Maken... gevolgd door Component** maken... In het dialoogvenster dat wordt geopend, kunt u het volgende opgeven:
+1. Klik met de rechtermuisknop op `/apps/acs/analytics/components`. Selecteer **Maken...** gevolgd door Component **maken...** In het dialoogvenster dat wordt geopend, kunt u het volgende opgeven:
 
    * **Label**: `googleanalyticspage`
    * **Titel**: `Google Analytics Page`
@@ -52,13 +56,14 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
 
 1. Klik tweemaal op **Volgende** en geef op:
 
-   * **** Toegestane bovenliggende elementen: `acs/analytics/templates/googleanalytics`
+   * **Toegestane bovenliggende elementen:** `acs/analytics/templates/googleanalytics`
+
    Klik tweemaal op **Volgende** en klik op **OK**.
 
 1. Een eigenschap toevoegen aan `googleanalyticspage`:
 
-   * **** Naam: `cq:defaultView`
-   * **** Waarde: `html`
+   * **Naam:** `cq:defaultView`
+   * **Waarde:** `html`
 
 1. Maak een nieuw bestand met de naam `content.jsp` onder `/apps/acs/analytics/components/googleanalyticspage`, met de volgende inhoud:
 
@@ -120,7 +125,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
    * **Eigenschappen**:
 
       * **Naam**: `fieldLabel`
-      * **Type**:String
+      * **Type**: String
       * **Waarde**: Account-id
 
       * **Naam**: `fieldDescription`
@@ -195,6 +200,7 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
 
    * **Titel**: `Google Analytics`
    * **Naam**: `googleanalytics`
+
    Ga terug in CRXDE Lite, en onder `/etc/cloudservices/googleanalytics`, voeg het volgende bezit aan toe `jcr:content`:
 
    * **Naam**: `componentReference`
@@ -205,10 +211,11 @@ De standaardset Cloud Services kan worden uitgebreid met aangepaste Cloud Servic
 1. Navigeer aan de pas gecreëerde pagina van de Dienst ( `http://localhost:4502/etc/cloudservices/googleanalytics.html`) en klik **+** om een nieuw config tot stand te brengen:
 
    * **Bovenliggende configuratie**: `/etc/cloudservices/googleanalytics`
-   * **** Titel:  `My First GA Config`
-   Kies **Google Analytics Configuration** en klik op **Create**.
+   * **Titel:**  `My First GA Config`
+
+   Kies Configuratie **** Google Analytics en klik op **Maken**.
 
 1. Voer bijvoorbeeld een **account-id** in `AA-11111111-1`. Click **OK**.
-1. Navigeer naar een pagina en voeg de zojuist gemaakte configuratie toe in de pagina-eigenschappen onder het tabblad **Cloud Services** .
+1. Navigeer naar een pagina en voeg de nieuwe configuratie toe in de pagina-eigenschappen, onder het tabblad **Cloud Services** .
 1. Aan de pagina wordt de aangepaste markering toegevoegd.
 
