@@ -22,15 +22,15 @@ ht-degree: 2%
 
 >[!CAUTION]
 >
->In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM-technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
+>In dit artikel wordt beschreven hoe u een website maakt met JSP en op basis van de klassieke gebruikersinterface. Adobe raadt u aan de nieuwste AEM technologieën voor uw websites te gebruiken, zoals gedetailleerd wordt beschreven in het artikel [Getting Started Developing AEM Sites](/help/sites-developing/getting-started.md).
 
-Met deze zelfstudie kunt u een volledig uitgeruste website met Adobe Experience Manager (AEM) maken. De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkeling vindt plaats in een auteur-omgeving.
+Met deze zelfstudie kunt u een volledig uitgeruste website maken met Adobe Experience Manager (AEM). De website is gebaseerd op een algemene website en is vooral gericht op webontwikkelaars. Alle ontwikkeling vindt plaats in een auteur-omgeving.
 
 In deze zelfstudie wordt beschreven hoe u:
 
-1. Installeer AEM.
-1. Toegang tot CRXDE Lite (de ontwikkelomgeving).
-1. Opstelling de projectstructuur in CRXDE Lite.
+1. AEM installeren.
+1. Access CRXDE Lite (de ontwikkelomgeving).
+1. Stel de projectstructuur in CRXDE Lite in.
 1. Maak de sjabloon, component en scripts die worden gebruikt als basis voor het maken van inhoudspagina&#39;s.
 1. Maak de basispagina voor uw website en stel vervolgens de inhoudspagina&#39;s in.
 1. Maak de volgende componenten voor gebruik op uw pagina&#39;s:
@@ -50,7 +50,7 @@ Nadat u alle stappen hebt uitgevoerd, zien de pagina&#39;s er als volgt uit:
 
 **Het uiteindelijke resultaat downloaden**
 
-Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM-inhoudspakket dat de resultaten van deze zelfstudie bevat. Gebruik [Package Manager](/help/sites-administering/package-manager.md) om het pakket te installeren naar de auteur.
+Download website-1.0.zip om de zelfstudie te volgen en niet de oefeningen uit te voeren. Dit bestand is een AEM inhoudspakket dat de resultaten van deze zelfstudie bevat. Gebruik [Package Manager](/help/sites-administering/package-manager.md) om het pakket te installeren naar de auteur.
 
 >[!NOTE]
 >Als u dit pakket installeert, worden alle bronnen op de ontwerpinstantie die u met deze zelfstudie hebt gemaakt, overschreven.
@@ -61,21 +61,21 @@ Inhoud van website
 
 ## Adobe Experience Manager installeren {#installing-adobe-experience-manager}
 
-Als u een AEM-instantie voor het ontwikkelen van uw website wilt installeren, volgt u de instructies voor het instellen van een [implementatieomgeving met auteur- en publicatieinstanties](/help/sites-deploying/deploy.md#author-and-publish-installs)of voert u een [algemene installatie](/help/sites-deploying/deploy.md#default-local-install)uit. De algemene installatie omvat het downloaden van het JAR-bestand met AEM Quickstart, het plaatsen van het bestand license.properties in dezelfde map als het JAR-bestand en het dubbelklikken op het JAR-bestand.
+Als u een AEM voor het ontwikkelen van uw website wilt installeren, volgt u de instructies voor het instellen van een [implementatieomgeving met auteur- en publicatieinstanties](/help/sites-deploying/deploy.md#author-and-publish-installs)of voert u een [algemene installatie](/help/sites-deploying/deploy.md#default-local-install)uit. De algemene installatie omvat het downloaden van het AEM QuickStart JAR-bestand, het plaatsen van het bestand license.properties in dezelfde map als het JAR-bestand en het dubbelklikken op het JAR-bestand.
 
-Nadat u AEM hebt geïnstalleerd, toegang tot de ontwikkelomgeving van CRXDE Lite door de verbinding CRXDE Lite op de Welkome pagina te klikken:
+Nadat u AEM hebt geïnstalleerd, toegang tot de ontwikkelomgeving van de CRXDE Lite door de verbinding van de CRXDE Lite op de Welkome pagina te klikken:
 
 ![chlimage_1-100](assets/chlimage_1-100.png)
 
 >[!NOTE]
 >
->De URL van CRXDE Lite voor een AEM auteursinstantie die plaatselijk gebruikend de standaardhaven geïnstalleerd is is [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/).
+>De URL van CRXDE Lite voor een AEM ontwerpinstantie die lokaal met de standaardpoort is geïnstalleerd, is [http://localhost:4502/crx/de/](http://localhost:4502/crx/de/).
 
 ## De projectstructuur instellen in CRXDE Lite {#setting-up-the-project-structure-in-crxde-lite}
 
-Gebruik CRXDE Lite om de mywebsite toepassingsstructuur in de bewaarplaats tot stand te brengen:
+Gebruik CRXDE Lite om de structuur van de mywebsite-toepassing in de opslagplaats te maken:
 
-1. Klik in de structuur links van CRXDE Lite met de rechtermuisknop op de **`/apps`** map en klik **[!UICONTROL Create > Create Folder]**. Typ in het dialoogvenster Map **** maken `mywebsite` de mapnaam en klik op **[!UICONTROL OK**.
+1. Klik in de structuur links van CRXDE Lite met de rechtermuisknop op de **`/apps`** map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het dialoogvenster Map **** maken `mywebsite` de mapnaam en klik op **[!UICONTROL OK**.
 1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het **[!UICONTROL Create Folder]** dialoogvenster `components` de mapnaam en klik op **[!UICONTROL OK]**.
 1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het **[!UICONTROL Create Folder]** dialoogvenster `templates` de mapnaam en klik op **[!UICONTROL OK]**.
 
@@ -97,7 +97,7 @@ Voorbeeld van bestand static.css en afbeeldingen
 
 [Bestand ophalen](assets/mywebsite.zip)
 
-1. Klik op de welkomstpagina van AEM **[!UICONTROL Tools]**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
+1. Klik op de welkomstpagina AEM **[!UICONTROL Tools]**. ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html))
 
    ![chlimage_1-102](assets/chlimage_1-102.png)
 
@@ -123,7 +123,7 @@ Maak een sjabloon die u als basis voor de webpagina&#39;s van uw site wilt gebru
 
 Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websites kunnen verschillende sjablonen gebruiken om de verschillende typen pagina&#39;s op de site te maken. In deze exercitie, zijn alle pagina&#39;s gebaseerd op één eenvoudig malplaatje.
 
-1. Klik in de mappenstructuur van CRXDE Lite met de rechtermuisknop `/apps/mywebsite/templates` en klik **[!UICONTROL Create > Create Template]**.
+1. Klik in de mappenstructuur van CRXDE Lite met de rechtermuisknop `/apps/mywebsite/templates` en klik op **[!UICONTROL Create > Create Template]**.
 
 1. Typ de volgende waarden in het dialoogvenster Sjabloon maken en klik op **[!UICONTROL Next]**:
 
@@ -154,7 +154,7 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 Maak de *component* die de inhoud definieert en geef de pagina&#39;s weer die de sjabloon voor de inhoudspagina gebruiken. De plaats van de component moet met de waarde van het bezit van het Type van Middel van het contentpage malplaatje beantwoorden.
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components` en klik **[!UICONTROL Create > Component]**.
+1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components` en klik op **[!UICONTROL Create > Component]**.
 1. Typ de volgende eigenschapswaarden in het **[!UICONTROL Create Component]** dialoogvenster:
 
    * **[!UICONTROL Label]**: contentpagina
@@ -218,7 +218,7 @@ Voeg code toe aan het script contentPage.jsp om de pagina-inhoud te definiëren.
 
 In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de inhoudspagina gebruiken: Mijn Website, Engels, Producten, de Diensten, en Klanten.
 
-1. Klik op Websites op de welkomstpagina van AEM ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)).
+1. Klik op Websites op de AEM Welkomstpagina ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)).
 
    ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -260,7 +260,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
    ![chlimage_1-111](assets/chlimage_1-111.png)
 
-1. Als u uw pagina&#39;s wilt koppelen aan het mywebsite-ontwerp, selecteert u in CRXDE Lite het `/content/mywebsite/en/jcr:content` knooppunt. Typ op het **[!UICONTROL Properties]** tabblad de volgende waarden voor een nieuwe eigenschap en klik op Toevoegen:
+1. Als u uw pagina&#39;s wilt koppelen aan het ontwerp van mijn website, selecteert u het `/content/mywebsite/en/jcr:content` knooppunt in CRXDE Lite. Typ op het **[!UICONTROL Properties]** tabblad de volgende waarden voor een nieuwe eigenschap en klik op Toevoegen:
 
    * **[!UICONTROL Name]**: cq:designPath
    * **[!UICONTROL Type]**: Tekenreeks
@@ -274,7 +274,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
 ### Het script voor de inhoudspagina verbeteren {#enhancing-the-contentpage-script}
 
-In deze sectie wordt beschreven hoe u het script voor de inhoudspagina kunt verfraaien met behulp van de scripts van de AEM-stichtingscomponent en door uw eigen scripts te schrijven.
+In deze sectie wordt beschreven hoe u het script voor de inhoudspagina kunt verbeteren met behulp van de scripts van de AEM basis en door uw eigen scripts te schrijven.
 
 De **[!UICONTROL Products]** pagina ziet er als volgt uit:
 
@@ -282,11 +282,11 @@ De **[!UICONTROL Products]** pagina ziet er als volgt uit:
 
 #### Het gebruiken van de Manuscripten van de Pagina van de Stichting {#using-the-foundation-page-scripts}
 
-In deze oefening, vormt u uw component van de pagina-inhoud zodat zijn supertype de component van de Pagina AEM is. Omdat componenten de eigenschappen van hun supertype erven, erft uw pagina-inhoud de scripts en eigenschappen van de component Pagina.
+In deze oefening, vormt u uw paginaContent component zodat zijn supertype de AEM component van de Pagina is. Omdat componenten de eigenschappen van hun supertype erven, erft uw pagina-inhoud de scripts en eigenschappen van de component Pagina.
 
 In uw JSP-code van de component kunt u bijvoorbeeld naar de scripts verwijzen die de supertype-component biedt, alsof deze in de component zijn opgenomen.
 
-1. In CRXDE Lite, voeg een bezit aan de `/apps/mywebsite/components/contentpage` knoop toe.
+1. Voeg in CRXDE Lite een eigenschap toe aan het `/apps/mywebsite/components/contentpage` knooppunt.
 
    1. Select the `/apps/mywebsite/components/contentpage` node.
    1. Typ onder aan het tabblad Eigenschappen de volgende eigenschapswaarden en klik op Toevoegen:
@@ -329,7 +329,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
 
 **Tip:** Wanneer een component een bestand bevat dat dezelfde naam en relatieve locatie heeft als een bestand in het supertype van de component, wordt dit *bedekken* genoemd.
 
-1. In CRXDE Lite, creeer het dossier `left.jsp` onder `/apps/mywebsite/components/contentpage`:
+1. Maak het bestand in CRXDE Lite `left.jsp` onder `/apps/mywebsite/components/contentpage`:
 
    1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`en selecteer **[!UICONTROL Create]** vervolgens **[!UICONTROL Create File]**.
    1. Typ in het venster `left.jsp` de naam*** en klik op **[!UICONTROL OK]**.
@@ -346,7 +346,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
    ```
 
 1. Sla de wijzigingen op.
-1. In CRXDE Lite, creeer het dossier `center.jsp` onder `/apps/mywebsite/components/contentpage`:
+1. Maak het bestand in CRXDE Lite `center.jsp` onder `/apps/mywebsite/components/contentpage`:
 
    1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create File]** klik vervolgens op het knooppunt.
    1. Typ `center.jsp` als **[!UICONTROL Name]** en klik in het dialoogvenster **[!UICONTROL OK]**.
@@ -363,7 +363,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
    ```
 
 1. Sla de wijzigingen op.
-1. In CRXDE Lite, creeer het dossier `right.jsp` onder `/apps/mywebsite/components/contentpage`:
+1. Maak het bestand in CRXDE Lite `right.jsp` onder `/apps/mywebsite/components/contentpage`:
 
    1. Klik met de rechtermuisknop op het knooppunt `/apps/mywebsite/components/contentpage`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create File]** klik vervolgens op het knooppunt.
    1. Typ `right.jsp` als **[!UICONTROL Name]** en klik in het dialoogvenster **[!UICONTROL OK]**.
@@ -378,7 +378,7 @@ In deze sectie maakt u verschillende scripts die elk een deel van de hoofdtekst 
    ```
 
 1. Sla de wijzigingen op.
-1. In CRXDE Lite, creeer het dossier `body.jsp` onder `/apps/mywebsite/components/contentpage`:
+1. Maak het bestand in CRXDE Lite `body.jsp` onder `/apps/mywebsite/components/contentpage`:
 1. Bewerk het bestand `body.jsp` om de bestaande inhoud te verwijderen en vervang het door de volgende code:
 
    ```java
@@ -415,7 +415,7 @@ Uw topnavigatie ziet er als volgt uit:
 
 #### De bovenste navigatiecomponent maken {#creating-the-top-navigation-component-1}
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]**.
+1. Klik met de rechtermuisknop in CRXDE Lite `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]** klik vervolgens.
 1. Voer in het **[!UICONTROL Create Component]** venster het volgende in:
 
    * **[!UICONTROL Label]**: `topnav`
@@ -428,7 +428,7 @@ Uw topnavigatie ziet er als volgt uit:
 
 Voeg het renderscript toe aan bovenliggend item om tekstkoppelingen naar onderliggende pagina&#39;s te genereren:
 
-1. Open in CRXDE Lite het bestand `topnav.jsp` onder `/apps/mywebsite/components/topnav`.
+1. Open het bestand `topnav.jsp` onder in CRXDE Lite `/apps/mywebsite/components/topnav`.
 1. Vervang de desbetreffende code door de volgende code te kopiëren en te plakken:
 
    ```xml
@@ -455,7 +455,7 @@ Voeg het renderscript toe aan bovenliggend item om tekstkoppelingen naar onderli
 
 Het onderwerp opnemen in de component ContentPage:
 
-1. In CRXDE Lite, open onder `body.jsp` `/apps/mywebsite/components/contentpage`en vervang:
+1. Open in CRXDE Lite de `body.jsp` onderzijde `/apps/mywebsite/components/contentpage`en vervang:
 
    ```xml
    <div class="topnav">topnav</div>
@@ -500,7 +500,7 @@ De bron voor de afbeeldingskoppeling naar de pagina Producten kan bijvoorbeeld h
 
 In deze oefening, past het Sling deze URLs aan het manuscript /apps/mywebsite/components/contentpage/navimage.png.java aan dat u creeert.
 
-1. Open in CRXDE Lite de `topnav.jsp` onder Inhoud van het ankerelement `/apps/mywebsite/components/topnav.`lokaliseren (lijn 14):
+1. Open in CRXDE Lite de laag `topnav.jsp` onder Inhoud van ankerelement `/apps/mywebsite/components/topnav.`zoeken (regel 14):
 
    ```xml
    <%=child.getTitle() %>
@@ -667,7 +667,7 @@ Maak twee pagina&#39;s onder de **[!UICONTROL Products]** pagina. Voor elke pagi
    * **[!UICONTROL Name]**: product2
    * Selecteer **[!UICONTROL My Website Content Page Template]**
 
-1. In CRXDE Lite, plaats een beschrijving en een datum voor Product 1 pagina:
+1. Stel in CRXDE Lite een beschrijving en een datum in voor de pagina Product 1:
 
    1. Select the `/content/mywebsite/en/products/product1/jcr:content` node.
    1. Voer op het **[!UICONTROL Properties]** tabblad de volgende waarden in:
@@ -686,7 +686,7 @@ Maak twee pagina&#39;s onder de **[!UICONTROL Products]** pagina. Voor elke pagi
 
 
 
-1. In CRXDE Lite, plaats een beschrijving en een datum voor Product 2 pagina:
+1. Stel in CRXDE Lite een beschrijving en een datum in voor de pagina Product 2:
 
    1. Select the `/content/mywebsite/en/products/product2/jcr:content` node.
    1. Voer op het **[!UICONTROL Properties]** tabblad de volgende waarden in:
@@ -709,7 +709,7 @@ Maak twee pagina&#39;s onder de **[!UICONTROL Products]** pagina. Voor elke pagi
 
 De component listchildren maken:
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]**.
+1. Klik met de rechtermuisknop in CRXDE Lite `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]** klik vervolgens.
 1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op **[!UICONTROL Next]**:
 
    * **[!UICONTROL Label]**: listchildren.
@@ -722,7 +722,7 @@ De component listchildren maken:
 
 Ontwikkel het manuscript voor de component listchildren.
 
-1. Open in CRXDE Lite het bestand `listchildren.jsp` onder `/apps/mywebsite/components/listchildren`.
+1. Open het bestand `listchildren.jsp` onder in CRXDE Lite `/apps/mywebsite/components/listchildren`.
 1. Vervang de standaardcode door de volgende code:
 
    ```xml
@@ -757,7 +757,7 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
 
 1. Maak het dialoogknooppunt onder de component listchildren:
 
-   1. Klik in CRXDE Lite met de rechtermuisknop op het `/apps/mywebsite/components/listchildren`knooppunt en klik **[!UICONTROL Create > Create Dialog]**.
+   1. Klik in CRXDE Lite met de rechtermuisknop op het `/apps/mywebsite/components/listchildren`knooppunt en klik op **[!UICONTROL Create > Create Dialog]**.
    1. Voer in het dialoogvenster de volgende eigenschapswaarden in en klik op OK
 
       * **[!UICONTROL Label]**: `dialog`
@@ -802,7 +802,7 @@ Creeer de dialoog die wordt gebruikt om de eigenschappen van de component listch
 
 Ga als volgt te werk om de component listchildren in uw component contentPage op te nemen:
 
-1. Open in CRXDE Lite het bestand `left.jsp` onder `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 4):
+1. Open het bestand in CRXDE Lite `left.jsp` onder `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 4):
 
    ```xml
    <div>newslist</div>
@@ -867,7 +867,7 @@ Voer de volgende stappen uit om het logo-onderdeel te maken:
 
 In deze sectie wordt beschreven hoe u het script maakt om de logoafbeelding weer te geven met een koppeling naar de startpagina.
 
-1. Open in CRXDE Lite het bestand `logo.jsp` onder `/apps/mywebsite/components/logo`.
+1. Open het bestand `logo.jsp` onder in CRXDE Lite `/apps/mywebsite/components/logo`.
 1. De volgende code maakt de koppeling naar de homepage van de site en voegt een verwijzing naar de logoafbeelding toe. Kopieer de code naar `logo.jsp`:
 
    ```xml
@@ -1002,7 +1002,7 @@ public class img_GET extends AbstractImageServlet {
 
 #### De component Logo toevoegen aan de component ContentPage {#adding-the-logo-component-to-the-contentpage-component}
 
-1. Open in CRXDE Lite de `left.jsp` onderstaande coderegel `/apps/mywebsite/components/contentpage file` en zoek de volgende coderegel:
+1. Open in CRXDE Lite de `left.jsp` onderzijde `/apps/mywebsite/components/contentpage file` en zoek de volgende coderegel:
 
    ```xml
    <div>logo</div>
@@ -1105,7 +1105,7 @@ Voeg de component parsys (één van de stichtingscomponenten) aan uw component v
 
 1. Vernieuw de **[!UICONTROL Products]** pagina in uw browser. Het heeft nu de parsys component, die als volgt wordt gezien:
 
-   ![chlimage_1-127](assets/chlimage_1-127.png)
+   ![chlimage_1-129](assets/chlimage_1-127.png)
 
 ### De afbeeldingscomponent maken {#creating-the-image-component}
 
@@ -1113,7 +1113,7 @@ Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te
 
 >[!NOTE]
 >
->Adobe Experience Manager biedt een imageonderdeel met meer functies ( `/libs/foundation/components/image`).
+>Adobe Experience Manager biedt een meer volledige afbeeldingscomponent ( `/libs/foundation/components/image`).
 
 #### De afbeeldingscomponent maken {#creating-the-image-component-1}
 
@@ -1136,7 +1136,7 @@ Maak een component die een afbeelding in het alineasysteem weergeeft. Om tijd te
 
 1. Naam wijzigen `logo.jsp` in `image.jsp.`
 
-1. Open img.GET.java en wijzig het pakket in `apps.mywebsite.components.image`.
+1. Open img.GET.java en verander het pakket in `apps.mywebsite.components.image`.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
@@ -1195,7 +1195,7 @@ In deze sectie gebruikt u een knooppunt cq:editConfig om u in staat te stellen e
 | groepen | Tekenreeks | media |
 | propertyName | Tekenreeks | ./imageReference |
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+![chlimage_1-127](assets/chlimage_1-129.png)
 
 #### Het pictogram toevoegen {#adding-the-icon}
 
@@ -1235,7 +1235,7 @@ U hebt verschillende opties, zowel in de bewerkingsmodus als in de ontwerpmodus.
    <cq:include path="toolbar" resourceType="foundation/components/toolbar"/>
    ```
 
-1. Selecteer in de mappenstructuur van de pagina AEM-websites de optie `Websites/My Website/English`en klik op **[!UICONTROL New > New Page]**. Geef de volgende eigenschapswaarden op en klik op Maken:
+1. Selecteer in de mappenstructuur van de pagina AEM websites de optie `Websites/My Website/English`en klik op **[!UICONTROL New > New Page]**. Geef de volgende eigenschapswaarden op en klik op Maken:
 
    * **[!UICONTROL Title]**: Werkbalk
    * Selecteer **[!UICONTROL My Website Content Page Template]**
@@ -1265,7 +1265,7 @@ Het invoervak voor de zoekopdracht ziet er als volgt uit op de **[!UICONTROL Eng
 
 #### De zoekcomponent maken {#creating-the-search-component-1}
 
-1. Klik in CRXDE Lite met de rechtermuisknop `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]**.
+1. Klik met de rechtermuisknop in CRXDE Lite `/apps/mywebsite/components`, selecteer **[!UICONTROL Create]** en **[!UICONTROL Create Component]** klik vervolgens.
 1. Gebruik het dialoogvenster om de component te configureren:
 
    1. Geef in één eerste deelvenster de volgende eigenschapswaarden op:
@@ -1450,7 +1450,7 @@ In deze sectie wordt beschreven hoe u het zoekscript maakt:
 
 Ga als volgt te werk om een invoervak voor zoekopdrachten op te nemen in de linkersectie van uw inhoudspagina:
 
-1. Open in CRXDE Lite het bestand `left.jsp` onder `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 2):
+1. Open het bestand in CRXDE Lite `left.jsp` onder `/apps/mywebsite/components/contentpage` en zoek de volgende code (regel 2):
 
    ```xml
    %><div class="left">
@@ -1510,7 +1510,7 @@ In deze sectie, omvat u de component van het Systeem van de Paragraaf van de Ove
 
 Voor deze component kunt u verschillende parameters instellen in zowel de bewerkingsmodus als de ontwerpmodus.
 
-1. In CRXDE Lite, navigeer aan, open het dossier `/apps/mywebsite/components/contentpage``right.jsp` en vervang:
+1. Navigeer in CRXDE Lite naar `/apps/mywebsite/components/contentpage`, open het bestand `right.jsp` en vervang:
 
    ```java
    <div>iparsys</div>
