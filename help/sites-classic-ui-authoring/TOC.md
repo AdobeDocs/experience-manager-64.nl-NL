@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4 Klassieke UI Authoring User Guide
+user-guide-title: AEM 6.4 Handleiding voor het schrijven van klassieke gebruikersinterface
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -13,7 +13,7 @@ ht-degree: 18%
 ---
 
 
-# AEM 6.4 Klassieke UI Authoring User Guide {#classic-ui}
+# AEM 6.4 Handleiding voor het schrijven van klassieke gebruikersinterface {#classic-ui}
 
 + [Overzicht van de klassieke UI-ontwerpgids](home.md)
 + Inleiding tot Klassieke UI Authoring {#introduction}
@@ -35,7 +35,7 @@ ht-degree: 18%
    + [Pagina&#39;s publiceren](classic-page-author-publish-pages.md)
    + [Pagina-eigenschappen bewerken](classic-page-author-edit-page-properties.md)
    + [Annotaties bij het bewerken van een pagina](classic-page-author-annotations.md)
-   + [AEM-probleem bij ontwerpen oplossen](classic-page-author-troubleshooting.md)
+   + [Problemen met AEM bij ontwerpen oplossen](classic-page-author-troubleshooting.md)
    + [Toegankelijke content maken (WCAG 2.0-compatibiliteit)](classic-page-author-accessible-content.md)
    + [Een pagina ontwerpen voor mobiele apparaten](classic-feature-mobile.md)
    + [Componenten voor paginaontwerp](classic-page-author-edit-mode.md)
@@ -63,7 +63,7 @@ ht-degree: 18%
    + [Campagnebeheer](classic-personalization-campaigns.md)
    + [Teasers en strategieën](classic-personalization-campaigns-teasers-strategy.md)
    + [Openingspagina&#39;s](classic-personalization-campaigns-landingpage.md)
-   + [Target-aanbiedingen](classic-personalization-campaigns-target-offers.md)
+   + [Doelaanbiedingen](classic-personalization-campaigns-target-offers.md)
    + [Werken met de manager van de Campagne van de Marketing](classic-personalization-campaigns-mktg-manager.md)
    + [E-mailmarketing](classic-personalization-campaigns-email.md)
    + [Onbetaalde e-mails bijhouden](classic-personalization-campaigns-email-tracking-bounces.md)
@@ -83,10 +83,10 @@ ht-degree: 18%
    + [Werken met IBL-fasen](classicui-stages-aem3d-ibl.md)
    + [3D-elementen renderen](classicui-rendering-3d.md)
    + [3D-elementen weergeven](classicui-view-3d-assets.md)
-   + [Dynamic Media-elementen leveren](dynamic-media-assets-delivering.md)
+   + [Dynamische media-elementen leveren](dynamic-media-assets-delivering.md)
    + [Een standaardpodium instellen met Autodesk Maya en Mental Ray](classicui-stages-aem3d-ad-mr.md)
-   + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
-   + [Het toevoegen van Eigenschappen Scene7 aan uw Pagina](manage-assets-classic-s7.md)
+   + [Dynamische media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
+   + [Scene7-functies aan uw pagina toevoegen](manage-assets-classic-s7.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)
    + [Werken met 3D-elementen](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
