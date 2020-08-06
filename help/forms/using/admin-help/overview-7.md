@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e87c7379-28ed-4fda-aef1-970d2b54f30d
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '219'
+ht-degree: 0%
 
 ---
 
@@ -23,8 +26,8 @@ Met de Forms-service kunt u interactieve toepassingen voor het vastleggen van ge
 * als HTML in verschillende browseromgevingen, inclusief een compatibele XHTML 1.0-rendering
 * als formulierhulplijnen in verschillende browseromgevingen die ondersteuning bieden voor Adobe Flash Player.
 
-Voor extra informatie over de dienst van Vormen, zie de Verwijzing [van de](https://www.adobe.com/go/learn_aemforms_services_63)Diensten.
+Zie [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Forms-service.
 
-Met de pagina Formulieren in de beheerconsole kunt u het gedrag van de service Formulieren configureren. Deze instellingen zijn van toepassing op alle aanroepen van de service. Alle parameters die via de SDK van AEM-formulieren worden verzonden, overschrijven de instellingen die in de beheerconsole zijn ingesteld. zij hebben echter alleen invloed op die specifieke aanroeping .
+Met de Forms-pagina in de beheerconsole kunt u het gedrag van de Forms-service configureren. Deze instellingen zijn van toepassing op alle aanroepen van de service. Alle parameters die via de SDK voor AEM formulieren worden verzonden, overschrijven de instellingen die in de beheerconsole zijn ingesteld. zij hebben echter alleen invloed op die specifieke aanroeping .
 
-Nadat u de instellingen voor Formulieren in de beheerconsole hebt gewijzigd, klikt u op Opslaan. De wijzigingen worden van kracht als u de server niet opnieuw hoeft te starten. Het is echter mogelijk dat u de service Forms moet stoppen en opnieuw starten wanneer u de instellingen voor de cachemodus configureert. (Zie [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
+Nadat u de Forms-instellingen in de beheerconsole hebt gewijzigd, klikt u op Opslaan. De wijzigingen worden van kracht als u de server niet opnieuw hoeft te starten. Het kan echter zijn dat u de Forms-service moet stoppen en opnieuw opstarten wanneer u de instellingen voor de cachemodus configureert. (Zie [Starten en stoppen van services](/help/forms/using/admin-help/starting-stopping-services.md#starting-and-stopping-services).)
