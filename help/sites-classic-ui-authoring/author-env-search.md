@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: b20e0f78-9ae4-47ba-8e9a-452a0a78b663
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '488'
+ht-degree: 0%
 
 ---
 
@@ -42,11 +45,13 @@ Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het beva
 >
 >* [Jokertekens](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Booleaanse operatoren](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
+
    >
    >
 * [Reguliere expressies](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Regexp_Searches)
 >* [Veldgroepering](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Field_Grouping)
 >* [Verhogen](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boosting_a_Term)
+
 >
 
 
@@ -75,6 +80,7 @@ In de **Websites** console staat een het menuoptie van de **Vondst &amp; van de 
    * bepaalt de termijn die het moet vervangen
    * Hiermee wordt aangegeven of de zoekopdracht hoofdlettergevoelig moet zijn
    * Hiermee wordt aangegeven of alleen hele woorden moeten worden gevonden (anders worden ook subtekenreeksen gevonden)
+
    Als u op **Voorvertoning** klikt, wordt de term weergegeven. U kunt specifieke te vervangen exemplaren selecteren/wissen:
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
@@ -92,7 +98,7 @@ Het bereik kan worden gewijzigd met de Apache Felix Web Management Console (bijv
 
 >[!NOTE]
 >
->In een standaardAEM installatie zoeken en vervangen gebruikt Lucene voor de onderzoeksfunctionaliteit.
+>In een standaardinstallatie AEM vindt en vervangt het gebruik van Lucene voor de zoekfunctionaliteit.
 >
 >Lucene indexeert tekenreekseigenschappen met een lengte van maximaal 16 k. Tekenreeksen die dit overschrijden, worden niet doorzocht.
 
