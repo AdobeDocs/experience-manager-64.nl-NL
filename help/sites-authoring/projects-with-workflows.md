@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 9d2bf30c-5190-4924-82cd-bcdfde24eb39
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '739'
+ht-degree: 7%
 
 ---
 
@@ -42,7 +45,7 @@ Afhankelijk van het projectsjabloon dat u selecteert, zijn bepaalde workflows be
 
 >[!NOTE]
 >
-> &amp;ast; Deze werkschema&#39;s zijn niet begonnen van de tegel van het **Werkschema** in Projecten. Zie [Taalkopieën voor elementen maken.](/help/sites-administering/tc-manage.md)
+>&amp;ast; Deze werkschema&#39;s zijn niet begonnen van de tegel van het **Werkschema** in Projecten. Zie [Taalkopieën voor elementen maken.](/help/sites-administering/tc-manage.md)
 
 De stappen voor het starten en voltooien van workflows zijn hetzelfde, ongeacht de workflow die u kiest. Alleen de stappen worden gewijzigd.
 
@@ -60,10 +63,10 @@ Deze sectie beschrijft de werkschema&#39;s beschikbaar voor Projecten.
 
 Met deze workflow kunt u een gebruiker om een manuscript vragen en het vervolgens goedkeuren. De workflow voor het kopiëren van aanvragen starten:
 
-1. Selecteer in uw Media-project het **+** -teken in de tegel **Workflows** en selecteer **Request Copy Workflow**.
+1. Selecteer in uw Media-project het **+**-teken in de tegel **Workflows** en selecteer **Workflow voor kopiëren aanvragen**.
 1. Voer een eigenschapstitel in en een korte samenvatting van wat u vraagt. Voer, indien van toepassing, een doelwoordtelling, taakprioriteit en een vervaldatum in.
 
-   ![chlimage_1-325](assets/chlimage_1-321.png)
+   ![chlimage_1-321](assets/chlimage_1-321.png)
 
 1. Klik op **Maken**. De workflow wordt gestart. De taak wordt weergegeven in de tegel **Taken** .
 
@@ -77,7 +80,7 @@ De workflows van de Foto van het Product Foto Shoot (zowel handel als zonder han
 
 In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een gebruiker toe, herziet, en keurt dan de inhoud goed.
 
-1. Selecteer in uw Eenvoudig project het ****+** -teken in de tegel **Workflows** en selecteer **Projectgoedkeuringswerkstroom**.
+1. In your Simple project, select the ****+** sign in the **Workflows** tile and select **Project Approval Workflow**.
 1. Ga een titel in en selecteer aan wie om het van de lijst van het Team toe te wijzen. Voer, indien van toepassing, een beschrijving, een inhoudspad, een taakprioriteit en een vervaldatum in.
 
    ![chlimage_1-323](assets/chlimage_1-323.png)
@@ -90,18 +93,18 @@ In het werkschema van de Goedkeuring van het Project, wijst u inhoud aan een geb
 
 Met deze workflow kunt u een verzoek indienen om de toepassing te starten.
 
-1. Selecteer in uw Eenvoudig project het **+** -teken in de tegel **Workflows** en selecteer **Request Launch Workflow**.
+1. Selecteer in uw Simple-project het **+**-teken in de tegel **Workflows** en selecteer **Workflow voor lancering aanvragen**.
 1. Voer een titel in voor de opstart en geef het bronpad voor de opstart op. U kunt ook een beschrijving en live datum toevoegen, indien van toepassing. Selecteer Live-gegevens van bronpagina overnemen of subpagina&#39;s uitsluiten, afhankelijk van de manier waarop u de opstart wilt laten uitvoeren.
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
-1. Klik op **Maken**. De workflow wordt gestart. **De workflow wordt weergegeven in de lijst** Workflows **(klik op Ovaal**.. op de **werkstroomtegel** voor toegang tot deze lijst).
+1. Klik op **Maken**. De workflow wordt gestart. De workflow wordt weergegeven in de lijst **Workflows** (klik op Ovaal **..** op de **werkstroomtegel** voor toegang tot deze lijst).
 
 ## Workflow voor aanvragen van bestemmingspagina {#request-landing-page-workflow}
 
 Met deze workflow kunt u een bestemmingspagina aanvragen.
 
-1. Selecteer in uw Eenvoudig project het **+** -teken in de tegel **Workflows** en selecteer Request Landing Page Workflow.
+1. In your Simple project, select the **+** sign in the **Workflows** tile and select Request Landing Page Workflow.
 1. Voer een titel in voor de openingspagina en het bovenliggende pad. Voer, indien van toepassing, een live datum in of kies een bestand voor de bestemmingspagina.
 
    ![chlimage_1-326](assets/chlimage_1-326.png)
@@ -112,7 +115,7 @@ Met deze workflow kunt u een bestemmingspagina aanvragen.
 
 Met deze workflow kunt u een e-mail aanvragen. Het is dezelfde workflow die wordt weergegeven in de tegel **E-mail** .
 
-1. Selecteer in uw Media- of Eenvoudig project het **+** -teken in de tegel **Workflows** en selecteer **Request-e-mailworkflow**.
+1. In your Media or Simple project, select the **+** sign in the **Workflows** tile and select **Request Email Workflow**.
 1. Voer een e-mailtitel in, evenals de campagne- en sjabloonpaden. Daarnaast kunt u een naam, beschrijving en actieve datum opgeven.
 
    ![chlimage_1-327](assets/chlimage_1-327.png)
@@ -123,4 +126,4 @@ Met deze workflow kunt u een e-mail aanvragen. Het is dezelfde workflow die word
 
 ## Workflow voor taalkopieën maken (en vertalen) voor middelen {#create-and-translate-language-copy-workflow-for-assets}
 
-De workflows **Taalkopie** maken en **Taalkopie** maken en vertalen worden uitgebreid besproken in het [maken van taalkopieën voor middelen.](/help/assets/translation-projects.md)
+The **Create Language Copy** and the **Create and Translate Language Copy** workflows are covered in detail in [Creating Language Copies for Assets.](/help/assets/translation-projects.md)
