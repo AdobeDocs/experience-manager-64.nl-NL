@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '907'
+ht-degree: 0%
 
 ---
 
 
 # Componenten configureren in ontwerpmodus{#configuring-components-in-design-mode}
 
-Wanneer een AEM-instantie buiten de box is geïnstalleerd, is er direct een selectie van componenten beschikbaar in de browser van de component.
+Wanneer AEM instantie buiten de doos wordt geïnstalleerd, is een selectie van componenten onmiddellijk beschikbaar in Componentbrowser.
 
 Daarnaast zijn er verschillende andere componenten beschikbaar. U kunt de ontwerpmodus gebruiken om dergelijke componenten [in of uit te](#enable-disable-components)schakelen. Wanneer toegelaten en gevestigd op uw pagina kunt u de wijze van het Ontwerp dan gebruiken om aspecten van het componentenontwerp [te](#configuring-the-design-of-a-component) vormen door de attributenparameters uit te geven.
 
@@ -86,6 +89,7 @@ Een component in- of uitschakelen:
 
    * Toegestane componenten
    * Instellingen
+
    **Toegestane componenten**
 
    Op het **Toegestane lusje van Componenten** , bepaalt u welke componenten voor parsys beschikbaar zijn.
@@ -95,11 +99,12 @@ Een component in- of uitschakelen:
    * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
+
    U definieert de configuratie per paginacomponent. Als onderliggende pagina&#39;s dezelfde sjabloon en/of paginacomponent gebruiken (gewoonlijk uitgelijnd), wordt dezelfde configuratie toegepast op het corresponderende alineasysteem.
 
    >[!NOTE]
    >
-   >Adaptieve formuliercomponenten zijn ontworpen voor gebruik in de container van adaptieve formulieren met behulp van het ecosysteem Forms. Daarom moeten deze componenten alleen worden gebruikt in een adaptieve formuliereditor en werken ze niet in de pagina-editor Sites.
+   >Adaptieve formuliercomponenten zijn ontworpen om te werken in de container van adaptieve formulieren met behulp van het Forms-ecosysteem. Daarom moeten deze componenten alleen worden gebruikt in een adaptieve formuliereditor en werken ze niet in de pagina-editor Sites.
 
    **Instellingen**
 
@@ -130,6 +135,7 @@ Een component in- of uitschakelen:
    * Hoofd
    * Functies
    * Stijlen
+
    **Eigenschappen**
 
    Op het tabblad **Eigenschappen** kunt u de belangrijke ontwerpparameters van de component configureren. Voor een afbeeldingscomponent kunt u bijvoorbeeld de maximale en minimale grootte van de toegestane afbeelding definiëren.
