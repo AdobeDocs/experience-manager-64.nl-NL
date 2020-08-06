@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 014b5fdd-6522-4394-87bb-fe264492ba34
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '116'
+ht-degree: 1%
 
 ---
 
@@ -21,7 +24,7 @@ Een ***Content Manager*** voor AEM Screens is een creatieve professional die nau
 
 Inhoudsbeheer voor schermontwerplocaties en -planningen, behoud van kanaalintegriteit, voer analyses en rapportage uit en onderhoud videoprofielen.
 
-Een AEM-manager voor rasterinhoud is verantwoordelijk voor de volgende taken:
+Een AEM Screens-inhoudsbeheerder is verantwoordelijk voor de volgende taken:
 
 * Ontwerplocaties
 * Ontwerpplanningen
