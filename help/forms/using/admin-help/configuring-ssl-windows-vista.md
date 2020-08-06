@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 667645a0-53d0-4f9b-a0ba-cc7e366a23a1
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '172'
+ht-degree: 0%
 
 ---
 
@@ -29,7 +32,7 @@ U kunt keytool uitvoeren met één opdracht die alle informatie bevat die nodig 
 
 1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om het certificaat en keystore tot stand te brengen:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *`,L=`*Plaats***** Naam* `, S=`*Provincie *`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`** Landcode&quot;LC Cert&quot;**_*passwordkeystorename `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *`,L=`*Plaats***** Naam* `, S=`*Provincie *`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`*Landcode&quot;LC Cert&quot;*_*passwordkeystorename* `.keystore`
 
    >[!NOTE]
    >
