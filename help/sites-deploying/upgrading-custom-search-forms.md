@@ -1,6 +1,6 @@
 ---
-title: Aangepaste zoekformulieren bijwerken
-seo-title: Aangepaste zoekformulieren bijwerken
+title: Aangepast zoeken in Forms bijwerken
+seo-title: Aangepast zoeken in Forms bijwerken
 description: In dit artikel worden de aanpassingen beschreven die na een upgrade nodig zijn om de aangepaste zoekformulieren te laten werken.
 seo-description: In dit artikel worden de aanpassingen beschreven die na een upgrade nodig zijn om de aangepaste zoekformulieren te laten werken.
 uuid: 35b8fbb9-5951-4e1c-bf04-4471a55b9cb0
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '1709'
+ht-degree: 0%
 
 ---
 
 
-# Aangepaste zoekformulieren bijwerken{#upgrading-custom-search-forms}
+# Aangepast zoeken in Forms bijwerken{#upgrading-custom-search-forms}
 
-In AEM 6.2 is de locatie waar de aangepaste zoekformulieren in de opslagplaats zijn opgeslagen, gewijzigd. Na de upgrade worden ze verplaatst van hun locatie in 6.1 naar:
+In AEM 6.2 is de locatie waar Customized Search Forms in de opslagplaats wordt opgeslagen, gewijzigd. Na de upgrade worden ze verplaatst van hun locatie in 6.1 naar:
 
 * /apps/cq/gui/content/facets
 
@@ -27,24 +30,24 @@ naar een nieuwe locatie onder:
 
 Daarom moeten de formulieren na een upgrade handmatig worden aangepast om te kunnen blijven werken.
 
-Dit geldt voor nieuwe zoekformulieren en standaardformulieren die zijn aangepast.
+Dit geldt zowel voor nieuwe Zoeken in Forms als voor standaard Forms die is aangepast.
 
 Raadpleeg de documentatie over [zoekfactoren](/help/assets/search-facets.md)voor meer informatie.
 
 ## De eigenschap resourceType wijzigen {#changing-the-resourcetype-property}
 
-Tenzij anders vermeld, vereisen de meeste aanpassingen die na de verbetering moeten worden gedaan het veranderen van het `sling:resourceType` bezit voor de gevormde Vormen van het Onderzoek. Dit is nodig, zodat de eigenschap naar de juiste locatie van het renderscript wijst.
+Tenzij anders vermeld, vereisen de meeste aanpassingen die na de verbetering moeten worden gedaan het veranderen van het `sling:resourceType` bezit voor de gevormde Forms van het douaneOnderzoek. Dit is nodig, zodat de eigenschap naar de juiste locatie van het renderscript wijst.
 
 U kunt de eigenschap als volgt wijzigen:
 
-1. Open CRXDE Lite door naar `https://server:port/crx/de/index.jsp`
-1. Blader naar de locatie van het knooppunt dat moet worden aangepast, zoals opgegeven in de lijst met [aangepaste zoekformulieren](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) hieronder.
+1. CRXDE Lite openen door naar `https://server:port/crx/de/index.jsp`
+1. Blader naar de locatie van het knooppunt dat moet worden aangepast, zoals opgegeven in de lijst met [aangepaste zoekopdrachten in Forms](/help/sites-deploying/upgrading-custom-search-forms.md#list-of-custom-search-forms) hieronder.
 1. Klik op het knooppunt. In de juiste eigenschappen ruit, klik en wijzig het **verbinden:resourceType** bezit.
 1. Sla de wijzigingen op door op de knop Alles **** opslaan te drukken.
 
-## Lijst met aangepaste zoekformulieren {#list-of-custom-search-forms}
+## Lijst met aangepaste zoekopdrachten in Forms {#list-of-custom-search-forms}
 
-Hieronder vindt u een lijst met alle aangepaste zoekformulieren en de wijzigingen die u na de upgrade nodig hebt. Ze verwijzen naar de namen in `/conf/global/settings/cq/search/facets/sites/items`.
+Hieronder vindt u een lijst met alle aangepaste Search Forms en de wijzigingen die deze nodig hebben na de upgrade. Ze verwijzen naar de namen in `/conf/global/settings/cq/search/facets/sites/items`.
 
 ### Fulltext Predicate met knooppuntnaam &quot;fulltext&quot; {#fulltext-predicate-with-node-name-fulltext}
 
@@ -67,7 +70,7 @@ Hieronder vindt u een lijst met alle aangepaste zoekformulieren en de wijziginge
 
 In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformulier. In 6.2 is het volledige tekstveld vervangen door OmniSearch. Dit predikaat wordt programmatically overgeslagen en kan worden verwijderd.
 
-**** Handeling: Verwijder het knooppunt volledig.
+**Handeling:** Verwijder het knooppunt volledig.
 
 ### Andere voorvertoningen van Fulltext {#other-fulltext-predicates}
 
@@ -88,14 +91,14 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Voorspellingen voor padbrowser {#path-browser-predicates}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>path</td> 
   </tr>
   <tr>
@@ -109,14 +112,14 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Voorwaarden labels {#tags-predicates}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>tags</td> 
   </tr>
   <tr>
@@ -130,14 +133,14 @@ In AEM 6.1 maakte de standaard fulltext voorspelling deel uit van het zoekformul
  </tbody>
 </table>
 
-**** Handeling: Pas de eigenschap **resourceType** aan (voeg &quot;**/koraal**&quot; toe, zoals hierboven aangegeven op locatie 6.2).
+**Handeling:** Pas de eigenschap **resourceType** aan (voeg &quot;**/koraal**&quot; toe, zoals hierboven aangegeven op locatie 6.2).
 
 ### Voorspelling van paginastatus {#page-status-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>pagestatus prediken</td> 
   </tr>
   <tr>
@@ -173,7 +176,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>daterangepredicate</td> 
   </tr>
   <tr>
@@ -187,14 +190,14 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Verborgen filter {#hidden-filter}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>type</td> 
   </tr>
   <tr>
@@ -208,14 +211,14 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Er is niets om aan te passen.
+**Handeling:** Er is niets om aan te passen.
 
 ### Voorspelling van analysemogelijkheden {#analytics-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>analyticspredicaat</td> 
   </tr>
   <tr>
@@ -229,14 +232,14 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Bereik voorspellen {#range-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>n.v.t.</td> 
   </tr>
   <tr>
@@ -250,7 +253,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 >[!NOTE]
 >
@@ -261,7 +264,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>n.v.t.</td> 
   </tr>
   <tr>
@@ -275,14 +278,14 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Predicate voor schuifregelaarbereik {#slider-range-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>n.v.t.</td> 
   </tr>
   <tr>
@@ -296,14 +299,14 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Voorspeld voor componenten {#components-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>n.v.t.</td> 
   </tr>
   <tr>
@@ -317,14 +320,14 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Voorspelling auteur {#author-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>n.v.t.</td> 
   </tr>
   <tr>
@@ -338,14 +341,14 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Sjabloonvoorspelling {#templates-predicate}
 
 <table> 
  <tbody>
   <tr>
-   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /><br /> </td> 
+   <td>Knooppunt(en) in standaardzoekformulier in 6.1<br /> <br /> </td> 
    <td>n.v.t.</td> 
   </tr>
   <tr>
@@ -359,7 +362,7 @@ De paginatiestatus is vervangen door twee voorvertoningen van de eigenschap Opti
  </tbody>
 </table>
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ## Middelen Admin Search Rail {#assets-admin-search-rail}
 
@@ -374,7 +377,7 @@ De onderstaande knooppunten verwijzen naar de namen in `/conf/global/settings/da
 
 In 6.1 maakte het standaard fulltext predikaat deel uit van het onderzoeksformulier. In 6.2 is het volledige tekstveld vervangen door OmniSearch. Dit predikaat wordt programmatically overgeslagen en kan worden verwijderd.
 
-**** Handeling: Verwijder het bovenstaande knooppunt.
+**Handeling:** Verwijder het bovenstaande knooppunt.
 
 ### Voorspellingen voor padbrowser {#path-browser-predicates-1}
 
@@ -383,7 +386,7 @@ In 6.1 maakte het standaard fulltext predikaat deel uit van het onderzoeksformul
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/pathbrowserpreate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/pathbrowserpredicate |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### MIME-typevoorspelling {#mime-type-predicates}
 
@@ -392,7 +395,7 @@ In 6.1 maakte het standaard fulltext predikaat deel uit van het onderzoeksformul
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/optionspredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/optionspredicate |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe, zoals op de hierboven aangegeven locatie 6.2).
 
 ### Voorspellingen voor bestandsgrootte {#file-size-predicates}
 
@@ -401,7 +404,7 @@ In 6.1 maakte het standaard fulltext predikaat deel uit van het onderzoeksformul
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/filesizepredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search preates/sliderangepredicate |
 
-**** Handeling: Pas de afbeelding aan `resourceType` zoals u hierboven op locatie 6.2 ziet.
+**Handeling:** Pas de afbeelding aan `resourceType` zoals u hierboven op locatie 6.2 ziet.
 
 ### Voorspellingen voor laatste wijziging van element {#asset-last-modified-predicates}
 
@@ -421,7 +424,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 **Acties:**
 
-*  Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+* Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 * Voeg een eigenschap `optionPaths` (van het type String) toe met de waarde: `/libs/dam/options/predicates/publish`
 
@@ -434,7 +437,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/optionspredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/optionspredicate |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 ### Voorspellingen voor verloopstatus {#expiry-status-predicates}
 
@@ -443,7 +446,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/expiredassetpredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/expiredassetpredicate |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 ### Voorspelden voor metagegevensgeldigheid {#metadata-validity-predicates}
 
@@ -452,7 +455,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/optionspredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/optionspredicate |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 ### Beoordelingsvoorspelling {#rating-predicates}
 
@@ -461,7 +464,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/rating predicates |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search preates/sliderangepredicate |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 ### Richtingsvoorspelling {#orientation-predicate}
 
@@ -472,7 +475,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 **Acties:**
 
-*  Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+* Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 * Voeg een `fieldLabel` eigenschap toe met dezelfde waarde als de `text` eigenschap op hetzelfde knooppunt.
 
@@ -489,7 +492,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 
 **Acties:**
 
-*  Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+* Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 * Voeg een `fieldLabel` eigenschap toe met dezelfde waarde als de `text` eigenschap op hetzelfde knooppunt.
 
@@ -504,7 +507,7 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | dam/gui/components/admin/customsearch/search voorspelates/optionspredicate |
 | Type bron in 6.2 | dam/gui/koral/components/admin/customsearch/search voorspelates/optionspredicate |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
 
 ### Voorspelling van hoofdmiddelen {#mainasset-predicate}
 
@@ -513,4 +516,4 @@ Handeling: Pas de eigenschap resourceType aan (voeg &quot;/koral&quot; toe, bijv
 | Type bron in 6.1 | graniet/ui/components/foundation/form/hidden |
 | Type bron in 6.2 | graniet/ui/componenten/koraal/stichting/vorm/verborgen |
 
-**** Handeling: Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
+**Handeling:** Pas de `resourceType` eigenschap aan (voeg &quot;**/koraal**&quot; toe zoals hierboven aangegeven op locatie 6.2)
