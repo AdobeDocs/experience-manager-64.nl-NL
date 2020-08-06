@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 4194278f-5127-4105-b181-60961c7a1def
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '310'
+ht-degree: 0%
 
 ---
 
@@ -33,7 +36,7 @@ Badges die een lid van de gemeenschap verdient of toegewezen krijgt, worden same
 
 In de auteursomgeving, om de console van Badges te bereiken
 
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Gemeenschappen > Badges]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Communities > Badges]**
 
 Op deze console worden de badges weergegeven die momenteel beschikbaar zijn en waaruit nieuwe badges kunnen worden toegevoegd.
 
@@ -47,19 +50,19 @@ Als het publicatiemilieu een landbouwbedrijf van uitgevers is, is het noodzakeli
 
 ![chlimage_1-243](assets/chlimage_1-243.png)
 
-* **[!UICONTROL Afbeelding uploaden]**
+* **[!UICONTROL Upload Image]**
 
    (*Vereist*) Een badge-afbeelding met een aanbevolen grootte van 32 x 32 pixels bij 72 dpi in de JPEG- of PNG-indeling.
 
-* **[!UICONTROL Naam]**
+* **[!UICONTROL Name]**
 
    (*Vereist*) De badge name. Dit is de standaardnaam `Display Name` en de naam van het knooppunt in de repository. Als het knooppunt geen geldige naam voor een opslagplaats `Name` is, wordt het gewijzigd.
 
-* **[!UICONTROL Weergavenaam]**
+* **[!UICONTROL Display Name]**
 
    (*Optioneel*) De naam die voor de badge in de gebruikersinterface moet worden weergegeven. De standaardinstelling is de ongewijzigde tekst die voor de `Name`code wordt ingevoerd.
 
-* **[!UICONTROL Beschrijving]**
+* **[!UICONTROL Description]**
 
    (*Optioneel*) Een beschrijving van de badge.
 
