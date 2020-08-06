@@ -1,6 +1,6 @@
 ---
 title: Zoeken naar elementen uitbreiden
-description: Breid de onderzoeksmogelijkheden van Middelen AEM voorbij uit-van-de-doos onderzoeken naar activa door koorden uit.
+description: Breid de zoekmogelijkheden van AEM Assets verder uit dan zoeken naar elementen op tekenreeksen.
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
@@ -13,11 +13,11 @@ ht-degree: 11%
 
 # Zoeken naar elementen uitbreiden {#extending-assets-search}
 
-U kunt de zoekmogelijkheden van Adobe Experience Manager (AEM)-middelen uitbreiden. AEM Assets zoekt in het tekstvak naar elementen op tekenreeksen.
+U kunt zoekmogelijkheden voor Adobe Experience Manager (AEM)-middelen uitbreiden. AEM Assets zoekt in het vak naar elementen op tekenreeksen.
 
 Het zoeken wordt gedaan via de interface QueryBuilder zodat kan het onderzoek met verscheidene predikaten worden aangepast. U kunt de standaardset voorspelden in de volgende map bedekken: `/apps/dam/content/search/searchpanel/facets`.
 
-U kunt ook extra tabbladen toevoegen aan het beheerpaneel van AEM-middelen.
+U kunt ook extra tabbladen toevoegen aan het AEM Assets-beheerdeelvenster.
 
 >[!CAUTION]
 >
@@ -36,9 +36,9 @@ Om preconfigured preconfigured te bedekken, kopieer de `facets` knoop van `/libs
 
 ## Tabs toevoegen {#adding-tabs}
 
-U kunt extra tabbladen voor zoeken toevoegen door deze te configureren in AEM Assets Admin. Extra tabbladen maken:
+U kunt extra tabbladen voor zoekopdrachten toevoegen door deze te configureren in AEM Assets Admin. Extra tabbladen maken:
 
-1. Maak de mapstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
+1. Maak de mappenstructuur `/apps/wcm/core/content/damadmin/tabs,`als deze nog niet bestaat en kopieer het `tabs` knooppunt van `/libs/wcm/core/content/damadmin` en plak het.
 1. Maak en configureer het tweede tabblad naar wens.
 
    >[!NOTE]
@@ -47,9 +47,9 @@ U kunt extra tabbladen voor zoeken toevoegen door deze te configureren in AEM As
 
 ## Aangepaste voorvertoningen maken {#creating-custom-predicates}
 
-AEM Assets wordt geleverd met een set vooraf gedefinieerde voorspellingen die kunnen worden gebruikt om een pagina voor het delen van bedrijfsmiddelen aan te passen. Op deze manier wordt het op deze manier aanpassen van een Asset Share behandeld in het [maken en configureren van een pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)voor het delen van bedrijfsmiddelen.
+AEM Assets wordt geleverd met een set vooraf gedefinieerde basisbegrippen die kunnen worden gebruikt om een pagina voor het delen van bedrijfsmiddelen aan te passen. Op deze manier wordt het op deze manier aanpassen van een Asset Share behandeld in het [maken en configureren van een pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)voor het delen van bedrijfsmiddelen.
 
-Naast het gebruiken van reeds bestaande predikaten, kunnen de ontwikkelaars AEM ook hun eigen predikaten tot stand brengen gebruikend de [Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
+Naast het gebruiken van reeds bestaande predikaten, kunnen AEM ontwikkelaars ook hun eigen predikaten tot stand brengen gebruikend de [Bouwer van de Vraag API](/help/sites-developing/querybuilder-api.md).
 
 Voor het maken van aangepaste predikaten is basiskennis van het [Widget-framework](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html)vereist.
 
@@ -305,4 +305,4 @@ De volgende voorspelling is beschikbaar als vooraf geconfigureerde ExtJS-widgets
 
 De presentatie van zoekresultaten op een pagina voor het delen van bedrijfsmiddelen wordt bepaald door de geselecteerde lens. AEM Assets wordt geleverd met een set vooraf gedefinieerde lenzen die kunnen worden gebruikt om een pagina voor het delen van bedrijfsmiddelen aan te passen. Op deze manier wordt het op deze manier aanpassen van een Asset Share behandeld in het [maken en configureren van een pagina](assets-finder-editor.md#creating-and-configuring-an-asset-share-page)voor het delen van bedrijfsmiddelen.
 
-Naast het gebruik van reeds bestaande lenzen kunnen AEM-ontwikkelaars ook hun eigen lenzen maken.
+Naast het gebruik van reeds bestaande lenzen kunnen AEM ontwikkelaars ook hun eigen lenzen maken.
