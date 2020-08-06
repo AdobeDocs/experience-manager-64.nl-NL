@@ -1,6 +1,6 @@
 ---
-title: Optie voor Adobe Analytics en Adobe Target
-seo-title: Optie voor Adobe Analytics en Adobe Target
+title: Opteren in Adobe Analytics en Adobe Target
+seo-title: Opteren in Adobe Analytics en Adobe Target
 description: Leer hoe u zich aanmeldt bij Adobe Analytics en Adobe Target.
 seo-description: Leer hoe u zich aanmeldt bij Adobe Analytics en Adobe Target.
 uuid: 9090a0f3-d373-4826-aa68-6aa82c0fbfbb
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '1327'
+ht-degree: 0%
 
 ---
 
 
-# Optie voor Adobe Analytics en Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
+# Opteren in Adobe Analytics en Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
-AEM heeft een aanmeldingsprocedure waarmee u kunt integreren met Adobe Analytics en Adobe Target. Dit is beschikbaar uit-van-de-doos, als vooraf geladen taak die aan de groep van de beheerdergebruiker wordt toegewezen.
+AEM heeft een opt-in procedure om u te helpen met Adobe Analytics en Adobe Target integreren. Dit is beschikbaar uit-van-de-doos, als vooraf geladen taak die aan de groep van de beheerdergebruiker wordt toegewezen.
 
 Wanneer u zich als beheerder aanmeldt, is deze taak (Analytics **configureren &amp; Targeting**) beschikbaar in het [Postvak](/help/sites-authoring/inbox.md#out-of-the-box-administrative-tasks). Gebaseerd op de geloofsbrieven u levert, helpt het u deze diensten vormen en integreren.
 
@@ -25,11 +28,11 @@ U hebt de volgende opties voor het configureren van de integratie:
 
 * Configureer de integratie via de taak.
 
-   Dit kan onmiddellijk of later worden gedaan, zal de taak in Inbox blijven tot wat actie wordt ondernomen. In beide gevallen kan de configuratie rechtstreeks in de gebruikersinterface worden uitgevoerd of met behulp van een vooraf gedefinieerd `.properties` bestand.
+   Dit kan onmiddellijk of later worden gedaan, zal de taak in Inbox blijven tot één of andere actie wordt ondernomen. In beide gevallen kan de configuratie rechtstreeks in de gebruikersinterface worden uitgevoerd of met behulp van een vooraf gedefinieerd `.properties` bestand.
 
 * Sluit af van de integratie.
 
-   Overweeg deze optie als u verkiest de integratie [](/help/sites-administering/marketing-cloud.md)manueel te vormen. Zie ook AEM [integreren met Adobe Target en Adobe Analytics met DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
+   Overweeg deze optie als u verkiest de integratie [](/help/sites-administering/marketing-cloud.md)manueel te vormen. Zie ook AEM [integreren met Adobe Target en Adobe Analytics met behulp van DTM](https://helpx.adobe.com/experience-manager/using/integrate-digital-marketing-solutions.html).
 
 * Configureer de instelling en provisioning met behulp van een script.
 
@@ -56,7 +59,7 @@ Wanneer u zich bij de integratie aanmeldt, voert AEM de volgende taken uit:
 >
 >AT.js is de standaardcliëntbibliotheek. Dit is geconfigureerd in uw configuratie [van](/help/sites-administering/target-configuring.md#creating-a-target-cloud-configuration)doelcloudservices.
 >
->Adobe raadt u aan AT.js te gebruiken als de clientbibliotheek.
+>Adobe raadt u aan AT.js als clientbibliotheek te gebruiken.
 
 Als u zich wilt aanmelden bij de vooraf geladen taak die buiten het vak valt:
 
@@ -91,7 +94,7 @@ Sluit de integratie met Analytics en Target af als u:
 * Niet met deze producten integreren.
 * Voorkeur om de integratie manueel te vormen.
 
-   Zie [Integratie met Adobe Analytics](/help/sites-administering/adobeanalytics.md) en [Integrating with Adobe Target](/help/sites-administering/target.md)voor informatie over het handmatig configureren van de integratie.
+   Zie [Integreren met Adobe Analytics](/help/sites-administering/adobeanalytics.md) en [Integreren met Adobe Target](/help/sites-administering/target.md)voor informatie over het handmatig configureren van de integratie.
 
 Als u wilt afmelden, moet u de vooraf geladen taak voltooien:
 
@@ -99,9 +102,9 @@ Als u wilt afmelden, moet u de vooraf geladen taak voltooien:
 
 ## Accountinformatie opgeven met een eigenschappenbestand {#providing-account-information-using-a-properties-file}
 
-Installeer een eigenschappenbestand dat door AEM wordt gelezen bij het opstarten van de server om de accounteigenschappen voor de integratie met Analytics en Target te configureren. Wanneer u het eigenschappenbestand gebruikt, gebruikt de aanmeldwizard automatisch de eigenschappen van het bestand en wordt de cloudconfiguratie dienovereenkomstig gemaakt.
+Installeer een eigenschappenbestand dat AEM leest bij het opstarten van de server om de accounteigenschappen voor de integratie met Analytics en Target te configureren. Wanneer u het eigenschappenbestand gebruikt, gebruikt de aanmeldwizard automatisch de eigenschappen van het bestand en wordt de cloudconfiguratie dienovereenkomstig gemaakt.
 
-Het eigenschappenbestand is een tekstbestand met de naam marketingcloud.properties dat u opslaat in de werkmap die het AEM-proces gebruikt (doorgaans dezelfde map als het JAR-bestand). Het bestand bevat de volgende eigenschappen:
+Het eigenschappenbestand is een tekstbestand met de naam marketingcloud.properties dat u opslaat in de werkmap die het AEM gebruikt (doorgaans dezelfde map als het JAR-bestand). Het bestand bevat de volgende eigenschappen:
 
 * analytics.server: De URL van het datacenter Analytics dat u gebruikt.
 * analytics.company: Het bedrijf dat aan uw Analytics gebruikersrekening wordt geassocieerd.
@@ -129,7 +132,7 @@ target.password=
 
 In de volgende procedure wordt beschreven hoe u zich bij de integratie kunt aansluiten met behulp van het eigenschappenbestand.
 
-1. Maak het `marketingcloud.properties` bestand in de werkmap dat door het AEM-proces wordt gebruikt (auteurinstantie).
+1. Maak het `marketingcloud.properties` bestand in de werkmap dat door het AEM wordt gebruikt (auteurinstantie).
 
    >[!NOTE]
    >
@@ -149,13 +152,13 @@ In de volgende procedure wordt beschreven hoe u zich bij de integratie kunt aans
 
 ## Informatie over de cloudconfiguraties {#about-the-cloud-configurations}
 
-Wanneer u de integratie met Analytics en Target configureert, maakt AEM automatisch de vereiste cloudconfiguraties en -frameworks. De cloudconfiguratie van Analytics heet bijvoorbeeld Provisioned Analytics Account.
+Wanneer u de integratie met Analytics en Target configureert, AEM automatisch de vereiste cloudconfiguraties en -frameworks. De cloudconfiguratie van Analytics heet bijvoorbeeld Provisioned Analytics Account.
 
-U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vormen zoals nodig. (Zie Componentgegevens [toewijzen met de eigenschappen](/help/sites-administering/adobeanalytics-mapping.md) van Adobe Analytics en een doelframework [](/help/sites-administering/target.md)toevoegen.)
+U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vormen zoals nodig. (Zie Componentgegevens [toewijzen met Adobe Analytics-eigenschappen](/help/sites-administering/adobeanalytics-mapping.md) en een doelframework [](/help/sites-administering/target.md)toevoegen.)
 
 >[!NOTE]
 >
->Als u zich aanmeldt bij de configuratietovenaar van Adobe Target, wordt de functie voor nauwkeurige oriëntatie standaard ingeschakeld.
+>Wanneer u zich aanmeldt bij de Adobe Target-configuratietovenaar, wordt Accurate gericht inschakelen.
 >
 >Nauwkeurige het richten betekent dat de configuratie van de wolkendienst op de context wacht te laden alvorens inhoud te laden. Hierdoor kan het, in termen van prestaties, nauwkeuriger richten tot een paar milliseconde vertraging leiden alvorens inhoud te laden.
 >
@@ -173,7 +176,7 @@ U hoeft de cloudconfiguraties niet te wijzigen. Nochtans, kunt u het kader vorme
 
 Als beheerder, kunt u opstelling en levering met een manuscript eerder dan manueel het stappen door de tovenaar willen teweegbrengen. U kunt dit doen door:
 
-* Het verzenden van een POST- verzoek naar **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** met de vereiste parameters.
+* Het verzenden van een verzoek van de POST naar **/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json** met de vereiste parameters.
 
 Welke parameters u verzendt hangt van het volgende af:
 
@@ -181,7 +184,8 @@ Welke parameters u verzendt hangt van het volgende af:
 
    * `automaticProvisioning`= `true`
    * `servicename`= `analytics|target`
-   * `path`=pad naar een AEM-pagina om de gemaakte cloudservices te koppelen
+   * `path`=pad naar een AEM pagina om de gemaakte cloudservices te koppelen
+
    Bijvoorbeeld, zou een krullverzoek dat zowel tot Analytics als tot de configuraties van het Doel leidt en hen aan de wij.Retail pagina vastmaakt:
 
    ```shell
@@ -192,7 +196,7 @@ Welke parameters u verzendt hangt van het volgende af:
 
    * automaticProvisioning= `true`
    * servicename= `analytics|target`
-   * path=path naar een AEM-pagina om de gemaakte cloudservices te koppelen; meerdere paden kunnen worden gedefinieerd
+   * path=path naar een AEM pagina om de gemaakte cloudservices te koppelen; meerdere paden kunnen worden gedefinieerd
    * analytics.server= `https://servername`
    * analytics.company= `Name of company`
    * analytics.username= `me`
@@ -201,6 +205,7 @@ Welke parameters u verzendt hangt van het volgende af:
    * target.clientCode= `mycompany`
    * target.email= `me@adobe.com`
    * target.password= `password`
+
    In dit geval, zou het curl verzoek dat zowel tot Analytics als tot configuraties leidt van het Doel en hen aan de wij-kleinhandel pagina vastmaakt zijn:
 
    ```shell
