@@ -11,6 +11,9 @@ topic-tags: components
 discoiquuid: 034f70f1-fbd2-4f6b-b07a-5758f0461a5b
 translation-type: tm+mt
 source-git-commit: a39d0c895a9e3c8ef418100a153d29b79dda6e6a
+workflow-type: tm+mt
+source-wordcount: '492'
+ht-degree: 0%
 
 ---
 
@@ -65,7 +68,7 @@ Het patroongedeelte van een regel wordt gebruikt om de namen van de bestanden di
 | Voorvoegsel | Effect |
 |---|---|
 | / | Geeft een JCR-pad aan. Dit voorvoegsel komt daarom overeen met bestanden onder de map jcr_root. |
-|  &amp;ast; | Geeft een normaal bestand op het bestandssysteem aan. |
+| &amp;ast; | Geeft een normaal bestand op het bestandssysteem aan. |
 | none | Geen voorvoegsel of patroon dat begint met een map of bestandsnaam, geeft een normaal bestand op het bestandssysteem aan. |
 
 Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aan; alle tekens. In de volgende tabel staan verschillende voorbeeldregels.
@@ -97,7 +100,7 @@ Bij gebruik in een patroon geeft het teken / een submap en het teken &amp;ast aa
  </tbody> 
 </table>
 
-### De tekenreeksen extraheren {#extracting-the-strings}
+### De tekenreeksen extraheren  {#extracting-the-strings}
 
 geen POM:
 
