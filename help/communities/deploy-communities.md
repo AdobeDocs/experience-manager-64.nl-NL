@@ -1,8 +1,8 @@
 ---
 title: Gemeenschappen inzetten
 seo-title: Gemeenschappen inzetten
-description: Hoe te om AEM Communities op te stellen
-seo-description: Hoe te om AEM Communities op te stellen
+description: AEM Communities implementeren
+seo-description: AEM Communities implementeren
 uuid: 1f7faf1a-a339-4eaa-b728-b9110cb350a8
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -22,9 +22,9 @@ ht-degree: 0%
 
 ## Vereisten {#prerequisites}
 
-* [AEM 6.4-Platform](../../help/sites-deploying/deploy.md)
+* [AEM 6,4 Platform](../../help/sites-deploying/deploy.md)
 
-* AEM Communities
+* AEM Communities-licentie
 
 * Optionele licenties voor:
 
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## Controlelijst voor installatie {#installation-checklist}
 
-**Voor het[AEM-platform](../../help/sites-deploying/deploy.md#what-is-aem)**
+**Voor het[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * De nieuwste [AEM 6.4-updates installeren](#aem-updates)
 
@@ -65,7 +65,7 @@ ht-degree: 0%
       * [Installeer en vorm MySQL voor DSRP](dsrp-mysql.md)
       * [Solr configureren](solr.md)
       * [DSRP selecteren](srp-config.md)
-   * Als Adobe SRP [(ASRP)](asrp.md)
+   * Indien Adobe SRP [(ASRP)](asrp.md)
 
       * Met uw accountvertegenwoordiger samenwerken voor provisioning
       * [Selecteer ASRP](srp-config.md)
@@ -74,8 +74,9 @@ ht-degree: 0%
       * Geen gedeelde UGC-opslag:
 
          * UGC wordt nooit gerepliceerd
-         * UGC is alleen zichtbaar op een AEM-instantie of -cluster waarin de UGC is ingevoerd
+         * UGC is alleen zichtbaar op AEM instantie of cluster waarin de UGC is ingevoerd
       * Standaard is JSRP
+
    Voor de functie **[enablement](overview.md#enablement-community)**
 
    * [Mpeg installeren en configureren](ffmpeg.md)
@@ -90,17 +91,17 @@ ht-degree: 0%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Community GA wordt geleverd met het communautaire pakket. Zie Opmerkingen bij de release van [AEM 6.4 voor informatie over updates van AEM 6.4](/help/release-notes/release-notes.md#experience-manager-communities)Communities [](/help/release-notes/release-notes.md#release-information).
+AEM 6.4 Communautaire algemene bijstand wordt geleverd met een communautaire constructie. Zie de opmerkingen bij de release van AEM 6.4 [Gemeenschappen](/help/release-notes/release-notes.md#experience-manager-communities)voor meer informatie over updates van AEM 6.4 [Gemeenschappen](/help/release-notes/release-notes.md#release-information).
 
-### AEM 6.4-updates {#aem-updates}
+### AEM 6.4 Updates {#aem-updates}
 
-Vanaf AEM 6.3 worden updates aan Gemeenschappen geleverd als onderdeel van AEM Cumulative Fix Packs en Service Packs.
+Vanaf AEM 6.3 worden updates aan de Gemeenschappen geleverd als onderdeel van AEM Cumulative Fix Packs en Service Packs.
 
 Voor de nieuwste updates van AEM 6.4 moet u [Adobe Experience Manager 6.4 Cumulative Fix Packs en Service Packs](https://helpx.adobe.com/experience-manager/aem-releases-updates.html)controleren.
 
 ### Versiehistorie {#version-history}
 
-Net als in AEM 6.4 en verder, maken de eigenschappen en hotfixes van AEM Communities deel uit van AEM Communities cumulatieve moeilijke fixpakken en de dienstpakken. Er zijn dus geen aparte kenmerkpakketten.
+Net als bij AEM 6.4 en hoger maken AEM Communities-functies en hotfixes deel uit van AEM Communities-pakketten voor cumulatieve probleemoplossingen en servicepacks. Er zijn dus geen aparte kenmerkpakketten.
 
 ### JDBC-stuurprogramma voor MySQL {#jdbc-driver-for-mysql}
 
@@ -145,11 +146,11 @@ Meer informatie over het installeren van bundels vindt u op de pagina [Webconsol
 
 Shareable Content Object Reference Model (SCORM) is een verzameling standaarden en specificaties voor e-learning. SCORM definieert ook hoe inhoud kan worden verpakt in een overdraagbaar ZIP-bestand.
 
-De AEM Communities SCORM-engine is vereist voor de functie [enablement](overview.md#enablement-community) . Scorepakketten die worden ondersteund op versie AEM Communities 6.4 zijn:
+De AEM Communities SCORM-engine is vereist voor de functie [enablement](overview.md#enablement-community) . Scorepakketten die worden ondersteund in AEM Communities 6.4-versie zijn:
 
-* **[cq -social- scorm -package, versie 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Dit SCORM-pakket wordt ondersteund door alle versies van AEM 6.4 Communities.
+* **[cq -social- scorm -package, versie 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Dit SCORM-pakket wordt ondersteund door alle versies van AEM 6.4.
 
-* **[cq -social-scorm -package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**, bevat[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)-engine. Dit SCORM-pakket wordt ondersteund vanaf AEM 6.4.2.x-gemeenschappen.
+* **[cq -social-scorm -package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**, bevat[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)-engine. Dit SCORM-pakket wordt ondersteund AEM 6.4.2.x-gemeenschappen.
 
 Voor een nieuwe installatie van de SCORM-engine moet het pakket met [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (dat [ cq-social-scorm-package is, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)) worden gebruikt. zodat u de leermiddelen kunt spelen die door SCORM 2017 worden gesteund.
 
@@ -190,11 +191,11 @@ Indien gewenst, kan het logboekniveau aan WARN voor het `RusticiSoftware.*` pakk
 
 Voor het werken met logboeken, zie het [Werken met de Verslagen van de Controle en de Dossiers](../../help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files)van het Logboek.
 
-### AEM Advanced MLS {#aem-advanced-mls}
+### Geavanceerde MLS AEM {#aem-advanced-mls}
 
 Voor de inzameling SRP (MSRP of DSRP) om geavanceerde meertalige onderzoek (MLS) te steunen, worden nieuwe stop-ins Solr vereist naast een douaneschema en de configuratie Solr. Alle vereiste items worden verpakt in een ZIP-bestand dat kan worden gedownload.
 
-De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar in de Adobe-opslagplaats:
+De geavanceerde MLS-download (ook wel &#39;phasetwo&#39; genoemd) is beschikbaar in de gegevensopslagruimte van de Adobe:
 
 * [AEM-SOLR-MLS-fasetwo](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/tat/AEM-SOLR-MLS-phasetwo/1.2.40/)
 
@@ -207,18 +208,18 @@ Voor details en installatieinformatie, bezoek [Solr Configuratie](solr.md) voor 
 
 **Pakketten zichtbaar in Adobe AEM Cloud**
 
-Voor de koppelingen naar pakketten op deze pagina is geen actieve AEM-instantie vereist omdat deze delen in een pakket moet plaatsen op `adobeaemcloud.com`. De pakketten kunnen wel worden weergegeven, maar u `Install`kunt ze wel installeren op een door Adobe gehoste site. Als u van plan bent te installeren op een lokale AEM-instantie, `Install`treedt er een fout op.
+Voor de koppelingen naar pakketten op deze pagina is geen actieve versie van AEM vereist, aangezien deze op pakketshare moeten worden geplaatst `adobeaemcloud.com`. Terwijl de pakketten zichtbaar zijn, is de `Install`knop bedoeld voor het installeren van de pakketten op een door Adobe gehoste site. Als u van plan bent op een lokale AEM te installeren, `Install`wordt er een fout gegenereerd.
 
-**Installeren in lokale AEM-instantie**
+**Installeren op lokale AEM**
 
-Als u de pakketten in een lokale AEM-instantie wilt installeren, moet u het pakket eerst naar een lokale schijf downloaden: `adobeaemcloud.com`
+Als u de pakketten in een lokale AEM wilt installeren, moet u het pakket eerst naar een lokale schijf downloaden: `adobeaemcloud.com`
 
 * Selecteer het **[!UICONTROL Assets]** tabblad
 * Selecteer **[!UICONTROL download to disk]**
 
-Gebruik in de lokale AEM-instantie pakketbeheer (bijvoorbeeld [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)) om te uploaden naar de pakketopslagplaats van de lokale AEM.
+Gebruik pakketbeheer in de lokale AEM-instantie (bijvoorbeeld [http://localhost:4502/crx/packmgr/](http://localhost:4502/crx/packmgr/)) om te uploaden naar de lokale AEM pakketopslagplaats.
 
-Als u het pakket ook opent via pakketshare vanuit de lokale AEM-instantie (bijvoorbeeld [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), wordt de `Download`knop gedownload naar de pakketopslagplaats van de lokale AEM-instantie.
+Als u het pakket ook opent via pakketshare van de lokale AEM-instantie (bijvoorbeeld [http://localhost:4502/crx/packageshare/](http://localhost:4502/crx/packageshare/)), wordt de `Download`knop gedownload naar de pakketopslagplaats van de lokale AEM-instantie.
 
 Eenmaal in de pakketopslagplaats van de lokale AEM-instantie, gebruikt u pakketbeheer om het pakket te installeren.
 
@@ -230,21 +231,21 @@ In AEM Communities, wordt een gemeenschappelijke opslag gebruikt om gebruiker ge
 
 De gemeenschappelijke opslag steunt matiging van, en analyses op, UGC in het publicatiemilieu terwijl het elimineren van de behoefte aan [replicatie](sync.md) van UGC.
 
-* [Community Content Store](working-with-srp.md): bespreekt de opslagopties SRP voor gemeenschappen AEM
+* [Community Content Store](working-with-srp.md): bespreekt de opslagopties SRP voor AEM gemeenschappen
 
 * [Aanbevolen technologieën](topologies.md): bespreekt de topologie om afhankelijk van gebruiksgeval en keus te gebruiken SRP
 
 ## Bijwerken {#upgrading}
 
-Wanneer u een upgrade uitvoert naar het AEM 6.4-platform vanuit eerdere versies van AEM, is het belangrijk om de upgrade naar AEM 6.4 uit te voeren.
+Wanneer u een upgrade uitvoert naar het AEM 6.4-platform van eerdere versies van AEM, is het belangrijk om Upgrade naar AEM 6.4 te lezen.
 
-Lees naast het upgraden van het platform [Upgrade naar AEM Communities 6.4](upgrade.md) voor meer informatie over de wijzigingen in de Gemeenschappen.
+Lees, naast de upgrade van het platform, [Upgrade naar AEM Communities 6.4](upgrade.md) voor meer informatie over de wijzigingen in de Gemeenschappen.
 
 ## Configuraties {#configurations}
 
 ### Primaire uitgever {#primary-publisher}
 
-Wanneer de gekozen implementatie een [publicatiefarm](topologies.md#tarmk-publish-farm)is, moet één AEM-publicatieexemplaar worden geïdentificeerd als de instantie **`primary publisher`** voor activiteiten die niet overal mogen plaatsvinden, zoals functies die afhankelijk zijn van **meldingen** of **Adobe Analytics**.
+Wanneer de gekozen plaatsing een [publicatielandbouwbedrijf](topologies.md#tarmk-publish-farm)is, dan moet één AEM publicatiegeval als **`primary publisher`** voor activiteiten worden geïdentificeerd die niet op alle gevallen, zoals eigenschappen zouden moeten voorkomen die op **berichten** of **Adobe Analytics** vertrouwen.
 
 Door gebrek, wordt de configuratie `AEM Communities Publisher Configuration` OSGi gevormd met gecontroleerde **`Primary Publisher`** checkbox, zodat alle publiceer instanties in publiceer landbouwbedrijf zich als primair zou identificeren.
 
@@ -328,11 +329,11 @@ Om de tunneldienst toe te laten:
 
 Er zijn twee eigenschappen van AEM Communities die alle AEM serverinstanties vereisen om de zelfde encryptiesleutels te gebruiken. Dit zijn [Analytics](analytics.md) en [ASRP](asrp.md).
 
-Vanaf AEM 6.3 wordt het sleutelmateriaal opgeslagen in het bestandssysteem en niet meer in de gegevensopslagruimte.
+Vanaf AEM 6.3 wordt het sleutelmateriaal opgeslagen in het bestandssysteem en niet langer in de gegevensopslagruimte.
 
 Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëren is het noodzakelijk:
 
-* Toegang krijgen tot de AEM-instantie, doorgaans een auteurinstantie die het te kopiëren toetsmateriaal bevat
+* Toegang krijgen tot de AEM instantie, doorgaans een instantie van de auteur, die het te kopiëren toetsmateriaal bevat
 
    * De `com.adobe.granite.crypto.file` bundel zoeken in het lokale bestandssysteem
 
@@ -349,7 +350,7 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 
 
 
-* Voor elke AEM-doelinstantie
+* Voor elke AEM
 
    * Navigeren in de gegevensmap
 
@@ -357,7 +358,7 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Plak de twee eerder gekopieerde bestanden
-   * Het is noodzakelijk om de granite Crypto-bundel [te](#refresh-the-granite-crypto-bundle) vernieuwen als de doel-AEM-instantie momenteel wordt uitgevoerd
+   * Het is noodzakelijk om de granite Crypto-bundel [te](#refresh-the-granite-crypto-bundle) vernieuwen als de doel-AEM momenteel wordt uitgevoerd
 
 
 >[!CAUTION]
@@ -366,7 +367,7 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 
 #### Replicatie opslagplaats {#repository-replication}
 
-Als het sleutelmateriaal in de opslagplaats wordt opgeslagen, zoals het geval was voor AEM 6.2 en eerder, kan dit worden behouden door de volgende systeemeigenschap op te geven bij het eerste opstarten van elke AEM-instantie (die de initiële opslagplaats maakt):
+Als het sleutelmateriaal in de bewaarplaats wordt opgeslagen, zoals het geval was voor AEM 6.2 en eerder, kan worden behouden door de volgende systeemeigenschap op te geven bij het eerste opstarten van elke AEM instantie (die de initiële opslagplaats creëert):
 
 * `-Dcom.adobe.granite.crypto.file.disable=true`
 
@@ -429,9 +430,9 @@ Wees vooral voorzichtig met het gebruik van de juiste servernaam, niet `localhos
 
 Als u een Dispatcher gebruikt, raadpleegt u:
 
-* AEM&#39;s [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) -documentatie
+* AEM [Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) documentatie
 * [Dispatcher installeren](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-install.html)
-* [Dispatcher for Communities configureren](dispatcher.md)
+* [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
 * [Bekende problemen](troubleshooting.md#dispatcher-refetch-fails)
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
