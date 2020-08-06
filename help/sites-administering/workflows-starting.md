@@ -1,8 +1,8 @@
 ---
 title: Workflows starten
 seo-title: Workflows starten
-description: Leer hoe u workflows start in AEM.
-seo-description: Leer hoe u workflows start in AEM.
+description: Leer hoe u workflows in AEM start.
+seo-description: Leer hoe u workflows in AEM start.
 uuid: 0648d335-ecce-459d-95fd-3d4d76181b32
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e9ab4796-a050-40de-b073-af7d33cff009
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '804'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +29,7 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 
 * Automatisch:
 
-   * Als reactie op wijzigingen in knooppunten; [met een Launcher](#workflows-launchers).
+   * Als reactie op wijzigingen in knooppunten; [met behulp van een Launcher](#workflows-launchers).
 
 >[!NOTE]
 >
@@ -34,8 +37,9 @@ Wanneer u workflows beheert, kunt u deze op verschillende manieren starten:
 >
 >* [Workflows toepassen op pagina&#39;s](/help/sites-authoring/workflows-applying.md)
 >* [Workflows toepassen op DAM-elementen](/help/assets/assets-workflow.md)
->* [AEM-formulieren](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
+>* [AEM Forms](https://helpx.adobe.com/aem-forms/6-2/aem-workflows-submit-process-form.html)
 >* [Omzettingsprojecten](/help/sites-administering/tc-manage.md)
+
 >
 
 
@@ -86,7 +90,7 @@ Een workflowpakket:
 
 ## Een workflow starten vanuit de Modellen-console {#starting-a-workflow-from-the-models-console}
 
-1. Navigeer aan de console van **Modellen** gebruikend **Hulpmiddelen**, **Werkschema**, toen **Modellen**.
+1. Navigeer naar de **Modellen** console gebruikend **Hulpmiddelen**, **Werkschema**, toen **Modellen**.
 1. Selecteer de werkstroom (volgens de consolemening); U kunt ook Zoeken (linksboven) gebruiken als dat nodig is:
 
    ![wf-103](assets/wf-103.png)
@@ -148,6 +152,7 @@ Een workflowpakket:
       Een lijst met functies die moeten worden ingeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
 
    * **Uitgeschakelde functies**
+
    Een lijst met functies die moeten worden uitgeschakeld. Selecteer de gewenste functie(s) met de keuzelijst.
 
    * **Workflowmodel**
@@ -172,6 +177,7 @@ Een workflowpakket:
 
       * `property-name` negeert om het even welke `jcr` gebeurtenis die op de gespecificeerde bezitsnaam teweegbracht. &quot;
       * `event-user-data:<*someValue*>` Hiermee wordt elke gebeurtenis genegeerd die de instelling `*<someValue*`> `user-data` via de [ API `ObservationManager`]bevat (https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/observation/ObservationManager.html#setUserData(java.lang.String).
+
       Bijvoorbeeld:
 
       `jcr:lastModified,dc:modified,dc:format,jcr:lastModifiedBy,imageMap,event-user-data:changedByWorkflowProcess`
