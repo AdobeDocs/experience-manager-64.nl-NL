@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: dcac2a3a-3241-47de-96ce-982ab0bc05eb
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '217'
+ht-degree: 0%
 
 ---
 
 
 # Gebruikersinterface selecteren{#selecting-your-ui}
 
-Aangezien de interface met aanraakbediening de klassieke interface vervangt, moet de gebruiker of beheerder van de AEM-instantie een actief besluit nemen om de klassieke UI te blijven gebruiken. Omdat klassieke UI niet meer wordt gehandhaafd, is er geen manier voor de auteursgebruiker eenvoudig om van klassieke UI aan het equivalent in aan aanraking-toegelaten UI over te schakelen.
+Aangezien de aanraking-toegelaten UI de klassieke UI vervangt, moet de gebruiker of de beheerder van de AEM instantie een actief besluit nemen om het gebruiken van klassieke UI voort te zetten. Omdat klassieke UI niet meer wordt gehandhaafd, is er geen manier voor de auteursgebruiker eenvoudig om van klassieke UI aan het equivalent in aan aanraking-toegelaten UI over te schakelen.
 
 Voor het gemak waarmee gebruikers kunnen ontwerpen, maakt de interface met aanraakbediening het mogelijk om indien nodig over te schakelen op de klassieke interface. Zie de [Uw interface](/help/sites-authoring/select-ui.md) selecteren in de standaarddocumentatie voor ontwerpen voor meer informatie.
 
