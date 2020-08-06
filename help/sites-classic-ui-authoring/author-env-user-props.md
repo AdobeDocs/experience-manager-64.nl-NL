@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a91fd37e-5975-4572-a4b3-c7e8993d5f88
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '245'
+ht-degree: 4%
 
 ---
 
@@ -21,7 +24,8 @@ AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomg
 
 Met de [accountinstellingen](#account-settings) en de [gebruikersvoorkeuren](#user-preferences) kunt u de volgende opties en voorkeuren definiëren:
 
-* **De werkbalk** bewerken Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u de knoppen **Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** voor gebruik met de alineacomponenten op die pagina:
+* **De werkbalk** bewerken Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u 
+**De knoppen Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** voor gebruik met de alineacomponenten op die pagina:
 
    * Weergeven indien nodig (standaard)
    * Altijd tonen
@@ -33,8 +37,8 @@ Met de [accountinstellingen](#account-settings) en de [gebruikersvoorkeuren](#us
 
 * **Vensterbeheer** Selecteer een van de volgende opties:
 
-   * Meerdere vensters (standaard):Pagina&#39;s worden in een nieuw venster geopend.
-   * Enkel venster:Pagina&#39;s worden geopend in het huidige venster.
+   * Meerdere vensters (standaard): Pagina&#39;s worden in een nieuw venster geopend.
+   * Enkel venster: Pagina&#39;s worden geopend in het huidige venster.
 
 ## Accountinstellingen {#account-settings}
 
