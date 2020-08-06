@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '601'
+ht-degree: 1%
 
 ---
 
@@ -34,14 +37,14 @@ CRXDE Lite gebruiken:
     * Type: &quot;String&quot;
     * Value: &quot;foundation/components/page&quot;
 
-1. Klik op groen **[!UICONTROL [+]Toevoegen]**
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op het groene **[!UICONTROL[+]Add]**
+1. Klik op **[!UICONTROL Save All]**
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
 
 ### Scripts voor hoofd en lichaam {#head-and-body-scripts}
 
-1. Navigeer in het deelvenster **CRXDE Lite** -verkenner naar het bestand `/apps/an-scf-sandbox/components/playpage` en dubbelklik erop `playpage.jsp` om het te openen in het bewerkingsvenster.
+1. Navigeer in het deelvenster **CRXDE Lite** Explorer naar het bestand `/apps/an-scf-sandbox/components/playpage` en dubbelklik erop `playpage.jsp` om dit te openen in het bewerkvenster.
 
 #### /apps/an-scf-sandbox/components/playpage/playpage.jsp {#apps-an-scf-sandbox-components-playpage-playpage-jsp}
 
@@ -86,12 +89,13 @@ CRXDE Lite gebruiken:
 
    Aan opstelling voor creatie, bedekking `body.jsp` met een lokaal manuscript en omvat een paragraafsysteem (parsys) in het lichaam:
 
-   1. navigeren naar `/apps/an-scf-sandbox/components`
+   1. navigate to `/apps/an-scf-sandbox/components`
    1. Selecteer het `playpage`knooppunt
    1. klik met de rechtermuisknop en selecteer `Create > Create File...`
 
       * Naam: **body.jsp**
-   1. Klik op Alles **[!UICONTROL opslaan]**
+   1. Klik op **[!UICONTROL Save All]**
+
    Open `/apps/an-scf-sandbox/components/playpage/body.jsp` en plak in de volgende tekst:
 
    ```xml
@@ -110,7 +114,7 @@ CRXDE Lite gebruiken:
    </body>
    ```
 
-1. Klik op Alles **[!UICONTROL opslaan]**
+1. Klik op **[!UICONTROL Save All]**
 
 **De pagina in een browser weergeven in de bewerkingsmodus:**
 
@@ -143,7 +147,7 @@ Voor deze zandbak, begin met deze **communautaire** componenten (toelaten door d
 * Overzicht van revisies (weergave)
 * Stemming
 
-Kies bovendien **[!UICONTROL Algemene]** componenten, zoals
+Kies bovendien **[!UICONTROL General]** componenten, zoals
 
 * Afbeelding
 * Tabel
@@ -155,7 +159,7 @@ Kies bovendien **[!UICONTROL Algemene]** componenten, zoals
 >De componenten die voor het paginapunt worden toegelaten worden opgeslagen in de bewaarplaats als waarde van het `components` bezit van\
 >`/etc/designs/an-scf-sandbox/jcr:content/playpage/par` knooppunt.
 
-## Openingspagina {#landing-page}
+## Landing Page {#landing-page}
 
 In een meertalig milieu, zou de wortelpagina een manuscript omvatten dat het verzoek van de cliënt zou ontleden om de aangewezen taal te bepalen.
 
@@ -164,14 +168,14 @@ In dit eenvoudige voorbeeld wordt de basispagina statisch ingesteld op omleiding
 Wijzig de URL van de browser in de hoofdpagina: [http://localhost:4502/editor.html/content/an-scf-sandbox.html](https://locahost:4502/editor.html/content/an-scf-sandbox.html)
 
 * Het pictogram Pagina-informatie selecteren
-* Eigenschappen **[!UICONTROL voor openen selecteren]**
+* Selecteer **[!UICONTROL Open Properties]**
 * Op het tabblad GEAVANCEERD
 
    * Blader voor de Redirect-vermelding naar **[!UICONTROL Websites > SCF Sandbox Site > SCF Sandbox]**
-   * Click **[!UICONTROL OK]**
+   * Klik op **[!UICONTROL OK]**
 
-* Click **[!UICONTROL OK]**
+* Klik op **[!UICONTROL OK]**
 
 Als de site eenmaal is gepubliceerd, wordt het bladeren naar de hoofdpagina op een publicatie-instantie omgeleid naar de Engelse pagina.
 
-De laatste stap vóór het spelen met de gemeenschappenSCF componenten moet een Omslag van de Bibliotheek van de Cliënt (clientlibs) toevoegen... . **[](add-clientlibs.md)**
+De laatste stap vóór het spelen met de gemeenschappenSCF componenten moet een Omslag van de Bibliotheek van de Cliënt (clientlibs) toevoegen.... **[ê](add-clientlibs.md)**
