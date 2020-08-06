@@ -69,7 +69,7 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 
    ![screen_shot_2012-02-08at45743pm](assets/screen_shot_2012-02-08at45743pm.png)
 
-1. Selecteer de versie die u wilt herstellen en klik op **Herstellen**. De door u geselecteerde versie(s) (of bomen) worden hersteld.
+1. Selecteer de versie die u wilt herstellen en klik op **Herstellen**. AEM herstelt de versie(s) (of bomen) die u selecteert.
 
 ### Een structuur herstellen vanuit de console {#restoring-a-tree-from-the-console}
 
@@ -81,7 +81,7 @@ Deze methode kan worden gebruikt om een paginaversie te herstellen. Deze kan ook
 
    ![screen_shot_2012-02-08at45743pm-1](assets/screen_shot_2012-02-08at45743pm-1.png)
 
-1. Klik op **Herstellen**. De geselecteerde boomstructuur wordt hersteld.
+1. Klik op **Herstellen**. AEM herstelt de structuur die u hebt geselecteerd.
 
 ## Vergelijken met een vorige versie {#comparing-with-a-previous-version}
 
@@ -98,6 +98,7 @@ De huidige versie van de pagina vergelijken met een vorige versie:
    * Tekst die is verwijderd, is rood en doorgehaald.
    * De toegevoegde tekst is groen en gemarkeerd.
    * Afbeeldingen die zijn toegevoegd of verwijderd, zijn groene afbeeldingen.
+
    ![chlimage_1-105](assets/chlimage_1-105.png)
 
 1. Selecteer in de Sidetrap het subtabblad Versie **** herstellen en klik op de knop **&lt;&lt;Terug** om de huidige versie weer te geven.
@@ -149,6 +150,7 @@ De kalenderversie wordt gebruikt als u een specifieke dag hebt om te bekijken:
 
    * **Tijdlijn-verdraaiing** afsluiten om af te sluiten en terug te keren naar de huidige auteurspagina.
    * [Tijdlijn](#using-the-timewarp-timeline) tonen om de tijdlijn weer te geven.
+
    ![chlimage_1-107](assets/chlimage_1-107.png)
 
 ### De tijdlijn Tijdlijn Tijdlijn gebruiken {#using-the-timewarp-timeline}
