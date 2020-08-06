@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
 translation-type: tm+mt
 source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
+workflow-type: tm+mt
+source-wordcount: '499'
+ht-degree: 1%
 
 ---
 
@@ -100,6 +103,7 @@ Standaard geeft de wizard [**Pagina **](/help/sites-authoring/managing-pages.md#
    * **Naam**: `cq:showOnCreate`
    * **Type**: `Boolean`
    * **Waarde**: `false`
+
    De sectie **Meer titels en beschrijving** wordt niet meer weergegeven in de wizard **Pagina** maken.
 
 >[!NOTE]
