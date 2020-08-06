@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 5fca5401-502d-483b-bfc1-ef53e2c041b7
 translation-type: tm+mt
 source-git-commit: 9fa15a44cf83a50538cea3fb37bcccf405f66738
+workflow-type: tm+mt
+source-wordcount: '113'
+ht-degree: 1%
 
 ---
 
@@ -23,7 +26,7 @@ Door gebrek, is de capaciteit om op klassieke UI van de redacteur over te schake
 
 Voer de volgende stappen uit om de optie **Openen in klassieke gebruikersinterface** in het menu **Pagina-informatie** weer in te schakelen.
 
-1. Zoek het volgende knooppunt met behulp van CRXDE Lite:
+1. Gebruik CRXDE Lite om het volgende knooppunt te zoeken:
 
    `/libs/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
