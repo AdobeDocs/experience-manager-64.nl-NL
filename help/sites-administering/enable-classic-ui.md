@@ -11,16 +11,19 @@ content-type: reference
 discoiquuid: f3683696-663d-4de5-a388-1709f44d58c1
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '99'
+ht-degree: 0%
 
 ---
 
 
 # Toegang tot klassieke gebruikersinterface inschakelen{#enabling-access-to-classic-ui}
 
-Als de functionaliteit met aanraakbediening in veel gebieden van AEM op pariteit komt met en in feite die van de klassieke UI overschrijdt, wordt de toegang tot de klassieke interface via de interface met aanraakbediening nu standaard uitgeschakeld. Op de volgende pagina&#39;s wordt uitgelegd hoe u deze toegang indien nodig opnieuw kunt inschakelen.
+Als de functionaliteit met aanraakbediening op veel gebieden van de AEM op gelijke voet komt te staan met de klassieke interface en deze overschrijdt, is de toegang tot de klassieke interface via de interface met aanraakbediening nu standaard uitgeschakeld. Op de volgende pagina&#39;s wordt uitgelegd hoe u deze toegang indien nodig opnieuw kunt inschakelen.
 
 * [Editor](/help/sites-administering/enable-classic-ui-editor.md)
-* [Beheerconsoles](/help/sites-administering/enable-classic-ui-admin.md)
+* [Admin Consoles](/help/sites-administering/enable-classic-ui-admin.md)
 
 >[!NOTE]
 >
