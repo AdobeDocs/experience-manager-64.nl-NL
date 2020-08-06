@@ -1,8 +1,8 @@
 ---
 title: Naamconventies voor het testen van elementen
 seo-title: Naamgevingsconventies voor elementen
-description: Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content Repository. Adobe Experience Manager stelt echter andere conventies voor de naam van elementknooppunten op.
-seo-description: Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content Repository. Adobe Experience Manager stelt echter andere conventies voor de naam van elementknooppunten op.
+description: Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content Repository. Adobe Experience Manager stelt echter andere conventies op voor de naam van elementknooppunten.
+seo-description: Nodes in de opslagplaats zijn onderworpen aan naamconventies van de Java Content Repository. Adobe Experience Manager stelt echter andere conventies op voor de naam van elementknooppunten.
 uuid: 6b622a60-90e8-461e-9b67-42c11c7038f9
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: 55e66c66-0120-4ed4-94c5-d65a434bb59b
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '159'
+ht-degree: 0%
 
 ---
 
 
 # Naamconventies voor het testen van elementen{#naming-conventions-for-assets-testing}
 
-Nodes in de gegevensopslagruimte zijn onderworpen aan naamconventies van de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Adobe Experience Manager stelt echter andere conventies voor de naam van elementknooppunten op.
+Nodes in de gegevensopslagruimte zijn onderworpen aan naamconventies van de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Adobe Experience Manager stelt echter andere conventies op voor de naam van elementknooppunten.
 
 ## Klassieke interface {#classic-ui}
 
