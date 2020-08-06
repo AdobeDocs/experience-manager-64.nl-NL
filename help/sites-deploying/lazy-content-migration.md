@@ -11,13 +11,16 @@ topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
 translation-type: tm+mt
 source-git-commit: ba16a6870bc621a585b2b2d7c7536baef05adc72
+workflow-type: tm+mt
+source-wordcount: '678'
+ht-degree: 3%
 
 ---
 
 
 # Lazy Content Migration{#lazy-content-migration}
 
-Omwille van achterwaartse compatibiliteit worden de inhoud en configuratie in **/etc** en **/inhoud** die begint met AEM 6.3 niet onmiddellijk met de upgrade gewijzigd of aangeraakt. Dit wordt gedaan om ervoor te zorgen dat de gebiedsdelen van klantentoepassingen op die structuren intact blijven. De functionaliteit met betrekking tot deze inhoudsstructuren is nog steeds hetzelfde, ook al wordt de inhoud in een gedeelte van het tekstvak AEM 6.4 op een andere plaats gehost.
+Met het oog op achterwaartse compatibiliteit worden de inhoud en configuratie in **/etc** en **/inhoud** die begint met AEM 6.3 niet onmiddellijk met de upgrade gewijzigd of aangepast. Dit wordt gedaan om ervoor te zorgen dat de gebiedsdelen van klantentoepassingen op die structuren intact blijven. De functionaliteit met betrekking tot deze inhoudsstructuren is nog steeds hetzelfde, ook al wordt de inhoud in een uiteinde van het vak AEM 6.4 op een andere plaats gehost.
 
 Hoewel niet al deze locaties automatisch kunnen worden getransformeerd, wordt een aantal vertragingen `CodeUpgradeTasks` ook wel Lazy Content Migration genoemd. Hierdoor kunnen klanten deze automatische transformaties activeren door de instantie opnieuw te starten met deze systeemeigenschap:
 
@@ -33,7 +36,7 @@ Aangezien dit typisch ook het aanpassen van toepassing vereist zou deze activite
 
 Hieronder vindt u de volledige lijst van de in punt 6.4 `CodeUpgradeTasks` opgenomen gegevens:
 
-| **Naam** | **Relevant voor AEM-versies vóór** | **Type migratie** | **Details** |
+| **Naam** | **Relevant voor AEM versies voorafgaand aan** | **Type migratie** | **Details** |
 |---|---|---|---|
 | `Cq561ProjectContentUpgrade` | &lt; 5.6.1 | Meteen |  |
 | `Cq60MSMContentUpgrade` | &lt; 6.0 | Meteen | Detecteert alle `LiveRelationShips` items `VersionStorage` die zijn verwijderd en voegt uitsluitingseigenschap toe aan het bovenliggende element |
