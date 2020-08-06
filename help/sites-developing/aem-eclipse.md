@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: a2ae76a8-50b0-4e43-b791-ad3be25b8582
 translation-type: tm+mt
 source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+workflow-type: tm+mt
+source-wordcount: '810'
+ht-degree: 1%
 
 ---
 
@@ -23,12 +26,12 @@ source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
 
 De AEM Developer Tools for Eclipse is een Eclipse-plug-in die is gebaseerd op de [Eclipse-plug-in voor Apache Sling](https://sling.apache.org/documentation/development/ide-tooling.html) die is uitgebracht onder de Apache-licentie 2.
 
-Het biedt verschillende functies die AEM-ontwikkeling vereenvoudigen:
+Het biedt verschillende functies die AEM ontwikkeling vergemakkelijken:
 
-* Naadloze integratie met AEM-instanties via Eclipse Server Connector.
+* Naadloze integratie met AEM instanties door de Schakelaar van de Server van Eclipse.
 * Synchronisatie voor inhoud en OSGI-bundels.
 * Foutopsporingsondersteuning met functies voor hot-swappable code.
-* Eenvoudige laarzentrekker van projecten AEM via een specifieke Tovenaar van de Aanmaak van het Project.
+* Eenvoudige laarzentrekker van AEM projecten via een specifieke Tovenaar van de Aanmaak van het Project.
 * Eenvoudig bewerken van JCR-eigenschappen.
 
 ## Vereisten {#requirements}
@@ -44,11 +47,11 @@ Voordat u de AEM Developer Tools kunt gebruiken, moet u:
 >
 >In MacOS moet u met de rechtermuisknop op **Eclipse.app** klikken en vervolgens **Pakketinhoud** tonen selecteren om uw `eclipse.ini`**.**
 
-## AEM Developer Tools voor Eclipse installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
+## Hoe te om de Hulpmiddelen van de Ontwikkelaar van de AEM voor Eclipse te installeren {#how-to-install-the-aem-developer-tools-for-eclipse}
 
 Nadat u aan de bovenstaande [vereisten](#requirements) hebt voldaan, kunt u de insteekmodule als volgt installeren:
 
-1. Blader door de [**AEM **Developer Tools-website](https://eclipse.adobe.com/aem/dev-tools/).
+1. Blader door de website [**AEM **Developer Tools](https://eclipse.adobe.com/aem/dev-tools/).
 
 1. Kopieer de **installatiekoppeling**.
 
@@ -56,13 +59,13 @@ Nadat u aan de bovenstaande [vereisten](#requirements) hebt voldaan, kunt u de i
 
 1. Open het menu **Help** in Eclipse.
 1. Klik op **Nieuwe software** installeren.
-1. **Klik op** Toevoegen... .
+1. Click **Add...**.
 1. Typ in **Naam** AEM Developer Tools.
 1. Kopieer de installatie-URL in **Locatie** .
 1. Click **Ok**.
-1. Controleer zowel **AEM** - als **Sling** -plug-ins.
-1. Click **Next**.
-1. Click **Next**.
+1. Controleer zowel de **AEM** als de **slingerplug** .
+1. Klik op **Next**.
+1. Klik op **Next**.
 1. Accepteer de lokale overeenkomsten en klik op **Voltooien**.
 1. Klik op **Ja** om Eclipse opnieuw te starten.
 
@@ -72,29 +75,29 @@ Nadat u aan de bovenstaande [vereisten](#requirements) hebt voldaan, kunt u de i
 >
 >Zie [Werken met een bundel in Eclipse toen het van AEM](https://stackoverflow.com/questions/29699726/how-to-work-with-a-bundle-in-eclipse-when-it-was-downloaded-from-aem/29705407#29705407)werd gedownload.
 
-## Het AEM-perspectief {#the-aem-perspective}
+## Het AEM perspectief {#the-aem-perspective}
 
-De hulpmiddelen van de Ontwikkeling AEM voor Eclipse schepen met een Perspectief dat u volledige controle over uw projecten en instanties AEM biedt.
+De hulpmiddelen van de Ontwikkeling van de AEM voor Eclipse schepen met een Perspectief dat u volledige controle over uw AEM projecten en instanties biedt.
 
 ![chlimage_1-2](assets/chlimage_1-2.jpeg)
 
 ## Monster nemen van meermoduleproject {#sample-multi-module-project}
 
-De hulpmiddelen van de Ontwikkelaar AEM voor Eclipse komen met een steekproef, multi-moduleproject dat u snel met een projectopstelling in Verduistering helpt te versnellen, evenals dienst als best-praktijkgids aan verscheidene eigenschappen AEM. [Meer informatie over het Projectarchetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
+De AEM Hulpmiddelen van de Ontwikkelaar voor Eclipse komen met een steekproef, multi-moduleproject dat u snel aan snelheid met een projectopstelling in Verduistering helpt, evenals dienst als best-praktijkgids aan verscheidene AEM eigenschappen. [Meer informatie over het Projectarchetype](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype).
 
 Ga als volgt te werk om het voorbeeldproject te maken:
 
-1. Blader in het menu **Bestand** > **Nieuw** > **Project** naar de **sectie AEM** en selecteer **AEM-voorbeeldproject** voor meerdere modules.
+1. Blader in het menu **Bestand** > **Nieuw** > **Project** naar de sectie **AEM** en selecteer **AEM Monster nemen van project** met meerdere modules.
 
    ![chlimage_1-69](assets/chlimage_1-69.png)
 
-1. Click **Next**.
+1. Klik op **Next**.
 
    >[!NOTE]
    >
    >Deze stap kan even duren omdat m2eclipse de catalogi van archetype moet aftasten.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-78](assets/chlimage_1-70.png)
 
 1. Kies **com.adobe.granite.archetypes: sample-project-archetype: (hoogste aantal)** van het menu, dan klik **daarna**.
 
@@ -104,7 +107,7 @@ Ga als volgt te werk om het voorbeeldproject te maken:
 
    ![chlimage_1-72](assets/chlimage_1-72.png)
 
-1. Vervolgens moet u een AEM-server configureren waarmee Eclipse verbinding maakt.
+1. Vervolgens moet u een AEM configureren waarmee Eclipse verbinding maakt.
 
    Om de debugger eigenschap te gebruiken, moet u AEM op zuivert wijze begonnen zijn - die kan worden bereikt bijvoorbeeld door het volgende aan de bevellijn toe te voegen:
 
@@ -135,7 +138,7 @@ Om ongeldige gebiedsdelen en projectdefinitie op te lossen ga als volgt te werk:
 
 Automatisch aanvullen van de tagbibliotheek werkt buiten het vak, aangezien de juiste afhankelijkheden aan het project worden toegevoegd. Er is één bekend probleem wanneer u de AEM Uber Jar gebruikt, dat niet de benodigde tld- en TagExtraInfo-bestanden bevat.
 
-Als u dit wilt omzeilen, zorgt u ervoor dat het artefact org.apache.sling.scripting.jsp.taglib zich in het klassepad vóór de AEM Uber Jar bevindt. Voor Geweven projecten, plaats het volgende gebiedsdeel in pom.xml vóór Uber Jar.
+Als u dit wilt omzeilen, zorgt u ervoor dat het artefact org.apache.sling.scripting.jsp.taglib zich in het klassenpad vóór de AEM Uber Jar bevindt. Voor Geweven projecten, plaats het volgende gebiedsdeel in pom.xml vóór Uber Jar.
 
 ```xml
 <dependency>
@@ -145,7 +148,7 @@ Als u dit wilt omzeilen, zorgt u ervoor dat het artefact org.apache.sling.script
 </dependency>
 ```
 
-Zorg ervoor dat u de juiste versie voor uw implementatie van AEM toevoegt.
+Zorg ervoor om de juiste versie voor uw plaatsing van AEM toe te voegen.
 
 ## Meer informatie {#more-information}
 
