@@ -8,6 +8,9 @@ topic-tags: author
 discoiquuid: null
 translation-type: tm+mt
 source-git-commit: 19dcda357b34e7160792d43cb9335fc3be0dedbc
+workflow-type: tm+mt
+source-wordcount: '2745'
+ht-degree: 0%
 
 ---
 
@@ -19,12 +22,12 @@ Dit document bevat instructies voor het installeren en configureren van een werk
 ## Info {#about}
 
 Dit document is bedoeld voor beheerders of ontwikkelaars die verantwoordelijk zijn voor het installeren, configureren, beheren of implementeren van Workbench.
-Ook de informatie die nodig is om uw systeem te configureren ter ondersteuning van uw geüpgrade Adobe® AEM forms® Enterprise Suite (ES) Update 1 (8.2.x) en Adobe® AEM forms® Enterprise Suite 2 (ES2) processen.
+Ook de informatie die nodig is om uw systeem te configureren ter ondersteuning van uw geüpgrade Adobe® AEM Forms® Enterprise Suite (ES) Update 1 (8.2.x)- en Adobe® AEM forms® Enterprise Suite 2 (ES2)-processen.
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die dit document leest vertrouwd is met het besturingssysteem Microsoft® Windows®.
 
 ## Extra informatie {#additional-information}
 
-De bronnen in deze tabel kunnen u helpen meer te leren over AEM Forms en aan de slag te gaan.
+De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de slag te gaan met AEM Forms.
 <table> 
  <tbody> 
   <tr> 
@@ -36,31 +39,31 @@ De bronnen in deze tabel kunnen u helpen meer te leren over AEM Forms en aan de 
    <td><p><a href="http://www.adobe.com/go/learn_aemforms_workbench_61">Workbench Help</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Algemene informatie over AEM Forms en hoe deze kan worden geïntegreerd met andere Adobe-producten</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">Overzicht</a><br /> van AEM-formulieren <br /> </p> </td> 
+   <td><p>Algemene informatie over AEM Forms en de wijze waarop deze kan worden geïntegreerd met andere Adobe-producten</p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms - Overzicht</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Een zelfstudie om een AEM Forms-toepassing te maken en te testen in de werkruimte</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">Uw eerste AEM Forms Application</a><br /> maken <br /> </p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_firstapp_ds_65">Uw eerste AEM Forms-toepassing maken</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Alle documentatie beschikbaar voor AEM Forms</p> </td> 
-   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-documentatie</a><br /><br /> </p> </td> 
+   <td><p>Alle documentatie die beschikbaar is voor AEM Forms</p> </td> 
+   <td><p><a href="http://adobe.com/go/learn_aemforms_introduction_65">AEM Forms-documentatie</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
-   <td><p>Andere services en producten die met AEM Forms integreren</p> </td> 
-   <td><p><a href="http://www.adobe.com/">www.adobe.com</a><br /><br /> </p> </td> 
+   <td><p>Andere diensten en producten die met AEM Forms integreren</p> </td> 
+   <td><p><a href="http://www.adobe.com/">www.adobe.com</a><br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Patch updates, technische notities en aanvullende informatie over deze productversie</p> </td> 
-   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Contact opnemen met de ondersteuning</a><br /> voor Adobe Enterprise <br /> </p> </td> 
+   <td><p><a href="https://www.adobe.com/account/sign-in.supportportal.html">Contact opnemen met Adobe Enterprise Support</a><br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 >[!NOTE]
 >
->De Flex-werkruimte is verouderd voor AEM-formulieren. Deze is beschikbaar voor de release van AEM Forms.
+>De Flex-werkruimte is verouderd voor AEM Forms. Deze is beschikbaar voor de AEM Forms-release.
 
 ## Voordat u gaat installeren {#before-you-install}
 
@@ -74,7 +77,7 @@ De volgende afbeelding toont de Workbench-installatie, inclusief:
 
 >[!NOTE]
 >
->Voor de AEM Forms-server is een afzonderlijk installatieprogramma vereist. Raadpleeg de documentatie bij de installatie van AEM Forms in JEE voor meer informatie.
+>Voor de AEM Forms-server is een afzonderlijk installatieprogramma vereist. Raadpleeg voor meer informatie de documentatie bij de installatie van AEM Forms in JEE.
 
 ## Systeemvereisten {#system-prerequisites}
 
@@ -93,7 +96,7 @@ Schijfruimte voor installatie:
 >Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
 
 * Hardwarevereisten: Intel® Pentium® 4 of AMD equivalent, 1 GHz processor.
-* Download en installeer de nieuwste versie van Adobe AIR (van <a href="http://www.adobe.com/">www.adobe.com</a>) die vereist is voor de Community Help-client, geïntegreerd met Workbench.
+* Download en installeer de nieuwste versie van Adobe AIR (van <a href="http://www.adobe.com/">www.adobe.com</a>) die vereist is voor Community Help Client, geïntegreerd met Workbench.
 * Java™ Runtime Environment (JRE) 6.0 update 22 of hoger aan 6.0 *Nieuw voor 10*.
 * Monitorresolutie van minimaal 1024 x 768 pixels met 16-bits kleur of hoger.
 * TCP/IPv4- of TCP/IPv6-netwerkverbinding met de AEM Forms-server.
@@ -108,9 +111,9 @@ Schijfruimte voor installatie:
 >
 >U moet over beheerdersrechten beschikken om Workbench te installeren. Als u een niet-beheerdersaccount gebruikt, wordt u door het installatieprogramma gevraagd om de referenties voor een geschikte account.
 
-### Ondersteunde platforms {#supported-platforms}
+### Ondersteunde Platforms {#supported-platforms}
 
-Zie de volledige lijst met ondersteunde platforms voor Workbench op ondersteunde [AEM-platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Zie de volledige lijst met ondersteunde platforms voor Workbench op door [AEM Forms ondersteunde Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Installatieoverwegingen voor Designer {#designer-installation-considerations}
 
@@ -125,14 +128,13 @@ De onderstaande tabel bevat een volledige lijst met mogelijke installatiescenari
   </tr> 
   <tr> 
    <td><p>Acrobat Pro of Acrobat Pro Extended (inclusief Designer)</p> </td> 
-   <td><p>Geen.  
-Met de Workbench-installatie wordt een exemplaar van Designer op uw computer gedetecteerd dat met Acrobat Pro of Acrobat Pro Extended is geïnstalleerd.
-Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar bestaan, bijvoorbeeld Designer 8.2.x en 9.0.x. U hoeft de geïnstalleerde versie van Designer die met Acrobat 10 Pro of Acrobat 10 Pro Extended is geïnstalleerd, niet te verwijderen.
+   <td><p>Geen. De Workbench-installatie detecteert een exemplaar van Designer op uw computer dat met Acrobat Pro of Acrobat Pro Extended is geïnstalleerd.
+Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar bestaan, bijvoorbeeld Designer 8.2.x en 9.0.x. Het is niet nodig om de versie van Designer die met Acrobat 10 Pro of Acrobat 10 Pro Extended is geïnstalleerd, te verwijderen.
 <br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Designer (zelfstandig)</p> </td> 
-   <td><p>Geen. De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd met het Workbench-installatieprogramma, gepatcheerd. <br /> Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench. <br /> </p> </td> 
+   <td><p>Geen. De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd met het Workbench-installatieprogramma, gepatcheerd. Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -180,6 +182,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 1. Voer een van de volgende taken uit:
    * Navigeer naar de map \workbench op de installatiemedia en dubbelklik op het bestand run_windows_installer.bat.
    * Download de Workbench en decomprimeer deze naar uw bestandssysteem. Nadat het is gedownload, navigeert u naar de map \workbench en dubbelklikt u op het bestand run_windows_installer.bat.
+
    >[!IMPORTANT]
    >
    >Het Workbench-installatieprogramma wordt alleen uitgevoerd vanaf een dvd of lokaal station. Deze kan niet vanaf een externe site worden uitgevoerd.
@@ -206,14 +209,14 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 1. Controleer het installatieoverzicht. Selecteer AEM Forms Workbench starten om Workbench te starten en klik op Volgende.
 1. Controleer de opmerkingen bij de release en klik op Gereed.
 1. De volgende items zijn nu op uw computer geïnstalleerd:
-   * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM-formulieren > Workbench als u de sneltoetsmap daar wilt opslaan. Raadpleeg de documentatie bij Workbench gebruiken voor meer informatie.
+   * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Raadpleeg de documentatie bij Workbench gebruiken voor meer informatie.
    * **Designer**: U kunt Designer openen vanuit Workbench. Zie Aan de slag in Designer Help voor meer informatie.
    * **Workbench-plug-in**: Volg de instructies in &quot;3.3 De functie Workbench Eclipse installeren&quot; op pagina 6.
-   * **AEM Forms SDK**: Voor meer informatie bij het gebruiken van SDK, zie <a href="http://www.adobe.com/go/learn_lc_programming_10">Programmering met Vormen</a>AEM.
+   * **AEM Forms SDK**: Zie <a href="http://www.adobe.com/go/learn_lc_programming_10">Programmeren met AEM Forms</a>voor meer informatie over het gebruik van de SDK.
 
 ## Processen upgraden {#upgrading-processes}
 
-Met de wizard Upgrade kunt u AEM Forms Update 1- en LiveCycle ES2-processen upgraden naar AEM Forms-toepassingen. Zie Informatie over verouderde artefacten bijwerken in Workbench Help voor meer informatie.
+AEM Forms Update 1 en LiveCycle ES2 processen kunnen aan de toepassingen van AEM Forms worden bevorderd gebruikend de Tovenaar van de Verbetering. Zie Informatie over verouderde artefacten bijwerken in Workbench Help voor meer informatie.
 
 ### De functie Workbench Eclipse installeren {#installing-workbench-eclipse-feature}
 
@@ -240,6 +243,7 @@ Workbench ondersteunt de updatefunctie om ervoor te zorgen dat u de meest bijgew
 * WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: Dit bevindt zich in [org.eclipse.wst.xml_ui.feature.feature.group]
 
 * Plug-in &#39;org.apache.commons.lang_2.3.0&#39; [n.v.t].: Dit bevindt zich in de &#39;Mijn (Vereiste) Lijst van de Taak&#39; [org.eclipse.mylyn_feature.feature.group]
+
    </p> </td> 
   </tbody>
   </table>
@@ -256,15 +260,15 @@ Workbench ondersteunt de updatefunctie om ervoor te zorgen dat u de meest bijgew
 
    >[!NOTE]
    >
-   >Met de Adobe AEM Forms Discovery Plug-in voor Flash Builder kunt u snel Adobe Flex- en AIR-toepassingen maken die een service oproepen die onderdeel is van AEM Forms via de externe eindpunten. Informatie over het installeren en bijwerken van de plug-in is beschikbaar op de website van Adobe onder **Koppeling vereist**.
+   >Met de Adobe AEM Forms Discovery-plug-in voor Flash Builder kunt u snel Adobe Flex- en AIR-toepassingen maken die een service aanroepen die deel uitmaakt van AEM Forms via de afsluitende eindpunten. Informatie over het installeren en bijwerken van de plug-in is beschikbaar op de website Adobe op de website **Link Required**.
 
 ### Configureren en aanmelden op de server {#configuring-and-logging-server}
 
-Als u Workbench wilt gebruiken, moet u een exemplaar van AEM Forms hebben dat wordt uitgevoerd, meestal op een aparte computer. U moet een gebruikersnaam en wachtwoord hebben om u aan te melden bij AEM Forms, en informatie over de locatie van de server.
+Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meestal op een aparte computer. U moet een gebruikersnaam en wachtwoord hebben om u aan te melden bij AEM Forms, en informatie over de locatie van de server.
 
 >[!NOTE]
 >
->Als u AEM Forms zodanig hebt geconfigureerd dat de EMC Documentum- of IBM FileNet-opslagprovider wordt gebruikt en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in de beheerconsole van AEM-formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op username@Repository.
+>Als u AEM Forms hebt geconfigureerd voor gebruik van de EMC Documentum- of IBM FileNet-opslagprovider en u zich wilt aanmelden bij een andere opslagplaats dan de opslagplaats die in AEM beheerconsole voor formulieren als standaard is geconfigureerd, geeft u de gebruikersnaam op als username@Repository.
 
 ### Instellingen voor time-out configureren {#configuring-timeout-settings}
 
@@ -290,7 +294,8 @@ Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in he
 1. Kopieer het certificaat naar de map [Workbench_HOME]/workbench/jre/lib/security.
 
 1. Open een opdrachtpromptvenster, navigeer naar [Workbench_HOME]/workbench/jre/bin en typ de volgende opdracht:
-   `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`Waar:
+   `keytool -import -storepass changeit -file [Workbench_HOME]\workbench\jre\lib\security\ssl_cert_for_certname.cer -keystore [Workbench_HOME]\workbench\jre\lib\security\cacerts -alias example`
+Waar:
    * de wijziging is het standaardwachtwoord aan cacerts keystore.
    * certname is het certificaat dat u hebt geselecteerd in stap 1.
    * Dit is bijvoorbeeld de alias die u kiest voor het certificaat. Deze waarde kan worden gewijzigd
@@ -315,13 +320,13 @@ Wanneer de de vormengenerator of output naar, of updates, ingangen in het geheim
 * **Renderopties**: In de weergegeven formuliercache wordt de inhoud van de cache afzonderlijk opgeslagen voor elke set unieke renderopties.
 
 
-De dienst van Vormen ontvangt malplaatjes door verwijzing naar filename of bewaarplaats plaats, of door waarde als voorwerp van XML in geheugen.
+De Forms-service ontvangt sjablonen op basis van de bestandsnaam of de locatie in de opslagplaats, of op basis van de waarde als een XML-object in het geheugen.
 * **Sjablonen doorgegeven als verwijzing**: Hiermee gebruikt u de hoofdmap van de inhoud en de naam van het formulier. Als unieke sjablonen met verschillende bestandsnamen bij elke aanvraag met deze methode worden doorgegeven, wordt de schijfcache eindeloos groter en wordt deze nooit opnieuw gebruikt. Om dit te voorkomen, zouden de unieke malplaatjes met zelfde filename moeten worden overgegaan om ervoor te zorgen dat het zelfde geheime voorgeheugen voor alle verzoeken wordt bijgewerkt.
 * **Sjablonen doorgegeven op waarde**: Gebruikt sjabloonbytes die samen met de gegevens worden doorgegeven met de parameter theinDataDoc. Als unieke sjablonen met verschillende UUID worden doorgegeven met deze methode, wordt de schijfcache eindeloos groter en wordt deze nooit opnieuw gebruikt. Om dit te verhinderen, zou het attribuut UUID van alle malplaatjes moeten worden gestript om ervoor te zorgen dat geen geheim voorgeheugen voor het malplaatje wordt gecreeerd. Als u dezelfde UUID doorgeeft die niet gelijk is aan null, kunnen de cacheobjecten worden gemaakt, maar wordt gegarandeerd dat dezelfde cache bij elke aanvraag wordt bijgewerkt.
 
-Als u wilt voorkomen dat de cache eindeloos groeit, moet u rekening houden met de volgende factoren voor het renderen van dynamisch gegenereerde sjablonen met de nieuwe API&#39;s van AEM Forms, namelijk renderHTMLForm2 en renderPDFForm2.
+Als u wilt voorkomen dat de cache eindeloos groeit, moet u rekening houden met de volgende factoren voor het renderen van dynamisch gegenereerde sjablonen met de nieuwe AEM Forms API&#39;s: renderHTMLForm2 en renderPDFForm2.
 
-Wanneer u de nieuwe API&#39;s gebruikt, wordt de sjabloon doorgegeven als een documentobject, dat wordt afgehandeld in de service Forms op basis van het feit of de sjabloon al dan niet is gepassiveerd.
+Wanneer u de nieuwe API&#39;s gebruikt, wordt de sjabloon doorgegeven als een documentobject, dat wordt afgehandeld in de Forms-service op basis van het feit of de sjabloon al dan niet is gepassioneerd.
 
 Houd rekening met de volgende aspecten van gepassiveerde documenten waarin de UUID en de inhoudswortel fungeren als de cachemoets:
 * De cache wordt niet gemaakt voor gepassiveerde invoersjablonen zonder UUID.
@@ -330,7 +335,7 @@ Houd rekening met de volgende aspecten van gepassiveerde documenten waarin de UU
 Houd rekening met het volgende voor niet-gepassiveerde documenten waarbij de bestandsnaam en de hoofdmap van de inhoud als cachesleutel fungeren:
 * Voor niet-gepassiveerde invoersjablonen is het in cache plaatsen afhankelijk van de hoofdmap en bestandsnaam van de inhoud waaruit het document is gegenereerd.
 Dezelfde cache wordt alleen gebruikt voor aanvragen met dezelfde hoofdmap en dezelfde naam voor de sjabloon.
-De volgende aanbevolen procedures zorgen ervoor dat de cache niet eindeloos wordt wanneer dynamisch gegenereerde sjablonen worden doorgegeven aan de service Forms:
+De volgende beste praktijken zullen ervoor zorgen dat het geheime voorgeheugen niet eindeloos groeit wanneer dynamisch geproduceerde malplaatjes worden overgegaan tot de dienst van Forms:
    * Strip UUID of ga zelfde UUID in alle dynamisch geproduceerde malplaatjes over.
    * Genereer het document op basis van sjabloonbytes of op basis van dezelfde bestandsnaam op de schijf.
 
@@ -340,7 +345,7 @@ Gebruik de functie Software in het Configuratiescherm om het verwijderprogramma 
 
 ## AEM Forms XDC Editor configureren {#configuring-aem-forms-xdc-editor}
 
-Met de XDC Editor kunnen beheerders van netwerkprinters XDC-bestanden (XML Forms Architecture Device Configuration) maken en wijzigen. XDC-bestanden beschrijven de mogelijkheden van printers, zoals de printertaal of de correlatie tussen papierformaat en ladelocatie.
+Met behulp van de XDC Editor kunnen netwerkprinterbeheerders XDC-bestanden (XML Forms Architecture Device Configuration) maken en wijzigen. XDC-bestanden beschrijven de mogelijkheden van printers, zoals de printertaal of de correlatie tussen papierformaat en ladelocatie.
 
 Voordat uw beheerder van de netwerkprinter de XDC Editor gebruikt, verplaatst u de voorbeeld-XDC-bestanden en raadpleegt u Apparaatprofielen maken met de XDC Editor.
 
@@ -349,6 +354,6 @@ Voordat uw beheerder van de netwerkprinter de XDC Editor gebruikt, verplaatst u 
 1. Kopieer de inhoud van deze map naar een map die toegankelijk is via het Workbench- of Eclipse-systeem.
 
 **Voor de XDC Editor Help**:
-1. Ga naar de documentatiewebsite van AEM Forms.
+1. Ga naar de AEM Forms documentatiewebsite.
 1. Klik op het tabblad Ontwikkelen en navigeer naar Apparaatprofielen maken met XDC Editor. Download het bestand xdc_editor_help_web.zip en installeer de Help-bestanden aan de hand van de instructies in het bestand Readme.
 
