@@ -28,7 +28,7 @@ Met de functie Pagina&#39;s diff kunt u twee pagina&#39;s naast elkaar vergelijk
 
 >[!CAUTION]
 >
->Als u een versie voorafgaand aan AEM 6.4.3 in werking stelt, moet de gebruiker de **Modify/Create/Delete** toestemming op de knoop hebben om de eigenschap `/content/versionhistory` te gebruiken.
+>Als u een versie voorafgaand aan AEM 6.4.3 in werking stelt, moet de gebruiker de toestemming hebben **wijzigen/creëren/schrappen** op de knoop `/content/versionhistory` om de eigenschap te gebruiken.
 >
 >Zie [Developing and Page Diff](/help/sites-developing/pagediff.md#operation-details) voor meer technische details over deze functie.
 
@@ -54,7 +54,7 @@ Als u bijvoorbeeld versies vergelijkt, wordt de huidige versie links weergegeven
 
 De bron van beide pagina&#39;s wordt duidelijk weergegeven in de koptekstbalk boven in het browservenster.
 
-![chlimage_1-355](assets/chlimage_1-355.png)
+![chlimage_1-353](assets/chlimage_1-355.png)
 
 De diff ontdekt veranderingen op het component en HTML niveau. Items die zijn gewijzigd, worden met verschillende kleuren gemarkeerd.
 
