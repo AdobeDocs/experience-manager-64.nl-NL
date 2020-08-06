@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2603'
+ht-degree: 0%
 
 ---
 
@@ -27,37 +30,38 @@ De modellen van het werkschema bestaan uit een reeks stappen van diverse types. 
 >
 >* [AEM Forms Workflow Step Reference](/help/forms/using/aem-forms-workflow-step-reference.md)
 >* [Middelen verwerken met behulp van mediafuncties en workflows](/help/assets/media-handlers.md)
+
 >
 
 
 
 ## Step Properties {#step-properties}
 
-Elke stapcomponent heeft een dialoogvenster **[!UICONTROL Step Properties]** waarin u de vereiste eigenschappen kunt definiëren en bewerken.
+Elke stapcomponent heeft een **[!UICONTROL Step Properties]** dialoogvenster waarin u de vereiste eigenschappen kunt definiëren en bewerken.
 
 ### Step Properties - Common tab {#step-properties-common-tab}
 
-Een combinatie van de volgende eigenschappen is beschikbaar voor de meeste workflowstapcomponenten op het tabblad **[!UICONTROL Algemeen]** van het dialoogvenster Eigenschappen:
+Een combinatie van de volgende eigenschappen is beschikbaar voor de meeste workflowstapcomponenten op het **[!UICONTROL Common]** tabblad van het dialoogvenster Eigenschappen:
 
-* **[!UICONTROL Titel]**
+* **[!UICONTROL Title]**
 
    De titel voor de stap.
 
-* **[!UICONTROL Beschrijving]**
+* **[!UICONTROL Description]**
 
    Een beschrijving van de stap.
 
-* **[!UICONTROL Werkstroomwerkgebied]**
+* **[!UICONTROL Workflow Stage]**
 
    Een vervolgkeuzelijst om een [werkgebied](/help/sites-developing/workflows.md#workflow-stages) op de stap toe te passen.
 
-* **[!UICONTROL Time-out]**
+* **[!UICONTROL Timeout]**
 
    De periode waarna de stap wordt &quot;uitgezet&quot;.
 
-   U kunt kiezen tussen: **[!UICONTROL Uit]**, **[!UICONTROL onmiddellijk]**, **[!UICONTROL 1u]**, **[!UICONTROL 6u]**, **[!UICONTROL 12u]******, 24u.
+   U kunt kiezen tussen: **[!UICONTROL Off]**, **[!UICONTROL Immediate]**, **[!UICONTROL 1h]**, **[!UICONTROL 6h]**, **[!UICONTROL 12h]**, **[!UICONTROL 24h]**.
 
-* **[!UICONTROL Timeout-handler]**
+* **[!UICONTROL Timeout Handler]**
 
    De manager die het werkschema zal controleren wanneer de staptijden uit; bijvoorbeeld:
 
@@ -69,31 +73,31 @@ Een combinatie van de volgende eigenschappen is beschikbaar voor de meeste workf
 
 #### Step Properties - User/Group tab {#step-properties-user-group-tab}
 
-De volgende eigenschappen zijn beschikbaar voor veel workflowstapcomponenten op het tabblad **[!UICONTROL Gebruiker/Groep]** van het dialoogvenster Eigenschappen:
+De volgende eigenschappen zijn beschikbaar voor veel workflowstep componenten op het **[!UICONTROL User/Group]** tabblad van het dialoogvenster Eigenschappen:
 
-* **[!UICONTROL Gebruikers via e-mail op de hoogte stellen]**
+* **[!UICONTROL Notify user via email]**
 
    * U kunt deelnemers op de hoogte stellen door hen een e-mail te sturen wanneer de werkstroom de stap bereikt.
-   * Indien ingeschakeld, wordt een e-mail verzonden naar de gebruiker die door de eigenschap **[!UICONTROL Gebruiker/Groep]** is gedefinieerd of naar elk lid van de groep als een groep is gedefinieerd.
+   * Indien ingeschakeld, wordt een e-mail verzonden naar de gebruiker die door de eigenschap is gedefinieerd **[!UICONTROL User/Group]** of naar elk lid van de groep als een groep is gedefinieerd.
 
-* **[!UICONTROL Gebruiker/groep]**
+* **[!UICONTROL User/Group]**
 
    * In een keuzelijst kunt u navigeren en een gebruiker of groep selecteren.
    * Als u de stap toewijst aan een specifieke gebruiker, kan alleen deze gebruiker actie ondernemen voor de stap.
-   * Als u de stap toewijst aan een volledige groep, dan wanneer het werkschema deze stap bereikt zullen alle gebruikers in deze groep de actie in hun Postvak van de **[!UICONTROL Werkstroom]** hebben.
+   * Als u de stap toewijst aan een hele groep, dan wanneer de werkstroom deze stap bereikt zullen alle gebruikers in deze groep de actie in hun hebben **[!UICONTROL Workflow Inbox]**.
    * Zie [Deelnemen aan workflows](/help/sites-authoring/workflows-participating.md) voor meer informatie.
 
 ## EN splitsen {#and-split}
 
-Met **[!UICONTROL EN splitsen]** maakt u een splitsing in de workflow, waarna beide vertakkingen actief zijn. U voegt workflowstappen naar wens toe aan elke vertakking. Met deze stap kunt u meerdere verwerkingspaden in de workflow opnemen. U kunt bijvoorbeeld toestaan dat bepaalde stappen van de revisie parallel worden uitgevoerd, zodat u tijd bespaart.
+Met deze optie **[!UICONTROL AND Split]** maakt u een splitsing in de workflow, waarna beide vertakkingen actief zijn. U voegt workflowstappen naar wens toe aan elke vertakking. Met deze stap kunt u meerdere verwerkingspaden in de workflow opnemen. U kunt bijvoorbeeld toestaan dat bepaalde stappen van de revisie parallel worden uitgevoerd, zodat u tijd bespaart.
 
 ![wf-26](assets/wf-26.png)
 
 ### EN splitsen - Configuratie {#and-split-configuration}
 
-* Bewerk de eigenschappen **[!UICONTROL EN splitsen]** :
+* Bewerk de **[!UICONTROL AND Split]** eigenschappen:
 
-   * **[!UICONTROL Gesplitste naam]**: een naam voor verklarende doeleinden toewijzen.
+   * **[!UICONTROL Split Name]**: een naam voor verklarende doeleinden toewijzen.
    * Selecteer het aantal vereiste vertakkingen; 2, 3, 4 of 5.
 
 * Voeg zo nodig workflowstappen toe aan de vertakkingen.
@@ -102,9 +106,9 @@ Met **[!UICONTROL EN splitsen]** maakt u een splitsing in de workflow, waarna be
 
 ## Containerstap {#container-step}
 
-Met een **[!UICONTROL Container]** -stap wordt een ander workflowmodel gestart dat als een onderliggende workflow wordt uitgevoerd.
+Een **[!UICONTROL Container]** stap start een ander workflowmodel dat wordt uitgevoerd als een onderliggende workflow.
 
-Met deze **[!UICONTROL container]]**kunt u workflowmodellen opnieuw gebruiken om algemene stappen te implementeren. Een workflowmodel voor vertaling kan bijvoorbeeld worden gebruikt in meerdere bewerkingsworkflows.
+Hierdoor kunt u workflowmodellen **[!UICONTROL Container]]**opnieuw gebruiken om algemene stappen te implementeren. Een workflowmodel voor vertaling kan bijvoorbeeld worden gebruikt in meerdere bewerkingsworkflows.
 
 ![wf-28](assets/wf-28.png)
 
@@ -112,35 +116,35 @@ Met deze **[!UICONTROL container]]**kunt u workflowmodellen opnieuw gebruiken om
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
 * **[!UICONTROL Container]**
 
-   * **[!UICONTROL Subworkflow]**: Selecteer de workflow die u wilt starten.
+   * **[!UICONTROL Sub Workflow]**: Selecteer de workflow die u wilt starten.
 
 ## Ga naar stap {#goto-step}
 
-Met de **[!UICONTROL Ga naar stap]** kunt u de volgende stap in het workflowmodel opgeven die moet worden uitgevoerd, afhankelijk van het resultaat van een ECMAScript:
+Met **[!UICONTROL Goto Step]** deze instructie kunt u de volgende stap in het workflowmodel opgeven die moet worden uitgevoerd, afhankelijk van het resultaat van een ECMAScript:
 
-* `true`: De **[!UICONTROL Ga naar Stap]** voltooit en de werkschemamotor voert de gespecificeerde stap uit.
+* `true`: De **[!UICONTROL Goto Step]** werkstroomengine is voltooid en voert de opgegeven stap uit.
 
-* `false`: De **[!UICONTROL Goto Stap]** voltooit en de normale verpletterende logica bepaalt de volgende uit te voeren stap.
+* `false`: De **[!UICONTROL Goto Step]** voltooide en normale verpletterende logica bepaalt de volgende stap uit te voeren.
 
-De **[!UICONTROL Goto Stap]** laat u toe om geavanceerde verpletterende structuren in uw werkschemamodellen uit te voeren. Bijvoorbeeld, om een lijn uit te voeren, kan de Stap **[!UICONTROL van de]** Ga worden bepaald om een vroegere stap in het werkschema uit te voeren, met het manuscript evaluerend een lusvoorwaarde.
+Het **[!UICONTROL Goto Step]** laat u toe om geavanceerde verpletterende structuren in uw werkschemamodellen uit te voeren. Als u bijvoorbeeld een lus wilt implementeren, **[!UICONTROL Goto Step]** kunt u instellen dat een eerdere stap in de workflow wordt uitgevoerd met het script dat een lusvoorwaarde evalueert.
 
 ### Ga naar stap - Configuratie {#goto-step-configuration}
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
-* **[!UICONTROL Proces]**
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
+* **[!UICONTROL Process]**
 
-   * **[!UICONTROL De stap die moet worden uitgevoerd]]**: Selecteer de uit te voeren stap.
-   * **[!UICONTROL Scriptpad]**: Het pad naar de ECMAScript die bepaalt of de **[!UICONTROL Ga naar Stap]** moet worden uitgevoerd.
-   * **[!UICONTROL Script]**: Het ECMAScript dat bepaalt of om de Stap **[!UICONTROL van de]** Goto uit te voeren.
+   * **[!UICONTROL The step to go to]]**: Selecteer de uit te voeren stap.
+   * **[!UICONTROL Script Path]**: Het pad naar het ECMAScript dat bepaalt of het **[!UICONTROL Goto Step]** moet worden uitgevoerd.
+   * **[!UICONTROL Script]**: Het ECMAScript dat bepaalt of om het uit te voeren **[!UICONTROL Goto Step]**.
 
 >[!CAUTION]
 >
->Geef het **[!UICONTROL scriptpad]** of het **[!UICONTROL scriptpad]** op. Beide opties kunnen niet tegelijkertijd worden gebruikt. Als u waarden voor beide eigenschappen opgeeft, wordt in de stap het **[!UICONTROL Script-pad]** gebruikt.
+>Geef het **[!UICONTROL Script Path]** of **[!UICONTROL Script]** op. Beide opties kunnen niet tegelijkertijd worden gebruikt. Als u waarden voor beide eigenschappen opgeeft, wordt de stap gebruikt **[!UICONTROL Script Path]**.
 
 #### Een lus voor lus simuleren {#simulating-a-for-loop}
 
@@ -149,7 +153,7 @@ Wanneer u een lus for simuleert, moet u een telling bijhouden van het aantal her
 * De telling vertegenwoordigt typisch een index van punten die op in het werkschema worden gehandeld.
 * De telling wordt geëvalueerd als uitgangscriteria van de lijn.
 
-Als u bijvoorbeeld een workflow wilt implementeren die een handeling uitvoert op verschillende JCR-knooppunten, kunt u een lusteller gebruiken als index voor de knooppunten. Als u het aantal wilt behouden, slaat u een `integer` waarde op in de gegevenskaart van de werkstroominstantie. Gebruik het manuscript van de Stap **[!UICONTROL van de]** Goto om de telling te verhogen evenals de telling met de uitgangscriteria te vergelijken.
+Als u bijvoorbeeld een workflow wilt implementeren die een handeling uitvoert op verschillende JCR-knooppunten, kunt u een lusteller gebruiken als index voor de knooppunten. Als u het aantal wilt behouden, slaat u een `integer` waarde op in de gegevenskaart van de werkstroominstantie. Gebruik het manuscript van het **[!UICONTROL Goto Step]** om de telling te verhogen evenals de telling met de uitgangscriteria te vergelijken.
 
 ```
 function check(){
@@ -177,7 +181,7 @@ function check(){
 
 ## OF Splitsen {#or-split}
 
-Met **[!UICONTROL OF splitsen]** wordt een splitsing in de workflow gemaakt, waarna slechts één vertakking actief wordt. Met deze stap kunt u voorwaardelijke verwerkingspaden in uw workflow introduceren. U voegt workflowstappen naar wens toe aan elke vertakking.
+Met deze optie **[!UICONTROL OR Split]** maakt u een splitsing in de workflow, waarna slechts één vertakking actief is. Met deze stap kunt u voorwaardelijke verwerkingspaden in uw workflow introduceren. U voegt workflowstappen naar wens toe aan elke vertakking.
 
 >[!NOTE]
 >
@@ -187,16 +191,17 @@ Met **[!UICONTROL OF splitsen]** wordt een splitsing in de workflow gemaakt, waa
 
 ### OF Splitsen - Configuratie {#or-split-configuration}
 
-* Bewerk de eigenschappen **[!UICONTROL OR Splitsen]** :
+* Bewerk de **[!UICONTROL OR Split]** eigenschappen:
 
-   * **[!UICONTROL Vaak]**
+   * **[!UICONTROL Common]**
 
       * Selecteer het aantal vereiste vertakkingen; 2, 3, 4 of 5.
-   * **[!UICONTROL Branch:*x*>]**
+   * **[!UICONTROL Branch : *x *>]**
 
-      * **[!UICONTROL Scriptpad]**: Het pad naar een bestand dat het script bevat.
+      * **[!UICONTROL Script Path]**: Het pad naar een bestand dat het script bevat.
       * **[!UICONTROL Script]**: Voeg het script toe in het vak.
-      * **[!UICONTROL Standaardroute]**: De standaardvertakking wordt gevolgd wanneer meerdere vertakkingen true opleveren. U kunt slechts één vertakking als standaard opgeven.
+      * **[!UICONTROL Default Route]**: De standaardvertakking wordt gevolgd wanneer meerdere vertakkingen true opleveren. U kunt slechts één vertakking als standaard opgeven.
+
    >[!NOTE]
    >
    >Er is een apart tabblad voor elke vertakking:
@@ -209,7 +214,7 @@ Met **[!UICONTROL OF splitsen]** wordt een splitsing in de workflow gemaakt, waa
 
    >[!CAUTION]
    >
-   >Geef het **[!UICONTROL scriptpad]** of het **[!UICONTROL scriptpad]** op. Beide opties kunnen niet tegelijkertijd worden gebruikt. Als u waarden voor beide eigenschappen opgeeft, wordt in de stap het **[!UICONTROL Script-pad]** gebruikt.
+   >Geef het **[!UICONTROL Script Path]** of **[!UICONTROL Script]** op. Beide opties kunnen niet tegelijkertijd worden gebruikt. Als u waarden voor beide eigenschappen opgeeft, wordt de stap gebruikt **[!UICONTROL Script Path]**.
 
    >[!NOTE]
    >
@@ -221,7 +226,7 @@ Met **[!UICONTROL OF splitsen]** wordt een splitsing in de workflow gemaakt, waa
 
 ### Stap deelnemer {#participant-step}
 
-Met een **[!UICONTROL deelnemersstap]** kunt u de eigendom van een bepaalde actie toewijzen. De workflow wordt alleen uitgevoerd wanneer de gebruiker de stap handmatig heeft bevestigd. Dit wordt gebruikt wanneer u iemand een actie op het werkschema wilt nemen; bijvoorbeeld een revisiestap.
+Met een **[!UICONTROL Participant Step]** optie kunt u de eigendom van een bepaalde handeling toewijzen. De workflow wordt alleen uitgevoerd wanneer de gebruiker de stap handmatig heeft bevestigd. Dit wordt gebruikt wanneer u iemand een actie op het werkschema wilt nemen; bijvoorbeeld een revisiestap.
 
 Hoewel dit niet rechtstreeks verband houdt, moet bij de toewijzing van een actie rekening worden gehouden met de autorisatie van de gebruiker; de gebruiker moet toegang hebben tot de pagina die de nuttige werkstroom is.
 
@@ -229,8 +234,8 @@ Hoewel dit niet rechtstreeks verband houdt, moet bij de toewijzing van een actie
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
-* [**[!UICONTROL Gebruiker/groep]**](#step-properties-user-group-tab)
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
+* [**[!UICONTROL User/Group]**](#step-properties-user-group-tab)
 
 >[!NOTE]
 >
@@ -238,19 +243,20 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 >
 >* De workflow is voltooid (voltooid).
 >* De workflow is afgebroken (beëindigd).
+
 >
 
 
 
 >[!NOTE]
 >
->Sommige eigenschappen moeten worden geconfigureerd om e-mailmeldingen in te schakelen. U kunt de e-mailsjabloon ook aanpassen of een e-mailsjabloon voor een nieuwe taal toevoegen. Zie E-mailmelding [configureren](/help/sites-administering/notification.md) voor het configureren van e-mailmeldingen in AEM.
+>Sommige eigenschappen moeten worden geconfigureerd om e-mailmeldingen in te schakelen. U kunt de e-mailsjabloon ook aanpassen of een e-mailsjabloon voor een nieuwe taal toevoegen. Zie E-mailmelding [](/help/sites-administering/notification.md) configureren om e-mailmeldingen in AEM te configureren.
 
 ### Stap deelnemer van dialoogvenster {#dialog-participant-step}
 
-Gebruik een Stap **[!UICONTROL van de Deelnemer van de]** Dialoog om informatie van de gebruiker te verzamelen die het het werkpunt wordt toegewezen. Deze stap is nuttig om kleine hoeveelheden gegevens te verzamelen die later in het werkschema worden gebruikt.
+Gebruik een formulier **[!UICONTROL Dialog Participant Step]** om informatie te verzamelen van de gebruiker aan wie het werkitem is toegewezen. Deze stap is nuttig om kleine hoeveelheden gegevens te verzamelen die later in het werkschema worden gebruikt.
 
-Nadat u de stap hebt voltooid, bevat het dialoogvenster **[!UICONTROL Werkitem]** voltooien de velden die u in het dialoogvenster definieert. De gegevens die in de velden worden verzameld, worden opgeslagen in knooppunten van de werkstroomlading. De volgende workflowstappen kunnen vervolgens de waarde van de repository lezen.
+Nadat de stap is voltooid, bevat het **[!UICONTROL Complete Work Item]** dialoogvenster de velden die u in het dialoogvenster definieert. De gegevens die in de velden worden verzameld, worden opgeslagen in knooppunten van de werkstroomlading. De volgende workflowstappen kunnen vervolgens de waarde van de repository lezen.
 
 Om de stap te vormen, specificeert u de groep of de gebruiker om het het werkpunt aan toe te wijzen, en de weg aan de dialoog.
 
@@ -258,9 +264,9 @@ Om de stap te vormen, specificeert u de groep of de gebruiker om het het werkpun
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
-* [**[!UICONTROL Gebruiker/groep]**](#step-properties-user-group-tab)
-* **[!UICONTROL Dialoog]**
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
+* [**[!UICONTROL User/Group]**](#step-properties-user-group-tab)
+* **[!UICONTROL Dialog]**
 
    * **[!UICONTROL-dialoogvensterpad**: Het pad naar het dialoogvenster van het [dialoogvenster dat u maakt](#dialog-participant-step-creating-a-dialog).
 
@@ -275,7 +281,7 @@ Een dialoogvenster maken:
 
 U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van het werkpunt. De indeling van de `name` eigenschap van het widgetknooppunt bepaalt waar de gegevens worden opgeslagen.
 
-* **[!UICONTROL Gegevens opslaan met de Payload]**
+* **[!UICONTROL Store Data with the Payload]**
 
    * Als u widgetgegevens wilt opslaan als een eigenschap van de payload van de workflow, gebruikt u de volgende indeling voor de waarde van de eigenschap name van het widgetknooppunt:
 
@@ -284,7 +290,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
    * De gegevens worden opgeslagen in het `nodename` bezit van de ladingsknoop. Als het knooppunt die eigenschap niet bevat, wordt de eigenschap gemaakt.
    * Wanneer opgeslagen met de lading, het verdere gebruik van de dialoog met de zelfde lading overschrijft de waarde van het bezit.
 
-* **[!UICONTROL Gegevens opslaan met het werkitem]**
+* **[!UICONTROL Store Data with the Work Item]**
 
    * Als u widgetgegevens wilt opslaan als een eigenschap van de metagegevens van het werkitem, gebruikt u de volgende indeling voor de waarde van de eigenschap name:
 
@@ -294,7 +300,7 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
 #### Stap deelnemer van dialoogvenster - Dialoogdefinitie {#dialog-participant-step-dialog-definition}
 
-1. **[!UICONTROL Dialoogstructuur]**
+1. **[!UICONTROL Dialog Structure]**
 
    De dialoogvensters voor de Stappen van de Deelnemer van de Dialoog zijn gelijkaardig aan dialogen die u voor auteurscomponenten creeert. Zij worden opgeslagen onder:
 
@@ -319,15 +325,15 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
    >
    >Voor meer informatie zie het [Creëren van en het Vormen van een Dialoog](/help/sites-developing/developing-components.md#creating-and-configuring-a-dialog).
 
-1. **[!UICONTROL Dialoogvenster Padeigenschap]**
+1. **[!UICONTROL Dialog Path Property]**
 
-   De **[!UICONTROL Stap]** van de Deelnemer van de Dialoog heeft het bezit van de Weg **[!UICONTROL van de]** Dialoog (samen met de eigenschappen van een Stap [van de](#participant-step)Deelnemer). De waarde van het bezit van de Weg **[!UICONTROL van de]** Dialoog is de weg aan de `dialog` knoop van uw dialoog.
+   Het **[!UICONTROL Dialog Participant Step]** heeft het **[!UICONTROL Dialog Path]** bezit (samen met de eigenschappen van een Stap [van de](#participant-step)Deelnemer). De waarde van de **[!UICONTROL Dialog Path]** eigenschap is het pad naar het `dialog` knooppunt van het dialoogvenster.
 
    Het dialoogvenster is bijvoorbeeld opgenomen in een component met de naam `EmailWatch` die is opgeslagen in het knooppunt:
 
    `/apps/myapp/workflows/dialogs`
 
-   Voor de interface met aanraakbediening wordt de volgende waarde gebruikt voor de eigenschap Pad **** dialoogvenster:
+   Voor de interface met aanraakbediening wordt de volgende waarde gebruikt voor de **[!UICONTROL Dialog Path]** eigenschap:
 
    `/apps/myapp/workflow/dialogs/EmailWatch/cq:dialog`
 
@@ -369,24 +375,24 @@ U kunt widgetgegevens opslaan in de werkstroomlading of in de meta-gegevens van 
 
 ### Stap dynamische deelnemer {#dynamic-participant-step}
 
-De **[!UICONTROL Dynamische component van de Stap]** van de Deelnemer is gelijkaardig aan de Stap **[!UICONTROL van de]** Deelnemer met het verschil dat de deelnemer automatisch bij runtime wordt geselecteerd.
+De **[!UICONTROL Dynamic Participant Step]** component is vergelijkbaar met **[!UICONTROL Participant Step]** het verschil dat de deelnemer automatisch wordt geselecteerd bij uitvoering.
 
-Om de stap te vormen, selecteert u een Kiezer **[!UICONTROL van de]** Deelnemer die de deelnemer identificeert om het het werkpunt aan, samen met een dialoog toe te wijzen.
+Om de stap te vormen, selecteert u een **[!UICONTROL Participant Chooser]** die de deelnemer identificeert om het het werkpunt aan, samen met een dialoog toe te wijzen.
 
 #### Dynamische deelnemersstap - Configuratie {#dynamic-participant-step-configuration}
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
-* **[!UICONTROL Deelnemerkiezer]**
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
+* **[!UICONTROL Participant Chooser]**
 
-   * **[!UICONTROL Deelnemerkiezer]**: De naam van de [deelnemerkiezer die u maakt](#dynamic-participant-step-developing-the-participant-chooser).
-   * **[!UICONTROL Argumenten]**: Alle vereiste argumenten.
-   * **[!UICONTROL E-mail]**: Of een e-mailbericht naar de gebruiker moet worden verzonden.
+   * **[!UICONTROL Participant Chooser]**: De naam van de [deelnemerkiezer die u maakt](#dynamic-participant-step-developing-the-participant-chooser).
+   * **[!UICONTROL Arguments]**: Alle vereiste argumenten.
+   * **[!UICONTROL Email]**: Of een e-mailbericht naar de gebruiker moet worden verzonden.
 
-* **[!UICONTROL Dialoog]**
+* **[!UICONTROL Dialog]**
 
-   * **[!UICONTROL Dialoogpad]**: Het pad naar het dialoogvenster van het [dialoogvenster dat u maakt (zoals bij de stap **Deelnemer** dialoogvenster)](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Dialog Path]**: Het pad naar het dialoogvenster van het [dialoogvenster dat u maakt (zoals bij de stap **Deelnemer** dialoogvenster)](#dialog-participant-step-creating-a-dialog).
 
 #### De dynamische Stap van de Deelnemer - ontwikkelt de deelnemerverkiezer {#dynamic-participant-step-developing-the-participant-chooser}
 
@@ -407,7 +413,7 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
    >U *mag* niets in het `/libs` pad wijzigen.
    >
    >
-   >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+   >De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
    Met dit script wordt de aanvrager van de workflow geselecteerd als de deelnemer:
 
@@ -419,26 +425,27 @@ Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het 
 
    >[!NOTE]
    >
-   >De **[!UICONTROL component Chooser]** van de Deelnemer van de Aanvrager van de Werkstroom breidt de **[!UICONTROL Dynamische Stap]** van de Deelnemer uit en gebruikt dit manuscript als stapimplementatie.
+   >De **[!UICONTROL Workflow Initiator Participant Chooser]** component breidt het script uit **[!UICONTROL Dynamic Participant Step]** en gebruikt dit als de stapimplementatie.
 
-* **[!UICONTROL OSGi-service]**
+* **[!UICONTROL OSGi service]**
 
    De diensten moeten de [com.day.cq.workflow.exec.ParticipantStepChooser](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/workflow/exec/ParticipantStepChooser.html) interface uitvoeren. De interface definieert de volgende leden:
 
-   * `SERVICE_PROPERTY_LABEL` veld: Gebruik dit veld om de naam van de deelnemerkiezer op te geven. De naam wordt weergegeven in een lijst met beschikbare deelnemerselecties in de eigenschappen **[!UICONTROL Dynamic Participant Step]** .
+   * `SERVICE_PROPERTY_LABEL` veld: Gebruik dit veld om de naam van de deelnemerkiezer op te geven. De naam wordt weergegeven in een lijst met beschikbare deelnemerselecties in de **[!UICONTROL Dynamic Participant Step]** eigenschappen.
    * `getParticipant` methode: Retourneert de dynamisch opgeloste Principal-id als een `String` waarde.
+
    >[!CAUTION]
    >
    >De `getParticipant` methode retourneert de dynamisch opgeloste Principal-id. Dit kan een groep-id of een gebruikers-id zijn.
    >
    >
-   >Nochtans, kan groepsidentiteitskaart slechts voor een Stap **[!UICONTROL van de]** Deelnemer worden gebruikt, wanneer een lijst van deelnemers is teruggekeerd. Voor een **[!UICONTROL Dynamische Stap]** van de Deelnemer is een lege lijst teruggekeerd en dit kan niet voor delegatie worden gebruikt.
+   >Een groep-id kan echter alleen worden gebruikt voor een **[!UICONTROL Participant Step]** gebeurtenis, wanneer een lijst met deelnemers wordt geretourneerd. Een lege lijst wordt geretourneerd en kan niet worden gebruikt voor delegatie. **[!UICONTROL Dynamic Participant Step]**
 
-   Om uw implementatie voor de **[!UICONTROL Dynamische componenten van de Stap]** van de Deelnemer beschikbaar te maken, voeg uw klasse van Java aan een bundel OSGi toe die de dienst uitvoert, en stel de bundel aan de server AEM op.
+   Om uw implementatie beschikbaar te maken aan **[!UICONTROL Dynamic Participant Step]** componenten, voeg uw klasse van Java aan een bundel OSGi toe die de dienst uitvoert, en stel de bundel aan de server van de AEM op.
 
    >[!NOTE]
    >
-   >**[!UICONTROL De Willekeurige Kiezer]** van de Deelnemer is de steekproefdienst die een willekeurige gebruiker ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`) selecteert. De **[!UICONTROL Willekeurige de stapcomponentensteekproef van de Kiezer]** van de Deelnemer breidt de **[!UICONTROL Dynamische Stap]** van de Deelnemer uit en gebruikt deze dienst als stapimplementatie.
+   >**[!UICONTROL Random Participant Chooser]** is een voorbeeldservice waarmee u een willekeurige gebruiker ( `com.day.cq.workflow.impl.process.RandomParticipantChooser`) selecteert. Het voorbeeld van de **[!UICONTROL Random Participant Chooser]** stapcomponent breidt de toepassing uit **[!UICONTROL Dynamic Participant Step]** en gebruikt deze service als de stapimplementatie.
 
 #### Stap voor dynamische deelnemer - Voorbeeld van Kiezerservice voor deelnemers {#dynamic-participant-step-example-participant-chooser-service}
 
@@ -483,7 +490,7 @@ public class InitiatorParticipantChooser implements ParticipantStepChooser {
 }
 ```
 
-In het **[!UICONTROL Dynamische de eigenschappendialoog van de Stap]** van de Deelnemer, omvat de **[!UICONTROL Lijst van de Kiezer]** van de Deelnemer het punt `Workflow Initiator Participant Chooser (script)`, dat deze dienst vertegenwoordigt.
+In het dialoogvenster **[!UICONTROL Dynamic Participant Step]** Eigenschappen bevat de **[!UICONTROL Participant Chooser]** lijst het item `Workflow Initiator Participant Chooser (script)`dat deze service vertegenwoordigt.
 
 &quot;Wanneer het werkschemamodel is begonnen, wijst het logboek op identiteitskaart van de gebruiker die het werkschema in werking stelde en wie het het werkpunt wordt toegewezen. In dit voorbeeld heeft de `admin` gebruiker de workflow gestart.
 
@@ -491,43 +498,43 @@ In het **[!UICONTROL Dynamische de eigenschappendialoog van de Stap]** van de De
 
 ### Stap voor deelnemer aan formulier {#form-participant-step}
 
-De Stap **[!UICONTROL van de Deelnemer van de]** Vorm stelt een vorm voor wanneer het het werkpunt wordt geopend. Wanneer de gebruiker het formulier invult en verzendt, worden de veldgegevens opgeslagen in de knooppunten van het taakvenster van de werkstroom.
+Het **[!UICONTROL Form Participant Step]** werkitem wordt geopend. Wanneer de gebruiker het formulier invult en verzendt, worden de veldgegevens opgeslagen in de knooppunten van het taakvenster van de werkstroom.
 
 Als u de stap wilt configureren, geeft u de groep of gebruiker op waaraan het werkitem moet worden toegewezen en het pad naar het formulier.
 
 >[!CAUTION]
 >
->Deze sectie gaat over de sectie [Formulieren van Foundation Components for Page Authoring](/help/sites-authoring/default-components-foundation.md#form).
+>Deze sectie behandelt de sectie van [Forms van de Componenten van de Stichting voor de Authoring](/help/sites-authoring/default-components-foundation.md#form)van de Pagina.
 
 #### Stap van de deelnemer van de vorm - Configuratie {#form-participant-step-configuration}
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
-* [**[!UICONTROL Gebruiker/groep]**](#step-properties-user-group-tab)
-* **[!UICONTROL formulier]**
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
+* [**[!UICONTROL User/Group]**](#step-properties-user-group-tab)
+* **[!UICONTROL Form]**
 
    * **[!UICONTROL-formulierpad**: Het pad naar het [formulier dat u maakt](#form-participant-step-creating-the-form).
 
 #### Stap deelnemer aan formulier - Het formulier maken {#form-participant-step-creating-the-form}
 
-Maak een formulier voor gebruik met de normale stap **[!UICONTROL voor]** deelnemers aan het formulier. Formulieren voor een stap Formulierdeelnemer moeten echter de volgende configuraties hebben:
+Maak een formulier voor gebruik met een standaardformulier **[!UICONTROL Form Participant Step]** . Formulieren voor een stap Formulierdeelnemer moeten echter de volgende configuraties hebben:
 
-* Voor de component **[!UICONTROL Start van formulier]** moet de eigenschap **[!UICONTROL Action Type]** zijn ingesteld op `Edit Workflow Controlled Resource(s)`.
+* Voor de **[!UICONTROL Start of Form]** component moet de **[!UICONTROL Action Type]** eigenschap zijn ingesteld op `Edit Workflow Controlled Resource(s)`.
 
-* De **[!UICONTROL component Start van formulier]** moet een waarde voor de `Form Identifier` eigenschap hebben.
+* De **[!UICONTROL Start of Form]** component moet een waarde voor de `Form Identifier` eigenschap hebben.
 
 * Voor de formuliercomponenten moet de eigenschap **Element Name** zijn ingesteld op het pad van het knooppunt waar de veldgegevens zijn opgeslagen. Het pad moet een knooppunt in de ladingsinhoud van de workflow vinden. De waarde gebruikt de volgende indeling:
 
    `./jcr:content/path_to_node`
 
-* Het formulier moet een component Knop(en) **[!UICONTROL voor verzenden]** werkstroom bevatten. U vormt geen eigenschappen van de component.
+* Het formulier moet een **[!UICONTROL Workflow Submit Button(s)]** component bevatten. U vormt geen eigenschappen van de component.
 
-De vereisten van uw workflow bepalen waar u veldgegevens moet opslaan. U kunt bijvoorbeeld veldgegevens gebruiken om de eigenschappen van pagina-inhoud te configureren. Met de volgende waarde van een eigenschap **[!UICONTROL Element Name]** worden veldgegevens opgeslagen als de waarde van de `redirectTarget` eigenschap van het `jcr:content` knooppunt:
+De vereisten van uw workflow bepalen waar u veldgegevens moet opslaan. U kunt bijvoorbeeld veldgegevens gebruiken om de eigenschappen van pagina-inhoud te configureren. Met de volgende waarde van een **[!UICONTROL Element Name]** eigenschap worden veldgegevens opgeslagen als de waarde van de `redirectTarget` eigenschap van het `jcr:content` knooppunt:
 
 `./jcr:content/redirectTarget`
 
-In het volgende voorbeeld worden de veldgegevens gebruikt als de inhoud van een **[!UICONTROL component Text]** op de ladingspagina:
+In het volgende voorbeeld worden de veldgegevens gebruikt als de inhoud van een **[!UICONTROL Text]** component op de ladingspagina:
 
 `./jcr:content/par/text_3/text`
 
@@ -537,7 +544,7 @@ Het formulier kan overal in de gegevensopslagruimte worden gevonden, maar workfl
 
 ### Kiezer voor willekeurige deelnemers {#random-participant-chooser}
 
-De **[!UICONTROL Willekeurige Kiezer]** van de Deelnemer is een deelnemerverkiezer die het geproduceerde het werkpunt aan een gebruiker toewijst die willekeurig uit een lijst wordt geselecteerd.
+De **[!UICONTROL Random Participant Chooser]** stap is een deelnemerkiezer die het gegenereerde werkitem toewijst aan een gebruiker die willekeurig is geselecteerd uit een lijst.
 
 ![wf-31](assets/wf-31.png)
 
@@ -545,24 +552,24 @@ De **[!UICONTROL Willekeurige Kiezer]** van de Deelnemer is een deelnemerverkiez
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
-* **[!UICONTROL Argumenten]**
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
+* **[!UICONTROL Arguments]**
 
-   * **[!UICONTROL Deelnemers]**: Hier geeft u de lijst op met gebruikers die kunnen worden geselecteerd. Als u een gebruiker aan de lijst wilt toevoegen, klikt u op Item **** toevoegen en typt u het homepad van het gebruikersknooppunt of de gebruikers-id. De volgorde van de gebruikers heeft geen invloed op de waarschijnlijkheid dat een werkitem wordt toegewezen.
+   * **[!UICONTROL Participants]**: Hier geeft u de lijst op met gebruikers die kunnen worden geselecteerd. Als u een gebruiker aan de lijst wilt toevoegen, klikt u op het beginpad van het gebruikersknooppunt **[!UICONTROL Add Item]** en typt u de gebruikersnaam. De volgorde van de gebruikers heeft geen invloed op de waarschijnlijkheid dat een werkitem wordt toegewezen.
 
 ### Deelnemerkiezer voor workflow-initiator {#workflow-initiator-participant-chooser}
 
-De **[!UICONTROL stap Kiezer]** van de Deelnemer van de Aanvrager van de Werkstroom is een deelnemer verkiest die het geproduceerde het werkpunt aan de gebruiker toewijst die de werkschema begon. Er zijn geen eigenschappen om te vormen buiten de **[!UICONTROL Gemeenschappelijke]** eigenschappen.
+De **[!UICONTROL Workflow Initiator Participant Chooser]** stap is een deelnemerkiezer die het gegenereerde werkitem toewijst aan de gebruiker die de workflow heeft gestart. Er zijn geen eigenschappen om te vormen buiten de **[!UICONTROL Common]** eigenschappen.
 
 #### Deelnemerkiezer voor workflow-initiator - Configuratie {#workflow-initiator-participant-chooser-configuration}
 
 Om de stap te vormen, geef het gebruiken van de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
 
 ## Processtap {#process-step}
 
-Een Stap **[!UICONTROL van het]** Proces stelt een ECMAScript in werking of roept de dienst OSGi om automatische verwerking uit te voeren.
+Een **[!UICONTROL Process Step]** looppas ECMAScript of roept de dienst OSGi om automatische verwerking uit te voeren.
 
 ![wf-32](assets/wf-32.png)
 
@@ -570,15 +577,15 @@ Een Stap **[!UICONTROL van het]** Proces stelt een ECMAScript in werking of roep
 
 Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
-* [**[!UICONTROL Vaak]**](#step-properties-common-tab)
-* **[!UICONTROL Proces]**
+* [**[!UICONTROL Common]**](#step-properties-common-tab)
+* **[!UICONTROL Process]**
 
-   * **[!UICONTROL Proces]**: De uit te voeren procesimplementatie. Gebruik het drop-down menu om de dienst te selecteren ECMAScript of OSGi. Voor informatie over:
+   * **[!UICONTROL Process]**: De uit te voeren procesimplementatie. Gebruik het drop-down menu om de dienst te selecteren ECMAScript of OSGi. Voor informatie over:
 
       * De standaard ECMAScripts en OSGi diensten, zie [Ingebouwde Processen voor de Stappen](/help/sites-developing/workflows-process-ref.md)van het Proces.
-      * Creërend ECMAScripts voor een stap van het **[!UICONTROL Proces]** , zie het [Uitvoeren van een Stap van het Proces met ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
-      * Creërend de diensten OSGi voor een stap van het **[!UICONTROL Proces]** , zie het [Uitvoeren van een Stap van het Proces met een Klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)van Java.
-   * **[!UICONTROL Handler Advance]**:Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten terugkeren naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
-   * **[!UICONTROL Argumenten]**: Argumenten die aan het proces moeten worden doorgegeven.
+      * Creërend ECMAScripts voor een **[!UICONTROL Process]** stap, zie het [Uitvoeren van een Stap van het Proces met een ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
+      * Creërend de diensten OSGi voor een **[!UICONTROL Process]** stap, zie het [Uitvoeren van een Stap van het Proces met een Klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)van Java.
+   * **[!UICONTROL Handler Advance]**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten terugkeren naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
+   * **[!UICONTROL Arguments]**: Argumenten die aan het proces moeten worden doorgegeven.
 
 
