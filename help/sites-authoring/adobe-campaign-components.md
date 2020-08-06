@@ -1,8 +1,8 @@
 ---
-title: Adobe-campagnecomponenten
-seo-title: Adobe-campagnecomponenten
-description: Wanneer u integreert met Adobe Campagne, hebt u componenten beschikbaar voor wanneer het werken met nieuwsbrieven en met vormen
-seo-description: Wanneer u integreert met Adobe Campagne, hebt u componenten beschikbaar voor wanneer het werken met nieuwsbrieven en met vormen
+title: Adobe Campaign-componenten
+seo-title: Adobe Campaign-componenten
+description: Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u werkt met nieuwsbrieven en formulieren
+seo-description: Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u werkt met nieuwsbrieven en formulieren
 uuid: d1fb8649-8aae-49a5-8663-1b7cb74ee0e7
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,24 +11,27 @@ topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
 source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+workflow-type: tm+mt
+source-wordcount: '2778'
+ht-degree: 0%
 
 ---
 
 
-# Adobe-campagnecomponenten{#adobe-campaign-components}
+# Adobe Campaign-componenten{#adobe-campaign-components}
 
-Wanneer u integreert met Adobe Campagne, hebt u componenten beschikbaar voor wanneer het werken met nieuwsbrieven en met vormen. Beide worden in dit document beschreven.
+Wanneer u integreert met Adobe Campaign, hebt u componenten beschikbaar voor wanneer u met nieuwsbrieven en met formulieren werkt. Beide worden in dit document beschreven.
 
-## Adobe Campagne Newsletter-componenten {#adobe-campaign-newsletter-components}
+## Adobe Campaign Newsletter-componenten {#adobe-campaign-newsletter-components}
 
-Alle componenten van de Campagne volgen de beste praktijken die in [Beste praktijken voor E-mailMalplaatjes](/help/sites-administering/best-practices-for-email-templates.md) worden geschetst en zijn gebaseerd op de de prijsverhogingstaal van Adobe [HTML](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
+Alle componenten van de Campagne volgen de beste praktijken die in [Beste praktijken voor E-mailMalplaatjes](/help/sites-administering/best-practices-for-email-templates.md) worden geschetst en zijn gebaseerd op de de prijsverhogingstaal van de Adobe [HTML](https://helpx.adobe.com/experience-manager/htl/using/overview.html).
 
-Wanneer u een nieuwsbrief/e-mail opent die wordt gevormd om met de Campagne van Adobe te integreren, zou u de volgende componenten in de de nieuwsbrief **van de Campagne van** Adobe moeten zien:
+Wanneer u een nieuwsbrief/e-mail opent die wordt gevormd om met Adobe Campaign te integreren, zou u de volgende componenten in de **Adobe Campaign Newsletter** sectie moeten zien:
 
 * Kop (campagne)
 * Afbeelding (campagne)
 * Koppeling (campagne)
-* Scene7 het Malplaatje van het Beeld (Campagne)
+* Scene7-afbeeldingssjabloon (campagne)
 * Gerichte referentie (campagne)
 * Tekst en afbeelding (campagne)
 * Tekst en persoonlijke voorkeur (campagne)
@@ -174,15 +177,15 @@ In het volgende voorbeeld ziet u een component Link (Campagne) die wordt weergeg
 
 ![chlimage_1-110](assets/chlimage_1-110.png)
 
-### Scene7 het Malplaatje van het Beeld (Campagne) {#scene-image-template-campaign}
+### Scene7-afbeeldingssjabloon (campagne) {#scene-image-template-campaign}
 
-[Scene7 de Malplaatjes](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) van het Beeld zijn gelaagde beelddossiers, waar de inhoud en de eigenschappen voor variabiliteit kunnen worden bepaald. Met de sjablooncomponent **Afbeelding** kunt u Scene7-sjablonen gebruiken in nieuwsbrieven en de waarden van sjabloonparameters wijzigen. Daarnaast kunt u metagegevensvariabelen voor Adobe Campagne binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
+[Scene7-afbeeldingssjablonen](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) zijn gelaagde afbeeldingsbestanden, waarbij inhoud en eigenschappen kunnen worden geparametriseerd voor variabiliteit. Met de sjablooncomponent **Afbeelding** kunt u Scene7-sjablonen in nieuwsbrieven gebruiken en de waarden van sjabloonparameters wijzigen. Bovendien kunt u de metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
 
 ![chlimage_1-111](assets/chlimage_1-111.png)
 
-Klik op **Bewerken** om de component te configureren. U kunt de instellingen configureren die in deze sectie worden beschreven. Dit malplaatje van het Beeld Scene7 wordt in detail beschreven in de component [van het Malplaatje van het Beeld](/help/assets/scene7.md#image-template)Scene7.
+Klik op **Bewerken** om de component te configureren. U kunt de instellingen configureren die in deze sectie worden beschreven. Deze Scene7-afbeeldingssjabloon wordt in detail beschreven in de [Scene7 Image Template-component](/help/assets/scene7.md#image-template).
 
-Bovendien maakt het parameterpaneel een lijst van alle malplaatjeparameters die voor het malplaatje in Scene7 zijn bepaald. Voor elk van deze parameters kunt u de waarde aanpassen, variabelen invoegen of de standaardwaarde ervan herstellen.
+Daarnaast bevat het parametervenster alle sjabloonparameters die zijn gedefinieerd voor de sjabloon in Scene7. Voor elk van deze parameters kunt u de waarde aanpassen, variabelen invoegen of de standaardwaarde ervan herstellen.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -259,7 +262,7 @@ In het volgende voorbeeld ziet u een component Text &amp; Image (Campaign) die w
 
 ### Tekst en persoonlijke voorkeur (campagne) {#text-personalization-campaign}
 
-Met de component Tekst en personalisatie (Campagne) kunt u een tekstblok invoeren met een WYSIWYG-editor, met functionaliteit die wordt geboden door de [Rich Text Editor](/help/sites-authoring/rich-text-editor.md). Bovendien kunt u met deze component contextvelden en verpersoonlijkingsblokken gebruiken die beschikbaar zijn in Adobe Campaign. Zie ook [Personalisatie](/help/sites-authoring/campaign.md#inserting-personalization)invoegen.
+Met de component Tekst en personalisatie (Campagne) kunt u een tekstblok invoeren met een WYSIWYG-editor, met functionaliteit die wordt geboden door de [Rich Text Editor](/help/sites-authoring/rich-text-editor.md). Daarnaast kunt u met deze component contextvelden en personaliseringsblokken gebruiken die beschikbaar zijn in Adobe Campaign. Zie ook [Personalisatie](/help/sites-authoring/campaign.md#inserting-personalization)invoegen.
 
 Met de selectie van pictogrammen kunt u tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing. De functionaliteit is in wezen het zelfde in [beide UIs](/help/sites-authoring/editing-content.md), hoewel het blik-en-gevoel verschillend is:
 
@@ -269,8 +272,9 @@ In de Inplace redacteur kunt u tekst toevoegen, de rechtvaardiging veranderen, v
 
 >[!NOTE]
 >
->* Welke verpersoonlijkingsgebieden beschikbaar zijn hangt van welke malplaatje van de Campagne van Adobe af uw bulletin met wordt verbonden.
+>* Welke personalisatievelden beschikbaar zijn, is afhankelijk van de Adobe Campaign-sjabloon waaraan uw nieuwsbrief is gekoppeld.
 >* Nadat u een persoon van ContextHub selecteert, worden de verpersoonlijkingsgebieden automatisch vervangen door gegevens van het geselecteerde profiel.
+
 >
 >
 Zie [Persoonlijke instellingen](/help/sites-authoring/campaign.md#inserting-personalization)invoegen.
@@ -281,13 +285,13 @@ Zie [Persoonlijke instellingen](/help/sites-authoring/campaign.md#inserting-pers
 >
 >Alleen de velden die zijn gedefinieerd in het schema **nms:seedMember** of een van de extensies worden in aanmerking genomen. De kenmerken van de tabellen die gekoppeld zijn aan **nms:seedMember** zijn niet beschikbaar.
 
-## Adobe Campagne-formuliercomponenten {#adobe-campaign-form-components}
+## Adobe Campaign-formuliercomponenten {#adobe-campaign-form-components}
 
-Met de componenten van Adobe Campagne kunt u een formulier maken dat gebruikers invullen om zich te abonneren op een nieuwsbrief, zich af te melden bij een nieuwsbrief of hun gebruikersprofielen bij te werken. Zie [Adobe Campagne Forms](/help/sites-authoring/adobe-campaign-forms.md) maken voor meer informatie.
+Met Adobe Campaign-componenten kunt u een formulier maken dat gebruikers invullen om zich te abonneren op een nieuwsbrief, zich af te melden bij een nieuwsbrief of hun gebruikersprofielen bij te werken. Zie Adobe Campaign Forms [](/help/sites-authoring/adobe-campaign-forms.md) maken voor meer informatie.
 
-Elk deelveld kan worden gekoppeld aan een databaseveld van Adobe Campagne. De beschikbare velden verschillen afhankelijk van het type gegevens dat ze bevatten, zoals wordt beschreven in de sectie [Componenten en Gegevenstype](#components-and-data-type). Als u het ontvangende schema in de Campagne van Adobe uitbreidt, zullen de nieuwe gebieden in de componenten beschikbaar zijn de waarvan gegevenstypes aanpassen.
+Elk componentveld kan worden gekoppeld aan een Adobe Campaign-databaseveld. De beschikbare velden verschillen afhankelijk van het type gegevens dat ze bevatten, zoals wordt beschreven in de sectie [Componenten en Gegevenstype](#components-and-data-type). Als u het schema voor ontvangers in Adobe Campaign uitbreidt, zijn de nieuwe velden beschikbaar in de componenten waarvan de gegevenstypen overeenkomen.
 
-Wanneer u een formulier opent dat is geconfigureerd voor integratie met Adobe Campagne, worden de volgende componenten weergegeven in de sectie **Adobe Campagne** :
+Wanneer u een formulier opent dat is geconfigureerd voor integratie met Adobe Campaign, ziet u de volgende componenten in de sectie **Adobe Campaign** :
 
 * Selectievakje (campagne)
 * Datumveld (campagne) en Datumveld/HTML5 (campagne)
@@ -307,13 +311,13 @@ In deze sectie wordt elke component gedetailleerd beschreven.
 
 ### Componenten en gegevenstype {#components-and-data-type}
 
-In de volgende tabel worden de componenten beschreven die beschikbaar zijn om Adobe Campagne-profielgegevens weer te geven en te wijzigen. Elke component kan worden toegewezen aan een Adobe Campagne-profielveld om de waarde ervan weer te geven en het veld bij te werken wanneer het formulier wordt verzonden. De verschillende componenten kunnen slechts aan gebieden van een aangewezen gegevenstype worden aangepast.
+In de volgende tabel worden de componenten beschreven die beschikbaar zijn om Adobe Campaign-profielgegevens weer te geven en te wijzigen. Elke component kan worden toegewezen aan een Adobe Campaign-profielveld om de waarde weer te geven en het veld bij te werken wanneer het formulier wordt verzonden. De verschillende componenten kunnen slechts aan gebieden van een aangewezen gegevenstype worden aangepast.
 
 <table> 
  <tbody> 
   <tr> 
    <td><p><strong>Component</strong></p> </td> 
-   <td><p><strong>Gegevenstype van Adobe Campagne-veld</strong></p> </td> 
+   <td><p><strong>Gegevenstype van Adobe Campaign-veld</strong></p> </td> 
    <td><p><strong>Voorbeeldveld</strong></p> </td> 
   </tr> 
   <tr> 
@@ -346,7 +350,7 @@ In de volgende tabel worden de componenten beschreven die beschikbaar zijn om Ad
 
 ### Instellingen die door de meeste componenten worden gebruikt {#settings-common-to-most-components}
 
-De componenten van de Campagne van Adobe hebben montages die in alle componenten (behalve de Versleutelde Primaire Sleutel en Verborgen Belangrijkste componenten van de Reconstructie) gemeenschappelijk zijn.
+De Adobe Campaign-componenten hebben dezelfde instellingen voor alle componenten (behalve de componenten Gecodeerde primaire sleutel en Verborgen reconstruatietoets).
 
 In de meeste componenten, kunt u het volgende vormen:
 
@@ -370,13 +374,13 @@ In de meeste componenten, kunt u het volgende vormen:
 
    Hiermee wordt alleen de waarde weergegeven als er een is
 
-#### Adobe-campagne {#adobe-campaign}
+#### Adobe Campaign {#adobe-campaign}
 
 U kunt het volgende configureren:
 
 * **Toewijzing**
 
-   Selecteer indien nodig een Adobe Campagne-aanpassingsveld.
+   Selecteer desgewenst een personalisatieveld voor Adobe Campaign.
 
 * **Afstemmingssleutel**
 
@@ -404,9 +408,9 @@ U kunt het volgende configureren:
 
 ### Selectievakje (campagne) {#checkbox-campaign}
 
-Met de component CheckBox (Campagne) kan de gebruiker Adobe Campagne-profielvelden van een Booleaans gegevenstype wijzigen. U kunt bijvoorbeeld een component CheckBox (Campagne) hebben waarmee de ontvanger kan opgeven dat hij of zij niet via een kanaal mag worden benaderd.
+Met de component CheckBox (Campagne) kan de gebruiker Adobe Campaign-profielvelden wijzigen die van een Booleaans gegevenstype zijn. U kunt bijvoorbeeld een component CheckBox (Campagne) hebben waarmee de ontvanger kan opgeven dat hij of zij niet via een kanaal mag worden benaderd.
 
-U kunt instellingen [configureren die de meeste Adobe Campagne-componenten](#settings-common-to-most-components) gemeen hebben in de component CheckBox (Campagne).
+U kunt instellingen [configureren die gelden voor de meeste Adobe Campaign-componenten](#settings-common-to-most-components) in de component Checkbox (Campagne).
 
 In het volgende voorbeeld wordt een component CheckBox (Campagne) weergegeven.
 
@@ -414,9 +418,9 @@ In het volgende voorbeeld wordt een component CheckBox (Campagne) weergegeven.
 
 ### Datumveld (campagne) en Datumveld/HTML 5 (campagne) {#date-field-campaign-and-date-field-html-campaign}
 
-Gebruik het datumveld om ontvangers toe te staan een datum te zoeken. U wilt bijvoorbeeld dat de ontvangers hun geboortedatum opgeven. De datumnotatie komt overeen met de notatie die wordt gebruikt in uw Adobe Campagne-instantie.
+Gebruik het datumveld om ontvangers toe te staan een datum te zoeken. U wilt bijvoorbeeld dat de ontvangers hun geboortedatum opgeven. De datumnotatie komt overeen met de notatie die wordt gebruikt in uw Adobe Campaign-exemplaar.
 
-Naast de [instellingen die de meeste Adobe Campagne-componenten](#settings-common-to-most-components)gemeen hebben, kunt u het volgende configureren:
+Naast de [instellingen die de meeste Adobe Campaign-componenten](#settings-common-to-most-components)gemeen hebben, kunt u het volgende configureren:
 
 * **Restricties - Vervolgkeuzelijst Restrictie**
 
@@ -425,7 +429,8 @@ Naast de [instellingen die de meeste Adobe Campagne-componenten](#settings-commo
 * **Restrictiebericht**
 
    Bovendien kunt u een beperkingsbericht toevoegen zodat de gebruikers weten hoe te om hun antwoorden behoorlijk te formatteren.
-* **Stijl - Breedte** Pas de breedte van het veld aan door op de pictogrammen **+** en **-** te klikken of door een getal in te voeren.
+* **Stijl - breedte** Pas de breedte van het veld aan door op de knop of op de knop 
+**+** en **-** pictogrammen of het invoeren van een getal.
 
 In het volgende voorbeeld wordt een component Date Field (Campaign) weergegeven met de breedte aangepast.
 
@@ -433,16 +438,17 @@ In het volgende voorbeeld wordt een component Date Field (Campaign) weergegeven 
 
 ### Gecodeerde primaire sleutel (campagne) {#encrypted-primary-key-campaign}
 
-Deze component definieert de naam van de URL-parameter die de id van een Adobe Campagne-profiel (**hoofd-id** of **gecodeerde primaire sleutel** in respectievelijk Adobe Campagnestandaard en 6.1) zal bevatten.
+Deze component definieert de naam van de URL-parameter die de id van een Adobe Campaign-profiel (**hoofd-id** of **gecodeerde primaire sleutel** in respectievelijk Adobe Campaign Standard en 6.1) zal bevatten.
 
-Elk formulier dat de gegevens van het Adobe Campagne-profiel weergeeft en wijzigt, **moet** een gecodeerde primaire sleutel bevatten.
+Elk formulier dat Adobe Campaign-profielgegevens weergeeft en wijzigt, **moet** een gecodeerde primaire-sleutelcomponent bevatten.
 
 U kunt het volgende in de Encrypted Primaire (Campagne) component vormen:
 
 * **Titel en tekst - Naam element**
 
    Wordt standaard ingesteld op encryptedPK. U hoeft de elementnaam alleen te wijzigen als deze conflicteert met de naam van een ander element op het formulier. Geen twee formuliervelden kunnen dezelfde elementnaam hebben.
-* **Adobe-campagne - URL-parameter** Voeg de URL-parameter voor de EPK toe. U kunt bijvoorbeeld de waarde **epk** gebruiken.
+* **Adobe Campaign - URL-parameter** Voeg de URL-parameter voor de EPK toe. U kunt bijvoorbeeld de waarde 
+**epk**.
 
 In het volgende voorbeeld ziet u een component Encrypted Primary Key (Campaign) die wordt weergegeven.
 
@@ -465,7 +471,7 @@ U kunt het volgende configureren in de component Verborgen afstemmingssleutel (C
 * **Titel en tekst - Naam element**
 
    Is standaard ingesteld op reconcilKey. U hoeft de elementnaam alleen te wijzigen als deze conflicteert met de naam van een ander element op het formulier. Geen twee formuliervelden kunnen dezelfde elementnaam hebben.
-* **Adobe-campagne - Toewijzing** aan een Adobe Campagne-verpersoonlijkingsveld.
+* **Adobe Campaign - Toewijzing** aan een Adobe Campaign-personalisatieveld.
 
 In het volgende voorbeeld ziet u een component Verborgen afstemmingssleutel (Campagne) die wordt weergegeven.
 
@@ -475,7 +481,7 @@ In het volgende voorbeeld ziet u een component Verborgen afstemmingssleutel (Cam
 
 Gebruik het numerieke veld om ontvangers toe te staan getallen in te voeren, bijvoorbeeld hun leeftijd.
 
-Naast de [instellingen die de meeste Adobe Campagne-componenten](#settings-common-to-most-components)gemeen hebben, kunt u het volgende configureren:
+Naast de [instellingen die de meeste Adobe Campaign-componenten](#settings-common-to-most-components)gemeen hebben, kunt u het volgende configureren:
 
 * **Restricties - Vervolgkeuzelijst Restrictie**
 
@@ -484,7 +490,8 @@ Naast de [instellingen die de meeste Adobe Campagne-componenten](#settings-commo
 * **Restrictiebericht**
 
    Bovendien kunt u een beperkingsbericht toevoegen zodat de gebruikers weten hoe te om hun antwoorden behoorlijk te formatteren.
-* **Stijl - Breedte** Pas de breedte van het veld aan door op de pictogrammen **+** en **-** te klikken of door een getal in te voeren.
+* **Stijl - breedte** Pas de breedte van het veld aan door op de knop of op de knop 
+**+** en **-** pictogrammen of het invoeren van een getal.
 
 In het volgende voorbeeld wordt een component Numeriek veld (Campagne) weergegeven met de geconfigureerde breedte.
 
@@ -494,25 +501,25 @@ In het volgende voorbeeld wordt een component Numeriek veld (Campagne) weergegev
 
 In deze vervolgkeuzelijst kunt u een optie selecteren. bijvoorbeeld het geslacht of de status van een ontvanger.
 
-U kunt instellingen [configureren die door de meeste Adobe-componenten](#settings-common-to-most-components) Campagne worden gebruikt in de component Optieveld (Campagne). Als u de vervolgkeuzelijst wilt vullen, selecteert u het desbetreffende veld in de aanpassingsvelden van de Adobe Campagne door op het Adobe Campagne-symbool te klikken of hierop te tikken en naar het veld te navigeren.
+U kunt instellingen [configureren die gelden voor de meeste Adobe Campaign-componenten](#settings-common-to-most-components) in de component Optieveld (Campagne). Als u de vervolgkeuzelijst wilt vullen, selecteert u het desbetreffende veld in de personalisatievelden van Adobe Campaign door op het Adobe Campaign-symbool te klikken of erop te tikken en naar het veld te navigeren.
 
 ![chlimage_1-128](assets/chlimage_1-128.png)
 
 In het volgende voorbeeld ziet u een component Option Field (Campaign) die wordt weergegeven.
 
-![chlimage_1-129](assets/chlimage_1-129.png)
+![chlimage_1-127](assets/chlimage_1-129.png)
 
 ### Checklist voor abonnementen (campagne) {#subscriptions-checklist-campaign}
 
-Met de component **Controlelijst voor abonnementen (Campagne)** kunt u de abonnementen wijzigen die aan een Adobe Campagne-profiel zijn gekoppeld.
+Met de component **Controlelijst voor abonnementen (Campagne)** kunt u de abonnementen wijzigen die aan een Adobe Campaign-profiel zijn gekoppeld.
 
-Wanneer deze component aan een formulier wordt toegevoegd, worden alle beschikbare abonnementen als selectievakjes weergegeven en kan de gebruiker de gewenste abonnementen selecteren. Wanneer gebruikers het formulier verzenden, abonneert deze component de gebruiker op de geselecteerde services of meldt deze de gebruiker af, afhankelijk van het type formulieractie (**Adobe-campagne: Abonneren op Services** of **Adobe-campagne: Abonnement op Services** opzeggen).
+Wanneer deze component aan een formulier wordt toegevoegd, worden alle beschikbare abonnementen als selectievakjes weergegeven en kan de gebruiker de gewenste abonnementen selecteren. Wanneer gebruikers het formulier verzenden, abonneert deze component de gebruiker op de geselecteerde services of meldt deze de gebruiker af, afhankelijk van het type formulieractie (**Adobe Campaign: Abonneren op Services** of **Adobe Campaign: Abonnement op Services** opzeggen).
 
 >[!NOTE]
 >
 >De component controleert niet welke services de gebruiker al heeft geabonneerd op of zich niet heeft geabonneerd op.
 
-U kunt instellingen [configureren die gelden voor de meeste Adobe Campagne-componenten](#settings-common-to-most-components) in de component Checklist (Campagne) voor abonnementen. (Er zijn geen Adobe Campagne-configuraties beschikbaar voor deze component.)
+U kunt instellingen [configureren die gelden voor de meeste Adobe Campaign-componenten](#settings-common-to-most-components) in de component Checklist (Campagne) voor abonnementen. (Er zijn geen Adobe Campaign-configuraties beschikbaar voor deze component.)
 
 In het volgende voorbeeld ziet u een component Subscriptions Checklist (Campaign) die wordt weergegeven.
 
@@ -522,7 +529,7 @@ In het volgende voorbeeld ziet u een component Subscriptions Checklist (Campaign
 
 De component van het Gebied van de Tekst (Campagne) die u tekenreekstype gegevens, zoals een voornaam, een familienaam, een adres, een e-mailadres, enz. laat ingaan.
 
-Naast de [instellingen die de meeste Adobe Campagne-componenten](#settings-common-to-most-components)gemeen hebben, kunt u het volgende configureren:
+Naast de [instellingen die de meeste Adobe Campaign-componenten](#settings-common-to-most-components)gemeen hebben, kunt u het volgende configureren:
 
 * **Restricties - Vervolgkeuzelijst Restrictie**
 
@@ -538,5 +545,5 @@ Naast de [instellingen die de meeste Adobe Campagne-componenten](#settings-commo
 
 In het volgende voorbeeld wordt een component Text Field (Campaign) weergegeven.
 
-![chlimage_1-135](assets/chlimage_1-131.png)
+![chlimage_1-131](assets/chlimage_1-131.png)
 
