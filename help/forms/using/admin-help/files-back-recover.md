@@ -73,9 +73,9 @@ Een eenvoudige installatie van een Correspondentenbeheeroplossing bestaat uit ee
 
 Met formulierbeheer stroomlijnt u het bijwerken, beheren en verwijderen van formulieren.
 
-### Werkruimte AEM Forms {#html-workspace}
+### AEM Forms Workspace {#html-workspace}
 
-De werkruimte van AEM Forms komt overeen met de mogelijkheden van de (Vervangen voor AEM formulieren in JEE) Flex Workspace en voegt nieuwe mogelijkheden toe om Workspace uit te breiden en te integreren en gebruikersvriendelijker te maken.
+AEM Forms Workspace past de mogelijkheden van de Flex Workspace (Verouderd voor AEM formulieren op JEE) aan en voegt nieuwe mogelijkheden toe om Workspace uit te breiden en te integreren en gebruikersvriendelijker te maken.
 
 >[!NOTE]
 >
