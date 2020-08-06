@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d5519211-8a04-4699-97bc-e162ec0f3781
 translation-type: tm+mt
 source-git-commit: 13d890d08a032fe4eef1dac793dcf2a3e682a52c
+workflow-type: tm+mt
+source-wordcount: '1482'
+ht-degree: 0%
 
 ---
 
@@ -43,7 +46,7 @@ In deze sectie van de documentatie wordt beschreven
 >
 >De componenten `Journal`en `Journal Sidebar` worden genoemd `Blog` en `Blog Sidebar`.
 >
->De blogfunctie in AEM 6.0 en eerdere releases wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
+>De blogfunctie in AEM 6.0 en eerdere versies wordt nu verwijderd. Het is gebaseerd op een sjabloon en auteurs mogen alleen inhoud maken in de auteursomgeving.
 
 ## Blogcomponenten toevoegen aan een pagina {#adding-blog-components-to-a-page}
 
@@ -72,133 +75,142 @@ Selecteer de geplaatste `Blog` component die u wilt openen en selecteer het `Con
 
 #### Het tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **[!UICONTROL Instellingen]** de basisfuncties van de blog op:
+Geef onder het **[!UICONTROL Settings]** tabblad de basisfuncties van de blog op:
 
-* **[!UICONTROL Miniatuur]** van bijlage toestaan Als deze optie is ingeschakeld, wordt een miniatuur van de bijgevoegde afbeelding gemaakt.
+* **[!UICONTROL Allow Attachment Thumbnail]**
+Als deze optie is ingeschakeld, wordt een miniatuur van de bijgevoegde afbeelding gemaakt.
 
-* **[!UICONTROL Maximale grootte miniatuur]** koppelen Maximale grootte (in pixels) van de miniatuurafbeelding in de bijlage. De standaardwaarde is 800 x 800.
+* **[!UICONTROL Max Attach Thumbnail Size]**
+Maximale grootte (in pixels) van de miniatuurafbeelding van de bijlage. De standaardwaarde is 800 x 800.
 
-* **[!UICONTROL Minimale afbeeldingsgrootte voor miniatuur]** Minimale afbeeldingsgrootte (in bytes) voor het genereren van miniaturen voor inline-afbeeldingen. De standaardwaarde is 100000bytes (100kb).
+* **[!UICONTROL Min Image Size for Thumbnail]**
+Minimale afbeeldingsgrootte (in bytes) voor het genereren van miniaturen voor inline-afbeeldingen. De standaardwaarde is 100000bytes (100kb).
 
-* **[!UICONTROL Maximale miniatuurgrootte]** Maximale grootte (in pixels) van de miniatuurafbeelding voor inline-afbeelding. De standaardwaarde is 800 x 800.
+* **[!UICONTROL Max Thumbnail Size]**
+Maximale grootte (in pixels) van de miniatuurafbeelding voor inline-afbeelding. De standaardwaarde is 800 x 800.
 
-* **[!UICONTROL Geprivilegieerde leden]** toestaanAls deze optie is ingeschakeld, mogen alleen geprivilegieerde leden inhoud maken.
+* **[!UICONTROL Allow Privileged Members]**
+Als deze optie is ingeschakeld, mogen alleen leden met Geprivilegieerde inhoud maken.
 
-* **[!UICONTROL Toegestane geprivilegieerde leden]** Voeg de geprivilegieerde leden toe die inhoud mogen maken.
+* **[!UICONTROL Allowed Privileged Members]**
+Voeg de geprivilegieerde leden toe die inhoud mogen maken.
 
-* **[!UICONTROL Door de gebruiker gegenereerde inhoud blokkeren in de bewerkingsmodus]** Auteur (indien ingeschakeld), wordt door de gebruiker gegenereerde inhoud tijdens het bewerken in de auteurmodus geblokkeerd.
+* **[!UICONTROL Block User Generated Content in Author Edit Mode]**
+Als deze optie is ingeschakeld, wordt door de gebruiker gegenereerde inhoud geblokkeerd tijdens het bewerken in de ontwerpmodus.
 
-* **[!UICONTROL Dagboektitel]** De blogtitel die op de pagina wordt weergegeven.
+* **[!UICONTROL Journal Title]**
+De blogtitel die op de pagina moet worden weergegeven.
    >Opmerking:
    >Met de functie Dagboek wordt automatisch een URL voor de blog gemaakt. Er worden maximaal 50 tekens (met 5 tekens extra voor uniciteit) gebruikt uit de dagboektitel die u hier opgeeft om een URL voor de blog te maken.
 
-* **[!UICONTROL Dagboekbeschrijving]** De blogbeschrijving.
+* **[!UICONTROL Journal Description]**
+De blogbeschrijving.
 
-* **[!UICONTROL Onderwerpen per pagina]**
+* **[!UICONTROL Topics Per Page]**
 
    Hiermee definieert u het aantal blogberichten/opmerkingen dat per pagina wordt weergegeven. De standaardwaarde is 10.
 
-* **[!UICONTROL Gematigd]**
+* **[!UICONTROL Moderated]**
 
    Als deze optie is ingeschakeld, moet het plaatsen van blogberichten en opmerkingen worden goedgekeurd voordat deze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Gesloten]**
+* **[!UICONTROL Closed]**
 
    Als deze optie is ingeschakeld, wordt de blog afgesloten met nieuwe blogberichten en opmerkingen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL RTF-editor]**
+* **[!UICONTROL Rich Text Editor]**
 
    Als deze optie is ingeschakeld, kunnen blogberichten en opmerkingen worden ingevoerd met een markering. Standaard is ingeschakeld.
 
-* **[!UICONTROL Tags toestaan]**
+* **[!UICONTROL Allow Tagging]**
 
-   Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **[!UICONTROL Tagveld]** ). De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labels aan hun advertentie toevoegen (zie **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Uploaden van bestanden toestaan]**
+* **[!UICONTROL Allow File Uploads]**
 
    Als deze optie is ingeschakeld, staat u toe dat bestandsbijlagen worden toegevoegd aan een blogbericht of opmerking. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Max. bestandsgrootte]**
+* **[!UICONTROL Max File Size]**
 
    Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
-* **[!UICONTROL Toegestane bestandstypen]**
+* **[!UICONTROL Allowed File Types]**
 
    Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
-* **[!UICONTROL Maximale bestandsgrootte afbeelding bijvoegen]**
+* **[!UICONTROL Max Attach Image File Size]**
 
    Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
 
-* **[!UICONTROL Reacties toestaan]**
+* **[!UICONTROL Allow Replies]**
 
    Als deze optie is ingeschakeld, kunt u reacties op opmerkingen op het blogbericht toestaan. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Gebruikers toestaan opmerkingen en onderwerpen te verwijderen]**
+* **[!UICONTROL Allow Users to Delete Comments and Topics]**
 
    Als deze optie is ingeschakeld, kunnen leden hun opmerkingen en blogberichten verwijderen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Volgen toestaan]**
+* **[!UICONTROL Allow Following]**
 
    Als deze optie is ingeschakeld, neemt u de volgende functie op voor blogartikelen, waarmee leden op de [hoogte](notifications.md) kunnen worden gesteld van nieuwe berichten. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL E-mailabonnementen toestaan]**
+* **[!UICONTROL Allow Email Subscriptions]**
 
    Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](email.md). De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Stemmen toestaan]**
+* **[!UICONTROL Allow Voting]**
 
    Als deze optie is ingeschakeld, voegt u de functie Stemmen toe aan een blogbericht. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Badges weergeven]**
+* **[!UICONTROL Display Badges]**
 
    Indien ingeschakeld, verdiende en toegewezen [badges](implementing-scoring.md) bij het blogbericht van een lid weergeven. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Aanbevolen inhoud toestaan]**
+* **[!UICONTROL Allow Featured Content]**
 
    als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het tabblad **[!UICONTROL Gebruikersmodernisering]** de moderatie-instellingen op:
+Geef onder het **[!UICONTROL User Moderation]** tabblad de moderatie-instellingen op:
 
-* **[!UICONTROL Posten weigeren]**
+* **[!UICONTROL Deny Posts]**
 
    Als deze optie wordt ingeschakeld, zullen de verantwoordelijken van de leden hun functie kunnen ontkennen en voorkomen dat de functie op het openbare forum verschijnt. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Onderwerpen sluiten/opnieuw openen]**
+* **[!UICONTROL Close/Reopen Topics]**
 
    Indien gecontroleerd, kunnen de vertrouwde op lidmoderatoren een onderwerp aan verdere uitgeeft en commentaren sluiten, en kunnen een onderwerp ook heropenen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Vlagberichten]**
+* **[!UICONTROL Flag Posts]**
 
    Als deze optie is ingeschakeld, kunnen leden onderwerpen of opmerkingen van anderen als ongeschikt markeren. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Lijst met redenen voor vlag]**
+* **[!UICONTROL Flag Reason List]**
 
    Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een onderwerp of opmerking niet als ongepast wordt gemarkeerd. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Reden voor aangepaste vlag]**
+* **[!UICONTROL Custom Flag Reason]**
 
    Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een onderwerp of opmerking als ongeschikt te bestempelen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Moderniseringsdrempel]**
+* **[!UICONTROL Moderation Threshold]**
 
    Ga het aantal tijden in een onderwerp of een commentaar moet door leden worden gemarkeerd alvorens moderators worden meegedeeld. De standaardwaarde is 1 (één keer).
 
-* **[!UICONTROL Limiet voor markering]**
+* **[!UICONTROL Flagging Limit]**
 
    Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
 #### Tabblad Tagveld {#tag-field-tab}
 
-Geef onder het tabblad **[!UICONTROL Tagveld]** op welke tags kunnen worden toegepast als **[!UICONTROL Tags]** toestaan is ingeschakeld op het tabblad **[!UICONTROL Instellingen]** :
+Geef onder het **[!UICONTROL Tag field]** tabblad op welke tags mogen worden toegepast als **[!UICONTROL Allow Tagging]** deze optie is ingeschakeld op het **[!UICONTROL Settings]** tabblad:
 
-* **[!UICONTROL Toegestane naamruimten]**
+* **[!UICONTROL Allowed Namespaces]**
 
-   Relevant als `Allow Tagging` is ingeschakeld onder het tabblad **[!UICONTROL Instellingen]** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` wordt gecontroleerd onder het **[!UICONTROL Settings]** lusje. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
-* **[!UICONTROL Suggestiegrenswaarde]**
+* **[!UICONTROL Suggestion Limit]**
 
    Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde -1 betekent geen limieten. De standaardwaarde is 0.
 
@@ -206,11 +218,11 @@ Geef onder het tabblad **[!UICONTROL Tagveld]** op welke tags kunnen worden toeg
 
 Wanneer u dubbelklikt op de `Blog Sidebar` component, wordt een dialoogvenster voor bewerken geopend.
 
-Geef onder het tabblad **[!UICONTROL Dagboekzijbalkinstellingen]** de datumnotatie voor archieven op en het type items dat u wilt weergeven op de zijbalk:
+Geef onder het **[!UICONTROL Journal Sidebar Settings]** tabblad de datumnotatie voor archieven op en het type items dat op de zijbalk moet worden weergegeven:
 
 ![chlimage_1-151](assets/chlimage_1-151.png)
 
-* **[!UICONTROL Datumnotatie]**
+* **[!UICONTROL Date format]**
 
    De indeling die wordt gebruikt om weer te geven voor archieven van blogberichten. Voor de notatie worden plaatsaanduidingen gebruikt die voldoen aan de Java-conventie.
 
@@ -219,9 +231,10 @@ Geef onder het tabblad **[!UICONTROL Dagboekzijbalkinstellingen]** de datumnotat
    * MMMMM: volledige maand, zoals juni
    * MMM: korte maand, zoals jun
    * MM: maandnummer, bijvoorbeeld 06
+
    De standaardwaarde is &quot;jjjj MMMMM&quot;, die bijvoorbeeld &quot;2015 juni&quot; zou weergeven
 
-* **[!UICONTROL Type weergave]**
+* **[!UICONTROL View Type]**
 
    De titel en het type blogberichten die op de zijbalk moeten worden weergegeven. De keuze is tussen
 
@@ -229,13 +242,13 @@ Geef onder het tabblad **[!UICONTROL Dagboekzijbalkinstellingen]** de datumnotat
    * Categorieën
    * Archieven
 
-* **[!UICONTROL Pad van component Journal]**
+* **[!UICONTROL Journal Component Path]**
 
    *(Optioneel)* De locatie van de blogbron waaruit blogartikelen moeten worden vermeld. Als deze optie leeg wordt gelaten, wordt de component resourceType gebruikt die op dezelfde pagina wordt weergegeven. `social/journal/components/hbs/journal`
 
    * Bijvoorbeeld, `/content/sites/engage/en/blog/jcr:content/content/primary/blog`
 
-* **[!UICONTROL Suggestiegrenswaarde]**
+* **[!UICONTROL Suggestion Limit]**
 
    Het aantal blogartikelen dat moet worden weergegeven. De waarde -1 betekent geen limiet. De standaardwaarde is -1.
 
