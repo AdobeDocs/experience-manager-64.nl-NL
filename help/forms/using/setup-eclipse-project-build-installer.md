@@ -1,6 +1,6 @@
 ---
-title: De Android-app voor AEM Forms maken
-seo-title: De Android-app voor AEM Forms maken
+title: De AEM Forms Android-app ontwikkelen
+seo-title: De AEM Forms Android-app ontwikkelen
 description: Stappen om het Android Studio-project in te stellen en het .apk-bestand voor de AEM Forms-app voor Android te maken
 seo-description: Stappen om het Android Studio-project in te stellen en het .apk-bestand voor de AEM Forms-app voor Android te maken
 uuid: 2e140aaf-5be5-4d5d-9941-9d1f4bf2debd
@@ -17,21 +17,21 @@ ht-degree: 0%
 ---
 
 
-# De Android-app voor AEM Forms maken {#build-the-aem-forms-android-app}
+# De AEM Forms Android-app ontwikkelen {#build-the-aem-forms-android-app}
 
 Voer de volgende stappen uit in de aanbevolen volgorde om de Android-app voor AEM Forms te maken.
 
-1. [Download het AEM Forms App Source Code Package](#download-android-zip)
+1. [Het AEM Forms App Source Code-pakket downloaden](#download-android-zip)
 1. [Omgevingsvariabelen instellen](#set-environment-variable-android)
-1. [Standaardapp voor AEM Forms maken](#set-up-the-xcode-project)
+1. [Standaard AEM Forms-app ontwikkelen](#set-up-the-xcode-project)
 
-## Download het AEM Forms App Source Code Package {#download-android-zip}
+## Het AEM Forms App Source Code-pakket downloaden {#download-android-zip}
 
 AEM Forms App Source Code Package verwijst naar het `adobe-lc-mobileworkspace-src-<version>.zip` archief. Dit archief bevat de broncode die is vereist voor het maken van een aangepaste AEM Forms-app. Het archief wordt opgenomen in het `adobe-aemfd-forms-app-src-pkg-<version>.zip`pakket dat beschikbaar is op de Software Distribution.
 
 Voer de volgende stappen uit om het `adobe-aemfd-forms-app-src-pkg-<version>.zip` bestand te downloaden:
 
-1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de Softwaredistributie.
+1. Open [Softwaredistributie](https://experience.adobe.com/downloads). U hebt een Adobe ID nodig om u aan te melden bij de softwaredistributie.
 1. Tik **[!UICONTROL Adobe Experience Manager]** beschikbaar in het koptekstmenu.
 1. In het **[!UICONTROL Filters]** gedeelte:
    1. Selecteer een optie **[!UICONTROL Forms]** in de **[!UICONTROL Solution]** vervolgkeuzelijst.
@@ -48,22 +48,22 @@ In de volgende afbeelding wordt de structuur van de `adobe-lc-mobileworkspace-sr
 
 ## Omgevingsvariabelen instellen {#set-environment-variable-android}
 
-Stel de volgende omgevingsvariabelen in voordat u het ontwikkelproces voor de AEM Forms-app start:
+Stel de volgende omgevingsvariabelen in voordat u het constructieproces voor de AEM Forms-app start:
 
 * Stel de omgevingsvariabele JAVA_HOME in op de locatie van de JDK-software op het lokale bestandssysteem. Bijvoorbeeld C:\Program Files\Java\jdk1.8.0_181
 * Stel de omgevingsvariabele van het `ANDROID_SDK_ROOT` systeem in op de SDK-locatie voor Android. Bijvoorbeeld C:\Users\username\AppData\Local\Android\Sdk
 * Stel de omgevingsvariabele van het `Path` systeem zo in dat deze de locatie van de map met platformen en tools voor Android bevat. Bijvoorbeeld C:\Users\username\AppData\Local\Android\Sdk\platform-tools and C:\Users\username\AppData\Local\Android\Sdk\tools.
 
-## Standaardapp voor AEM Forms maken {#set-up-the-xcode-project}
+## Standaard AEM Forms-app ontwikkelen {#set-up-the-xcode-project}
 
-Nadat u het bestand adobe-lc-mobileworkspace-src-&lt;version>.zip hebt opgeslagen in het lokale bestandssysteem en de omgevingsvariabelen hebt ingesteld, kunt u de standaard Android-app voor AEM Forms maken met een van de volgende opties:
+Nadat u het bestand adobe-lc-mobileworkspace-src-&lt;version>.zip hebt opgeslagen in het lokale bestandssysteem en de omgevingsvariabelen hebt ingesteld, kunt u de standaard AEM Forms Android-app ontwikkelen met een van de volgende opties:
 
-* [Een AEM Forms-app maken met Android Studio](#using-android-studio)
+* [AEM Forms-app ontwikkelen met Android Studio](#using-android-studio)
 * [.apk-bestand genereren met Android Studio](#generate-apk-android-studio)
 
-### Een AEM Forms-app maken met Android Studio {#using-android-studio}
+### AEM Forms-app ontwikkelen met Android Studio {#using-android-studio}
 
-Voer de volgende stappen uit om AEM Forms-app te maken met Android Studio:
+Voer de volgende stappen uit om een AEM Forms-app te maken met Android Studio:
 
 1. Start de Android Studio-toepassing op uw computer.
 1. Klik op **Een bestaand Android Studio-project** openen. Als het dialoogvenster voor het openen van een bestaand project niet automatisch wordt weergegeven, selecteert u **Bestand** > **Openen**.
@@ -74,7 +74,7 @@ Voer de volgende stappen uit om AEM Forms-app te maken met Android Studio:
    ![android_folder_studio](assets/android_folder_studio.png)
 
 1. Selecteer **android** in het linkerdeelvenster en klik op **Uitvoeren** > &#39;android&#39; **** uitvoeren.
-1. Selecteer het Android-apparaat in het gedeelte Verbonden apparaten in het dialoogvenster Target selecteren en klik op OK.
+1. Selecteer het Android-apparaat in het gedeelte Verbonden apparaten in het dialoogvenster Implementatiedoel selecteren en klik op OK.
 
    Nadat u de ontwikkelomgeving hebt gemaakt, kunt u nu aanpassingen op de app toepassen. Gebruik de volgende artikelen om de app aan te passen:
 
