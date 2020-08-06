@@ -11,15 +11,18 @@ topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 translation-type: tm+mt
 source-git-commit: 949ec23eb548a094425622d68e1dbf4f6ec7581f
+workflow-type: tm+mt
+source-wordcount: '2993'
+ht-degree: 2%
 
 ---
 
 
 # Richtlijnen voor prestaties{#performance-guidelines}
 
-Deze pagina biedt algemene richtlijnen voor het optimaliseren van de prestaties van uw AEM-implementatie. Als u nog niet eerder met AEM werkt, moet u de volgende pagina&#39;s doorlopen voordat u de prestatierichtlijnen gaat lezen:
+Deze pagina biedt algemene richtlijnen voor het optimaliseren van de prestaties van uw AEM-implementatie. Als u nog niet eerder hebt AEM, moet u de volgende pagina&#39;s doorlopen voordat u de prestatierichtlijnen gaat lezen:
 
-* [Basisconcepten van AEM](/help/sites-deploying/deploy.md#basic-concepts)
+* [Basisconcepten AEM](/help/sites-deploying/deploy.md#basic-concepts)
 * [Overzicht van opslag in AEM](/help/sites-deploying/storage-elements-in-aem-6.md#overview-of-storage-in-aem)
 * [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md)
 * [Technische vereisten](/help/sites-deploying/technical-requirements.md)
@@ -85,7 +88,7 @@ Hieronder ziet u de implementatieopties die beschikbaar zijn voor AEM (schuiven 
    <td><p>Campagne</p> </td> 
   </tr> 
   <tr> 
-   <td><p>Formulieren</p> </td> 
+   <td><p>Forms</p> </td> 
    <td><p>Auteur-offload</p> </td> 
    <td><p>HP-UX</p> </td> 
    <td><p>Tomcat</p> </td> 
@@ -257,33 +260,33 @@ Hieronder ziet u de implementatieopties die beschikbaar zijn voor AEM (schuiven 
 
 >[!NOTE]
 >
->De prestatierichtlijnen zijn voornamelijk van toepassing op AEM-sites.
+>De prestatierichtsnoeren zijn voornamelijk van toepassing op AEM Sites.
 
 ## Wanneer moeten de prestatierichtlijnen worden gebruikt? {#when-to-use-the-performance-guidelines}
 
 In de volgende situaties moet u de prestatierichtlijnen gebruiken:
 
-* **Eerste implementatie**: Wanneer u van plan bent AEM-sites of -middelen voor het eerst te implementeren, is het belangrijk dat u de beschikbare opties begrijpt wanneer u de Micro Kernel, Node Store en Data Store configureert (in vergelijking met de standaardinstellingen). Bijvoorbeeld, veranderend de standaardmontages van het Opslag van Gegevens voor TarMK in de Opslag van de Gegevens van het Dossier.
+* **Eerste implementatie**: Wanneer u AEM Sites of Middelen voor het eerst wilt implementeren, is het belangrijk dat u de beschikbare opties begrijpt wanneer u de Micro Kernel, Node Store en Data Store configureert (in vergelijking met de standaardinstellingen). Bijvoorbeeld, veranderend de standaardmontages van het Opslag van Gegevens voor TarMK in de Opslag van de Gegevens van het Dossier.
 * **Een upgrade uitvoeren naar een nieuwe versie**: Wanneer u een upgrade uitvoert naar een nieuwe versie, is het belangrijk dat u de verschillen in prestaties begrijpt ten opzichte van de actieve omgeving. Bijvoorbeeld, bevordering van AEM 6.1 aan 6.2, of van AEM 6.0 CRX2 aan 6.2 OAK.
-* **De responstijd is traag**: Wanneer de geselecteerde architectuur van Nodestore niet aan uw vereisten voldoet, is het belangrijk om de prestatiesverschillen te begrijpen vergeleken met andere topologieopties. U kunt bijvoorbeeld TarMK gebruiken in plaats van MongoMK, of een File Data Sore gebruiken in plaats van een Amazon S3- of Microsoft Azure Data Store.
+* **De responstijd is traag**: Wanneer de geselecteerde architectuur van Nodestore niet aan uw vereisten voldoet, is het belangrijk om de prestatiesverschillen te begrijpen vergeleken met andere topologieopties. Bijvoorbeeld, plaatsend TarMK in plaats van MongoMK, of het gebruiken van een Sore van de Gegevens van het Dossier in plaats van een Amazon S3 of Microsoft Azure de Opslag van Gegevens.
 * **Meer auteurs** toevoegen: Wanneer de geadviseerde topologie TarMK niet aan de prestatiesvereisten voldoet en het upsizing van de knoop van de Auteur de maximumbeschikbare capaciteit heeft bereikt, is het belangrijk om de prestatiesverschillen te begrijpen vergeleken bij het gebruiken van MongoMK met drie of meer knopen van de Auteur. U kunt bijvoorbeeld MongoMK gebruiken in plaats van TarMK.
-* **Meer inhoud** toevoegen: Als de aanbevolen gegevensopslagarchitectuur niet aan uw vereisten voldoet, is het belangrijk dat u weet welke prestatieverschillen er zijn ten opzichte van andere gegevensopslagopties. Voorbeeld: gebruik van de Amazon S3 of Microsoft Azure Data Store in plaats van een File Data Store.
+* **Meer inhoud** toevoegen: Als de aanbevolen gegevensopslagarchitectuur niet aan uw vereisten voldoet, is het belangrijk dat u weet welke prestatieverschillen er zijn ten opzichte van andere gegevensopslagopties. Voorbeeld: met de Amazon S3 of Microsoft Azure Data Store in plaats van een File Data Store.
 
 ## Inleiding {#introduction}
 
-In dit hoofdstuk wordt een algemeen overzicht gegeven van de AEM-architectuur en de belangrijkste componenten ervan. Zij bevat ook ontwikkelingsrichtsnoeren en beschrijft de testscenario&#39;s die in de TarMK- en MongoMK-benchmarktests worden gebruikt.
+In dit hoofdstuk wordt een algemeen overzicht gegeven van de AEM architectuur en de belangrijkste onderdelen ervan. Zij bevat ook ontwikkelingsrichtsnoeren en beschrijft de testscenario&#39;s die in de TarMK- en MongoMK-benchmarktests worden gebruikt.
 
-### Het AEM-platform {#the-aem-platform}
+### Het Platform AEM {#the-aem-platform}
 
-Het AEM-platform bestaat uit de volgende componenten:
+Het AEM platform bestaat uit de volgende componenten:
 
 ![chlimage_1](assets/chlimage_1.png)
 
-Zie [Wat is AEM](/help/sites-deploying/deploy.md#what-is-aem)voor meer informatie over het AEM-platform.
+Zie [Wat is AEM](/help/sites-deploying/deploy.md#what-is-aem)voor meer informatie over het AEM platform.
 
-### De AEM-architectuur {#the-aem-architecture}
+### De AEM architectuur {#the-aem-architecture}
 
-Er zijn drie belangrijke bouwstenen aan een plaatsing AEM. De **instantie** Auteur die door auteurs van inhoud, editors en fiatteurs wordt gebruikt om inhoud te maken en te reviseren. Wanneer de inhoud wordt goedgekeurd, wordt het gepubliceerd aan een tweede instantietype genoemd de **Publish Instantie** van waar het door het eind wordt betreden - gebruikers. De derde bouwsteen is **Dispatcher** die een module is die caching en URL het filtreren behandelt en op de webserver geïnstalleerd is. Voor extra informatie over de architectuur AEM, zie de [Typische Scenario&#39;s](/help/sites-deploying/deploy.md#typical-deployment-scenarios)van de Plaatsing.
+Er zijn drie belangrijke bouwstenen aan een AEM plaatsing. De **instantie** Auteur die door auteurs van inhoud, editors en fiatteurs wordt gebruikt om inhoud te maken en te reviseren. Wanneer de inhoud wordt goedgekeurd, wordt het gepubliceerd aan een tweede instantietype genoemd de **Publish Instantie** van waar het door het eind wordt betreden - gebruikers. De derde bouwsteen is **Dispatcher** die een module is die caching en URL het filtreren behandelt en op de webserver geïnstalleerd is. Voor extra informatie over de AEM architectuur, zie de [Typische Scenario&#39;s](/help/sites-deploying/deploy.md#typical-deployment-scenarios)van de Plaatsing.
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
 
@@ -295,15 +298,15 @@ Micro Kernels fungeert als persistentiemanagers in AEM. Er worden drie soorten M
 
 ### Nodestore {#nodestore}
 
-In AEM, kunnen de binaire gegevens onafhankelijk van inhoudsknopen worden opgeslagen. De locatie waar de binaire gegevens worden opgeslagen, wordt de **gegevensopslag** genoemd, terwijl de locatie van de inhoudknooppunten en -eigenschappen de **knooppuntopslag** wordt genoemd.
+In AEM kunnen binaire gegevens onafhankelijk van inhoudsknooppunten worden opgeslagen. De locatie waar de binaire gegevens worden opgeslagen, wordt de **gegevensopslag** genoemd, terwijl de locatie van de inhoudknooppunten en -eigenschappen de **knooppuntopslag** wordt genoemd.
 
 >[!NOTE]
 >
->Adobe raadt TarMK aan als de standaardpersistentietechnologie die door klanten wordt gebruikt voor zowel de AEM-auteur als de publicatie-exemplaren.
+>Adobe raadt TarMK aan de standaardpersistentietechnologie te zijn die door klanten voor zowel de auteur AEM als de Publish instanties wordt gebruikt.
 
 >[!CAUTION]
 >
->De relationele Database Micro Kernel wordt beperkt ondersteund. Neem contact op met de [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) van Adobe voordat u dit type Micro Kernel gebruikt.
+>De relationele Database Micro Kernel wordt beperkt ondersteund. Neem contact op met de klantenservice [van](https://helpx.adobe.com/marketing-cloud/contact-support.html) Adobe voordat u dit type Micro Kernel gebruikt.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
@@ -315,15 +318,15 @@ Voor verdere details over de beschikbare configuratieopties, zie het [Vormen van
 
 >[!NOTE]
 >
->Adobe raadt u aan de optie te kiezen voor de implementatie van AEM op Azure of Amazon Web Services (AWS) met behulp van Adobe Managed Services, waarbij klanten profiteren van een team dat de ervaring en vaardigheden heeft om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Raadpleeg onze [aanvullende documentatie over Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
+>Adobe raadt aan om de optie te kiezen voor het implementeren van AEM op Azure of Amazon Web Services (AWS) met behulp van Adobe Managed Services, waarbij klanten profiteren van een team dat de ervaring en de vaardigheden heeft om AEM in deze cloud computing-omgevingen te implementeren en te gebruiken. Raadpleeg onze [aanvullende documentatie over Adobe Managed Services](https://www.adobe.com/marketing-cloud/enterprise-content-management/managed-services-cloud-platform.html?aemClk=t).
 >
->Voor aanbevelingen over de implementatie van AEM in Azure of AWS, buiten de door Adobe beheerde services, raden we u ten zeerste aan rechtstreeks samen te werken met de cloud provider of een van onze partners die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde cloudprovider of partner is verantwoordelijk voor de groottesortering van specificaties, het ontwerp en de implementatie van de architectuur die zij ondersteunen om te voldoen aan uw specifieke vereisten op het gebied van prestaties, belasting, schaalbaarheid en beveiliging.
+>Voor aanbevelingen over het implementeren van AEM op Azure of AWS, buiten Adobe Managed Services, raden we u ten zeerste aan rechtstreeks samen te werken met de cloud provider of een van onze partners die de implementatie van AEM in de cloud-omgeving van uw keuze ondersteunen. De geselecteerde cloudprovider of partner is verantwoordelijk voor de groottesortering van specificaties, het ontwerp en de implementatie van de architectuur die zij ondersteunen om te voldoen aan uw specifieke vereisten op het gebied van prestaties, belasting, schaalbaarheid en beveiliging.
 >
 >Zie ook de pagina met [technische vereisten](/help/sites-deploying/technical-requirements.md#supported-platforms) voor meer informatie.
 
 ### Zoeken {#search-features}
 
-In deze sectie worden de aangepaste indexproviders weergegeven die met AEM worden gebruikt. Voor meer informatie over het indexeren, zie de Vragen van de [Eik en het Indexeren](/help/sites-deploying/queries-and-indexing.md).
+In deze sectie worden de aangepaste indexproviders vermeld die met AEM worden gebruikt. Voor meer informatie over het indexeren, zie de Vragen van de [Eik en het Indexeren](/help/sites-deploying/queries-and-indexing.md).
 
 >[!NOTE]
 >
@@ -333,12 +336,12 @@ In deze sectie worden de aangepaste indexproviders weergegeven die met AEM worde
 
 ### Richtlijnen voor ontwikkeling {#development-guidelines}
 
-U zou voor AEM moeten ontwikkelen die op **prestaties en scalability** gericht is. Hieronder vindt u een aantal aanbevolen procedures die u kunt volgen:
+U moet zich ontwikkelen voor AEM gericht op **prestaties en schaalbaarheid**. Hieronder vindt u een aantal aanbevolen procedures die u kunt volgen:
 
 **DO**
 
 * Scheiding van presentatie, logica en inhoud toepassen
-* Bestaande AEM API&#39;s gebruiken (bijvoorbeeld: Sling) en gereedschap (bv. Replicatie)
+* Bestaande AEM-API&#39;s gebruiken (bijvoorbeeld: Sling) en gereedschap (bv. Replicatie)
 * Ontwikkelen in de context van werkelijke inhoud
 * Ontwikkelen voor optimale kakkerbaarheid
 * Aantal spaarbestanden minimaliseren (bijv.: door gebruik te maken van tijdelijke workflows)
@@ -379,7 +382,7 @@ AEM Assets:
 
 **Productscenario mixen**
 
-AEM-sites + middelen:
+AEM Sites + Middelen:
 
 * Gebruikersinteracties voor sites: Artikelpagina lezen / Pagina lezen / Alinea maken / Alinea bewerken / Pagina Inhoud maken / Pagina Inhoud plaatsen/Zoeken in auteur activeren
 * Gebruikersinteracties voor middelen: Blader middelen / zoekmiddelen / element downloaden / Metagegevens van element lezen / Metagegevens van element bijwerken / element uploaden / workflow voor uploaden van element uitvoeren
@@ -396,7 +399,7 @@ Media:
 
 Dit hoofdstuk geeft algemene prestatiesrichtlijnen voor TarMK die de minimumarchitectuurvereisten en de montageconfiguratie specificeren. Er wordt ook voorzien in benchmarktests voor verdere verduidelijking.
 
-Adobe raadt TarMK aan de standaardpersistentietechnologie te zijn die door klanten in alle implementatiescenario&#39;s wordt gebruikt, voor zowel de AEM-auteur- als de AEM-publicatiemogelijkheden.
+Adobe raadt TarMK aan om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel auteur AEM als Publish instanties wordt gebruikt.
 
 Voor meer informatie over TarMK, zie de Scenario&#39;s [van de](/help/sites-deploying/recommended-deploys.md#deployment-scenarios) Plaatsing en de Opslag van [Tar](/help/sites-deploying/storage-elements-in-aem-6.md#tar-storage).
 
@@ -404,7 +407,7 @@ Voor meer informatie over TarMK, zie de Scenario&#39;s [van de](/help/sites-depl
 
 >[!NOTE]
 >
->De onderstaande minimale architectuurrichtlijnen zijn van toepassing op productieomgevingen en grote verkeerslocaties. Dit zijn **niet** de [minimumspecificaties](/help/sites-deploying/technical-requirements.md#prerequisites) nodig om AEM in werking te stellen.
+>De onderstaande minimale architectuurrichtlijnen zijn van toepassing op productieomgevingen en grote verkeerslocaties. Dit zijn **niet** de [minimumspecificaties](/help/sites-deploying/technical-requirements.md#prerequisites) die nodig zijn om AEM uit te voeren.
 
 Om goede prestaties te vestigen wanneer het gebruiken van TarMK, zou u van de volgende architectuur moeten beginnen:
 
@@ -412,17 +415,17 @@ Om goede prestaties te vestigen wanneer het gebruiken van TarMK, zou u van de vo
 * Twee publicatie-instanties
 * Twee verzenders
 
-Hieronder ziet u de architectuurrichtlijnen voor AEM-sites en AEM-middelen.
+Hieronder ziet u de architectuurrichtlijnen voor AEM sites en AEM Assets.
 
 >[!NOTE]
 >
 >Binair-less replicatie zou moeten worden aangezet **op** als de Datastore van het Dossier wordt gedeeld.
 
-**Richtlijnen voor tekenarchitectuur voor AEM-sites**
+**Richtlijnen voor de Tar Architecture voor AEM Sites**
 
 ![chlimage_1-5](assets/chlimage_1-5.png)
 
-**Richtsnoeren voor de architectuur van banden voor AEM-activa**
+**Richtlijnen voor de Tar Architecture voor AEM Assets**
 
 ![chlimage_1-6](assets/chlimage_1-6.png)
 
@@ -478,7 +481,7 @@ Voor goede prestaties, zou u de montages hieronder voorgestelde richtlijnen moet
    <td>DAM MetaData Writeback</td> 
    <td><code>Transient Workflow</code></td> 
    <td>ingeschakeld</td> 
-   <td>Deze workflow beheert de XMP-schrijfbewerking naar het oorspronkelijke binaire bestand en stelt de laatste gewijzigde datum in JCR in.</td> 
+   <td>Deze workflow beheert XMP terugschrijven naar het oorspronkelijke binaire getal en stelt de datum van laatste wijziging in JCR in.</td> 
   </tr> 
  </tbody> 
 </table>
@@ -498,7 +501,7 @@ De benchmarktests werden uitgevoerd op de volgende specificaties:
 | Schijf | Magnetisch |
 | Java | Oracle JRE versie 8 |
 | JVM Heap | 16GB |
-| Product | AEM 6.2 |
+| Product | AEM 6,2 |
 | Nodestore | TarMK |
 | Datastore | Bestand DS |
 | Scenario | Enkel product: Elementen / 30 gelijktijdige threads |
@@ -608,7 +611,7 @@ De benchmarktests werden uitgevoerd op de volgende specificaties:
 | Schijf | Magnetisch - >1k IOPS | Magnetisch - >1k IOPS |
 | Java | Oracle JRE versie 8 | N.v.t. |
 | JVM Heap | 16GB | N.v.t. |
-| Product | AEM 6.2 | MongoDB 3.2 WiredTiger |
+| Product | AEM 6,2 | MongoDB 3.2 WiredTiger |
 | Nodestore | MongoMK | N.v.t. |
 | Datastore | Bestand DS | N.v.t. |
 | Scenario | Enkel product: Elementen / 30 gelijktijdige threads | Enkel product: Elementen / 30 gelijktijdige threads |
@@ -623,7 +626,7 @@ De benchmarktests werden uitgevoerd op de volgende specificaties:
 
 ## TarMK vs MongoMK {#tarmk-vs-mongomk}
 
-De basisregel die in overweging moet worden genomen wanneer het kiezen tussen twee is dat TarMK voor prestaties wordt ontworpen, terwijl MongoMK voor scalability wordt gebruikt. Adobe raadt TarMK aan de standaardpersistentietechnologie te zijn die door klanten in alle implementatiescenario&#39;s wordt gebruikt, voor zowel de AEM-auteur- als de AEM-publicatiemogelijkheden.
+De basisregel die in overweging moet worden genomen wanneer het kiezen tussen twee is dat TarMK voor prestaties wordt ontworpen, terwijl MongoMK voor scalability wordt gebruikt. Adobe raadt TarMK aan om de standaardpersistentietechnologie te zijn die door klanten in alle plaatsingsscenario&#39;s, voor zowel auteur AEM als Publish instanties wordt gebruikt.
 
 De primaire reden voor het kiezen van de MongoMK persistence backend over TarMK is de instanties horizontaal te schalen. Dit betekent dat er altijd twee of meer actieve auteur-instanties moeten worden uitgevoerd en dat MongoDB moet worden gebruikt als het opslagsysteem voor persistentie. De noodzaak om meer dan één auteurinstantie in werking te stellen vloeit over het algemeen voort uit het feit dat de cpu en geheugencapaciteit van één enkele server, die alle gezamenlijke auteursactiviteiten steunt, niet meer duurzaam is.
 
@@ -707,7 +710,7 @@ Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#mic
   </tr> 
   <tr> 
    <td>Product </td> 
-   <td>AEM 6.2</td> 
+   <td>AEM 6,2</td> 
    <td>MongoDB 3.2 WiredTiger</td> 
    <td> </td> 
   </tr> 
@@ -740,7 +743,7 @@ Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#mic
 
 >[!NOTE]
 >
->Als u hetzelfde aantal auteurs met MongoDB wilt inschakelen als met één TarMK-systeem, hebt u een cluster met twee AEM-knooppunten nodig. Een cluster met vier knooppunten in MongoDB kan 1,8 keer het aantal auteurs afhandelen dan één TarMK-instantie. Een achtnodencluster MongoDB kan 2.3 keer het aantal Auteurs behandelen dan één instantie TarMK.
+>Om het zelfde aantal Auteurs met MongoDB toe te laten zoals met één systeem TarMK hebt u een cluster met twee AEM knopen nodig. Een cluster met vier knooppunten in MongoDB kan 1,8 keer het aantal auteurs afhandelen dan één TarMK-instantie. Een achtnodencluster MongoDB kan 2.3 keer het aantal Auteurs behandelen dan één instantie TarMK.
 
 <table> 
  <tbody> 
@@ -794,8 +797,8 @@ Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#mic
   </tr> 
   <tr> 
    <td>Product </td> 
-   <td>AEM 6.2</td> 
-   <td>AEM 6.2</td> 
+   <td>AEM 6,2</td> 
+   <td>AEM 6,2</td> 
    <td><br /> MongoDB 3.2 WiredTiger</td> 
   </tr> 
   <tr> 
@@ -823,11 +826,11 @@ Zie [Aanbevolen implementaties](/help/sites-deploying/recommended-deploys.md#mic
 
 ![chlimage_1-13](assets/chlimage_1-13.png)
 
-### Richtlijnen voor schaalbaarheid van architectuur voor AEM-sites en -middelen {#architecture-scalability-guidelines-for-aem-sites-and-assets}
+### Richtlijnen voor schaalbaarheid van architectuur voor AEM Sites en bedrijfsmiddelen {#architecture-scalability-guidelines-for-aem-sites-and-assets}
 
 ![chlimage_1-14](assets/chlimage_1-14.png)
 
-## Samenvatting van de prestatierichtlijnen {#summary-of-performance-guidelines}
+## Samenvatting van de prestatierichtlijnen  {#summary-of-performance-guidelines}
 
 De richtsnoeren op deze pagina kunnen als volgt worden samengevat:
 
@@ -844,7 +847,7 @@ De richtsnoeren op deze pagina kunnen als volgt worden samengevat:
 * **Nodestore** zou op de lokale schijf, niet een netwerk in bijlage opslag (NAS) moeten worden opgeslagen
 * Bij gebruik van **Amazon S3**:
 
-   * De Amazon S3-datastore wordt gedeeld door de Auteur- en Publish-laag
+   * De Amazon S3-datastore wordt gedeeld tussen de laag Auteur en Publiceren
    * Binair-less replicatie moet worden aangezet
    * Voor de afvalophaling van Datastore is een eerste uitvoering vereist voor alle auteur- en publicatieknooppunten en vervolgens een tweede uitvoering voor Auteur
 
