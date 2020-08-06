@@ -11,19 +11,22 @@ content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '317'
+ht-degree: 0%
 
 ---
 
 
 # Naamgevingsconventies{#naming-conventions}
 
-Nodes in de gegevensopslagruimte zijn onderworpen aan naamconventies van de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). AEM stelt echter andere conventies voor de naam van paginaknooppunten op.
+Nodes in de gegevensopslagruimte zijn onderworpen aan naamconventies van de [Java Content Repository](/help/sites-developing/the-basics.md#java-content-repository). Er worden echter AEM andere conventies voor de naam van paginaknooppunten opgelegd.
 
 ## Naamgevingsconventies voor pagina&#39;s {#naming-conventions-for-pages}
 
 Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
-* JcrUtil: de AEM-implementatie van de [GCO-voorzieningen](#jcr-utilities).
+* JcrUtil: de AEM uitvoering van de [GCO-voorzieningen](#jcr-utilities).
 * PageManager: biedt [Paginabeheer](#page-manager) methoden voor bewerkingen op paginaniveau.
 * Volgens de interface die wordt gebruikt:
 
@@ -32,7 +35,7 @@ Deze naamconventies worden op verschillende niveaus geïmplementeerd:
 
 ### JCR-hulpprogramma&#39;s {#jcr-utilities}
 
-[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) is de AEM-implementatie van de JCR-hulpprogramma&#39;s. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
+[JcrUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/commons/jcr/JcrUtil.html) is de AEM implementatie van de hulpprogramma&#39;s van het JCR. Vooral voor het valideren van namen zijn de tekstafbeeldingen die hierin staan en de volgende validaties van belang:
 
 * `isValidName`
 
