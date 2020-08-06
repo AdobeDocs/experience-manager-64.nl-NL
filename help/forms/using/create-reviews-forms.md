@@ -10,6 +10,9 @@ topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '689'
+ht-degree: 0%
 
 ---
 
@@ -22,7 +25,7 @@ Een revisie is een mechanisme waarmee een of meer revisoren opmerkingen kunnen m
 
 ## Een revisie instellen {#setting-up-a-review}
 
-1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
+1. Navigeer naar het tabblad Forms en selecteer een formulier.
 1. Als er geen revisie wordt uitgevoerd op het element, wordt het pictogram Start Review ![name6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Klik op het pictogram Revisie starten ![aem6forms_review_chat_comment](assets/aem6forms_review_chat_comment.png) .
 1. Voer de volgende gegevens in:
 
@@ -41,7 +44,7 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 1. Aan alle revisoren wordt een controletaak toegewezen. De taak wordt weergegeven in de sectie Meldingen. Een revisor kan op een melding klikken of naar het Postvak In gaan om de taak te bekijken. Een revisor kan op deze knop klikken om de revisietaak te openen, het formulier te bekijken en opmerkingen toe te voegen.
 
    ![Waarschuwing revisormelding](assets/noti.png)
-   **** Afbeelding: Melding *van revisor*
+   **Afbeelding:** *Waarschuwing revisormelding*
 
 1. Het commentaarvakje is beschikbaar aan de initiatiefnemer en de recensenten van de activa. Anderen kunnen de opmerkingen wel weergeven, maar kunnen geen opmerkingen schrijven.
 
@@ -51,7 +54,7 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 >
 >Alleen lopende revisies kunnen worden gewijzigd. Volledige revisies kunnen niet worden gewijzigd.
 
-1. Navigeer naar het tabblad Formulieren en selecteer een formulier.
+1. Navigeer naar het tabblad Forms en selecteer een formulier.
 
 1. Als een element een revisie heeft die wordt uitgevoerd en u de aanvrager van de revisie bent, wordt een pictogram van het type Revisie beheren6forms_review_chat_comment ![](assets/aem6forms_review_chat_comment.png) weergegeven op de actiebalk. Alleen revisieaanvrager kan de revisie beheren (bijwerken/beëindigen).
 
@@ -69,7 +72,7 @@ In deze sectie wordt beschreven wat er gebeurt wanneer een revisie wordt gemaakt
 1. Bewerk de benodigde velden en klik op Bijwerken.
 
    ![Bijgewerkte status controleren in Taakbeheer](assets/tskmgr.png)
-   **** Afbeelding: Bijgewerkte status *controleren in Taakbeheer*
+   **Afbeelding:** *Bijgewerkte status controleren in Taakbeheer*
 
 1. Klik op Einde om de revisie te beëindigen.
 
@@ -83,7 +86,7 @@ In deze sectie wordt beschreven wat er gebeurt bij het einde/de wijziging van de
 1. Als een revisor wordt verwijderd:
 
    ![Een revisor verwijderen](assets/removeduser.png)
-   **** Afbeelding: Een revisor *verwijderen*
+   **Afbeelding:** *Een revisor verwijderen*
 
    1. Als onvolledig, wordt de toegewezen taak geëindigd.
    1. De controleur kan geen opmerkingen meer maken over het element.
@@ -91,7 +94,7 @@ In deze sectie wordt beschreven wat er gebeurt bij het einde/de wijziging van de
 1. Als een controleur wordt toegevoegd:
 
    ![Een revisor toevoegen](assets/addedreviewer.png)
-   **** Afbeelding: Een revisor *toevoegen*
+   **Afbeelding:** *Een revisor toevoegen*
 
    1. Er wordt een revisietaak gemaakt en toegewezen aan de nieuwe revisor.
    1. De zojuist toegevoegde controleur kan opmerkingen toevoegen voor het element.
