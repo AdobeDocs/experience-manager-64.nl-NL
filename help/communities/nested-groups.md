@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 955a1876-4882-4926-82e9-846bc8bb332c
 translation-type: tm+mt
 source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+workflow-type: tm+mt
+source-wordcount: '577'
+ht-degree: 3%
 
 ---
 
@@ -21,9 +24,9 @@ source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
 
 Op auteur, van globale navigatie
 
-* Selecteer **[!UICONTROL Gemeenschappen > Sites]**
-* Selecteer een map **** engageren om deze te openen
-* Selecteer de kaart voor de **[!UICONTROL Engelstalige website Aan de slag]** met lesbestanden
+* Selecteer **[!UICONTROL Communities > Sites]**
+* Selecteren **[!UICONTROL engage folder]** om te openen
+* Selecteer de kaart voor de **[!UICONTROL Getting Started Tutorial]** Engelse site
    * De kaartafbeelding selecteren
    * Geen ** pictogram selecteren
 
@@ -41,22 +44,23 @@ Deze groep kan worden gemaakt omdat de sitestructuur voor de verbinding een groe
 
 Deze consoles lijken erg op de console van de Plaatsen van Gemeenschappen.
 
-* Groep **[!UICONTROL maken selecteren]**
+* Selecteer **[!UICONTROL Create Group]**
 * `1 Community Group Template`:
    * Titel van communautaire groep: Kunst
    * Omschrijving van de communautaire groep: Een bovenliggende groep voor verschillende kunstgroepen.
-   * Hoofdmap van communautaire groep: Standaard *laten staan*
+   * Hoofdmap van communautaire groep: *standaard verlaten*
    * Aanvullende beschikbare talen voor communautaire groepen:gebruik het keuzemenu om de beschikbare talen voor groepen in de gemeenschap te selecteren. In het menu worden alle talen weergegeven waarin de bovenliggende communitysite is gemaakt. Gebruikers kunnen in deze ene stap uit deze talen kiezen om groepen te maken in meerdere landinstellingen. De zelfde groep wordt gecreeerd in veelvoudige gespecificeerde talen in de console van Groepen van de respectieve communautaire plaatsen.
    * Naam communautaire groep: kunst
    * Sjabloon: naar beneden halen om te selecteren `Reference Group`
    * Selecteer `Next`
+
       ![ouderwetse](assets/parenttonestedgroup.png)
 
 Doorloop de andere deelvensters met deze instellingen:
 
 * **2 Ontwerp**
    * U kunt het ontwerp wijzigen of standaard het ontwerp van de bovenliggende site instellen
-   * Selecteer **[!UICONTROL Volgende]**
+   * Selecteer **[!UICONTROL Next]**
 * **3 Instellingen**
    * **Moderatie**
       * Leeg laten (overerven van bovenliggende site)
@@ -65,7 +69,7 @@ Doorloop de andere deelvensters met deze instellingen:
    * **Miniatuur**
       * `optional`
    * Selecteer `Next`
-* Selecteer **[!UICONTROL Maken]**
+* Selecteer **[!UICONTROL Create]**
 
 ### Groepen nesten binnen tekengroep {#nesting-groups-within-arts-group}
 
@@ -101,17 +105,18 @@ De `arts` groep moet ook een `groups` map bevatten, maar een map die leeg is en 
    * Titel: `Art History`
    * Naam: `history`
    * Sjabloonmodel: `Reference Group`
-   * Lidmaatschap: Selecteer `Restricted Membership`Een geheime groep, die alleen zichtbaar is voor uitgenodigde leden als voorbeeld, nodig [demogebruiker](tutorials.md#demo-users) uit `emily.andrews@mailinator.com`
+   * Lidmaatschap: Selecteer `Restricted Membership`Een geheime groep, die alleen zichtbaar is voor uitgenodigde leden als voorbeeld, nodigen 
+[demo-gebruiker](tutorials.md#demo-users) `emily.andrews@mailinator.com`
 
 Vernieuw de pagina om alle drie geneste groepen (subgemeenschappen) weer te geven.
 
 Indien nodig, om aan de genestelde groepen van de console van de Plaatsen van Gemeenschappen te navigeren:
 
-* Selecteer een **[!UICONTROL toegewijde map]**
-* Zelfstudiekaart **[!UICONTROL Aan de slag]** selecteren
-* Map **[!UICONTROL Groepen selecteren]**
-* Tekenkaart **[!UICONTROL selecteren]**
-* Map **[!UICONTROL Groepen selecteren]**
+* Selecteer **[!UICONTROL engage folder]**
+* Kaart **[!UICONTROL Getting Started Tutorial]** selecteren
+* Selecteer **[!UICONTROL Groups folder]**
+* Selecteer **[!UICONTROL arts card]**
+* Selecteer **[!UICONTROL Groups folder]**
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
