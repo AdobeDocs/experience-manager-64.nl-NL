@@ -1,8 +1,8 @@
 ---
 title: De app synchroniseren
 seo-title: De app synchroniseren
-description: Synchroniseer de app AEM Forms op uw mobiele apparaat met de AEM Forms-server.
-seo-description: Synchroniseer de app AEM Forms op uw mobiele apparaat met de AEM Forms-server.
+description: Synchroniseer de AEM Forms-toepassing op uw mobiele apparaat met de AEM Forms-server.
+seo-description: Synchroniseer de AEM Forms-toepassing op uw mobiele apparaat met de AEM Forms-server.
 uuid: 7e1526e1-13bd-498a-a265-cd4f2d05ccdd
 contentOwner: robhagat
 content-type: reference
@@ -11,6 +11,9 @@ topic-tags: forms-app
 discoiquuid: dae1ce32-702e-4cf0-b3c6-976551208d09
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '386'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 ## De app synchroniseren {#synchronizing-the-app-1}
 
-De formulieren in uw app worden gedownload van de AEM Forms-server. De formulieren worden gedownload onder de tabbladen Taken en Formulieren. Concepten die zijn gemaakt op basis van formulieren, worden gedownload op het tabblad Concepten en concepten die zijn gemaakt op basis van taken, worden gedownload op het tabblad Taken. Voor een zelfstandig formulier op de OSGi-server worden formulieren en concepten respectievelijk gedownload in de tabbladen Formulieren en Ontwerp.
+De formulieren in uw app worden gedownload van de AEM Forms-server. De formulieren worden gedownload onder Taken en op de tabbladen Forms. Concepten die zijn gemaakt op basis van formulieren, worden gedownload op het tabblad Concepten en concepten die zijn gemaakt op basis van taken, worden gedownload op het tabblad Taken. Voor een zelfstandig formulier op de OSGi-server worden formulieren en concepten gedownload in respectievelijk Forms en Concept tabbladen.
 
 Wanneer u een formulier invult en verzendt, wordt het formulier direct naar de AEM Forms-server geüpload als de app online is. De formulieren worden opgehaald van de server wanneer de app wordt gesynchroniseerd. De concepten worden echter meteen gesynchroniseerd met de server als de app online is.
 
@@ -41,7 +44,7 @@ Tik op de knop Synchroniseren ![synchroniseren-app](assets/sync-app.png) in de r
 
 ### Technische specificaties {#technical-specifications}
 
-* De belangrijkste logica voor het verzenden van de gegevens van de offline-app naar de AEM Forms-server vindt u in runtime/offline/util/offline.js.
+* De hoofdlogica voor het verzenden van de gegevens van de offline-app naar de AEM Forms-server vindt u in runtime/offline/util/offline.js.
 * In .js, verzendt de vraag aan de processOfflineSubmissionSavedTasks (...) functie, de bewaarde/voorgelegde taken naar de server. Ook worden eventuele fouten of conflicten in het synchronisatieproces afgehandeld. Als het verzenden van een taak mislukt, wordt de taak in de app gemarkeerd als mislukt. Bovendien blijft de taak in uw Postvak UIT.
 * De functie syncSubmissionTask() en syncSavedTask() voeren bewerkingen uit op individuele taken.
 * De aanroep van de functie processOfflineSubmissionSavedTasks() wordt geïnitieerd door de component met de takenlijst nadat een gebruiker heeft geselecteerd om offline status te synchroniseren met de server of een automatische synchronisatie met de achtergrondthread.
