@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
 translation-type: tm+mt
 source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+workflow-type: tm+mt
+source-wordcount: '399'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ Voor basisinformatie gaat u naar:
 
 * [Clientzijbibliotheken](../../help/sites-developing/clientlibs.md) gebruiken die zowel gebruiksdetails als foutopsporingsgereedschappen bieden
 * [Clientlibs voor SCF](client-customize.md#clientlibs) die nuttige informatie wanneer het aanpassen van componenten SCF verstrekt
-* [Blog: AEM-clientbibliotheken, zoals in het voorbeeld wordt uitgelegd](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
+* [Blog: AEM Clientbibliotheken, zoals wordt uitgelegd in het voorbeeld](https://blogs.adobe.com/experiencedelivers/experience-management/clientlibs-explained-example/)
 
 ## Waarom Clientlibs vereist zijn {#why-clientlibs-are-required}
 
@@ -47,7 +50,7 @@ Wanneer de vereiste clientlibs ontbreken, kan het [toevoegen van een Community-c
 
 De essentiële eigenschapinformatie voor ontwikkelaars identificeert de vereiste clientlibs.
 
-Bovendien, van een instantie AEM, die aan de Gids [van Componenten van de](components-guide.md) Gemeenschap doorbladert verleent toegang tot een lijst van cliëntlib categorieën voor een component worden vereist.
+Daarnaast kunt u vanuit een AEM naar de [Community Components Guide](components-guide.md) bladeren om een lijst met clientlib-categorieën weer te geven die voor een component zijn vereist.
 
 Bijvoorbeeld helemaal boven aan de pagina [](http://localhost:4502/content/community-components/en/reviews.html) Revisies worden de vereiste clientlibs weergegeven
 
@@ -79,7 +82,7 @@ Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE L
 
          * Herhalen om meer clientbibliotheken toe te voegen
       * Selecteer **[!UICONTROL OK]**
-   * Alles **[!UICONTROL opslaan selecteren]**
+   * Selecteer **[!UICONTROL Save All]**
 
 
 
@@ -87,7 +90,7 @@ Om een clientlib voor een communautaire plaats toe te voegen gebruikend [CRXDE L
 >
 >Als de site geen gemeenschapssite is, moet het bestaan of de locatie van de clientbibliotheken die voor de site worden gebruikt, worden gedetecteerd.
 
-Gebruikend het [Begonnen worden met het Voorbeeld van Gemeenschappen](getting-started.md) AEM, waar `site-name` is *geëngageerd*, is dit hoe cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
+Gebruikend het [Beginnen met het voorbeeld van AEM Communities](getting-started.md) , waar `site-name` is *geëngageerd*, is dit hoe de cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
 
