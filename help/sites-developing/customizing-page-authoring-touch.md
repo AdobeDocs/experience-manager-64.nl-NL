@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
 translation-type: tm+mt
 source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+workflow-type: tm+mt
+source-wordcount: '1375'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +24,7 @@ source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
 >
 >In dit document wordt beschreven hoe u het ontwerpen van pagina&#39;s kunt aanpassen in de moderne interface met aanraakbediening. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina&#39;s (en de [consoles](/help/sites-developing/customizing-consoles-touch.md)) van uw ontwerpinstantie kunt aanpassen.
+AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrijven van pagina&#39;s (en de [consoles](/help/sites-developing/customizing-consoles-touch.md)) van de ontwerpinstantie kunt aanpassen.
 
 * Clientlibs
 
@@ -38,7 +41,7 @@ AEM biedt verschillende mechanismen waarmee u de functionaliteit voor het schrij
 >
 >Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html)voor meer informatie.
 
-Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor het schrijven van pagina&#39;s in uw AEM-instantie uit te breiden. Een selectie wordt hieronder behandeld (op een hoog niveau).
+Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor het schrijven van pagina&#39;s in uw AEM uit te breiden. Een selectie wordt hieronder behandeld (op een hoog niveau).
 
 >[!NOTE]
 >
@@ -47,10 +50,11 @@ Deze kunnen op verschillende manieren worden gebruikt om de functionaliteit voor
 >* Clibs gebruiken en maken [](/help/sites-developing/clientlibs.md).
 >* Bedekkingen gebruiken en maken [](/help/sites-developing/overlays.md).
 >* [Graniet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/jcr_root/libs/granite/ui/index.html)
->* [Structuur van de interface](/help/sites-developing/touch-ui-structure.md) voor AEM-aanraakfuncties voor meer informatie over de structurele gebieden die worden gebruikt voor het ontwerpen van pagina&#39;s.
+>* [Structuur van de AEM interface](/help/sites-developing/touch-ui-structure.md) met aanraakfuncties voor meer informatie over de structurele gebieden die worden gebruikt voor het ontwerpen van pagina&#39;s.
+
 >
 >
-Dit onderwerp wordt ook behandeld in de zitting [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - de aanpassing van de [Gebruikersinterface voor AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
+Dit onderwerp wordt ook behandeld in de zitting van [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - de aanpassing van het [gebruikersinterface voor AEM 6.0](https://helpx.adobe.com/experience-manager/kt/eseminars/gems/aem-user-interface-customization-for-aem6.html).
 
 >[!CAUTION]
 >
@@ -68,11 +72,11 @@ Dit onderwerp wordt ook behandeld in de zitting [AEM Gems](https://docs.adobe.co
 
 Wanneer u een pagina bewerkt, zijn er verschillende [modi](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar. Deze modi worden geïmplementeerd met behulp van [lagen](/help/sites-developing/touch-ui-structure.md#layer). Hiermee hebt u toegang tot verschillende typen functionaliteit voor dezelfde pagina-inhoud. De standaardlagen zijn: bewerken, voorvertonen, notities aanbrengen, ontwikkelen en aanwijzen.
 
-### Voorbeeld van laag:Status van live kopiëren {#layer-example-live-copy-status}
+### Voorbeeld van laag: Status van live kopiëren {#layer-example-live-copy-status}
 
-Een standaardAEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens die betrekking hebben op [beheer](/help/sites-administering/msm.md) op meerdere locaties en wordt deze in de laag gemarkeerd.
+Een standaard AEM instantie verstrekt de laag MSM. Hiermee krijgt u toegang tot gegevens die betrekking hebben op [beheer](/help/sites-administering/msm.md) op meerdere locaties en wordt deze in de laag gemarkeerd.
 
-Om het in actie te zien kunt u om het even welke [Wij.Retail pagina van het taalexemplaar](/help/sites-developing/we-retail-globalized-site-structure.md) (of een andere levende exemplaarpagina) uitgeven en de **Levende wijze** van de Statusvan het Exemplaar selecteren.
+Om het in actie te zien kunt u om het even welke [Wij.Detailhandeltaal exemplaarpagina](/help/sites-developing/we-retail-globalized-site-structure.md) (of een andere levende exemplaarpagina) uitgeven en de **Levende wijze** van de Statusvan het Exemplaar selecteren.
 
 U kunt de MSM laagdefinitie (voor verwijzing) vinden in:
 
@@ -150,14 +154,14 @@ In een standaard AEM-installatie:
 
    * `cq:inplaceEditing`
 
-       bijvoorbeeld:
+      bijvoorbeeld:
 
       * `/libs/foundation/components/text/cq:editConfig`
       * `/libs/foundation/components/image/cq:editConfig`
 
          * property: `editorType`
 
-            Bepaalt het type van gealigneerde redacteur die zal worden gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht;bijv. `text`, `textimage`, `image`, `title`.
+            Bepaalt het type van gealigneerde redacteur die zal worden gebruikt wanneer het op zijn plaats uitgeven voor die component wordt teweeggebracht; bijv. `text`, `textimage`, `image`, `title`.
 
 1. De extra configuratiedetails van de redacteur kunnen worden gevormd gebruikend een `config` knoop die configuraties evenals een verdere `plugin` knoop bevat om noodzakelijke insteekconfiguratiedetails te bevatten.
 
@@ -185,7 +189,7 @@ In een standaard AEM-installatie:
 
    >[!CAUTION]
    >
-   >Let op: in AEM-uitsnijdverhoudingen, zoals ingesteld door de `ratio` eigenschap, worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De auteursgebruikers zullen zich van geen verschil bewust zijn op voorwaarde dat u het `name` bezit duidelijk bepaalt aangezien dit is wat in UI wordt getoond.
+   >Let op: in AEM uitsnijdverhoudingen, zoals ingesteld door de `ratio` eigenschap, worden gedefinieerd als **hoogte/breedte**. Dit verschilt van de conventionele definitie van breedte/hoogte en wordt gedaan om oude compatibiliteitsredenen. De auteursgebruikers zullen zich van geen verschil bewust zijn op voorwaarde dat u het `name` bezit duidelijk bepaalt aangezien dit is wat in UI wordt getoond.
 
 #### Een nieuwe plaatseditor maken {#creating-a-new-in-place-editor}
 
@@ -209,7 +213,7 @@ Om een nieuwe op zijn plaats redacteur (binnen uw clientlib) uit te voeren:
 
 #### Codevoorbeeld voor het maken van een nieuwe plaatseditor {#code-sample-for-creating-a-new-in-place-editor}
 
-`aem-authoring-extension-inplace-editor` is een voorbeeldpakket dat laat zien hoe u een nieuwe interne editor in AEM kunt maken.
+`aem-authoring-extension-inplace-editor` Dit is een voorbeeldpakket waarin wordt getoond hoe u een nieuwe interne editor in AEM kunt maken.
 
 CODE VOOR GITHUB
 
