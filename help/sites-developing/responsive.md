@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe raadt het gebruiken van de Redacteur van het KUUROORD voor projecten aan die op kader-gebaseerde cliënt-kant van enige paginatoepassing teruggeven (zoals _Reageren_) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige op kader-gebaseerde cliënt-kant teruggeven van de paginatoepassing (zoals _Reageren_) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 
 Ontwerp uw webpagina&#39;s zodanig dat ze zich aanpassen aan de clientviewport waarin ze worden weergegeven. Met responsief ontwerp kunnen dezelfde pagina&#39;s effectief op meerdere apparaten in beide richtingen worden weergegeven. In de volgende afbeelding ziet u enkele manieren waarop een pagina kan reageren op wijzigingen in de viewportgrootte:
@@ -32,11 +32,11 @@ Ontwerp uw webpagina&#39;s zodanig dat ze zich aanpassen aan de clientviewport w
 * Tekengrootte: Gebruik grotere tekstgrootte (indien van toepassing, zoals koppen) in grotere viewports.
 * Inhoud: Neem alleen de belangrijkste inhoud op wanneer u deze weergeeft op kleinere apparaten.
 * Navigatie: Er zijn apparaatspecifieke gereedschappen voor toegang tot andere pagina&#39;s.
-* Images: Serving image renditions that are appropriate for the client viewport. afhankelijk van de afmetingen van het venster.
+* Afbeeldingen: Uitvoerende afbeeldingsuitvoeringen die geschikt zijn voor de viewport van de client. afhankelijk van de afmetingen van het venster.
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
 
-Ontwikkel Adobe Experience Manager (AEM) toepassingen die HTML5 pagina&#39;s produceren die zich aan veelvoudige venstergrootte en richtlijn aanpassen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
+Ontwikkel Adobe Experience Manager (AEM) toepassingen die HTML5-pagina&#39;s genereren die zich aanpassen aan meerdere venstergrootten en -standen. De volgende bereiken van viewport-breedten komen bijvoorbeeld overeen met verschillende apparaattypen en -oriëntaties
 
 * Maximale breedte van 480 pixels (telefoon, staand)
 * Maximale breedte van 767 pixels (telefoon, liggend)
@@ -54,7 +54,7 @@ Tijdens het ontwerpen kunt u uw pagina&#39;s voor verschillende schermgrootten v
 
 ## Voordat u ontwikkelt {#before-you-develop}
 
-Voordat u de AEM-toepassing ontwikkelt die uw webpagina&#39;s ondersteunt, moet u een aantal ontwerpbeslissingen nemen. U moet bijvoorbeeld over de volgende informatie beschikken:
+Voordat u de AEM ontwikkelt die uw webpagina&#39;s ondersteunt, moet u een aantal ontwerpbeslissingen nemen. U moet bijvoorbeeld over de volgende informatie beschikken:
 
 * De apparaten waarop u zich richt.
 * De grootte van de doelviewport.
@@ -62,7 +62,7 @@ Voordat u de AEM-toepassing ontwikkelt die uw webpagina&#39;s ondersteunt, moet 
 
 ### Toepassingsstructuur {#application-structure}
 
-De typische AEM-toepassingsstructuur ondersteunt alle responsieve ontwerpimplementaties:
+De typische AEM toepassingsstructuur ondersteunt alle responsieve ontwerpimplementaties:
 
 * Paginacomponenten bevinden zich onder /apps/*application_name*/components
 * Sjablonen bevinden zich onder /apps/*application_name*/templates
@@ -70,7 +70,7 @@ De typische AEM-toepassingsstructuur ondersteunt alle responsieve ontwerpimpleme
 
 ## Mediaquery&#39;s gebruiken {#using-media-queries}
 
-Met mediaquery&#39;s kunt u CSS-stijlen selectief gebruiken voor het weergeven van pagina&#39;s. Met de ontwikkelingshulpmiddelen en functies van AEM kunt u mediaquery&#39;s effectief en efficiënt implementeren in uw toepassingen.
+Met mediaquery&#39;s kunt u CSS-stijlen selectief gebruiken voor het weergeven van pagina&#39;s. AEM ontwikkelingshulpmiddelen en eigenschappen laten u toe om media vragen in uw toepassingen effectief en efficiënt uit te voeren.
 
 De W3C-groep bevat de aanbeveling [Mediaquery](https://www.w3.org/TR/css3-mediaqueries/) &#39;s waarin deze CSS3-functie en de syntaxis worden beschreven.
 
@@ -132,7 +132,7 @@ In de volgende tabel worden de bestanden in de onderliggende css-map weergegeven
  </tbody> 
 </table>
 
-Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken zijn opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
+Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken worden opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
 
 `#base=css`
 
@@ -151,7 +151,7 @@ responsive-1200px.css
 
 **Tip**: Met beschrijvende bestandsnamen kunt u de doelgrootte van de viewport gemakkelijk identificeren.
 
-### Mediaquery&#39;s gebruiken met AEM-pagina&#39;s {#using-media-queries-with-aem-pages}
+### Mediaquery&#39;s gebruiken met AEM pagina&#39;s {#using-media-queries-with-aem-pages}
 
 Neem de clientbibliotheekmap op in het JSP-script van uw paginacomponent om het CSS-bestand te genereren dat de mediaquery&#39;s bevat en naar het bestand te verwijzen.
 
@@ -222,7 +222,7 @@ Als u de apparaatgroepen wilt opgeven die in de lijst Apparaten worden weergegev
 
 De knooppunten van de apparaatgroep bevinden zich in de `/etc/mobile/groups` map.
 
-De hoofdpagina van de Geometrixx-mediasite is bijvoorbeeld `/content/geometrixx-media`. Het `/content/geometrixx-media/jcr:content` knooppunt bevat de volgende eigenschap:
+De hoofdpagina van de site Geometrixx Media is bijvoorbeeld `/content/geometrixx-media`. Het `/content/geometrixx-media/jcr:content` knooppunt bevat de volgende eigenschap:
 
 * Naam: `cq:deviceGroups`
 * Type: `String[]`
@@ -237,11 +237,11 @@ Gebruik de console van Hulpmiddelen om apparatengroepen [te](/help/sites-develop
 
 ## Aangepaste afbeeldingen gebruiken {#using-adaptive-images}
 
-You can use media queries to select an image resource to display in the page. Nochtans, wordt elk middel dat een media vraag gebruikt om zijn gebruik te conditionaliseren gedownload aan de cliënt. De mediaquery bepaalt alleen of de gedownloade bron wordt weergegeven.
+U kunt mediaquery&#39;s gebruiken om een afbeeldingsbron te selecteren die u op de pagina wilt weergeven. Nochtans, wordt elk middel dat een media vraag gebruikt om zijn gebruik te conditionaliseren gedownload aan de cliënt. De mediaquery bepaalt alleen of de gedownloade bron wordt weergegeven.
 
 Voor grote bronnen, zoals afbeeldingen, is het downloaden van alle bronnen geen efficiënt gebruik van de gegevenspijpleiding van de client. Om middelen selectief te downloaden, gebruik javascript om het middelverzoek in werking te stellen nadat de media vragen de selectie uitvoeren.
 
-The following strategy loads a single resource that is chosen using media queries:
+De volgende strategie laadt één enkel middel dat gebruikend media vragen wordt gekozen:
 
 1. Voeg een element DIV voor elke versie van het middel toe. Neem de URI van de bron op als de waarde van een kenmerkwaarde. De browser interpreteert het kenmerk niet als een bron.
 1. Voeg een mediaquery toe aan elk DIV-element dat geschikt is voor de bron.
@@ -286,11 +286,11 @@ Wanneer de pagina wordt gerenderd, voegt picturefull.js een `img` element als la
 </div>
 ```
 
-In een AEM-pagina is de waarde van het `data-src` kenmerk het pad naar een bron in de opslagplaats.
+In een AEM pagina, is de waarde van het `data-src` attribuut de weg aan een middel in de bewaarplaats.
 
 ### Adaptieve afbeeldingen implementeren in AEM {#implementing-adaptive-images-in-aem}
 
-Als u adaptieve afbeeldingen wilt implementeren in uw AEM-toepassing, moet u de vereiste JavaScript-bibliotheken toevoegen en de vereiste HTML-markering opnemen in uw pagina&#39;s.
+Als u adaptieve afbeeldingen wilt implementeren in de AEM toepassing, moet u de vereiste JavaScript-bibliotheken toevoegen en de vereiste HTML-markering opnemen in uw pagina&#39;s.
 
 **Bibliotheken**
 
@@ -305,7 +305,7 @@ Haal de volgende JavaScript-bibliotheken op en neem deze op in een clientbibliot
 
 **HTML**
 
-Maak een component die de vereiste div-elementen genereert die de code picturefill.js verwacht. In een AEM-pagina is de waarde van het kenmerk data-src het pad naar een bron in de opslagplaats. Een paginacomponent kan bijvoorbeeld de mediaquery&#39;s en de bijbehorende paden voor afbeeldingsuitvoeringen in DAM hard coderen. U kunt ook een aangepaste component Image maken waarmee auteurs afbeeldingsuitvoeringen kunnen selecteren of renderopties bij uitvoering kunnen opgeven.
+Maak een component die de vereiste div-elementen genereert die de code picturefill.js verwacht. In een AEM pagina, is de waarde van het gegeven-src attribuut de weg aan een middel in de bewaarplaats. Een paginacomponent kan bijvoorbeeld de mediaquery&#39;s en de bijbehorende paden voor afbeeldingsuitvoeringen in DAM hard coderen. U kunt ook een aangepaste component Image maken waarmee auteurs afbeeldingsuitvoeringen kunnen selecteren of renderopties bij uitvoering kunnen opgeven.
 
 In het volgende voorbeeld-HTML worden 2 DAM-uitvoeringen van dezelfde afbeelding geselecteerd.
 
@@ -323,6 +323,7 @@ In het volgende voorbeeld-HTML worden 2 DAM-uitvoeringen van dezelfde afbeelding
 >
 >* Map clientbibliotheek: `/libs/foundation/components/adaptiveimage/clientlibs`
 >* Script dat de HTML genereert: `/libs/foundation/components/adaptiveimage/adaptiveimage.jsp`
+
 >
 >
 In het volgende gedeelte vindt u meer informatie over deze component.
@@ -330,7 +331,7 @@ In het volgende gedeelte vindt u meer informatie over deze component.
 
 ### Renderen van afbeeldingen in AEM {#understanding-image-rendering-in-aem}
 
-Als u de rendering van afbeeldingen wilt aanpassen, dient u te weten wat de standaard statische implementatie van AEM voor het renderen van afbeeldingen is. AEM biedt de component Image en een server voor het renderen van afbeeldingen die samenwerken om afbeeldingen voor webpagina&#39;s te renderen. De volgende reeks gebeurtenissen vindt plaats wanneer de component Image is opgenomen in het alineasysteem van de pagina:
+Als u de rendering van afbeeldingen wilt aanpassen, dient u de standaardimplementatie AEM statische rendering van afbeeldingen te begrijpen. AEM biedt de component Image en een server voor het renderen van afbeeldingen die samenwerken om afbeeldingen voor webpagina&#39;s te renderen. De volgende reeks gebeurtenissen vindt plaats wanneer de component Image is opgenomen in het alineasysteem van de pagina:
 
 1. Authoring: Auteurs bewerken de component Image om het afbeeldingsbestand op te geven dat in een HTML-pagina moet worden opgenomen. Het bestandspad wordt opgeslagen als een eigenschapwaarde van het knooppunt Image component.
 1. Aanvraag pagina: De JSP van de paginacomponent produceert de code van HTML. JSP van de component van het Beeld produceert en voegt een img element aan de pagina toe.
@@ -379,7 +380,7 @@ servlet die het beeldverzoek verwerkt moet de volgende taken uitvoeren:
 AEM installeert de volgende implementaties die u kunt gebruiken of uitbreiden.
 
 * De Aanpassings de stichtingscomponent van het Beeld die media vragen produceert, en HTTP- verzoeken aan de AanpassingsServlet van de Component van het Beeld die de beelden schrapt.
-* Het Geometrixx-pakket Commons installeert de voorbeeldservlets van de Server van de Wijziging van de Verwijzing van het Beeld die beeldresolutie veranderen.
+* Met het Geometrixx Commons-pakket worden de voorbeeldservlets van de Image Reference Modification Servlet geïnstalleerd waarmee de afbeeldingsresolutie wordt gewijzigd.
 
 ### De component Adaptieve afbeelding {#understanding-the-adaptive-image-component}
 
@@ -476,7 +477,7 @@ De numerieke waarden zijn respectievelijk 0,4, 0,82 en 1,0.
 
 Gebruik de webconsole ([http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)) of een sling:OsgiConfig-knooppunt om de ondersteunde breedten van de Adobe CQ Adaptive Image Component Servlet te configureren.
 
-Voor informatie over hoe te om de diensten van AEM te vormen, zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md).
+Voor informatie over hoe te om AEM diensten te vormen, zie het [Vormen OSGi](/help/sites-deploying/configuring-osgi.md).
 
 <table> 
  <tbody> 
@@ -487,7 +488,7 @@ Voor informatie over hoe te om de diensten van AEM te vormen, zie het [Vormen OS
   </tr> 
   <tr> 
    <th>Service- of knooppuntnaam</th> 
-   <td>De servicenaam op het tabblad Configuratie is de Adaptive Image Component Servlet van Adobe CQ</td> 
+   <td>De servicenaam op het tabblad Configuratie is Adobe CQ Adaptive Image Component Servlet</td> 
    <td>com.day.cq.wcm.foundation.impl. AdaptiveImageComponentServlet</td> 
   </tr> 
   <tr> 
@@ -551,7 +552,7 @@ De `AdaptiveImageComponentServlet` klasse negeert de `createLayer` methode. De m
 
 De klasse AdaptiveImageComponentServlet overschrijft ook de methode writeLayer. Deze methode past de JPEG-kwaliteit toe op de afbeelding.
 
-### Referentiewijzigingsservlet voor afbeelding (vaak geometrixx) {#image-reference-modification-servlet-geometrixx-common}
+### Servlet van de Wijziging van de Verwijzing van het beeld (Gemeenschappelijke Geometrixx) {#image-reference-modification-servlet-geometrixx-common}
 
 Met de voorbeeldserver voor het wijzigen van afbeeldingsreferenties worden groottekenmerken voor het img-element gegenereerd om een afbeelding op de webpagina te schalen.
 
@@ -663,7 +664,7 @@ De `ImageReferenceModificationServlet` klasse negeert de `createLayer` methode e
 
 ## Een dynamisch raster ontwikkelen {#developing-a-fluid-grid}
 
-Met AEM kunt u op efficiënte en effectieve wijze dynamische rasters implementeren. Op deze pagina wordt uitgelegd hoe u uw dynamische raster of een bestaande rasterimplementatie (zoals [Bootstrap](https://twitter.github.com/bootstrap/)) kunt integreren in uw AEM-toepassing.
+AEM stelt u in staat op efficiënte en effectieve wijze dynamische rasters te implementeren. Op deze pagina wordt uitgelegd hoe u uw dynamische raster of een bestaande rasterimplementatie (zoals [Bootstrap](https://twitter.github.com/bootstrap/)) kunt integreren in uw AEM.
 
 Als u niet bekend bent met dynamische rasters, raadpleegt u de sectie [Inleiding tot dynamische rasters](/help/sites-developing/responsive.md#developing-a-fluid-grid) onder aan deze pagina. Deze inleiding geeft een overzicht van dynamische rasters en richtlijnen voor het ontwerpen ervan.
 
@@ -714,7 +715,7 @@ In het volgende voorbeeld is CSS een subset van deze stijlen. Deze ondergroep co
 
 >[!NOTE]
 >
->Met het voorbeeld Geometrixx Media wordt het JavaScript-framework van [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) geïntegreerd in de dynamische rasterimplementatie. Het Bootstrap-framework biedt het bestand bootstrap.css.
+>Het Geometrixx Media voorbeeld integreert het [Bootstrap](https://twitter.github.com/bootstrap/javascript.html) javascript kader in zijn dynamische netimplementatie. Het Bootstrap-framework biedt het bestand bootstrap.css.
 
 ```xml
 /* default styles (no media queries) */
@@ -746,7 +747,7 @@ In het volgende voorbeeld is CSS een subset van deze stijlen. Deze ondergroep co
 
 #### Inhoud in het raster van de component Pagina verplaatsen {#repositioning-content-in-the-page-component-grid}
 
-Op de pagina&#39;s van de voorbeeldtoepassing Geometrixx Media worden rijen inhoudsblokken horizontaal verdeeld in brede viewports. In kleinere viewports, worden de zelfde blokken verticaal verdeeld. In het volgende voorbeeld-CSS worden de stijlen getoond die dit gedrag implementeren voor de HTML-code die door de pagina-component Media-home wordt gegenereerd:
+Op de pagina&#39;s van de voorbeeldtoepassing worden rijen met inhoudsblokken horizontaal verdeeld in brede viewports. In kleinere viewports, worden de zelfde blokken verticaal verdeeld. In het volgende voorbeeld-CSS worden de stijlen getoond die dit gedrag implementeren voor de HTML-code die door de pagina-component Media-home wordt gegenereerd:
 
 * De standaard-CSS voor de media-welkomstpagina wijst de `float:left` stijl voor `span*` klassen toe die binnen `row-fluid` klassen zijn.
 
@@ -980,4 +981,4 @@ In de volgende CSS kan dit gedrag worden geïmplementeerd:
 
 Voor de paginalay-out van elke viewport grootte u richt, bepaal het aantal kolommen dat elk inhoudsblok overspant. Bepaal vervolgens welke klasse moet worden gebruikt voor de div-elementen van die inhoudsblokken.
 
-Wanneer u de div-klassen hebt gemaakt, kunt u het raster implementeren met uw AEM-toepassing.
+Wanneer u de div-klassen hebt ingesteld, kunt u het raster implementeren met de AEM toepassing.
