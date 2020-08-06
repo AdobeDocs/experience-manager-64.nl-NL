@@ -12,6 +12,9 @@ discoiquuid: 977a3dda-4292-4bd2-bfa5-af4d789d9ef9
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 1%
 
 ---
 
@@ -26,7 +29,7 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 
 >[!NOTE]
 >
->Nadat u de startpagina&#39;s naar het doel hebt opgewaardeerd (**Productie**), kunt u de **Productiepagina** &#39;s activeren als een entiteit (om het proces sneller te maken). Voeg de pagina&#39;s toe aan een workflowpakket en gebruik dit als de payload voor een workflow die een pakket met pagina&#39;s activeert. U moet het workflowpakket maken voordat u de introductie kunt promoten. Zie Promoted Pages [verwerken met AEM-workflow](#processing-promoted-pages-using-aem-workflow).
+>Nadat u de startpagina&#39;s naar het doel hebt opgewaardeerd (**Productie**), kunt u de **Productiepagina** &#39;s activeren als een entiteit (om het proces sneller te maken). Voeg de pagina&#39;s toe aan een workflowpakket en gebruik dit als de payload voor een workflow die een pakket met pagina&#39;s activeert. U moet het workflowpakket maken voordat u de introductie kunt promoten. See [Processing Promoted Pages Using AEM Workflow](#processing-promoted-pages-using-aem-workflow).
 
 >[!CAUTION]
 >
@@ -44,13 +47,14 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 >
 >* [Een geneste start](#promoting-a-nested-launch) bevorderen wanneer de structuur meerdere keren is gestart.
 >* [Launches - De Orde van Gebeurtenissen](/help/sites-authoring/launches.md#launches-the-order-of-events) voor meer informatie over automatische bevordering en publicatie.
+
 >
 
 
 
 U kunt lanceringen van of de console van **Plaatsen** of de console van **Lanceringen** bevorderen:
 
-1. Openen:
+1. Open:
 
    * de **Sites** -console:
 
@@ -71,6 +75,7 @@ U kunt lanceringen van of de console van **Plaatsen** of de console van **Lancer
    * **Gewijzigde pagina&#39;s promoten**
    * **Huidige pagina promoten**
    * **Huidige pagina en subpagina&#39;s promoten**
+
    Als u bijvoorbeeld alleen gewijzigde pagina&#39;s wilt promoten:
 
    ![chlimage_1](assets/chlimage_1.png)
@@ -117,10 +122,11 @@ Nadat u een geneste start hebt gemaakt, kunt u deze herstellen naar een van de b
       * **Gewijzigde pagina&#39;s promoten**
       * **Huidige pagina promoten**
       * **Huidige pagina en subpagina&#39;s promoten**
+
    ![chlimage_1-4](assets/chlimage_1-4.png)
 
 1. Selecteer **Volgende**.
-1. Bekijk de promotiegegevens voordat je **Promoten** selecteert:
+1. Bekijk de details van de aanbieding voordat je **Promoten** selecteert:
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
