@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '420'
+ht-degree: 0%
 
 ---
 
@@ -174,7 +177,7 @@ De klasse MyJobConsumer produceert de volgende logboekberichten voor een inputla
 10.06.2013 16:02:40.884 *INFO* [pool-7-thread-17-<main queue>(com/adobe/example/offloading)] com.adobe.example.offloading.MyJobConsumer Job OK for payload /content/geometrixx/de/services
 ```
 
-De verbruikte eigenschap kan worden waargenomen met behulp van CRXDE Lite:
+De eigenschap Consumed kan worden waargenomen met behulp van CRXDE Lite:
 
 ![chlimage_1-25](assets/chlimage_1-25.png)
 
