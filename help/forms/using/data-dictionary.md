@@ -9,6 +9,9 @@ topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
 translation-type: tm+mt
 source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+workflow-type: tm+mt
+source-wordcount: '3866'
+ht-degree: 0%
 
 ---
 
@@ -36,7 +39,7 @@ Zakelijke gebruikers hebben doorgaans geen kennis nodig van metagegevensrepresen
 
 ## Vereiste {#prerequisite}
 
-Installeer het [compatibiliteitspakket](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) om de optie **Gegevenswoordenboeken** op de pagina **Formulieren** weer te geven.
+Installeer het [compatibiliteitspakket](https://helpx.adobe.com/in/experience-manager/6-4/forms/using/compatibility-package.html) om de optie **Gegevenswoordenboeken** op de pagina **Forms** weer te geven.
 
 ## Een gegevenswoordenboek maken {#createdatadictionary}
 
@@ -46,7 +49,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
 >
 >Voor meerdere letters met vergelijkbare elementen kunt u een algemeen gegevenswoordenboek maken. Een groot gegevenswoordenboek met een groot aantal elementen kan echter prestatieproblemen veroorzaken bij het gebruik van het gegevenswoordenboek en het laden van de elementen, zoals letters en documentfragmenten. Als u problemen ondervindt met de prestaties, kunt u verschillende gegevenswoordenboeken voor verschillende letters maken.
 
-1. Selecteer **Formulieren** > **Gegevenswoordenboeken**.
+1. Selecteer **Forms** > **Gegevenswoordenboeken**.
 1. Tik op Gegevenswoordenboek **maken**.
 1. Voeg het volgende toe in het scherm Eigenschappen:
 
@@ -56,6 +59,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    * **Omschrijving**: (Optioneel) Beschrijving van het gegevenswoordenboek.
    * **Tags:** (Optioneel) Als u een aangepaste tag wilt maken, voert u een waarde in het tekstveld in en drukt u op Enter. U ziet de tag onder het tekstveld met tags. Wanneer u deze tekst opslaat, worden ook de toegevoegde tags gemaakt.
    * **Uitgebreide eigenschappen**: (Optioneel) Tik op Veld **** toevoegen om metagegevenskenmerken voor uw gegevenswoordenboek op te geven. Voer in de kolom Naam eigenschap een unieke eigenschapnaam in. Voer in de kolom Waarde een waarde in die u aan de eigenschap wilt koppelen.
+
    ![Eigenschappen voor gegevenswoordenboeken, zoals in het Duits gespecificeerd](do-not-localize/1_ddproperties.png)
 
 1. (Optioneel) Tik op XML-schema **uploaden om een XSD-schemadefinitie voor uw gegevenswoordenboek te uploaden onder het deelvenster Structuur gegevenswoordenboek**. Blader naar het XSD-bestand, selecteer het en tik op **Openen**. Er wordt een gegevenswoordenboek gemaakt op basis van het geüploade XML-schema. U moet de weergavenamen en beschrijvingen van de elementen in het gegevenswoordenboek aanpassen. U doet dit door de namen van de elementen te selecteren door erop te tikken en de beschrijvingen, weergavenamen en andere details in de velden in het rechterdeelvenster te bewerken.
@@ -78,6 +82,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    * Een samengestelde DDE bevat andere DDEs, die van type primitief, samenstelling, of inzameling kunnen zijn. Een adres bestaat bijvoorbeeld uit een adres, plaats, provincie, land en postcode.
    * Primitieve DDEs is elementen zoals koorden, aantallen, data, en Booleaanse waarden die informatie zoals een plaatsnaam houden.
    * Een verzameling is een lijst met vergelijkbare eenvoudige of samengestelde DDE&#39;s. Een klant met bijvoorbeeld meerdere locaties of een ander factuuradres en verzendadres.
+
    Hier volgen enkele regels voor het maken van een gegevenswoordenboek:
 
    * Alleen samengestelde typen zijn toegestaan als DDE op hoofdniveau in een gegevenswoordenboek.
@@ -85,6 +90,7 @@ U gebruikt de Editor gegevenswoordenboek om een gegevenswoordenboek te maken of 
    * De referentienaam moet uniek zijn.
    * Een ouder DDE (samenstelling) kan twee kinderen met de zelfde naam niet hebben.
    * Cijfers bevatten alleen primitieve tekenreekstypen.
+
    Voor meer informatie over Samenstelling, Verzameling, en Primitieve elementen en het werken met de elementen van het gegevenswoordenboek, zie de Elementen van het Woordenboek van Gegevens van de [Toewijzing aan het Schema](#mappingddetoschema)van XML.
 
    Zie Validaties in de [gegevenswoordenboekeditor voor informatie over validaties in gegevenswoordenboek](#ddvalidations).
@@ -125,6 +131,7 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
    * Houd de cursor boven een gegevenswoordenboek en tik op Bewerken.
    * Selecteer een gegevenswoordenboek en tik op Bewerken in de koptekst.
    * Houd de cursor boven een gegevenswoordenboek en tik op Selecteren. Tik vervolgens op Bewerken in de koptekst.
+
    Of tik op een gegevenswoordenboek om dit weer te geven.
 
 1. Tik in het gegevenswoordenboek op een eenvoudig element om dit te selecteren. Samengestelde elementen en verzamelingselementen hebben geen verwijzingen.
@@ -357,7 +364,7 @@ Voor het exporteren van een XSD-bestand zijn specifieke gegevenstoewijzingen nod
   </tr> 
   <tr> 
    <td><p>xs:element waarbij maxOccurs &gt; 1<br /> </p> </td> 
-   <td><p>DDE van type - COLLECTION-<br /> een knoop DDE wordt gecreeerd naast COLLECTION DDE die informatie van de knoop van de ouderVERZAMELING vangt. Het zelfde wordt gecreeerd voor beide inzameling van eenvoudige/samengestelde gegevenstypes. Wanneer u een VERZAMELING van de typesamenstelling hebt, vangt de boom van het Woordenboek van Gegevens de samenstellende gebieden in de kinderen van DDE die voor het vangen van typeinformatie wordt gecreeerd.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE voor type info)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /><br /> </p> </td> 
+   <td><p>DDE van type - COLLECTION-<br /> een knoop DDE wordt gecreeerd naast COLLECTION DDE die informatie van de knoop van de ouderVERZAMELING vangt. Het zelfde wordt gecreeerd voor beide inzameling van eenvoudige/samengestelde gegevenstypes. Wanneer u een VERZAMELING van de typesamenstelling hebt, vangt de boom van het Woordenboek van Gegevens de samenstellende gebieden in de kinderen van DDE die voor het vangen van typeinformatie wordt gecreeerd.<br /> - DDE (COLLECTION)<br /> - DDE(COMPOSITE voor type info)<br /> - DDE(STRING) field1<br /> - DDE(STRING) field2<br /> <br /> </p> </td> 
    <td>java.util.List<br /> </td> 
   </tr> 
   <tr> 
@@ -559,7 +566,7 @@ In het volgende voorbeeld ziet u het schema voor een notitie.
    <td>/note/to</td> 
   </tr> 
   <tr> 
-   <td>from</td> 
+   <td>Van</td> 
    <td>/note/from</td> 
   </tr> 
   <tr> 
