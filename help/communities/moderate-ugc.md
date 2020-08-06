@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d11b8fc8-5e98-4a77-a536-d445ac88e1b3
 translation-type: tm+mt
 source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+workflow-type: tm+mt
+source-wordcount: '1510'
+ht-degree: 1%
 
 ---
 
@@ -181,9 +184,9 @@ Wanneer de UGC wordt voorgezeten, zal de post niet op de gepubliceerde plaats ve
 
 * [Opmerkingen](comments.md) en [beoordelingen](reviews.md)
 
-   op het lusje van de Moderatie **[!UICONTROL van de]** Gebruiker, controleer **[!UICONTROL Pre-Moderatie]**
+   op **[!UICONTROL User Moderation]** tabblad, controleren **[!UICONTROL Pre-Moderation]**
 
-* [Forum](forum.md), [ideatie](ideation-feature.md), [QnA](working-with-qna.md), en [kalender](calendar.md) op het lusje van **[!UICONTROL Montages]** , controle **[!UICONTROL Gematigd]**
+* [Forum](forum.md), [ideatie](ideation-feature.md), [QnA](working-with-qna.md), en [kalender](calendar.md) op **[!UICONTROL Settings]** lusje, controle **[!UICONTROL Moderated]**
 
 ### Spam-detectie {#spam-detection}
 
@@ -212,7 +215,7 @@ Ga als volgt te werk om de spamdetectieengine in te schakelen:
 >
 >Spam-detectie wordt alleen geïmplementeerd voor de landinstelling Engels.
 
-### Sentiment {#sentiment}
+### Zin {#sentiment}
 
 De waarneming wordt berekend op basis van het aantal positieve en negatieve trefwoorden ([watchwords](#configuringwatchwords)) in een bericht (UGC).
 
@@ -235,7 +238,7 @@ Vanuit de [bulksgewijze moderatieconsole](moderation.md), is het mogelijk om UGC
 
 #### Wachtwoorden {#watchwords}
 
-AEM-gemeenschappen beschikken over een *watchword-analysator *als een stap in het proces om [sentimenten](#sentiment)te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
+AEM gemeenschappen verstrekken een *watchword analysator *als stap in het proces om [sentiment](#sentiment)te evalueren. De bijdrage aan de sentimentwaarde die wordt geboden door watchwords is te wijten aan een vergelijking van negatieve en positieve watchwords die worden gebruikt in de geposte inhoud, en verboden woorden.
 
 #### Sentificatie en wachtwoorden configureren {#configure-sentiment-and-watchwords}
 
@@ -259,9 +262,11 @@ sentiment en wachtwoorden configureren:
 
 * **Negatieve Watchwords** Een door komma&#39;s gescheiden lijst met woorden die bijdragen tot een negatief sentiment dat de standaardwaarden overschrijft. Standaard is dit een lege lijst.
 
-* **Expliciet pad naar controlewoordenknooppunt** De locatie in de opslagplaats van een knooppunt met standaardinstellingen `positive` en `negative` eigenschappen die standaardcontrolewoorden opgeven. Standaard is dit `/libs/settings/community/watchwords/default`.
+* **Expliciet pad naar watchwords-knooppunt** De opslaglocatie van een knooppunt met standaard 
+`positive` en `negative` eigenschappen die standaardwachtwoorden opgeven. Standaard is dit `/libs/settings/community/watchwords/default`.
 
-* **Regels** voorDe locatie in de opslagplaats van de regels voor het berekenen van sentimenten op basis van positieve en negatieve wachtwoorden. De standaardinstelling is `/libs/cq/workflow/components/workflow/social/sentiments/rules` (er is echter niet langer een workflow bij betrokken).
+* **Regels** voorDe locatie in de opslagplaats van de regels voor het berekenen van sentimenten op basis van positieve en negatieve wachtwoorden. Standaard is 
+`/libs/cq/workflow/components/workflow/social/sentiments/rules` (er is echter niet langer sprake van een workflow).
 
 Hieronder ziet u een voorbeeld van een aangepast item voor de standaardwachtwoorden wanneer dit `Explicit Path to Watchwords Node` is ingesteld op `/libs/settings/community/watchwords/default`.
 
