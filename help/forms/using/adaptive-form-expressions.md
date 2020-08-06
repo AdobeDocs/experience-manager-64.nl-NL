@@ -89,7 +89,7 @@ De klikuitdrukking behandelt de acties die op de klikgebeurtenis van een knoop w
 
 **Retourneringstype**: De klikuitdrukking keert geen waarde terug. Als een expressie een waarde retourneert, wordt de waarde genegeerd.
 
-**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen bij het klikken van een knop met waarde- **AEM Forms**, is de klikexpressie van de knop `textbox1.value="AEM Forms"` &quot;
+**Voorbeeld**: Als u een tekstvak **textbox1** wilt vullen bij het klikken van een knop met de waarde **AEM Forms**, is de klikexpressie van de knop `textbox1.value="AEM Forms"` &quot;
 
 ### Initialisatiescript {#initialization-script}
 
@@ -166,7 +166,7 @@ Het script voor vastleggen van waarde wordt geactiveerd wanneer:
 
 >[!NOTE]
 >
->U kunt de uitvoering van het Script van het Vastleggen van de Waarde onbruikbaar maken wanneer de waarde van een gebied programmatically wordt veranderd. Ga hiertoe naar `https://[server]:[port]/system/console/configMgr and change` Adaptive Forms Version for Compatibility **to** AEM Forms 6.1 ****. Vervolgens wordt het script voor vastleggen van waarde alleen uitgevoerd wanneer de gebruiker de waarde van het veld wijzigt in de gebruikersinterface.
+>U kunt de uitvoering van het Script van het Vastleggen van de Waarde onbruikbaar maken wanneer de waarde van een gebied programmatically wordt veranderd. Ga hiertoe naar `https://[server]:[port]/system/console/configMgr and change` Adaptive Forms Version for Compatibility **naar** AEM Forms 6.1 ****. Vervolgens wordt het script voor vastleggen van waarde alleen uitgevoerd wanneer de gebruiker de waarde van het veld wijzigt in de gebruikersinterface.
 
 ### Zichtbaarheidsexpressie {#visibility-expression}
 
@@ -231,7 +231,7 @@ GuideBridge is een verzameling API&#39;s die kunnen worden gebruikt voor interac
 
 #### GuideBridge gebruiken buiten expressies  {#using-guidebridge-outside-expressions-nbsp}
 
-U kunt ook de GuideBridge-API&#39;s buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
+U kunt de GuideBridge API&#39;s ook buiten de expressies gebruiken. U kunt bijvoorbeeld de GuideBridge-API gebruiken om communicatie in te stellen tussen pagina-HTML die als host fungeert voor het adaptieve formulier en het formuliermodel. Bovendien kunt u de waarde instellen die afkomstig is van het bovenliggende item van het Iframe-bestand dat het formulier host.
 
 Als u GuideBridge API wilt gebruiken voor het bovenstaande voorbeeld, neemt u een instantie van GuideBridge op. Om de instantie vast te leggen, luistert u naar de `bridgeInitializeStart`gebeurtenis van een `window`object:
 
@@ -255,7 +255,7 @@ window.addEventListener("bridgeInitializeStart", function(evnt) {
 
 >[!NOTE]
 >
->In AEM, is het een goede praktijk om code in een clientLib te schrijven en het in uw pagina (header.jsp of footer.jsp van de pagina) te omvatten
+>In AEM is het een goede praktijk om code in een clientLib te schrijven en het in uw pagina (header.jsp of footer.jsp van de pagina) op te nemen
 
 Als u GuideBridge wilt gebruiken nadat het formulier is geïnitialiseerd (de `bridgeInitializeComplete` gebeurtenis is verzonden), gebruikt u de GuideBridge-instantie `window.guideBridge`. U kunt de GuideBridge-initialisatiestatus controleren met de `guideBride.isConnected` API.
 
@@ -279,11 +279,11 @@ Zoals hierboven vermeld, kunnen met adaptieve formulieren ontwerpers patronen vo
 
 Voer de volgende stappen uit om een aangepast patroon te maken voor een specifiek veldtype en dit opnieuw te gebruiken voor andere velden van hetzelfde type:
 
-1. Navigeer naar CRXDE Lite op uw auteursinstantie.
+1. Navigeer naar CRXDE Lite op de ontwerpinstantie.
 1. Maak een map om uw aangepaste patronen te behouden. Maak onder de map /apps een knooppunt van het type sling:folder. Maak bijvoorbeeld een knooppunt met de naam `customPatterns`. Onder dit knooppunt maakt u een ander knooppunt van het type `nt:unstructed` en geeft u dit een naam `textboxpatterns`. Dit knooppunt bevat de verschillende aangepaste patronen die u wilt toevoegen.
 1. Open het tabblad Eigenschappen van het gemaakte knooppunt. Open bijvoorbeeld het tabblad Eigenschappen van `textboxpatterns`. Voeg de `guideComponentType` eigenschap toe aan dit knooppunt en stel de waarde ervan in op *fd/af/components/formatter/guideTextBox*.
 1. De waarde van deze eigenschap is afhankelijk van het veld waarvoor u de patronen wilt definiëren. Voor een numeriek veld is de waarde van de `guideComponentType` eigenschap *fd/af/components/formatter/guideNumericBox*. De waarde voor het veld Datepicker is *fd/af/components/formatter/guideDatepicker*.
-1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het `textboxpatterns` knooppunt. Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1`) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999-9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptieve formulieren gebruikt.
+1. U kunt een aangepast patroon toevoegen door een eigenschap toe te wijzen aan het `textboxpatterns` knooppunt. Voeg een eigenschap met een naam toe (bijvoorbeeld `pattern1`) en stel de waarde ervan in op het patroon dat u wilt toevoegen. Bijvoorbeeld, voeg een bezit `pattern1` met waarde Fax=text {99-999-9999999} toe. Het patroon is beschikbaar voor alle tekstvakken die u in Adaptief Forms gebruikt.
 
    ![Aangepaste patronen maken voor velden in CrxDe](assets/creating-custom-patterns.png)
    **Afbeelding:** *Aangepaste patronen maken*
