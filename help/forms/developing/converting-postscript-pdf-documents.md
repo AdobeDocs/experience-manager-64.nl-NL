@@ -11,15 +11,18 @@ topic-tags: operations
 discoiquuid: 06ad343a-f74d-41f5-b3c8-b85bb723ceeb
 translation-type: tm+mt
 source-git-commit: 11ce2d736f261daa789b94d23e2a5ca64192cefe
+workflow-type: tm+mt
+source-wordcount: '1269'
+ht-degree: 0%
 
 ---
 
 
 # Postscript converteren naar PDF-documenten {#converting-postscript-to-pdf-documents}
 
-## De Distiller-service {#about-the-distiller-service}
+## Informatie over de Distiller Service {#about-the-distiller-service}
 
-De service Distiller® converteert PostScript®-, Encapsulated PostScript- (EPS) en PRN-bestanden naar compacte, betrouwbare en veiligere PDF-bestanden via een netwerk. De Distiller-service wordt vaak gebruikt om grote hoeveelheden gedrukte documenten om te zetten in elektronische documenten, zoals facturen en instructies. Door documenten naar PDF te converteren, kunnen bedrijven hun klanten ook een papieren versie en een elektronische versie van een document sturen.
+De Distiller® service converteert PostScript®-, Encapsulated PostScript- (EPS) en PRN-bestanden naar compacte, betrouwbare en veiligere PDF-bestanden via een netwerk. De Distiller-service wordt vaak gebruikt om grote hoeveelheden gedrukte documenten om te zetten in elektronische documenten, zoals facturen en verklaringen. Door documenten naar PDF te converteren, kunnen bedrijven hun klanten ook een papieren versie en een elektronische versie van een document sturen.
 
 >[!NOTE]
 >
@@ -27,7 +30,7 @@ De service Distiller® converteert PostScript®-, Encapsulated PostScript- (EPS)
 
 ## PostScript converteren naar PDF-documenten {#converting-postscript-to-pdf-documents-inner}
 
-In dit onderwerp wordt beschreven hoe u de API (Java en webservice) van Distiller Service kunt gebruiken om PostScript (PS)-, Encapsulated PostScript- (EPS) en PRN-bestanden programmatisch om te zetten in PDF-documenten.
+In dit onderwerp wordt beschreven hoe u de Distiller Service API (Java en webservice) kunt gebruiken voor het programmatisch converteren van PostScript (PS)-, Encapsulated PostScript- (EPS) en PRN-bestanden naar PDF-documenten.
 
 >[!NOTE]
 >
@@ -35,7 +38,7 @@ In dit onderwerp wordt beschreven hoe u de API (Java en webservice) van Distille
 
 >[!NOTE]
 >
->Als u PostScript-bestanden naar PDF-documenten wilt converteren, moet een van de volgende items zijn geïnstalleerd op de server die als host fungeert voor AEM-formulieren: Acrobat 9 of Microsoft Visual C++ 2005 herdistribueerbaar pakket.
+>Als u PostScript-bestanden naar PDF-documenten wilt converteren, moet u een van de volgende opties installeren op de server die als host fungeert voor AEM Forms: Acrobat 9 of Microsoft Visual C++ 2005 redistributable pakket.
 
 ### Overzicht van de stappen {#summary-of-steps}
 
@@ -53,7 +56,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Distiller-serviceclient maken**
 
-Voordat u via programmacode een Distiller-servicebewerking kunt uitvoeren, moet u een Distiller-serviceclient maken. Als u de Java API gebruikt, maakt u een `DistillerServiceClient` object. Als u de webservice-API gebruikt, maakt u een `DistillerServiceService` object.
+Voordat u een Distiller-servicebewerking programmatisch kunt uitvoeren, moet u een Distiller-serviceclient maken. Als u de Java API gebruikt, maakt u een `DistillerServiceClient` object. Als u de webservice-API gebruikt, maakt u een `DistillerServiceService` object.
 
 **Het te converteren bestand ophalen**
 
@@ -73,7 +76,7 @@ U kunt het PDF-document opslaan als een PDF-bestand.
 
 [Een PostScript-bestand converteren naar PDF met de webservice-API](converting-postscript-pdf-documents.md#converting-a-postscript-file-to-pdf-using-the-web-service-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -103,10 +106,11 @@ Een PostScript-bestand converteren naar PDF-document met de Distiller Service AP
 
    * Het `com.adobe.idp.Document` object dat het om te zetten PS-, EPS- of PRN-bestand vertegenwoordigt
    * Een `java.lang.String` object dat de naam bevat van het bestand dat moet worden omgezet
-   * Een `java.lang.String` object met de naam van de te gebruiken Adobe PDF-instellingen
+   * Een `java.lang.String` object dat de naam bevat van de Adobe PDF-instellingen die moeten worden gebruikt
    * Een `java.lang.String` object dat de naam bevat van de beveiligingsinstellingen die moeten worden gebruikt
    * Een optioneel `com.adobe.idp.Document` object dat de instellingen bevat die moeten worden toegepast tijdens het genereren van het PDF-document
    * Een optioneel `com.adobe.idp.Document` object dat metagegevens bevat die op het PDF-document moeten worden toegepast
+
    De `createPDF` methode retourneert een `CreatePDFResult` object dat het nieuwe PDF-document bevat en een logbestand dat kan worden gegenereerd. Het logbestand bevat doorgaans fout- of waarschuwingsberichten die worden gegenereerd door de conversieaanvraag.
 
 1. Sla het PDF-document op.
@@ -115,6 +119,7 @@ Een PostScript-bestand converteren naar PDF-document met de Distiller Service AP
 
    * Roep de `CreatePDFResult` methode van het `getCreatedDocument` object aan. Hiermee wordt een `com.adobe.idp.Document` object geretourneerd.
    * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om het PDF-document uit te pakken.
+
    Op dezelfde manier om het logboekdocument te verkrijgen, voer de volgende acties uit.
 
    * Roep de `CreatePDFResult` methode van het `getLogDocument` object aan. Hiermee wordt een `com.adobe.idp.Document` object geretourneerd.
@@ -127,7 +132,7 @@ Een PostScript-bestand converteren naar PDF-document met de Distiller Service AP
 
 [Snel starten (SOAP-modus): Een PostScript-bestand converteren naar een PDF-document met de Java API](/help/forms/developing/distiller-service-java-api-quick.md#quick-start-soap-mode-converting-a-postscript-file-to-a-pdf-document-using-the-java-api)
 
-[Inclusief Java-bibliotheekbestanden voor AEM-formulieren](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
+[Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
@@ -151,7 +156,7 @@ Een PostScript-bestand converteren naar PDF-document met de Distiller Service AP
    * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam voor AEM-formulieren toe aan het veld `DistillerServiceClient.ClientCredentials.UserName.UserName`.
+      * Wijs de gebruikersnaam van het AEM aan het veld toe `DistillerServiceClient.ClientCredentials.UserName.UserName`.
       * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DistillerServiceClient.ClientCredentials.UserName.Password`.
       * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
       * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
@@ -194,6 +199,6 @@ Een PostScript-bestand converteren naar PDF-document met de Distiller Service AP
 [Quick Start (SwaRef): Converting a PostScript file to a PDF document using the web service API](unresolvedlink-lc-qs-distiller-di.xml#ws624e3cba99b79e12e69a9941333732bac8-7eff.2)
 -->
 
-[AEM-formulieren aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
+[AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-[AEM-formulieren aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
+[AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
