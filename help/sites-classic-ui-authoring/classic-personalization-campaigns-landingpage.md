@@ -1,8 +1,8 @@
 ---
 title: Openingspagina's
 seo-title: Openingspagina's
-description: 'Met de functie voor het plaatsen van pagina''s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM-pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd. '
-seo-description: 'Met de functie voor het plaatsen van pagina''s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM-pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd. '
+description: 'Met de functie voor het plaatsen van pagina''s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd. '
+seo-description: 'Met de functie voor het plaatsen van pagina''s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd. '
 uuid: bd01c7a4-473d-4f0e-8178-a7a937ef983a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,32 +11,35 @@ content-type: reference
 discoiquuid: 8be3adcf-5b3a-40e9-8f87-1a6f39aab554
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '3193'
+ht-degree: 0%
 
 ---
 
 
 # Openingspagina&#39;s{#landing-pages}
 
-Met de functie voor het plaatsen van pagina&#39;s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM-pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd. De functionaliteit is nuttig om bestemmingspagina&#39;s tot stand te brengen die slechts voor een beperkte tijd actief zijn en snel moeten worden gecreeerd.
+Met de functie voor het plaatsen van pagina&#39;s kunt u snel en eenvoudig een ontwerp en inhoud rechtstreeks in een AEM pagina importeren. Een webontwikkelaar kan de HTML en aanvullende elementen voorbereiden die als een volledige pagina of als een deel van een pagina kunnen worden geïmporteerd. De functionaliteit is nuttig om bestemmingspagina&#39;s tot stand te brengen die slechts voor een beperkte tijd actief zijn en snel moeten worden gecreeerd.
 
 Deze pagina beschrijft het volgende:
 
-* welke landingspagina&#39;s er in AEM uitzien, inclusief de beschikbare componenten
+* welke landingspagina&#39;s er uitzien in AEM met beschikbare onderdelen
 * hoe u een openingspagina maakt en hoe u een ontwerppakket importeert
-* werken met bestemmingspagina&#39;s in AEM
+* hoe te met het landen van pagina&#39;s in AEM werken
 * mobiele bestemmingspagina&#39;s instellen
 
-Het voorbereiden van het ontwerppakket voor het invoeren wordt behandeld in het [Uitbreiden en het Vormen van de Importeur](/help/sites-administering/extending-the-design-importer-for-landingpages.md)van het Ontwerp. Integratie met Adobe Analytics is inbegrepen bij het [integreren van bestemmingspagina&#39;s met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
+Het voorbereiden van het ontwerppakket voor het invoeren wordt behandeld in het [Uitbreiden en het Vormen van de Importeur](/help/sites-administering/extending-the-design-importer-for-landingpages.md)van het Ontwerp. Integratie met Adobe Analytics is opgenomen in de [integratie van landingspagina&#39;s met Adobe Analytics.](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
 
 ## Wat zijn bestemmingspagina&#39;s? {#what-are-landing-pages}
 
 Landingspagina&#39;s zijn sites met één of meerdere pagina&#39;s die het &#39;eindpunt&#39; zijn van een marketingstrategie, bijvoorbeeld met e-mail, adwords/banners, sociale media. Een landingspagina kan verschillende doelen dienen, maar heeft allemaal één ding gemeen: de bezoeker moet een taak uitvoeren en dat bepaalt het succes van een landingspagina.
 
-Met de functie Landing Pages in AEM kunnen marketers samenwerken met webontwerpers bij agentschappen of interne creatieve teams om paginaontwerpen te maken die gemakkelijk kunnen worden geïmporteerd in AEM en die nog steeds bewerkbaar zijn voor de marketers en worden gepubliceerd onder hetzelfde bestuur als de rest van de AEM-sites.
+Met de functie Landing Pages in AEM kunnen marketers samenwerken met webontwerpers bij agentschappen of interne creatieve teams om paginaontwerpen te maken die gemakkelijk kunnen worden geïmporteerd in AEM en nog steeds bewerkbaar zijn door de marketers en die worden gepubliceerd onder hetzelfde bestuur als de rest van de AEM sites.
 
-In AEM, creeert u landende pagina&#39;s door de volgende stappen uit te voeren:
+In AEM maakt u bestemmingspagina&#39;s door de volgende stappen uit te voeren:
 
-1. Maak in AEM een pagina die het canvas van de bestemmingspagina&#39;s bevat. AEM wordt geleverd met een voorbeeld met de naam **Importer Page**.
+1. Maak een pagina in AEM die het canvas van de bestemmingspagina&#39;s bevat. AEM wordt geleverd met een voorbeeld met de naam **Importer Page**.
 
 1. [Bereid de HTML en de activa voor.](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 1. Verpak de middelen in een dossier van het PIT dat hier als het Pakket van het Ontwerp wordt bedoeld.
@@ -65,7 +68,7 @@ De mobiele openingspagina wordt gemaakt als een onderliggende pagina van de open
 
 ## Onderdelen van bestemmingspagina {#landing-page-components}
 
-Als u onderdelen van de HTML die worden geïmporteerd, bewerkbaar wilt maken in AEM, kunt u inhoud binnen de HTML-landingspagina&#39;s rechtstreeks toewijzen aan AEM-componenten. De ontwerpimporteur begrijpt standaard de volgende componenten:
+Als u delen van de HTML die worden geïmporteerd, bewerkbaar wilt maken binnen AEM, kunt u inhoud binnen de HTML-landingspagina&#39;s rechtstreeks toewijzen aan AEM componenten. De ontwerpimporteur begrijpt standaard de volgende componenten:
 
 * Tekst, voor alle tekst
 * Titel, voor inhoud in H1-6-tags
@@ -211,7 +214,7 @@ Wanneer u een van de formuliercomponenten configureert, zijn de volgende tabblad
 >
 >Welke velden u ziet, is afhankelijk van de afzonderlijke component.
 >
->Niet alle opties zijn beschikbaar voor alle onderdelen van het loodformulier. Zie Formulieren voor meer informatie over deze [algemene instellingen](/help/sites-authoring/default-components.md#formsgroup).
+>Niet alle opties zijn beschikbaar voor alle onderdelen van het loodformulier. Zie Forms voor meer informatie over deze [algemene instellingen](/help/sites-authoring/default-components.md#formsgroup).
 
 #### Voorloopformuliercomponenten {#lead-form-components}
 
@@ -279,7 +282,7 @@ Er zijn twee tabbladen beschikbaar voor de configuratie van **Formulier** en **G
 
 Dit is een optioneel veld dat het pad naar een knooppunt in de repository aangeeft. Als dit knooppunt eigenschappen heeft die overeenkomen met de veldnamen, worden de desbetreffende velden op het formulier vooraf geladen met de waarde van die eigenschappen. Als er geen overeenkomst bestaat, bevat het veld de standaardwaarde.
 
-**Clientvalidatie** geeft aan of clientvalidatie is vereist voor dit formulier (servervalidatie vindt altijd plaats). Dit kan in combinatie met de component Forms Captcha worden bereikt.
+**Clientvalidatie** geeft aan of clientvalidatie is vereist voor dit formulier (servervalidatie vindt altijd plaats). Dit kan in combinatie met de Forms Captcha-component worden bereikt.
 
 **Het type** met validatieresources definieert het type resource voor formuliervalidatie als u het volledige hoofdformulier wilt valideren (in plaats van afzonderlijke velden).
 
@@ -361,7 +364,7 @@ Ervan uitgaande dat u het ontwerppakket klaar hebt, wordt in de volgende stappen
 
 ## Werken met bestemmingspagina&#39;s {#working-with-landing-pages}
 
-Het ontwerp en de elementen voor een openingspagina worden meestal gemaakt door een ontwerper, mogelijk in een bureau, met gereedschappen die deze kan gebruiken, zoals Adobe Photoshop of Adobe Dreamweaver. Wanneer het ontwerp is voltooid, stuurt de ontwerper een zip-bestand met alle elementen naar marketing. De contactpersoon bij marketing is dan verantwoordelijk voor het neerzetten van het ZIP-bestand in AEM en het publiceren van de inhoud.
+Het ontwerp en de elementen voor een bestemmingspagina worden gewoonlijk gecreeerd door een ontwerper misschien bij een agentschap in hulpmiddelen die zij aan zoals Adobe Photoshop of Adobe Dreamweaver worden gebruikt. Wanneer het ontwerp is voltooid, stuurt de ontwerper een zip-bestand met alle elementen naar marketing. De contactpersoon bij marketing is dan verantwoordelijk voor het neerzetten van het ZIP-bestand in AEM en het publiceren van de inhoud.
 
 Bovendien kan de ontwerper wijzigingen in de het landen pagina moeten aanbrengen nadat het door inhoud uit te geven of te schrappen en de vraag-aan-actie componenten te vormen wordt ingevoerd. Ten slotte wil de marketeer de bestemmingspagina voorvertonen en vervolgens de campagne activeren om ervoor te zorgen dat de bestemmingspagina wordt gepubliceerd.
 
@@ -413,11 +416,11 @@ Als u componenten aan de bestemmingspagina wilt toevoegen, sleept u componenten 
 
 >[!NOTE]
 >
->Als een component op de openingspagina niet kan worden bewerkt, moet u het ZIP-bestand opnieuw importeren nadat u het HTML-bestand hebt [gewijzigd.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Dit betekent dat de niet-bewerkbare onderdelen tijdens het importeren niet zijn omgezet in AEM-componenten.
+>Als een component op de openingspagina niet kan worden bewerkt, moet u het ZIP-bestand opnieuw importeren nadat u het HTML-bestand hebt [gewijzigd.](/help/sites-administering/extending-the-design-importer-for-landingpages.md) Dit betekent dat de niet-bewerkbare onderdelen tijdens het importeren niet zijn omgezet in AEM componenten.
 
 ### Een openingspagina verwijderen {#deleting-a-landing-page}
 
-Het verwijderen van een landingspagina is vergelijkbaar met het verwijderen van een normale AEM-pagina.
+Het verwijderen van een openingspagina is vergelijkbaar met het verwijderen van een normale AEM.
 
 De enige uitzondering is dat wanneer u een bestemmingspagina verwijdert, deze ook de bijbehorende bestemmingspagina voor mobiele apparaten verwijdert (indien aanwezig), maar niet andersom.
 
