@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 739ec991-552b-42cd-85cd-984d1c9fe8fd
 translation-type: tm+mt
 source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+workflow-type: tm+mt
+source-wordcount: '304'
+ht-degree: 0%
 
 ---
 
@@ -25,7 +28,7 @@ mpeg wordt gebruikt in de auteursomgeving om meta-gegevens voor geupload enablem
 
 ## Mpeg installeren {#installing-ffmpeg}
 
-MPEG moet worden geïnstalleerd op de server(s) die als host fungeert voor de AEM- *auteur* -instantie(s).
+MPEG moet worden geïnstalleerd op de server(s) die als host fungeert (fungeren) voor de AEM *auteur* -instantie(s).
 
 1. Ga naar [https://www.ffmpeg.org](https://www.ffmpeg.org/)
 1. Download de nieuwste versie van MPEG voor uw specifieke omgeving (Macintosh, Windows of Linux)
@@ -49,22 +52,22 @@ Aangezien de transcoderingen CPU-intensief zijn, wordt aangeraden de lijst met d
 U kunt als volgt de DAM Update Asset-workflow wijzigen en in dit voorbeeld de transcodering uitschakelen:
 
 * Aanmelden bij de instantie van de auteur met beheerdersrechten
-* Vanuit globale navigatie: **[!UICONTROL Gereedschappen > Workflow > Modellen]**
-* DAM- **[!UICONTROL updateelement zoeken]**
+* Vanuit globale navigatie: **[!UICONTROL Tools > Workflow > Models]**
+* Zoeken **[!UICONTROL DAM Update Asset]**
 * Dubbelklik om de workflow voor bewerken te openen in de klassieke gebruikersinterface
 
    Resulterende locatie: [http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html](http://localhost:4502/cf#/etc/workflow/models/dam/update_asset.html)
 
-* Dubbelklik op de **[!UICONTROL transcoderingsstap]** FFmpeg om het dialoogvenster Step Properties te openen
-* Onder het tabblad **[!UICONTROL Proces]** :
+* Dubbelklik op de **[!UICONTROL FFmpeg transcoding]** stap om het dialoogvenster Step Properties te openen
+* Onder het **[!UICONTROL Process]** tabblad:
 
-   * **[!UICONTROL Aruggen]**: Wis alle ingangen om transcoderende Standaardwaarden onbruikbaar te maken: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
+   * **[!UICONTROL Arugments]**: Wis alle ingangen om transcoderende Standaardwaarden onbruikbaar te maken: `profile:firefoxhq,profile:hq,profile:flv,profile:iehq`
 
 ![chlimage_1-372](assets/chlimage_1-372.png)
 
-* Selecteer **[!UICONTROL OK]** om het `Step Properties` dialoogvenster te sluiten
+* Selecteren **[!UICONTROL OK]** om het `Step Properties` dialoogvenster te sluiten
 
-* Selecteer **[!UICONTROL Opslaan]** om de `DAM Update Asset` workflow op te slaan
+* Selecteren **[!UICONTROL Save]** om de `DAM Update Asset` workflow op te slaan
 
    (linkerbovenhoek)
 
