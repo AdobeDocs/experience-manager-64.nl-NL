@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Taakhandelingen aanpassen {#customizing-task-actions}
 
-In de werkruimte AEM Forms kunnen gebruikers de taakhandelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de stappen volgen die in de [algemene stappen worden weergegeven voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de werkruimte van AEM Forms.
+In de AEM Forms-werkruimte kunnen gebruikers de handelingen aanpassen. Voordat u de taakhandelingen aanpast, moet u de stappen volgen die in de [algemene stappen worden weergegeven voor het aanpassen](/help/forms/using/generic-steps-html-workspace-customization.md)van de AEM Forms-werkruimte.
 
 ## Tekststijl aanpassen {#customizing-text-style}
 
@@ -138,7 +138,7 @@ Als u alleen afbeeldingen voor handelingen wilt weergeven, past u de afbeeldinge
 
 ### Taaklijsttaak, pop-upmenu {#task-list-task-action-nbsp-pop-up-menu}
 
-1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de werkruimte AEM Forms aan te passen. Zie [Werkruimtecode maken voor meer informatie over het maken van ontwikkelingspakket.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
+1. U hebt ontwikkelingspakket nodig om items van het pop-upmenu Taaklijst in de AEM Forms-werkruimte aan te passen. Zie Code voor de AEM Forms-werkruimte [maken voor meer informatie over het maken van een ontwikkelingspakket.](/help/forms/using/introduction-customizing-html-workspace.md#building-html-workspace-code)
 
 1. Kopieer /libs/ws/js/runtime/templates/task.html om het volgende codefragment te `/apps/ws/js/runtime/templates/task.html`vervangen:
 
