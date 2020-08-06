@@ -12,6 +12,9 @@ discoiquuid: 20a0b2a8-7347-4875-a202-9cedd8e187ff
 legacypath: /content/docs/en/aem/6-0/develop/mobile
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '226'
+ht-degree: 0%
 
 ---
 
@@ -20,7 +23,7 @@ source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 AEM biedt verschillende gereedschappen waarmee u sites voor mobiele apparaten kunt ontwikkelen en inhoud kunt integreren in mobiele toepassingen.
 
@@ -28,7 +31,7 @@ Deze pagina moet worden gelezen in combinatie met de pagina [Mobiel voor auteurs
 
 ## Websites ontwikkelen voor mobiele apparaten {#developing-web-sites-for-mobile}
 
-Ontwikkelen van paginasjablonen en onderdelen die zijn geoptimaliseerd voor weergave met mobiele apparaten. Ontwikkel pagina&#39;s die een ontvankelijke lay-out gebruiken die zich aan veelvoudige het schermgrootte aanpast, of ontwikkelt pagina&#39;s die voor een specifieke het schermgrootte worden geoptimaliseerd. Gebruik de apparaat-emulators die AEM biedt of maak uw eigen emulators voor WSYWIG-authoring en -voorvertoning:
+Ontwikkelen van paginasjablonen en onderdelen die zijn geoptimaliseerd voor weergave met mobiele apparaten. Ontwikkel pagina&#39;s die een ontvankelijke lay-out gebruiken die zich aan veelvoudige het schermgrootte aanpast, of ontwikkelt pagina&#39;s die voor een specifieke het schermgrootte worden geoptimaliseerd. Gebruik de apparaatemulators die AEM bieden of maak uw eigen emulators voor WSYWIG-ontwerp en -voorvertoning:
 
 * [Apparaatgroepfilters maken](/help/sites-developing/groupfilters.md)
 * [Responsief ontwerp voor webpagina&#39;s](/help/sites-developing/responsive.md)
@@ -37,4 +40,4 @@ Ontwikkelen van paginasjablonen en onderdelen die zijn geoptimaliseerd voor weer
 
 ## Mobiele apps ontwikkelen {#developing-mobile-apps}
 
-Ontwikkel mobiele toepassingen die AEM pagina&#39;s als toepassingsinterface gebruiken. AEM kan worden geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM-pagina&#39;s. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps. Klik [hier](/help/mobile/phonegap-contentsync.md)voor meer informatie over Inhoud synchroniseren.
+Ontwikkel mobiele toepassingen die AEM pagina&#39;s als toepassingsinterface gebruiken. AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps. Klik [hier](/help/mobile/phonegap-contentsync.md)voor meer informatie over Inhoud synchroniseren.
