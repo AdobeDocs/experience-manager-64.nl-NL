@@ -1,8 +1,8 @@
 ---
 title: Prestaties van toepassingsservers verbeteren
 seo-title: Prestaties van toepassingsservers verbeteren
-description: In dit document worden optionele instellingen beschreven die u kunt configureren om de prestaties van uw AEM-formuliertoepassingsserver te verbeteren.
-seo-description: In dit document worden optionele instellingen beschreven die u kunt configureren om de prestaties van uw AEM-formuliertoepassingsserver te verbeteren.
+description: In dit document worden optionele instellingen beschreven die u kunt configureren om de prestaties van de toepassingsserver voor AEM formulieren te verbeteren.
+seo-description: In dit document worden optionele instellingen beschreven die u kunt configureren om de prestaties van de toepassingsserver voor AEM formulieren te verbeteren.
 uuid: 88d2f96a-3b59-410d-8160-20581d27acad
 contentOwner: admin
 content-type: reference
@@ -11,19 +11,22 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fad65765-d56d-4a9f-82d5-bcceb1758953
 translation-type: tm+mt
 source-git-commit: 39e579a6a295324af35a2c811ec3acc9c621160b
+workflow-type: tm+mt
+source-wordcount: '1886'
+ht-degree: 0%
 
 ---
 
 
 # Prestaties van toepassingsservers verbeteren{#enhancing-application-server-performance}
 
-In deze inhoud worden optionele instellingen beschreven die u kunt configureren om de prestaties van uw AEM-formuliertoepassingsserver te verbeteren.
+In deze inhoud worden optionele instellingen beschreven die u kunt configureren om de prestaties van de toepassingsserver voor AEM formulieren te verbeteren.
 
 ## Gegevensbronnen van toepassingsservers configureren {#configuring-application-server-data-sources}
 
-AEM-formulieren gebruiken de AEM-formulieropslagplaats als gegevensbron. De opslagplaats van AEM-formulieren slaat toepassingsactiva op en tijdens runtime kunnen services elementen ophalen uit de opslagplaats als onderdeel van het voltooien van een geautomatiseerd bedrijfsproces.
+AEM formulieren gebruiken de opslagplaats voor AEM formulieren als gegevensbron. De opslagplaats voor AEM formulieren slaat toepassingselementen op en bij uitvoering kunnen services elementen ophalen uit de opslagplaats als onderdeel van het voltooien van een geautomatiseerd bedrijfsproces.
 
-Toegang tot de gegevensbron kan significant zijn, afhankelijk van het aantal AEM-formuliermodules dat u uitvoert en het aantal gelijktijdige gebruikers dat de toepassing opent. De toegang van de gegevensbron kan worden geoptimaliseerd gebruikend verbinding het pooling. *Verbindingspooling* is een techniek die wordt gebruikt om de overheadkosten van het maken van nieuwe gegevensbestandverbindingen te vermijden telkens als een toepassing of servervoorwerp toegang tot het gegevensbestand vereist. Verbindingspooling wordt gewoonlijk gebruikt in web-based en ondernemingstoepassingen en wordt gewoonlijk behandeld door, maar niet beperkt tot, een toepassingsserver.
+Toegang tot de gegevensbron kan significant zijn, afhankelijk van het aantal AEM formuliermodules dat u gebruikt en het aantal gelijktijdige gebruikers dat de toepassing opent. De toegang van de gegevensbron kan worden geoptimaliseerd gebruikend verbinding het pooling. *Verbindingspooling* is een techniek die wordt gebruikt om de overheadkosten van het maken van nieuwe gegevensbestandverbindingen te vermijden telkens als een toepassing of servervoorwerp toegang tot het gegevensbestand vereist. Verbindingspooling wordt gewoonlijk gebruikt in web-based en ondernemingstoepassingen en wordt gewoonlijk behandeld door, maar niet beperkt tot, een toepassingsserver.
 
 Het is belangrijk om uw parameters van de verbindingspool behoorlijk te vormen zodat u nooit uit verbindingen loopt, die toepassingsprestaties kunnen veroorzaken om te verslechteren.
 
@@ -65,36 +68,36 @@ Wanneer de beheerder van de toepassingsserver de correcte montages van de verbin
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de gegevensbron die u hebt gemaakt: DB2 Universal JDBC Driver Provider of LiveCycle - db2 - IDP_DS.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
-1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan in hoofdconfiguratie.
+1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
 
 ### Verbindingspoolinstellingen configureren voor WebSphere voor Oracle {#configure-connection-pool-settings-for-websphere-for-oracle}
 
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers. Klik in het rechterdeelvenster op de gegevensbron voor het Oracle JDBC-stuurprogramma die u hebt gemaakt.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van Verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in.
-1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan in hoofdconfiguratie.
+1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
 
 ### Verbindingspool-instellingen voor WebSphere voor SqlServer configureren {#configure-connection-pool-settings-for-websphere-for-sqlserver}
 
 1. Klik in de navigatiestructuur op Bronnen > JDBC > JDBC-providers en klik in het rechterdeelvenster op de door de gebruiker gedefinieerde JDBC-gegevensbron voor stuurprogramma&#39;s die u hebt gemaakt.
 1. Klik onder Extra Eigenschappen op Gegevensbronnen en selecteer IDP_DS.
 1. Klik in het volgende scherm onder Extra eigenschappen op Eigenschappen van verbindingspool en voer een waarde in het vak Maximale verbindingen en Minimale verbindingen in:
-1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan in hoofdconfiguratie.
+1. Klik op OK of Toepassen en klik vervolgens op Direct opslaan naar Master configuratie.
 
 ## Inline documenten optimaliseren en invloed hebben op JVM-geheugen {#optimizing-inline-documents-and-impact-on-jvm-memory}
 
-Als u doorgaans documenten van relatief kleine grootte verwerkt, kunt u de prestaties verbeteren die aan de overdrachtsnelheid en opslagruimte van het document zijn gekoppeld. Hiertoe implementeert u de volgende productconfiguraties van AEM-formulieren:
+Als u doorgaans documenten van relatief kleine grootte verwerkt, kunt u de prestaties verbeteren die aan de overdrachtsnelheid en opslagruimte van het document zijn gekoppeld. Hiertoe implementeert u de volgende AEM productconfiguraties voor formulieren:
 
-* Vergroot de maximale inline-grootte van het standaarddocument voor AEM-formulieren, zodat deze groter is dan de grootte van de meeste documenten.
+* Vergroot de standaardgrootte van inline-formulieren voor het document, zodat deze groter is dan de grootte van de meeste documenten.
 * Voor het verwerken van grotere bestanden geeft u opslagmappen op die zich op een snelle-schijfsysteem of een RAM-schijf bevinden.
 
-De maximale inlinegrootte en de opslagdirectory&#39;s (de AEM-map voor tijdelijke bestanden en de GDS-map) worden geconfigureerd in de beheerconsole.
+De maximale inlinegrootte en de opslagdirectory&#39;s (de map met tijdelijke bestanden voor AEM formulieren en de GDS-map) worden geconfigureerd in de beheerconsole.
 
 ### Documentgrootte en maximale inline-grootte {#document-size-and-maximum-inline-size}
 
-Als een document dat wordt verzonden voor verwerking door AEM-formulieren kleiner is dan of gelijk is aan de maximale inlinegrootte van het standaarddocument, wordt het document inline opgeslagen op de server en wordt het document geserialiseerd als een Adobe Document-object. Het inline opslaan van documenten kan aanzienlijke prestatievoordelen hebben. Als u echter de formulierworkflow gebruikt, kan de inhoud ook in de database worden opgeslagen voor traceringsdoeleinden. Daarom kan het verhogen van de maximum gealigneerde grootte de gegevensbestandgrootte beïnvloeden.
+Wanneer een document dat voor verwerking door AEM formulieren wordt verzonden kleiner is dan of gelijk is aan de standaardgrootte voor inline documenten, wordt het document inline opgeslagen op de server en wordt het document geserialiseerd als een Adobe Document-object. Het inline opslaan van documenten kan aanzienlijke prestatievoordelen hebben. Als u echter de formulierworkflow gebruikt, kan de inhoud ook in de database worden opgeslagen voor traceringsdoeleinden. Daarom kan het verhogen van de maximum gealigneerde grootte de gegevensbestandgrootte beïnvloeden.
 
-Een document dat groter is dan de maximale inline-grootte wordt opgeslagen in het lokale bestandssysteem. Het Adobe Document-object dat van en naar de server wordt overgebracht, is slechts een aanwijzer naar dat bestand.
+Een document dat groter is dan de maximale inline-grootte wordt opgeslagen in het lokale bestandssysteem. Het Adobe Document-object dat van en naar de server wordt overgedragen, is slechts een aanwijzer naar dat bestand.
 
 Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlinegrootte), wordt de inhoud in de database opgeslagen als onderdeel van de serialisatielading van het document. Daarom kan het verhogen van de maximum gealigneerde grootte de gegevensbestandgrootte beïnvloeden.
 
@@ -105,7 +108,7 @@ Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlin
 
    >[!NOTE]
    >
-   >De waarde van de Max Inline van het Document bezit van de Grootte moet voor Vormen AEM op milieu JEE en Vormen AEM op bundel OSGi inbegrepen Vormen op milieu JEE identiek zijn. Met deze stappen wordt alleen de waarde bijgewerkt voor AEM Forms on JEE-omgeving en niet voor AEM Forms on OSGi-bundel met AEM Forms on JEE-omgeving.
+   >De waarde van de eigenschap Max. inline grootte van document moet identiek zijn voor AEM Forms in JEE-omgeving en AEM Forms in OSGi-bundel moet AEM Forms in JEE-omgeving bevatten. Met deze stappen werd alleen de waarde voor AEM Forms op JEE-omgeving bijgewerkt en niet voor AEM Forms op OSGi-bundel voor AEM Forms op JEE-omgeving.
 
 1. Start de toepassingsserver opnieuw met de volgende systeemeigenschap:
 
@@ -113,7 +116,7 @@ Als documentinhoud is gealigneerd (dat wil zeggen, kleiner dan de maximale inlin
 
    >[!NOTE]
    >
-   >De bovengenoemde systeemeigenschap negeert de waarde van de eigenschap Max. inline grootte van document die is ingesteld voor AEM Forms on JEE environment en AEM Forms on OSGi bundle included AEM Forms on JEE environment.
+   >De bovengenoemde systeemeigenschap negeert de waarde van de eigenschap Max Inline Size van het Document die is ingesteld voor AEM Forms op JEE-omgeving en AEM Forms op OSGi-bundel bevat AEM Forms op JEE-omgeving.
 
 >[!NOTE]
 >
