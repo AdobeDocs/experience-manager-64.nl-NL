@@ -21,13 +21,13 @@ ht-degree: 0%
 
 ## Overzicht {#overview}
 
-Met AEM Forms kunt u opslaan:
+Met AEM Forms kun je opslaan:
 
 * **Concepten**: Een werkformulier dat eindgebruikers invullen en opslaan voor later en dat achteraf wordt verzonden.
 
 * **Indieningen**: Verzonden formulieren met door de gebruiker opgegeven gegevens.
 
-AEM Forms Portal-gegevens en metagegevensservices bieden ondersteuning voor concepten en verzendingen. Standaard worden de gegevens opgeslagen in de publicatie-instantie. Deze wordt vervolgens omgekeerd gerepliceerd naar de geconfigureerde auteurinstantie om beschikbaar te zijn voor percolatie naar andere publicatie-instanties.
+AEM Forms Portal-services voor gegevens en metagegevens bieden ondersteuning voor concepten en verzendingen. Standaard worden de gegevens opgeslagen in de publicatie-instantie. Deze wordt vervolgens omgekeerd gerepliceerd naar de geconfigureerde auteurinstantie om beschikbaar te zijn voor percolatie naar andere publicatie-instanties.
 
 Het probleem met de bestaande out-of-the-box-aanpak is dat alle gegevens op een publicatieinstantie worden opgeslagen, inclusief de gegevens die kunnen worden beschouwd als Personal Identified Information (PII).
 
@@ -35,13 +35,13 @@ Naast de hierboven vermelde standaardaanpak is er ook een alternatieve implement
 
 >[!NOTE]
 >
->Wanneer u de verzendactie Formulierportaal gebruikt of de optie Gegevens opslaan in formulierportaal in adaptieve vorm inschakelt, worden de formuliergegevens opgeslagen in de AEM-opslagruimte. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens op te slaan in een AEM-opslagplaats. In plaats daarvan moet u de concepten en verzendingscomponent integreren met een beveiligde opslag, zoals een bedrijfsdatabase, om concepten en verzonden formuliergegevens op te slaan.
+>Wanneer u de verzendactie Forms Portal gebruikt of de optie voor het opslaan van gegevens in het formulierportaal in een adaptieve vorm inschakelt, worden de formuliergegevens opgeslagen in AEM opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. In plaats daarvan moet u de concepten en verzendingscomponent integreren met een beveiligde opslag, zoals een bedrijfsdatabase, om concepten en verzonden formuliergegevens op te slaan.
 >
 >Zie [Voorbeeld voor het integreren van concepten en verzendingscomponenten met de database](/help/forms/using/integrate-draft-submission-database.md)voor meer informatie.
 
 ## Concepten en verzendservices van Forms Portal configureren {#configuring-forms-portal-drafts-and-submissions-services}
 
-Klik in de configuratie van de AEM-webconsole ( `https://[*host*]:[*port*]/system/console/configMgr`) om de modus **Formulierportaal conceptversie en verzendconfiguratie** te openen.
+Klik in de AEM Web Console Configuration ( `https://[*host*]:[*port*]/system/console/configMgr`) op **Forms Portal Concept en Submission Configuration** in de bewerkingsmodus.
 
 Geef de waarden voor eigenschappen op op basis van uw vereisten, zoals hieronder wordt beschreven:
 
@@ -56,15 +56,15 @@ Gegevens worden omgekeerd gerepliceerd naar de geconfigureerde auteurinstantie.
    <th>Waarde</th> 
   </tr>
   <tr>
-   <td>Forms Portal Conceptgegevensservice (id voor conceptgegevensservice (<strong>concept.data.service</strong>))</td> 
+   <td>Conceptgegevensservice van Forms Portal (id voor conceptgegevensservice (<strong>concept.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal Conceptmetagegevensservice (id voor concept-metagegevensservice (<strong>concept.metadata.service</strong>))</td> 
+   <td>Conceptmetagegevensservice van Forms Portal (id voor service met conceptmetagegevens (<strong>concept.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal verzendt Data Service (Identifier voor submit data service (<strong>submit.data.service</strong>))</td> 
+   <td>Forms Portal Submit Data Service (id voor het verzenden van de gegevensservice (<strong>submit.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td> 
   </tr>
   <tr>
@@ -85,15 +85,15 @@ Gegevens worden rechtstreeks naar de geconfigureerde externe instantie geduwd
    <th>Waarde</th> 
   </tr>
   <tr>
-   <td>Forms Portal Conceptgegevensservice (id voor conceptgegevensservice (<strong>concept.data.service</strong>))</td> 
+   <td>Conceptgegevensservice van Forms Portal (id voor conceptgegevensservice (<strong>concept.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftDataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal Conceptmetagegevensservice (id voor concept-metagegevensservice (<strong>concept.metadata.service</strong>))</td> 
+   <td>Conceptmetagegevensservice van Forms Portal (id voor service met conceptmetagegevens (<strong>concept.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal verzendt Data Service (Identifier voor submit data service (<strong>submit.data.service</strong>))</td> 
+   <td>Forms Portal Submit Data Service (id voor het verzenden van de gegevensservice (<strong>submit.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
@@ -105,7 +105,7 @@ Gegevens worden rechtstreeks naar de geconfigureerde externe instantie geduwd
 
 Naast de hierboven gespecificeerde configuratie, verstrek informatie over de gevormde verre verwerkingsinstantie.
 
-Klik in de configuratie van de AEM-webconsole ( `https://[*host*]:[*port*]/system/console/configMgr`) om de **AEM DS Settings Service** in de bewerkingsmodus te openen. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
+Klik in AEM Web Console Configuration ( `https://[*host*]:[*port*]/system/console/configMgr`) op **AEM DS Settings Service** in edit mode. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
 
 >[!NOTE]
 >
