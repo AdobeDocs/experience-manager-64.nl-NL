@@ -1,8 +1,8 @@
 ---
-title: Aanbevolen werkwijzen
-seo-title: Aanbevolen werkwijzen
-description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM-ontwikkelaars
-seo-description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM-ontwikkelaars
+title: Best practices voor
+seo-title: Best practices voor
+description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars
+seo-description: Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars
 uuid: f962c31f-8140-482f-b189-16376e23bfed
 contentOwner: Justin Edelson
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,17 +11,20 @@ topic-tags: best-practices
 discoiquuid: 99678c1a-81f3-4fb3-bf73-98f0691c3fb6
 translation-type: tm+mt
 source-git-commit: 8c37e09d9b00ff26fc5a0549766080d593769a24
+workflow-type: tm+mt
+source-wordcount: '482'
+ht-degree: 1%
 
 ---
 
 
-# Best Practices{#best-practices}
+# Best practices voor{#best-practices}
 
 ## Aanbevolen procedures voor ontwikkelaars - Aan de slag {#best-practices-for-developers-getting-started}
 
-Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks aanbevolen procedures ontwikkeld voor AEM-ontwikkelaars. De ontwikkelaar van Adobe hanteert deze beste praktijken aangezien zij kernAEM productupdates en klantencode voor klantenimplementatie ontwikkelen.
+Adobe Engineering- en Consulting-teams hebben een uitgebreide reeks best practices ontwikkeld voor AEM ontwikkelaars. Adobe ontwikkelaars volgen deze beste praktijken aangezien zij kern AEM productupdates en klantencode voor klantenimplementaties ontwikkelen.
 
-Voordat u uw AEM-ontwikkelingsproject start, moet u eerst de volgende aanbevolen procedures doornemen:
+Voordat u uw AEM ontwikkelingsproject start, moet u eerst de volgende aanbevolen procedures doornemen:
 
 * [Ontwikkelingspraktijken](/help/sites-developing/development-practices.md)
 * [Inhoudsarchitectuur](/help/sites-developing/content-architecture.md)
@@ -72,14 +75,14 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
   <tr>
    <td>Workflows</td> 
    <td><a href="/help/sites-developing/workflows-best-practices.md">Workflows ontwikkelen en uitbreiden</a></td> 
-   <td><p>Met workflows kunt u activiteiten van Adobe Experience Manager (AEM) automatiseren en kunnen grote hoeveelheden van de verwerking in een AEM-omgeving worden uitgevoerd. Daarom wordt u ten zeerste aangeraden de implementaties van workflows zorgvuldig te plannen.</p> </td> 
+   <td><p>Met workflows kunt u Adobe Experience Manager-activiteiten (AEM) automatiseren en een groot deel van de verwerking in een AEM omgeving vertegenwoordigen. Daarom wordt u ten zeerste aangeraden de implementatie van workflows zorgvuldig te plannen.</p> </td> 
   </tr>
  </tbody>
 </table>
 
 ## Gemeenschappen {#communities}
 
-[AEM-gemeenschappen](/help/communities/overview.md) vereenvoudigen de oprichting en het beheer van on-premise gemeenschappen.
+[AEM Communities](/help/communities/overview.md) vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen.
 
 Hier worden enkele beste praktijken voor de Gemeenschappen beschreven:
 
@@ -90,7 +93,7 @@ Hier worden enkele beste praktijken voor de Gemeenschappen beschreven:
 
 ## Tooling/HTL {#tooling-htl}
 
-HTML Template Language (HTL) is een nieuw HTML-sjabloonsysteem dat is geïntroduceerd met AEM 6.0. JSP en ESP worden vervangen als voorkeurssjabloonsysteem van AEM.
+HTML Template Language (HTL) is een nieuw HTML-sjabloonsysteem dat is geïntroduceerd met AEM 6.0. JSP en ESP worden vervangen als het voorkeurssjabloonsysteem voor AEM.
 
 |  |  |  |
 |---|---|---|
@@ -99,6 +102,6 @@ HTML Template Language (HTL) is een nieuw HTML-sjabloonsysteem dat is geïntrodu
 
 >[!NOTE]
 >
->De volgende meerdelige zelfstudie zou van belang kunnen zijn voor de beste praktijken om een nieuw AEM-project op te zetten, die de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt en de componentenontwikkeling detailleert:\
->[Aan de slag met AEM-sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
+>De volgende meerdelige zelfstudie kan van belang zijn voor de beste praktijken om een nieuw AEM project op te zetten, die de Componenten van de Kern, Bewerkbare Malplaatjes, de Bibliotheken van de Cliënt en de componentenontwikkeling detailleert:\
+>[Aan de slag met AEM Sites - WKND-zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)
 
