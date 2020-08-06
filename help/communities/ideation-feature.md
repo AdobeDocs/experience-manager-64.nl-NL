@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 7c0a9120-2edb-431b-b460-68398832d5ec
 translation-type: tm+mt
 source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+workflow-type: tm+mt
+source-wordcount: '975'
+ht-degree: 0%
 
 ---
 
@@ -49,79 +52,117 @@ Selecteer de geplaatste `Ideation` component die u wilt openen en selecteer het 
 
 ### Het tabblad Instellingen {#settings-tab}
 
-Geef op het tabblad **[!UICONTROL Instellingen]** instellingen op voor ideeën en opmerkingen:
+Geef onder het **[!UICONTROL Settings]** tabblad instellingen voor ideeën en opmerkingen op:
 
-* **[!UICONTROL Titel]** van idee De weergavetotel voor het idee. Standaard is dit `Ideation`.
+* **[!UICONTROL Ideation Title]**
+De weergavetitel voor het idee. Standaard is 
+`Ideation`.
 
-* **[!UICONTROL Beschrijving]** van idee Een beschrijving die als ondertitel voor het idee moet worden weergegeven. Standaard is geen beschrijving.
+* **[!UICONTROL Ideation Description]**
+Een beschrijving die als ondertitel voor het idee moet worden weergegeven. Standaard is geen beschrijving.
 
-* **[!UICONTROL De onderwerpen per Pagina]** bepalen het aantal ideeën/posten dat per pagina wordt getoond. De standaardwaarde is 10.
+* **[!UICONTROL Topics Per Page]**
+Hiermee definieert u het aantal ideeën/posts dat per pagina wordt weergegeven. De standaardwaarde is 10.
 
-* **[!UICONTROL Gemoderniseerd]** Als deze optie is ingeschakeld, moet het posten van ideeën en opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Moderated]**
+Als deze optie is ingeschakeld, moet het posten van ideeën en opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Gesloten]** Als dit wordt gecontroleerd, is het ideatieforum gesloten voor nieuwe ideeën en opmerkingen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Closed]**
+Als het wordt gecontroleerd, is het ideatieforum gesloten voor nieuwe ideeën en commentaren. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL De Rich Text Editor]** Indien ingeschakeld, kunnen ideeën en opmerkingen worden ingevoerd met markering. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Rich Text Editor]**
+Als deze optie is ingeschakeld, kunnen ideeën en opmerkingen worden ingevoerd met een markering. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Labelen]** toestaan Als deze optie is ingeschakeld, kunnen leden labellabels aan hun post toevoegen (zie tabblad **[!UICONTROL Tagveld]** ). De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Tagging]**
+Als deze optie is ingeschakeld, kunnen leden labels aan hun advertentie toevoegen (zie **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Uploaden]** van bestand toestaan Als deze optie is ingeschakeld, kunnen bestandsbijlagen worden toegevoegd aan het idee of de opmerking. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow File Uploads]**
+Als deze optie is ingeschakeld, kunt u bestandsbijlagen toevoegen aan het idee of de opmerking. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Maximale bestandsgrootte]** alleen relevant als deze `Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+* **[!UICONTROL Max File Size]**
+Alleen relevant als 
+`Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
-* **[!UICONTROL Alleen toegestane bestandstypen]** relevant als deze `Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+* **[!UICONTROL Allowed File Types]**
+Alleen relevant als 
+`Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
-* **[!UICONTROL Maximale bestandsgrootte]** van afbeelding alleen relevant koppelen als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
+* **[!UICONTROL Max Attach Image File Size]**
+Alleen relevant als Uploaden van bestand toestaan is ingeschakeld. Het maximum aantal bytes dat een geüploade afbeeldingsbestand kan hebben. De standaardwaarde is 2097152 (2 MB).
 
-* **[!UICONTROL Reacties]** toestaan Als deze optie is ingeschakeld, kunt u reacties op opmerkingen die op het idee zijn geplaatst toestaan. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Replies]**
+Als deze optie is ingeschakeld, kunt u reacties op opmerkingen op het idee toestaan. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Gebruikers toestaan opmerkingen en onderwerpen]** te verwijderen Als deze optie is ingeschakeld, kunnen leden de opmerkingen en ideeën die ze hebben geplaatst verwijderen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Users to Delete Comments and Topics]**
+Als deze optie is ingeschakeld, kunnen leden de opmerkingen en ideeën die ze hebben geplaatst verwijderen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Na]** Indien ingeschakeld, neemt u de volgende functie op voor ideeënposts, waardoor leden op de [hoogte](notifications.md) kunnen worden gesteld van nieuwe posten. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Following]**
+Als deze optie is ingeschakeld, bevat u de volgende functie voor ideeënartikelen, waarmee leden op de [hoogte](notifications.md) kunnen worden gesteld van nieuwe functies. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL E-mailabonnementen]** toestaan Als deze optie is ingeschakeld, kunnen leden per e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](email.md). De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Email Subscriptions]**
+Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](email.md). De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Stemmen]** toestaan Indien ingeschakeld, stemmen over de opmerkingen van een idee toestaan. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Voting]**
+Als deze optie ingeschakeld is, kunt u stemmen over de opmerkingen van een idee. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Badges]** weergeven Indien ingeschakeld, verdiende en toegewezen [badges](implementing-scoring.md) weergeven met het idee van een lid. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Display Badges]**
+Indien ingeschakeld, verdiende en toegewezen [badges](implementing-scoring.md) weergeven bij het idee van een lid. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Aanbevolen inhoud]** toestaan als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Allow Featured Content]**
+als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
 
 ### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef op onder het tabblad **[!UICONTROL Gebruikersmodernisering]** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
 
-* **[!UICONTROL Posten]** weigeren Als deze optie is ingeschakeld, mogen gematigde leden posten weigeren en voorkomen dat de post op het openbare forum verschijnt. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Deny Posts]**
+Als deze optie wordt ingeschakeld, zullen de verantwoordelijken van de leden hun functie kunnen ontkennen en voorkomen dat de functie op het openbare forum verschijnt. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Sluit/heropen Onderwerpen]** Indien gecontroleerd, kunnen de vertrouwde op lidmoderatoren een onderwerp aan verdere uitgeeft en commentaren sluiten, en kunnen een onderwerp ook heropenen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Close / Reopen Topics]**
+Indien gecontroleerd, kunnen de vertrouwde op lidmoderatoren een onderwerp aan verdere uitgeeft en commentaren sluiten, en kunnen een onderwerp ook heropenen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Vlagberichten]** Als deze optie is ingeschakeld, kunnen leden onderwerpen of opmerkingen van anderen als ongeschikt markeren. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Flag Posts]**
+Als deze optie is ingeschakeld, kunnen leden onderwerpen of opmerkingen van anderen als ongeschikt markeren. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Lijst]** met redenen voor vlagAls deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom zij een onderwerp of opmerking als ongeschikt aanmerken. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Flag Reason List]**
+Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een onderwerp of opmerking niet als ongepast wordt gemarkeerd. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL Reden]** voor aangepaste vlag Als dit selectievakje is ingeschakeld, kunnen leden hun eigen reden opgeven om een onderwerp of opmerking als ongeschikt te bestempelen. De optie Standaard is uitgeschakeld.
+* **[!UICONTROL Custom Flag Reason]**
+Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een onderwerp of opmerking als ongeschikt te bestempelen. De optie Standaard is uitgeschakeld.
 
-* **[!UICONTROL De Drempel]** van de modernisering gaat het aantal tijden in een onderwerp of een commentaar moet door leden worden gemarkeerd alvorens de moderatoren op de hoogte worden gebracht. De standaardwaarde is 1 (één keer).
+* **[!UICONTROL Moderation Threshold]**
+Ga het aantal tijden in een onderwerp of een commentaar moet door leden worden gemarkeerd alvorens moderators worden meegedeeld. De standaardwaarde is 1 (één keer).
 
-* **[!UICONTROL Laginglimiet]** Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
+* **[!UICONTROL Flagging Limit]**
+Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
 ### Tabblad Tagveld {#tag-field-tab}
 
-Onder het tabblad **[!UICONTROL Tagveld]** zijn de tags die kunnen worden toegepast, indien toegestaan op het tabblad **[!UICONTROL Instellingen]** , beperkt op basis van de gekozen naamruimten.
+Onder het **[!UICONTROL Tag field]** tabblad zijn de tags die kunnen worden toegepast, indien toegestaan onder het **[!UICONTROL Settings]** tabblad, beperkt op basis van de gekozen naamruimten.
 
-* **[!UICONTROL Toegestane naamruimten]** relevant als deze `Allow Tagging` is ingeschakeld op het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+* **[!UICONTROL Allowed Namespaces]**
+Relevant indien 
+`Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
-* **[!UICONTROL Suggestielimiet]** Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. De waarde **** -1 betekent geen limiet. De standaardwaarde is 0.
+* **[!UICONTROL Suggestion Limit]**
+Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. Een waarde van 
+**-** 1 betekent geen limiet. De standaardwaarde is 0.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef op onder het tabblad **[!UICONTROL Sorteerinstellingen]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het **[!UICONTROL Sort Settings]** tabblad op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
-* **[!UICONTROL Sorteren op]** Alle toegestane sorteerselecties controleren: `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Standaard is dit `Newest, Oldest, Last Updated`.
+* **[!UICONTROL Sort By]**
+Alle toegestane sorteerselecties controleren: 
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Standaard is dit `Newest, Oldest, Last Updated`.
 
-* **[!UICONTROL Als Standaard]** omlaag schuiven instellen om een van de geselecteerde sorteeropties te selecteren die als standaardopties moeten worden weergegeven. Standaard is dit `Newest`.
+* **[!UICONTROL Set as Default]**
+Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is 
+`Newest`.
 
-* **[!UICONTROL Selecteer Tijdopties voor Analytische sortering]** Pull omlaag om een van `All, Last 24 Hours, Last 7 Days, Last 30 Days`deze opties te selecteren. Standaard is dit `All`.
+* **[!UICONTROL Select Time Options for Analytics Sorting]**
+Omlaag trekken om een van de volgende opties te selecteren 
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Standaard is dit `All`.
 
 ## Ervaring met sitebezoekers {#site-visitor-experience}
 
