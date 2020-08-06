@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Het framework voor vertaalintegratie configureren{#configuring-the-translation-integration-framework}
 
-Het vertaalintegratiekader integreert met vertaalservices van derden om de vertaling van AEM-inhoud te ordenen.
+Het vertaalintegratiekader integreert met vertaaldiensten van derden om de vertaling van AEM inhoud te ordenen.
 
 * Verbind met uw vertaaldienstverlener.
 * Creeer een configuratie van het Kader van de Integratie van de Vertaling.
@@ -30,10 +30,10 @@ Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translatio
 
 ## Verbinding maken met een vertaalserviceprovider {#connecting-to-a-translation-service-provider}
 
-Maak een cloudconfiguratie die AEM met uw vertaalserviceprovider verbindt. AEM biedt standaard de mogelijkheid verbinding te maken met Microsoft Translator.
+Maak een cloudconfiguratie die AEM verbindt met uw vertaalserviceprovider. AEM biedt standaard de mogelijkheid verbinding te maken met Microsoft Translator.
 De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor de Vertaalprojecten. Koppelingen voor meer informatie over de integratie:
 
-* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier-partner)
+* [Translations.com](https://exchange.adobe.com/experiencecloud.details.90104.globallink-connect-plus-for-aem.html) (Adobe Exchange Premier Partner)
 * [Clay Tablet Technologieën](https://exchange.adobe.com/experiencecloud.details.90064.clay-tablet-translation-for-experience-manager.html)
 * [Lionbridge](https://exchange.adobe.com/experiencecloud.details.100064.lionbridge-connector-for-experience-manager-63.html)
 * [Memsource](https://exchange.adobe.com/experiencecloud.details.103166.memsource-connector-for-adobe-experience-manager.html)
@@ -51,8 +51,9 @@ De volgende vertaalverkopers verstrekken een implementatie van nieuwe API voor d
 >Bekijk de volgende pagina&#39;s voor de meest recente lijst met aanbieders van vertalingen voor mensen en machines:
 >
 >
->* [AEM Menselijke vertaling](https://www.adobe.com/go/aem-human-translation-connectors)
->* [AEM-machinevertaling](https://www.adobe.com/go/aem-machine-translation-connectors)
+>* [AEM menselijke vertaling](https://www.adobe.com/go/aem-human-translation-connectors)
+>* [AEM machinevertaling](https://www.adobe.com/go/aem-machine-translation-connectors)
+
 >
 
 
@@ -185,7 +186,7 @@ De eigenschappen van activa bepalen hoe te om activa te vormen. Zie [Taalkopieë
  </tbody> 
 </table>
 
-1. Klik of tik in de zijbalk op Gereedschappen > Bewerkingen > Wolk > Cloud Servicen.
+1. Klik of tik in de zijbalk op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
 1. In het gebied van de Integratie van de Vertaling, bepaalt of om het even welke configuraties zijn gecreeerd welke verbinding verschijnt:
 
    * Als er geen configuraties zijn gemaakt, klikt u of tikt u op Nu configureren.
@@ -214,7 +215,7 @@ Verder, voor om het even welke gemeenschappen [SCF componenten](/help/communitie
 Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstammende pagina&#39;s te vertalen.
 
 1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik of tik op Bewerken en klik of tik op het tabblad Cloud Servicen.
+1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
 1. Selecteer de vertaalprovider die u wilt gebruiken en klik op Gereed of tik op Gereed.
 
@@ -223,7 +224,7 @@ Koppel een pagina aan de vertaalprovider die u gebruikt om de pagina en afstamme
 Koppel een pagina aan het vertaalintegratieframework dat definieert hoe u de vertaling van de pagina en afstammende pagina&#39;s wilt uitvoeren.
 
 1. Selecteer in de Sites-console de pagina die u wilt configureren en klik of tik op Weergave-eigenschappen.
-1. Klik of tik op Bewerken en klik of tik op het tabblad Cloud Servicen.
+1. Klik op Bewerken of tik op Bewerken en klik op het tabblad Cloud Services.
 1. Klik of tik Add Configuratie > Vertaalintegratie.
 1. Selecteer het vertaalintegratieframework dat u wilt gebruiken en klik op Gereed of tik op Gereed.
 
