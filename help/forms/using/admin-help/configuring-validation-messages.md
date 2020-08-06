@@ -11,6 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
 translation-type: tm+mt
 source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+workflow-type: tm+mt
+source-wordcount: '374'
+ht-degree: 2%
 
 ---
 
@@ -24,17 +27,17 @@ Voor formulieren die als HTML worden gegenereerd, worden validatiefouten van for
 1. Klik in de beheerconsole op Services > Formulieren.
 1. Selecteer onder Uitvoer validatie in de lijst Rapportage een van de volgende opties:
 
-   **** Berichtvenster: Validatieberichten weergeven in een afzonderlijk dialoogvenster.
+   **Berichtvenster:** Validatieberichten weergeven in een afzonderlijk dialoogvenster.
 
-   **** Frame: Validatieberichten weergeven in een kader van hetzelfde venster.
+   **Frame:** Validatieberichten weergeven in een kader van hetzelfde venster.
 
-   **** Geen kader: Validatieberichten weergeven in hetzelfde venster. Dit is de standaardwaarde.
+   **Geen kader:** Validatieberichten weergeven in hetzelfde venster. Dit is de standaardwaarde.
 
-   **** Via API (met gegevens): De validatieberichten retourneren via de API (met gegevens). De validatieberichten worden niet op het scherm weergegeven.
+   **Via API (met gegevens):** De validatieberichten retourneren via de API (met gegevens). De validatieberichten worden niet op het scherm weergegeven.
 
-   **** Via API (met formulier): De validatieberichten retourneren via de API (met het formulier). De validatieberichten worden niet op het scherm weergegeven.
+   **Via API (met formulier):** De validatieberichten retourneren via de API (met het formulier). De validatieberichten worden niet op het scherm weergegeven.
 
-   **** Geen: Validatieberichten niet weergeven.
+   **Geen:** Validatieberichten niet weergeven.
 
 1. Klik op Opslaan.
 
@@ -44,9 +47,9 @@ Wanneer Rapportage is ingesteld op Frame of Geen frame, kunt u de locatie van va
 
 1. Selecteer onder Uitvoer validatie in de lijst Positie een van de volgende opties:
 
-   **** Links: Validatieberichten links in de webbrowser weergeven.
+   **Links:** Validatieberichten links in de webbrowser weergeven.
 
-   **** Rechts: Validatieberichten weergeven aan de rechterkant van de webbrowser.
+   **Rechts:** Validatieberichten weergeven aan de rechterkant van de webbrowser.
 
    **Boven**: Validatieberichten boven aan de webbrowser weergeven. Dit is de standaardwaarde.
 
