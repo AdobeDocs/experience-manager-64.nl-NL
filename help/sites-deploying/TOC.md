@@ -2,7 +2,7 @@
 cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
-user-guide-title: AEM 6.4-implementatiegids
+user-guide-title: AEM 6.4 Implementatiegids
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
 source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
@@ -16,8 +16,8 @@ ht-degree: 1%
 # AEM 6.4 Gebruikershandleiding implementeren {#deploying}
 
 + [Gebruikershandleiding implementeren](home.md)
-+ Inleiding tot het AEM-Platform {#introduction}
-   + [Inleiding tot het AEM-Platform](platform.md)
++ Inleiding tot het AEM Platform {#introduction}
+   + [Inleiding tot het AEM Platform](platform.md)
    + [Technische vereisten](technical-requirements.md)
    + [Opslagelementen in AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM met MongoDB](aem-with-mongodb.md)
@@ -29,7 +29,7 @@ ht-degree: 1%
    + [Start en stop opdrachtregel](command-line-start-and-stop.md)
    + [Opslaan van knooppunten en gegevensopslag configureren in AEM 6](data-store-config.md)
    + [Revisie opschonen](revision-cleanup.md)
-   + [AEM uitvoeren met TarMK Cold Standby](tarmk-cold-standby.md)
+   + [Hoe te om AEM met TarMK Koude Reserve in werking te stellen](tarmk-cold-standby.md)
    + [RDBMS-ondersteuning in AEM 6.4](rdbms-support-in-aem.md)
    + [Oak-query&#39;s en indexering](queries-and-indexing.md)
    + [Indexering via de eiken-run-jar](indexing-via-the-oak-run-jar.md)
@@ -50,7 +50,7 @@ ht-degree: 1%
    + [Problemen met replicatie oplossen](troubleshoot-rep.md)
    + [Verlopen van statische objecten](expiration-static-objects.md)
    + [Versie leegmaken](version-purging.md)
-   + [Uw AEM-instantie bewaken en onderhouden](monitoring-and-maintaining.md)
+   + [Uw AEM controleren en onderhouden](monitoring-and-maintaining.md)
    + [Taken verschuiven](offloading.md)
    + [Single Sign On](single-sign-on.md)
    + [Brontoewijzing](resource-mapping.md)
@@ -60,10 +60,10 @@ ht-degree: 1%
    + [Optimalisatie van prestaties](configuring-performance.md)
    + [Prestatiehandleiding voor middelen](assets-performance-sizing.md)
    + [Hoe kan ik-artikelen configureren](ht-deploy.md)
-   + [Geometrixsites verwijderen](removing-the-geometrixx-sites.md)
+   + [De sites van de Geometrixx verwijderen](removing-the-geometrixx-sites.md)
    + [Webconsole configureren](configuring-web-console.md)
-+ Upgrade uitvoeren naar AEM 6.4 {#upgrading}
-   + [Upgrade uitvoeren naar AEM 6.4](upgrade.md)
++ Upgrade naar AEM 6.4 {#upgrading}
+   + [Upgrade naar AEM 6.4](upgrade.md)
    + [Uw upgrade plannen](upgrade-planning.md)
    + [De complexiteit van upgrades beoordelen met de patroondetector](pattern-detector.md)
    + [Achterwaartse compatibiliteit in AEM 6.4](backward-compatibility.md)
@@ -73,20 +73,20 @@ ht-degree: 1%
    + [Het CRX2Oak-migratiehulpprogramma gebruiken](using-crx2oak.md)
    + [Onderhoudstaken vóór upgrade](pre-upgrade-maintenance-tasks.md)
    + [Controles en probleemoplossing na upgrade](post-upgrade-checks-and-troubleshooting.md)
-   + [Aangepaste zoekformulieren bijwerken](upgrading-custom-search-forms.md)
+   + [Aangepast zoeken in Forms bijwerken](upgrading-custom-search-forms.md)
    + [Duurzame verbeteringen](sustainable-upgrades.md)
    + [Code en aanpassingen bijwerken](upgrading-code-and-customizations.md)
    + [Upgradestappen voor installatie van toepassingsservers](app-server-upgrade.md)
    + [Lijst met verouderde bundels die na de upgrade zijn verwijderd](obsolete-bundles.md)
 + Repositoregeling {#restructuring}
-   + [Repositoregeling herstructurering in AEM 6.4](repository-restructuring.md)
+   + [Herstructurering van de depositaris in AEM 6.4](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Sites Repositoregeling Herstructurering AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
    + [Herstructurering van activa Bewaarinstelling in AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
-   + [Herstructurering van de Dynamic Media in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
-   + [Forms Repository Herstructurering in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
+   + [Dynamic Media Repository Herstructurering in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
+   + [Forms Repositoregeling Herstructurering in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
-   + [Herstructurering van de opslagplaats voor AEM Communities in punt 6.4](communities-repository-restructuring-in-aem-6-4.md)
+   + [Repositoregeling voor de herstructurering van AEM Communities in punt 6.4](communities-repository-restructuring-in-aem-6-4.md)
 + eCommerce {#ecommerce}
    + [Overzicht eCommerce](ecommerce.md)
    + [SAP Commerce Cloud](sap-commerce-cloud.md)
@@ -97,7 +97,7 @@ ht-degree: 1%
    + [Prestatieschema](performance-tree.md)
    + [Best practices voor het testen van prestaties](best-practices-for-performance-testing.md)
    + [Beste praktijken voor Vragen en het Indexeren](best-practices-for-queries-and-indexing.md)
-   + [Aanbevelingen voor gebruikersinterface voor klanten](ui-recommendations.md)
+   + [Gebruikersinterface Recommendations voor klanten](ui-recommendations.md)
    + [Prestaties en schaalbaarheid](performance.md)
 
 
