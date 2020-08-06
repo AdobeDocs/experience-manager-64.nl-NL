@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: d4473758-674a-42d6-923a-b536f7f9c1f7
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '206'
+ht-degree: 15%
 
 ---
 
@@ -59,8 +62,8 @@ De optie **CSV-export** maken is beschikbaar wanneer u in de **Sites** -console 
 
 Een CSV-export maken:
 
-1. Open de **Sites** -console en navigeer indien nodig naar de gewenste locatie.
-1. Selecteer op de werkbalk de optie **Maken** en **CSV exporteren** om de wizard te openen:
+1. Open de **Sites**-console en ga indien nodig naar de gewenste locatie.
+1. From the toolbar, select **Create** then **CSV Export** to open the wizard:
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
