@@ -11,6 +11,9 @@ topic-tags: personalization
 discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
 translation-type: tm+mt
 source-git-commit: 80395c4695b326474f9ae0e73caa075a5782eaf6
+workflow-type: tm+mt
+source-wordcount: '530'
+ht-degree: 0%
 
 ---
 
@@ -19,11 +22,11 @@ source-git-commit: 80395c4695b326474f9ae0e73caa075a5782eaf6
 
 ## Aanpassing en doelgerichtheid van inhoud {#personalization-and-content-targeting}
 
-AEM biedt een raamwerk van instrumenten voor het ontwerpen van gerichte inhoud en het presenteren van persoonlijke ervaringen.
+AEM biedt een kader van instrumenten voor het ontwerpen van gerichte inhoud en het presenteren van persoonlijke ervaringen.
 
 ## Doelmodus {#targeting-mode}
 
-[Auteur doelt inhoud](/help/sites-authoring/content-targeting-touch.md) met de doelmodus van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor de ervaringen van uw marketing activiteiten tot stand te brengen.
+[Door de auteur wordt de inhoud](/help/sites-authoring/content-targeting-touch.md) bepaald met de doelmodus van AEM. De gerichte wijze en de component van het Doel verstrekken hulpmiddelen om inhoud voor de ervaringen van uw marketing activiteiten tot stand te brengen.
 
 ## Activiteiten {#activities}
 
@@ -37,9 +40,9 @@ Gebruik de [Activites-console](/help/sites-authoring/activitylib.md) om de activ
 
 ## Ervaringen {#experiences}
 
-Voor elke activiteit, bepaalt u één of meerdere ervaringen die het publiek identificeren dat u richt. Met AEM kunt u de inhoud van elke ervaring beheren.
+Voor elke activiteit, bepaalt u één of meerdere ervaringen die het publiek identificeren dat u richt. AEM stelt u in staat de inhoud te beheren die elke ervaring omvat.
 
-Soorten publiek zijn gebaseerd op marketingsegmenten die in AEM of Adobe Target zijn gemaakt. Wanneer een bezoeker een webpagina opent, bepaalt de paginalogica het publiek waartoe zij behoren en geeft deze de inhoud weer die u voor dat publiek hebt gemaakt.
+De soorten publiek zijn gebaseerd op marketing segmenten die of in AEM of Adobe Target worden gecreeerd. Wanneer een bezoeker een webpagina opent, bepaalt de paginalogica het publiek waartoe zij behoren en geeft deze de inhoud weer die u voor dat publiek hebt gemaakt.
 
 Een activiteit definieert bijvoorbeeld ervaringen voor twee verschillende soorten publiek: vrouwen ouder dan 30 jaar en vrouwen jonger dan 30 jaar. Op de pagina Vrouwen van de website We.Retail staan verschillende producten voor elke ervaring.
 
@@ -59,13 +62,13 @@ De doelengine is het mechanisme dat de logica voor doelgerichte inhoud aandrijft
 
 ### AEM {#aem}
 
-AEM biedt een ingebouwde engine die paginaverzoeken verwerkt en bepaalt welke inhoud moet worden weergegeven. Wanneer u de AEM-doelengine gebruikt, kunt u alleen segmenten gebruiken die in AEM zijn gemaakt om het publiek van uw ervaringen te bepalen.
+AEM verstrekt ingebouwde het richten motor die paginaverzoeken verwerkt en de inhoud aan vertoning bepaalt. Wanneer u de AEM doelengine gebruikt, kunt u alleen segmenten gebruiken die zijn gemaakt in AEM voor het definiëren van het publiek van uw ervaringen.
 
-### Adobe-doel {#adobe-target}
+### Adobe Target {#adobe-target}
 
-De Adobe Target-engine zorgt ervoor dat informatie die tijdens paginabezoeken is verzameld, wordt bijgehouden in Adobe Target.
+De Adobe Target-engine voor doelwitten zorgt ervoor dat informatie die tijdens paginabezoeken is verzameld, wordt bijgehouden in Adobe Target.
 
-* Wanneer u deze doelengine gebruikt, gebruikt u de segmenten die u vanuit Adobe Target importeert om het publiek voor uw ervaringen te definiëren.
+* Wanneer u deze doelengine gebruikt, gebruikt u de segmenten die u uit Adobe Target importeert om het publiek voor uw ervaringen te definiëren.
 * Activiteiten die gebruikmaken van de Adobe Target-engine worden [gesynchroniseerd met Target](/help/sites-authoring/activitylib.md#synchronizing-activities-with-adobe-target).
 
 U kunt deze engine gebruiken wanneer u deze hebt [geïntegreerd met Adobe Target](/help/sites-administering/opt-in.md).
