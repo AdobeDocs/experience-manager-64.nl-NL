@@ -58,6 +58,7 @@ U kunt zo veel zoeksjablonen maken als u wilt.
       * Selecteer een relationele operator (bijvoorbeeld &quot;gelijk aan&quot;) in de opgegeven lijst en geef de waarde van de operand op in het vak ernaast.
       * (Optioneel) Als u wilt dat gebruikers de operandwaarde in Workspace kunnen wijzigen, selecteert u De gebruiker toestaan de operand te wijzigen.
       * (Optioneel) Als u gebruikers wilt toestaan de relationele operator te wijzigen, selecteert u Toestaan dat de gebruiker een andere relationele operator selecteert. Selecteer in de lijst die wordt weergegeven de operatoren die beschikbaar zijn voor de gebruiker.
+
       **Tip**: *Als u Procesnaam als element hebt geselecteerd, kunt u op het pictogram naast het operandveld klikken om een lijst weer te geven waarin u een proces kunt selecteren dat op de formulierserver wordt uitgevoerd. Nadat u een proces hebt geselecteerd, zijn alle procesvariabelen die in dat proces zijn gedefinieerd, beschikbaar voor selectie onder Procesvariabelen in de bovenste sectie van het tabblad Criteria.*
 
       **Tip**: *U kunt een element verwijderen uit de zoeksjabloon door op het pictogram Verwijderen naast de zoekcriteria van het element te klikken.*
@@ -68,6 +69,7 @@ U kunt zo veel zoeksjablonen maken als u wilt.
    * Selecteer een proces- of taakelement en klik op de pijl-rechts om dit naar de lijst Kolommen te rapporteren te verplaatsen.
    * Selecteer in de lijst Kolommen die u wilt rapporteren het proces- of taakelement en klik op de pijl-omhoog of pijl-omlaag om dit naar de gewenste plaats in de kolomvolgorde te verplaatsen. De kolomkoppen in de zoekresultaten worden weergegeven in de volgorde waarin ze hier worden vermeld.
    * (Optioneel) Als u de naam van het element voor de kolomkop wilt wijzigen, selecteert u het element in de lijst Te rapporteren kolommen en geeft u de nieuwe naam op.
+
    >[!NOTE]
    >
    >De indeling die in de zoeksjabloon is opgegeven, heeft voorrang op de gebruikersvoorkeuren die voor kolomkoppen in Workspace zijn opgegeven.
