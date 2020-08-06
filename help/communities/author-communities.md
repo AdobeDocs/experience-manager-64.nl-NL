@@ -1,8 +1,8 @@
 ---
 title: Community-componenten
 seo-title: Community-componenten
-description: 'Gebruikersfuncties toevoegen aan elke AEM-site '
-seo-description: 'Gebruikersfuncties toevoegen aan elke AEM-site '
+description: 'Gebruikersfuncties toevoegen aan elke AEM site '
+seo-description: 'Gebruikersfuncties toevoegen aan elke AEM site '
 uuid: 676abcda-3021-498d-a6eb-b60004315349
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: dc149196-fa56-494e-975c-b11ca1ef193b
 translation-type: tm+mt
 source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
+workflow-type: tm+mt
+source-wordcount: '295'
+ht-degree: 2%
 
 ---
 
@@ -19,12 +22,12 @@ source-git-commit: 1e867debcc1bfeed3abc4240796c9f2c2850167f
 
 ## Inleiding {#introduction}
 
-Wanneer AEM Communities een licentie heeft, is het mogelijk om naast het maken van gemeenschapssites ook Community-functies toe te voegen aan elke AEM-site met behulp van standaard AEM-ontwerpgereedschappen.
+Wanneer AEM Communities een licentie heeft, kunt u naast het maken van gemeenschapssites ook Community-functies toevoegen aan elke AEM site met behulp van standaard AEM ontwerpgereedschappen.
 
 Ga voor meer informatie over het maken van een site op de website van de gemeenschap naar:
 
-* [Overzicht van AEM-gemeenschappen](overview.md)
-* [Aan de slag met AEM-gemeenschappen](getting-started.md)
+* [AEM Communities - Overzicht](overview.md)
+* [Aan de slag met AEM Communities](getting-started.md)
 * [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
 
 >[!NOTE]
@@ -76,7 +79,7 @@ Zie ook de interactieve handleiding voor [Community Components](components-guide
 
 >[!NOTE]
 >
->De opiniepeilingscomponent is niet meer beschikbaar en wordt niet meer ondersteund in Experience Manager-gemeenschappen.
+>De opiniepeilingscomponent is niet meer beschikbaar en wordt niet meer ondersteund in Experience Manager Communities.
 
 ## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
 
