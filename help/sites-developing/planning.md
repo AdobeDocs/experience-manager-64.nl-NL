@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 12268c43-93f9-42c1-8dd7-f17f9ae2219b
 translation-type: tm+mt
 source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+workflow-type: tm+mt
+source-wordcount: '985'
+ht-degree: 0%
 
 ---
 
@@ -27,7 +30,7 @@ In dit document wordt beschreven wat u moet weten om uw test te plannen. Bovendi
 
 Voordat u begint met de eigenlijke analyse en definitie van tests, bekijkt u de volgende informatie:
 
-**AEM Architectuur** - zie Basisconcepten om zich aan de architectuur en de basisbeginselen van AEM voor te stellen.
+**AEM Architectuur** - zie Basisconcepten om zich aan de architectuur en basisprincipes van AEM te introduceren.
 
 **Documentatie** - Zie om het even welke documentatiesecties, of hoe te artikelen, voor verdere informatie.
 
@@ -49,7 +52,7 @@ Het is de verantwoordelijkheid van de projectbeheerder om afhankelijk van de res
 
 ## Typen tests {#types-of-tests}
 
-Er zijn verschillende standaardclassificaties van tests die geschikt zijn voor gebruik bij het testen van een AEM-project. U zou met deze moeten vertrouwd zijn om te beslissen welke u zult gebruiken:
+Er zijn verschillende standaardclassificaties van tests die geschikt zijn voor gebruik bij het testen van een AEM project. U zou met deze moeten vertrouwd zijn om te beslissen welke u zult gebruiken:
 
 >[!NOTE]
 >
