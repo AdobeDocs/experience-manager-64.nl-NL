@@ -166,6 +166,7 @@ Met de volgende strategieën kunt u het gegevensverlies van de uitvoer- en invoe
    * **Fase 3:** Gekopieerd naar de werkgebiedmap en het proces wordt aangeroepen
    * **Fase 4:** Bezig met manipuleren
    * **Fase 5:** Resultaten geretourneerd
+
    Bestanden in werkgebied 1 worden gemanipuleerd. Als bestanden zich in werkgebied 2 of 3 bevinden, plaatst u ze in de invoermap zodat ze opnieuw kunnen worden gemanipuleerd.
 
    >[!NOTE]
