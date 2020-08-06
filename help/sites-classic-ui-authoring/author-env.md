@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '286'
+ht-degree: 0%
 
 ---
 
@@ -31,11 +34,12 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar, die toegankelijk 
 
 1. Klassieke interface
 
-   * Deze interface is al vele jaren beschikbaar in AEM.
+   * Deze interface is al vele jaren in AEM beschikbaar.
    * Het is voornamelijk groen.
    * Het is ontworpen voor gebruik op desktopapparaten.
    * Het wordt niet langer gehandhaafd.
    * De volgende documentatie concentreert zich op deze klassieke UI. Raadpleeg de [standaarddocumentatie](/help/sites-authoring/author.md)over ontwerpen voor meer informatie over ontwerpen in de moderne, op aanraking gebaseerde gebruikersinterface.
+
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Interface met aanraakbediening
@@ -46,8 +50,10 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar, die toegankelijk 
    * Raadpleeg de [standaarddocumentatie](/help/sites-authoring/author.md) over ontwerpen voor meer informatie over het gebruik van de op aanrakingen gebaseerde gebruikersinterface. De volgende documentatie concentreert zich op klassieke UI.
 
    * Desktop:
+
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Tabletapparaten (of desktops met een breedte van minder dan 1024 pixels):
+
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
 
