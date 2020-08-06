@@ -1,8 +1,8 @@
 ---
 title: Eerste stappen voor auteurs
 seo-title: Eerste stappen voor auteurs
-description: In deze sectie ziet u een overzicht van de belangrijkste taken die u gebruikt wanneer u inhoud gaat ontwerpen met Adobe Experience Manager (AEM).
-seo-description: In deze sectie ziet u een overzicht van de belangrijkste taken die u gebruikt wanneer u inhoud gaat ontwerpen met Adobe Experience Manager (AEM).
+description: In deze sectie ziet u een overzicht van de belangrijkste taken die u gebruikt wanneer u begint met het ontwerpen van inhoud met Adobe Experience Manager (AEM).
+seo-description: In deze sectie ziet u een overzicht van de belangrijkste taken die u gebruikt wanneer u begint met het ontwerpen van inhoud met Adobe Experience Manager (AEM).
 uuid: 1343acf9-b104-40f3-a3f2-df42060cb4fd
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,6 +11,9 @@ topic-tags: page-authoring
 discoiquuid: 7f5713fe-01e3-450e-b71a-dc567d9a192e
 translation-type: tm+mt
 source-git-commit: ee9b977515b6c1233ff87f011f7a8b4095450814
+workflow-type: tm+mt
+source-wordcount: '445'
+ht-degree: 0%
 
 ---
 
