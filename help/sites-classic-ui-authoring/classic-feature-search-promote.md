@@ -27,7 +27,7 @@ Als u de mogelijkheden van Search&amp;Promote wilt integreren in uw website, geb
 * Zoekverfijning
 * Banners
 
-Merk op dat u de mogelijkheden van de Search&amp;Promote slechts kunt gebruiken als uw beheerder AEM hen heeft toegelaten. Zie [Integratie met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
+Merk op dat u de mogelijkheden van de Search&amp;Promote slechts kunt gebruiken als uw AEM beheerder hen heeft toegelaten. Zie [Integreren met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
 
 Facetten worden gevormd op de server van de Search&amp;Promote, zoals de informatie die elke component verstrekt. De volgende tabel bevat een korte beschrijving van elke component. De volgende secties verstrekken gedetailleerde informatie over hun gebruik.
 
