@@ -1,8 +1,8 @@
 ---
 title: Gebeurtenissen van formulieren aanpassen
 seo-title: Gebeurtenissen van formulieren aanpassen
-description: Als een gebruiker meer dan 60 seconden aan een veld doorgeeft, wordt een gebeurtenis FieldVisit geactiveerd en worden de gegevens van het veld naar Adobe SiteCatalyst verzonden.
-seo-description: Als een gebruiker meer dan 60 seconden aan een veld doorgeeft, wordt een gebeurtenis FieldVisit geactiveerd en worden de gegevens van het veld naar Adobe SiteCatalyst verzonden.
+description: Als een gebruiker meer dan 60 seconden aan een veld doorgeeft, wordt een veldbezoek-gebeurtenis geactiveerd en worden de gegevens van het veld naar Adobe SiteCatalyst verzonden.
+seo-description: Als een gebruiker meer dan 60 seconden aan een veld doorgeeft, wordt een veldbezoek-gebeurtenis geactiveerd en worden de gegevens van het veld naar Adobe SiteCatalyst verzonden.
 uuid: 2f790085-2f1a-45be-9a69-6100c76dcae0
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: customization
 discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
 translation-type: tm+mt
 source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+workflow-type: tm+mt
+source-wordcount: '476'
+ht-degree: 1%
 
 ---
 
@@ -61,7 +64,7 @@ Uit het vak worden de volgende gebeurtenissen bijgehouden in een adaptieve vorm 
 
 ## Tijdslimiet voor de gebeurtenis &#39;visit&#39; van het veld aanpassen {#customizing-the-field-visit-event-timeout}
 
-Als een gebruiker in de standaard AEM-formulierinstelling meer dan 60 seconden in een veld doorbrengt, wordt een `fieldvisit` gebeurtenis geactiveerd en worden de gegevens van het veld naar Adobe Analytics verzonden. U kunt de basislijn voor het bijhouden van veldtijd onder AEM Forms Analytics Configuration op de AEM Configuration-console (/system/console/configMgr) aanpassen om de time-outlimiet te verhogen of te verlagen.
+Als een gebruiker meer dan 60 seconden doorbrengt in een veld, wordt standaard AEM formulierinstelling een `fieldvisit` gebeurtenis geactiveerd en worden de gegevens van het veld naar Adobe Analytics verzonden. U kunt de basislijn voor het bijhouden van de veldtijd aanpassen bij AEM Forms Analytics Configuration op AEM Configuration-console (/system/console/configMgr) om de time-outlimiet te verhogen of te verlagen.
 
 ## De volgende gebeurtenissen aanpassen {#customizing-the-tracking-events}
 
@@ -90,10 +93,10 @@ case 'error':
 
 ## De gebeurtenis panelvisit aanpassen {#customizing-the-panelvisit-event}
 
-Bij de standaard installatie van AEM Forms wordt na elke 60 seconden gecontroleerd of het venster met het adaptieve formulier actief is. Als het venster actief is, wordt een `panelVisit`gebeurtenis geactiveerd naar Adobe Analytics. Hiermee kunt u controleren of het document of formulier actief is en kunt u de tijd berekenen die aan het desbetreffende formulier of document is besteed.
+Bij de standaard AEM Forms-instelling wordt na elke 60 seconden gecontroleerd of het venster met het adaptieve formulier actief is. Als het venster actief is, wordt een `panelVisit`gebeurtenis geactiveerd naar Adobe Analytics. Hiermee kunt u controleren of het document of formulier actief is en kunt u de tijd berekenen die aan het desbetreffende formulier of document is besteed.
 
 >[!NOTE]
 >
->De naam van de gebeurtenis die wordt gebruikt om activiteit op te halen en de tijd die wordt doorgebracht te berekenen is &quot;panelVisit&quot;. Deze gebeurtenis is anders dan de gebeurtenis die het deelvenster bezoeken in de bovenstaande tabel wordt weergegeven.
+>De naam van de gebeurtenis die wordt gebruikt om activiteit op te halen en de tijd die wordt doorgebracht te berekenen is &quot;panelVisit&quot;. Deze gebeurtenis is anders dan de gebeurtenis die wordt weergegeven in de bovenstaande tabel voor het bezoek van het deelvenster.
 
-U kunt de functie planningHeartBeatCheck die beschikbaar is in het `/libs/afanalytics/js/custom.js` bestand aanpassen om deze gebeurtenis die regelmatig naar Adobe Analytics wordt verzonden, te wijzigen of te stoppen.
+U kunt de functie planningHeartBeatCheck die beschikbaar is in het `/libs/afanalytics/js/custom.js` bestand wijzigen om deze gebeurtenis die regelmatig naar Adobe Analytics wordt verzonden, te wijzigen of te stoppen.
