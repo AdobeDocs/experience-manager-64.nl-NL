@@ -9,6 +9,9 @@ topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 translation-type: tm+mt
 source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+workflow-type: tm+mt
+source-wordcount: '557'
+ht-degree: 1%
 
 ---
 
@@ -32,7 +35,7 @@ Inline stijlen toevoegen aan een component:
 
 1. Klik op een tabblad in de zijbalk om CSS-eigenschappen op te geven. U kunt eigenschappen opgeven, zoals:
 
-   * Dimensies en positie (weergave-instelling, opvulling, hoogte, breedte, marge, positie, z-index, zwevend, wissen, overloop)
+   * Dimension en positie (weergave-instelling, opvulling, hoogte, breedte, marge, positie, z-index, zwevend, wissen, overloop)
    * Tekst (lettertypefamilie, dikte, kleur, grootte, lijnhoogte en uitlijning)
    * Achtergrond (afbeelding en verloop, achtergrondkleur)
    * Rand (breedte, stijl, kleur, straal)
@@ -93,7 +96,7 @@ Let op de wijziging in de stijl van het tekstvak zoals wordt getoond in de volge
  </tbody> 
 </table>
 
-![](assets/applied-style.png) Stijl van tekstvak nadat inline-opmaak is toegepast **** Figuur: component *Tekstvak na toepassen van inline-stijleigenschappen*
+![Stijl van tekstvak nadat inline-opmaak is toegepast](assets/applied-style.png)**Figuur:** *Component van tekstvak na toepassen van inline-stijleigenschappen*
 
 Na de bovenstaande stappen kunt u andere componenten selecteren en opmaken, zoals deelvensters, verzendknoppen en keuzerondjes.
 
