@@ -1,8 +1,8 @@
 ---
 title: Emulators
 seo-title: Emulators
-description: Met AEM kunnen auteurs een pagina weergeven in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken
-seo-description: Met AEM kunnen auteurs een pagina weergeven in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken
+description: AEM stelt auteurs in staat een pagina te bekijken in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken
+seo-description: AEM stelt auteurs in staat een pagina te bekijken in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken
 uuid: ee1496a5-be68-4318-b5ce-b11c41e4485c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -12,6 +12,9 @@ discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
 translation-type: tm+mt
 source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+workflow-type: tm+mt
+source-wordcount: '654'
+ht-degree: 0%
 
 ---
 
@@ -20,11 +23,11 @@ source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Met Adobe Experience Manager (AEM) kunnen auteurs een pagina weergeven in een emulator die de omgeving simuleert waarin een eindgebruiker de pagina zal bekijken, bijvoorbeeld op een mobiel apparaat of in een e-mailclient.
 
-Het AEM-emulatorframework:
+Het AEM emulatorframework:
 
 * Verstrekt inhoud creatie binnen een gesimuleerde Gebruikersinterface (UI), bijvoorbeeld een mobiel apparaat of een e-mailcliënt (die aan auteur nieuwsbrieven wordt gebruikt).
 * Hiermee past u de pagina-inhoud aan op basis van de gesimuleerde interface.
@@ -150,5 +153,6 @@ Een aangepaste mobiele emulator maken:
    * Naam = `canRotate`, Type = `Boolean`, Waarde = `true`: om de rotatiefunctie op te nemen.
 
    * Naam = `touchScrolling`, Type = `Boolean`, Waarde = `true`: om de functionaliteit voor aanraakschuiven op te nemen.
+
    U kunt meer functies toevoegen door uw eigen plug-ins te definiëren.
 
