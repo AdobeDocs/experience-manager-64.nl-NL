@@ -1,8 +1,8 @@
 ---
 title: Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen
 seo-title: Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen
-description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM-formulieromgeving.
-seo-description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM-formulieromgeving.
+description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM formulieromgeving.
+seo-description: In dit document worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM formulieromgeving.
 uuid: ab3b1fb1-25b3-4c95-801f-82d4b58f05ff
 contentOwner: admin
 content-type: reference
@@ -11,26 +11,29 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f146202f-25f1-46a0-9943-c483f5f09f9f
 translation-type: tm+mt
 source-git-commit: f957ca343d12c325d012034a6fdbc36f77e41d87
+workflow-type: tm+mt
+source-wordcount: '862'
+ht-degree: 0%
 
 ---
 
 
 # Back-ups maken van de EMC Documentum-opslagplaats en deze herstellen {#backing-up-and-recovering-the-emc-documentum-repository}
 
-In deze sectie worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM-formulieromgeving.
+In deze sectie worden de taken beschreven die nodig zijn om back-ups te maken van de EMC Documentum-opslagplaats die is geconfigureerd voor uw AEM formulieromgeving.
 
 >[!NOTE]
 >
->In deze instructies wordt ervan uitgegaan dat AEM-formulieren met Connectors voor ECM en EMC Documentum Content Server geïnstalleerd en geconfigureerd zijn zoals vereist.
+>In deze instructies wordt ervan uitgegaan dat AEM formulieren met Connectors voor ECM en EMC Documentum Content Server geïnstalleerd en geconfigureerd zijn zoals vereist.
 
 Voor zowel het back-up- als het herstelproces zijn er twee hoofdtaken:
 
-* Back-up maken van (of herstellen van) de AEM-formulieromgeving.
+* Back-up maken van de AEM formulieromgeving (of deze herstellen).
 * Back-up maken van (of herstellen van) de EMC Documentum Content Server.
 
 >[!NOTE]
 >
->Maak een back-up van uw AEM-formuliergegevens voordat u een back-up maakt van het EMC Documentum-systeem en herstel vervolgens het EMC Documentum-systeem voordat u de AEM-formulieromgeving herstelt.
+>Maak een back-up van uw AEM formuliergegevens voordat u een back-up maakt van het EMC Documentum systeem en herstel vervolgens het EMC Documentum systeem voordat u de AEM formulieromgeving herstelt.
 
 ## Softwarevereisten {#software-requirements}
 
@@ -223,9 +226,9 @@ In dit gedeelte wordt beschreven hoe u de EMC NetWorker-software op de Content S
 1. Klik met de rechtermuisknop op Apparaten en selecteer Maken.
 1. Voer de volgende waarden in en klik op OK:
 
-   **** Naam: Het volledige pad van de gedeelde map
+   **Naam:** Het volledige pad van de gedeelde map
 
-   **** Mediatype: `File`
+   **Mediatype:** `File`
 
 1. Klik met de rechtermuisknop op het nieuwe apparaat en selecteer Bewerkingen.
 1. Klik op Label, voer een naam in, klik op OK en klik op Onderbrengen.
@@ -234,7 +237,7 @@ Er wordt een apparaat toegevoegd waarop de back-upbestanden worden opgeslagen. U
 
 ## Back-up maken van de EMC Documentum Content Server {#back-up-the-emc-documentum-content-server}
 
-Voer de volgende taken uit nadat u een volledige back-up van uw AEM-formuliergegevens hebt gemaakt. (Zie Een back- [up maken van de AEM-formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
+Voer de volgende taken uit nadat u een volledige back-up van uw AEM formuliergegevens hebt gemaakt. (Zie Een back- [up maken van de AEM formuliergegevens](/help/forms/using/admin-help/backing-aem-forms-data.md#backing-up-the-aem-forms-data).)
 
 >[!NOTE]
 >
@@ -249,7 +252,7 @@ Voer de volgende taken uit nadat u een volledige back-up van uw AEM-formuliergeg
 
 ## De EMC Documentum Content Server herstellen {#restore-the-emc-documentum-content-server}
 
-Voer de volgende taken uit voordat u de AEM-formuliergegevens herstelt. (Zie [De AEM-formuliergegevens](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)herstellen.)
+Voer de volgende taken uit voordat u de AEM formuliergegevens herstelt. (Zie [De AEM formuliergegevens](/help/forms/using/admin-help/recovering-aem-forms-data.md#recovering-the-aem-forms-data)herstellen.)
 
 >[!NOTE]
 >
