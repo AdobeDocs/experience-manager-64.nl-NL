@@ -1,8 +1,8 @@
 ---
 title: cURL gebruiken met AEM
 seo-title: cURL gebruiken met AEM
-description: Leer hoe u cURL gebruikt met AEM.
-seo-description: Leer hoe u cURL gebruikt met AEM.
+description: Leer hoe u cURL met AEM gebruikt.
+seo-description: Leer hoe u cURL met AEM gebruikt.
 uuid: 771b9acc-ff3a-41c9-9fee-7e5d2183f311
 contentOwner: Silviu Raiman
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Beheerders moeten veelvoorkomende taken in elk systeem vaak automatiseren of vereenvoudigen. In AEM bijvoorbeeld, zijn het leiden van gebruikers, het installeren van pakketten, en het beheren van bundels OSGi taken die algemeen moeten worden gedaan.
 
-Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep. cURL kan worden gebruikt om dergelijke URL-aanroepen uit te voeren en kan een nuttig hulpmiddel zijn voor AEM-beheerders.
+Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep. cURL kan worden gebruikt om dergelijke URL vraag uit te voeren en kan een nuttig hulpmiddel voor AEM beheerders zijn.
 
 ## Wat is cURL {#what-is-curl}
 
@@ -30,11 +30,11 @@ cURL is een opensource opdrachtregelprogramma voor het uitvoeren van URL-bewerki
 
 cURL is een gevestigde en wijdverspreide hulpmiddel om gegevens te krijgen of te verzenden gebruikend de syntaxis URL en oorspronkelijk vrijgegeven in 1997. De naam cURL betekende oorspronkelijk &quot;zie URL.&quot;
 
-Wegens de RESTful aard van het Sling kader waarop AEM wordt gebouwd, kunnen de meeste taken tot een vraag worden beperkt URL, die met cURL kan worden uitgevoerd. [U kunt inhoudsmanipulatietaken](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) , zoals het activeren van pagina&#39;s, het starten van workflows en [operationele taken](/help/sites-administering/curl.md#common-operational-aem-curl-commands) , zoals pakketbeheer en het beheren van gebruikers, automatiseren met gebruik van cURL. Bovendien kunt u uw eigen cURL [-opdrachten](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) maken voor de meeste taken in AEM.
+Vanwege de RESTful-aard van het Sling-framework waarop AEM is gebouwd, kunnen de meeste taken worden beperkt tot een URL-aanroep, die kan worden uitgevoerd met cURL. [U kunt inhoudsmanipulatietaken](/help/sites-administering/curl.md#common-content-manipulation-aem-curl-commands) , zoals het activeren van pagina&#39;s, het starten van workflows en [operationele taken](/help/sites-administering/curl.md#common-operational-aem-curl-commands) , zoals pakketbeheer en het beheren van gebruikers, automatiseren met gebruik van cURL. Bovendien kunt u uw eigen cURL [-opdrachten](/help/sites-administering/curl.md#building-a-curl-ready-aem-command) maken voor de meeste taken in AEM.
 
 >[!NOTE]
 >
->Elke AEM-opdracht die via cURL wordt uitgevoerd, moet op dezelfde manier worden geautoriseerd als elke gebruiker aan AEM. Alle ACLs en toegangsrechten worden gerespecteerd wanneer het gebruiken van cURL om een bevel AEM uit te voeren.
+>Elke AEM die via cURL wordt uitgevoerd, moet net als elke gebruiker worden geautoriseerd om te AEM. Alle ACLs en toegangsrechten worden gerespecteerd wanneer het gebruiken van cURL om een AEM bevel uit te voeren.
 
 ## cURL downloaden {#downloading-curl}
 
@@ -46,7 +46,7 @@ cURL&#39;s bronbewaarplaats kan ook op GitHub worden gevonden.
 
 cURL-opdrachten kunnen worden samengesteld voor de meeste bewerkingen in AEM, zoals workflows activeren, OSGi-configuraties controleren, JMX-opdrachten activeren, replicatieagents maken en nog veel meer.
 
-Om het nauwkeurige bevel te vinden u voor uw bepaalde verrichting nodig hebt, moet u de ontwikkelaarshulpmiddelen in uw browser gebruiken om de vraag van de POST aan de server te vangen wanneer u het bevel AEM uitvoert.
+Om het nauwkeurige bevel te vinden u voor uw bepaalde verrichting nodig hebt, moet u de ontwikkelaarshulpmiddelen in uw browser gebruiken om de vraag van de POST aan de server te vangen wanneer u het AEM bevel uitvoert.
 
 In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld een nieuwe pagina te maken in de Chrome-browser.
 
@@ -59,7 +59,7 @@ In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld e
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
 1. Klik op **Maken** in de wizard **Pagina** maken om de workflow daadwerkelijk te maken.
-1. Klik met de rechtermuisknop op de resulterende POST-actie en selecteer **Kopiëren** -> **Kopiëren als cURL**.
+1. Klik met de rechtermuisknop op de resulterende POST en selecteer **Kopiëren** -> **Kopiëren als cURL**.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
@@ -69,11 +69,11 @@ In de volgende stappen wordt beschreven hoe u dit kunt doen door als voorbeeld e
 
 1. Voer de opdracht cURL uit via de opdrachtregel en bekijk de reactie.
 
-   ![chlimage_1-70](assets/chlimage_1-70.png)
+   ![chlimage_1-78](assets/chlimage_1-70.png)
 
-## Algemene operationele AEM cURL-opdrachten {#common-operational-aem-curl-commands}
+## Gemeenschappelijke operationele AEM cURL-opdrachten {#common-operational-aem-curl-commands}
 
-Hier volgt een lijst met AEM cURL-opdrachten voor algemene administratieve en operationele taken.
+Hier volgt een lijst met AEM cURL-opdrachten voor algemene beheertaken en operationele taken.
 
 >[!NOTE]
 >
@@ -296,7 +296,7 @@ Zie [MSRP - de Leverancier](/help/communities/msrp.md#running-msrp-reindex-tool-
 
 #### CRX DE Lite in- en uitschakelen {#enabling-and-disabling-crx-de-lite}
 
-Zie [CRXDE Lite inschakelen in AEM](/help/sites-administering/enabling-crxde-lite.md) voor meer informatie.
+Zie CRXDE Lite [inschakelen in AEM](/help/sites-administering/enabling-crxde-lite.md) voor meer informatie.
 
 ### Opruimverzameling gegevensopslag {#data-store-garbage-collection}
 
@@ -312,9 +312,9 @@ Zie [Opting In Adobe Analytics en Adobe Target](/help/sites-administering/opt-in
 
 Zie [Single Sign On](/help/sites-deploying/single-sign-on.md) voor meer informatie.
 
-## Algemene AEM cURL-opdrachten voor Manipulatie van inhoud {#common-content-manipulation-aem-curl-commands}
+## Algemene AEM-URL-opdrachten voor het manipuleren van inhoud {#common-content-manipulation-aem-curl-commands}
 
-Hier volgt een lijst met AEM cURL-opdrachten voor inhoudsmanipulatie.
+Hier volgt een lijst met AEM cURL-opdrachten voor het manipuleren van inhoud.
 
 >[!NOTE]
 >
