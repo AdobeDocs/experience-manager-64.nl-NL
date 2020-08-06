@@ -1,6 +1,6 @@
 ---
-title: Het gebruiken van de Verschuivende Samenvoeging van het Middel in AEM
-seo-title: Het gebruiken van de Verschuivende Samenvoeging van het Middel in AEM
+title: Het gebruiken van de Verschuivende Fusie van het Middel in AEM
+seo-title: Using the Sling Resource Merger in AEM
 description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 seo-description: De het Verdelen Samenvoeging van het Middel verleent de diensten om tot middelen toegang te hebben en samen te voegen
 uuid: 0a28fdc9-caea-490b-8f07-7c4a6b802e09
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: ec712ba0-0fd6-4bb8-93d6-07d09127df58
 translation-type: tm+mt
 source-git-commit: 507559ee6cc6b201a11bbf84da515b675534f675
+workflow-type: tm+mt
+source-wordcount: '1272'
+ht-degree: 0%
 
 ---
 
 
-# Het gebruiken van de Verschuivende Samenvoeging van het Middel in AEM{#using-the-sling-resource-merger-in-aem}
+# Using the Sling Resource Merger in AEM{#using-the-sling-resource-merger-in-aem}
 
 ## Doel {#purpose}
 
@@ -50,7 +53,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
 >
 >Overschrijvingen zijn niet afhankelijk van de zoekpaden. Ze gebruiken de eigenschap `sling:resourceSuperType` om de verbinding te maken.
 >
->Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`AEM, aangezien de beste praktijken in AEM aanpassingen onder `/apps`moeten bepalen; dat komt omdat je niets moet veranderen onder `/libs`.
+>Overschrijvingen worden echter vaak gedefinieerd in het kader van `/apps`, aangezien de beste praktijken in AEM het definiëren van aanpassingen onder `/apps`; dat komt omdat je niets moet veranderen onder `/libs`.
 
 >[!CAUTION]
 >
@@ -64,6 +67,7 @@ De doelstellingen voor het gebruiken van de Verschuivende Fusie van het Middel i
    >
    >
 1. Breng wijzigingen aan in `/apps`
+
 >
 
 
@@ -212,6 +216,7 @@ Deze, samen met standaardfunctionaliteit, laten u toe:
 
       * type: `String[]`
       * waarde: een lijst met onderliggende knooppunten (zoals gedefinieerd in `/libs`) die moeten worden verborgen of genegeerd
+
       Jokerteken&amp;ast; kan worden gebruikt om alle onderliggende knooppunten te verbergen/te negeren.
 
 
