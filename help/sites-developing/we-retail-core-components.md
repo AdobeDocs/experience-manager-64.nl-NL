@@ -11,6 +11,9 @@ topic-tags: best-practices
 discoiquuid: af3cd818-61cf-4da1-bfb5-87540911ddd5
 translation-type: tm+mt
 source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+workflow-type: tm+mt
+source-wordcount: '539'
+ht-degree: 2%
 
 ---
 
@@ -29,11 +32,12 @@ De kerncomponenten zijn moderne, flexibele componenten die eenvoudig uitbreidbaa
 
    * `.core-wcm`: De standaardbasiscomponenten
    * `.core-wcm-form`: De kerncomponenten voor het verzenden van formulieren
+
    Choose `.core-wcm`.
 
    ![chlimage_1-162](assets/chlimage_1-162.png)
 
-1. Merk op dat alle kerncomponenten **v1** worden genoemd, die erop wijzen dat dit de eerste versie van deze kerncomponent is. Regelmatige versies worden uitgebracht, die compatibel zijn met de versie van AEM en eenvoudige upgrades mogelijk maken zodat u kunt profiteren van de nieuwste functies.
+1. Merk op dat alle kerncomponenten **v1** worden genoemd, die erop wijzen dat dit de eerste versie van deze kerncomponent is. Regelmatige versies worden uitgebracht, die versiecompatibel zijn met AEM en eenvoudig upgraden mogelijk maken, zodat u kunt profiteren van de nieuwste functies.
 1. Klik op **Tekst (v1)**.
 
    Zie dat het Type **van** Middel van de component is `/apps/core/wcm/components/text/v1/text`. De componenten van de kern worden gevonden onder `/apps/core/wcm/components` en zijn versioned per component.
