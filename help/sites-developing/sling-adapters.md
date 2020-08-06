@@ -1,6 +1,6 @@
 ---
-title: Sling Adapters gebruiken
-seo-title: Sling Adapters gebruiken
+title: Sling Adapters
+seo-title: Sling Adapters
 description: Sling biedt een adapterpatroon om objecten die de Aanpasbare interface implementeren, gemakkelijk te vertalen
 seo-description: Sling biedt een adapterpatroon om objecten die de Aanpasbare interface implementeren, gemakkelijk te vertalen
 uuid: 07f66a33-072d-49e1-8e67-8b80a6a9072a
@@ -11,11 +11,14 @@ content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
 source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+workflow-type: tm+mt
+source-wordcount: '1747'
+ht-degree: 0%
 
 ---
 
 
-# Sling Adapters gebruiken{#using-sling-adapters}
+# Sling Adapters{#using-sling-adapters}
 
 [Sling](https://sling.apache.org) biedt een [adapterpatroon](https://sling.apache.org/site/adapters.html) aan om voorwerpen gemakkelijk te vertalen die de [Aanpasbare](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) interface uitvoeren. Deze interface biedt een algemene methode [adjustTo()](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/adapter/Adaptable.html#adaptTo%28java.lang.Class%29) die het object omzet in het klassetype dat als argument wordt doorgegeven.
 
@@ -103,7 +106,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ValueMap.html">ValueMap</a></td> 
-   <td>Retourneert een handig te gebruiken kaart van de eigenschappen als dit een JCR-node-gebaseerde resource (of andere resource die waardekaarten ondersteunt) is. Dit kan ook (eenvoudigere) worden bereikt door gebruik te maken<br /> <code><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> van (Null-case, enz.).</td> 
+   <td>Retourneert een handig te gebruiken kaart van de eigenschappen, als dit een JCR-node-based resource (of andere resource die waardekaarten ondersteunt) is. Dit kan ook (eenvoudigere) worden bereikt door gebruik te maken<br /> <code><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceUtil.html#getvaluemap%28org.apache.sling.api.resource.resource%29">ResourceUtil.getValueMap(Resource)</a></code> van (Null-case, enz.).</td> 
   </tr> 
   <tr> 
    <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/inherit/InheritanceValueMap.html">InheritanceValueMap</a></td> 
@@ -237,7 +240,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 <table> 
  <tbody> 
   <tr> 
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Bron</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /></a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html">Resource</a><a href="https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html"><br /> </a></td> 
    <td>Bron van de sjabloon.</td> 
   </tr> 
   <tr> 
