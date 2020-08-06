@@ -11,6 +11,9 @@ topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 translation-type: tm+mt
 source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+workflow-type: tm+mt
+source-wordcount: '718'
+ht-degree: 0%
 
 ---
 
@@ -49,8 +52,8 @@ Voor stappen voor het maken van OSGi-bundels voor JDBC-stuurprogramma&#39;s raad
 
 Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te configureren met RDB-persistentie:
 
-1. Zorg ervoor dat de databasedaemon is gestart en dat u een actieve database hebt voor gebruik met AEM.
-1. Kopieer AEM 6.3 jar in de installatiemap.
+1. Zorg ervoor dat de databasdaemon is gestart en dat u een actieve database hebt voor gebruik met AEM.
+1. Kopieer de AEM 6.3 jar in de installatiemap.
 1. Maak een map met de naam `crx-quickstart\install` in de installatiemap.
 1. Configureer de opslag van de documentnode door een configuratiebestand met de volgende naam in de `crx-quickstart\install` map te maken:
 
@@ -63,7 +66,7 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
    >
    >Voor gedetailleerde informatie over de gegevensbronconfiguratie voor elke gesteunde gegevensbestand, zie de Opties [van de Configuratie van de](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)Gegevensbron.
 
-1. Bereid de JDBC OSGi-bundels voor die met AEM moeten worden gebruikt:
+1. Bereid daarna de bundels JDBC OSGi voor die met AEM moeten worden gebruikt:
 
    1. Download het ZIP-archief van https://dev.mysql.com/downloads/connector/j/
       * version must be >= 5.1.38
@@ -74,7 +77,7 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
       * Blader naar de bundel die u uit het gedownloade ZIP-archief hebt uitgepakt
       * Controleer of het JDBC Driver for MySQLcom.mysql.jdbc **van** Oracle Corporation actief is en start deze.
 
-1. Start AEM ten slotte met de `crx3` en de `crx3rdb` runmodi:
+1. Ten slotte start u AEM met de `crx3` en de `crx3rdb` runmodi:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -90,7 +93,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 * `url:` De URL-tekenreeks van de database die moet worden gebruikt met JDBC. Elk databasetype heeft een eigen URL-tekenreeksindeling. Zie [URL-tekenreeksindelingen](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) hieronder voor meer informatie.
 
-* `driverClassName:` De naam van de JDBC-stuurprogrammaklasse. Dit verschilt afhankelijk van de database die u wilt gebruiken en vervolgens van het stuurprogramma dat nodig is om verbinding met de database te maken. Hieronder ziet u de klassenamen voor alle databases die door AEM worden ondersteund:
+* `driverClassName:` De naam van de JDBC-stuurprogrammaklasse. Dit verschilt afhankelijk van de database die u wilt gebruiken en vervolgens van het stuurprogramma dat nodig is om verbinding met de database te maken. Hieronder ziet u de klassenamen voor alle databases die worden ondersteund door AEM:
 
    * `org.postgresql.Driver` voor PostgreSQL;
    * `com.ibm.db2.jcc.DB2Driver` voor DB2;
@@ -104,7 +107,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 ### Opmaak URL-tekenreeks {#url-string-formats}
 
-Afhankelijk van het databasetype dat moet worden gebruikt, wordt in de configuratie van de gegevensbron een andere indeling voor de URL-tekenreeks gebruikt. Hieronder volgt een lijst met indelingen voor de databases die momenteel door AEM worden ondersteund:
+Afhankelijk van het databasetype dat moet worden gebruikt, wordt in de configuratie van de gegevensbron een andere indeling voor de URL-tekenreeks gebruikt. Hieronder volgt een lijst met indelingen voor de databases die momenteel AEM ondersteunen:
 
 * `jdbc:postgresql:databasename` voor PostgreSQL;
 
@@ -116,7 +119,7 @@ Afhankelijk van het databasetype dat moet worden gebruikt, wordt in de configura
 
 ## Bekende beperkingen {#known-limitations}
 
-Hoewel het gelijktijdige gebruik van meerdere AEM-instanties met één database wordt ondersteund door RDBMS-persistentie, zijn gelijktijdige installaties niet mogelijk.
+Hoewel gelijktijdig gebruik van meerdere AEM instanties met één database wordt ondersteund door RDBMS-persistentie, zijn gelijktijdige installaties niet mogelijk.
 
 Als u dit wilt omzeilen, moet u eerst de installatie uitvoeren met één lid en de andere leden toevoegen nadat de eerste installatie is voltooid.
 
