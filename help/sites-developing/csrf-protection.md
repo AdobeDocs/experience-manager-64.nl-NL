@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
 translation-type: tm+mt
 source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
+workflow-type: tm+mt
+source-wordcount: '300'
+ht-degree: 0%
 
 ---
 
 
 # Het CSRF-beschermingskader{#the-csrf-protection-framework}
 
-Naast het filter Apache Sling Referrer biedt Adobe ook een nieuw CSRF-beveiligingsframework dat bescherming biedt tegen dit type aanvallen.
+Naast het filter Apache Sling Referrer biedt Adobe ook een nieuw CSRF-beschermingskader dat bescherming biedt tegen dit type aanvallen.
 
 Het framework maakt gebruik van tokens om te garanderen dat het verzoek van de klant legitiem is. De tokens worden gegenereerd wanneer het formulier naar de client wordt verzonden en gevalideerd wanneer het formulier naar de server wordt teruggestuurd.
 
