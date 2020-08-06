@@ -1,8 +1,8 @@
 ---
 title: Verbeterde vertaling
 seo-title: Verbeterde vertaling
-description: Verbeterde vertaling in AEM.
-seo-description: Verbeterde vertaling in AEM.
+description: Verbeterde vertaalfuncties in AEM.
+seo-description: Verbeterde vertaalfuncties in AEM.
 uuid: 0563603f-327b-48f1-ac14-6777c06734b9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
@@ -10,13 +10,16 @@ content-type: reference
 discoiquuid: 42df2db3-4d3c-4954-a03e-221e2f548305
 translation-type: tm+mt
 source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+workflow-type: tm+mt
+source-wordcount: '558'
+ht-degree: 0%
 
 ---
 
 
 # Verbeterde vertaling{#translation-enhancements}
 
-Deze pagina biedt incrementele verbeteringen en verfijningen van de mogelijkheden voor het beheer van AEM-vertalingen.
+Deze pagina biedt incrementele verbeteringen en verfijningen voor AEM vertaalbeheermogelijkheden.
 
 ## Automatisering van vertaalprojecten {#translation-project-automation}
 
@@ -40,7 +43,7 @@ Er zijn opties toegevoegd om de productiviteit bij vertaalprojecten te verbetere
 
 ## Meertalige vertaalprojecten {#multilingual-translation-projects}
 
-Het is mogelijk om veelvoudige doeltalen in een vertaalproject te vormen, om het totale aantal gemaakte vertaalprojecten te verminderen.
+Het is mogelijk om veelvoudige doeltalen in een vertaalproject te vormen, om het totale aantal gecreeerde vertaalprojecten te verminderen.
 
 1. Klik of tik in uw vertaalproject op de stippen onder aan het **element Vertaaloverzicht** .
 
@@ -86,13 +89,14 @@ Taalwortels kunnen nu worden gegroepeerd onder knooppunten, bijvoorbeeld per reg
 >
 >* `/content/we-retail/language-masters/en`
 >* `/content/we-retail/language-masters/americas/central-america/es`
+
 >
 >
 Dit `es` taalexemplaar zal niet worden ontdekt aangezien het 2 niveaus (americas/midden-america) vanaf de `en` knoop is.
 
 >[!NOTE]
 >
->Taalwortels kunnen elke paginanaam hebben, in plaats van alleen de ISO-code van de taal. AEM zal altijd het pad en de naam eerst controleren, maar als de paginanaam geen taal identificeert, zal AEM de eigenschap cq:language van de pagina controleren voor de taalidentificatie.
+>Taalwortels kunnen elke paginanaam hebben, in plaats van alleen de ISO-code van de taal. AEM zal altijd het pad en de naam eerst controleren, maar als de paginanaam geen taal identificeert, zal AEM de eigenschap cq:language van de pagina controleren op de taalidentificatie.
 
 ## Vertaalstatus rapporteren {#translation-status-reporting}
 
