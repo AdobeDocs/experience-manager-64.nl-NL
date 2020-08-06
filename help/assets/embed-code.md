@@ -11,15 +11,18 @@ content-type: reference
 discoiquuid: 4ae76d8a-208f-4099-9f17-a94df424685e
 translation-type: tm+mt
 source-git-commit: 15d933a2e71a44e84cdcc9ae28f60c67b43bd8f4
+workflow-type: tm+mt
+source-wordcount: '385'
+ht-degree: 20%
 
 ---
 
 
 # Embedding the Dynamic Media Video or Image viewer on a web page {#embedding-the-video-or-image-viewer-on-a-web-page}
 
-Gebruik de functie Code **** insluiten wanneer u de video wilt afspelen of een element wilt weergeven dat is ingesloten op een webpagina. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster Code **** insluiten.
+Gebruik de functie **[!UICONTROL Embed Code]** wanneer u de video wilt afspelen of een asset wilt bekijken die op een webpagina is ingesloten. U kopieert de insluitcode naar het klembord, zodat u deze op uw webpagina&#39;s kunt plakken. Het bewerken van de code is niet toegestaan in het dialoogvenster **[!UICONTROL Embed Code]**.
 
-U sluit alleen URL&#39;s in als u _geen_ AEM als uw WCM gebruikt. Als u AEM als uw WCM gebruikt, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
+U sluit URLs slechts in als u _geen_ AEM als WCM gebruikt. Als u AEM gebruikt als uw WCM, voegt [u de elementen rechtstreeks op uw pagina toe.](adding-dynamic-media-assets-to-pages.md)
 
 See [Linking URLs to your Web Application.](linking-urls-to-yourwebapplication.md)
 
@@ -39,7 +42,7 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
 1. Navigeer naar de *gepubliceerde* video of het afbeeldingselement waarvan u de insluitcode wilt kopiëren.
 
-   Onthoud dat de insluitcode alleen beschikbaar is om te kopiëren *nadat* u de elementen voor het eerst hebt *gepubliceerd* . Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
+   Onthoud dat de insluitcode alleen beschikbaar is om te kopiëren *nadat* u de assets eerst hebt *gepubliceerd*. Bovendien moet de viewervoorinstelling of afbeeldingsvoorinstelling ook worden gepubliceerd.
 
    Zie Elementen [publiceren.](publishing-dynamicmedia-assets.md)
 
@@ -47,10 +50,10 @@ See [Delivering Optimized Images for a Responsive Site.](responsive-site.md)
 
    Zie [Voorinstellingen](managing-image-presets.md#publishing-image-presets)afbeelding publiceren.
 
-1. Selecteer het vervolgkeuzemenu in de linkertrack en tik op **[!UICONTROL Viewers]**.
+1. Selecteer het vervolgkeuzemenu in het linkerspoor en tik op **[!UICONTROL Viewers]**.
 1. Tik in de linkertrack op de naam van een viewervoorinstelling. De viewervoorinstelling wordt toegepast op het element.
-1. Tik op **[!UICONTROL Insluiten]**.
-1. Kopieer in het dialoogvenster Code **** insluiten de volledige code naar het klembord en tik op **[!UICONTROL Sluiten]**.
+1. Tik op **[!UICONTROL Embed]**.
+1. Kopieer in het **[!UICONTROL Embed Code]** dialoogvenster de gehele code naar het klembord en tik op **[!UICONTROL Close]**.
 1. Plak de insluitcode in uw webpagina&#39;s.
 
 ## Het gebruiken van HTTP/2 om uw Dynamische activa van Media te leveren {#using-http-to-deliver-your-dynamic-media-assets}
