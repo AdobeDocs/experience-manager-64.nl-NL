@@ -1,8 +1,8 @@
 ---
 title: Formulieren met API's op een webpagina weergeven
 seo-title: Formulieren met API's op een webpagina weergeven
-description: U kunt via programmacode zoeken in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
-seo-description: U kunt via programmacode zoeken in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
+description: U kunt via programmacode vragen in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
+seo-description: U kunt via programmacode vragen in Forms Manager om een gefilterde lijst met formulieren op uw eigen webpagina's op te halen.
 uuid: e51cb2d4-816f-4e6d-a081-51e4999b00ba
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
@@ -10,6 +10,9 @@ topic-tags: publish
 discoiquuid: 515ceaf6-c132-4e1a-b3c6-5d2c1ccffa7c
 translation-type: tm+mt
 source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
+workflow-type: tm+mt
+source-wordcount: '719'
+ht-degree: 1%
 
 ---
 
@@ -18,7 +21,7 @@ source-git-commit: 9229642edd5a91bee017d8c0680cd6c10bfe43df
 
 AEM Forms biedt een REST-API voor zoekopdrachten die webontwikkelaars kunnen gebruiken om een set formulieren op te vragen en op te halen die aan de zoekcriteria voldoet. U kunt API&#39;s gebruiken om formulieren te zoeken op basis van verschillende filters. Het reactieobject bevat formulierkenmerken, eigenschappen en renderpunten van formulieren.
 
-Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de server `https://[server]:[port]/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
+Als u formulieren wilt zoeken met de REST API, stuurt u een aanvraag van een GET naar de server `https://[server]:[port]/libs/fd/fm/content/manage.json` met de hieronder beschreven queryparameters.
 
 ## Parameters query {#query-parameters}
 
@@ -32,7 +35,7 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
    <td>func<br /> </td>
    <td><p>Geeft de aan te roepen functie op. Als u formulieren wilt zoeken, stelt u de waarde van het <code>func </code>kenmerk in op <code>searchForms</code>.</p> <p>Bijvoorbeeld, <code class="code">
        URLParameterBuilder entityBuilder=new URLParameterBuilder ();
-       entityBuilder.add("func", "searchForms");</code></p> <p><strong></strong> Opmerking: <em>Deze parameter is verplicht.</em><br /> </p> </td>
+       entityBuilder.add("func", "searchForms");</code></p> <p><strong>Opmerking:</strong> <em>Deze parameter is verplicht.</em><br /> </p> </td>
   </tr>
   <tr>
    <td>appPath<br /> </td>
@@ -91,7 +94,7 @@ Als u formulieren wilt zoeken met de REST API, stuurt u een GET-aanvraag naar de
        <li>ENDSWITH - A eindigt met B als B het einddeel van A is</li>
        <li>LIKE - Implementeert de operator LIKE</li>
        <li>AND - Meerdere instructies combineren</li>
-      </ul> <p><strong></strong> Opmerking: De operatoren <em>GT, LT, GTEQ en LTEQ zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
+      </ul> <p><strong>Opmerking:</strong> <em>De operatoren GT, LT, GTEQ en LTEQ zijn van toepassing op eigenschappen van lineair type, zoals LONG, DUBBEL en DATE.</em></p> </li>
     </ul> </td>
   </tr>
   <tr>
