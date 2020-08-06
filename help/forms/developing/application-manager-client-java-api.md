@@ -34,15 +34,15 @@ De volgende Java API Quick Start (SOAP) is beschikbaar voor de Application Manag
 
 [Snel starten (SOAP-modus): Status ophalen van toepassingen met Java API](application-manager-client-java-api.md#quick-start-soap-mode-getting-status-of-applications-using-java-api)
 
-[Snel starten (SOAP-modus):voorvertoning van de AEM Forms en het latere toepassingsarchief weergeven met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
+[Snel starten (SOAP-modus):voorvertoning van het AEM Forms- en latere toepassingsarchief weergeven met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api)
 
-[Snel starten (SOAP-modus):het archief van de AEM Forms-toepassing verwijderen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
+[Snel starten (SOAP-modus):het AEM Forms-toepassingsarchief verwijderen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-De verrichtingen van AEM Forms kunnen worden uitgevoerd gebruikend AEM Forms sterk-getypte API en de verbindingswijze zou aan ZEEP moeten worden geplaatst.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
 
 >[!NOTE]
 >
->Het snelle begin dat in Programmering met AEM Forms wordt gevestigd is gebaseerd op de Server die van Vormen op JBoss en het werkende systeem van Vensters wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss en het Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Toepassingsversie maken met de Java API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
@@ -444,7 +444,7 @@ public class GetApplication_SOAP {
 
 In het volgende Java-codevoorbeeld worden de toepassingen opgehaald met de Java API.
 
-***opmerking**: Het krijgen van de Toepassing API van AEM Forms, getApplications (), keert slechts opgestelde toepassingen terug. *
+***opmerking**: Als u de AEM Forms-toepassings-API ophaalt, getApplications(), wordt alleen geïmplementeerde toepassingen geretourneerd. *
 
 ```as3
 /* 
@@ -644,9 +644,9 @@ public class GetApplicationStatus_SOAP {
 }
 ```
 
-## Snel starten (SOAP-modus):voorvertoning weergeven van het toepassingsarchief van LiveCycle ES2 en hoger met de Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
+## Snel starten (SOAP-modus):voorvertoning van het toepassingsarchief van LiveCycle ES2 en hoger weergeven met de Java API {#quick-start-soap-mode-previewing-the-livecycle-es2-and-later-application-archive-using-the-java-api}
 
-Het volgende Java-codevoorbeeld is bedoeld voor het voorvertonen van AEM Forms en latere toepassingsarchieven met behulp van de Java API.
+Het volgende Java-codevoorbeeld is bedoeld voor het voorvertonen van het AEM Forms- en latere toepassingsarchief met de Java API.
 
 ```as3
 /* 
