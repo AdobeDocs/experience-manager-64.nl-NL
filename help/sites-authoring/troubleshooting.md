@@ -1,8 +1,8 @@
 ---
-title: AEM-probleem bij ontwerpen oplossen
-seo-title: AEM-probleem bij ontwerpen oplossen
-description: Sommige problemen die u kunt tegenkomen bij het gebruik van AEM
-seo-description: Sommige problemen die u kunt tegenkomen bij het gebruik van AEM
+title: Problemen met AEM bij ontwerpen oplossen
+seo-title: Problemen met AEM bij ontwerpen oplossen
+description: Sommige problemen die u bij het gebruik van AEM tegenkomt
+seo-description: Sommige problemen die u bij het gebruik van AEM tegenkomt
 uuid: 99af51ea-8628-4811-83f2-ab3f88f0279e
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,13 +11,16 @@ content-type: reference
 discoiquuid: da0a5644-2e1d-4394-a6aa-11bb41406ba6
 translation-type: tm+mt
 source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+workflow-type: tm+mt
+source-wordcount: '307'
+ht-degree: 10%
 
 ---
 
 
-# AEM-probleem bij ontwerpen oplossen{#troubleshooting-aem-when-authoring}
+# Problemen met AEM bij ontwerpen oplossen{#troubleshooting-aem-when-authoring}
 
-In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen bij het gebruik van AEM, samen met suggesties voor het oplossen van problemen met deze problemen.
+De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
 
 >[!NOTE]
 >
@@ -25,7 +28,7 @@ In de volgende sectie worden enkele problemen beschreven die u kunt tegenkomen b
 
 >[!NOTE]
 >
->De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in het [Oplossen van problemen AEM (voor Beheerders)](/help/sites-administering/troubleshoot.md)worden beschreven. Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over het oplossen van problemen met AEM.
+>De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in de AEM van het Oplossen van [problemen (voor Beheerders)](/help/sites-administering/troubleshoot.md)worden beschreven. Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
 
 ## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
 
