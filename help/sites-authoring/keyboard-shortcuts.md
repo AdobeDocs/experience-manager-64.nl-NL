@@ -11,17 +11,20 @@ content-type: reference
 discoiquuid: f5ab3f61-aa5a-49ae-a976-6ab7f0d11ea6
 translation-type: tm+mt
 source-git-commit: 02d043aaa51389aff658c287e11fe639b74fdcd0
+workflow-type: tm+mt
+source-wordcount: '391'
+ht-degree: 2%
 
 ---
 
 
 # Sneltoetsen voor consoles{#keyboard-shortcuts-for-consoles}
 
-Er zijn verschillende sneltoetsen beschikbaar in AEM. Sommige zijn van toepassing op het gebruik van consoles, andere op [paginabewerking](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing op het gebruik van consoles, andere op [paginabewerking](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->De [wijzigingstoetsen](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) die vereist zijn voor AEM-sneltoetsen variëren afhankelijk van het besturingssysteem.
+>Welke [wijzigingstoetsen](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) vereist zijn voor AEM sneltoetsen, is afhankelijk van het besturingssysteem.
 
 ## Sneltoetsen {#keyboard-shortcuts}
 
@@ -63,21 +66,21 @@ De moddertoetsen die voor de sneltoetsen worden gebruikt, zijn afhankelijk van h
 
 ## Browsers en sneltoetsen {#browsers-and-keyboard-shortcuts}
 
-AEM vermijdt algemene sneltoetsen die al door populaire browsers worden gebruikt, maar het standaardbrowsergedrag wordt niet overschreven door AEM-sneltoetsen.
+AEM vermijdt de algemene sneltoetsen die al door populaire browsers worden gebruikt, maar het standaardgedrag van de browser wordt niet overschreven door AEM sneltoetsen.
 
 Daarnaast zijn sneltoetsen voor alle landinstellingen en toetsenbordindelingen hetzelfde.
 
 >[!NOTE]
 >
->AEM-sneltoetsen overschrijven het standaardbrowsergedrag niet.
+>AEM sneltoetsen overschrijven het standaardbrowsergedrag niet.
 >
->In het geval dat er conflicten zouden moeten optreden tussen AEM- en browsersneltoetsen, werken AEM-sneltoetsen niet, wat de browserfunctionaliteit ten goede komt.
+>Als er conflicten optreden tussen AEM en de sneltoetsen in de browser, werken AEM sneltoetsen niet, wat de functionaliteit van de browser ten goede komt.
 
 >[!CAUTION]
 >
->AEM-sneltoetsen kunnen problemen opleveren met schermlezers, bepaalde browserfuncties en andere toegankelijkheidsfuncties.
+>AEM sneltoetsen kunnen problemen opleveren met schermlezers, bepaalde browserfuncties en andere toegankelijkheidsfuncties.
 >
->Adobe raadt u aan [om AEM-sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) uit te schakelen wanneer u een schermlezer gebruikt.
+>Adobe raadt u aan om [AEM sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) uit te schakelen wanneer u een schermlezer gebruikt.
 
 ## Sneltoetsen deactiveren {#deactivating-keyboard-shortcuts}
 
