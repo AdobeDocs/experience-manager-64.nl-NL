@@ -11,6 +11,9 @@ topic-tags: hTML5_forms
 discoiquuid: 5e344be7-46cd-4e1f-ae3a-1f89c645cffe
 translation-type: tm+mt
 source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+workflow-type: tm+mt
+source-wordcount: '636'
+ht-degree: 5%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
 
 HTML5-formulieren ondersteunen de XFA-afbeeldingscomponent voor de weergavewaarde en de opgemaakte waarde voor datum, tekst en numerieke symbolen. De volgende uitdrukkingen van de Beeldclausule worden gesteund:
 
-* category (locale){picture-clause}| category(locale){picture-clause}| category(locale){picture-clause}
+* category (locale){picture-clause} | category(locale){picture-clause} | category(locale){picture-clause}
 * category.subcategory{}
 
 >[!NOTE]
@@ -92,19 +95,19 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
 
 ## Numerieke afbeeldingsclausule {#numeric-picture-clause}
 
-HTML5-formulieren ondersteunen numerieke afbeeldingssymbolen. Er is echter een verschil in ondersteuning tussen PDF-formulieren en HTML-formulieren.
+HTML5-formulieren ondersteunen numerieke afbeeldingssymbolen. Er is echter een verschil in ondersteuning tussen PDF forms en HTML Forms.
 
-In **PDF-formulieren** wordt een getal opgemaakt, ongeacht het aantal symbolen in de afbeeldingscomponent
+In **PDF forms** wordt een getal opgemaakt, ongeacht het aantal symbolen in de Fotocomponent
 
-In **HTML-formulieren** wordt een getal alleen opgemaakt als het getal cijfers bevat die kleiner zijn dan het aantal symbolen in de afbeeldingscomponent.
+In **HTML Forms** wordt een getal alleen opgemaakt als het getal cijfers bevat die kleiner zijn dan het aantal symbolen in de Fotocomponent.
 
 **Voorbeeld**: Neem bijvoorbeeld een afbeeldingsvoorwaarde: num{zzz,zzz,zz9}.
 
-Het nummer **10000** is opgemaakt als **10.000** in zowel HTML- als PDF-formulieren.
+Het getal **10000** wordt opgemaakt als **10.000** in zowel HTML als PDF forms.
 
-Het getal 1000000 wordt geformatteerd als 1000,000 in PDF-formulieren. In HTML Forms blijft het getal echter niet opgemaakt als 1000000.
+Het getal 1000000 wordt opgemaakt als 1000.000 in PDF forms. In HTML Forms blijft het getal echter niet opgemaakt als 1000000.
 
-Ondersteunde expressies voor de component Numerieke afbeelding in **HTML-formulieren** zijn:
+Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn:
 
 * num.integer{}
 * num.decimal{}
