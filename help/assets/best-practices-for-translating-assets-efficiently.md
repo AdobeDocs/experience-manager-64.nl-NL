@@ -4,13 +4,16 @@ description: Aanbevolen procedures voor efficiënt beheer van middelen om versch
 contentOwner: AG
 translation-type: tm+mt
 source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+workflow-type: tm+mt
+source-wordcount: '501'
+ht-degree: 0%
 
 ---
 
 
 # Aanbevolen procedures om middelen efficiënt te vertalen {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager-middelen (AEM) ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale elementen naar meerdere landinstellingen te vertalen en de vertaalde elementen te beheren. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
+Adobe Experience Manager (AEM)-middelen ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
 
 Voor efficiënt beheer van middelen om ervoor te zorgen dat verschillende vertaalde versies gesynchroniseerd blijven, creeer [taalexemplaren](preparing-assets-for-translation.md) van activa alvorens vertaalwerkschema&#39;s in werking te stellen.
 
@@ -35,11 +38,11 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
 
    >[!NOTE]
    >
-   >Als u de terugschrijfworkflow voor *DAM MetaData Writeback* uitschakelt, wordt het terugschrijven van XMP-metagegevens naar binaire bestanden voor middelen uitgeschakeld. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
+   >Als u de *DAM MetaData-terugschrijfworkflow* uitschakelt, worden XMP metagegevens teruggezet op binaire elementen. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
 
 1. Schakel de workflow *Laatste gewijzigde datum* instellen in.
 
-   De *DAM-workflow MetaData Writeback* configureert de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, kunnen AEM-elementen de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de workflow Laatste gewijzigde datum ** instellen in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
+   De *DAM-workflow MetaData Writeback* configureert de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, kan AEM Assets de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de workflow Laatste gewijzigde datum ** instellen in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
 
 1. [Configureer het vertaalintegratieframework](/help/sites-administering/tc-tic.md) om te stoppen met het vertalen van binaire elementen. Schakel de optie Vertaalactiva uit onder het tabblad Elementen om de vertaling van binaire middelen te stoppen.
 1. Metagegevens/tags van elementen vertalen met behulp van [meertalige bedrijfsmiddelenworkflows](multilingual-assets.md).
