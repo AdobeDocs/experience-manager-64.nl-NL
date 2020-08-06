@@ -11,6 +11,9 @@ content-type: reference
 discoiquuid: 00f7ed25-276b-42c2-ae4c-11de357a9ec6
 translation-type: tm+mt
 source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
+workflow-type: tm+mt
+source-wordcount: '502'
+ht-degree: 0%
 
 ---
 
@@ -22,24 +25,24 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 1. Maak een (tijdelijke) verwijzing naar een representatief model. Zo kunt u de belichting gemakkelijker evalueren, camera&#39;s instellen en de renderer configureren.
 1. Op afbeeldingen gebaseerde belichting instellen.
 
-   1. Selecteer bij Renderinstellingen de optie **[!UICONTROL Renderen met: mentale straal]** en open het tabblad **[!UICONTROL Scène]** .
-   1. Open de accordeon **[!UICONTROL Omgeving]** en klik vervolgens op **[!UICONTROL Afbeeldingsgebaseerde belichting]** maken.
-   1. Klik op het vakpictogram met een pijl naar rechts links in het vak om het IBL-knooppunt te selecteren `mentalRayIblShape1`en sluit vervolgens het pictogram [!UICONTROL Renderinstellingen]af.
-   1. In de Redacteur **[!UICONTROL van]** Attributen, selecteer de transformatieknoop `mentalRayIbl1`, dan noem de transformatieknoopknoop aan `AdobeIbl`.
+   1. Selecteer bij Renderinstellingen **[!UICONTROL Render Using: mental ray]** de **[!UICONTROL Scene]** tab en open deze.
+   1. Open de **[!UICONTROL Environment]** accordeon en klik op **[!UICONTROL Create Image Based Lighting]**.
+   1. Klik op het vakpictogram met een pijl naar rechts links in het vak om het IBL-knooppunt te selecteren `mentalRayIblShape1`en sluit het [!UICONTROL Render Settings]vak vervolgens af.
+   1. In **[!UICONTROL Attribute Editor]**, selecteer de transformatieknoop `mentalRayIbl1`, dan noem de transformatieknooppunt anders aan `AdobeIbl`.
 
-   1. Stel de [!UICONTROL schaal] van het knooppunt in om de omgevingssfeer aanzienlijk groter te maken dan het grootste 3D-object dat met dit werkgebied moet worden weergegeven (bijvoorbeeld `10000,10000,10000`).
+   1. Stel de waarde [!UICONTROL Scale] van het knooppunt zodanig in dat de omgevingssfeer aanzienlijk groter wordt dan het grootste 3D-object dat met dit werkgebied moet worden weergegeven (bijvoorbeeld `10000,10000,10000`).
    1. Selecteer het `AdobeIblShape` knooppunt en configureer het als volgt:
 
-      * **[!UICONTROL Toewijzing]** , bolvormig
-      * **[!UICONTROL Type]** - afbeeldingsbestand
-      * **[!UICONTROL Licht]** plaatsen - waar
+      * **[!UICONTROL Mapping]** - Bolvormig
+      * **[!UICONTROL Type]** - Afbeeldingsbestand
+      * **[!UICONTROL Emit Light]** - waar
    1. Koppel de gewenste 32-bits TIFF-afbeelding aan het `AdobeIbl` knooppunt.
 
 
 1. Stel het grondvlak in.
 
    * Maak een geschikt vlak voor gebruik als grondvlak en pas het aan de IBL-bol aan, waarbij het door de oorsprong van de coördinaten loopt.
-   * Koppel achtergrondmateriaal **[!UICONTROL gebruiken]** aan het grondvlak en noem het materiaal `AdobeUseBackground` en koppel het aan het grondvlakobject.
+   * Bevestig een **[!UICONTROL Use Background]** materiaal aan het grondvlak en noem het `AdobeUseBackground` en koppel het aan het grondvlakvoorwerp.
 
 1. (Optioneel) Maak en configureer camera&#39;s.
 
@@ -47,27 +50,27 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
 1. Rendering instellen met Mental Ray.
 
-   Configureer de [!UICONTROL renderinstellingen] met de volgende suggesties.
+   Configureer de toepassing [!UICONTROL Render Settings] met de volgende suggesties.
 
-   * **[!UICONTROL Algemeen]** tabblad
+   * **[!UICONTROL Common]** tab
 
-      Schakel het selectievakje **[!UICONTROL Alfakanaal (masker)]** voor alle renderbare camera&#39;s uit.
+      Schakel het **[!UICONTROL Alpha channel (mask)]** selectievakje voor alle renderbare camera&#39;s uit.
 
-   * **[!UICONTROL Het tabblad Kwaliteit]**
+   * **[!UICONTROL Quality]** tab
 
-      * **[!UICONTROL Algemene kwaliteit]** - `0.5` of minder
-      * **[!UICONTROL Modus]** Indirect onscherp - `Final Gather`
-      * **[!UICONTROL Filtergrootte]** - `2.0`, `2.0`
+      * **[!UICONTROL Overall quality]** - `0.5` of minder
+      * **[!UICONTROL Indirect Diffuse (GI) Mode]** - `Final Gather`
+      * **[!UICONTROL Filter Size]** - `2.0`, `2.0`
    * Render de scène op de standaardafbeeldingsformaten die u wilt gebruiken. Verfijn indien nodig de lichten, Renderinstellingen of beide om de gewenste resultaten te bereiken.
 
-      Houd er rekening mee dat rendering met Mental Ray met behulp van op afbeeldingen gebaseerde belichting erg langzaam en CPU-intensief is. Adobe raadt u aan de instellingen voor de laagste kwaliteit te configureren die nog steeds de gewenste renderkwaliteit kunnen produceren.
+      Houd er rekening mee dat rendering met Mental Ray met behulp van op afbeeldingen gebaseerde belichting erg langzaam en CPU-intensief is. Adobe raadt u aan de laagste kwaliteitsinstellingen te configureren die nog steeds de gewenste renderkwaliteit kunnen produceren.
 
 
 1. Verwijder de verwijzing die u in stap 2 hebt gemaakt.
 
 1. Sla de scène op en sluit Autodesk Maya af.
 
-1. Upload de scène en de IBL PTIFF naar AEM en wacht tot het uploaden is voltooid.
+1. Upload de scène en IBL PTIFF naar AEM en wacht tot de uploadverwerking is voltooid.
 
    Zie Elementen [uploaden](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
@@ -77,7 +80,7 @@ source-git-commit: e0ce860380a28a9dcaa6f8ce94ad278cdbe49fad
 
    AEM 3D kan mogelijk het IBL-beeld dat in het werkgebied is geconfigureerd, niet detecteren. In dergelijke situaties, moet u de ontbrekende gebiedsdelen manueel oplossen. U kunt dezelfde eerder geüploade IBL PTIFF-afbeelding toewijzen voor elk van de ontbrekende afhankelijkheden. U kunt ook verschillende afbeeldingen toewijzen om de IBL-effecten verder te beheren. Nadat u de afhankelijkheden hebt opgelost, moet u op **Opslaan** tikken om de verwerking te starten.
 
-1. Eigenschappen van element openen in AEM. Stel Titel in op een geschikte tekenreeks die wordt weergegeven in de vervolgkeuzelijst Werkgebiedkiezer. Controleer of **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D-werkgebied]**. Opslaan en afsluiten.
+1. Elementeigenschappen openen in AEM. Stel Titel in op een geschikte tekenreeks die wordt weergegeven in de vervolgkeuzelijst Werkgebiedkiezer. Controleer of dit **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D Stage]**. Opslaan en afsluiten.
 
 1. Open een 3D-element, selecteer het nieuwe werkgebied en controleer of het naar behoren wordt weergegeven en weergegeven.
 
