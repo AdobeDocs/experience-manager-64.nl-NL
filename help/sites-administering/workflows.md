@@ -1,8 +1,8 @@
 ---
 title: Workflows beheren
 seo-title: Workflows beheren
-description: Leer hoe u workflows beheert in AEM.
-seo-description: Leer hoe u workflows beheert in AEM.
+description: Leer hoe u workflows in AEM beheert.
+seo-description: Leer hoe u workflows in AEM beheert.
 uuid: d000a13c-97cb-4b1b-809e-6c3eb0d675e8
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -11,22 +11,25 @@ content-type: reference
 discoiquuid: 4b09cd44-434e-4834-bc0d-c9c082a4ba5a
 translation-type: tm+mt
 source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+workflow-type: tm+mt
+source-wordcount: '773'
+ht-degree: 0%
 
 ---
 
 
 # Workflows beheren{#administering-workflows}
 
-Met workflows kunt u activiteiten van Adobe Experience Manager (AEM) automatiseren. Workflows:
+Met workflows kunt u Adobe Experience Manager-activiteiten (AEM) automatiseren. Workflows:
 
 * Bestaat uit een reeks stappen die in een specifieke volgorde worden uitgevoerd.
 
    * Elke stap voert een afzonderlijke activiteit uit; bijvoorbeeld wachten op invoer van de gebruiker, een pagina activeren of een e-mailbericht verzenden.
 
-* Kan communiceren met middelen in de gegevensopslagruimte, gebruikersaccounts en AEM-services.
-* Kan ingewikkelde activiteiten coördineren die elk aspect van AEM impliceren.
+* Kan communiceren met middelen in de gegevensopslagruimte, gebruikersaccounts en AEM services.
+* Kan ingewikkelde activiteiten coördineren die elk aspect van AEM omvatten.
 
-De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#39;s worden vertegenwoordigd. Het publicatieproces van website-inhoud omvat bijvoorbeeld doorgaans stappen zoals goedkeuring en aftekening door verschillende belanghebbenden. Deze processen kunnen worden geïmplementeerd als AEM-workflows en worden toegepast op inhoudspagina&#39;s en elementen.
+De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#39;s worden vertegenwoordigd. Het publicatieproces van website-inhoud omvat bijvoorbeeld doorgaans stappen zoals goedkeuring en aftekening door verschillende belanghebbenden. Deze processen kunnen worden geïmplementeerd als AEM workflows en worden toegepast op inhoudspagina&#39;s en elementen.
 
 * [Workflows starten](/help/sites-administering/workflows-starting.md)
 * [Workflowinstanties beheren](/help/sites-administering/workflows-administering.md)
@@ -36,23 +39,24 @@ De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#3
 >
 >Zie voor meer informatie:
 >
->* Workflows toepassen en deelnemen aan workflows: Werken [met workflows](/help/sites-authoring/workflows.md).
->* Workflowmodellen maken en workflowfunctionaliteit uitbreiden: Workflows [ontwikkelen en uitbreiden](/help/sites-developing/workflows.md).
+>* Workflows toepassen en deelnemen aan workflows: [Werken met workflows](/help/sites-authoring/workflows.md).
+>* Workflowmodellen maken en workflowfunctionaliteit uitbreiden: [Workflows](/help/sites-developing/workflows.md)ontwikkelen en uitbreiden.
 >* De prestaties verbeteren van workflows die gebruikmaken van aanzienlijke serverresources: [Gelijktijdige workflowverwerking](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
+
 >
 
 
 
 ## Workflowmodellen en -instanties {#workflow-models-and-instances}
 
-[De modellen](/help/sites-developing/workflows.md#model) van het werkschema in AEM zijn de vertegenwoordiging en de implementatie van bedrijfsprocessen:
+[De modellen](/help/sites-developing/workflows.md#model) van het werkschema in AEM zijn de vertegenwoordiging en implementatie van bedrijfsprocessen:
 
 * Doorgaans handelen ze op pagina&#39;s of elementen om een specifiek resultaat te bereiken.
 * Deze pagina&#39;s en/of middelen worden de werkstroomlading genoemd.
 * De modellen van het werkschema bestaan uit een reeks stappen die een specifieke taak uitvoeren.
 * De lading wordt overgegaan van stap tot stap aangezien het werkschema vordert.
 
-Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstantie gemaakt. Een workflowmodel kan meerdere keren worden gestart, telkens wanneer een specifieke workflowinstantie wordt gegenereerd. Voor elke instantie worden de stappen uitgevoerd die in het workflowmodel worden gedefinieerd.
+Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstantie gemaakt. Een workflowmodel kan meerdere keren worden gestart, telkens wanneer een afzonderlijke werkstroominstantie wordt gegenereerd. Voor elke instantie worden de stappen uitgevoerd die in het workflowmodel worden gedefinieerd.
 
 >[!CAUTION]
 >
@@ -64,14 +68,14 @@ De instanties van het werkschema vorderen door de volgende levenscyclus:
 
    1. De lading van de werkschemainstantie wordt geïdentificeerd wanneer het model wordt begonnen.
    1. De instantie is in feite een kopie van het model (zoals op het moment van het maken).
-   1. AEM-auteurs, -beheerders of -services kunnen workflowmodellen starten.
+   1. AEM auteurs, beheerders of services kunnen workflowmodellen starten.
 
 1. De eerste stap van het workflowmodel wordt uitgevoerd.
 1. De stap is voltooid en de workflowengine gebruikt het model om te bepalen welke volgende stap moet worden uitgevoerd.
 1. De volgende stappen in het workflowmodel worden uitgevoerd en voltooid.
 1. Wanneer de laatste stap is voltooid, wordt de werkstroominstantie voltooid en daarom gearchiveerd.
 
-Bij AEM worden veel nuttige workflowmodellen geleverd. Bovendien kunnen de ontwikkelaars in uw organisatie modellen van het douanewerkschema tot stand brengen, die aan de specifieke behoeften van uw bedrijfsprocessen worden aangepast.
+Veel handige workflowmodellen worden AEM. Bovendien kunnen de ontwikkelaars in uw organisatie modellen van het douanewerkschema tot stand brengen, die aan de specifieke behoeften van uw bedrijfsprocessen worden aangepast.
 
 ## Workflowstappen {#workflow-steps}
 
