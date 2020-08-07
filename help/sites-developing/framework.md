@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 4b680d17-383b-4173-a444-0b7bdb24e6c8
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1908'
 ht-degree: 0%
@@ -233,14 +233,20 @@ Hieronder volgt een beschrijving van de effecten in de opslagplaats bij het verp
 
    Een speciale waarde voor de `cq:movedTo` eigenschap is `nirvana`: wordt toegepast wanneer de tag wordt verwijderd, maar niet kan worden verwijderd uit de repository omdat er subtags zijn met een `cq:movedTo` die moet worden bewaard.
 
-   >[!NOTE]De `cq:movedTo` eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
+   >[!NOTE]
+   >
+   >De `cq:movedTo` eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
+   >
    >1. De tag wordt gebruikt in inhoud (wat betekent dat deze een referentie heeft) OR
    >1. De tag bevat onderliggende elementen die al zijn verplaatst.
 
 
 * `cq:backlinks` houdt de verwijzingen in de andere richting, d.w.z. het houdt een lijst bij van alle markeringen die zijn verplaatst naar of samengevoegd met markering B. Dit is vooral nodig om de `cq:movedTo`eigenschappen up-to-date te houden wanneer tag B ook wordt verplaatst/samengevoegd/verwijderd of als tag B wordt geactiveerd. In dat geval moeten alle tags voor de achtergrond ook worden geactiveerd.
 
->[!NOTE]De `cq:backlinks` eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
+>[!NOTE]
+>
+>De `cq:backlinks` eigenschap wordt alleen aan de verplaatste of samengevoegde tag toegevoegd als aan een van deze voorwaarden wordt voldaan:
+>
 >1. De tag wordt gebruikt in inhoud (wat betekent dat deze een referentie heeft) OR
 >1. De tag bevat onderliggende elementen die al zijn verplaatst.
 
