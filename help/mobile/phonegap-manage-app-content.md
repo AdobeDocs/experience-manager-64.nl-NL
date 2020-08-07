@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 5c8971ab-b07c-4131-b4cb-f34c52425014
 translation-type: tm+mt
 source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+workflow-type: tm+mt
+source-wordcount: '742'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Voor het beheren van app-inhoud is een gezamenlijke inspanning van [ontwikkelaars](#developer), [auteurs](#author) van inhoud en [beheerders](#administrator)vereist. Auteurs manipuleren pagina&#39;s, die op hun beurt gebaseerd zijn op sjablonen en componenten die door ontwikkelaars van apps worden gegenereerd.
 
@@ -29,7 +32,7 @@ Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 >
 >**Vereiste**:
 >
->Bij het [Opstellen en het Onderhouden](/help/sites-deploying/deploy.md), werden de ontwikkelaars vertrouwd met het systeem van componenten en malplaatjes van AEM.
+>Bij het [Opstellen en het Onderhouden](/help/sites-deploying/deploy.md), werden de ontwikkelaars vertrouwd met AEM systeem van componenten en malplaatjes.
 
 ## De pagina-inhoudtegel beheren {#the-manage-page-content-tile}
 
@@ -39,7 +42,7 @@ Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 >
 >Zie [Mobiel met inhoudssynchronisatie](/help/mobile/phonegap-contentsync.md) in de sectie Ontwikkelaar voor meer informatie.
 
-Hier kan inhoud worden gemaakt, bewerkt en verwijderd in AEM Mobile, net als in AEM-sites.
+Hier kunt u inhoud maken, bewerken en verwijderen in AEM Mobile, net als in AEM Sites.
 
 In de tegel **Pagina-inhoud** beheren wordt het aantal pagina&#39;s met beheerde inhoud weergegeven en het laatst gewijzigd voor een bepaalde lading. U kunt inhoud inchecken om pagina&#39;s te maken, kopiëren, verplaatsen, verwijderen en bijwerken door op elke record in de tegel te klikken.
 
@@ -51,15 +54,15 @@ Selecteer een van de weergegeven inhoudspakketten om inhoud te maken of te bewer
 
 Houd er rekening mee dat *alles inhoud* is, wat betekent dat toepassingsstijlen, kopiëren (tekst), media, pagina&#39;s, navigatie en doelversie van inhoud kunnen worden bewerkt en bijgewerkt, zonder dat er een trip naar een App Store plaatsvindt.
 
-*Voor het bewerken van AEM Mobile-inhoud hebben *AEM-auteurs *een gedegen inzicht nodig in de interface voor het bewerken van inhoud van AEM: Pagina&#39;s [ontwerpen in AEM.](/help/sites-authoring/qg-page-authoring.md)
+Voor het bewerken van AEM Mobile-inhoud hebben *AEM auteurs *een gedegen kennis nodig van de interface voor het bewerken van AEM inhoud: [Ontwerppagina&#39;s in AEM.](/help/sites-authoring/qg-page-authoring.md)
 
 ## De tegel Inhoud-pakketten beheren {#the-manage-content-packages-tile}
 
-Hier kunnen *AEM-beheerders* hun apps snel en eenvoudig bijwerken om aantrekkelijke ervaringen en actuele inhoud te bieden, zodat ze de betrokkenheid van merken kunnen stimuleren en zakelijke doelen kunnen halen, zonder dat een ontwikkelaar of app store opnieuw hoeft te worden ingediend.
+Hier kunnen *AEM beheerders* hun apps snel en eenvoudig bijwerken om aantrekkelijke ervaringen en actuele inhoud te bieden om de betrokkenheid van merken te stimuleren en zakelijke doelen te halen, zonder dat een ontwikkelaar of App Store opnieuw hoeft te worden ingediend.
 
 ![chlimage_1-162](assets/chlimage_1-162.png)
 
-Zodra *AEM-auteurs* inhoud hebben toegevoegd of gewijzigd via de Content Tile beheren, kunnen *AEM-beheerders* deze wijzigingen doorsturen naar klanten met een Content Packages-update.
+Als *AEM-auteurs* eenmaal inhoud hebben toegevoegd of gewijzigd via de Content Tile beheren, kunnen *AEM beheerders* deze wijzigingen doorsturen naar klanten met een Content Packages-update.
 
 Met de actie Content Package kan de *AEM-auteur* pagina-inhoud maken en bewerken, terwijl het ontwikkelingsteam wijzigingen aanbrengt in het ontwerp en de implementatie van een hosttoepassing, zoals navigatie, stijl, logica aan de serverzijde, sjablonen en componenten, en deze wijzigingen vervolgens naar klanten verstuurt zonder opnieuw naar de verschillende winkels te moeten verzenden voor distributie.
 
@@ -79,9 +82,9 @@ Door een update van de inhoud te organiseren, kunnen verschillende updates worde
 
 >[!NOTE]
 >
->De gefaseerde inhoud kan worden geverifieerd met de app AEM Verify voordat deze wordt gepubliceerd.
+>De gefaseerde inhoud kan worden geverifieerd met de app AEM verifiëren voordat deze wordt gepubliceerd.
 >
->Zie [Mobile Quickstart voor AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) voor meer informatie over de app AEM Verify.
+>Zie [Mobile Quickstart voor AEM Verify](/help/mobile/phonegap-mobile-quickstart.md) voor meer informatie over AEM Verify-app.
 
 ![chlimage_1-165](assets/chlimage_1-165.png)
 
@@ -99,7 +102,7 @@ Nadat u informatie hebt gekregen over het maken en beheren van App-inhoud in het
 * [Een nieuwe app maken met de wizard App maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-### Additional Resources {#additional-resources}
+### Aanvullende bronnen {#additional-resources}
 
 Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ontwikkelaar vindt u in de volgende bronnen:
 
