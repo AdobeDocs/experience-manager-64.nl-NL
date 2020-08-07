@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 4b05b24a91ba9c31a19a5a96fb481d2ffc4c9bfc
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -59,7 +59,7 @@ ht-degree: 0%
 
       * **Algemene kwaliteit** - `0.5` of minder
       * **Modus** Indirect onscherp - `Final Gather`
-      * &quot;**Filtergrootte** - `2.0`, `2.0`
+      * **Filtergrootte** - `2.0`, `2.0`
    * Render de scène op de standaardafbeeldingsformaten die u wilt gebruiken. Verfijn indien nodig de lichten, Renderinstellingen of beide om de gewenste resultaten te bereiken.
 
       Houd er rekening mee dat rendering met Mental Ray met behulp van op afbeeldingen gebaseerde belichting erg langzaam en CPU-intensief is. Adobe raadt u aan de laagste kwaliteitsinstellingen te configureren die nog steeds de gewenste renderkwaliteit kunnen produceren.
