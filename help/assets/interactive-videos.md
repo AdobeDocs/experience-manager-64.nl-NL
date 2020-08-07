@@ -8,7 +8,7 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
 translation-type: tm+mt
-source-git-commit: 4d1c3bcc4262781d7032273504ccf41e36f5c3a5
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '5933'
 ht-degree: 4%
@@ -111,7 +111,7 @@ Als uw implementatie van AEM eCommerce gebruikt, kunt u deze taak overslaan en a
 
 Begin door dynamische variabelen te identificeren die door uw bestaande implementatie van QuickView worden gebruikt zodat u productduimnagels aan hun overeenkomstige productSnelle mening tijdens het interactieve videoaanmaakproces kunt in kaart brengen.
 
-Wanneer u tijdsegmenten aan een video toevoegt, wijst u SKU en om het even welke extra variabelen aan elke duimnagel toe u aan een segment toevoegt. Dergelijke variabelen worden later gebruikt om het juiste product van de Snelle mening te tonen.
+Wanneer u tijdsegmenten aan een video toevoegt, wijst u SKU en om het even welke extra variabelen aan elke duimnagel toe u aan een segment toevoegt. Dergelijke variabelen worden later gebruikt om het juiste product van de QuickView te tonen.
 
 Het is belangrijk om behoorlijk te identificeren welke variabelen worden vereist om een productQuickView uniek teweeg te brengen.
 
@@ -334,7 +334,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
    Ter illustratie gebruiken de volgende drie schermafbeeldingen dezelfde video. De breedte van elk segment wordt afhankelijk van de **[!UICONTROL Timeline Scale]** instelling aangepast.
 
-   ![chlimage_1-127](assets/chlimage_1-129.png)
+   ![chlimage_1-129](assets/chlimage_1-129.png)
 
    Schermafbeelding A
 
