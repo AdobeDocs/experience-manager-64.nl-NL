@@ -11,6 +11,9 @@ topic-tags: developing-on-demand-services-app
 discoiquuid: a3006835-b1d2-47d6-959a-cdb692e34e1e
 translation-type: tm+mt
 source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
+workflow-type: tm+mt
+source-wordcount: '344'
+ht-degree: 1%
 
 ---
 
@@ -19,9 +22,9 @@ source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-Apps worden weergegeven als *cq:Pages* in AEM.
+Apps worden weergegeven als *cq:Pagina* &#39;s in AEM.
 
 Ze delen dezelfde algemene eigenschappen die in elke *cq:Page* worden gevonden, naast de hieronder getoonde eigenschappen die integratie ondersteunen.
 
@@ -39,7 +42,7 @@ In de volgende tabel staan de eigenschappen en knooppunten van de **app**.
   <tr>
    <td>dps-cloudConfig</td>
    <td>String:Path</td>
-   <td><p>Pad naar een geconfigureerde Mobile On-Demand Cloud Service. Wordt gebruikt voor AEM Mobile naar Mobile On-Demand-handelingen (API-aanroep)</p> <p>Deze koppeling wordt geconfigureerd via de tegel Verbinding beheren wanneer een auteur een Mobile On-Demand Cloud Service kiest om de app aan te koppelen.</p> </td>
+   <td><p>Pad naar een geconfigureerde Mobile On-Demand Cloud Service. Wordt gebruikt voor acties van AEM Mobile naar Mobile On-Demand (API-aanroep)</p> <p>Deze koppeling wordt geconfigureerd via de tegel Verbinding beheren wanneer een auteur een Cloud Service Mobiel op aanvraag kiest om de app aan te koppelen.</p> </td>
   </tr>
   <tr>
    <td>dps-exportTemplate</td>
@@ -49,7 +52,7 @@ In de volgende tabel staan de eigenschappen en knooppunten van de **app**.
   <tr>
    <td>dps-projectId</td>
    <td>Tekenreeks</td>
-   <td><p>Id/URI van het Mobile On-Demand-project waaraan deze app is gekoppeld of gekoppeld.</p> <p>Deze koppeling wordt geconfigureerd via de beheertegel Verbinding wanneer een auteur het project kiest uit een lijst met beschikbare projecten voor de bijbehorende Mobile On-Demand Cloud Service.</p> </td>
+   <td><p>Id/URI van het Mobile On-Demand-project waaraan deze app is gekoppeld of gekoppeld.</p> <p>Deze vereniging wordt gevormd via de Manage tegel van de Verbinding wanneer een auteur het project van een lijst van beschikbare projecten voor de bijbehorende Mobiele Cloud Service On-Demand kiest.</p> </td>
   </tr>
   <tr>
    <td>dps-projectTitle</td>
