@@ -3,7 +3,7 @@ title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '701'
 ht-degree: 13%
@@ -47,7 +47,7 @@ Voor sommige AEM Assets-componenten zijn JS-functies vereist die in `component.j
 <script type="text/javascript" src="<%= component.getPath() %>/component.js"></script>
 ```
 
-In het voorbeeld wordt deze javascript-bron geladen in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
+In het voorbeeld wordt deze JavaScript-bron geladen in `head.jsp`(`/apps/geometrixx/components/asseteditor/head.jsp`).
 
 ### Aanvullende stijlbladen {#additional-style-sheets}
 
