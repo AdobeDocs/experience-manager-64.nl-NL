@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '9161'
 ht-degree: 0%
@@ -164,7 +164,7 @@ AEM Forms on OSGi biedt op formulieren gebaseerde workflows waarmee u adaptieve 
 
 In de volgende afbeelding ziet u de AEM die de creditcardtoepassing verwerkt en een PDF-uitvoer van de toepassing genereert.
 
-![werkstroom](assets/workflow.png)
+![workflow](assets/workflow.png)
 
 #### Zie het zelf {#see-it-yourself-2}
 
@@ -305,7 +305,10 @@ Voer de volgende stappen uit om de creatie van A/B test voor Wij.Finance de toep
 1. Open het formulier nu diverse keren in de chroombrowser met behulp van de volgende URL:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/cc-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
+
+   >[!NOTE]
+   >
+   >Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
 
 1. Selecteer het formulier, klik op **Meer** en klik op **Testrapport** A/B. U vindt niet veel gegevens in het rapport omdat u net met het testen bent begonnen. Laten we nu enkele zaadgegevens leveren om te zien hoe een A/B-testrapport eruit ziet.
 
@@ -552,13 +555,19 @@ Voer de volgende stappen in de auteurinstantie uit om de verwezenlijking van A/B
 1. Open het formulier nu diverse keren in de chroombrowser met behulp van de volgende URL:
 
    `https://[hostname]:[port]/content/dam/formsanddocuments/we-finance/hm-app/jcr:content?wcmmode=disabled`
-   >[!NOTE] Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
+
+   >[!NOTE]
+   >
+   >Verwijder de cookie met de naam **mbox** van de browsercookie voordat u het formulier de volgende keer opent. U ziet willekeurig A en B van het formulier.
 
 1. Selecteer het formulier, klik op **Meer** en klik op **Testrapport** A/B. U vindt niet veel gegevens in het rapport omdat u net met het testen bent begonnen. Laten we nu enkele zaadgegevens leveren om te zien hoe een A/B-testrapport eruit ziet.
 
 1. Open CRXDE Lite en maak een back-up van het volgende bestand: /libs/fd/fmaddon/gui/components/admin/targetreport/clientlibs/targetreport/js/targetreport.js
 1. Vervang de definitie van de `onReportLoadSuccess` functie in het bovenstaande bestand door de functiedefinitie in het volgende bestand: /apps/we-finance/demo-artifacts/targetreport.js
-   >[!NOTE] Deze wijzigingen gelden alleen voor demo-doeleinden. Zorg ervoor dat u de bestandsinhoud herstelt nadat u deze procedure hebt voltooid.
+
+   >[!NOTE]
+   >
+   >Deze wijzigingen gelden alleen voor demo-doeleinden. Zorg ervoor dat u de bestandsinhoud herstelt nadat u deze procedure hebt voltooid.
 
 1. Vernieuw het rapport dat u hebt gegenereerd en u ziet iets als het volgende. Controleer het rapportdashboard.
 
