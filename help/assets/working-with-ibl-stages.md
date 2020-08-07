@@ -10,7 +10,7 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 658ff671-16b9-41bd-ba24-b77a32b3346b
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
 workflow-type: tm+mt
 source-wordcount: '841'
 ht-degree: 0%
@@ -37,7 +37,7 @@ Hoewel één HDR-afbeelding vaak voldoende is voor IBL-fasen, biedt AEM 3D extra
 
 * **Afbeelding** met onscherpe belichting - Dit type afbeelding moet een HDR-afbeelding zijn, maar kan relatief klein zijn, omdat de afbeelding sterk wordt gefilterd voordat deze wordt gebruikt voor diffuse belichting.
 * **Afbeelding** reflectieomgeving - Dit type afbeelding wordt gebruikt om reflecties te maken op objectoppervlakken. Dit kan een standaard 8-bits RGB-afbeelding met een grootte en resolutie zijn die de gewenste kwaliteit en scherpte van reflecties biedt. Als een HDR-afbeelding is opgegeven, zet AEM 3D deze om in 8-bits RGB voordat een eigen algoritme wordt gebruikt.
-* **Omgevingsafbeelding** op de achtergrond - Dit type afbeelding wordt gebruikt als achtergrond. Dit kan een standaard 8-bits RGB-afbeelding zijn en moet een formaat/resolutie/detailniveau hebben dat u voor de achtergrond van het werkgebied wilt gebruiken. Als een HDR-afbeelding is opgegeven, zet AEM 3D deze om in 8-bits RGB met behulp van een eigen algoritme. &quot;
+* **Omgevingsafbeelding** op de achtergrond - Dit type afbeelding wordt gebruikt als achtergrond. Dit kan een standaard 8-bits RGB-afbeelding zijn en moet een formaat/resolutie/detailniveau hebben dat u voor de achtergrond van het werkgebied wilt gebruiken. Als een HDR-afbeelding is opgegeven, zet AEM 3D deze om in 8-bits RGB met behulp van een eigen algoritme.
 
 >[!NOTE]
 >
