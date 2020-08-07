@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6fdce35d-2709-41cc-87fb-27a4b867e960
 translation-type: tm+mt
-source-git-commit: 9bfd332b419f0d4e180a7db2545e8434f37c683b
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
 source-wordcount: '1175'
 ht-degree: 0%
@@ -198,22 +198,22 @@ Lees de bovenstaande [algemene beschrijving](#general-description) voor een impl
    * Tomcat biedt geen toegang voor beheerders of beheerders bij de installatie. Daarom moet u manueel uitgeven `tomcat-users.xml` om toegang voor deze rekeningen toe te staan:
 
       * Bewerk `tomcat-users.xml` om toegang voor beheerder en manager op te nemen. De configuratie zou gelijkaardig aan het volgende voorbeeld moeten kijken:
-      * 
 
-         ```
-         <?xml version='1.0' encoding='utf-8'?>
-          <tomcat-users>
-          <role rolename="manager"/>
-          <role rolename="tomcat"/>
-          <role rolename="admin"/>
-          <role rolename="role1"/>
-          <role rolename="manager-gui"/>
-          <user username="both" password="tomcat" roles="tomcat,role1"/>
-          <user username="tomcat" password="tomcat" roles="tomcat"/>
-          <user username="admin" password="admin" roles="admin,manager-gui"/>
-          <user username="role1" password="tomcat" roles="role1"/>
-          </tomcat-users>
-         ```
+      ```xml
+        <?xml version='1.0' encoding='utf-8'?>
+         <tomcat-users>
+         <role rolename="manager"/>
+         <role rolename="tomcat"/>
+         <role rolename="admin"/>
+         <role rolename="role1"/>
+         <role rolename="manager-gui"/>
+         <user username="both" password="tomcat" roles="tomcat,role1"/>
+         <user username="tomcat" password="tomcat" roles="tomcat"/>
+         <user username="admin" password="admin" roles="admin,manager-gui"/>
+         <user username="role1" password="tomcat" roles="role1"/>
+         </tomcat-users>
+      ```
+
    * Als u AEM wilt implementeren met contextroot &quot;/&quot;, moet u de hoofdmap van de context van de bestaande ROOT-webapp wijzigen:
 
       * ROOT-webapp stoppen en verwijderen
@@ -226,12 +226,12 @@ Lees de bovenstaande [algemene beschrijving](#general-description) voor een impl
       en vergroot de max-file-size en maximum-request-size tot minstens 500MB, zie het volgende `multipart-config` voorbeeld van zulk een `web.xml` dossier:
 
       ```
-        <multipart-config>
-         <!-- 500MB max -->
-         <max-file-size>524288000</max-file-size>
-         <max-request-size>524288000</max-request-size>
-         <file-size-threshold>0</file-size-threshold>
-         </multipart-config>
+      <multipart-config>
+       <!-- 500MB max -->
+       <max-file-size>524288000</max-file-size>
+       <max-request-size>524288000</max-request-size>
+       <file-size-threshold>0</file-size-threshold>
+       </multipart-config>
       ```
 
 
