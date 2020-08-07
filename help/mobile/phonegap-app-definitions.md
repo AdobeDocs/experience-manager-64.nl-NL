@@ -11,6 +11,9 @@ topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 860dde0b-7cb4-4668-9fac-6f954f1ec0a7
 translation-type: tm+mt
 source-git-commit: c58437f791daa11669198d916f0756ff4830677c
+workflow-type: tm+mt
+source-wordcount: '267'
+ht-degree: 0%
 
 ---
 
@@ -19,7 +22,7 @@ source-git-commit: c58437f791daa11669198d916f0756ff4830677c
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 Toepassingsdefinities zijn een manier om te bepalen welke spaties en andere configuraties geschikt zijn voor de app. In toepassingsdefinities kan de gebruiker ruimte toevoegen zonder dat de app opnieuw hoeft te worden gecompileerd. De toepassingsdefinitie wordt bijgewerkt en bevat de informatie voor nieuwe spaties.
 
@@ -29,7 +32,7 @@ Toepassingsdefinities zijn een manier om te bepalen welke spaties en andere conf
 
 ## Een nieuwe toepassingsdefinitie maken {#creating-a-new-app-definition}
 
-1. Kies **Mobiel** in de AEM-navigatieconsole.
+1. Kies **Mobiel** in de AEM Navigatieconsole.
 
    ![chlimage_1-170](assets/chlimage_1-170.png)
 
@@ -47,7 +50,7 @@ Zodra u met de Definities van de Toepassing vertrouwd bent, leer meer over de vo
 * [Een nieuwe app maken met de wizard App maken](/help/mobile/phonegap-create-new-app.md)
 * [Inhoudsservices](/help/mobile/develop-content-as-a-service.md)
 
-## Additional Resources {#additional-resources}
+## Aanvullende bronnen {#additional-resources}
 
 Zie de volgende bronnen voor meer informatie over de rollen en verantwoordelijkheden van een beheerder en ontwikkelaar:
 
