@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
 workflow-type: tm+mt
-source-wordcount: '2267'
+source-wordcount: '2293'
 ht-degree: 0%
 
 ---
@@ -82,13 +82,11 @@ Voordat u de indexregel cq:tags toevoegt
 
 * **Query Builder-query**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=my:tag
-      ```
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=my:tag
+   ```
 
 * **Zoekplan**
 
@@ -100,24 +98,20 @@ Na het toevoegen van de regel cq:tags index
 
 * **cq:labels, indexregel**
 
-   * 
-
-      ```
-      /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-       @name=jcr:content/cq:tags
-       @propertyIndex=true
-      ```
-
+       &quot;
+ /     ak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+     @name=jcr:content/cq:tags
+     @propertyIndex=true
+     &quot;
+   
 * **Query Builder-query**
 
-   * 
-
-      ```
-      type=cq:Page
-       property=jcr:content/cq:tags
-       property.value=myTagNamespace:myTag
-      ```
-
+       &quot;
+    type=cq:Page
+     property=jcr:content/cq:tags
+     property.value=myTagNamespace:myTag
+     &quot;
+   
 * **Zoekplan**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -160,7 +154,7 @@ Dit helpt middelintensieve vragen (d.w.z. te vermijden. niet ondersteund door ee
 * Controleer de logboeken voor vragen die het grote gebruik van het heapgeheugen teweegbrengen:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
-   * Optimaliseer de vraag om het gebruik van het heapgeheugen te verminderen
+   * De query optimaliseren om het gebruik van heapgeheugen te beperken
 
 Voor AEM 6.0 - 6.2 versies, kunt u de drempel voor knoopsverplaatsing via parameters JVM in het AEM startmanuscript aanpassen om grote vragen te verhinderen het milieu te overbelasten. De aanbevolen waarden zijn:
 
@@ -193,21 +187,18 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Niet-geoptimaliseerde query**
 
-      * 
+      ```
+       property=jcr:content/contentType
+       property.value=article-page
+      ```
 
-         ```
-          property=jcr:content/contentType
-          property.value=article-page
-         ```
    * **Geoptimaliseerde query**
 
-      * 
-
-         ```
-          type=cq:Page 
-          property=jcr:content/contentType 
-          property.value=article-page
-         ```
+      ```
+       type=cq:Page 
+       property=jcr:content/contentType 
+       property.value=article-page
+      ```
    Zoekopdrachten zonder nodetype-beperking AEM het `nt:base` nodetype aan te nemen. Elk knooppunt in AEM is een subtype van dit type. Dit leidt in feite tot geen nodetype-beperking.
 
    Het plaatsen `type=cq:Page` beperkt deze vraag tot slechts `cq:Page` knopen, en lost de vraag aan AEM cqPageLucene op, die de resultaten tot een ondergroep van knopen (slechts `cq:Page` knopen) in AEM beperkt.
@@ -216,22 +207,19 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Niet-geoptimaliseerde query**
 
-      * 
+      ```
+      type=nt:hierarchyNode
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=nt:hierarchyNode
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **Geoptimaliseerde query**
 
-      * 
-
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    `nt:hierarchyNode` is het bovenliggende nodetype van `cq:Page`, en als `jcr:content/contentType=article-page` wordt aangenomen dat dit alleen via onze aangepaste toepassing op `cq:Page` knooppunten wordt toegepast, retourneert deze query alleen `cq:Page` knooppunten waar `jcr:content/contentType=article-page`. Dit is echter een suboptimale beperking, omdat:
 
    * Andere knoop erft van `nt:hierarchyNode` (b.v. `dam:Asset`) onnodig toevoegen aan de reeks potentiële resultaten.
@@ -243,20 +231,17 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Niet-geoptimaliseerde query**
 
-      * 
+      ```
+        property=jcr:content/contentType
+        property.value=article-page
+      ```
 
-         ```
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **Geoptimaliseerde query**
 
-      * 
-
-         ```
-         property=jcr:content/sling:resourceType
-         property.value=my-site/components/structure/article-page
-         ```
+      ```
+      property=jcr:content/sling:resourceType
+      property.value=my-site/components/structure/article-page
+      ```
    Als u de eigenschapsbeperking wijzigt van `jcr:content/contentType` (een aangepaste waarde) naar de bekende eigenschap, `sling:resourceType` kan de query worden omgezet in de eigenschapsindex `slingResourceType` waarmee alle inhoud wordt geïndexeerd `sling:resourceType`.
 
    De indexen van het bezit (in tegenstelling tot de Indexen van het Bezit van Lucene) worden het best gebruikt wanneer de vraag niet door nodetype ontdekt, en één enkele bezitsbeperking domineert de resultaatreeks.
@@ -265,24 +250,21 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Niet-geoptimaliseerde query**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
    * **Geoptimaliseerde query**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         ```
+      ```
+      type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      ```
    Door de padbeperking van `path=/content`naar te splitsen, `path=/content/my-site/us/en` kunnen indexen het aantal indexitems dat moet worden geïnspecteerd, verminderen. Wanneer de vraag de weg zeer goed kan beperken, voorbij enkel `/content` of `/content/dam`, zorg ervoor de index heeft `evaluatePathRestrictions=true`.
 
    De indexgrootte wordt `evaluatePathRestrictions` vergroot door een opmerking te gebruiken.
@@ -291,23 +273,20 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Niet-geoptimaliseerde query**
 
-      * 
+      ```
+      type=cq:Page
+      property=jcr:content/contentType
+      property.operation=like
+      property.value=%article%
+      ```
 
-         ```
-         type=cq:Page
-         property=jcr:content/contentType
-         property.operation=like
-         property.value=%article%
-         ```
    * **Geoptimaliseerde query**
 
-      * 
-
-         ```
-         type=cq:Page
-         fulltext=article
-         fulltext.relPath=jcr:content/contentType
-         ```
+      ```
+      type=cq:Page
+      fulltext=article
+      fulltext.relPath=jcr:content/contentType
+      ```
    De voorwaarde LIKE is traag om te evalueren omdat geen index kan worden gebruikt als de tekst met een vervanging (&quot;%...&quot;) begint. Jcr:contains condition staat het gebruiken van een fulltext index toe, en daarom verkiest. Dit vereist de opgeloste Index van het Bezit van Lucene om indexRule voor `jcr:content/contentType` met te hebben `analayzed=true`.
 
    Het gebruik van queryfuncties zoals `fn:lowercase(..)` kan moeilijker te optimaliseren zijn omdat er geen snellere equivalenten zijn (buiten complexere en opdringerige indexanalysatorconfiguraties). Het is best om andere bereikbeperkingen te identificeren om de algemene vraagprestaties te verbeteren, die de functies vereisen om op de kleinste reeks potentiële resultaten te werken mogelijk.
@@ -318,21 +297,18 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Niet-geoptimaliseerde query**
 
-      * 
+      ```
+      type=cq:Page
+      path=/content
+      ```
 
-         ```
-         type=cq:Page
-         path=/content
-         ```
    * **Geoptimaliseerde query**
 
-      * 
-
-         ```
-         type=cq:Page
-         path=/content
-         p.guessTotal=100
-         ```
+      ```
+      type=cq:Page
+      path=/content
+      p.guessTotal=100
+      ```
    Voor gevallen waar de vraaguitvoering snel is maar het aantal resultaten groot is, p. `guessTotal` is een kritieke optimalisering voor de vragen van de Bouwer van de Vraag.
 
    `p.guessTotal=100` instrueert de Bouwer van de Vraag om slechts de eerste 100 resultaten te verzamelen, en een booleaanse vlag te plaatsen die erop wijst als minstens één meer resultaten bestaan (maar niet hoeveel meer, aangezien het tellen van dit aantal in vertraging zou zijn). Deze optimalisatie is niet geschikt voor het gebruik van paginering of oneindig laden, waarbij alleen een subset met resultaten incrementeel wordt weergegeven.
@@ -345,24 +321,20 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Query Builder-query**
 
-      * 
+      ```
+      query type=cq:Page
+      path=/content/my-site/us/en
+      property=jcr:content/contentType
+      property.value=article-page
+      orderby=@jcr:content/publishDate
+      orderby.sort=desc
+      ```
 
-         ```
-         query type=cq:Page
-         path=/content/my-site/us/en
-         property=jcr:content/contentType
-         property.value=article-page
-         orderby=@jcr:content/publishDate
-         orderby.sort=desc
-         ```
    * **XPath dat is gegenereerd op basis van query Builder**
 
-      * 
-
-         ```
-         /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
-         ```
-
+      ```
+      /jcr:root/content/my-site/us/en//element(*, cq:Page)[jcr:content/@contentType = 'article-page'] order by jcr:content/@publishDate descending
+      ```
 
 1. Verstrek XPath (of JCR-SQL2) om de Generator [van de Definitie van de Index van de](https://oakutils.appspot.com/generate/index) Eik te produceren om de geoptimaliseerde definitie van de Index van het Bezit van Luceen te produceren.
 
@@ -398,21 +370,17 @@ Het volgende voorbeeld gebruikt de Bouwer van de Vraag aangezien het de gemeensc
 
    * **Query Builder-query**
 
-      * 
+      ```
+      type=myApp:Author
+      property=firstName
+      property.value=ira
+      ```
 
-         ```
-         type=myApp:Author
-         property=firstName
-         property.value=ira
-         ```
    * **XPath dat is gegenereerd op basis van query Builder**
 
-      * 
-
-         ```
-         //element(*, myApp:Page)[@firstName = 'ira']
-         ```
-
+      ```
+      //element(*, myApp:Page)[@firstName = 'ira']
+      ```
 
 1. Verstrek XPath (of JCR-SQL2) om de Generator [van de Definitie van de Index van de](https://oakutils.appspot.com/generate/index) Eik te produceren om de geoptimaliseerde definitie van de Index van het Bezit van Luceen te produceren.
 
