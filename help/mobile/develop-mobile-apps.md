@@ -11,6 +11,9 @@ topic-tags: introduction
 discoiquuid: f73bfa98-df2d-4b0f-93a2-1337f783e4bc
 translation-type: tm+mt
 source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+workflow-type: tm+mt
+source-wordcount: '155'
+ht-degree: 0%
 
 ---
 
@@ -19,15 +22,15 @@ source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
 
 >[!NOTE]
 >
->Adobe adviseert gebruikend de Redacteur van het KUUROORD voor projecten die op kader-gebaseerde cliënt-zijteruggeven van enige paginatoepassing (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
 
-Adobe Experience Manager (AEM) Mobile is een onderdeel van het digitale platform voor meerdere kanalen van Adobe Experience Manager dat ook gebruikmaken van AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms. AEM Mobile biedt opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
+Adobe Experience Manager (AEM) Mobile maakt deel uit van het Adobe Experience Manager multi-channel digitale platform dat ook gebruikmaakt van AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms. AEM Mobile biedt een opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
 
 AEM Mobile biedt meerdere methoden voor het maken van apps. U kunt toepassingen op verschillende manieren maken:
 
-* [Aan de slag met AEM Mobile On-Demand Services](/help/mobile/aem-mobile-on-demand.md)
+* [Aan de slag met AEM Mobile On-demand Services](/help/mobile/aem-mobile-on-demand.md)
 * [Aan de slag met Adobe PhoneGap Enterprise met AEM](/help/mobile/developing-in-phonegap.md)
 
 >[!NOTE]
 >
->Als Adobe Experience Manager nieuw voor u is, kunt u [Aan de slag met AEM](/help/sites-deploying/deploy.md)doorlopen.
+>Als u nog geen ervaring hebt met Adobe Experience Manager, kunt u [Aan de slag gaan met AEM](/help/sites-deploying/deploy.md).
