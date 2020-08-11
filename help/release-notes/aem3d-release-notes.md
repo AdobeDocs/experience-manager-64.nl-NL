@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: 3D
 discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1933'
+source-wordcount: '1983'
 ht-degree: 0%
 
 ---
@@ -20,9 +20,13 @@ ht-degree: 0%
 
 # Opmerkingen bij de 3D-release AEM {#aem-d-release-notes}
 
+>[!IMPORTANT]
+>
+>Het AEM 3D-functiepakket in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+
 AEM-6.4-DynamicMedia-3D versie 3.1.0 (10 oktober 2018)
 
-Met het AEM 3D-functiepakket kunt u 3D-inhoud in AEM Assets ondersteunen. Het biedt mogelijkheden voor het uploaden, beheren, voorvertonen en renderen van 3D-elementen. Ondersteuning voor weergave en rendering is geoptimaliseerd voor afzonderlijke objecten (in plaats van complexe scènes met meerdere objecten).
+Met het AEM 3D-functiepakket kunt u ondersteuning bieden voor 3D-inhoud in AEM Assets. Het biedt mogelijkheden voor het uploaden, beheren, voorvertonen en renderen van 3D-elementen. Ondersteuning voor weergave en rendering is geoptimaliseerd voor afzonderlijke objecten (in plaats van complexe scènes met meerdere objecten).
 
 AEM 3D biedt ondersteuning voor Adobe Dimension- (Dn) en glTF-elementtypen. De implementatie voor deze elementtypen verschilt aanzienlijk van die voor traditionele 3D-typen die in deze documentatie worden beschreven. Zie [Werken met Adobe Dimension-middelen](/help/assets/working-dimension-assets.md).
 
@@ -106,7 +110,7 @@ Versie 3.1
 
 * Deze versie van AEM3D biedt beperkte ondersteuning voor .dn-bestanden die met Adobe Dimension zijn gemaakt.
 * Tijdens uploadverwerking AEM gebruikt u een op cloud gebaseerde, op Adobe gehoste conversieservice om een glTF-uitvoering te maken van het native .dn-bestand. Toegang tot de conversieservice en het selecteren van Amazon AWS-eindpunten is vereist.
-* Er is een nieuwe glTF-viewer beschikbaar die het weergeven van Dn-elementen in AEM Assets en in sites/schermen ondersteunt. De ondersteuning voor de fasen in de viewer is nog niet beschikbaar.
+* Er is een nieuwe glTF-viewer beschikbaar die het weergeven van Dn-elementen in AEM Assets en op sites/schermen ondersteunt. De ondersteuning voor de fasen in de viewer is nog niet beschikbaar.
 * Dn-modellen kunnen IBL-lichten en achtergronden insluiten die worden weergegeven, indien aanwezig. De viewer kan ook standaardbelichting of een standaardachtergrondkleur toepassen, of beide.
 * Rendering van hoge kwaliteit voor Dn-elementen is nog niet beschikbaar.
 * Afhankelijkheden zoals structuurafbeeldingen zijn ingesloten in Dn-elementen en kunnen niet expliciet in AEM worden beheerd.
@@ -114,7 +118,7 @@ Versie 3.1
 ### Compatibiliteit {#compatibility}
 
 * **Het lopen als dienst van Vensters wordt niet gesteund (Vensters slechts)** - dit kan werken maar het is niet getest.
-* **Dynamic Media** ( `dynamicmedia-scene7` modus) - De compatibiliteit van AEM3D met de nieuwe Dynamic Media-oplossing die met AEM 6.4 wordt vrijgegeven, is nog niet volledig geverifieerd. Als Dynamic Media en AEM3D samen worden opgesteld, adviseert men dat u 3D activa en hun gebiedsdelen slechts in een gebied van de bewaarplaats van AEM Assets plaatst die niet aan Dynamic Media wordt toegewezen. Deze aanbeveling is vooral van belang voor 32-bits TIFF-bestanden die vereist zijn voor 3D-fasen, maar niet worden ondersteund door Dynamic Media.
+* **Dynamische media** ( `dynamicmedia-scene7` modus) - De compatibiliteit van AEM3D met de nieuwe Dynamic Media-oplossing die met AEM 6.4 wordt uitgebracht, is nog niet volledig geverifieerd. Als Dynamic Media en AEM3D samen worden geïmplementeerd, wordt u aangeraden 3D-elementen en hun afhankelijkheden alleen in te stellen in een gebied van de AEM Assets-opslagplaats dat niet is toegewezen aan Dynamic Media. Deze aanbeveling is vooral van belang voor 32-bits TIFF-bestanden die vereist zijn voor 3D-fasen, maar niet worden ondersteund door dynamische media.
 
 ### Algemeen {#general}
 
