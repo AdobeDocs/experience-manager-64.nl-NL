@@ -10,15 +10,19 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1694'
+source-wordcount: '1745'
 ht-degree: 0%
 
 ---
 
 
 # 3D-elementen weergeven {#viewing-d-assets}
+
+>[!IMPORTANT]
+>
+>AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) om 3D-elementen weer te geven.
 
 In dit document wordt beschreven hoe u 3D-elementen kunt weergeven in de elementen in de elementen en hoe u elementen in de 3D-component kunt weergeven in sites.
 
