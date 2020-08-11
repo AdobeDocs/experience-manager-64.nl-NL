@@ -10,15 +10,19 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '455'
+source-wordcount: '511'
 ht-degree: 0%
 
 ---
 
 
 # Werken met Adobe Dimension-middelen {#working-with-adobe-dimension-assets}
+
+>[!IMPORTANT]
+>
+>Het AEM 3D-functiepakket in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) wanneer u werkt met Adobe Dimension-middelen.
 
 Het AEM 3D-functiepakket biedt ondersteuning voor Adobe Dimension-elementen (`.dn` bestanden) in AEM Assets, AEM Sites en AEM Screens.
 
