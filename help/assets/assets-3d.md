@@ -1,5 +1,5 @@
 ---
-title: Werken met 3D-elementen
+title: Werken met AEM 3D-elementen
 seo-title: Werken met 3D-elementen
 description: Leer hoe u met 3D-middelen werkt in AEM 3D
 seo-description: Leer hoe u met 3D-middelen werkt in AEM 3D
@@ -10,15 +10,19 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 32143da1-09c8-45ce-b50d-32adf6efe383
 translation-type: tm+mt
-source-git-commit: 7c850ed0d20dd2ba2626242c67ba190e371f049f
+source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
 workflow-type: tm+mt
-source-wordcount: '1133'
+source-wordcount: '1182'
 ht-degree: 0%
 
 ---
 
 
-# Werken met 3D-elementen {#working-with-d-assets}
+# Werken met AEM 3D-elementen {#working-with-d-assets}
+
+>[!IMPORTANT]
+>
+>AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 Met AEM 3D (Adobe Experience Manager 3D) kunt u 3D-inhoud uploaden, beheren, weergeven en renderen. Ondersteuning voor weergave en rendering is geoptimaliseerd voor afzonderlijke objecten.
 
