@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: c01e42ff-e338-46e6-a961-131ef943ea91
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: c4e18cad7bc08638af9dce6ab396554052043e16
 workflow-type: tm+mt
-source-wordcount: '2293'
+source-wordcount: '2267'
 ht-degree: 0%
 
 ---
@@ -98,20 +98,20 @@ Na het toevoegen van de regel cq:tags index
 
 * **cq:labels, indexregel**
 
-       &quot;
- /     ak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
-     @name=jcr:content/cq:tags
-     @propertyIndex=true
-     &quot;
-   
+   ```
+   /oak:index/cqPageLucene/indexRules/cq:Page/properties/cqTags
+    @name=jcr:content/cq:tags
+    @propertyIndex=true
+   ```
+
 * **Query Builder-query**
 
-       &quot;
-    type=cq:Page
-     property=jcr:content/cq:tags
-     property.value=myTagNamespace:myTag
-     &quot;
-   
+   ```
+   type=cq:Page
+    property=jcr:content/cq:tags
+    property.value=myTagNamespace:myTag
+   ```
+
 * **Zoekplan**
 
    * `[cq:Page] as [a] /* lucene:cqPageLucene(/oak:index/cqPageLucene) jcr:content/cq:tags:my:tag where [a].[jcr:content/cq:tags] = 'my:tag' */`
@@ -146,12 +146,12 @@ Dit helpt middelintensieve vragen (d.w.z. te vermijden. niet ondersteund door ee
 
 #### Na de implementatie {#post-deployment-2}
 
-* Controleer de logboeken voor vragen die de grote knoop traversal of grote het geheugenconsumptie van de heap veroorzaken: &quot;
+* Controleer de logboeken voor vragen die de grote knoop traversal of grote het geheugenconsumptie van de heap veroorzaken:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read or traversed more than 100000 nodes. To avoid affecting other tasks, processing was stopped.`
    * De query optimaliseren om het aantal doorgelopen knooppunten te verminderen
 
-* Controleer de logboeken voor vragen die het grote gebruik van het heapgeheugen teweegbrengen:
+* Controleer de logboeken voor vragen die het grote geheugengebruik van de heap veroorzaken:
 
    * `*WARN* ... java.lang.UnsupportedOperationException: The query read more than 500000 nodes in memory. To avoid running out of memory, processing was stopped`
    * De query optimaliseren om het gebruik van heapgeheugen te beperken
