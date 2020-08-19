@@ -7,7 +7,7 @@ uuid: e4bf343c-59cd-48ac-bee4-85db109e4c65
 contentOwner: mgulati
 discoiquuid: 3e3c867f-afb0-4402-94f4-16e1a556ddee
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 4a1be7a5a233557dff0e7cd3796380532f23d5eb
 workflow-type: tm+mt
 source-wordcount: '1008'
 ht-degree: 0%
@@ -95,7 +95,7 @@ AEM 6.4 Communities biedt het pictogram Site verwijderen op de bestaande communi
 
 ## UGC- en gebruikersprofielen beheren {#managing-ugc-and-user-profiles}
 
-AEM Communities houdt de bescherming van gebruikersgegevens centraal in de ervaringen van gemeenschappen en maakt [API&#39;s offline](user-ugc-management-service.md) en [voorbeeldservlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet)beschikbaar. Met deze API&#39;s kunt u in grote hoeveelheden door gebruikers gegenereerde inhoud beheren (bulkverwijderen en bulkexport) en gebruikersprofielen verwijderen. Deze API&#39;s zijn ook handig voor de verwerking van aanvragen voor GDPR-compatibiliteit in de EU.
+AEM Communities houdt de bescherming van gebruikersgegevens centraal in de ervaringen van gemeenschappen en maakt [API&#39;s offline](user-ugc-management-service.md) en [voorbeeldservlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/main/bundles/communities-ugc-management-servlet)beschikbaar. Met deze API&#39;s kunt u in grote hoeveelheden door gebruikers gegenereerde inhoud beheren (bulkverwijderen en bulkexport) en gebruikersprofielen verwijderen. Deze API&#39;s zijn ook handig voor de verwerking van aanvragen voor GDPR-compatibiliteit in de EU.
 
 ## Wat is gewijzigd {#what-s-changed}
 
