@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
 workflow-type: tm+mt
-source-wordcount: '2053'
+source-wordcount: '2038'
 ht-degree: 0%
 
 ---
@@ -24,10 +24,7 @@ ht-degree: 0%
 
 De functionaliteit voor HTML5-formulieren wordt geïmplementeerd als een pakket binnen de ingesloten AEM-instantie en wordt als REST-eindpunt via HTTP/S beschikbaar gemaakt met behulp van RESTful [Apache Sling Architecture](https://sling.apache.org/).
 
-    [ ![01-aem-forms-architectuur](assets/01-aem-forms-architecture.jpg)
-*Volledige grootte* weergeven](javascript:void(0).md)
-
-    [ ![02-aem-forms-architectuur_large](assets/02-aem-forms-architecture_large.jpg)](javascript:void(0).md)
+![02-aem-forms-architectuur_large](assets/02-aem-forms-architecture_large.jpg)
 
 ### Sling Framework gebruiken {#using-sling-framework}
 
@@ -51,7 +48,7 @@ In HTML5-formulieren worden geen sjablonen met ontbrekende verwijzingen naar fra
 
 De dienst van Forms OSGi verwerkt een verzoek in twee stappen:
 
-* **Indeling en initiële formulierstatus genereren**: Forms OSGi geeft de dienst terug roept de component van het Geheime voorgeheugen van Forms om te bepalen als de vorm reeds in het voorgeheugen ondergebracht is en niet ongeldig is gemaakt. Als het formulier in de cache is opgeslagen en geldig is, wordt de gegenereerde HTML-code vanuit de cache weergegeven. Als het formulier ongeldig wordt gemaakt, genereert de Forms OSGi-renderservice de Initial Form Layout and Form State in XML-indeling. Deze XML wordt door de Forms OSGi-service getransformeerd in de HTML-indeling en de initiële JSON-formulierstatus en vervolgens in de cache geplaatst voor volgende aanvragen.
+* **Indeling en initiële formulierstatus genereren**: Forms OSGi geeft de dienst terug roept de component van het Geheime voorgeheugen van Forms om te bepalen als de vorm reeds in het voorgeheugen ondergebracht is en niet ongeldig is gemaakt. Als het formulier in de cache is opgeslagen en geldig is, wordt de gegenereerde HTML vanuit de cache weergegeven. Als het formulier ongeldig wordt gemaakt, genereert de Forms OSGi-renderservice de Initial Form Layout and Form State in XML-indeling. Deze XML wordt door de Forms OSGi-service getransformeerd in de HTML-indeling en de initiële JSON-formulierstatus en vervolgens in de cache geplaatst voor volgende aanvragen.
 * **Vooraf ingevulde Forms**: Als een gebruiker tijdens het renderen formulieren aanvraagt met vooraf ingevulde gegevens, roept de Forms OSGi-renderservice de Forms-servicecontainer aan en wordt een nieuwe formulierstatus gegenereerd met samengevoegde gegevens. Nochtans, aangezien de lay-out reeds in de bovengenoemde stap wordt geproduceerd, is deze vraag sneller dan de eerste vraag. Met deze aanroep worden alleen de gegevenssamenvoeging uitgevoerd en worden de scripts op de gegevens uitgevoerd.
 
 Als er een update in het formulier is of een van de elementen die in het formulier worden gebruikt, detecteert de component in de formuliercache dit en wordt de cache voor dat formulier ongeldig gemaakt. Zodra de Forms OSGi-service de verwerking heeft voltooid, voegt de Profile Renderer jsp JavaScript-bibliotheekverwijzingen en -stijlen toe aan dit formulier en wordt de reactie op de client geretourneerd. Een typische webserver zoals [Apache](https://httpd.apache.org/) kan hier worden gebruikt met HTML-compressie ingeschakeld. Een webserver zou de responsgrootte, het netwerkverkeer en de tijd die nodig is om de gegevens tussen de server en de clientcomputer te streamen aanzienlijk verminderen.
