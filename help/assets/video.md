@@ -10,9 +10,9 @@ topic-tags: Dynamic-Media
 content-type: reference
 discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '10025'
+source-wordcount: '10006'
 ht-degree: 3%
 
 ---
@@ -129,7 +129,7 @@ Bovendien wordt de videokwaliteit automatisch dynamisch geschakeld als de netwer
 
 De logica die een videospeler gebruikt om te bepalen welke gecodeerde video moet worden afgespeeld of tijdens het afspelen moet worden geselecteerd, is gebaseerd op het volgende algoritme:
 
-1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de &#39;initiële bitsnelheid&#39; in de speler zelf.
+1. Videospeler laadt het eerste videofragment op basis van de bitsnelheid die het dichtst bij de waarde ligt die is ingesteld voor de beginbitsnelheid in de speler zelf.
 1. De videospelerschakelaars die op veranderingen in de bandbreedtesnelheid worden gebaseerd die de volgende criteria gebruiken:
 
    1. De speler kiest de hoogste bandbreedtestroom onder of gelijk aan de geschatte bandbreedte.
@@ -203,17 +203,17 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
    <td><strong>Video-afspeelmodus</strong></td> 
   </tr> 
   <tr> 
-   <td>Desktop</td> 
+   <td>X</td> 
    <td>Internet Explorer 9 en 10</td> 
    <td>Progressieve download.</td> 
   </tr> 
   <tr> 
-   <td>Desktop</td> 
+   <td>X</td> 
    <td>Internet Explorer 11+</td> 
    <td>In Windows 8 en Windows 10 - Gebruik van HTTPS forceren wanneer om HLS wordt gevraagd. Bekende beperking: HTTP op HLS werkt niet in deze browser/werkend systeemcombinatie<br /> <br /> op Vensters 7 - Progressieve download. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td> 
   </tr> 
   <tr> 
-   <td>Desktop</td> 
+   <td>X</td> 
    <td>Firefox 23-44</td> 
    <td>Progressieve download.</td> 
   </tr> 
@@ -228,7 +228,7 @@ In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschr
    <td>HLS-videostreaming.</td> 
   </tr> 
   <tr> 
-   <td>Desktop</td> 
+   <td>X</td> 
    <td>Safari (Mac)</td> 
    <td>HLS-videostreaming.</td> 
   </tr> 
@@ -300,7 +300,7 @@ In de volgende tabel worden de aanbevolen grootte, de hoogte-breedteverhouding e
 
 ### De metagegevens van een bestand ophalen {#obtaining-a-file-s-metadata}
 
-U kunt de metagegevens van een bestand verkrijgen door de metagegevens van het bestand te bekijken met een gereedschap voor videobewerking of met een toepassing die is ontworpen voor het verkrijgen van metagegevens. Hieronder vindt u instructies voor het gebruik van MediaInfo, een toepassing van derden, voor het verkrijgen van de metagegevens van een videobestand:
+U kunt de metagegevens van een bestand verkrijgen door de metagegevens van het bestand te bekijken met een programma voor videobewerking of met een toepassing die is ontworpen voor het verkrijgen van metagegevens. Hieronder vindt u instructies voor het gebruik van MediaInfo, een toepassing van derden, voor het verkrijgen van de metagegevens van een videobestand:
 
 1. Ga naar deze webpagina: [https://mediaarea.net/en/MediaInfo](https://mediaarea.net/en/MediaInfo).
 1. Selecteer en download het installatieprogramma voor de GUI-versie die u gebruikt en volg de installatie-instructies.
@@ -490,7 +490,7 @@ Als u op YouTube wilt publiceren, hebt u een Google-account nodig. Als u een GMA
 1. Tik op de kaart **[!UICONTROL Dashboard]** van uw project op **[!UICONTROL Getting Started]** **[!UICONTROL Enable APIs and get credentials like keys]**.
 1. Tik boven aan de **[!UICONTROL Dashboard]** pagina op **[!UICONTROL Enable API]**.
 1. Tik op de **[!UICONTROL Library]** pagina onder YouTube-API&#39;s op **[!UICONTROL YouTube Data API]**.
-1. Tik boven aan de pagina **YouTube Data API v3]** op **[!UICONTROL Enable]** om deze in te schakelen.
+1. Tik boven aan de **[!UICONTROL YouTube Data API v3]** pagina **[!UICONTROL Enable]** om deze in te schakelen.
 1. Mogelijk hebt u referenties nodig om de API te gebruiken. Tik zo nodig op **[!UICONTROL Create Credentials]**.
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Where will you be calling the API from?]** de optie **[!UICONTROL Web Server (e.g. node.js, Tomcat)]**.
 1. Under **[!UICONTROL What data will you be accessing?]** select **[!UICONTROL User data]**.
@@ -504,7 +504,7 @@ Als u op YouTube wilt publiceren, hebt u een Google-account nodig. Als u een GMA
 
    **Opmerking**: Het bovenstaande padvoorbeeld is alleen bedoeld ter illustratie.
 
-1. Voer in het tekstveld onder de **[!UICONTROL Authorized redirect URIs]** kop het volgende in, vervang uw eigen domein- en poortnummer in het pad en druk vervolgens op Enter om het pad aan de lijst toe te voegen:
+1. Voer in het tekstveld onder de **[!UICONTROL Authorized redirect URIs]** kop het volgende in, waarbij u uw eigen domein- en poortnummer in het pad vervangt, en druk vervolgens op Enter om het pad aan de lijst toe te voegen:
 
    `https://<servername.domain>:<port#>/etc/cloudservices/youtube.youtubecredentialcallback.json`
 
@@ -570,7 +570,7 @@ Of als u de standaardlabels wilt gebruiken in AEM, kunt u deze taak overslaan en
 
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Deployment > Cloud Services]**.
 1. Tik onder de **[!UICONTROL Third Party Services]** kop onder YouTube op **[!UICONTROL Configure now]**.
-1. Voer in het dialoogvenster **Configuratie maken]** een titel (verplicht) en naam (optioneel) in de desbetreffende velden in.
+1. Voer in het **[!UICONTROL Create Configuration]** dialoogvenster een titel (verplicht) en een naam (optioneel) in de desbetreffende velden in.
 1. Tik op **[!UICONTROL Create]**.
 1. In the **[!UICONTROL YouTube Account Settings]** dialog box, in the **[!UICONTROL Application Name]** field, enter the Google Project ID.
 
@@ -586,7 +586,7 @@ Of als u de standaardlabels wilt gebruiken in AEM, kunt u deze taak overslaan en
    U stelt YouTube-kanalen nu in AEM.
 
 1. To the right of **[!UICONTROL Available Channels]**, tap **[!UICONTROL +]** (plus sign icon).
-1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel]**earlier.
+1. In the **[!UICONTROL YouTube Channel Settings]** dialog box, in the **[!UICONTROL Title]** field, enter the name of the channel that you created in the task **C[!UICONTROL reating a YouTube channel]** earlier.
 
    U kunt desgewenst een beschrijving toevoegen.
 
@@ -597,7 +597,7 @@ Of als u de standaardlabels wilt gebruiken in AEM, kunt u deze taak overslaan en
    * Afhankelijk van hoeveel kanalen uw account twee of meer items bevat. Selecteer een kanaal. Selecteer het e-mailadres niet.
    * Tik op de volgende pagina **[!UICONTROL Accept]** om toegang tot dit kanaal toe te staan.
 
-1. Tik **[!UICONTROL toestaan**.
+1. Tik op **[!UICONTROL Allow]**.
 
    U stelt nu labels in voor publiceren.
 
@@ -656,7 +656,7 @@ Als u het verwerkingsprofiel voor metadata wilt maken, kopieert u eerst waarden 
 1. Near the upper-right corner of the **[!UICONTROL Metadata Schema Editor]** page, tap **[!UICONTROL Cancel]**.
 1. In the upper-left corner of AEM, tap the AEM logo, then in the left rail, tap **[!UICONTROL Tools > Assets > Metadata Profiles]**.
 
-1. Tik op de pagina **[!UICONTROL Metadata Profiles** , in de rechterbovenhoek van de pagina, op **[!UICONTROL maken**. In the **[!UICONTROL Add Metadata Profile** dialog box, in the **[!UICONTROL Profile title]** text field, enter the name `YouTube Video`.
+1. Tik op de **[!UICONTROL Metadata Profiles]** pagina in de rechterbovenhoek van de pagina **[!UICONTROL Create]**. Voer in het **[!UICONTROL Add Metadata Profile]** dialoogvenster in het **[!UICONTROL Profile title]** tekstveld de naam in `YouTube Video`.
 1. Tik op de **[!UICONTROL Metadata Profile Editor]** pagina op de **[!UICONTROL Advance]** tab.
 1. Voeg de gekopieerde Publishing-waarden voor YouTube als volgt toe aan het profiel:
 
@@ -676,7 +676,7 @@ Als u het verwerkingsprofiel voor metadata wilt maken, kopieert u eerst waarden 
    * Voer rechts op de pagina onder het tabblad Instellingen in het tekstveld Veld Label `YouTube Privacy`.
    * Tik op de **[!UICONTROL Build Form]** tab en sleep de component met het label **[!UICONTROL Single Line Text]** en zet deze onder de **[!UICONTROL YouTube Privacy]** kop die u net hebt gemaakt.
    * Tik **[!UICONTROL Field Label]** om de component te selecteren.
-   * Plak aan de rechterkant van de pagina, onder het **[!UICONTROL Settings]** tabblad, de **[!UICONTROL YouTube Publishing]** waarden (**[!UICONTROL Field Label]** waarde en **[!UICONTROL Map to property]** waarde) die u eerder hebt gekopieerd in de desbetreffende velden op het formulier. Plak de waarde **[!UICONTROL Choices** in het **[!UICONTROL Default Value]** veld.
+   * Plak aan de rechterkant van de pagina, onder het **[!UICONTROL Settings]** tabblad, de **[!UICONTROL YouTube Publishing]** waarden (**[!UICONTROL Field Label]** waarde en **[!UICONTROL Map to property]** waarde) die u eerder hebt gekopieerd in de desbetreffende velden op het formulier. Plak de **[!UICONTROL Choices]** waarde in het **[!UICONTROL Default Value]** veld.
 
 1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
 1. Pas het metagegevensprofiel voor YouTube Publishing toe op de mappen waarin u video&#39;s gaat uploaden. U moet zowel het metagegevensprofiel als het videoprofiel hebben ingesteld.
@@ -844,7 +844,7 @@ Hoe u een melding configureert, hangt af van het feit of u meldingen voor coderi
 1. Selecteer in AEM **[!UICONTROL Tools > Workflow > Models]**.
 1. Selecteer de **[!UICONTROL Publish to YouTube]** workflow en tik op **[!UICONTROL Edit]**.
 1. Klik met de rechtermuisknop op de **[!UICONTROL YouTube Upload]** workflowstap en tik vervolgens op **[!UICONTROL Edit]**.
-1. Tap the **[!UICONTROL Argument]s **tab.
+1. Tap the **[!UICONTROL Argument]s** tab.
 1. U kunt de volgende selectievakjes in- of uitschakelen:
 
    * **[!UICONTROL Publish Start]**
@@ -871,7 +871,7 @@ De videoRapporten tonen verscheidene gezamenlijke metriek over een gespecificeer
 
 Er wordt ook een tabel met alle *gepubliceerde* video&#39;s weergegeven, zodat u de bovenste weergegeven video&#39;s op uw website kunt bijhouden op basis van het totale aantal video&#39;s dat wordt gestart.
 
-Wanneer u een videonaam in de lijst tikt, ziet u het rapport voor het behoud van het publiek van de video (drop-off) in de vorm van een lijndiagram. Het diagram toont het aantal weergaven voor een bepaald tijdstip tijdens het afspelen van video. Wanneer u de video afspeelt, wordt de verticale balk gesynchroniseerd met de tijdindicator in de speler. De vallen in de gegevens van het lijndiagram wijzen op waar uw publiek van oninteresse wegvalt.
+Wanneer u een videonaam in de lijst tikt, ziet u het rapport voor het behoud van het publiek van de video (drop-off) in de vorm van een lijndiagram. Het diagram toont het aantal weergaven voor een bepaald tijdstip tijdens het afspelen van video. Wanneer u de video afspeelt, volgt de verticale balk synchroon met de tijdindicator in de speler. De vallen in de gegevens van het lijndiagram wijzen op waar uw publiek van oninteresse wegvalt.
 
 Als de video buiten Adobe Experience Manager Dynamic Media is gecodeerd, zijn het diagram voor het vasthouden van het publiek (drop-off) en de gegevens voor het afspeelpercentage in de tabel niet beschikbaar.
 
@@ -883,7 +883,7 @@ Zie ook Dynamische media-Cloud Services [configureren](/help/assets/config-dynam
 
 Door gebrek, de eerste keer u VideoRapporten ingaat, toont het rapport videogegevens die bij de eerste van de huidige maand beginnen en met de datum van de huidige maand beëindigen. U kunt het standaarddatumbereik echter overschrijven door uw eigen datumbereik op te geven. De volgende keer dat u Video-rapporten invoert, wordt het opgegeven datumbereik gebruikt.
 
-Voor het correct werken van videorapporten, wordt een identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Dynamische Cloud Services van Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Hiervoor moet de publicatieserver echter al zijn ingesteld. Als de publicatieserver niet is ingesteld, kunt u nog steeds publiceren om het videoverslag te bekijken. U moet echter wel terugkeren naar de Dynamic Media Cloud Configuration en op **OK** tikken.
+Voor het correct werken van videorapporten, wordt identiteitskaart van de Reeks van het Rapport automatisch gecreeerd wanneer de Dynamische Cloud Services van Media wordt gevormd. Tegelijkertijd wordt de rapportsuite-id doorgegeven aan de publicatieserver, zodat deze beschikbaar is voor de functie URL kopiëren wanneer u een voorvertoning van elementen weergeeft. Hiervoor moet de publicatieserver echter al zijn ingesteld. Als de publicatieserver niet is ingesteld, kunt u nog steeds publiceren om het videoverslag te bekijken. U moet echter wel terugkeren naar de Dynamic Media Cloud Configuration en op **OK** tikken.
 
 **Videorapporten** weergeven:
 
@@ -996,7 +996,7 @@ Zie [Statische (niet-afbeeldings) inhoud](https://docs.adobe.com/content/help/en
 
    [WebVTT Caption Maker](https://testdrive-archive.azurewebsites.net/Graphics/CaptionMaker/Default.html)
 
-   U bereikt het beste resultaat met de tool in Internet Explorer 9 of hoger, Google Chrome of Safari.
+   U bereikt de beste resultaten met het programma in Internet Explorer 9 of hoger, Google Chrome of Safari.
 
    In the tool, in the **[!UICONTROL Enter URL of video file]** field, paste the copied URL of your video file and then tap **[!UICONTROL Load]**. Zie [Een URL verkrijgen voor een asset](linking-urls-to-yourwebapplication.md#obtaining-a-url-for-an-asset) om de URL naar het videobestand zelf op te halen, die u vervolgens in het **[!UICONTROL Enter URL of video file field]** kunt plakken. Internet Explorer, Chrome of Safari kunnen de video vervolgens op een native manier afspelen.
 
@@ -1069,7 +1069,7 @@ Zie [WebVTT: De indeling Webvideoteksttracks](https://dev.w3.org/html5/webvtt/)
 
 **Hoofdstukmarkeringen aan video toevoegen:**
 
-1. Creëer met een eenvoudige teksteditor buiten AEM het hoofdbestand van de video.
+1. Creëer met behulp van een eenvoudige teksteditor buiten AEM het videohoofdstukbestand.
 
    Voor wereldwijde ondersteuning van videohoofdstukken in andere talen dan het Engels, dient u er rekening mee te houden dat de WebVTT-standaard vereist dat u afzonderlijke .vtt-bestanden maakt en dat u elke taal die u wilt ondersteunen, aanroept.
 
@@ -1092,7 +1092,7 @@ Zie [WebVTT: De indeling Webvideoteksttracks](https://dev.w3.org/html5/webvtt/)
        <li>Tik vervolgens in het keuzemenu op <strong>Viewers</strong>.</li> 
        <li>Tik in de linkertrack op de naam van de voorinstelling voor de videoviewer. Er wordt een voorvertoning van de video geopend op een aparte pagina.</li> 
        <li>Tik in de linkerrail onderaan op <strong>URL</strong>.</li> 
-       <li>Selecteer in het dialoogvenster URL de URL en kopieer deze naar het klembord. Plak vervolgens de URL in een eenvoudige teksteditor.</li> 
+       <li>Selecteer in het dialoogvenster URL de URL en kopieer deze naar het Klembord. Plak vervolgens de URL in een eenvoudige teksteditor.</li> 
        <li>Voeg de gekopieerde URL van de video toe aan de volgende syntaxis om deze te koppelen aan de gekopieerde URL naar het hoofdstukbestand:<br /> <br /> <code>&amp;navigation=&lt;<i>full_copied_URL_path_to_chapter_file</i>.vtt&gt;</code><br /> </li> 
       </ol> </td> 
       </tr> 
@@ -1135,7 +1135,7 @@ Desgewenst kunt u een aangepaste miniatuur uploaden om uw video te vertegenwoord
 
    Dynamische media genereert een reeks miniatuurafbeeldingen van uw video op basis van het standaardtijdinterval of tijdinterval dat u hebt aangepast.
 
-1. Geef een voorvertoning van de gegenereerde miniatuurafbeeldingen weer en selecteer de miniatuurafbeelding die u aan de video wilt toevoegen.
+1. Geef een voorvertoning van de gegenereerde miniatuurafbeeldingen weer en selecteer de afbeelding die u aan de video wilt toevoegen.
 1. Tik op **[!UICONTROL Save Change]**.
 
    De miniatuurafbeelding van de video wordt bijgewerkt en gebruikt nu de miniatuur die u hebt geselecteerd. Als u later besluit om de miniatuurafbeelding te wijzigen, kunt u terugkeren naar de **[!UICONTROL Change Thumbnail]** pagina en een nieuwe pagina selecteren.
