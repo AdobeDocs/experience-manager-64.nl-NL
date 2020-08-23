@@ -3,9 +3,9 @@ title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 33541e9d1fa8bc24ae637141c0260f5595f38a4f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2397'
 ht-degree: 8%
 
 ---
@@ -78,7 +78,7 @@ U kunt nieuwe tabbladen of formulieritems toevoegen aan het metagegevensschemafo
 
 1. In the **[!UICONTROL Schema Forms]** page, select the check box before a form and then click **[!UICONTROL Edit]** on the toolbar.
 
-   ![chlimage_1-174](assets/chlimage_1-175.png)
+   ![chlimage_1-175](assets/chlimage_1-175.png)
 
 1. Pas op de pagina **[!UICONTROL Metadata Schema Editor]** de eigenschappenpagina van de asset aan door een of meer componenten uit de lijst met componenttypen op het tabblad **[!UICONTROL Build Form]** naar het tabblad **[!UICONTROL Basic]** te slepen.
 
@@ -165,7 +165,7 @@ In plaats van eigenschappen voor de opties op het tabblad **[!UICONTROL Settings
 
 Met de schema-editor kunt u een tabblad toevoegen of verwijderen. Het standaardschemaformulier bevat standaard de tabbladen **[!UICONTROL Basic]**, **[!UICONTROL Advanced]**, **[!UICONTROL IPTC]** en **[!UICONTROL IPTC Extension]**.
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Klik `+` om een nieuw tabblad toe te voegen aan een schemaformulier. Standaard heeft het nieuwe tabblad de naam `Unnamed-1`. U kunt de naam wijzigen van het **[!UICONTROL Settings]** tabblad. Klik `X` om een tabblad te verwijderen.
 
@@ -222,7 +222,7 @@ AEM Assets wijst de volgende MIME-typen en schema-formulieren toe:
 
 ## Toegang tot metagegevensschema&#39;s verlenen {#granting-access-to-metadata-schemas}
 
-De functie voor het metagegevensschema is alleen beschikbaar voor beheerders. Beheerders kunnen echter toegang verlenen aan gebruikers die geen beheerder zijn door machtigingen voor de **[!UICONTROL Create]** map op te geven **[!UICONTROL Modify]**, **[!UICONTROL Delete]** en `/conf` te wijzigen.
+De functie voor het metagegevensschema is alleen beschikbaar voor beheerders. Beheerders kunnen echter toegang verlenen aan gebruikers die geen beheerder zijn door machtigingen voor **[!UICONTROL Create]**, **[!UICONTROL Modify]** en **[!UICONTROL Delete]** machtigingen voor de `/conf` map op te geven.
 
 ## Mapspecifieke metagegevens toepassen {#applying-folder-specific-metadata}
 
@@ -292,6 +292,6 @@ Deze configuratie voegt een eigenschap toe `hasValidMetadata` aan jcr:inhoud van
 >
 >Als een element wordt toegevoegd na de geplande controle, wordt het element pas gemarkeerd met `hasValidMetadata` de volgende geplande controle. De elementen worden niet weergegeven in tussenliggende zoekresultaten.
 
->[!Cautie]
+>[!CAUTION]
 >
 >De controles van de meta-gegevensbevestiging zijn middelintensief en kunnen de prestaties van uw systeem beïnvloeden. Plan de controles dienovereenkomstig. Als de AEM implementatie prestatieproblemen heeft, kunt u deze taak uitschakelen.
