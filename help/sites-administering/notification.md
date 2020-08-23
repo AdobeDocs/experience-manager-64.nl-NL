@@ -10,7 +10,7 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 6466d7b8-e308-43c5-acdc-dec15f796f64
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '1145'
 ht-degree: 1%
@@ -68,7 +68,7 @@ U configureert het e-mailadres door een `sling:OsgiConfig` knooppunt aan de repo
 
    `com.day.cq.wcm.notification.email.impl.EmailChannel` van het type `sling:OsgiConfig`
 
-1. Voeg een `String` bezit aan de genoemde knoop] toe `email.from`. Geef voor de waarde het e-mailadres op dat u wilt gebruiken.
+1. Voeg een `String` eigenschap toe aan het knooppunt met de naam `email.from`. Geef voor de waarde het e-mailadres op dat u wilt gebruiken.
 
 1. Klik op Alles **opslaan**.
 
