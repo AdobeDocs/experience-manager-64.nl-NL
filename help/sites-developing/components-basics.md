@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4726'
+source-wordcount: '4725'
 ht-degree: 0%
 
 ---
@@ -73,7 +73,7 @@ Daarom zullen we op deze pagina de basisbeginselen van beide, en hoe ze te herke
 
 >[!NOTE]
 >
->Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Moderniseringsgereedschappen en (moderniationtools.md) kunnen de migratie vereenvoudigen.
+>Adobe raadt u aan de interface met aanraakbediening te gebruiken om te profiteren van de nieuwste technologie. [AEM Moderniseringsgereedschappen](modernization-tools.md) kunnen de migratie vereenvoudigen.
 
 ### Opmaak voor Content Logic en rendering  {#content-logic-and-rendering-markup}
 
@@ -148,7 +148,7 @@ De structuur van een AEM is krachtig en flexibel, en de belangrijkste overweging
 
 Een zeer belangrijk element van de structuur is het middeltype.
 
-* In de inhoudsstructuur worden intenties gedeclareerd.
+* De inhoudstructuur declareert intenties.
 * Het type van middel voert hen uit.
 
 Dit is een abstractie die helpt ervoor te zorgen dat zelfs wanneer de blik en het gevoel in tijd verandert, de intentie de tijd blijft.
@@ -191,7 +191,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component in de componentenbrowser of sidekick wordt vermeld.
    * `jcr:description` - Beschrijving van het onderdeel; kan als muis-over wenk in componentenbrowser of sidekick worden gebruikt.
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `icon.png` - Pictogram voor deze component.
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.
@@ -211,7 +211,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
       * `cq:dialog` ( `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `cq:design_dialog` ( `nt:unstructured`) - Ontwerpbewerking voor deze component
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `dialog` ( `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `design_dialog` ( `cq:Dialog`) - Ontwerpbewerking voor deze component.
@@ -221,7 +221,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
 Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigenschappen van de component wanneer de component door de ontwikkelaar wordt gemaakt. Deze eigenschappen worden in de volgende volgorde geëvalueerd en de eerste geldige gevonden eigenschap wordt gebruikt.
 
-1. `cq:icon` - Tekenreekseigenschap die verwijst naar een standaardpictogram in de [Coral UI-bibliotheek](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) dat moet worden weergegeven in de componentbrowser
+1. `cq:icon` - Tekenreekseigenschap die naar een standaardpictogram in de [Coral UI-bibliotheek](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html) verwijst dat in de componentbrowser moet worden weergegeven
 
    * Gebruik de waarde van het HTML-kenmerk van het pictogram Coral.
 
@@ -326,7 +326,7 @@ Een component is een knooppunt van het type `cq:Component` en heeft de volgende 
   <tr> 
    <td><code>dialogPath</code></td> 
    <td><code>String</code></td> 
-   <td>Pad naar een dialoogvenster om het geval te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td> 
+   <td>Pad naar een dialoogvenster om het hoofdlettergebruik te behandelen wanneer de component geen dialoogknooppunt heeft.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -439,7 +439,7 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
    * `cq:dialog` ( `nt:unstructured`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component
    * `cq:design_dialog` ( `nt:unstructured`) - geeft de ontwerpbewerkingsopties voor deze component op
 
-* Klassieke gebruikersinterface:
+* Klassieke interface:
 
    * `dialog` ( `cq:Dialog`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
    * `design_dialog` ( `cq:Dialog`) - geeft de ontwerpbewerkingsopties voor deze component op
@@ -637,7 +637,7 @@ Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar
 
    `//element(cq:editConfig, cq:EditConfig)[@cq:actions]`
 
-* U kunt zoeken naar een onderliggende node van `cq:editConfig`bijvoorbeeld `cq:dropTargets`het type `cq:DropTargetConfig`; U kunt het hulpmiddel van de Vraag in** CRXDE Lite** gebruiken en onderzoek met het volgende de vraagkoord van XPath:
+* U kunt zoeken naar een onderliggende node van `cq:editConfig`bijvoorbeeld `cq:dropTargets`het type `cq:DropTargetConfig`; u kunt het hulpmiddel van de Vraag in** CRXDE Lite** gebruiken en onderzoek met het volgende de vraagkoord van XPath:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
 
@@ -810,7 +810,7 @@ Het `cq:dropTargets` knooppunt (knooppunttype `nt:unstructured`) definieert een 
 >
 >In de interface met aanraakbediening wordt alleen het eerste doel gebruikt.
 
-Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze als volgt in JSP moet worden gebruikt om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
+Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze in JSP moet worden gebruikt, als volgt, om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
 
 ```
 <drop target css class> = <drag and drop prefix> + 
