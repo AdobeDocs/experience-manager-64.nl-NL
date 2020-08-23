@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '843'
 ht-degree: 0%
@@ -70,7 +70,7 @@ Voer de volgende stappen uit om Adobe Sign met AEM Forms in de Author-instantie 
 
    ![OAuth Config](assets/oauth_config.png)
 
-1. Ga terug naar de **[!UICONTROL Create Adobe Sign Configuration]** pagina. Op het **[!UICONTROL Settings]** tabblad geeft het **!UICONTROL OAuth URL]** veld de volgende standaard-URL weer:
+1. Ga terug naar de **[!UICONTROL Create Adobe Sign Configuration]** pagina. Op het **[!UICONTROL Settings]** tabblad geeft het **[!UICONTROL OAuth URL]** veld de volgende standaard-URL weer:
 
    `https://secure.na1.echosign.com/public/oauth`
 
