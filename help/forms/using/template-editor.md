@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 155aaf96-1e9c-4e73-8e43-d96878d69b16
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1948'
+source-wordcount: '1938'
 ht-degree: 0%
 
 ---
@@ -107,13 +107,13 @@ U voegt bijvoorbeeld de koptekstcomponent in de sjabloon toe. Wanneer u de compo
 
 Als de optie Begininhoud is geselecteerd, wordt de container van het adaptieve formulier van de sjabloon geopend als een adaptief formulier voor bewerking. Net als bij het ontwerpen van een adaptief formulier kunt u initiële instellingen opgeven, zoals het selecteren van een thema en het verzenden van handelingen.
 
-Auteurs van formulieren gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, tikt u vóór de voorvertoning op de paginaboolbalk op de ![canvasvervolgkeuzelijst](assets/canvas-drop-down.png)**[!UICONTROL > Initial Content]**.
+Auteurs van formulieren gebruiken het als basis om een formulier te maken. De structuur van de inhoudsstroom wordt opgegeven in de laag Begininhoud van de sjabloon. Als u wilt overschakelen naar het bewerken van de eerste inhoud van de formuliersjabloon, tikt u vóór de voorvertoning op de paginaboolbalk op de ![canvasvervolgkeuzelijst ](assets/canvas-drop-down.png)**[!UICONTROL > Initial Content]**.
 
-    [ ![Oorspronkelijke inhoudslaag in de Sjablooneditor](assets/initial-content-layer.png)
+![Oorspronkelijke inhoudslaag in de Sjablooneditor](assets/initial-content-layer.png)
 
 Oorspronkelijke inhoudslaag in de Sjablooneditor met de adaptieve formuliercontainer geselecteerd voor het opgeven van eigenschappen.
 
-](assets/initial-content-layer-1.png) In de laag Begininhoud maakt u de adaptieve formuliersjabloon die uw auteurs als basis gebruiken. Het ontwerpen van een sjabloon lijkt op het ontwerpen van een formulier. U gebruikt de opties in de zijbalk. Sidebar verstrekt inhoud, eigenschappen, activa, en componentenbrowsers.
+In de laag Begininhoud maakt u de adaptieve formuliersjabloon die uw auteurs als basis gebruiken. Het ontwerpen van een sjabloon lijkt op het ontwerpen van een formulier. U gebruikt de opties in de zijbalk. Sidebar verstrekt inhoud, eigenschappen, activa, en componentenbrowsers.
 
 Zie [Zijbalk](/help/forms/using/introduction-forms-authoring.md#sidebar).
 
@@ -137,15 +137,15 @@ Wijzig de laag van Structuur in Begininhoud en voeg inhoud toe aan het formulier
 * U kunt de deelvenstercomponent slepen en neerzetten vanuit de deelvensterbrowser in de zijbalk.
 * U kunt onderliggende deelvensters van de werkbalk toevoegen `guideRootPanel` vanuit de componentwerkbalk.
 
-Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster Onderliggend item van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik op ![cmp](assets/cmppr.png) om de eigenschappen in het zijpaneel te openen. Wijzig de elementnamen als `general-info` en `professional-info`en de titels als Algemene informatie en Professionele informatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tik op ![cmp](assets/cmppr.png) in de werkbalk van de component om de eigenschappen te openen. Selecteer **Tabs bovenaan** in het veld Lay-out deelvenster en tik op **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
+Als u de tabbladen Algemene informatie en Professionele informatie wilt maken, voegt u twee deelvensters toe in het deelvenster Onderliggend item van het dialoogvenster `guideRootPanel`. Selecteer de deelvensters en tik op ![cmp](assets/cmppr.png) om de eigenschappen in het zijpaneel te openen. Wijzig de elementnamen als `general-info` en `professional-info`en de titels als Algemene informatie en Professionele informatie. Tik in de zijbalk op inhoud om de inhoudbrowser te openen. Selecteer op het tabblad Formulierobjecten de optie `guideRootPanel`. In de redacteur, wordt guideRootPanel geselecteerd. Tik op ![cmp](assets/cmppr.png) in de werkbalk van de component om de eigenschappen te openen. Selecteer **Tabs bovenaan** in het veld Lay-out deelvenster en tik op **Gereed**. De sjabloonstructuur met tabs wordt toegepast.
 
 #### Inhoud toevoegen op tabbladen {#adding-content-in-tabs}
 
-    [ ![Velden toevoegen in de adaptieve formuliersjabloon](assets/template-edit-initial-content.png)
+![Velden toevoegen aan de aangepaste formuliersjabloon](assets/template-edit-initial-content.png)
 
 Velden toevoegen aan de sjabloon
 
-](assets/template-edit-initial-content-1.png) Nadat u deelvensters hebt toegevoegd en deze hebt gestructureerd als tabbladen, kunt u velden toevoegen binnen de tabbladen. Wanneer u een tabblad in de editor selecteert, wordt de **[!UICONTROL Drag components here]** optie weergegeven. U kunt componenten zoals tekstvakken, lijstitems en knoppen slepen en neerzetten. U kunt componenten slepen-dalingscomponenten van componentenbrowser in sidebar.
+Nadat u deelvensters hebt toegevoegd en deze hebt gestructureerd als tabbladen, kunt u velden toevoegen binnen de tabbladen. Wanneer u een tabblad in de editor selecteert, wordt de **[!UICONTROL Drag components here]** optie weergegeven. U kunt componenten zoals tekstvakken, lijstitems en knoppen slepen en neerzetten. U kunt componenten slepen-dalingscomponenten van componentenbrowser in sidebar.
 
 Elke component bevat eigenschappen die het vastleggen en bewerken van gegevens verbeteren. U kunt bijvoorbeeld de **[!UICONTROL Required field]** eigenschap van een component inschakelen. Uw auteurs kunnen een bericht specificeren dat uw klanten zien wanneer zij het vullen van een vereist gebied overslaan. Geef het bericht op in de **[!UICONTROL Required Field Message]** eigenschap.
 
