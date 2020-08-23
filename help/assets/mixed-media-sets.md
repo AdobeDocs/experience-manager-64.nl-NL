@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1397'
+source-wordcount: '1395'
 ht-degree: 17%
 
 ---
@@ -24,7 +24,7 @@ Met gemengde mediasets kunt u in één presentatie een combinatie van afbeelding
 
 Gemengde mediasets worden aangegeven door een banner met het woord **[!UICONTROL MixedMediaSet]**. Als de gemengde mediaset wordt gepubliceerd, wordt bovendien de publicatiedatum, die door het pictogram **[!UICONTROL World]** wordt aangegeven, samen met de laatste wijzigingsdatum op de banner weergegeven. Dit wordt aangegeven door het pictogram **[!UICONTROL Pencil]**.
 
-![chlimage_1-349](assets/chlimage_1-348.png)
+![chlimage_1-348](assets/chlimage_1-348.png)
 
 >[!NOTE]
 >
@@ -153,7 +153,7 @@ U kunt diverse bewerkingstaken rechtstreeks in de gebruikersinterface uitvoeren 
    >* You can edit the assets in a Mixed Media Set by navigating to the set, tapping **[!UICONTROL Set Members]** in the left rail, and then tapping the **[!UICONTROL Pencil]** icon on an individual asset to open the editing window.
 
 
-1. Tik **[!UICONTROL opslaan** wanneer u klaar bent met bewerken.
+1. Tik **[!UICONTROL Save]** wanneer u klaar bent met bewerken.
 
    >[!NOTE]
    >
