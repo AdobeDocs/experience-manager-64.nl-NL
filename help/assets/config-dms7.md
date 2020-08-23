@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 92017a4c2c9ab9f139440e40f368958bcc3bb2ef
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '5139'
+source-wordcount: '5132'
 ht-degree: 3%
 
 ---
@@ -38,7 +38,7 @@ Met de nieuwe architectuur is AEM verantwoordelijk voor master elementen en sync
 
 [Dynamische media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) is standaard uitgeschakeld. Als u gebruik wilt maken van dynamische mediafuncties, moet u deze inschakelen.
 
->[OPMERKING]
+>[!NOTE]
 >
 >Dynamische media - de Scene7-modus is alleen voor de AEM-auteur-instantie. Als dusdanig, moet u `runmode=dynamicmedia_scene7`op de instantie van de Auteur AEM vormen, niet de instantie van de Publicatie AEM.
 
@@ -52,7 +52,7 @@ java -Xms4096m -Xmx4096m -Doak.queryLimitInMemory=500000 -Doak.queryLimitReads=5
 
 Als u AEM Dynamische Media van 6.3 aan 6.4 bevordert (die nu de capaciteit voor nul onderbreking plaatsingen) omvat, moet u het volgende krullbevel in werking stellen om al uw voorinstellingen en configuraties van `/etc` aan `/conf` in CRXDE Lite te migreren.
 
->[OPMERKING]
+>[!NOTE]
 >
 >Als u de AEM op compatibiliteitswijze in werking stelt - dat wil zeggen, hebt u de verenigbaarheid geïnstalleerd-u niet te hoeven om deze bevelen in werking te stellen.
 
@@ -172,7 +172,7 @@ Tik op de algemene navigatiebalk van Dynamic Media Classic om de [!UICONTROL App
 
 >[!NOTE]
 >
->Selecteer **[!UICONTROL Overwrite in current folder, same base image name/extension]** om de consistentie met AEM te behouden.
+>Selecteer **[!UICONTROL Overwrite in current folder, same base image name/extension]** om consistentie met AEM te behouden.
 
 * **[!UICONTROL Overwrite in any folder, same base asset name/extension]** - Vereist dat de vervangende afbeelding dezelfde bestandsnaamextensie heeft als de oorspronkelijke afbeelding (de vervangende afbeelding wordt bijvoorbeeld `chair.jpg` vervangen `chair.jpg` en niet `chair.tif`). U kunt de vervangende afbeelding echter naar een andere map uploaden dan het origineel. De bijgewerkte afbeelding staat in de nieuwe map; het bestand kan niet meer op de oorspronkelijke locatie worden gevonden.
 * **[!UICONTROL Overwrite in any folder, same base asset name regardless of extension]** - Deze optie is de meest inclusieve vervangingsregel. U kunt een vervangende afbeelding uploaden naar een andere map dan het origineel, een bestand met een andere bestandsnaamextensie uploaden en het oorspronkelijke bestand vervangen. Als het oorspronkelijke bestand zich in een andere map bevindt, bevindt de vervangende afbeelding zich in de nieuwe map waarnaar het is geüpload.
@@ -220,7 +220,7 @@ U kunt bepalen welke elementtypen door Dynamic Media moeten worden verwerkt en d
 * Converteer een Adobe Photoshop-document (.PSD) naar een bannersjabloonelement voor personalisatie.
 * Rasteren een Adobe Illustrator-bestand (.AI) of een Adobe Photoshop Encapsulated Postscript-bestand (.EPS).
 
->[OPMERKING]
+>[!NOTE]
 >
 >U kunt videoprofielen en afbeeldingsprofielen gebruiken om respectievelijk de verwerking van video&#39;s en afbeeldingen te definiëren.
 
@@ -420,7 +420,7 @@ When the Spin Set is uploaded and published, you activate the name of the 2D Spi
    Let op: [!UICONTROL View Form]zoals ingesteld in de rechterbovenhoek van de [!UICONTROL Details] pagina, is de standaardweergave.
 
 1. Tik in het **[!UICONTROL Preset List]** deelvenster **[!UICONTROL Add]** om de definitievelden in het **[!UICONTROL Details]** deelvenster aan de rechterkant van het scherm te activeren.
-1. Typ in het **[!UICONTROL Details]** deelvenster [!UICONTROL Naam voorinstelling[!UICONTROL, een naam voor de voorinstelling.
+1. Typ in het **[!UICONTROL Details]** deelvenster in het [!UICONTROL Preset Name] veld een naam voor de voorinstelling.
 1. In the **[!UICONTROL Batch Set Type]** drop-down menu, select **[!UICONTROL Asset Set]**.
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Sub Type]** de optie **[!UICONTROL Multi-Axis Spin Set]**.
 1. Vouw uit **[!UICONTROL Asset Naming Conventions]** en tik vervolgens in de **[!UICONTROL File Naming]** vervolgkeuzelijst op **[!UICONTROL Custom]**.
