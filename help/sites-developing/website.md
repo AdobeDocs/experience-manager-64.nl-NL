@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4533'
+source-wordcount: '4528'
 ht-degree: 2%
 
 ---
@@ -75,7 +75,7 @@ Nadat u AEM hebt geïnstalleerd, toegang tot de ontwikkelomgeving van de CRXDE L
 
 Gebruik CRXDE Lite om de structuur van de mywebsite-toepassing in de opslagplaats te maken:
 
-1. Klik in de structuur links van CRXDE Lite met de rechtermuisknop op de **`/apps`** map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het dialoogvenster Map **** maken `mywebsite` de mapnaam en klik op **[!UICONTROL OK**.
+1. Klik in de structuur links van CRXDE Lite met de rechtermuisknop op de **`/apps`** map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het dialoogvenster Map **** maken `mywebsite` de mapnaam en klik op **OK**.
 1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het **[!UICONTROL Create Folder]** dialoogvenster `components` de mapnaam en klik op **[!UICONTROL OK]**.
 1. Klik met de rechtermuisknop op de `/apps/mywebsite` map en klik op **[!UICONTROL Create > Create Folder]**. Typ in het **[!UICONTROL Create Folder]** dialoogvenster `templates` de mapnaam en klik op **[!UICONTROL OK]**.
 
@@ -140,7 +140,7 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 1. Als u de paden wilt opgeven van de pagina&#39;s die deze sjabloon kunnen gebruiken, klikt u op de plusknop en typt u `/content(/.*)?` in het tekstvak dat wordt weergegeven. Klik vervolgens op **[!UICONTROL Next]**.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
    De waarde van de toegestane padeigenschap is een *reguliere expressie.* Pagina&#39;s die een pad hebben dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de `/content` map en alle subpagina&#39;s.
 
@@ -1082,7 +1082,7 @@ In deze sectie neemt u de component title op. Dit is een van de basiscomponenten
 
    ![chlimage_1-126](assets/chlimage_1-126.png)
 
->[!Nofferte]
+>[!NOTE]
 >U kunt een andere Titel en Type/Grootte op **[!UICONTROL Edit]** wijze plaatsen.
 
 ### Inclusief de component Alineasysteem {#including-the-paragraph-system-component}
@@ -1105,7 +1105,7 @@ Voeg de component parsys (één van de stichtingscomponenten) aan uw component v
 
 1. Vernieuw de **[!UICONTROL Products]** pagina in uw browser. Het heeft nu de parsys component, die als volgt wordt gezien:
 
-   ![chlimage_1-129](assets/chlimage_1-127.png)
+   ![chlimage_1-127](assets/chlimage_1-127.png)
 
 ### De afbeeldingscomponent maken {#creating-the-image-component}
 
@@ -1170,7 +1170,7 @@ In deze sectie wordt beschreven hoe u het afbeeldingsscript maakt.
 
 Het `cq:editConfig` knooptype laat u toe om bepaalde gedrag van componenten te vormen wanneer het uitgeven van hun eigenschappen.
 
-In deze sectie gebruikt u een knooppunt cq:editConfig om u in staat te stellen elementen van de Inhoudszoeker naar de afbeeldingscomponent te slepen.
+In deze sectie gebruikt u het knooppunt cq:editConfig om u in staat te stellen elementen van de Inhoudszoeker naar de afbeeldingscomponent te slepen.
 
 1. Maak in CRXDE Lite onder het knooppunt /apps/mywebsite/components/image als volgt een nieuw knooppunt:
 
@@ -1195,7 +1195,7 @@ In deze sectie gebruikt u een knooppunt cq:editConfig om u in staat te stellen e
 | groepen | Tekenreeks | media |
 | propertyName | Tekenreeks | ./imageReference |
 
-![chlimage_1-127](assets/chlimage_1-129.png)
+![chlimage_1-129](assets/chlimage_1-129.png)
 
 #### Het pictogram toevoegen {#adding-the-icon}
 
@@ -1275,7 +1275,7 @@ Het invoervak voor de zoekopdracht ziet er als volgt uit op de **[!UICONTROL Eng
       * **[!UICONTROL Description]**: Dit is mijn zoekcomponent
       * **[!UICONTROL Group]**: MyWebsite
    1. Klik **[!UICONTROL Next]** en klik vervolgens **[!UICONTROL Next]** opnieuw.
-   1. Klik in het deelvenster **[!UICONTROL Allowed Parents** op de **[!UICONTROL +]** knop en typ `*/parsys`.
+   1. Klik in het **[!UICONTROL Allowed Parents]** deelvenster op de **[!UICONTROL +]** knop en typ `*/parsys`.
    1. Click **[!UICONTROL Next]** and then click **[!UICONTROL OK]**.
 
 
@@ -1498,7 +1498,7 @@ In deze sectie voegt u uw zoekcomponent toe aan het alineasysteem.
 1. Klik op het driehoekje bij Sidetrap om terug te keren naar de **[!UICONTROL Edit]** modus.
 1. Sleep de **[!UICONTROL My Search]** component van de Sidetrap in het parsys kader. Het ziet er als volgt uit:
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
 1. Navigeer naar de **[!UICONTROL Products]** pagina. Zoek naar klanten in de invoerdoos en druk **[!UICONTROL Enter]**. U wordt omgeleid naar de **[!UICONTROL Search]** pagina. Overschakelen naar **[!UICONTROL Preview]** modus: de uitvoer heeft een vergelijkbare indeling als de volgende:
 
