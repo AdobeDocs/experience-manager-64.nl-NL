@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '5329'
 ht-degree: 0%
@@ -50,7 +50,7 @@ Zie de volgende onderwerpen voor informatie over het uitvoeren van ontvankelijk 
 * [Vloeiende rasters](/help/sites-developing/responsive.md#developing-a-fluid-grid)
 * [Adaptieve afbeeldingen](/help/sites-developing/responsive.md#using-adaptive-images)
 
-Tijdens het ontwerpen kunt u uw pagina&#39;s voor verschillende schermgrootten voorvertonen. **!UICONTROL Sidekick]**
+Tijdens het ontwerpen kunt u uw pagina&#39;s voor verschillende schermgrootten voorvertonen. **[!UICONTROL Sidekick]**
 
 ## Voordat u ontwikkelt {#before-you-develop}
 
@@ -132,7 +132,7 @@ In de volgende tabel worden de bestanden in de onderliggende css-map weergegeven
  </tbody> 
 </table>
 
-Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken worden opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
+Het bestand css.txt in de `/etc/designs/weretail/clientlibs` map bevat de CSS-bestanden die in de map met clientbibliotheken zijn opgenomen. De volgorde van de bestanden implementeert stijlprioriteit. Stijlen zijn specifieker naarmate de apparaatgrootte afneemt.
 
 `#base=css`
 
@@ -554,7 +554,7 @@ De klasse AdaptiveImageComponentServlet overschrijft ook de methode writeLayer. 
 
 ### Servlet van de Wijziging van de Verwijzing van het beeld (Gemeenschappelijke Geometrixx) {#image-reference-modification-servlet-geometrixx-common}
 
-Met de voorbeeldserver voor het wijzigen van afbeeldingsreferenties worden groottekenmerken voor het img-element gegenereerd om een afbeelding op de webpagina te schalen.
+Met de voorbeeldserver voor het wijzigen van afbeeldingsreferenties worden groottekenmerken voor het afbeeldingselement gegenereerd om een afbeelding op de webpagina te schalen.
 
 #### De servlet aanroepen {#calling-the-servlet}
 
