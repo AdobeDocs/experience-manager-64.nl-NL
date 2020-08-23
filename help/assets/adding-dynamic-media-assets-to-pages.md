@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: ec4fe78ff6101bc427570c48f80c1bd4f173e6e2
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2714'
+source-wordcount: '2712'
 ht-degree: 4%
 
 ---
@@ -45,7 +45,7 @@ Het toevoegen van een component Dynamische media aan een pagina is hetzelfde als
    ![chlimage_1-537](assets/chlimage_1-537.png)
 
 1. Sleep een component Dynamische media die u wilt gebruiken naar de pagina op de gewenste locatie.
-1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omgeven door een blauw vak. Tik op het pictogram **[!UICONTROL Configuration]** (moersleutel).
+1. Houd de muisaanwijzer rechtstreeks boven de component. Tik eenmaal om de werkbalk van de component weer te geven wanneer de component is omringd door een blauw vak. Tik op het pictogram **[!UICONTROL Configuration]** (moersleutel).
 1. [Bewerk indien nodig de componenten](#dynamic-media-components) en klik op het vinkje om de wijzigingen op te slaan.
 
 ### Dynamische mediacomponenten inschakelen {#enabling-dynamic-media-components}
@@ -228,7 +228,7 @@ Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde me
 U kunt een element zo instellen dat een koppeling wordt geopend. Stel de URL in en kies Openen in om aan te geven of deze in hetzelfde venster of in een nieuw venster moet worden geopend.
 Deze optie is niet beschikbaar als u afbeeldingssets, centrifuges of gemengde mediasets bekijkt.
 
-* **[!UICONTROL Height** en **[!UICONTROL Width]** ga waarde in pixel in als u het slimme gewassenbeeld een vaste grootte wilt hebben. Als u deze waarden niet invult, wordt het adaptief.
+* **[!UICONTROL Height]** en **[!UICONTROL Width]** Voer een waarde in pixels in als u wilt dat de slimme uitsnijdafbeelding een vaste grootte heeft. Als u deze waarden niet invult, wordt het adaptief.
 
 ### Interactieve mediacomponent {#interactive-media-component}
 
@@ -242,7 +242,7 @@ De component Interactieve media is slim. Afhankelijk van het feit of u een afbee
 > 
 >Om dit probleem te voorkomen, moet u ervoor zorgen dat AEM Sites-gebruikers de benodigde machtigingen hebben om toegang te krijgen tot de middelen.
 
-![chlimage_1-541](assets/chlimage_1-541.png)
+![chlimage_1-540](assets/chlimage_1-541.png)
 
 You can edit the following **[!UICONTROL General]** settings by clicking **[!UICONTROL Edit]** in the component.
 
@@ -272,7 +272,7 @@ Panoramische media-component is bedoeld voor die elementen die bolvormige panora
 * Een hoogte-breedteverhouding van 2:1.
 * Gelabeld met de trefwoorden &quot;equirechthoekig&quot; of (&quot;bolvormig&quot; + &quot;panorama&quot;) of (&quot;bolvormig&quot; + &quot;panoramisch&quot;). Zie [Tags](/help/sites-authoring/tags.md)gebruiken.
 
-Zowel de hoogte-breedteverhouding als de trefwoordcriteria zijn van toepassing op panoramische elementen voor de pagina met elementdetails en de WCM-component &quot;Panoramische media&quot;.
+Zowel zijn de aspectverhouding als de sleutelwoordcriteria van toepassing op panoramische activa voor de de detailpagina van activa en de component van &quot;Panoramische Media&quot; WCM.
 
 ![panoramisch-media-viewer-voorinstelling](assets/panoramic-media-viewer-preset.png)
 
