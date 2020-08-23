@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '7876'
 ht-degree: 0%
@@ -30,7 +30,7 @@ De service PDF genereren gebruikt native toepassingen om de volgende bestandsind
 
    >[!NOTE]
    >
-   >Acrobat® 9.2 of hoger is vereist voor het converteren van de Microsoft XPS-indeling naar PDF.
+   >Acrobat® 9.2 of hoger is vereist om Microsoft XPS-indeling naar PDF te converteren.
 
 * Autodesk AutoCAD 2005, 2006, 2007, 2008 en 2009 om DWF, DWG en DXW om te zetten (alleen in het Engels)
 * Corel WordPerfect 12 en X4 voor conversie van WPD, QPW, SHW (alleen in het Engels)
@@ -576,7 +576,7 @@ In dit gedeelte wordt ook het volgende uitgelegd:
 
 De service PDF genereren converteert oorspronkelijke bestandsindelingen door de toepassing aan te roepen die is gekoppeld aan de bestandsindeling en vervolgens te communiceren met de toepassing om het document af te drukken met de standaardprinter. De standaardprinter moet zijn ingesteld als de Adobe PDF-printer.
 
-In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die zijn betrokken bij native toepassingsondersteuning. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
+In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die bij de ondersteuning van native toepassingen betrokken zijn. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
 
 Interacties van componenten voor conversie van native bestanden
 
@@ -648,7 +648,7 @@ Dialoogbestanden in XML-bestanden reageren daarentegen gewoon op dialoogvensters
 
 Deze sectie en de volgende sectie gebruiken verschillende terminologie voor dialoogvakjes en de componenten die zij, afhankelijk van het perspectief bevatten dat wordt beschreven. De componenten van dialoogvensters zijn punten zoals knopen, gebieden, en combovakjes.
 
-Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen zoals *dialoogdoos*, *knoop*, *gebied*, en *combodoos* gebruikt.
+Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van een gebruiker beschrijven, worden termen als *dialoogvenster*, *knop*, *veld* en *keuzelijst* met invoervak gebruikt.
 
 Wanneer deze sectie en de volgende sectie dialoogvensters en hun componenten vanuit het perspectief van hun interne vertegenwoordiging beschrijven, wordt de term *vensterelement* gebruikt. De interne representatie van vensterelementen is een hiërarchie, waarbij elke instantie van een vensterelement wordt aangeduid met labels. De instantie van het vensterelement beschrijft ook zijn fysieke kenmerken en gedrag.
 
@@ -715,7 +715,7 @@ Als de kenmerken een bijschrift niet identificeren, kunt u in plaats daarvan een
 Wees op de hoogte van deze problemen:
 
 * Microsoft Spy++ geeft bijschriften weer met behulp van een en-teken (&amp;) om de hot key van het bijschrift te identificeren. Zo wordt bijvoorbeeld in Spry+ het bijschrift voor één dialoogvenster Afdrukken weergegeven als `Pri&nt`, wat aangeeft dat de sneltoets *n* is. Titels van bijschriften in script- en dialoogvenster-XML-bestanden moeten ampersands weglaten.
-* Sommige bijschriften bevatten regeleinden. Met de service PDF genereren kunnen geen regeleinden worden geïdentificeerd. Als een bijschrift een regeleinde bevat, neemt u genoeg van het bijschrift op om het te onderscheiden van de andere menu-items en gebruikt u vervolgens reguliere expressies voor het weggelaten deel. Een voorbeeld is ( `^Long caption title$`).]. (Zie Reguliere expressies [gebruiken in bijschriftkenmerken](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
+* Sommige bijschriften bevatten regeleinden. Met de service PDF genereren kunnen geen regeleinden worden geïdentificeerd. Als een bijschrift een regeleinde bevat, neemt u genoeg van het bijschrift op om het te onderscheiden van de andere menu-items en gebruikt u vervolgens reguliere expressies voor het weggelaten deel. Een voorbeeld is ( `^Long caption title$`). (Zie Reguliere expressies [gebruiken in bijschriftkenmerken](converting-file-formats-pdf.md#using-regular-expressions-in-caption-attributes).)
 * Gebruik tekeneenheden (ook wel escape-reeksen genoemd) voor gereserveerde XML-tekens. Gebruik bijvoorbeeld `&` voor ampersanden `<` en `>` voor kleiner dan en groter dan symbolen, `&apos;` voor apostroffen en `&quot;` voor aanhalingstekens.
 
 Als u aan dialoog of manuscriptdossiers van XML van plan bent te werken, zou u de toepassing Microsoft Spy++ moeten installeren.
