@@ -1,12 +1,12 @@
 ---
 title: AEM 6.4 Opmerkingen bij de release Cumulative Fix Pack Pack
-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4 Cumulatieve herstelpakketten.
+description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Cumulative Fix Packs.
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 87843465e8e0b372dc457630b84bcb5e50628dea
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2148'
+source-wordcount: '2147'
 ht-degree: 0%
 
 ---
@@ -16,7 +16,7 @@ ht-degree: 0%
 
 ## Geen informatie {#release-information}
 
-| Producten | **Adobe Experience Manager (AEM) 6,4** |
+| Producten | **Adobe Experience Manager (AEM) 6.4** |
 |---|---|
 | Versie | 6.4.8.1 |
 | Type | Cumulatief reparatiepakket |
@@ -32,7 +32,7 @@ AEM Cumulative Fix Pack 6.4.8.1 is afhankelijk van AEM 6.4 Service Pack 8. Daaro
 
 Enkele belangrijke punten van AEM 6.4.8.1 zijn:
 
-* De verwijderde integratie van het Aandeel van het Pakket met Adobe Experience Manager.
+* Integratie met Adobe Experience Manager voor delen van pakket is verwijderd.
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.21.
 
 Voor informatie over gestreken fijn papier en andere typen vrijkomende producten raadpleegt u [AEM Definities van vrijgave voor voertuigen bijwerken](../sites-deploying/update-release-vehicle-definitions.md)
@@ -48,13 +48,13 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 * Als de optie Coral.Select de waarde emptyOption=true instelt of een standaarditems met waarde = &quot;&quot; bevat, wordt in het bestand dropdownshowhide.js een fout aangetroffen: Uncaught TypeError: component.getValue is geen functie (NPR-33163).
 * Wanneer een component een andere component als data-SLUIT-middel omvat, wordt de placeholder van de oudercontainer componentencomponent vervangen met binnenste componentenplaceholder (NPR-33119).
 * Wanneer u een inhoudsfragment baseert op een schema en het een verplicht tekstgebied of een weggebied bevat, kan het inhoudsfragment niet opslaan (NPR-33007)
-* Wanneer u een douanecomponent creeert die uit-van-de-doos ervaringsfragmentcomponent gebruikt en het in de pagina&#39;s van AEM Sites gebruikt, AEM toont geen verwijzingen (gebruik) voor de douanecomponent (NPR-32852).
-* Wanneer een pagina met AEM Sites deel uitmaakt van een grote inhoudset met meerdere live-kopieën, kan de voorvertoning van de paginaversie niet worden geladen (NPR-32772).
+* Wanneer u een aangepaste component maakt met de fragmentcomponent voor het weergeven van fragmenten in de doos en deze gebruikt op AEM Sites-pagina&#39;s, geeft AEM geen referenties (gebruik) weer voor de aangepaste component (NPR-32852).
+* Wanneer een AEM Sites-pagina deel uitmaakt van een grote inhoudsset met meerdere live-kopieën, kan de voorvertoning van de paginaversiegeschiedenis niet worden geladen (NPR-32772).
 * Wanneer u een lancering bevordert voegt het &quot;cq:LiveRelationship&quot;mengsel aan elke component toe die in de lancering wordt toegevoegd. Het heeft invloed op alle lanceringen ongeacht of een lancering met of zonder het selecteren van — de Inherit bron pagina levende gegevens — optie (NPR-32664) wordt gecreeerd.
 * Wanneer de paginering begint, laadt de Plukker van de Fragmenten van de Ervaring niet alle punten (NPR-32605).
-* Kan geen startpagina voor een pagina AEM Sites maken. Het creëren van de lancering resulteert in een fout (NPR-32544).
+* Kan geen startpagina voor een AEM Sites-pagina maken. Het creëren van de lancering resulteert in een fout (NPR-32544).
 * Beheer Publicatie omvat geen middelen waarnaar wordt verwezen in de activeringswerkstroom (NPR-32463).
-* Met de Dispatcher Health Check wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33630).
+* Met de health check van de verzender wordt een `Invalid cookie header` waarschuwingsbericht weergegeven in de logbestanden (NPR-33630).
 * De integratie van Salesforce is kwetsbaar voor SSRF (NPR-32671).
 * Gereflecteerde XSS in PreferencesServlet (NPR-33439).
 
@@ -115,13 +115,13 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 >[!NOTE]
 >
->AEM Cumulative Fix Pack bevat geen correcties voor AEM Forms. Ze worden geleverd met een apart Forms-add-onpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Voor meer informatie, zie [AEM Forms toe:voegen-op pakket](#install-aem-forms-add-on-package) installeren en AEM Forms JEE installer [](#install-aem-forms-jee-installer)installeren.
+>AEM Cumulative Fix Pack bevat geen correcties voor AEM Forms. Ze worden geleverd met een apart Forms-add-onpakket. Daarnaast wordt een cumulatief installatieprogramma uitgebracht dat oplossingen voor AEM Forms op JEE bevat. Zie Het invoegpakket [AEM Forms](#install-aem-forms-add-on-package) installeren en het installatieprogramma [](#install-aem-forms-jee-installer)van AEM Forms JEE installeren voor meer informatie.
 
 * Correspondentenbeheer: Wanneer een gebruiker inhoud uit een [!DNL Word] document plakt, behoudt het tekstdocumentfragment de opmaak niet (NPR-33213).
 * Adaptieve Forms: Een nieuwe regel naar een tekenreeks in een woordenboek voor adaptieve formulieren voegt `&#xa;` tekens toe aan het woordenboek (NPR-33265).
 * Adaptieve Forms: De gebruiker kan geen adaptief formulier opslaan met meer dan één bijlage (NPR-33214).
 * Adaptieve Forms: `AddInstance` en `RemoveInstance` methoden voor Instance Manager-klasse voegen geen dynamisch aantal instanties toe voor lazy load fragments op [!DNL Internet Explorer 11] (NPR-33201).
-* Adaptieve Forms: Analytics ingeschakeld op een adaptief formulier dat is ingesloten in een [!DNL Sites] pagina, registreert geen gegevens voor de gebeurtenissen Verzenden en Afbreken (NPR-31359).
+* Adaptieve Forms: Analyses die zijn ingeschakeld op een adaptief formulier dat is ingesloten in een [!DNL Sites] pagina, registreren geen gegevens voor gebeurtenissen Verzenden en Afbreken (NPR-31359).
 * Adaptieve Forms: Wanneer een gebruiker de inhoud van een [!DNL Word] document in een adaptief formulier plakt en het verzendt, bevat het verzonden adaptieve formulier Unicode-tekens. Bovendien mislukt de conversie van PDF naar PDF/A vanwege Unicode-tekens (NPR-33348).
 * BackendIntegration: De verzoeken van het het gegevensmodel van de vorm ontbreken aangezien verfrist teken wegens onjuiste inactieve staat (NPR-33168) verloopt.
 * Documentservices: De conversie van PDF-service kan PDF-documenten niet converteren naar PostScript omdat Gibson-jars ontbreken voor [!DNL WebLogic] de [!DNL Linux] server (NPR-33515, CQ-4292239).
@@ -186,18 +186,18 @@ B. Gebruik de [HTTP API van de Manager](https://docs.adobe.com/content/docs/en/c
 
 ### Installatie valideren {#validate-install}
 
-1. Op de pagina Productinformatie (*/system/console/productinfo*) moet nu de bijgewerkte versie van de tekenreeks &quot;Adobe Experience Manager, versie 6.4.8.1&quot; onder Geïnstalleerde producten staan.
+1. Op de pagina Productinformatie (*/system/console/productinfo*) moet nu de bijgewerkte versietekenreeks &quot;Adobe Experience Manager, Version 6.4.8.1&quot; onder Geïnstalleerde Producten worden weergegeven.
 1. Alle OSGI-bundels zijn actief of FRAGMENT in de OSGI Console (Webconsole gebruiken: /systeem/console/bundels).
 1. De OSGI-bundel org.apache.jackrabbit.oak-core bevindt zich op versie 1.8.17 of hoger (gebruik webconsole: /systeem/console/bundels).
 
-Zie [Technische vereisten](../sites-deploying/technical-requirements.md)voor informatie over het gecertificeerde platform voor het uitvoeren van deze versie van AEM Sites en bedrijfsmiddelen.
+Zie [Technische vereisten](../sites-deploying/technical-requirements.md)voor informatie over het gecertificeerde platform voor deze versie van AEM Sites en Assets.
 
->[!Nofferte]
+>[!NOTE]
 >Na een geslaagde installatie van het pakket wordt een informatief bericht weergegeven waarin wordt aangegeven dat het inhoudspakket is geïnstalleerd, zoals **&quot;Content Package AEM-6.4-Service-Pack-7 is geïnstalleerd.&quot;**
 
-### Dynamic Media Viewers bijwerken (5.10.1) {#update-dynamic-media-viewers}
+### Dynamische media-viewers bijwerken (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.1 bevat een nieuwe versie van Dynamic Media viewers (5.10.1), waarmee op dubbele namen op de pagina Voorinstelling afbeelding kan worden gecontroleerd. Klanten van Dynamic Media wordt aangeraden de volgende opdracht uit te voeren om voorinstellingen van de viewer voor selectievakjes naar een actuele status over te brengen.
+AEM 6.4.8.1 bevat een nieuwe versie van Dynamic Media-viewers (5.10.1), waarmee op dubbele namen op de pagina Voorinstelling afbeelding kan worden gecontroleerd. Klanten met dynamische media wordt aangeraden de volgende opdracht uit te voeren om voorinstellingen van de viewer voor selectievakjes naar een actuele status over te brengen.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
@@ -207,7 +207,7 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 
 >[!NOTE]
 >
->Sla over als u geen AEM Forms gebruikt. Correcties in AEM Forms worden geleverd via een afzonderlijk invoegpakket.
+>Sla dit over als u AEM Forms niet gebruikt. Correcties in AEM Forms worden geleverd via een afzonderlijk invoegpakket.
 
 1. Controleer of u het AEM Cumulative Fix Pack hebt geïnstalleerd.
 1. Download het overeenkomstige formulierinvoegpakket dat in [AEM Forms-releases](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) voor uw besturingssysteem wordt vermeld.
@@ -217,9 +217,9 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 
 >[!NOTE]
 >
->Sla dit over als u geen AEM Forms gebruikt op JEE. Oplossingen in JEE AEM Forms worden geleverd via een afzonderlijk installatieprogramma.
+>Sla dit over als u AEM Forms niet gebruikt op JEE. Correcties in AEM Forms JEE worden geleverd via een afzonderlijk installatieprogramma.
 
-Voor informatie over het installeren van het cumulatieve installatieprogramma voor AEM Forms JEE en configuratie na-plaatsing, zie [AEM Forms JEE Patch Installer 0016](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0016.html).
+Zie [AEM Forms JEE Patch Installer 0016 voor informatie over de installatie van het cumulatieve installatieprogramma voor AEM Forms JEE en de configuratie na de implementatie](https://helpx.adobe.com/aem-forms/quick-fixes/6-4/jee-patch-0016.html).
 
 ### Uber Jar {#uber-jar}
 
