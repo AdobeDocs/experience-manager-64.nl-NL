@@ -9,9 +9,9 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2128'
+source-wordcount: '2124'
 ht-degree: 0%
 
 ---
@@ -278,7 +278,7 @@ Het volgende fragment illustreert de typische HTML-representatie van een pagina-
 
 App bezit het verpletteren. De front-end ontwikkelaar moet eerst een component van de Navigatie (in kaart gebracht aan een AEM navigatiecomponent) uitvoeren. Deze component zou URL-koppelingen renderen die moeten worden gebruikt in combinatie met een reeks routes die fragmenten van inhoud weergeven of verbergen.
 
-De onderliggende [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliotheek en zijn module `[`ModelRouter`] (/help/sites-developing/spa-routing.md) (die door gebrek wordt toegelaten) zijn de oorzaak van het pre-halen en het verlenen van toegang tot het model verbonden aan een bepaalde middelweg.
+De onderliggende [`PageModelManager`](/help/sites-developing/spa-blueprint.md#pagemodelmanager) bibliotheek en zijn [`ModelRouter`](/help/sites-developing/spa-routing.md) module (die door gebrek wordt toegelaten) zijn verantwoordelijk voor het pre-halen en het verlenen van toegang tot het model verbonden aan een bepaald middelweg.
 
 De twee entiteiten hebben betrekking op het begrip &#39;routering&#39;, maar het [`ModelRouter`](/help/sites-developing/spa-routing.md) is alleen verantwoordelijk voor het laden van de [&#39;PageModelManager](/help/sites-developing/spa-blueprint.md#pagemodelmanager) met een gegevensmodel dat is gestructureerd in synchronisatie met de huidige toepassingsstatus.
 
