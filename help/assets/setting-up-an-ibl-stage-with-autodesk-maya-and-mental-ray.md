@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '501'
 ht-degree: 0%
 
 ---
@@ -26,7 +26,7 @@ ht-degree: 0%
 1. Op afbeeldingen gebaseerde belichting instellen.
 
    1. Selecteer **[!UICONTROL Render Settings]****[!UICONTROL Render Render Using: mental ray]** in en open het tabblad Scène.
-   1. Open de **[!UICONTROL Render Environment]** accordeon en klik op **[!UICONTROL Render Create Image Based Lighting**.
+   1. Open de **[!UICONTROL Render Environment]** accordeon en klik op **[!UICONTROL Render Create Image Based Lighting]**.
    1. Klik op het vakpictogram met een pijl naar rechts links in het vak om het IBL-knooppunt te selecteren `mentalRayIblShape1`en sluit het vervolgens af **[!UICONTROL Render Settings]**.
    1. In **[!UICONTROL Attribute Editor]**, selecteer de transformatieknoop `mentalRayIbl1`, dan noem de transformatieknooppunt anders aan `AdobeIbl`.
    1. Stel de schaal van het knooppunt in om de omgevingssfeer aanzienlijk groter te maken dan het grootste 3D-object dat met dit werkgebied moet worden weergegeven (bijvoorbeeld `10000,10000,10000`).
