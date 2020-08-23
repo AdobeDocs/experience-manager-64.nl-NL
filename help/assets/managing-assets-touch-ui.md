@@ -4,9 +4,9 @@ description: Meer informatie over de verschillende functies voor middelenbeheer 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9499'
+source-wordcount: '9497'
 ht-degree: 1%
 
 ---
@@ -70,7 +70,7 @@ Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indel
 
    De omvang waarboven een actief als een groot actief wordt beschouwd, kan worden geconfigureerd. U kunt het systeem bijvoorbeeld zodanig configureren dat elementen boven 1000 MB (in plaats van 500 MB) als grote elementen worden beschouwd. In dit geval wordt de **[!UICONTROL Pause]** knop op de voortgangsbalk weergegeven wanneer bestanden van meer dan 1000 MB worden geüpload.
 
-   De knop **[!UICONTROL Pause]]**wordt niet weergegeven als een bestand van meer dan 1000 MB wordt geüpload met een bestand van minder dan 1000 MB. Als u echter het uploaden van bestanden met minder dan 1000 MB annuleert, wordt de **[!UICONTROL Pause]**knop weergegeven.
+   De **[!UICONTROL Pause]** knop wordt niet weergegeven als een bestand van meer dan 1000 MB wordt geüpload met een bestand van minder dan 1000 MB. Als u echter het uploaden van bestanden met minder dan 1000 MB annuleert, wordt de **[!UICONTROL Pause]** knop weergegeven.
 
    Om de groottegrens te wijzigen, vorm het `chunkUploadMinFileSize` bezit van de `fileupload`knoop in de bewaarplaats CRX.
 
@@ -108,9 +108,9 @@ Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indel
 
    Tik **[!UICONTROL Keep]** om het gedupliceerde element in AEM Assets te behouden. Tik **[!UICONTROL Delete]** om het geüploade dubbele element te verwijderen.
 
-   AEM Assets voorkomt dat u elementen uploadt met verboden tekens in de bestandsnaam. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, geeft AEM Assets een waarschuwingsbericht weer over de aanwezigheid van verboden tekens in de bestandsnaam en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
+   AEM Assets voorkomt dat u elementen uploadt met verboden tekens in de bestandsnaam. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, geeft AEM Assets een waarschuwingsbericht weer over de aanwezigheid van verboden tekens in de bestandsnaam en stopt de upload totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-   In het **[!UICONTROL Upload Assets]** dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat u de specifieke naamconventies voor bestanden voor uw organisatie kunt gebruiken.
+   In het **[!UICONTROL Upload Assets]** dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
@@ -192,7 +192,7 @@ Als u FTP gebruikt om elementen te uploaden, worden de uploadinstellingen die in
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
-Wanneer u afbeeldingsbestanden uploadt, waaronder AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het **[!UICONTROL Upload Job Options]** dialoogvenster:
+Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het **[!UICONTROL Upload Job Options]** dialoogvenster:
 
 * Witruimte uitsnijden vanaf de rand van afbeeldingen (zie beschrijving in bovenstaande tabel).
 * Handmatig uitsnijden vanaf de zijkanten van afbeeldingen (zie beschrijving in bovenstaande tabel).
@@ -205,9 +205,9 @@ Wanneer u afbeeldingsbestanden uploadt, waaronder AI-, EPS- en PSD-bestanden, ku
 |---|---|---|
 | Masker maken van uitknippad |  | Maak een masker voor de afbeelding op basis van de gegevens over het uitknippad. Deze optie is van toepassing op afbeeldingen die zijn gemaakt met beeldbewerkingstoepassingen waarin een uitknippad is gemaakt. |
 | Onscherp maskeren |  | Hiermee kunt u een verscherpingsfiltereffect perfectioneren op de uiteindelijke gedownsampelde afbeelding, waarbij u de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor contrast instelt die wordt genegeerd.<br> Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop. In tegenstelling tot wat de naam suggereert, is Onscherp masker een verscherpingsfilter. Stel onder Onscherp masker de gewenste opties in. De instellingsopties worden in het volgende beschreven: |
-|  | Hoeveelheid | Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels.<br> Beschouw het als de intensiteit van het effect. Het belangrijkste verschil tussen de waarden voor de hoeveelheid Onscherp masker in Dynamic Media en de waarden voor de hoeveelheid in Adobe Photoshop is dat Photoshop een bereik heeft van 1% tot 500%. In Dynamic Media is het waardebereik 0,0 tot en met 5,0. Een waarde van 5,0 is het ruwe equivalent van 500% in Photoshop; een waarde van 0,9 komt overeen met 90% enzovoort. |
+|  | Hoeveelheid | Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels.<br> Beschouw het als de intensiteit van het effect. Het belangrijkste verschil tussen de waarden voor Onscherp masker in Dynamic Media en de waarden voor de hoeveelheid in Adobe Photoshop is dat Photoshop een bereik heeft van 1% tot 500%. In Dynamic Media is het waardebereik 0,0 tot en met 5,0. Een waarde van 5,0 is het ruwe equivalent van 500% in Photoshop; een waarde van 0,9 komt overeen met 90% enzovoort. |
 |  | Radius | Hiermee bepaalt u de straal van het effect. Het waardebereik is 0-250.<br> Het effect wordt op alle pixels in een afbeelding uitgevoerd en wordt vanuit alle pixels in alle richtingen uitgestraald. De straal wordt gemeten in pixels. Als u bijvoorbeeld een vergelijkbaar verscherpingseffect wilt toepassen op een afbeelding van 2000 x 2000 pixels en een afbeelding van 500 x 500 pixels, stelt u een straal in van twee pixels op de afbeelding van 2000 x 2000 pixels en een straalwaarde van één pixel op de afbeelding van 500 x 500 pixels. Een hogere waarde wordt gebruikt voor een afbeelding met meer pixels. |
-|  | Drempel | Drempel is een contrastbereik dat wordt genegeerd wanneer het filter Onscherp masker wordt toegepast. Het is belangrijk dat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is 0-255. Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. 0=zwart, 128=50% grijs en 255=wit.<br> Een drempelwaarde van 12 negeert bijvoorbeeld kleine variaties door de helderheid van de huidskleur om ruis te voorkomen, maar voegt toch randcontrast toe aan contrasterende gebieden, zoals waar de wimpers de huid raken.<br> Als u bijvoorbeeld een foto van iemands gezicht hebt, heeft het filter Onscherp masker invloed op de contrasterende delen van de afbeelding, zoals waar de wimpers en de huid elkaar raken om een duidelijk contrastgebied te maken en op de zachte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele veranderingen in huidpixel. Er wordt op zijn beurt een lawaai en een ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> Om dit probleem te voorkomen, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixels te negeren die het contrast niet drastisch wijzigen, zoals een vloeiende skin.<br> Let op de structuur naast de ritssluiters in de afbeelding die u eerder hebt weergegeven. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
+|  | Drempel | Drempel is een contrastbereik dat wordt genegeerd wanneer het filter Onscherp masker wordt toegepast. Het is belangrijk dat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is 0-255. Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. 0=zwart, 128=50% grijs en 255=wit.<br> Een drempelwaarde van 12 negeert bijvoorbeeld kleine variaties door de helderheid van de huidskleur om ruis te voorkomen, maar voegt toch randcontrast toe aan contrasterende gebieden, zoals waar de wimpers de huid raken.<br> Als u bijvoorbeeld een foto van iemands gezicht hebt, heeft het filter Onscherp masker invloed op de contrasterende delen van de afbeelding, zoals waar de wimpers en de huid elkaar raken om een duidelijk contrastgebied te maken en op de zachte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele veranderingen in huidpixel. Er wordt op zijn beurt een lawaai en ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> Om dit probleem te voorkomen, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixels te negeren die het contrast niet drastisch wijzigen, zoals een vloeiende skin.<br> Let op de structuur naast de ritssluiters in de afbeelding die u eerder hebt weergegeven. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
 |  | Monochroom | Selecteer deze optie om de helderheid (intensiteit) van een afbeelding zonder scherp masker te wijzigen.<br> Schakel deze optie uit als u elke kleurcomponent afzonderlijk wilt ontscherpen. |
 | Achtergrond uitnemen |  | Hiermee verwijdert u automatisch de achtergrond van een afbeelding wanneer u deze uploadt. Deze techniek is nuttig om de aandacht op een bepaald voorwerp te vestigen en het van een drukke achtergrond te maken. Selecteer deze optie om de functie Achtergrond uitnemen en de volgende subopties in te schakelen of in te schakelen: |
 |  | Hoek | Vereist.<br> De hoek van de afbeelding die wordt gebruikt om de achtergrondkleur voor uitnemen te definiëren.<br> U kunt kiezen uit **Linksboven**, **Linksonder**, **Rechtsboven** of **Rechtsonder**. |
@@ -290,7 +290,7 @@ U kunt een videobestand transcoderen door een keuze te maken uit verschillende v
 
 #### Voorinstellingen batchset instellen bij uploaden {#setting-batch-set-presets-at-upload}
 
-Als u automatisch een set afbeeldingen of een set centrifuges wilt maken van geüploade afbeeldingen, klikt u op de kolom **[!UICONTROL Active** column voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren.
+Als u automatisch een set afbeeldingen of een set scènes wilt maken van geüploade afbeeldingen, klikt u op de **[!UICONTROL Active]** kolom voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren.
 
 Zie Voorinstellingen voor batchsets [configureren voor het automatisch genereren van afbeeldingssets en centrifuges](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) voor meer informatie over het maken van voorinstellingen voor batchsets.
 
@@ -716,7 +716,7 @@ In de [Collections-console](managing-collections-touch-ui.md#navigating-the-coll
 **Tijdlijn** gebruiken:
 
 1. Open de elementpagina voor een element of selecteer het in de Elementeninterface.
-1. Tik op het **[!UICONTROL Global Navigation]** pictogram en kies **Tijdlijn]** in de lijst.
+1. Tik op het **[!UICONTROL Global Navigation]** pictogram en kies **[Tijdlijn]** in de lijst.
 
    ![tijdlijn](assets/timeline.png)
 
@@ -883,7 +883,7 @@ Hieronder vindt u scenario&#39;s waarin u versies maakt:
 * U bewerkt de metagegevens van een element.
 * U gebruikt AEM bureaubladtoepassing om een bestaand middel uit te checken en uw wijzigingen op te slaan. Telkens wanneer het element wordt opgeslagen, wordt een nieuwe versie gemaakt.
 
-U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en de uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
+U kunt automatische versioning ook inschakelen via een workflow. Wanneer u een versie voor een element maakt, worden de metagegevens en uitvoeringen samen met de versie opgeslagen. Uitvoeringen zijn alternatieven voor dezelfde afbeeldingen, bijvoorbeeld een PNG-uitvoering van een geüpload JPEG-bestand.
 
 Met de versiefunctionaliteit kunt u het volgende doen:
 
