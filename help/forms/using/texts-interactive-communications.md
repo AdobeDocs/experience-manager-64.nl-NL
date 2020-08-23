@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7677327a-cc56-413b-b2e3-7b10d0d0319d
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2205'
+source-wordcount: '2199'
 ht-degree: 0%
 
 ---
@@ -194,11 +194,10 @@ Met de regeleditor in een tekst kunt u regels maken om tekenreeksen tekst of stu
 ## Tekst opmaken {#formatting}
 
 Tijdens het maken of bewerken van tekst verandert de werkbalk afhankelijk van het type bewerkingen dat u wilt uitvoeren: Alinea, Uitlijning of Lijst:
-[ ![Selecteer een type werkbalk](do-not-localize/toolbarselection.png)
 
 Selecteer een type werkbalk: Alinea, Uitlijning of Lijst
 
-](assets/toolbarselection.png) Werkbalk ![voor het bewerken van lettertypen](do-not-localize/paragraphtoolbar-1.png)
+![Werkbalk voor bewerken van lettertypen](do-not-localize/paragraphtoolbar-1.png)
 
 Werkbalk voor bewerken van lettertypen
 
