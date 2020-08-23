@@ -10,9 +10,9 @@ topic-tags: publish
 content-strategy: max-2018
 discoiquuid: 7dd08e81-5df6-4522-9f8c-48b4bba8927b
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1410'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -42,7 +42,7 @@ In eerste instantie zijn alle elementen alleen beschikbaar in de instantie Auteu
 
 Wanneer u een formulier selecteert en publiceert, worden de gerelateerde elementen en bronnen ook gepubliceerd. Afhankelijke activa worden echter niet gepubliceerd. In dit verband zijn gerelateerde activa en middelen activa die een gepubliceerd actief gebruikt of waarnaar wordt verwezen. Afhankelijke elementen zijn elementen die verwijzen naar een gepubliceerd element.
 
-Het is mogelijk dat uw Adaptieve Forms gebruik maakt van bepaalde configuraties, instellingen en aanpassingen die niet automatisch worden gepubliceerd. U wordt aangeraden deze bronnen te publiceren of te activeren voordat u een adaptief formulier publiceert.
+Het is mogelijk dat uw Adaptieve Forms bepaalde configuraties, instellingen en aanpassingen gebruikt die niet automatisch worden gepubliceerd. U wordt aangeraden deze bronnen te publiceren of te activeren voordat u een adaptief formulier publiceert.
 
 * Bewerkbare adaptieve formuliersjablonen
 * Cloud Servicen configureren voor Adobe Sign, Typekit, reCAPTCHA en Form Data Models
@@ -79,7 +79,7 @@ Middelen kunnen de volgende statussen hebben:
 
       >[!NOTE]
       >
-      >Selecteer geen meerdere elementen. Het tegelijk publiceren van meerdere elementen wordt niet ondersteund.
+      >Selecteer geen meerdere elementen. Het tegelijkertijd publiceren van meerdere elementen wordt niet ondersteund.
 
 
 1. Wanneer het publicatieproces wordt gestart, wordt een bevestigingsvenster weergegeven met alle gerelateerde elementen en bronnen. Tik in het dialoogvenster dat gerelateerde elementen bevat op **[!UICONTROL Publish]**. Het element wordt gepubliceerd en het dialoogvenster Elementen publiceren wordt weergegeven.
@@ -145,7 +145,7 @@ Voer de volgende stappen uit om de datum en het tijdstip van publicatie en het v
    1. Plaats de aanwijzer op een element en tik op **[!UICONTROL Unpublish]** unpublish ![](assets/unpublish.png).
    1. Voer een van de volgende handelingen uit en tik op Publiceren ongedaan maken:
 
-      * Tik in de kaartweergave op **[!UICONTROL Voer de selectie** ![aem6forms_check-circle](assets/aem6forms_check-circle.png)in en tik op het element. Het element is geselecteerd.
+      * Tik in de kaartweergave op **[!UICONTROL Enter Selection]** aaem6forms_check-circle ![](assets/aem6forms_check-circle.png)en tik op het element. Het element is geselecteerd.
       * Als u zich in de lijstweergave bevindt, houdt u de muisaanwijzer boven een element en tikt u op een ![geselecteerd vinkje](assets/selectassetcheckmark.png) . Het element is geselecteerd.
       * Tik op een element om de details ervan weer te geven.
       * Geef de eigenschappen van een element weer door te tikken op ![weergave-eigenschappen](assets/viewproperties.png)van weergave-eigenschappen.
