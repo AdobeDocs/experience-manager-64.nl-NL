@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 3d063268-17d7-4db6-8028-682537645377
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '821'
 ht-degree: 0%
 
 ---
@@ -51,7 +51,7 @@ Zie ook AEM 3D [integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodes
 
 1. Voeg het pad naar de uitvoerbare map Maya toe aan de omgevingsvariabele PATH van Windows.
 
-   Tik bijvoorbeeld op Windows Server 2012 op **[!UICONTROL Start > Configuratiescherm > Systeem en beveiliging > Systeem > Geavanceerde systeeminstellingen > Omgevingsvariabelen**. Voeg het volledige pad naar de `Maya2016\bin` map toe aan de `Path`systeemvariabele.
+   Tik bijvoorbeeld op Windows Server 2012 op **[!UICONTROL Start]>[!UICONTROL Control Panel]>[!UICONTROL System and Security]>[!UICONTROL System]>[!UICONTROL Advanced System Settings]>[!UICONTROL Environment Variables]**. Voeg het volledige pad naar de `Maya2016\bin` map toe aan de `Path`systeemvariabele.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
@@ -59,7 +59,7 @@ Zie ook AEM 3D [integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodes
 
    ![image2018-6-22_12-42-7](assets/image2018-6-22_12-42-7.png)
 
-1. Als u de bestandsindeling JT (Siemens PLM Open CAD) wilt inschakelen, navigeert u naar de eigenschap `/libs/settings/dam/v3D/assetTypes/jt` en stelt u deze in op **[!UICONTROL Enabled]** `true`.
+1. Als u de bestandsindeling JT (Siemens PLM Open CAD) wilt inschakelen, navigeert u naar `/libs/settings/dam/v3D/assetTypes/jt` de eigenschap en stelt u deze in op **[!UICONTROL Enabled]** `true`.
 1. Schakel in AEM Maya in als renderer. Begin door naar **[!UICONTROL Tools > General > CRXDE Lite]** te navigeren.
 1. Navigeer op de **[!UICONTROL CRXDE Lite]** pagina in het linkerdeelvenster naar het volgende:
 
@@ -79,7 +79,7 @@ Zie ook AEM 3D [integreren met AutoDesk 3ds Max](integrating-aem-3d-with-autodes
 
    Let op: `sample-3D-content.zip` is eerder gedownload voor validatie van de standaard 3D-functionaliteit.
 
-1. Keer terug naar **[!UICONTROL Kaart** mening en bekijk de berichtbanners die op de geupload activa worden getoond.
+1. Ga terug naar de **[!UICONTROL Card]** weergave en bekijk de berichtbanners die op de geüploade elementen worden weergegeven.
 
    De banner Converting Format wordt weergegeven terwijl Maya de native `.MA` indeling converteert naar `.FBX`.
 
