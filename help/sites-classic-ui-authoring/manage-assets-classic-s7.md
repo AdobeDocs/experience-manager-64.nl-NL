@@ -1,8 +1,8 @@
 ---
 title: Dynamische media Klassieke eigenschappen aan uw pagina toevoegen
 seo-title: Dynamische media Klassieke eigenschappen aan uw pagina toevoegen
-description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur via internet.
-seo-description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur via internet.
+description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur met internetverbinding.
+seo-description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur met internetverbinding.
 uuid: 66b9c150-c482-4a41-9772-fa39c135802c
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '3243'
+source-wordcount: '3234'
 ht-degree: 0%
 
 ---
@@ -109,7 +109,7 @@ U doet dit door de configuratie van de Wolk voor de pagina te vormen waar de act
 
 1. Klik in de assistent op het **[!UICONTROL Page]** pictogram en klik vervolgens op **[!UICONTROL Page Properties]**.
 
-1. Klik op **[!UICONTROL Cloud Services > Services toevoegen > Dynamic Media Classic (Scene7)**.
+1. Klik op **[!UICONTROL Cloud Services]>[!UICONTROL Add services]>[!UICONTROL Dynamic Media Classic (Scene7)]**.
 1. Selecteer in de vervolgkeuzelijst Klassieke Adobe Dynamic Media de gewenste configuratie en klik op **[!UICONTROL OK]**.
 
    ![chlimage_1-77](assets/chlimage_1-77.png)
@@ -240,7 +240,7 @@ Met de component Dynamische media Klassieke afbeelding kunt u dynamische media K
 
 **[!UICONTROL Output Format]** - Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld JPEG. Afhankelijk van de uitvoerindeling die u selecteert, hebt u mogelijk aanvullende configuratieopties. Zie [Voorinstellingen](/help/assets/managing-image-presets.md)voor afbeeldingen beheren.
 
-**[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in de Kwaliteit van dynamische media [*Adobe als afbeelding en in de Aanbevolen werkwijzen *](/help/assets/assets/s7_sharpening_images.pdf)voor verscherpen.
+**[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in de Kwaliteit van dynamische media [*Adobe als afbeelding en in de Aanbevolen werkwijzen*](/help/assets/assets/s7_sharpening_images.pdf) voor verscherpen.
 
 **[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door aanvullende opdrachten voor dynamische media in de klassieke afbeelding op te geven. Deze worden beschreven in Voorinstellingen [van het Beeld](/help/assets/managing-image-presets.md) beheren en de verwijzing [van het](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html)Bevel.
 
