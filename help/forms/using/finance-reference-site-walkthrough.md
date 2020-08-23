@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '9161'
+source-wordcount: '9150'
 ht-degree: 0%
 
 ---
@@ -164,7 +164,7 @@ AEM Forms on OSGi biedt op formulieren gebaseerde workflows waarmee u adaptieve 
 
 In de volgende afbeelding ziet u de AEM die de creditcardtoepassing verwerkt en een PDF-uitvoer van de toepassing genereert.
 
-![workflow](assets/workflow.png)
+![werkstroom](assets/workflow.png)
 
 #### Zie het zelf {#see-it-yourself-2}
 
@@ -534,7 +534,7 @@ Naast het analyseren van de prestaties van de hypotheektoepassing en het voortdu
 
 Zie Doel [instellen en integreren in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms)voor informatie over het configureren van Target in de AEM Forms-server.
 
-Voer de volgende stappen in de auteurinstantie uit om de verwezenlijking van A/B test voor Wij.Finance de toepassingsvorm van de hypotheektoepassing te ervaren:
+Voer de volgende stappen in de auteurinstantie uit om de verwezenlijking van A/B test voor Wij.Finance te ervaren de toepassingsvorm van de hypotheektoepassing:
 
 1. Ga naar **Forms &amp; Documents** op https://&lt;*hostname*>:&lt;*AuthorPort*>/aem/forms.html/content/dam/formsanddocuments.
 
@@ -699,7 +699,7 @@ Met de knop **Nu** toepassen op de nieuwsbrief stuurt u Sarah naar de toepassing
 Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zijn:
 
 * Het is gebaseerd op een XSD-schema, `insurance.xsd`.
-* Het is gemaakt met het thema Verzekering voor opmaak en gebruikt Layout zonder titels in de koptekst van het formulier voor mobiele navigatie. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon bekijken op `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` en het thema op `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
+* Het is gemaakt met het thema Verzekering voor opmaak en gebruikt Indeling zonder titels in de indeling van de koptekst van het formulier voor mobiele navigatie. Er wordt een progressieve mobiele lay-out weergegeven wanneer deze wordt geopend vanaf een mobiel apparaat. U kunt de sjabloon bekijken op `https://[host]:[Port]/libs/wcm/core/content/sites/templates.html/conf/we-finance` en het thema op `https://[host]:[Port]/editor.html/content/dam/formsanddocuments-themes/we-finance/insurance/jcr:content`.
 
 * Het bevat adaptieve formulierregels om services van het formuliergegevensmodel aan te roepen om gebruikersgegevens van aangemelde gebruikers vooraf in te vullen. Er wordt ook een beroep gedaan op services om vooraf informatie te verstrekken aan de hand van het socialezekerheidsnummer of het e-mailadres dat in het formulier is opgegeven. U kunt de modellen met formuliergegevens en de bijbehorende services bekijken op `https://[host]:[Port]/aem/forms.html/content/dam/formsanddocuments-fdm`.
 * Er worden verschillende adaptieve formuliercomponenten gebruikt om invoer vast te leggen en zich aan te passen aan de reacties van de gebruiker. Er worden ook componenten gebruikt, zoals E-mail, die HTML5-invoertypen ondersteunen.
@@ -871,7 +871,7 @@ De autoverzekeringsanalyse bevat ook een andere klant, Alison Jones. De klant-id
 * Het standaardbeleid kost minder dan het premiebeleid.
 * Het premiumbeleid heeft een beloning tegen diefstal en het standaardbeleid heeft een beloning op een intelligente manier
 
-Beide beleidsvormen gebruiken dezelfde interactieve communicatie. De secties in het beleid worden veranderd of verborgen gebaseerd op de beleid-type voorwaarde. U kunt de interactieve communicatie voor verlenging van automatische verzekering rechtstreeks openen en bekijken via https://[authorostHost]: auteurPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoInsurance/auto-Insurance-refresh
+Beide beleidsvormen gebruiken dezelfde interactieve communicatie. De secties in het beleid worden veranderd of verborgen gebaseerd op de beleid-type voorwaarde. U kunt de interactieve communicatie voor automatische verlenging van verzekering rechtstreeks openen en bekijken vanaf `https://[authorHost]: [authorPort]/aem/formdetails.html/content/dam/formsanddocuments/we-finance/autoinsurance/auto-insurance-renewal`
 
 **De Dynamica van Microsoft als gegevensbron gebruiken**
 
