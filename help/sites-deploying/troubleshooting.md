@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 5542de4e-6262-4300-9cf8-0eac79ba4f9a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
 source-wordcount: '1126'
 ht-degree: 0%
@@ -48,7 +48,7 @@ De verbose optie toont sommige van de het logboekoutput van Quickstart op de con
 
 In de volgende sectie worden enkele installatieproblemen en de bijbehorende oplossingen beschreven.
 
-### **Als u dubbelklikt op de Quickstart-jar, heeft dit geen effect en wordt het jar-bestand geopend met een ander programma (bijvoorbeeld archiefbeheer){#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}**
+### Als u dubbelklikt op de Quickstart-jar, heeft dit geen effect en wordt het jar-bestand geopend met een ander programma (bijvoorbeeld archiefbeheer) {#double-clicking-the-quickstart-jar-does-not-have-any-effect-or-opens-the-jar-file-with-another-program-for-example-archive-manager}
 
 Dit geeft meestal een probleem aan met de manier waarop de bureaubladomgeving van het besturingssysteem is geconfigureerd voor het openen van bestanden met de extensie .jar. Het kan ook aangeven dat u Java niet hebt geïnstalleerd of dat u een niet-ondersteunde versie van Java gebruikt.
 
@@ -65,7 +65,7 @@ Ga als volgt te werk om problemen op te lossen:
 * Soms kunt u de juiste koppeling herstellen door de ondersteunde Java-versie opnieuw te installeren.
 * U kunt CRX altijd uitvoeren met behulp van de opdrachtregel of start/stop-scripts zoals eerder in dit document is beschreven.
 
-### **Mijn toepassing die op CRX loopt werpt fouten uit het geheugen{#my-application-running-on-crx-throws-out-of-memory-errors}**
+### Mijn toepassing die op CRX loopt werpt fouten uit het geheugen {#my-application-running-on-crx-throws-out-of-memory-errors}
 
 >[!NOTE]
 >
@@ -86,7 +86,7 @@ java -Xmx256m -XX:+HeapDumpOnOutOfMemoryError -jar&amp;ast;.jar
 
 Hiermee wordt een heap-dump-bestand gegenereerd (**java_..hprof**) wanneer er onvoldoende geheugen beschikbaar is voor het proces. Het proces kan blijven lopen nadat de heapstortplaats werd geproduceerd. Gewoonlijk is één heap-dump-bestand voldoende om het probleem te analyseren.
 
-### **Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart{#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}**
+### Het welkomstscherm AEM wordt niet weergegeven in de browser nadat u hebt dubbelgeklikt op AEM QuickStart {#the-aem-welcome-screen-does-not-display-in-the-browser-after-double-clicking-aem-quickstart}
 
 In bepaalde situaties worden de AEM WCM-welkomstschermen niet automatisch weergegeven, ook al is de gegevensopslagruimte zelf in orde. Dit kan afhangen van de instelling van het besturingssysteem, de configuratie van de browser of vergelijkbare factoren.
 
@@ -100,7 +100,7 @@ Als alles anders ontbreekt, controleer de logboeken om te weten te komen wat is 
 
 ## Installaties met een toepassingsserver oplossen {#troubleshooting-installations-with-an-application-server}
 
-### **Pagina niet gevonden bij aanvragen van een geometrixx-buitenpagina{#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}**
+### Pagina niet gevonden bij aanvragen van een geometrixx-buitenpagina {#page-not-found-returned-when-requesting-a-geometrixx-outdoor-page}
 
 **Is van toepassing op WebLogic 10.3.5 en JBoss 5.1**
 
@@ -108,7 +108,7 @@ Wanneer een verzoek aan geometrixx-outdoor/en pagina een 404 (Pagina niet Fouten
 
 Zie in de stappen *Implementeren AEM webtoepassing* voor meer informatie.
 
-### **De grootte van de reactiekop kan groter zijn dan 4Kb{#response-header-size-can-be-greater-than-kb}**
+### De grootte van de reactiekop kan groter zijn dan 4Kb {#response-header-size-can-be-greater-than-kb}
 
 502 fouten kunnen erop wijzen dat de Webserver niet de grootte van de AEM HTTP- reactiekop kan behandelen. AEM kunnen HTTP-antwoordheaders genereren die cookies van meer dan 4 kB bevatten. Zorg ervoor dat uw servletcontainer wordt gevormd zodat de maximumgrootte van de reactiekop 4kb kan overschrijden.
 
@@ -126,7 +126,7 @@ Als permanente opslag is ingesloten in de installatiemap, bijvoorbeeld in de sta
 
 Als bij de installatie van AEM externe opslag wordt gebruikt, bijvoorbeeld een databaseserver, worden de gegevens niet automatisch verwijderd wanneer u een map verwijdert. De opslagconfiguratie wordt echter wel verwijderd, waardoor het herstellen van de JCR-inhoud moeilijk wordt.
 
-### **JSP-bestanden worden niet gecompileerd op JBoss{#jsp-files-are-not-compiled-on-jboss}**
+### JSP-bestanden worden niet gecompileerd op JBoss {#jsp-files-are-not-compiled-on-jboss}
 
 Als u JSP dossiers installeert of aan Experience Manager op JBoss bijwerkt en de overeenkomstige servlets niet worden gecompileerd, zorg ervoor de JBoss JSP compiler correct wordt gevormd. Zie voor meer informatie de\
 [Problemen met JSP-compilatie in JBoss](https://helpx.adobe.com/experience-manager/kb/jsps-dont-compile-jboss.html) -artikel.
