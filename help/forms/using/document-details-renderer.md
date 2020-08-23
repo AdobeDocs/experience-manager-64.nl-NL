@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: b6e88080-6ffc-4796-98c7-d7462bca454e
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '678'
 ht-degree: 0%
@@ -92,7 +92,7 @@ AEM Forms-werkruimte luistert naar `window.global.postMessage([Message],[Payload
 
 **AEM Forms-werkruimte voor communicatie met toepassingen van derden**
 
-Als de knoppen voor directe acties van de AEM Forms-werkruimte zichtbaar zijn, wordt dit aangeroepen `window.[External-App-Name].getMessage([Action])`, waarbij [ `Action]` wordt gelezen van de `routeActionMap`. De externe toepassing moet luisteren naar deze interface en vervolgens de AEM Forms-werkruimte via de `postMessage ()` API op de hoogte stellen.
+Als de knoppen voor directe actie van de AEM Forms-werkruimte zichtbaar zijn, wordt aangeroepen `window.[External-App-Name].getMessage([Action])`waar `[Action]` wordt gelezen van de `routeActionMap`. De externe toepassing moet luisteren naar deze interface en vervolgens de AEM Forms-werkruimte via de `postMessage ()` API op de hoogte stellen.
 
 Een Flex-toepassing kan bijvoorbeeld definiëren `ExternalInterface.addCallback('getMessage', listener)` om deze communicatie te ondersteunen. Als de externe toepassing het verzenden van formulieren via eigen knoppen wil verwerken, moet u dit opgeven `hideDirectActions = true() in the runtimeMap` en kunt u deze listener overslaan. Deze constructie is dus optioneel.
 
