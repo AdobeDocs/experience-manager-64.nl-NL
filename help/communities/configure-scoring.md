@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: ddb86546-d04b-4967-937b-50a19b0237a0
 translation-type: tm+mt
-source-git-commit: ffa45c8fa98e1ebadd656ea58e4657b669ddd830
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '956'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Scores en Badges Essentials {#scoring-and-badges-essentials}
 
-De AEM Communities-functie voor scoren en badges biedt de mogelijkheid om leden van de gemeenschap te identificeren en te belonen.
+Met de functie AEM Communities scoring en badges kunnen leden van de gemeenschap worden geïdentificeerd en beloond.
 
 De details van het instellen van de functie worden beschreven op
 
@@ -152,10 +152,12 @@ De schermafbeeldingen van gegevensopslagruimte zijn afkomstig van het instellen 
       * `/content/sites/engage/en/forum/jcr:content`
    * Eigenschappen voor scoring en badges toevoegen
 
-      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,
-/etc/community/scoring/rules/forums-scoring]`
-      * `badgingRules =[/etc/community/badging/rules/comments-scoring,
-/etc/community/badging/rules/forums-scoring]`
+      * `scoringRules = [/etc/community/scoring/rules/comments-scoring,`
+
+         `/etc/community/scoring/rules/forums-scoring]`
+      * `badgingRules =[/etc/community/badging/rules/comments-scoring,`
+
+         `/etc/community/badging/rules/forums-scoring]`
    * Zoek het knooppunt voor de forumcomponent
 
       * `/content/sites/engage/en/forum/jcr:content/content/primary/forum`
