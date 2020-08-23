@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '2603'
+source-wordcount: '2597'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ Elke stapcomponent heeft een **[!UICONTROL Step Properties]** dialoogvenster waa
 
 ### Step Properties - Common tab {#step-properties-common-tab}
 
-Een combinatie van de volgende eigenschappen is beschikbaar voor de meeste workflowstapcomponenten op het **[!UICONTROL Common]** tabblad van het dialoogvenster Eigenschappen:
+Een combinatie van de volgende eigenschappen is beschikbaar voor de meeste workflowstapcomponenten, op het **[!UICONTROL Common]** tabblad van het dialoogvenster Eigenschappen:
 
 * **[!UICONTROL Title]**
 
@@ -69,7 +69,7 @@ Een combinatie van de volgende eigenschappen is beschikbaar voor de meeste workf
 
 * **[!UICONTROL Handler Advance]**
 
-   Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten terugkeren naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
+   Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten doorlopen naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
 
 #### Step Properties - User/Group tab {#step-properties-user-group-tab}
 
@@ -108,7 +108,7 @@ Met deze optie **[!UICONTROL AND Split]** maakt u een splitsing in de workflow, 
 
 Een **[!UICONTROL Container]** stap start een ander workflowmodel dat wordt uitgevoerd als een onderliggende workflow.
 
-Hierdoor kunt u workflowmodellen **[!UICONTROL Container]]**opnieuw gebruiken om algemene stappen te implementeren. Een workflowmodel voor vertaling kan bijvoorbeeld worden gebruikt in meerdere bewerkingsworkflows.
+Hiermee **[!UICONTROL Container]** kunt u workflowmodellen opnieuw gebruiken om algemene stappen te implementeren. Een workflowmodel voor vertaling kan bijvoorbeeld worden gebruikt in meerdere bewerkingsworkflows.
 
 ![wf-28](assets/wf-28.png)
 
@@ -138,7 +138,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 * [**[!UICONTROL Common]**](#step-properties-common-tab)
 * **[!UICONTROL Process]**
 
-   * **[!UICONTROL The step to go to]]**: Selecteer de uit te voeren stap.
+   * **[!UICONTROL The step to go to]**: Selecteer de uit te voeren stap.
    * **[!UICONTROL Script Path]**: Het pad naar het ECMAScript dat bepaalt of het **[!UICONTROL Goto Step]** moet worden uitgevoerd.
    * **[!UICONTROL Script]**: Het ECMAScript dat bepaalt of om het uit te voeren **[!UICONTROL Goto Step]**.
 
@@ -268,7 +268,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 * [**[!UICONTROL User/Group]**](#step-properties-user-group-tab)
 * **[!UICONTROL Dialog]**
 
-   * **[!UICONTROL-dialoogvensterpad**: Het pad naar het dialoogvenster van het [dialoogvenster dat u maakt](#dialog-participant-step-creating-a-dialog).
+   * **[!UICONTROL Dialog Path**]: Het pad naar het dialoogvenster van het [dialoogvenster dat u maakt](#dialog-participant-step-creating-a-dialog).
 
 #### Stap deelnemer van dialoogvenster - Een dialoogvenster maken{#dialog-participant-step-creating-a-dialog}
 
@@ -396,7 +396,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 
 #### De dynamische Stap van de Deelnemer - ontwikkelt de deelnemerverkiezer {#dynamic-participant-step-developing-the-participant-chooser}
 
-U maakt de deelnemerkiezer. Daarom kunt u om het even welke selectielogica of criteria gebruiken. Uw deelnemerkiezer kan bijvoorbeeld de gebruiker (binnen een groep) selecteren die de minste werkitems heeft. U kunt om het even welk aantal deelnemerverkieskundigen tot stand brengen om met verschillende instanties van de **Dynamische Stap *van de Deelnemer te gebruiken]*in uw werkschemamodellen.
+U maakt de deelnemerkiezer. Daarom kunt u om het even welke selectielogica of criteria gebruiken. Uw deelnemerkiezer kan bijvoorbeeld de gebruiker (binnen een groep) selecteren die de minste werkitems heeft. U kunt om het even welk aantal deelnemerverkiessers tot stand brengen om met verschillende instanties van de **Dynamische component van de Stap** van de Deelnemer in uw werkschemamodellen te gebruiken.
 
 Creeer de dienst OSGi of een ECMAScript die een gebruiker selecteert om het het werkpunt aan toe te wijzen.
 
@@ -514,7 +514,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
 * [**[!UICONTROL User/Group]**](#step-properties-user-group-tab)
 * **[!UICONTROL Form]**
 
-   * **[!UICONTROL-formulierpad**: Het pad naar het [formulier dat u maakt](#form-participant-step-creating-the-form).
+   * **[!UICONTROL Form Path]**: Het pad naar het [formulier dat u maakt](#form-participant-step-creating-the-form).
 
 #### Stap deelnemer aan formulier - Het formulier maken {#form-participant-step-creating-the-form}
 
@@ -585,7 +585,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
       * De standaard ECMAScripts en OSGi diensten, zie [Ingebouwde Processen voor de Stappen](/help/sites-developing/workflows-process-ref.md)van het Proces.
       * Creërend ECMAScripts voor een **[!UICONTROL Process]** stap, zie het [Uitvoeren van een Stap van het Proces met een ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creërend de diensten OSGi voor een **[!UICONTROL Process]** stap, zie het [Uitvoeren van een Stap van het Proces met een Klasse](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class)van Java.
-   * **[!UICONTROL Handler Advance]**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten terugkeren naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
+   * **[!UICONTROL Handler Advance]**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten doorlopen naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
    * **[!UICONTROL Arguments]**: Argumenten die aan het proces moeten worden doorgegeven.
 
 
