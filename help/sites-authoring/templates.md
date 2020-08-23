@@ -10,7 +10,7 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
 translation-type: tm+mt
-source-git-commit: e2fbd2bb97264265ab45b436d6ac32fbf6fef2a7
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 8%
@@ -316,7 +316,7 @@ De volgende aspecten van een sjabloon kunnen worden bewerkt:
 
 * [Indeling](#editing-a-template-layout-template-author)
 
-   Hier kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf definiëren. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus **[Lay-out](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)**voor het ontwerpen van pagina&#39;s].
+   Hier kunt u de sjabloonlay-out voor de vereiste apparaatindelingen vooraf definiëren. De modus **Lay-out** voor het ontwerpen van sjablonen heeft dezelfde functionaliteit als de modus **[Lay-out](/help/sites-authoring/responsive-layout.md#defining-layouts-layout-mode)** voor het ontwerpen van pagina&#39;s.
 
 * [Paginabeleid](#editing-a-template-structure-template-author)
 
@@ -445,7 +445,7 @@ In de modus **Structuur** van de sjablooneditor:
 
    >[!NOTE]
    >
-   >Als meerdere componenten van hetzelfde type als initiële inhoud worden toegevoegd, geldt hetzelfde beleid voor alle componenten. Dit weerspiegelt dezelfde beperking in de **[ontwerpmodus](/help/sites-authoring/default-components-designmode.md)**voor statische sjablonen.
+   >Als meerdere componenten van hetzelfde type als initiële inhoud worden toegevoegd, geldt hetzelfde beleid voor alle componenten. Dit weerspiegelt dezelfde beperking in de **[ontwerpmodus](/help/sites-authoring/default-components-designmode.md)** voor statische sjablonen.
 
    ***Eigenschappen***
 
@@ -549,7 +549,7 @@ In de modus **Structuur** van de sjablooneditor:
       * Al ingevoerde inhoud wordt beschouwd als eerste inhoud en is alleen zichtbaar in de modus **Oorspronkelijke inhoud** .
    * De bovenliggende elementen van de ontgrendelde component kunnen niet worden verplaatst, geknipt of verwijderd.
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
    Dit omvat het ontgrendelen van containercomponenten zodat andere componenten kunnen worden toegevoegd, in de modus **Initiële content** of op de resulterende pagina&#39;s. Als u al componenten/content aan de container hebt toegevoegd voordat u de container ontgrendelt, worden deze niet meer weergegeven in de modus **Structuur**, maar in de modus **Initiële content**. In de **modus Structuur** wordt alleen de containercomponent zelf weergegeven met de lijst **Toegestane componenten**.
 
@@ -575,7 +575,7 @@ Hoewel alle content die in de modus **Structuur** is gemaakt, zichtbaar is in **
 
 >[!NOTE]
 >
->**De modus Oorspronkelijke inhoud** kan worden gebruikt als bewerkingsmodus voor pagina&#39;s die met die sjabloon zijn gemaakt. Daarom wordt het beleid niet gedefinieerd in de modus **Oorspronkelijke inhoud** , maar in de modus **[Structuur](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)**.
+>**De modus Oorspronkelijke inhoud** kan worden gebruikt als bewerkingsmodus voor pagina&#39;s die met die sjabloon zijn gemaakt. Daarom wordt het beleid niet gedefinieerd in de modus **Oorspronkelijke inhoud** , maar in de modus **[Structuur](/help/sites-authoring/templates.md#editing-a-template-structure-template-author)** .
 
 * Ontgrendelde componenten die beschikbaar zijn voor bewerking, worden gemarkeerd. Als deze optie is geselecteerd, hebben ze een blauwe rand:
 
