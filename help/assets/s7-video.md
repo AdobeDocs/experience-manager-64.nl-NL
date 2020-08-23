@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1621'
+source-wordcount: '1617'
 ht-degree: 0%
 
 ---
@@ -150,7 +150,7 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 >
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
-1. Tik in AEM op **[!UICONTROL Tools > Configuration Console**.
+1. Tik in AEM op **[!UICONTROL Tools]>[!UICONTROL Configuration Console]**.
 1. Navigeer in de **[!UICONTROL Configuration Console]** navigatiestructuur naar **[!UICONTROL Tools > DAM > Video Profiles]** de navigatiestructuur.
 1. Maak een nieuw S7-videoprofiel. Selecteer in het **[!UICONTROL New...]** menu de sjabloon Scene7 Video Profile **[!UICONTROL Create Page]** en selecteer deze. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
 
