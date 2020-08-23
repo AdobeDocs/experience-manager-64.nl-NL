@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '4204'
+source-wordcount: '4198'
 ht-degree: 1%
 
 ---
@@ -260,9 +260,9 @@ Zie [(Optioneel) Een voorvertoning weergeven van interactieve afbeeldingen](#opt
 1. Navigeer in de weergave Elementen naar de afbeeldingsbanner die u interactief wilt maken.
 1. Voer een van de volgende handelingen uit:
 
-   * Hover on the image, then tap **[!UICONTROL Select** (checkmark icon). Tik op de werkbalk op **[!UICONTROL Bewerken**.
+   * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). Tik op de werkbalk **[!UICONTROL Edit]**.
    * Tik met de muis op de afbeelding en tik vervolgens op **[!UICONTROL More actions]** (driepuntpictogram) > **[!UICONTROL Edit]**.
-   * Tik op de afbeelding om deze op de **[!UICONTROL Detail View]** pagina te openen. Tik op de werkbalk op **[!UICONTROL Bewerken**.
+   * Tik op de afbeelding om deze op de **[!UICONTROL Detail View]** pagina te openen. Tik op de werkbalk **[!UICONTROL Edit]**.
 
 1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
 1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
@@ -327,7 +327,7 @@ See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages
 
 **Een voorvertoning weergeven van interactieve afbeeldingen**:
 
-1. Navigeer in de weergave Middelen naar een bestaande, door u gemaakte interactieve afbeelding en tik erop om deze in Voorvertoning te openen.
+1. Navigeer in de weergave Middelen naar een bestaande, door u gemaakte interactieve afbeelding en tik erop om deze te openen in Voorvertoning.
 1. Near the upper-left corner of the Preview page, in the **[!UICONTROL Content]** drop-down list, tap **[!UICONTROL Viewers]**.
 1. Tik in de **[!UICONTROL Viewers]** lijst op **[!UICONTROL Shoppable_Banner]** of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
 1. Tik op hotspots in de afbeelding om de bijbehorende acties te testen.
@@ -485,7 +485,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-De demowebsite activeert het dialoogvenster Snelle weergave met behulp van een eenvoudige `loadQuickView()` functieaanroep. Deze functie heeft slechts één argument, namelijk de gegevens-URL van de Snelle weergave. Als dusdanig, is de laatste stap nodig om het shoppable interactieve beeld te integreren de volgende lijn van code aan de `quickViewActivate` manager toe te voegen:
+De demowebsite activeert het dialoogvenster Snelle weergave met een eenvoudige `loadQuickView()` functieaanroep. Deze functie heeft slechts één argument, namelijk de gegevens-URL van de Snelle weergave. Als dusdanig, is de laatste stap nodig om het shoppable interactieve beeld te integreren de volgende lijn van code aan de `quickViewActivate` manager toe te voegen:
 
 ```xml
 loadQuickView(quickViewUrl);
