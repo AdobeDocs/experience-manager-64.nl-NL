@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: bf155d8c-c012-4cb4-89a6-ceead715630e
 translation-type: tm+mt
-source-git-commit: 284339ee1ce0ffae97f732b569f73c732f063273
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '675'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
@@ -50,8 +50,8 @@ Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij gepla
 
    Zie 3D- [elementen](/help/sites-classic-ui-authoring/classicui-view-3d-assets.md)weergeven.
 
-1. Tik op de **pagina vanuit** Adobe Experience Manager **[!UICONTROL Navigation]** op **[!UICONTROL Assets**.
-1. Tik in de rechterbovenhoek van de pagina vanuit de vervolgkeuzelijst **[!UICONTROL View** (UICONTROL) op **[!UICONTROL Card View]**.
+1. Tik vanuit **Adobe Experience Manager** op de **[!UICONTROL Navigation]** pagina **[!UICONTROL Assets]**.
+1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
 1. Navigeer naar een 3D-object dat u wilt renderen.
 
 1. Tik op de kaart van het 3D-object om dit te openen op de pagina met elementdetails.
