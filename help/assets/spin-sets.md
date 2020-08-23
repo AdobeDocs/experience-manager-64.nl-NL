@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: afacb3ad-e4ad-4d06-a898-f3f2da8bbb64
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
 workflow-type: tm+mt
-source-wordcount: '1758'
+source-wordcount: '1755'
 ht-degree: 6%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 6%
 
 # Spin Sets {#spin-sets}
 
-Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek ophalen.
+Een centrifugeerset simuleert de echte handeling waarbij een object wordt omgedraaid om het te onderzoeken. Met centrifuges kunt u items vanuit elke hoek bekijken en de belangrijkste visuele details vanuit elke hoek verkrijgen.
 
 Een centrifugeerset simuleert een kijkervaring van 360 graden. Dynamische media biedt centrifugesets met één as waarin gebruikers een item kunnen roteren. Bovendien kunnen gebruikers met een paar eenvoudige muisklikken in- en uitzoomen op een vrije vorm en een willekeurige weergave pannen. Op deze manier kunnen gebruikers een item vanuit een bepaald gezichtspunt nader onderzoeken.
 
@@ -110,7 +110,7 @@ Batchsets worden door het IPS (Image Production System) gemaakt als onderdeel va
 
 **Om centrifuges te maken:**
 
-1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set**. U kunt de set ook maken vanuit een map die uw assets bevat.
+1. In Assets, navigate to where you want to create a spin set, tap **[!UICONTROL Create]**, and select **[!UICONTROL Spin Set]**. U kunt de set ook maken vanuit een map die uw assets bevat.
 
    ![chlimage_1-381](assets/chlimage_1-381.png)
 
@@ -176,7 +176,7 @@ U kunt diverse bewerkingstaken uitvoeren op bijvoorbeeld de volgende centrifuges
 * Voorinstellingen voor viewers toepassen.
 * Verwijder de centrifugeset.
 
-**Een centrifuusset bewerken:**
+**Een centrifugeset bewerken:**
 
 1. Voer een van de volgende handelingen uit:
 
