@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d12e6ea3-aaf4-4672-9679-3c16c76d7d5b
 translation-type: tm+mt
-source-git-commit: 5dba0e6c4ce4dbdf3254f511476a035c60a81810
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '1227'
+source-wordcount: '1225'
 ht-degree: 8%
 
 ---
@@ -139,7 +139,7 @@ Dynamische media ondersteunt de levering van statische elementen. Dit zijn aanvu
 
    Als de registratie-id bijvoorbeeld `87654321|MyCompany`is, is de naam van de klant `MyCompany`.
 
-1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL-Cloud Services**, tik op het AEM en navigeer naar **[!UICONTROL General > CRXDE Lite]**.
+1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Cloud Service]de AEM en navigeer naar het pictogram****[!UICONTROL General > CRXDE Lite]**.
 1. Kopieer het volledige pad voor video-uitvoering vanuit de JCR (Java Content Repository).
 
    Het weergavepad van de video kan er bijvoorbeeld ongeveer als volgt uitzien:
