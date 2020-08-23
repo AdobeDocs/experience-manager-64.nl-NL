@@ -9,7 +9,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '5857'
 ht-degree: 1%
@@ -301,7 +301,11 @@ Selecteer **Transparantie** om de transparantie-instellingen te configureren tij
 
 **Met Alle lijnen converteren naar contouren** worden alle lijnen omgezet in eenvoudige gevulde paden op pagina&#39;s met transparantie. Met deze optie blijft de breedte van lijnen tijdens het afvlakken consistent. Houd er rekening mee dat dunne lijnen hierdoor iets dikker worden weergegeven en dat de prestaties van de afvlakking kunnen afnemen.
 
-**Complexe gebieden** knippen zorgt ervoor dat de grenzen tussen vectorillustraties en gerasterde illustraties langs objectpaden vallen. Met deze optie worden stitching-artefacten verminderd die ontstaan wanneer een onderdeel van een logboek] &quot;>
+**Complexe gebieden** knippen zorgt ervoor dat de grenzen tussen vectorillustraties en gerasterde illustraties langs objectpaden vallen. Met deze optie worden stitching-artefacten verminderd die ontstaan wanneer ze deel uitmaken van een logboek
+
+<!--
+NOTE to WRITER - The above sentence is incomplete.
+-->
 
 >[!NOTE]
 >
