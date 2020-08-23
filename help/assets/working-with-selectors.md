@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 262eb911-3dcb-475d-b410-8bcac1347905
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
-source-wordcount: '704'
+source-wordcount: '701'
 ht-degree: 17%
 
 ---
@@ -38,7 +38,7 @@ Gebruik de productkiezer om een product te kiezen wanneer u een hotspot of afbee
 
 1. Ga naar de carrouselset, de interactieve afbeelding of de interactieve video en tik op het tabblad **[!UICONTROL Actions]** (alleen beschikbaar als u een hotspot of afbeelding met hyperlinks hebt gedefinieerd).
 
-   De productkiezer bevindt zich in het gebied **[!UICONTROL-handelingstype** .
+   The Product selector is in the **[!UICONTROL Action Type]** area.
 
    ![chlimage_1-521](assets/chlimage_1-521.png)
 
@@ -105,7 +105,7 @@ Zie ook [Asset Picker](asset-selector.md) voor meer informatie.
 
    ![chlimage_1-533](assets/chlimage_1-533.png)
 
-   U kunt wijzigen waar AEM naar elementen bladert door naar een andere map in het **[!UICONTROL Path]** veld te navigeren.
+   U kunt de locatie waar AEM naar elementen bladert wijzigen door naar een andere map in het **[!UICONTROL Path]** veld te navigeren.
 
    Tik **[!UICONTROL Collection]** om alleen te zoeken naar elementen in verzamelingen.
 
