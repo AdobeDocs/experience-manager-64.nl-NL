@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
 workflow-type: tm+mt
 source-wordcount: '521'
 ht-degree: 2%
@@ -60,7 +60,7 @@ De Panoramische beeldviewer werkt alleen correct binnen AEM als u de voorinstell
    >
    >Alleen afbeeldingen die binnen de maximaal toegestane afbeeldingsgrootte vallen, worden ondersteund. Verzoeken om afbeeldingen die groter zijn dan de maximale grootte, leveren een reactie van 403 op.
 
-1. Ga als volgt te werk onder **Aanvraagkenmerken]** :
+1. Ga als volgt te werk onder **[Aanvraagkenmerken]** :
 
    * Instellen **[!UICONTROL Request Obfuscation Mode]** op **[!UICONTROL Disabled]**.
    * Instellen **[!UICONTROL Request Locking Mode]** op **[!UICONTROL Disabled]**.
