@@ -3,9 +3,9 @@ title: Elementen van HTTP-API in [!DNL Adobe Experience Manager].
 description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren met de HTTP API in [!DNL Adobe Experience Manager Assets].
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 5125cf56a71f72f1391262627b888499e0ac67b4
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '1446'
+source-wordcount: '1540'
 ht-degree: 0%
 
 ---
@@ -24,6 +24,9 @@ De API-reactie is een JSON-bestand voor sommige MIME-typen en een antwoordcode v
 
 Na de gebeurtenis [!UICONTROL Off Time]zijn een middel en de uitvoeringen ervan niet beschikbaar via de [!DNL Assets] webinterface en via de HTTP-API. De API retourneert een foutbericht van 404 als het in de toekomst [!UICONTROL On Time] is of in het verleden [!UICONTROL Off Time] is.
 
+>[!CAUTION]
+>
+>[HTTP API werkt de meta-gegevenseigenschappen](#update-asset-metadata) in `jcr` namespace bij. De gebruikersinterface van de Experience Manager werkt echter de eigenschappen van metagegevens in de `dc` naamruimte bij.
 
 ## Gegevensmodel {#data-model}
 
@@ -66,17 +69,17 @@ In [!DNL Experience Manager] een map zijn de volgende componenten beschikbaar:
 
 De HTTP-API voor middelen bevat de volgende functies:
 
-* Haal een mappenlijst op.
-* Maak een map.
-* Maak een element.
-* Binair element bijwerken.
-* Metagegevens van elementen bijwerken.
-* Een elementuitvoering maken.
-* Een elementuitvoering bijwerken.
-* Maak een middelenopmerking.
-* Kopieer een map of element.
-* Een map of element verplaatsen.
-* Een map, element of uitvoering verwijderen.
+* [Haal een mappenlijst](#retrieve-a-folder-listing)op.
+* [Maak een map](#create-a-folder).
+* [Maak een element](#create-an-asset).
+* [Binair](#update-asset-binary)element bijwerken.
+* [Metagegevens](#update-asset-metadata)van elementen bijwerken.
+* [Een elementuitvoering](#create-an-asset-rendition)maken.
+* [Een elementuitvoering](#update-an-asset-rendition)bijwerken.
+* [Maak een middelenopmerking](#create-an-asset-comment).
+* [Kopieer een map of element](#copy-a-folder-or-asset).
+* [Een map of element](#move-a-folder-or-asset)verplaatsen.
+* [Een map, element of uitvoering](#delete-a-folder-asset-or-rendition)verwijderen.
 
 >[!NOTE]
 >
@@ -157,7 +160,7 @@ Hiermee werkt u de binaire waarde (uitvoering met de oorspronkelijke naam) van e
 
 Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in de `dc:` naamruimte bijwerkt, werkt de API dezelfde eigenschap in de `jcr` naamruimte bij. De API synchroniseert de eigenschappen niet onder de twee naamruimten.
 
-**Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"dc:title":"My Asset"}}'`
+**Verzoek**: `PUT /api/assets/myfolder/myAsset.png -H"Content-Type: application/json" -d '{"class":"asset", "properties":{"jcr:title":"My Asset"}}'`
 
 **Antwoordcodes**: De responscodes zijn:
 
@@ -165,6 +168,27 @@ Werkt de metagegevenseigenschappen van het element bij. Als u een eigenschap in 
 * 404 - NIET GEVONDEN - als Asset niet kon worden gevonden of betreden op de verstrekte URI.
 * 412 - VOORWAARDE MISLUKT - als de wortelinzameling niet kan worden gevonden of worden betreden.
 * 500 - INTERNE SERVERFOUT - als iets anders fout gaat.
+
+### Metagegevens synchroniseren tussen `dc` en `jcr` naamruimte {#sync-metadata-between-namespaces}
+
+De API-methode werkt de metagegevenseigenschappen in de `jcr` naamruimte bij. De updates die worden gemaakt met Touch-UI wijzigen de eigenschappen van metagegevens in de `dc` naamruimte. Als u de waarden van metagegevens wilt synchroniseren tussen `dc` en `jcr` naamruimte, kunt u een workflow maken en de Experience Manager configureren om de workflow uit te voeren bij het bewerken van elementen. Gebruik een ECMA-script om de vereiste eigenschappen van metagegevens te synchroniseren. In het volgende voorbeeldscript wordt de tekenreeks title tussen `dc:title` en `jcr:title`gesynchroniseerd.
+
+```javascript
+var workflowData = workItem.getWorkflowData();
+if (workflowData.getPayloadType() == "JCR_PATH")
+{
+ var path = workflowData.getPayload().toString();
+ var node = workflowSession.getSession().getItem(path);
+ var metadataNode = node.getNode("jcr:content/metadata");
+ var jcrcontentNode = node.getNode("jcr:content");
+if (jcrcontentNode.hasProperty("jcr:title"))
+{
+ var jcrTitle = jcrcontentNode.getProperty("jcr:title");
+ metadataNode.setProperty("dc:title", jcrTitle.toString());
+ metadataNode.save();
+}
+}
+```
 
 ## Een elementuitvoering maken {#create-an-asset-rendition}
 
