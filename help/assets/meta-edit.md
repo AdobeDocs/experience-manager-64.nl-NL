@@ -3,10 +3,10 @@ title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van elementen in AEM Assets en verschillende manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: e9f50a1ddb6a162737e6e83b976f96911b3246d6
 workflow-type: tm+mt
-source-wordcount: '428'
-ht-degree: 8%
+source-wordcount: '472'
+ht-degree: 7%
 
 ---
 
@@ -54,3 +54,11 @@ U kunt uw eigen naamruimten toevoegen binnen AEM. Net zoals er vooraf gedefiniee
 
 1. Als u een naamruimte wilt toevoegen, klikt of tikt u **[!UICONTROL New]** onderaan.
 1. Geef een aangepaste naamruimte op in de XML-naamruimteconventie (geef de id op in de vorm van een URI en een bijbehorend voorvoegsel voor de id) en klik of tik **[!UICONTROL Save]**.
+
+## Tips en beperkingen {#best-practices-limitations}
+
+* De metagegevensupdates via Touch-UI wijzigen de eigenschappen van metagegevens in de `dc` naamruimte. Wanneer updates via de HTTP-API worden uitgevoerd, veranderen de eigenschappen van de metagegevens in de `jcr` naamruimte. Zie [hoe u metagegevens kunt bijwerken met de HTTP-API](/help/assets/mac-api-assets.md#update-asset-metadata).
+
+>[!MORELIKETHIS]
+>
+>* [Informatie over metagegevens en de behoefte aan metagegevens in Middelen](metadata.md)
