@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 translation-type: tm+mt
-source-git-commit: 38d3a204e3ef038ef4f848e12b9fc73f127ec488
+source-git-commit: 2a24d7b9232f39d47d79d995251a14beb0c0f666
 workflow-type: tm+mt
-source-wordcount: '702'
+source-wordcount: '700'
 ht-degree: 5%
 
 ---
@@ -58,10 +58,8 @@ Voer de volgende stappen in de `/apps` map uit om een hogere maximale bestandsgr
 
    ![chlimage_1-203](assets/chlimage_1-203.png)
 
-1. Vernieuw de browser. Het bedekkingsknooppunt `/jcr_root/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` is geselecteerd.
-1. Voer op het **[!UICONTROL Properties]** tabblad de juiste waarde in bytes in om de maximale grootte tot de gewenste grootte te verhogen. Voer bijvoorbeeld de volgende waarde in om de maximale grootte van 30 GB te verhogen:
-
-   `{sizeLimit : "32212254720"}`
+1. Vernieuw de browser. Het bedekkingsknooppunt `/apps/dam/gui/content/assets/jcr:content/actions/secondary/create/items/fileupload` is geselecteerd.
+1. Voer op het **[!UICONTROL Properties]** tabblad de juiste waarde in bytes in om de maximale grootte tot de gewenste grootte te verhogen. Voer bijvoorbeeld een `32212254720` waarde in om de maximale grootte te verhogen tot 30 GB.
 
 1. From the toolbar, tap **[!UICONTROL Save All]**.
 1. Tik in AEM op **[!UICONTROL Tools > Operations > Web Console]**.
