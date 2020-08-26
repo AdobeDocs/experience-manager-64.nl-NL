@@ -437,7 +437,7 @@ Hiermee wordt het serviceobject voor dit ContextHub.Store.JSONPStore-object opge
 Een object met de volgende eigenschappen:
 
 * **host:** (Tekenreeks) De servernaam of het IP-adres.
-* **jsonp:** (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*} wordt toegevoegd aan het object service.params.
+* **jsonp:** (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de {callback: &quot;ContextHub.Callbacks.*Object.name*} wordt toegevoegd aan het object service.params.
 
 * **param:** (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
 * **pad:** (Tekenreeks) Het pad naar de service.
