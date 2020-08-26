@@ -38,7 +38,7 @@ CRXDE Lite gebruiken:
 * Type: `String`
 * Waarde: `foundation/components/page`
 
-1. Klik op het groene **[!UICONTROL[+]Add]**
+1. Klik op het groene **[!UICONTROL [+]Add]**
 1. Klik op **[!UICONTROL Save All]**
 
 ![chlimage_1-231](assets/chlimage_1-231.png)
