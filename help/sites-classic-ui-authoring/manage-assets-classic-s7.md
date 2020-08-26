@@ -1,8 +1,8 @@
 ---
 title: Dynamische media Klassieke eigenschappen aan uw pagina toevoegen
 seo-title: Dynamische media Klassieke eigenschappen aan uw pagina toevoegen
-description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur met internetverbinding.
-seo-description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur met internetverbinding.
+description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur via internet.
+seo-description: Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan webpagina's, mobiele apparaten, e-mailprogramma's en displays en drukapparatuur via internet.
 uuid: 66b9c150-c482-4a41-9772-fa39c135802c
 contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
 workflow-type: tm+mt
 source-wordcount: '3234'
 ht-degree: 0%
@@ -59,7 +59,7 @@ Publiceren naar Dynamic Media Classic vanaf de middelenconsole als de elementen 
 
 1. Klik in de AEM klassieke UI op **[!UICONTROL Digital Assets]** om toegang te krijgen tot het beheer van digitale elementen.
 
-1. Selecteer het element (of de elementen) of de map in de doelmap die u naar Dynamic Media Classic wilt publiceren, klik met de rechtermuisknop en selecteer **[!UICONTROL Publish to Dynamic Media Classic]**. U kunt ook een keuze maken **[!UICONTROL Publish to Dynamic Media Classic]** in het menu **[!UICONTROL Tools] .
+1. Selecteer het element (of de elementen) of de map in de doelmap die u naar Dynamic Media Classic wilt publiceren, klik met de rechtermuisknop en selecteer **[!UICONTROL Publish to Dynamic Media Classic]**. U kunt ook een keuze maken **[!UICONTROL Publish to Dynamic Media Classic]** in het **[!UICONTROL Tools]** menu.
 
    ![chlimage_1-76](assets/chlimage_1-76.png)
 
