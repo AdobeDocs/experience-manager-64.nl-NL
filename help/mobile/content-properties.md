@@ -83,7 +83,7 @@ In de volgende tabellen worden de eigenschappen en knooppunten van de inhoud bes
 | dps-readingPosition | Tekenreeks | from {&quot;reset&quot;,&quot;keep&quot;} |
 | dps-horizontalSwipe | Boolean |  |
 | dps-allowDownload | Boolean |  |
-| dps-openDefault | Tekenreeks | van {1}&quot;browsePage&quot;,&quot;contentView&quot;} |
+| dps-openDefault | Tekenreeks | van {&quot;browsePage&quot;,&quot;contentView&quot;} |
 | dps-lay-out | Tekenreeks |  |
 
 ## Inhoudsknooppunten {#content-nodes}
