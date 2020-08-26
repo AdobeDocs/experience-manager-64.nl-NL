@@ -10,10 +10,10 @@ topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: babfbd7e864eb15c0b06b114fea4cef6db2a6a07
 workflow-type: tm+mt
-source-wordcount: '601'
-ht-degree: 1%
+source-wordcount: '595'
+ht-degree: 2%
 
 ---
 
@@ -33,9 +33,10 @@ De eerste stap bestaat uit het toevoegen van een eigenschap van het type resourc
 CRXDE Lite gebruiken:
 
 <!--Resolve steps below-->
-    * Naam: ` sling:resourceSuperType&#39;
-    * Type: &quot;String&quot;
-    * Value: &quot;foundation/components/page&quot;
+
+* Naam: `sling:resourceSuperType`
+* Type: `String`
+* Waarde: `foundation/components/page`
 
 1. Klik op het groene **[!UICONTROL[+]Add]**
 1. Klik op **[!UICONTROL Save All]**
@@ -126,7 +127,7 @@ Het paneel Middelen/component wordt weergegeven wanneer het zijpaneel geopend is
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
-* Klassieke gebruikersinterface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* Klassieke interface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Hieronder ziet u hoe de afspeelpagina wordt weergegeven in de klassieke gebruikersinterface, inclusief in de zoekfunctie voor inhoud (cf):
 
