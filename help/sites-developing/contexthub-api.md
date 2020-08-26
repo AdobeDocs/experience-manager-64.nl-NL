@@ -408,7 +408,7 @@ Vormt de details voor het verbinden met de dienst JSONP die dit voorwerp gebruik
 * **serviceConfig:** Een object dat de volgende eigenschappen bevat:
 
    * host: (Tekenreeks) De servernaam of het IP-adres.
-   * jsonp: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de callback: &quot;ContextHub.Callbacks.*Object.name*} wordt toegevoegd aan het object service.params.
+   * jsonp: (Boolean) De waarde true geeft aan dat de service een JSONP-service is, anders false. Indien waar (true), wordt de {callback: &quot;ContextHub.Callbacks.*Object.name*} wordt toegevoegd aan het object service.params.
    * param: (Object) URL-parameters vertegenwoordigd als objecteigenschappen. Parameternamen zijn eigenschapnamen en parameterwaarden zijn eigenschapswaarden.
    * pad: (Tekenreeks) Het pad naar de service.
    * poort: (Aantal) het havenaantal van de dienst.
