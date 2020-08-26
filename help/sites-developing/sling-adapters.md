@@ -10,7 +10,7 @@ topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
 translation-type: tm+mt
-source-git-commit: 730a874376c21d5d137223e35662b42e722049cf
+source-git-commit: 269facfb6351b0b7c73e963ac7c5dc0b57c78a3e
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
@@ -34,7 +34,7 @@ Er zijn de volgende gebruiksgevallen:
 
 * Hiermee krijgt u implementatiespecifieke objecten.
 
-   Een op JCR gebaseerde implementatie van de algemene [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interface biedt bijvoorbeeld toegang tot het onderliggende JCR [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).&quot;
+   Een op JCR gebaseerde implementatie van de algemene [`Resource`](https://sling.apache.org/apidocs/sling5/org/apache/sling/api/resource/Resource.html) interface biedt bijvoorbeeld toegang tot het onderliggende JCR [`Node`](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html).
 
 * Het maken van sneltoetsen voor objecten waarvoor interne contextobjecten moeten worden doorgegeven.
 
@@ -84,7 +84,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
 
 ### Sling {#sling}
 
-[**Bronnen **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html)worden aangepast aan:
+[**Bronnen**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) worden aangepast aan:
 
 <table> 
  <tbody> 
@@ -120,7 +120,7 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
    <td><a href="https://java.sun.com/j2se/1.5.0/docs/api/java/io/InputStream.html">InputStream</a></td> 
    <td>Hiermee wordt de binaire inhoud van een "bestand" geretourneerd<code>nt:resource</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>AuthorizableResourceProvider</code><code>org.apache.sling.jackrabbit.usermanager</code><code>/system/userManager</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Page</code><code>cq:PseudoPage</code></td></tr><tr><td></td><td><code>cq:Component</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td><code>cq:Template</code></td></tr><tr><td></td><td><code>cq:Page</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:Tag</code></td></tr><tr><td></td><td><code>cq:Preferences</code></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr><tr><td></td><td><code>cq:ContentSyncConfig</code></td></tr></tbody></table>
 
-[**ResourceResolver **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html)wordt aangepast aan:
+[**ResourceResolver**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/ResourceResolver.html) wordt aangepast aan:
 
 <table> 
  <tbody> 
@@ -187,11 +187,11 @@ In het eerste geval kunnen de javadocs aangeven wat `adaptTo-targets` mogelijk i
  </tbody> 
 </table>
 
-[**SlingHttpServletRequest **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html)wordt aangepast aan:
+[**SlingHttpServletRequest**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletRequest.html) wordt aangepast aan:
 
 Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane AdapterFactory worden gebruikt.
 
-[**SlingHttpServletResponse **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html)wordt aangepast aan:
+[**SlingHttpServletResponse**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/SlingHttpServletResponse.html) wordt aangepast aan:
 
 <table> 
  <tbody> 
@@ -204,7 +204,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### WCM {#wcm}
 
-[**Pagina **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html)wordt aangepast aan:
+[**Pagina**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Page.html) wordt aangepast aan:
 
 <table> 
  <tbody> 
@@ -227,7 +227,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
  </tbody> 
 </table>
 
-[**Component **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html)wordt aangepast aan:
+[**Component**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/components/Component.html) wordt aangepast aan:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de component. |
 |---|---|
@@ -235,7 +235,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Knooppunt van de component. |
 | ... | Alles waaraan de bron van de component kan worden aangepast. |
 
-[**Sjabloon **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html)wordt aangepast aan:
+[**Sjabloon**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/Template.html) wordt aangepast aan:
 
 <table> 
  <tbody> 
@@ -260,7 +260,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### Beveiliging {#security}
 
-[**De toegelaten **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html),[**Gebruiker**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) en de [**Groep **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html)passen zich aan aan:
+[**De toegelaten**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Authorizable.html), [**Gebruiker**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/User.html) en de [**Groep**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/security/Group.html) passen zich aan aan:
 
 | [Knooppunt](https://docs.adobe.com/content/docs/en/spec/jsr170/javadocs/jcr-2.0/javax/jcr/Node.html) | Retourneert het thuisknooppunt van de gebruiker/groep. |
 |---|---|
@@ -268,7 +268,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### DAM {#dam}
 
-[**Activum **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html)wordt aangepast aan:
+[**Activum**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/Asset.html) wordt aangepast aan:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Middelen van het actief. |
 |---|---|
@@ -277,7 +277,7 @@ Geen doelstellingen nog, maar voert Aangepast uit en kon als bron in een douane 
 
 #### Tags {#tagging}
 
-[**Tag **](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html)wordt aangepast aan:
+[**Tag**](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/tagging/Tag.html) wordt aangepast aan:
 
 | [Resource](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/org/apache/sling/api/resource/Resource.html) | Bron van de tag. |
 |---|---|
