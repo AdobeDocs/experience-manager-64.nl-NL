@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
 translation-type: tm+mt
-source-git-commit: e9701237c8d5faf79f08f5cc3d1cd41540d06bf5
+source-git-commit: 3bd6ed70dd86df51042bdbde3ea3a60b3a91ab51
 workflow-type: tm+mt
-source-wordcount: '2477'
+source-wordcount: '2469'
 ht-degree: 0%
 
 ---
@@ -28,11 +28,11 @@ De broncode van de AEM Forms-app is via Software Distribution beschikbaar voor k
 
 De AEM Forms-toepassing wordt ondersteund op iOS-, Android- en Windows-apparaten. U kunt de AEM Forms-app voor Android installeren via Google Play, iOS vanuit de App Store en Windows vanuit de Windows-winkel.
 
-    [![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
-    
-    [![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
-    
-    [![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
+[![google_play](assets/google_play.png)](https://play.google.com/store/apps/details?id=com.adobe.aem.forms)
+
+[![app_store](assets/app_store.png)](https://itunes.apple.com/us/app/adobe-experience-manager-forms/id1129625976?ls=1&amp;mt=8)
+
+[![microsoft-badge-icon](assets/microsoft-badge-icon.png)](https://www.microsoft.com/en-us/store/p/adobe-experience-manager-forms/9nd12rlxtgtt)
 
 Zie De AEM Forms-app [](#customize-build-distribute)aanpassen, bouwen en distribueren voor informatie over het installeren, aanpassen en distribueren van de app op iOS-, Android- of Windows-apparaten.
 
