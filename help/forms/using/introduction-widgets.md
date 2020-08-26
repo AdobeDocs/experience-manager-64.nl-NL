@@ -215,7 +215,7 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
    <th>Beschrijving</th> 
   </tr>
   <tr>
-   <td><p>addItem:<em> function(itemValues)<br /> itemValues: object met de weergave- en opslagwaarde <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;waarde opslaan&gt;</em></p> </td> 
+   <td><p>addItem:<em> function(itemValues)<br /> itemValues: object met de weergave- en opslagwaarde <br /> {sDisplayVal: &lt;displayValue&gt;, sSaveVal: &lt;waarde opslaan&gt;}</em></p> </td> 
    <td>Hiermee wordt een item aan de lijst toegevoegd.</td> 
   </tr>
   <tr>
