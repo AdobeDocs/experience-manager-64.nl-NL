@@ -73,7 +73,7 @@ Gegevensstroom wanneer AEM Assets en Creative Cloud zijn geïntegreerd
 
 1. Klik op het AEM logo in de gebruikersinterface van uw lokale AEM Assets-exemplaar en navigeer naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**.
 
-1. Zoek de **[!UICONTROL Adobe Marketing Cloud]** service. Klik op **[!UICONTROL Configure Now]** als er geen configuraties bestaan. Als er configuraties bestaan, klikt u **[!UICONTROL Show Configurations]** en klikt u op **[!UICONTROL[+]]** om een nieuwe configuratie toe te voegen.
+1. Zoek de **[!UICONTROL Adobe Marketing Cloud]** service. Klik op **[!UICONTROL Configure Now]** als er geen configuraties bestaan. Als er configuraties bestaan, klikt u **[!UICONTROL Show Configurations]** en klikt u op **[!UICONTROL [+]]** om een nieuwe configuratie toe te voegen.
 
    >[!NOTE]
    >
