@@ -10,7 +10,7 @@ topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
 translation-type: tm+mt
-source-git-commit: 2411f1aa2853a161603d15917102d5cf1a8139b6
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1421'
 ht-degree: 3%
@@ -212,7 +212,7 @@ Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gema
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
 1. Als de gebruiker op **[!UICONTROL Cancel]** de bewerking klikt, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt de token verwijderd om de bewerkingssessie te beëindigen.
-1. Als de gebruiker de wijzigingen **[!UICONTROL Save]** doorvoert, blijven de bijgewerkte elementen/variaties behouden en wordt het token verwijderd om de bewerkingssessie te beëindigen.
+1. Als de gebruiker de bewerkingen selecteert, blijven **[!UICONTROL Save]** de bijgewerkte elementen/variaties behouden en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 
 ## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
 
@@ -228,7 +228,7 @@ U kunt inhoud [ook](content-fragments-assoc-content.md) aan een fragment koppele
 
 ## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
 
-U kunt de eigenschappen van een fragment weergeven en bewerken met het [!UICONTROL Metadata](content-fragments-metadata.md) tabblad.
+U kunt de eigenschappen van een fragment weergeven en bewerken met het [[!UICONTROL Metadata]](content-fragments-metadata.md) tabblad.
 
 ## Tijdlijn voor inhoudsfragmenten {#timeline-for-content-fragments}
 
@@ -237,8 +237,8 @@ Naast de standaardopties biedt de [tijdlijn](managing-assets-touch-ui.md#timelin
 * Informatie weergeven over versies, opmerkingen en annotaties
 * Handelingen voor versies
 
-   * **[!UICONTROL Revert to this Version](#reverting-to-a-version)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
-   * **[!UICONTROL Compare to Current](#comparing-fragment-versions)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[[!UICONTROL Revert to this Version]](#reverting-to-a-version)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
+   * **[[!UICONTROL Compare to Current]](#comparing-fragment-versions)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
    * Een **[!UICONTROL Label]** en/of **[!UICONTROL Comment]** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie) toevoegen
    * **[!UICONTROL Save as Version]** (selecteer een bestaand fragment en klik vervolgens op de pijl omhoog onder aan de tijdlijn)
 
@@ -268,7 +268,7 @@ Bijvoorbeeld:
 
 ## Fragmentversies vergelijken {#comparing-fragment-versions}
 
-De **[!UICONTROL Compare to Current]** actie is beschikbaar bij [!UICONTROL Timeline](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
+De **[!UICONTROL Compare to Current]** actie is beschikbaar bij [[!UICONTROL Timeline]](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments) nadat u een specifieke versie hebt geselecteerd.
 
 Hiermee wordt het volgende geopend:
 
@@ -298,7 +298,7 @@ Zij worden naast elkaar weergegeven, waarbij:
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
-* Rechtstreeks van de [!UICONTROL Timeline](content-fragments-managing.md#timeline-for-content-fragments).
+* Rechtstreeks van de [[!UICONTROL Timeline]](content-fragments-managing.md#timeline-for-content-fragments).
 
    Selecteer eerst de gewenste versie en daarna de **[!UICONTROL Revert to this Version]** handeling.
 
