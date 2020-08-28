@@ -10,7 +10,7 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 1fe58af0-3005-46fc-8717-5d32557947ed
 translation-type: tm+mt
-source-git-commit: 6f6952686446359485f180050219a12db9d3969a
+source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
 workflow-type: tm+mt
 source-wordcount: '1246'
 ht-degree: 3%
@@ -189,7 +189,7 @@ De volgende voorbeeldprocedure laat zien hoe u een gummetje voor een product kun
 
    ![xf-authoring-04](assets/xf-authoring-04.png)
 
-1. Selecteer een optie **[!UICONTROL Configure](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** op de werkbalk van de component.
+1. Selecteer een optie **[[!UICONTROL Configure]](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)** op de werkbalk van de component.
 1. Add the **[!UICONTROL Asset]** and define the **[!UICONTROL Properties]** as required.
 1. Bevestig de definities met **[!UICONTROL Done]** (vinkje).
 1. Voeg desgewenst meer componenten toe.
