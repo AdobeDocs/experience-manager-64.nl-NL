@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Handboek voor ontwerpen
 user-guide-description: Learn key concepts for creating content and authoring in AEM.
 translation-type: tm+mt
-source-git-commit: e0b25517821971098978db078b2f205a8a380459
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '267'
+source-wordcount: '266'
 ht-degree: 42%
 
 ---
@@ -55,7 +55,6 @@ ht-degree: 42%
    + [Basisstructuur](scaffolding.md)
    + [Componenten configureren in ontwerpmodus](default-components-designmode.md)
    + [Elementaire componenten](default-components-foundation.md)
-   + [Basisstructuur](scaffolding.md)
 + Projecten {#projects}
    + [Projecten](projects.md)
    + [Projecten beheren](touch-ui-managing-projects.md)
