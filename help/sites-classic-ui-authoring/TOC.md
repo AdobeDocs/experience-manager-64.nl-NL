@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Handleiding voor het schrijven van klassieke gebruikersinterface
 user-guide-description: This guide covers the concepts of authoring in AEM in the classic user interface.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '307'
+source-wordcount: '298'
 ht-degree: 18%
 
 ---
@@ -67,10 +67,8 @@ ht-degree: 18%
    + [Werken met de manager van de Campagne van de Marketing](classic-personalization-campaigns-mktg-manager.md)
    + [E-mailmarketing](classic-personalization-campaigns-email.md)
    + [Onbetaalde e-mails bijhouden](classic-personalization-campaigns-email-tracking-bounces.md)
-   + [Teasers en strategieën](classic-personalization-campaigns-teasers-strategy.md)
    + [Uw campagne instellen](classic-personalization-campaigns-setting-up-your.md)
    + [E-mail naar e-mailserviceproviders publiceren](classic-personalization-campaigns-email-newsletters.md)
-   + [Werken met de manager van de Campagne van de Marketing](classic-personalization-campaigns-mktg-manager.md)
    + [Een effectieve openingspagina voor nieuwsbrieven maken](classic-personalization-campaigns-email-landingpage.md)
    + [Abonnementen beheren](classic-personalization-campaigns-email-subscriptions.md)
 + Adobe Campaign {#campaign}
