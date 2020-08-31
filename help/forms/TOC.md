@@ -6,9 +6,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Forms Handboek
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 35a52f72b30731879679ace06d6ffa4fd0342c1c
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '3715'
+source-wordcount: '3711'
 ht-degree: 0%
 
 ---
@@ -98,7 +98,7 @@ ht-degree: 0%
       + [Upgrade van LiveCycle ES4 SP1 naar AEM Forms op JEE voor JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
       + [Upgrade van een AEM Forms-release naar AEM 6.4 Forms op JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
       + [Upgrade van LiveCycle ES4 SP1 naar AEM Forms op JEE for WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
-      + [Van een AEM Forms-versie naar AEM 6.4 Forms op JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
+      + [Een AEM Forms-versie upgraden naar AEM 6.4 Forms op JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
       + [Upgrade van LiveCycle ES4 SP1 naar AEM Forms op JEE for WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + AEM Forms beheren {#manage-administer-aem-forms}
    + [AEM Forms over OSGi-groepen en -voorrechten](using/forms-groups-privileges-tasks.md)
@@ -499,12 +499,11 @@ ht-degree: 0%
       + [Overzicht van uitvoerservice](/help/forms/using/admin-help/overview-8.md)
       + [De tekenset wijzigen](/help/forms/using/admin-help/change-character-set.md)
       + [XCI-configuratieopties opgeven](/help/forms/using/admin-help/specify-xci-configuration-options.md)
-      + [caching configureren voor uitvoer](/help/forms/using/admin-help/configuring-caching-output.md)
+      + [Caching configureren voor Output](/help/forms/using/admin-help/configuring-caching-output.md)
       + [Bestandslocaties voor uitvoer opgeven](/help/forms/using/admin-help/specify-file-locations-output.md)
       + [Lettertypen beschikbaar maken](/help/forms/using/admin-help/make-fonts-available.md)
       + [Te insluiten fonts opgeven](/help/forms/using/admin-help/specify-fonts-embed.md)
-      + [Beveiligingsinstellingen opgeven](/help/forms/using/admin-help/specify-security-settings.md)
-      + [De tekenset wijzigen](/help/forms/using/admin-help/change-character-set.md)
+      + [Specificatie beveiligingsinstellingen](/help/forms/using/admin-help/specify-security-settings.md)
    + Workflow voor formulieren configureren{#configure-forms-workflow}
       + [Informatie over beheer en procesterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Processen beheren](/help/forms/using/admin-help/processes.md)
@@ -605,7 +604,7 @@ ht-degree: 0%
          + [JavaAPI Quick Start (SOAP), service voor integratie van formuliergegevens](developing/form-data-integration-service-java.md)
          + [Forms Service API Quick Start](developing/forms-service-api-quick-starts.md)
          + [Java API QuickStart (SOAP) voor PDF-service genereren](developing/generate-pdf-service-java-api.md)
-         + [Snel aan de slag-API](developing/invocation-api-quick-starts.md)
+         + [Snel aan de slag met de oproepings-API](developing/invocation-api-quick-starts.md)
          + [LiveCycleProcess Java API(SOAP)Snel starten](developing/livecycleprocess-java-api-soap-quick.md)
          + [Java API voor uitvoerservice, snel starten (SOAP)](developing/output-service-java-api-quick.md)
          + [Java APIQuick Start (SOAP) van PDF-hulpprogramma&#39;s](developing/pdf-utilities-service-java-api.md)
