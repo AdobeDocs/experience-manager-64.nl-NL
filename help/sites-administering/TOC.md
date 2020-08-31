@@ -5,9 +5,9 @@ audience: admin-user
 user-guide-title: AEM 6.4 Gebruikershandleiding voor het beheer
 user-guide-description: Learn about administering AEM.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
 workflow-type: tm+mt
-source-wordcount: '619'
+source-wordcount: '614'
 ht-degree: 6%
 
 ---
@@ -23,7 +23,7 @@ ht-degree: 6%
    + [Synchronisatie van actieve kopie configureren](msm-sync.md)
    + [Actieve kopieën maken en synchroniseren](msm-livecopy.md)
    + [Conflicten MSM-rollout](msm-rollout-conflicts.md)
-   + [Beste praktijken MSM](msm-best-practices.md)
+   + [Aanbevolen MSM-procedures](msm-best-practices.md)
    + [Inhoud vertalen voor meertalige sites](translation.md)
    + [Vertaalprojecten beheren](tc-manage.md)
    + [Te vertalen inhoud identificeren](tc-rules.md)
@@ -84,7 +84,7 @@ ht-degree: 6%
    + [SAML 2.0-verificatiehandler](saml-2-0-authenticationhandler.md)
    + [Gesloten gebruikersgroepen in AEM](closed-user-groups.md)
    + [granietbewerkingen - gebruikers- en groepsbeheer](granite-user-group-admin.md)
-   + [CRXDE Lite in AEM inschakelen](enabling-crxde-lite.md)
+   + [CRXDE Lite inschakelen in AEM](enabling-crxde-lite.md)
    + [LDAP configureren met AEM 6](ldap-config.md)
    + [Het beheerderswachtwoord configureren bij installatie](security-configure-admin-password.md)
    + [Gebruikers van de service in AEM](security-service-users.md)
@@ -150,11 +150,10 @@ ht-degree: 6%
    + [Integreren met Adobe Search&amp;Promote](search-and-promote.md)
    + [Oplossingsintegratie](integration.md)
    + [Doelintegratie met ervaringsfragmenten](experience-fragments-target.md)
-   + [Aanbevolen procedures voor e-mailsjablonen](best-practices-for-email-templates.md)
 + Best practices voor {#bestpractices}
    + [Best practices voor](administer-best-practices.md)
    + [Aanbevolen werkwijzen voor vertaling](tc-bp.md)
-   + [Beste praktijken MSM](msm-best-practices.md)
+   + [Aanbevolen MSM-procedures](msm-best-practices.md)
    + [AEM Sites - GDPR-gereedheid](gdpr-compliance-sites.md)
    + [Behandeling van GDPR-verzoeken aan de AEM Stichting](handling-gdpr-requests-for-aem-platform.md)
    + [AEM handel - gereedheid van de GDPR](gdpr-compliance-commerce.md)
