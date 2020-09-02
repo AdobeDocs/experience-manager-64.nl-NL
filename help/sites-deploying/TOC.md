@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Implementatiegids
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: b9a270eb29e92e98a54b596ba745ef71f73a7b55
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '332'
 ht-degree: 1%
 
 ---
@@ -68,6 +68,7 @@ ht-degree: 1%
    + [De complexiteit van upgrades beoordelen met de patroondetector](pattern-detector.md)
    + [Achterwaartse compatibiliteit in AEM 6.4](backward-compatibility.md)
    + [Upgradeprocedure](upgrade-procedure.md)
+   + [Offlineindexering gebruiken om de downtime tijdens een upgrade te verminderen](upgrade-offline-reindexing.md)
    + [Een op locatie uitgevoerde upgrade uitvoeren](in-place-upgrade.md)
    + [Lazy Content Migration](lazy-content-migration.md)
    + [Het CRX2Oak-migratiehulpprogramma gebruiken](using-crx2oak.md)
