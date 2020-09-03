@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f1a5f720ade66e5e8f909264563fa7ad1149b15f
+source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
 workflow-type: tm+mt
-source-wordcount: '3259'
+source-wordcount: '3275'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,8 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 **Upgrade**
 
 * Wanneer u de [!DNL JBoss] versie upgradet naar 7.0.9 voor [!DNL Experience Manager Forms] documentbeveiliging in een [!DNL Linux] omgeving, resulteert dit in een fout (CQ-4300546).
+
+Voor informatie over veiligheidsupdates, zie de pagina [van bulletins van de](https://helpx.adobe.com/security/products/experience-manager.html)Experience Manager veiligheid.
 
 ## Hotfixes en de Pakken van de Eigenschap inbegrepen in vorige Cumulatieve Pakken van de Moeilijke situatie {#hotfixes-and-feature-packs-included-in-previous-cumulative-fix-packs}
 
