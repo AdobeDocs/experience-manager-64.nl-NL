@@ -10,7 +10,7 @@ topic-tags: developing
 content-type: reference
 discoiquuid: c84040b0-7850-4960-b676-ffa0a74c8cb2
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: 805e4411930749ff4b6b05ea4a8b87b4f96d72fd
 workflow-type: tm+mt
 source-wordcount: '652'
 ht-degree: 4%
@@ -124,14 +124,14 @@ Zodra apps.an-scf-sandbox clientlibs is opgenomen, wordt de SCF-commentaarcompon
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-De instructie include behoort tot de <head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8"> van de <html> script. De standaardwaarde **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`**.
+De instructie include behoort tot de `<head>` sectie van het `<html>` script. De standaardwaarde **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`**.
 
 **Kopieer koplibs.jsp en neem clientlibs op:**
 
-1. Selecteer met **[!UICONTROL CRXDE Lite]****`/libs/foundation/components/page/headlibs.jsp`**
+1. Selecteer **[!UICONTROL CRXDE Lite]** met **`/libs/foundation/components/page/headlibs.jsp`**
 1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Copy]** (of selecteer Kopiëren in de werkbalk)
 1. Selecteer **`/apps/an-scf-sandbox/components/playpage`**
-1. Klik met de rechtermuisknop en selecteer Plakken **[!UICONTROL Paste]** (of selecteer Plakken in de werkbalk)
+1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Paste]** (of selecteer Plakken in de werkbalk)
 1. Dubbelklik op **`headlibs.jsp`** om het te openen
 1. De volgende regel toevoegen aan het einde van het bestand
 
