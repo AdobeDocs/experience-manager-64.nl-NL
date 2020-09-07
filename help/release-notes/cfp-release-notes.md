@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5fefc81e68e64bcaa8df1d9648c4266367a92129
+source-git-commit: d3721590e3c2dfd2b048f1b5964915a343f95f6d
 workflow-type: tm+mt
-source-wordcount: '3275'
+source-wordcount: '3308'
 ht-degree: 0%
 
 ---
@@ -171,6 +171,7 @@ AEM Cumulative Fix Pack 6.4.8.1 is afhankelijk van AEM 6.4 Service Pack 8. Daaro
 
 Enkele belangrijke punten van AEM 6.4.8.1 zijn:
 
+* Anonieme toegang tot CRXDE Lite is niet toegestaan om de beveiliging te verbeteren. In plaats daarvan worden de gebruikers naar het aanmeldingsscherm geleid. Zie [zich ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 * Integratie met Adobe Experience Manager voor delen van pakket is verwijderd.
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.21.
 
@@ -180,6 +181,7 @@ Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
 #### Sites {#sites-6481}
 
+* Anonieme gebruikers hebben toegang tot de functies van CRX DE Lite (NPR-33522).
 * Wanneer de naam van een lokale component in een LiveCopy identiek is aan de naam van een component in de blauwdruk en de component uit blauwdruk wordt opgerold, wordt de term _msm_moving niet toegevoegd aan de naam van de lokale component (NPR-33207).
 * De parameters die aan het oorspronkelijke verzoek zijn toegevoegd, zijn niet opgenomen in de omleidings-URL (NPR-33174).
 * Als de optie Coral.Select de waarde emptyOption=true instelt of een standaarditems met waarde = &quot;&quot; bevat, wordt in het bestand dropdownshowhide.js een fout aangetroffen: Uncaught TypeError: component.getValue is geen functie (NPR-33163).
