@@ -3,9 +3,9 @@ title: Trapsgewijze metagegevens
 description: In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 6a43a972b8ff5ce5603f0fdaa999558cdf3cbb0e
+source-git-commit: 452c90bc72c8d71af4b6c4ca2243024b459f53d9
 workflow-type: tm+mt
-source-wordcount: '925'
+source-wordcount: '933'
 ht-degree: 11%
 
 ---
@@ -14,6 +14,10 @@ ht-degree: 11%
 # Cascading Metadata {#cascading-metadata}
 
 In dit artikel wordt beschreven hoe u trapsgewijze metagegevens voor elementen definieert.
+
+>[!CAUTION]
+>
+>Cascading metadata wordt niet ondersteund voor Content Fragments.
 
 Wanneer gebruikers de metagegevens van een element vastleggen, verschaffen ze informatie in de verschillende beschikbare velden. U kunt specifieke metagegevensvelden of veldwaarden weergeven die afhankelijk zijn van de opties die in de andere velden zijn geselecteerd. Een dergelijke voorwaardelijke weergave van metagegevens wordt trapsgewijze metagegevens genoemd. Met andere woorden, u kunt een afhankelijkheid maken tussen een bepaald metagegevensveld/een bepaalde waarde en een of meer velden en/of hun waarden.
 
@@ -52,7 +56,7 @@ Geef de copyrightinformatie, ongeacht het gekozen elementtype, weer als een verp
 
    ![asset_type_field](assets/asset_type_field.png)
 
-1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON- dossier verstrekken.
+1. Sleutelwaardeparen zijn de opties die aan een gebruiker van een formulier worden verstrekt. U kunt de sleutel-waardeparen of manueel of van een JSON dossier verstrekken.
 
    * Als u de waarden handmatig wilt opgeven, selecteert u **[!UICONTROL Add Manually]** de optie, tikt u erop of klikt u **[!UICONTROL Add Choice]** en geeft u de optietekst en -waarde op. Geef bijvoorbeeld de elementtypen Video, PDF, Word en Afbeelding op.
    * Als u de waarden van een JSON-bestand dynamisch wilt ophalen, selecteert u het pad van het JSON-bestand **[!UICONTROL Add Through JSON Path]** en geeft u dit op. AEM haalt de sleutel-waardeparen in echt - tijd wanneer het formulier aan de gebruiker wordt voorgesteld.
