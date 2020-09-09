@@ -2,9 +2,9 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.4.
 translation-type: tm+mt
-source-git-commit: 543f66c760d7b25681a79d5df3d8ab6e8c0b2f47
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
-source-wordcount: '1234'
+source-wordcount: '1281'
 ht-degree: 3%
 
 ---
@@ -40,6 +40,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 | Forms | Vervangen gebruik van JSONObject in Vraag en OperationOptions. De volgende API&#39;s zijn afgekeurd: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | De `IValueMap` API gebruiken |
 | Forms | Vervangen Central Migration Bridge-service. | Er wordt geen vervanging aangeboden. |
 | Assets | Offloading van activa is vanaf AEM 6.4 afgekeurd. |  |
+| Ontwikkelaars | Lodash-/onderstrepingsclientbibliotheek. Adobe is niet van plan om de Lodash/underscore-clientbibliotheek die als onderdeel van de distributie wordt verzonden, verder te onderhouden en bij te werken (Quickstart) | Adobe raadt klanten aan die nog steeds Lodash/onderstrepingsteken voor hun code nodig hebben om het in hun basis van de projectcode toe te voegen. |
 
 <!-- Original HTML table that came from helpx during migration.
 
@@ -150,22 +151,22 @@ In de onderstaande tabel staan de functies en mogelijkheden die uit AEM 6.4 zijn
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Analytics Activity Map | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De plug-in [ActivityMap van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
+| Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De plug-in [ActivityMap van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
 | Components-Forms | Form Captcha (stichting/componenten/form/captcha) | Gebruik in plaats hiervan de component ReCaptcha door Google |
 | Onderdelen | Presentatie (basis/componenten/presentatie) | Geen vervanging |
 | Onderdelen | Flash (stichting/componenten/flits) | Geen vervanging |
 | Onderdelen | Ondersteuning voor afspelen van SWF-bestanden in de video-component is verwijderd (basis/componenten/video) | Op geen flits gebaseerde video-indelingen gebruiken. |
 | Onderdelen | Producttabel (handel/componenten/product_tabel) | Geen vervanging |
-| Taakbeheer | Classic UI Task Management (/libs/cq/taskmanagement/content/taskmanager.html) | Vervangen vanaf 6.0. Gebruik het nieuwe taakbeheer dat met werkschemaUI wordt gecombineerd. |
+| Taakbeheer | Klassiek UI Taakbeheer (/libs/cq/taskmanagement/content/taskmanager.html) | Vervangen vanaf 6.0. Gebruik het nieuwe taakbeheer dat met werkschemaUI wordt gecombineerd. |
 | Workflow | Gebruikte meldingsinterface tussen 5.6 en 6.2 (/libs/cq/workflow/content/notifications.html) | Workflow Inbox /aem/inbox |
 | Forms | Export PDF naar PDF/E-1-indeling met PDF Generator is verwijderd. | PDF Generator blijft het exporteren van PDF naar PDF/A-1a/b, PDF/A-2a/b en PDF/A-3a/b-indelingen ondersteunen. |
 | Forms | Ondersteuning voor afbeeldingen in documentfragmenten is verwijderd. | Interactieve communicatie biedt de mogelijkheid om afbeeldingen rechtstreeks in gedrukte en webkanalen te gebruiken. |
 | Forms | Geen upgrade meer uitvoeren | Er is geen ondersteuning beschikbaar voor het uitvoeren van een upgrade op een andere plaats |
-| Forms | Sidegrade voor TarMK naar DocumentMK-migraties | U kunt de gegevens van een ouder systeem exporteren en vervolgens importeren in een nieuw systeem. Zie AEM Forms over JEE-upgradedocumentatie voor gedetailleerde instructies |
-| Forms | AEM Forms in JEE 32-bits installatieprogramma zijn niet beschikbaar. | Adobe heeft het verzenden van AEM Forms gestopt bij het 32-bits installatieprogramma van JEE. U kunt AEM Forms op JEE blijven installeren met het 64-bits installatieprogramma. |
+| Forms | Sidegrade voor TarMK naar DocumentMK-migraties | U kunt de gegevens van een ouder systeem exporteren en vervolgens importeren in een nieuw systeem. Raadpleeg de documentatie bij AEM Forms on JEE-upgrades voor gedetailleerde instructies |
+| Forms | AEM Forms op JEE 32-bits installatieprogramma niet beschikbaar. | Adobe heeft de verzending van AEM Forms via het 32-bits installatieprogramma van JEE gestopt. U kunt AEM Forms in JEE blijven installeren met het 64-bits installatieprogramma. |
 | Forms | Verwijderde ondersteuning voor het gebruik van DAM-afbeeldingen in Document Fragment Component. | U kunt de component van het Beeld en van het Grafiek in het de drukkanaal van interactieve mededeling gebruiken. Als u de documentfragmentcomponent van het adaptieve document in adaptieve formulieren gebruikt, werkt het niet meer nadat u de upgrade naar AEM 6.4 Forms hebt uitgevoerd. |
 | Forms | De functie Adaptieve documenten is verwijderd | Met de functie voor interactieve communicatie kunt u afgedrukte en webgebaseerde communicatie maken. Als u Adaptieve documenten gebruikt, installeert u het compatibiliteitspakket om door te gaan met het gebruik van bestaande adaptieve documenten |
-| Forms | AEM Forms op JEE-specifieke landingspagina zijn verwijderd. | AEM Forms op de JEE-landingspagina worden vervangen door AEM landingspagina (/aem/start.html) |
+| Forms | AEM Forms is verwijderd op JEE-specifieke bestemmingspagina. | AEM Forms op JEE-landingspagina wordt vervangen door AEM landingspagina (/aem/start.html) |
 | Forms | Verwijderde ondersteuning voor standaard Captcha | Gebruik de reCAPTCHA-service van Google. |
 | Forms | Ondersteuning voor Flash-velden in AEM Designer is verwijderd. AEM Designer kan Flash-velden die in een formulier worden gebruikt, niet bewerken. | U kunt dergelijke formulieren bewerken met AEM Designer dat is uitgebracht voor een vorige versie. |
 | Gemeenschappen | Ondersteuning voor Captcha-verificatie is verwijderd. | Gebruik aangepaste Captcha-integratie (zoals reCAPTCHA door Google) voor verificatie. |
