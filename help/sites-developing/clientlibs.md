@@ -10,7 +10,7 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 619de2e4-d7bd-4ca6-9763-1efa8b2dec05
 translation-type: tm+mt
-source-git-commit: 50d57997496e6809361277f7025f3858857e14af
+source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
 workflow-type: tm+mt
 source-wordcount: '2889'
 ht-degree: 0%
@@ -181,8 +181,8 @@ Vervolgens stelt u de `allowProxy` eigenschap in op `foo` true.
 1. Selecteer de clientbibliotheekmap en klik op **Maken > Bestand** maken.
 1. Typ in het vak Bestandsnaam een van de volgende bestandsnamen en klik op OK:
 
-   * **`js.txt`:**Gebruik deze bestandsnaam om een JavaScript-bestand te genereren.
-   * **`css.txt`:**Gebruik deze bestandsnaam om een trapsgewijs opmaakmodel te genereren.
+   * **`js.txt`:** Gebruik deze bestandsnaam om een JavaScript-bestand te genereren.
+   * **`css.txt`:** Gebruik deze bestandsnaam om een trapsgewijs opmaakmodel te genereren.
 
 1. Open het bestand en typ de volgende tekst om de hoofdmap van het pad van de bronbestanden te identificeren:
 
@@ -242,7 +242,6 @@ In sommige gevallen zult u zien dat de uiteindelijke HTML die door uw publicatie
 <script type="text/javascript" src="/etc/clientlibs/granite/jquery/granite.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/jquery.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/shared.js"></script>
-<script type="text/javascript" src="/etc/clientlibs/granite/underscore.js"></script>
 <script type="text/javascript" src="/etc/clientlibs/foundation/personalization/kernel.js"></script>
 ```
 
@@ -315,7 +314,7 @@ De volgende tabel bevat bijvoorbeeld de waarde van de `channels` eigenschap voor
 | `/libs/cq/analytics/widgets/themes/default` | `!touch` |
 | `/libs/cq/cloudserviceconfigs/widgets` | `!touch` |
 | `/libs/cq/searchpromote/widgets` | `!touch` |
-| `/libs/cq/searchpromote/widgets/themes/default` | `[`*geen waarde *`]` |
+| `/libs/cq/searchpromote/widgets/themes/default` | `[`*geen waarde*`]` |
 | `/libs/cq/touch/widgets` | `touch` |
 | `/libs/cq/touch/widgets/themes/default` | `touch` |
 | `/libs/cq/ui/widgets` | `!touch` |
