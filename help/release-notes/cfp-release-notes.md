@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: d3721590e3c2dfd2b048f1b5964915a343f95f6d
+source-git-commit: 5989421ee1207880462fd1eaefc1a9714061307e
 workflow-type: tm+mt
-source-wordcount: '3308'
+source-wordcount: '3306'
 ht-degree: 0%
 
 ---
@@ -361,7 +361,7 @@ Zie [AEM Forms JEE Patch Installer 0019 voor informatie over de installatie van 
 
 ### Uber Jar {#uber-jar}
 
-De Uber Jar voor AEM 6.4.8.2 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2/uber-jar-6.4.8.2.jar).
+De Uber Jar voor AEM 6.4.8.2 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
 
 Om Uber Jar in een Geweven project te gebruiken, verwijs naar het artikel, [hoe te om de jar](../sites-developing/ht-projects-maven.md) van Uber te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten:
 
@@ -369,7 +369,7 @@ Om Uber Jar in een Geweven project te gebruiken, verwijs naar het artikel, [hoe 
 <dependency>
       <groupId>com.adobe.aem</groupId>
       <artifactId>uber-jar</artifactId>
-      <version>6.4.8.2</version>  
+      <version>6.4.8.2-1.0</version>  
       <scope>provided</scope>
 </dependency>
 ```
