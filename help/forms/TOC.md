@@ -4,9 +4,10 @@ product: adobe experience manager
 sub-product: 'formulieren '
 audience: end-user
 user-guide-title: AEM 6.4 Forms Handboek
+breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: 747847b725d1b07109ff0f834976c2905c1edbe9
+source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
 source-wordcount: '3711'
 ht-degree: 0%
@@ -503,7 +504,7 @@ ht-degree: 0%
       + [Bestandslocaties voor uitvoer opgeven](/help/forms/using/admin-help/specify-file-locations-output.md)
       + [Lettertypen beschikbaar maken](/help/forms/using/admin-help/make-fonts-available.md)
       + [Te insluiten fonts opgeven](/help/forms/using/admin-help/specify-fonts-embed.md)
-      + [Specificatie beveiligingsinstellingen](/help/forms/using/admin-help/specify-security-settings.md)
+      + [Beveiligingsinstellingen opgeven](/help/forms/using/admin-help/specify-security-settings.md)
    + Workflow voor formulieren configureren{#configure-forms-workflow}
       + [Informatie over beheer en procesterminologie](/help/forms/using/admin-help/administration-process-terminology.md)
       + [Processen beheren](/help/forms/using/admin-help/processes.md)
