@@ -9,7 +9,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 50e24c2b-ad7e-4422-a850-9a0bf6bd9423
 translation-type: tm+mt
-source-git-commit: 0e7f4a78f63808bea2aa7a5abbb31e7e5b9d21b3
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '1065'
 ht-degree: 0%
@@ -25,7 +25,7 @@ De auteurseigenschap van het KUUROORD biedt een uitvoerige oplossing voor het st
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het Hoekkader. Voor het overeenkomstige document voor het kader van de Reactie zie [Begonnen met SPAs in AEM - Reageer](/help/sites-developing/spa-getting-started-react.md).
+>Dit artikel is gebaseerd op het Hoekkader. Voor het overeenkomstige document voor het kader van de Reactie zie [Begonnen met SPAs in AEM - Reageren](/help/sites-developing/spa-getting-started-react.md).
 
 >[!NOTE]
 >De eigenschap van de Redacteur van de Toepassing van de Enige-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
@@ -62,9 +62,9 @@ Het `package.json` dossier bepaalt de vereisten van het algemene pakket van SPA.
 
 ```
 "dependencies": {
-  "@adobe/cq-angular-editable-components": "~1.0.3",
-  "@adobe/cq-spa-component-mapping": "~1.0.3",
-  "@adobe/cq-spa-page-model-manager": "~1.0.4"
+  "@adobe/aem-angular-editable-components": "~1.0.3",
+  "@adobe/aem-spa-component-mapping": "~1.0.5",
+  "@adobe/aem-spa-page-model-manager": "~1.0.3"
 }
 ```
 
@@ -131,12 +131,12 @@ Een vereenvoudigde afbeeldingscomponent wordt als voorbeeld gebruikt, maar alle 
 
 Het ingangspunt in het KUUROORD is het `app.module.ts` dossier hier wordt getoond vereenvoudigd om zich op de belangrijke inhoud te concentreren die.
 
-```
+```javascript
 // app.module.ts
 import { BrowserModule, BrowserTransferStateModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { AppComponent } from './app.component';
-import { SpaAngularEditableComponentsModule } from '@adobe/cq-angular-editable-components';
+import { SpaAngularEditableComponentsModule } from '@adobe/aem-angular-editable-components';
 import { AppRoutingModule } from './app-routing.module';
 
 @NgModule({
@@ -162,11 +162,11 @@ Wanneer de component statisch wordt geconcretiseerd gebruikend het componentenma
 
 Zodra `app.module.ts` bootstraps `AppComponent`, kan het dan de App initialiseren, die hier in een vereenvoudigde versie wordt getoond om zich op de belangrijke inhoud te concentreren.
 
-```
+```javascript
 // app.component.ts
 import { Component } from '@angular/core';
-import { ModelManager } from '@adobe/cq-spa-page-model-manager';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { ModelManager } from '@adobe/aem-spa-page-model-manager';
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-root',
@@ -196,11 +196,11 @@ export class AppComponent {
 
 Door de pagina te verwerken, `app.component.ts` vraag `main-content.component.ts` hier in een vereenvoudigde versie wordt vermeld die.
 
-```
+```javascript
 import { Component } from '@angular/core';
 import { ModelManagerService }     from '../model-manager.service';
 import { ActivatedRoute } from '@angular/router';
-import { Constants } from "@adobe/cq-angular-editable-components";
+import { Constants } from "@adobe/aem-angular-editable-components";
 
 @Component({
   selector: 'app-main',
