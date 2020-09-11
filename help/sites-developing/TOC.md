@@ -5,9 +5,9 @@ audience: end-user
 user-guide-title: AEM 6.4 Gebruikershandleiding ontwikkelen
 user-guide-description: This guide covers how to build out your AEM instance.
 translation-type: tm+mt
-source-git-commit: 27db148008709e28bab42f25e79f530fe37affb4
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
-source-wordcount: '804'
+source-wordcount: '803'
 ht-degree: 5%
 
 ---
@@ -114,7 +114,7 @@ ht-degree: 5%
       + [SPA Model Routing](spa-routing.md)
       + [Integratie van SPA en Adobe Experience Platform Launch](spa-launch.md)
       + [SPA en rendering op de server](spa-ssr.md)
-      + [API-verwijzingen voor SPA Javascript](spa-reference-materials.md)
+      + [SPA-referentiematerialen](spa-reference-materials.md)
    + [HTTP-API](/help/assets/mac-api-assets.md)
    + [Contentfragmenten](/help/assets/content-fragments.md)
    + [Ervaringsfragmenten](/help/sites-authoring/experience-fragments.md)
