@@ -10,7 +10,7 @@ topic-tags: spa
 content-type: reference
 discoiquuid: 8b4b0afc-8534-4010-8f34-cb10475a8e79
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dynamisch model aan Component Mapping voor SPAs{#dynamic-model-to-component-mapping-for-spas}
 
-Dit document beschrijft hoe het dynamische model aan componentenafbeelding in Javascript SPA SDK voor AEM voorkomt.
+In dit document wordt beschreven hoe het dynamische model voor componenttoewijzing wordt uitgevoerd in de Javascript SPA SDK voor AEM.
 
 >[!NOTE]
 >De eigenschap van de Redacteur van de Toepassing van de Enige-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
@@ -35,7 +35,7 @@ Elke punten in het model bevatten een `:type` gebied dat een AEM middeltype bloo
 
 Gelieve te verwijzen naar het document van de Blauwdruk [van het](/help/sites-developing/spa-blueprint.md) KUUROORD voor meer informatie over modelontleding en de front-end componententoegang tot het model.
 
-Zie ook het npm-pakket: [https://www.npmjs.com/package/@adobe/cq-spa-component-mapping](https://www.npmjs.com/package/@adobe/cq-spa-component-mapping)
+Zie ook het npm-pakket: [https://www.npmjs.com/package/@adobe/aem-spa-component-mapping](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 
 ## Modelgestuurde toepassing voor één pagina {#model-driven-single-page-application}
 
