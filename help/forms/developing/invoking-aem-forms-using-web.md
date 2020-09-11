@@ -10,7 +10,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: d5722281-bea9-4fc7-abdc-e678899e0a15
 translation-type: tm+mt
-source-git-commit: d731d290738403f41e601da8e9bdb9bd3b94bcd4
+source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
 workflow-type: tm+mt
 source-wordcount: '9984'
 ht-degree: 0%
@@ -167,7 +167,7 @@ U moet de naam van de Toepassing en de naam van het Proces binnen de definitie v
 
 Nieuwe AEM Forms-servicefuncties zijn toegankelijk via webservices. In AEM Forms is bijvoorbeeld de mogelijkheid geïntroduceerd om bijlagen te coderen met MTOM. (Zie AEM Forms [aanroepen met MTOM](#invoking-aem-forms-using-mtom).)
 
-Om tot nieuwe functionaliteit toegang te hebben die in AEM Forms wordt geïntroduceerd, specificeer de `lc_version` attributen in de definitie WSDL. Als u bijvoorbeeld toegang wilt krijgen tot nieuwe servicefunctionaliteit (inclusief MTOM-ondersteuning), geeft u de volgende WSDL-definitie op:
+Om tot nieuwe functionaliteit toegang te hebben die in AEM Forms wordt geïntroduceerd, specificeer het `lc_version` attribuut in de definitie WSDL. Als u bijvoorbeeld toegang wilt krijgen tot nieuwe servicefunctionaliteit (inclusief MTOM-ondersteuning), geeft u de volgende WSDL-definitie op:
 
 ```as3
  http://localhost:8080/soap/services/MyApplication/EncryptDocument?wsdl&lc_version=9.0.1
@@ -224,7 +224,7 @@ Wijs als volgt waarden toe aan velden die tot de `BLOB` instantie behoren:
 
 Het transmissieprotocol voor teruggekeerde `BLOB` voorwerpen hangt van verscheidene factoren af, die in de volgende orde worden overwogen, die ophouden wanneer de belangrijkste voorwaarde wordt voldaan aan:
 
-1. **Doel-URL verwijst naar het verzendprotocol**. Als het doelURL bij de aanroeping van de ZEEP de parameter `blob="`*BLOB_TYPE *&quot;bevat, dan* BLOB_TYPE *bepaalt het transmissieprotocol.* BLOB_TYPE *is een placeholder voor base64, dime, mime, http, mtom, of swaref.
+1. **Doel-URL verwijst naar het verzendprotocol**. Als het doelURL bij de aanroeping van de ZEEP de parameter `blob="`*BLOB_TYPE*&quot;bevat, dan *BLOB_TYPE* bepaalt het transmissieprotocol. *BLOB_TYPE* is een placeholder voor base64, dime, mime, http, mtom, of swaref.
 1. **Het eindpunt van de ZEEP van de dienst is Slim**. Als aan de volgende voorwaarden wordt voldaan, worden de uitvoerdocumenten geretourneerd met hetzelfde verzendprotocol als de invoerdocumenten:
 
    * De het eindpuntparameterStandaardprotocol van de ZEEP van de dienst voor de Voorwerpen van de Klodder van de Output wordt geplaatst aan Slim.
