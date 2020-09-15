@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 5989421ee1207880462fd1eaefc1a9714061307e
+source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
 workflow-type: tm+mt
-source-wordcount: '3306'
+source-wordcount: '3346'
 ht-degree: 0%
 
 ---
@@ -361,7 +361,7 @@ Zie [AEM Forms JEE Patch Installer 0019 voor informatie over de installatie van 
 
 ### Uber Jar {#uber-jar}
 
-De Uber Jar voor AEM 6.4.8.2 is beschikbaar in de [Adobe Public Maven bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/).
+De Uber Jar voor AEM 6.4.8.2 is beschikbaar in de [Centrale bewaarplaats](https://repo.maven.apache.org/maven2/com/adobe/aem/uber-jar/6.4.8.2-1.0/)van Maven.
 
 Om Uber Jar in een Geweven project te gebruiken, verwijs naar het artikel, [hoe te om de jar](../sites-developing/ht-projects-maven.md) van Uber te gebruiken en de volgende gebiedsdeel in uw projectPOM te omvatten:
 
@@ -373,6 +373,10 @@ Om Uber Jar in een Geweven project te gebruiken, verwijs naar het artikel, [hoe 
       <scope>provided</scope>
 </dependency>
 ```
+
+>[!NOTE]
+>
+>Vanaf deze release zijn UberJar en andere verwante artefacten beschikbaar in Maven Central Repository in plaats van in Adobe Public Maven repository (repo.adobe.com). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Als gevolg hiervan is er geen `classifier`waarde, met `apis` als waarde, voor de `dependency` tag.
 
 ## Verwijderde/vervangen functies {#removed-deprecated-features}
 
