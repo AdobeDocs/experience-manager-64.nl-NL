@@ -3,9 +3,9 @@ title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer om de AEM Rich Text Editor stop-ins te vormen om individuele functionaliteit toe te laten.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
 workflow-type: tm+mt
-source-wordcount: '4193'
+source-wordcount: '4191'
 ht-degree: 0%
 
 ---
@@ -706,7 +706,7 @@ Om te vormen hoe de verbindingen in AEM van een ander programma worden toegevoeg
       * **Naam** `cssExternal`
       * **Type** `String`
       * **Waarde** de naam van de CSS-klasse (zonder een voorafgaande &#39;.&#39;; for example, `cssClass` instead of `.cssClass`)
-   * Array van geldige **protocollen** (inclusief https://, https:// file://, mailto: onder andere)
+   * Array met geldige **protocollen**. De ondersteunde protocollen zijn `http://`, `https://`, `file://`en `mailto:`.
 
       * **Naam** `protocols`
       * **Type** `String[]`
