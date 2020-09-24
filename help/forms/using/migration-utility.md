@@ -5,13 +5,13 @@ description: Met het migratiehulpprogramma kunt u AEM Forms-middelen en -documen
 seo-description: Met het migratiehulpprogramma kunt u AEM Forms-middelen en -documenten migreren van AEM 6.3 Forms of eerdere versies naar AEM 6.4 Forms.
 uuid: 593fc421-b70e-4dbe-87bc-ea49ff025368
 content-type: reference
-topic-tags: installing
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1872'
 ht-degree: 0%
@@ -119,7 +119,7 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
    >  * Nieuwe sjablonen - Aangepaste formuliersjablonen die zijn gemaakt met de sjablooneditor onder /conf. Dit omvat migratie van regels en manuscripten die gebruikend de regelredacteur worden gecreeerd.
 
 
-   * Tik op **Adaptive Forms Custom Components Migration** en tik op de pagina Custom Components Migration (Migratie van aangepaste onderdelen) om aangepaste vormen van aangepaste onderdelen te migreren. tik vervolgens op **Start Migration**. De volgende code wordt gemigreerd:
+   * Tik op **Aangepaste Forms Custom Components Migration** en tik op Migratie **** voor aangepaste onderdelen om aangepaste formulieren te migreren. De volgende code wordt gemigreerd:
 
       * Aangepaste componenten geschreven voor Adaptive Forms
       * Eventuele componentbedekkingen.
