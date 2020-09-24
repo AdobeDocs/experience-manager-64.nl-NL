@@ -5,11 +5,11 @@ description: Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, 
 seo-description: De interactieve Communicatie belangrijkste mogelijkheden, de gevallen van het steekproefgebruik, creatiewerkschema, en verschillen tussen Interactieve Communicatie en het Beheer van de Correspondentie
 uuid: a06b4ac7-ca20-4d6d-b2b7-87b21e2f5cf9
 contentOwner: gtalwar
+topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: introduction
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
 translation-type: tm+mt
-source-git-commit: de440f57091d814a0a7ff48e9a0383c5415a0a5b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 2%
@@ -23,13 +23,13 @@ Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, de workflow v
 
 ![](do-not-localize/correspondence-management.png)
 
-De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits.
+De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing post, rekeningen, en welkomstkits.
 
 ## Belangrijkste mogelijkheden {#key-capabilities}
 
 Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 
-* De integratie van buiten-de-doos met het model van vormgegevens om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
+* De integratie van buiten de doos met vormgegevensmodel om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
 * Geïntegreerde ontwerpinterface voor afdrukken en webkanalen met de mogelijkheid om webkanaal automatisch te genereren via het afdrukkanaal
 * Grafieken om informatie in gemakkelijk te begrijpen visuele formaten in druk en Web te presenteren
 * Documentfragmenten ondersteunen regeleditor en formuliergegevensmodel
