@@ -5,12 +5,12 @@ description: Verklaart hoe u een malplaatje voor een document van verslag (DoR) 
 seo-description: Verklaart hoe u een malplaatje voor een document van verslag (DoR) voor adaptieve vormen kunt produceren.
 uuid: 6c0664a4-a2eb-4ec5-bad0-cf4e2f4fe83d
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1e533a8c-f200-40ca-b170-0e9abee8513e
 noindex: true
 translation-type: tm+mt
-source-git-commit: 1e46cdf8f52426ec3bb1c0712355b7bedf270b13
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2723'
 ht-degree: 1%
@@ -24,7 +24,7 @@ ht-degree: 1%
 
 Nadat u een formulier hebt verzonden, willen uw klanten doorgaans de informatie die zij in het formulier hebben ingevuld, afdrukken of in documentindeling bewaren voor toekomstig gebruik. Dit wordt bedoeld als document van verslag.
 
-In dit artikel wordt uitgelegd hoe u een recorddocument kunt genereren voor adaptieve formulieren.
+In dit artikel wordt uitgelegd hoe u een recorddocument voor adaptieve formulieren kunt genereren.
 
 >[!NOTE]
 >
@@ -251,7 +251,7 @@ Wijzig of verwijder geen scripts in de basissjabloon.
 
 **Basissjabloon wijzigen**
 
-* Als u geen opmaak toepast op velden in de basissjabloon, is het raadzaam die velden uit de basissjabloon te verwijderen, zodat upgrades naar de basissjabloon automatisch worden opgehaald.
+* Als u geen opmaak toepast op velden in de basissjabloon, is het raadzaam deze velden uit de basissjabloon te verwijderen, zodat alle upgrades naar de basissjabloon automatisch worden opgehaald.
 * Verwijder scripts niet tijdens het wijzigen van een basissjabloon, voeg ze toe of wijzig ze niet.
 
 >[!NOTE]
