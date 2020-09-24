@@ -5,11 +5,11 @@ description: Met thema's kunt u een adaptief formulier of interactieve communica
 seo-description: Met thema's kunt u een adaptief formulier of interactieve communicatie stileren en een visuele identiteit geven. U kunt een thema delen op elk gewenst aantal adaptieve formulieren of interactieve communicatie.
 uuid: 7fa8afd9-8454-44a5-939b-b213b9a800cc
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: interactive-communications
+topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
 translation-type: tm+mt
-source-git-commit: b9d2a5b65f7ae48a9bde5580b5ddd3e55fc68d61
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '5897'
 ht-degree: 0%
@@ -226,7 +226,7 @@ De Thema-editor bestaat uit twee deelvensters:
    * **Geavanceerd:** Hiermee kunt u aangepaste CSS aan een object toevoegen, die de eigenschappen overschrijft die door visuele besturingselementen worden gedefinieerd als er sprake is van overlapping.
    * **CSS** weergeven: Hiermee kunt u CSS van de geselecteerde component weergeven
 
-   In de zijbalk onder in het scherm staat bovendien een pijl. Als u op de pijl klikt, hebt u nog twee opties: **Simuleer Succes** en **Simuleer Fout.** Deze opties worden samen met de hierboven beschreven opties [hieronder](/help/forms/using/themes.md#using-rail)uitgebreid besproken.
+   In de zijbalk onder in het scherm is bovendien een pijl aanwezig. Als u op de pijl klikt, hebt u nog twee opties: **Simuleer Succes** en **Simuleer Fout.** Deze opties worden samen met de hierboven beschreven opties [hieronder](/help/forms/using/themes.md#using-rail)uitgebreid besproken.
 
    [ ![Thema-editor met Rail en Canvas gemarkeerd.](assets/themes.png)](assets/themes-1.png) **A.** Zijbalk **B.** Canvas
 
@@ -279,7 +279,7 @@ Onderbrekingspunten van de Thema-editor gebruiken om alternatieve opmaak voor ve
 
 ### Contextwijzigingen in opmaakeigenschappen in zijbalk bij het selecteren van objecten {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
-Wanneer u een component op het canvas selecteert, worden de stijleigenschappen van de component weergegeven in het zijpaneel. Selecteer het objecttype en de objectstatus en geef de objectstijl op.
+Wanneer u een component op het canvas selecteert, worden de opmaakeigenschappen van de component weergegeven in het zijpaneel. Selecteer het objecttype en de objectstatus en geef de objectstijl op.
 
 ### Onlangs gebruikte stijlen in de Thema-editor {#recently-used-styles-in-theme-editor}
 
@@ -505,7 +505,7 @@ U kunt nu lettertypen gebruiken die beschikbaar zijn in een webservice in een ad
 
 Voer de volgende stappen uit om Typekit in AEM te configureren:
 
-1. Klik in de auteur-instantie op ![adobeexperienceManager](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager > Tools]** ![hammer](assets/hammer.png) **[!UICONTROL > Deployment > Cloud Services]**.
+1. Klik in de auteur-instantie op ![adobeexperienceManager ](assets/adobeexperiencemanager.png)**[!UICONTROL Adobe Experience Manager > Tools]**![hammer](assets/hammer.png)**[!UICONTROL > Deployment > Cloud Services]**.
 1. Navigeer op de **[!UICONTROL Cloud Services]** pagina naar **[!UICONTROL Third Party Services]** > **[!UICONTROL Typekit]** en klik **[!UICONTROL Configure Now]** onder Typekit. Als er al een configuratie beschikbaar is, klikt u op de knop **+** om een nieuwe instantie te maken.
 1. Geef in het **[!UICONTROL Create Configuration]** dialoogvenster een titel op voor de configuratie en klik op **[!UICONTROL Create]**.
 
@@ -581,7 +581,7 @@ Een thema toepassen op een interactieve communicatie:
 
 1. Selecteer in de zijbalk onder **[!UICONTROL Basic]** de optie Thema in de **[!UICONTROL Theme]** vervolgkeuzelijst en klik op **[!UICONTROL Done]**![ Selecteren](assets/check-button.png).
 
-### Het thema van een formulier wijzigen tijdens runtime {#change-theme-of-a-form-at-runtime}
+### Het thema van een formulier tijdens runtime wijzigen {#change-theme-of-a-form-at-runtime}
 
 Met een thema kunt u verschillende onderdelen van een formulier opmaken. Met de `themeOverride` eigenschap kunt u het thema van een formulier dynamisch wijzigen. Een typische URL van een formulier is:
 
@@ -647,7 +647,7 @@ De gegenereerde CSS kunt u met de volgende opties zien:
 
 * U kunt problemen met uw huidige thema oplossen als een element wordt toegevoegd uit een ander thema en het andere thema wordt verplaatst of verwijderd. U wordt aangeraden te voorkomen dat u bladeren en elementen uit andere thema&#39;s toevoegt.
 
-* **Basisclientlib, themageditor en inline styling gebruiken**
+* **Het gebruiken van basis clientlib, themageditor, en gealigneerde het stileren**
 
    * **Basis clientlib**:
 
