@@ -5,11 +5,11 @@ description: Met de Adaptive Form Rule-editor kunt u dynamisch gedrag toevoegen 
 seo-description: Met de Adaptive Form Rule-editor kunt u dynamisch gedrag toevoegen en complexe logica in formulieren opnemen zonder codes of scripts.
 uuid: 15c9bb41-ddae-4d3e-b130-5eb1b7572e6e
 content-type: reference
-topic-tags: develop
+topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: 87680094e87b2ef58c7de2f1e42caa2ad966c28f
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '6300'
 ht-degree: 0%
@@ -43,7 +43,7 @@ Een regel is een combinatie van handelingen en voorwaarden. In de regeleditor om
 
 De regelredacteur verstrekt een reeks vooraf bepaalde regeltypes, zoals wanneer, tonen, verbergen, toelaten, onbruikbaar maken, Vastgestelde Waarde van, en Valideren om u te helpen regels schrijven. Elk regeltype staat u toe om voorwaarden en acties in een regel te bepalen. Het document verklaart verder elk regeltype in detail.
 
-Een regel volgt doorgaans een van de volgende constructies:
+Een regel volgt doorgaans een van de volgende elementen:
 
 **Condition-Action** In deze constructie definieert een regel eerst een voorwaarde gevolgd door een actie die moet worden geactiveerd. De constructie is vergelijkbaar met if-then statement in programmeertalen.
 
@@ -352,7 +352,7 @@ Laten we begrijpen hoe u een regel maakt in een visuele editor met behulp van he
 
 ![create-rule-example](assets/create-rule-example.png)
 
-In het gedeelte met vereisten voor leningen in het voorbeeldformulier voor het aanvragen van leningen moeten aanvragers hun echtelijke staat, salaris en indien gehuwd, het salaris van hun echtgenoot vermelden. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
+In het gedeelte met vereisten voor leningen in het voorbeeld van het aanvraagformulier voor leningen moeten aanvragers hun echtelijke status, salaris en indien gehuwd, het salaris van hun echtgenoot vermelden. Op basis van de gebruikersinput wordt het bedrag dat voor de lening in aanmerking komt, berekend door de regel en wordt dit weergegeven in het veld Beleenbaarheid van de lening. Pas de volgende regels toe om het scenario uit te voeren:
 
 * Het veld Salaris van de echtgenoot wordt alleen weergegeven wanneer de huwelijksstatus wordt gehuwd.
 * De beleenbaarheid van de lening bedraagt 50% van het totale salaris.
@@ -377,7 +377,7 @@ Voer de volgende stappen uit om regels te schrijven:
 
    ![Waarden voor keuzerondjes in regeleditor](assets/radio-button-values.png)
 
-1. Geef in het veld **Een tekenreeks** invoeren in de regel **0** op.
+1. Geef in het veld **Een tekenreeks** invoeren op de regel **0** op.
 
    ![write-rules-visual-editor-4](assets/write-rules-visual-editor-4.png)
 
@@ -555,7 +555,7 @@ Ondersteunde `jsdoc` tags:
 
 >[!NOTE]
 >
->Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. De samenvatting kan tot veelvoudige lijnen uitbreiden tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
+>Opmerkingen vóór aangepaste functie worden gebruikt voor overzicht. Samenvatting kan tot veelvoudige lijnen worden uitgebreid tot een markering wordt ontmoet. Beperk de grootte tot één voor een beknopte beschrijving in de regelbouwer.
 
 **Een aangepaste functie toevoegen**
 
