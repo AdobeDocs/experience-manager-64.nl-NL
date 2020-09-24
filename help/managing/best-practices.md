@@ -6,11 +6,11 @@ seo-description: 'Het beheren van een project om Adobe Experience Manager (AEM) 
 uuid: 61b45b1b-af0b-4b1b-9a52-6767611fc1ab
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
+topic-tags: managing-checklist, introduction
 content-type: reference
-topic-tags: introduction
 discoiquuid: b891009b-d3b1-402a-920a-014366f342f0
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '3313'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Het werkblad **Projecthartslag** biedt een grafisch overzicht van de belangrijks
 
 ## Status op rol {#status-by-role}
 
-Het **werkblad &quot;Status per rol** &quot; geeft een gedetailleerde uitsplitsing van **[gezondheid, kwaliteit en volledigheid](#project-heartbeat-dashboard)**per**[ fase](#phases-and-milestones)** en **[persoon](#persona)**.
+Het **werkblad &quot;Status per rol** &quot; geeft een gedetailleerde uitsplitsing van **[gezondheid, kwaliteit en volledigheid](#project-heartbeat-dashboard)** per **[fase](#phases-and-milestones)** en **[persoon](#persona)**.
 
 ## Fasen en mijlpalen {#phases-and-milestones}
 
@@ -151,7 +151,7 @@ De planning van uw project consolideert de voorbereiding. Hier moet u beginnen d
    * Belangrijke feiten over het project presenteren.
    * Beantwoord vragen.
    * Ervoor zorgen dat iedereen dezelfde kennisbasis heeft.
-   * Neem de betrokkenheid van iedereen die erbij betrokken zal zijn - dat moet verdiend worden.
+   * Neem de betrokkenheid van iedereen die erbij betrokken zal zijn. Dat zal verdiend moeten worden.
       * Door de hoofdrolspelers (inclusief potentiële auteurs) bij het begin van het project te betrekken, verhoogt u de kans dat ze zich voor het project engageren.
 
 ### Voorbereiding ontwikkeling {#development-preparation}
