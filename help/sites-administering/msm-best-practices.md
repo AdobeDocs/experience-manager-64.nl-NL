@@ -1,16 +1,16 @@
 ---
-title: Beste praktijken MSM
-seo-title: Beste praktijken MSM
+title: Aanbevolen MSM-procedures
+seo-title: Aanbevolen MSM-procedures
 description: Zoek naar beste praktijken die door Adobe engineering en consultancyteams worden gecompileerd helpen om met de AEM MultiManager van de Plaats in gebruik te worden.
 seo-description: Zoek naar beste praktijken die door Adobe engineering en consultancyteams worden gecompileerd helpen om met de AEM MultiManager van de Plaats in gebruik te worden.
 uuid: cbb598bb-ec8f-4985-97af-7c87f5891c66
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
-topic-tags: best-practices
+topic-tags: null
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '1530'
 ht-degree: 0%
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Beste praktijken MSM{#msm-best-practices}
+# Aanbevolen MSM-procedures{#msm-best-practices}
 
 ## Algemeen {#general}
 
