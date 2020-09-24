@@ -7,10 +7,10 @@ uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: development-tools
+topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '507'
 ht-degree: 0%
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Met de Adobe AEM Forms API Quick Start kunt u uw inspanningen versnellen om programma&#39;s te ontwikkelen die communiceren met de AEM Forms-services. *Snel* starten zijn volledige programma&#39;s die u kunt kopiëren en plakken in uw eigen projecten en als uitgangspunt kunt gebruiken. U kunt een Snel Begin in werking stellen om te zien hoe het zich gedraagt en het voor uw eigen behoeften wijzigt.
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 Quick Start van de API voor sterk getypte Java bevat een lijst met JAR-bestanden die vereist zijn om de Java-toepassing uit te voeren. De meeste Java Quick Starts zijn consoletoepassing die binnen loopt `main`. De Snel starten van de Forms Java met sterk getypte API wordt echter geïmplementeerd als Java-servlet die wordt uitgevoerd in een webtoepassing.
 
