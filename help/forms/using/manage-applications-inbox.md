@@ -6,10 +6,10 @@ seo-description: Met AEM Inbox kunt u op Forms gerichte workflows starten door t
 uuid: 5173558a-542a-4130-8bb6-5ac555ecc507
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
-topic-tags: publish
+topic-tags: document_services, publish
 discoiquuid: c1515c58-7d9a-4a36-9390-f6d6b980b801
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '923'
 ht-degree: 0%
@@ -59,7 +59,7 @@ De taken die aan een groep worden toegewezen verschijnen in Inbox van alle groep
 
    ![vordering](assets/claim.png)
 
-### Details weergeven en handelingen uitvoeren op taken {#view-details-and-perform-actions-on-tasks}
+### Details weergeven en handelingen uitvoeren voor taken {#view-details-and-perform-actions-on-tasks}
 
 Wanneer u een taak opent, kunt u taakdetails bekijken en beschikbare acties uitvoeren. De acties die beschikbaar zijn voor een taak worden gedefinieerd in de taakstap Toewijzen van de bijbehorende Forms-workflow.
 
