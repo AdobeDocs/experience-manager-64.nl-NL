@@ -6,11 +6,11 @@ seo-description: Als u het compatibiliteitspakket op AEM Forms 6.4 installeert, 
 uuid: e50b1ff9-c357-422a-8da8-a791ff805317
 contentOwner: gtalwar
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: correspondence-management
+topic-tags: correspondence-management, installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 38a80992-2eda-4535-89af-0de34b1a9686
 translation-type: tm+mt
-source-git-commit: 9a2ebded0068213903020d2c5633a05b6ffb07ef
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '387'
 ht-degree: 0%
@@ -46,7 +46,7 @@ Zorg ervoor dat u [AEM compatibiliteitspakket](/help/sites-deploying/backward-co
    Zie [Werken met pakketten](/help/sites-administering/package-manager.md)voor meer informatie over het uploaden en installeren van het pakket.
 
 1. Start de server opnieuw nadat de logbestanden zijn gestabiliseerd.
-1. Gebruik het migratiehulpprogramma om uw elementen compatibel te maken met 6.4.
+1. Gebruik het migratiehulpprogramma om uw middelen compatibel te maken met 6.4.
 
    Zie [migratiehulpprogramma](/help/forms/using/migration-utility.md)voor meer informatie.
 
