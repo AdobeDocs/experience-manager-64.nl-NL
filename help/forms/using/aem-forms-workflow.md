@@ -5,11 +5,11 @@ description: Gebruik AEM Forms Workflow om revisie en goedkeuringen te automatis
 seo-description: Gebruik AEM Forms Workflow om revisie en goedkeuringen te automatiseren en snel samen te stellen, documentservices te starten (bijvoorbeeld voor het converteren van een PDF-document naar een andere indeling), te integreren met de Adobe Sign-handtekeningworkflow en nog veel meer.
 uuid: 46be7ec6-d5cc-498a-9484-e66a29527064
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: document_services
+topic-tags: document_services, publish
 discoiquuid: f8df5fa3-3843-4110-a46d-9a524d2657cd
 noindex: true
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '2842'
 ht-degree: 0%
