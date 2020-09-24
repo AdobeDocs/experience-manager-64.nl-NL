@@ -6,10 +6,10 @@ seo-description: Leer hoe u AEM CAPTCHA- of Google reCAPTCHA-service configureer
 uuid: 8bcb0dd7-b43c-4a36-8f6b-7875b68f9ba1
 contentOwner: vishgupt
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
-topic-tags: author
+topic-tags: author, adaptive_forms
 discoiquuid: 32369b0b-5abf-487d-ae6b-972c254eb7e2
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
 workflow-type: tm+mt
 source-wordcount: '636'
 ht-degree: 0%
@@ -48,7 +48,7 @@ De reCAPTCHA-service implementeren in AEM Forms:
       1. Tik **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
    1. Tik in de configuratievenster op **[!UICONTROL Create]**.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map en schakel deze in **[!UICONTROL Cloud Configurations]**.
-   1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor cloudserviceconfiguraties.
+   1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor configuraties van de cloudservice.
 
 
 1. Configureer de cloudservice voor reCAPTCHA.
