@@ -3,9 +3,9 @@ title: Asset Insights inschakelen via DTM
 description: Leer hoe u DTM (Adobe Dynamic Tag Management) gebruikt om Asset Insights in te schakelen.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 994dd56ce13b2d1f959e392e181d752e994bf198
 workflow-type: tm+mt
-source-wordcount: '574'
+source-wordcount: '625'
 ht-degree: 3%
 
 ---
@@ -13,9 +13,11 @@ ht-degree: 3%
 
 # Asset Insights inschakelen via DTM {#enabling-asset-insights-through-dtm}
 
-Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden.
+Adobe Dynamisch tagbeheer is een programma waarmee u uw digitale marketingtools kunt activeren. Deze service wordt gratis aan Adobe Analytics-klanten aangeboden. U kunt uw trackingcode aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, of u kunt DTM gebruiken om labels voor Asset Insights in te voegen. Inzichten worden alleen ondersteund en opgegeven voor afbeeldingen.
 
-Hoewel u uw trackingcode kunt aanpassen om CMS-oplossingen van derden in staat te stellen Asset Insights te gebruiken, raadt Adobe u aan DTM te gebruiken om Asset Insights-tags in te voegen.
+>[!CAUTION]
+>
+>Adobe DTM is afgekeurd ten gunste van Adobe Experience Platform Launch en zal binnenkort [aflopen](https://medium.com/launch-by-adobe/dtm-plans-for-a-sunset-3c6aab003a6f). Adobe raadt u aan Launch te [gebruiken voor inzicht in elementen](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/advanced/asset-insights-launch-tutorial.html).
 
 Voer deze stappen uit om Asset Insights in te schakelen via DTM:
 
@@ -41,7 +43,7 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM:
    ![chlimage_1-195](assets/chlimage_1-195.png)
 
 1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets]**.
-1. Tik/klik **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze vervolgens in het scriptdialoogvenster dat u in stap 6 hebt geopend. Sla de wijzigingen op.
+1. Tik/klik **[!UICONTROL Insights Page Tracker]**, kopieer de trackercode en plak deze vervolgens in het dialoogvenster Script dat u in stap 6 hebt geopend. Sla de wijzigingen op.
 
    >[!NOTE]
    >
@@ -49,7 +51,6 @@ Voer deze stappen uit om Asset Insights in te schakelen via DTM:
    >* De vraag aan `assetAnalytics.dispatcher.init()` wordt verwijderd. De functie wordt naar verwachting aangeroepen zodra het Adobe Analytics-hulpprogramma van DTM is voltooid.
    >* Afhankelijk van de plaats waar Asset Insights Page Tracker wordt gehost (bijvoorbeeld AEM, CDN enzovoort), kan de oorsprong van de scriptbron wijzigingen vereisen.
    >* Voor AEM paginanummering moet de bron verwijzen naar een publicatie-instantie met de hostnaam van de verzendingsinstantie.
-
 
 
 1. Open [https://dtm.adobe.com](https://dtm.adobe.com). Klik op Overzicht in de webeigenschap en klik op Gereedschap toevoegen of open een bestaand Adobe Analytics-gereedschap. Tijdens het creëren van het hulpmiddel, kunt u de Methode van de Configuratie aan Automatisch plaatsen.
