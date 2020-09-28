@@ -1,16 +1,17 @@
 ---
-title: AEM 6.4 Gebruikershandleiding voor middelen
+title: Hulplijn voor middelen
 description: Deze handleiding behandelt alle AEM Assets-taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
+user-guide-title: Hulplijn voor middelen
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '338'
-ht-degree: 18%
+source-wordcount: '336'
+ht-degree: 19%
 
 ---
 
 
-# AEM 6.4 Gebruikershandleiding voor middelen
+# Hulplijn voor middelen
 
 Deze handleiding behandelt alle AEM Assets-taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 
