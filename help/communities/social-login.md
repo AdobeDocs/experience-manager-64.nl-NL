@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '2682'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ De vereiste stappen zijn:
       * Maak en publiceer een [Twitter Connect-cloudservice](#create-a-twitter-connect-cloud-service).
 
 
-1. [**Schakel **sociale aanmelding](#enable-social-login)voor een communitysite in.
+1. [**Schakel** sociale aanmelding](#enable-social-login) voor een communitysite in.
 
 Er zijn twee basisbeginselen:
 
@@ -98,7 +98,7 @@ Wanneer de toepassing is gemaakt, zoekt u de **[!UICONTROL App ID]** instellinge
 
 ### Een Facebook Connect-Cloud Service maken {#create-a-facebook-connect-cloud-service}
 
-De [Adobe Granite OAuth Application and Provider](https://chl-author.corp.adobe.com/content/help/en/experience-manager/6-4/communities/using/social-login.html#AdobeGraniteOAuthApplicationandProvider) -instantie, geïnstantieerd door een cloudserviceconfiguratie te maken, identificeert de Facebook-toepassing en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.
+De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-application-and-provider) -instantie, geïnstantieerd door een cloudserviceconfiguratie te maken, identificeert de Facebook-toepassing en de lidgroep(en) waaraan de nieuwe gebruikers worden toegevoegd.
 
 1. Meld u aan bij de AEM auteur-instantie met beheerdersrechten.
 1. Selecteer bij globale navigatie **[!UICONTROL Tools > Cloud Services > Facebook Social login configuration]**.
@@ -243,7 +243,7 @@ In de sectie met machtigingen voor het beheer van de Twitter-toepassing:
    * Als deze optie niet is geselecteerd, bevat het gebruikersprofiel in AEM geen e-mailadres.
    * In de instructies van Twitter staat dat er nog meer stappen moeten worden gezet.
 
-De enige REST-aanvraag die voor aanmelden via een sociaal netwerk is ingediend, is het *[GET van de gegevens](https://dev.twitter.com/rest/reference/get/account/verify_credentials)*van de account/het verifiëren van de gegevens.
+De enige REST-aanvraag die voor aanmelden via een sociaal netwerk is ingediend, is het *[GET van de gegevens](https://dev.twitter.com/rest/reference/get/account/verify_credentials)* van de account/het verifiëren van de gegevens.
 
 ### Een Twitter Connect-Cloud Service maken {#create-a-twitter-connect-cloud-service}
 
