@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
 workflow-type: tm+mt
-source-wordcount: '1881'
+source-wordcount: '1877'
 ht-degree: 1%
 
 ---
@@ -102,7 +102,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
    <td> </td> 
   </tr>
   <tr>
-   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimaliserenPDF</a></td> 
+   <td><a href="https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/pdfg/service/api/GeneratePDFService.html#optimizePDF-com.adobe.aemfd.docmanager.Document-java.lang.String-com.adobe.aemfd.docmanager.Document-" target="_blank">optimizePDF</a></td> 
    <td>Hiermee wordt PDF geoptimaliseerd om de bestandsgrootte te reduceren door overbodige metagegevens te verwijderen zonder dat dit van invloed is op de kwaliteit.</td> 
    <td>Verwerkte documenten<br /> </td> 
    <td> </td> 
@@ -303,7 +303,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 >[!NOTE]
 >
->* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De invoke API kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
+>* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De aanroepAPI kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
 >* Eén PDF-document dat met de assembleerservice wordt gemaakt, kan worden beschouwd als geen, één of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de geleverde DDX-code.
 
 >
@@ -350,7 +350,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 ## Billable Data Capture API&#39;s {#billable-data-capture-apis}
 
-Alle verzendgebeurtenissen van adaptieve formulieren, HTML5 Forms en formulierset worden als transacties verwerkt. Het verzenden van een PDF-formulier wordt standaard niet als een transactie beschouwd. Gebruik de opgegeven API [voor](https://www.bdnsw.gov.bn/PublishingImages/page-under-construction.jpg) transactierapporten om een PDF forms-verzending als een transactie te registreren.
+Alle verzendgebeurtenissen van adaptieve formulieren, HTML5 Forms en formulierset worden als transacties verwerkt. Het verzenden van een PDF-formulier wordt standaard niet als een transactie beschouwd. Gebruik de opgegeven API [voor](record-transaction-custom-implementation.md) transactierapporten om een PDF forms-verzending als een transactie te registreren.
 
 ### Adaptieve Forms {#adaptive-forms}
 
