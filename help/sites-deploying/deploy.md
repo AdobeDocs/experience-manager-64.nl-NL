@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
 translation-type: tm+mt
-source-git-commit: b7be355f788f07eea2d1333abb4220dd645ef53f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '1843'
+source-wordcount: '1835'
 ht-degree: 1%
 
 ---
@@ -58,7 +58,6 @@ Als u zich vertrouwd hebt gemaakt met deze basisbeginselen, vindt u meer geavanc
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Definities van releasevoertuig bijwerken](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [Wat is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## Basisconcepten {#basic-concepts}
@@ -128,13 +127,13 @@ Met AEM Managed Services kunnen klanten de volgende voordelen realiseren:
 
 **Wolkenbeheer**: Cloud Manager, een onderdeel van de Adobe Experience Manager Managed Services-aanbieding, is een zelfbedieningsportaal waarmee organisaties Adobe Experience Manager in de cloud verder kunnen beheren. Het omvat een geavanceerde ononderbroken integratie en ononderbroken levering (CI/CD) pijpleiding die de teams van IT en implementatiepartners de levering van aanpassingen of updates laat versnellen zonder prestaties of veiligheid te compromitteren. Cloud Manager is alleen beschikbaar voor Adobe Managed Service-klanten.
 
-Raadpleeg de gebruikershandleiding voor [**Cloud Manager voor meer informatie over Cloud Manager en de bijbehorende bronnen **](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
+Raadpleeg de gebruikershandleiding voor [**Cloud Manager voor meer informatie over Cloud Manager en de bijbehorende bronnen**](https://helpx.adobe.com/experience-manager/cloud-manager/user-guide.html).
 
 ## Aan de slag {#getting-started}
 
 ### Vereisten {#prerequisites}
 
-Terwijl de productie instanties gewoonlijk op specifieke machines in werking stellen die een officieel gesteund OS (zie [Technische Vereisten](/help/sites-deploying/technical-requirements.md)) in werking stellen, zal de server van de Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 8 **](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)van Java steunt.
+Terwijl de productie instanties gewoonlijk op specifieke machines in werking stellen die een officieel gesteund OS (zie [Technische Vereisten](/help/sites-deploying/technical-requirements.md)) in werking stellen, zal de server van de Experience Manager eigenlijk op om het even welk systeem lopen dat [**StandaardUitgave 8**](https://www.oracle.com/technetwork/java/javase/downloads/jdk8-downloads-2133151.html)van Java steunt.
 
 Voor vertrouwdmaking en voor het ontwikkelen op AEM is het vrij gebruikelijk om een instantie te gebruiken die op uw lokale computer wordt geïnstalleerd die Apple OS X of Desktopversies van Microsoft Windows of Linux in werking stelt.
 
@@ -142,7 +141,7 @@ Op de client-kant werkt AEM met alle moderne browsers (**Microsoft Edge**, **Int
 
 ### De software ophalen {#getting-the-software}
 
-Klanten met een geldig onderhouds- en ondersteuningscontract moeten een e-mailmelding met een code hebben ontvangen en AEM kunnen downloaden van de [**Adobe Licensing Website **](https://licensing.adobe.com/). Zakelijke partners kunnen om toegang tot het downloaden vragen via[**spphelp@adobe.com **](mailto:spphelp@adobe.com).
+Klanten met een geldig onderhouds- en ondersteuningscontract moeten een e-mailmelding met een code hebben ontvangen en AEM kunnen downloaden van de [**Adobe Licensing Website**](https://licensing.adobe.com/). Zakelijke partners kunnen om toegang tot het downloaden vragen via [**spphelp@adobe.com**](mailto:spphelp@adobe.com).
 
 Het softwarepakket AEM is beschikbaar in twee formulieren:
 
@@ -190,7 +189,7 @@ In de volgende sectie beschrijven wij de **standalone installatie**. Zie [Applic
        java -XX:MaxPermSize=256m -Xmx1024M -jar cq-quickstart-6.4.0.jar
    ```
 
-AEM neemt enkele minuten in beslag om het jar-bestand uit te pakken, te installeren en op te starten. Deze procedure leidt tot:
+AEM neemt enkele minuten in beslag om het jar-bestand uit te pakken, zelf te installeren en op te starten. Deze procedure leidt tot:
 
 * een **AEM instantie** van de auteur
 * uitvoeren op **localhost**
@@ -320,6 +319,5 @@ In het bovenstaande gedeelte krijgt u een goed inzicht in de grondbeginselen van
 * [Inleiding tot het AEM Platform](/help/sites-deploying/platform.md)
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
-* [Definities van releasevoertuig bijwerken](/help/sites-deploying/update-release-vehicle-definitions.md)
 * [Wat is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
