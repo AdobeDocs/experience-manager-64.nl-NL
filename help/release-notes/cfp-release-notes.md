@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3b96c351b3deb72e1381e101433f4246fd26af1b
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '3346'
+source-wordcount: '3364'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,7 @@ AEM 6.4.8.2 is een Cumulatief Pak van de Fix (GVB) dat van AEM 6.4 Service Pack 
 
 In AEM 6.4.8.2 wordt de ingebouwde opslagplaats (Apache Jackrabbit Oak) bijgewerkt naar versie 1.8.22.
 
-Voor informatie over gestreken fijn papier en andere typen vrijkomende producten raadpleegt u [AEM Definities van vrijgave voor voertuigen bijwerken](../sites-deploying/update-release-vehicle-definitions.md)
+Voor informatie over gestreken fijn papier en andere typen vrijkomende producten raadpleegt u [AEM Definities van vrijgave voor voertuigen bijwerken](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 
@@ -175,7 +175,7 @@ Enkele belangrijke punten van AEM 6.4.8.1 zijn:
 * Integratie met Adobe Experience Manager voor delen van pakket is verwijderd.
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.21.
 
-Voor informatie over gestreken fijn papier en andere typen vrijkomende producten raadpleegt u [AEM Definities van vrijgave voor voertuigen bijwerken](../sites-deploying/update-release-vehicle-definitions.md)
+Voor informatie over gestreken fijn papier en andere typen vrijkomende producten raadpleegt u [AEM Definities van vrijgave voor voertuigen bijwerken](https://docs.adobe.com/content/help/en/experience-manager-65/deploying/deploying/update-release-vehicle-definitions.html)
 
 Adobe Experience Manager 6.4.8.1 biedt oplossingen voor de volgende problemen.
 
