@@ -6,9 +6,9 @@ user-guide-title: AEM 6.4 Implementatiegids
 breadcrumb-title: Deploying Guide
 user-guide-description: Learn more about installing, deploying, and the architecture of Adobe Experience Manager 6.4, including our Adobe Managed Services cloud deployment.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
 workflow-type: tm+mt
-source-wordcount: '332'
+source-wordcount: '328'
 ht-degree: 1%
 
 ---
@@ -37,7 +37,6 @@ ht-degree: 1%
    + [Gebruiksscenario&#39;s voor indexeren van eikenrun.jar](oak-run-indexing-usecases.md)
    + [Probleemoplossing voor Oak-indexen](troubleshooting-oak-indexes.md)
    + [Opteren in verzameling van samengevoegde verbruiksstatistieken](opt-in-aggregated-usage-statistics.md)
-   + [Definities van releasevoertuig bijwerken](update-release-vehicle-definitions.md)
    + [Problemen oplossen](troubleshooting.md)
 + AEM configureren {#configuring}
    + [Basisconfiguratieconcepten](configuring.md)
