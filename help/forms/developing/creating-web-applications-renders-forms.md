@@ -11,7 +11,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f29b089e-8902-4744-81c5-15ee41ba8069
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1842'
 ht-degree: 0%
@@ -29,7 +29,7 @@ U kunt een webtoepassing maken die Java-servlets gebruikt om de Forms-service aa
 >
 >In deze sectie wordt beschreven hoe u een webtoepassing maakt die een Java-servlet gebruikt die de Forms-service aanroept en op fragmenten gebaseerde formulieren weergeeft. (Zie Forms [renderen op basis van fragmenten](/help/forms/developing/rendering-forms-based-fragments.md).)
 
-Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
+Met behulp van een Java-servlet kunt u een formulier naar een clientwebbrowser schrijven, zodat een klant gegevens in het formulier kan bekijken en invoeren. Nadat de webgebruiker het formulier met gegevens heeft gevuld, klikt hij op een verzendknop op het formulier om informatie terug te sturen naar de Java-server, waar de gegevens kunnen worden opgehaald en verwerkt. De gegevens kunnen bijvoorbeeld naar een ander proces worden verzonden.
 
 In deze sectie wordt besproken hoe u een webtoepassing kunt maken waarmee de gebruiker op Amerika gebaseerde formuliergegevens of op Canada gebaseerde formuliergegevens kan selecteren, zoals in de volgende afbeelding wordt getoond.
 
@@ -119,7 +119,7 @@ Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invok
 
 >[!NOTE]
 >
->Zie `RenderFormFragment` Webpagina[maken voor informatie over het maken van de HTML-pagina die het](/help/forms/developing/rendering-forms.md#creating-the-web-page)Java-servlet activeert.
+>Zie De webpagina `RenderFormFragment` maken voor informatie over het maken van de HTML-pagina die het [](/help/forms/developing/rendering-forms.md#creating-the-web-page)Java-servlet activeert.
 
 ### Java-toepassingslogica voor de servlet maken {#creating-java-application-logic-for-the-servlet}
 
@@ -379,7 +379,7 @@ Als u de Java-servlet wilt implementeren die de Forms-service aanroept, moet u u
 
 1. Klik in het venster **Projectverkenner** met de rechtermuisknop op het `FragmentsWebApplication` project en selecteer **Exporteren** > **WAR-bestand**.
 1. Typ in het tekstvak van de module **** Web de naam `FragmentsWebApplication` van het Java-project.
-1. Typ in het tekstvak **Doel** de bestandsnaam, geef de locatie van het WAR-bestand op `FragmentsWebApplication.war`****en klik op Voltooien.
+1. Typ in het tekstvak **Doel** de bestandsnaam, geef de locatie van het WAR-bestand op `FragmentsWebApplication.war`**** en klik op Voltooien.
 
 ### WAR-bestand implementeren op de J2EE-toepassingsserver {#deploying-the-war-file-to-the-j2ee-application-server}
 
