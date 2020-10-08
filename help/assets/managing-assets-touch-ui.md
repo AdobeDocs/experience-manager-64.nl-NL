@@ -4,7 +4,7 @@ description: Meer informatie over de verschillende functies voor middelenbeheer 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 8970712d30883e96a1ae50bc40688c58857a7557
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '9697'
 ht-degree: 1%
@@ -145,7 +145,8 @@ Met Dynamic Media kunt u via een FTP-server items in batches uploaden. Als u gro
 >[!NOTE]
 >
 >Om elementen via FTP te uploaden in Dynamic Media - Scene7 mode installeert feature pack (FP) 18912 op AEM auteur. Neem contact op met de klantenservice van Adobe om toegang te krijgen tot FP-18912 en de installatie van uw FTP-account te voltooien. Zie [Functiepakket 18912 installeren voor migratie](/help/assets/bulk-ingest-migrate.md)van bulkmiddelen.
-Als u FTP gebruikt om elementen te uploaden, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
+>
+>Als u FTP gebruikt om elementen te uploaden, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
 **Elementen uploaden met FTP**
 
@@ -580,7 +581,7 @@ Zie Dynamische media-elementen [publiceren voor meer informatie over Dynamic Med
 1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
 1. Als het element verwijst naar andere elementen, worden de verwijzingen ervan weergegeven in de wizard. Alleen verwijzingen die niet zijn gepubliceerd of gewijzigd sinds ze voor het laatst zijn gepubliceerd of niet zijn gepubliceerd, worden weergegeven. Kies de referenties die u wilt publiceren.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Tik **[!UICONTROL Publish]** om de activering van de elementen te bevestigen.
 
@@ -760,7 +761,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
    * [Snelle acties](managing-assets-touch-ui.md#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
 
