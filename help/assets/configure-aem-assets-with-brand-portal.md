@@ -3,7 +3,7 @@ title: AEM Assets configureren met Brand Portal
 description: 'Leer hoe u AEM Assets met Brand Portal configureert voor het publiceren van middelen en verzamelingen naar Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: 656a06ae70293a3f1ec6768fc9eea15f1329c42c
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '1600'
 ht-degree: 43%
@@ -21,15 +21,14 @@ AEM Assets (Adobe Experience Manager) wordt geconfigureerd met Brand Portal via 
 >
 >Eerder, werd het Portaal van het Merk gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning.
 
-
 >[!TIP]
 >
 >***Alleen voor bestaande klanten***
 >
 >Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via Adobe I/O.
 
-
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
+
 * [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe gebruiker van het Portaal van het Merk bent en uw auteur van AEM Assets met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie op Adobe I/O tot stand brengen.
 * [Configuratie](#upgrade-integration-64)upgrade: Als u een bestaande gebruiker van het Portaal van het Merk met uw de auteursinstantie van AEM Assets bent die met het Portaal van het Merk op erfenisGateway wordt gevormd OAuth, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op Adobe I/O tot stand te brengen.
 
@@ -46,7 +45,6 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 * Een AEM Assets-auteur-exemplaar met het nieuwste Service Pack.
 * URL van Brand Portal-tenant.
 * Een gebruiker met systeembeheerdersbevoegdheden op de IMS-organisatie van de Brand Portal-tenant.
-
 
 [Download en installeer AEM 6.4](#aemquickstart)
 
@@ -73,6 +71,7 @@ Zie voor gedetailleerde instructies
 ## Configuratie maken {#configure-new-integration-64}
 
 Voer de volgende stappen in de vermelde reeks uit als u AEM Assets met Brand Portal voor het eerst configureert:
+
 1. [Openbaar certificaat verkrijgen](#public-certificate)
 1. [Adobe I/O-integratie maken](#createnewintegration)
 1. [IMS-accountconfiguratie maken](#create-ims-account-configuration)
@@ -82,7 +81,6 @@ Voer de volgende stappen in de vermelde reeks uit als u AEM Assets met Brand Por
 >[!NOTE]
 >
 >Een AEM Assets-auteur-instantie mag slechts met één Brand Portal-huurder worden geconfigureerd.
-
 
 ### IMS-configuratie maken {#create-ims-configuration}
 
@@ -205,8 +203,6 @@ Controleer of u de volgende stappen hebt uitgevoerd:
 >
 >Zorg ervoor dat de IMS-configuratie slaagt voor de statuscontrole. Als de configuratie niet slaagt voor de statuscontrole, is deze ongeldig. U moet deze dan verwijderen en een nieuwe, geldige configuratie maken.
 
-
-
 ### Cloudservice configureren {#configure-the-cloud-service}
 
 Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice te maken:
@@ -258,7 +254,6 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    >[!NOTE]
    >
    >De replicatieagenten werken parallel en delen de baandistributie gelijk, daardoor verhogend de het publiceren snelheid met vier keer de originele snelheid. Nadat de wolkendienst wordt gevormd, wordt de extra configuratie niet vereist om de replicatieagenten toe te laten die door gebrek worden geactiveerd om parallelle publicatie van veelvoudige activa toe te laten.
-
 
 1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
 
@@ -360,4 +355,3 @@ Nadat de replicatie slaagt, kunt u activa, omslagen, en Inzamelingen aan het Por
 * [Assets publiceren naar Brand Portal](brand-portal-publish-assets.md)
 * [Middelen en mappen publiceren naar Brand Portal](brand-portal-publish-folder.md)
 * [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
-
