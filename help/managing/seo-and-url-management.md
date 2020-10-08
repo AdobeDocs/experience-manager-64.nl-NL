@@ -10,7 +10,7 @@ topic-tags: managing
 content-type: reference
 discoiquuid: 150b43e3-9fb3-4c1c-b1cd-ccfd162974ad
 translation-type: tm+mt
-source-git-commit: 5ea8fac7eb0d474aa27a0203ab324d6931ce5571
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
 source-wordcount: '3115'
 ht-degree: 97%
@@ -254,7 +254,7 @@ Hier volgt een voorbeeld van hoe dit probleem optreedt:
 
 1. De dispatcher plaatst het antwoord in de cache op `/my-page.html` en retourneert het antwoord naar de gebruiker.
 1. Een contentauteur voert een wijziging uit op deze pagina en activeert deze.
-1. De flushagent van de dispatcher verzendt een aanvraag tot invalidatie voor `/content/my-brand/my-page`**.**Aangezien de dispatcher geen pagina heeft die in de cache is opgeslagen op dit pad, blijft de oude content in de cache opgeslagen en is deze inactief.
+1. De flushagent van de dispatcher verzendt een aanvraag tot invalidatie voor `/content/my-brand/my-page`**.** Aangezien de dispatcher geen pagina heeft die in de cache is opgeslagen op dit pad, blijft de oude content in de cache opgeslagen en is deze inactief.
 
 Er zijn manieren om aangepaste flushregels voor dispatching te configureren die de kortere URL aan de langere URL toewijzen voor de cache-invalidatie.
 
