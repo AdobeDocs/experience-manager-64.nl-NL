@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
 workflow-type: tm+mt
-source-wordcount: '2394'
+source-wordcount: '2391'
 ht-degree: 0%
 
 ---
@@ -63,7 +63,7 @@ Voltooi de volgende stappen om een grafiek aan een Interactieve Mededeling toe t
    * Geef het volgende op voor **[!UICONTROL x-axis]** en **[!UICONTROL y-axis]**:
 
       * **[!UICONTROL Title]**: Geef de titels voor de X- en Y-as op die moeten worden weergegeven in de interactieve communicatie.
-      * **[!UICONTROL Data Model Object *]**: Blader door gegevensmodelobjecten voor de X- en Y-as van het diagram en selecteer deze in het formuliergegevensmodel dat u tijdens het maken van de interactieve communicatie hebt opgegeven. Kies twee eigenschappen voor verzamel-/arraytype van hetzelfde bovenliggende gegevensmodelobject die relevant zijn ten opzichte van elkaar om te plotten op de X- en Y-as van een grafiek.
+      * **[!UICONTROL Data Model Object *]**: Blader door gegevensmodelobjecten voor de X- en Y-as van het diagram en selecteer deze in het formuliergegevensmodel dat u tijdens het maken van de interactieve communicatie hebt opgegeven. Kies twee eigenschappen voor verzamel-/arraytype van hetzelfde bovenliggende gegevensmodelobject die van betekenis zijn ten opzichte van elkaar om te plotten op de X- en Y-as van een grafiek.
       * **[!UICONTROL Function]**: Als u statistische functies wilt gebruiken om de waarden op de as te berekenen, selecteert u functie voor de X-/Y-as. Voor meer informatie over functies, zie de functies van het [Gebruik in grafiek](#usefunction) en [Voorbeeld 2: Toepassing van de som en de gemiddelde functies in een lijngrafiek](#applicationsumfrequency).
 
    >[!NOTE]
@@ -95,7 +95,7 @@ Hiervoor moet u het volgende opgeven:
 * **[!UICONTROL Title]** voor de X- en Y-as (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld Hoeveelheid ($) voor de X-as en Uitgaven voor de Y-as.
 * **[!UICONTROL Label Direction]** (alleen in dit voorbeeld voor Kolomtypeschema in het afdrukkanaal) - in dit voorbeeld `Tilt Left`
 
-* **[!UICONTROL Tooltip]** om met de muis boven een uitgave weer te geven (alleen webkanaal) - in dit voorbeeld `${x}: $ ${y}`, dat als [kostenlabel wordt weergegeven: $ Amount] (Voorbeeld: Bezoek themapark: $ 315)
+* **[!UICONTROL Tooltip]** om met de muis boven een uitgave weer te geven (alleen webkanaal) - in dit voorbeeld `${x}: $ ${y}`, dat wordt weergegeven als `[Expense Label: $ Amount]` (Voorbeeld: Bezoek themapark: $ 315)
 
 ![De grafiek van de kolom in de drukoutput van een Interactieve Communicatie](assets/chartprintchannel.png)**Cijfer:** *Kolomdiagram in de afdrukuitvoer van een interactieve communicatie*
 
