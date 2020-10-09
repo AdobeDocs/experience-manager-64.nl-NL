@@ -3,18 +3,18 @@ cloud: experience-cloud
 product: adobe experience manager
 sub-product: 'formulieren '
 audience: end-user
-user-guide-title: AEM 6.4 Forms Handboek
+user-guide-title: Adobe Experience Manager 6.4 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Create, manage, publish, and update digital forms.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
 workflow-type: tm+mt
-source-wordcount: '3711'
+source-wordcount: '3713'
 ht-degree: 0%
 
 ---
 
-# AEM 6.4 - Handboek voor Forms {#forms}
+# Adobe Experience Manager 6.4 Forms Guide {#forms}
 
 + [AEM 6.4 Forms Handboek](home.md)
 + Releaseopmerkingen {#release-notes-new-features}
