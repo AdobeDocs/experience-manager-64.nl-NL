@@ -4,9 +4,9 @@ description: Meer informatie over de verschillende functies voor middelenbeheer 
 contentOwner: AG
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: c86c84efeb25673490373273a9f4720381e46454
 workflow-type: tm+mt
-source-wordcount: '9697'
+source-wordcount: '9713'
 ht-degree: 1%
 
 ---
@@ -424,7 +424,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Het **[!UICONTROL Paste]** pictogram is beschikbaar op de werkbalk totdat de plakbewerking is voltooid.
 
-### Elementen verplaatsen of hernoemen {#moving-or-renaming-assets}
+## Elementen verplaatsen en hernoemen {#moving-or-renaming-assets}
 
 Wanneer u elementen (of mappen) naar een andere locatie verplaatst, worden de elementen (of mappen) tijdens het kopiëren van het element niet gedupliceerd. De elementen (of mappen) worden op de doellocatie geplaatst en worden van de bronlocatie verwijderd. U kunt de naam van het element ook wijzigen wanneer u het naar de nieuwe locatie verplaatst. Als u een gepubliceerd element naar een andere locatie verplaatst, kunt u het element opnieuw publiceren. Door gebrek beweeg verrichting op gepubliceerde activa maakt automatisch het ongedaan. Verplaatst element wordt opnieuw gepubliceerd als de auteur de [!UICONTROL Republish] optie selecteert wanneer het bewegen van het element.
 
@@ -434,39 +434,42 @@ Elementen of mappen verplaatsen:
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
-1. Select the asset, and tap the **[!UICONTROL Move]** icon from the toolbar.
+![U kunt een reeds gepubliceerd element opnieuw publiceren wanneer u het verplaatst](assets/republish-on-move.png)
 
-   ![move_icon](assets/move_icon.png)
+Elementen of mappen verplaatsen:
 
-1. Voer in de **[!UICONTROL Move Assets]** wizard een van de volgende handelingen uit:
+1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
-   * Geef de naam voor het element op nadat het is verplaatst. Tik vervolgens **[!UICONTROL Next]** om door te gaan.
-   * Tik **[!UICONTROL Cancel]** om het proces te stoppen.
+1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
+   ![Optie Verplaatsen op de werkbalk Elementen](assets/do-not-localize/move_icon.png)
 
+1. Voer in de [!UICONTROL Move Assets] wizard een van de volgende handelingen uit:
+
+   * Geef de naam voor het element op nadat het is verplaatst. Klik vervolgens **[!UICONTROL Next]** om door te gaan.
+
+   * Klik **[!UICONTROL Cancel]** om het proces te stoppen.
    >[!NOTE]
    >
-   >U kunt dezelfde naam opgeven voor het element als er geen element met die naam is op de nieuwe locatie. U moet echter een andere naam gebruiken als u het element verplaatst naar een locatie waar zich een element met dezelfde naam bevindt. Als u dezelfde naam gebruikt, genereert het systeem automatisch een variatie in de naam. Als uw element bijvoorbeeld de naam Vierkant heeft, genereert het systeem de naam Vierkant1 voor de kopie.
-
-   >[!NOTE]
-   >
-   >De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
-   >* de naam van het elementbestand mag geen elementen bevatten  `* / : [ \ \ ] | # % { } ? &`
-   >* de naam van de elementenmap mag niet bevatten  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   >* U kunt dezelfde naam opgeven voor het element als er geen element met die naam is op de nieuwe locatie. U moet echter een andere naam gebruiken als u het element verplaatst naar een locatie waar zich een element met dezelfde naam bevindt. Als u dezelfde naam gebruikt, genereert het systeem automatisch een variatie in de naam. Als uw element bijvoorbeeld de naam Vierkant heeft, genereert het systeem de naam Vierkant1 voor de kopie.
+   >* Bij het wijzigen van de naam is witruimte niet toegestaan in de bestandsnaam.
 
 
-1. Voer op de **[!UICONTROL Select Destination]** pagina een van de volgende handelingen uit:
+1. Voer in het **[!UICONTROL Select Destination]** dialoogvenster een van de volgende handelingen uit:
 
-   * Navigeer naar de nieuwe locatie voor de elementen en tik vervolgens **[!UICONTROL Next]** om door te gaan.
-   * Tik **[!UICONTROL Back]** om terug te keren naar de **[!UICONTROL Rename]** pagina.
+   * Navigeer naar de nieuwe locatie voor de elementen en klik vervolgens **[!UICONTROL Next]** om door te gaan.
+
+   * Klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Rename]** scherm.
 
 1. Als de elementen die worden verplaatst, verwijzen naar pagina&#39;s, elementen of verzamelingen, wordt het **[!UICONTROL Adjust References]** tabblad naast het **[!UICONTROL Select Destination]** tabblad weergegeven.
 
-   Voer een van de volgende handelingen uit op de **[!UICONTROL Adjust References]** pagina:
+   Voer een van de volgende handelingen uit op het **[!UICONTROL Adjust References]** scherm:
 
-   * Geef de referenties op die u wilt aanpassen op basis van de nieuwe details en tik vervolgens op **[!UICONTROL Move]** om door te gaan.
-   * In de **[!UICONTROL Adjust]** kolom selecteert of deselecteert u verwijzingen naar de elementen.
-   * Tik **[!UICONTROL Back]** om terug te keren naar de **[!UICONTROL Select Destination]** pagina.
-   * Tik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
+   * Geef op welke verwijzingen op basis van de nieuwe details moeten worden aangepast en klik vervolgens om door te gaan **[!UICONTROL Move]** .
+
+   * In de **[!UICONTROL Adjust]** kolom selecteert/deselecteert u verwijzingen naar de elementen.
+   * Klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Select Destination]** scherm.
+
+   * Klik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
 
    Als u verwijzingen niet bijwerkt, blijven ze naar het vorige pad van het element wijzen. Als u de referenties aanpast, worden deze bijgewerkt naar het nieuwe middelenpad.
 
