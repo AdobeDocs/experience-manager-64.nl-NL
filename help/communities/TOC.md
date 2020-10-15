@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Gebruikersgids voor gemeenschappen
-breadcrumb-title: Communities Guide
-user-guide-description: Create online experiences such as forums, user groups, learning resources, and other social features.
+breadcrumb-title: Community Guide
+user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 translation-type: tm+mt
 source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
 workflow-type: tm+mt
-source-wordcount: '470'
+source-wordcount: '486'
 ht-degree: 0%
 
 ---
