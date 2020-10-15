@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: admin-user
 user-guide-title: AEM 6.4 Gebruikershandleiding voor het beheer
-breadcrumb-title: Administering Guide
-user-guide-description: Learn about administering AEM.
+breadcrumb-title: Beheerdershandleiding
+user-guide-description: Meer informatie over het AEM.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '614'
+source-wordcount: '620'
 ht-degree: 6%
 
 ---
