@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: Hulplijn voor middelen
-breadcrumb-title: Assets Guide
-user-guide-description: Create, manage, deliver, and optimize digital assets.
+breadcrumb-title: Hulplijn voor middelen
+user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
 source-git-commit: 405733b2084621773c2992121be8d540eeba39a9
 workflow-type: tm+mt
-source-wordcount: '714'
+source-wordcount: '723'
 ht-degree: 31%
 
 ---
