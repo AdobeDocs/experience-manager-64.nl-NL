@@ -3,12 +3,12 @@ cloud: experience-cloud
 product: adobe experience manager
 audience: end-user
 user-guide-title: AEM 6.4 Handleiding voor mobiele gebruikers
-breadcrumb-title: Mobile Guide
-user-guide-description: Create and manage content for mobile apps.
+breadcrumb-title: Gids voor mobiele apparaten
+user-guide-description: Inhoud maken en beheren voor mobiele apps.
 translation-type: tm+mt
 source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
 workflow-type: tm+mt
-source-wordcount: '315'
+source-wordcount: '324'
 ht-degree: 0%
 
 ---
