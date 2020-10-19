@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 83f8fc7773941a429bdf47425add64d2363e7851
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1699'
+source-wordcount: '1707'
 ht-degree: 1%
 
 ---
@@ -120,8 +120,8 @@ Uw eerste aangepaste domein kost geen extra geld met een Dynamic Media-licentie.
 
 U moet het verzoek starten om intelligente beeldverwerking te gebruiken. deze wordt niet automatisch ingeschakeld.
 
-1. Een aanvraag voor technische ondersteuning starten (e-mail: s7support@adobe.com).
-1. Geef de volgende informatie op in uw supportverzoek:
+1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html)
+1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    1. Primaire contactpersoon, e-mail, telefoon.
    1. Alle domeinen die voor slimme beeldverwerking (namelijk images.company.com of mycompany.scene7.com) moeten worden toegelaten.
