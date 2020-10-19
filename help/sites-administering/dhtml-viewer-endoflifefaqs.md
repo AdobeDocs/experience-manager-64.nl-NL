@@ -10,10 +10,10 @@ topic-tags: integration
 content-type: reference
 discoiquuid: d94244ac-a5f6-4c95-ab8c-26b41d25863f
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '1652'
-ht-degree: 1%
+source-wordcount: '1665'
+ht-degree: 0%
 
 ---
 
@@ -28,7 +28,7 @@ Vanaf 31 januari 2014 zal Scene7 officieel ondersteuning voor het einde van de l
 
 **Wat betekent einde van leven?**
 
-Einde van de levensduur betekent dat (1) Scene7 geen functieverbeteringen meer toevoegt aan het DHTML-viewerplatform (2) en geen opgeloste problemen meer aanpakt of oplost op het DHTML-viewerplatform. De (3) klantenservice is dan niet langer bezig met het oplossen van problemen of het bieden van ondersteuning voor aan DHTML gerelateerde viewerproblemen of vragen.
+Einde van de levensduur betekent dat (1) Scene7 geen functieverbeteringen meer toevoegt aan het DHTML-viewerplatform (2) en geen opgeloste problemen meer aanpakt of oplost op het DHTML-viewerplatform. De (3) klantenservice is dan niet langer bezig met het oplossen van problemen of het bieden van ondersteuning voor DHTML-gerelateerde viewerproblemen of -vragen.
 
 **Waarom brengt Scene7 deze verandering?**
 
@@ -131,4 +131,4 @@ Hoewel u nog steeds in productie met op DHTML-Gebaseerde kijkers kunt zijn, is h
 
 **Wie neem ik contact op voor meer informatie?**
 
-Als u geen antwoord op al uw vragen hebt gevonden in deze veelgestelde vragen, neemt u contact op met de ondersteuningsdienst ([s7support@adobe.com](mailto:s7support@adobe.com)) of uw Adobe-accountmanager.
+Als deze veelgestelde vragen niet alle vragen hebben beantwoord, [gebruikt u de Admin Console om een ondersteuningskwestie](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) te maken of neemt u contact op met uw Adobe-accountmanager.
