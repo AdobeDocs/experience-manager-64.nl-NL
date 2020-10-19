@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: afbe9f80-c2a3-4a46-b9d6-4c9406667d7f
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '724'
+source-wordcount: '736'
 ht-degree: 2%
 
 ---
@@ -57,9 +57,8 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
 ## Wat is het proces om HTTP/2 voor mijn Dynamische Rekening van Media Classic toe te laten? {#what-is-the-process-for-enabling-http-for-my-scene-account}
 
-U moet een verzoek van de Technische Steun van de Adobe (`s7support@adobe.com`) in werking stellen om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
-
-1. Geef de volgende informatie op in uw supportverzoek:
+1. U moet de Admin Console [gebruiken om een steungeval](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) tot stand te brengen en verzoek om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
+1. Geef de volgende informatie op in uw ondersteuningsgeval:
 
    * Primaire contactpersoon, e-mail en telefoonnummer.
    * Alle domeinen die naar HTTP2 moeten worden overgebracht. Dat is `images.company.com` of `mycompany.scene7.com`.
