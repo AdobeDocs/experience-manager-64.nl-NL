@@ -10,9 +10,9 @@ topic-tags: integration
 content-type: reference
 discoiquuid: f55e68c3-3309-4400-bef9-fd3afa6e2b5f
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
 workflow-type: tm+mt
-source-wordcount: '5296'
+source-wordcount: '5310'
 ht-degree: 0%
 
 ---
@@ -166,7 +166,7 @@ Dynamische media en Dynamic Media Classic gelijktijdig gebruiken:
    1. Automatische upload instellen op Dynamic Media Classic.
    1. Voeg de **Dynamic Media Classic uploadstap** toe na alle stappen in de workflow Dynamische media *aan het einde van* de workflow Element **voor bijwerken van** Dam ( `https://<server>:<host>/cf#/etc/workflow/models/dam/update_asset.html)`
    1. (Optioneel) Beperk het uploaden van dynamische media Klassieke elementen door MIME-type in [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.scene7.impl.Scene7AssetMimeTypeServiceImpl). MIME-typen van middelen die niet in deze lijst staan, worden niet geüpload naar de Dynamic Media Classic-server.
-   1. (Optioneel) Stel video in de Klassieke dynamische mediaconfiguratie in. U kunt videocodering voor of zowel Dynamic Media als Dynamic Media Classic gelijktijdig inschakelen. Dynamische uitvoeringen worden gebruikt voor voorvertoning en lokale weergave in AEM instantie, terwijl dynamische media Klassieke video-uitvoeringen worden gegenereerd en opgeslagen op Dynamic Media Classic-servers. Wanneer u videocoderingsservices instelt voor zowel Dynamic Media als Dynamic Media Classic, past u een [videoverwerkingsprofiel](/help/assets/video-profiles.md) toe op de map Dynamic Media Classic met middelen.
+   1. (Optioneel) Stel video in de Klassieke dynamische mediaconfiguratie in. U kunt videocodering voor of zowel Dynamic Media als Dynamic Media Classic gelijktijdig inschakelen. Dynamische uitvoeringen worden gebruikt voor voorvertoning en lokale weergave in AEM instantie, terwijl dynamische media Klassieke video-uitvoeringen worden gegenereerd en opgeslagen op Dynamic Media Classic-servers. Wanneer u videocoderingsservices instelt voor zowel Dynamic Media als Dynamic Media Classic, past u een [videoverwerkingsprofiel](/help/assets/video-profiles.md) toe op de map met dynamische media Klassieke elementen.
    1. (Optioneel) [Configureer Beveiligde voorvertoning in Dynamic Media Classic](/help/sites-administering/scene7.md#configuring-the-state-published-unpublished-of-assets-pushed-to-scene).
 
 #### Beperkingen {#limitations}
@@ -217,7 +217,7 @@ U kunt AEM configureren om elementen te uploaden naar Dynamic Media Classic. Mid
 Als u Dynamic Media Classic wilt configureren voor integratie met AEM, moet u de volgende stappen uitvoeren:
 
 1. [Definieer een wolkenconfiguratie](#creating-a-cloud-configuration-for-scene) - Definieert de toewijzing tussen een dynamische map Media Classic en een map Middelen. U moet deze stap zelfs voltooien als u (AEM Assets naar Dynamic Media Classic) slechts in één richting wilt synchroniseren.
-1. [Schakel de **Adobe CQ s7dam Dam Listener **](#enabling-the-adobe-cq-scene-dam-listener)in - Gereed in de[!UICONTROL OSGi]console.
+1. [Schakel de **Adobe CQ s7dam Dam Listener**](#enabling-the-adobe-cq-scene-dam-listener) in - Gereed in de [!UICONTROL OSGi] console.
 1. Als u wilt dat AEM elementen automatisch worden geüpload naar Dynamic Media Classic, moet u die optie inschakelen en Dynamic Media Classic toevoegen aan de DAM-workflow voor updatebestanden. U kunt ook handmatig elementen uploaden.
 1. Dynamische media Klassieke componenten aan sidekick toevoegen. Hierdoor kunnen gebruikers de Klassieke Dynamic Media-componenten op hun AEM gebruiken.
 1. [Wijs de configuratie in AEM](#enabling-scene-for-wcm) aan de pagina toe - Deze stap wordt vereist om het even welke videovoorinstellingen te bekijken die u in Dynamische Media Klassiek hebt gecreeerd. Dit is ook vereist als u een element van buiten de CQ-doelmap naar Dynamic Media Classic moet publiceren.
@@ -285,7 +285,7 @@ Met de synchronisatie tussen AEM Assets en Dynamic Media Classic zijn er momente
 
 ### Dynamic Media Classic-servers configureren {#configuring-scene-servers}
 
-Als u AEM achter een proxy uitvoert of speciale firewallinstellingen hebt, moet u de hosts van de verschillende gebieden mogelijk expliciet inschakelen. Servers worden in de inhoud beheerd `/etc/cloudservices/scene7/endpoints` en kunnen naar wens worden aangepast. Tik op een URL en bewerk deze vervolgens om de URL indien nodig te wijzigen. In vorige versies van AEM waren deze waarden hard-gecodeerd.
+Als u AEM achter een proxy uitvoert of speciale firewallinstellingen hebt, moet u mogelijk de hosts van de verschillende gebieden expliciet inschakelen. Servers worden in de inhoud beheerd `/etc/cloudservices/scene7/endpoints` en kunnen naar wens worden aangepast. Tik op een URL en bewerk deze vervolgens om de URL indien nodig te wijzigen. In vorige versies van AEM waren deze waarden hard-gecodeerd.
 
 Als u navigeert naar `/etc/cloudservices/scene7/endpoints.html`, worden de servers weergegeven (en kunt u ze bewerken door op de URL te klikken):
 
@@ -425,7 +425,7 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 
 Voordat u elementen naar Dynamic Media Classic kunt duwen zonder ze te publiceren, moet u het volgende instellen:
 
-1. Neem contact op met Dynamic Media Classic Customer Care (s7support@adobe.com) om een veilige voorvertoning voor uw Dynamic Media Classic-account in te schakelen.
+1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In het geval van uw steun, verzoek dat de veilige voorproef voor uw Dynamische Media Klassieke rekening wordt toegelaten.
 1. Volg de aanwijzingen om een veilige voorvertoning voor uw Dynamic Media Classic-account in te [stellen.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
 
 Dit zijn de zelfde stappen u zou volgen om het even welke veilige testopstelling in Dynamische Klassiek van Media tot stand te brengen.
@@ -458,7 +458,7 @@ De status van elementen die naar Dynamic Media Classic worden geduwd, instellen 
 
    Zie [Dynamic Media Classic-documentatie](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) voor meer informatie over testelementen voordat u deze openbaar maakt.
 
-   ![chlimage_1-382](assets/chlimage_1-302.png)
+   ![chlimage_1-302](assets/chlimage_1-302.png)
 
 1. Tik op **[!UICONTROL OK]**.
 
@@ -589,7 +589,7 @@ Als u problemen hebt met het integreren van AEM met Dynamic Media Classic, raadp
 
 **Als het publiceren van uw digitale element naar Dynamic Media Classic mislukt:**
 
-* Controleer of het element dat u wilt uploaden zich in de **[!UICONTROL CQ target]** map bevindt (u geeft deze map op in de configuratie van de dynamische Media Classic-cloud).
+* Controleer of het element dat u probeert te uploaden zich in de **[!UICONTROL CQ target]** map bevindt (u geeft deze map op in de Dynamic Media Classic-cloudconfiguratie).
 * Als dit niet het geval is, moet u de cloudconfiguratie configureren in **[!UICONTROL Page Properties]** voor die pagina zodat uploaden naar de **[!UICONTROL CQ adhoc]** map is toegestaan.
 
 * Controleer de logboeken voor om het even welke informatie.
