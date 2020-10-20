@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 436aa424-d05e-4f3d-90ac-5ff3b05ddba8
 translation-type: tm+mt
-source-git-commit: 715cff841252d79504d702817f91db92df919bfc
+source-git-commit: f2b0d37a0666f2a0be9e7034da12dddf0c56fb25
 workflow-type: tm+mt
-source-wordcount: '2012'
+source-wordcount: '2011'
 ht-degree: 0%
 
 ---
@@ -23,7 +23,7 @@ Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms.
 
 AEM Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van aangepaste formulieren en interactieve communicatie verder stroomlijnen.
 
-Lees verder voor een snelle inleiding op nieuwe functies en verbeteringen. Raadpleeg de documentatie voor bronnen die informatie bieden. Zie ook AEM 6.4 Opmerkingen bij de [release](/help/release-notes/forms.md)van Forms. Voor volledige AEM 6.4 Forms-documentatie gaat u naar [AEM 6.4 Forms User Guide](/help/forms/home.md).
+Lees verder voor een snelle inleiding op nieuwe functies en verbeteringen. Raadpleeg de documentatie voor bronnen die informatie bieden. Zie ook AEM 6.4 Opmerkingen bij de [release](/help/release-notes/forms.md)van Forms. Voor volledige AEM 6.4 Forms-documentatie gaat u naar [AEM 6.4 Forms Guide](/help/forms/home.md).
 
 ## Interactieve communicatie {#interactive-communications}
 
@@ -170,7 +170,7 @@ Deze release bevat verschillende verbeteringen voor de lazy-laadfunctie:
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
-Met Forms-Centric AEM Workflows kunt u snel workflows voor verschillende taken op de OSGi-stapel maken en implementeren. U hoeft niet langer de op de JEE-stack beschikbare procesbeheerfunctionaliteit te installeren, de implementatie te vereenvoudigen en de kosten van toepassingsservers en -infrastructuren te elimineren. Voor meer informatie, zie [Forms-centric werkschema&#39;s op OSGi](/help/forms/using/aem-forms-workflow.md).
+Met Forms-Centric AEM Workflows kunt u snel workflows voor verschillende taken op de OSGi-stapel maken en implementeren. U hoeft niet langer de op de JEE-stack beschikbare mogelijkheid voor Process Management te installeren, de implementatie te vereenvoudigen en de kosten van toepassingsservers en -infrastructuren te elimineren. Voor meer informatie, zie [Forms-centric werkschema&#39;s op OSGi](/help/forms/using/aem-forms-workflow.md).
 
 Hier volgen de verbeteringen in Forms-Centric AEM Workflows:・
 
