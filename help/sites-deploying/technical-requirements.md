@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 65346b3de98ec53e97c66fdac3be43b9c71e292a
+source-git-commit: d09956e5e7fb42e9c4b145e027778f209876239a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3142'
 ht-degree: 0%
 
 ---
@@ -319,7 +319,7 @@ Adobe Experience Manager werkt met de volgende serverplatforms:
  </tbody> 
 </table>
 
-1. Linux Kernel 2.6, 3.x en 4.x bevat derivaten van Red Hat-distributie, waaronder Red Hat Enterprise Linux, CentOS, Oracle Linux en Amazon Linux. AEM functies voor formulierinvoegtoepassingen worden alleen ondersteund in CentOS 7 en Red Hat Enterprise Linux 6.5 en 7.
+1. Linux Kernel 2.6, 3.x en 4.x bevat derivaten van Red Hat-distributie, waaronder Red Hat Enterprise Linux, CentOS, Oracle Linux en Amazon Linux. AEM Forms-add-onfuncties worden alleen ondersteund in CentOS 7 en Red Hat Enterprise Linux 7.
 1. AEM Assets: Zie de sectie [Ondersteuning voor XMP terugschrijven van metagegevens](#requirements-for-aem-assets-xmp-metadata-write-back)
 1. AEM Assets: Geen ondersteuning voor Dynamic Media Imaging. Dynamic Media Video wordt ondersteund.
 1. AEM Forms wordt alleen ondersteund op Ubuntu 16.04 LTS.
@@ -461,7 +461,7 @@ Om ontvankelijkheid van de Cliënt WebDav onder Vensters te verbeteren - zie de 
 
 ## Aanvullende opmerkingen bij Platforms {#additional-platform-notes}
 
-Deze sectie bevat speciale notities en meer gedetailleerde informatie over het uitvoeren van Adobe Experience Manager en de invoegtoepassingen ervan.
+Deze sectie biedt speciale notities en meer gedetailleerde informatie over het uitvoeren van Adobe Experience Manager en de invoegtoepassingen ervan.
 
 ### IPv4 en IPv6 {#ipv-and-ipv}
 
