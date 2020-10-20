@@ -19,7 +19,7 @@ ht-degree: 40%
 + [Overzicht van gebruikershandleiding voor ontwerpen](home.md)
 + Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
    + [Eerste stappen voor auteurs](first-steps.md)
-   + [Snelle gids voor het ontwerpen van pagina&#39;s](qg-page-authoring.md)
+   + [Quick Guide to Authoring Pages](qg-page-authoring.md)
    + [Concept of Authoring](author.md)
    + [Basisbewerkingen](basic-handling.md)
    + [Zoeken](search.md)
