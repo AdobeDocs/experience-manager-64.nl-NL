@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 1dafd400-16c0-416d-9e81-7bf53b761f98
 translation-type: tm+mt
-source-git-commit: 4dbb6af1c0a76aabc003749d7fa76f8c6e41e726
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1307'
+source-wordcount: '1315'
 ht-degree: 0%
 
 ---
@@ -96,15 +96,16 @@ Alle configuraties van de cloudservice in AEM worden geconsolideerd in de `/conf
 De map configureren voor configuraties van cloudservices:
 
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**.
+   * Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 1. Ga als volgt te werk om de algemene map voor cloudconfiguraties in te schakelen of sla deze stap over om een andere map voor cloudserviceconfiguraties te maken en te configureren.
 
    1. Selecteer de **[!UICONTROL Configuration Browser]** map in de `global` map en tik op **[!UICONTROL Properties]**.
    1. In the **[!UICONTROL Configuration Properties]** dialog, enable **[!UICONTROL Cloud Configurations]**.
-   1. Tik **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster te sluiten.
+   1. Tik **[!UICONTROL Save & Close]** om de configuratie op te slaan en het dialoogvenster af te sluiten.
 
 1. In the **[!UICONTROL Configuration Browser]**, tap **[!UICONTROL Create]**.
 1. Geef in het **[!UICONTROL Create Configuration]** dialoogvenster een titel op voor de map en schakel deze in **[!UICONTROL Cloud Configurations]**.
-1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor cloudserviceconfiguraties.
+1. Tik **[!UICONTROL Create]** om de map te maken die geschikt is voor configuraties van de cloudservice.
 
 ## RESTful-webservices configureren {#configure-restful-web-services}
 
