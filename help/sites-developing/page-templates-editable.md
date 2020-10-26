@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: 4c0c4ee86840cec0aa368b48e7f512cb86abeb02
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '3223'
+source-wordcount: '3231'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ Met bewerkbare sjablonen worden de onderdelen die een pagina maken, geïsoleerd 
 
 >[!NOTE]
 >
->AEM 6.4.5.0 of later wordt vereist om editable malplaatjes met de Redacteur [van het](/help/sites-developing/spa-overview.md)KUUROORD te gebruiken.
+>AEM 6.4.5.0 of hoger is vereist als u bewerkbare sjablonen wilt gebruiken in de [SPA Editor](/help/sites-developing/spa-overview.md).
 
 >[!NOTE]
 >
@@ -230,6 +230,8 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 >[!NOTE]
 >
 >In Browser van de Configuratie, kunt u de globale omslag uitgeven en de **Bewerkbare optie van Malplaatjes** activeren als u wenst om malplaatjes binnen deze omslag tot stand te brengen, nochtans wordt dit niet geadviseerd beste praktijken.
+>
+>Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 
 ### ACLs en Groepen {#acls-and-groups}
 
@@ -585,7 +587,7 @@ Het beleid van de pagina staat u toe om het [inhoudsbeleid](#content-policies) v
 
 1. **Toegestane sjablonen**
 
-   * [Definieer de toegestane sjabloonpaden op de **Pagina-eigenschappen **](/help/sites-authoring/templates.md#allowing-a-template-author)van de desbetreffende pagina of basispagina van een subvertakking.
+   * [Definieer de toegestane sjabloonpaden op de **Pagina-eigenschappen**](/help/sites-authoring/templates.md#allowing-a-template-author) van de desbetreffende pagina of basispagina van een subvertakking.
    * Stel de eigenschap in:
 
       `cq:allowedTemplates`
