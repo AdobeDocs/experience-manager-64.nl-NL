@@ -8,9 +8,9 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 71bba66a-3cac-445b-9941-aa4bcf9b2160
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '677'
+source-wordcount: '685'
 ht-degree: 0%
 
 ---
@@ -53,6 +53,7 @@ Voer de volgende stappen uit om een webkanaalsjabloon te maken:
 1. Maak een sjabloonmap om uw interactieve communicatiesweb-sjablonen te behouden, als u dat nog niet hebt. Zie Sjabloonmappen in [paginasjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md)voor meer informatie.
 
    1. Tik op **[!UICONTROL Tools]** gereedschappen-1 ![>](assets/tools-1.png) **[!UICONTROL Configuration Browser]**.
+      * Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
    1. Tik op de pagina Configuration Browser **[!UICONTROL Create]**.
    1. Geef in het dialoogvenster Configuratie maken een titel op voor de map, controleer **[!UICONTROL Editable Templates]** en tik **[!UICONTROL Create]**.
 
