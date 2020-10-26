@@ -8,9 +8,9 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 translation-type: tm+mt
-source-git-commit: 8922b6cfecfbb592e4f073254be68b24add6c5c7
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1821'
+source-wordcount: '1829'
 ht-degree: 0%
 
 ---
@@ -178,6 +178,7 @@ Als u een webkanaalsjabloon wilt maken, definieert u een map waarin u de gemaakt
 Voer de volgende stappen uit om een map voor de bewerkbare sjablonen te maken:
 
 1. Tik op **Gereedschappen** ![Gereedschappen](assets/tools-icon.svg) > **Configuratiebrowser**.
+   * Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 1. Tik op **Maken** op de pagina Configuration Browser.
 1. Geef in het dialoogvenster **Configuratie** maken de titel **Create_First_IC_templates** op als de titel voor de map, controleer **Bewerkbare sjablonen** en tik op **Maken**.
 
