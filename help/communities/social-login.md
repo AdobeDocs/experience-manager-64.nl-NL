@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: c0a71870-8f95-40c8-9ffd-b7af49723288
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2688'
 ht-degree: 0%
 
 ---
@@ -110,6 +110,7 @@ De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicati
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
 
    ![config-eigenschappen](assets/config-propertiespng.png)
+   * Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 
 1. Configuratie van Facebook-cloudservice maken/bewerken.
 
@@ -259,6 +260,7 @@ De [Adobe Granite OAuth Application and Provider](#adobe-granite-oauth-applicati
 1. Go to **[!UICONTROL Tools > General > Configuration Browser]**. Selecteer de context en bewerk de eigenschappen. Schakel cloudconfiguraties in als deze nog niet zijn ingeschakeld.
 
    ![twitterconfigproppng](assets/twitterconfigproppng.png)
+   * Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 
 1. Configuratie van de Twitter-cloudservice maken/bewerken.
 
@@ -444,7 +446,7 @@ Als er traversale waarschuwingen worden weergegeven in de logboeken, wordt aange
 
 Op een instantie van de auteur, aangemeld met beheerdersrechten:
 
-1. Vanuit globale navigatie: Selecteer **Hulpmiddelen,[CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
+1. Vanuit globale navigatie: Selecteer **Hulpmiddelen, [CRX/DE Lite](../../help/sites-developing/developing-with-crxde-lite.md).**
 1. Creeer een index genoemd ntBaseLucene-oauth van een exemplaar van ntBaseLucene:
 
    * Onder knooppunt /oak:index
