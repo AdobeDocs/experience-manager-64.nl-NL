@@ -10,9 +10,9 @@ topic-tags: integration
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: bb3fcb53-b8c3-4b1d-9125-4715f34ceb0b
 translation-type: tm+mt
-source-git-commit: 1b6254e98b65b64071ab4634706bd1ad3d2fd8df
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '1652'
+source-wordcount: '1668'
 ht-degree: 3%
 
 ---
@@ -52,6 +52,7 @@ AEM 6.4 wordt geleverd met het Livefyre-functiepakket 1.2.6 vooraf geïnstalleer
 ### Configureer AEM voor gebruik van Livefyre: Een configuratiemap maken {#configure-aem-to-use-livefyre-create-a-configuration-folder}
 
 1. Klik op de AEM homepage op het pictogram **Gereedschappen** in de linkertrack en navigeer vervolgens naar **Algemeen > Configuratiebrowser**.
+   * Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 1. Klik op **Maken** om het dialoogvenster Configuratie maken te openen.
 1. Geef uw configuratie een naam en schakel het selectievakje **Cloud Configurations** in.
 
@@ -73,6 +74,8 @@ Configureer AEM om de LiveCyre-licentiereferenties van uw organisatie te gebruik
    >Mappen moeten de eigenschappen van Cloud Configurations hebben ingeschakeld voordat LiveCycle-configuraties eraan kunnen worden toegevoegd. De omslagen van de configuratie worden gecreeerd en in Browser van de Configuratie geleid.
    >
    >U kunt geen naam voor een configuratie-het wordt van verwijzingen voorzien door de weg van de omslag het binnen is. U kunt slechts één configuratie per map hebben.
+   >
+   >Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 
 1. Selecteer de nieuwe Livefy-configuratiekaart en klik op **Eigenschappen**.
 
