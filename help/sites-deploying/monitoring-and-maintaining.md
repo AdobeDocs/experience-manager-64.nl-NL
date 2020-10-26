@@ -10,7 +10,7 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
 workflow-type: tm+mt
 source-wordcount: '5893'
 ht-degree: 0%
@@ -33,7 +33,7 @@ Een belangrijke factor hierbij is dat u, om potentiële problemen te herkennen, 
 | [Logbestanden](/help/sites-deploying/monitoring-and-maintaining.md#working-with-audit-records-and-log-files) worden gecontroleerd. |  |  |
 | Systeembewaking wordt (voortdurend) op de achtergrond uitgevoerd. | Inclusief CPU-, geheugen-, schijf- en netwerkgebruik. Gebruik bijvoorbeeld iostat / vmstat / perfmon. | De geregistreerde gegevens worden visualiseerd en kunnen voor het volgen van prestatiesproblemen worden gebruikt. Onbewerkte gegevens zijn ook toegankelijk. |
 | [AEM prestaties worden gecontroleerd](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance). | Met inbegrip van de Tellers [van het](/help/sites-deploying/monitoring-and-maintaining.md#request-counters) Verzoek om verkeersniveaus te controleren. | Indien een aanzienlijk of langdurig prestatieverlies wordt vastgesteld, moet een grondig onderzoek worden ingesteld. |
-| U controleert uw [Replicators](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). &quot; |  |  |
+| U controleert uw [replicatieagenten](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-your-replication-agents). |  |  |
 | Workflowinstanties regelmatig leegmaken. | Grootte opslagplaats en workflowprestaties. | Zie [Regular Purging of Workflow Instances](/help/sites-administering/workflows-administering.md#regular-purging-of-workflow-instances). |
 
 ## Back-ups {#backups}
@@ -99,7 +99,7 @@ Deze sectie behandelt onderhoudswerkzaamheden met betrekking tot de versieeigens
 
 ### Overzicht {#overview}
 
-Het gereedschap **Versies** wissen is beschikbaar in de **[Tools](/help/sites-administering/tools-consoles.md)Console **onder**Versioning **of rechtstreeks op: &quot;
+Het gereedschap **Versies** wissen is beschikbaar in de **[Tools](/help/sites-administering/tools-consoles.md) Console** onder **Versioning** of rechtstreeks op:
 
 `https://<server>:<port>/etc/versioning/purge.html`
 
@@ -121,7 +121,7 @@ Het gereedschap **Versies** wissen is beschikbaar in de **[Tools](/help/sites-ad
 
 Ga als volgt te werk om versies van een website te wissen:
 
-1. Navigeer naar de **[Tools](/help/sites-administering/tools-consoles.md)Console **, selecteer**Versioning **en dubbelklik op**Purge Versies **.
+1. Navigeer naar de **[Tools](/help/sites-administering/tools-consoles.md) Console**, selecteer **Versioning** en dubbelklik op **Purge Versies**.
 1. Het beginpad instellen van de inhoud die moet worden gewist (bijvoorbeeld `/content/geometrixx-outdoors`).
 
    * Als u het knooppunt dat door het pad wordt gedefinieerd alleen wilt leegmaken, schakelt u **Recursief** uit.
@@ -143,7 +143,7 @@ Ga als volgt te werk om versies van een website te wissen:
 In de processen **Dry Run** en **Purge** worden alle knooppunten weergegeven die zijn verwerkt. Tijdens het proces, kan een knoop één van de volgende status hebben:
 
 * `ignore (not versionnable)`: het knooppunt ondersteunt geen versiebeheer en wordt tijdens het proces genegeerd.
-* `ignore (no version)`: het knooppunt heeft geen versie en wordt tijdens het proces genegeerd. &quot;
+* `ignore (no version)`: het knooppunt heeft geen versie en wordt tijdens het proces genegeerd.
 * `retained`: het knooppunt is niet gewist.
 * `purged`: Het knooppunt wordt gewist.
 
@@ -317,10 +317,15 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >`org.apache.sling.commons.log.pattern` ondersteunt maximaal zes argumenten.
    >
    >{0} The timestamp of type `java.util.Date`
+   >
    >{1} de logboekmarkering
-   >{2} the name of the current thread\
-   >{3} de naam van de logboekregistratie\
-   >{4} het logniveau\
+   >
+   >{2} the name of the current thread
+   >
+   >{3} de naam van de logboekregistratie
+   >
+   >{4} het logniveau
+   >
    >{5} het logbericht
    >
    >Als de logboekvraag een `Throwable` stapelspoor omvat wordt toegevoegd aan het bericht.
@@ -374,7 +379,7 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
 
       Type: `String`
 
-      Waarde: geeft het logbestand op, zodat het overeenkomt met het bestand dat is opgegeven in het logbestand;
+      Waarde: geeft het logbestand zo op dat het overeenkomt met het bestand dat is opgegeven in het logbestand;
 
       voor dit voorbeeld, `../logs/myLogFile.log`.
 
@@ -405,21 +410,20 @@ In bepaalde omstandigheden wilt u mogelijk een aangepast logbestand met een ande
    >* U kunt een tijd-/datumschema opgeven als een `java.util.SimpleDateFormat` patroon. Hiermee wordt de periode gedefinieerd waarna het bestand wordt geroteerd. ook het achtervoegsel dat aan het geroteerde dossier (voor identificatie) wordt toegevoegd.
 
    >
-   >  De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
+   >De standaardwaarde is &#39;.&#39;jjjj-MM-dd (voor dagelijkse logrotatie).
    >
-   >  Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
+   >Bijvoorbeeld, om middernacht van 20 Januari 2010 (of wanneer het eerste logboekbericht na dit voorkomt om precies te zijn), zal ../logs/error.log worden anders genoemd aan ../logs/error.log.2010-01-20. Logboekregistratie voor 21 januari wordt uitgevoerd naar (een nieuw en leeg) ../logs/error.log totdat de logbestanden bij de volgende wijziging van de dag worden doorgehaald.
    >
-   >  | `'.'yyyy-MM` | Rotatie aan het begin van elke maand |
-   >  |---|---|
-   >  | `'.'yyyy-ww` | Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
-   >  | `'.'yyyy-MM-dd` | Rotatie elke dag om middernacht. |
-   >  | `'.'yyyy-MM-dd-a` | Roteren om middernacht en middag van elke dag. |
-   >  | `'.'yyyy-MM-dd-HH` | Rotatie boven aan elk uur. |
-   >  | `'.'yyyy-MM-dd-HH-mm` | Rotatie aan het begin van elke minuut. |
+   >| `'.'yyyy-MM` | Rotatie aan het begin van elke maand |
+   >|---|---|
+   >| `'.'yyyy-ww` | Rotatie op de eerste dag van elke week (afhankelijk van de landinstelling). |
+   >| `'.'yyyy-MM-dd` | Rotatie elke dag om middernacht. |
+   >| `'.'yyyy-MM-dd-a` | Roteren om middernacht en middag van elke dag. |
+   >| `'.'yyyy-MM-dd-HH` | Rotatie boven aan elk uur. |
+   >| `'.'yyyy-MM-dd-HH-mm` | Rotatie aan het begin van elke minuut. |
    >
-   >  Opmerking: Wanneer u een tijd/datum opgeeft:
-   >
-   >  1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
+   >Opmerking: Wanneer u een tijd/datum opgeeft:
+   > 1. U moet letterlijke tekst met enkele aanhalingstekens (&#39; &#39;) &quot;escape&quot;-tekens gebruiken;
       >
       >     
       dit om te voorkomen dat bepaalde tekens worden geïnterpreteerd als patroonletters.
@@ -456,7 +460,7 @@ Deze vermeldingen bevatten dezelfde gegevens als bij het bewerken van een pagina
 
 #### OSGi-auditrecords van de webconsole {#osgi-audit-records-from-the-web-console}
 
-OSGi-gebeurtenissen genereren ook auditrecords die u kunt zien op het tabblad **Configuratiestatus** -> **Logbestanden **tabblad in de AEM webconsole:
+OSGi-gebeurtenissen genereren ook auditrecords die kunnen worden weergegeven op het tabblad **Configuratiestatus** -> **Logbestanden** in de AEM webconsole:
 
 ![screen_shot_2012-02-13at50346pm](assets/screen_shot_2012-02-13at50346pm.png)
 
@@ -624,8 +628,8 @@ Sommige hiervan zijn afhankelijk van uw besturingssysteem.
    <td><p>Gebruik: jvisualvm of visualvm<br /> </p> <p>Zie <a href="https://java.sun.com/javase/6/docs/technotes/tools/share/jvisualvm.html">jvisualvm</a>, <a href="https://visualvm.github.io/releases.html">visualvm</a> en de Prestaties van de <a href="#monitoring-performance-using-j-visualvm">Controle gebruikend (J)VisualVM</a>.</p> <p><strong>Opmerking:</strong> Met JDK 1.6, is VisualVM verlengbaar met stop-ins.</p> </td> 
   </tr> 
   <tr> 
-   <td>worstjes/resten, laatste</td> 
-   <td>De diepte vraag van de kernel en procesanalyse (Unix).</td> 
+   <td>worstjes/resten, n.e.g.</td> 
+   <td>In diepte de vraag van de kernel en procesanalyse (Unix).</td> 
    <td>Unix/Linux-opdrachten.</td> 
   </tr> 
   <tr> 
