@@ -9,7 +9,7 @@ contentOwner: aheimoz
 discoiquuid: 208225ee-9052-4a45-9cfd-f8d27d4d70ed
 noindex: true
 translation-type: tm+mt
-source-git-commit: 3bdff366a0d455b405c1f9de371ced98d25ae2e2
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
 source-wordcount: '598'
 ht-degree: 0%
@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # PUBLICEREN NIET, MAAR DELETE Aanpassen van modellen van inhoudsfragmenten niet{#do-not-publish-but-do-not-delete-customizing-content-fragment-models}
 
-De editor van het Content Fragment Model is een wizard die is gebaseerd op `Formbuilder`, wordt overgeërfd van:
+De redacteur van het Model van het Fragment van de Inhoud is een tovenaar die op wordt gebaseerd `Formbuilder`, van wordt geërft:
 
 `granite/ui/components/foundation/form/formbuilder`
 
@@ -27,7 +27,7 @@ Deze component heeft de hulpmiddelen noodzakelijk om de belemmering en dalingsin
 
 ## Locaties {#locations}
 
-Modellen worden opgeslagen en gemaakt onder `/conf`een map waarin de eigenschap [Modellen](/help/assets/content-fragments-models.md#enable-content-fragment-models) inhoudsfragment is ingeschakeld. Dit plaatsen kan ook in de Eigenschappen **van de** Configuratie worden gezien, toegankelijk van Browser **van de** Configuratie.
+Modellen worden opgeslagen en gemaakt onder `/conf`een map waarin de eigenschap [Modellen](/help/assets/content-fragments-models.md#enable-content-fragment-models) inhoudsfragment is ingeschakeld. Dit plaatsen kan ook in de Eigenschappen **van de** Configuratie worden gezien, toegankelijk van Browser **[van de](/help/sites-administering/configurations.md)** Configuratie.
 
 1. Navigeer naar de browser via **Hulpmiddelen**, **Algemeen**, Browser **van de** Configuratie bijvoorbeeld, 
 `http://localhost:4502/libs/granite/configurations/content/view.html/conf`
@@ -105,7 +105,7 @@ De Editor **van het** inhoudsfragmentmodel bestaat uit twee delen:
 >
 >U ***mag*** niets in het `/libs` pad wijzigen.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 
 <!-- Please uncomment when files are used
 The properties on the right side define a form that is submitted directly into JCR under `/conf`; see the path in the example [Structure of a Model](/help/sites-developing/customizing-content-fragment-models.md#structure-of-a-model).
