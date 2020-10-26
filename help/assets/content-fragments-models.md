@@ -9,9 +9,9 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 45e67357-4524-4d25-b5f1-21182b8e803c
 translation-type: tm+mt
-source-git-commit: 8b83be510a67fadaa666f2ba96fbb3fc82b9cb3d
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '642'
+source-wordcount: '650'
 ht-degree: 4%
 
 ---
@@ -41,6 +41,7 @@ Als u modellen van inhoudsfragmenten wilt inschakelen, moet u:
 Om een nieuw Model [van het Fragment van de Inhoud te](#creating-a-content-fragment-model) creëren **moet** u hen eerst toelaten gebruikend de Manager van de Configuratie:
 
 1. Navigeer naar **[!UICONTROL Tools]**, **[!UICONTROL General]** en open het **[!UICONTROL Configuration Browser]**.
+   * Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 1. Selecteer de locatie die geschikt is voor uw website.
 1. Hiermee opent u **[!UICONTROL Create]** het dialoogvenster waarin u:
 
@@ -109,7 +110,7 @@ Het inhoudsfragmentmodel definieert in feite de structuur van de resulterende in
 
 1. **Een veld verwijderen**
 
-   Selecteer het vereiste veld en klik op het pictogram met de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
+   Selecteer het gewenste veld en klik op het pictogram van de prullenbak of tik erop. U wordt gevraagd de actie te bevestigen.
 
    ![cf-32](assets/cf-32.png)
 
