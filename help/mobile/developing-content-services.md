@@ -9,10 +9,10 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 6a7e5472-cb57-4c78-b183-7c6dcac11a4e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
 workflow-type: tm+mt
-source-wordcount: '295'
-ht-degree: 1%
+source-wordcount: '303'
+ht-degree: 0%
 
 ---
 
@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md)informatie.
 
 >[!CAUTION]
 >
@@ -43,7 +43,9 @@ Content Services kan de inhoud leveren als elementen, verpakte HTML (HTML/CSS/JS
 >
 >Voordat u aan de slag gaat met Content Services, moet u ervoor zorgen dat de vlag Content Services is ingeschakeld. Als u het maken en beheren van modellen in uw app wilt inschakelen, moet u gegevensmodellen inschakelen in de configuratiegrowser.
 >
->Zie **[Inhoudsservices](/help/mobile/developing-content-services.md)**beheren voor meer informatie.
+>Zie **[Inhoudsservices](/help/mobile/developing-content-services.md)** beheren voor meer informatie.
+>
+>Zie de documentatie [van Browser van de](/help/sites-administering/configurations.md) Configuratie voor meer informatie.
 
 ![chlimage_1-143](assets/chlimage_1-143.png)
 
