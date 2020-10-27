@@ -1,12 +1,13 @@
 ---
 cloud: experience-cloud
 product: adobe experience manager
+solution: Experience Manager, Experience Manager Sites
 audience: end-user
 user-guide-title: AEM 6.4 Handboek voor ontwerpen
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 translation-type: tm+mt
-source-git-commit: a83c39939afe85586aa32460f141fa18bfc80a3f
+source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
 workflow-type: tm+mt
 source-wordcount: '278'
 ht-degree: 40%
@@ -19,7 +20,7 @@ ht-degree: 40%
 + [Overzicht van gebruikershandleiding voor ontwerpen](home.md)
 + Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
    + [Eerste stappen voor auteurs](first-steps.md)
-   + [Quick Guide to Authoring Pages](qg-page-authoring.md)
+   + [Snelle gids voor het ontwerpen van pagina&#39;s](qg-page-authoring.md)
    + [Concept of Authoring](author.md)
    + [Basisbewerkingen](basic-handling.md)
    + [Zoeken](search.md)
