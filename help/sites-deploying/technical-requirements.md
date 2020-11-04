@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 155a0425229c79b06eced72b689972e4fdd09265
+source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
 workflow-type: tm+mt
-source-wordcount: '3143'
+source-wordcount: '3181'
 ht-degree: 0%
 
 ---
@@ -171,14 +171,14 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
    <td>A: Ondersteund</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.6 [5]</td> 
+   <td>MongoDB Enterprise 3.6 [5, 6]</td> 
    <td>Bewaarplaats</td> 
-   <td>A: Ondersteund</td> 
+   <td>A: Ondersteund met beperkingen</td> 
   </tr> 
   <tr> 
-   <td>MongoDB Enterprise 3.4 [2, 3]</td> 
+   <td>MongoDB Enterprise 3.4 [2, 3, 6]</td> 
    <td>Bewaarplaats</td> 
-   <td>A: Niet ondersteund</td> 
+   <td>A: Ondersteund met beperkingen</td> 
   </tr> 
   <tr> 
    <td>MySQL 5.7</td> 
@@ -233,6 +233,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
 1. MongoDB Storage Engine WiredTiger wordt alleen ondersteund.
 1. Niet ondersteund voor AEM Forms.
 1. MongoDB Enterprise 3.6 wordt ondersteund vanaf AEM versie 6.4.2.0.
+1. De ondersteuning voor MongoDB 3.4 heeft het einde van de levensduur bereikt, terwijl MongoDB 3.6 naar verwachting op 30 april 2021 het EOL zal bereiken. Houd er rekening mee dat Adobe alleen ondersteuning biedt voor AEM productgerelateerde problemen.
 
 >[!NOTE]
 >
