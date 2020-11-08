@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
 workflow-type: tm+mt
-source-wordcount: '3409'
+source-wordcount: '3486'
 ht-degree: 0%
 
 ---
@@ -78,6 +78,10 @@ Voer de volgende stappen uit om een adaptief formulier voor Adobe Sign te maken:
    1. Geef de **naam** en de **titel** op voor het adaptieve formulier.
    1. Selecteer de [configuratiecontainer](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) die u hebt gemaakt tijdens het configureren van Adobe Sign met AEM Forms.
 
+      >[!NOTE]
+      >
+      >De **[!UICONTROL Adobe Sign Cloud Service]** dropdown lijst toont de wolkendiensten die in de configuratiecontainer worden gevormd die u op dit gebied selecteert. De **[!UICONTROL Adobe Sign Cloud Service]** vervolgkeuzelijst is beschikbaar in het **[!UICONTROL Electronic Signature]** gedeelte van de adaptieve formuliereigenschappen wanneer u de **[!UICONTROL Enable Adobe Sign]** optie selecteert.
+
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 
    * Selecteer de **[!UICONTROL Associate form template as the Document of Record template]** optie en selecteer een Document van het malplaatje van het Verslag. Als u een op een formuliersjabloon gebaseerd adaptief formulier gebruikt, worden alleen de velden weergegeven die zijn gebaseerd op de bijbehorende formuliersjabloon. Niet alle velden van het adaptieve formulier worden weergegeven.
@@ -90,7 +94,7 @@ Voer de volgende stappen uit om een adaptief formulier voor Adobe Sign te maken:
 Voer de volgende stappen uit om Adobe Sign in een bestaande adaptieve vorm te gebruiken:
 
 1. Ga naar **[!UICONTROL Adobe Experience Manager]** > **[!UICONTROL Forms]**> **[!UICONTROL Forms & Documents]**.
-1. Selecteer het adaptieve formulier en tik op **[!UICONTROL Properties]**.
+1. Selecteer het aangepaste formulier en tik op **[!UICONTROL Properties]**.
 1. Selecteer op het **[!UICONTROL Basic]** tabblad de [configuratiecontainer](/help/forms/using/adobe-sign-integration-adaptive-forms.md#configure-adobe-sign-with-aem-forms) die u hebt gemaakt tijdens de configuratie van Adobe Sign met AEM Forms.
 1. In the **[!UICONTROL Form Model]** tab, select one of the following options:
 
@@ -140,7 +144,7 @@ Adobe Sign is niet ingeschakeld voor een adaptief formulier. Voer de volgende st
 
 ### Adobe Sign-Cloud Service en -handtekeningvolgorde selecteren {#selectadobesigncloudserviceforanadaptiveform}
 
-U kunt meerdere Adobe Sign-services configureren voor een exemplaar van AEM Forms. Het is raadzaam voor elke functie een aparte reeks diensten te hebben (Human Resources, Finance, enzovoort). Hierdoor wordt het bijhouden en rapporteren van ondertekende documenten eenvoudiger. Een bank heeft bijvoorbeeld meerdere afdelingen. U kunt een afzonderlijke configuratie voor elke afdeling hebben voor het beter volgen van de documenten.
+U kunt meerdere Adobe Sign-services configureren voor een exemplaar van AEM Forms. Het is raadzaam voor elke functie een aparte reeks diensten te hebben (Human Resource, Finance, enzovoort). Hierdoor wordt het bijhouden en rapporteren van ondertekende documenten eenvoudiger. Een bank heeft bijvoorbeeld meerdere afdelingen. U kunt een afzonderlijke configuratie voor elke afdeling hebben voor het beter volgen van de documenten.
 
 Een document kan ook meerdere ondertekenaars hebben. Een creditcardtoepassing kan bijvoorbeeld meerdere aanvragers hebben. Een bank vereist handtekeningen van alle aanvragers voordat de aanvraag wordt verwerkt. Voor scenario&#39;s met meerdere ondertekenaars kunt u ervoor kiezen het document in volgorde van opeenvolgende of gelijktijdige ondertekening te ondertekenen.
 
@@ -154,7 +158,9 @@ Voer de volgende stappen uit om een cloudservice en de volgorde van ondertekenin
 
    Als de lijst van de Cloud Service **van** Adobe Sign leeg is, volg Adobe Sign met het artikel van AEM Forms [van de](/help/forms/using/adobe-sign-integration-adaptive-forms.md) Vorm om de dienst te vormen.
 
-1. Selecteer de handtekeningvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen** . Adobe Sign-zangers kunnen een adaptief formulier **achtereenvolgens** ondertekenen - een voor een andere ondertekenaar of **tegelijkertijd** - in elke willekeurige volgorde.
+   In het vervolgkeuzemenu worden de cloudservices weergegeven die in de `global` map Extra > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** staan. Bovendien worden in het vervolgkeuzemenu ook de cloudservices weergegeven die aanwezig zijn in de map die u in het **[!UICONTROL Configuration Container]** veld selecteert wanneer u een adaptief formulier maakt.
+
+1. Selecteer de handtekeningvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen** . Adobe Sign-zangers kunnen een adaptief formulier **opeenvolgend** ondertekenen - een voor een andere ondertekenaar of **tegelijkertijd** - in willekeurige volgorde.
 
    Eén ondertekenaar ontvangt het formulier voor ondertekening achtereenvolgens in de volgorde. Nadat een ondertekenaar het ondertekenen van het document heeft voltooid, wordt het formulier verzonden naar de volgende ondertekenaar, enzovoort.
 
@@ -293,7 +299,7 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 
 **V: Kan ik Adobe Sign-tekstcodes gebruiken in een statisch tekstonderdeel van een adaptief formulier?**
 
-**Ans:** Ja, u kunt tekstcodes in een tekstcomponent gebruiken om Adobe Sign-velden toe te voegen aan een [Document of Record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (alleen automatisch gegenereerd document met de optie Opnemen) voor adaptief formulier. Zie [Adobe Sign-documentatie](https://helpx.adobe.com/sign/help/text-tags.html)voor meer informatie over de procedure en regels voor het maken van een tekstcode. Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. Met de tekstcodes kunt u alleen die velden maken die door Adobe Sign Block worden ondersteund.
+**Ans:** Ja, u kunt tekstcodes in een tekstcomponent gebruiken om Adobe Sign-velden toe te voegen aan een [Document of Record](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md) (alleen automatisch gegenereerd document met de optie Record) dat adaptief formulier heeft ingeschakeld. Zie [Adobe Sign-documentatie](https://helpx.adobe.com/sign/help/text-tags.html)voor meer informatie over de procedure en regels voor het maken van een tekstcode. Houd er rekening mee dat adaptieve formulieren beperkte ondersteuning bieden voor tekstcodes. Met de tekstcodes kunt u alleen die velden maken die door Adobe Sign Block worden ondersteund.
 
 **V: AEM Forms biedt zowel Adobe Sign-onderdelen voor blok- als handtekeningstappen. Kunnen deze gelijktijdig in een adaptieve vorm worden gebruikt?**
 
