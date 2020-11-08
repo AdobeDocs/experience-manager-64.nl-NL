@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
 workflow-type: tm+mt
-source-wordcount: '5132'
+source-wordcount: '5156'
 ht-degree: 3%
 
 ---
@@ -140,8 +140,8 @@ Setup- en configuratietaken zijn:
 * [Publicatie-instelling voor afbeeldingsserver](#publishing-setup-for-image-server)
 * [Algemene instellingen van toepassing configureren](#configuring-application-general-settings)
 * [Kleurbeheer configureren](#configuring-color-management)
-* [Elementverwerking configureren](#configuring-asset-processing)
-* [Aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-custom-mime-types-for-unsupported-formats)
+* [MIME-typen bewerken voor ondersteunde indelingen](#editing-mime-types-for-supported-formats)
+* [MIME-typen toevoegen voor niet-ondersteunde indelingen](#adding-mime-types-for-unsupported-formats)
 * [Voorinstellingen voor batchsets maken om automatisch afbeeldingssets en centrifuges te genereren](#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets)
 
 #### Publicatie-instelling voor afbeeldingsserver {#publishing-setup-for-image-server}
@@ -212,21 +212,18 @@ Dit doet het volgende:
 * Dynamische uitvoeringen die RGB-uitvoer retourneren, retourneren deze in de `sRGB` kleurruimte.
 * Dynamische uitvoeringen die CMYK-uitvoer retourneren, retourneren deze in de `WebCoated` kleurruimte.
 
-#### Elementverwerking configureren {#configuring-asset-processing}
+#### MIME-typen bewerken voor ondersteunde indelingen {#editing-mime-types-for-supported-formats}
 
 U kunt bepalen welke elementtypen door Dynamic Media moeten worden verwerkt en de geavanceerde parameters voor elementverwerking aanpassen. U kunt bijvoorbeeld parameters voor elementverwerking opgeven om het volgende te doen:
 
 * Een Adobe PDF converteren naar een eCatalog-element.
 * Converteer een Adobe Photoshop-document (.PSD) naar een bannersjabloonelement voor personalisatie.
 * Rasteren een Adobe Illustrator-bestand (.AI) of een Adobe Photoshop Encapsulated Postscript-bestand (.EPS).
-
->[!NOTE]
->
->U kunt videoprofielen en afbeeldingsprofielen gebruiken om respectievelijk de verwerking van video&#39;s en afbeeldingen te definiëren.
+* [U kunt videoprofielen](/help/assets/video-profiles.md) en [afbeeldingsprofielen](/help/assets/image-profiles.md) gebruiken om respectievelijk de verwerking van video&#39;s en afbeeldingen te definiëren.
 
 Zie Elementen [uploaden](managing-assets-touch-ui.md#uploading-assets).
 
-**Elementverwerking** configureren:
+**MIME-typen bewerken voor ondersteunde indelingen**
 
 1. Tik in AEM op het AEM om de globale navigatieconsole te openen, tik op het pictogram **[!UICONTROL Tools]** (hamer) en navigeer naar **[!UICONTROL General > CRXDE Lite]**.
 1. Navigeer in de linkerspoorstaaf naar het volgende:
@@ -252,7 +249,7 @@ Zie Elementen [uploaden](managing-assets-touch-ui.md#uploading-assets).
 
 U kunt aangepaste MIME-typen voor niet-ondersteunde indelingen toevoegen in AEM Assets. Om ervoor te zorgen dat een nieuw knooppunt dat u in CRXDE Lite toevoegt, niet door AEM wordt verwijderd, moet u ervoor zorgen dat u het MIME-type verplaatst vóór **[!UICONTROL image_]** en de ingeschakelde waarde ervan is ingesteld op **[!UICONTROL false]**.
 
-**Aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen**:
+**Aangepaste MIME-typen toevoegen voor niet-ondersteunde indelingen**
 
 1. Klik AEM op **[!UICONTROL Tools > Operations > Web Console]**.
 
@@ -498,7 +495,7 @@ Als u een van deze parameters wilt bijwerken, volgt u de stappen in Op MIME geba
 
 De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Update Asset]** workflow. In Dynamische media, wordt het gebruikt voor beeldopname en verwerking.
 
-**De Granite Transient Workflow-wachtrij** bijwerken:
+**De Granite Transient Workflow-wachtrij bijwerken**
 
 1. Ga naar [https://&lt;server>/system/console/configMgr](http://localhost:4502/system/console/configMgr) en zoek naar **[!UICONTROL Queue: Granite Transient Workflow Queue]**.
 
@@ -508,11 +505,13 @@ De Granite Transit Workflow-wachtrij wordt gebruikt voor de **[!UICONTROL DAM Up
 
 1. Wijzig in het **[!UICONTROL Maximum Parallel Jobs]** veld het getal in de gewenste waarde.
 
-   Standaard is het maximale aantal parallelle taken afhankelijk van het aantal beschikbare CPU-cores. Op een 4-core server worden bijvoorbeeld twee threads toegewezen. (Een waarde tussen 0,0 en 1,0 is gebaseerd op verhouding, of om het even welke aantallen groter dan 1 zullen het aantal arbeidersdraden toewijzen.)
+   U kunt verhogen **[!UICONTROL Maximum Parallel Jobs]** om voldoende ondersteuning te bieden voor het zwaar uploaden van bestanden naar dynamische media. De exacte waarde is afhankelijk van de hardwarecapaciteit. In bepaalde scenario&#39;s, dat wil zeggen: een eerste migratie of een eenmalige bulkupload, kunt u een grote waarde gebruiken. Houd er echter rekening mee dat het gebruik van een grote waarde (zoals twee keer het aantal cores) negatieve gevolgen kan hebben voor andere gelijktijdige activiteiten. Als dusdanig, zou u de waarde moeten testen en aanpassen die op uw bepaald gebruiksgeval wordt gebaseerd.
 
-   Adobe raadt aan dat 32 **[!UICONTROL Maximum Parallel Jobs]** zijn geconfigureerd voor voldoende ondersteuning voor het uploaden van bestanden naar Dynamic Media Classic.
+<!--    By default, the maximum number of parallel jobs depends on the number of available CPU cores. For example, on a 4-core server, it assigns 2 worker threads. (A value between 0.0 and 1.0 is ratio based, or any numbers greater than 1 will assign the number of worker threads.)
 
-   ![chlimage_1](assets/chlimage_1.jpeg)
+   Adobe recommends that 32 **[!UICONTROL Maximum Parallel Jobs]** be configured to adequately support heavy upload of files to Dynamic Media Classic. -->
+
+![chlimage_1](assets/chlimage_1.jpeg)
 
 1. Tik op **[!UICONTROL Save]**.
 
