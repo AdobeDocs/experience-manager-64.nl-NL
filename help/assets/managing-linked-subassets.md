@@ -3,9 +3,9 @@ title: Samengestelde elementen beheren en subelementen genereren.
 description: Leer hoe u verwijzingen naar AEM middelen maakt vanuit InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer gebruikt om afzonderlijke pagina's van bestanden met meerdere pagina's weer te geven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1532ea0f4203b269f8414d150a07bed0c42a23bc
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1329'
+source-wordcount: '1327'
 ht-degree: 0%
 
 ---
@@ -70,7 +70,7 @@ Adobe InDesign kan een document en de gekoppelde elementen als een pakket export
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Opslaan in Photoshop-bestand op het gemonteerde station of [uploaden](managing-assets-touch-ui.md#uploading-assets) naar de AEM.
+1. Opslaan in Photoshop-bestand op het gemonteerde station of [uploaden](managing-assets-touch-ui.md#uploading-assets) naar de AEM opslagplaats.
 1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande AEM weergegeven op de pagina met elementdetails.
 
    Als u de middelen waarnaar wordt verwezen wilt weergeven, sluit u de [Rail](/help/sites-authoring/basic-handling.md#rail-selector) op de pagina met elementdetails.
@@ -117,7 +117,7 @@ Voor InDesign kunt u pagina&#39;s uitnemen met de InDesign-server. Als de voorve
 
 De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de besturingselementen voor de Paginaviewer:
 
-* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met AEM bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html#desktopactions-v2) configureren als u AEM bureaubladtoepassing gebruikt.
+* **[!UICONTROL Desktop Actions]** om een specifiek submiddel te openen of weer te geven met AEM bureaubladtoepassing. Zie hoe u bureaubladhandelingen [kunt](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html?lang=en#desktopactions-v2) configureren als u AEM bureaubladtoepassing gebruikt.
 
 * **[!UICONTROL Properties]** Hiermee opent u de [!UICONTROL Properties] pagina van het specifieke subelement.
 
@@ -133,4 +133,5 @@ De volgende opties zijn beschikbaar in de werkbalk, in de linkerrails en in de b
 
 >[!MORELIKETHIS]
 >
->* [Adobe Experience Manager-bureaubladtoepassing gebruiken](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html)
+>* [Adobe Experience Manager-bureaubladtoepassing gebruiken](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html)
+
