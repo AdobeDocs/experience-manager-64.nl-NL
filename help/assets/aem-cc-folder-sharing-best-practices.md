@@ -3,9 +3,9 @@ title: AEM Assets-mappen delen met Creative Cloud
 description: Configuratie en aanbevolen procedures om gebruikers van Adobe Experience Manager Assets in staat te stellen mappen met middelen uit te wisselen met gebruikers van Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1057'
+source-wordcount: '1058'
 ht-degree: 0%
 
 ---
@@ -39,8 +39,8 @@ Het volgende diagram geeft een overzicht van de integratie.
 De integratie omvat de volgende elementen:
 
 * **AEM Assets-server** geïmplementeerd in het bedrijfsnetwerk (beheerde services of on-premise): Hier wordt het delen van mappen gestart.
-* **Adobe Marketing Cloud Assets Core-service**: Handelt als tussenpersoon tussen AEM- en Creative Cloud-opslagdiensten. De beheerder van het bedrijf dat de integratie gebruikt, moet een vertrouwensrelatie tussen de Marketing Cloud organisatie en de instantie van AEM Assets tot stand brengen. Zij [bepalen ook een lijst van erkende Creative Cloud medewerkers](https://docs.adobe.com/content/help/en/core-services/interface/assets/t-admin-add-cc-user.html), die de gebruikers van AEM Assets omslagen voor extra veiligheid kunnen delen.
-* **Webservices** voor Creative Cloud-middelen (interface voor opslag en Creative Cloud-bestanden): In dit geval kunnen specifieke Creative Cloud-gebruikers, met wie een AEM Assets-map is gedeeld, de uitnodiging accepteren en de map weergeven in hun Creative Cloud-accountopslag.
+* **Adobe Marketing Cloud Assets Core-service**: Handelt als tussenpersoon tussen AEM- en Creative Cloud-opslagdiensten. De beheerder van het bedrijf dat de integratie gebruikt, moet een vertrouwensrelatie tussen de Marketing Cloud organisatie en de instantie van AEM Assets tot stand brengen. Zij [bepalen ook een lijst van erkende Creative Cloud medewerkers](https://experienceleague.adobe.com/docs/core-services/interface/assets/t-admin-add-cc-user.html?lang=en#assets), die de gebruikers van AEM Assets omslagen voor extra veiligheid kunnen delen.
+* **Webservices** voor Creative Cloud-middelen (interface voor opslag en Creative Cloud-bestanden): In dit geval kunnen specifieke Creative Cloud-gebruikers, met wie een AEM Assets-map werd gedeeld, de uitnodiging accepteren en de map weergeven in hun Creative Cloud-accountopslag.
 * **Creative Cloud-bureaubladtoepassing**: (Optioneel) Hiermee hebt u rechtstreeks via synchronisatie met Creative Cloud Assets-opslag toegang tot gedeelde mappen/bestanden vanaf het bureaublad van de creatieve gebruiker.
 
 ## Kenmerken en beperkingen {#characteristics-and-limitations}
