@@ -3,10 +3,10 @@ title: Vorm activa het etiketteren gebruikend de Slimme Dienst van de Inhoud.
 description: Leer hoe u slimme tags en verbeterde slimme tags kunt configureren in [!DNL Adobe Experience Manager]de Smart Content Service.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 3d0a173b1c95141c91b7d0495e994eab07f2655e
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '1006'
-ht-degree: 29%
+source-wordcount: '989'
+ht-degree: 30%
 
 ---
 
@@ -83,7 +83,7 @@ Nadat een certificaat is verlopen, wordt het niet meer vertrouwd. U kunt een ver
 
    ![Verwijder het bestaande zoekitem voor gelijkenis in Keystore om een nieuw beveiligingscertificaat toe te voegen](assets/smarttags_delete_similaritysearch_keystore.png)
 
-   *Afbeelding: Verwijder de bestaande`similaritysearch`-vermelding in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
+   *Afbeelding: Verwijder de bestaande `similaritysearch`-vermelding in het sleutelarchief om een nieuw beveiligingscertificaat toe te voegen.*
 
 1. Ga naar **[!UICONTROL Tools]** > **[!UICONTROL Cloud Services]** > **[!UICONTROL Legacy Cloud Services]**. Klik op **[!UICONTROL Asset Smart Tags]** > **[!UICONTROL Show Configuration]** > **[!UICONTROL Available Configurations]**. Klik op de gewenste configuratie.
 
@@ -160,7 +160,7 @@ Nadat u de configuratie hebt voltooid, gebruik een JMX MBean om de configuratie 
 
    ![De stap Asset met slimme tag toevoegen na de stap met de procesminiaturen in de DAM Update Asset-workflow](assets/smart-tag-in-dam-update-asset-workflow.png)
 
-   *Afbeelding: Voeg de stap Slimme tag-elementen toe na de stap met de procesminiaturen in de[!UICONTROL DAM Update Asset]workflow.*
+   *Afbeelding: Voeg de stap Slimme tag-elementen toe na de stap met de procesminiaturen in de [!UICONTROL DAM Update Asset] workflow.*
 
 1. Open de stap in de bewerkingsmodus. Ga naar **[!UICONTROL Advanced Settings]** en controleer of de optie **[!UICONTROL Handler Advance]** is ingeschakeld.
 
@@ -190,5 +190,4 @@ Nadat u de configuratie hebt voltooid, gebruik een JMX MBean om de configuratie 
 >* [Slimme tags beheren](managing-smart-tags.md)
 >* [Overzicht van slimme tags en hoe deze kunnen worden getraind](enhanced-smart-tags.md)
 >* [Richtlijnen en regels voor de opleiding van de Smart Content Service](smart-tags-training-guidelines.md)
->* [Videozelfstudie over het configureren van slimme tags](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/metadata/smart-tags-technical-video-setup.html)
 
