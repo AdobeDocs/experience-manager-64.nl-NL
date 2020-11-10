@@ -1,17 +1,17 @@
 ---
-title: Aanbevolen werkwijzen op het gebied van integratie met AEM en Creative Cloud
+title: Aanbevolen werkwijzen voor integratie met AEM en Creative Cloud
 description: Aanbevolen procedures om een AEM implementatie met Adobe Creative Cloud te integreren om workflows voor de overdracht van bedrijfsmiddelen te stroomlijnen en maximale efficiëntie te bereiken
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1f44950e3e0653df61289e1bd435d13829051365
+source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
 workflow-type: tm+mt
-source-wordcount: '3578'
+source-wordcount: '3566'
 ht-degree: 15%
 
 ---
 
 
-# Aanbevolen werkwijzen op het gebied van integratie met AEM en Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
+# Aanbevolen werkwijzen voor integratie met AEM en Creative Cloud {#aem-and-creative-cloud-integration-best-practices}
 
 <!-- TBD: Reconcile with 6.5 article that's ahead of this article now in terms of content streamlining and structuring.
 -->
@@ -24,13 +24,13 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 
 >[!NOTE]
 >
->Het delen van AEM naar Creative Cloud-mappen is afgekeurd en wordt niet langer behandeld in deze handleiding. Adobe raadt u aan nieuwere mogelijkheden, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [AEM desktop app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/introduction.html) , te gebruiken om creatieve gebruikers toegang te bieden tot middelen die in AEM worden beheerd.
+>Het delen van AEM naar Creative Cloud-mappen is afgekeurd en wordt niet langer behandeld in deze handleiding. Adobe raadt u aan nieuwere mogelijkheden, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [AEM desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/introduction.html) , te gebruiken om creatieve gebruikers toegang te bieden tot middelen die in AEM worden beheerd.
 
 ## De behoeften van de samenwerking van creatieven, verkopers, en gebruikers DAM {#collaboration-needs-of-creatives-marketers-and-dam-users}
 
 | Vereisten | Hoofdletters gebruiken | Betrokken oppervlakken |
 |---|---|---|
-| Ervaring voor creatieve producten op desktopcomputers vereenvoudigen | Toegang tot bedrijfsmiddelen van een DAM (AEM Assets) stroomlijnen voor creatieve professionals, of meer in het algemeen gebruikers op desktopcomputers die werken in toepassingen voor het maken van native bedrijfsmiddelen. Ze hebben een eenvoudige en eenvoudige manier nodig om wijzigingen in AEM te detecteren, te gebruiken (openen), te bewerken en op te slaan, en om nieuwe bestanden te uploaden. | Win- of Mac-bureaublad; Creative Cloud-apps |
+| Ervaring voor creatieve producten op desktop vereenvoudigen | Toegang tot bedrijfsmiddelen van een DAM (AEM Assets) stroomlijnen voor creatieve professionals, of meer in het algemeen gebruikers op desktopcomputers die werken in toepassingen voor het maken van native bedrijfsmiddelen. Ze hebben een eenvoudige en eenvoudige manier nodig om wijzigingen in AEM te detecteren, te gebruiken (openen), te bewerken en op te slaan, en om nieuwe bestanden te uploaden. | Win- of Mac-bureaublad; Creative Cloud-apps |
 | Middelen van Adobe Stock van hoge kwaliteit en gebruiksklaar maken | Marketers helpen het proces voor het maken van inhoud te versnellen door hulp te bieden bij het aanschaffen en detecteren van bedrijfsmiddelen. Creatieve professionals gebruiken de goedgekeurde middelen direct vanuit hun creatieve gereedschappen. | AEM Assets; Adobe Stock Marketplace metagegevensvelden |
 | Elementen distribueren en delen door organisaties | De interne afdelingen/de lokale takken en de externe partners, de distributeurs, en de agentschappen gebruiken de goedgekeurde activa die door de ouderorganisatie worden gedeeld. De organisatie wil de gemaakte middelen veilig en naadloos delen voor breder hergebruik. | Merkportal, Commentaar voor delen van bedrijfsmiddelen |
 
@@ -39,7 +39,7 @@ Lees verder om te weten welke integraties u kunt kiezen tussen desktop en DAM op
 | Waardevoorstel voor de betreffende personen | Adobe-aanbieding | Betrokken oppervlakken |
 |---|---|---|
 | Creatieve gebruikers ontdekken elementen van AEM, openen en gebruiken deze, bewerken en uploaden wijzigingen in AEM en uploaden nieuwe bestanden naar AEM zonder Creative Cloud-apps te verlaten. | [Adobe-itemkoppeling](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) | Photoshop, Illustrator en InDesign |
-| Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in AEM en het uploaden van nieuwe bestanden naar AEM vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [Bureaubladapp AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) | Desktop-app AEM op Windows- en Mac-bureaublad |
+| Zakelijke gebruikers vereenvoudigen het openen en gebruiken van middelen, het bewerken en uploaden van wijzigingen in AEM en het uploaden van nieuwe bestanden naar AEM vanuit de desktopomgeving. Ze gebruiken een algemene integratie om elk elementtype in de native bureaubladtoepassing te openen, inclusief niet-Adobe toepassingen. | [Bureaubladapp AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html) | Desktop-app AEM op Windows- en Mac-bureaublad |
 | Marketers en zakelijke gebruikers detecteren, voorvertonen, licentiëren en opslaan, en beheren de Adobe Stock-middelen vanuit AEM. Gelicentieerde en opgeslagen middelen bieden geselecteerde Adobe Stock-metagegevens voor beter beheer. | [Integratie van Experience Manager en Adobe Stock](aem-assets-adobe-stock.md) | AEM webinterface |
 
 Dit artikel richt zich hoofdzakelijk op de eerste twee aspecten van de samenwerkingsbehoeften. Distributie en sourcing van assets op schaal wordt kort als gebruiksscenario genoemd. Overweeg Adobe Brand Portal of Asset Share Commons voor dergelijke oplossingen. Alternate solutions such as [Brand Portal](https://helpx.adobe.com/nl/experience-manager/brand-portal/user-guide.html), solutions that can be built based on [Asset Share Commons](https://adobe-marketing-cloud.github.io/asset-share-commons/) components, [Link Share](/help/assets/link-sharing.md), using [Experience Manager Assets](/help/assets/managing-assets-touch-ui.md) should be reviewed based on specific requirement.
@@ -67,9 +67,9 @@ The terms used in this document may have a different meaning in other contexts. 
 | Hoofdletters gebruiken | Bureaubladapp AEM | Map delen | Andere oplossingen |
 |---|---|---|---|
 | Deel een kleiner aantal (1) DAM-middelen met Creative User | ✔✔ | ✔ |  |
-| Groter aantal (2) DAM-middelen delen met Creative-gebruiker | ✔✔ | ✘ | [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) <br> [Delen van middelen](assets-finder-editor.md) |
+| Groter aantal (2) DAM-middelen delen met Creative-gebruiker | ✔✔ | ✘ | [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [Delen van middelen](assets-finder-editor.md) |
 | DAM-middelen delen met gebruikers die toegang hebben tot DAM | ✔✔ | ✔ | [Delen van koppeling](link-sharing.md) |
-| DAM-middelen delen met gebruikers die geen toegang hebben tot DAM | ✘ | ✔✔ | [Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/home.html) <br> [Delen van middelen](assets-finder-editor.md) |
+| DAM-middelen delen met gebruikers die geen toegang hebben tot DAM | ✘ | ✔✔ | [Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/home.html) <br> [Delen van middelen](assets-finder-editor.md) |
 | Kleiner aantal/volume middelen opslaan naar DAM | ✔✔ | ✔ | [Web UI Uploaden](managing-assets-touch-ui.md) |
 | Groter aantal elementen opslaan naar DAM (3) | ✔✔ | ✘ | [Webinterface - Aangepast script/gereedschap uploaden](managing-assets-touch-ui.md)<br> |
 | Grote aantallen activa migreren naar DAM | ✘ | ✘ | [Migratiehandleiding](assets-migration-guide.md) |
@@ -111,7 +111,7 @@ Om het gebruik van middelen te steunen, zouden andere oplossingen moeten worden 
 
 ### Overwegingen bij het gebruik van AEM- en Creative Cloud-integratie {#considerations-when-using-aem-and-creative-cloud-integration}
 
-* Zie aanbevolen werkwijzen voor [bureaubladtoepassingen](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/troubleshoot.html#best-practices-to-prevent-troubles)
+* Zie aanbevolen werkwijzen voor [bureaubladtoepassingen](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/troubleshoot.html?lang=en#best-practices-to-prevent-troubles)
 * Zie [Adobe Stock-integratie](aem-assets-adobe-stock.md)
 * Zie [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html)
 
@@ -297,7 +297,7 @@ Raadpleeg de [migratiehandleiding](/help/assets/assets-migration-guide.md)voor i
 >[!MORELIKETHIS]
 >
 >* [Adobe-itemkoppeling](https://helpx.adobe.com/in/enterprise/using/adobe-asset-link.html)
->* [Aanbevolen werkwijzen voor bureaubladtoepassingen AEM](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
->* [AEM Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/brand-portal.html)
+>* [Aanbevolen werkwijzen voor bureaubladtoepassingen AEM](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/archive/best-practices-for-v1.html)
+>* [AEM Brand Portal](https://experienceleague.adobe.com/docs/experience-manager-brand-portal/using/introduction/brand-portal.html)
 >* [Integratie AEM en Adobe Stock](aem-assets-adobe-stock.md)
 
