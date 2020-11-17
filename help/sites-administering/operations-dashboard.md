@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
 workflow-type: tm+mt
-source-wordcount: '6231'
+source-wordcount: '6200'
 ht-degree: 0%
 
 ---
@@ -230,7 +230,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
       <ul> 
        <li>Geeft de status Kritiek als deze meer dan 2 uur geleden is </li> 
        <li>retourneert de waarschuwingsstatus als deze tussen 2 uur en 45 minuten geleden ligt </li> 
-       <li>Hiermee wordt de status OK geretourneerd als deze minder dan 45 minuten geleden is </li> 
+       <li>retourneert de status OK als deze minder dan 45 minuten geleden is </li> 
       </ul> </li> 
      <li>als aan geen van deze voorwaarden is voldaan, wordt de status OK geretourneerd</li> 
     </ul> <p>Zowel zijn de Kritieke als de statusdrempels van de Waarschuwing configureerbaar. De sjabloon voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health check:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Opmerking: </strong>Deze health check is beschikbaar bij AEM 6.4 en is teruggezet naar AEM 6.3.0.1.</p> </td> 
@@ -296,7 +296,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
   </tr> 
   <tr> 
    <td>Beveiligingscontroles</td> 
-   <td><p>De veiligheidscontrole is een samenstelling die de resultaten van veelvoudige veiligheid-verwante controles samenvoegt. Deze individuele gezondheidscontroles bieden oplossingen voor andere problemen dan de lijst met beveiligingscontroles die beschikbaar is op de documentatiepagina van de <a href="/help/sites-administering/security-checklist.md">lijst met beveiligingscontroles.</a> De controle is handig als een veiligheidsrooktest wanneer de instantie wordt gestart. </p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=</a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank"></a><a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">securityChecks,type=HealthCheck</a></p> </td> 
+   <td><p>De veiligheidscontrole is een samenstelling die de resultaten van veelvoudige veiligheid-verwante controles samenvoegt. Deze individuele gezondheidscontroles bieden oplossingen voor andere problemen dan de lijst met beveiligingscontroles die beschikbaar is op de documentatiepagina van de <a href="/help/sites-administering/security-checklist.md">lijst met beveiligingscontroles.</a> De controle is handig als een veiligheidsrooktest wanneer de instantie wordt gestart. </p> <p>De MBean voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3Dsecuritychecks%2Ctype%3DHealthCheck" target="_blank">org.apache.sling.health check:name=security,checks,type=HealthCheck</a></p> </td> 
   </tr> 
   <tr> 
    <td>Actieve pakketten</td> 
@@ -328,7 +328,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
 
 Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. In het onderstaande voorbeeld ziet u hoe u een controle toevoegt die gebruikt geheugen op de server waarop AEM wordt uitgevoerd.
 
-1. Stel Nagios in en installeer deze op de bewakingsserver.
+1. Stel Nagios in en installeer deze op de controleserver.
 1. Installeer vervolgens de Nagios Remote Plugin Exec (NRPE).
 
    >[!NOTE]
@@ -556,7 +556,7 @@ De volgende taken zijn beschikbaar in het Dashboard van Verrichtingen:
 
 1. De **taak van het Onderhoud** van de Weigering van de Versie, die onder het **Wekelijkse menu van het Venster** van het Onderhoud wordt gevestigd.
 
-De standaardtiming voor het dagelijkse onderhoudsvenster is 2 tot 5 AM. De taken die worden geconfigureerd om te worden uitgevoerd in het wekelijkse onderhoudsvenster, worden uitgevoerd tussen 1 en 2 uur &#39;s nachts.
+De standaardtiming voor het dagelijkse onderhoudsvenster is 2 tot 5 AM. De taken die in het wekelijkse onderhoudsvenster worden gevormd zullen tussen 1 en 2 AM op Verzadigdagen uitvoeren.
 
 U kunt de timing ook configureren door op het tandwielpictogram te drukken op een van de twee onderhoudskaarten:
 
@@ -572,7 +572,7 @@ Voor meer informatie over het uitvoeren van de Opschonen van de Revisie voor AEM
 
 ### Lucene Binaries Cleanup {#lucene-binaries-cleanup}
 
-Door de taak van de Opruiming van de Bindingen van Lucene te gebruiken, kunt u lucene binaries zuiveren en het de groottevereiste van de lopende gegevensopslag verminderen. Dit is omdat het binaire koord van de lucene dagelijks in plaats van het vroegere gebiedsdeel op een succesvolle de opschoonlooppas van de [gegevensopslagvuilinzameling](/help/sites-administering/data-store-garbage-collection.md) zal worden geherclaimd.
+Door de taak van de Opruiming van de Bindingen van Lucene te gebruiken, kunt u lucene binaries zuiveren en het de groottevereiste van de lopende gegevensopslag verminderen. Dit is omdat het binaire koord van de lucene dagelijks in plaats van vroeger gebiedsdeel op een succesvolle [looppas van de huisvuilinzameling](/help/sites-administering/data-store-garbage-collection.md) van de gegevensopslag zal worden geherclaimd.
 
 Hoewel de onderhoudstaak werd ontwikkeld om op Lucene betrekking hebbende revisiehuisvuil te verminderen, zijn er algemene efficiëntiewinsten wanneer het runnen van de taak:
 
