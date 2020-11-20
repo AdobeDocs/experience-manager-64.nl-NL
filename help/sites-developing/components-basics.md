@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4725'
 ht-degree: 0%
@@ -1030,10 +1030,12 @@ Het `cq:listeners` knooppunt (knooppunttype `cq:EditListenersConfig`) definieert
 >[!NOTE]
 >
 >In het geval van geneste componenten gelden er bepaalde beperkingen voor handelingen die zijn gedefinieerd als eigenschappen op het `cq:listeners` knooppunt:
-
->* Voor geneste componenten *moeten* de waarden van de volgende eigenschappen `REFRESH_PAGE`: >
->* `aftermove`
-* `aftercopy`
+>
+>* Voor geneste componenten *moeten* de waarden van de volgende eigenschappen `REFRESH_PAGE`:
+   >
+   >  
+* `aftermove`
+>  * `aftercopy`
 
 
 De gebeurtenishandler kan worden geïmplementeerd met een aangepaste implementatie. Bijvoorbeeld (waarbij `project.customerAction` een statische methode is):
@@ -1045,7 +1047,8 @@ Het volgende voorbeeld is gelijk aan de `REFRESH_INSERTED` configuratie:
 `afterinsert="function(path, definition) { this.refreshCreated(path, definition); }"`
 
 >[!NOTE]
-Voor klassieke UI, om te zien welke parameters in de managers kunnen worden gebruikt, verwijs naar de `before<action>` en `after<action>` gebeurtenissectie van de [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) en [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widgetdocumentatie.
+>
+>Voor klassieke UI, om te zien welke parameters in de managers kunnen worden gebruikt, verwijs naar de `before<action>` en `after<action>` gebeurtenissectie van de [ `CQ.wcm.EditBar`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditBar) en [ `CQ.wcm.EditRollover`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/widgets-api/index.html?class=CQ.wcm.EditRollover) widgetdocumentatie.
 
 Met de volgende configuratie wordt de pagina vernieuwd nadat de component is verwijderd, bewerkt, ingevoegd of verplaatst:
 
