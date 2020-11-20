@@ -10,7 +10,7 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 4b532cd3-1561-4b5c-8b4b-420c278926f0
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '4680'
 ht-degree: 4%
@@ -102,7 +102,7 @@ Wanneer u hotspots of afbeeldingen met hyperlinks toevoegt aan een bannerafbeeld
 
 >[!NOTE]
 >
->Als u een AEM Sites en/of AEM ecommerce klant bent, sla deze stap over. U hoeft de variabelen van hotspot of afbeeldingen met hyperlinks niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over het [instellen van eCommerce](/help/sites-administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
+>Als u een AEM Sites en/of AEM ecommerce klant bent, sla deze stap over. U hoeft de hotspot- of afbeeldingskaartvariabelen niet handmatig te identificeren; u kunt de integratie met Ecommerce voor productintegratie gebruiken. Zie informatie over het [instellen van eCommerce](/help/sites-administering/generic.md). Daarnaast kunt u de component Interactive gebruiken en toevoegen aan uw webpagina.
 >
 >Als u een AEM Assets- of Media-klant bent, publiceert u de URL- of insluitcode en integreert u deze vervolgens met het contentbeheersysteem van derden en identificeert u handmatig hotspots en afbeeldingen met hyperlinks.
 
@@ -115,7 +115,7 @@ Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn
 De meeste snelle weergaveimplementaties gebruiken het volgende paradigma:
 
 * De gebruiker activeert een gebruikersinterface-element op de website. For example, clicking a **[!UICONTROL Quick View]** button.
-* De website verzendt een Ajax-verzoek naar de achterkant om de gegevens of inhoud van de snelle weergave te laden, indien nodig.
+* De website stuurt een Ajax-aanvraag naar de achterkant om de gegevens of inhoud van de snelle weergave te laden, indien nodig.
 * De gegevens van de Snelle weergave worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
 
@@ -134,7 +134,7 @@ Tijdens dit proces is het belangrijk om verschillende delen van uw website te be
 
 In het eenvoudigste geval, is het enige veranderlijke deel in Snelle mening URL productSKU. In dit geval is de SKU-waarde het enige gegevensstuk dat u nodig hebt om hotspots of afbeeldingen met hyperlinks toe te voegen aan de bannerafbeelding.
 
-In complexe gevallen heeft de URL van de snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
+In complexe gevallen heeft de URL van de Snelle weergave echter naast de SKU ook verschillende elementen, zoals categorie-id, kleurcode, code voor grootte enzovoort. In dergelijke gevallen is elk element een afzonderlijke variabele in de definitie van hotspot- of afbeeldingskaart in de bannerfunctie carrousel.
 
 Bekijk de volgende voorbeelden van snelle weergave-URL&#39;s en de resulterende hotspot- of afbeeldingskaartvariabelen:
 
@@ -209,7 +209,7 @@ Zie [Elementen](managing-assets-touch-ui.md)uploaden om afbeeldingsbanners te up
 
    * Sleep indien nodig dia&#39;s om de volgorde van de afbeeldingen in de lijst met sets te wijzigen.
    * Als u een afbeelding wilt verwijderen, selecteert u de afbeelding en tikt u op **[!UICONTROL Delete Slide]** de werkbalk.
-   * Tik op de vervolgkeuzelijst met voorinstellingen en selecteer vervolgens een voorinstelling die u meteen op de set wilt toepassen om een voorinstelling toe te passen in de rechterbovenhoek van de pagina.
+   * Als u een voorinstelling wilt toepassen, klikt u in de rechterbovenhoek van de pagina op de vervolgkeuzelijst met voorinstellingen en selecteert u vervolgens een voorinstelling die u tegelijk op de set wilt toepassen.
 
    Tik op de dia en tik op de werkbalk om een dia te verwijderen. **[!UICONTROL Delete Slide]** Als u een dia wilt verplaatsen, tikt u op het invoegpictogram en houdt u de muisknop ingedrukt en verplaatst u de gewenste locatie.
 
@@ -251,7 +251,7 @@ Zie [(Optioneel) Een voorvertoning weergeven van carrouselbanners](#optional-pre
 >[!NOTE]
 >
 >Wanneer u hotspots toevoegt aan een afbeelding in een [interactieve afbeelding](interactive-images.md) of een carrouselbanner, worden de hotspotgegevens opgeslagen op dezelfde metagegevenslocatie, relatief ten opzichte van de locatie van de afbeelding, ongeacht of het een interactieve afbeelding of een carrouselbanner betreft. Deze functionaliteit houdt in dat u in elke viewer eenvoudig dezelfde afbeelding opnieuw kunt gebruiken, samen met de gedefinieerde hotspotgegevens.
-
+>
 >Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
 
 >[!NOTE]
