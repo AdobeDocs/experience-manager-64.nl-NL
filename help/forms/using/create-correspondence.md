@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3705'
 ht-degree: 0%
@@ -57,7 +57,7 @@ Selecteer de brief aan voorproef gebruikend de volgende stappen:
    Er zijn drie tabbladen: gegevens, inhoud en bijlagen. Als er geen gegevenselementen zijn (plaatsaanduidingsvariabelen en layoutvelden), wordt de letter rechtstreeks geopend met het tabblad Inhoud weergegeven. Het tabblad Bijlagen is alleen beschikbaar wanneer bijlagen aanwezig zijn of bibliotheektoegang is ingeschakeld.
 
    >[!NOTE]
-
+   >
    >Zie [De weergavemodus letter](#changerenditionmode)wijzigen voor meer informatie over het schakelen tussen de weergavemodus HTML of PDF. Zie [Stoppen met insteekmodules voor NPAPI-browsers en de impact](https://helpx.adobe.com/aem-forms/kb/discontinuation-of-npapi-plugins-impact-on-aem-forms.html) en [PDF forms op HTML5 Forms](https://helpx.adobe.com/aem-forms/kb/pdf-forms-to-html5-forms.html)voor meer informatie over PDF-ondersteuning in Correspondence Management en AEM.
 
 ### Gegevens invoeren {#enterdata}
@@ -221,7 +221,7 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
 ### Inhoud in voorvertoning beheren en de brief verzenden {#manage-content-in-preview-and-submit-the-letter}
 
-U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de manier kijkt u het aan en voorlegt aan de diverse postprocessen.
+U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de manier kijkt u het aan en het voorleggen aan de diverse postprocessen bent.
 
 1. Tik op Bewerkbare secties **** markeren om alle bewerkbare inhoud in de letter te markeren.
 
