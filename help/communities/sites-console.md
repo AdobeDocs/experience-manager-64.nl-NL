@@ -10,7 +10,7 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
 translation-type: tm+mt
-source-git-commit: 5e30bf76fd3304ed268c45cc8862a9c51c5d30f1
+source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
 workflow-type: tm+mt
 source-wordcount: '3127'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
 
 >[!NOTE]
 >
->Aanbevolen wordt om websites [van](overview.md#enablement-community) gemeenschappen voor activering privé te maken (neem contact op met uw accountvertegenwoordiger voor meer informatie).
+>We raden u aan om websites van [gemeenschappen](overview.md#enablement-community) in te schakelen als private (neem contact op met uw accountvertegenwoordiger voor meer informatie).
 >
 >Een gemeenschapssite is persoonlijk wanneer anonieme sitebezoekers geen toegang krijgen, zich mogelijk niet zelf registreren en geen gebruik maken van sociale aanmelding.
 
@@ -216,10 +216,11 @@ Het deelvenster Instellingen bevat verschillende subdeelvensters met functies di
    Laat de optie voor een *privésite* van de community uitgeschakeld. De optie Standaard is uitgeschakeld.
 
 >[!NOTE]
-
-**[!UICONTROL Allowing Social Logins]**
->Hoewel er voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](../../help/sites-administering/production-ready.md)noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding bij Facebook en Twitter](social-login.md).
 >
+>**[!UICONTROL Allowing Social Logins]**
+>
+>Hoewel er voorbeelden van Facebook- en Twitter-configuraties kunnen bestaan en kunnen worden geselecteerd, is het voor een [productieomgeving](../../help/sites-administering/production-ready.md)noodzakelijk om aangepaste Facebook- en Twitter-toepassingen te maken. Zie [Sociale aanmelding bij Facebook en Twitter](social-login.md).
+
 #### TAGGING {#tagging}
 
 ![chlimage_1-450](assets/chlimage_1-450.png)
@@ -297,7 +298,7 @@ Als deze optie is ingeschakeld (de standaardinstelling is uitgeschakeld), wordt 
 
 * **[!UICONTROL Choose translation provider]**
 
-   Standaard is de serviceprovider een testservice die alleen `microsoft`voor demonstraties wordt gebruikt. Als er geen licentie is voor een vertaalservicebureau, **moet de optie Machine Translation** toestaan zijn uitgeschakeld.
+   Standaard is de serviceprovider een testservice die alleen `microsoft`voor demonstraties wordt gebruikt. Als er geen licentie is voor een vertaalservicebureau, **moet de optie Machinevertaling** toestaan zijn uitgeschakeld.
 
 * **[!UICONTROL Choose global shared store]**
 
@@ -394,7 +395,8 @@ De inhoud van een site kan met dezelfde gereedschappen worden gemaakt als elke a
 ![chlimage_1-461](assets/chlimage_1-461.png)
 
 >[!NOTE]
-Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
+>
+>Als u niet bekend bent met AEM, bekijkt u de documentatie over [basisverwerking](../../help/sites-authoring/basic-handling.md) en een [handleiding voor het ontwerpen van pagina](../../help/sites-authoring/qg-page-authoring.md)&#39;s.
 
 ## Site-eigenschappen wijzigen {#modifying-site-properties}
 
@@ -441,15 +443,20 @@ In het deelvenster STRUCTUUR kunt u de structuur wijzigen die oorspronkelijk is 
       de volgorde van functies wijzigen zoals deze wordt weergegeven op de navigatiebalk op hoofdniveau van de site
 
 >[!NOTE]
-U kunt de volgorde van alle functies in de sitestructuur wijzigen, behalve van de functie bovenaan. Daarom kan de homepage van de plaats van gemeenschappen niet worden veranderd.
+>
+>U kunt de volgorde van alle functies in de sitestructuur wijzigen, behalve van de functie bovenaan. Daarom kan de homepage van de plaats van gemeenschappen niet worden veranderd.
 
 >[!CAUTION]
-Hoewel de titel van de weergave zonder bijwerkingen kan worden gewijzigd, wordt het niet aanbevolen de URL-naam te bewerken van een communautaire functie die bij een communautaire site hoort.
-Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verplaatst, waardoor de UGC verloren gaat.
+>
+>Hoewel de titel van de weergave zonder bijwerkingen kan worden gewijzigd, wordt het niet aanbevolen de URL-naam te bewerken van een communautaire functie die bij een communautaire site hoort.
+>
+>Als u bijvoorbeeld de naam van de URL wijzigt, wordt de bestaande UGC niet verplaatst, waardoor de UGC verloren gaat.
 
 >[!CAUTION]
-De groepfunctie mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
-Alle andere functies, zoals de [paginafunctie](functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
+>
+>De groepfunctie mag *niet* de *eerste of de enige* functie in de sitestructuur zijn.
+>
+>Alle andere functies, zoals de [paginafunctie](functions.md#page-function), moeten worden opgenomen en als eerste worden vermeld.
 
 #### Voorbeeld: Een catalogusfunctie toevoegen aan een community-sitestructuur {#example-adding-a-catalog-function-to-a-community-site-structure}
 
@@ -527,8 +534,10 @@ Bericht dat om het even welke leden rollen als moderatoren of groepsbeheerders t
 Zie Gebruikers en gebruikersgroepen [](users.md)beheren voor meer informatie.
 
 >[!NOTE]
-Als aanmelden via sociaal netwerk [toestaan: Facebook](#user-management) is ingeschakeld, zodra de gebruikersgroep
-* community-*&lt;site-name>*-*&lt;uid>*-members
+>
+>Als aanmelden via sociaal netwerk [toestaan: Facebook](#user-management) is ingeschakeld, zodra de gebruikersgroep
+>
+>* community-*&lt;site-name>*-*&lt;uid>*-members
 
 is gemaakt, moet de toegepaste [Facebook-cloudservice](social-login.md#createafacebookcloudservice) zo worden geconfigureerd dat gebruikers aan deze groep worden toegevoegd.
 
