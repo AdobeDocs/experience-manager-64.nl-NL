@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 9b339e7a9ac3f43fd0ef2e672d6fbd640993368b
+source-git-commit: e29f203fc6754056d613bd47bdb8decff9e6b5c3
 workflow-type: tm+mt
-source-wordcount: '3961'
+source-wordcount: '3958'
 ht-degree: 0%
 
 ---
@@ -457,7 +457,7 @@ Om Uber Jar in een Geweven project te gebruiken, verwijs naar het artikel, [hoe 
 
 >[!NOTE]
 >
->Vanaf deze release zijn UberJar en andere verwante artefacten beschikbaar in Maven Central Repository in plaats van in Adobe Public Maven repository (repo.adobe.com). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Als gevolg hiervan is er geen `classifier`waarde, met `apis` als waarde, voor de `dependency` tag.
+>UberJar en andere verwante artefacten zijn beschikbaar op Maven Central Repository in plaats van de Adobe Public Maven repository (repo.adobe.com). De naam van het hoofdbestand van UberJar wordt gewijzigd in `uber-jar-<version>.jar`. Als gevolg hiervan is er geen `classifier`waarde, met `apis` als waarde, voor de `dependency` tag.
 
 ## Verwijderde/vervangen functies {#removed-deprecated-features}
 
