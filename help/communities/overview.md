@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '1429'
+source-wordcount: '1407'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,9 @@ ht-degree: 0%
 
 Adobe Experience Manager (AEM) Communities biedt de mogelijkheid om snel een lokale community-site te maken die de prestaties verbetert, het sitebeheer verbetert en de conversie van sitebezoekers naar waardevolle leden van de community aanmoedigt.
 
-Neem contact op met uw accountvertegenwoordiger voor informatie over licenties voor AEM Communities en aanvullende licenties voor functies voor activering en Adobe Analytics.
+<!--
+Contact your account representative for information regarding licensing of AEM Communities as well as additional licensing for enablement features and Adobe Analytics.
+-->
 
 ## Functies van Gemeenschappen {#communities-features}
 
@@ -201,7 +203,7 @@ Functies van een machtigingsgemeenschap kunnen zijn:
 
 Een enablement gemeenschap kan worden gecreeerd wanneer de toe:voegen- [functie Enablement wordt gevormd](enablement.md), die extra vergunning voor gebruik in een productiemilieu vereist. Een plaats van de enablgemeenschap zal de [toewijzingsfunctie](#community-functions)omvatten.
 
-Ga naar [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)om te zien hoe eenvoudig het maken van een nieuwe community voor activering is.
+Ga naar Aan de [slag met AEM Communities for Enablement](getting-started-enablement.md)om te zien hoe eenvoudig het maken van een nieuwe community voor activering is.
 
 ## AEM demo-machine {#aem-demo-machine}
 
@@ -227,5 +229,5 @@ Voor AEM demo-machine is een geldige AEM vereist.
 
 * Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het sociale-componentframework (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het maken en configureren van Community-componenten.
+* Bezoek [Authoring Communities Components](author-communities.md) om te leren hoe u auteur kunt maken met en Community-componenten kunt configureren.
 
