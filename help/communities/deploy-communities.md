@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
 translation-type: tm+mt
-source-git-commit: 09f8adac1d5fc4edeca03d6955faddf5ea045405
+source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
 workflow-type: tm+mt
-source-wordcount: '2115'
+source-wordcount: '2114'
 ht-degree: 0%
 
 ---
@@ -34,7 +34,7 @@ ht-degree: 0%
 
 ## Controlelijst voor installatie {#installation-checklist}
 
-**Voor het[AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
+**Voor het [AEM](../../help/sites-deploying/deploy.md#what-is-aem)**
 
 * De nieuwste [AEM 6.4-updates installeren](#aem-updates)
 
@@ -44,7 +44,7 @@ ht-degree: 0%
 
    (voorbeeldinstelling is beschikbaar voor ontwikkeling)
 
-**Voor het vermogen van de[Gemeenschappen](overview.md)**
+**Voor het vermogen van de [Gemeenschappen](overview.md)**
 
 * Als het opstellen van [publiceer landbouwbedrijf](../../help/sites-deploying/recommended-deploys.md#tarmk-farm), [identificeer de primaire uitgever](#primary-publisher)
 
@@ -91,7 +91,7 @@ ht-degree: 0%
 
 ## Latest Releases {#latest-releases}
 
-AEM 6.4 Communautaire algemene bijstand wordt geleverd met een communautaire constructie. Zie de opmerkingen bij de release van AEM 6.4 [Gemeenschappen](/help/release-notes/release-notes.md#experience-manager-communities)voor meer informatie over updates van AEM 6.4 [Gemeenschappen](/help/release-notes/release-notes.md#release-information).
+AEM 6.4 Communautaire algemene vergadering omvat het communautaire pakket. Zie de opmerkingen bij de release van AEM 6.4 [Gemeenschappen](/help/release-notes/release-notes.md#experience-manager-communities)voor meer informatie over updates van AEM 6.4 [Gemeenschappen](/help/release-notes/release-notes.md#release-information).
 
 ### AEM 6.4 Updates {#aem-updates}
 
@@ -125,7 +125,7 @@ De noodzakelijke stappen zijn:
    * Bijvoorbeeld http://localhost:4502/system/console/bundles
    * Selecteer **`Install/Update`**
    * Bladeren... om de bundel te selecteren die uit het gedownloade ZIP-archief is geëxtraheerd
-   * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start dit als dit niet het geval is (of controleer de logboeken)
+   * Controleer of het JDBC-stuurprogramma voor MySQLcom.mysql.jdbc *van* Oracle Corporation actief is en start dit als dat niet het geval is (of controleer de logboeken)
 
 1. Als het installeren op een bestaande plaatsing nadat JDBC is gevormd, dan opnieuw bindt JDBC aan de nieuwe schakelaar door de configuratie JDBC van de Webconsole op te slaan:
 
@@ -150,7 +150,7 @@ De AEM Communities SCORM-engine is vereist voor de functie [enablement](overview
 
 * **[cq -social- scorm -package, versie 1.2.11](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-pkg)**. Dit SCORM-pakket wordt ondersteund door alle versies van AEM 6.4.
 
-* **[cq -social-scorm -package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)**, bevat[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)-engine. Dit SCORM-pakket wordt ondersteund AEM 6.4.2.x-gemeenschappen.
+* **[cq -social-scorm -package, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)** , bevat [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) -engine. Dit SCORM-pakket wordt ondersteund AEM 6.4.2.x-gemeenschappen.
 
 Voor een nieuwe installatie van de SCORM-engine moet het pakket met [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/) (dat [ cq-social-scorm-package is, versie 2.2.2](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)) worden gebruikt. zodat u de leermiddelen kunt spelen die door SCORM 2017 worden gesteund.
 
@@ -162,7 +162,7 @@ Voor een nieuwe installatie van de SCORM-engine moet het pakket met [SCORM 2017.
 1. Download **`/libs/social/config/scorm/database_scormengine_data.sql`** van instantie cq en voer het in mysql server uit om een bevorderd schema te creëren scormEngineDB.
 1. Voeg `/content/communities/scorm/RecordResults` in Uitgesloten bezit van Wegen in filter CSRF van `https://<hostname>;:<port>/system/console/configMgr` op uitgevers toe.
 
-Bestaande SCORM-installaties kunnen worden geüpgraded naar [**cq-social-scorm-pakket, versie 2.2.2 **](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg)(die[SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)gebruikt), als de geschreven cursusinhoud SCORM 2017.1 vereist.
+Bestaande SCORM-installaties kunnen worden geüpgraded naar [**cq-social-scorm-pakket, versie 2.2.2**](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/scorm/cq-social-scorm-2017-pkg) (die [SCORM 2017.1](https://rusticisoftware.com/blog/scorm-engine-2017-released/)gebruikt), als de geschreven cursusinhoud SCORM 2017.1 vereist.
 
 >[!NOTE]
 >
@@ -441,5 +441,5 @@ Als u een Dispatcher gebruikt, raadpleegt u:
 
 * Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het sociale-componentframework (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het maken en configureren van Community-componenten.
+* Bezoek [Authoring Communities Components](author-communities.md) om te leren hoe u auteur kunt maken met en Community-componenten kunt configureren.
 
