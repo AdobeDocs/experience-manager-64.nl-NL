@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: f74e20c5264dc38dcbe20c8fc6b9beaaee7cc6da
+source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
 workflow-type: tm+mt
-source-wordcount: '4031'
+source-wordcount: '4075'
 ht-degree: 0%
 
 ---
@@ -99,6 +99,10 @@ Adobe Experience Manager 6.4.8.3 biedt oplossingen voor de volgende problemen.
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] geeft de add-on pakketten een week na de geplande  [!DNL Experience Manager] Cumulative Fix Pack-releasedatum vrij.
+
+>[!NOTE]
+>
+>[!DNL Experience Manager] Cumulatief Fix Pack bevat geen correcties voor  [!DNL Experience Manager Forms]. Zij worden geleverd gebruikend een afzonderlijk [!DNL Forms] toe:voegen-op pakket. Bovendien wordt een cumulatief installatieprogramma vrijgegeven dat moeilijke situaties voor [!DNL Experience Manager Forms] op JEE omvat. Zie [AEM Forms-invoegtoepassing installeren](#install-aem-forms-add-on-package) en [AEM Forms JEE-installatieprogramma installeren](#install-aem-forms-jee-installer) voor meer informatie.
 
 **Adaptieve Forms**
 
@@ -483,13 +487,13 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 | Gebied | Functie | Vervanging | Versie |
 |---|---|---|---|
 | Assets | Tagactie beheren voor submiddelen | Geen vervanging | AEM 6.4.2.0 |
-| Integratie van middelen en Adobe Creative Cloud | [AEM naar het ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) delen van mappen in Creative Cloud is in AEM 6.2 geïntroduceerd als een manier om creatieve gebruikers toegang te geven tot middelen van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verbeteringen aanbrengen in de functie voor het delen van mappen. Terwijl de functie in AEM is opgenomen, wordt klanten sterk aangeraden om de vervangende functie te gebruiken. | Adobe Asset Link of desktop-app. Zie [AEM Creative Cloud-integratie](/help/assets/aem-cc-integration-best-practices.md) voor meer informatie. | AEM 6.4.4.0 |
+| Integratie van middelen en Adobe Creative Cloud | [AEM naar het ](https://docs.adobe.com/content/help/en/experience-manager-64/assets/administer/aem-cc-folder-sharing-best-practices.html) delen van mappen in Creative Cloud is in AEM 6.2 geïntroduceerd als een manier om creatieve gebruikers toegang te geven tot middelen van AEM. Een nieuwe mogelijkheid die wordt vrijgegeven in de Creative Cloud-toepassing, de Adobe Asset Link, biedt een veel betere gebruikerservaring en een krachtigere toegang tot middelen van AEM rechtstreeks vanuit Photoshop, InDesign en Illustrator. Adobe zal geen verdere verhogingen aan de omslag het delen capaciteit maken. Hoewel de functie in AEM is opgenomen, wordt het klanten sterk aangeraden de vervangende functie te gebruiken. | Adobe Asset Link of desktop app. Zie [AEM Creative Cloud integratie](/help/assets/aem-cc-integration-best-practices.md) artikel voor meer informatie. | AEM 6.4.4.0 |
 
 ## Bekende problemen {#known-issues}
 
-* Als u een upgrade uitvoert van [!DNL Experience Manager] 6.4 naar [!DNL Experience Manager] 6.5, wordt de status van sommige bundels niet weergegeven als `Active`. Installeer het nieuwste [!DNL Experience Manager] 6.5 Service Pack om het probleem op te lossen.
+* Als u van [!DNL Experience Manager] 6.4 aan [!DNL Experience Manager] 6.5 bevordert, zouden sommige bundels hun status als `Active` niet kunnen tonen. Installeer het nieuwste [!DNL Experience Manager] 6.5 Service Pack om het probleem op te lossen.
 
-Voor informatie over de bekende problemen met het AEM 6.4.8.0 Service Pack, raadpleegt u [AEM 6.4.8.0 Opmerkingen bij de release Service Pack](sp-release-notes.md).
+Voor informatie over de bekende problemen met het AEM 6.4.8.0 Service Pack, zie [AEM 6.4.8.0 Opmerkingen bij de release Service Pack](sp-release-notes.md).
 
 ## OSGi-bundels en inhoudspakketten inbegrepen {#osgi-bundles-and-content-packages-included}
 
@@ -499,7 +503,7 @@ Lijst van OSGi-bundels opgenomen in AEM 6.4.8.3
 
 [Bestand ophalen](assets/6.4.8.3_osgi_bundles.txt)
 
-Lijst met inhoudspakketten die zijn opgenomen in AEM 6.4.8.3
+Lijst van inhoudspakketten opgenomen in AEM 6.4.8.3
 
 [Bestand ophalen](assets/6.4.8.3_content_packages.txt)
 
@@ -508,11 +512,11 @@ Lijst met inhoudspakketten die zijn opgenomen in AEM 6.4.8.3
 * [Opmerkingen bij de release AEM 6.4](../release-notes/release-notes.md)
 * [AEM productpagina](https://www.adobe.com/solutions/web-experience-management.html)
 * [AEM 6.4-documentatie](https://helpx.adobe.com/nl/support/experience-manager/6-4.html)
-* Abonneren op [Adobe-productupdates met prioriteit](https://www.adobe.com/subscription/priority-product-update.html)
+* Abonneren op [Adobe prioritaire productupdates](https://www.adobe.com/subscription/priority-product-update.html)
 
 ## Beperkte sites {#restricted-sites-new}
 
-Deze sites zijn alleen beschikbaar voor klanten. Als u een klant bent en toegang nodig hebt, neemt u contact op met uw Adobe-accountmanager.
+Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [Productdownload op licensing.adobe.com](https://licensing.adobe.com/)
-* [Contact opnemen met klantenondersteuning](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
+* [Contact opnemen met de klantenondersteuning](https://docs.adobe.com/content/help/en/customer-one/using/home.html)
