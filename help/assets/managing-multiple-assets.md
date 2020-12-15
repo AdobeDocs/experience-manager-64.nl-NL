@@ -32,7 +32,7 @@ Gebruik de Schema-editor om de pagina met metagegevenseigenschappen aan te passe
 
 1. Navigeer in de gebruikersinterface Elementen naar de locatie van de elementen die u wilt bewerken.
 1. Selecteer de elementen waarvan u de algemene eigenschappen wilt bewerken.
-1. Tik op of klik op het **[!UICONTROL Properties]** pictogram op de werkbalk om de eigenschappenpagina voor de geselecteerde elementen te openen.
+1. Tik op of klik op het pictogram **[!UICONTROL Properties]** op de werkbalk om de pagina met eigenschappen voor de geselecteerde elementen te openen.
 
    >[!NOTE]
    >
@@ -47,7 +47,7 @@ Gebruik de Schema-editor om de pagina met metagegevenseigenschappen aan te passe
    >* Selecteer boven aan de lijst met elementen het selectievakje bij **Titel** om te schakelen tussen het selecteren van de elementen en het wissen van de lijst.
 
 
-1. Als u een ander metagegevensschema voor de elementen wilt selecteren, tikt u op het **[!UICONTROL Settings]** pictogram of klikt u op het pictogram op de werkbalk en selecteert u het gewenste schema.
+1. Als u een ander metagegevensschema voor de elementen wilt selecteren, tikt u op het pictogram **[!UICONTROL Settings]** op de werkbalk en selecteert u het gewenste schema.
 1. Sla de wijzigingen op.
 1. Selecteer **[!UICONTROL Append mode]** om de nieuwe metadata toe te voegen aan de bestaande metadata in velden die meerdere waarden bevatten. Als u deze optie niet selecteert, worden de bestaande metadata in de velden vervangen door de nieuwe metadata. Tik of klik op **[!UICONTROL Submit]**.
 
@@ -57,11 +57,11 @@ Gebruik de Schema-editor om de pagina met metagegevenseigenschappen aan te passe
 
 ## Limiet voor bijwerken van bulkmetagegevens configureren {#configure-limit-for-bulk-metadata-update}
 
-Om DOS als situatie te verhinderen, beperkt AEM het aantal parameters die in een Verschuivend verzoek worden gesteund. Wanneer u metagegevens van vele elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. AEM genereert de volgende waarschuwing in de logboeken:
+Om DOS als situatie te verhinderen, beperkt AEM het aantal parameters die in een het Verdelen verzoek worden gesteund. Wanneer u metagegevens van veel elementen in één keer bijwerkt, kunt u de limiet bereiken en worden de metagegevens niet bijgewerkt voor meer elementen. AEM genereert de volgende waarschuwing in de logboeken:
 
 `org.apache.sling.engine.impl.parameters.Util Too many name/value pairs, stopped processing after 10000 entries`
 
-To change the limit, access **[!UICONTROL Tools > Operations > Web Console]** and change the value of [!UICONTROL Maximum POST Parameters] in [!UICONTROL Apache Sling Request Parameter Handling] OSGi configuration.
+Als u de limiet wilt wijzigen, opent u **[!UICONTROL Tools > Operations > Web Console]** en wijzigt u de waarde van [!UICONTROL Maximum POST Parameters] in de OSGi-configuratie [!UICONTROL Apache Sling Request Parameter Handling].
 
 >[!MORELIKETHIS]
 >
