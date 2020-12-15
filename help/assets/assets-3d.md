@@ -22,19 +22,19 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
 
 Met AEM 3D (Adobe Experience Manager 3D) kunt u 3D-inhoud uploaden, beheren, weergeven en renderen. Ondersteuning voor weergave en rendering is geoptimaliseerd voor afzonderlijke objecten.
 
-Zie ook [AEM Opmerkingen](/help/release-notes/aem3d-release-notes.md)bij de 3D-release.
+Zie ook [AEM Opmerkingen bij de 3D-release](/help/release-notes/aem3d-release-notes.md).
 
-Zie ook [Installeren en configureren AEM 3D](install-config-3d.md).
+Zie ook [AEM 3D](install-config-3d.md) installeren en configureren.
 
 ## Modellen en fasen in AEM 3D {#about-models-and-stages-in-aem-d}
 
 Met AEM 3D kunt u statische, zelfstandige 3D-modellen van hoge kwaliteit weergeven en renderen in vooraf gedefinieerde omgevingen die Stages worden genoemd. In feite biedt een werkgebied &#39;belichting&#39; voor de 3D-scène en de instellingen voor rendering in een native toepassing zoals Autodesk® Maya® of Autodesk 3ds Max®. Bovendien kan het werkgebied eventueel vooraf gedefinieerde camera&#39;s, achtergronden en geometrie van het grondvlak bevatten.
 
-Geüploade 3D-bestanden met lichten worden als een werkgebied beschouwd. U kunt dergelijke elementen herstellen tot eenvoudige 3D-objecten door het element te openen op de pagina met elementdetails. Tik **[!UICONTROL View Properties]** vervolgens op de **[!UICONTROL Basic]** tab. Selecteer onder de kop Metagegevens in de vervolgkeuzelijst Asset Class de optie **[!UICONTROL 3D object]**.
+Geüploade 3D-bestanden met lichten worden als een werkgebied beschouwd. U kunt dergelijke elementen herstellen tot eenvoudige 3D-objecten door het element te openen op de pagina met elementdetails. Tik op **[!UICONTROL View Properties]** en tik vervolgens op de tab **[!UICONTROL Basic]**. Selecteer **[!UICONTROL 3D object]** onder de kop Metagegevens in de vervolgkeuzelijst Asset Class.
 
 Houd rekening met het volgende wanneer u 3D-modellen maakt voor gebruik in AEM 3D:
 
@@ -49,7 +49,7 @@ Houd rekening met het volgende wanneer u 3D-modellen maakt voor gebruik in AEM 3
 
 ## Ondersteunde bestanden in AEM 3D {#supported-files-in-aem-d}
 
-Een normaal 3D-element heeft een primair modelbestand en een of meer bestanden waarnaar wordt verwezen. Bestanden waarnaar wordt verwezen, zijn bijvoorbeeld structuurafbeeldingen of **IBL-afbeeldingen (op afbeeldingen gebaseerde belichting)** .
+Een normaal 3D-element heeft een primair modelbestand en een of meer bestanden waarnaar wordt verwezen. Bestanden waarnaar wordt verwezen, zijn bijvoorbeeld structuurafbeeldingen of **IBL (op afbeelding gebaseerde belichting)** afbeeldingen.
 
 ### Informatie over het primaire 3D-modelbestand {#about-the-primary-d-model-file}
 
@@ -57,13 +57,13 @@ Het primaire 3D-modelbestand bevat de werkelijke geometrie van het 3D-model en d
 
 * Wavefront OBJ-bestandsindeling (`.obj`)
 
-   Voor de OBJ-indeling zijn een of meer aparte, externe MTL-bestanden (Material Template Library) (`.mtl`) vereist.
+   De indeling OBJ vereist een of meer afzonderlijke, externe MTL-bestanden (Material Template Library) (`.mtl`).
 
 * Bestandsindeling Autodesk FBX (Filmbox) (`.fbx`)
 
    De Autodesk 3D-indeling voor het uitwisselen van bestanden; zowel binaire als ASCII-indelingen.
 
-   Wanneer u FBX-bestanden maakt in toepassingen van derden, raadt Adobe de volgende configuratie-instellingen aan (zie onderstaande tabel). Deze instellingen kunnen u helpen de beste resultaten te bereiken voor 3D-bestanden die u in AEM wilt gebruiken. De optienamen worden overgenomen uit het **[!UICONTROL Autodesk Maya FBX Export Options]** dialoogvenster.
+   Wanneer u FBX-bestanden maakt in toepassingen van derden, raadt Adobe de volgende configuratie-instellingen aan (zie onderstaande tabel). Deze instellingen kunnen u helpen de beste resultaten te bereiken voor 3D-bestanden die u in AEM wilt gebruiken. De optienamen worden overgenomen uit het dialoogvenster **[!UICONTROL Autodesk Maya FBX Export Options]**.
 
 <table> 
  <tbody> 
@@ -89,11 +89,11 @@ Het primaire 3D-modelbestand bevat de werkelijke geometrie van het 3D-model en d
   </tr> 
   <tr> 
    <td>Cameras</td> 
-   <td><p>Selecteer deze optie voor de <strong>3D-fasen</strong>.</p> <p>Schakel deze optie uit voor 3D-modellen.</p> </td> 
+   <td><p>Selecteer deze optie voor <strong>3D-fasen</strong>.</p> <p>Schakel deze optie uit voor 3D-modellen.</p> </td> 
   </tr> 
   <tr> 
    <td>Lichten</td> 
-   <td><p>Selecteer deze optie voor de <strong>3D-fasen</strong>.</p> <p>Schakel deze optie uit voor <strong>3D-modellen</strong>.</p> </td> 
+   <td><p>Selecteer deze optie voor <strong>3D-fasen</strong>.</p> <p>Schakel deze optie uit voor <strong>3D-modellen</strong>.</p> </td> 
   </tr> 
   <tr> 
    <td>Eenheden - Automatisch</td> 
@@ -105,7 +105,7 @@ Het primaire 3D-modelbestand bevat de werkelijke geometrie van het 3D-model en d
   </tr> 
   <tr> 
    <td>Media insluiten</td> 
-   <td>Beide opties worden ondersteund. Als ingesloten is geselecteerd, extraheert AEM 3D de ingesloten media naar een aangrenzende map met dezelfde naam als het modelbestand waaraan het is <code>.fbm</code> toegevoegd.</td> 
+   <td>Beide opties worden ondersteund. Als ingesloten is geselecteerd, extraheert AEM 3D de ingesloten media naar een aangrenzende map met dezelfde naam als het modelbestand waaraan <code>.fbm</code> is toegevoegd.</td> 
   </tr> 
   <tr> 
    <td>FBX-bestandsindeling - Type</td> 
@@ -122,7 +122,7 @@ De volgende aanvullende bestandsindelingen worden ondersteund als Autodesk Maya 
 
 * Autodesk Maya
 
-   Zowel ASCII- `.ma` als binaire `.mb` indelingen.
+   Zowel ASCII `.ma` als binaire `.mb` formaten.
 
 * `Jupiter Tesselation (ISO 14306-1).jt`.
 
@@ -146,7 +146,7 @@ De materialen in het primaire 3D modeldossier kunnen andere types van kaarten va
 
 Een 3D-modelbestand dat een werkgebied definieert, kan verwijzen naar één IBL-omgevingsafbeelding. AEM 3D ondersteunt momenteel alleen 32-bits TIFF-afbeeldingen in lengte- en breedtegraad voor diffuse IBL en voor reflecties. Voor de bolvormige scèneachtergrond worden 8-bits RGB-afbeeldingen ook ondersteund.
 
-Zie [Informatie over het werken met IBL-fasen](working-with-ibl-stages.md).
+Zie [Werken met IBL-fasen](working-with-ibl-stages.md).
 
 >[!NOTE]
 >
@@ -159,9 +159,9 @@ Het oorspronkelijke native modelbestand kan materiaaldefinities bevatten die wor
 
 Voor weergavedoeleinden of wanneer u rendert met de standaard Rapid Refine™-renderer, worden alle materialen vereenvoudigd, vervangen of beide, zodat ze kunnen worden gebruikt met een Phong-achtige arcering. Deze arcering ondersteunt een beperkte set kenmerken. Andere kenmerken in de materiaaldefinitie worden genegeerd.
 
-Zie 3D- [elementen](viewing-3d-assets.md)weergeven.
+Zie [3D-elementen weergeven](viewing-3d-assets.md).
 
-Zie 3D- [elementen](rendering-3d-assets.md)renderen.
+Zie [3D-elementen renderen](rendering-3d-assets.md).
 
 ## Materialen benoemen in een primair 3D-modelbestand {#naming-materials-in-a-primary-d-model-file}
 
