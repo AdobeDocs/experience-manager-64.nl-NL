@@ -18,7 +18,7 @@ ht-degree: 12%
 
 De Smart Content Service vereist dat de trainingsafbeeldingen aan bepaalde richtlijnen voldoen om uw merkafbeeldingen effectief te kunnen labelen.
 
-## Richtsnoeren voor opleiding {#guidelines-for-training}
+## Richtlijnen voor training {#guidelines-for-training}
 
 Voor de beste resultaten moeten de afbeeldingen in de trainingsset voldoen aan de volgende richtlijnen:
 
@@ -26,13 +26,13 @@ Voor de beste resultaten moeten de afbeeldingen in de trainingsset voldoen aan d
 
 **Coherentie**: Afbeeldingen voor een tag moeten visueel op elkaar lijken.
 
-Het is bijvoorbeeld geen goed idee om al deze afbeeldingen als *mijn-partij* te labelen (voor training), omdat ze er anders uitzien.
+Het is bijvoorbeeld geen goed idee om al deze afbeeldingen te labelen als *my-party* (voor training) omdat ze er anders uitzien.
 
 ![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](assets/do-not-localize/coherence.png)
 
 **Dekking**: De beelden in de training moeten voldoende uiteenlopend zijn. Het is de bedoeling om een paar maar redelijk verschillende voorbeelden te geven, zodat AEM leert zich te richten op de juiste dingen. Als u dezelfde tag toepast op visueel verschillende afbeeldingen, moet u ten minste vijf voorbeelden van elke soort opnemen.
 
-Neem voor het vervolgkeuzemodel ** van het label bijvoorbeeld meer trainingsafbeeldingen op, vergelijkbaar met de gemarkeerde afbeelding hieronder, zodat de service vergelijkbare afbeeldingen nauwkeuriger kan identificeren tijdens het labelen.
+Voor de tag *model-down-pose* neemt u bijvoorbeeld meer trainingsafbeeldingen op die lijken op de gemarkeerde afbeelding hieronder, zodat u vergelijkbare afbeeldingen tijdens het labelen nauwkeuriger kunt identificeren.
 
 ![Illustratieve afbeeldingen ter illustratie van de richtlijnen voor training](assets/do-not-localize/coverage_1.png)
 
@@ -52,7 +52,7 @@ Verbeterde slimme tags zijn gebaseerd op leermodellen van merkafbeeldingen en hu
 
 * Kan subtiele verschillen in afbeeldingen niet herkennen. Bijvoorbeeld dunne en standaard gemonteerde hemden.
 * Kan geen tags identificeren op basis van kleine patronen/delen van een afbeelding. Bijvoorbeeld logo&#39;s op T-shirts.
-* Tags worden ondersteund in de landinstellingen waarin AEM wordt ondersteund. Zie Opmerkingen bij de release [Smart Content Services voor een lijst met talen](/help/release-notes/smart-content-service-release-notes.md).
+* Tags worden ondersteund in de landinstellingen waarin AEM wordt ondersteund. Zie [Opmerkingen bij de release Smart Content Services](/help/release-notes/smart-content-service-release-notes.md) voor een lijst met talen.
 
 Als u wilt zoeken naar elementen met slimme tags (normaal of uitgebreid), gebruikt u de vanuit de gebruikersinterface uitgevoerde zoekopdracht (zoeken in volledige tekst). Er is geen afzonderlijke zoekvoorspelling voor slimme tags.
 
