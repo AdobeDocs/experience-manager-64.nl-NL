@@ -34,7 +34,7 @@ Bovendien wordt de tijdlijnactiviteit vastgelegd wanneer nieuwe assets worden ge
 >
 >Tijdelijke workflows worden niet weergegeven in de tijdlijn, omdat er voor deze workflows geen historiegegevens worden opgeslagen.
 
-Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u een optie in de lijst GlobalNav. **[!UICONTROL Timeline]**
+Als u de activiteitsstroom wilt weergeven, voert u een of meer bewerkingen uit op het element, selecteert u het element en kiest u **[!UICONTROL Timeline]** in de lijst GlobalNav.
 
 ![timeline-3](assets/timeline-3.png)
 
@@ -44,4 +44,4 @@ De tijdlijn geeft de activiteitsstroom weer voor de bewerkingen die u uitvoert o
 
 >[!NOTE]
 >
->The default log storage location for **Publish** and **Unpublish** tasks is `/var/audit/com.day.cq.replication/content`. For **Move** tasks, the default location is `/var/audit/com.day.cq.wcm.core.page`.
+>De standaardopslaglocatie voor logbestanden voor **Publiceren** en **Unpublish**-taken is `/var/audit/com.day.cq.replication/content`. Voor **Move** taken, is de standaardplaats `/var/audit/com.day.cq.wcm.core.page`.
