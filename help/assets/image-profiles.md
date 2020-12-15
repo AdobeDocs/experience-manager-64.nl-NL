@@ -1,6 +1,6 @@
 ---
-title: Dynamische afbeeldingsprofielen voor media
-seo-title: Dynamische afbeeldingsprofielen voor media
+title: Dynamic Media-afbeeldingsprofielen
+seo-title: Dynamic Media-afbeeldingsprofielen
 description: Maak afbeeldingsprofielen met instellingen voor onscherp masker en kies voor slim uitsnijden of slim staal of beide om het profiel toe te passen op een map met afbeeldingselementen.
 seo-description: Maak afbeeldingsprofielen met instellingen voor onscherp masker en kies voor slim uitsnijden of slim staal of beide om het profiel toe te passen op een map met afbeeldingselementen.
 uuid: 9049fab9-d2be-4118-8684-ce58f3c8c16a
@@ -18,25 +18,25 @@ ht-degree: 10%
 ---
 
 
-# Dynamic Media image profiles {#image-profiles}
+# Dynamic Media-afbeeldingsprofielen {#image-profiles}
 
 Wanneer u afbeeldingen uploadt, kunt u de afbeelding tijdens het uploaden automatisch uitsnijden door een afbeeldingsprofiel toe te passen op de map.
 
 >[!NOTE]
 >
->Smart Crop is alleen beschikbaar in de modus Dynamische media - Scene7.
+>Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
 
 >[!IMPORTANT]
 >
 >Afbeeldingsprofielen zijn niet van toepassing op PDF-, geanimeerde GIF- of INDD-bestanden (Adobe InDesign).
 
-## Opties voor uitsnijden {#crop-options}
+## Uitsnijdopties {#crop-options}
 
 <!-- CQDOC-16069 for paragraph directly below -->
 
 De coördinaten voor Slim uitsnijden zijn afhankelijk van de hoogte-breedteverhouding. Als de hoogte-breedteverhouding voor de verschillende instellingen voor slimme uitsnijdingen in een afbeeldingsprofiel hetzelfde is voor de toegevoegde afmetingen in het afbeeldingsprofiel, wordt dezelfde hoogte-breedteverhouding verzonden naar dynamische media. Daarom raadt Adobe u aan hetzelfde snijgebied te gebruiken. Zo voorkomt u dat verschillende afmetingen die in het afbeeldingsprofiel worden gebruikt, worden beïnvloed.
 
-Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Aangezien u Smart Crop op mapniveau kunt toepassen, raadt Adobe u aan het gereedschap *alleen* in mappen te gebruiken als dat nodig is.
+Houd er rekening mee dat voor elke SmartCrop-generatie die u maakt extra verwerkingstijd nodig is. Als u bijvoorbeeld meer dan vijf slimme-uitsnijdverhoudingen toevoegt, kan dit leiden tot een langzame opname van elementen. Het kan ook een verhoogde belasting van systemen veroorzaken. Omdat u Slim uitsnijden op mapniveau kunt toepassen, raadt Adobe u aan het te gebruiken in mappen *alleen* waar dat nodig is.
 
 U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U kunt ook het maken van kleuren- en afbeeldingsstalen automatiseren.
 
@@ -62,27 +62,27 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U
   <tr> 
    <td>Slim uitsnijden</td> 
    <td>Bulk uitsnijdafbeeldingen op basis van hun visuele brandpunt.</td> 
-   <td><p>Smart Crop maakt gebruik van de kracht van kunstmatige intelligentie in Adobe Sensei om het uitsnijden van afbeeldingen in bulk te automatiseren. Met Slim uitsnijden wordt automatisch het brandpunt in een afbeelding opgespoord en uitgesneden om het gewenste aandachtspunt vast te leggen, ongeacht de schermgrootte.</p> <p>Als u Slim uitsnijden wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties en schakelt u de functie in (inschakelen), rechts van Uitsnijden van responsieve afbeelding.</p> <p>De standaardbreekpuntgrootten Groot, Normaal, en Klein omvatten over het algemeen de volledige waaier van grootte dat de meeste beelden op mobiele en tabletapparaten, Desktops, en banners worden gebruikt. Desgewenst kunt u de standaardnamen van Groot, Normaal, en Klein uitgeven.</p> <p>Als u meer onderbrekingspunten wilt toevoegen, klikt u op Uitsnijden <strong></strong>toevoegen. Als u een uitsnijding wilt verwijderen, klikt u op het pictogram met de prullenbak.</p> </td> 
+   <td><p>Smart Crop maakt gebruik van de kracht van kunstmatige intelligentie in Adobe Sensei om het uitsnijden van afbeeldingen in bulk te automatiseren. Met Slim uitsnijden wordt automatisch het brandpunt in een afbeelding opgespoord en uitgesneden om het gewenste aandachtspunt vast te leggen, ongeacht de schermgrootte.</p> <p>Als u Slim uitsnijden wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties en vervolgens rechts van Uitsnijden met responsieve afbeelding, schakelt u de functie in (uit).</p> <p>De standaardbreekpuntgrootten Groot, Normaal, en Klein omvatten over het algemeen de volledige waaier van grootte dat de meeste beelden op mobiele en tabletapparaten, Desktops, en banners worden gebruikt. Desgewenst kunt u de standaardnamen van Groot, Normaal, en Klein uitgeven.</p> <p>Als u meer onderbrekingspunten wilt toevoegen, klikt u op <strong>Uitsnijden toevoegen</strong>; Als u een uitsnijding wilt verwijderen, klikt u op het pictogram met de prullenbak.</p> </td> 
   </tr> 
   <tr> 
    <td>Kleur en afbeeldingsstaal</td> 
    <td>Met Bolvormig maakt u een afbeeldingsstaal voor elke afbeelding.</td> 
-   <td><p><strong>Opmerking</strong>: Slim staal wordt niet ondersteund in Dynamic Media Classic.</p> <p>Zoek en genereer automatisch stalen van hoge kwaliteit op basis van productafbeeldingen met kleuren of structuur.</p> <p>Als u Kleur en afbeeldingsstaal wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties, rechts van Kleur en Afbeeldingsstaal, schakelt u de functie in (inschakelen). Geef een pixelwaarde op in de tekstvakken Breedte en Hoogte.</p> <p>Alle uitsnijdingen van afbeeldingen zijn beschikbaar via de Renditions-rail, maar stalen worden alleen gebruikt via de functie URL kopiëren. U moet uw eigen weergavecomponent gebruiken om het staal op uw site te renderen. (De uitzondering hierop zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.)</p> <p><strong>Afbeeldingsstalen gebruiken</strong></p> <p>De URL voor afbeeldingsstalen is eenvoudig. Dat is:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>waar <code>:Swatch</code> wordt toegevoegd aan het verzoek om activa.</p> <p><strong>Kleurstalen gebruiken</strong></p> <p>Als u kleurstalen wilt gebruiken, kunt u het volgende <code>req=userdata</code> aanvragen:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Hier volgt bijvoorbeeld een staalelement in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>en hier is de overeenkomstige <code>req=userdata</code> URL van het stalenelement:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>Het <code>req=userdata</code> antwoord is als volgt:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Opmerking</strong>: Slim staal wordt niet ondersteund in Dynamic Media Classic.</p> <p>Zoek en genereer automatisch stalen van hoge kwaliteit op basis van productafbeeldingen met kleuren of structuur.</p> <p>Als u Kleur en afbeeldingsstaal wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties, rechts van Kleur en Afbeeldingsstaal, schakelt u de functie in (inschakelen). Geef een pixelwaarde op in de tekstvakken Breedte en Hoogte.</p> <p>Alle uitsnijdingen van afbeeldingen zijn beschikbaar via de Renditions-rail, maar stalen worden alleen gebruikt via de functie URL kopiëren. U moet uw eigen weergavecomponent gebruiken om het staal op uw site te renderen. (De uitzondering hierop zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.)</p> <p><strong>Afbeeldingsstalen gebruiken</strong></p> <p>De URL voor afbeeldingsstalen is eenvoudig. Dat is:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>waarbij <code>:Swatch</code> wordt toegevoegd aan de elementaanvraag.</p> <p><strong>Kleurstalen gebruiken</strong></p> <p>Als u kleurstalen wilt gebruiken, dient u een <code>req=userdata</code>-verzoek in te dienen met het volgende:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Hier volgt bijvoorbeeld een staalelement in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>en hier ziet u de corresponderende URL <code>req=userdata</code> van het stalelement:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>De reactie <code>req=userdata</code> is als volgt:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
        SmartCropWidth=200.0
-       SmartSwatchColor=0xA56DB2</code></p> <p>U kunt ook een <code>req=userdata</code> reactie aanvragen in XML- of JSON-indeling, zoals in de volgende URL-voorbeelden:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p><p><code>SmartSwatchColor</code></p><p></p></td></tr></tbody></table>
+       SmartSwatchColor=0xA56DB2</code></p> <p>U kunt ook een <code>req=userdata</code>-reactie aanvragen in XML- of JSON-indeling, zoals in de volgende URL-voorbeelden:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata,xml</code></p><p><code>SmartSwatchColor</code></p><p></p></td></tr></tbody></table>
 
 ## Onscherp masker {#unsharp-mask}
 
-You use **Unsharp Mask** to fine-tune a sharpening filter effect on the final downsampled image. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast die wordt genegeerd, instellen. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Adobe Photoshop.
+Met **Onscherp masker** kunt u een verscherpingsfiltereffect op de uiteindelijke gedownsampelde afbeelding perfectioneren. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast die wordt genegeerd, instellen. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Adobe Photoshop.
 
 >[!NOTE]
 >
 >Onscherp masker wordt alleen toegepast op verkleinde uitvoeringen in de PTIFF-indeling (piramide tiff) die meer dan 50% zijn gedownsampled. Dit betekent dat de grootst mogelijke uitvoeringen in PTIFF niet worden beïnvloed door een onscherp masker, terwijl kleinere uitvoeringen zoals miniaturen worden gewijzigd (en het onscherpe masker tonen).
 
-In **Onscherp masker** hebt u de volgende filteropties:
+In **Onscherp masker**, hebt u de volgende het filtreren opties:
 
 <table> 
  <tbody> 
@@ -105,13 +105,13 @@ In **Onscherp masker** hebt u de volgende filteropties:
  </tbody> 
 </table>
 
-Verscherpen wordt beschreven in [Verscherpen van afbeeldingen](/help/assets/assets/s7_sharpening_images.pdf).
+Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/assets/s7_sharpening_images.pdf).
 
-## Creating Dynamic Media image profiles {#creating-image-profiles}
+## Dynamic Media-afbeeldingsprofielen {#creating-image-profiles} maken
 
-Zie [Elementverwerking](config-dms7.md#configuring-asset-processing)configureren voor het definiëren van geavanceerde verwerkingsparameters voor andere elementtypen.
+Zie [Elementverwerking configureren](config-dms7.md#configuring-asset-processing) om geavanceerde verwerkingsparameters voor andere elementtypen te definiëren.
 
-**Dynamische afbeeldingsprofielen** voor media maken:
+**Dynamic Media-afbeeldingsprofielen** maken:
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Tik **[!UICONTROL Create]** om een nieuw afbeeldingsprofiel toe te voegen.
@@ -125,16 +125,16 @@ Zie [Elementverwerking](config-dms7.md#configuring-asset-processing)configureren
 
 1. Tik op **[!UICONTROL Save]**. Het nieuwe profiel wordt weergegeven in de lijst met beschikbare profielen.
 
-## Dynamische mediaafbeeldingsprofielen bewerken of verwijderen {#editing-or-deleting-image-profiles}
+## Dynamic Media-afbeeldingsprofielen bewerken of verwijderen {#editing-or-deleting-image-profiles}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
-1. Selecteer het afbeeldingsprofiel dat u wilt bewerken of verwijderen. Selecteer **[!UICONTROL Edit Image Processing Profile]**. Selecteer **[!UICONTROL Delete Image Processing Profile]** deze optie als u deze wilt verwijderen.
+1. Selecteer het afbeeldingsprofiel dat u wilt bewerken of verwijderen. Selecteer **[!UICONTROL Edit Image Processing Profile]** om deze te bewerken. Selecteer **[!UICONTROL Delete Image Processing Profile]** om het te verwijderen.
 
    ![chlimage_1-254](assets/chlimage_1-254.png)
 
 1. Sla de wijzigingen op als u het bestand bewerkt. Bevestig bij verwijderen dat u het profiel wilt verwijderen.
 
-## Een afbeeldingsprofiel voor dynamische media toepassen op mappen {#applying-an-image-profile-to-folders}
+## Dynamic Media-afbeeldingsprofiel toepassen op mappen {#applying-an-image-profile-to-folders}
 
 Wanneer u een afbeeldingsprofiel toewijst aan een map, nemen eventuele submappen het profiel automatisch over van de bovenliggende map. Dit betekent dat u slechts één afbeeldingsprofiel kunt toewijzen aan een map. Denk daarom zorgvuldig na over de mapstructuur van de locatie waar u middelen uploadt, opslaat, gebruikt en archiveert.
 
@@ -142,48 +142,48 @@ Als u een ander afbeeldingsprofiel aan een map hebt toegewezen, overschrijft het
 
 Mappen waaraan een profiel is toegewezen, worden in de gebruikersinterface aangeduid met de naam van het profiel dat op de kaart wordt weergegeven.
 
-Wanneer u slimme uitsnijdingen toevoegt aan een bestaand afbeeldingsprofiel, moet u de workflow [met](assets-workflow.md) DAM-updatemiddelen opnieuw activeren als u uitsnijdingen wilt genereren voor bestaande elementen in de gegevensopslagruimte.
+Wanneer u slim uitsnijden toevoegt aan een bestaand afbeeldingsprofiel, moet u de [DAM-workflow voor bijwerken van element opnieuw activeren](assets-workflow.md) als u uitsnijdingen wilt genereren voor bestaande elementen in de gegevensopslagruimte.
 
 U kunt afbeeldingsprofielen toepassen op specifieke mappen of op alle elementen.
 
-### Afbeeldingsprofielen voor dynamische media toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
+### Dynamic Media-afbeeldingsprofielen toepassen op specifieke mappen {#applying-image-profiles-to-specific-folders}
 
 U kunt een afbeeldingsprofiel toepassen op een map vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren op mappen kunt toepassen.
 
 Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamische media-afbeeldingsprofielen toepassen op mappen vanuit de gebruikersinterface van Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
+#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit de gebruikersinterface Profielen {#applying-image-profiles-to-folders-from-profiles-user-interface}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u wilt toepassen op een of meerdere mappen.
 
    ![chlimage_1-255](assets/chlimage_1-255.png)
 
-1. Tap **[!UICONTROL Apply Processing Profile to Folder(s)]** and select the folder or multiple folders you want use to receive the newly uploaded assets and tap/click **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
+1. Tik op **[!UICONTROL Apply Processing Profile to Folder(s)]** en selecteer de map of meerdere mappen die u wilt gebruiken om de nieuw geüploade elementen te ontvangen en tik/klik op **[!UICONTROL Apply]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
-#### Dynamische mediaafbeeldingsprofielen toepassen op mappen vanuit eigenschappen {#applying-image-profiles-to-folders-from-properties}
+#### Dynamic Media-afbeeldingsprofielen toepassen op mappen vanuit Eigenschappen {#applying-image-profiles-to-folders-from-properties}
 
-1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en naar de map waarop u een afbeeldingsprofiel wilt toepassen.
-1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
+1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop u een afbeeldingsprofiel wilt toepassen.
+1. Tik in de map op het vinkje om het te selecteren en tik op **[!UICONTROL Properties]**.
 1. Tik op het tabblad **[!UICONTROL Image Profiles]**. Selecteer het profiel in de vervolgkeuzelijst **[!UICONTROL Profile Name]** en tik vervolgens op **[!UICONTROL Save & Close]**. Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
 
    ![chlimage_1-256](assets/chlimage_1-256.png)
 
-### Een afbeeldingsprofiel voor dynamische media algemeen toepassen {#applying-an-image-profile-globally}
+### Een Dynamic Media-afbeeldingsprofiel globaal toepassen {#applying-an-image-profile-globally}
 
 Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepassen, zodat het geselecteerde profiel wordt toegepast op inhoud die is geüpload naar AEM elementen in een map.
 
-**Een profiel voor dynamische media-afbeeldingen algemeen** toepassen:
+**Een Dynamic Media-afbeeldingsprofiel wereldwijd** toepassen:
 
 1. Voer een van de volgende handelingen uit:
 
-   * Ga naar **https://&lt;AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** en pas het juiste profiel toe en tik op **Opslaan**.
+   * Navigeer naar **https://&lt;AEM server>/mnt/overlay/dam/gui/content/assets/foldersharewizard.html/content/dam** en pas het juiste profiel toe en tik **Save**.
 
       ![chlimage_1-257](assets/chlimage_1-257.png)
 
    * Navigeer naar CRXDE Lite naar het volgende knooppunt: `/content/dam/jcr:content`.
 
-      Voeg de eigenschap toe `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` en tik op **[!UICONTROL Save All]**.
+      Voeg de eigenschap `imageProfile:/conf/global/settings/dam/adminui-extension/imageprofile/<name of image profile>` toe en tik **[!UICONTROL Save All]**.
 
       ![configure_image_profiles](assets/configure_image_profiles.png)
 
@@ -191,7 +191,7 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 
 >[!NOTE]
 >
->Smart Crop is alleen beschikbaar in de modus Dynamische media - Scene7.
+>Slim uitsnijden is alleen beschikbaar in de modus Dynamic Media - Scene7.
 
 U kunt het venster voor slimme uitsnijden van een afbeelding handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
 
@@ -199,28 +199,28 @@ Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorg
 
 Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieuw te genereren.
 
-Zie ook Het slimme uitsnijdstaal of het slimme staal [bewerken van meerdere afbeeldingen](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
+Zie ook [Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken](#editing-the-smart-crop-or-smart-swatch-of-multiple-images).
 
 **Het slimme uitsnijdstaal of het slimme staal van één afbeelding** bewerken:
 
-1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
+1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar de map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
 
 1. Tik op de map om de inhoud ervan te openen.
 1. Tik op de afbeelding waarvan u het slimme uitsnijdstaal of het slimme staal wilt aanpassen.
-1. Tik op de werkbalk **[!UICONTROL Smart Crop]**.
+1. Tik op **[!UICONTROL Smart Crop]** op de werkbalk.
 
 1. Voer een van de volgende handelingen uit:
 
    * Sleep de schuifregelaar naar links of rechts boven in de rechterbovenhoek van de pagina om respectievelijk de weergave van de afbeelding te vergroten of te verkleinen.
    * Sleep in de afbeelding een hoekgreep om de grootte van het zichtbare gebied van het uitsnijden of staal aan te passen.
    * Sleep het vak of het staal in de afbeelding naar een nieuwe locatie. U kunt alleen afbeeldingsstalen bewerken; kleurstalen zijn statisch.
-   * Tik boven de afbeelding **[!UICONTROL Revert]** om alle bewerkingen ongedaan te maken en het oorspronkelijke uitsnijd of staal te herstellen.
+   * Tik boven de afbeelding op **[!UICONTROL Revert]** om al uw bewerkingen ongedaan te maken en het oorspronkelijke uitsnijd of staal te herstellen.
 
-1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens **[!UICONTROL Close]** om terug te keren naar de map met middelen.
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]** en tik vervolgens op **[!UICONTROL Close]** om terug te keren naar de map met elementen.
 
-## Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
+## Het slimme uitsnijd- of slimme staal van meerdere afbeeldingen bewerken {#editing-the-smart-crop-or-smart-swatch-of-multiple-images}
 
-Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Desgewenst kunt u het venster voor slimme uitsnijden in meerdere afbeeldingen *handmatig* opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.
+Nadat u een afbeeldingsprofiel met slimme uitsnijding hebt toegepast op een map, is op alle afbeeldingen in die map een uitsnijding toegepast. Desgewenst kunt u het venster voor slimme uitsnijden in meerdere afbeeldingen *handmatig opnieuw uitlijnen of het formaat ervan wijzigen om het brandpunt verder te verfijnen.*
 
 Nadat u een slim uitsnijden hebt bewerkt en opgeslagen, wordt de wijziging doorgegeven overal waar u het uitsnijden voor de specifieke afbeeldingen gebruikt.
 
@@ -228,10 +228,10 @@ Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieu
 
 **Het slimme uitsnijdstaal of het slimme staal van meerdere afbeeldingen** bewerken:
 
-1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]**, en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
+1. Tik op het AEM en navigeer naar **[!UICONTROL Assets]** en vervolgens naar een map waarop een profiel voor slimme uitsnijdingen of slimme stalen is toegepast.
 1. Tik in de map op het pictogram **[!UICONTROL More Actions]** (...) en tik vervolgens op **[!UICONTROL Smart Crop]**.
 
-1. Voer op de **[!UICONTROL Edit Smart Crops]** pagina een van de volgende handelingen uit:
+1. Voer op de pagina **[!UICONTROL Edit Smart Crops]** een van de volgende handelingen uit:
 
    * Pas de weergavegrootte van afbeeldingen op de pagina aan.
 
@@ -267,15 +267,15 @@ Indien nodig kunt u SmartCrop opnieuw uitvoeren om de extra uitsnijdingen opnieu
 
 
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**. Tik vervolgens **[!UICONTROL Close]** om terug te keren naar de map met middelen.
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**. Tik vervolgens op **[!UICONTROL Close]** om terug te keren naar de map met middelen.
 
-## Een afbeeldingsprofiel uit mappen verwijderen {#removing-an-image-profile-from-folders}
+## Een afbeeldingsprofiel verwijderen uit mappen {#removing-an-image-profile-from-folders}
 
 Wanneer u een afbeeldingsprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
 
 U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]**, of vanuit **[!UICONTROL Properties]** als u zich in een map bevindt. In deze sectie wordt beschreven hoe u afbeeldingsprofielen op beide manieren uit mappen kunt verwijderen.
 
-### Dynamische mediaafbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
+### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen via de gebruikersinterface Profielen {#removing-image-profiles-from-folders-via-profiles-user-interface}
 
 1. Tik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Image Profiles]**.
 1. Selecteer het afbeeldingsprofiel dat u uit een of meerdere mappen wilt verwijderen.
@@ -283,11 +283,11 @@ U kunt een afbeeldingsprofiel uit een map verwijderen vanuit het menu **[!UICONT
 
    U kunt bevestigen dat het afbeeldingsprofiel niet meer wordt toegepast op een map omdat de naam niet langer onder de mapnaam wordt weergegeven.
 
-### Dynamische mediaafbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
+### Dynamic Media-afbeeldingsprofielen uit mappen verwijderen met eigenschappen {#removing-image-profiles-from-folders-via-properties}
 
-1. Tik op het AEM en navigeer **[!UICONTROL Assets]** en vervolgens naar de map waarvan u een afbeeldingsprofiel wilt verwijderen.
+1. Tik op het AEM en navigeer **[!UICONTROL Assets]** naar de map waaruit u een afbeeldingsprofiel wilt verwijderen.
 1. Tik in de map op het vinkje om het te selecteren en tik vervolgens op **[!UICONTROL Properties]**.
-1. Selecteer het **[!UICONTROL Image Profiles]** tabblad.
-1. From the **[!UICONTROL Profile Name]** drop-down list, select **[!UICONTROL None]**, then tap **[!UICONTROL Save & Close]**.
+1. Selecteer het tabblad **[!UICONTROL Image Profiles]**.
+1. Selecteer **[!UICONTROL None]** in de vervolgkeuzelijst **[!UICONTROL Profile Name]** en tik **[!UICONTROL Save & Close]**.
 
    Mappen waaraan al een profiel is toegewezen, worden aangegeven door de naam van het profiel direct onder de mapnaam weer te geven.
