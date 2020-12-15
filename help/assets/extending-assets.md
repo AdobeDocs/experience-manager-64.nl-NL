@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Elementen aanpassen en uitbreiden {#customizing-and-extending-assets}
+# Elementen {#customizing-and-extending-assets} aanpassen en uitbreiden
 
 De Asset Editor is het belangrijkste toegangspunt dat gebruikers van een Adobe Enterprise Manager-website (AEM) gebruiken om de digitale middelen in uw opslagplaats te zoeken, weer te geven en te manipuleren.
 
@@ -26,7 +26,7 @@ De volgende aspecten van de functionaliteit kunnen worden aangepast of verbeterd
 * [Ontwikkeling van proxy&#39;s](proxy.md)
 * [Beste praktijken voor het Vormen ImageMagick](best-practices-for-imagemagick.md)
 
-## De vormgeving aanpassen {#customizing-the-look-and-feel}
+## De weergave en weergave aanpassen {#customizing-the-look-and-feel}
 
 De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepast:
 
@@ -36,6 +36,6 @@ De volgende aspecten van de vormgeving van de Asset Editor kunnen worden aangepa
 
 ## Uitvoeringen aanpassen {#customizing-renditions}
 
-In AEM Assets-terminologie is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan een kleurenafbeelding met volledige kleuren bijvoorbeeld een uitvoering in de oorspronkelijke grootte hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
+In AEM Assets-terminologie is een uitvoering de vorm waarin een actief wordt gepresenteerd. In het algemeen kan een bepaald actief meerdere uitvoeringen hebben. Zo kan de oorspronkelijke grootte van een kleurenafbeelding bijvoorbeeld één uitvoering hebben, een andere bij een verkleind formaat en een andere afbeelding die wordt verkleind en omgezet in grijswaarden.
 
 De uitvoeringen waarin een bepaald element beschikbaar is, kunnen worden aangepast en nieuwe uitvoeringen worden gemaakt.
