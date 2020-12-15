@@ -1,6 +1,6 @@
 ---
-title: Voorinstellingen van de dynamische mediasviewer toepassen
-seo-title: Voorinstellingen van de dynamische mediasviewer toepassen
+title: Voorinstellingen voor Dynamic Media-viewers toepassen
+seo-title: Voorinstellingen voor Dynamic Media-viewers toepassen
 description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media
 seo-description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media
 uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
@@ -18,18 +18,18 @@ ht-degree: 22%
 ---
 
 
-# Applying Dynamic Media viewer presets {#applying-viewer-presets}
+# Voorinstellingen voor Dynamic Media-viewers {#applying-viewer-presets} toepassen
 
 Een voorinstelling voor de viewer is een verzameling instellingen die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven. U kunt alle viewervoorinstellingen die door de beheerder zijn gemaakt, toepassen op een element.
 
-Zie Voorinstellingen voor viewers [beheren als u een beheerder bent en viewervoorinstellingen](managing-viewer-presets.md)moet beheren, maken, sorteren en verwijderen.
+Als u een beheerder bent en viewervoorinstellingen moet beheren, maken, sorteren en verwijderen, raadpleegt u [Viewer-voorinstellingen beheren](managing-viewer-presets.md).
 
-Zie ook Voorinstellingen voor [viewers](managing-viewer-presets.md#publishing-viewer-presets)publiceren.
+Zie ook [Voorinstellingen van viewer publiceren](managing-viewer-presets.md#publishing-viewer-presets).
 
 Het is mogelijk dat u geen viewervoorinstellingen hoeft te publiceren, afhankelijk van de publicatiemodus die u gebruikt.
-Voor problemen met viewervoorinstellingen raadpleegt u [Problemen met dynamische media oplossen - Scene7](troubleshoot-dms7.md#viewers).
+Eventuele problemen met viewervoorinstellingen, zie [Problemen met Dynamic Media oplossen - Scene7](troubleshoot-dms7.md#viewers).
 
-## Een voorinstelling voor een dynamische mediasviewer toepassen op een element {#applying-a-viewer-preset-to-an-asset}
+## Een Dynamic Media-viewervoorinstelling toepassen op een element {#applying-a-viewer-preset-to-an-asset}
 
 1. Open de asset en tik in het linkerspoor op **[!UICONTROL Viewers]**.
 
@@ -38,8 +38,8 @@ Voor problemen met viewervoorinstellingen raadpleegt u [Problemen met dynamische
    * De knoppen **[!UICONTROL URL]** en **[!UICONTROL Embed]** worden weergegeven nadat u een viewervoorinstelling hebt geselecteerd.
    * Het systeem bevat een groot aantal viewervoorinstellingen wanneer u Viewers selecteert in **[!UICONTROL Detail View]** van een asset. U kunt het aantal weergegeven voorinstellingen verhogen. Zie [Het aantal weergegeven viewervoorinstellingen verhogen](managing-viewer-presets.md).
 
-1. Selecteer een viewer in het linkerdeelvenster om deze toe te passen op het element, zoals in het rechterdeelvenster wordt weergegeven. U kunt de URL ook [kopiëren en met andere gebruikers delen](linking-urls-to-yourwebapplication.md) .
+1. Selecteer een viewer in het linkerdeelvenster om deze toe te passen op het element, zoals in het rechterdeelvenster wordt weergegeven. U kunt de URL ook [kopiëren om](linking-urls-to-yourwebapplication.md) met andere gebruikers te delen.
 
-## URL&#39;s met voorinstellingen van viewer ophalen {#obtaining-viewer-preset-urls}
+## URL&#39;s met voorinstellingen van viewer {#obtaining-viewer-preset-urls} ophalen
 
-Zie URL&#39;s [koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md)voor informatie over de URL&#39;s voor voorinstellingen van de viewer.
+Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md) om de URL&#39;s voor voorinstellingen van de viewer op te halen.
