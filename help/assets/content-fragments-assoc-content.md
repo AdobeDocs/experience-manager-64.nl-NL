@@ -22,23 +22,23 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor bepaalde functionaliteit voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md) vereist.
 
-Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit door een reeks elementen [beschikbaar te stellen die u kunt gebruiken wanneer u het inhoudsfragment op een pagina](/help/sites-authoring/content-fragments.md#using-associated-content)gebruikt, en tegelijk de tijd te verkorten die nodig is om naar het juiste element te zoeken.
+Gekoppelde inhoud biedt de verbinding, zodat elementen (d.w.z.) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd. Dit biedt flexibiliteit door [een reeks elementen te bieden die u kunt openen bij het gebruik van het inhoudsfragment op een pagina](/help/sites-authoring/content-fragments.md#using-associated-content), en tegelijkertijd de tijd te verminderen die nodig is om te zoeken naar het juiste element.
 
-## Gekoppelde inhoud toevoegen {#adding-associated-content}
+## Gekoppelde inhoud {#adding-associated-content} toevoegen
 
 >[!NOTE]
 >
 >Er zijn verschillende methoden om [visuele elementen (bijvoorbeeld afbeeldingen)](content-fragments.md#fragments-with-visual-assets) aan het fragment en/of de pagina toe te voegen.
 
-Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan een verzameling](managing-collections-touch-ui.md#adding-assets-to-a-collection). Zodra dat gedaan is kunt u:
+Om de vereniging te maken moet u eerst [uw media activa aan een inzameling ](managing-collections-touch-ui.md#adding-assets-to-a-collection) toevoegen. Zodra dat gedaan is kunt u:
 
-1. Open your fragment and select **[!UICONTROL Associated Content]** from the side panel.
+1. Open het fragment en selecteer **[!UICONTROL Associated Content]** in het zijpaneel.
 
    ![chlimage_1-207](assets/chlimage_1-207.png)
 
-1. Select **[!UICONTROL Associate Content]** or **[!UICONTROL Associate Collection]** (as appropriate, depending on whether any collections have already been associated or not).
+1. Selecteer **[!UICONTROL Associate Content]** of **[!UICONTROL Associate Collection]** (al naargelang het geval, afhankelijk van het feit of verzamelingen al zijn gekoppeld of niet).
 1. Selecteer de gewenste verzameling.
 
    U kunt optioneel het fragment zelf toevoegen aan de geselecteerde verzameling. dit is het volgen van hulpmiddelen .
@@ -53,8 +53,8 @@ Als u de koppeling wilt maken, moet u eerst uw media-elementen [toevoegen aan ee
 
 Nadat u een verzameling hebt gekoppeld, kunt u:
 
-* **Verwijder** de koppeling.
-* **Voeg elementen** toe aan de verzameling.
+* **De koppeling** verwijderen.
+* **Voeg** Elementen aan de inzameling toe.
 * Selecteer een element voor verdere actie.
 * Bewerk het element.
 
