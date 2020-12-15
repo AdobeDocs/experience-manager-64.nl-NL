@@ -14,7 +14,7 @@ ht-degree: 0%
 ---
 
 
-# Hulplijn voor middelengrootte {#assets-sizing-guide}
+# Handleiding {#assets-sizing-guide} voor grootte van elementen
 
 Wanneer het rangschikken van het milieu voor een implementatie van de Middelen van Adobe Experience Manager (AEM), is het belangrijk om ervoor te zorgen dat er voldoende middelen in termen van schijf, cpu, geheugen, IO, en netwerkproductie beschikbaar zijn. Als u veel van deze bronnen wilt vergroten, moet u weten hoeveel elementen in het systeem worden geladen. Als er geen betere maateenheid beschikbaar is, kunt u de grootte van de bestaande bibliotheek delen door de leeftijd van de bibliotheek om de snelheid te vinden waarmee elementen worden gemaakt.
 
@@ -33,7 +33,7 @@ Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige
 1. Bepaal de grootte en het aantal elementen dat in het systeem wordt geladen.
 1. Hiermee ontvangt u een representatieve steekproef van de elementen die in AEM moeten worden geüpload. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
-1. Creeer de vertoningen in AEM gebruikend de toepassingen van ImageMagick of van de Creative Cloud van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Scene7 implementeren, kunt u het binaire bestand IC gebruiken om de PTIFF-uitvoeringen te genereren die in AEM moeten worden opgeslagen.
+1. Creeer de vertoningen in AEM gebruikend de toepassingen van ImageMagick of van de Creative Cloud van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Scene7 implementeren, kunt u de binaire IC gebruiken om de PTIFF-uitvoeringen te genereren die in AEM moeten worden opgeslagen.
 1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen. Zie de onlinedocumentatie over het genereren van pagina&#39;s met subelementen op basis van InDesign-bestanden of PNG-/PDF-bestanden op basis van Illustrator-lagen.
 1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor van de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
@@ -60,15 +60,15 @@ De voorbeeldgegevens die in het gereedschap zijn ingevuld, tonen aan hoe belangr
 
 Voor grote datastores, kunt u gedeelde datastore of door een gedeelde dossierdatastore op een netwerk in bijlage aandrijving of door een S3 datastore uitvoeren. In dit geval hoeft in afzonderlijke gevallen geen kopie van de binaire bestanden te worden bewaard. Bovendien vergemakkelijkt een gedeelde datastore binair-geen replicatie en helpt de bandbreedte verminderen die wordt gebruikt om activa te herhalen om milieu&#39;s of het ontladen instanties te publiceren.
 
-#### Gevallen gebruiken {#use-cases}
+#### Gevallen {#use-cases} gebruiken
 
 De datastore kan tussen een primaire en reserve auteursinstantie worden gedeeld om de hoeveelheid tijd te minimaliseren die het vergt om de reserve instantie met veranderingen bij te werken die in de primaire instantie worden aangebracht. Adobe raadt aan de datastore te delen tussen een instantie van de primaire auteur en instanties van de offload-auteur om de overhead bij het offloaden van de workflow te verminderen. U kunt datastore tussen de auteur ook delen en instanties publiceren om het verkeer tijdens replicatie te minimaliseren.
 
-#### Nadelen {#drawbacks}
+#### Terugbetalingen {#drawbacks}
 
 Door sommige valkuilen wordt het delen van een datastore niet in alle gevallen aanbevolen.
 
-#### Eén foutpunt {#single-point-of-failure}
+#### Enkel punt van mislukking {#single-point-of-failure}
 
 Met een gedeelde datastore introduceert u één foutpunt in een infrastructuur. Overweeg een scenario waarin uw systeem één auteur en twee publiceer instanties heeft, elk met hun eigen datastore. Als één van hen crasht, kunnen de andere twee nog lopen. Nochtans, als datastore wordt gedeeld, kan één enkele schijfmislukking de volledige infrastructuur onderdrukken. Zorg daarom dat u een back-up van de gedeelde datastore bijhoudt vanaf waar u de datastore snel kunt herstellen.
 
@@ -88,7 +88,7 @@ Een gedeelde datastore vereist dat de binaire getallen op een netwerk-opgezette 
 
 De latentie in S3 implementaties wordt geïntroduceerd door de achtergrond schrijvend draden. Bij de back-upprocedures moet rekening worden gehouden met deze latentie en eventuele ontlaadprocedures. Het S3-element mag niet aanwezig zijn in S3 wanneer een offloadtaak begint. Bovendien kunnen de indexen van Lucene onvolledig blijven wanneer het maken van een steun. Het is van toepassing op elk tijdgevoelig dossier dat aan S3 datastore wordt geschreven en van een andere instantie wordt betreden.
 
-### Node Store/Document Store {#node-store-document-store}
+### Knooppuntarchief/Document Store {#node-store-document-store}
 
 Het is moeilijk om exacte cijfers voor de grootte van een NodeStore of DocumentStore te bepalen vanwege de middelen die door het volgende worden verbruikt:
 
@@ -105,7 +105,7 @@ Voor de opslagplaats, gebruik SSDs of schijven met een IOPS niveau groter dan 30
 
 ## Netwerk {#network}
 
-AEM Assets heeft een aantal gebruiksgevallen die netwerkprestaties belangrijker maken dan bij veel van onze AEM projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methodologie om het knooppunt in de netwerkverbinding van een gebruiker te bepalen aan AEM bij de overwegingen van [AEM Activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](assets-network-considerations.md).
+AEM Assets heeft een aantal gebruiksgevallen die netwerkprestaties belangrijker maken dan bij veel van onze AEM projecten. Een klant kan een snelle server hebben, maar als de netwerkverbinding niet groot genoeg is om de lading van de gebruikers te steunen die activa van het systeem uploaden en downloaden, dan zal het nog langzaam lijken. Er is een goede methode om het onderdrukkingspunt in de netwerkverbinding van een gebruiker te bepalen om bij [AEM overwegingen van Activa voor gebruikerservaring, instantie het rangschikken, werkschemaevaluatie, en netwerktopologie](assets-network-considerations.md) te AEM.
 
 ## WebDAV {#webdav}
 
@@ -121,7 +121,7 @@ Adobe heeft de systeemprestaties getest met WebDAV op OS X om deze inefficiënti
 
 Tijdens het analyseren van de gemiddelde opslagtijd voor bestanden via WebDAV werd vastgesteld dat de prestaties aanzienlijk toenemen naarmate de bandbreedte toeneemt tot het niveau van 5-10 Mbps. Daarom adviseert Adobe dat elke gebruiker die tot het systeem gelijktijdig toegang heeft minstens 10Mbps van uploadsnelheid en 5-10Mbps van bandbreedte zou moeten hebben.
 
-Zie [Problemen oplossen AEM bureaubladtoepassing](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html)voor meer informatie.
+Zie [Problemen oplossen AEM bureaubladtoepassing](https://helpx.adobe.com/experience-manager/kb/troubleshooting-companion-app.html) voor meer informatie.
 
 ## Beperkingen {#limitations}
 
@@ -137,7 +137,7 @@ Bovendien kunt u het bezit van de drempelgrootte van de `com.day.cq.dam.commons.
 
 While the limit for the number of nodes in a repository has not been determined, assuming each asset generates roughly 30 nodes, putting the 8 million asset test at 240 million nodes from the assets alone. This does not include audit logs, archived workflows, or versions. -->
 
-De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de opslagplaats problemen door groot aantal knopen lang alvorens de datastore grens te bereiken ontmoet.
+De limiet voor het aantal bestanden dat in een datastore kan bestaan, kan 2,1 miljard zijn vanwege bestandssysteembeperkingen. Het is waarschijnlijk dat de gegevensopslagruimte problemen tegenkomt vanwege een groot aantal knooppunten lang voordat de datastore-limiet wordt bereikt.
 
 Gebruik de Camera Raw bibliotheek als de uitvoeringen onjuist zijn gegenereerd. In dit geval mag de langste zijde van de afbeelding echter niet groter zijn dan 65000 pixels. Bovendien mag de afbeelding niet meer dan 512 MP (512 &amp;ast) bevatten. 1024 &amp;ast; 1024 pixels)&quot;. *De omvang van het actief is onevenredig*.
 
@@ -145,4 +145,4 @@ Het is moeilijk nauwkeurig de grootte te schatten van het TIF dossier gesteund u
 
 ## Grootte van activa {#size-of-assets}
 
-Standaard kunt AEM elementen van maximaal 2 GB uploaden. Zie [Configuratie voor het uploaden van zeer grote assets](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb)voor het uploaden van zeer grote assets in AEM.
+Standaard kunt AEM elementen van maximaal 2 GB uploaden. Zie [Configuratie voor het uploaden van zeer grote elementen](managing-video-assets.md#configuration-to-upload-video-assets-that-are-larger-than-gb) voor informatie over het uploaden van AEM.
