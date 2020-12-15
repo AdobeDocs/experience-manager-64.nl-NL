@@ -39,15 +39,15 @@ De volgende gebeurtenissen kunnen worden geconfigureerd om te worden opgenomen:
 * Submiddel bijgewerkt (SUBASSET_UPDATED)
 * Subelement verwijderd (SUBASSET_REMOVED)
 
-## AEM Assets Events-opname configureren {#configuring-aem-assets-events-recording}
+## AEM Assets Events-opname {#configuring-aem-assets-events-recording} configureren
 
 De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de afstemming van de AEM Assets-gebeurtenisrecorder. Ga als volgt te werk om de AEM Assets Event Recorder te configureren:
 
-1. Navigate to the **[!UICONTROL Web console]**
+1. Navigeer naar **[!UICONTROL Web console]**
 
 1. Klik op **[!UICONTROL Configuration]**.
 
-1. Dubbelklik **[!UICONTROL Day CQ DAM Event Recorder]**.
+1. Dubbelklik op **[!UICONTROL Day CQ DAM Event Recorder]**.
 
 1. Vinkje **[!UICONTROL Enables this service]**.
 
@@ -55,6 +55,6 @@ De [webconsole](/help/sites-deploying/configuring-osgi.md) biedt toegang tot de 
 
 1. Klik op **[!UICONTROL Save]**.
 
-## Opgenomen gebeurtenissen lezen {#reading-recorded-events}
+## Opgenomen gebeurtenissen {#reading-recorded-events} lezen
 
-De opgenomen gebeurtenissen worden opgeslagen als activiteiten. U kunt deze programmatisch lezen met de [ActivityManager-API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html).
+De opgenomen gebeurtenissen worden opgeslagen als activiteiten. U kunt hen programmatically lezen door [ActivityManager API](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/activitystreams/ActivityManager.html) te gebruiken.
