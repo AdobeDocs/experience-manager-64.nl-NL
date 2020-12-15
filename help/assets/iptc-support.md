@@ -22,8 +22,8 @@ In het standaardmetagegevensschema voor elementen zijn nu de IPTC Core- en IPTC-
 De pagina Eigenschappen voor elementen bevat nu aparte tabbladen waarmee de metagegevens voor IPTC Core- en IPTC-extensies in bewerkbare velden worden weergegeven.
 
 1. Selecteer een afbeelding in de gebruikersinterface Elementen.
-1. Klik of tik op het **[!UICONTROL Properties]** pictogram op de werkbalk.
-1. Klik/tik op het **[!UICONTROL IPTC]** tabblad op de pagina Eigenschappen om IPTC-metagegevens voor het element weer te geven.
+1. Klik of tik **[!UICONTROL Properties]** pictogram van de toolbar.
+1. Klik/tik op het tabblad **[!UICONTROL IPTC]** op de pagina Eigenschappen om IPTC-metagegevens voor het element weer te geven.
 1. Bewerk indien nodig de IPTC-metagegevenseigenschappen.
 
    ![iptc_tab](assets/iptc_tab.png)
@@ -44,7 +44,7 @@ Deze eigenschap is momenteel echter niet geïndexeerd om conflicten met aangepas
 
 ## Trefwoordondersteuning {#keyword-support}
 
-Op het **[!UICONTROL IPTC]** tabblad Eigenschappen van de pagina Eigenschappen worden ook trefwoorden weergegeven die via Adobe Bridge en andere Creative Apps aan elementen zijn toegevoegd. U kunt deze trefwoorden ook bewerken en meer trefwoorden toevoegen vanaf het **[!UICONTROL IPTC]** tabblad.
+Op het tabblad **[!UICONTROL IPTC]** van de pagina Eigenschappen worden ook trefwoorden weergegeven die via Adobe Bridge en andere Creative Apps aan elementen zijn toegevoegd. U kunt deze trefwoorden ook bewerken en meer trefwoorden toevoegen op het tabblad **[!UICONTROL IPTC]**.
 
 ![keywords](assets/keywords.png)
 
