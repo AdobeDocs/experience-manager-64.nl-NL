@@ -25,16 +25,16 @@ Als u verdere wijzigingen in de originele inzameling in AEM Assets aanbrengt, wo
 
 ## Een verzameling publiceren naar Brand Portal {#publish-a-collection-to-brand-portal}
 
-1. Tik in de gebruikersinterface van AEM Assets op het AEM. Ga vervolgens naar **[!UICONTROL Assets > Collections]** de **[!UICONTROL Navigation]** pagina.
+1. Tik in de gebruikersinterface van AEM Assets op het AEM. Ga vervolgens naar **[!UICONTROL Assets > Collections]** op de pagina **[!UICONTROL Navigation]**.
 2. Van de console van Inzamelingen, selecteer de inzameling u aan het Portaal van de Merk wilt publiceren.
 
    ![select_collection](assets/select_collection.png)
 
-3. From the toolbar, tap/click **[!UICONTROL Publish to Brand Portal]**.
+3. Tik/klik op **[!UICONTROL Publish to Brand Portal]** op de werkbalk.
 
    ![publish_to_bp_icon](assets/publish_to_bp_icon.png)
 
-4. In the confirmation dialog, tap/click **[!UICONTROL Publish]**.
+4. Tik/klik op **[!UICONTROL Publish]** in het bevestigingsvenster.
 5. Sluit het bevestigingsbericht.
 6. Meld u als beheerder aan bij Brand Portal. De gepubliceerde verzameling is beschikbaar in de Collections-console.
 
@@ -48,9 +48,9 @@ U kunt de publicatie van verzamelingen die u publiceert van AEM Assets naar Bran
 
    ![select_collection-1](assets/select_collection-1.png)
 
-2. Tik op of klik op het **[!UICONTROL Remove from Brand Portal]** pictogram op de werkbalk.
+2. Tik op of klik op het pictogram **[!UICONTROL Remove from Brand Portal]** op de werkbalk.
 
    ![remove_from_bp_icon](assets/remove_from_bp_icon.png)
 
-3. In the dialog, tap/click **[!UICONTROL Unpublish]**.
+3. Tik/klik op **[!UICONTROL Unpublish]** in het dialoogvenster.
 4. Sluit het bevestigingsbericht. De verzameling wordt verwijderd uit de Brand Portal-interface.
