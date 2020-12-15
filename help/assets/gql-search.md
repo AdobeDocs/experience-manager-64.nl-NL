@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# GQL Full-text zoeken {#gql-full-text-search}
+# GQL full-text zoeken {#gql-full-text-search}
 
 Ontdek de GQL-functie voor full-text zoeken in AEM Assets. Gebruik dit besturingselement om te zoeken naar elementen op basis van specifieke metagegevens, zoals titel, beschrijving en naam van de auteur.
 
@@ -21,14 +21,14 @@ Als u naar een element wilt zoeken op basis van de metagegevens, bijvoorbeeld de
 
 Als u bijvoorbeeld wilt zoeken naar elementen met de titel &quot;Doel&quot;, voert u de volgende stappen uit:
 
-## Zoeken in middelen {#searching-assets}
+## Elementen zoeken {#searching-assets}
 
-1. Klik of tik op het **[!UICONTROL Search]** pictogram op de werkbalk van de gebruikersinterface Elementen om het vak Zoeken weer te geven.
+1. Klik of tik op het pictogram **[!UICONTROL Search]** op de werkbalk van de gebruikersinterface Elementen om het vak Onderzoek weer te geven.
 
    ![](assets/do-not-localize/chlimage_1.png)
 
 1. Met de curseur in het vakje van het Onderzoek, druk binnengaan.
-1. Klik of tik op het GlobalNav-pictogram om het **[!UICONTROL Filters]** deelvenster weer te geven.
+1. Klik of tik op het GlobalNav-pictogram om het **[!UICONTROL Filters]**-deelvenster weer te geven.
 1. Geef in het vak Universeel zoeken de waarde &quot;Doel&quot; op. Als u de zoekopdracht wilt beperken tot een specifieke map, klikt of tikt u op het pictogram Bladeren in het deelvenster Filters en selecteert u de map. In dit geval wordt alleen gezocht naar de map en de submappen eronder.
 
    >[!NOTE]
@@ -119,16 +119,16 @@ titel:&quot;Vergadering&quot;;
 
 Het zoeken naar volledige tekst ondersteunt ook operatoren zoals -, ^, enzovoort. Als u deze letters wilt doorzoeken als letterlijke tekenreeksen, plaatst u de zoekexpressie tussen dubbele aanhalingstekens. Gebruik bijvoorbeeld &quot;Notebook - Beauty&quot; in plaats van &quot;Notebook - Beauty&quot;.
 
-## Zoekopdracht verhogen {#boosting-search}
+## Zoekopdracht opvoeren {#boosting-search}
 
 U kunt de relevantie van trefwoorden voor bepaalde elementen verbeteren om zoekopdrachten op basis van trefwoorden te stimuleren. Met andere woorden, de afbeeldingen waarvoor u specifieke trefwoorden promoot, worden boven aan de zoekresultaten weergegeven wanneer u op basis van deze trefwoorden zoekt.
 
 1. Open vanuit de interface Elementen de pagina met eigenschappen voor het element waarvoor u een trefwoord wilt opwaarderen.
-1. Schakel over naar het **[!UICONTROL Advanced]** tabblad en klik/tik **[!UICONTROL Add]** onder **[!UICONTROL Elevate for search keywords]**.
+1. Schakel over naar het tabblad **[!UICONTROL Advanced]** en klik/tik **[!UICONTROL Add]** onder **[!UICONTROL Elevate for search keywords]**.
 
    ![elevate_for_search](assets/elevate_for_search.png)
 
-1. Geef in het **[!UICONTROL Search Promote]** vak een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik/tik op de afbeelding **[!UICONTROL Add]**. Geef indien nodig meerdere trefwoorden op dezelfde manier op.
+1. Geef in het tekstvak **[!UICONTROL Search Promote]** een trefwoord op waarvoor u de zoekopdracht naar de afbeelding wilt opvoeren en klik/tik **[!UICONTROL Add]**. Geef indien nodig meerdere trefwoorden op dezelfde manier op.
 
    ![add_search_word](assets/add_search_word.png)
 
