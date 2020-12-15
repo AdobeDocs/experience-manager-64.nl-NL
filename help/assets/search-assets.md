@@ -34,7 +34,7 @@ U kunt zoeken op basis van de volgende opties (voorspelling):
 
 U kunt het deelvenster Filters aanpassen en zoekvoorvertoningen toevoegen/verwijderen met behulp van [zoekfacetten](search-facets.md). Voer de volgende stappen uit om het deelvenster Filters weer te geven:
 
-1. Tik in de gebruikersinterface Middelen op of klik op ![search_icon](assets/search_icon.png) op de werkbalk om het vak Onderzoek weer te geven.
+1. Tik in de gebruikersinterface Middelen op ![search_icon](assets/search_icon.png) van de werkbalk om het vak Onderzoek weer te geven.
 1. Voer uw zoekterm in en druk op Enter. U kunt ook op Enter drukken zonder een zoekterm in te voeren. Voer geen spaties voor de regelafstand in anders werkt de zoekopdracht niet.
 
 1. Tik/klik op het pictogram GlobalNav. Het deelvenster Filters wordt weergegeven.
@@ -63,7 +63,7 @@ Op dezelfde manier kunt u bij het zoeken naar documenten de indeling opgeven, bi
 
 ## Zoeken op basis van bestandsgrootte {#search-based-on-file-size}
 
-Gebruik de voorspelling **Bestandsgrootte** om te zoeken naar elementen op basis van hun grootte. U kunt de onder- en bovengrenzen voor het formaatbereik opgeven om de zoekopdracht te beperken. U kunt ook de maateenheid opgeven, bijvoorbeeld Kilobytes, Megabytes, enzovoort.
+Met de voorspelling **Bestandsgrootte** kunt u zoeken naar elementen op basis van hun grootte. U kunt de onder- en bovengrenzen voor het formaatbereik opgeven om de zoekopdracht te beperken. U kunt ook de maateenheid opgeven, bijvoorbeeld Kilobytes, Megabytes, enzovoort.
 
 ![unit_of_measurement](assets/unit_of_measure.png)
 
@@ -79,7 +79,7 @@ U kunt ook de volgende opties gebruiken om een hoger niveau van granulariteit in
 
 ## Zoeken op basis van status {#search-based-on-status}
 
-Gebruik de **statusvoorspelling** om te zoeken naar elementen op basis van verschillende typen status, zoals Publiceren, Goedkeuring, Afhandeling en Verlopen.
+Met de voorspelling **Status** kunt u zoeken naar elementen op basis van verschillende typen status, zoals Publiceren, Goedkeuring, Uitchecken en Verlopen.
 
 ![status](assets/status.png)
 
@@ -91,9 +91,9 @@ Gebruik bij het controleren van de revisiestatus van de middelen de juiste optie
 
 ![goedkeuring](assets/approval.png)
 
-## Zoeken op basis van gegevens over inzichten {#search-based-on-insights-data}
+## Zoeken op basis van gegevens met inzichten {#search-based-on-insights-data}
 
-Gebruik de **Insights** -voorspelling om te zoeken naar middelen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd in de volgende categorieën:
+Met de voorspelling **Insights** kunt u zoeken naar elementen op basis van de gebruiksstatistieken die zijn verkregen van verschillende Creative-apps. Gebruiksgegevens worden gegroepeerd in de volgende categorieën:
 
 * Gebruiksscore
 * Impressies
