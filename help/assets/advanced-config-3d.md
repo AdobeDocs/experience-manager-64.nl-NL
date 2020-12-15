@@ -41,10 +41,10 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
 | Pad | Beschrijving |
 |---|---|
 | `/libs/settings/dam/v3D/assetTypes/*/Conversion` | Hiermee geeft u het bestandstype op voor de tussentijdse 3D-indeling die tijdens de opname wordt gemaakt. Moet leeg zijn voor &#39;fbx&#39;- en &#39;obj&#39;-bestandsindelingen of &#39;fbx&#39; voor indelingen die door Maya zijn ingeschakeld. |
-| `/libs/settings/dam/v3D/assetTypes/*/Enabled` | Ingesteld op true of false om deze vermelding in de **[!UICONTROL assetTypes]** lijst in of uit te schakelen. |
+| `/libs/settings/dam/v3D/assetTypes/*/Enabled` | Ingesteld op true of false om deze vermelding in de lijst **[!UICONTROL assetTypes]** in of uit te schakelen. |
 | `/libs/settings/dam/v3D/assetTypes/*/Extension` | Geef een of meer achtervoegsels of bestandsextensies met komma&#39;s op die aan dit type element moeten worden gekoppeld. |
-| `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | Moet zijn `native` voor FBX- en OBJ-bestandsindelingen en `maya` voor indelingen die door Maya zijn ingeschakeld. |
-| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Geeft het mime-type voor dit elementtype aan. Voor formaten die door Maya worden toegelaten wordt het geadviseerd om te gebruiken `application/x-ext`, waar `ext` is het koord als `Extension` waarde wordt gespecificeerd. |
+| `/libs/settings/dam/v3D/assetTypes/*/IngestRegime` | Moet `native` zijn voor FBX- en OBJ-bestandsindelingen en `maya` voor indelingen die door Maya zijn ingeschakeld. |
+| `/libs/settings/dam/v3D/assetTypes/*/MimeType` | Geeft het mime-type voor dit elementtype aan. Voor formaten die door Maya worden toegelaten wordt het geadviseerd om `application/x-ext` te gebruiken, waar `ext` de koord als `Extension` waarde wordt gespecificeerd. |
 
 ## Ingestieconfiguratie {#ingestion-configuration}
 
@@ -62,7 +62,7 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
   </tr> 
   <tr> 
    <td><p>/libs/settings/dam/v3D/settings/CleupRenderWorkDir</p> </td> 
-   <td>Ingesteld op <strong>false</strong> om tijdelijke bestanden na conversie en rendering in de map MayaWork te behouden. Dit kan handig zijn bij het opsporen van fouten in Maya-conversie en -rendering.</td> 
+   <td>Stel in op <strong>false</strong> om tijdelijke bestanden na conversie en rendering in de map MayaWork te behouden. Dit kan handig zijn bij het opsporen van fouten in Maya-conversie en -rendering.</td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/invokeAnimationOnIngest</td> 
@@ -70,11 +70,11 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/invokeLightMapsOnIngest</td> 
-   <td>Hiermee kunt u bij inname automatisch lichte kaarten maken. Ingesteld op <strong>false</strong> om automatisch maken van een lichtkaart uit te schakelen. dit kan het CPU-verbruik aanzienlijk verlagen ten koste van een lagere kwaliteit voor voorvertonen en renderen met Rapid Refine. Heeft geen invloed op de rendering met Maya.</td> 
+   <td>Hiermee kunt u bij inname automatisch lichte kaarten maken. Stel in op <strong>false</strong> om het automatisch maken van een lichtkaart uit te schakelen. dit kan het CPU-verbruik aanzienlijk verlagen ten koste van een lagere kwaliteit voor voorvertonen en renderen met Rapid Refine. Heeft geen invloed op de rendering met Maya.</td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/settings/gPlaneZero</td> 
-   <td><p>Wanneer ingesteld op <strong>true</strong> (standaard), worden objecten indien nodig verticaal verplaatst om ervoor te zorgen dat alle delen van het object zich boven het grondvlak bevinden (y=0).</p> <p>Als de waarde is ingesteld op <strong>false</strong> (standaard), worden objecten niet verplaatst en kunnen ze gedeeltelijk worden verborgen door het grondvlak van een werkgebied. (Alleen van toepassing op voorvertoning en rendering met Rapid Refine.) Het heeft echter geen invloed op de rendering met Maya. Wanneer deze optie is ingesteld op <strong>true</strong>, kan de verticale positie van objecten in Maya verschillen van de voorvertoning of bij rendering met Rapid Refine.</p> </td> 
+   <td><p>Wanneer ingesteld op <strong>true</strong> (standaardwaarde), worden objecten indien nodig verticaal verplaatst om ervoor te zorgen dat alle delen van het object zich boven het grondvlak bevinden (y=0).</p> <p>Wanneer deze waarde wordt ingesteld op <strong>false</strong> (standaardwaarde), worden objecten niet verplaatst en kunnen ze gedeeltelijk worden verborgen door het grondvlak van een werkgebied. (Alleen van toepassing op voorvertoning en rendering met Rapid Refine.) Het heeft echter geen invloed op de rendering met Maya. Wanneer ingesteld op <strong>true</strong>, kan de verticale positie van objecten in Maya anders zijn dan in de voorvertoning of bij rendering met Rapid Refine.</p> </td> 
   </tr> 
   <tr> 
    <td>/libs/settings/dam/v3D/Paths/magickPath</td> 
@@ -87,7 +87,7 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
  </tbody> 
 </table>
 
-## Cloud Services, configuratie-instellingen {#cloud-services-configuration-settings}
+## Cloud Services configuratie-instellingen {#cloud-services-configuration-settings}
 
 Waarden voor de volgende instellingen worden opgegeven door uw Adobe-accountmanager, -expert of -supportmedewerker.
 
@@ -109,7 +109,7 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
 |---|---|
 | `/libs/settings/dam/v3D/Paths/mayaWorkPath` | De naam en locatie van de werkmap voor Maya-conversie en -rendering. De map wordt automatisch gemaakt als deze niet bestaat. |
 | `/libs/settings/dam/v3D/Paths/maxWorkPath` | Naam en locatie van de werkmap voor maximale 3ds-conversie. De map wordt automatisch gemaakt als deze niet bestaat. |
-| `/libs/settings/dam/v3D/settings/debugNative` | Ingesteld op **[!UICONTROL true]** om het maken van foutopsporingsinformatie tijdens formaatomzetting en rendering met de RapidRefine-renderer mogelijk te maken. |
+| `/libs/settings/dam/v3D/settings/debugNative` | Stel in op **[!UICONTROL true]** om het maken van foutopsporingsgegevens tijdens de conversie en rendering van indelingen met de RapidRefine-renderer mogelijk te maken. |
 
 ## Rendererconfiguratie {#renderer-configuration}
 
@@ -117,8 +117,8 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
 
 | **Pad** | **Beschrijving** |
 |---|---|
-| `/libs/settings/dam/v3D/settings/dynamicIBL` | Wanneer deze optie is ingesteld op **[!UICONTROL true]** en vooraf gegenereerde lichtmaps niet beschikbaar zijn (dat wil zeggen invokeLightMapsOnIngest=false), maakt de renderer Rapid Refine tijdens de rendering lichtmaps om de renderkwaliteit te verbeteren. Deze instelling kan de rendertijd aanzienlijk verhogen. Het plaatsen om het gebruik van cpu in dergelijke situaties te **[!UICONTROL false]** minimaliseren maar kan in een lagere renderkwaliteit resulteren. |
-| `/libs/settings/dam/v3D/renderers/*/Enabled` | Ingesteld op **[!UICONTROL true]** of **[!UICONTROL false]** om een renderer in of uit te schakelen. |
+| `/libs/settings/dam/v3D/settings/dynamicIBL` | Wanneer ingesteld op **[!UICONTROL true]** en vooraf gegenereerde lichtmaps niet beschikbaar zijn (dat wil zeggen invokeLightMapsOnIngest=false), maakt de renderer Rapid Refine lichtmaps tijdens rendering om de renderkwaliteit te verbeteren. Deze instelling kan de rendertijd aanzienlijk verhogen. Door de instelling op **[!UICONTROL false]** wordt het CPU-gebruik in dergelijke situaties tot een minimum beperkt, maar kan de renderkwaliteit afnemen. |
+| `/libs/settings/dam/v3D/renderers/*/Enabled` | Stel in op **[!UICONTROL true]** of **[!UICONTROL false]** om respectievelijk een renderer in of uit te schakelen. |
 | `/libs/settings/dam/v3D/renderers/*/Display` | Hiermee kunt u de tekenreeks wijzigen die wordt weergegeven voor een ingeschakelde renderer in de rendererkiezer in het deelvenster Rendering. |
 | `/libs/settings/dam/v3D/renderers/*/MaxCpuPercentage` | Hiermee geeft u op hoeveel CPU&#39;s maximaal worden gebruikt voor het renderen van 3D-scènes. Hogere waarden versnellen de rendering, maar kunnen ertoe leiden dat AEM over het algemeen minder responsief worden. Deze instelling is bij benadering. Dat wil zeggen dat de nauwkeurigheid toeneemt met het aantal beschikbare CPU-cores. |
 
@@ -128,25 +128,25 @@ In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb to
 
 | Pad | Beschrijving |
 |---|---|
-| `/libs/settings/dam/v3D/WebGLSites/autoSpin` | Stel deze optie in op **[!UICONTROL true]** of **[!UICONTROL false]** om automatisch centrifugeren (automatische camera-omdraaiing) bij het laden van de pagina in of uit te schakelen. |
-| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Instellen op opnieuw opstarten van automatisch centrifugeren nadat op deze knop **[!UICONTROL true]** **[!UICONTROL Reset]** is gedrukt. Wordt genegeerd wanneer automatisch draaien is uitgeschakeld. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpin` | Stel in op **[!UICONTROL true]** of **[!UICONTROL false]** om automatisch centrifugeren (automatische camera-omdraaiing) bij het laden van de pagina in of uit te schakelen. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Stel in op **[!UICONTROL true]** om automatisch centrifugeren opnieuw te starten nadat **[!UICONTROL Reset]** is ingedrukt. Wordt genegeerd wanneer automatisch draaien is uitgeschakeld. |
 | `/libs/settings/dam/v3D/WebGLSites/autoSpinSpeed` | Hiermee geeft u de snelheid (omwentelingen per minuut) en de richting van de automatische centrifuge op, met negatieve waarden voor rotatie van rechts naar links en positieve waarden voor rotatie van links naar rechts. |
-| `/libs/settings/dam/v3D/WebGL/continueRotate` | Instellen op **[!UICONTROL false]** uitschakelen van vervolg met geleidelijke vervaging van viewerreacties op aanraak- en muisbewegingen. |
+| `/libs/settings/dam/v3D/WebGL/continueRotate` | Stel in op **[!UICONTROL false]** om het vervolg uit te schakelen met de geleidelijke vervaging van de viewerreacties op aanraak- en muisbewegingen. |
 | `/libs/settings/dam/v3D/WebGL/curtainColor` | Hiermee geeft u de kleur op van het gordijn voor laden dat optioneel de viewport van de voorvertoning van het 3D-element tijdens het laden en initialiseren kan bedekken. R,G,B-waarde, met elke kleurcomponent in het bereik 0 tot en met 255. |
-| `/libs/settings/dam/v3D/WebGL/fadeCurtains` | Wanneer deze optie is ingesteld op **[!UICONTROL true]**, wordt het gordijn voor het laden geleidelijk vervaagd tijdens de laatste onderdelen van de viewerinitialisatie. Wanneer ingesteld op **[!UICONTROL false]**, blijft het gordijn dekkend totdat het laden en initialiseren is voltooid. |
-| `/libs/settings/dam/v3D/WebGL/showCurtains` | Stel deze optie in op **[!UICONTROL true]** of **[!UICONTROL false]** om het gordijn voor het laden van 3D-elementen in of uit te schakelen. |
+| `/libs/settings/dam/v3D/WebGL/fadeCurtains` | Wanneer ingesteld op **[!UICONTROL true]**, vervaagt het gordijn geleidelijk tijdens de laatste onderdelen van de viewerinitialisatie. Wanneer ingesteld op **[!UICONTROL false]**, blijft het gordijn dekkend totdat het laden en initialiseren is voltooid. |
+| `/libs/settings/dam/v3D/WebGL/showCurtains` | Stel in op **[!UICONTROL true]** of **[!UICONTROL false]** om het taakgordijn voor voorvertoning van 3D-elementen in of uit te schakelen. |
 | `/libs/settings/dam/v3D/WebGL/spinHeight` | Wanneer automatisch draaien is ingeschakeld en actief, wordt de verticale positie van de camera automatisch aangepast ten opzichte van de hoogte van het 3D-object. Wanneer deze is ingesteld op 0,5, wordt de camera verticaal op een hoogte van 1/2 van het object geplaatst. Dit betekent dat de horizon verticaal in de viewport moet worden gecentreerd. Bij hogere waarden kijkt de camera omlaag naar het object en wordt de hoogte van de gerenderde horizon verhoogd. Bij lagere waarden kijkt de camera omhoog naar het object en verlaagt de horizon. |
 
-## Instellingen van 3D-sites {#d-sites-component-settings}
+## Instellingen voor 3D-sitecomponenten {#d-sites-component-settings}
 
 In **CRXDE Lite** in AEM (**[!UICONTROL Tools > General > CRXDE Lite]**), heb toegang tot de volgende configuraties:
 
 | Pad | Beschrijving |
 |---|---|
-| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Stel deze optie in op **[!UICONTROL true]** om automatisch centrifugeren (automatische camerabaan) opnieuw te activeren nadat op de thuiscomputer is gedrukt. Wordt genegeerd wanneer automatisch draaien is uitgeschakeld. |
-| `/libs/settings/dam/v3D/WebGLSites/continueRotate` | Instellen op **[!UICONTROL false]** uitschakelen van vervolg met geleidelijke vervaging van viewerreacties op aanraak- en muisbewegingen. |
+| `/libs/settings/dam/v3D/WebGLSites/autoSpinAfterReset` | Stel in op **[!UICONTROL true]** om automatisch centrifugeren (automatische camera-omdraaiing) opnieuw te activeren nadat u op de thuiscomputer hebt gedrukt. Wordt genegeerd wanneer automatisch draaien is uitgeschakeld. |
+| `/libs/settings/dam/v3D/WebGLSites/continueRotate` | Stel in op **[!UICONTROL false]** om het vervolg uit te schakelen met de geleidelijke vervaging van de viewerreacties op aanraak- en muisbewegingen. |
 | `/libs/settings/dam/v3D/WebGLSites/curtainColor` | Hiermee geeft u de kleur op van het gordijn voor laden dat optioneel de viewport van de component 3D-sites tijdens het laden kan bedekken. R,G,B-waarde, met elke kleurcomponent in het bereik 0 tot en met 255. |
-| `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Wanneer deze optie is ingesteld op **[!UICONTROL true]**, vervaagt het gordijn geleidelijk tijdens de laatste onderdelen van de belading en initialisatie. Wanneer ingesteld op **[!UICONTROL false]**, blijft het gordijn dekkend totdat het laden en initialiseren is voltooid. |
-| `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Stel deze optie in op **[!UICONTROL true]** of **[!UICONTROL false]** om het laadgordijn voor de component 3D-sites in of uit te schakelen. |
+| `/libs/settings/dam/v3D/WebGLSites/fadeCurtains` | Wanneer ingesteld op **[!UICONTROL true]**, zal het ladingsgordijn geleidelijk verdwijnen tijdens de laatste delen van lading en initialisering. Wanneer ingesteld op **[!UICONTROL false]**, blijft het gordijn dekkend totdat het laden en initialiseren is voltooid. |
+| `/libs/settings/dam/v3D/WebGLSites/showCurtains` | Stel in op **[!UICONTROL true]** of **[!UICONTROL false]** om het laadgordijn voor de component 3D-sites in of uit te schakelen. |
 | `/libs/settings/dam/v3D/WebGLSites/spinHeight` | Wanneer automatisch draaien is ingeschakeld en actief, wordt de verticale positie van de camera automatisch aangepast ten opzichte van de hoogte van het 3D-object. Wanneer deze is ingesteld op 0,5, wordt de camera verticaal op een hoogte van 1/2 van het object geplaatst. Dit betekent dat de horizon verticaal in de viewport moet worden gecentreerd. Bij hogere waarden kijkt de camera omlaag naar het object en wordt de hoogte van de gerenderde horizon verhoogd. Bij lagere waarden kijkt de camera omhoog naar het object en verlaagt de horizon. |
 
