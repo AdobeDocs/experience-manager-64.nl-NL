@@ -23,7 +23,7 @@ ht-degree: 0%
 1. Maak in Maya een nieuwe, lege scène.
 1. Maak een (tijdelijke) verwijzing naar een representatief model. Zo kunt u de belichting gemakkelijker evalueren, camera&#39;s instellen en de renderer configureren.
 
-1. Voeg lichten toe zoals gewoonlijk. AEM 3D ondersteunt momenteel de volgende typen licht:
+1. Voeg zoals gewoonlijk lichten toe. AEM 3D ondersteunt momenteel de volgende typen licht:
 
    * Gerichte lichten
    * Spotlichten
@@ -45,7 +45,7 @@ ht-degree: 0%
 
    * **[!UICONTROL Common]** tab
 
-      Schakel het **[!UICONTROL Alpha channel (mask)]** selectievakje voor alle renderbare camera&#39;s uit.
+      Schakel het selectievakje **[!UICONTROL Alpha channel (mask)]** voor alle renderbare camera&#39;s uit.
 
    * **[!UICONTROL Quality]** tab
 
@@ -62,10 +62,10 @@ ht-degree: 0%
 1. Sla de scène op en sluit Autodesk Maya af.
 1. Upload de scène in AEM en wacht tot de uploadverwerking is voltooid.
 
-   Zie Elementen [uploaden](managing-assets-touch-ui.md#uploading-assets).
+   Zie [Elementen uploaden](managing-assets-touch-ui.md#uploading-assets).
 
    Als Autodesk® Maya® niet is geconfigureerd op de AEM server, exporteert u een FBX van Maya en uploadt u deze naar AEM.
 
-1. Elementeigenschappen openen in AEM. Stel dit in **[!UICONTROL Title]** op een geschikte tekenreeks die wordt weergegeven in de **[!UICONTROL Stage Selector]** vervolgkeuzelijst. Controleer of dit **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D Stage]**. Opslaan en afsluiten.
+1. Elementeigenschappen openen in AEM. Stel **[!UICONTROL Title]** in op een geschikte tekenreeks die wordt weergegeven in de vervolgkeuzelijst **[!UICONTROL Stage Selector]**. Controleer of **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D Stage]**. Opslaan en afsluiten.
 1. Open een 3D-element, selecteer het nieuwe werkgebied en controleer of het naar behoren wordt weergegeven en weergegeven.
 
