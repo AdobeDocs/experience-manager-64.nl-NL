@@ -21,7 +21,7 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
 
 ## Mappen publiceren naar Brand Portal {#publish-folders-to-brand-portal-1}
 
-1. Houd de muisaanwijzer in de AEM Assets-interface boven de gewenste map en selecteer **[!UICONTROL Publish]** optie in de snelhandelingen.
+1. Houd de muisaanwijzer in de AEM Assets-interface boven de gewenste map en selecteer de optie **[!UICONTROL Publish]** in de snelhandelingen.
 
    U kunt ook de gewenste map selecteren en de volgende stappen volgen.
 
@@ -31,11 +31,11 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
 
    Voer een van de volgende handelingen uit om de geselecteerde mappen naar Brand Portal te publiceren:
 
-   * Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+   * Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Selecteer vervolgens **[!UICONTROL Publish to Brand Portal]** in het menu.
    * Selecteer **[!UICONTROL Manage Publication]** in de werkbalk.
 
-3. Kies vervolgens **[!UICONTROL Action]** de optie **[!UICONTROL Publish to Brand Portal]** en **[!UICONTROL Scheduling]** selecteer **[!UICONTROL Now]**. Tik op **[!UICONTROL Next].**
-4. Bevestig **[!UICONTROL Scope]** binnen uw selectie en tik op **[!UICONTROL Publish to Brand Portal]**.
+3. Selecteer vervolgens **[!UICONTROL Action]** in **[!UICONTROL Publish to Brand Portal]** en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Now]**. Tik op **[!UICONTROL Next].**
+4. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik **[!UICONTROL Publish to Brand Portal]**.
 
    Er verschijnt een bericht waarin wordt aangegeven dat de map in de wachtrij is geplaatst voor publicatie naar Brand Portal. Meld u aan bij de interface Brand Portal om de gepubliceerde map weer te geven.
 
@@ -43,8 +43,8 @@ Als u vervolgens wijzigingen aanbrengt in het oorspronkelijke element of de oors
 
    De workflow voor publiceren naar Brand Portal van mappen met elementen naar een latere datum of tijd plannen:
 
-   1. Als u middelen/mappen hebt geselecteerd om te publiceren, selecteert u deze in de **[!UICONTROL Manage Publication]** werkbalk bovenaan.
-   2. Selecteer op **[!UICONTROL Manage Publication]** de pagina **[!UICONTROL Publish to Brand Portal]** een optie **[!UICONTROL Action]** en selecteer een **[!UICONTROL Later]** optie **[!UICONTROL Scheduling]**.
+   1. Als u middelen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk boven in het scherm.
+   2. Selecteer **[!UICONTROL Manage Publication]** op &lt;a0/> pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
 
       ![publishlaterbp](assets/publishlaterbp.png)
 
@@ -64,15 +64,15 @@ U kunt de publicatie van mappen op Brand Portal snel ongedaan maken of deze late
 
    ![publish2bp-1](assets/publish2bp-1.png)
 
-2. From the toolbar, tap/click **[!UICONTROL Manage Publication]**.
+2. Tik/klik op **[!UICONTROL Manage Publication]** op de werkbalk.
 
 3. **Publiceren via Brand Portal nu ongedaan maken**
 
    U kunt de publicatie van de gewenste map snel ongedaan maken via Brand Portal:
 
-   1. Kies op **[!UICONTROL Manage Publication]** de pagina de optie **[!UICONTROL Action]** Selecteren **[!UICONTROL Unpublish from Brand Portal]** en **[!UICONTROL Scheduling]** Selecteren **[!UICONTROL Now]**.
+   1. Selecteer **[!UICONTROL Unpublish from Brand Portal]** op **[!UICONTROL Manage Publication]** pagina en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Now]** op &lt;a3/> pagina.**[!UICONTROL Action]**
    2. Tik of klik op **[!UICONTROL Next].**
-   3. Bevestig **[!UICONTROL Scope]** binnen uw selectie en tik op **[!UICONTROL Unpublish from Brand Portal]**.
+   3. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik **[!UICONTROL Unpublish from Brand Portal]**.
 
    ![confirm-unpublish](assets/confirm-unpublish.png)
 
@@ -80,10 +80,10 @@ U kunt de publicatie van mappen op Brand Portal snel ongedaan maken of deze late
 
    U kunt als volgt de publicatie van een map van Brand Portal naar een latere datum en tijd plannen:
 
-   1. Kies op **[!UICONTROL Manage Publication]** de pagina de optie **[!UICONTROL Action]** Selecteren **[!UICONTROL Unpublish from Brand Portal]** en **[!UICONTROL Scheduling]** Selecteren **[!UICONTROL Later].**
+   1. Selecteer op **[!UICONTROL Manage Publication]** pagina **[!UICONTROL Action]** **[!UICONTROL Unpublish from Brand Portal]** en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Later].**
    2. Selecteer een **[!UICONTROL Activation date]** en geef de tijd op. Tik op **[!UICONTROL Next]**.
-   3. Bevestig **[!UICONTROL Scope]** binnen uw selectie en tik op **[!UICONTROL Next]**.
-   4. Geef een **[!UICONTROL Workflow title]** onder **[!UICONTROL Workflows]** op. Tik op **[!UICONTROL Unpublish Later].**
+   3. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik **[!UICONTROL Next]**.
+   4. Geef een **[!UICONTROL Workflow title]** op onder **[!UICONTROL Workflows]**. Tik op **[!UICONTROL Unpublish Later].**
 
       ![unpublishworkflows](assets/unpublishworkflows.png)
 
