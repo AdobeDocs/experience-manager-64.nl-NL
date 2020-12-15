@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# AEM Assets versus AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
+# AEM Assets vs. AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
 
 Adobe Experience Manager (AEM) Activa maken integrerend deel uit van het AEM. Deze soepele integratie wordt gezien als een groot voordeel van AEM en zorgt voor consistentie in inhoudsbeheer en hoge productiviteit voor auteurs van inhoud.
 
@@ -30,9 +30,9 @@ De AEM Mediabibliotheek is een aangewezen onderdeel van de AEM WCM-inhoudsopslag
 De unieke functies die alleen beschikbaar zijn voor klanten van AEM Assets zijn:
 
 1. de mogelijkheid om andere metagegevens dan titel, tags en beschrijving te extraheren en te bewerken.
-1. de AEM Assets Admin, beschikbaar bij het welkomstscherm door de tweede knoop naast de `siteadmin`knoop te klikken.
+1. de AEM Assets Admin, beschikbaar bij het welkomstscherm door de tweede knoop naast `siteadmin` te klikken.
 1. Alle workflowstappen met betrekking tot Digital Asset Management, namelijk het opnemen van AEM middelen, het verwijderen van AEM Assets, het afhandelen van AEM Assets-submiddelen, het extraheren van AEM Assets-metagegevens.
-1. bibliotheken, inclusief `dam` pakketruimte.
+1. bibliotheken, inclusief `dam` im-pakketruimte.
 
 Voor het gebruik van deze functies is een geldige AEM Assets-licentie vereist.
 
