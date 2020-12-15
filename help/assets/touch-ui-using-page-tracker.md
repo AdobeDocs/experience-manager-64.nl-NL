@@ -59,7 +59,7 @@ De volgende voorbeeldcode toont hoe een webpagina die zowel de code van Paginanu
 </html>
 ```
 
-## Code Paginanummer toevoegen {#adding-page-tracker-code}
+## Code Paginanummer {#adding-page-tracker-code} toevoegen
 
 U voegt de code van de paginacontracker binnen de kopbalsectie van uw websitecode toe. Het volgende codefragment toont de code van de Tracker van de Pagina inbegrepen in een steekproefWeb-pagina:
 
@@ -78,7 +78,7 @@ U voegt de code van de paginacontracker binnen de kopbalsectie van uw websitecod
  </head>
 ```
 
-## Insluitcode toevoegen {#adding-embed-code}
+## Insluitcode {#adding-embed-code} toevoegen
 
 U voegt de insluitcode toe aan de hoofdtekst van de websitecode. In het volgende codefragment wordt de insluitcode weergegeven die in een voorbeeldwebpagina is opgenomen:
 
