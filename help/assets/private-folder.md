@@ -11,15 +11,15 @@ ht-degree: 6%
 ---
 
 
-# Persoonlijke map delen {#private-folder-sharing}
+# Het delen van de privé omslag {#private-folder-sharing}
 
 In de gebruikersinterface van Adobe Experience Manager (AEM) Assets kunt u een persoonlijke map maken die uitsluitend voor u beschikbaar is. U kunt deze privémap delen met andere gebruikers en hun verschillende rechten toewijzen. Op basis van het machtigingsniveau dat u toewijst, kunnen gebruikers verschillende taken op de map uitvoeren, bijvoorbeeld de middelen in de map weergeven of de elementen bewerken.
 
-1. Tik in de middelenconsole op de werkbalk of klik op **[!UICONTROL Create]** deze knop en kies een optie in het **[!UICONTROL Folder]** menu.
+1. Tik in de middelenconsole op **[!UICONTROL Create]** op de werkbalk en kies **[!UICONTROL Folder]** in het menu.
 
    ![chlimage_1-411](assets/chlimage_1-411.png)
 
-1. Voer in het **[!UICONTROL Add Folder]** dialoogvenster een titel en naam (optioneel) voor de map in en selecteer **[!UICONTROL Private]**.
+1. Voer in het dialoogvenster **[!UICONTROL Add Folder]** een titel en naam (optioneel) voor de map in en selecteer **[!UICONTROL Private]**.
 
    ![chlimage_1-412](assets/chlimage_1-412.png)
 
@@ -35,7 +35,7 @@ In de gebruikersinterface van Adobe Experience Manager (AEM) Assets kunt u een p
    >
    >De map is pas zichtbaar voor andere gebruikers als u deze deelt.
 
-1. In the Folder Prperties page, select a user from the **[!UICONTROL Add User]** list, assign a role to the user on your private folder, and click **[!UICONTROL Add]**.
+1. Selecteer op de pagina Mapeigenschappen een gebruiker in de lijst **[!UICONTROL Add User]**, wijs een rol toe aan de gebruiker in uw persoonlijke map en klik op **[!UICONTROL Add]**.
 
    ![chlimage_1-415](assets/chlimage_1-415.png)
 
