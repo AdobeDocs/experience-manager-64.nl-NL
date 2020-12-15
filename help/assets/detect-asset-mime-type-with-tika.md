@@ -11,20 +11,20 @@ ht-degree: 3%
 ---
 
 
-# Apache Tika gebruiken om MIME-type van digitale elementen te detecteren {#detecting-mime-type-of-assets-using-apache-tika}
+# Apache Tika gebruiken om MIME-type van digitale elementen {#detecting-mime-type-of-assets-using-apache-tika} te detecteren
 
 Adobe Experience Manager (AEM) Assets detecteert doorgaans het MIME-type van elementen die u uploadt vanuit de bestandsextensie. Als u Apache Tika gebruikt om activa te uploaden, ontdekt AEM Assets hun MIME type van de inhoudsstroom tijdens het uploaden verrichting in plaats van de dossieruitbreiding.
 
-Deze functie is standaard uitgeschakeld. Om de eigenschap toe te laten, vorm de dienst van het Type **van MIME van** Dag CQ DAM van de Manager van de Configuratie.
+Deze functie is standaard uitgeschakeld. Om de eigenschap toe te laten, vorm de **Dag CQ DAM Mime Type** dienst van de Manager van de Configuratie.
 
 >[!NOTE]
 >
 >MIME-typedetectie met behulp van de Apache Tika-bibliotheek is een hulpbronnenintensieve bewerking.
 
 1. Ga naar `https://[AEM_server]:[port]/system/console/configMgr` om de Webconsole van de Manager van de Configuratie te openen.
-1. Zoek in de lijst met services het **[!UICONTROL Day CQ DAM Mime Type Service]** pictogram naast het pictogram **[!UICONTROL Edit]** en tik erop om het pictogram in de modus Bewerken te openen.
+1. Zoek in de lijst met services **[!UICONTROL Day CQ DAM Mime Type Service]** en tik op het pictogram **[!UICONTROL Edit]** naast het pictogram om het te openen in de modus Bewerken.
 
-1. Selecteer de **[!UICONTROL Detect MIME from content]** optie om het parseren van geüploade elementen in te schakelen om het MIME-type te bepalen terwijl bestandsextensies worden genegeerd. Deze optie is standaard uitgeschakeld.
+1. Selecteer de optie **[!UICONTROL Detect MIME from content]** om het parseren van geüploade elementen in te schakelen om het MIME-type te bepalen terwijl bestandsextensies worden genegeerd. Deze optie is standaard uitgeschakeld.
 
    ![chlimage_1-333](assets/chlimage_1-333.png)
 
