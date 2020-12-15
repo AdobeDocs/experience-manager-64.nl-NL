@@ -1,6 +1,6 @@
 ---
-title: Publishing Dynamic Media Assets
-seo-title: Dynamische media-elementen publiceren
+title: Dynamic Media-middelen publiceren
+seo-title: Dynamic Media-middelen publiceren
 description: Dynamische media-elementen publiceren
 seo-description: Dynamische media-elementen publiceren
 uuid: b1bee905-86cf-4284-8d4e-067e11557899
@@ -18,11 +18,11 @@ ht-degree: 7%
 ---
 
 
-# Publishing Dynamic Media Assets {#publishing-dynamic-media-assets}
+# Dynamic Media-middelen {#publishing-dynamic-media-assets} publiceren
 
-U publiceert uw dynamische media-elementen door de elementen te selecteren en te tikken **[!UICONTROL Publish]**. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via URL of via insluiten op een webpagina opnemen.
+U publiceert uw Dynamic Media-elementen door de elementen te selecteren en op **[!UICONTROL Publish]** te tikken. Nadat uw dynamische media-elementen zijn gepubliceerd, kunt u ze via URL of via insluiten op een webpagina opnemen.
 
-U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie Dynamische media [configureren - Scene7-modus](config-dms7.md).
+U kunt ook direct elementen publiceren die u uploadt—zonder tussenkomst van de gebruiker. Zie [Dynamic Media configureren - Scene7-modus](config-dms7.md).
 
 In de **[!UICONTROL Card View]** verschijnt een pictogram van een kleine wereldbol direct onder de naam van een asset om aan te geven dat deze is gepubliceerd. In de **[!UICONTROL List View]** geeft een kolom **[!UICONTROL Published]** aan welke assets zijn gepubliceerd en welke niet.
 
@@ -32,9 +32,9 @@ In de **[!UICONTROL Card View]** verschijnt een pictogram van een kleine wereldb
 
 Als u video-elementen direct na het coderen wilt publiceren, moet u ervoor zorgen dat de codering volledig is uitgevoerd. Wanneer video&#39;s nog steeds worden gecodeerd, wordt u via het systeem op de hoogte gebracht van een actieve workflow voor videoverwerking. Wanneer videocodering is voltooid, moet u een voorvertoning van de video-uitvoeringen kunnen bekijken. Op dat moment kunt u de video&#39;s veilig publiceren zonder publicatiefouten te maken.
 
-See also [Linking URLs to your Web Application](linking-urls-to-yourwebapplication.md).
+Zie ook [URLs aan uw Toepassing van het Web verbinden](linking-urls-to-yourwebapplication.md).
 
-Zie ook De video-viewer [insluiten op een webpagina.](embed-code.md)
+Zie ook [De video-viewer insluiten op een webpagina.](embed-code.md)
 
 >[!NOTE]
 >
@@ -45,10 +45,10 @@ Zie ook De video-viewer [insluiten op een webpagina.](embed-code.md)
 
 
 
-Zie Elementen [publiceren voor gedetailleerde informatie over het publiceren van een set of element.](managing-assets-touch-ui.md)
+Zie [Elementen publiceren.](managing-assets-touch-ui.md)
 
-## HTTP/2-levering van Dynamic Media-elementen {#http-delivery-of-dynamic-media-assets}
+## HTTP/2 levering van Dynamic Media-middelen {#http-delivery-of-dynamic-media-assets}
 
-AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze methode van levering verbetert de manier browsers en servers communiceren, die voor betere reactie en ladingstijden van al uw Dynamische activa van Media toestaan.
+AEM ondersteunt nu de levering van alle Dynamic Media-inhoud (afbeeldingen en video) via HTTP/2. Dit wil zeggen dat er een gepubliceerde URL of insluitcode voor de afbeelding of video beschikbaar is om te worden geïntegreerd met elke toepassing die een gehoste element accepteert. Dat gepubliceerde element wordt vervolgens geleverd via het HTTP/2-protocol. Deze leveringsmethode verbetert de manier waarop browsers en servers communiceren, waardoor u betere responstijd en laadtijden voor al uw Dynamic Media-middelen krijgt.
 
 Zie [HTTP/2 levering van inhoud vaak gestelde vragen](/help/sites-administering/scene7-http2faq.md) om meer te leren.
