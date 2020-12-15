@@ -24,21 +24,21 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan ten 
 
 1. Zoek in het vak Universeel zoeken naar elementen op basis van een tag.
 1. Inspect de zoekresultaten om een afbeelding te identificeren die je niet relevant vindt voor je zoekopdracht.
-1. Select the image, and then click/tap the **[!UICONTROL Manage Tags]** icon from the toolbar.
-1. Controleer de tags op de **[!UICONTROL Manage Tags]** pagina. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifieke tag, selecteert u de tag en klikt of tikt u op het **[!UICONTROL Delete]** pictogram op de werkbalk. U kunt ook op het symbool (**[!UICONTROL X]**) naast het label klikken of tikken.
-1. Als u een hogere rangorde aan een tag wilt toewijzen, selecteert u de tag en klikt of tikt u op het **[!UICONTROL Promote]** pictogram op de werkbalk. De tag die u promoot, wordt verplaatst naar de **[!UICONTROL Tags]** sectie.
+1. Selecteer de afbeelding en klik/tik op het pictogram **[!UICONTROL Manage Tags]** op de werkbalk.
+1. Controleer de tags op de pagina **[!UICONTROL Manage Tags]**. Als u niet wilt dat de afbeelding wordt doorzocht op basis van een specifieke tag, selecteert u de tag en klikt of tikt u op het pictogram **[!UICONTROL Delete]** op de werkbalk. U kunt ook op het symbool (**[!UICONTROL X]**) naast het label klikken of tikken.
+1. Als u een hogere rangorde aan een tag wilt toewijzen, selecteert u de tag en klikt of tikt u op het pictogram **[!UICONTROL Promote]** op de werkbalk. De tag die u promoot, wordt verplaatst naar de sectie **[!UICONTROL Tags]**.
 1. Klik of tik op **[!UICONTROL Save]** en klik of tik vervolgens op **[!UICONTROL OK]** om het dialoogvenster Succes te sluiten.
 1. Navigeer naar de pagina met eigenschappen voor de afbeelding. Let erop dat de tag die u hebt bevorderd een grote relevantie krijgt en daarom hoger wordt weergegeven in de zoekresultaten.
 
 ## AEM zoekresultaten begrijpen met slimme tags {#understand-search-results-with-smart-tags}
 
-Standaard combineert AEM zoekopdracht de zoektermen met een `AND` component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR` component toe om te zoeken naar zoektermen in de lijst, worden slimme tags toegepast. For example, consider searching for `woman running`. Elementen met alleen `woman` of alleen `running` trefwoorden in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gelabeld met slimme tags `woman` `running` of met slimme tags, wordt echter weergegeven in een dergelijke zoekopdracht. De zoekresultaten zijn dus een combinatie van:
+Standaard combineert AEM zoekopdracht de zoektermen met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, wordt een extra `OR`-component toegevoegd om een zoekterm in de lijst te zoeken, past u slimme tags toe. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gecodeerd met `woman` of `running` met slimme tags, wordt echter wel weergegeven in een dergelijke zoekquery. De zoekresultaten zijn dus een combinatie van:
 
-* elementen met zowel trefwoorden `woman` als `running` metagegevens.
+* elementen met zowel trefwoorden als `woman` en `running` in de metagegevens.
 * elementen die zijn gelabeld met een van de trefwoorden.
 
 De zoekresultaten die overeenkomen met alle zoektermen in metagegevensvelden worden eerst weergegeven, gevolgd door de zoekresultaten die overeenkomen met een van de zoektermen in de slimme tags. In het bovenstaande voorbeeld is de weergavevolgorde van zoekresultaten bij benadering:
 
-1. komt overeen met `woman running` de waarden in de verschillende metagegevensvelden.
-1. overeenkomende waarden `woman running` in slimme tags.
-1. overeenkomende met `woman` of van `running` in slimme tags.
+1. overeenkomend met `woman running` in de verschillende metagegevensvelden.
+1. overeenkomsten van `woman running` in slimme markeringen.
+1. overeenkomende met `woman` of `running` in slimme tags.
