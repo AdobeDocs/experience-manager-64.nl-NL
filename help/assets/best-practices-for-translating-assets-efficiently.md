@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# Aanbevolen procedures om middelen efficiënt te vertalen {#best-practices-for-translating-assets-efficiently}
+# Aanbevolen procedures om elementen efficiënt te vertalen {#best-practices-for-translating-assets-efficiently}
 
-Adobe Experience Manager (AEM)-middelen ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie [Meertalige elementen](multilingual-assets.md)voor meer informatie.
+Adobe Experience Manager (AEM)-middelen ondersteunen meertalige workflows om binaire gegevens, metagegevens en tags voor digitale middelen naar meerdere landinstellingen te vertalen en de vertaalde middelen te beheren. Zie [Meertalige elementen](multilingual-assets.md) voor meer informatie.
 
 Voor efficiënt beheer van middelen om ervoor te zorgen dat verschillende vertaalde versies gesynchroniseerd blijven, creeer [taalexemplaren](preparing-assets-for-translation.md) van activa alvorens vertaalwerkschema&#39;s in werking te stellen.
 
@@ -32,18 +32,18 @@ U kunt ook enkele configuratiewijzigingen aanbrengen in een aantal workflows en 
    * [Bestandsgegevensopslag instellen](/help/sites-deploying/data-store-config.md)
    * [Amazon S3 Data Store instellen](/help/sites-deploying/data-store-config.md)
 
-1. De [DAM MetaData-terugschrijfworkflow](/help/sites-administering/workflow-offloader.md#disable-offloading) uitschakelen
+1. [DAM MetaData Writeback](/help/sites-administering/workflow-offloader.md#disable-offloading)-workflow uitschakelen
 
-   Zoals de naam suggereert, worden de metagegevens in de terugschrijfworkflow voor *DAM-metagegevens* opnieuw naar het binaire bestand geschreven. Omdat de metagegevens na de vertaling veranderen, wordt bij het terugschrijven naar het binaire bestand een andere binaire waarde voor een taalkopie gegenereerd.
+   Zoals de naam suggereert, worden de metagegevens in de *DAM-metagegevensterugdraaiworkflow* opnieuw genoteerd naar het binaire bestand. Omdat de metagegevens na de vertaling veranderen, wordt bij het terugschrijven naar het binaire bestand een andere binaire waarde voor een taalkopie gegenereerd.
 
    >[!NOTE]
    >
-   >Als u de *DAM MetaData-terugschrijfworkflow* uitschakelt, worden XMP metagegevens teruggezet op binaire elementen. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
+   >Als u de *DAM MetaData Writeback*-workflow uitschakelt, wordt XMP terugschrijven van metagegevens op binaire elementen uitgeschakeld. Daarom worden toekomstige wijzigingen in metagegevens niet meer opgeslagen in de elementen. Evalueer de gevolgen voordat u deze workflow uitschakelt.
 
-1. Schakel de workflow *Laatste gewijzigde datum* instellen in.
+1. Schakel de *Laatst gewijzigde datum instellen*-workflow in.
 
-   De *DAM-workflow MetaData Writeback* configureert de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, kan AEM Assets de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de workflow Laatste gewijzigde datum ** instellen in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
+   Met de *DAM MetaData Writeback*-workflow configureert u de laatste gewijzigde datum voor een element. Omdat u deze workflow in stap 2 uitschakelt, kan AEM Assets de laatste gewijzigde datum van de elementen niet meer up-to-date houden. Schakel daarom de *Laatste gewijzigde datum instellen*-workflow in om ervoor te zorgen dat de laatste gewijzigde datums van de elementen up-to-date zijn. Elementen met verouderde datums die als laatste zijn gewijzigd, kunnen fouten veroorzaken.
 
-1. [Configureer het vertaalintegratieframework](/help/sites-administering/tc-tic.md) om te stoppen met het vertalen van binaire elementen. Schakel de optie Vertaalactiva uit onder het tabblad Elementen om de vertaling van binaire middelen te stoppen.
-1. Metagegevens/tags van elementen vertalen met behulp van [meertalige bedrijfsmiddelenworkflows](multilingual-assets.md).
+1. [Configureer het ](/help/sites-administering/tc-tic.md) framework voor vertaalintegratie om het vertalen van binaire bestanden met middelen te stoppen. Schakel de optie Vertaalactiva uit onder het tabblad Elementen om de vertaling van binaire middelen te stoppen.
+1. Metagegevens/tags van elementen vertalen met [Workflows van meerdere bedrijfsmiddelen](multilingual-assets.md).
 
