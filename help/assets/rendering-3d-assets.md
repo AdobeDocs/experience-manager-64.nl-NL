@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # 3D-elementen renderen {#rendering-d-assets}
 
-U kunt 3D-elementen renderen die u hebt gemanipuleerd en in AEM hebt opgeslagen om 2D-afbeeldingen te maken die u kunt gebruiken op webinhoudpagina&#39;s.
+U kunt 3D-elementen renderen die u hebt gemanipuleerd en opgeslagen in AEM om 2D-afbeeldingen te maken voor gebruik op webinhoudpagina&#39;s.
 
-Zie De pagina-inhoud [bewerken](/help/sites-authoring/qg-page-authoring.md#editing-your-page-content).
+Zie [De pagina-inhoud bewerken](/help/sites-authoring/qg-page-authoring.md#editing-your-page-content).
 
 ## Prestatieaspecten bij het renderen van 3D-elementen {#performance-considerations-when-rendering-d-assets}
 
-Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en het geheugen. Als zodanig kan rendering vaak veel tijd in beslag nemen. Rendertijden variëren aanzienlijk afhankelijk van verschillende factoren, naast de duidelijke modelgrootte en serverhardware:
+Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en het geheugen. Als zodanig kan rendering vaak veel tijd in beslag nemen. Rendertijden variëren aanzienlijk, afhankelijk van verschillende factoren, naast de duidelijke modelgrootte en serverhardware:
 
 * **Rendererselectie**.
 
@@ -38,7 +38,7 @@ Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en
 
 De rendermodule Snel verfijnen neemt meestal enkele minuten in beslag om grotere afbeeldingen te renderen. Nochtans, nemen de derderenderers vaak vele notulen, zelfs uren wanneer gevormd voor maximumkwaliteit.
 
-Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven op onlangs geüploade middelen in de Kaartweergave. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
+Conversie-, verwerkings- en rendertaken worden zo nodig op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven op onlangs geüploade middelen in de Kaartweergave. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
 
 >[!NOTE]
 >
@@ -48,17 +48,17 @@ Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij gepla
 
 1. Open een 3D-element voor weergave.
 
-   Zie 3D- [elementen](viewing-3d-assets.md)weergeven.
+   Zie [3D-elementen weergeven](viewing-3d-assets.md).
 
-1. Tik in Adobe Experience Manager op de **[!UICONTROL Navigation]** pagina **[!UICONTROL Assets]**.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL Card View]**.
+1. Tik in Adobe Experience Manager op de pagina **[!UICONTROL Navigation]** op **[!UICONTROL Assets]**.
+1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL View]** op **[!UICONTROL Card View]**.
 1. Navigeer naar een 3D-object dat u wilt renderen.
 1. Tik op de kaart van het 3D-object om dit te openen op de pagina met elementdetails.
-1. Near the upper-left corner of the page, tap the drop-down list, then select **[!UICONTROL Render]**.
+1. Tik in de linkerbovenhoek van de pagina op de vervolgkeuzelijst en selecteer **[!UICONTROL Render]**.
 
    ![chlimage_1-369](assets/chlimage_1-369.png)
 
-1. Tik in de rechterbovenhoek van de pagina met elementdetails op het **[!UICONTROL Stage Selector]** pictogram (spotlight) en selecteer vervolgens een werkgebiednaam met de achtergrond en de belichting die u op het 3D-object wilt toepassen.
+1. Tik in de rechterbovenhoek van de pagina met elementdetails op het pictogram **[!UICONTROL Stage Selector]** (spotlight) en selecteer vervolgens een werkgebiednaam met de achtergrond en de belichting die u op het 3D-object wilt toepassen.
 
    Zie [Informatie over het gebruik van fasen in AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
@@ -66,20 +66,20 @@ Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij gepla
 
    **[!UICONTROL Stage Selector]** pictogram
 
-1. Selecteer een renderer in de **[!UICONTROL Render]** vervolgkeuzelijst aan de linkerkant van de pagina met elementdetails.
+1. Selecteer een renderer in de vervolgkeuzelijst **[!UICONTROL Render]** aan de linkerkant van de pagina met elementdetails.
 
-   De standaard renderer **Snel verfijnen** is altijd beschikbaar. Als het geselecteerde werkgebied een native indeling is, wordt de overeenkomstige renderer van derden ook beschikbaar gesteld in de lijst die u kunt selecteren.
+   De standaardrenderer **Snel verfijnen** is altijd beschikbaar. Als het geselecteerde werkgebied een native indeling is, wordt de overeenkomstige renderer van derden ook beschikbaar gesteld in de lijst die u kunt selecteren.
 
    Zie [Informatie over het gebruik van fasen in AEM 3D](about-the-use-of-stages-in-aem-3d.md).
 
 1. Ga als volgt te werk:
 
-   * Voer in de velden **[!UICONTROL Width]** en **[!UICONTROL Height]** in welke pixelbreedte en -hoogte de afbeelding moet worden gerenderd.
-   * Voer in het **[!UICONTROL Image Name]** veld de naam in van de gerenderde afbeelding.
-   * Voer in het **[!UICONTROL Export Path]** veld het pad in waar de gerenderde afbeelding moet worden opgeslagen. Of tik op het **[!UICONTROL Browse]** pictogram en navigeer naar een locatie.
-   * (Optioneel) Schakel het selectievakje **[!UICONTROL Overwrite existing imag]e **in of uit.
+   * Voer in de velden **[!UICONTROL Width]** en **[!UICONTROL Height]** de pixelbreedte en -hoogte in die u de afbeelding wilt renderen.
+   * Voer in het veld **[!UICONTROL Image Name]** de naam van de gerenderde afbeelding in.
+   * Typ in het veld **[!UICONTROL Export Path]** het pad waar u de gerenderde afbeelding wilt opslaan. Of tik op het pictogram **[!UICONTROL Browse]** en navigeer naar een locatie.
+   * (Optioneel) Schakel het selectievakje **[!UICONTROL Overwrite existing imag]e** in of uit.
 
-1. Tik in de rechterbovenhoek van de pagina met elementdetails op het **[!UICONTROL Camera Selector]** pictogram. Selecteer een cameraweergave die u wilt toepassen op de gerenderde afbeelding.
+1. Tik in de rechterbovenhoek van de pagina met elementdetails op het pictogram **[!UICONTROL Camera Selector]**. Selecteer een cameraweergave die u wilt toepassen op de gerenderde afbeelding.
 
    Linker- en rechterbalken of boven- en onderbalken zijn een visuele indicator voor de gedeelten van de weergave die worden weergegeven. Wanneer de camera wordt geleverd door het geselecteerde werkgebied, kunt u een vooraf gedefinieerde camera selecteren.
 
@@ -87,7 +87,7 @@ Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij gepla
 
    **[!UICONTROL Camera Selector]** pictogram
 
-1. Tik **[!UICONTROL Start Render]** om het renderingsproces te starten.
+1. Tik op **[!UICONTROL Start Render]** om het renderingsproces te starten.
 
    Er wordt tijdelijk een bericht weergegeven om aan te geven dat de rendering is gestart. Voor het gemak bevat dit bericht ook een koppeling naar de geselecteerde uitvoermap, zodat u er direct naar kunt navigeren.
 
