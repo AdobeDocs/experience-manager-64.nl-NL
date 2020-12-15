@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Elementennetwerkoverwegingen {#assets-network-considerations}
+# Elementnetwerkoverwegingen {#assets-network-considerations}
 
 Kennis van uw netwerk is net zo belangrijk als inzicht in Adobe Experience Manager (AEM) Assets. Het netwerk kan uploaden, downloaden, en gebruikerservaring beïnvloeden. Het Diagrammen van uw hulp van de netwerktopologie identificeert onderdrukkingspunten en sub-geoptimaliseerde gebieden in het netwerk die u moet bevestigen om netwerkprestaties en gebruikerservaring te verbeteren.
 
@@ -28,7 +28,7 @@ Zorg ervoor dat u het volgende in uw netwerkdiagram omvat:
 
 Begin door de connectiviteit tussen de individuele cliëntapparaten en het collectieve netwerk te diagrammen. In dit stadium, identificeer gedeelde middelen, zoals WiFi verbindingen, waar de veelvoudige gebruikers tot het zelfde punt of Ethernet schakelaar toegang hebben om activa te uploaden en te downloaden.
 
-![chlimage_1-355](assets/chlimage_1-353.png)
+![chlimage_1-353](assets/chlimage_1-353.png)
 
 Clientapparaten maken op verschillende manieren verbinding met het bedrijfsnetwerk, zoals gedeelde WiFi, Ethernet met een gedeelde switch en VPN. Het identificeren van en het begrip van chokepoints op dit netwerk is belangrijk voor Activa die en het netwerk plannen wijzigen.
 
@@ -40,15 +40,15 @@ De bodem verlaten van het diagram toont twee apparaten die met het collectieve n
 
 De computer die aan het recht wordt getoond heeft een beperkt stroomopwaarts aan het collectieve netwerk over VPN met een snelheid van 1 Mbps. De gebruikerservaring voor de verbinding 1Mbps is zeer verschillend van de gebruikerservaring over de verbinding 1Gbps. Afhankelijk van de grootte van de activa interactie met gebruikers, kan hun opstraalverbinding van VPN voor de taak ontoereikend zijn.
 
-## Topologie van het collectieve netwerk {#topology-of-the-corporate-network}
+## Topologie van het bedrijfsnetwerk {#topology-of-the-corporate-network}
 
-![chlimage_1-356](assets/chlimage_1-354.png)
+![chlimage_1-354](assets/chlimage_1-354.png)
 
 Het diagram toont hogere opstraalverbindingssnelheden binnen het collectieve netwerk dan wat over het algemeen wordt gebruikt. Deze buizen zijn gedeelde bronnen. Als de gedeelde schakelaar wordt verwacht om 50 cliënten te behandelen, kan het potentieel een chokepoint zijn. In het aanvankelijke diagram, delen slechts twee computers de bijzondere verbinding.
 
-## Uploaden naar internet vanuit het bedrijfsnetwerk en de AEM omgeving {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
+## Uplink naar internet vanuit het bedrijfsnetwerk en de AEM {#uplink-to-the-internet-from-the-corporate-network-and-aem-environment}
 
-![chlimage_1-353](assets/chlimage_1-355.png)
+![chlimage_1-355](assets/chlimage_1-355.png)
 
 Het is belangrijk om onbekende factoren op Internet en de verbinding te overwegen VPC omdat de bandbreedte over Internet wegens pieklading of grootschalig leveranciersstroomonderbrekingen kan worden verminderd. Over het algemeen is internetconnectiviteit betrouwbaar. Soms kan dit echter wel leiden tot een verschuiving.
 
@@ -74,7 +74,7 @@ De verzender deelt het 100Mbps verbinding met twee entiteiten, de buitenwereld e
 
 De AEM instantie deelt het is verbinding 1Gbps met de veelvoudige diensten. Vanuit een perspectief van de netwerktopologie, is het gelijkwaardig aan het delen van één enkel kanaal met de verschillende diensten.
 
-Wanneer u het netwerk van het clientapparaat naar de AEM-instantie bekijkt, lijkt het kleinste chokepoint de firewallvertraging van 10 Mbit te zijn. U kunt deze waarden gebruiken in de calculator voor grootte van de [elementen in de gids](assets-sizing-guide.md) voor grootte van de elementen om de gebruikerservaring te bepalen.
+Wanneer u het netwerk van het clientapparaat naar de AEM-instantie bekijkt, lijkt het kleinste chokepoint de firewallvertraging van 10 Mbit te zijn. U kunt deze waarden in de rangschikkingscalculator in [Middelen het Grootte Gids](assets-sizing-guide.md) gebruiken om de gebruikerservaring te bepalen.
 
 ## Gedefinieerde workflows van de AEM instantie {#defined-workflows-of-the-aem-instance}
 
