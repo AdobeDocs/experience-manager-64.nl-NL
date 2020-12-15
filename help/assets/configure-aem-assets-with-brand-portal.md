@@ -25,12 +25,12 @@ AEM Assets (Adobe Experience Manager) wordt geconfigureerd met Brand Portal via 
 >
 >***Alleen voor bestaande klanten***
 >
->Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via Adobe I/O.
+>Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In het geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via Adobe I/O.
 
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
 
-* [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe gebruiker van het Portaal van het Merk bent en uw auteur van AEM Assets met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie op Adobe I/O tot stand brengen.
-* [Configuratie](#upgrade-integration-64)upgrade: Als u een bestaande gebruiker van het Portaal van het Merk met uw de auteursinstantie van AEM Assets bent die met het Portaal van het Merk op erfenisGateway wordt gevormd OAuth, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op Adobe I/O tot stand te brengen.
+* [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe gebruiker van het Merk Portal bent en uw AEM Assets auteur instantie met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie op Adobe I/O tot stand brengen.
+* [Configuratie](#upgrade-integration-64) upgrade: Als u een bestaande gebruiker van het Portaal van het Merk met uw auteursinstantie van AEM Assets bent die met het Portaal van het Merk op erfenisOAuth Gateway wordt gevormd, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op Adobe I/O tot stand te brengen.
 
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
 
@@ -54,11 +54,11 @@ U hebt het volgende nodig om AEM Assets te configureren met Brand Portal:
 
 Het wordt aanbevolen AEM 6.4 te hebben om een AEM instantie van de auteur in te stellen. Als u niet AEM, download het van de volgende plaatsen:
 
-* Als u een bestaande AEM klant bent, downloadt u AEM 6.4 van de [Adobe Licensing-website](http://licensing.adobe.com).
+* Als u een bestaande AEM klant bent, downloadt u AEM 6.4 van [Adobe-licentiewebsite](http://licensing.adobe.com).
 
-* Als u een partner van de Adobe bent, gebruik het Programma [van de Opleiding van de Partner van](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) Adobe om AEM 6.4 te verzoeken.
+* Als u een partner van de Adobe bent, gebruik [Adobe Partner Training Programma](https://adobe.allegiancetech.com/cgi-bin/qwebcorporate.dll?idx=82357Q) om AEM 6.4 te verzoeken.
 
-Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteurinstantie, zie het [opstellen en het handhaven](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
+Nadat u AEM downloadt, voor instructies aan opstelling een AEM auteursinstantie, zie [opstellen en handhaven](https://helpx.adobe.com/experience-manager/6-4/sites/deploying/using/deploy.html#defaultlocalinstall).
 
 ### Download en installeer AEM nieuwste Service Pack {#servicepack}
 
@@ -66,7 +66,7 @@ Zie voor gedetailleerde instructies
 
 * [AEM 6.4 Opmerkingen bij de release Service Pack](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html)
 
-**Neem contact op met de klantenservice** als u het nieuwste AEM of Service Pack niet kunt vinden.
+**Neem contact op met Customer** Caref als u het nieuwste AEM of Service Pack niet kunt vinden.
 
 ## Configuratie maken {#configure-new-integration-64}
 
@@ -95,7 +95,8 @@ De IMS-configuratie omvat twee stappen:
 
 Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
-1. Aanmelden bij de AEM Assets-instantie van de auteurStandaard-URL: http:// localhost:4502/aem/start.html
+1. Aanmelden bij de instantie van AEM Assets-auteur
+Standaard-URL: http:// localhost:4502/aem/start.html
 1. Ga vanuit het deelvenster **Tools** ![Tools](assets/tools.png) naar **[!UICONTROL Security]** >> **[!UICONTROL Adobe IMS Configurations]**.
 
    ![Gebruikersinterface voor Adobe IMS-accountconfiguratie](assets/ims-config1.png)
@@ -124,7 +125,7 @@ Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
 
    Maak op het tabblad **Account** het Adobe IMS-account. Hiervoor hebt u echter de integratiedetails nodig. Laat deze pagina voorlopig open.
 
-   Open a new tab and [Create Adobe I/O integration](#createnewintegration) to get the integration details for IMS Account configurations.
+   Open een nieuw tabblad en [Maak Adobe I/O-integratie](#createnewintegration) om de integratiegegevens voor IMS-accountconfiguraties op te halen.
 
 ### Adobe I/O-integratie maken {#createnewintegration}
 
@@ -255,7 +256,7 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    >
    >De replicatieagenten werken parallel en delen de baandistributie gelijk, daardoor verhogend de het publiceren snelheid met vier keer de originele snelheid. Nadat de wolkendienst wordt gevormd, wordt de extra configuratie niet vereist om de replicatieagenten toe te laten die door gebrek worden geactiveerd om parallelle publicatie van veelvoudige activa toe te laten.
 
-1. To verify the connection between AEM Assets author and Brand Portal, click **[!UICONTROL Test Connection]**.
+1. Klik op **[!UICONTROL Test Connection]** om de verbinding tussen AEM Assets-auteur en Brand Portal te controleren.
 
    ![](assets/test-integration4.png)
 
@@ -270,23 +271,23 @@ Voer de volgende stappen uit om de configuratie van de Brand Portal-cloudservice
    >
    >Vermijd onbruikbaar makend om het even welke replicatieagenten, aangezien het de replicatie van sommige activa kan veroorzaken om te ontbreken.
    >
-   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie Problemen [oplossen bij parallelle publicatie naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
+   >Zorg ervoor dat alle vier replicatieagenten worden gevormd om onderbrekingsfout te vermijden. Zie [Problemen oplossen in parallelle publicatie naar Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/publish/troubleshoot-parallel-publishing.html#connection-timeout).
 
 Brand Portal is geconfigureerd met uw AEM Assets-auteur-exemplaar. U kunt nu het volgende doen:
 
 * [Assets publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-assets.md)
 * [Mappen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-folder.md)
 * [Verzamelingen publiceren van AEM Assets naar Brand Portal](../assets/brand-portal-publish-collection.md)
-* [Configureer Asset Sourcing](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) , zodat de gebruikers van het Brand Portal middelen kunnen leveren aan en publiceren naar AEM Assets.
+* [Middelen configureren ](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/asset-sourcing-in-brand-portal/brand-portal-asset-sourcing.html) voor de gebruikers van het Brand Portal om middelen bij te dragen aan en te publiceren naar AEM Assets.
 
-## Upgradeconfiguratie {#upgrade-integration-64}
+## Upgrade van configuratie {#upgrade-integration-64}
 
 Voer de volgende stappen in de vermelde opeenvolging uit om bestaande configuraties te bevorderen:
 1. [Werken met taken controleren](#verify-jobs)
 1. [Bestaande configuraties verwijderen](#delete-existing-configuration)
 1. [Configuratie maken](#configure-new-integration-64)
 
-### Werken met taken controleren {#verify-jobs}
+### Taak {#verify-jobs} controleren
 
 Zorg ervoor dat er geen publicatietaak wordt uitgevoerd op de AEM Assets-ontwerpinstantie voordat u wijzigingen aanbrengt. Voor dat, kunt u alle vier replicatieagenten verifiëren en ervoor zorgen dat de rij ideaal/leeg is.
 
@@ -304,11 +305,11 @@ Zorg ervoor dat er geen publicatietaak wordt uitgevoerd op de AEM Assets-ontwerp
 
 1. Bepaal de plaats van de replicatieagenten van uw huurder van het Portaal van het Merk.
 
-   Zorg ervoor dat de **Rij voor alle replicatieagenten inactief** is, is geen het publiceren baan actief.
+   Zorg ervoor dat **Wachtrij Idle** voor alle replicatieagenten is, is geen het publiceren baan actief.
 
    ![](assets/test-integration3.png)
 
-### Bestaande configuraties verwijderen {#delete-existing-configuration}
+### Bestaande configuraties {#delete-existing-configuration} verwijderen
 
 U moet de volgende controle-lijst in werking stellen terwijl het schrappen van de bestaande configuratie.
 * Alle vier replicatieagents verwijderen
@@ -321,20 +322,20 @@ Voer de volgende stappen uit om de bestaande configuratie te verwijderen:
 
    Standaard-URL: http:// localhost:4502/crx/de/index.jsp
 
-1. Navigeer aan en schrap alle vier replicatieagenten van uw Poorthuurder van het Merk. `/etc/replications/agents.author`
+1. Navigeer aan `/etc/replications/agents.author` en schrap alle vier replicatieagenten van uw Poorthuurder van het Merk.
 
    ![](assets/delete-replication-agent.png)
 
-1. Navigeer naar de configuratie `/etc/cloudservices/mediaportal` van de **** Cloud Service en verwijder deze.
+1. Navigeer naar `/etc/cloudservices/mediaportal` en verwijder de **configuratie van de Cloud Service**.
 
    ![](assets/delete-cloud-service.png)
 
-1. Navigeer aan `/home/users/mac` en schrap de gebruiker **van** MAC van uw Poorthuurder van het Merk.
+1. Navigeer aan `/home/users/mac` en schrap **de gebruiker van MAC** van uw Poorthuurder van het Merk.
 
    ![](assets/delete-mac-user.png)
 
 
-U kunt nu configuratie [op uw AEM 6.4 auteurinstantie op Adobe I/O](#configure-new-integration-64) tot stand brengen.
+U kunt nu [configuratie](#configure-new-integration-64) op uw AEM 6.4 auteursinstantie op Adobe I/O tot stand brengen.
 
 
 
