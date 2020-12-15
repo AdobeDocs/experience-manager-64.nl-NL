@@ -18,9 +18,9 @@ Met de functie Multi-tenancy kunt u inhoud in CRX segregeren op basis van het or
 In Adobe Experience Manager (AEM) worden gegevens voor elke organisatie opgeslagen in een ander pad. Elk organisatie-specifiek weg wordt geïdentificeerd door de organisatieprefix en organisatie identiteitskaart
 die is opgenomen op de traditionele locatie waar verschillende soorten activa worden opgeslagen in CRX.
 
-Als u bijvoorbeeld een map maakt met de naam `Demo`, slaat AEM middel de map standaard op de `../content/dam/Demo` locatie in CRX op. Als de functie voor meerdere paden is ingeschakeld, kunt u de gegevens opslaan op `../content/dam/<organization prefix>/<organization id>Demo`.
+Als u bijvoorbeeld een map maakt met de naam `Demo`, slaat AEM middelen de map standaard op de locatie `../content/dam/Demo` in CRX op. Als de functie voor meerdere paden is ingeschakeld, kunt u de gegevens opslaan op `../content/dam/<organization prefix>/<organization id>Demo`.
 
-Voor Adobe Marketing Cloud-gebruikers van AEM Assets (op aanvraag) die zijn toegewezen aan een `aodpremium` organisatie, kunt u bijvoorbeeld de functie voor meerdere paden gebruiken om het volgende pad te configureren, `../content/dam/mac/aodpremiumDemo`de inhoud te scheiden. In dit voorbeeld `mac` is het organisatievoorvoegsel en `aodpremium` is het organisatie-id.
+Voor Adobe Marketing Cloud-gebruikers van AEM Assets (op aanvraag) die zijn toegewezen aan `aodpremium`-organisatie, kunt u bijvoorbeeld de functie voor meerdere paden gebruiken om het volgende pad naar `../content/dam/mac/aodpremiumDemo` te configureren, de inhoud te scheiden. In dit voorbeeld is `mac` het organisatievoorvoegsel en `aodpremium` is de organisatie-id.
 
 Gebaseerd op de organisatie en identiteitskaart van de gebruiker, wordt dit gekwalificeerde weg getoond in de interface van AEM Assets en diverse tovenaars, met inbegrip van de Beweging en de verwezenlijking van het Fragment tovenaars om seggregatie af te dwingen.
 
