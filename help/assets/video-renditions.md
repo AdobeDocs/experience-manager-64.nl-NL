@@ -23,17 +23,17 @@ De met DM gecodeerde vertoningen worden opgeslagen in de volmachtsserver en bij 
 
 AEM elementen bieden ondersteuning voor het afspelen van deze uitvoeringen op de client.
 
-Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en tikt u op het pictogram Algemene navigatie. Kies vervolgens een optie in de **[!UICONTROL Renditions]** lijst.
+Als u de vertoningen van een bepaald video-element wilt weergeven, opent u de elementenpagina en tikt u op het pictogram Algemene navigatie. Kies vervolgens **[!UICONTROL Renditions]** in de lijst.
 
 ![chlimage_1-478](assets/chlimage_1-478.png)
 
-De lijst met video-uitvoeringen wordt weergegeven in het **[!UICONTROL Renditions]** deelvenster.
+De lijst met video-uitvoeringen wordt weergegeven in het deelvenster **[!UICONTROL Renditions]**.
 
 ![chlimage_1-479](assets/chlimage_1-479.png)
 
-Om de volmachtsserver voor DM-Gecodeerde vertoningen te vormen, [vorm de Dynamische Diensten van de Wolk van Media.](config-dynamic.md)
+[Configureer Dynamic Media Cloud-services ](config-dynamic.md) om de proxyserver voor met DM gecodeerde uitvoeringen te configureren.
 
-Als u video-uitvoeringen met de gewenste parameters wilt genereren, [maakt u een overeenkomstig videoprofiel](video-profiles.md).
+[Maak een overeenkomstig videoprofiel](video-profiles.md) om video-uitvoeringen met de gewenste parameters te genereren.
 
 Nadat u de proxyserver hebt geconfigureerd en videoprofielen hebt gemaakt, kunt u deze videovoorinstelling opnemen in een verwerkingsprofiel en het verwerkingsprofiel toepassen op een map.
 
