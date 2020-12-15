@@ -22,43 +22,43 @@ ht-degree: 3%
 
 >[!CAUTION]
 >
->Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor bepaalde functionaliteit voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md) vereist.
 
-De Fragmenten van de inhoud worden opgeslagen als **[!UICONTROL Assets]**, zodat worden hoofdzakelijk beheerd van de **[!UICONTROL Assets]** console.
+Inhoudsfragmenten worden opgeslagen als **[!UICONTROL Assets]**, zodat ze voornamelijk worden beheerd vanuit de console **[!UICONTROL Assets]**.
 
 >[!NOTE]
 >
->Inhoudsfragmenten worden vervolgens gebruikt bij het ontwerpen van pagina&#39;s. Zie [Pagina&#39;s ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md).
+>Inhoudsfragmenten worden vervolgens gebruikt bij het ontwerpen van pagina&#39;s. zie [Pagina-authoring met inhoudfragmenten](/help/sites-authoring/content-fragments.md).
 
-## Inhoudsfragmenten maken {#creating-content-fragments}
+## Inhoudsfragmenten {#creating-content-fragments} maken
 
 ### Een inhoudsmodel maken {#creating-a-content-model}
 
-[U kunt contentfragmentmodellen](content-fragments-models.md) inschakelen en maken voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
+[U kunt ](content-fragments-models.md) contentfragmentmodellen inschakelen en maken voordat u inhoudsfragmenten met gestructureerde inhoud maakt.
 
 >[!NOTE]
 >
->Zie [Inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md) ontwikkelen voor meer informatie over sjablonen; worden gebruikt voor eenvoudige inhoudsfragmenten.
+>Zie [Inhoudsfragmenten ontwikkelen](/help/sites-developing/customizing-content-fragments.md) voor meer informatie over sjablonen. worden gebruikt voor eenvoudige inhoudsfragmenten.
 
-### Een inhoudsfragment maken {#creating-a-content-fragment}
+### Een inhoudsfragment {#creating-a-content-fragment} maken
 
 De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voor eenvoudige en gestructureerde fragmenten:
 
 1. Ga naar de map **[!UICONTROL Assets]** waar u het fragment wilt maken.
-1. Selecteer **[!UICONTROL Create]**, dan **[!UICONTROL Content Fragment]** om de tovenaar te openen.
+1. Selecteer **[!UICONTROL Create]** en **[!UICONTROL Content Fragment]** om de wizard te openen.
 1. In de eerste stap van de wizard moet u de basis van het nieuwe fragment opgeven.
 
    * Dit kan een:
 
-      * [Sjabloon](/help/sites-developing/content-fragment-templates.md) - bijvoorbeeld **[!UICONTROL Simple Fragment]**
-      * [Model](content-fragments-models.md) - wordt gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het **luchthavenmodel**
+      * [Sjabloon](/help/sites-developing/content-fragment-templates.md) , bijvoorbeeld  **[!UICONTROL Simple Fragment]**
+      * [Model](content-fragments-models.md)  - gebruikt om een fragment tot stand te brengen dat gestructureerde inhoud vereist; bijvoorbeeld het  **** Airportmodel
    * Alle beschikbare sjablonen en modellen worden weergegeven.
 
-   Na selectie kunt u doorgaan **[!UICONTROL Next]** .
+   Na selectie gebruikt u **[!UICONTROL Next]** om door te gaan.
 
    ![cfm-6420-15](assets/cfm-6420-15.png)
 
-1. In the **[!UICONTROL Properties]** step specify:
+1. Geef in de stap **[!UICONTROL Properties]** op:
 
    * **[!UICONTROL Basic]**
 
@@ -79,14 +79,14 @@ De methode voor het maken van een inhoudsfragment is (in principe) hetzelfde voo
          Verplicht; wordt automatisch afgeleid van de titel, maar kan worden bijgewerkt.
 
 
-1. Select **[!UICONTROL Create]** to complete the action, then either **[!UICONTROL Open]** the fragment for editing or return to the console with **[!UICONTROL Done]**.
+1. Selecteer **[!UICONTROL Create]** om de actie te voltooien, dan of **[!UICONTROL Open]** het fragment voor het uitgeven of terugkeer aan de console met **[!UICONTROL Done]**.
 
 ## Handelingen voor een inhoudsfragment {#actions-for-a-content-fragment}
 
-In de **[!UICONTROL Assets]** console is een reeks acties beschikbaar voor uw inhoudsfragmenten:
+In de **[!UICONTROL Assets]** console is een reeks acties beschikbaar voor uw inhoudsfragmenten, of:
 
 * van de werkbalk; nadat u het fragment hebt geselecteerd, zijn alle relevante handelingen beschikbaar.
-* als [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions); een subset van acties beschikbaar voor de afzonderlijke fragmentkaarten.
+* Als [snelle acties](/help/sites-authoring/basic-handling.md#quick-actions); een subset van acties beschikbaar voor de afzonderlijke fragmentkaarten.
 
 ![cfm-6420-17](assets/cfm-6420-17.png)
 
@@ -104,13 +104,13 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 * **[!UICONTROL Edit]**
 
-   * Hiermee kunt u het fragment [openen voor het bewerken van inhoud](content-fragments-variations.md) , samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
+   * Hiermee kunt u het fragment [openen voor het bewerken van inhoud](content-fragments-variations.md) samen met de elementen, variaties, bijbehorende inhoud en metagegevens.
 
 * **[!UICONTROL Manage Tags]**
 * **[!UICONTROL To Collection]**
 
    * Voeg het fragment toe aan een verzameling.
-   * Dit kan ook worden gedaan wanneer u een verzameling [aan het fragment](content-fragments-assoc-content.md#adding-associated-content)koppelt.
+   * Dit kan ook worden gedaan wanneer [een inzameling met het fragment](content-fragments-assoc-content.md#adding-associated-content) associeert.
 
 * **[!UICONTROL Copy/Paste]**
 * **[!UICONTROL Move]**
@@ -120,7 +120,7 @@ Selecteer het fragment om de werkbalk weer te geven met de toepasselijke acties:
 
 >[!NOTE]
 >
->Veel van deze acties zijn [standaardhandelingen voor middelen](managing-assets-touch-ui.md) en/of de [bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
+>Veel hiervan zijn [standaardhandelingen voor elementen](managing-assets-touch-ui.md) en/of de [bureaubladtoepassing](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html).
 
 ## De fragmenteditor openen {#opening-the-fragment-editor}
 
@@ -128,13 +128,13 @@ Uw fragment openen voor bewerken:
 
 >[!CAUTION]
 >
->Voor het bewerken van een inhoudsfragment hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions)nodig. Neem contact op met de systeembeheerder als er problemen optreden.
+>Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
-1. Gebruik de **[!UICONTROL Assets]** console om naar de locatie van het inhoudsfragment te navigeren.
+1. Met de console **[!UICONTROL Assets]** kunt u naar de locatie van het inhoudsfragment navigeren.
 1. Open het fragment voor bewerking door:
 
    * Klikken of tikken op de fragment- of fragmentkoppeling (dit is afhankelijk van de consoleweergave).
-   * Het fragment selecteren en vervolgens **[!UICONTROL Edit]** vanaf de werkbalk.
+   * Selecteer het fragment en **[!UICONTROL Edit]** vervolgens op de werkbalk.
 
    De fragmenteditor wordt geopend:
 
@@ -150,7 +150,7 @@ Uw fragment openen voor bewerken:
 
 1. Navigeer door de drie modi met de pictogrammen in het zijpaneel:
 
-   * Variaties: [De inhoud](#editing-the-content-of-your-fragment) bewerken en de variaties [beheren](#creating-and-managing-variations-within-your-fragment)
+   * Variaties: [De inhoud bewerken](#editing-the-content-of-your-fragment) en [De variaties beheren](#creating-and-managing-variations-within-your-fragment)
    * [Annotaties](content-fragments-variations.md#annotating-a-content-fragment)
    * [Gekoppelde inhoud](#associating-content-with-your-fragment)
    * [Metagegevens](#viewing-and-editing-the-metadata-properties-of-your-fragment)
@@ -161,13 +161,13 @@ Uw fragment openen voor bewerken:
 
    >[!NOTE]
    >
-   >Both **[!UICONTROL Save]** and **[!UICONTROL Cancel]** will exit the editor - see [Save, Cancel and Versions](#save-cancel-and-versions) for full information on how both options operate for content fragments.
+   >Zowel **[!UICONTROL Save]** als **[!UICONTROL Cancel]** zullen de redacteur weggaan - zie [sparen, annuleert en Versies](#save-cancel-and-versions) voor volledige informatie over hoe beide opties voor inhoudfragmenten werken.
 
-## Opslaan, Annuleren en versies {#save-cancel-and-versions}
+## Opslaan, annuleren en versies {#save-cancel-and-versions}
 
 >[!NOTE]
 >
->Versies kunnen ook worden [gemaakt, vergeleken en teruggezet vanaf de tijdlijn](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
+>Versies kunnen ook [worden gemaakt, vergeleken en teruggezet vanaf de tijdlijn](https://helpx.adobe.com/experience-manager/6-3/assets/using/content-fragments-managing.html#timeline-for-content-fragments).
 
 De editor heeft twee opties:
 
@@ -177,31 +177,31 @@ De editor heeft twee opties:
 
    >[!CAUTION]
    >
-   >Voor het bewerken van een inhoudsfragment hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions)nodig. Neem contact op met de systeembeheerder als er problemen optreden.
+   >Als u een inhoudsfragment wilt bewerken, hebt u [de juiste machtigingen](/help/sites-developing/customizing-content-fragments.md#asset-permissions) nodig. Neem contact op met de systeembeheerder als er problemen optreden.
 
    >[!NOTE]
    >
-   >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens te selecteren **[!UICONTROL Save]**.
+   >Het is mogelijk om in de redacteur te blijven, makend een reeks veranderingen, alvorens **[!UICONTROL Save]** te selecteren.
 
    >[!CAUTION]
    >
-   >Naast het eenvoudig opslaan van uw veranderingen, werkt **[!UICONTROL Save]** ook om het even welke verwijzingen bij en zorgt ervoor dat de verzender zoals vereist wordt gespoeld. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
+   >Naast het eenvoudig opslaan van uw wijzigingen, werkt **[!UICONTROL Save]** ook verwijzingen bij en zorgt ervoor dat de verzender wordt leeggemaakt zoals vereist. Deze wijzigingen kunnen enige tijd in beslag nemen. Hierdoor kan de prestaties van een groot/complex/zwaar geladen systeem worden beïnvloed.
    >
    >
-   >Houd hier rekening mee wanneer u de fragmenteditor gebruikt **[!UICONTROL Save]** en voer deze snel opnieuw in om verdere wijzigingen aan te brengen en op te slaan.
+   >Houd hier rekening mee wanneer u **[!UICONTROL Save]** gebruikt en vervolgens snel de fragmenteditor ingaat om verdere wijzigingen aan te brengen en op te slaan.
 
 * **[!UICONTROL Cancel]**
 
    Sluit de editor af zonder de laatste wijzigingen op te slaan.
 
-Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gemaakt om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u **[!UICONTROL Cancel]** uw wijzigingen aanbrengt:
+Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gemaakt om ervoor te zorgen dat eerdere inhoud kan worden hersteld als u uw wijzigingen **[!UICONTROL Cancel]**:
 
-1. Wanneer een inhoudsfragment wordt geopend voor het bewerken AEM wordt gecontroleerd op het bestaan van een token op basis van cookies dat aangeeft of een *bewerkingssessie* bestaat:
+1. Wanneer een inhoudsfragment wordt geopend voor het bewerken AEM controleert u op het bestaan van het op cookies gebaseerde token dat aangeeft of een *bewerksessie* bestaat:
 
    1. Als het token wordt gevonden, wordt het fragment beschouwd als onderdeel van de bestaande bewerkingssessie.
-   1. Als het token *niet* beschikbaar is en de gebruiker begint met het bewerken van inhoud, wordt een versie gemaakt en wordt een token voor deze nieuwe bewerkingssessie verzonden naar de client, waar deze wordt opgeslagen in een cookie.
+   1. Als het token *niet* beschikbaar is en de gebruiker begint met het bewerken van inhoud, wordt een versie gemaakt en wordt een token voor deze nieuwe bewerkingssessie naar de client verzonden, waar deze wordt opgeslagen in een cookie.
 
-1. Terwijl er een *actieve* bewerkingssessie is, wordt de inhoud die wordt bewerkt automatisch om de 600 seconden opgeslagen (standaard).
+1. Terwijl er een *actieve* het uitgeven zitting is, wordt de inhoud die automatisch bewaard om de 600 seconden (gebrek) wordt uitgegeven.
 
    >[!NOTE]
    >
@@ -211,35 +211,35 @@ Tijdens het bewerken van het inhoudsfragment AEM automatisch versies worden gema
    >
    >`/libs/settings/dam/cfm/jcr:content/autoSaveInterval`
 
-1. Als de gebruiker op **[!UICONTROL Cancel]** de bewerking klikt, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt de token verwijderd om de bewerkingssessie te beëindigen.
-1. Als de gebruiker de bewerkingen selecteert, blijven **[!UICONTROL Save]** de bijgewerkte elementen/variaties behouden en wordt het token verwijderd om de bewerkingssessie te beëindigen.
+1. Als de gebruiker de bewerking **[!UICONTROL Cancel]** selecteert, wordt de versie die aan het begin van de bewerkingssessie is gemaakt, hersteld en wordt het token verwijderd om de bewerkingssessie te beëindigen.
+1. Als de gebruiker de bewerkingen op **[!UICONTROL Save]** selecteert, blijven de bijgewerkte elementen/variaties bestaan en wordt het token verwijderd om de bewerkingssessie te beëindigen.
 
-## De inhoud van het fragment bewerken {#editing-the-content-of-your-fragment}
+## De inhoud van het fragment {#editing-the-content-of-your-fragment} bewerken
 
 Nadat u het fragment hebt geopend, kunt u het tabblad [Variaties](content-fragments-variations.md) gebruiken om de inhoud te ontwerpen.
 
-## Variaties maken en beheren in uw fragment {#creating-and-managing-variations-within-your-fragment}
+## Variaties maken en beheren in het fragment {#creating-and-managing-variations-within-your-fragment}
 
-Nadat u de Master inhoud hebt gemaakt, kunt u [Variaties](content-fragments-variations.md) van die inhoud maken en beheren.
+Als u de Master inhoud hebt gemaakt, kunt u [Variaties](content-fragments-variations.md) van die inhoud maken en beheren.
 
 ## Inhoud koppelen aan uw fragment {#associating-content-with-your-fragment}
 
-U kunt inhoud [ook](content-fragments-assoc-content.md) aan een fragment koppelen. Dit biedt een verbinding zodat elementen (d.w.z. afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
+U kunt ook [inhoud](content-fragments-assoc-content.md) aan een fragment koppelen. Dit biedt een verbinding zodat elementen (d.w.z. afbeeldingen) (optioneel) met het fragment kunnen worden gebruikt wanneer het aan een inhoudspagina wordt toegevoegd.
 
-## De metagegevens (eigenschappen) van het fragment weergeven en bewerken {#viewing-and-editing-the-metadata-properties-of-your-fragment}
+## De metagegevens (eigenschappen) van het fragment {#viewing-and-editing-the-metadata-properties-of-your-fragment} weergeven en bewerken
 
-U kunt de eigenschappen van een fragment weergeven en bewerken met het [[!UICONTROL Metadata]](content-fragments-metadata.md) tabblad.
+U kunt de eigenschappen van een fragment weergeven en bewerken met het tabblad [[!UICONTROL Metadata]](content-fragments-metadata.md).
 
 ## Tijdlijn voor inhoudsfragmenten {#timeline-for-content-fragments}
 
-Naast de standaardopties biedt de [tijdlijn](managing-assets-touch-ui.md#timeline) zowel informatie als handelingen die specifiek zijn voor inhoudsfragmenten:
+Naast de standaardopties biedt [Timeline](managing-assets-touch-ui.md#timeline) zowel informatie als acties die specifiek zijn voor inhoudsfragmenten:
 
 * Informatie weergeven over versies, opmerkingen en annotaties
 * Handelingen voor versies
 
    * **[[!UICONTROL Revert to this Version]](#reverting-to-a-version)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
    * **[[!UICONTROL Compare to Current]](#comparing-fragment-versions)** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
-   * Een **[!UICONTROL Label]** en/of **[!UICONTROL Comment]** (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie) toevoegen
+   * Een **[!UICONTROL Label]** en/of **[!UICONTROL Comment]** toevoegen (selecteer een bestaand fragment en selecteer vervolgens een specifieke versie)
    * **[!UICONTROL Save as Version]** (selecteer een bestaand fragment en klik vervolgens op de pijl omhoog onder aan de tijdlijn)
 
 * Handelingen voor annotaties
@@ -274,7 +274,7 @@ Hiermee wordt het volgende geopend:
 
 * de **[!UICONTROL Current]** (meest recente) versie (links)
 
-* de geselecteerde versie **v&lt;*x.y*>** (rechts)
+* de geselecteerde versie **v&lt;*x.y*** (rechts)
 
 Zij worden naast elkaar weergegeven, waarbij:
 
@@ -285,7 +285,7 @@ Zij worden naast elkaar weergegeven, waarbij:
    * Vervangen tekst - blauw
 
 * Met het pictogram voor volledig scherm kunt u elke versie afzonderlijk openen. dan terug naar de parallelle weergave
-* U kunt **[!UICONTROL Revert]** naar de specifieke versie gaan
+* U kunt **[!UICONTROL Revert]** aan de specifieke versie
 * **[!UICONTROL Done]** zult u aan de console terugkeren
 
 >[!NOTE]
@@ -294,17 +294,17 @@ Zij worden naast elkaar weergegeven, waarbij:
 
 ![cfm-6420-20](assets/cfm-6420-20.png)
 
-## Een versie herstellen  {#reverting-to-a-version}
+## Terugkeren naar een versie {#reverting-to-a-version}
 
 U kunt terugkeren naar een specifieke versie van het fragment:
 
-* Rechtstreeks van de [[!UICONTROL Timeline]](content-fragments-managing.md#timeline-for-content-fragments).
+* Rechtstreeks vanaf [[!UICONTROL Timeline]](content-fragments-managing.md#timeline-for-content-fragments).
 
-   Selecteer eerst de gewenste versie en daarna de **[!UICONTROL Revert to this Version]** handeling.
+   Selecteer de vereiste versie en vervolgens de handeling **[!UICONTROL Revert to this Version]**.
 
-* Bij het [vergelijken van een versie met de huidige versie](content-fragments-managing.md#comparing-fragment-versions) kunt u **[!UICONTROL Revert]** de geselecteerde versie gebruiken.
+* Als [een versie wordt vergeleken met de huidige versie](content-fragments-managing.md#comparing-fragment-versions), kunt u **[!UICONTROL Revert]** vergelijken met de geselecteerde versie.
 
-## Een fragment publiceren en ernaar verwijzen {#publishing-and-referencing-a-fragment}
+## Een fragment {#publishing-and-referencing-a-fragment} publiceren en ernaar verwijzen
 
 >[!CAUTION]
 >
@@ -314,28 +314,28 @@ U kunt terugkeren naar een specifieke versie van het fragment:
 
 Inhoudsfragmenten moeten worden gepubliceerd voor gebruik in de publicatieomgeving. Zij kunnen worden gepubliceerd:
 
-* Na de aanmaak; vanuit de **[!UICONTROL Assets]** console.
-* Wanneer u een pagina [publiceert die het fragment](/help/sites-authoring/content-fragments.md#publishing)gebruikt; het fragment wordt weergegeven in de paginaverwijzingen.
+* Na de aanmaak; in de **[!UICONTROL Assets]**-console.
+* Wanneer u [een pagina publiceert die het fragment](/help/sites-authoring/content-fragments.md#publishing) gebruikt; het fragment wordt weergegeven in de paginaverwijzingen.
 
 >[!CAUTION]
 >
 >Nadat een fragment is gepubliceerd en/of waarnaar wordt verwezen, geeft AEM een waarschuwing weer wanneer een auteur het fragment opent om opnieuw te bewerken. Hiermee wordt u gewaarschuwd dat wijzigingen in het fragment ook van invloed zijn op de pagina&#39;s waarnaar wordt verwezen.
 
-## Een fragment verwijderen {#deleting-a-fragment}
+## Een fragment {#deleting-a-fragment} verwijderen
 
 Een fragment verwijderen:
 
-1. Navigeer in de **[!UICONTROL Assets]** console naar de locatie van het inhoudsfragment.
+1. Navigeer in de **[!UICONTROL Assets]**-console naar de locatie van het inhoudsfragment.
 1. Selecteer het fragment.
 
    >[!NOTE]
    >
-   >De **[!UICONTROL Delete]** handeling is niet beschikbaar als een snelle handeling.
+   >De handeling **[!UICONTROL Delete]** is niet beschikbaar als een snelle handeling.
 
-1. Select **[!UICONTROL Delete]** from the toolbar.
-1. Bevestig de **[!UICONTROL Delete]** handeling.
+1. Selecteer **[!UICONTROL Delete]** van de toolbar.
+1. Bevestig de handeling **[!UICONTROL Delete]**.
 
    >[!CAUTION]
    >
-   >If the fragment is already referenced in a page you will then see a warning message and be required to confirm that you want to proceed with a **[!UICONTROL Force Delete]**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
+   >Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met een **[!UICONTROL Force Delete]**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
 
