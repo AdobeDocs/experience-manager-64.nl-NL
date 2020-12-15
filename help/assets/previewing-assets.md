@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Dynamic Media-assets vooraf bekijken {#previewing-assets}
 
-U kunt gebruiken **[!UICONTROL Preview]** om te zien hoe een digitaal middel van Dynamische Media eruit ziet wanneer het door een klant in hun eigen Webbrowser wordt bekeken. De standaard ingesloten, apparaatoverschrijdende viewer die aan het element is toegewezen, wordt gebruikt voor het **[!UICONTROL Preview]** element.
+U kunt **[!UICONTROL Preview]** gebruiken om te zien hoe een digitaal Dynamic Media-middel eruitziet wanneer het door een klant in zijn eigen webbrowser wordt bekeken. De standaard ingesloten, cross-device viewer die aan het element is toegewezen, wordt gebruikt voor **[!UICONTROL Preview]**.
 
 Een viewer is een verzameling van verschillende instellingen of &#39;voorinstellingen&#39;, zoals de weergavegrootte van de viewer, het zoomgedrag, kleurenschema&#39;s, randen, lettertypen enzovoort, die bepalen hoe gebruikers multimedia-elementen op hun computerschermen en mobiele apparaten weergeven.
 
@@ -31,14 +31,14 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
 
 >[!NOTE]
 >
->When you are on a webpage (Sites) in AEM, you cannot preview assets in **[!UICONTROL Edit]** mode. You need to go to **[!UICONTROL Preview]** mode by clicking **Preview** in the upper right-hand corner.
+>Wanneer u een webpagina (Sites) in AEM bevindt, kunt u geen voorvertoning van elementen weergeven in de modus **[!UICONTROL Edit]**. U moet naar de modus **[!UICONTROL Preview]** gaan door in de rechterbovenhoek op **Voorvertoning** te klikken.
 
 **Een voorvertoning van elementen** weergeven:
 
-1. From **Adobe Experience Manager**, on the **[!UICONTROL Navigation]** page, tap **[!UICONTROL Asset]s **, then **[!UICONTROL Files]**to access assets.
-1. Near the upper-right corner of the page, from the **[!UICONTROL View]** drop-down list, tap **[!UICONTROL List View]**.
-1. (Optioneel) Gebruik de **[!UICONTROL Type]** kolom om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
-1. Klik onder de **[!UICONTROL Title]** kolom op de titelnaam (niet op de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
+1. Tik **Adobe Experience Manager** op de **[!UICONTROL Navigation]**-pagina op **[!UICONTROL Asset]s** en **[!UICONTROL Files]** om elementen te openen.
+1. Tik in de rechterbovenhoek van de pagina in de vervolgkeuzelijst **[!UICONTROL View]** op **[!UICONTROL List View]**.
+1. (Optioneel) Gebruik de kolom **[!UICONTROL Type]** om de elementen te sorteren op het type waarvan u een voorvertoning wilt weergeven.
+1. Klik onder de kolom **[!UICONTROL Title]** op de titelnaam (niet de miniatuurafbeelding) van het element waarvan u een voorvertoning wilt weergeven.
 1. Voer afhankelijk van het type element waarop u hebt geklikt een van de volgende handelingen uit:
 
 <table> 
@@ -54,11 +54,11 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
    <td>Ja</td> 
    <td><p><strong>Een voorvertoning van een element in een bepaalde uitvoering weergeven</strong></p> 
     <ul> 
-     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Uitvoeringen in de </strong>lijst en selecteer een bepaalde vertoning die u wilt voorvertonen.</li> 
+     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik <strong>Uitvoeringen </strong>in de lijst en selecteer vervolgens een bepaalde vertoning waarvan u een voorvertoning wilt weergeven.</li> 
     </ul> <p><strong>Een voorvertoning van elementen weergeven in een bepaalde viewer</strong></p> 
     <ul> 
-     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer een viewer die u op het element wilt toepassen.</li> 
-    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Klik op <strong>Herstellen</strong> om de oorspronkelijke zoominstelling van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie Voorinstellingen <a href="/help/assets/managing-viewer-presets.md">van viewers</a>beheren voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.<br /> </p> </td> 
+     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer vervolgens een viewer die u op het element wilt toepassen.</li> 
+    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om de zoomfactor van de geselecteerde afbeelding respectievelijk te vergroten of te verkleinen. Klik <strong>Herstellen</strong> om het oorspronkelijke zoomniveau van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie <a href="/help/assets/managing-viewer-presets.md">Voorinstellingen van viewer beheren</a>.<br /> om voorinstellingen van viewers in of uit te schakelen. </p> </td> 
   </tr>
   <tr>
    <td>Multimedia</td> 
@@ -66,11 +66,11 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
    <td>Ja</td> 
    <td><p><strong>Een voorvertoning van een element in een bepaalde uitvoering weergeven</strong></p> 
     <ul> 
-     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Uitvoeringen in de </strong>lijst en selecteer een bepaalde vertoning die u wilt voorvertonen.</li> 
-    </ul> <p>Als u een video-uitvoering met een hogere resolutie selecteert die u wilt voorvertonen, kan de video afgebroken worden weergegeven. Dat komt omdat in de voorvertoning van de vertoning precies de resolutie wordt weergegeven die uw klanten zullen zien, allemaal in de context van de ingesloten viewer die wordt gebruikt voor de voorvertoning.</p> <p>Wanneer u een adaptieve videoset voorvertoont op het niveau Asset, worden de uitvoeringen gegroepeerd in één afspeelervaring. Dit betekent dat de aangepaste video op de juiste grootte is geplaatst voor weergave en wordt afgespeeld met de beste resolutie in de context van het weergaveapparaat en de verbindingssnelheid.<br /> </p> <p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p> 
+     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik <strong>Uitvoeringen </strong>in de lijst en selecteer vervolgens een bepaalde vertoning waarvan u een voorvertoning wilt weergeven.</li> 
+    </ul> <p>Als u een video-uitvoering met een hogere resolutie selecteert die u wilt voorvertonen, kan de video afgebroken worden weergegeven. Dat komt omdat in de voorvertoning van de vertoning precies de resolutie wordt weergegeven die uw klanten zullen zien, allemaal in de context van de ingesloten viewer die wordt gebruikt voor de voorvertoning.</p> <p>Wanneer u een adaptieve videoset voorvertoont op het niveau Asset, worden de uitvoeringen gegroepeerd in één afspeelervaring. Dit betekent dat de aangepaste video op de juiste grootte is geplaatst voor weergave en wordt afgespeeld met de beste resolutie in de context van uw weergaveapparaat en verbindingssnelheid.<br /> </p> <p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p> 
     <ul> 
-     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer een viewer die u op het element wilt toepassen.</li> 
-    </ul> <p>Zie Voorinstellingen <a href="/help/assets/managing-viewer-presets.md">van viewers</a>beheren voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
+     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer vervolgens een viewer die u op het element wilt toepassen.</li> 
+    </ul> <p>Zie <a href="/help/assets/managing-viewer-presets.md">Voorinstellingen van viewers beheren</a> voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
   </tr>
   <tr>
    <td>Afbeeldingsset</td> 
@@ -78,8 +78,8 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
    <td>Ja</td> 
    <td><p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p> 
     <ul> 
-     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer een viewer die u op het element wilt toepassen.</li> 
-    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Klik op <strong>Herstellen</strong> om de oorspronkelijke zoominstelling van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie Voorinstellingen <a href="/help/assets/managing-viewer-presets.md">van viewers</a>beheren voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
+     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer vervolgens een viewer die u op het element wilt toepassen.</li> 
+    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om de zoomfactor van de geselecteerde afbeelding respectievelijk te vergroten of te verkleinen. Klik <strong>Herstellen</strong> om het oorspronkelijke zoomniveau van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie <a href="/help/assets/managing-viewer-presets.md">Voorinstellingen van viewers beheren</a> voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
   </tr>
   <tr>
    <td>Set draaien</td> 
@@ -87,8 +87,8 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
    <td>Ja</td> 
    <td><p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p> 
     <ul> 
-     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer een viewer die u op het element wilt toepassen.</li> 
-    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Klik op <strong>Herstellen</strong> om de oorspronkelijke zoominstelling van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie Voorinstellingen <a href="/help/assets/managing-viewer-presets.md">van viewers</a>beheren voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
+     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer vervolgens een viewer die u op het element wilt toepassen.</li> 
+    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om de zoomfactor van de geselecteerde afbeelding respectievelijk te vergroten of te verkleinen. Klik <strong>Herstellen</strong> om het oorspronkelijke zoomniveau van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie <a href="/help/assets/managing-viewer-presets.md">Voorinstellingen van viewers beheren</a> voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
   </tr>
   <tr>
    <td>Gemengde mediaset</td> 
@@ -96,8 +96,8 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
    <td>Ja</td> 
    <td><p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p> 
     <ul> 
-     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer een viewer die u op het element wilt toepassen.</li> 
-    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om respectievelijk het zoomen van de geselecteerde afbeelding te vergroten of te verkleinen. Klik op <strong>Herstellen</strong> om de oorspronkelijke zoominstelling van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie Voorinstellingen <a href="/help/assets/managing-viewer-presets.md">van viewers</a>beheren voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
+     <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Klik op <strong>Viewers</strong> in de lijst en selecteer vervolgens een viewer die u op het element wilt toepassen.</li> 
+    </ul> <p>Gebruik de pictogrammen <strong>+</strong> en <strong>- </strong>om de zoomfactor van de geselecteerde afbeelding respectievelijk te vergroten of te verkleinen. Klik <strong>Herstellen</strong> om het oorspronkelijke zoomniveau van de afbeelding te herstellen.<br /> Als u zich op een mobiel apparaat bevindt, dubbeltikt u op de afbeelding om stap voor stap in te zoomen. Als u het maximale zoomniveau hebt bereikt, dubbeltikt u nogmaals op de afbeelding om de zoomstatus opnieuw in te stellen. Sleep over de afbeelding om te pannen.</p> <p>Zie <a href="/help/assets/managing-viewer-presets.md">Voorinstellingen van viewers beheren</a> voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
   </tr>
   <tr>
    <td>Carousel-set</td> 
@@ -106,7 +106,7 @@ Naast het gebruik van de specifieke voorvertoningsfunctie voor video, centrifuge
    <td><p><strong>Een voorvertoning van een element weergeven in een bepaalde viewer</strong></p> 
     <ul> 
      <li>Klik in de linkerbovenhoek van de pagina op het pictogram zodat de vervolgkeuzelijst wordt weergegeven. Selecteer een viewer die u op het element wilt toepassen.</li> 
-    </ul> <p>Zie Voorinstellingen <a href="/help/assets/managing-viewer-presets.md">van viewers</a>beheren voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
+    </ul> <p>Zie <a href="/help/assets/managing-viewer-presets.md">Voorinstellingen van viewers beheren</a> voor informatie over het in- of uitschakelen van viewervoorinstellingen in de gebruikersinterface.</p> </td> 
   </tr>
  </tbody>
 </table>
