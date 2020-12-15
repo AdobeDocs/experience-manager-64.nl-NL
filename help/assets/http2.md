@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# HTTP2 Delivery of Content {#http-delivery-of-content}
+# HTTP2 Levering van inhoud {#http-delivery-of-content}
 
 Adobe is opgetogen om de beschikbaarheid van HTTP/2 levering van inhoud aan te kondigen met het algemene voordeel van betere prestaties.
 
@@ -55,7 +55,7 @@ Als u HTTP/2 wilt gebruiken, moet u aan de volgende vereisten voldoen:
 
    Als u geen specifiek domein hebt, zal Adobe uw overgang aan HTTP/2 in 2018 plannen.
 
-## Wat is het proces om HTTP/2 voor mijn Dynamische rekening van Media toe te laten? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
+## Wat is het proces voor het inschakelen van HTTP/2 voor mijn Dynamic Media-account? {#what-is-the-process-for-enabling-http-for-my-dynamic-media-account}
 
 U moet het verzoek in werking stellen om op HTTP/2 over te schakelen; het wordt niet automatisch voor u gedaan.
 
@@ -67,7 +67,7 @@ U moet het verzoek in werking stellen om op HTTP/2 over te schakelen; het wordt 
       1. Alle domeinen die naar HTTP2 moeten worden overgebracht.
       1. Verifieer u veilige HTTPS voor rijke media verzoeken gebruikt.
       1. Verifieer u CDN door Adobe gebruikt en niet met een directe verhouding beheerd.
-      1. Controleer of u een specifiek domein gebruikt. Als u Dynamische media gebruikt, dan gebruikt u reeds een specifiek domein.
+      1. Controleer of u een specifiek domein gebruikt. Als u Dynamic Media gebruikt, gebruikt u al een toegewezen domein.
    1. De technische Steun zal u aan HTTP/2 klantenwachtlijst toevoegen die in de orde wordt gebaseerd waarin de verzoeken werden voorgelegd.
    1. Wanneer Adobe klaar is om uw verzoek te behandelen, zal de steun u contacteren om de overgang te coördineren en een doeldatum te plaatsen.
    1. U wordt op de hoogte gesteld na voltooiing en u kunt controleren of de overgang naar HTTP2 is gelukt.
