@@ -17,20 +17,20 @@ Leer hoe u hypergekoppelde afbeeldingen met hyperlinks toevoegt aan afbeeldingse
 
 Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen die net als andere hyperlinks functioneren.
 
-1. Voer een van de volgende handelingen uit om te openen **[!UICONTROL In-place Image Editor]**:
+1. Voer een van de volgende handelingen uit om **[!UICONTROL In-place Image Editor]** te openen:
 
-   * Tik met Snelle handelingen op het **[!UICONTROL Edit]** pictogram dat op een element in de **[!UICONTROL Card]** weergave wordt weergegeven. Selecteer het element in de lijstweergave en tik op het pictogram **Bewerken** op de werkbalk.
+   * Tik met Snelle handelingen op het pictogram **[!UICONTROL Edit]** dat wordt weergegeven op een element in de weergave **[!UICONTROL Card]**. Selecteer het element in de lijstweergave en tik op het pictogram **Bewerken** op de werkbalk.
 
       >[!NOTE]
       >
-      >Snelle handelingen zijn niet beschikbaar in de **[!UICONTROL List]** weergave.
+      >Snelle handelingen is niet beschikbaar in de weergave **[!UICONTROL List]**.
 
-   * Selecteer in de **[!UICONTROL Card]** weergave of de **[!UICONTROL List]** weergave het element en tik op het **[!UICONTROL Edit]** pictogram op de werkbalk.
-   * Tik op het **[!UICONTROL Edit]** pictogram vanaf de elementpagina.
+   * Selecteer het element in de weergave **[!UICONTROL Card]** of **[!UICONTROL List]** en tik op het pictogram **[!UICONTROL Edit]** op de werkbalk.
+   * Tik op het pictogram **[!UICONTROL Edit]** op de elementpagina.
 
       ![chlimage_1-420](assets/chlimage_1-420.png)
 
-1. Tik op het **[!UICONTROL Launch Map]** pictogram van de werkbalk om een afbeelding met hyperlinks in te voegen.
+1. Tik op het pictogram **[!UICONTROL Launch Map]** op de werkbalk om een afbeeldingskaart in te voegen.
 
    ![chlimage_1-421](assets/chlimage_1-421.png)
 
@@ -38,15 +38,15 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
 
    ![chlimage_1-422](assets/chlimage_1-422.png)
 
-1. Tik op de hotspot en voer de URL- en Alt-tekst in. Geef in de **[!UICONTROL Target]** lijst op waar u de afbeelding met hyperlinks wilt weergeven, bijvoorbeeld hetzelfde tabblad, een nieuw tabblad of een iFrame. Voer bijvoorbeeld de URL in `https://www.adobe.com` als de Alt-tekst `Adobe website` en geef in de **[!UICONTROL New Tab]** **[!UICONTROL Target]** lijst op dat de afbeelding met hyperlinks moet worden geopend op een nieuw tabblad.
+1. Tik op de hotspot en voer de URL- en Alt-tekst in. Geef in de lijst **[!UICONTROL Target]** op waar u de afbeelding met hyperlinks wilt weergeven, bijvoorbeeld hetzelfde tabblad, een nieuw tabblad of een iFrame. Typ bijvoorbeeld `https://www.adobe.com` als de URL, `Adobe website` als de Alt-tekst en geef **[!UICONTROL New Tab]** in de lijst **[!UICONTROL Target]** op om de afbeelding met hyperlinks te openen op een nieuw tabblad.
 
    ![chlimage_1-423](assets/chlimage_1-423.png)
 
-1. Tik op het **[!UICONTROL Confirm]** pictogram en tik vervolgens op het **[!UICONTROL Finish]** pictogram op de werkbalk om de wijzigingen op te slaan.
+1. Tik op het pictogram **[!UICONTROL Confirm]** en tik vervolgens op het pictogram **[!UICONTROL Finish]** op de werkbalk om de wijzigingen op te slaan.
 
    ![chlimage_1-424](assets/chlimage_1-424.png)
 
-   Tik op de hotspot en tik op het **[!UICONTROL Delete]** pictogram om de afbeelding met hyperlinks te verwijderen.
+   Tik op de hotspot en tik op het pictogram **[!UICONTROL Delete]** om de afbeelding met hyperlinks te verwijderen.
 
    ![chlimage_1-425](assets/chlimage_1-425.png)
 
@@ -54,4 +54,4 @@ Met Afbeeldingen met hyperlinks kunt u een of meer hyperlinkgebieden toevoegen d
 
    ![chlimage_1-426](assets/chlimage_1-426.png)
 
-   Als de optie Dynamische media is ingeschakeld, navigeert u naar de Asset Editor en tikt u op het **[!UICONTROL Map]** pictogram om alle toegepaste afbeeldingen met hyperlinks weer te geven.
+   Als de optie Dynamic Media is ingeschakeld, navigeert u naar de Asset Editor en tikt u op het pictogram **[!UICONTROL Map]** om alle toegepaste afbeeldingen met hyperlinks weer te geven.
