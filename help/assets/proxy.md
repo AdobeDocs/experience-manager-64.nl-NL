@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Ontwikkeling van proxy&#39;s {#assets-proxy-development}
+# Ontwikkeling van middelenproxy {#assets-proxy-development}
 
 Adobe Experience Manager (AEM) Assets gebruikt een proxy om verwerking voor bepaalde taken te distribueren.
 
@@ -27,7 +27,7 @@ Een volmacht is beschikbaar via de Server van HTTP wanneer het wordt gevormd om 
 
 * `job`
 
-   **Eisen**: de parameter `jobevent` moet als geserialiseerde waardekaart worden geplaatst. Dit wordt gebruikt om een processor `Event` voor een baan te maken.
+   **Eisen**: de parameter  `jobevent` moet als geserialiseerde waardekaart worden geplaatst. Dit wordt gebruikt om een `Event` voor een baanbewerker te creëren.
 
    **Resultaat**: Hiermee wordt een nieuwe taak toegevoegd. Als dit lukt, wordt een unieke taak-id geretourneerd.
 
@@ -38,7 +38,7 @@ curl -u admin:admin -F":operation=job" -F"someproperty=xxxxxxxxxxxx"
 
 * `result`
 
-   **Eisen**: de parameter `jobid` moet worden ingesteld.
+   **Eisen**: de parameter  `jobid` moet worden ingesteld.
 
    **Resultaat**: Retourneert een JSON-representatie van het resultaatknooppunt zoals gemaakt door de taakprocessor.
 
@@ -69,7 +69,7 @@ curl -u admin:admin -F":operation=remove" -F"jobid=xxxxxxxxxxxx"
     http://localhost:4502/libs/dam/cloud/proxy
 ```
 
-### Proxy Worker {#proxy-worker}
+### Proxyworker {#proxy-worker}
 
 Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van een taak en het maken van een resultaat. Workers bevinden zich op de proxyinstantie en moeten [sling JobProcessor](https://sling.apache.org/site/eventing-and-jobs.html) implementeren om te worden herkend als een proxyworker.
 
@@ -79,7 +79,7 @@ Een proxyworker is een processor die verantwoordelijk is voor het afhandelen van
 
 ### Client-API {#client-api}
 
-[`JobService`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met verre volmachtsservlet te communiceren.
+[`JobService`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html) is beschikbaar als dienst OSGi die methodes verstrekt om banen tot stand te brengen, banen te verwijderen en resultaten van die banen te krijgen. De standaardimplementatie van deze dienst (`JobServiceImpl`) gebruikt de cliënt van HTTP om met de verre volmachtsservlet te communiceren.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -109,11 +109,11 @@ Hieronder ziet u een voorbeeld van API-gebruik:
 >
 >Referentiedocumentatie voor de proxy-API is beschikbaar onder [`com.day.cq.dam.api.proxy`](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/dam/api/proxy/package-summary.html).
 
-Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via cloudservices die toegankelijk zijn via de AEM Assets **Tools** Console of onder `/etc/cloudservices/proxy`. Van elke proxyworker wordt verwacht dat deze een knooppunt toevoegt onder `/etc/cloudservices/proxy` voor arbeidersspecifieke configuratiedetails (bijvoorbeeld `/etc/cloudservices/proxy/workername`).
+Zowel proxyconfiguraties als proxyarbeidersconfiguraties zijn beschikbaar via cloudservices die toegankelijk zijn via de AEM Assets **Tools**-console of onder `/etc/cloudservices/proxy`. Van elke proxyworker wordt verwacht dat deze onder `/etc/cloudservices/proxy` een knooppunt toevoegt voor specifieke configuratiegegevens van de worker (bijvoorbeeld `/etc/cloudservices/proxy/workername`).
 
 >[!NOTE]
 >
->Zie de configuratie [van de Worker van de Volmacht van de](indesign.md#configuring-the-proxy-worker-for-indesign-server) Server InDesign en de configuratie [van](../sites-developing/extending-cloud-config.md) Cloud Services voor meer informatie.
+>Zie [Configuratie van de Worker van de Volmacht van de Server InDesign](indesign.md#configuring-the-proxy-worker-for-indesign-server) en [Configuratie van Cloud Services](../sites-developing/extending-cloud-config.md) voor meer informatie.
 
 Hieronder ziet u een voorbeeld van API-gebruik:
 
@@ -130,9 +130,9 @@ Hieronder ziet u een voorbeeld van API-gebruik:
  final String value = cloudConfig.get("someProperty", "defaultValue");
 ```
 
-### Een aangepaste proxyworker ontwikkelen {#developing-a-customized-proxy-worker}
+### Een aangepaste proxyworker {#developing-a-customized-proxy-worker} ontwikkelen
 
-De [IDS-proxyworker](indesign.md) is een voorbeeld van een AEM Assets-proxyworker die al buiten het vak is geplaatst om de verwerking van InDesign-elementen uit te besteden.
+De [IDS volmachtsarbeider](indesign.md) is een voorbeeld van een volmachtsarbeider van AEM Assets die reeds ver-van-de-doos wordt verstrekt om de verwerking van activa inDesign uit te besteden.
 
 U kunt ook uw eigen AEM Assets-proxyworker ontwikkelen en configureren om een gespecialiseerde worker te maken die uw AEM Assets-verwerkingstaken kan verzenden en uitbesteden.
 
@@ -158,21 +158,21 @@ In het volgende diagram en in de volgende stappen wordt gedetailleerd beschreven
 >
 >In de volgende stappen worden equivalenten van InDesign als referentievoorbeelden aangegeven.
 
-1. Er wordt een [verkooptaak](https://sling.apache.org/site/eventing-and-jobs.html) gebruikt, dus u moet een taakonderwerp voor uw gebruiksgeval definiëren.
+1. Er wordt een [Sling-taak](https://sling.apache.org/site/eventing-and-jobs.html) gebruikt, dus u moet een taakonderwerp definiëren voor uw gebruiksscenario.
 
-   Zie bijvoorbeeld `IDSJob.IDS_EXTENDSCRIPT_JOB` voor de IDS-proxyworker.
+   Zie `IDSJob.IDS_EXTENDSCRIPT_JOB` voor de IDS-proxyworker als voorbeeld.
 
 1. De externe stap wordt gebruikt om de gebeurtenis te activeren en dan te wachten tot dat wordt gebeëindigd; dit wordt gedaan door opiniepeilingen over de id . U moet uw eigen stap ontwikkelen om nieuwe functionaliteit uit te voeren.
 
-   Voer een `WorkflowExternalProcess`uit, dan gebruik de API JobService en uw baanonderwerp om een baangebeurtenis voor te bereiden en het te verzenden naar JobService (een dienst OSGi).
+   Voer `WorkflowExternalProcess` uit, dan gebruik de API JobService en uw baanonderwerp om een baangebeurtenis voor te bereiden en het te verzenden naar JobService (een dienst OSGi).
 
    Zie `INDDMediaExtractProcess`.java voor de IDS-proxyworker als voorbeeld.
 
 1. Voer een baanmanager voor uw onderwerp uit. Deze manager vereist ontwikkeling zodat het uw specifieke actie uitvoert en beschouwd wordt als om de arbeidersimplementatie.
 
-   Zie bijvoorbeeld `IDSJobProcessor.java` voor de IDS-proxyworker.
+   Zie `IDSJobProcessor.java` voor de IDS-proxyworker als voorbeeld.
 
-1. Maak gebruik van `ProxyUtil.java` in dammen. Hierdoor kunt u taken naar werknemers verzenden met de proxy voor moederdieren.
+1. Gebruik `ProxyUtil.java` in dam-commons. Hierdoor kunt u taken naar werknemers verzenden met de proxy voor moederdieren.
 
 >[!NOTE]
 >
