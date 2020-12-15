@@ -22,23 +22,23 @@ ht-degree: 8%
 
 >[!CAUTION]
 >
->Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor bepaalde functionaliteit voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md) vereist.
 
 ## Eigenschappen/metagegevens bewerken {#editing-properties-meta-data}
 
 U kunt de metagegevens (eigenschappen) voor inhoudsfragmenten weergeven en bewerken:
 
-1. Navigeer in de **[!UICONTROL Assets]** console naar de locatie van het inhoudsfragment.
+1. Navigeer in de **[!UICONTROL Assets]**-console naar de locatie van het inhoudsfragment.
 1. Ofwel:
 
-   * Selecteer Eigenschappen [weergeven om de dialoogvensters](managing-assets-touch-ui.md#editing-properties)te openen. Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
-   * Open het [inhoudsfragment voor Bewerken](content-fragments-managing.md#opening-the-fragment-editor)en selecteer het in het **[!UICONTROL Metadata]** zijpaneel.
+   * Selecteer [Eigenschappen weergeven om de dialoogvensters te openen](managing-assets-touch-ui.md#editing-properties). Als u de weergave eenmaal hebt geopend, kunt u deze ook bewerken.
+   * Open het [inhoudsfragment voor Bewerken](content-fragments-managing.md#opening-the-fragment-editor) en selecteer **[!UICONTROL Metadata]** in het zijpaneel.
 
    ![cfm-6420-06](assets/cfm-6420-06.png)
 
-1. Het **[!UICONTROL Basic]** tabblad bevat opties die u kunt weergeven of bewerken:
+1. Het tabblad **[!UICONTROL Basic]** bevat opties die u kunt weergeven of bewerken:
 
-   * Miniatuur, waarvoor u de afbeelding kunt **uploaden**
+   * Miniatuur, waarvoor u **Afbeelding uploaden**
    * **Titel**
    * **Beschrijving**
    * **Tags**
