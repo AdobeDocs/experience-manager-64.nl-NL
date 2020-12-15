@@ -15,13 +15,13 @@ ht-degree: 0%
 
 Als u tijd en moeite wilt besparen terwijl u mogelijk honderden video&#39;s moet doorbladeren, gebruikt u trefwoorden, bestandseigenschappen zoals het bestandstype of recentelijk gewijzigde tijdstempel om snel uw bestand te zoeken.
 
-Als u niet het dossier ziet u zoekt, kunt u het volledige werkingsgebied van een onderzoek veranderen door één van de opties bij de bodem van de onderzoeksresultaten te klikken. Als u bijvoorbeeld naar een bestand in de documentenbibliotheek zoekt maar dit niet kunt vinden, kunt u op Bibliotheken klikken om de zoekopdracht uit te breiden naar de rest van uw bibliotheken. Zie Een bestand of map [](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder)zoeken voor meer informatie.
+Als u niet het dossier ziet u zoekt, kunt u het volledige werkingsgebied van een onderzoek veranderen door één van de opties bij de bodem van de onderzoeksresultaten te klikken. Als u bijvoorbeeld naar een bestand in de documentenbibliotheek zoekt maar dit niet kunt vinden, kunt u op Bibliotheken klikken om de zoekopdracht uit te breiden naar de rest van uw bibliotheken. Zie [Een bestand of map zoeken](https://windows.microsoft.com/en-us/windows7/find-a-file-or-folder) voor meer informatie.
 
 U kunt naar digitale elementen zoeken op basis van een of meer van de volgende eigenschappen:
 
 | Zoekveld | Waarden van eigenschappen zoeken |
 |---|---|
-| MIME-typen | [!UICONTROL Images], [!UICONTROL Documents], [!UICONTROL Multimedia], [!UICONTROL Archives]of Overige. |
+| MIME-typen | [!UICONTROL Images],  [!UICONTROL Documents],  [!UICONTROL Multimedia],  [!UICONTROL Archives]of Overige. |
 | [!UICONTROL Last Modified] | Uur, Dag, Week, Maand of Jaar. |
 | [!UICONTROL File Size] | Klein, Normaal of Groot. |
 | [!UICONTROL Publish] Status | Gepubliceerd of Niet gepubliceerd. |
@@ -36,7 +36,7 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 | Audiocodec | Libvorbis, Lame Mp3, AAC Encoding.Value wordt opgeslagen in de meta-gegevens van videovertoningen slechts. |
 | Audiobitsnelheid | Specified as a minimum and maximum value.Value is stored in the metadata of video renditions only. |
 
-1. Tik op de **[!UICONTROL Experience Manager]** pagina in de linkerspoorstaaf **[!UICONTROL Assets]**.
+1. Tik op de pagina **[!UICONTROL Experience Manager]** in de linkertrack op **[!UICONTROL Assets]**.
 
    Als de linkerspoorstaaf niet zichtbaar is, tik het pictogram van het Spoorstaaf in-/uitschakelen (de lijnen in het pictogram zijn donkergrijs of blauw).
 
@@ -58,4 +58,4 @@ U kunt naar digitale elementen zoeken op basis van een of meer van de volgende e
 
       Voer een trefwoord in in in plaats van op Enter te drukken, vouw een lijst met video- of audio-eigenschappen uit en stel vervolgens de gewenste waarden in.
 
-1. (Optioneel) Tik onder aan de pagina **[!UICONTROL Save Smart Collection]** op een naam voor de zoekopdracht. Controleer **[!UICONTROL Public]** of de opgeslagen zoekopdracht beschikbaar moet worden gemaakt voor andere gebruikers van de Adobe Experience Manager-account. Schakel de optie uit als u de zoekopdracht alleen aan u wilt laten uitvoeren wanneer u bent aangemeld bij de account. Tik op **[!UICONTROL Save]**.
+1. (Optioneel) Tik onder aan de pagina op **[!UICONTROL Save Smart Collection]** en voer een naam in voor de zoekopdracht. Schakel **[!UICONTROL Public]** in als u de opgeslagen zoekopdracht beschikbaar wilt maken voor andere gebruikers van de Adobe Experience Manager-account. Schakel de optie uit als u de zoekopdracht alleen aan u wilt laten uitvoeren wanneer u bent aangemeld bij de account. Tik op **[!UICONTROL Save]**.
