@@ -25,7 +25,7 @@ Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan het Por
 >
 >Adobe raadt gefaseerde publicatie aan, bij voorkeur niet tijdens piekuren, zodat de AEM-auteur niet te veel bronnen in beslag neemt.
 
-1. Houd de muisaanwijzer boven de gewenste elementen in de middelenconsole en selecteer de gewenste optie in de **[!UICONTROL Publish]** snelhandelingen.
+1. Houd de muisaanwijzer boven de gewenste elementen in de middelenconsole en selecteer de optie **[!UICONTROL Publish]** in de snelhandelingen.
 
    U kunt ook de elementen selecteren die u naar Brand Portal wilt publiceren.
 
@@ -39,13 +39,13 @@ Nadat de replicatie slaagt, kunt u activa, omslagen, en inzamelingen aan het Por
 
 Voer een van de volgende handelingen uit om de geselecteerde assets naar Brand Portal te publiceren:
 
-* Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Then from the menu, select **[!UICONTROL Publish to Brand Portal]**.
+* Selecteer **[!UICONTROL Quick Publish]** in de werkbalk. Selecteer vervolgens **[!UICONTROL Publish to Brand Portal]** in het menu.
 
 * Selecteer **[!UICONTROL Manage Publication]** in de werkbalk.
 
-   1. Kies vervolgens **[!UICONTROL Action]** de optie **[!UICONTROL Publish to Brand Portal]** en **[!UICONTROL Scheduling]** selecteer **[!UICONTROL Now]**. Tik of klik op **[!UICONTROL Next].**
+   1. Selecteer vervolgens **[!UICONTROL Action]** in **[!UICONTROL Publish to Brand Portal]** en selecteer **[!UICONTROL Scheduling]** **[!UICONTROL Now]**. Tik of klik op **[!UICONTROL Next].**
 
-   2. Bevestig **[!UICONTROL Scope]** binnen uw selectie en tik/klik op **[!UICONTROL Publish to Brand Portal]**.
+   2. Bevestig binnen **[!UICONTROL Scope]** uw selectie en tik/klik **[!UICONTROL Publish to Brand Portal]**.
 
 Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij zijn geplaatst voor publicatie naar Brand Portal. Meld u aan bij de interface Brand Portal om de gepubliceerde elementen te bekijken.
 
@@ -53,8 +53,8 @@ Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij z
 
 Voer de volgende handelingen uit om het publiceren van de assets naar Brand Portal op een latere datum of tijd te plannen:
 
-1. Als u middelen/mappen hebt geselecteerd om te publiceren, selecteert u deze in de **[!UICONTROL Manage Publication]** werkbalk bovenaan.
-2. Selecteer op **[!UICONTROL Manage Publication]** de pagina **[!UICONTROL Publish to Brand Portal]** een optie **[!UICONTROL Action]** en selecteer een **[!UICONTROL Later]** optie **[!UICONTROL Scheduling]**.
+1. Als u elementen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk boven in het scherm.
+2. Selecteer **[!UICONTROL Manage Publication]** op &lt;a0/> pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
