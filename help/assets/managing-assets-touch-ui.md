@@ -16,27 +16,27 @@ ht-degree: 1%
 
 Leer meer over verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets.
 
-In dit artikel wordt beschreven hoe u elementen beheert en bewerkt met de door Adobe Experience Manager (AEM) Assets Touch geoptimaliseerde gebruikersinterface. Voor elementaire kennis van de gebruikersinterface, zie [Basisbehandeling van Aanraakinterface](/help/sites-authoring/basic-handling.md). Zie [Elementen van inhoudsfragmenten](content-fragments-managing.md) beheren voor informatie over het beheren van inhoudsfragmenten.
+In dit artikel wordt beschreven hoe u elementen beheert en bewerkt met de door Adobe Experience Manager (AEM) Assets Touch geoptimaliseerde gebruikersinterface. Voor elementaire kennis van de gebruikersinterface, zie [Basisbehandeling van Aanraakinterface](/help/sites-authoring/basic-handling.md). Zie [Inhoudsfragmenten beheren](content-fragments-managing.md) elementen voor het beheren van Inhoudsfragmenten.
 
-## Mappen maken {#create-folders}
+## Mappen {#create-folders} maken
 
-Wanneer u een verzameling elementen indeelt, bijvoorbeeld alle `Nature` afbeeldingen, kunt u mappen maken om ze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
+Wanneer u een verzameling elementen ordent, bijvoorbeeld alle `Nature`-afbeeldingen, kunt u mappen maken om deze bij elkaar te houden. U kunt mappen gebruiken om uw elementen te categoriseren en in te delen. Voor AEM Assets hoeft u elementen niet in mappen te ordenen om beter te werken.
 
 >[!NOTE]
 >
->* Het delen van een map Middelen van het type `sling:OrderedFolder` wordt niet ondersteund bij het delen naar de Marketing Cloud. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
->* Experience Manager staat het gebruik van `subassets` woord als naam van een map niet toe. Het is een gereserveerd sleutelwoord voor knoop die subassets voor samengestelde activa bevatten.
+>* Het delen van een map Middelen van het type `sling:OrderedFolder` wordt niet ondersteund bij het delen naar Marketing Cloud. Als u een map wilt delen, selecteert u Niet geordend bij het maken van een map.
+>* Experience Manager staat het gebruik van `subassets` woord als naam van een omslag niet toe. Het is een gereserveerd sleutelwoord voor knoop die subassets voor samengestelde activa bevatten.
 
 
 1. Navigeer naar de plaats in de map met digitale elementen waar u een nieuwe map wilt maken.
-1. In the menu, click **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
-1. Geef in het **[!UICONTROL Title]** veld een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
+1. Klik in het menu op **[!UICONTROL Create]**. Selecteer **[!UICONTROL New Folder]**.
+1. Geef in het veld **[!UICONTROL Title]** een mapnaam op. Standaard gebruikt DAM de titel die u als mapnaam hebt opgegeven. Nadat de map is gemaakt, kunt u de standaardinstelling overschrijven en een andere mapnaam opgeven.
 1. Klik op **[!UICONTROL Create]**. De map wordt weergegeven in de map met digitale middelen.
 
 De volgende tekens (lijst met door spaties gescheiden tekens) worden niet ondersteund:
 
-* de naam van het elementbestand mag geen elementen bevatten  `* / : [ \ \ ] | # % { } ? &`
-* de naam van de elementenmap mag niet bevatten  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+* elementbestandsnaam mag geen `* / : [ \ \ ] | # % { } ? &` bevatten
+* elementmapnaam mag geen `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t` bevatten
 
 ## Elementen uploaden {#uploading-assets}
 
@@ -44,47 +44,47 @@ U kunt verschillende typen elementen (zoals afbeeldingen, PDF-bestanden, RAW-bes
 
 >[!NOTE]
 >
->In de modus Dynamische media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
+>In de modus Dynamic Media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
 
 U kunt ervoor kiezen elementen te uploaden naar mappen waaraan al dan niet een verwerkingsprofiel is toegewezen.
 
-Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstweergave wordt de profielnaam weergegeven in de **[!UICONTROL Processing Profile]** kolom. Zie [Profielen](processing-profiles.md)verwerken.
+Voor mappen waaraan een verwerkingsprofiel is toegewezen, wordt de profielnaam weergegeven op de miniatuur in de kaartweergave. In de lijstmening, verschijnt de profielnaam in **[!UICONTROL Processing Profile]** kolom. Zie [Profielen verwerken](processing-profiles.md).
 
-Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indeling](assets-formats.md)heeft.
+Voordat u een element uploadt, moet u ervoor zorgen dat het een [ondersteunde indeling](assets-formats.md) heeft.
 
 **Elementen** uploaden:
 
 1. Navigeer in de middelenwebinterface naar de locatie waar u digitale elementen wilt toevoegen.
 1. Voer een van de volgende handelingen uit om de elementen te uploaden:
 
-   * Tik op het **[!UICONTROL Create]** pictogram op de werkbalk. Tik vervolgens op het menu **[!UICONTROL Files]**. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
+   * Tik op het pictogram **[!UICONTROL Create]** op de werkbalk. Tik vervolgens op **[!UICONTROL Files]** in het menu. U kunt de naam van het bestand desgewenst wijzigen in het dialoogvenster dat verschijnt.
    * In browser die HTML5 steunt, sleep de activa direct op de interface. Het dialoogvenster voor het wijzigen van de naam van het bestand wordt niet weergegeven.
 
    ![create_menu](assets/create_menu.png)
 
    Als u meerdere bestanden wilt selecteren, drukt u op Ctrl/Command en selecteert u de elementen in het dialoogvenster Bestandenkiezer. Op een iPad kunt u slechts één bestand tegelijk selecteren.
 
-   U kunt het uploaden van grote elementen (groter dan 500 MB) pauzeren en later vanaf dezelfde pagina hervatten. Tik op het **[!UICONTROL Pause]** pictogram naast de voortgangsbalk die wordt weergegeven wanneer het uploaden start.
+   U kunt het uploaden van grote elementen (groter dan 500 MB) pauzeren en later vanaf dezelfde pagina hervatten. Tik op het pictogram **[!UICONTROL Pause]** naast de voortgangsbalk die wordt weergegeven wanneer het uploaden start.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
-   De omvang waarboven een actief als een groot actief wordt beschouwd, kan worden geconfigureerd. U kunt het systeem bijvoorbeeld zodanig configureren dat elementen boven 1000 MB (in plaats van 500 MB) als grote elementen worden beschouwd. In dit geval wordt de **[!UICONTROL Pause]** knop op de voortgangsbalk weergegeven wanneer bestanden van meer dan 1000 MB worden geüpload.
+   De omvang waarboven een actief als een groot actief wordt beschouwd, kan worden geconfigureerd. U kunt het systeem bijvoorbeeld zodanig configureren dat elementen boven 1000 MB (in plaats van 500 MB) als grote elementen worden beschouwd. In dit geval wordt de knop **[!UICONTROL Pause]** in de voortgangsbalk weergegeven wanneer bestanden van meer dan 1000 MB worden geüpload.
 
-   De **[!UICONTROL Pause]** knop wordt niet weergegeven als een bestand van meer dan 1000 MB wordt geüpload met een bestand van minder dan 1000 MB. Als u echter het uploaden van bestanden met minder dan 1000 MB annuleert, wordt de **[!UICONTROL Pause]** knop weergegeven.
+   De knop **[!UICONTROL Pause]** wordt niet weergegeven als een bestand van meer dan 1000 MB wordt geüpload met een bestand van minder dan 1000 MB. Als u echter de bestandsupload van minder dan 1000 MB annuleert, wordt de knop **[!UICONTROL Pause]** weergegeven.
 
-   Om de groottegrens te wijzigen, vorm het `chunkUploadMinFileSize` bezit van de `fileupload`knoop in de bewaarplaats CRX.
+   Als u de formaatlimiet wilt wijzigen, configureert u de eigenschap `chunkUploadMinFileSize` van het `fileupload`knooppunt in de CRX-opslagruimte.
 
-   Wanneer u op het **[!UICONTROL Pause]** pictogram klikt, wordt geschakeld naar een **[!UICONTROL Play]** pictogram. Klik op het **[!UICONTROL Play]** pictogram om het uploaden te hervatten.
+   Wanneer u op het pictogram **[!UICONTROL Pause]** klikt, wordt geschakeld naar een **[!UICONTROL Play]**-pictogram. Klik op het pictogram **[!UICONTROL Play]** om het uploaden te hervatten.
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-   Als u een actieve upload wilt annuleren, klikt u op de `X` knop naast de voortgangsbalk. Wanneer u het uploaden annuleert, verwijdert AEM Assets het gedeeltelijk geüploade gedeelte van het element.
+   Als u een actieve upload wilt annuleren, klikt u op de knop `X` naast de voortgangsbalk. Wanneer u het uploaden annuleert, verwijdert AEM Assets het gedeeltelijk geüploade gedeelte van het element.
 
    De mogelijkheid om het uploaden te hervatten is vooral handig in scenario&#39;s met lage bandbreedte en netwerkstoringen, waarbij het uploaden van een groot element veel tijd in beslag neemt. U kunt het uploaden pauzeren en verdergaan wanneer de situatie verbetert. Wanneer u het document hervat, begint het uploaden vanaf het punt waarop u het hebt gepauzeerd.
 
    Tijdens het uploaden slaat AEM de delen van het element dat wordt geüpload op als stukjes gegevens in de CRX-opslagplaats. Wanneer het uploaden is voltooid, consolideert AEM deze fragmenten in één gegevensblok in de gegevensopslagruimte.
 
-   Ga naar om de opschoningstaak voor de onvoltooide taken voor het uploaden van taken te configureren. `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask`
+   Ga naar `https://[aem_server]:[port]/system/console/configMgr/org.apache.sling.servlets.post.impl.helper.ChunkCleanUpTask` om de opschoningstaak voor de onvoltooide taken voor het uploaden van taken te configureren.
 
    Als u een element uploadt met dezelfde naam als een element dat al beschikbaar is op de locatie waar u het element uploadt, wordt een waarschuwingsvenster weergegeven.
 
@@ -94,15 +94,15 @@ Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indel
 
    >[!NOTE]
    >
-   >Wanneer u **[!UICONTROL Replace]** in het **[!UICONTROL Name Conflict]** dialoogvenster selecteert, wordt de element-id opnieuw gegenereerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
+   >Wanneer u **[!UICONTROL Replace]** in het **[!UICONTROL Name Conflict]** dialoogvakje selecteert, wordt de activa-identiteitskaart opnieuw geproduceerd voor het nieuwe element. Deze id verschilt van de id van het vorige element.
    >
    >Als **[!UICONTROL Asset Insights]** is ingeschakeld om afbeeldingen bij te houden/op Adobe Analytics te klikken, maakt deze opnieuw gegenereerde element-id de gegevensopname voor het element op Adobe Analytics ongeldig.
 
-   Als het element dat u uploadt al in AEM Assets bestaat, wordt in het **[!UICONTROL Duplicates Detected]** dialoogvenster gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom SHA 1 van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van activa niet van belang. Met andere woorden, het dialoogvenster kan zelfs worden weergegeven voor elementen met verschillende namen als de SHA 1-waarden voor hun binaire getallen gelijk zijn.
+   Als het element dat u uploadt bestaat in AEM Assets, wordt in het dialoogvenster **[!UICONTROL Duplicates Detected]** gewaarschuwd dat u probeert een gedupliceerd element te uploaden. Het dialoogvenster wordt alleen weergegeven als de waarde van de controlesom SHA 1 van de binaire waarde van het bestaande element overeenkomt met de waarde van de controlesom van het element dat u uploadt. In dit geval zijn de namen van activa niet van belang. Met andere woorden, het dialoogvenster kan zelfs worden weergegeven voor elementen met verschillende namen als de SHA 1-waarden voor hun binaire getallen gelijk zijn.
 
    >[!NOTE]
    >
-   >Het **[!UICONTROL Duplicates Detected]** dialoogvenster wordt alleen weergegeven wanneer de **[!UICONTROL Duplicate Detection]** functie is ingeschakeld. Zie Dubbele detectie **[!UICONTROL Duplicate Detection]** inschakelen om de [functie in te schakelen](duplicate-detection.md).
+   >Het dialoogvenster **[!UICONTROL Duplicates Detected]** wordt alleen weergegeven wanneer de functie **[!UICONTROL Duplicate Detection]** is ingeschakeld. Zie [Dubbele detectie inschakelen](duplicate-detection.md) om de functie **[!UICONTROL Duplicate Detection]** in te schakelen.
 
    ![chlimage_1-8](assets/chlimage_1-8.png)
 
@@ -110,17 +110,17 @@ Voordat u een element uploadt, moet u controleren of dit een [ondersteunde indel
 
    AEM Assets voorkomt dat u elementen uploadt met verboden tekens in de bestandsnaam. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, geeft AEM Assets een waarschuwingsbericht weer over de aanwezigheid van verboden tekens in de bestandsnaam en stopt de upload totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
-   In het **[!UICONTROL Upload Assets]** dialoogvenster kunt u lange namen opgeven voor de bestanden die u uploadt, zodat deze passen bij specifieke naamconventies voor bestanden voor uw organisatie.
+   Als u specifieke conventies voor het benoemen van bestanden voor uw organisatie wilt gebruiken, kunt u in het dialoogvenster **[!UICONTROL Upload Assets]** lange namen opgeven voor de bestanden die u uploadt.
 
    ![chlimage_1-9](assets/chlimage_1-9.png)
 
    De volgende tekens (lijst met door spaties gescheiden tekens) worden echter niet ondersteund:
-   * de naam van het elementbestand mag geen elementen bevatten  `* / : [ \ \ ] | # % { } ? &`
-   * de naam van de elementenmap mag niet bevatten  `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t`
+   * elementbestandsnaam mag geen `* / : [ \ \ ] | # % { } ? &` bevatten
+   * elementmapnaam mag geen `* / : [ \ \ ] | # % { } ? \" . ^ ; + & \t` bevatten
 
    Daarnaast wordt in de interface Middelen het meest recente element weergegeven dat u uploadt of de map die u eerst maakt in alle weergaven (**[!UICONTROL Card view]**, **[!UICONTROL List view]** en **[!UICONTROL Column view]**).
 
-   Vaak, terwijl het uploaden van grote activa of veelvoudige activa gelijktijdig, laten de visuele indicatoren u toe om de vooruitgang te beoordelen. In het **[!UICONTROL Upload Progress]** dialoogvenster ziet u het aantal bestanden dat is geüpload en de bestanden die niet zijn geüpload.
+   Vaak, terwijl het uploaden van grote activa of veelvoudige activa gelijktijdig, laten de visuele indicatoren u toe om de vooruitgang te beoordelen. In het dialoogvenster **[!UICONTROL Upload Progress]** ziet u het aantal bestanden dat is geüpload en de bestanden die niet zijn geüpload.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
@@ -132,43 +132,43 @@ Het uploaden van talrijke activa in bulk verbruikt significante systeemmiddelen,
 
 Om deze situatie te verhelpen, neemt AEM Assets één middel tegelijkertijd (periodieke upload) tijdens een bulkupload verrichting op, in plaats van het tegelijkertijd opnemen van alle activa.
 
-Seriële uploaden van elementen is standaard ingeschakeld. Als u de functie wilt uitschakelen en tegelijkertijd uploaden wilt toestaan, bedekt u het `fileupload` knooppunt in CRXDe en stelt u de waarde van de `parallelUploads` eigenschap in op `true`.
+Seriële uploaden van elementen is standaard ingeschakeld. Als u de functie wilt uitschakelen en tegelijkertijd uploaden wilt toestaan, bedekt u de `fileupload`-node in CRXDe en stelt u de waarde van de eigenschap `parallelUploads` in op `true`.
 
 ### Elementen uploaden met FTP {#uploading-assets-using-ftp}
 
-Met Dynamic Media kunt u via een FTP-server items in batches uploaden. Als u grote bestanden (>1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
+Dynamic Media maakt het uploaden van bestanden in batches via FTP-server mogelijk. Als u grote bestanden (>1 GB) wilt uploaden of volledige mappen en submappen wilt uploaden, moet u FTP gebruiken. U kunt zelfs instellen dat FTP-upload wordt uitgevoerd op een terugkerende geplande basis.
 
 >[!NOTE]
 >
->In de modus Dynamische media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
+>In de modus Dynamic Media - Scene7 kunt u alleen elementen uploaden waarvan de bestandsgrootte 2 GB of minder is.
 
 >[!NOTE]
 >
->Om elementen via FTP te uploaden in Dynamic Media - Scene7 mode installeert feature pack (FP) 18912 op AEM auteur. Neem contact op met de klantenservice van Adobe om toegang te krijgen tot FP-18912 en de installatie van uw FTP-account te voltooien. Zie [Functiepakket 18912 installeren voor migratie](/help/assets/bulk-ingest-migrate.md)van bulkmiddelen.
+>Om elementen via FTP te uploaden in Dynamic Media - Scene7 mode installeert feature pack (FP) 18912 op AEM auteur. Neem contact op met de klantenservice van Adobe om toegang te krijgen tot FP-18912 en de installatie van uw FTP-account te voltooien. Zie [Actiepakket 18912 installeren voor de migratie van grote hoeveelheden elementen](/help/assets/bulk-ingest-migrate.md).
 >
 >Als u FTP gebruikt om elementen te uploaden, worden de uploadinstellingen die in AEM zijn opgegeven genegeerd. In plaats daarvan worden de regels voor bestandsverwerking gebruikt, zoals gedefinieerd in Dynamic Media Classic.
 
 **Elementen uploaden met FTP**
 
 1. Meld u met uw keuze voor een FTP-client aan bij de FTP-server met de FTP-gebruikersnaam en -wachtwoord die u van de e-mail met de provisioning hebt ontvangen. Upload in de FTP-client bestanden of mappen naar de FTP-server.
-1. [Meld u aan bij Dynamic Media Classic](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) met gebruikersgegevens die zijn ontvangen van de e-mail met provisioning. Tik op de algemene navigatiebalk **[!UICONTROL Upload]**.
+1. [Meld u aan bij Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicusing met gegevens die zijn ontvangen van de e-mail met provisioning. Tik op **[!UICONTROL Upload]** op de algemene navigatiebalk.
 
-1. Tik op de **[!UICONTROL Upload]** pagina in de linkerbovenhoek op de **[!UICONTROL Via FTP]** tab.
+1. Tik op de **[!UICONTROL Upload]**-pagina in de linkerbovenhoek op het tabblad **[!UICONTROL Via FTP]**.
 1. Kies links op de pagina een FTP-map waaruit u bestanden wilt uploaden. aan de rechterkant van de pagina kiest u een doelmap.
-1. Tik in de rechterbenedenhoek van de pagina op de gewenste opties **[!UICONTROL Job Options]** en stel deze in op basis van de elementen in de map die u hebt geselecteerd.
+1. Tik in de rechterbenedenhoek van de pagina op **[!UICONTROL Job Options]** en stel vervolgens de gewenste opties in op basis van de elementen in de map die u hebt geselecteerd.
 
-   Zie Taakopties [uploaden](#upload-job-options).
+   Zie [Taakopties uploaden](#upload-job-options).
 
    >[!NOTE]
    >
    >Wanneer u elementen uploadt via FTP, hebben de opties voor uploadtaken die u instelt in Dynamic Media Classic (Scene7) voorrang op de parameters voor elementverwerking die zijn ingesteld in AEM.
 
-1. Tik in de rechterbenedenhoek van het **[!UICONTROL Upload Job Options]** dialoogvenster op **[!UICONTROL Save]**.
-1. In the lower-right corner of the **[!UICONTROL Upload]** page, tap **[!UICONTROL Submit Upload]**.
+1. Tik in de rechterbenedenhoek van het dialoogvenster **[!UICONTROL Upload Job Options]** op **[!UICONTROL Save]**.
+1. Tik in de rechterbenedenhoek van de pagina **[!UICONTROL Upload]** op **[!UICONTROL Submit Upload]**.
 
-   Tik op de algemene navigatiebalk om de voortgang van het uploaden weer te geven **[!UICONTROL Jobs]**. Op de **[!UICONTROL Jobs]** pagina wordt de voortgang van het uploaden weergegeven. U kunt in AEM blijven werken en op elk ogenblik aan de pagina van Banen in Dynamische Klassiek van Media terugkeren om een lopende baan te herzien.
+   Tik op **[!UICONTROL Jobs]** om de voortgang van het uploaden te bekijken. Op de pagina **[!UICONTROL Jobs]** wordt de voortgang van het uploaden weergegeven. U kunt op elk gewenst moment blijven werken in AEM en terugkeren naar de pagina Taken in Dynamic Media Classic om een actieve taak te controleren.
 
-   Tik **[!UICONTROL Cancel]** naast de **[!UICONTROL Duration]** tijd om een actieve uploadtaak te annuleren.
+   Als u een actieve uploadtaak wilt annuleren, tikt u op **[!UICONTROL Cancel]** naast de **[!UICONTROL Duration]**-tijd.
 
 #### Opties voor uploaden {#upload-job-options}
 
@@ -178,22 +178,22 @@ Met Dynamic Media kunt u via een FTP-server items in batches uploaden. Als u gro
 | Publiceren na uploaden |  | Hiermee publiceert u automatisch de elementen die u uploadt. |
 | Overschrijven in een willekeurige map, dezelfde naam van basiselement, ongeacht de extensie |  | Selecteer deze optie als u wilt dat de bestanden die u uploadt, bestaande bestanden met dezelfde naam vervangen. De naam van deze optie kan verschillen, afhankelijk van de instellingen in **[!UICONTROL Application Setup]** > **[!UICONTROL General Settings]** > **[!UICONTROL Upload to Application]** > **[!UICONTROL Overwrite Images]**. |
 | ZIP- of TAR-bestanden decomprimeren tijdens het uploaden |  |  |
-| Taakopties |  | Tik/klik **[!UICONTROL Job Options]** om het [!UICONTROL Upload Job Options] dialoogvenster te openen en kies opties die de volledige uploadtaak beïnvloeden. Deze opties zijn hetzelfde voor alle bestandstypen.<br>U kunt standaardopties kiezen voor het uploaden van bestanden die beginnen op de pagina Algemene instellingen van toepassing. Kies **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]**. Tik op de **[!UICONTROL Default Upload Options]** knop om het [!UICONTROL Upload Job Options] dialoogvenster te openen. |
+| Taakopties |  | Tik/ klik op **[!UICONTROL Job Options]** om het dialoogvenster [!UICONTROL Upload Job Options] te openen en opties te kiezen die van invloed zijn op de volledige uploadtaak. Deze opties zijn hetzelfde voor alle bestandstypen.<br>U kunt standaardopties kiezen voor het uploaden van bestanden die beginnen op de pagina Algemene instellingen van toepassing. Kies **[!UICONTROL Setup]** > **[!UICONTROL Application Setup]** om deze pagina te openen. Tik op de knop **[!UICONTROL Default Upload Options]** om het dialoogvenster [!UICONTROL Upload Job Options] te openen. |
 |  | Wanneer | Selecteer Eenmalig of Herhalend. Als u een terugkerende taak wilt instellen, kiest u de optie Herhalen (Dagelijks, Wekelijks, Maandelijks of Aangepast) om op te geven wanneer de FTP-uploadtaak moet worden herhaald. Geef vervolgens de gewenste planningsopties op. |
 |  | Inclusief submappen | Upload alle submappen in de map die u wilt uploaden. De namen van de map en de submappen die u uploadt, worden automatisch ingevoerd in AEM Assets. |
-|  | Opties voor uitsnijden | Als u handmatig wilt uitsnijden aan weerszijden van een afbeelding, selecteert u het menu Uitsnijden en kiest u Handmatig. Voer vervolgens het aantal pixels in dat u aan elke zijde van de afbeelding wilt uitsnijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand. Als de afbeelding bijvoorbeeld 150 ppi weergeeft en u 75 invoert in de tekstvakken Boven, Rechts, Onder en Links, wordt aan beide zijden een halve inch bijgesneden.<br> Als u pixels in witruimte automatisch wilt uitsnijden in een afbeelding, opent u het menu Uitsnijden, kiest u Handmatig en voert u pixelmetingen in in de velden Boven, Rechts, Onder en Links om van de zijkanten bij te snijden. U kunt ook Bijsnijden kiezen in het menu Uitsnijden en de volgende opties kiezen:<br> **Wegsnijden op basis van** <ul><li>**Kleur** - Kies de optie Kleur. Selecteer vervolgens het menu Hoek en kies de hoek van de afbeelding met de kleur die het beste overeenkomt met de kleur voor de witruimte die u wilt uitsnijden.</li><li>**Transparantie** - Kies de optie Transparantie.<br> **Tolerantie** - Sleep de schuifregelaar om een tolerantie tussen 0 en 1 op te geven. Geef voor bijsnijden op basis van kleur 0 op om alleen pixels bij te snijden als deze exact overeenkomen met de kleur die u in de hoek van de afbeelding hebt geselecteerd. De aantallen dichter aan 1 staan voor meer kleurenverschil toe.<br>Voor het bijsnijden op basis van transparantie geeft u 0 op om alleen pixels bij te snijden als deze transparant zijn. De aantallen dichter aan 1 staan voor meer transparantie toe.</li></ul><br>Deze opties voor uitsnijden zijn niet-destructief. |
-|  | Opties voor kleurprofiel | Kies een kleurconversie wanneer u geoptimaliseerde bestanden maakt die worden gebruikt voor levering:<ul><li>Standaardkleurbehoud: De kleuren van de bronafbeelding blijven behouden wanneer de afbeeldingen kleurruimte-informatie bevatten. er is geen kleurconversie. In bijna alle afbeeldingen van vandaag is het juiste kleurprofiel al ingesloten. Als een CMYK-bronafbeelding echter geen ingesloten kleurprofiel bevat, worden de kleuren omgezet in de kleurruimte sRGB (standaard rood-groen-blauw). sRGB is de aanbevolen kleurruimte voor het weergeven van afbeeldingen op webpagina&#39;s.</li><li>Oorspronkelijke kleurruimte behouden: Behoudt de oorspronkelijke kleuren zonder kleurconversie op het punt. Voor afbeeldingen zonder ingesloten kleurprofiel wordt elke kleurconversie uitgevoerd met de standaardkleurprofielen die zijn geconfigureerd in de Publicatie-instellingen. De kleurprofielen worden mogelijk niet uitgelijnd met de kleur in de bestanden die met deze optie zijn gemaakt. Daarom wordt u aangeraden de optie Standaardkleurbehoud te gebruiken.</li><li>Kies Aangepast van > naar<br> om de menu&#39;s te openen, zodat u de optie Omzetten van en Omzetten in kleurruimte kunt kiezen. Deze geavanceerde optie negeert alle kleurinformatie die in het bronbestand is ingesloten. Selecteer deze optie als alle afbeeldingen die u verzendt, onjuiste of ontbrekende kleurprofielgegevens bevatten.</li></ul> |
-|  | Beeldbewerkingsopties | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> Zie Opties voor [het bewerken van afbeeldingen tijdens het uploaden](#setting-image-editing-options-at-upload)instellen. |
-|  | PostScript-opties | U kunt PostScript® rasteren, bestanden uitsnijden, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie [Uploadopties](#setting-postscript-and-illustrator-upload-options)voor PostScript en Illustrator instellen. |
-|  | Photoshop-opties | U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeven hoe lagen worden benoemd, tekst extraheren en opgeven hoe afbeeldingen in sjablonen worden verankerd.<br> Sjablonen worden niet ondersteund in AEM.<br> Zie [Photoshop-uploadopties](#setting-photoshop-upload-options)instellen. |
-|  | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br> E-catalogi worden niet ondersteund in AEM. <br> Zie [Opties voor](#setting-pdf-upload-options)PDF-upload instellen. |
-|  | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie [Uploadopties](#setting-postscript-and-illustrator-upload-options)voor PostScript en Illustrator instellen. |
-|  | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> Zie [Opties voor](#setting-evideo-upload-options)eVideo-upload instellen. |
-|  | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingen/batchsets van Dynamic Media Classic.<br> Zie Voorinstellingen voor batchsets [configureren voor het automatisch genereren van afbeeldingssets en centrifuges](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) voor meer informatie over het maken van voorinstellingen voor batchsets.<br> Zie Voorinstellingen [voor batchset instellen bij uploaden](#setting-batch-set-presets-at-upload). |
+|  | Opties voor uitsnijden | Als u handmatig wilt uitsnijden aan weerszijden van een afbeelding, selecteert u het menu Uitsnijden en kiest u Handmatig. Voer vervolgens het aantal pixels in dat u aan elke zijde van de afbeelding wilt uitsnijden. Hoeveel van de afbeelding wordt uitgesneden, is afhankelijk van de ppi-instelling (pixels per inch) in het afbeeldingsbestand. Als de afbeelding bijvoorbeeld 150 ppi weergeeft en u 75 invoert in de tekstvakken Boven, Rechts, Onder en Links, wordt aan beide zijden een halve inch bijgesneden.<br> Als u pixels in witruimte automatisch wilt uitsnijden in een afbeelding, opent u het menu Uitsnijden, kiest u Handmatig en voert u pixelmetingen in in de velden Boven, Rechts, Onder en Links om van de zijkanten bij te snijden. U kunt ook Bijsnijden kiezen in het menu Uitsnijden en de volgende opties kiezen:<br> **Wegsnijden op basis van** <ul><li>**Kleur**  - Kies de optie Kleur. Selecteer vervolgens het menu Hoek en kies de hoek van de afbeelding met de kleur die het beste overeenkomt met de kleur voor de witruimte die u wilt uitsnijden.</li><li>**Transparantie**  - Kies de optie Transparantie.<br> **Tolerantie**  - Sleep de schuifregelaar om een tolerantie tussen 0 en 1 op te geven. Geef voor bijsnijden op basis van kleur 0 op om alleen pixels bij te snijden als deze exact overeenkomen met de kleur die u in de hoek van de afbeelding hebt geselecteerd. De aantallen dichter aan 1 staan voor meer kleurenverschil toe.<br>Voor het bijsnijden op basis van transparantie geeft u 0 op om alleen pixels bij te snijden als deze transparant zijn. De aantallen dichter aan 1 staan voor meer transparantie toe.</li></ul><br>Deze opties voor uitsnijden zijn niet-destructief. |
+|  | Opties voor kleurprofiel | Kies een kleurconversie wanneer u geoptimaliseerde bestanden maakt die worden gebruikt voor levering:<ul><li>Standaardkleurbehoud: De kleuren van de bronafbeelding blijven behouden wanneer de afbeeldingen kleurruimte-informatie bevatten. er is geen kleurconversie. In bijna alle afbeeldingen van vandaag is het juiste kleurprofiel al ingesloten. Als een CMYK-bronafbeelding echter geen ingesloten kleurprofiel bevat, worden de kleuren omgezet in de kleurruimte sRGB (standaard rood-groen-blauw). sRGB is de aanbevolen kleurruimte voor het weergeven van afbeeldingen op webpagina&#39;s.</li><li>Oorspronkelijke kleurruimte behouden: Behoudt de oorspronkelijke kleuren zonder kleurconversie op het punt. Voor afbeeldingen zonder ingesloten kleurprofiel wordt elke kleurconversie uitgevoerd met de standaardkleurprofielen die zijn geconfigureerd in de Publicatie-instellingen. De kleurprofielen worden mogelijk niet uitgelijnd met de kleur in de bestanden die met deze optie zijn gemaakt. Daarom wordt u aangeraden de optie Standaardkleurbehoud te gebruiken.</li><li>Met Aangepast van > Naar<br> opent u menu&#39;s, zodat u een optie kunt kiezen voor Omzetten van en Omzetten in kleurruimte. Deze geavanceerde optie negeert alle kleurinformatie die in het bronbestand is ingesloten. Selecteer deze optie als alle afbeeldingen die u verzendt, onjuiste of ontbrekende kleurprofielgegevens bevatten.</li></ul> |
+|  | Beeldbewerkingsopties | U kunt de knipmaskers in afbeeldingen behouden en een kleurprofiel kiezen.<br> Zie Opties voor  [het bewerken van afbeeldingen tijdens het uploaden](#setting-image-editing-options-at-upload) instellen. |
+|  | PostScript-opties | U kunt PostScript® rasteren, bestanden uitsnijden, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie  [Uploadopties](#setting-postscript-and-illustrator-upload-options) voor PostScript en Illustrator instellen. |
+|  | Photoshop-opties | U kunt sjablonen maken van Adobe® Photoshop®-bestanden, lagen behouden, opgeven hoe lagen worden benoemd, tekst extraheren en opgeven hoe afbeeldingen in sjablonen worden verankerd.<br> Sjablonen worden niet ondersteund in AEM.<br> Zie  [Photoshop-uploadopties](#setting-photoshop-upload-options) instellen. |
+|  | PDF-opties | U kunt de bestanden rasteren, zoekwoorden en koppelingen extraheren, automatisch een eCatalog genereren, de resolutie instellen en een kleurruimte kiezen.<br> E-catalogi worden niet ondersteund in AEM. <br> Zie  [Opties voor](#setting-pdf-upload-options) PDF-upload instellen. |
+|  | Illustrator-opties | U kunt Adobe Illustrator®-bestanden rasteren, transparante achtergronden behouden, een resolutie kiezen en een kleurruimte kiezen.<br> Zie  [Uploadopties](#setting-postscript-and-illustrator-upload-options) voor PostScript en Illustrator instellen. |
+|  | EVideo-opties | U kunt een videobestand transcoderen door een videovoorinstelling te kiezen.<br> Zie  [Opties voor](#setting-evideo-upload-options) eVideo-upload instellen. |
+|  | Voorinstellingen batchset | Als u een Afbeeldingsset of Spin-set wilt maken van de geüploade bestanden, klikt u op de kolom Actief voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren. U maakt de voorinstellingen op de pagina Voorinstellingen voor toepassingsinstellingen/batchsets van Dynamic Media Classic.<br> Zie Voorinstellingen voor batchsets  [ ](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) configureren voor het automatisch genereren van afbeeldingssets en de instellingen voor centrifugeren voor meer informatie over het maken van voorinstellingen voor batchsets.<br> Zie Voorinstellingen  [voor batchset instellen bij uploaden](#setting-batch-set-presets-at-upload). |
 
 #### Opties voor het bewerken van afbeeldingen tijdens het uploaden instellen {#setting-image-editing-options-at-upload}
 
-Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het **[!UICONTROL Upload Job Options]** dialoogvenster:
+Wanneer u afbeeldingsbestanden uploadt, inclusief AI-, EPS- en PSD-bestanden, kunt u de volgende bewerkingen uitvoeren in het dialoogvenster **[!UICONTROL Upload Job Options]**:
 
 * Witruimte uitsnijden vanaf de rand van afbeeldingen (zie beschrijving in bovenstaande tabel).
 * Handmatig uitsnijden vanaf de zijkanten van afbeeldingen (zie beschrijving in bovenstaande tabel).
@@ -206,13 +206,13 @@ Wanneer u afbeeldingsbestanden uploadt, zoals AI-, EPS- en PSD-bestanden, kunt u
 |---|---|---|
 | Masker maken van uitknippad |  | Maak een masker voor de afbeelding op basis van de gegevens over het uitknippad. Deze optie is van toepassing op afbeeldingen die zijn gemaakt met beeldbewerkingstoepassingen waarin een uitknippad is gemaakt. |
 | Onscherp maskeren |  | Hiermee kunt u een verscherpingsfiltereffect perfectioneren op de uiteindelijke gedownsampelde afbeelding, waarbij u de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor contrast instelt die wordt genegeerd.<br> Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop. In tegenstelling tot wat de naam suggereert, is Onscherp masker een verscherpingsfilter. Stel onder Onscherp masker de gewenste opties in. De instellingsopties worden in het volgende beschreven: |
-|  | Hoeveelheid | Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels.<br> Beschouw het als de intensiteit van het effect. Het belangrijkste verschil tussen de waarden voor Onscherp masker in Dynamic Media en de waarden voor de hoeveelheid in Adobe Photoshop is dat Photoshop een bereik heeft van 1% tot 500%. In Dynamic Media is het waardebereik 0,0 tot en met 5,0. Een waarde van 5,0 is het ruwe equivalent van 500% in Photoshop; een waarde van 0,9 komt overeen met 90% enzovoort. |
+|  | Hoeveelheid | Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels.<br> Beschouw het als de intensiteit van het effect. Het belangrijkste verschil tussen de waarden voor de hoeveelheid Onscherp masker in Dynamic Media en de waarden voor de hoeveelheid in Adobe Photoshop is dat Photoshop een bereik heeft van 1% tot 500%. In Dynamic Media is het waardebereik 0,0 tot 5,0. Een waarde van 5,0 is het ruwe equivalent van 500% in Photoshop; een waarde van 0,9 komt overeen met 90% enzovoort. |
 |  | Radius | Hiermee bepaalt u de straal van het effect. Het waardebereik is 0-250.<br> Het effect wordt op alle pixels in een afbeelding uitgevoerd en wordt vanuit alle pixels in alle richtingen uitgestraald. De straal wordt gemeten in pixels. Als u bijvoorbeeld een vergelijkbaar verscherpingseffect wilt toepassen op een afbeelding van 2000 x 2000 pixels en een afbeelding van 500 x 500 pixels, stelt u een straal in van twee pixels op de afbeelding van 2000 x 2000 pixels en een straalwaarde van één pixel op de afbeelding van 500 x 500 pixels. Een hogere waarde wordt gebruikt voor een afbeelding met meer pixels. |
-|  | Drempel | Drempel is een contrastbereik dat wordt genegeerd wanneer het filter Onscherp masker wordt toegepast. Het is belangrijk dat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is 0-255. Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. 0=zwart, 128=50% grijs en 255=wit.<br> Een drempelwaarde van 12 negeert bijvoorbeeld kleine variaties door de helderheid van de huidskleur om ruis te voorkomen, maar voegt toch randcontrast toe aan contrasterende gebieden, zoals waar de wimpers de huid raken.<br> Als u bijvoorbeeld een foto van iemands gezicht hebt, heeft het filter Onscherp masker invloed op de contrasterende delen van de afbeelding, zoals waar de wimpers en de huid elkaar raken om een duidelijk contrastgebied te maken en op de zachte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele veranderingen in huidpixel. Er wordt op zijn beurt een lawaai en ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> Om dit probleem te voorkomen, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixels te negeren die het contrast niet drastisch wijzigen, zoals een vloeiende skin.<br> Let op de structuur naast de ritssluiters in de afbeelding die u eerder hebt weergegeven. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
+|  | Drempel | Drempel is een contrastbereik dat wordt genegeerd wanneer het filter Onscherp masker wordt toegepast. Het is belangrijk dat er geen &#39;ruis&#39; wordt toegevoegd aan een afbeelding wanneer dit filter wordt gebruikt. Het waardebereik is 0-255. Dit is het aantal helderheidsstappen in een grijswaardenafbeelding. 0=zwart, 128=50% grijs en 255=wit.<br> Een drempelwaarde van 12 negeert bijvoorbeeld kleine variaties door de helderheid van de huidskleur om ruis te voorkomen, maar voegt toch randcontrast toe aan contrasterende gebieden, zoals waar de wimpers de huid raken.<br> Als u bijvoorbeeld een foto van iemands gezicht hebt, heeft het filter Onscherp masker invloed op de contrasterende delen van de afbeelding, zoals waar de wimpers en de huid elkaar raken om een duidelijk contrastgebied te maken en op de zachte huid zelf. Zelfs de meest vloeiende skin vertoont subtiele wijzigingen in helderheidswaarden. Als u geen drempelwaarde gebruikt, accentueert het filter deze subtiele veranderingen in huidpixel. Er wordt op zijn beurt een lawaai en een ongewenst effect gecreëerd terwijl het contrast op de wimpers wordt verhoogd, waardoor de scherpte wordt vergroot.<br> Om dit probleem te voorkomen, wordt een drempelwaarde geïntroduceerd die het filter vertelt om pixels te negeren die het contrast niet drastisch wijzigen, zoals een vloeiende skin.<br> Let op de structuur naast de ritssluiters in de afbeelding die u eerder hebt weergegeven. Ruis in de afbeelding wordt weergegeven omdat de drempelwaarden te laag waren om de ruis te onderdrukken. |
 |  | Monochroom | Selecteer deze optie om de helderheid (intensiteit) van een afbeelding zonder scherp masker te wijzigen.<br> Schakel deze optie uit als u elke kleurcomponent afzonderlijk wilt ontscherpen. |
 | Achtergrond uitnemen |  | Hiermee verwijdert u automatisch de achtergrond van een afbeelding wanneer u deze uploadt. Deze techniek is nuttig om de aandacht op een bepaald voorwerp te vestigen en het van een drukke achtergrond te maken. Selecteer deze optie om de functie Achtergrond uitnemen en de volgende subopties in te schakelen of in te schakelen: |
-|  | Hoek | Vereist.<br> De hoek van de afbeelding die wordt gebruikt om de achtergrondkleur voor uitnemen te definiëren.<br> U kunt kiezen uit **Linksboven**, **Linksonder**, **Rechtsboven** of **Rechtsonder**. |
-|  | Vulmethode | Vereist.<br> Hiermee regelt u de pixeltransparantie vanaf de locatie Hoek die u instelt.<br> U kunt kiezen uit de volgende vulmethoden: <ul><li>**Flood Fill** - hiermee worden alle pixels transparant gemaakt die overeenkomen met de hoek die u hebt opgegeven en waarop u bent aangesloten.</li><li>**Pixel** afstemmen - hiermee worden alle overeenkomende pixels transparant gemaakt, ongeacht de locatie van de pixels op de afbeelding.</li></ul> |
+|  | Hoek | Vereist.<br> De hoek van de afbeelding die wordt gebruikt om de achtergrondkleur voor uitnemen te definiëren.<br> U kunt kiezen uit  **Linksboven**,  **Linksonder**,  **Rechtsboven** of  **Rechtsonder**. |
+|  | Vulmethode | Vereist.<br> Hiermee regelt u de pixeltransparantie vanaf de locatie Hoek die u instelt.<br> U kunt kiezen uit de volgende vulmethoden: <ul><li>**Flood Fill**  - hiermee worden alle pixels transparant gemaakt die overeenkomen met de hoek die u hebt opgegeven en waarop de toepassing is aangesloten.</li><li>**Pixel**  afstemmen: hiermee worden alle overeenkomende pixels transparant gemaakt, ongeacht de locatie van de pixels op de afbeelding.</li></ul> |
 |  | Tolerantie | Optioneel.<br> Hiermee bepaalt u de toegestane hoeveelheid variatie in de overeenkomende pixelkleur op basis van de locatie van de hoek die u instelt.<br> Gebruik een waarde van 0,0 om de pixelkleuren exact overeen te laten komen of gebruik een waarde van 1,0 voor de grootste variatie. |
 
 #### Uploadopties voor PostScript en Illustrator instellen {#setting-postscript-and-illustrator-upload-options}
@@ -221,7 +221,7 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 
 | Optie | Suboptie | Beschrijving |
 |---|---|---|
-| Verwerking |  | Kies **[!UICONTROL Rasterize]** of u vectorafbeeldingen in het bestand wilt omzetten in de bitmapindeling. |
+| Verwerking |  | Kies **[!UICONTROL Rasterize]** om vectorafbeeldingen in het bestand om te zetten in de bitmapindeling. |
 | Transparante achtergrond behouden in gerenderde afbeelding |  | De achtergrondtransparantie van het bestand behouden. |
 | Resolutie |  | Hiermee bepaalt u de resolutie-instelling. Deze instelling bepaalt hoeveel pixels per inch in het bestand worden weergegeven. |
 | Kleurruimte |  | Selecteer het menu Kleurruimte en kies een van de volgende opties voor kleurruimte: |
@@ -230,13 +230,13 @@ Wanneer u PostScript- (EPS) of Illustrator-afbeeldingsbestanden (AI) uploadt, ku
 |  | Inschakelen als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Forceren als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
-#### Photoshop-upopties instellen {#setting-photoshop-upload-options}
+#### Opties voor Photoshop-upload instellen {#setting-photoshop-upload-options}
 
 PSD-bestanden (Photoshop Document) worden meestal gebruikt om afbeeldingssjablonen te maken. Wanneer u een PSD-bestand uploadt, kunt u automatisch een afbeeldingssjabloon maken vanuit het bestand (selecteer de optie Sjabloon maken in het scherm Uploaden).
 
-Met Dynamische media maakt u meerdere afbeeldingen van een PSD-bestand met lagen als u het bestand gebruikt om een sjabloon te maken. er wordt één afbeelding voor elke laag gemaakt.
+Dynamic Media maakt meerdere afbeeldingen van een PSD-bestand met lagen als u het bestand gebruikt om een sjabloon te maken. er wordt één afbeelding voor elke laag gemaakt.
 
-Gebruik de **[!UICONTROL Crop Options]** en **[!UICONTROL Color Profile Options]**, zoals hierboven beschreven, met Photoshop-uploadopties.
+Gebruik de **[!UICONTROL Crop Options]** en **[!UICONTROL Color Profile Options]**, zoals hierboven beschreven, met de uploadopties van Photoshop.
 
 >[!NOTE]
 >
@@ -277,7 +277,7 @@ Kies een van de volgende opties:
 |  | Krachten als CMYK | Zet om in de CMYK-kleurruimte. |
 |  | Krachtig maken als grijswaarden | Hiermee wordt de grijswaardenkleurruimte omgezet. |
 
-#### Uploadopties voor eVideo instellen {#setting-evideo-upload-options}
+#### Opties voor het uploaden van eVideo instellen {#setting-evideo-upload-options}
 
 U kunt een videobestand transcoderen door een keuze te maken uit verschillende videovoorinstellingen.
 
@@ -291,9 +291,9 @@ U kunt een videobestand transcoderen door een keuze te maken uit verschillende v
 
 #### Voorinstellingen batchset instellen bij uploaden {#setting-batch-set-presets-at-upload}
 
-Als u automatisch een set afbeeldingen of een set scènes wilt maken van geüploade afbeeldingen, klikt u op de **[!UICONTROL Active]** kolom voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren.
+Als u automatisch een set afbeeldingen of een set rotaties wilt maken van geüploade afbeeldingen, klikt u op de kolom **[!UICONTROL Active]** voor de voorinstelling die u wilt gebruiken. U kunt meerdere voorinstellingen selecteren.
 
-Zie Voorinstellingen voor batchsets [configureren voor het automatisch genereren van afbeeldingssets en centrifuges](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) voor meer informatie over het maken van voorinstellingen voor batchsets.
+Zie [Voorinstellingen voor batchsets configureren voor het automatisch genereren van afbeeldingssets en centrifuges](config-dms7.md#creating-batch-set-presets-to-auto-generate-image-sets-and-spin-sets) voor meer informatie over het maken van voorinstellingen voor batchsets.
 
 ### Gestroomde uploads {#streamed-uploads}
 
@@ -301,11 +301,11 @@ Als u een groot aantal middelen uploadt, neemt de I/O-aanroepen naar de AEM serv
 
 Uploaden naar streaming is uitgeschakeld voor AEM die op de JEE-server wordt uitgevoerd met servlet-api versie lager dan 3.1.
 
-### ZIP-archief met elementen extraheren {#extract-zip-archive-containing-assets}
+### ZIP-archief met elementen uitpakken {#extract-zip-archive-containing-assets}
 
 U kunt ZIP-archieven net als alle andere ondersteunde elementen uploaden. Dezelfde regels voor bestandsnaam gelden voor ZIP-bestanden. AEM kunt u een ZIP-archief extraheren naar een DAM-locatie.
 
-Selecteer één ZIP-archief tegelijk, klik **[!UICONTROL Extract Archive]** en selecteer een doelmap. Selecteer een optie om eventuele conflicten af te handelen. Als de elementen in het ZIP-bestand al in de doelmap staan, kunt u een van de volgende opties selecteren: extractie overslaan, bestaande bestanden vervangen, beide elementen behouden door een andere naam te geven of een nieuwe versie te maken.
+Selecteer één archief van het PIT tegelijkertijd, klik **[!UICONTROL Extract Archive]**, en selecteer een bestemmingsomslag. Selecteer een optie om eventuele conflicten af te handelen. Als de elementen in het ZIP-bestand al in de doelmap staan, kunt u een van de volgende opties selecteren: extractie overslaan, bestaande bestanden vervangen, beide elementen behouden door een andere naam te geven of een nieuwe versie te maken.
 
 Nadat de extractie is voltooid, AEM u op de hoogte brengt in het systeemvak. Terwijl AEM het ZIP extraheert, kunt u teruggaan naar uw werk zonder de extractie te onderbreken.
 
@@ -328,54 +328,54 @@ Enkele beperkingen van de functie zijn:
 
 1. In de voorvertoningsmodus zijn zoomopties beschikbaar voor [ondersteunde afbeeldingstypen](assets-formats.md#supported-raster-image-formats) (met interactieve bewerking).
 
-   Tik op het vergrootglas **[!UICONTROL +]** of tik op het element om in te zoomen op een element. Tik op **[!UICONTROL -]** om uit te zoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de **[!UICONTROL Reset Zoom]** pijl keert u terug naar de oorspronkelijke weergave.
+   Tik op **[!UICONTROL +]** (of tik op het vergrootglas op het element) om in te zoomen op een element. Tik **[!UICONTROL -]** om uit te zoomen. Wanneer u inzoomt, kunt u elk gebied van de afbeelding nauwkeurig bekijken door te pannen. Met de pijl **[!UICONTROL Reset Zoom]** keert u terug naar de oorspronkelijke weergave.
 
    ![uplodicon](assets/uploadicon.png)
 
-   Tik op de **[!UICONTROL Reset]** knop om de weergave te herstellen tot de oorspronkelijke grootte.
+   Tik op de knop **[!UICONTROL Reset]** om de weergave in te stellen op de oorspronkelijke grootte.
 
    ![chlimage_1-11](assets/chlimage_1-11.png)
 
 >[!MORELIKETHIS]
 >
->* [Dynamische media-elementen](/help/assets/previewing-assets.md)voorvertonen.
->* [Subelementen](managing-linked-subassets.md#viewing-subassets)weergeven.
+>* [Voorbeeld van Dynamic Media-middelen](/help/assets/previewing-assets.md) bekijken.
+>* [Subelementen](managing-linked-subassets.md#viewing-subassets) weergeven.
 
 
 ## Eigenschappen bewerken {#editing-properties}
 
 1. Navigeer naar de locatie van het element waarvan u de metagegevens wilt bewerken.
 
-1. Selecteer het element en tik **[!UICONTROL Properties]** op de werkbalk om de eigenschappen van het element weer te geven. U kunt ook de **[!UICONTROL Properties]** snelle actie op de kaart kiezen.
+1. Selecteer het element en tik **[!UICONTROL Properties]** op de werkbalk om de eigenschappen van het element weer te geven. U kunt ook de snelle handeling **[!UICONTROL Properties]** op de elementenkaart kiezen.
 
    ![properties_quickaction](assets/properties_quickaction.png)
 
-1. Bewerk op de **[!UICONTROL Properties]** pagina de eigenschappen van de metagegevens onder verschillende tabbladen. Bewerk bijvoorbeeld onder het **[!UICONTROL Basic]** tabblad de titel, beschrijving, enzovoort.
+1. Bewerk op de pagina **[!UICONTROL Properties]** de eigenschappen van de metagegevens onder verschillende tabbladen. Bewerk bijvoorbeeld onder het tabblad **[!UICONTROL Basic]** de titel, beschrijving, enzovoort.
 
-   De indeling van de **[!UICONTROL Properties]** pagina en de beschikbare metagegevenseigenschappen zijn afhankelijk van het onderliggende metagegevensschema. Zie **[!UICONTROL Properties]** Metagegevensschema&#39;s voor meer informatie over het wijzigen van de indeling van de [pagina](metadata-schemas.md).
+   De indeling van de pagina **[!UICONTROL Properties]** en de beschikbare metagegevenseigenschappen zijn afhankelijk van het onderliggende metagegevensschema. Zie [Metagegevensschema&#39;s](metadata-schemas.md) voor meer informatie over het wijzigen van de indeling van de pagina **[!UICONTROL Properties]**.
 
 1. Gebruik de datumkiezer naast het veld **[!UICONTROL On Time]** om een bepaalde datum/tijd voor de activering van de asset te plannen.
 
    ![Op tijd instellen om elementen voor een vaste periode tussen aan- en uittijd beschikbaar te maken](assets/chlimage_1-12.png)
 
-1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum en tijd van deactivering in de datumkiezer naast het **[!UICONTROL Off Time]** veld.
+1. Als u het element na een bepaalde duur wilt deactiveren, kiest u de datum en tijd van deactivering in de datumkiezer naast het veld **[!UICONTROL Off Time]**.
 
-   De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na de [!UICONTROL Off Time]gebeurtenis zijn een middel en de vertoningen ervan niet beschikbaar via de Assets-webinterface of via de HTTP-API.
+   De deactiveringsdatum moet later zijn dan de activeringsdatum voor een element. Na [!UICONTROL Off Time] zijn een middel en zijn vertoningen niet beschikbaar of via de het Webinterface van Middelen of door HTTP API.
 
    ![Verschuiving tijd voor activa om hun beschikbaarheid na een bepaalde periode tegen te houden](assets/chlimage_1-13.png)
 
-1. Selecteer een of meer tags in het **[!UICONTROL Tags]** veld. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op **[!UICONTROL Enter]**. De nieuwe tag wordt opgeslagen in AEM.
+1. Selecteer een of meer tags in het veld **[!UICONTROL Tags]**. Als u een aangepaste tag wilt toevoegen, typt u de naam van de tag in het vak en drukt u op **[!UICONTROL Enter]**. De nieuwe tag wordt opgeslagen in AEM.
 
    YouTube vereist dat er tags worden gepubliceerd en dat er een koppeling naar YouTube staat (als er een geschikte koppeling is gevonden).
-Als u tags wilt maken, hebt u schrijfmachtigingen nodig voor `/content/cq:tags/default` de CRX-opslagruimte.
+Als u tags wilt maken, hebt u schrijfmachtigingen nodig voor `/content/cq:tags/default` in de CRX-opslagruimte.
 
-1. To provide a rating to the asset, tap the **[!UICONTROL Advanced]** tab and then tap the star at the appropriate position to assign the desired rating.
+1. Tik op het tabblad **[!UICONTROL Advanced]** en tik vervolgens op de juiste positie op de ster om de gewenste waardering toe te wijzen.
 
    ![ratings](assets/ratings.png)
 
-   De beoordelingsscore die u aan het element toewijst, wordt onder **[!UICONTROL Your Ratings]** weergegeven. De gemiddelde ratingscore die het actief heeft ontvangen van gebruikers die het actief beoordeelden, wordt onder weergegeven **[!UICONTROL Rating]**. Daarnaast wordt onder **[!UICONTROL Rating Breakdown]** weergegeven hoe de ratingscores die bijdragen aan de gemiddelde ratingscore, zijn verdeeld. U kunt middelen zoeken op basis van gemiddelde score.
+   De beoordelingsscore die u toewijst aan het element, wordt weergegeven onder **[!UICONTROL Your Ratings]**. De gemiddelde ratingscore die het element ontvangt van gebruikers die het element hebben beoordeeld, wordt weergegeven onder **[!UICONTROL Rating]**. Bovendien wordt de opsplitsing van de ratingscores die bijdragen aan de gemiddelde ratingscore weergegeven onder **[!UICONTROL Rating Breakdown]**. U kunt middelen zoeken op basis van gemiddelde score.
 
-1. Tik op het **[!UICONTROL Insights]** tabblad om gebruiksstatistieken voor het element weer te geven.
+1. Tik op het tabblad **[!UICONTROL Insights]** om gebruiksstatistieken voor het element weer te geven.
 
    De statistieken van het gebruik omvatten het volgende:
 
@@ -383,30 +383,30 @@ Als u tags wilt maken, hebt u schrijfmachtigingen nodig voor `/content/cq:tags/d
    * Kanalen/apparaten waardoor het middel werd gebruikt.
    * Creatieve oplossingen waarbij het middel onlangs is gebruikt.
 
-   Zie [Asset Insights](touch-ui-asset-insights.md)voor meer informatie.
+   Zie [Asset Insights](touch-ui-asset-insights.md) voor meer informatie.
 
 1. Tik op **[!UICONTROL Save & Close]**.
 1. Navigeer naar de interface Elementen. De bewerkte eigenschappen van metagegevens, zoals titel, beschrijving, classificaties, enzovoort, worden weergegeven op de elementenkaart in de kaartweergave en onder de desbetreffende kolommen in de lijstweergave.
 
-## Elementen kopiëren {#copying-assets}
+## Elementen {#copying-assets} kopiëren
 
 Wanneer u een middel of een omslag kopieert, wordt het volledige middel of de omslag gekopieerd, samen met zijn inhoudsstructuur. Een gekopieerd middel of een omslag wordt gedupliceerd bij de doelplaats. Het element op de bronlocatie wordt niet gewijzigd.
 
 Enkele kenmerken die uniek zijn voor een bepaalde kopie van een element, worden niet overgedragen. Enkele voorbeelden zijn:
 
-* Element-id, aanmaakdatum en -tijd en versies en versiegeschiedenis. Sommige van deze eigenschappen worden aangegeven door de eigenschappen `jcr:uuid`, `jcr:created`en `cq:name`.
+* Element-id, aanmaakdatum en -tijd en versies en versiegeschiedenis. Sommige van deze eigenschappen worden aangegeven door de eigenschappen `jcr:uuid`, `jcr:created` en `cq:name`.
 
 * De aanmaaktijd en de paden waarnaar wordt verwezen, zijn uniek voor elk element en elke uitvoering ervan.
 
 De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeeltelijke kopie gemaakt wanneer een element wordt gekopieerd.
 
-1. Selecteer een of meer elementen in de interface Elementen en tik op het **[!UICONTROL Copy]** pictogram op de werkbalk. U kunt ook de **[!UICONTROL Copy]** snelle actie kiezen op de middelenkaart.
+1. Selecteer een of meer elementen in de interface Middelen en tik op het pictogram **[!UICONTROL Copy]** op de werkbalk. U kunt ook de snelle handeling **[!UICONTROL Copy]** kiezen op de elementenkaart.
 
    ![copy_icon](assets/copy_icon.png)
 
    >[!NOTE]
    >
-   >Als u de **[!UICONTROL Copy]** snelle handeling gebruikt, kunt u slechts één element tegelijk kopiëren.
+   >Als u de snelle handeling **[!UICONTROL Copy]** gebruikt, kunt u slechts één element tegelijk kopiëren.
 
 1. Navigeer naar de locatie waar u de elementen wilt kopiëren.
 
@@ -414,7 +414,7 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
    >
    >Als u een element op dezelfde locatie kopieert, AEM automatisch een variatie van de naam. Als u bijvoorbeeld een element met de naam Vierkant kopieert, genereert AEM automatisch de titel voor de kopie als Vierkant1.
 
-1. Tap the **[!UICONTROL Paste]** asset icon from the toolbar:
+1. Tik op het middelenpictogram **[!UICONTROL Paste]** van de werkbalk:
 
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
@@ -422,11 +422,11 @@ De andere eigenschappen en metagegevens blijven behouden. Er wordt geen gedeelte
 
    >[!NOTE]
    >
-   >Het **[!UICONTROL Paste]** pictogram is beschikbaar op de werkbalk totdat de plakbewerking is voltooid.
+   >Het pictogram **[!UICONTROL Paste]** is beschikbaar op de werkbalk totdat de plakbewerking is voltooid.
 
 ## Elementen verplaatsen en hernoemen {#moving-or-renaming-assets}
 
-Wanneer u elementen (of mappen) naar een andere locatie verplaatst, worden de elementen (of mappen) tijdens het kopiëren van het element niet gedupliceerd. De elementen (of mappen) worden op de doellocatie geplaatst en worden van de bronlocatie verwijderd. U kunt de naam van het element ook wijzigen wanneer u het naar de nieuwe locatie verplaatst. Als u een gepubliceerd element naar een andere locatie verplaatst, kunt u het element opnieuw publiceren. Door gebrek beweeg verrichting op gepubliceerde activa maakt automatisch het ongedaan. Verplaatst element wordt opnieuw gepubliceerd als de auteur de [!UICONTROL Republish] optie selecteert wanneer het bewegen van het element.
+Wanneer u elementen (of mappen) naar een andere locatie verplaatst, worden de elementen (of mappen) tijdens het kopiëren van het element niet gedupliceerd. De elementen (of mappen) worden op de doellocatie geplaatst en worden van de bronlocatie verwijderd. U kunt de naam van het element ook wijzigen wanneer u het naar de nieuwe locatie verplaatst. Als u een gepubliceerd element naar een andere locatie verplaatst, kunt u het element opnieuw publiceren. Door gebrek beweeg verrichting op gepubliceerde activa maakt automatisch het ongedaan. Verplaatst element wordt opnieuw gepubliceerd als de auteur de optie [!UICONTROL Republish] selecteert wanneer het element wordt verplaatst.
 
 ![U kunt een reeds gepubliceerd element opnieuw publiceren wanneer u het verplaatst](assets/republish-on-move.png)
 
@@ -440,34 +440,34 @@ Elementen of mappen verplaatsen:
 
 1. Navigeer naar de locatie van het element dat u wilt verplaatsen.
 
-1. Select the asset, and click **[!UICONTROL Move]** option from the toolbar.
+1. Selecteer het element en klik op de optie **[!UICONTROL Move]** op de werkbalk.
    ![Optie Verplaatsen op de werkbalk Elementen](assets/do-not-localize/move_icon.png)
 
-1. Voer in de [!UICONTROL Move Assets] wizard een van de volgende handelingen uit:
+1. Voer in de wizard [!UICONTROL Move Assets] een van de volgende handelingen uit:
 
-   * Geef de naam voor het element op nadat het is verplaatst. Klik vervolgens **[!UICONTROL Next]** om door te gaan.
+   * Geef de naam voor het element op nadat het is verplaatst. Klik vervolgens op **[!UICONTROL Next]** om door te gaan.
 
-   * Klik **[!UICONTROL Cancel]** om het proces te stoppen.
+   * Klik op **[!UICONTROL Cancel]** om het proces te stoppen.
    >[!NOTE]
    >
    >* U kunt dezelfde naam opgeven voor het element als er geen element met die naam is op de nieuwe locatie. U moet echter een andere naam gebruiken als u het element verplaatst naar een locatie waar zich een element met dezelfde naam bevindt. Als u dezelfde naam gebruikt, genereert het systeem automatisch een variatie in de naam. Als uw element bijvoorbeeld de naam Vierkant heeft, genereert het systeem de naam Vierkant1 voor de kopie.
    >* Bij het wijzigen van de naam is witruimte niet toegestaan in de bestandsnaam.
 
 
-1. Voer in het **[!UICONTROL Select Destination]** dialoogvenster een van de volgende handelingen uit:
+1. Voer in het dialoogvenster **[!UICONTROL Select Destination]** een van de volgende handelingen uit:
 
-   * Navigeer naar de nieuwe locatie voor de elementen en klik vervolgens **[!UICONTROL Next]** om door te gaan.
+   * Navigeer naar de nieuwe locatie voor de elementen en klik vervolgens op **[!UICONTROL Next]** om door te gaan.
 
-   * Klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Rename]** scherm.
+   * Klik **[!UICONTROL Back]** om aan het **[!UICONTROL Rename]** scherm terug te keren.
 
-1. Als de elementen die worden verplaatst, verwijzen naar pagina&#39;s, elementen of verzamelingen, wordt het **[!UICONTROL Adjust References]** tabblad naast het **[!UICONTROL Select Destination]** tabblad weergegeven.
+1. Als de elementen die worden verplaatst, verwijzen naar pagina&#39;s, elementen of verzamelingen, wordt het tabblad **[!UICONTROL Adjust References]** naast het tabblad **[!UICONTROL Select Destination]** weergegeven.
 
-   Voer een van de volgende handelingen uit op het **[!UICONTROL Adjust References]** scherm:
+   Voer een van de volgende handelingen uit in het scherm **[!UICONTROL Adjust References]**:
 
-   * Geef op welke verwijzingen op basis van de nieuwe details moeten worden aangepast en klik vervolgens om door te gaan **[!UICONTROL Move]** .
+   * Geef op welke verwijzingen op basis van de nieuwe details moeten worden aangepast en klik vervolgens op **[!UICONTROL Move]** om door te gaan.
 
-   * In de **[!UICONTROL Adjust]** kolom selecteert/deselecteert u verwijzingen naar de elementen.
-   * Klik **[!UICONTROL Back]** om terug te keren naar het **[!UICONTROL Select Destination]** scherm.
+   * Selecteer/maak in de kolom **[!UICONTROL Adjust]** verwijzingen naar de elementen ongedaan.
+   * Klik **[!UICONTROL Back]** om aan het **[!UICONTROL Select Destination]** scherm terug te keren.
 
    * Klik **[!UICONTROL Cancel]** om de verplaatsingsbewerking te stoppen.
 
@@ -475,9 +475,9 @@ Elementen of mappen verplaatsen:
 
 ### Elementen verplaatsen met behulp van sleepbewerking {#move-using-drag}
 
-U kunt elementen (of mappen) naar een map op hetzelfde niveau verplaatsen door deze naar de doellocatie te slepen in plaats van de [!UICONTROL Move] optie in de gebruikersinterface te gebruiken. Deze bewerking is echter alleen mogelijk in de lijstweergave.
+U kunt elementen (of mappen) naar een map op hetzelfde niveau verplaatsen door deze naar de doellocatie te slepen in plaats van de optie [!UICONTROL Move] in de gebruikersinterface te gebruiken. Deze bewerking is echter alleen mogelijk in de lijstweergave.
 
-Als u elementen verplaatst door ze te slepen, wordt de [!UICONTROL Move Asset] wizard niet geopend. U krijgt dan ook niet de optie om de naam van de elementen te wijzigen tijdens het verplaatsen. Bovendien worden de reeds gepubliceerde elementen opnieuw gepubliceerd wanneer ze door slepen worden verplaatst, zonder dat de gebruiker toestemming moet vragen om ze opnieuw te publiceren.
+Als u elementen verplaatst door ze te slepen, wordt de wizard [!UICONTROL Move Asset] niet geopend. U krijgt dan ook niet de optie om de naam van de elementen te wijzigen tijdens het verplaatsen. Bovendien worden de reeds gepubliceerde elementen opnieuw gepubliceerd wanneer ze door slepen worden verplaatst, zonder dat de gebruiker toestemming moet vragen om ze opnieuw te publiceren.
 
 ![Elementen naar secundaire mappen verplaatsen door elementen te slepen](assets/move-by-drag.gif)
 
@@ -489,11 +489,11 @@ Als u elementen verplaatst door ze te slepen, wordt de [!UICONTROL Move Asset] w
 
    ![chlimage_1-15](assets/chlimage_1-15.png)
 
-1. Tik op het **[!UICONTROL Global Navigation]** pictogram en selecteer een optie in de **[!UICONTROL Renditions]** lijst.
+1. Tik op het pictogram **[!UICONTROL Global Navigation]** en selecteer **[!UICONTROL Renditions]** in de lijst.
 
    ![renditions_menu](assets/renditions_menu.png)
 
-1. Geef in het **[!UICONTROL Renditions]** deelvenster de lijst weer met uitvoeringen die voor het element zijn gegenereerd.
+1. In het **[!UICONTROL Renditions]** paneel, bekijk de lijst van vertoningen die voor het element worden geproduceerd.
 
    ![renditions_panel](assets/renditions_panel.png)
 
@@ -505,37 +505,37 @@ Als u elementen verplaatst door ze te slepen, wordt de [!UICONTROL Move Asset] w
 
    **Een vertoning verwijderen**
 
-   Selecteer een vertoning in het **[!UICONTROL Renditions]** deelvenster en tik op het **[!UICONTROL Delete Rendition]** pictogram op de [werkbalk](/help/sites-authoring/basic-handling.md). Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u de Experience Manager aanpassen om bepaalde uitvoeringen te verwijderen of om de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
+   Selecteer een vertoning in het **[!UICONTROL Renditions]**-deelvenster en tik op het **[!UICONTROL Delete Rendition]**-pictogram op de [werkbalk](/help/sites-authoring/basic-handling.md). Uitvoeringen kunnen niet bulksgewijs worden verwijderd nadat de verwerking van het element is voltooid. Voor afzonderlijke elementen kunt u uitvoeringen handmatig uit de gebruikersinterface verwijderen. Voor meerdere elementen kunt u de Experience Manager aanpassen om bepaalde uitvoeringen te verwijderen of om de elementen te verwijderen en de verwijderde elementen opnieuw te uploaden.
 
    ![delete_renditionicon](assets/delete_renditionicon.png)
 
    **Een nieuwe uitvoering uploaden**
 
-   Navigate to the asset details page for the asset, and tap the **[!UICONTROL Add Rendition]** icon in the toolbar to upload a new rendition for the asset.
+   Navigeer naar de pagina met elementdetails voor het element en tik op het pictogram **[!UICONTROL Add Rendition]** op de werkbalk om een nieuwe uitvoering voor het element te uploaden.
 
    ![chlimage_1-16](assets/chlimage_1-16.png)
 
    >[!NOTE]
    >
-   >Als u een uitvoering selecteert in het deelvenster **[!UICONTROL Renditions]**, verandert de context van de werkbalk en worden alleen die acties weergegeven die relevant zijn voor de uitvoering. Options, such as the **[!UICONTROL Upload Rendition]** icon is not displayed. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
+   >Als u een uitvoering selecteert in het deelvenster **[!UICONTROL Renditions]**, verandert de context van de werkbalk en worden alleen die acties weergegeven die relevant zijn voor de uitvoering. Opties, zoals het pictogram **[!UICONTROL Upload Rendition]**, worden niet weergegeven. Ga naar de pagina met details voor de asset om deze opties in de werkbalk weer te geven.
 
    U kunt de afmetingen configureren voor de vertoning die u wilt weergeven op de detailpagina van een afbeelding of video-element. Op basis van de afmetingen die u opgeeft, geeft AEM Assets de vertoning weer met de exacte of dichtstbijzijnde afmetingen.
 
-   To configure rendition dimensions of an image at the asset detail level, overlay the **[!UICONTROL renditionpicker]** node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` and configure the value of the width property. Configureer de eigenschap **[!UICONTROL size (Long) in KB]** in plaats van de breedte om de weergave op de pagina met assetdetails aan te passen op basis van de afbeeldingsgrootte. Voor aanpassing op basis van grootte wijst de eigenschap **[!UICONTROL preferOriginal]** de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
+   Als u de vertoningsafmetingen van een afbeelding op het detailniveau van de elementen wilt configureren, bedekt u de **[!UICONTROL renditionpicker]**-node `libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/renditionpicker` en configureert u de waarde van de eigenschap width. Configureer de eigenschap **[!UICONTROL size (Long) in KB]** in plaats van de breedte om de weergave op de pagina met assetdetails aan te passen op basis van de afbeeldingsgrootte. Voor aanpassing op basis van grootte wijst de eigenschap **[!UICONTROL preferOriginal]** de voorkeur toe aan het origineel als de grootte van de overeenkomstige weergave groter is dan het origineel.
 
-   Op dezelfde manier kunt u de **[!UICONTROL Annotation]** paginaafbeelding aanpassen door deze te bedekken `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker`.
+   Op dezelfde manier kunt u de pagina **[!UICONTROL Annotation]**-afbeelding aanpassen door `libs/dam/gui/content/assets/annotate/jcr:content/body/content/content/items/content/renditionpicker` te bedekken.
 
    ![chlimage_1-17](assets/chlimage_1-17.png)
 
-   Als u vertoningsdimensies voor een video-element wilt configureren, navigeert u naar het **[!UICONTROL videopicker]** knooppunt in de CRX-opslagruimte op de locatie `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, bedekt u het knooppunt en bewerkt u de juiste eigenschap.
+   Als u renditiedimensies voor een video-element wilt configureren, navigeert u naar het **[!UICONTROL videopicker]**-knooppunt in de CRX-opslagruimte op de locatie `/libs/dam/gui/content/assets/assetpage/jcr:content/body/content/content/items/assetdetail/items/col1/items/assetview/videopicker`, bedekt u het knooppunt en bewerkt u de juiste eigenschap.
 
    >[!NOTE]
    >
    >Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. Afhankelijk van de browser worden bovendien verschillende video-indelingen ondersteund.
 
-Zie [Subassets](managing-linked-subassets.md)beheren voor meer informatie over subassets.
+Zie [Subassets beheren](managing-linked-subassets.md) voor informatie over subassets.
 
-## Elementen verwijderen {#deleting-assets}
+## Elementen {#deleting-assets} verwijderen
 
 Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert.
 
@@ -547,7 +547,7 @@ U hebt verwijdermachtigingen voor dam/asset nodig om een element te kunnen verwi
 
 1. Navigeer naar de locatie van de elementen die u wilt verwijderen.
 
-1. Select the asset, and tap the **[!UICONTROL Delete]** icon from the toolbar.
+1. Selecteer het element en tik op het pictogram **[!UICONTROL Delete]** op de werkbalk.
 
    ![delete_icon](assets/delete_icon.png)
 
@@ -557,38 +557,38 @@ U hebt verwijdermachtigingen voor dam/asset nodig om een element te kunnen verwi
    * **[!UICONTROL Delete]** de actie bevestigen op basis van het volgende:
 
       * Als het element geen verwijzingen bevat, wordt het element verwijderd.
-      * Als het element verwijzingen bevat, wordt u hiervan op de hoogte gesteld door een foutbericht **[!UICONTROL One or more assets are referenced]**. U kunt selecteren **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]**.
+      * Als het element verwijzingen bevat, wordt u via een foutbericht meegedeeld dat **[!UICONTROL One or more assets are referenced]**. U kunt **[!UICONTROL Force Delete]** of **[!UICONTROL Cancel]** selecteren.
 
    >[!NOTE]
    >
    >Als u de inkomende verwijzingen van andere pagina&#39;s wilt oplossen of verwijderen, werkt u de relevante verwijzingen bij voordat u een element verwijdert.
    >
-   >Schakel de **[!UICONTROL Force Delete]** knop ook uit met behulp van een overlay, zodat gebruikers geen bestanden waarnaar wordt verwezen kunnen verwijderen en verbroken koppelingen behouden blijven.
+   >Schakel ook de knop **[!UICONTROL Force Delete]** uit met behulp van een overlay, zodat gebruikers geen bestanden waarnaar wordt verwezen kunnen verwijderen en verbroken koppelingen behouden blijven.
 
-## Elementen downloaden {#downloading-assets}
+## Elementen {#downloading-assets} downloaden
 
-See [Download assets from AEM](download-assets-from-aem.md)
+Zie [Elementen downloaden van AEM](download-assets-from-aem.md)
 
-## Publish assets {#publishing-assets}
+## Elementen {#publishing-assets} publiceren
 
 Als u elementen publiceert die worden verwerkt, wordt alleen de oorspronkelijke inhoud gepubliceerd. De uitvoeringen ontbreken. Wacht tot de verwerking is voltooid en publiceer het element of publiceer het opnieuw nadat de verwerking is voltooid.
 
 Als de map die u wilt publiceren een lege map bevat, wordt de lege map niet gepubliceerd.
 
-Zie Dynamische media-elementen [publiceren voor meer informatie over Dynamic Media](publishing-dynamicmedia-assets.md).
+Zie [Dynamic Media Assets publiceren](publishing-dynamicmedia-assets.md) voor meer informatie over Dynamic Media.
 
 **Elementen** publiceren:
 
 1. Navigeer naar de locatie van de elementen/map die u wilt publiceren
 
-1. Either select the **[!UICONTROL Publish]** quick action from the asset card, or select the asset and tap the **[!UICONTROL Quick Publish]** icon from the toolbar.
+1. Selecteer de handeling **[!UICONTROL Publish]** in de elementenkaart of selecteer het element en tik op het pictogram **[!UICONTROL Quick Publish]** op de werkbalk.
 1. Als het element verwijst naar andere elementen, worden de verwijzingen ervan weergegeven in de wizard. Alleen verwijzingen die niet zijn gepubliceerd of gewijzigd sinds ze voor het laatst zijn gepubliceerd of niet zijn gepubliceerd, worden weergegeven. Kies de referenties die u wilt publiceren.
 
-   ![chlimage_1-29](assets/chlimage_1-21.png)
+   ![chlimage_1-21](assets/chlimage_1-21.png)
 
-1. Tik **[!UICONTROL Publish]** om de activering van de elementen te bevestigen.
+1. Tik op **[!UICONTROL Publish]** om de activering voor de elementen te bevestigen.
 
-## Elementen verwijderen {#unpublishing-assets}
+## Elementen {#unpublishing-assets} verwijderen
 
 Verwijder tijdens het verwijderen van de publicatie van een complex element alleen de publicatie van het element. Verwijder de publicatie van de verwijzingen niet omdat mogelijk naar deze verwijzingen wordt verwezen door andere gepubliceerde elementen.
 
@@ -596,11 +596,11 @@ Verwijder tijdens het verwijderen van de publicatie van een complex element alle
 
 1. Navigeer naar de locatie van het element dat of de elementenmap die u uit de publicatieomgeving wilt verwijderen (publicatie ongedaan maken).
 
-1. Selecteer het middel of de omslag om unpublish, en tik het **[!UICONTROL Manage Publication]** pictogram van de toolbar te schrappen.
+1. Selecteer het middel of de omslag om unpublish, en tik **[!UICONTROL Manage Publication]** pictogram van de toolbar te schrappen.
 
    ![manage_publication](assets/manage_publication.png)
 
-1. Select the **[!UICONTROL Unpublish]** action from the list.
+1. Selecteer de handeling **[!UICONTROL Unpublish]** in de lijst.
 
    ![unpublish_action](assets/unpublish_action.png)
 
@@ -610,7 +610,7 @@ Verwijder tijdens het verwijderen van de publicatie van een complex element alle
 1. Voer een van de volgende handelingen uit in het bevestigingsvenster:
 
    * Tik **[!UICONTROL Cancel]** om de handeling te stoppen
-   * Tik **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
+   * Tik op **[!UICONTROL Unpublish]** om te bevestigen dat de elementen op de opgegeven datum niet gepubliceerd zijn (niet meer beschikbaar in de publicatieomgeving).
 
 ## Een gesloten gebruikersgroep maken {#closed-user-group}
 
@@ -620,12 +620,12 @@ CUG is een extra manier om de toegang tot uw elementen te beperken. U kunt ook e
 
 **Een gesloten gebruikersgroep** maken:
 
-1. Selecteer een map in de interface Middelen en tik op het **[!UICONTROL Properties]** pictogram op de werkbalk om de pagina met eigenschappen weer te geven.
-1. Voeg op het **[!UICONTROL Permissions]** tabblad leden of groepen toe onder **[!UICONTROL Closed User Group]**.
+1. Selecteer een map in de interface Middelen en tik op het pictogram **[!UICONTROL Properties]** op de werkbalk om de pagina met eigenschappen weer te geven.
+1. Voeg leden of groepen toe onder **[!UICONTROL Closed User Group]** op het tabblad **[!UICONTROL Permissions]**.
 
    ![add_user](assets/add_user.png)
 
-1. Selecteer de **[!UICONTROL Enable]** optie om een aanmeldingsscherm weer te geven wanneer gebruikers de map openen. Selecteer vervolgens het pad naar een aanmeldingspagina in AEM en sla de wijzigingen op.
+1. Als u een aanmeldingsscherm wilt weergeven wanneer gebruikers de map openen, selecteert u de optie **[!UICONTROL Enable]**. Selecteer vervolgens het pad naar een aanmeldingspagina in AEM en sla de wijzigingen op.
 
    ![login_page](assets/login_page.png)
 
@@ -636,7 +636,7 @@ CUG is een extra manier om de toegang tot uw elementen te beperken. U kunt ook e
 
 ## Assets doorzoeken {#searching-assets}
 
-Het basisonderzoek wordt gedetailleerd in de sectie van het [Onderzoek en van het filter](/help/sites-authoring/search.md#search-and-filter) . Gebruik het **[!UICONTROL Search]** deelvenster om te zoeken naar elementen, tags en metagegevens. U kunt delen van een tekenreeks zoeken met de jokertekenasterisk. Bovendien kunt u het **[!UICONTROL Search]** deelvenster aanpassen met de [zoekfacetten](search-facets.md).
+Het basisonderzoek wordt gedetailleerd in [Onderzoek en filter](/help/sites-authoring/search.md#search-and-filter) sectie. Gebruik het deelvenster **[!UICONTROL Search]** om te zoeken naar elementen, tags en metagegevens. U kunt delen van een tekenreeks zoeken met de jokertekenasterisk. Bovendien kunt u het **[!UICONTROL Search]** paneel aanpassen gebruikend [Facetten van het Onderzoek](search-facets.md).
 
 ![filters_panel](assets/filters_panel.png)
 
@@ -651,21 +651,21 @@ De snelle actiepictogrammen zijn beschikbaar voor één middel tegelijkertijd. V
 * Aanraakapparaten: Raak aan en houd de muisknop ingedrukt. Op een iPad kunt u bijvoorbeeld tikken en een element ingedrukt houden, zodat de snelle acties worden weergegeven.
 * Niet-aanraakapparaten: Aanwijzer aanwijzen. Op een bureaubladapparaat wordt bijvoorbeeld de snelle actiebalk weergegeven als u de aanwijzer boven de elementminiatuur houdt.
 
-### Navigeren naar elementen en deze selecteren {#navigating-and-selecting-assets}
+### {#navigating-and-selecting-assets} navigeren naar elementen en deze selecteren
 
-Met het **[!UICONTROL Select]** pictogram kunt u elementen weergeven, doorbladeren en selecteren met een van de beschikbare weergaven (kaart, kolom, lijst). **[!UICONTROL Select]** verschijnt als een snelle actie in de kaartmening.
+U kunt elementen met een van de beschikbare weergaven (kaart, kolom, lijst) weergeven, doorbladeren en selecteren met het pictogram **[!UICONTROL Select]**. **[!UICONTROL Select]** verschijnt als een snelle actie in de kaartmening.
 
 ![select_quick_action](assets/select_quick_action.png)
 
-In de lijstweergave wordt **[!UICONTROL Select]** weergegeven wanneer u het muispictogram boven de miniatuur plaatst vóór de namen van de middelen/map in de lijst.
+In lijstmening, **[!UICONTROL Select]** verschijnt wanneer u het muispictogram over de duimnagel vóór de namen van de activa/omslag in de lijst houdt.
 
 ![select_quick_in_listview](assets/select_quick_in_listview.png)
 
-Net als in de lijstweergave **[!UICONTROL Select]** wordt deze weergegeven wanneer u de muisaanwijzer boven de miniatuur houdt en de naam van de middelen of map in de kolomweergave plaatst.
+Net als in de lijstweergave wordt **[!UICONTROL Select]** weergegeven wanneer u het muispictogram boven de miniatuur plaatst vóór de namen van de middelen of map in de kolomweergave.
 
 ![select_quick_in_columnView](assets/select_quick_in_columnview.png)
 
-Voor meer informatie, zie het [Bekijken van en het Selecteren van uw Middelen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+Voor meer informatie, zie [Het bekijken van en het Selecteren van uw Middelen](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 ## Afbeeldingen bewerken {#editing-images}
 
@@ -678,95 +678,95 @@ Beeldbewerking wordt ondersteund voor bestanden met de volgende indelingen:
 * PNG
 * JPEG
 
-Voor sommige componenten zijn er extra opties beschikbaar in de **[!UICONTROL Full Screen]** modus.
+Voor sommige componenten zijn in de modus **[!UICONTROL Full Screen]** extra opties beschikbaar.
 
 Om een TXT- dossier uit te geven, plaats **[!UICONTROL Day CQ Link Externalizer]** van binnen de Manager van de Configuratie.
 
-U kunt ook afbeeldingen met hyperlinks toevoegen met de afbeeldingseditor. Zie [Afbeeldingskaarten](image-maps.md)toevoegen voor meer informatie.
+U kunt ook afbeeldingen met hyperlinks toevoegen met de afbeeldingseditor. Zie [Afbeeldingskaarten toevoegen](image-maps.md) voor meer informatie.
 
 **Afbeeldingen** bewerken:
 
 1. Voer een van de volgende handelingen uit om een element te openen in de bewerkingsmodus:
 
-   * Selecteer het element en klik op het **[!UICONTROL Edit]** pictogram op de werkbalk.
-   * Tik op de **[!UICONTROL Edit]** optie die op een element in de kaartweergave wordt weergegeven.
-   * Tik op het **[!UICONTROL Edit]** pictogram op de werkbalk op de elementpagina.
+   * Selecteer het element en klik op het pictogram **[!UICONTROL Edit]** op de werkbalk.
+   * Tik op de optie **[!UICONTROL Edit]** die wordt weergegeven op een element in de kaartweergave.
+   * Tik op het pictogram **[!UICONTROL Edit]** op de werkbalk op de elementpagina.
 
    ![edit_icon](assets/edit_icon.png)
 
-1. Tik op de afbeelding om deze uit te snijden. **[!UICONTROL Crop]**
+1. Tik op **[!UICONTROL Crop]** om de afbeelding uit te snijden.
 
    ![chlimage_1-22](assets/chlimage_1-22.png)
 
-1. Selecteer de gewenste optie in de lijst. Het bijsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. The **[!UICONTROL Free Hand]** option lets you crop the image without any aspect ratio restrictions.
+1. Selecteer de gewenste optie in de lijst. Het bijsnijdgebied wordt op basis van de gekozen optie weergegeven in de afbeelding. Met de optie **[!UICONTROL Free Hand]** kunt u de afbeelding uitsnijden zonder beperkingen voor de hoogte-breedteverhouding.
 
    ![chlimage_1-23](assets/chlimage_1-23.png)
 
 1. Selecteer het gebied dat u wilt uitsnijden en wijzig de grootte of de positie van het gebied in de afbeelding.
-1. Gebruik de **[!UICONTROL Finish]** optie in de rechterbovenhoek om de afbeelding uit te snijden. Door tikken wordt **[!UICONTROL Finish]** ook de rendering van uitvoeringen opnieuw geactiveerd.
+1. Gebruik de optie **[!UICONTROL Finish]** in de rechterbovenhoek om de afbeelding uit te snijden. Door op **[!UICONTROL Finish]** te tikken, wordt de rendering ook opnieuw gegenereerd.
 
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
-1. Use the **[!UICONTROL Undo]** and **[!UICONTROL Redo]** icons on the top right to revert to the un-cropped image or retain the cropped image, respectively.
+1. Gebruik de pictogrammen **[!UICONTROL Undo]** en **[!UICONTROL Redo]** rechtsboven om terug te keren naar de niet-uitgesneden afbeelding of de uitgesneden afbeelding te behouden.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
-1. Tik op het juiste **[!UICONTROL Rotate]** pictogram om de afbeelding rechtsom of linksom te roteren.
+1. Tik op het desbetreffende **[!UICONTROL Rotate]**-pictogram om de afbeelding rechtsom of linksom te roteren.
 
    ![chlimage_1-26](assets/chlimage_1-26.png)
 
-1. Tik op het juiste **[!UICONTROL Flip]** pictogram om de afbeelding horizontaal of verticaal om te draaien.
+1. Tik op het juiste pictogram **[!UICONTROL Flip]** om de afbeelding horizontaal of verticaal om te draaien.
 
    ![chlimage_1-27](assets/chlimage_1-27.png)
 
-1. Tik op het **[!UICONTROL Finish]** pictogram om de wijzigingen op te slaan.
+1. Tik op het pictogram **[!UICONTROL Finish]** om de wijzigingen op te slaan.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
 
-## De tijdlijn gebruiken {#timeline}
+## De tijdlijn {#timeline} gebruiken
 
-Met **[!UICONTROL Timeline]** dit dialoogvenster kunt u verschillende gebeurtenissen voor een geselecteerd item weergeven, zoals actieve workflows voor een element, opmerkingen, annotaties, activiteitenlogbestanden en versies.
+Met **[!UICONTROL Timeline]** kunt u verschillende gebeurtenissen voor een geselecteerd item weergeven, zoals actieve workflows voor een element, opmerkingen, annotaties, activiteitenlogbestanden en versies.
 
-In de [Collections-console](managing-collections-touch-ui.md#navigating-the-collections-console)biedt de **[!UICONTROL Show All]** lijst alleen opties voor het weergeven van opmerkingen en workflows. Bovendien wordt de chronologie getoond slechts voor top-level inzamelingen die in de console vermeld zijn. Deze wordt niet weergegeven als u in een van de verzamelingen navigeert.
+In de [Collections console](managing-collections-touch-ui.md#navigating-the-collections-console) biedt de lijst **[!UICONTROL Show All]** opties om alleen opmerkingen en workflows weer te geven. Bovendien wordt de chronologie getoond slechts voor top-level inzamelingen die in de console vermeld zijn. Deze wordt niet weergegeven als u in een van de verzamelingen navigeert.
 
-**[!UICONTROL Timeline]** bevat diverse [opties die specifiek zijn voor inhoudsfragmenten](content-fragments-managing.md#timeline-for-content-fragments); deze functionaliteit vereist [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of later.
+**[!UICONTROL Timeline]** bevat diverse  [opties die specifiek zijn voor inhoudsfragmenten](content-fragments-managing.md#timeline-for-content-fragments); deze functionaliteit vereist  [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of later.
 
 **Tijdlijn** gebruiken:
 
 1. Open de elementpagina voor een element of selecteer het in de Elementeninterface.
-1. Tik op het **[!UICONTROL Global Navigation]** pictogram en kies **[Tijdlijn]** in de lijst.
+1. Tik op het pictogram **[!UICONTROL Global Navigation]** en kies **[Tijdlijn]** in de lijst.
 
    ![tijdlijn](assets/timeline.png)
 
-1. In de lijst die wordt weergegeven, gebruikt u de **[!UICONTROL Show All]** lijst om de resultaten te filteren op basis van opmerkingen, versies, workflows en activiteiten.
+1. In de lijst die wordt weergegeven, gebruikt u de lijst **[!UICONTROL Show All]** om de resultaten te filteren op basis van opmerkingen, versies, workflows en activiteiten.
 
    ![timeline_options](assets/timeline_options.png)
 
-## Annotaties toevoegen {#annotating}
+## Annotaties {#annotating} toevoegen
 
 Annotaties zijn opmerkingen of toelichtingen die aan afbeeldingen of video&#39;s worden toegevoegd. Annotaties bieden marketers de mogelijkheid samen te werken en feedback over middelen te geven.
 
 Videoannotaties worden alleen ondersteund in browsers met HTML5-compatibele video-indelingen. De video-indelingen die door AEM Assets worden ondersteund, zijn afhankelijk van de browser.
 
-Voor inhoudsfragmenten worden [annotaties gemaakt in de editor](content-fragments-variations.md#annotating-a-content-fragment); deze functionaliteit vereist [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of later.
+Voor Inhoudsfragmenten worden [annotaties gemaakt in de editor](content-fragments-variations.md#annotating-a-content-fragment); voor deze functionaliteit is [AEM 6.4 Service Pack 2 (6.4.2.0)](/help/release-notes/sp-release-notes.md) of hoger vereist.
 
 U kunt meerdere annotaties toevoegen voordat u ze opslaat.
 
-U kunt notities toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Zie Video-elementen [beheren voor meer informatie](managing-video-assets.md).
+U kunt notities toevoegen aan video-elementen. Tijdens het annoteren van video&#39;s pauzeert de speler zodat u notities kunt aanbrengen in een frame. Zie [Video-elementen beheren](managing-video-assets.md) voor meer informatie.
 
-U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderliggende verzamelingen bevat, kunt u echter alleen annotaties of opmerkingen aan de bovenliggende verzameling toevoegen. De **[!UICONTROL Annotate]** optie is niet beschikbaar voor onderliggende verzamelingen.
+U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderliggende verzamelingen bevat, kunt u echter alleen annotaties of opmerkingen aan de bovenliggende verzameling toevoegen. De optie **[!UICONTROL Annotate]** is niet beschikbaar voor onderliggende verzamelingen.
 
 **Annotaties** toevoegen:
 
 1. Navigeer naar de locatie van het element waaraan u annotaties wilt toevoegen.
-1. Tik op het **[!UICONTROL Annotate]** pictogram op een van de volgende manieren:
+1. Tik op het pictogram **[!UICONTROL Annotate]** van een van de volgende opties:
 
    * [Snelle acties](managing-assets-touch-ui.md#quick-actions)
    * Vanuit de werkbalk nadat u het element hebt geselecteerd of naar de elementpagina bent genavigeerd
 
-   ![chlimage_1-29](assets/chlimage_1-29.png)
+   ![chlimage_1-21](assets/chlimage_1-29.png)
 
-1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. Alternatively, mark up an area on the image and add an annotation in the **[!UICONTROL Add Annotation]** dialog box.
+1. Voeg een opmerking toe in het vak **[!UICONTROL Comment]** onder aan de tijdlijn. U kunt ook een gebied in de afbeelding markeren en een annotatie toevoegen in het dialoogvenster **[!UICONTROL Add Annotation]**.
 
    ![chlimage_1-30](assets/chlimage_1-30.png)
 
@@ -778,26 +778,26 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
 
    ![chlimage_1-31](assets/chlimage_1-31.png)
 
-1. Tik nadat u de annotatie hebt toegevoegd op **[!UICONTROL Add]** om deze op te slaan. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
+1. Tik op **[!UICONTROL Add]** om de annotatie op te slaan nadat u de annotatie hebt toegevoegd. Een kennisgeving voor de aantekening wordt verzonden naar Aaron.
 
    ![chlimage_1-32](assets/chlimage_1-32.png)
 
-1. Tik **[!UICONTROL Close]** om de **[!UICONTROL Annotation]** modus af te sluiten.
-1. Meld u aan bij AEM Assets met de gegevens van Aaron MacDonald en tik op het **[!UICONTROL Notifications]** pictogram om de melding weer te geven.
+1. Tik **[!UICONTROL Close]** om de modus **[!UICONTROL Annotation]** af te sluiten.
+1. Als u de melding wilt weergeven, meldt u zich aan bij AEM Assets met de gegevens van Aaron MacDonald en tikt u op het pictogram **[!UICONTROL Notifications]** om de melding weer te geven.
 
-1. Tik op het **[!UICONTROL Profile]** pictogram en tik op een andere kleur om een andere kleur te kiezen, zodat u onderscheid kunt maken tussen gebruikers **[!UICONTROL My Preferences]**.
+1. Tik op het pictogram **[!UICONTROL Profile]** en tik **[!UICONTROL My Preferences]** om een andere kleur te kiezen zodat u onderscheid kunt maken tussen gebruikers.
 
    ![chlimage_1-33](assets/chlimage_1-33.png)
 
-1. Specify the desired color in the **[!UICONTROL Annotation Color]** box, then tap **[!UICONTROL Accept]**.
+1. Geef de gewenste kleur op in het vak **[!UICONTROL Annotation Color]** en tik vervolgens op **[!UICONTROL Accept]**.
 
    ![chlimage_1-34](assets/chlimage_1-34.png)
 
-### Opgeslagen notities weergeven {#viewing-saved-annotations}
+### Opgeslagen annotaties weergeven {#viewing-saved-annotations}
 
 1. Als u opgeslagen annotaties voor een element wilt weergeven, navigeert u naar de locatie van het element en opent u de elementpagina voor het element.
 
-1. Tik op het **[!UICONTROL Global Navigation]** pictogram en tik op **[!UICONTROL Timeline]** de lijst.
+1. Tik op het pictogram **[!UICONTROL Global Navigation]** en tik **[!UICONTROL Timeline]** in de lijst.
 
    ![chlimage_1-35](assets/chlimage_1-35.png)
 
@@ -805,13 +805,13 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
 
    ![chlimage_1-36](assets/chlimage_1-36.png)
 
-1. Tik op een opmerking in het **[!UICONTROL Timeline]** deelvenster om de bijbehorende annotatie in de afbeelding weer te geven.
+1. Tik op een opmerking in het deelvenster **[!UICONTROL Timeline]** om de bijbehorende annotatie in de afbeelding weer te geven.
 
    ![chlimage_1-37](assets/chlimage_1-37.png)
 
 1. Tik **[!UICONTROL Delete]** om een bepaalde opmerking te verwijderen.
 
-### Annotaties afdrukken {#printing-annotations}
+### Annotaties {#printing-annotations} afdrukken
 
 Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties en de revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
@@ -819,33 +819,33 @@ U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
 Lengte annotaties worden mogelijk niet correct weergegeven in het PDF-bestand. Voor een optimale rendering raadt Adobe aan om annotaties te beperken tot 50 woorden.
 
-Als u de annotaties en de revisiestatus wilt afdrukken, tikt u op het **[!UICONTROL Print]** pictogram en volgt u de instructies in de wizard. Het **[!UICONTROL Print]** pictogram wordt alleen op de werkbalk weergegeven als aan het element ten minste één aantekening of revisiestatus is toegewezen.
+Als u de annotaties en de revisiestatus wilt afdrukken, tikt u op het pictogram **[!UICONTROL Print]** en volgt u de instructies in de wizard. Het pictogram **[!UICONTROL Print]** wordt alleen op de werkbalk weergegeven wanneer aan het element ten minste één aantekening of revisiestatus is toegewezen.
 
 1. Open vanuit de interface Middelen de voorvertoningspagina voor een element.
 1. Voer een van de volgende handelingen uit:
 
    * Ga naar stap 4 als u alle annotaties en de revisiestatus wilt afdrukken.
-   * Als u specifieke annotaties en de revisiestatus wilt afdrukken, opent u de [tijdlijn](managing-assets-touch-ui.md#timeline) en gaat u verder met stap 3.
+   * Als u specifieke annotaties en revisiestatus wilt afdrukken, opent u de [tijdlijn](managing-assets-touch-ui.md#timeline) en gaat u verder met stap 3.
 
-1. Als u specifieke annotaties wilt afdrukken, selecteert u de annotaties in het **[!UICONTROL Timeline]** dialoogvenster.
+1. Als u specifieke annotaties wilt afdrukken, selecteert u de annotaties in de map **[!UICONTROL Timeline]**.
 
    ![chlimage_1-38](assets/chlimage_1-38.png)
 
-   Als u alleen de revisiestatus wilt afdrukken, selecteert u deze in het **[!UICONTROL Timeline]** menu.
+   Als u alleen de revisiestatus wilt afdrukken, selecteert u deze in het menu **[!UICONTROL Timeline]**.
 
    ![chlimage_1-39](assets/chlimage_1-39.png)
 
-1. Tik op het **[!UICONTROL Print]** pictogram op de werkbalk.
+1. Tik op het pictogram **[!UICONTROL Print]** op de werkbalk.
 
    ![chlimage_1-40](assets/chlimage_1-40.png)
 
-1. Kies in het **[!UICONTROL Print]** dialoogvenster de positie waarop de annotaties of revisiestatus in de PDF moeten worden weergegeven. Als u bijvoorbeeld wilt dat de annotaties of status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de **[!UICONTROL Top-Left]** (standaardinstelling).
+1. Kies in het dialoogvenster **[!UICONTROL Print]** de positie die u wilt dat de annotaties of revisiestatus op de PDF worden weergegeven. Als u bijvoorbeeld wilt dat de annotaties of status rechtsboven op de pagina met de afgedrukte afbeelding worden afgedrukt, gebruikt u de instelling **[!UICONTROL Top-Left]** (standaard).
 
    ![chlimage_1-41](assets/chlimage_1-41.png)
 
-   U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties of status in de afgedrukte PDF wilt weergeven. If you want the annotations or status to appear in a page that is separate from the printed asset, choose **[!UICONTROL Next Page]**.
+   U kunt andere instellingen kiezen, afhankelijk van de positie waar u de annotaties of status in de afgedrukte PDF wilt weergeven. Als u de annotaties of status wilt weergeven op een pagina die gescheiden is van het afgedrukte element, kiest u **[!UICONTROL Next Page]**.
 
-1. Tik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties of status op de opgegeven positie weer. For example, if you choose to print both annotations and the review status using the **[!UICONTROL Top-Left]** setting, the generated output resembles the PDF file depicted here.
+1. Tik op **[!UICONTROL Print]**. Afhankelijk van de optie die u kiest in stap 2, geeft de gegenereerde PDF de annotaties of status op de opgegeven positie weer. Als u bijvoorbeeld zowel annotaties als de revisiestatus wilt afdrukken met de instelling **[!UICONTROL Top-Left]**, lijkt de gegenereerde uitvoer op het PDF-bestand dat hier wordt weergegeven.
 
    ![chlimage_1-42](assets/chlimage_1-42.png)
 
@@ -857,26 +857,25 @@ Als u de annotaties en de revisiestatus wilt afdrukken, tikt u op het **[!UICONT
    >
    >Als het element subelementen bevat, kunt u alle subelementen samen met de specifieke paginagewijze annotaties afdrukken.
 
-   Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u het bestand **[!UICONTROL Annotation PDF configuration]** vanuit **[!UICONTROL Configuration Manager]** en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](managing-assets-touch-ui.md#annotating)voor informatie over het wijzigen van de lettertypekleur van annotaties.
+   Als u de weergave van het gerenderde PDF-bestand wilt wijzigen, bijvoorbeeld de lettertypekleur, -grootte en -stijl, de achtergrondkleur van de opmerkingen en status, opent u **[!UICONTROL Annotation PDF configuration]** vanuit **[!UICONTROL Configuration Manager]** en wijzigt u de gewenste opties. Als u bijvoorbeeld de weergavekleur van de goedgekeurde status wilt wijzigen, wijzigt u de kleurcode in het desbetreffende veld. Zie [Annoteren](managing-assets-touch-ui.md#annotating) voor informatie over het wijzigen van de fontkleur van annotaties.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
    Ga terug naar het gerenderde PDF-bestand en vernieuw het. De vernieuwde PDF weerspiegelt de wijzigingen die u hebt aangebracht.
 
-**Annotaties afdrukken in vreemde talen**:
-Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
+**Annotaties afdrukken in vreemde talen**: Als een element annotaties in vreemde talen bevat (vooral niet-Latijnse talen), moet u eerst de service CQ-DAM-Handler-Gibson Font Manager op de AEM server configureren om deze annotaties af te drukken. Geef bij het configureren van de service CQ-DAM-Handler-Gibson Font Manager het pad op waar de lettertypen voor de gewenste talen zich bevinden.
 
 1. Open de **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** configuratiepagina via de URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl](http://localhost:4502/system/console/configMgr/com.day.cq.dam.handler.gibson.fontmanager.impl.FontManagerServiceImpl).
-1. Voer een van de volgende handelingen uit om te configureren **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]**:
+1. Voer een van de volgende handelingen uit om **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** te configureren:
 
-   * Geef in de **[!UICONTROL System Fonts]** mapoptie het volledige pad naar de map Fonts op uw systeem op. Bijvoorbeeld, als u een gebruiker van MAC bent, kunt u de weg zoals `/Library/Fonts` in de **[!UICONTROL System Fonts]** folderoptie specificeren. AEM haalt de lettertypen uit deze map op.
-   * Maak een map met de naam **Lettertypen** in de **[!UICONTROL crx-quickstart]** map. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** haalt automatisch de lettertypen op de locatie op `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de **[!UICONTROL Adobe Server Fonts]** mapoptie.
-   * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de **[!UICONTROL Customer Fonts]** directory.
+   * Geef in de directory **[!UICONTROL System Fonts]** het volledige pad naar de map Fonts op uw systeem op. Bijvoorbeeld, als u een gebruiker van MAC bent, kunt u de weg als `/Library/Fonts` in de **[!UICONTROL System Fonts]** folderoptie specificeren. AEM haalt de lettertypen uit deze map op.
+   * Maak een map met de naam **fonts** in de map **[!UICONTROL crx-quickstart]**. **[!UICONTROL CQ-DAM-Handler-Gibson Font Manager Service]** haalt automatisch de lettertypen op de locatie op  `crx-quickstart/fonts`. U kunt dit standaardpad overschrijven vanuit de mapoptie **[!UICONTROL Adobe Server Fonts]**.
+   * Maak een nieuwe map voor lettertypen op uw systeem en sla de gewenste lettertypen op in de map. Geef vervolgens het volledige pad naar die map op in de directory **[!UICONTROL Customer Fonts]**.
 
-1. Open de **[!UICONTROL Annotation PDF]** configuratie via de URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
-1. Configureer de lettertypefamilie **[!UICONTROL Annotation PDF]** met de juiste set:
+1. Open de **[!UICONTROL Annotation PDF]**-configuratie via de URL [https://&lt;server>:&lt;port>/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig](http://localhost:4502/system/console/configMgr/com.day.cq.dam.core.impl.annotation.pdf.AnnotationPdfConfig).
+1. Configureer **[!UICONTROL Annotation PDF]** met de juiste set lettertype-familie als volgt:
 
-   * Neem de tekenreeks op `<font_family_name_of_custom_font, sans-serif>` in de optie voor de lettertypefamilie. Als u bijvoorbeeld annotaties wilt afdrukken in CJK (Chinees, Japans en Koreaans), neemt u de tekenreeks op `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` in de optie voor lettertypefamilies. Als u annotaties wilt afdrukken in het Hindi, downloadt u het juiste lettertype en configureert u de lettertypefamilie als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
+   * Neem de tekenreeks `<font_family_name_of_custom_font, sans-serif>` op in de optie font-family. Als u bijvoorbeeld annotaties wilt afdrukken in CJK (Chinees, Japans en Koreaans), neemt u de tekenreeks `Arial Unicode MS, Noto Sans, Noto Sans CJK JP, sans-serif` op in de optie font-family. Als u annotaties wilt afdrukken in het Hindi, downloadt u het juiste lettertype en configureert u de lettertypefamilie als Arial Unicode MS, Noto Sans, Noto Sans CJK JP, Noto Sans Devanagari, sans-serif.
 
 1. Start de AEM opnieuw.
 
@@ -913,21 +912,21 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
 1. Navigeer naar de locatie van het element waarvoor u een versie wilt maken en klik erop om de elementpagina te openen.
 
-1. Klik op het **[!UICONTROL Global Navigation]** pictogram en kies **[!UICONTROL Timeline]** in het menu.
+1. Klik op het pictogram **[!UICONTROL Global Navigation]** en kies **[!UICONTROL Timeline]** in het menu.
 
    ![timeline-1](assets/timeline-1.png)
 
-1. Klik **[!UICONTROL Actions]** bij de bodem om de beschikbare acties te bekijken u op het middel kunt uitvoeren.
+1. Klik **[!UICONTROL Actions]** bij de bodem om de beschikbare acties te bekijken u op de activa kunt uitvoeren.
 
-1. Klik **[!UICONTROL Save as Version]** om een versie voor het element te maken.
+1. Klik op **[!UICONTROL Save as Version]** om een versie voor het element te maken.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. Voeg een label en opmerking toe en klik vervolgens **[!UICONTROL Create]** om een versie te maken. U kunt ook tikken **[!UICONTROL Cancel]** om de bewerking af te sluiten.
+1. Voeg een label en opmerking toe en klik op **[!UICONTROL Create]** om een versie te maken. U kunt ook op **[!UICONTROL Cancel]** tikken om de bewerking af te sluiten.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. To view the new version, open the **[!UICONTROL Show All]** list in the timeline from the asset details page or the [!DNL Assets] interface, and choose **[!UICONTROL Versions]**.
+1. Als u de nieuwe versie wilt weergeven, opent u de lijst **[!UICONTROL Show All]** in de tijdlijn van de pagina met elementdetails of de interface [!DNL Assets] en kiest u **[!UICONTROL Versions]**.
 
    ![version_option](assets/versions_option.png)
 
@@ -937,14 +936,14 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    >[!NOTE]
    >
-   >U kunt het element ook selecteren in de [lijstweergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) of in de [kolomweergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
+   >U kunt het element ook selecteren in de [Lijstweergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) of de [Kolomweergave](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).
 
 1. Voeg een label en een opmerking voor de versie toe om terug te keren naar de specifieke versie in de interface Middelen.
 
    ![save_version](assets/save_version.png)
 
-1. To generate a preview for the version, click **[!UICONTROL Preview Version]**.
-1. Selecteer deze versie om deze versie weer te geven in de interface Elementen **[!UICONTROL Revert to this Version]**.
+1. Als u een voorvertoning voor de versie wilt genereren, klikt u op **[!UICONTROL Preview Version]**.
+1. Selecteer **[!UICONTROL Revert to this Version]** om deze versie weer te geven in de interface Elementen.
 1. Als u twee versies wilt vergelijken, gaat u naar de elementpagina van het element en klikt u op de versie die u wilt vergelijken met de huidige versie.
 
    ![Selecteer een vorige versie van het element die u met de huidige versie wilt vergelijken](assets/select_version_tocompare.png)
@@ -953,9 +952,9 @@ Met de versiefunctionaliteit kunt u het volgende doen:
 
    ![compare_versions](assets/compare_versions.png)
 
-### Een workflow op een element starten {#starting-a-workflow-on-an-asset}
+### Een workflow starten op een element {#starting-a-workflow-on-an-asset}
 
-Zie een workflow [toepassen op een AEM](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
+Zie [een workflow toepassen op een AEM element](/help/assets/assets-workflow.md#apply-a-workflow-to-an-aem-asset).
 
 ## Informatie over verzamelingen {#collections}
 
@@ -968,9 +967,9 @@ Een gebruiker kan toegang hebben tot meerdere verzamelingen. De inzamelingen zij
 
 * Een verzameling met een **statische referentielijst** van elementen, mappen en andere verzamelingen.
 
-* Een verzameling die gebruikmaakt van **zoekcriteria** en op basis van de criteria dynamisch elementen vult. Dit wordt een **slimme verzameling** genoemd.
+* Een verzameling die een **zoekcriterium** gebruikt en op basis van de criteria dynamisch elementen vult. Dit wordt genoemd een **Slimme Inzameling**.
 
-Zie [Verzamelingen](managing-collections-touch-ui.md) beheren voor meer informatie over verzamelingsbeheer.
+Zie [Verzamelingen beheren](managing-collections-touch-ui.md) voor meer informatie over verzamelingsbeheer.
 
 >[!NOTE]
 >
