@@ -22,9 +22,9 @@ ht-degree: 4%
 
 >[!CAUTION]
 >
->Voor sommige functies van Content Fragment is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md)vereist.
+>Voor bepaalde functionaliteit voor inhoudsfragmenten is de toepassing van [AEM 6.4 Service Pack 2 (6.4.2.0) of hoger](/help/release-notes/sp-release-notes.md) vereist.
 
-Wanneer u [creeert](content-fragments-variations.md#authoring-your-content), gebruikt de redacteur van het inhoudsfragment *prijsverhogingssyntaxis* om u toe te staan om inhoud gemakkelijk te schrijven:
+Wanneer u [authoring](content-fragments-variations.md#authoring-your-content) bent, gebruikt de inhoudsfragmenteditor *markdown* syntaxis zodat u eenvoudig inhoud kunt schrijven:
 
 ![markeringseditor](/help/assets/assets/cfm-6420-08.png)
 
@@ -40,7 +40,7 @@ U kunt het volgende definiëren:
 * [Codeblokken](/help/assets/content-fragments-markdown.md#code-blocks)
 * [Backslash-escape](/help/assets/content-fragments-markdown.md#backslash-escapes)
 
-## Kop {#heading-notation}
+## Kopnotatie {#heading-notation}
 
 Een koptekst maken door een hashtag (#) vóór de kop te plaatsen. Eén hashtag (#) wordt gebruikt voor een H1-, twee hash-tags (##) voor een H2-tag, enzovoort. U kunt maximaal 6 hashtags gebruiken. Bijvoorbeeld:
 
@@ -70,7 +70,7 @@ Een regeleinde wordt gemaakt door een regel met twee of meer spaties te eindigen
 
 U kunt inline-koppelingen en verwijzingskoppelingen maken.
 
-In beide stijlen wordt de koppelingstekst gescheiden door vierkante haakjes `[]`.
+In beide stijlen wordt de koppelingstekst gescheiden door vierkante haken `[]`.
 
 Dit zijn voorbeelden van inlineverbindingen:
 
@@ -114,7 +114,7 @@ Waarbij &quot;id&quot; de naam van een gedefinieerde afbeeldingsverwijzing is. V
 
     `[id]: url/to/image "Optional title attribute"`
 
-## Aanhalingstekens blokkeren {#block-quotes}
+## Aanhalingstekens {#block-quotes} blokkeren
 
 U kunt tekst aanhalen door het symbool > vóór de tekst toe te voegen. Bijvoorbeeld:
 
@@ -190,7 +190,7 @@ Codeblokken worden doorgaans gebruikt om broncode te illustreren. U kunt codeblo
 
         `This is a code block.`
 
-## Backslash-escape {#backslash-escapes}
+## Backslash {#backslash-escapes}
 
 Met backslash-escape kunt u letterlijke tekens genereren die een speciale betekenis hebben in de opmaaksyntaxis. Als u bijvoorbeeld een woord met letterlijke sterretjes wilt omringen (in plaats van een HTML-tag), kunt u als volgt backslashes vóór de sterretjes gebruiken:
 
