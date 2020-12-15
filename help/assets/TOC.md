@@ -15,14 +15,14 @@ ht-degree: 31%
 ---
 
 
-# Hulplijn voor middelen {#assets}
+# Elementengids {#assets}
 
 + [Gebruikershandleiding voor middelen](home.md)
 + [AEM 6.4 Opmerkingen bij de release van activa](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/assets.html)
 + [Informatie over DAM](assets.md)
 + [Verbeteringen in gebruikerservaring](ux-improvements.md)
 + [Aanbevolen procedures voor elementen](best-practices-for-assets.md)
-+ AEM Assets gebruiken {#using}
++ AEM Assets {#using} gebruiken
    + [AEM Assets-ervaring voor homepage](assets-home-page.md)
    + [Middelen zoeken in AEM](search-assets.md)
    + [GQL zoeken in volledige tekst](gql-search.md)
@@ -37,9 +37,9 @@ ht-degree: 31%
    + [Dynamic Media-nieuwsbrief van Experience League](dynamic-media-newsletter.md)
    + [Dynamic Media instellen](administering-dynamic-media.md)
    + [Werken met Dynamic Media](dynamic-media.md)
-   + [Dynamische media configureren - Scene7-modus](config-dms7.md)
-   + [Dynamische media configureren - hybride modus](config-dynamic.md)
-   + [Problemen met dynamische media oplossen - Scene7-modus](troubleshoot-dms7.md)
+   + [Dynamic Media configureren - Scene7-modus](config-dms7.md)
+   + [Dynamic Media configureren - hybride modus](config-dynamic.md)
+   + [Problemen oplossen in de modus Dynamic Media - Scene7](troubleshoot-dms7.md)
    + [Dynamic Media-assets beheren](managing-assets.md)
    + [Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen](best-practices-for-optimizing-the-quality-of-your-images.md)
    + [Voorinstellingen voor Dynamic Media-viewer beheren](managing-viewer-presets.md)
@@ -73,7 +73,7 @@ ht-degree: 31%
    + [Uw CDN-gecachete content ongeldig maken](invalidate-cdn-cached-content.md)
    + [Feature Pack 18912 installeren voor migratie van grote hoeveelheden bedrijfsmiddelen](bulk-ingest-migrate.md)
    + [Werken met kiezers](working-with-selectors.md)
-+ Elementen uitbreiden {#extending}
++ Elementen {#extending} uitbreiden
    + [Elementen aanpassen en uitbreiden](extending-assets.md)
    + [Middelen verwerken met behulp van media-handlers en workflows](media-handlers.md)
    + [Zoeken naar elementen uitbreiden](searchx.md)
@@ -82,7 +82,7 @@ ht-degree: 31%
    + [Editor van element uitbreiden](asseteditorx.md)
    + [HTTP-API voor assets](mac-api-assets.md)
    + [Ontwikkeling van proxy&#39;s](proxy.md)
-+ Elementen beheren {#administer}
++ Elementen {#administer} beheren
    + [Ondersteunde indelingen voor middelen](assets-formats.md)
    + [Facetten doorzoeken](search-facets.md)
    + [Metagegevens voor elementen beheren](metadata.md)
@@ -124,7 +124,7 @@ ht-degree: 31%
    + [Aanbevolen werkwijzen voor het delen van mappen AEM naar Creative Cloud](aem-cc-folder-sharing-best-practices.md)
    + [Metagegevensschema van map](folder-metadata-schema.md)
    + [Slimme tags beheren](managing-smart-tags.md)
-+ Brand Portal {#brandportal}
++ Merk-portal {#brandportal}
    + [AEM Assets configureren met Brand Portal](configure-aem-assets-with-brand-portal.md)
    + [Assets publiceren naar Brand Portal](brand-portal-publish-assets.md)
    + [Verzamelingen publiceren naar Brand Portal](brand-portal-publish-collection.md)
@@ -139,7 +139,7 @@ ht-degree: 31%
    + [Contentfragmenten - Overwegingen verwijderen](content-fragments-delete.md)
    + [Inhoudsfragmenten - Markering](content-fragments-markdown.md)
    + [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md)
-+ Elementen beheren {#managing}
++ Elementen {#managing} beheren
    + [Middelen beheren met de interface voor aanraakoptimalisatie](managing-assets-touch-ui.md)
    + [Meerdere elementen en verzamelingen beheren](managing-multiple-assets.md)
    + [Elementkiezer](asset-selector.md)
@@ -166,7 +166,7 @@ ht-degree: 31%
    + [Persoonlijke map delen](private-folder.md)
    + [Richtlijnen voor training voor Smart Content Service](smart-tags-training-guidelines.md)
    + [Video-uitvoeringen](video-renditions.md)
-+ 3D-middelen {#three-d}
++ 3D-elementen {#three-d}
    + [Opmerkingen bij de 3D-release AEM](../release-notes/aem3d-release-notes.md)
    + [Werken met 3D-elementen](assets-3d.md)
    + [AEM 3D installeren en configureren](install-config-3d.md)
