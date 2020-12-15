@@ -19,7 +19,7 @@ De zoekfunctie van Adobe Experience Manager-middelen (AEM) is verbeterd en daarm
 
 AEM Assets sorteert via de server de gehele set elementen (hoe groot ook) binnen een map of zoekopdracht tegelijk in plaats van deze op de client te sorteren. Op deze manier kunnen vooraf ingestelde resultaten snel worden weergegeven in de gebruikersinterface, waardoor de sorteerbewerking responsiever en kwetsbaarder wordt.
 
-## Elementen sorteren in de lijstweergave {#sorting-assets-in-list-view}
+## Elementen sorteren in lijstweergave {#sorting-assets-in-list-view}
 
 Met AEM Assets kunt u mapelementen sorteren op basis van de volgende velden:
 
@@ -50,7 +50,7 @@ Met AEM Assets kunt u mapelementen sorteren op basis van de volgende velden:
 
 >[!NOTE]
 >
->Als u de waarden in de `Name` kolommen of de `Title`kolommen wilt sorteren, bedekt u de waarden `/libs/dam/gui/content/commons/availablecolumns` en wijzigt u de waarde van `sortable` in `True`.
+>Als u de waarden in de `Name` of `Title`kolommen wilt sorteren, bedekt `/libs/dam/gui/content/commons/availablecolumns` en wijzigt u de waarde van `sortable` in `True`.
 
 ## Elementen sorteren in zoekresultaten {#sorting-assets-in-search-results}
 
@@ -72,7 +72,7 @@ U kunt zoekresultaten sorteren op basis van de volgende velden:
 
    ![chlimage_1-398](assets/chlimage_1-398.png)
 
-## Elementen in tijdlijn sorteren {#sorting-assets-in-timeline}
+## Elementen sorteren in tijdlijn {#sorting-assets-in-timeline}
 
 Met AEM Assets kunt u tijdlijnvermeldingen chronologisch sorteren, zoals annotaties, versies, workflows en activiteiten.
 
@@ -81,11 +81,11 @@ Met AEM Assets kunt u tijdlijnvermeldingen chronologisch sorteren, zoals annotat
 
    ![chlimage_1-399](assets/chlimage_1-399.png)
 
-1. Selecteer een item in de lijst in de tijdlijn. Selecteer deze optie bijvoorbeeld **[!UICONTROL Comments]** om de lijst met annotaties weer te geven die aan het element zijn gekoppeld.
+1. Selecteer een item in de lijst in de tijdlijn. Selecteer bijvoorbeeld **[!UICONTROL Comments]** om de lijst met annotaties weer te geven die aan het element zijn gekoppeld.
 
    ![chlimage_1-400](assets/chlimage_1-400.png)
 
-1. Klik op het **[!UICONTROL Sort]** pictogram of tik op het pictogram naast het **[!UICONTROL Date]** label. Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
+1. Klik/tik het **[!UICONTROL Sort]** pictogram naast het **[!UICONTROL Date]** etiket. Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
 
    ![chlimage_1-401](assets/chlimage_1-401.png)
 
