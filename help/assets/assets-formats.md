@@ -23,7 +23,7 @@ Gebruik de legenda om het steunniveau te begrijpen.
 |:---:|---|
 | ✓ | Ondersteund |
 | * | Ondersteund met add-onfuncties |
-| − | Niet van toepassing |
+| - | Niet van toepassing |
 
 ## Rasterafbeeldingsindelingen {#supported-raster-image-formats}
 
@@ -47,9 +47,9 @@ Rasterindelingen voor afbeeldingen die worden ondersteund voor functies voor mid
 
 **‡** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn.
 
-Rasterindelingen voor afbeeldingen die worden ondersteund voor functies van dynamische media zijn:
+Rasterindelingen voor afbeeldingen die worden ondersteund voor Dynamic Media-functies zijn:
 
-| Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
+| Indeling | Uploaden<br> (Invoerindeling) | Afbeelding<br> maken<br> voorinstelling<br> (uitvoerindeling) | Voorvertoning<br> dynamische uitvoering<br> | Leveren<br> dynamische<br> uitvoering | Download<br> dynamic<br> uitvoering |
 |---|:---:|:---:|:---:|:---:|:---:|
 | PNG | ✓ | ✓ | ✓ | ✓ | ✓ |
 | GIF | ✓ | ✓ | ✓ | ✓ | ✓ |
@@ -69,19 +69,19 @@ Rasterindelingen voor afbeeldingen die worden ondersteund voor functies van dyna
 
 Naast bovenstaande informatie, moet u rekening houden met het volgende:
 
-* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor EPS-vectorafbeeldingen wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [vorm ImageMagick](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie de lijn Gebaseerde Behandelaar [van Media van het](media-handlers.md#command-line-based-media-handler)Bevel.
+* De ondersteuning voor EPS-bestanden is alleen van toepassing op rasterafbeeldingen. Miniatuurgeneratie voor EPS-vectorafbeeldingen wordt bijvoorbeeld niet standaard ondersteund. Om steun toe te voegen, [vorm ImageMagick](best-practices-for-imagemagick.md). Om derdehulpmiddelen te integreren om extra mogelijkheden toe te laten, zie [Op de lijn gebaseerde de manager van Media](media-handlers.md#command-line-based-media-handler).
 
-* Metagegevensterugkoppeling werkt voor PSB-bestandsindeling wanneer deze wordt toegevoegd aan de `NComm` handler.
+* Metagegevensterugschrijving werkt voor PSB- dossierformaat wanneer het aan `NComm` manager wordt toegevoegd.
 
-* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het gebruik van dynamische media voor het weergeven en genereren van dynamische uitvoeringen voor EPS-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor EPS-bestanden voor te vertonen en te genereren, raadpleegt u [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
 * Voor EPS-bestanden wordt terugschrijven van metagegevens ondersteund in versie 3.0 of hoger van de PostScript Document Structuring Convention (PS-Adobe).
 
 ## Niet-ondersteunde rasterafbeeldingsindelingen in Dynamic Media {#unsupported-image-formats-dynamic-media}
 
-In de volgende lijst worden de subtypen beschreven van bestandsindelingen voor rasterafbeeldingen die *niet* worden ondersteund in Dynamic Media.
+In de volgende lijst worden de subtypen van rasterafbeeldingsbestandsindelingen beschreven die *niet* worden ondersteund in Dynamic Media.
 
-Zie ook Niet-ondersteunde bestandsindelingen [detecteren voor dynamische media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
+Zie ook [Niet-ondersteunde bestandsindelingen detecteren voor Dynamic Media](https://helpx.adobe.com/experience-manager/kb/detect-unsupported-assets-for-dynamic-media.html).
 
 * PNG-bestanden met een IDAT-segmentgrootte groter dan 100 MB.
 * PSB-bestanden.
@@ -90,7 +90,7 @@ Zie ook Niet-ondersteunde bestandsindelingen [detecteren voor dynamische media](
 * TIFF-bestanden met zwevende-kommagegevens.
 * TIFF-bestanden met LAB-kleurruimte.
 
-## PDF Rasterizer-bibliotheek {#supported-pdf-rasterizer-library}
+## Bibliotheek van PDF Rasterizer {#supported-pdf-rasterizer-library}
 
 De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van hoge kwaliteit voor grote en inhoudintensieve Adobe Illustrator- en PDF-bestanden. Adobe raadt u aan de PDF Rasterizer-bibliotheek te gebruiken voor het volgende:
 
@@ -100,13 +100,13 @@ De Adobe PDF Rasterizer-bibliotheek genereert miniaturen en voorvertoningen van 
 
 Zie [Werken met PDF Rasterizer](aem-pdf-rasterizer.md).
 
-## Bibliotheek voor transformatie van afbeeldingen {#supported-image-transcoding-library}
+## Bibliotheek {#supported-image-transcoding-library} voor transformatie van afbeeldingen
 
 De Adobe Imaging Transcoding Library is een oplossing voor beeldverwerking die kernfuncties voor beeldverwerking uitvoert, zoals coderen, transcoderen, resampling en vergroten/verkleinen.
 
 De bibliotheek voor grafische transformatie ondersteunt de volgende MIME-typen: JPG/JPEG, PNG (8-bits en 16-bits), GIF, BMP, TIFF/Gecomprimeerde TIFF (behalve 32-bits TIFF-bestanden en PTIFF-bestanden), ICO en ICN.
 
-Zie [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md).
+Zie [Bibliotheek voor beeldtransformatie](imaging-transcoding-library.md).
 
 ## Camera Raw {#supported-camera-raw}
 
@@ -116,7 +116,7 @@ Met de Adobe Camera Raw-bibliotheek kan AEM Assets onbewerkte afbeeldingen opnem
 
 Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn als volgt:
 
-| Format | Opslag | Metagegevensbeheer<br> | Fulltext<br> -extractie | Metagegevens<br> extraheren | Miniaturen<br> genereren | Extractie van<br> subactiva | Metagegevens<br> terugschrijven |
+| Indeling | Opslag | Beheer van metagegevens<br> | Fulltext<br> extractie | Metagegevens<br> extractie | Miniatuur<br> genereren | Subelement<br> extractie | Metagegevens<br> terugschrijven |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ |  | ✓ | ✓ | ✓ | ✓ |
 | DOC | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -137,9 +137,9 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 | QXP | ✓ | ✓ |  |  |  |  |  |
 | EPUB | ✓ | ✓ |  | ✓ | ✓ |  |  |
 
-De volgende documentindelingen worden ondersteund voor dynamische mediafuncties:
+Documentindelingen die worden ondersteund voor Dynamic Media-functies zijn:
 
-| Format | Uploaden<br> (invoerindeling) | Afbeeldingsvoorinstelling<br> maken<br><br> (uitvoerindeling) | Voorvertoning<br> van dynamische<br> uitvoering | Dynamische<br> uitvoering<br> leveren | Dynamische<br><br> uitvoering downloaden |
+| Indeling | Uploaden<br> (Invoerindeling) | Afbeelding<br> maken<br> voorinstelling<br> (uitvoerindeling) | Voorvertoning<br> dynamische uitvoering<br> | Leveren<br> dynamische<br> uitvoering | Download<br> dynamic<br> uitvoering |
 |---|:---:|:---:|:---:|:---:|:---:|
 | [AI](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ |  |  |  |  |
 | DOC |  |  |  |  |  |
@@ -162,26 +162,26 @@ De volgende documentindelingen worden ondersteund voor dynamische mediafuncties:
 
 Overweeg het volgende naast de bovenstaande functionaliteit:
 
-* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen als u dynamische media wilt gebruiken om dynamische uitvoeringen voor PDF-bestanden te genereren.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor PDF-bestanden te genereren, raadpleegt u [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Zie [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen voor informatie over het gebruik van dynamische media voor het weergeven en genereren van dynamische uitvoeringen voor AI-bestanden.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
+* Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-bestanden voor te vertonen en te genereren, raadpleegt u [Adobe Illustrator (AI), Postscript (EPS) en PDF-bestandsindelingen.](../assets/managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats)
 
-* Zie de bestandsindeling [InDesign (INDD) voor informatie over het genereren van dynamische uitvoeringen voor INDD-bestanden](../assets/managing-image-presets.md#indesign-indd-file-format).
+* Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor INDD-bestanden te genereren, raadpleegt u [InDesign (INDD)-bestandsindeling](../assets/managing-image-presets.md#indesign-indd-file-format).
 
 ## Multimedia-indelingen {#supported-multimedia-formats}
 
-| Format | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | FFMPEG-transcodering |
+| Indeling | Opslag | Metagegevensbeheer | Metagegevensextractie | Miniaturen genereren | FFMPEG-transcodering |
 |:---|:---:|:---:|:---:|:---:|:---:|
-| AAC | ✓ | ✓ |  | − | * |
-| MIDI | ✓ | ✓ |  | − | * |
-| 3GP | ✓ | ✓ |  | − | * |
-| MP3 | ✓ | ✓ | ✓ | − | * |
-| MPG | ✓ | ✓ |  | − | * |
-| OGA | ✓ | ✓ |  | − | * |
-| OGG | ✓ | ✓ |  | − | * |
-| RA | ✓ | ✓ |  | − | * |
-| WAV | ✓ | ✓ |  | − | * |
-| WMA | ✓ | ✓ |  | − | * |
+| AAC | ✓ | ✓ |  | - | * |
+| MIDI | ✓ | ✓ |  | - | * |
+| 3GP | ✓ | ✓ |  | - | * |
+| MP3 | ✓ | ✓ | ✓ | - | * |
+| MPG | ✓ | ✓ |  | - | * |
+| OGA | ✓ | ✓ |  | - | * |
+| OGG | ✓ | ✓ |  | - | * |
+| RA | ✓ | ✓ |  | - | * |
+| WAV | ✓ | ✓ |  | - | * |
+| WMA | ✓ | ✓ |  | - | * |
 | DVI | ✓ | ✓ |  | * | * |
 | FLV | ✓ | ✓ |  | * | * |
 | M4V | ✓ | ✓ |  | * | * |
@@ -216,7 +216,7 @@ Overweeg het volgende naast de bovenstaande functionaliteit:
 
 De ondersteunde archiefindelingen en de toepasbaarheid van de algemene DAM-workflows worden behandeld in de volgende tabel.
 
-| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamische levering van media |
+| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | TGZ | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | JAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -224,13 +224,13 @@ De ondersteunde archiefindelingen en de toepasbaarheid van de algemene DAM-workf
 | TAR | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | ZIP **†** | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 
-**†** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn. De ZIP-archieven die met `Deflate64` algoritme zijn gemaakt, worden in AEM beperkt ondersteund. Archiveer- en niet-archiefbewerkingen worden niet ondersteund. Bewerkingen zoals uploaden, bladeren en downloaden worden echter ondersteund.
+**†** De samengevoegde afbeelding wordt uit het PSD-bestand geëxtraheerd. Het is een afbeelding die door Adobe Photoshop wordt gegenereerd en in het PSD-bestand wordt opgenomen. Afhankelijk van de instellingen kan de samengevoegde afbeelding wel of niet de werkelijke afbeelding zijn. De ZIP-archieven die zijn gemaakt met het algoritme `Deflate64` bieden beperkte AEM ondersteuning. Archiveer- en niet-archiefbewerkingen worden niet ondersteund. Bewerkingen zoals uploaden, bladeren en downloaden worden echter ondersteund.
 
 ## Overige ondersteunde indelingen {#other-supported-formats}
 
 De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsindelingen wordt in de onderstaande tabel beschreven.
 
-| Format | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamische levering van media |
+| Indeling | Opslag | Versioning | Workflow | Publiceren | Toegangsbeheer | Dynamic Media-levering |
 |---|:---:|:---:|:---:|:---:|:---:|:---:|
 | **#** | ✓ | ✓ | ✓ | ✓ | ✓ |  |
 | SVG | ✓ | ✓ | ✓ | ✓ | ✓ |  |
@@ -243,7 +243,7 @@ De toepasbaarheid van algemene DAM-workflows voor een aantal andere bestandsinde
 
 ## Ondersteunde MIME-typen {#supported-mime-types}
 
-Standaard wordt het bestandstype AEM de bestandsextensie gebruikt. AEM kan het van de inhoud van de dossiers ontdekken. Voor laatstgenoemde, uitgezochte [!UICONTROL Detect MIME from content] optie in [!UICONTROL Day CQ DAM Mime Type Service] de Console van het AEM.
+Standaard wordt het bestandstype AEM de bestandsextensie gebruikt. AEM kan het van de inhoud van de dossiers ontdekken. Voor laatstgenoemde, selecteer [!UICONTROL Detect MIME from content] optie in [!UICONTROL Day CQ DAM Mime Type Service] in de Console van het AEM Web.
 
 Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/global/settings/cloudconfigs/dmscene7/jcr:content/mimeTypes`.
 
@@ -289,7 +289,7 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 | PPT | application/vnd.ms-powerpoint |  |  |
 | PS | application/postscript | `psprocess=Rasterize&psresolution=150`<br>`&pscolorspace=Auto&psalpha=false`<br>`&psextractsearchwords=false`<br>`&aiprocess=Rasterize&airesolution=150`<br>`&aicolorspace=Auto&aialpha=false` | <ul><li>[postScriptOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-post-script-options.html)</li><li>[illustratorOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-illustrator-options.html)</li></ul> |
 | PSD | image/vnd.adobe.photoshop | `process=None&layerNaming=Layername`<br>`&anchor=Center&createTemplate=false`<br>`&extractText=false&extendLayers=false` | <ul><li>[PhotoshopOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-options.html)</li><li>[photoshopLayerOptions](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-photoshop-layer-options.html)</li></ul> |
-| RTF | application/rtf |  |  |
+| TTF | application/rtf |  |  |
 | SVG | image/svg+xml |  |  |
 | SWF | application/x-shockwave-flash |  |  |
 | TAR | application/x-tar |  |  |
@@ -307,6 +307,6 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 
 >[!MORELIKETHIS]
 >
->* [Schakel op MIME-type gebaseerde elementen/Scene7 in om taakparameterondersteuning](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support)te uploaden.
->* [Configureer MIME op type gebaseerd voor ondersteuning](config-dynamic.md)voor uploadtaakparameters.
+>* [Schakel op MIME-type gebaseerde elementen/Scene7 in om taakparameterondersteuning](/help/sites-administering/scene7.md#enabling-mime-type-based-assets-scene-upload-job-parameter-support) te uploaden.
+>* [Configureer MIME op type gebaseerd voor ondersteuning](config-dynamic.md) voor uploadtaakparameters.
 
