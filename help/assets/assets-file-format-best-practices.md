@@ -11,11 +11,11 @@ ht-degree: 0%
 ---
 
 
-# Aanbevolen werkwijzen voor bestandsindelingen voor elementen {#assets-file-format-best-practices}
+# Best practices voor bestandsindeling van middelen {#assets-file-format-best-practices}
 
 AEM Assets biedt ondersteuning voor een groot aantal bibliotheken met bedrijfseigen bestandsindelingen en bestandsindelingen van derden, zodat gebruikers aan verschillende vereisten voor bestandsondersteuning kunnen voldoen. Tot de ondersteunde Adobe-bibliotheken behoren Adobe Camera Raw, Gibson, Adobe PDF Rasterizer en Adobe InDesign Server. Bovendien biedt AEM Assets ondersteuning voor bibliotheken van derden, zoals ImageMagick, TwelveMonkeys, enzovoort.
 
-Zie [Elementen met ondersteunde indelingen](assets-formats.md)voor de ondersteunde bestandsindelingen.
+Zie [Ondersteunde indelingen voor elementen](assets-formats.md) voor de ondersteunde bestandsindelingen.
 
 ## Adobe Camera Raw-bibliotheek {#adobe-camera-raw-library}
 
@@ -40,13 +40,13 @@ Miniaturen en voorvertoningen die worden gegenereerd met PDF Rasterizer, zijn be
 
 ## Adobe InDesign-server {#adobe-indesign-cc-server}
 
-Adobe raadt u aan Adobe InDesign-server te gebruiken voor het extraheren van Adobe InDesign-specifieke uitvoeringen, zoals IDML en HTML. Zie AEM elementen [toevoegen als verwijzingen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign)voor meer informatie.
+Adobe raadt u aan Adobe InDesign-server te gebruiken voor het extraheren van Adobe InDesign-specifieke uitvoeringen, zoals IDML en HTML. Zie [AEM elementen toevoegen als verwijzingen in Adobe InDesign](managing-linked-subassets.md#add-aem-assets-as-references-in-adobe-indesign) voor meer informatie.
 
 ##  Dynamic Media {#dynamic-media}
 
-De dynamische Media produceert en levert veelvoudige variaties van rijke inhoud in real time door zijn globaal, scalable, en prestaties-geoptimaliseerd netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Zie Dynamische media [configureren voor meer informatie over het inschakelen van dynamische media](config-dynamic.md).
+Dynamic Media genereert en levert meerdere variaties van rijke inhoud in real-time via het wereldwijde, schaalbare en voor prestaties geoptimaliseerde netwerk. Het dient voor interactieve kijkervaringen en stroomlijnt het beheerproces voor digitale campagnes. Zie [Dynamic Media configureren](config-dynamic.md) voor meer informatie over het inschakelen van Dynamic Media.
 
-Dynamische media kunnen momenteel video&#39;s ondersteunen van maximaal 15 GB aan inhoud per bestand.
+Dynamic Media biedt momenteel ondersteuning voor video&#39;s met maximaal 15 GB aan inhoud per bestand.
 
 ## ImageMagick-bibliotheek {#imagemagick-library}
 
@@ -59,7 +59,7 @@ Adobe raadt u aan de ImageMagick-bibliotheek in de volgende scenario&#39;s te ge
 
 Om te weten hoe te opstelling de bibliotheek ImageMagic in AEM, zie [Gebruikend ImageMagick](media-handlers.md#an-example-using-imagemagick). Voor optimaal gebruik, zie [Beste praktijken voor het Vormen ImageMagick](best-practices-for-imagemagick.md).
 
-## Bibliotheek voor transformatie van afbeeldingen {#image-transcoding-library}
+## Bibliotheek {#image-transcoding-library} voor transformatie van afbeeldingen
 
 De Adobe Imaging Transcoding Library is een oplossing voor beeldverwerking die kernfuncties voor beeldverwerking uitvoert, zoals beeldcodering, transcodering, resampling, formaatwijziging, enzovoort.
 
@@ -73,4 +73,4 @@ De bibliotheek Imaging Transcoding ondersteunt de volgende MIME-typen:
 * ICO
 * ICN
 
-Zie [Afbeeldingstransformatiebibliotheek](imaging-transcoding-library.md)voor meer informatie.
+Zie [Bibliotheek van transformatie van afbeeldingen](imaging-transcoding-library.md) voor meer informatie.
