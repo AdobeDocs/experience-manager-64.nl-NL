@@ -11,12 +11,12 @@ ht-degree: 28%
 ---
 
 
-# Beperkingen voor het uploaden van middelen configureren {#configuring-asset-upload-restrictions}
+# Beperkingen voor het uploaden van elementen {#configuring-asset-upload-restrictions} configureren
 
-U kunt Adobe Experience Manager-middelen (AEM) configureren om het type elementen (bestanden) te beperken dat gebruikers kunnen uploaden. Met deze functie voorkomt u dat gebruikers elementen in een ongewenste indeling kunnen uploaden of schadelijke bestanden kunnen uploaden. Met de `Day CQ DAM Asset Upload Restriction` service kunt u bepalen welk type bestanden gebruikers kunnen uploaden. Standaard kunnen gebruikers met AEM Assets elementen van alle MIME-typen uploaden. U kunt de service echter zo configureren dat gebruikers alleen bestanden van bepaalde MIME-typen kunnen uploaden.
+U kunt Adobe Experience Manager-middelen (AEM) configureren om het type elementen (bestanden) te beperken dat gebruikers kunnen uploaden. Met deze functie voorkomt u dat gebruikers elementen in een ongewenste indeling kunnen uploaden of schadelijke bestanden kunnen uploaden. Met de service `Day CQ DAM Asset Upload Restriction` kunt u bepalen welk type bestanden gebruikers kunnen uploaden. Standaard kunnen gebruikers met AEM Assets elementen van alle MIME-typen uploaden. U kunt de service echter zo configureren dat gebruikers alleen bestanden van bepaalde MIME-typen kunnen uploaden.
 
 1. Om de Webconsole van de Manager van de Configuratie te openen, toegang `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Open the **[!UICONTROL Day CQ DAM Asset Upload Restriction]** service in Edit mode. Standaard is de optie **Alle MIME** toestaan geselecteerd, waarmee gebruikers bestanden van alle MIME-typen kunnen uploaden.
+1. Open de service **[!UICONTROL Day CQ DAM Asset Upload Restriction]** in de modus Bewerken. Standaard is de optie **Alle MIME** toestaan geselecteerd, waarmee gebruikers bestanden van alle MIME-typen kunnen uploaden.
 
    ![chlimage_1-378](assets/chlimage_1-378.png)
 
