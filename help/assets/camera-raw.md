@@ -11,9 +11,9 @@ ht-degree: 0%
 ---
 
 
-# Camera Raw gebruiken om afbeeldingen te verwerken {#camera-raw-support}
+# Camera Raw gebruiken om afbeeldingen {#camera-raw-support} te verwerken
 
-U kunt de Camera Raw ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en het renderen van afbeeldingen in JPEG-indeling. De functionaliteit wordt ondersteund in Adobe Experience Manager Assets met behulp van het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Software Distribution.
+U kunt de Camera Raw ondersteuning inschakelen voor het verwerken van Raw-bestandsindelingen, zoals CR2, NEF en RAF, en het renderen van afbeeldingen in JPEG-indeling. De functionaliteit wordt ondersteund in Adobe Experience Manager Assets met behulp van het [Camera Raw pakket](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/aem630/product/assets/aem-assets-cameraraw-pkg) dat beschikbaar is bij Softwaredistributie.
 
 >[!NOTE]
 >
@@ -25,24 +25,24 @@ Ga als volgt te werk om Camera Raw ondersteuning in Adobe Experience Manager Ass
 
 1. Ga naar `https://[aem_server]:[port]/workflow`. Open de **[!UICONTROL DAM Update Asset]** workflow.
 
-1. Open de **[!UICONTROL Process Thumbnails]** stap.
+1. Open de stap **[!UICONTROL Process Thumbnails]**.
 
-1. Geef de volgende configuratie op het **[!UICONTROL Thumbnails]** tabblad op:
+1. Geef de volgende configuratie op het tabblad **[!UICONTROL Thumbnails]** op:
 
    * **[!UICONTROL Thumbnails]**: `140:100:false, 48:48:false, 319:319:false`
-   * **[!UICONTROL Skip Mime Types]**: `skip:image/dng, skip:image/x-raw-(.*)`
+   * **[!UICONTROL Skip Mime Types]**:  `skip:image/dng, skip:image/x-raw-(.*)`
 
    ![schil](assets/chlimage_1-334.png)
 
-1. Geef op het **[!UICONTROL Web Enabled Image]** tabblad in het **[!UICONTROL Skip List]** veld op `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)`.
+1. Geef op het tabblad **[!UICONTROL Web Enabled Image]** in het veld **[!UICONTROL Skip List]** `audio/mpeg, video/(.*), image/dng, image/x-raw-(.*)` op.
 
    ![schil](assets/chlimage_1-335.png)
 
-1. Voeg vanuit het zijpaneel de **[!UICONTROL Camera Raw/DNG Handler]** stap onder de **[!UICONTROL Thumbnail creation]** stap toe.
+1. Voeg vanuit het zijpaneel de stap **[!UICONTROL Camera Raw/DNG Handler]** onder de stap **[!UICONTROL Thumbnail creation]** toe.
 
-1. Voeg in de **[!UICONTROL Camera Raw/DNG Handler]** stap de volgende configuratie toe op het **[!UICONTROL Arguments]** tabblad:
+1. Voeg in de stap **[!UICONTROL Camera Raw/DNG Handler]** de volgende configuratie toe op het tabblad **[!UICONTROL Arguments]**:
 
-   * **[!UICONTROL Mime Types]**: `image/dng` en `image/x-raw-(.*)`
+   * **[!UICONTROL Mime Types]**:  `image/dng` en  `image/x-raw-(.*)`
    * **[!UICONTROL Command]**:
 
       * `DAM_Raw_Converter ${directory}/${filename} ${directory} cq5dam.web.1280.1280.jpeg 1280 1280`
@@ -56,9 +56,9 @@ Ga als volgt te werk om Camera Raw ondersteuning in Adobe Experience Manager Ass
 
 >[!NOTE]
 >
->Zorg ervoor dat de bovenstaande configuratie hetzelfde is als de **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie.
+>Zorg ervoor dat de bovenstaande configuratie het zelfde als **[!UICONTROL Sample DAM Update Asset With Camera RAW and DNG Handling Step]** configuratie is.
 
-U kunt nu Camera Raw-bestanden importeren in AEM Assets. Nadat u het Camera Raw pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de **[!UICONTROL Image Adjust]** optie weergegeven in de lijst met zijvensters.
+U kunt nu Camera Raw-bestanden importeren in AEM Assets. Nadat u het Camera Raw pakket hebt geïnstalleerd en de vereiste workflow hebt geconfigureerd, wordt de optie **[!UICONTROL Image Adjust]** weergegeven in de lijst met zijvensters.
 
 ![chlimage_1-337](assets/chlimage_1-337.png)
 
@@ -68,7 +68,7 @@ U kunt nu Camera Raw-bestanden importeren in AEM Assets. Nadat u het Camera Raw 
 
 *Afbeelding: Met deze optie kunt u lichte bewerkingen uitvoeren op uw afbeeldingen*
 
-Nadat u de bewerkingen hebt opgeslagen in een Camera Raw afbeelding, `AdjustedPreview.jpg` wordt een nieuwe uitvoering gegenereerd voor de afbeelding. Voor andere afbeeldingstypen, behalve Camera Raw, worden de wijzigingen in alle uitvoeringen doorgevoerd.
+Nadat u de bewerkingen hebt opgeslagen in een Camera Raw afbeelding, wordt een nieuwe uitvoering `AdjustedPreview.jpg` gegenereerd voor de afbeelding. Voor andere afbeeldingstypen, behalve Camera Raw, worden de wijzigingen in alle uitvoeringen doorgevoerd.
 
 ## Beste werkwijzen, bekende problemen en beperkingen {#best-practices}
 
