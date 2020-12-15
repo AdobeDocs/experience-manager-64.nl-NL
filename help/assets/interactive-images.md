@@ -30,15 +30,15 @@ Bekijk de volgende interactieve afbeeldingen in actie op de bovenstaande webpagi
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion-QVzoom/index2-shoppable.html)
 
-## Controleren hoe interactieve afbeeldingsbanners worden gemaakt {#watch-how-interactive-image-banners-are-created}
+## Bekijk hoe u interactieve afbeeldingsbanners {#watch-how-interactive-image-banners-are-created} maakt
 
-Watch a 10 minute and 33 second walkthrough on [how interactive image banners are created](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). U leert ook hoe u interactieve afbeeldingsbanners kunt voorvertonen, bewerken en leveren.
+Bekijk een 10 minuten en 33 seconden analyse op [hoe de interactieve beeldbanners worden gecreeerd](https://s7d5.scene7.com/s7viewers/html5/VideoViewer.html?videoserverurl=https://s7d5.scene7.com/is/content/&amp;emailurl=https://s7d5.scene7.com/s7/emailFriend&amp;serverUrl=https://s7d5.scene7.com/is/image/&amp;config=Scene7SharedAssets/Universal_HTML5_Video_social&amp;contenturl=https://s7d5.scene7.com/skins/&amp;asset=S7tutorials/InteractiveCarouselBanner). U leert ook hoe u interactieve afbeeldingsbanners kunt voorvertonen, bewerken en leveren.
 
 ## Snel starten: Interactieve afbeeldingen {#quick-start-interactive-images}
 
 De volgende stapsgewijze beschrijving van de workflow is ontworpen om u te helpen snel aan de slag te gaan met interactieve afbeeldingen in AEM Assets.
 
-Zoek de kop **Voorbeeld** in sommige van de taken van Snel starten. Het bevat een korte zelfstudie die is gebaseerd op het volgende webpaginavoorbeeld waaraan nog geen interactieve afbeeldingen zijn toegevoegd:
+Zoek naar **Voorbeeld** rubriek binnen enkele taken van het Snelle Begin. Het bevat een korte zelfstudie die is gebaseerd op het volgende webpaginavoorbeeld waaraan nog geen interactieve afbeeldingen zijn toegevoegd:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
@@ -46,40 +46,40 @@ De zelfstudie helpt u de stappen te illustreren voor het integreren van interact
 
 **Workflow** voor interactieve afbeeldingen:
 
-1. **(Optioneel) Hotspot-variabelen** identificeren - Als u AEM Assets en Dynamic Media zelfstandig gebruikt, begint u met het identificeren van dynamische variabelen die worden gebruikt in uw bestaande Quickview-implementatie, zodat u hotspot-gegevens kunt invoeren wanneer u de interactieve afbeelding maakt. Zie [(Optioneel) Hotspot-variabelen](#optional-identifying-hotspot-variables)identificeren.
+1. **(Optioneel) Hotspot-variabelen**  identificeren - Als u AEM Assets en Dynamic Media op zichzelf staand gebruikt, begint u met het identificeren van dynamische variabelen die worden gebruikt in uw bestaande Quickview-implementatie, zodat u hotspot-gegevens kunt invoeren wanneer u de interactieve afbeelding maakt. Zie [(Optioneel) Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables).
 
    Nochtans, als u AEM Sites, of AEM eCommerce, of allebei gebruikt, dan is deze stap niet noodzakelijk.
 
    Zie [eCommerce-concepten in AEM Assets](/help/sites-administering/concepts.md).
 
-1. **(Optioneel) Een voorinstelling** voor een interactieve afbeeldingsviewer maken - Pas de afbeelding aan die wordt gebruikt om hotspots te vertegenwoordigen. U hoeft geen eigen voorinstelling voor de interactieve afbeeldingsviewer te maken als u de voorinstelling Interactieve afbeeldingsviewer buiten de box wilt gebruiken. Deze voorinstelling heet `Shoppable_Banner` in plaats daarvan.
+1. **(Optioneel) Een voorinstelling**  voor een interactieve afbeeldingsviewer maken - Pas de afbeelding aan die wordt gebruikt om hotspots te vertegenwoordigen. Het is niet nodig een eigen voorinstelling voor de interactieve afbeeldingsviewer te maken als u de voorinstelling `Shoppable_Banner` in plaats daarvan wilt gebruiken die buiten de box is ingesteld met de naam Interactive Image Viewer.
 
-   Zie [(Optioneel) Een voorinstelling](managing-viewer-presets.md#creating-a-new-viewer-preset)voor een interactieve afbeeldingsviewer maken.
+   Zie [(Optioneel) Een voorinstelling voor een interactieve afbeeldingsviewer maken](managing-viewer-presets.md#creating-a-new-viewer-preset).
 
-1. **Een afbeeldingsbanner** uploaden - Afbeeldingsbanners uploaden die u interactief wilt maken.
+1. **Uploading an image banner**  - Upload afbeeldingsbanners die u interactief wilt maken.
 
-   Zie Een afbeeldingsbanner [uploaden](#uploading-an-image-banner).
+   Zie [Een afbeeldingsbanner uploaden](#uploading-an-image-banner).
 
-1. **Hotspots toevoegen aan een afbeeldingsbanner** - Voeg een of meer hotspots toe aan een afbeeldingsbanner en koppel deze aan een handeling zoals een hyperlink, een Snelle weergave of een ervaringsfragment. Nadat u hotspots hebt toegevoegd, kunt u deze taak voltooien door de interactieve afbeelding te publiceren.
+1. **Hotspots toevoegen aan een afbeeldingsbanner**  - Voeg een of meer hotspots toe aan een afbeeldingsbanner en koppel deze aan een handeling zoals een hyperlink, een Snelle weergave of een ervaringsfragment. Nadat u hotspots hebt toegevoegd, kunt u deze taak voltooien door de interactieve afbeelding te publiceren.
 
    * Zie [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
-   * Zie [Een voorvertoning weergeven van interactieve afbeeldingen](#optional-previewing-interactive-images) - Optioneel. U kunt desgewenst een representatie van de verscherpte banner bekijken en de interactiviteit ervan testen.
-   * Zie Elementen [](publishing-dynamicmedia-assets.md) publiceren voor meer informatie over het publiceren van interactieve afbeeldingselementen.
+   * Zie [Interactieve afbeeldingen voorvertonen](#optional-previewing-interactive-images) - Optioneel. U kunt desgewenst een representatie van de verscherpte banner bekijken en de interactiviteit ervan testen.
+   * Zie [Elementen publiceren](publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van interactieve afbeeldingselementen.
 
 1. **Een interactieve afbeelding aan uw website of website toevoegen in AEM**
 
-   * Als u AEM Sites of AEM eCommerce of beide gebruikt, kunt u de interactieve afbeelding rechtstreeks aan een webpagina in AEM toevoegen door de component Interactieve media naar de pagina te slepen. See [Adding Dynamic Media Assets to Pages](adding-dynamic-media-assets-to-pages.md).
-   * Als u AEM Assets en Dynamic Media zelfstandig gebruikt, moet u de insluitcode naar uw website kopiëren en deze vervolgens integreren met uw bestaande QuickView. Zie Een interactieve afbeelding [integreren met uw website](#integrating-an-interactive-image-with-your-website).
-   * Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie Een interactieve afbeelding [integreren met een bestaande Snelle weergave](#integrating-an-interactive-image-with-an-existing-quickview).
+   * Als u AEM Sites of AEM eCommerce of beide gebruikt, kunt u de interactieve afbeelding rechtstreeks aan een webpagina in AEM toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](adding-dynamic-media-assets-to-pages.md).
+   * Als u AEM Assets en Dynamic Media zelfstandig gebruikt, moet u de insluitcode naar uw website kopiëren en deze vervolgens integreren met uw bestaande Snelle weergave. Zie [Een interactieve afbeelding integreren met uw website](#integrating-an-interactive-image-with-your-website).
+   * Als u WCM (Web Content Manager) van derden gebruikt, moet u de nieuwe interactieve video integreren met de bestaande implementatie van de Snelle weergave die op uw website wordt gebruikt. Zie [Een interactieve afbeelding integreren met een bestaande QuickView](#integrating-an-interactive-image-with-an-existing-quickview).
 
-## (Optioneel) Hotspotvariabelen identificeren {#optional-identifying-hotspot-variables}
+## (Optioneel) Hotspotvariabelen {#optional-identifying-hotspot-variables} identificeren
 
 >[!NOTE]
 >
 >Deze taak is alleen vereist als aan de volgende voorwaarden wordt voldaan:
 >
 >* U wilt interactiviteit aan uw beeld toevoegen door aan Snelle meningen te teweegbrengen.
->* Uw implementatie van AEM maakt *geen* gebruik van een eCommerce-integratiekader om productgegevens in AEM te halen van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop. Zie [eCommerce-concepten in AEM Assets](/help/sites-administering/concepts.md).
+>* Uw implementatie van AEM gebruikt *niet* een eCommerce-integratieframework om productgegevens in AEM van een eCommerce-oplossing zoals IBM Websphere Commerce, Elastic Path, hybris of Intershop te halen. Zie [eCommerce-concepten in AEM Assets](/help/sites-administering/concepts.md).
 
 >
 >
@@ -97,7 +97,7 @@ Soms is het voldoende om IT-specialisten te raadplegen die verantwoordelijk zijn
 
 De meeste implementaties van de Snelle mening gebruiken het volgende paradigma:
 
-* De gebruiker activeert een gebruikersinterface-element op de website. For example, clicking a **[!UICONTROL Quickview]** button.
+* De gebruiker activeert een gebruikersinterface-element op de website. Als u bijvoorbeeld op een knop **[!UICONTROL Quickview]** klikt.
 * De website verzendt een Ajax-aanvraag naar de achterkant om de Quickview-gegevens of -inhoud te laden, indien nodig.
 * De Quickview-gegevens worden omgezet in de inhoud ter voorbereiding op de weergave op de webpagina.
 * Tot slot geeft de front-end code dergelijke inhoud visueel op het scherm terug.
@@ -106,17 +106,17 @@ Vervolgens kunt u verschillende delen van de bestaande website bezoeken waar de 
 
 Normaal is er geen behoefte aan u om het even welke gespecialiseerde het zuiveren hulpmiddelen te gebruiken. Moderne webbrowsers beschikken over webinspecteurs die hun werk naar behoren doen. Hieronder volgen enkele voorbeelden van webbrowsers met webcontroles:
 
-* Als u alle uitgaande HTTP-aanvragen in Google Chrome wilt bekijken, drukt u op F12 om het **[!UICONTROL Developer Tools]** deelvenster te openen en klikt u vervolgens op het **[!UICONTROL Network]** tabblad.
+* Als u alle uitgaande HTTP-aanvragen in Google Chrome wilt bekijken, drukt u op F12 om het deelvenster **[!UICONTROL Developer Tools]** te openen en klikt u vervolgens op het tabblad **[!UICONTROL Network]**.
 
-   Voor MAC, druk **[!UICONTROL Command+Option+I]** om het **[!UICONTROL Developer Tools]** paneel te openen, dan het lusje van het Netwerk te klikken.
+   Druk op **[!UICONTROL Command+Option+I]** op een Mac om het deelvenster **[!UICONTROL Developer Tools]** te openen en klik vervolgens op het tabblad Netwerk.
 
-* In Firefox, you can either activate the Firebug plug-in by pressing F12 and use its Net tab, or you can use the built-in **[!UICONTROL Inspector]** tool and its **[!UICONTROL Network]** tab.
+* In Firefox kunt u de Firebug-plug-in activeren door op F12 te drukken en het tabblad Net te gebruiken. U kunt ook het ingebouwde gereedschap **[!UICONTROL Inspector]** en het bijbehorende tabblad **[!UICONTROL Network]** gebruiken.
 
-   Druk op een Mac **[!UICONTROL Command+Option+I]** om het **[!UICONTROL Developer Tools]** deelvenster te openen en klik vervolgens op het **[!UICONTROL Inspector]** tabblad.
+   Druk op **[!UICONTROL Command+Option+I]** op een Mac om het deelvenster **[!UICONTROL Developer Tools]** te openen en klik vervolgens op het tabblad **[!UICONTROL Inspector]**.
 
 Wanneer netwerkcontrole in browser wordt aangezet, teweeg de Snelle mening op de pagina.
 
-Zoek nu de URL van Quickview Ajax in het netwerklogboek en kopieer de geregistreerde URL voor toekomstige analyse. In de meeste gevallen wanneer u de Quickview teweegbrengt zijn er talrijke verzoeken die naar de server worden verzonden. De URL van Quickview Ajax is doorgaans een van de eerste in de lijst. Het heeft of een complex gedeelte of een weg van het vraagkoord, en zijn reactieMIME type of, `text/html`, of `text/xml``text/javascript`.
+Zoek nu de URL van Quickview Ajax in het netwerklogboek en kopieer de geregistreerde URL voor toekomstige analyse. In de meeste gevallen wanneer u de Quickview teweegbrengt zijn er talrijke verzoeken die naar de server worden verzonden. De URL van Quickview Ajax is doorgaans een van de eerste in de lijst. Het heeft of een complex gedeelte van het vraagkoord of weg, en zijn reactieMIME type of `text/html`, `text/xml`, of `text/javascript` is.
 
 Tijdens dit proces is het belangrijk om verschillende delen van uw website te bezoeken, met verschillende productcategorieën en typen. De reden hiervoor is dat URL&#39;s in de Snelle weergave onderdelen kunnen bevatten die algemeen gelden voor een bepaalde categorie websites, maar deze alleen wijzigen als u een ander gedeelte van de website bezoekt.
 
@@ -154,7 +154,7 @@ Bekijk de volgende voorbeelden van URL&#39;s van QuickView en de resulterende ho
          <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=305466</code></p> </li> 
          <li><p><code>https://server/quickView/product/?category=1100004&amp;prodId=310181</code></p> </li> 
          <li><p><code>https://server/quickView/product/?category=1740148&amp;prodId=308706</code></p> </li> 
-        </ul> <p>In dit geval bevat de URL twee verschillende onderdelen. De SKU wordt opgeslagen in de <code>prodId</code> parameter en de categorie-id</p><p><code>categoryId</code></p><ul><li><p><code>305466</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>310181</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>308706</code><code>categoryId</code><code>1740148</code></p></li></ul><p></p></td></tr></tbody></table></td></tr><tr></tr></table>
+        </ul> <p>In dit geval bevat de URL twee verschillende onderdelen. De SKU wordt opgeslagen in de parameter <code>prodId</code> en de categorie-id</p><p><code>categoryId</code></p><ul><li><p><code>305466</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>310181</code><code>categoryId</code><code>1100004</code></p></li><li><p><code>308706</code><code>categoryId</code><code>1740148</code></p></li></ul><p></p></td></tr></tbody></table></td></tr><tr></tr></table>
 
 **Voorbeeld**
 
@@ -178,70 +178,70 @@ Op basis van deze informatie heeft de volledige URL van de Snelle weergave het v
 
 `/datafeed/$categoryId$-$SKU$.json`
 
-Op basis van deze analyse gebruikt u hotspots `categoryId` en `SKU` voor hotspots.
+Op basis van een dergelijke analyse gebruikt u `categoryId` en `SKU` voor hotspots.
 
 U kunt nu een afbeeldingsbanner uploaden en er hotspots aan toevoegen met de functie voor onoverzichtelijke interactieve afbeeldingen in AEM Assets.
 
 ## (Optioneel) Een voorinstelling voor een interactieve afbeeldingsviewer maken {#optional-creating-an-interactive-image-viewer-preset}
 
-U kunt ervoor kiezen om de standaardvoorinstelling voor een interactieve afbeeldingsviewer buiten de box te gebruiken, die bij AEM Assets wordt geleverd. **[!UICONTROL Shoppable_Banner]** U kunt ook uw eigen aangepaste viewer-voorinstelling maken voor gebruik met interactieve afbeeldingen.
+U kunt ervoor kiezen om de standaardvoorinstelling **[!UICONTROL Shoppable_Banner]** voor de Interactieve afbeeldingsviewer buiten de box te gebruiken die bij AEM Assets wordt geleverd. U kunt ook uw eigen aangepaste viewer-voorinstelling maken voor gebruik met interactieve afbeeldingen.
 
 Wanneer u een aangepaste voorinstelling voor een interactieve afbeeldingsviewer maakt, kunt u de weergave van hotspots in de afbeeldingsbanner bepalen. Als onderdeel van het maken van de viewervoorinstelling kunt u een hotspot-afbeelding uit een galerie met vooraf gedefinieerde afbeeldingen gebruiken.
 
-Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactiveerd (ingeschakeld) op de **[!UICONTROL Viewer Preset]** lijstpagina in AEM Assets. Deze functionaliteit houdt in dat het zichtbaar is in de Interactieve component van Media en wanneer u activa bekijkt. Als u echter een interactieve banner wilt *leveren* met deze viewervoorinstelling, moet u ook uw viewervoorinstelling *publiceren* (dit geldt voor aangepaste of buitenste viewervoorinstellingen).
+Nadat u de viewervoorinstelling hebt opgeslagen, wordt deze automatisch geactiveerd (ingeschakeld) op de **[!UICONTROL Viewer Preset]**-lijstpagina in AEM Assets. Deze functionaliteit houdt in dat het zichtbaar is in de Interactieve component van Media en wanneer u activa bekijkt. Als u *echter een interactieve banner met deze viewervoorinstelling wilt leveren, moet u* ook de viewervoorinstelling publiceren *(dit geldt voor aangepaste of buitenste viewervoorinstellingen).*
 
 **Een voorinstelling** voor een interactieve afbeeldingsviewer maken:
 
-1. Tik in de linkerspoorstaaf **[!UICONTROL Tools > Assets > Viewer Presets]**.
-1. Near the upper-right corner of the page, tap **[!UICONTROL Create]**.
-1. Typ in het **[!UICONTROL New Viewer Preset]** dialoogvenster een naam voor de voorinstelling van de interactieve bannerviewer.
+1. Tik **[!UICONTROL Tools > Assets > Viewer Presets]** in de linkerrail.
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Create]**.
+1. Typ in het dialoogvenster **[!UICONTROL New Viewer Preset]** een naam om de voorinstelling voor de interactieve bannerviewer te beschrijven.
 
-   Dit is de titel die na het opslaan op de **[!UICONTROL Viewer Preset]** lijstpagina wordt weergegeven.
-1. Selecteer in het **[!UICONTROL Rich Media Type]** keuzemenu de optie **[!UICONTROL Interactive Image]**.
-1. Tik op **Maken**.
-1. Tik op de **[!UICONTROL Edit Viewer Preset]** pagina op de **[!UICONTROL Appearance]** tab.
+   Dit is de titel die op de **[!UICONTROL Viewer Preset]** lijstpagina na u sparen zal verschijnen.
+1. Selecteer **[!UICONTROL Interactive Image]** in het keuzemenu **[!UICONTROL Rich Media Type]**.
+1. Tik **Maken**.
+1. Tik op de **[!UICONTROL Edit Viewer Preset]**-pagina op het tabblad **[!UICONTROL Appearance]**.
 1. Voer een van de volgende handelingen uit:
 
-   * Tik op het **[!UICONTROL Asset Picker]** pictogram om uw eigen hotspot-afbeelding te uploaden die u voor afbeeldingen wilt gebruiken. Navigeer op de **[!UICONTROL Select Content]** pagina naar de gewenste hotspot-afbeelding, selecteer deze en tik op het **[!UICONTROL Check Mark]** pictogram in de rechterbovenhoek.
-   * Tik op het **[!UICONTROL Hotspot Gallery]** pictogram om een vooraf gedefinieerde hotspot-afbeelding te selecteren. Tik op het palet van de hotspot op de hotspot die u wilt gebruiken.
+   * Tik op het pictogram **[!UICONTROL Asset Picker]** om uw eigen hotspot-afbeelding te uploaden die u in afbeeldingen wilt gebruiken. Navigeer op de pagina **[!UICONTROL Select Content]** naar de gewenste hotspot-afbeelding, selecteer deze en tik op het pictogram **[!UICONTROL Check Mark]** in de rechterbovenhoek.
+   * Tik op het pictogram **[!UICONTROL Hotspot Gallery]** om een vooraf gedefinieerde hotspot-afbeelding te selecteren. Tik op het palet van de hotspot op de hotspot die u wilt gebruiken.
 
-1. Near the upper-right corner of the page, tap **[!UICONTROL Save]**.
+1. Tik in de rechterbovenhoek van de pagina op **[!UICONTROL Save]**.
 
    Zorg ervoor dat u de nieuwe viewervoorinstelling publiceert.
 
-   Zie Voorinstellingen [voor viewers publiceren die u hebt toegevoegd](managing-viewer-presets.md#publishing-viewer-presets).
+   Zie [Voorinstellingen voor viewers publiceren die u hebt toegevoegd](managing-viewer-presets.md#publishing-viewer-presets).
 
    U kunt nu een afbeeldingsbanner uploaden.
 
-## Een afbeeldingsbanner uploaden {#uploading-an-image-banner}
+## Een afbeeldingsbanner {#uploading-an-image-banner} uploaden
 
-Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap Hotspots [toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
+Als u de afbeeldingen die u wilt gebruiken al hebt geüpload, gaat u naar de volgende stap [Hotspots toevoegen aan een afbeeldingsbanner](#adding-hotspots-to-an-image-banner).
 
 **Een afbeeldingsbanner** uploaden:
 
 1. Upload afbeeldingsbanners die u interactief wilt maken.
 
-   Zie Elementen [uploaden](managing-assets-touch-ui.md#uploading-assets).
+   Zie [Elementen uploaden](managing-assets-touch-ui.md#uploading-assets).
 
    U kunt nu hotspots toevoegen aan de afbeeldingsbanner. zie de volgende taak hieronder.
 
 ## Hotspots toevoegen aan een afbeeldingsbanner {#adding-hotspots-to-an-image-banner}
 
-U kunt hotspots toevoegen aan een afbeeldingsbanner met de editor op de **[!UICONTROL Hotspot Management]** pagina.
+U kunt hotspots toevoegen aan een afbeeldingsbanner met de editor op de pagina **[!UICONTROL Hotspot Management]**.
 
 Wanneer u hotspots toevoegt, kunt u deze definiëren als een pop-upweergave in QuickView, als een hyperlink of als een Experience-fragment.
 
-Zie Fragmenten [ervaren](/help/sites-authoring/experience-fragments.md).
+Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
 
 >[!NOTE]
 >
 >Houd er rekening mee dat de gereedschappen voor het delen van sociale media in interactieve afbeeldingen niet worden ondersteund wanneer u de viewer insluit in een Experience-fragment. U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
-**[!UICONTROL Undo]** en **[!UICONTROL Redo]** -opties worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
+**[!UICONTROL Undo]** en  **[!UICONTROL Redo]** opties worden in de rechterbovenhoek van de pagina ondersteund tijdens de huidige sessie voor maken en bewerken.
 
-Wanneer u klaar bent met het maken van uw interactieve afbeelding, kunt u een voorstelling bekijken van hoe uw interactieve afbeelding eruit zal zien voor klanten. **[!UICONTROL Preview]**
+Wanneer u klaar bent met het maken van uw interactieve afbeelding, kunt u **[!UICONTROL Preview]** gebruiken om een voorstelling te zien van hoe uw interactieve afbeelding eruit zal zien voor klanten.
 
-Zie [(Optioneel) Een voorvertoning weergeven van interactieve afbeeldingen](#optional-previewing-interactive-images).
+Zie [(Optioneel) Interactieve afbeeldingen voorvertonen](#optional-previewing-interactive-images).
 
 >[!NOTE]
 >
@@ -249,7 +249,7 @@ Zie [(Optioneel) Een voorvertoning weergeven van interactieve afbeeldingen](#opt
 >
 >Houd er echter rekening mee dat Carousel Banners afbeeldingen met hyperlinks ondersteunen op afbeeldingen die ook hotspots kunnen bevatten. een interactieve afbeelding niet. Houd hier rekening mee als u een interactieve afbeelding of Carousel Banner wilt maken die dezelfde afbeelding gebruikt. U kunt interactieve afbeeldingen en carrouselbanners maken met afzonderlijke kopieën van dezelfde afbeelding.
 >
->Zie ook [Carousel Banners](carousel-banners.md).
+>Zie ook [Carrouselbanners](carousel-banners.md).
 
 >[!NOTE]
 >
@@ -260,42 +260,42 @@ Zie [(Optioneel) Een voorvertoning weergeven van interactieve afbeeldingen](#opt
 1. Navigeer in de weergave Elementen naar de afbeeldingsbanner die u interactief wilt maken.
 1. Voer een van de volgende handelingen uit:
 
-   * Hover on the image, then tap **[!UICONTROL Select]** (checkmark icon). Tik op de werkbalk **[!UICONTROL Edit]**.
-   * Tik met de muis op de afbeelding en tik vervolgens op **[!UICONTROL More actions]** (driepuntpictogram) > **[!UICONTROL Edit]**.
-   * Tik op de afbeelding om deze op de **[!UICONTROL Detail View]** pagina te openen. Tik op de werkbalk **[!UICONTROL Edit]**.
+   * Tik op **[!UICONTROL Select]** (vinkpictogram) op de afbeelding. Tik op **[!UICONTROL Edit]** op de werkbalk.
+   * Tik op **[!UICONTROL More actions]** (drie punten) > **[!UICONTROL Edit]**.
+   * Tik op de afbeelding om deze op de pagina **[!UICONTROL Detail View]** te openen. Tik op **[!UICONTROL Edit]** op de werkbalk.
 
-1. Near the upper-left corner of the page, tap **[!UICONTROL Add Hotspot]** (finger tap icon) to open the **[!UICONTROL Hotspot Management]** page.
-1. Near the upper-left corner of the page, tap **[!UICONTROL Hotspot]**.
+1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Add Hotspot]** (vingertikpictogram) om de pagina **[!UICONTROL Hotspot Management]** te openen.
+1. Tik in de linkerbovenhoek van de pagina op **[!UICONTROL Hotspot]**.
 1. a. Tik in de linkerbovenhoek van de pagina **Hotspot Management** op **[!UICONTROL Hotspot]**.
 b. Tik in de afbeelding op een locatie waar u de hotspot wilt weergeven. Sleep indien nodig de hotspot om de locatie ervan aan te passen.
 c. Voeg desgewenst extra hotspots toe door de stappen a en b te herhalen.
-d. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u de hotspot in de afbeelding en tikt u vervolgens op **[!UICONTROL Delete]** (vuilnisbakpictogram) onder de **[!UICONTROL Hotspots]** kop.
+d. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u deze in de afbeelding en tikt u op **[!UICONTROL Delete]** (vuilnisbakpictogram) onder de kop **[!UICONTROL Hotspots]**.
 
-1. Typ in het **[!UICONTROL Name]** tekstveld de naam van de hotspot. Deze naam wordt ook weergegeven in de **[!UICONTROL Selected Hotspot]** vervolgkeuzelijst.
+1. Typ in het tekstveld **[!UICONTROL Name]** de naam van de hotspot. Deze naam wordt ook weergegeven in de vervolgkeuzelijst **[!UICONTROL Selected Hotspot]**.
 1. Voer een van de volgende handelingen uit:
 
    * Tik op **[!UICONTROL Quickview]**.
 
-      * Als u een AEM Sites- of eCommerce-klant bent, tikt u op het **[!UICONTROL Product Picker]** pictogram (vergrootglas) om de **[!UICONTROL Select Product]** pagina te openen. Tik op het product dat u wilt gebruiken en tik vervolgens **[!UICONTROL Select]** in de rechterbovenhoek van de pagina om terug te keren naar de **[!UICONTROL Hotspot Management]** pagina.
-      * Als je *geen* AEM Sites- of eCommerce-klant bent
+      * Als u een AEM Sites- of eCommerce-klant bent, tikt u op het **[!UICONTROL Product Picker]**-pictogram (vergrootglas) om de pagina **[!UICONTROL Select Product]** te openen. Tik op het product dat u wilt gebruiken en tik vervolgens op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina om terug te keren naar de pagina **[!UICONTROL Hotspot Management]**.
+      * Als u *geen* een klant van AEM Sites of eCommerce bent
 
-         * Zie [Hotspot-variabelen](#optional-identifying-hotspot-variables)identificeren; U moet deze variabelen definiëren.
-         * Voer vervolgens handmatig de SKU-waarde in. Typ in het **[!UICONTROL SKU Value]** tekstveld de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geëtteerde hotspot met een bepaalde Snelle mening van SKU te associëren.
-         * (Optioneel) Tik op andere variabelen in de Snelle weergave die u nodig hebt om een product nader te identificeren. **[!UICONTROL Add Generic Variable]** Geef in het tekstveld een extra variabele op. Dit `category=Mens` is bijvoorbeeld een toegevoegde variabele.
-   * Tik op **Hyperlink**.
+         * Zie [Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables); U moet deze variabelen definiëren.
+         * Voer vervolgens handmatig de SKU-waarde in. Typ in het tekstveld **[!UICONTROL SKU Value]** de SKU (Stock Keeping Unit) van het product. Dit is een unieke id voor elk afzonderlijk product of elke service die u aanbiedt. De ingegaan waarde van SKU bevolkt automatisch het veranderlijke gedeelte van het malplaatje van de Snelle mening zodat het systeem weet om geëtteerde hotspot met een bepaalde Snelle mening van SKU te associëren.
+         * (Optioneel) Tik op **[!UICONTROL Add Generic Variable]** als er andere variabelen in de Snelle weergave zijn die u nodig hebt om een product nader te identificeren. Geef in het tekstveld een extra variabele op. `category=Mens` is bijvoorbeeld een toegevoegde variabele.
+   * Tik **Hyperlink**.
 
-      * Als u een AEM Sites-klant bent, tikt u op het **[!UICONTROL Site Selector]** pictogram (map) om naar een URL te navigeren. De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
-      * Als u een zelfstandige klant bent, geeft u in het **[!UICONTROL HREF]** tekstveld het volledige URL-pad naar een gekoppelde webpagina op.
+      * Als u een AEM Sites-klant bent, tikt u op het pictogram **[!UICONTROL Site Selector]** (map) om naar een URL te navigeren. De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.
+      * Als u een zelfstandige klant bent, geeft u in het tekstveld **[!UICONTROL HREF]** het volledige URL-pad naar een gekoppelde webpagina op.
 
       Zorg ervoor dat u opgeeft of u de koppeling wilt openen in een nieuw browsertabblad (aanbevolen standaard) of op hetzelfde tabblad.
 
       Zie [Werken met kiezers](working-with-selectors.md) voor meer informatie.
 
-   * Tik op **ervaringsfragment**.
+   * Tik **Ervaar fragment**.
 
-      * Als u een AEM Sites-klant bent, tikt u op het **[!UICONTROL Search]** pictogram (vergrootglas) om de **[!UICONTROL Experience Fragment]** pagina te openen. Tik op het ervaringsfragment dat u wilt gebruiken en tik vervolgens **[!UICONTROL Select]** in de rechterbovenhoek van de pagina om terug te keren naar de pagina Hotspot-beheer.
+      * Als u een AEM Sites-klant bent, tikt u op het **[!UICONTROL Search]**-pictogram (vergrootglas) om de pagina **[!UICONTROL Experience Fragment]** te openen. Tik op het ervaringsfragment dat u wilt gebruiken en tik vervolgens op **[!UICONTROL Select]** in de rechterbovenhoek van de pagina om terug te keren naar de pagina Hotspot-beheer.
 
-         Zie Fragmenten [ervaren](/help/sites-authoring/experience-fragments.md).
+         Zie [Fragmenten ervaren](/help/sites-authoring/experience-fragments.md).
          >[!NOTE]
          >Houd er rekening mee dat de gereedschappen voor het delen van sociale media in interactieve afbeeldingen niet worden ondersteund wanneer u de viewer insluit in een Experience-fragment. U kunt dit omzeilen door voorinstellingen voor viewers te gebruiken of te maken die geen gereedschappen voor het delen van sociale media hebben. Met dergelijke voorinstellingen voor viewers kunt u de voorinstelling met succes insluiten in Experience Fragments.
 
@@ -303,14 +303,14 @@ d. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u de hotspot in de
 
 
 
-1. Tik **[!UICONTROL Save]** om uw werk op te slaan en terug te keren naar de **[!UICONTROL Browse]** pagina.
+1. Tik **[!UICONTROL Save]** om uw werk op te slaan en terug te keren naar de pagina **[!UICONTROL Browse]**.
 1. Publiceer de interactieve afbeelding. Met publicatie kan de banner via de cloud worden geleverd en wordt ook insluitcode gegenereerd als u wilt integreren met een website van derden.
 
-   Zie [Elementen](managing-assets-touch-ui.md#publishing-assets)publiceren.
+   Zie [Elementen publiceren](managing-assets-touch-ui.md#publishing-assets).
 
    Nadat u hotspots hebt toegevoegd en de interactieve afbeelding hebt gepubliceerd, kunt u deze nu toevoegen aan uw bestaande website.
 
-   Zie Een interactieve afbeelding [integreren met uw website](#integrating-an-interactive-image-with-your-website).
+   Zie [Een interactieve afbeelding integreren met uw website](#integrating-an-interactive-image-with-your-website).
 
    >[!NOTE]
    >
@@ -321,32 +321,32 @@ d. (Optioneel) Als u een hotspot wilt verwijderen, selecteert u de hotspot in de
 U kunt Voorvertoning gebruiken om een voorstelling te zien van hoe uw interactieve afbeelding eruit zal zien voor klanten en om de hotspots van de afbeelding te testen om te controleren of deze zich gedragen zoals u had verwacht.
 
 Als u tevreden bent met de interactieve afbeelding, kunt u deze publiceren.\
-See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).\
-See [Linking URLs to your web application](linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.\
-See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+Zie [Video- of afbeeldingsviewer insluiten op een webpagina](embed-code.md).\
+Zie [URL&#39;s koppelen aan uw webtoepassing](linking-urls-to-yourwebapplication.md). De op URL gebaseerde methode van koppelen is niet mogelijk als uw interactieve inhoud koppelingen naar relatieve URL&#39;s bevat, met name koppelingen naar AEM Sites-pagina&#39;s.\
+Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](adding-dynamic-media-assets-to-pages.md)
 
 **Een voorvertoning weergeven van interactieve afbeeldingen**:
 
 1. Navigeer in de weergave Middelen naar een bestaande, door u gemaakte interactieve afbeelding en tik erop om deze te openen in Voorvertoning.
-1. Near the upper-left corner of the Preview page, in the **[!UICONTROL Content]** drop-down list, tap **[!UICONTROL Viewers]**.
-1. Tik in de **[!UICONTROL Viewers]** lijst op **[!UICONTROL Shoppable_Banner]** of de naam van de voorinstelling voor de interactieve afbeeldingsviewer die u hebt gemaakt.
+1. Tik in de linkerbovenhoek van de voorvertoningspagina in de vervolgkeuzelijst **[!UICONTROL Content]** op **[!UICONTROL Viewers]**.
+1. Tik in de lijst **[!UICONTROL Viewers]** op **[!UICONTROL Shoppable_Banner]** of de naam van de door u gemaakte voorinstelling voor de interactieve afbeeldingsviewer.
 1. Tik op hotspots in de afbeelding om de bijbehorende acties te testen.
 
 ## Interactieve afbeeldingselementen publiceren {#publishing-interactive-image-assets}
 
-Zie Elementen [](publishing-dynamicmedia-assets.md) publiceren voor meer informatie over het publiceren van interactieve afbeeldingselementen.
+Zie [Elementen publiceren](publishing-dynamicmedia-assets.md) voor meer informatie over het publiceren van interactieve afbeeldingselementen.
 
-## Een interactieve afbeelding met uw website integreren {#integrating-an-interactive-image-with-your-website}
+## Een interactieve afbeelding integreren met uw website {#integrating-an-interactive-image-with-your-website}
 
 Nadat u een bannerafbeelding hebt geüpload, hotspots hebt toegevoegd aan de afbeelding en de interactieve afbeelding hebt gepubliceerd, kunt u deze nu toevoegen aan uw websitepagina.
 
-Als u een AEM Sites-klant bent, kunt u de interactieve afbeelding toevoegen door de component Interactieve media naar de pagina te slepen. See [Adding Dynamic Media Assets to Pages.](adding-dynamic-media-assets-to-pages.md)
+Als u een AEM Sites-klant bent, kunt u de interactieve afbeelding toevoegen door de component Interactieve media naar de pagina te slepen. Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s.](adding-dynamic-media-assets-to-pages.md)
 
 Als u een zelfstandige AEM Assets-klant bent, kunt u de interactieve afbeelding handmatig aan uw website toevoegen, zoals in deze sectie wordt beschreven.
 
 1. Kopieer de insluitcode van de gepubliceerde interactieve afbeelding.
 
-   See [Embedding the Video or Image Viewer on a Web Page](embed-code.md).
+   Zie [Video- of afbeeldingsviewer insluiten op een webpagina](embed-code.md).
 
 1. Voeg de gekopieerde insluitcode toe op de gewenste locatie op de webpagina.
 
@@ -358,13 +358,13 @@ De demo-website als voorbeeld gebruiken:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-0.html)
 
-De foto van de drie mannen is een statische `IMG` tag:
+Het beeld van de drie mannen is een statische `IMG`-tag:
 
 ```xml
 <img class="img-responsive" width="100%" title="Hero Image 2" alt="Hero Image 2" src="images/shoppable-banner.jpg">
 ```
 
-Integratie is zo eenvoudig als het verwijderen van de `IMG` tag en het vervangen door de gekopieerde insluitcode uit AEM Assets. Het resultaat wordt weergegeven in de volgende URL, die de mogelijk onjuiste interactieve afbeelding op de pagina met drie hotspots per cirkel weergeeft:
+Integratie is zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen door de gekopieerde insluitcode uit AEM Assets. Het resultaat wordt weergegeven in de volgende URL, die de mogelijk onjuiste interactieve afbeelding op de pagina met drie hotspots per cirkel weergeeft:
 
 [https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html](https://marketing.adobe.com/resources/help/en_US/dm/shoppable-banner/we-fashion/landing-1.html)
 
@@ -372,11 +372,11 @@ Integratie is zo eenvoudig als het verwijderen van de `IMG` tag en het vervangen
 >
 >De hotspots op de schopbare interactieve afbeelding van de demo-website zijn dan alleen bedoeld voor weergave. zij zijn nog niet geïntegreerd met de bestaande Snelle meningen.
 
-Als u een uitsnijding wilt toepassen op een schopbare interactieve afbeelding voor een responsieve omgeving, kunt u het configuratiekenmerk Interactive Image opnemen `ZoomView.iscommand` op het pad. Waar `ZoomView` moet de component worden aangeroepen en `iscommand` is de uitsnijdafbeelding die de opdracht dient die u toepast.
+Als u een uitsnijding voor een responsieve omgeving wilt toepassen op een verwisselbare interactieve afbeelding, kunt u het configuratiekenmerk Interactive Image `ZoomView.iscommand` op het pad opnemen, waarbij `ZoomView` de component is die moet worden aangeroepen en `iscommand` de uitsnijdopdracht is die u toepast.
 
 Zie [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) configuratiekenmerk.
 
-Zie de opdracht [Afbeeldingsserving uitsnijden](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) .
+Zie [opdracht Uitsnijden](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) afbeelding weergeven.
 
 U bent nu klaar om de interactieve afbeelding te integreren met een bestaande QuickView op uw website.
 
@@ -436,7 +436,7 @@ Het is dus alleen nodig de commentaarmarkering van de code ongedaan te maken en 
 
 Het proces voor het samenstellen van de URL van de Snelle weergave is in feite tegengesteld aan het proces voor het identificeren van hotspot-variabelen die eerder zijn behandeld.
 
-Zie [Hotspot-variabelen](#optional-identifying-hotspot-variables)identificeren.
+Zie [Hotspot-variabelen identificeren](#optional-identifying-hotspot-variables).
 
 Aan de hand van onze vorige URL-voorbeelden van Quickview kunt u in de volgende voorbeelden zien hoe de URL van de QuickView in elk geval wordt samengesteld:
 
@@ -477,7 +477,7 @@ U kunt zien hoe deze stappen worden toegepast op de demo-website om een onoverzi
 /datafeed/$categoryId$-$SKU$.json
 ```
 
-Als u deze URL binnen de `quickViewActivate` handler wilt reconstrueren, kunt u de `categoryId` en `SKU` velden gebruiken die beschikbaar zijn in het `inData` object dat door de code van de viewer aan de handler wordt doorgegeven:
+Als u deze URL wilt reconstrueren binnen de handler `quickViewActivate`, kunt u de velden `categoryId` en `SKU` gebruiken die beschikbaar zijn in het object `inData` dat door de code van de viewer aan de handler wordt doorgegeven:
 
 ```xml
 var sku=inData.sku;
@@ -485,7 +485,7 @@ var categoryId=inData.categoryId;
 var quickViewUrl = "datafeed/" + categoryId + "-" + sku + ".json";
 ```
 
-De demowebsite activeert het dialoogvenster Snelle weergave met een eenvoudige `loadQuickView()` functieaanroep. Deze functie heeft slechts één argument, namelijk de gegevens-URL van de Snelle weergave. Als dusdanig, is de laatste stap nodig om het shoppable interactieve beeld te integreren de volgende lijn van code aan de `quickViewActivate` manager toe te voegen:
+De demowebsite activeert het dialoogvenster Snelle weergave met een eenvoudige functieaanroep `loadQuickView()`. Deze functie heeft slechts één argument, namelijk de gegevens-URL van de Snelle weergave. Als dusdanig, moet de laatste stap nodig om het shoppable interactieve beeld te integreren de volgende lijn van code aan de `quickViewActivate` manager toevoegen:
 
 ```xml
 loadQuickView(quickViewUrl);
@@ -519,4 +519,4 @@ De laatste demo-website met de volledig geïntegreerde interactieve afbeelding z
 
 ## Quickviews gebruiken om aangepaste pop-ups te maken {#using-quickviews-to-create-custom-pop-ups}
 
-See [Using Quickviews to create custom pop-ups](custom-pop-ups.md).
+Zie [Quickviews gebruiken om aangepaste pop-ups te maken](custom-pop-ups.md).
