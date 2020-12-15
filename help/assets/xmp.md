@@ -1,5 +1,5 @@
 ---
-title: XMP Metadata
+title: Metagegevens XMP
 description: Meer informatie over de metagegevensstandaard (Extensible Metadata Platform) van de XMP die AEM Assets gebruikt voor het beheer van metagegevens. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 contentOwner: AG
 translation-type: tm+mt
@@ -15,7 +15,7 @@ ht-degree: 19%
 
 XMP (Extensible Metadata Platform) is de metagegevensstandaard die door AEM Assets wordt gebruikt voor alle metagegevensbeheer. XMP biedt een standaardindeling voor het maken, verwerken en uitwisselen van metagegevens voor een groot aantal verschillende toepassingen.
 
-Naast het aanbieden van universele meta-gegevenscodering die in alle dossierformaten kan worden ingebed, verstrekt XMP een rijk [inhoudsmodel](xmp.md#xmp-core-concepts) en door Adobe [en andere bedrijven](xmp.md#advantages-of-xmp) gesteund, zodat de gebruikers van XMP in combinatie met AEM Assets een krachtig platform hebben om op te bouwen.
+Naast het aanbieden van universele meta-gegevenscodering die in alle dossierformaten kan worden ingebed, verstrekt XMP een rijk [inhoudsmodel](xmp.md#xmp-core-concepts) en [gesteund door Adobe](xmp.md#advantages-of-xmp) en andere bedrijven, zodat de gebruikers van XMP in combinatie met AEM Assets een krachtig platform hebben om op te bouwen.
 
 De [XMP specificatie](https://www.adobe.com/devnet/xmp.html) is beschikbaar bij Adobe.
 
@@ -59,16 +59,16 @@ De XMP standaard is zo ontworpen dat deze uitbreidbaar is, zodat u aangepaste ty
 >
 >XMP staat over het algemeen niet binaire gegevenstypes toe om worden ingebed. Om binaire gegevens in XMP te dragen, bijvoorbeeld, duimnagelbeelden, moeten zij in een XML-vriendschappelijke formaat zoals Base64 worden gecodeerd.
 
-## XMP kernconcepten {#xmp-core-concepts}
+## Core Concepten XMP {#xmp-core-concepts}
 
 De volgende secties beschrijven de kernconcepten van XMP, met inbegrip van namespaces en schema&#39;s, eigenschappen en waarden, en taalalternatieven.
 
-### Naamruimten en Schemata {#namespaces-and-schemata}
+### Namespaces en Schemata {#namespaces-and-schemata}
 
 Een XMP schema is een set eigenschapnamen in een algemene XML-naamruimte die\
 het gegevenstype en de beschrijvende informatie. Een XMP schema wordt geïdentificeerd door zijn XML namespace URI. Het gebruik van naamruimten voorkomt conflicten tussen eigenschappen in verschillende schema&#39;s die dezelfde naam maar een andere betekenis hebben.
 
-De eigenschap **Creator** in twee onafhankelijk ontworpen schema&#39;s kan bijvoorbeeld de persoon zijn die het element heeft gemaakt of de toepassing die het element heeft gemaakt (bijvoorbeeld Adobe Photoshop).
+De eigenschap **Creator** in twee onafhankelijk ontworpen schema&#39;s kan bijvoorbeeld betekenen dat de persoon die het element heeft gemaakt of dat de toepassing die het element heeft gemaakt, kan betekenen (bijvoorbeeld Adobe Photoshop).
 
 ### Eigenschappen en waarden {#properties-and-values}
 
@@ -83,4 +83,4 @@ Een standaardsubset die door veel Adobe-toepassingen wordt gebruikt, kan bijvoor
 
 ### Taalalternatieven {#language-alternatives}
 
-XMP biedt u de mogelijkheid om een eigenschap **xml:lang** toe te voegen aan teksteigenschappen om de taal van de tekst op te geven.
+XMP biedt u de capaciteit om een **xml:lang** bezit aan teksteigenschappen toe te voegen om de taal van de tekst te specificeren.
