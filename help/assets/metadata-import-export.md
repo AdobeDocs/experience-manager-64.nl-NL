@@ -11,11 +11,11 @@ ht-degree: 8%
 ---
 
 
-# Bulkmetagegevens importeren en exporteren {#bulk-metadata-import-and-export}
+# Onduidelijke metagegevens importeren en exporteren {#bulk-metadata-import-and-export}
 
 Met AEM Assets kunt u metagegevens van elementen in bulk importeren met behulp van een CSV-bestand. U kunt bulkupdates uitvoeren voor de onlangs geüploade elementen of de bestaande elementen door een CSV-bestand te importeren. U kunt ook metagegevens van elementen bulksgewijs invoeren vanuit een systeem van derden in de CSV-indeling.
 
-## Metagegevens importeren {#import-metadata}
+## Metagegevens {#import-metadata} importeren
 
 De import van metagegevens is asynchroon en belemmert de systeemprestaties niet. Gelijktijdige update van de metagegevens voor meerdere elementen kan bronintensief zijn vanwege XMP schrijfactiviteit als de werkstroommarkering wordt gecontroleerd. Plan zo&#39;n import tijdens het gebruik van een slanke server om te voorkomen dat de prestaties voor andere gebruikers worden beïnvloed.
 
@@ -25,9 +25,9 @@ De import van metagegevens is asynchroon en belemmert de systeemprestaties niet.
 
 Voer de volgende stappen uit om metagegevens in bulk te importeren:
 
-1. Navigeer naar de gebruikersinterface Elementen en tik/klik op de werkbalk **[!UICONTROL Create]** .
+1. Navigeer naar de gebruikersinterface Middelen en tik/klik op **[!UICONTROL Create]** op de werkbalk.
 1. Selecteer **[!UICONTROL Metadata]** in het menu.
-1. Tik op de **[!UICONTROL Metadata Import]** pagina of klik op de **[!UICONTROL Select File]** knop.  Selecteer het CSV-bestand met de metadata.
+1. Tik op de pagina **[!UICONTROL Metadata Import]** of klik op **[!UICONTROL Select File]**.  Selecteer het CSV-bestand met de metadata.
 1. Controleer of het CSV-bestand de volgende parameters bevat:
 
    | Parameters voor het importeren van metagegevens | Beschrijving |
@@ -35,16 +35,16 @@ Voer de volgende stappen uit om metagegevens in bulk te importeren:
    | [!UICONTROL Batch Size] | Aantal elementen in een batch waarvoor metagegevens moeten worden geïmporteerd. De standaardwaarde is 50. Maximumwaarde is 100. |
    | [!UICONTROL Field Separator] | De standaardwaarde is `,` - een komma. U kunt elk ander teken opgeven. |
    | [!UICONTROL Multi Value Delimiter] | Scheidingsteken voor metagegevenswaarden. De standaardwaarde is `|` - een pipe. |
-   | [!UICONTROL Launch Workflows] | Standaard false. Als deze optie is ingesteld op true en als de standaardinstellingen voor Launcher zijn ingesteld, `DAM Metadata WriteBack Workflow` (er worden metagegevens naar de binaire XMP geschreven). Het inschakelen van opstartworkflows heeft gevolgen voor de prestaties van het systeem. |
+   | [!UICONTROL Launch Workflows] | Standaard false. Wanneer ingesteld op true en de standaardinstellingen voor Launcher zijn van kracht voor `DAM Metadata WriteBack Workflow` (die metagegevens naar de binaire XMP schrijft). Het inschakelen van opstartworkflows heeft gevolgen voor de prestaties van het systeem. |
    | [!UICONTROL Asset Path Column Name] | Hiermee definieert u de kolomnaam voor het CSV-bestand met elementen. |
 
-1. Tap/click **[!UICONTROL Import]** from the toolbar. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
+1. Tik/klik op **[!UICONTROL Import]** op de werkbalk. Nadat de metagegevens zijn geïmporteerd, wordt een melding verzonden naar het Postvak Melding. Navigeer naar de eigenschappenpagina voor elementen en controleer of de metagegevenswaarden correct zijn geïmporteerd voor elementen.
 
-Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00` notatie voor datum en tijd. Datum en tijd worden gescheiden door `T`, is `hh` uren in 24-uursnotatie, `fff` is nanoseconden, en `-00:00` is timezone offset. Bijvoorbeeld, `2020-03-26T11:26:00.000-07:00` is 26 maart 2020 om 11:26:00.000 AM PST tijd.
+Als u datum en tijdstempel wilt toevoegen tijdens het importeren van metagegevens, gebruikt u de `YYYY-MM-DDThh:mm:ss.fff-00:00`-indeling voor datum en tijd. Datum en tijd worden gescheiden door `T`, `hh` is uren in 24-uurformaat, `fff` is nanoseconden, en `-00:00` is timezone offset. `2020-03-26T11:26:00.000-07:00` is bijvoorbeeld 26 maart 2020 om 11:26:00.000 AM PST tijd.
 
 >[!CAUTION]
 >
->Als de datumnotatie niet overeenkomt `YYYY-MM-DDThh:mm:ss.fff-00:00`, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de indeling `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondewaarde toe te voegen die door wordt aangegeven `fff`.
+>Als de datumnotatie niet overeenkomt met `YYYY-MM-DDThh:mm:ss.fff-00:00`, worden de datumwaarden niet ingesteld. De datumnotaties van het geëxporteerde CSV-bestand met metagegevens hebben de notatie `YYYY-MM-DDThh:mm:ss-00:00`. Als u het wilt invoeren, zet het in het aanvaardbare formaat door de nanosecondenwaarde toe te voegen die door `fff` wordt vermeld.
 
 ## Metagegevens exporteren {#export-metadata}
 
@@ -61,14 +61,14 @@ Voer de volgende stappen uit als u metagegevens van meerdere elementen bulksgewi
 
 1. Selecteer de elementenmap die elementen bevat waarvoor u metagegevens wilt exporteren. Selecteer **[!UICONTROL Export metadata]** in de werkbalk.
 
-1. In the [!UICONTROL Metadata Export] dialog, specify a name for the CSV file. Selecteer Metagegevens voor elementen in submappen exporteren **[!UICONTROL Include assets in sub-folders]**.
+1. Geef in het dialoogvenster [!UICONTROL Metadata Export] een naam op voor het CSV-bestand. Selecteer **[!UICONTROL Include assets in sub-folders]** als u metagegevens voor elementen in submappen wilt exporteren.
 
    ![export_metadata_page](assets/export_metadata_page.png)
 
 1. Selecteer de gewenste opties. Geef een bestandsnaam en zo nodig een datum op.
-1. Geef in het **[!UICONTROL Properties to be exported]** dialoogvenster op of u alle of specifieke eigenschappen wilt exporteren. Als u **[!UICONTROL Selective]** eigenschappen kiest die u wilt exporteren, voegt u de gewenste eigenschappen toe.
+1. Geef in **[!UICONTROL Properties to be exported]** op of u alle of specifieke eigenschappen wilt exporteren. Als u **[!UICONTROL Selective]** eigenschappen kiest die u wilt exporteren, voegt u de gewenste eigenschappen toe.
 
-1. From the toolbar, tap/click **[!UICONTROL Export]**. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
+1. Tik/klik op **[!UICONTROL Export]** op de werkbalk. Een bericht bevestigt dat de metagegevens worden geëxporteerd. Sluit het bericht.
 
 1. Open het bericht in het Postvak IN voor de exporttaak. Selecteer de taak en klik op **[!UICONTROL Open]** op de werkbalk. Tik of klik op **[!UICONTROL CSV Download]** op de werkbalk om het CSV-bestand met de metadata te downloaden. Klik op **[!UICONTROL Close]**.
 
