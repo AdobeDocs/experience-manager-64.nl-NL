@@ -11,7 +11,7 @@ ht-degree: 0%
 ---
 
 
-# Meertalige activa {#multilingual-assets}
+# Meertalige elementen {#multilingual-assets}
 
 Met Adobe Experience Manager (AEM) Assets kunt u vertaalworkflows automatiseren voor middelen (waaronder binaire bestanden, metagegevens en tags) om elementen in andere talen te genereren voor gebruik in meertalige projecten.
 
@@ -29,6 +29,6 @@ Omvat vertaalde activa het volgende:
 1. [Vertaalwolkenservices toepassen op mappen](transition-cloud-services.md)
 1. [Vertaalprojecten maken](translation-projects.md)
 
-Gebruik een [alternatief proces](/help/sites-administering/tc-manage.md#exporting-a-translation-job)als uw vertaalserviceprovider geen aansluiting biedt die met AEM kan worden geïntegreerd.
+Als uw vertaalserviceprovider geen aansluiting biedt voor integratie met AEM, gebruikt u een [alternatief proces](/help/sites-administering/tc-manage.md#exporting-a-translation-job).
 
 Zie ook [Vertaalprojecten maken voor inhoudsfragmenten](creating-translation-projects-for-content-fragments.md).
