@@ -1,52 +1,124 @@
 ---
-title: De externe koppelingencontrole
-seo-title: De externe koppelingencontrole
-description: Meer informatie over de External Link Checker in AEM.
-seo-description: Meer informatie over de External Link Checker in AEM.
-uuid: fd0c6ff6-52d2-4096-af40-54786e9d9ab8
-contentOwner: Guillaume Carlino
-products: SG_EXPERIENCEMANAGER/6.4/SITES
-topic-tags: operations
-content-type: reference
-discoiquuid: 49b195b2-78c4-49f9-b07a-a87b73624c2c
+title: De koppelingencontrole
+description: Met de koppelingencontrole kunt u zowel interne als externe koppelingen valideren en het herschrijven van koppelingen toestaan.
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '156'
+source-wordcount: '970'
 ht-degree: 0%
 
 ---
 
 
-# The External Link Checker{#the-external-link-checker}
+# De koppelingencontrole {#the-link-checker}
 
-Binnen AEM wordt een externe koppelingencontrole aangeboden. De koppelingencontrole:
+Inhoudsauteurs hoeven zich niet bezig te houden met het valideren van elke koppeling die ze in hun inhoudspagina&#39;s opnemen.
 
-* scant alle inhoudspagina&#39;s
-* genereert een lijst met alle geldige en ongeldige koppelingen
-* Hiermee worden ongeldige koppelingen op de afzonderlijke inhoudspagina&#39;s gemarkeerd als verbroken
+De functie Koppelingencontrole stelt auteurs van inhoud automatisch bij met hun koppelingen, waaronder:
 
-## Externe koppelingen valideren {#how-to-validate-external-links}
+* Koppelingen valideren terwijl deze aan inhoud worden toegevoegd
+* Een lijst met alle externe koppelingen in de inhoud weergeven
+* Koppelingtransformaties uitvoeren
 
-De externe koppelingencontrole gebruiken:
+De controleur van de Verbinding heeft een aantal [configuratieopties](#configuring) zoals het bepalen van interne bevestiging, die bepaalde verbindingen of verbindingspatters toestaat om van bevestiging worden weggelaten, en het herschrijven van verbinding herschrijvend regels.
 
-1. Open de **console van Hulpmiddelen** .
-1. Dubbelklik op **Externe koppelingencontrole** (in het rechter- of linkerdeelvenster). Er wordt een lijst met alle externe koppelingen gegenereerd.
-1. Valideer een specifieke koppeling door deze te selecteren in de lijst en vervolgens te klikken op **Controleren**:
+De koppelingencontrole valideert zowel [interne koppelingen](#internal) als [externe koppelingen.](#external)
 
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+>[!NOTE]
+>
+>Omdat de koppelingencontrole de koppelingen van elke inhoudspagina controleert, kan de koppelingencontrole de prestaties op grote opslagplaatsen beïnvloeden. In dergelijke gevallen moet u mogelijk [configureren hoe vaak de koppelingencontrole wordt uitgevoerd](#configuring) of [uitschakelen.](#disabling)
 
-   Informatie zoals:
+## Interne koppelingencontrole {#internal}
 
-   * status van de koppeling
-   * URL
-   * tijd sinds de koppeling voor het laatst is gevalideerd
-   * tijd sinds de koppeling voor het laatst beschikbaar was
-   * tijd sinds de koppeling voor het laatst is geopend
+Interne koppelingen zijn koppelingen naar andere inhoud in uw AEM. Interne koppelingen kunnen worden toegevoegd met de padkiezer voor de RTE of met een aangepaste component. Bijvoorbeeld:
 
-   wordt weergegeven.
+* Uw pagina `/content/wknd/us/en/adventures/ski-touring.html`
+* Bevat een koppeling naar `/content/wknd/us/en/adventures/extreme-ironing.html` in een [Tekstcomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
 
-1. Ongeldige koppelingen op de afzonderlijke inhoudspagina&#39;s worden weergegeven als verbroken:
+Interne koppelingen worden gevalideerd zodra de auteur van de inhoud een interne koppeling naar een pagina toevoegt. Als de koppeling ongeldig wordt:
 
-   ![chlimage_1-110](assets/chlimage_1-110.png)
+* Deze wordt uit de uitgever verwijderd. De tekst van de koppeling blijft behouden, maar de koppeling zelf wordt verwijderd.
+* Het wordt getoond als gebroken verbinding in de auteursinterface.
 
+![Interne verbroken koppeling bij het ontwerpen van een pagina](assets/link-checker-invalid-link-internal.png)
+
+## Controle van externe koppeling {#external}
+
+Externe koppelingen zijn koppelingen naar inhoud buiten de AEM opslagplaats. De externe verbindingen kunnen worden toegevoegd gebruikend RTE of gebruikend een douanecomponent. Bijvoorbeeld:
+
+* Uw pagina `/content/wknd/us/en/adventures/ski-touring.html`
+* Bevat een koppeling naar `https://bunwarmerthermalunderwear.com` in een [Tekstcomponent.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/components/text.html)
+
+Externe koppelingen worden gevalideerd voor syntaxis en door de beschikbaarheid ervan te controleren. Deze controle wordt asynchroon gedaan bij een configureerbare intern. Als de koppelingencontrole een externe koppeling ongeldig vindt:
+
+* Deze wordt uit de uitgever verwijderd. De tekst van de koppeling blijft behouden, maar de koppeling zelf wordt verwijderd.
+* Het wordt getoond als gebroken verbinding in de auteursinterface.
+
+![Interne verbroken koppeling bij het ontwerpen van een pagina](assets/link-checker-invalid-link-external.png)
+
+Daarnaast biedt de [External Link Checker](#external-link-checker)-interface een overzicht van alle externe koppelingen op uw inhoudspagina&#39;s.
+
+### De externe koppelingencontrole {#external-link-checker} gebruiken
+
+De External Link Checker gebruiken:
+
+1. Selecteer **Navigatie**, selecteer **Gereedschappen** en **Sites**.
+1. Selecteer **External Link Checker** en er wordt een lijst met alle externe koppelingen weergegeven.
+
+![](assets/external-link-checker.png)
+
+De volgende informatie wordt weergegeven:
+
+* **Status**  - De validatiestatus van de koppeling
+   * **Geldig**  - de externe verbinding is bereikbaar door de Controle van de Verbinding
+   * **In behandeling**  - De externe koppeling is toegevoegd aan de site-inhoud, maar is nog niet gevalideerd door de koppelingencontrole
+   * **Ongeldig**  - de externe verbinding wordt niet bereikbaar door de Controleur van de Verbinding.
+* **URL**  - De externe koppeling
+* **Referrer**  - De inhoudspagina die de externe verbinding bevat
+   * Dit is slechts bevolkt [indien gevormd.](#configuring)
+* **Laatste keer gecontroleerd**  - De laatste keer dat de koppelingencontrole de externe koppeling heeft gevalideerd
+   * Hoe vaak de verbindingen [configureerbaar zijn.](#configuring)
+* **Laatste status**  - De laatste HTML-statuscode die werd geretourneerd toen de koppeling voor het laatst werd gecontroleerd op de externe koppeling
+* **Laatst beschikbaar**  - Tijd sinds de koppeling voor het laatst beschikbaar was voor de koppelingencontrole
+* **Laatst geopend**  - tijd sinds de koppeling voor het laatst is geopend door de koppelingencontrole
+
+U kunt de inhoud van het venster bewerken met de twee knoppen boven aan de lijst met koppelingen:
+
+* **Vernieuwen**  - De inhoud van de lijst vernieuwen
+* **Controleren**  - Een afzonderlijke externe koppeling controleren die in de lijst is geselecteerd
+
+### Hoe de External Link Checker {#how-it-works} werkt
+
+Hoewel gemakkelijk te gebruiken, vertrouwt de Externe Controle van de Verbinding op een aantal diensten en het begrip van hoe zij werken helpt u begrijpen hoe te om de Controle van de Verbinding [te vormen om aan uw behoeften te voldoen.](#configuring)
+
+1. Wanneer een inhoudsontwerper een koppeling naar een pagina opslaat, wordt een gebeurtenishandler geactiveerd.
+1. De gebeurtenishandler doorloopt alle inhoud onder `/content` en controleert op nieuwe of bijgewerkte koppelingen en voegt deze toe aan een cache voor de koppelingencontrole.
+1. De **Day CQ Link Checker Service** voert vervolgens volgens een regelmatig schema uit om de vermeldingen in de cache op geldige syntaxis te controleren.
+1. De syntaxis-bevestigde verbindingen verschijnen dan in [External Link Checker](#external-link-checker) venster. Nochtans zullen zij in een **Pending** staat zijn.
+1. De **dag CQ Taak van de Controle van de Verbinding** voert dan op een regelmatige basis uit om de verbindingen te bevestigen door een vraag van de GET te maken.
+1. **De Taak van de Controle van de Verbinding van CQ van de Dag CQ** werkt dan de ingangen in het Externe venster van de Controleur van de Verbinding met de resultaten van de vraag van de GET bij.
+
+## De koppelingencontrole {#configuring} configureren
+
+De koppelingencontrole is automatisch in AEM beschikbaar. Nochtans zijn er een aantal configuraties OSGi die kunnen worden gewijzigd om zijn gedrag te veranderen:
+
+* **De Dienst**  van de Opslag van de Info van de Verbinding van dag CQ - Deze dienst bepaalt de grootte van het geheime voorgeheugen van de Controle van de Verbinding in de bewaarplaats.
+* **De Dienst**  van de Controle van de Verbinding van dag CQ - Deze dienst voert asynchrone controle van de syntaxis van externe verbindingen uit. U kunt de controleperiode bepalen en welke typen koppelingen door de controleur onder andere worden overgeslagen.
+* **De Taak**  van de Controle van de Verbinding van dag CQ - Deze dienst voert de bevestiging van de GET van externe verbindingen uit. Het staat afzonderlijke definities van intervallen toe om slechte en goede verbindingen onder andere opties te controleren.
+* **De Transformator**  van de Controle van de Verbinding van dag CQ - staat voor het omzetten van verbindingen toe die op een user-defined regelreeks worden gebaseerd.
+
+Zie het document [OSGi de Montages van de Configuratie](/help/sites-deploying/osgi-configuration-settings.md) voor meer details op hoe te om montages te veranderen OSGi.
+
+## De koppelingencontrole {#disabling} uitschakelen
+
+U kunt de koppelingencontrole volledig uitschakelen. Daartoe:
+
+1. Open de OSGi-console.
+1. Bewerk de **Day CQ Link Checker Transformer**
+1. Selecteer de optie(s) die u wilt uitschakelen:
+   * **Schakel Controleren**  uit om validatie van koppelingen uit te schakelen
+   * **Herschrijven**  uitschakelen om koppelingtransformaties uit te schakelen
+
+>[!NOTE]
+>
+>Als u het controleren van koppelingen uitschakelt nadat u bent begonnen met het maken van uw inhoud, ziet u mogelijk nog vermeldingen in het venster [Externe koppelingencontrole](#external-link-checker), maar deze worden niet meer bijgewerkt.
