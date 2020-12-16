@@ -7,18 +7,18 @@ user-guide-title: AEM 6.4 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
 workflow-type: tm+mt
-source-wordcount: '625'
+source-wordcount: '624'
 ht-degree: 6%
 
 ---
 
 
-# AEM 6.4 Gebruikershandleiding voor het beheer {#administering}
+# AEM 6.4 Gebruikershandleiding {#administering} beheren
 
 + [Overzicht van de gebruikershandleiding beheren](home.md)
-+ Sitefuncties {#introduction}
++ Sitekenmerken {#introduction}
    + [Websitebeheer](msm-and-translation.md)
    + [Inhoud opnieuw gebruiken: Beheer van meerdere sites en Live Copy](msm.md)
    + [Console voor live kopiëren](msm-livecopy-overview.md)
@@ -50,7 +50,7 @@ ht-degree: 6%
    + [De Bulkeditor](bulk-editor.md)
    + [E-mailmelding configureren](notification.md)
    + [Het vormen RTE voor het Produceren van Toegankelijke Plaatsen](rte-accessible-content.md)
-   + [De externe koppelingencontrole](external-link-checker.md)
+   + [De koppelingencontrole](external-link-checker.md)
    + [AEM](troubleshoot.md)
    + [Onderhoud controlelogbestand in AEM 6](operations-audit-log.md)
    + [Editor](enable-classic-ui-editor.md)
