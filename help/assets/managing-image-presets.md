@@ -504,7 +504,7 @@ Als u de Dynamic Media - Scene7-modus uitvoert, worden voorinstellingen voor afb
 1. Selecteer de voorinstelling voor de afbeelding of meerdere voorinstellingen voor de afbeelding in de lijst met voorinstellingen voor de afbeelding en tik op **[!UICONTROL Publish]**.
 1. Nadat de voorinstelling voor de afbeelding is gepubliceerd, verandert de status van niet-gepubliceerd in gepubliceerd.
 
-   ![chlimage_1-505](assets/chlimage_1-505.png)
+   ![chlimage_1-503](assets/chlimage_1-505.png)
 
 ## Voorinstellingen voor Dynamic Media-afbeeldingen verwijderen {#deleting-image-presets}
 
