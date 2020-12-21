@@ -31,27 +31,27 @@ In dit gedeelte van de documentatie wordt het volgende beschreven:
 
 ## Een kalender toevoegen aan een pagina {#adding-a-calendar-to-a-page}
 
-Als u een `Calendar` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Calendar`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Calendar`
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers kunnen bekijken.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](calendar-basics-for-developers.md#essentials-for-client-side) worden opgenomen, wordt de `Calendar` component op deze manier weergegeven.
+Als de [vereiste client-side bibliotheken](calendar-basics-for-developers.md#essentials-for-client-side) worden opgenomen, wordt de `Calendar`-component op deze manier weergegeven.
 
-![chlimage_1-112](assets/chlimage_1-112.png)
+![chlimage_1-192](assets/chlimage_1-112.png)
 
-### Kalender configureren {#configuring-calendar}
+### Kalender {#configuring-calendar} configureren
 
-Selecteer de geplaatste `Calendar`component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Calendar`component om tot `Configure` pictogram toegang te hebben en te selecteren dat het Edit dialoog opent.
 
 ![chlimage_1-113](assets/chlimage_1-113.png) ![chlimage_1-114](assets/chlimage_1-114.png)
 
-#### Het tabblad Instellingen {#settings-tab}
+#### Tabblad Instellingen {#settings-tab}
 
-Geef op het **[!UICONTROL Settings]** tabblad op of labels mogen worden toegepast op kalenderitems.
+Geef op het tabblad **[!UICONTROL Settings]** op of labels mogen worden toegepast op kalenderitems.
 
 * **[!UICONTROL Events Per Page]**
 
@@ -71,7 +71,7 @@ Geef op het **[!UICONTROL Settings]** tabblad op of labels mogen worden toegepas
 
 * **[!UICONTROL Allow Tagging]**
 
-   Als deze optie is ingeschakeld, kunnen leden labels toevoegen aan de gebeurtenissen die ze posten (zie tabblad **Tagveld** ). Standaard is ingeschakeld.
+   Als deze optie is ingeschakeld, kunnen leden labellabels toevoegen aan de gebeurtenissen die ze posten (zie **Tagveld** tabblad). Standaard is ingeschakeld.
 
 * **[!UICONTROL Allow File Uploads]**
 
@@ -83,11 +83,11 @@ Geef op het **[!UICONTROL Settings]** tabblad op of labels mogen worden toegepas
 
 * **[!UICONTROL Max File Size]**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Met dit veld wordt de grootte (in bytes) van een geüpload bestand beperkt. De standaardwaarde is 104857600 (10 MB).
 
 * **[!UICONTROL Allowed File Types]**
 
-   Alleen relevant als `Allow File Uploads` is gecontroleerd. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
+   Alleen relevant als `Allow File Uploads` is ingeschakeld. Een door komma&#39;s gescheiden lijst met bestandsextensies met het &quot;punt&quot;-scheidingsteken. Bijvoorbeeld: .jpg, .jpeg, .png, .doc, .docx, .pdf. Als er bestandstypen zijn opgegeven, mogen de niet opgegeven bestandstypen niet worden geüpload. De standaardinstelling is niet opgegeven, zodat alle bestandstypen zijn toegestaan.
 
 * **[!UICONTROL Max Attach Image File Size]**
 
@@ -95,7 +95,7 @@ Geef op het **[!UICONTROL Settings]** tabblad op of labels mogen worden toegepas
 
 * **[!UICONTROL Allowed Cover Image Types]**
 
-   Een door komma&#39;s gescheiden lijst met extensies voor afbeeldingsbestanden met het &quot;punt&quot;-scheidingsteken. Standaard is dit `.jpg,.jpeg,.png,.gif,.bmp`.
+   Een door komma&#39;s gescheiden lijst met extensies voor afbeeldingsbestanden met het &quot;punt&quot;-scheidingsteken. De standaardwaarde is `.jpg,.jpeg,.png,.gif,.bmp`.
 
 * **[!UICONTROL Allow Threaded Replies]**
 
@@ -121,7 +121,7 @@ Geef op het **[!UICONTROL Settings]** tabblad op of labels mogen worden toegepas
 
    Als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
 
-Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte onderwerpen en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte onderwerpen en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor meer informatie.
 
 #### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
@@ -153,13 +153,13 @@ Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte onderw
 
    Voer het aantal keren in dat een gebeurtenis of opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-#### Tabblad Tagveld {#tag-field-tab}
+#### Tabblad {#tag-field-tab} voor tagveld
 
-Onder het **[!UICONTROL Tag field]** tabblad zijn de tags die kunnen worden toegepast, indien toegestaan onder het **[!UICONTROL Settings]** tabblad, beperkt op basis van de gekozen naamruimten.
+Onder het tabblad **[!UICONTROL Tag field]** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **[!UICONTROL Settings]**, beperkt op basis van de gekozen naamruimten.
 
 * **[!UICONTROL Allowed Namespaces]**
 
-   Relevant als `Allow Tagging` wordt gecontroleerd onder het **[!UICONTROL Settings]** lusje. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+   Relevant als `Allow Tagging` wordt gecontroleerd onder **[!UICONTROL Settings]** tabel. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **[!UICONTROL Suggestion Limit]**
 
@@ -167,17 +167,17 @@ Onder het **[!UICONTROL Tag field]** tabblad zijn de tags die kunnen worden toeg
 
 >[!NOTE]
 >
->Ga naar [Tags](../../help/sites-administering/tags.md) beheren voor meer informatie over het toevoegen van een nieuwe naamruimte voor tags (taxonomie).
+>Bezoek [Tags beheren](../../help/sites-administering/tags.md) voor informatie over het toevoegen van een nieuwe naamruimte voor tags (taxonomie).
 
 #### Tabblad Vertaling {#translation-tab}
 
-Als op het **[!UICONTROL Translation]** tabblad vertaling is ingeschakeld voor de communitysite, kan de vertaling zo worden ingesteld dat de volledige thread (gebeurtenis en opmerkingen) wordt vertaald in plaats van specifieke posts.
+Als op het tabblad **[!UICONTROL Translation]** vertaling is ingeschakeld voor de communitysite, kan de vertaling zo worden ingesteld dat de volledige thread (gebeurtenis en opmerkingen) wordt vertaald in plaats van specifieke posts.
 
 * **[!UICONTROL Translate All]**
 
    Als deze optie is ingeschakeld, worden de gebeurtenis en de opmerkingen vertaald naar de voorkeurstaal van de gebruiker. Standaard is ingeschakeld.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 In de publicatieomgeving wordt met de kalenderfunctie een zoekveld weergegeven met een standaarddatumbereik en alle kalendergebeurtenissen die binnen dat bereik vallen.
 
@@ -187,13 +187,13 @@ Andere vaardigheden hangen af van het feit of de bezoeker van de site een modera
 
 ### Moderatoren en beheerders {#moderators-and-administrators}
 
-Wanneer de ondertekende in gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [matigingstaken](moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
+Wanneer de ondertekende binnen gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [moderatietaken](moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 ### Leden {#members}
 
-Wanneer de ondertekende in gebruiker een lid van de gemeenschap of een [geprivilegieerd lid](users.md#privileged-members-group) (afhankelijk van configuratie) is, kunnen zij selecteren `New Event` om een nieuwe kalendergebeurtenis tot stand te brengen en te posten.
+Wanneer de aangemelde gebruiker een communitylid of [geprivilegieerd lid](users.md#privileged-members-group) is (afhankelijk van de configuratie), kunnen ze `New Event` selecteren om een nieuwe agendagebeurtenis te maken en te plaatsen.
 
 Specifiek kunnen zij
 
@@ -205,18 +205,18 @@ Specifiek kunnen zij
 
 ![chlimage_1-116](assets/chlimage_1-116.png) ![chlimage_1-117](assets/chlimage_1-117.png)
 
-### Anoniem {#anonymous}
+### Anonieme {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte kalendergebeurtenissen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen gebeurtenis of opmerking toevoegen en de gebeurtenissen of opmerkingen van anderen niet markeren.
 
 ![chlimage_1-118](assets/chlimage_1-118.png)
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Kalender Essentials](calendar-basics-for-developers.md) voor ontwikkelaars.
 
-Voor moderatie van kalendergebeurtenissen en commentaren, zie het [Modereren van Door Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor de moderatie van kalendergebeurtenissen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [](tag-ugc.md)labelen voor informatie over het labelen van agendagebeurtenissen en opmerkingen.
+Zie [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) voor het labelen van agendagebeurtenissen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [vertalen voor meer informatie over kalendergebeurtenissen en opmerkingen](translate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud omzetten](translate-ugc.md) voor een vertaling van kalendergebeurtenissen en opmerkingen.
