@@ -19,17 +19,17 @@ ht-degree: 0%
 
 # Backbone-interactie {#backbone-interaction}
 
-Backbone is een bibliotheek die helpt bij het maken en volgen van MVC-architectuur in webtoepassingen. Het basisidee van Backbone is uw interface te organiseren in logische meningen, gesteund door modellen, die elk onafhankelijk kunnen worden bijgewerkt wanneer het model verandert, zonder het moeten de pagina opnieuw tekenen. Zie [https://backbonejs.org](https://backbonejs.org/)voor meer informatie over backbone.
+Backbone is een bibliotheek die helpt bij het maken en volgen van MVC-architectuur in webtoepassingen. Het basisidee van Backbone is uw interface te organiseren in logische meningen, gesteund door modellen, die elk onafhankelijk kunnen worden bijgewerkt wanneer het model verandert, zonder het moeten de pagina opnieuw tekenen. Voor meer informatie over Backbone, zie [https://backbonejs.org](https://backbonejs.org/).
 
 Enkele belangrijke concepten zijn:
 
-**Het backbonemodel** bevat gegevens, en de meeste logica met betrekking tot deze gegevens.
+**Backbone** modelContains gegevens, en de meeste logica met betrekking tot deze gegevens.
 
-**De mening** van de backbone die wordt gebruikt om de staat van het overeenkomstige model te vertegenwoordigen. Een backboneweergave gedraagt zich eigenlijk als een controller, luisterend naar gebruikersinterfacegebeurtenissen zoals klikken door de gebruiker of naar modelgebeurtenissen (zoals gewijzigde gegevens) en wijzigt de gebruikersinterface op de juiste wijze.
+**Backbone** viewUsed om de staat van het overeenkomstige model te vertegenwoordigen. Een backboneweergave gedraagt zich eigenlijk als een controller, luisterend naar gebruikersinterfacegebeurtenissen zoals klikken door de gebruiker of naar modelgebeurtenissen (zoals gewijzigde gegevens) en wijzigt de gebruikersinterface op de juiste wijze.
 
-**HTML-sjabloon** Een omvattende sjabloon met plaatsaanduidingen die zijn gevuld door het model.
+**HTML-** sjabloonEen omvattende sjabloon met plaatsaanduidingen die zijn gevuld door het model.
 
-**De AEM Forms-werkruimte** bevat verschillende afzonderlijke componenten. Elke component:
+**AEM Forms-** werkruimteBevat verschillende afzonderlijke componenten. Elke component:
 
 * Vertegenwoordigt één logisch interface-element.
 * Dit kan een verzameling van vergelijkbare componenten zijn.
