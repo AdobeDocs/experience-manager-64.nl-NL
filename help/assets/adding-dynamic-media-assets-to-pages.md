@@ -172,7 +172,7 @@ Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heef
 
 Met de Dynamic Media-component kunt u dynamische video toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
-![chlimage_1-540](assets/chlimage_1-540.png)
+![chlimage_1-541](assets/chlimage_1-540.png)
 
 U moet de volgende Dynamic Media-instellingen bewerken door in de component op **[!UICONTROL Edit]** te klikken.
 
@@ -245,7 +245,7 @@ De component Interactieve media is slim. Afhankelijk van het feit of u een afbee
 > 
 >Om dit probleem te voorkomen, moet u ervoor zorgen dat AEM Sites-gebruikers de benodigde machtigingen hebben om toegang te krijgen tot de middelen.
 
-![chlimage_1-540](assets/chlimage_1-541.png)
+![chlimage_1-541](assets/chlimage_1-541.png)
 
 U kunt de volgende **[!UICONTROL General]** montages uitgeven door **[!UICONTROL Edit]** in de component te klikken.
 
