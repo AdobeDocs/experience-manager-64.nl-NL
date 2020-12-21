@@ -46,7 +46,7 @@ De volgende vier de dienstverrichtingen van de Output zijn beschikbaar voor gebr
 * **generatePDFOutputBatch**: Hiermee voegt u meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch PDF-bestanden te genereren. Er is ook een optie om één PDF te genereren door alle PDF&#39;s te combineren
 * **generatePrintedOutputBatch**: Hiermee voegt u meerdere sjablonen samen met meerdere records met gegevens in één aanroep om een batch afdrukdocumenten te genereren (PS, PCL, ZPL, DPL, IPL, TPCL). U kunt ook één afdrukdocument genereren.
 
-## Assembler-service {#assembler-service}
+## Assembler Service {#assembler-service}
 
 Met de Assembler-service kunt u PDF- en XDP-documenten combineren, opnieuw rangschikken en vergroten en informatie ophalen over PDF-documenten. Elke baan die aan de dienst van de Assembler wordt voorgelegd omvat een document van XML van de Beschrijving van het Document (DDX), brondocumenten, en externe middelen (koorden en grafiek). Het DDX-document bevat instructies voor het gebruik van de brondocumenten om een set resulterende documenten te maken.
 
@@ -107,7 +107,7 @@ Met de service Handtekening kunt u werken met digitale handtekeningen en documen
 
 De handtekeningservice krijgt toegang tot certificaten en referenties die zijn opgeslagen in de vertrouwde opslag.
 
-### Coderingsservice {#encryption-service}
+### Versleutelingsservice {#encryption-service}
 
 Met de coderingsservice kunt u documenten versleutelen en ontsleutelen. Wanneer een document wordt versleuteld, wordt de inhoud ervan onleesbaar. U kunt het gehele PDF-document (inclusief de inhoud, metagegevens en bijlagen), alle gegevens behalve de metagegevens of alleen de bijlagen versleutelen. Een geautoriseerde gebruiker kan het document decoderen om toegang tot de inhoud te krijgen. Als een PDF-document is versleuteld met een wachtwoord, moet de gebruiker het wachtwoord voor openen opgeven voordat het document in Adobe Reader of Acrobat kan worden weergegeven. Als een PDF-document is versleuteld met een certificaat, moet de gebruiker het PDF-document decoderen met een persoonlijke sleutel (certificaat). De persoonlijke sleutel waarmee het PDF-document wordt ontsleuteld, moet overeenkomen met de openbare sleutel waarmee het wordt versleuteld.
 
@@ -128,8 +128,8 @@ Wanneer de juiste gebruiksrechten zijn toegevoegd aan PDF-documenten, kunnen ont
 
 Deze speciale gebruikersmogelijkheden worden automatisch geactiveerd wanneer een PDF-document met toegangsrechten wordt geopend in Adobe Reader. Wanneer de gebruiker klaar is met het werken met een document waarvoor rechten zijn ingeschakeld, worden deze functies weer uitgeschakeld in Adobe Reader. Ze blijven uitgeschakeld totdat de gebruiker een ander PDF-document met ingeschakelde rechten ontvangt.
 
-Uit de doos, is de dienst DocAssurance niet beschikbaar voor gebruik. Om de dienst te vormen DocAssurance, zie het [Vormen de Diensten](/help/forms/using/install-configure-document-services.md)van het Document.
+Uit de doos, is de dienst DocAssurance niet beschikbaar voor gebruik. Om de dienst te vormen DocAssurance, zie [Het Vormen de Diensten van het Document](/help/forms/using/install-configure-document-services.md).
 
-## Naar printerservice verzenden {#send-to-printer-service}
+## Naar printerservice {#send-to-printer-service}
 
 Send To Printer Service biedt API waarmee u documenten naar een opgegeven printer kunt verzenden voor afdrukken.
