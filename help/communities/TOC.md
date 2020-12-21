@@ -14,7 +14,7 @@ ht-degree: 0%
 ---
 
 
-# AEM 6.4 Gebruikersgids voor gemeenschappen {#communities}
+# AEM 6.4 Community User Guide {#communities}
 
 + [AEM Communities-overzicht](home.md)
 + Inleiding tot AEM Communities {#introduction}
@@ -32,12 +32,12 @@ ht-degree: 0%
    + [Auteur van een nieuwe communautaire site voor activering](enablement-create-site.md)
    + [Creeer en wijs Middelen toe Enablement](resource.md)
    + [Ervaar de gepubliceerde Enablement Site](enablement-published-site.md)
-+ Implementeren {#deploy}
++ {#deploy} implementeren
    + [Gemeenschappen inzetten](deploy-communities.md)
    + [Opwaarderen naar AEM 6.4 Gemeenschappen](upgrade.md)
    + [Aanbevolen topologieën voor Gemeenschappen](topologies.md)
    + [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
-+ Beheer {#administer}
++ Beheren {#administer}
    + [Gebruikersbeheer en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
    + [Communitysites](administer-landing.md)
    + [Communityconsoles](consoles.md)
