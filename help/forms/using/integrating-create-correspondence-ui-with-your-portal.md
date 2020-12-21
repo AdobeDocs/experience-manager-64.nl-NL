@@ -44,9 +44,9 @@ Als het portaal de sjabloonnaam Letter heeft, kan de URL\
 >
 >Voordat u de toepassing Correspondentie maken aanroept, slaat u de gegevens op en uploadt u deze om de interface Correspondentie maken op de opgegeven dataURL aan te roepen. Dit zou of van het douaneportaal zelf of door een ander achtereindeproces kunnen worden gedaan.
 
-## Inline op gegevens gebaseerde aanroeping {#inline-data-based-invocation}
+## Inline op gegevens gebaseerde aanroep {#inline-data-based-invocation}
 
-Een andere (en veiligere) manier om de toepassing Create Correspondence aan te roepen zou kunnen zijn om eenvoudig URL te raken bij `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html`, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST te roepen verzoek (die hen voor het eind verbergen). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
+Een andere (en veiligere) manier om de Create toepassing van de Correspondentie te roepen zou kunnen zijn eenvoudig URL bij `https://[server]:[port]/[contextPath]/aem/forms/createcorrespondence.html` te raken, terwijl het verzenden van de parameters en de gegevens om de Create toepassing van de Correspondentie als POST te roepen verzoek (die hen voor de eindgebruiker verbergen). Dit betekent ook dat u nu de XML-gegevens voor de toepassing Correspondentie maken inline kunt doorgeven (als onderdeel van hetzelfde verzoek, met de parameter cmData), wat niet mogelijk/ideaal was in de vorige aanpak.
 
 ### Parameters voor het opgeven van de letter {#parameters-for-specifying-letter}
 
@@ -77,7 +77,7 @@ Een andere (en veiligere) manier om de toepassing Create Correspondence aan te r
 
 De volgorde van parameters in de tabel geeft de voorkeur aan parameters die worden gebruikt voor het laden van de letter.
 
-### Parameters voor het opgeven van de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source}
+### Parameters om de XML-gegevensbron {#parameters-for-specifying-the-xml-data-source} op te geven
 
 <table> 
  <tbody>
