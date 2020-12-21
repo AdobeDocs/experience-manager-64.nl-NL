@@ -22,11 +22,11 @@ ht-degree: 0%
 
 In dit artikel wordt beschreven hoe u fouten in de AEM Forms-werkruimte kunt opsporen door logboekregistratie in te schakelen en foutopsporing te gebruiken in een browser. Hierin worden ook enkele algemene problemen beschreven die u kunt tegenkomen bij het gebruik van de AEM Forms-werkruimte en de bijbehorende oplossingen.
 
-## Kan het AEM Forms-werkruimtenpakket niet installeren {#unable-to-install-aem-forms-workspace-package}
+## Kan AEM Forms-werkruimtepakket {#unable-to-install-aem-forms-workspace-package} niet installeren
 
-Nadat u de patch hebt geïnstalleerd, opent u de AEM Forms-werkruimte. Als u de fout Geen bron gevonden tegenkomt, opent u de CRX Package Manager en installeert u het `adobe-lc-workspace-pkg-<version>.zip` pakket opnieuw.
+Nadat u de patch hebt geïnstalleerd, opent u de AEM Forms-werkruimte. Als u de fout Geen bron gevonden tegenkomt, opent u de CRX Package Manager en installeert u het `adobe-lc-workspace-pkg-<version>.zip`-pakket opnieuw.
 
-Voer tijdens het installeren van het pakket de volgende stappen uit als er een fout optreedt `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed`:
+Voer tijdens het installeren van het pakket de volgende stappen uit als er een fout `javax.jcr.nodetype.ConstraintViolationException: OakConstraint0025: Authorizable property rep:authorizableId may not be removed` optreedt:
 
 1. Meld u aan bij CRX DE List. De standaard-URL is `https://[localhost]:[port]/lc/crx/de/index.jsp`
 1. Verwijder het volgende knooppunt:
@@ -37,15 +37,15 @@ Voer tijdens het installeren van het pakket de volgende stappen uit als er een f
 1. Zoek en installeer het `adobe-lc-workspace-pkg-[version].zip` pakket.
 1. Start de toepassingsserver opnieuw.
 
-## Logboek van AEM Forms-werkruimte {#aem-forms-workspace-nbsp-logging}
+## Logboekregistratie van AEM Forms-werkruimte {#aem-forms-workspace-nbsp-logging}
 
 U kunt logboeken op diverse niveaus produceren om het optimale oplossen van problemen van fouten toe te laten. Bijvoorbeeld, in een complexe toepassing, helpt het registreren op componentenniveau bij het zuiveren en het oplossen van problemen specifieke componenten.
 
 In de AEM Forms-werkruimte:
 
-* Als u de logboekgegevens over een specifiek componentbestand wilt opvragen, voegt u deze toe `/log/<ComponentFile>/<LogLevel>` aan de URL en drukt u op `Enter`. Alle logboekinformatie voor het componentendossier op het gespecificeerde logboekniveau wordt gedrukt op de console.
+* Als u de logboekgegevens over een specifiek componentbestand wilt opvragen, voegt u `/log/<ComponentFile>/<LogLevel>` toe aan de URL en drukt u op `Enter`. Alle logboekinformatie voor het componentendossier op het gespecificeerde logboekniveau wordt gedrukt op de console.
 
-* Als u logboekgegevens van alle deelbestanden wilt opvragen, voegt u deze toe `/log/all/trace` aan de URL en drukt u op `Enter`.
+* Om logboekinformatie van alle componentendossiers te krijgen, voeg `/log/all/trace` in URL toe, en druk `Enter`.
 
 * Logbestandsindeling: `<Component file> <Date>:<Time>: <Log Level> : <Log Message>`
 
@@ -142,7 +142,7 @@ In de AEM Forms-werkruimte:
  </tbody> 
 </table>
 
-### Logboekniveaus beschikbaar in de AEM Forms-werkruimte {#log-levels-available-in-nbsp-aem-forms-workspace}
+### Logniveaus beschikbaar in de werkruimte van AEM Forms {#log-levels-available-in-nbsp-aem-forms-workspace}
 
 * FATAAL
 * FOUT
@@ -156,9 +156,9 @@ In de AEM Forms-werkruimte:
 
 Scripts en stijlen kunnen in verschillende browsers worden opgespoord.
 
-* **Foutopsporing in IE**: Ga als volgt te werk om fouten op te sporen in de AEM Forms-werkruimte in IE: [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
+* **Foutopsporing in IE**: Ga als volgt te werk om fouten op te sporen in de AEM Forms-werkruimte in IE:  [https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx](https://msdn.microsoft.com/en-us/library/hh772704(v=vs.85).aspx).
 
-* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets: Ctrl+Shift+I. Zie voor meer informatie: [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
+* **Foutopsporing in Chrome**: Als u foutopsporing wilt openen in Chrome, gebruikt u de sneltoets: Ctrl+Shift+I. Zie voor meer informatie:  [https://developer.chrome.com/extensions/tut_debugging.html](https://developer.chrome.com/extensions/tut_debugging.html).
 
 * **Foutopsporing in Firefox**: Er zijn verschillende invoegtoepassingen beschikbaar voor foutopsporing in scripts en stijlen in Firefox. Firebug is bijvoorbeeld een hulpprogramma voor foutopsporing ([https://getfirebug.com](https://getfirebug.com)).
 
