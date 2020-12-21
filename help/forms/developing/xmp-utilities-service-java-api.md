@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Java API Quick Start (SOAP) XMP Utilities Service {#xmp-utilities-service-java-apiquick-start-soap}
+# XMP Utilities Service Java API Quick Start (SOAP) {#xmp-utilities-service-java-apiquick-start-soap}
 
 De volgende Snelle Begarts zijn beschikbaar voor de dienst van het Hulpprogramma XMP.
 
@@ -26,15 +26,15 @@ De volgende Snelle Begarts zijn beschikbaar voor de dienst van het Hulpprogramma
 
 [Snel starten (SOAP-modus): XMP metagegevens importeren met de Java API](xmp-utilities-service-java-api.md#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de server van Forms als u een ander werkend systeem, zoals UNIX gebruikt, vervangt vensters-specifieke wegen door wegen die door het toepasselijke werkende systeem worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle aanvang die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de server van Forms als u een ander werkend systeem, zoals UNIX gebruikt, vervangt vensters-specifieke wegen door wegen die door het toepasselijke werkende systeem worden gesteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): XMP metagegevens exporteren met de Java API {#quick-start-soap-mode-exporting-xmp-metadata-using-the-java-api}
 
-In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd en opgeslagen. (Zie Metagegevens [exporteren uit PDF-documenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
+In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd en opgeslagen. (Zie [Metagegevens exporteren uit PDF-documenten](/help/forms/developing/xmp-utilities.md#exporting-metadata-from-pdf-documents).)
 
 ```as3
  /* 
@@ -139,7 +139,7 @@ In het volgende codevoorbeeld worden XMP metagegevens opgehaald, geïnspecteerd 
 
 ## Snel starten (SOAP-modus): XMP metagegevens importeren met de Java API {#quick-start-soap-mode-importing-xmp-metadata-using-the-java-api}
 
-In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het XML-document dat de metagegevens bevat die in het PDF-document moeten worden geïmporteerd, is gebaseerd op een XML-bestand met de naam *LoanMetaData.xml*. Zie Metagegevens [importeren in PDF-documenten](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents)voor informatie over dit XML-bestand.
+In het volgende codevoorbeeld worden XMP metagegevens geïmporteerd en wordt het nieuwe PDF-bestand op schijf opgeslagen. Het PDF-document is gebaseerd op een PDF-bestand met de naam Loan.pdf. Het XML-document dat de metagegevens bevat die in het PDF-document moeten worden geïmporteerd, is gebaseerd op een XML-bestand met de naam *LoanMetaData.xml*. Zie [Metagegevens importeren in PDF-documenten](/help/forms/developing/xmp-utilities.md#importing-metadata-into-pdf-documents) voor informatie over dit XML-bestand.
 
 ```as3
  /* 
