@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Onlineopmerkingen inschakelen voor Adobe Reader-plug-in voor webbrowsers {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in}
+# Onlineopmerkingen inschakelen voor insteekmodule {#enabling-online-commenting-for-adobe-reader-web-browser-plug-in} voor Adobe Reader-webbrowsers
 
 Als u de werkbalk Opmerkingen en markeringen wilt inschakelen in een PDF-bestand dat wordt weergegeven met de insteekmodule voor de webbrowser van Adobe Reader, moet er een back-end voor samenwerking zijn, zoals een revisieserver. Als er geen back-end voor samenwerking beschikbaar is, moet u het PDF-bestand opslaan op uw computer, het bestand beoordelen en markeren in Adobe Reader en het terugsturen naar de maker.
 
