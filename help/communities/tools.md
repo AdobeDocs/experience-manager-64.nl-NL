@@ -19,7 +19,7 @@ ht-degree: 0%
 ---
 
 
-# Community-gereedschappen {#communities-tools}
+# Gemeenschapsgereedschappen {#communities-tools}
 
 Op auteur, om tot de console van de Hulpmiddelen van Gemeenschappen toegang te hebben:
 
@@ -27,11 +27,11 @@ Op auteur, om tot de console van de Hulpmiddelen van Gemeenschappen toegang te h
 
 ![chlimage_1-129](assets/chlimage_1-129.png)
 
-* [Sitesjablonen](sites.md) - Console voor het maken en beheren van sitesjablonen
-* [Groepssjablonen](tools-groups.md)- Console voor het maken en beheren van groepssjablonen
-* [Community-functies](functions.md)- Console voor het maken en beheren van gemeenschapsfuncties
-* [Opslagconfiguratie](srp-config.md) - Console voor configuratie en selectie van de [standaard SRP](working-with-srp.md)
+* [Sitesjablonen](sites.md)  - Console voor het maken en beheren van sitesjablonen
+* [Groepssjablonen](tools-groups.md) - Console voor het maken en beheren van groepssjablonen
+* [Community-functies](functions.md) - Console voor het maken en beheren van gemeenschapsfuncties
+* [Opslagconfiguratie](srp-config.md)  — Console voor configuratie en selectie van de  [standaard SRP](working-with-srp.md)
 
-* [De Gids](components-guide.md) van de component - opent een interactieve plaats die voor experimenteren met hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
-* [Badges](badges.md) - Console waaruit aangepaste badges kunnen worden toegevoegd voor gebruik in [scoring- en badingregels](implementing-scoring.md)
+* [De Gids](components-guide.md)  van de component - opent een interactieve plaats die voor experimenteren met hoe de componenten SCF werken en hoe zij kunnen worden gevormd of worden aangepast.
+* [Badges](badges.md)  - Console waaruit aangepaste badges kunnen worden toegevoegd voor gebruik in  [scoring- en badingregels](implementing-scoring.md)
 
