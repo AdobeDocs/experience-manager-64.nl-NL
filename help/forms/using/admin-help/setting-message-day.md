@@ -24,21 +24,21 @@ U kunt een bericht instellen dat op de welkomstpagina in de gebruikersinterface 
 
 Indien nodig kunt u de HTML-tags gebruiken die worden ondersteund door Adobe Flash® Player om de weergave van de tekst op te maken:
 
-* &lt;a> Ankertag
-* &lt;b> Vet label
+* &lt;a> Tag voor anker&lt;/a>
+* &lt;b> Vet label&lt;/b>
 * &lt;br> Tag voor einde
-* &lt;font> Font-tag
-* &lt;img> Afbeeldingstag
-* &lt;i> Cursieve tag
+* &lt;font> Font-tag&lt;/font>
+* &lt;img> Tag voor afbeelding
+* &lt;i> Cursieve tag&lt;/i>
 * &lt;li> Tag voor lijstitem
-* &lt;p> Alinealabel
-* &lt;span>-tag span
-* &lt;textformat> Tag voor tekstindeling
-* &lt;u> Tag onderstrepen
+* &lt;p> Tag voor alinea
+* &lt;span> Tag voor bereik&lt;/span>
+* &lt;textformat> Tag voor tekstopmaak
+* &lt;u> Tag Onderstrepen&lt;/u>
 
-Zie de definitie van de `htmlText` eigenschap voor de klasse TextField in de [Flex Language Reference](https://www.adobe.com/support/documentation/en/flex/)voor meer informatie over de ondersteunde labels.
+Zie de definitie van de eigenschap `htmlText` voor de klasse TextField in de [Flex Language Reference](https://www.adobe.com/support/documentation/en/flex/) voor meer informatie over de ondersteunde labels.
 
-## Bericht van de dag instellen {#set-the-message-of-the-day}
+## Het bericht van de dag instellen {#set-the-message-of-the-day}
 
 1. Klik in de beheerconsole op Services > Werkruimte > Bericht van de dag.
 1. Geef in het vak Bericht van de dag de tekst op die in het welkomstscherm moet worden weergegeven.
