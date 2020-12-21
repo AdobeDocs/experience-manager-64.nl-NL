@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Publikaties {#communities-notifications}
+# Communitymeldingen {#communities-notifications}
 
 ## Overzicht {#overview}
 
 AEM Communities biedt een meldingssectie waarin gebeurtenissen worden weergegeven die van belang zijn voor de ondertekenaars in het community-lid.
 
-Meldingen zijn vergelijkbaar met [activiteiten](essentials-activities.md) en [abonnementen](subscriptions.md) , omdat ze het gevolg kunnen zijn van
+Meldingen zijn vergelijkbaar met [activiteiten](essentials-activities.md) en [abonnementen](subscriptions.md) omdat ze mogelijk het resultaat zijn van
 
 * Het lid dat inhoud plaatst
 * Het lid dat ervoor kiest een ander lid te volgen
@@ -33,15 +33,15 @@ Meldingen zijn vergelijkbaar met [activiteiten](essentials-activities.md) en [ab
 Wat maakt onderscheid tussen meldingen en activiteiten en abonnementen?
 
 * Een koppeling naar de sectie Meldingen staat altijd in de koptekst van een communitysite
-   * De activiteiten vereisen dat de functie [van de](functions.md#activity-stream-function) activiteitsstroom wordt opgenomen in de structuur van de site van de gemeenschap
+   * Voor activiteiten moet de functie [activity stream](functions.md#activity-stream-function) worden opgenomen in de structuur van de site van de community
    * Abonnementen vereisen [configuratie van e-mail](email.md)
 * De implementatie van meldingen verloopt via schaalbare en pluggable kanalen
    * Activiteiten zijn alleen beschikbaar op het web
    * Abonnementen zijn alleen beschikbaar via e-mail
 
-Vanaf het Communautair [KP1](deploy-communities.md#latestfeaturepack)zijn de beschikbare kennisgevingskanalen
+Vanaf de Gemeenschappen [FP1](deploy-communities.md#latestfeaturepack) zijn de beschikbare kennisgevingskanalen
 
-* Het webkanaal, toegankelijk via de `Notifications` koppeling
+* Het webkanaal, geopend via de koppeling `Notifications`
 * Het e-mailkanaal is beschikbaar wanneer e-mail correct is geconfigureerd
 
 Toekomstige kanalen zijn mobiel en desktop.
@@ -52,27 +52,27 @@ Toekomstige kanalen zijn mobiel en desktop.
 
 E-mail moet worden gevormd om het e-mailkanaal voor berichten functioneel te zijn.
 
-Zie E-mail [configureren](analytics.md)voor instructies over het instellen van e-mail.
+Zie [E-mail configureren](analytics.md) voor instructies voor het instellen van e-mail.
 
 **Volgen inschakelen**
 
-Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [agenda](calendar.md), [bestandsbibliotheek](file-library.md)[](comments.md)en commentaren.
+Componenten moeten worden geconfigureerd om het volgende in te schakelen. Functies die het volgende toestaan, zijn [blog](blog-feature.md), [forum](forum.md), [QnA](working-with-qna.md), [agenda](calendar.md), [bestandsbibliotheek](file-library.md) en [commentaren](comments.md).
 
 Let op:
 
-* Componenten die worden gebruikt binnen sjablonen [voor communitysites en](sites.md) groepssjablonen [](tools-groups.md) , kunnen al zijn geconfigureerd om het volgende toe te staan
+* Componenten die worden gebruikt binnen de community [sitesjablonen](sites.md) en [groepssjablonen](tools-groups.md) kunnen al zijn geconfigureerd om het volgende toe te staan
 
 * De profielen van lidstaten worden reeds gevormd om andere leden toe te staan om te volgen
 
-## Meldingen van: {#notifications-from-following}
+## Meldingen van volgende {#notifications-from-following}
 
 ![chlimage_1-254](assets/chlimage_1-254.png)
 
-Met de knop **Volgen** kunt u items opvolgen als activiteiten, abonnementen en/of meldingen. Telkens wanneer de knop **Volgen** is geselecteerd, kunt u een selectie in- of uitschakelen. De `Email Subscriptions` selectie is alleen aanwezig als deze is geconfigureerd.
+Met de knop **Follow** kunt u items opvolgen als activiteiten, abonnementen en/of meldingen. Telkens wanneer de **Follow** knoop wordt geselecteerd, is het mogelijk om of van een selectie van een knevel te voorzien. De `Email Subscriptions` selectie is slechts aanwezig wanneer gevormd.
 
-Als er een methode van het volgende is geselecteerd, verandert de tekst van de knop in **Volgende**. Voor het gemak is het mogelijk om alle methoden uit `Unfollow All` te schakelen.
+Als een methode van het volgende wordt geselecteerd, verandert de tekst van de knoop in **volgend**. Voor het gemak, is het mogelijk om `Unfollow All` te selecteren om alle methodes van een knevel te voorzien.
 
-De knop **Volg** wordt weergegeven
+De knop **Volg** verschijnt
 
 * Wanneer het bekijken van het profiel van een ander lid
 * Op een hoofdpagina met functies, zoals forums, QnA en blogs
@@ -80,7 +80,7 @@ De knop **Volg** wordt weergegeven
 * Voor een specifiek bericht, zoals een forumonderwerp, een QnA-vraag of een blogartikel
    * Hiermee wordt alle activiteit voor die specifieke vermelding gevolgd
 
-## Meldingsinstellingen beheren {#managing-notification-settings}
+## Meldingsinstellingen {#managing-notification-settings} beheren
 
 Als u de koppeling Instellingen kennisgeving op de pagina Meldingen selecteert, kan elk lid bepalen hoe meldingen worden ontvangen.
 
@@ -88,7 +88,7 @@ Het webkanaal is altijd ingeschakeld.
 
 ![chlimage_1-255](assets/chlimage_1-255.png)
 
-Het e-mailkanaal, dat afhankelijk is van de juiste [configuratie van de e-mail](email.md), biedt dezelfde instellingen als voor het webkanaal.
+Het e-mailkanaal, dat afhankelijk is van de juiste [configuratie van e-mail](email.md), biedt dezelfde instellingen als voor het webkanaal.
 
 Het e-mailkanaal is standaard uitgeschakeld.
 
@@ -98,13 +98,13 @@ Het kan door een lid worden aangezet, maar nog hangt van e-mail af die wordt gev
 
 ![chlimage_1-257](assets/chlimage_1-257.png)
 
-## Meldingen weergeven {#viewing-notifications}
+## Meldingen {#viewing-notifications} weergeven
 
 ### Webmeldingen {#web-notifications}
 
-Een door de [wizard gemaakte communitysite](sites-console.md) bevat nu een koppeling naar de `Notifications` functie in de koptekstbalk van de site boven de banner. In tegenstelling tot berichten, worden de berichten gecreeerd voor elke communautaire plaats, terwijl de berichten tijdens het proces van de plaatsverwezenlijking moeten worden toegelaten.
+Een [wizard heeft een communitysite](sites-console.md) gemaakt en bevat nu een koppeling naar de functie `Notifications` in de kopbalk van de site boven de banner. In tegenstelling tot berichten, worden de berichten gecreeerd voor elke communautaire plaats, terwijl de berichten tijdens het proces van de plaatsverwezenlijking moeten worden toegelaten.
 
-Als u de gepubliceerde site bezoekt en de `Notifications` koppeling selecteert, worden alle meldingen voor het lid weergegeven.
+Als u de gepubliceerde site bezoekt en de koppeling `Notifications` selecteert, worden alle meldingen voor het lid weergegeven.
 
 ![chlimage_1-258](assets/chlimage_1-258.png)
 
