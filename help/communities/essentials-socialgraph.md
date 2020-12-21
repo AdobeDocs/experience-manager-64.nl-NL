@@ -18,17 +18,17 @@ ht-degree: 2%
 ---
 
 
-# Grondbeginselen van sociale grafiek {#social-graph-essentials}
+# Essentiële elementen sociale grafiek {#social-graph-essentials}
 
 De mogelijkheid voor een lid van de Gemeenschap om [activiteiten](essentials-activities.md) te volgen en te volgen, wordt vastgesteld door middel van twee componenten:
 
-De `follow`component moet met een andere bron worden geassocieerd, en deze vereniging is reeds gevestigd voor bestaande leden van de Gemeenschappen en eigenschappen op een [communautaire plaats](overview.md#communitiessites).
+De `follow`component moet met een andere bron worden geassocieerd, en deze vereniging is reeds gevestigd voor bestaande leden van Gemeenschappen en eigenschappen op een [communautaire plaats](overview.md#communitiessites).
 
 De `following`component maakt een lijst van de leden die of het huidige lid volgen of door het huidige lid worden gevolgd. Deze sociale grafiek van de relaties tussen leden is opgenomen in het gebruikersprofiel dat voor een site van een community is ingesteld.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
-### volgende {#following}
+### Na {#following}
 
 <table> 
  <tbody>
@@ -54,30 +54,30 @@ De `following`component maakt een lijst van de leden die of het huidige lid volg
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td> 
-   <td>Zie Sociale grafiek <a href="socialgraph.md">gebruiken</a></td> 
+   <td>Zie <a href="socialgraph.md">Sociale grafiek gebruiken</a></td> 
   </tr>
   <tr>
-   <td><strong> optionele<br /> eigenschap</strong></td> 
+   <td><strong> optional<br /> property</strong></td> 
    <td>
     <ul> 
      <li>Naam: <strong><code>outgoing</code></strong></li> 
      <li>Type: Boolean</li> 
      <li>Waarde:<br /> 
       <ul> 
-       <li><i>true </i>- in de <code>following</code> component worden de leden weergegeven die het momenteel aangemelde lid zijn <code>follows</code></li> 
-       <li><i>false </i>- de <code>following</code> component geeft een lijst weer van de leden die <code>follow </code>het momenteel aangemelde lid zijn</li> 
+       <li><i>true  </i>- in de  <code>following</code> component worden de leden weergegeven die het momenteel aangemelde lid zijn <code>follows</code></li> 
+       <li><i>false  </i>- de  <code>following</code> component geeft een lijst weer van de leden die  <code>follow </code>het momenteel aangemelde lid zijn</li> 
       </ul> </li> 
-    </ul> <p>De standaardwaarde is <i>true</i> als de eigenschap ontbreekt. Momenteel is het niet mogelijk om deze eigenschap in te stellen in het dialoogvenster Bewerken in de modus Schrijver. De eigenschap moet aan een instantie van het <code>following </code>knooppunt worden toegevoegd met <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
+    </ul> <p>De standaardwaarde is <i>true</i> als de eigenschap ontbreekt. Momenteel is het niet mogelijk om deze eigenschap in te stellen in het dialoogvenster Bewerken in de modus Schrijver. De eigenschap moet worden toegevoegd aan een instantie van het knooppunt <code>following </code>met behulp van <a href="../../help/sites-developing/developing-with-crxde-lite.md">CRXDE|Lite</a>.</p> </td> 
   </tr>
  </tbody>
 </table>
 
-### Volg {#follow}
+### {#follow} volgen
 
 | **resourceType** | sociale/sociale grafiek/componenten/hbs/volgende |
 |---|---|
-| [**inclusief **](scf.md#add-or-include-a-communities-component) | Nee |
-| **templates** | /libs/social/socialgraph/components/hbs/following/following.hbs |
+| [**inclusief**](scf.md#add-or-include-a-communities-component) | Nee |
+| **sjablonen** | /libs/social/socialgraph/components/hbs/following/following.hbs |
 | **css** | /libs/social/socialgraph/components/hbs/following/clientlibs/following.css |
 
 * [Aanpassingen aan de clientzijde](client-customize.md)
