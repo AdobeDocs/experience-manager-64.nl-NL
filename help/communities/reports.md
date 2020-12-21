@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Rapportenconsole {#reports-console}
+# Rapportconsole {#reports-console}
 
 ## Overzicht {#overview}
 
@@ -26,17 +26,17 @@ Voor AEM Communities zijn er diverse rapporten die op verschillende manieren toe
 
 In het algemeen zijn de verschillende verslagen:
 
-* [Toewijzingsrapport](#assignments-report) - voor een [activeringscommunity](overview.md#enablement-community)geeft een overzicht van de vorderingen van studenten bij het toewijzen van hun taken, inclusief een bijbehorende score bij het implementeren van de SCORM-standaard
-* [Weergaverapport](#views-report) : geeft een overzicht van de weergaven van de inhoud van de website en de leden van de gebruikersgemeenschap
-* [Post Report](#posts-report) - geeft een overzicht van verschillende typen berichten van leden van de gemeenschap aan elke site van de gemeenschap
+* [Rapport](#assignments-report)  Toewijzingen - voor een  [machtigingsgemeenschap](overview.md#enablement-community) geeft een overzicht van de vorderingen van studenten bij het toewijzen van hun taken, inclusief een bijbehorende score bij het implementeren van de SCORM-standaard
+* [Weergavenrapport](#views-report) : geeft een overzicht van de weergaven van de inhoud door leden van de gebruikersgemeenschap en sitebezoekers voor alle communitysites
+* [Post Report](#posts-report)  - biedt een overzicht van verschillende typen berichten van leden van de gemeenschap aan elke site van de gemeenschap
 
-Wanneer [Adobe Analytics is ingeschakeld](sites-console.md#analytics), bevatten rapporten het aantal weergaven, afspelen, opmerkingen en waarderingen voor elke activeringsbron in de loop van de tijd
+Wanneer [Adobe Analytics is ingeschakeld](sites-console.md#analytics), bevatten rapporten het aantal weergaven, afspelen, opmerkingen en classificaties voor elke activeringsbron in de loop van de tijd
 
 Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verdere verwerking.
 
-## Consoles rapporteren {#reporting-consoles}
+## Consoles {#reporting-consoles} rapporteren
 
-### Verslagen voor communautaire sites {#reports-for-community-sites}
+### Rapporten voor communautaire sites {#reports-for-community-sites}
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Reports]**
 * Kiezen uit
@@ -48,13 +48,13 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
       * Genereer een rapport voor een geselecteerde Community Site, Type inhoud en Tijdsperiode
          ![chlimage_1-156](assets/chlimage_1-156.png)
 
-### Rapporten voor Middelen Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
+### Rapporten voor Middelen van Enablement en het Leren Wegen {#reports-for-enablement-resources-and-learning-paths}
 
 * Vanuit globale navigatie: **[!UICONTROL Navigation > Communities > Resources]**
 * Een bestaande community-site voor inschakelen selecteren
-   * Selecteer **[!UICONTROL Report]** pictogram om rapporten te genereren die betrekking hebben op alle bronnen voor activering
+   * Selecteer **[!UICONTROL Report]** pictogram om rapporten te genereren die alle bronnen van activering bestrijken
    * Een leerpad voor inschakelen selecteren
-   * Selecteer **[!UICONTROL Report]** pictogram om rapporten te produceren voor
+   * Selecteer **[!UICONTROL Report]** pictogram om rapporten voor te produceren
       * De meegeleverde middelen voor activering
       * De leerlingen die zijn toegewezen aan het leerpad
 * Deze verslagen bevatten:
@@ -65,9 +65,9 @@ Rapporten in tabelvorm kunnen worden geëxporteerd in de .csv-indeling voor verd
       * Aantal gemaakte opmerkingen
       * Sterrenclassificatie gegeven
 
-Voor meer details, zie de sectie [van](resources.md#report) Rapporten van de console van Middelen.
+Voor meer details, zie [de sectie van Rapporten](resources.md#report) van de console van Middelen.
 
-## Toewijzingsrapport {#assignments-report}
+## Rapport Toewijzingen {#assignments-report}
 
 Met de toewijzingsconsole kunnen rapporten worden gefilterd door de communitysite, gebruikers of groepen en toewijzing in te schakelen.
 
@@ -81,7 +81,8 @@ Selecteer de criteria voor het rapport:
 Een community-site voor activering selecteren
 * **[!UICONTROL User or Group]**
    * Selecteer Gebruiker om een rapport voor één student te genereren
-   * Selecteer Groep om een rapport voor een groep studenten te genererenDe tunnelservice geeft toegang tot leden en lidgroepen vanuit de publicatieomgeving
+   * Selecteer Groep om een rapport voor een groep studenten te genereren
+De tunneldienst zal tot leden en lidgroepen van publicatiemilieu toegang hebben
 * **[!UICONTROL Assignment]**
 Maak een keuze uit de instellingsbronnen die aan de geselecteerde studenten zijn toegewezen
 
@@ -89,7 +90,7 @@ Selecteer **[!UICONTROL Generate]** om het rapport te maken:
 
 ![chlimage_1-158](assets/chlimage_1-158.png)
 
-## Rapport Weergaven {#views-report}
+## Rapport {#views-report} weergaven
 
 Met de weergaveconsole kunnen rapporten gedurende een bepaalde periode worden gegenereerd op paginaweergaven door een of meer algemene functies.
 
@@ -101,7 +102,8 @@ Selecteer de criteria voor het rapport:
 Een communitysite selecteren
 * **[!UICONTROL Content Type]**
 Kan Alle inhoud kiezen of een van de functies op de site selecteren
-* TijdframeSelecteer een van de volgende opties:
+* Tijdskader
+Selecteer een van de volgende opties:
    * Laatste 7 dagen
    * Laatste 30 dagen
    * Laatste 90 dagen
@@ -123,7 +125,8 @@ Selecteer de criteria voor het rapport:
 Een communitysite selecteren
 * **[!UICONTROL Content Type]**
 Kan Alle inhoud kiezen of een van de functies op de site selecteren
-* TijdframeSelecteer een van de volgende opties:
+* Tijdskader
+Selecteer een van de volgende opties:
    * Laatste 7 dagen
    * Laatste 30 dagen
    * Laatste 90 dagen
@@ -135,6 +138,6 @@ Selecteer **[!UICONTROL Generate]** om het rapport te maken:
 
 ## Problemen oplossen {#troubleshooting}
 
-### Geen community-sites vermeld {#no-community-sites-listed}
+### Geen vermelde communitysites {#no-community-sites-listed}
 
 Als er geen community-sites worden vermeld, moet u ervoor zorgen dat Adobe Analytics is ingeschakeld voor een site. Als u rapporten over toewijzingen kiest, moet u ervoor zorgen dat de toewijzingsfunctie zich in de structuur van de gemeenschapssite bevindt.
