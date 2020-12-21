@@ -17,7 +17,7 @@ ht-degree: 2%
 ---
 
 
-# De sendToPrinter-API gebruiken {#using-the-sendtoprinter-api}
+# De sendToPrinter-API {#using-the-sendtoprinter-api} gebruiken
 
 ## Overzicht {#overview}
 
@@ -35,7 +35,7 @@ In AEM Forms kunt u een document naar de printer verzenden met de SendToPrinter-
    * **SharedPrinter** `: A printing protocol that enables a computer to use a printer that is configured for that computer.`
    * **CIFS**: De uitvoerservice ondersteunt het CIFS-afdrukprotocol (Common Internet File System).
 
-## De SendToPrinter-service gebruiken {#using-sendtoprinter-service}
+## SendToPrinter Service {#using-sendtoprinter-service} gebruiken
 
 De onderstaande tabel bevat:
 
@@ -68,7 +68,7 @@ Verificatie wordt alleen ondersteund voor CIFS-afdrukken. Geef voor verificatie 
 
 1. Ga naar https://&lt;server>:&lt;port>/system/console.
 
-1. Go to **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
+1. Ga naar **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
 
 1. Voer onbewerkte tekst in en klik op **[!UICONTROL Protect]**.
 
