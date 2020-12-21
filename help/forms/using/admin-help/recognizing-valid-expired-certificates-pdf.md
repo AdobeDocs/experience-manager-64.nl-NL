@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Geldige en verlopen certificaten in PDF-documenten herkennen {#recognizing-valid-and-expired-certificates-in-pdf-documents}
+# Geldige en verlopen certificaten herkennen in PDF-documenten {#recognizing-valid-and-expired-certificates-in-pdf-documents}
 
 Wanneer een PDF-document waarop gebruiksrechten zijn toegepast door Reader Extensions wordt geopend in Adobe Reader, wordt een statusbalk weergegeven met een beschrijving van de specifieke gebruiksrechten die zijn ingeschakeld in het PDF-document.
 
