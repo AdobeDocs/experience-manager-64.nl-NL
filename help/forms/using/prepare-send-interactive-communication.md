@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Bereid en verzend Interactieve Communicatie gebruikend de Agent UI voor {#prepare-and-send-interactive-communication-using-the-agent-ui}
+# Bereid en verzend Interactieve Communicatie gebruikend de Agent UI {#prepare-and-send-interactive-communication-using-the-agent-ui} voor
 
 De agent UI staat de agenten toe om Interactieve Communicatie aan het postproces voor te bereiden en te verzenden. De agent brengt de vereiste wijzigingen aan zoals toegestaan, en legt de Interactieve Mededeling aan een postproces, zoals e-mail of druk voor.
 
@@ -30,10 +30,10 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 * **Inhoud**: In het lusje van de Inhoud, beheert de Agent de inhoud zoals documentfragmenten en inhoudsvariabelen in de Interactieve Mededeling. De agent kan de wijzigingen in het documentfragment doorvoeren zoals is toegestaan tijdens het maken van de interactieve communicatie in de eigenschappen van die documentfragmenten. De agent kan ook een documentfragment opnieuw ordenen, toevoegen/verwijderen en pagina-einden toevoegen, indien toegestaan.
 * **Bijlagen**: Het lusje van Bijlagen verschijnt in de Agent UI slechts als de Interactieve Communicatie om het even welke gehechtheid heeft of de Agent bibliotheektoegang heeft. De agent mag de bijlagen wel of niet wijzigen of bewerken.
 
-## Bereid Interactieve Communicatie gebruikend de Agent UI voor {#prepare-interactive-communication-using-the-agent-ui}
+## Bereid Interactieve Communicatie gebruikend de Agent UI {#prepare-interactive-communication-using-the-agent-ui} voor
 
 1. Selecteer **[!UICONTROL Forms]** > **[!UICONTROL Forms & Documents]**.
-1. Selecteer de gewenste interactieve communicatie en tik op **[!UICONTROL Open Agent UI]**.
+1. Selecteer de aangewezen Interactieve Communicatie en tik **[!UICONTROL Open Agent UI]**.
 
    >[!NOTE]
    >
@@ -47,13 +47,13 @@ Terwijl het voorbereiden van de Interactieve Mededeling gebruikend de Agent UI, 
 
    Ga door met het invoeren van gegevens, het beheren van de inhoud en het beheren van de bijlagen.
 
-### Gegevens invoeren {#enter-data}
+### Gegevens {#enter-data} invoeren
 
-1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte velden in die zijn gemarkeerd met een sterretje (&amp;ast;) om de knop **Verzenden** in te schakelen.
+1. Voer op het tabblad Gegevens de vereiste gegevens in voor variabelen, eigenschappen van het formuliergegevensmodel en velden voor de afdruksjabloon (XDP). Vul alle verplichte velden die zijn gemarkeerd met een sterretje (&amp;ast;) in om de knop **Verzenden** in te schakelen.
 
    Tik op de waarde van een gegevensveld in de voorvertoning Interactieve communicatie om het bijbehorende gegevensveld op het tabblad Gegevens te markeren, of andersom.
 
-### Inhoud beheren {#manage-content}
+### Inhoud {#manage-content} beheren
 
 Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvariabelen in de interactieve communicatie.
 
@@ -67,9 +67,9 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    ![contentmodulefocus](assets/contentmodulefocus.png)
 
-   Als u op het tabblad Inhoud of Gegevens op Geselecteerde modules markeren in inhoud ( ![gemarkeerde geselecteerde modulesincontentcr](assets/highlightselectedmodulesincontentccr.png)markeren) linksboven in de voorvertoning tikt, kunt u de functionaliteit uitschakelen of inschakelen om naar het documentfragment te gaan wanneer in de voorvertoning op de desbetreffende tekst, alinea of gegevensveld wordt getikt of geselecteerd.
+   Als u op het tabblad Inhoud of Gegevens op Geselecteerde modules markeren in inhoud ( ![Geselecteerde modules markeren inInhoudsverwijzing](assets/highlightselectedmodulesincontentccr.png)) linksboven in de voorvertoning tikt, kunt u de functionaliteit uitschakelen of inschakelen om naar het documentfragment te gaan wanneer in de voorvertoning op de relevante tekst, alinea of het desbetreffende gegevensveld wordt getikt of geselecteerd.
 
-   De fragmenten die door de agent mogen worden bewerkt tijdens het maken van de interactieve communicatie hebben het pictogram Geselecteerde inhoud ( ![iconeditselected content](assets/iconeditselectedcontent.png)) bewerken. Tik op het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
+   De fragmenten die door de agent mogen worden bewerkt tijdens het maken van de interactieve communicatie hebben het pictogram Geselecteerde inhoud bewerken ( ![iconeditselected content](assets/iconeditselectedcontent.png)). Tik op het pictogram Geselecteerde inhoud bewerken om het fragment in de bewerkingsmodus te starten en er wijzigingen in aan te brengen. Gebruik de volgende opties voor het opmaken en beheren van tekst:
 
    * [Opmaakopties](#formattingtext)
 
@@ -78,9 +78,9 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
    * [Speciale tekens](#specialcharacters)
    * [Sneltoetsen](/help/forms/using/keyboard-shortcuts.md)
 
-   Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [Acties en info beschikbaar in het gebruikersinterface](#actionsagentui)van de Agent.
+   Voor meer informatie over de acties beschikbaar voor diverse documentfragmenten in het gebruikersinterface van de Agent, zie [Acties en informatie beschikbaar in het gebruikersinterface van de Agent](#actionsagentui).
 
-1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagina-einde vóór](assets/pagebreakbeforeafter.png)).
+1. Als u een pagina-einde wilt toevoegen aan de afdrukuitvoer van de interactieve communicatie, plaatst u de cursor op de plaats waar u een pagina-einde wilt invoegen en selecteert u Pagina-einde voor of Pagina-einde na ( ![pagina-einde voor na](assets/pagebreakbeforeafter.png)).
 
    Een expliciete plaatsaanduiding voor een pagina-einde wordt ingevoegd in de interactieve communicatie. Zie het afdrukvoorbeeld voor informatie over de invloed van een expliciet pagina-einde op de interactieve communicatie.
 
@@ -100,18 +100,18 @@ Beheer op het tabblad Inhoud de inhoud, zoals documentfragmenten en inhoudsvaria
 
    >[!NOTE]
    >
-   >Het pictogram Bibliotheektoegang is alleen beschikbaar als bibliotheektoegang is ingeschakeld tijdens het maken van de interactieve communicatie (in de eigenschappen Documentcontainer van het afdrukkanaal).
+   >Bibliotheektoegangspictogram is alleen beschikbaar als bibliotheektoegang is ingeschakeld tijdens het maken van de interactieve communicatie (in de eigenschappen Documentcontainer van het afdrukkanaal).
 
 1. Als de volgorde van de bijlagen niet is vergrendeld tijdens het maken van de interactieve communicatie, kunt u de bijlagen opnieuw ordenen door een bijlage te selecteren en op de pijl-omlaag en -omhoog te tikken.
 1. Met Webvoorvertoning en Afdrukvoorbeeld kunt u zien of de twee uitvoerbestanden aan uw eisen voldoen.
 
-   Als u de voorvertoningen bevredigend vindt, tikt u **[!UICONTROL Submit]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
+   Als u vindt dat de voorvertoningen bevredigend zijn, tikt u op **[!UICONTROL Submit]** om de interactieve communicatie naar een postproces te verzenden. Als u wijzigingen wilt aanbrengen, sluit u de voorvertoning af en gaat u terug naar de wijzigingen.
 
 ## Tekst opmaken {#formattingtext}
 
 Tijdens het bewerken van een tekstfragment in de gebruikersinterface van de agent verandert de werkbalk afhankelijk van het type bewerkingen dat u wilt uitvoeren: Lettertype, Alinea of Lijst:
 
-![typeofformating, werkbalk](assets/typeofformattingtoolbar.png) ![Lettertype, werkbalk](do-not-localize/fonttoolbar.png)
+![werkbalk ](assets/typeofformattingtoolbar.png) ![typeofformatingFont, werkbalk](do-not-localize/fonttoolbar.png)
 
 Font, werkbalk
 
@@ -123,21 +123,21 @@ Alinea, werkbalk
 
 Lijst, werkbalk
 
-### Tekstgedeelten markeren/benadrukken {#highlightemphasize}
+### Onderdelen van tekst markeren/benadrukken {#highlightemphasize}
 
 Selecteer de tekst en tik op Markeringskleur om\gedeelten van tekst in een bewerkbaar fragment te benadrukken.
 
 ![highlighttextagentui](assets/highlighttextagentui.png)
 
-### Opgemaakte tekst plakken {#pasteformattedtext}
+### Opgemaakte tekst {#pasteformattedtext} plakken
 
 ![pasttext](assets/pastedtext.png)
 
-### Speciale tekens in tekst invoegen {#specialcharacters}
+### Speciale tekens invoegen in tekst {#specialcharacters}
 
-De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters gebouwd. De beheerder kan ondersteuning voor meer/aangepaste speciale tekens [toevoegen door deze aan te passen](/help/forms/using/custom-special-characters.md).
+De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters gebouwd. De beheerder kan [ondersteuning toevoegen voor meer/aangepaste speciale tekens door aanpassing](/help/forms/using/custom-special-characters.md).
 
-#### Oplevering van bijlage {#attachmentdelivery}
+#### Aflevering van bijlage {#attachmentdelivery}
 
 * Wanneer de interactieve communicatie wordt gerenderd met server-side API&#39;s als een interactieve of niet-interactieve PDF, bevat de gerenderde PDF bijlagen als PDF-bijlagen.
 * Wanneer een postproces verbonden aan een Interactieve Mededeling als deel van wordt geladen Submit gebruikend de UI van de Agent, worden de gehechtheid overgegaan als parameter List&lt;com.adobe.idp.Document> in AttachmentDocs.
@@ -151,9 +151,9 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 
 * **Pijlen** omhoog en omlaag: Pijlt om documentfragmenten omhoog of omlaag te verplaatsen in de interactieve communicatie.
 * **Verwijderen**: Verwijder, indien toegestaan, het documentfragment uit de interactieve communicatie.
-* **Pagina-einde voor** (van toepassing op onderliggende fragmenten van het doelgebied): Hiermee voegt u een pagina-einde in vóór het documentfragment.
+* **Pagina-einde voor**  (van toepassing op onderliggende fragmenten van het doelgebied): Hiermee voegt u een pagina-einde in vóór het documentfragment.
 * **Inspringen**: De inspringing van een documentfragment vergroten of verkleinen.
-* **Pagina-einde na** (van toepassing op onderliggende fragmenten van het doelgebied): Hiermee voegt u een pagina-einde in na het documentfragment.
+* **Pagina-einde na**  (van toepassing op onderliggende fragmenten van het doelgebied): Hiermee voegt u een pagina-einde in na het documentfragment.
 
 ![docfragoptions](assets/docfragoptions.png)
 
@@ -162,7 +162,7 @@ De interface van de Agent heeft ingebouwde steun voor 210 speciale karakters geb
 * Selectie (oogpictogram): Hiermee\nHiermee sluit u het documentfragment uit van de interactieve communicatie.
 * Niet-gevulde waarden (info): Hiermee geeft u het aantal niet-gevulde variabelen in het documentfragment aan.
 
-### Documentfragmenten weergeven {#list-document-fragments}
+### Documentfragmenten {#list-document-fragments} weergeven
 
 ![listopties](assets/listoptions.png)
 
