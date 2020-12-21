@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Workbench installeren {#install-workbench}
+# Workbench {#install-workbench} installeren
 
 Dit document bevat instructies voor het installeren en configureren van een werkbank. Het installatieprogramma installeert ook Designer.
 
@@ -65,7 +65,7 @@ De bronnen in deze tabel kunnen u helpen meer te weten te komen over en aan de s
 >
 >De Flex-werkruimte is verouderd voor AEM Forms. Deze is beschikbaar voor de AEM Forms-release.
 
-## Voordat u gaat installeren {#before-you-install}
+## Voordat u {#before-you-install} installeert
 
 ### Overzicht van Workbench-installatie {#workbench-installation-overview}
 
@@ -77,7 +77,7 @@ De volgende afbeelding toont de Workbench-installatie, inclusief:
 
 >[!NOTE]
 >
->Voor de AEM Forms-server is een afzonderlijk installatieprogramma vereist. Raadpleeg voor meer informatie de documentatie bij de installatie van AEM Forms in JEE.
+>Voor de AEM Forms-server is een afzonderlijk installatieprogramma vereist. Raadpleeg de documentatie bij de installatie van AEM Forms in JEE voor meer informatie.
 
 ## Systeemvereisten {#system-prerequisites}
 
@@ -85,8 +85,8 @@ In deze sectie worden de hardware- en softwarevereisten en ondersteunde platform
 
 ### Minimale hardware- en softwarevereisten {#minimum-hardware-software-requirements}
 
-**Workbench**De volgende vereisten worden minimaal aanbevolen:
-Schijfruimte voor installatie:
+****
+WorkbenchDe volgende vereisten worden minimaal aanbevolen: Schijfruimte voor installatie:
 * 680 MB alleen voor Workbench.
 * 2,15 GB op één station voor een volledige installatie van Workbench, Designer en de samplingverzameling.
 * 400 MB voor tijdelijke installatiemappen - 200 MB in de gebruiker \ temp folder en 200 MB in de tijdelijke folder van Vensters.
@@ -96,7 +96,7 @@ Schijfruimte voor installatie:
 >Als al deze locaties zich op één station bevinden, moet er tijdens de installatie 1,5 GB aan ruimte beschikbaar zijn. De naar de tijdelijke mappen gekopieerde bestanden worden verwijderd wanneer de installatie is voltooid.
 
 * Hardwarevereisten: Intel® Pentium® 4 of AMD equivalent, 1 GHz processor.
-* Download en installeer de nieuwste versie van Adobe AIR (van <a href="http://www.adobe.com/">www.adobe.com</a>) die vereist is voor Community Help Client, geïntegreerd met Workbench.
+* Download en installeer de nieuwste versie van Adobe AIR (van <a href="http://www.adobe.com/">www.adobe.com</a>) die vereist is voor de Community Help-client, geïntegreerd met Workbench.
 * Java™ Runtime Environment (JRE) 6.0 update 22 of hoger aan 6.0 *Nieuw voor 10*.
 * Monitorresolutie van minimaal 1024 x 768 pixels met 16-bits kleur of hoger.
 * TCP/IPv4- of TCP/IPv6-netwerkverbinding met de AEM Forms-server.
@@ -113,7 +113,7 @@ Schijfruimte voor installatie:
 
 ### Ondersteunde Platforms {#supported-platforms}
 
-Zie de volledige lijst met ondersteunde platforms voor Workbench op door [AEM Forms ondersteunde Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
+Zie de volledige lijst met ondersteunde platforms voor Workbench op [AEM Forms Ondersteunde Platforms](http://adobe.com/go/learn_aemforms_supportedplatforms_65).
 
 ## Installatieoverwegingen voor Designer {#designer-installation-considerations}
 
@@ -128,54 +128,54 @@ De onderstaande tabel bevat een volledige lijst met mogelijke installatiescenari
   </tr> 
   <tr> 
    <td><p>Acrobat Pro of Acrobat Pro Extended (inclusief Designer)</p> </td> 
-   <td><p>Geen. De Workbench-installatie detecteert een exemplaar van Designer op uw computer dat met Acrobat Pro of Acrobat Pro Extended is geïnstalleerd.
+   <td><p>Geen. Met de Workbench-installatie wordt een exemplaar van Designer op uw computer gedetecteerd dat met Acrobat Pro of Acrobat Pro Extended is geïnstalleerd.
 Verschillende versies van Designer kunnen op hetzelfde systeem naast elkaar bestaan, bijvoorbeeld Designer 8.2.x en 9.0.x. Het is niet nodig om de versie van Designer die met Acrobat 10 Pro of Acrobat 10 Pro Extended is geïnstalleerd, te verwijderen.
 <br /> <br /> </p> </td> 
   </tr> 
   <tr> 
    <td><p>Designer (zelfstandig)</p> </td> 
-   <td><p>Geen. De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd met het Workbench-installatieprogramma, gepatcheerd. Zo kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> <br /> </p> </td> 
+   <td><p>Geen. De versie van Designer die bij Workbench wordt geleverd, is alleen beschikbaar in het Engels. Het Workbench-installatieprogramma installeert geen nieuwe versie van Designer. In plaats daarvan wordt een bijgewerkte versie, die wordt meegeleverd met het Workbench-installatieprogramma, gepatcheerd. Hierdoor kunt u ook uw gelokaliseerde versie van Designer gebruiken in Workbench.<br /> <br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
-### Designer (zelfstandig) verwijderen {#uninstall-designer-standalone}
+### Designer (zelfstandig) {#uninstall-designer-standalone} verwijderen
 
 1. Ga naar **Configuratiescherm > Programma&#39;s > Programma&#39;s en onderdelen**
 1. Selecteer **Adobe Designer** in de lijst Momenteel geïnstalleerde programma&#39;s.
-1. Klik op **Verwijderen** en vervolgens op **Ja**.
+1. Klik **Uninstall** en klik dan **Yes**.
 
 ### Designer (zelfstandig) verwijderen op Windows 10 {#uninstall-designer-standalone-windows10}
 
 1. Ga naar **Configuratiescherm > Programma&#39;s > Programma&#39;s en onderdelen**
 1. Selecteer **Adobe Designer** in de lijst Momenteel geïnstalleerde programma&#39;s.
-1. Klik op **Verwijderen** en vervolgens op **Ja**.
+1. Klik **Uninstall** en klik dan **Yes**.
 
-### Designer verwijderen die bij Acrobat Pro of Acrobat Pro Extended is geleverd {#uninstall-designer-included-with-acrobatpro-or-acrobatextended}
-
-1. Ga naar **Configuratiescherm > Programma&#39;s > Programma&#39;s en onderdelen**
-1. Selecteer **Adobe Acrobat Pro** of **Adobe Acrobat Pro Extended** in de lijst Momenteel geïnstalleerde programma&#39;s.
-1. Klik op **Wijzigen** en vervolgens op **Volgende**.
-1. Selecteer **Wijzigen** en klik op **Volgende**.
-1. Selecteer **Adobe Designer**, selecteer **Deze functie is niet beschikbaar** en klik op **Volgende**
-1. Click **Update** and then click **Finish**
-
-### Designer verwijderen die bij Acrobat Pro of Acrobat Pro Extended in Windows 10 wordt geleverd {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
+### Designer verwijderen die bij Acrobat Pro of Acrobat Pro Extended {#uninstall-designer-included-with-acrobatpro-or-acrobatextended} wordt geleverd
 
 1. Ga naar **Configuratiescherm > Programma&#39;s > Programma&#39;s en onderdelen**
 1. Selecteer **Adobe Acrobat Pro** of **Adobe Acrobat Pro Extended** in de lijst Momenteel geïnstalleerde programma&#39;s.
-1. Klik op **Wijzigen** en vervolgens op **Volgende**.
-1. Selecteer **Wijzigen** en klik op **Volgende**.
-1. Selecteer **Adobe Designer**, selecteer **Deze functie is niet beschikbaar** en klik op **Volgende**
-1. Click **Update** and then click **Finish**
+1. Klik **Wijzigen** en klik vervolgens op **Volgende**.
+1. Selecteer **Modify** en klik dan **Next**.
+1. Selecteer **Adobe Designer**, selecteer **Deze functie is niet beschikbaar** en klik vervolgens op **Volgende**
+1. Klik **Bijwerken** en klik vervolgens op **Voltooien**
 
-## Workbench installeren {#installing-workbench}
+### Designer verwijderen die wordt geleverd bij Acrobat Pro of Acrobat Pro Extended in Windows 10 {#uninstall-designer-included-with-acrobatpro-or-acrobatextended-windows10}
+
+1. Ga naar **Configuratiescherm > Programma&#39;s > Programma&#39;s en onderdelen**
+1. Selecteer **Adobe Acrobat Pro** of **Adobe Acrobat Pro Extended** in de lijst Momenteel geïnstalleerde programma&#39;s.
+1. Klik **Wijzigen** en klik vervolgens op **Volgende**.
+1. Selecteer **Modify** en klik dan **Next**.
+1. Selecteer **Adobe Designer**, selecteer **Deze functie is niet beschikbaar** en klik vervolgens op **Volgende**
+1. Klik **Bijwerken** en klik vervolgens op **Voltooien**
+
+## Workbench {#installing-workbench} installeren
 
 In dit hoofdstuk wordt beschreven hoe u Workbench kunt installeren.
 
-### Workbench installeren en uitvoeren {#installing-and-running-workbench}
+### Workbench {#installing-and-running-workbench} installeren en uitvoeren
 
-Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereiste software en hardware bevat om het uit te voeren (zie sectie: **Voordat u gaat installeren**).
+Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereiste software en hardware bevat om het uit te voeren (zie sectie: **Voordat u** installeert).
 
 **Workbench installeren en uitvoeren:**
 
@@ -199,7 +199,7 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
    >
    >U kunt Designer dat met Acrobat 10 is geïnstalleerd, blijven gebruiken door deze optie uit te schakelen.
 
-1. Accepteer de standaardmap zoals deze wordt weergegeven of klik op Kiezen en navigeer naar de map waarin u Workbench wilt installeren. Klik vervolgens op Volgende.
+1. Accepteer de standaardmap als vermeld of   Klik op Kiezen en navigeer naar de map waarin u Workbench wilt installeren. Klik vervolgens op Volgende.
 
    >[!NOTE]
    >
@@ -209,22 +209,23 @@ Voordat u Workbench installeert, moet u ervoor zorgen dat uw omgeving de vereist
 1. Controleer het installatieoverzicht. Selecteer AEM Forms Workbench starten om Workbench te starten en klik op Volgende.
 1. Controleer de opmerkingen bij de release en klik op Gereed.
 1. De volgende items zijn nu op uw computer geïnstalleerd:
-   * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Raadpleeg de documentatie bij Workbench gebruiken voor meer informatie.
+   * **Workbench**: Als u Workbench wilt uitvoeren vanuit het menu Start, selecteert u Alle programma&#39;s > AEM Forms > Workbench als u de sneltoetsmap daar wilt opslaan. Ter informatie:   raadpleeg de documentatie van Workbench gebruiken.
    * **Designer**: U kunt Designer openen vanuit Workbench. Zie Aan de slag in Designer Help voor meer informatie.
    * **Workbench-plug-in**: Volg de instructies in &quot;3.3 De functie Workbench Eclipse installeren&quot; op pagina 6.
-   * **AEM Forms SDK**: Zie <a href="http://www.adobe.com/go/learn_lc_programming_10">Programmeren met AEM Forms</a>voor meer informatie over het gebruik van de SDK.
+   * **AEM Forms SDK**: Zie  <a href="http://www.adobe.com/go/learn_lc_programming_10">Programmeren met AEM Forms</a> voor meer informatie over het gebruik van de SDK.
 
-## Processen upgraden {#upgrading-processes}
+## Processen {#upgrading-processes} bijwerken
 
 AEM Forms Update 1 en LiveCycle ES2 processen kunnen aan de toepassingen van AEM Forms worden bevorderd gebruikend de Tovenaar van de Verbetering. Zie Informatie over verouderde artefacten bijwerken in Workbench Help voor meer informatie.
 
-### De functie Workbench Eclipse installeren {#installing-workbench-eclipse-feature}
+### De functie Workbench Eclipse {#installing-workbench-eclipse-feature} installeren
 
 U kunt desgewenst de functie Workbench toevoegen aan Eclipse. U kunt Workbench toevoegen nadat u Workbench hebt geïnstalleerd. Voor JBoss bevat de volgende locatie bijvoorbeeld het bestand:
 
-* Workbench_DVD/additional/eclipseDownload en installeer Eclipse 3.6 vanaf <a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>.
+* Workbench_DVD/additioneel/ovaal
+Download en installeer Eclipse 3.6 vanaf <a href="https://www.eclipse.org/downloads/">www.eclipse.org/downloads</a>.
 
-### Eclipse-updatefunctie configureren voor Workbench {#configuring-eclipse-update-feature-for-workbench}
+### De Eclipse-updatefunctie configureren voor Workbench {#configuring-eclipse-update-feature-for-workbench}
 
 Workbench ondersteunt de updatefunctie om ervoor te zorgen dat u de meest bijgewerkte versie van Eclipse gebruikt. Nochtans, moet u ervoor zorgen dat bepaalde extra modules bij elke download worden omvat:
 
@@ -238,11 +239,11 @@ Workbench ondersteunt de updatefunctie om ervoor te zorgen dat u de meest bijgew
    <td><p>Eclipse 3.6.x</p> </td> 
    <td><p>
 
-* Graphical Editing Framework GEF [org.eclipse.gef.feature.group]: Dit bevindt zich in [org.eclipse.gmf.sdk.feature.group van het &#39;Graphical Modeling Framework SDK&#39;]
+* Grafisch bewerkingsframework GEF [org.eclipse.gef.feature.group]: Dit staat in &quot;Graphical Modeling Framework SDK&quot; [org.eclipse.gmf.sdk.feature.group]
 
-* WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: Dit bevindt zich in [org.eclipse.wst.xml_ui.feature.feature.group]
+* WST XML Core [org.eclipse.wst.xml_core.feature.feature.group]: Dit bevindt zich in de [org.eclipse.wst.xml_ui.feature.feature.group]
 
-* Plug-in &#39;org.apache.commons.lang_2.3.0&#39; [n.v.t].: Dit bevindt zich in de &#39;Mijn (Vereiste) Lijst van de Taak&#39; [org.eclipse.mylyn_feature.feature.group]
+* Plug-in &#39;org.apache.commons.lang_2.3.0&#39; [n/a]: Dit staat in de &quot;Mijn (Vereiste) Lijst van de Taak&quot; [org.eclipse.mylyn_feature.feature.group]
 
    </p> </td> 
   </tbody>
@@ -260,9 +261,9 @@ Workbench ondersteunt de updatefunctie om ervoor te zorgen dat u de meest bijgew
 
    >[!NOTE]
    >
-   >Met de Adobe AEM Forms Discovery-plug-in voor Flash Builder kunt u snel Adobe Flex- en AIR-toepassingen maken die een service aanroepen die deel uitmaakt van AEM Forms via de afsluitende eindpunten. Informatie over het installeren en bijwerken van de plug-in is beschikbaar op de website Adobe op de website **Link Required**.
+   >Met de Adobe AEM Forms Discovery-plug-in voor Flash Builder kunt u snel Adobe Flex- en AIR-toepassingen maken die een service aanroepen die deel uitmaakt van AEM Forms via de afsluitende eindpunten. Informatie over het installeren en bijwerken van de insteekmodule is beschikbaar op de website Adobe op **Vereiste koppeling**.
 
-### Configureren en aanmelden op de server {#configuring-and-logging-server}
+### {#configuring-and-logging-server} configureren en aanmelden bij server
 
 Als u Workbench wilt gebruiken, moet u een AEM Forms-exemplaar uitvoeren, meestal op een aparte computer. U moet een gebruikersnaam en wachtwoord hebben om u aan te melden bij AEM Forms, en informatie over de locatie van de server.
 
@@ -280,7 +281,7 @@ Als u Workbench via HTTPS wilt verbinden met een AEM Forms-server, moet u ervoor
 
 >[!NOTE]
 >
->[Workbench_HOME] staat voor de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
+>[Workbench_] HOME vertegenwoordigt de map waarin u Workbench hebt geïnstalleerd. De standaardlocatie is C:\Program Files (x86)\Adobe Experience Manager forms Workbench.
 
 Zorg ervoor dat u verbinding maakt met HTTPS door de naam te gebruiken die in het certificaat is opgegeven. Deze naam is doorgaans de volledig gekwalificeerde hostnaam.
 
@@ -300,7 +301,7 @@ Waar:
    * certname is het certificaat dat u hebt geselecteerd in stap 1.
    * Dit is bijvoorbeeld de alias die u kiest voor het certificaat. Deze waarde kan worden gewijzigd
 
-1. Typ Ja als u wordt gevraagd het certificaat te vertrouwen en druk op Enter. Het hulpprogramma gaat verder met het importeren van het controlebestand naar de map [Workbench_HOME]/workbench/jre/lib/security.
+1. Typ Ja als u wordt gevraagd het certificaat te vertrouwen en druk op Enter. Het keytool gaat door met het importeren van het cacerts-bestand in de map [Workbench_HOME]/workbench/jre/lib/security.
 
 1. Sluit en herstart Workbench om wijzigingen toe te passen.
 
@@ -339,18 +340,18 @@ De volgende beste praktijken zullen ervoor zorgen dat het geheime voorgeheugen n
    * Strip UUID of ga zelfde UUID in alle dynamisch geproduceerde malplaatjes over.
    * Genereer het document op basis van sjabloonbytes of op basis van dezelfde bestandsnaam op de schijf.
 
-### Workbench verwijderen {#uninstalling-workbench}
+### Workbench {#uninstalling-workbench} verwijderen
 
 Gebruik de functie Software in het Configuratiescherm om het verwijderprogramma te starten. De Workbench- en Designer-toepassingen hebben aparte verwijderingsprogramma&#39;s.
 
-## AEM Forms XDC Editor configureren {#configuring-aem-forms-xdc-editor}
+## AEM Forms XDC Editor {#configuring-aem-forms-xdc-editor} configureren
 
 Met behulp van de XDC Editor kunnen netwerkprinterbeheerders XDC-bestanden (XML Forms Architecture Device Configuration) maken en wijzigen. XDC-bestanden beschrijven de mogelijkheden van printers, zoals de printertaal of de correlatie tussen papierformaat en ladelocatie.
 
 Voordat uw beheerder van de netwerkprinter de XDC Editor gebruikt, verplaatst u de voorbeeld-XDC-bestanden en raadpleegt u Apparaatprofielen maken met de XDC Editor.
 
 **De voorbeeld-XDC-bestanden** verkrijgen:
-1. Zoek op de AEM Forms-server de XDC-map in de [AEM Forms-hoofdmap]\sdk\samples\Output\IVS.
+1. Zoek op de AEM Forms-server de XDC-map in [AEM Forms-hoofdmap]\sdk\samples\Output\IVS.
 1. Kopieer de inhoud van deze map naar een map die toegankelijk is via het Workbench- of Eclipse-systeem.
 
 **Voor de XDC Editor Help**:
