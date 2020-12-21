@@ -180,7 +180,7 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
    De weergave aanpassen met de linkermuisknop. De achtergrond- en modelbelichting worden aangepast aan de nieuwe selectie in het werkgebied.
 
-   ![chlimage_1-376](assets/chlimage_1-376.png)
+   ![chlimage_1-375](assets/chlimage_1-376.png)
 
 ## Ondersteuning voor Adobe Dimension-elementen configureren {#configuring-support-for-adobe-dimension-assets}
 
