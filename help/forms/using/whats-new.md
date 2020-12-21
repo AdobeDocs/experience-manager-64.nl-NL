@@ -23,7 +23,7 @@ Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms.
 
 AEM Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van aangepaste formulieren en interactieve communicatie verder stroomlijnen.
 
-Lees verder voor een snelle inleiding op nieuwe functies en verbeteringen. Raadpleeg de documentatie voor bronnen die informatie bieden. Zie ook AEM 6.4 Opmerkingen bij de [release](/help/release-notes/forms.md)van Forms. Voor volledige AEM 6.4 Forms-documentatie gaat u naar [AEM 6.4 Forms Guide](/help/forms/home.md).
+Lees verder voor een snelle inleiding op nieuwe functies en verbeteringen. Raadpleeg de documentatie voor bronnen die informatie bieden. Zie ook AEM 6.4 Forms [releaseopmerkingen](/help/release-notes/forms.md). Voor volledige AEM 6.4 Forms-documentatie gaat u naar [AEM 6.4 Forms Guide](/help/forms/home.md).
 
 ## Interactieve communicatie {#interactive-communications}
 
@@ -46,7 +46,7 @@ De interactieve mededeling is het gebrek en geadviseerde benadering om klantenme
 Met interactieve communicatie kunt u afdrukken- en webdocumenten vanuit één documenteditor maken en bewerken. Door dezelfde documentfragmenten te gebruiken om uitvoeringen van beide kanalen te maken, kunt u dubbel werk voorkomen.
 ![printweb_2](assets/printweb_2.png)
 
-Voor meer informatie, zie [Interactieve Communicatie Overzicht](/help/forms/using/interactive-communications-overview.md).
+Voor meer informatie, zie [Interactief Communicatie Overzicht](/help/forms/using/interactive-communications-overview.md).
 
 ### WYSIWYG Document Editor {#wysiwyg-document-editor}
 
@@ -62,37 +62,37 @@ Voor meer informatie, zie [Inleiding aan creatie Interactieve Communicatie](/hel
 
 Auteurs kunnen automatisch webdocumentinhoud genereren van gedrukte documenten naar auteur, afdrukvoorbeeld en zowel afdruk- als webdocumenten in dezelfde editor bewerken. Interactieve auteurs van communicatie kunnen deze eenmaal maken en publiceren naar alle kanalen. Interactieve auteurs van communicatie kunnen dezelfde documentfragmenten in de afdruk en het webkanaal gebruiken om dubbel werk te voorkomen.
 
-Zie Kanaal en webkanaal [](/help/forms/using/web-channel-print-channel.md)afdrukken voor meer informatie.
+Zie [Kanaal en webkanaal afdrukken](/help/forms/using/web-channel-print-channel.md) voor meer informatie.
 
-### Thema&#39;s gebruiken om webkanalen voor interactieve communicatie op te maken {#use-themes-to-style-web-channel-of-interactive-communication}
+### Thema&#39;s gebruiken om webkanalen voor interactieve communicatie {#use-themes-to-style-web-channel-of-interactive-communication} op te maken
 
 Interactieve communicatie ondersteunt thema&#39;s. U kunt thema&#39;s maken en deze toepassen op uw interactieve communicatie. Een thema bevat opmaakgegevens voor componenten en deelvensters. U kunt een thema op verschillende interactieve mededelingen opnieuw gebruiken om hen gemeenschappelijke en verenigbare verschijning en branding te geven.
 
 AEM Forms bevat een thema uit het vak voor interactieve communicatie. Met behulp van een thema kunt u ook aanpassen hoe een interactieve communicatie er op een apparaat uitziet.
 
-Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md)voor meer informatie.
+Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) voor meer informatie.
 
-### Interface van Enhanced Agent {#enhanced-agent-interface}
+### Verbeterde agentinterface {#enhanced-agent-interface}
 
 De gebruikersinterface van de Agent steunt nu druk en Webvoorproef van de interactieve mededeling. Vanuit dezelfde gebruikersinterface van de Agent kunt u kiezen of u het afdrukkanaal wilt bewerken en een voorvertoning wilt weergeven van het webkanaal van uw interactieve multikanaalcommunicatie. De gebieden, de variabelen, de elementen FDM, en de documentfragmenten in het drukkanaal kunnen worden gevormd om door de agent in het gebruikersinterface van de Agent worden gewijzigd. Met ondersteuning voor formuliergegevensmodellen kunt u voorvertoningen genereren met vooraf ingevulde voorbeeldgegevens.
 
-Voor meer informatie, zie [Voorbereiden en Interactieve Communicatie gebruikend de Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
+Voor meer informatie, zie [Interactieve Mededeling voorbereiden en verzenden gebruikend de Agent UI](/help/forms/using/prepare-send-interactive-communication.md).
 
-### Informatie in grafieken presenteren {#present-information-in-charts}
+### Informatie in grafieken {#present-information-in-charts} presenteren
 
 Interactieve communicatie ondersteunt webgrafieken en het afdrukkanaal voor betere communicatie. Met diagrammen zoals taart, donut, staaf en kolom kunt u grote hoeveelheden informatie comprimeren en visueel presenteren voor eenvoudige interpretatie en analyse.
 
-![diagram-2](assets/chart-2.png) - ![diagram](assets/chart.png)
+![diagram-2](assets/chart-2.png) ![grafiek](assets/chart.png)
 
-Voor meer informatie, zie het [Gebruiken van grafieken in Interactieve Mededelingen](/help/forms/using/chart-component-interactive-communications.md).
+Voor meer informatie, zie [Het gebruiken van grafieken in Interactieve Mededelingen](/help/forms/using/chart-component-interactive-communications.md).
 
-### Buiten-de-box gegevensschakelaars aan vooraf ingevulde documenten {#out-of-the-box-data-connectors-to-prefill-documents}
+### Out-of-the-box gegevensconnectors to prefill documents {#out-of-the-box-data-connectors-to-prefill-documents}
 
 De interactieve mededeling verstrekt gegevensintegratie met bedrijfshulpmiddelen om met veelvoudige bedrijfssystemen met inbegrip van de Systemen van CRM te verbinden en gegevens in documenten te personaliseren.
 
 ![fdm_ad](assets/fdm_ad.png)
 
-Zie Formuliergegevensmodel [](/help/forms/using/using-form-data-model.md)gebruiken voor meer informatie.
+Zie [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md) voor meer informatie.
 
 ### Verbeterde fragmenteditor van document {#enhanced-document-fragment-editor}
 
@@ -108,7 +108,7 @@ Meer informatie:
 * [Teksten in interactieve communicatie](/help/forms/using/texts-interactive-communications.md)
 * [Voorwaarden voor interactieve communicatie](/help/forms/using/conditions-interactive-communications.md)
 
-### Compatibiliteitspakket voor bestaande activa {#compatibility-package-for-existing-assets}
+### Compatibiliteitspakket voor bestaande elementen {#compatibility-package-for-existing-assets}
 
 Standaard worden lettermiddelen uit vorige versies van AEM Forms niet ondersteund in deze release. Als u de letters van AEM 6.3 Forms en AEM 6.2 Forms wilt blijven gebruiken, moet u het compatibiliteitspakket installeren.
 
@@ -116,7 +116,7 @@ Standaard worden lettermiddelen uit vorige versies van AEM Forms niet ondersteun
 
 ![](do-not-localize/data-integeration-1.png)
 
-[Met AEM Forms-gegevensintegratie](/help/forms/using/data-integration.md) kunt u verschillende gegevensbronnen configureren. zoals databases, RESTful- of SOAP-webdiensten, en OData-diensten; om een formuliergegevensmodel te maken dat u kunt gebruiken voor het binden van gegevens, het vooraf invullen en aanroepen van services in adaptieve formulieren en documenten.
+[Met AEM Forms-](/help/forms/using/data-integration.md) gegevensintegratie kunt u verschillende gegevensbronnen configureren. zoals databases, RESTful- of SOAP-webdiensten, en OData-diensten; om een formuliergegevensmodel te maken dat u kunt gebruiken voor het binden van gegevens, het vooraf invullen en aanroepen van services in adaptieve formulieren en documenten.
 
 Deze release bevat verschillende nieuwe functies en verbeteringen voor gegevensintegratie.
 
@@ -126,15 +126,15 @@ Zakelijke gebruikers en auteurs van formulieren kunnen nu een formuliergegevensm
 
 Op dezelfde manier kunt u entiteiten en onderliggende eigenschappen maken in een bestaand formuliergegevensmodel en deze later binden aan corresponderende entiteiten en eigenschappen in een gegevensbron.
 
-Zie Formuliergegevensmodel [](/help/forms/using/create-form-data-models.md)maken voor meer informatie.
+Zie [Formuliergegevensmodel maken](/help/forms/using/create-form-data-models.md) voor meer informatie.
 
-### Berekende eigenschappen maken {#create-computed-properties}
+### Berekende eigenschappen {#create-computed-properties} maken
 
 Forms-auteurs en -ontwikkelaars kunnen berekende eigenschappen maken in het formuliergegevensmodel. Zij laten u toe om een waarde voor het bezit te berekenen door regels of logica op gegevens te creëren beschikbaar in gevormde gegevensbronnen. Een regel is een expressie die wordt geëvalueerd wanneer de gegevens in het formuliergegevensmodel worden geladen of wanneer de waarden van de eigenschappen in de expressie veranderen. Bijvoorbeeld, berekent een berekende eigenschap met de naam Installaties het maandelijkse bedrag dat voor een lening moet worden betaald op basis van de rentevoet in de gegevensbron en het bedrag en de looptijd van de lening die de gebruiker in het formulier heeft opgegeven.
 
 Een berekende eigenschap bevindt zich lokaal in een formuliergegevensmodel en bestaat niet in een gegevensbron. U kunt berekende eigenschappen gebruiken in adaptieve formulieren en interactieve communicatie.
 
-Zie [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md)voor meer informatie.
+Zie [Werken met formuliergegevensmodel](/help/forms/using/work-with-form-data-model.md) voor meer informatie.
 
 ### Formulieren en documenten voorvertonen met voorbeeldgegevens {#preview-forms-and-documents-with-sample-data}
 
@@ -142,21 +142,21 @@ Met het formuliergegevensmodel kunt u voorbeeldgegevens genereren voor eigenscha
 
 De voorbeeldgegevens zijn een set willekeurige waarden die telkens worden gewijzigd wanneer u deze genereert. U kunt echter wel de voorbeeldgegevens bewerken en opslaan die blijven bestaan, zelfs als u de gegevens opnieuw genereert. Als u bijvoorbeeld de voorbeeldgegevens bewerkt en opslaat voor de eigenschappen Voornaam en Achternaam en later een andere eigenschap of entiteit toevoegt aan het gegevensmodel van het formulier en de voorbeeldgegevens opnieuw genereert, geven de eigenschappen Voornaam en Achternaam de opgeslagen waarden weer terwijl de waarden voor andere eigenschappen opnieuw worden gegenereerd.
 
-Zie Formuliergegevensmodel [](/help/forms/using/using-form-data-model.md)gebruiken voor meer informatie.
+Zie [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md) voor meer informatie.
 
 ### Gegevensbrondefinities vernieuwen {#refresh-data-source-definitions}
 
-Een update in gegevensbronentiteiten of -eigenschappen wordt niet automatisch weerspiegeld in gekoppelde formuliergegevensmodellen. De redacteur van het gegevensmodel van de vorm nu eigenschappen ![](assets/refresh_forms_di.png) refresh_forms_di (verfrist de Definities van de Gegevensbron) die het servergeheime voorgeheugen ongeldig maakt en het bijgewerkte schema van de gegevensbron terugkrijgt om in het model van vormgegevens onmiddellijk na te denken.
+Een update in gegevensbronentiteiten of -eigenschappen wordt niet automatisch weerspiegeld in gekoppelde formuliergegevensmodellen. De redacteur van het gegevensmodel van de vorm nu eigenschappen ![refresh_forms_di](assets/refresh_forms_di.png) (verfrissen de Definities van de Gegevensbron) die het servergeheime voorgeheugen ongeldig maakt en het bijgewerkte schema van de gegevensbron terugkrijgt om in het model van vormgegevens onmiddellijk na te denken.
 
 ### Gegevensbronnen configureren met de Touch-gebruikersinterface {#configure-data-sources-using-touch-user-interface}
 
-Met deze release is de configuratie van de cloudservices voor gegevensbronnen beschikbaar in de Touch-gebruikersinterface. De locatie voor het configureren van cloudservices is veranderd in **[!UICONTROL Tools > Cloud Services > Data Sources]**. See [Configure data sources](/help/forms/using/configure-data-sources.md).
+Met deze release is de configuratie van de cloudservices voor gegevensbronnen beschikbaar in de Touch-gebruikersinterface. Ook is de locatie voor het configureren van cloudservices gewijzigd in **[!UICONTROL Tools > Cloud Services > Data Sources]**. Zie [Gegevensbronnen configureren](/help/forms/using/configure-data-sources.md).
 
 ## Adaptieve Forms {#adaptive-forms}
 
 ![vereenvoudiging-van-authoring-forms-and-documents_hero-image_2](assets/simplification-of-authoring-forms-and-documents_hero-image_2.png)
 
-### De prestaties van adaptieve formulieren verbeteren met verbeterd en lui laden {#improve-performance-of-adaptive-forms-with-enhanced-lazy-loading}
+### Prestaties verbeteren van adaptieve formulieren met verbeterde lazy load {#improve-performance-of-adaptive-forms-with-enhanced-lazy-loading}
 
 De lazy laadfunctie in adaptieve formulieren stelt de initialisatie van formulierfragmenten uit totdat deze nodig zijn. Hiermee verbetert u de prestaties van grote formulieren door de tijd die nodig is om een formulier te genereren tot een minimum te beperken. Dit leidt tot een betere gebruikerservaring.
 
@@ -170,7 +170,7 @@ Deze release bevat verschillende verbeteringen voor de lazy-laadfunctie:
 
 ![aem-forms-workflow-on-osgi-](assets/aem-forms-workflow-on-osgi-.png)
 
-Met Forms-Centric AEM Workflows kunt u snel workflows voor verschillende taken op de OSGi-stapel maken en implementeren. U hoeft niet langer de op de JEE-stack beschikbare mogelijkheid voor Process Management te installeren, de implementatie te vereenvoudigen en de kosten van toepassingsservers en -infrastructuren te elimineren. Voor meer informatie, zie [Forms-centric werkschema&#39;s op OSGi](/help/forms/using/aem-forms-workflow.md).
+Met Forms-Centric AEM Workflows kunt u snel workflows voor verschillende taken op de OSGi-stapel maken en implementeren. U hoeft niet langer de op de JEE-stack beschikbare mogelijkheid voor Process Management te installeren, de implementatie te vereenvoudigen en de kosten van toepassingsservers en -infrastructuren te elimineren. Zie [Forms-centric workflows op OSGi](/help/forms/using/aem-forms-workflow.md) voor meer informatie.
 
 Hier volgen de verbeteringen in Forms-Centric AEM Workflows:・
 
@@ -178,11 +178,11 @@ Hier volgen de verbeteringen in Forms-Centric AEM Workflows:・
 * Workflowstap voor het verzenden van e-mails. U kunt de stap E-mail bijvoorbeeld gebruiken om een document met een record te verzenden wanneer een werkstroom is voltooid.
 * Workflowstap voor het gebruik van formuliergegevensmodelservices in een workflowmodel. Deze stap staat u toe om de diensten van de gegevensintegratie aan te halen zonder enige douanecode te schrijven. Bijvoorbeeld, kunt u de dienst van de GET aanhalen om werknemersdetails uit een gegevensbestandarchieven te verkrijgen zonder enige douanecode te schrijven.
 
-## AEM Forms App {#aem-forms-app}
+## AEM Forms-toepassing {#aem-forms-app}
 
 ![aem-forms-app](assets/aem-forms-app.png)
 
-Met de AEM Forms-app kunnen veldwerkers hun mobiele apparaten synchroniseren met een AEM Forms-server en aan hun formulieren werken. De toepassing werkt naadloos wanneer het apparaat offline is door gegevens lokaal op het apparaat op te slaan en de gegevens met de server te synchroniseren wanneer het apparaat weer online is. Zie de [AEM Forms-app](/help/forms/using/aem-forms-app.md)voor meer informatie.
+Met de AEM Forms-app kunnen veldwerkers hun mobiele apparaten synchroniseren met een AEM Forms-server en aan hun formulieren werken. De toepassing werkt naadloos wanneer het apparaat offline is door gegevens lokaal op het apparaat op te slaan en de gegevens met de server te synchroniseren wanneer het apparaat weer online is. Zie [AEM Forms app](/help/forms/using/aem-forms-app.md) voor meer informatie.
 
 Hieronder vindt u de verbeteringen in de AEM Forms-app:
 
@@ -242,7 +242,7 @@ AEM Forms kan worden ingesteld met elke combinatie van ondersteunde besturingssy
      <li>Microsoft SQL Server 2016</li> 
      <li>MySQL 5.7.19 en hoger</li> 
      <li>IBM DB2 11.1</li> 
-     <li>Oracle-architectuur voor meerdere gebruikers</li> 
+     <li>Oracle Multihuurarchitectuur</li> 
     </ul> </td> 
    <td> 
     <ul> 
