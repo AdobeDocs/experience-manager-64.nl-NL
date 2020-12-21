@@ -24,13 +24,13 @@ Deze paragraaf bevat gemeenschappelijke zorgen en bekende problemen.
 
 ## Bekende problemen {#known-issues}
 
-### Terugzetfout verzender mislukt {#dispatcher-refetch-fails}
+### Terugzetfout verzending {#dispatcher-refetch-fails}
 
 Wanneer Dispatcher 4.1.5 wordt gebruikt met een nieuwere versie van Jetty, kan een terugzetbewerking resulteren in &#39;Kan geen reactie van de externe server ontvangen&#39; nadat wordt gewacht tot de aanvraag is verzonden.
 
 Dit probleem wordt opgelost door Dispatcher 4.1.6 of hoger te gebruiken.
 
-### Kan de Post van het Forum na Bevordering van CQ 5.4 niet openen {#cannot-access-forum-post-after-upgrading-from-cq}
+### Kan tot de Post van het Forum na Bevordering van CQ 5.4 {#cannot-access-forum-post-after-upgrading-from-cq} toegang hebben
 
 Als een forum op CQ 5.4 en geposte onderwerpen werd gecreeerd, en toen de plaats aan AEM 5.6.1 of later werd bevorderd, kan het proberen om de bestaande posten te bekijken in een fout op de pagina resulteren:
 
@@ -50,22 +50,22 @@ Het probleem is dat de indelingstekenreeks voor com.day.cq.commons.date.Relative
 
 Daarom moet elke code die de RelativeTimeFormat()-API gebruikt, worden gewijzigd
 
-* From: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
+* Van: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r a", resourceBundle);`
 * Naar: `final RelativeTimeFormat fmt = new RelativeTimeFormat("r", resourceBundle);`
 
 De fout is anders bij auteur en publiceren. Op auteur ontbreekt het stil en toont eenvoudig niet de forumonderwerpen. Bij publicatie wordt de fout op de pagina gegenereerd.
 
-Zie de [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) -API voor meer informatie.
+Zie [com.day.cq.commons.date.RelativeTimeFormat](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/date/RelativeTimeFormat.html) API voor meer informatie.
 
-## Algemene problemen {#common-concerns}
+## Algemene bezorgdheid {#common-concerns}
 
-### Waarschuwing bij logbestanden: Afgekeurde kleurenbalken {#warning-in-logs-handlebars-deprecated}
+### Waarschuwing bij logbestanden: Afgekeurde handgrepen {#warning-in-logs-handlebars-deprecated}
 
 Tijdens het opstarten (niet 1st - maar om het even welke daarna) kan de volgende waarschuwing in de logboeken worden gezien:
 
-* 11.04.2014 08:38:07.223 **WARN** []FelixStartLevelcom.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; is vervangen door &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
+* 11.04.2014 08:38:07.223 **WARN** [FelixStartLevel]com.github.jknack.handlebars.Handlebars Helper &#39;i18n&#39; is vervangen door &#39;com.adobe.cq.social.handlebars.I18nHelper@15bac645&#39;
 
-Deze waarschuwing kan veilig worden genegeerd aangezien jknack.handlebars.Handlebars, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage)wordt gebruikt, met zijn eigen i18n helpernut komt. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n-helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
+Deze waarschuwing kan veilig worden genegeerd aangezien jknack.handlebars.Handlebars, die door [SCF](scf.md#handlebarsjavascripttemplatinglanguage) wordt gebruikt, met zijn eigen i18n helpernut komt. Bij het opstarten wordt deze vervangen door een AEM specifieke [i18n helper](handlebars-helpers.md#i-n). Deze waarschuwing wordt gegenereerd door de bibliotheek van derden om te bevestigen dat een bestaande helper is genegeerd.
 
 ### Waarschuwing bij logbestanden: OakResourceListener processOsgiEventQueue {#warning-in-logs-oakresourcelistener-processosgieventqueue}
 
