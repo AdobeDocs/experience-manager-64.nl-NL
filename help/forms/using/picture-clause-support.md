@@ -56,11 +56,11 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
   </tr>
   <tr>
    <td>DD</td> 
-   <td>Zero-padded two digit (01-31) day of the month.<br /> </td> 
+   <td>Dag van de maand met 2 cijfers en een voorloopnul (01-31).<br /> </td> 
   </tr>
   <tr>
    <td>M</td> 
-   <td>1- or 2-digit (1-12) month of the year.<br /> </td> 
+   <td>Maand van het jaar met 1 of 2 cijfers (1-12).<br /> </td> 
   </tr>
   <tr>
    <td>MM</td> 
@@ -68,7 +68,7 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
   </tr>
   <tr>
    <td>MMM</td> 
-   <td>Verkorte naam van de maand van de huidige landinstelling<br /> </td> 
+   <td>Afkorting van de naam van de maand van de huidige landinstelling<br /> </td> 
   </tr>
   <tr>
    <td>MMMM</td> 
@@ -76,7 +76,7 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
   </tr>
   <tr>
    <td>EEE</td> 
-   <td>Verkorte weekdagnaam van de huidige landinstelling<br /> </td> 
+   <td>Afgekort op weekdagnaam van de huidige landinstelling<br /> </td> 
   </tr>
   <tr>
    <td>EEEE</td> 
@@ -97,7 +97,7 @@ Ondersteunde expressie voor Datumafbeeldingsvoorwaarde:
 
 HTML5-formulieren ondersteunen numerieke afbeeldingssymbolen. Er is echter een verschil in ondersteuning tussen PDF forms en HTML Forms.
 
-In **PDF forms** wordt een getal opgemaakt, ongeacht het aantal symbolen in de Fotocomponent
+In **PDF forms** wordt een getal opgemaakt ongeacht het aantal symbolen in de Fotocomponent
 
 In **HTML Forms** wordt een getal alleen opgemaakt als het getal cijfers bevat die kleiner zijn dan het aantal symbolen in de Fotocomponent.
 
@@ -124,7 +124,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
   </tr>
   <tr>
    <td>9</td> 
-   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor het cijfer nul als de invoergegevens leeg zijn of een ruimte op de corresponderende positie.<br /> </td> 
+   <td><strong>Uitvoeropmaak</strong>: één cijfer. Of voor het nul-cijfer als de inputgegevens of een ruimte in de overeenkomstige positie leeg zijn.<br /> </td> 
    <td>Eén cijfer</td> 
   </tr>
   <tr>
@@ -139,7 +139,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
   </tr>
   <tr>
    <td>E</td> 
-   <td><strong>Uitvoeropmaak</strong>: het exponentgedeelte van een drijvende-kommagetal bestaande uit het exponentiële symbool (E). gevolgd door een optioneel plus- of minteken. Wordt gevolgd door de exponentwaarde.<br /> </td> 
+   <td><strong>Uitvoeropmaak</strong>: het exponentgedeelte van een drijvende-kommagetal bestaande uit het exponentiële symbool (E). gevolgd door een optioneel plus- of minteken. Gevolgd door de exponentwaarde.<br /> </td> 
    <td>Hetzelfde als voor uitvoeropmaak</td> 
   </tr>
   <tr>
@@ -149,7 +149,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
   </tr>
   <tr>
    <td>S of s<br /> </td> 
-   <td>Uitvoeropmaak: een minteken als het getal negatief is. Anders ruimte.<br /> </td> 
+   <td>Uitvoeropmaak: een minteken als het getal negatief is. Anders spatie.<br /> </td> 
    <td>Min teken als het getal negatief is. plusteken als het getal positief is</td> 
   </tr>
   <tr>
@@ -200,7 +200,7 @@ Ondersteunde expressies voor de component Numeric Picture in **HTML Forms** zijn
  </tbody>
 </table>
 
-## Clausule tekstafbeelding {#text-picture-clause}
+## Tekstbeeldingsclausule {#text-picture-clause}
 
 HTML5-formulieren ondersteunen de volgende Text Picture-componentexpressies:
 
