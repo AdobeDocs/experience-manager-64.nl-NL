@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# Configuratie Microsoft Dynamics OData {#microsoft-dynamics-odata-configuration}
+# Microsoft Dynamics OData-configuratie {#microsoft-dynamics-odata-configuration}
 
 De diensten van de Dynamiek van Microsoft van de hefboomwerking, integreren, en werken met online en op-gebouw door het model van vormgegevens.
 
 ![gegevensintegratie](assets/data-integeration.png)
 
-De Dynamiek van Microsoft is een software van het Beheer van de Verhouding van de Klant (CRM) en van het Middel van de Onderneming van de Planning (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt. [AEM Forms Data Integration](/help/forms/using/data-integration.md) biedt een OData cloud service-configuratie om Forms te integreren met zowel de online server als de Microsoft Dynamics-server op locatie. Het laat u toe om vormgegevensmodel tot stand te brengen dat op de entiteiten, de attributen, en de diensten wordt gebaseerd die in de dienst van de Dynamiek van Microsoft worden bepaald. Met het gegevensmodel van het formulier kunt u adaptieve formulieren maken die interageren met de Microsoft Dynamics-server om werkstromen van bedrijven mogelijk te maken. Bijvoorbeeld:
+De Dynamiek van Microsoft is een software van het Beheer van de Verhouding van de Klant (CRM) en van het Middel van de Onderneming van de Planning (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt. [AEM Forms Data ](/help/forms/using/data-integration.md) Integration biedt een OData-cloudserviceconfiguratie om Forms te integreren met zowel de online server als de Microsoft Dynamics-server op locatie. Het laat u toe om vormgegevensmodel tot stand te brengen dat op de entiteiten, de attributen, en de diensten wordt gebaseerd die in de dienst van de Dynamiek van Microsoft worden bepaald. Met het gegevensmodel van het formulier kunt u adaptieve formulieren maken die interageren met de Microsoft Dynamics-server om werkstromen van bedrijven mogelijk te maken. Bijvoorbeeld:
 
 * Query uitvoeren op Microsoft Dynamics-server voor gegevens en aangepaste formulieren vooraf invullen
 * Gegevens naar Microsoft Dynamics schrijven bij het verzenden van aangepaste formulieren
@@ -35,21 +35,21 @@ Wanneer het pakket is geïnstalleerd, zijn de volgende entiteiten en services be
 * MS Dynamics OData Cloud Service (OData Service)
 * Formuliergegevensmodel met vooraf geconfigureerde entiteiten en services voor dynamiek van Microsoft.
 
-De Cloud Service OData en het model van vormgegevens met vooraf gevormde entiteiten en de diensten van de Dynamiek van Microsoft zijn beschikbaar op uw instantie van AEM Forms slechts als de looppaswijze voor de AEM instantie `samplecontent`(gebrek) wordt geplaatst. Voor meer informatie bij het vormen looppaswijzen voor een AEM instantie, zie [Wijzen](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html)van de Looppas.
+De Cloud Service OData en het model van vormgegevens met vooraf gevormde entiteiten en de diensten van de Dynamiek van Microsoft zijn beschikbaar op uw instantie van AEM Forms slechts als de looppaswijze voor de AEM instantie zoals `samplecontent` (gebrek) wordt geplaatst. Voor meer informatie bij het vormen looppaswijzen voor een AEM instantie, zie [Wijzen van de Looppas](https://helpx.adobe.com/in/experience-manager/6-4/sites-deploying/configure-runmodes.html).
 
 ## Vereisten {#prerequisites}
 
 Alvorens u begint opstelling en vormt de Dynamica van Microsoft, zorg ervoor dat u hebt:
 
-* Het [AEM 6.4 Forms add-on pakket is geïnstalleerd](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html)
+* [AEM 6.4 Forms add-on package](https://helpx.adobe.com//experience-manager/6-4/forms/using/installing-configuring-aem-forms-osgi.html) is geïnstalleerd
 * De gevormde Dynamica 365 van Microsoft online of installeerde een geval van één van de volgende versies van de Dynamica van Microsoft:
 
    * Microsoft Dynamics 365 op locatie
    * Microsoft Dynamics 2016 op locatie
 
-* [Registered the application for Microsoft Dynamics online service with Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Noteer de waarden voor de client-id (ook toepassings-id genoemd) en het clientgeheim voor de geregistreerde service. Deze waarden worden gebruikt terwijl het [vormen van de wolkendienst voor uw dienst](/help/forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service)van de Dynamiek van Microsoft.
+* [Registered the application for Microsoft Dynamics online service with Microsoft Azure Active Directory](https://docs.microsoft.com/en-us/dynamics365/customer-engagement/developer/walkthrough-register-dynamics-365-app-azure-active-directory). Noteer de waarden voor de client-id (ook toepassings-id genoemd) en het clientgeheim voor de geregistreerde service. Deze waarden worden gebruikt terwijl [het vormen van de wolkendienst voor uw dienst van de Dynamiek van Microsoft](/help/forms/using/ms-dynamics-odata-configuration.md#configure-cloud-service-for-your-microsoft-dynamics-service).
 
-## Reactie-URL instellen voor geregistreerde toepassing Microsoft Dynamics {#set-reply-url-for-registered-microsoft-dynamics-application}
+## Reactie-URL instellen voor geregistreerde Microsoft Dynamics-toepassing {#set-reply-url-for-registered-microsoft-dynamics-application}
 
 Ga als volgt te werk om Reactie URL voor geregistreerde toepassing van de Dynamiek van Microsoft te plaatsen:
 
@@ -57,7 +57,7 @@ Ga als volgt te werk om Reactie URL voor geregistreerde toepassing van de Dynami
 >
 >Gebruik deze procedure alleen tijdens de integratie van AEM Forms met de online Microsoft Dynamics-server.
 
-1. Ga naar Microsoft Azure Active Directory-account en voeg de volgende URL voor de configuratie van de cloudservice toe in **[!UICONTROL Reply URLs]** instellingen voor uw geregistreerde toepassing:
+1. Ga naar Microsoft Azure Active Directory-account en voeg de volgende URL voor de configuratie van de cloudservice toe in **[!UICONTROL Reply URLs]**-instellingen voor uw geregistreerde toepassing:
 
    `https://[server]:[port]/libs/fd/fdm/gui/components/admin/fdmcloudservice/createcloudconfigwizard/cloudservices.html`
 
@@ -65,7 +65,7 @@ Ga als volgt te werk om Reactie URL voor geregistreerde toepassing van de Dynami
 
 1. Sla de configuratie op.
 
-## Microsoft Dynamics voor IFD configureren {#configure-microsoft-dynamics-for-ifd}
+## Microsoft Dynamics for IFD {#configure-microsoft-dynamics-for-ifd} configureren
 
 De Dynamiek van Microsoft gebruikt op beweringen-gebaseerde authentificatie om toegang tot gegevens op de server van CRM van de Dynamica van Microsoft aan externe gebruikers te verlenen. Om dit toe te laten, doe het volgende om de Dynamica van Microsoft voor Internet-Onder ogen ziet plaatsing (IFD) te vormen en claimmontages te vormen.
 
@@ -73,7 +73,7 @@ De Dynamiek van Microsoft gebruikt op beweringen-gebaseerde authentificatie om t
 >
 >Gebruik deze procedure slechts terwijl het integreren van AEM Forms met de server van de Dynamiek van Microsoft op-gebouw.
 
-1. Vorm de Dynamica van Microsoft op-gebouw instantie voor IFD zoals die in IFD voor de Dynamica [van Microsoft wordt beschreven](https://technet.microsoft.com/en-us/library/dn609803.aspx)vormt.
+1. Vorm de Dynamica van Microsoft op-gebouw instantie voor IFD zoals die in [vorm IFD voor de Dynamica van Microsoft](https://technet.microsoft.com/en-us/library/dn609803.aspx) wordt beschreven.
 1. Stel de volgende bevelen in werking gebruikend Vensters PowerShell om claimmontages op IFD-Toegelaten Dynamiek van Microsoft te vormen:
 
    ```
@@ -83,7 +83,7 @@ De Dynamiek van Microsoft gebruikt op beweringen-gebaseerde authentificatie om t
     Set-CrmSetting -Setting $ClaimsSettings
    ```
 
-   Zie [Toepassingsregistratie voor CRM on-premisse (IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd) voor meer informatie.
+   Zie [Toepassingsregistratie voor CRM op-gebouw (IFD)](https://msdn.microsoft.com/sl-si/library/dn531010(v=crm.7).aspx#bkmk_ifd) voor meer informatie.
 
 ## OAuth-client configureren op AD FS-computer {#configure-oauth-client-on-ad-fs-machine}
 
@@ -114,20 +114,20 @@ Doe het volgende om een cliënt OAuth op de Actieve machine van de Diensten van 
 
    * `resource` is de organisatie URL van de Dynamiek van Microsoft.
 
-1. Microsoft Dynamics gebruikt HTTPS-protocol. Als u AD FS-eindpunten wilt aanroepen vanaf de Forms-server, installeert u het certificaat van de Microsoft Dynamics-site in de Java-certificaatopslag met de `keytool` opdracht op de computer waarop AEM Forms wordt uitgevoerd.
+1. Microsoft Dynamics gebruikt HTTPS-protocol. Als u AD FS-eindpunten wilt aanroepen vanaf de Forms-server, installeert u het certificaat van de Microsoft Dynamics-site in de Java-certificaatopslag met de opdracht `keytool` op de computer waarop AEM Forms wordt uitgevoerd.
 
-## De cloudservice voor uw Microsoft Dynamics configureren {#configure-cloud-service-for-your-microsoft-dynamics-service}
+## Cloudservice configureren voor uw Microsoft Dynamics-service {#configure-cloud-service-for-your-microsoft-dynamics-service}
 
-De configuratie van de Cloud Service van de  van de Dynamica van **MS (OData Service)** komt met standaard configuratie OData. Om het te vormen om met uw dienst van de Dynamiek van Microsoft te verbinden, doe het volgende.
+De **MS Dynamics OData Cloud Service (OData Service)** configuratie wordt geleverd met standaard OData configuratie. Om het te vormen om met uw dienst van de Dynamiek van Microsoft te verbinden, doe het volgende.
 
-1. Navigeer naar **[!UICONTROL Tools > Cloud Services > Data Sources]** en tik op de `global` configuratiemap.
-1. Selecteer **[!UICONTROL MS Dynamics OData Cloud Service (OData Service)]** configuratie en tik op **[!UICONTROL Properties]**. Het dialoogvenster voor de configuratie-eigenschap van de cloudservice wordt geopend.
+1. Navigeer naar **[!UICONTROL Tools > Cloud Services > Data Sources]** en tik op de configuratiemap `global`.
+1. Selecteer **[!UICONTROL MS Dynamics OData Cloud Service (OData Service)]** configuratie en tik **[!UICONTROL Properties]**. Het dialoogvenster voor de configuratie-eigenschap van de cloudservice wordt geopend.
 
-   Op het **[!UICONTROL Authentication Settings]** tabblad:
+   Op het tabblad **[!UICONTROL Authentication Settings]**:
 
-   1. Voer de waarde voor het **[!UICONTROL Service Root]** veld in. Ga naar de instantie van de Dynamiek en navigeer aan **[!UICONTROL Developer Resources]** om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld https://&lt;huurder-name>/api/data/v9.1/
-   1. Vervang de standaardwaarden in de **[!UICONTROL Client Id]** (ook wel **[!UICONTROL Application ID]**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, en **[!UICONTROL Resource]** gebieden met waarden van uw de dienstconfiguratie van de Dynamiek van Microsoft worden bedoeld. Het is verplicht de URL van de dynamische instantie in het **[!UICONTROL Resource]** veld op te geven om Microsoft Dynamics te configureren met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
-   1. Specificeer **[!UICONTROL openid]** op het **[!UICONTROL Authorization Scope]** gebied voor vergunningsproces op de Dynamica van Microsoft.
+   1. Voer de waarde in voor het veld **[!UICONTROL Service Root]**. Ga naar de instantie van de Dynamiek en navigeer aan **[!UICONTROL Developer Resources]** om de waarde voor het gebied van de Wortel van de Dienst te bekijken. Bijvoorbeeld https://&lt;huurder-name>/api/data/v9.1/
+   1. Vervang de standaardwaarden in **[!UICONTROL Client Id]** (ook genoemd als **[!UICONTROL Application ID]**), **[!UICONTROL Client Secret]**, **[!UICONTROL OAuth URL]**, **[!UICONTROL Refresh Token URL]**, **[!UICONTROL Access Token URL]**, en **[!UICONTROL Resource]** gebieden met waarden van uw de dienstconfiguratie van de Dynamiek van Microsoft. Het is verplicht de URL van de dynamische instantie op te geven in het veld **[!UICONTROL Resource]** om Microsoft Dynamics te configureren met een formuliergegevensmodel. Gebruik de URL van de hoofdmap van de service om de URL van de dynamische instantie af te leiden. Bijvoorbeeld [https://org.crm.dynamics.com](https://org.crm.dynamics.com/).
+   1. Geef **[!UICONTROL openid]** op in het veld **[!UICONTROL Authorization Scope]** voor het autorisatieproces in Microsoft Dynamics.
 
    ![dynamics_authentication_settings](assets/dynamics_authentication_settings.png)
 
@@ -138,13 +138,13 @@ De configuratie van de Cloud Service van de  van de Dynamica van **MS (OData Ser
 
 De de wolkendienst van de Cloud Service van de Dynamica van MS (OData Service) wordt gevormd en met uw dienst van de Dynamica verbonden.
 
-## Formuliergegevensmodel maken {#create-form-data-model}
+## Formuliergegevensmodel {#create-form-data-model} maken
 
-Wanneer u het AEM Forms-pakket installeert, wordt een formuliergegevensmodel,**Microsoft Dynamics FDM**, op uw AEM-exemplaar geïmplementeerd. Door gebrek, gebruikt het model van vormgegevens de dienst van de Dynamiek van Microsoft die in de Cloud Service van de Dynamiek van MS (OData Dienst) als zijn gegevensbron wordt gevormd.
+Wanneer u het pakket van AEM Forms installeert, wordt een model van vormgegevens, **de Dynamica FDM van Microsoft**, opgesteld op uw AEM instantie. Door gebrek, gebruikt het model van vormgegevens de dienst van de Dynamiek van Microsoft die in de Cloud Service van de Dynamiek van MS (OData Dienst) als zijn gegevensbron wordt gevormd.
 
 Bij het openen van het model van vormgegevens voor het eerst, verbindt het met de gevormde dienst van de Dynamiek van Microsoft en haalt entiteiten van uw instantie van de Dynamiek van Microsoft. De &quot;contact&quot;en &quot;lood&quot;entiteiten van de Dynamiek van Microsoft worden reeds toegevoegd in het model van vormgegevens.
 
-Ga naar **[!UICONTROL Forms > Data Integrations]** om het formuliergegevensmodel te bekijken. Selecteer **[!UICONTROL Microsoft Dynamics FDM]** en klik **[!UICONTROL Edit]** om het formuliergegevensmodel te openen in de bewerkingsmodus. U kunt het formuliergegevensmodel ook rechtstreeks openen via de volgende URL:
+Ga naar **[!UICONTROL Forms > Data Integrations]** om het formuliergegevensmodel te bekijken. Selecteer **[!UICONTROL Microsoft Dynamics FDM]** en klik **[!UICONTROL Edit]** om het model van vormgegevens in Edit wijze te openen. U kunt het formuliergegevensmodel ook rechtstreeks openen via de volgende URL:
 
 `https://[*server*]:[*port*]/aem/fdm/editor.html/content/dam/formsanddocuments-fdm/ms-dynamics-fdm`
 
@@ -158,4 +158,4 @@ Vervolgens kunt u een adaptief formulier maken op basis van het formuliergegeven
 
 Het wordt aanbevolen een kopie te maken van het formuliergegevensmodel dat bij het AEM Forms-pakket wordt geleverd en gegevensmodellen en -services naar wens te configureren. Zo weet u zeker dat toekomstige updates van het pakket het gegevensmodel van het formulier niet overschrijven.
 
-Voor meer informatie over het creëren van en het gebruiken van het model van vormgegevens in bedrijfswerkschema&#39;s, zie de Integratie [van](/help/forms/using/data-integration.md)Gegevens.
+Zie [Gegevensintegratie](/help/forms/using/data-integration.md) voor meer informatie over het maken en gebruiken van formuliergegevensmodellen in zakelijke workflows.
