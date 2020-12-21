@@ -34,5 +34,5 @@ Op de pagina&#39;s van de Werkruimte in beleidsconsole, kunt u de volgende taken
 
 >[!NOTE]
 >
->U moet de navigatiemethodes binnen de beleidsconsole gebruiken. Gebruik de knoppen Vorige, Volgende en Vernieuwen niet in de webbrowser. Het gebruik van deze knoppen kan problemen met het vastleggen van gegevens en het weergeven van gegevens veroorzaken.
+>U moet de navigatiemethodes binnen de beleidsconsole gebruiken. Gebruik de knoppen Vorige, Volgende en Vernieuwen niet in de webbrowser. Het gebruik van deze knoppen kan problemen met gegevensvastlegging en gegevensweergave veroorzaken.
 
