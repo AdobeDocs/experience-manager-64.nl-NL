@@ -26,15 +26,15 @@ De plaatsaanduidingstekst vertegenwoordigt een woord of korte woordgroep. Het is
 
 ![Datumcomponent met en zonder plaatsaanduidingstekst](assets/dat-picker-place-holder-text.png)
 
-**A.** De component van de datum met placeholder tekst **B.** Datumcomponent zonder plaatsaanduidingstekst
+**A.** Date-component met plaatsaanduidingstekst  **B.** Date-component zonder plaatsaanduidingstekst
 
 AEM Forms biedt ondersteuning voor plaatsaanduidingstekst voor de velden Wachtwoord, Datumkiezer, Numeriek vak en Tekstvak.\
 Plaatsaanduidingsteksten worden niet ondersteund voor de native HTML5-datumwidget. Een plaatsaanduidingstekst opgeven:
 
 1. Klik met de rechtermuisknop op een component die plaatsaanduidingstekst ondersteunt en klik op **Bewerken**. Het dialoogvenster Component bewerken wordt geopend.
 
-1. Open het tabblad **Titel en tekst** .
-1. Geef een woord of korte woordgroep op in het tekstvak **Plaatsaanduiding**. Click **OK**.
+1. Open het tabblad **Titel en tekst**.
+1. Geef een woord of korte woordgroep op in het tekstvak **Plaatsaanduiding**. Klik **OK**.
 
 >[!NOTE]
 >
