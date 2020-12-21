@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Het bedrijfslogo voor branding wijzigen {#changing-the-organization-logo-for-branding}
 
-Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u het logo wilt bijwerken, volgt u de [algemene stappen van de aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) van de AEM Forms-werkruimte en voert u de volgende stappen uit.
+Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u het logo wilt bijwerken, volgt u de algemene stappen van de aanpassing van de AEM Forms-werkruimte[ en voert u de volgende stappen uit.](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)
 
-1. Maak een logo en noem het bestand als `NewWorkspace.png`. Plaats het afbeeldingsbestand in de map /apps/ws/images met een WebDAV-client.
+1. Maak een logo en geef het bestand de naam `NewWorkspace.png`. Plaats het afbeeldingsbestand in de map /apps/ws/images met een WebDAV-client.
 
    >[!NOTE]
    >
@@ -30,7 +30,7 @@ Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u 
 
    >[!NOTE]
    >
-   >Ga voor meer informatie over WebDAV-toegang naar [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html).
+   >Zie [https://dev.day.com/docs/en/crx/current/how_to/webdav_access.html](https://docs.adobe.com/docs/en/crx/current/how_to/webdav_access.html) voor meer informatie over WebDAV-toegang.
 
 1. Verwijs naar de nieuwe logoafbeelding in stijlblad op /apps/ws/css/newStyle.css door volgende stijl toe te voegen.
 
