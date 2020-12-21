@@ -35,15 +35,15 @@ ARE 2D Barcode Volledige productie V6.1 P8 0002054
 
 De tekenreeks bevat de volgende elementen:
 
-**Certificaattype:** Beschrijft de AEM vormmodules die het certificaat activeert, en het niveau van activering, zoals ARE 2D Volledige Streepjescode. Zie de kolom Type in de tabel in de sectie Certificaatprofielen voor een lijst met beschikbare certificaattypen.
+**Certificaattype:** Beschrijft de AEM formuliermodules die het certificaat activeert en het activeringsniveau, zoals ARE 2D Barcode Full. Zie de kolom Type in de tabel in de sectie Certificaatprofielen voor een lijst met beschikbare certificaattypen.
 
-**Type implementatie:** Hiermee wordt het beoogde gebruik van het certificaat aangegeven, zoals Productie. De waarde kan Evaluatie of Productie zijn. Voor een lijst van plaatsingstypes verbonden aan elk certificaattype, zie de kolom van het type van Plaatsing in de lijst in de sectie van de Profielen van het Certificaat.
+**Implementatietype:** geeft het beoogde gebruik van het certificaat aan, zoals Productie. De waarde kan Evaluatie of Productie zijn. Voor een lijst van plaatsingstypes verbonden aan elk certificaattype, zie de kolom van het type van Plaatsing in de lijst in de sectie van de Profielen van het Certificaat.
 
-**Versie gebruiksrechten:** Beschrijft de versie van het algoritme van gebruiksrechten waarvoor het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat- of Acrobat Reader DC-extensies.
+**Versie van gebruiksrechten:** Beschrijft de versie van het algoritme van gebruiksrechten waarvoor het certificaat kan worden gebruikt, zoals V6.1. Deze versie betekent niet de versie van Acrobat- of Acrobat Reader DC-extensies.
 
 **Profielcode:** De profielcode is een korte beschrijving van volledige certificaateigenschappen, zoals bijvoorbeeld P8. Zie de kolom Profielcode in de tabel in de sectie Certificaatprofielen voor een lijst met profielcodes die aan elk bestandstype zijn gekoppeld.
 
-**Serienummer:** Aan elk door Adobe afgegeven certificaat wordt een serienummer toegekend, bijvoorbeeld 0002054. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
+**Serienummer:** Aan elk certificaat dat door Adobe wordt uitgegeven, wordt een serienummer toegewezen, bijvoorbeeld 0002054. Adobe Enterprise Support of een Adobe Enterprise-accountvertegenwoordiger kan dit serienummer gebruiken om het certificaat te traceren naar een specifieke productorder of naar een OEM-relatie.
 
 ## Certificaatprofielen {#certificate-profiles}
 
@@ -154,13 +154,13 @@ De certificaten van de Integratie van de partner worden uitgegeven aan Adobe bed
 
 Adobe De certificaten van het Intern Gebruik worden gebruikt binnen Adobe om softwareontwikkeling, integratie, prototyping en demonstratie te steunen. Deze certificaten zijn twee jaar geldig vanaf de datum van afgifte.
 
-Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig gedurende de maximale periode die is toegestaan door de certificeringsinstantie (CA), weergegeven als *Max* in de tabel Certificaatprofielen.
+Productiecertificaten worden uitgegeven aan klanten die Acrobat Reader DC-extensies hebben aangeschaft. Deze certificaten zijn geldig gedurende de maximumperiode die door de certificeringsinstantie (CA) is toegestaan, weergegeven als *Max* in de tabel Certificaatprofielen.
 
-## Gebruikersrechten voor Acrobat Reader DC-extensies {#acrobat-reader-dc-extensions-usage-rights}
+## Gebruiksrechten voor Acrobat Reader DC-extensies {#acrobat-reader-dc-extensions-usage-rights}
 
 Wanneer u het Acrobat Reader DC-extensiecertificaat in de Certificaat-viewer bekijkt, kunt u het item met gebruiksrechten selecteren op het tabblad Details (indien geconfigureerd) om een gedetailleerde lijst weer te geven van de Adobe Reader-gebruiksrechten die het certificaat kan inschakelen. De gebruiksrechten die op een bepaald document zijn ingeschakeld, kunnen een subset zijn van de gebruiksrechten die door het certificaat worden ingeschakeld.
 
-Als online opmerkingen vereist zijn in een omgeving zonder samenwerkingsverband, neemt u contact op met de Adobe Support voor meer informatie. Het bezit van de Wijze past het plaatsingstype aan en is of *productie* of *evaluatie*.
+Als online opmerkingen vereist zijn in een omgeving zonder samenwerkingsverband, neemt u contact op met de Adobe Support voor meer informatie. De eigenschap Mode komt overeen met het implementatietype en is *production* of *evaluation*.
 
 De toegestane gebruiksrechten voor Acrobat Reader DC-extensies bestaan uit een of meer specifieke elementen. Deze elementen worden in verschillende combinaties gebruikt om verschillende productfuncties met een licentie te verkrijgen.
 
