@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# System Information Service API&#39;s {#system-information-service-apis}
+# Service-API&#39;s voor systeeminformatie {#system-information-service-apis}
 
 De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te winnen. De volgende tabel bevat gedetailleerde informatie over de API&#39;s:
 
@@ -34,7 +34,7 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   <tr>
    <td><p>SystemInfo.properties</p></td> 
    <td><p>https://[server]:[poort]/rest/services/SystemInfo.properties"</p></td> 
-   <td><p>Deze API is een wrapper voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td> 
+   <td><p>Deze API is een omslag voor <a href="https://docs.oracle.com/javase/6/docs/api/java/lang/System.html#getProperties()">system.getProperties</a> Java API. De configuratie van de huidige werkomgeving wordt opgehaald. </p></td> 
   </tr> 
   <tr>
    <td><p>SystemInfo.envVar</p></td> 
