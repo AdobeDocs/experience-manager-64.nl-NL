@@ -26,7 +26,7 @@ Als markeerteken kunt u sjablonen opslaan en beheren in AEM Assets en één basi
 
 Elementsjablonen zijn meestal InDesign-bestanden, maar de ervaring met InDesign vormt geen belemmering voor het maken van stellaire artefacten. U hoeft de velden van uw InDesign-sjabloon niet toe te wijzen aan de productvelden die u anders nodig hebt bij het maken van catalogi. U kunt de sjablonen in de WYSIWYG-modus rechtstreeks in de webinterface bewerken. Als InDesign uw bewerkingswijzigingen echter wil verwerken, moet u AEM Assets eerst configureren voor integratie met de InDesign-server.
 
-De mogelijkheid om InDesign-sjablonen te bewerken vanuit de webinterface helpt u de samenwerking tussen Creative Suite- en Marketing-medewerkers te verbeteren en tegelijkertijd de tijd die nodig is om lokale promotieinitiatieven op de markt te brengen te verkorten.
+De mogelijkheid om InDesign-sjablonen te bewerken vanuit de webinterface helpt u de samenwerking tussen Creative Suite- en Marketing-medewerkers te bevorderen en tegelijkertijd de tijd die nodig is om lokale promotieinitiatieven op de markt te brengen te verkorten.
 
 U kunt het volgende doen met middelensjablonen:
 
