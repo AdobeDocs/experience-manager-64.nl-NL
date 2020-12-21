@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Registreren als gebruiker {#registering-as-a-user}
+# Registreren als een gebruiker {#registering-as-a-user}
 
 U kunt documenten gebruiken die met een beleid zijn beveiligd en die u van een gebruiker voor documentbeveiliging ontvangt, zelfs als u zich buiten de organisatie van de gebruiker bevindt. Als u een document wilt gebruiken dat met een beleid is beveiligd, moet u zich registreren bij documentbeveiliging. Als u niet eerder bent uitgenodigd om te registreren, start de documentbeveiliging het registratieproces wanneer deze gebeurtenissen zich voordoen:
 
@@ -45,7 +45,7 @@ Als u een uitgenodigde gebruiker bent en u ontvangt een e-mailregistratiebericht
 1. Typ uw naam, telefoonnummer, adres, organisatie en wachtwoord in de daarvoor bestemde vakken en typ uw wachtwoord nogmaals in het vak Wachtwoord bevestigen. Uw wachtwoord kan elke combinatie van acht tekens zijn.
 1. Klik op Opslaan. Er verschijnt een dankwoord waarin u wordt geïnformeerd om uw e-mail te controleren op een activeringsbericht. U moet nu uw account activeren om het registratieproces te voltooien.
 
-## Je uitgenodigde gebruikersaccount activeren {#activate-your-invited-user-account}
+## Uw uitgenodigde gebruikersaccount {#activate-your-invited-user-account} activeren
 
 Nadat u zich hebt geregistreerd, stuurt documentbeveiliging u een activeringse-mail. U moet uw account activeren met de URL in het bericht. Vervolgens kunt u zich aanmelden bij de documentbeveiliging om documenten te gebruiken die met een beleid zijn beveiligd en waartoe u toegang hebt. Afhankelijk van de eigenschappen die de beheerder voor externe gebruikers toelaat, kunt u toestemming hebben om beleid tot stand te brengen, beleid op documenten toe te passen, en andere externe gebruikers toe te voegen aan uw beleid.
 
@@ -57,7 +57,7 @@ Uw account blijft actief totdat de beheerder de account deactiveert of verwijder
 1. Typ in het vak Gebruikersnaam het e-mailadres dat u onder documentbeveiliging hebt geregistreerd. Dit e-mailadres is de standaardgebruikersnaam voor documentbeveiliging.
 1. Typ in het vak Wachtwoord het wachtwoord dat u hebt gemaakt toen u zich hebt geregistreerd en klik op Aanmelden.
 
-## Wachtwoord opnieuw instellen {#reset-your-password}
+## Uw wachtwoord {#reset-your-password} opnieuw instellen
 
 Als u uw wachtwoord vergeet, kan de beleidsbeheerder het voor u terugstellen. Als u een wachtwoord opnieuw instelt, wordt een e-mail gegenereerd waarin u wordt gevraagd u aan te melden met een tijdelijk wachtwoord. Vervolgens kunt u een nieuw wachtwoord maken.
 
