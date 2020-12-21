@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Referentiethema&#39;s {#reference-themes}
 
-[Met thema](/help/forms/using/themes.md) &#39;s kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. Naast het standaardthema, kunt u de volgende thema&#39;s krijgen door het [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) pakket te installeren:
+[Met ](/help/forms/using/themes.md) thema&#39;s kunt u uw formulieren opmaken zonder diepgaande kennis van CSS. Naast het standaardthema, kunt u de volgende thema&#39;s krijgen door het [AEM-FORMS-6.3-REFERENCE-THEMES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-THEMES) pakket te installeren:
 
 * Beryl
 * Exec
@@ -35,12 +35,13 @@ Elk thema bevat een unieke en elegante stijl waarmee u aanpasbare formulieren vo
 
 De thema&#39;s in dit pakket reageren snel en de stijl in deze thema&#39;s is gedefinieerd voor mobiele schermen en desktopschermen. De meeste moderne browsers op verschillende apparaten kunnen formulieren die met een van deze thema&#39;s zijn toegepast, zonder problemen weergeven.
 
-Voor meer informatie bij het installeren van het pakket, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
+Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het installeren van het pakket.
 
 ## Beryl {#beryl}
 
-Het Berylthema wordt gebruikt door [We.Gov-adaptieve vorm](/help/forms/using/gov-reference-site-walkthrough.md)en benadrukt het gebruik van achtergrondafbeeldingen, transparantie en grote, platte pictogrammen. In de onderstaande schermafbeelding kunt u zien hoe het Beryl-thema eruitziet en hoe het de opmaak van uw formulier kan verbeteren.
-![Berylthema](assets/beryl.png)[Klik om te vergroten](assets/beryl-1.png)
+Het Berylthema wordt gebruikt door het adaptieve formulier ](/help/forms/using/gov-reference-site-walkthrough.md) van [We.Gov en benadrukt het gebruik van achtergrondafbeeldingen, transparantie en grote, platte pictogrammen. In de onderstaande schermafbeelding kunt u zien hoe het Beryl-thema eruitziet en hoe het de opmaak van uw formulier kan verbeteren.
+![Beryl ](assets/beryl.png)
+[themeClick om te vergroten](assets/beryl-1.png)
 
 ## Exec {#exec}
 
