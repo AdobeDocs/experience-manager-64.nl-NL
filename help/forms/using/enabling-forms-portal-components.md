@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# portalcomponenten voor formulieren inschakelen {#enabling-forms-portal-components}
+# Formulierportonderdelen inschakelen {#enabling-forms-portal-components}
 
 De onderdelen van de portal Formulieren zijn niet beschikbaar voor gebruik. Voer de volgende stappen uit om de componenten weer te geven in de lijst met beschikbare componenten in AEM sidekick:
 
@@ -25,19 +25,19 @@ De onderdelen van de portal Formulieren zijn niet beschikbaar voor gebruik. Voer
 
 1. Voer de volgende stappen uit voor de pagina&#39;s die een statische sjabloon gebruiken:
 
-   1. Tik in de paginakoptekst op ![canvas-vervolgkeuzelijst](assets/canvas-drop-down.png) > **Ontwerpen** om de pagina in de ontwerpmodus te openen.
-   1. Tik op een component (met een blauwe rand) en tik vervolgens op ![veldniveau](assets/field-level.png) om het alineasysteem met de huidige component te selecteren.
+   1. Tik in de paginakoptekst op ![canvas-drop-down](assets/canvas-drop-down.png) > **Design** om de pagina in de ontwerpmodus te openen.
+   1. Tik op een component (met een blauwe rand) en tik op ![veldniveau](assets/field-level.png) om het alineasysteem met de huidige component te selecteren.
    1. Tik in het alineasysteem op ![settings_icon](assets/settings_icon.png) om het dialoogvenster Bewerken voor het alineasysteem te openen.
-   1. Schakel in de lijst met **[!UICONTROL Allowed Components]** selectievakjes in voor **[!UICONTROL Document Services]** en **[!UICONTROL Document Services Predicates]** componenten. Tik op **[!UICONTROL OK]**.
+   1. Schakel in de lijst met **[!UICONTROL Allowed Components]** selectievakjes in voor **[!UICONTROL Document Services]**- en **[!UICONTROL Document Services Predicates]**-componenten. Tik op **[!UICONTROL OK]**.
 
 1. Voer de volgende stappen uit voor de pagina&#39;s die een dynamische sjabloon gebruiken:
 
-   1. Tik in de paginakoptekst op ![eigenschappen](assets/properties.png) > Sjabloon **** bewerken om de sjabloon van de pagina te openen.
-   1. Tik op **Layout Container** en tik op ![FeedManagement](assets/FeedManagement.png). Schakel op het tabblad **Toegestane componenten** de opties **Documentservices en Documentservices voor** voorspelling in en tik op ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
+   1. Tik in de paginakoptekst op ![eigenschappen](assets/properties.png) > **Sjabloon bewerken** om de sjabloon van de pagina te openen.
+   1. Tik **Container voor lay-out** en tik ![FeedManagement](assets/FeedManagement.png). Schakel op het tabblad **Toegestane componenten** de opties **Documentservices en Voorspelden documentservices** in en tik op ![aem_6_3_forms_save](assets/aem_6_3_forms_save.png).
 
 >[!NOTE]
 >
->U kunt ook specifieke componenten van deze categorieën inschakelen door de componenten te selecteren. Zie [Een pagina](/help/forms/using/creating-form-portal-page.md) voor een formulierportal maken en een koppelingscomponent [insluiten op een pagina](/help/forms/using/embedding-link-component-page.md)voor meer informatie over de componenten en hun gebruik.
+>U kunt ook specifieke componenten van deze categorieën inschakelen door de componenten te selecteren. Zie [Een pagina voor een formulierportal maken](/help/forms/using/creating-form-portal-page.md) en [Koppelingscomponent insluiten in een pagina](/help/forms/using/embedding-link-component-page.md) voor meer informatie over de componenten en hun gebruik.
 
 De componentcategorieën Document Services en Document Services Predicates zijn nu beschikbaar in de componentbrowser. De componenten worden ingeschakeld voor alle pagina&#39;s die dezelfde sjabloon gebruiken.
 
