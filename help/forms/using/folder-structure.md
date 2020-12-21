@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# De mapstructuur {#understanding-the-folder-structure}
+# De mappenstructuur {#understanding-the-folder-structure}
 
 AEM Forms-werkruimtecomponenten zijn ontworpen op MVC-architectuur met behulp van backbone. Elke component heeft een bestand voor:
 
@@ -28,15 +28,15 @@ AEM Forms-werkruimtecomponenten zijn ontworpen op MVC-architectuur met behulp va
 
 De elementen voor alle componenten worden in de hieronder beschreven mapstructuur geplaatst. Als u toegang wilt tot de elementen, meldt u zich aan bij CRXDE Lite en bladert u naar `/libs/ws/js/runtime/`.
 
-**modellen** bevatten backbonemodellen.
+**** modelsBevat backbonemodellen.
 
-**weergaven** bevat backboneweergaven.
+**** viewsBevat backboneweergaven.
 
-**sjablonen** bevatten alleen de HTML-sjablonen voor de componenten.
+**** templatesBevat alleen de HTML-sjablonen voor de componenten.
 
-**De routes** bevatten universele routes. De omslag van malplaatjes binnen routes bevat de code van HTML en de verwijzingen naar de componenten.
+**** routesBevat universele routes. De omslag van malplaatjes binnen routes bevat de code van HTML en de verwijzingen naar de componenten.
 
-**De diensten** bevatten de dienstinterface om de server APIs van Adobe Experience Manager op REST eindpunt te roepen.
+**** servicesContains de dienstinterface om de server APIs van Adobe Experience Manager op REST eindpunt te roepen.
 
-**util** bevat generische nut bruikbaar door veelvoudige componenten.
+**** utilContains generische nut bruikbaar door veelvoudige componenten.
 
