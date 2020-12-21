@@ -35,17 +35,17 @@ Op de pagina Licentie wijzigen wordt informatie over uw licentie weergegeven:
 >
 >De vergunningsverandering is op alle opgestelde modules van toepassing. Voordat u het licentietype wijzigt, moet u de implementatie van modules die geen licentie hebben. Selecteer het licentietype Productie niet als de lijst met geïmplementeerde modules andere modules bevat dan de modules die u van Adobe hebt gekocht.
 
-## Het licentietype bijwerken {#update-the-license-type}
+## Het licentietype {#update-the-license-type} bijwerken
 
 1. Klik op Licentie verlenen in de beheerconsole.
 1. Lees de licentieovereenkomst voor eindgebruikers voor AEM formulieren, selecteer Ik accepteer als u akkoord gaat met de voorwaarden van de overeenkomst en klik op Volgende.
 1. Selecteer op de pagina Licentie wijzigen een licentietype:
 
-   * **EVAL:** Evaluatievergunning van 60 dagen
-   * **DEV:** Licentie voor permanente ontwikkeling
+   * **EVAL:** 60-daagse evaluatielicentie
+   * **DEV:** Perpetual Development License
    * **NFR:** tweejarige evaluatievergunning
-   * **IDEV:** 1 jaar abonnement op het Adobe Developer Program
-   * **Productie:** Perpetroleumvergunning
+   * **IDEV:** eenjarig abonnement op het Adobe Developer Program
+   * **Productie:** Perpetuele licentie
 
 1. Selecteer Ja, wijziging van licentie is geldig voor alle geïmplementeerde modules.
 1. Klik op Licentiewijziging bevestigen. Er wordt een bericht weergegeven met de mededeling dat de licentie is bijgewerkt.
