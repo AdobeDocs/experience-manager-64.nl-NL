@@ -23,10 +23,10 @@ ht-degree: 0%
 Als u de formulierworkflow effectief wilt beheren, moet u de volgende termen en de hiërarchie van de elementen begrijpen:
 
 * *Procescategorieën* ordenen processen in logische groepen.
-* *De processen* vertegenwoordigen de bedrijfsprocessen die worden geautomatiseerd. Voor elk geïmplementeerd bedrijfsproces moet ten minste één proces bestaan.
+* *De* processen vertegenwoordigen de bedrijfsprocessen die worden geautomatiseerd. Voor elk geïmplementeerd bedrijfsproces moet ten minste één proces bestaan.
 * Een *procesdiagram* is de visuele vertegenwoordiging van het bedrijfsproces dat wordt geautomatiseerd.
-* Een *procesinstantie* is een proces dat is gestart door een gebruiker (zoals het invullen en verzenden van een formulier) of een geautomatiseerde stap. Een proces kan meerdere keren voorkomen.
+* Een *procesinstantie* is een proces dat is geïnitieerd door een gebruiker (zoals het voltooien en verzenden van een formulier) of een geautomatiseerde stap. Een proces kan meerdere keren voorkomen.
 * *operation *is één stap van een procesdiagram, dat in Workbench door een pictogram in het procesdiagram wordt vertegenwoordigd.
 * Een *taak* is een actie die aan een gebruiker is toegewezen. Wanneer de taak in werking wordt gesteld en de verrichting wordt uitgevoerd, wijst de dienst van de Gebruiker een taak aan een gebruiker toe.
 
-Zie [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63)voor meer informatie over deze termen.
+Zie [Workbench Help](https://www.adobe.com/go/learn_aemforms_workbench_63) voor meer informatie over deze termen.
