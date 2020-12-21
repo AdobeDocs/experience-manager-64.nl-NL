@@ -26,18 +26,18 @@ AEM formulieren ondersteunen RSA- en DSA-referenties van maximaal 4096 bits in d
 
 U kunt elk gewenst aantal referenties importeren en exporteren. Als u een verlopen referentie wilt vervangen met dezelfde alias, verwijdert u de referentie en importeert u de nieuwe referentie met dezelfde alias.
 
-Zie Referenties [configureren voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions)voor informatie en instructies met betrekking tot Acrobat Reader DC-extensies.
+Zie [Referenties configureren voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions) voor informatie en instructies met betrekking tot Acrobat Reader DC-extensies.
 
-## Een referentie importeren {#import-a-credential}
+## Een referentie {#import-a-credential} importeren
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Klik op Importeren. Selecteer onder Type vertrouwde winkel een van de volgende opties:
 
-   * **Referentie voor documenthandtekening:** Een referentie die wordt gebruikt voor het uitgeven van een digitale handtekening op een document.
+   * **Document Signing Credential:** Een referentie die wordt gebruikt voor het uitgeven van een digitale handtekening op een document.
    * **Acrobat Reader DC extensions Credential:** Een digitaal certificaat dat specifiek is voor Acrobat Reader DC-extensies en waarmee Adobe Reader-gebruiksrechten kunnen worden geactiveerd in de geproduceerde PDF-documenten.
-   * **Standaard:** Geeft aan dat dit de standaardreferentie is voor gebruik met Acrobat Reader DC-extensies.
+   * **Standaard:** geeft aan dat dit de standaardreferentie is voor gebruik met Acrobat Reader DC-extensies.
 
-   Voor informatie over het verkrijgen van een referentie raadpleegt u [Voorbereiden op het installeren van AEM](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63).
+   Zie [Voorbereiden op installatie van AEM formulieren](https://www.adobe.com/go/learn_aemforms_prepareInstallsingle_63) voor informatie over het verkrijgen van referentie.
 
 1. Typ in het vak Alias een id voor de referentie. Deze id wordt gebruikt als de weergavenaam voor de referentie in Acrobat Reader DC-extensies en de service Handtekening. Deze alias wordt ook gebruikt om de referentie via programmacode te benaderen met de SDK voor AEM formulieren.
 
@@ -49,7 +49,7 @@ Zie Referenties [configureren voor gebruik met Acrobat Reader DC-extensies](/hel
 
    Als het foutbericht &quot;Kan referentie niet importeren vanwege een onjuiste bestandsindeling of een onjuist wachtwoord&quot; wordt weergegeven, controleert u of het wachtwoord geldig is.
 
-## Een referentie exporteren {#export-a-credential}
+## Een referentie {#export-a-credential} exporteren
 
 Referenties worden geëxporteerd als P12-bestanden in de PKCS#12-indeling.
 
@@ -58,7 +58,7 @@ Referenties worden geëxporteerd als P12-bestanden in de PKCS#12-indeling.
 1. Typ het wachtwoord in het vak Wachtwoord. Dit wachtwoord is nieuw en wordt gebruikt om de geëxporteerde referentie te coderen.
 1. Klik op Exporteren, volg de aanwijzingen om de referentie te exporteren en klik op OK.
 
-## Alias of vertrouwenswinkeltype van een referentie bewerken {#edit-a-credential-s-alias-or-trust-store-type}
+## Alias of vertrouwenswinkeltype van referenties bewerken {#edit-a-credential-s-alias-or-trust-store-type}
 
 Nadat een referentie is geïmporteerd, kunt u de naam van de alias en het type vertrouwde opslagruimte bewerken.
 
@@ -67,7 +67,7 @@ Nadat een referentie is geïmporteerd, kunt u de naam van de alias en het type v
 1. Klik op Referentie bijwerken.
 1. Bewerk de naam van de alias en het type vertrouwde winkel naar wens en klik op OK.
 
-## Een referentie verwijderen {#delete-a-credential}
+## Een referentie {#delete-a-credential} verwijderen
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Schakel de selectievakjes in waarin u de gegevens wilt verwijderen.
