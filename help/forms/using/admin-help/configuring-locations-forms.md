@@ -50,23 +50,23 @@ Als de Forms-webtoepassing en de clienttoepassing niet op dezelfde toepassingsse
 
 `https://<host name>:<port>/FormServer`
 
-Waar `host name`en `port` zijn de servernaam en het poortnummer van de server die als host fungeert voor de Forms-webtoepassing.
+Hierbij zijn `host name`en `port` de servernaam en het poortnummer van de server die als host fungeert voor de Forms-webtoepassing.
 
 De standaardwaarde is een lege tekenreeks.
 
-**Web Root URI:** De hoofdmap van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), opgegeven via de SDK van AEM formulieren, om een absolute URL samen te stellen voor toegang tot toepassingsspecifieke webinhoud.
+**Web Root URI:** De webhoofdmap van de toepassing. Deze waarde wordt gecombineerd met de parameter sTargetURL (wanneer sTargetURL als relatief wordt verstrekt), opgegeven via de SDK van AEM formulieren, om een absolute URL samen te stellen voor toegang tot toepassingsspecifieke webinhoud.
 
 De standaardwaarde is een lege tekenreeks.
 
-**URI van basisinhoud:** De URI of absolute locatie waaruit formulieren worden opgehaald. Deze waarde wordt gecombineerd met de sFormQuery-parameter, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
+**URI met hoofdmap van inhoud:** de URI of absolute locatie waaruit formulieren worden opgehaald. Deze waarde wordt gecombineerd met de sFormQuery-parameter, opgegeven via de API, om het absolute pad naar het opgehaalde formulier te maken. Deze waarde kan verwijzen naar een map of een weblocatie die toegankelijk is via HTTP.
 
 De standaardwaarde is een lege tekenreeks.
 
-**URI XCI-configuratie:** De relatieve of absolute locatie waarin het XCI-bestand dat voor rendering wordt gebruikt, wordt gevonden. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in het implementeerbare AEM formulieren EAR-bestand bevindt.
+**XCI-configuratie-URI:** de relatieve of absolute locatie waar het XCI-bestand dat voor rendering wordt gebruikt, zich bevindt. Voor een relatieve waarde wordt aangenomen dat het XCI-bestand zich in het implementeerbare AEM formulieren EAR-bestand bevindt.
 
 De standaardwaarde is `com/adobe/formServer/PA/pa.xci`.
 
-**URI lettertypetoewijzing:** De relatieve of absolute locatie van het fonttoewijzingsbestand. Voor een relatieve waarde wordt aangenomen dat dit bestand zich in het inzetbare AEM van het EAR-bestand bevindt.
+**Font Map URI:** de relatieve of absolute locatie van het fonttoewijzingsbestand. Voor een relatieve waarde wordt aangenomen dat dit bestand zich in het inzetbare AEM van het EAR-bestand bevindt.
 
 Het fonttoewijzingsbestand wordt gebruikt om aangepaste fonttoewijzingen te maken voor HTML-transformaties in formulieren. Hierdoor kunt u opgeven welk font wordt vervangen wanneer een font niet beschikbaar is op de computer van de client.
 
@@ -76,19 +76,19 @@ De volgende vermelding is een voorbeeld van een item in het fonttoewijzingsbesta
 
 `Arial=Arial,Helvetica,sans-serif`
 
-**PDF-zaadbestand:** Het oorspronkelijke PDF-bestand dat wordt gebruikt in een PDFForm-transformatie om de levering te optimaliseren. In het PDF-bestand met de zaadnaam wordt een aangepast PDF-bestand opgegeven (dat alleen XFA-stroom, afbeelding en fontbronnen bevat) dat wordt toegevoegd aan het formulierontwerp en de gegevens. Het formulier wordt gegenereerd door Acrobat 7 of hoger en is van toepassing op PDFForm-transformatie.
+**PDF-bestand met zaad:** het eerste PDF-bestand dat in een PDFForm-transformatie wordt gebruikt om de aflevering te optimaliseren. In het PDF-bestand met de zaadnaam wordt een aangepast PDF-bestand opgegeven (dat alleen XFA-stroom, afbeelding en fontbronnen bevat) dat wordt toegevoegd aan het formulierontwerp en de gegevens. Het formulier wordt gegenereerd door Acrobat 7 of hoger en is van toepassing op PDFForm-transformatie.
 
 De standaardwaarde is een lege tekenreeks.
 
-**Cachelocatie:** Hiermee geeft u de locatie van de Forms-schijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Kies een van de volgende opties:
+**Cachelocatie:** geeft de locatie van de Forms-schijfcache op. Wanneer u deze instelling wijzigt, worden alle bestaande cachegegevens van de huidige locatie opnieuw ingesteld en wordt een nieuwe cache gemaakt op de nieuwe locatie. Kies een van de volgende opties:
 
-**Standaardlocatie:** Dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
+**Standaardlocatie:** dit is de standaardselectie. Als deze optie is geselecteerd, wordt de cache gemaakt op een locatie die afhankelijk is van de toepassingsserver die u gebruikt:
 
 * **JBoss:** [JBoss Home]\server\[installatietype]\svcdata\FormServer\Cache
 * **WebLogic:** [WebLogic Home]\user_projects\domains\[domeinnaam aem-formulieren]\adobe\[naam formulierserver]\FormServer\Cache
 * **WebSphere:** [IBM Home]\WebSphere\AppServer\installedApps\adobe\server1\FormServer\Cache
 
-**LC Temp-map:** De cache wordt gemaakt in een submap van de tijdelijke map voor AEM formulieren, die wordt opgegeven in de beheerconsole onder Instellingen > Core System Settings > Configurations > Location of Temp Directory. De submap heeft de naam adobeform_[servername].
+**LC Temp Directory:** de cache wordt gemaakt in een submap van de tijdelijke map voor AEM formulieren, die wordt opgegeven in de beheerconsole onder Instellingen > Core System Settings > Configurations > Location of Temp Directory. De submap heeft de naam adobeform_[servernaam].
 
 >[!NOTE]
 >
