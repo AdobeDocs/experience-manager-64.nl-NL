@@ -34,31 +34,31 @@ De functie Forum biedt een gebied voor ingetekende sitebezoekers (leden van de c
 In deze sectie van de documentatie wordt beschreven
 
 * De forumfunctie toevoegen aan een AEM-site
-* Configuratie-instellingen voor de `Forum`component
+* De montages van de configuratie voor `Forum`component
 
 ## Een forum toevoegen aan een pagina {#adding-a-forum-to-a-page}
 
-Als u een `Forum` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Forum`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Forum`
 
 En sleep het naar zijn plaats op een pagina waar het forum zou moeten verschijnen.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-forum.md#essentials-for-client-side) worden opgenomen, ziet u de `Forum`component als volgt:
+Wanneer de [vereiste client-side bibliotheken](essentials-forum.md#essentials-for-client-side) worden opgenomen, wordt de `Forum`component als volgt weergegeven:
 
 ![chlimage_1-60](assets/chlimage_1-60.png)
 
-## Een forum configureren {#configuring-a-forum}
+## Een forum {#configuring-a-forum} configureren
 
-Selecteer de geplaatste `Forum` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Forum` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![chlimage_1-61](assets/chlimage_1-61.png) ![chlimage_1-62](assets/chlimage_1-62.png)
 
-### Het tabblad Instellingen {#settings-tab}
+### Tabblad Instellingen {#settings-tab}
 
-Geef onder het **[!UICONTROL Settings]** tabblad instellingen op voor onderwerpen en antwoorden:
+Geef onder het tabblad **[!UICONTROL Settings]** instellingen op voor onderwerpen en antwoorden:
 
 * **[!UICONTROL Topics Per Page]**
 Hiermee definieert u het aantal onderwerpen/posts dat per pagina wordt weergegeven. De standaardwaarde is 10.
@@ -67,28 +67,28 @@ Hiermee definieert u het aantal onderwerpen/posts dat per pagina wordt weergegev
 Als deze optie is ingeschakeld, moet het posten van onderwerpen en opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Closed]**
-Als deze optie ingeschakeld is, is het forum gesloten voor nieuwe onderwerpen en opmerkingen. De optie Standaard is uitgeschakeld.
+Als deze optie ingeschakeld is, wordt het forum afgesloten met nieuwe onderwerpen en opmerkingen. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Rich Text Editor]**
 Als deze optie is ingeschakeld, kunnen onderwerpen en opmerkingen worden ingevoerd met een markering. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Tagging]**
-Als deze optie is ingeschakeld, kunnen leden labels aan hun advertentie toevoegen (zie **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
+Als deze optie is ingeschakeld, kunnen leden labellabels aan hun advertentie toevoegen (zie  **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow File Uploads]**
 Als deze optie ingeschakeld is, staat u toe dat bestandsbijlagen worden toegevoegd aan het onderwerp of de opmerking. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Following]**
-Indien deze optie is ingeschakeld, dient u de volgende functie voor forumposten op te nemen, waardoor leden op de [hoogte kunnen worden gebracht](notifications.md) van nieuwe posten. De optie Standaard is uitgeschakeld.
+Indien deze optie is ingeschakeld, dient u de volgende functie voor forumposten op te nemen, zodat leden op de hoogte kunnen worden  [](notifications.md) gesteld van nieuwe posten. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Pinning]**
 Als deze optie ingeschakeld is, kunnen forumonderwerpen boven aan de lijst met onderwerpen worden vastgezet. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Featured Content]**
-als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
+als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als  [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Email Subscriptions]**
-Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](email.md). De optie Standaard is uitgeschakeld.
+Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). `Allow Following` moet worden gecontroleerd en [e-mail geconfigureerd](email.md). De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Max File Size]**
 Alleen relevant als 
@@ -114,15 +114,15 @@ Indien ingeschakeld, neemt u de functie Stemmen op met een onderwerp. De optie S
 Indien aangekruist, toon navigatiebroodkruimels op onderwerppagina&#39;s. Standaard is ingeschakeld.
 
 * **[!UICONTROL Display Badges]**
-Indien ingeschakeld, verdiende en toegewezen [badges](implementing-scoring.md) bij het blogbericht van een lid weergeven. De optie Standaard is uitgeschakeld.
+Indien ingeschakeld, verdiende en toegewezen  [](implementing-scoring.md) badges weergeven bij het blogbericht van een lid. De optie Standaard is uitgeschakeld.
 
 >[!NOTE]
 >
->Het kan nodig zijn om zowel `AllowThreaded Replies` als `Allow users to Delete Comments and Topics` om opmerkingen over een onderwerp mogelijk te maken.
+>Het kan nodig zijn om zowel `AllowThreaded Replies` als `Allow users to Delete Comments and Topics` te controleren om commentaren op een onderwerp toe te laten.
 
 ### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte onderwerpen en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte onderwerpen en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor meer informatie.
 
 * **[!UICONTROL Deny Posts]**
 Als deze optie wordt ingeschakeld, zullen de verantwoordelijken van de leden hun functie kunnen ontkennen en voorkomen dat de functie op het openbare forum verschijnt. De optie Standaard is uitgeschakeld.
@@ -148,12 +148,12 @@ Ga het aantal tijden in een onderwerp of een commentaar moet door leden worden g
 * **[!UICONTROL Flagging Limit]**
 Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-### Tabblad Tagveld {#tag-field-tab}
+### Tabblad {#tag-field-tab} voor tagveld
 
-Onder het **[!UICONTROL Tag field]** tabblad zijn de tags die kunnen worden toegepast, indien toegestaan onder het **[!UICONTROL Settings]** tabblad, beperkt op basis van de gekozen naamruimten.
+Onder het tabblad **[!UICONTROL Tag field]** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **[!UICONTROL Settings]**, beperkt op basis van de gekozen naamruimten.
 
 * **[!UICONTROL Allowed Namespaces]**
-Relevant als `Allow Tagging` wordt gecontroleerd onder het **[!UICONTROL Settings]** lusje. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+Relevant als  `Allow Tagging` wordt gecontroleerd onder het  **[!UICONTROL Settings]** lusje. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **[!UICONTROL Suggestion Limit]**
 Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. Standaard is 
@@ -161,18 +161,18 @@ Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid da
 
 ### Tabblad Vertaling {#translation-tab}
 
-Als op het **[!UICONTROL Translation]** tabblad vertaling is ingeschakeld voor de communitysite, kan de vertaling zo worden ingesteld dat het hele onderwerp of de geselecteerde posts worden vertaald.
+Als op het tabblad **[!UICONTROL Translation]** vertaling is ingeschakeld voor de site van de gebruikersgemeenschap, kan de vertaling zo worden ingesteld dat het gehele onderwerp of de geselecteerde artikelen worden vertaald.
 
 * **[!UICONTROL Translate All]**
 Indien gecontroleerd, wordt de forumdraad vertaald in de aangewezen taal van de gebruiker. De optie Standaard is uitgeschakeld.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het **[!UICONTROL Sort Settings]** tabblad op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het tabblad **[!UICONTROL Sort Settings]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
 * **[!UICONTROL Sort By]**
 Alle toegestane sorteerselecties controleren: 
-`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Standaard is dit `Newest, Oldest, Last Updated`.
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. De standaardwaarde is `Newest, Oldest, Last Updated`.
 
 * **[!UICONTROL Set as Default]**
 Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is 
@@ -180,14 +180,14 @@ Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die al
 
 * **[!UICONTROL Select Time Options for Analytics Sorting]**
 Omlaag trekken om een van de volgende opties te selecteren 
-`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Standaard is dit `All`.
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. De standaardwaarde is `All`.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
-Meer informatie kunt u vinden op de pagina [Forum Essentials](essentials-forum.md) voor ontwikkelaars.
+Meer informatie vindt u op de pagina [Forum Essentials](essentials-forum.md) voor ontwikkelaars.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie het [Modereren van Door Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [](tag-ugc.md)labelen voor informatie over het labelen van geposte onderwerpen en opmerkingen.
+Zie [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [vertalen voor een vertaling van geposte onderwerpen en opmerkingen](translate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud omzetten](translate-ugc.md) voor een vertaling van geposte onderwerpen en opmerkingen.
