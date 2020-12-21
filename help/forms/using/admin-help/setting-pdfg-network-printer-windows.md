@@ -26,21 +26,21 @@ Als u vanuit een toepassing op deze printer afdrukt, wordt het document (in Post
 
 U moet de volgende stappen uitvoeren om een PDFG-netwerkprinter in te stellen:
 
-1. E-mailinstellingen configureren. (Zie E-mailinstellingen [configureren voor PDFG-netwerkprinter](setting-pdfg-network-printer-windows.md#configure-email-settings-for-pdfg-network-printer).)
-1. In de beheersconsole, vorm de montages van de Printer van het Netwerk PDFG. (Zie De instellingen voor [de PDFG-netwerkprinter](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings)configureren.)
+1. E-mailinstellingen configureren. (Zie [E-mailinstellingen configureren voor PDFG Network Printer](setting-pdfg-network-printer-windows.md#configure-email-settings-for-pdfg-network-printer).)
+1. In de beheersconsole, vorm de montages van de Printer van het Netwerk PDFG. (Zie [De instellingen voor de PDFG-netwerkprinter configureren](setting-pdfg-network-printer-windows.md#configure-the-pdfg-network-printer-settings).)
 1. Zorg ervoor dat uw gebruikers zijn geconfigureerd met een geldig e-mailadres in de database met AEM formulieren en wijs de PDFGUserPermission toe aan elke gebruiker. <!-- Fix broken link See Setting up and organizing users -->
 1. Zorg ervoor dat 32-bits JRE6 is geïnstalleerd op de computers van uw gebruikers.
-1. Installeer de printer op de computers van uw gebruikers. (Zie PDFG-netwerkprinter [installeren op de computer](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer)van een gebruiker.)
+1. Installeer de printer op de computers van uw gebruikers. (Zie [PDFG-netwerkprinter installeren op de computer van een gebruiker](setting-pdfg-network-printer-windows.md#install-pdfg-network-printer-on-a-user-s-computer).)
 
-## E-mailinstellingen configureren voor PDFG Network Printer {#configure-email-settings-for-pdfg-network-printer}
+## E-mailinstellingen configureren voor PDFG-netwerkprinter {#configure-email-settings-for-pdfg-network-printer}
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Voor de pagina van het Beheer van de Dienst, klik provider.email_sendmail_service, specificeer de montages SMTP, en klik sparen.
 
-## De instellingen voor de PDFG-netwerkprinter configureren {#configure-the-pdfg-network-printer-settings}
+## De instellingen voor PDFG-netwerkprinter configureren {#configure-the-pdfg-network-printer-settings}
 
 1. Klik in de beheerconsole op Services > PDF Generator > PDFG Network Printer
-1. Selecteer in de lijsten Adobe PDF-instellingen en Beveiligingsinstellingen de opties die u wilt toepassen op de gegenereerde PDF. Zie Adobe PDF-instellingen [configureren en beveiligingsinstellingen](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) [configureren voor meer informatie over deze instellingen](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings).
+1. Selecteer in de lijsten Adobe PDF-instellingen en Beveiligingsinstellingen de opties die u wilt toepassen op de gegenereerde PDF. Zie [Adobe PDF-instellingen configureren](/help/forms/using/admin-help/configuring-pdf-settings.md#configuring-adobe-pdf-settings) en [Beveiligingsinstellingen configureren](/help/forms/using/admin-help/configuring-security-settings.md#configuring-security-settings) voor meer informatie over deze instellingen.
 1. Als u de geconverteerde PDF&#39;s weer naar gebruikers wilt verzenden, selecteert u de optie Het geconverteerde PDF-bestand naar gebruiker e-mailen en geeft u de volgende gegevens op:
 
    * Het e-mailadres dat moet worden gebruikt om PDF&#39;s naar de gebruikers te verzenden
