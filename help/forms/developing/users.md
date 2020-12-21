@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Gebruikers beheren {#managing-users}
+# Gebruikers {#managing-users} beheren
 
 **Over Gebruikersbeheer**
 
@@ -30,19 +30,19 @@ U kunt de API voor gebruikersbeheer gebruiken om clienttoepassingen te maken die
 
 Het Beheer van de gebruiker laat u toe om, rollen en toestemmingen toe te wijzen te verwijderen en te bepalen. Het laat u ook toe om, domeinen, gebruikers, en groepen toe te wijzen te verwijderen. Tot slot kunt u Gebruikersbeheer gebruiken om gebruikers voor authentiek te verklaren.
 
-In het [Toevoegen van Gebruikers](users.md#adding-users) zult u begrijpen hoe te om gebruikers programmatically toe te voegen. In deze sectie wordt de directoryservice-API gebruikt.
+In [Het toevoegen van Gebruikers](users.md#adding-users) zult u begrijpen hoe te om gebruikers programmatically toe te voegen. In deze sectie wordt de directoryservice-API gebruikt.
 
-Bij het [schrappen van Gebruikers](users.md#deleting-users) zult u begrijpen hoe te om gebruikers programmatically te schrappen. In deze sectie wordt de directoryservice-API gebruikt.
+In [Het schrappen van Gebruikers](users.md#deleting-users) zult u begrijpen hoe te om gebruikers programmatically te schrappen. In deze sectie wordt de directoryservice-API gebruikt.
 
-In het [Leiden Gebruikers en Groepen](users.md#managing-users-and-groups) zult u het verschil tussen een lokale gebruiker en een foldergebruiker begrijpen, en voorbeelden van zien hoe te om Java en de dienst APIs van het Web te gebruiken om gebruikers en groepen programmatically te beheren. In deze sectie wordt de directoryservice-API gebruikt.
+In [Gebruikers en groepen beheren](users.md#managing-users-and-groups) zult u het verschil tussen een lokale gebruiker en een foldergebruiker begrijpen, en zult voorbeelden van zien hoe te om Java en de dienst APIs van het Web te gebruiken om gebruikers en groepen programmatically te beheren. In deze sectie wordt de directoryservice-API gebruikt.
 
-In het [Leiden Rollen en Toestemmingen](users.md#managing-roles-and-permissions) zult u over de systeemrollen en toestemmingen leren en wat u programmatically kunt doen om hen te versterken, en voorbeelden van te zien hoe te om Java en de Webdienst APIs te gebruiken om rollen en toestemmingen programmatically te beheren. Deze sectie gebruikt zowel de API van de Dienst van de Manager van de Folder als de Dienst API van de Manager van de Vergunning.
+In [Managing Roles and Permissions](users.md#managing-roles-and-permissions) zult u over de systeemrollen en toestemmingen leren en wat u programmatically kunt doen om hen te verhogen, en voorbeelden zien van hoe te om Java en de Webdienst APIs te gebruiken om rollen en toestemmingen programmatically te beheren. Deze sectie gebruikt zowel de API van de Dienst van de Manager van de Folder als de Dienst API van de Manager van de Vergunning.
 
-In het [Verifiëren van Gebruikers](users.md#authenticating-users) zult u voorbeelden van zien hoe te om Java en de dienst APIs van het Web te gebruiken om gebruikers programmatically voor authentiek te verklaren. Deze sectie gebruikt de Service API van de Manager van de Vergunning.
+In [Gebruikers verifiëren](users.md#authenticating-users) zult u voorbeelden zien van hoe te om Java en de dienst APIs van het Web te gebruiken om gebruikers programmatically voor authentiek te verklaren. Deze sectie gebruikt de Service API van de Manager van de Vergunning.
 
 **Het verificatieproces begrijpen**
 
-Gebruikersbeheer biedt ingebouwde verificatiefuncties en biedt u ook de mogelijkheid om deze te verbinden met uw eigen verificatieprovider. Wanneer het Beheer van de Gebruiker een authentificatieverzoek ontvangt (bijvoorbeeld, probeert een gebruiker om binnen te registreren), gaat het gebruikersinformatie tot de authentificatieleverancier over om voor authentiek te verklaren. Gebruikersbeheer ontvangt de resultaten van de verificatieprovider nadat de gebruiker is geverifieerd.
+Gebruikersbeheer biedt ingebouwde verificatiefunctionaliteit en biedt u ook de mogelijkheid om deze te verbinden met uw eigen verificatieprovider. Wanneer het Beheer van de Gebruiker een authentificatieverzoek ontvangt (bijvoorbeeld, probeert een gebruiker om binnen te registreren), gaat het gebruikersinformatie tot de authentificatieleverancier over om voor authentiek te verklaren. Gebruikersbeheer ontvangt de resultaten van de verificatieprovider nadat de gebruiker is geverifieerd.
 
 Het volgende diagram toont de interactie onder een eind - gebruiker die aan login, Gebruikersbeheer, en de authentificatieleverancier probeert.
 
@@ -97,19 +97,19 @@ De provider van de directoryservice kan worden gebruikt om de gebruikersbeheerda
 
 Bovendien voorziet DirectoryManagerService u van de capaciteit om domeinen tot stand te brengen en te beheren. Domeinen definiëren verschillende gebruikersbasen. De grens van een domein wordt gewoonlijk bepaald volgens de manier uw organisatie gestructureerd is of hoe uw gebruikersopslag opstelling is. De domeinen van het Beheer van de gebruiker verstrekken configuratiemontages die de authentificatieleveranciers en de leveranciers van de folderdienst gebruiken.
 
-In de configuratie XML die het Beheer van de Gebruiker uitvoert, bevat de wortelknoop die de attributenwaarde van heeft `Domains` een element van XML voor elk domein dat voor Gebruikersbeheer wordt bepaald. Elk van deze elementen bevat andere elementen die aspecten van het domein verbonden aan specifieke dienstverleners bepalen.
+In de configuratie XML die het Beheer van de Gebruiker uitvoert, bevat de wortelknoop die de attributenwaarde van `Domains` heeft een element van XML voor elk domein dat voor Gebruikersbeheer wordt bepaald. Elk van deze elementen bevat andere elementen die aspecten van het domein verbonden aan specifieke dienstverleners bepalen.
 
 **Werken met objectSID-waarden**
 
-Wanneer het gebruiken van Actieve Folder, is het belangrijk om te begrijpen dat een `objectSID` waarde geen uniek attribuut over veelvoudige domeinen is. Met deze waarde wordt de beveiligings-id van een object opgeslagen. In een omgeving met meerdere domeinen (bijvoorbeeld een structuur met domeinen) kan de `objectSID` waarde verschillend zijn.
+Wanneer het gebruiken van Actieve Folder, is het belangrijk om te begrijpen dat een `objectSID` waarde geen uniek attribuut over veelvoudige domeinen is. Met deze waarde wordt de beveiligings-id van een object opgeslagen. In een omgeving met meerdere domeinen (bijvoorbeeld een structuur met domeinen) kan de waarde `objectSID` verschillend zijn.
 
-Een `objectSID` waarde zou veranderen als een voorwerp van één Actief domein van de Folder aan een ander domein wordt bewogen. Sommige objecten hebben overal in het domein dezelfde `objectSID` waarde. Groepen zoals BUILTIN\Administrators, BUILTIN\Power Users enzovoort zouden bijvoorbeeld dezelfde `objectSID` waarde hebben, ongeacht de domeinen. Deze `objectSID` waarden zijn bekend.
+Een `objectSID` waarde zou veranderen als een voorwerp van één Actief domein van de Folder aan een ander domein wordt bewogen. Sommige objecten hebben overal in het domein dezelfde `objectSID`-waarde. Groepen zoals BUILTIN\Administrators, BUILTIN\Power Users enzovoort zouden bijvoorbeeld dezelfde `objectSID`-waarde hebben, ongeacht de domeinen. Deze `objectSID` waarden zijn bekend.
 
-## Gebruikers toevoegen {#adding-users}
+## Gebruikers {#adding-users} toevoegen
 
 U kunt de API voor directoryservice (Java en webservice) gebruiken om gebruikers programmatisch aan AEM Forms toe te voegen. Nadat u een gebruiker hebt toegevoegd, kunt u die gebruiker gebruiken wanneer u een servicebewerking uitvoert waarvoor een gebruiker nodig is. U kunt bijvoorbeeld een taak toewijzen aan de nieuwe gebruiker.
 
-### Overzicht van de stappen {#summary-of-steps}
+### Overzicht van stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om een gebruiker toe te voegen:
 
@@ -131,16 +131,16 @@ Alvorens u een de dienstverrichting van de Manager van de Folder programmaticall
 
 Wanneer u een nieuwe gebruiker door de Dienst API van de Manager van de Folder te gebruiken toevoegt, bepaal informatie voor die gebruiker. Wanneer u een nieuwe gebruiker toevoegt, definieert u doorgaans de volgende waarden:
 
-* **Domeinnaam**: Het domein waartoe de gebruiker behoort (bijvoorbeeld `DefaultDom`).
-* **Waarde** van gebruikersnaam: De id-waarde van de gebruiker (bijvoorbeeld `wblue`).
-* **Principal type**: Het type gebruiker (u kunt bijvoorbeeld opgeven `USER)`.
-* **Voornaam**: Een bepaalde naam voor de gebruiker (bijvoorbeeld `Wendy`).
-* **Familienaam**: De familienaam voor de gebruiker (bijvoorbeeld, `Blue)`.
+* **Domeinnaam**: Het domein waartoe de gebruiker behoort (bijvoorbeeld  `DefaultDom`).
+* **Waarde** van gebruikersnaam: De id-waarde van de gebruiker (bijvoorbeeld  `wblue`).
+* **Principal type**: Het type gebruiker (u kunt bijvoorbeeld opgeven  `USER)`.
+* **Voornaam**: Een bepaalde naam voor de gebruiker (bijvoorbeeld  `Wendy`).
+* **Familienaam**: De familienaam voor de gebruiker (bijvoorbeeld,  `Blue)`.
 * **Landinstelling**: Lokale informatie voor de gebruiker.
 
 **De gebruiker toevoegen aan AEM Forms**
 
-Nadat u gebruikersgegevens hebt gedefinieerd, kunt u de gebruiker aan AEM Forms toevoegen. Als u een gebruiker wilt toevoegen, roept u de `DirectoryManagerServiceClient` methode van het `createLocalUser` object aan.
+Nadat u gebruikersgegevens hebt gedefinieerd, kunt u de gebruiker aan AEM Forms toevoegen. Als u een gebruiker wilt toevoegen, roept u de methode `createLocalUser` van het object `DirectoryManagerServiceClient` aan.
 
 **Controleren of de gebruiker is toegevoegd**
 
@@ -158,7 +158,7 @@ U kunt controleren of de gebruiker is toegevoegd om ervoor te zorgen dat er geen
 
 [Gebruikers verwijderen](users.md#deleting-users)
 
-### Gebruikers toevoegen met de Java API {#add-users-using-the-java-api}
+### Gebruikers toevoegen met de Java-API {#add-users-using-the-java-api}
 
 Voeg gebruikers toe met de API voor directoryservice (Java):
 
@@ -168,36 +168,36 @@ Voeg gebruikers toe met de API voor directoryservice (Java):
 
 1. Creeer een cliënt DirectoryManagerServices.
 
-   Maak een `DirectoryManagerServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `DirectoryManagerServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Gebruikersgegevens definiëren.
 
-   * Maak een `UserImpl` object met de constructor ervan.
-   * Stel de naam van het domein in door de `UserImpl` methode van het `setDomainName` object aan te roepen. Geef een tekenreekswaarde door die de domeinnaam opgeeft.
-   * Stel het hoofdtype in door de `UserImpl` methode van het `setPrincipalType` object aan te roepen. Geef een tekenreekswaarde door die het type gebruiker aangeeft. U kunt bijvoorbeeld opgeven `USER`.
-   * Stel de waarde van de gebruikersidentificatie in door de `UserImpl` methode van het `setUserid` object aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie aangeeft. U kunt bijvoorbeeld opgeven `wblue`.
-   * Stel de canonieke naam in door de `UserImpl` methode van het `setCanonicalName` object aan te roepen. Geef een tekenreekswaarde door die de canonieke naam van de gebruiker aangeeft. U kunt bijvoorbeeld opgeven `wblue`.
-   * Stel de opgegeven naam in door de `UserImpl` methode van het `setGivenName` object aan te roepen. Geef een tekenreekswaarde door die de opgegeven naam van de gebruiker aangeeft. U kunt bijvoorbeeld opgeven `Wendy`.
-   * Stel de familienaam in door de `UserImpl` methode van het `setFamilyName` object aan te roepen. Geef een tekenreekswaarde door die de familienaam van de gebruiker aangeeft. U kunt bijvoorbeeld opgeven `Blue`.
+   * Maak een `UserImpl`-object met de constructor ervan.
+   * Stel de naam van het domein in door de methode `setDomainName` van het object `UserImpl` aan te roepen. Geef een tekenreekswaarde door die de domeinnaam opgeeft.
+   * Stel het hoofdtype in door de methode `setPrincipalType` van het object `UserImpl` aan te roepen. Geef een tekenreekswaarde door die het type gebruiker aangeeft. U kunt bijvoorbeeld `USER` opgeven.
+   * Stel de waarde van de gebruikersidentificatie in door de methode `setUserid` van het object `UserImpl` aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie aangeeft. U kunt bijvoorbeeld `wblue` opgeven.
+   * Stel de canonieke naam in door de methode `setCanonicalName` van het object `UserImpl` aan te roepen. Geef een tekenreekswaarde door die de canonieke naam van de gebruiker aangeeft. U kunt bijvoorbeeld `wblue` opgeven.
+   * Stel de opgegeven naam in door de methode `setGivenName` van het object `UserImpl` aan te roepen. Geef een tekenreekswaarde door die de opgegeven naam van de gebruiker aangeeft. U kunt bijvoorbeeld `Wendy` opgeven.
+   * Stel de familienaam in door de methode `setFamilyName` van het object `UserImpl` aan te roepen. Geef een tekenreekswaarde door die de familienaam van de gebruiker aangeeft. U kunt bijvoorbeeld `Blue` opgeven.
 
    >[!NOTE]
    >
-   >Roep een methode aan die tot het `UserImpl` object behoort om andere waarden in te stellen. U kunt bijvoorbeeld de waarde van de landinstelling instellen door de `UserImpl` methode van het `setLocale` object aan te roepen.
+   >Roep een methode aan die bij het object `UserImpl` hoort om andere waarden in te stellen. U kunt bijvoorbeeld de waarde van de landinstelling instellen door de methode `setLocale` van het object `UserImpl` aan te roepen.
 
 1. Voeg de gebruiker toe aan AEM Forms.
 
-   Roep de methode van het `DirectoryManagerServiceClient` `createLocalUser` object aan en geef de volgende waarden door:
+   Roep de methode `createLocalUser` van het object `DirectoryManagerServiceClient` aan en geef de volgende waarden door:
 
-   * Het `UserImpl` object dat de nieuwe gebruiker vertegenwoordigt
+   * Het `UserImpl`-object dat de nieuwe gebruiker vertegenwoordigt
    * Een tekenreekswaarde die het wachtwoord van de gebruiker vertegenwoordigt
 
-   De `createLocalUser` methode retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
+   De methode `createLocalUser` retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
 
 1. Controleer of de gebruiker is toegevoegd.
 
-   * Maak een `PrincipalSearchFilter` object met de constructor ervan.
-   * Stel de waarde van de gebruikersidentificatie in door de `PrincipalSearchFilter` methode van het `setUserId` object aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
-   * Roep de `DirectoryManagerServiceClient` methode van het `findPrincipals` object aan en geef het `PrincipalSearchFilter` object door. Deze methode retourneert een `java.util.List` instantie waarbij elk element een `User` object is. Doorloop de `java.util.List` instantie om de gebruiker te zoeken.
+   * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
+   * Stel de waarde van de gebruikersidentificatie in door de methode `setUserId` van het object `PrincipalSearchFilter` aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
+   * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode retourneert een `java.util.List`-instantie, waarbij elk element een `User`-object is. Doorloop de instantie `java.util.List` om de gebruiker te zoeken.
 
 **Zie ook**
 
@@ -219,45 +219,45 @@ Voeg gebruikers toe met de API (webservice) van Directory Manager:
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Creeer een cliënt DirectoryManagerService.
 
-   * Maak een `DirectoryManagerServiceClient` object met de standaardconstructor.
-   * Maak een `DirectoryManagerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u opgeeft `?blob=mtom`.
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `DirectoryManagerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `DirectoryManagerServiceClient`-object met de standaardconstructor.
+   * Maak een `DirectoryManagerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u `?blob=mtom` specificeert.
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DirectoryManagerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Gebruikersgegevens definiëren.
 
-   * Maak een `UserImpl` object met de constructor ervan.
-   * Stel de naam van het domein in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `domainName` object.
-   * Stel het hoofdtype in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `principalType` object. U kunt bijvoorbeeld opgeven `USER`.
-   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `userid` object.
-   * Stel de canonieke naamwaarde in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `canonicalName` object.
-   * Stel de opgegeven naamwaarde in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `givenName` object.
-   * Stel de naam van de familie in door een tekenreekswaarde toe te wijzen aan het `UserImpl` veld van het `familyName` object.
+   * Maak een `UserImpl`-object met de constructor ervan.
+   * Stel de naam van het domein in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`domainName`
+   * Stel het hoofdtype in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object. `principalType` U kunt bijvoorbeeld `USER` opgeven.
+   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`userid`
+   * Stel de canonieke naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`canonicalName`
+   * Stel de opgegeven naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`givenName`
+   * Stel de naam van de familie in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`familyName`
 
 1. Voeg de gebruiker toe aan AEM Forms.
 
-   Roep de methode van het `DirectoryManagerServiceClient` `createLocalUser` object aan en geef de volgende waarden door:
+   Roep de methode `createLocalUser` van het object `DirectoryManagerServiceClient` aan en geef de volgende waarden door:
 
-   * Het `UserImpl` object dat de nieuwe gebruiker vertegenwoordigt
+   * Het `UserImpl`-object dat de nieuwe gebruiker vertegenwoordigt
    * Een tekenreekswaarde die het wachtwoord van de gebruiker vertegenwoordigt
 
-   De `createLocalUser` methode retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
+   De methode `createLocalUser` retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
 
 1. Controleer of de gebruiker is toegevoegd.
 
-   * Maak een `PrincipalSearchFilter` object met de constructor ervan.
-   * Stel de gebruiker-id-waarde van de gebruiker in door een tekenreekswaarde toe te wijzen die de gebruiker-id-waarde vertegenwoordigt aan het `PrincipalSearchFilter` veld van het `userId` object.
-   * Roep de `DirectoryManagerServiceClient` methode van het `findPrincipals` object aan en geef het `PrincipalSearchFilter` object door. Deze methode retourneert een `MyArrayOfUser` verzamelingsobject, waarbij elk element een `User` object is. Doorloop de `MyArrayOfUser` verzameling om de gebruiker te zoeken.
+   * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
+   * Stel de waarde van de gebruikersidentificatie van de gebruiker in door een tekenreekswaarde toe te wijzen die de waarde van de gebruikersidentificatie vertegenwoordigt aan het veld `PrincipalSearchFilter` van het object `userId`.
+   * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode keert een `MyArrayOfUser` inzamelingsvoorwerp terug, waar elk element een `User` voorwerp is. Doorloop de verzameling `MyArrayOfUser` om de gebruiker te zoeken.
 
 **Zie ook**
 
@@ -267,11 +267,11 @@ Voeg gebruikers toe met de API (webservice) van Directory Manager:
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Gebruikers verwijderen {#deleting-users}
+## Gebruikers {#deleting-users} verwijderen
 
 U kunt de API voor directoryservice (Java en webservice) gebruiken om gebruikers via programmacode uit AEM Forms te verwijderen. Nadat u een gebruiker schrapt, kan de gebruiker niet meer worden gebruikt om een de dienstverrichting uit te voeren die een gebruiker vereist. U kunt bijvoorbeeld geen taak toewijzen aan een verwijderde gebruiker.
 
-### Overzicht van de stappen {#summary_of_steps-1}
+### Overzicht van stappen {#summary_of_steps-1}
 
 Voer de volgende stappen uit om een gebruiker te verwijderen:
 
@@ -294,7 +294,7 @@ U kunt opgeven dat een gebruiker moet worden verwijderd met de id-waarde van de 
 
 **De gebruiker verwijderen uit AEM Forms**
 
-Als u een gebruiker wilt verwijderen, roept u de `DirectoryManagerServiceClient` methode van het `deleteLocalUser` object aan.
+Als u een gebruiker wilt verwijderen, roept u de methode `deleteLocalUser` van het object `DirectoryManagerServiceClient` aan.
 
 **Zie ook**
 
@@ -318,17 +318,17 @@ Gebruikers verwijderen met de API voor directoryservice (Java):
 
 1. Creeer een cliënt DirectoryManagerService.
 
-   Maak een `DirectoryManagerServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `DirectoryManagerServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Geef de gebruiker op die u wilt verwijderen.
 
-   * Maak een `PrincipalSearchFilter` object met de constructor ervan.
-   * Stel de waarde van de gebruikersidentificatie in door de `PrincipalSearchFilter` methode van het `setUserId` object aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
-   * Roep de `DirectoryManagerServiceClient` methode van het `findPrincipals` object aan en geef het `PrincipalSearchFilter` object door. Deze methode retourneert een `java.util.List` instantie waarbij elk element een `User` object is. Doorloop de `java.util.List` instantie om te zoeken welke gebruiker u wilt verwijderen.
+   * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
+   * Stel de waarde van de gebruikersidentificatie in door de methode `setUserId` van het object `PrincipalSearchFilter` aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
+   * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode retourneert een `java.util.List`-instantie, waarbij elk element een `User`-object is. Doorloop de instantie `java.util.List` om te zoeken naar de gebruiker die u wilt verwijderen.
 
 1. Verwijder de gebruiker uit AEM Forms.
 
-   Roep de `DirectoryManagerServiceClient` methode van het `deleteLocalUser` object aan en geef de waarde van het `User` veld van het `oid` object door. Roep de `User` methode van het `getOid` object aan. Gebruik het `User` object dat u uit de `java.util.List` instantie hebt opgehaald.
+   Roep de methode `DirectoryManagerServiceClient` van het object `deleteLocalUser` aan en geef de waarde van het veld `User` van het object `oid` door. Roep de methode `User` van het object `getOid` aan. Gebruik het `User`-object dat is opgehaald uit de instantie `java.util.List`.
 
 **Zie ook**
 
@@ -352,26 +352,26 @@ Gebruikers verwijderen met de API voor directoryservice (webservice):
 
 1. Creeer een cliënt DirectoryManagerService.
 
-   * Maak een `DirectoryManagerServiceClient` object met de standaardconstructor.
-   * Maak een `DirectoryManagerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u opgeeft `blob=mtom.`
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `DirectoryManagerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `DirectoryManagerServiceClient`-object met de standaardconstructor.
+   * Maak een `DirectoryManagerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/DirectoryManagerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt. Zorg ervoor dat u `blob=mtom.` specificeert
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `DirectoryManagerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `DirectoryManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `DirectoryManagerServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `DirectoryManagerServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Geef de gebruiker op die u wilt verwijderen.
 
-   * Maak een `PrincipalSearchFilter` object met de constructor ervan.
-   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het `PrincipalSearchFilter` veld van het `userId` object.
-   * Roep de `DirectoryManagerServiceClient` methode van het `findPrincipals` object aan en geef het `PrincipalSearchFilter` object door. Deze methode retourneert een `MyArrayOfUser` verzamelingsobject, waarbij elk element een `User` object is. Doorloop de `MyArrayOfUser` verzameling om de gebruiker te zoeken. Het `User` object dat wordt opgehaald uit het `MyArrayOfUser` verzamelingsobject, wordt gebruikt om de gebruiker te verwijderen.
+   * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
+   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `PrincipalSearchFilter` van het object.`userId`
+   * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode keert een `MyArrayOfUser` inzamelingsvoorwerp terug, waar elk element een `User` voorwerp is. Doorloop de verzameling `MyArrayOfUser` om de gebruiker te zoeken. Het object `User` dat is opgehaald uit het verzamelingsobject `MyArrayOfUser` wordt gebruikt om de gebruiker te verwijderen.
 
 1. Verwijder de gebruiker uit AEM Forms.
 
-   Verwijder de gebruiker door de veldwaarde van het `User` object door te geven aan de `oid` methode van het `DirectoryManagerServiceClient` `deleteLocalUser` object.
+   Verwijder de gebruiker door de `User`-veldwaarde van het `oid`-object door te geven aan de `DirectoryManagerServiceClient`-methode van het `deleteLocalUser`-object.
 
 **Zie ook**
 
@@ -383,9 +383,9 @@ Gebruikers verwijderen met de API voor directoryservice (webservice):
 
 ## Groepen maken {#creating-groups}
 
-Met de API voor directorybeheer (Java en webservice) kunt u programmatisch AEM Forms-groepen maken. Nadat u een groep creeert, kunt u die groep gebruiken om een de dienstverrichting uit te voeren die een groep vereist. U kunt bijvoorbeeld een gebruiker aan de nieuwe groep toewijzen. (Zie Gebruikers en groepen [](users.md#managing-users-and-groups)beheren.)
+Met de API voor directorybeheer (Java en webservice) kunt u programmatisch AEM Forms-groepen maken. Nadat u een groep creeert, kunt u die groep gebruiken om een de dienstverrichting uit te voeren die een groep vereist. U kunt bijvoorbeeld een gebruiker aan de nieuwe groep toewijzen. (Zie [Gebruikers en groepen beheren](users.md#managing-users-and-groups).)
 
-### Overzicht van de stappen {#summary_of_steps-2}
+### Overzicht van stappen {#summary_of_steps-2}
 
 Voer de volgende stappen uit om een groep te maken:
 
@@ -406,7 +406,7 @@ De volgende JAR-bestanden moeten worden toegevoegd aan het klassepad van uw proj
 * adobe-utilities.jar (Vereist als AEM Forms wordt geïmplementeerd op JBoss)
 * jbossall-client.jar (vereist als AEM Forms wordt geïmplementeerd op JBoss)
 
-Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze JAR-bestanden.
+Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze JAR-bestanden.
 
 **Een DirectoryManagerService-client maken**
 
@@ -426,7 +426,7 @@ Nadat u hebt bepaald dat de groep niet bestaat in het domein, maakt u de groep e
 
 **Een handeling uitvoeren met de groep**
 
-Nadat u een groep hebt gemaakt, kunt u een actie uitvoeren met de groep. U kunt bijvoorbeeld een gebruiker aan de groep toevoegen. Als u een gebruiker aan een groep wilt toevoegen, haalt u de unieke id-waarde van zowel de gebruiker als de groep op. Geef deze waarden door aan de `addPrincipalToLocalGroup` methode.
+Nadat u een groep hebt gemaakt, kunt u een actie uitvoeren met de groep. U kunt bijvoorbeeld een gebruiker aan de groep toevoegen. Als u een gebruiker aan een groep wilt toevoegen, haalt u de unieke id-waarde van zowel de gebruiker als de groep op. Geef deze waarden door aan de methode `addPrincipalToLocalGroup`.
 
 **Zie ook**
 
@@ -450,31 +450,31 @@ Maak een groep met de API voor directoryservice (Java):
 
 1. Creeer een cliënt DirectoryManagerService.
 
-   Maak een `DirectoryManagerServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `DirectoryManagerServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Bepaal of de groep bestaat.
 
-   * Maak een `PrincipalSearchFilter` object met de constructor ervan.
-   * Stel het hoofdtype in door het `PrincipalSearchFilter` `setPrincipalType` object van het object aan te roepen. Geef de waarde door `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP`.
-   * Stel het domein in door het `PrincipalSearchFilter` `setSpecificDomainName` object van het object aan te roepen. Geef een tekenreekswaarde door die de domeinnaam opgeeft.
-   * Als u een groep wilt zoeken, roept u de `DirectoryManagerServiceClient` methode van het `findPrincipals` object aan (een principal kan een groep zijn). Geef het `PrincipalSearchFilter` object door dat het hoofdtype en de domeinnaam opgeeft. Deze methode retourneert een `java.util.List` instantie waarbij elk element een `Group` instantie is. Elke groepsinstantie past zich aan het filter aan dat met het `PrincipalSearchFilter` object is opgegeven.
-   * Doorloop de `java.util.List` instantie. Haal voor elk element de groepsnaam op. Zorg ervoor dat de groepsnaam niet gelijk is aan de nieuwe groepsnaam.
+   * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
+   * Stel het hoofdtype in door het object `setPrincipalType` van het object `PrincipalSearchFilter` aan te roepen. Geef de waarde `com.adobe.idp.um.api.infomodel.Principal.PRINCIPALTYPE_GROUP` door.
+   * Stel het domein in door het object `setSpecificDomainName` van het object `PrincipalSearchFilter` aan te roepen. Geef een tekenreekswaarde door die de domeinnaam opgeeft.
+   * Als u een groep wilt zoeken, roept u de methode `findPrincipals` van het object `DirectoryManagerServiceClient` aan (een principal kan een groep zijn). Geef het object `PrincipalSearchFilter` door dat het hoofdtype en de domeinnaam opgeeft. Deze methode retourneert een `java.util.List`-instantie waarbij elk element een `Group`-instantie is. Elke groepsinstantie past zich aan het filter aan dat is opgegeven met het object `PrincipalSearchFilter`.
+   * Doorloop de instantie `java.util.List`. Haal voor elk element de groepsnaam op. Zorg ervoor dat de groepsnaam niet gelijk is aan de nieuwe groepsnaam.
 
 1. Maak de groep.
 
-   * Als de groep niet bestaat, roept u de `Group` methode van het `setCommonName` object aan en geeft u een tekenreekswaarde door die de groepsnaam opgeeft.
-   * Roep de `Group` methode van het `setDescription` object aan en geef een tekenreekswaarde door die de beschrijving van de groep aangeeft.
-   * Roep de `Group` methode van het `setDomainName` object aan en geef een tekenreekswaarde door die de domeinnaam opgeeft.
-   * Roep de `DirectoryManagerServiceClient` methode van het `createLocalGroup` object aan en geef de `Group` instantie door.
+   * Als de groep niet bestaat, roept u de methode `setCommonName` van het object `Group` aan en geeft u een tekenreekswaarde door die de groepsnaam opgeeft.
+   * Roep de methode `Group` van het object `setDescription` aan en geef een tekenreekswaarde door die de beschrijving van de groep aangeeft.
+   * Roep de methode `setDomainName` van het object `Group` aan en geef een tekenreekswaarde door die de domeinnaam opgeeft.
+   * Roep de methode `DirectoryManagerServiceClient` van het object `createLocalGroup` aan en geef de instantie `Group` door.
 
-   De `createLocalUser` methode retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
+   De methode `createLocalUser` retourneert een tekenreekswaarde die de lokale waarde van de gebruikersidentificatie opgeeft.
 
 1. Voer een handeling uit met de groep.
 
-   * Maak een `PrincipalSearchFilter` object met de constructor ervan.
-   * Stel de waarde van de gebruikersidentificatie in door de `PrincipalSearchFilter` methode van het `setUserId` object aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
-   * Roep de `DirectoryManagerServiceClient` methode van het `findPrincipals` object aan en geef het `PrincipalSearchFilter` object door. Deze methode retourneert een `java.util.List` instantie waarbij elk element een `User` object is. Doorloop de `java.util.List` instantie om de gebruiker te zoeken.
-   * Voeg een gebruiker aan de groep toe door de `DirectoryManagerServiceClient` methode van het `addPrincipalToLocalGroup` object aan te roepen. Geef de geretourneerde waarde van de `User` methode van het `getOid` object door. Geef de geretourneerde waarde van de `Group` methode van de `getOid` objecten door (gebruik de `Group` instantie die de nieuwe groep vertegenwoordigt).
+   * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
+   * Stel de waarde van de gebruikersidentificatie in door de methode `setUserId` van het object `PrincipalSearchFilter` aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
+   * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode retourneert een `java.util.List`-instantie, waarbij elk element een `User`-object is. Doorloop de instantie `java.util.List` om de gebruiker te zoeken.
+   * Voeg een gebruiker aan de groep toe door de `DirectoryManagerServiceClient` methode van het voorwerp `addPrincipalToLocalGroup` aan te halen. Geef de geretourneerde waarde van de methode `User` van het object door. `getOid` Geef de geretourneerde waarde van de methode `Group` van de objecten door (gebruik de instantie `getOid` die de nieuwe groep vertegenwoordigt).`Group`
 
 **Zie ook**
 
@@ -484,22 +484,22 @@ Maak een groep met de API voor directoryservice (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-## Managing Users and Groups {#managing-users-and-groups}
+## Gebruikers en groepen beheren {#managing-users-and-groups}
 
 Dit onderwerp beschrijft hoe u (Java) kunt gebruiken om, domeinen, gebruikers, en groepen programmatically toe te wijzen te verwijderen.
 
 >[!NOTE]
 >
->Wanneer het vormen van een domein, moet u het unieke herkenningsteken voor groepen en gebruikers plaatsen. Het kenmerk dat wordt gekozen, moet niet alleen uniek zijn binnen de LDAP-omgeving, maar moet ook onveranderlijk zijn en niet worden gewijzigd binnen de directory. Dit attribuut moet ook van een eenvoudig type van koordgegevens zijn (de enige uitzondering momenteel toegestaan voor Actieve Folder 2000/2003 is `"objectsid"`, die een binaire waarde is). Het attribuut Novell eDirectory `"GUID"`, bijvoorbeeld, is geen eenvoudig type van koordgegevens en zal daarom niet werken.
+>Wanneer het vormen van een domein, moet u het unieke herkenningsteken voor groepen en gebruikers plaatsen. Het kenmerk dat wordt gekozen, moet niet alleen uniek zijn binnen de LDAP-omgeving, maar moet ook onveranderlijk zijn en niet worden gewijzigd binnen de directory. Dit attribuut moet ook van een eenvoudig type van koordgegevens zijn (de enige uitzondering momenteel toegestaan voor Actieve Folder 2000/2003 is `"objectsid"`, die een binaire waarde is). Het kenmerk Novell eDirectory `"GUID"` is bijvoorbeeld geen eenvoudig gegevenstype voor tekenreeksen en werkt daarom niet.
 
 * Voor Actieve Folder, gebruik `"objectsid"`.
-* Gebruik voor SunOne `"nsuniqueid"`.
+* Gebruik `"nsuniqueid"` voor SunOne.
 
 >[!NOTE]
 >
 >Het maken van meerdere lokale gebruikers en groepen terwijl een LDAP-directorysynchronisatie wordt uitgevoerd, wordt niet ondersteund. Als u dit proces probeert uit te voeren, kunnen er fouten optreden.
 
-### Overzicht van de stappen {#summary_of_steps-3}
+### Overzicht van stappen {#summary_of_steps-3}
 
 Voer de volgende stappen uit om gebruikers en groepen te beheren:
 
@@ -513,7 +513,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een DirectoryManagerService-client maken**
 
-Alvorens u een de dienstverrichting van de Manager van de Folder programmatically kunt uitvoeren, moet u een de dienstcliënt van de Manager van de Folder creëren. Met de Java API wordt dit verwezenlijkt door een `DirectoryManagerServiceClient` voorwerp te creëren. Met de webservice-API gebeurt dit door een `DirectoryManagerServiceService` object te maken.
+Alvorens u een de dienstverrichting van de Manager van de Folder programmatically kunt uitvoeren, moet u een de dienstcliënt van de Manager van de Folder creëren. Met de Java API wordt dit verwezenlijkt door een `DirectoryManagerServiceClient` voorwerp te creëren. Met de webservice-API wordt dit bereikt door een `DirectoryManagerServiceService`-object te maken.
 
 **De juiste gebruikers- of groepsbewerkingen aanroepen**
 
@@ -537,23 +537,23 @@ Voer de volgende taken uit om gebruikers, groepen en domeinen programmatisch te 
 
 1. Inclusief projectbestanden.
 
-   Neem client-JAR-bestanden, zoals adobe-usermanager-client.jar, op in het klassenpad van uw Java-project. Zie [Inclusief AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files)voor informatie over de locatie van deze bestanden.
+   Neem client-JAR-bestanden, zoals adobe-usermanager-client.jar, op in het klassenpad van uw Java-project. Zie [Including AEM Forms Java-bibliotheekbestanden](/help/forms/developing/invoking-aem-forms-using-java.md#including-aem-forms-java-library-files) voor informatie over de locatie van deze bestanden.
 
 1. Creeer een cliënt DirectoryManagerService.
 
-   Maak een `DirectoryManagerServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat. Zie Verbindingseigenschappen [](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*instellen voor meer informatie.*
+   Maak een `DirectoryManagerServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat. Zie [Verbindingseigenschappen instellen ](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)*.*
 
 1. Roep de juiste gebruikers- of groepsbewerkingen aan.
 
-   Als u een gebruiker of groep wilt zoeken, roept u een van de methoden van het `DirectoryManagerServiceClient` object aan om principes te zoeken (aangezien een principal een gebruiker of een groep kan zijn). In het onderstaande voorbeeld wordt de `findPrincipals` methode aangeroepen met een zoekfilter (een `PrincipalSearchFilter` object).
+   Als u een gebruiker of groep wilt zoeken, roept u een van de methoden van het object `DirectoryManagerServiceClient` aan om principes te zoeken (aangezien een principal een gebruiker of een groep kan zijn). In het onderstaande voorbeeld wordt de methode `findPrincipals` aangeroepen met behulp van een zoekfilter (een object `PrincipalSearchFilter`).
 
-   Aangezien de geretourneerde waarde in dit geval een `java.util.List` bevattende `Principal` objecten is, doorloopt u het resultaat en cast u de `Principal` objecten naar `User` of naar `Group` objecten.
+   Aangezien de geretourneerde waarde in dit geval een `java.util.List` is met `Principal`-objecten, doorloopt u het resultaat en cast u de `Principal`-objecten naar `User`- of `Group`-objecten.
 
-   Gebruikend de resulterende `User` of `Group` voorwerp (die allebei van de `Principal` interface erven), wint de informatie terug u in uw werkschema&#39;s nodig hebt. De domeinnaam en canonieke naamwaarden vormen samen bijvoorbeeld een unieke identificatie van een principal. Deze worden opgehaald door respectievelijk de methoden `Principal` en `getDomainName` methoden van het `getCanonicalName` object aan te roepen.
+   Met het resulterende `User`- of `Group`-object (dat beide overerft van de `Principal`-interface) haalt u de informatie op die u in uw workflows nodig hebt. De domeinnaam en canonieke naamwaarden vormen samen bijvoorbeeld een unieke identificatie van een principal. Deze worden teruggewonnen door de `Principal` methode `getDomainName` en `getCanonicalName` van objecten aan te halen, respectievelijk.
 
-   Als u een lokale gebruiker wilt verwijderen, roept u de methode van het `DirectoryManagerServiceClient` `deleteLocalUser` object aan en geeft u de id van de gebruiker door.
+   Als u een lokale gebruiker wilt verwijderen, roept u de methode `deleteLocalUser` van het object `DirectoryManagerServiceClient` aan en geeft u de id van de gebruiker door.
 
-   Als u een lokale groep wilt verwijderen, roept u de methode van het `DirectoryManagerServiceClient` `deleteLocalGroup` object aan en geeft u de id van de groep door.
+   Als u een lokale groep wilt verwijderen, roept u de methode `deleteLocalGroup` van het object `DirectoryManagerServiceClient` aan en geeft u de id van de groep door.
 
 **Zie ook**
 
@@ -569,28 +569,28 @@ Om gebruikers, groepen, en domeinen programmatically te beheren gebruikend de Di
 
 1. Inclusief projectbestanden.
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Folder verbruikt. (Zie AEM Forms [aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie het [Creëren van een .NET cliëntassemblage die Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding). gebruikt)
+   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Folder verbruikt. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie [Creërend een .NET cliëntassemblage die Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#creating-a-net-client-assembly-that-uses-base64-encoding) gebruikt.)
 
 1. Creeer een cliënt DirectoryManagerService.
 
-   Maak een `DirectoryManagerServiceService` object met de constructor van de proxyklasse.
+   Maak een `DirectoryManagerServiceService`-object met de constructor van de proxyklasse.
 
 1. Roep de juiste gebruikers- of groepsbewerkingen aan.
 
-   Als u een gebruiker of groep wilt zoeken, roept u een van de methoden van het `DirectoryManagerServiceService` object aan om principes te zoeken (aangezien een principal een gebruiker of een groep kan zijn). In het onderstaande voorbeeld wordt de `findPrincipalsWithFilter` methode aangeroepen met een zoekfilter (een `PrincipalSearchFilter` object). Wanneer u een `PrincipalSearchFilter` object gebruikt, worden lokale hoofden alleen geretourneerd als de `isLocal` eigenschap is ingesteld op `true`. Dit gedrag is anders dan wat er zou gebeuren met de Java API.
+   Als u een gebruiker of groep wilt zoeken, roept u een van de methoden van het object `DirectoryManagerServiceService` aan om principes te zoeken (aangezien een principal een gebruiker of een groep kan zijn). In het onderstaande voorbeeld wordt de methode `findPrincipalsWithFilter` aangeroepen met behulp van een zoekfilter (een object `PrincipalSearchFilter`). Wanneer u een `PrincipalSearchFilter`-object gebruikt, worden lokale hoofdbeginselen alleen geretourneerd als de eigenschap `isLocal` is ingesteld op `true`. Dit gedrag is anders dan wat er zou gebeuren met de Java API.
 
    >[!NOTE]
    >
-   >Als het maximale aantal resultaten niet is opgegeven in het zoekfilter (via het `PrincipalSearchFilter.resultsMax` veld), worden maximaal 1000 resultaten geretourneerd. Dit gedrag is anders dan wat er gebeurt met de Java API, waarbij 10 resultaten het standaardmaximum zijn. Zoekmethoden zoals `findGroupMembers` leveren ook geen resultaten op, tenzij het maximale aantal resultaten is opgegeven in het zoekfilter (bijvoorbeeld via het `GroupMembershipSearchFilter.resultsMax` veld). Dit geldt voor alle zoekfilters die overerven van de `GenericSearchFilter` klasse. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie.
+   >Als het maximale aantal resultaten niet is opgegeven in het zoekfilter (via het veld `PrincipalSearchFilter.resultsMax`), worden maximaal 1000 resultaten geretourneerd. Dit gedrag is anders dan wat er gebeurt met de Java API, waarbij 10 resultaten het standaardmaximum zijn. De zoekmethoden zoals `findGroupMembers` leveren ook geen resultaten op, tenzij het maximale aantal resultaten is opgegeven in het zoekfilter (bijvoorbeeld via het veld `GroupMembershipSearchFilter.resultsMax`). Dit geldt voor alle zoekfilters die overerven van de klasse `GenericSearchFilter`. Zie [AEM Forms API Reference](https://www.adobe.com/go/learn_aemforms_javadocs_63_en) voor meer informatie.
 
-   Aangezien de geretourneerde waarde in dit geval een `object[]` object met `Principal` objecten is, doorloopt u het resultaat en cast u de `Principal` objecten naar `User` of naar `Group` objecten.
+   Aangezien de geretourneerde waarde in dit geval een `object[]` is met `Principal`-objecten, doorloopt u het resultaat en cast u de `Principal`-objecten naar `User`- of `Group`-objecten.
 
-   Gebruikend de resulterende `User` of `Group` voorwerp (die allebei van de `Principal` interface erven), wint de informatie terug u in uw werkschema&#39;s nodig hebt. De domeinnaam en canonieke naamwaarden vormen samen bijvoorbeeld een unieke identificatie van een principal. Deze worden opgehaald door respectievelijk de velden `Principal` en `domainName` velden van het `canonicalName` object aan te roepen.
+   Met het resulterende `User`- of `Group`-object (dat beide overerft van de `Principal`-interface) haalt u de informatie op die u in uw workflows nodig hebt. De domeinnaam en canonieke naamwaarden vormen samen bijvoorbeeld een unieke identificatie van een principal. Deze worden teruggewonnen door `Principal` de gebieden `domainName` en `canonicalName` van objecten, respectievelijk aan te halen.
 
-   Als u een lokale gebruiker wilt verwijderen, roept u de methode van het `DirectoryManagerServiceService` `deleteLocalUser` object aan en geeft u de id van de gebruiker door.
+   Als u een lokale gebruiker wilt verwijderen, roept u de methode `deleteLocalUser` van het object `DirectoryManagerServiceService` aan en geeft u de id van de gebruiker door.
 
-   Als u een lokale groep wilt verwijderen, roept u de methode van het `DirectoryManagerServiceService` `deleteLocalGroup` object aan en geeft u de id van de groep door.
+   Als u een lokale groep wilt verwijderen, roept u de methode `deleteLocalGroup` van het object `DirectoryManagerServiceService` aan en geeft u de id van de groep door.
 
 **Zie ook**
 
@@ -598,17 +598,17 @@ Om gebruikers, groepen, en domeinen programmatically te beheren gebruikend de Di
 
 [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## Rollen en machtigingen beheren {#managing-roles-and-permissions}
+## Rollen en machtigingen {#managing-roles-and-permissions} beheren
 
 Dit onderwerp beschrijft hoe u de Dienst API van de Manager van de Vergunning (Java) kunt gebruiken om, rollen en toestemmingen programmatically toe te wijzen te verwijderen en te bepalen.
 
 In AEM Forms is een *rol* een groep machtigingen voor toegang tot een of meer systeembronnen. Deze toestemmingen worden gecreeerd door het Beheer van de Gebruiker en door de de dienstcomponenten afgedwongen. Een beheerder kan bijvoorbeeld de rol &quot;Policy Set Author&quot; aan een groep gebruikers toewijzen. Het Rights Management zou dan de gebruikers van die groep met die rol toestaan om beleidsreeksen door beleidsconsole tot stand te brengen.
 
-Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. De standaardrollen (*systeemrollen)* zijn reeds ingezeten in AEM Forms. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
+Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. Standaardrollen (*systeemrollen)* zijn reeds ingezeten in AEM Forms. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
 
 Rollen maken het eenvoudiger om machtigingen te beheren. Wanneer een rol aan een hoofd wordt toegewezen, wordt een reeks toestemmingen automatisch toegewezen aan dat hoofd, en alle specifieke op toegang betrekking hebbende besluiten voor het hoofd zijn gebaseerd op die algemene reeks toegewezen toestemmingen.
 
-### Overzicht van de stappen {#summary_of_steps-4}
+### Overzicht van stappen {#summary_of_steps-4}
 
 Voer de volgende stappen uit om rollen en machtigingen te beheren:
 
@@ -622,7 +622,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een AuthorizationManagerService-client maken**
 
-Alvorens u een verrichting van AuthorizationManagerService van het Beheer van de Gebruiker programmatically kunt uitvoeren, moet u een cliënt AuthorizationManagerService tot stand brengen. Met de Java API wordt dit verwezenlijkt door een `AuthorizationManagerServiceClient` voorwerp tot stand te brengen.
+Alvorens u een verrichting van AuthorizationManagerService van het Beheer van de Gebruiker programmatically kunt uitvoeren, moet u een cliënt AuthorizationManagerService tot stand brengen. Met de Java API wordt dit verwezenlijkt door een `AuthorizationManagerServiceClient` voorwerp te creëren.
 
 **De juiste rol- of machtigingsbewerkingen aanroepen**
 
@@ -650,19 +650,19 @@ Voer de volgende taken uit om rollen en machtigingen te beheren met de API (Java
 
 1. Maak een AuthorizationManagerService-client.
 
-   Maak een `AuthorizationManagerServiceClient` object met behulp van de constructor en geef een `ServiceClientFactory` object door dat verbindingseigenschappen bevat.
+   Maak een `AuthorizationManagerServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Roep de juiste rol- of machtigingsbewerkingen aan.
 
-   Als u een rol wilt toewijzen aan een principal, roept u de methode van het `AuthorizationManagerServiceClient` `assignRole` object aan en geeft u de volgende waarden door:
+   Als u een rol wilt toewijzen aan een principal, roept u de methode `assignRole` van het object `AuthorizationManagerServiceClient` op en geeft u de volgende waarden door:
 
-   * Een `java.lang.String` object dat de rol-id bevat
-   * Een array van `java.lang.String` objecten met de belangrijkste id&#39;s.
+   * Een `java.lang.String`-object dat de rol-id bevat
+   * Een array van `java.lang.String`-objecten met de belangrijkste id&#39;s.
 
-   Als u een rol uit een principal wilt verwijderen, roept u de methode van het `AuthorizationManagerServiceClient` `unassignRole` object aan en geeft u de volgende waarden door:
+   Als u een rol wilt verwijderen uit een principal, roept u de methode `unassignRole` van het object `AuthorizationManagerServiceClient` op en geeft u de volgende waarden door:
 
-   * Een `java.lang.String` object dat de rol-id bevat.
-   * Een array van `java.lang.String` objecten met de belangrijkste id&#39;s.
+   * Een object `java.lang.String` dat de rol-id bevat.
+   * Een array van `java.lang.String`-objecten met de belangrijkste id&#39;s.
 
 
 **Zie ook**
@@ -685,32 +685,32 @@ Rollen en machtigingen beheren met behulp van de API (webservice) voor machtigin
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een AuthorizationManagerService-client.
 
-   * Maak een `AuthorizationManagerServiceClient` object met de standaardconstructor.
-   * Maak een `AuthorizationManagerServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`.) U hoeft het `lc_version` kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `AuthorizationManagerServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `AuthorizationManagerServiceClient`-object met de standaardconstructor.
+   * Maak een `AuthorizationManagerServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/AuthorizationManagerService?blob=mtom`). U hoeft het `lc_version`-kenmerk niet te gebruiken. Dit kenmerk wordt gebruikt wanneer u een serviceverwijzing maakt.
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `AuthorizationManagerServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `AuthorizationManagerServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `AuthorizationManagerServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Roep de juiste rol- of machtigingsbewerkingen aan.
 
-   Als u een rol wilt toewijzen aan een principal, roept u de methode van het `AuthorizationManagerServiceClient` `assignRole` object aan en geeft u de volgende waarden door:
+   Als u een rol wilt toewijzen aan een principal, roept u de methode `assignRole` van het object `AuthorizationManagerServiceClient` op en geeft u de volgende waarden door:
 
-   * Een `string` object dat de rol-id bevat
-   * Een `MyArrayOf_xsd_string` object dat de belangrijkste id&#39;s bevat.
+   * Een `string`-object dat de rol-id bevat
+   * Een object `MyArrayOf_xsd_string` dat de belangrijkste id&#39;s bevat.
 
-   Als u een rol uit een principal wilt verwijderen, roept u de methode van het `AuthorizationManagerServiceService` `unassignRole` object aan en geeft u de volgende waarden door:
+   Als u een rol wilt verwijderen uit een principal, roept u de methode `unassignRole` van het object `AuthorizationManagerServiceService` op en geeft u de volgende waarden door:
 
-   * Een `string` object dat de rol-id bevat.
-   * Een array van `string` objecten met de belangrijkste id&#39;s.
+   * Een object `string` dat de rol-id bevat.
+   * Een array van `string`-objecten met de belangrijkste id&#39;s.
 
 
 **Zie ook**
@@ -719,7 +719,7 @@ Rollen en machtigingen beheren met behulp van de API (webservice) voor machtigin
 
 [AEM Forms aanroepen met MTOM](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-mtom)
 
-## Gebruikers verifiëren {#authenticating-users}
+## Gebruikers {#authenticating-users} verifiëren
 
 In dit onderwerp wordt beschreven hoe u de API (Java) voor verificatiebeheer kunt gebruiken om uw clienttoepassingen in staat te stellen gebruikers programmatisch te verifiëren.
 
@@ -744,7 +744,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>De gebruiker heeft toegang tot een website en geeft een gebruikersnaam en wachtwoord op. Deze informatie wordt verzonden naar een J2EE-toepassingsserver die als host fungeert voor AEM Forms.</p></td> 
   </tr> 
   <tr> 
@@ -762,7 +762,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </tbody> 
 </table>
 
-### Overzicht van de stappen {#summary_of_steps-5}
+### Overzicht van stappen {#summary_of_steps-5}
 
 Voer de volgende stappen uit om een gebruiker programmatisch te verifiëren:
 
@@ -777,7 +777,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een AuthenticationManagerService-client maken**
 
-Alvorens u een gebruiker programmatically kunt voor authentiek verklaren, moet u een cliënt tot stand brengen AuthenticationManagerService. Maak een `AuthenticationManagerServiceClient` object wanneer u de Java API gebruikt.
+Alvorens u een gebruiker programmatically kunt voor authentiek verklaren, moet u een cliënt tot stand brengen AuthenticationManagerService. Wanneer u de Java API gebruikt, maakt u een `AuthenticationManagerServiceClient`-object.
 
 **De verificatiebewerking aanroepen**
 
@@ -785,7 +785,7 @@ Zodra u de de dienstcliënt hebt gecreeerd, kunt u de authentificatieverrichting
 
 **De verificatiecontext ophalen**
 
-Nadat u de gebruiker hebt geverifieerd, kunt u een context maken op basis van de geverifieerde gebruiker. Vervolgens kunt u de inhoud gebruiken om een andere AEM Forms-service aan te roepen. U kunt de context bijvoorbeeld gebruiken om een PDF-document met een wachtwoord te maken `EncryptionServiceClient` en te versleutelen. Zorg ervoor dat de gebruiker die voor authentiek werd verklaard de genoemde rol heeft `Services User` die wordt vereist om de dienst van AEM Forms aan te halen.
+Nadat u de gebruiker hebt geverifieerd, kunt u een context maken op basis van de geverifieerde gebruiker. Vervolgens kunt u de inhoud gebruiken om een andere AEM Forms-service aan te roepen. U kunt de context bijvoorbeeld gebruiken om een `EncryptionServiceClient` te maken en een PDF-document met een wachtwoord te versleutelen. Zorg ervoor dat de gebruiker die voor authentiek werd verklaard de rol genoemd `Services User` heeft die wordt vereist om de dienst van AEM Forms aan te halen.
 
 **Zie ook**
 
@@ -797,7 +797,7 @@ Nadat u de gebruiker hebt geverifieerd, kunt u een context maken op basis van de
 
 [PDF-documenten versleutelen met een wachtwoord](/help/forms/developing/encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
-### Gebruikers verifiëren met de Java API {#authenticate-a-user-using-the-java-api}
+### Gebruikers verifiëren met de Java-API {#authenticate-a-user-using-the-java-api}
 
 Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentificatie (Java):
 
@@ -807,22 +807,22 @@ Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentif
 
 1. Creeer een cliënt AuthenticationManagerServices.
 
-   Maak een `AuthenticationManagerServiceClient` object met behulp van de constructor en geef een `ServiceClientFactory` object door dat verbindingseigenschappen bevat.
+   Maak een `AuthenticationManagerServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Roep de verificatiebewerking aan.
 
-   Roep de methode van het `AuthenticationManagerServiceClient` `authenticate` object aan en geef de volgende waarden door:
+   Roep de methode `authenticate` van het object `AuthenticationManagerServiceClient` aan en geef de volgende waarden door:
 
-   * Een `java.lang.String` object dat de naam van de gebruiker bevat.
-   * Een bytearray (een `byte[]` object) met het wachtwoord van de gebruiker. U kunt het `byte[]` object verkrijgen door de `java.lang.String` methode van het `getBytes` object aan te roepen.
+   * Een object `java.lang.String` dat de naam van de gebruiker bevat.
+   * Een bytearray (een object `byte[]`) met het wachtwoord van de gebruiker. U kunt het `byte[]` voorwerp verkrijgen door de `java.lang.String` methode `getBytes` van objecten aan te halen.
 
-   De methode authenticate retourneert een `AuthResult` object dat informatie bevat over de geverifieerde gebruiker.
+   De methode authenticate retourneert een `AuthResult`-object dat informatie bevat over de geverifieerde gebruiker.
 
 1. Haal de verificatiecontext op.
 
-   Roep de `ServiceClientFactory` methode van het `getContext` object aan, die een `Context` object retourneert.
+   Roep de methode `ServiceClientFactory` van het object `getContext` aan, die een object `Context` retourneert.
 
-   Roep vervolgens de `Context` methode van het `initPrincipal` object aan en geef deze door `AuthResult`.
+   Roep vervolgens de methode `Context` van het object `initPrincipal` aan en geef `AuthResult` door.
 
 ### Gebruikers verifiëren met de webservice-API {#authenticate-a-user-using-the-web-service-api}
 
@@ -830,20 +830,20 @@ Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentif
 
 1. Inclusief projectbestanden.
 
-   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Authentificatie verbruikt. (Zie AEM Forms [aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
-   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in het [Aanhalen van AEM Forms gebruikend Codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)Base64.)
+   * Creeer een de cliëntassemblage van Microsoft .NET die de Manager WSDL van de Authentificatie verbruikt. (Zie [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
+   * Verwijs naar de cliëntassemblage van Microsoft .NET. (Zie &quot;Verwijzen van de .NET cliëntassemblage&quot;in [het Aanhalen van AEM Forms gebruikend Base64 het coderen](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding).)
 
 1. Maak een AuthenticationManagerService-client.
 
-   Maak een `AuthenticationManagerServiceService` object met de constructor van de proxyklasse.
+   Maak een `AuthenticationManagerServiceService`-object met de constructor van de proxyklasse.
 
 1. Roep de verificatiebewerking aan.
 
-   Roep de methode van het `AuthenticationManagerServiceClient` `authenticate` object aan en geef de volgende waarden door:
+   Roep de methode `authenticate` van het object `AuthenticationManagerServiceClient` aan en geef de volgende waarden door:
 
-   * Een `string` object dat de naam van de gebruiker bevat
-   * Een bytearray (een `byte[]` object) met het wachtwoord van de gebruiker. U kunt het `byte[]` object verkrijgen door een `string` object met het wachtwoord om te zetten in een `byte[]` array met behulp van de logica in het onderstaande voorbeeld.
-   * De geretourneerde waarde is een `AuthResult` object dat kan worden gebruikt om informatie over de gebruiker op te halen. In het onderstaande voorbeeld wordt de informatie van de gebruiker opgehaald door eerst het `AuthResult` veld van het `authenticatedUser` object te verkrijgen en vervolgens de velden `User` en `canonicalName` `domainName` velden van het resulterende object te verkrijgen.
+   * Een object `string` dat de naam van de gebruiker bevat
+   * Een bytearray (een object `byte[]`) met het wachtwoord van de gebruiker. U kunt het object `byte[]` verkrijgen door een object `string` met het wachtwoord om te zetten in een array `byte[]` met de logica in het onderstaande voorbeeld.
+   * De geretourneerde waarde is een `AuthResult`-object dat kan worden gebruikt om informatie over de gebruiker op te halen. In het onderstaande voorbeeld wordt de informatie van de gebruiker opgehaald door eerst het veld `AuthResult` van het object `authenticatedUser` te verkrijgen en vervolgens de velden `canonicalName` en `domainName` van het resulterende object te verkrijgen.`User`
 
 **Zie ook**
 
@@ -851,7 +851,7 @@ Verifieer een gebruiker gebruikend de Dienst API van de Manager van de Authentif
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Gebruikers programmatisch synchroniseren {#programmatically-synchronizing-users}
+## Gebruikers {#programmatically-synchronizing-users} programmatisch synchroniseren
 
 U kunt gebruikers programmatically synchroniseren door de API van het Beheer van de Gebruiker te gebruiken. Wanneer u gebruikers synchroniseert, werkt u AEM Forms bij met gebruikersgegevens in uw gegevensopslagruimte. Stel bijvoorbeeld dat u nieuwe gebruikers toevoegt aan de gegevensopslagruimte van uw gebruiker. Nadat u een synchronisatiebewerking hebt uitgevoerd, worden de nieuwe gebruikers AEM formuliergebruikers. Ook gebruikers die niet meer in je gebruikerslijst staan, worden uit AEM Forms verwijderd.
 
@@ -870,7 +870,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>Een clienttoepassing vraagt of AEM Forms een synchronisatiebewerking uitvoert.</p></td> 
   </tr> 
   <tr> 
@@ -888,7 +888,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </tbody> 
 </table>
 
-### Overzicht van de stappen {#summary_of_steps-6}
+### Overzicht van stappen {#summary_of_steps-6}
 
 Voer de volgende stappen uit om gebruikers programmatisch te synchroniseren:
 
@@ -904,11 +904,11 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een UserManagerUtilServiceClientclient maken**
 
-Voordat u gebruikers programmatisch kunt synchroniseren, moet u een `UserManagerUtilServiceClient` object maken.
+Voordat u gebruikers programmatisch kunt synchroniseren, moet u een `UserManagerUtilServiceClient`-object maken.
 
 **Het ondernemingsdomein opgeven**
 
-Voordat u een synchronisatiebewerking uitvoert met de API voor gebruikersbeheer, geeft u het ondernemingsdomein op waartoe gebruikers behoren. U kunt een of meerdere ondernemingsdomeinen opgeven. Alvorens u een synchronisatieverrichting programmatically kunt uitvoeren, moet u een ondernemingsdomein opstelling gebruikend de Console van het Beleid. (Zie [Help bij](https://www.adobe.com/go/learn_aemforms_admin_63)de administratie.)
+Voordat u een synchronisatiebewerking uitvoert met de API voor gebruikersbeheer, geeft u het ondernemingsdomein op waartoe gebruikers behoren. U kunt een of meerdere ondernemingsdomeinen opgeven. Alvorens u een synchronisatieverrichting programmatically kunt uitvoeren, moet u een ondernemingsdomein opstelling gebruikend de Console van het Beleid. (Zie [administration help](https://www.adobe.com/go/learn_aemforms_admin_63).)
 
 **De synchronisatiebewerking aanroepen**
 
@@ -938,19 +938,19 @@ Gebruikers synchroniseren met de API voor gebruikersbeheer (Java):
 
 1. Maak een UserManagerUtilServiceClient-client.
 
-   Maak een `UserManagerUtilServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `UserManagerUtilServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Geef het ondernemingsdomein op.
 
-   * Roep de `UserManagerUtilServiceClient` methode van het `scheduleSynchronization` object aan om de gebruikerssynchronisatiebewerking te starten.
-   * Maak een `java.util.Set` instantie met een `HashSet` constructor. Zorg ervoor dat u opgeeft `String` als gegevenstype. Deze `Java.util.Set` instantie slaat de domeinnamen op waarop de synchronisatiebewerking van toepassing is.
-   * Roep voor elke domeinnaam die u wilt toevoegen de methode add van het `java.util.Set` object aan en geef de domeinnaam door.
+   * Roep de methode `UserManagerUtilServiceClient` van het object `scheduleSynchronization` aan om de gebruikerssynchronisatiebewerking te starten.
+   * Maak een `java.util.Set`-instantie met een `HashSet`-constructor. Zorg ervoor dat u `String` als gegevenstype specificeert. In deze `Java.util.Set`-instantie worden de domeinnamen opgeslagen waarop de synchronisatiebewerking van toepassing is.
+   * Voor elke domeinnaam die moet worden toegevoegd, roept u de methode add van het object `java.util.Set` aan en geeft u de domeinnaam door.
 
 1. Roep de synchronisatiebewerking aan.
 
-   Roep de `ServiceClientFactory` methode van het `getContext` object aan, die een `Context` object retourneert.
+   Roep de methode `ServiceClientFactory` van het object `getContext` aan, die een object `Context` retourneert.
 
-   Roep vervolgens de `Context` methode van het `initPrincipal` object aan en geef deze door `AuthResult`.
+   Roep vervolgens de methode `Context` van het object `initPrincipal` aan en geef `AuthResult` door.
 
 **Zie ook**
 
