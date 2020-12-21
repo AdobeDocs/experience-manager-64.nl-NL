@@ -18,12 +18,12 @@ ht-degree: 0%
 ---
 
 
-# Een domein verwijderen {#delete-a-domain}
+# Een domein {#delete-a-domain} verwijderen
 
 Gebruik de pagina van het Beheer van het Domein om een bestaand domein als verouderd te merken.
 
 Als u een domein met de zelfde naam zoals een geschrapt domein creeert, wordt het geschrapte domein opnieuw opgenomen samen met de informatie die het bevatte. Het DefaultDom-domein kan niet worden verwijderd.
 
 1. Klik in de beheerconsole op **[!UICONTROL Settings > User Management > Domain Management]**.
-1. Schakel het selectievakje in voor het domein dat u wilt verwijderen, klik **[!UICONTROL Delete]** en klik op **[!UICONTROL OK]**.
+1. Selecteer het selectievakje voor het domein dat u wilt verwijderen, klik op **[!UICONTROL Delete]** en klik vervolgens op **[!UICONTROL OK]**.
 
