@@ -16,5 +16,5 @@ ht-degree: 8%
 ---
 
 
-# WIP NIET PUBLICEREN - Werk in uitvoering {#do-not-publish-wip-work-in-progress}
+# WIP NIET PUBLICEREN - Werk bezig {#do-not-publish-wip-work-in-progress}
 
