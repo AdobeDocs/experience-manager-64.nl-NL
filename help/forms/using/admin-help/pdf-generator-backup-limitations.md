@@ -19,6 +19,6 @@ ht-degree: 0%
 ---
 
 
-# Beperkingen voor back-up van PDF Generator {#pdf-generator-backup-limitations}
+# Back-upbeperkingen van de PDF Generator {#pdf-generator-backup-limitations}
 
 Er kan geen back-up worden gemaakt van de tijdelijke map die de PDF Generator gebruikt om bestanden te converteren. Hoewel de service correct wordt hersteld, kunnen gegevens verloren gaan omdat de PDF Generator de inhoud van de tijdelijke map met ingestelde intervallen controleert en wist.
