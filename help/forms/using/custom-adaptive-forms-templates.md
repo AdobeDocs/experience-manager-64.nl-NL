@@ -17,13 +17,13 @@ ht-degree: 0%
 ---
 
 
-# Een aangepaste aangepaste formuliersjabloon maken {#creating-a-custom-adaptive-form-template}
+# Aangepaste aangepaste formuliersjablonen maken {#creating-a-custom-adaptive-form-template}
 
 ## Vereisten {#prerequisites}
 
-* Inzicht in AEM [paginasjabloon](/help/sites-authoring/templates.md) en [adaptieve formulierontwerp](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
+* Begrijpen van AEM [Paginasjabloon](/help/sites-authoring/templates.md) en [Adaptieve formulierontwerpomgeving](https://helpx.adobe.com/aem-forms/6-1/introduction-forms-authoring.html)
 
-* Inzicht in AEM [clientbibliotheken](/help/sites-developing/clientlibs.md)
+* Inzicht in AEM [Client Side Libraries](/help/sites-developing/clientlibs.md)
 
 ## Adaptief formuliersjabloon {#adaptive-form-template}
 
@@ -37,9 +37,9 @@ AEM QuickStart bevat de volgende adaptieve formuliersjablonen:
 
 * Eenvoudig: Hiermee kunt u een adaptief formulier met meerdere tabbladen maken met een lay-out voor tabbladen links, waar u tabbladen in willekeurige volgorde kunt bekijken.
 * Basis met Adobe Sign: Hiermee kunt u een formulier maken met meerdere tabbladen en wizard. Er wordt een lay-out met tabs links gebruikt waarmee u tabbladen in willekeurige volgorde kunt bezoeken. Voor ondertekening en verificatie worden Adobe Document Cloud-ontwerpservices gebruikt.
-* Lege sjabloon: Hiermee kunt u een formulier maken zonder koptekst, voettekst en eerste inhoud. U kunt componenten toevoegen, zoals tekstvakken, knoppen en afbeeldingen. Met de lege sjabloon kunt u een formulier maken dat u kunt [insluiten in AEM sitepagina](/help/forms/using/embed-adaptive-form-aem-sites.md).
+* Lege sjabloon: Hiermee kunt u een formulier maken zonder koptekst, voettekst en eerste inhoud. U kunt componenten toevoegen, zoals tekstvakken, knoppen en afbeeldingen. Met de lege sjabloon kunt u een formulier maken dat u [kunt insluiten in AEM sitepagina&#39;s](/help/forms/using/embed-adaptive-form-aem-sites.md).
 
-Deze sjablonen hebben de `sling:resourceType` eigenschap ingesteld op de corresponderende paginacomponent. De paginacomponent geeft de CQ-pagina weer, die een adaptieve formuliercontainer bevat, die op zijn beurt weer een adaptief formulier maakt.
+Voor deze sjablonen is de eigenschap `sling:resourceType` ingesteld op de corresponderende paginacomponent. De paginacomponent geeft de CQ-pagina weer, die een adaptieve formuliercontainer bevat, die op zijn beurt weer een adaptief formulier maakt.
 
 In de volgende tabel wordt de koppeling tussen sjablonen en paginacomponent opgesomd:
 
@@ -68,7 +68,7 @@ In de volgende tabel wordt de koppeling tussen sjablonen en paginacomponent opge
  </tbody> 
 </table>
 
-## Een aangepaste formuliersjabloon maken met behulp van een sjablooneditor {#creating-an-adaptive-form-template-using-template-editor}
+## Een aangepaste formuliersjabloon maken met behulp van sjablooneditor {#creating-an-adaptive-form-template-using-template-editor}
 
 U kunt de structuur en de initiële inhoud van een adaptief formulier opgeven met de Sjablooneditor. U wilt bijvoorbeeld dat alle formulierauteurs weinig tekstvakken, navigatieknoppen en een verzendknop in een inschrijvingsformulier hebben. U kunt een sjabloon maken die auteurs kunnen gebruiken om een formulier te maken dat consistent is met andere inschrijvingsformulieren. Met AEM Sjablooneditor kunt u:
 
@@ -77,7 +77,7 @@ U kunt de structuur en de initiële inhoud van een adaptief formulier opgeven me
 * Geef een thema op.
 * Geef handelingen op, zoals Verzenden, Herstellen en Navigeren.
 
-Zie [Sjablooneditor](/help/forms/using/template-editor.md)voor meer informatie.
+Zie [Sjablooneditor](/help/forms/using/template-editor.md) voor meer informatie.
 
 ## Een adaptieve formuliersjabloon maken op basis van CRXDE {#creating-an-adaptive-form-template-from-crxde}
 
@@ -92,55 +92,55 @@ Voer de volgende stappen uit om een douanemalplaatje, zoals simpleEnrollmentTemp
 1. Maak onder de map /apps de mapstructuur voor uw toepassing. Als de toepassingsnaam bijvoorbeeld mijn bedrijf is, maakt u een map met deze naam. De toepassingsmap bevat doorgaans componenten, configuratie, sjablonen, bron en installatiemappen. In dit voorbeeld maakt u de mappen voor componenten, configuratie en sjablonen.
 
 1. Navigeer naar de map /libs/fd/af/templates.
-1. Kopieer het `simpleEnrollmentTemplate` knooppunt.
+1. Kopieer de `simpleEnrollmentTemplate` knoop.
 1. Navigeer naar de map /apps/mijnbedrijf/sjablonen. Klik er met de rechtermuisknop op en selecteer **[!UICONTROL Paste]**.
 1. Wijzig zo nodig de naam van het sjabloonknooppunt dat u hebt gekopieerd. Wijzig bijvoorbeeld de naam ervan in een inschrijfsjabloon.
 
 1. Navigeer naar de locatie /apps/mijnbedrijf/sjablonen/inschrijvingssjabloon.
 
-1. Wijzig de `jcr:title` en de `jcr:description` eigenschappen voor de `jcr:content` knoop om het malplaatje van het malplaatje te onderscheiden u kopieerde.
+1. Wijzig `jcr:title` en `jcr:description` eigenschappen voor `jcr:content` knoop om het malplaatje van het malplaatje te onderscheiden u kopieerde.
 
-1. Het `jcr:content` knooppunt van de gewijzigde sjabloon bevat de `guideContainer` en de `guideformtitle` componenten. `guideContainer` is de container die het adaptieve formulier bevat. De `guideformtitle` component geeft de toepassingsnaam, beschrijving enzovoort weer.
+1. Het knooppunt `jcr:content` van de gewijzigde sjabloon bevat de componenten `guideContainer` en `guideformtitle`. `guideContainer` is de container die het adaptieve formulier bevat. De `guideformtitle` component toont de toepassingsnaam, beschrijving, etc.
 
-   In plaats van `guideformtitle`een aangepaste component of de `parsys` component op te nemen. U kunt bijvoorbeeld een aangepaste component of het `guideformtitle`componentknooppunt verwijderen `parsys` en toevoegen. Zorg ervoor dat de `sling:resourceType` eigenschap van de component verwijst naar de component en hetzelfde wordt gedefinieerd in het `component.jsp` paginabestand.
+   In plaats van `guideformtitle` kunt u een aangepaste component of de `parsys` component opnemen. Verwijder bijvoorbeeld `guideformtitle` en voeg een aangepaste component of het componentknooppunt `parsys` toe. Zorg ervoor dat de eigenschap `sling:resourceType` van de component verwijst naar de component en dat dit is gedefinieerd in het bestand `component.jsp` op de pagina.
 
 1. Navigeer naar de locatie /apps/mijnbedrijf/sjablonen/inschrijving-sjabloon/jcr:content.
 
-1. Open het **[!UICONTROL Properties]** tabblad en wijzig de waarde van de `cq:designPath` eigenschap in /etc/designs/mijnbedrijf.
+1. Open het tabblad **[!UICONTROL Properties]** en wijzig de waarde van de eigenschap `cq:designPath` in /etc/designs/mijnbedrijf.
 
 1. Creëer nu een /etc/designs/mycompany knoop voor het `cq:Page` type.
 
-## Een adaptief onderdeel van een formulierpagina maken {#create-an-adaptive-form-page-component}
+## Een adaptieve formulierpaginacomponent {#create-an-adaptive-form-page-component} maken
 
-De aangepaste sjabloon heeft dezelfde opmaak als de standaardsjabloon, omdat de sjabloon verwijst naar de paginacomponent /libs/fd/af/components/page/base. U kunt de componentenverwijzing vinden als bezit dat bij de knoop /apps/mijnbedrijf/malplaatjes/inschrijfment-malplaatje/jcr wordt `sling:resourceType` bepaald:content. Omdat de basis een kernproductcomponent is, wijzigt u deze component niet.
+De aangepaste sjabloon heeft dezelfde opmaak als de standaardsjabloon, omdat de sjabloon verwijst naar de paginacomponent /libs/fd/af/components/page/base. U kunt de componentenverwijzing vinden als bezit `sling:resourceType` die bij de knoop /apps/mijnbedrijf/malplaatjes/inschrijfment-malplaatje/jcr wordt bepaald:content. Omdat de basis een kernproductcomponent is, wijzigt u deze component niet.
 
 1. Ga naar het knooppunt /apps/mijnbedrijf/sjablonen/inschrijving-sjabloon/jcr:content en wijzig de waarde van de eigenschap `sling:resourceType` in /apps/mijnbedrijf/componenten/pagina/inschrijfpagina
 1. Kopieer het knooppunt /libs/fd/af/components/page/base naar de map /apps/mijnbedrijf/componenten/pagina.
 
 1. Wijzig de naam van de gekopieerde component in `enrollmentpage`.
 
-1. **(Alleen als u al een inhoudspagina hebt)** Voer de volgende stappen (a-d) uit als u een bestaande `contentpage`component voor uw website hebt. Als u geen bestaande `contentpage`component voor uw website hebt, kunt u de `resourceSuperType`eigenschap laten verwijzen naar de OOTB-basispagina.
+1. **(Alleen als u al een inhoudspagina hebt)** Voer de volgende stappen (a-d) uit als u een bestaande  `contentpage`component voor uw website hebt. Als u geen bestaande `contentpage`component voor uw website hebt, kunt u de `resourceSuperType`eigenschap laten verwijzen naar de OOTB-basispagina.
 
-   1. Stel voor het `enrollmentpage` knooppunt de waarde van de eigenschap in `sling:resourceSuperType` op mijnbedrijf/componenten/pagina/inhoudspagina. De `contentpage` component is de basispaginacomponent voor uw site. Andere paginacomponenten kunnen het uitbreiden. Scriptbestanden verwijderen onder `enrollmentpage`, behalve `head.jsp`, `content.jsp`en `library.jsp`. De `sling:resourceSuperType` component, die `contentpage` in dit geval is, omvat al dergelijke manuscripten. Kopteksten, waaronder navigatiebalk en voettekst, worden overgenomen van de `contentpage` component.
+   1. Stel voor het knooppunt `enrollmentpage` de waarde van de eigenschap `sling:resourceSuperType` in op mijnbedrijf/componenten/pagina/contentPage. De component `contentpage` is de basispaginacomponent voor uw site. Andere paginacomponenten kunnen het uitbreiden. Verwijder manuscriptdossiers onder `enrollmentpage`, behalve `head.jsp`, `content.jsp`, en `library.jsp`. De `sling:resourceSuperType` component, die `contentpage` in dit geval is, omvat al dergelijke manuscripten. Kopteksten, inclusief navigatiebalk en voettekst, worden overgenomen van de component `contentpage`.
 
-   1. Open the file `head.jsp`.
+   1. Open het bestand `head.jsp`.
 
       Het JSP-bestand bevat de regel `<cq.include script="library.jsp"/>`.
 
-      Het `library.jsp` bestand bevat de `guide.theme.simpleEnrollment` clientbibliotheek met de opmaak voor het adaptieve formulier.
+      Het `library.jsp`-bestand bevat de `guide.theme.simpleEnrollment`-clientbibliotheek, die de opmaak voor het adaptieve formulier bevat.
 
-      De component page `enrollmentpage` heeft een exclusief `head.jsp` bestand dat het `head.jsp` bestand van de `contentpage` component overschrijft.
+      De paginacomponent `enrollmentpage` heeft een exclusief `head.jsp` dossier dat het `head.jsp` dossier van `contentpage` component met voeten treedt.
 
-   1. Neem alle scripts in het `head.jsp` bestand voor de `contentpage` component op naar het `head.jsp` bestand voor de `enrollmentpage` component.
-   1. In het `content.jsp` script kunt u aanvullende pagina-inhoud of verwijzingen toevoegen naar andere componenten die worden opgenomen wanneer een pagina wordt gerenderd. Als u bijvoorbeeld de aangepaste component toevoegt `applicationformheader`, moet u de volgende verwijzing naar de component in het JSP-bestand toevoegen:
+   1. Neem alle scripts in het `head.jsp`-bestand op voor de `contentpage`-component naar het `head.jsp`-bestand voor de `enrollmentpage`-component.
+   1. In het `content.jsp`-script kunt u extra pagina-inhoud of verwijzingen toevoegen naar andere componenten die worden opgenomen wanneer een pagina wordt gerenderd. Als u bijvoorbeeld de aangepaste component `applicationformheader` toevoegt, moet u de volgende verwijzing naar de component in het JSP-bestand toevoegen:
 
       `<cq:include path="applicationformheader" resourceType="mycompany/components/applicationformheader"/>`
 
       Op dezelfde manier als u een `parsys` component in de structuur van de malplaatjeknoop toevoegt, omvat ook de douanecomponent.
 
-## Een adaptieve formulierclientbibliotheek maken {#creating-an-adaptive-form-client-library}
+## Een aangepaste formulierclientbibliotheek maken {#creating-an-adaptive-form-client-library}
 
-Het `head.jsp` bestand van de `enrollmentpage` component voor de nieuwe sjabloon bevat een clientbibliotheek `guide.theme.simpleEnrollment`. De standaardsjabloon gebruikt deze clientbibliotheek ook. Wijzig de stijl in de nieuwe sjabloon op een van de volgende manieren:
+Het `head.jsp`-bestand van de `enrollmentpage`-component voor de nieuwe sjabloon bevat een clientbibliotheek `guide.theme.simpleEnrollment`. De standaardsjabloon gebruikt deze clientbibliotheek ook. Wijzig de stijl in de nieuwe sjabloon op een van de volgende manieren:
 
 * Definieer een aangepast thema en vervang het standaardthema `guide.theme.simpleEnrollment` door het aangepaste thema.
 * Definieer een nieuwe clientbibliotheek onder /etc/designs/mijnbedrijf. Neem de clientbibliotheek op na het standaardthemaitem in de jsp-pagina. Neem alle overschreven stijlen en extra JavaScript-bestanden op in deze clientbibliotheek.
