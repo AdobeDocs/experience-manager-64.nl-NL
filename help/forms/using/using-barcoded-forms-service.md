@@ -29,7 +29,7 @@ De service Barcoded Forms ondersteunt de volgende **tweedimensionale (2D)** symb
 * Gegevensmatrix
 * QR-code
 
-De service ondersteunt ook de volgende **eendimensionale** symbolen die worden geleverd als gescande TIFF- of PDF-documenten:
+De service biedt ook ondersteuning voor de volgende **eendimensionale** symbolen die worden geleverd als gescande TIFF- of PDF-documenten:
 
 * Codabar
 * Code 128
@@ -91,11 +91,11 @@ De service Barcoded Forms retourneert het volgende XML-document na het decoderen
 </xb:scanned_image>
 ```
 
-## Overwegingen voor de dienst {#considerations}
+## Overwegingen voor de service {#considerations}
 
-### Workflows die formulieren met streepjescodes gebruiken {#workflows-that-use-barcoded-forms}
+### Workflows met streepjescodes {#workflows-that-use-barcoded-forms}
 
-Formulierauteurs maken met Designer interactieve formulieren met streepjescodes. (Zie [Help bij](https://www.adobe.com/go/learn_aemforms_designer_63)Designer.) Wanneer een gebruiker een formulier met streepjescodes invult met Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
+Formulierauteurs maken met Designer interactieve formulieren met streepjescodes. (Zie [Designer Help](https://www.adobe.com/go/learn_aemforms_designer_63).) Wanneer een gebruiker een formulier met streepjescodes invult met Adobe Reader of Acrobat, wordt de streepjescode automatisch bijgewerkt om de formuliergegevens te coderen.
 
 De service Barcoded Forms is handig voor het converteren van gegevens die op papier staan naar elektronisch formaat. Wanneer bijvoorbeeld een formulier met streepjescodes wordt gevuld en afgedrukt, kan de afgedrukte kopie worden gescand en worden gebruikt als invoer voor de service Barcoded Forms.
 
@@ -121,20 +121,20 @@ Wanneer u BCF APIs gebruikt, overweeg de volgende beperkingen:
 * Interactieve formulieren worden niet correct gedecodeerd, tenzij ze worden afgevlakt.
 * 1-D-streepjescodes mogen alleen alfanumerieke waarden bevatten (mits ondersteund). 1-D-streepjescodes die speciale symbolen bevatten, worden niet gedecodeerd.
 
-### Andere beperkingen {#other-limitations}
+### Overige beperkingen {#other-limitations}
 
 Overweeg ook &quot;de volgende beperkingen wanneer u de Barcoded Forms-service gebruikt:
 
 * De service biedt volledige ondersteuning voor AcroForms en statische formulieren met 2D-streepjescodes die zijn opgeslagen met Adobe Reader of Acrobat. Voor 1D-streepjescodes voegt u het formulier echter samen of levert u het als gescand PDF- of TIFF-document.
 * Dynamische XFA-formulieren worden niet volledig ondersteund. Als u 1D- en 2D-streepjescodes op de juiste manier wilt decoderen in een dynamisch formulier, voegt u het formulier samen of geeft u het op als gescand PDF- of TIFF-document.
 
-Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen gebruikt als de bovenstaande beperkingen worden nageleefd. Raadpleeg de Help bij [Designer voor meer informatie over het maken van interactieve formulieren met streepjescodes](https://www.adobe.com/go/learn_aemforms_designer_63).
+Bovendien kan de service elke streepjescode decoderen die ondersteunde symbolen gebruikt als de bovenstaande beperkingen worden nageleefd. Zie [Help bij Designer](https://www.adobe.com/go/learn_aemforms_designer_63) voor meer informatie over het maken van interactieve formulieren met streepjescodes.
 
 ## Eigenschappen van de service configureren   {#configureproperties}
 
-U kunt de **AEMFD Barcoded Forms Service** in AEM Console gebruiken om eigenschappen voor deze dienst te vormen. De standaard-URL van AEM console is `https://[host]:[port]/system/console/configMgr`.
+Met de **AEMFD Barcoded Forms Service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van AEM console is `https://[host]:[port]/system/console/configMgr`.
 
-## De service gebruiken {#using}
+## De service {#using} gebruiken
 
 Barcoded Forms Service biedt de volgende twee API&#39;s:
 
@@ -142,7 +142,7 @@ Barcoded Forms Service biedt de volgende twee API&#39;s:
 
 * **[extractToXML](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/bcf/api/BarcodedFormsService.html#decode)**: Gegevens die zijn gedecodeerd met de decoder-API converteren naar XML-gegevens. Deze XML-gegevens kunnen worden samengevoegd met een XFA-formulier. Er wordt een lijst met XML-documenten geretourneerd, één voor elke streepjescode.
 
-### De Dienst BCF met JSP of Servlets gebruiken {#using-bcf-service-with-a-jsp-or-servlets}
+### De Dienst BCF met JSP of Servlets {#using-bcf-service-with-a-jsp-or-servlets} gebruiken
 
 De volgende voorbeeldcode decodeert een streepjescode in een document en slaat de uitvoer-XML op de schijf op.
 
@@ -231,7 +231,7 @@ De volgende voorbeeldcode decodeert een streepjescode in een document en slaat d
 %>
 ```
 
-### Het gebruiken van de dienst BCF met AEM Werkstromen {#using-the-bcf-service-with-aem-workflows}
+### De BCF-service gebruiken met AEM Workflows {#using-the-bcf-service-with-aem-workflows}
 
 Het runnen van de Gecodeerde dienst van Forms van een werkschema is gelijkaardig aan het runnen van de dienst van JSP/Servlet. Het enige verschil is bij het runnen van de dienst van JSP/Servlet het documentvoorwerp wint automatisch een geval van voorwerp ResourceResolver van het voorwerp ResourceResolverHelper terug. Dit automatische mechanisme werkt niet wanneer de code vanuit een workflow wordt aangeroepen.
 
