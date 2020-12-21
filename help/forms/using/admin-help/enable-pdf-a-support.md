@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# PDF/A-ondersteuning inschakelen {#enable-pdf-a-support}
+# PDF/A-ondersteuning {#enable-pdf-a-support} inschakelen
 
 PDF Generator ondersteunt het maken van PDF/A-compatibele bestanden vanuit Microsoft Excel-, Microsoft PowerPoint- en Microsoft Word-bestanden.
 
