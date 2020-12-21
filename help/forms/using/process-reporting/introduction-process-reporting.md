@@ -27,7 +27,7 @@ De Rapportering van het proces verstrekt een reeks out-of-the-box rapporten die 
 
 De extra Rapportering van het Proces verstrekt een interface om ad hoc vragen in werking te stellen en de meningen van het douanerapport in het Proces te integreren Meldend gebruikersinterface.
 
-Zie Ondersteunde Platforms voor [AEM Forms voor een lijst met ondersteunde browsers](/help/forms/using/aem-forms-jee-supported-platforms.md).
+Zie [Door AEM Forms ondersteunde Platforms](/help/forms/using/aem-forms-jee-supported-platforms.md) voor de lijst met ondersteunde browsers.
 
 Procesrapportage is gebaseerd op modules die:
 
@@ -35,7 +35,7 @@ Procesrapportage is gebaseerd op modules die:
 * Procesgegevens publiceren naar een ingesloten Process Reporting-opslagplaats
 * Biedt een op een browser gebaseerde gebruikersinterface voor het weergeven van rapporten
 
-## Belangrijkste mogelijkheden {#key-capabilities}
+## Belangrijke mogelijkheden {#key-capabilities}
 
 ### Altijd melden {#always-on-reporting}
 
@@ -57,7 +57,7 @@ U kunt meerdere filters combineren om specifieke rapporten te maken.
 
 U kunt de rapportfilters dan opslaan om op een recentere datum of een tijd te lopen.
 
-### Proces-/taakgeschiedenis {#process-task-history}
+### Proces/taakgeschiedenis {#process-task-history}
 
 ![bestandsbeheer](assets/file-management.png)
 
