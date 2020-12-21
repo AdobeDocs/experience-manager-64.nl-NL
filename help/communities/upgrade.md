@@ -18,20 +18,20 @@ ht-degree: 0%
 ---
 
 
-# Opwaarderen naar AEM 6.4 Gemeenschappen {#upgrading-to-aem-communities}
+# Bijwerken naar AEM 6.4-gemeenschappen {#upgrading-to-aem-communities}
 
 Afhankelijk van de topologie en de eigenschappen van elke plaats, kunnen de volgende acties noodzakelijk zijn wanneer bevordering aan AEM Communities 6.4 of het installeren van het recentste eigenschappak.
 
-Deze afdeling is specifiek voor de Gemeenschappen en vormt een aanvulling op de informatie in [Bijwerken naar AEM 6.4](../../help/sites-deploying/upgrade.md) (platform).
+Deze sectie is specifiek voor Gemeenschappen en vormt een aanvulling op de informatie in [Bijwerken naar AEM 6.4](../../help/sites-deploying/upgrade.md) (platform).
 
-## Upgrade uitvoeren vanaf AEM 6.1 of hoger {#upgrading-from-aem-or-later}
+## Bijwerken vanaf AEM 6.1 of hoger {#upgrading-from-aem-or-later}
 
 ### Opnieuw indexeren Solr {#reindex-solr}
 
 Wanneer het installeren van een nieuw de eigenschappak van Gemeenschappen op een plaatsing die met MSRP wordt gevormd, zal het noodzakelijk zijn:
 
-1. Installeer het [nieuwste functiepakket](deploy-communities.md#latestfeaturepack)
-2. Installeer de [nieuwste configuratiebestanden](msrp.md#upgrading)
+1. Het [nieuwste functiepakket](deploy-communities.md#latestfeaturepack) installeren
+2. De [nieuwste configuratiebestanden voor Solr installeren](msrp.md#upgrading)
 3. MSRP opnieuw indexeren
 
    zie sectie [MSRP Reindex Tool](msrp.md#msrp-reindex-tool)
@@ -40,25 +40,27 @@ Wanneer het installeren van een nieuw de eigenschappak van Gemeenschappen op een
 
 Vanaf AEM 6.3 slaan de enablement eigenschappen niet meer rapporteringsinformatie in MySQL op. De MySQL-afhankelijkheid is alleen beschikbaar voor het bijhouden van SCORM-inhoud.
 
-Neem contact op met de [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) voor hulp bij het migreren van inhoud uit Enablement 1.0.
+Neem contact op met [klantenservice](https://helpx.adobe.com/marketing-cloud/contact-support.html) voor hulp bij het migreren van inhoud uit Enablement 1.0.
 
-## Upgrade uitvoeren vanaf AEM 6.0 {#upgrading-from-aem}
+## Bijwerken vanaf AEM 6.0 {#upgrading-from-aem}
 
-Als bestaande UGC moet worden behouden, hangt de manier om dit te doen af van of de plaatsing [op-gebouw](#on-premise-storage) UGC of in de [Adobe wolk](#adobe-cloud-storage)opslaat.
+Als bestaande UGC moet worden behouden, hangt de manier om dit te doen af van of de plaatsing opgeslagen UGC [on-premise](#on-premise-storage) of in [Adobe wolk](#adobe-cloud-storage).
 
 ### Adobe Cloud Storage {#adobe-cloud-storage}
 
 Als de geüpgrade site is geconfigureerd voor het gebruik van de Adobe-cloudopslag, wordt deze mogelijk (onjuist) weergegeven alsof alle UGC is verloren omdat de SRP-methoden de reeds bestaande UGC op de oude locatie niet kunnen vinden.
 
-Aldus, is er de capaciteit om ASRP op te dragen om `AEM 6.0 compatability-mode` tot UGC toegang te hebben.
+Aldus, is er de capaciteit om ASRP op te dragen om `AEM 6.0 compatability-mode` te gebruiken om tot UGC toegang te hebben.
 
 Voor alle AEM 6.3 auteur- en publicatieinstanties
 
 1. Aanmelden met beheerdersrechten
-2. Configureer [ASRP](asrp.md)
+2. [ASRP](asrp.md) configureren
 3. Ga als volgt te werk om bestaande UGC zichtbaar te maken:
 i. Naar de webconsole bladeren, bijvoorbeeld
-   [https://&lt;host>:&lt;port>/system/console/configMgr](http://localhost:4502/system/console/configMgr)ii. Zoek **[!UICONTROL AEM Communities Utilities]** configuratieiii. Selecteren om configuratievenster uit te vouwen
+   [https://&lt;host>:&lt;port>/system/console/](http://localhost:4502/system/console/configMgr)
+configMgrii. **[!UICONTROL AEM Communities Utilities]**-configuratie zoeken
+iii. Selecteren om configuratievenster uit te vouwen
    * *Uitschakelen* **`Cloud Storage`**
    * Selecteer **[!UICONTROL Save]**
 
@@ -75,13 +77,13 @@ Voor dit doel, is een open bronmigratiehulpmiddel beschikbaar op GitHub:\
 
 Houd er rekening mee dat veel API&#39;s in verschillende pakketten zijn ondergebracht bij de opwaardering van AEM 6.0 sociale gemeenschappen naar AEM 6.3 Gemeenschappen. De meeste moeten gemakkelijk worden opgelost wanneer het gebruiken van winde voor aanpassing van de eigenschappen van Gemeenschappen.
 
-Voor details op het verouderde pakket SocialUtils, bezoek Refactoring [SocialUtils](socialutils.md).
+Voor details op het afgekeurde pakket SocialUtils, bezoek [Refactoring SocialeUtils](socialutils.md).
 
-Zie ook [Maven gebruiken voor Gemeenschappen](maven.md).
+Zie ook [Maven gebruiken voor Communities](maven.md).
 
 ### Geen JSP-componentsjablonen {#no-jsp-component-templates}
 
-Het [sociale componentenkader](scf.md) (SCF) gebruikt de [Sjabloontaal HandlebarsJS](https://www.handlebarsjs.com/) (HBS) in plaats van Java Server Pages (JSP) die vóór AEM 6.0 wordt gebruikt.
+In het [social component framework](scf.md) (SCF) wordt de sjabloontaal [HandlebarsJS](https://www.handlebarsjs.com/) (HBS) gebruikt in plaats van Java Server Pages (JSP) die vóór AEM 6.0 werd gebruikt.
 
 In AEM 6.0 bleven de JSP componenten naast de nieuwe HBS kadercomponenten op dezelfde plaats, met de componenten HBS typisch gevestigd in subfolders genoemd &quot;hbs&quot;.
 
@@ -89,16 +91,16 @@ Vanaf AEM 6.1 werden de JSP-componenten volledig verwijderd. Voor Gemeenschappen
 
 ## AEM Communities UGC-migratiehulpprogramma {#aem-communities-ugc-migration-tool}
 
-Het migratiehulpmiddel [van](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) AEM Communities UGC is een open bronmigratiehulpmiddel, beschikbaar op GitHub, dat kan worden aangepast om UGC van vroegere versies van AEM sociale gemeenschappen uit te voeren en in AEM Communities 6.1 of later in te voeren.
+Het [AEM Communities UGC-migratiehulpmiddel](https://github.com/Adobe-Marketing-Cloud/communities-ugc-migration) is een opensource migratiehulpmiddel dat beschikbaar is op GitHub en dat kan worden aangepast om UGC uit eerdere versies van AEM sociale gemeenschappen te exporteren en in AEM Communities 6.1 of hoger te importeren.
 
 Naast het bewegen van UGC van vroegere versies, is het ook mogelijk om het hulpmiddel te gebruiken om UGC van één [SRP](working-with-srp.md) naar een andere, zoals van MSRP aan DSRP te bewegen.
 
-## Upgrade uitvoeren vanaf AEM 5.6.1 of lager {#upgrading-from-aem-or-earlier}
+## Bijwerken vanaf AEM 5.6.1 of eerder {#upgrading-from-aem-or-earlier}
 
 Conceptueel zijn er drie generaties gemeenschappen componenten:
 
-**Gen 1**: grofweg CQ 5.4 door AEM 5.6.0 - dit zijn de componenten **collab** die UGC in de lokale bewaarplaats gebruikend replicatie als middel om UGC over platforms te synchroniseren opslaagde. Andere verschillen betreffen de implementatie met behulp van JSP (Java Server Pages) en de blogfunctie die bestaat uit alleen ontwerpen in de auteursomgeving.
+**Gen 1**: ruwweg CQ 5.4 door AEM 5.6.0 - dit zijn de  **** collabcomponents die UGC in de lokale opslagplaats opsloot gebruikend replicatie als middel om UGC over platforms te synchroniseren. Andere verschillen betreffen de implementatie met behulp van JSP (Java Server Pages) en de blogfunctie die bestaat uit alleen ontwerpen in de auteursomgeving.
 
-**Gen 2**: van AEM 5.6.1 tot en met AEM 6.1 is dit een combinatie van **collab** en **sociale** componenten . AEM 6.0 introduceerde het nieuwe [sociale componentenkader](scf.md) (SCF) en AEM 6.2 introduceerde een [gemeenschappelijke opslag](working-with-srp.md) UGC waar UGC wordt betreden gebruikend een leverancier [van](srp.md) opslagmiddelen (SRP).
+**Gen 2**: van AEM 5.6.1 tot en met AEM 6.1 is dit een combinatie van  **** sociale  **** componenten . AEM 6.0 introduceerde het nieuwe [sociale componentenkader](scf.md) (SCF) en AEM 6.2 introduceerde een [gemeenschappelijke opslag UGC](working-with-srp.md) waar UGC wordt betreden gebruikend een [opslagmiddelleverancier](srp.md) (SRP).
 
-**Gen 3**: vanaf AEM 6.2 zijn er alleen **sociale** componenten, geïmplementeerd in SCF als HBS-componenten (Handlebars) waarvoor een keuze van SRP voor UGC vereist is.
+**Gen 3**: vanaf AEM 6.2 zijn er alleen  **** sociale componenten, geïmplementeerd in SCF als HBS-componenten (Handlebars) waarvoor een keuze van SRP voor UGC vereist is.
