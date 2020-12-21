@@ -70,7 +70,7 @@ U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt 
 
    U kunt ook op het pictogram **[!UICONTROL To Collection]** op de werkbalk tikken of erop klikken.
 
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+   ![chlimage_1-189](assets/chlimage_1-109.png)
 
 1. Tik of klik op de pagina **[!UICONTROL Add To Collection]** op het pictogram **[!UICONTROL Create Collection]** op de werkbalk.
 
