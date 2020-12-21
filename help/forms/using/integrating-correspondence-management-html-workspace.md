@@ -26,26 +26,26 @@ Laten we Correspondence Management bijvoorbeeld beschouwen als de voorbeeldkandi
 
 ## Correspondentenbeheermiddelen maken {#create-correspondence-management-assets}
 
-Begin door een malplaatje van het Beheer van de Correspondentie te creëren dat in de werkruimte van AEM Forms wordt teruggegeven. Zie [Een lettertypesjabloon](/help/forms/using/create-letter.md)maken voor meer informatie.
+Begin door een malplaatje van het Beheer van de Correspondentie te creëren dat in de werkruimte van AEM Forms wordt teruggegeven. Zie [Een lettertypesjabloon maken](/help/forms/using/create-letter.md) voor meer informatie.
 
 Heb toegang tot het malplaatje van het Beheer van de Correspondentie bij zijn URL om te verifiëren of het malplaatje van het Beheer van de Correspondentie met succes kan worden teruggegeven. De URL heeft een patroon dat lijkt op `https://[server]:[port]/lc/content/cm/createcorrespondence.html?cmLetterId=encodedLetterId&cmUseTestData=1&cmPreview=0;`
 
-Hier `encodedLetterId` staat de URL-gecodeerde letter-ID. Geef dezelfde letter-id op wanneer u het renderproces voor werkruimtetaak in Workbench definieert.
+waarbij `encodedLetterId` de URL-gecodeerde letter-id is. Geef dezelfde letter-id op wanneer u het renderproces voor werkruimtetaak in Workbench definieert.
 
-## Een taak maken om een letter te renderen en te verzenden in AEM Workspace {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
+## Een taak maken om een letter te renderen en te verzenden in AEM werkruimte {#create-a-task-to-render-and-submit-a-letter-in-aem-workspace}
 
 Controleer voordat u deze stappen uitvoert of u lid bent van de volgende groepen:
 
 * cm-agent-gebruikers
 * WerkruimtGebruikers
 
-Voor meer informatie, zie [toevoegen en gebruikers](/help/forms/using/admin-help/adding-configuring-users.md)vormen.
+Zie [Gebruikers toevoegen en configureren](/help/forms/using/admin-help/adding-configuring-users.md) voor meer informatie.
 
 Gebruik de volgende stappen om een taak tot stand te brengen om een brief in AEM Werkruimte terug te geven en voor te leggen:
 
 1. Start Workbench. Meld u als beheerder aan bij de localhost.
-1. Klik op Bestand > Nieuw > Toepassing. Typ in het veld Toepassingsnaam de gewenste waarde `CMDemoSample` en klik op Voltooien.
-1. Selecteer `CMDemoSample/1.0` en klik met de rechtermuisknop `NewProcess`. Typ in het naamveld `CMRenderer` en klik op Voltooien.
+1. Klik op Bestand > Nieuw > Toepassing. Typ `CMDemoSample` in het veld Toepassingsnaam en klik op Voltooien.
+1. Selecteer `CMDemoSample/1.0` en klik `NewProcess` met de rechtermuisknop aan. Typ `CMRenderer` in het naamveld en klik op Voltooien.
 1. Sleep de activiteitskiezer voor het beginpunt en configureer deze:
 
    1. Selecteer in Presentatiegegevens de optie Een CRX-element gebruiken.
@@ -56,13 +56,13 @@ Gebruik de volgende stappen om een taak tot stand te brengen om een brief in AEM
 
       ![lettertab](assets/lettertab.png)
 
-   1. Selecteer de gewenste letter en klik op **OK**.
+   1. Selecteer de juiste letter en klik op **OK**.
 
 1. Klik op Actieprofielen beheren. Het dialoogvenster Actieprofiel beheren wordt geopend. Zorg ervoor dat het renderproces en het verzendproces op de juiste wijze zijn geselecteerd.
 1. Als u de letter wilt openen met een XML-gegevensbestand voor gegevens, bladert u naar het desbetreffende gegevensbestand in het proces Gegevens voorbereiden en selecteert u dit.
 1. Klik op OK.
 1. Definieer de variabelen voor Uitvoer beginpunt en Taakbijlagen. De gedefinieerde variabelen bevatten gegevens van Start Point Output en Task Attachments.
-1. (Optioneel) Als u een andere gebruiker aan de workflow wilt toevoegen, sleept u een activiteitskiezer, configureert u deze en wijst u deze toe aan een gebruiker. Schrijf een douanetrapper (hieronder gegeven steekproef) of download en installeer DSC (hieronder gegeven) om het malplaatje van de Brief, de Output van het Punt van het Begin, en taakgehechtheid uit te breiden.
+1. (Optioneel) Als u een andere gebruiker aan de workflow wilt toevoegen, sleept u een activiteitskiezer, configureert u deze en wijst u deze toe aan een gebruiker. Schrijf een douaneomslag (hieronder steekproef wordt gegeven) of download en installeer DSC (hieronder gegeven) om het malplaatje van de Brief, de Output van het Punt van het Begin, en taakgehechtheid uit te breiden.
 
    Hieronder ziet u een voorbeeld van een aangepaste omslag:
 
@@ -101,7 +101,8 @@ Gebruik de volgende stappen om een taak tot stand te brengen om een brief in AEM
    }
    ```
 
-   [DSC voor](assets/dscsample.zip)downloaden van bestand ophalen: Een voorbeeld-DSC is beschikbaar in het bovenstaande `DSCSample.zip` bestand. Download en decomprimeer het `DSCSample.zip` bestand. Alvorens u de dienst van DSC gebruikt, moet u het vormen. Voor informatie, zie de Dienst [van DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p)vormen.
+   [DSC ](assets/dscsample.zip)
+voor downloaden van bestand ophalen: Een voorbeeld-DSC is beschikbaar in het bovenstaande  `DSCSample.zip` bestand. Download en decomprimeer het `DSCSample.zip` bestand. Alvorens u de dienst van DSC gebruikt, moet u het vormen. Voor informatie, zie [Vorm de Dienst van DSC](/help/forms/using/add-action-button-in-create-correspondence-ui.md#p-configure-the-dsc-service-p).
 
    Selecteer in het dialoogvenster Activiteiten definiëren de juiste activiteit, zoals getLetterInstanceInfo, en klik op **OK**.
 
