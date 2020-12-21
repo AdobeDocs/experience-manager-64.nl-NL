@@ -20,9 +20,9 @@ ht-degree: 0%
 
 # Connector configureren voor IBM Content Manager{#configuring-connector-for-ibm-content-manager}
 
-Connector voor IBM Content Manager maakt communicatie mogelijk tussen AEM formulieren en IBM Content Manager. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
+Connector voor IBM Content Manager maakt communicatie mogelijk tussen AEM formulieren en IBM Content Manager. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63) voor aanvullende achtergrondinformatie.
 
-## De verbinding met IBM Content Manager configureren {#configure-the-ibm-content-manager-connection}
+## De IBM Content Manager-verbinding {#configure-the-ibm-content-manager-connection} configureren
 
 1. Klik in de beheerconsole op Services > Connector voor IBM Content Manager.
 1. Voer in het vak Naam datastore de naam in van de IBM Content Manager-datastore waarmee u verbinding wilt maken. Als de database lokaal is, voert u de naam van de database in. Als de database extern is, voert u de naam van de alias in.
