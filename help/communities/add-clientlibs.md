@@ -18,17 +18,17 @@ ht-degree: 4%
 ---
 
 
-# Clientlibs toevoegen {#add-clientlibs}
+# Clientlibs {#add-clientlibs} toevoegen
 
-## Een ClientLibraryFolder (clientlibs) toevoegen {#add-a-clientlibraryfolder-clientlibs}
+## Een ClientLibraryFolder (clientlibs) {#add-a-clientlibraryfolder-clientlibs} toevoegen
 
 Maak een ClientLibraryFolder met de naam `clientlibs`die de JS en CSS bevat die worden gebruikt om de pagina&#39;s van uw site weer te geven.
 
-De `categories`eigenschapwaarde die aan deze clientbibliotheek wordt gegeven, is de id die wordt gebruikt om deze client direct vanaf een inhoudspagina in te sluiten of om deze in andere clientlibs in te sluiten.
+De `categories`eigenschapswaarde die aan deze cliëntbibliotheek wordt gegeven is het herkenningsteken dat wordt gebruikt om deze cliënt van een inhoudspagina direct te omvatten of het in andere clientlibs in te bedden.
 
-1. Uitvouwen **[!UICONTROL CRXDE Lite]** en gebruiken `/etc/designs`
+1. Vouw `/etc/designs` uit met **[!UICONTROL CRXDE Lite]**
 
-1. Klik met de rechtermuisknop `an-scf-sandbox` en selecteer `Create Node`
+1. Klik met de rechtermuisknop op `an-scf-sandbox` en selecteer `Create Node`
 
    * Naam: `clientlibs`
    * Type: `cq:ClientLibraryFolder`
@@ -37,7 +37,7 @@ De `categories`eigenschapwaarde die aan deze clientbibliotheek wordt gegeven, is
 
 ![chlimage_1-220](assets/chlimage_1-220.png)
 
-Voer op het **[!UICONTROL Properties]** tabblad voor het nieuwe `clientlibs` knooppunt de **`categories`** eigenschap in:
+Voer op het tabblad **[!UICONTROL Properties]** voor het nieuwe `clientlibs`-knooppunt de eigenschap **`categories`** in:
 
 * Naam: **[!UICONTROL categories]**
 * Type: **[!UICONTROL String]**
@@ -45,15 +45,15 @@ Voer op het **[!UICONTROL Properties]** tabblad voor het nieuwe `clientlibs` kno
 * Klik op **[!UICONTROL Add]**
 * Klik op **[!UICONTROL Save All]**
 
-Opmerking: De waarde voor categorieën wordt voorafgegaan door &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs.  BELANGRIJK: Voeg plaatsaanduiding `js.txt` en `css.txt` bestanden toe. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
+Opmerking: De waarde voor categorieën wordt voorafgegaan door &#39;apps&#39;. is een conventie om aan te geven dat de &#39;toepassing die eigenaar is&#39; zich in de map /apps bevindt, niet /libs.  BELANGRIJK: Voeg placeholder `js.txt` en `css.txt` dossiers toe. (Het is officieel geen cq:ClientLibraryFolder zonder hen.)
 
 
-1. Rechtsklik ingeschakeld **`/etc/designs/an-scf-sandbox/clientlibs`**
+1. Klikken met rechtermuisknop op **`/etc/designs/an-scf-sandbox/clientlibs`**
 1. Selecteer **[!UICONTROL Create File...]**
-1. Enter **[!UICONTROL Name]**: `css.txt`
+1. Voer **[!UICONTROL Name]** in: `css.txt`
 
 1. Selecteer **[!UICONTROL Create File...]**
-1. Enter **[!UICONTROL Name]**: `js.txt`
+1. Voer **[!UICONTROL Name]** in: `js.txt`
 
 1. Klik op **[!UICONTROL Save All]**
 
@@ -76,11 +76,11 @@ Maak vervolgens een bestand onder clientlibs met de naam style.css en stel de in
 
 `}`
 
-## SCF-clips insluiten {#embed-scf-clientlibs}
+## SCF-clips {#embed-scf-clientlibs} insluiten
 
-Op het **[!UICONTROL Properties]** lusje voor de `clientlibs` knoop, ga het multi-waardebezit van het Koord in **[!UICONTROL embed]**. Dit zal de noodzakelijke [cliënt-zijbibliotheken (clientlibs) voor componenten](client-customize.md#clientlibs-for-scf)inbedden SCF. Voor deze zelfstudie zullen we veel clientlibs toevoegen die nodig zijn voor de onderdelen van de Gemeenschappen.
+Voer op het tabblad **[!UICONTROL Properties]** voor het knooppunt `clientlibs` de eigenschap tekenreeks met meerdere waarden **[!UICONTROL embed]** in. Dit zal de noodzakelijke [cliënt-zijbibliotheken (clientlibs) voor SCF componenten](client-customize.md#clientlibs-for-scf) inbedden. Voor deze zelfstudie zullen we veel clientlibs toevoegen die nodig zijn voor de onderdelen van de Gemeenschappen.
 
-**Merk** op dat dit of niet de gewenste benadering voor een productiesite kan zijn aangezien er overwegingen van gemak tegenover grootte/snelheid van de clientlibs die voor elke pagina worden gedownload zijn.
+**** Merk op dat dit al dan niet de gewenste benadering voor een productiesite kan zijn aangezien er overwegingen van gemak tegenover grootte/snelheid van de clientlibs die voor elke pagina worden gedownload zijn.
 
 Als u slechts één functie op één pagina gebruikt, kunt u de volledige clientlib van die functie rechtstreeks op de pagina opnemen, bijvoorbeeld &lt;% ui:includeClientLib categorieën=cq.social.hbs.forum&quot; %>
 
@@ -92,7 +92,7 @@ In dit geval, sluiten wij hen allen, en zo zouden de eenvoudigere SCF clientlibs
 * Klik op **`Multi`**
 * Waarde: **`cq.social.scf`**
 
-   *&lt;enter> pop-up een dialoogvenster*
+   *&lt;enter> pop-up van dialoogvenster*
 
    *Klik **[+]**na elke ingang om de volgende cliëntlib categorieën toe te voegen:*
 
@@ -108,13 +108,13 @@ In dit geval, sluiten wij hen allen, en zo zouden de eenvoudigere SCF clientlibs
 
 ![chlimage_1-222](assets/chlimage_1-222.png)
 
-Zo `/etc/designs/an-scf-sandbox/clientlibs` moet het nu in de opslagplaats worden weergegeven:
+Dit is hoe `/etc/designs/an-scf-sandbox/clientlibs` nu in de bewaarplaats moet verschijnen:
 
 ![chlimage_1-223](assets/chlimage_1-223.png)
 
 ## Clientlibs opnemen in PlayPage-sjabloon {#include-clientlibs-in-playpage-template}
 
-Zonder de categorie `apps.an-scf-sandbox` ClientLibraryFolder op de pagina te plaatsen, zijn de SCF-componenten niet functioneel en niet opgemaakt omdat de benodigde JavaScript(s) en stijl(en) niet beschikbaar zijn.
+Zonder de categorie `apps.an-scf-sandbox` ClientLibraryFolder op de pagina te plaatsen, zijn de SCF-componenten niet functioneel en niet opgemaakt omdat de benodigde Javascript(s) en stijl(en) niet beschikbaar zijn.
 
 Bijvoorbeeld, zonder de clientlibs op te nemen, lijkt de SCF commentaarcomponent ongestileerd:
 
@@ -124,15 +124,15 @@ Zodra apps.an-scf-sandbox clientlibs is opgenomen, wordt de SCF-commentaarcompon
 
 ![chlimage_1-225](assets/chlimage_1-225.png)
 
-De instructie include behoort tot de `<head>` sectie van het `<html>` script. De standaardwaarde **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`**.
+De include-instructie behoort tot de sectie `<head>` van het `<html>`-script. De standaard **`foundation head.jsp`** bevat een script dat kan worden bedekt: **`headlibs.jsp`**.
 
 **Kopieer koplibs.jsp en neem clientlibs op:**
 
-1. Selecteer **[!UICONTROL CRXDE Lite]** met **`/libs/foundation/components/page/headlibs.jsp`**
+1. Selecteer **[!UICONTROL CRXDE Lite]****`/libs/foundation/components/page/headlibs.jsp`**
 1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Copy]** (of selecteer Kopiëren in de werkbalk)
 1. Selecteer **`/apps/an-scf-sandbox/components/playpage`**
 1. Klik met de rechtermuisknop en selecteer **[!UICONTROL Paste]** (of selecteer Plakken in de werkbalk)
-1. Dubbelklik op **`headlibs.jsp`** om het te openen
+1. Dubbelklik op **`headlibs.jsp`** om deze te openen
 1. De volgende regel toevoegen aan het einde van het bestand
 
    **`<ui:includeClientLib categories="apps.an-scf-sandbox"/>`**
@@ -160,12 +160,12 @@ Laad uw website in de browser en controleer of de achtergrond geen blauwe tint h
 
 Op dit moment bestaat er een minimalistische sandbox en het kan de moeite waard zijn om op te slaan als een pakket, zodat u tijdens het afspelen, als uw reactie beschadigd raakt en u opnieuw wilt beginnen, de server kunt uitschakelen, de naam van de map crx-quickstart/ wijzigen of verwijderen, de server in kunt schakelen, uploaden en installeren van dit opgeslagen pakket en deze basisstappen niet hoeft te herhalen.
 
-Dit pakket staat in de zelfstudie [Een voorbeeldpagina](create-sample-page.md) maken voor gebruikers die niet kunnen wachten om alleen binnen te springen en af te spelen...
+Dit pakket bevindt zich op de zelfstudie [Een voorbeeldpagina maken](create-sample-page.md) voor diegenen die niet kunnen wachten om gewoon binnen te springen en af te spelen!..
 
 Een pakket maken:
 
 
-* Klik vanuit **[!UICONTROL CRXDE Lite]** het pictogram [Pakket](http://localhost:4502/crx/packmgr/)
+* Van **[!UICONTROL CRXDE Lite]**, klik [het pictogram van het Pakket](http://localhost:4502/crx/packmgr/)
 * Klik op **[!UICONTROL Create Package]**
 
    * Pakketnaam: `an-scf-sandbox-minimal-pkg`
@@ -175,20 +175,20 @@ Een pakket maken:
 
 * Klik op **[!UICONTROL Edit]**
 
-   * Tabblad Selecteren **[!UICONTROL Filters]**
+   * Tabblad **[!UICONTROL Filters]** selecteren
 
       * Klik op **[!UICONTROL Add filter]**
-      * Hoofdpad: &lt;browse to `/apps/an-scf-sandbox`>
+      * Hoofdpad: &lt;blader aan `/apps/an-scf-sandbox`>
       * Klik op **[!UICONTROL Done]**
       * Klik op **[!UICONTROL Add filter]**
-      * Hoofdpad: &lt;browse to `/etc/designs/an-scf-sandbox`>
+      * Hoofdpad: &lt;blader aan `/etc/designs/an-scf-sandbox`>
       * Klik op **[!UICONTROL Done]**
       * Klik op **[!UICONTROL Add filter]**
-      * Hoofdpad: &lt;browse to `/content/an-scf-sandbox`>
+      * Hoofdpad: &lt;blader aan `/content/an-scf-sandbox`>
       * Klik op **[!UICONTROL Done]**
    * Klik op **[!UICONTROL Save]**
 
 
 * Klik op **[!UICONTROL Build]**
 
-Nu kunt u selecteren **[!UICONTROL Download]** om het op schijf en **[!UICONTROL Upload Package]** **[!UICONTROL More > Replicate]** elders op te slaan en de sandbox naar een publicatieinstantie van een lokale host te duwen om het domein van uw sandbox uit te breiden.
+Nu kunt u **[!UICONTROL Download]** selecteren om het op schijf en **[!UICONTROL Upload Package]** elders te bewaren, evenals **[!UICONTROL More > Replicate]** te selecteren om de zandbak aan een localhost te duwen publiceert instantie om het domein van uw zandbak uit te breiden.
