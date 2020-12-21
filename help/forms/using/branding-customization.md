@@ -41,7 +41,7 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 
 1. Open het `Capture.xcodeproj` project in Xcode.
 1. (***Voor het aanpassen van het pictogram***) Navigeer in de navigatorweergave van Vastleggen naar **[!UICONTROL Capture > Capture > Supporting Files > Capture-info.plist]**. Klik op de vervolgkeuzelijst naast de pictogrambestanden. Geef de naam van het pictogrambestand (.png) op en upload het bestand op **[!UICONTROL Capture > Capture > Resources > icons]**. Momenteel ondersteunde dimesies zijn: 29x29, 50x50, 58x58, 72x72, 100x100 en 144x144.
-1. (***Voor het aanpassen van opstartafbeeldingen***) Zorg ervoor dat de bestandsnamen van uw afbeeldingen als volgt zijn:
+1. (***Voor het aanpassen van opstartafbeeldingen***) Zorg ervoor dat de bestandsnamen van de afbeeldingen als volgt zijn:
 
    * Voor staand: `Default-Portrait~ipad.png` en `Default-Portrait@2x~ipad.png`
    * Voor liggend: `Default-Landscape~ipad.png` en `Default-Landscape@2x~ipad.png`
@@ -90,18 +90,18 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 
 1. Maak de AEM Forms-app opnieuw.
 
-## De toepassingsnaam aanpassen {#customize-the-app-name}
+## De toepassingsnaam {#customize-the-app-name} aanpassen
 
 ### Voor iOS {#for-ios-1}
 
 1. Open het `Capture.xcodeproj` project in Xcode.
 1. Navigeer in de navigatorweergave van Vastleggen naar **[!UICONTROL Capture > Capture > Supporting Files > InfoPlist.strings]**.
 
-   Werk de waarde voor het `CFBundleDisplayName` kenmerk bij naar een naam die u voor de app wilt weergeven.
+   Werk de waarde voor het `CFBundleDisplayName` attribuut aan een naam bij u voor app wilt tonen.
 
 1. AEM Forms-app ontwikkelen en uitvoeren op iOS-apparaat of iOS-simulator.
 
-   Zie Het Xcode-project [instellen en de iOS-app](/help/forms/using/setup-xcode-project-build-installer.md)samenstellen voor meer informatie over het maken van de app voor iOS.
+   Zie [Het Xcode-project instellen en de iOS-app ontwikkelen](/help/forms/using/setup-xcode-project-build-installer.md) voor meer informatie over het maken van de app voor iOS.
 
 ### Voor Android {#for-android-1}
 
@@ -109,10 +109,10 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 
    `[User_Home]/Projects/[your-project]/src/android/res/values/strings.xml and android/res/values-en/strings.xml`
 
-1. Werk de waarde voor de sleutel bij `app_name`.
+1. Werk de waarde voor de sleutel `app_name` bij.
 1. Maak de AEM Forms-app opnieuw.
 
-   Zie Het Eclipse-project [instellen en de Android-app](/help/forms/using/setup-eclipse-project-build-installer.md)ontwikkelen voor meer informatie over het maken van de app voor Android.
+   Zie [Het Eclipse-project instellen en de Android-app ontwikkelen](/help/forms/using/setup-eclipse-project-build-installer.md) voor meer informatie over het maken van de app voor Android.
 
 ### Voor Windows {#for-windows-1}
 
@@ -120,10 +120,10 @@ Voer de volgende stappen uit om het standaardpictogram voor de app en de opstart
 
    `%HOMEPATH%\adobe-lc-mobileworkspace-src-<version>\src\windows\MWSWindows\config.xml`
 
-1. Werk de waarde in de `<name>...</name>` tag bij.
+1. Werk de waarde in de tag `<name>...</name>` bij.
 1. Maak de AEM Forms-app opnieuw.
 
-   Voor details bij de bouw van app voor Vensters, zie [Opstelling het project van Visual Studio en bouwt Vensters app](/help/forms/using/setup-visual-studio-project-build-installer.md).
+   Voor details bij het bouwen van app voor Vensters, zie [Opstelling het project van Visual Studio en bouwt Vensters app](/help/forms/using/setup-visual-studio-project-build-installer.md).
 
 ## Afbeeldingen op de aanmeldingspagina aanpassen {#customizing-images-on-the-login-page}
 
@@ -157,30 +157,30 @@ Zorg ervoor dat u de volgende afbeeldingen hebt:
 
 1. Open het `Capture.xcodeproj` project in Xcode.
 
-1. Navigate to the `www/wsmobile/images`folder.
-1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `LC-logo.png` `LC-logo.png` bestand.
-1. Als u de achtergrond wilt wijzigen, vervangt u het `Landing_bg.jpeg` standaardbestand door het aangepaste `Landing_bg.jpeg`bestand.
+1. Navigeer naar de map `www/wsmobile/images`.
+1. Als u het logo wilt wijzigen, vervangt u het standaardbestand `LC-logo.png` door het aangepaste bestand `LC-logo.png`.
+1. Als u de achtergrond wilt wijzigen, vervangt u het standaard `Landing_bg.jpeg`-bestand door het aangepaste `Landing_bg.jpeg`bestand.
 1. AEM Forms-app ontwikkelen en uitvoeren op iOS-apparaat of iOS-simulator.
 
 ### Afbeeldingen op de aanmeldingspagina&#39;s aanpassen met Eclipse {#to-customize-images-on-the-login-pages-using-eclipse}
 
 1. Open het Android-project in Eclipse.
 
-1. Navigate to the `assets/www/wsmobile/images`folder.
-1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `LC-logo.png` `LC-logo.png` bestand.
-1. Als u de achtergrond wilt wijzigen, vervangt u het `Landing_bg.jpeg` standaardbestand door het aangepaste `Landing_bg.jpeg`bestand.
+1. Navigeer naar de map `assets/www/wsmobile/images`.
+1. Als u het logo wilt wijzigen, vervangt u het standaardbestand `LC-logo.png` door het aangepaste bestand `LC-logo.png`.
+1. Als u de achtergrond wilt wijzigen, vervangt u het standaard `Landing_bg.jpeg`-bestand door het aangepaste `Landing_bg.jpeg`bestand.
 1. AEM Forms-app ontwikkelen en uitvoeren op Android-apparaat.
 
-### Om beelden op de login pagina&#39;s aan te passen gebruikend Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
+### Afbeeldingen op de aanmeldingspagina&#39;s aanpassen met Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio}
 
 1. Open het `MWSWindows.sln` project in Visual Studio.
 
-1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
-1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `LC-logo.png` `LC-logo.png` bestand.
-1. Als u de achtergrond wilt wijzigen, vervangt u het `Landing_bg.jpeg` standaardbestand door het aangepaste `Landing_bg.jpeg`bestand.
+1. Navigeer naar de map `MWSWindows\www\wsmobile\images`.
+1. Als u het logo wilt wijzigen, vervangt u het standaardbestand `LC-logo.png` door het aangepaste bestand `LC-logo.png`.
+1. Als u de achtergrond wilt wijzigen, vervangt u het standaard `Landing_bg.jpeg`-bestand door het aangepaste `Landing_bg.jpeg`bestand.
 1. AEM Forms-app ontwikkelen en uitvoeren op Windows-apparaat.
 
-## Het logo aanpassen in het app-menu {#customizing_images_on_the_login_page-1}
+## Het logo aanpassen in het toepassingsmenu {#customizing_images_on_the_login_page-1}
 
 Nadat u zich hebt aangemeld bij de AEM Forms-app en op de menuknop hebt getikt, ziet u het logo boven het menu. Voer de volgende stappen uit om het standaardlogo aan te passen:
 
@@ -207,22 +207,22 @@ Zorg ervoor dat u de volgende afbeelding hebt:
 
 1. Open het `Capture.xcodeproj` project in Xcode.
 
-1. Navigate to the `www/wsmobile/images`folder.
-1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `aem_icon.png` `aem_icon.png` bestand.
+1. Navigeer naar de map `www/wsmobile/images`.
+1. Als u het logo wilt wijzigen, vervangt u het standaardbestand `aem_icon.png` door het aangepaste bestand `aem_icon.png`.
 1. AEM Forms-app ontwikkelen en uitvoeren op iOS-apparaat of iOS-simulator.
 
 ### Afbeeldingen op de aanmeldingspagina&#39;s aanpassen met Eclipse {#to-customize-images-on-the-login-pages-using-eclipse-1}
 
 1. Open het Android-project in Eclipse.
 
-1. Navigate to the `assets/www/wsmobile/images`folder.
-1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `aem_icon.png` `aem_icon.png` bestand.
+1. Navigeer naar de map `assets/www/wsmobile/images`.
+1. Als u het logo wilt wijzigen, vervangt u het standaardbestand `aem_icon.png` door het aangepaste bestand `aem_icon.png`.
 1. AEM Forms-app ontwikkelen en uitvoeren op Android-apparaat.
 
-### Om beelden op de login pagina&#39;s aan te passen gebruikend Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
+### Afbeeldingen op de aanmeldingspagina&#39;s aanpassen met Visual Studio {#to-customize-images-on-the-login-pages-using-visual-studio-1}
 
 1. Open het `MWSWindows.sln` project in Visual Studio.
 
-1. Navigate to the `MWSWindows\www\wsmobile\images`folder.
-1. Als u het logo wilt wijzigen, vervangt u het standaardbestand door het aangepaste `aem_icon.png` `aem_icon.png` bestand.
+1. Navigeer naar de map `MWSWindows\www\wsmobile\images`.
+1. Als u het logo wilt wijzigen, vervangt u het standaardbestand `aem_icon.png` door het aangepaste bestand `aem_icon.png`.
 1. AEM Forms-app ontwikkelen en uitvoeren op Windows-apparaat.
