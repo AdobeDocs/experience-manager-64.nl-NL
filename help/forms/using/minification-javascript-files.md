@@ -18,19 +18,19 @@ ht-degree: 0%
 ---
 
 
-# Miniatuur van de JavaScript-bestanden {#minification-of-the-javascript-files}
+# Minificatie van de JavaScript-bestanden {#minification-of-the-javascript-files}
 
 Met Minificatie worden de overbodige tekens, zoals witruimte, nieuwe regel en opmerkingen, uit de broncode verwijderd. Dit verbetert de prestaties door de grootte van de code te verminderen. De miniatuur heeft geen invloed op de functionaliteit, maar vermindert de leesbaarheid van de code.
 
 Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen te genereren.
 
-1. Kopieer `client-html/src/main/webapp/js` van het src-pakket naar het bestandssysteem.
+1. Kopieer `client-html/src/main/webapp/js` van src-package op filesystem.
 
    >[!NOTE]
    >
    >Zie [Inleiding tot het aanpassen van de AEM Forms-werkruimte](/help/forms/using/introduction-customizing-html-workspace.md) voor meer informatie over de pakketten.
 
-1. Werk paden bij `main.js` onder client-html/src/main/webapp/js voor toegevoegde/bijgewerkte modellen/weergaven.
+1. Werk paden bij in `main.js` onder client-html/src/main/webapp/js, voor toegevoegde/bijgewerkte modellen/weergaven.
 
    Bijvoorbeeld, toevoeging van een nieuw model van de Schaduwrij, zeg mySharequeue, verandering:
 
@@ -42,7 +42,7 @@ Voer de volgende stappen uit om geminificeerde code voor semantische wijzigingen
    sharequeuemodel : pathprefix + 'runtime/myModels/mySharequeue',
    ```
 
-1. Bijwerken `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` als er sprake is van een wijziging/toevoeging van alias in `main.js`.
+1. `registry-config.xml, located at client-html/src/main/webapp/js/resource_generator,` bijwerken voor het geval er een wijziging/toevoeging van alias in `main.js` is.
 
    Bijvoorbeeld, toevoeging van een nieuw model van de Schaduwrij, zeg mySharequeue, verandering:
 
