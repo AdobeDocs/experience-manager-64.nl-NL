@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Gebruiksgegevens voor referentie controleren {#review-credential-use-information}
+# Referentie-gebruiksinformatie {#review-credential-use-information} controleren
 
 De referentie bevat informatie over het bedoelde gebruik dat toegankelijk is via de Acrobat Reader DC-webtoepassing voor extensies voor eindgebruikers. U kunt deze informatie gebruiken om het type geïnstalleerde referentie (evaluatie of productie) en zijn geldigheidsdata te bepalen.
 
 1. Open een webbrowser en voer de volgende URL in:
 
-   http://localhost:*[port]*/ReaderExtensions (waarbij de *[poort]* het poortnummer van de toepassingsserver is)
+   http://localhost:*[port]*/ReaderExtensions (waarbij *[port]* het poortnummer van uw toepassingsserver is)
 
 1. Meld u aan met de standaardgebruikersnaam en het standaardwachtwoord:
 
