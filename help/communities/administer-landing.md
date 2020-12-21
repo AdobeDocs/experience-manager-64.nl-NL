@@ -30,11 +30,11 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
 * [Aan de slag met AEM Communities](getting-started.md)
 * [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
 
-## Beheer en configuratieonderwerpen {#administration-and-configuration-topics}
+## Onderwerpen voor beheer en configuratie {#administration-and-configuration-topics}
 
 ### Creatie en beheer van sites van gemeenschappen {#communities-site-creation-and-management}
 
-* Communautaire [consoles](consoles.md)
+* Gemeenschappen [consoles](consoles.md)
 
    * [Sites](sites-console.md)
 
@@ -45,7 +45,7 @@ Ga voor een overzicht en zelfstudies om aan de slag te gaan naar:
    * [Rapporten](reports.md)
 
 
-* Gereedschappen [*voor *](tools.md)Gemeenschappen:
+* Gemeenschappen [*tools*](tools.md):
 
    * [Sitesjablonen](sites.md)
    * [Groepssjablonen](tools-groups.md)
@@ -61,16 +61,16 @@ Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers 
 
 * [Algemene UGC-winkel](working-with-srp.md): keuze van SRP voor gedeelde opslag van UGC
 * [Modererende UGC](moderate-ugc.md): Vertrouwde leden kunnen UGC in bulk of in context matigen
-* [UGC](tag-ugc.md)labelen: functies kunnen zo worden geconfigureerd dat leden inhoud kunnen labelen
-* [UGC](translate-ugc.md)vertalen: kunnen worden geconfigureerd om alle UGC te vertalen of kunnen leden geselecteerde posts vertalen
-* [Configuratie](analytics.md)analyse: Adobe Analytics in staat stellen verslag uit te brengen over verschillende maatstaven met betrekking tot lidactiviteit
+* [UGC](tag-ugc.md) labelen: functies kunnen zo worden geconfigureerd dat leden inhoud kunnen labelen
+* [UGC](translate-ugc.md) vertalen: kunnen worden geconfigureerd om alle UGC te vertalen of kunnen leden geselecteerde posts vertalen
+* [Configuratie](analytics.md) analyse: adobe analytics in staat stellen om te rapporteren over verschillende maatstaven voor lidactiviteiten
 
-### Communautaire leden {#community-members}
+### Community-leden {#community-members}
 
-* [Gebruikers en gebruikersgroepen](users.md)beheren: nadere gegevens over de leden van de gemeenschap en de leden , met inbegrip van de geprivilegieerde leden
+* [Gebruikers en gebruikersgroepen](users.md) beheren: nadere gegevens over de leden van de gemeenschap en de leden , met inbegrip van de geprivilegieerde leden
 * [Bijdragelimieten](limits.md): mogelijkheid om detachering door nieuwe leden te beperken
 * [Tunneldienst](deploy-communities.md#tunnel-service-on-author): Hiermee kunnen leden van de publicatievorm en lidgroepen worden benaderd vanuit de ontwerpomgeving
-* [Samenstellingen](members.md)van leden en groepen: Hiermee kunnen leden en lidgroepen van de publicatievorm worden gemaakt en beheerd vanuit de auteursomgeving
+* [Samenstellingen](members.md) van leden en groepen: Hiermee kunnen leden en lidgroepen van de publicatievorm worden gemaakt en beheerd vanuit de auteursomgeving
 * [Gebruikerssynchronisatie](sync.md): voor het synchroniseren van leden en lidgroepen in meerdere publicatie-instanties
 * [Sociale aanmelding bij Facebook en Twitter](social-login.md): de mogelijkheid voor sitebezoekers om lid te worden van de gemeenschap op basis van hun Facebook- of Twitter-gegevens
 * [Scores en badges](implementing-scoring.md): de mogelijkheid om toegangspasjes toe te wijzen om de rol(en) van een lid te identificeren en om de leden via hun deelname aan de gemeenschap een toegangspasje te bezorgen
@@ -78,10 +78,10 @@ Een belangrijk kenmerk van AEM Communities is het genereren van door gebruikers 
 * [Abonnementen](subscriptions.md): mogelijkheid voor leden om via externe e-mail te communiceren met de gemeenschap
 * [Berichten](messaging.md): de mogelijkheid voor de leden om met de gemeenschap te communiceren door middel van interne berichten
 
-### Functies Enablement {#enablement-features}
+### Functies {#enablement-features} inschakelen
 
-* [Inschakelen](enablement.md)configureren: noodzakelijke informatie om de enablement-functies correct in te stellen
-* [Configuratie](analytics.md)analyse: noodzakelijke informatie om functies van Adobe Analytics for Communities mogelijk te maken
+* [Inschakelen](enablement.md) configureren: noodzakelijke informatie om de enablement-functies correct in te stellen
+* [Configuratie](analytics.md) analyse: noodzakelijke informatie om functies van Adobe Analytics for Communities mogelijk te maken
 * [Tags toewijzen](tag-resources.md): noodzakelijk voor het maken van enablement catalogi
 
 ### Implementatie {#deployment}
@@ -96,12 +96,12 @@ Het is belangrijk om de meest recente versie van Gemeenschappen op het AEM platf
 
 * [Feitenpakket van de nieuwste gemeenschappen](deploy-communities.md#latestfeaturepack)
 
-Zie de plaatsingspagina voor andere Gemeenschappen specifieke informatie, zoals voor [Bevordering](upgrade.md), [Verzender](dispatcher.md) en [Replicatie](deploy-communities.md#replication-agents-on-author).
+Zie de distributiepagina voor andere communautaire specifieke informatie, zoals voor [Upgraden](upgrade.md), [Dispatcher](dispatcher.md) en [Replication](deploy-communities.md#replication-agents-on-author).
 
-## Verwante documentatie van Gemeenschappen {#related-communities-documentation}
+## Documentatie van verwante gemeenschappen {#related-communities-documentation}
 
-* Bezoek [Implementerende gemeenschappen](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
+* Bezoek [Gemeenschappen implementeren](deploy-communities.md) voor meer informatie over aanbevolen implementaties.
 
-* Bezoek [Ontwikkelingsgemeenschappen](communities.md) voor meer informatie over het sociale-componentframework (SCF) en het aanpassen van onderdelen en functies van Gemeenschappen.
+* Bezoek [Developing Communities](communities.md) voor meer informatie over het SCF (Social Component Framework) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
-* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het maken en configureren van Community-componenten.
+* Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het schrijven en configureren van Community-componenten.
