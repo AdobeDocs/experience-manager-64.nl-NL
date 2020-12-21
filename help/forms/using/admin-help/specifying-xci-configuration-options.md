@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # XCI-configuratieopties opgeven {#specifying-xci-configuration-options}
 
-Met Forms kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. (Zie Locaties [configureren voor Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Forms negeert standaard enkele opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
+Met Forms kunt u een aangepast XCI-bestand opgeven dat wordt gebruikt voor rendering. (Zie [Locaties configureren voor Forms](/help/forms/using/admin-help/configuring-locations-forms.md#configuring-locations-for-forms).) Forms negeert standaard enkele opties die in het XCI-bestand zijn opgegeven, waaronder de volgende:
 
 * `config/present/xdp/packets`
 * `config/present/pdf/creator`
