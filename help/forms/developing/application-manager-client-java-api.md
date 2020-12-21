@@ -38,11 +38,11 @@ De volgende Java API Quick Start (SOAP) is beschikbaar voor de Application Manag
 
 [Snel starten (SOAP-modus):het AEM Forms-toepassingsarchief verwijderen met de Java API](application-manager-client-java-api.md#quick-start-soap-mode-deleting-the-application-archive-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss en het Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle start in Programming with AEM Forms is gebaseerd op de Forms Server die wordt geïmplementeerd op JBoss en het Windows-besturingssysteem. Als u echter een ander besturingssysteem gebruikt, zoals Unix, vervangt u vensterspecifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Toepassingsversie maken met de Java API {#quick-start-soap-mode-creating-application-version-using-the-java-api}
 
