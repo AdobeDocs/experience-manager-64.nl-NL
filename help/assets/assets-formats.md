@@ -124,7 +124,7 @@ Documentindelingen die worden ondersteund voor functies voor middelenbeheer zijn
 | ODT | ✓ | ✓ | ✓ |  |  |  |  |
 | [PDF](managing-image-presets.md#adobe-illustrator-ai-postscript-eps-and-pdf-file-formats) | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ | ✓ |
 | HTML | ✓ | ✓ | ✓ |  |  |  |  |
-| RTF | ✓ | ✓ | ✓ |  |  |  |  |
+| TTF | ✓ | ✓ | ✓ |  |  |  |  |
 | TXT | ✓ | ✓ | ✓ |  |  |  |  |
 | XLS | ✓ | ✓ | ✓ |  |  |  |  |
 | XLSX | ✓ | ✓ | ✓ | ✓ |  |  |  |
@@ -295,7 +295,7 @@ Een lijst met ondersteunde MIME-typen is beschikbaar in CRXDE Lite op `/conf/glo
 | TAR | application/x-tar |  |  |
 | TIF/TIFF | image/tiff |  |  |
 | TTC | application/x-font-ttf |  |  |
-| TTF | application/x-font-ttf |  |  |
+| RTF | application/x-font-ttf |  |  |
 | VOB | video/dvd |  | [ExcludeMasterVideoFromAVS](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/data-types/r-exclude-master-video-from-avs.html) |
 | VTT | text/vtt |  |  |
 | WAV | audio/x-wav |  |  |
