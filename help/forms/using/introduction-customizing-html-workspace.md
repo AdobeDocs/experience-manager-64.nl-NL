@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Inleiding tot de werkruimte AEM formulier aanpassen {#introduction-to-customizing-aem-form-workspace}
+# Inleiding tot het aanpassen van AEM formulierwerkruimte {#introduction-to-customizing-aem-form-workspace}
 
 AEM formulierwerkruimte biedt mogelijkheden om de semantiek en functionaliteit van de presentatie van de interface te wijzigen. De typen aanpassingen waarmee u de stijl, lay-out, opmaak, branding en kernfunctionaliteit kunt wijzigen, worden hieronder beschreven.
 
@@ -34,11 +34,11 @@ De AEM Forms-werkruimte ondersteunt een groot aantal aanpassingen waarmee de lay
 
 ### Wijzigingen in gebruikersinterface {#user-interface-changes}
 
-U kunt de vormgeving, lay-out en andere semantiek van de presentatie in de AEM Forms-werkruimte wijzigen. De werkruimte wijzigen door de CSS-, HTML-sjablonen en JavaScript™-bestanden aan te passen. Alle standaardbestanden worden weergegeven in de standaardinstallatie.
+U kunt de vormgeving, lay-out en andere semantische functies van de AEM Forms-werkruimte wijzigen. De werkruimte wijzigen door de CSS-, HTML-sjablonen en JavaScript™-bestanden aan te passen. Alle standaardbestanden worden weergegeven in de standaardinstallatie.
 
-De meest gangbare stappen worden beschreven in [Algemene stappen voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de AEM Forms-werkruimte. Zie de verwante artikelen aan het einde van dit artikel voor specifieke voorbeelden van dergelijke aanpassingen, waaronder de gedetailleerde stappen.
+De meest gangbare stappen worden beschreven in [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md). Zie de verwante artikelen aan het einde van dit artikel voor specifieke voorbeelden van dergelijke aanpassingen, waaronder de gedetailleerde stappen.
 
-#### De stijlpagina begrijpen {#understanding-the-style-sheet}
+#### De stijlpagina {#understanding-the-style-sheet}
 
 Voordat u de werkruimte aanpast, moet u bekend zijn met het standaardstijlblad dat bij AEM Forms wordt geleverd op /libs/ws/css/style.css.
 
@@ -125,22 +125,22 @@ De stappen op hoofdniveau voor CSS-aanpassing zijn:
 
 * Maak een CSS-bestand.
 * Stijlitems toevoegen aan deze CSS. Zie Werken met CSS-stijlen voor meer informatie.
-* Werk de referenties bij in `html.jsp`.
+* Werk zijn verwijzingen in `html.jsp` bij.
 
-Zie [Algemene stappen voor aanpassing van de AEM Forms-werkruimte voor de exacte stappen die u uitvoert om deze aanpassingen uit te voeren](/help/forms/using/generic-steps-html-workspace-customization.md). Het CSS-bestand dat wordt geleverd met de AEM Forms-werkruimte bevindt zich op /libs/ws/css/. Gebruik het [verzendpakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)voor aan CSS gerelateerde aanpassingen. Zie de verwante Help-onderwerpen aan het einde van dit artikel voor specifieke voorbeelden van CSS-gerelateerde aanpassingen.
+Zie [Algemene stappen voor aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md) voor de exacte stappen die u uitvoert om deze aanpassingen uit te voeren. Het CSS-bestand dat wordt geleverd met de AEM Forms-werkruimte bevindt zich op /libs/ws/css/. Voor op CSS betrekking hebbende aanpassingen, gebruik [Verzendpakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p). Zie de verwante Help-onderwerpen aan het einde van dit artikel voor specifieke voorbeelden van CSS-gerelateerde aanpassingen.
 
-#### Image {#image}
+#### Afbeelding {#image}
 
-U kunt de AEM Forms-werkruimte aanpassen om avatars van gebruikers toe te voegen of om het logo van uw organisatie toe te voegen. Gebruik [Verzendpakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)voor deze aanpassingen.
+U kunt de AEM Forms-werkruimte aanpassen om avatars van gebruikers toe te voegen of om het logo van uw organisatie toe te voegen. Voor deze aanpassingen, gebruik [Verzendpakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p).
 
 De stappen op hoofdniveau voor aanpassingen aan de afbeeldingen zijn:
 
 * WebDAV installeren en configureren.
 * Voeg nieuwe afbeeldingen toe.
 * Voeg nieuwe stijlen toe die overeenkomen met de toegevoegde afbeeldingen.
-* Koppeling maken naar het nieuwe CSS-bestand in het `html.jsp` bestand.
+* Koppeling naar het nieuwe CSS-bestand in het `html.jsp`-bestand.
 
-Volg de [algemene stappen voor het aanpassen van de AEM Forms-werkruimte om aan de slag te gaan met het aanpassen van de afbeeldingen in de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md). Voor specifieke voorbeelden van beeld-verwante aanpassingen, zie de verwante onderwerpen van de Hulp aan het eind van dit artikel.
+Als u van start wilt gaan met het aanpassen van de afbeeldingen in de AEM Forms-werkruimte, volgt u de algemene stappen [voor het aanpassen van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md). Voor specifieke voorbeelden van beeld-verwante aanpassingen, zie de verwante onderwerpen van de Hulp aan het eind van dit artikel.
 
 #### HTML-sjabloon {#html-template}
 
@@ -152,7 +152,7 @@ De stappen op hoofdniveau voor aanpassingen aan de HTML-sjabloon zijn:
 * Nieuwe sjablonen toevoegen in een door de gebruiker gedefinieerde map.
 * Maak relevante updates aan de gekopieerde dossiers als, de weg van het nieuwe malplaatje.
 
-Voor specifieke voorbeelden van dergelijke aanpassingen, zie de onderwerpen van de Hulp die aan het eind van dit artikel worden verstrekt. Kies tussen het [Verzendpakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) of het [Dev-pakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), afhankelijk van de sjabloon die u wilt aanpassen.
+Voor specifieke voorbeelden van dergelijke aanpassingen, zie de onderwerpen van de Hulp die aan het eind van dit artikel worden verstrekt. Kies tussen [Verzendpakket](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p) of [Dev Package](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p), afhankelijk van het aan te passen malplaatje.
 
 ### Semantische wijzigingen {#semantic-changes}
 
@@ -165,15 +165,15 @@ De stappen op hoofdniveau voor semantische wijzigingen om de functionaliteit van
 * Breng relevante updates aan, zoals het bijwerken van paden van nieuw toegevoegde modellen en weergaven in de standaard JavaScript-bestanden.
 * Minimaal het pakket om de prestaties te optimaliseren.
 
-Voor meer conceptuele informatie over de componenten die deel van de broncode uitmaken, zie de [Beschrijving van herbruikbare componenten](/help/forms/using/description-reusable-components.md). Voor deze aanpassingen, gebruik het Dev Pakket.
+Voor meer conceptuele informatie over de componenten die deel van de broncode uitmaken, zie [Beschrijving van herbruikbare componenten](/help/forms/using/description-reusable-components.md). Voor deze aanpassingen, gebruik het Dev Pakket.
 
 ### Herbruikbare componenten {#reusable-components}
 
 Aangezien de werkruimte van AEM Forms op componenten-gebaseerde software is, kan het gemakkelijk worden aangepast en worden opnieuw gebruikt. U kunt de werkruimtecomponenten gemakkelijk met uw Webtoepassingen integreren.
 
-Voor meer conceptuele informatie, zie de [Beschrijving van herbruikbare componenten](/help/forms/using/description-reusable-components.md) en voor instructies over het gebruiken van de componenten, zie het [Integreren van de werkruimtecomponenten van AEM Forms in Webtoepassingen](/help/forms/using/description-reusable-components.md).
+Voor meer conceptuele informatie, zie [Beschrijving van herbruikbare componenten](/help/forms/using/description-reusable-components.md) en voor instructies over het gebruiken van de componenten, zie [Integrating AEM Forms workspace components in Webtoepassingen](/help/forms/using/description-reusable-components.md).
 
-## AEM Forms-werkruimtecode samenstellen {#building-html-workspace-code}
+## AEM Forms-werkruimtecode {#building-html-workspace-code} samenstellen
 
 ### SDK-pakket {#sdk-package}
 
@@ -181,7 +181,7 @@ Het pakket bevat de broncode van de AEM Forms-werkruimte. Het pakket is beschikb
 
 Het is hoofdzakelijk bedoeld voor aanpassingen, aangezien het de capaciteit verstrekt om te produceren:
 
-* CRX-pakketten voor profielen voor verzending, foutopsporing en ontwikkeling (vermeld in [CRX-pakketten](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
+* CRX-pakketten voor verzendprofielen, foutopsporingsprofielen en ontwikkelprofielen (vermeld onder [CRX-pakketten](/help/forms/using/introduction-customizing-html-workspace.md#p-crx-package-p)).
 * Gimiteerde versie van aangepaste code (voor semantische wijzigingen).
 
 #### WS-inhoud {#ws-content}
@@ -232,7 +232,7 @@ Het is hoofdzakelijk bedoeld voor aanpassingen, aangezien het de capaciteit vers
 
 ### CRX-pakket {#crx-package}
 
-CRX-pakket kan worden geïmplementeerd in de CRX™-opslagplaats. Het is beschikbaar om `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
+CRX-pakket kan worden geïmplementeerd in de CRX™-opslagplaats. Het is beschikbaar bij `[*LC root*]\crx-repository\install\adobe-lc-workspace-pkg.zip`.
 
 Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 
@@ -242,9 +242,9 @@ Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 | Foutopsporingsprofiel | Met dit profiel wordt een matig efficiënt CRX-pakket gemaakt. De grootte van het pakket is iets groter dan het pakket dat is gemaakt met het profiel Verzenden. Dit pakket bevat de meeste JavaScript-bestanden die in één JS-bestand worden gecombineerd. | Gebruik dit profiel voor foutopsporing. |
 | Profiel dev | Met dit profiel wordt een CRX-pakket van de grootst mogelijke grootte gemaakt. Alle JavaScript-bestanden zijn afzonderlijk beschikbaar, net als in het SDK-pakket. | Gebruik dit profiel wanneer u semantische wijzigingen opneemt. |
 
-#### Verzendprofiel {#ship-profile}
+#### Scheepsprofiel {#ship-profile}
 
-#### Command {#command}
+#### Opdracht {#command}
 
 * mvn clean -P Ship install on client-pkg folder of Source package sent to client.
 * De uitvoering van de opdracht Verzenden van profielen werkt alleen op een 64-bits JVM.
@@ -289,7 +289,7 @@ Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 
 #### Foutopsporingsprofiel {#debug-profile}
 
-#### Command {#command-1}
+#### Opdracht {#command-1}
 
 * mvn clean -P Debug install on client-pkg
 * De uitvoering van foutopsporingsprofielopdrachten werkt alleen op 64-bits JVM.
@@ -334,7 +334,7 @@ Dit pakket kan worden gemaakt met de drie hieronder beschreven profielen.
 
 #### Dev-profiel {#dev-profile}
 
-#### Command {#command-2}
+#### Opdracht {#command-2}
 
 mvn clean -P Dev install on client pkg
 
