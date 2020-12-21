@@ -15,7 +15,7 @@ ht-degree: 0%
 ---
 
 
-# Aangepaste e-mailsjablonen gebruiken in de stap Taak toewijzen {#use-custom-email-templates-in-an-assign-task-step}
+# Aangepaste e-mailsjablonen gebruiken in een taakstap toewijzen {#use-custom-email-templates-in-an-assign-task-step}
 
 Aangepaste e-mailsjablonen voor e-mailmeldingen in de formulierwerkstroom
 
@@ -31,7 +31,7 @@ In de volgende afbeelding wordt een aangepast e-mailbericht weergegeven:
 
 ![E-mailmelding met aangepaste sjabloon](do-not-localize/customized-email.png)
 
-## De bestaande sjabloon aanpassen {#customize-the-existing-template}
+## De bestaande sjabloon {#customize-the-existing-template} aanpassen
 
 AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een beschrijving van de titel, de vervaldatum, de prioriteit, de naam van de workflow en de koppeling naar de toegewezen taak. U kunt de sjabloon aanpassen om de weergave te wijzigen. Voer de volgende stappen uit om de sjabloon aan te passen:
 
@@ -63,11 +63,11 @@ AEM Forms beschikt over een sjabloon voor e-mailberichten. De sjabloon bevat een
 
 1. Sla het bestand op. Het malplaatje is klaar voor gebruik in de stap van de Taak toewijzen.
 
-## Een e-mailsjabloon gebruiken in een stap Taak toewijzen {#use-an-email-template-in-an-assign-task-step}
+## Een e-mailsjabloon gebruiken in een taakstap toewijzen {#use-an-email-template-in-an-assign-task-step}
 
 Uit de doos, wordt de taakstap van de Toewijzing gevormd om het standaardmalplaatje, htmlEmailTemplate.txt te gebruiken. U kunt een aangepaste sjabloon gebruiken. De sjabloon wijzigen:
 
-1. Open de **[!UICONTROL Assign Task]** stap.
+1. Open de stap **[!UICONTROL Assign Task]**.
 
 1. Ga naar **[!UICONTROL Assignee > HTML Email Template]**.
 
@@ -75,4 +75,4 @@ Uit de doos, wordt de taakstap van de Toewijzing gevormd om het standaardmalplaa
 
 1. Klik op **[!UICONTROL OK]**. De sjabloon is gewijzigd.
 
-In een e-mailmelding worden ook [metagegevens](/help/forms/using/use-metadata-in-email-notifications.md)gebruikt. Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt de sjabloon ook configureren voor het gebruik van [aangepaste metagegevens](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification).
+Een e-mailmelding gebruikt ook [metadata](/help/forms/using/use-metadata-in-email-notifications.md). Bijvoorbeeld datum, prioriteit, naam van workflow en meer. U kunt het malplaatje ook vormen om [douanemetagegevens](/help/forms/using/use-metadata-in-email-notifications.md#using-custom-metadata-in-an-email-notification) te gebruiken.
