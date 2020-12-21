@@ -17,17 +17,17 @@ ht-degree: 0%
 ---
 
 
-# Zelfstudie: Formuliergegevensmodel maken  {#tutorial-create-form-data-model}
+# Zelfstudie: Formuliergegevensmodel {#tutorial-create-form-data-model} maken
 
 ![04-create-form-data-model-main](assets/04-create-form-data-model-main.png)
 
-Deze zelfstudie is een stap in de [serie Uw eerste adaptieve formulier](/help/forms/using/create-your-first-adaptive-form.md) maken. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Deze zelfstudie is een stap in de serie [Uw eerste adaptieve vorm maken](/help/forms/using/create-your-first-adaptive-form.md). U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
-## Over de zelfstudie {#about-the-tutorial}
+## Informatie over de zelfstudie {#about-the-tutorial}
 
-Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
+Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het aangepaste formulier vooraf invullen en ingediende formuliergegevens terugschrijven naar het gegevensmodelobject.
 
-Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md)voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel.
+Zie [AEM Forms Data Integration](/help/forms/using/data-integration.md) voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel.
 
 Deze zelfstudie begeleidt u door de stappen voor het voorbereiden, maken, configureren en koppelen van een formuliergegevensmodel aan een adaptief formulier. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -40,19 +40,19 @@ Het formuliergegevensmodel ziet er ongeveer als volgt uit:
 
 ![form-data-model_l](assets/form-data-model_l.png)
 
-**A.** Gevormde gegevensbronnen **B.** Gegevensbronschema&#39;s **C.** Beschikbare diensten **D.** Gegevensmodelobjecten **E.** Gevormde services
+**A.** Gevormde gegevensbronnen  **B.** Gegevensbronschema&#39;s  **C.** Available de modelvoorwerpen  **D.** Data  **E.** Configured de diensten
 
 ## Vereisten {#prerequisites}
 
 Voordat u begint, moet u het volgende doen:
 
-* MySQL-database met voorbeeldgegevens zoals vermeld in de sectie Voorwaarden van [Create your first adaptive form](/help/forms/using/create-your-first-adaptive-form.md)
+* MySQL-database met voorbeeldgegevens zoals vermeld in de sectie Voorwaarden van [Uw eerste adaptieve formulier maken](/help/forms/using/create-your-first-adaptive-form.md)
 * OSGi-bundel voor MySQL JDBC-stuurprogramma, zoals wordt uitgelegd in [Bundling the JDBC Database Driver](/help/sites-developing/jdbc.md#bundling-the-jdbc-database-driver)
-* Adaptief formulier zoals uitgelegd in de eerste zelfstudie Een adaptief formulier [maken](/help/forms/using/create-adaptive-form.md)
+* Adaptief formulier zoals uitgelegd in de eerste zelfstudie [Een adaptief formulier maken](/help/forms/using/create-adaptive-form.md)
 
 ## Stap 1: MySQL-database configureren als gegevensbron {#config-database}
 
-U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zullen wij het gegevensbestand vormen MySQL dat u met steekproefgegevens vormde en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie de Integratie [van Gegevens van](/help/forms/using/data-integration.md)AEM Forms.
+U kunt verschillende typen gegevensbronnen configureren om een formuliergegevensmodel te maken. Voor dit leerprogramma, zullen wij het gegevensbestand vormen MySQL dat u met steekproefgegevens vormde en bevolkt. Voor informatie over andere gesteunde gegevensbronnen en hoe te om hen te vormen, zie [de Integratie van Gegevens van AEM Forms](/help/forms/using/data-integration.md).
 
 Ga als volgt te werk om uw MySQL-database te configureren:
 
@@ -60,48 +60,48 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
    1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. De standaard-URL is [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
 
-   1. Tik op **Installeren/bijwerken**. Het dialoogvenster **Bundels** uploaden/installeren wordt weergegeven.
+   1. Tik **Installeren/bijwerken**. Er verschijnt een dialoogvenster **Bundels uploaden/installeren**.
 
-   1. Tik op Bestand **** kiezen om door de OSGi-bundel van het MySQL-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel** starten en Pakketten **** vernieuwen en tik op **Installeren of Bijwerken**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
+   1. Tik **Kies Bestand** om door de OSGi-bundel van het MySQL JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel starten** en **Pakketten vernieuwen** en tik **Installeren of bijwerken**. Zorg ervoor dat het JDBC Driver for MySQL van Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
 
 1. MySQL-database configureren als gegevensbron:
 
    1. Ga naar AEM webconsole op [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
-   1. Zoek de configuratie **van Apache Sling Connection Pooled DataSource** . Tik om de configuratie te openen in de bewerkingsmodus.
+   1. Zoek **Apache Sling Connection Pooled DataSource** configuratie. Tik om de configuratie te openen in de bewerkingsmodus.
    1. Geef in het dialoogvenster Configuratie de volgende gegevens op:
 
-      * **Naam gegevensbron:** U kunt elke gewenste naam opgeven. Geef bijvoorbeeld **WeRetailMySQL** op.
-      * **Naam** van de de diensteigenschap DataSource: Specificeer naam van het de dienstbezit die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld, **datasource.name**.
+      * **Naam gegevensbron:** u kunt elke gewenste naam opgeven. Geef bijvoorbeeld **WeRetailMySQL** op.
+      * **Naam** van de de diensteigenschap DataSource: Specificeer naam van het de dienstbezit die de naam DataSource bevat. Het wordt gespecificeerd terwijl het registreren van de gegevensbroninstantie als dienst OSGi. Bijvoorbeeld **datasource.name**.
       * **JDBC-stuurprogrammaklasse**: Geef de Java-klassenaam van het JDBC-stuurprogramma op. Geef voor MySQL-database **com.mysql.jdbc.Driver** op.
       * **URI** JDBC-verbinding: Geef de verbindings-URL van de database op. Voor MySQL-database die wordt uitgevoerd op poort 3306 en schema weretail, is de URL: `jdbc:mysql://[server]:3306/weretail?autoReconnect=true&useUnicode=true&characterEncoding=utf-8`
       * **Gebruikersnaam:** Gebruikersnaam van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
       * **Wachtwoord:** Wachtwoord van de database. Het is vereist om JDBC-stuurprogramma in staat te stellen een verbinding met de database tot stand te brengen.
-      * **Testen op lenen:** Schakel de optie **Testen op lening** in.
-      * **Testen op rendement:** Schakel de optie **Testen op terugkeer** in.
-      * **Validatiezoekopdracht:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld, **uitgezocht &amp;ast; van klantgegevens**.
-      * **Transactieisolatie**: Stel de waarde in op **READ_COMTED**.
+      * **Testen op lenen:** Schakel de optie  **Testen op** lenen in.
+      * **Testen op Return:** Schakel de optie  **Testen op** retourneren in.
+      * **Validatiecequery:** Geef een SQL SELECT-query op om verbindingen vanuit de pool te valideren. De query moet ten minste één rij retourneren. Bijvoorbeeld **select&amp;ast; van klantgegevens**.
+      * **Transactieisolatie**: Stel de waarde in op  **READ_COMTED**.
 
-      Laat andere eigenschappen de [standaardwaarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) behouden en tik op **Opslaan**.
+      Laat andere eigenschappen standaard [waarden](https://tomcat.apache.org/tomcat-7.0-doc/jdbc-pool.html) en tik **Save**.
    Er wordt een configuratie gemaakt die lijkt op de volgende configuratie.
 
    ![relationele database-data-source-configuration](assets/relational-database-data-source-configuration.png)
 
-## Stap 2: Formuliergegevensmodel maken {#create-fdm}
+## Stap 2: Formuliergegevensmodel {#create-fdm} maken
 
-AEM Forms biedt een intuïtieve gebruikersinterface voor het [maken van een formuliergegevensmodel](data-integration.md) op basis van geconfigureerde gegevensbronnen. U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor ons gebruiksgeval, zullen wij de gevormde gegevensbron gebruiken MySQL.
+AEM Forms biedt een intuïtieve gebruikersinterface voor het maken van een formuliergegevensmodel[ van geconfigureerde gegevensbronnen. ](data-integration.md) U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor ons gebruiksgeval, zullen wij de gevormde gegevensbron gebruiken MySQL.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
-1. Navigeer in AEM auteurinstantie naar **Forms** > **Data** Integrations.
-1. Tik op **Maken** > **Formuliergegevensmodel**.
-1. Geef in het dialoogvenster Formuliergegevensmodel een **naam** op voor het formuliergegevensmodel. Bijvoorbeeld **klant-verzend-facturerings-details**. Tik op **Volgende**.
-1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteer **WeRetailMySQL** -gegevensbron en tik op **Maken**.
+1. Navigeer in AEM auteurinstantie naar **Forms** > **Gegevensintegratie** s.
+1. Tik **Maken** > **Formuliergegevensmodel**.
+1. Geef in het dialoogvenster Formuliergegevensmodel maken een **naam** op voor het formuliergegevensmodel. Bijvoorbeeld **customer-Shipping-billing-details**. Tik **Volgende**.
+1. Het uitgezochte scherm van gegevensbron maakt een lijst van alle gevormde gegevensbronnen. Selecteer **WeRetailMySQL** gegevensbron en tik **Create**.
 
    ![gegevensbron-selectie](assets/data-source-selection.png)
 
-Het gegevensmodel voor **klantverzendgegevens** wordt gemaakt.
+Het formuliergegevensmodel **customer-Shipping-billing-details** wordt gemaakt.
 
-## Stap 3: Formuliergegevensmodel configureren {#config-fdm}
+## Stap 3: Formuliergegevensmodel {#config-fdm} configureren
 
 Het configureren van het formuliergegevensmodel omvat:
 
@@ -111,13 +111,13 @@ Het configureren van het formuliergegevensmodel omvat:
 Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
 1. Navigeer bij AEM auteurinstantie naar **Forms > Gegevensintegratie**. De standaard-URL is [http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm](http://localhost:4502/aem/forms.html/content/dam/formsanddocuments-fdm).
-1. Hier wordt het formuliergegevensmodel weergegeven dat u eerder hebt gemaakt en waarin de **klant gegevens over** de facturering opgeeft. Open het in bewerkingsmodus.
+1. Het model **customer-Shipping-billing-details** formuliergegevens dat u eerder hebt gemaakt, wordt hier weergegeven. Open het in bewerkingsmodus.
 
    De geselecteerde gegevensbron **WeRetailMySQL** wordt gevormd in het model van vormgegevens.
 
    ![default-fdm](assets/default-fdm.png)
 
-1. Vouw de WebRailMySQL-gegevensbronstructuur uit. Selecteer de volgende gegevensmodelobjecten en -services van **Origineel** > **details** -schema voor de klant naar het formuliergegevensmodel:
+1. Vouw de WebRailMySQL-gegevensbronstructuur uit. Selecteer de volgende gegevensmodelvoorwerpen en de diensten van **weretail** > **customerdetails** schema aan vormgegevensmodel:
 
    * **Objecten** gegevensmodel:
 
@@ -132,7 +132,7 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
       * get
       * update
 
-   Tik op Geselecteerde **gegevensmodelobjecten en -services** toevoegen aan het formuliergegevensmodel.
+   Tik op **Geselecteerde objecten toevoegen** om geselecteerde gegevensmodelobjecten en -services toe te voegen aan het formuliergegevensmodel.
 
    ![weretail-schema](assets/weretail-schema.png)
 
@@ -142,28 +142,28 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
 1. Configureer lees- en schrijfservices voor het gegevensmodelobject.
 
-   1. Selecteer het **gegevensmodelobject voor de klantgegevens** en tik op Eigenschappen **** bewerken.
-   1. Selecteer **krijgen** van de Gelezen drop-down Dienst. Het **id** -argument, de primaire sleutel in het gegevensmodel van de klant, wordt automatisch toegevoegd. Tik op ![name_6_3_edit](assets/aem_6_3_edit.png) en configureer het argument als volgt.
+   1. Selecteer het **customerdetails** gegevensmodelobject en tik **Eigenschappen bewerken**.
+   1. Selecteer **get** in de vervolgkeuzelijst Leesservice. Het **id** argument, dat de primaire sleutel in het voorwerp van het klantdetailgegevensmodel is wordt automatisch toegevoegd. Tik ![aem_6_3_edit](assets/aem_6_3_edit.png) en configureer het argument als volgt.
 
       ![standaard lezen](assets/read-default.png)
 
-   1. Op dezelfde manier selecteer **update** als de Write Dienst. Het object **customerdetails** wordt automatisch als een argument toegevoegd. Het argument is als volgt geconfigureerd.
+   1. Selecteer op dezelfde manier **update** als Schrijverservice. Het **customerdetails** voorwerp wordt automatisch toegevoegd als argument. Het argument is als volgt geconfigureerd.
 
       ![standaard schrijven](assets/write-default.png)
 
-      Voeg als volgt het argument **id** toe en vorm.
+      Voeg het **id** argument als volgt toe en vorm.
 
       ![id-arg](assets/id-arg.png)
 
-   1. Tik op **Gereed** om de objecteigenschappen van het gegevensmodel op te slaan. Tik vervolgens op **Opslaan** om het formuliergegevensmodel op te slaan.
+   1. Tik **Done** om de objecteigenschappen van het gegevensmodel op te slaan. Tik vervolgens op **Opslaan** om het formuliergegevensmodel op te slaan.
 
-      De **ophalen** en **bijwerken** services worden toegevoegd als standaardservices voor het gegevensmodelobject.
+      De **get** en **update** services worden toegevoegd als standaardservices voor het gegevensmodelobject.
 
       ![data-model-object](assets/data-model-object.png)
 
-1. Ga naar het tabblad **Services** en configureer **get** - en **updateservices** .
+1. Ga naar het tabblad **Services** en configureer **get** en **update** services.
 
-   1. Selecteer de **get** service en tik op Eigenschappen **** bewerken. Het dialoogvenster Eigenschappen wordt geopend.
+   1. Selecteer de **get** service en tik **Eigenschappen bewerken**. Het dialoogvenster Eigenschappen wordt geopend.
    1. Geef het volgende op in het dialoogvenster Eigenschappen bewerken:
 
       * **Titel**: Geef de titel van de service op. Bijvoorbeeld: Verzendadres ophalen.
@@ -174,14 +174,14 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
       * **Uitvoermodelobject**: Selecteer schema met klantgegevens. Bijvoorbeeld:
 
          customerdetail-schema
-      * **Retourarray**: Schakel de optie **Retourarray** uit.
-      * **Argumenten**: Selecteer een argument met de naam **ID**.
+      * **Retourarray**: Schakel de optie  **Return-** array uit.
+      * **Argumenten**: Selecteer een argument met de naam  **ID**.
 
-      Tik **op Gereed**. De dienst om klantendetails van het gegevensbestand terug te winnen MySQL wordt gevormd.
+      Tik **Done**. De dienst om klantendetails van het gegevensbestand terug te winnen MySQL wordt gevormd.
 
       ![verzendadres-herwinning](assets/shiiping-address-retrieval.png)
 
-   1. Selecteer de **updateservice** en tik op **Eigenschappen** bewerken. Het dialoogvenster Eigenschappen wordt geopend.
+   1. Selecteer de **update**-service en tik **Eigenschappen bewerken**. Het dialoogvenster Eigenschappen wordt geopend.
 
    1. Geef het volgende op in het dialoogvenster Eigenschappen bewerken:
 
@@ -195,10 +195,10 @@ Voer de volgende handelingen uit om het formuliergegevensmodel te configureren:
 
          customerdetail-schema
 
-      * **Uitvoertype**: Selecteer **BOOLEAN**.
-      * **Argumenten**: Selecteer een argument met de naam **ID** en **klantgegevens**.
+      * **Uitvoertype**: Selecteer  **BOOLEAN**.
+      * **Argumenten**: Selecteer een argument met de naam  **** ID en  **klantgegevens**.
 
-      Tik **op Gereed**. De **updateservice** om klantendetails in het gegevensbestand bij te werken MySQL wordt gevormd.
+      Tik **Done**. De **update** dienst om klantendetails in het gegevensbestand bij te werken MySQL wordt gevormd.
 
       ![send-address-update](assets/shiiping-address-update.png)
 
@@ -212,11 +212,11 @@ U kunt het gegevensmodelobject en de services testen om te controleren of het fo
 
 Voer de volgende handelingen uit om de test uit te voeren:
 
-1. Ga naar het tabblad **Model** , selecteer het **gegevensmodelobject CustomDetails** en tik op **Testmodelobject**.
-1. Selecteer in het venster **Testmodel/service** de optie **Model-object** lezen in de vervolgkeuzelijst **Selecteer model/service** .
-1. In de sectie **customerdetails** , specificeer een waarde voor het **id** argument dat in het gevormde gegevensbestand MySQL bestaat en tikt **Test**.
+1. Ga naar het **tabblad Model**, selecteer **customerdetails** gegevensmodelobject en tik **Model Object** testen.
+1. Selecteer **Model-object lezen** in het venster **Testmodel / Service** in de vervolgkeuzelijst **Selecteer model / service**.
+1. Geef in de sectie **customerdetails** een waarde op voor het argument **id** in de geconfigureerde MySQL-database en tik **Test**.
 
-   De klantgegevens die aan de opgegeven id zijn gekoppeld, worden opgehaald en weergegeven in de sectie **Uitvoer** , zoals hieronder wordt weergegeven.
+   De klantgegevens voor de opgegeven id worden opgehaald en weergegeven in de sectie **Uitvoer**, zoals hieronder wordt weergegeven.
 
    ![testmodel](assets/test-read-model.png)
 
