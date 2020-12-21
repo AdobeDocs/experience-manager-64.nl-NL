@@ -18,9 +18,9 @@ ht-degree: 15%
 
 # HTML5-voorbeeld van een XDP-formulier genereren {#generate-html-preview-of-an-xdp-form}
 
-Tijdens het ontwerpen van een formulier in AEM Forms Designer kunt u, naast een voorbeeld van de PDF-uitvoering van een formulier, ook een voorbeeld van een HTML5-uitvoering bekijken. Op het tabblad **Voorbeeld-HTML** kunt u een voorbeeld van een formulier bekijken zoals het in een browser wordt weergegeven.
+Tijdens het ontwerpen van een formulier in AEM Forms Designer kunt u, naast een voorbeeld van de PDF-uitvoering van een formulier, ook een voorbeeld van een HTML5-uitvoering bekijken. Met het tabblad **Voorvertoning van HTML** kunt u een voorbeeld van een formulier bekijken zoals het in een browser wordt weergegeven.
 
-## HTML-voorbeeld voor XDP-formulieren inschakelen in Designer {#html-preview-of-forms-in-forms-designer}
+## HTML-voorvertoning voor XDP-formulieren inschakelen in Designer {#html-preview-of-forms-in-forms-designer}
 
 Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voorbeeld van XDP-formulieren te genereren:
 
@@ -28,15 +28,15 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
 * Beveiligde modus uitschakelen
 * Geef details van de AEM Forms-server op
 
-### Apache Sling Authentication Service configureren {#configure-apache-sling-authentication-service}
+### Apache Sling Authentication Service {#configure-apache-sling-authentication-service} configureren
 
-1. Ga naar `https://[server]:[port]/system/console/configMgr` AEM Forms die wordt uitgevoerd op OSGi of
+1. Ga naar `https://[server]:[port]/system/console/configMgr` op AEM Forms die op OSGi loopt of
 
    `https://[server]:[port]/lc/system/console/configMgr` op AEM Forms in werking gesteld op JEE.
 
-1. Zoek en klik op de configuratie van **Apache Sling Authentication Service** om deze te openen in de bewerkingsmodus.
+1. Zoek en klik op **Apache Sling Authentication Service** configuratie om deze te openen in bewerkingsmodus.
 
-1. Afhankelijk van of u AEM Forms op OSGi of JEE in werking stelt, voeg het volgende op het gebied van de Vereisten **van de** Authentificatie toe:
+1. Afhankelijk van of u AEM Forms op OSGi of JEE in werking stelt, voeg het volgende op **de Vereisten van de Authentificatie** gebied toe:
 
    * AEM Forms op JEE
 
@@ -52,9 +52,9 @@ Voer de volgende configuraties uit om Designer in staat te stellen een HTML-voor
    >Kopieer en plak de opgegeven waarde niet in het veld Verificatievereisten omdat de speciale tekens in de waarde hierdoor kunnen beschadigd raken. Typ in plaats daarvan de opgegeven waarde in het veld.
 
 1. Geef een gebruikersnaam en wachtwoord op in respectievelijk **[!UICONTROL Anonymous User Name]** en **[!UICONTROL Anonymous User Password]** velden. De gespecificeerde geloofsbrieven worden gebruikt om anonieme authentificatie te behandelen en toegang tot anonieme gebruikers toe te staan.
-1. Klik op **Opslaan** om de configuratie op te slaan.
+1. Klik **sparen** om de configuratie te bewaren.
 
-### Beveiligde modus uitschakelen {#disable-protected-mode}
+### Beveiligde modus {#disable-protected-mode} uitschakelen
 
 De [beveiligde modus](/help/forms/using/get-xdp-pdf-documents-aem.md) is standaard ingeschakeld. Houd het ingeschakeld voor de productieomgevingen. U kunt dit uitschakelen voor een ontwikkelomgeving om HTML5 Forms in Designer voor te vertonen. Voer de volgende stappen uit om het uit te schakelen:
 
@@ -63,32 +63,32 @@ De [beveiligde modus](/help/forms/using/get-xdp-pdf-documents-aem.md) is standaa
    * URL voor AEM Forms op OSGi is `https://[server]:[port]/system/console/configMgr`
    * URL voor AEM Forms op JEE is `https://[server]:[port]/lc/system/console/configMgr`
 
-1. Openen **[!UICONTROL Mobile Forms Configurations]** voor bewerken.
-1. Schakel de **[!UICONTROL Protected Mode]** optie uit en klik op **[!UICONTROL Save]**.
+1. Open **[!UICONTROL Mobile Forms Configurations]** voor bewerking.
+1. Schakel de optie **[!UICONTROL Protected Mode]** uit en klik **[!UICONTROL Save]**.
 
-### Geef details van de AEM Forms-server op {#provide-details-of-aem-forms-server}
+### Geef details van de AEM Forms-server {#provide-details-of-aem-forms-server}
 
-1. Ga in Designer naar **Gereedschappen** > **Opties**.
-1. Selecteer in het venster Opties de pagina **Serveropties** , geef de volgende gegevens op en klik op **OK**.
+1. Ga in Designer naar **Extra** > **Opties**.
+1. Selecteer in het venster Opties de pagina **Serveropties**, geef de volgende gegevens op en klik op **OK**.
 
    * **Server-URL**: URL AEM Forms-server.
    * **HTTP-poortnummer**: AEM serverpoort. De standaardwaarde is 4502.
-   * **Context HTML-voorvertoning:** Pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
+   * **Context HTML-voorbeeld:** pad van het profiel voor het weergeven van XFA-formulieren. De volgende standaardprofielen worden gebruikt voor een voorbeeld van het formulier in Designer. U kunt echter ook het pad naar een aangepast profiel opgeven.
 
       * `/content/xfaforms/profiles/default.html` (AEM Forms op OSGi)
       * `/lc/content/xfaforms/profiles/default.html` (AEM Forms op JEE)
-   * **Context Forms Manager:** Contextpad waarop de gebruikersinterface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
+   * **Context van Forms Manager:** Contextpad waarop de gebruikersinterface van Forms Manager wordt geïmplementeerd. De standaardwaarden zijn:
 
       * `/aem/forms` (AEM Forms op OSGi)
       * `/lc/forms` (AEM Forms op JEE)
 
-   **Opmerking:** *Zorg ervoor dat de AEM Forms-server actief is. The HTML preview connects to the CRX server to* generate *a preview.*
+   **Opmerking:** *Zorg ervoor dat de AEM Forms-server actief is. De voorproef van HTML verbindt met de server CRX aan* generate *een voorproef.*
 
-   ![Opties voor AEM Forms Designer ](assets/server_options.png)
+   ![Opties voor AEM Forms Designer  ](assets/server_options.png)
 
    Opties voor AEM Forms Designer
 
-1. Als u een voorbeeld van een formulier in HTML wilt bekijken, klikt u op het tabblad **Voorbeeld-HTML** .
+1. Als u een voorbeeld van een formulier in HTML wilt bekijken, klikt u op het tabblad **Voorvertoning van HTML**.
 
    >[!NOTE]
    >
@@ -106,14 +106,14 @@ Als u geen voorbeeldgegevens hebt, kunt u die laten maken in Designer of deze ze
 
 Als u een formulier test met een bron voor voorbeeldgegevens, weer u zeker dat de gegevens en de velden zijn gekoppeld en dat herhalende subformulieren op de verwachte manier worden herhaald. U kunt een evenwichtige formulierindeling maken met voldoende ruimte voor elk object om de samengevoegde gegevens weer te geven.
 
-1. Select **File > Form Properties**.
+1. Selecteer **Bestand > Formuliereigenschappen**.
 
-1. Click the **Preview** tab and, in the Data File box, type the full path to your test data file. U kunt de Browse knoop ook gebruiken om aan het dossier te navigeren.
+1. Klik op het tabblad **Voorvertoning** en typ in het vak Gegevensbestand het volledige pad naar het bestand met de testgegevens. U kunt de Browse knoop ook gebruiken om aan het dossier te navigeren.
 
-1. Click **OK**. The next time you preview the form in the **Preview HTML** tab, the data values from the sample XML file will appear in the respective objects.
+1. Klik **OK**. De volgende keer dat u een voorbeeld van het formulier weergeeft op het tabblad **Voorbeeld-HTML**, worden de gegevenswaarden uit het XML-voorbeeldbestand weergegeven in de desbetreffende objecten.
 
 ## Formulieren voorvertonen in een gegevensopslagruimte {#html-preview-of-forms-in-forms-manager}
 
-In AEM Forms kunt u formulieren en documenten voorvertonen in een gegevensopslagruimte. Aan de hand van een voorbeeld kunt u precies zien hoe de formulieren eruitzien en zich gedragen zoals ze worden gebruikt door eindgebruikers.
+In AEM Forms kunt u formulieren en documenten voorvertonen in een gegevensopslagruimte. Met Voorvertoning kunt u precies zien hoe de formulieren eruitzien en zich gedragen zoals ze worden gebruikt door eindgebruikers.
 
-[**Contact opnemen met ondersteuning **](https://www.adobe.com/account/sign-in.supportportal.html)
+[**Contact opnemen met ondersteuning**](https://www.adobe.com/account/sign-in.supportportal.html)
