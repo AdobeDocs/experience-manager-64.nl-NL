@@ -20,14 +20,14 @@ ht-degree: 0%
 
 # Toewijzingsfunctie {#assignments-feature}
 
-De taken van Enablement en de componenten van de Catalogus [van](catalog.md) Enablement die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van een [enablement gemeenschap](overview.md#enablement-community).
+De toewijzingen van Enablement en de [componenten van de Catalogus van Enablement](catalog.md) die in de groep van Gemeenschappen in componentenbrowser worden gevonden zijn componenten van [enablement community](overview.md#enablement-community).
 
-De component van Toewijzingen Enablement staat het momenteel ondertekende communautaire lid (student) toe om tot hun toegewezen [inschrijvingsmiddelen](resources.md)toegang te hebben.
+Met de component Enablement Assignment kan het momenteel ingetekende communitylid (student) toegang krijgen tot de toegewezen [enablement resources](resources.md).
 
-Van de [Begonnen Worden met AEM Communities voor Enablement](getting-started-enablement.md) zelfstudie, zie de mening van een lid van toewijzingen en catalogi in de [Ervaring de Gepubliceerde sectie van de Plaats](enablement-published-site.md) .
+Van [Aan de slag met AEM Communities voor Enablement](getting-started-enablement.md) leerprogramma, zie de mening van een lid van toewijzingen en catalogi in [Ervaar de Gepubliceerde Plaats](enablement-published-site.md) sectie.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
-Meer informatie kan op de pagina van de Hoofdzaak [van](essentials-assignments.md) Taken voor ontwikkelaars worden gevonden.
+Meer informatie vindt u op de pagina [Hoofdzaak van toewijzingen](essentials-assignments.md) voor ontwikkelaars.
 
-De [toewijzingsfunctie](functions.md#assignments-function) is beschikbaar wanneer u een [communitysite](sites-console.md)maakt.
+De [toewijzingsfunctie](functions.md#assignments-function) is beschikbaar bij het maken van een [communitysite](sites-console.md).
