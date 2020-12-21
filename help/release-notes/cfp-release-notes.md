@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: e10d53a3912fb21962f1015550bd3a4a118d8834
+source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
 workflow-type: tm+mt
-source-wordcount: '4075'
+source-wordcount: '4136'
 ht-degree: 0%
 
 ---
@@ -158,6 +158,9 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 * U kunt de [!DNL Live Copy] van een pagina onderbreken en de overerving wordt verbroken zoals in de Editor-modus wordt getoond. In de Pagina-eigenschappen geeft het pictogram dat overerving vertegenwoordigt echter ten onrechte aan dat de overerving bestaat en niet wordt verbroken (NPR-34096).
 * Probleem met weergave van toegestane componenten op de pagina Sjabloon bewerken (CQ-4297295).
 * Nadat u Chrome en Firefox hebt bijgewerkt, werken de pop-upmenu&#39;s niet meer zoals u had verwacht. Bij het laden van de pagina-eigenschappen wordt het deelvenster niet weergegeven wanneer er gegevens in staan (CQ-4292995).
+* Meerdere cross-site scripting instances in [!DNL Experience Manager Sites] componenten (NPR-33926).
+* Gebruikersinvoer wordt niet op de juiste wijze gecodeerd voor verschillende componenten bij het verzenden van informatie naar de client (NPR-33696).
+* Een URL die eindigt met `childrenlist.html` geeft een HTML-pagina weer in plaats van een 404-reactie. Dergelijke URL&#39;s zijn kwetsbaar voor cross-site scripting (NPR-33441).
 
 #### Assets {#assets-6482}
 
@@ -234,6 +237,8 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 * De handeling **[!UICONTROL Submit to REST endpoint]** submit werkt niet voor een adaptieve vorm (NPR-34513).
 
 * Toegankelijkheid: Wanneer u een adaptief formulier probeert te verzenden zonder een bijlage voor een verplicht veld te uploaden, verschuift de focus niet automatisch naar het bijlageveld (NPR-34511).
+
+* Gebruikersinvoer wordt niet op de juiste wijze gecodeerd voor [!DNL Forms]-componenten bij het verzenden van informatie naar de client (NPR-33611).
 
 **Workflow**
 
@@ -431,9 +436,9 @@ Zie [Technische vereisten](../sites-deploying/technical-requirements.md) voor in
 >[!NOTE]
 >Bij een geslaagde installatie van het pakket wordt een informatief bericht weergegeven dat het inhoudspakket is geïnstalleerd, zoals **&quot;Content Package AEM-6.4-Service-Pack-8 is geïnstalleerd.&quot;**
 
-### Dynamische media-viewers bijwerken (5.10.1) {#update-dynamic-media-viewers}
+### Dynamic Media Viewers bijwerken (5.10.1) {#update-dynamic-media-viewers}
 
-AEM 6.4.8.3 bevat een nieuwe versie van Dynamic Media-viewers (5.10.1), waarmee op dubbele namen op de pagina Voorinstelling afbeelding kan worden gecontroleerd. Klanten met dynamische media wordt aangeraden de volgende opdracht uit te voeren om voorinstellingen van de viewer voor selectievakjes naar een actuele status over te brengen.
+AEM 6.4.8.3 bevat een nieuwe versie van Dynamic Media-viewers (5.10.1), waarmee u op dubbele namen op de pagina Voorinstelling afbeelding kunt controleren. Dynamic Media-klanten wordt aangeraden de volgende opdracht uit te voeren om de voorinstellingen van de viewer uit de box te halen.
 
 `curl -u admin:admin http://localhost:4502/libs/settings/dam/dm/presets/viewer.pushviewerpresets`
 
