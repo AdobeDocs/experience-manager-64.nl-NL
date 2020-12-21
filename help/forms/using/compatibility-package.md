@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Compatibiliteitspakket installeren {#compatibility-package}
+# Compatibiliteitspakket {#compatibility-package} installeren
 
 Als u het compatibiliteitspakket op AEM Forms 6.4 installeert, kunt u de Correspondence Management-middelen van AEM Forms 6.3 en afgekeurde aangepaste formuliersjablonen en pagina&#39;s gebruiken
 
 ## Overzicht {#overview}
 
-De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.4 tot stand te brengen. Als u de brieven van AEM 6.3 Forms en AEM 6.2 Forms wilt blijven gebruiken, moet u het [compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT)AEMFD installeren.
+De interactieve mededeling is het gebrek en geadviseerde benadering om klantenmededelingen in AEM Forms 6.4 tot stand te brengen. Als u de letters van AEM 6.3 Forms en AEM 6.2 Forms wilt blijven gebruiken, moet u het [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) installeren.
 
 Met het compatibiliteitspakket AEMFD kunt u de volgende middelen van AEM Forms 6.3 en 6.2 op AEM Forms 6.4 gebruiken:
 
@@ -33,9 +33,9 @@ Met het compatibiliteitspakket AEMFD kunt u de volgende middelen van AEM Forms 6
 * Gegevenswoordenboeken
 * Afgekeurde sjablonen en pagina&#39;s voor adaptieve formulieren
 
-Zie [Activa die compatibel zijn gemaakt met AEM Forms 6.4 door het compatibiliteitspakket](/help/forms/using/compatibility-package.md#assetsmadecompatible)te installeren voor meer informatie.
+Zie [Elementen die compatibel zijn gemaakt met AEM Forms 6.4 door het compatibiliteitspakket te installeren](/help/forms/using/compatibility-package.md#assetsmadecompatible) voor meer informatie.
 
-## Voeg ondersteuning toe voor AEM Forms 6.3- en 6.2-middelen in AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
+## Voeg ondersteuning toe voor AEM Forms 6.3- en 6.2-elementen in AEM Forms 6.4 {#add-support-for-aem-forms-and-assets-in-aem-forms}
 
 Nadat u een upgrade hebt uitgevoerd, voert u de volgende handelingen uit om het compatibiliteitspakket voor AEMFD te installeren en uw elementen compatibel te maken met 6.4:
 
@@ -43,14 +43,14 @@ Zorg ervoor dat u [AEM compatibiliteitspakket](/help/sites-deploying/backward-co
 
 1. Installeer het [compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT).
 
-   Zie [Werken met pakketten](/help/sites-administering/package-manager.md)voor meer informatie over het uploaden en installeren van het pakket.
+   Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over het uploaden en installeren van het pakket.
 
 1. Start de server opnieuw nadat de logbestanden zijn gestabiliseerd.
 1. Gebruik het migratiehulpprogramma om uw middelen compatibel te maken met 6.4.
 
-   Zie [migratiehulpprogramma](/help/forms/using/migration-utility.md)voor meer informatie.
+   Zie [migratiehulpprogramma](/help/forms/using/migration-utility.md) voor meer informatie.
 
-## Activa die compatibel zijn gemaakt met AEM Forms 6.4 door het compatibiliteitspakket te installeren {#assetsmadecompatible}
+## Elementen die compatibel zijn gemaakt met AEM Forms 6.4 door het compatibiliteitspakket {#assetsmadecompatible} te installeren
 
 Door het compatibiliteitspakket te installeren, kunt u de volgende elementen en sjablonen compatibel maken met AEM Forms 6.4:
 
