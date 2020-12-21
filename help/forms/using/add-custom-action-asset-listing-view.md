@@ -38,17 +38,17 @@ Om het volgende scenario of gelijkaardige te voltooien, vereist u kennis van:
 * JavaScript
 * Java
 
-## Scenario: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte PDF-versie van een letter te downloaden {#addcommandtoletters}
+## Scenario: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte PDF-versie van een letter {#addcommandtoletters} te downloaden
 
 In de onderstaande stappen voegt u de opdracht Vlakke PDF downloaden toe aan de weergave Lijst met activa voor letters en stelt u uw gebruikers in staat om de platte PDF van de geselecteerde brief te downloaden. Als u deze stappen gebruikt met de juiste code en parameters, kunt u een andere functionaliteit toevoegen voor een ander element, zoals gegevenswoordenboeken of teksten.
 
 Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat uw gebruikers een PDF met standaardletters kunnen downloaden:
 
-1. Ga naar Beheerder `https://[server]:[port]/[ContextPath]/crx/de` en meld u aan.
+1. Ga naar `https://[server]:[port]/[ContextPath]/crx/de` en login als Beheerder.
 
 1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de selectiemap en voer daarbij de volgende stappen uit:
 
-   1. Klik met de rechtermuisknop op de **[!UICONTROL items]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
+   1. Klik met de rechtermuisknop op de map **[!UICONTROL items]** op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
 
       `/libs/fd/cm/ma/gui/content/cmassets/jcr:content/body/content/header/items/selection/items`
 
@@ -77,7 +77,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Voeg onder de map met nieuw gemaakte items een knooppunt toe voor de aangepaste knop/handeling in een bepaald element (bijvoorbeeld: downloadFlatPDF) gebruikend de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de **[!UICONTROL items]** map en selecteer **[!UICONTROL Create]** > **[!UICONTROL Create Node]**.
+   1. Klik met de rechtermuisknop op de map **[!UICONTROL items]** en selecteer **[!UICONTROL Create]** > **[!UICONTROL Create Node]**.
 
    1. Zorg ervoor dat het dialoogvenster Knooppunt maken de volgende waarden heeft en klik op **[!UICONTROL OK]**:
 
@@ -86,7 +86,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
       **[!UICONTROL Type:]** nt:ongestructureerd
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
-   1. Voeg de volgende eigenschappen toe aan het knooppunt (hier downloadFlatPDF) en klik **[!UICONTROL Save All]**:
+   1. Voeg de volgende eigenschappen toe aan het knooppunt (hier downloadFlatPDF) en klik op **[!UICONTROL Save All]**:
 
    <table> 
     <tbody> 
@@ -103,12 +103,12 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
     <tr> 
     <td>stichting-collectie-actie</td> 
     <td>Tekenreeks</td> 
-    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> activeSelectionCount <strong></strong> kan enkelvoudig of meervoudig zijn om selecties van enkelvoudige of meervoudige elementen mogelijk te maken waarop de aangepaste handeling wordt uitgevoerd.</p> <p><strong>type</strong> kan een of meer (komma's scheiden meerdere items) van het volgende zijn: LETTER,TEKST,LIJST,VOORWAARDE,GEGEVENSWOORDENBOEK</p> </td> 
+    <td><p>{"target": ".cq-manageasset-admin-childpages", "activeSelectionCount": "single","type": "LETTER"}<br /> <br /> <br /> <strong>activeSelectionCount</strong> kan enkelvoudig of meervoudig zijn om selecties toe te staan van enkelvoudige of meervoudige elementen waarop de aangepaste handeling wordt uitgevoerd.</p> <p><strong></strong> typecan kan een of meer (komma's scheiden meerdere items) van de volgende zijn: LETTER,TEKST,LIJST,VOORWAARDE,GEGEVENSWOORDENBOEK</p> </td> 
     </tr> 
     <tr> 
     <td>pictogram</td> 
     <td>Tekenreeks</td> 
-    <td>pictogram-download<br /> <br /> het pictogram dat Correspondence Management aan de linkerkant van uw bevel/menu toont. Raadpleeg de documentatie bij <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank"></a>CoralUI-pictogrammen voor meer informatie over de beschikbare pictogrammen en instellingen.<br /> </td> 
+    <td>icon-download<br /> <br /> Het pictogram dat Correspondence Management links van uw opdracht/menu weergeeft. Zie <a href="https://docs.adobe.com/docs/en/aem/6-3/develop/ref/coral-ui/coralui3/Coral.Icon.html" target="_blank">documentatie van CoralUI-pictogrammen</a> voor verschillende beschikbare pictogrammen en instellingen.<br /> </td> 
     </tr> 
     <tr> 
     <td>jcr:primaryType</td> 
@@ -128,19 +128,19 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
     <tr> 
     <td>text</td> 
     <td>Tekenreeks</td> 
-    <td>Vlakke PDF downloaden (of een ander label)<br /><br /> De opdracht die wordt weergegeven in de interface Asset Listening</td> 
+    <td>Vlakke PDF downloaden (of een ander label)<br /> <br /> De opdracht die wordt weergegeven in de interface Asset Listening</td> 
     </tr> 
     <tr> 
     <td>title</td> 
     <td>Tekenreeks</td> 
-    <td>Download een vlakke PDF van de geselecteerde brief (of een andere etiket/alt tekst)<br /> <br /> De titel is de alt tekst die de Managementvertoningen van de Overeenstemming wanneer de gebruiker over het douanebevel beweegt.</td> 
+    <td>Download een vlakke PDF van de geselecteerde brief (of een andere etiket/alt tekst)<br /> <br /> De titel is de alt tekst die de Managementvertoningen van de Correspondentie wanneer de gebruiker over het douanebevel beweegt.</td> 
     </tr> 
     </tbody> 
     </table>
 
 1. Maak in de map apps een map met de naam js met een pad/structuur die lijkt op de map met items in de map admin met de volgende stappen:
 
-   1. Klik met de rechtermuisknop op de **[!UICONTROL js]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**: &quot;
+   1. Klik met de rechtermuisknop op de map **[!UICONTROL js]** op het volgende pad en selecteer **[!UICONTROL Overlay Node]**: &quot;
 
       `/libs/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -156,7 +156,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Maak in de map js een bestand met de naam formaction.js met de code voor de afhandeling van handelingen van de knop door de volgende stappen uit te voeren:
 
-   1. Klik met de rechtermuisknop op de **[!UICONTROL js]** map op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
+   1. Klik met de rechtermuisknop op de map **[!UICONTROL js]** op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
 
       `/apps/fd/cm/ma/gui/components/admin/clientlibs/admin/js`
 
@@ -230,7 +230,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
 1. Maak in de map apps een map met de naam items met een pad/structuur die lijkt op de map met items in de map met actionhandlers. Ga hierbij als volgt te werk:
 
-   1. Klik met de rechtermuisknop op de **[!UICONTROL items]** map op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
+   1. Klik met de rechtermuisknop op de map **[!UICONTROL items]** op het volgende pad en selecteer **[!UICONTROL Overlay Node]**:
 
       `/libs/fd/cm/ma/gui/content/commons/actionhandlers/items/`
 
@@ -258,7 +258,7 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    1. Klik op het nieuwe knooppunt dat u hebt gemaakt (hier downloadFlatPDF). CRX geeft de eigenschappen van het knooppunt weer.
 
-   1. Voeg de volgende eigenschap toe aan het knooppunt (hier letterpdfdownloader) en klik **[!UICONTROL Save All]**:
+   1. Voeg de volgende eigenschap toe aan het knooppunt (hier letterpdfdownloader) en klik op **[!UICONTROL Save All]**:
 
       | **Naam** | **Type** | **Waarde** |
       |---|---|---|
@@ -268,18 +268,18 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
 
    /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
-   1. Klik met de rechtermuisknop op de **[!UICONTROL admin]** map op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
+   1. Klik met de rechtermuisknop op de map **[!UICONTROL admin]** op het volgende pad en selecteer **[!UICONTROL Create > Create File]**:
 
       /apps/fd/cm/ma/gui/components/admin/clientlibs/admin
 
       Geef het bestand een naam als POST.jsp. (De bestandsnaam moet alleen POST.jsp zijn.)
 
-   1. Dubbelklik op het **[!UICONTROL POST.jsp]** bestand om het te openen in CRX.
+   1. Dubbelklik op het bestand **[!UICONTROL POST.jsp]** om het te openen in CRX.
    1. Voeg de volgende code aan POST.jsp- dossier toe en klik **[!UICONTROL Save All]**:
 
-      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en)voor meer informatie over AEM Forms API&#39;s.
+      Deze code is specifiek voor de brief teruggeeft dienst. Voeg voor andere elementen de Java-bibliotheken van dat element aan deze code toe. Zie [AEM Forms API](https://adobe.com/go/learn_aemforms_javadocs_63_en) voor meer informatie over AEM Forms API&#39;s.
 
-      Zie AEM [Componenten](/help/sites-developing/components.md)voor meer informatie over AEM bibliotheken.
+      Zie AEM [Componenten](/help/sites-developing/components.md) voor meer informatie over AEM bibliotheken.
 
       ```xml
       /*Import libraries. Here we are downloading letter flat pdf with input xml data so we require letterRender Api. For any other Module functionality we need to first import that library. */            
@@ -346,17 +346,17 @@ Voer de volgende stappen uit als u Correspondentiebeheer wilt aanpassen, zodat u
       %>
       ```
 
-## Vlakke PDF van een letter downloaden met behulp van de aangepaste functionaliteit {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
+## Vlakke PDF van een letter downloaden met de aangepaste functionaliteit {#download-flat-pdf-of-a-letter-using-the-custom-functionality}
 
 Nadat u aangepaste functionaliteit hebt toegevoegd om de platte PDF van uw brieven te downloaden, kunt u de volgende stappen gebruiken om de vlakke versie PDF van de brief te downloaden u uitgezocht:
 
 1. Ga naar `https://[server]:[port]/[ContextPath]/projects.html` en meld u aan.
 
 1. Selecteer **[!UICONTROL Forms > Letters]**. Correspondentiebeheer geeft een overzicht van de beschikbare letters in het systeem.
-1. Klik **[!UICONTROL Select]** en klik vervolgens op een letter om deze te selecteren.
+1. Klik **[!UICONTROL Select]** en klik dan een brief om het te selecteren.
 1. Selecteer **[!UICONTROL More]** > &lt;Flat PDF downloaden> (De aangepaste functionaliteit die is gemaakt met de instructies in dit artikel). Het dialoogvenster Letter downloaden als PDF wordt geopend.
 
-   De naam, functionaliteit en alt-text van het menu-item zijn gebaseerd op de aanpassing die in [Scenario is gemaakt: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte PDF-versie van een letter te downloaden.](#addcommandtoletters)
+   De naam, functionaliteit en alt-text van het menu-item zijn gebaseerd op de aanpassing die is gemaakt in [Scenario: Voeg een opdracht toe aan de gebruikersinterface van de lijst Letters om de platte PDF-versie van een letter te downloaden.](#addcommandtoletters)
 
    ![Aangepaste functionaliteit: Vlakke PDF downloaden](assets/5_downloadflatpdf.png)
 
@@ -364,7 +364,7 @@ Nadat u aangepaste functionaliteit hebt toegevoegd om de platte PDF van uw briev
 
    >[!NOTE]
    >
-   >Voordat u de brief als een platte PDF downloadt, kunt u het XML-bestand met de gegevens in de brief maken met de **[!UICONTROL Create Report]** optie.
+   >Voordat u de brief als een vlakke PDF downloadt, kunt u het XML-bestand met de gegevens in de brief maken met de optie **[!UICONTROL Create Report]**.
 
    ![Letter downloaden als PDF](assets/6_downloadflatpdf.png)
 
