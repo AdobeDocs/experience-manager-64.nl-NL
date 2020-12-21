@@ -22,15 +22,15 @@ ht-degree: 0%
 
 Met Gebruikersbeheer kunt u SSO (Single Sign-On) inschakelen tussen AEM formuliermodules en toepassingen die met Netegrity SiteMinder zijn beveiligd door SAML (Security Assertion Markup Language) te gebruiken. Wanneer SSO is geïmplementeerd, zijn de aanmeldingspagina&#39;s voor AEM formulieren niet vereist en worden deze niet weergegeven als de gebruiker al is geverifieerd via het bedrijfsportaal.
 
-Zie de [IBM DB2-database voor informatie over het verbeteren van de prestaties van de database en directorysynchronisatie voor DB2: Opdrachten uitvoeren voor normaal onderhoud](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
+Zie [IBM DB2-database voor informatie over het verbeteren van de database- en directorysync-prestaties voor DB2: Opdrachten uitvoeren voor normaal onderhoud](/help/forms/using/admin-help/ibm-db2-database-running-commands.md#ibm-db2-database-running-commands-for-regular-maintenance).
 
 ## Gebruikersbeheer configureren voor een LDAP-server met SSL-functionaliteit {#configuring-user-management-for-an-ssl-enabled-ldap-server}
 
-Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeheer voor samenwerking met deze server. (Zie Gebruikersbeheer [configureren voor een LDAP-server](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server)waarvoor SSL is ingeschakeld.)
+Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeheer voor samenwerking met deze server. (Zie [Gebruikersbeheer configureren voor een LDAP-server met SSL ingeschakeld](/help/forms/using/admin-help/configure-user-management-ssl-enabled.md#configure-user-management-for-an-ssl-enabled-ldap-server).)
 
-## Gebruikersrechten instellen voor gebruik met Documentbeveiliging {#setting-user-privileges-for-use-with-document-security}
+## Gebruikersrechten instellen voor gebruik met documentbeveiliging {#setting-user-privileges-for-use-with-document-security}
 
-Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM formulieromgeving Documentbeveiliging bevat, geeft u de gebruiker het recht uitgenodigde en lokale gebruikers te beheren. Dit is de beheerder van deze gebruikers. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie Rollen [](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles)maken en configureren.)
+Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM formulieromgeving documentbeveiliging bevat, geeft u de gebruiker het recht uitgenodigde en lokale gebruikers te beheren. Dit is de beheerder van deze gebruikers. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 Om gebruikers en groepen in geselecteerde domeinen tijdens de onderzoeken van de beleidsgebruiker te bekijken, moet een superbeheerder of beheerder van de beleidsreeks domeinen (die in Beheer van de Gebruiker worden gecreeerd) selecteren en toevoegen aan de zichtbare gebruiker en groepslijst voor elke gemaakte beleidsreeks.
 
@@ -50,7 +50,7 @@ Nadat u de AEM formulieromgeving hebt geïnstalleerd en geconfigureerd met Docum
 1. Navigeer naar Services > Documentbeveiliging > Configuratie > Mijn beleid en klik op het tabblad Zichtbare gebruikers en groepen.
 1. Klik op Domein(s) toevoegen en voeg desgewenst bestaande domeinen toe.
 
-## Gebruikersbeperkingen voor beheerders {#administrator-user-restrictions}
+## Beperkingen voor gebruikers van beheerders {#administrator-user-restrictions}
 
 Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen geen toegang tot de webpagina&#39;s van eindgebruikers in Workspace. Omdat deze webpagina&#39;s buiten een firewall kunnen bestaan, kan het toestaan van taken op beheerniveau een beveiligingsrisico opleveren. Alleen gebruikers met de bevoegdheden van Workspace Administrator of Workspace User hebben toegang tot de webpagina&#39;s van de eindgebruiker.
 
