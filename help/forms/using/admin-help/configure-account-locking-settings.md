@@ -18,7 +18,7 @@ ht-degree: 4%
 ---
 
 
-# Instellingen voor accountvergrendeling configureren {#configure-account-locking-settings}
+# Configureer de instellingen voor accountvergrendeling {#configure-account-locking-settings}
 
 Wanneer u een domein toevoegt, geeft u op of accountvergrendeling moet worden ingeschakeld. Als de optie Account vergrendelen inschakelen is geselecteerd, worden gebruikersaccounts vergrendeld na een opgegeven aantal opeenvolgende verificatiefouten. Na een opgegeven periode kan de gebruiker opnieuw proberen te verifiëren. Met deze functie voorkomt u dat gebruikers verschillende aanmeldingscombinaties proberen te openen.
 
