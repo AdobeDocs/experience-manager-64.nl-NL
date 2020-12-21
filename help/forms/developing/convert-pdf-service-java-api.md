@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Java API Quick Start (SOAP) van PDF-service converteren {#convert-pdf-service-java-api-quickstart-soap}
+# Converteer PDF-service Java API Quick Start (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
 De volgende snelstarthandleidingen zijn beschikbaar voor de Convert PDF service-API.
 
@@ -26,15 +26,15 @@ De volgende snelstarthandleidingen zijn beschikbaar voor de Convert PDF service-
 
 [Snel starten (SOAP-modus): Een PDF-document converteren naar JPEG-bestanden met de Java API](convert-pdf-service-java-api.md#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle Begin die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle Begin die in Programmering met AEM vormen wordt gevestigd is gebaseerd op de Server die van Forms op de Server van de Toepassing JBoss en het werkende systeem van Microsoft Windows wordt opgesteld. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 ## Snel starten (SOAP-modus): Een PDF-document converteren naar PostScript met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-postscript-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PostScript-document met de naam *Loan.ps*. (Zie PDF-documenten [converteren naar PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
+In het volgende codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een PostScript-document met de naam *Loan.ps*. (Zie [PDF-documenten converteren naar PostScript](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-postscript).)
 
 ```as3
  /* 
@@ -149,7 +149,7 @@ In het volgende codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geco
 
 ## Snel starten (SOAP-modus): Een PDF-document converteren naar JPEG-bestanden met de Java API {#quick-start-soap-mode-converting-a-pdf-document-to-jpeg-files-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een set JPEG-bestanden en opgeslagen in de map C:\Adobe directory. Elk bestand heeft de naam *[tempFileindex].jpg*, waarbij het eerste afbeeldingsbestand de naam *tempFile0.jpg* heeft. (Zie PDF-documenten [converteren naar afbeeldingsindelingen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
+In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf* geconverteerd naar een set JPEG-bestanden en opgeslagen in de map C:\Adobe directory. Elk bestand heeft de naam *tempFile[index].jpg*, waarbij het eerste afbeeldingsbestand de naam *tempFile0.jpg* heeft. (Zie [PDF-documenten converteren naar afbeeldingsindelingen](/help/forms/developing/converting-pdf-postscript-image-files.md#converting-pdf-documents-to-image-formats).)
 
 ```as3
  /* 
