@@ -22,7 +22,7 @@ ht-degree: 0%
 
 AEM formulieren (en eerdere versies) hebben JMS-wachtrijen gebruikt om bewerkingen asynchroon uit te voeren. In AEM formulieren zijn JMS-wachtrijen vervangen door Werkbeheer. Dit document bevat achtergrondinformatie over Werkbeheer en instructies voor het configureren van opties voor het vertragen van werkbeheer.
 
-## Over langlevende (asynchrone) bewerkingen {#about-long-lived-asynchronous-operations}
+## Informatie over langlevende (asynchrone) bewerkingen {#about-long-lived-asynchronous-operations}
 
 In AEM vormen, kunnen de verrichtingen door de diensten of kortstondig (synchroon) of langdurig (asynchroon) worden uitgevoerd. Korte-levende verrichtingen voltooien synchroon op de zelfde draad waarvan zij werden aangehaald. Deze bewerkingen wachten op een reactie voordat u verdergaat.
 
@@ -40,7 +40,7 @@ Asynchrone bewerkingen worden op deze manier afgehandeld:
 
 AEM formulierbeheerders kunnen Health Monitor gebruiken om de statistieken van de Manager van het Werk te controleren, zoals het aantal werkpunten in de rij en hun status. U kunt Health Monitor ook gebruiken om het werkpunten te pauzeren, te hervatten, opnieuw te proberen of te schrappen. (Zie [Statistieken weergeven met betrekking tot Werkmanager](/help/forms/using/admin-help/view-statistics-related-manager.md#view-statistics-related-to-work-manager).)
 
-## Opties voor het wijzigen van de snelheid van het werkbeheer configureren {#configuring-work-manager-throttling-options}
+## Opties {#configuring-work-manager-throttling-options} voor het wijzigen van de snelheid van de werkmanager
 
 U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunten slechts gepland zijn wanneer er genoeg geheugenmiddelen beschikbaar zijn. U configureert vertraging door de volgende JVM-opties in te stellen in uw toepassingsserver.
 
@@ -58,11 +58,11 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.debug-mode-enabled</code></td> 
-   <td><p>Stel deze optie in <code>true</code> om de foutopsporingsmodus in te schakelen of op false om deze uit te schakelen. </p><p>In zuivert wijze, worden de berichten betreffende de beleidsschendingen van de Manager van het Werk en de pauze/hervat acties van de Manager van het Werk geregistreerd. Stel deze optie alleen in op true wanneer problemen worden opgelost.</p></td> 
+   <td><p>Stel deze optie in op <code>true</code> om de foutopsporingsmodus in te schakelen of op false om deze uit te schakelen. </p><p>In zuivert wijze, worden de berichten betreffende de beleidsschendingen van de Manager van het Werk en de pauze/hervat acties van de Manager van het Werk geregistreerd. Stel deze optie alleen in op true wanneer problemen worden opgelost.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.enabled</code></td> 
-   <td><p>Stel deze optie in <code>true</code> om vertraging in te schakelen op basis van de instellingen voor geheugenbeheer die hieronder worden beschreven, of om vertraging uit <code>false</code> te schakelen.</p></td> 
+   <td><p>Stel deze optie in op <code>true</code> om vertraging in te schakelen op basis van de instellingen voor geheugenbeheer die hieronder worden beschreven, of op <code>false</code> om vertraging uit te schakelen.</p></td> 
   </tr> 
   <tr> 
    <td><code> adobe.workmanager.memory-control.high-limit</code></td> 
@@ -82,12 +82,12 @@ U kunt het vertragen voor de Manager van het Werk vormen, zodat de het werkpunte
 **Java-opties toevoegen aan JBoss**
 
 1. Stop de JBoss-toepassingsserver.
-1. Open de *[hoofdmap]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) van de toepassingsserver in een editor en voeg zo nodig Java-opties toe in de indeling `-Dproperty=value`.
+1. Open *[appserver root]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een redacteur en voeg om het even welke opties van Java toe zoals vereist, in formaat `-Dproperty=value`.
 1. Start de server opnieuw.
 
 **Java-opties toevoegen aan WebLogic**
 
-1. Start de WebLogic-beheerconsole door de `https://`*[hostnaam ]*van de`:`*[poort]* in een webbrowser te typen `/console` .
+1. Start de WebLogic-beheerconsole door `https://`*[hostnaam ]*`:`*[poort]* `/console` in een webbrowser te typen.
 1. Typ de gebruikersnaam en het wachtwoord die u voor het WebLogic Server-domein hebt gemaakt en klik op Log Under Change Center, klik op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers en klik in het rechterdeelvenster op de naam van de beheerde server.
 1. Voor het volgende scherm, klik het lusje van de Configuratie > het Begin tabel van de Server.
