@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# De doeltreffendheid en de conversie van formulieren meten en verbeteren {#measure-and-improve-effectiveness-and-conversion-of-forms}
+# De doeltreffendheid en conversie van formulieren meten en verbeteren{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
 ## De uitdaging {#the-challenge-br}
 
@@ -33,18 +33,18 @@ Om ROI te maximaliseren, moeten de organisaties controleren hoe hun klanten met 
 
 ## De oplossing {#the-solution}
 
-AEM Forms is geïntegreerd met [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html) -oplossingen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) en [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - waarmee u kunt controleren en analyseren hoe uw formulieren werken en waarmee u kunt experimenteren en de ervaring kunt identificeren die tot een betere conversiesnelheid leidt.
+AEM Forms is geïntegreerd met [Adobe Marketing Cloud](https://www.adobe.com/marketing-cloud.html)-oplossingen - [Adobe Analytics](https://www.adobe.com/marketing-cloud/web-analytics.html) en [Adobe Target](https://www.adobe.com/marketing-cloud/testing-targeting.html) - waarmee u kunt controleren en analyseren hoe uw formulieren werken en waarmee u kunt experimenteren en de ervaring kunt identificeren die tot een betere conversiesnelheid leidt.
 
-## De workflow {#the-workflow}
+## De werkstroom {#the-workflow}
 
 We gaan verder met de details over hoe u de prestaties kunt meten en de conversietarieven voor formulieren kunt verbeteren.
 
-### Doelgroep {#target-audience}
+### Doelpubliek {#target-audience}
 
 * Zakelijke gebruikers en analisten die verantwoordelijk zijn voor marketingstrategieën en succes
 * IT-personeel dat zorg draagt voor de installatie en het onderhoud van infrastructuur en oplossingen
 
-### Betrokken AEM Forms-componenten en -functies {#aem-forms-components-and-features-involved}
+### AEM Forms-componenten en -functies {#aem-forms-components-and-features-involved}
 
 * Aangepaste formulieren
 * Integratie met Adobe Analytics voor het verzamelen, organiseren en rapporteren van klantinteracties met uw aangepaste formulieren
@@ -69,13 +69,13 @@ Om diepgaande inzichten in uw klanteninteractie met uw vormen te verkrijgen, moe
 1. Configuratieservice voor AEM Forms Analytics configureren in AEM
 1. Analyses inschakelen op het formulier in AEM
 
-Zie Analyses en rapporten voor adaptieve formulieren [configureren voor gedetailleerde stappen](/help/forms/using/configure-analytics-forms-documents.md).
+Zie [Analyses en rapporten configureren voor adaptieve formulieren](/help/forms/using/configure-analytics-forms-documents.md) voor gedetailleerde stappen.
 
 **Doel configureren**
 
-Als u A/B-tests voor uw adaptieve formulieren wilt maken en uitvoeren, configureert u Target in AEM Forms zoals beschreven in [Set up and integration Target in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
+Als u A/B-tests voor uw adaptieve formulieren wilt maken en uitvoeren, configureert u Target in AEM Forms zoals beschreven in [Doel instellen en integreren in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#p-set-up-and-integrate-target-in-aem-forms-p).
 
-#### Stap 2: Analyserapport weergeven {#step-view-analytics-report-br}
+#### Stap 2: Analyserapport {#step-view-analytics-report-br} weergeven
 
 Aangezien uw klanten tot en met vormen toegang hebben waarop u Analytics hebt toegelaten, worden hun interactie gevangen in hoogst beveiligde gegevensbestanden van Analytics. De databases worden gesegmenteerd door clients en zijn toegankelijk via beveiligde verbindingen.
 
@@ -111,7 +111,7 @@ Bovendien krijgt u de volgende details over elk paneel in de vorm:
 
 ![Een analyserapport voor een adaptief formulier](assets/summary-report.png)
 
-Zie Rapporten over AEM Forms-analysemogelijkheden [weergeven en begrijpen voor meer informatie over rapporten](/help/forms/using/view-understand-aem-forms-analytics-reports.md)over formulieranalyses.
+Zie [AEM Forms-analyserapporten weergeven en begrijpen](/help/forms/using/view-understand-aem-forms-analytics-reports.md) voor meer informatie over formulieranalytische rapporten.
 
 >[!NOTE]
 >
@@ -127,7 +127,7 @@ In deze stap analyseert u de gegevenspunten in het analyserapport en geeft u aan
 
 Als u deze gegevenspunten hebt geanalyseerd en tot een hypothese bent gekomen, brengt u de vereiste wijzigingen aan in het formulier.
 
-#### Stap 4: Analyse en correcties valideren {#step-validate-your-analysis-and-fixes}
+#### Stap 4: Uw analyse en correcties {#step-validate-your-analysis-and-fixes} valideren
 
 In deze stap valideert u de wijzigingen die u in het formulier hebt aangebracht en controleert u of deze van invloed zijn op de conversiesnelheid.
 
@@ -135,11 +135,11 @@ In deze stap valideert u de wijzigingen die u in het formulier hebt aangebracht 
 
 Dankzij de integratie van AEM Forms met Target kunnen A/B-tests voor adaptieve formulieren worden gemaakt. In tests A/B, presenteert u willekeurig verschillende ervaringen van een vorm aan uw klanten in echt - tijd om te weten welke ervaring werkt beter of veroorzaakt meer omzettingen. Zodra u significante gegevens hebt die op één ervaring wijzen die betere omzetting levert dan andere, kunt u dat ervaringen als winnaar verklaren, en de toekomst, het wordt de standaardervaring zichtbaar aan alle klanten.
 
-Voor meer informatie over het maken van een A/B-test voor een adaptieve vorm, zie [A/B-test van adaptieve formulieren](/help/forms/using/ab-testing-adaptive-forms.md).
+Zie [A/B testen op adaptieve formulieren](/help/forms/using/ab-testing-adaptive-forms.md) voor meer informatie over het maken van een A/B test op een adaptieve vorm.
 
 ![Een steekproefsamenvattend verslag van de A/B-test voor een adaptief formulier](assets/ab-test-report-2.png)
 
-## Best practices {#best-practices}
+## Aanbevolen werkwijzen {#best-practices}
 
 De echte beste praktijken zijn degenen die u zich tijdens het uitvoeren van deze werkschema identificeert. Ze zijn uniek voor uw omgeving en vereisten. Leg uw lessen vast in de workflow en documenteer ze als aanbevolen procedures.
 
