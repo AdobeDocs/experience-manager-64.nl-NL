@@ -37,11 +37,11 @@ U kunt de intervallen opgeven waarna de toepassing de ingevoerde gegevens opslaa
 Voer de volgende stappen uit om de functie voor automatisch opslaan te gebruiken in de AEM Forms-app:
 
 1. Meld u aan bij de app en navigeer naar **[!UICONTROL Settings > General]**.
-1. Selecteer in het scherm Algemeen de **[!UICONTROL Autosave Frequency]** optie waarmee u wilt dat de toepassing de ingevoerde gegevens opslaat.
+1. Gebruik in het scherm Algemeen de optie **[!UICONTROL Autosave Frequency]** om de intervallen te selecteren waarmee u wilt dat de toepassing de ingevoerde gegevens opslaat.
    [ ![Frequentie voor automatisch opslaan instellen](assets/using-autosave-freq-07.png)](assets/using-autosave-freq-07-1.png)
 
-1. Wanneer u de app opnieuw opstart en u bij dezelfde gebruiker aanmeldt, wordt u gevraagd om uw taak te herstellen met het dialoogvenster Niet-opgeslagen taak herstellen. Klik **[!UICONTROL OK]** in het dialoogvenster Niet-opgeslagen taak herstellen om het werken met de opgeslagen taak te hervatten. U kunt klikken **[!UICONTROL Cancel]** om de opgeslagen gegevens te verwijderen die overeenkomen met de laatst getriggerde automatische opslag en beginnen met het werken met een nieuwe taak.
+1. Wanneer u de app opnieuw opstart en u bij dezelfde gebruiker aanmeldt, wordt u gevraagd om uw taak te herstellen met het dialoogvenster Niet-opgeslagen taak herstellen. Klik op **[!UICONTROL OK]** in het dialoogvenster Niet-opgeslagen taak herstellen om het werken met de opgeslagen taak te hervatten. U kunt op **[!UICONTROL Cancel]** klikken om de opgeslagen gegevens te verwijderen die corresponderen met de laatst getriggerde automatische opslag en beginnen met het werken met een nieuwe taak.
 
-   Wanneer u klikt, wordt de taak hersteld met de gegevens die overeenkomen met de laatste automatische opslag die is geactiveerd voordat de app is vastgelopen. **[!UICONTROL OK]** Het bevat de formuliergegevens en alle bijlagen die bij de taak horen.
-   [ ![Een taak](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**terugkrijgen.**Een formulier in uitvoering, formulier** B.**De toepassing is geforceerd gesloten** C.**App is opnieuw gestart met het dialoogvenster Niet-opgeslagen taak herstellen** D.**Het formulier is hersteld met de oorspronkelijke gegevens
+   Wanneer u op **[!UICONTROL OK]** klikt, wordt de taak hersteld met de gegevens die overeenkomen met de laatste automatische opslag die is geactiveerd voordat de app is vastgelopen. Het bevat de formuliergegevens en alle bijlagen die bij de taak horen.
+   [ ![Een taak ophalen ](assets/autosave-flow.png)](assets/using-autosave-freq-06.png)**teruggekregenA.** A werk-in-uitvoering formulier  **B.** App forcent gesloten  **C.** App opnieuw begonnen met het dialoogvenster Niet-opgeslagen taak herstellen  **D.** Formulier teruggezet met oorspronkelijke gegevens
 
