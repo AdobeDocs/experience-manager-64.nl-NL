@@ -31,7 +31,7 @@ De toepassing benadert de AEM Forms-server op REST-eindpunten voor het volgende:
 
 De AEM Forms-server heeft via JDBC toegang tot de AEM Forms-database. De database bestaat uit taken, processen en instanties, gebruikers en gerelateerde informatie.
 
-De AEM Forms-werkruimte is ontworpen voor modulaire JavaScript™-componenten die afzonderlijk kunnen worden aangepast en opnieuw kunnen worden gebruikt in andere webtoepassingen. De componenten zijn gebaseerd op BackBone, een JavaScript-bibliotheek die structuur geeft aan webtoepassingen. Een gedetailleerd artikel dat interactie van componenten met BackBone beschrijft is [hier](/help/forms/using/backbone-interaction.md). De organisatie van componenten in de CRX omslagstructuur wordt besproken in [dit](/help/forms/using/folder-structure.md) artikel.
+De AEM Forms-werkruimte is ontworpen voor modulaire JavaScript™-componenten die afzonderlijk kunnen worden aangepast en opnieuw kunnen worden gebruikt in andere webtoepassingen. De componenten zijn gebaseerd op BackBone, een JavaScript-bibliotheek die structuur geeft aan webtoepassingen. Een gedetailleerd artikel dat interactie van componenten met BackBone beschrijft is [here](/help/forms/using/backbone-interaction.md). De organisatie van componenten in de CRX omslagstructuur wordt besproken in [dit](/help/forms/using/folder-structure.md) artikel.
 
 Pakketten geleverd voor de AEM Forms-werkruimte:
 
