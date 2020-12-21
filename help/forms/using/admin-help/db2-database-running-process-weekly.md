@@ -26,7 +26,7 @@ Als de database met AEM formulieren DB2 langzaam begint te lopen, kunt u de pres
 
    (Windows) Selecteer Start > Programma&#39;s > IBM DB2 > Algemene beheertools > Control Center.
 
-   (Linux en UNIX) Typ de `db2jcc` opdracht bij een opdrachtprompt.
+   (Linux en UNIX) Typ de opdracht `db2jcc` vanaf een opdrachtprompt.
 
 1. Klik in de objectstructuur van het DB2 Control Center op Alle databases.
 1. Klik op de database die u voor AEM formulieren hebt gemaakt en klik op de map Tables.
