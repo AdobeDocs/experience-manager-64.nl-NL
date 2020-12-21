@@ -26,7 +26,7 @@ HTML5 Forms biedt een alternatieve uitvoering voor de tabellen om toegankelijkhe
 * Rijkoppen
 * Rijbereik
 
-Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als complex. Als u de tabel als complex wilt markeren, voegt u als volgt `extras` code toe aan de XML-bron van het tabelsubformulier:
+Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als complex. Als u de tabel als complex wilt markeren, voegt u `extras`-tag als volgt toe aan de XML-bron van het tabelsubformulier:
 
 ```
 </extras>
@@ -36,13 +36,13 @@ Als u de nieuwe indeling wilt gebruiken in HTML5 Forms, markeert u de tabel als 
 
 De tabellen die zijn gemarkeerd als *complexTable* volgen de native HTML-uitvoering en bieden betere toegankelijkheidsondersteuning voor bepaalde schermlezers.  Als u een rijbereik wilt maken, selecteert u opeenvolgende cellen van een tabel in dezelfde kolom, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Merge Cells]**.
 
-***Opmerking:**Het maken van een rijbereik werkt alleen voor uiterst linkse cellen.*
+***Opmerking:**Een rijbereik maken werkt alleen voor uiterst linkse cellen.*
 
 Als u een rij als rijkop wilt markeren, selecteert u alle cellen in de rij, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Mark Header]**.
 
 Als u een cel als kolomkop wilt markeren, selecteert u een willekeurige cel in de kolom, klikt u met de rechtermuisknop op de selectie en klikt u op **[!UICONTROL Mark Header]**.
 
-Beperkingen in de nieuwe *indeling AccessibleTable* :
+Beperkingen in nieuwe *AccessibleTable*-indeling:
 
 * Gebrek aan steun voor kweekbare gebieden als het rowspan in de lijst wordt gebruikt
 * Geen ondersteuning voor geneste tabellen (tabellen in tabelcellen)
