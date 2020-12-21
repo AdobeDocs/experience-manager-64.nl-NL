@@ -24,19 +24,19 @@ De activiteiten van een ondertekend lid van de gemeenschap, zoals het posten aan
 
 De mogelijkheid om te volgen voegt nog een reeks activiteiten toe wanneer leden van de gemeenschap belangenverklaringen of andere leden van de gemeenschap volgen.
 
-Alle [gemeenschapssites](overview.md#communitiessites) bevatten een gebruikersprofielpagina voor het lid dat is aangemeld en dat de lidactiviteiten op dezelfde manier weergeeft.
+Alle [communitysites](overview.md#communitiessites) bevatten een gebruikersprofielpagina voor het ondertekende lid dat lidactiviteiten op dezelfde manier zal tonen.
 
 ## Concepten {#concepts}
 
-Een *activiteitenstroom* is de lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud, zoals een forumonderwerp of blog worden uitgevoerd.
+Een *activiteitsstroom* is de lijst van recente activiteiten die door een lid of een lijst van recente activiteiten op één enkele draad van inhoud, zoals een forumonderwerp of blog worden uitgevoerd.
 
 Een lid kan een activiteitenstroom volgen, door of een ander individu of inhoud te volgen.
 
-Een *nieuwsfeed* is een samenvoeging van de activiteitsstromen die door een lid worden gevolgd in één stream.
+Een *nieuwsfeed* is een samenvoeging van de activiteitenstromen die door een lid in één enkele stroom worden gevolgd.
 
-In een [sociale grafiek](essentials-socialgraph.md) worden de volgende relaties tussen leden vastgelegd.
+A [social graph](essentials-socialgraph.md) vangt de volgende verhoudingen van één lid aan een andere.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -62,7 +62,7 @@ In een [sociale grafiek](essentials-socialgraph.md) worden de volgende relaties 
   </tr>
   <tr>
    <td><strong> eigenschappen</strong></td> 
-   <td>Zie <a href="activities.md">Activiteitenstromen</a></td> 
+   <td>Zie <a href="activities.md">Functie voor activiteitsstromen</a></td> 
   </tr>
  </tbody>
 </table>
@@ -79,4 +79,4 @@ In een [sociale grafiek](essentials-socialgraph.md) worden de volgende relaties 
 
 ### Functie activiteitsstroom {#activity-stream-function}
 
-Een gemeenschapssitestructuur die de functie [](functions.md#activity-stream-function)Activiteitenstroom bevat, bevat een geconfigureerde `activity streams` component.
+Een community-sitestructuur die de [Activiteitenstroomfunctie](functions.md#activity-stream-function) bevat, bevat een geconfigureerde `activity streams`-component.
