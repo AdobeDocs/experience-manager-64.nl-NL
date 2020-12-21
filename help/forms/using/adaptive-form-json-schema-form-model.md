@@ -25,9 +25,9 @@ Voor het ontwerpen van een adaptief formulier met behulp van een JSON-schema als
 * [Een adaptief formulier maken](/help/forms/using/creating-adaptive-form.md)
 * [JSON Schema](https://json-schema.org/)
 
-## Een JSON-schema gebruiken als formuliermodel  {#using-a-json-schema-as-form-model}
+## Een JSON-schema gebruiken als formuliermodel {#using-a-json-schema-as-form-model}
 
-AEM Forms ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan de [v4-specificaties](https://json-schema.org/draft-04/schema).
+AEM Forms ondersteunt het maken van een adaptief formulier met behulp van een bestaand JSON-schema als formuliermodel. Dit JSON-schema vertegenwoordigt de structuur waarin gegevens worden geproduceerd of verbruikt door het back-end systeem in uw organisatie. Het JSON-schema dat u gebruikt, moet voldoen aan [v4-specificaties](https://json-schema.org/draft-04/schema).
 
 De belangrijkste kenmerken van het gebruik van een JSON-schema zijn:
 
@@ -67,14 +67,14 @@ Deze toewijzing van JSON-elementen met adaptieve formuliercomponenten is als vol
   </tr> 
   <tr> 
    <td>number, eigenschap<br /> </td> 
-   <td>Numeriek veld met subtype ingesteld op zwevend<br /> </td> 
+   <td>Numeriek veld met subtype ingesteld op float<br /> </td> 
   </tr> 
   <tr> 
-   <td>integer, eigenschap<br /> </td> 
+   <td>integer eigenschap<br /> </td> 
    <td>Numeriek veld met subtype ingesteld op geheel getal<br /> </td> 
   </tr> 
   <tr> 
-   <td>boolean, eigenschap<br /> </td> 
+   <td>booleaanse eigenschap<br /> </td> 
    <td>Switch<br /> </td> 
   </tr> 
   <tr> 
@@ -339,7 +339,7 @@ Met de eigenschap **aem:afProperties** kunt u het JSON-schemaveld vooraf configu
 }
 ```
 
-## Acceptabele waarden voor een adaptieve formuliercomponent beperken {#limit-acceptable-values-for-an-adaptive-form-component}
+## Acceptabele waarden beperken voor een adaptieve formuliercomponent {#limit-acceptable-values-for-an-adaptive-form-component}
 
 U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden te beperken die acceptabel zijn voor een adaptieve formuliercomponent:
 
@@ -358,7 +358,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
    <td> 
     <ul> 
      <li>Numeriek vak</li> 
-     <li>Numerieke stap<br /> </li> 
+     <li>Numerieke Stepper<br /> </li> 
      <li>Datumkiezer</li> 
     </ul> </td> 
   </tr> 
@@ -437,7 +437,7 @@ U kunt de volgende beperkingen toevoegen aan JSON-schemaelementen om de waarden 
  </tbody> 
 </table>
 
-## Niet-ondersteunde constructies  {#non-supported-constructs}
+## Niet-ondersteunde constructies {#non-supported-constructs}
 
 De volgende JSON-schemaconstructies worden niet ondersteund door adaptieve formulieren:
 
