@@ -22,35 +22,35 @@ ht-degree: 1%
 
 ## Overzicht {#overview}
 
-Met geavanceerd scoren kunnen badges worden toegekend om leden te identificeren als experts. Bij geavanceerd scoren worden punten toegewezen op basis van de hoeveelheid ** en de kwaliteit van de inhoud die door een lid is gemaakt, terwijl bij elementaire scoring punten worden toegewezen op basis van de hoeveelheid gemaakte inhoud.
+Met geavanceerd scoren kunnen badges worden toegekend om leden te identificeren als experts. Bij geavanceerd scoren worden punten toegewezen op basis van de kwaliteit *en* van de inhoud die door een lid is gemaakt, terwijl bij elementaire scoring punten worden toegewezen op basis van de hoeveelheid gemaakte inhoud.
 
 Dit verschil is het gevolg van de scores die zijn gebruikt voor de berekening van de scores. De basisscoring-engine past eenvoudige wiskunde toe. De geavanceerde scoring-engine is een adaptief algoritme dat actieve leden belont die waardevolle en relevante inhoud leveren, afgeleid via de verwerking van natuurlijke talen (NLP) van een onderwerp.
 
 Naast inhoudrelevantie houden de scoringsalgoritmen rekening met lidactiviteiten, zoals het stemmen en het percentage antwoorden. Hoewel deze elementen in de standaardscoring kwantitatief worden opgenomen, worden ze bij geavanceerd scoren op algoritmische wijze gebruikt.
 
-Daarom vereist de geavanceerde scoring-engine voldoende gegevens om de analyse zinvol te maken. De prestatiedrempel voor het worden van een expert wordt constant opnieuw geëvalueerd aangezien het algoritme voortdurend aan het volume en de kwaliteit van gecreeerde inhoud aanpast. Er is ook een concept van *verval* van oudere posten van een lid. Als een deskundige niet langer deelneemt aan het onderwerp waar hij of zij de status van deskundige heeft gekregen, kan hij of zij op een vooraf bepaald punt (zie de configuratie [van de](#configurable-scoring-engine)scoremotor) zijn of haar status als deskundige verliezen.
+Daarom vereist de geavanceerde scoring-engine voldoende gegevens om de analyse zinvol te maken. De prestatiedrempel voor het worden van een expert wordt constant opnieuw geëvalueerd aangezien het algoritme voortdurend aan het volume en de kwaliteit van gecreeerde inhoud aanpast. Er is ook een concept van *verval* van oudere posten van een lid. Als een deskundige niet meer deelneemt aan het onderwerp waar zij deskundige status hebben verworven, op een bepaald vooraf bepaald punt (zie [de configuratie van het scoren motor](#configurable-scoring-engine)) zouden zij hun status als deskundige kunnen verliezen.
 
 Geavanceerde scoring instellen is vrijwel hetzelfde als basisscoring:
 
-* Basisregels en geavanceerde regels voor scoring en badging worden op dezelfde manier [toegepast op inhoud](implementing-scoring.md#apply-rules-to-content)
+* De basis en de geavanceerde het scoring en het badgen regels worden [toegepast op inhoud](implementing-scoring.md#apply-rules-to-content) op de zelfde manier
    * Basisregels en geavanceerde regels voor scoring en badging kunnen op dezelfde inhoud worden toegepast
-* [Het toelaten van badges voor componenten](implementing-scoring.md#enable-badges-for-component) is generiek
+* [Badges voor algemeen ](implementing-scoring.md#enable-badges-for-component) componentsis inschakelen
 
 De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
 * Configureerbare geavanceerde scores-engine
 * Geavanceerde regels voor scoring:
-   * `scoringType` instellen op **[!UICONTROL advanced]**
+   * `scoringType` instellen op  **[!UICONTROL advanced]**
    * Opsommingstekens vereist
 
 * Geavanceerde regels voor badging:
-   * `badgingType` instellen op **[!UICONTROL advanced]**
+   * `badgingType` instellen op  **[!UICONTROL advanced]**
    * `badgingLevels` vastgesteld op het aantal te gunnen deskundigen
-   * Vereist een `badgingPaths` array van badges in plaats van drempelwaarden voor arraytoewijzing punten aan badges
+   * Vereist `badgingPaths` serie van badges in plaats van drempels de kaartpunten van de serie aan badges
 
 >[!NOTE]
 >
->Installeer het [Expert Identification-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg)om geavanceerde scoring- en badingmogelijkheden te gebruiken.
+>Installeer het [Expert Identification-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg) om geavanceerde scoring- en merkmogelijkheden te gebruiken.
 
 ## Configureerbare scores-engine {#configurable-scoring-engine}
 
@@ -59,9 +59,9 @@ De geavanceerde het schrapen motor verstrekt een configuratie OSGi met parameter
 ![chlimage_1-260](assets/chlimage_1-260.png)
 
 * **[!UICONTROL Scoring weights]**
-Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moeten worden gegeven wanneer het berekenen van de score. Een of meer onderwerpen kunnen zijn ingegaan, maar beperkt tot **één werkwoord per onderwerp**. Zie [Onderwerpen en Verbs](implementing-scoring.md#topics-and-verbs).
+Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moeten worden gegeven wanneer het berekenen van de score. Één of meerdere onderwerpen kunnen zijn ingegaan, maar beperkt tot **één werkwoord per onderwerp**. Zie [Onderwerpen en Verbs](implementing-scoring.md#topics-and-verbs).
 
-   Is ingevoerd zoals `topic,verb` met de vrijgekomen komma. Bijvoorbeeld:
+   Wordt ingevoerd als `topic,verb` met de komma uit het veld. Bijvoorbeeld:
 
    `/social/forum/hbs/social/forum\,ADD`
 
@@ -88,7 +88,7 @@ Voor een onderwerp, specificeer het werkwoord dat de hoogste prioriteit zou moet
 
    De standaardwaarde is 50.
 
-## Geavanceerde scoreregels {#advanced-scoring-rules}
+## Geavanceerde sorteerregels {#advanced-scoring-rules}
 
 In de basisscoring is bekend hoeveel er nodig is om een badge te verdienen.
 
@@ -98,11 +98,11 @@ Als een lid een deskundig badge over een onderwerp verdiende dat niet meer actie
 
 ### ScoringType {#scoringtype}
 
-Een scoreregel is een set scoring-subregels, die elk de `scoringType`code declareren.
+Een scoreregel is een set scoring-subregels, die elk `scoringType` declareren.
 
-Als u de geavanceerde scoring-engine wilt aanroepen, `scoringType`moet u deze instellen op `advanced`.
+Als u de geavanceerde scoring-engine wilt aanroepen, moet `scoringType`worden ingesteld op `advanced`.
 
-Zie [Score-subregels](implementing-scoring.md#scoring-sub-rules).
+Zie [Subregels sorteren](implementing-scoring.md#scoring-sub-rules).
 
 ![chlimage_1-261](assets/chlimage_1-261.png)
 
@@ -118,9 +118,9 @@ Er wordt geen wijziging van dit bestand verwacht.
 
 Als het stopwoordenbestand ontbreekt, genereert het geavanceerde scoring-programma een fout.
 
-## Geavanceerde spelregels {#advanced-badging-rules}
+## Geavanceerde Badgingregels {#advanced-badging-rules}
 
-De geavanceerde eigenschappen van de merkingsregel verschillen van de [basiseigenschappen](implementing-scoring.md#badging-rules)van de merkingsregel.
+De geavanceerde eigenschappen van de merkingsregel verschillen van [basiseigenschappen van de merkingsregel](implementing-scoring.md#badging-rules).
 
 In plaats van punten te koppelen aan een badge-afbeelding, is het alleen nodig om het toegestane aantal experts en het toe te kennen badge-image te identificeren.
 
@@ -157,7 +157,7 @@ Zie de basisinformatie voor:
 
 ### Inclusief rangtelregels en subregels {#included-scoring-rules-and-sub-rules}
 
-In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de [forumfunctie](functions.md#forum-function) (één voor het forum en commentaarcomponenten van de forumfunctie):
+In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de functie [forum](functions.md#forum-function) (elk voor het forum en commentaarcomponenten van de forumfunctie):
 
 1. /etc/community/scoring/rules/adv-comments-scoring
 
@@ -181,21 +181,21 @@ In de bètaversie zijn twee geavanceerde scoreregels opgenomen voor de [forumfun
 
 **Opmerkingen:**
 
-* Zowel `rules`als `sub-rules` knopen zijn van type `cq:Page`
-* `subRules` is een attribuut van typeString[] op de knoop van de regel `jcr:content`
+* Zowel `rules`als `sub-rules` knooppunten zijn van het type `cq:Page`
+* `subRules` is een attribuut van type [] Stringon de  `jcr:content` knoop van de regel
 * `sub-rules` kunnen worden gedeeld door verschillende scoreregels
 * `rules` moet zich bevinden op een opslagplaats met leesmachtigingen voor iedereen
    * regelnamen moeten uniek zijn, ongeacht de locatie
 
-### Ingesloten Badgingregels {#included-badging-rules}
+### Inclusief Badgingregels {#included-badging-rules}
 
-In de release zijn twee geavanceerde regels voor het aanbrengen van een badge opgenomen die overeenkomen met de [geavanceerde forums en regels](#included-scoring-rules-and-sub-rules)voor het noteren van opmerkingen.
+In de release zijn twee geavanceerde regels voor badging opgenomen die overeenkomen met de [geavanceerde forums en regels voor scoring van opmerkingen](#included-scoring-rules-and-sub-rules).
 
 * /etc/community/badging/rules/adv-comments-badging
 * /etc/community/badging/rules/adv-forums-badging
 
 **Opmerkingen:**
 
-* `rules` knooppunten zijn van het type `cq:Page`
+* `rules` knooppunten zijn van het type  `cq:Page`
 * `rules`moet zich bevinden op een opslagplaats met leesmachtigingen voor iedereen
    * regelnamen moeten uniek zijn, ongeacht de locatie
