@@ -17,11 +17,11 @@ ht-degree: 0%
 ---
 
 
-# Bijlagen toevoegen {#adding-attachments}
+# Bijlagen {#adding-attachments} toevoegen
 
-## Bijlagen toevoegen in formulieren die zijn gesynchroniseerd met AEM Forms Workflow Server (AEM Forms in JEE) {#adding-annotations}
+## Bijlagen toevoegen in formulieren die zijn gesynchroniseerd met AEM Forms Workflow Server (AEM Forms op JEE) {#adding-annotations}
 
-Met de AEM Forms-app kunt u afbeeldingen, gescripte notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. Tik op de ![bijlage-app](assets/attachments-app.png) voor bijlagen om alle bijlagen in een formulier samen te bekijken. In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als het formulier geen bijlagen bevat en u tikt op de ![bijlage bij de knop Bijlagen](assets/attch.png), kunt u opties voor het bijvoegen van foto&#39;s of krabbels kiezen.
+Met de AEM Forms-app kunt u afbeeldingen, gescripte notities en tekstnotities toevoegen aan uw formulier dat is gesynchroniseerd met de AEM Forms JEE-server. Als uw formulier wordt geladen vanaf een AEM Forms Workflow-server, worden uw bijlagen toegevoegd aan het formulier. Als u alle bijlagen in een formulier tegelijk wilt zien, tikt u op de knop ![bijlagen-app](assets/attachments-app.png). In het rode bericht wordt het aantal bijlagen in het formulier aangegeven. Als het formulier geen bijlagen bevat, ziet u de knop Rode meldingen niet. Als het formulier geen bijlagen bevat en u op de knop ![bijvoegen](assets/attch.png) tikt, kunt u opties voor het bijvoegen van foto&#39;s of scripts instellen.
 
 U kunt kiezen uit de volgende opties:
 
@@ -29,7 +29,7 @@ U kunt kiezen uit de volgende opties:
 
 * **[!UICONTROL Camera]**: Hiermee kunt u een foto maken en toevoegen aan het formulier.
 
-* **[!UICONTROL Notes]**: Hiermee kunt u een krabbeltje of een tekstnotitie toevoegen. Gebruik ![krabbelen](assets/scribble.png) om een krabbeltje toe te voegen en ![toetsenbord](assets/keyboard.png) om een tekstnotitie toe te voegen.
+* **[!UICONTROL Notes]**: Hiermee kunt u een krabbeltje of een tekstnotitie toevoegen. Gebruik ![krabbelen](assets/scribble.png) om een krabbeltje toe te voegen, en ![keyboard](assets/keyboard.png) om een tekstnota toe te voegen.
 
 >[!NOTE]
 >
@@ -38,35 +38,35 @@ U kunt kiezen uit de volgende opties:
 
 ### Het scherm Bijlagen {#the-attachments-screen}
 
-Tik op ![bijlagen-app](assets/attachments-app.png)om alle bijlagen op een plaats weer te geven. U kunt bijlagen hier toevoegen, hernoemen en verwijderen.
+Tik op ![bijlagen-app](assets/attachments-app.png) om alle bijlagen op een plaats weer te geven. U kunt bijlagen hier toevoegen, hernoemen en verwijderen.
 
 ![Alle bijlagen op een plaats](assets/attachments-screen.png)
 
-Met de knop **+** in het venster Bijlagen kunt u een ander beeld, krabbeltje of tekst koppelen.
+U kunt de **+** knoop in het scherm van Gehechtheid gebruiken om een ander beeld, een krabbeltje, of een tekst vast te maken.
 
 ### Een foto toevoegen {#adding-a-photograph}
 
 U kunt de camera van uw mobiele apparaat of opgeslagen afbeeldingen op uw apparaat gebruiken om een afbeelding aan het formulier te koppelen.
 
-1. Tik op de ![bevestiging](assets/attch.png) onder in het venster.
+1. Tik op de bijvoegknop ![attach](assets/attch.png) onder in het venster.
 1. Tik op **[!UICONTROL Gallery]** of **[!UICONTROL Camera]** in het pop-upvenster dat wordt weergegeven.
 1. Op basis van de optie die u selecteert, voert u het volgende uit:
 
-   1. Als u selecteert **[!UICONTROL Camera]**.
+   1. Als u **[!UICONTROL Camera]** selecteert.
 
-      Neem een foto. Tik vervolgens op de knop voor het **[!UICONTROL Use]** gebruik van de ![microfoon](assets/use-pic.png) .
+      Neem een foto. Tik vervolgens op de **[!UICONTROL Use]** ![use-pic](assets/use-pic.png)-knop.
 
-      Of tik op de knop **[!UICONTROL Retake]** Opnieuw ![](assets/retake.png) nemen om de foto opnieuw op te nemen.
+      Of tik **[!UICONTROL Retake]** ![retake](assets/retake.png) knoop om de foto opnieuw te nemen.
 
-   1. Als u selecteert **[!UICONTROL Gallery]**.
+   1. Als u **[!UICONTROL Gallery]** selecteert.
 
       De afbeeldingsbrowser van het apparaat wordt weergegeven. Tik in de afbeeldingsbrowser van het apparaat op de afbeelding die u wilt koppelen.
 
-### Een notitie toevoegen {#adding-a-note}
+### Een notitie {#adding-a-note} toevoegen
 
-Met de optie **Notities** kunt u willekeurig gevormde scripts en tekstbijlagen aan een formulier toevoegen.
+Met de optie **Notities** kunt u uit de vrije hand geschreven scripts en tekstbijlagen toevoegen aan uw formulier.
 
-1. Tik op de ![bevestiging](assets/attch.png) onder in het venster.
+1. Tik op de bijvoegknop ![attach](assets/attch.png) onder in het venster.
 1. Tik **[!UICONTROL Notes]** in het pop-upvenster dat wordt weergegeven.
 1. Leg in de gebruikersinterface Notities die wordt gestart een vrij krabbeltje vast.
 
@@ -88,4 +88,4 @@ Bijlagen voor mobiele formulieren die zijn gesynchroniseerd met AEM Forms OSGi-s
 
 Bijlagen op formulierniveau worden niet ondersteund voor adaptieve formulieren die in de app worden geladen vanaf een AEM Forms OSGi-server. Als u afbeeldingen of tekstnotities wilt bijvoegen, schakelt u bijlagen op veldniveau in het formulier in wanneer u het maakt. Sleep de component voor bestandsbijlagen vanuit de browser met componenten in het veld.
 
-In het geval van adaptieve formulieren kunt u de bijgevoegde bestanden bekijken in het document of record (DoR). Zie Document met record [genereren voor niet-XFA-adaptieve formulieren](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
+In het geval van adaptieve formulieren kunt u de bijgevoegde bestanden bekijken in het document of record (DoR). Zie [Document met record genereren voor niet-XFA-adaptieve formulieren](/help/forms/using/generate-document-of-record-for-non-xfa-based-adaptive-forms.md).
