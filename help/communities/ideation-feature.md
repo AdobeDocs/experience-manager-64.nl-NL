@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ideatiefunctie {#ideation-feature}
+# Ideeigenschap {#ideation-feature}
 
 ## Inleiding {#introduction}
 
@@ -36,23 +36,23 @@ In deze sectie van de documentatie wordt beschreven
 
 ## Een idee toevoegen aan een pagina {#adding-a-ideation-to-a-page}
 
-Als u een `Ideation` component wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de componentbrowser om de component te zoeken `Communities / Ideation` en naar de gewenste positie op een pagina te slepen.
+Als u een `Ideation`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om `Communities / Ideation` te zoeken en deze naar de juiste positie op een pagina te slepen.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](ideation.md#essentials-for-client-side) worden opgenomen, ziet u de `Ideation`component als volgt:
+Wanneer de [vereiste client-side bibliotheken](ideation.md#essentials-for-client-side) worden opgenomen, wordt de `Ideation`component als volgt weergegeven:
 
-![chlimage_1-29](assets/chlimage_1-29.png)
+![chlimage_1-21](assets/chlimage_1-29.png)
 
-## Een idee configureren {#configuring-an-ideation}
+## Een idee {#configuring-an-ideation} configureren
 
-Selecteer de geplaatste `Ideation` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Ideation` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![chlimage_1-30](assets/chlimage_1-30.png) ![chlimage_1-31](assets/chlimage_1-31.png)
 
-### Het tabblad Instellingen {#settings-tab}
+### Tabblad Instellingen {#settings-tab}
 
-Geef onder het **[!UICONTROL Settings]** tabblad instellingen voor ideeën en opmerkingen op:
+Geef onder het tabblad **[!UICONTROL Settings]** instellingen voor ideeën en opmerkingen op:
 
 * **[!UICONTROL Ideation Title]**
 De weergavetitel voor het idee. Standaard is 
@@ -74,7 +74,7 @@ Als het wordt gecontroleerd, is het ideatieforum gesloten voor nieuwe ideeën en
 Als deze optie is ingeschakeld, kunnen ideeën en opmerkingen worden ingevoerd met een markering. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Tagging]**
-Als deze optie is ingeschakeld, kunnen leden labels aan hun advertentie toevoegen (zie **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
+Als deze optie is ingeschakeld, kunnen leden labellabels aan hun advertentie toevoegen (zie  **[!UICONTROL Tag field]** tabblad). De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow File Uploads]**
 Als deze optie is ingeschakeld, kunt u bestandsbijlagen toevoegen aan het idee of de opmerking. De optie Standaard is uitgeschakeld.
@@ -97,23 +97,23 @@ Als deze optie is ingeschakeld, kunt u reacties op opmerkingen op het idee toest
 Als deze optie is ingeschakeld, kunnen leden de opmerkingen en ideeën die ze hebben geplaatst verwijderen. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Following]**
-Als deze optie is ingeschakeld, bevat u de volgende functie voor ideeënartikelen, waarmee leden op de [hoogte](notifications.md) kunnen worden gesteld van nieuwe functies. De optie Standaard is uitgeschakeld.
+Als deze optie is ingeschakeld, neemt u de volgende functie op voor ideeënposts, waardoor leden op de hoogte kunnen worden  [](notifications.md) gesteld van nieuwe posten. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Email Subscriptions]**
-Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). Moet `Allow Following` worden gecontroleerd en [e-mail wordt gevormd](email.md). De optie Standaard is uitgeschakeld.
+Als deze optie is ingeschakeld, kunnen leden via e-mail op de hoogte worden gesteld van nieuwe berichten ([abonnement](subscriptions.md)). `Allow Following` moet worden gecontroleerd en [e-mail geconfigureerd](email.md). De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Voting]**
 Als deze optie ingeschakeld is, kunt u stemmen over de opmerkingen van een idee. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Display Badges]**
-Indien ingeschakeld, verdiende en toegewezen [badges](implementing-scoring.md) weergeven bij het idee van een lid. De optie Standaard is uitgeschakeld.
+Als deze optie is ingeschakeld, worden verdiende en toegewezen  [](implementing-scoring.md) badges weergegeven bij het idee van een lid. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Featured Content]**
-als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
+als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als  [aanbevolen inhoud](featured.md). De optie Standaard is uitgeschakeld.
 
 ### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte ideeën en opmerkingen (door de gebruiker gegenereerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor meer informatie.
 
 * **[!UICONTROL Deny Posts]**
 Als deze optie wordt ingeschakeld, zullen de verantwoordelijken van de leden hun functie kunnen ontkennen en voorkomen dat de functie op het openbare forum verschijnt. De optie Standaard is uitgeschakeld.
@@ -136,13 +136,13 @@ Ga het aantal tijden in een onderwerp of een commentaar moet door leden worden g
 * **[!UICONTROL Flagging Limit]**
 Voer het aantal keren in dat een onderwerp of opmerking moet worden gemarkeerd voordat het wordt verborgen in de openbare weergave. Indien ingesteld op -1, wordt het gemarkeerde onderwerp of de opmerking nooit verborgen in de openbare weergave. Anders, moet dit aantal groter dan of gelijk aan de Drempel van de Moderatie zijn. De standaardwaarde is 5.
 
-### Tabblad Tagveld {#tag-field-tab}
+### Tabblad {#tag-field-tab} voor tagveld
 
-Onder het **[!UICONTROL Tag field]** tabblad zijn de tags die kunnen worden toegepast, indien toegestaan onder het **[!UICONTROL Settings]** tabblad, beperkt op basis van de gekozen naamruimten.
+Onder het tabblad **[!UICONTROL Tag field]** zijn de tags die kunnen worden toegepast, indien toegestaan onder het tabblad **[!UICONTROL Settings]**, beperkt op basis van de gekozen naamruimten.
 
 * **[!UICONTROL Allowed Namespaces]**
 Relevant indien 
-`Allow Tagging` is ingeschakeld onder het tabblad **Instellingen** . De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
+`Allow Tagging` wordt gecontroleerd onder de  **** instellingstab. De tags die kunnen worden toegepast, zijn beperkt tot de tags binnen de geselecteerde naamruimtecategorieën. De lijst met naamruimten bevat &#39;Standaardtags&#39; (de standaardnaamruimte) en &#39;Alle tags opnemen&#39;. De standaardwaarde is niet ingeschakeld, hetgeen betekent dat alle naamruimten zijn toegestaan.
 
 * **[!UICONTROL Suggestion Limit]**
 Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid dat naar het forum post. Een waarde van 
@@ -150,11 +150,11 @@ Voer het aantal tags in dat moet worden weergegeven als suggestie aan het lid da
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het **[!UICONTROL Sort Settings]** tabblad op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het tabblad **[!UICONTROL Sort Settings]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
 * **[!UICONTROL Sort By]**
 Alle toegestane sorteerselecties controleren: 
-`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. Standaard is dit `Newest, Oldest, Last Updated`.
+`Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed and Most Liked`. De standaardwaarde is `Newest, Oldest, Last Updated`.
 
 * **[!UICONTROL Set as Default]**
 Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die als standaard moeten worden weergegeven. Standaard is 
@@ -162,11 +162,11 @@ Trek naar beneden om een van de geselecteerde sorteeropties te selecteren die al
 
 * **[!UICONTROL Select Time Options for Analytics Sorting]**
 Omlaag trekken om een van de volgende opties te selecteren 
-`All, Last 24 Hours, Last 7 Days, Last 30 Days`. Standaard is dit `All`.
+`All, Last 24 Hours, Last 7 Days, Last 30 Days`. De standaardwaarde is `All`.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
-### Idea maken {#creating-idea}
+### Ideaal maken {#creating-idea}
 
 Net als bij alle andere communautaire kenmerken kan een bezoeker van de site alleen ideeën lezen en andere meningen bekijken (door opmerkingen en stemmen/houden) als hij niet is aangemeld.
 
@@ -176,24 +176,24 @@ Na aanmelding kan een lid een nieuw idee maken.
 
 Voordat het idee wordt verzonden, kan het lid een concept opslaan.
 
-Als u de `Save as Draft` knop selecteert, wordt een concept opgeslagen.
+Als u de knop `Save as Draft` selecteert, wordt een concept opgeslagen.
 
 ![chlimage_1-33](assets/chlimage_1-33.png)
 
-Als u opgeslagen concepten op het `My Drafts` tabblad weergeeft, selecteert u `Read More` om de bewerkingsmodus opnieuw in te schakelen:
+Als u opgeslagen concepten weergeeft op het tabblad `My Drafts`, selecteert u `Read More` om de bewerkingsmodus opnieuw in te schakelen:
 
 ![chlimage_1-34](assets/chlimage_1-34.png)
 
 #### Feedback geven {#providing-feedback}
 
-Zodra het idee is gepubliceerd, kunnen andere leden zich aanmelden, het idee ( `Read More`) openen en het idee volgen, en zo het aantal stemmen verhogen en opmerkingen maken.
+Als het idee eenmaal is gepubliceerd, kunnen andere leden zich aanmelden, het idee openen ( `Read More`) en het idee zo weergeven, waardoor het aantal stemmen wordt vergroot en opmerkingen worden gemaakt.
 
 ![chlimage_1-35](assets/chlimage_1-35.png)
 
-### Additional Information {#additional-information}
+### Aanvullende informatie {#additional-information}
 
-Meer informatie kunt u vinden op de pagina [Ideatie Essentials](ideation.md) voor ontwikkelaars.
+Meer informatie vindt u op de pagina [Essentiële elementen voor ideeën](ideation.md) voor ontwikkelaars.
 
-Voor moderatie van geposte onderwerpen en commentaren, zie het [Modereren van Door Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor de moderatie van geposte onderwerpen en opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [](tag-ugc.md)labelen voor informatie over het labelen van geposte onderwerpen en opmerkingen.
+Zie [Door gebruiker gegenereerde inhoud labelen](tag-ugc.md) voor het labelen van geposte onderwerpen en opmerkingen.
