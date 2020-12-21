@@ -17,19 +17,19 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms-analyserapporten weergeven en begrijpen {#view-and-understand-aem-forms-analytics-reports}
+# AEM Forms-analyserapporten {#view-and-understand-aem-forms-analytics-reports} weergeven en begrijpen
 
 Adobe Experience Manager Forms is geïntegreerd met Adobe Analytics waarmee u prestatiegegevens voor gepubliceerde formulieren en documenten kunt vastleggen en bijhouden. Het doel van de analyse van deze gegevens is om geïnformeerde beslissingen te nemen op basis van gegevens over de wijzigingen die nodig zijn om formulieren of documenten bruikbaarder te maken.
 
-## Analyses instellen {#setting-up-analytics}
+## Analyses {#setting-up-analytics} instellen
 
-De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Zie AEM Forms [](/help/forms/using/installing-configuring-aem-forms-osgi.md)installeren en configureren voor informatie over het installeren van het invoegpakket.
+De functie Analytics in AEM Forms is beschikbaar als onderdeel van het invoegpakket voor AEM Forms. Zie [AEM Forms installeren en configureren](/help/forms/using/installing-configuring-aem-forms-osgi.md) voor informatie over het installeren van het invoegpakket.
 
-Naast het invoegpakket hebt u een Adobe Analytics-account nodig. Zie [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html)voor informatie over de oplossing.
+Naast het invoegpakket hebt u een Adobe Analytics-account nodig. Zie [Adobe Analytics](https://www.adobe.com/solutions/digital-analytics.html) voor informatie over de oplossing.
 
-Zodra u het AEM Forms-add-onpakket en een Adobe Analytics-account hebt, integreert u Adobe Analytics-account met AEM Forms en schakelt u het bijhouden van gegevens in uw formulieren of documenten in zoals beschreven in Analyses en rapporten [](/help/forms/using/configure-analytics-forms-documents.md)configureren.
+Zodra u het AEM Forms add-on pakket en een Adobe Analytics-account hebt, integreert u Adobe Analytics-account met AEM Forms en schakelt u het bijhouden van gegevens in uw formulieren of documenten in zoals beschreven in [Analytics en Reports](/help/forms/using/configure-analytics-forms-documents.md) configureren.
 
-## Hoe gebruikersinteractiegegevens worden vastgelegd {#how-user-interaction-information-is-recorded}
+## Hoe gebruikersinteractiegegevens worden opgenomen {#how-user-interaction-information-is-recorded}
 
 Wanneer een gebruiker met het formulier werkt, worden de interacties opgenomen en naar de Analyseserver verzonden. De volgende lijst wijst op servervraag voor diverse gebruikersactiviteiten:
 
@@ -47,25 +47,25 @@ Wanneer een gebruiker met het formulier werkt, worden de interacties opgenomen e
 >
 >Deze lijst is niet limitatief.
 
-## Analyserapporten weergeven {#summary-report}
+## Analytische rapporten {#summary-report} weergeven
 
 Voer de volgende stappen uit om analyserapporten weer te geven:
 
-1. Meld u aan bij het portaal AEM op `https://[hostname]:[port]`
-1. Klik op **Forms > Forms en documenten**.
+1. Meld u aan bij de portal AEM op `https://[hostname]:[port]`
+1. Klik op **Forms > Forms &amp; Documents**.
 
 1. Selecteer het formulier waarvoor u de analyserapporten wilt weergeven.
 1. Selecteer **Meer > Analyserapporten**.
 
 ![analyserapport](assets/analyticsreport.png)
 
-**A.** Analyserapport, opdracht
+**A.** Analytics Report, opdracht
 
 AEM Forms geeft analyserapporten voor het formulier en voor elk deelvenster in het formulier weer, zoals hieronder wordt weergegeven.
 
 ![Samenvattend verslag van een adaptief formulier](assets/analyticsdashboard_callout.png)
 
-**A.** Conversies **B.** Samenvatting op formulierniveau **C.** Overzicht op paneelniveau **D.** Browsers van bezoekers - filter **E.** Besturingssysteem van bezoekers - filter **F.** Taal van bezoekers - filter
+**A.** Conversies  **B.** Samenvatting op formulierniveau  **C.** Overzicht op deelvensterniveau  **D.** Browsers van bezoekers - filter  **E.** OS van bezoekers - filter  **** F.Taal van bezoekers - filter
 
 Standaard wordt het analyserapport voor de laatste zeven dagen weergegeven. U kunt rapporten weergeven voor de laatste 15 dagen, de laatste één maand enzovoort, of een datumbereik opgeven.
 
@@ -75,7 +75,7 @@ Standaard wordt het analyserapport voor de laatste zeven dagen weergegeven. U ku
 
 ![date-range](assets/date-range.png)
 
-## Grafiek voor conversie voor adaptieve formulieren en HTML5-formulieren {#conversions-graph-for-adaptive-and-html-forms}
+## Grafiek voor aangepaste en HTML5-formulieren {#conversions-graph-for-adaptive-and-html-forms}
 
 De omzettingsgrafiek op formulierniveau geeft u inzicht in hoe het formulier de volgende prestatiekernindicatoren (KPI&#39;s) uitvoert:
 
@@ -95,11 +95,11 @@ In de overzichtssectie op formulierniveau kunt u zien hoe het formulier de volge
 * **Concepten**: Aantal keer dat het formulier is opgeslagen als concept
 * **Indieningen**: Aantal keer dat het formulier is ingediend
 * **Afbreken**: Aantal keren dat gebruikers het formulier hebben ingevuld en vervolgens het formulier hebben verlaten zonder het formulier in te vullen
-* **Unieke bezoekers**: Aantal keren dat het formulier wordt weergegeven door unieke bezoekers. Voor meer informatie over unieke bezoekers, zie [Unieke Bezoekers, Bezoekingen, en klantengedrag](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html).
+* **Unieke bezoekers**: Aantal keren dat het formulier wordt weergegeven door unieke bezoekers. Zie [Unieke bezoekers, bezoeken en klantengedrag](https://helpx.adobe.com/analytics/kb/unique-visitors-visitor-behavior.html) voor meer informatie over unieke bezoekers.
 
 ![Uitgebreid rapport voor samenvattingsanalyse op formulierniveau](assets/analytics-report.png)
 
-## Deelvensterrapport {#bottom-summary-report}
+## Rapport van deelvenster {#bottom-summary-report}
 
 De overzichtssectie op paneelniveau bevat de volgende informatie over elk deelvenster in het formulier:
 
@@ -119,7 +119,7 @@ Het gedetailleerde rapport bevat waarden voor alle velden in het deelvenster.
 
 Het paneelrapport heeft drie lusjes:
 
-* **Tijdrapport** (standaard): Geeft de tijd in aantal seconden weer die is besteed aan het invullen van elk veld in het deelvenster
+* **Tijdrapport**  (standaard): Geeft de tijd in aantal seconden weer die is besteed aan het invullen van elk veld in het deelvenster
 * **Foutrapport**: Hiermee geeft u het aantal fouten weer dat gebruikers hebben aangetroffen bij het invullen van de velden
 * **Help-rapport**: Aantal keren dat de Help voor een bepaald veld is geopend
 
@@ -131,7 +131,7 @@ In de tabellen Browserdistributie, OS Distribution en Taaldistributie worden de 
 
 Als u de analysegegevens verder wilt filteren, klikt u op een item in een van de tabellen. Als u bijvoorbeeld op Google Chrome klikt in de tabel Browser Distribution, wordt het rapport opnieuw weergegeven met gegevens die relevant zijn voor de Google Chrome-browser, zoals hieronder:
 
-![Filter toegepast op Analytics-rapport - Google Chrome ](assets/filter.png)
+![Filter toegepast op Analytics-rapport - Google Chrome  ](assets/filter.png)
 
 Als u het paneelrapport na het toepassen van een filter bekijkt, worden de gegevens van het paneelrapport ook getoond volgens de toegepaste filter.
 
@@ -147,4 +147,4 @@ Nadat een filter is toegepast:
 
 Als u A/B tests hebt toegelaten en opstelling voor de vorm, heeft de rapportpagina een drop-down u kunt gebruiken om het A/B testende rapport te tonen. In het testrapport A/B worden de prestaties van twee versies van het formulier vergeleken terwijl u het instelt.
 
-Zie [A/B-test voor adaptieve formulieren](/help/forms/using/ab-testing-adaptive-forms.md)maken en beheren voor meer informatie over A/B-tests.
+Zie [A/B-test maken en beheren voor adaptieve formulieren](/help/forms/using/ab-testing-adaptive-forms.md) voor meer informatie over A/B-tests.
