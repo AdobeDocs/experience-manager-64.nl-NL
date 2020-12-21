@@ -26,8 +26,8 @@ De functie voor opmerkingen wordt gebruikt om bezoekers die zich hebben aangemel
 
 In deze sectie van de documentatie wordt beschreven
 
-* Toevoegen `Comments`aan een pagina
-* Configuratie-instellingen voor de `Comments`component
+* `Comments`toevoegen aan een pagina
+* De montages van de configuratie voor `Comments`component
 
 >[!NOTE]
 >
@@ -35,15 +35,15 @@ In deze sectie van de documentatie wordt beschreven
 
 ## Opmerkingen toevoegen aan een pagina {#adding-comments-to-a-page}
 
-Als u een `Comments`component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Comments`component wilt toevoegen aan een pagina in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Comments`
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie waar gebruikers opmerkingen over kunnen plaatsen, of gewoon onder aan de pagina.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-comments.md#essentials-for-client-side) worden opgenomen, wordt de `Comments`component op deze manier weergegeven.
+Als de [vereiste client-side bibliotheken](essentials-comments.md#essentials-for-client-side) worden opgenomen, wordt de `Comments`component op deze manier weergegeven.
 
 ![chlimage_1-428](assets/chlimage_1-428.png)
 
@@ -51,15 +51,15 @@ Wanneer de [vereiste client-side bibliotheken](essentials-comments.md#essentials
 >
 >Er mag slechts één `Comments`component op een pagina voorkomen. Houd er rekening mee dat diverse functies van een Gemeenschappen al opmerkingen bevatten, zoals een blog, agenda, forum, QnA en revisies.
 
-## Opmerkingen configureren {#configuring-comments}
+## Opmerkingen {#configuring-comments} configureren
 
-Selecteer de geplaatste `Comments` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Comments` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
-![configureren](assets/configure.png) , ![commentaarinstellingen](assets/commentssettings.png)
+![](assets/configure.png) ![configurecommenssettings](assets/commentssettings.png)
 
 ### Tabblad Opmerkingen {#comments-tab}
 
-Geef onder het **[!UICONTROL Comments]** tabblad op hoe bezoekers opmerkingen invoeren.
+Geef onder het tabblad **[!UICONTROL Comments]** op hoe bezoekers opmerkingen invoeren.
 
 * **[!UICONTROL Allow replies]**
 
@@ -91,7 +91,7 @@ Geef onder het **[!UICONTROL Comments]** tabblad op hoe bezoekers opmerkingen in
 
 * **[!UICONTROL Allow Voting]**
 
-   Als deze optie is ingeschakeld, wordt het tekstinvoervak weergegeven met de optie om omhoog of omlaag te stemmen. De optie Standaard is uitgeschakeld.
+   Als deze optie is ingeschakeld, wordt de optie om omhoog of omlaag te stemmen weergegeven met het tekstinvoervak. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Allow Following]**
 
@@ -103,7 +103,7 @@ Geef onder het **[!UICONTROL Comments]** tabblad op hoe bezoekers opmerkingen in
 
 ### Tabblad Gebruikersmodernisering {#user-moderation-tab}
 
-Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte opmerkingen worden beheerd. Voor meer informatie, zie het [Modereren van Gebruiker Gegenereerde Inhoud](moderate-ugc.md).
+Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte opmerkingen worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor meer informatie.
 
 * **[!UICONTROL Pre-Moderation]**
 
@@ -139,47 +139,47 @@ Geef onder het **[!UICONTROL User Moderation]** tabblad op hoe de geposte opmerk
 
 * **[!UICONTROL Flagging Limit]**
 
-   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter zijn dan of gelijk zijn aan het **[!UICONTROL Moderation Threshold]** getal. De standaardwaarde is 5.
+   Voer het aantal keren in dat een opmerking moet worden gemarkeerd voordat deze wordt verborgen in de openbare weergave. Dit getal moet groter dan of gelijk zijn aan **[!UICONTROL Moderation Threshold]**. De standaardwaarde is 5.
 
 ### Tabblad Instellingen sorteren {#sort-settings-tab}
 
-Geef onder het **[!UICONTROL Sort Settings]** tabblad op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
+Geef onder het tabblad **[!UICONTROL Sort Settings]** op hoe de geposte opmerkingen worden gesorteerd wanneer ze worden weergegeven.
 
 * **[!UICONTROL Sort Field]**
 
-   Trek omlaag om een van `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked`te selecteren.
+   Trek neer om één van `Newest, Oldest, Last Updated, Most Viewed, Most Active, Most Followed`, of `Most Liked` te selecteren.
 
 * **[!UICONTROL Sort Order]**
 
-   Trek omlaag om een van `Ascending` of `Descending`te selecteren.
+   Trek neer om één van `Ascending` of `Descending` te selecteren.
 
 ### Wijzigen in type aangepaste opmerking {#changing-to-a-custom-comment-type}
 
 Door het Type van Middel van Commentaar te veranderen, zal het commentaarsysteem niet meer een geval van een commentaar gebruikend het gebrek, maar eerder een produceren die (uitgebreid) door ontwikkelaars is aangepast.
 
-Zodra de types van douanemiddel bekend zijn, ga de Wijze [van het](../../help/sites-authoring/default-components-designmode.md) Ontwerp in en klik op de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
+Zodra de types van douanemiddel bekend zijn, ga [Ontwerpwijze](../../help/sites-authoring/default-components-designmode.md) in en klik op de geplaatste `Comments` component tweemaal om een dialoog met een extra lusje te openen.
 
-Geef onder het **[!UICONTROL Resource Types]** tabblad het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting`componenten:
+Geef onder het tabblad **[!UICONTROL Resource Types]** het aangepaste resourceType op voor nieuwe instanties van de `Comments or Voting`componenten:
 
 ![chlimage_1-429](assets/chlimage_1-429.png)
 
 * **[!UICONTROL Comment Resource Type]**
 
-   Navigeer naar het resourceType van een uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
+   Navigeer naar het resourceType van uitgebreide `comment`component (enige commentaar) in /apps. Bijvoorbeeld, `/apps/social/commons/components/hbs/comments/comment`
 
    Deze bron identificeert het resourceType van de UGC die is gemaakt wanneer een bezoeker een opmerking plaatst.
 
 * **[!UICONTROL Voting Resource Type]**
 
-   Navigeer aan resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
+   Navigeer naar het resourceType van een uitgebreide `voting`component in /apps. Bijvoorbeeld, `/apps/social/components/hbs/voting`
 
    Met deze bron wordt het bronnentype van de UGC geïdentificeerd die wordt gemaakt wanneer een bezoeker een stem plaatst.
 
 * **[!UICONTROL Comment System Resource Type]**
 
-   Navigeer aan resourceType van een uitgebreide `comments`component (het Systeem van de Commentaar) in /apps. Leeg laten tenzij het paginasjabloon het opmerkingensysteem [dynamisch in het onderliggende script bevat](scf.md#add-or-include-a-communities-component) in plaats van als bron (knooppunt comments) aan de pagina te worden toegevoegd. Lees meer over de [{include} helper](handlebars-helpers.md#include).
+   Navigeer naar het resourceType van uitgebreide `comments`component (het Systeem van de Commentaar) in /apps. Leeg laten tenzij het paginamalplaatje [dynamisch ](scf.md#add-or-include-a-communities-component) het Systeem van de Commentaar in het onderliggende manuscript in plaats van wordt toegevoegd aan de pagina als middel (commentaarknoop) omvat. Leer meer door over [ te lezen {{include} helper](handlebars-helpers.md#include).
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 ### Moderatoren en beheerders {#moderators-and-administrators}
 
@@ -194,14 +194,14 @@ Wanneer de bezoeker van de site zich heeft aangemeld, kunnen deze, afhankelijk v
 * Een eigen opmerking verwijderen
 * Opmerkingen van anderen markeren
 
-### Anoniem {#anonymous}
+### Anonieme {#anonymous}
 
 Sitebezoekers die niet zijn aangemeld, kunnen alleen geposte opmerkingen lezen, deze vertalen indien deze worden ondersteund, maar kunnen geen opmerking toevoegen of opmerkingen van anderen markeren.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Comments Essentials](essentials-comments.md) voor ontwikkelaars.
 
-Zie Door gebruiker gegenereerde inhoud [modereren voor moderatie van geposte opmerkingen](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor de moderatie van geposte opmerkingen.
 
-Zie Door gebruiker gegenereerde inhoud [vertalen voor een vertaling van geposte opmerkingen](translate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud omzetten](translate-ugc.md) voor een vertaling van geposte opmerkingen.
