@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# Gebruiksrechten toewijzen {#assigning-usage-rights}
+# Gebruiksrechten {#assigning-usage-rights} toewijzen
 
-## Over de Acrobat Reader DC-extensieservice {#about-the-acrobat-reader-dc-extensions-service}
+## Informatie over de Acrobat Reader DC Extension Service {#about-the-acrobat-reader-dc-extensions-service}
 
 Met de Acrobat Reader DC-extensieservice kunt u eenvoudig interactieve PDF-documenten delen door de functionaliteit van Adobe Reader uit te breiden. De Acrobat Reader DC-extensieservice biedt volledige ondersteuning voor alle PDF-documenten, tot en met PDF 1.7. Het werkt met Adobe Reader 7.0 en hoger. De service voegt gebruiksrechten toe aan een PDF-document. Functies die gewoonlijk niet beschikbaar zijn wanneer een PDF-document wordt geopend met Adobe Reader, worden geactiveerd. Gebruikers van derden hebben geen extra software of plug-ins nodig om met documenten waarvoor rechten zijn ingeschakeld te kunnen werken.
 
 U kunt deze taken uitvoeren met de Acrobat Reader DC-extensieservice:
 
-* Gebruiksrechten toepassen op PDF-documenten. Zie Gebruiksrechten [toepassen op PDF-documenten](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)voor meer informatie.
-* Gebruiksrechten verwijderen uit PDF-documenten. Zie Gebruiksrechten [verwijderen uit PDF-documenten](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents)voor meer informatie.
-* Crediteringsgegevens ophalen. Zie [Referentiegegevens](assigning-usage-rights.md#retrieving-credential-information)ophalen voor meer informatie.
+* Gebruiksrechten toepassen op PDF-documenten. Zie [Gebruiksrechten toepassen op PDF-documenten](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents) voor meer informatie.
+* Gebruiksrechten verwijderen uit PDF-documenten. Zie [Gebruiksrechten verwijderen uit PDF-documenten](assigning-usage-rights.md#removing-usage-rights-from-pdf-documents) voor meer informatie.
+* Crediteringsgegevens ophalen. Zie [Referentiegegevens ophalen](assigning-usage-rights.md#retrieving-credential-information) voor meer informatie.
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Acrobat Reader DC-extensieservice.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Acrobat Reader DC-extensies.
 
 ## Gebruiksrechten toepassen op PDF-documenten {#applying-usage-rights-to-pdf-documents}
 
@@ -40,13 +40,13 @@ U kunt gebruiksrechten toepassen op PDF-documenten met de Acrobat Reader DC-exte
 
 >[!NOTE]
 >
->Wanneer u gebruiksrechten toepast op PDF-documenten met de `applyUsageRights` methode, die deel uitmaakt van de Java API, kunt u de `isModeFinal` parameter van het `ReaderExtensionsOptionSpec` object instellen op `false`. Hierdoor worden de verwerkte formulieren niet bijgewerkt en verbeteren de prestaties. Als u niet bezorgd bent over het bijwerken van de verwerkte teller van de vormen, adviseert men dat u de `isModeFinal` parameter aan `false`.
+>Wanneer u gebruiksrechten toepast op PDF-documenten met de methode `applyUsageRights`, die deel uitmaakt van de Java API, kunt u de parameter `isModeFinal` van het `ReaderExtensionsOptionSpec`-object instellen op `false`. Hierdoor worden de verwerkte formulieren niet bijgewerkt en verbeteren de prestaties. Als u niet bezorgd bent over het bijwerken van de verwerkte teller van de formulieren, adviseert u de `isModeFinal` parameter aan `false` te plaatsen.
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Acrobat Reader DC-extensieservice.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Acrobat Reader DC-extensies.
 
-### Overzicht van de stappen {#summary-of-steps}
+### Overzicht van stappen {#summary-of-steps}
 
 Voer de volgende stappen uit om gebruiksrechten toe te passen op een PDF-document:
 
@@ -63,7 +63,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Acrobat Reader DC-extensies maken voor clientobjecten**
 
-Als u programmatisch een Acrobat Reader DC Extension Service-bewerking wilt uitvoeren, moet u een Acrobat Reader DC Extension Service Client-object maken. Als u de Java API voor Acrobat Reader DC-extensies gebruikt, maakt u een `ReaderExtensionsServiceClient` object. Maak een `ReaderExtensionsServiceService` object als u de API voor webservices voor Acrobat Reader DC-extensies gebruikt.
+Als u programmatisch een Acrobat Reader DC Extension Service-bewerking wilt uitvoeren, moet u een Acrobat Reader DC Extension Service Client-object maken. Als u de Java API voor Acrobat Reader DC-extensies gebruikt, maakt u een `ReaderExtensionsServiceClient`-object. Als u de API voor webservices voor Acrobat Reader DC-extensies gebruikt, maakt u een `ReaderExtensionsServiceService`-object.
 
 **Een PDF-document ophalen**
 
@@ -97,7 +97,7 @@ Nadat de service Acrobat Reader DC-extensies gebruiksrechten heeft toegepast op 
 
 [Acrobat Reader DC Extensions Service API - Snel starten](/help/forms/developing/acrobat-reader-dc-extensions-service.md#acrobat-reader-dc-extensions-service-java-api-quick-start-soap)
 
-### Gebruiksrechten toepassen met de Java API {#apply-usage-rights-using-the-java-api}
+### Gebruiksrechten toepassen met de Java-API {#apply-usage-rights-using-the-java-api}
 
 Gebruiksrechten toepassen op een PDF-document met de Acrobat Reader DC Extensions-API (Java):
 
@@ -107,38 +107,38 @@ Gebruiksrechten toepassen op een PDF-document met de Acrobat Reader DC Extension
 
 1. Maak een Acrobat Reader DC Extension Client-object.
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `ReaderExtensionsServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `ReaderExtensionsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Een PDF-document ophalen.
 
-   * Maak een `java.io.FileInputStream` object dat het PDF-document vertegenwoordigt met behulp van de constructor en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het PDF-document vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Geef de gebruiksrechten op die u wilt toepassen.
 
-   * Maak een `UsageRights` object dat gebruiksrechten vertegenwoordigt met de constructor ervan.
-   * Roep voor elk gebruiksrecht een methode aan die bij het `UsageRights` object hoort. Als u bijvoorbeeld het `enableFormFillIn` gebruiksrecht wilt toevoegen, roept u de `UsageRights` methode van het `enableFormFillIn` object aan en geeft u deze door `true`. (Herhaal deze stap voor elk gebruiksrecht dat u wilt toepassen.)
+   * Maak een `UsageRights`-object dat gebruiksrechten vertegenwoordigt door de constructor ervan te gebruiken.
+   * Roep voor elk gebruiksrecht een overeenkomende methode aan die tot het object `UsageRights` behoort. Als u bijvoorbeeld het gebruiksrecht `enableFormFillIn` wilt toevoegen, roept u de methode `enableFormFillIn` van het object `UsageRights` aan en geeft u `true` door. (Herhaal deze stap voor elk gebruiksrecht dat u wilt toepassen.)
 
 1. Gebruiksrechten toepassen op het PDF-document.
 
-   * Maak een `ReaderExtensionsOptionSpec` object met de constructor ervan. Dit object bevat runtime-opties die vereist zijn voor de Acrobat Reader DC-extensieservice. Wanneer u deze constructor oproept, moet u de volgende waarden opgeven:
+   * Maak een `ReaderExtensionsOptionSpec`-object met de constructor ervan. Dit object bevat runtime-opties die vereist zijn voor de Acrobat Reader DC-extensieservice. Wanneer u deze constructor oproept, moet u de volgende waarden opgeven:
 
-      * Het `UsageRights` object dat de gebruiksrechten bevat die op het document moeten worden toegepast.
+      * Het `UsageRights`-object dat de gebruiksrechten bevat die op het document moeten worden toegepast.
       * Een tekenreekswaarde die een bericht opgeeft dat wordt weergegeven wanneer het PDF-document waarvoor rechten zijn ingeschakeld, wordt geopend in Adobe Reader 7.x. Dit bericht wordt niet weergegeven in Adobe Reader 8.0.
-   * Pas gebruiksrechten toe op het PDF-document door de methode van het `ReaderExtensionsServiceClient` `applyUsageRights` object aan te roepen en de volgende waarden door te geven:
+   * Pas gebruiksrechten toe op het PDF-document door de methode `ReaderExtensionsServiceClient` van het object `applyUsageRights` aan te roepen en de volgende waarden door te geven:
 
-      * Het `com.adobe.idp.Document` object dat het PDF-document bevat waarop gebruiksrechten worden toegepast.
+      * Het `com.adobe.idp.Document`-object dat het PDF-document bevat waarop gebruiksrechten worden toegepast.
       * Een tekenreekswaarde die de alias van de referentie opgeeft waarmee u gebruiksrechten kunt toepassen.
-      * Een tekenreekswaarde die de bijbehorende wachtwoordwaarde opgeeft. (Deze parameter wordt momenteel genegeerd. U kunt doorgeven `null`.)
-   * Het `ReaderExtensionsOptionSpec` object dat uitvoeringsopties bevat.
+      * Een tekenreekswaarde die de bijbehorende wachtwoordwaarde opgeeft. (Deze parameter wordt momenteel genegeerd. U kunt `null` overgaan.)
+   * Het `ReaderExtensionsOptionSpec`-object dat uitvoeringsopties bevat.
 
-   De `applyUsageRights` methode retourneert een `com.adobe.idp.Document` object dat het PDF-document met toegangsrechten bevat.
+   De methode `applyUsageRights` retourneert een `com.adobe.idp.Document`-object dat het PDF-document bevat waarvoor rechten zijn ingeschakeld.
 
 1. Sla het PDF-document waarvoor rechten zijn ingeschakeld op.
 
-   * Maak een `java.io.File` object en zorg dat de bestandsextensie .pdf is.
-   * Roep de `com.adobe.idp.Document` methode van het `copyToFile` object aan om de inhoud van het `com.adobe.idp.Document` object naar het bestand te kopiëren (zorg dat u het `com.adobe.idp.Document` object gebruikt dat door de `applyUsageRights` methode is geretourneerd).
+   * Maak een `java.io.File`-object en controleer of de bestandsextensie .pdf is.
+   * Roep de methode `com.adobe.idp.Document` van het object `copyToFile` aan om de inhoud van het object `com.adobe.idp.Document` naar het bestand te kopiëren (zorg dat u het object `com.adobe.idp.Document` gebruikt dat door de methode `applyUsageRights` is geretourneerd).
 
 **Zie ook**
 
@@ -160,54 +160,54 @@ Gebruiksrechten toepassen op een PDF-document met de Acrobat Reader DC Extension
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Acrobat Reader DC Extension Client-object.
 
-   * Maak een `ReaderExtensionsServiceClient` object met de standaardconstructor.
-   * Maak een `ReaderExtensionsServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Zorg ervoor dat u opgeeft `?blob=mtom`.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `ReaderExtensionsServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `ReaderExtensionsServiceClient`-object met de standaardconstructor.
+   * Maak een `ReaderExtensionsServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Zorg ervoor dat u `?blob=mtom` opgeeft.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `ReaderExtensionsServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Een PDF-document ophalen.
 
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om een PDF-document op te slaan waarop gebruiksrechten worden toegepast.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de `System.IO.FileStream` `Read` methode van het object aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen met de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document opgeslagen waarop gebruiksrechten worden toegepast.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen. Geef de bytearray, de startpositie en de streamlengte door om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. Geef de gebruiksrechten op die u wilt toepassen.
 
-   * Maak een `UsageRights` object dat gebruiksrechten vertegenwoordigt met de constructor ervan.
-   * Voor elk gebruiksrecht om toe te passen, wijs de waarde `true` aan het overeenkomstige gegevenslid toe dat tot het `UsageRights` voorwerp behoort. Als u bijvoorbeeld het gebruiksrecht wilt toevoegen, wijst u `enableFormFillIn` het toe aan het `true` gegevenslid van het `UsageRights` `enableFormFillIn` object. (Herhaal deze stap voor elk gebruiksrecht dat u wilt toepassen.)
+   * Maak een `UsageRights`-object dat gebruiksrechten vertegenwoordigt door de constructor ervan te gebruiken.
+   * Voor elk gebruiksrecht om toe te passen, wijs de waarde `true` aan het overeenkomstige gegevenslid toe dat tot `UsageRights` voorwerp behoort. Als u bijvoorbeeld het gebruiksrecht `enableFormFillIn` wilt toevoegen, wijst u `true` toe aan het `UsageRights`-gegevenslid van het `enableFormFillIn`-object. (Herhaal deze stap voor elk gebruiksrecht dat u wilt toepassen.)
 
 1. Gebruiksrechten toepassen op het PDF-document.
 
-   * Maak een `ReaderExtensionsOptionSpec` object met de constructor ervan. Dit object bevat runtime-opties die vereist zijn voor de Acrobat Reader DC-extensieservice.
-   * Wijs het `UsageRights` object toe aan het `ReaderExtensionsOptionSpec` gegevenslid van het object `usageRights` .
-   * Wijs een tekenreekswaarde toe die het bericht aangeeft dat een gebruiker ziet wanneer het PDF-document met toegangsrechten in Adobe Reader wordt geopend voor het `ReaderExtensionsOptionSpec` gegevenslid van het `message` object.
-   * Pas gebruiksrechten toe op het PDF-document door de methode van het `ReaderExtensionsServiceClient` `applyUsageRights` object aan te roepen en de volgende waarden door te geven:
+   * Maak een `ReaderExtensionsOptionSpec`-object met de constructor ervan. Dit object bevat runtime-opties die vereist zijn voor de Acrobat Reader DC-extensieservice.
+   * Wijs het `UsageRights`-object toe aan het `ReaderExtensionsOptionSpec`-gegevenslid van het object.`usageRights`
+   * Wijs een tekenreekswaarde toe die het bericht aangeeft dat een gebruiker ziet wanneer het PDF-document waarvoor rechten zijn ingeschakeld in Adobe Reader wordt geopend in het `ReaderExtensionsOptionSpec`-gegevenslid van het `message`-object.
+   * Pas gebruiksrechten toe op het PDF-document door de methode `ReaderExtensionsServiceClient` van het object `applyUsageRights` aan te roepen en de volgende waarden door te geven:
 
-      * Het `BLOB` object dat het PDF-document bevat waarop gebruiksrechten worden toegepast.
+      * Het `BLOB`-object dat het PDF-document bevat waarop gebruiksrechten worden toegepast.
       * Een tekenreekswaarde die de alias van de referentie opgeeft waarmee u gebruiksrechten kunt toepassen.
-      * Een tekenreekswaarde die de bijbehorende wachtwoordwaarde opgeeft. (Deze parameter wordt momenteel genegeerd. U kunt doorgeven `null`.)
-   * Het `ReaderExtensionsOptionSpec` object dat uitvoeringsopties bevat.
+      * Een tekenreekswaarde die de bijbehorende wachtwoordwaarde opgeeft. (Deze parameter wordt momenteel genegeerd. U kunt `null` overgaan.)
+   * Het `ReaderExtensionsOptionSpec`-object dat uitvoeringsopties bevat.
 
-   De `applyUsageRights` methode retourneert een `BLOB` object dat het PDF-document met toegangsrechten bevat.
+   De methode `applyUsageRights` retourneert een `BLOB`-object dat het PDF-document bevat waarvoor rechten zijn ingeschakeld.
 
 1. Sla het PDF-document waarvoor rechten zijn ingeschakeld op.
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de bestandslocatie van het PDF-document met toegangsrechten vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het `BLOB` object dat door de `applyUsageRights` methode is geretourneerd. Vul de bytearray met de waarde van het `BLOB` `MTOM` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
-   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode van het `System.IO.BinaryWriter` `Write` object aan te roepen en de bytearray door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen. Geef een tekenreekswaarde door die de bestandslocatie van het PDF-document met toegangsrechten vertegenwoordigt.
+   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `applyUsageRights` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
+   * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
 
 **Zie ook**
 
@@ -223,9 +223,9 @@ U kunt gebruiksrechten verwijderen uit een document waarvoor rechten zijn ingesc
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Acrobat Reader DC-extensieservice.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Acrobat Reader DC-extensies.
 
-### Overzicht van de stappen {#summary_of_steps-1}
+### Overzicht van stappen {#summary_of_steps-1}
 
 Voer de volgende stappen uit om gebruiksrechten te verwijderen uit een PDF-document waarvoor rechten zijn ingeschakeld:
 
@@ -241,7 +241,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Acrobat Reader DC-extensies maken voor clientobjecten**
 
-Voordat u een Acrobat Reader DC-extensieservicebewerking programmatisch kunt uitvoeren, moet u een client-object voor de Acrobat Reader DC-extensieservice maken. Als u de Java API gebruikt, maakt u een `ReaderExtensionsServiceClient` object. Maak een `ReaderExtensionsServiceService` object als u de API voor webservices voor Acrobat Reader DC-extensies gebruikt.
+Voordat u een Acrobat Reader DC-extensieservicebewerking programmatisch kunt uitvoeren, moet u een client-object voor de Acrobat Reader DC-extensieservice maken. Als u de Java API gebruikt, maakt u een `ReaderExtensionsServiceClient`-object. Als u de API voor webservices voor Acrobat Reader DC-extensies gebruikt, maakt u een `ReaderExtensionsServiceService`-object.
 
 **Een PDF-document met ingeschakelde rechten ophalen**
 
@@ -269,7 +269,7 @@ U kunt het PDF-document dat geen gebruiksrechten meer bevat, opslaan als een PDF
 
 [Gebruiksrechten toepassen op PDF-documenten](assigning-usage-rights.md#applying-usage-rights-to-pdf-documents)
 
-### Gebruiksrechten verwijderen met de Java API {#remove-usage-rights-using-the-java-api}
+### Gebruiksrechten verwijderen met de Java-API {#remove-usage-rights-using-the-java-api}
 
 Verwijder gebruiksrechten uit een PDF-document waarvoor rechten zijn ingeschakeld met de Acrobat Reader DC-API voor extensies (Java):
 
@@ -279,21 +279,21 @@ Verwijder gebruiksrechten uit een PDF-document waarvoor rechten zijn ingeschakel
 
 1. Maak een Acrobat Reader DC Extension Client-object.
 
-   Maak een `ReaderExtensionsServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `ReaderExtensionsServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Een PDF-document ophalen.
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document waarvoor rechten zijn ingeschakeld met behulp van de constructor en geef een tekenreekswaarde door die de locatie van het PDF-document aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het PDF-document waarvoor rechten zijn ingeschakeld, vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Gebruiksrechten verwijderen uit het PDF-document.
 
-   Verwijder gebruiksrechten uit het PDF-document door de `ReaderExtensionsServiceClient` methode van het `removeUsageRights` object aan te roepen en het `com.adobe.idp.Document` object met het PDF-document waarvoor rechten zijn ingeschakeld door te geven. Deze methode retourneert een `com.adobe.idp.Document` object dat een PDF-document bevat dat geen gebruiksrechten heeft.
+   Verwijder gebruiksrechten uit het PDF-document door de methode `removeUsageRights` van het object `ReaderExtensionsServiceClient` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het PDF-document met toegangsrechten bevat. Deze methode retourneert een `com.adobe.idp.Document`-object dat een PDF-document bevat dat geen gebruiksrechten heeft.
 
 1. Gebruiksrechten toepassen op het PDF-document.
 
-   * Maak een `java.io.File` object en zorg dat de bestandsextensie .PDF is.
-   * Roep de `Document` methode van het `copyToFile` object aan om de inhoud van het `Document` object naar het bestand te kopiëren (zorg dat u het `Document` object gebruikt dat door de `removeUsageRights` methode is geretourneerd).
+   * Maak een `java.io.File`-object en controleer of de bestandsextensie .PDF is.
+   * Roep de methode `Document` van het object `copyToFile` aan om de inhoud van het object `Document` naar het bestand te kopiëren (zorg dat u het object `Document` gebruikt dat door de methode `removeUsageRights` is geretourneerd).
 
 **Zie ook**
 
@@ -315,38 +315,38 @@ Verwijder gebruiksrechten uit een PDF-document waarvoor rechten zijn ingeschakel
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Acrobat Reader DC Extension Client-object.
 
-   * Maak een `ReaderExtensionsServiceClient` object met de standaardconstructor.
-   * Maak een `ReaderExtensionsServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Zorg ervoor dat u opgeeft `?blob=mtom`.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `ReaderExtensionsServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `ReaderExtensionsServiceClient`-object met de standaardconstructor.
+   * Maak een `ReaderExtensionsServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Zorg ervoor dat u `?blob=mtom` opgeeft.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `ReaderExtensionsServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Een PDF-document ophalen.
 
-   * Maak een `BLOB` object met de constructor ervan. Het `BLOB` object wordt gebruikt om het PDF-document met toegangsrechten op te slaan waaruit gebruiksrechten worden verwijderd.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen met de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt het PDF-document met toegangsrechten opgeslagen waaruit gebruiksrechten worden verwijderd.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het PDF-document en de modus waarin het bestand moet worden geopend, vertegenwoordigt.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. Gebruiksrechten verwijderen uit het PDF-document.
 
-   Verwijder gebruiksrechten uit het PDF-document door de `ReaderExtensionsServiceClient` methode van het `removeUsageRights` object aan te roepen en het `BLOB` object met het PDF-document waarvoor rechten zijn ingeschakeld door te geven. Deze methode retourneert een `BLOB` object dat een PDF-document bevat dat geen gebruiksrechten heeft.
+   Verwijder gebruiksrechten uit het PDF-document door de methode `removeUsageRights` van het object `ReaderExtensionsServiceClient` aan te roepen en het object `BLOB` door te geven dat het PDF-document met toegangsrechten bevat. Deze methode retourneert een `BLOB`-object dat een PDF-document bevat dat geen gebruiksrechten heeft.
 
 1. Gebruiksrechten toepassen op het PDF-document.
 
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de locatie van het PDF-bestand vertegenwoordigt.
-   * Maak een bytearray met de gegevensinhoud van het `BLOB` object dat door de `removeUsageRights` methode is geretourneerd. Vul de bytearray met de waarde van het `BLOB` `MTOM` gegevenslid van het object.
-   * Maak een `System.IO.BinaryWriter` object door de constructor ervan aan te roepen en het `System.IO.FileStream` object door te geven.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de locatie van het PDF-bestand vertegenwoordigt.
+   * Maak een bytearray met de gegevensinhoud van het object `BLOB` dat door de methode `removeUsageRights` is geretourneerd. Vul de bytearray met de waarde van het `BLOB`-gegevenslid van het object `MTOM`.
+   * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
 
 **Zie ook**
 
@@ -356,15 +356,15 @@ Verwijder gebruiksrechten uit een PDF-document waarvoor rechten zijn ingeschakel
 
 [AEM Forms aanroepen met SwaRef](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-swaref)
 
-## Referentiegegevens ophalen {#retrieving-credential-information}
+## Referentiegegevens {#retrieving-credential-information} ophalen
 
 U kunt informatie ophalen over de referentie die is gebruikt om gebruiksrechten toe te passen op een PDF-document waarvoor rechten zijn ingeschakeld. Door informatie over een referentie op te halen, kunt u informatie zoals de datum opvragen waarna het certificaat niet meer geldig is.
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Acrobat Reader DC-extensieservice.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Acrobat Reader DC-extensies.
 
-### Overzicht van de stappen {#summary_of_steps-2}
+### Overzicht van stappen {#summary_of_steps-2}
 
 Voer de volgende stappen uit om informatie op te halen over de referentie die is gebruikt om gebruiksrechten toe te passen op een PDF-document:
 
@@ -379,7 +379,7 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Acrobat Reader DC-extensies maken voor clientobjecten**
 
-Voordat u een Acrobat Reader DC-extensieservicebewerking programmatisch kunt uitvoeren, moet u een client-object voor de Acrobat Reader DC-extensieservice maken. Als u de Java API gebruikt, maakt u een `ReaderExtensionsServiceClient` object. Maak een `ReaderExtensionsServiceService` object als u de API voor webservices voor Acrobat Reader DC-extensies gebruikt.
+Voordat u een Acrobat Reader DC-extensieservicebewerking programmatisch kunt uitvoeren, moet u een client-object voor de Acrobat Reader DC-extensieservice maken. Als u de Java API gebruikt, maakt u een `ReaderExtensionsServiceClient`-object. Als u de API voor webservices voor Acrobat Reader DC-extensies gebruikt, maakt u een `ReaderExtensionsServiceService`-object.
 
 **Een PDF-document met ingeschakelde rechten ophalen**
 
@@ -417,18 +417,18 @@ Retrireer referentie-informatie met de Acrobat Reader DC Extension API (Java):
 
 1. Maak een Acrobat Reader DC Extension Client-object.
 
-   Maak een `ReaderExtensionsServiceClient` object door de constructor ervan te gebruiken en een `ServiceClientFactory` object door te geven dat verbindingseigenschappen bevat.
+   Maak een `ReaderExtensionsServiceClient`-object door de constructor ervan te gebruiken en een `ServiceClientFactory`-object door te geven dat verbindingseigenschappen bevat.
 
 1. Een PDF-document ophalen.
 
-   * Maak een `java.io.FileInputStream` object dat staat voor het PDF-document waarvoor rechten zijn ingeschakeld met behulp van de constructor en geef een tekenreekswaarde door die de locatie van het PDF-document waarvoor rechten zijn ingeschakeld aangeeft.
-   * Maak een `com.adobe.idp.Document` object door de constructor ervan te gebruiken en het `java.io.FileInputStream` object door te geven.
+   * Maak een `java.io.FileInputStream`-object dat het PDF-document waarvoor rechten zijn ingeschakeld, vertegenwoordigt door de constructor ervan te gebruiken en een tekenreekswaarde door te geven die de locatie van het PDF-document waarvoor rechten zijn ingeschakeld, aangeeft.
+   * Maak een `com.adobe.idp.Document`-object door de constructor ervan te gebruiken en het object `java.io.FileInputStream` door te geven.
 
 1. Gebruiksrechten verwijderen uit het PDF-document.
 
-   * Haal informatie op over de referentie die wordt gebruikt om gebruiksrechten toe te passen op het PDF-document door de methode van het `ReaderExtensionsServiceClient` object aan te roepen en het `getDocumentUsageRights` `com.adobe.idp.Document` object met het PDF-document waarvoor rechten zijn ingeschakeld door te geven. Deze methode retourneert een `GetUsageRightsResult` object dat referentie-informatie bevat.
-   * Haal de datum op waarna de referentie niet meer geldig is door de methode van het `GetUsageRightsResult` `getNotAfter` object aan te roepen. Deze methode retourneert een `java.util.Date` object dat de datum vertegenwoordigt waarna de referentie niet meer geldig is.
-   * Haal het bericht op dat in Adobe Reader wordt weergegeven wanneer het PDF-document waarvoor rechten zijn ingeschakeld, wordt geopend door de `GetUsageRightsResult` `getMessage` methode van het object aan te roepen. Deze methode retourneert een tekenreekswaarde die het bericht vertegenwoordigt.
+   * Haal informatie op over de referentie die wordt gebruikt om gebruiksrechten toe te passen op het PDF-document door de methode `ReaderExtensionsServiceClient` van het object `getDocumentUsageRights` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het PDF-document met toegangsrechten bevat. Deze methode retourneert een `GetUsageRightsResult`-object dat referentie-informatie bevat.
+   * Haal de datum op waarna de referentie niet meer geldig is door de methode `GetUsageRightsResult` van het object `getNotAfter` aan te roepen. Deze methode retourneert een `java.util.Date`-object dat de datum vertegenwoordigt waarna de referentie niet langer geldig is.
+   * Haal het bericht op dat in Adobe Reader wordt weergegeven wanneer het PDF-document waarvoor rechten zijn ingeschakeld, wordt geopend door de methode `GetUsageRightsResult` van het object `getMessage` aan te roepen. Deze methode retourneert een tekenreekswaarde die het bericht vertegenwoordigt.
 
 **Zie ook**
 
@@ -440,7 +440,7 @@ Retrireer referentie-informatie met de Acrobat Reader DC Extension API (Java):
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-### Crediteringsgegevens ophalen met de webservice-API {#retrieve-credential-information-using-the-web-service-api}
+### Crediteringsgegevens ophalen met de API {#retrieve-credential-information-using-the-web-service-api} van de webservice
 
 Retrificatiegegevens ophalen met de Acrobat Reader DC Extension API (webservice):
 
@@ -450,35 +450,35 @@ Retrificatiegegevens ophalen met de Acrobat Reader DC Extension API (webservice)
 
    >[!NOTE]
    >
-   >Vervangen `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
+   >Vervang `localhost` door het IP-adres van de server die als host fungeert voor AEM Forms.
 
 1. Maak een Acrobat Reader DC Extension Client-object.
 
-   * Maak een `ReaderExtensionsServiceClient` object met de standaardconstructor.
-   * Maak een `ReaderExtensionsServiceClient.Endpoint.Address` object met de `System.ServiceModel.EndpointAddress` constructor. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`. Zorg ervoor dat u opgeeft `?blob=mtom`.)
-   * Maak een `System.ServiceModel.BasicHttpBinding` object door de waarde van het `ReaderExtensionsServiceClient.Endpoint.Binding` veld op te halen. Kiezen naar de geretourneerde waarde `BasicHttpBinding`.
-   * Stel het `System.ServiceModel.BasicHttpBinding` veld van het `MessageEncoding` object in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
+   * Maak een `ReaderExtensionsServiceClient`-object met de standaardconstructor.
+   * Maak een `ReaderExtensionsServiceClient.Endpoint.Address`-object met de constructor `System.ServiceModel.EndpointAddress`. Geef een tekenreekswaarde die de WSDL opgeeft door aan de AEM Forms-service (bijvoorbeeld `http://localhost:8080/soap/services/ReaderExtensionsService?blob=mtom`). Zorg ervoor dat u `?blob=mtom` opgeeft.)
+   * Maak een `System.ServiceModel.BasicHttpBinding`-object door de waarde van het veld `ReaderExtensionsServiceClient.Endpoint.Binding` op te halen. Cast de terugkeerwaarde aan `BasicHttpBinding`.
+   * Stel het veld `System.ServiceModel.BasicHttpBinding` van het object `MessageEncoding` in op `WSMessageEncoding.Mtom`. Deze waarde zorgt ervoor dat MTOM wordt gebruikt.
    * Laat basisauthentificatie van HTTP door de volgende taken uit te voeren toe:
 
-      * Wijs de gebruikersnaam van het AEM aan het veld toe `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName`.
-      * Wijs de bijbehorende wachtwoordwaarde aan het veld toe `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password`.
-      * Wijs de constante waarde toe `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType`.
-      * Wijs de constante waarde toe `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode`.
+      * Wijs de gebruikersnaam voor het AEM aan het veld `ReaderExtensionsServiceClient.ClientCredentials.UserName.UserName` toe.
+      * Wijs de overeenkomstige wachtwoordwaarde aan het gebied `ReaderExtensionsServiceClient.ClientCredentials.UserName.Password` toe.
+      * Wijs de constante waarde `HttpClientCredentialType.Basic` aan het veld `BasicHttpBindingSecurity.Transport.ClientCredentialType` toe.
+      * Wijs de constante waarde `BasicHttpSecurityMode.TransportCredentialOnly` aan het veld `BasicHttpBindingSecurity.Security.Mode` toe.
 
 1. Een PDF-document ophalen.
 
-   * Maak een `BLOB` object met de constructor ervan. Met dit `BLOB` object wordt een PDF-document met toegangsrechten opgeslagen.
-   * Maak een `System.IO.FileStream` object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document waarvoor rechten zijn ingeschakeld en de modus waarin het bestand moet worden geopend.
-   * Maak een bytearray waarin de inhoud van het `System.IO.FileStream` object wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de `System.IO.FileStream` eigenschap van het `Length` object op te halen.
-   * Vul de bytearray met streamgegevens door de methode van het `System.IO.FileStream` `Read` object aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
-   * Vul het `BLOB` object door de `MTOM` eigenschap ervan toe te wijzen met de inhoud van de bytearray.
+   * Maak een `BLOB`-object met de constructor ervan. Met het object `BLOB` wordt een PDF-document met toegangsrechten opgeslagen.
+   * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie vertegenwoordigt van het PDF-document waarvoor rechten zijn ingeschakeld en de modus waarin het bestand moet worden geopend.
+   * Maak een bytearray waarin de inhoud van het object `System.IO.FileStream` wordt opgeslagen. U kunt de grootte van de bytearray bepalen door de eigenschap `System.IO.FileStream` van het object `Length` op te halen.
+   * Vul de bytearray met streamgegevens door de methode `Read` van het object `System.IO.FileStream` aan te roepen en de bytearray, de startpositie en de lengte van de stream door te geven om te lezen.
+   * Vul het object `BLOB` door de eigenschap `MTOM` ervan toe te wijzen met de inhoud van de bytearray.
 
 1. Gebruiksrechten verwijderen uit het PDF-document.
 
-   * Haal informatie op over de referentie die wordt gebruikt om gebruiksrechten toe te passen op het PDF-document door de methode van het `ReaderExtensionsServiceClient` object aan te roepen en het `getDocumentUsageRights` `com.adobe.idp.Document` object met het PDF-document waarvoor rechten zijn ingeschakeld door te geven. Deze methode retourneert een `GetUsageRightsResult` object dat referentie-informatie bevat.
-   * Haal de datum op waarna de referentie niet meer geldig is door de waarde van het `GetUsageRightsResult` `notAfter` gegevenslid van het object op te halen. Het gegevenstype van dit gegevenslid is `System.DateTime`.
-   * Haal het bericht op dat wordt weergegeven wanneer het PDF-document waarvoor rechten zijn ingeschakeld in Adobe Reader wordt geopend door de waarde van het `GetUsageRightsResult` gegevenslid van het `message` object op te halen. Het gegevenstype van dit gegevenslid is een tekenreeks.
-   * Haal het aantal keren op dat de referentie wordt gebruikt door de waarde van het `GetUsageRightsResult` `useCount` gegevenslid van het object op te halen. Het gegevenstype van dit gegevenslid is een geheel getal.
+   * Haal informatie op over de referentie die wordt gebruikt om gebruiksrechten toe te passen op het PDF-document door de methode `ReaderExtensionsServiceClient` van het object `getDocumentUsageRights` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het PDF-document met toegangsrechten bevat. Deze methode retourneert een `GetUsageRightsResult`-object dat referentie-informatie bevat.
+   * Haal de datum op waarna de referentie niet meer geldig is door de waarde op te halen van het `GetUsageRightsResult`-gegevenslid van het object. `notAfter` Het gegevenstype van dit gegevenslid is `System.DateTime`.
+   * Haal het bericht op dat wordt weergegeven wanneer het PDF-document waarvoor rechten zijn ingeschakeld in Adobe Reader wordt geopend door de waarde van het `GetUsageRightsResult`-gegevenslid van het object op te halen. `message` Het gegevenstype van dit gegevenslid is een tekenreeks.
+   * Haal het aantal keren op dat de referentie wordt gebruikt door de waarde op te halen van het `GetUsageRightsResult`-gegevenslid van het object. `useCount` Het gegevenstype van dit gegevenslid is een geheel getal.
 
 **Zie ook**
 
