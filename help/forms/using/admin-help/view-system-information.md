@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Systeeminformatie weergeven {#view-system-information}
+# Systeeminformatie {#view-system-information} weergeven
 
 Het lusje van het Systeem toont middel controlerende grafieken en informatie over de server die AEM vormen in werking stelt. Om tot deze informatie, in beleidsconsole toegang te hebben, klik de Monitor van de Gezondheid in de hoger-juiste hoek van de pagina. Als u AEM formulieren uitvoert in een geclusterde omgeving, wordt de informatie weergegeven voor het knooppunt dat is geselecteerd in de lijst Server.
 
@@ -38,66 +38,66 @@ U kunt de aanwijzer over de tijdlijn slepen om waarden voor een bepaald tijdpunt
 
 In het linkerdeelvenster van het tabblad Systeem wordt de volgende informatie over de server of het knooppunt weergegeven:
 
-**Virtuele machine:** JVM-versie (Java Virtual Machine) op de server.
+**Virtuele machine:JVM-versie (** Java Virtual Machine) op de server.
 
-**Leverancier van virtuele machines:** Fabrikant van de JVM.
+**leverancier van virtuele machines:** fabrikant van de JVM.
 
 **Versie virtuele machine:** JVM-versienummer
 
-**Naam machine:** Hostnaam van de server waarop AEM formulieren zijn geïnstalleerd.
+**Naam machine:** hostnaam van de server waarop AEM formulieren zijn geïnstalleerd.
 
-**Omhoog tijd:** De tijd, in uren en minuten, dat de server is uitgevoerd.
+**Omhoog tijd:** de tijd, in uren en minuten, dat de server is uitgevoerd.
 
-**Just-In-Time Compiler:** De naam van de compiler die wordt gebruikt.
+**Just-In-Time Compiler:** de naam van de compiler die wordt gebruikt.
 
-**Tijd compileren:** De hoeveelheid tijd die in compilatie wordt doorgebracht.
+**Tijd compileren:** de hoeveelheid tijd die in compileert wordt doorgebracht.
 
-**Aantal actieve draden:** Het totale aantal draden dat momenteel in het systeem van AEM formulieren aanwezig is.
+**Aantal actieve draden:** het totale aantal draden dat momenteel aanwezig is in het AEM.
 
-**Aantal draden Piek:** Het grootste aantal live threads dat ooit op het systeem is opgenomen.
+**Aantal Draden Piek:** Grootste aantal levende draden ooit geregistreerd op het systeem.
 
-**Aantal geladen klassen:** Aantal klassen dat in JVM wordt geladen.
+**Aantal geladen klassen:** aantal klassen dat in de JVM is geladen.
 
-**Aantal verwijderde klassen:** Aantal klassen dat uit JVM wordt verwijderd.
+**Aantal verwijderde klassen:** Aantal klassen dat uit JVM is verwijderd.
 
-**Minimale heap:** De minimale hoeveelheid heap die is gebruikt.
+**Minimale heap:** de minimale hoeveelheid heap die is gebruikt.
 
-**Maximale heap:** De maximale hoeveelheid heap die is gebruikt.
+**Maximale heap:** de maximale hoeveelheid heap die is gebruikt.
 
-**Naam besturingssysteem:** De naam van het besturingssysteem dat op de AEM formulierserver wordt uitgevoerd.
+**Naam besturingssysteem:** de naam van het besturingssysteem dat op de AEM formulierserver wordt uitgevoerd.
 
-**Versie besturingssysteem:** Versienummer van het besturingssysteem dat op de AEM formulierserver wordt uitgevoerd.
+**Versie besturingssysteem:** versienummer van het besturingssysteem dat op de AEM formulierserver wordt uitgevoerd.
 
-**Arch besturingssysteem:** De architectuur van het besturingssysteem waarop de JVM wordt uitgevoerd.
+**Arch van besturingssysteem:** de architectuur van het besturingssysteem waarop de JVM wordt uitgevoerd.
 
-**Aantal processors:** Het aantal processors op het systeem.
+**Aantal processors:** het aantal processors op het systeem.
 
-**Argumenten voor virtuele machines:** Het argument dat door de JVM wordt gebruikt.
+**Argumenten van virtuele machines:** het argument dat door JVM wordt gebruikt.
 
-**Klassepad:** Het klassepad dat door de JVM wordt gebruikt.
+**Klassepad:** het klassepad dat door de JVM wordt gebruikt.
 
-**Bibliotheekpad:** Het bibliotheekpad dat door de JVM wordt gebruikt.
+**Bibliotheekpad:** het bibliotheekpad dat door de JVM wordt gebruikt.
 
-**Pad van opstartklasse:** Het pad naar de opstartklasse dat door de JVM wordt gebruikt.
+**Boot Class Path:** het laarsklassenpad dat door de JVM wordt gebruikt.
 
-**Type toepassingsserver:** Type toepassingsserver waarmee AEM formulieren worden uitgevoerd.
+**Type toepassingsserver:** type toepassingsserver dat wordt gebruikt om AEM formulieren uit te voeren.
 
-**Versie toepassingsserver:** Versienummer van de toepassingsserver waarmee AEM formulieren worden uitgevoerd.
+**Versie toepassingsserver:** versienummer van de toepassingsserver die wordt gebruikt om AEM formulieren uit te voeren.
 
-**Leverancier toepassingsserver:** Fabrikant van de toepassingsserver die wordt gebruikt om AEM formulieren uit te voeren.
+**Leverancier van toepassingsserver:** fabrikant van toepassingsserver die wordt gebruikt om AEM formulieren uit te voeren.
 
-**Datum installatie:** Datum (in jjjj-mm-dd formaat) waarop AEM formulieren zijn geïnstalleerd.
+**Datum van installatie:** datum (in jjjj-mm-dd formaat) waarop AEM formulieren zijn geïnstalleerd.
 
-**Versie AEM formulieren:** Versie van AEM formulieren die is geïnstalleerd.
+**AEM formulieren Versie:** Versie van AEM geïnstalleerde formulieren.
 
-**Patchversie:** AEM formulier patchnummer.
+**Patchversie:** AEM patchnummer formulieren.
 
-**Databasenaam:** Type database dat door AEM formulieren wordt gebruikt.
+**Databasenaam:** type database dat door AEM wordt gebruikt.
 
 **Databaseversie:** Versienummer van de database die door AEM formulieren wordt gebruikt.
 
-**Naam databasestation:** De naam van het stuurprogramma dat door de JVM wordt gebruikt om verbinding te maken met de database.
+**Naam databasestation:** de naam van het stuurprogramma dat door de JVM wordt gebruikt om verbinding te maken met de database.
 
-**Versie databasestuurprogramma:** De versie van het stuurprogramma dat door de JVM wordt gebruikt om verbinding te maken met de database.
+**Versie databasestuurprogramma:** de versie van het stuurprogramma dat door de JVM wordt gebruikt om verbinding te maken met de database.
 
-Met de knop **Opslaan** kunt u deze systeemgegevens opslaan in een eigenschappenbestand.
+Met de knop **Opslaan** kunt u deze systeemgegevens opslaan in een eigenschapbestand.
