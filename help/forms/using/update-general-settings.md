@@ -17,17 +17,17 @@ ht-degree: 0%
 ---
 
 
-# Algemene instellingen bijwerken {#updating-general-settings}
+# Algemene instellingen {#updating-general-settings} bijwerken
 
 Met de algemene instellingen van de AEM Forms-app kunt u instellingen opgeven, zoals het ophalen van bijlagen, de offline modus, het landingsscherm, de standaardcategorie en de automatische opslagfrequentie.
 
-## De algemene instellingen in uw app bijwerken {#working-with-the-form}
+## De algemene instellingen in uw app {#working-with-the-form} bijwerken
 
 Wanneer u uw app synchroniseert met de AEM Forms-server, worden alle formulieren en gedefinieerde taken gedownload naar uw mobiele apparaat.
 
 De uit-van-de-doos AEM Forms app-oplossing downloadt niet de gehechtheid verbonden aan elk vorm wanneer uw app wordt gesynchroniseerd.
 
-Wijzig op het tabblad Algemeen de instellingen voor downloadbijlagen, offline modus, landingsscherm, automatisch opslaan en synchroniseren. U kunt het [startscherm](/help/forms/using/home-screen.md) van uw app wijzigen.
+Wijzig op het tabblad Algemeen de instellingen voor downloadbijlagen, offline modus, landingsscherm, automatisch opslaan en synchroniseren. U kunt het [Basisscherm](/help/forms/using/home-screen.md) van uw app wijzigen.
 
 **Ga naar het tabblad Algemeen op het scherm Instellingen**
 
@@ -58,9 +58,9 @@ U kunt de volgende wijzigingen aanbrengen in de instellingen van uw app.
 
 * **Standaardcategorie**: Hiermee selecteert u de categorie formulieren die u wilt weergeven op het beginscherm. Wanneer u Alles selecteert, kunt u alle formulieren in het beginscherm zien. Categorieën worden ingevuld op basis van de formulieren die in de app zijn geladen. Forms is beschikbaar in de app op basis van de formulierinstellingen die zijn opgegeven op de AEM Forms-server.
 
-* **Frequentie** automatisch opslaan: De frequentie instellen waarmee uw [mobiele app formuliergegevens](/help/forms/using/autosave-data-app.md) lokaal opslaat.
+* **Frequentie** automatisch opslaan: Om de frequentie in te stellen waarmee uw  [mobiele app ](/help/forms/using/autosave-data-app.md) gegevens lokaal opslaat.
 
-* **Synchronisatiefrequentie**: De frequentie instellen waarmee uw [mobiele app wordt gesynchroniseerd](/help/forms/using/sync-app.md) met de AEM Forms-server in de online modus.
+* **Synchronisatiefrequentie**: De frequentie instellen waarmee uw  [mobiele app wordt ](/help/forms/using/sync-app.md) gesynchroniseerd met de AEM Forms-server in de online modus.
 
 **Lokale gegevens** wissen: Wis de database, inclusief instellingen en lokale gegevens voor alle gebruikers en bestandsopslag vanaf het apparaat.
 
