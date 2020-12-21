@@ -20,29 +20,29 @@ ht-degree: 0%
 
 # Koppeling gebruiken {#using-liking}
 
-De `Liking`component is een nuttig hulpmiddel dat gebruikers toestaat om een mening over een bepaald stuk van inhoud, zoals een commentaar binnen een forum te uiten. Bij de `Liking`component selecteren de leden het hartpictogram om een positief advies aan te geven.
+De `Liking`component is een nuttig hulpmiddel dat gebruikers toestaat om een mening over een bepaald stuk van inhoud, zoals een commentaar binnen een forum te uiten. Met de `Liking`component, selecteren de leden het hartpictogram om op een positieve mening te wijzen.
 
 ## Koppeling toevoegen aan een pagina {#adding-liking-to-a-page}
 
-Als u een `Liking` component aan een pagina wilt toevoegen in de ontwerpmodus, gebruikt u de componentbrowser om te zoeken naar
+Als u een `Liking`-component in de ontwerpmodus aan een pagina wilt toevoegen, gebruikt u de componentbrowser om te zoeken naar
 
 * `Communities / Liking`
 
 en sleep het naar de juiste positie op een pagina, zoals een positie ten opzichte van de functie die gebruikers leuk kunnen vinden.
 
-Ga voor de benodigde informatie naar [Community Components Basics](basics.md).
+Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de [vereiste client-side bibliotheken](essentials-liking.md#essentials-for-client-side) worden opgenomen, wordt de `Liking` component op deze manier weergegeven.
+Als de [vereiste client-side bibliotheken](essentials-liking.md#essentials-for-client-side) worden opgenomen, wordt de `Liking`-component op deze manier weergegeven.
 
 ![chlimage_1-93](assets/chlimage_1-93.png)
 
-## Liking configureren {#configuring-liking}
+## Koppeling configureren {#configuring-liking}
 
-Selecteer de geplaatste `Liking` component die u wilt openen en selecteer het `Configure` pictogram waarmee het dialoogvenster Bewerken wordt geopend.
+Selecteer de geplaatste `Liking` component en selecteer `Configure` pictogram dat het Edit dialoog opent.
 
 ![chlimage_1-94](assets/chlimage_1-94.png)
 
-Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
+Geef onder het tabblad **[!UICONTROL Texts & Labels]** de eigenschappen op die worden gebruikt voor het opnemen van &#39;like&#39;.
 
 ![chlimage_1-95](assets/chlimage_1-95.png)
 
@@ -58,16 +58,16 @@ Geef onder het **[!UICONTROL Texts & Labels]** tabblad de eigenschappen op die w
 (
 *Vereist*) De interne, identificeerbare eigenschapsnaam voor dit geval van een stemcomponent.
 
-## Ervaring met sitebezoekers {#site-visitor-experience}
+## Ervaring {#site-visitor-experience} voor bezoekers van site
 
 ### Leden {#members}
 
 De leden kunnen te allen tijde van mening veranderen.
 
-### Anoniem {#anonymous}
+### Anonieme {#anonymous}
 
 Anonieme koppelingen worden niet ondersteund. Site-bezoekers moeten zich registreren (lid worden) en zich aanmelden om deel te nemen aan een abonnement.
 
-## Additional Information {#additional-information}
+## Aanvullende informatie {#additional-information}
 
 Meer informatie vindt u op de pagina [Liking Essentials](essentials-liking.md) voor ontwikkelaars.
