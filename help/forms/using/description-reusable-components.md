@@ -18,9 +18,9 @@ ht-degree: 6%
 ---
 
 
-# Beschrijving van herbruikbare onderdelen {#description-of-reusable-components}
+# Beschrijving van herbruikbare componenten {#description-of-reusable-components}
 
-De AEM Forms-werkruimte bestaat uit [herbruikbare](/help/forms/using/integrating-html-ws-components-web.md) onderdelen die zijn geordend in een specifieke [mapstructuur](/help/forms/using/folder-structure.md) in CRX™. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
+De werkruimte van AEM Forms bestaat uit [herbruikbare](/help/forms/using/integrating-html-ws-components-web.md) componenten die in een specifieke [omslagstructuur](/help/forms/using/folder-structure.md) in CRX™ worden georganiseerd. Elke component heeft model, mening, en malplaatjedossier op plaats die in de omslagstructuur wordt gespecificeerd, JavaScript™ gebiedsdelen op andere componentendossiers, gebeurtenissen die door de component en voorwerpen worden geluisterd JavaScript die deze gebeurtenissen in de werkruimte van AEM Forms teweegbrengen. De volledige lijst van herbruikbare componenten met samenstellende bestandsnamen en afhankelijkheden wordt hier gegeven.
 
 ## TaskList {#tasklist}
 
@@ -186,7 +186,7 @@ De AEM Forms-werkruimte bestaat uit [herbruikbare](/help/forms/using/integrating
  </tbody> 
 </table>
 
-## TeamQueues {#teamqueues}
+## Teamwachtrijen {#teamqueues}
 
 <table> 
  <tbody> 
@@ -925,7 +925,7 @@ De AEM Forms-werkruimte bestaat uit [herbruikbare](/help/forms/using/integrating
    <td> 
     <ul> 
      <li>userImageUrlFetched - userinfo model</li> 
-     <li>sessionRenewed - gebruikersinformatiemodel <br /> </li> 
+     <li>sessionRenewed - userinfo model <br /> </li> 
      <li>sessionExpired - gebruikersinformatiemodel </li> 
     </ul> </td> 
   </tr> 
