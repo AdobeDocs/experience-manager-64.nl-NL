@@ -27,16 +27,16 @@ In dit artikel worden de stappen beschreven die moeten worden uitgevoerd om info
 
 ## Wat kan worden toegevoegd {#what-can-be-added}
 
-U kunt de informatie toevoegen die beschikbaar is in `task.json` verzending door de server. De informatie kan als gewone tekst worden toegevoegd of u kunt stijlen gebruiken om de informatie te formatteren.
+U kunt de informatie toevoegen die beschikbaar is in `task.json` die door de server wordt verzonden. De informatie kan als gewone tekst worden toegevoegd of u kunt stijlen gebruiken om de informatie te formatteren.
 
 Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel voor meer informatie over de beschrijving van het JSON-object.
 
 ## Informatie weergeven over een taak {#displaying-information-on-a-task}
 
-1. Voer de [algemene stappen uit voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de AEM Forms-werkruimte.
-1. Om extra informatie voor een taak te tonen, moeten de overeenkomstige zeer belangrijk-waardeparen binnen het taakblok van worden toegevoegd `translation.json`.
+1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Om extra informatie voor een taak te tonen, moeten de overeenkomstige zeer belangrijk-waardeparen binnen het taakblok van `translation.json` worden toegevoegd.
 
-   Bijvoorbeeld wijzigen `/apps/ws/locales/en-US/translation.json` voor Engels:
+   Wijzigen `/apps/ws/locales/en-US/translation.json` bijvoorbeeld voor Engels:
 
    ```
    "task" : {
@@ -123,7 +123,7 @@ Zie [dit](/help/forms/using/html-workspace-json-object-description.md) artikel v
 
 ## CSS definiëren voor de nieuwe eigenschap {#defining-css-for-the-new-property}
 
-1. U kunt stijl toepassen op de informatie (eigenschap) die aan een taak is toegevoegd. Hiervoor moet u stijlinformatie toevoegen voor de nieuwe eigenschap die wordt toegevoegd aan `/apps/ws/css/newStyle.css`.
+1. U kunt stijl toepassen op de informatie (eigenschap) die aan een taak is toegevoegd. Hiervoor moet u stijlinformatie toevoegen voor de nieuwe eigenschap die aan `/apps/ws/css/newStyle.css` is toegevoegd.
 
    Voeg bijvoorbeeld toe:
 
@@ -142,7 +142,7 @@ Tot slot moet u een ingang in het dev pakket voor elk bezit omvatten dat u aan d
 1. Kopiëren `task.html`:
 
    * Van: `/libs/ws/js/runtime/templates/`
-   * to: `/apps/ws/js/runtime/templates/`
+   * tot: `/apps/ws/js/runtime/templates/`
 
 1. Voeg de nieuwe informatie toe aan `/apps/ws/js/runtime/templates/task.html`.
 
