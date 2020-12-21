@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Java API Quick Start (SOAP) voor documentbeveiliging {#document-security-service-javaapi-quick-start-soap}
+# Java API Quick Start (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
 Java API Quick Start (SOAP) is beschikbaar voor de service Rights Management:
 
@@ -46,15 +46,15 @@ Java API Quick Start (SOAP) is beschikbaar voor de service Rights Management:
 
 [Snel starten (SOAP-modus): Een beleid verwijderen uit een Word-document met de Java API](document-security-service-java-api.md#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>Quick Start in Programming with AEM Forms is gebaseerd op het besturingssysteem van de Forms-server. Als u echter een ander besturingssysteem gebruikt, zoals UNIX, vervangt u Windows-specifieke paden door paden die door het desbetreffende besturingssysteem worden ondersteund. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
-## Snel starten (SOAP-modus): Beleid maken met de Java API {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
+## Snel starten (SOAP-modus): Een beleid maken met de Java API {#quick-start-soap-mode-creating-a-policy-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een nieuw beleid gemaakt met de naam *Kopie* toestaan. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks* van het Beleid. Deze beleidsset bestaat standaard. (Zie Beleid [maken](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
+In het volgende Java-codevoorbeeld wordt een nieuw beleid gemaakt met de naam *Kopie toestaan*. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks van het Beleid*. Deze beleidsset bestaat standaard. (Zie [Beleid maken](/help/forms/developing/protecting-documents-policies.md#creating-policies).)
 
 ```as3
  /* 
@@ -183,7 +183,7 @@ In het volgende Java-codevoorbeeld wordt een nieuw beleid gemaakt met de naam *K
 
 ## Snel starten (SOAP-modus): Een beleid wijzigen met de Java API {#quick-start-soap-mode-modifying-a-policy-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopie ** toestaan gewijzigd door de offline leaseperiode in te stellen op 40 dagen. (Zie Beleid [wijzigen](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
+In het volgende Java-codevoorbeeld wordt een beleid met de naam *Copy* toestaan gewijzigd door de offline leaseperiode in te stellen op 40 dagen. (Zie [Beleid wijzigen](/help/forms/developing/protecting-documents-policies.md#modifying-policies).)
 
 ```as3
  /* 
@@ -284,7 +284,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopie ** toestaa
 
 ## Snel starten (SOAP-modus): Een beleid verwijderen met de Java API {#quick-start-soap-mode-deleting-a-policy-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een beleid met de naam *Kopie* toestaan verwijderd. (Zie Beleid [verwijderen](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
+In het volgende Java-codevoorbeeld wordt een beleid met de naam *Kopie toestaan* verwijderd. (Zie [Beleidsregels verwijderen](/help/forms/developing/protecting-documents-policies.md#deleting-policies).)
 
 ```as3
  /* 
@@ -376,7 +376,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam *Kopie* toestaan
 
 ## Snel starten (SOAP-modus): Een beleid toepassen op een PDF-document met de Java API {#quick-start-soap-mode-applying-a-policy-to-a-pdf-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toestaan toegepast op een PDF-document met de naam *Loan.pdf*. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks* van het Beleid. Het document dat met een beleid is beveiligd, wordt opgeslagen als een PDF-bestand met de naam *PolicyProtectedLoanDoc.pdf. *(Zie Beleid [toepassen op PDF-documenten](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+In het volgende Java-codevoorbeeld wordt een beleid met de naam *Copy* toestaan toegepast op een PDF-document met de naam *Loan.pdf*. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks van het Beleid*. Het document dat met een beleid is beveiligd, wordt opgeslagen als een PDF-bestand met de naam *PolicyProtectedLoanDoc.pdf. *(Zie [Beleid toepassen op PDF-documenten](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```as3
  /* 
@@ -482,7 +482,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toe
 
 ## Snel starten (SOAP-modus): Een beleid verwijderen uit een PDF-document met de Java API {#quick-start-soap-mode-removing-a-policy-from-a-pdf-document-using-the-java-api}
 
-In het volgende codevoorbeeld wordt een beleid verwijderd uit een PDF-document met de naam *PolicyProtectedLoanDoc.pdf*. Het onbeveiligde PDF-document wordt opgeslagen als *unProtectedLoan.pdf*. (Zie Beleid [verwijderen uit PDF-documenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
+In het volgende codevoorbeeld wordt een beleid verwijderd uit een PDF-document met de naam *PolicyProtectedLoanDoc.pdf*. Het onbeveiligde PDF-document wordt opgeslagen als *unProtectedLoan.pdf*. (Zie [Beleid verwijderen uit PDF-documenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-pdf-documents).)
 
 ```as3
  /* 
@@ -589,7 +589,7 @@ In het volgende codevoorbeeld wordt een beleid verwijderd uit een PDF-document m
 
 ## Snel starten (SOAP-modus): Een document intrekken met de Java API {#quick-start-soap-mode-revoking-a-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd document met de naam *PolicyProtectedLoanDoc.pdf* ingetrokken. Een gereviseerd PDF-document bevindt zich op de volgende URL-locatie `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (Zie Toegang [tot documenten](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents)intrekken.)
+In het volgende Java-codevoorbeeld wordt een document met de naam *PolicyProtectedLoanDoc.pdf* ingetrokken. Een gereviseerd PDF-document bevindt zich op de volgende URL-locatie `https://[server]:[port]/RightsManagement/UpdatedLoan.pdf`. (Zie [Toegang tot documenten intrekken](/help/forms/developing/protecting-documents-policies.md#revoking-access-to-documents).)
 
 ```as3
  /* 
@@ -703,7 +703,7 @@ In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd document 
 
 ## Snel starten (SOAP-modus): Met beleid beveiligde PDF-documenten controleren met de Java API {#quick-start-soap-mode-inspecting-policy-protected-pdf-documents-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd PDF-document met de naam *PolicyProtectedLoanDoc.* pdf geïnspecteerd. (Zie Met [beleid beveiligde PDF-documenten](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents)controleren.)
+In het volgende Java-codevoorbeeld wordt een met een beleid beveiligd PDF-document met de naam *PolicyProtectedLoanDoc.pd* f geïnspecteerd. (Zie [Met beleid beveiligde PDF-documenten controleren](/help/forms/developing/protecting-documents-policies.md#inspecting-policy-protected-pdf-documents).)
 
 ```as3
  /* 
@@ -821,7 +821,7 @@ In het volgende Java-codevoorbeeld wordt een door een beleid beveiligd PDF-docum
 
 ## Snel starten (SOAP-modus): Toegang tot een ingetrokken document opnieuw instellen met de Java API {#quick-start-soap-mode-reinstating-access-to-a-revoked-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt de toegang tot een ingetrokken PDF-document met de naam *PolicyProtectedLoanDoc.pdf* hersteld. (Zie Toegang [tot ingetrokken documenten](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents)opnieuw instellen.)
+In het volgende Java-codevoorbeeld wordt de toegang tot een ingetrokken PDF-document met de naam *PolicyProtectedLoanDoc.pdf* hersteld. (Zie [Toegang tot ingetrokken documenten opnieuw instellen](/help/forms/developing/protecting-documents-policies.md#reinstating-access-to-revoked-documents).)
 
 ```as3
  /* 
@@ -927,7 +927,7 @@ In het volgende Java-codevoorbeeld wordt de toegang tot een ingetrokken PDF-docu
 
 ## Snel starten (SOAP-modus): Een PDF-watermerk maken met de Java API {#quick-start-soap-mode-creating-a-pdf-watermark-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een nieuw PDF-watermerk gemaakt met de naam &#39;Voorbeeld-PDF-watermerk&#39;. Dit watermerk bevat één element (zie Watermerken [maken](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
+In het volgende Java-codevoorbeeld wordt een nieuw PDF-watermerk gemaakt met de naam &#39;Voorbeeld-PDF-watermerk&#39;. Dit watermerk bevat één element (zie [Watermerken maken](/help/forms/developing/protecting-documents-policies.md#creating-watermarks)).
 
 ```as3
 /* 
@@ -1321,7 +1321,7 @@ public class ModifyWatermarks {
 
 ## Snel starten (SOAP-modus): Een watermerk wijzigen met de Java API {#quick-start-soap-mode-modifying-a-watermark-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een watermerk met de naam *Vertrouwelijk* gewijzigd door de waarde van het `opacity` kenmerk te wijzigen in 80.
+In het volgende Java-codevoorbeeld wordt een watermerk met de naam *Vertrouwelijk* gewijzigd door de waarde van het kenmerk `opacity` te wijzigen in 80.
 
 ```as3
  /* 
@@ -1530,9 +1530,9 @@ In het volgende Java-codevoorbeeld wordt gezocht naar de gebeurtenis create poli
  
 ```
 
-## Snel starten (SOAP): Een beleid toepassen op een Word-document met behulp van de Java API {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
+## Snel starten (SOAP): Een beleid toepassen op een Word-document met de Java API {#quick-start-soap-applying-a-policy-to-a-word-document-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toestaan toegepast op een Word-document met de naam *Loan.doc*. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks* van het Beleid. Het document dat met een beleid is beveiligd, wordt opgeslagen als een DOC-bestand met de naam *PolicyProtectedLoanDoc.doc. *(Zie Beleid [toepassen op PDF-documenten](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
+In het volgende Java-codevoorbeeld wordt een beleid met de naam *Copy* toestaan toegepast op een Word-document met de naam *Loan.doc*. De beleidsreeks waaraan het beleid wordt toegevoegd wordt genoemd *Globale Reeks van het Beleid*. Het document dat met een beleid is beveiligd, wordt opgeslagen als een DOC-bestand met de naam *PolicyProtectedLoanDoc.doc. *(Zie [Beleid toepassen op PDF-documenten](/help/forms/developing/protecting-documents-policies.md#applying-policies-to-pdf-documents).)
 
 ```as3
  /* 
@@ -1647,7 +1647,7 @@ In het volgende Java-codevoorbeeld wordt een beleid met de naam Kopiëren ** toe
 
 ## Snel starten (SOAP-modus): Een beleid verwijderen uit een Word-document met de Java API {#quick-start-soap-mode-removing-a-policy-from-a-word-document-using-the-java-api}
 
-Het volgende codevoorbeeld verwijdert een beleid uit een document van Word genoemd *PolicyProtectedLoanDoc.doc*. Het onbeveiligde Word-document wordt opgeslagen als *unProtectedLoan.doc*. (Zie Beleid [verwijderen uit Word-documenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
+Het volgende codevoorbeeld verwijdert een beleid uit een document van Word genoemd *PolicyProtectedLoanDoc.doc*. Het onbeveiligde Word-document wordt opgeslagen als *unProtectedLoan.doc*. (Zie [Beleid verwijderen uit Word-documenten](/help/forms/developing/protecting-documents-policies.md#removing-policies-from-word-documents).)
 
 ```as3
  /* 
@@ -2056,7 +2056,7 @@ public class DeleteAbstractPolicySoap {
 }
 ```
 
-## Snel starten (SOAP-modus): Protect a PDF in Statement Workflow for an Existing User, using the Java API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
+## Snel starten (SOAP-modus): Protect a PDF in statement Workflow for an Existing User, using the Java API {#quick-start-soap-mode-protect-a-pdf-in-statement-workflow-for-an-existing-user-using-the-java-api}
 
 In het volgende Java-codevoorbeeld ziet u de methode voor het beveiligen van een document in de instructieworkflow voor een bestaande gebruiker.
 
