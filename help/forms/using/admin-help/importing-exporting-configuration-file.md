@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Het configuratiebestand importeren en exporteren {#importing-and-exporting-the-configuration-file}
+# Het configuratiedossier {#importing-and-exporting-the-configuration-file} invoeren en uitvoeren
 
 Gebruik de pagina Handmatige configuratie om een kopie van de configuratie-instellingen in XML-indeling te downloaden. De instellingen in dit bestand bepalen alle servervoorkeuren. U kunt het bestand vervolgens bewerken en opnieuw naar de server uploaden. U kunt het bestand ook gebruiken om een ander exemplaar van een AEM formulierproduct te configureren.
 
