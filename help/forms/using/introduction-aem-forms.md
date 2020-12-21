@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Inleiding tot AEM Forms {#introduction-to-aem-forms}
 
-Zie [Nieuwe functies in AEM Forms](/help/forms/using/whats-new.md)voor informatie over de nieuwste functies en verbeteringen in AEM Forms.
+Zie [Nieuwe functies in AEM Forms](/help/forms/using/whats-new.md) voor informatie over de nieuwste functies en verbeteringen in AEM Forms.
 
 ## Informatie over AEM Forms {#about-aem-forms}
 
@@ -31,7 +31,7 @@ AEM Forms maakt gebruik van en breidt de mogelijkheden uit van uw bestaande inve
 
 In grote bedrijven worden formulieren vaak één keer gemaakt en opnieuw gebruikt door te kopiëren naar een contentbeheersysteem. Het kan een grote uitdaging zijn om een grote databank van formulieren up-to-date te houden en te ontdekken. AEM biedt een aanpasbaar Forms Portal dat ervoor zorgt dat klanten formulieren vinden en openen die ze nodig hebben, zowel via het web als via mobiele kanalen.
 
-AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Zie [Inleiding tot het beheren van formulieren](/help/forms/using/introduction-managing-forms.md)voor meer informatie.
+AEM Forms biedt hulpmiddelen voor formulierbeheer waarmee u niet alleen adaptieve formulieren kunt beheren, maar ook XFA-formulieren, PDF forms en gerelateerde elementen. Zie [Inleiding tot het beheren van formulieren](/help/forms/using/introduction-managing-forms.md) voor meer informatie.
 
 ![](do-not-localize/4th-draft.gif)
 
@@ -117,5 +117,5 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 * Invoegtoepassing voor documentbeveiliging voor AEM Forms, inclusief codering, gebruiksbeleid, bijhouden en controleren
 
 ![](do-not-localize/layout-02.png)
-**Afbeelding:** *Gestroomlijnde workflow voor persoonlijke communicatie*
+**Afbeelding:** *Gestroomlijnde, gepersonaliseerde communicatieworkflow*
 
