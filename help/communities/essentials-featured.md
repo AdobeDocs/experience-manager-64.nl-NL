@@ -24,7 +24,7 @@ Deze pagina bevat de essentiële informatie voor het werken met aanbevolen inhou
 
 In tegenstelling tot het vastzetten van een artikel boven aan een forum, kunt u met deze functie inhoud overal op de site van de community markeren.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -57,6 +57,6 @@ In tegenstelling tot het vastzetten van een artikel boven aan een forum, kunt u 
 
 * [Aanpassingen aan de clientzijde](client-customize.md)
 
-### Functie bestandsbibliotheek {#file-library-function}
+### Bestandsbibliotheekfunctie {#file-library-function}
 
-Een community-sitestructuur die de functie [](functions.md#featured-content-function)Aanbevolen inhoud bevat, bevat een geconfigureerde `featured content` component.
+Een community-sitestructuur die de functie [Aanbevolen inhoud](functions.md#featured-content-function) bevat, bevat een geconfigureerde `featured content`-component.
