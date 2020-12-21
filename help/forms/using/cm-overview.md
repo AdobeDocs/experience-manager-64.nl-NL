@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Overzicht van Correspondentenbeheer {#correspondence-management-overview}
+# Overzicht Correspondentenbeheer {#correspondence-management-overview}
 
 ## Inleiding {#introduction}
 
