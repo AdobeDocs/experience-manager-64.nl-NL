@@ -22,19 +22,19 @@ ht-degree: 0%
 
 Gebeurtenissen zoals runtime- of opstartfouten worden opgenomen in de logbestanden van de toepassingsserver. Als u problemen hebt met de implementatie op de toepassingsserver, kunt u de logbestanden gebruiken om het probleem op te sporen. U kunt de logboekdossiers openen gebruikend om het even welke tekstredacteur.
 
-(JBoss) De volgende logbestanden bevinden zich in de `*[appserver root]*/server/*[server]*/log` map:
+(JBoss) De volgende logbestanden bevinden zich in de map `*[appserver root]*/server/*[server]*/log`:
 
 * boot.log
 * server.log.*[jjjj-mm-dd]*
 * server.log
 
-(WebLogic) Domeinlogbestanden bevinden zich in de map *[appserverdomain]* en serverlogbestanden bevinden zich in de map *[appserverdomain]/servers/[toepassingsservernaam]/logs *:
+(WebLogic) Domeinlogbestanden bevinden zich in de map *[appserverdomain]* en serverlogbestanden bevinden zich in de map *[appserverdomain]/servers/[toepassingsservernaam]/logs *directory:
 
 * access.log
 * *[appserver name]*.log
 * *[appserver name]*.out.*[incrementeel nummer]*
 
-(WebSphere) De volgende logbestanden bevinden zich in de map *[appserver root]*/profiles/default/logs/*[appserver name]* :
+(WebSphere) De volgende logbestanden bevinden zich in de map *[appserver root]*/profiles/default/logs/*[toepassingsnaam]*:
 
 * SystemErr.log
 * SystemOut.log
