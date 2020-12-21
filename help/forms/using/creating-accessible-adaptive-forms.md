@@ -16,7 +16,7 @@ ht-degree: 1%
 ---
 
 
-# Toegankelijke adaptieve formulieren maken {#creating-accessible-adaptive-forms}
+# Toegankelijke aangepaste formulieren {#creating-accessible-adaptive-forms} maken
 
 ## Inleiding {#introduction}
 
@@ -39,22 +39,22 @@ Het label dat door schermlezers wordt waargenomen, hoeft niet noodzakelijkerwijs
 
 Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 
-1. Selecteer een component en tik op ![cmp](assets/cmppr.png).
+1. Selecteer een component en tik ![cmppr](assets/cmppr.png).
 1. Klik op **Toegankelijkheid** in het zijpaneel om de gewenste toegankelijkheidsoptie te kiezen.
 
 ### Toegankelijkheidsopties in formuliercomponenten {#accessibility-options-in-form-components}
 
 ![Toegankelijkheidsopties in formuliercomponenten](assets/accessibility-options.png)
 
-**Auteurs van aangepaste tekstformulieren** leveren de inhoud in het tekstveld Aangepaste tekst voor de toegankelijkheidsoptie. De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
+**Aangepaste** TextForm-auteurs geven de inhoud op in het tekstveld Aangepaste toegankelijkheidsoptie. De ondersteunende hulpmiddelen, zoals schermlezers, gebruiken deze aangepaste tekst. Het gebruiken van het plaatsen van de Titel is de beste optie in een meerderheid van de scenario&#39;s. U kunt bijvoorbeeld alleen aangepaste schermtekst maken als Titel of korte beschrijving niet mogelijk is.
 
-**Korte beschrijving** Voor de meeste componenten wordt de korte beschrijving weergegeven wanneer de gebruiker de aanwijzer op de component plaatst. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
+**Korte** beschrijvingVoor de meeste componenten wordt de korte beschrijving weergegeven wanneer de gebruiker de aanwijzer op de component plaatst. U kunt deze optie instellen in het veld Korte beschrijving onder de optie Help-inhoud.
 
-**Titel** Gebruik deze optie als u wilt dat AEM Forms het visuele label dat aan het formulierveld is gekoppeld, gebruikt als schermlezertekst.
+**** TitleGebruik deze optie als u wilt dat AEM Forms het visuele label dat aan het formulierveld is gekoppeld, als schermlezertekst gebruikt.
 
-**Naam** U kunt een waarde opgeven in het veld Naam van het tabblad Binding. De naam mag geen spaties bevatten.
+**** NameU kunt een waarde opgeven in het veld Naam van het tabblad Binding. De naam mag geen spaties bevatten.
 
-**Als u Geen** selecteert, krijgt het formulierobject geen naam in het gepubliceerde formulier. Geen is een aanbevolen instelling voor formulierbesturingselementen.
+**Als u** Geen selecteert, heeft het formulierobject geen naam in het gepubliceerde formulier. Geen is een aanbevolen instelling voor formulierbesturingselementen.
 
 >[!NOTE]
 >
@@ -64,17 +64,17 @@ Voer de volgende stappen uit om de optie Toegankelijkheid te gebruiken:
 >
 >Voor op XFA gebaseerde adaptieve formulieren wordt de toegankelijkheidsoptie overgenomen van de toegankelijkheidsopties die zijn ingesteld in de XDP. Knopinfo van XDP wordt toegewezen aan Korte beschrijving en Bijschrift wordt toegewezen aan Titel. De andere opties werken zoals is.
 
-## Verstrek tekstequivalenten voor beelden {#provide-text-equivalents-for-images}
+## Tekstequivalenten opgeven voor afbeeldingen {#provide-text-equivalents-for-images}
 
 Afbeeldingen kunnen sommige gebruikers helpen het begrip te verbeteren. Voor gebruikers die schermlezers gebruiken, verminderen afbeeldingen echter de toegankelijkheid van het formulier. Als u ervoor kiest om afbeeldingen te gebruiken, geef dan tekstbeschrijvingen op voor alle afbeeldingen.
 
 Zorg ervoor dat in de tekst het object en het doel ervan in het formulier worden beschreven. Een schermlezer leest deze alternatieve tekst wanneer een afbeelding wordt aangetroffen. Voor een afbeelding moet altijd een alternatieve tekst worden opgegeven.
 
-Selecteer een afbeeldingscomponent en tik op ![cmp](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
+Selecteer een afbeeldingscomponent en tik op ![cmppr](assets/cmppr.png). Geef in het zijpaneel onder Eigenschappen alternatieve tekst op voor een afbeelding.
 
 ![Alternatieve tekst voor een afbeelding](assets/image-properties.png)
 
-## Geef voldoende kleurcontrast op {#provide-sufficient-color-contrast}
+## Geef voldoende kleurcontrast {#provide-sufficient-color-contrast}
 
 Bij het ontwerpen van toegankelijkheid moet u rekening houden met aanvullende richtlijnen voor kleurgebruik. Auteurs van formulieren kunnen kleuren gebruiken om de weergave van formulieren te verbeteren door verschillende formuliercomponenten te markeren. Onjuist gebruik van kleur kan een formulier echter moeilijk of onmogelijk leesbaar maken voor mensen met verschillende mogelijkheden.
 
@@ -82,7 +82,7 @@ Gebruikers met een visuele handicap vertrouwen op een hoog contrast tussen tekst
 
 U wordt aangeraden het standaardfont en de standaardachtergrondkleuren te gebruiken, namelijk de zwarte inhoud op een witte achtergrond. Als u de standaardkleuren wijzigt, kiest u een donkere voorgrondkleur op een lichte achtergrondkleur of andersom.
 
-Zie Aangepaste thema&#39;s [maken voor adaptieve formulieren](/help/forms/using/creating-custom-adaptive-form-themes.md)voor meer informatie over het wijzigen van het kleurcontrast en het thema voor adaptieve formulieren.
+Zie [Aangepaste thema&#39;s maken voor adaptieve formulieren](/help/forms/using/creating-custom-adaptive-form-themes.md) voor meer informatie over het wijzigen van het kleurcontrast en het thema voor adaptieve formulieren.
 
 ## Zorg ervoor dat formulierbesturingselementen via het toetsenbord toegankelijk zijn {#ensure-that-form-controls-are-keyboard-accessible}
 
