@@ -21,7 +21,7 @@ ht-degree: 0%
 
 In Correspondence Management bevat een lettertypesjabloon typische formuliervelden, indelingsfuncties zoals een kop- en voettekst en lege &quot;doelgebieden&quot; voor de plaatsing van inhoud.
 
-Correspondence Management biedt briefsjablonen in het AEM Forms-pakket [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Voor het installeren van een pakket, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken. U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
+Correspondence Management biedt lettertypesjablonen in het AEM Forms-pakket [AEM-FORMS-REFERENCE-LAYOUT-TEMPLATES](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-LAYOUT-TEMPLATES). Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor het installeren van een pakket. U kunt de sjablonen in Designer aanpassen aan uw zakelijke en bedrijfsbehoeften. Het pakket bevat de volgende sjablonen:
 
 * Klassiek
 * Klassiek eenvoudig
@@ -62,7 +62,7 @@ Bevat velden voor het vastleggen van het telefoonnummer en het e-mailadres. Een 
 
 PDF-voorbeeld van een letter die is gemaakt met de klassieke eenvoudige sjabloon
 
-## Evenwichtig links {#balanced-left}
+## Balanced Left {#balanced-left}
 
 De sjabloon Balanced Left bevat een logo links van de letter.
 
@@ -70,7 +70,7 @@ De sjabloon Balanced Left bevat een logo links van de letter.
 
 PDF-voorbeeld van een letter die is gemaakt met de sjabloon Balanced Left
 
-## Evenwichtig rechts {#balanced-right}
+## Balanced Right {#balanced-right}
 
 Een evenwichtige rechtersjabloon heeft het bedrijfslogo aan de linkerkant en biedt ruimte voor het invoeren van het geadresseerde adres op de brief zelf. De evenwichtige sjabloon Rechts bevat ook een voettekst die doorloopt wanneer uw brief meerdere pagina&#39;s heeft.
 
