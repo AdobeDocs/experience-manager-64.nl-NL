@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Records uit de taakbeheerdatabase wissen {#purge-records-from-the-job-manager-database}
+# Records verwijderen uit de taakbeheerdatabase {#purge-records-from-the-job-manager-database}
 
 Procesgegevens die worden gegenereerd wanneer een langdurig proces wordt aangeroepen, kunnen te groot worden, wat resulteert in lagere AEM formulierprestaties en het gebruik van overbodige schijfruimte. Het is een goede gewoonte om procesgegevens te wissen wanneer records niet meer nodig zijn.
 
-U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methoden voor het wissen van verouderde records worden besproken in de gegevens [van het](/help/forms/using/admin-help/purging-process-data.md#purging-process-data)zuiveringsproces.
+U kunt beheerconsole gebruiken om een eenmalige verwijdering van verouderde records uit te voeren of om regelmatige automatische verwijdering te plannen. Andere methoden voor het wissen van verouderde records worden besproken in [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md#purging-process-data).
 
 **De pagina Job Purge Scheduler openen**
 
