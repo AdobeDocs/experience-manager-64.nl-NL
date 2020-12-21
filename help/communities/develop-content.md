@@ -22,6 +22,6 @@ ht-degree: 0%
 
 **[Clientlibs ⇐ toevoegen](add-clientlibs.md)**
 
-Op dit punt is het mogelijk om communautaire eigenschappen in de zandbak naast het gebruiken van [wij-Detailhandel Gemeenschap](../../help/sites-developing/we-retail.md), de [Communautaire Gids](components-guide.md) van Componenten en [eigenschapessentiële](essentials.md) ter referentie te onderzoeken.
+Op dit punt is het mogelijk om communautaire eigenschappen in de zandbak naast het gebruiken van [Wij-kleinhandel Gemeenschap](../../help/sites-developing/we-retail.md), [Communautaire Gids van Componenten](components-guide.md) en [eigenschapessentiële als](essentials.md) ter verwijzing te onderzoeken.
 
 **[Clientlibs ⇐ toevoegen](add-clientlibs.md)**
