@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Nabewerking van brieven en interactieve communicatie {#post-processing-of-letters-and-interactive-communications}
+# Na verwerking van letters en interactieve communicatie {#post-processing-of-letters-and-interactive-communications}
 
 ## Nabewerking {#post-processing}
 
@@ -29,7 +29,7 @@ Om postprocessen met brieven of interactieve mededelingen te associëren, moet u
 
 1. **Forms Workflow:** Dit zijn de AEM Forms-workflows voor JEE-procesbeheer. Instructies voor het instellen van [Forms Workflow](#formsworkflow).
 
-1. **AEM workflow:** AEM workflows kunnen ook worden gebruikt als postprocessen voor verzonden brieven. Instructies voor het instellen van [AEM workflow](/help/forms/using/aem-forms-workflow.md).
+1. **AEM Workflow:** AEM workflows kunnen ook worden gebruikt als postprocessen voor verzonden brieven. Instructies voor het instellen van [AEM Workflow](/help/forms/using/aem-forms-workflow.md).
 
 ## Forms Workflow {#formsworkflow}
 
@@ -38,7 +38,7 @@ Om postprocessen met brieven of interactieve mededelingen te associëren, moet u
    ![Configuratiebeheer](assets/2configmanager-1.png)
 
 1. Zoek op deze pagina AEM Forms Client SDK Configuration en vouw deze uit door erop te klikken.
-1. Voer in Server-URL de naam van uw AEM Forms in op JEE-server, aanmeldingsgegevens en klik op **Opslaan**.
+1. Voer in Server-URL de naam van uw AEM Forms in op JEE-server, aanmeldingsgegevens in en klik op **Opslaan**.
 
    ![Geef een naam op voor de LiveCycle-server](assets/1cofigmanager.png)
 
@@ -53,25 +53,25 @@ Om postprocessen met brieven of interactieve mededelingen te associëren, moet u
 
 1. Als u een proces/service wilt verifiëren, kopieert u de naam van een proces en gaat u terug naar de pagina Adobe Experience Manager Web Console Configurations > AEM Forms Client SDK Configuration en voegt u het proces toe als een nieuwe service.
 
-   Als de vervolgkeuzelijst op de pagina Eigenschappen van letter bijvoorbeeld de naam van het proces als Forms Workflow -> ValidCCPostProcess/SaveXML weergeeft, voegt u een servicenaam toe als `ValidCCPostProcess/SaveXML`.
+   Als in de vervolgkeuzelijst Eigenschappen op de lettertypepagina bijvoorbeeld de naam van het proces wordt weergegeven als Forms Workflow -> ValidCCPostProcess/SaveXML, voegt u een servicenaam toe als `ValidCCPostProcess/SaveXML`.
 
 1. Als u AEM Forms wilt gebruiken voor JEE-workflows voor naverwerking, stelt u de benodigde parameters en uitvoer in. De standaardwaarden van de parameters worden hieronder vermeld.
 
-   Ga naar de Adobe Experience Manager Web Console Configurations-pagina > **[!UICONTROL Correspondence Management Configurations]** en stel de volgende parameters in:
+   Ga naar de pagina Configuraties van de Adobe Experience Manager-webconsole > **[!UICONTROL Correspondence Management Configurations]** en stel de volgende parameters in:
 
-   1. **inPDFDoc (parameter PDF-document):** Een PDF-document als invoer. Deze invoer bevat de gerenderde letter als invoer. De vermelde parameternamen kunnen worden geconfigureerd. Zij kunnen van configuraties van het Beheer van de Correspondentie van configuratie worden gevormd.
-   1. **inXMLDoc (parameter XML-gegevens):** Een XML-document als invoer. Deze invoer bevat gegevens die door de gebruiker zijn ingevoerd in de vorm van XML.
+   1. **inPDFDoc (PDF-documentparameter):** Een PDF-document als invoer. Deze invoer bevat de gerenderde letter als invoer. De vermelde parameternamen kunnen worden geconfigureerd. Zij kunnen van configuraties van het Beheer van de Correspondentie van configuratie worden gevormd.
+   1. **inXMLDoc (XML-gegevensparameter):** Een XML-document als invoer. Deze invoer bevat gegevens die door de gebruiker zijn ingevoerd in de vorm van XML.
    1. **inXDPDoc (XDP-documentparameter):** Een XML-document als invoer. Deze invoer bevat onderliggende layout (XDP).
    1. **inAttachmentDocs (parameter Bijlagedocumenten):** Een parameter voor lijstinvoer. Deze invoer bevat alle bijlagen als invoer.
    1. **redirectURL (Redirect URL Output):** Een uitvoertype dat de URL aangeeft waarnaar moet worden omgeleid.
 
-   De formulierwerkstroom moet een PDF-documentparameter of een XML-gegevensparameter hebben als invoer met dezelfde naam als opgegeven in **[!UICONTROL Correspondence Management Configurations]**. Dit is vereist om het proces weer te geven in het vervolgkeuzemenu Verwerking.
+   Uw formulierwerkstroom moet een PDF-documentparameter of een XML-gegevensparameter hebben als invoer met dezelfde naam als opgegeven in **[!UICONTROL Correspondence Management Configurations]**. Dit is vereist om het proces weer te geven in het vervolgkeuzemenu Verwerking.
 
 ## Instellingen voor de instantie Publiceren {#settings-on-the-publish-instance}
 
 1. aanmelden bij `http://localhost:publishport/aem/forms`.
-1. Navigeer naar **[!UICONTROL Letters]** de gepubliceerde brief die beschikbaar is in de publicatie-instantie.
-1. Configureer de AEM DS-instellingen. Zie [AEM DS-instellingen](/help/forms/using/configuring-the-processing-server-url-.md)configureren.
+1. Navigeer naar **[!UICONTROL Letters]** om de gepubliceerde letter weer te geven die beschikbaar is op de publicatie-instantie.
+1. Configureer de AEM DS-instellingen. Zie [AEM DS-instellingen configureren](/help/forms/using/configuring-the-processing-server-url-.md).
 
 >[!NOTE]
 >
@@ -101,7 +101,7 @@ Opgeslagen letterinstanties kunnen verder worden gemanipuleerd, zoals het ophale
   <tr> 
    <td>De lijst getAllLetterInstances (Vraag) werpt ICCException; </td> 
    <td>getAllLetterInstances </td> 
-   <td>Deze API haalt brieveninstanties op die op de parameter van de inputvraag worden gebaseerd. Om alle letterinstanties op te halen, kan de vraagparameter als ongeldig worden overgegaan.<br /> </td> 
+   <td>Deze API haalt brieveninstanties op die op de parameter van de inputvraag worden gebaseerd. Om alle brieveninstanties te halen, kan de vraagparameter als ongeldig worden overgegaan.<br /> </td> 
   </tr> 
   <tr> 
    <td>Public Boolean letterInstanceExists(String letterInstanceName) genereert ICCException; </td> 
@@ -111,14 +111,14 @@ Opgeslagen letterinstanties kunnen verder worden gemanipuleerd, zoals het ophale
  </tbody> 
 </table>
 
-## Een postproces koppelen aan een brief {#associating-a-post-process-with-a-letter}
+## Een postproces koppelen aan een letter {#associating-a-post-process-with-a-letter}
 
 Voer in de CCR-gebruikersinterface de volgende stappen uit om een postproces aan een letter te koppelen:
 
-1. Houd de muisaanwijzer boven een letter en tik op **Weergave-eigenschappen**.
+1. Houd de cursor boven een letter en tik op **Eigenschappen weergeven**.
 1. Selecteer **Bewerken**.
 1. Selecteer in de basiseigenschappen met de vervolgkeuzelijst Nabewerking het postproces dat u aan de letter wilt koppelen. In de vervolgkeuzelijst worden zowel de AEM- als Forms-gerelateerde postprocessen vermeld.
-1. Tik op **Opslaan**.
+1. Tik **Opslaan**.
 1. Na het vormen van de brief met het Proces van de Post, publiceer de brief en naar keuze op het publicatiegeval, specificeer de verwerkings URL in AEM dienst van Montages DS. Dit zorgt ervoor dat het postproces op de verwerkingsinstantie in werking wordt gesteld.
 
 ## Een ontwerpbrief opnieuw laden  {#reloaddraft}
@@ -131,4 +131,4 @@ Een instantie van een conceptbrief kan in gebruikersinterface worden opnieuw gel
 
 LetterInstaceID: De unieke id van de verzonden letter.
 
-Zie Concepten [opslaan en briefexemplaren](/help/forms/using/create-correspondence.md#savingdrafts)verzenden voor meer informatie over het opslaan van een conceptbrief.
+Zie [Concepten opslaan en lettervarianten verzenden](/help/forms/using/create-correspondence.md#savingdrafts) voor meer informatie over het opslaan van een conceptbrief.
