@@ -22,7 +22,7 @@ ht-degree: 0%
 
 U kunt de PDF Generator-webpagina&#39;s gebruiken om bestanden te converteren.
 
-## Een PDF-bestand maken {#create-a-pdf-file}
+## Een PDF-bestand {#create-a-pdf-file} maken
 
 1. Klik in de beheerconsole op Services > PDF Generator > PDF maken.
 1. Klik op Bladeren om het bestand te zoeken en te selecteren.
@@ -39,17 +39,17 @@ U kunt de PDF Generator-webpagina&#39;s gebruiken om bestanden te converteren.
 
    * Als u een instellingenbestand uploadt, typt u het pad en de naam in het vak of klikt u op Bladeren om het bestand te zoeken en te selecteren.
 
-1. (Optioneel) Typ onder XMP metagegevensbestand het pad en de naam van het XMP of klik op Bladeren om het bestand te zoeken en te selecteren. U kunt een XMP gebruiken om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. (Optioneel) Typ onder XMP metagegevensbestand het pad en de naam van het XMP of klik op Bladeren om het bestand te zoeken en te selecteren. Een XMP bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt er een koppeling naar weergegeven. Als tijdens de conversie een fout optreedt, wordt een waarschuwing weergegeven. Als u een Postscript-bestand maakt, bevat de waarschuwing ook een koppeling naar het logbestand.
 1. Klik op de koppeling voor het PDF-bestand. Het bestand wordt geopend in Acrobat.
 
-### Informatie over XMP {#about-xmp-files}
+### Informatie over XMP bestanden {#about-xmp-files}
 
-PDF-documenten die in Acrobat 5.0 of hoger worden gemaakt, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekfuncties kunnen gebruiken.
+PDF-documenten die in Acrobat 5.0 of hoger worden gemaakt, bevatten documentmetagegevens in XML-indeling. *Metagegevens* bevatten informatie over het document en de inhoud ervan, zoals de naam van de auteur, trefwoorden en copyrightinformatie die zoekprogramma&#39;s kunnen gebruiken.
 
 De metagegevens van het document bevatten (maar zijn niet beperkt tot) informatie die ook wordt weergegeven op het tabblad Beschrijving van het dialoogvenster Documenteigenschappen in Acrobat. Wijzigingen die worden aangebracht op het tabblad Beschrijving, worden weerspiegeld in de metagegevens van het document. Metagegevens van documenten kunnen worden uitgebreid en gewijzigd met producten van derden.
 
-Adobe Extensible Metadata Platform (XMP) biedt Adobe-toepassingen een algemeen XML-raamwerk waarin het maken, verwerken en uitwisselen van metagegevens in documenten wordt gestandaardiseerd voor alle publicatieworkflows. U kunt de XML-broncode van documentmetagegevens opslaan en importeren in XMP indeling, zodat u gemakkelijk metagegevens kunt delen tussen verschillende documenten. Zie [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) en [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html)voor meer informatie over XMP bestanden.
+Adobe Extensible Metadata Platform (XMP) biedt Adobe-toepassingen een algemeen XML-raamwerk waarin het maken, verwerken en uitwisselen van metagegevens in documenten wordt gestandaardiseerd voor alle publicatieworkflows. U kunt de XML-broncode van documentmetagegevens opslaan en importeren in XMP indeling, zodat u gemakkelijk metagegevens kunt delen tussen verschillende documenten. Zie [Extensible Metadata Platform (XMP)](https://www.adobe.com/products/xmp/) en [Adobe XMP Developer Center](https://www.adobe.com/devnet/xmp.html) voor meer informatie over XMP bestanden.
 
 U kunt XMP bestanden maken in Acrobat.
 
@@ -90,13 +90,13 @@ Als het ZIP-bestand meer dan één HTML-bestand op het laagste niveau van de map
    * Als u een bestaand instellingenbestand wilt gebruiken, selecteert u Bestand met instellingen uploaden en klikt u op Bladeren om naar de bestandslocatie te gaan.
 
 
-1. Als u een XMP wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. U kunt een XMP gebruiken om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
+1. Als u een XMP wilt uploaden, klikt u op Bladeren en gaat u naar de bestandslocatie. Een XMP bestand kan worden gebruikt om standaardmetagegevens op te nemen. (Zie [Informatie over XMP bestanden](converting-files-using-pdf-generator.md#about-xmp-files).)
 1. Klik op Maken. Wanneer het bestand is gemaakt, wordt een koppeling naar het PDF-bestand weergegeven.
 1. Klik op de koppeling om het PDF-document in Acrobat weer te geven.
 
 ## Een PDF-bestand exporteren naar een andere bestandsindeling (alleen Windows) {#export-a-pdf-file-to-another-file-format-windows-only}
 
-U kunt PDF-bestanden exporteren naar verschillende bestandsindelingen, zoals wordt beschreven in het hoofdstuk PDF-service genereren in de [servicehandleiding](https://www.adobe.com/go/learn_aemforms_services_63).
+U kunt PDF-bestanden exporteren naar verschillende bestandsindelingen, zoals beschreven in het hoofdstuk PDF-service genereren van [Referentiehandleiding Services](https://www.adobe.com/go/learn_aemforms_services_63).
 
 1. Klik in de beheerconsole op Services > PDF Generator > Export PDF.
 1. Klik op Bladeren om het PDF-bestand te zoeken dat u wilt exporteren.
@@ -105,7 +105,7 @@ U kunt PDF-bestanden exporteren naar verschillende bestandsindelingen, zoals wor
 
    De omzettingstijd die wordt weergegeven wanneer het bestand wordt geconverteerd, kan groter zijn dan de waarde die u hier opgeeft. De Tijd van de Omzetting omvat de tijd die besteed aan het wachten op de draad of het proces, tijd wordt genomen om het dossier om te zetten, en de tijd die door de reserve omzetter (indien van toepassing) wordt genomen. time. De waarde bij Time-out opgeven is alleen de tijd die nodig is om het bestand om te zetten.
 
-1. (Optioneel) Klik in de optie **Aangepast Preflight-profiel** opgeven op Bladeren en selecteer een [aangepast Preflight-profiel](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). Preflight-profielen worden alleen gebruikt bij het converteren van documenten naar PDF-archiefindeling (PDF/A).
+1. (Optioneel) Klik in de optie **Aangepast Preflight-profiel opgeven** op Bladeren en selecteer een aangepast Preflight-profiel](https://helpx.adobe.com/acrobat/using/preflight-profiles-acrobat-pro.html). [ Preflight-profielen worden alleen gebruikt bij het converteren van documenten naar PDF-archiefindeling (PDF/A).
 1. Klik op Exporteren. Wanneer de conversie is voltooid, wordt een koppeling naar het geëxporteerde bestand weergegeven.
 1. Klik op de koppeling om het omgezette bestand weer te geven.
 
