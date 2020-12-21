@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# De gebruikersavatar weergeven {#displaying-the-user-avatar}
+# De gebruikersavatar {#displaying-the-user-avatar} weergeven
 
 Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste hoek van de werkruimte van AEM Forms. Ook, worden de avatars van directe rapporten in de organisatorische hiërarchie getoond in de Mening van de Manager. U kunt de AEM Forms-werkruimte zodanig configureren dat de gebruikersafbeeldingen in uw database, bijvoorbeeld de LDAP-server, worden gekozen.
 
@@ -26,7 +26,7 @@ Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste 
 >
 >De ondersteunde hoogte-breedteverhouding van de gebruikersafbeeldingen is 1:1.
 
-1. Maak een DSC met de details die in de volgende stap worden vermeld. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;onderwerp in [Programmering met de gids van AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) .
+1. Maak een DSC met de details die in de volgende stap worden vermeld. Voor meer informatie, zie &quot;het Ontwikkelen van Componenten voor Vormen AEM&quot;onderwerp in [Programmering met AEM Forms](https://www.adobe.com/go/learn_aemforms_programming_63) gids.
 1. Definieer in de DSC een nieuwe SPI die de methoden getCurrentUserImageUrl en getUserImageUrl beschikbaar maakt om een afbeeldings-URL voor een AEM Forms-gebruiker op te halen. Hier volgt een voorbeeld van een Java™-codefragment:
 
    ```as3
@@ -84,5 +84,5 @@ Avatar van de het programma geopende gebruiker wordt getoond in de hoger-juiste 
    </component>
    ```
 
-1. Implementeer DSC via Workbench. Start de `ProcessManagementClientSessionService` service opnieuw.
+1. Implementeer DSC via Workbench. Start `ProcessManagementClientSessionService`-service opnieuw.
 1. Mogelijk moet u de browser vernieuwen of u opnieuw afmelden/aanmelden bij de gebruiker.
