@@ -41,7 +41,7 @@ De eenvoudigste manier om elementen te ordenen, is deze in mappen op te slaan. D
 
 Met tags kunt u als metagegevens eenvoudig zoeken in elementen, verzamelingen maken met behulp van zoekresultaten, de zoekpositie voor bepaalde elementen verhogen en Adobe Sensei-algoritmen gebruiken voor het detecteren van elementen.
 
-Adobe Experience Manager Assets gebruikt een zelfstudie algoritme om zeer beschrijvende tags te maken waarmee u het juiste middel met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, ons raamwerk voor kunstmatige intelligentie en het leren van machines, dat kan worden opgeleid om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
+Adobe Experience Manager Assets gebruikt een zelfstudie algoritme om zeer beschrijvende tags te maken waarmee u het juiste middel met een paar klikken kunt vinden. Slimme tags maken gebruik van Adobe Sensei, ons raamwerk voor kunstmatige intelligentie en het leren van machines, dat getraind kan worden om zowel standaard- als bedrijfsspecifieke tags te herkennen en toe te passen op afbeeldingen. Met slimme tags kunt u ook inhoud, afzonderlijke woorden of zinsdelen identificeren en automatisch beschrijvende tags toepassen op elementen
 
 Raadpleeg de volgende artikelen voor meer informatie:
 
