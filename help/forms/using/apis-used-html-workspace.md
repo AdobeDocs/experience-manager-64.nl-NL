@@ -110,7 +110,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
   <tr>
    <td>save</td> 
    <td>ProcessManagementTaskService</td> 
-   <td>save</td> 
+   <td>opslaan</td> 
    <td>Er wordt een taak op de server opgeslagen.</td> 
   </tr>
   <tr>
@@ -267,7 +267,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
    <td>getProcessInstance<br /> </td> 
    <td>ProcessManagementProcessService<br /> </td> 
    <td>getProcessInstance<br /> </td> 
-   <td>Er worden details van een procesinstantie opgehaald.<br /> </td> 
+   <td>Het haalt details van een procesinstantie.<br /> </td> 
   </tr>
   <tr>
    <td>getProcessInstances</td> 
@@ -320,7 +320,7 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
   <tr>
    <td>initialize</td> 
    <td>ProcessManagementClientSessionService</td> 
-   <td>initialize</td> 
+   <td>initialiseren</td> 
    <td>Zo nodig wordt dit opnieuw bevestigd. Hiermee wordt de gebruiker geverifieerd. Stelt sessieparameters in voor server-/clientinformatie. Retourneert gebruikersinformatie en opiniepeilingsinterval.</td> 
   </tr>
   <tr>
