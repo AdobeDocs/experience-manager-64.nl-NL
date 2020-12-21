@@ -19,7 +19,7 @@ ht-degree: 1%
 ---
 
 
-# PDF-documenten samenstellen {#assembling-pdf-documents}
+# PDF-documenten {#assembling-pdf-documents} samenstellen
 
 **Over de Assembler Service**
 
@@ -29,5 +29,5 @@ Vanaf LiveCycle ES 8.0 en hoger is ondersteuning voor PDF-pakketten beschikbaar 
 
 >[!NOTE]
 >
->Voor meer informatie over de dienst van de Assembler, zie de Verwijzing van de [Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
+>Voor meer informatie over de dienst van de Assembler, zie [de Verwijzing van de Diensten voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63).
 
