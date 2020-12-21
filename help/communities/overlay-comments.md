@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Component Opmerkingen bedekken {#overlay-comments-component}
+# Component {#overlay-comments-component} voor opmerkingen bedekken
 
-Het is de bedoeling om een standaardcomponent te [bedekken](client-customize.md#overlays) door de weergave of het gedrag van een component globaal te wijzigen voor alle relatieve verwijzingen naar de component. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
+De bedoeling van [het bedekken van](client-customize.md#overlays) een standaardcomponent is de verschijning of het gedrag van een component globaal, voor alle relatieve verwijzingen naar de component te veranderen. Het is afhankelijk van de aard van de sling om naar de map /apps op te lossen voordat u in de map /libs zoekt. Het pad naar de component is dus identiek aan het pad naar de standaardcomponent, behalve dat het pad zich in de map /apps bevindt en niet in de map /libs.
 
 ## Voorbeeld {#example}
 
