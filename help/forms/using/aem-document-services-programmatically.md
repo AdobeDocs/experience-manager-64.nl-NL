@@ -17,13 +17,13 @@ ht-degree: 1%
 ---
 
 
-# Programmaticaal AEM Document Services gebruiken {#using-aem-document-services-programmatically}
+# Programmatiek {#using-aem-document-services-programmatically} AEM Document Services gebruiken
 
-Clientklassen die zijn vereist om Maven Projecten te bouwen met AEM Document Services zijn beschikbaar in de [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar. Voor informatie rond beproefde projecten, zie [hoe te om uw AEM te bouwen gebruikend Maven](/help/sites-developing/ht-projects-maven.md).
+Clientklassen die zijn vereist om Maven Projecten te bouwen met AEM Document Services zijn beschikbaar in de [AEM Forms Client SDK](https://helpx.adobe.com/aem-forms/kb/aem-forms-releases.html) jar. Voor informatie rond gemaakte projecten, zie [hoe te om uw AEM te bouwen gebruikend Maven](/help/sites-developing/ht-projects-maven.md).
 
 >[!NOTE]
 >
->Alvorens de dienst DocAssurance APIs te gebruiken, [vorm de dienst](/help/forms/using/install-configure-document-services.md)DocAssurance.
+>Alvorens de dienst DocAssurance APIs te gebruiken, [vorm de dienst DocAssurance](/help/forms/using/install-configure-document-services.md).
 
 ## DocAssurance Service {#docassurance-service}
 
@@ -63,13 +63,13 @@ U kunt de volgende verrichtingen uitvoeren gebruikend de dienst DocAssurance:
 
 >[!NOTE]
 >
->Al deze services gebruiken het object Document als invoerparameter waarvoor de Javadoc-code kan worden gevonden op de URL [https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
+>Al deze services gebruiken het object Document als invoerparameter waarvoor de Javadoc kan worden gevonden op de URL [https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/index.html)
 
 ### Een onzichtbaar handtekeningveld toevoegen {#adding-an-invisible-signature-field}
 
 Digitale handtekeningen worden weergegeven in handtekeningvelden. Dit zijn formuliervelden met een grafische weergave van de handtekening. Handtekeningvelden kunnen zichtbaar of onzichtbaar zijn. Ondertekenaars kunnen een bestaand handtekeningveld gebruiken of een handtekeningveld programmatisch toevoegen. In beide gevallen moet het handtekeningveld bestaan voordat een PDF-document kan worden ondertekend. U kunt een handtekeningveld programmatisch toevoegen met de Java API of de API van de Signature-service van de Java-API. U kunt meerdere handtekeningvelden toevoegen aan een PDF-document. Elke handtekeningveldnaam moet echter uniek zijn.
 
-**Syntaxis**: `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
+**Syntaxis**:  `addInvisibleSignatureField(Document inDoc, String signatureFieldName, FieldMDPOptionSpec fieldMDPOptionsSpec, PDFSeedValueOptionSpec seedValueOptionsSpec, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -85,15 +85,15 @@ Digitale handtekeningen worden weergegeven in handtekeningvelden. Dit zijn formu
   </tr> 
   <tr> 
    <td><code>signatureFieldName</code> </td> 
-   <td>De naam van het handtekeningveld. Deze parameter is verplicht en kan niet null als waarde hebben.<br /> </td> 
+   <td>De naam van het handtekeningveld. Deze parameter is verplicht en kan geen null als waarde hebben.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>fieldMDPOptionsSpec</code></td> 
-   <td>Een <code>FieldMDPOptionSpec</code> object dat aangeeft welke PDF-documentvelden zijn vergrendeld nadat het handtekeningveld is ondertekend. Deze parameter is optioneel en kan de waarde null accepteren.</td> 
+   <td>Een <code>FieldMDPOptionSpec</code>-object dat de PDF-documentvelden opgeeft die worden vergrendeld nadat het handtekeningveld is ondertekend. Deze parameter is optioneel en kan de waarde null accepteren.</td> 
   </tr> 
   <tr> 
    <td><code>seedValueOptionsSpec</code></td> 
-   <td>Een <code>SeedValueOptions</code> object dat de verschillende zaadwaarden voor het veld opgeeft. T Deze parameter is optioneel en kan de waarde null accepteren.<span class="acrolinxCursorMarker"></span></td> 
+   <td>Een <code>SeedValueOptions</code>-object dat de verschillende zaadwaarden voor het veld opgeeft. T Deze parameter is optioneel en kan de waarde null accepteren.<span class="acrolinxCursorMarker"></span></td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -229,7 +229,7 @@ public class AddInvisibleSignatureField {
 }
 ```
 
-U kunt ook de [](https://en.wikipedia.org/wiki/CAdES_%28computing%29)CAdES-specificatie gebruiken voor het ondertekenen van documenten. Gebruik de volgende voorbeeldcode om ondertekeningsindeling in te stellen op [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
+U kunt ook [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)specificatie gebruiken voor het ondertekenen van documenten. Gebruik de volgende voorbeeldcode om ondertekeningsindeling in te stellen op [CAdES.](https://en.wikipedia.org/wiki/CAdES_%28computing%29)
 
 ```java
 SigningFormat signingFormat = SigningFormat.CAdES;
@@ -270,19 +270,19 @@ public Document addSignatureField(Document inDoc,
   </tr> 
   <tr> 
    <td><code>pageNumber</code></td> 
-   <td>Het paginanummer waarop het handtekeningveld wordt toegevoegd. Geldige waarden zijn 1 tot het aantal pagina's in het document. Deze parameter is verplicht en kan geen null-waarde accepteren.<br /> </td> 
+   <td>Het paginanummer waarop het handtekeningveld wordt toegevoegd. Geldige waarden zijn 1 tot het aantal pagina's in het document. Deze parameter is verplicht en kan geen ongeldige waarde goedkeuren.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>positionRectangle</code></td> 
-   <td>A <code>PositionRectangle object</code> that specifies the position for the signature field. Deze parameter is verplicht en kan geen null-waarde accepteren. Als de opgegeven rechthoek zich niet ten minste gedeeltelijk in het uitsnijdvak van de opgegeven pagina bevindt, <code>InvalidArgumentException</code> wordt een object gegenereerd. Bovendien kan noch de hoogte noch de breedte van de opgegeven rechthoek 0 of negatief zijn. De coördinaten Y linksonder X of Y linksonder kunnen 0 of groter maar niet negatief zijn en zijn relatief ten opzichte van het uitsnijdvak van de pagina.</td> 
+   <td>A <code>PositionRectangle object</code> that specifies the position for the signature field. Deze parameter is verplicht en kan geen null-waarde accepteren. Als de opgegeven rechthoek zich niet ten minste gedeeltelijk op het uitsnijdvak van de opgegeven pagina bevindt, wordt een <code>InvalidArgumentException</code> gegenereerd. Bovendien kan noch de hoogte noch de breedte van de opgegeven rechthoek 0 of negatief zijn. De coördinaten Y linksonder X of Y linksonder kunnen 0 of groter maar niet negatief zijn en zijn relatief ten opzichte van het uitsnijdvak van de pagina.</td> 
   </tr> 
   <tr> 
    <td><code>fieldMDPOptionsSpec</code></td> 
-   <td>Een <code>FieldMDPOptionSpec</code> object dat aangeeft welke PDF-documentvelden zijn vergrendeld nadat het handtekeningveld is ondertekend. Dit is een optionele parameter en kan null zijn.</td> 
+   <td>Een <code>FieldMDPOptionSpec</code>-object dat de PDF-documentvelden opgeeft die worden vergrendeld nadat het handtekeningveld is ondertekend. Dit is een optionele parameter en kan null zijn.</td> 
   </tr> 
   <tr> 
    <td><code>seedValueOptionsSpec</code></td> 
-   <td>Een <code>SeedValueOptions</code> object dat de verschillende zaadwaarden voor het veld opgeeft. Dit is een optionele parameter en kan null zijn.</td> 
+   <td>Een <code>SeedValueOptions</code>-object dat de verschillende zaadwaarden voor het veld opgeeft. Dit is een optionele parameter en kan null zijn.</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -419,9 +419,9 @@ public class AddSignatureField {
 
 ### Tijdstempel document toepassen {#apply-document-timestamp}
 
-U kunt een document programmatisch stempelen volgens [PAdES 4](https://en.wikipedia.org/wiki/PAdES) specificaties. U kunt ook de [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) -specificatie gebruiken voor aan transacties gerelateerde documenten.
+U kunt een document programmatically volgens [PAdES 4](https://en.wikipedia.org/wiki/PAdES) specificaties timestamp. U kunt [CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29) specificatie voor transactie verwante documenten ook gebruiken.
 
-**Syntaxis**: `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
+**Syntaxis**:  `applyDocumentTimeStamp(Document doc, VerificationTime verificationTime, ValidationPreferences dssPrefs, ResourceResolver resourceResolver, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -624,11 +624,11 @@ import com.adobe.fd.signatures.pki.client.types.prefs.TSPPreferencesImpl;
 }
 ```
 
-### Handtekening ophalen {#getting-signature}
+### Handtekening {#getting-signature} ophalen
 
 U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, haalt u de namen via programmacode op. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Syntaxis**: `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
+**Syntaxis**:  `getSignature(Document doc, String signatureFieldName, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -644,7 +644,7 @@ U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wi
   </tr> 
   <tr> 
    <td><code>signatureFieldName</code></td> 
-   <td>De naam van het handtekeningveld dat een handtekening bevat. Geef de volledig gekwalificeerde naam van het handtekeningveld op. Als u een PDF-document gebruikt dat is gebaseerd op een XFA-formulier, kan de gedeeltelijke naam van het handtekeningveld worden gebruikt. U kunt bijvoorbeeld <code>form1[0].#subform[1].SignatureField3[3]</code> opgeven als <code>SignatureField3[3]</code>.</td> 
+   <td>De naam van het handtekeningveld dat een handtekening bevat. Geef de volledig gekwalificeerde naam van het handtekeningveld op. Als u een PDF-document gebruikt dat is gebaseerd op een XFA-formulier, kan de gedeeltelijke naam van het handtekeningveld worden gebruikt. <code>form1[0].#subform[1].SignatureField3[3]</code> kan bijvoorbeeld worden opgegeven als <code>SignatureField3[3]</code>.</td> 
   </tr> 
   <tr> 
    <td><code>UnlockOptions</code></td> 
@@ -752,7 +752,7 @@ public class GetSignature {
 
 U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet wat de namen van handtekeningvelden zijn in een PDF-document, kunt u deze via programmacode ophalen en verifiëren. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Syntaxis**: `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
+**Syntaxis**:  `public List <PDFSignatureField> getSignatureFieldList (Document inDoc, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -871,7 +871,7 @@ Een veldvergrendelingswoordenboek geeft een lijst op met velden die zijn vergren
 
 Door een bestaand handtekeningveld te wijzigen, kunt u het PDF-document bewerken in overeenstemming met veranderende zakelijke vereisten. Voor een nieuwe bedrijfsvereiste moeten bijvoorbeeld alle documentvelden worden vergrendeld nadat het document is ondertekend.
 
-**Syntaxis**: `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
+**Syntaxis**:  `public Document modifySignatureField(Document inDoc, String signatureFieldName, PDFSignatureFieldProperties pdfSignatureFieldProperties, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -887,11 +887,11 @@ Door een bestaand handtekeningveld te wijzigen, kunt u het PDF-document bewerken
   </tr> 
   <tr> 
    <td><code>signatureFieldName</code></td> 
-   <td>De naam van het handtekeningveld. Deze parameter is verplicht en kan geen null-waarde accepteren.<br /> </td> 
+   <td>De naam van het handtekeningveld. Deze parameter is verplicht en kan geen ongeldige waarde goedkeuren.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>pdfSignatureFieldProperties</code></td> 
-   <td>Object dat informatie opgeeft over de <code>PDFSeedValueOptionSpec</code> en de <code>FieldMDPOptionSpec</code> waarden van het handtekeningveld.</td> 
+   <td>Object dat informatie opgeeft over de waarden <code>PDFSeedValueOptionSpec</code> en <code>FieldMDPOptionSpec</code> van het handtekeningveld.</td> 
   </tr> 
   <tr> 
    <td><code>unlockOptions</code></td> 
@@ -1055,7 +1055,7 @@ secureDocument(Document inDoc, EncryptionOptions encryptionOptions,
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>PDF-document voor documentinvoer<br /> </td> 
+   <td>Documentinvoer PDF-document<br /> </td> 
   </tr> 
   <tr> 
    <td><code>encryptionOptions</code> </td> 
@@ -1335,9 +1335,9 @@ public class Certify {
 }
 ```
 
-### Documenten beveiligen {#securing-documents}
+### Documenten {#securing-documents} beveiligen
 
-Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en in een bepaalde volgorde uitbreiden, afzonderlijk of in een willekeurige combinatie. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null, wordt aangenomen dat de specifieke verwerking niet vereist is.
+Met SecureDocument kunt u een PDF-document versleutelen, ondertekenen/certificeren en in een bepaalde volgorde uitbreiden, afzonderlijk of in een willekeurige combinatie. Om tot om het even welk van deze functionaliteit toegang te hebben, ga het overeenkomstige argument over. Indien null wordt aangenomen dat de specifieke verwerking niet vereist is.
 
 **PDF-documenten versleutelen met een wachtwoord**
 
@@ -1386,7 +1386,7 @@ De openbare sleutel wordt opgeslagen in het certificaat van de gebruiker dat bes
 
 >[!NOTE]
 >
->AEM Forms biedt ook ondersteuning voor *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificaties voor het digitaal ondertekenen van PDF-documenten.
+>AEM Forms biedt ook ondersteuning voor de *[CAdES](https://en.wikipedia.org/wiki/CAdES_%28computing%29)*-specificatie voor het digitaal ondertekenen van PDF-documenten.
 
 **PDF-documenten certificeren**
 
@@ -1433,7 +1433,7 @@ secureDocument(Document inDoc,
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>PDF-document voor documentinvoer<br /> </td> 
+   <td>Documentinvoer PDF-document<br /> </td> 
   </tr> 
   <tr> 
    <td><code>encryptionOptions</code> </td> 
@@ -2079,11 +2079,11 @@ public class PassEncryptSignExtend {
 }
 ```
 
-### Rechten voor gebruik van referenties ophalen {#getting-credential-usage-rights}
+### Licentierechten {#getting-credential-usage-rights} ophalen
 
-Als u informatie over gebruiksrechten wilt ophalen van de referentie die door de opgegeven gegevens is opgegeven, roept u deze API aan vanuit de `credentialAlias``SecureDocument` API.
+Als u informatie over gebruiksrechten wilt ophalen van de referentie die is opgegeven door de opgegeven `credentialAlias`, roept u deze API aan vanuit de `SecureDocument`-API.
 
-**Syntaxis**: `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
+**Syntaxis**:  `getCredentialUsageRights(String credentialAlias, ResourceResolver resourceResolver)`
 
 **Invoerparameters**
 
@@ -2095,7 +2095,7 @@ Als u informatie over gebruiksrechten wilt ophalen van de referentie die door de
   </tr> 
   <tr> 
    <td><code>credentialAlias</code> </td> 
-   <td>De <code>credentialAlias</code> waarde die de referentie opgeeft.<br /> </td> 
+   <td>De <code>credentialAlias</code> die de referentie aangeeft.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>credentialPassword</code> </td> 
@@ -2170,11 +2170,11 @@ public void getCredentialUsageRights() {
 }
 ```
 
-### Rechten voor documentgebruik ophalen {#getting-document-usage-rights}
+### Gebruiksrechten voor documenten {#getting-document-usage-rights} ophalen
 
 Als u informatie over gebruiksrechten voor een bepaald document wilt ophalen, roept u deze API aan vanuit de `docAssuranceService`API.
 
-**Syntaxis**: `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
+**Syntaxis**:  `getDocumentUsageRights(Document inDocument, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -2290,9 +2290,9 @@ public void getDocumentUsageRights() {
 }
 ```
 
-### Gebruiksrechten verwijderen {#removing-usage-rights}
+### Gebruiksrechten {#removing-usage-rights} verwijderen
 
-U kunt de gebruiksrechten voor een document verwijderen door de `removeUsageRights`API vanuit de `docAssuranceService`API aan te roepen.
+U kunt de gebruiksrechten voor een document verwijderen door de `removeUsageRights`API aan te roepen vanuit de `docAssuranceService`API.
 
 **Invoerparameters**
 
@@ -2415,11 +2415,11 @@ public void removeDocumentUsageRights() {
 }
 ```
 
-#### Digitale handtekeningen verifiëren {#verifying-digital-signatures}
+#### Digitale handtekeningen controleren {#verifying-digital-signatures}
 
 Digitale handtekeningen kunnen worden geverifieerd om ervoor te zorgen dat een ondertekend PDF-document niet is gewijzigd en dat de digitale handtekening geldig is. Wanneer u een digitale handtekening verifieert, kunt u de status van de handtekening en de eigenschappen van de handtekening controleren, zoals de identiteit van de ondertekenaar. Voordat u een digitale handtekening vertrouwt, is het raadzaam deze te controleren. Wanneer u een digitale handtekening verifieert, verwijst u naar een PDF-document dat een digitale handtekening bevat.
 
-**Syntaxis**: `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
+**Syntaxis**:  `verify( inDoc, signatureFieldName, revocationCheckStyle, verificationTime, dssPrefs, ResourceResolver resourceResolver)`
 
 **Invoerparameters**
 
@@ -2431,12 +2431,12 @@ Digitale handtekeningen kunnen worden geverifieerd om ervoor te zorgen dat een o
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Document, object dat PDF bevat<br /> </td> 
+   <td>Documentobject met PDF<br /> </td> 
   </tr> 
   <tr> 
    <td><code class="code">signatureField
       Name</code> </td> 
-   <td>De naam van het handtekeningveld dat moet worden gevalideerd. volledige of gedeeltelijke naam kan worden gegeven<br /> </td> 
+   <td>De naam van het handtekeningveld dat moet worden gevalideerd. Volledige of gedeeltelijke naam kan worden gegeven<br /> </td> 
   </tr> 
   <tr> 
    <td><code>revocationCheckStyle</code></td> 
@@ -2733,11 +2733,11 @@ public class VerifyFieldEncryptedPDF {
 }
 ```
 
-### Meerdere digitale handtekeningen verifiëren {#verifying-multiple-digital-signatures}
+### Meerdere digitale handtekeningen controleren {#verifying-multiple-digital-signatures}
 
 Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-document kan meerdere digitale handtekeningen bevatten als het is onderworpen aan een bedrijfsproces waarvoor handtekeningen van meerdere ondertekenaars vereist zijn. Een financiële transactie vereist bijvoorbeeld handtekeningen van zowel de leningfunctionaris als de beheerder. U kunt de API van de handtekeningenservice gebruiken om alle handtekeningen in het PDF-document te verifiëren. Wanneer u meerdere digitale handtekeningen controleert, kunt u de status en eigenschappen van elke handtekening controleren. Voordat u een digitale handtekening vertrouwt, raadt Adobe u aan deze te verifiëren.
 
-**Syntaxis**: `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
+**Syntaxis**:  `verifyDocument(Document doc, RevocationCheckStyle revocationCheckStyle, VerificationTime verificationTime, ValidationPreferences prefStore, ResourceResolver resourceResolver)`
 
 **Invoerparameters**
 
@@ -2749,7 +2749,7 @@ Met AEM kunt u digitale handtekeningen in PDF-documenten verifiëren. Een PDF-do
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Document, object dat PDF bevat<br /> </td> 
+   <td>Documentobject met PDF<br /> </td> 
   </tr> 
   <tr> 
    <td><code>revocationCheckStyle</code></td> 
@@ -3035,7 +3035,7 @@ public class VerifyEncryptedPDFDoc {
 
 U kunt een nieuwe digitale handtekening alleen op een handtekeningveld toepassen nadat u de vorige digitale handtekening hebt verwijderd. U kunt een digitale handtekening niet overschrijven. Als u probeert een digitale handtekening toe te passen op een handtekeningveld dat al een handtekening bevat, treedt een uitzondering op.
 
-**Syntaxis**: `clearSignatureField(Document inDoc, String signatureFieldName, UnlockOptions unlockOptions)`
+**Syntaxis**:  `clearSignatureField(Document inDoc, String signatureFieldName, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -3047,7 +3047,7 @@ U kunt een nieuwe digitale handtekening alleen op een handtekeningveld toepassen
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Document, object dat PDF bevat<br /> </td> 
+   <td>Documentobject met PDF<br /> </td> 
   </tr> 
   <tr> 
    <td><code>signatureFieldName</code></td> 
@@ -3152,11 +3152,11 @@ public class ClearSignatureField {
 }
 ```
 
-### Handtekeningveld voor certificering wordt opgehaald {#getting-certifying-signature-field}
+### Certificeringsveld {#getting-certifying-signature-field} ophalen
 
 U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `form1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Syntaxis**: `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
+**Syntaxis**:  `getCertifyingSignatureField(Document inDoc, UnlockOptions unlockOptions)`
 
 **Invoerparameters**
 
@@ -3271,11 +3271,11 @@ public class GetCertifyingSignatureField {
 }
 ```
 
-### PDF-coderingstype ophalen {#getting-pdf-encryption-type}
+### PDF-versleutelingstype {#getting-pdf-encryption-type} ophalen
 
-U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, bijvoorbeeld `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
+U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wilt ondertekenen of certificeren. Als u niet zeker weet welke namen van handtekeningvelden zich in een PDF-document bevinden of als u de namen wilt verifiëren, kunt u deze via programmacode ophalen. De service Handtekening retourneert de volledig gekwalificeerde naam van het handtekeningveld, zoals `asform1[0].grantApplication[0].page1[0].SignatureField1[0]`.
 
-**Syntaxis**: `void getPDFEncryption(Document inDoc)`
+**Syntaxis**:  `void getPDFEncryption(Document inDoc)`
 
 **Invoerparameters**
 
@@ -3287,7 +3287,7 @@ U kunt de namen ophalen van alle handtekeningvelden in een PDF-document dat u wi
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Een document dat als invoer wordt opgegeven. Het kan al dan niet versleuteld zijn.<br /> </td> 
+   <td>Een document dat als invoer wordt opgegeven. Het kan al dan niet gecodeerd zijn.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3391,7 +3391,7 @@ public class GetPDFEncryption {
 
 Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document zodat gebruikers het PDF-document in Adobe Reader of Acrobat kunnen openen zonder een wachtwoord op te geven. Nadat u op een wachtwoord gebaseerde versleuteling uit een PDF-document hebt verwijderd, is het document niet meer beveiligd.
 
-**Syntaxis**: `Document removePDFPasswordSecurity (Document inDoc,String password)`
+**Syntaxis**:  `Document removePDFPasswordSecurity (Document inDoc,String password)`
 
 **Invoerparameters**
 
@@ -3403,11 +3403,11 @@ Verwijder op wachtwoord gebaseerde versleuteling uit een PDF-document zodat gebr
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Document opgegeven als invoer. Het bestand moet met een wachtwoord zijn beveiligd.<br /> </td> 
+   <td>Document opgegeven als invoer. Het moet met een wachtwoord beveiligd zijn.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>password</code> </td> 
-   <td>Een document openen of wachtwoord voor machtigingen dat moet worden gebruikt voor het verwijderen van beveiliging uit het document.<br /> </td> 
+   <td>Een wachtwoord voor het openen van een document of een wachtwoord voor machtigingen dat moet worden gebruikt voor het verwijderen van beveiliging uit het document.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -3486,11 +3486,11 @@ public class RemovePasswordEncryption {
 }
 ```
 
-### Certificaatversleuteling verwijderen {#removing-certificate-encryption}
+### Certificaatversleuteling {#removing-certificate-encryption} verwijderen
 
 U kunt versleuteling op basis van certificaten verwijderen uit een PDF-document, zodat gebruikers het PDF-document kunnen openen in Adobe Reader of Acrobat. Als u versleuteling wilt verwijderen uit een PDF-document dat is versleuteld met een certificaat, verwijst u naar een persoonlijke sleutel. Nadat u de versleuteling uit een PDF-document hebt verwijderd, is deze niet meer beveiligd.
 
-**Syntaxis**: `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
+**Syntaxis**:  `removePDFCertificateSecurity(Document inDoc, String alias, ResourceResolver resourceResolver)`
 
 **Invoerparameters**
 
@@ -3502,11 +3502,11 @@ U kunt versleuteling op basis van certificaten verwijderen uit een PDF-document,
   </tr> 
   <tr> 
    <td><code>inDoc</code> </td> 
-   <td>Een object Document dat het met een certificaat gecodeerde PDF-document vertegenwoordigt.<br /> </td> 
+   <td>Een object Document dat staat voor het met een certificaat gecodeerde PDF-document.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>alias</code> </td> 
-   <td>De alias die overeenkomt met de sleutel in het Granite Trust Store die wordt gebruikt om op een certificaat gebaseerde versleuteling uit het PDF-document te verwijderen.<br /> </td> 
+   <td>De alias die overeenkomt met de sleutel in het Granite Trust Store die wordt gebruikt om versleuteling op basis van een certificaat te verwijderen uit het PDF-document.<br /> </td> 
   </tr> 
   <tr> 
    <td><code>ResourceResolver</code></td> 
@@ -3612,17 +3612,17 @@ public class RemovePKIEncryption {
 
 De uitvoerservice biedt API&#39;s waarmee een XDP-bestand kan worden gerenderd in de indelingen .pdf, .pcl, .zpl en .ps. De service ondersteunt de volgende API&#39;s:
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die als letterlijke waarden zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Hiermee genereert u een PDF-document door een formulierontwerp samen te voegen met gegevens die zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden.
 
-* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):**Hiermee wordt een PDF-document gegenereerd door een formulierontwerp samen te voegen met gegevens die in een toepassing zijn opgeslagen.
-* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):**Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te maken. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand.
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Hiermee genereert u een PCL-, PostScript- of ZPL-uitvoer van een formulierontwerp en een gegevensbestand dat is opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden.
+* **[generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p):** Genereert een PDF-document door een formulierontwerp samen te voegen met gegevens die in een toepassing zijn opgeslagen.
+* **[generatePDFOutputBatch](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutputbatch-p):hiermee** voegt u een formulierontwerp samen met gegevens om een PDF-document te maken. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Hiermee genereert u een PCL-, PostScript- of ZPL-uitvoer van een formulierontwerp en een gegevensbestand dat is opgeslagen op een netwerklocatie, een lokaal bestandssysteem of een HTTP-locatie als letterlijke waarden.
 
-* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):**Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwerp en gegevensbestand dat in een toepassing is opgeslagen.
+* **[generatePrintedOutput](/help/forms/using/aem-document-services-programmatically.md#p-generateprintedoutput-p):** Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwerp en gegevensbestand die in een toepassing zijn opgeslagen.
 
 ### generatePDFOutput {#generatepdfoutput}
 
-Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Gebruik de API generatePDFOutput voor de formulierontwerpen of gegevens die zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden. Als het formulierontwerp en de XML-gegevens in een toepassing worden opgeslagen, gebruikt u de API [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) .
+Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. Hiermee genereert u desgewenst een metagegevensbestand voor elke record of slaat u de uitvoer op in een PDF-bestand. Gebruik de API generatePDFOutput voor de formulierontwerpen of gegevens die zijn opgeslagen op een netwerklocatie, lokaal bestandssysteem of HTTP-locatie als letterlijke waarden. Als het formulierontwerp en de XML-gegevens in een toepassing worden opgeslagen, gebruikt u de [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
 
 **Syntaxis:** `Document generatePDFOutput(String uriOrFileName, Document data, PDFOutputOptions options);`
 
@@ -3729,7 +3729,7 @@ try {
 
 ### generatePDFOutput {#generatepdfoutput-1}
 
-Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het formulierontwerp en de XML-gegevens als letterlijke waarden zijn opgeslagen op een netwerklocatie, lokaal of op een HTTP-locatie, gebruikt u de [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p) -API.
+Met de API generatePDFOutput wordt een PDF-document gegenereerd door een formulierontwerp met gegevens samen te voegen. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen. Als het formulierontwerp en de XML-gegevens lokaal zijn opgeslagen op een netwerklocatie of een HTTP-locatie als letterlijke waarden, gebruikt u de [generatePDFOutput](/help/forms/using/aem-document-services-programmatically.md#p-generatepdfoutput-p)-API.
 
 **Syntaxis:** `Document generatePDFOutput(Document inputdocument, Document data, PDFOutputOptions options)`
 
@@ -3853,7 +3853,7 @@ Hiermee voegt u een formulierontwerp samen met gegevens om een PDF-document te m
   </tr> 
   <tr> 
    <td>templates<br /> </td> 
-   <td>Geeft de map met sleutel- en sjabloonbestandsnaam op.<br /> </td> 
+   <td>Specificeert Kaart van sleutel en malplaatjefilename.<br /> </td> 
   </tr> 
   <tr> 
    <td>gegevens</td> 
@@ -3974,7 +3974,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwer
   </tr> 
   <tr> 
    <td>gegevens</td> 
-   <td>Een XML-bestand dat gegevens bevat die worden samengevoegd met PDF-documenten.<br /> </td> 
+   <td>Een XML-bestand dat gegevens bevat die zijn samengevoegd met PDF-documenten.<br /> </td> 
   </tr> 
   <tr> 
    <td>opties</td> 
@@ -3983,7 +3983,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer van een formulierontwer
  </tbody> 
 </table>
 
-In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer gegenereerd op basis van een formulierontwerp en gegevens. Het uitvoertype is afhankelijk van de waarde die aan de `printConfig`parameter wordt doorgegeven.
+In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer gegenereerd op basis van een formulierontwerp en gegevens. Het uitvoertype is afhankelijk van de waarde die aan de parameter `printConfig`wordt doorgegeven.
 
 ```java
 @Reference private OutputService outputService;
@@ -4047,7 +4047,7 @@ Document doc=null;
 
 ### generatePrintedOutput {#generateprintedoutput-1}
 
-Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formulierontwerp en gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen.
+Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formulierontwerp en een gegevensbestand. Het gegevensbestand wordt samengevoegd met het formulierontwerp en voor afdrukken opgemaakt. De uitvoer kan rechtstreeks naar een printer worden verzonden of als bestand worden opgeslagen. Gebruik de API generatePrintedOutput voor de formulierontwerpen of gegevens die in een toepassing zijn opgeslagen.
 
 **Syntaxis:** `Document generatePrintedOutput(Document inputdocument, Document data, PrintedOutputOptions);`
 
@@ -4065,7 +4065,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formul
   </tr> 
   <tr> 
    <td>gegevens</td> 
-   <td>Een XML-bestand dat gegevens bevat die worden samengevoegd met PDF-documenten.<br /> </td> 
+   <td>Een XML-bestand dat gegevens bevat die zijn samengevoegd met PDF-documenten.<br /> </td> 
   </tr> 
   <tr> 
    <td>opties</td> 
@@ -4074,7 +4074,7 @@ Hiermee genereert u een PCL-, PostScript- en ZPL-uitvoer op basis van een formul
  </tbody> 
 </table>
 
-In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer gegenereerd op basis van een formulierontwerp en gegevens. Het uitvoertype is afhankelijk van de waarde die aan de `printConfig`parameter wordt doorgegeven.
+In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer gegenereerd op basis van een formulierontwerp en gegevens. Het uitvoertype is afhankelijk van de waarde die aan de parameter `printConfig`wordt doorgegeven.
 
 ```java
 @Reference private OutputService outputService;
@@ -4134,7 +4134,7 @@ Document doc=null;
 
 Hiermee genereert u een document met de PS-, PCL- en ZPL-indeling door een formulierontwerp samen te voegen met gegevens. U kunt desgewenst een metagegevensbestand genereren voor elke record of de uitvoer opslaan in een PDF-bestand. Gebruik de API generatePrintedOutputBatch voor de formulierontwerpen of gegevens die zijn opgeslagen op een netwerklocatie, een lokaal bestandssysteem of een HTTP-locatie als letterlijke waarden.
 
-**Syntaxis`:`**`BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
+**Syntaxis`:`** `BatchResult generatePrintedOutputBatch(Map templates, Map data, PrintedOutputOptions options, BatchOptions batchOptions);`
 
 #### Invoerparameters {#input-parameters-4}
 
@@ -4145,8 +4145,8 @@ Hiermee genereert u een document met de PS-, PCL- en ZPL-indeling door een formu
    <th>Beschrijving</th> 
   </tr> 
   <tr> 
-   <td>templates<br /> </td> 
-   <td>Hiermee geeft u de kaart van de bestandsnaam van de toets en de sjabloon op.<br /> </td> 
+   <td>sjablonen<br /> </td> 
+   <td>Specificeert de kaart van sleutel en malplaatjefilename.<br /> </td> 
   </tr> 
   <tr> 
    <td>gegevens</td> 
@@ -4154,7 +4154,7 @@ Hiermee genereert u een document met de PS-, PCL- en ZPL-indeling door een formu
   </tr> 
   <tr> 
    <td>opties</td> 
-   <td>Hiermee wordt het object opgegeven van het type PrintedOutputOptions. Dit object wordt gebruikt om de waarden van contentRoot, locale, printConfig, copies, paginationOverride in te stellen.<br /> </td> 
+   <td>Hiermee wordt het object opgegeven van het type PrintedOutputOptions. Dit object wordt gebruikt om de waarden in te stellen van contentRoot, locale, printConfig, copies, paginationOverride.<br /> </td> 
   </tr> 
   <tr> 
    <td>batchOptions</td> 
@@ -4163,7 +4163,7 @@ Hiermee genereert u een document met de PS-, PCL- en ZPL-indeling door een formu
  </tbody> 
 </table>
 
-In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer in batch gegenereerd op basis van meerdere sjablonen en gegevensbestanden voor formulierontwerp. Het uitvoertype is afhankelijk van de waarde die aan de `printConfig`parameter wordt doorgegeven.
+In het volgende Java-codevoorbeeld worden PCL-, PostScript- en ZPL-uitvoer in batch gegenereerd op basis van meerdere sjablonen en gegevensbestanden voor formulierontwerp. Het uitvoertype is afhankelijk van de waarde die aan de parameter `printConfig`wordt doorgegeven.
 
 ```java
 @Reference private OutputService outputService;
@@ -4267,12 +4267,12 @@ String outputFolder="C:/Output";
   }
 ```
 
-## Forms Service {#forms-service}
+## Forms-service {#forms-service}
 
 De Forms-service biedt API&#39;s voor het importeren en exporteren van gegevens van en naar een interactief PDF-formulier. Een interactief PDF-formulier is een PDF-document dat een of meer velden bevat die worden gebruikt voor het weergeven en verzamelen van informatie van gebruikers. De service ondersteunt de volgende API&#39;s:
 
-* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):**Hiermee exporteert u gegevens uit een PDF-formulier.
-* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):**Hiermee importeert u gegevens in een interactief PDF-formulier.
+* **[exportData](/help/forms/using/aem-document-services-programmatically.md#p-exportdata-p):gegevens** exporteren uit een PDF-formulier.
+* **[importData](/help/forms/using/aem-document-services-programmatically.md#p-importdata-p):gegevens** importeren naar een interactief PDF-formulier.
 
 ### exportData {#exportdata}
 
@@ -4294,7 +4294,7 @@ Hiermee exporteert u formuliergegevens uit een interactief PDF-formulier in XML-
   </tr> 
   <tr> 
    <td>dataFormat<br /> </td> 
-   <td>Hiermee geeft u de indeling op waarin gegevens worden geëxporteerd. De variabele accepteert variabele van het type enum (XDP, XmlData, Auto).<br /> </td> 
+   <td>Hiermee geeft u de indeling op waarin gegevens worden geëxporteerd. Het keurt variabele van type enum (XDP, XmlData, Auto) goed.<br /> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -4470,7 +4470,7 @@ De GeneratePDFService verstrekt APIs om diverse dossierformaten zoals .doc, .doc
    <td><strong>✓</strong></td>
    <td><strong>✓</strong></td>
   </tr>
-   <td>optimaliserenPDF</td>
+   <td>optimizePDF</td>
    <td><strong>✓</strong></td>
    <td>✖</td>
   </tr>
@@ -4530,7 +4530,7 @@ De service createPDF genereert de volgende uitzonderingen:
    <td>pdfSettings</td> 
    <td><p>PDF-uitvoer voor het geconverteerde document. U kunt alleen de volgende instellingen toepassen:</p> 
     <ul> 
-     <li>Hoge_kwaliteit_Afdrukken<br /> </li> 
+     <li>High_Quality_Print<br /> </li> 
      <li>PDFA1b_2005_RGB<br /> </li> 
      <li>PDFA1b_2005_CMYK<br /> </li> 
      <li>PDFX1a_2001<br /> </li> 
@@ -4719,7 +4719,7 @@ finally {
 }
 ```
 
-#### optimaliserenPDF {#optimizepdf}
+#### optimizePDF {#optimizepdf}
 
 Met de API OptimizePDF worden PDF-bestanden geoptimaliseerd door de grootte ervan te verkleinen. Het resultaat van deze conversie zijn PDF-bestanden die mogelijk kleiner zijn dan de oorspronkelijke versie. Met deze bewerking worden PDF-documenten ook geconverteerd naar de PDF-versie die is opgegeven in de optimalisatieparameters. Hiermee wordt het OptimizePDFResult-object geretourneerd dat geoptimaliseerde PDF bevat.
 
@@ -4943,7 +4943,7 @@ Map createPDF(Document inputDoc, String inputFileName, String pdfSettings, Strin
    <td>pdfSettings</td> 
    <td><p>PDF-uitvoerinstellingen voor het geconverteerde document. U kunt alleen de volgende instellingen toepassen:</p> 
     <ul> 
-     <li>Hoge_kwaliteit_Afdrukken<br /> </li> 
+     <li>High_Quality_Print<br /> </li> 
      <li>PDFA1b_2005_RGB<br /> </li> 
      <li>PDFA1b_2005_CMYK<br /> </li> 
      <li>PDFX1a_2001<br /> </li> 
