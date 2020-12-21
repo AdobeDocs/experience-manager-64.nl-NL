@@ -23,14 +23,14 @@ ht-degree: 0%
 De AEM Communities-consoles, die beschikbaar zijn in de ontwerpomgeving van het wereldwijde navigatievenster, bieden toegang tot beheertaken zoals
 
 * [Een community-site maken](sites-console.md)
-* Groepen [toevoegen](groups.md) die op de site zijn genest
-* Sjablonen voor [communitysites beheren](sites.md)
-* Leden van [gemeenschappen beheren](members.md)
-* [Door de gebruiker gegenereerde inhoud (UGC) modereren](moderate-ugc.md)
-* Aangepaste [badges maken](badges.md)
-* De [standaardopslag voor UGC configureren](srp-config.md)
+* [groepen](groups.md) die in de site zijn genest toevoegen
+* [Sjablonen voor communitysites beheren](sites.md)
+* [communityleden](members.md) beheren
+* [Door gebruiker gegenereerde inhoud ](moderate-ugc.md) moderniseren (UGC)
+* [aangepaste badges](badges.md) maken
+* Het vormen van [standaardopslag voor UGC](srp-config.md)
 
-Wanneer de opslag [](working-with-srp.md) UGC wordt gevormd om een gemeenschappelijke opslag te zijn die door auteur en publicatiemilieu&#39;s wordt gedeeld, werkt de [moderatieconsole](moderation.md), beschikbaar bij zowel auteur als publicatiemilieu&#39;s, op één enkele instantie van UGC.
+Wanneer [UGC-opslag](working-with-srp.md) is geconfigureerd als een algemene opslag die wordt gedeeld door auteur- en publicatieomgevingen, werkt de [moderatieconsole](moderation.md), die beschikbaar is in zowel auteur- als publicatieomgevingen, op één enkele instantie van UGC.
 
 In de auteursomgeving, na het aanmelden met beheerdervoorrechten, zijn de `Communities` consoles beschikbaar bij de navigatie en hulpmiddelconsoles.
 
@@ -42,14 +42,14 @@ In de auteursomgeving, na het aanmelden met beheerdervoorrechten, zijn de `Commu
 
 ![chlimage_1-91](assets/chlimage_1-91.png)
 
-Selecteer het `Adobe Experience Manager` pictogram in de linkerbovenhoek om het algemene navigatievenster te openen en toegang te krijgen tot twee pictogrammen:
+Selecteer het pictogram `Adobe Experience Manager` in de linkerbovenhoek om het algemene navigatievenster te openen en toegang te krijgen tot twee pictogrammen:
 
 * [Navigatieconsole](#navigation-console)
 * [Tools Console](tools.md)
 
 ## Navigatieconsole {#navigation-console}
 
-Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te hebben selecteer **navigatie, Gemeenschappen**.
+Als u toegang wilt krijgen tot de verschillende communautaire consoles, selecteert u **navigatie, Communities**.
 
 ![chlimage_1-92](assets/chlimage_1-92.png)
 
@@ -59,20 +59,20 @@ Om tot de diverse consoles van Gemeenschappen, van globale navigatie toegang te 
 
 * [Moderatie](moderation.md)
 
-   De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het publicatiemilieu aan communautaire leden toegewezen de rol van [communautaire moderator](users.md#publishenvironmentusersandgroups) voor één of meerdere communautaire plaatsen.
+   De console van de Moderatie is voor bulkmoderatie van UGC en in het auteursmilieu. Een gelijkaardige bulkmoderatieconsole is toegankelijk in het publicatiemilieu aan communautaire leden die de rol van [communautaire moderator](users.md#publishenvironmentusersandgroups) voor één of meerdere communautaire plaatsen toegewezen.
 
 * [Leden, groepen](members.md)
 
-   De leden en de Groepen consoles zijn voor het beheren van communautaire leden en lidgroepen die in publiceren milieu van het auteursmilieu bestaan.
+   De leden en de Groepen consoles zijn voor het beheren van communautaire leden en lidgroepen die in publicatiemilieu van het auteursmilieu bestaan.
 
 * [Rapporten](reports.md)
 
-   In de rapportconsole kunnen rapporten over toewijzingen, paginaweergaven en geposte inhoud (UGC) worden gegenereerd wanneer een communitysite Adobe Analytics [heeft](sites-console.md#analytics)ingeschakeld. De console is alleen beschikbaar in de auteursomgeving.
+   De console van Rapporten is waar de rapporten over taken, paginameningen, en geposte inhoud (UGC) kunnen worden geproduceerd wanneer een communautaire plaats [toegelaten Adobe Analytics](sites-console.md#analytics) heeft. De console is alleen beschikbaar in de auteursomgeving.
 
 * [Bronnen](resources.md)
 
-   De console van Middelen is waar [enablement managers](enablement.md#communitymanagers) creeren, leiden en middelen toewijzen aan leden van een [enablement communautaire plaats](overview.md#enablement-community). De console is alleen beschikbaar in de auteursomgeving.
+   De console van Middelen is waar [enablement managers](enablement.md#communitymanagers) creeer, beheer en wijs middelen aan leden van een [enablement communautaire plaats](overview.md#enablement-community) toe. De console is alleen beschikbaar in de auteursomgeving.
 
-## Tools Console {#tools-console}
+## Gereedschapsconsole {#tools-console}
 
-Toegang tot [Community Tools](tools.md) (voorheen de beheerconsole) vanaf globale navigatie: **[!UICONTROL Tools > Communities]**
+Om tot [Communities Tools](tools.md) (vroeger de beheersconsole), van globale navigatie toegang te hebben: **[!UICONTROL Tools > Communities]**
