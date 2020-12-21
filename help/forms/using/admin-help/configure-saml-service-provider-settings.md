@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# SAML-serviceleverinstellingen configureren{#configure-saml-service-provider-settings}
+# SAML-serviceprovider-instellingen configureren{#configure-saml-service-provider-settings}
 
 SAML (Security Assertion Markup Language) is een van de opties die u kunt selecteren wanneer u een machtiging voor een onderneming of hybride domein configureert. SAML wordt hoofdzakelijk gebruikt om SSO over veelvoudige domeinen te steunen. Wanneer SAML als uw authentificatieleverancier wordt gevormd, registreren de gebruikers en voor authentiek verklaren aan AEM vormen via een gespecificeerde derde identiteitsleverancier (IDP).
 
-Voor een verklaring van SAML, zie de Taal van de Prijsverhoging van de [Veiligheid (SAML) V2.0 Technisch Overzicht](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
+Voor een verklaring van SAML, zie [de Taal van de Prijsverhoging van de Bevestiging van de Veiligheid (SAML) V2.0 Technisch Overzicht](https://www.oasis-open.org/committees/download.php/20645/sstc-saml-tech-overview-2%200-draft-10.pdf).
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > SAML Service Provider Settings.
-1. Typ in het vak Id van Service Provider-entiteit een unieke id die u wilt gebruiken als id voor de implementatie van de AEM-provider. U geeft deze unieke id ook op wanneer u uw IDP configureert (bijvoorbeeld `um.lc.com`.) U kunt ook de URL gebruiken die wordt gebruikt voor toegang tot AEM formulieren (bijvoorbeeld `https://AEMformsserver`).
+1. Typ in het vak Id van Service Provider-entiteit een unieke id die u wilt gebruiken als id voor de implementatie van de AEM-provider. U specificeert ook deze unieke identiteitskaart wanneer het vormen van uw IDP (bijvoorbeeld, `um.lc.com`.) U kunt ook de URL gebruiken die wordt gebruikt om toegang te krijgen tot AEM formulieren (bijvoorbeeld `https://AEMformsserver`).
 1. Typ in het vak Basis-URL van serviceprovider de basis-URL voor uw formulierserver (bijvoorbeeld `https://AEMformsserver:8080`).
 1. (Optioneel) Als u wilt dat AEM formulieren ondertekende verificatieaanvragen naar de IDP kunnen verzenden, voert u de volgende taken uit:
 
-   * Gebruik Betrouwbaarheidsbeheer om een referentie in de PKCS #12-indeling te importeren, waarbij Referentie voor documenthandtekening is geselecteerd als Betrouwbaarheidswinkeltype. (Zie Lokale referenties [beheren](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
+   * Gebruik Betrouwbaarheidsbeheer om een referentie in de PKCS #12-indeling te importeren, waarbij Referentie voor documenthandtekening is geselecteerd als Betrouwbaarheidswinkeltype. (Zie [Lokale referenties beheren](/help/forms/using/admin-help/local-credentials.md#managing-local-credentials).)
    * Selecteer in de lijst Referentietoets Service Provider de alias die u aan de referentie in Trust Store hebt toegewezen.
    * Klik op Exporteren om de URL-inhoud op te slaan in een bestand en importeer dat bestand vervolgens in uw IDP.
 
