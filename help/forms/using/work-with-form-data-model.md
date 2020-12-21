@@ -34,7 +34,7 @@ Lees verder voor meer informatie over verschillende taken en configuraties die u
 
 >[!NOTE]
 >
->U moet lid zijn van zowel **fdm-auteur** als **formulieren-gebruiker** groepen om formuliergegevensmodel te kunnen maken en ermee te kunnen werken. Neem contact op met de AEM beheerder om lid te worden van de groepen.
+>U moet lid zijn van zowel **fdm-auteur** als **forms-user** groepen om met het model van vormgegevens te kunnen tot stand brengen en werken. Neem contact op met de AEM beheerder om lid te worden van de groepen.
 
 ## Objecten en services voor gegevensmodellen toevoegen {#add-data-model-objects-and-services}
 
@@ -64,7 +64,7 @@ Objecten en services voor gegevensmodellen toevoegen:
 
    >[!NOTE]
    >
-   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata)voor meer informatie.
+   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata) voor meer informatie.
 
 1. Tik **[!UICONTROL Save]** om het formuliermodelobject op te slaan.
 
@@ -82,7 +82,7 @@ Een gegevensmodelobject maken zonder gegevensbronnen:
 
 1. Meld u aan bij de AEM auteur, navigeer naar **[!UICONTROL Forms > Data Integrations]** en open het formuliergegevensmodel waarin u een gegevensmodelobject of -entiteit wilt maken.
 1. Tik op **[!UICONTROL Create Entity]**.
-1. Geef in het dialoogvenster Gegevensmodel maken een naam op voor het gegevensmodelobject en tik op **[!UICONTROL Add]**. Er wordt een gegevensmodelobject toegevoegd aan het formuliergegevensmodel. Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
+1. Geef in het dialoogvenster Gegevensmodel maken een naam op voor het gegevensmodelobject en tik **[!UICONTROL Add]**. Er wordt een gegevensmodelobject toegevoegd aan het formuliergegevensmodel. Het nieuwe gegevensmodelobject is niet gebonden aan een gegevensbron en heeft geen eigenschappen zoals in de volgende afbeelding wordt getoond.
 
    ![nieuwe entiteit](assets/new-entity.png)
 
@@ -94,37 +94,37 @@ Met de formuliergegevensmodeleditor kunt u onderliggende eigenschappen in een ge
 
 Een onderliggende eigenschap maken:
 
-1. Selecteer in een formuliergegevensmodel een gegevensmodelobject en tik op **[!UICONTROL Create Child Property]**.
-1. Geef in het **[!UICONTROL Create Child Property]** dialoogvenster een naam en gegevenstype op voor de eigenschap in respectievelijk de velden **[!UICONTROL Name]** en **[!UICONTROL Type]** velden. U kunt desgewenst een titel en beschrijving voor de eigenschap opgeven.
-1. Schakel Berekend in als de eigenschap een berekende eigenschap is. De waarde van een berekende eigenschap wordt berekend op basis van een regel of expressie. Zie Eigenschappen [](#edit-properties)bewerken voor meer informatie.
+1. Selecteer een gegevensmodelobject in een formuliergegevensmodel en tik op **[!UICONTROL Create Child Property]**.
+1. Geef in het dialoogvenster **[!UICONTROL Create Child Property]** een naam en gegevenstype op voor de eigenschap in respectievelijk de velden **[!UICONTROL Name]** en **[!UICONTROL Type]**. U kunt desgewenst een titel en beschrijving voor de eigenschap opgeven.
+1. Schakel Berekend in als de eigenschap een berekende eigenschap is. De waarde van een berekende eigenschap wordt berekend op basis van een regel of expressie. Zie [Eigenschappen bewerken](#edit-properties) voor meer informatie.
 1. Als het gegevensmodelobject aan een gegevensbron is gebonden, wordt de toegevoegde onderliggende eigenschap automatisch gebonden aan de eigenschap van het bovenliggende gegevensmodelobject met dezelfde naam en hetzelfde gegevenstype.
 
-   Tik op het bladerpictogram naast het **[!UICONTROL Bind Reference]** veld om een onderliggende eigenschap handmatig te binden met een objecteigenschap van het gegevensmodel. In het **[!UICONTROL Select Object]** dialoogvenster worden alle eigenschappen van het bovenliggende gegevensmodelobject weergegeven. Selecteer een eigenschap die u wilt binden en tik op het verdeelstreeppictogram. Merk op dat u slechts een bezit van het zelfde gegevenstype zoals het kindbezit kunt selecteren.
+   Tik op het bladerpictogram naast het veld **[!UICONTROL Bind Reference]** om een onderliggende eigenschap handmatig te binden met een objecteigenschap van het gegevensmodel. In het dialoogvenster **[!UICONTROL Select Object]** worden alle eigenschappen van het bovenliggende gegevensmodelobject weergegeven. Selecteer een eigenschap die u wilt binden en tik op het verdeelstreeppictogram. Merk op dat u slechts een bezit van het zelfde gegevenstype zoals het kindbezit kunt selecteren.
 
-1. Tik **[!UICONTROL Done]** **[!UICONTROL Save]** om de onderliggende eigenschap op te slaan en tik om het formuliergegevensmodel op te slaan. De eigenschap child wordt nu toegevoegd aan het gegevensmodelobject.
+1. Tik **[!UICONTROL Done]** om de eigenschap child op te slaan en tik **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan. De eigenschap child wordt nu toegevoegd aan het gegevensmodelobject.
 
-Nadat u gegevensmodelobjecten en -eigenschappen hebt gemaakt, kunt u doorgaan met het maken van adaptieve formulieren en interactieve communicatie op basis van het formuliergegevensmodel. Als u later gegevensbronnen beschikbaar en geconfigureerd hebt, kunt u het gegevensmodel van het formulier binden met gegevensbronnen. De binding wordt automatisch bijgewerkt in de bijbehorende adaptieve formulieren en interactieve communicatie. Zie Formuliergegevensmodel [gebruiken voor meer informatie over het maken van adaptieve formulieren en interactieve communicatie met behulp van het](/help/forms/using/using-form-data-model.md)formuliergegevensmodel.
+Nadat u gegevensmodelobjecten en -eigenschappen hebt gemaakt, kunt u doorgaan met het maken van adaptieve formulieren en interactieve communicatie op basis van het formuliergegevensmodel. Als u later gegevensbronnen beschikbaar en geconfigureerd hebt, kunt u het gegevensmodel van het formulier binden met gegevensbronnen. De binding wordt automatisch bijgewerkt in de bijbehorende adaptieve formulieren en interactieve communicatie. Zie [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md) voor meer informatie over het maken van adaptieve formulieren en interactieve communicatie met behulp van het formuliergegevensmodel.
 
 ### Objecten en eigenschappen van gegevensmodellen binden {#bind-data-model-objects-and-properties}
 
-Wanneer de gegevensbronnen die u wilt integreren met het formuliergegevensmodel beschikbaar zijn, kunt u deze toevoegen aan het formuliergegevensmodel zoals beschreven in Gegevensbronnen [](/help/forms/using/create-form-data-models.md#update)bijwerken. Voer vervolgens de volgende handelingen uit om de niet-gebonden gegevensmodelobjecten en -eigenschappen te binden:
+Wanneer de gegevensbronnen die u wilt integreren met het formuliergegevensmodel beschikbaar zijn, kunt u deze toevoegen aan het formuliergegevensmodel zoals beschreven in [Gegevensbronnen bijwerken](/help/forms/using/create-form-data-models.md#update). Voer vervolgens de volgende handelingen uit om de niet-gebonden gegevensmodelobjecten en -eigenschappen te binden:
 
 1. Selecteer in het formuliergegevensmodel de niet-gebonden gegevensbron die u met een gegevensbron wilt binden.
 1. Tik op **[!UICONTROL Edit Properties]**.
-1. Tik in het **[!UICONTROL Edit Properties]** deelvenster op het bladerpictogram naast het **[!UICONTROL Binding]** veld. Hiermee wordt het **[!UICONTROL Select Object]** dialoogvenster geopend met gegevensbronnen die in het formuliergegevensmodel zijn toegevoegd.
+1. Tik in het deelvenster **[!UICONTROL Edit Properties]** op het bladerpictogram naast het veld **[!UICONTROL Binding]**. Hiermee wordt het dialoogvenster **[!UICONTROL Select Object]** geopend waarin de gegevensbronnen worden weergegeven die in het formuliergegevensmodel zijn toegevoegd.
 
    ![select-object](assets/select-object.png)
 
 1. Vouw de gegevensbronstructuur uit en selecteer een gegevensmodelobject om mee te binden en tik op het verdeelstreeppictogram.
-1. Tik **[!UICONTROL Done]** **[!UICONTROL Save]** om de eigenschappen op te slaan en tik vervolgens om het formuliergegevensmodel op te slaan. Het gegevensmodelobject is nu gebonden aan een gegevensbron. Het gegevensmodelobject is niet meer gemarkeerd als Niet geconsolideerd.
+1. Tik op **[!UICONTROL Done]** om de eigenschappen op te slaan en tik vervolgens op **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan. Het gegevensmodelobject is nu gebonden aan een gegevensbron. Het gegevensmodelobject is niet meer gemarkeerd als Niet geconsolideerd.
 
    ![bound-model-object](assets/bound-model-object.png)
 
-## Services configureren {#configure-services}
+## Services {#configure-services} configureren
 
 Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, doe het volgende om gelezen te vormen en de diensten te schrijven:
 
-1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en te tikken **[!UICONTROL Edit Properties]**.
+1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en op **[!UICONTROL Edit Properties]** te tikken.
 
    ![bewerken-eigenschappen](assets/edit-properties.png)
 
@@ -140,9 +140,9 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
    >
    >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. Wanneer u een de dienstgegevensbron van OData aan een Model van de Gegevens van de Vorm toevoegt, is er de dienst beschikbaar in het Model van de Gegevens van de Vorm voor alle navigatie eigenschappen in een voorwerp van het gegevensmodel. U kunt deze service gebruiken om de navigatie-eigenschappen van het overeenkomende gegevensmodelobject te lezen.
    >
-   >Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata)voor meer informatie over het gebruik van de service.
+   >Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata) voor meer informatie over de service.
 
-1. Schakel deze optie in **[!UICONTROL Top Level Object]** om op te geven of het gegevensmodelobject een modelobject op het hoogste niveau is.
+1. Schakel **[!UICONTROL Top Level Object]** in om op te geven of het gegevensmodelobject een modelobject op het hoogste niveau is.
 
    Gegevensmodelobjecten die zijn geconfigureerd in een formuliergegevensmodel, zijn beschikbaar voor gebruik op het tabblad Gegevensmodelobjecten in de inhoudbrowser van een adaptief formulier op basis van het formuliergegevensmodel. Wanneer u een koppeling toevoegt tussen twee gegevensmodelobjecten, wordt het gegevensmodelobject dat u koppelt, genest onder het gegevensmodelobject dat u koppelt op het tabblad Gegevensmodelobjecten. Als het geneste gegevensmodel een object op hoofdniveau is, wordt het ook afzonderlijk weergegeven op het tabblad Objecten gegevensmodel. Daarom ziet u twee items ervan, een binnen en een buiten de geneste hiërarchie, die verwarring kunnen veroorzaken bij auteurs van formulieren. Als u het gekoppelde gegevensmodelobject alleen in de geneste hiërarchie wilt weergeven, schakelt u de eigenschap Object op hoogste niveau uit.
 
@@ -152,21 +152,21 @@ Om gegevens voor een voorwerp van het gegevensmodel te lezen en te schrijven, do
 
    Lees en schrijf de diensten die voor werknemersgegevensbron worden gevormd
 
-1. Tik ![name_6_3_edit](assets/aem_6_3_edit.png) voor het read de dienstargument om het argument aan een Attribuut van het Profiel van de Gebruiker, een Attribuut van het Verzoek, of Letterlijke waarde te binden en de bindende waarde te specificeren. Het bindt het de dienstargument aan de gespecificeerde bindende attributen of letterlijke waarde, die tot de dienst als argument wordt overgegaan om details te halen verbonden aan de gespecificeerde waarde uit de gegevensbron.
+1. Tik ![aem_6_3_edit](assets/aem_6_3_edit.png) voor het argument van de leesservice om het argument aan een Attribuut van het Profiel van de Gebruiker, een Attribuut van het Verzoek, of Letterlijke waarde te binden en de bindende waarde te specificeren. Het bindt het de dienstargument aan de gespecificeerde bindende attributen of letterlijke waarde, die tot de dienst als argument wordt overgegaan om details te halen verbonden aan de gespecificeerde waarde uit de gegevensbron.
 
-   In dit voorbeeld neemt het `id` argument de waarde van het `empid` kenmerk van het gebruikersprofiel en geeft het als een argument door aan de leesservice. De methode leest en retourneert waarden van gekoppelde eigenschappen van het `employee` gegevensmodelobject voor de opgegeven eigenschap `empid`. Dus als u 00250 opgeeft in het `empid` veld in het formulier, leest de leestoepassing details van de werknemer met 00250 werknemer-id.
+   In dit voorbeeld neemt het argument `id` de waarde van het kenmerk `empid` van het gebruikersprofiel en geeft het als een argument door aan de leesservice. De methode leest en retourneert waarden van gekoppelde eigenschappen van het `employee` gegevensmodelobject voor het opgegeven `empid`. Dus als u 00250 opgeeft in het veld `empid` in het formulier, leest de leesserservice details van de werknemer met 00250 werknemer-id.
 
-   Daarnaast kunt u een argument verplicht of optioneel maken.
+   Bovendien kunt u een argument verplicht of optioneel maken.
 
    ![edit-argument](assets/edit-argument.png)
 
    Het id-argument binden om kenmerk van AEM gebruikersprofiel leeg te maken
 
-1. Tik **[!UICONTROL Done]** om het argument op te slaan, **[!UICONTROL Done]** de eigenschappen op te slaan en vervolgens het gegevensmodel van het formulier op **[!UICONTROL Save]** te slaan.
+1. Tik **[!UICONTROL Done]** om het argument op te slaan, **[!UICONTROL Done]** om de eigenschappen op te slaan en **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 
 ## Koppelingen toevoegen {#add-associations}
 
-Er zijn doorgaans koppelingen tussen gegevensmodelobjecten in een gegevensbron. De koppeling kan een-op-een of een-op-een zijn. Bijvoorbeeld, kunnen er veelvoudige gebiedsdelen verbonden aan een werknemer zijn. Het wordt bedoeld als één-aan-vele vereniging en door `1:n` op de lijn getoond verbindend bijbehorende voorwerpen van het gegevensmodel. Nochtans, als een vereniging een unieke werknemersnaam voor een bepaalde werknemersidentiteitskaart terugkeert, wordt het bedoeld als één-op-één vereniging.
+Er zijn doorgaans koppelingen tussen gegevensmodelobjecten in een gegevensbron. De koppeling kan een-op-een of een-op-een zijn. Bijvoorbeeld, kunnen er veelvoudige gebiedsdelen verbonden aan een werknemer zijn. Het wordt bedoeld als één-aan-vele vereniging en die door `1:n` op de lijn wordt getoond die bijbehorende voorwerpen van het gegevensmodel verbindt. Nochtans, als een vereniging een unieke werknemersnaam voor een bepaalde werknemersidentiteitskaart terugkeert, wordt het bedoeld als één-op-één vereniging.
 
 Wanneer u gekoppelde gegevensmodelobjecten in een gegevensbron toevoegt aan een formuliergegevensmodel, blijven de koppelingen behouden en worden ze weergegeven als verbonden door pijllijnen. In een formuliergegevensmodel kunt u koppelingen toevoegen tussen gegevensmodelobjecten in verschillende gegevensbronnen.
 
@@ -176,13 +176,13 @@ Wanneer u gekoppelde gegevensmodelobjecten in een gegevensbron toevoegt aan een 
 
 Een koppeling toevoegen:
 
-1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en te tikken **[!UICONTROL Add Association]**. Het dialoogvenster Koppeling toevoegen wordt geopend.
+1. Schakel het selectievakje boven aan een gegevensmodelobject in om het te selecteren en op **[!UICONTROL Add Association]** te tikken. Het dialoogvenster Koppeling toevoegen wordt geopend.
 
    ![add-association](assets/add-association.png)
 
    >[!NOTE]
    >
-   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. U kunt deze navigatie-eigenschappen gebruiken wanneer u koppelingen toevoegt aan het formuliergegevensmodel. Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata)voor meer informatie.
+   >Naast gegevensmodelvoorwerpen en de diensten, omvat het document van de de dienstmeta-gegevens OData navigatie eigenschappen die vereniging tussen twee voorwerpen van het gegevensmodel bepalen. U kunt deze navigatie-eigenschappen gebruiken wanneer u koppelingen toevoegt aan het formuliergegevensmodel. Zie [Werken met navigatie-eigenschappen van OData-services](#navigation-properties-odata) voor meer informatie.
 
    Het dialoogvenster Koppeling toevoegen wordt geopend.
 
@@ -197,13 +197,13 @@ Een koppeling toevoegen:
    * Selecteer het gegevensmodelobject dat u wilt koppelen.
    * Selecteer de leesservice om gegevens van het geselecteerde modelobject te lezen. Het argument van de leesservice wordt weergegeven. Bewerk het argument om het indien nodig te wijzigen en koppel het aan de eigenschap van het gegevensmodelobject dat u wilt koppelen.
 
-   In het volgende voorbeeld is het standaardargument voor de leesservice van het gegevensmodelobject Afhankelijkheden `dependentid`.
+   In het volgende voorbeeld is het standaardargument voor de leesservice van het gegevensmodelobject Afhankelijke elementen `dependentid`.
 
    ![add-association-example](assets/add-association-example.png)
 
    Het standaardargument voor de dienst van het lezen van Afhankelijkheden is afhankelijk
 
-   Het argument moet echter een algemene eigenschap zijn tussen het gekoppelde gegevensmodelobject, wat in dit voorbeeld `Employeeid`is. Daarom moet het `Employeeid` argument aan het `id` bezit van het de gegevensmodelvoorwerp van de Werknemer worden gebonden om de bijbehorende gebiedsdeeldetails van het het gegevensmodelvoorwerp van Afhankelijkheden te halen.
+   Het argument moet echter een algemene eigenschap zijn tussen het gekoppelde gegevensmodelobject, die in dit voorbeeld `Employeeid` is. Daarom moet het `Employeeid` argument aan het `id` bezit van het de gegevensmodelvoorwerp van de Werknemer worden gebonden om de bijbehorende gebiedsdeeldetails van het het modelvoorwerp van Afhankelijke gegevens te halen.
 
    ![addAssociation-example-2](assets/add-association-example-2.png)
 
@@ -211,14 +211,14 @@ Een koppeling toevoegen:
 
    Tik **[!UICONTROL Done]** om het argument op te slaan.
 
-1. Tik **[!UICONTROL Done]** om de koppeling op te slaan en het formuliergegevensmodel op **[!UICONTROL Save]** te slaan.
+1. Tik **[!UICONTROL Done]** om de koppeling op te slaan en **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 1. Herhaal de stappen om desgewenst meer koppelingen te maken.
 
 >[!NOTE]
 >
 >De toegevoegde koppeling wordt in het vak met gegevensmodelobjecten weergegeven met de opgegeven titel en een regel die de bijbehorende gegevensmodelobjecten verbindt.
 >
->U kunt een koppeling bewerken door het desbetreffende selectievakje in te schakelen en op de koppeling te tikken **[!UICONTROL Edit Association]**.
+>U kunt een vereniging uitgeven door checkbox tegen het te selecteren en **[!UICONTROL Edit Association]** te tikken.
 
 ![associatie met toegevoegde waarde](assets/added-association.png)
 
@@ -229,7 +229,7 @@ U kunt eigenschappen van gegevensmodelobjecten bewerken, de eigenschappen ervan 
 Eigenschappen bewerken:
 
 1. Schakel het selectievakje in naast een gegevensmodelobject, een eigenschap of een service in het formuliergegevensmodel.
-1. Tik op **[!UICONTROL Edit Properties]**. Het **[!UICONTROL Edit Properties]** deelvenster voor het geselecteerde modelobject, de geselecteerde eigenschap of service wordt geopend.
+1. Tik op **[!UICONTROL Edit Properties]**. Het deelvenster **[!UICONTROL Edit Properties]** voor het geselecteerde modelobject, de geselecteerde eigenschap of service wordt geopend.
 
    * **Gegevensmodelobject**: Geef de lees- en schrijfservices op en bewerk argumenten.
    * **Eigenschap**: Geef het type, subtype en de indeling voor de eigenschap op. U kunt ook opgeven of de geselecteerde eigenschap de primaire sleutel voor het gegevensmodelobject is.
@@ -239,16 +239,16 @@ Eigenschappen bewerken:
 
    Dialoogvenster Eigenschappen bewerken voor een get-service
 
-1. Tik **[!UICONTROL Done]** om eigenschappen op te slaan en het formuliergegevensmodel op **[!UICONTROL Save]** te slaan.
+1. Tik **[!UICONTROL Done]** om eigenschappen op te slaan en **[!UICONTROL Save]** om het formuliergegevensmodel op te slaan.
 
-### Berekende eigenschappen maken {#computed}
+### Berekende eigenschappen {#computed} maken
 
 Een berekende eigenschap is de eigenschap waarvan de waarde wordt berekend op basis van een regel of expressie. Met behulp van een regel kunt u de waarde van een berekende eigenschap instellen op een letterlijke tekenreeks, een getal, het resultaat van een wiskundige expressie of de waarde van een andere eigenschap in het formuliergegevensmodel.
 
-U kunt bijvoorbeeld een berekende eigenschap **FullName** maken waarvan de waarde het resultaat is van een samenvoeging van de bestaande eigenschappen **FirstName** en **LastName** . Daartoe:
+U kunt bijvoorbeeld een berekende eigenschap **FullName** maken waarvan de waarde het resultaat is van een samenvoeging van de bestaande eigenschappen **FirstName** en **LastName**. Daartoe:
 
 1. Maak een nieuwe eigenschap met de naam `FullName` waarvan het gegevenstype String is.
-1. Schakel deze optie in **[!UICONTROL Computed]** en tik **[!UICONTROL Done]** om de eigenschap te maken.
+1. Schakel **[!UICONTROL Computed]** in en tik **[!UICONTROL Done]** om de eigenschap te maken.
 
    ![berekend](assets/computed.png)
 
@@ -256,24 +256,24 @@ U kunt bijvoorbeeld een berekende eigenschap **FullName** maken waarvan de waard
 
    ![berekend](assets/computed-prop.png)
 
-1. Selecteer de eigenschap FullName en tik op **[!UICONTROL Edit Rule]**. Er wordt een regeleditorvenster geopend.
-1. Tik in het venster van de regeleditor op **[!UICONTROL Create]**. Er wordt een **[!UICONTROL Set Value]** regelvenster geopend.
+1. Selecteer het bezit FullName en tik **[!UICONTROL Edit Rule]**. Er wordt een regeleditorvenster geopend.
+1. Tik in het venster van de regeleditor op **[!UICONTROL Create]**. Er wordt een **[!UICONTROL Set Value]**-regelvenster geopend.
 
-   Selecteer in de vervolgkeuzelijst Optie selecteren **[!UICONTROL Mathematical Expression]**. Andere beschikbare opties zijn **[!UICONTROL Form Data Model Object]** en **[!UICONTROL String]**.
+   Selecteer **[!UICONTROL Mathematical Expression]** in het keuzemenu Optie selecteren. Andere beschikbare opties zijn **[!UICONTROL Form Data Model Object]** en **[!UICONTROL String]**.
 
-1. Selecteer in de wiskundige expressie respectievelijk de eerste **[!UICONTROL FirstName]** en **[!UICONTROL LastName]** de tweede objecten. Selecteren **[!UICONTROL plus]** als operator.
+1. Selecteer **[!UICONTROL FirstName]** en **[!UICONTROL LastName]** in respectievelijk eerste en tweede object in de wiskundige expressie. Selecteer **[!UICONTROL plus]** als exploitant.
 
-   Tik **[!UICONTROL Done]** en tik vervolgens **[!UICONTROL Close]** om het venster van de regeleditor te sluiten. De regel ziet er ongeveer als volgt uit.
+   Tik **[!UICONTROL Done]** en tik **[!UICONTROL Close]** om het venster van de regeleditor te sluiten. De regel ziet er ongeveer als volgt uit.
 
    ![regel](assets/rule.png)
 
-1. Tik op het formuliergegevensmodel **[!UICONTROL Save]**. Het gegevens verwerkte bezit wordt gevormd.
+1. Tik op **[!UICONTROL Save]** in het formuliergegevensmodel. Het gegevens verwerkte bezit wordt gevormd.
 
-## Werken met navigatie-eigenschappen van OData-diensten {#work-with-navigation-properties-of-odata-services}
+## Werken met navigatie-eigenschappen van OData-services {#work-with-navigation-properties-of-odata-services}
 
-In de diensten van OData, navigatie worden de eigenschappen gebruikt om verenigingen tussen twee voorwerpen van het gegevensmodel te bepalen. Deze eigenschappen worden gedefinieerd op een entiteitstype of een complex type. In het volgende voorbeeld uit het metagegevensbestand van de voorbeeldvoorbeeldservices [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData bevat de personenentiteit bijvoorbeeld drie navigatie-eigenschappen: Vrienden, BestFriend en Trips.
+In de diensten van OData, navigatie worden de eigenschappen gebruikt om verenigingen tussen twee voorwerpen van het gegevensmodel te bepalen. Deze eigenschappen worden gedefinieerd op een entiteitstype of een complex type. In het volgende extract uit het metagegevensbestand van het voorbeeld [TripPin](https://www.odata.org/blog/trippin-new-odata-v4-sample-service/) OData voorbeeldservices bevat de personenentiteit bijvoorbeeld drie navigatie-eigenschappen: Vrienden, BestFriend en Trips.
 
-Raadpleeg de [OData-documentatie](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536)voor meer informatie over navigatie-eigenschappen.
+Zie [OData-documentatie](https://docs.oasis-open.org/odata/odata/v4.0/errata03/os/complete/part3-csdl/odata-v4.0-errata03-os-part3-csdl-complete.html#_Toc453752536) voor meer informatie over navigatie-eigenschappen.
 
 ```xml
 <edmx:Edmx xmlns:edmx="https://docs.oasis-open.org/odata/ns/edmx" Version="4.0">
@@ -301,25 +301,25 @@ Raadpleeg de [OData-documentatie](https://docs.oasis-open.org/odata/odata/v4.0/e
 </EntityType>
 ```
 
-Wanneer u een OData-service in een formuliergegevensmodel configureert, worden alle navigatie-eigenschappen in een entiteitcontainer beschikbaar gesteld via een service in het formuliergegevensmodel. In dit voorbeeld van de TripPin OData-service kunnen de drie navigatie-eigenschappen in de `Person` entiteitcontainer worden gelezen met behulp van één `GET LINK` service in het formuliergegevensmodel.
+Wanneer u een OData-service in een formuliergegevensmodel configureert, worden alle navigatie-eigenschappen in een entiteitcontainer beschikbaar gesteld via een service in het formuliergegevensmodel. In dit voorbeeld van de TripPin OData-service kunnen de drie navigatie-eigenschappen in de `Person`-entiteitcontainer worden gelezen met behulp van een `GET LINK`-service in het formuliergegevensmodel.
 
-Hieronder wordt de `GET LINK of Person /People` service in het formuliergegevensmodel gemarkeerd. Dit is een gecombineerde service voor de drie navigatie-eigenschappen in de `Person` entiteit TripPin OData-service.
+Hieronder wordt de `GET LINK of Person /People`-service in het formuliergegevensmodel gemarkeerd. Dit is een gecombineerde service voor de drie navigatie-eigenschappen in de `Person`-entiteit van de TripPin OData-service.
 
 ![nav-prop-service](assets/nav-prop-service.png)
 
-Zodra u de `GET LINK` dienst aan het lusje van de Diensten in het Model van de Gegevens van de Vorm toevoegt, kunt u de eigenschappen uitgeven om het voorwerp van het outputmodel en het navigatie bezit te kiezen in de dienst te gebruiken. De volgende `GET LINK of Person /People` service in het volgende voorbeeld gebruikt bijvoorbeeld Trip als het uitvoermodelobject en de navigatie-eigenschap als Trips.
+Nadat u de service `GET LINK` hebt toegevoegd aan het tabblad Services in het formuliergegevensmodel, kunt u de eigenschappen bewerken en het uitvoermodelobject en de navigatie-eigenschap kiezen die u in de service wilt gebruiken. De volgende `GET LINK of Person /People`-service in het volgende voorbeeld gebruikt bijvoorbeeld Trip als het uitvoermodelobject en de navigatie-eigenschap als Trips.
 
 ![edit-prop-nav-prop](assets/edit-prop-nav-prop.png)
 
 >[!NOTE]
 >
->De waarden beschikbaar op het **[!UICONTROL Default Value]** gebied van het argument **NavigationPropertyName** hangen van de staat van de **[!UICONTROL Return array?]** knevelknoop af. Als deze optie is ingeschakeld, worden navigatie-eigenschappen van het type Verzameling weergegeven.
+>De waarden beschikbaar in het **[!UICONTROL Default Value]** gebied van **NavigationPropertyName** argument hangen van de staat van **[!UICONTROL Return array?]** knevelknoop af. Als deze optie is ingeschakeld, worden navigatie-eigenschappen van het type Verzameling weergegeven.
 
-In dit voorbeeld kunt u het uitvoermodelobject ook kiezen als argument voor personen- en navigatie-eigenschappen als Vrienden of BestFriend (afhankelijk van of dit **[!UICONTROL Return array?]** is ingeschakeld of uitgeschakeld).
+In dit voorbeeld kunt u het uitvoermodelobject ook kiezen als argument voor personen- en navigatie-eigenschappen als Vrienden of BestFriend (afhankelijk van of **[!UICONTROL Return array?]** is ingeschakeld of uitgeschakeld).
 
 ![edit-prop-nav-prop2](assets/edit-prop-nav-prop2.png)
 
-Op dezelfde manier kunt u een `GET LINK` dienst kiezen en zijn navigatie-eigenschappen vormen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt kunnen selecteren, moet u controleren of de eigenschap is ingesteld op **[!UICONTROL Binding To field]** **[!UICONTROL Literal]**.
+Op dezelfde manier kunt u een `GET LINK` dienst kiezen en zijn navigatie eigenschappen vormen wanneer het toevoegen van verenigingen in het Model van de Gegevens van de Vorm. Als u echter een navigatie-eigenschap wilt kunnen selecteren, moet u ervoor zorgen dat **[!UICONTROL Binding To field]** is ingesteld op **[!UICONTROL Literal]**.
 
 ![add-association-nav-prop](assets/add-association-nav-prop.png)
 
@@ -333,15 +333,15 @@ Ga als volgt te werk om voorbeeldgegevens te genereren en te bewerken:
 
    ![voorbeeldgegevens](assets/sample-data.png)
 
-1. Bewerk in **[!UICONTROL Edit Sample Data]** het venster de vereiste gegevens en tik op **[!UICONTROL Save]**.
+1. Bewerk in het venster **[!UICONTROL Edit Sample Data]** de vereiste gegevens en tik **[!UICONTROL Save]**.
 
-Vervolgens kunt u de voorbeeldgegevens gebruiken om interactieve communicatie vooraf in te vullen en te testen op basis van het gegevensmodel van het formulier. Zie Formuliergegevensmodel [](/help/forms/using/using-form-data-model.md)gebruiken voor meer informatie.
+Vervolgens kunt u de voorbeeldgegevens gebruiken om interactieve communicatie vooraf in te vullen en te testen op basis van het gegevensmodel van het formulier. Zie [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md) voor meer informatie.
 
-## Objecten en services van gegevensmodellen testen {#test-data-model-objects-and-services}
+## Objecten en services van gegevensmodellen testen{#test-data-model-objects-and-services}
 
 Uw formuliergegevensmodel is geconfigureerd, maar voordat u het in gebruik neemt, wilt u wellicht testen of de geconfigureerde gegevensmodelobjecten en -services naar behoren werken. Objecten en services van gegevensmodellen testen:
 
-1. Selecteer een gegevensmodelobject of een service in het formuliergegevensmodel en tik respectievelijk **[!UICONTROL Test Model Object]** of **[!UICONTROL Test Service]**.
+1. Selecteer een gegevensmodelobject of een service in het formuliergegevensmodel en tik op **[!UICONTROL Test Model Object]** of **[!UICONTROL Test Service]**.
 
    Het venster Formuliergegevensmodel testen wordt geopend.
 
@@ -349,7 +349,7 @@ Uw formuliergegevensmodel is geconfigureerd, maar voordat u het in gebruik neemt
 
 1. Selecteer in het venster Testformuliergegevensmodel het gegevensmodelobject of de gegevensservice die u wilt testen in het deelvenster Invoer.
 
-1. Geef een argumentwaarde op in de testcode en tik op **[!UICONTROL Test]**. Een geslaagde test retourneert de uitvoer in het deelvenster Uitvoer.
+1. Geef een argumentwaarde op in de testcode en tik **[!UICONTROL Test]**. Een geslaagde test retourneert de uitvoer in het deelvenster Uitvoer.
 
    ![testgegevensmodel-2](assets/test-data-model-2.png)
 
@@ -357,4 +357,4 @@ U kunt ook andere gegevensmodelobjecten en -services testen in het formuliergege
 
 ## Volgende stappen {#next-steps}
 
-U hebt een werkformuliergegevensmodel dat nu klaar is voor gebruik in adaptieve formulieren en interactieve communicatieworkflows. Zie Formuliergegevensmodel [](/help/forms/using/using-form-data-model.md)gebruiken voor meer informatie.
+U hebt een werkformuliergegevensmodel dat nu klaar is voor gebruik in adaptieve formulieren en interactieve communicatieworkflows. Zie [Formuliergegevensmodel gebruiken](/help/forms/using/using-form-data-model.md) voor meer informatie.
