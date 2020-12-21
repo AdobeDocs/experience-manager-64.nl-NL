@@ -37,15 +37,15 @@ Naast de hierboven vermelde standaardaanpak is er ook een alternatieve implement
 >
 >Wanneer u de verzendactie Forms Portal gebruikt of de optie voor het opslaan van gegevens in het formulierportaal in een adaptieve vorm inschakelt, worden de formuliergegevens opgeslagen in AEM opslagplaats. In een productieomgeving wordt aanbevolen geen concept- of verzonden formuliergegevens in AEM opslagplaats op te slaan. In plaats daarvan moet u de concepten en verzendingscomponent integreren met een beveiligde opslag, zoals een bedrijfsdatabase, om concepten en verzonden formuliergegevens op te slaan.
 >
->Zie [Voorbeeld voor het integreren van concepten en verzendingscomponenten met de database](/help/forms/using/integrate-draft-submission-database.md)voor meer informatie.
+>Zie [Voorbeeld voor het integreren van concepten en verzendingscomponenten met database](/help/forms/using/integrate-draft-submission-database.md) voor meer informatie.
 
 ## Concepten en verzendservices van Forms Portal configureren {#configuring-forms-portal-drafts-and-submissions-services}
 
-Klik in de AEM Web Console Configuration ( `https://[*host*]:[*port*]/system/console/configMgr`) op **Forms Portal Concept en Submission Configuration** in de bewerkingsmodus.
+Klik in AEM Web Console Configuration ( `https://[*host*]:[*port*]/system/console/configMgr`) op **Forms Portal Draft and Submission Configuration** in edit mode.
 
 Geef de waarden voor eigenschappen op op basis van uw vereisten, zoals hieronder wordt beschreven:
 
-### Buiten-de-box services om gegevens op te slaan op een publicatie-instantie {#out-of-the-box-services-to-store-data-on-publish-instance}
+### Buiten-de-box services om gegevens op te slaan bij publicatie-instantie {#out-of-the-box-services-to-store-data-on-publish-instance}
 
 Gegevens worden omgekeerd gerepliceerd naar de geconfigureerde auteurinstantie.
 
@@ -64,17 +64,17 @@ Gegevens worden omgekeerd gerepliceerd naar de geconfigureerde auteurinstantie.
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal Submit Data Service (id voor het verzenden van de gegevensservice (<strong>submit.data.service</strong>))</td> 
+   <td>Forms Portal dient Data Service (id voor verzendgegevensservice (<strong>submit.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal verzendt Metadata Service (Identifier voor submit metadata service (<strong>submit.metadata.service</strong>))</td> 
+   <td>Forms Portal verzendt metagegevensservice (id voor verzendmetagegevensservice (<strong>submit.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceImpl<br /> </td> 
   </tr>
  </tbody>
 </table>
 
-### Buiten de vakservices om gegevens op te slaan op een externe verwerkingsinstantie {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
+### Buiten de boxservices om gegevens op te slaan op een externe verwerkingsinstantie {#out-of-the-box-services-to-store-data-on-remote-processing-instance}
 
 Gegevens worden rechtstreeks naar de geconfigureerde externe instantie geduwd
 
@@ -93,11 +93,11 @@ Gegevens worden rechtstreeks naar de geconfigureerde externe instantie geduwd
    <td>com.adobe.fd.fp.service.impl.DraftMetadataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal Submit Data Service (id voor het verzenden van de gegevensservice (<strong>submit.data.service</strong>))</td> 
+   <td>Forms Portal dient Data Service (id voor verzendgegevensservice (<strong>submit.data.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitDataServiceRemoteImpl<br /> </td> 
   </tr>
   <tr>
-   <td>Forms Portal verzendt Metadata Service (Identifier voor submit metadata service (<strong>submit.metadata.service</strong>))</td> 
+   <td>Forms Portal verzendt metagegevensservice (id voor verzendmetagegevensservice (<strong>submit.metadata.service</strong>))</td> 
    <td>com.adobe.fd.fp.service.impl.SubmitMetadataServiceRemoteImpl<br /> </td> 
   </tr>
  </tbody>
@@ -105,9 +105,9 @@ Gegevens worden rechtstreeks naar de geconfigureerde externe instantie geduwd
 
 Naast de hierboven gespecificeerde configuratie, verstrek informatie over de gevormde verre verwerkingsinstantie.
 
-Klik in AEM Web Console Configuration ( `https://[*host*]:[*port*]/system/console/configMgr`) op **AEM DS Settings Service** in edit mode. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
+Klik in AEM webconsoleconfiguratie ( `https://[*host*]:[*port*]/system/console/configMgr`) op **AEM DS Settings Service** in bewerkingsmodus. Geef in het dialoogvenster AEM DS Settings Service informatie op over de URL van de verwerkingsserver, de gebruikersnaam van de verwerkingsserver en het wachtwoord.
 
 >[!NOTE]
 >
->Er is ook een voorbeeldimplementatie beschikbaar voor het opslaan van gebruikersgegevens in een database. Zie [Voorbeeld voor het integreren van concepten en verzendingscomponenten met database](/help/forms/using/integrate-draft-submission-database.md)voor meer informatie over het configureren van gegevens en metagegevensservices voor het opslaan van gebruikersgegevens in een externe database.
+>Er is ook een voorbeeldimplementatie beschikbaar voor het opslaan van gebruikersgegevens in een database. Zie [Voorbeeld voor het integreren van concepten en verzendingscomponenten met database](/help/forms/using/integrate-draft-submission-database.md) voor meer informatie over het configureren van gegevens en metagegevensservices voor het opslaan van gebruikersgegevens in een externe database.
 
