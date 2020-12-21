@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Vorm de Dynamiek 365 van Microsoft voor het huishypotheekwerkschema van de Web.Finance verwijzingsplaats {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
+# Vorm de Dynamiek 365 van Microsoft voor de huishypotheekwerkschema van de Web.Finance verwijzingsplaats {#configure-microsoft-dynamics-for-the-home-mortgage-workflow-of-the-we-finance-reference-site}
 
 Leer hoe u de Microsoft® Dynamics 365-services kunt gebruiken door adaptieve formulieren te maken voor de workflow voor hypotheken thuis op de website Web.Finance Reference
 
@@ -24,37 +24,37 @@ Leer hoe u de Microsoft® Dynamics 365-services kunt gebruiken door adaptieve fo
 
 Microsoft® Dynamics 365 is een software van het Beheer van de Verhouding van de Klant (CRM) en van de Planning van het Middel van de Onderneming (ERP) die ondernemingsoplossingen voor het creëren van en het beheren van klantenrekeningen, contacten, lood, kansen, en gevallen verstrekt.
 
-AEM Forms biedt een cloudservice om Dynamics 365 te integreren met de module [Forms Data Integration](/help/forms/using/data-integration.md) . De de toepassingsanalyse van de Mortematische [toepassing van het scenarioHome met de Dynamica](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) van Microsoft® toont hoe een klant de Web.Finance verwijzingsplaats gebruikt om voor een lening toe te passen wanneer de plaats de Dynamica Microsoft® voor de Integratie van Gegevens van Forms gebruikt. Alvorens u de de toepassingsanalyse van de Kortere meetkunde van het Huis met het scenario van de Dynamiek van Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
+AEM Forms biedt een cloudservice om Dynamics 365 te integreren met de module [Forms Data Integration](/help/forms/using/data-integration.md). Het scenario [De toepassingsanalyse van de Kortere meetkaart van het Huis met de Dynamica Microsoft®](/help/forms/using/finance-reference-site-walkthrough.md#home-mortgage-application-walkthrough-with-microsoft-dynamics) toont hoe een klant de Web.Finance verwijzingsplaats gebruikt om voor een lening aan te vragen wanneer de plaats de Dynamica Microsoft® voor de Integratie van Gegevens van Forms gebruikt. Alvorens u de de toepassingsanalyse van de Kortere meetkunde van het Huis met het scenario van de Dynamiek van Microsoft® kunt gebruiken, moet u de Dynamica 365 vormen Microsoft® die met de Web.Finance verwijzingsplaats moet worden gebruikt.
 
 ## Vereisten {#prerequisites}
 
 Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
-* [Stel AEM Forms-referentiesites](/help/forms/using/setup-reference-sites.md)in en configureer deze.
+* [Stel AEM Forms-referentiesites](/help/forms/using/setup-reference-sites.md) in en configureer deze.
 
 * AEM 6.3 Forms Service Pack 1 en hoger
 * Microsoft® Dynamics 365-account
 * Geregistreerde toepassing voor Dynamics 365-service met Microsoft® Azure Active Directory
 * Client-id en clientgeheim voor de geregistreerde toepassing
 
-## Koppel de hypotheekcalculator voor woninghypotheken aan de homepage van uw site {#link-the-home-mortgage-calculator-with-your-site-home-page}
+## Koppel de hypotheekcalculator voor thuiswoningen aan uw homepage {#link-the-home-mortgage-calculator-with-your-site-home-page}
 
 1. Ga in de auteurinstantie naar de volgende pagina:
 
-   https://[server]:[poort]/editor.html/content/we-finance/global/en/loan-landing-page.html
+   https://[sderver]:[port]/editor.html/content/we-finance/global/en/loan-landing-page.html
 
 1. Schuif omlaag naar de rekenmachine voor de beginmeter.
 1. Markeer het deelvenster van de rechterkolom (rekenmachine) en tik om het pop-upmenu weer te geven. Tik in het pop-upmenu op Configureren. Het dialoogvenster AEM Forms-container bewerken wordt geopend.
 
    ![calculatorConfigurpanel](assets/calculatorconfigurepanel.png)
 
-1. Blader in het dialoogvenster AEM Forms-container bewerken door het middelenpad en selecteer de hypothecaire calculator voor thuisgebruik op het volgende pad en tik op **Bevestigen**:
+1. Blader in het dialoogvenster AEM Forms-container bewerken door het middelenpad en selecteer de hypotheekcalculator voor thuisgebruik op het volgende pad en tik **Bevestigen**:
 
    formsanddocuments/We.Finance/MS Dynamics/
 
    ![selectassetpath](assets/selectassetpath.png)
 
-1. Tik **op Gereed**.
+1. Tik **Done**.
 1. De bewerkte pagina publiceren.
 
    >[!NOTE]
@@ -67,7 +67,7 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
       `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/AEMFormsFSIRefsite_1_0.zip`
 
-   1. Importeer het oplossingspakket naar de Microsoft® Dynamics-instantie. Ga in de instantie Microsoft® Dynamics naar **Instellingen** > **Oplossingen** en tik op **Importeren**.
+   1. Importeer het oplossingspakket naar de Microsoft® Dynamics-instantie. Ga in uw Microsoft® Dynamics-instantie naar **Settings** > **Solutions** en tik vervolgens op **Import**.
 
 1. Als u de contactgegevens van de gebruiker wilt instellen die worden gebruikt in de terugzetsite, importeert u het pakket Sarah Rose Contact.CSV in uw Microsoft® Dynamics-instantie:
 
@@ -75,5 +75,5 @@ Alvorens u begint opstelling en Dynamica 365 te vormen, zorg ervoor dat u hebt:
 
       `https://[server]:[port]/content/aemforms-refsite-collaterals/we-finance/home-mortgage/ms-dynamics/Sarah%20Rose%20Contact.csv`
 
-   1. Importeer het pakket naar de instantie Microsoft® Dynamics. Ga in uw Microsoft® Dynamics-instantie naar **Verkoop** > **Contacten** en tik vervolgens op **Gegevens** importeren.
+   1. Importeer het pakket naar de instantie Microsoft® Dynamics. Ga in uw Microsoft® Dynamics-instantie naar **Sales** > **Contacten** en tik vervolgens op **Gegevens importeren**.
 
