@@ -25,10 +25,10 @@ De formulieren worden gedownload op uw app en zijn offline beschikbaar. U voert 
 
 Uw formulier synchroniseren in AEM Forms-app:
 
-1. Selecteer een formulier in de auteur en klik op **Eigenschappen** weergeven.
+1. Selecteer een formulier in de auteur en klik op **Eigenschappen weergeven**.
 
-1. Klik op **Geavanceerd op de pagina met eigenschappen.**
-1. Schakel onder Geavanceerd de optie in: **Synchroniseer met AEM Forms App** en tik op **Opslaan**.
+1. Klik in de eigenschappenpagina op **Geavanceerd.**
+1. Schakel onder Geavanceerd de optie in: **Synchroniseren met AEM Forms App** en tikken op **Opslaan**.
 
 Als u meerdere formulieren wilt synchroniseren, selecteert u in de auteur meerdere formulieren in formulierbeheer en tikt u op **Synchroniseren met AEM Forms App**. Wanneer het formulier wordt gepubliceerd, kan de AEM Forms-toepassing verbinding maken met de publicatieserver en de formulieren ophalen.
 
