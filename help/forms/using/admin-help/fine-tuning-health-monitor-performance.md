@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Prestaties van de fijnafgestelde Health Monitor{#fine-tuning-health-monitor-performance}
+# Prestaties van de Health Monitor afstemmen{#fine-tuning-health-monitor-performance}
 
 Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft enig effect op de prestaties van uw AEM formulieromgeving. Dit effect kan worden beheerd door de Java-opties in te stellen die hieronder in uw toepassingsserver worden vermeld.
 
@@ -67,16 +67,16 @@ Het verzamelen van de systeemstatistieken die de Health Monitor bevolken heeft e
 ## Java-opties toevoegen aan JBoss {#add-java-options-to-jboss}
 
 1. Stop de JBoss-toepassingsserver.
-1. Open de *[hoofdmap]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) van de toepassingsserver in een editor en voeg zo nodig een van de Java-opties toe.
+1. Open *[appserver root]*/bin/run.bat (Windows) of run.sh (Linux of UNIX) in een redacteur en voeg om het even welke opties van Java toe zoals vereist.
 1. Start de server opnieuw.
 
 ## Java-opties toevoegen aan WebLogic {#add-java-options-to-weblogic}
 
-1. Start de WebLogic-beheerconsole door https://[hostnaam]te typen:[poort]/console in de URL-regel van een webbrowser.
+1. Start de WebLogic-beheerconsole door https://[hostnaam]:[poort]/console te typen in de URL-regel van een webbrowser.
 1. Typ de gebruikersnaam en het wachtwoord die u voor het WebLogic Server-domein hebt gemaakt en klik op Log Under Change Center, klik op Vergrendelen en bewerken.
 1. Klik onder Domeinstructuur op Omgeving > Servers en klik in het rechterdeelvenster op de naam van de beheerde server.
 1. Voor het volgende scherm, klik het lusje van de Configuratie > het Begin tabel van de Server.
-1. Voeg in het vak Argumenten de gewenste argumenten toe aan het einde van de huidige inhoud. Bijvoorbeeld: toevoegen - schakelt `Dadobe.healthmonitor.enabled=false` Health Monitor uit.
+1. Voeg in het vak Argumenten de gewenste argumenten toe aan het einde van de huidige inhoud. Als u bijvoorbeeld toevoegt - `Dadobe.healthmonitor.enabled=false` schakelt u Health Monitor uit.
 1. Klik op Opslaan en vervolgens op Wijzigingen activeren.
 1. Start WebLogic managed server opnieuw.
 
