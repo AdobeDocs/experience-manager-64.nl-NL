@@ -22,15 +22,15 @@ ht-degree: 0%
 
 AEM Forms-werkruimte is SSO ingeschakeld. Als een gebruiker zich heeft aangemeld bij een AEM Forms-toepassing, zoals de gebruikersinterface van Forms Manager of PDF Generator, en in dezelfde browsersessie toegang krijgt tot de AEM Forms-werkruimte, wordt de gebruiker aangemeld bij de AEM Forms-werkruimte en andersom.
 
-## Time-out van server afhandelen in AEM Forms-werkruimte {#handling-server-timeout-in-nbsp-aem-forms-workspace}
+## Time-out van server in AEM Forms-werkruimte {#handling-server-timeout-in-nbsp-aem-forms-workspace} verwerken
 
 De onderbreking van de zitting voor een gebruiker kan in de Console van het Beleid worden gevormd.
 
-Als u de time-out wilt instellen, meldt u zich aan `https://[server]:[port]/adminui`en gaat u naar **Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken** configureren en geeft u de gewenste instellingen op.
+Als u de time-out wilt instellen, meldt u zich aan bij `https://[server]:[port]/adminui`, navigeert u naar **Instellingen > Gebruikersbeheer > Configuratie > Geavanceerde systeemkenmerken configureren** en stelt u de gewenste instellingen in.
 
 In de AEM Forms-werkruimte wordt de time-out verwerkt als:
 
-* De duur van de zitting voor een gebruiker is beschikbaar in antwoord op `initialize` vraag die gebruikerszitting initialiseert.
+* De duur van de zitting voor een gebruiker is beschikbaar in antwoord van `initialize` vraag die gebruikerszitting initialiseert.
 * Een pop-updialoogvenster geeft een melding aan de gebruiker dat de sessie bijna verlopen is, 15 seconden voor de sessievervaldatum.
 
 In dit pop-updialoogvenster:
