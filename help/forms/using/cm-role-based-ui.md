@@ -25,19 +25,19 @@ In de AEM-interface worden de opties weergegeven, zoals het maken of bewerken va
 
 Hoewel CRX u toestaat om de toegangsrechten voor zowel gebruiker als groepsrekeningen te vormen, is dit artikel over rol of gebruikersgroep gebaseerde toegangsrechten.
 
-Voor meer informatie over groepen, toestemmingen, toegangsbeheerlijsten, en het leiden van gebruikers en groepen, zie het Beleid en de Veiligheid [van de](/help/sites-administering/security.md)Gebruiker.
+Voor meer informatie over groepen, toestemmingen, toegangsbeheerlijsten, en het beheren van gebruikers en groepen, zie [Gebruikersbeheer en Veiligheid](/help/sites-administering/security.md).
 
-## Machtigingen beheren {#managing-permissions}
+## Machtigingen {#managing-permissions} beheren
 
 1. Zorg ervoor dat de gebruiker waarvoor u de machtigingen wilt beheren, wordt toegevoegd aan de relevante gebruikersgroep.
 
-   De gebruiker Jan Smit wordt bijvoorbeeld toegevoegd aan de groepen `agents` en `cm-creditcard`. Zie Gebruikers of groepen toevoegen aan een groep voor meer informatie. Zie Gebruikers en gebruikersgroepen [](/help/communities/users.md)beheren voor meer informatie.
+   De gebruiker Jan Smit wordt bijvoorbeeld toegevoegd aan de groepen `agents` en `cm-creditcard`. Zie Gebruikers of groepen toevoegen aan een groep voor meer informatie. Zie [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md) voor meer informatie.
 
    ![]()
 
 1. Maak de mappen die geschikt zijn voor het toestaan van de bedoelde machtigingen.
 
-   Als een onderneming bijvoorbeeld woninghypotheken, creditcards en verzekeringsafdelingen heeft, kunnen zij mappen maken met de naam `HomeMortgage`en de relevante activa behouden `CreditCard,``Insurance` en selectief toegang verlenen aan agenten voor activa die alleen voor hun afdelingen relevant zijn.
+   Als een onderneming bijvoorbeeld hypotheek op huis, creditcard of verzekeringsdivisies heeft, kunnen zij mappen maken met de namen `HomeMortgage`, `CreditCard,`en `Insurance` om de relevante activa te behouden en op selectieve wijze toegang te verlenen aan agenten voor activa die alleen relevant zijn voor hun afdelingen.
 
 1. Voer een van de volgende handelingen uit om toegang te krijgen tot AEM WCM-beveiliging:
 
@@ -54,7 +54,7 @@ Voor meer informatie over groepen, toestemmingen, toegangsbeheerlijsten, en het 
 
    Als u de naam van de groep wilt zoeken, typt u de naam van de groep in de beschikbare ruimte.
 
-1. Navigeer op het tabblad Machtigingen naar het pad waaraan u machtigingen wilt toevoegen. De mappen voor Correspondentiebeheer bevinden zich in de `content/apps/cm/` map.
+1. Navigeer op het tabblad Machtigingen naar het pad waaraan u machtigingen wilt toevoegen. De mappen voor Correspondentiebeheer bevinden zich in de map `content/apps/cm/`.
 
    Schakel het selectievakje in de kolom Lid in voor de leden die u machtigingen voor dat pad wilt hebben. Schakel het selectievakje voor het lid waarvoor u machtigingen wilt verwijderen uit. In de cel waarin u wijzigingen hebt aangebracht, wordt een rood driehoekje weergegeven.
 
