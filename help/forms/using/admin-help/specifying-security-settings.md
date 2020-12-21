@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Beveiligingsinstellingen opgeven {#specifying-security-settings}
+# Beveiligingsinstellingen {#specifying-security-settings} opgeven
 
 Met Forms kunt u bepalen of externe entiteiten in XML-invoer worden opgelost. Deze worden standaard opgelost, maar u kunt dit gedrag wijzigen om de beveiliging van uw AEM te verbeteren.
 
