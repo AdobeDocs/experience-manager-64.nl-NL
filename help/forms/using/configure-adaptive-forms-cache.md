@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Cache voor aangepaste formulieren configureren {#configure-adaptive-forms-cache}
+# Cache voor adaptieve formulieren {#configure-adaptive-forms-cache} configureren
 
 Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de latentie te verminderen en de invoer-/uitvoersnelheid (I/O) te verbeteren. In de cache van adaptieve formulieren worden alleen HTML-inhoud en JSON-structuur van een adaptief formulier opgeslagen zonder dat vooraf ingevulde gegevens worden opgeslagen. Hierdoor wordt de tijd die nodig is om een adaptief formulier of document op de client te genereren, verkort. Het is specifiek ontworpen voor adaptieve formulieren en ondersteunt ook adaptieve documenten.
 
@@ -29,13 +29,13 @@ Een cache is een mechanisme om de toegangstijd voor gegevens te verkorten, de la
 >
 >Zorg tijdens het ontwikkelen van aangepaste componenten op de server die wordt gebruikt voor ontwikkeling dat de cache van adaptieve formulieren uitgeschakeld blijft.
 
-## De cache configureren {#configure-the-cache}
+## De cache {#configure-the-cache} configureren
 
 Voer de volgende stappen uit om de cache voor adaptieve formulieren te configureren:
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op `https://[server]:[port]/system/console/configMgr`.
-1. Klik de **Aangepaste Vorm en de Interactieve Configuratie** van het Kanaal van de Communicatie van het Web om zijn configuratiewaarden uit te geven.
-1. Geef in het dialoogvenster Configuratiewaarden bewerken het maximumaantal formulieren of documenten op dat een instantie van de AEM Forms-server in cache kan plaatsen in het veld **Aantal adaptieve Forms** . De standaardwaarde is 100.
+1. Klik **Aangepaste Vorm en Interactieve Communicatie Configuratie van het Kanaal van het Web** om zijn configuratiewaarden uit te geven.
+1. Geef in het dialoogvenster Configuratiewaarden bewerken het maximumaantal formulieren of documenten op dat een instantie van de AEM Forms-server in cache kan plaatsen in het veld **Aantal Adaptieve Forms**. De standaardwaarde is 100.
 
    >[!NOTE]
    >
@@ -43,5 +43,5 @@ Voer de volgende stappen uit om de cache voor adaptieve formulieren te configure
 
    ![Configuratiedialoogvenster voor HTML-cache voor adaptieve formulieren](assets/cache-configuration-edit.png)
 
-1. Klik op **Opslaan** om de configuratie op te slaan.
+1. Klik **sparen** om de configuratie te bewaren.
 
