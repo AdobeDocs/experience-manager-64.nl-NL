@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Een *referentie* bevat uw persoonlijke sleutelgegevens die nodig zijn voor het ondertekenen of identificeren van documenten. Een *certificaat* is openbare zeer belangrijke informatie die u voor vertrouwen vormt. AEM formulieren gebruiken certificaten en referenties voor verschillende doeleinden:
 
-* Acrobat Reader DC-extensies gebruiken een referentie om Adobe Reader-gebruiksrechten in PDF-documenten in te schakelen. (Zie Referenties [configureren voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
-* U kunt Rights Management zodanig configureren dat referenties alleen door vertrouwde uitgevers worden weergegeven voor gebruik in Acrobat. (Zie Weergave-instellingen [voor Rights Management](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings)configureren.) De gemeenschappelijke benaming (CN) moet in het certificaat aanwezig zijn.
-* De handtekeningservice heeft toegang tot certificaten en referenties. Zie [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de service Handtekening.
+* Acrobat Reader DC-extensies gebruiken een referentie om Adobe Reader-gebruiksrechten in PDF-documenten in te schakelen. (Zie [Referenties configureren voor gebruik met Acrobat Reader DC-extensies](/help/forms/using/admin-help/configuring-credentials-acrobat-reader-dc.md#configuring-credentials-for-use-with-acrobat-reader-dc-extensions).)
+* U kunt Rights Management zodanig configureren dat referenties alleen door vertrouwde uitgevers worden weergegeven voor gebruik in Acrobat. (Zie [Weergave-instellingen voor Rights Management configureren](/help/forms/using/admin-help/configuring-client-server-options.md#configure-document-security-display-settings).) De gemeenschappelijke benaming (CN) moet in het certificaat aanwezig zijn.
+* De handtekeningservice heeft toegang tot certificaten en referenties. Zie [Referentiehandleiding](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de service Handtekening.
 
 **Een paarsleutel genereren**
 
