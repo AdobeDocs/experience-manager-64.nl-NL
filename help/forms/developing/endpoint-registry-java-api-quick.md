@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Java API Quick Start (SOAP) voor eindpuntregistratie {#endpoint-registry-java-api-quickstart-soap}
+# Java API Quick Start (SOAP) {#endpoint-registry-java-api-quickstart-soap} voor eindpuntregistratie
 
 Java API Quick Start (SOAP) is beschikbaar voor de Endpoint Registry.
 
@@ -40,11 +40,11 @@ Java API Quick Start (SOAP) is beschikbaar voor de Endpoint Registry.
 
 [QuickStart: Gegevens van eindpuntconnector ophalen met de Java API](endpoint-registry-java-api-quick.md#quickstart-retrieving-endpoint-connector-information-using-the-java-api)
 
-AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet zijn ingesteld op SOAP.
+AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte AEM Forms-API en de verbindingsmodus moet worden ingesteld op SOAP.
 
 >[!NOTE]
 >
->De snelle start in Programmeren met AEM formulieren is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie Verbindingseigenschappen [instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
+>De snelle start in Programmeren met AEM formulieren is gebaseerd op de Forms als u een ander besturingssysteem gebruikt, zoals Unix, vervangt Windows-specifieke paden door paden die worden ondersteund door het desbetreffende besturingssysteem. Als u een andere J2EE-toepassingsserver gebruikt, moet u ook geldige verbindingseigenschappen opgeven. Zie [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties).
 
 >[!NOTE]
 >
@@ -52,7 +52,7 @@ AEM Forms-bewerkingen kunnen worden uitgevoerd met behulp van de sterk getypte A
 
 ## QuickStart: Een EJB-eindpunt toevoegen met de Java API {#quickstart-adding-an-ejb-endpoint-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een EJB-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie EJB-eindpunten [toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
+In het volgende Java-codevoorbeeld wordt een EJB-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie [EJB-eindpunten toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-ejb-endpoints).)
 
 ```as3
  /* 
@@ -149,9 +149,9 @@ In het volgende Java-codevoorbeeld wordt een EJB-eindpunt toegevoegd aan de serv
  
 ```
 
-## QuickStart: Een SOAP-eindpunt toevoegen met de Java API {#quickstart-adding-a-soap-endpoint-using-the-java-api}
+## QuickStart: Een eindpunt van de ZEEP toevoegen gebruikend Java API {#quickstart-adding-a-soap-endpoint-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een SOAP-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie [SOAP-eindpunten](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints)toevoegen.)
+In het volgende Java-codevoorbeeld wordt een SOAP-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie [SOAP-eindpunten toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-soap-endpoints).)
 
 ```as3
  /* 
@@ -251,11 +251,11 @@ In het volgende Java-codevoorbeeld wordt een SOAP-eindpunt toegevoegd aan de ser
 
 ## QuickStart: Een eindpunt van een gecontroleerde map toevoegen met de Java API {#quickstart-adding-a-watched-folder-endpoint-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt het eindpunt van een gecontroleerde map toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie [Gecontroleerde mapeindpunten](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints)toevoegen.)
+Het volgende codevoorbeeld van Java voegt een Gecontroleerd eindpunt van de Omslag aan de dienst genoemd *MyApplication/EncryptDocument* toe. (Zie [Toegestane eindpunten van mappen toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-watched-folder-endpoints).)
 
 >[!NOTE]
 >
->U moet het dossier WatchedFolderEndpointConfigConstants.java in uw project omvatten om het volgende snelle begin te compileren en in werking te stellen. (Zie [Gecontroleerde waarden voor mapconfiguratie constant bestand](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
+>U moet het dossier WatchedFolderEndpointConfigConstants.java in uw project omvatten om het volgende snelle begin te compileren en in werking te stellen. (Zie [Gecontroleerde de waarden van de omslagconfiguratie constant dossier](/help/forms/developing/programmatically-endpoints.md#watched-folder-configuration-values-constant-file).)
 
 ```as3
  /* 
@@ -386,11 +386,11 @@ In het volgende Java-codevoorbeeld wordt het eindpunt van een gecontroleerde map
 
 ## QuickStart: Een e-maileindpunt toevoegen met de Java API {#quickstart-adding-an-email-endpoint-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de service *MyApplication/* EncryptDocument. (Zie E-maileindpunten [toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
+In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de service *MyApplication/EncryptDocument* t. (Zie [E-maileindpunten toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-email-endpoints).)
 
 >[!NOTE]
 >
->U moet het bestand EmailEndpointConfigConstants.java in uw project opnemen om het volgende snelle begin te compileren en uit te voeren. (Zie Constante bestand met waarden voor [e-mailconfiguratie](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
+>U moet het bestand EmailEndpointConfigConstants.java in uw project opnemen om het volgende snelle begin te compileren en uit te voeren. (Zie [Constante bestand voor e-mailconfiguratiewaarden](/help/forms/developing/programmatically-endpoints.md#email-configuration-values-constant-file).)
 
 ```as3
  /* 
@@ -527,9 +527,9 @@ In het volgende Java-codevoorbeeld wordt een e-maileindpunt toegevoegd aan de se
  
 ```
 
-## QuickStart: Een eindpunt voor Verwijderen toevoegen met de Java API {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
+## QuickStart: Een eindpunt voor verwijderen toevoegen met de Java API {#quickstart-adding-a-remoting-endpoint-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een eindpunt Remoting toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie Eindpunten [verwijderen](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints)toevoegen.)
+In het volgende Java-codevoorbeeld wordt een eindpunt Remoting toegevoegd aan de service *MyApplication/EncryptDocument*. (Zie [Eindpunten toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-remoting-endpoints).)
 
 ```as3
  /* 
@@ -634,7 +634,7 @@ In het volgende Java-codevoorbeeld wordt een eindpunt Remoting toegevoegd aan de
 
 ## QuickStart: Het toevoegen van een eindpunt TaskManager gebruikend Java API {#quickstart-adding-a-taskmanager-endpoint-using-the-java-api}
 
-In het volgende Java-codevoorbeeld wordt een TaskManager-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. De naam van de categorie is *EncryptProcess*. (Zie [Het Toevoegen van Eindpunten](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints)TaskManager.)
+In het volgende Java-codevoorbeeld wordt een TaskManager-eindpunt toegevoegd aan de service *MyApplication/EncryptDocument*. De naam van de categorie is *EncryptProcess*. (Zie [Taakbeheereindpunten toevoegen](/help/forms/developing/programmatically-endpoints.md#adding-taskmanager-endpoints).)
 
 ```as3
  /* 
@@ -743,7 +743,7 @@ In het volgende Java-codevoorbeeld wordt een TaskManager-eindpunt toegevoegd aan
 
 ## QuickStart: Een eindpunt wijzigen met de Java API {#quickstart-modifying-an-endpoint-using-the-java-api}
 
-Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de Omslag.Het eindpunt is voor het proces *MyApplication/EncryptDocument* . De gecontroleerde map wordt gewijzigd in `C:\NewWatchedFolder`. (Zie Eindpunten [wijzigen](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
+Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de Omslag.Het eindpunt is voor het *MyApplication/EncryptDocument* proces. De gecontroleerde map wordt gewijzigd in `C:\NewWatchedFolder`. (Zie [Eindpunten wijzigen](/help/forms/developing/programmatically-endpoints.md#modifying-endpoints).)
 
 ```as3
  /* 
@@ -893,7 +893,7 @@ Het volgende de codevoorbeeld van Java wijzigt een Gecontroleerd eindpunt van de
 
 ## QuickStart: Een eindpunt verwijderen met de Java API {#quickstart-removing-an-endpoint-using-the-java-api}
 
-De volgende code van Java verwijdert een eindpunt EJB uit de dienst genoemd *MyApplication/EncryptDocument*. (Zie Eindpunten [verwijderen](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
+De volgende code van Java verwijdert een eindpunt EJB uit de dienst genoemd *MyApplication/EncryptDocument*. (Zie [Eindpunten verwijderen](/help/forms/developing/programmatically-endpoints.md#removing-endpoints).)
 
 ```as3
  /* 
@@ -1012,7 +1012,7 @@ De volgende code van Java verwijdert een eindpunt EJB uit de dienst genoemd *MyA
 
 ## QuickStart: Gegevens van eindpuntconnector ophalen met de Java API {#quickstart-retrieving-endpoint-connector-information-using-the-java-api}
 
-De volgende code van Java wint informatie over een Gecontroleerd eindpunt van de Omslag terug. De informatie over elke configuratiewaarde wordt teruggewonnen en getoond. Deze codelijst specificeert of elke configuratiewaarde vereist of facultatief is. Bovendien worden de naam en de waarde voor elke configuratiewaarde weergegeven. (Zie Informatie over [eindpuntaansluiting](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information)ophalen.)
+De volgende code van Java wint informatie over een Gecontroleerd eindpunt van de Omslag terug. De informatie over elke configuratiewaarde wordt teruggewonnen en getoond. Deze codelijst specificeert of elke configuratiewaarde vereist of facultatief is. Bovendien worden de naam en de waarde voor elke configuratiewaarde weergegeven. (Zie [Informatie over eindpuntaansluiting ophalen](/help/forms/developing/programmatically-endpoints.md#retrieving-endpoint-connector-information).)
 
 ```as3
  /* 
