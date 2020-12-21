@@ -21,15 +21,15 @@ ht-degree: 0%
 
 U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard is de ondersteuning voor bijlagen uitgeschakeld. De ondersteuning voor bijlagen inschakelen:
 
-1. Maak een [aangepast profiel](/help/forms/using/custom-profile.md) met de eigenschap mutiselect string `mfAttachmentOptions`.
-1. Geef in het aangepaste profiel eigenschappen op `fileSizeLimit`en configureer de opties van de bestandsbijlage-widget `multiSelect``buttonTex`niet. Desgewenst kunt u ook meer aangepaste eigenschappen opgeven.
+1. Maak een [aangepast profiel](/help/forms/using/custom-profile.md) met multiselect-tekenreekseigenschap `mfAttachmentOptions`.
+1. Geef in het aangepaste profiel de eigenschappen `fileSizeLimit`, `multiSelect` en `buttonTex`t op om opties voor de bestandsbijlage-widget te configureren. Desgewenst kunt u ook meer aangepaste eigenschappen opgeven.
 
 1. Gebruik de volgende configuraties in het aangepaste profiel:
 
    * **multiSelect** -> true of false (standaard true)
    * **fileSizeLimit** -> value_in_mb (say 5) (standaard 2 MB)
    * **buttonText** -> Knoptekst voor pop-upvenster (&quot;Bijvoegen&quot; standaard)
-   * **accepteren** -> bestandstypen die worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, image/&amp;ast;, text/&amp;ast;, .pdf&quot; standaard)
+   * **Accepteren** -> bestandstypen die worden geaccepteerd (&quot;audio/&amp;ast;, video/&amp;ast;, afbeelding/&amp;ast;, tekst/&amp;ast;, standaard .pdf&quot;)
 
    >[!NOTE]
    >
@@ -40,7 +40,7 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
 
    >[!NOTE]
    >
-   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Zie HTML5-formulieren **opslaan als concept** voor meer informatie over het profiel [Opslaan als concept](/help/forms/using/saving-html5-form-draft.md).
+   >Het portal Formulieren bevat een aangepast profiel met de mogelijkheden voor concepten en bijlagen ingeschakeld. Zie [HTML5-formulieren opslaan als concept](/help/forms/using/saving-html5-form-draft.md) voor meer informatie over het profiel **Opslaan als concept**.
 
 1. Klik op het pictogram voor bijlagen en er verschijnt een dialoogvenster voor het selecteren van bijlagen. Blader naar de bijlage en selecteer deze en klik op **Bijvoegen**.
 
@@ -52,12 +52,12 @@ U kunt bijlagen uploaden, bekijken en verzenden met HTML5-formulieren. Standaard
    >
    >De optie voor het voorvertonen van bestanden is niet beschikbaar voor anonieme gebruikers.
 
-## Indeling voor het verzenden van bijlagen {#attachment-submission-format}
+## Indeling {#attachment-submission-format} voor het verzenden van bijlagen
 
-Als bijlagen zijn ingeschakeld, verzendt het HTML5-formulier meerdelige gegevens. De uit meerdere delen verzonden gegevens hebben twee delen **dataXml** en **bijlagen**.
+Als bijlagen zijn ingeschakeld, verzendt het HTML5-formulier meerdelige gegevens. De uit meerdere delen bestaande verzendingsgegevens bestaan uit twee delen **dataXml** en **bijlagen**.
 
 >[!NOTE]
 >
->Als de `mfAllowAttachments`optie voor achterwaartse compatibiliteit is uitgeschakeld, worden de meerdelige gegevens niet verzonden door de HTML5-formulieren. Het verzendt eenvoudige gegevens xml in **toepassing/xml** formaat.
+>Als de optie `mfAllowAttachments`voor achterwaartse compatibiliteit is uitgeschakeld, verzenden de HTML5-formulieren de meerdelige gegevens niet. Het verzendt eenvoudige gegevens-xml in **application/xml** formaat.
 
-Als de markering mfAllowAttachments is ingeschakeld, plaatst de service [voor het](/help/forms/using/service-proxy.md) verzenden van serviceproxy ook meerdelige gegevens met dataXml en bijlagen.
+Als de markering mfAllowAttachments is ingeschakeld, plaatst de [service voor serviceproxy verzenden](/help/forms/using/service-proxy.md) ook meerdelige gegevens met dataXml en bijlagen.
