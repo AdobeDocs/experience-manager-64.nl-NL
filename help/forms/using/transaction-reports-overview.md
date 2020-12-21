@@ -29,9 +29,9 @@ Met transactierapporten in AEM Forms kunt u een telling bijhouden van alle trans
 * Vertoning van een gedrukte versie of webversie van een interactieve communicatie
 * Een document omzetten van de ene bestandsindeling naar de andere
 
-Voor meer informatie over wat als een transactie wordt beschouwd, zie [Billable APIs](/help/forms/using/transaction-reports-billable-apis.md).
+Voor meer informatie over wat als transactie wordt beschouwd, zie [Billable APIs](/help/forms/using/transaction-reports-billable-apis.md).
 
-Transactieopname is standaard uitgeschakeld. U kunt transactieopname [van AEM Console van het Web](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) toelaten. U kunt transactierapporten weergeven over auteur-, verwerkings- of publicatieinstanties. Transactierapporten weergeven over auteur- of verwerkingsinstanties voor een geaggregeerde som van alle transacties. De transactierapporten van de mening over publiceer instanties voor een telling van alle transacties die slechts op dat publicatiegeval plaatsvinden van waar het rapport in werking wordt gesteld.
+Transactieopname is standaard uitgeschakeld. U kunt [transactieopname](/help/forms/using/viewing-and-understanding-transaction-reports.md#setting-up-transaction-reports) van AEM Console van het Web toelaten. U kunt transactierapporten weergeven over auteur-, verwerkings- of publicatieinstanties. Transactierapporten weergeven over auteur- of verwerkingsinstanties voor een geaggregeerde som van alle transacties. De transactierapporten van de mening over publiceer instanties voor een telling van alle transacties die slechts op dat publicatiegeval plaatsvinden van waar het rapport in werking wordt gesteld.
 
 Ontwerp geen inhoud (maak adaptieve formulieren, interactieve communicatie, thema&#39;s en andere ontwerpactiviteiten) en verwerkt geen documenten (gebruik workflows, documentservices en andere verwerkingsactiviteiten) op hetzelfde AEM. Houd de transactieopname uitgeschakeld voor AEM Forms-servers die worden gebruikt om inhoud te schrijven. Laat de transactieopname ingeschakeld voor AEM Forms-servers die worden gebruikt om documenten te verwerken.
 
@@ -56,7 +56,7 @@ Het aantal transacties wordt omgekeerd herhaald van publicatieinstanties naar au
 ### Richtlijnen voor het gebruik van transactierapporten {#guidelines-for-using-transaction-reports}
 
 * Schakel transactierapporten uit op alle instanties van de auteur, aangezien rapporten over instanties van de auteur tijdens ontwerpactiviteiten geregistreerde transacties omvatten.
-* Schakel de optie Transacties **tonen vanuit alleen** publiceren in de auteurinstantie in om cumulatieve transacties van alle publicatie-instanties weer te geven. U kunt ook transactierapporten op elke publicatie-instantie weergeven voor feitelijke transacties op alleen die specifieke publicatie-instantie.
+* Schakel de optie **Transacties weergeven vanuit de optie Alleen publiceren** in de auteurinstantie in om cumulatieve transacties van alle publicatie-instanties weer te geven. U kunt ook transactierapporten op elke publicatie-instantie weergeven voor feitelijke transacties op alleen die specifieke publicatie-instantie.
 * Gebruik geen auteur-instanties om workflows uit te voeren en documenten te verwerken.
 * Voordat u transactierapportage gebruikt, moet u ervoor zorgen dat de omgekeerde replicatie is ingeschakeld voor alle publicatieexemplaren als u een topologie hebt met publicatieservers.
 * Transactiegegevens worden omgekeerd gerepliceerd van een publicatie-instantie naar alleen de overeenkomstige auteur of verwerkingsinstantie. De auteur of verwerkingsinstantie kan gegevens niet verder repliceren naar een andere instantie. Bijvoorbeeld, als u auteur-verwerkings-publiceer topologie hebt, worden de samengevoegde transactiegegevens herhaald slechts aan de verwerkingsinstantie.
