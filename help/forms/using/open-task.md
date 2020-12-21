@@ -19,9 +19,9 @@ ht-degree: 0%
 
 # Een taak openen {#opening-a-task}
 
-Als de AEM Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd. Bijvoorbeeld, zie [Conard krijgt de beoordelingstaak in de de verwijzingsplaats](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task)van het Gov van de Geometrixx. U kunt wijzigingen aanbrengen in elke taak die momenteel aan u is toegewezen. Alle taken zijn beschikbaar op het lusje van de Taak. Taken die als concepten zijn opgeslagen, blijven op het tabblad Taken staan.
+Als de AEM Forms-toepassing synchroniseert met een AEM Forms-server, kunt u werken met taken die aan u zijn toegewezen. Taken zijn stappen in de workflow die in Workbench of in de AEM werkstroomeditor is gedefinieerd. Bijvoorbeeld, zie [Conard krijgt de beoordelingstaak in de de verwijzingsplaats van het Gov van de Geometrixx.](/help/forms/using/gov-reference-site-walkthrough.md#conard-assessment-task). U kunt wijzigingen aanbrengen in elke taak die momenteel aan u is toegewezen. Alle taken zijn beschikbaar op het lusje van de Taak. Taken die als concepten zijn opgeslagen, blijven op het tabblad Taken staan.
 
-Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie Concepten [opslaan](/help/forms/using/save-as-draft.md).
+Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie [Concepten](/help/forms/using/save-as-draft.md) opslaan.
 
 **Een taak openen**
 
@@ -34,11 +34,11 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie C
 
 1. Tik op de taak om deze te openen.
 
-   Tik op Overzicht **van** weergave om aanvullende instructies weer te geven die zijn opgegeven in het Workbench-proces.
+   U kunt **Samenvatting van de Mening** tikken om extra instructies te bekijken die in het proces Workbench worden gespecificeerd.
 
 **Een toepassing openen**
 
-1. Tik op de **toepassing** op het tabblad **Forms** .
+1. Tik op de **toepassing** op het tabblad **Forms**.
 
    Wanneer u een toepassing selecteert, wordt de beschrijving van de toepassing onder de toepassingsnaam weergegeven. Na de beschrijving worden de gebruikershandeling/handelingen die aan de toepassing zijn gekoppeld, weergegeven.
 
@@ -47,4 +47,4 @@ Andere formulieren worden als concept opgeslagen op het tabblad Concepten. Zie C
 
 1. Tik op de taak om deze te openen.
 
-   Tik op Samenvatting **** weergeven om aanvullende instructies weer te geven die voor de toepassing zijn opgegeven.
+   Tik op **Samenvatting weergeven** om aanvullende instructies weer te geven die voor de toepassing zijn opgegeven.
