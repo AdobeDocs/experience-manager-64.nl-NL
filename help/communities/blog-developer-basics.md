@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Grondbeginselen van blogs {#blog-essentials}
+# Grondbeginselen van blog {#blog-essentials}
 
 Vanaf AEM 6.1 Communities is een blog een gemeenschapsactiviteit. Blogartikelen worden nu vanuit de publicatieomgeving gepost, waar eerder blogartikelen alleen in de auteursomgeving konden worden gemaakt en gepubliceerd.
 
@@ -30,9 +30,9 @@ Deze pagina bevat de essentiële informatie voor het werken met de blogfunctie.
 >
 >De onderliggende infrastructuur van de blogfunctie is de journaalfunctie.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
-De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de functie [](functions.md#blog-function) Blog toe te voegen of door de componenten in de modus Schrijven aan een pagina toe te voegen.
+De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de functie [Blog](functions.md#blog-function) toe te voegen of door de componenten aan een pagina in auteur toe te voegen geeft wijze uit.
 
 ### Blog {#blog}
 
@@ -48,7 +48,7 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de fu
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.ckeditor<br /> cq.social.hbs.stemed<br /> cq.social.hbs.journaal</td> 
+   <td>cq.ckeditor<br /> cq.social.hbs.stem<br /> cq.social.hbs.Journal</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -65,13 +65,13 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de fu
  </tbody>
 </table>
 
-### Blog Sidebar {#blog-sidebar}
+### Blogzijbalk {#blog-sidebar}
 
 | **resourceType** | sociaal/journaal/componenten/hbs/zijbalk |
 |---|---|
-| [**inclusief **](scf.md#add-or-include-a-communities-component) | Nee |
-| [**clientllibs **](clientlibs.md) | cq.social.hbs.journal_sidebar |
-| **templates** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
+| [**inclusief**](scf.md#add-or-include-a-communities-component) | Nee |
+| [**clientllibs**](clientlibs.md) | cq.social.hbs.journal_sidebar |
+| **sjablonen** | /libs/social/journal/components/hbs/sidebar/sidebar.hbs |
 | **css** | /libs/social/journal/components/hbs/sidebar/clientlibs/sidebar.css |
 | **eigenschappen** | zie [Blogfunctie](blog-feature.md) |
 
@@ -87,23 +87,23 @@ De blogfunctie bestaat uit twee hoofdcomponenten die beschikbaar zijn door de fu
 
 ### Blogfunctie {#blog-function}
 
-Een communautaire plaatsstructuur die de functie [van](functions.md#blog-function) Bog omvat zal gevormd `Blog` en `Blog Sidebar` componenten hebben. De functie Blog steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group)van het lid.
+Een community-sitestructuur die de [Bog-functie](functions.md#blog-function) bevat, heeft `Blog`- en `Blog Sidebar`-componenten geconfigureerd. De functie Blog steunt het identificeren van een [bevoorrechte gebruikersgroep](users.md#privileged-members-group).
 
 ### Toegang tot blogberichten (UGC) {#accessing-blog-entries-ugc}
 
 UGC moet worden gemoderniseerd met behulp van een van de standaardmethoden voor gematigdheid.\
-Zie Door de gebruiker gegenereerde inhoud [modereren](moderate-ugc.md).
+Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md).
 
-Vanaf AEM 6.1 Communities omvat het gebruik van een [gemeenschappelijke opslag](working-with-srp.md) voor UGC programmatische toegang tot UGC ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
+Met ingang van AEM 6.1 Communities omvat het gebruik van een [common store](working-with-srp.md) voor UGC programmatische toegang tot UGC, ongeacht de gekozen opslagoptie (zoals ASRP, MSRP of JSRP).
 
 **De locatie en indeling van de UGC in de opslagplaats kunnen zonder waarschuwing** worden gewijzigd.
 
 Zie:
 
-* [Overzicht](srp.md) van Storage Resource Provider - introductie en overzicht van opslaggebruik
-* [SRP en de Hoofdzaak](srp-and-ugc.md) UGC - de gebruiksmethodes van SRP en voorbeelden
+* [Overzicht](srp.md)  van Storage Resource Provider - inleiding en overzicht van opslaggebruik
+* [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
-* [SocialUtils Refactoring](socialutils.md) - het in kaart brengen van afgekeurde nutsmethodes aan huidige SRP hulpprogrammamethodes
+* [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
 
 ## Primaire uitgever {#primary-publisher}
 
@@ -111,7 +111,7 @@ Wanneer de plaatsing een publicatielandbouwbedrijf is, is het noodzakelijk om ee
 
 Zie [Primaire uitgever](deploy-communities.md#primary-publisher) voor meer informatie.
 
-## Rijke media toestaan {#allowing-rich-media}
+## Rijke media {#allowing-rich-media} toestaan
 
 Het AEM platform blokkeert koppelingen van andere websites om XSS-aanvallen te voorkomen zoals beschreven in
 
@@ -119,5 +119,5 @@ Het AEM platform blokkeert koppelingen van andere websites om XSS-aanvallen te v
 
 Vanaf AEM 6.2 worden de eerder vereiste wijzigingen die handmatig moeten worden aangebracht, opgenomen in het standaard AntiSamy-configuratiebestand.
 
-Rijke media wordt ingesloten in een blogartikel door het `Embed Media from External Sites` pictogram te selecteren:  ![chlimage_1-471](assets/chlimage_1-471.png)
+Rijke media wordt ingesloten in een blogartikel door het pictogram `Embed Media from External Sites` te selecteren:  ![chlimage_1-471](assets/chlimage_1-471.png)
 
