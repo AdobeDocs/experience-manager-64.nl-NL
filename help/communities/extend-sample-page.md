@@ -30,17 +30,17 @@ De [Community Components Guide](components-guide.md) identificeert de vereiste c
 
 [http://localhost:4502/content/community-components/en/comments.html](http://localhost:4502/content/community-components/en/comments.html)
 
-Let op de drie clientbibliotheken die nodig zijn voor het renderen en correct functioneren van Opmerkingen. Deze moeten worden opgenomen waar naar de uitgebreide opmerkingen wordt verwezen, en in de clientbibliotheek [van de](extend-create-components.md#create-a-client-library-folder) uitgebreide opmerkingen ( `apps.custom.comments`).
+Let op de drie clientbibliotheken die nodig zijn voor het renderen en correct functioneren van Opmerkingen. Deze moeten worden opgenomen waar naar de uitgebreide opmerkingen wordt verwezen, en in de clientbibliotheek ](extend-create-components.md#create-a-client-library-folder) ( `apps.custom.comments`) van [extended Comments.
 
 ![chlimage_1-47](assets/chlimage_1-47.png)
 
 ## Aangepaste opmerkingen toevoegen aan een pagina {#add-custom-comments-to-a-page}
 
-Aangezien er slechts één opmerkingsysteem per pagina kan zijn, is het eenvoudiger om een voorbeeldpagina te maken zoals beschreven in de korte zelfstudie Een voorbeeldpagina [](create-sample-page.md) maken.
+Aangezien er slechts één systeem van de Commentaar per pagina kan zijn, is het eenvoudiger om een steekproefpagina tot stand te brengen zoals die in het korte [Create a Sample Page](create-sample-page.md) leerprogramma wordt beschreven.
 
-Nadat u de component hebt gemaakt, opent u de ontwerpmodus en stelt u de componentgroep Aangepast beschikbaar, zodat de `Alt Comments` component aan de pagina kan worden toegevoegd.
+Nadat u een aangepaste component hebt gemaakt, voert u de ontwerpmodus in en stelt u de componentgroep Custom beschikbaar zodat de component `Alt Comments` aan de pagina kan worden toegevoegd.
 
-De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliotheken voor opmerkingen worden toegevoegd aan de clientlibslist voor de pagina (zie [Clientlibs voor Community Components](clientlibs.md)).
+De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliotheken voor opmerkingen worden toegevoegd aan de clientlibslist voor de pagina (zie [Clientlibs for Communities Components](clientlibs.md)).
 
 ### Opmerkingen Clientlibs op voorbeeldpagina {#comments-clientlibs-on-sample-page}
 
@@ -50,19 +50,19 @@ De opmerking wordt alleen weergegeven en werkt naar behoren als de clientbibliot
 
 ![Alt-commentaar op voorbeeldpagina](assets/chlimage_1-49.png)
 
-### Auteur: Opmerkingsknooppunt voor voorbeeldpagina {#author-sample-page-comments-node}
+### Auteur: Opmerkingen op voorbeeldpagina {#author-sample-page-comments-node}
 
-U kunt resourceType in CRXDE verifiëren door de eigenschappen van de commentaarknoop voor de steekproefpagina bij te bekijken `/content/sites/sample/en/jcr:content/content/primary/comments`.
+U kunt het resourceType in CRXDE verifiëren door de eigenschappen van de commentaarknoop voor de steekproefpagina bij `/content/sites/sample/en/jcr:content/content/primary/comments` te bekijken.
 
 ![chlimage_1-50](assets/chlimage_1-50.png)
 
 ### Voorbeeldpagina publiceren {#publish-sample-page}
 
-Nadat de aangepaste component aan de pagina is toegevoegd, moet de pagina [ook (opnieuw) worden](sites-console.md#publishing-the-site)gepubliceerd.
+Nadat de aangepaste component aan de pagina is toegevoegd, is het ook nodig om [de pagina](sites-console.md#publishing-the-site) te publiceren.
 
 ### Publiceren: Alt-commentaar op voorbeeldpagina {#publish-alt-comment-on-sample-page}
 
-Nadat u zowel de aangepaste toepassing als de voorbeeldpagina hebt gepubliceerd, moet u een opmerking kunnen invoeren. Wanneer u bent aangemeld, moet het mogelijk zijn een opmerking te plaatsen met een [demogebruiker](tutorials.md#demo-users) of beheerder.
+Nadat u zowel de aangepaste toepassing als de voorbeeldpagina hebt gepubliceerd, moet u een opmerking kunnen invoeren. Als u bent aangemeld met een [demo-gebruiker](tutorials.md#demo-users) of beheerder, moet het mogelijk zijn een opmerking te plaatsen.
 
 Hier aaron.mcdonald@mailinator.com vindt u een opmerking:
 
