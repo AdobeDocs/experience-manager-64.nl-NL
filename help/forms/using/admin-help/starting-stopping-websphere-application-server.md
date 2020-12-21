@@ -22,27 +22,27 @@ ht-degree: 0%
 
 Verscheidene procedures vereisen u om het geval van WebSphere te tegenhouden of te beginnen waar u AEM vormenproducten wilt opstellen. Als u niet zeker bent of de toepassingsserver is begonnen, kunt u het statuut van de Server van de Toepassing eerst bekijken WebSphere.
 
-## De status van WebSphere Application Server weergeven {#view-the-status-of-websphere-application-server}
+## De status van WebSphere Application Server {#view-the-status-of-websphere-application-server} weergeven
 
-1. Ga vanaf een opdrachtprompt naar de map *[appserver root]*/bin.
-1. Ga het volgende bevel in, die *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
+1. Van een bevelherinnering, ga naar *[appserver wortel]*/bin folder.
+1. Voer de volgende opdracht in en vervang *server_name* door de naam van uw WebSphere-toepassingsserver:
 
-   * (Windows) `serverStatus.bat`*server_name *
-   * (Linux, UNIX) ./ `serverStatus.sh`*server_naam *
+   * (Windows) `serverStatus.bat`*server_name*
+   * (Linux, UNIX) ./ `serverStatus.sh`*servernaam*
 
 ## WebSphere-toepassingsserver starten {#start-websphere-application-server}
 
-1. Ga vanaf een opdrachtprompt naar de map *[appserver root]*/bin.
-1. Ga het volgende bevel in, die *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
+1. Van een bevelherinnering, ga naar *[appserver wortel]*/bin folder.
+1. Voer de volgende opdracht in en vervang *server_name* door de naam van uw WebSphere-toepassingsserver:
 
-   * (Windows) `startServer.bat`*server_name *
-   * (Linux, UNIX) ./ `startServer.sh`*server_naam *
+   * (Windows) `startServer.bat`*server_name*
+   * (Linux, UNIX) ./ `startServer.sh`*servernaam*
 
 ## WebSphere-toepassingsserver stoppen {#stop-websphere-application-server}
 
-1. Ga vanaf een opdrachtprompt naar de map *[appserver root]*/bin.
-1. Ga het volgende bevel in, die *server_name* met de naam van uw Server van de Toepassing WebSphere vervangt:
+1. Van een bevelherinnering, ga naar *[appserver wortel]*/bin folder.
+1. Voer de volgende opdracht in en vervang *server_name* door de naam van uw WebSphere-toepassingsserver:
 
-   * (Windows) `stopServer.bat`*server_name *
-   * (Linux, UNIX) ./ `stopServer.sh`*server_naam *
+   * (Windows) `stopServer.bat`*server_name*
+   * (Linux, UNIX) ./ `stopServer.sh`*servernaam*
 
