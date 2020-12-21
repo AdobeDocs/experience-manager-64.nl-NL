@@ -17,7 +17,7 @@ ht-degree: 1%
 ---
 
 
-# Gebeurtenissen van formulieren aanpassen {#customizing-form-event-tracking}
+# Gebeurtenistracking van formulieren aanpassen {#customizing-form-event-tracking}
 
 Uit het vak worden de volgende gebeurtenissen bijgehouden in een adaptieve vorm die geschikt is voor analyses:
 
@@ -62,25 +62,25 @@ Uit het vak worden de volgende gebeurtenissen bijgehouden in een adaptieve vorm 
  </tbody> 
 </table>
 
-## Tijdslimiet voor de gebeurtenis &#39;visit&#39; van het veld aanpassen {#customizing-the-field-visit-event-timeout}
+## Tijdslimiet {#customizing-the-field-visit-event-timeout} voor de gebeurtenis &quot;visit&quot; van het veld aanpassen
 
-Als een gebruiker meer dan 60 seconden doorbrengt in een veld, wordt standaard AEM formulierinstelling een `fieldvisit` gebeurtenis geactiveerd en worden de gegevens van het veld naar Adobe Analytics verzonden. U kunt de basislijn voor het bijhouden van de veldtijd aanpassen bij AEM Forms Analytics Configuration op AEM Configuration-console (/system/console/configMgr) om de time-outlimiet te verhogen of te verlagen.
+Als een gebruiker meer dan 60 seconden doorbrengt in een veld, wordt in de standaardinstelling AEM formulier een gebeurtenis `fieldvisit` geactiveerd en worden de gegevens van het veld verzonden naar Adobe Analytics. U kunt de basislijn voor het bijhouden van de veldtijd aanpassen bij AEM Forms Analytics Configuration op AEM Configuration-console (/system/console/configMgr) om de time-outlimiet te verhogen of te verlagen.
 
 ## De volgende gebeurtenissen aanpassen {#customizing-the-tracking-events}
 
-U kunt de `trackEvent`functie wijzigen die beschikbaar is in `/libs/afanalytics/js/custom.js` het bestand om de gebeurtenis te volgen. Wanneer een gebeurtenis die wordt bijgehouden zich in een adaptieve vorm voordoet, wordt de `trackEvent`functie aangeroepen. De `trackEvent` functie accepteert twee parameters: `eventName`en `variableValueMap`.
+U kunt de functie `trackEvent`beschikbaar in `/libs/afanalytics/js/custom.js` dossier wijzigen om gebeurtenis het volgen aan te passen. Wanneer een gebeurtenis die wordt bijgehouden zich in een adaptieve vorm voordoet, wordt de functie `trackEvent`aangeroepen. De functie `trackEvent` accepteert twee parameters: `eventName`en `variableValueMap`.
 
-U kunt de waarde van *eventName *en *variableValueMap* argumenten evalueren om het volgende gedrag van gebeurtenissen te veranderen. U kunt er bijvoorbeeld voor kiezen om de gegevens naar de analytische server te verzenden nadat een aantal foutgebeurtenissen is opgetreden. U kunt ook de volgende aanpassingen uitvoeren:
+U kunt waarde van *eventName *en *variableValueMap* argumenten evalueren om het volgende gedrag van gebeurtenissen te veranderen. U kunt er bijvoorbeeld voor kiezen om de gegevens naar de analytische server te verzenden nadat een aantal foutgebeurtenissen is opgetreden. U kunt ook de volgende aanpassingen uitvoeren:
 
 * U kunt een drempeltijd instellen voordat u de gebeurtenis verzendt.
-* U kunt een staat handhaven om actie te besluiten, bijvoorbeeld, *fieldVisit* duwt een dummygebeurtenis die op timestamp van de laatste gebeurtenis wordt gebaseerd.
-* U kunt de `pushEvent` functie gebruiken om de gebeurtenis naar de analytische server te verzenden *.*
+* U kunt een staat handhaven om actie te besluiten, bijvoorbeeld, *fieldVisit* duwt een dummy gebeurtenis die op timestamp van de laatste gebeurtenis wordt gebaseerd.
+* U kunt de functie `pushEvent` gebruiken om de gebeurtenis naar de analytische server *te verzenden.*
 
 * U kunt ervoor kiezen om de gebeurtenis helemaal niet naar de analyseserver te duwen.
 
 ### Voorbeeld {#sample}
 
-In het volgende voorbeeld, wordt de staat voor de *foutengebeurtenis* van elk *fieldName *attribuut gehandhaafd*. *De gebeurtenis wordt alleen naar de analyseserver verzonden als er opnieuw een fout optreedt.
+In het volgende voorbeeld, staat voor de *error* gebeurtenis van elk *fieldName *attribuut wordt gehandhaafd*. *De gebeurtenis wordt alleen naar de analyseserver verzonden als er opnieuw een fout optreedt.
 
 ```
 case 'error':
@@ -91,12 +91,12 @@ case 'error':
         break;
 ```
 
-## De gebeurtenis panelvisit aanpassen {#customizing-the-panelvisit-event}
+## De panelgebeurtenis {#customizing-the-panelvisit-event} aanpassen
 
 Bij de standaard AEM Forms-instelling wordt na elke 60 seconden gecontroleerd of het venster met het adaptieve formulier actief is. Als het venster actief is, wordt een `panelVisit`gebeurtenis geactiveerd naar Adobe Analytics. Hiermee kunt u controleren of het document of formulier actief is en kunt u de tijd berekenen die aan het desbetreffende formulier of document is besteed.
 
 >[!NOTE]
 >
->De naam van de gebeurtenis die wordt gebruikt om activiteit op te halen en de tijd die wordt doorgebracht te berekenen is &quot;panelVisit&quot;. Deze gebeurtenis is anders dan de gebeurtenis die wordt weergegeven in de bovenstaande tabel voor het bezoek van het deelvenster.
+>De naam van de gebeurtenis die wordt gebruikt om activiteit op te halen en de tijd die wordt doorgebracht te berekenen is &quot;panelVisit&quot;. Deze gebeurtenis is anders dan de gebeurtenis die het deelvenster bezoeken in de bovenstaande tabel wordt weergegeven.
 
-U kunt de functie planningHeartBeatCheck die beschikbaar is in het `/libs/afanalytics/js/custom.js` bestand wijzigen om deze gebeurtenis die regelmatig naar Adobe Analytics wordt verzonden, te wijzigen of te stoppen.
+U kunt de functie programHeartBeatCheck die beschikbaar is in het `/libs/afanalytics/js/custom.js`-bestand wijzigen om deze gebeurtenis die regelmatig naar Adobe Analytics wordt verzonden, te wijzigen of te stoppen.
