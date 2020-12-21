@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Talen van rechts naar links in HTML5-formulieren {#right-to-left-languages-in-html-forms}
+# Van rechts naar links talen in HTML5-formulieren {#right-to-left-languages-in-html-forms}
 
 HTML5-formulieren ondersteunen talen die van rechts naar links worden geschreven, zoals Hebreeuws. U kunt HTML5-formulieren weergeven en invullen in talen die van rechts naar links worden geschreven. U kunt zowel talen van rechts naar links als talen van links naar rechts in hetzelfde formulier gebruiken. U kunt bijvoorbeeld zowel Engels als Hebreeuws gebruiken in een algemeen veld. Mobiele Forms gebruikt de landinstelling om gelokaliseerde dagen en datumgegevens in een formulier weer te geven.
 
