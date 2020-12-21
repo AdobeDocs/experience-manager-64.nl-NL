@@ -87,7 +87,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
       <td><p>Tik of klik om te schakelen tussen de modi Draaien en Pannen.</p> <p>U kunt ook de <code>ALT/OPTION</code>-toets tijdens de handeling ingedrukt houden om tijdelijk over te schakelen op de panmodus. Laat de toets los om terug te keren naar de draaien modus.</p> 
       <ul> 
       <li><strong>Draaien</strong> - Verplaatst de weergavecamera op een bol die gecentreerd is op een doelpunt dat zich dichtbij het midden van het 3D-element bevindt, als standaard. Draaien is het standaardgedrag voor het slepen van een knop naar links of het slepen van een knop met één druk op een mobiel apparaat.</li> 
-      <li><strong>Pannen</strong> - Verplaatst de camera in het weergavevlak. Het doelpunt wordt dienovereenkomstig verplaatst, zodat de camera bij volgende omloophandelingen om een nieuw doelpunt wordt verplaatst. Pannen is het alternatieve gedrag voor slepen met de linkerknop en slepen met één druk op de knop.</li> 
+      <li><strong>Pannen</strong> - Verplaatst de camera in het weergavevlak. Het doelpunt wordt dienovereenkomstig verplaatst, zodat de camera bij volgende omloophandelingen om een nieuw doelpunt wordt verplaatst. Pannen is het alternatieve gedrag voor het slepen van de linkerknop en het slepen van één aanraking.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
