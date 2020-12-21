@@ -24,7 +24,7 @@ De functie Buiten het Bureau laat gebruikers of beheerders toe om te specificere
 
 Wanneer het creëren van een proces, kan de gebruiker Workbench specificeren of een taak wegens uit de montages van het Bureau kan worden opnieuw gericht.
 
-## De informatie van een gebruiker van het Bureau van de mening {#view-a-user-s-out-of-office-information}
+## De informatie {#view-a-user-s-out-of-office-information} van een gebruiker van het Bureau bekijken
 
 1. Klik in de beheerconsole op Services > Formulierwerkstroom > Buiten Office.
 1. In de doos dichtbij de bovenkant van uit de pagina van het Bureau, kunt u één van het volgende doen:
@@ -39,22 +39,22 @@ Wanneer het creëren van een proces, kan de gebruiker Workbench specificeren of 
 
 1. Klik op een gebruikersnaam om de gegevens van de gebruiker buiten het kantoor onder de lijst met gebruikers weer te geven.
 
-## De status van een gebruiker buiten het kantoor wijzigen {#change-a-user-s-out-of-office-status}
+## De status {#change-a-user-s-out-of-office-status} van een gebruiker wijzigen
 
-1. Vind de gebruiker, zoals die in [Mening uit de informatie](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)van het Bureau wordt beschreven.
+1. Vind de gebruiker, zoals die in [wordt beschreven bekijk uit de informatie van een gebruiker ](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Klik op de naam van de gebruiker die u wilt wijzigen.
-1. Van de *Naam* van de Gebruiker is momenteel lijst, selecteer of in het Bureau of uit het Bureau.
+1. Van *De Naam van de Gebruiker* is momenteel lijst, selecteert of in het Bureau of uit het Bureau.
 1. Klik op Opslaan.
 
-## Voeg een uit de datumwaaier van het Bureau voor een gebruiker toe {#add-an-out-of-office-date-range-for-a-user}
+## Een datumbereik voor een gebruiker {#add-an-out-of-office-date-range-for-a-user} buiten het kantoor toevoegen
 
-1. Vind de gebruiker, zoals die in [Mening uit de informatie](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)van het Bureau wordt beschreven.
+1. Vind de gebruiker, zoals die in [wordt beschreven bekijk uit de informatie van een gebruiker ](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
 1. Klik op de naam van de gebruiker die u wilt wijzigen.
 1. Klik op Datumbereik toevoegen.
 1. Voer een begintijd en eindtijd in. U kunt op het pictogram Kalender klikken om een datum te selecteren. Als u geen eindtijd specificeert, zal de gebruiker onbeperkt uit bureau worden geplaatst.
 1. Klik op Opslaan.
 
-## Wijs een gebruiker voor uit de taken van het Bureau toe {#assign-a-user-for-out-of-office-tasks}
+## Wijs een gebruiker voor uit de taken van het Bureau {#assign-a-user-for-out-of-office-tasks} toe
 
 Wanneer een gebruiker buiten het kantoor is, kunt u een of meer gebruikers toewijzen om nieuwe taken voor de gebruiker uit te voeren. U kunt de volgende configuraties instellen:
 
@@ -63,7 +63,7 @@ Wanneer een gebruiker buiten het kantoor is, kunt u een of meer gebruikers toewi
 * Wijs een standaardgebruiker toe die de meeste taken van de gebruiker zal ontvangen, maar specificeer dat de taken van bepaalde processen aan andere gebruikers opnieuw worden toegewezen of aan de gebruiker blijven die uit het bureau is toegewezen.
 * Wijs geen standaardgebruiker toe, maar wijs bepaalde taken van bepaalde processen aan specifieke gebruikers toe.
 
-   1. Vind de gebruiker, zoals die in [Mening uit de informatie](configuring-out-office-settings.md#view-a-user-s-out-of-office-information)van het Bureau wordt beschreven.
+   1. Vind de gebruiker, zoals die in [wordt beschreven bekijk uit de informatie van een gebruiker ](configuring-out-office-settings.md#view-a-user-s-out-of-office-information).
    1. Klik op de naam van de gebruiker die u wilt wijzigen.
    1. In de StandaardGebruiker voor uit de lijst van Taken van het Bureau, selecteer een gebruiker van de lijst. Als u geen standaardgebruiker wilt aanwijzen om opnieuw toegewezen punten te ontvangen, uitgezocht wijs niet toe.
 
