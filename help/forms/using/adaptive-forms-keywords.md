@@ -240,4 +240,4 @@ Trefwoorden voor adaptieve formulieren zijn vooraf gedefinieerd, gereserveerde i
  </tbody>
 </table>
 
-Gebruik niet alleen de bovenstaande trefwoorden, maar gebruik ook namen die vergelijkbaar zijn met [aangepaste formulieren in JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).
+Gebruik, naast de bovenstaande trefwoorden, geen namen die lijken op [adaptieve formulieren in JavaScript API&#39;s](https://adobe.com/go/learn_aemforms_javascript_api_63).
