@@ -30,9 +30,9 @@ U kunt het volgende doen met de service PDF converteren:
 
 ## Eigenschappen van de service configureren   {#properties}
 
-Met de **AEMFD ConvertPDF-service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van AEM console is `https://[host]:[port]/system/console/configMgr`.
+Met de **AEMFD ConvertPDF Service** in AEM Console kunt u eigenschappen voor deze service configureren. De standaard-URL van AEM console is `https://[host]:[port]/system/console/configMgr`.
 
-## De service gebruiken {#using-the-service}
+## De service {#using-the-service} gebruiken
 
 De service ConvertPDF biedt de volgende twee API&#39;s:
 
@@ -40,7 +40,7 @@ De service ConvertPDF biedt de volgende twee API&#39;s:
 
 * **[toImage](https://helpx.adobe.com/experience-manager/6-4/forms/javadocs/com/adobe/fd/cpdf/api/ConvertPdfService.html#toImage)**: Hiermee converteert u een PDF-document naar een afbeeldingsbestand. Ondersteunde afbeeldingsindelingen zijn JPEG, JPEG2000, PNG en TIFF.
 
-### ToPS-API gebruiken met een JSP of Servlets {#using-tops-api-with-a-jsp-or-servlets}
+### ToPS API gebruiken met een JSP of Servlets {#using-tops-api-with-a-jsp-or-servlets}
 
 ```java
 <%@ page import="java.util.List, java.io.File,
@@ -84,7 +84,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### ToImage-API gebruiken met een JSP of Servlets {#using-toimage-api-with-a-jsp-or-servlets}
+### ToImage-API gebruiken met een JSP- of Servlets {#using-toimage-api-with-a-jsp-or-servlets}
 
 ```java
 <%@ page import="java.util.List, java.io.File,
@@ -131,7 +131,7 @@ String documentPath = "/content/dam/formsanddocuments/ExpenseClaimFlat.pdf";
 %>
 ```
 
-### ConvertPDF Service gebruiken met AEM workflows {#using-convertpdf-service-with-aem-workflows}
+### ConvertPDF-service gebruiken met AEM workflows {#using-convertpdf-service-with-aem-workflows}
 
 Het uitvoeren van de ConvertPDF-service vanuit een workflow lijkt op het uitvoeren vanuit JSP/Servlet.
 
