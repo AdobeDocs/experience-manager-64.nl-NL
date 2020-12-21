@@ -17,15 +17,15 @@ ht-degree: 0%
 ---
 
 
-# Zoeken naar formulieren en middelen {#searching-for-forms-and-assets}
+# Zoeken naar formulieren en elementen {#searching-for-forms-and-assets}
 
 U kunt naar uw formulieren of formulierelementen zoeken met behulp van een tekenreeks of tekenreeks, samen met jokertekens. U kunt uw zoekopdracht ook beperken aan de hand van de criteria die beschikbaar zijn in verschillende categorieën in het deelvenster Zoeken.
 
 Wanneer u een of meer criteria selecteert en ook een tekenreeks opgeeft, wordt het snijpunt van de tekst en criteria geretourneerd als zoekresultaten. De zoekresultaten zijn net zo goed als de metagegevens voor formulieren en middelen die worden verstrekt.
 
-Klik op ![em6forms_search](assets/aem6forms_search.png)om het zoekvenster weer te geven of te verbergen.
+Klik ![aem6forms_search](assets/aem6forms_search.png), om het onderzoekspaneel te tonen of te verbergen.
 
-## Basiszoekopdracht {#basic-search}
+## Standaardzoekopdracht {#basic-search}
 
 Een basiszoekopdracht is de standaardzoekopdracht, uitgevoerd zonder filters op te geven. AEM Forms voert een volledige tekstzoekopdracht uit naar eigenschappen van metagegevens.
 
@@ -37,10 +37,10 @@ Neem nota van de volgende punten over het basisonderzoek:
 
 * De zoekopdracht wordt uitgevoerd met de metagegevenseigenschappen van het formulier en het element.
 * Als u meer dan één woord typt, komt de zoekbewerking overeen met de volledige zoektekst.
-* Zoeken is niet hoofdlettergevoelig. Wanneer u bijvoorbeeld typt, worden elementen met titels `geometrixx`, `Geometrixx`en `GEOMETRIXX``GeoMetRixx` weergegeven in de zoekresultaten.
+* Zoeken is niet hoofdlettergevoelig. Wanneer u bijvoorbeeld `geometrixx` typt, worden elementen met titels `Geometrixx`, `GEOMETRIXX` en `GeoMetRixx` weergegeven in de zoekresultaten.
 
 * Gedeeltelijke overeenkomsten van een woord worden niet ondersteund. Gebruik &amp;ast om te zoeken met gedeeltelijke tekenreeksen. jokerteken. Als de zoekquery echter overeenkomt met een volledig woord, wordt het bijbehorende formulier of element weergegeven.
-* Extra spaties worden gerespecteerd en worden niet bijgesneden tijdens het zoeken. Dit is bijvoorbeeld `My form` niet dezelfde zoekopdracht als `My form`het geval is.
+* Extra spaties worden gerespecteerd en worden niet bijgesneden tijdens het zoeken. `My form` is bijvoorbeeld niet dezelfde zoekquery als `My form`.
 
 * Als de gegevens en weergavewaarden van de velden in metagegevenseigenschappen verschillend zijn, kunt u geen weergavewaarden gebruiken als zoekparameters. U kunt bijvoorbeeld niet zoeken op basis van een status, zoals Gewijzigd of Gepubliceerd, omdat deze eigenschappen in een andere indeling zijn opgeslagen.
 
@@ -50,7 +50,7 @@ Naast de query kunt u in de zoekcriteria enkele zoekparameters opgeven om de sta
 
 ![Zoekveld en parameters of filters voor AEM zoeken in formulieren en middelen](assets/search_forms_assets.png)
 
-### Middelpad {#asset-path}
+### Middelenpad {#asset-path}
 
 Met het filter elementpad kunt u de zoekresultaten beperken tot de huidige map. Als de optie Zoeken in huidige map niet is geselecteerd, bevatten de zoekresultaten elementen uit de basismap. Als de huidige pagina geen map is en de optie &quot;Zoeken in huidige map&quot; is geselecteerd, retourneert de zoekopdracht de elementen in de bovenliggende map.
 
@@ -108,6 +108,6 @@ U kunt een willekeurig aantal elementtypen selecteren. De zoekopdracht retournee
  </tbody>
 </table>
 
-### Tags {#tags}
+### Labels {#tags}
 
 Tags zijn labels die zijn gekoppeld aan elementen ter identificatie. Selecteer tijdens het zoeken een willekeurig aantal tags in de vervolgkeuzelijst of voeg indien nodig aangepaste tags toe. Een zoekresultaat bevat de doorsnede van de geselecteerde tags.
