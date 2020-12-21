@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# AEM Forms over OSGi-groepen en -voorrechten {#aem-forms-on-osgi-groups-and-privileges}
+# AEM Forms inzake OSGi-groepen en -voorrechten {#aem-forms-on-osgi-groups-and-privileges}
 
 Wijs gebruikers aan de groepen toe om AEM Forms op OSGi te beheren
 
-U kunt groepen [](/help/sites-administering/user-group-ac-admin.md#group-administration) maken en beleid en [gebruikers](/help/sites-administering/user-group-ac-admin.md#user-administration) toewijzen aan de groepen in AEM. Dit beleid controleert voorrechten van de gebruikers die deel van de groep uitmaken.
+U kunt [groepen maken](/help/sites-administering/user-group-ac-admin.md#group-administration) en beleid en [gebruikers](/help/sites-administering/user-group-ac-admin.md#user-administration) toewijzen aan de groepen in AEM. Dit beleid controleert voorrechten van de gebruikers die deel van de groep uitmaken.
 
-Nadat u het invoegpakket [voor](/help/forms/using/installing-configuring-aem-forms-osgi.md)AEM Forms hebt geïnstalleerd, zijn de in dit artikel vermelde groepen, zoals gebruikers van formulieren en gebruikers van formulieren, automatisch beschikbaar voor toewijzing. De volgende lijst maakt een lijst van de taken een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
+Nadat u [AEM Forms-add-on-pakket](/help/forms/using/installing-configuring-aem-forms-osgi.md) hebt geïnstalleerd, zijn de groepen die in dit artikel worden vermeld, zoals de gebruiker van het formulier en de gebruiker van het formulierbesturingssysteem, automatisch beschikbaar voor toewijzing. De volgende lijst maakt een lijst van de taken een gebruiker voor AEM Forms op OSGi kan uitvoeren die op de groepstoewijzingen wordt gebaseerd:
 
 <table> 
  <tbody>
@@ -33,7 +33,7 @@ Nadat u het invoegpakket [voor](/help/forms/using/installing-configuring-aem-for
    <td>Taken</td> 
   </tr>
   <tr>
-   <td>gebruiker van formulieren <sup>[1]</sup></td> 
+   <td>form-user <sup>[1]</sup></td> 
    <td>
     <ul> 
      <li>Aangepaste formulieren maken, voorvertonen, publiceren en verzenden</li> 
