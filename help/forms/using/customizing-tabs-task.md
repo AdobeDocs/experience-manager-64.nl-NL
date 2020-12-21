@@ -17,16 +17,16 @@ ht-degree: 0%
 ---
 
 
-# Tabs aanpassen voor een taak {#customizing-tabs-for-a-task}
+# Tabbladen aanpassen voor een taak {#customizing-tabs-for-a-task}
 
 U kunt tabnamen voor de `Start Process` component aanpassen in de `Start Process` Uberweergave en de `Task Details` component in de `ToDo` Uberweergave.
 
-1. Voer de [algemene stappen uit voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de AEM Forms-werkruimte.
-1. Wijzig de waarde van `tabname`in het `translation.json` bestand.
+1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
+1. Wijzig de waarde van `tabname`in het `translation.json`-bestand.
 
    Wijzig bijvoorbeeld `/apps/ws/locales/en-US/translation.json` voor Engels in het volgende.
 
-   * Gebruik het volgende fragment uit het `"startprocess" : {}` blok voor taken die in het beginproces worden gestart.
+   * Voor taken die in het beginproces in werking worden gesteld, gebruik het volgende fragment van het `"startprocess" : {}` blok.
 
    ```
    "tabname" : {
