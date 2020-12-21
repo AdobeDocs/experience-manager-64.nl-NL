@@ -40,7 +40,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
       ![eerste telling](assets/intial-count.png)
 
-   1. Gebruik de initialisatiegebeurtenis van het formulier om het primaire exemplaar van het subformulier te verbergen. De onderstaande code verbergt bijvoorbeeld het primaire exemplaar van Subform bij initialisatie van het formulier. Het verifieert ook het app type om ervoor te zorgen dat het manuscript slechts op de cliëntkant wordt uitgevoerd:
+   1. Met de gebeurtenis initialize van het formulier kunt u het primaire exemplaar van het subformulier verbergen. De onderstaande code verbergt bijvoorbeeld het primaire exemplaar van Subform bij initialisatie van het formulier. Het verifieert ook het app type om ervoor te zorgen dat het manuscript slechts op de cliëntkant wordt uitgevoerd:
 
       ```
       if ((xfa.host.appType == "HTML 5" || xfa.host.appType == "Exchange-Pro" || xfa.host.appType == "Reader")&&(_RepeatSubform.count == 1)&&(form1.Page1.Subform1.RepeatSubform.Key.rawValue == null)) {
@@ -135,7 +135,7 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    * Geneste tabellen en subformulieren in een tabel worden niet ondersteund.
    * Kopteksten worden alleen ondersteund voor de bovenste of linkerkolom van de tabel. Kopteksten worden niet ondersteund voor elementen in de middelste tabel. U kunt kopteksten op veelvoudige rij en kolomkopballen toepassen worden gesteund op voorwaarde dat al dergelijke rijen en kolommen samen met de hoogste rij of uiterst linkse kolom van de lijst zijn.
-   * `Rowspan`en `colspan`vanuit een willekeurige locatie in de tabel wordt niet ondersteund.
+   * `Rowspan`en  `colspan`vanuit een willekeurige locatie in de tabel wordt niet ondersteund.
    * U kunt geen instantie van rijen dynamisch toevoegen of verwijderen die elementen met rowspan waarde groter dan 1 bevatten.
 
 1. Wat is de leesvolgorde van knopinfo en bijschrift voor schermlezers?
@@ -168,18 +168,18 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    Antwoord:
 
-   * Er is beperkte ondersteuning voor het script xfa.connectionSet. Voor connectionSet wordt alleen aanroep van de webservice op de server ondersteund. Zie [Scriptondersteuning](/help/forms/using/scripting-support.md)voor meer informatie.
-   * Er is geen ondersteuning voor $record en $data in clientscripts. Als de scripts echter zijn geschreven in een formReady, layoutReady-blok, werken de scripts nog steeds omdat deze gebeurtenissen aan de serverzijde worden uitgevoerd.
+   * Er is beperkte ondersteuning voor het script xfa.connectionSet. Voor connectionSet wordt alleen aanroep van de webservice op de server ondersteund. Zie [Scriptondersteuning](/help/forms/using/scripting-support.md) voor gedetailleerde informatie.
+   * Er is geen ondersteuning voor $record en $data in clientscripts. Als de scripts echter zijn geschreven in een formReady, layoutReady-blok, werken de scripts nog steeds omdat deze gebeurtenissen op de server worden uitgevoerd.
    * Elementspecifieke scripts voor XFA Draw, zoals het wijzigen van de tekst Tekenen (of de bijschrifttekst in het geval van velden), worden niet ondersteund.
 
 1. Zijn er beperkingen in het gebruik van formCalc?
 
-   Antwoord: Er is momenteel alleen een subset van de FormCalc-scripts geïmplementeerd. Zie [Scriptondersteuning](/help/forms/using/scripting-support.md)voor meer informatie.
+   Antwoord: Er is momenteel alleen een subset van de FormCalc-scripts geïmplementeerd. Zie [Scriptondersteuning](/help/forms/using/scripting-support.md) voor gedetailleerde informatie.
 
 1. Is er een aanbevolen naamgevingsconventie en zijn er gereserveerde trefwoorden die moeten worden vermeden?
 
-   * In AEM Forms Designer wordt aangeraden de naam van een object (zoals een subformulier of een tekstveld) niet met een onderstrepingsteken (_) te laten beginnen. Als u het onderstrepingsteken aan het begin van de naam wilt gebruiken, voegt u een voorvoegsel toe na het onderstrepingsteken, *_&lt;prefix>&lt;objectname>. *
-   * Alle API&#39;s voor HTML5-formulieren zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan API&#39;s voor [HTML5-formulieren](/help/forms/using/scripting-support.md).
+   * In AEM Forms Designer wordt aangeraden de naam van een object (zoals een subformulier of een tekstveld) niet te laten beginnen met een onderstrepingsteken (_). Als u het onderstrepingsteken aan het begin van de naam wilt gebruiken, voegt u een voorvoegsel toe na het onderstrepingsteken, *_&lt;prefix>&lt;objectname>. *
+   * Alle API&#39;s voor HTML5-formulieren zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan [HTML5-formulieren-API&#39;s](/help/forms/using/scripting-support.md).
 
 1. Biedt HTML5-formulieren ondersteuning voor zwevende velden?
 
@@ -189,9 +189,9 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
    >
    >De velden zijn standaard niet ingeschakeld voor zweven. Met Forms Designer kunt u de zwevende eigenschap van de velden instellen.
 
-   1. Open de CRXde-lijst en navigeer naar het `/content/xfaforms/profiles/default` knooppunt.
+   1. Open de CRXde-lijst en navigeer naar het `/content/xfaforms/profiles/default`-knooppunt.
    1. Voeg een eigenschap `mfDataDependentFloatingField` van het type String toe en stel de waarde van de eigenschap in op `true`**.**
-   1. Klik op Alles **opslaan**. De zwevende velden worden nu ingeschakeld voor de HTML Forms met behulp van het bijgewerkte renderprofiel.
+   1. Klik **Alles opslaan**. De zwevende velden worden nu ingeschakeld voor de HTML Forms met behulp van het bijgewerkte renderprofiel.
 
       >[!NOTE]
       >
@@ -201,9 +201,9 @@ Er zijn een aantal veelgestelde vragen (FAQ) over indeling, ondersteuning van sc
 
    Ja, de initialisatiescripts en form ready-gebeurtenissen worden meerdere keren uitgevoerd, ten minste één keer op de server en één keer op de client. Er wordt voorgesteld om scripts als initialize of form:ready-gebeurtenissen te schrijven op basis van bepaalde bedrijfslogica (formulier- of veldgegevens), zodat de actie wordt uitgevoerd op basis van de status van de gegevens en de epidemische waarde (als de gegevens identiek zijn).
 
-## XDP ontwerpen {#designing-xdp}
+## XDP {#designing-xdp} ontwerpen
 
 1. Zijn er gereserveerde trefwoorden in HTML5-formulieren?
 
-   Antwoord: Alle API&#39;s voor HTML5-formulieren zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan API&#39;s voor [HTML5-formulieren](/help/forms/using/scripting-support.md). Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld, `_fpField1`
+   Antwoord: Alle API&#39;s voor HTML5-formulieren zijn gereserveerde trefwoorden. Gebruik voor aangepaste API&#39;s/functies een naam die niet gelijk is aan [HTML5-formulieren-API&#39;s](/help/forms/using/scripting-support.md). Als u objectnamen gebruikt die met een onderstrepingsteken (_) beginnen, wordt het aangeraden naast gereserveerde trefwoorden ook een uniek voorvoegsel na het onderstrepingsteken toe te voegen. Door een voorvoegsel toe te voegen voorkomt u mogelijke conflicten met interne API&#39;s voor HTML5-formulieren. Bijvoorbeeld, `_fpField1`
 
