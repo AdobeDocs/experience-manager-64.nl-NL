@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# De app synchroniseren {#synchronizing-the-app}
+# De app {#synchronizing-the-app} synchroniseren
 
-## De app synchroniseren {#synchronizing-the-app-1}
+## De app {#synchronizing-the-app-1} synchroniseren
 
 De formulieren in uw app worden gedownload van de AEM Forms-server. De formulieren worden gedownload onder Taken en op de tabbladen Forms. Concepten die zijn gemaakt op basis van formulieren, worden gedownload op het tabblad Concepten en concepten die zijn gemaakt op basis van taken, worden gedownload op het tabblad Taken. Voor een zelfstandig formulier op de OSGi-server worden formulieren en concepten gedownload in respectievelijk Forms en Concept tabbladen.
 
@@ -30,7 +30,7 @@ Wanneer u online bent met de AEM Forms-server, wordt uw app standaard elke 15 mi
 
 **De app handmatig synchroniseren**
 
-Tik op de knop Synchroniseren ![synchroniseren-app](assets/sync-app.png) in de rechterbenedenhoek van het beginscherm.
+Tik op de knop Synchroniseren ![sync-app](assets/sync-app.png) in de rechterbenedenhoek van het beginscherm.
 
 **De synchronisatiefrequentie wijzigen**
 
