@@ -19,13 +19,13 @@ ht-degree: 0%
 ---
 
 
-# Verzendde Forms afhandelen {#handling-submitted-forms}
+# Verzendde Forms {#handling-submitted-forms} verwerken
 
 Web-based toepassingen die een gebruiker toelaten om interactieve vormen in te vullen vereisen dat de gegevens terug naar de server worden voorgelegd. Met de Forms-service kunt u de gegevens ophalen die de gebruiker in een interactief formulier heeft ingevoerd. Nadat u de gegevens hebt opgehaald, kunt u de gegevens verwerken om aan uw bedrijfsvereisten te voldoen. U kunt de gegevens bijvoorbeeld opslaan in een database, de gegevens naar een andere toepassing verzenden, de gegevens naar een andere service verzenden, de gegevens in een formulierontwerp samenvoegen, de gegevens weergeven in een webbrowser, enzovoort.
 
-Formuliergegevens worden naar de Forms-service verzonden als XML- of PDF-gegevens. Dit is een optie die is ingesteld in Designer. Met een formulier dat als XML wordt verzonden, kunt u afzonderlijke waarden van veldgegevens extraheren. Met andere woorden, u kunt de waarde extraheren van elk formulierveld dat de gebruiker in het formulier heeft ingevoerd. Een formulier dat als PDF-gegevens wordt verzonden, is binaire gegevens, niet XML-gegevens. U kunt het formulier opslaan als PDF-bestand of het formulier naar een andere service verzenden. Als u gegevens wilt extraheren uit een formulier dat als XML is verzonden en vervolgens de formuliergegevens wilt gebruiken om een PDF-document te maken, roept u een andere AEM Forms-bewerking op. (Zie PDF-documenten [maken met verzonden XML-gegevens](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
+Formuliergegevens worden naar de Forms-service verzonden als XML- of PDF-gegevens. Dit is een optie die is ingesteld in Designer. Met een formulier dat als XML wordt verzonden, kunt u afzonderlijke waarden van veldgegevens extraheren. Met andere woorden, u kunt de waarde extraheren van elk formulierveld dat de gebruiker in het formulier heeft ingevoerd. Een formulier dat als PDF-gegevens wordt verzonden, is binaire gegevens, niet XML-gegevens. U kunt het formulier opslaan als PDF-bestand of het formulier naar een andere service verzenden. Als u gegevens wilt extraheren uit een formulier dat als XML is verzonden en vervolgens de formuliergegevens wilt gebruiken om een PDF-document te maken, roept u een andere AEM Forms-bewerking op. (Zie [PDF-documenten maken met verzonden XML-gegevens](/help/forms/developing/creating-pdf-documents-submitted-xml.md))
 
-In het volgende diagram worden gegevens weergegeven die worden verzonden naar een Java-server die is benoemd `HandleData` vanuit een interactief formulier dat wordt weergegeven in een webbrowser.
+In het volgende diagram worden gegevens weergegeven die vanuit een interactief formulier in een webbrowser worden verzonden naar een Java-server met de naam `HandleData`.
 
 ![hs_hs_handlesubmit](assets/hs_hs_handlesubmit.png)
 
@@ -45,16 +45,16 @@ De volgende lijst verklaart de stappen in het diagram.
   </tr>
   <tr>
    <td><p>2</p></td>
-   <td><p>Gegevens worden als XML-gegevens naar de <code>HandleData</code> Java-server verzonden.</p></td>
+   <td><p>Gegevens worden als XML-gegevens verzonden naar de Java Server <code>HandleData</code>.</p></td>
   </tr>
   <tr>
    <td><p>3</p></td>
-   <td><p>De <code>HandleData</code> Java Server bevat toepassingslogica om de gegevens op te halen.</p></td>
+   <td><p>De Java Server <code>HandleData</code> bevat toepassingslogica om de gegevens op te halen.</p></td>
   </tr>
  </tbody>
 </table>
 
-## Verzonden XML-gegevens verwerken {#handling-submitted-xml-data}
+## Ingediende XML-gegevens {#handling-submitted-xml-data} verwerken
 
 Wanneer formuliergegevens als XML worden verzonden, kunt u XML-gegevens ophalen die de verzonden gegevens vertegenwoordigen. Alle formuliervelden worden weergegeven als knooppunten in een XML-schema. De knoopwaarden komen overeen met de waarden die de gebruiker heeft ingevuld. Neem bijvoorbeeld een leningformulier waarin elk veld in het formulier wordt weergegeven als een knooppunt in de XML-gegevens. De waarde van elk knooppunt komt overeen met de waarde die een gebruiker invult. Stel dat een gebruiker het leningformulier vult met gegevens die in het volgende formulier worden getoond.
 
@@ -64,13 +64,14 @@ In de volgende afbeelding ziet u de overeenkomstige XML-gegevens die zijn opgeha
 
 ![hs_hs_loandata](assets/hs_hs_loandata.png)
 
-De velden in het leningformulier. Deze waarden kunnen worden opgehaald met Java XML-klassen.
+De velden in het leningformulier. Deze waarden kunnen worden opgehaald
+Java XML-klassen gebruiken.
 
 >[!NOTE]
 >
->Gegevens die als XML-gegevens moeten worden verzonden, moeten correct zijn geconfigureerd in Designer. Als u het formulierontwerp correct wilt configureren voor het verzenden van XML-gegevens, moet u ervoor zorgen dat de knop Verzenden die zich in het formulierontwerp bevindt, is ingesteld op het verzenden van XML-gegevens. Zie [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63)voor informatie over het instellen van de knop Verzenden om XML-gegevens te verzenden.
+>Gegevens die als XML-gegevens moeten worden verzonden, moeten correct zijn geconfigureerd in Designer. Als u het formulierontwerp correct wilt configureren voor het verzenden van XML-gegevens, moet u ervoor zorgen dat de knop Verzenden die zich in het formulierontwerp bevindt, is ingesteld op het verzenden van XML-gegevens. Zie [AEM Forms Designer](https://www.adobe.com/go/learn_aemforms_designer_63) voor informatie over het instellen van de knop Verzenden om XML-gegevens te verzenden.
 
-## Verzonden PDF-gegevens verwerken {#handling-submitted-pdf-data}
+## Verzonden PDF-gegevens {#handling-submitted-pdf-data} verwerken
 
 Neem bijvoorbeeld een webtoepassing die de Forms-service oproept. Nadat de Forms-service een interactief PDF-formulier heeft gerenderd naar een webbrowser van de client, vult de gebruiker het formulier in en verzendt het als PDF-gegevens. Wanneer de Forms-service de PDF-gegevens ontvangt, kan deze de PDF-gegevens naar een andere service verzenden of als PDF-bestand opslaan. Het volgende diagram toont de logische stroom van de toepassing.
 
@@ -87,7 +88,7 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
  </thead>
  <tbody>
   <tr>
-   <td><p>1</p></td>
+   <td><p>3</p></td>
    <td><p>Een webpagina bevat een koppeling die toegang krijgt tot een Java Servlet die de Forms-service aanroept.</p></td>
   </tr>
   <tr>
@@ -105,15 +106,15 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
  </tbody>
 </table>
 
-## Verzonden URL UTF-16-gegevens verwerken {#handling-submitted-url-utf-16-data}
+## Behandeling verzonden URL UTF-16-gegevens {#handling-submitted-url-utf-16-data}
 
 Als formuliergegevens worden verzonden als UTF-16-URL-gegevens, vereist de clientcomputer Adobe Reader of Acrobat 8.1 of hoger. Als het formulierontwerp een verzendknop bevat met URL-gecodeerde gegevens (HTTP Post) en de optie voor gegevenscodering UTF-16 is, moet het formulierontwerp worden gewijzigd in een teksteditor, zoals Kladblok. U kunt de coderingsoptie instellen op `UTF-16LE` of `UTF-16BE` voor de verzendknop. Designer biedt deze functionaliteit niet.
 
 >[!NOTE]
 >
->Zie [Services Reference for AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63)voor meer informatie over de Forms-service.
+>Zie [Referentiehandleiding voor services voor AEM Forms](https://www.adobe.com/go/learn_aemforms_services_63) voor meer informatie over de Forms-service.
 
-## Overzicht van de stappen {#summary-of-steps}
+## Overzicht van stappen {#summary-of-steps}
 
 Voer de volgende taken uit om verzonden formulieren te verwerken:
 
@@ -129,19 +130,19 @@ Neem de benodigde bestanden op in uw ontwikkelingsproject. Als u een clienttoepa
 
 **Een Forms Client API-object maken**
 
-Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvoeren, moet u een Forms-serviceclient maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient` object. Als u de Forms-API voor webservices gebruikt, maakt u een `FormsService` object.
+Voordat u programmatisch een client-API-bewerking voor Forms-services kunt uitvoeren, moet u een Forms-serviceclient maken. Als u de Java API gebruikt, maakt u een `FormsServiceClient`-object. Als u de Forms-API voor webservices gebruikt, maakt u een `FormsService`-object.
 
 **Formuliergegevens ophalen**
 
-Als u verzonden formuliergegevens wilt ophalen, roept u de `FormsServiceClient` methode van het `processFormSubmission` object aan. Wanneer u deze methode aanroept, moet u het inhoudstype van het verzonden formulier opgeven. Wanneer gegevens vanuit een clientwebbrowser naar de Forms-service worden verzonden, kunnen deze als XML- of PDF-gegevens worden verzonden. Om de gegevens op te halen die in formuliervelden zijn ingevoerd, kunnen de gegevens als XML-gegevens worden verzonden.
+Als u verzonden formuliergegevens wilt ophalen, roept u de methode `processFormSubmission` van het object `FormsServiceClient` aan. Wanneer u deze methode aanroept, moet u het inhoudstype van het verzonden formulier opgeven. Wanneer gegevens vanuit een clientwebbrowser naar de Forms-service worden verzonden, kunnen deze als XML- of PDF-gegevens worden verzonden. Om de gegevens op te halen die in formuliervelden zijn ingevoerd, kunnen de gegevens als XML-gegevens worden verzonden.
 
 U kunt ook formuliervelden ophalen uit een formulier dat als PDF-gegevens is verzonden door de volgende runtime-opties in te stellen:
 
-* Geef de volgende waarde als parameter voor het inhoudstype door aan de `processFormSubmission` methode: `CONTENT_TYPE=application/pdf`.
-* De `RenderOptionsSpec` waarde van het `PDFToXDP` object instellen op `true`
-* De `RenderOptionsSpec` waarde van het `ExportDataFormat` object instellen op `XMLData`
+* Geef de volgende waarde aan de methode `processFormSubmission` als parameter van het inhoudstype door: `CONTENT_TYPE=application/pdf`.
+* Stel de `RenderOptionsSpec`-waarde van het object `PDFToXDP` in op `true`
+* Stel de `RenderOptionsSpec`-waarde van het object `ExportDataFormat` in op `XMLData`
 
-U geeft het inhoudstype van het verzonden formulier op wanneer u de `processFormSubmission` methode aanroept. In de volgende lijst worden de toepasselijke waarden voor inhoudstypen aangegeven:
+U geeft het inhoudstype van het verzonden formulier op wanneer u de methode `processFormSubmission` aanroept. In de volgende lijst worden de toepasselijke waarden voor inhoudstypen aangegeven:
 
 * **text/xml**: Het inhoudstype dat wordt gebruikt wanneer een PDF-formulier formuliergegevens als XML verzendt.
 * **application/x-www-form-urlencoded**: Vertegenwoordigt het inhoudstype dat moet worden gebruikt wanneer een HTML-formulier gegevens als XML verzendt.
@@ -155,15 +156,15 @@ U haalt formuliergegevens op die naar de Forms-service zijn verzonden en bepaalt
 
 De Forms-service retourneert de volgende waarden om aan te geven of de verwerking van de gegevens is voltooid:
 
-* **0 (Verzenden):** De verzonden gegevens zijn klaar om te worden verwerkt.
-* **1 (berekenen):** De Forms-service heeft een rekenbewerking uitgevoerd op de gegevens en de resultaten moeten worden teruggegeven aan de gebruiker.
+* **0 (Verzenden):** verzonden gegevens kunnen worden verwerkt.
+* **1 (Berekenen):** De Forms-service heeft een rekenbewerking uitgevoerd op de gegevens en de resultaten moeten worden teruggegeven aan de gebruiker.
 * **2 (Valideren):** De door de Forms-service gevalideerde formuliergegevens en de resultaten moeten naar de gebruiker worden teruggestuurd.
 * **3 (Volgende):** De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
 * **4 (Vorige**): De huidige pagina is gewijzigd met resultaten die naar de clienttoepassing moeten worden geschreven.
 
 >[!NOTE]
 >
->Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie Formuliergegevens [berekenen](/help/forms/developing/calculating-form-data.md#calculating-form-data).)
+>Berekeningen en validaties moeten worden teruggegeven aan de gebruiker. (Zie [Formuliergegevens berekenen](/help/forms/developing/calculating-form-data.md#calculating-form-data).)
 
 **Bepalen of de formulierverzending bestandsbijlagen bevat**
 
@@ -177,7 +178,7 @@ Nadat u hebt bepaald of een formulier bestandsbijlagen bevat, kunt u de gegevens
 
 **De verzonden gegevens verwerken**
 
-Afhankelijk van het inhoudstype van de verzonden gegevens, kunt u afzonderlijke formulierveldwaarden extraheren uit de verzonden XML-gegevens of de verzonden PDF-gegevens opslaan als een PDF-bestand (of deze naar een andere service verzenden). Als u afzonderlijke formuliervelden wilt extraheren, converteert u de ingediende XML-gegevens naar een XML-gegevensbron en haalt u vervolgens de XML-gegevensbronwaarden op met behulp van `org.w3c.dom` klassen.
+Afhankelijk van het inhoudstype van de verzonden gegevens, kunt u afzonderlijke formulierveldwaarden extraheren uit de verzonden XML-gegevens of de verzonden PDF-gegevens opslaan als een PDF-bestand (of deze naar een andere service verzenden). Als u afzonderlijke formuliervelden wilt extraheren, converteert u de ingediende XML-gegevens naar een XML-gegevensbron en haalt u vervolgens de XML-gegevensbronwaarden op met de klassen `org.w3c.dom`.
 
 **Zie ook**
 
@@ -191,7 +192,7 @@ Afhankelijk van het inhoudstype van de verzonden gegevens, kunt u afzonderlijke 
 
 [Webtoepassingen maken die Forms renderen](/help/forms/developing/creating-web-applications-renders-forms.md)
 
-## Ingevulde formulieren verwerken met de Java API {#handle-submitted-forms-using-the-java-api}
+## Verzonden formulieren verwerken met de Java API {#handle-submitted-forms-using-the-java-api}
 
 Een verzonden formulier verwerken met de Forms API (Java):
 
@@ -201,35 +202,35 @@ Een verzonden formulier verwerken met de Forms API (Java):
 
 1. Een Forms Client API-object maken
 
-   * Maak een `ServiceClientFactory` object dat verbindingseigenschappen bevat.
-   * Maak een `FormsServiceClient` object door de constructor ervan te gebruiken en het `ServiceClientFactory` object door te geven.
+   * Maak een `ServiceClientFactory`-object dat verbindingseigenschappen bevat.
+   * Maak een `FormsServiceClient`-object door de constructor ervan te gebruiken en het object `ServiceClientFactory` door te geven.
 
 1. Formuliergegevens ophalen
 
-   * Als u formuliergegevens wilt ophalen die naar een Java Server zijn gepost, maakt u een `com.adobe.idp.Document` object met behulp van de constructor van het object en roept u de `javax.servlet.http.HttpServletResponse` methode van het `getInputStream` object aan vanuit de constructor.
-   * Maak een `RenderOptionsSpec` object met de constructor ervan. Stel de waarde van de landinstelling in door de methode van het `RenderOptionsSpec` `setLocale` object aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft.
+   * Als u formuliergegevens wilt ophalen die naar een Java Server zijn gepost, maakt u een `com.adobe.idp.Document`-object met de constructor ervan en roept u vanuit de constructor de methode `javax.servlet.http.HttpServletResponse` van het object `getInputStream` aan.
+   * Maak een `RenderOptionsSpec`-object met de constructor ervan. Stel de waarde van de landinstelling in door de methode `setLocale` van het object `RenderOptionsSpec` aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft.
 
    >[!NOTE]
    >
-   >U kunt de Forms-service de opdracht geven XDP- of XML-gegevens te maken van verzonden PDF-inhoud door de methode van het `RenderOptionsSpec` object aan te roepen en door te geven `setPDF2XDP` en `true` door te geven `setXMLData` `true`. Vervolgens kunt u de `FormsResult` methode van het `getOutputXML` object aanroepen om de XML-gegevens op te halen die overeenkomen met de XDP/XML-gegevens. (Het `FormsResult` object wordt geretourneerd door de methode `processFormSubmission`*, die in de volgende substap wordt beschreven.)*
+   >U kunt de Forms-service de instructie geven XDP- of XML-gegevens te maken van verzonden PDF-inhoud door de methode `RenderOptionsSpec` van het object `setPDF2XDP` aan te roepen en `true` door te geven en `setXMLData` en `true` door te geven. Vervolgens kunt u de methode `FormsResult` van het object `getOutputXML` aanroepen om de XML-gegevens op te halen die overeenkomen met de XDP/XML-gegevens. (Het object `FormsResult` wordt geretourneerd door de methode `processFormSubmission`*, die in de volgende substap wordt beschreven.)*
 
-   * Roep de methode van het `FormsServiceClient` `processFormSubmission` object aan en geef de volgende waarden door:
+   * Roep de methode `processFormSubmission` van het object `FormsServiceClient` aan en geef de volgende waarden door:
 
-      * Het `com.adobe.idp.Document` object dat de formuliergegevens bevat.
+      * Het object `com.adobe.idp.Document` dat de formuliergegevens bevat.
       * Een tekenreekswaarde die omgevingsvariabelen opgeeft, inclusief alle relevante HTTP-headers. Geef het inhoudstype op dat u wilt afhandelen. Als u XML-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=text/xml`. Als u PDF-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=application/pdf`.
-      * Een tekenreekswaarde die bijvoorbeeld de `HTTP_USER_AGENT` koptekstwaarde opgeeft. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Deze parameterwaarde is optioneel.
-      * Een `RenderOptionsSpec` object dat uitvoeringsopties opslaat.
+      * Een tekenreekswaarde die bijvoorbeeld de koptekstwaarde `HTTP_USER_AGENT` opgeeft. `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`. Deze parameterwaarde is optioneel.
+      * Een `RenderOptionsSpec`-object dat uitvoeringsopties opslaat.
 
-      De `processFormSubmission` methode retourneert een `FormsResult` object dat de resultaten van het verzenden van het formulier bevat.
+      De methode `processFormSubmission` retourneert een `FormsResult`-object dat de resultaten van het verzenden van het formulier bevat.
 
-   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de `FormsResult` methode van het `getAction` object aan te roepen. Als deze methode de waarde retourneert `0`, kunnen de gegevens worden verwerkt.
+   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de methode `getAction` van het object `FormsResult` aan te roepen. Als deze methode de waarde `0` retourneert, zijn de gegevens klaar om te worden verwerkt.
 
 
 
 1. Bepalen of de formulierverzending bestandsbijlagen bevat
 
-   * Roep de `FormsResult` methode van het `getAttachments` object aan. Deze methode retourneert een `java.util.List` object dat bestanden bevat die met het formulier zijn verzonden.
-   * Doorloop het `java.util.List` object om te bepalen of er bestandsbijlagen zijn. Als er bestandsbijlagen zijn, is elk element een `com.adobe.idp.Document` instantie. U kunt de bestandsbijlagen opslaan door de methode van het `com.adobe.idp.Document` object aan te roepen en een `copyToFile` `java.io.File` object door te geven.
+   * Roep de methode `FormsResult` van het object `getAttachments` aan. Deze methode retourneert een `java.util.List`-object dat bestanden bevat die met het formulier zijn verzonden.
+   * Doorloop het object `java.util.List` om te bepalen of er bestandsbijlagen zijn. Als er dossiergehechtheid zijn, is elk element een `com.adobe.idp.Document` instantie. U kunt de bestandsbijlagen opslaan door de methode `copyToFile` van het object `com.adobe.idp.Document` aan te roepen en een object `java.io.File` door te geven.
 
    >[!NOTE]
    >
@@ -237,19 +238,19 @@ Een verzonden formulier verwerken met de Forms API (Java):
 
 1. De verzonden gegevens verwerken
 
-   * Als het gegevenstype van de gegevens is `application/vnd.adobe.xdp+xml` of `text/xml`, creeer toepassingslogica om de gegevenswaarden van XML terug te winnen.
+   * Als het gegevenstype `application/vnd.adobe.xdp+xml` of `text/xml` is, maakt u toepassingslogica om XML-gegevenswaarden op te halen.
 
-      * Maak een `com.adobe.idp.Document` object door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
-      * Maak een `java.io.InputStream` object door de `java.io.DataInputStream` constructor aan te roepen en het `com.adobe.idp.Document` object door te geven.
-      * Maak een `org.w3c.dom.DocumentBuilderFactory` object door de `org.w3c.dom.DocumentBuilderFactory` methode van het statische `newInstance` object aan te roepen.
-      * Maak een `org.w3c.dom.DocumentBuilder` object door de `org.w3c.dom.DocumentBuilderFactory` methode van het `newDocumentBuilder` object aan te roepen.
-      * Maak een `org.w3c.dom.Document` object door de methode van het `org.w3c.dom.DocumentBuilder` object aan te roepen `parse` en het `java.io.InputStream` object door te geven.
-      * Hiermee wordt de waarde van elk knooppunt in het XML-document opgehaald. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: het `org.w3c.dom.Document` object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
-   * Als het gegevenstype van de gegevens is, maakt u toepassingslogica om de verzonden PDF-gegevens op te slaan als een PDF-bestand. `application/pdf`
+      * Maak een `com.adobe.idp.Document`-object door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
+      * Maak een `java.io.InputStream`-object door de constructor `java.io.DataInputStream` aan te roepen en het object `com.adobe.idp.Document` door te geven.
+      * Maak een `org.w3c.dom.DocumentBuilderFactory`-object door de methode `newInstance` van het statische object aan te roepen.`org.w3c.dom.DocumentBuilderFactory`
+      * Maak een `org.w3c.dom.DocumentBuilder`-object door de methode `newDocumentBuilder` van het object `org.w3c.dom.DocumentBuilderFactory` aan te roepen.
+      * Maak een `org.w3c.dom.Document`-object door de methode `parse` van het object `org.w3c.dom.DocumentBuilder` aan te roepen en het object `java.io.InputStream` door te geven.
+      * Hiermee wordt de waarde van elk knooppunt in het XML-document opgehaald. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: het object `org.w3c.dom.Document` en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode genoemd `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
+   * Als het gegevenstype `application/pdf` is, maakt u toepassingslogica om de verzonden PDF-gegevens op te slaan als een PDF-bestand.
 
-      * Maak een `com.adobe.idp.Document` object door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
-      * Maak een `java.io.File` object met behulp van de openbare constructor. Geef PDF op als bestandsnaamextensie.
-      * Vul het PDF-bestand door de methode van het `com.adobe.idp.Document` object aan te roepen `copyToFile` en het `java.io.File` object door te geven.
+      * Maak een `com.adobe.idp.Document`-object door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
+      * Maak een `java.io.File`-object met behulp van de openbare constructor. Geef PDF op als bestandsnaamextensie.
+      * Vul het PDF-bestand door de methode `copyToFile` van het object `com.adobe.idp.Document` aan te roepen en het object `java.io.File` door te geven.
 
 
 **Zie ook**
@@ -275,58 +276,58 @@ Een verzonden formulier verwerken met de Forms API (webservice):
 
 1. Een Forms Client API-object maken
 
-   Maak een `FormsService` object en stel verificatiewaarden in.
+   Maak een `FormsService`-object en stel de verificatiewaarden in.
 
 1. Formuliergegevens ophalen
 
-   * Als u formuliergegevens wilt ophalen die naar een Java Server zijn gepost, maakt u een `BLOB` object met de constructor ervan.
-   * Maak een `java.io.InputStream` object door de `javax.servlet.http.HttpServletResponse` methode van het `getInputStream` object aan te roepen.
-   * Maak een `java.io.ByteArrayOutputStream` object door de constructor ervan te gebruiken en de lengte van het `java.io.InputStream` object door te geven.
-   * Kopieer de inhoud van het `java.io.InputStream` object naar het `java.io.ByteArrayOutputStream` object.
-   * Maak een bytearray door de `java.io.ByteArrayOutputStream` methode van het `toByteArray` object aan te roepen.
-   * Vul het `BLOB` `setBinaryData` object door de methode ervan aan te roepen en de bytearray als een argument door te geven.
-   * Maak een `RenderOptionsSpec` object met de constructor ervan. Stel de waarde van de landinstelling in door de methode van het `RenderOptionsSpec` `setLocale` object aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft.
-   * Roep de methode van het `FormsService` `processFormSubmission` object aan en geef de volgende waarden door:
+   * Als u formuliergegevens wilt ophalen die naar een Java Server zijn gepost, maakt u een `BLOB`-object met de bijbehorende constructor.
+   * Maak een `java.io.InputStream`-object door de methode `getInputStream` van het object `javax.servlet.http.HttpServletResponse` aan te roepen.
+   * Maak een `java.io.ByteArrayOutputStream`-object door de constructor ervan te gebruiken en de lengte van het object `java.io.InputStream` door te geven.
+   * Kopieer de inhoud van het object `java.io.InputStream` naar het object `java.io.ByteArrayOutputStream`.
+   * Maak een bytearray door de methode `toByteArray` van het object `java.io.ByteArrayOutputStream` aan te roepen.
+   * Vul het object `BLOB` door de methode `setBinaryData` ervan aan te roepen en de bytearray als een argument door te geven.
+   * Maak een `RenderOptionsSpec`-object met de constructor ervan. Stel de waarde van de landinstelling in door de methode `setLocale` van het object `RenderOptionsSpec` aan te roepen en een tekenreekswaarde door te geven die de waarde van de landinstelling opgeeft.
+   * Roep de methode `processFormSubmission` van het object `FormsService` aan en geef de volgende waarden door:
 
-      * Het `BLOB` object dat de formuliergegevens bevat.
+      * Het object `BLOB` dat de formuliergegevens bevat.
       * Een tekenreekswaarde die omgevingsvariabelen opgeeft, inclusief alle relevante HTTP-headers. Geef het inhoudstype op dat u wilt afhandelen. Als u XML-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=text/xml`. Als u PDF-gegevens wilt verwerken, geeft u de volgende tekenreekswaarde op voor deze parameter: `CONTENT_TYPE=application/pdf`.
-      * Een tekenreekswaarde die de `HTTP_USER_AGENT` koptekstwaarde opgeeft; bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
-      * Een `RenderOptionsSpec` object dat uitvoeringsopties opslaat.
-      * Een leeg `BLOBHolder` object dat door de methode wordt gevuld.
-      * Een leeg `javax.xml.rpc.holders.StringHolder` object dat door de methode wordt gevuld.
-      * Een leeg `BLOBHolder` object dat door de methode wordt gevuld.
-      * Een leeg `BLOBHolder` object dat door de methode wordt gevuld.
-      * Een leeg `javax.xml.rpc.holders.ShortHolder` object dat door de methode wordt gevuld.
-      * Een leeg `MyArrayOf_xsd_anyTypeHolder` object dat door de methode wordt gevuld. Met deze parameter worden bestandsbijlagen opgeslagen die samen met het formulier worden verzonden.
-      * Een leeg `FormsResultHolder` object dat door de methode wordt gevuld met het formulier dat wordt verzonden.
+      * Een tekenreekswaarde die de koptekstwaarde `HTTP_USER_AGENT` opgeeft; bijvoorbeeld `Mozilla/4.0 (compatible; MSIE 6.0; Windows NT 5.1; SV1; .NET CLR 1.1.4322)`.
+      * Een `RenderOptionsSpec`-object dat uitvoeringsopties opslaat.
+      * Een leeg object `BLOBHolder` dat door de methode is gevuld.
+      * Een leeg object `javax.xml.rpc.holders.StringHolder` dat door de methode is gevuld.
+      * Een leeg object `BLOBHolder` dat door de methode is gevuld.
+      * Een leeg object `BLOBHolder` dat door de methode is gevuld.
+      * Een leeg object `javax.xml.rpc.holders.ShortHolder` dat door de methode is gevuld.
+      * Een leeg object `MyArrayOf_xsd_anyTypeHolder` dat door de methode is gevuld. Met deze parameter worden bestandsbijlagen opgeslagen die samen met het formulier worden verzonden.
+      * Een leeg `FormsResultHolder`-object dat door de methode wordt gevuld met het formulier dat wordt verzonden.
 
-      De `processFormSubmission` methode vult de `FormsResultHolder` parameter met de resultaten van het verzenden van het formulier.
+      Met de methode `processFormSubmission` wordt de parameter `FormsResultHolder` gevuld met de resultaten van het verzenden van het formulier.
 
-   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de `FormsResult` methode van het `getAction` object aan te roepen. Als deze methode de waarde retourneert `0`, kunnen de formuliergegevens worden verwerkt. U kunt een `FormsResult` object ophalen door de waarde van het `FormsResultHolder` `value` gegevenslid van het object op te halen.
+   * Bepaal of de Forms-service de formuliergegevens heeft verwerkt door de methode `getAction` van het object `FormsResult` aan te roepen. Als deze methode de waarde `0` retourneert, kunnen de formuliergegevens worden verwerkt. U kunt een `FormsResult` voorwerp krijgen door de waarde van `FormsResultHolder` te krijgen van het `value` gegevenslid van het voorwerp.
 
 
 1. Bepalen of de formulierverzending bestandsbijlagen bevat
 
-   Hiermee wordt de waarde van het `MyArrayOf_xsd_anyTypeHolder` gegevenslid van het `value` object opgehaald (het `MyArrayOf_xsd_anyTypeHolder` object is aan de `processFormSubmission` methode doorgegeven). Dit gegevenslid retourneert een array van `Objects`. Elk element in de `Object` array is een element `Object`dat overeenkomt met de bestanden die samen met het formulier zijn verzonden. U kunt elk element binnen de array ophalen en naar een `BLOB` object casten.
+   Hiermee wordt de waarde opgehaald van het `MyArrayOf_xsd_anyTypeHolder`-gegevenslid van het `value`-object (het `MyArrayOf_xsd_anyTypeHolder`-object is doorgegeven aan de methode `processFormSubmission`). Dit gegevenslid retourneert een array van `Objects`. Elk element in de `Object`-array is een `Object`element dat overeenkomt met de bestanden die samen met het formulier zijn verzonden. U kunt elk element binnen de serie krijgen en het gieten aan een `BLOB` voorwerp.
 
 1. De verzonden gegevens verwerken
 
-   * Als het gegevenstype van de gegevens is `application/vnd.adobe.xdp+xml` of `text/xml`, creeer toepassingslogica om de gegevenswaarden van XML terug te winnen.
+   * Als het gegevenstype `application/vnd.adobe.xdp+xml` of `text/xml` is, maakt u toepassingslogica om XML-gegevenswaarden op te halen.
 
-      * Maak een `BLOB` object door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
-      * Maak een bytearray door de `BLOB` methode van het `getBinaryData` object aan te roepen.
-      * Maak een `java.io.InputStream` object door de `java.io.ByteArrayInputStream` constructor aan te roepen en de bytearray door te geven.
-      * Maak een `org.w3c.dom.DocumentBuilderFactory` object door de `org.w3c.dom.DocumentBuilderFactory` methode van het statische `newInstance` object aan te roepen.
-      * Maak een `org.w3c.dom.DocumentBuilder` object door de `org.w3c.dom.DocumentBuilderFactory` methode van het `newDocumentBuilder` object aan te roepen.
-      * Maak een `org.w3c.dom.Document` object door de methode van het `org.w3c.dom.DocumentBuilder` object aan te roepen `parse` en het `java.io.InputStream` object door te geven.
-      * Hiermee wordt de waarde van elk knooppunt in het XML-document opgehaald. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: het `org.w3c.dom.Document` object en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode geroepen `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
-   * Als het gegevenstype van de gegevens is, maakt u toepassingslogica om de verzonden PDF-gegevens op te slaan als een PDF-bestand. `application/pdf`
+      * Maak een `BLOB`-object door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
+      * Maak een bytearray door de methode `getBinaryData` van het object `BLOB` aan te roepen.
+      * Maak een `java.io.InputStream`-object door de constructor `java.io.ByteArrayInputStream` aan te roepen en de bytearray door te geven.
+      * Maak een `org.w3c.dom.DocumentBuilderFactory`-object door de methode `newInstance` van het statische object aan te roepen.`org.w3c.dom.DocumentBuilderFactory`
+      * Maak een `org.w3c.dom.DocumentBuilder`-object door de methode `newDocumentBuilder` van het object `org.w3c.dom.DocumentBuilderFactory` aan te roepen.
+      * Maak een `org.w3c.dom.Document`-object door de methode `parse` van het object `org.w3c.dom.DocumentBuilder` aan te roepen en het object `java.io.InputStream` door te geven.
+      * Hiermee wordt de waarde van elk knooppunt in het XML-document opgehaald. U kunt deze taak uitvoeren door een aangepaste methode te maken die twee parameters accepteert: het object `org.w3c.dom.Document` en de naam van het knooppunt waarvan u de waarde wilt ophalen. Deze methode retourneert een tekenreekswaarde die de waarde van het knooppunt vertegenwoordigt. In het codevoorbeeld dat dit proces volgt, wordt deze douanemethode genoemd `getNodeText`. De hoofdtekst van deze methode wordt weergegeven.
+   * Als het gegevenstype `application/pdf` is, maakt u toepassingslogica om de verzonden PDF-gegevens op te slaan als een PDF-bestand.
 
-      * Maak een `BLOB` object door de `FormsResult` methode van het `getOutputContent` object aan te roepen.
-      * Maak een bytearray door de `BLOB` methode van het `getBinaryData` object aan te roepen.
-      * Maak een `java.io.File` object met behulp van de openbare constructor. Geef PDF op als bestandsnaamextensie.
-      * Maak een `java.io.FileOutputStream` object door de constructor ervan te gebruiken en het `java.io.File` object door te geven.
-      * Vul het PDF-bestand door de methode van het `java.io.FileOutputStream` `write` object aan te roepen en de bytearray door te geven.
+      * Maak een `BLOB`-object door de methode `getOutputContent` van het object `FormsResult` aan te roepen.
+      * Maak een bytearray door de methode `getBinaryData` van het object `BLOB` aan te roepen.
+      * Maak een `java.io.File`-object met behulp van de openbare constructor. Geef PDF op als bestandsnaamextensie.
+      * Maak een `java.io.FileOutputStream`-object door de constructor ervan te gebruiken en het object `java.io.File` door te geven.
+      * Vul het PDF-bestand door de methode `write` van het object `java.io.FileOutputStream` aan te roepen en de bytearray door te geven.
 
 
 **Zie ook**
