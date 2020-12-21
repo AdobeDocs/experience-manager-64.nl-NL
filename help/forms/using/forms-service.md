@@ -17,7 +17,7 @@ ht-degree: 5%
 ---
 
 
-# Forms Service {#forms-service}
+# Forms-service {#forms-service}
 
 ## Overzicht {#overview}
 
@@ -35,17 +35,17 @@ Gebruik de Forms-service om het volgende te doen:
 
 Met de Form-service kunt u PDF forms maken voor het vastleggen van gegevens. Doorgaans begint u met een AEM Forms Designer-sjabloon. Met de bewerking `renderPDFForm` (koppeling naar JavaDoc) van de Forms-service kunt u deze sjabloon converteren naar een PDF-formulier.
 
-De eerste parameter van de `renderPDFForm` bewerking is de naam van het sjabloonbestand (bijvoorbeeld `ExpenseClaim.xdp`). U kunt het sjabloonbestand opslaan in een lokaal bestandssysteem, in een CRX-opslagplaats of op een HTTP- of FTP-locatie. U kunt de locatie van het sjabloonbestand opgeven door de hoofdmap van de inhoud in te stellen in de `PDFFormRenderOptions` parameter van de `renderPDFForm` bewerking. Zie Javadoc voor meer informatie over andere opties die u voor de `PDFFormRenderOptions` parameter kunt opgeven.
+De eerste parameter van de bewerking `renderPDFForm` is de naam van het sjabloonbestand (bijvoorbeeld `ExpenseClaim.xdp`). U kunt het sjabloonbestand opslaan in een lokaal bestandssysteem, in een CRX-opslagplaats of op een HTTP- of FTP-locatie. U kunt de locatie van het sjabloonbestand opgeven door de hoofdmap van de inhoud in te stellen in de parameter `PDFFormRenderOptions` van de bewerking `renderPDFForm`. Zie Javadoc voor meer informatie over andere opties die u kunt opgeven voor de parameter `PDFFormRenderOptions`.
 
-De `renderPDFForm` bewerking kan ook XML-gegevens accepteren. De XML-gegevens worden met de sjabloon samengevoegd wanneer u een PDF-formulier maakt, zodat het gegenereerde PDF-formulier de opgegeven gegevens bevat. De tweede parameter voor de `renderPDFForm` bewerking kan een object Document (Javadoc) accepteren dat XML-gegevens bevat.
+De bewerking `renderPDFForm` kan ook XML-gegevens accepteren. De XML-gegevens worden met de sjabloon samengevoegd wanneer u een PDF-formulier maakt, zodat het gegenereerde PDF-formulier de opgegeven gegevens bevat. De tweede parameter voor de bewerking `renderPDFForm` kan een object Document (JavaDoc) accepteren dat XML-gegevens bevat.
 
 ## Gegevens extraheren uit PDF forms  {#extracting-data-from-pdf-forms-nbsp}
 
-Gebruik de bewerking `exportData` (Javadoc) van de Forms-service om gegevens-XML uit een PDF-formulier te extraheren. Deze bewerking accepteert een document als eerste parameter. U kunt de gegevens exporteren als een XDP-document of als een XML-bestand. Als u de gegevens als een XML-bestand exporteert, worden de XDP-envelop door de geëxporteerde gegevens verwijderd en wordt een onbewerkt XML-bestand geretourneerd. U kunt deze rangschikking opgeven met de tweede parameter.
+Met de bewerking `exportData` (Javadoc) van de Forms-service kunt u XML-gegevens uit een PDF-formulier extraheren. Deze bewerking accepteert een document als eerste parameter. U kunt de gegevens exporteren als een XDP-document of als een XML-bestand. Als u de gegevens als een XML-bestand exporteert, worden de XDP-envelop door de geëxporteerde gegevens verwijderd en wordt een onbewerkt XML-bestand geretourneerd. U kunt deze rangschikking opgeven met de tweede parameter.
 
 ## Gegevens importeren in PDF forms {#importing-data-into-pdf-forms}
 
-Met de Forms-service kunt u ook een PDF-formulier dat is gemaakt met AEM Forms Designer of de `renderPDFForm` bewerking samenvoegen met XML-gegevens. De bewerking `importData` (Javadoc) van de Forms-service accepteert het PDF-formulier en de XML-gegevens en retourneert een PDF-formulier met XML-gegevens.
+Met de Forms-service kunt u ook een PDF-formulier dat is gemaakt met AEM Forms Designer of de bewerking `renderPDFForm` samenvoegen met XML-gegevens. Met de bewerking `importData` (Javadoc) van de Forms-service worden het PDF-formulier en de XML-gegevens geaccepteerd en wordt een PDF-formulier met de XML-gegevens geretourneerd.
 
 ## Formulieren weergeven op basis van fragmenten {#rendering-forms-based-on-fragments}
 
