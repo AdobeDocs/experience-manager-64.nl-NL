@@ -18,7 +18,7 @@ ht-degree: 0%
 
 # Referentie adaptieve formulierfragmenten {#reference-adaptive-form-fragments}
 
-[Adaptief formulierfragment](/help/forms/using/adaptive-form-fragments.md) is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
+[Aangepast formulier ](/help/forms/using/adaptive-form-fragments.md) is een groep velden of een deelvenster met een groep velden die u kunt gebruiken wanneer u een formulier maakt. Hiermee kunt u gemakkelijk en snel een formulier maken. U kunt een adaptief formulierfragment naar een formulier slepen met de middelenbrowser in het zijpaneel en het bewerken in de formuliereditor.
 
 Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in het AEM Forms-pakket [AEM-FORMS-6.3-REFERENCE-FRAGMENTS](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq630/fd/AEM-FORMS-6.3-REFERENCE-FRAGMENTS). Het bevat de volgende fragmenten:
 
@@ -33,7 +33,7 @@ Voor auteurs van adaptieve formulieren worden referentiefragmenten geleverd in h
 * Voorwaarden en bepalingen
 * Voorwaarden en bepalingen met krabbels
 
-Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Voor het installeren van een pakket, zie [hoe te met Pakketten](/help/sites-administering/package-manager.md)werken.
+Wanneer u het pakket installeert, wordt een map Reference Fragments met verwijzingsfragmenten gemaakt onder Forms &amp; Documents. Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor het installeren van een pakket.
 
 ![Alle fragmenten weergegeven](assets/ootb-frags.png)
 
@@ -63,7 +63,7 @@ Bevat velden waarin actuele werkgelegenheidsdetails worden opgenomen, zoals arbe
 
 [Klik om te vergroten](assets/current-emp-1.png)
 
-## Afhankelijke informatie {#dependents-information}
+## Informatie over afhankelijke personen {#dependents-information}
 
 Omvat gebieden om informatie over één of meerdere gebiedsdelen, zoals hun naam, verhouding, en leeftijd in een tabelvorm te specificeren.
 ![Informatiefragment Afhankelijke](assets/dependents-info.png)
@@ -91,7 +91,7 @@ Bevat velden voor het opgeven van de titel, voornaam, middelste naam en achterna
 
 [Klik om te vergroten](assets/name-1.png)
 
-## Voorwaarden en bepalingen {#terms-conditions}
+## Voorwaarden {#terms-conditions}
 
 Hiermee geeft u aan welke voorwaarden gebruikers moeten accepteren voordat ze een formulier verzenden.
 ![Fragment Voorwaarden en bepalingen](assets/tnc.png)
