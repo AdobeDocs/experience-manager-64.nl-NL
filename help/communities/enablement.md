@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Functies van Enablement configureren {#configuring-enablement-features}
+# Functies {#configuring-enablement-features} configureren
 
 ## Overzicht {#overview}
 
-De enablement-functies bieden de mogelijkheid om [enablement-gemeenschappen](overview.md#enablement-community)te maken.
+De functies voor activering bieden de mogelijkheid [enablement Communities](overview.md#enablement-community) te maken.
 
 * Deze functie vereist extra licenties voor gebruik in een productieomgeving.
 
@@ -30,20 +30,25 @@ Het gebruik van de functies voor activering vereist het volgende:
 
 Installatie van:
 
-* **SCORM** Sharable Content Object Reference Model (SCORM) is een verzameling standaarden en specificaties voor e-learning. SCORM definieert ook hoe inhoud kan worden verpakt in een overdraagbaar ZIP-bestand.
+* **SCORMSharable Content**
+Object Reference Model (SCORM) is een verzameling standaarden en specificaties voor e-learning. SCORM definieert ook hoe inhoud kan worden verpakt in een overdraagbaar ZIP-bestand.
 
-* **MySQL** MySQL is een relationele database die voornamelijk wordt gebruikt voor het bijhouden en rapporteren van SCORM-gegevens voor Enablement en voor tabellen voor het bijhouden van videovoortgang. Voor het SCORM for enablement-functiepakket is het MySQL JDBC-stuurprogramma vereist.
+* ****
+MySQLMySQL is een relationele database die voornamelijk wordt gebruikt voor het bijhouden en rapporteren van SCORM-gegevens voor Enablement en voor tabellen voor het bijhouden van videovoortgang. Voor het SCORM for enablement-functiepakket is het MySQL JDBC-stuurprogramma vereist.
 
-* **mpeg** FFmpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor een correcte transcodering van [Video-elementen](../../help/sites-authoring/default-components-foundation.md#video). Voor gemeenschappen van activering wordt deze methode in de auteursomgeving gebruikt om metagegevens voor geüploade bronnen op te halen en om een miniatuur te genereren die wordt weergegeven wanneer de bron wordt vermeld.
+* **mpegFFmpeg is een oplossing voor het converteren en streamen van audio en video en wordt, indien geïnstalleerd, gebruikt voor een correcte transcodering van**
+Video-elementen [ ](../../help/sites-authoring/default-components-foundation.md#video). Voor gemeenschappen van activering wordt deze methode in de auteursomgeving gebruikt om metagegevens voor geüploade bronnen op te halen en om een miniatuur te genereren die wordt weergegeven wanneer de bron wordt vermeld.
 
 Instellen van:
 
-* **Community Managers** For enablement Communities, only members of the 
-`Community Enablement Managers` De gebruikersgroep kan de rol van worden toegewezen, `*Community Site* Enablement Manager`waarvan de toestemmingen inhoudsverwezenlijking, taken, en lidbeheer in het publiceren milieu kunnen omvatten.
+* **Community**
+ManagersVoor gemeenschappen van activering, alleen leden van de 
+`Community Enablement Managers` De gebruikersgroep kan de rol van worden toegewezen,  `*Community Site* Enablement Manager`waarvan de toestemmingen inhoudsverwezenlijking, taken, en lidbeheer in het publiceren milieu kunnen omvatten.
 
 Optionele configuratie van:
 
-* **Adobe Analytics** Integration met Adobe Analytics voegt uitgebreide rapportfuncties toe en biedt ondersteuning voor de toevoeging Video Heartmaatmuziek aan Analytics.
+* **Adobe**
+AnalyticsIntegration met Adobe Analytics voegt uitgebreide rapportfuncties toe en ondersteunt de toevoeging Video Heartbeat aan Analytics.
 
 * **Dispatcher**
 
@@ -55,17 +60,20 @@ Elke stap verbindt met documentatie die de noodzakelijke details verstrekt.
 
 **Op alle auteur-/publicatieinstanties:**
 
-1. **[Installeer JDBC-stuurprogramma voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)**Use Web Console (bundels): 
-Installeer*http://localhost:4502/system/console/bundles*Installeren *voordat*u SCORM-pakket installeert
+1. **[Installeer het JDBC-stuurprogramma voor](deploy-communities.md#jdbc-driver-for-mysql)**
+MySQLUse Web Console (bundels): Installeer  *http://localhost:4502/system/console/*
+bundlesInstalleer  ** voordat u SCORM-pakket installeert
 
-1. **[SCORM-pakket](deploy-communities.md#scorm-package)**installeren Pakketbeheer gebruiken:
+1. **[SCORM-](deploy-communities.md#scorm-package)**
+pakket installerenPakketbeheer gebruiken: 
 *http://localhost:4502/crx/packmgr/*
 
 **Op elke server:**
 
 1. **[MySQL, MySQL Workbench installeren](mysql.md)**
 
-1. **[MySQL-databases](mysql.md#database-setup)**installeren SQL-scripts uitvoeren die zijn gedownload van de auteurinstantie
+1. **[MySQL-](mysql.md#database-setup)**
+databases installerenSQL-scripts uitvoeren die zijn gedownload van de auteurinstantie
 \
    MySQL Workbench gebruiken
 
@@ -75,32 +83,39 @@ Installeer*http://localhost:4502/system/console/bundles*Installeren *voordat*u S
 
 **Op alle auteur-/publicatieinstanties:**
 
-1. **[configureren van JDBC-verbindingenpool](mysql.md#configure-jdbc-connections)**Webconsole gebruiken (configMgr):
+1. **[Configureer JDBC-verbindingen](mysql.md#configure-jdbc-connections)**
+poolGebruik webconsole (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[configureren van SCORM engine service](mysql.md#aem-communities-scormengine-service)**Web Console (configMgr):
+1. **[SCORM engine](mysql.md#aem-communities-scormengine-service)**
+serviceUse Web Console (configMgr) configureren: 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[vorm CSRF filters](mysql.md#adobe-granite-csrf-filter)**de Console van het Gebruik van het Web (configMgr):
+1. **[vorm CSRF](mysql.md#adobe-granite-csrf-filter)**
+filtersGebruik de Console van het Web (configMgr): 
 *http://localhost:4502/system/console/configMgr*
 
 **Instantie van auteur:**
 
-1. (*facultatief*) **[vorm de Hulpmiddelen van het de dienstgebruik van Analytics](analytics.md)**, Plaatsing, console van Cloud Services:
+1. (*optioneel*) **[Analyseservice configureren](analytics.md)**
+Hulpmiddelen, Plaatsing, de console van Cloud Services van het gebruik: 
 *http://localhost:4502/etc/cloudservices/sitecatalyst.html*
 
-1. **[MPEG](ffmpeg.md#configure-ffmpeg-transcoding-service)**Use Workflow/Models-console configureren
+1. **[Configureer](ffmpeg.md#configure-ffmpeg-transcoding-service)**
+FormsUse Workflow/Models-console
 
-1. **[laat de Console van het](deploy-communities.md#tunnel-service-on-author)**Gebruik van het Gebruik van de Dienst van de Tunnel (configMgr) toe:
+1. **[laat de Console van het Web van](deploy-communities.md#tunnel-service-on-author)**
+ServiceUse van de Tunnel (configMgr) toe: 
 *http://localhost:4502/system/console/configMgr*
 
-1. **[Communautaire beheerders](users.md#creating-community-members)**maken voor het gebruik van de klassieke UI-beveiligingsconsole voor de auteursomgeving:*http://localhost:4502/useradmin*maak gebruiker(s) met pad = /home/users/community
+1. **[Community-](users.md#creating-community-members)** beheerders makenVoor een auteursomgeving gebruikt u de klassieke UI-beveiligingsconsole:  *http://localhost:4502/*
+gebruiker(s) met pad = /home/users/community
 
    * Voeg leden toe aan de volgende groepen:
 
       * Community Enablement Managers
       * Administrateurs van Gemeenschappen
 
-## Dispatcher {#dispatcher}
+## Verzending {#dispatcher}
 
-Wanneer de plaatsing [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html)omvat, opdat de enablement eigenschappen behoorlijk werken, moeten de `clientheader`en `filter`secties veranderen. Zie [Dispatcher configureren voor Gemeenschappen](dispatcher.md#enablement).
+Wanneer de implementatie [AEM Dispatcher](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher.html) bevat, moeten de `clientheader`en `filter`secties worden gewijzigd om de schakelingsfuncties naar behoren te laten werken. Zie [Dispatcher configureren voor Communities](dispatcher.md#enablement).
