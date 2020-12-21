@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Beveiligde back-upmodus in- en uitschakelen {#enabling-and-disabling-safe-backup-mode}
+# Beveiligde back-upmodus {#enabling-and-disabling-safe-backup-mode} in- en uitschakelen
 
 Op de pagina Back-upinstellingen kunt u AEM formulieren gebruiken in de veilige back-upmodus, zodat u op betrouwbare wijze een back-up kunt maken van uw database en de GDS-map (Global Document Storage).
 
@@ -28,7 +28,7 @@ AEM formulieren in de veilige back-upmodus werken normaal, maar er worden geen b
 >
 >Als u deze optie instelt, wordt er geen back-up van uw systeem gemaakt. het bereidt uw systeem voor steun voor.
 
-## Veilige back-upmodus inschakelen {#enable-safe-backup-mode}
+## Veilige back-upmodus {#enable-safe-backup-mode} inschakelen
 
 1. Klik in de beheerconsole op Instellingen > Core Systems Settings > Backup Settings.
 1. Selecteer in de pagina Back-upinstellingen de optie Werken in veilige back-upmodus en klik op OK.
@@ -37,7 +37,7 @@ AEM formulieren in de veilige back-upmodus werken normaal, maar er worden geen b
 >
 >Als het systeem al wordt uitgevoerd in de veilige back-upmodus, wordt er geen nieuwe reservatie gemaakt wanneer u op OK klikt.
 
-## Veilige back-upmodus uitschakelen {#disable-safe-backup-mode}
+## Veilige back-upmodus {#disable-safe-backup-mode} uitschakelen
 
 1. Klik in de beheerconsole op Instellingen > Core Systems Settings > Backup Settings.
 1. Schakel op de pagina Back-upinstellingen de optie Bewerken in veilige back-upmodus uit en klik op OK.
