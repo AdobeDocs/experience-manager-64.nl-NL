@@ -16,7 +16,7 @@ ht-degree: 0%
 ---
 
 
-# Tabellen in adaptieve formulieren {#tables-in-adaptive-forms}
+# Tabellen in aangepaste vormen {#tables-in-adaptive-forms}
 
 Het gebruik van tabellen is een effectieve, vereenvoudigde en georganiseerde manier om complexe gegevens weer te geven. Het helpt gebruikers bij het gemakkelijk identificeren van informatie en het verstrekken van input in een geordende regeling van rijen en kolommen. De meeste vormen van financiële diensten en overheidsorganisaties vereisen grote gegevenslijsten om aantallen te zetten en berekeningen uit te voeren.
 
@@ -38,9 +38,9 @@ Als u een tabel wilt maken, sleept u de component Tabel uit de componentbrowser 
 
 ![Tabelcomponent in AEM zijbalk](assets/sidebar-tables.png)
 
-### Over kop- en lichaamscellen {#about-header-and-body-cells}
+### Informatie over koptekst- en lichaamscellen {#about-header-and-body-cells}
 
-De koptekstcellen zijn tekstvelden. Als u het label voor een koptekst wilt wijzigen, klikt u met de rechtermuisknop op de kopcel en klikt u op **Bewerken**. Werk in het dialoogvenster Bewerken het label in het veld **Waarde** bij en klik op **OK**.
+De koptekstcellen zijn tekstvelden. Als u het label voor een koptekst wilt wijzigen, klikt u met de rechtermuisknop op de kopcel en klikt u op **Bewerken**. Werk in het dialoogvenster Bewerken het label bij in het veld **Waarde** en klik op **OK**.
 
 De lichaamscellen zijn tekstvakjes, door gebrek. U kunt een hoofdcel vervangen door elke andere adaptieve formuliercomponent die beschikbaar is in het hulpgedeelte, zoals een numeriek vak, een datumkiezer of een vervolgkeuzelijst.
 
@@ -48,7 +48,7 @@ De eerste tekstrij in de volgende tabel bevat bijvoorbeeld tekstvak, datumkiezer
 
 ![rijceltypen](assets/row-cell-types.png)
 
-U kunt twee of meer lichaamscellen samenvoegen door de cellen te selecteren u wilt samenvoegen, met de rechtermuisknop klikken en **Samenvoegen** selecteren. U kunt een samengevoegde cel ook splitsen door er met de rechtermuisknop op te klikken en Cellen **** splitsen te selecteren.
+U kunt twee of meer lichaamscellen samenvoegen door de cellen te selecteren u wilt samenvoegen, met de rechtermuisknop klikken, en **Fusie** selecteren. U kunt ook een samengevoegde cel splitsen door er met de rechtermuisknop op te klikken en **Cellen splitsen** te selecteren.
 
 ### Rijen en kolommen toevoegen, verwijderen, verplaatsen {#add-delete-move-rows-and-columns}
 
@@ -72,17 +72,17 @@ Het vervolgkeuzemenu voor de rij bevat ook de bewerking Bewerken waarmee u rijei
 
 U kunt een beschrijving van de tabel toevoegen om uit te leggen hoe de informatie is ingedeeld die schermlezers kunnen interpreteren en lezen. De beschrijving toevoegen:
 
-1. Selecteer de tabel en tik op ![cmp](assets/cmppr.png) om de eigenschappen ervan in het zijpaneel weer te geven.
+1. Selecteer de tabel en tik ![cmppr](assets/cmppr.png) om de eigenschappen ervan in het zijpaneel weer te geven.
 1. Geef een overzicht op op het tabblad Toegankelijkheid.
-1. Klik op **Gereed**.
+1. Klik **Done**.
 
-## Tabelstijl configureren {#configure}
+## Tabelstijl {#configure} configureren
 
 U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolbalk. Ga als volgt te werk om over te schakelen op de stijlmodus en de tabelopmaak te bewerken
 
-1. Tik vóór Voorvertoning op de pagina op ![canvas en vervolgkeuzelijst](assets/canvas-drop-down.png) > **Stijl**.
+1. Tik op ![canvas-drop-down](assets/canvas-drop-down.png) > **Stijl** op de pagina-werkbalk vóór Voorvertoning.
 
-1. Selecteer in de zijbalk een tabel en tik op de ![bewerkknop](assets/edit-button.png).
+1. Selecteer in het zijpaneel een tabel en tik op de bewerkknop ![edit-button](assets/edit-button.png).
 
    De opmaakeigenschappen worden weergegeven in het zijpaneel.
 
@@ -90,17 +90,17 @@ U kunt de stijl voor een tabel definiëren met de modus Stijl op de paginaboolba
 
 >[!NOTE]
 >
->U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md)voor meer informatie.
+>U kunt het kleurthema voor koptekst- en tekstrijen wijzigen door de waarden van LESS-variabelen te wijzigen. Zie [Thema&#39;s in AEM Forms](/help/forms/using/themes.md) voor meer informatie.
 
 ## Een rij dynamisch toevoegen of verwijderen {#add-or-delete-a-row-dynamically}
 
 Tabellen bieden ondersteuning voor het dynamisch toevoegen of verwijderen van rijen tijdens runtime.
 
-1. Selecteer een tabelrij en tik op ![cmp](assets/cmppr.png).
+1. Selecteer een tabelrij en tik op ![cmppr](assets/cmppr.png).
 1. Geef op het tabblad Herhalingsinstellingen het minimale en maximale aantal rijen op om het aantal rijen in de tabel te beperken.
-1. Klik op **Gereed**.
+1. Klik **Done**.
 
-Tijdens runtime worden knoppen weergegeven **`+`** en *`-`* verwijderd om een rij toe te voegen.
+Tijdens runtime ziet u de knoppen **`+`** en *`-`* om een rij toe te voegen of te verwijderen.
 
 ![add-delete-rows-dynamic](assets/add-delete-rows-dynamically.png)
 
@@ -114,7 +114,7 @@ Met tabellen in adaptieve formulieren kunt u expressies schrijven in JavaScript 
 
 Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om de zichtbaarheid ervan te bepalen op basis van de waarde die door een expressie wordt geretourneerd, terwijl cellen de volgende expressies ondersteunen:
 
-* **Initialisatiescript:** om een handeling uit te voeren bij initialisatie van een veld.
+* **Initialisatiescript:een handeling** voor initialisatie van een veld uitvoeren.
 * **Waarde script vastleggen:** om de componenten van een formulier te wijzigen nadat de waarde van een veld is gewijzigd.
 
 >[!NOTE]
@@ -128,7 +128,7 @@ Tabellen en rijen bieden alleen ondersteuning voor zichtbaarheidsexpressies om d
 
 De zichtbaarheidsexpressie voor een tabel of rij kan worden gedefinieerd op het tabblad Eigenschappen van deelvenster van het corresponderende dialoogvenster van de component Bewerken. De expressies voor een cel kunnen worden gedefinieerd op het tabblad Script van het dialoogvenster dat de component Edit bevat.
 
-Zie de API-naslaggids voor [JavaScript-bibliotheken voor adaptieve formulieren](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html)voor een volledige lijst met adaptieve formulierklassen, gebeurtenissen, objecten en openbare API&#39;s.
+Zie [JavaScript Library API reference for adaptive forms](https://helpx.adobe.com/aem-forms/6/javascript-api/index.html) voor de volledige lijst met adaptieve formulierklassen, -gebeurtenissen, -objecten en openbare API&#39;s.
 
 ## Mobiele lay-outs {#mobile-layouts}
 
@@ -136,13 +136,15 @@ Tabellen in adaptieve formulieren bieden ongeëvenaarde beleving van mobiele app
 
 U kunt een mobiele lay-out voor een lijst van het Stijllusje van het Edit componentendialoogvenster voor een lijst vormen.
 
-### Kopteksten links {#headers-on-left}
+### Kopteksten aan linkerzijde {#headers-on-left}
 
 In de kopteksten op linkerlay-out, wordt de kopbal in de lijst omgezet op de linkerzijde met slechts één cel die op een kopbal verschijnt. Elke rij in deze lay-out wordt weergegeven als een afzonderlijke sectie. In de volgende afbeeldingen wordt een tabel op een desktopcomputer vergeleken met die op een mobiel apparaat.
 
-![](assets/desktopview.png)Afbeelding voor bureaubladweergave **:** *Bureaubladweergave van een tabel met koptekst in de linkerlay-out*
+![](assets/desktopview.png)
+**desktop viewFigure:** *Desktopmening van een lijst met Kopbal op linkerlay-out*
 
-![headersontheleft](assets/headersontheleft.png)**afbeelding:** *De mobiele mening van een lijst met Kopbal op linkerlay-out*
+![](assets/headersontheleft.png)
+**headersontheleftFigure:** *Mobiele weergave van een tabel met Koptekst in linkerlay-out*
 
 ### Inklapbare kolomindeling {#collapsible-columns-layout}
 
@@ -154,9 +156,11 @@ In de Inklapbare kolomlay-out, de kolommen in de lijst doen ineenstorten om éé
 
 De volgende afbeeldingen vergelijken hoe een tabel eruitziet op een apparaat met samengevouwen en uitgevouwen kolommen.
 
-![samengevouwen kolom](assets/collapsed-column.png)**Afbeelding:** *Samengevouwen kolommen van een tabel waarvan slechts twee kolommen worden weergegeven op een mobiel apparaat*
+![samengevouwen-](assets/collapsed-column.png)
+**columnFigure:** *Samengevouwen kolommen van een lijst met slechts twee kolommen die op een mobiel apparaat verschijnen*
 
-![collapse_column](assets/collapsible_column.png)**Figure:** *Uitgebreide kolom van een tabel op een mobiel apparaat*
+![inklsible_](assets/collapsible_column.png)
+**columnFigure:** *Uitgebreide kolom van een lijst op een mobiel apparaat*
 
 ## Gegevens in een tabel samenvoegen {#merge-data-in-a-table}
 
@@ -169,9 +173,9 @@ Neem bijvoorbeeld de volgende overzichtstabel met banktransacties die we willen 
 In dit voorbeeld, het bezit van de Naam van het Element voor:
 
 * de rij is **Rij1**
-* de cel van het lichaam onder de datum van de Transactie is **tableItem1**
+* de lichaamscel onder de datum van de Transactie is **tableItem1**
 * de lichaamscel onder Beschrijving is **tableItem2**
-* de cel van het lichaam onder het type van Transactie is **type**
+* de lichaamscel onder het type van Transactie is **type**
 * de lichaamscel onder Bedrag in USD is **tableItem3**
 
 Het XML-bestand dat gegevens in de volgende indeling bevat:
@@ -232,9 +236,9 @@ Het XML-bestand dat gegevens in de volgende indeling bevat:
 </afData>
 ```
 
-In de voorbeeld-XML worden de gegevens voor een rij gedefinieerd door de `<Row1>` codes. Dit is de elementnaam voor de rij in de tabel. Binnen de `<Row1>` tag worden de gegevens voor elke cel binnen de tag gedefinieerd voor de elementnaam, zoals `<tableItem1>`, `<tableItem2>`, `<tableItem3>`en `<type>`.
+In de voorbeeld-XML worden de gegevens voor een rij gedefinieerd door de `<Row1>`-tags. Dit is de elementnaam voor de rij in de tabel. Binnen de tag `<Row1>` worden de gegevens voor elke cel gedefinieerd binnen de tag voor de elementnaam, zoals `<tableItem1>`, `<tableItem2>`, `<tableItem3>` en `<type>`.
 
-Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het aangepaste formulier met de tabel verwijzen naar de absolute XML-locatie met Wcmmode uitgeschakeld. Als het adaptieve formulier bijvoorbeeld op *http://localhost:4502/myForms/bankTransaction.html* staat en het XML-bestand met gegevens wordt opgeslagen op *C:/myTransactions/bankSummary.xml*, kunt u de tabel weergeven met gegevens op de volgende URL:
+Als u deze gegevens tijdens runtime wilt samenvoegen met de tabel, moet u het aangepaste formulier met de tabel verwijzen naar de absolute XML-locatie met Wcmmode uitgeschakeld. Als het adaptieve formulier bijvoorbeeld op *http://localhost:4502/myForms/bankTransaction.html* staat en het XML-bestand met gegevens is opgeslagen op *C:/myTransactions/bankSummary.xml*, kunt u de tabel weergeven met gegevens op de volgende URL:
 
 *http://localhost:4502/myForms/bankTransaction.html?dataRef=file:/// C:/myTransactions/bankSummary.xml&amp;wcmmode=disabled*
 
