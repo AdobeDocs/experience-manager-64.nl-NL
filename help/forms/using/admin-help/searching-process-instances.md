@@ -33,14 +33,14 @@ Voer de basiscriteria in om een algemene zoekopdracht uit te voeren. Als u meerd
 1. Klik in de beheerconsole op Services > Forms-workflow > Zoeken in processen.
 1. Geef op de pagina Zoeken in proces onder Algemeen zoeken de volgende criteria op:
 
-   * **Proces-id:** Het positieve geheel dat elke unieke procesinstantie identificeert.
-   * **Processtatus:** Selecteer een status in de lijst.
-   * **Toepassing:** Selecteer een toepassing in de lijst. Slechts worden de opgestelde toepassingen getoond.
-   * **Procesnaam - Versie:** Selecteer een procesnaam in het menu. Slechts worden de opgestelde processen getoond.
+   * **Proces-id:** het positieve gehele getal dat elke unieke procesinstantie identificeert.
+   * **Processtatus:** selecteer een status in de lijst.
+   * **Toepassing:** selecteer een toepassing in de lijst. Slechts worden de opgestelde toepassingen getoond.
+   * **Procesnaam - Versie:** selecteer een procesnaam in het menu. Slechts worden de opgestelde processen getoond.
 
 1. Klik op Zoeken. De pagina Procesinstantie wordt weergegeven met een overzicht van de gevonden varianten.
 
-## Gedetailleerde zoekopdrachten uitvoeren naar een proces {#perform-a-detailed-search-for-a-process}
+## Een gedetailleerde zoekopdracht uitvoeren naar een proces {#perform-a-detailed-search-for-a-process}
 
 U kunt specifieke kenmerken invoeren om een gedetailleerde zoekopdracht uit te voeren. Een gedetailleerde zoekopdracht is het meest geschikt als u veel procesinstanties uitvoert en u de mogelijke zoekopdrachten aan de hand van bepaalde criteria moet beperken.
 
@@ -58,7 +58,7 @@ U kunt specifieke kenmerken invoeren om een gedetailleerde zoekopdracht uit te v
 
 [Over procesinstantiestatussen](/help/forms/using/admin-help/processes.md#about-process-instance-statuses)
 
-## Een gecombineerde zoekopdracht naar een proces uitvoeren {#perform-a-combined-search-for-a-process}
+## Een gecombineerde zoekopdracht uitvoeren naar een proces {#perform-a-combined-search-for-a-process}
 
 Als u een zoekopdracht wilt maken op basis van zowel een algemene zoekopdracht als een gedetailleerde zoekopdracht, met een impliciete AND tussen de gebieden, voert u uw zoekcriteria in in de gebieden Algemeen zoeken en Gedetailleerd zoeken op de pagina Zoeken in proces.
 
