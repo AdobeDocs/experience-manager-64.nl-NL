@@ -22,7 +22,7 @@ ht-degree: 1%
 
 Deze pagina biedt de essentiële informatie voor het werken met de ideatiefunctie, die vergelijkbaar is met een forum, maar met de mogelijkheid om op te slaan als een concept en een meer op samenwerking gericht gevoel.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -36,7 +36,7 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
   </tr>
   <tr>
    <td> <a href="clientlibs.md"><strong>clientllibs</strong></a></td> 
-   <td>cq.social.hbs.stemden<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
+   <td>cq.social.hbs.voice<br /> cq.social.hbs.liking<br /> cq.social.hbs.ideation</td> 
   </tr>
   <tr>
    <td> <strong>templates</strong></td> 
@@ -57,4 +57,4 @@ Deze pagina biedt de essentiële informatie voor het werken met de ideatiefuncti
 
 ### Idealisatiefunctie {#ideation-function}
 
-Een gemeenschapssitestructuur die de functie [](functions.md#ideation-function)Ideatie bevat, bevat een geconfigureerde `ideation` component.
+Een community-sitestructuur die de [Ideatiefunctie](functions.md#ideation-function) bevat, bevat een geconfigureerde `ideation`-component.
