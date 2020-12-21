@@ -17,7 +17,7 @@ ht-degree: 0%
 ---
 
 
-# Hoe procesrapportage werkt {#how-process-reporting-works}
+# Hoe de Rapportering van het Proces {#how-process-reporting-works} werkt
 
 Procesrapportage is de rapporteringsmodule van de AEM Forms op JEE.
 
@@ -43,13 +43,13 @@ Procesrapportage bestaat uit de volgende modules:
 
 De ProcessDataPublisher-server wordt regelmatig uitgevoerd in de AEM Forms-database en extraheert de gegevens die zijn gewijzigd sinds de laatste uitvoering van de service. De gegevens worden vervolgens gepubliceerd naar de service Gegevensopslag verwerken.
 
-Voor details bij het vormen van de dienst, zie de dienst [](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p)van ProcessDataPublisher vormen.
+Zie [Service ProcessDataPublisher configureren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-reportconfiguration-service-p) voor meer informatie over het configureren van de service.
 
 ### ProcessDataStorageProvider-service {#processdatastorageprovider-service-br}
 
 De dienst ProcessDataStorageProvider ontvangt procesgegevens van de dienst ProcessDataPublisher en bewaart de gegevens aan de bewaarplaats van de Rapportering van het Proces.
 
-Zie [ProcessDataStorageProvider-service](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p)configureren voor meer informatie over het configureren van de service.
+Zie [De service ProcessDataStorageProvider configureren](/help/forms/using/process-reporting/install-start-process-reporting.md#p-to-configure-the-process-reporting-repository-locations-p) voor meer informatie over het configureren van de service.
 
 ### OSGi-service {#osgi-service-br}
 
@@ -61,7 +61,7 @@ De dienst QueryDataServlet keurt vragen van het Rapport van het Proces gebruiker
 
 De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verkrijgen, de gegevens te verwerken, en de gegevens aan het gebruikersinterface terug te keren.
 
-### Gebruikersinterface voor procesrapportage {#process-reporting-user-interface-br}
+### Procesrapportage gebruikersinterface {#process-reporting-user-interface-br}
 
 Het proces dat gebruikersinterface meldt is een browser-gebaseerde interface van het Web. U gebruikt deze interface om proces- en taakinformatie weer te geven die is gepubliceerd vanuit de AEM Forms-database.
 
@@ -75,5 +75,5 @@ De dienst gebruikt dan diensten OSGi om de relevante het melden gegevens te verk
 
 U kunt uw eigen douanerapporten tot stand brengen en deze rapporten tonen in het lusje van de Rapporten van de Douane van het Proces Meldend gebruikersinterface.
 
-Voor de stappen om een douanerapport tot stand te brengen, zie om een douanerapport in het artikel [van de Douane tot stand te brengen Rapporten in het Rapporteren](/help/forms/using/process-reporting/process-reporting-custom-reports.md)van het Proces.
+Voor de stappen om een douanerapport tot stand te brengen, zie een douanerapport in het artikel [De Rapporten van de Douane in Proces Meldend](/help/forms/using/process-reporting/process-reporting-custom-reports.md) tot stand brengen.
 
