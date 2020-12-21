@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# Integratie met Adobe Sign | Gebruikersgegevens verwerken {#integration-with-adobe-sign-handling-user-data}
+# Integratie met Adobe Sign | Gebruikersgegevens {#integration-with-adobe-sign-handling-user-data} verwerken
 
 AEM Forms kan met Adobe Sign worden geïntegreerd om workflows voor e-handtekeningen mogelijk te maken in adaptieve formulieren voor het verwerken van formulieren of overeenkomsten voor juridische, verkoop-, loon- en personeelsbeheerworkflows. Het staat voor enig en multiuser het ondertekenen, opeenvolgende en gelijktijdige het ondertekenen werkschema&#39;s toe, het ondertekenen van formulieren als anonieme of het programma geopende gebruiker, en veelvoudige manieren om gebruikers voor authentiek te verklaren.
 
 Wanneer een ondertekenaar of meerdere ondertekenaars een adaptief formulier ondertekenen en verzenden, wordt een Adobe Sign-overeenkomst gegenereerd die informatie over de ondertekenaars bevat.
 
-Zie Adobe Sign in een adaptieve vorm [](/help/forms/using/working-with-adobe-sign.md)gebruiken voor meer informatie over de integratie van AEM Forms met Adobe Sign.
+Zie [Adobe Sign in een adaptieve vorm gebruiken](/help/forms/using/working-with-adobe-sign.md) voor meer informatie over de integratie van AEM Forms met Adobe Sign.
 
 ## Gebruikersgegevens en gegevensopslag {#data}
 
@@ -32,6 +32,6 @@ Het adaptieve formulier dat geschikt is voor Adobe Sign, bevat informatie over d
 
 Gebruikersgegevens worden verzameld binnen de overeenkomst, maar niet opgeslagen in een van de servicetabellen. Met Adobe Sign kunnen beheerders hun eigen keuzes maken voor het beheer van gegevens die ze in de service beheren. Privacybeheerders van de Adobe Sign-service kunnen op basis van het e-mailadres van een aanvrager overeenkomsten weergeven of verwijderen.
 
-Adobe Sign biedt een webtoepassing waarmee deelnemers kunnen zoeken naar overeenkomsten en deze zo nodig kunnen verwijderen. Zie [Adobe Sign - Functie voor meer informatie: Gebruikersgegevens](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html)verwijderen.
+Adobe Sign biedt een webtoepassing waarmee deelnemers kunnen zoeken naar overeenkomsten en deze zo nodig kunnen verwijderen. Zie [Adobe Sign - Functie voor meer informatie: Gebruikersgegevens verwijderen](https://helpx.adobe.com/sign/help/adobesign_gdpr_user_deletion.html).
 
-Overeenkomstgegevens voor adaptieve formulieren die zijn geconfigureerd om de handeling voor het verzenden van het Forms Portal te gebruiken, worden ook opgeslagen in de gegevensopslag van het formulierportaal. Ga naar [Forms Portal voor toegang tot gegevens uit de gegevensopslag van het formulierportaal en om deze te verwijderen. | Gebruikersgegevens](/help/forms/using/forms-portal-handling-user-data.md)verwerken.
+Overeenkomstgegevens voor adaptieve formulieren die zijn geconfigureerd om de handeling voor het verzenden van het Forms Portal te gebruiken, worden ook opgeslagen in de gegevensopslag van het formulierportaal. Zie [Forms portal voor toegang tot gegevens en verwijdering uit de opslag met formulierportalgegevens | Gebruikersgegevens verwerken](/help/forms/using/forms-portal-handling-user-data.md).
