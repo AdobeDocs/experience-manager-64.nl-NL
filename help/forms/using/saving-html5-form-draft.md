@@ -23,9 +23,9 @@ U kunt een HTML5-formulier opslaan als concept en het invullen van het formulier
 
 ## Aangepast profiel om de functie Opslaan als concept toe te staan {#custom-profile-to-allow-save-as-draft-feature}
 
-AEM Forms geeft het profiel **Opslaan als concept** op uit het vak. U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit in te schakelen voor een HTML5-formulier. U kunt HTML-renderprofiel voor een formulier opgeven in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+AEM Forms levert een **Opslaan als concept**-profiel uit het vak. U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit in te schakelen voor een HTML5-formulier. U kunt het HTML-renderprofiel voor een formulier opgeven in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
-Als u de functie Opslaan als concept wilt inschakelen voor uw bestaande [aangepaste profiel](/help/forms/using/custom-profile.md), voegt u de volgende eigenschappen toe aan het aangepaste profielknooppunt:
+Als u de functie Opslaan als concept wilt inschakelen voor uw bestaande [aangepast profiel](/help/forms/using/custom-profile.md), voegt u de volgende eigenschappen toe aan uw aangepaste profielnode:
 
 <table> 
  <tbody> 
@@ -50,9 +50,9 @@ Als u de functie Opslaan als concept wilt inschakelen voor uw bestaande [aangepa
  </tbody> 
 </table>
 
-## Opslag en aanbieding opstellen {#drafts-storage-and-listing}
+## Opslag en aanbieding {#drafts-storage-and-listing}
 
-Nadat u de functie Opslaan als concept hebt ingeschakeld voor een formulier; als het formulier wordt opgeslagen, wordt het weergegeven in de component [](/help/forms/using/draft-submission-component.md)Concepten en Verzending. U kunt het opgeslagen formulier ophalen en invullen met de component Concept en Verzending.
+Nadat u de functie Opslaan als concept hebt ingeschakeld voor een formulier; wanneer het formulier wordt opgeslagen, wordt het weergegeven in de [component Concepten en verzending](/help/forms/using/draft-submission-component.md). U kunt het opgeslagen formulier ophalen en invullen met de component Concept en Verzending.
 
 Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding in te schakelen voor de component Concept en Verzending:
 
@@ -68,9 +68,9 @@ Voeg de volgende eigenschap toe aan het profielknooppunt om formuliervermelding 
    <td>fp.enablePortalSubmit</td> 
    <td>Tekenreeks</td> 
    <td>true</td> 
-   <td>Concepten en formulieren na verzending in<br /> Forms Portal-component Concepten en verzenden weergeven</td> 
+   <td>Concepten en formulieren na verzending weergeven in<br /> Forms Portal-concepten en -verzendingen</td> 
   </tr> 
  </tbody> 
 </table>
 
-Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt een aangepaste opslagprovider toevoegen. Zie [Aangepaste opslag voor concepten en verzendingen voor meer informatie](/help/forms/using/adding-custom-storage-provider-forms.md).
+Standaard slaat AEM Forms de gebruikersgegevens die zijn gekoppeld aan het concept en de verzending van een formulier op in het knooppunt /content/forms/fp in het exemplaar Publish. U kunt uw leverancier van de douaneopslag toevoegen, voor details zie [Aangepaste opslag voor de component van Concepten en van Verzending](/help/forms/using/adding-custom-storage-provider-forms.md).
