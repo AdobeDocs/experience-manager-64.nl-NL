@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Connector configureren voor EMC Documentum {#configuring-connector-for-emc-documentum}
 
-Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM formulieren en EMC Documentum. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
+Connector voor EMC Documentum maakt communicatie mogelijk tussen AEM formulieren en EMC Documentum. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63) voor aanvullende achtergrondinformatie.
 
 Bij het instellen van een connector voor EMC Documentum moeten de serververbinding en de gegevens van de opslagplaats worden geconfigureerd.
 
@@ -28,7 +28,7 @@ Bij het instellen van een connector voor EMC Documentum moeten de serververbindi
 >
 >In eerdere versies konden activa worden opgeslagen in een ECM-opslagplaats. In de huidige versie worden de elementen opgeslagen in de systeemeigen opslagruimte voor AEM formulieren en zijn de services van de Repository Provider afgekeurd. De migratie van elementen van een ECM-opslagplaats naar de opslagplaats voor AEM formulieren vindt plaats wanneer u een upgrade uitvoert naar AEM formulieren. Zie de handleiding voor het upgraden van AEM formulieren voor uw toepassingsserver voor meer informatie.
 
-## De serververbinding configureren {#configuring-the-server-connection}
+## De serververbinding {#configuring-the-server-connection} configureren
 
 In dit onderwerp worden de taken voor Connector voor EMC Documentum beschreven die u kunt uitvoeren op de pagina Configuration Settings.
 
@@ -36,7 +36,7 @@ In dit onderwerp worden de taken voor Connector voor EMC Documentum beschreven d
 >
 >Als u alle instellingen tegelijk configureert, hoeft u slechts eenmaal op Opslaan te klikken.
 
-### De server configureren {#configure-the-server}
+### De server {#configure-the-server} configureren
 
 U moet de de serverinformatie van de verbindingsmakelaar vormen. Deze informatie is nodig om verbinding te maken met de Documentum-inhoudsopslagplaatsen en de Connector voor EMC Documentum te starten.
 
@@ -58,15 +58,15 @@ Als u een onjuiste gebruikersnaam of een onjuist wachtwoord invoert, krijgt u de
 1. Als er tijdens het aanmelden geen expliciete naam voor de opslagplaats wordt opgegeven, voert u de naam in van de opslagplaats waaraan de referenties zijn gekoppeld.
 1. Klik op Opslaan.
 
-### De provider van de dataopslagservice wijzigen {#change-the-repository-service-provider}
+### De serviceprovider {#change-the-repository-service-provider} wijzigen
 
 U kunt configureren welke repository service provider moet worden gebruikt met Documentum. De de dienstvraag van de bewaarplaats wordt gedelegeerd aan de leverancier u vormt. De volgende opties zijn beschikbaar:
 
-**Huidige naam leverancier van serviceleverancier in opslagplaats:** De naam van de huidige aanbieder van datadiensten
+**Huidige naam van leverancier van opslagplaats:** de naam van de huidige aanbieder van opslagplaats
 
 **ECM Documentum Repository Provider:** Maakt van de Documentum repository provider de provider voor de repository. Deze optie is vervangen
 
-**aanbieder opslagplaats:** Maakt van de native opslagprovider de provider voor de opslagplaats
+**opslagprovider:** maakt van de native opslagopslagprovider de provider voor de opslagplaats
 
 >[!NOTE]
 >
@@ -80,7 +80,7 @@ U kunt configureren welke repository service provider moet worden gebruikt met D
 
 De Documentum referentie-informatie wordt gebruikt in de AEM systeemcontext. Referenties van opslagplaats zijn specifiek voor bepaalde gegevensbanken in Documentum. U kunt geloofsbrieven voor om het even welk aantal bewaarplaatsen verstrekken; u kunt echter slechts één set gegevens per gegevensopslagruimte opgeven.
 
-### Creditering gegevensopslagruimte toevoegen {#add-a-repository-credential}
+### Crediteringsgegevens voor gegevensopslagruimte toevoegen {#add-a-repository-credential}
 
 1. Klik in de beheerconsole op Services > Connector voor EMC Documentum > Repository Credentials Settings.
 1. Klik op Toevoegen. De pagina Documentum System Credentials Information wordt weergegeven.
@@ -90,12 +90,12 @@ De Documentum referentie-informatie wordt gebruikt in de AEM systeemcontext. Ref
 
 Als de Content Repository Connector voor EMC Documentum Service en/of de Repository Service voor EMC Documentum wordt uitgevoerd, wordt de referentie-informatie geverifieerd op basis van de opgegeven repository voordat deze in de database wordt opgeslagen. Als de referenties ongeldig zijn of bestaan, wordt een foutbericht weergegeven.
 
-### Credentials van opslagplaats verwijderen {#remove-a-repository-credential}
+### Een repository referentie verwijderen {#remove-a-repository-credential}
 
 1. Klik in de beheerconsole op Services > Connector voor EMC Documentum > Configuration Settings.
 1. Schakel het selectievakje naast de gegevensopslagruimte in en klik op Verwijderen. De referenties voor de geselecteerde opslagplaats worden uit de database verwijderd.
 
-### Wijzig de gebruikersnaam en het wachtwoord voor de gegevensopslagruimte {#change-the-user-name-and-password-for-a-repository-credential}
+### Wijzig de gebruikersnaam en het wachtwoord voor een gegevensopslagreferentie {#change-the-user-name-and-password-for-a-repository-credential}
 
 1. Klik in de beheerconsole op Services > Connector voor EMC Documentum > Configuration Settings.
 1. Klik op de naam van de repository waarvoor u referenties wilt bewerken.
@@ -104,7 +104,7 @@ Als de Content Repository Connector voor EMC Documentum Service en/of de Reposit
 
 Als de Content Repository Connector voor EMC Documentum Service en/of de Repository Service voor EMC Documentum wordt uitgevoerd, wordt de referentie-informatie geverifieerd op basis van de opgegeven repository voordat deze in de database wordt opgeslagen. Als de referenties ongeldig zijn of bestaan, wordt een foutbericht weergegeven.
 
-## Verzoek om delen van werkruimtetaakrijen inschakelen {#enable-the-request-for-sharing-of-workspace-task-queues}
+## Verzoek om delen van werkruimtetaakrijen {#enable-the-request-for-sharing-of-workspace-task-queues} inschakelen
 
 Er zijn enkele handmatige stappen vereist om ervoor te zorgen dat de functie Verzoek om delen van taakwachtrij in Workspace correct functioneert met Connector voor EMC Documentum.
 
