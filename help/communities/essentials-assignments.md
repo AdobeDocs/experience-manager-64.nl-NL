@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Essentiële toewijzingen {#assignments-essentials}
+# Hoofdzaak van toewijzingen {#assignments-essentials}
 
-Deze pagina verstrekt de essentiële informatie voor het werken met de toewijzingseigenschap van [enablement communautaire](overview.md#enablement-community) plaatsen.
+Deze pagina verstrekt de essentiële informatie voor het werken met de toewijzingseigenschap van [enablement community](overview.md#enablement-community) plaatsen.
 
 De toewijzingsfunctie is de mogelijkheid om bronnen voor activering en leerpaden toe te wijzen aan leden van gemeenschappen die activering mogelijk maken.
 
-## Essentiële elementen voor client-kant {#essentials-for-client-side}
+## Essentiële elementen voor client-side {#essentials-for-client-side}
 
 <table> 
  <tbody>
@@ -85,7 +85,7 @@ De enige mogelijke combinaties van Voltooiing en Successtatus zijn:
 
 ### Toewijzingsfunctie {#assignments-function}
 
-Een gemeenschapssitestructuur die de functie [](functions.md#assignments-function)Toewijzingen bevat, bevat een geconfigureerde ` [assignments](assignments.md)` component.
+Een community-sitestructuur die de [toewijzingsfunctie](functions.md#assignments-function) bevat, bevat een geconfigureerde ` [assignments](assignments.md)`-component.
 
 ### Referentie-API&#39;s {#reference-apis}
 
