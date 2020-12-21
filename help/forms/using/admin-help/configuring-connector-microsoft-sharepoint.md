@@ -20,24 +20,24 @@ ht-degree: 1%
 
 # Connector configureren voor Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
 
-De schakelaar voor Microsoft SharePoint laat communicatie tussen AEM vormen en Microsoft SharePoint toe. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63)voor aanvullende achtergrondinformatie.
+De schakelaar voor Microsoft SharePoint laat communicatie tussen AEM vormen en Microsoft SharePoint toe. Zie &quot;Connectors for ECM&quot; in [Services Reference](https://www.adobe.com/go/learn_aemforms_services_63) voor aanvullende achtergrondinformatie.
 
 1. Klik in de beheerconsole op Services > Connector voor Microsoft SharePoint.
 1. Geef de volgende instellingen op voor uw SharePoint-server:
 
-   **Hostnaam SharePoint-server:** Het poortnummer van de hostnaam van de webtoepassing op de SharePoint-server, in de indeling `[hostname]:[port]`.
+   **Hostnaam van SharePoint-server:** het poortnummer van de hostnaam van de webtoepassing op de SharePoint-server, in de indeling  `[hostname]:[port]`.
 
    **Gebruikersnaam:** De gebruikersaccount die wordt gebruikt om verbinding te maken met de SharePoint-server.
 
-   **Wachtwoord:** Wachtwoord voor de gebruikersaccount waarmee verbinding wordt gemaakt met de SharePoint-server
+   **Wachtwoord:** Wachtwoord voor de gebruikersaccount die wordt gebruikt om verbinding te maken met de SharePoint-server
 
-   **Domeinnaam:** Domein waar de SharePoint-server zich bevindt.
+   **Domeinnaam:** domein waar de SharePoint-server zich bevindt.
 
 1. Klik op Opslaan.
 
 ## Microsoft SharePoint-configuratieservice {#microsoft-sharepoint-configuration-service}
 
-Met de Microsoft SharePoint-configuratieservice kunt u referenties opgeven voor de gebruiker van AEM formulieren die imitatierechten heeft. `(MSSharePointConfigService)` Voor informatie over imitatierechten, zie [het Vormen Schakelaar voor Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Voer de volgende stappen uit om instellingen op te geven voor `MSSharePointConfigService`:
+Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` kunt u referenties opgeven voor de gebruiker van AEM formulieren die imitatierechten heeft. Voor informatie over imitatierechten, zie [Het vormen Schakelaar voor Microsoft SharePoint](https://help.adobe.com/en_US/AEMForms/6.1/SharePointConfig/index.html). Ga als volgt te werk om instellingen op te geven voor `MSSharePointConfigService`:
 
 1. Klik in de beheerconsole op Services > Toepassingen en services > Servicebeheer.
 1. Navigeer in de lijst met services en klik op `MSSharePointConfigService`.
