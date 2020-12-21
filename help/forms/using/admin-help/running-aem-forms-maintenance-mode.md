@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM formulieren uitvoeren in de onderhoudsmodus {#running-aem-forms-in-maintenance-mode}
+# AEM formulieren uitvoeren in onderhoudsmodus {#running-aem-forms-in-maintenance-mode}
 
 De wijze van het onderhoud is nuttig wanneer het uitvoeren van taken zoals het patchen van een DSC, het bevorderen AEM vormen, of het toepassen van een de dienstpak.
 
@@ -31,7 +31,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 
 1. Voer in een webbrowser de volgende gegevens in:
 
-   `https://`*[hostname ]*`:`*[port]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[administrator gebruikersnaam ]*`&password=`*[password]*
+   `https://`*[]*`:`*[]* `/dsc/servlet/DSCStartupServlet?maintenanceMode=pause&user=`*[hostNamePortadministrator-]*`&password=`*[gebruikersnaamWachtwoord]*
 
    Een bericht &quot;nu gepauzeerd&quot;wordt getoond in het browser venster.
 
@@ -43,7 +43,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 
 1. Voer in een webbrowser de volgende gegevens in:
 
-   `https://`*[hostnaam]:[poort ]*,`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[beheerdersgebruikersnaam]* , `&password=`*[wachtwoord ]*
+   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=isPaused&user=`*[portadministrator]* `&password=`*[gebruikersnaam ]*
 
    De status wordt weergegeven in het browservenster. De status &quot;true&quot; geeft aan dat de server wordt uitgevoerd in de onderhoudsmodus en &quot;false&quot; geeft aan dat de server niet in de onderhoudsmodus staat.
 
@@ -51,7 +51,7 @@ U moet voorkomen dat processen worden aangeroepen terwijl de server zich in de o
 
 1. Voer in een webbrowser de volgende gegevens in:
 
-   `https://`*[hostnaam]:[poort ]*,`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[beheerdersgebruikersnaam]* , `&password=`*[wachtwoord ]*
+   `https://`*[hostname]:[]*`/dsc/servlet/DSCStartupServlet?maintenanceMode=resume&user=`*[portadministrator]* `&password=`*[gebruikersnaam ]*
 
    Er wordt een bericht &quot;now running&quot; weergegeven in het browservenster.
 
