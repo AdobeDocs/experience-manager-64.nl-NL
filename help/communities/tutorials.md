@@ -20,11 +20,11 @@ ht-degree: 0%
 
 # Tutorials {#tutorials}
 
-Dit zijn voorbeelden om te helpen bij het leren en werken met AEM 6.1 Community [social component framework (SCF)](scf.md).
+Dit zijn voorbeelden om te helpen bij het leren en werken met AEM 6.1 Communities [social component framework (SCF)](scf.md).
 
-## Aanpassing op de client {#client-side-customization}
+## Aanpassing aan clientzijde {#client-side-customization}
 
-Zie ook cliënt-zijaanpassing [SCF](client-customize.md).
+Zie ook [SCF client-side aanpassing](client-customize.md).
 
 * [Community Components Guide](components-guide.md)
 
@@ -32,11 +32,11 @@ Zie ook cliënt-zijaanpassing [SCF](client-customize.md).
 
 * [Component Opmerkingen uitbreiden](extend-comments.md)
 
-## Aanpassing op de server {#server-side-customization}
+## Aanpassing aan serverzijde {#server-side-customization}
 
-Zie ook [SCF server-zijaanpassing](server-customize.md).
+Zie ook [SCF server-side aanpassing](server-customize.md).
 
-Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) -opslagplaats:
+De code van de steekproef is beschikbaar in [Adobe Marketing Cloud GitHub](https://github.com/Adobe-Marketing-Cloud) bewaarplaats:
 
 * [Voorbeeld van SCF-component aanpassen](https://github.com/Adobe-Marketing-Cloud/aem-scf-sample-components-customize)
 
@@ -58,15 +58,15 @@ Voorbeeldcode is beschikbaar in de [Adobe Marketing Cloud GitHub](https://github
 
 * [Een voorbeeldpagina maken](create-sample-page.md)
 
-## Demo-gebruikers {#demo-users}
+## Demopgebruikers {#demo-users}
 
-Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopend) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met de gids [van de Componenten van de](components-guide.md)Gemeenschap.
+Het Geometrixx samples-pakket bevat demo-gebruikers. Er is vaak een verschil in ervaring tussen het zijn van een bezoeker (niet het programma geopend) of een lid (het programma geopende) en, zolang de de steekproefpakketten van Geometrixx blijven geïnstalleerd, kunt u deze gebruikers gebruiken om een het programma geopende staat te simuleren wanneer het onderzoeken met [Community Components guide](components-guide.md).
 
 Navigeer voor een volledig overzicht van de demogebruikers met de Rail naar **[!UICONTROL Tools > Operations > Security > Users]**. Of gebruik de Klassieke UI [veiligheidsconsole](http://localhost:4502/useradmin) voor het beheren van gebruikers en groepen.
 
-Als een [communitysite is gemaakt](getting-started.md), is het mogelijk demogebruikers toe te wijzen aan de gebruikersgroepen [van de](users.md)community.
+Als een [communityplaats is gecreeerd](getting-started.md), is het mogelijk om demogebruikers aan zijn [communautaire gebruikersgroepen](users.md) toe te wijzen.
 
-***gebruikersnaam */*wachtwoord:***
+***gebruikersnaam* / *wachtwoord:***
 
 * aaron.mcdonald@mailinator.com / password
 * emily.andrews@mailinator.com / password
