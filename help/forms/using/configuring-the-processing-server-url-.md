@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # AEM DS-instellingen configureren {#configuring-aem-ds-settings}
 
-In dit artikel wordt beschreven hoe u **AEM DS Settings Service** kunt configureren. Deze instelling kan in meerdere scenario&#39;s worden gebruikt, bijvoorbeeld:
+In dit artikel wordt beschreven hoe u **AEM DS Settings Service** configureert. Deze instelling kan in meerdere scenario&#39;s worden gebruikt, bijvoorbeeld:
 
 * In het Correspondentenbeheer
 
@@ -28,7 +28,7 @@ In dit artikel wordt beschreven hoe u **AEM DS Settings Service** kunt configure
 
 * In adaptieve formulieren voor gevallen waarin een adaptief formulier wordt ingediend vanuit een publicatie-instantie
 
-Hieronder vindt u de stappen voor het configureren van het **[!UICONTROL AEM DS Settings]** volgende:
+Hier volgen de stappen voor het configureren van **[!UICONTROL AEM DS Settings]**:
 
 1. Open de Manager van de Configuratie op publiceer instantie gebruikend URL:
 
@@ -36,11 +36,11 @@ Hieronder vindt u de stappen voor het configureren van het **[!UICONTROL AEM DS 
 
    ![aem_web_configuration_console](assets/aem_web_configuration_console.png)
 
-1. Zoek in het **[!UICONTROL Adobe Experience Manager Web Console Configuration]** venster de **[!UICONTROL AEM DS Settings]** optie en klik erop.
+1. Zoek en klik in het venster **[!UICONTROL Adobe Experience Manager Web Console Configuration]** op de optie **[!UICONTROL AEM DS Settings]**.
 
    ![ds_settings](assets/ds_settings.png)
 
-1. In het **[!UICONTROL AEM DS Settings Service]** venster worden de algemene configuratie-instellingen voor AEM DS-componenten weergegeven.
+1. In het venster **[!UICONTROL AEM DS Settings Service]** worden de algemene configuratie-instellingen voor AEM DS-componenten weergegeven.
 
    ![ds_settings_1](assets/ds_settings_1.png)
 
@@ -48,7 +48,7 @@ Hieronder vindt u de stappen voor het configureren van het **[!UICONTROL AEM DS 
 
    **[!UICONTROL Processing Server URL]**: De Verwerkingsserver is de server waarop de Forms- of AEM-workflow moet worden geactiveerd. Dit kan gelijk zijn aan de URL van de AEM auteur-instantie of de andere server-URL (http:// localhost:port/).
 
-   **[!UICONTROL Processing Server User Name]**: Gebruikersnaam van workflowgebruiker [gebaseerd op de server-URL die wordt gebruikt]
+   **[!UICONTROL Processing Server User Name]**: Gebruikersnaam van workflowgebruiker  [gebaseerd op de server-URL die wordt gebruikt]
 
    **[!UICONTROL Processing Server Password]**: Wachtwoord workflowgebruiker
 
