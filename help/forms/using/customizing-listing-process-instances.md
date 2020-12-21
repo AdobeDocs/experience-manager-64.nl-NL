@@ -51,7 +51,7 @@ In de lijst van procesinstanties, voor elke procesinstantie, toont de werkruimte
   </tr> 
   <tr> 
    <td>processInstanceStatus</td> 
-   <td>0 = geïnitieerd<br /> 1 = start<br /> 2 = voltooid<br /> 3 = voltooid<br /> 4 = beëindigd<br /> 5 = beëindigd<br /> 6 = onderbroken<br /> 7 = onderbroken<br /> 8 = ononderbroken</td> 
+   <td>0 = geïnitieerd<br /> 1 = bezig<br /> 2 = voltooid<br /> 3 = voltooid<br /> 4 = geëindigd<br /> 5 = eindigend<br /> 6 = opgeschort<br /> 7 = opgeschort<br /> 8 = niet-opgeschort</td> 
   </tr> 
   <tr> 
    <td>processName</td> 
@@ -63,19 +63,19 @@ In de lijst van procesinstanties, voor elke procesinstantie, toont de werkruimte
   </tr> 
   <tr> 
    <td>processVariables</td> 
-   <td>Array van objecten met procesvariabelen. Elk procesveranderlijke voorwerp bevat <strong>naam</strong> (de naam van procesvariabele), <strong>waarde</strong> (waarde van de procesvariabele), en type<strong></strong> (het type van procesvariabele).</td> 
+   <td>Array van objecten met procesvariabelen. Elk procesveranderlijk voorwerp bevat <strong>naam</strong> (de naam van procesvariabele), <strong>waarde</strong> (waarde van de procesvariabele), en<strong> type</strong> (het type van procesvariabele).</td> 
   </tr> 
  </tbody> 
 </table>
 
 **Voorbeeld:**
 
-Voer de volgende stappen uit om de `description` eigenschap van de procesinstantie in de procesinstantiekaart weer te geven.
+Voer de volgende stappen uit om de eigenschap `description` van de procesinstantie in de procesinstantiekaart weer te geven.
 
-1. Voer de [algemene stappen uit voor aanpassing](/help/forms/using/generic-steps-html-workspace-customization.md)van de AEM Forms-werkruimte.
+1. Volg de [Algemene stappen voor de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md).
 1. Ga als volgt te werk:
 
-   1. Kopieer /libs/ws/js/runtime/templates/processinstance.html naar/apps/ws/js/runtime/templates/, als deze niet bestaat. Klik op Alles **opslaan**.
+   1. Kopieer /libs/ws/js/runtime/templates/processinstance.html naar/apps/ws/js/runtime/templates/, als deze niet bestaat. Klik **Alles opslaan**.
    1. Voeg procesbeschrijvingsdiv toe met klasse = &#39;processDescription&#39; inprocessinstance.html.
 
    ```
@@ -85,7 +85,7 @@ Voer de volgende stappen uit om de `description` eigenschap van de procesinstant
 1. Ga als volgt te werk:
 
    1. Open /apps/ws/js/registry.js voor bewerking.
-   1. Zoeken en vervangen `text!/lc/libs/ws/js/runtime/templates/processinstance.html`door `text!/lc/`**apps **/ws/js/runtime/templates/processinstance.html.
+   1. `text!/lc/libs/ws/js/runtime/templates/processinstance.html`doorzoeken en vervangen door `text!/lc/`**apps**/ws/js/runtime/templates/processinstance.html.
 
 1. Voor de bovenstaande wijzigingen is mogelijk een update van het CSS-bestand nodig door op de volgende manier een vermelding toe te voegen in de stijlpagina /apps/ws/css/newStyle.css:
 
