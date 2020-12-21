@@ -22,7 +22,7 @@ Documentfragmenten maken voor interactieve communicatie
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
-Deze zelfstudie is een stap in de [eerste interactieve communicatiereeks](/help/forms/using/create-your-first-interactive-communication.md) maken. U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
+Deze zelfstudie is een stap in de serie [Maak uw eerste interactieve communicatiemodellen](/help/forms/using/create-your-first-interactive-communication.md). U wordt aangeraden de reeks in chronologische volgorde te volgen om het volledige gebruik van de zelfstudie te begrijpen, uit te voeren en aan te tonen.
 
 Documentfragmenten zijn herbruikbare componenten van een correspondentie die worden gebruikt om een interactieve communicatie samen te stellen. De documentfragmenten zijn van de volgende typen:
 
@@ -30,7 +30,7 @@ Documentfragmenten zijn herbruikbare componenten van een correspondentie die wor
 * List - List is een groep documentfragmenten, waaronder tekst, lijsten, voorwaarden en afbeeldingen.
 * Voorwaarde - De Voorwaarden laten u toe om te bepalen welke inhoud inbegrepen in Interactieve Mededeling wordt gebaseerd op de gegevens die van het Model van de Gegevens van het Vorm worden ontvangen.
 
-Deze zelfstudie begeleidt u door de stappen om meerdere tekstdocumentfragmenten te maken op basis van de anatomie die in de sectie Interactieve communicatie [in](/help/forms/using/planning-interactive-communications.md) Plan is opgenomen. Aan het einde van deze zelfstudie kunt u het volgende doen:
+Deze zelfstudie begeleidt u door de stappen om veelvoudige fragmenten van het tekstdocument tot stand te brengen die op de anatomie worden gebaseerd die in [Plan de Interactieve Communicatie](/help/forms/using/planning-interactive-communications.md) sectie wordt verstrekt. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
 * Documentfragmenten maken
 * Variabelen maken
@@ -45,13 +45,13 @@ Hier volgt een lijst met documentfragmenten die in deze zelfstudie worden gemaak
 * [Overzicht van Bill](/help/forms/using/create-document-fragments.md#step-create-bill-summary-text-document-fragment)
 * [Overzicht van kosten](/help/forms/using/create-document-fragments.md#step-create-summary-of-charges-text-document-fragment)
 
-Elk documentfragment bevat velden met statische tekst, gegevens die zijn ontvangen van het formuliergegevensmodel en gegevens die zijn ingevoerd met de gebruikersinterface van de agent. Al deze gebieden zijn getoond in het [Plan de Interactieve sectie van de Communicatie](/help/forms/using/planning-interactive-communications.md) .
+Elk documentfragment bevat velden met statische tekst, gegevens die zijn ontvangen van het formuliergegevensmodel en gegevens die zijn ingevoerd met de gebruikersinterface van de agent. Al deze gebieden zijn getoond in [Plan de Interactieve Communicatie](/help/forms/using/planning-interactive-communications.md) sectie.
 
 Terwijl het creëren van documentfragmenten in dit leerprogramma, worden de variabelen gecreeerd voor gebieden die gegevens gebruikend de Agent UI ontvangen.
 
-Gebruik **FDM_Create_First_IC**, zoals beschreven in de sectie [Formuliergegevensmodel](create-form-data-model-tutorial.md) maken, als het formuliergegevensmodel om documentfragmenten in deze zelfstudie te maken.
+Gebruik **FDM_Create_First_IC**, zoals beschreven in de sectie [Formuliergegevensmodel maken](create-form-data-model-tutorial.md), als het formuliergegevensmodel om documentfragmenten te maken in deze zelfstudie.
 
-## Stap 1: Tekstdocumentfragment Bill Details maken {#step-create-bill-details-text-document-fragment}
+## Stap 1: Tekstdocumentfragment {#step-create-bill-details-text-document-fragment} maken met Bill Details
 
 Het documentfragment Bill Details bevat de volgende velden:
 
@@ -69,17 +69,17 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
-   1. Voer **bill_details_first_ic** in als naam in het veld **Titel** . De titel wordt automatisch ingevuld in het veld **Naam** .
-   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel** .
-   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
-   1. Tik op **Volgende**.
+   1. Typ **bill_details_first_ic** als naam in het veld **Title**. De titel wordt automatisch ingevuld in het veld **Naam**.
+   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel**.
+   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik **Select**.
+   1. Tik **Volgende**.
 
 1. Selecteer het tabblad **Variabelen** in het linkerdeelvenster en tik op **Maken**.
-1. In de sectie Variabele **maken** :
+1. In de sectie **Variabele maken**:
 
-   1. Voer **Factuurnummer** in als de naam van de variabele.
+   1. Ga **InvoiceNumber** als naam van de variabele in.
    1. Selecteer **String** als type.
-   1. Tik op **Maken**.
+   1. Tik **Maken**.
 
    ![variable_create_string](assets/variable_create_string.png)
 
@@ -99,17 +99,17 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
 
    ![variable_bill_details_static_text](assets/variable_bill_details_static_text.png)
 
-1. Plaats de curseur naast het gebied van **Factuur Geen** en klik de variabele **InvoiceNumber** van het lusje van **Variabelen** in de linkerruit tweemaal.
-1. Plaats de curseur naast het gebied van de Periode **van de** Rekening en klik de variabele **Billperiod** tweemaal.
-1. Plaats de curseur naast het gebied van de Datum **van de** Rekening en klik de variabele van de Datum **van de** Rekening tweemaal.
+1. Plaats de curseur naast **Flaat nr.** en klik **InvoiceNumber** veranderlijk van **Variabelen** in de linkerruit tweemaal.
+1. Plaats de curseur naast **de Periode van de Rekening** gebied en klik **Billperiod** veranderlijk tweemaal.
+1. Plaats de curseur naast **de Datum van de Rekening** gebied en klik **Bill Date** variabele tweemaal.
 1. Selecteer het tabblad **Gegevensmodelobjecten** in het linkerdeelvenster.
-1. Plaats de curseur naast het **Uw gebied van het Plan** en klik de **klant** > **customerplan** bezit tweemaal.
+1. Plaats de cursor naast het veld **Uw abonnement** en dubbelklik op de eigenschap **customer** > **customerplan**.
 
    ![bill_details_customerplan_fdm](assets/bill_details_customerplan_fdm.png)
 
-1. Klik op **Opslaan** om het tekstdocumentfragment Bill Details te maken.
+1. Klik **Opslaan** om het tekstdocumentfragment Bill Details te maken.
 
-## Stap 2: Tekstdocumentfragment voor klantgegevens maken {#step-create-customer-details-text-document-fragment}
+## Stap 2: Tekstdocumentfragment {#step-create-customer-details-text-document-fragment} voor klantgegevens maken
 
 Het documentfragment Customer Details bevat de volgende velden:
 
@@ -130,17 +130,17 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
-   1. Voer **customer_details_first_ic** in als naam in het veld **Titel** . De titel wordt automatisch ingevuld in het veld **Naam** .
-   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel** .
-   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
-   1. Tik op **Volgende**.
+   1. Typ **customer_details_first_ic** als naam in het veld **Title**. De titel wordt automatisch ingevuld in het veld **Naam**.
+   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel**.
+   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik **Select**.
+   1. Tik **Volgende**.
 
 1. Selecteer het tabblad **Variabelen** in het linkerdeelvenster en tik op **Maken**.
-1. In de sectie Variabele **maken** :
+1. In de sectie **Variabele maken**:
 
    1. Voer **Placesupply** in als de naam van de variabele.
    1. Selecteer **String** als type.
-   1. Tik op **Maken**.
+   1. Tik **Maken**.
 
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
@@ -148,8 +148,8 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
    * Nummerverbindingen: Het type Number
 
 
-1. Selecteer het tabblad **Gegevensmodelobjecten** , plaats de cursor in het rechterdeelvenster en dubbelklik op de eigenschap **klant** > **name** .
-1. Druk op Enter om de cursor naar de volgende regel te verplaatsen en dubbelklik op de eigenschap **klant** > **address** .
+1. Selecteer het tabblad **Gegevensmodelobjecten**, plaats de cursor in het rechtervenster en dubbelklik op de eigenschap **customer** > **name**.
+1. Druk op Enter om de cursor naar de volgende regel te verplaatsen en dubbelklik op de eigenschap **customer** > **address**.
 1. Maak statische tekst voor de volgende velden met behulp van het rechterdeelvenster:
 
    * Mobiel nummer
@@ -161,20 +161,20 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
 
    ![customer_details_static_text_fdm](assets/customer_details_static_text_fdm.png)
 
-1. Plaats de cursor naast het veld **Mobiel nummer** en dubbelklik op de eigenschap **klant** > **mobile** .
-1. Plaats de curseur naast het **Afwisselende gebied van het Aantal** van het Contact en klik de **klant** > **afwisselend nummerbezit** tweemaal.
-1. Plaats de curseur naast het gebied van het Aantal **van de** Verhouding en klik het **klant** > **bezit van het** relatienummer tweemaal.
-1. Selecteer het tabblad **Variabelen** , plaats de cursor naast het veld **Plaats van levering** en dubbelklik op de variabele **Plaatsing** .
-1. Plaats de curseur naast het gebied van de Code **van de** Staat en klik de variabele **Statecode** tweemaal.
-1. Plaats de cursor naast het veld **Aantal verbindingen** en dubbelklik op de variabele **Numberconnecties** .
+1. Plaats de cursor naast het veld **Mobiel nummer** en dubbelklik op de eigenschap **klant** > **mobilenum**.
+1. Plaats de cursor naast het veld **Alternate Contact Number** en dubbelklik op de eigenschap **customer** > **alternatemobilenumber**.
+1. Plaats de cursor naast het veld **Relationship Number** en dubbelklik op de eigenschap **customer** > **relationship number**.
+1. Selecteer het **tabblad Variabelen**, plaats de cursor naast het veld **Plaats van levering** en dubbelklik op de variabele **Placesupply**.
+1. Plaats de curseur naast het **gebied van de Code van de Staat** en klik **Statecode** variabele tweemaal.
+1. Plaats de curseur naast **Aantal gebieden van Verbindingen** en klik **Numberconnections** veranderlijk tweemaal.
 
    ![customer_details_df2](assets/customer_details_df2.png)
 
 1. Klik op **Opslaan** om het tekstdocumentfragment Klantgegevens te maken.
 
-## Stap 3: Samenvattingstekstdocumentfragment van Bill maken {#step-create-bill-summary-text-document-fragment}
+## Stap 3: Samenvattingstekstdocumentfragment {#step-create-bill-summary-text-document-fragment} maken
 
-Het fragment Bill Summary-document bevat de volgende velden:
+Het documentfragment Bill Summary bevat de volgende velden:
 
 | Veld | Gegevensbron |
 |---|---|
@@ -191,17 +191,17 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
-   1. Voer **bill_summary_first_ic** in als naam in het veld **Titel** . De titel wordt automatisch ingevuld in het veld **Naam** .
-   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel** .
-   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
-   1. Tik op **Volgende**.
+   1. Typ **bill_summary_first_ic** als naam in het veld **Title**. De titel wordt automatisch ingevuld in het veld **Naam**.
+   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel**.
+   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik **Select**.
+   1. Tik **Volgende**.
 
 1. Selecteer het tabblad **Variabelen** in het linkerdeelvenster en tik op **Maken**.
-1. In de sectie Variabele **maken** :
+1. In de sectie **Variabele maken**:
 
-   1. Voer **Vorige balans** in als naam voor de variabele.
-   1. Selecteer **Getal** als type.
-   1. Tik op **Maken**.
+   1. Voer **Previousbalance** in als de naam van de variabele.
+   1. Selecteer **Number** als type.
+   1. Tik **Maken**.
 
    Herhaal stap 4 en 5 om de volgende variabelen te maken:
 
@@ -223,18 +223,18 @@ Voer de volgende stappen uit om variabelen voor gebieden met Agent UI als gegeve
 
    ![bill_summary_static](assets/bill_summary_static.png)
 
-1. Plaats de cursor naast het veld **Vorige balans** en dubbelklik op de variabele **Vorige balans** .
-1. Plaats de cursor naast het veld **Betalingen** en dubbelklik op de variabele **Betalingen** .
-1. Plaats de cursor naast het veld **Aanpassingen** en dubbelklik op de variabele **Aanpassingen** .
-1. Plaats de cursor naast het veld **Bedrag verschuldigd** en dubbelklik op de variabele **Bedrag** .
-1. Plaats de cursor naast het veld **Einddatum** en dubbelklik op de variabele **Vervolgdatum** .
-1. Selecteer het tabblad **Gegevensmodelobjecten** , plaats de cursor naast het veld **Laden voor huidige factuurperiode** in het rechtervenster en dubbelklik op de eigenschap **facturen** > **gebruiksrechten** .
+1. Plaats de cursor naast het veld **Vorige balans** en dubbelklik op de variabele **Vorige balans**.
+1. Plaats de cursor naast het veld **Payments** en dubbelklik op de variabele **Payments**.
+1. Plaats de cursor naast het veld **Aanpassingen** en dubbelklik op de variabele **Aanpassingen**.
+1. Plaats de cursor naast het veld **Bedrag verschuldigd** en dubbelklik op de variabele **Aantal**.
+1. Plaats de curseur naast **Vervaldatum** gebied en klik **Duedate** variabele tweemaal.
+1. Selecteer het tabblad **Gegevensmodelobjecten**, plaats de cursor naast het veld **Huidige factureringsperiode laden** in het rechtervenster en dubbelklik op de eigenschap **rekeningen** > **usageladingen**.
 
    ![bill_summary_static_variables](assets/bill_summary_static_variables.png)
 
 1. Klik op **Opslaan** om het tekstdocumentfragment Klantgegevens te maken.
 
-## Stap 4: Samenvatting maken van tekstdocumentfragment met ladingen {#step-create-summary-of-charges-text-document-fragment}
+## Stap 4: Samenvatting maken van tekstdocumentfragment {#step-create-summary-of-charges-text-document-fragment} laden
 
 Het fragment Overzicht van ladingen bevat de volgende velden:
 
@@ -256,10 +256,10 @@ Voer de volgende stappen uit om statische tekst te maken en formuliergegevensmod
 1. Selecteer **Maken** > **Tekst**.
 1. Geef de volgende informatie op:
 
-   1. Voer in het veld **Titel** de naam **** summary_charges_first_ic in. De titel wordt automatisch ingevuld in het veld Naam.
-   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel** .
-   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik op **Selecteren**.
-   1. Tik op **Volgende**.
+   1. Typ **summary_charges_first_ic** als naam in het veld **Title**. De titel wordt automatisch ingevuld in het veld Naam.
+   1. Selecteer **Formuliergegevensmodel** in de sectie **Gegevensmodel**.
+   1. Selecteer **FDM_Create_First_IC** als het formuliergegevensmodel en tik **Select**.
+   1. Tik **Volgende**.
 
 1. Maak statische tekst voor de volgende velden met behulp van het rechterdeelvenster:
 
@@ -275,29 +275,29 @@ Voer de volgende stappen uit om statische tekst te maken en formuliergegevensmod
 
    ![summary_charges_static](assets/summary_charges_static.png)
 
-1. Selecteer het tabblad Objecten **gegevensmodel** .
-1. Plaats de curseur naast het gebied van de Heffingen **van de** Vraag en klik de **rekeningen** > **callladingsbezit** tweemaal.
-1. Plaats de curseur naast het gebied van de Heffingen **van de Vraag van de** Conferentie en klik de **rekeningen** > **confcallladings** bezit tweemaal.
-1. Plaats de cursor naast het veld **SMS-kosten** en dubbelklik op de eigenschap **Bill** > **smrages** .
-1. Plaats de curseur naast het **Mobiele gebied van de Tarieven** van Internet en klik de **rekeningen** > **onderlinge verbindings van netwerkenbezit** tweemaal.
-1. Plaats de cursor naast het veld **Nationale roamingkosten** en dubbelklik op de **facturen** > **roamingnationale** eigenschap.
-1. Plaats de cursor naast het veld **Internationale zwervende kosten** en dubbelklik op de **facturen** > **roamingintleigenschap** .
-1. Plaats de curseur naast het gebied van de Kosten **van de Diensten van de** Waarde Toegevoegde en klik de **rekeningen** > **vasbezit** tweemaal.
-1. Plaats de cursor naast het veld **Totale kosten** en dubbelklik op de eigenschap **facturen** > **gebruiksrechten** .
-1. Plaats de cursor naast het veld **TOTAAL BETAALBAAR** en dubbelklik op de eigenschap **factureren** > **gebruiksheffingen** .
+1. Selecteer het tabblad **Gegevensmodelobjecten**.
+1. Plaats de curseur naast het **gebied van de Laden van de Vraag** en klik **rekeningen** > **calllades** bezit tweemaal.
+1. Plaats de curseur naast het **gebied van de Vraag van de Conferentie** en klik **rekeningen** > **confcallladings** bezit tweemaal.
+1. Plaats de cursor naast het veld **SMS Charges** en dubbelklik op de eigenschap **facetten** > **smesarges**.
+1. Plaats de curseur naast het **Mobiele gebied van Internet Charges** en klik **rekeningen** > **onderlinge verbindings van netwerkeneigenschappen** tweemaal.
+1. Plaats de cursor naast het veld **Nationale roamingkosten** en dubbelklik op de eigenschap **facetten** > **roamingnational**.
+1. Plaats de cursor naast het veld **Internationale roamingkosten** en dubbelklik op de eigenschap **Bill** > **roamingintl**.
+1. Plaats de curseur naast **Value Added Services Charges** gebied en klik **rekeningen** > **vas** bezit tweemaal.
+1. Plaats de cursor naast het veld **Totale kosten** en dubbelklik op de eigenschap **nota** > **gebruiksheffingen**.
+1. Plaats de cursor naast het veld **TOTAAL BETAALBAAR** en dubbelklik op de eigenschap **rekeningen** > **useLaks**.
 
    ![summary_charges_static_fdm](assets/summary_charges_static_fdm.png)
 
-1. Selecteer de tekst in de **Waarde toegevoegde de rij van de Laden** van de Diensten en tik **Create Regel** om een voorwaarde tot stand te brengen die waarop de rij in Interactieve Mededeling wordt getoond:
-1. In het pop-upvenster Regel **** maken:
+1. Selecteer de tekst in **Value Added Services Charges** rij en tik **Create Rule** om een voorwaarde te maken op basis waarvan de rij wordt weergegeven in de Interactive Communication:
+1. In het pop-upvenster **Regel maken**:
 
-   1. Selecteer **Gegevensmodellen en Variabelen** en dan **rekeningen** > **callloads**.
-   1. Selecteren **is kleiner dan** de operator.
-   1. Selecteer **Aantal** en ga de waarde als **60** in.
+   1. Selecteer **Gegevensmodellen en Variabelen** en **rekeningen** > **calllades**.
+   1. Selecteer **is minder dan** als exploitant.
+   1. Selecteer **Number** en voer de waarde in als **60**.
 
    Gebaseerd op deze voorwaarde, wordt de rij van de Heffingen van de Diensten van de Waarde Toegevoegde getoond slechts als de waarde voor het gebied van de Heffingen van de Vraag minder dan 60 is.
 
    ![create_rules_caption](assets/create_rules_caption.gif)
 
-1. Klik op **Opslaan** om het fragment Overzicht van ladingen voor het tekstdocument te maken.
+1. Klik op **Opslaan** om de samenvatting van het fragment van het ladingstekstdocument te maken.
 
