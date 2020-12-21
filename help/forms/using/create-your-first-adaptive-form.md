@@ -16,13 +16,13 @@ ht-degree: 0%
 ---
 
 
-# Uw eerste adaptieve formulier maken {#do-not-publish-create-your-first-adaptive-form}
+# Uw eerste adaptieve formulier {#do-not-publish-create-your-first-adaptive-form} maken
 
 ![01-create-first-adaptive-form-hero-image](assets/01-create-first-adaptive-form-hero-image.png)
 
 ## Inleiding {#introduction}
 
-Bent u op zoek naar een mobiele **formulierervaring** die het inschrijven vereenvoudigt, de betrokkenheid verhoogt en de doorlooptijd verkort, en de **adaptieve formulieren** zijn ideaal voor u. Adaptieve formulieren bieden een mobiele, automatiserings- en analysevriendelijke ervaring voor formulieren. U kunt eenvoudig formulieren maken die responsief en interactief van aard zijn, geautomatiseerde processen gebruiken om beheertaken en repetitieve taken te beperken en gegevensanalyses gebruiken om de ervaring die klanten met uw formulieren hebben, te verbeteren en aan te passen.
+Bent u op zoek naar een mobiele **formulierervaring** die het inschrijven vereenvoudigt, de betrokkenheid verhoogt en de doorlooptijd verkort, **adaptieve formulieren** is een perfecte oplossing voor u. Adaptieve formulieren bieden een mobiele, automatiserings- en analysevriendelijke ervaring voor formulieren. U kunt eenvoudig formulieren maken die responsief en interactief van aard zijn, geautomatiseerde processen gebruiken om beheertaken en repetitieve taken te beperken en gegevensanalyses gebruiken om de ervaring die klanten met uw formulieren hebben, te verbeteren en aan te passen.
 
 Deze zelfstudie biedt een end-to-end framework voor het maken van een adaptief formulier. De zelfstudie is ingedeeld in een gebruikscase en meerdere hulplijnen. Met elke handleiding kunt u nieuwe functies toevoegen aan het aangepaste formulier dat in deze zelfstudie wordt gemaakt. U hebt een werkend adaptief formulier na elke hulplijn. De handleiding voor het maken van een adaptief formulier is beschikbaar. Volgende hulplijnen zijn binnenkort beschikbaar. Aan het einde van deze zelfstudie kunt u het volgende doen:
 
@@ -42,8 +42,8 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM Fo
 ### Vereiste {#prerequisite}
 
 * Stel een AEM auteur-instantie in.
-* Installeer de invoegtoepassing [AEM Forms](/help/forms/using/installing-configuring-aem-forms-osgi.md) op de auteurinstantie.
-* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in de zelfstudie zijn gebaseerd op MySQL-database en gebruiken het [MySQL JDBC-databasestuurprogramma](https://dev.mysql.com/downloads/connector/j/5.1.html)van Oracle.
+* Installeer [AEM Forms add-on](/help/forms/using/installing-configuring-aem-forms-osgi.md) op auteurinstantie.
+* Vraag het JAR-bestand (JDBC-databasestuurprogramma) aan bij de databaseprovider. De voorbeelden in het leerprogramma zijn gebaseerd op gegevensbestand MySQL en gebruiken Oracle [MySQL JDBC gegevensbestandbestuurder](https://dev.mysql.com/downloads/connector/j/5.1.html).
 
 * Stel een database in die klantgegevens bevat met de onderstaande velden. Een database is niet essentieel om een adaptief formulier te maken. Deze zelfstudie gebruikt een database voor het weergeven van het formuliergegevensmodel en de persistentiemogelijkheden van AEM Forms.
 
@@ -53,7 +53,7 @@ De website wordt uitgevoerd op Adobe Experience Manager (AEM) en gebruikt AEM Fo
 
 ![03-create-adaptive-form-main-image_small_new](assets/03-create-adaptive-form-main-image_small_new.png)
 
-Adaptieve formulieren zijn nieuwe generatie, boeiend, responsief, dynamisch en adaptief van aard. Met behulp van adaptieve formulieren kunt u persoonlijke en doelgerichte ervaringen bieden. AEM Forms beschikt over een WYSIWYG-editor voor slepen en neerzetten waarmee u adaptieve formulieren kunt maken. Zie [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md)voor meer informatie over adaptieve formulieren.
+Adaptieve formulieren zijn nieuwe generatie, boeiend, responsief, dynamisch en adaptief van aard. Met behulp van adaptieve formulieren kunt u persoonlijke en doelgerichte ervaringen bieden. AEM Forms beschikt over een WYSIWYG-editor voor slepen en neerzetten waarmee u adaptieve formulieren kunt maken. Zie [Inleiding tot het ontwerpen van adaptieve formulieren](/help/forms/using/introduction-forms-authoring.md) voor meer informatie over adaptieve formulieren.
 
 Doelstellingen:
 
@@ -64,7 +64,7 @@ Doelstellingen:
 
    [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](create-adaptive-form.md)
 
-## Stap 2: Formuliergegevensmodel maken {#step-create-form-data-model}
+## Stap 2: Formuliergegevensmodel {#step-create-form-data-model} maken
 
 ![05-create-form-data-model-main_small](assets/05-create-form-data-model-main_small.png)
 
@@ -95,7 +95,7 @@ Doelstellingen:
 
 ![09-Style-your-adaptive-form_small](assets/09-Style-your-adaptive-form_small.png)
 
-Aangepaste formulieren bieden thema&#39;s en een [editor](/help/forms/using/themes.md) voor het maken van thema&#39;s voor de aangepaste formulieren. Een thema bevat opmaakgegevens voor componenten en deelvensters en u kunt een thema in verschillende formulieren opnieuw gebruiken. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u het thema toepast op het formulier, weerspiegelt de opgegeven stijl de overeenkomstige componenten van het formulier. Adaptieve formulieren ondersteunen ook inline opmaak voor stijlen die specifiek zijn voor een formulier.
+Aangepaste formulieren bieden thema&#39;s en een [editor](/help/forms/using/themes.md) om thema&#39;s voor de aangepaste formulieren te maken. Een thema bevat opmaakgegevens voor componenten en deelvensters en u kunt een thema in verschillende formulieren opnieuw gebruiken. Stijlen omvatten eigenschappen zoals achtergrondkleuren, statuskleuren, transparantie, uitlijning en grootte. Wanneer u het thema toepast op het formulier, weerspiegelt de opgegeven stijl de overeenkomstige componenten van het formulier. Adaptieve formulieren ondersteunen ook inline opmaak voor stijlen die specifiek zijn voor een formulier.
 
 Doelstellingen:
 
@@ -105,7 +105,7 @@ Doelstellingen:
 
    [ ![zie-the-guide-sm](assets/see-the-guide-sm.png)](style-your-adaptive-form.md)
 
-## Stap 5: Het adaptieve formulier testen {#step-test-your-adaptive-form}
+## Stap 5: Het adaptieve formulier {#step-test-your-adaptive-form} testen
 
 ![11-test-uw-adaptieve vorm](assets/11-test-your-adaptive-form.png)
 
@@ -116,13 +116,13 @@ Doelstellingen:
 * Calvin SDK installeren
 * Testsuite en testcase maken voor het wijzigen van adresformulier
 
-Meer informatie over SDK vindt u in Geautomatiseerde tests [gebruiken met AEM adaptieve vorm](/help/forms/using/calvin.md).
+Zie [Werken met geautomatiseerde tests met AEM adaptieve vorm](/help/forms/using/calvin.md) voor meer informatie over SDK.
 
-## Stap 6: Het aangepaste formulier publiceren {#step-publish-your-adaptive-form}
+## Stap 6: Het aangepaste formulier {#step-publish-your-adaptive-form} publiceren
 
 ![12-publish-your-adaptive-form-_small](assets/12-publish-your-adaptive-form-_small.png)
 
-U kunt adaptieve formulieren publiceren als een zelfstandig formulier (toepassing op één pagina), opnemen in AEM [sitepagina](/help/forms/using/embed-adaptive-form-aem-sites.md)of op een AEM site aanbieden met behulp van [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
+U kunt adaptieve formulieren publiceren als een zelfstandig formulier (toepassing op één pagina), opnemen in AEM [sitepagina](/help/forms/using/embed-adaptive-form-aem-sites.md) of op een AEM site aanbieden met [Forms Portal](/help/forms/using/introduction-publishing-forms.md).
 
 Doelstellingen:
 
