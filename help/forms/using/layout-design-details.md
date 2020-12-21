@@ -22,13 +22,13 @@ ht-degree: 0%
 XFA-formuliersjablonen of XDP&#39;s zijn de sjablonen voor:
 
 * [Letters](/help/forms/using/create-letter.md)
-* [Kanaal](/help/forms/using/web-channel-print-channel.md#printchannel) van de druk van [Interactieve Mededelingen](/help/forms/using/interactive-communications-overview.md)
+* [Kanaal ](/help/forms/using/web-channel-print-channel.md#printchannel) voor  [interactieve communicatie afdrukken](/help/forms/using/interactive-communications-overview.md)
 
 * Lay-outfragmenten
 
 Een XDP is ontworpen in Adobe Forms Designer. Dit artikel bevat informatie over hoe u XDP&#39;s kunt ontwerpen voor het maken van effectieve overeenkomsten/interactieve communicatie, zoals waar u formuliervelden of doelgebieden wilt gebruiken en wanneer u lay-outfragmenten wilt gebruiken.
 
-## Een lay-out maken voor letters of voor het afdrukkanaal van Interactieve communicatie {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel}
+## Een lay-out maken voor letters of voor het afdrukkanaal {#creating-a-layout-for-letters-or-for-interactive-communications-print-channel} van Interactieve communicatie
 
 Een lay-out bepaalt de grafische lay-out van een brief/drukkanaal van een Interactieve Mededeling. De indeling kan typische formuliervelden bevatten, zoals &quot;Adres&quot; en &quot;Referentienummer&quot;. Het bevat ook lege subformulieren die doelgebieden aangeven. Maak de indeling in de formulierontwerper en wanneer deze is voltooid, uploadt de Application Specialist de indeling naar AEM server. Van daar, kunt u de lay-out selecteren wanneer het creëren van een correspondentiesjabloon of een drukkanaal van een Interactieve Mededeling.
 
@@ -49,14 +49,14 @@ Ga als volgt te werk om lay-outs voor letters/drukkanaal van Interactieve Medede
    1. Voor de sectie Primaire woonplaats voegt u een plaatsaanduiding als doelgebied toe. Deze tijdelijke aanduiding is gebonden aan een fragment voor de primaire verblijfplaats op het moment dat er een letter/interactieve communicatie wordt ontworpen.
    1. Upload de lay-out (en het eventuele fragment dat de lay-out gebruikt) naar de AEM Forms-server.
 
-## Schema gebruiken {#using-schema}
+## Schema {#using-schema} gebruiken
 
 U kunt een schema in een lay-out- of lay-outfragment gebruiken, maar het is niet verplicht. Als u een schema gebruikt, zorg het volgende ervoor:
 
 1. Layout en alle fragmentlay-outs die in een brief/Interactieve Communicatie worden gebruikt gebruiken het zelfde schema zoals de brief/Interactieve Communicatie.
 1. Alle velden die moeten worden gevuld met gegevens, zijn gebonden aan het schema.
 
-## Betrouwbare velden maken {#creating-relatable-fields}
+## Relateerbare velden {#creating-relatable-fields} maken
 
 Standaard worden alle velden beschouwd als relatief ten opzichte van verschillende andere gegevensbronnen. Als uw layout velden bevat die niet kunnen worden vergeleken met een gegevensbron, geeft u het veld een naam met het achtervoegsel &quot;_int&quot; (internal); bijvoorbeeld pageCount_int.
 
@@ -123,9 +123,9 @@ Gebruik een veld als u gegevens uit de module of gegevenswoordenboekelementen wi
 
 Wanneer elementen zoals het logo en het adres van uw organisatie op alle pagina&#39;s van een brief/Interactieve Mededeling verschijnen, creeer vormgebieden voor die elementen en plaats hen op de master pagina. Gebruik de binding Naam (veldnaam) voor deze velden.
 
-## De serverrenderindeling opgeven {#specify-the-server-nbsp-render-format}
+## De renderindeling van de server opgeven {#specify-the-server-nbsp-render-format}
 
 Gebruik de serverrenderindeling van de indeling naar dynamisch XML-formulier; anders, kunnen om het even welke brieven/Interactieve Mededelingen die op deze lay-out worden gebaseerd niet correct teruggeven. Standaard wordt de indeling voor het renderen van de server in Forms Designer ingesteld op Dynamisch XML-formulier. U zorgt ervoor dat de juiste indeling wordt gebruikt:
 
-* Klik in Designer **[!UICONTROL File > Form Properties > Default]** en controleer of de instelling PDF renderen/Indeling is ingesteld op Dynamisch XML-formulier.
+* Klik in Designer op **[!UICONTROL File > Form Properties > Default]** en controleer of de instelling voor PDF renderen/indeling is ingesteld op Dynamisch XML-formulier.
 
