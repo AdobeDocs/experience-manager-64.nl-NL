@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# SSL configureren onder Windows Vista {#configuring-ssl-on-windows-vista}
+# SSL configureren op Windows Vista {#configuring-ssl-on-windows-vista}
 
 Om SSL op Windows Vista™ te vormen, hebt u een SSL certificaat met sleutels van RSA voor authentificatie nodig. U kunt het Java-sleutelgereedschap gebruiken om het certificaat te maken.
 
@@ -32,11 +32,11 @@ U kunt keytool uitvoeren met één opdracht die alle informatie bevat die nodig 
 
 1. In een bevelherinnering, navigeer aan *[JAVA HOME]*/bin en typ het volgende bevel om het certificaat en keystore tot stand te brengen:
 
-   `keytool -genkey -keyalg RSA -dname "CN=`*Hostnaam *`, OU=`*Groepsnaam* `, O=`*bedrijfsnaam *`,L=`*Plaats***** Naam* `, S=`*Provincie *`, C=`** `" -alias`**`-keypass``*key*`**`-keystore`*Landcode&quot;LC Cert&quot;*_*passwordkeystorename* `.keystore`
+   `keytool -genkey -keyalg RSA -dname "CN=`*Hostnaam* `, OU=`*Groep* `, O=`*NaamBedrijf* `,L=`*NaamStad***** Naam*  `, S=`** `, C=`*Landcode* `" -alias`*staat&quot;LC Cert&quot;* `-keypass` `*key*`*_*** `-keystore`*Wachtwoordsleutelstorename* `.keystore`
 
    >[!NOTE]
    >
-   >Vervang *[JAVA_HOME]door de map waarin de JDK is geïnstalleerd en vervang de cursieve tekst door waarden die overeenkomen met uw omgeving.*
+   >Vervang *[JAVA_HOME] door de map waarin de JDK is geïnstalleerd en vervang de cursieve tekst door waarden die overeenkomen met uw omgeving.*
 
-1. Typ `changeit` het wachtwoord. Dit wachtwoord is de standaardinstelling voor een Java-installatie en de systeembeheerder kan deze hebben gewijzigd.
+1. Typ `changeit` als wachtwoord. Dit wachtwoord is de standaardinstelling voor een Java-installatie en de systeembeheerder kan deze hebben gewijzigd.
 
