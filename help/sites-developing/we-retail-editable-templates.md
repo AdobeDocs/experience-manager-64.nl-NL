@@ -18,7 +18,7 @@ ht-degree: 10%
 ---
 
 
-# Bewerkbare sjablonen uitproberen in We.Detailhandel{#trying-out-editable-templates-in-we-retail}
+# Bewerkbare sjablonen uitproberen in We.Retail{#trying-out-editable-templates-in-we-retail}
 
 Met de bewerkbare sjablonen is het maken en onderhouden van sjablonen niet langer alleen een taak voor ontwikkelaars. Een type van macht-gebruiker, die een malplaatjeauteur wordt genoemd, kan malplaatjes nu tot stand brengen. Ontwikkelaars zijn nog steeds nodig om de omgeving in te stellen, clientbibliotheken te maken en de te gebruiken componenten te maken, maar zodra deze basisbeginselen zijn ingesteld, kan de maker van sjablonen sjablonen maken en configureren zonder een ontwikkelingsproject.
 
@@ -31,7 +31,7 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/equipment.html
 
 1. De moduskiezer biedt niet langer een ontwerpmodus. Alle pagina&#39;s voor We.Retail zijn gebaseerd op bewerkbare sjablonen en om het ontwerp van bewerkbare sjablonen te wijzigen, moeten deze worden bewerkt in de sjablooneditor.
-1. Selecteer Sjabloon **** bewerken in het menu **Pagina-informatie**.
+1. Selecteer **Sjabloon bewerken** in het menu **Pagina-informatie**.
 1. U bewerkt nu de sjabloon voor de hoofdpagina.
 
    In de structuurmodus van de pagina kunt u de structuur van de sjabloon wijzigen. Dit geldt bijvoorbeeld voor de componenten die zijn toegestaan in de lay-outcontainer.
@@ -68,13 +68,13 @@ Alle pagina&#39;s in We.Retail zijn gebaseerd op bewerkbare sjablonen, waardoor 
 
    ![chlimage_1-141](assets/chlimage_1-141.png)
 
-1. In de sjablooneditor kunt u de moduskiezer gebruiken om over te schakelen op de modus **Oorspronkelijke inhoud** om te bepalen welke inhoud op de pagina vereist is.
+1. In de sjablooneditor kunt u de moduskiezer gebruiken om de modus **Oorspronkelijke inhoud** te wijzigen en te definiëren welke inhoud op de pagina is vereist.
 
-   **De lay-outmodus** kan worden gebruikt zoals deze zich op een normale pagina bevindt om de lay-out voor de sjabloon te definiëren.
+   **De** layoutmodus kan worden gebruikt zoals deze zich op een normale pagina bevindt om de lay-out voor de sjabloon te definiëren.
 
 ## Meer informatie {#more-information}
 
-Raadpleeg voor meer informatie het ontwerpdocument [Paginasjablonen](/help/sites-authoring/templates.md) maken of het [ontwikkelaarsdocument Paginasjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
+Raadpleeg voor meer informatie het ontwerpdocument [Paginasjablonen maken](/help/sites-authoring/templates.md) of het document voor ontwikkelaars Pagina [Sjablonen - Bewerkbaar](/help/sites-developing/page-templates-editable.md) voor volledige technische details over bewerkbare sjablonen.
 
-Mogelijk wilt u ook [kerncomponenten](/help/sites-developing/we-retail-core-components.md)onderzoeken. Zie het ontwerpdocument [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het ontwikkelaarsdocument [Developing Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
+U kunt ook [kerncomponenten](/help/sites-developing/we-retail-core-components.md) willen onderzoeken. Zie het ontwerpdocument [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) voor een overzicht van de mogelijkheden van de kerncomponenten en het document [Developer Core Components](https://helpx.adobe.com/experience-manager/core-components/using/developing.html) voor een technisch overzicht.
 
