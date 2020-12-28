@@ -21,7 +21,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Adobe Experience Manager (AEM) Mobile is slechts één pijler die het volledige AEM platform vormt.
 
@@ -33,7 +33,7 @@ Voor het starten van een nieuwe AEM Mobile-app-ervaring is een consistente rolco
 
 ## PhoneGap-toepassingen ontwerpen {#authoring-phonegap-applications}
 
-Een ***AEM-auteur *(of*Marketer *)**kan de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
+Een ***AEM-auteur* (of *Marketer*)**kan de out-of-the-box sjablonen en componenten gebruiken om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten).
 
 Zie de volgende bronnen om aan de slag te gaan:
 
@@ -45,7 +45,7 @@ Zie de volgende bronnen om aan de slag te gaan:
 * [Een nieuwe AEM Mobile-app maken met de wizard Maken](/help/mobile/phonegap-create-new-app.md)
 * [Een bestaande hybride app importeren](/help/mobile/phonegap-adding-content-to-imported-app.md)
 
-Om over de Diensten **van de** Inhoud te leren, zie het Overzicht [van de Diensten van de](/help/mobile/develop-content-as-a-service.md) Inhoud beginnen.
+Voor informatie over **Content Services**, zie [Content Services Overview](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
 
 ## Aanvullende bronnen {#additional-resources}
 
