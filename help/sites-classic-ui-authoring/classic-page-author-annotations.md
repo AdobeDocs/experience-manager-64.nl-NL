@@ -45,7 +45,7 @@ Een annotatie plaatst een gekleurde markering/notitie op de pagina. Met de annot
 
 Afhankelijk van het alineaontwerp is annotatie beschikbaar als een optie in het contextmenu (meestal de rechtermuisknop als deze zich boven de vereiste alinea bevindt) of als een knop op de bewerkbalk voor alinea&#39;s.
 
-Selecteer in beide gevallen **Notitie**. Er wordt een gekleurde notitie toegepast op de alinea. U bevindt zich direct in de modus Bewerken, zodat u rechtstreeks tekst kunt toevoegen:
+Selecteer in beide gevallen **Annoteren**. Er wordt een gekleurde notitie toegepast op de alinea. U bevindt zich direct in de modus Bewerken, zodat u rechtstreeks tekst kunt toevoegen:
 
 ![chlimage_1-137](assets/chlimage_1-137.png)
 
@@ -72,7 +72,7 @@ Met de drie pictogrammen linksboven kunt u de annotatie minimaliseren (samen met
 >Annotaties kunnen niet worden toegevoegd aan een pagina die is vergrendeld door een andere gebruiker.
 
 
-## Annotatieskettes {#annotation-sketches}
+## Annotatiesets {#annotation-sketches}
 
 >[!NOTE]
 >
@@ -98,12 +98,12 @@ Schetsen zijn een functie van annotaties waarmee u overal in het browservenster 
 
    * recht:
 
-      de begin- `ALT` en eindpunten ingedrukt houden en klikken; voltooien met een dubbelklik.
+      houdt `ALT` en klikt de begin en eindpunten; voltooien met een dubbelklik.
 
 * Nadat u de modus Schets hebt verlaten, kunt u op een schetslijn klikken om die schets te selecteren.
 * Verplaats een schets door de schets te selecteren en vervolgens naar de gewenste positie te slepen.
 * Een schets bedekt de inhoud. Dit betekent dat u binnen de vier hoeken van de schets niet op de onderliggende alinea kunt klikken. bijvoorbeeld als u een koppeling moet bewerken of openen. Als dit een probleem wordt (bijvoorbeeld als u een schets hebt die een groot gebied van de pagina bedekt), minimaliseert u de juiste annotatie, aangezien hierdoor ook alle verwante schetsen worden geminimaliseerd, zodat u toegang hebt tot het onderliggende gebied.
-* Om een individuele schets te schrappen - selecteer de vereiste schets, dan duw op de sleutel van de **Schrapping** (**fn**-**backspace** op MAC).
+* Om een individuele schets te schrappen - selecteer de vereiste schets, dan duw **Delete** sleutel (**fn**-**backspace** op MAC).
 
 * Als u een alinea verplaatst of kopieert, worden eventuele verwante annotaties en de bijbehorende schetsen ook verplaatst of gekopieerd. hun standpunt ten aanzien van de alinea blijft ongewijzigd .
 * Als u een annotatie verwijdert, worden ook alle aan die annotatie gekoppelde schetsen verwijderd.
