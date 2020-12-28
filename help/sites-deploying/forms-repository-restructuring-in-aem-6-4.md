@@ -17,9 +17,9 @@ ht-degree: 2%
 ---
 
 
-# Forms Repositoregeling Herstructurering in AEM 6.4{#forms-repository-restructuring-in-aem}
+# Forms Repository Herstructurering in AEM 6.4{#forms-repository-restructuring-in-aem}
 
-Zoals beschreven op de [herstructurering van de moederopslagplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die tot AEM 6.4 opwaarderen deze pagina moeten gebruiken om de werkinspanning te beoordelen verbonden aan veranderingen in de opslagplaats die de Oplossing van AEM Forms beïnvloeden. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
+Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.4 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM Forms-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
 
 **Met 6.4-upgrade**
 
@@ -34,7 +34,7 @@ Zoals beschreven op de [herstructurering van de moederopslagplaats in AEM 6.4](/
 
 ## Met 6.4-upgrade {#with-upgrade}
 
-### Dic {#misc}
+### Diverse {#misc}
 
 | **Vorige locatie** | `/etc/clientlibs/fd/fp` |
 |---|---|
@@ -90,43 +90,43 @@ Zoals beschreven op de [herstructurering van de moederopslagplaats in AEM 6.4](/
 | **Herstructureringsrichtsnoeren** | Het wijzigen van deze clientlibs is nooit aanbevolen of ondersteund. Als deze clientlibs zijn gewijzigd, moeten ze worden teruggedraaid om de AEM code te gebruiken. |
 | **Opmerkingen** | N.v.t. |
 
-## Vóór upgrade naar 6.5 {#prior-to-upgrade}
+## Vóór upgrade {#prior-to-upgrade} 6.5
 
-### Configuratie EchoSign-Cloud Service {#echosign-cloud-service-configuration}
+### Configuratie van EchoSign-Cloud Service {#echosign-cloud-service-configuration}
 
 | **Vorige locatie** | `/etc/cloudservices/echosign` |
 |---|---|
 | **Nieuwe locatie(s)** | `/conf/<tenant>/settings/cloudconfigs/echosign` |
-| **Herstructureringsrichtsnoeren** | Het hulpprogramma [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) dat moet worden geactiveerd vanuit de Forms Migration UI. |
+| **Herstructureringsrichtsnoeren** | Het [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) hulpprogramma dat moet worden geactiveerd vanuit de Forms Migration-interface. |
 | **Opmerkingen** | N.v.t. |
 
-### Configuraties van Recaptcha-Cloud Servicen {#recaptcha-cloud-service-configurations}
+### Configuraties van Recaptcha-Cloud Service {#recaptcha-cloud-service-configurations}
 
 | **Vorige locatie** | `/etc/cloudservices/recaptcha` |
 |---|---|
 | **Nieuwe locatie(s)** | `/conf/<tenant>/settings/cloudconfigs/recaptcha` |
-| **Herstructureringsrichtsnoeren** | Het hulpprogramma [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) dat moet worden geactiveerd vanuit de Forms Migration UI. |
+| **Herstructureringsrichtsnoeren** | Het [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) hulpprogramma dat moet worden geactiveerd vanuit de Forms Migration-interface. |
 | **Opmerkingen** | N.v.t. |
 
-### Configuraties van Typekit-Cloud Servicen {#typekit-cloud-service-configurations}
+### Typekit Cloud Service Configurations {#typekit-cloud-service-configurations}
 
 | **Vorige locatie** | `/etc/cloudservices/typekit` |
 |---|---|
 | **Nieuwe locatie(s)** | `/conf/<tenant>/settings/cloudconfigs/typekit` |
-| **Herstructureringsrichtsnoeren** | Het hulpprogramma [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) dat moet worden geactiveerd vanuit de Forms Migration UI. |
+| **Herstructureringsrichtsnoeren** | Het [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) hulpprogramma dat moet worden geactiveerd vanuit de Forms Migration-interface. |
 | **Opmerkingen** | N.v.t. |
 
-### Dic {#misc-1}
+### Diverse {#misc-1}
 
 | **Vorige locatie** | `/etc/cloudservices/fdm` |
 |---|---|
 | **Nieuwe locatie(s)** | `/conf/<tenant>/settings/cloudconfigs/fdm` |
-| **Herstructureringsrichtsnoeren** | Het hulpprogramma [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) dat moet worden geactiveerd vanuit de Forms Migration UI. |
+| **Herstructureringsrichtsnoeren** | Het [Lazy Content Migration](/help/sites-deploying/lazy-content-migration.md) hulpprogramma dat moet worden geactiveerd vanuit de Forms Migration-interface. |
 | **Opmerkingen** | N.v.t. |
 
 | **Vorige locatie** | `/etc/designs/fd/fp` |
 |---|---|
 | **Nieuwe locatie(s)** | `/libs/fd/fp` |
-| **Herstructureringsrichtsnoeren** | Eventuele verwijzingen naar de sjablonen /etc moeten uiteindelijk worden bijgewerkt zodat ze naar hun `/libs` tegenhangers verwijzen. |
+| **Herstructureringsrichtsnoeren** | Om het even welke verwijzingen naar de /etc malplaatjes zouden uiteindelijk moeten worden bijgewerkt om aan hun `/libs` tegenhangers te richten. |
 | **Opmerkingen** | N.v.t. |
 
