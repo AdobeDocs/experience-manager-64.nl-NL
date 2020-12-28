@@ -39,17 +39,17 @@ De bedrijfsprocessen die uw organisatie heeft gevestigd kunnen als werkschema&#3
 >
 >Zie voor meer informatie:
 >
->* Workflows toepassen en deelnemen aan workflows: [Werken met workflows](/help/sites-authoring/workflows.md).
->* Workflowmodellen maken en workflowfunctionaliteit uitbreiden: [Workflows](/help/sites-developing/workflows.md)ontwikkelen en uitbreiden.
+>* Workflows toepassen en deelnemen aan workflows: [Werken met Workflows](/help/sites-authoring/workflows.md).
+>* Workflowmodellen maken en workflowfunctionaliteit uitbreiden: [Workflows ontwikkelen en uitbreiden](/help/sites-developing/workflows.md).
 >* De prestaties verbeteren van workflows die gebruikmaken van aanzienlijke serverresources: [Gelijktijdige workflowverwerking](/help/sites-deploying/configuring-performance.md#concurrent-workflow-processing).
 
 >
 
 
 
-## Workflowmodellen en -instanties {#workflow-models-and-instances}
+## Workflowmodellen en instanties {#workflow-models-and-instances}
 
-[De modellen](/help/sites-developing/workflows.md#model) van het werkschema in AEM zijn de vertegenwoordiging en implementatie van bedrijfsprocessen:
+[De ](/help/sites-developing/workflows.md#model) modellen van het werkschema in AEM zijn de vertegenwoordiging en de implementatie van bedrijfsprocessen:
 
 * Doorgaans handelen ze op pagina&#39;s of elementen om een specifiek resultaat te bereiken.
 * Deze pagina&#39;s en/of middelen worden de werkstroomlading genoemd.
@@ -60,7 +60,7 @@ Wanneer een workflowmodel wordt gestart (uitgevoerd), wordt een workflowinstanti
 
 >[!CAUTION]
 >
->De uitgevoerde stappen zijn die die door het werkschemamodel *op het tijdstip worden bepaald dat de instantie wordt geproduceerd*. Zie [Workflows](/help/sites-developing/workflows.md#model) ontwikkelen voor meer informatie.
+>De uitgevoerde stappen zijn die die door het werkschemamodel *op het tijdstip worden bepaald de instantie wordt geproduceerd*. Zie [Workflows ontwikkelen](/help/sites-developing/workflows.md#model) voor meer informatie.
 
 De instanties van het werkschema vorderen door de volgende levenscyclus:
 
@@ -109,5 +109,5 @@ Afhankelijk van de huidige status kunt u acties uitvoeren op het uitvoeren van w
 
 * **Onderbreken**: Hiermee wordt de uitvoering van de workflow tijdelijk gestopt. Opschorsen is handig in uitzonderlijke gevallen waarin u niet wilt dat de workflow wordt voortgezet, bijvoorbeeld voor onderhoud. Met Opschorting wijzigt u de status van de workflow in Opgeschort.
 * **Hervatten**: Hiermee herstart u een stilgezette workflow op hetzelfde uitvoerpunt waar deze werd onderbroken, met dezelfde configuratie.
-* **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in **ABORTED**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.
+* **Beëindigen**: Beëindigt de workflowuitvoering en wijzigt de status in  **ABORTED**. Een afgebroken werkstroominstantie kan niet opnieuw worden gestart.
 
