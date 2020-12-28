@@ -17,11 +17,11 @@ ht-degree: 1%
 ---
 
 
-# Mobiele apps{#mobile-apps}
+# Mobiele toepassingen{#mobile-apps}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Adobe Experience Manager (AEM) Mobile maakt deel uit van het Adobe Experience Manager multi-channel digitale platform dat ook gebruikmaakt van AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms. AEM Mobile biedt een opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
 
@@ -32,4 +32,4 @@ AEM Mobile biedt meerdere methoden voor het maken van apps. U kunt toepassingen 
 
 >[!NOTE]
 >
->Als u nog geen ervaring hebt met Adobe Experience Manager, kunt u [Aan de slag gaan met AEM](/help/sites-deploying/deploy.md).
+>Als u nieuw bent aan Adobe Experience Manager, kunt u door [Aan de slag met AEM](/help/sites-deploying/deploy.md) willen lopen.
