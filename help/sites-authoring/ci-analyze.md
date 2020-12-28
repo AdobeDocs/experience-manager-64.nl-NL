@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Paginaprestaties analyseren{#analyzing-page-performance}
 
-Open de pagina [Inzicht](/help/sites-authoring/content-insights.md) inhoud om de prestaties van de pagina te analyseren die u ontwerpt. Configureer de rapportageperiode om uw analyse te concentreren.
+Open de pagina [Inzicht van inhoud](/help/sites-authoring/content-insights.md) om de prestaties van de pagina te analyseren die u ontwerpt. Configureer de rapportageperiode om uw analyse te concentreren.
 
 ## Analyses en Recommendations openen voor een pagina {#opening-analytics-and-recommendations-for-a-page}
 
@@ -35,7 +35,7 @@ Gebruik de volgende procedure om de Analytics en Recommendations voor een pagina
 
    ![screen_shot_2017-11-29at135651](assets/screen_shot_2017-11-29at135651.png)
 
-## Wijziging van de verslagperiode {#changing-the-reporting-period}
+## Wijziging van de rapportageperiode {#changing-the-reporting-period}
 
 Wijzig de volgende tijdgerelateerde aspecten van de analyserapporten:
 
@@ -44,7 +44,7 @@ Wijzig de volgende tijdgerelateerde aspecten van de analyserapporten:
 
 De gereedschappen voor het wijzigen van de aan de tijd gerelateerde aspecten van de rapporten staan boven aan de pagina Inzicht in inhoud. ![chlimage_1-249](assets/chlimage_1-249.png)
 
-### Wijziging van de verslagperiode {#changing-the-reporting-period-1}
+### Wijziging van de rapportageperiode {#changing-the-reporting-period-1}
 
 Wijzig de rapportageperiode van de pagina Inhoudscontrole om uw analyse van de pagina-activiteit toe te spitsen op een specifieke periode. Wanneer u de rapportageperiode wijzigt, worden de rapporten automatisch vernieuwd. Het schaduwgebied op het tijdframe vertegenwoordigt de rapportageperiode. De datums in de tijdlijn nemen toe van links naar rechts.
 
@@ -62,7 +62,7 @@ Om de rapportageperiode van een pagina Inhoudscontrole te wijzigen:
 
 1. Als u de einddatum van de rapportageperiode wilt wijzigen, sleept u de cirkel die rechts van het schaduwgebied wordt weergegeven naar de gewenste einddatum.
 
-### Wijziging van de rangorde van de verslagperiode {#changing-the-granularity-of-the-reporting-period}
+### De rangorde van de rapportageperiode wijzigen {#changing-the-granularity-of-the-reporting-period}
 
 Verander de hoeveelheid tijd dat elk gegevenspunt in een rapport overspant. Wanneer u bijvoorbeeld de granulariteit voor week selecteert, geeft elk gegevenspunt in het weergavenrapport het aantal weergaven voor een week aan.
 
@@ -86,7 +86,7 @@ De status van de SEO-aanbeveling geeft aan wanneer de taak is gemaakt maar nog n
 
 ![chlimage_1-253](assets/chlimage_1-253.png)
 
-Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken, zie het [Werken met Taken](/help/sites-authoring/task-content.md).
+Wanneer deze taak is gemaakt, wordt deze weergegeven in de lijst Taken van de gebruiker. Voor informatie over taken, zie [Werken met Taken](/help/sites-authoring/task-content.md).
 
 Gebruik de volgende procedure om een taak voor een aanbeveling te creëren SEO.
 
