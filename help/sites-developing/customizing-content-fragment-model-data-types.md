@@ -19,11 +19,11 @@ ht-degree: 0%
 
 # NIET PUBLICEREN, MAAR NIET DELETE aanpassen van gegevenstypen voor modellen van inhoudsfragmenten{#do-not-publish-but-do-not-delete-customizing-data-types-for-content-fragment-models}
 
-[Inhoudsfragmenten](/help/assets/content-fragments.md) zijn gebaseerd op [inhoudsfragmentmodellen](/help/assets/content-fragments-models.md). Deze modellen worden opgebouwd van [elementen](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) van verschillende gegevenstypen.
+[Inhoudsfragment](/help/assets/content-fragments.md) zijn gebaseerd op  [inhoudsfragmentmodellen](/help/assets/content-fragments-models.md). Deze modellen worden opgebouwd uit [elementen](/help/assets/content-fragments.md#constituent-parts-of-a-content-fragment) van verschillende gegevenstypen.
 
 Verschillende gegevenstypen zijn offline beschikbaar, zoals tekst op één regel, RTF-tekst op meerdere regels, numerieke velden, Booleaanse kiezers, opties voor vervolgkeuzemenu, datum en tijd en andere. AEM gebruikers kunnen gegevenstypen selecteren op basis van de redactionele intentie van het (de) overeenkomstige fragment(en). Op deze manier kunt u eenvoudig met tekstmodellen werken in complexe modellen met verschillende soorten inhoud en de bijbehorende ervaring bij het ontwerpen van fragmenten.
 
-Gegevenstypen worden gedefinieerd door een [combinatie van knoopeigenschappen](#properties) die op [specifieke locaties in de opslagplaats](#locations-in-the-repository)worden gehouden. U kunt ook uw eigen [gegevenstypen](#creating-your-data-type) en [fieldProperties](#creating-your-own-fieldproperties-property)maken.
+Gegevenstypen worden gedefinieerd door een [combinatie van knoopeigenschappen](#properties) die worden aangehouden op [specifieke locaties in de gegevensopslagruimte](#locations-in-the-repository). U kunt ook uw eigen [gegevenstypen](#creating-your-data-type) en [fieldProperties](#creating-your-own-fieldproperties-property) maken.
 
 <!-- Please uncomment when files are used>
 >[!NOTE]
@@ -37,13 +37,13 @@ Alle out-of-box datatypes worden gedeclareerd onder:
 
 `/libs/settings`
 
-U kunt nieuwe gegevenstypen toevoegen door de nodestructuur als volgt te bedekken `/apps`:
+U kunt nieuwe gegevenstypen toevoegen door de nodestructuur als volgt onder `/apps` te bedekken:
 
 `/apps/settings/dam/cfm/models/formbuilderconfig/datatypes/items`
 
 >[!CAUTION]
 >
->U mag niets in het `/libs` pad wijzigen.
+>U mag niets in de `/libs` weg veranderen.
 >
 >Om het even wat er kan veranderen bij de volgende verbetering, of installatie van de dienst of los verpakking op.
 
@@ -60,13 +60,13 @@ Alle gegevenstypen worden in een nodestructuur vertegenwoordigd zoals onder:
 
 `/libs/settings/dam/cfm/models/formbuilderconfig/datatypes/items`
 
-Elk knooppunt onder `/items` heeft eigenschappen die definiëren hoe dat gegevenstype moet worden vertegenwoordigd in de modeleditor.
+Elke knoop onder `/items` heeft eigenschappen die bepalen hoe dat gegevenstype binnen de modelredacteur zou moeten worden vertegenwoordigd.
 
 Alle volgende eigenschappen moeten aanwezig zijn opdat het gegevenstype in de modelredacteur aanwezig is:
 
 * `fieldIcon`
 
-   [Het pictogram](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) CoralUI om het gegevenstype in modelredacteur UI te vertegenwoordigen.
+   [Het ](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/coral-ui/coralui3/Coral.Icon.html#availableicons) pictogram CoralUI vertegenwoordigt het gegevenstype in modelredacteur UI.
 
 * ` [fieldProperties](#fieldproperties)`
 
@@ -74,7 +74,7 @@ Alle volgende eigenschappen moeten aanwezig zijn opdat het gegevenstype in de mo
 
 * `fieldResourceType`
 
-   Het Sling-brontype dat wordt gebruikt om het gegevenstype in een inhoudsfragment te renderen. Voor gegevenstypen die op verschillende manieren kunnen worden gerenderd (bijvoorbeeld als eenvoudige tekstinvoer en/of tekstinvoer met meerdere regels), moet deze eigenschap worden gemaakt als een array met alle typen bronnen. Het `renderasfield` bezit zal automatisch worden toegevoegd `fieldProperties` om de gebruiker te laten het middeltype kiezen zij aan het model moeten toevoegen,
+   Het Sling-brontype dat wordt gebruikt om het gegevenstype in een inhoudsfragment te renderen. Voor gegevenstypen die op verschillende manieren kunnen worden gerenderd (bijvoorbeeld als eenvoudige tekstinvoer en/of tekstinvoer met meerdere regels), moet deze eigenschap worden gemaakt als een array met alle typen bronnen. De eigenschap `renderasfield` wordt automatisch toegevoegd aan `fieldProperties` om de gebruiker het type resource te laten kiezen dat hij of zij aan het model moet toevoegen.
 
 * `fieldPropResourceType`
 
@@ -82,8 +82,8 @@ Alle volgende eigenschappen moeten aanwezig zijn opdat het gegevenstype in de mo
 
    Bijvoorbeeld voor het gegevenstype:
 
-   * Tekst van één regel, `fieldPropResourceType` zou een `textfield` component zijn
-   * Booleaans, het `fieldPropResourceType` zou een `checkbox` component zijn
+   * Tekst van één regel, de `fieldPropResourceType` zou een `textfield` component zijn
+   * Boolean, de `fieldPropResourceType` zou een `checkbox` component zijn
 
 * `fieldViewResourceType`
 
@@ -91,7 +91,7 @@ Alle volgende eigenschappen moeten aanwezig zijn opdat het gegevenstype in de mo
 
 * `fieldTitle`
 
-   Eigenschap die de titel van dit gegevenstype definieert. Bijvoorbeeld **Enkele-regeltekst** voor een `textfield` component, **Meerdere-regeltekst** voor een component met meerdere velden.
+   Eigenschap die de titel van dit gegevenstype definieert. Bijvoorbeeld **Tekst met één regel** voor een `textfield`-component, **Tekst met meerdere regels** voor een component met meerdere velden.
 
 * `valueType`
 
@@ -103,7 +103,7 @@ Alle volgende eigenschappen moeten aanwezig zijn opdat het gegevenstype in de mo
 
 * `listOrder`
 
-   Elk gegevenstype heeft een waarde nodig die de volgorde in de lijst aangeeft. Dit wordt gebruikt om de correcte orde van de diverse gebieden (toegevoegd/bewogen door belemmering en daling) te verzekeren wanneer het bewaren van de modelredacteur. Deze waarde moet een geheel getal zijn en het wordt aanbevolen het getal op oplopende, geordende wijze toe te wijzen. Wanneer u een nieuw gegevenstype maakt, kunt u het beste de waarde toewijzen op basis van het laatste gegevenstype in de lijst (de hoogste waarde van de `listOrder` waarde in de gegevenstypen).
+   Elk gegevenstype heeft een waarde nodig die de volgorde in de lijst aangeeft. Dit wordt gebruikt om de correcte orde van de diverse gebieden (toegevoegd/bewogen door belemmering en daling) te verzekeren wanneer het bewaren van de modelredacteur. Deze waarde moet een geheel getal zijn en het wordt aanbevolen het getal op oplopende, geordende wijze toe te wijzen. Wanneer u een nieuw gegevenstype maakt, kunt u het beste de waarde toewijzen op basis van het laatste gegevenstype in de lijst (de hoogste waarde van `listOrder` in de gegevenstypen).
 
 #### Toewijzingen {#mappings}
 
@@ -125,7 +125,7 @@ Alle volgende eigenschappen moeten aanwezig zijn opdat het gegevenstype in de mo
    <td>text-multi</td> 
   </tr> 
   <tr> 
-   <td>Getal (geheel getal/lang)<br /> </td> 
+   <td>Number (integer/long)<br /> </td> 
    <td>long</td> 
    <td>getal</td> 
   </tr> 
@@ -159,7 +159,7 @@ Alle volgende eigenschappen moeten aanwezig zijn opdat het gegevenstype in de mo
 
 >[!NOTE]
 >
->Sommige typen (bijvoorbeeld `string`, `long`onder andere) kunnen worden gemultiwaardeerd. In dit geval wordt de component die wordt gebruikt voor renderen en bewerken doorgaans omwikkeld door een component met meerdere velden ( `granite/ui/components/coral/foundation/form/multifield`). De uitzondering hierop zijn codes, waarbij de bewerkingscomponent verantwoordelijk is voor de juiste rendering.
+>Sommige typen (bijvoorbeeld `string`, `long`) kunnen worden gemultiwaardeerd. In dit geval wordt de component die wordt gebruikt voor renderen en bewerken doorgaans omwikkeld door een component met meerdere velden ( `granite/ui/components/coral/foundation/form/multifield`). De uitzondering hierop zijn codes, waarbij de bewerkingscomponent verantwoordelijk is voor de juiste rendering.
 
 ### fieldProperties {#fieldproperties}
 
@@ -167,27 +167,27 @@ De configuratie-eigenschappen voor elk gegevenstype. Waarden voor `fieldProperti
 
 * `base`
 
-   Dit is de basis voor alle `fieldProperties` componenten. De definitie staat onder `/libs/dam/cfm/models/editor/components/datatypeproperties/base`.
+   Dit is de basis voor alle `fieldProperties` componenten. De definitie bevindt zich onder `/libs/dam/cfm/models/editor/components/datatypeproperties/base`.
 
-   De variabele bevat de variabele `fieldRoot`, die vervolgens `fieldProperties` kan worden gebruikt wanneer invoer wordt gemaakt om het juiste pad op te halen.
+   Deze bevat de variabele `fieldRoot`, die `fieldProperties` kan gebruiken bij het maken van invoer om het juiste pad op te halen.
 
-   Voorbeeld: Als u het juiste pad voor een **veldlabel** wilt ophalen, hebt u de sleutel nodig om de component te identificeren waartoe dit behoort, moet de invoer voor dit veld `fieldRoot` + `<*fieldLabel*>`
+   Voorbeeld: om de correcte weg voor een **Etiket** te krijgen zult u de sleutel nodig hebben om de component te identificeren dit tot behoort, zou de input voor dit gebied `fieldRoot` + `<*fieldLabel*>` moeten zijn
 
 * `checkboxfields`
 
-   Deze component voegt het standaardselectievakje voor het `Boolean` gegevenstype toe, evenals de parameters Sling `checked@Delete` en `checked@TypeHint`.
+   Deze component voegt het standaardselectievakje voor het gegevenstype `Boolean` toe, evenals de parameters `checked@Delete` en `checked@TypeHint`.
 
 * `datepickerfields`
 
-   Component die de verborgen inputs toevoegt die nodig zijn om de component van de datumkiezer te laten functioneren. Omvat het creëren van de eigenschappen `defaultDateField`, `displayedFormat`, `emptyText`, `valueFormat`, `minDate` en `maxDate`.
+   Component die de verborgen inputs toevoegt die nodig zijn om de component van de datumkiezer te laten functioneren. Omvat het maken van de eigenschappen `defaultDateField`, `displayedFormat`, `emptyText`, `valueFormat`, `minDate` en `maxDate`.
 
 * `datetimepickerfields`
 
-   Hiermee voegt u een selectieveld voor het `Date&Time` gegevenstype toe om onderscheid te maken tussen `Date` en `Date&Time` opties.
+   Hiermee wordt een veld voor selecteren toegevoegd voor het gegevenstype `Date&Time` om onderscheid te maken tussen opties `Date` en `Date&Time`.
 
 * `datevaluefield`
 
-   Hiermee wordt een datepicker toegevoegd aan de eigenschappen, zodat een gebruiker een standaardwaarde voor het `Date&Time` gegevenstype kan selecteren.
+   Hiermee wordt een datepicker toegevoegd aan de eigenschappen, zodat een gebruiker een standaardwaarde voor het gegevenstype `Date&Time` kan selecteren.
 
 * `descriptionfield`
 
@@ -195,74 +195,74 @@ De configuratie-eigenschappen voor elk gegevenstype. Waarden voor `fieldProperti
 
 * `labelfield`
 
-   Component die een `textfield` invoer toevoegt die het gebiedslabel voor een gegevenstype toevoegt dat gebiedslabels kan hebben.
+   Component die een `textfield`-invoer toevoegt die het veldlabel toevoegt voor een gegevenstype dat veldlabels kan hebben.
 
 * `maptopropertyfield`
 
-   Deze component voegt het `Name` veld in de eigenschappen toe en geeft een id aan de geselecteerde component van een gegevenstype. Het zou in alle gegevenstypes aanwezig moeten zijn.
+   Deze component voegt het veld `Name` in de eigenschappen toe en geeft een id aan de geselecteerde component van een gegevenstype. Het zou in alle gegevenstypes aanwezig moeten zijn.
 
 * `maxlengthfield`
 
-   Het wordt gebruikt om het `maxLength` bezit voor gebruik met gegevenstypes toe te voegen die dit bezit goedkeuren. Bijvoorbeeld met tekst **van**&#x200B;één regel, **Aantal**, enz.
+   Het wordt gebruikt om het `maxLength` bezit voor gebruik met gegevenstypes toe te voegen die dit bezit goedkeuren. Bijvoorbeeld met **Tekst met één regel**, **Number**, enz.
 
 * `multieditorfield`
 
-   Hiermee voegt u alle verborgen velden toe die de editor met meerdere regels nodig heeft om te werken. Dit wordt aangegeven met het gegevenstype Tekst **met** meerdere regels.
+   Hiermee voegt u alle verborgen velden toe die de editor met meerdere regels nodig heeft om te werken. Dit wordt aangegeven met het gegevenstype **Meerdere regels tekst**.
 
 * `mvfields`
 
-   Component die alle verborgen velden toevoegt die nodig zijn voor een component met meerdere velden. Bijvoorbeeld voor de tweede optie van een gegevenstype **Enkele regel** . Dit moet worden toegevoegd voor elke component die wordt gerenderd als een multifield.
+   Component die alle verborgen velden toevoegt die nodig zijn voor een component met meerdere velden. Bijvoorbeeld voor de tweede optie van een **gegevenstype Enkele regel**. Dit moet worden toegevoegd voor elke component die wordt gerenderd als een multifield.
 
 * `numbertypefield`
 
-   Selecteer een optie voor het gegevenstype **Number** waarmee u tussen **Geheel** of **Breedte** voor het gegevenstype **Number** selecteert.
+   Selecteer een optie voor het gegevenstype **Number** die tussen **Integer** of **Fraction** voor het gegevenstype **Number** selecteert.
 
 * `numbervaluefield`
 
-   Een `numberfield` standaardwaardeselector voor het **Aantal** voegt dit de optiesinput voor het gegevenstype van de `type.options` Opsomming **** toe, die wordt gebruikt om de waarden voor de uitgezochte vakcomponent te bepalen.
+   Een `numberfield` standaardwaardeselector voor **Number** `type.options` Hiermee voegt u de optiesinvoer toe voor het gegevenstype **Opsomming**, dat wordt gebruikt om de waarden voor de component selectBox te bepalen.
 
 * `placeholderfield`
 
-   Dit is een tekstveld dat fungeert als invoer voor de `emptyText` eigenschap van een component. Dit zou door alle gegevenstypes moeten worden gebruikt die placeholder (dat niet zeer ingewikkeld is; bijv. tekst **met**&#x200B;één regel, **nummer**, enz.).
+   Dit is een tekstveld dat fungeert als invoer voor de eigenschap `emptyText` van een component. Dit zou door alle gegevenstypes moeten worden gebruikt die placeholder (dat niet zeer ingewikkeld is; bijv. **Tekst met één regel**, **Number**, enz.).
 
 * `renderasfield`
 
-   Dit is de component die automatisch wordt teruggegeven wanneer verscheidene in het bezit van de knoop van het gegevenstype aanwezig `fieldResourceTypes` zijn.
+   Dit is de component die automatisch wordt teruggegeven wanneer verscheidene `fieldResourceTypes` in het bezit van de knoop van het gegevenstype aanwezig zijn.
 
 * `requiredfield`
 
-   Dit is een selectievakje dat de `required` eigenschap voor een component vertegenwoordigt. Omdat de meeste componenten het `required` gebied goedkeuren, kan dit gebied voor de meeste gegevenstypes worden gebruikt.
+   Dit is een selectievakje dat de eigenschap `required` voor een component vertegenwoordigt. Omdat de meeste componenten het `required` gebied goedkeuren, kan dit gebied voor de meeste gegevenstypes worden gebruikt.
 
 * `tagsfields`
 
-   Componenten die de vereiste invoer toevoegen voor een `tagfield` component die moet worden gerenderd. Deze worden gebruikt door het gegevenstype **Codes** .
+   Componenten die de inputs toevoegen die nodig zijn voor het renderen van een `tagfield`-component. Deze worden gebruikt door het gegevenstype **Tags**.
 
 * `tagsroot`
 
-   Een padkiezer die door het gegevenstype **Tags** wordt gebruikt om het hoofdpad voor de `tagsfield` component in te stellen.
+   Een padkiezer die door het gegevenstype **Tags** wordt gebruikt om het hoofdpad voor de component `tagsfield` in te stellen.
 
 * `textfield`
 
-   Wordt gebruikt door het `Boolean` gegevenstype om het veldlabel in te stellen van het selectievakje dat door dit gegevenstype wordt gedefinieerd.
+   Wordt gebruikt door het gegevenstype `Boolean` om het veldlabel in te stellen van het selectievakje dat door dit gegevenstype wordt gedefinieerd.
 
 * `textvaluefield`
 
-   De standaardwaarde voor het gegevenstype **Single Line Text** .
+   De standaardwaarde voor het gegevenstype **Enkele regel tekst**.
 
-## Uw gegevenstype maken {#creating-your-data-type}
+## Uw gegevenstype {#creating-your-data-type} maken
 
 Als u uw eigen gegevenstype wilt maken, moet u:
 
 * [De knooppuntstructuur maken](#creating-the-node-structure)
 * [Definieer de eigenschappen voor uw gegevenstype](#defining-the-properties-for-your-data-type)
 
-Vervolgens kunt u het gegevenstype [](#using-your-data-type)gebruiken.
+U kunt dan [uw gegevenstype ](#using-your-data-type) gebruiken.
 
-U kunt ook uw eigen [ontwerp maken `fieldProperties`](#creating-your-own-fieldproperties-property).
+U kunt ook [uw eigen `fieldProperties`](#creating-your-own-fieldproperties-property) maken.
 
-### De knooppuntstructuur maken {#creating-the-node-structure}
+### De knooppuntstructuur {#creating-the-node-structure} maken
 
-De knoopstructuur moet onder worden gecreeerd `/apps` om de gegevenstypes te bedekken. Als dit nog niet het geval is, moet u het volgende maken:
+De knoopstructuur moet onder `/apps` worden gecreeerd om de gegevenstypes te bedekken. Als dit nog niet het geval is, moet u het volgende maken:
 
 1. Als dit nog niet het geval is, moet u het volgende maken:
 
@@ -283,32 +283,32 @@ De knoopstructuur moet onder worden gecreeerd `/apps` om de gegevenstypes te bed
    >
    >`/cfm/models/formbuilderconfig/datatypes/items` Mogelijk moet u met de opgegeven nodetypes maken.
 
-1. Onder `/items` kunt u nieuwe knooppunten toevoegen die uw nieuwe gegevenstype(en) vertegenwoordigen:
+1. Onder `/items` kunt u een of meer nieuwe knooppunten toevoegen die uw nieuwe gegevenstype(en) vertegenwoordigen:
 
    * Type knooppunt: `nt:unstructured`
-   * &quot;Eigenschappen: zie de Eigenschappen [bepalen voor uw Type van Gegevens](#defining-the-properties-for-your-data-type)
+   * &quot;Eigenschappen: zie [Eigenschappen voor uw Type van Gegevens bepalen](#defining-the-properties-for-your-data-type)
 
 ### Eigenschappen definiëren voor uw gegevenstype {#defining-the-properties-for-your-data-type}
 
-1. Bepaal waarden voor de volgende [eigenschappen](#data-type-properties) van het gegevenstype die voor uw gegevenstype worden vereist:
+1. Bepaal waarden voor de volgende [eigenschappen van het gegevenstype](#data-type-properties) die voor uw gegevenstype worden vereist:
 
    * `fieldResourceType`
    * `fieldPropResourceType`
    * `fieldViewResourceType`
 
-   Deze bepalen hoe de componenten voor uw gegevenstype zullen worden teruggegeven. Zij kunnen elke component zijn; inclusief uw eigen aangepaste componenten (hiervoor is een overeenkomende set ` [fieldProperties](#fieldproperties)`nodig).
+   Deze bepalen hoe de componenten voor uw gegevenstype zullen worden teruggegeven. Zij kunnen elke component zijn; inclusief uw eigen aangepaste componenten (u hebt een overeenkomende set ` [fieldProperties](#fieldproperties)` nodig).
 
    Definieer deze eigenschappen met de juiste waarden op het knooppunt voor het gegevenstype.
 
-1. Bepaal de ` [fieldProperties](#fieldproperties)` te gebruiken waarde. Dit is afhankelijk van de kenmerken of eigenschappen die u `fieldResourceType` nodig hebt.
+1. Bepaal de ` [fieldProperties](#fieldproperties)` die moet worden gebruikt. Dit is afhankelijk van de kenmerken of eigenschappen die uw `fieldResourceType` nodig heeft.
 
-   Een `granite/ui/components/coral/foundation/form/textfield`label moet bijvoorbeeld een **labelnaam**, een **maximumlengte**, een **plaatsaanduidingstekst** en een eigenschap **Standaardwaarde** hebben.
+   Een `granite/ui/components/coral/foundation/form/textfield`moet bijvoorbeeld een **Labelnaam**, een **Maximale lengte**, een **Plaatsaanduidingstekst** en een **Standaardwaarde**-eigenschap hebben.
 
-   U kunt een optie kiezen in het vak [fieldProperties](#fieldproperties)of u kunt uw eigen eigenschappen [](#creating-your-own-fieldproperties-property)maken.
+   U kunt kiezen uit de uit-van-de-doos [fieldProperties](#fieldproperties), of [creeer uw eigen eigenschappen](#creating-your-own-fieldproperties-property).
 
    Definieer deze eigenschappen met de juiste waarden op het knooppunt voor het gegevenstype.
 
-1. Bepaal waarden voor de volgende [eigenschappen](#data-type-properties)van het gegevenstype:
+1. Bepaal waarden voor de volgende [eigenschappen van het gegevenstype](#data-type-properties):
 
    * `fieldIcon`
    * `fieldTitle`
@@ -318,13 +318,13 @@ De knoopstructuur moet onder worden gecreeerd `/apps` om de gegevenstypes te bed
 
    Definieer deze eigenschappen met de juiste waarden op het knooppunt voor het gegevenstype.
 
-### Het gegevenstype gebruiken {#using-your-data-type}
+### Het gebruiken van uw Type van Gegevens {#using-your-data-type}
 
 Nadat u deze knoopstructuur, met alle toegepaste eigenschappen opslaat, kunt u om het even welk model met de modelredacteur openen en, uw nieuw gegevenstype zien en gebruiken.
 
 ## Uw eigen eigenschap fieldProperties maken {#creating-your-own-fieldproperties-property}
 
-U kunt uit uit-van-de-doos [fieldProperties](#fieldproperties)kiezen, of uw creëren:
+U kunt kiezen uit de uit-van-de-doos [fieldProperties](#fieldproperties), of uw creëren:
 
 1. Een component maken onder:
 
