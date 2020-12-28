@@ -22,11 +22,11 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 >[!CAUTION]
 >
->Bestaande klanten van AEM Mobile Apps die van AEM 6.2 of 6.3 aan AEM 6.4 migreren kunnen AEM Mobile Apps blijven gebruiken door een [pakket van PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package)te downloaden. Nieuwe installaties van AEM 6.4 bieden echter geen ondersteuning voor de functionaliteit van AEM Mobile Apps.
+>Bestaande klanten van AEM Mobile Apps die van AEM 6.2 of 6.3 aan AEM 6.4 migreren kunnen AEM Mobile Apps blijven gebruiken door een [pakket van PackageShare](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/compatpack/aem-mobile-package) te downloaden. Nieuwe installaties van AEM 6.4 bieden echter geen ondersteuning voor de functionaliteit van AEM Mobile Apps.
 
 Adobe Experience Manager (AEM) Mobile maakt deel uit van het Adobe Experience Manager multi-channel digitale platform dat ook gebruikmaakt van AEM Assets, Sites, Screens, Workflow, User Manager, Commerce en Forms. AEM Mobile biedt een opmerkelijke implementatieflexibiliteit, waardoor bedrijven verschillende inhoudsbronnen kunnen gebruiken.
 
@@ -38,4 +38,4 @@ AEM Mobile biedt meerdere methoden voor het maken van apps. De drie verschillend
 
 >[!NOTE]
 >
->Als u nog geen ervaring hebt met Adobe Experience Manager, kunt u [Aan de slag gaan met AEM](/help/sites-deploying/deploy.md).
+>Als u nieuw bent aan Adobe Experience Manager, kunt u door [Aan de slag met AEM](/help/sites-deploying/deploy.md) willen lopen.
