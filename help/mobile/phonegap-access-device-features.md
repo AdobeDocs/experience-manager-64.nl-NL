@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# Apparaatfuncties openen{#access-device-features}
+# Functies van toegangsapparaat{#access-device-features}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-## AEM maken voor toegang tot apparaatfuncties {#building-aem-components-that-access-device-features}
+## AEM componenten bouwen die tot apparateneigenschappen {#building-aem-components-that-access-device-features} toegang hebben
 
-De [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github-opslagplaats biedt ontwikkelaars een functionele AEM app die het gebruik van een aantal core Cordova API&#39;s illustreert. Wanneer de app wordt uitgevoerd op iOS of Android via de PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
+De opbergplaats [AEM PhoneGap Kitchen Sink](https://github.com/blefebvre/aem-phonegap-kitchen-sink) Github verstrekt ontwikkelaars van een functionele AEM app die het gebruik van een aantal kernCordova APIs illustreert. Wanneer de app wordt uitgevoerd op iOS of Android via de PhoneGap CLI, wordt de app geopend op de volgende pagina die een koppeling bevat naar elke apparaat-API die wordt gedemonstreerd:
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
 De broncode voor elk van deze apparaat-API-componenten is [beschikbaar op Github](https://github.com/blefebvre/aem-phonegap-kitchen-sink/tree/master/content/src/main/content/jcr_root/apps/brucelefebvre/kitchen-sink/components).
 
-Voor meer informatie over het gebruik van elke API, adviseer ik een blik bij de [Cordova- plugin documentatie](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html)nemen.
+Voor meer informatie over het gebruik van elke API, adviseer ik een blik bij de [Cordova plugin documentatie](https://docs.phonegap.com/en/4.0.0/cordova_plugins_pluginapis.md.html) nemen.
 
 ## De volgende stappen {#the-next-steps}
 
