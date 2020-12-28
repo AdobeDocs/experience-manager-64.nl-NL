@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Banners beheren{#managing-banners}
+# Banners{#managing-banners} beheren
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
@@ -43,20 +43,20 @@ Banners vertegenwoordigen doorgaans grafische promotionele koppelingen.
 
 
 
-## Een banner maken {#creating-a-banner}
+## Banner {#creating-a-banner} maken
 
 De algemene workflow voor het maken van een artikel is als volgt:
 
 1. Selecteer **Mobiel** van de zijspoorstaaf.
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl-omlaag in de rechterbovenhoek van het element Banners **** beheren.
+1. Klik op de pijl-omlaag in de rechterbovenhoek van de tegel **Banners beheren**.
 1. Werk door elke stap van de wizard om door te gaan met het maken van uw nieuwe banner.
 1. Klik op **Maken** als u klaar bent.
-1. De nieuwe banner wordt weergegeven in de tegel **Banners** beheren.
+1. Uw nieuwe banner wordt weergegeven in de tegel **Banners beheren**.
 
 ![chlimage_1-6](assets/chlimage_1-6.gif)
 
-## Een nieuwe banner importeren {#importing-a-new-banner}
+## Een nieuwe banner {#importing-a-new-banner} importeren
 
 Bestaande mobiele on-demand-inhoud kan worden gedownload (geïmporteerd) van Mobile On-Demand naar AEM. Zo kunt u lokale inhoud bewerken en weergeven.
 
@@ -67,15 +67,15 @@ Bestaande mobiele on-demand-inhoud kan worden gedownload (geïmporteerd) van Mob
 De workflow voor het importeren van een nieuw artikel
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl-omlaag in de rechterbovenhoek van het element Banners **** beheren en selecteer Banners importeren.
-1. Klik op Banner **** importeren in het dialoogvenster en vervolgens op Sluiten.
-1. Uw mobiele On-Demand-artikelen worden nu weergegeven in de tegel **Banners** beheren.
+1. Klik op de pijl-omlaag in de rechterbovenhoek van de tegel **Banners beheren** en selecteer Banners importeren.
+1. Klik op **Banner importeren** in het dialoogvenster en vervolgens op Sluiten.
+1. Uw mobiele On-Demand-artikelen worden nu weergegeven in de tegel **Banners beheren**.
 
 >[!CAUTION]
 >
 >U moet eerst een mobiele On-Demand-verbinding koppelen.
 
-## Een banner bewerken {#editing-a-banner}
+## Een banner {#editing-a-banner} bewerken
 
 Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen of wijzigen. Componenten zoals tekst en afbeeldingen kunnen worden toegevoegd of verwijderd. U kunt afbeeldingen van DAM-middelen invoegen.
 
@@ -97,39 +97,39 @@ Banners hebben talrijke eigenschappen, zoals titels, beschrijvingen en afbeeldin
 De algemene workflow voor het weergeven/bewerken van een artikel:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Kies een banner in de tegel **Banners** beheren.
+1. Kies een banner in de tegel **Banners beheren**.
 
-1. Selecteer **Eigenschappen** op de actiebalk.
+1. Selecteer **Eigenschappen** in de actiebalk.
 1. Alle beschikbare metagegevens voor dat artikel weergeven.
 1. Bewerk desgewenst de metagegevens en klik op **Opslaan** als u klaar bent.
 1. U kunt de wijzigingen desgewenst direct uploaden naar Mobiel op aanvraag.
 
-## Een banner uploaden {#uploading-a-banner}
+## Een banner {#uploading-a-banner} uploaden
 
 De uploadactie kopieert de geselecteerde inhoud en voegt het aan een Mobiel project op bestelling toe. Bestaande mobiele on-demand-inhoud wordt vervangen door de nieuwe versie.
 
 De algemene workflow voor het uploaden van een banner:
 
-1. Kies vanuit **Mobiel** uw Mobile On-Demand-app in de catalogus.
-1. Selecteer in het element Banners **** beheren een banner die u wilt uploaden naar Mobiel op aanvraag.
-1. Voeg zo nodig meer banners toe in de lijstweergave.
-1. Selecteer **Uploaden** in de actiebalk en klik vervolgens op Uploaden in het dialoogvenster.
+1. Kies vanuit **Mobiel** uw mobiele On-Demand-app in de catalogus.
+1. Selecteer in de tegel **Banners beheren** een banner om te uploaden naar mobiele on-demand.
+1. Voeg desgewenst meer banners toe in de lijstweergave.
+1. Selecteer **Upload** van de actiebar, dan klik uploaden in de dialoog.
 1. Uw banner(s) worden nu geüpload naar Mobile On-Demand.
 
 ![chlimage_1-7](assets/chlimage_1-7.gif)
 
-## Een banner verwijderen {#deleting-a-banner}
+## Een banner {#deleting-a-banner} verwijderen
 
 Met deze bewerking verwijdert u de geselecteerde banner van Mobiel op aanvraag en optioneel van de lokale AEM.
 
 De algemene workflow voor het verwijderen van een banner:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer de banner die u wilt verwijderen in de tegel **Banners** beheren.
+1. Selecteer de banner die u wilt verwijderen in de tegel **Banners beheren**.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
-1. Klik op **Verwijderen** op de actiebalk.
+1. Klik **Verwijderen** op de actiebalk.
 1. Controleer of u niet alleen mobiele apparaten op aanvraag maar ook AEM wilt verwijderen.
-1. Click **Delete**.
+1. Klik **Delete**.
 1. Uw banner is nu verwijderd uit de lijst.
 
 ### De volgende stappen {#the-next-steps}
