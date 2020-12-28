@@ -15,7 +15,7 @@ ht-degree: 1%
 ---
 
 
-# AEM 6.4 Gebruikershandleiding implementeren {#deploying}
+# AEM 6.4 Handboek {#deploying} implementeren
 
 + [Gebruikershandleiding implementeren](home.md)
 + Inleiding tot het AEM Platform {#introduction}
@@ -23,7 +23,7 @@ ht-degree: 1%
    + [Technische vereisten](technical-requirements.md)
    + [Opslagelementen in AEM 6.4](storage-elements-in-aem-6.md)
    + [AEM met MongoDB](aem-with-mongodb.md)
-+ AEM implementeren {#deploying}
++ AEM {#deploying} implementeren
    + [Implementeren en onderhouden](deploy.md)
    + [Aanbevolen implementaties](recommended-deploys.md)
    + [Installeren van toepassingsserver](application-server-install.md)
@@ -39,7 +39,7 @@ ht-degree: 1%
    + [Probleemoplossing voor Oak-indexen](troubleshooting-oak-indexes.md)
    + [Opteren in verzameling van samengevoegde verbruiksstatistieken](opt-in-aggregated-usage-statistics.md)
    + [Problemen oplossen](troubleshooting.md)
-+ AEM configureren {#configuring}
++ AEM {#configuring} configureren
    + [Basisconfiguratieconcepten](configuring.md)
    + [Logboekregistratie](configure-logging.md)
    + [OSGi configureren](configuring-osgi.md)
@@ -63,7 +63,7 @@ ht-degree: 1%
    + [Hoe kan ik-artikelen configureren](ht-deploy.md)
    + [De sites van de Geometrixx verwijderen](removing-the-geometrixx-sites.md)
    + [Webconsole configureren](configuring-web-console.md)
-+ Upgrade naar AEM 6.4 {#upgrading}
++ Upgrade uitvoeren naar AEM 6.4 {#upgrading}
    + [Upgrade naar AEM 6.4](upgrade.md)
    + [Uw upgrade plannen](upgrade-planning.md)
    + [De complexiteit van upgrades beoordelen met de patroondetector](pattern-detector.md)
@@ -80,12 +80,12 @@ ht-degree: 1%
    + [Code en aanpassingen bijwerken](upgrading-code-and-customizations.md)
    + [Upgradestappen voor installatie van toepassingsservers](app-server-upgrade.md)
    + [Lijst met verouderde bundels die na de upgrade zijn verwijderd](obsolete-bundles.md)
-+ Repositoregeling {#restructuring}
++ Herstructurering van de opslagplaats {#restructuring}
    + [Herstructurering van de depositaris in AEM 6.4](repository-restructuring.md)
    + [Herstructurering van de gemeenschappelijke opslagplaats in AEM 6.4](all-repository-restructuring-in-aem-6-4.md)
    + [Sites Repositoregeling Herstructurering AEM 6.4](sites-repository-restructuring-in-aem-6-4.md)
    + [Herstructurering van activa Bewaarinstelling in AEM 6.4](assets-repository-restructuring-in-aem-6-4.md)
-   + [Dynamic Media Repository Herstructurering in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
+   + [Dynamic Media Repositoregeling Herstructurering in AEM 6.4](dynamicmedia-repository-restructuring-in-aem-6-4.md)
    + [Forms Repositoregeling Herstructurering in AEM 6.4](forms-repository-restructuring-in-aem-6-4.md)
    + [Herstructurering van de opslagplaats voor elektronische handel in AEM 6.4](ecommerce-repository-restructuring-in-aem-6-4.md)
    + [Repositoregeling voor de herstructurering van AEM Communities in punt 6.4](communities-repository-restructuring-in-aem-6-4.md)
