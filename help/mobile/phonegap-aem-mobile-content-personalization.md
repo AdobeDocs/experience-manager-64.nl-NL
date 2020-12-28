@@ -18,37 +18,37 @@ ht-degree: 0%
 ---
 
 
-# AEM Mobile-inhoud aanpassen{#aem-mobile-content-personalization}
+# AEM Mobile content personalization{#aem-mobile-content-personalization}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 >[!NOTE]
 >
->Dit document maakt deel uit van de [Aan de slag met de AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, een aanbevolen startpunt voor AEM Mobile-referentie.
+>Dit document maakt deel uit van de [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md) Guide, een aanbevolen startpunt voor AEM Mobile-referentie.
 
 Met de AEM Mobile-functie voor het aanpassen van inhoud kunnen [AEM-auteurs](#author) inhoud van mobiele apps aanpassen door gebruik te maken van [Adobe Target](https://www.adobe.com/ca/marketing-cloud/testing-targeting.html). Hierdoor kunnen gebruikers van mobiele toepassingen gerichte aanbiedingen ontvangen. Adobe Experience Manager Mobile biedt de mogelijkheid om inhoud te maken, als doel in te stellen en te leveren die de gebruiker inhoud biedt die specifiek is voor zijn of haar eigen smaak.
 
 Zoals vaak het geval AEM, moeten beheerders en ontwikkelaars eerst de omgeving voorbereiden voordat auteurs deze inhoud kunnen gaan maken.
 
-[AEM beheerders](#administrator) moeten een verbinding tot stand brengen tussen AEM Mobile en de Adobe Target Cloud Service.
+[AEM ](#administrator) overheden moeten een verbinding tot stand brengen tussen AEM Mobile en de Adobe Target-Cloud Service.
 
-Ondertussen moeten AEM Mobile- [ontwikkelaars](#developer) hun bestaande scripts aanpassen om het maken van doelgerichte inhoud te vergemakkelijken.
+Ondertussen moeten AEM Mobile [developers](#developer) hun bestaande scripts aanpassen om het maken van doelgerichte inhoud te vergemakkelijken.
 
 ## Voor beheerders {#for-administrators}
 
 Er zijn een aantal stappen die moeten worden samengevoegd voordat auteurs van inhoud gerichte inhoud kunnen gaan genereren voor mobiele apps: Er is de juiste set machtigingen voor gebruikers en groepen, het maken van cloudservices, het configureren van de toepassing voor de activiteit en het genereren van de inhoud.
 
-Dit artikel zal u door het proces begeleiden dat wordt gebruikt om de Hybride Toepassing [van de Verwijzing van](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) AEM Mobile voor het richten te vormen.
+Dit artikel zal u door het proces begeleiden dat wordt gebruikt om [AEM Mobile Hybride Toepassing van de Verwijzing ](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) voor het richten te vormen.
 
 De aanname is dat de Hybride Reference Application van AEM Mobile met succes is geïmplementeerd en toegankelijk via het AEM Mobile-dashboard.
 
-Voordat auteurs gerichte inhoud binnen een toepassing kunnen genereren, moet uw AEM zijn [geconfigureerd met de Adobe Target-Cloud Service.](/help/mobile/aem-mobile-configuring-cloud-service.md)
+Voordat auteurs gerichte inhoud kunnen genereren binnen een toepassing, moet uw AEM instantie [geconfigureerd zijn met de Adobe Target-Cloud Service.](/help/mobile/aem-mobile-configuring-cloud-service.md)
 
 ### Machtigingen {#permissions}
 
-De gebruikers die toegang tot de verpersoonlijkingsconsole nodig hebben moeten deel van de `target-activity-authors` groep uitmaken.
+Gebruikers die toegang tot de verpersoonlijkingsconsole nodig hebben, moeten deel uitmaken van de `target-activity-authors`-groep.
 
 Voorgesteld wordt dat als onderdeel van de gebruikersinstellingen en groepsinstellingen de doelgroep-activiteit-groep moet worden toegevoegd aan de groep met apps-beheerders. Door de doel-activiteit-auteursgroep toe te voegen zal dit gebruikers capaciteit toestaan om de ingang van het menu van de Navigatie van de Aanpassing te zien.
 
@@ -108,13 +108,13 @@ Als u terugkeert naar het mobiele dashboard, bevat de titel Cloud Services beher
 
 ## Voor auteurs {#for-authors}
 
-**Vereiste:** Zoals hierboven vermeld, moeten beheerders de verbinding met de Adobe Target Service configureren voordat auteurs nieuwe, doelinhoud kunnen genereren.
+**Vereiste:** Zoals hierboven vermeld, moeten beheerders de verbinding met de Adobe Target-service configureren voordat auteurs nieuwe, doelinhoud kunnen genereren.
 
 Nadat de beheerder de twee cloudservices heeft geconfigureerd en de ontwikkelaar de handler mobileappoffers heeft geconfigureerd, kunnen auteurs van inhoud nu gerichte ervaringen genereren.
 
 Voor het ontwerpen van doelgerichte inhoud in een AEM Mobile-app wordt een vergelijkbare procedure gevolgd als voor het ontwerpen van AEM Sites:
 
-Hier vindt u een volledig overzicht van [doelgerichte inhoud ontwerpen in AEM](/help/sites-authoring/personalization.md)
+Zie hier voor een volledig overzicht op [Doelinhoud ontwerpen in AEM](/help/sites-authoring/personalization.md)
 
 ## Voor ontwikkelaars {#for-developers}
 
@@ -122,9 +122,9 @@ AEM ontwikkelaars die mobiele toepassingen bouwen zouden de patronen moeten blij
 
 ### Adobe Target ContentSync Handlers {#adobe-target-contentsync-handlers}
 
-Om inhoud aan de het apparateninhoud van de gebruiker te leveren wordt geproduceerd door de aanbiedingen terug te geven die door AEM inhoudsauteurs worden gecreeerd. Voor het afhandelen van de rendering van doelaanbiedingen is er een nieuwe handler voor inhoudssynchronisatie die de aanbiedingen verwerkt. Als u de Hybride Reference Application als voorbeeld gebruikt, bevat het en-inhoudspakket (english) de ContentSyncConfig met een [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) -handler. De volgende stap is van cruciaal belang voor het renderen van aanbiedingen voor het apparaat. De handler mobileappoffers heeft een padeigenschap die het pad naar de personalisatieactiviteit aangeeft die voor de toepassing moet worden gebruikt.
+Om inhoud aan de het apparateninhoud van de gebruiker te leveren wordt geproduceerd door de aanbiedingen terug te geven die door AEM inhoudsauteurs worden gecreeerd. Voor het afhandelen van de rendering van doelaanbiedingen is er een nieuwe handler voor inhoudssynchronisatie die de aanbiedingen verwerkt. Gebruikend de Hybride Toepassing van de Verwijzing als onze steekproef, bevat het en (Engelse) inhoudspakket ContentSyncConfig met een [mobileappoffers](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference/blob/master/aem-package/content-author/src/main/content/jcr_root/content/mobileapps/hybrid-reference-app/en/_jcr_content/pge-app/app-config-dev/targetOffers/.content.xml) manager. De volgende stap is van cruciaal belang voor het renderen van aanbiedingen voor het apparaat. De handler mobileappoffers heeft een padeigenschap die het pad naar de personalisatieactiviteit aangeeft die voor de toepassing moet worden gebruikt.
 
-Als er bijvoorbeeld een activiteit is die zich bevindt op */content/campagnes/hybridref* , kopieert u dit pad en plakt u het als de waarde naar de eigenschap *path* van de handler mobileappoffers.
+Als er bijvoorbeeld een activiteit is die zich op */content/campagnes/hybridref* bevindt, kopieert u dit pad en plakt u het als de waarde naar de eigenschap *path* van de handler mobileappoffers.
 
 >[!NOTE]
 >
@@ -134,11 +134,11 @@ Zodra de activiteitenweg in het de wegbezit van de mobileappoffers manager is ge
 
 ### Rendermodus {#render-mode}
 
-De handler mobileappoffers is anders geconfigureerd voor publicatie- en ontwikkelinstellingen. Voor publicatie-instellingen is er een eigenschap met de naam *renderMode* , waarbij de waarde *publish* is ingesteld op het knooppunt cq:ContentSyncConfig. De handler mobileappoffers verwijst naar de renderMode en zal, indien ingesteld op publiceren, de id van het mbox wijzigen die wordt gemaakt. Standaard wordt in vakken die AEM maakt, een waarde —auteur toegevoegd aan de id van het mbox. Hieruit blijkt dat de activiteit niet is gepubliceerd en de niet-gepubliceerde campagne voor het indienen van voorstellen moet gebruiken.
+De handler mobileappoffers is anders geconfigureerd voor publicatie- en ontwikkelinstellingen. Voor publicatie-instellingen is er een eigenschap met de naam *renderMode*, met de waarde *publish* ingesteld op het knooppunt cq:ContentSyncConfig. De handler mobileappoffers verwijst naar de renderMode en zal, indien ingesteld op publiceren, de id van het mbox wijzigen die wordt gemaakt. Standaard wordt in vakken die AEM maakt, een waarde —auteur toegevoegd aan de id van het mbox. Hieruit blijkt dat de activiteit niet is gepubliceerd en de niet-gepubliceerde campagne voor het indienen van voorstellen moet gebruiken.
 
 Wanneer inhoud wordt gefaseerd via het mobiele dashboard van Adobe, wordt gefaseerde inhoud beschouwd als inhoud die klaar is voor productie en wordt deze weergegeven via de niet-dev Content Sync Config. Als u deze manier weergeeft, wordt de auteur —verwijderd van alle id&#39;s van het selectievakje en wordt verwacht dat een gepubliceerde activiteit beschikbaar is op de doelserver. Controleer voordat u inhoud met werkgebied test of de activiteit is gepubliceerd.
 
-### Ontwikkeling van apps voor persoonlijke instellingen {#personalization-app-development}
+### Ontwikkeling van apps voor personalisatie {#personalization-app-development}
 
 #### Onderdelen {#components}
 
@@ -164,7 +164,7 @@ Om de auteur de capaciteit te verstrekken om hun inhoud te richten moet het doel
 
 Om auteurs de mogelijkheid te bieden de beoogde inhoud voor te vertonen, moet de editor de configuratie van de Adobe Target-cloudservice kunnen vinden. In het codeblok hieronder worden twee belangrijke scripts toegevoegd. De eerste die de capaciteit voor de pagina toevoegt om van de bijbehorende de wolkendienst van het Doel de plaats te bepalen en de vraag te maken aan Adobe Target. De tweede is de toevoeging van de categorie cq.apps.targeting.
 
-De categorie **cq.apps.targeting** overschrijft de standaard-cq/personalization/component/target-component en gebruikt de mobiele apps/componenten/target-component die aanbiedingen specifiek rendert voor gebruik door mobiele toepassingen. Meer details van dit zullen in de sectie van de Component van het Doel worden besproken.
+De categorie **cq.apps.targeting** negeert de standaardcomponent cq/personalization/component/target en gebruikt de mobiele apps/componenten/doelcomponent die specifiek voor mobiel toepassingsverbruik worden aangeboden. Meer details van dit zullen in de sectie van de Component van het Doel worden besproken.
 
 De code moet worden toegevoegd in head.html en vlak voor het einde van het &lt;/head>-element worden geplaatst.
 
@@ -197,9 +197,9 @@ Het laatste vereiste beetje van code is bij de zeer bodem van body.html. Met dez
 </div>
 ```
 
-### Referentietoepassing {#reference-application}
+### Referentie-toepassing {#reference-application}
 
-De voorbeelden van head.html en body.html kunnen in de Hybride Toepassing [van de Verwijzing van](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) AEM Mobile worden gevonden die de ontwikkelaar toont waar te om de manuscriptblokken binnen de twee manuscripten te plaatsen.
+De voorbeelden van head.html en body.html kunnen in [AEM Mobile Hybride Toepassing van de Verwijzing](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) worden gevonden die de ontwikkelaar toont waar te om de manuscriptblokken binnen de twee manuscripten te plaatsen.
 
 ### Handlers voor inhoudssynchronisatie {#content-sync-handlers}
 
@@ -272,13 +272,13 @@ Wanneer de auteur van de inhoud klaar is met het maken van inhoud voor de mobiel
 
 >[!NOTE]
 >
->De [AEM Mobile Hybrid Reference App](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) heeft de configuratie van de standaard mobileappoffer-handler. De eigenschap path in het voorbeeld is leeg omdat deze afhankelijk is van de locatie van de campagne. Nadat een campagneauteur een Campagne heeft gecreeerd, zou de apps beheerder de Campagne met de manager moeten associëren door het wegbezit te specificeren om aan de Campagne te richten.
+>[AEM Mobile Hybride Referentie App](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) heeft de standaardconfiguratie van de Mobileappoffer-handler. De eigenschap path in het voorbeeld is leeg omdat deze afhankelijk is van de locatie van de campagne. Nadat een campagneauteur een Campagne heeft gecreeerd, zou de apps beheerder de Campagne met de manager moeten associëren door het wegbezit te specificeren om aan de Campagne te richten.
 
 ### Doelcomponent {#target-component}
 
 AEM Mobile gebruikt de mobiele apps/componenten/doelcomponent om inhoud specifiek voor mobiele toepassingen te renderen. De mobiele doelcomponent breidt de cq/personalization/components/target component uit en overschrijft het script engine_tnt.jsp. Door de engine_tnt.jsp te overschrijven, kan AEM Mobile de gegenereerde HTML voor het gebruik van mobiele apps beheren. Voor elke component die door een inhoudauteur wordt gericht, wordt een bijbehorende mbox gecreeerd door engine_tnt.jsp.
 
-Voor elke mbox wordt een attribuut van **cq-gericht** toegevoegd toestaand toepassingsontwikkelaars om douanecode te schrijven aan consumptie en te gebruiken nochtans zij gelieve. De [AEM Mobile Hybrid Reference App](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) heeft een voorbeeld van een hoekige instructie die het kenmerk cq-targeting gebruikt. Het concept van contentvervanging wanneer en hoe dit gebeurt, is in hoge mate aan de ontwikkelaar van de mobiele toepassing. Er is een Mobile SDK die via AEM /etc/clientlibs/mobileapps/js/mobileapps.js wordt geleverd die API verstrekt om de Adobe het richten dienst te roepen. Het is aan de toepassingsontwikkelaar om te specificeren wanneer die vraag volgens het ontwerp van hun toepassing zou moeten worden gemaakt.
+Voor elke mbox wordt een attribuut van **cq-gericht** toegevoegd toelatend toepassingsontwikkelaars om douanecode te schrijven om te verbruiken en te gebruiken nochtans zij gelieve. De [AEM Mobile Hybride Referentie App](https://github.com/Adobe-Marketing-Cloud-Apps/aem-mobile-hybrid-reference) heeft een voorbeeld van een Hoekrichtlijn die het cq-richtende attribuut gebruikt. Het concept van contentvervanging wanneer en hoe dit gebeurt, is in hoge mate aan de ontwikkelaar van de mobiele toepassing. Er is een Mobile SDK die via AEM /etc/clientlibs/mobileapps/js/mobileapps.js wordt geleverd die API verstrekt om de Adobe het richten dienst te roepen. Het is aan de toepassingsontwikkelaar om te specificeren wanneer die vraag volgens het ontwerp van hun toepassing zou moeten worden gemaakt.
 
 ## Wat nu? {#what-s-next}
 
