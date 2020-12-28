@@ -26,16 +26,16 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 >[!NOTE]
 >
->Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie Een actieve kopie [maken voor verschillende kanalen](/help/sites-administering/msm-livecopy.md).)
+>Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [Een actieve kopie maken voor verschillende kanalen](/help/sites-administering/msm-livecopy.md).)
 >
->AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [Apparaatgroepfilters](/help/sites-developing/groupfilters.md)maken.)
+>AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [Apparaatgroepfilters maken](/help/sites-developing/groupfilters.md).)
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
-1. Open vanuit globale navigatie de **Sites** -console.
+1. Open vanuit globale navigatie de **Sites**-console.
 1. Open de pagina **We.Retail** -> **United States** -> **English**.
 
-1. Schakel over naar de modus **Voorvertoning** .
+1. Schakel over naar de modus **Voorvertoning**.
 1. Schakel over naar de gewenste emulator door op het apparaatpictogram boven aan de pagina te klikken.
 1. Sleep componenten van de componentbrowser naar de pagina.
 
