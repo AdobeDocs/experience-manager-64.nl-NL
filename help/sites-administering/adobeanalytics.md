@@ -49,8 +49,8 @@ U kunt de [Opt-in tovenaar](/help/sites-administering/opt-in.md) ook gebruiken o
 
 Zie:
 
-* [De Adobe Analytics-integratie](/help/sites-developing/extending-analytics.md) uitbreiden voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het Adobe Analytics-framework aanpassen.
-* Het kennisbankartikel, integratie van [Adobe Analytics - het oplossen van problemenkwesties](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), voor informatie over het oplossen van problemen uw integratie van Adobe Analytics.
+* [De Adobe Analytics-](/help/sites-developing/extending-analytics.md) integratie uitbreiden voor informatie over het ontwikkelen van componenten die gebruikersgegevens verzamelen en het Adobe Analytics-framework aanpassen.
+* Het kennisbankartikel, [Adobe Analytics-integratie - Problemen oplossen](https://helpx.adobe.com/experience-manager/kb/sitecatalystintegrationtroubleshooting.html), voor informatie over het oplossen van problemen met uw Adobe Analytics-integratie.
 
 >[!NOTE]
 >
@@ -60,7 +60,7 @@ Zie:
    >  bijvoorbeeld [http://localhost:4502/system/console/configMgr/com.day.commons.httpclient](http://localhost:4502/system/console/configMgr/com.day.commons.httpclient)
    >
    >
-* **Apache HTTP Components Proxy Configuration** om de 4.x API te configureren;
+* **Apache HTTP Components Proxy** Configuration om de 4.x API te configureren;
 >
 >  
 bijvoorbeeld [http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator](http://localhost:4502/system/console/configMgr/org.apache.http.proxyconfigurator)
