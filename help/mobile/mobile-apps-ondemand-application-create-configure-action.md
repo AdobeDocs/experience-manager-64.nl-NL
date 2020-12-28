@@ -22,9 +22,9 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-## Een toepassing op aanvraag maken {#creating-an-on-demand-application}
+## Een toepassing {#creating-an-on-demand-application} op aanvraag maken
 
 Het maken van een app is vaak de eerste stap op weg naar het maken en beheren van AEM Mobile On-Demand-inhoud en wordt vaak uitgevoerd op het niveau van de AEM beheerder. Deze vertegenwoordigt een inhoud die op mobiele apparaten kan worden weergegeven en die door de auteur gemaakte inhoud kan weergeven, zoals artikelen, afbeeldingen, verzamelingen, enz.
 
@@ -34,18 +34,18 @@ De details van uw app kunnen worden weergegeven in het dashboard of het AEM Mobi
 >
 >Het dashboard is een reeks handige tegels die een overzicht geven van de inhoud, metagegevens en de verbindingsstatus van AEM Mobile On-Demand van de app.
 >
->Zie het [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
+>Zie [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
 
 **Een app op aanvraag maken:**
 
 1. Selecteer **Mobiel** van de zijspoorstaaf.
-1. Selecteer **Apps** in de Navigatie.
-1. Klik op **Maken** en selecteer **App** in de vervolgkeuzelijst.
-1. Kies de sjabloon voor de mobiele app en klik op **Volgende**.
-1. Voer app-eigenschappen in, zoals **Titel**, **Naam** en **Beschrijving**.
+1. Selecteer **Apps** van de Navigatie.
+1. Klik **Create** en selecteer **App** in de vervolgkeuzelijst.
+1. Kies de Mobile toepassingssjabloon en klik **Next**.
+1. Voer app-eigenschappen in, zoals **Title**, **Name**, **Description**.
 1. Klik op **Next**.
-1. Voer, indien bekend, gegevens in voor de configuratie van de cloud. Klik anders op **Maken**.
-1. Klik op **Gereed** om de nieuwe AEM Mobile-app in de catalogus weer te geven.
+1. Indien bekend, ga wolkenconfiguratiedetails in, anders klik **creëren**.
+1. Klik **Done** om uw nieuwe AEM Mobile-app in de catalogus weer te geven.
 
 ![chlimage_1](assets/chlimage_1.gif)
 
@@ -66,13 +66,13 @@ U moet een bestaande sjabloon voor mobiele apps (of een app met een toepassingss
 
 Wanneer u een On-Demand-app maakt vanaf het dashboard van de toepassing, bestaat de volgende stap uit het koppelen van uw app aan de cloudconfiguratie.
 
-Zie Uw app [koppelen aan de Cloud Configuration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer informatie.
+Zie [Uw app koppelen aan de Cloud Configuration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer informatie.
 
-### Aan de slag {#getting-ahead}
+### Vooruit halen {#getting-ahead}
 
-Als u bekend bent met het maken van een toepassing op aanvraag en deze toepassing zo aan een cloudconfiguratie koppelt, raadpleegt u Handelingen voor [inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Als u vertrouwd bent met het maken van een toepassing op aanvraag en zo die app aan een cloudconfiguratie koppelt, raadpleegt u [Handelingen voor inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
 
-**Voor handelingen** voor contentbeheer worden de volgende inhoud gemaakt en beheerd:
+**Acties voor inhoudsbeheer** hebben betrekking op het maken en beheren van de volgende inhoud:
 
 * [Artikelen beheren](/help/mobile/mobile-on-demand-managing-articles.md)
 * [Banners beheren](/help/mobile/mobile-on-demand-managing-banners.md)
