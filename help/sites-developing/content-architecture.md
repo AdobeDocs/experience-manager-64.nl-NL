@@ -32,25 +32,25 @@ David&#39;s Model werd jaren geleden geschreven door David Nuescheler, maar de i
 * Bestanden zijn bestanden.
 * Id&#39;s zijn slecht.
 
-Het model van David is te vinden op de Jackrabbit wiki op [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
+Het model van David is te vinden op de omslag van het Jasrabbit op [https://wiki.apache.org/jackrabbit/DavidsModel](https://wiki.apache.org/jackrabbit/DavidsModel).
 
 ### Alles is inhoud {#everything-is-content}
 
 Alles moet in de gegevensopslagruimte worden opgeslagen in plaats van te vertrouwen op afzonderlijke gegevensbronnen van derden, zoals databases. Dit geldt voor geschreven inhoud, binaire gegevens zoals afbeeldingen, code, configuraties, enz. Hierdoor kunnen we één set API&#39;s gebruiken om alle inhoud te beheren en de promotie van deze inhoud via replicatie te beheren. We krijgen ook één bron van back-up, registratie, enzovoort.
 
-### Het ontwerpbeginsel &quot;inhoudsmodel eerst&quot; gebruiken {#use-the-content-model-first-design-principle}
+### Het ontwerpprincipe &#39;inhoudsmodel eerst&#39; gebruiken {#use-the-content-model-first-design-principle}
 
-Wanneer u een nieuwe functie maakt, begint u altijd eerst met het ontwerpen van de JCR-inhoudsstructuur. Daarna leest u eerst de inhoud en schrijft u deze met de standaard Sling-servlets. Dit zal u toestaan om ervoor te zorgen dat uw implementatie goed met uit de doos controlemechanismen van de toegangscontrole werkt en u toestaan om het produceren van onnodige CRUD-Stijl servlets te vermijden.
+Wanneer u een nieuwe functie maakt, begint u altijd eerst met het ontwerpen van de JCR-inhoudsstructuur. Daarna leest u de inhoud en schrijft u deze in de standaardservlets. Dit zal u toestaan om ervoor te zorgen dat uw implementatie goed met uit de doos controlemechanismen van de toegangscontrole werkt en u toestaan om het produceren van onnodige CRUD-Stijl servlets te vermijden.
 
-### Wees RESTful {#be-restful}
+### RESTful {#be-restful}
 
 De servers zouden op resourceTypes in plaats van wegen moeten worden bepaald. Dit maakt het mogelijk om de toegangscontroles van het JCR te gebruiken, aan de principes van het REST te houden, en de middel en middeloplosser te gebruiken die aan ons in het verzoek worden verstrekt. Hierdoor kunnen we ook de scripts wijzigen die URL&#39;s renderen aan de serverzijde zonder dat we URL&#39;s hoeven te wijzigen aan de clientzijde, terwijl implementatiedetails aan de serverzijde voor extra beveiliging worden verborgen.
 
-### Nieuwe knooppunttypen niet definiëren {#avoid-defining-new-node-types}
+### Vermijd het definiëren van nieuwe knooppunttypen {#avoid-defining-new-node-types}
 
 De types van knoop werken op een laag niveau in de infrastructuurlaag en de meeste vereisten kunnen worden voldaan door een sling te gebruiken:resourceType dat aan een nt:unStructured, eik:UnStructured, sling:Omslag of cq:het knooppunttype van de Pagina wordt toegewezen. De types van knoop komen aan schema in de bewaarplaats overeen en het veranderen van knooptypes kan zeer duur onderaan de weg zijn.
 
-### Naleving van naamgevingsconventies in het JCR {#adhere-to-naming-conventions-in-the-jcr}
+### Naleving van naamconventies in het JCR {#adhere-to-naming-conventions-in-the-jcr}
 
 Het naleven van noemende overeenkomsten zal consistentie aan uw codebasis toevoegen, verminderend het veelvoud van onvolkomenheden en verhoogt de snelheid van ontwikkelaars die in het systeem werken. Adobe gebruikt de volgende conventies bij het ontwikkelen van AEM:
 
