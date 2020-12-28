@@ -407,7 +407,7 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen. d.w.z. of 
 
    * Zal onmiddellijk effect hebben en is niet omkeerbaar.
 
-      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan gemaakt worden.
+      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan worden gemaakt.
    * Hiermee verwijdert u een afstammeling `LiveRelationships`, zelfs als er `LiveCopies` is genest.
 
 
