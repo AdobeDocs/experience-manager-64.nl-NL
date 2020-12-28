@@ -34,13 +34,13 @@ Wanneer u de workflow toepast, geeft u de volgende informatie op:
 Workflows kunnen worden gestart vanaf:
 
 * de **[Sites](#starting-a-workflow-from-the-sites-console)**-console.
-* bij het bewerken van een pagina, uit **[Pagina-informatie](#starting-a-workflow-from-the-page-editor)**.
+* bij het uitgeven van een pagina, van **[Pagina Informatie](#starting-a-workflow-from-the-page-editor)**.
 
 >[!NOTE]
 >
 >Zie ook:
 >
->* [Hoe te om werkschema&#39;s op activa](/help/assets/assets-workflow.md)toe te passen DAM.
+>* [Hoe te om werkschema&#39;s op activa](/help/assets/assets-workflow.md) toe te passen DAM.
 >* [Werken met projectworkflows](/help/sites-authoring/projects-with-workflows.md).
 
 >
@@ -49,50 +49,50 @@ Workflows kunnen worden gestart vanaf:
 
 >[!NOTE]
 >
->AEM beheerders kunnen workflows [starten met verschillende andere methoden](/help/sites-administering/workflows-starting.md).
+>AEM beheerders kunnen [workflows starten met verschillende andere methoden](/help/sites-administering/workflows-starting.md).
 
 ## Een workflow starten vanuit de siteconsole {#starting-a-workflow-from-the-sites-console}
 
 U kunt een workflow starten vanuit:
 
-* de optie **[Maken](#starting-a-workflow-from-the-sites-toolbar)**van de werkbalk Sites.
-* de **[tijdlijn](#starting-a-workflow-from-the-timeline)**van de Sites-console.
+* de optie **[Maken](#starting-a-workflow-from-the-sites-toolbar)** van de werkbalk Sites.
+* de **[Timeline](#starting-a-workflow-from-the-timeline)** rail van de Sites-console.
 
 In beide gevallen moet u:
 
-* [Geef de workflowdetails op in de wizard](#specifying-workflow-details-in-the-create-workflow-wizard)Workflow maken.
+* [Geef de workflowdetails op in de wizard](#specifying-workflow-details-in-the-create-workflow-wizard) Workflow maken.
 
 ### Een workflow starten op de werkbalk Sites {#starting-a-workflow-from-the-sites-toolbar}
 
-U kunt een workflow starten op de werkbalk van de **Sites** -console:
+U kunt een werkschema van de toolbar van **Sites** console beginnen:
 
 1. Navigeer naar de gewenste pagina en selecteer deze.
 
-1. Met de optie **Maken** op de werkbalk kunt u nu **Workflow** selecteren.
+1. Met de optie **Maken** op de werkbalk kunt u **Workflow** nu selecteren.
 
    ![screen_shot_2019-03-06at121237pm](assets/screen_shot_2019-03-06at121237pm.png)
 
-1. Met de wizard **Workflow** maken kunt u de workflowdetails [opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. Met de wizard **Workflow maken** kunt u [de workflowdetails opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Een workflow starten vanuit de tijdlijn {#starting-a-workflow-from-the-timeline}
 
 Vanuit de **tijdlijn** kunt u een workflow starten die op de geselecteerde bron moet worden toegepast.
 
-1. [Selecteer de bron](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) en open [tijdlijn](/help/sites-authoring/basic-handling.md#timeline) (of open tijdlijn en selecteer de bron).
-1. De pijlpunt door het commentaargebied kan worden gebruikt om het Werkschema **van het** Begin te onthullen:
+1. [Selecteer de ](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources) bron en open  [Tijdlijn](/help/sites-authoring/basic-handling.md#timeline)  (of open Chronologie en selecteer dan de middel).
+1. De pijlpunt door het commentaargebied kan worden gebruikt om **Workflow van het Begin** te openbaren:
 
    ![wf-51](assets/wf-51.png)
 
-1. Met de wizard **Workflow** maken kunt u de workflowdetails [opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
+1. Met de wizard **Workflow maken** kunt u [de workflowdetails opgeven](#specifying-workflow-details-in-the-create-workflow-wizard).
 
 ### Workflowdetails opgeven in de wizard Workflow maken {#specifying-workflow-details-in-the-create-workflow-wizard}
 
-Met de wizard **Workflow** maken kunt u de workflow selecteren en de vereiste details opgeven.
+Met de wizard **Workflow maken** kunt u de workflow selecteren en de vereiste details opgeven.
 
-Nadat u de wizard **Workflow** maken hebt geopend vanuit:
+Na het openen van **Create Workflow** tovenaar van of:
 
-* de optie **[Maken](#starting-a-workflow-from-the-sites-toolbar)**van de werkbalk Sites.
-* de **[tijdlijn](#starting-a-workflow-from-the-timeline)**van de Sites-console.
+* de optie **[Maken](#starting-a-workflow-from-the-sites-toolbar)** van de werkbalk Sites.
+* de **[Timeline](#starting-a-workflow-from-the-timeline)** rail van de Sites-console.
 
 U kunt details opgeven:
 
@@ -113,16 +113,16 @@ U kunt details opgeven:
    >
    >De optie **Workflowpakket bijhouden** is beschikbaar wanneer de workflow is geconfigureerd voor ondersteuning van meerdere resources en er meerdere resources zijn geselecteerd.[](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support)
 
-   Als u klaar bent, gebruikt u **Volgende** om door te gaan.
+   Wanneer volledig, gebruik **Volgende** om te werk te gaan.
 
    ![wf-52](assets/wf-52.png)
 
-1. In de stap **Bereik** kunt u selecteren:
+1. In de stap **Scope** kunt u selecteren:
 
-   * **Voeg Inhoud** toe om de [padbrowser](/help/sites-authoring/author-environment-tools.md#path-browser) te openen en selecteer aanvullende bronnen. Klik in de browser op **Selecteren** of tik op Selecteren om de inhoud aan de werkstroominstantie toe te voegen.
+   * **Voeg** Inhoud toe om  [wegbrowser ](/help/sites-authoring/author-environment-tools.md#path-browser) te openen en extra middelen te selecteren; Als u in de browser op Selecteren klikt of tikt  **** om de inhoud aan de werkstroominstantie toe te voegen.
    * Een bestaande bron voor het weergeven van extra handelingen:
 
-      * **Neem onderliggende elementen** op om op te geven dat onderliggende elementen van die bron worden opgenomen in de workflow.
+      * **Neem** kinderen op om op te geven dat onderliggende elementen van die bron worden opgenomen in de workflow.
 
          Er wordt een dialoogvenster geopend waarin u de selectie kunt verfijnen op basis van:
 
@@ -132,7 +132,7 @@ U kunt details opgeven:
 
          Alle opgegeven onderliggende items worden toegevoegd aan de lijst met bronnen waarop de workflow van toepassing is.
 
-      * **Selectie** verwijderen om die bron uit de workflow te verwijderen.
+      * **Verwijder** Selectie om die bron uit de workflow te verwijderen.
 
    ![wf-53](assets/wf-53.png)
 
@@ -140,11 +140,11 @@ U kunt details opgeven:
    >
    >Als u aanvullende resources toevoegt, kunt u **Terug** gebruiken om de instelling voor **Workflowpakket behouden** aan te passen in de stap **Eigenschappen**.
 
-1. Gebruik **Maken** om de wizard te sluiten en de instantie van de workflow te maken. Een bericht wordt getoond in de console van Plaatsen.
+1. Gebruik **Maken** om de wizard te sluiten en de werkstroominstantie te maken. Een bericht wordt getoond in de console van Plaatsen.
 
 ## Een workflow starten vanuit de Pagina-editor {#starting-a-workflow-from-the-page-editor}
 
-Als u een pagina bewerkt, kunt u op de werkbalk **Pagina-informatie** selecteren. Het vervolgkeuzemenu heeft de optie **Start in Workflow**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, en desgewenst een titel:
+Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** op de werkbalk selecteren. Het drop-down menu heeft de optie **Begin in Werkschema**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, en desgewenst een titel:
 
 ![wf-54](assets/wf-54.png)
 
