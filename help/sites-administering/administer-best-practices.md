@@ -44,7 +44,7 @@ De beste praktijken rond Activa, met inbegrip van het dynamische media vermogen 
   <tr>
    <td>Aanbevolen werkwijzen op verschillende gebieden rond Elementen om de stabiliteit en prestaties van het systeem onder belasting te verbeteren</td> 
    <td><a href="/help/assets/organize-assets.md">Aanbevolen procedures voor middelen</a></td> 
-   <td>Deze groep bevat koppelingen naar gidsen voor aanbevolen procedures in verschillende gebieden rond Elementen. Na het herzien van hen, zult u de kennis en de hulpmiddelen hebben om een systeem van het de activabeheer van de onderneming te bouwen en te beheren.</td> 
+   <td>Deze groep bevat koppelingen naar gidsen voor aanbevolen procedures in verschillende gebieden rond Elementen. Na het herzien van hen, zult u de kennis en de hulpmiddelen hebben om een systeem van het ondernemingsactivabeheer te bouwen en te beheren.</td> 
   </tr>
   <tr>
    <td>Uw inhoud ordenen (maphiërarchie)</td> 
@@ -58,13 +58,13 @@ De beste praktijken rond Activa, met inbegrip van het dynamische media vermogen 
   </tr>
   <tr>
    <td>Opties voor voorinstellingen afbeelding</td> 
-   <td>Voorinstellingen voor <a href="/help/assets/managing-image-presets.md#understanding-image-presets">afbeeldingen</a> en aanbevolen werkwijzen voor <a href="/help/assets/managing-image-presets.md#image-preset-options">voorinstellingen voor afbeeldingen</a></td> 
-   <td>In het kader van de documentatie over Voorinstellingen <a href="/help/assets/managing-image-presets.md">voor</a>afbeeldingenbeheren wordt in deze onderwerpen beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen beschreven voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td> 
+   <td>Voorinstellingen voor <a href="/help/assets/managing-image-presets.md#understanding-image-presets">afbeeldingen</a> en <a href="/help/assets/managing-image-presets.md#image-preset-options">voorinstellingen voor afbeeldingen: aanbevolen werkwijzen</a></td> 
+   <td>In het kader van de documentatie over <a href="/help/assets/managing-image-presets.md">Voorinstellingen voor afbeeldingen beheren</a> wordt in deze onderwerpen beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen getoond voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td> 
   </tr>
   <tr>
-   <td>Dynamische media versus directe integratie met Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM-integratie versus Dynamic Media</a></td> 
-   <td>Beschrijft wanneer het best is om de Dynamische oplossing van Media te gebruiken, wanneer om S7 met AEM te integreren, of wanneer om allebei te gebruiken.</td> 
+   <td>Dynamic Media versus directe integratie met Scene7</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM integratie versus Dynamic Media</a></td> 
+   <td>Beschrijft wanneer het best is om de oplossing van Dynamic Media te gebruiken, wanneer om S7 met AEM te integreren, of wanneer om allebei te gebruiken.</td> 
   </tr>
  </tbody>
 </table>
@@ -87,7 +87,7 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
   </tr>
   <tr>
    <td>Beheer van meerdere sites</td> 
-   <td><a href="/help/sites-administering/msm-best-practices.md">Beste praktijken MSM</a></td> 
+   <td><a href="/help/sites-administering/msm-best-practices.md">Aanbevolen MSM-procedures</a></td> 
    <td>Aanbevolen procedures voor het gebruik van MSM om de implementatie van inhoud te automatiseren. </td> 
   </tr>
   <tr>
