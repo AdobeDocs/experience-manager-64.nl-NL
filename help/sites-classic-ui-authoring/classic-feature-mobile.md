@@ -26,22 +26,22 @@ Apparaten worden gegroepeerd in de categoriefunctie, de functie voor slim afdruk
 
 >[!NOTE]
 >
->Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie Een actieve kopie [maken voor verschillende kanalen](/help/sites-administering/msm-livecopy.md).)
+>Als u een mobiele site wilt maken op basis van een bestaande standaardsite, maakt u een live kopie van de standaardsite. (Zie [Een actieve kopie maken voor verschillende kanalen](/help/sites-administering/msm-livecopy.md).)
 >
 >AEM ontwikkelaars kunnen nieuwe apparaatgroepen maken. (Zie [Apparaatgroepfilters maken.](/help/sites-developing/groupfilters.md))
 
 Gebruik de volgende procedure om een mobiele pagina te ontwerpen:
 
-1. Ga in uw browser naar de **Siteadmin** -console.
-1. Open de pagina **Producten** onder **Websites** > **Geometrixx Mobile Demo Site** >> **Engels**.
+1. Ga in uw browser naar de **Siteadmin**-console.
+1. Open de pagina **Products** onder **Websites** > **Geometrixx Mobile Demo Site** > **English**.
 
 1. Schakel over naar een andere emulator. Hiervoor kunt u:
 
    * Klik op het apparaatpictogram boven aan de pagina.
-   * Klik op de knop **Bewerken** in de **stapel** en selecteer het apparaat in de vervolgkeuzelijst.
+   * Klik op de knop **Bewerken** in **Sidetrap** en selecteer het apparaat in het keuzemenu.
 
 1. Sleep de component **Tekst en afbeelding** van het tabblad Mobiel van de Sidetrap naar de pagina.
-1. Bewerk de component en voeg wat tekst toe. Click **OK** to save the changes.
+1. Bewerk de component en voeg wat tekst toe. Klik **OK** om de wijzigingen op te slaan.
 
 De pagina ziet er hetzelfde uit als:
 
