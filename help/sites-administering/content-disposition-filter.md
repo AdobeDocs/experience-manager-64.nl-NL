@@ -26,7 +26,7 @@ Na installatie blokkeert het filter de toegang tot alle elementen. U kunt een PD
 
 ## Filter voor inhoudsafzetting configureren {#configure-content-disposition-filter}
 
-U kunt de Filter van de Verplaatsing van de Inhoud van [Apache Sling in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java)bekijken.
+U kunt [Apache Sling Content Disposition Filter in GitHub](https://github.com/apache/sling-org-apache-sling-security/blob/master/src/main/java/org/apache/sling/security/impl/ContentDispositionFilterConfiguration.java) bekijken.
 
 De opties voor het filter voor het verplaatsen van inhoud bieden de volgende functionaliteit:
 
