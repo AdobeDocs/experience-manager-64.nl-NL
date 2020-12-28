@@ -24,7 +24,7 @@ De mogelijkheid om via de beheerconsoles over te schakelen op de klassieke gebru
 
 ![screen_shot_2018-03-23at111956](assets/screen_shot_2018-03-23at111956.png)
 
-Elke console die een Klassieke versie UI binnen heeft `/libs/cq/core/content/nav` kan individueel worden re-toegelaten zodat de optie Klassieke UI **** opnieuw over het consolepictogram verschijnt wanneer het over wordt gemouseover.
+Elke console die een Klassieke versie UI in `/libs/cq/core/content/nav` heeft kan individueel worden re-toegelaten zodat **Klassieke UI** optie opnieuw over het consolepictogram verschijnt wanneer het over wordt gemouseover.
 
 In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatsen.
 
@@ -40,10 +40,10 @@ In dit voorbeeld, zijn wij re-toelatend Klassieke UI voor de console van Plaatse
 
    `/libs/cq/core/content/nav/sites`
 
-1. Maak een bedekking met de optie **Overlay knooppunt** . bijvoorbeeld:
+1. Maak een overlay met de optie **Overlay Node**; bijvoorbeeld:
 
-   * **Pad**: `/apps/cq/core/content/nav/sites`
-   * **Locatie** bedekking: `/apps/`
+   * **Pad**:  `/apps/cq/core/content/nav/sites`
+   * **Locatie** bedekking:  `/apps/`
    * **Identieke knooppunttypen**: actief (schakel het selectievakje in)
 
 1. Voeg de volgende booleaanse eigenschap toe aan het bovenliggende knooppunt:
