@@ -1,8 +1,8 @@
 ---
 title: Campagnes
 seo-title: Campagnes
-description: Leer de grondbeginselen van het gebruik van AEM Campagnes.
-seo-description: Leer de grondbeginselen van het gebruik van AEM Campagnes.
+description: Leer de grondbeginselen van het gebruiken van AEM Campagnes.
+seo-description: Leer de grondbeginselen van het gebruiken van AEM Campagnes.
 uuid: f4be814f-8b0f-4089-88bb-0141227bce02
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -24,9 +24,9 @@ Campagnerbeheer biedt digitale marketers de mogelijkheid om persoonlijke inhoud 
 
 Als u campagnes (inclusief bestemmingspagina&#39;s) beheert, moet u mogelijk het volgende doen:
 
-* **Segmenten** definiëren - U moet segmenten en strategieën definiëren voor uw doelinhoud.
+* **Segmenten**  definiëren - U moet segmenten en strategieën definiëren voor uw doelinhoud.
 * **HTML voorbereiden voor het plaatsen van pagina** &#39;s - Met bestemmingspagina&#39;s kunnen auteurs snel en eenvoudig ontwerp en inhoud rechtstreeks in een AEM pagina importeren. U moet de HTML voorbereiden zodat elementen correct kunnen worden geïmporteerd. Openingspagina&#39;s zijn handig wanneer u bestemmingspagina&#39;s voor marketingdoeleinden maakt die slechts gedurende een beperkte tijd actief zijn en snel moeten worden gemaakt.
-* **Integreer met SiteCatalyst** - U kunt bestemmingspagina&#39;s met SiteCatalyst integreren.
+* **Integreer met SiteCatalyst**  - U kunt bestemmingspagina&#39;s met SiteCatalyst integreren.
 
 Zie de volgende pagina&#39;s:
 
