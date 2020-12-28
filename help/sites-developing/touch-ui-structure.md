@@ -18,13 +18,13 @@ ht-degree: 0%
 ---
 
 
-# Structuur van de interface voor AEM aanraakbediening{#structure-of-the-aem-touch-enabled-ui}
+# Structuur van de AEM Touch-Enabled UI{#structure-of-the-aem-touch-enabled-ui}
 
 De AEM interface met aanraakbediening heeft verschillende onderliggende principes en bestaat uit verschillende belangrijke elementen:
 
 ## Consoles {#consoles}
 
-### Basislay-out en -formaat {#basic-layout-and-resizing}
+### Basislay-out en formaat {#basic-layout-and-resizing}
 
 De interface kan zowel voor mobiele apparaten als voor desktopapparaten worden gebruikt, maar in plaats van twee stijlen te maken, heeft Adobe besloten één stijl te gebruiken die voor alle schermen en apparaten werkt.
 
@@ -51,7 +51,7 @@ De kopbalbar toont globale elementen met inbegrip van:
 * een indicator van (en toegang tot) om het even welke alarm of Inbox punten die op u wachten
 * het gebruikerspictogram, samen met een koppeling naar uw profielbeheer
 
-### Toolbar {#toolbar}
+### Werkbalk {#toolbar}
 
 Dit is contextueel voor uw locatie en de gereedschappen voor oppervlakken die relevant zijn voor het beheren van de weergave of elementen op de onderstaande pagina. De werkbalk is productspecifiek, maar de elementen hebben een zekere gemeen.
 
@@ -71,11 +71,11 @@ De linkerspoorstaaf kan worden geopend/verborgen zoals vereist om te tonen:
 * **Verwijzingen**
 * **Filter**
 
-De standaardwaarde is Alleen **** inhoud (rails verborgen).
+De standaardwaarde is **Alleen inhoud** (spoorstaaf verborgen).
 
 ![chlimage_1-147](assets/chlimage_1-147.png)
 
-## Pagina&#39;s ontwerpen {#page-authoring}
+## Pagina-ontwerp {#page-authoring}
 
 Bij het ontwerpen van pagina&#39;s ziet u de volgende structurele gebieden.
 
@@ -91,7 +91,7 @@ Het inhoudskader bevindt zich in de rechtersectie van het venster, onder de werk
 
 In het bewerkingsframe worden de bewerkingsfuncties gerealiseerd.
 
-Het editorframe is een container (abstract) voor alle *pagina-ontwerpelementen*. Het leeft bovenop het inhoudskader, en omvat:
+Het editorkader is een container (abstract) voor alle *pagina auteurselementen*. Het leeft bovenop het inhoudskader, en omvat:
 
 * de bovenste werkbalk
 * zijpaneel
@@ -128,7 +128,7 @@ Op het tabblad Componenten kunt u een keuze maken uit het bereik van componenten
 
 ### Bedekkingen {#overlays}
 
-Deze bedekken het inhoudsframe en worden door de [lagen](#layer) gebruikt om te begrijpen hoe u (volledig transparant) kunt communiceren met de componenten en hun inhoud.
+Deze bedekken het inhoudskader en worden gebruikt door [layers](#layer) om de mechanica te realiseren van hoe u (volledig transparant) met de componenten en hun inhoud kunt in wisselwerking staan.
 
 De overlays bevinden zich in het editorframe (met alle andere pagina-ontwerpelementen), hoewel ze de juiste componenten in het inhoudsframe bedekken.
 
@@ -157,7 +157,7 @@ De laagschakelaar is beschikbaar als daling onderaan van de toolbar (bij de bove
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Werkbalk Component {#component-toolbar}
+### Deelwerkbalk {#component-toolbar}
 
 Elke instantie van een component zal zijn toolbar tonen wanneer geklikt (of eens of met een langzaam tweemaal klikken). De werkbalk bevat de specifieke handelingen (bijvoorbeeld kopiëren, plakken, open editor) die beschikbaar zijn voor de componentinstantie (Bewerkbaar) op de pagina.
 
@@ -167,7 +167,7 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 
 ## Aanvullende informatie {#further-information}
 
-Ga voor meer informatie over de concepten rond de interface met aanraakbediening naar de [Concepten van artikelen van de interface](/help/sites-developing/touch-ui-concepts.md)AEM Touch-Enabled.
+Voor meer details over de concepten rond aanraking-toegelaten UI, ga aan het artikel [Concepten van AEM toe:laten UI](/help/sites-developing/touch-ui-concepts.md).
 
-Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor de pagina-editor met aanraakbediening voor meer technische informatie.
+Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor meer technische informatie over de pagina-editor met aanraakbediening.
 
