@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Verwante artikelen van de Gemeenschap{#related-community-articles}
+# Verwante communautaire artikelen{#related-community-articles}
 
 De AEM Gemeenschap heeft een reeks artikelen opgesteld die verband houden met de integratie van de Marketing Cloud met AEM.
 
