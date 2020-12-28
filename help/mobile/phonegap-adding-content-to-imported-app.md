@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Dus u hebt uw Hybride PhoneGap- of Cordova-app geïmporteerd in AEM, wat nu? Waarschijnlijk zult u authorable inhoud aan uw app willen toevoegen. Hiervoor hebt u een algemeen inzicht in de structuur van een AEM-app nodig. Een toepassing in AEM bestaat meestal uit twee delen. De &#39;shell&#39; en &#39;content&#39;. De &#39;shell&#39; bestaat uit de statische delen van uw app. zoals de PhoneGap-configuratiebestanden, het app-framework en de navigatiebesturingselementen. De inhoud van het archief dat u hebt geïmporteerd, wordt opgeslagen als onderdeel van de shell. In de context van dit document is de shell alle niet-AEM authored inhoud van uw Hybride toepassing PhoneGap die door de toepassingsontwikkelaar wordt gebouwd.
 
