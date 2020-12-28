@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# App-prestaties bijhouden met Adobe Mobile Analytics{#track-app-performance-with-adobe-mobile-analytics}
+# Prestaties van toepassingen bijhouden met mobiele Adobe-analyse{#track-app-performance-with-adobe-mobile-analytics}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 U wilt hogere klantenomzettingen en loyaliteit drijven.
 
@@ -34,20 +34,20 @@ Hoe kunt u uw mobiele toepassingen afstemmen om de beste ervaring voor uw gebrui
 
 Met Adobe Mobile Services kunt u meer inzicht krijgen in hoe uw gebruikers uw mobiele apps gebruiken door het gebruik, de vastgelopen apps, de details van apparaten en zoveel andere belangrijke meetgegevens voor uw mobiele apps te volgen.
 
-Adobe Experience Manager Mobile geeft rechtstreeks vanaf het AEM Mobile Application Dashboard een glimp van de details van uw mobiele analysemogelijkheden. De **Mobile Metrics Tile** in het dashboard biedt realtime analyses voor uw mobiele toepassing, zodat ontwikkelaars, auteurs en beheerders snel een voorsprong van de gezondheid van uw mobiele app kunnen krijgen. Onder de hoeken voor de voeding van de analysemogelijkheden bevindt zich de [Adobe Mobile Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK. De SDK van Adobe Mobile Analytics kan in uw toepassingen worden aangesloten of via een PhoneGap bridge-insteekmodule voor webweergaven. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Bij deze gegevens wordt de Adobe Mobile Services Cloud aangedrukt voor rapportage en analyse.
+Adobe Experience Manager Mobile geeft rechtstreeks vanaf het AEM Mobile Application Dashboard een glimp van de details van uw mobiele analysemogelijkheden. De **Mobile Metrics Tile** in het dashboard biedt realtime analyses voor uw mobiele toepassing, zodat ontwikkelaars, auteurs en beheerders snel een voorsprong van de gezondheid van uw mobiele app kunnen krijgen. Onder de omslagen die de analyse aandrijven is [Adobe Mobiele Analytics](https://www.adobe.com/ca/solutions/digital-analytics/mobile-web-apps-analytics.html) SDK. De SDK van Adobe Mobile Analytics kan in uw toepassingen worden aangesloten of via een PhoneGap bridge-insteekmodule voor webweergaven. Metrische gegevens worden verzameld en in cache geplaatst op het apparaat totdat het apparaat is aangesloten. Bij deze gegevens wordt de Adobe Mobile Services Cloud aangedrukt voor rapportage en analyse.
 
 Adobe Mobile Analytics SDK biedt het volgende:
 
-1. **Gegevensverzameling voor mobiele kanalen** - Verzamel uitgebreide gegevens voor uw mobiele websites en toepassingen op alle grote besturingssystemen.
-1. **Analyse** van de mobiele betrokkenheid - Inzicht in de betrokkenheid van gebruikers binnen uw mobiele app, website of video, inclusief hoe vaak consumenten het kanaal starten, of ze er aankopen van maken en meer.
-1. **Mobiele app-dashboards en -rapporten** - Gebruiksrapporten met levenscyclusgegevens voor uw apps en maatgegevens voor de App Store worden weergegeven. Zie trends voor gebruikers, startpagina&#39;s, gemiddelde sessielengte, retentielengte en vastlopen.
-1. **Analyse** van mobiele campagnes - De doeltreffendheid van mobiele specifieke campagnes zoals SMS, mobiele onderzoeksadvertenties, mobiele vertoningsadvertenties, en QR codes kwantificeren.
-1. **Geolocatieanalyse** - Zoek waar uw gebruikers van de app uw mobiele beleving kunnen starten en interageren via de GPS-locatie of -punten.
-1. **Pathing analysis** - Zie hoe gebruikers door uw app navigeren om te bepalen welke schermen en UI-elementen gebruikers aanspreken en welke gebruikers ertoe brengen uit te schakelen.
+1. **Gegevensverzameling voor mobiele kanalen**  - Verzamel uitgebreide gegevens voor uw mobiele websites en toepassingen op alle grote besturingssystemen.
+1. **Analyse**  van de mobiele betrokkenheid: begrijp de betrokkenheid van gebruikers binnen uw mobiele app, website of video, inclusief hoe vaak consumenten het kanaal starten, of ze er aankopen van maken en meer.
+1. **Mobiele app-dashboards en -rapporten**  - Gebruiksrapporten met levenscyclusgegevens voor uw apps en maatgegevens voor de App Store — zie trends voor gebruikers, lanceringen, gemiddelde sessielengte, retentielengte en vastlopen.
+1. **Analyse**  van mobiele campagnes - De doeltreffendheid van mobiele specifieke campagnes zoals SMS, mobiele onderzoeksadvertenties, mobiele vertoningsadvertenties, en QR codes kwantificeren.
+1. **Geolocatieanalyse**  - Zoek waar uw gebruikers van de app uw mobiele beleving kunnen starten en interageren via de GPS-locatie of -punten.
+1. **Analyse**  van het schilderen - zie hoe de gebruikers door uw app navigeren om te bepalen welke schermen en elementen UI gebruikers in dienst nemen en die gebruikers veroorzaken om weg te laten.
 
-In deze sectie wordt beschreven hoe [AEM ontwikkelaars](#developers) AEM Mobile-toepassingen kunnen leren programmeren met het bijhouden van analyses.
+In deze sectie wordt beschreven hoe [AEM Developers](#developers) vervolgens leert hoe u AEM Mobile-toepassingen kunt optimaliseren met het bijhouden van analyses.
 
-Tot slot [AEM Beheerders](#administrators) leren:
+Tot slot [AEM Beheerders](#administrators) leren om:
 
 * een cloudservice voor Adobe Mobile Services maken
 * creeer een mobiele dienst config en associeer een rapportreeks
@@ -57,13 +57,13 @@ Tot slot [AEM Beheerders](#administrators) leren:
 
 ## Voor ontwikkelaars - Integreer Analytics in uw app {#for-developers-integrate-analytics-into-your-app}
 
-**Vereiste:** AEM beheerders moeten de de wolkenconfiguratie van de Diensten van de Adobe Mobiele vormen, [zoals hieronder](#amscloudserviceconfig)besproken.
+**Vereiste:** AEM beheerders moeten de de wolkenconfiguratie van de Diensten van de Adobe Mobiele vormen,  [zoals hieronder](#amscloudserviceconfig) besproken.
 
-Ontwikkelaars zijn verantwoordelijk voor het [toevoegen van analyses aan een AEM Mobile-app](/help/mobile/phonegap-add-analytics-to-apps.md) om te volgen, rapporteren en te begrijpen hoe gebruikers werken met inhoud van uw mobiele app en om belangrijke levenscyclusmetriek te meten, zoals lanceringen, tijd in de app en crashsnelheid.
+Ontwikkelaars zijn verantwoordelijk voor het [toevoegen van analysemogelijkheden aan een AEM Mobile-app](/help/mobile/phonegap-add-analytics-to-apps.md), indien nodig, om te volgen, rapporteren en te begrijpen hoe gebruikers werken met inhoud van uw mobiele app en om belangrijke levenscyclusmetriek te meten, zoals lanceringen, tijd in app en crashsnelheid.
 
-## Voor Beheerders - vorm de Cloud Service van de Diensten van Adobe Mobile {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
+## Voor Beheerders - Configureer de Adobe Mobile Services-Cloud Service {#for-administrators-configure-the-adobe-mobile-services-cloud-service}
 
-Als u gebruik wilt maken van Adobe Mobile Services, moet u de Cloud Service AEM Adobe Mobile Services configureren met uw Adobe Analytics-accountgegevens. Het Centrum van het Bevel van Apps verstrekt een **Analyze Metrics** tegel waar u de wolkendienst tot stand brengt en met uw mobiele app associeert.
+Als u gebruik wilt maken van Adobe Mobile Services, moet u de Cloud Service AEM Adobe Mobile Services configureren met uw Adobe Analytics-accountgegevens. Het Centrum van het Bevel van Apps verstrekt **Analyze Metrics** tegel waar u de wolkendienst tot stand kunt brengen en met uw mobiele app associëren.
 
 Configureer de cloudservice voor uw mobiele app door te klikken op het tandwielpictogram op de tegel Metrische gegevens analyseren.
 
@@ -77,7 +77,7 @@ Klik om te beginnen op de knop &#39;+&#39; in het element Cloud Services beheren
 
 ![chlimage_1-126](assets/chlimage_1-126.png)
 
-Nadat u op de knop &#39;**+**&#39; hebt geklikt, wordt de wizard Cloud Service **** toevoegen weergegeven.
+Wanneer u op de knop &#39;**+**&#39; klikt, wordt de wizard **Cloud Service toevoegen** weergegeven.
 
 ![chlimage_1-127](assets/chlimage_1-127.png)
 
