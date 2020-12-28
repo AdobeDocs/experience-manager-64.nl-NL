@@ -30,12 +30,12 @@ De steun van de Insteekmodule van de Configuratie OSGi werd toegevoegd om het be
 >
 >De diensten die een gecodeerde waarde verwachten moeten de controle gebruiken IsProtected om te zien of wordt de waarde gecodeerd alvorens te proberen om het te decrypteren, aangezien het reeds kan gedecrypteerd zijn.
 
-## Coderingsondersteuning inschakelen {#enabling-encryption-support}
+## Coderingsondersteuning {#enabling-encryption-support} inschakelen
 
 Deze stappen tonen hoe te om het wachtwoord SMTP voor de dienst van de Post te coderen. U kunt deze stappen uitvoeren voor een OSGI-eigenschap die u wilt coderen.
 
 1. Ga naar de AEM webconsole op *https://&lt;serveradres>:&lt;serverport>/system/console/configMgr*
-1. Ga in de linkerbovenhoek naar **Main - Crypto Support**
+1. Ga in de linkerbovenhoek naar **Hoofd - Crypto Support**
 
    ![chlimage_1-325](assets/chlimage_1-325.png)
 
@@ -43,12 +43,12 @@ Deze stappen tonen hoe te om het wachtwoord SMTP voor de dienst van de Post te c
 
    ![screen_shot_2018-08-01at113417am](assets/screen_shot_2018-08-01at113417am.png)
 
-1. Voer in het veld **Onbewerkte tekst** de tekst in van de vertrouwelijke gegevens die u wilt beschermen.
+1. Typ in het veld **Onbewerkte tekst** de tekst van de vertrouwelijke gegevens die u wilt beschermen.
 1. Selecteer **Protect**. De beveiligde tekst wordt weergegeven als gecodeerde tekst.
 
    ![screen_shot_2018-08-01at113844am](assets/screen_shot_2018-08-01at113844am.png)
 
-1. Kopieer de beveiligde tekst uit Stap#5 en plak deze in de waarde OSGI-formulier. In dit voorbeeld, wordt het gecodeerde wachtwoord **** SMTP toegevoegd aan de Dienst *van de Post van* Dag CQ.
+1. Kopieer de beveiligde tekst uit Stap#5 en plak deze in de waarde OSGI-formulier. In dit voorbeeld wordt het versleutelde **SMTP-wachtwoord** toegevoegd aan de *Day CQ Mail Service*.
 
    ![screen_shot_2016-12-18at105809pm](assets/screen_shot_2016-12-18at105809pm.png)
 
