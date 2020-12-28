@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Responsieve lay-out uitproberen in We.Detailhandel{#trying-out-responsive-layout-in-we-retail}
+# Responsieve lay-out uitproberen in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
-Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt in combinatie met de modus **Lay-out** in de pagina-editor, waarmee u uw responsieve lay-out afhankelijk van het apparaat kunt maken en bewerken.
+Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-out om ontvankelijk ontwerp uit te voeren. De lay-outcontainer biedt een alineasysteem waarmee u componenten binnen een responsief raster kunt plaatsen. Met dit raster kunt u de lay-out opnieuw rangschikken op basis van de grootte en de indeling van het apparaat/venster. De component wordt gebruikt samen met de wijze **Layout** in de paginaredacteur, die u toestaat om uw ontvankelijke lay-out afhankelijk van apparaat tot stand te brengen en uit te geven.
 
 ## Uitproberen {#trying-it-out}
 
@@ -28,7 +28,7 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
    http://localhost:4502/editor.html/content/we-retail/language-masters/en/experience/arctic-surfing-in-lofoten.html
 
-1. Schakel over naar **Voorvertoning** om de pagina te bekijken zoals deze wordt weergegeven aan een bezoeker van de website. Schuif omlaag naar de inhoud van het artikel *Aloha spirits in Noord-Noorwegen*.
+1. Schakel over naar **Voorvertoning** om de pagina weer te geven zoals deze wordt weergegeven aan een bezoeker van de website. Schuif omlaag naar de inhoud van het artikel *Aloha spirits in Norther Norway*.
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
@@ -44,8 +44,8 @@ Alle pagina&#39;s Web.Retail gebruiken de component van de Container van de Lay-
 
 1. Als u de formaatgreep van de component vastgrijpt en sleept, wordt automatisch het layoutraster weergegeven om u te helpen met het wijzigen van de grootte.
 
-   ![chlimage_1-101](assets/chlimage_1-181.png)
+   ![chlimage_1-181](assets/chlimage_1-181.png)
 
 ## Aanvullende informatie {#further-information}
 
-Voor meer informatie raadpleegt u het ontwerpdocument [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) of het beheerdersdocument [De container van de lay-out en de lay-outmodus](/help/sites-administering/configuring-responsive-layout.md) configureren voor volledige technische details.
+Raadpleeg voor meer informatie het ontwerpdocument [Responsieve lay-out](/help/sites-authoring/responsive-layout.md) of het beheerdersdocument [Container voor lay-out en lay-outmodus configureren](/help/sites-administering/configuring-responsive-layout.md) voor volledige technische details.
