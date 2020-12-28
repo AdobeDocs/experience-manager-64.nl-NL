@@ -39,12 +39,12 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 >
 >Voor informatie over:
 >
->* Als u deelneemt aan workflows, raadpleegt u [Workflows](/help/sites-authoring/workflows.md)gebruiken.
->* Zie Workflows [beheren voor het beheren van workflows](/help/sites-administering/workflows.md).
->* Zie Digitale middelen [wijzigen met Adobe Experience Manager Workflows voor een end-to-end communautair artikel.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
->* Zie het [Vraag het de AEM van de Deskundigen Webinar over Werkschema](https://bit.ly/ATACE218).
->* Voor een end-to-end communautair artikel zie het [Creëren van een douane Adobe Experience Manager 6.3 Dynamische stap](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html)van de Deelnemer.
->* Wijzigingen in de locatie van informatie zie Herstructurering van [bewaarplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) en [Werkstroom Beste praktijken - Locaties](/help/sites-developing/workflows-best-practices.md#locations).
+>* Als u deelneemt aan workflows, raadpleegt u [Workflows gebruiken](/help/sites-authoring/workflows.md).
+>* Zie [Workflows beheren](/help/sites-administering/workflows.md) voor het beheer van workflows.
+>* Zie [Digitale middelen wijzigen met Adobe Experience Manager Workflows voor een end-to-end communautair artikel.](https://helpx.adobe.com/experience-manager/using/modify_asset_workflow.html)
+>* Zie [Vraag de AEM Deskundigen Webinar op Werkschema](https://bit.ly/ATACE218).
+>* Voor een end-to-end Communautair artikel zie [Creating a custom Adobe Experience Manager 6.3 Dynamic Participant step](https://helpx.adobe.com/experience-manager/using/dynamic-steps-aem63.html).
+>* Wijzigingen in de locaties van informatie zie [Herstructurering van opslagplaatsen in AEM 6.4](/help/sites-deploying/repository-restructuring.md) en [Best practices voor workflows - Locaties](/help/sites-developing/workflows-best-practices.md#locations).
 
 >
 
@@ -52,23 +52,23 @@ De belangrijkste aspecten komen hieronder aan de orde, terwijl op de volgende pa
 
 ## Model {#model}
 
-A `WorkflowModel` staat voor een definitie (model) van een workflow. Het is gemaakt van `WorkflowNodes` en `WorkflowTransitions`. De overgangen verbinden de knopen en bepalen de *stroom*. Het model heeft altijd een beginknooppunt en een eindknooppunt.
+Een `WorkflowModel` staat voor een definitie (model) van een workflow. Het is gemaakt van `WorkflowNodes` en `WorkflowTransitions`. De overgangen verbinden de knopen en bepalen *flow*. Het model heeft altijd een beginknooppunt en een eindknooppunt.
 
 ### Runtimemodel {#runtime-model}
 
 Workflowmodellen hebben een versienummer. Wanneer u een workflowinstantie uitvoert, wordt het runtimemodel van de workflow gebruikt (en bewaard) (zoals beschikbaar op het moment dat de workflow werd gestart).
 
-Er wordt een runtimemodel [gegenereerd wanneer **Sync** wordt geactiveerd in de werkstroommodeleditor](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
+Er wordt [een runtimemodel gegenereerd wanneer **Sync** wordt geactiveerd in de werkstroommodeleditor](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model).
 
-Bewerkingen aan het workflowmodel dat optreedt en/of runtimemodellen die worden gegenereerd *nadat* de specifieke instantie is gestart, worden niet op die instantie toegepast.
+Bewerkingen aan het werkschemamodel die voorkomen, en/of runtime modellen die worden geproduceerd, *after* de specifieke instantie is begonnen zal niet op die instantie worden toegepast.
 
 >[!CAUTION]
 >
->De uitgevoerde stappen zijn die zoals die door het [runtime model](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model)worden bepaald; dit wordt gegenereerd op het moment dat de handeling **Sync** wordt geactiveerd in de werkstroommodeleditor.
+>De uitgevoerde stappen zijn die zoals bepaald door [runtime model](/help/sites-developing/workflows-models.md#sync-your-workflow-generate-a-runtime-model); deze wordt gegenereerd op het moment dat de handeling **Sync** wordt geactiveerd in de editor van het workflowmodel.
 >
->Als het workflowmodel na dit tijdstip wordt gewijzigd (zonder dat **Sync** wordt geactiveerd), worden deze wijzigingen niet doorgevoerd in de runtime-instantie. Alleen runtimemodellen die na de update worden gegenereerd, weerspiegelen de wijzigingen. Uitzonderingen zijn de onderliggende ECMA-scripts, die slechts eenmaal worden bijgehouden en er worden wijzigingen in aangebracht.
+>Als het workflowmodel na dit tijdstip wordt gewijzigd (zonder dat **Sync** wordt geactiveerd), zal de runtime-instantie deze wijzigingen niet doorvoeren. Alleen runtimemodellen die na de update worden gegenereerd, weerspiegelen de wijzigingen. Uitzonderingen zijn de onderliggende ECMA-scripts, die slechts eenmaal worden bijgehouden en er worden wijzigingen in aangebracht.
 
-### Step {#step}
+### Stap {#step}
 
 Elke stap voert een afzonderlijke taak uit. Er zijn verschillende typen workflowstappen:
 
@@ -78,23 +78,23 @@ Elke stap voert een afzonderlijke taak uit. Er zijn verschillende typen workflow
 * OF Splitsen/verbinden: Gebruik logica om te beslissen welke stap u vervolgens in de workflow wilt uitvoeren.
 * EN Splitsen/verbinden: Hiermee kunnen meerdere stappen tegelijkertijd worden uitgevoerd.
 
-Alle stappen delen de volgende algemene eigenschappen: `Autoadvance` en `Timeout` waarschuwingen (scriptbaar).
+Alle stappen delen de volgende algemene eigenschappen: `Autoadvance` en `Timeout` alarm (scriptable).
 
 ### Overgang {#transition}
 
-A `WorkflowTransition` staat voor een overgang tussen twee `WorkflowNodes` van een `WorkflowModel`.
+Een `WorkflowTransition` vertegenwoordigt een overgang tussen twee `WorkflowNodes` van een `WorkflowModel`.
 
-* De koppeling tussen twee opeenvolgende stappen wordt gedefinieerd.
+* Hiermee wordt het verband tussen twee opeenvolgende stappen gedefinieerd.
 * Het is mogelijk regels toe te passen.
 
 ### WorkItem {#workitem}
 
-A `WorkItem` is de eenheid die door een `Workflow` geval van een `WorkflowModel`. wordt overgegaan. Het bevat de code `WorkflowData` waarop de instantie reageert en een verwijzing naar de `WorkflowNode` onderliggende werkstroomstap.
+Een `WorkItem` is de eenheid die door een `Workflow` instantie van een `WorkflowModel` wordt overgegaan. Deze bevat de `WorkflowData` waarop de instantie reageert en een verwijzing naar de `WorkflowNode` die de onderliggende werkstroomstap beschrijft.
 
 * Het wordt gebruikt om de taak te identificeren en in respectieve inbox gezet.
 * Een workflowinstantie kan een of meer `WorkItems` tegelijk hebben (afhankelijk van het workflowmodel).
-* De `WorkItem` verwijzing naar de werkstroominstantie.
-* In de opslagplaats `WorkItem` wordt het opgeslagen onder de werkstroominstantie.
+* De `WorkItem` verwijst naar de werkstroominstantie.
+* In de opslagplaats wordt `WorkItem` opgeslagen onder de werkstroominstantie.
 
 ### Payload {#payload}
 
@@ -115,11 +115,11 @@ De volgende acties zijn mogelijk op een werkstroominstantie:
 
 Voltooide en beëindigde exemplaren worden gearchiveerd.
 
-### Inbox {#inbox}
+### Postvak IN {#inbox}
 
-Elke gebruikersaccount heeft een eigen workflow-inbox waarin de toegewezen gebruikersaccount toegankelijk `WorkItems` is.
+Elke gebruikersaccount heeft zijn eigen workflow-inbox waarin de toegewezen `WorkItems` toegankelijk zijn.
 
-De gegevens `WorkItems` worden rechtstreeks toegewezen aan de gebruikersaccount of aan de groep waartoe ze behoren.
+`WorkItems` worden toegewezen aan of de gebruikersrekening direct of aan de groep waartot zij behoren.
 
 ### Workflowtypen {#workflow-types}
 
@@ -141,7 +141,7 @@ Er zijn verschillende typen werkstromen die worden aangegeven in de console Work
 
 ### Tijdelijke workflows {#transient-workflows}
 
-Standaardworkflows slaan runtime (geschiedenis)-informatie op tijdens de uitvoering ervan. U kunt een workflowmodel ook definiëren als **transient** om te voorkomen dat een dergelijke geschiedenis zich blijft voordoen. Dit wordt gebruikt voor prestaties het stemmen aangezien het bespaart/vermijdt de tijd/de middelen die voor het voortbestaan van de informatie worden gebruikt.
+Standaardworkflows slaan runtime (geschiedenis)-informatie op tijdens de uitvoering ervan. U kunt een workflowmodel ook definiëren als **Transient** om te voorkomen dat een dergelijke geschiedenis zich blijft voordoen. Dit wordt gebruikt voor prestaties het stemmen aangezien het bespaart/vermijdt de tijd/de middelen die voor het voortbestaan van de informatie worden gebruikt.
 
 U kunt tijdelijke workflows gebruiken voor alle workflows die:
 
@@ -152,14 +152,14 @@ Er zijn tijdelijke workflows geïntroduceerd voor het laden van een groot aantal
 
 >[!NOTE]
 >
->Zie [Een tijdelijk werkschema](/help/sites-developing/workflows-models.md#creating-a-transient-workflow) maken voor meer informatie.
+>Zie [Een tijdelijk werkschema maken](/help/sites-developing/workflows-models.md#creating-a-transient-workflow) voor meer informatie.
 
 >[!CAUTION]
 >
 >Wanneer een workflowmodel als tijdelijk is gemarkeerd, zijn er een aantal scenario&#39;s waarin de runtimegegevens nog steeds worden voortgezet:
 >
 >* Het ladingstype (bijvoorbeeld video) vereist externe stappen voor verwerking; in dergelijke gevallen is de runtimegeschiedenis nodig om de status te bevestigen.
->* De werkstroom voert een **EN-splitsing** in. in dergelijke gevallen is de runtimegeschiedenis nodig om de status te bevestigen.
+>* De werkstroom voert een **AND Split** in; in dergelijke gevallen is de runtimegeschiedenis nodig om de status te bevestigen.
 >* Wanneer de tijdelijke werkstroom een deelnemersstap ingaat, verandert deze modus (bij uitvoering) in een niet-overgangswerkstroom. aangezien de taak aan een persoon wordt doorgegeven , moet de geschiedenis worden voortgezet
 
 >
@@ -168,35 +168,35 @@ Er zijn tijdelijke workflows geïntroduceerd voor het laden van een groot aantal
 
 >[!CAUTION]
 >
->Binnen een transiënte workflow mag u geen **Ga naar-stap** gebruiken.
+>Binnen een transiënte werkstroom zou u geen **Goto Step** moeten gebruiken.
 >
->Dit is aangezien de Stap **van de** Ga een slingerbaan creeert om het werkschema op het `goto` punt voort te zetten. Hierdoor wordt het doel van het tijdelijk maken van de workflow overgeslagen en wordt een fout in het logbestand gegenereerd.
+>Dit is aangezien **Goto Step** tot een sling baan leidt om het werkschema bij het `goto` punt voort te zetten. Hierdoor wordt het doel van het tijdelijk maken van de workflow overgeslagen en wordt een fout in het logbestand gegenereerd.
 >
->Als u beslissingen wilt nemen in een tijdelijke workflow, kunt u de optie **OF splitsen** gebruiken.
+>Om besluiten in een transient werkschema te nemen kunt u **OF Splitsen** gebruiken.
 
 >[!NOTE]
 >
->Zie [Beste praktijken voor Activa](/help/assets/performance-tuning-guidelines.md#transient-workflows) voor meer informatie over hoe de Transiente Workflows de prestaties van Activa beïnvloeden.
+>Zie [Aanbevolen werkwijzen voor elementen](/help/assets/performance-tuning-guidelines.md#transient-workflows) voor meer informatie over hoe de prestaties van bedrijfsmiddelen worden beïnvloed door de overgangsworkflows.
 
 ### Ondersteuning voor meerdere bronnen {#multi-resource-support}
 
-Als u **Multi Resource Support** voor uw workflowmodel activeert, wordt één workflowinstantie gestart, zelfs als u meerdere bronnen selecteert. deze zullen als pakket worden bijgevoegd .
+Als u **Ondersteuning voor meerdere bronnen** voor uw workflowmodel activeert, wordt één workflowinstantie gestart, zelfs als u meerdere bronnen selecteert. deze zullen als pakket worden bijgevoegd .
 
-Als **MultiResource Support** niet is geactiveerd voor uw workflowmodel en er meerdere bronnen zijn geselecteerd, wordt voor elke bron een afzonderlijke workflowinstantie gestart.
+Als **Ondersteuning voor meerdere bronnen** niet is geactiveerd voor uw workflowmodel en er meerdere bronnen zijn geselecteerd, wordt voor elke bron een afzonderlijke workflowinstantie gestart.
 
 >[!NOTE]
 >
->Zie Een workflow [configureren voor ondersteuning](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) van meerdere bronnen voor meer informatie.
+>Zie [Een Workflow configureren voor ondersteuning van meerdere bronnen](/help/sites-developing/workflows-models.md#configuring-a-workflow-for-multi-resource-support) voor meer informatie.
 
 ### Werkstroomfasen {#workflow-stages}
 
-Workflowfasen helpen u de voortgang van een workflow bij het uitvoeren van taken zichtbaar te maken. Deze kunnen worden gebruikt om een overzicht te geven van de mate waarin de workflow wordt verwerkt, zoals wanneer de workflow wordt uitgevoerd, de gebruiker de voortgang kan bekijken die in het **werkgebied** wordt beschreven (in tegenstelling tot een afzonderlijke stap).
+Workflowfasen helpen u de voortgang van een workflow bij het uitvoeren van taken zichtbaar te maken. Ze kunnen worden gebruikt om een overzicht te geven van de mate waarin de workflow wordt verwerkt, zoals wanneer de workflow wordt uitgevoerd, de gebruiker de voortgang kan bekijken die wordt beschreven door **Stage** (in tegenstelling tot een afzonderlijke stap).
 
 Aangezien de namen van de afzonderlijke stappen specifiek en technisch kunnen zijn, kunnen de werkgebiednamen worden gedefinieerd om een conceptuele weergave van de voortgang van de workflow te bieden.
 
 Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
 
-1. U kunt werkstroomfasen [configureren (die de voortgang van het werkschema weergeven) en vervolgens het juiste werkgebied toewijzen aan elke stap in uw werkstroom](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
+1. U kunt [Werkstroomfasen (die de Voortgang van het Werkschema tonen) vormen en dan het aangewezen stadium aan elke stap in uw werkschema toewijzen](/help/sites-developing/workflows-models.md#configuring-workflow-stages-that-show-workflow-progress):
 
    * U kunt meerdere werkgebiednamen maken.
    * Vervolgens wordt aan elke stap een afzonderlijke werkgebiednaam toegewezen (een werkgebiednaam kan aan een of meer stappen worden toegewezen).
@@ -210,14 +210,14 @@ Bijvoorbeeld voor een workflow met zes stappen en vier stappen:
    | Stap 5 | Voltooid |
    | Stap 6 | Voltooid |
 
-1. Wanneer de workflow wordt uitgevoerd, kan de gebruiker de voortgang bekijken op basis van de namen van het werkgebied (in plaats van de namen van de stappen). De voortgang van de workflow wordt weergegeven op het tabblad [WORKFLOW INFO van het venster met taakdetails van het werkitem](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) dat in het [Postvak](/help/sites-authoring/inbox.md)wordt weergegeven.
+1. Wanneer de workflow wordt uitgevoerd, kan de gebruiker de voortgang bekijken op basis van de namen van het werkgebied (in plaats van de namen van de stappen). De voortgang van de workflow wordt weergegeven op het tabblad [WORKFLOW INFO van het venster met taakdetails van het werkitem](/help/sites-authoring/workflows-participating.md#opening-a-workflow-item-to-view-details-and-take-actions) dat wordt weergegeven in het [Inbox](/help/sites-authoring/inbox.md).
 
 ### Workflows en Forms {#workflows-and-forms}
 
-Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Dit kan met de [kerncomponenten van componenten](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) beschikbaar in een standaard AEM instantie, of met de oplossing [van](/help/forms/using/aem-forms-workflow.md)AEM Forms zijn.
+Workflows worden doorgaans gebruikt om formulierverzendingen in AEM te verwerken. Dit kan met [kerncomponenten van componenten zijn ](https://helpx.adobe.com/experience-manager/core-components/using/form-container.html) beschikbaar in een standaard AEM instantie, of met [oplossing van AEM Forms](/help/forms/using/aem-forms-workflow.md).
 
 Bij het maken van een nieuw formulier kan het verzenden van het formulier eenvoudig worden gekoppeld aan een workflowmodel. bijvoorbeeld om de inhoud op een bepaalde locatie van de gegevensopslagruimte op te slaan of om een gebruiker op de hoogte te stellen van de verzending van het formulier en de inhoud ervan.
 
-### Workflows en vertaling {#workflows-and-translation}
+### Werkstromen en vertaling {#workflows-and-translation}
 
-Workflows zijn ook een integraal onderdeel van het [vertaalproces](/help/sites-administering/translation.md) .
+Workflows zijn ook een integraal onderdeel van het proces [Vertaling](/help/sites-administering/translation.md).
