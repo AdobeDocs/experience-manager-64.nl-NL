@@ -18,21 +18,21 @@ ht-degree: 0%
 ---
 
 
-# De consoles aanpassen{#customizing-the-consoles}
+# De consoles{#customizing-the-consoles} aanpassen
 
 >[!CAUTION]
 >
 >In dit document wordt beschreven hoe consoles in de moderne interface met aanraakbediening kunnen worden aangepast. Dit document is niet van toepassing op de klassieke gebruikersinterface.
 
-AEM beschikt over verschillende mechanismen waarmee u de consoles (en de [paginascretionaliteit](/help/sites-developing/customizing-page-authoring-touch.md)) van de ontwerpinstantie kunt aanpassen.
+AEM verstrekt diverse mechanismen om u toe te laten om de consoles (en [pagina auteursfunctionaliteit](/help/sites-developing/customizing-page-authoring-touch.md)) van uw auteursinstantie aan te passen.
 
 * Clientlibs
 
-   Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Bij het aanpassen kunt u uw eigen clientlib maken onder `/apps.` Bijvoorbeeld de code bevatten die nodig is voor uw aangepaste component.
+   Clientlibs staan u toe om de standaardimplementatie uit te breiden om nieuwe functionaliteit te realiseren, terwijl het hergebruiken van de standaardfuncties, de voorwerpen, en de methodes. Wanneer het aanpassen, kunt u uw eigen clientlib onder `/apps.` tot stand brengen bijvoorbeeld het kan de code houden die voor uw douanecomponent wordt vereist.
 
 * Bedekkingen
 
-   Bedekkingen zijn gebaseerd op knooppuntdefinities en bieden u de mogelijkheid om de standaardfunctionaliteit (in `/libs`) te bedekken met uw eigen aangepaste functionaliteit (in `/apps`). Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
+   Bedekkingen zijn gebaseerd op knooppuntdefinities en staan u toe om de standaardfunctionaliteit (in `/libs`) met uw eigen aangepaste functionaliteit (in `/apps`) te bedekken. Bij het maken van een overlay is een 1:1-kopie van het origineel niet vereist, omdat de samenvoeging van de tekenbron overerving toestaat.
 
 Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. Een kleine selectie wordt hieronder behandeld (op een hoog niveau).
 
@@ -40,32 +40,32 @@ Deze kunnen op vele manieren worden gebruikt om uw AEM consoles uit te breiden. 
 >
 >Zie voor meer informatie:
 >
->* Clibs gebruiken en maken [](/help/sites-developing/clientlibs.md).
->* Bedekkingen gebruiken en maken [](/help/sites-developing/overlays.md).
+>* Het gebruiken en het creëren van [clientlibs](/help/sites-developing/clientlibs.md).
+>* [overlays](/help/sites-developing/overlays.md) gebruiken en maken.
 >* [Graniet](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html)
 
 >
 >
-Dit onderwerp wordt ook behandeld in de zitting van [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) - de aanpassing van het [gebruikersinterface voor AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
+Dit onderwerp wordt ook behandeld in [AEM Gems](https://docs.adobe.com/content/ddc/en/gems.html) zitting - [Gebruikersinterfaceaanpassing voor AEM 6.0](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 
 >[!CAUTION]
 >
->U ***mag*** niets in het `/libs` pad wijzigen.
+>U ***must*** verandert niets in `/libs` weg.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >De aanbevolen methode voor configuratie en andere wijzigingen is:
 >
->1. Het vereiste item opnieuw maken (d.w.z. zoals het in `/libs`) `/apps`
+>1. Het vereiste item opnieuw maken (dat wil zeggen zoals het bestaat in `/libs`) onder `/apps`
    >
    >
-1. Breng wijzigingen aan in `/apps`
+1. Wijzigingen aanbrengen binnen `/apps`
 
 >
 
 
 
-De volgende locaties in de `/libs` structuur kunnen bijvoorbeeld worden bedekt:
+De volgende locaties in de `/libs`-structuur kunnen bijvoorbeeld worden bedekt:
 
 * consoles (consoles op basis van gebruikersinterface-pagina&#39;s van graniet); bijvoorbeeld:
 
@@ -98,7 +98,7 @@ De volgende locaties in de `/libs` structuur kunnen bijvoorbeeld worden bedekt:
 -->
 >[!NOTE]
 >
->Raadpleeg het Knowledge Base-artikel, [Problemen oplossen AEM TouchUI-problemen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor meer tips en gereedschappen.
+>Zie het artikel in de Knowledge Base, [Problemen oplossen AEM TouchUI-problemen](https://helpx.adobe.com/experience-manager/kb/troubleshooting-aem-touchui-issues.html), voor meer tips en gereedschappen.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -209,9 +209,9 @@ U kunt de standaardweergave (kolom, kaart, lijst) voor een console aanpassen:
 
    Definieer de volgende eigenschap:
 
-   * **Naam**: `sling:orderBefore`
-   * **Type**: `String`
-   * **Waarde**: `column`
+   * **Naam**:  `sling:orderBefore`
+   * **Type**:  `String`
+   * **Waarde**:  `column`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -263,7 +263,7 @@ You can find the code of this page on GitHub
 
 ## Nieuwe handeling toevoegen aan de werkbalk {#add-new-action-to-the-toolbar}
 
-1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld een actie **Promote to Twitter** op:
+1. U kunt uw eigen componenten bouwen en de overeenkomstige cliëntbibliotheken voor douaneacties omvatten. Bijvoorbeeld een handeling **Promote to Twitter** op:
 
    `/apps/wcm/core/clientlibs/sites/js/twitter.js`
 
@@ -275,7 +275,7 @@ You can find the code of this page on GitHub
 
    `content/jcr:content/body/content/header/items/selection/items/twitter`
 
-## Een werkbalkactie beperken tot een specifieke groep {#restrict-a-toolbar-action-to-a-specific-group}
+## Een werkbalkhandeling beperken tot een specifieke groep {#restrict-a-toolbar-action-to-a-specific-group}
 
 1. U kunt een aangepaste rendervoorwaarde gebruiken om de standaardhandeling te bedekken en specifieke voorwaarden op te leggen waaraan moet worden voldaan voordat deze wordt gerenderd.
 
@@ -295,7 +295,7 @@ You can find the code of this page on GitHub
 
    `jcr:content/body/content/header/items/default/items/create/items/createsite/rendercondition`
 
-   Met eigenschappen op dit knooppunt kunt u definiëren `groups` welke handelingen mogen worden uitgevoerd. bijvoorbeeld: `administrators`
+   Gebruikend eigenschappen op deze knoop kunt u `groups` bepalen toegestaan om de specifieke actie uit te voeren; bijvoorbeeld `administrators`
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -368,7 +368,7 @@ You can restrict access to a navigation option using ACLs:
 
 >[!NOTE]
 >
->Deze functie is geoptimaliseerd voor kolommen met tekstvelden. voor andere gegevenstypen is overlay mogelijk `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps`.
+>Deze functie is geoptimaliseerd voor kolommen met tekstvelden. voor andere gegevenstypen is het mogelijk om `cq/gui/components/siteadmin/admin/listview/columns/analyticscolumnrenderer` in `/apps` te bedekken.
 
 <!-- Needs a review by Engineering -->
 <!--
@@ -389,11 +389,11 @@ U kunt als volgt de kolommen in de lijstweergave aanpassen:
       `/apps/wcm/core/content/common/availablecolumns`
 
    * Voeg uw nieuwe kolommen toe - of verwijder bestaande kolommen.
-   Zie Bedekkingen [gebruiken (en de Samenvoeging van het Middel van de Verspreiding)](/help/sites-developing/overlays.md) voor meer informatie.
+   Zie [Bedekkingen gebruiken (en de Samenvoegen van het Middel van de Verspreiding)](/help/sites-developing/overlays.md) voor meer informatie.
 
 1. Optioneel:
 
-   * Als u aanvullende gegevens wilt aansluiten, moet u een bestand schrijven ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` met een
+   * Als u extra gegevens wilt stoppen, moet u een ` [PageInforProvider](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/wcm/api/PageInfoProvider.html)` met een
 
       `pageInfoProviderType` eigenschap.
    Bijvoorbeeld, zie hieronder de klasse/de bundel in bijlage (van GitHub).
