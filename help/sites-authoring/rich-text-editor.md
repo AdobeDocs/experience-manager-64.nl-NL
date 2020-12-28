@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# De Rich Text Editor gebruiken om inhoud te ontwerpen {#using-the-rich-text-editor-to-author-content}
+# De Rich Text Editor gebruiken om inhoud {#using-the-rich-text-editor-to-author-content} te schrijven
 
 De Rich Text Editor (RTE) is een basisbouwsteen voor het ontwerpen van tekst in AEM pagina&#39;s. Veel componenten zoals Tekst, Tekst en Afbeelding en Tabel zijn gebaseerd op RTE.
 
@@ -28,7 +28,7 @@ De Rich Text Editor (RTE) is een basisbouwsteen voor het ontwerpen van tekst in 
 
 ## Lokaal bewerken {#in-place-editing}
 
-Als u een op tekst gebaseerde component met één tik selecteert of klikt, wordt de werkbalk [van de](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste)component weergegeven.
+Als u een op tekst gebaseerde component met één tik selecteert of klikt, wordt de werkbalk [van de component](../sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) weergegeven.
 
 ![screen_shot_2018-03-21at163054](assets/screen_shot_2018-03-21at163054.png)
 
@@ -58,7 +58,7 @@ Als u bij op tekst gebaseerde componenten de modus Volledig scherm op de werkbal
 
 ![](do-not-localize/screen_shot_2018-03-21at163236.png)
 
-In de modus Volledig scherm worden alle opties van de teksteditor met tekstopmaak weergegeven die door de beheerder zijn geconfigureerd. Deze kunnen over AEM instanties [afhankelijk van de configuratie](../sites-administering/rich-text-editor.md) variëren die door de beheerders of AEM ontwikkelaars wordt verstrekt. Als een optie ontbreekt, vraag uw beheerder om het ter beschikking te stellen.
+In de modus Volledig scherm worden alle opties van de teksteditor met tekstopmaak weergegeven die door de beheerder zijn geconfigureerd. Deze variëren per AEM instanties [afhankelijk van de configuratie](../sites-administering/rich-text-editor.md) verstrekt door de beheerders of AEM ontwikkelaars. Als een optie ontbreekt, vraag uw beheerder om het ter beschikking te stellen.
 
 ![screen_shot_2018-03-21at163248](assets/screen_shot_2018-03-21at163248.png)
 
