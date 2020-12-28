@@ -1,8 +1,8 @@
 ---
-title: Opmerkingen bij de release AEM Communities
+title: Opmerkingen bij de release van AEM Communities
 seo-title: AEM Communities
-description: Opmerkingen bij de vrijgave specifiek voor Adobe Experience Manager 6.4 Gemeenschappen.
-seo-description: Opmerkingen bij de vrijgave specifiek voor Adobe Experience Manager 6.4 Gemeenschappen.
+description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4-gemeenschappen.
+seo-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.4-gemeenschappen.
 uuid: 2de9f511-2a61-4003-9b2c-d6728bc9d57a
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Opmerkingen bij de release AEM Communities {#aem-communities-release-notes}
+# Opmerkingen bij de release van AEM Communities {#aem-communities-release-notes}
 
-Deze sectie verstrekt informatie over de verbeteringen aan AEM Communities sinds de versie 6.3. Meer informatie over de nieuwe eigenschappen, zie [Nieuw in AEM 6.4 Gemeenschappen](/help/communities/whats-new-aem-communities.md).
+Deze sectie bevat informatie over de verbeteringen die sinds de release 6.3 in AEM Communities zijn aangebracht. Om meer in detail over de nieuwe eigenschappen te leren, zie [Nieuw in AEM 6.4 Communities](/help/communities/whats-new-aem-communities.md).
 
-Voor de recentste versie, zie de het [Plaatsen sectie van Gemeenschappen](/help/communities/deploy-communities.md#latest-releases) van de documentatie.
+Zie de sectie [Gemeenschappen implementeren](/help/communities/deploy-communities.md#latest-releases) van de documentatie voor de nieuwste versie.
 
 ## Belangrijkste verbeteringen {#main-improvements}
 
@@ -61,17 +61,17 @@ Moderatie:
 
 Algemene compatibiliteit met fundamentele wijzigingen in AEM 6.4.
 
-Opmerking: al deze functies zijn ook beschikbaar voor AEM 6.3. Controleer de opmerkingen bij de release AEM Communities voor [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
+Opmerking: al deze functies zijn ook beschikbaar voor AEM 6.3. Raadpleeg de AEM Communities-releaseopmerkingen voor [6.3](https://helpx.adobe.com/experience-manager/6-3/release-notes.html).
 
 ## Bekende problemen {#known-issues}
 
-* **Moderatie** - Kan bovenliggende post niet verwijderen als één enkele verwijderingsbewerking uit de gebruikersinterface voor bulkmodernisering (CQ-4236797)
-* **Console** - De koppeling Gebruikersnaam of Wachtwoord vergeten leidt naar de aanmeldingspagina in plaats van naar het bijbehorende formulier voor het opvragen van wachtwoorden (CQ-4237682)
+* **Moderatie**  - Kan bovenliggende post niet verwijderen als één enkele verwijderingsbewerking uit de bulkmoderatie-UI (CQ-4236797)
+* **Console**  - Forgot de verbinding van de Gebruikersnaam of van het Wachtwoord richt zich aan de Login Pagina in plaats van het overeenkomstige wachtwoord herwinningsvorm (CQ-4237682)
 
-## Functies selecteren {#select-features}
+## Functies {#select-features} selecteren
 
-Deskundige scores (*aangedreven door Sensei*) worden gebruikt om gokken mogelijk te maken, wat een effectieve manier is om waardevol gedrag van de gemeenschap aan te moedigen en te belonen. Het kan ook worden gebruikt om deskundigen voor aanbeveling- of marketingdoeleinden te identificeren.
+Deskundige scores (*Aangedreven door Sensei*) worden gebruikt om gamificatie toe te laten, die een efficiënte manier is om waardevol gemeenschapsgedrag aan te moedigen en te belonen. Het kan ook worden gebruikt om deskundigen voor aanbeveling- of marketingdoeleinden te identificeren.
 
 ## Demonstraties {#demonstrations}
 
-Al deze eigenschappen kunnen worden getoond gebruikend de [AEM Machine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) van de Demo openbaar op GitHub.com wanneer het gebruiken van het de demonstratiescenario van AEM Communities en ook binnen de nieuwe Wij.Retail verwijzingsimplementatie beschikbaar.
+Al deze eigenschappen kunnen worden aangetoond gebruikend [AEM demomachine](https://github.com/Adobe-Marketing-Cloud/aem-demo-machine/wiki) beschikbaar openbaar op GitHub.com wanneer het gebruiken van het de demonstratiescenario van AEM Communities en ook binnen de nieuwe Wij.Retail verwijzingsimplementatie.
