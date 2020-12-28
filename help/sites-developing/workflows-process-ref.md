@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Referentie workflowproces{#workflow-process-reference}
 
-AEM biedt verschillende processtappen die kunnen worden gebruikt voor het maken van workflowmodellen. De het processtappen van de douane kunnen ook voor taken worden toegevoegd die niet door de ingebouwde stappen worden behandeld (zie het [Creëren van de Modellen](/help/sites-developing/workflows-models.md)van het Werkschema).
+AEM biedt verschillende processtappen die kunnen worden gebruikt voor het maken van workflowmodellen. Aangepaste processtappen kunnen ook worden toegevoegd voor taken die niet door de ingebouwde stappen worden bestreken (zie [Workflowmodellen maken](/help/sites-developing/workflows-models.md)).
 
 ## Proceskenmerken {#process-characteristics}
 
@@ -37,7 +37,7 @@ Processtappen worden gedefinieerd door een Java-klasse of een ECMAScript.
 
 De nuttige lading is de entiteit waarop een werkschemainstantie handelt. De payload wordt impliciet geselecteerd door de context waarbinnen een werkschemainstantie is begonnen.
 
-Als bijvoorbeeld een workflow wordt toegepast op een AEM pagina *P* , wordt *P* van stap tot stap doorgegeven terwijl de workflow verder gaat, waarbij elke stap optioneel op *P* reageert.
+Als een workflow bijvoorbeeld wordt toegepast op een AEM pagina *P*, wordt *P* van stap tot stap doorgegeven terwijl de workflow verder gaat, waarbij elke stap optioneel op *P* op een of andere manier reageert.
 
 In het meest voorkomende geval is de lading een JCR-knooppunt in de repository (bijvoorbeeld een AEM Pagina of Element). Een JCR-knooppuntlading wordt doorgegeven als een tekenreeks die een JCR-pad of een JCR-id (UUID) is. In sommige gevallen kan de payload een JCR-eigenschap (doorgegeven als een JCR-pad), een URL, een binair object of een algemeen Java-object zijn. De individuele processtappen die op de lading handelen zullen gewoonlijk een lading van een bepaald type verwachten, of verschillend afhankelijk van het ladingstype handelen. Voor elk hieronder beschreven proces wordt het verwachte ladingstype, indien van toepassing, beschreven.
 
@@ -45,7 +45,7 @@ In het meest voorkomende geval is de lading een JCR-knooppunt in de repository (
 
 Sommige workflowprocessen accepteren argumenten die de beheerder opgeeft bij het instellen van de workflowstap.
 
-Argumenten worden als één tekenreeks ingevoerd in de eigenschap **Procesargumenten** in het deelvenster **Eigenschappen** van de werkstroomeditor. Voor elk hieronder beschreven proces, wordt het formaat van het argumentkoord beschreven in een eenvoudige grammatica EBNF. De volgende code geeft bijvoorbeeld aan dat de argumenttekenreeks bestaat uit een of meer door komma&#39;s gescheiden paren, waarbij elk paar bestaat uit een naam (een tekenreeks) en een waarde, gescheiden door een dubbele dubbele dubbele punt:
+Argumenten worden ingevoerd als één tekenreeks in de eigenschap **Procesargumenten** in het deelvenster **Eigenschappen** van de werkstroomeditor. Voor elk hieronder beschreven proces, wordt het formaat van het argumentkoord beschreven in een eenvoudige grammatica EBNF. De volgende code geeft bijvoorbeeld aan dat de argumenttekenreeks bestaat uit een of meer door komma&#39;s gescheiden paren, waarbij elk paar bestaat uit een naam (een tekenreeks) en een waarde, gescheiden door een dubbele dubbele dubbele punt:
 
 ```
     args := name '::' value [',' name '::' value]*
@@ -54,13 +54,13 @@ Argumenten worden als één tekenreeks ingevoerd in de eigenschap **Procesargume
 ```
 
 
-### Timeout {#timeout}
+### Time-out {#timeout}
 
 Na deze time-outperiode is de workflowstap niet meer operationeel. Sommige workflowprocessen respecteren de time-out, andere niet en worden genegeerd.
 
 ### Machtigingen {#permissions}
 
-De sessie die aan de gebruiker `WorkflowProcess` wordt doorgegeven, wordt ondersteund door de servicegebruiker voor de workflowprocesservice, die de volgende machtigingen heeft in de hoofdmap van de opslagplaats:
+De sessie die aan de `WorkflowProcess` wordt doorgegeven, wordt ondersteund door de servicegebruiker voor de workflowprocesservice, die de volgende machtigingen heeft in de hoofdmap van de opslagplaats:
 
 * `jcr:read`
 * `rep:write`
@@ -76,16 +76,16 @@ De geadviseerde manier om dit te doen is een de dienstgebruiker te gebruiken die
 >
 >Als u een upgrade uitvoert vanaf een versie die ouder is dan AEM 6.2, moet u mogelijk uw implementatie bijwerken.
 >
->In vorige versies, werd de admin zitting overgegaan tot de `WorkflowProcess` implementaties en kon dan volledige toegang tot de bewaarplaats hebben zonder het moeten specifieke ACLs bepalen.
+>In vorige versies, werd de admin zitting overgegaan tot `WorkflowProcess` implementaties en kon dan volledige toegang tot de bewaarplaats zonder het moeten specifieke ACLs bepalen.
 >
->De machtigingen zijn nu gedefinieerd als hierboven ([machtigingen](#permissions)). Net als de aanbevolen methode voor het bijwerken van uw implementatie.
+>De machtigingen zijn nu gedefinieerd als boven ([Machtigingen](#permissions)). Net als de aanbevolen methode voor het bijwerken van uw implementatie.
 >
 >Een kortetermijnoplossing is ook beschikbaar voor achterwaartse compatibiliteitsdoeleinden wanneer codeveranderingen niet haalbaar zijn:
 >
->* Gebruikend de Console van het Web ( `/system/console/configMgr` bepaal de plaats van de Dienst van de Configuratie van het Werkschema van **Adobe Granite**
+>* Gebruikend de Console van het Web ( `/system/console/configMgr` bepaal de plaats van **de Dienst van de Configuratie van de Werkstroom van Granite**
    >
    >
-* de modus Verouderd **workflowproces inschakelen**
+* de **Verouderde modus van workflowproces inschakelen**
 >
 >
 Dit zal terugkeren naar het oude gedrag van het verstrekken van een admin zitting aan de `WorkflowProcess` implementatie en zal onbeperkte toegang tot de volledige bewaarplaats opnieuw verlenen.
@@ -96,28 +96,28 @@ De volgende processen voeren geen handelingen uit op inhoud. Ze dienen om het ge
 
 ### AbsoluteTimeAutoAdvancer (Absolute Time Auto Advancer) {#absolutetimeautoadvancer-absolute-time-auto-advancer}
 
-Het `AbsoluteTimeAutoAdvancer` (Absolute Tijd AutoGeavanceerde) proces gedraagt zich identiek aan **AutoAdvancer**, behalve dat het bij een bepaalde tijd en datum, in plaats van na een bepaalde tijdsduur uitdraait.
+Het proces `AbsoluteTimeAutoAdvancer` (Absolute Tijd AutoBevordering) gedraagt zich identiek aan **AutoAdvancer**, behalve dat het zich op een bepaalde tijd en een datum, in plaats van na een bepaalde tijdsduur uitvouwt.
 
-* **Java-klasse**: `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
+* **Java-klasse**:  `com.adobe.granite.workflow.console.timeout.autoadvance.AbsoluteTimeAutoAdvancer`
 * **Payload**: Geen.
 * **Argumenten**: Geen.
 * **Time-out**: Procestijden vervallen wanneer de ingestelde tijd en datum zijn bereikt.
 
 ### AutoAdvancer (Auto Advancer) {#autoadvancer-auto-advancer}
 
-Het `AutoAdvancer` proces gaat automatisch door naar de volgende stap. Als er meer dan één mogelijke volgende stap (bijvoorbeeld, als er OF gesplitst is) is dan zal dit proces de werkschema langs de *standaardroute* vooruitgaan, als één is gespecificeerd, anders zal het werkschema niet geavanceerd zijn.
+Met het proces `AutoAdvancer` wordt de workflow automatisch naar de volgende stap verplaatst. Als er meer dan één mogelijke volgende stap (bijvoorbeeld, als er OF gesplitst is) is dan zal dit proces de werkschema langs de *standaardroute* vooruit, als één is gespecificeerd, anders zal het werkschema niet geavanceerd zijn.
 
-* **Java-klasse**: `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
+* **Java-klasse**:  `com.adobe.granite.workflow.console.timeout.autoadvance.AutoAdvancer`
 
 * **Payload**: Geen.
 * **Argumenten**: Geen.
 * **Time-out**: Procestijden worden na ingestelde tijdsduur weergegeven.
 
-### ProcessAssembler (procesvergadering) {#processassembler-process-assembler}
+### ProcessAssembler (Process Assembler) {#processassembler-process-assembler}
 
-Het `ProcessAssembler` proces voert veelvoudige subprocessen opeenvolgend in één enkele werkschemastap uit. Als u de `ProcessAssembler`subprocessen wilt gebruiken, maakt u één stap van dit type in uw workflow en stelt u de argumenten ervan in om de namen en argumenten van de subprocessen aan te geven die u wilt uitvoeren.
+Het `ProcessAssembler` proces voert veelvoudige subprocessen opeenvolgend in één enkele werkschemastap uit. Als u `ProcessAssembler` wilt gebruiken, maakt u één stap van dit type in uw workflow en stelt u de argumenten ervan in om de namen en argumenten van de subprocessen aan te geven die u wilt uitvoeren.
 
-* **Java-klasse**: `com.day.cq.workflow.impl.process.ProcessAssembler`
+* **Java-klasse**:  `com.day.cq.workflow.impl.process.ProcessAssembler`
 
 * **Payload**: Een DAM-middel, AEM pagina of geen lading (afhankelijk van de vereisten van subprocessen).
 * **Argumenten**:
@@ -155,15 +155,15 @@ De volgende processen voeren eenvoudige taken uit of dienen als voorbeelden.
 
 >[!CAUTION]
 >
->U ***mag*** niets in het `/libs` pad wijzigen.
+>U ***must*** verandert niets in `/libs` weg.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van de instantie, wordt overschreven (en dat deze kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en kan worden overschreven wanneer u een hotfix of functiepakket toepast).
 
 ### delete {#delete}
 
 Het item in het opgegeven pad wordt verwijderd.
 
-* **ECMAScript-pad**: `/libs/workflow/scripts/delete.ecma`
+* **ECMAScript-pad**:  `/libs/workflow/scripts/delete.ecma`
 
 * **Payload**: JCR-pad
 * **Argumenten**: Geen
@@ -173,7 +173,7 @@ Het item in het opgegeven pad wordt verwijderd.
 
 Dit is het null-proces. Het voert geen verrichting uit, maar registreert een zuivert bericht.
 
-* **ECMAScript-pad**: `/libs/workflow/scripts/noop.ecma`
+* **ECMAScript-pad**:  `/libs/workflow/scripts/noop.ecma`
 
 * **Payload**: Geen
 * **Argumenten**: Geen
@@ -181,19 +181,19 @@ Dit is het null-proces. Het voert geen verrichting uit, maar registreert een zui
 
 ### rule-false {#rule-false}
 
-Dit is een ongeldig proces dat `false` op de `check()` methode terugkeert.
+Dit is een ongeldig proces dat `false` op `check()` methode terugkeert.
 
-* **ECMAScript-pad**: `/libs/workflow/scripts/rule-false.ecma`
+* **ECMAScript-pad**:  `/libs/workflow/scripts/rule-false.ecma`
 
 * **Payload**: Geen
 * **Argumenten**: Geen
 * **Time-out**: Genegeerd
 
-### sample {#sample}
+### monster {#sample}
 
 Dit is een voorbeeld van een ECMAScript-proces.
 
-* **ECMAScript-pad**: `/libs/workflow/scripts/sample.ecma`
+* **ECMAScript-pad**:  `/libs/workflow/scripts/sample.ecma`
 
 * **Payload**: Geen
 * **Argumenten**: Geen
@@ -203,7 +203,7 @@ Dit is een voorbeeld van een ECMAScript-proces.
 
 Dit is een eenvoudig workflowproces dat de opgegeven URL aanroept. Doorgaans wordt de URL een verwijzing naar een JSP (of ander servletequivalent) dat een eenvoudige taak uitvoert. Dit proces mag alleen tijdens de ontwikkeling en demonstraties worden gebruikt en niet in een productieomgeving. De argumenten specificeren URL, login en wachtwoord.
 
-* **ECMAScript-pad**: `/libs/workflow/scripts/urlcaller.ecma`
+* **ECMAScript-pad**:  `/libs/workflow/scripts/urlcaller.ecma`
 
 * **Payload**: Geen
 * **Argumenten**:
@@ -226,8 +226,8 @@ Vergrendelt de lading van de workflow.
 * **Java, klasse:** `com.day.cq.workflow.impl.process.LockProcess`
 
 * **Payload:** JCR_PATH en JCR_UID
-* **Argumenten:** Geen
-* **Time-out:** Genegeerd
+* **argumenten:** geen
+* **time-out:** genegeerd
 
 De stap heeft geen effect in de volgende omstandigheden:
 
@@ -241,8 +241,8 @@ Ontgrendelt de lading van de workflow.
 * **Java, klasse:** `com.day.cq.workflow.impl.process.UnlockProcess`
 
 * **Payload:** JCR_PATH en JCR_UID
-* **Argumenten:** Geen
-* **Time-out:** Genegeerd
+* **argumenten:** geen
+* **time-out:** genegeerd
 
 De stap heeft geen effect in de volgende omstandigheden:
 
@@ -257,7 +257,7 @@ Het volgende proces voert een versie-verwante taak uit.
 
 Hiermee maakt u een nieuwe versie van de taakbelasting van de werkstroom (AEM pagina of DAM-element).
 
-* **Java-klasse**: `com.day.cq.wcm.workflow.process.CreateVersionProcess`
+* **Java-klasse**:  `com.day.cq.wcm.workflow.process.CreateVersionProcess`
 
 * **Payload**: Een JCR-pad of UUID die verwijst naar een pagina of DAM-element
 * **Argumenten**: Geen
