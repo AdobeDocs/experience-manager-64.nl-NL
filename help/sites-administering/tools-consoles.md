@@ -20,12 +20,12 @@ ht-degree: 9%
 
 # Gereedschapsconsoles{#tools-consoles}
 
-Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flavors van de console van **Hulpmiddelen** afhankelijk van UI u gebruikt:
+Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde beheertools voor uw websites, digitale elementen en andere aspecten van de content-repository. Er zijn momenteel twee flavors van de **console Tools** afhankelijk van UI u gebruikt:
 
 * [Gereedschappen - Klassieke gebruikersinterface](#tools-classic-ui)
 * [Gereedschappen - Touch-Optimized UI](#tools-touch-optimized-ui)
 
-## Gereedschappen - Klassieke gebruikersinterface {#tools-classic-ui}
+## Gereedschappen - Klassieke UI {#tools-classic-ui}
 
 <table> 
  <tbody> 
@@ -40,14 +40,14 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>Gecentraliseerd punt voor het beheer van uw meerdere sites.</td> 
   </tr> 
   <tr> 
-   <td>Contextconfiguraties voor clients<br /> </td> 
+   <td>Clientcontextconfiguraties<br /> </td> 
    <td> </td> 
-   <td>De context <a href="/help/sites-developing/client-context.md">van de</a> Cliënt vertegenwoordigt een dynamisch geassembleerde inzameling van gebruikersgegevens. Hier worden de standaard- en marketingcloudconfiguraties gehouden.<br /> </td> 
+   <td>De <a href="/help/sites-developing/client-context.md">Clientcontext</a> vertegenwoordigt een dynamisch geassembleerde verzameling van gebruikersgegevens. De standaard en marketing wolkenconfiguraties worden hier gehouden.<br /> </td> 
   </tr> 
   <tr> 
-   <td>Configuraties van Cloud Services<br /> </td> 
+   <td>Cloud Services Configurations<br /> </td> 
    <td> </td> 
-   <td>Bevat configuraties die gerelateerd zijn aan <a href="/help/sites-administering/marketing-cloud.md">Integratie met de Adobe Marketing Cloud</a>.</td> 
+   <td>Bevat configuraties gerelateerd aan <a href="/help/sites-administering/marketing-cloud.md">Integratie met de Adobe Marketing Cloud</a>.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/ecommerce.md">Handel</a></td> 
@@ -62,7 +62,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td>DAM - Health Checker<br /> </td> 
    <td> </td> 
-   <td>Vergelijkt <code>/var/dam</code> en <code>/content/dam</code><br /> en controleert op eventuele inconsistenties. Alle vermelde bestanden/mappen kunnen vervolgens worden gesynchroniseerd of verwijderd. De types van knopen voor omslagvergelijking zijn configureerbaar in de Webconsole.</td> 
+   <td>Vergelijkt <code>/var/dam</code> en <code>/content/dam</code> en controleert op <br /> om het even welke inconsistenties. Alle vermelde bestanden/mappen kunnen vervolgens worden gesynchroniseerd of verwijderd. De types van knopen voor omslagvergelijking zijn configureerbaar in de Webconsole.</td> 
   </tr> 
   <tr> 
    <td>DAM - Adobe InDesign<br /> </td> 
@@ -107,7 +107,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td><a href="/help/sites-administering/external-link-checker.md">Externe koppelingencontrole</a></td> 
    <td> </td> 
-   <td>Scant alle inhoudspagina's binnen uw AEM instantie en controleert om het even welke externe verbindingen. Er wordt een lijst met geldige en ongeldige koppelingen weergegeven.</td> 
+   <td>Alle inhoudspagina's binnen uw AEM instantie en controles om het even welke externe verbindingen. Er wordt een lijst met geldige en ongeldige koppelingen weergegeven.</td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-authoring/mobile.md">Mobiel</a></td> 
@@ -130,12 +130,12 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>Een alternatieve verbinding aan de Manager van het Pakket die de pakketten toont die voor AEM WCM zijn geladen. Gelijkaardig aan de informatie die in de Manager van het Pakket van CRX wordt getoond.</td> 
   </tr> 
   <tr> 
-   <td>Replicatie - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">replicatieagents</a></td> 
+   <td>Replicatie - <a href="/help/sites-deploying/configuring.md#replication-reverse-replication-and-replication-agents">Replication Agents</a></td> 
    <td> </td> 
    <td>Wordt gebruikt om gegevens van auteur te repliceren voor publicatie bij het publiceren van pagina's of met omgekeerde replicatie om gebruikersopmerkingen van de publicatieomgeving te retourneren aan auteur.</td> 
   </tr> 
   <tr> 
-   <td>Importeurs - <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">Boomstructuur activeren</a></td> 
+   <td>Importeurs - <a href="/help/sites-authoring/publishing-pages.md#publishing-and-unpublishing-a-tree">Boom activeren</a></td> 
    <td> </td> 
    <td>Via het tabblad Websites kunt u de afzonderlijke pagina's activeren. Wanneer u een aanzienlijk aantal inhoudspagina's hebt ingevoerd of bijgewerkt (die allemaal ingezeten zijn onder dezelfde basispagina), kan het eenvoudiger zijn de gehele structuur in één actie te activeren. U kunt ook een droog programma uitvoeren om een activering na te bootsen en te markeren welke pagina's moeten worden geactiveerd.</td> 
   </tr> 
@@ -162,7 +162,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td><a href="/help/communities/working-with-srp.md">socialconfig</a></td> 
    <td> </td> 
-   <td>Standaard SRP-configuratie. Zie <a href="/help/communities/srp-config.md">Opslagconfiguratieconsole</a> .</td> 
+   <td>Standaard SRP-configuratie. Zie <a href="/help/communities/srp-config.md">Opslagconfiguratie</a> console.</td> 
   </tr> 
   <tr> 
    <td>taakbeheer</td> 
@@ -175,7 +175,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
    <td>Geen actieve functionaliteit met betrekking tot dit item.</td> 
   </tr> 
   <tr> 
-   <td>Versioning - <a href="/help/sites-deploying/version-purging.md">Purgeerversies</a></td> 
+   <td>Versioning - <a href="/help/sites-deploying/version-purging.md">Versies wissen</a></td> 
    <td> </td> 
    <td>Hiermee kunt u de paginaversies naar wens wissen.</td> 
   </tr> 
@@ -187,7 +187,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td>wachtwoorden</td> 
    <td> </td> 
-   <td>Afgekeurd. Zie <a href="/help/communities/moderate-ugc.md#watchwords">Modernisering van Community-inhoud</a></td> 
+   <td>Afgekeurd. Zie <a href="/help/communities/moderate-ugc.md#watchwords">Communautaire inhoud moderniseren</a></td> 
   </tr> 
   <tr> 
    <td><a href="/help/sites-administering/workflows.md">Workflow</a></td> 
@@ -197,7 +197,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
  </tbody> 
 </table>
 
-## Gereedschappen - Touch-Optimized UI {#tools-touch-optimized-ui}
+## Gereedschappen - Voor aanraking geoptimaliseerde gebruikersinterface {#tools-touch-optimized-ui}
 
 <table> 
  <tbody> 
@@ -264,7 +264,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   <tr> 
    <td> </td> 
    <td><a href="/help/sites-administering/reporting.md">Rapporten</a></td> 
-   <td>Aangepaste rapporten maken en controleren.<br /> </td> 
+   <td>Creeer en controleer douanerapporten.<br /> </td> 
   </tr> 
   <tr> 
    <td> </td> 
@@ -313,7 +313,7 @@ Via de **gereedschapsconsoles** hebt u toegang tot een aantal gespecialiseerde b
   </tr> 
   <tr> 
    <td> </td> 
-   <td>Webconsoleconfiguratie-dummpje<br /> </td> 
+   <td>Webconsole-configuratiedump<br /> </td> 
    <td>Download de configuratiestatus van de webconsole.<br /> </td> 
   </tr> 
   <tr> 
