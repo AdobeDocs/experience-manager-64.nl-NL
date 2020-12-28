@@ -82,13 +82,13 @@ Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen pro
 
 ## Gemeenschappen {#communities}
 
-[AEM Communities](/help/communities/overview.md) vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen.
+[AEM ](/help/communities/overview.md) communautarisering vergemakkelijkt de oprichting en het beheer van niet-lokale gemeenschappen.
 
 Hier worden enkele beste praktijken voor de Gemeenschappen beschreven:
 
 |  |  |  |
 |---|---|---|
-| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [Codeerrichtlijnen](/help/communities/code-guide.md) | Richtsnoeren voor de ontwikkeling van flexibele, draagbare code voor het [sociale kader](/help/communities/scf.md) (SCF). |
+| Aanbevolen werkwijzen voor het werken met door de gebruiker gegenereerde inhoud (UGC) | [Codeerrichtlijnen](/help/communities/code-guide.md) | Richtlijnen voor de ontwikkeling van flexibele, draagbare code voor het [sociale-componentframework](/help/communities/scf.md) (SCF). |
 | Voorbeeld van het gebruik van communautaire componenten | [Community Components Guide](/help/communities/components-guide.md) | Een interactief ontwikkelingsprogramma. |
 
 ## Tooling/HTL {#tooling-htl}
