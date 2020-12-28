@@ -1,8 +1,8 @@
 ---
 title: Werken met Dynamic Media
 seo-title: Werken met Dynamic Media
-description: Met Dynamic Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set master elementen genereert Dynamic Media meerdere variaties van rijke inhoud in realtime via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk
-seo-description: Met Dynamic Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set master elementen genereert Dynamic Media meerdere variaties van rijke inhoud in realtime via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk
+description: Dynamic Media helpt bij het leveren van rijke visuele merchandising- en marketingmiddelen op aanvraag, die automatisch worden geschaald voor consumptie op internet, mobiele apparaten en sociale sites. Met behulp van een set master middelen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, prestatiegeoptimaliseerde netwerk
+seo-description: Dynamic Media helpt bij het leveren van rijke visuele merchandising- en marketingmiddelen op aanvraag, die automatisch worden geschaald voor consumptie op internet, mobiele apparaten en sociale sites. Met behulp van een set master middelen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, prestatiegeoptimaliseerde netwerk
 uuid: 201d7ff5-0ebc-4680-9ac4-00c229be5f04
 contentOwner: Chris Bohnert
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
@@ -20,13 +20,13 @@ ht-degree: 4%
 
 # Werken met Dynamic Media{#working-with-dynamic-media}
 
-[Met Dynamic Media](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) kunt u op aanvraag rijke visuele producten en marketingmaterialen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set master elementen genereert Dynamic Media in real-time meerdere variaties van rijke inhoud en levert het via het algemene, schaalbare, voor prestaties geoptimaliseerde netwerk.
+[Met Dynamic ](https://www.adobe.com/solutions/web-experience-management/dynamic-media.html) Media kunt u op aanvraag rijke visuele merchandising- en marketingmiddelen leveren, die automatisch worden geschaald voor gebruik op websites, mobiele apparaten en sociale sites. Met behulp van een set master middelen genereert en levert Dynamic Media in real-time meerdere variaties van rijke inhoud via het wereldwijde, schaalbare, voor prestaties geoptimaliseerde netwerk.
 
 Dynamische media zijn geschikt voor interactieve kijkervaringen, zoals zoomen, 360 graden draaien en video. Dynamische media verenigt op unieke wijze de workflows van de Adobe Experience Manager Digital Asset Management (Assets)-oplossing om het beheerproces voor digitale campagnes te vereenvoudigen en te stroomlijnen.
 
-Werken met dynamische media is niet beschikbaar in de klassieke interface. Zie [Werken met dynamische media,](/help/assets/dynamic-media.md) waarin de gebruikersinterface met aanraakbediening wordt behandeld.
+Werken met Dynamic Media is niet beschikbaar in de klassieke gebruikersinterface. Zie [Werken met Dynamic Media,](/help/assets/dynamic-media.md) voor de aanraakinterface.
 
 >[!NOTE]
 >
->Als u Dynamic Media gebruikt, kunt u niet tegelijkertijd de beschikbare automatische uploads gebruiken als u Dynamic Media Classic [integreert in AEM](/help/sites-administering/scene7.md). Zie Dynamische media [inschakelen](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamische media is standaard uitgeschakeld.
+>Als u Dynamic Media gebruikt, kunt u niet gelijktijdig automatische uploads gebruiken beschikbaar als [Dynamic Media Classic in AEM](/help/sites-administering/scene7.md) integreert. Zie [inschakelen van Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media is standaard uitgeschakeld.
 
