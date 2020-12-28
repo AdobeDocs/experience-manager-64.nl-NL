@@ -18,7 +18,7 @@ ht-degree: 1%
 ---
 
 
-# Controlelijsten{#checklists}
+# Controlklists{#checklists}
 
 In de volgende checklist worden enkele van de belangrijkste problemen beschreven. Lees de andere secties over Testen voor meer informatie.
 
@@ -37,5 +37,5 @@ In de volgende checklist worden enkele van de belangrijkste problemen beschreven
 
 >[!NOTE]
 >
->U kunt ook de Checklist [](/help/managing/best-practices.md) voor het beheren van projecten - Beste praktijken voor meer controlelijsten met betrekking tot het volledige project zien.
+>U kunt [Beheerde Projecten - Checklist van Beste praktijken ](/help/managing/best-practices.md) voor verdere controlelijsten met betrekking tot het volledige project ook zien.
 
