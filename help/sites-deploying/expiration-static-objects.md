@@ -39,7 +39,7 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
 
 >[!CAUTION]
 >
->U moet voorzichtig zijn wanneer u de tijdsperiode definieert waarin een object als up-to-date wordt beschouwd. Aangezien er *geen controle is tot de gespecificeerde tijdspanne is verlopen*, kan de cliënt op omhoog het voorstellen van oude inhoud van het geheime voorgeheugen belanden.
+>U moet voorzichtig zijn wanneer u de tijdsperiode definieert waarin een object als up-to-date wordt beschouwd. Aangezien er *geen controle is tot de gespecificeerde tijdspanne is verlopen*, kan de cliënt omhoog het voorstellen van oude inhoud van het geheime voorgeheugen beëindigen.
 
 1. **Voor een instantie Auteur:**
 
@@ -75,7 +75,7 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
    </Location>
    ```
 
-   Hierdoor kan de cache (bijvoorbeeld de cache van de browser) gedurende maximaal één dag CSS-, Javascript-, PNG- en GIF-bestanden in clientcache opslaan. Hoewel dit voorbeeld algemene instellingen illustreert voor alle onderstaande items `/content` en `/etc/designs`het korrelig moet maken.
+   Hierdoor kan de cache (bijvoorbeeld de cache van de browser) gedurende maximaal één dag CSS-, Javascript-, PNG- en GIF-bestanden in clientcache opslaan. Hoewel dit voorbeeld algemene instellingen illustreert voor alles onder `/content` en `/etc/designs`, zou u het korter moeten maken.
 
    Afhankelijk van hoe vaak uw site wordt bijgewerkt, kunt u ook overwegen HTML-pagina&#39;s in cache te plaatsen. Een redelijke termijn zou 1 uur zijn:
 
@@ -85,4 +85,4 @@ Alle bestanden, die niet dynamisch zijn en niet in de loop der tijd veranderen, 
    </Location>
    ```
 
-Nadat u de statische objecten hebt geconfigureerd, scant u `request.log`tijdens het selecteren van pagina&#39;s die dergelijke objecten bevatten, om te bevestigen dat er geen (overbodige) aanvragen worden gedaan voor statische objecten.
+Nadat u de statische voorwerpen hebt gevormd, aftasten `request.log`, terwijl het selecteren van pagina&#39;s die dergelijke voorwerpen houden, om te bevestigen dat geen (onnodige) verzoeken voor statische voorwerpen worden gemaakt.
