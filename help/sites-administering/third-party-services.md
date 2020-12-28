@@ -34,13 +34,13 @@ Met AEM, kunt u met de volgende niet Adobe producten uit de doos integreren:
 * Twitter - sociale netwerken
 * YouTube - video delen
 
-Bovendien kunt u AEM met de [Marketing Cloud](/help/sites-administering/marketing-cloud.md) en met de [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md)integreren.
+Bovendien kunt u AEM integreren met [Marketing Cloud](/help/sites-administering/marketing-cloud.md) en met [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md).
 
-## Integratie met Salesforce {#integrating-with-salesforce}
+## Integreren met Salesforce {#integrating-with-salesforce}
 
 Salesforce.com is het bedrijf voor cloud computing op bedrijfsniveau dat de overstap naar de sociale onderneming leidt.
 
-Zie [Integratie met Salesforce](/help/sites-administering/salesforce.md)voor informatie over het integreren van uw AEM en Salesforce.
+Voor informatie over het integreren van uw AEM plaats en Salesforce, zie [Integrating met Salesforce](/help/sites-administering/salesforce.md).
 
 ## Integreren met Silverpop Engage {#integrating-with-silverpop-engage}
 
@@ -50,13 +50,13 @@ Zie [Integratie met Salesforce](/help/sites-administering/salesforce.md)voor inf
 
 Silverpop Engage biedt marketingautomatisering, e-mail, mobiele en sociale mogelijkheden.
 
-Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie het [Integreren met de Ingenieur](/help/sites-administering/silverpop.md)Silverpop.
+Zie [Integreren met Silverpop Engage](/help/sites-administering/silverpop.md) voor informatie over het integreren van uw AEM en ExactTarget.
 
 ## Integreren met ExactTarget {#integrating-with-exacttarget}
 
 De e-mailmarketingoplossingen van ExactTarget stellen organisaties van elke omvang in staat om gerichte, bedrijfskritieke en volledig geïntegreerde e-mailcampagnes te ontwerpen en te leveren.
 
-Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie het [Vormen ExactTarget](/help/sites-administering/exacttarget.md).
+Voor informatie over het integreren van uw AEM plaats en ExactTarget, zie [het Vormen ExactTarget](/help/sites-administering/exacttarget.md).
 
 ## Integratie met Facebook en Twitter {#integrating-with-facebook-and-twitter}
 
@@ -66,4 +66,4 @@ Zie [Sociale aanmelding](/help/communities/social-login.md) voor meer informatie
 
 ## Integreren met andere providers {#integrating-with-other-providers}
 
-Met AEM kunt u verbinding maken met andere externe providers via een [algemeen analysekopakket.](/help/sites-administering/external-providers.md)
+Met AEM kunt u verbinding maken met andere externe providers via een [Generic Analytics Snippet.](/help/sites-administering/external-providers.md)
