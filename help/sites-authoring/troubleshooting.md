@@ -18,7 +18,7 @@ ht-degree: 10%
 ---
 
 
-# Problemen met AEM bij ontwerpen oplossen{#troubleshooting-aem-when-authoring}
+# AEM oplossen bij ontwerpen{#troubleshooting-aem-when-authoring}
 
 De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AEM zou kunnen ontmoeten, samen met suggesties op hoe te om hen problemen op te lossen.
 
@@ -28,13 +28,13 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
 
 >[!NOTE]
 >
->De gebruikers die beheerdervoorrechten hebben, en die problemen met AEM willen oplossen, kunnen de het oplossen van problemenmethodes gebruiken die in de AEM van het Oplossen van [problemen (voor Beheerders)](/help/sites-administering/troubleshoot.md)worden beschreven. Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
+>Gebruikers die beheerdersrechten hebben en die problemen met AEM willen oplossen, kunnen de methoden voor het oplossen van problemen gebruiken die worden beschreven in [AEM voor beheerders)](/help/sites-administering/troubleshoot.md). Als u niet voldoende rechten hebt, raadpleegt u uw systeembeheerder over AEM voor probleemoplossing.
 
-## Oude paginaversie blijft op gepubliceerde site staan {#old-page-version-still-on-published-site}
+## Oude paginaversie nog steeds op gepubliceerde site {#old-page-version-still-on-published-site}
 
 * **Probleem**:
 
-   * U hebt wijzigingen aangebracht in een pagina en de pagina gekopieerd naar de publicatiesite, maar de *oude* versie van de pagina wordt nog wel weergegeven op de publicatiesite.
+   * U hebt wijzigingen aangebracht in een pagina en de pagina gekopieerd naar de publicatiesite, maar de *oude*-versie van de pagina wordt nog steeds weergegeven op de publicatiesite.
 
 * **Reden**:
 
@@ -45,7 +45,7 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
    * Hier zijn verschillende mogelijkheden:
    * Controleer of de pagina correct is gerepliceerd. Controleer de paginastatus en, indien nodig, de status van de replicatiewachtrij.
    * Wis de cache in uw lokale browser en open de pagina opnieuw.
-   * Toevoegen `?` aan het einde van de pagina-URL. Bijvoorbeeld:
+   * Voeg `?` aan het eind van pagina URL toe. Bijvoorbeeld:
 
       * `http://localhost:4502/sites.html/content?`
       * Hiermee wordt de pagina rechtstreeks bij AEM aangevraagd en wordt de Dispatcher overgeslagen. Als u de bijgewerkte pagina ontvangt, geeft dit aan dat u de cache van de Dispatcher moet wissen.
