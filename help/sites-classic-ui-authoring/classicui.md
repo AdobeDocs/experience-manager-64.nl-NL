@@ -18,18 +18,18 @@ ht-degree: 0%
 ---
 
 
-# Ontwerpen in de klassieke gebruikersinterface{#authoring-in-the-classic-ui}
+# Ontwerpen in Klassieke UI{#authoring-in-the-classic-ui}
 
-## Classic UI and Touch-Enabled UI {#classic-ui-and-touch-enabled-ui}
+## Klassieke interface en interface met aanraakbediening {#classic-ui-and-touch-enabled-ui}
 
 De klassieke gebruikersinterface is de bureaubladgeoriënteerde gebruikersinterface die beschikbaar was sinds CQ5 (de predecessory naar AEM). De volgende documentatie over creatie is geconcentreerd op deze UI.
 
-De interface met aanraakbediening is de nieuwe standaardgebruikersinterface voor AEM, die is ontworpen voor zowel touch- als desktopapparaten. Zie de [standaarddocumentatie](/help/sites-authoring/author.md) voor het schrijven van programmacode voor meer informatie.
+De interface met aanraakbediening is de nieuwe standaardgebruikersinterface voor AEM, die is ontworpen voor zowel touch- als desktopapparaten. Zie de [standaardontwerpdocumentatie](/help/sites-authoring/author.md) voor meer informatie.
 
 >[!NOTE]
 >
 >Omdat de gebruikersinterface met aanraakfuncties de standaardinterface van AEM is, blijft de klassieke gebruikersinterface niet langer behouden. Dit betekent dat er bepaalde functionaliteit is die niet beschikbaar in klassieke UI is.
 
-## Concept of Authoring (en publicatie) {#concept-of-authoring-and-publishing}
+## Concept of Authoring (and Publishing) {#concept-of-authoring-and-publishing}
 
-Ongeacht de keus van UI, zijn er bepaalde concepten en ideeën gemeenschappelijk aan creatie, die [hier in de standaard auteursdocumentatie](/help/sites-authoring/author.md#concept-of-authoring-and-publishing)goed worden beschreven.
+Ongeacht de keus van UI, zijn er bepaalde concepten en ideeën gemeenschappelijk aan creatie, die goed - beschreven [hier in de standaard auteursdocumentatie](/help/sites-authoring/author.md#concept-of-authoring-and-publishing) zijn.
