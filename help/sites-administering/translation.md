@@ -28,13 +28,13 @@ Automatiseer de vertaling van pagina-inhoud, elementen en door de gebruiker gege
 
 Voor het vertalen van inhoud worden de volgende stappen uitgevoerd:
 
-1. [Sluit AEM aan bij uw vertaalserviceprovider](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) en [maak configuraties](/help/sites-administering/tc-tic.md)voor vertaalintegratie.
+1. [Sluit AEM aan bij uw ](/help/sites-administering/tc-tic.md#connecting-to-a-translation-service-provider) leverancier van vertaalservices en  [maak configuraties](/help/sites-administering/tc-tic.md) van vertaalintegratieframework.
 
-1. [Koppel de pagina&#39;s van uw master](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) taal aan de vertaalservice en frameworkconfiguraties.
-1. [Identificeer het type inhoud](/help/sites-administering/tc-rules.md) dat u wilt vertalen.
-1. [Bereid de inhoud voor vertaling](/help/sites-administering/tc-prep.md) voor door de master taal te ontwerpen en de basispagina&#39;s van taalkopieën te maken.
-1. [Maak vertaalprojecten](/help/sites-administering/tc-manage.md) om de inhoud te verzamelen die u wilt vertalen en om het vertaalproces voor te bereiden.
-1. Gebruik de vertaalprojecten om het vertaalproces [van de inhoud te](/help/sites-administering/tc-manage.md)beheren.
+1. [Koppel de pagina&#39;s van uw taalbeheersing ](/help/sites-administering/tc-tic.md#configuring-pages-for-translation) aan de vertaalservice en frameworkconfiguraties.
+1. [Identificeer het type ](/help/sites-administering/tc-rules.md) inhoud dat u wilt vertalen.
+1. [Bereid de inhoud voor voor ](/help/sites-administering/tc-prep.md) vertaling door de master taal te ontwerpen en de basispagina&#39;s van taalkopieën te maken.
+1. [Maak vertaalprojecten ](/help/sites-administering/tc-manage.md) om de te vertalen inhoud te verzamelen en het vertaalproces voor te bereiden.
+1. Gebruik de vertaalprojecten om het vertaalproces [te beheren van de inhoud](/help/sites-administering/tc-manage.md).
 
 Als uw vertaalservicebureau geen aansluiting voor integratie met AEM biedt, ondersteunt AEM het handmatig extraheren en opnieuw invoegen van vertaalinhoud in XML-indeling.
 
@@ -44,4 +44,4 @@ Als uw vertaalservicebureau geen aansluiting voor integratie met AEM biedt, onde
 
 ## Best practices voor {#best-practices}
 
-De pagina Aanbevolen werkwijzen voor [vertaling](/help/sites-administering/tc-bp.md) bevat belangrijke informatie over uw implementatie.
+De pagina [Aanbevolen procedures voor vertaling](/help/sites-administering/tc-bp.md) bevat belangrijke informatie over uw implementatie.
