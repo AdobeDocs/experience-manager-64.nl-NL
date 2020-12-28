@@ -10,7 +10,7 @@ ht-degree: 3%
 ---
 
 
-# Verouderde en verwijderde functies {#deprecated-and-removed-features}
+# Vervangen en verwijderde functies {#deprecated-and-removed-features}
 
 Adobe evalueert continu de productfuncties, zodat oudere functies na verloop van tijd kunnen worden bijgewerkt of vervangen door modernere alternatieven om de algehele waarde voor de klant te verbeteren. Hierbij wordt altijd zorgvuldig gekeken naar compatibiliteit met oudere versies.
 
@@ -37,7 +37,7 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 | Portal Director | De Portal Director is een reeks functies waarmee u via Portlet AEM inhoud kunt hosten op servers van derden. Adobe is niet van plan om verdere verbeteringen aan te brengen in de functie Portal Director onder de hieronder vermelde locatie. AEM 6.4 heeft het Portaal Director inbegrepen, en klanten die van vroegere versies bevorderen kunnen het blijven gebruiken zoals is. Let erop dat Portal Direct volledig wordt ondersteund terwijl het wordt afgekeurd. <ul><li>/libs/portal/director</li></ul> | Adobe is niet van plan om een vervangend item aan te bieden. |
 | Portlet-component | Portlet-componenten onder /foundation/components/portlet maken het hosten van JSR Portlets in AEM als onderdelen mogelijk. Adobe is niet van plan de functie Portlet-component verder te verbeteren. AEM 6.4 is voorzien van de Portlet-component en klanten die een upgrade uitvoeren van eerdere versies, kunnen deze blijven gebruiken zoals ze zijn. Portlet-component wordt nog steeds volledig ondersteund wanneer deze wordt vervangen. | Adobe is niet van plan om een vervangend item aan te bieden. |
 | Forms | Ondersteuning voor de Adobe Central Migration Bridge-service is afgekeurd omdat het Adobe Central-product niet meer wordt ondersteund. | Geen vervanging |
-| Forms | Vervangen gebruik van JSONObject in Vraag en OperationOptions. De volgende API&#39;s zijn afgekeurd: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | De `IValueMap` API gebruiken |
+| Forms | Vervangen gebruik van JSONObject in Vraag en OperationOptions. De volgende API&#39;s zijn afgekeurd: <ul><li>`setArguments(JSONObject arguments)`</li><li> `JSONObject getArguments()`</li><li>`OperationOptions(String operationId, JSONObject arguments)`</li><li>`JSONObject getArguments()`</li><li> `void setArguments(JSONObject arguments)`</li></ul> | De `IValueMap`-API gebruiken |
 | Forms | Vervangen Central Migration Bridge-service. | Er wordt geen vervanging aangeboden. |
 | Assets | Offloading van activa is vanaf AEM 6.4 afgekeurd. |  |
 | Ontwikkelaars | Lodash-/onderstrepingsclientbibliotheek. Adobe is niet van plan om de Lodash/underscore-clientbibliotheek die als onderdeel van de distributie wordt verzonden, verder te onderhouden en bij te werken (Quickstart) | Adobe raadt klanten aan die nog steeds Lodash/onderstrepingsteken voor hun code nodig hebben om het in hun basis van de projectcode toe te voegen. |
@@ -147,11 +147,12 @@ Klanten wordt aangeraden na te gaan of zij in hun huidige implementatie gebruik 
 
 ## Verwijderde functies {#removed-features}
 
-In de onderstaande tabel staan de functies en mogelijkheden die uit AEM 6.4 zijn verwijderd. Eerdere versies hadden deze mogelijkheden gemarkeerd als afgekeurd.
+In de onderstaande tabel staan de functies en mogelijkheden die uit AEM 6.4 zijn verwijderd. In eerdere versies waren deze mogelijkheden gemarkeerd als
+afgekeurd.
 
 | Gebied | Functie | Vervanging |
 |---|---|---|
-| Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De plug-in [ActivityMap van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
+| Activity Map Analytics | De versie van de Activity Map die in AEM is opgenomen. | Vanwege beveiligingswijzigingen in de Adobe Analytics API is het niet langer mogelijk om de versie van de Activity Map te gebruiken die in AEM is opgenomen. De [ActivityMap-plug-in van Adobe Analytics](https://docs.adobe.com/content/help/en/analytics/analyze/activity-map/getting-started/get-started-users/activitymap-install.html) moet nu worden gebruikt. |
 | Components-Forms | Form Captcha (stichting/componenten/form/captcha) | Gebruik in plaats hiervan de component ReCaptcha door Google |
 | Onderdelen | Presentatie (basis/componenten/presentatie) | Geen vervanging |
 | Onderdelen | Flash (stichting/componenten/flits) | Geen vervanging |
@@ -178,4 +179,4 @@ De onderstaande tabel bevat een lijst met wijzigingen voor toekomstige release d
 | Gebied | Functie | Aankondiging |
 |---|---|---|
 | Browserondersteuning | Microsoft Internet Explorer | AEM 6.4 is de laatste versie die Microsoft Internet Explorer 11 ondersteunt. |
-| Stichting | UI Framework | Adobe heeft in 2019 de Coral UI 2-componenten afgekeurd. AEM 6.4 is volledig gebaseerd op Coral UI 3 (geïntroduceerd met AEM 6.2). Adobe raadt zijn klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om deze aan Koraal 3 te refactored. Adobe biedt een hulpmiddel om de dialogen van Koraal 2 om te zetten in Koraal 3 - [Lees meer](/help/sites-developing/dialog-conversion.md). |
+| Stichting | UI Framework | Adobe heeft in 2019 de Coral UI 2-componenten afgekeurd. AEM 6.4 is volledig gebaseerd op Coral UI 3 (geïntroduceerd met AEM 6.2). Adobe raadt zijn klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om deze aan Koraal 3 te refactored. Adobe biedt een hulpmiddel om de dialogen van Koraal 2 in Koraal 3 om te zetten - [Meer informatie](/help/sites-developing/dialog-conversion.md). |
