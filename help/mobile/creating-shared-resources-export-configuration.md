@@ -18,17 +18,17 @@ ht-degree: 0%
 ---
 
 
-# Configuratie voor gedeelde bronnen exporteren{#creating-shared-resources-export-configuration}
+# Het creëren van de Configuratie van de Uitvoer van Gedeelde Middelen{#creating-shared-resources-export-configuration}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 >[!CAUTION]
 >
 >**Vereiste**:
 >
->Alvorens over het creëren van en het wijzigen van gedeelde middelen te leren, zie de Synchronisatie [van de](/help/mobile/mobile-ondemand-contentsync.md) Inhoud om de basisconcepten te begrijpen.
+>Alvorens over het creëren van en het wijzigen van gedeelde middelen te leren, zie [Content Sync](/help/mobile/mobile-ondemand-contentsync.md) om de basisconcepten te begrijpen.
 
 AEM Mobile-gebruikers gebruiken Content Sync om live-inhoud te exporteren naar statische inhoud voor gebruik in Mobile Apps. Deze export vindt plaats wanneer inhoud vanuit AEM Mobile wordt geüpload naar Mobile On-Demand Services.
 
@@ -38,7 +38,7 @@ In de volgende bronnen wordt beschreven hoe u gedeelde bronnen van Adobe Experie
 
 Met gedeelde HTML-bronnen kunnen artikelen HTML-bronnen delen die anders voor alle artikelen moeten worden gedupliceerd en kunnen pictogrammen, lettertypen, javascript en css worden opgenomen.
 
-De configuratie van de Synchronisatie van de Inhoud die bij **&lt;dps-exportTemplate>/dps-HTMLResources>** wordt gevonden zou moeten worden gevormd om al inhoud uit te voeren een artikel voor bezit statische teruggeven op apparaat.
+De configuratie van de Synchronisatie van de Inhoud die bij **&lt;dps-exportTemplate>/dps-HTMLResources>** wordt gevonden zou moeten worden gevormd om al inhoud uit te voeren een artikel dat voor bezit statische het teruggeven op apparaat wordt vereist.
 
 >[!CAUTION]
 >
@@ -55,7 +55,7 @@ De configuratie van de Synchronisatie van de Inhoud die bij **&lt;dps-exportTemp
 Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 
 1. Open CRXDE Lite op uw AEM.
-1. Blader naar dit pad *[/etc/contentSync/templates/dps-we-oneindig-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)*om de gedeelde voorbeeldbronnen weer te geven.
+1. Blader naar dit pad *[/etc/contentSync/templates/dps-we-oneindig-app/dps-HTMLResources](http://localhost:4502/crx/de/index.jsp#/etc/contentsync/templates/dps-we-unlimited-app/dps-HTMLResources)* om het voorbeeld van gedeelde bronnen weer te geven.
 
    U kunt alle eigenschappen bekijken die voor het creëren van uw gedeelde middelen zoals aangetoond in het hieronder cijfer worden vereist:
 
