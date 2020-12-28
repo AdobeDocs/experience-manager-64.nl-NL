@@ -1,8 +1,8 @@
 ---
 title: CRX2OAK-migratiehulpprogramma
 seo-title: CRX2OAK-migratiehulpprogramma
-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
-seo-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
+description: Opmerkingen bij de release die specifiek zijn voor het Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
+seo-description: Opmerkingen bij de release die specifiek zijn voor het Adobe Experience Manager 6.4 CRX2OAK-migratiehulpprogramma.
 uuid: 1b582faf-2dc6-41a2-9419-7e82347f9d6c
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# CRX2OAK-migratiehulpprogramma {#crx-oak-migration-tool}
+# CRX2OAK-migratiehulpmiddel {#crx-oak-migration-tool}
 
 ## Lijst met wijzigingen en correcties {#list-of-changes-and-fixes}
 
