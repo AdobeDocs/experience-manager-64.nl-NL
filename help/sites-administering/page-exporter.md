@@ -22,29 +22,29 @@ ht-degree: 0%
 
 AEM kunt u een pagina exporteren als een volledige webpagina met afbeeldingen, .js- en .css-bestanden.
 
-Wanneer het exporteren is geconfigureerd, vraagt u gewoon een pagina in uw browser aan door deze te vervangen door `html` `export.zip` in de URL en krijgt u een gecomprimeerde bestandsdownload met de gerenderde pagina in HTML-indeling en de bestanden waarnaar wordt verwezen. Alle paden op de pagina, bijvoorbeeld paden naar afbeeldingen, worden herschreven zodat ze verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
+Wanneer het exporteren is geconfigureerd, vraagt u eenvoudig een pagina in uw browser door `html` te vervangen door `export.zip` in de URL en krijgt u een gecomprimeerde bestandsdownload met de weergegeven pagina in HTML-indeling en de bestanden waarnaar wordt verwezen. Alle paden op de pagina, bijvoorbeeld paden naar afbeeldingen, worden herschreven zodat ze verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
 
-## Een pagina exporteren {#exporting-a-page}
+## Een pagina {#exporting-a-page} exporteren
 
-De volgende stappen beschrijven hoe te om een pagina uit te voeren, en veronderstellen dat een malplaatje van de de uitvoerconfiguratie voor uw plaats bestaat. Een configuratiesjabloon definieert de manier waarop een pagina wordt geëxporteerd en is specifiek voor uw site. Om een configuratiesjabloon te maken, raadpleegt u het [Creëren van een Configuratie van de Exporteur van de Pagina voor uw sectie van de Plaats](#creating-a-page-exporter-configuration-for-your-site) .
+De volgende stappen beschrijven hoe te om een pagina uit te voeren, en veronderstellen dat een malplaatje van de de uitvoerconfiguratie voor uw plaats bestaat. Een configuratiesjabloon definieert de manier waarop een pagina wordt geëxporteerd en is specifiek voor uw site. Om een configuratiemalplaatje tot stand te brengen verwijs naar [Creërend een Configuratie van de Exporteur van de Pagina voor uw sectie ](#creating-a-page-exporter-configuration-for-your-site).
 
 Een pagina exporteren:
 
 1. Open de pagina in uw browser. Bijvoorbeeld:
 1. `http://localhost:4502/content/geometrixx/en/products/triangle.html`
-1. Open het dialoogvenster Pagina-eigenschappen, selecteer het tabblad **Geavanceerd** en vouw de veldset **Exporteren** uit.
+1. Open het dialoogvenster met pagina-eigenschappen, selecteer het tabblad **Geavanceerd** en vouw de veldset **Exporteren** uit.
 
-1. Klik op het vergrootpictogram en selecteer een configuratiesjabloon. Selecteer de **geometrixx** -sjabloon omdat dit de standaardsjabloon is voor de Geometrixx-site. Click **OK**.
+1. Klik op het vergrootpictogram en selecteer een configuratiesjabloon. Selecteer de sjabloon **geometrixx**, aangezien dit de standaardsjabloon is voor de site Geometrixx. Klik **OK**.
 
-1. Klik op **OK** om het dialoogvenster Pagina-eigenschappen te sluiten.
-1. Vraag de pagina aan door deze te vervangen `html` door `export.zip` in de URL.
+1. Klik **OK** om het dialoogvenster Pagina-eigenschappen te sluiten.
+1. Vraag de pagina aan door `html` door `export.zip` in URL te vervangen.
 
-1. Download het `<page-name>.export.zip` bestand naar uw bestandssysteem.
+1. Download het bestand `<page-name>.export.zip` naar uw bestandssysteem.
 
 1. Pak in uw bestandssysteem het bestand uit:
 
-   * het pagina-html-bestand ( `<page-name>.html`) is hieronder beschikbaar `<unzip-dir>/<page-path>`
-   * andere bronnen (.js-bestanden, .css-bestanden, afbeeldingen, ...) bevinden zich volgens de instellingen in de exportsjabloon. In dit voorbeeld zijn enkele bronnen hieronder `<unzip-dir>/etc`, enkele hieronder `<unzip-dir>/<page-path>`.
+   * het pagina-html-bestand ( `<page-name>.html`) is beschikbaar onder `<unzip-dir>/<page-path>`
+   * andere bronnen (.js-bestanden, .css-bestanden, afbeeldingen, ...) bevinden zich volgens de instellingen in de exportsjabloon. In dit voorbeeld zijn sommige bronnen onder `<unzip-dir>/etc`, sommige onder `<unzip-dir>/<page-path>`.
 
 1. Open het pagina-HTML-bestand ( `<unzip-dir>/<page-path>.html`) in uw browser om de rendering te controleren.
 
@@ -54,67 +54,67 @@ De pagina-exportfunctie is gebaseerd op het Content Sync framework. De configura
 
 AEM sluit een aantal sjablonen in, waaronder:
 
-* Een standaard om `/etc/contentsync/templates/default`. Deze sjabloon:
+* Een standaard bij `/etc/contentsync/templates/default`. Deze sjabloon:
 
    * Is het fallback malplaatje wanneer geen configuratiemalplaatje in de bewaarplaats wordt gevonden.
    * Kan als basis voor een nieuw configuratiesjabloon dienen.
 
-* Een die gewijd is aan de **Geometrixx** -site, op `/etc/contentsync/templates/geometrixx`. Deze sjabloon kan als voorbeeld worden gebruikt om een nieuwe sjabloon te maken.
+* Een site die is toegewezen aan de **Geometrixx**-site, op `/etc/contentsync/templates/geometrixx`. Deze sjabloon kan als voorbeeld worden gebruikt om een nieuwe sjabloon te maken.
 
 Een configuratiesjabloon voor een pagina-exportfunctie maken:
 
-1. Maak in **CRXDE Lite** hieronder een knooppunt `/etc/contentsync/templates`:
+1. Maak in **CRXDE Lite** een knooppunt onder `/etc/contentsync/templates`:
 
    * Naam: bijv. `mysite`. De naam wordt weergegeven in het dialoogvenster Pagina-eigenschappen wanneer u de sjabloon voor het exporteren van pagina&#39;s kiest.
    * Type: `nt:unstructured`
 
-1. Onder de malplaatjeknoop, hier geroepen `mysite`, creeer een knoopstructuur gebruikend de hieronder beschreven configuratieknopen.
+1. Onder de malplaatjeknoop, genoemd hier `mysite`, creeer een knoopstructuur gebruikend de hieronder beschreven configuratieknopen.
 
-### Configuratieknooppunten van pagina-exportfunctie {#page-exporter-configuration-nodes}
+### Configuratieknooppunten van pagina-exportter {#page-exporter-configuration-nodes}
 
-Het configuratiesjabloon bestaat uit een nodestructuur. Elk knooppunt heeft een `type` eigenschap die een specifieke handeling definieert in het aanmaakproces van het ZIP-bestand. Voor meer details over het typebezit, verwijs naar het Overzicht van configuratietypes in de het kaderpagina van de Synchronisatie van de Inhoud.
+Het configuratiesjabloon bestaat uit een nodestructuur. Elk knooppunt heeft een eigenschap `type` die een specifieke handeling definieert in het aanmaakproces van het ZIP-bestand. Voor meer details over het typebezit, verwijs naar het Overzicht van configuratietypes in de het kaderpagina van de Synchronisatie van de Inhoud.
 
 De volgende knopen kunnen worden gebruikt om een malplaatje van de de uitvoerconfiguratie te bouwen:
 
-**paginaknooppunt** Het paginaknooppunt wordt gebruikt om de pagina-html naar het ZIP-bestand te kopiëren. Het heeft de volgende kenmerken:
+**page** nodeThe page node is used to copy the page html to the zip file. Het heeft de volgende kenmerken:
 
 * Is een verplicht knooppunt.
-* Deze bevindt zich hieronder `/etc/contentsync/templates/<sitename>`.
+* Wordt onder `/etc/contentsync/templates/<sitename>` geplaatst.
 * De naam is `page`.
 * Het knooppunttype is `nt:unstructured`
 
-Het `page` knooppunt heeft de volgende eigenschappen:
+Het knooppunt `page` heeft de volgende eigenschappen:
 
-* Een `type` eigenschap ingesteld met de waarde `pages`.
+* Een eigenschap `type` ingesteld met de waarde `pages`.
 
-* Het heeft geen `path` eigenschap omdat het huidige paginapad dynamisch naar de configuratie wordt gekopieerd.
+* Het heeft geen `path` bezit aangezien het huidige paginapad dynamisch aan de configuratie wordt gekopieerd.
 
 * De andere eigenschappen worden beschreven in het gedeelte Overzicht van configuratietypen van het Content Sync-framework.
 
-**knooppunt** rewrite Het knooppunt rewrite definieert hoe de koppelingen in de geëxporteerde pagina worden herschreven. De herschreven koppelingen kunnen verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
+**herschrijven** nodeHet knooppunt rewrite definieert hoe de koppelingen in de geëxporteerde pagina worden herschreven. De herschreven koppelingen kunnen verwijzen naar de bestanden in het ZIP-bestand of naar de bronnen op de server.
 
-Raadpleeg de pagina Content Sync voor een volledige beschrijving van het `rewrite` knooppunt.
+Raadpleeg de pagina Content Sync voor een volledige beschrijving van het knooppunt `rewrite`.
 
-**ontwerpknooppunt** Het ontwerpknooppunt wordt gebruikt om het ontwerp te kopiëren dat voor de geëxporteerde pagina wordt gebruikt. Het heeft de volgende kenmerken:
+**ontwerpknooppuntHet** ontwerpknooppunt wordt gebruikt om het ontwerp te kopiëren dat voor de geëxporteerde pagina wordt gebruikt. Het heeft de volgende kenmerken:
 
 * Is optioneel.
-* Deze bevindt zich hieronder `/etc/contentsync/templates/<sitename>`.
+* Wordt onder `/etc/contentsync/templates/<sitename>` geplaatst.
 * De naam is `design`.
 * Het knooppunttype is `nt:unstructured`.
 
-Het `design` knooppunt heeft de volgende eigenschappen:
+Het knooppunt `design` heeft de volgende eigenschappen:
 
-* Een `type` eigenschap die op de waarde is ingesteld `copy`.
+* Een eigenschap `type` ingesteld op de waarde `copy`.
 
-* Het heeft geen `path` eigenschap omdat het huidige paginapad dynamisch naar de configuratie wordt gekopieerd.
+* Het heeft geen `path` bezit aangezien het huidige paginapad dynamisch aan de configuratie wordt gekopieerd.
 
-**algemeen knooppunt** Een algemeen knooppunt wordt gebruikt om bronnen zoals clientBPS .js- of CSS-bestanden naar het ZIP-bestand te kopiëren. Het heeft de volgende kenmerken:
+**algemeen** nodeA algemeen knooppunt wordt gebruikt om bronnen zoals clientBPS .js- of CSS-bestanden naar het ZIP-bestand te kopiëren. Het heeft de volgende kenmerken:
 
 * Is optioneel.
-* Deze bevindt zich hieronder `/etc/contentsync/templates/<sitename>`.
+* Wordt onder `/etc/contentsync/templates/<sitename>` geplaatst.
 * Heeft geen specifieke naam.
 * Het knooppunttype is `nt:unstructured`.
-* Bevat een `type` eigenschap en alle `type` verwante eigenschappen zoals gedefinieerd in de sectie Overzicht van configuratietypen van het Content Sync-framework.
+* Bevat een `type`-eigenschap en eventuele `type`-gerelateerde eigenschappen zoals gedefinieerd in de sectie Overzicht van configuratietypen van het Content Sync-framework.
 
 Met het volgende configuratieknooppunt kopieert u bijvoorbeeld de bestanden geometrixx client.js naar het ZIP-bestand:
 
@@ -127,24 +127,24 @@ Met het volgende configuratieknooppunt kopieert u bijvoorbeeld de bestanden geom
 }
 ```
 
-De de configuratiesjabloon van de de paginauitvoer van de **Geometrixx** toont u hoe een paginauitvoer kan worden gevormd. Als u de knooppuntstructuur van de sjabloon in uw browser wilt weergeven als een JPEG-indeling, vraagt u om de volgende URL:
+Het **Geometrixx** malplaatje van de de paginatransportconfiguratie toont u hoe een paginauitvoer kan worden gevormd. Als u de knooppuntstructuur van de sjabloon in uw browser wilt weergeven als een JPEG-indeling, vraagt u om de volgende URL:
 
 `http://localhost:4502/etc/contentsync/templates/geometrixx.-1.json`
 
 **Een aangepaste configuratie implementeren**
 
-Aangezien u in de knoopstructuur kunt gemerkt hebt, heeft het malplaatje van de de **Geometrixx** de de configuratieconfiguratie van de pagina uitvoer een `logo` knoop met een `type` bezit dat aan `image`wordt geplaatst. Dit is een speciaal configuratietype dat is gemaakt om het afbeeldingslogo naar het ZIP-bestand te kopiëren. Om aan sommige specifieke vereisten te voldoen, kunt u een douanebezit moeten uitvoeren `type` : Raadpleeg hiervoor de sectie Een aangepaste update-handler implementeren in de pagina Content Sync.
+Aangezien u in de knoopstructuur kunt opgemerkt, **Geometrixx** heeft het malplaatje van de paginatransportconfiguratie een `logo` knoop met een `type` bezit dat aan `image` wordt geplaatst. Dit is een speciaal configuratietype dat is gemaakt om het afbeeldingslogo naar het ZIP-bestand te kopiëren. Om aan sommige specifieke vereisten te voldoen, kunt u een douane `type` bezit moeten uitvoeren: Raadpleeg hiervoor de sectie Een aangepaste update-handler implementeren in de pagina Content Sync.
 
-## Een pagina programmatisch exporteren {#programmatically-exporting-a-page}
+## Een pagina {#programmatically-exporting-a-page} programmatisch exporteren
 
-Als u een pagina programmatisch wilt exporteren, kunt u de [PageExporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI-service gebruiken. Met deze service kunt u:
+Als u een pagina programmatisch wilt exporteren, kunt u de service [PageExporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/index.html?com/day/cq/wcm/contentsync/PageExporter.html) OSGI gebruiken. Met deze service kunt u:
 
 * Exporteer een pagina en schrijf naar de HTTP-servletreactie.
 * Exporteer een pagina en sla het ZIP-bestand op een specifieke locatie op.
 
-De servlet die aan de `export` selecteur en de `zip` uitbreiding verbindend is gebruikt de dienst PageExporter.
+De servlet die aan `export` selecteur en `zip` uitbreiding verbindt gebruikt de dienst PageExporter.
 
 ## Problemen oplossen {#troubleshooting}
 
-Als er een probleem optreedt met het downloaden van het ZIP-bestand, kunt u het `/var/contentsync` knooppunt in de opslagplaats verwijderen en de exportaanvraag opnieuw verzenden.
+Als er een probleem optreedt met het downloaden van het ZIP-bestand, kunt u het `/var/contentsync`-knooppunt in de gegevensopslagruimte verwijderen en het exportverzoek opnieuw verzenden.
 
