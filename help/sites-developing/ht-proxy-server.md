@@ -35,7 +35,7 @@ U kunt de volmachtsserver gebruiken om alle cliënt-server interactie, ongeacht 
 
 U kunt bijvoorbeeld de proxyserver plaatsen tussen twee toepassingen die via een TCP/IP-netwerk communiceren. bijvoorbeeld een webbrowser en AEM. Hierdoor kunt u precies controleren wat er gebeurt wanneer u een CQ-pagina aanvraagt.
 
-## Het gereedschap Proxyserver starten {#starting-the-proxy-server-tool}
+## Het gereedschap Proxyserver {#starting-the-proxy-server-tool} starten
 
 Start de server op de opdrachtregel:
 
@@ -45,11 +45,11 @@ Start de server op de opdrachtregel:
 
 `<host>`
 
-Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als het exemplaar op uw lokale machine is, dan zal dit zijn `localhost`.
+Dit is het hostadres van de CRX-instantie waarmee u verbinding wilt maken. Als de instantie zich op uw lokale computer bevindt, is dit `localhost`.
 
 `<remoteport>`
 
-Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling van een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM auteur-instantie is `4502`.
+Dit is de gastheerhaven van de doelCRX instantie. De standaardinstelling voor een nieuw geïnstalleerde AEM is bijvoorbeeld **`4502`** en de standaardinstelling voor een nieuw geïnstalleerde AEM auteur-instantie is `4502`.
 
 `<localport>`
 
@@ -99,7 +99,7 @@ C-6-Finished: 758 bytes (1.0 kb/s)
 S-6-Finished: 665 bytes (1.0 kb/s)
 ```
 
-Dit toont het aantal bytes die tussen cliënt ( `C`) en de server ( `S`) op de 6de verbinding en bij de gemiddelde snelheid overgegaan.
+Dit toont het aantal bytes dat tussen client ( `C`) en server ( `S`) op de 6e verbinding en bij de gemiddelde snelheid is overgegaan.
 
 **Een voorbeeld van een logbestandsuitvoer**
 
@@ -129,11 +129,11 @@ De inhoud van `test.html` is:
 </html>
 ```
 
-Ervan uitgaande dat de AEM-instantie wordt uitgevoerd, starten `localhost:4502` we de proxy als volgt:
+Ervan uitgaande dat de AEM-instantie op `localhost:4502` wordt uitgevoerd, starten we de proxy als volgt:
 
 `java -jar proxy.jar localhost 4502 4444 -logfile test.log`
 
-De CQ/CRX-instantie kan nu worden benaderd via de proxy bij `localhost:4444` en alle communicatie via deze poort wordt aangemeld bij `test.log`.
+De CQ/CRX-instantie kan nu worden benaderd via de proxy op `localhost:4444` en alle communicatie via deze poort wordt geregistreerd naar `test.log`.
 
 Als we nu de uitvoer van de proxy bekijken, zien we de interactie tussen de browser en de AEM.
 
@@ -209,7 +209,7 @@ S-7-#000017 -> [Connection: Keep-Alive ]
 
 **Controleren of Keep-Alive werkt**
 
-Levend houden is een eigenschap van HTTP die een cliënt toestaat om de verbinding van TCP aan de server opnieuw te gebruiken om veelvoudige verzoeken (voor de paginacode, beelden, stijlbladen etc.) te maken. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
+Levend houden is een eigenschap van HTTP die een cliënt toestaat om de verbinding van TCP aan de server opnieuw te gebruiken om veelvoudige verzoeken (voor de paginacode, beelden, stijlbladen, etc.) te maken. Zonder houden-levend, moet de cliënt een nieuwe verbinding voor elk verzoek vestigen.
 
 Controleren of in leven houden werkt:
 
