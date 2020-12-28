@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Best practices implementeren{#deploying-best-practices}
+# Het opstellen van Beste praktijken{#deploying-best-practices}
 
 Het opstellen van beste praktijken beschrijft hoe te om AEM op de meest efficiënte en meest efficiënte manier op te stellen of te handhaven. Deze groeiende lijst met onderwerpen omvat een aantal verschillende gebieden in AEM.
 
@@ -39,7 +39,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## OAK {#oak}
 
-[Oak](/help/sites-deploying/platform.md) is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
+[](/help/sites-deploying/platform.md) Oakis is een schaalbare en krachtige hiërarchische opslagplaats voor inhoud die de basis vormt van AEM.
 
 <table> 
  <tbody>
@@ -75,9 +75,9 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 AEM Communities vereenvoudigt de oprichting en het beheer van on-premise gemeenschappen. De beste praktijken voor AEM Communities worden hier beschreven:
 
-[Community Content Store](/help/communities/working-with-srp.md) - Bespreekt de nieuwe functie voor gedeelde opslag voor door gebruikers gegenereerde inhoud (UGC) en de overwegingen voor het kiezen van de onderliggende [topologie](/help/communities/topologies.md).
+[Community Content Store](/help/communities/working-with-srp.md) : bespreekt de nieuwe functie voor gedeelde opslag voor door gebruikers gegenereerde inhoud (UGC) en de overwegingen voor het kiezen van de onderliggende  [topologie](/help/communities/topologies.md).
 
-[Aanbevolen plaatsingen voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities) - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
+[Aanbevolen plaatsingen voor gemeenschappen](/help/sites-deploying/recommended-deploys.md#considerations-for-aem-communities)  - Beschrijft de geadviseerde plaatsingen voor Gemeenschappen. |
 
 ## UI {#ui}
 
@@ -96,7 +96,7 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   <tr>
    <td>Beste praktijken voor kwaliteitsborging</td> 
    <td><a href="/help/sites-deploying/configuring-performance.md#best-practices-for-quality-assurance">Beste praktijken voor kwaliteitsborging</a></td> 
-   <td>Een gestandaardiseerd overzicht van de kwesties betrokken bij het bepalen van een Concept van de Test specifiek voor prestatietests op uw <em>publicatiemilieu</em> . Dit is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers en systeembeheerders.</td> 
+   <td>Een gestandaardiseerd overzicht van de kwesties betrokken bij het bepalen van een Concept van de Test specifiek voor prestatietests op uw <em>publish</em> milieu. Dit is hoofdzakelijk van belang voor ingenieurs QA, projectmanagers en systeembeheerders.</td> 
   </tr>
   <tr>
    <td>Dispatcher gebruiken met een CDN</td> 
