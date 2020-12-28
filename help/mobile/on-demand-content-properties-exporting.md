@@ -22,15 +22,15 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-Apps worden weergegeven als *cq:Pagina* &#39;s in AEM.
+Apps worden vertegenwoordigd als *cq:Pages* in AEM.
 
-Ze delen dezelfde algemene eigenschappen die in elke *cq:Page* worden gevonden, naast de hieronder getoonde eigenschappen die integratie ondersteunen.
+Zij delen de zelfde gemeenschappelijke eigenschappen die in om het even welke *cq worden gevonden:Pagina* naast hieronder getoonde anderen die integratie ondersteunende eigenschappen vertegenwoordigen.
 
-## App-eigenschappen {#app-properties}
+## Toepassingseigenschappen {#app-properties}
 
-In de volgende tabel staan de eigenschappen en knooppunten van de **app**.
+In de volgende tabel worden **App-eigenschappen en -knooppunten** weergegeven.
 
 <table>
  <tbody>
@@ -87,7 +87,7 @@ In de volgende tabel staan de eigenschappen en knooppunten van de **app**.
  </tbody>
 </table>
 
-U kunt ***Inhoud-eigenschappen*** gebruiken om inhoud te maken. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
+U kunt ***Inhoudseigenschappen*** gebruiken om inhoud te maken. Zie de volgende bronnen voor het maken en exporteren van artikelen en gedeelde bronnen:
 
 * [Eigenschappen van inhoud](/help/mobile/content-properties.md)
 * [Artikel-exportconfiguratie maken](/help/mobile/creating-article-export-configuration.md)
