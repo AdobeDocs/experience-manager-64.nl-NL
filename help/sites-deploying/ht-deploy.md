@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Hoe kan ik-artikelen configureren{#configuration-how-to-articles}
+# Configuratie hoe kan ik-artikelen{#configuration-how-to-articles}
 
 De volgende onderwerpen beschrijven hoe te om specifieke AEM plaatsingstaken te verwezenlijken:
 
