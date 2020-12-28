@@ -20,9 +20,9 @@ ht-degree: 15%
 
 # Exporteren naar CSV{#export-to-csv}
 
-**Met CSV-export** kunt u gegevens over uw pagina&#39;s exporteren naar een CSV-bestand op uw lokale systeem.
+**Maak CSV-** exportfuncties waarmee u informatie over uw pagina&#39;s kunt exporteren naar een CSV-bestand op uw lokale systeem.
 
-* Het gedownloade bestand wordt aangeroepen `export.csv`
+* Het gedownloade bestand wordt `export.csv`
 * De inhoud is afhankelijk van de eigenschappen die u selecteert.
 * U kunt het pad samen met de diepte van het exporteren definiëren.
 
@@ -52,18 +52,18 @@ Met de wizard CSV-export maken kunt u het volgende selecteren:
    * Aanvullende niveaus voor kinderen
    * Niveaus
 
-Het resulterende `export.csv` bestand kan worden geopend in Excel of een andere compatibele toepassing.
+Het resulterende `export.csv` dossier kan in Excel of een andere compatibele toepassing worden geopend.
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
-De optie **CSV-export** maken is beschikbaar wanneer u in de **Sites** -console bladert (in de lijstweergave): Dit is een optie in het keuzemenu **Maken** :
+De optie **CSV-export** is beschikbaar wanneer u in de **Sites**-console bladert (in de lijstweergave): het is een optie van **Create** drop-down menu:
 
 ![screen_shot_2018-03-21at154719](assets/screen_shot_2018-03-21at154719.png)
 
 Een CSV-export maken:
 
 1. Open de **Sites**-console en ga indien nodig naar de gewenste locatie.
-1. From the toolbar, select **Create** then **CSV Export** to open the wizard:
+1. Selecteer op de werkbalk **Maken** en **CSV-export** om de wizard te openen:
 
    ![screen_shot_2018-03-21at154758](assets/screen_shot_2018-03-21at154758.png)
 
