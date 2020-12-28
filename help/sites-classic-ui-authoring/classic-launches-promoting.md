@@ -27,19 +27,19 @@ U moet opstartiepagina&#39;s promoten om de inhoud vóór publicatie weer naar d
 * Of de onderliggende pagina&#39;s van de huidige pagina worden bevorderd.
 * Of de volledige lancering of slechts pagina&#39;s wordt bevorderd die zijn veranderd.
 
-## Startpagina&#39;s promoten {#promoting-launch-pages}
+## Starten van pagina&#39;s opwaarderen {#promoting-launch-pages}
 
 Als u pagina&#39;s wilt promoten, voert u de volgende stappen uit tijdens het bewerken van de startpagina die u wilt promoten:
 
-1. Klik op het tabblad **Pagina** in Sidetrap op **Starten** bevorderen.
+1. Klik op het tabblad **Pagina** in Sidetrap op **Starten bevorderen**.
 1. Geef de pagina&#39;s op die u wilt promoten:
 
-   * (Standaard) Als u alleen de huidige pagina wilt promoten, selecteert u Paginawijzigingen **bevorderen in productieversie**.
-   * Selecteer **Inclusief subpagina&#39;s** om ook de onderliggende pagina&#39;s van de huidige pagina te bevorderen.
-   * Als u alle pagina&#39;s wilt promoten tijdens het starten, selecteert u Volledige **Starten naar productieversie** bevorderen.
+   * (Standaard) Als u alleen de huidige pagina wilt promoten, selecteert u **Paginawijzigingen doorvoeren in productieversie**.
+   * Selecteer **Subpagina&#39;s opnemen** om ook de onderliggende pagina&#39;s van de huidige pagina te promoten.
+   * Selecteer **Volledige start naar productieversie bevorderen** om alle pagina&#39;s tijdens het starten te promoten.
 
 1. Als u de productiepagina&#39;s aan een workflowpakket wilt toevoegen, selecteert u **Toevoegen aan workflowpakket** en selecteert u vervolgens het workflowpakket.
-1. Klik op **Opwaarderen**.
+1. Klik **Promote**.
 
 ## Promotiepagina&#39;s verwerken met AEM-workflow {#processing-promoted-pages-using-aem-workflow}
 
