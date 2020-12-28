@@ -20,9 +20,9 @@ ht-degree: 3%
 
 # Werken met elementen{#working-with-assets}
 
-In de sectie [Auteursomgeving en Gereedschappen](/help/sites-authoring/author-environment-tools.md) vindt u informatie over het gebruik [!UICONTROL Content Finder] om elementen te zoeken en te gebruiken bij het bewerken van pagina&#39;s. AEM Assets biedt andere methoden voor het werken met elementen:
+De sectie [Auteursomgeving en Gereedschappen](/help/sites-authoring/author-environment-tools.md) biedt informatie over het gebruik van [!UICONTROL Content Finder] om elementen te zoeken en te gebruiken tijdens het bewerken van pagina&#39;s. AEM Assets biedt andere methoden voor het werken met elementen:
 
-* [Dynamische media Klassieke eigenschappen aan uw pagina toevoegen](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
+* [Dynamic Media Classic-functies aan uw pagina toevoegen](/help/sites-classic-ui-authoring/manage-assets-classic-s7.md)
 * [Werken met Dynamic Media](/help/sites-classic-ui-authoring/dynamic-media-assets.md)
 * [Naamgevingsconventies voor elementen](/help/sites-classic-ui-authoring/asset-naming-conventions.md)
 * [Werken met 3D-elementen](/help/sites-classic-ui-authoring/classicui-3dassets.md)
