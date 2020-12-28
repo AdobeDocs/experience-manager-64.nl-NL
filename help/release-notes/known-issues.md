@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Bekende problemen {#known-issues}
 
-Deze pagina bevat een lijst met bekende problemen die Adobe Experience Manager 6.4 heeft gepubliceerd op april 2018. Voor meer informatie over bekende problemen, [contacteer steun](https://helpx.adobe.com/support/experience-manager.html).
+Deze pagina bevat een lijst met bekende problemen die Adobe Experience Manager 6.4 in april 2018 heeft gepubliceerd. Voor meer informatie over bekende kwesties, [contacteer steun](https://helpx.adobe.com/support/experience-manager.html).
 
 ## Hybride apparaten {#hybrid-devices}
 
@@ -36,45 +36,45 @@ Als u Mozilla Firefox als browser gebruikt:
 
 * Typ `about:config` in de adresbalk en druk op Enter.
 * Filter de instellingen naar `dom.w3c`.
-* Zorg ervoor dat de instellingen zijn `0` en `false`.
+* Zorg ervoor dat de instellingen `0` en `false` zijn.
 * Start de browser opnieuw.
 
 Als u Microsoft Edge als browser gebruikt:
 
-* Typ `about:flags` de adresbalk en druk op Enter.
-* Blader vervolgens naar de experimentele functies **[!UICONTROL Touch]**.
+* Typ `about:flags` in de adresbalk en druk op Return.
+* Blader naar de experimentele functies en **[!UICONTROL Touch]**.
 * Klik op **[!UICONTROL Enable touch events]**.
 * Selecteer **[!UICONTROL Always Off]**.
 * Start de browser opnieuw.
 
 ## Platform {#platform}
 
-* **Operations-dashboard:** De voortgangsbalk wordt niet weergegeven wanneer de ZIP-extensie van het back-upbestand ontbreekt. (GRANITE-10713)
+* **Operations-dashboard:** voortgangsbalk wordt niet weergegeven wanneer het back-upbestand de ZIP-extensie mist. (GRANITE-10713)
 * **HTML:** JavaUse-object met navolgende witruimte in de pakketdeclaratie bevriest de SightlyJavaCompilerService (GRANITE-20836)
 * **Apache Felix/Sling:** Config-bestand is nog steeds aanwezig in de opslagplaats, zelfs na configuration.delete() (GRANITE-20618)
 * **Cloud-instellingen:** Console wordt verbroken na het bewerken van de configuratiecontainer (GRANITE-20726)
 * **Beveiliging:** IMS-integratie mislukt met aangepast contextpad (GRANITE-20639)
-* **Beveiliging:** Verbeter standaard JAAS Rangschikking van SSO, Externe en Standaard LoginModules (GRANITE-20590)
-* **Tooling - CRX DE Lite:** Het bereik van de weergave Eigenschappen blijft omhoog (GRANITE-12040)
-* **Tooling - CRX DE Lite:** Kan wijzigingen in &quot;Lange&quot; waardetypen niet opslaan, tenzij u dubbelklikt op de naam van de eigenschap (GRANITE-12351)
+* **Beveiliging:** Verbeter standaard JAAS-rangschikking van SSO, External en Default LoginModules (GRANITE-20590)
+* **Gereedschap maken - CRX DE Lite:** Afstand van eigenschappen wordt steeds groter (GRANITE-12040)
+* **Tooling - CRX DE Lite:** Kan veranderingen in &quot;Lange&quot;types van Waarde bewaren tenzij u op de Naam van het Bezit tweemaal klikt (GRANITE-12351)
 
-* **Tooling - CRX DE Lite:** ctrl+F-zoekopdracht naar geopende tekstbestanden blijft vastzitten bij RegExp-zoekopdracht (GRANITE-5996)
+* **Tooling - CRX DE Lite:** ctrl+F onderzoek op open tekstdossiers gaat geplakt op onderzoek RegExp (GRANITE-5996)
 
-* **Tooling - CRX DE Lite:** Node-eigenschap wordt niet weergegeven nadat de naam van het knooppunt is gewijzigd (GRANITE-7160)
-* **UI:** Meer informatie... niet alle elementen tonen wanneer geopend bij een popover element op IE en Firefox (GRANITE-16326)
-* **UI:** De knopinfo voor info wordt verborgen wanneer de lay-out Vaste kolommen met twee kolommen naast elkaar wordt gebruikt (GRANITE-16869)
-* **UI:** Onverwerkte fout bij het nadoen als een gebruiker die niet bestaat (GRANITE-23228). Oplossing door een fouthandler [te](/help/sites-developing/customizing-errorhandler-pages.md) implementeren om het foutbericht aan te passen.
+* **Gereedschappen - CRX DE Lite:** Node-eigenschap wordt niet weergegeven nadat de naam van het knooppunt is gewijzigd (GRANITE-7160)
+* **UI:** Pulldown &quot;more...&quot; niet alle elementen tonen wanneer geopend bij een popover element op IE en Firefox (GRANITE-16326)
+* **UI:De tooltip van** Info wordt verborgen wanneer het gebruiken van vaste kolomlay-out met 2 zij-aan-zij kolommen (GRANITE-16869)
+* **UI:** Onverwerkte fout wanneer het nadoen als gebruiker die niet bestaat (GRANITE-23228). Oplossing door [een foutenmanager](/help/sites-developing/customizing-errorhandler-pages.md) uit te voeren om foutenmelding aan te passen.
 
-* **Omnissearch:** Zoekopdrachten met backslash-uitzondering (GRANITE-11769)
-* **Omnissearch:** Door het openen van &quot;Weergave-instellingen&quot; in de lijstweergave wijzigt u het zoekfilter (GRANITE-16524)
-* **Omnissearch:** Verkeerde lijst met kolomconfiguraties die worden weergegeven bij het uitvoeren van middelenzoekopdrachten vanuit sites (GRANITE-16527)
+* **OmnZoeken:** zoekopdrachten met backslash-oorzaak (GRANITE-11769)
+* **Onderzoek:** Open &quot;de Montages van de Mening&quot;in lijstmening veroorzaken onderzoeksfilter om te veranderen (GRANITE-16524)
+* **Omgaan met zoeken:** Onjuiste lijst met kolomconfiguraties die worden weergegeven bij het zoeken naar elementen vanuit sites (GRANITE-16527)
 
-* **Omnissearch:** De voorspelling van de linkerspoorstaaf komt samen met het verzoek van de Omnisonderzoeksserver (GRANITE-20524)
+* **Omnissearch:** Left rail predicates getting together with the Omnissearch server request (GRANITE-20524)
 * **Omnissearch:** Omnissearch biedt geen ondersteuning voor contextpaden (GRANITE-16044)
 
 ## Assets {#assets}
 
-* **Zoeken**: De zoekopdracht retourneert geen resultaten als de zoekreeks begint met een whitespace [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
+* **Zoeken**: De zoekopdracht retourneert geen resultaten als de zoekreeks begint met een whitespace  [OAK-4786](https://issues.apache.org/jira/browse/OAK-4786)
 
 * **Zoeken**: In de klassieke gebruikersinterface en zijn codes niet zichtbaar in Zoeken (CQ-4235239)
 
@@ -94,25 +94,25 @@ Als u Microsoft Edge als browser gebruikt:
 
 ## Gemeenschappen {#communities}
 
-* **Moderatie** - Kan bovenliggende post niet verwijderen als één enkele verwijderingsbewerking uit de gebruikersinterface voor bulkmodernisering (CQ-4236797)
+* **Moderatie**  - Kan bovenliggende post niet verwijderen als één enkele verwijderingsbewerking uit de bulkmoderatie-UI (CQ-4236797)
 
-* **Console** - De koppeling Gebruikersnaam of Wachtwoord vergeten leidt naar de aanmeldingspagina in plaats van naar het bijbehorende formulier voor het opvragen van wachtwoorden (CQ-4237682)
+* **Console**  - Forgot de verbinding van de Gebruikersnaam of van het Wachtwoord richt zich aan de Login Pagina in plaats van het overeenkomstige wachtwoord herwinningsvorm (CQ-4237682)
 
 ## Forms {#forms}
 
 ### Installatie en implementatie
 
-* (Alleen AEM Forms JEE) Als het overvullen van JBoss-toepassingsserver tijdens het uitvoeren van Configuration Manager EJB-aanroepings- en opstartfouten retourneert. U kunt ze echter negeren. (Ref. CQ-4229793)
-* Wanneer AEM Forms wordt gestart, wordt de `SAX Security Manager could not be setup` waarschuwing weergegeven. (CQ-4297403)
+* (Alleen AEM Forms JEE) Als het overvullen van JBoss-toepassingsserver tijdens het uitvoeren van Configuration Manager fouten in de aanroep en bootstrap van EJB retourneert. U kunt ze echter negeren. (Ref. CQ-4229793)
+* Wanneer AEM Forms wordt gestart, wordt de waarschuwing `SAX Security Manager could not be setup` weergegeven. (CQ-4297403)
 
 ### Interactieve communicatie
 
 * De agent UI neemt een tijdje om Interactieve Mededelingen te laden die grafiek of beeldelementen omvatten. (CQ-4236630)
-* De indeling voor het weergeven van gegevens in het afdrukvoorbeeld is dd-mm-jjjj terwijl in de webvoorvertoning wordt weergegeven `dd-mmm-yy` (CQ-4237045)
+* De indeling voor gegevensweergave in de afdrukvoorvertoning is dd-mm-jjjj, terwijl in de webvoorvertoning `dd-mmm-yy` is (CQ-4237045)
 * Het Interactieve Kanaal van het Communicatie Web steunt slechts bevolen en ongeordende lijsten. In fragmenten van het lijstdocument, worden de samengestelde lijst en de inkeping niet gesteund voor het kanaal van het Web van de Interactieve Mededeling. (CQ-4233672)
 * De volgende problemen worden waargenomen bij het synchroniseren van webkanalen met het afdrukkanaal:
 
-   * Het kanaal van het Web neemt even aan synchronisatie wanneer het schakelen van drukkanaal voor het eerst.
+   * Het webkanaal duurt even om te synchroniseren wanneer u voor het eerst van het afdrukkanaal overschakelt.
    * Het webkanaal synchroniseert niet als het afdrukkanaal een niet-geconfigureerde diagramcomponent bevat. Verwijder de diagramcomponent en synchroniseer opnieuw om het probleem op te lossen.
    * Synchroniseren mislukt soms met de fout &#39;&#39;Er is een fout opgetreden tijdens het synchroniseren van de fout voor Live kopie&#39;. Vernieuw de pagina om het probleem op te lossen.
    * De statische tekst in een layoutfragment wordt vervangen door de naam van een tabelcel als de eerste kolom in de tabel een kopkolom is in de sjabloon voor het afdrukkanaal.
@@ -136,7 +136,7 @@ Als u Microsoft Edge als browser gebruikt:
 
 ### Adobe Sign-integratie
 
-* De planner van Adobe Sign werkt niet meer periodiek en daarom worden formulieren in afwachting van het teken niet naar verzending verplaatst. U lost dit probleem op door de **Apache Sling Scheduler Support** opnieuw te starten vanaf AEM webconsole op https://[*server*]:[*poort*]/systeem/console/bundles.
+* De planner van Adobe Sign werkt niet meer periodiek en daarom worden formulieren in afwachting van het teken niet naar verzending verplaatst. Start om het probleem op te lossen de bundel **Apache Sling Scheduler Support** opnieuw vanaf AEM webconsole op https://[*server*]:[*poort*]/system/console/bundles.
 
 ### Adaptieve Forms-authoring
 
