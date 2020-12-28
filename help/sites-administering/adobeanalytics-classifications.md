@@ -18,18 +18,18 @@ ht-degree: 1%
 ---
 
 
-# Adobe-classificaties{#adobe-classifications}
+# Adobe classificaties{#adobe-classifications}
 
-Adobe Classificaties exporteren classificatiegegevens naar [Adobe Analytics](/help/sites-administering/adobeanalytics.md) volgens schema. De exporter is een implementatie van een **com.adobe.cq.scheduled.exporter.Exporter**.
+Met classificaties van Adobe worden classificatiegegevens op een geplande manier geëxporteerd naar [Adobe Analytics](/help/sites-administering/adobeanalytics.md). De exportfunctie is een implementatie van een **com.adobe.cq.scheduled.exporter.Exporter**.
 
 Om dit te vormen:
 
-1. Navigeer via **Tools, Cloudservices** naar de sectie **Adobe Analytics** .
-1. Voeg een nieuwe configuratie toe. U zult zien dat het sjabloon Configuratie van **Adobe Analytics Classifications** onder de configuratie van het **Adobe Analytics Framework** wordt weergegeven. Geef desgewenst een **titel** en **naam** op:
+1. Navigeer via **Tools, Cloudservices** naar de sectie **Adobe Analytics**.
+1. Voeg een nieuwe configuratie toe. U zult zien dat het **Adobe Analytics Classifications** malplaatje van de Configuratie onder de **Adobe Analytics Kader** configuratie toont. Geef een **Titel** en **Naam** op, al naar gelang hetgeen vereist is:
 
    ![aa-25](assets/aa-25.png)
 
-1. Klik op **Maken** om de instellingen te configureren.
+1. Klik **Maken** om de instellingen te configureren.
 
    ![chlimage_1](assets/chlimage_1.png)
 
@@ -38,8 +38,8 @@ Om dit te vormen:
    | **Veld** | **Beschrijving** |
    |---|---|
    | Ingeschakeld | Selecteer **Ja** om de instellingen voor Adobe-classificaties in te schakelen. |
-   | Overschrijven bij conflict | Selecteer **Ja** om eventuele gegevensbotsingen te overschrijven. Standaard is deze ingesteld op **Nee**. |
-   | Verwerkt verwijderen | Indien ingesteld op **Ja**, worden verwerkte knooppunten verwijderd nadat deze zijn geëxporteerd. De standaardwaarde is **False**. |
+   | Overschrijven bij conflict | Selecteer **Ja** om eventuele gegevensbotsingen te overschrijven. Standaard is dit ingesteld op **No**. |
+   | Verwerkt verwijderen | Indien ingesteld op **Yes**, verwijdert u verwerkte knooppunten nadat deze zijn geëxporteerd. De standaardwaarde is **False**. |
    | Taakbeschrijving exporteren | Voer een beschrijving in voor de indelingstaak Adobe. |
    | E-mailbericht | Voer een e-mailadres in voor berichten over Adobe-classificaties. |
    | Rapportsuite | Voer de rapportsuite in waarop de importtaak moet worden uitgevoerd. |
@@ -48,7 +48,7 @@ Om dit te vormen:
    | Gegevensbron | Navigeer naar het pad voor de gegevenscontainer. |
    | Export Plan | Selecteer het schema voor het exporteren. De standaardwaarde is elke 30 minuten. |
 
-1. Klik op **OK** om uw instellingen op te slaan.
+1. Klik **OK** om uw instellingen op te slaan.
 
 ## Paginaformaat wijzigen {#modifying-page-size}
 
@@ -58,11 +58,11 @@ Een pagina kan maximaal 25000 pagina&#39;s groot zijn, per definitie in Adobe-cl
 
 Het paginaformaat wijzigen:
 
-1. Navigeer naar de OSGI-console op **https://&lt;host>:&lt;port>/system/console/configMgr** en selecteer **Adobe AEM Classificatieexporteur**.
+1. Navigeer naar de OSGI-console op **https://&lt;host>:&lt;port>/system/console/configMgr** en selecteer **Adobe AEM Classifications Exporter**.
 
-   ![aa-25](assets/aa-26.png)
+   ![aa-26](assets/aa-26.png)
 
-1. Werk het formaat **van de Pagina van de** Uitvoer zoals vereist bij, dan klik **sparen**.
+1. Werk **de Grootte van de Pagina van de Uitvoer** zoals vereist bij, dan klik **sparen**.
 
 ## SAINTDefaultTransformer {#saintdefaulttransformer}
 
@@ -70,9 +70,9 @@ Het paginaformaat wijzigen:
 >
 >Adobe Classificaties stond voorheen bekend als de SAINT Exporter.
 
-Een exporteur kan een Transformer gebruiken om de exportgegevens om te zetten in een specifieke indeling. Voor de Classificaties van Adobe, is een subinterface `SAINTTransformer<String[]>` die de interface van Transformer uitvoert verstrekt. Deze interface wordt gebruikt om het gegevenstype te beperken tot `String[]` dat door SAINT API wordt gebruikt en een tellerinterface te hebben om dergelijke diensten voor selectie te vinden.
+Een exporteur kan een Transformer gebruiken om de exportgegevens om te zetten in een specifieke indeling. Voor de Classificaties van Adobe, is een subinterface `SAINTTransformer<String[]>` die de interface van Transformer uitvoeren verstrekt. Deze interface wordt gebruikt om het gegevenstype te beperken tot `String[]` dat door SAINT API wordt gebruikt en een tellerinterface te hebben om dergelijke diensten voor selectie te vinden.
 
-In de standaardimplementatie SAINTDefaultTransformer, worden de kindmiddelen van de exporterbron behandeld als verslagen met bezitsnamen als sleutels en bezitswaarden als waarden. De kolom **Sleutel** wordt automatisch toegevoegd als eerste kolom - zijn waarde zal de knooppuntnaam zijn. Benoemde eigenschappen (bevattende :) worden genegeerd.
+In de standaardimplementatie SAINTDefaultTransformer, worden de kindmiddelen van de exporterbron behandeld als verslagen met bezitsnamen als sleutels en bezitswaarden als waarden. De **Key** kolom wordt automatisch toegevoegd als eerste kolom - zijn waarde zal de knooppuntnaam zijn. Benoemde eigenschappen (bevattende :) worden genegeerd.
 
 *Nodestructuur:*
 
@@ -90,7 +90,7 @@ In de standaardimplementatie SAINTDefaultTransformer, worden de kindmiddelen van
 
 | **Sleutel** | **Product** | **Prijs** | **Grootte** | **Kleur** | **Kleur^code** |
 |---|---|---|---|---|---|
-| 1 | Mijn productnaam | 120.90 | M | zwart | 101 |
+| 1 | Mijn productnaam | 120,90 | M | zwart | 101 |
 
 Tot de eigenschappen behoren:
 
@@ -135,6 +135,6 @@ Tot de eigenschappen behoren:
  </tbody> 
 </table>
 
-## Exporteren van Adobe-classificaties automatiseren {#automating-adobe-classifications-export}
+## Adobe Classificaties exporteren automatiseren {#automating-adobe-classifications-export}
 
-U kunt uw eigen workflow maken, zodat bij nieuwe importbewerkingen de workflow wordt gestart voor het maken van de juiste en goed gestructureerde gegevens in **/var/export/** , zodat deze kunnen worden geëxporteerd naar Adobe-classificaties.
+U kunt uw eigen werkschema tot stand brengen, zodat om het even welke nieuwe invoer de werkschema lanceert om tot de aangewezen, en correct gestructureerde gegevens in **/var/export/** te leiden zodat het naar classificaties van de Adobe kan worden uitgevoerd.
