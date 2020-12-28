@@ -20,7 +20,7 @@ ht-degree: 4%
 
 # Overzicht van componenten{#components-overview}
 
-Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals de componenten die worden [gebruikt voor het ontwerpen](/help/sites-authoring/default-components-foundation.md)van pagina&#39;s.
+Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, zoals de [die worden gebruikt voor het ontwerpen van pagina&#39;s](/help/sites-authoring/default-components-foundation.md).
 
 ## Wat zijn componenten? {#what-exactly-is-a-component}
 
@@ -33,7 +33,7 @@ Deze pagina biedt een overzicht van Adobe Experience Manager (AEM)-componenten, 
 * Een gestandaardiseerde gebruikersinterface hebben.
 * Heb bewerkingsgedrag dat kan worden gevormd.
 * Dialoogvensters gebruiken die zijn gebouwd met subelementen op basis van graniet UI-componenten
-* Ontwikkeld met [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (aanbevolen) of JSP.
+* Ontwikkeld met behulp van [HTL](https://helpx.adobe.com/experience-manager/htl/user-guide.html) (aanbevolen) of JSP.
 * Kan worden ontwikkeld om aangepaste componenten te maken die de standaardfunctionaliteit uitbreiden.
 
 Omdat componenten modulair zijn, kunt u:
@@ -47,11 +47,11 @@ Elke AEM component:
 
 * Is een middeltype.
 * Is een inzameling van manuscripten die een specifieke functie volledig realiseren.
-* Kan in *isolatie* functioneren, wat ofwel binnen AEM ofwel een portaal betekent.
+* Kan functioneren in *isolatie*, betekenend of binnen AEM of een portaal.
 
-## Buiten-de-box Componenten binnen AEM {#out-of-the-box-components-within-aem}
+## Buiten-de-doos componenten binnen AEM {#out-of-the-box-components-within-aem}
 
-AEM wordt geleverd met verschillende [kant-en-klare componenten](/help/sites-authoring/default-components.md) die uitgebreide functionaliteit bieden, waaronder:
+AEM wordt geleverd met verschillende [out-of-the-box componenten](/help/sites-authoring/default-components.md) die uitgebreide functionaliteit bieden, waaronder:
 
 * Alineasysteem ( `parsys`)
 * Pagina ( `responsivegrid` - alleen interface met aanraakbediening)
@@ -59,40 +59,40 @@ AEM wordt geleverd met verschillende [kant-en-klare componenten](/help/sites-aut
 * Afbeelding, met bijbehorende tekst
 * Werkbalk
 
-De verstrekte componenten en hun gebruik binnen de [steekproefWeb.Retail websites](/help/sites-developing/we-retail.md) illustreren hoe te om componenten uit te voeren en te gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
+De geleverde componenten en hun gebruik binnen de [voorbeeldwebsites ](/help/sites-developing/we-retail.md) illustreren hoe u componenten kunt implementeren en gebruiken. De componenten worden voorzien van al broncode en kunnen als zijn of als uitgangspunt voor gewijzigde of uitgebreide componenten worden gebruikt.
 
-### Basiscomponenten en basiscomponenten {#core-components-and-foundation-components}
+### Core Components and Foundation Components {#core-components-and-foundation-components}
 
 Er zijn twee reeksen van Adobe-Geleverde AEM beschikbare componenten:
 
 * [Kernonderdelen](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [Elementaire componenten](/help/sites-authoring/default-components-foundation.md)
 
-**De Componenten** van de kern werden geïntroduceerd met AEM 6.3 en bieden flexibele en eigenschap-rijke auteursfunctionaliteit. De [Wij.Retail verwijzingsplaats](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige beste praktijken van componentenontwikkeling vertegenwoordigen.
+**De** Componenten van de kern werden geïntroduceerd met AEM 6.3 en bieden flexibele en eigenschap-rijke auteursfunctionaliteit aan. De [Wij.Retail verwijzingsplaats](/help/sites-developing/we-retail.md) illustreert hoe de kerncomponenten kunnen worden gebruikt en de huidige beste praktijken van componentenontwikkeling vertegenwoordigen.
 
-**De Componenten** van de stichting zijn beschikbaar met AEM voor vele versies en zijn beschikbaar uit-van-de-doos in een standaard AEM installatie. Hoewel nog steeds ondersteund, zijn de meeste vervangen, worden ze niet meer uitgebreid en zijn ze gebaseerd op oudere technologieën.
+**De Componenten van de stichting** waren beschikbaar met AEM voor vele versies en zijn beschikbaar uit-van-de-doos in een standaard AEM installatie. Hoewel nog steeds ondersteund, zijn de meeste vervangen, worden ze niet meer uitgebreid en zijn ze gebaseerd op oudere technologieën.
 
 >[!NOTE]
 >
->[De Componenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) van de kern vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
+>[De Componenten van de kern ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) vertegenwoordigen de huidige beste praktijken voor componentenontwerp en ontwikkeling en dienen als verwijzingsimplementaties.
 >
->[AEM moderniseringsinstrumenten](modernization-tools.md) kunnen de migratie naar kerncomponenten helpen.
+>[AEM ](modernization-tools.md) Moderniseringstoolscan helpt de migratie naar Core Components.
 
 ### Beschikbare componenten weergeven {#viewing-available-components}
 
-Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik de Console [van](/help/sites-authoring/default-components-console.md)Componenten.
+Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik [de Console van Componenten](/help/sites-authoring/default-components-console.md).
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
-1. Selecteer in **[!UICONTROL CRXDE Lite]** de werkbalk vervolgens **[!UICONTROL Tools]** de optie **[!UICONTROL Query]** waarmee het **[!UICONTROL Query]** tabblad wordt geopend.
+1. Selecteer **[!UICONTROL CRXDE Lite]** in &lt;a0/> op de werkbalk en **[!UICONTROL Query]**. Hiermee wordt het tabblad **[!UICONTROL Query]** geopend.**[!UICONTROL Tools]**
 
-1. Selecteer op het **[!UICONTROL Query]** tabblad `XPath` als **[!UICONTROL Type]**.
+1. Selecteer **[!UICONTROL Query]** op het tabblad &lt;a0/> als **[!UICONTROL Type]**.`XPath`
 
-1. Voer in het **[!UICONTROL Query]** invoerveld de volgende tekenreeks in:
+1. Voer in het invoerveld **[!UICONTROL Query]** de volgende tekenreeks in:
 
    `//element(*, cq:Component)`
 
-1. Klik **[!UICONTROL Execute]** en de componenten worden vermeld.
+1. Klik op **[!UICONTROL Execute]** en de componenten worden weergegeven.
 
 ## Aanvullende bronnen {#further-reading}
 
