@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Het filter Referrer instellen op Leeg maken{#setting-your-referrer-filter-to-allow-empty}
+# Het plaatsen van Uw Filter van de Referentie om Leeg{#setting-your-referrer-filter-to-allow-empty} toe te staan
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Als u wilt dat de AEM Mobile Application Viewer apps kan weergeven op uw Author-instantie, moet u het HTML-referentiefilter instellen op &#39;allow empty&#39;.
 
