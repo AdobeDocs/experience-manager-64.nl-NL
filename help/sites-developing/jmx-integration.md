@@ -22,9 +22,9 @@ ht-degree: 0%
 
 Maak en implementeer MBans om services te beheren met de JMX-console. Stel de dienstattributen en verrichtingen bloot om beleidstaken toe te laten om worden uitgevoerd.
 
-Voor informatie over het gebruiken van de Console JMX, zie de Middelen van de Server van de [Controle Gebruikend de Console](/help/sites-administering/jmx-console.md)JMX.
+Zie [Serverbronnen controleren met de JMX-console](/help/sites-administering/jmx-console.md) voor informatie over het gebruik van de JMX-console.
 
-## JMX Framework in Felix en CQ5 {#the-jmx-framework-in-felix-and-cq}
+## Het JMX-framework in Felix en CQ5 {#the-jmx-framework-in-felix-and-cq}
 
 Op het Apache Felix-platform implementeert u MBans als OSGi-services. Wanneer een dienst MBean in de Registratie van de Dienst OSGi wordt geregistreerd, registreert de module JMX van Aries automatisch MBean met de Server MBean. De MBean is dan beschikbaar aan de Console JMX die de openbare attributen en de verrichtingen blootstelt.
 
@@ -40,29 +40,29 @@ MBeans die u voor het beheren van CQ5 of CRX middelen creeert zijn gebaseerd op 
 
 Naast het bepalen van de beheersinterface, bepaalt de interface ook de OSGi de dienstinterface. De implementatieklasse implementeert de OSGi-service.
 
-### Het gebruiken van Annotaties om Informatie MBean te verstrekken {#using-annotations-to-provide-mbean-information}
+### Het gebruiken van Annotaties om Informatie te verstrekken MBean {#using-annotations-to-provide-mbean-information}
 
-Het pakket [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) biedt verschillende annotaties en klassen waarmee u eenvoudig MBean-metagegevens kunt verschaffen aan de JMX-console. Gebruik deze annotaties en klassen in plaats van rechtstreeks informatie toe te voegen aan het MBean-object MBeanInfo.
+Het pakket [com.adobe.granite.jmx.annotation](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) biedt verschillende annotaties en klassen waarmee u eenvoudig metagegevens van MBean aan de JMX-console kunt leveren. Gebruik deze annotaties en klassen in plaats van rechtstreeks informatie toe te voegen aan het MBean-object MBeanInfo.
 
 **Annotaties**
 
-Voeg annotaties aan de beheersinterface toe om meta-gegevens te specificeren MBean. De informatie verschijnt in de console JMX voor elke implementatieklasse die wordt opgesteld. De volgende annotaties zijn beschikbaar (zie [com.adobe.granite.jmx.annotation JavaDocs voor volledige informatie](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html)):
+Voeg annotaties aan de beheersinterface toe om meta-gegevens te specificeren MBean. De informatie verschijnt in de console JMX voor elke implementatieklasse die wordt opgesteld. De volgende annotaties zijn beschikbaar (zie [com.adobe.granite.jmx.annotation JavaDocs](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/granite/jmx/annotation/package-summary.html) voor volledige informatie):
 
-* **Omschrijving:** Verstrekt een beschrijving van de klasse MBean of de methode. Wanneer gebruikt op de klassendeclaratie, verschijnt de beschrijving op de pagina van de Console JMX voor MBean. Wanneer de beschrijving bij een methode wordt gebruikt, wordt deze weergegeven als zwevende tekst voor het bijbehorende kenmerk of de bijbehorende bewerking.
-* **Effect:** Het effect van een methode. Geldige parameterwaarden zijn de velden die worden gedefinieerd door [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
+* **Beschrijving:** verschaft een beschrijving van de klasse of methode MBean. Wanneer gebruikt op de klassendeclaratie, verschijnt de beschrijving op de pagina van de Console JMX voor MBean. Wanneer de beschrijving bij een methode wordt gebruikt, wordt deze weergegeven als zwevende tekst voor het bijbehorende kenmerk of de bijbehorende bewerking.
+* **Effect:** het effect van een methode. Geldige parameterwaarden zijn de velden die worden gedefinieerd door [javax.management.MBeanOperationInfo](https://docs.oracle.com/javase/1.5.0/docs/api/javax/management/MBeanOperationInfo.html).
 
-* **Naam:** Geeft de naam op die voor een bewerkingsparameter moet worden weergegeven. Gebruik deze aantekening om de daadwerkelijke naam van de methodeparameter met voeten te treden die in de interface wordt gebruikt.
+* **Naam:** geeft de naam op die voor een bewerkingsparameter moet worden weergegeven. Gebruik deze aantekening om de daadwerkelijke naam van de methodeparameter met voeten te treden die in de interface wordt gebruikt.
 * **OpenTypeInfo:** Geeft de klasse op die moet worden gebruikt voor het weergeven van samengestelde gegevens of tabelgegevens in de JMX-console. Voor gebruik met Open MBans
-* **TabularTypeInfo:** Wordt gebruikt om een annotatie toe te voegen aan de klasse die wordt gebruikt om tabelgegevens te vertegenwoordigen.
+* **TabularTypeInfo:** Gebruikt om de klasse aan te brengen die wordt gebruikt om tabelgegevens te vertegenwoordigen.
 
 **Klassen**
 
 De klassen worden verstrekt voor het creëren van Dynamische MBans die de annotaties verbruiken die u aan hun interfaces toevoegt:
 
 * **AnnoatedStandardMBean:** Een subklasse van de klasse javax.management.StandardMBean die de JMX-console automatisch de metagegevens voor annotaties verschaft.
-* **OpenAnnoatedStandardMBean:** Een subklasse van de klasse AnnoatedStandardMBean voor het maken van Open Mbeans die de OpenTypeInfo-annotatie gebruiken.
+* **OpenAnnoatedStandardMBean:** Een subklasse van de klasse AnnoatedStandardMBean voor het maken van Open-maten die de OpenTypeInfo-annotatie gebruiken..
 
-### Bezig met ontwikkelen van MBeans {#developing-mbeans}
+### Bezig met ontwikkelen van MBans {#developing-mbeans}
 
 Typisch, is uw MBean een bezinning op de dienst OSGi die u wilt beheren. Op het platform van Felix, creeert u MBean zoals u voor plaatsing op andere de serverplatforms van Java zou willen. Een primair verschil is dat u annotaties kunt gebruiken om MBean-informatie op te geven:
 
@@ -71,7 +71,7 @@ Typisch, is uw MBean een bezinning op de dienst OSGi die u wilt beheren. Op het 
 
 Het volgende voorbeeld MBean verstrekt informatie over de bewaarplaats CRX. De interface gebruikt de aantekening van de Beschrijving om informatie aan de console te verstrekken JMX.
 
-#### Management Interface {#management-interface}
+#### Beheerinterface {#management-interface}
 
 ```java
 package com.adobe.example.myapp;
@@ -139,15 +139,15 @@ Wanneer u MBeans als dienst OSGi registreert, worden zij automatisch geregistree
 
 Naast OSGi-verwante meta-gegevens, moet u meta-gegevens ook verstrekken die de module JMX Whiteboard van Aries voor het registreren van MBean met de Server MBean vereist:
 
-* **De naam van de DynamicMBean-interface:** Verklaar dat de dienst MBean de `javax.management.DynamicMBea`n interface uitvoert. Deze verklaring deelt de module JMX Whiteboard van Aries mee dat de dienst een dienst MBean is.
+* **De naam van de interface DynamicMBean:** verklaar dat de dienst MBean de interface  `javax.management.DynamicMBea`n uitvoert. Deze verklaring deelt de module JMX Whiteboard van Aries mee dat de dienst een dienst MBean is.
 
-* **Het domein MBean en belangrijkste eigenschappen:** Voor Felix, verstrekt u deze informatie als bezit van de dienst OSGi van MBean. Dit is de zelfde informatie die u normaal aan de Server MBean in een `javax.management.ObjectName` voorwerp verstrekt.
+* **Het domein MBean en belangrijkste eigenschappen:** Op Felix, verstrekt u deze informatie als bezit van de dienst OSGi van MBean. Dit is de zelfde informatie die u normaal aan de Server MBean in een `javax.management.ObjectName` voorwerp verstrekt.
 
 Wanneer uw MBean een bezinning van de enige dienst is, slechts wordt één enkel geval van de dienst MBean vereist. In dit geval, als u de SCR van Felix Geweven stop gebruikt, kunt u de Runtime van de Component van de Dienst van Apache (SCR) annotaties op de MBean implementatieklasse gebruiken om JMX-verwante metatgegevens te specificeren. Om verscheidene instanties te concretiseren MBean, kon u een andere klasse tot stand brengen die die registratie van de dienst OSGi van MBean uitvoert. In dit geval worden de JMX-metagegevens gegenereerd bij uitvoering.
 
 **Eén MBean**
 
-MBans waarvoor u alle attributen en verrichtingen in ontwerptijd kunt bepalen kan worden opgesteld gebruikend SCR annotaties in de MBean implementatieklasse. In het volgende voorbeeld, verklaart de `value` attributen van de `Service` annotatie dat de dienst de `DynamicMBean` interface uitvoert. Het `name` kenmerk van de `Property` annotatie geeft het JMX-domein en de sleuteleigenschappen op.
+MBans waarvoor u alle attributen en verrichtingen in ontwerptijd kunt bepalen kan worden opgesteld gebruikend SCR annotaties in de MBean implementatieklasse. In het volgende voorbeeld declareert het `value`-kenmerk van de `Service`-annotatie dat de service de `DynamicMBean`-interface implementeert. Het `name` attribuut van de `Property` aantekening specificeert het domein JMX en belangrijkste eigenschappen.
 
 #### MBean de Klasse van de Implementatie met SCR Annotaties {#mbean-implementation-class-with-scr-annotations}
 
@@ -191,7 +191,7 @@ public class ExampleMBeanImpl extends AnnotatedStandardMBean implements ExampleM
 
 Om veelvoudige instanties van de beheerde dienst te beheren, creeert u veelvoudige instanties van de overeenkomstige dienst MBean. Voorts zouden de de dienstinstanties MBean moeten worden gecreeerd of worden verwijderd wanneer de beheerde instanties zijn begonnen of gestopt. U kunt een MBean managerklasse tot stand brengen om de diensten MBean bij runtime te concretiseren, en de de dienstlevenscyclus te beheren.
 
-Gebruik BundleContext om MBean als dienst te registreren OSGi. Neem de JMX-gerelateerde informatie op in het object Dictionary die u gebruikt als argument voor de `BundleContext.registerService` methode.
+Gebruik BundleContext om MBean als dienst te registreren OSGi. Neem de JMX-gerelateerde informatie op in het object Dictionary die u gebruikt als een argument van de methode `BundleContext.registerService`.
 
 In het volgende codevoorbeeld, wordt de dienst ExampleMBean programmatically geregistreerd. Het componentContext-object is ComponentContext, dat toegang biedt tot BundleContext.
 
@@ -209,7 +209,7 @@ Het voorbeeld MBean in de volgende sectie verstrekt meer details.
 
 Een MBean de dienstmanager is nuttig wanneer de dienstconfiguraties in de bewaarplaats worden opgeslagen. De manager kan de dienstinformatie terugwinnen en het gebruiken om het overeenkomstige MBean te vormen en tot stand te brengen. De manager-klasse kan ook luisteren naar wijzigingsgebeurtenissen in de repository en de MBean-services dienovereenkomstig bijwerken.
 
-## Voorbeeld: Workflowmodellen volgen met JMX {#example-monitoring-workflow-models-using-jmx}
+## Voorbeeld: Workflowmodellen volgen met behulp van JMX {#example-monitoring-workflow-models-using-jmx}
 
 In dit voorbeeld geeft de MBean informatie over de CQ5-workflowmodellen die in de opslagplaats zijn opgeslagen. Een MBean managerklasse leidt tot MBans die op de modellen van het Werkschema wordt gebaseerd die in de bewaarplaats worden opgeslagen en hun dienst OSGi bij runtime registreert. Dit voorbeeld bestaat uit één bundel die de volgende leden bevat:
 
@@ -235,7 +235,7 @@ De metagegevens van MBean worden weergegeven in de JMX Console met het domein co
 
 ### Het voorbeeld MBean {#the-example-mbean}
 
-Dit voorbeeld vereist een interface MBean en een implementatie die een bezinning op de `com.day.cq.workflow.model.WorkflowModel` interface is. MBean is zeer eenvoudig zodat het voorbeeld zich op de configuratie en plaatsingsaspecten van het ontwerp kan concentreren. De MBean stelt één enkel attribuut, de modelnaam bloot.
+Dit voorbeeld vereist een interface MBean en implementatie die een bezinning op de `com.day.cq.workflow.model.WorkflowModel` interface is. MBean is zeer eenvoudig zodat het voorbeeld zich op de configuratie en plaatsingsaspecten van het ontwerp kan concentreren. De MBean stelt één enkel attribuut, de modelnaam bloot.
 
 #### WorkflowMBean Interface {#workflowmbean-interface}
 
@@ -279,7 +279,7 @@ public class WorkflowMBeanImpl extends AnnotatedStandardMBean implements Workflo
 }
 ```
 
-### De voorbeeld-MBean-manager {#the-example-mbean-manager}
+### De Voorbeeld MBean Manager {#the-example-mbean-manager}
 
 De dienst WorkflowMBeanManager omvat de methode van de componentenactivering die tot de diensten WorkflowMBean leidt. De de dienstimplementatie omvat de volgende methodes:
 
@@ -292,7 +292,7 @@ De dienst WorkflowMBeanManager omvat de methode van de componentenactivering die
 >De implementatie WorkflowMBeanManager leidt slechts tot de diensten MBean voor modelconfiguraties die bestaan wanneer de component wordt geactiveerd. Een robuustere implementatie luistert naar opslagplaatsgebeurtenissen met betrekking tot nieuwe modelconfiguraties en wijzigingen of verwijderingen van bestaande modelconfiguratie. Wanneer een verandering voorkomt, kan de manager, de overeenkomstige dienst creëren wijzigen of verwijderen WorkflowMBean.
 
 
-#### WorkflowMBeanManager Interface {#workflowmbeanmanager-interface}
+#### WorkflowMBeanManager-interface {#workflowmbeanmanager-interface}
 
 ```java
 package com.adobe.example.myapp.api;
@@ -437,7 +437,7 @@ Voor uw gemak, kunt u de volgende code van XML in uw project pom.xml- dossier ko
 * Apache Felix Maven Bundle Plugin: Maakt de bundel en het manifest
 * Apache Felix Maven SCR-insteekmodule: Creeert het dossier van de componentenbeschrijver en vormt de dienst-component duidelijke kopbal.
 
-**Opmerking:** Op het moment dat u schrijft, is de gemeten scr-insteekmodule niet compatibel met de m2e-insteekmodule voor Eclipse. (Zie [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Om winde van de Verduistering te gebruiken, installeer Geweven en gebruik de interface van de bevellijn om bouwstijlen uit te voeren.
+**Opmerking:** Op het moment dat u schrijft, is de toegewezen scr-insteekmodule niet compatibel met de m2e-insteekmodule voor Eclipse. (Zie [Felix bug 3170](https://issues.apache.org/jira/browse/FELIX-3170).) Om winde van de Verduistering te gebruiken, installeer Geweven en gebruik de interface van de bevellijn om bouwstijlen uit te voeren.
 
 #### Voorbeeld-POM-bestand {#example-pom-file}
 
@@ -552,7 +552,7 @@ Voor uw gemak, kunt u de volgende code van XML in uw project pom.xml- dossier ko
 
 Voeg het volgende profiel toe aan het instellingenbestand van uw afbeelding om de openbare opslagplaats voor Adobe te gebruiken.
 
-#### Geweven profiel {#maven-profile}
+#### Gemaakt profiel {#maven-profile}
 
 ```xml
 <profile>
