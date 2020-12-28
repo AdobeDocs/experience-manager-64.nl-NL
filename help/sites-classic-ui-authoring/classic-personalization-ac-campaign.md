@@ -23,7 +23,7 @@ ht-degree: 0%
 U kunt e-mailinhoud maken in AEM en deze verwerken in Adobe Campaign-e-mails. Daartoe moet u:
 
 1. Maak een nieuwe nieuwsbrief in AEM van een Adobe Campaign-specifieke sjabloon.
-1. Selecteer [een Adobe Campaign-service](#selectingtheadobecampaigncloudservice) voordat u de inhoud gaat bewerken om toegang te krijgen tot alle functies.
+1. Selecteer [een Adobe Campaign-service](#selectingtheadobecampaigncloudservice) voordat u de inhoud bewerkt om toegang te krijgen tot alle functies.
 1. Bewerk de inhoud.
 1. Valideer de inhoud.
 
@@ -50,7 +50,7 @@ In dit document worden gedetailleerde instructies beschreven.
 
 >[!NOTE]
 >
->Als u e-mailsjablonen toevoegt, moet u deze toevoegen onder **/inhoud/campagnes** om ze beschikbaar te maken.
+>Wanneer u e-mailsjablonen toevoegt, moet u deze toevoegen onder **/content/campagnes** om ze beschikbaar te maken.
 
 
 1. Selecteer in AEM de map **Websites** en blader naar de verkenner om te zoeken waar uw e-mailcampagnes worden beheerd. In het volgende voorbeeld is het betrokken knooppunt **Websites** > **Campagnes** > **Geometrixx Outdoors** > **E-mailcampagnes**.
@@ -69,16 +69,16 @@ In dit document worden gedetailleerde instructies beschreven.
 
    ![chlimage_1-173](assets/chlimage_1-173.png)
 
-1. Klik op **Maken** om uw e-mail of nieuwsbrief te maken.
+1. Klik **Maken** om uw e-mail of nieuwsbrief te maken.
 
-### De Adobe Campaign-cloudservice en -sjabloon selecteren {#selecting-the-adobe-campaign-cloud-service-and-template}
+### De Adobe Campaign-cloudservice en sjabloon {#selecting-the-adobe-campaign-cloud-service-and-template} selecteren
 
 Voor integratie met Adobe Campaign moet u een Adobe Campaign-cloudservice aan de pagina toevoegen. Zo hebt u toegang tot personalisatie en andere Adobe Campaign-gegevens.
 
 Daarnaast moet u mogelijk ook de Adobe Campaign-sjabloon selecteren en het onderwerp wijzigen en onbewerkte tekstinhoud toevoegen voor gebruikers die de e-mail niet in HTML zullen bekijken.
 
 1. Selecteer het tabblad **Pagina** in het zijpaneel en selecteer vervolgens **Pagina-eigenschappen.**
-1. Selecteer Service **** toevoegen om de Adobe Campaign-service toe te voegen op het tabblad **Cloudservices** in het pop-upvenster en klik op **OK**.
+1. Selecteer **Service toevoegen** op het tabblad **Cloudservices** in het pop-upvenster om de Adobe Campaign-service toe te voegen en klik op **OK**.
 
    ![chlimage_1-174](assets/chlimage_1-174.png)
 
@@ -86,13 +86,13 @@ Daarnaast moet u mogelijk ook de Adobe Campaign-sjabloon selecteren en het onder
 
    >[!NOTE]
    >
-   >Tik op **OK** of **Toepassen** nadat u de cloudservice hebt toegevoegd. Hierdoor werkt het tabblad **Adobe Campaign** goed.
+   >Tik op **OK** of **Toepassen** nadat u de cloudservice hebt toegevoegd. Hierdoor werkt het tabblad **Adobe Campaign** correct.
 
-1. Als u een specifieke sjabloon voor e-maillevering (vanuit Adobe Campaign) wilt toepassen, anders dan de standaardsjabloon voor **e-mail** , selecteert u nogmaals **Pagina-eigenschappen** . Voer op het tabblad **Adobe Campaign** de interne naam van de sjabloon voor e-maillevering in het verwante Adobe Campaign-exemplaar in.
+1. Als u een specifiek malplaatje van de e-maillevering (van Adobe Campaign), buiten het gebrek **mail** malplaatje zou willen toepassen, selecteer **Pagina eigenschappen** opnieuw. Voer op het tabblad **Adobe Campaign** de interne naam van de sjabloon voor e-maillevering in het gerelateerde Adobe Campaign-exemplaar in.
 
    In Adobe Campaign Standard is de sjabloon **Levering met AEM Inhoud**. In Adobe Campaign 6.1 is de sjabloon **E-maillevering met AEM inhoud**.
 
-   Wanneer u de sjabloon selecteert, schakelt AEM automatisch de **Adobe Campaign Newsletter** -componenten in.
+   Als u de sjabloon selecteert, schakelt AEM automatisch de **Adobe Campaign Newsletter**-componenten in.
 
 ### E-mailinhoud bewerken {#editing-email-content}
 
@@ -100,7 +100,7 @@ U kunt e-mailinhoud bewerken in de klassieke gebruikersinterface of in de gebrui
 
 1. Voer het onderwerp en de tekstversie van de e-mail in door **Pagina-eigenschappen** > **E-mail** te selecteren in de gereedschapset.
 
-   ![chlimage_1-174](assets/chlimage_1-175.png)
+   ![chlimage_1-175](assets/chlimage_1-175.png)
 
 1. Bewerk e-mailinhoud door de elementen toe te voegen die u van de beschikbare elementen in de assistent wilt gebruiken. U doet dit door ze te slepen en neer te zetten. Dubbelklik vervolgens op het element dat u wilt bewerken.
 
@@ -108,11 +108,11 @@ U kunt e-mailinhoud bewerken in de klassieke gebruikersinterface of in de gebrui
 
    ![chlimage_1-176](assets/chlimage_1-176.png)
 
-   Zie [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) voor een beschrijving van de componenten die beschikbaar zijn voor Adobe Campaign-nieuwsbrieven/e-mailcampagnes.
+   Zie [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-personalization-ac-components.md) voor een beschrijving van de componenten beschikbaar voor Adobe Campaign-nieuwsbrieven/e-mailcampagnes.
 
    ![chlimage_1-177](assets/chlimage_1-177.png)
 
-### Personalisatie invoegen {#inserting-personalization}
+### Aanpassing {#inserting-personalization} invoegen
 
 Wanneer u de inhoud bewerkt, kunt u het volgende invoegen:
 
@@ -123,25 +123,25 @@ Zie [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-persona
 
 >[!NOTE]
 >
->* Alleen de velden van de Adobe Campaign- **profielen** voor dimensie worden in aanmerking genomen.
->* Wanneer u Eigenschappen van **sites** weergeeft, hebt u geen toegang tot de Adobe Campaign-contextvelden. U kunt deze rechtstreeks vanuit de e-mail openen tijdens het bewerken.
+>* Alleen de velden van de Adobe Campaign **Profiles**-doeldimensie worden in aanmerking genomen.
+>* Wanneer het bekijken van Eigenschappen van **Sites**, hebt u geen toegang tot de de contextgebieden van Adobe Campaign. U kunt deze rechtstreeks vanuit de e-mail openen tijdens het bewerken.
 
 >
 
 
 
-1. Voeg een nieuwe **component Newsletter** > **Tekst en personalisatie (Campagne)** in.
-1. Open de component door erop te dubbelklikken. Het venster **Bewerken** heeft een functionaliteit waarmee u de personalisatie-elementen kunt invoegen.
+1. Voeg een nieuwe **nieuwsbrief** > **Tekst en personalisatie (Campagne)** component in.
+1. Open de component door erop te dubbelklikken. Het **Edit** venster heeft een functionaliteit die u de verpersoonlijkingselementen laat opnemen.
 
    >[!NOTE]
    >
-   >De beschikbare contextvelden corresponderen met de **profielen** die als doeldimensie in Adobe Campaign worden gebruikt.
+   >De beschikbare contextgebieden beantwoorden aan **Profielen** richtend dimensie in Adobe Campaign.
    >
-   >Zie Een AEM [koppelen aan een Adobe Campaign-e-mail](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
+   >Zie [Een AEM pagina koppelen aan een Adobe Campaign-e-mail](/help/sites-classic-ui-authoring/classic-personalization-ac-campaign.md#linkinganaempagetoanadobecampaignemail).
 
    ![chlimage_1-178](assets/chlimage_1-178.png)
 
-1. Selecteer **Clientcontext** in het hulpprogramma om de personalisatievelden te testen aan de hand van de gegevens in de persoonlijke profielen.
+1. Selecteer **Clientcontext** in het hulpprogramma om de aanpassingsvelden te testen met behulp van de gegevens in de persoonlijke profielen.
 
    ![chlimage_1-179](assets/chlimage_1-179.png)
 
@@ -149,26 +149,26 @@ Zie [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-persona
 
    ![chlimage_1-180](assets/chlimage_1-180.png)
 
-### Een voorvertoning van een nieuwsbrief weergeven {#previewing-a-newsletter}
+### Een nieuwsbrief {#previewing-a-newsletter} voorvertonen
 
 U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie.
 
 1. Open de nieuwsbrief u voorproef en klik Voorproef (vergrootglas) om hulpdekick te krimpen.
 1. Klik op een van de e-mailclientpictogrammen om te zien hoe uw nieuwsbrief er in elke e-mailclient uitziet.
 
-   ![chlimage_1-101](assets/chlimage_1-181.png)
+   ![chlimage_1-181](assets/chlimage_1-181.png)
 
 1. Vouw het hulpwerktuig uit en bewerk het opnieuw.
 
-### Inhoud in AEM goedkeuren {#approving-content-in-aem}
+### Inhoud goedkeuren in AEM {#approving-content-in-aem}
 
-Nadat de inhoud is voltooid, kunt u het goedkeuringsproces starten. Ga naar het tabblad **Workflow** van de gereedschapset en selecteer de workflow **Goedkeuren voor Adobe Campaign** .
+Nadat de inhoud is voltooid, kunt u het goedkeuringsproces starten. Ga naar het **Werkstroom** lusje van toolbox en selecteer **goedkeuren voor Adobe Campaign** werkschema.
 
 Deze out-of-the-box workflow bestaat uit twee stappen: herziening dan goedkeuring, of herziening dan verwerping. Deze workflow kan echter worden uitgebreid en aangepast aan een complexer proces.
 
 ![chlimage_1-182](assets/chlimage_1-182.png)
 
-Als u inhoud voor Adobe Campaign wilt goedkeuren, past u de workflow toe door **Workflow** te selecteren in het hulpprogramma en **Goedkeuren voor Adobe Campaign** te selecteren en op Workflow **** starten te klikken. Doorloop de stappen en keur de inhoud goed. U kunt de inhoud ook afwijzen door **Afwijzen** te selecteren in plaats van **Goedkeuren** in de laatste workflowstap.
+Als u inhoud voor Adobe Campaign wilt goedkeuren, past u de workflow toe door **Workflow** in de assistent te selecteren en **Goedkeuren voor Adobe Campaign** te selecteren en op **Workflow starten** te klikken. Doorloop de stappen en keur de inhoud goed. U kunt de inhoud ook afwijzen door **Afwijzen** te selecteren in plaats van **Goedkeuren** in de laatste workflowstap.
 
 ![chlimage_1-183](assets/chlimage_1-183.png)
 
@@ -180,13 +180,13 @@ In Adobe Campaign Standard:
 
 In Adobe Campaign 6.1:
 
-![chlimage_1-186](assets/chlimage_1-185.png)
+![chlimage_1-185](assets/chlimage_1-185.png)
 
 >[!NOTE]
 >
 >Niet-goedgekeurde inhoud kan worden gesynchroniseerd met een levering in Adobe Campaign, maar de levering kan niet worden uitgevoerd. Alleen goedgekeurde inhoud kan via campagneleveringen worden verzonden.
 
-## AEM met Adobe Campaign Standard en Adobe Campaign 6.1 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
+## AEM koppelen met Adobe Campaign Standard en Adobe Campaign 6.1 {#linking-aem-with-adobe-campaign-standard-and-adobe-campaign}
 
 >[!NOTE]
 >
