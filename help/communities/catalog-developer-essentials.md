@@ -105,7 +105,7 @@ Het voorbeeld van [Enablement Tutorial](getting-started-enablement.md) gebruiken
 
 * De communitysite opnieuw publiceren
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 #### Label-id&#39;s {#pre-filter-tagids} vóór filter
 
