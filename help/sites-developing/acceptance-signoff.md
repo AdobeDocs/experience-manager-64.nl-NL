@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Aanvaarding en afmelding{#acceptance-and-sign-off}
 
-Zoals reeds vermeld, vormen [goedkeuringstests](/help/sites-developing/planning.md) een speciale testcategorie om na te gaan of:
+Zoals vermeld, zijn [Acceptatietests](/help/sites-developing/planning.md) een speciale testcategorie die wordt gebruikt om te controleren of:
 
 * Het project voldoet aan de vereisten van de klant.
 * De klant accepteert het project.
