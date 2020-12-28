@@ -28,7 +28,7 @@ De algemene gegevensbeschermingsverordening van de Europese Unie betreffende de 
 
 AEM Sites is klaar om klanten te helpen bij het nakomen van hun GDPR-verplichtingen. Deze pagina begeleidt klanten door de procedures om GDPR-verzoeken in AEM Sites te behandelen. Hierin wordt de locatie van opgeslagen privégegevens beschreven en hoe deze handmatig of met code kunnen worden verwijderd.
 
-Zie de pagina [GDPR in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html)voor meer informatie.
+Zie de [GDPR-pagina in het Adobe Privacy Center](https://www.adobe.com/privacy/general-data-protection-regulation.html) voor meer informatie.
 
 >[!NOTE]
 >
@@ -36,29 +36,29 @@ Zie de pagina [GDPR in het Adobe Privacy Center](https://www.adobe.com/privacy/g
 
 ## Auteursserver {#author-server}
 
-Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de GDPR-documentatie [van het](/help/managing/data-protection-and-privacy.md)Platform.
+Gebruikersaccounts en UGC-inhoud op de auteurserver worden behandeld in de [Platform GDPR-documentatie](/help/managing/data-protection-and-privacy.md).
 
-## Server publiceren {#publish-server}
+## Server {#publish-server} publiceren
 
-Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden behandeld in de GDPR-documentatie [van het](/help/managing/data-protection-and-privacy.md)Platform.
+Gebruikersaccounts die worden gebruikt om bezoekers op de site te verifiëren, en UGC-inhoud op de publicatieserver worden beschreven in de [Platform GDPR-documentatie](/help/managing/data-protection-and-privacy.md).
 
 Standaard slaan AEM Sites-componenten geen formuliergegevens op die bezoekers op de publicatieserver hebben ingevoerd. Het wordt aanbevolen de gegevens naar een systeem van derden of naar Adobe Campaign te sturen voor verdere verwerking.
 
-## Opt-in/Opt-out {#opt-in-opt-out}
+## Opt-In/Opt-Out {#opt-in-opt-out}
 
-AEM heeft een [cookie-uitschakelservice](/help/sites-developing/cookie-optout.md) die kan worden gebruikt voor het beheer van de opt-in/opt-out voor gebruikers.
+AEM heeft een [cookie opt-out service](/help/sites-developing/cookie-optout.md) die kan worden gebruikt voor het beheer van de opt-in/opt-out voor gebruikers.
 
 ## Verbeterde inzichten door Analytics {#enhanced-insights-by-analytics}
 
 AEM Sites omvat een optionele integratie met Enhanced Insights van Analytics, die gebruikmaakt van functionaliteit binnen de Adobe Analytics On-demand Service.
 
-Zie [Adobe Analytics en GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html)voor meer informatie over het beheer van verzoeken van GDPR-betrokkenen met betrekking tot Adobe Analytics.
+Zie [Adobe Analytics en GDPR](https://docs.adobe.com/content/help/en/analytics/admin/data-governance/an-gdpr-overview.html) voor meer informatie over het beheer van aanvragen van GDPR-betrokkenen met betrekking tot Adobe Analytics.
 
 ## Verbeterde personalisatie door doel {#enhanced-personalization-by-target}
 
 AEM Sites omvat een optionele integratie met Enhanced Personalization by Target, die gebruikmaakt van functionaliteit binnen de Adobe Target On-demand Service.
 
-Zie de [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html)voor meer informatie over het beheer van verzoeken van GDPR-betrokkenen met betrekking tot Adobe Target.
+Zie [Adobe Target - Privacy and General Data Protection Regulation](https://docs.adobe.com/content/help/en/target/using/implement-target/before-implement/privacy/cmp-privacy-and-general-data-protection-regulation.html) voor meer informatie over het beheer van aanvragen voor GDPR-gegevens met betrekking tot Adobe Target.
 
 ## ContextHub {#contexthub}
 
@@ -72,7 +72,7 @@ Deze bezoekergegevens worden standaard niet in AEM opgeslagen. AEM verzendt rege
 >
 >Adobe CQ 5.5 en eerder zijn nu EOL en worden niet door deze documentatie gedekt.
 
-### Opt-in/Opt-out implementeren {#implementing-opt-in-opt-out}
+### Implementatie van Opt-in/Opt-out {#implementing-opt-in-opt-out}
 
 De eigenaar van de site moet een opt-out-component implementeren in overeenstemming met de volgende richtlijnen.
 
