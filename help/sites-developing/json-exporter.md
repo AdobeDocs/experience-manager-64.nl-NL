@@ -18,7 +18,7 @@ ht-degree: 3%
 ---
 
 
-# JSON-exportfunctie voor services voor inhoud{#json-exporter-for-content-services}
+# JSON Exporter voor Content Services{#json-exporter-for-content-services}
 
 AEM Content Services zijn ontworpen om de beschrijving en levering van inhoud in of vanuit AEM te veralgemenen, waarbij de aandacht niet op webpagina&#39;s wordt gevestigd.
 
@@ -32,13 +32,13 @@ Met inhoudsfragmenten die gestructureerde inhoud gebruiken, kunt u de inhoudsdie
 
 >[!NOTE]
 >
->De hier beschreven functionaliteit is beschikbaar voor alle Core Components sinds [versie 1.1.0 van de Core Components](https://docs.adobe.com/content/docs/en/core-components/v1.html).
+>De hier beschreven functionaliteit is beschikbaar voor alle Core Components sinds [release 1.1.0 van de Core Components](https://docs.adobe.com/content/docs/en/core-components/v1.html).
 
 ## JSON-exportfunctie met kerncomponenten van inhoudsfragment {#json-exporter-with-content-fragment-core-components}
 
 Met de AEM JSON-exportfunctie kunt u de inhoud van een (y) AEM pagina in de indeling van het JSON-gegevensmodel leveren. Dit kan dan door uw eigen toepassingen worden verbruikt.
 
-Binnen AEM wordt de levering bereikt met behulp van de kiezer `model` en de `.json` extensie.
+Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en `.json` uitbreiding.
 
 `.model.json`
 
@@ -72,11 +72,11 @@ De pagina kan één inhoudsfragment of meerdere componenten van verschillende ty
 
    >[!NOTE]
    >
-   >U kunt uw eigen componenten [](/help/sites-developing/json-exporter-components.md) aanpassen om tot deze gegevens toegang te hebben en te gebruiken.
+   >U kunt [uw eigen componenten ](/help/sites-developing/json-exporter-components.md) aanpassen om tot deze gegevens toegang te hebben en te gebruiken.
 
    >[!NOTE]
    >
-   >Hoewel het geen standaardimplementatie is, [worden](json-exporter-components.md#multiple-selectors) meerdere kiezers ondersteund, `model` maar dit moet wel de eerste zijn.
+   >Hoewel geen standaardimplementatie, [worden de veelvoudige selecteurs gesteund, ](json-exporter-components.md#multiple-selectors) maar `model` moet de eerste zijn.
 
 ### Aanvullende informatie {#further-information}
 
@@ -94,7 +94,7 @@ Zie ook:
 
    * [Pagina-informatie ophalen in JSON-indeling](/help/sites-developing/pageinfo.md)
 
-## Related Documentation {#related-documentation}
+## Verwante documentatie {#related-documentation}
 
 Zie voor meer informatie:
 
@@ -104,5 +104,5 @@ Zie voor meer informatie:
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
 
-* [Kerncomponenten](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) en de component [Inhoudsfragment](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
+* [De ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Componenten van de kern en de component van het Fragment van de  [Inhoud](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
 
