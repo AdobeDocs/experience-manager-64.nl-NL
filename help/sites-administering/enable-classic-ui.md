@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Toegang tot klassieke gebruikersinterface inschakelen{#enabling-access-to-classic-ui}
+# Toegang tot klassieke UI inschakelen{#enabling-access-to-classic-ui}
 
 Als de functionaliteit met aanraakbediening op veel gebieden van de AEM op gelijke voet komt te staan met de klassieke interface en deze overschrijdt, is de toegang tot de klassieke interface via de interface met aanraakbediening nu standaard uitgeschakeld. Op de volgende pagina&#39;s wordt uitgelegd hoe u deze toegang indien nodig opnieuw kunt inschakelen.
 
@@ -27,5 +27,5 @@ Als de functionaliteit met aanraakbediening op veel gebieden van de AEM op gelij
 
 >[!NOTE]
 >
->Zie het document Pariteit [aanraakinterface voor meer informatie over de status van pariteit van](/help/release-notes/touch-ui-features-status.md) functies en de klassieke UI.
+>Voor details over de status van eigenschappariteit met klassieke UI, zie [Aanraakeigenschappen pariteit UI](/help/release-notes/touch-ui-features-status.md) document.
 
