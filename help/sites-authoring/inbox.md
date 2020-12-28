@@ -24,14 +24,14 @@ U kunt meldingen ontvangen van verschillende AEM, waaronder workflows en project
 
 * Taken:
 
-   * deze kunnen ook worden gecreëerd op verschillende punten binnen de AEM-gebruikersinterface, bijvoorbeeld in het kader van **projecten**;
-   * these can be the product of a workflow **Create Task** or **Create Project Task** step.
+   * Deze kunnen ook op verschillende punten binnen AEM UI, bijvoorbeeld, onder **Projecten** worden gecreeerd,
+   * Deze kunnen het product van een werkschema **Create Taak** of **Create Taak van het Project** stap zijn.
 
 * Workflows:
 
    * tijdelijke items die acties vertegenwoordigen die u op pagina-inhoud moet uitvoeren;
 
-      * Dit is het product van de workflow **Deelnemerstappen**
+      * Dit is het product van werkstroom **Deelnemer** stappen
    * items zijn mislukt, zodat beheerders de mislukte stap opnieuw kunnen proberen.
 
 
@@ -39,7 +39,7 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 
 >[!NOTE]
 >
->Uit-van-de-doos AEM wordt voorgeladen met administratieve taken die aan de groep van de beheerdergebruiker worden toegewezen. Zie [uit-van-de-doos Administratieve Taken](#out-of-the-box-administrative-tasks) voor details.
+>Uit-van-de-doos AEM wordt voorgeladen met administratieve taken die aan de groep van de beheerdergebruiker worden toegewezen. Zie [Uit-de-doos Administratieve Taken](#out-of-the-box-administrative-tasks) voor details.
 
 >[!NOTE]
 >
@@ -54,7 +54,7 @@ U ontvangt deze meldingen in uw eigen Postvak IN waar u ze kunt bekijken en acti
 
 
 
-## Postvak IN van koptekst {#inbox-in-the-header}
+## Postvak In in koptekst {#inbox-in-the-header}
 
 Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoond in de kopbal. De indicator kan ook worden geopend om snel toegang te krijgen tot de pagina(&#39;s) waarvoor een actie(s) vereist is of om toegang te krijgen tot het Postvak IN:
 
@@ -62,9 +62,9 @@ Van om het even welke consoles wordt het huidige aantal punten in uw inbox getoo
 
 >[!NOTE]
 >
->Bepaalde acties zullen ook in de [kaartmening van het aangewezen middel](/help/sites-authoring/basic-handling.md#card-view)worden getoond.
+>Bepaalde acties worden ook weergegeven in de kaartweergave [van de juiste resource](/help/sites-authoring/basic-handling.md#card-view).
 
-## Administratieve taken buiten de box  {#out-of-the-box-administrative-tasks}
+## Administratieve taken buiten de box {#out-of-the-box-administrative-tasks}
 
 Uit-van-de-doos AEM wordt voorgeladen met vier taken die aan de groep van de beheerdergebruiker worden toegewezen.
 
@@ -73,7 +73,7 @@ Uit-van-de-doos AEM wordt voorgeladen met vier taken die aan de groep van de beh
 * Verzamelde verzameling van verbruiksstatistieken inschakelen
 * [HTTPS configureren](/help/sites-administering/ssl-by-default.md)
 
-## De Postvak IN openen {#opening-the-inbox}
+## De Postvak IN {#opening-the-inbox} openen
 
 U opent als volgt het AEM-vak:
 
@@ -82,7 +82,7 @@ U opent als volgt het AEM-vak:
 1. Selecteer **Alles bekijken**. De **AEM Inbox** wordt geopend. In de inbox ziet u items uit workflows, projecten en taken.
 1. De standaardweergave is [Lijstweergave](#inbox-list-view), maar u kunt ook schakelen naar [Kalenderweergave](#inbox-calendar-view). Dit gebeurt met de weergavekiezer (werkbalk, rechtsboven).
 
-   Voor beide weergaven kunt u ook [Weergave-instellingen](#inbox-view-settings)definiëren. de beschikbare opties zijn afhankelijk van de huidige weergave.
+   Voor beide meningen kunt u [montages van de Mening ook bepalen](#inbox-view-settings); de beschikbare opties zijn afhankelijk van de huidige weergave.
 
    ![wf-79](assets/wf-79.png)
 
@@ -104,22 +104,22 @@ In deze weergave worden de items weergegeven op basis van hun positie in de kale
 
 U kunt:
 
-* een specifieke weergave te selecteren; **Tijdlijn**, **kolom**, **lijst**
+* een specifieke weergave te selecteren; **Tijdlijn**, **Kolom**, **Lijst**
 
-* specify the tasks to display according to **Schedule**; **All**, **Planned**, **In Progress**, **Due Soon**, **Past Due**
+* de taken specificeren om volgens **Schema** te tonen; **Alle**, **Gepland**, **Bezig**, **Onmiddellijk**, **Achterstallig**
 
 * boor neer voor meer gedetailleerde informatie over een punt
 * Selecteer een datumbereik waarop u de weergave wilt scherpstellen:
 
 ![wf-91](assets/wf-91.png)
 
-### Postvak IN - Instellingen weergeven {#inbox-view-settings}
+### Inbox - View Settings {#inbox-view-settings}
 
 Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 * **Kalenderweergave**
 
-   Voor de **kalenderweergave** kunt u het volgende configureren:
+   Voor **Kalenderweergave** kunt u configureren:
 
    * **Groeperen op**
    * **Planning** of **Geen**
@@ -129,14 +129,14 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
 * **Lijstweergave**
 
-   Voor de Mening **van de** Lijst kunt u het soortmechanisme vormen:
+   Voor **Lijstweergave** kunt u het sorteermechanisme configureren:
 
    * **Sorteren op**
    * **Sorteervolgorde**
 
    ![wf-83](assets/wf-83.png)
 
-## Actie ondernemen op een item {#taking-action-on-an-item}
+## Actie nemen op een item {#taking-action-on-an-item}
 
 1. Als u een actie wilt uitvoeren op een item, selecteert u de miniatuur voor het desbetreffende item. Pictogrammen voor de acties die op dat item van toepassing zijn, worden weergegeven op de werkbalk:
 
@@ -144,14 +144,14 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 
    De acties zijn geschikt voor het item en omvatten:
 
-   * **Voltooiing** van de actie; bijvoorbeeld een taak- of workflowitem.
-   * **Wijs** een punt opnieuw toe/**delegeer** een punt.
-   * **Open** een item; afhankelijk van het type item kan deze handeling:
+   * **** voltooiing; bijvoorbeeld een taak- of workflowitem.
+   * **Wijs/** **** Delegatean-item opnieuw toe.
+   * **** Open item; afhankelijk van het type item kan deze handeling:
 
       * itemeigenschappen weergeven
       * een geschikt dashboard of een geschikte wizard voor verdere actie openen
       * open gerelateerde documentatie
-   * **Ga terug** naar een vorige stap.
+   * **Ga** terug naar een vorige stap.
    * Bekijk de lading voor een werkschema.
    * Maak een project van het item.
 
@@ -184,7 +184,7 @@ Voor beide weergaven (Lijst en Kalender) kunt u instellingen definiëren:
 In het Postvak IN kunt u taken maken:
 
 1. Selecteer **Maken**, dan **Taak**.
-1. Complete the necessary fields in the **Basic** and **Advanced** tabs; only the **Title** is mandatory, all others are optional:
+1. Vul de vereiste velden in op de tabbladen **Basic** en **Advanced**; alleen de **Titel** is verplicht, alle andere zijn optioneel:
 
    * **Standaard**:
 
@@ -201,15 +201,15 @@ In het Postvak IN kunt u taken maken:
 
    * **Geavanceerd**
 
-      * **Naam**: dit wordt gebruikt om de URL te vormen; als het leeg is, wordt het gebaseerd op de **titel**.
+      * **Naam**: dit wordt gebruikt om de URL te vormen; als het leeg is, wordt het gebaseerd op de  **titel**.
 
    ![wf-87](assets/wf-87.png)
 
 1. Selecteer **Verzenden**.
 
-## Een project maken {#creating-a-project}
+## Een project {#creating-a-project} maken
 
-Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot stand brengen dat op die taak wordt gebaseerd:
+Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot stand brengen die op die taak wordt gebaseerd:
 
 1. Selecteer de gewenste taak door op de miniatuur te tikken of te klikken.
 
@@ -220,7 +220,7 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot 
    >Workitems (van een workflow) kunnen niet worden gebruikt om een project te maken.
 
 1. Selecteer **Project maken** op de werkbalk om de wizard te openen.
-1. Select the appropriate template, then **Next**.
+1. Selecteer het aangewezen malplaatje, dan **Next**.
 1. Geef de vereiste eigenschappen op:
 
    * **Basis**
@@ -229,13 +229,13 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot 
       * **Beschrijving**
       * **Begindatum**
       * **Vervaldatum**
-      * **Gebruiker** en rol
+      * **** Gebruikersrol
    * **Geavanceerd**
 
       * **Naam**
    >[!NOTE]
    >
-   >Zie Een project [](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) maken voor volledige informatie.
+   >Zie [Een project maken](/help/sites-authoring/touch-ui-managing-projects.md#creating-a-project) voor volledige informatie.
 
 1. Selecteer **Maken** om de handeling te bevestigen.
 
@@ -243,7 +243,7 @@ Voor bepaalde taken kunt u een [Project](/help/sites-authoring/projects.md) tot 
 
 U kunt de vermelde items filteren:
 
-1. Open het **AEM Postvak IN**.
+1. Open **AEM Inbox**.
 
 1. Open de filterkiezer:
 
@@ -255,5 +255,5 @@ U kunt de vermelde items filteren:
 
    >[!NOTE]
    >
-   >Met de Montages [van de](#inbox-view-settings) Mening kunt u de soortorde ook vormen wanneer het gebruiken van de Mening [van de](#inbox-list-view)Lijst.
+   >Met [De Montages van de Mening](#inbox-view-settings) kunt u de soortorde ook vormen wanneer het gebruiken van [de Mening van de Lijst](#inbox-list-view).
 
