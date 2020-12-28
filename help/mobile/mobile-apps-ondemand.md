@@ -22,11 +22,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 >[!NOTE]
 >
->Raadpleeg de Help bij [AEM Mobile On-demand Services als u Adobe Experience Manager (AEM) niet gebruikt als bron voor inhoudsbeheer](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Als u Adobe Experience Manager (AEM) niet gebruikt als bron voor inhoudsbeheer, raadpleegt u [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html).
 
 >[!NOTE]
 >
@@ -36,18 +36,18 @@ ht-degree: 1%
 
 ## AEM Mobile-auteur {#aem-mobile-author}
 
-Een ***AEM-auteur *(of*Marketer *)**gebruikt speciaal ontwikkelde sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, waaronder afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt vervolgens door*AEM-auteurs *gebruikt om rijke en relevante ervaringen in de app te creëren, waaronder integratie met de rest van de Adobe Marketing Cloud.
+Een ***AEM-auteur* (of *Marketer*)**maakt gebruik van speciaal ontwikkelde of out-of-the-box sjablonen en componenten om pagina&#39;s toe te voegen en te bewerken, componenten te slepen en neer te zetten en media van alle typen van de DAM toe te voegen, inclusief afbeeldingen, video&#39;s en tekstfragmenten (inhoudsfragmenten). AEM ingebouwde inhoudeditor wordt vervolgens gebruikt door *AEM-auteurs* om rijke en relevante ervaringen in de app te creëren, waaronder integratie met de rest van de Adobe Marketing Cloud.
 
 Een AEM auteur is verantwoordelijk voor de volgende taken bij het maken van een app met AEM Mobile On Demand Services.
 
-**Voor het ontwerpen AEM Inhoud voor AEM Mobile On-demand Services App** zijn de volgende acties nodig:
+**AEM Inhoud ontwerpen voor AEM Mobile On-demand Services** Appomvat de volgende handelingen:
 
 * [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)
 * [Handelingen voor het maken en configureren van toepassingen](/help/mobile/mobile-apps-ondemand-application-create-configure-action.md)
 * [Cloud Configuration](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md)
 * [Inhoud beheren](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md)
 
-Om over de Diensten **van de** Inhoud te leren, zie het Overzicht [van de Diensten van de](/help/mobile/develop-content-as-a-service.md) Inhoud beginnen.
+Voor informatie over **Content Services**, zie [Content Services Overview](/help/mobile/develop-content-as-a-service.md) om aan de slag te gaan.
 
 >[!NOTE]
 >
