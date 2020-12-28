@@ -23,7 +23,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 AEM biedt verschillende gereedschappen waarmee u sites voor mobiele apparaten kunt ontwikkelen en inhoud kunt integreren in mobiele toepassingen.
 
@@ -38,6 +38,6 @@ Ontwikkelen van paginasjablonen en onderdelen die zijn geoptimaliseerd voor weer
 * [Sites maken voor mobiele apparaten](/help/sites-developing/mobile.md)
 * [Emulators](/help/sites-developing/emulators.md)
 
-## Mobiele apps ontwikkelen {#developing-mobile-apps}
+## Mobiele toepassingen ontwikkelen {#developing-mobile-apps}
 
-Ontwikkel mobiele toepassingen die AEM pagina&#39;s als toepassingsinterface gebruiken. AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps. Klik [hier](/help/mobile/phonegap-contentsync.md)voor meer informatie over Inhoud synchroniseren.
+Ontwikkel mobiele toepassingen die AEM pagina&#39;s als toepassingsinterface gebruiken. AEM wordt geïntegreerd met PhoneGap, zodat u eenvoudig apps kunt maken met AEM pagina&#39;s. Met Content Sync kunt u geversierde archieven van pagina&#39;s maken voor bundeling met apps. Klik [hier](/help/mobile/phonegap-contentsync.md) voor meer informatie over Inhoud synchroniseren.
