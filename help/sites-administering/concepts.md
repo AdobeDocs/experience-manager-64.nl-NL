@@ -52,7 +52,7 @@ Dit betekent dat:
 
 >[!CAUTION]
 >
->Het integratiekader [voor](https://www.adobe.com/solutions/web-experience-management/commerce.html) e-handel is een AEM.
+>Het [eCommerce-integratieframework](https://www.adobe.com/solutions/web-experience-management/commerce.html) is een AEM invoegtoepassing.
 >
 >Uw vertegenwoordiger zal alle details kunnen verstrekken, afhankelijk van de geschikte motor.
 
@@ -138,8 +138,8 @@ AEM eCommerce wordt geïmplementeerd met een eCommerce-motor:
 >
 >AEM eCommerce die wordt uitgevoerd binnen AEM met behulp van generieke ontwikkeling op basis van JCR is:
 >
->* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens, winkelkaarten en kassa&#39;s te controleren in combinatie met de bestaande campagnes voor het weergeven en op de markt brengen van gegevens. In dit geval wordt de productdatabase opgeslagen in de opslagplaats die native is voor AEM (Adobe van de implementatie van [JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).\
-   >  De standaard AEM installatie bevat de grondbeginselen van de [generieke implementatie](/help/sites-administering/generic.md)van de eCommerce.
+>* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens, winkelkaarten en kassa&#39;s te controleren in combinatie met de bestaande campagnes voor het weergeven en op de markt brengen van gegevens. In dit geval wordt de productdatabase opgeslagen in de systeemeigen opslagruimte van AEM (Adobe van &lt;a0/ JCR[).](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)\
+   >  De standaard AEM installatie bevat de grondbeginselen van de [generische eCommerce-implementatie](/help/sites-administering/generic.md).
 
 >
 
@@ -165,14 +165,14 @@ Hoewel gewoonlijk zal een project hun eigen, aangepaste, handelsleverancier spec
 >
 >De geometrixximporteurs gebruiken CSV-bestanden; er is een beschrijving van het aanvaarde schema (met douaneeigenschappen toegestaan) in de commentaren boven hun implementatie.
 
-De [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) handhaaft (door [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) een lijst van implementaties van de interfaces [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [CatalogBluprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html) . Deze worden vermeld op het dropdown gebied van de Leverancier van de **Importer/van de Handel** van de Importeur tovenaar (gebruikend het `commerceProvider` bezit als naam).
+De [ProductServicesManager](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductServicesManager.html) onderhoudt (via [OSGi](/help/sites-deploying/configuring.md#osgi-configuration-settings)) een lijst met implementaties van de interfaces [ProductImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/ProductImporter.html) en [CatalogBluprintImporter](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/adobe/cq/commerce/pim/api/CatalogBlueprintImporter.html). Deze worden vermeld in **Importer/Commerce Provider** dropdown gebied van de tovenaar van de Importeur (gebruikend het `commerceProvider` bezit als naam).
 
 Wanneer een specifieke importeur/handelsleverancier beschikbaar is in de vervolgkeuzelijst, moeten eventuele aanvullende gegevens worden gedefinieerd (afhankelijk van het type importeur) in:
 
 * `/apps/commerce/gui/content/catalogs/importblueprintswizard/importers`
 * `/apps/commerce/gui/content/products/importproductswizard/importers`
 
-De map in de juiste `importers` map moet overeenkomen met de naam van de importeur. bijvoorbeeld:
+De map onder de desbetreffende map `importers` moet overeenkomen met de naam van de importer. bijvoorbeeld:
 
 * `.../importproductswizard/importers/geometrixx/.content.xml`
 
@@ -211,19 +211,19 @@ Hoewel de daadwerkelijke plaats van uw implementatie kan afhangen; bijvoorbeeld 
 
 ### Product Gegevens versus marketinggegevens {#product-data-versus-marketing-data}
 
-#### Structuur- en marketingcategorieën {#structural-versus-marketing-categories}
+#### Structuur versus marketing categorieën {#structural-versus-marketing-categories}
 
-Als de volgende twee categorieën kunnen worden onderscheiden, kunt u zo duidelijke URL&#39;s met een zinvolle structuur (bomen van `cq:Page` knooppunten) maken en daarmee zeer dicht bij het beheer van klassieke AEM inhoud):
+Als de volgende twee categorieën kunnen worden onderscheiden, kunt u zo duidelijke URL&#39;s met een zinvolle structuur (bomen van `cq:Page` knopen) maken en daarom, zeer dicht aan het beheer van de klassieke AEM inhoud):
 
 * *Structurele *categorieën
 
-   De categorieboom die bepaalt *wat een product* is; bijvoorbeeld:
+   De categoriestructuur die *wat is een product* bepaalt; bijvoorbeeld:
 
    `/products/mens/shoes/sneakers`
 
-* *Verkoopcategorieën*
+* ** Marketingcategorieën
 
-   Alle andere categorieën waartoe een *product kan behoren*; bijvoorbeeld:
+   Alle andere categorieën a *product kunnen tot* behoren; bijvoorbeeld:
 
    `/special-offers/christmas/shoes`)
 
@@ -236,9 +236,9 @@ Productgegevens kunnen zijn:
 * rechtstreeks in AEM (algemeen) worden onderhouden.
 * in de eCommerce-engine worden onderhouden en in AEM beschikbaar worden gesteld.
 
-   Afhankelijk van het gegevenstype wordt het zo nodig [gesynchroniseerd](#catalog-maintenance-data-synchronization) , of direct betreden; bijvoorbeeld, worden de hoogst vluchtige en kritieke gegevens zoals productprijzen teruggewonnen van de e-commerce motor op elke paginaverzoek om ervoor te zorgen dat zij altijd bijgewerkt zijn.
+   Afhankelijk van het gegevenstype is het [gesynchroniseerd](#catalog-maintenance-data-synchronization) zonodig, of direct betreden; bijvoorbeeld, worden de hoogst vluchtige en kritieke gegevens zoals productprijzen teruggewonnen van de e-commerce motor op elke paginaverzoek om ervoor te zorgen dat zij altijd bijgewerkt zijn.
 
-In beide gevallen, wanneer de productgegevens zijn ingegaan/in AEM ingevoerd kan het van de console van **Producten** worden gezien. Hier wordt op de kaart en in de lijst informatie over een product weergegeven, zoals:
+In beide gevallen, wanneer de productgegevens zijn ingegaan/in AEM ingevoerd kan het van de **console van Producten** worden gezien. Hier wordt op de kaart en de lijstweergave van een product informatie weergegeven zoals:
 
 * de afbeelding
 * de SKU-code
@@ -310,15 +310,15 @@ In een catalogus worden productgegevens gegroepeerd voor zowel beheer als repres
 
 #### Catalogi in meerdere talen {#catalogs-in-multiple-languages}
 
-AEM ondersteunt productinhoud in meerdere talen. Bij het aanvragen van gegevens haalt het integratieframework de taal op uit de huidige structuur (bijvoorbeeld `en_US` voor pagina&#39;s onder `/content/geometrixx-outdoors/en_US`).
+AEM ondersteunt productinhoud in meerdere talen. Wanneer gegevens worden aangevraagd, haalt het integratieframework de taal op uit de huidige structuur (bijvoorbeeld `en_US` voor pagina&#39;s onder `/content/geometrixx-outdoors/en_US`).
 
-Voor een meertalige opslag kunt u de catalogus voor elke taalboom afzonderlijk importeren (of kopiëren met behulp van [MSM](/help/sites-administering/msm.md)).
+Voor een meertalige opslag, kunt u uw catalogus voor elke taalboom individueel invoeren (of het kopiëren door middel van [MSM](/help/sites-administering/msm.md)).
 
 #### Catalogi voor meerdere merken {#catalogs-for-multiple-brands}
 
 Net als bij talen kunnen grote multinationale ondernemingen meerdere merken in aanmerking nemen.
 
-#### Catalogi op tags {#catalogs-by-tags}
+#### Catalogi op labels {#catalogs-by-tags}
 
 Met labels kunt u ook producten groeperen in een catalogus. Deze kunnen worden gebruikt voor meer dynamische catalogi, zoals seizoensaanbiedingen.
 
@@ -333,10 +333,10 @@ Afhankelijk van uw implementatie kunt u de vereiste productgegevens voor uw basi
 
 Verdere wijzigingen van de productgegevens zijn onvermijdelijk:
 
-* voor de generieke implementatie kunnen deze worden beheerd met de [producteditor](/help/sites-administering/generic.md#editing-product-information)
-* bij gebruik van een [eCommerce-engine moeten de wijzigingen worden gesynchroniseerd](#data-synchronization-with-an-ecommerce-engine-ongoing)
+* voor de generische implementatie kunnen deze worden beheerd met de [producteditor](/help/sites-administering/generic.md#editing-product-information)
+* wanneer het gebruiken van een [eCommerce motor moeten de veranderingen worden gesynchroniseerd](#data-synchronization-with-an-ecommerce-engine-ongoing)
 
-#### Gegevenssynchronisatie met een eCommerce-engine (aan de gang) {#data-synchronization-with-an-ecommerce-engine-ongoing}
+#### Gegevenssynchronisatie met een eCommerce Engine (aan de gang) {#data-synchronization-with-an-ecommerce-engine-ongoing}
 
 Na de eerste import zijn wijzigingen in de productgegevens onvermijdelijk.
 
@@ -363,13 +363,13 @@ U kunt kiezen uit verschillende strategieën om deze problemen op te lossen:
 * [Prestatietesten](#performance-testing)
 * [Prestaties - Diversen](#performance-miscellaneous)
 
-#### Emmertje {#bucketing}
+#### {#bucketing} sluiten
 
 Als een JCR-knooppunt veel directe onderliggende knooppunten heeft (bijvoorbeeld 1000 en meer), zijn emmers (fantoommappen) vereist om ervoor te zorgen dat de prestaties niet worden beïnvloed. Deze worden gegenereerd volgens een algoritme bij het importeren.
 
 Deze emmers hebben de vorm van fantoommappen die aan uw catalogusstructuur worden geïntroduceerd, maar kunnen worden gevormd zodat zij niet duidelijk in openbare URLs zijn.
 
-#### Middelen na verwerking naar een specifieke instantie verplaatsen {#offload-asset-post-processing-to-a-dedicated-instance}
+#### Middelen na verwerking naar een specifieke instantie {#offload-asset-post-processing-to-a-dedicated-instance} verschuiven
 
 In dit scenario worden twee auteur-instanties ingesteld:
 
@@ -394,7 +394,7 @@ Als producten geen te importeren elementen (afbeeldingen) bevatten, kunt u de pr
 
 [Import throttling](/help/sites-deploying/scaling.md#import-throttling) and [batch saves](/help/sites-deploying/scaling.md#batch-saves) are two general [scaling](/help/sites-deploying/scaling.md) mechanisms that can help when importing large volumes of data.-->
 
-#### Prestatietesten {#performance-testing}
+#### Prestaties testen {#performance-testing}
 
 Bij AEM eCommerce-implementaties moet rekening worden gehouden met prestatietests:
 
@@ -430,7 +430,7 @@ Houd er rekening mee dat voor deze prestatietests kennis en analyse van uw doel 
 
 * Onderhoudsvereisten (back-up, optimalisatie van Tar PM, opschonen van datastore, enz.)
 
-#### Prestaties - Diversen {#performance-miscellaneous}
+#### Prestaties - Diverse {#performance-miscellaneous}
 
 Voor alle implementaties kan rekening worden gehouden met de volgende punten:
 
@@ -460,7 +460,7 @@ Voor alle implementaties kan rekening worden gehouden met de volgende punten:
 * In uw technische stapel, plan zeer gefactoriseerde inhoudstoegangsmodel en de diensten. Dit is een algemene beste praktijk, maar is nog belangrijker, aangezien u, in optimalisatiefasen, toepassingsgeheime voorgeheugens voor gegevens kunt toevoegen die zeer vaak worden gelezen (en dat u niet de bundelgeheime voorgeheugen met wilt vullen).
 
    Bijvoorbeeld, is het attributenbeheer zeer vaak een goede kandidaat voor caching aangezien het gegevens betreft die door de invoer van producten worden bijgewerkt.
-* Overweeg het gebruik van [proxypagina](/help/sites-administering/concepts.md#proxy-pages)&#39;s.
+* Overweeg het gebruik van [proxypagina&#39;s](/help/sites-administering/concepts.md#proxy-pages).
 
 ### Sectiepagina&#39;s catalogus {#catalog-section-pages}
 
@@ -476,7 +476,7 @@ De secties van de Catalogus verstrekken u, bijvoorbeeld:
 
 Productpagina&#39;s bevatten uitgebreide informatie over afzonderlijke producten. Dynamische updates vanaf worden ook weerspiegeld; bijvoorbeeld prijswijzigingen die zijn geregistreerd op de eCommerce-engine.
 
-Productpagina&#39;s zijn AEM pagina&#39;s die gebruikmaken van de component **Product** ; bijvoorbeeld in de template **Koophandel** :
+Productpagina&#39;s zijn AEM pagina&#39;s die gebruikmaken van de component **Product**; bijvoorbeeld binnen de sjabloon **Commerce Product**:
 
 ![commerce_nairobirunnersgreen](assets/ecommerce_nairobirunnersgreen.png)
 
@@ -497,9 +497,9 @@ Dit zijn AEM pagina&#39;s die hoofdzakelijk statische informatie verstrekken; bi
 
 ### Productcomponent {#product-component}
 
-De component **Product** kan worden toegevoegd aan elke pagina met een bovenliggende pagina die de vereiste metagegevens levert (d.w.z. de paden naar `cartPage` en `cartObject`). Op de demonstratielocatie, Geometrixx Outdoors, wordt dit geleverd door `UserInfo.jsp`.
+De **Product** component kan aan om het even welke pagina met een ouderpagina worden toegevoegd die de vereiste meta-gegevens (d.w.z. de wegen aan `cartPage` en `cartObject`) levert. In de demonstratielocatie, Geometrixx Outdoors, wordt dit geleverd door `UserInfo.jsp`.
 
-De **component Product** kan ook worden aangepast aan uw individuele vereisten.
+De **Product** component kan ook worden aangepast volgens uw individuele vereisten.
 
 ### Proxypagina&#39;s {#proxy-pages}
 
@@ -534,7 +534,7 @@ Vouchers zijn een beproefde methode om kortingen aan te bieden om klanten aan te
 In AEM:
 
 * Een voucher is een op pagina gebaseerde component die wordt gemaakt/bewerkt met de websiteconsole.
-* De **component Voucher** biedt:
+* De **Voucher**-component biedt:
 
    * Een renderer voor voucherbeheer; hieruit blijkt welke vouchers zich momenteel in de kar bevinden .
    * De bewerkingsdialoogvensters (formulier) voor het beheren (toevoegen/verwijderen) van de vouchers.
@@ -544,9 +544,9 @@ In AEM:
 
 >[!NOTE]
 >
->AEM gebruikt de term **Voucher**, dit is synoniem met de term **Coupon**.
+>AEM gebruikt de term **Voucher**, is dit synoniem met de term **Coupon**.
 
-### Aanbiedingen {#promotions}
+### Promoties {#promotions}
 
 Met promoties kunt u samen met vouchers scenario&#39;s realiseren zoals:
 
@@ -554,11 +554,11 @@ Met promoties kunt u samen met vouchers scenario&#39;s realiseren zoals:
 * Langlopende klanten ontvangen kortingen op alle orders.
 * Een verkoopprijs die wordt aangeboden over een welomschreven periode.
 * Een klant ontvangt een voucher wanneer de vorige bestelling een bepaald bedrag overschrijdt.
-* Een klant die *product-X* koopt wordt aangeboden een korting op *product-Y* (paarproducten).
+* Een klant die *product-X* koopt, krijgt een korting op *product-Y* (paarproducten).
 
 Promoties worden gewoonlijk niet onderhouden door productinformatiemanagers, maar door marketingmanagers:
 
-* Een bevordering is een op pagina-gebaseerde component die met de console van Websites wordt gecreeerd/uitgegeven. ``
+* Een bevordering is een op pagina-gebaseerde component die met de console van Websites wordt gecreeerd/uitgegeven. &quot;
 * Aanbod voor promoties:
 
    * Een prioriteit
@@ -572,10 +572,10 @@ Promoties worden gewoonlijk niet onderhouden door productinformatiemanagers, maa
    * renderers en dialoogvensters voor bevorderingsbeheer
    * subcomponenten voor het teruggeven en het uitgeven configuratieparameters specifiek voor de bevorderingsmanagers
 
-In AEM zijn de promoties ook geïntegreerd in het [Campagnebeheer](/help/sites-authoring/personalization.md):
+In AEM zijn de bevorderingen ook geïntegreerd in [Campagne Management](/help/sites-authoring/personalization.md):
 
-* een [campagne](/help/sites-authoring/personalization.md) geeft de aan/uit-tijden aan
-* [ervaringen](/help/sites-authoring/personalization.md) *binnen* de campagne worden gebruikt om elementen (theaterpagina&#39;s, promoties, enz.) te groeperen volgens het publiekssegment dat zij beantwoorden aan
+* a [campagne](/help/sites-authoring/personalization.md) geeft de aan/uit-tijden aan
+* [De ](/help/sites-authoring/personalization.md) ** ervaring binnen de campagne wordt gebruikt om activa (theaterpagina&#39;s, promoties, enz.) te groeperen volgens het publiekssegment dat zij aan beantwoorden
 
 Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de campagne:
 
@@ -585,7 +585,7 @@ Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de ca
 
    `/content/campaigns/geometrixx-outdoors/big-spender/ordervalueover100/free-shipping`
 
-   bevindt zich in een ervaring en wordt dus automatisch geactiveerd wanneer het segment ( `ordervalueover100`) verdwijnt.
+   bevindt zich in een ervaring en wordt dus automatisch geactiveerd wanneer het segment ( `ordervalueover100`) wordt opgelost.
 
 * Als een bevordering niet binnen een ervaring verschijnt (slechts in de campagne), dan kan het niet automatisch op een publiek worden toegepast. Het kan echter nog steeds worden geactiveerd als de gebruiker een voucher in zijn winkelwagen invoert en die voucher verwijst naar de promotie.
 
@@ -597,7 +597,7 @@ Een promotieactie kan worden uitgevoerd in een ervaring of rechtstreeks in de ca
 
 >[!NOTE]
 >
->[hybris promotions](https://www.hybris.com/modules/promotion) and [hybris vouchers](https://www.hybris.com/en/modules/voucher) bestrijken alles wat van invloed is op het winkelwagentje en verband houdt met de prijsstelling . Promotie-specifieke marketinginhoud (zoals banners, enz.) maakt geen deel uit van de hybrispromotie.
+>[hybris - ](https://www.hybris.com/modules/promotion) promoties en  [hybris - ](https://www.hybris.com/en/modules/voucher) voucherscover alles wat van invloed is op het winkelwagentje en verband houdt met prijsstelling . Promotie-specifieke marketinginhoud (zoals banners, enz.) maakt geen deel uit van de hybrispromotie.
 
 ## Personalisatie {#personalization}
 
@@ -628,7 +628,7 @@ Wanneer u een eCommerce-engine gebruikt, slaat AEM alleen de account-id en het w
 >
 >Wanneer u een eCommerce-engine gebruikt, moet u ervoor zorgen dat accounts die zijn gemaakt voor gebruikers die zich aanmelden bij een AEM-instantie, worden gerepliceerd (bijvoorbeeld via workflows) naar andere AEM die met die engine communiceren.
 >
->Anders wordt bij deze andere AEM ook geprobeerd accounts te maken voor dezelfde gebruikers in de engine. Deze acties zullen mislukken met een `DuplicateUidException` afkomstig van de motor.
+>Anders wordt bij deze andere AEM ook geprobeerd accounts te maken voor dezelfde gebruikers in de engine. Deze acties mislukken wanneer een `DuplicateUidException` afkomstig is van de engine.
 
 ### Aanmelden bij klant {#customer-sign-up}
 
@@ -644,7 +644,7 @@ Vaak is aanmelding vereist voor de winkelwagentje. Hiervoor is registratie (Acco
 
 Na aanmelding kan de winkel zich aanmelden bij zijn account, zodat de acties van de winkel kunnen worden bijgehouden en de bestellingen kunnen worden uitgevoerd.
 
-![chlimage_1-174](assets/chlimage_1-175.png)
+![chlimage_1-175](assets/chlimage_1-175.png)
 
 ### Single Sign-On {#single-sign-on}
 
@@ -654,7 +654,7 @@ Single-sign-on (SSO) wordt verstrekt, zodat de auteurs in zowel AEM als het syst
 
 Transactiegegevens van de eCommerce-engine worden gecombineerd met persoonlijke informatie over de winkelier. AEM gebruikt sommige van deze gegevens als profielgegevens. De actie van een formulier in AEM schrijft informatie terug naar de eCommerce-engine.
 
-Er is een pagina waarmee u uw accountgegevens eenvoudig kunt beheren. U kunt het openen door **Mijn Rekening** bij de bovenkant van een geometrixx pagina te klikken, of door te navigeren aan `/content/geometrixx-outdoors/en/user/account.html`.
+Er is een pagina waarmee u uw accountgegevens eenvoudig kunt beheren. U kunt het tot toegang hebben door **Mijn Rekening** bij de bovenkant van een geometrixx pagina te klikken, of door aan `/content/geometrixx-outdoors/en/user/account.html` te navigeren.
 
 ![chlimage_1-176](assets/chlimage_1-176.png)
 
@@ -670,11 +670,11 @@ Met deze component Adresboek kunt u:
 
 U kunt kiezen welk adres u als gebrek wilt.
 
-De component van het adresboek is bereikbaar van de pagina **Mijn Rekening** door **het Boek** van het Adres te klikken of door aan `/content/geometrixx-outdoors/en/user/account/address-book.html`. te navigeren.
+De component van het adresboek is bereikbaar van **Mijn Account** pagina door **Adresboek** te klikken of door aan `/content/geometrixx-outdoors/en/user/account/address-book.html` te navigeren.
 
 ![chlimage_1-177](assets/chlimage_1-177.png)
 
-U kunt op Nieuw adres **toevoegen klikken...** om een nieuw adres in uw adresboek toe te voegen. Er wordt een formulier geopend dat u kunt invullen en vervolgens op Adres **** toevoegen klikt.
+U kunt **Nieuw adres toevoegen klikken...** om een nieuw adres in uw adresboek toe te voegen. Er wordt een formulier geopend dat u kunt invullen en vervolgens op **Adres toevoegen** klikken.
 
 >[!NOTE]
 >
@@ -684,7 +684,7 @@ Het adresboek wordt gebruikt wanneer u uw winkelwagentje uitcheckt:
 
 ![chlimage_1-178](assets/chlimage_1-178.png)
 
-Adressen blijven hieronder behouden `user_home/profile/addresses`.\
+Adressen blijven onder `user_home/profile/addresses` bestaan.\
 Voor Alison Parker, bijvoorbeeld, zou het onder /home/users/geometrixx/aparker@geometrixx.info/profile/adressen zijn
 
 U kunt kiezen welk adres u als gebrek wilt, wordt deze informatie voortgeduurd in het profiel van de verkoopster eerder dan met het adres. De profieleigenschap `address.default` wordt ingesteld met het pad van het geselecteerde adres voor waarde.
@@ -697,7 +697,7 @@ De eCommerce-engine gebruikt de context (in feite de verkoopinformatie) om de pr
 
 Wanneer de winkel wordt geopend, bladert de winkelier door de productpagina&#39;s en selecteert hij items om deze in zijn winkelwagentje te plaatsen. Wanneer ze doorgaan met het uitchecken, kan een bestelling worden geplaatst.
 
-### Anonieme kopers {#anonymous-shoppers}
+### Anonieme winkels {#anonymous-shoppers}
 
 Een anonieme klant kan:
 
@@ -719,7 +719,7 @@ Een geregistreerde klant kan:
 * Uitchecken uitvoeren om de bestelling te plaatsen
 * Eerdere bestellingen weergeven en volgen
 
-### Overzicht van winkelwagentje inhoud {#shopping-cart-content-overview}
+### Overzicht van winkelwagentinhoud {#shopping-cart-content-overview}
 
 Het winkelwagentje biedt:
 
@@ -739,12 +739,12 @@ Het winkelwagentje wordt opgeslagen op basis van de gebruikte motor:
 
 In beide gevallen blijven de items in het winkelwagentje (en kunnen ze worden hersteld) staan bij aanmelding/afmelding (maar alleen op dezelfde computer/browser). Bijvoorbeeld:
 
-* bladeren als producten `anonymous` en deze toevoegen aan het winkelwagentje
-* aanmelden als `Allison Parker` - haar winkelwagen is leeg
+* bladeren als `anonymous` en producten toevoegen aan de kar
+* aanmelden als `Allison Parker` - haar winkelwagentje is leeg
 * producten toevoegen aan haar winkelwagentje
-* afmelden - de winkelwagen zal de producten tonen voor `anonymous`
+* afmelden - de kart zal de producten voor `anonymous` tonen
 
-* opnieuw aanmelden wanneer `Allison Parker` - haar producten zijn hersteld
+* opnieuw aanmelden als `Allison Parker` - haar producten zijn hersteld
 
 >[!NOTE]
 >
@@ -752,7 +752,7 @@ In beide gevallen blijven de items in het winkelwagentje (en kunnen ze worden he
 
 >[!NOTE]
 >
->Het wordt niet aanbevolen het terugzetten van de inhoud van het winkelwagentje met de `admin` account te testen, omdat dit in strijd kan zijn met de `admin` rekening van de eCommerce-motor (bijvoorbeeld hybris).
+>Het wordt niet aanbevolen het herstellen van de inhoud van het winkelwagentje te testen met de `admin`-account, omdat dit een conflict kan veroorzaken met de `admin`-account van de eCommerce-engine (bijvoorbeeld hybris).
 
 >[!NOTE]
 >
@@ -832,7 +832,7 @@ Er worden diverse gegevens opgeslagen, waaronder:
 
 >[!NOTE]
 >
->De velden die worden gebruikt in de wizard voor het maken van bestellingen zijn afhankelijk van een voor aanrakingen geoptimaliseerde basisstructuur die is gedefinieerd voor de locatie. In het algemene voorbeeld vindt u de volgende informatie:\
+>De velden die worden gebruikt in de wizard voor het maken van bestellingen, zijn afhankelijk van een voor aanrakingen geoptimaliseerde basisstructuur die is gedefinieerd voor de locatie. In het algemene voorbeeld vindt u de volgende informatie:\
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Wanneer de orde binnen AEM de console van de Orde wordt gehouden toont het volgende voor elke orde:
@@ -858,7 +858,7 @@ De afhandeling en het bijhouden van bestellingen wordt meestal beheerd door de e
 
 ![chlimage_1-180](assets/chlimage_1-180.png)
 
-## Afhandeling {#checkout}
+## Uitchecken {#checkout}
 
 Afhandeling wordt geïmplementeerd met standaard AEM formulieren. Hierdoor kan de marketingmanager de ervaring met marketinginhoud aanpassen.
 
@@ -872,18 +872,18 @@ De complicatie van de betaalkaartindustrie (PCI) kan worden bereikt.
 
 ### Bevestiging van bestelling {#confirmation-of-order}
 
-De volgorde wordt op het scherm bevestigd en kan worden bijgehouden met de [volgorde](#order-tracking).
+De volgorde wordt op het scherm bevestigd en kan worden bijgehouden met [order tracking](#order-tracking).
 
 ## Zoeken {#search-features}
 
-![chlimage_1-101](assets/chlimage_1-181.png)
+![chlimage_1-181](assets/chlimage_1-181.png)
 
 Aangezien AEM standaardpagina&#39;s voor producten gebruikt, kunt u de standaardzoekcomponent gebruiken om een zoekpagina te maken.
 
 Als u een grondiger implementatie nodig hebt, kunt u:
 
 * Breid de standaardonderzoekscomponent met de functionaliteit uit u wenst.
-* Voer de onderzoeksmethode in uw uit `CommerceService` en gebruik dan de eCommerce onderzoekscomponent op uw onderzoekspagina.
+* Voer de onderzoeksmethode in uw `CommerceService` uit en gebruik dan de eCommerce onderzoekscomponent op uw onderzoekspagina.
 
 Wanneer u een eCommerce-engine gebruikt, kan de zoekfunctie-API voor eCommerce volledig worden geïmplementeerd in de eCommerce-oplossing, zodat u de zoekcomponent voor eCommerce kunt gebruiken die buiten het vak is opgegeven. Met de beperkte zoekopdracht kunt u zoeken in JCR en/of de engine:
 
