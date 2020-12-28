@@ -1,26 +1,29 @@
 ---
 title: AEM 6.4 Aanvullende bronnen
 seo-title: AEM 6.4 Aanvullende bronnen
-description: Opmerkingen, certificeringen en extra bronnen bij de release van AEM 6.4
-seo-description: Opmerkingen, certificeringen en extra bronnen bij de release van AEM 6.4
+description: AEM 6.4 opmerkingen bij de release, certificeringen en aanvullende bronnen
+seo-description: AEM 6.4 opmerkingen bij de release, certificeringen en aanvullende bronnen
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 translation-type: tm+mt
 source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+workflow-type: tm+mt
+source-wordcount: '101'
+ht-degree: 3%
 
 ---
 
 
 # AEM 6.4 Aanvullende bronnen {#aem-64-additional-resources}
 
-## Opmerkingen bij de release AEM 6.4 {#aem-64-release-notes}
+## AEM 6.4 Opmerkingen bij de release {#aem-64-release-notes}
 
 [Meer informatie over de nieuwste functies in AEM 6.4 in de opmerkingen bij de release.](/help/release-notes/home.md)
 
-## Zelfstudievideo&#39;s voor AEM 6.4 {#aem-64-tutorial-videos}
+## AEM 6.4 Zelfstudievideo&#39;s {#aem-64-tutorial-videos}
 
 * [AEM 6.4-trainingsvideo&#39;s](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
-* [AEM-zelfstudies](https://helpx.adobe.com/experience-manager/tutorials.html)
+* [AEM Tutorials](https://helpx.adobe.com/experience-manager/tutorials.html)
 
 ## Klassen en certificering {#classes-and-certification}
 
@@ -32,4 +35,4 @@ source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
 
 ## Experience League {#experience-leauge}
 
-[Leermiddelen voor AEM weergeven in de Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&mv=other#dashboard)
+[Leermiddelen voor AEM bekijken in de Experience League.](https://guided.adobe.com/?promoid=K42KVXHD&amp;mv=other#dashboard)
