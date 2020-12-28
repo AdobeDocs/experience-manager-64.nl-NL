@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 AEM Mobile On-Demand biedt een volledig geconfigureerde toepassingssjabloon, een artikelsjabloon en artikelcomponenten.
 
@@ -33,11 +33,11 @@ Als u deze voorbeeldsjabloon selecteert wanneer u een nieuwe app maakt, beschikt
 
 >[!NOTE]
 >
->Raadpleeg het [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md)voor informatie over uw toepassing en inhoud van mobiele apps vanuit AEM Mobile Apps Control Center.
+>Raadpleeg het [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor informatie over het beheren van de inhoud van uw toepassing en mobiele apps vanuit het AEM Mobile Apps Control Center.
 
-## App-sjablonen maken {#creating-app-templates}
+## Toepassingssjablonen maken {#creating-app-templates}
 
-Een App-sjabloon wordt gebruikt om een nieuwe app te maken en fungeert als een verzameling paginasjablonen en -componenten die een basislijn of basis van een app vormen. De sjabloon stempelt enkele fundamentele eigenschappen uit om de app op de juiste manier te leiden. Over het algemeen zou een klant niet te veel apps maken.
+Een App-sjabloon wordt gebruikt om een nieuwe app te maken en fungeert als een verzameling paginasjablonen en -componenten die een basislijn of basis van een app vormen. De sjabloon stempt enkele fundamentele eigenschappen uit om de app op de juiste manier te leiden. Over het algemeen zou een klant niet te veel apps maken.
 
 Toepassingssjablonen bieden een eenvoudige manier om gebruik te maken van bestaande ontwerpen die door ontwikkelaars zijn gemaakt en die worden gebruikt voor het maken van nieuwe apps in AEM.
 
@@ -46,13 +46,13 @@ Wanneer u een nieuwe app maakt op basis van de sjabloon van een andere app, krij
 Stappen voor het maken van een nieuwe app op basis van een toepassingssjabloon:
 
 1. Ga naar de AEM Mobile-toepassingscatalogus: *&lt;server-url>/aem/apps.html/content/mobileapps*
-1. Selecteer **Maken** —> **App** zoals hieronder wordt weergegeven
+1. Selecteer **Maken** —> **App** zoals hieronder wordt getoond
 
-Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Zie Handelingen voor [inhoudsbeheer voor meer informatie over het opnieuw bezoeken, maken van artikelen, banners en verzamelingen](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md).
+Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en verzamelingen toevoegen aan uw app. Zie [Handelingen voor inhoudsbeheer](/help/mobile/mobile-apps-ondemand-manage-content-ondemand.md) om opnieuw te bezoeken, artikelen, banners en verzamelingen te maken.
 
 >[!NOTE]
 >
->U kunt ook een voorbeeldsjabloon voor de app selecteren, bijvoorbeeld **We.Unlimited** , die u ontvangt van een AEM ontwikkelaar. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
+>U kunt ook een voorbeeld-app-sjabloon selecteren, bijvoorbeeld **We.Unlimited**-app, die u ontvangt van een AEM ontwikkelaar. Als u deze voorbeeldsjabloon voor uw app gebruikt, kunt u bepaalde voorbeeldartikelen en verzamelingen bewerken. U kunt de voorbeeldsjablonen en -componenten gebruiken, de bestaande sjablonen en componenten aanpassen of nieuwe sjablonen voor uw app maken.
 
 >[!CAUTION]
 >
@@ -60,30 +60,30 @@ Nadat u een app hebt gemaakt met deze sjabloon, kunt u artikelen, banners en ver
 >
 >Tijdens het gebruik van een van de toepassingssjablonen definieert de ontwikkelaar de inhoud van de toepassing. Nochtans, moet de ontwikkelaar zich bewust zijn waar de toepassing in jcr en de waarde van ***redirectTarget*** bezit wordt gecreeerd.
 >
->Het ***redirectTarget*** wordt berekend als deel van creeer app verrichting en probeert om een weg op te lossen, als er een eigenschap redirectTarget beschikbaar als deel van het toepassingsmalplaatje is, en de waarde van redirectTarget wordt bepaald als met betrekking. Wanneer tijdens het maken van de app een relatieve waarde voor redirectTarget wordt gevonden in de toepassingssjabloon, wordt de waarde toegevoegd aan de opgeloste locatie waar de app is gemaakt.
+>***redirectTarget*** wordt berekend als deel van creeer app verrichting en pogingen om een weg op te lossen, als er een redirectTarget bezit beschikbaar als deel van het toepassingsmalplaatje is, en de waarde van redirectTarget wordt bepaald als met betrekking. Wanneer tijdens het maken van de app een relatieve waarde voor redirectTarget wordt gevonden in de toepassingssjabloon, wordt de waarde toegevoegd aan de opgeloste locatie waar de app is gemaakt.
 >
->Als een toepassingssjabloon bijvoorbeeld een ***redirectTarget*** definieert met de waarde &quot;*lanugage-masters/nl*&quot; en de app is gemaakt in &quot;*/content/mobileapps/fooApp*&quot;, is de uiteindelijke waarde voor redirectTarget nadat de app is gemaakt &quot;*/content/mobileapps/fooApp/language-masters/nl*&quot;.
+>Als een toepassingssjabloon bijvoorbeeld een ***redirectTarget*** met de waarde &quot;*lanugage-masters/en*&quot; definieert en de app is gemaakt in &quot;*/content/mobileapps/fooApp*&quot;, is de uiteindelijke waarde voor redirectTarget nadat de app is gemaakt &quot;*&quot; /content/mobileapps/fooApp/language-masters/nl*&quot;.
 
 
 ## Inhoudssjablonen maken {#creating-content-templates}
 
 Elk eenheidstype heeft twee out-of-the-box malplaatjes. Deze zijn:
 
-* **Standaardsjablonen:** gebruikt voor het maken van inhoud met de toepasselijke standaardeigenschappen/structuur
+* **Standaardsjablonen:** gebruikt voor het maken van inhoud met toepasselijke standaardeigenschappen/structuur
 * **Geïmporteerde sjablonen:** gebruikt voor het importeren van inhoud uit AEM Mobile met de toepasselijke standaardeigenschappen/structuur
 
 ### Artikelsjablonen {#article-templates}
 
 Het artikel Onbeperkt is een voorbeeldsjabloon die een gebruikelijke lay-out van AEM Mobile On-Demand-artikelen vertegenwoordigt.
 
-1. Klik op **+** in **Artikelen** beheren om een nieuw artikel te maken. U kunt een **Onbeperkt artikel** of een **RTF-artikel** kiezen. In de onderstaande afbeelding ziet u de optie waarmee u een van deze twee artikelsjablonen kunt kiezen.
+1. Klik op **+** in **Artikelen beheren** om een nieuw artikel te maken. U kunt een **Onbeperkt artikel** of een **Rich Text-artikel** kiezen. In de onderstaande afbeelding ziet u de optie waarmee u een van deze twee artikelsjablonen kunt kiezen.
 
-1. Klik op **Volgende** om metagegevens van artikelen te definiëren, zoals Naam/titel van artikel, Beschrijving, Auteur, Abstract, Afdeling, Miniatuurafbeelding, Toegang tot artikel, enzovoort.
-1. Klik op **Volgende** om de Advertentie-eigenschappen in te vullen.
-1. Klik op **Volgende** om de afbeelding voor artikelen of sociale media in te voeren
-1. Klik op **Volgende** om een verzamelingskoppeling voor dit nieuwe artikel te kiezen.
-1. Klik op **Volgende** om de gegevens voor sociaal delen in te voeren.
-1. Klik op **Maken** om het maken van een artikel met het voorbeeld te voltooien. Klik op **Gereed** of Artikel **** bewerken om de eigenschappen van dit artikel te bewerken.
+1. Klik op **Volgende** om metagegevens van artikelen te definiëren, zoals Artikelnaam/Titel, Beschrijving, Auteur, Abstract, Afdeling, Miniatuurafbeelding, Artikeltoegang, enzovoort.
+1. Klik **Volgende** om de Advertentie-eigenschappen in te vullen.
+1. Klik **Volgende** om een artikelafbeelding of afbeelding van sociale media in te voeren
+1. Klik **Volgende** om een inzamelingsverbinding te kiezen dit nieuwe artikel aan.
+1. Klik **Volgende** om de details voor sociaal delen in te gaan.
+1. Klik op **Maken** om het maken van een artikel met behulp van het voorbeeld te voltooien. Klik **Done** of **Edit Article** om de eigenschappen van dit artikel te bewerken.
 
 ![chlimage_1-71](assets/chlimage_1-71.png)
 
@@ -95,13 +95,13 @@ Selecteer een artikel dat u wilt bewerken en klik op **Bewerken** om componenten
 
 ![chlimage_1-72](assets/chlimage_1-72.png) ![chlimage_1-73](assets/chlimage_1-73.png)
 
-Kies &#39;**+**&#39; in het linkerdeelvenster om componenten aan uw artikel toe te voegen.
+Kies &#39;**+**&#39; in het linkerpaneel om componenten aan uw artikel toe te voegen.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
 
-### Sjablonen voor gebruik buiten de box maken {#creating-out-of-the-box-templates}
+### Het creëren van uit-van-de-doosmalplaatjes {#creating-out-of-the-box-templates}
 
-Er zijn geen out-of-the-box de Malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanesjablonen zouden moeten uitbreiden, zie de malplaatjesteekproef [van het](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article)Artikel van de Geometrixx Unlimited App.
+Er zijn geen out-of-the-box de Malplaatjes van het Artikel, nochtans is er een standaardmalplaatje dat de douanemalplaatjes zouden moeten uitbreiden, zie Geometrixx Unlimited App [de malplaatjesteekproef van het Artikel](http://localhost:4502/crx/de/index.jsp#/apps/geometrixx-unlimited-app/templates/article).
 
 De belangrijkste eigenschappen buiten de normale AEM vereiste eigenschappen omvatten;
 
@@ -109,15 +109,15 @@ De belangrijkste eigenschappen buiten de normale AEM vereiste eigenschappen omva
 
 Deze eigenschap zorgt ervoor dat de AEM pagina wordt herkend als een voor AEM Mobile bedoelde artikelpagina.
 
-Net als AEM sjablonen kunt u standaardeigenschappen of onderliggende knooppunten toevoegen aan de ***jcr:content*** van de sjabloon.
+Volgens AEM sjablonen kunt u standaardeigenschappen of onderliggende knooppunten toevoegen aan de ***jcr:content*** van de sjabloon.
 
-### Banner- en verzamelingssjablonen {#banner-and-collection-templates}
+### Sjablonen voor banners en verzamelingen {#banner-and-collection-templates}
 
 >[!CAUTION]
 >
 >Banners en verzamelingen hebben geen inhoud, dus het maken ervan ondersteunt geen aangepaste sjablonen.
 
-## Componenten maken en toevoegen {#creating-and-adding-components}
+## Componenten {#creating-and-adding-components} maken en toevoegen
 
 Componenten gebruiken en verlenen toegang tot widgets. Deze worden gebruikt om de inhoud te renderen.
 
@@ -145,16 +145,16 @@ Wanneer de component al op een AEM pagina is opgenomen, kunt u samen met enkele 
 
 **Een bestaande component bewerken:**
 
-1. Kies die pagina en controleer of u in de modus **Bewerken** werkt en selecteer de component
+1. Kies die pagina en zorg dat u in de modus **Bewerken** werkt en selecteer de component
 1. Tik op het moersleutelpictogram om de component te configureren
 
 >[!NOTE]
 >
->U kunt een component in AEM creëren en het zelfde aanpassen gebruikend [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Als u de bestaande component naar wens hebt aangepast, kunt u deze aan uw pagina toevoegen met de optie **Bewerken** onder Artikelen **** beheren, zoals in de bovenstaande afbeelding wordt getoond.
+>U kunt een component tot stand brengen in AEM en het zelfde aanpassen gebruikend [Ontwikkelen met CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md). Als u de bestaande component naar wens hebt aangepast, kunt u deze aan uw pagina toevoegen met de optie **Bewerken** onder **Artikelen beheren**, zoals in de bovenstaande afbeelding wordt getoond.
 
 >[!NOTE]
 >
->Raadpleeg de [Best Practices for Templates and Components Development](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
+>Raadpleeg [Beste praktijken voor sjablonen en componenten ontwikkelen](/help/mobile/best-practices-aem-mobile.md) in AEM Mobile.
 
 ### De volgende stappen {#the-next-steps}
 
