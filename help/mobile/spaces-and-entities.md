@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Een spatie is een handige locatie voor het opslaan van entiteiten die via de REST-API van Content Services worden weergegeven. Dit is vooral handig omdat een app (of elk kanaal) aan veel entiteiten kan worden gekoppeld. Als u entiteiten dwingt zich in een ruimte te bevinden, kunt u de best practices voor het groeperen van de vereisten van een app bundelen. U kunt desgewenst een toepassing in AEM koppelen aan een klein aantal spaties.
 
@@ -33,29 +33,29 @@ Een spatie is een handige locatie voor het opslaan van entiteiten die via de RES
 
 Als de gebruiker een aantal inhoud en elementen toegankelijk wil maken voor een mobiele app, maakt de gebruiker de ruimte met behulp van het AEM Mobile-dashboard.
 
-Voor het eerst wordt op het AEM Mobile-dashboard, dat geen inhoudsservices heeft geconfigureerd voor gebruik met spaties, alleen Apps weergegeven nadat **Content Services** is geselecteerd.
+Voor de eerste gebruiker, die geen inhoudsdiensten heeft gevormd om met ruimten te werken, toont het dashboard van AEM Mobile slechts Apps na het selecteren **Inhoudsdiensten**.
 
 >[!CAUTION]
 >
 >**Voorwaarden voor het toevoegen van een spatie**
 >
->Schakel het selectievakje **Enable AEM Content Services** to work with Spaces in en schakel het in het dashboard van de AEM Mobile-toepassing in.
+>Controleer **Enable AEM Content Services** om met Spaces te werken en het in te schakelen in uw AEM Mobile-toepassingsdashboard.
 >
->Zie [Inhoudsservices](/help/mobile/developing-content-services.md) beheren voor meer informatie.
+>Zie [Inhoudsservices beheren](/help/mobile/developing-content-services.md) voor meer informatie.
 
 Nadat u de spaties in het dashboard hebt geconfigureerd, voert u de volgende stappen uit om spaties te maken:
 
-1. Kies **Spaties** in Content Services.
+1. Kies **Spaces** van de Diensten van de Inhoud.
 
    ![chlimage_1-83](assets/chlimage_1-83.png)
 
-1. Kies **Maken** om een spatie te maken. Voer **Titel**, **Naam** en **Beschrijving** in voor de ruimte.
+1. Kies **Maken** om een spatie te maken. Voer **Title**, **Name** en **Description** voor de spatie in.
 
-   Klik op **Maken**.
+   Klik **Maken**.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-## Een spatie beheren {#managing-a-space}
+## Een spatie {#managing-a-space} beheren
 
 Wanneer u een spatie hebt gemaakt, klikt u links om de ruimte in de lijst te beheren.
 
@@ -66,17 +66,17 @@ U kunt de eigenschappen van de ruimte weergeven, de ruimte verwijderen of de rui
 **Eigenschappen van een spatie weergeven en bewerken**
 
 1. De ruimte in de lijst selecteren
-1. Kies **Eigenschappen** op de werkbalk
-1. Klik op **Sluiten** als u klaar bent
+1. Kies **Eigenschappen** in de werkbalk
+1. Klik **Sluiten** wanneer gereed
 
-**Een spatie** publiceren Wanneer een spatie wordt gepubliceerd, worden ook alle mappen en entiteiten in die ruimte gepubliceerd.
+**Een** spatie publicerenWanneer een spatie wordt gepubliceerd, worden ook alle mappen en entiteiten in die ruimte gepubliceerd.
 
 1. Selecteer de ruimte door op het bijbehorende pictogram in de lijst voor de ruimteconsole te klikken
-1. Publicatiestructuur **kiezen**
+1. Kies **Structuur publiceren**
 
 >[!NOTE]
 >
->U kunt de publicatie van een spatie **ongedaan maken** . Hierdoor wordt de ruimte uit het publicatie-exemplaar verwijderd.
+>U kunt een spatie **Unpublish**, die de ruimte uit de publicatie-instantie verwijdert.
 >
 >De volgende afbeelding illustreert de acties die kunnen worden uitgevoerd nadat u de ruimte hebt gepubliceerd.
 
@@ -86,17 +86,17 @@ U kunt de eigenschappen van de ruimte weergeven, de ruimte verwijderen of de rui
 
 Spaties kunnen mappen bevatten voor een betere organisatie van de inhoud en elementen van de ruimte. Gebruikers kunnen hun eigen hiërarchie onder een spatie maken.
 
-### Een map maken {#creating-a-folder}
+### Een map {#creating-a-folder} maken
 
-1. Klik op de ruimte in de lijst in de ruimteconsole en klik op Map **maken**
+1. Klik op de ruimte in de lijst in de ruimteconsole en klik **Map maken**
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
-1. Voer de **titel**, **** naam en **beschrijving** voor de map in
+1. Voer de **Titel**, **Naam,** en **Beschrijving** voor de map in
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
-1. Klik op **Maken** om de map in een ruimte te maken
+1. Klik **Maken** om de map in een ruimte te maken
 
 ## Taalkopie {#language-copy}
 
@@ -110,11 +110,11 @@ Met de functie **Taalkopie** kunnen auteurs hun master taalkopie kopiëren en ve
 >
 >Het wordt aanbevolen om inhoud die vertaald kan worden onder het knooppunt Taalkopie te plaatsen.
 
-### Taalkopie toevoegen {#adding-language-copy}
+### Taalkopie {#adding-language-copy} toevoegen
 
 1. Wanneer u ruimte hebt gemaakt, klikt u op die ruimte om een taalkopie te maken.
 
-   Klik op **Maken** en kies **Taalkopie**.
+   Klik **Maken** en kies **Taalkopie**.
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -122,13 +122,13 @@ Met de functie **Taalkopie** kunnen auteurs hun master taalkopie kopiëren en ve
    >
    >De knopen van het Exemplaar van de Taal kunnen slechts als direct kind van de Ruimte bestaan.
 
-1. Taal&amp;amp voor **inhoudspakket kiezen;ast;** en voer de **titel&amp;amp in;** in het dialoogvenster **Taalkopie** maken.
+1. Kies **Taal van inhoudspakket&amp;ast;** en ga **Titel&amp;ast;** in **Taalkopie maken** dialoog in.
 
-   Klik op **Maken**.
+   Klik **Maken**.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Zodra u een Exemplaar van de Taal creeert, verschijnt het in uw ruimte in de **Stramienen** van de Taal.
+1. Zodra u een Exemplaar van de Taal creeert, verschijnt het in uw ruimte in **Taalmeesters**.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
@@ -136,10 +136,10 @@ Met de functie **Taalkopie** kunnen auteurs hun master taalkopie kopiëren en ve
    >
    >Selecteer **Taalstramienen** om de mappen voor het kopiëren van talen weer te geven.
 
-### Een map uit de ruimte verwijderen {#removing-a-folder-from-the-space}
+### Een map verwijderen uit de spatie {#removing-a-folder-from-the-space}
 
 1. Selecteer de map in de lijst met ruimte-inhoud
-1. Click **Delete** from the toolbar
+1. Klik **Verwijderen** van de werkbalk
 
    >[!NOTE]
    >
@@ -157,7 +157,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 >
 >Entiteiten worden altijd gekoppeld aan een spatie, zodat het grootste deel van de gebruikersinterface van de entiteit wordt benaderd via de spatieconsole.
 
-### Entiteiten maken {#creating-an-entity}
+### Entiteiten {#creating-an-entity} maken
 
 1. Open de Ruimteconsole en klik op de titel van de ruimte.
 
@@ -171,17 +171,17 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    >[!NOTE]
    >
-   >U kunt kiezen uit het **middelenmodel**, het **paginamodel** of een model van het eenheidstype dat u eerder hebt gemaakt.
+   >U kunt kiezen **Elementenmodel**, **Paginamodel** of een model van entiteitstype u eerder creeerde.
    >
-   >Zie Een model [](/help/mobile/administer-mobile-apps.md)maken om een aangepaste entiteit te maken.
+   >Zie [Een model maken](/help/mobile/administer-mobile-apps.md) om een aangepaste entiteit te maken.
 
-1. Voer een **titel**, **naam**, **beschrijving** en **tags** voor de entiteit in. Klik op **Maken**.
+1. Voer een **Titel**, **Naam**, **Beschrijving** en **Codes** voor de entiteit in. Klik **Maken**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
    Zodra u wordt gedaan, verschijnt de entiteit in de nakomelingen van uw ruimte.
 
-### Een entiteit bewerken {#editing-an-entity}
+### Entiteiten {#editing-an-entity} bewerken
 
 1. Nadat u een entiteit hebt gemaakt, gaat u naar de map of ruimte en kiest u uw entiteit in de ruimteconsole die u wilt bewerken.
 
@@ -195,7 +195,7 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
    >
    >Afhankelijk van de sjabloon die u kiest om uw entiteit te maken, zal de interface voor beide variëren, voor het bewerken en weergeven van eigenschappen van uw entiteit. Zie de onderstaande stappen voor meer informatie.
 
-   ***Als u de sjabloon voor het maken van de entiteit als middelenmodellen*** kiest en u op **Bewerken** klikt, kunt u elementen toevoegen zoals in de onderstaande afbeelding wordt getoond:
+   ***Als u de sjabloon voor het maken van de entiteit als middelenmodellen*** kiest en u op  **** Bewerken klikt, kunt u elementen toevoegen zoals in de onderstaande afbeelding wordt getoond:
 
    ![chlimage_1-97](assets/chlimage_1-97.png)
 
@@ -203,23 +203,23 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
-   ***Als u de sjabloon voor het maken van de entiteit als paginamodellen*** kiest en u op **Bewerken** klikt, kunt u elementen toevoegen zoals in de onderstaande afbeelding wordt getoond:
+   ***Als u de sjabloon voor het maken van de entiteit als paginamodellen*** kiest en u op  **** Bewerken klikt, kunt u elementen toevoegen zoals in de onderstaande afbeelding wordt getoond:
 
    ![chlimage_1-99](assets/chlimage_1-99.png)
 
-   Klik op het pictogram in het **pad** om een element toe te voegen
+   Klik op het pictogram in het **Pad** om een element toe te voegen
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
    >[!NOTE]
    >
-   >Als u een entiteit hebt toegevoegd, moet deze worden opgeslagen voordat de koppeling Voorvertoning werkt. Klik op **Opslaan** om de voorvertoning weer te geven. Klik op de **voorvertoning** om de hoek van het toegevoegde element weer te geven, zoals in de onderstaande afbeelding wordt getoond:
+   >Als u een entiteit hebt toegevoegd, moet deze worden opgeslagen voordat de koppeling Voorvertoning werkt. Klik op **Opslaan** om de voorvertoning weer te geven. Wanneer u op **Voorvertoning** klikt, wordt de json van het toegevoegde element weergegeven, zoals in de onderstaande afbeelding wordt getoond:
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
 
    >[!NOTE]
    >
-   >Wanneer u klaar bent met het toevoegen van elementen aan uw entiteit, kunt u kiezen **Opslaan** om de wijzigingen op te slaan of **Opslaan en sluiten** kiezen om op te slaan en om te leiden naar de lijst met ruimteconsole waarin de entiteiten zijn gedefinieerd.
+   >Wanneer u klaar bent met het toevoegen van elementen aan uw entiteit, kunt u **Opslaan** kiezen om de wijzigingen op te slaan of **Opslaan en sluiten** kiezen om op te slaan en om te leiden naar de lijst met ruimteconsole waar de entiteiten zijn gedefinieerd.
 
    Selecteer bovendien een entiteit in de lijst met ruimteconsole en klik op **Eigenschappen** om de eigenschappen voor een gedefinieerde entiteit weer te geven en te bewerken.
 
@@ -229,22 +229,22 @@ Als de entiteitkinderen, die andere entiteiten zijn, voor gegevensmodellering wo
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
-### Entiteiten verwijderen {#removing-an-entity}
+### Entiteiten {#removing-an-entity} verwijderen
 
 1. Entiteiten in de lijst met ruimte-inhoud selecteren
 
    ![chlimage_1-104](assets/chlimage_1-104.png)
 
-1. Klik op **Verwijderen** op de werkbalk om de specifieke entiteit uit de ruimte te verwijderen
+1. Klik **Verwijderen** van de werkbalk om de specifieke entiteit uit de ruimte te verwijderen
 
-### Entiteiten publiceren {#publishing-an-entity}
+### Entiteiten {#publishing-an-entity} publiceren
 
-U kunt desgewenst de **publicatiestructuur** of **Snel publiceren** kiezen om uw entiteit te publiceren.
+U kunt kiezen **Publish Tree** of **Quick Publish** om uw entiteit te publiceren.
 
 1. Selecteer een entiteit in de lijst met ruimteconsole en klik op **Publiceer de structuur **om die entiteit en de onderliggende elementen te publiceren.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
    **Of**,
 
-   Klik op **Snel publiceren** om die specifieke entiteit te publiceren.
+   Klik **Snel publiceren** om die specifieke entiteit te publiceren.
