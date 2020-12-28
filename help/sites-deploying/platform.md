@@ -29,7 +29,7 @@ Het is de opvolger van Jackrabbit 2 en wordt door AEM 6 gebruikt als standaard b
 
 ## Ontwerpbeginselen en -doelstellingen {#design-principles-and-goals}
 
-eikenhout implementeert de specificatie [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0). De belangrijkste ontwerpdoelstellingen zijn:
+Met eikenhout wordt de [JSR-283](https://www.day.com/day/en/products/jcr/jsr-283.html) (JCR 2.0)-specificatie geïmplementeerd. De belangrijkste ontwerpdoelstellingen zijn:
 
 * Betere ondersteuning voor grote opslagplaatsen
 * Meerdere gedistribueerde clusterknooppunten voor hoge beschikbaarheid
@@ -56,7 +56,7 @@ Met de Oak Core voegt u verschillende lagen toe aan de opslaglaag:
 * Zoeken en indexeren
 * Waarneming
 
-### Oak JCR {#oak-jcr}
+### JCR {#oak-jcr}
 
 Het hoofddoel van het JCR voor de eik is om de semantische eigenschappen van het JCR om te zetten in boombewerkingen. Zij is ook verantwoordelijk voor:
 
@@ -129,7 +129,7 @@ Omdat eiken is ontworpen om achterwaarts compatibel te zijn met de JCR 1.0-stand
 * In tegenstelling tot Jackrabbit 2, waar sessies altijd de meest recente status van de opslagplaats weerspiegelen, waarbij een sessie voor eik een stabiele weergave van de opslagplaats weerspiegelt vanaf het moment dat de sessie werd verkregen. Dit komt door het MVCC-model waarop eiken is gebaseerd.
 * SNS (Same Name siblings) wordt niet ondersteund in Oak.
 
-## Overige documentatie over Platforms {#other-platform-related-documentation}
+## Overige documentatie over Platform {#other-platform-related-documentation}
 
 Raadpleeg ook de volgende artikelen voor meer informatie over het AEM platform:
 
