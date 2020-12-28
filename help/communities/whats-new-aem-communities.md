@@ -25,7 +25,7 @@ Lees verder voor een snelle inleiding tot nieuwe functies en verbeteringen. Zie 
 
 ## Subgemeenschappen of communautaire groepen beheren {#managing-sub-communities-or-community-groups}
 
-Met AEM Communities kunnen gemeenschapsbeheerders groepen en subgroepen maken binnen de communitysite met behulp van vooraf gedefinieerde sjablonen in de auteuromgeving. Deze groepen dienen als subgemeenschappen, die vele configuraties, zoals thema&#39;s en het stileren van de ouderplaats kunnen erven. Nochtans, kunnen deze groepen van de ouderplaats verschillen, bijvoorbeeld hebbend een verschillende reeks groepsmoderators of kan in het veiligheidsniveau variëren. Deze groepen fungeren als onafhankelijke, volwaardige minicategorieën die verder worden versterkt door de volgende verbeteringen.
+Met AEM Communities kunnen gemeenschapsbeheerders groepen en subgroepen maken binnen de communitysite met behulp van vooraf gedefinieerde sjablonen in de auteuromgeving. Deze groepen dienen als subgemeenschappen, die vele configuraties, zoals thema&#39;s en het stileren van de ouderplaats kunnen erven. Nochtans, kunnen deze groepen van de ouderplaats verschillen, bijvoorbeeld hebbend een verschillende reeks groepsmoderators of kan in het veiligheidsniveau variëren. Deze groepen fungeren als onafhankelijke, volwaardige mini-gemeenschappen, die verder worden versterkt door de volgende verbeteringen.
 
 ### Groepen met meerdere landinstellingen maken in één stap {#create-multi-locale-groups-in-single-step}
 
