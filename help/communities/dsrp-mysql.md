@@ -105,7 +105,7 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 #### Nieuwe verbinding Gemeenschappen {#new-communities-connection}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ## Database-instelling {#database-setup}
 
