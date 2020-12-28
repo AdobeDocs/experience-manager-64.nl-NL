@@ -26,5 +26,5 @@ Met een basisstructuur kunt u een formulier (een basisblad) maken met velden die
 
 >[!NOTE]
 >
->Hoewel er een [modus](/help/sites-authoring/author-environment-tools.md#page-modes) voor het segmenteren beschikbaar is, worden het onderhoud en de creatie van subformulieren en het maken van nieuwe pagina&#39;s van subformulieren uitgevoerd in de klassieke gebruikersinterface. Zie [Basisstructuur](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in de klassieke UI-ontwerpdocumentatie voor meer informatie.
+>Hoewel er een scalaire [modus](/help/sites-authoring/author-environment-tools.md#page-modes) beschikbaar is, worden het onderhoud en de creatie van subformulieren en het maken van nieuwe pagina&#39;s van subformulieren uitgevoerd in de klassieke UI. Zie [Basisstructuur](/help/sites-classic-ui-authoring/classic-feature-scaffolding.md) in de klassieke UI-ontwerpdocumentatie voor meer informatie.
 
