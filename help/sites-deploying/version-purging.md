@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Versie leegmaken{#version-purging}
+# Versie opruimen{#version-purging}
 
 In een standaardinstallatie AEM maakt een nieuwe versie van een pagina of knooppunt wanneer u een pagina activeert nadat u de inhoud hebt bijgewerkt.
 
@@ -26,17 +26,17 @@ In een standaardinstallatie AEM maakt een nieuwe versie van een pagina of knoopp
 >
 >Als er geen inhoudwijzigingen worden aangebracht, wordt het bericht weergegeven dat de pagina is geactiveerd, maar er wordt geen nieuwe versie gemaakt
 
-U kunt op verzoek extra versies maken met het tabblad **Versioning** van het hulpwerkgebied. Deze versies worden opgeslagen in de opslagplaats en kunnen indien nodig worden hersteld.
+U kunt extra versies op verzoek tot stand brengen gebruikend **Versioning** lusje van sidekick. Deze versies worden opgeslagen in de opslagplaats en kunnen indien nodig worden hersteld.
 
 Deze versies worden nooit gewist, zodat de grootte van de opslagplaats na verloop van tijd zal groeien en daarom moet worden beheerd.
 
 AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats te beheren:
 
-* het [versiebeheer](#version-manager)
+* de [Versiebeheer](#version-manager)
 
    Dit kan worden gevormd om oude versies te zuiveren wanneer de nieuwe versies worden gecreeerd.
 
-* het gereedschap [Versies](/help/sites-deploying/monitoring-and-maintaining.md#version-purging) wissen
+* het gereedschap [Versies wissen](/help/sites-deploying/monitoring-and-maintaining.md#version-purging)
 
    Dit wordt gebruikt als onderdeel van het bewaken en onderhouden van uw opslagplaats.
 
@@ -50,7 +50,7 @@ AEM wordt geleverd met verschillende mechanismen om u te helpen uw opslagplaats 
 
       Wanneer de leeftijd van een versie deze waarde overschrijdt, wordt deze uit de opslagplaats verwijderd.
 
-* de onderhoudstaak [Version Purge](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
+* de [onderhoudstaak voor versiezuivering](/help/sites-administering/operations-dashboard.md#automated-maintenance-tasks). U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies automatisch te schrappen. Dit minimaliseert daarom de noodzaak om handmatig de gereedschappen voor het wissen van versies te gebruiken.
 
 >[!CAUTION]
 >
@@ -140,4 +140,4 @@ Als u bijvoorbeeld het maximum EN minimum aantal versies definieert dat behouden
 
 ## Versies wissen {#purge-versions-tool}
 
-Het [gereedschap Versies](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) wissen is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
+Het gereedschap [Versies wissen](/help/sites-deploying/monitoring-and-maintaining.md#purgeversionstool) is bedoeld voor het verwijderen van de versies van een knooppunt of een hiërarchie van knooppunten in uw opslagplaats. Het belangrijkste doel is om u te helpen de grootte van uw opslagplaats te verminderen door oude versies van uw knopen te verwijderen.
