@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Herstructurering van de depositaris in AEM 6.4{#repository-restructuring-in-aem}
+# Herstructurering van de opslagplaats in AEM 6.4{#repository-restructuring-in-aem}
 
 ## Inleiding {#introduction}
 
@@ -31,7 +31,7 @@ Te dien einde, vanaf AEM 6.4 en om in toekomstige versies te worden voortgezet, 
 * AEM productcode zal altijd in /libs worden geplaatst, die niet door douanecode moet worden beschreven
 * De aangepaste code moet worden geplaatst in /apps, /content en /conf
 
-## Effect op 6,4 upgrades {#impact-on-upgrades}
+## Effect op 6.4 Upgrades {#impact-on-upgrades}
 
 Wanneer u een upgrade uitvoert naar AEM 6.4, wordt een grote subset van de inhoud onder /etc. gedupliceerd in andere mappen in de opslagplaats. Deze nieuwe locaties zijn de voorkeurslocaties voor de inhoud. Nochtans, is elke poging gemaakt om AEM 6.4 verbetering achterwaarts compatibel met de vorige plaatsen in de /etc omslag te zijn en zo in de meeste gevallen zullen de oude plaatsen door AEM code blijven worden van verwijzingen voorzien tot de veranderingen actief — en in veel gevallen manueel — in de toepassing van een klant worden gemaakt. Vanuit een tijdlijnperspectief zijn er twee categorieën wijzigingen:
 
