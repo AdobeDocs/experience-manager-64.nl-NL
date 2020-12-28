@@ -32,18 +32,18 @@ Het framework maakt gebruik van tokens om te garanderen dat het verzoek van de k
 
 ### Afhankelijkheden {#dependencies}
 
-Om het even welke component die op de `granite.jquery` afhankelijkheid baseert zal automatisch van het Kader van de Bescherming CSRF profiteren. Als dit voor om het even welk van uw componenten niet het geval is, moet u een gebiedsdeel verklaren aan `granite.csrf.standalone` alvorens u het kader kunt gebruiken.
+Om het even welke component die op `granite.jquery` gebiedsdeel baseert zal automatisch van het Kader van de Bescherming CSRF profiteren. Als dit niet het geval voor om het even welk van uw componenten is, moet u een gebiedsdeel aan `granite.csrf.standalone` verklaren alvorens u het kader kunt gebruiken.
 
-### De crypto-sleutel repliceren {#replicating-crypto-keys}
+### De crypto-sleutel {#replicating-crypto-keys} repliceren
 
-Om van de tokens gebruik te maken, moet u het `/etc/keys/hmac` binaire getal aan alle instanties in uw plaatsing herhalen. Een handige manier om de HMAC-sleutel naar alle instanties te kopiëren, is door een pakket met de sleutel te maken en deze via Package Manager op alle instanties te installeren.
-
->[!NOTE]
->
->Zorg ervoor u ook de noodzakelijke de configuratieveranderingen [van de](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) Verzender aanbrengt om het Kader van de Bescherming te gebruiken CSRF.
+Om van de tokens gebruik te maken, moet u `/etc/keys/hmac` binair aan alle instanties in uw plaatsing herhalen. Een handige manier om de HMAC-sleutel naar alle instanties te kopiëren, is door een pakket met de sleutel te maken en deze via Package Manager op alle instanties te installeren.
 
 >[!NOTE]
 >
->Als u het manifest geheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;ast;**&quot;aan manifest toevoegt om ervoor te zorgen dat het teken niet de symbolische generatievraag CSRF offline neemt. Raadpleeg deze [koppeling](https://www.w3.org/TR/offline-webapps/)voor meer informatie.
+>Zorg ervoor u ook de noodzakelijke [veranderingen van de de configuratieveranderingen van de Verzender ](https://helpx.adobe.com/experience-manager/dispatcher/user-guide.html) aanbrengt om het Kader van de Bescherming te gebruiken CSRF.
+
+>[!NOTE]
 >
->Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie de pagina [van OWASP van het Verzoek van de](https://owasp.org/www-community/attacks/csrf)Vervalsing van de Website.
+>Als u het duidelijke geheime voorgeheugen met uw Webtoepassing gebruikt, zorg ervoor u &quot;**&amp;ast;**&quot;aan manifest toevoegt om ervoor te zorgen het teken niet de symbolische generatievraag CSRF offline neemt. Raadpleeg deze [link](https://www.w3.org/TR/offline-webapps/) voor meer informatie.
+>
+>Voor meer informatie over aanvallen CSRF en manieren om hen te verlichten, zie [de pagina van OWASP van het Verzoek van de Vervalsmachine van de Depositovergangen](https://owasp.org/www-community/attacks/csrf).
