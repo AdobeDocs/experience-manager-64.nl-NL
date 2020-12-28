@@ -18,19 +18,19 @@ ht-degree: 0%
 ---
 
 
-# Inhoud publiceren ongedaan maken{#publish-unpublish-content}
+# Publiceer Inhoud publiceren ongedaan maken{#publish-unpublish-content}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Zodra u bekend bent met de acties voor inhoudsbeheer voor artikelen, banners en verzamelingen, kunt u de inhoud publiceren. Ook kunt u de publicatie van uw inhoud ongedaan maken.
 
 >[!NOTE]
 >
->Zie [Ontwerpoverwegingen voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in Online Help voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps.
+>Raadpleeg [Ontwerpoverwegingen voor AEM Mobile-apps](https://helpx.adobe.com/digital-publishing-solution/help/design-app.html) in de online Help voor meer informatie over ontwerpoverwegingen voor AEM Mobile-apps.
 
-## De inhoud publiceren/verwijderen {#publishing-unpublishing-the-content}
+## De inhoud {#publishing-unpublishing-the-content} publiceren of de publicatie ervan opheffen
 
 Dit verschilt van een &#39;AEM-publicatie&#39;. Wij duwen geen inhoud aan een AEM publiceren serverinstantie om het openbaar te maken viewable. Hier informeren we Mobile On-Demand dat de geselecteerde inhoud openbaar moet worden gemaakt in de live Mobile On-Demand-app.
 
