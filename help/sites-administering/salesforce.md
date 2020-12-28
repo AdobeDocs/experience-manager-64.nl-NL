@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Integratie met Salesforce{#integrating-with-salesforce}
+# Integreren met Salesforce{#integrating-with-salesforce}
 
 De integratie van Salesforce met AEM biedt beheermogelijkheden voor leads en maakt gebruik van de bestaande mogelijkheden die Salesforce uit de doos biedt. U kunt AEM configureren om leads te posten naar Salesforce en componenten maken die rechtstreeks vanuit Salesforce toegang hebben tot gegevens.
 
@@ -35,7 +35,7 @@ In dit document wordt het volgende beschreven:
 * hoe u het workflowmodel van Salesforce gebruikt om AEM gebruikers te plaatsen als leidt tot salesforce.
 * hoe te om een component tot stand te brengen die gegevens van Salesforce toont.
 
-## Het vormen AEM om met Salesforce te integreren {#configuring-aem-to-integrate-with-salesforce}
+## Het vormen AEM om met Salesforce {#configuring-aem-to-integrate-with-salesforce} te integreren
 
 Om AEM te vormen om met Salesforce te integreren, moet u een verre toegangstoepassing in Salesforce eerst vormen. Dan vormt u de salesforce wolkendienst om aan deze verre toegangstoepassing te richten.
 
@@ -45,29 +45,29 @@ Om AEM te vormen om met Salesforce te integreren, moet u een verre toegangstoepa
 
 Om AEM te vormen om met Salesforce te integreren:
 
-1. Navigeer in AEM naar **Cloud Services**. In de Diensten van de Derde, klik **vormen nu** in **Salesforce**.
+1. Navigeer in AEM naar **Cloud Services**. In de Diensten van de Derde, klik **Vorm nu** in **Salesforce**.
 
    ![chlimage_1-84](assets/chlimage_1-84.png)
 
-1. Een nieuwe configuratie maken, bijvoorbeeld **ontwikkelaar**.
+1. Creeer een nieuwe configuratie, bijvoorbeeld, **developer**.
 
    >[!NOTE]
    >
    >De nieuwe configuratie wordt omgeleid naar een nieuwe pagina: **http://localhost:4502/etc/cloudservices/salesforce/developer.html**. Dit is de nauwkeurige zelfde waarde die u in Callback URL moet specificeren terwijl het creëren van de verre toegangstoepassing in Salesforce. Deze waarden moeten overeenkomen.
 
 1. Meld u aan bij uw salesforce-account (of als u er geen hebt, maakt u er een op [https://developer.force.com](https://developer.force.com).)
-1. Navigeer in Salesforce naar **Maken** > **Apps** om **Connected Apps** te gebruiken (in eerdere versies van Salesforce was de workflow **Implementeren** > **Externe toegang**).
-1. Klik op **Nieuw** om AEM te maken met Salesforce.
+1. Navigeer in Salesforce naar **Create** > **Apps** om naar **Connected Apps** te gaan (in eerdere versies van Salesforce was de workflow **Deploy** > **Remote Access**).
+1. Klik **Nieuw** om AEM met Salesforce te verbinden.
 
    ![chlimage_1-85](assets/chlimage_1-85.png)
 
-1. Voer de naam **van de** verbonden toepassing, de **API-naam** en de e-mail **van de** contactpersoon in. Schakel het selectievakje **OAuth-instellingen** inschakelen in en voer de URL **van de** callback in en voeg een OAuth-bereik toe (bijvoorbeeld volledige toegang). De callback-URL ziet er ongeveer als volgt uit: `http://localhost:4502/etc/cloudservices/salesforce/developer.html`
+1. Voer de **Aangesloten toepassingsnaam**, **API-naam** en **Contact opnemen met e-mail** in. Selecteer het selectievakje **OAuth-instellingen inschakelen** en voer de **URL callback** in en voeg een OAuth-bereik toe (bijvoorbeeld volledige toegang). De callback-URL ziet er ongeveer als volgt uit: `http://localhost:4502/etc/cloudservices/salesforce/developer.html`
 
    Wijzig de servernaam/het poortnummer en de paginanaam in overeenstemming met uw configuratie.
 
    ![chlimage_1-86](assets/chlimage_1-86.png)
 
-1. Klik op **Opslaan** om de configuratie voor Salesforce op te slaan. Salesforce creëert een **consumentensleutel** en een **consumentengeheim**, die u nodig hebt voor AEM configuratie.
+1. Klik **sparen** om de salesforce configuratie te bewaren. Salesforce maakt een **consumentensleutel** en **Consumentengeheim**, die u nodig hebt voor AEM configuratie.
 
    ![chlimage_1-87](assets/chlimage_1-87.png)
 
@@ -75,7 +75,7 @@ Om AEM te vormen om met Salesforce te integreren:
    >
    >Mogelijk moet u enkele minuten wachten (tot 15 minuten) voordat de externe toegangstoepassing in Salesforce wordt geactiveerd.
 
-1. In AEM, navigeer aan **Cloud Services** en navigeer aan de salesforce configuratie u vroeger (bijvoorbeeld, **ontwikkelaar**) creeerde. Klik **uitgeven** en ga de klantensleutel en het klantengeheim van salesforce.com in.
+1. Navigeer in AEM naar **Cloud Services** en navigeer naar de salesforce-configuratie die u eerder hebt gemaakt (bijvoorbeeld **developer**). Klik op **Bewerken** en voer de sleutel en het klantgeheim van salesforce.com in.
 
    ![chlimage_1-23](assets/chlimage_1-23.jpeg)
 
@@ -84,13 +84,13 @@ Om AEM te vormen om met Salesforce te integreren:
    | Klantsleutel | Ga de waarde in die van de pagina van de Registratie van de Toepassing van de Verre Toegang in salesforce.com wordt verkregen |
    | Klantgeheim | Ga de waarde in die van de pagina van de Registratie van de Toepassing van de Verre Toegang in salesforce.com wordt verkregen |
 
-1. Klik op **Verbinding maken met Salesforce** om verbinding te maken. Salesforce vraagt dat u uw configuratie toestaat om met verkoopkracht te verbinden.
+1. Klik **Verbind met Salesforce** om te verbinden. Salesforce vraagt dat u uw configuratie toestaat om met verkoopkracht te verbinden.
 
    ![chlimage_1-88](assets/chlimage_1-88.png)
 
    In AEM wordt een bevestigingsvenster geopend met de mededeling dat u verbinding hebt gemaakt.
 
-1. Navigeer naar de hoofdpagina van uw website en klik op **Pagina-eigenschappen**. Selecteer vervolgens **Cloud Services** en voeg **Salesforce** toe en selecteer de juiste configuratie (bijvoorbeeld **ontwikkelaar**).
+1. Navigeer naar de basispagina van uw website en klik **Pagina-eigenschappen**. Selecteer vervolgens **Cloud Services** en voeg **Salesforce** toe en selecteer de juiste configuratie (bijvoorbeeld **developer**).
 
    ![chlimage_1-89](assets/chlimage_1-89.png)
 
@@ -102,25 +102,25 @@ Als u een AEM gebruiker als verkoopkrachtlood wilt uitvoeren, moet u het werksch
 
 Als u AEM gebruikers wilt exporteren als leider van Salesforce:
 
-1. Navigeer naar de Salesforce-workflow `http://localhost:4502/workflow` door met de rechtermuisknop op de workflow **Salesforce.com Export** te klikken en op **Start** te klikken.
+1. Navigeer naar de Salesforce-workflow op `http://localhost:4502/workflow` door met de rechtermuisknop op de workflow **Salesforce.com Export** te klikken en op **Start** te klikken.
 
    ![chlimage_1-90](assets/chlimage_1-90.png)
 
-1. Selecteer de AEM die u als lead wilt maken als de **Payload** voor deze workflow (home ->-gebruikers). Ben zeker om de profielknoop van de gebruiker te selecteren aangezien het informatie zoals **givenName**, **familyName**, etc. bevat, die aan de gebieden **FirstName** en **LastName** van Salesforce lood in kaart worden gebracht.
+1. Selecteer de AEM gebruiker u als lood als **Payload** voor deze werkschema (huis -> gebruikers) wilt tot stand brengen. Zorg ervoor dat u het profielknooppunt van de gebruiker selecteert omdat het informatie bevat zoals **givenName**, **familyName**, enzovoort, die zijn toegewezen aan de velden **FirstName** en **LastName** van Salesforce lead.
 
    ![chlimage_1-91](assets/chlimage_1-91.png)
 
    >[!NOTE]
    >
-   >Voordat u met deze workflow begint, moeten er bepaalde verplichte velden zijn voor publicatie op Salesforce in AEM loodknooppunt. Dit zijn **givenName**, **familyName**, **** bedrijf en **e-mail**. Voor een volledige lijst van afbeelding tussen AEM gebruiker en lood Salesforce, zie de Configuratie van de [Toewijzing tussen AEM gebruiker en lood Slaesforce.](#mapping-configuration-between-aem-user-and-salesforce-lead)
+   >Voordat u met deze workflow begint, moeten er bepaalde verplichte velden zijn voor publicatie op Salesforce in AEM loodknooppunt. Dit zijn **givenName**, **familyName**, **company** en **email**. Zie [Configuratie toewijzen tussen AEM gebruiker en Slaesforce lead voor een complete lijst met toewijzingen tussen AEM gebruiker en Salesforce lead.](#mapping-configuration-between-aem-user-and-salesforce-lead)
 
-1. Click **OK**. De gebruikersinformatie wordt uitgevoerd naar salesforce.com. U kunt het verifiëren bij salesforce.com.
+1. Klik **OK**. De gebruikersinformatie wordt uitgevoerd naar salesforce.com. U kunt het verifiëren bij salesforce.com.
 
    >[!NOTE]
    >
    >In de foutlogboeken wordt weergegeven of een lead wordt geïmporteerd. Controleer het foutenlogboek voor meer informatie.
 
-### De exportworkflow van Salesforce.com configureren {#configuring-the-salesforce-com-export-workflow}
+### De Salesforce.com-exportworkflow configureren {#configuring-the-salesforce-com-export-workflow}
 
 U kunt het werkschema van de Uitvoer moeten vormen Salesforce.com om het aan de correcte configuratie aan te passen Salesforce.com of andere veranderingen aan te brengen.
 
@@ -130,26 +130,26 @@ Om de Salesforce.com- uitvoerwerkschema te vormen:
 
    ![chlimage_1-24](assets/chlimage_1-24.jpeg)
 
-1. Open de stap van de Uitvoer Salesforce.com, selecteer het **lusje van Argumenten** , en selecteer de correcte configuratie wordt geselecteerd en klik **O.K**. Schakel het selectievakje in als u wilt dat de workflow een lead opnieuw maakt die in Salesforce is verwijderd.
+1. Open de stap van de Uitvoer Salesforce.com, selecteer **Argumenten** tabel, en selecteer de correcte configuratie wordt geselecteerd en klik **OK**. Schakel het selectievakje in als u wilt dat de workflow een lead opnieuw maakt die in Salesforce is verwijderd.
 
    ![chlimage_1-92](assets/chlimage_1-92.png)
 
-1. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Klik **Opslaan** om uw wijzigingen op te slaan.
 
    ![chlimage_1-93](assets/chlimage_1-93.png)
 
-### Toewijzingsconfiguratie tussen AEM gebruiker en Salesforce Lead {#mapping-configuration-between-aem-user-and-salesforce-lead}
+### Configuratie toewijzen tussen AEM gebruiker en Salesforce Lead {#mapping-configuration-between-aem-user-and-salesforce-lead}
 
-Om de huidige toewijzingsconfiguratie tussen een AEM gebruiker en een lood te bekijken of uit te geven Salesforce, open de Manager van de Configuratie: `https://<hostname>:<port>/system/console/configMgr` en zoek naar **Salesforce Lead Mapping Configuration**.
+Om de huidige toewijzingsconfiguratie tussen een AEM gebruiker en een lood te bekijken of uit te geven Salesforce, open de Manager van de Configuratie: `https://<hostname>:<port>/system/console/configMgr` en zoek naar **Configuratie van Salesforce Lead Mapping**.
 
-1. Open de Manager van de Configuratie door de Console **van het** Web te klikken of rechtstreeks te gaan naar `https://<hostname>:<port>/system/console/configMgr.`
-1. Zoek naar de Configuratie van de Toewijzing van de **Lood van Salesforce**.
+1. Open de Manager van de Configuratie door **Webconsole** te klikken of direct naar `https://<hostname>:<port>/system/console/configMgr.` te gaan
+1. Zoek naar **Configuratie van de Toewijzing van de Lood van Salesforce**.
 
    ![chlimage_1-94](assets/chlimage_1-94.png)
 
-1. Wijzig desgewenst toewijzingen. De standaardtoewijzing volgt het patroon** aemUserAttribute=sfLeadAttribute**. Klik op **Opslaan** om de wijzigingen op te slaan.
+1. Wijzig desgewenst toewijzingen. De standaardtoewijzing volgt het patroon** aemUserAttribute=sfLeadAttribute**. Klik **Opslaan** om uw wijzigingen op te slaan.
 
-## Contextarchief van Salesforce-client configureren {#configuring-salesforce-client-context-store}
+## Contextarchief Salesforce-client configureren {#configuring-salesforce-client-context-store}
 
 De salesforce opslag van de cliëntcontext toont extra informatie over de momenteel het programma geopende gebruiker dan wat reeds binnen AEM beschikbaar is. Deze aanvullende informatie wordt door Salesforce opgehaald, afhankelijk van de verbinding van de gebruiker met Salesforce.
 
@@ -161,13 +161,13 @@ Om dit te doen, moet u het volgende vormen:
 
 ### Een AEM gebruiker koppelen met een Salesforce-id {#linking-an-aem-user-with-a-salesforce-id}
 
-U moet een AEM gebruiker met een Salesforce-id toewijzen om deze in de clientcontext te laden. In een echt scenario, zou u gebaseerd op bekende gebruikersgegevens met bevestiging verbinden. In deze procedure gebruikt u de component **Salesforce Connect** voor demonstratiedoeleinden.
+U moet een AEM gebruiker met een Salesforce-id toewijzen om deze in de clientcontext te laden. In een echt scenario, zou u gebaseerd op bekende gebruikersgegevens met bevestiging verbinden. In deze procedure gebruikt u voor demonstratiedoeleinden de component **Salesforce Connect**.
 
-1. Navigeer naar een website in AEM, meld u aan en sleep de **component Salesforce Connect** vanuit het hulpprogramma.
+1. Navigeer naar een website in AEM, meld u aan en sleep de component **Salesforce Connect** vanuit het hulpprogramma.
 
    >[!NOTE]
    >
-   >Als de **component Salesforce Connect** niet beschikbaar is, gaat u naar de **ontwerpweergave** en selecteert u deze om deze beschikbaar te maken in de **weergave Bewerken** .
+   >Als de **Salesforce Connect**-component niet beschikbaar is, gaat u naar **Ontwerpweergave** en selecteert u deze om deze beschikbaar te maken in de weergave **Bewerken**.
 
    ![chlimage_1-25](assets/chlimage_1-25.jpeg)
 
@@ -179,7 +179,7 @@ U moet een AEM gebruiker met een Salesforce-id toewijzen om deze in de clientcon
    >
    >Dit onderdeel is uitsluitend bedoeld voor demonstratiedoeleinden. Voor scenario&#39;s in de praktijk, zou er een ander proces zijn om gebruikers met lood te verbinden/aan te passen.
 
-1. Nadat u de component op de pagina hebt gesleept, opent u deze om de component te configureren. Selecteer de configuratie, het type contact en de Salesforce-lead of -contactpersoon en klik op **OK**.
+1. Nadat u de component op de pagina hebt gesleept, opent u deze om de component te configureren. Selecteer de configuratie, het type contact, en de lood of het contact van Salesforce, en klik **OK**.
 
    ![chlimage_1-96](assets/chlimage_1-96.png)
 
@@ -199,7 +199,7 @@ U kunt gebruikersgegevens van Salesforce in de Context van de Cliënt laden voor
 
    ![chlimage_1-27](assets/chlimage_1-27.jpeg)
 
-1. Dubbelklik op de component om deze te openen. Selecteer **Punt** toevoegen en selecteer een bezit van de drop-down lijst. Voeg zoveel eigenschappen toe als u wilt en selecteer **OK**.
+1. Dubbelklik op de component om deze te openen. Selecteer **Item toevoegen** en selecteer een bezit van de drop-down lijst. Voeg zoveel eigenschappen toe als u wilt en selecteer **OK**.
 
    ![chlimage_1-98](assets/chlimage_1-98.png)
 
@@ -211,10 +211,10 @@ U kunt gebruikersgegevens van Salesforce in de Context van de Cliënt laden voor
 
 U kunt een segment bouwen dat gegevens van de Opslag van de Context van de Cliënt Salesforce gebruikt. Dit doet u als volgt:
 
-1. Navigeer naar segmentatie in AEM door naar **Gereedschappen** > **Segmentatie** te gaan of naar [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation).
-1. Maak of werk een segment bij om gegevens van Salesforce op te nemen. For more information, see [Segmentation](/help/sites-administering/campaign-segmentation.md).
+1. Navigeer naar segmentatie in AEM door naar **Tools** > **Segmentation** te gaan of naar [http://localhost:4502/miscadmin#/etc/segmentation](http://localhost:4502/miscadmin#/etc/segmentation) te gaan.
+1. Maak of werk een segment bij om gegevens van Salesforce op te nemen. Zie [Segmentatie](/help/sites-administering/campaign-segmentation.md) voor meer informatie.
 
-## Zoekleads {#searching-leads}
+## Leads zoeken {#searching-leads}
 
 AEM schepen met een voorbeeldcomponent Search die volgens de gegeven criteria in Salesforce zoekopdrachten uitvoert. Met deze component kunt u zien hoe u de Salesforce REST API kunt gebruiken om te zoeken naar Salesforce-objecten. U moet een pagina met een configuratie verbinden Salesforce om een vraag aan salesforce.com te activeren.
 
@@ -224,15 +224,15 @@ AEM schepen met een voorbeeldcomponent Search die volgens de gegeven criteria in
 
 Deze component gebruiken:
 
-1. Navigeer naar de pagina waarop u deze configuratie wilt gebruiken. Open pagina-eigenschappen en selecteer **Cloud Services.** Klik op Services **** toevoegen en selecteer **Salesforce** en de juiste configuratie en klik op **OK**.
+1. Navigeer naar de pagina waarop u deze configuratie wilt gebruiken. Open pagina-eigenschappen en selecteer **Cloud Services.** Klik op  **Services** toevoegen en selecteer  **** Salesforcee en de juiste configuratie en klik op  **OK**.
 
    ![chlimage_1-28](assets/chlimage_1-28.jpeg)
 
 1. Sleep de Salesforce-zoekcomponent naar de pagina (mits deze is ingeschakeld). Ga naar de ontwerpmodus en voeg deze toe aan het desbetreffende gebied om de modus in te schakelen.)
 
-   ![chlimage_1-29](assets/chlimage_1-29.jpeg)
+   ![chlimage_1-21](assets/chlimage_1-29.jpeg)
 
-1. Open de component van het Onderzoek, specificeer de onderzoeksparameters en klik **O.K.**
+1. Open de component van het Onderzoek en specificeer de onderzoeksparameters en klik **OK.**
 
    ![chlimage_1-100](assets/chlimage_1-100.png)
 
