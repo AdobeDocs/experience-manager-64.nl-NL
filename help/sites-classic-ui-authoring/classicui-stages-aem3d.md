@@ -26,7 +26,7 @@ Fases zijn lichte 3D-scènebestanden die de standaardweergaveomgeving (lichten, 
 >
 >De OBJ 3D-indeling ondersteunt geen lichten. Daarom kan het niet worden gebruikt om stadia aan AEM 3D te verstrekken.
 
-De bestandsindeling van het werkgebied bepaalt welke renderer u met dat werkgebied kunt gebruiken. Als Autodesk® Maya® bijvoorbeeld wordt gebruikt voor renderen van hoge kwaliteit, moet het werkgebied een indeling `.ma` `.mb` of indeling hebben. Als u alleen de standaard Rapid Refine™-renderer wilt gebruiken, is elke ondersteunde bestandsindeling voor het werkgebied acceptabel.
+De bestandsindeling van het werkgebied bepaalt welke renderer u met dat werkgebied kunt gebruiken. Als Autodesk® Maya® bijvoorbeeld wordt gebruikt voor rendering van hoge kwaliteit, moet het werkgebied de indeling `.ma` of `.mb` hebben. Als u alleen de standaard Rapid Refine™-renderer wilt gebruiken, is elke ondersteunde bestandsindeling voor het werkgebied acceptabel.
 
 Alle renderinstellingen in AEM 3D, met uitzondering van het type en de grootte van de uitvoerafbeelding, moeten vooraf zijn geconfigureerd en in het werkgebiedbestand worden opgeslagen voordat ze worden geüpload naar AEM.
 
