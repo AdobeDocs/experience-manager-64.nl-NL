@@ -22,11 +22,11 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 >[!NOTE]
 >
->Raadpleeg de Help bij [AEM Mobile On-demand Services als u AEM niet gebruikt als bron voor inhoudsbeheer](https://helpx.adobe.com/digital-publishing-solution/topics.html).
+>Zie [AEM Mobile On-demand Services Help](https://helpx.adobe.com/digital-publishing-solution/topics.html) als u AEM niet gebruikt als bron voor inhoudsbeheer.
 
 ## AEM-beheerder {#aem-administrator}
 
@@ -34,17 +34,17 @@ ht-degree: 1%
 >
 >**Vereiste:**
 >
->Voordat u aan de slag gaat met het instellen van uw omgeving voor AEM Mobile On-demand Services, raadpleegt u het [AEM Mobile Application Dashboard of het Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
+>Voordat u aan de slag gaat met het instellen van uw omgeving voor AEM Mobile On-demand Services, raadpleegt u [AEM Mobile Application Dashboard of Control Center](/help/mobile/mobile-apps-ondemand-application-dashboard.md).
 
-Een ***AEM beheerder*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de AEM Mobile-catalogus door een nieuwe toepassing te maken met de wizard voor het maken van een toepassing of door een bestaande toepassing te importeren. AEM beheerders die een nieuwe app maken met de wizard *voor het* maken van AEM Mobile, selecteren doorgaans een van de gewenste toepassingssjablonen uit de referentiemonsters die buiten de box vallen of (in de meeste gevallen) een aangepaste toepassingssjabloon die door *AEM ontwikkelaars is gemaakt.*
+Een ***AEM beheerder*** is verantwoordelijk voor het toevoegen van een nieuwe toepassing aan de catalogus van AEM Mobile, of door een nieuwe toepassing te creëren gebruikend de aanmaaktovenaar, of door een bestaande toepassing te importeren. AEM beheerders die een nieuwe app maken met behulp van de AEM Mobile *ontwerpwizard*, selecteren doorgaans een van de gewenste toepassingssjablonen uit de referentiemonsters die buiten de box vallen of (in de meeste gevallen) een aangepaste toepassingssjabloon die is gemaakt door *AEM ontwikkelaars.*
 
 >[!NOTE]
 >
->Klik op Gebruikersrollen [maken en Toegang verlenen in de online Help voor meer informatie over het instellen AEM groepen en machtigingen](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) .
+>Voor meer informatie bij vestiging AEM Groepen en Toestemmingen, klik [Creërend de Rollen van de Gebruiker en het Verlenen van Toegang](https://helpx.adobe.com/digital-publishing-solution/help/account-admin-dps.html) in Online Hulp.
 
 Een AEM beheerder is verantwoordelijk voor de volgende taken wanneer u een app maakt met AEM Mobile On-demand Services:
 
-* [AEM Mobile](/help/mobile/aem-mobile-setup.md)instellen, dat
+* [AEM Mobile](/help/mobile/aem-mobile-setup.md) instellen, dat
 
    * AEM Mobile-provisioning
    * Projecten maken voor AEM Mobile
