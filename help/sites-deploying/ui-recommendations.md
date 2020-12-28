@@ -26,17 +26,23 @@ Dit document is bedoeld om klanten te helpen een keuze te maken over welke inter
 
 Belangenvoorwaarden:
 
-* **UI (of standaard UI)** Modern gebruikersinterface die in 5.6.0 als technologievoorproef werd geïntroduceerd en in verdere versies werd uitgebreid. De interface is gebaseerd op de ervaring van één gebruiker voor de Adobe Experience Cloud, die voorheen wel een interface met aanraakbediening of een interface met aanraakbediening werd genoemd.
+* **UI (of standaard UI)**
+Modern gebruikersinterface die in 5.6.0 als technologievoorproef werd geïntroduceerd en in verdere versies werd uitgebreid. De interface is gebaseerd op de ervaring van één gebruiker voor de Adobe Experience Cloud, die voorheen wel een interface met aanraakbediening of een interface met aanraakbediening werd genoemd.
 
-* **Klassieke gebruikersinterface** die op technologie ExtJS wordt gebaseerd die met CQ 5.1 in 2008 werd geïntroduceerd.
+* **Klassieke interface**
+UIUser gebaseerd op technologie ExtJS die met CQ 5.1 in 2008 werd geïntroduceerd.
 
-* **Sitebeheermogelijkheden** om de sitehiërarchie te beheren (verwijzingen verplaatsen, activeren, beheren) en nieuwe pagina&#39;s te maken.
+* **Site-**
+beheermogelijkheden om de sitehiërarchie te beheren (verwijzingen verplaatsen, activeren, beheren) en nieuwe pagina&#39;s te maken.
 
-* **Met de mogelijkheden voor paginaontwerp** kunt u de inhoud van een pagina toevoegen of bewerken.
+* **Page**
+AuthoringCapabilities om de inhoud van een pagina toe te voegen of te bewerken.
 
-* **DAM/Assets Admin** Capabilities voor het beheren van digitale elementen (waaronder afbeeldingen, video, documenten, downloads).
+* **DAM/Assets**
+AdminCapabilities voor het beheren van digitale elementen (waaronder afbeeldingen, video, documenten, downloads).
 
-* **ContextHub** Mogelijkheden om informatie over de bezoeker samen te voegen en het voor diverse doeleinden te gebruiken. Verstrekt een gebruikersinterface om personen te simuleren die de plaats bezoeken. Beginnend AEM 6.2, vervangt ContextHub de vorige technologie, de Context van de Cliënt.
+* ****
+ContextHubCapabilities om informatie over de bezoeker samen te voegen en het voor diverse doeleinden te gebruiken. Verstrekt een gebruikersinterface om personen te simuleren die de plaats bezoeken. Beginnend AEM 6.2, vervangt ContextHub de vorige technologie, de Context van de Cliënt.
 
 ## Algemeen {#general}
 
@@ -68,10 +74,10 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
     <ol> 
      <li>Bijwerken naar 6.4</li> 
      <li>De standaardinterface gebruiken voor sitebeheer, elementen, ... etc.<br /> </li> 
-     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw gebruikersinterface</a>selecteren.</li> 
+     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</li> 
     </ol> <p>In een tweede fase:</p> 
     <ol> 
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de componenten bij te werken met het gereedschap <a href="/help/sites-developing/dialog-conversion.md"></a> Dialoogomzetting.</li> 
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan het <a href="/help/sites-developing/dialog-conversion.md">Dialoogomzettingshulpmiddel</a> te gebruiken om de componenten bij te werken.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
@@ -80,51 +86,51 @@ Hieronder volgt een lijst met aanbevelingen van Product Management voor Adobe Ex
     <ol> 
      <li>Bijwerken naar 6.4</li> 
      <li>De standaardinterface gebruiken voor sitebeheer, elementen, ... enz.</li> 
-     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw gebruikersinterface</a>selecteren.</li> 
+     <li>Configureer de actie Pagina bewerken om de klassieke UI-pagina-editor te openen. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</li> 
     </ol> <p>In een tweede fase:</p> 
     <ol> 
-     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan de componenten bij te werken met het gereedschap <a href="/help/sites-developing/dialog-conversion.md"></a> Dialoogomzetting.</li> 
+     <li>Werk uw componentendialogen bij om het Coral 3 dialoogvakje formaat te gebruiken. Adobe raadt u aan het <a href="/help/sites-developing/dialog-conversion.md">Dialoogomzettingshulpmiddel</a> te gebruiken om de componenten bij te werken.</li> 
      <li>Vorm ContextHub (de vervanging voor ClientContext) en werk de paginasjablonen bij om ContextHub te gebruiken. Merk op dat ContextHub een verenigbaarheidswijze heeft die het laden van douaneClientContext opslag toestaat.</li> 
     </ol> </td> 
   </tr> 
   <tr> 
    <td><p>Heeft CQ/AEM jarenlang gebruikt.</p> <p>De interface voor het product (bijvoorbeeld Sitebeheer) is uitgebreid en componenten met uitgebreide bewerkingsdialoogvensters zijn samengesteld.</p> </td> 
-   <td><p>Update aan 6.4 en vorm klassieke UI als gebrek voor paginascreatie voor alle gebruikers. Zie <a href="#selecting-your-ui">Uw gebruikersinterface</a>selecteren.</p> <p>Start vervolgens een project om de deeldialoogvensters aan te passen en te optimaliseren in de indeling Coral 3. Zie <a href="#resources-to-help">Hulpbronnen</a>.<br /> </p> </td> 
+   <td><p>Update aan 6.4 en vorm klassieke UI als gebrek voor paginascreatie voor alle gebruikers. Zie <a href="#selecting-your-ui">Uw interface selecteren</a>.</p> <p>Start vervolgens een project om de deeldialoogvensters aan te passen en te optimaliseren in de indeling Coral 3. Zie <a href="#resources-to-help">Bronnen voor Help</a>.<br /> </p> </td> 
   </tr> 
  </tbody> 
 </table>
 
 ## Veelgestelde vragen {#faq}
 
-Raadpleeg het Knowledge Base-artikel, [Touch UI Authoring FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html), voor meer informatie. met inbegrip van om het even welke informatie over het afschilderingsprogramma voor klassieke UI.
+Raadpleeg het Knowledge Base-artikel [Touch UI Authoring FAQ](https://helpx.adobe.com/experience-manager/kb/index/touchui_faq.html) voor meer informatie. met inbegrip van om het even welke informatie over het afschilderingsprogramma voor klassieke UI.
 
-## Gebruikersinterface selecteren {#selecting-your-ui}
+## UI {#selecting-your-ui} selecteren
 
-Zie [Uw interface](/help/sites-authoring/select-ui.md) selecteren voor informatie over het configureren van uw systeem naar wens.
+Zie [Uw interface selecteren](/help/sites-authoring/select-ui.md) voor informatie over het configureren van uw systeem zoals vereist.
 
-## Touch-geoptimaliseerde UI-status {#touch-optimized-ui-status}
+## Touch-Optimized UI Status {#touch-optimized-ui-status}
 
-Voor meer informatie over de verbeteringen aan de interface met geoptimaliseerde aanrakingen in AEM 6.3 raadpleegt u [Nieuw](/help/release-notes/release-notes.md#what-s-new) in de Opmerkingen bij de release.
+Zie [Nieuwe functies](/help/release-notes/release-notes.md#what-s-new) in de Opmerkingen bij de release voor meer informatie over de verbeteringen aan de interface met geoptimaliseerde aanrakingen in AEM 6.3.
 
-Een volledig overzicht van de statuspagina van de functie [](/help/release-notes/touch-ui-features-status.md) TouchUI
+Een volledig overzicht vindt u op de pagina [Status van aanraakinterface](/help/release-notes/touch-ui-features-status.md)
 
-## Hulpbronnen {#resources-to-help}
+## Bronnen voor Help {#resources-to-help}
 
 Voor achtergrondinformatie over basisverwerking:
 
 * [Werken met de auteuromgeving](/help/sites-authoring/home.md).
-* [Pagina&#39;s](/help/sites-authoring/author-environment-tools.md)ontwerpen.
+* [Pagina&#39;s](/help/sites-authoring/author-environment-tools.md) ontwerpen.
 
 Voor gedetailleerde ontwikkelingsinformatie:
 
 * [Touch-geoptimaliseerde UI-architectuur](/help/sites-developing/touch-ui-concepts.md).
-* Met het gereedschap [](/help/sites-developing/dialog-conversion.md) Dialoogomzetting kunt u dialoogvensters voor het bewerken van componenten omzetten van de klassieke interface naar de interface voor het optimaliseren van aanrakingen.
+* Met het gereedschap [Dialoogconversie](/help/sites-developing/dialog-conversion.md) kunt u dialoogvensters voor het bewerken van componenten omzetten van de klassieke interface naar de interface voor het optimaliseren van aanrakingen.
 
-* [Structuur van de geoptimaliseerde interface](/help/sites-developing/touch-ui-structure.md)voor aanrakingen.
+* [Structuur van de geoptimaliseerde interface](/help/sites-developing/touch-ui-structure.md) voor aanrakingen.
 
-* [De consoles aanpassen in de geoptimaliseerde gebruikersinterface](/help/sites-developing/customizing-consoles-touch.md) voor aanraakfuncties (inclusief voorbeeldcode).
+* [De consoles aanpassen in de geoptimaliseerde gebruikersinterface](/help/sites-developing/customizing-consoles-touch.md)  voor aanraakfuncties (inclusief voorbeeldcode).
 
-* [Het aanpassen van paginaontwerp in touch-geoptimaliseerde UI](/help/sites-developing/customizing-page-authoring-touch.md) (omvat steekproefcode).
+* [Het aanpassen van paginaontwerp in touch-geoptimaliseerde UI](/help/sites-developing/customizing-page-authoring-touch.md)  (omvat steekproefcode).
 
 * [AEM Gem-sessie bij aanraakgeoptimaliseerde aanpassing](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
