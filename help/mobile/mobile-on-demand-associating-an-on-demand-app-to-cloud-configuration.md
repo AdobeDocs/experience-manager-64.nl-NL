@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Cloud Configuration{#cloud-configuration}
+# Cloudconfiguratie{#cloud-configuration}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Als u een On-Demand-app aan een Cloud Configuration koppelt, kan Adobe Experience Manager (AEM) rechtstreeks communiceren met een mobiel On-Demand-gehoste project door een tweerichtingskoppeling tot stand te brengen. Door uw app aan een mobiel On-Demand-project te koppelen, kunt u inhoud maken, zoals artikelen, banners en verzamelingen binnen AEM, maar u kunt deze inhoud ook op aanvraag aanbieden voor mobiele apparaten.
 
@@ -34,11 +34,11 @@ Vanaf dat punt wordt het publiceren, voorvertonen en beheren van inhoud mogelijk
 >
 >Voordat u de cloudconfiguratie voor uw On-Demand-app gaat configureren, moet u bekend zijn met AEM Mobile Provisioning and Configuring AEM Mobile On-demand Services Client.
 >
->Zie AEM Mobile On-demand Services [](/help/mobile/aem-mobile-setup.md) instellen in het gedeelte Beheer voor meer informatie.
+>Zie [AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) instellen in de sectie Beheer voor meer informatie.
 
-Als u mobiele Cloud Services op aanvraag wilt configureren, klikt u op de bovenste versnelling in de rechterbovenhoek van het element Verbinding **** beheren in het dashboard van de app.
+Om Mobiele Cloud Services op bestelling te vormen, klik de hoogste versnelling op de hoogste juiste hoek van **Manage Verbinding** tegel van uw app dashboard.
 
-U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie het [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
+U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie [AEM Mobile-toepassingsdashboard](/help/mobile/mobile-apps-ondemand-application-dashboard.md) voor meer informatie.
 
 ### Koppeling naar cloudconfiguratie instellen {#setting-up-link-to-cloud-configuration}
 
@@ -46,26 +46,26 @@ U moet bekend zijn met het dashboard voor de app en de beschikbare tegels. Zie h
 >
 >Zorg ervoor dat u een bestaande configuratie voor on-demand clients en cloud hebt.
 >
->Zie AEM Mobile On-demand Services [](/help/mobile/aem-mobile-setup.md) instellen in het gedeelte Beheer voor meer informatie.
+>Zie [AEM Mobile On-demand Services](/help/mobile/aem-mobile-setup.md) instellen in de sectie Beheer voor meer informatie.
 
 In de volgende stappen wordt beschreven hoe u een koppeling naar de cloudconfiguratie instelt:
 
-1. Kies vanuit **mobiel** de optie **Apps** en vervolgens uw Mobile On-Demand-app in de catalogus.
-1. Klik op het tandwielpictogram op de tegel **Verbinding** beheren.
+1. Kies **Mobiel** **Apps** en vervolgens uw Mobile On-Demand-app uit de catalogus.
+1. Klik op het tandwielpictogram op de **tegel Verbinding beheren**.
 
    ![chlimage_1-65](assets/chlimage_1-65.png)
 
-1. Ga reeds bestaande configuratie in of creeer nieuwe door de Titel **van de** Configuratie, **Apparaat ID**, en **Token** van het Apparaat in te gaan.
+1. Ga reeds bestaande configuratie in of creeer nieuwe door **Titel van de Configuratie**, **Apparaatidentiteitskaart**, en **Apparaattoken** in te gaan.
 
    ![chlimage_1-66](assets/chlimage_1-66.png)
 
-1. Nadat de **apparaat-id** en het **apparaattoken** zijn geverifieerd, kiest u uw On-Demand-project in de lijst.
+1. Als uw **Apparaatid** en **Apparaattoken** zijn geverifieerd, kiest u uw On-Demand-project in de lijst.
 
-   Klik op **Verzenden**.
+   Klik **Verzenden**.
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-   In het **tabblad Verbinding** beheren wordt de Cloud Configuration weergegeven.
+   De tegel **Verbinding beheren** toont uw Configuratie van de Wolk.
 
    ![chlimage_1-68](assets/chlimage_1-68.png)
 
