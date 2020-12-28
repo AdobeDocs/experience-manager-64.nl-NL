@@ -1,8 +1,8 @@
 ---
 title: Status van TouchUI-functie
 seo-title: Status van TouchUI-functie
-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.3 Touch UI.
-seo-description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.3 Touch UI.
+description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.3 Touch UI.
+seo-description: Opmerkingen bij de release specifiek voor Adobe Experience Manager 6.3 Touch UI.
 uuid: dc335334-6c50-4cee-8a2e-183958742686
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -11,23 +11,26 @@ content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
 translation-type: tm+mt
 source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+workflow-type: tm+mt
+source-wordcount: '1073'
+ht-degree: 1%
 
 ---
 
 
-# Status van TouchUI-functie {#touch-ui-feature-status}
+# Status aanraakinterface {#touch-ui-feature-status}
 
 >[!CAUTION]
 >
->Met versie 6.4 van AEM, wordt de [Klassieke UI verouderd](/help/release-notes/deprecated-removed-features.md).  Adobe is niet van plan verdere verbeteringen aan te brengen in de klassieke gebruikersinterface en gebruikers worden aangeraden de krachtige nieuwe functies die beschikbaar zijn onder de interface met aanraakbediening te benutten.
+>Met versie 6.4 van AEM, wordt [Klassieke UI afgekeurd](/help/release-notes/deprecated-removed-features.md). Adobe is niet van plan om verdere verbeteringen aan te brengen in de klassieke gebruikersinterface en gebruikers worden aangemoedigd om de krachtige nieuwe functies die beschikbaar zijn onder de interface met aanraakbediening te benutten.
 
-Vanaf versie 6.0 werd in AEM een nieuwe gebruikersinterface geïntroduceerd die de &#39;aanraakinterface&#39; (ook wel &#39;aanraakinterface&#39; genoemd) wordt genoemd en die is uitgelijnd op de Adobe Marketing Cloud en de algemene richtlijnen van de Adobe-gebruikersinterface. Met bijna functiepartijdigheid bereikt, is dit de standaardUI in AEM met de erfenis geworden, Desktop-oriented interface die als &quot;klassieke UI wordt bedoeld.&quot;
+Vanaf versie 6.0 introduceerde AEM een nieuwe gebruikersinterface die de &#39;touch-UI&#39; (ook wel &#39;touch-interface&#39; genoemd) wordt genoemd en die is uitgelijnd op de Adobe Marketing Cloud en de algemene richtlijnen voor de Adobe-gebruikersinterface. Met bijna functiepartijdigheid bereikt, is dit standaardUI in AEM met de erfenis geworden, Desktop-oriented interface die als &quot;klassieke UI wordt bedoeld.&quot;
 
 Hoewel de meeste mogelijkheden aanwezig zijn in de interface met aanraakbediening, zijn er functies die nog niet zijn voltooid en in toekomstige versies zullen worden toegevoegd.
 
 In de volgende lijst wordt de huidige status van de mogelijkheden weergegeven, zoals geïmplementeerd in AEM 6.4.
 
-Voor aanbevelingen voor klanten die aan AEM 6.4 bevorderen, te zien gelieve de Aanbevelingen van het [Gebruikersinterface voor Klanten](/help/sites-deploying/ui-recommendations.md) voor details.
+Raadpleeg [Gebruikersinterface Recommendations for Customers](/help/sites-deploying/ui-recommendations.md) voor meer informatie voor aanbevelingen voor klanten die upgraden naar AEM 6.4.
 
 >[!NOTE]
 >
@@ -49,7 +52,7 @@ Voor aanbevelingen voor klanten die aan AEM 6.4 bevorderen, te zien gelieve de A
 
 ## Status van onderdeel: Sites-beheerder {#feature-status-sites-admin}
 
-Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`) heeft en de status in de interface met aanraakbediening ( `/sites.html`).
+Dit is een lijst met mogelijkheden die de klassieke UI-sitebeheerder ( `/siteadmin`) heeft en de status in de interface met aanraakbediening ( `/sites.html`).
 
 <table> 
  <tbody>
@@ -60,12 +63,12 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
   </tr>
   <tr>
    <td>Navigeren door sitehiërarchie</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td>AEM 6.4 introduceerde een <a href="/help/sites-authoring/basic-handling.md#content-tree">inhoudsboomweergave</a>.</td> 
   </tr>
   <tr>
    <td>Workflow starten</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -84,8 +87,8 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
    <td> </td> 
   </tr>
   <tr>
-   <td>Nieuwe bibliotheek maken <br /> </td> 
-   <td>Voltooid<br /> </td> 
+   <td>Nieuwe livecopy <br /> maken </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -100,7 +103,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
   </tr>
   <tr>
    <td>Zoeken</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -145,7 +148,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
   </tr>
   <tr>
    <td>Later verwijderen</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -175,7 +178,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
   </tr>
   <tr>
    <td>Versie herstellen</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -185,7 +188,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
   </tr>
   <tr>
    <td>Verschil tonen tussen oude en huidige versie<br /> </td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -200,7 +203,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
   </tr>
   <tr>
    <td>Zoeken en vervangen</td> 
-   <td>Ontbreekt<br /> </td> 
+   <td>Ontbrekende<br /> </td> 
    <td>Klassieke UI gebruiken.</td> 
   </tr>
   <tr>
@@ -211,7 +214,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Site Admin ( `/siteadmin`
   <tr>
    <td>Verwijzingen</td> 
    <td>Meestal</td> 
-   <td>Weergave van inkomende paginakoppelingen wordt toegevoegd in de release van 2019 van AEM.</td> 
+   <td>De weergave van inkomende paginakoppelingen wordt toegevoegd in de release van 2019 van AEM.</td> 
   </tr>
  </tbody>
 </table>
@@ -234,7 +237,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   </tr>
   <tr>
    <td>Mobiele webpagina's bewerken<br /> </td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -249,17 +252,17 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   </tr>
   <tr>
    <td>Mobiele apps bewerken</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Formulieren bewerken</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Forms bewerken</td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>Aanbiedingen bewerken</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -283,12 +286,12 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
    <td> </td> 
   </tr>
   <tr>
-   <td>Modus:Basisstructuur</td> 
+   <td>Modus: Basisstructuur</td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Modus: Status van live kopiëren<br /> </td> 
+   <td>Modus: Live Copy-status<br /> </td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
@@ -304,7 +307,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   </tr>
   <tr>
    <td>Uitrolpagina</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -315,7 +318,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   <tr>
    <td>Workflowpakket verwerken</td> 
    <td>Meestal</td> 
-   <td>Volledig toegankelijk in interface met aanraakbediening. Er wordt nog steeds een lading van meerdere werkstromen weergegeven in een klassieke gebruikersinterface.<br /> </td> 
+   <td>Volledig toegankelijk in interface met aanraakbediening. De veelvoudige werkschemalading die nog in klassieke UI wordt voorgesteld.<br /> </td> 
   </tr>
   <tr>
    <td>Pagina vergrendelen/ontgrendelen</td> 
@@ -323,8 +326,8 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
    <td> </td> 
   </tr>
   <tr>
-   <td>Pagina publiceren <br /> </td> 
-   <td>Voltooid<br /> </td> 
+   <td>Pagina <br /> publiceren </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -335,42 +338,42 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   <tr>
    <td>Pagina kopiëren</td> 
    <td>Verwijderd<br /> </td> 
-   <td>Gebruik Sitebeheerder om pagina's <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page">te</a>kopiëren.<br /> </td> 
+   <td>Site-beheerder gebruiken om pagina's <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page"> te kopiëren.</a><br /> </td> 
   </tr>
   <tr>
    <td>Pagina verplaatsen</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Sitebeheerder om pagina's te <a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">verplaatsen</a>.<br /> </td> 
+   <td>Site-beheerder gebruiken om pagina's te verplaatsen<a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">.</a><br /> </td> 
   </tr>
   <tr>
    <td>Pagina verwijderen</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Sitebeheerder om pagina's <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">te</a>verwijderen.<br /> </td> 
+   <td>Site-beheerder gebruiken om pagina's te <a href="/help/sites-authoring/managing-pages.md#deleting-a-page">verwijderen</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Referenties tonen</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Sitebeheerder om de gedetailleerde referentielijst <a href="/help/sites-authoring/author-environment-tools.md#references">te</a>bekijken.<br /> </td> 
+   <td>Gebruik Sitebeheerder om <a href="/help/sites-authoring/author-environment-tools.md#references">de gedetailleerde referentielijst te bekijken</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Controlelogboek</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Site Admin en <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">open activity rail</a>.<br /> </td> 
+   <td>Gebruik Sitebeheerder en <a href="/help/sites-authoring/author-environment-tools.md#events-timeline">open activity rail</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Versie maken</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Sitebeheerder om nieuwe versies <a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">te</a>maken.<br /> </td> 
+   <td>Gebruik Sitebeheerder om nieuwe versies te maken<a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">.</a><br /> </td> 
   </tr>
   <tr>
    <td>Versie herstellen</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Sitebeheerder om versies <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">te</a>herstellen.</td> 
+   <td>Gebruik Sitebeheerder om versies <a href="/help/sites-authoring/working-with-page-versions.md#reverting-to-a-page-version">te herstellen</a>.</td> 
   </tr>
   <tr>
    <td>Starten wisselen</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Sitebeheerder om te <a href="/help/sites-authoring/launches-promoting.md">schakelen tussen opstarten</a>.<br /> </td> 
+   <td>Gebruik Sitebeheerder om <a href="/help/sites-authoring/launches-promoting.md">te schakelen tussen lanceringen</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Pagina vertalen</td> 
@@ -378,7 +381,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
    <td>Gebruik Sitebeheerder om pagina <a href="/help/sites-administering/tc-manage.md">toe te voegen aan vertaalprojecten</a>.<br /> </td> 
   </tr>
   <tr>
-   <td>Tijdlijn verdraaien (kies datum/tijd en blader de site zoals deze vervolgens werd weergegeven)<br /> </td> 
+   <td>Timewarp (kies datum/tijd en doorblader plaats aangezien het toen keek)<br /> </td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
@@ -388,7 +391,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
    <td> </td> 
   </tr>
   <tr>
-   <td>Interface voor clientcontext<br /> </td> 
+   <td>Clientcontext-UI<br /> </td> 
    <td>Vervangen</td> 
    <td>Gebruik <a href="/help/sites-authoring/ch-previewing.md">ContextHub</a> UI vooruitgaand.</td> 
   </tr>
@@ -399,7 +402,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   </tr>
   <tr>
    <td>Componentlijst</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -418,12 +421,12 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
    <td> </td> 
   </tr>
   <tr>
-   <td>Inhoud naar tijdelijke aanduiding van onderdeel slepen</td> 
+   <td>Inhoud slepen en neerzetten in tijdelijke aanduiding voor onderdeel</td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
   <tr>
-   <td>Inhoud rechtstreeks slepen en neerzetten in tijdelijke aanduiding voor systeem met automatische componentontwerp<br /> </td> 
+   <td>Sleep inhoud rechtstreeks naar de tijdelijke aanduiding parsys met component auto-creation<br /> </td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
@@ -448,12 +451,12 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
   </tr>
   <tr>
    <td>RTE-plug-ins in-/uitschakelen</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td>Kan worden uitgevoerd met de <a href="/help/sites-authoring/templates.md">Sjablooneditor</a>.</td> 
   </tr>
   <tr>
    <td>RTE gebruiken voor normale tekst</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -477,13 +480,13 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
    <td> </td> 
   </tr>
   <tr>
-   <td>RTE-plug-in:Zoeken en vervangen</td> 
+   <td>RTE-plug-in: Zoeken en vervangen</td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>RTE-plug-in: Tekstopmaak (vet, ...)</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -493,7 +496,7 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
   </tr>
   <tr>
    <td>RTE-plug-in: Uitvullen</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -503,7 +506,7 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
   </tr>
   <tr>
    <td>RTE-plug-in: Alineaopmaak</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -513,11 +516,11 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
   </tr>
   <tr>
    <td>RTE-plug-in: Broneditor (HTML bewerken)<br /> </td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td>Alleen beschikbaar in dialoogvenster en volledig scherm.<br /> </td> 
   </tr>
   <tr>
-   <td>RTE-plug-in:Spellingcontrole</td> 
+   <td>RTE-plug-in: Spellingcontrole</td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
@@ -542,7 +545,7 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
    <td>Geschikt op locatie, in dialoogvenster en op volledig scherm.<br /> </td> 
   </tr>
   <tr>
-   <td>Afbeelding naar tabelcel slepen<br /> </td> 
+   <td>Afbeelding slepen en neerzetten in tabelcel<br /> </td> 
    <td>Voltooid</td> 
    <td>In regel bruikbaar</td> 
   </tr>
@@ -554,21 +557,21 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
   <tr>
    <td>IPE-plug-ins in-/uitschakelen</td> 
    <td>Voltooid</td> 
-   <td>De <a href="/help/sites-authoring/templates.md">Sjablooneditor</a>bevat nu een interface.</td> 
+   <td>Er is nu een UI in <a href="/help/sites-authoring/templates.md">de Redacteur van het Malplaatje</a>.</td> 
   </tr>
   <tr>
-   <td>IPE-plug-in:Uitsnijden</td> 
+   <td>IPE-plug-in: Uitsnijden</td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
   <tr>
    <td>IPE-plug-in: Omdraaien</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
    <td>IPE-plug-in: Ongedaan maken/Opnieuw</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
   <tr>
@@ -583,7 +586,7 @@ Dit is een lijst van mogelijkheden de klassieke Tekst UI, Lijst, en de Redacteur
   </tr>
   <tr>
    <td>IPE-plug-in: Zoomen</td> 
-   <td>Voltooid<br /> </td> 
+   <td>Volledig<br /> </td> 
    <td> </td> 
   </tr>
  </tbody>
@@ -603,7 +606,7 @@ Dit is een lijst met verschillende gereedschappen die de klassieke UI heeft en d
   <tr>
    <td>Taakbeheer</td> 
    <td>Vervangen</td> 
-   <td>6.0 introduceerde <a href="/help/sites-authoring/projects.md">Projecten &amp; Taken</a>.<br /> </td> 
+   <td>6.0 geïntroduceerd <a href="/help/sites-authoring/projects.md">Projecten &amp; Taken</a>.<br /> </td> 
   </tr>
   <tr>
    <td>Workflow Inbox<br /> </td> 
@@ -612,11 +615,11 @@ Dit is een lijst met verschillende gereedschappen die de klassieke UI heeft en d
   </tr>
   <tr>
    <td>Workflow naar configuratie paginasjabloon (<code>/etc/workflow/wcm/templates.html</code>)</td> 
-   <td>Ontbreekt<br /> </td> 
+   <td>Ontbrekende<br /> </td> 
    <td>Klassieke UI gebruiken.</td> 
   </tr>
   <tr>
-   <td>Tagbeheer-interface<br /> </td> 
+   <td>Tags toewijzen aan interface van beheerder<br /> </td> 
    <td>Voltooid</td> 
    <td> </td> 
   </tr>
@@ -638,7 +641,7 @@ Dit is een lijst met verschillende gereedschappen die de klassieke UI heeft en d
   <tr>
    <td>Gebruikersinterface, groepen en machtigingen<br /> </td> 
    <td>Meestal voltooid<br /> </td> 
-   <td>Gebruik voor geavanceerde bewerkingen met bevoegdheden de klassieke gebruikersinterface.<br /> </td> 
+   <td>Voor geavanceerde toestemming die gebruik Klassieke UI uitgeeft.<br /> </td> 
   </tr>
   <tr>
    <td>Purgeerversies (<code>/etc/versioning/purge.html</code>)</td> 
@@ -646,13 +649,13 @@ Dit is een lijst met verschillende gereedschappen die de klassieke UI heeft en d
    <td>Klassieke UI gebruiken.</td> 
   </tr>
   <tr>
-   <td>Externe koppelingencontrole (<code>/etc/linkchecker.html</code>)</td> 
+   <td>Controle van externe koppelingen (<code>/etc/linkchecker.html</code>)</td> 
    <td>Ontbreekt</td> 
    <td>Klassieke UI gebruiken.<br /> </td> 
   </tr>
   <tr>
    <td>Bulkeditor (<code>/etc/importers/bulkeditor.html</code>)</td> 
-   <td>Ontbreekt<br /> </td> 
+   <td>Ontbrekende<br /> </td> 
    <td>Klassieke UI gebruiken.</td> 
   </tr>
  </tbody>
