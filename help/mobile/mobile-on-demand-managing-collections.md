@@ -22,13 +22,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 De acties van het Beheer van de inhoud zijn de bouwstenen die helpen om inhoud binnen een toepassing tot stand te brengen en te beheren. De volgende handelingen worden uitgevoerd op inhoud binnen de toepassing.
 
 ## Overzicht van verzamelingen {#collections-overview}
 
-Verzamelingen vertegenwoordigen een goed gedefinieerde *emmertje* gevuld met inhoud, zoals artikelen of banners, die het thema van de omslag aanpast.
+Verzamelingen vertegenwoordigen een goed gedefinieerde *emmertje* gevuld met inhoud, zoals artikelen of banners die het thema van de omslag aanvullen.
 
 >[!NOTE]
 >
@@ -49,14 +49,14 @@ De algemene workflow voor het maken van een verzameling is als volgt:
 
 1. Selecteer **Mobiel** van de zijspoorstaaf.
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl-omlaag in de rechterbovenhoek van het element **Verzamelingen** beheren.
+1. Klik op de pijl-omlaag in de rechterbovenhoek van de tegel **Verzamelingen beheren**.
 1. Werk door elke stap van de wizard om door te gaan met het maken van uw nieuwe artikel.
 1. Klik op **Maken** als u klaar bent.
-1. Het nieuwe artikel wordt weergegeven in de tegel **Verzamelingen** beheren.
+1. Uw nieuwe artikel wordt weergegeven in de tegel **Verzamelingen beheren**.
 
 ![chlimage_1-1](assets/chlimage_1-1.gif)
 
-## Een nieuwe verzameling importeren {#importing-a-new-collection}
+## Een nieuwe verzameling {#importing-a-new-collection} importeren
 
 Bestaande mobiele on-demand-inhoud kan worden gedownload (geïmporteerd) van Mobile On-Demand naar AEM. Zo kunt u lokale inhoud bewerken en weergeven.
 
@@ -67,9 +67,9 @@ Bestaande mobiele on-demand-inhoud kan worden gedownload (geïmporteerd) van Mob
 De workflow voor het importeren van een nieuwe verzameling
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Klik op de pijl-omlaag in de rechterbovenhoek van het **element Verzamelingen** beheren en selecteer Verzamelingen importeren.
-1. Klik op Verzamelingen **** importeren in het dialoogvenster en vervolgens op Sluiten.
-1. Uw mobiele verzamelingen op aanvraag worden nu weergegeven in het element Verzamelingen **beheren** .
+1. Klik op de pijl-omlaag in de rechterbovenhoek van de tegel **Verzamelingen beheren** en selecteer Verzamelingen importeren.
+1. Klik **Verzamelingen importeren** in het dialoogvenster en vervolgens op Sluiten.
+1. Uw mobiele verzamelingen op aanvraag worden nu weergegeven in de tegel **Verzamelingen beheren**.
 
 >[!CAUTION]
 >
@@ -82,34 +82,34 @@ Met de ingebouwde AEM slepen en neerzetten-editor kunt u een artikel toevoegen o
 De workflow voor het bewerken van een verzameling:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer een AEM artikel in de tegel **Verzamelingen** beheren.
+1. Selecteer een AEM artikel in de tegel **Verzamelingen beheren**.
 1. Klik op de gemarkeerde verzameling in de lijstweergave om deze te openen in de inhoudseditor.
 1. Gebruik de inhoudeditor om inhoud van verzamelingen (manuscripten, afbeeldingen, tekst, enz.) te slepen.
 
-### De metagegevens in een verzameling weergeven en bewerken {#viewing-and-editing-the-metadata-within-a-collection}
+### De metagegevens weergeven en bewerken in een verzameling {#viewing-and-editing-the-metadata-within-a-collection}
 
 Verzamelingen hebben talrijke eigenschappen, zoals titels, beschrijvingen en afbeeldingen. Deze handeling wordt gebruikt om dergelijke eigenschappen weer te geven en te wijzigen. Deze wijzigingen kunnen optioneel worden geüpload naar Mobile On-Demand tijdens het opslaan.
 
 De algemene workflow voor het weergeven/bewerken van een verzameling:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Kies een verzameling in de tegel **Verzamelingen** beheren.
+1. Kies een verzameling in de tegel **Verzamelingen beheren**.
 
-1. Selecteer **Eigenschappen** op de actiebalk.
+1. Selecteer **Eigenschappen** in de actiebalk.
 1. Alle beschikbare metagegevens voor dat artikel weergeven.
 1. Bewerk desgewenst de metagegevens en klik op **Opslaan** als u klaar bent.
 1. U kunt de wijzigingen desgewenst direct uploaden naar Mobiel op aanvraag.
 
-## Een verzameling uploaden {#uploading-a-collection}
+## Een verzameling {#uploading-a-collection} uploaden
 
 De uploadactie kopieert de geselecteerde inhoud en voegt het aan een Mobiel project op bestelling toe. Bestaande mobiele on-demand-inhoud wordt vervangen door de nieuwe versie.
 
 De algemene workflow voor het uploaden van een verzameling:
 
-1. Kies vanuit **Mobiel** uw Mobile On-Demand-app in de catalogus.
-1. Selecteer in de tegel **Verzamelingen** beheren een artikel dat u wilt uploaden naar Mobiel op aanvraag.
+1. Kies vanuit **Mobiel** uw mobiele On-Demand-app in de catalogus.
+1. Selecteer in de tegel **Verzamelingen beheren** een artikel dat u wilt uploaden naar mobiele apparaten op aanvraag.
 1. Voeg indien nodig meer verzamelingen toe in de lijstweergave.
-1. Selecteer **Uploaden** in de actiebalk en klik vervolgens op Uploaden in het dialoogvenster.
+1. Selecteer **Upload** van de actiebar, dan klik uploaden in de dialoog.
 1. Uw verzameling(en) worden nu geüpload naar Mobiel op aanvraag.
 
 ## Een verzameling verwijderen {#deleting-a-collection}
@@ -119,11 +119,11 @@ Met deze bewerking verwijdert u de geselecteerde verzameling van Mobiel op aanvr
 De algemene workflow voor het verwijderen van een verzameling:
 
 1. Kies vanuit Mobiel uw mobiele On-Demand-app in de catalogus.
-1. Selecteer het artikel dat u wilt verwijderen in de tegel **Verzamelingen** beheren.
+1. Selecteer het artikel dat u wilt verwijderen in de tegel **Verzamelingen beheren**.
 1. Zorg ervoor dat deze optie is geselecteerd in de lijst (selecteer de andere opties die u wilt verwijderen).
-1. Klik op **Verwijderen** op de actiebalk.
+1. Klik **Verwijderen** op de actiebalk.
 1. Controleer of u niet alleen mobiele apparaten op aanvraag maar ook AEM wilt verwijderen.
-1. Click **Delete**.
+1. Klik **Delete**.
 1. Uw verzameling wordt nu verwijderd uit de lijst.
 
 ## Inhoud toevoegen aan verzamelingen {#adding-content-to-collections}
@@ -140,7 +140,7 @@ Verzamelingen zijn in wezen een categorie met verwante inhoud: Ze verzamelen inh
 1. Een eerder geüpload artikel selecteren (of een banner/verzameling)
 1. Kies Toevoegen aan op de actiebalk.
 1. Selecteer een eerder geüploade verzameling in het dialoogvenster.
-1. Klik op **Bijwerken** om inhoud toe te voegen aan de verzameling.
+1. Klik **Update** om inhoud aan de inzameling toe te voegen.
 
 ![chlimage_1-2](assets/chlimage_1-2.gif)
 
