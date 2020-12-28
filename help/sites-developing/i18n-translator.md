@@ -18,19 +18,19 @@ ht-degree: 0%
 ---
 
 
-# Woordenboeken beheren met Vertaler{#using-translator-to-manage-dictionaries}
+# Vertaler gebruiken om woordenboeken te beheren{#using-translator-to-manage-dictionaries}
 
 AEM biedt een console voor het beheer van de verschillende vertalingen van teksten die worden gebruikt in de gebruikersinterface van componenten. Deze console is beschikbaar op
 
 `https://<hostname>:<port-number>/libs/cq/i18n/translator.html`
 
-Met het gereedschap Vertaal kunt u tekenreeksen in het Engels en de bijbehorende vertalingen beheren. De woordenboeken worden gemaakt in de opslagplaats, bijvoorbeeld /apps/mijnproject/i18n.
+Gebruik het gereedschap Vertaler voor het beheren van Engelse tekenreeksen en de bijbehorende vertalingen. De woordenboeken worden gemaakt in de opslagplaats, bijvoorbeeld /apps/mijnproject/i18n.
 
-Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Zie Inhoud [vertalen voor meertalige sites](/help/sites-administering/translation.md) en Inhoud [vertalen van door de gebruiker gegenereerde inhoud](/help/communities/translate-ugc.md)als u de pagina of door de gebruiker gegenereerde inhoud wilt vertalen.
+Het gereedschap Vertaler en de woordenboeken die u beheert, zijn bedoeld voor het weergeven van de gebruikersinterface van de component in verschillende talen. Als u pagina of door de gebruiker gegenereerde inhoud wilt vertalen, raadpleegt u [Inhoud vertalen voor Meerdere sites](/help/sites-administering/translation.md) en [Vertaling van door de gebruiker gegenereerde inhoud](/help/communities/translate-ugc.md).
 
 >[!CAUTION]
 >
->Bewerk alleen woordenboeken die voor uw project zijn gemaakt en onder `/apps`zich bevinden.
+>Bewerk alleen woordenboeken die voor uw project zijn gemaakt en zich onder `/apps` bevinden.
 >
 >AEM systeemwoordenboeken zijn ook beschikbaar in dit hulpmiddel. Wijzig de AEM systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de interface van de AEM. Ook, kunnen de veranderingen bij verbetering worden verloren. AEM systeemwoordenboeken bevinden zich onder `/libs`.
 
@@ -46,7 +46,7 @@ U kunt de Engelse en vertaalde teksten zoeken, filteren en bewerken. U kunt woor
 
 Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen aan een vertaalproject. U kunt een nieuw project maken of een bestaand project uitbreiden.
 
-1. Klik op **Woordenboek** omzetten.
+1. Klik **Woordenboek vertalen**.
 
    ![chlimage_1-206](assets/chlimage_1-206.png)
 
@@ -60,13 +60,13 @@ Het is ook mogelijk om de i18n-woordenboeken vanuit deze console toe te voegen a
 
    >[!NOTE]
    >
-   >Lees [Vertaalprojecten](/help/sites-administering/tc-manage.md)beheren voor meer informatie over vertaalprojecten.
+   >Lees [Vertaalprojecten beheren](/help/sites-administering/tc-manage.md) voor meer informatie over vertaalprojecten.
 
-## Woordenboek maken {#creating-a-dictionary}
+## Woordenboek {#creating-a-dictionary} maken
 
 Maak een woordenboek voor het beheer van uw gelokaliseerde UI-tekenreeksen. Nadat u een woordenboek hebt gemaakt, kunt u het gereedschap Vertaling gebruiken om het te beheren.
 
-1. Met CRXDE Lite voegt u het basisknooppunt ( `sling:Folder`) voor het nieuwe woordenboek toe als structuur voor de taaldefinities:
+1. Gebruikend CRXDE Lite, voeg de wortelknoop ( `sling:Folder`) voor uw nieuw woordenboek als structuur toe om de taaldefinities te houden:
 
    ` /apps/<projectName>/i18n`
 
@@ -86,7 +86,7 @@ Maak een woordenboek voor het beheer van uw gelokaliseerde UI-tekenreeksen. Nada
    >
    >Dit is de structuur van de [Sling i18n module](https://sling.apache.org/site/internationalization-support.html).
 
-1. Laad de vertaler en het woordenboekpad opnieuw (bijv. `/apps/myProject/i18n`) is beschikbaar in de vervolgkeuzelijst op de werkbalk. Selecteer deze optie om tekenreeksen en de bijbehorende vertalingen toe te voegen.
+1. Laad de vertaler en het woordenboekpad opnieuw (bijv. `/apps/myProject/i18n`) beschikbaar in de drop-down selecteur in de toolbar. Selecteer deze optie om tekenreeksen en de bijbehorende vertalingen toe te voegen.
 
    >[!NOTE]
    >
@@ -100,7 +100,7 @@ Gebruik het gereedschap Vertalen om de tekenreeksen in uw woordenboeken te beher
 
 >[!CAUTION]
 >
->Bewerk alleen woordenboeken die voor uw project zijn gemaakt en onder `/apps`zich bevinden.
+>Bewerk alleen woordenboeken die voor uw project zijn gemaakt en zich onder `/apps` bevinden.
 >
 >Wijzig de AEM systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de interface van de AEM. Ook, kunnen de veranderingen bij verbetering worden verloren. AEM systeemwoordenboeken bevinden zich onder `/libs`.
 
@@ -122,7 +122,7 @@ Neem variabelen op in de gelokaliseerde tekenreeks om contextuele betekenis in e
 
 Om variabelen in het gelokaliseerde koord te omvatten, plaats gehaakte indexen bij de plaats van de variabelen in het eerste argument van de methode get. Gebruik de lokalisatiehint om de waarden te beschrijven. De vertaler moet de betekenis van de variabelen begrijpen omdat de verschillende talen verschillende zinsstructuren gebruiken.
 
-De code die [de vertaalde tekenreeks](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) opvraagt, biedt waarden voor de geïndexeerde variabelen volgens de context.
+Merk op dat [de code die om het vertaalde koord ](/help/sites-developing/i18n-dev.md#including-variables-in-localized-sentences) verzoekt waarden voor de geïndexeerde variabelen volgens de context verstrekt.
 
 De volgende tekenreeks wordt bijvoorbeeld weergegeven wanneer een gebruiker zich aanmeldt bij een website en wordt opgenomen in het woordenboek:
 
@@ -178,7 +178,7 @@ Gebruik de volgende procedure om een tekenreeks uit een woordenboek te verwijder
 De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselectie:
 
 * **Filteren op tekst:** Een patroon dat overeenkomt met de Engelse tekenreeks, opmerking of vertalingen. Alleen items die overeenkomen met het patroon of een deel ervan, worden weergegeven in de tabel.
-* **Wijzigingen: Willekeurig, Gewijzigd, Nieuw, Verwijderd:** Items weergeven die zijn gewijzigd en niet zijn opgeslagen.
+* **Wijzigingen: Willekeurig, Gewijzigd, Nieuw, Verwijderd:Items** tonen die zijn gewijzigd en niet zijn opgeslagen.
 
    * Willekeurig: Items weergeven die zijn gewijzigd, toegevoegd of verwijderd.
    * Gewijzigd: Items weergeven die zijn gewijzigd.
@@ -187,7 +187,7 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
    * Meerdere selecties: Items weergeven die alle geselecteerde eigenschappen hebben.
 
 * **Bevat opmerking**: Items met opmerkingen voor vertalers weergeven.
-* **Ontbrekende vertalingen:** Toon punten waar minstens één taal geen vertaling heeft.
+* **Ontbrekende vertalingen:items** tonen waarvoor ten minste één taal geen vertaling heeft.
 
 ![chlimage_1-215](assets/chlimage_1-215.png)
 
@@ -197,15 +197,15 @@ De zoekbalk onder aan het gereedschap Vertaler bevat opties voor tekenreeksselec
 
 ### Vertaalde tekenreeksen bewerken {#editing-translated-strings}
 
-Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt het woordenboek [ook](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) exporteren zodat het door derden wordt vertaald.
+Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertalingen van de tekenreeks toevoegen. U kunt ook [het woordenboek](/help/sites-developing/i18n-translator.md#exporting-a-dictionary) exporteren om het door derden te laten vertalen.
 
-1. Selecteer [uw projectspecifieke woordenboek](#creating-a-dictionary) aangezien het de weg in bewaarplaats specificeert die de vertalingen houdt. Selecteer bijvoorbeeld **Woordenboeken** als:
+1. Selecteer [uw projectspecifiek woordenboek](#creating-a-dictionary) aangezien het de weg in bewaarplaats specificeert die de vertalingen houdt. Selecteer bijvoorbeeld **Woordenboeken** als:
 
    `/apps/myProject/i18n`
 
    >[!CAUTION]
    >
-   >Bewerk alleen woordenboeken die voor uw project zijn gemaakt en onder `/apps`zich bevinden.
+   >Bewerk alleen woordenboeken die voor uw project zijn gemaakt en zich onder `/apps` bevinden.
    >
    >AEM systeemwoordenboeken zijn ook beschikbaar in dit hulpmiddel. Wijzig de AEM systeemwoordenboeken niet omdat dit problemen kan veroorzaken met de interface van de AEM. Ook, kunnen de veranderingen bij verbetering worden verloren. AEM systeemwoordenboeken bevinden zich onder `/libs`.
 
@@ -215,34 +215,34 @@ Nadat u de Engelse tekenreeks aan een woordenboek hebt toegevoegd, kunt u vertal
 
    ![chlimage_1-216](assets/chlimage_1-216.png)
 
-   * Dubbelklik op de velden **Tekenreeks** of **Opmerking** voor de vereiste tekenreeks om het dialoogvenster **Tekenreeks** bewerken te openen, bewerk de vertaling(en) naar wens en klik vervolgens op **OK** om het dialoogvenster te sluiten:
+   * Dubbelklik op de velden **String** of **Opmerking** voor de vereiste tekenreeks om het dialoogvenster **Tekenreeks bewerken** te openen, bewerk de vertaling(en) naar wens en klik vervolgens op **OK** om het dialoogvenster te sluiten:
 
    ![chlimage_1-217](assets/chlimage_1-217.png)
 
-1. Klik op **Opslaan** op de werkbalk om de wijzigingen vast te leggen.
+1. Klik **Opslaan** in de werkbalk om uw wijzigingen vast te leggen.
 
    >[!NOTE]
    >
-   >Als u op **Herstellen en vernieuwen** klikt (in plaats van **Opslaan**), worden alle wijzigingen in de voorgaande teksten ongedaan gemaakt.
+   >Als u op **Herstellen en vernieuwen** (in plaats van **Opslaan**) klikt, worden alle wijzigingen in de voorgaande teksten ongedaan gemaakt.
 
-## Vertalers van derden gebruiken {#using-third-party-translators}
+## Vertalers van derden {#using-third-party-translators} gebruiken
 
 Ter ondersteuning van het gebruik van externe vertaalservices kunt u met het gereedschap Vertaling woordenboeken exporteren en importeren.
 
-### Woordenboek exporteren {#exporting-a-dictionary}
+### Woordenboek {#exporting-a-dictionary} exporteren
 
 Exporteer een woordenboek naar een XLIFF-bestand, zodat een service van derden de woordenboektekenreeksen kan vertalen.
 
 * Exporteer een woordenboek en neem het Engels en de vertaalde termen voor een taal op.
 * Exporteer enkele of alle Engelse tekenreeksen.
 
-Wanneer u een XLIFF-bestand exporteert en een taal opneemt, moet de knooppuntstructuur van het woordenboek in de opslagplaats die taal bevatten. Als de taal niet is opgenomen, treden fouten op. Als u bijvoorbeeld het Franse XLIFF-bestand wilt exporteren, moet de map dictionary het `mix:language` onderliggende knooppunt met de naam `fr`bevatten. (Zie [Een woordenboek](/help/sites-developing/i18n-translator.md#creating-a-dictionary)maken.)
+Wanneer u een XLIFF-bestand exporteert en een taal opneemt, moet de knooppuntstructuur van het woordenboek in de opslagplaats die taal bevatten. Als de taal niet is opgenomen, treden fouten op. Als u bijvoorbeeld het Franse XLIFF-bestand wilt exporteren, moet de map dictionary het onderliggende knooppunt `mix:language` met de naam `fr` bevatten. (Zie [Een woordenboek maken](/help/sites-developing/i18n-translator.md#creating-a-dictionary).)
 
 Gebruik de volgende procedure om een XLIFF-bestand voor een bepaalde taal te exporteren.
 
 1. Het gereedschap Vertalen openen `http://<host>:<port>/libs/cq/i18n/translator.html`
 1. Gebruik het vervolgkeuzemenu Woordenboeken om het woordenboek te selecteren dat u wilt exporteren.
-1. Klik op Exporteren > Volledige *XX* Xliff-opties exporteren, waarbij *XX* de taalcode van twee letters is, zoals DE of FR.
+1. Klik op Exporteren > Volledig *XX* Xliff-opties exporteren, waarbij *XX* de taalcode van twee letters is, zoals DE of FR.
 
    Het XLIFF-bestand wordt geopend in een nieuw tabblad of venster.
 
@@ -256,7 +256,7 @@ Gebruik de volgende procedure om alle of sommige van alleen de Engelse tekenreek
 1. Klik op Exporteren > Selectie exporteren als XLIFF (alleen tekenreeksen).
 1. Kopieer de tekst in het dialoogvenster dat verschijnt en plak deze in een tekstbestand.
 
-### Woordenboek importeren {#importing-a-dictionary}
+### Woordenboek {#importing-a-dictionary} importeren
 
 Importeer een XLIFF-bestand in een woordenboek om het woordenboek te vullen. Als het woordenboek een vertaling voor een Engelse tekenreeks bevat en het XLIFF-bestand een andere vertaling voor dezelfde tekenreeks bevat, wordt de woordenboekvertaling vervangen.
 
@@ -268,7 +268,7 @@ Importeer een XLIFF-bestand in een woordenboek om het woordenboek te vullen. Als
 
 Voeg of verwijder talen toe die het hulpmiddel van de Vertaling steunt en die aan gebruikers van uw Web-pagina&#39;s worden verstrekt.
 
-### Talen wijzigen die in de tabel met woordenboeken worden vermeld {#changing-languages-listed-in-the-dictionary-table}
+### Talen wijzigen die in de tabel Woordenboek worden vermeld {#changing-languages-listed-in-the-dictionary-table}
 
 Het gereedschap Vertaler bevat de volgende talen in de woordenlijst:
 
@@ -290,8 +290,8 @@ Gebruik de volgende procedure om talen toe te voegen of te verwijderen.
 
 1. Voor deze knoop, creeer een bezit:
 
-   * **Naam**: `languages`
-   * **Type**: `Multi-String`
+   * **Naam**:  `languages`
+   * **Type**:  `Multi-String`
    * **Waarde**: de lijst met talen die u wilt weergeven. Bijvoorbeeld:
 
       * fr
@@ -301,19 +301,19 @@ Gebruik de volgende procedure om talen toe te voegen of te verwijderen.
    >
    >De taalcodes moeten in kleine letters worden geschreven.
 
-1. Klik op Alles **** opslaan in CRXDE Lite en laad de vertaler opnieuw. Het raster wordt bijgewerkt om de gedefinieerde talen weer te geven.
+1. Klik **Alles opslaan** in CRXDE Lite en laad de vertaler opnieuw. Het raster wordt bijgewerkt om de gedefinieerde talen weer te geven.
 
    >[!NOTE]
    >
-   >De vertaler slaat alleen vertalingen op voor talen die [aanwezig zijn in het woordenboek](#creating-a-dictionary) (bijvoorbeeld onder het woordenboekpad `/apps/myProject/i18n`).
+   >De vertaler slaat alleen vertalingen op voor talen die [in het woordenboek ](#creating-a-dictionary) aanwezig zijn (d.w.z. onder het woordenboekpad zoals `/apps/myProject/i18n`).
    >
    >Zorg ervoor dat deze overeenkomen met de talen die worden weergegeven in het raster.
 
-### Talen beschikbaar maken voor auteurs {#making-languages-available-to-authors}
+### Talen ter beschikking stellen van auteurs {#making-languages-available-to-authors}
 
 Nadat u een woordenboek hebt gedefinieerd voor een taal die nieuw is voor uw AEM-exemplaar, moet u deze beschikbaar stellen voor selectie door de auteurs (bijvoorbeeld voor gebruik in **Voorkeuren**):
 
-1. U wijzigt de lijst met beschikbare talen in **Voorkeuren** van de **beveiligingsconsole** als volgt:
+1. U wijzigt de lijst met beschikbare talen in **Voorkeuren** van de **Beveiligingsconsole** als volgt:
 
    1. Maak een bedekking in de toepassingscode voor:
 
@@ -322,7 +322,7 @@ Nadat u een woordenboek hebt gedefinieerd voor een taal die nieuw is voor uw AEM
        and update as required.
       ```
 
-1. Als u de taal in **Voorkeuren** beschikbaar wilt maken via de **websiteconsole** , moet u de volgende wijzigingen aanbrengen in uw toepassing:
+1. Als u de taal beschikbaar wilt maken in **Voorkeuren** vanuit de **Websites**-console, moet u de volgende wijzigingen aanbrengen in uw toepassing:
 
    1. Maak een bedekking voor de structuur onder:
 
@@ -342,7 +342,7 @@ De standaardlanden worden gebruikt bij het weergeven van vlaggen (bijvoorbeeld i
 
 >[!NOTE]
 >
->Voor lokalisaties die door de bovenstaande vertaler worden beheerd, werkt alleen de exacte taal. Als de taalvoorkeurvervolgkeuzelijst wordt gebruikt `en_uk`, moet er een `en_uk` woordenboek in de opslagplaats aanwezig zijn.
+>Voor lokalisaties die door de bovenstaande vertaler worden beheerd, werkt alleen de exacte taal. Als in het keuzemenu voor taalvoorkeur `en_uk` wordt gebruikt, moet er een `en_uk`-woordenboek in de opslagplaats aanwezig zijn.
 
 De standaarddefinities wijzigen:
 
@@ -354,9 +354,9 @@ De standaarddefinities wijzigen:
 
    `/apps/wcm/core/resources/languages`
 
-   Dan veranderend of breidt de lijst daar uit. De eigenschap `defaultCountry` op een taalknooppunt (bijvoorbeeld `ja`) moet de volledige code bevatten, bijvoorbeeld `ja_jp`, die `jp` als het standaardland voor de taal zou worden gedefinieerd `ja`.
+   Dan veranderend of breidt de lijst daar uit. De eigenschap `defaultCountry` op een taalknooppunt (bijvoorbeeld `ja`) moet de volledige code bevatten, zoals `ja_jp`, die `jp` als standaardland voor de taal `ja` zou definiëren.
 
-1. Werk het **WCM-taalbeheer** van CQ bij.
+1. Werk **CQ WCM Taalbeheer** bij.
 
    * **Taallijst**:
 
@@ -371,7 +371,7 @@ De standaarddefinities wijzigen:
    https://<hostname>:<port-number>/system/console/configMgr/com.day.cq.wcm.core.impl.LanguageManagerImpl 
    ```
 
-## Woordenboeken publiceren {#publishing-dictionaries}
+## Woordenboeken {#publishing-dictionaries} publiceren
 
 Neem uw woordenboeken op in het releasebeheerproces van uw AEM toepassingen. Neem bijvoorbeeld het woordenboek op in het inhoudspakket van uw toepassing voor implementatie op de publicatieinstantie. Deze strategie biedt de volgende voordelen:
 
@@ -386,5 +386,5 @@ Ook het testen van woordenboektekenreeksen moet worden uitgevoerd als onderdeel 
 
 >[!NOTE]
 >
->Wanneer u Dispatcher gebruikt, moet u cachepagina [&#39;s](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) ongeldig maken om nieuwe dicationaire tekenreeksen in gerenderde componenttekenreeksen op te nemen.
+>Wanneer u Dispatcher gebruikt, moet u in het cachegeheugen opgeslagen pagina&#39;s ](https://helpx.adobe.com/experience-manager/dispatcher/using/page-invalidate.html) [invalideren om nieuwe dicationaire tekenreeksen in gerenderde componenttekenreeksen op te nemen.
 
