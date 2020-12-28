@@ -1,8 +1,8 @@
 ---
 title: Algemene opmerkingen bij de release van Adobe Experience Manager 6.4
 seo-title: Release-opmerkingen
-description: 'Adobe Experience Manager 6.4 merkt op beschrijvend de versieinformatie, wat nieuw is, hoe te om en gedetailleerde veranderingslijsten te installeren. '
-seo-description: 'Adobe Experience Manager 6.4 merkt op beschrijvend de versieinformatie, wat nieuw is, hoe te om en gedetailleerde veranderingslijsten te installeren. '
+description: 'In Adobe Experience Manager 6.4 worden de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen beschreven. '
+seo-description: 'In Adobe Experience Manager 6.4 worden de releasegegevens, de nieuwe functies, de installatie en gedetailleerde lijsten met wijzigingen beschreven. '
 uuid: 5a220301-2727-4078-ba19-4a2dbf9657f4
 contentOwner: msm-service
 products: SG_EXPERIENCEMANAGER/6.4
@@ -18,30 +18,30 @@ ht-degree: 2%
 ---
 
 
-# Algemene opmerkingen bij de release van Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
+# Algemene opmerkingen bij de release voor Adobe Experience Manager 6.4 {#general-release-notes-for-adobe-experience-manager}
 
-## Geen informatie {#release-information}
+## Informatie opheffen {#release-information}
 
 | Product | Adobe Experience Manager |
 |---|---|
-| Versie | 6.4 |
+| Versie | 6,4 |
 | Type | Grote release |
 | Algemene beschikbaarheidsdatum | 4 april 2018 |
-| Aanbevolen updates | Zie [AEM releases en updates](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
+| Aanbevolen updates | Zie [AEM versies en updates](https://helpx.adobe.com/experience-manager/aem-releases-updates.html) |
 
 ### Trivia {#trivia}
 
-De releasecyclus voor deze versie van Adobe Experience Manager begon op 27 april 2017, doorliep 22 versies van kwaliteitsborging en het bevestigen van fouten, en eindigde op 22 maart 2018. Het totale aantal klantgerelateerde problemen, inclusief verbeteringen en nieuwe functies die in deze release zijn opgelost, is 704.
+De releasecyclus voor deze versie van Adobe Experience Manager is op 27 april 2017 gestart, heeft 22 versies van de kwaliteitsborging en de functie voor het corrigeren van fouten doorlopen en is op 22 maart 2018 afgelopen. Het totale aantal klantgerelateerde problemen, inclusief verbeteringen en nieuwe functies die in deze release zijn opgelost, is 704.
 
 Adobe Experience Manager 6.4 is over het algemeen beschikbaar sinds 4 april 2018.
 
 >[!NOTE]
 >
->Adobe raadt u aan het nieuwste servicepakket te installeren, aangezien alle nieuwe functiepakketten alleen via [servicepacks](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html)worden geleverd.
+>Adobe raadt u aan het nieuwste servicepakket te installeren, aangezien alle nieuwe functiepakketten alleen via [Servicepacks](https://helpx.adobe.com/experience-manager/maintenance-releases-roadmap.html) worden geleverd.
 
 ## Wat is er nieuw {#what-s-new}
 
-Adobe Experience Manager 6.4 is een verbeteringsversie aan Adobe Experience Manager 6.3 codebasis. Het verstrekt nieuwe en verbeterde functionaliteit, zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit van de klant en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook de meerderheid van alle Adobe Experience Manager 6.3 eigenschapspakken, hete moeilijke situatie, en de versies van het de dienstpak.
+Adobe Experience Manager 6.4 is een upgrade-release naar de Adobe Experience Manager 6.3-codebasis. Het verstrekt nieuwe en verbeterde functionaliteit, zeer belangrijke klantenmoeilijke situaties, de verhogingen van de hoge prioriteit van de klant en algemene insectenmoeilijke situaties die op productstabilisatie gericht zijn. Het omvat ook de meerderheid van alle Adobe Experience Manager 6.3 eigenschapspakketten, hotfix, en de versies van het de dienstpak.
 
 De onderstaande lijst biedt een overzicht, terwijl op de volgende pagina&#39;s alle details worden weergegeven.
 
@@ -49,22 +49,22 @@ De onderstaande lijst biedt een overzicht, terwijl op de volgende pagina&#39;s a
 
 Volledige lijst van veranderingen in [AEM Stichting](wcm-platform.md).
 
-Het platform van Adobe Experience Manager 6.4 bouwt voort op de bijgewerkte versies van het op OSGi gebaseerde kader (Apache Sling en Apache Felix) en de Inhoudsgegevensbank van Java: Apache Jackrabbit Oak 1.8.2.
+Het platform van Adobe Experience Manager 6.4 bouwt voort op de bijgewerkte versies van het op OSGi gebaseerde framework (Apache Sling en Apache Felix) en de Java Content Repository: Apache Jackrabbit Oak 1.8.2.
 
 De QuickStart gebruikt Eclipse Jetty 9.3.22 als servlet-engine.
 
-#### User Interface {#user-interface}
+#### Gebruikersinterface {#user-interface}
 
 Er zijn verschillende verbeteringen aangebracht in de interface om deze productiever en gebruiksvriendelijker te maken.
 
-* [Nieuwe contentstructuurrails](/help/sites-authoring/basic-handling.md#content-tree) om snel door een hiërarchie te navigeren. In combinatie met de lijstmening, herstelt dit het Klassieke UI interactiemodel.
+* [Nieuwe contentstructuur ](/help/sites-authoring/basic-handling.md#content-tree) om snel door een hiërarchie te navigeren. In combinatie met de lijstmening, herstelt dit het Klassieke UI interactiemodel.
 * Verbeterde schuifervaring in kaart- en lijstweergave van grote mappen.
-* [Verbeterde interactie met de zoekresultaten](/help/sites-authoring/search.md) - met de knop Vorige herstelt u het vorige zoekresultaat.
-* [Extra sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md)voor de meeste algemene handelingen, zoals het openen van een bepaalde rail, het bewerken, verplaatsen en verwijderen van items of het openen van eigenschappen.
-* [Mogelijkheid om sneltoetsen](/help/sites-authoring/user-properties.md) uit te schakelen (in Voorkeuren in-/uitschakelen).
-* [Stop met het tonen van tijdstempels in alle UI](/help/sites-authoring/user-properties.md) -relatief na 7 dagen (standaard ingesteld in Voorkeuren).
+* [Verbeterde interactie met de zoekresultaten](/help/sites-authoring/search.md)  - met de knop Vorige herstelt u het vorige zoekresultaat.
+* [Extra sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md) voor de meeste algemene handelingen, zoals het openen van een bepaalde rail, het bewerken, verplaatsen en verwijderen van items of het openen van eigenschappen.
+* [Mogelijkheid om sneltoetsen](/help/sites-authoring/user-properties.md)  uit te schakelen (in Voorkeuren in-/uitschakelen).
+* [Stop met het tonen van tijdstempels over al ](/help/sites-authoring/user-properties.md) UIrelative na 7 dagen (reeks gebrek in Voorkeur).
 
-Raadpleeg de [documentatie](/help/sites-authoring/home.md) bij het schrijven voor meer informatie over deze functies.
+Raadpleeg de [Authoring documentation](/help/sites-authoring/home.md) voor meer informatie over deze functies.
 
 >[!CAUTION]
 >
@@ -72,12 +72,12 @@ Raadpleeg de [documentatie](/help/sites-authoring/home.md) bij het schrijven voo
 
 #### Content-repository {#content-repository}
 
-* Snellere en efficiëntere compressie door online revisie opschonen. Interne tests tonen aan dat de nieuwe staartverbinding tot 10 keer sneller is en meer schijfruimte kan terugwinnen met minder IOPS in vergelijking met AEM 6.3. Dit heeft minder invloed op de prestaties als de Online revisie Cleanup wordt uitgevoerd. Zie [de documentatiepagina](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes)voor meer informatie.
+* Snellere en efficiëntere compressie door online revisie opschonen. Interne tests tonen aan dat de nieuwe staartverbinding tot 10 keer sneller is en meer schijfruimte kan terugwinnen met minder IOPS in vergelijking met AEM 6.3. Dit heeft minder invloed op de prestaties als de Online revisie Cleanup wordt uitgevoerd. Zie [de documentatiepagina](/help/sites-deploying/revision-cleanup.md#full-and-tail-compaction-modes) voor meer informatie.
 
 * Continuous Revision Cleanup for MongoMK vervangt gepland onderhoud voor opschonen
 * Verbeterde efficiëntie voor het opschonen van revisies in documentknooppunten
 
-#### Zoeken en indexeren {#search-indexing}
+#### {#search-indexing} zoeken en indexeren
 
 * Verbeterde ondersteuning voor indexeringsbewerkingen via &#39;ak-run&#39; (CLI):
 
@@ -88,37 +88,37 @@ Raadpleeg de [documentatie](/help/sites-authoring/home.md) bij het schrijven voo
 
 * Verminderde groei van de Luceen-gerelateerde opslagplaats voor een algemene verbeterde systeemprestaties
 
-Ga voor meer informatie naar [deze documentatiepagina](/help/sites-deploying/indexing-via-the-oak-run-jar.md).
+Voor meer informatie, te bezoeken [deze documentatiepagina](/help/sites-deploying/indexing-via-the-oak-run-jar.md).
 
 #### Bewaking {#monitoring}
 
-* Een nieuw Overzicht [van het](/help/sites-administering/operations-dashboard.md#system-overview) Systeem verstrekt een momentopnamemening op alle prestaties-verwante systeemstatus en activiteiten.
-* Een nieuwe reeks [gezondheidscontroles](/help/sites-administering/operations-dashboard.md#health-checks) rond indexering, vragen en onderhoud
+* Een nieuw [Systeemoverzicht](/help/sites-administering/operations-dashboard.md#system-overview) verstrekt een momentopnamemening op alle prestaties-gerelateerde systeemstatus en activiteiten.
+* Een nieuwe set van [Health Checks](/help/sites-administering/operations-dashboard.md#health-checks) rondom indexering, query&#39;s en onderhoud
 
 #### Projecten en workflows {#projects-and-workflows}
 
-* Nieuwe [Workfloweditor om workflowmodellen](/help/sites-developing/workflows-models.md)te maken en te bewerken.
+* Nieuw [Workfloweditor om workflowmodellen te maken en te bewerken](/help/sites-developing/workflows-models.md).
 
 ![screen_shot_2018-04-04at71143am](assets/screen_shot_2018-04-04at71143am.png)
 
 #### Upgrade uitvoeren vanaf eerdere versie {#upgrade-from-earlier-version}
 
 * [Achterwaartse compatibiliteit](/help/sites-deploying/backward-compatibility.md): De achterwaartse compatibele eigenschappen in 6.4, helpen uw douanecode in de meeste gevallen compatibel blijven en verminderen verbeteringsinspanning.
-* [Complexiteitsbeoordeling](/help/sites-deploying/pattern-detector.md)van upgrade: Het nieuwe gereedschap Patroondetector om de complexiteit van upgrades te beoordelen voordat u een upgrade uitvoert.
-* [Herstructurering](/help/sites-deploying/repository-restructuring.md)van de opslagplaats: aanzienlijke herstructurering ( hoofdzakelijk / enz . ) om verbeteringen te vergemakkelijken en de toepassing van beste praktijken te bevorderen ;
-* Meer algemene informatie over upgrades vindt u op [deze pagina](/help/sites-deploying/upgrade.md) voor meer informatie.
+* [Complexiteitsbeoordeling](/help/sites-deploying/pattern-detector.md) van upgrade: Het nieuwe gereedschap Patroondetector om de complexiteit van upgrades te beoordelen voordat u een upgrade uitvoert.
+* [Herstructurering](/help/sites-deploying/repository-restructuring.md) van de opslagplaats: aanzienlijke herstructurering ( hoofdzakelijk / enz . ) om verbeteringen te vergemakkelijken en de toepassing van beste praktijken te bevorderen ;
+* Voor meer algemene informatie over Upgrades raadpleegt u [deze pagina](/help/sites-deploying/upgrade.md) voor meer informatie.
 
-### Sites Experience Managers {#experience-manager-sites}
+### Sites {#experience-manager-sites} Experience Managers
 
-Volledige lijst met wijzigingen in [AEM Sites en invoegtoepassingen](sites.md).
+Volledige lijst van veranderingen in [AEM Sites en toe:voegen-ons](sites.md).
 
-#### Vloeiende ervaringen {#fluid-experiences}
+#### Vochtervaring {#fluid-experiences}
 
 De introductie van Fluid Ervaring begin 2017, gesteund door de Fragments van de Inhoud, de Fragments van de Ervaring en de Diensten van de Inhoud waren het begin om aan een multi-kanaal-eerste inhoudsbeheer te evolueren. AEM 6.4 breidt elk van de gebieden aanzienlijk uit:
 
 **[Contentfragmenten](/help/assets/content-fragments.md)**
 
-Nieuw in 6.4 is een visuele redacteur van het [inhoudsmodel](/help/assets/content-fragments-models.md) en een nieuwe [configureerbare component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) om flexibele output van HTML en JSON te verstrekken om in de Diensten van de Inhoud te omvatten.
+Nieuw in 6.4 zijn een visuele [inhoudsmodel](/help/assets/content-fragments-models.md) redacteur en een nieuwe [configureerbare component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/content-fragment-component.html) om flexibele output van HTML en JSON te verstrekken om in de Diensten van de Inhoud te omvatten.
 
 **Ervaringsfragmenten**
 
@@ -128,7 +128,7 @@ Het maken van variaties in een fragment met dezelfde inhoud maar verschillende l
 
 Er zijn verschillende verbeteringen aangebracht in Sling Model Exporter en de Core Components om een robuuste JSON-uitvoer te bieden voor het insluiten van inhoud in mobiele apps en ervaringen met apps van één pagina.
 
-#### Sites sneller samenstellen {#gettings-sites-built-quicker}
+#### Sites sneller ophalen {#gettings-sites-built-quicker}
 
 AEM 6.4 voltooit de transformatie naar het volgende generatie componentenmodel. Het concept van de Componenten van de Kern dat in AEM 6.3 wordt geïntroduceerd, en nu door het Systeem van de Stijl wordt aangesloten, verstrekt een efficiënte manier om nieuwe te bouwen en bestaande plaatsen uit te breiden.
 
@@ -136,11 +136,11 @@ Aanbevolen zelfstudie voor meer informatie over hoe u het nieuwe componentmodel 
 
 #### Scherminvoegtoepassing {#screens-add-on}
 
-AEM Screens staan voor een consistente boodschap via alle marketingkanalen, waaronder Digital Signage en kiosk-netwerken. AEM 6.4 biedt extra ondersteuning voor het uitvoeren van de Sigage Player op Microsoft Windows- en Google Chrome OS-hardware. Bovendien zijn verbeteringen op het gebied van extern apparaatbeheer en programma&#39;s (groepen kanalen) beschikbaar.
+AEM Screens staat voor een consistente boodschap via alle marketingkanalen, inclusief Digital Signage en kiosk-netwerken. AEM 6.4 biedt extra ondersteuning voor het uitvoeren van de Sigage Player op Microsoft Windows- en Google Chrome OS-hardware. Bovendien zijn verbeteringen op het gebied van extern apparaatbeheer en programma&#39;s (groepen kanalen) beschikbaar.
 
-Raadpleeg de gebruikershandleiding voor [AEM Screens voor meer informatie over de schermupdates](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html).
+Zie [AEM Screens User Guide](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html) voor meer informatie over de schermupdates.
 
-### Experience Manager {#experience-manager-communities}
+### Gemeenschappen {#experience-manager-communities} Experience Managers
 
 AEM 6.4 voegt veel nieuwe functies en verbeteringen toe aan de Gemeenschappen. Volledige lijst met wijzigingen is beschikbaar in [AEM Communities](communities-release-notes.md). De belangrijkste kenmerken van deze release zijn:
 
@@ -148,41 +148,41 @@ AEM 6.4 voegt veel nieuwe functies en verbeteringen toe aan de Gemeenschappen. V
 
 **Automatische spamdetectie**
 
-Er is een nieuwe spamdetectieengine beschikbaar waarmee ongewenste door de gebruiker gegenereerde inhoud op sites en groepen in de gebruikersgemeenschap kan worden uitgefilterd. Zodra toegelaten van systeem/console/configMgr, merkt het een stuk van gebruiker geproduceerde inhoud als spam die op een vooraf bepaalde reeks spamwoorden wordt gebaseerd. Meer informatie over de motor van de spamopsporing, verwijs [het automatiseren van communautaire gebruiker die inhoud](/help/communities/moderate-ugc.md#spam-detection)produceert.
+Er is een nieuwe spamdetectieengine beschikbaar waarmee ongewenste door de gebruiker gegenereerde inhoud op sites en groepen in de gebruikersgemeenschap kan worden uitgefilterd. Zodra toegelaten van systeem/console/configMgr, merkt het een stuk van gebruiker geproduceerde inhoud als spam die op een vooraf bepaalde reeks spamwoorden wordt gebaseerd. Meer informatie over de motor van de spamopsporing, verwijs [het automatiseren van communautaire gebruiker die inhoud produceert](/help/communities/moderate-ugc.md#spam-detection).
 
 ![spamdetectie](assets/spamdetection.png)
 
 **Nieuwe filters voor QnA**
 
-De nieuwe filters, genoemd Beantwoord en niet Beantwoord, zijn toegevoegd aan bulkmoderatieconsole om vragen te filtreren QnA. Om te weten hoe de Beantwoord en Onbeantwoorde statusfilters werken, verwijs [bulk het modereren gebruiker geproduceerde inhoud](/help/communities/moderation.md#main-pars-note-521961797).
+De nieuwe filters, genoemd Beantwoord en niet Beantwoord, zijn toegevoegd aan bulkmoderatieconsole om vragen te filtreren QnA. Om te weten hoe de Beantwoord en Onbeantwoorde statusfilters werken, verwijs [bulkmodererende gebruiker geproduceerde inhoud](/help/communities/moderation.md#main-pars-note-521961797).
 
 **Filters voor bladwijzermodernisering**
 
-De capaciteit om referentie de vooraf bepaalde matigingsfilters op moderatieconsole is verstrekt. Deze filters worden toegevoegd aan het einde van de URL-tekenreeks en kunnen daarom later worden gedeeld, opnieuw worden gebruikt en herzien. Zorg dat u weet hoe u bladwijzerfilters kunt gebruiken in de [bulkmoderatieconsole](/help/communities/moderation.md#main-pars-note-429176623).
+De capaciteit om referentie de vooraf bepaalde matigingsfilters op moderatieconsole is verstrekt. Deze filters worden toegevoegd aan het einde van de URL-tekenreeks en kunnen daarom later worden gedeeld, opnieuw worden gebruikt en herzien. Zorg dat u weet hoe u bladwijzerfilters kunt gebruiken in [bulkmoderatieconsole](/help/communities/moderation.md#main-pars-note-429176623).
 
 #### UGC- en gebruikersprofielen verwijderen {#delete-ugc-and-user-profiles}
 
-AEM 6.4 Community&#39;s stelt API&#39;s [van](/help/communities/user-ugc-management-service.md) buitenaf en [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) van voorbeeldservers beschikbaar, zodat eindgebruikers controle kunnen uitoefenen over hun gegevens. Deze API&#39;s stellen organisaties voor gegevensverwerking en gegevenscontrole ook in staat EU-aanvragen voor naleving van de GDPR-richtlijn in te dienen.
+AEM 6.4 Community&#39;s stellen [out-of-the-box API&#39;s](/help/communities/user-ugc-management-service.md) en voorbeelden [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) beschikbaar om eindgebruikers de mogelijkheid te bieden hun gegevens te controleren. Deze API&#39;s stellen organisaties voor gegevensverwerking en gegevenscontrole ook in staat EU-aanvragen voor naleving van de GDPR-richtlijn in te dienen.
 
 #### Verbeteringen voor site- en groepsbeheer {#enhancements-to-site-and-group-management}
 
 **Groepen met meerdere landinstellingen maken in één stap**
 
-Er is voorzien in de mogelijkheid om meertalige groepen te maken in één enkele bewerking. Om dergelijke groepen tot stand te brengen, kunnen de gebruikers aan de Inzameling van de Groep van de gewenste communautaire plaats van de console van Plaatsen navigeren. Maak een groep en geef de gewenste talen op op de pagina Sjabloon voor communautaire groep. Meer over deze functionaliteit, verwijs [communautaire groepenconsole](/help/communities/groups.md).
+Er is voorzien in de mogelijkheid om meertalige groepen te maken in één enkele bewerking. Om dergelijke groepen tot stand te brengen, kunnen de gebruikers aan de Inzameling van de Groep van de gewenste communautaire plaats van de console van Plaatsen navigeren. Maak een groep en geef de gewenste talen op op de pagina Sjabloon voor communautaire groep. Meer over deze functionaliteit, verwijs [communitygroepenconsole](/help/communities/groups.md).
 
 ![meertalige groep](assets/multilingualgroup.png)
 
 **[Websites en groepen van gemeenschappen met één klik verwijderen](/help/communities/groups.md)**
 
-Het pictogram Verwijderen is nu beschikbaar op de respectievelijke sites en groepen en navigeert bij globale navigatie. Met dit pictogram worden alle items en inhoud van de site of groep verwijderd en worden alle gebruikerskoppelingen verwijderd. Meer informatie over deze functionaliteit, verwijs het [beheren van communautaire plaatsen](/help/communities/create-site.md#main-pars-text-fe17) en het [beheren van communautaire groepen](/help/communities/groups.md#main-pars-text-5e8c).
+Het pictogram Verwijderen is nu beschikbaar op de respectievelijke sites en groepen en navigeert bij globale navigatie. Met dit pictogram worden alle items en inhoud van de site of groep verwijderd en worden alle gebruikerskoppelingen verwijderd. Als u meer wilt weten over deze functionaliteit, raadpleegt u [communitysites beheren](/help/communities/create-site.md#main-pars-text-fe17) en [groepen van gemeenschappen beheren](/help/communities/groups.md#main-pars-text-5e8c).
 
-#### Verbeteringen in Enablement {#enhancements-to-enablement}
+#### Verbeteringen voor activering {#enhancements-to-enablement}
 
-De functies Toewijzing en Catalogus zijn nu beschikbaar in groepen. Op deze manier kunt u leerinhoud maken, beheren en publiceren voor een specifieke set doelgroepsleden. Raadpleeg [Enablement-bronnen](/help/communities/resource.md)beheren voor meer informatie over het inschakelen van groepen uit de gebruikersgemeenschap.
+De functies Toewijzing en Catalogus zijn nu beschikbaar in groepen. Op deze manier kunt u leerinhoud maken, beheren en publiceren voor een specifieke set doelgroepsleden. Meer over het toelaten van communautaire groepen, verwijs [het beheren van enablement middelen](/help/communities/resource.md).
 
 ![toewijzingscatalogus](assets/assignmentcatalog.png)
 
-### Experience Manager-elementen {#experience-manager-assets}
+### Elementen van Experience Manager {#experience-manager-assets}
 
 AEM 6.4 bevat verschillende nieuwe functies en verbeteringen voor Middelen, waaronder nieuwe, verbeterde CreativeCloud-integratie, belangrijke vernieuwingen op het gebied van kunstmatige intelligentie, verbeterd metagegevensbeheer, verbeterde rapportering en algemene verbeteringen voor de gebruikerservaring. De volledige lijst van veranderingen beschikbaar in [AEM Assets](assets.md). De belangrijkste punten van de release zijn:
 
@@ -190,29 +190,29 @@ AEM 6.4 bevat verschillende nieuwe functies en verbeteringen voor Middelen, waar
 
 Adobe Asset Link in Creative Cloud for Enterprise stroomlijnt de samenwerking tussen ontwerpers en marketers bij het maken van content. Het is een nieuwe native mogelijkheid in Creative Cloud voor ondernemingen die Photoshop CC, Illustrator CC en InDesign CC verbindt met AEM — zonder dat creatieve personen hun tools hoeven te verlaten.
 
-Meer over dit vermogen, eerste vereisten, en hoe te om tot het toegang te hebben leren, zie de Verbinding [van Activa van](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html)Adobe.
+Meer over dit vermogen, eerste vereisten, en hoe te om tot het toegang te hebben, zie [Adobe Activa Link](https://www.adobe.com/creativecloud/business/enterprise/adobe-asset-link.html).
 
 ![adobe_asset_link](assets/adobe_asset_link.png)
 
 **Bureaubladapp AEM**
 
-AEM bureaubladtoepassing is bijgewerkt naar versie 1.8, die compatibel is met AEM 6.4. De volledige lijst met wijzigingen voor AEM desktop-app vindt u in een speciaal document met opmerkingen [over de release van de](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html) AEM desktop-app.
+AEM bureaubladtoepassing is bijgewerkt naar versie 1.8, die compatibel is met AEM 6.4. De volledige lijst met wijzigingen voor AEM desktop-app vindt u in een speciaal [AEM document voor de release van de desktop-app](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html).
 
-De verbeteringen die sinds AEM 6.3 versie worden geïntroduceerd omvatten de capaciteit om hiërarchische omslagen op de achtergrond te uploaden, een nieuwe UI om activa achtergrondverrichtingen te controleren, verbeterde caching, voorzien van een netwerk en login, evenals algemene stabiliteitsverbeteringen. De documentatie bevat ook een handleiding voor [beste praktijken](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
+De verbeteringen die sinds AEM 6.3 versie worden geïntroduceerd omvatten de capaciteit om hiërarchische omslagen op de achtergrond te uploaden, een nieuwe UI om activa achtergrondverrichtingen te controleren, verbeterde caching, voorzien van een netwerk en login, evenals algemene stabiliteitsverbeteringen. De documentatie omvat ook een [gids van beste praktijken](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html).
 
 **Adobe Sensei Services**
 
-De nieuwe mogelijkheden omvatten Verbeterde Slimme Markeringen, met de capaciteit om klantenbedrijfsconomie te leren, automatisch etiketteren digitale activa met klant-specifieke markeringen en Slimme Vertaal Onderzoek, die ontdekkingsbaarheid in veelvoudige talen door onderzoekstermijnen te vertalen op de vlucht verbetert. Zie [Verbeterde slimme tags](/help/assets/enhanced-smart-tags.md)voor meer informatie over deze functie.
+De nieuwe mogelijkheden omvatten Verbeterde Slimme Markeringen, met de capaciteit om klantenbedrijfsconomie te leren, automatisch etiketteren digitale activa met klant-specifieke markeringen en Slimme Vertaal Onderzoek, die ontdekkingsbaarheid in veelvoudige talen door onderzoekstermijnen te vertalen op de vlucht verbetert. Zie [Verbeterde slimme tags](/help/assets/enhanced-smart-tags.md) voor meer informatie over deze functie.
 
 ![enhanced_smart_tags2](assets/enhanced_smart_tags2.png)
 
 **Metagegevens**
 
-Tot de verbeteringen behoren het gelijktijdig importeren en exporteren van metagegevens voor een groot aantal elementen en geavanceerde metagegevensconstructies, zoals [trapsgewijze metagegevens](/help/assets/cascading-metadata.md).
+Tot de verbeteringen behoren het gelijktijdig importeren en exporteren van metagegevens voor grote aantallen elementen en geavanceerde metagegevensconstructies, zoals [Trapsgewijze metagegevens](/help/assets/cascading-metadata.md).
 
 **Rapporten**
 
-In AEM 6.4 is de rapportage van bedrijfsmiddelen grondig herzien met een nieuw rapportagekader, gebruikerservaring en meer OOTB-rapporten voor gevallen waarin de klant gebruikmaakt. Zie [Elementrapporten](/help/assets/asset-reports.md)voor meer informatie over het genereren van verschillende rapporten.
+In AEM 6.4 is de rapportage van bedrijfsmiddelen grondig herzien met een nieuw rapportagekader, gebruikerservaring en meer OOTB-rapporten voor gevallen waarin de klant gebruikmaakt. Zie [Elementrapporten](/help/assets/asset-reports.md) voor meer informatie over het genereren van verschillende rapporten.
 
 **Gebruikerservaring**
 
@@ -220,9 +220,9 @@ Meerdere verbeteringen om het bladeren, zoeken en beheren van middelen voor gebr
 
 **Brand Portal**
 
-Verschillende verbeteringen op het gebied van metagegevens, rapportage, digitale rechten, aanmeldingservaring en publicatieprestaties voor middelendistributie. Om over de nieuwe verhogingen en de eigenschappen te weten te komen, zie [Nieuw in het Portaal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html)van het Merk van AEM Assets.
+Verschillende verbeteringen op het gebied van metagegevens, rapportage, digitale rechten, aanmeldingservaring en publicatieprestaties voor middelendistributie. Zie [Nieuwe functies in AEM Assets Brand Portal](https://docs.adobe.com/content/help/en/experience-manager-brand-portal/using/introduction/whats-new.html) voor meer informatie over de nieuwe verbeteringen en functies.
 
-#### Invoegtoepassing Dynamic Media {#dynamic-media-add-on}
+#### Dynamic Media-invoegtoepassing {#dynamic-media-add-on}
 
 AEM 6.4 bevat veel nieuwe functies en verbeteringen voor Dynamic Media. De volledige lijst is beschikbaar in [AEM Assets](assets.md). De belangrijkste hoogtepunten omvatten het volgende:
 
@@ -230,15 +230,15 @@ AEM 6.4 bevat veel nieuwe functies en verbeteringen voor Dynamic Media. De volle
 
 Smart Crop, aangedreven door Adobe Sensei, biedt automatisch niet-destructieve bijsnijdingen van afbeeldingen, waarbij het interessepunt voor responsief ontwerp behouden blijft. U kunt een voorbeeld van bijgesneden afbeeldingssuggesties bekijken en deze indien nodig handmatig aanpassen. Met deze functie kunt u ook automatische stalen genereren voor productafbeeldingen.
 
-Raadpleeg de documentatie bij [Afbeeldingsprofielen](/help/assets/image-profiles.md) voor meer informatie over het gebruik van Slim uitsnijden.
+Zie de documentatie [Afbeeldingsprofielen](/help/assets/image-profiles.md) voor meer informatie over het gebruik van Slim uitsnijden.
 
-Zie Dynamic Media-elementen [toevoegen aan pagina](/help/assets/adding-dynamic-media-assets-to-pages.md) &#39;s voor meer informatie over het werken met Slim uitsnijden in de component Dynamic Media.
+Zie [Dynamic Media-elementen toevoegen aan pagina&#39;s](/help/assets/adding-dynamic-media-assets-to-pages.md) voor meer informatie over het werken met Slim uitsnijden in de Dynamic Media-component.
 
 **Smart Imaging**
 
 Slimme beeldverwerking maakt gebruik van de unieke weergavekenmerken van elke gebruiker, zodat deze automatisch afbeeldingen levert die zijn geoptimaliseerd voor zijn of haar ervaring, wat resulteert in betere prestaties en betrokkenheid.
 
-Raadpleeg de documentatie bij [Smart Imaging](/help/assets/imaging-faq.md) voor meer informatie.
+Zie [Smart Imaging](/help/assets/imaging-faq.md) documentatie voor meer informatie.
 
 ![smart_crop](assets/smart_crop.png)
 
@@ -246,13 +246,13 @@ Raadpleeg de documentatie bij [Smart Imaging](/help/assets/imaging-faq.md) voor 
 
 Met nieuwe viewers, zoals Panorama&#39;s en VR, kunt u een indrukwekkende ervaring bieden.
 
-Raadpleeg de documentatie bij [Panorama](/help/assets/panoramic-images.md) -afbeeldingen voor meer informatie.
+Zie [Panoramische afbeeldingen](/help/assets/panoramic-images.md) documentatie voor meer informatie.
 
 **3D-middelen**
 
 Nieuwe integratie met [Adobe Dimension CC](https://www.adobe.com/products/dimension.html), een Creative Cloud-toepassing voor het ontwerpen van 3D-ervaringen.
 
-Zie [Werken met documentatie over 3D-middelen](/help/assets/assets-3d.md) voor meer informatie.
+Zie [Werken met 3D-elementen](/help/assets/assets-3d.md) documentatie voor meer informatie.
 
 ![do-not-localize/3d](assets/do-not-localize/3d.png)
 
@@ -266,7 +266,7 @@ AEM 6.4 Forms biedt verschillende nieuwe functies en verbeteringen. De hooglicht
 * Lazy laadfragmenten
 * Enig-hop verbetering van LiveCycle aan Experience Manager Forms 6.4
 
-Meer informatie over de pagina Opmerkingen bij de release van [AEM Forms](forms.md) . Zie ook het [overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms](/help/forms/using/whats-new.md) voor informatie over nieuwe en verbeterde functies en documentatiebronnen.
+Meer informatie over de pagina met opmerkingen bij de release [AEM Forms](forms.md). Zie ook [Overzicht van nieuwe functies en verbeteringen in AEM 6.4 Forms](/help/forms/using/whats-new.md) voor informatie over nieuwe en verbeterde functies en documentatiebronnen.
 
 ### Experience Manager Livefyre {#experience-manager-livefyre}
 
@@ -278,7 +278,7 @@ U kunt Livefyre met uw AEM 6.4 instantie integreren. Hier vindt u informatie ove
 
 Adobe gebruikt een klantgericht ontwikkelingsmodel dat klanten toestaat om aan alle stadia van het ontwikkelingsproces, tijdens specificatie, ontwikkeling en het testen bij te dragen. Onze dank gaat uit naar alle klanten en partners die een bijdrage leveren aan dit proces.
 
-Adobe heeft de procedures en de processen op zijn plaats om inzameling, prioritering, en het volgen van klant gerichte insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. Het portaal [van de Steun van de](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) Adobe Marketing Cloud is geïntegreerd met het Systeem van de Bevordering &amp; van het Tekstspatiëring van Adobe. Vragen van de klant worden waar mogelijk met de klantenservice geïdentificeerd en opgelost. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun en garantiekwesties en betaalde klantenverhogingen.
+Adobe heeft de procedures en de processen op zijn plaats om inzameling, prioritering, en het volgen van klant gerichte insectenresolutie en de ontwikkeling van verbeteringsverzoeken toe te laten. Het [Adobe Marketing Cloud Support Portal](https://helpx.adobe.com/nl/contact/enterprise-support.ec.html) is geïntegreerd met het Adobe-systeem voor verbetering en foutopsporing. Vragen van de klant worden waar mogelijk met de klantenservice geïdentificeerd en opgelost. Bij doorverwijzing naar O&amp;O wordt alle klantinformatie vastgelegd en gebruikt voor prioritering en rapportage. Prioriteit wordt gegeven in ontwikkeling aan betaalde steun en garantiekwesties en betaalde klantenverhogingen.
 
 Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opgeleverd die in AEM 6.4 worden bevestigd.
 
@@ -289,17 +289,17 @@ Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opge
 * Standalone QuickStart: cq-quickstart-6.4.0.jar
 * Quickstart toepassingsserver: cq-quickstart-6.4.0.war
 * Dispatcher 4.3.1 of hoger voor verschillende webservers en -platforms. Zie [downloadkoppeling](https://docs.adobe.com/content/help/en/experience-manager-dispatcher/using/getting-started/release-notes.html).
-* Plug-in voor Eclipse IDE. [Lees meer en download](/help/sites-developing/aem-eclipse.md)het bestand.
+* Plug-in voor Eclipse IDE. [Lees meer en download](/help/sites-developing/aem-eclipse.md) het bestand.
 
-* Extension for Brackets Code Editor. [Lees meer en download](/help/sites-developing/aem-brackets.md)het bestand.
+* Extension for Brackets Code Editor. [Lees meer en download](/help/sites-developing/aem-brackets.md) het bestand.
 * GeMaven/Gradle afhankelijkheden. Zie [downloadkoppeling](https://repo.adobe.com/nexus/content/repositories/releases/com/adobe/aem/uber-jar/6.1.0/).
 
 **Sites**
 
-* Core Components ([GitHub-project](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
+* De Componenten van de kern ([GitHub project](https://github.com/Adobe-Marketing-Cloud/aem-core-wcm-components))
 * We.Retail Reference Implementation ([lees meer](/help/sites-developing/we-retail.md))
-* Project Blueprint Archetype ([GitHub-project](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
-* AEM Screens voor verschillende doelplatforms ([downloaden](https://download.macromedia.com/screens/))
+* Project Blueprint Archetype ([GitHub project](https://github.com/Adobe-Marketing-Cloud/aem-project-archetype))
+* AEM Screens Players voor diverse doelplatforms ([download](https://download.macromedia.com/screens/))
 * Smart Content Language Models. Engels is vooraf geïnstalleerd - meer talen kunnen worden gedownload
 
    * [Duits](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-de)
@@ -307,19 +307,19 @@ Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opge
    * [Italiaans](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [Frans](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [Het Hulpmiddel](/help/sites-developing/dialog-conversion.md) van de Omzetting van de dialoog om Klassieke UI componenten aan Koraal 3 te migreren
+* [De ](/help/sites-developing/dialog-conversion.md) Toolto van de Omzetting van de dialoog om Klassieke UI componenten aan Koraal 3 te migreren
 
 **Assets**
 
-* Adobe Experience Manager desktop app ([lees meer](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) en [download](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
+* Adobe Experience Manager-bureaubladtoepassing ([lees meer](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/using.html) en [download](https://docs.adobe.com/content/help/en/experience-manager-desktop-app/using/release-notes.html))
 
-* Pakket maken om verbeterde PDF-rasterfunctie toe te voegen ([lees meer](/help/assets/aem-pdf-rasterizer.md) en [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
+* Pakket maken om verbeterde PDF-rasterfunctie toe te voegen ([meer lezen](/help/assets/aem-pdf-rasterizer.md) en [download](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq640/product/assets/aem-assets-pdf-rasterizer-pkg))
 
-* Pakket maken om uitgebreide ondersteuning voor RAW-afbeeldingen toe te voegen ([lees meer](/help/assets/camera-raw.md))
+* Pakket om uitgebreide RAW beeldsteun toe te voegen ([lees meer](/help/assets/camera-raw.md))
 
 **Forms**
 
-* Pakketten voor AEM Forms mogelijkheden:
+* Pakketten voor AEM Forms-mogelijkheden:
 
    * [adobe-aemfd-aix-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-AIX)
    * [adobe-aemfd-linux-pkg](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-LX)
@@ -344,11 +344,11 @@ De gebruikersinterface is beschikbaar in de volgende talen:
 
 Experience Manager 6.4 is gecertificeerd voor GB18030-2005 CITS om de Chinese coderingsstandaard te gebruiken.
 
-## Installeren en bijwerken {#install-update}
+## {#install-update} installeren en bijwerken
 
-Zie [installatieinstructies](/help/sites-deploying/custom-standalone-install.md) voor installatievereisten.
+Zie [installatie-instructies](/help/sites-deploying/custom-standalone-install.md) voor installatievereisten.
 
-Zie de [upgradedocumentatie](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies.
+Zie [upgrade documentation](/help/sites-deploying/upgrade.md) voor gedetailleerde instructies.
 
 ## Ondersteunde Platforms {#supported-platforms}
 
@@ -356,15 +356,15 @@ Hier vindt u de volledige matrix met ondersteunde platforms, inclusief. Onderste
 
 >[!NOTE]
 >
->Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS-versies van Oracle (zie [Oracle Java SE-supportroutekaart](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe biedt alleen ondersteuning voor LTS-releases van Java om AEM in productie te houden. Daarom is Java 8 de aanbevolen versie voor gebruik met AEM 6.4.
+>Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies door Oracle (zie [Ondersteuning van Oracle Java SE roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe biedt alleen ondersteuning voor LTS-releases van Java om AEM in productie te houden. Daarom is Java 8 de aanbevolen versie voor gebruik met AEM 6.4.
 
-## Verouderde en verwijderde functies {#deprecated-and-removed-features}
+## Vervangen en verwijderde functies {#deprecated-and-removed-features}
 
 Adobe evalueert constant mogelijkheden in het product en in tijd plannen om mogelijkheden met krachtigere versies te vervangen, of besluit om geselecteerde delen opnieuw uit te voeren om beter voor toekomstige verwachtingen of uitbreidingen worden voorbereid.
 
-Voor Adobe Experience Manager 6.4, [lees de lijst van afgekeurde en verwijderde mogelijkheden](deprecated-removed-features.md). De pagina bevat ook een vooraankondiging van wijzigingen in 2019 en een belangrijke kennisgeving voor klanten die een update uitvoeren van eerdere releases.
+Voor Adobe Experience Manager 6.4: [lees de lijst met afgekeurde en verwijderde mogelijkheden](deprecated-removed-features.md). De pagina bevat ook een vooraankondiging van wijzigingen in 2019 en een belangrijke kennisgeving voor klanten die een update uitvoeren van eerdere releases.
 
-## Lijsten met gedetailleerde wijzigingen {#detailed-changes-lists}
+## Lijst met gedetailleerde wijzigingen {#detailed-changes-lists}
 
 [AEM Sites](sites.md)
 
@@ -380,10 +380,10 @@ Voor Adobe Experience Manager 6.4, [lees de lijst van afgekeurde en verwijderde 
 
 [Lijst met bekende problemen](known-issues.md)
 
-### Productdownload en -ondersteuning (beperkt aantal sites) {#product-download-and-support-restricted-sites}
+### Productdownload en -ondersteuning (Beperkte sites) {#product-download-and-support-restricted-sites}
 
 Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-accountmanager als u een klant bent en toegang nodig hebt.
 
 * [Product downloaden op licensing.adobe.com](https://licensing.adobe.com/).
-* Productupdates, patches en pakketten voor extra functionaliteit op het gebied van [softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie [Nieuwe Adobe Customer Support Experience](https://docs.adobe.com/content/help/en/customer-one/using/home.html)voor meer informatie.
+* Productupdates, patches en pakketten voor extra functionaliteit op [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie [Nieuwe ervaring voor klantenondersteuning van Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html) voor meer informatie.
