@@ -1,8 +1,8 @@
 ---
 title: SPA WKND-zelfstudie
 seo-title: SPA WKND-zelfstudie
-description: Ga in de ontwikkeling van het KUUROORD met dit multi-part leerprogramma binnen dat u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing verplettert om uw eigen KUUROORD uit te voeren.
-seo-description: Ga in de ontwikkeling van het KUUROORD met dit multi-part leerprogramma binnen dat u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing verplettert om uw eigen KUUROORD uit te voeren.
+description: Ga in SPA ontwikkeling met deze meerdelige zelfstudie die u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing leidt die verplettert om uw eigen SPA uit te voeren.
+seo-description: Ga in SPA ontwikkeling met deze meerdelige zelfstudie die u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing leidt die verplettert om uw eigen SPA uit te voeren.
 uuid: f57be84b-a037-4c76-856e-afb0275c1a0f
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
@@ -20,13 +20,13 @@ ht-degree: 0%
 
 # SPA WKND-zelfstudie{#spa-wknd-tutorial}
 
-Ga in de ontwikkeling van het KUUROORD met dit multi-part leerprogramma binnen dat u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing verplettert om uw eigen KUUROORD uit te voeren.
+Ga in SPA ontwikkeling met deze meerdelige zelfstudie die u door projectopstelling, componentenafbeelding, front-end ontwikkelingshulpmiddelen, en toepassing leidt die verplettert om uw eigen SPA uit te voeren.
 
 ## Tutorials {#tutorials}
 
-Voor een voorbeeld van begin tot eind om uw eigen enig-paginatoepassing te bouwen die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie de Tutorials van KND SPA:
+Voor een voorbeeld van begin tot eind om uw eigen enig-paginatoepassing te bouwen die met AEM die met projectopstelling door toepassing het verpletteren begint editable is, zie de Tutorials van de SPA WKND:
 
-* [Aan de slag met de AEM redacteur van het KUUROORD en Hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
-* [Begonnen het worden met de AEM Redacteur van het KUUROORD en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
+* [Aan de slag met de AEM SPA Editor en hoekig](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-angular-tutorial/overview.html)
+* [Aan de slag met de AEM SPA Editor en Reageren](https://docs.adobe.com/content/help/en/experience-manager-learn/spa-react-tutorial/overview.html)
 
-Alvorens u met uw eigen project van het KUUROORD voor AEM begint, ben zeker om het [Ontwikkelen SPAs voor AEM](/help/sites-developing/spa-architecture.md) document ook te herzien.
+Alvorens u met uw eigen SPA project voor AEM echter begint, ben zeker om [het Ontwikkelen SPA voor AEM](/help/sites-developing/spa-architecture.md) document ook te herzien.
