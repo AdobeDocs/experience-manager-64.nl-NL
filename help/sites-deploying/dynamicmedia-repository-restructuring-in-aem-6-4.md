@@ -1,8 +1,8 @@
 ---
-title: Herstructurering van dynamische opslagplaats voor media in AEM 6.4
-seo-title: Herstructurering van dynamische opslagplaats voor media in AEM 6.4
-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.4 voor Dynamic Media.
-seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe opslagstructuur in AEM 6.4 voor Dynamic Media.
+title: Herstructurering van de Dynamic Media-opslagplaats in AEM 6.4
+seo-title: Herstructurering van de Dynamic Media-opslagplaats in AEM 6.4
+description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.4 voor Dynamic Media.
+seo-description: Leer hoe u de noodzakelijke wijzigingen aanbrengt om te migreren naar de nieuwe repository structuur in AEM 6.4 voor Dynamic Media.
 uuid: e26d61a4-47b6-493a-9ba2-4c58b200ddd9
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
@@ -17,21 +17,21 @@ ht-degree: 1%
 ---
 
 
-# Herstructurering van dynamische opslagplaats voor media in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
+# Herstructurering van Dynamic Media-opslagplaats in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
 
-Zoals beschreven in de moederherstructurering van de [opslagplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die tot AEM 6.4 opwaarderen deze pagina moeten gebruiken om de werkinspanning te beoordelen verbonden aan veranderingen in de opslagplaats die gevolgen hebben voor de Dynamic Media Solution. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
+Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.4 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de Dynamic Media-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
 
 **Vóór upgrade naar 6.5**
 
 * [Aangepaste configuraties voor adaptieve videocodering](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#custom-adaptive-video-encoding-configurations)
-* [Dynamische media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
-* [Configuratie van dynamische Cloud Service (DM Hybrid)](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
-* [Dynamische media - configuratie YouTube-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
+* [Dynamic Media (DMS7) Cloud Configuration](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#dynamic-media-dms-cloud-configuration)
+* [Configuratie van Dynamic Media (DM Hybrid)-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#cloudserviceconfiguration)
+* [Dynamic Media - Configuratie YouTube-Cloud Service](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#youtubecloudserviceconfiguration)
 * [Dic](/help/sites-deploying/dynamicmedia-repository-restructuring-in-aem-6-4.md#misc)
 
-## Vóór upgrade naar 6.5 {#prior-to-upgrade}
+## Vóór upgrade {#prior-to-upgrade} 6.5
 
-### Aangepaste configuraties voor adaptieve videocodering  {#custom-adaptive-video-encoding-configurations}
+### Aangepaste configuraties voor adaptieve videocodering {#custom-adaptive-video-encoding-configurations}
 
 <table> 
  <tbody>
@@ -49,12 +49,12 @@ Zoals beschreven in de moederherstructurering van de [opslagplaats in AEM 6.4](/
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td> 
-   <td>N/A<br /> </td> 
+   <td>N.v.t.<br /> </td> 
   </tr>
  </tbody>
 </table>
 
-### Dynamische media (DMS7) Cloud-configuratie {#dynamic-media-dms-cloud-configuration}
+### Dynamic Media (DMS7) Cloud-configuratie {#dynamic-media-dms-cloud-configuration}
 
 <table> 
  <tbody>
@@ -71,7 +71,7 @@ Zoals beschreven in de moederherstructurering van de [opslagplaats in AEM 6.4](/
    <td><p>De klant kan een migratiescript bij deze plaats in werking stellen:<br /> </p> 
     <ul> 
      <li><em>https://serveraddress:serverport/libs/settings/dam/dm/presets.migratedmcontent.json</em></li> 
-     <li>Start Dynamic Media OSGi-bundel opnieuw.</li> 
+     <li>Start de Dynamic Media OSGi-bundel opnieuw.</li> 
     </ul> </td> 
   </tr>
   <tr>
@@ -81,7 +81,7 @@ Zoals beschreven in de moederherstructurering van de [opslagplaats in AEM 6.4](/
  </tbody>
 </table>
 
-### Configuratie van dynamische Cloud Servicen (DM Hybrid) {#cloudserviceconfiguration}
+### Dynamic Media (DM Hybrid) configuratie Cloud Service {#cloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -99,12 +99,12 @@ Zoals beschreven in de moederherstructurering van de [opslagplaats in AEM 6.4](/
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td> 
-   <td>N/A<br /> </td> 
+   <td>N.v.t.<br /> </td> 
   </tr>
  </tbody>
 </table>
 
-### Dynamische media - configuratie YouTube-Cloud Service  {#youtubecloudserviceconfiguration}
+### Dynamic Media - configuratie YouTube-Cloud Service {#youtubecloudserviceconfiguration}
 
 <table> 
  <tbody>
@@ -118,16 +118,16 @@ Zoals beschreven in de moederherstructurering van de [opslagplaats in AEM 6.4](/
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td> 
-   <td><p>1. Publiceer alle video's van YouTube<br /> 2 ongedaan. Maak de YouTube-configuratie met de nieuwe TouchUI (van <code>/conf</code>), inclusief het kopiëren van alle kanalen vanaf de oude locatie<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een nieuwe TouchUI YouTube-config maakt, worden er meerdere YouTube-URL's weergegeven onder Eigenschappen, omdat de opnieuw gemaakte kanalen bij deze gelegenheid opnieuw zullen publiceren. Dit betekent dat u nutteloze URLs hebt die onder Eigenschappen wordt vermeld.</p> </td> 
+   <td><p>1. Publiceer alle video's van YouTube<br /> 2. Creeer de Configuratie YouTube gebruikend nieuwe TouchUI (van <code>/conf</code>) met inbegrip van het kopiëren van alle Kanalen van de oude plaats<br /> 3. Publiceer alle video's terug naar YouTube.</p> <p>Deze workflow resulteert in nieuwe YouTube-URL's. Als u de publicatie niet ongedaan maakt voordat u een nieuwe TouchUI YouTube-config maakt, worden er meerdere YouTube-URL's weergegeven onder Eigenschappen, omdat de opnieuw gemaakte kanalen bij deze gelegenheid opnieuw zullen publiceren. Dit betekent dat u nutteloze URLs hebt die onder Eigenschappen wordt vermeld.</p> </td> 
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td> 
-   <td>N/A<br /> </td> 
+   <td>N.v.t.<br /> </td> 
   </tr>
  </tbody>
 </table>
 
-### Dic {#misc}
+### Diverse {#misc}
 
 <table> 
  <tbody>
