@@ -22,7 +22,7 @@ ht-degree: 97%
 
 SEO (Search Engine Optimization, zoekmachineoptimalisatie) is voor veel marketeers een belangrijke zorg geworden. Daarom moet bij veel AEM projecten rekening worden gehouden met de bezorgdheid van de ZOO.
 
-This document first describes some [SEO best practices](#seo-best-practices) and recommendations for achieving these on an AEM implementation. Vervolgens wordt in dit document dieper ingegaan op enkele van de meer [complexe implementatiestappen](#aem-configurations) die in de eerste sectie aan bod komen.
+In dit document worden eerst enkele [SEO best practices](#seo-best-practices) beschreven en aanbevelingen voor het bereiken van deze procedures voor een AEM-implementatie. Vervolgens wordt in dit document dieper ingegaan op enkele van de meer [complexe implementatiestappen](#aem-configurations) die in de eerste sectie aan bod komen.
 
 ## Best practices voor SEO {#seo-best-practices}
 
