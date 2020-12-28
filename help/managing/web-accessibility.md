@@ -18,7 +18,7 @@ ht-degree: 42%
 ---
 
 
-# AEM and the Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
+# AEM en de Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
 
 Er zijn veel sociale, economische en juridische redenen om ervoor te zorgen dat webcontent zo is ontworpen dat deze zo toegankelijk mogelijk is voor het doelpubliek, ongeacht eventuele handicaps of beperkingen. Webtoegankelijkheid is daarom een steeds belangrijker aspect van goed webontwerp.
 
@@ -53,21 +53,21 @@ De volgende pagina&#39;s en de sectie bevatten informatie en richtlijnen:
 
 ## World Wide Web Consortium en WCAG 2.0 {#world-wide-web-consortium-and-wcag}
 
-Het [World Wide Web Consortium (W3C)](https://www.w3.org/) is een internationale gemeenschap die zich inzet voor het ontwikkelen van webstandaarden. Om webontwerpers en -ontwikkelaars te helpen toegankelijke websites te maken, heeft het [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) in december 2008 de Web Content Accessibility Guidelines (WCAG) 2.0 [](https://www.w3.org/TR/WCAG20/) gepubliceerd (waarbij de oorspronkelijke versie van 1999 werd bijgewerkt).
+Het [World Wide Web Consortium (W3C)](https://www.w3.org/) is een internationale gemeenschap die zich inzet voor het ontwikkelen van webstandaarden. Om webontwerpers en -ontwikkelaars te helpen toegankelijke websites te maken, heeft het [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/) in december 2008 de [Web Content Accessibility Guidelines (WCAG) 2.0](https://www.w3.org/TR/WCAG20/) gepubliceerd (waarbij de oorspronkelijke versie van 1999 werd bijgewerkt).
 
 >[!NOTE]
 >
->An [updated version of the guidelines](https://www.w3.org/TR/WCAG21/) is currently in development, but will not be considered for this version of AEM.
+>Een [bijgewerkte versie van de richtlijnen](https://www.w3.org/TR/WCAG21/) is momenteel in ontwikkeling, maar zal niet voor deze versie van AEM in overweging worden genomen.
 
 Met Adobe Experience Manager kunnen auteurs van inhoud en/of eigenaars van websites webinhoud maken die voldoet aan de succescriteria van WCAG 2.0 Level A en Niveau AA.
 
 Specifieke aspecten van WCAG 2.0 worden benadrukt in onze [snelgids over WCAG 2.0](/help/managing/qg-wcag.md).
 
-### WCAG 2.0-compatibiliteitsniveaus {#wcag-accessibility-conformance-levels}
+### WCAG 2.0 - Conformiteitsniveaus voor toegankelijkheid {#wcag-accessibility-conformance-levels}
 
-WCAG 2.0 biedt [richtsnoeren (met bijbehorende succescriteria) die de toegankelijkheidsniveaus](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html)bestrijken.
+WCAG 2.0 verstrekt [richtlijnen (met verwante succescriteria) die de toegankelijkheidsniveaus](https://www.w3.org/TR/UNDERSTANDING-WCAG20/conformance.html) behandelen.
 
-Deze, aangezien zij betrekking hebben op AEM, vallen onder [A- en AA-conformiteit](/help/sites-authoring/creating-accessible-content.md). Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
+Deze, aangezien zij betrekking hebben op AEM, vallen onder [Niveau A- en AA-conformiteit](/help/sites-authoring/creating-accessible-content.md). Wanneer u uw site maakt, moet u het algemene niveau bepalen waaraan u uw site wilt laten voldoen.
 
 >[!NOTE]
 >
