@@ -17,13 +17,13 @@ ht-degree: 4%
 ---
 
 
-# Rendering en levering{#rendering-and-delivery}
+# Renderen en leveren{#rendering-and-delivery}
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-AEM inhoud kan eenvoudig worden gerenderd via [Sling Default Servlets](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) om [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen te renderen.
+AEM inhoud kan eenvoudig worden gerenderd via [Standaardservers verkopen](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html) om [JSON](https://sling.apache.org/documentation/bundles/rendering-content-default-get-servlets.html#default-json-rendering) en andere indelingen te renderen.
 
 Die buiten-de-box-renders lopen doorgaans de repository en retourneren inhoud zoals ze is.
 
@@ -35,9 +35,9 @@ Het volgende diagram toont het teruggeven van inhoudsdiensten.
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
-## JSON aanvragen {#requesting-json}
+## JSON {#requesting-json} aanvragen
 
-Gebruik **&lt;RESOURCE.caas[.&lt;EXPORTCONFIG][.&lt;EXPORT-CONFIG].json** om JSON aan te vragen.
+Gebruik **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto request JSON.**
 
 <table>
  <tbody>
@@ -51,7 +51,7 @@ Gebruik **&lt;RESOURCE.caas[.&lt;EXPORTCONFIG][.&lt;EXPORT-CONFIG].json** om JSO
   </tr>
   <tr>
    <td>DEPTH-INT</td>
-   <td><strong>OPTIONELE</strong><br /> <br /> diepteherhaling voor rendering van kinderen, zoals wordt gebruikt bij rendering van elementen</td>
+   <td><strong></strong><br /> <br /> OPTIONALdepth recursion for rendering children as used in Sling rendering</td>
   </tr>
  </tbody>
 </table>
@@ -136,9 +136,9 @@ In de volgende tabel worden de eigenschappen van Export Configs weergegeven:
  </tbody>
 </table>
 
-### Exportoverschrijvingen van het type resource {#resource-type-export-overrides}
+### Overschrijvingen {#resource-type-export-overrides} van het type resource
 
-Maak een configuratieknooppunt onder */apps/mobileapps/caas/exportConfigs.*
+Een configuratienode maken onder */apps/mobileapps/caas/exportConfigs.*
 
 | name | resourceTypeOverrides |
 |---|---|
@@ -156,16 +156,16 @@ In de volgende tabel worden de eigenschappen weergegeven:
    <td><strong>Beschrijving</strong></td>
   </tr>
   <tr>
-   <td>&lt;SELECTOR_TO_INC&gt;</td>
+   <td>&lt;selector_to_inc&gt;</td>
    <td>Tekenreeks[] </td>
    <td>-</td>
    <td>sling:resourceType</td>
-   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als te renderen;<br /> &lt;RESOURCE&gt;.&lt;SELECTOR_TO_INC&gt;.json </td>
+   <td>Voor de volgende het slingeren middeltypes, keer niet de standaardUitvoer van CaaS.<br /> Retourneer een klant json-export door de resource als weer te geven;<br /> &lt;resource&gt;.&lt;selector_to_inc&gt;.json </td>
   </tr>
  </tbody>
 </table>
 
-### Bestaande Content Services Exportconfiguraties {#existing-content-services-export-configs}
+### Existing Content Services Export Configs {#existing-content-services-export-configs}
 
 De Diensten van de inhoud omvat twee uitvoerconfiguraties:
 
@@ -176,7 +176,7 @@ De Diensten van de inhoud omvat twee uitvoerconfiguraties:
 
 De standaard de uitvoerconfiguratie van de Diensten van de inhoud zal worden toegepast als een config in gevraagde URI wordt gespecificeerd.
 
-&lt;RESOURCE>.caas[.&lt;DEPTH-INT>].json
+&lt;resource>.caas[.&lt;depth-int>].json
 
 <table>
  <tbody>
@@ -219,11 +219,11 @@ De standaard de uitvoerconfiguratie van de Diensten van de inhoud zal worden toe
  </tbody>
 </table>
 
-#### Configuratie pagina exporteren {#page-export-configuration}
+#### Configuratie voor exporteren van pagina {#page-export-configuration}
 
 Deze configuratie breidt het gebrek uit om groeperende kinderen onder een kindknoop te omvatten.
 
-&lt;SITE_PAGE>.caas.page[.&lt;DEPTH-INT>].json
+&lt;site_page>.caas.page[.&lt;depth-int>].json
 
 ### Aanvullende bronnen {#additional-resources}
 
