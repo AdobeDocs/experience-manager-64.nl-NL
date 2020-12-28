@@ -30,11 +30,11 @@ Dit zijn allemaal [OSGi configuraties](/help/sites-deploying/configuring-osgi.md
 
 >[!NOTE]
 >
->Aanmelden in AEM is gebaseerd op verkoopbeginselen. Zie Logboekregistratie [](https://sling.apache.org/site/logging.html) voor meer informatie.
+>Aanmelden in AEM is gebaseerd op verkoopbeginselen. Zie [Logboekregistratie voor verkoop](https://sling.apache.org/site/logging.html) voor meer informatie.
 
-## Globale logboekregistratie {#global-logging}
+## Globale registratie {#global-logging}
 
-[Apache Sling Logging Configuration](/help/sites-deploying/osgi-configuration-settings.md) wordt gebruikt om het hoofdlogger te configureren. Hiermee worden de algemene instellingen voor het aanmelden van AEM gedefinieerd:
+[Apache Sling Logging ](/help/sites-deploying/osgi-configuration-settings.md) Configuration wordt gebruikt om het hoofdlogger te configureren. Hiermee worden de algemene instellingen voor het aanmelden van AEM gedefinieerd:
 
 * het registratieniveau
 * de locatie van het centrale logbestand
@@ -44,7 +44,7 @@ Dit zijn allemaal [OSGi configuraties](/help/sites-deploying/configuring-osgi.md
 
 >[!NOTE]
 >
->Dit artikel [van de](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) Kennisbank verklaart hoe te om de request.log en access.log dossiers te roteren.
+>Dit [artikel](https://helpx.adobe.com/experience-manager/kb/HowToRotateRequestAndAccessLog.html) van de Kennisbank verklaart hoe te om de request.log en access.log dossiers te roteren.
 
 ## Loggers en schrijvers voor de Individuele Diensten {#loggers-and-writers-for-individual-services}
 
@@ -61,9 +61,9 @@ Dit staat u toe om logboekberichten voor één enkele dienst in een afzonderlijk
 
 AEM gebruikt het volgende om logberichten naar bestand te schrijven:
 
-1. Een **dienst** OSGi (registreerder) schrijft een logboekbericht.
+1. Een **OSGi service** (logger) schrijft een logboekbericht.
 1. Een **Logging Logger** neemt dit bericht en formatteert het volgens uw specificatie.
-1. Een **Logging Schrijver** schrijft al deze berichten aan het fysieke dossier dat u hebt bepaald.
+1. Een **Logging Writer** schrijft al deze berichten aan het fysieke dossier dat u hebt bepaald.
 
 Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende elementen:
 
@@ -83,7 +83,7 @@ Deze elementen zijn gekoppeld aan de volgende parameters voor de desbetreffende 
 
    Dit moet gelijk zijn aan dezelfde parameter in de configuratie van Logging Writer, anders wordt de overeenkomst niet gemaakt. Als er geen gelijke is dan zal een impliciete Schrijver met standaardconfiguratie (dagelijkse logboekomwenteling) worden gecreeerd.
 
-### Standaardloggers en -schrijvers {#standard-loggers-and-writers}
+### Standaardregistreerapparaten en -schrijvers {#standard-loggers-and-writers}
 
 Bepaalde loggers en schrijvers zijn opgenomen in een standaard AEM installatie.
 
@@ -95,7 +95,7 @@ Het eerste is een speciaal geval aangezien het zowel de `request.log` als `acces
 
       (org.apache.sling.engine.impl.log.RequestLoggerService)
 
-   * Schrijf berichten over aanvraaginhoud aan `request.log`.
+   * Schrijf berichten over verzoekinhoud aan `request.log`.
 
 * Koppelingen naar:
 
@@ -103,7 +103,7 @@ Het eerste is een speciaal geval aangezien het zowel de `request.log` als `acces
 
       (org.apache.sling.engine.impl.log.RequestLogger)
 
-   * Schrijft de berichten naar of `request.log` of `access.log`.
+   * Schrijft de berichten naar `request.log` of `access.log`.
 
 Deze kunnen indien nodig worden aangepast, hoewel de standaardconfiguratie geschikt is voor de meeste installaties.
 
@@ -115,7 +115,7 @@ De andere paren volgen de standaardconfiguratie:
 
       (org.apache.sling.commons.log.LogManager.factory.config)
 
-   * Schrijft `Information` berichten naar `logs/error.log`.
+   * Schrijft `Information` berichten aan `logs/error.log`.
 
 * Koppelingen naar de schrijver:
 
@@ -125,7 +125,8 @@ De andere paren volgen de standaardconfiguratie:
 
 * De logboekregistratie:
 
-   * Apache Sling Logging Logger Configuration(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
+   * Logboekconfiguratie Apache Sling Logging
+(org.apache.sling.commons.log.LogManager.factory.config.649d51b7-6425-45c9-81e6-2697a03d6be7)
 
    * Schrijft `Warning` berichten aan `../logs/error.log` voor de dienst `org.apache.pdfbox`.
 
@@ -135,18 +136,18 @@ De andere paren volgen de standaardconfiguratie:
 
 U kunt uw eigen registreerapparaat/schrijfpaar definiëren:
 
-1. Maak een nieuwe instantie van de configuratie- [Apache Sling Logging Logger](/help/sites-deploying/osgi-configuration-settings.md)van de Fabriek.
+1. Maak een nieuwe instantie van de Configuratie [Apache Sling Logging Logger Configuration](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geef het logbestand op.
    1. Geef de logboekregistratie op.
    1. Configureer de overige parameters naar wens.
 
-1. Maak een nieuw exemplaar van de Configuratie [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md).
+1. Maak een nieuwe instantie van de Configuratie [Apache Sling Logging Writer Configuration](/help/sites-deploying/osgi-configuration-settings.md).
 
    1. Geef het logbestand op. Dit moet overeenkomen met het logbestand dat is opgegeven voor de gebruiker.
    1. Configureer de overige parameters naar wens.
 
 >[!NOTE]
 >
->In bepaalde omstandigheden wilt u mogelijk een [aangepast logbestand](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file)maken.
+>In bepaalde omstandigheden wilt u wellicht een [aangepast logbestand](/help/sites-deploying/monitoring-and-maintaining.md#create-a-custom-log-file) maken.
 
