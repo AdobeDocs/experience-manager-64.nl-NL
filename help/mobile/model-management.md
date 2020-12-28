@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Modelbeheer omvat het maken en beheren van modellen om deze aan eventuele gegevensobjecten te koppelen. Elk model bevat alle eigenschappen en velddefinities die nodig zijn om het maken en renderen van objecten te vergemakkelijken.
 
@@ -52,7 +52,7 @@ Modellen worden gebruikt om te bepalen hoe entiteiten worden gemaakt. Zij bepale
 >Een model bestaat buiten een app omdat meerdere apps het kunnen gebruiken.
 
 
-Zie **[Modellen](/help/mobile/administer-mobile-apps.md)**om modellen te maken en te beheren in het dashboard en de opslagplaats.
+Zie **[Modellen](/help/mobile/administer-mobile-apps.md)** om modellen in het dashboard en de opslagplaats tot stand te brengen en te beheren.
 
 ### Entiteiten in inhoudsmodel {#entities-in-content-model}
 
@@ -62,7 +62,7 @@ In het geval van bestaande AEM wordt een entiteit gegenereerd met behulp van een
 
 Wijzigingen in de inhoud van een entiteit waarnaar wordt verwezen, resulteren in een wijziging van de entiteit. Als bijvoorbeeld een *cq:page* wordt bijgewerkt, worden alle entiteiten die op die pagina zijn gebaseerd ook bijgewerkt.
 
-Zie **[Werken met entiteiten](/help/mobile/spaces-and-entities.md)**om aangepaste entiteiten te maken op basis van modellen.
+Zie **[Werken met entiteiten](/help/mobile/spaces-and-entities.md)** om aangepaste entiteiten te maken van modellen.
 
 >[!NOTE]
 >
@@ -77,7 +77,7 @@ Aan de AEM kant is een spatie een handige manier om verwante entiteiten te beher
 
 *Bijvoorbeeld*,
 
-Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alleen voor intern gebruik, het andere is goedgekeurd voor openbaar gebruik en het derde is nog steeds voor algemene entiteiten die door veel apps worden gebruikt. Om het gemakkelijk te beheren, creeert de gebruiker drie ruimten, namelijk *intern*, *openbaar* (met zowel Engelse als Franse inhoud), en *gemeenschappelijk* voor het beheren van de aangewezen entiteiten zoals hieronder vermeld:
+Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alleen voor intern gebruik, het andere is goedgekeurd voor openbaar gebruik en het derde is nog steeds voor algemene entiteiten die door veel apps worden gebruikt. Om het gemakkelijk te maken te beheren, creeert de gebruiker drie ruimten: *internal*, *public* (met zowel Engelse als Franse inhoud), en *common* voor het beheren van de aangewezen entiteiten zoals hieronder vermeld:
 
 * /content/entities/internal
 * /content/entities/public/nl
@@ -86,7 +86,7 @@ Een gebruiker heeft drie algemene classificaties van entiteiten. Het ene is alle
 
 Een de diensteindpunt zal aan de ruimte worden verstrekt zodat kan de inheemse cliëntbibliotheek om een lijst van de inhoud van een ruimte verzoeken. Deze &#39;aanbieding&#39; wordt geretourneerd als een JSON-object.
 
-Zie **[Spaties en Entiteiten](/help/mobile/spaces-and-entities.md)**voor het maken en publiceren van spaties.
+Zie **[Spaties en entiteiten](/help/mobile/spaces-and-entities.md)** voor het maken en publiceren van spaties.
 
 >[!NOTE]
 >
@@ -96,4 +96,4 @@ Zie **[Spaties en Entiteiten](/help/mobile/spaces-and-entities.md)**voor het mak
 
 De omslagen staan gebruikers toe om entiteiten te organiseren zoals vereist en vergemakkelijkt fijnere ACL controle. Spaties kunnen mappen bevatten voor een betere organisatie van de inhoud en elementen van de ruimte. Een gebruiker kan een eigen hiërarchie onder een spatie maken.
 
-Zie **[Werken met mappen in een ruimte](/help/mobile/spaces-and-entities.md)**om mappen in een ruimte te maken en te beheren.
+Zie **[Werken met mappen in een spatie](/help/mobile/spaces-and-entities.md)** om mappen in een spatie te maken en te beheren.
