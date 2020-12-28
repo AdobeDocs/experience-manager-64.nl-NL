@@ -18,83 +18,83 @@ ht-degree: 0%
 ---
 
 
-# Offloader middelenwerkstroom{#assets-workflow-offloader}
+# Offloader voor werkstroom van middelen{#assets-workflow-offloader}
 
 Met de Offloader van de workflow Middelen kunt u meerdere instanties van Adobe Experience Manager (AEM) Assets inschakelen om de verwerkingsbelasting van de primaire instantie (leader) te verminderen. De verwerkingsbelasting wordt verdeeld over de instantie leader en de verschillende instanties offloader (worker) die u eraan toevoegt. Door de verwerkingsbelasting van elementen te verdelen, verhoogt u de efficiëntie en snelheid waarmee AEM Assets elementen verwerkt. Daarnaast kunt u speciale bronnen toewijzen om elementen van een bepaald MIME-type te verwerken. Bijvoorbeeld, kunt u een specifieke knoop in uw topologie toewijzen om de activa van InDesign slechts te verwerken.
 
-## Offloader-topologie configureren {#configure-offloader-topology}
+## Offloader-topologie {#configure-offloader-topology} configureren
 
 Gebruik Configuration Manager om de URL voor de instantie leader en de hostnamen van instanties van offloader toe te voegen voor verbindingsaanvragen voor de instantie leader.
 
 1. Tik/klik op het AEM en kies **Gereedschappen** > **Bewerkingen** > **Webconsole** om Configuratiebeheer te openen.
-1. Selecteer in de webconsole **Sling** > **Topologiebeheer**.
+1. Selecteer **Sling** > **Topologiebeheer** in de webconsole.
 
    ![chlimage_1-44](assets/chlimage_1-44.png)
 
-1. Tik/klik op de koppeling Discovery. **Oak Service** configureren op de pagina Topology Management.
+1. Tik/klik op de koppeling **Discovery.Oak Service** configureren op de pagina Topology Management.
 
    ![chlimage_1-45](assets/chlimage_1-45.png)
 
-1. Op de pagina van de Configuratie van de Dienst van de Ontdekking, specificeer schakelaar URL voor de leaderinstantie op het gebied van **Topology Connector URLs** .
+1. Op de pagina van de Configuratie van de Dienst van de Ontdekking, specificeer de schakelaar URL voor de leaderinstantie in **de Schakelaar URLs van de Topologie** gebied.
 
    ![chlimage_1-46](assets/chlimage_1-46.png)
 
-1. In het veld Whitelist van **topologieconnector** geeft u IP-adres of hostnamen van offloader-instanties op die verbinding mogen maken met de leaderinstantie. Tik/klik op **Opslaan**.
+1. Geef in het veld **Whitelist voor topologieconnector** IP-adres of hostnamen op van offloader-instanties die mogen worden verbonden met de leaderinstantie. Tik/klik **Opslaan**.
 
    ![chlimage_1-47](assets/chlimage_1-47.png)
 
-1. Ga naar **Gereedschappen** > **Implementatie** > **Topologie** en tik/klik op de clusterweergave om de offloader-instanties weer te geven die zijn verbonden met de instantie van de leader.
+1. Als u de offloader-instanties wilt zien die zijn aangesloten op de leader-instantie, gaat u naar **Tools** > **Implementatie** > **Topology** en tikt/klikt u op de clusterweergave.
 
-## Offloading uitschakelen {#disable-offloading}
+## Offloading {#disable-offloading} uitschakelen
 
-1. Tik/klik op het AEM en kies **Gereedschappen** > **Implementatie** > **Offloaden**. Op de pagina **Offloading Browser** worden onderwerpen en de serverinstanties weergegeven die de onderwerpen kunnen gebruiken.
+1. Tik/klik op het AEM en kies **Extra** > **Implementatie** > **Offloaden**. Op de pagina **Offloading Browser** worden onderwerpen en de serverinstanties weergegeven die de onderwerpen kunnen gebruiken.
 
    ![chlimage_1-48](assets/chlimage_1-48.png)
 
-1. Schakel het onderwerp *com/adobe/granite/workflow/offloading* op de leaderinstanties uit waarmee gebruikers communiceren om AEM elementen te uploaden of te wijzigen.
+1. Schakel het *com/adobe/granite/workflow/offloading*-onderwerp op de leaderinstanties uit waarmee gebruikers communiceren om AEM middelen te uploaden of te wijzigen.
 
    ![chlimage_1-49](assets/chlimage_1-49.png)
 
 ## Workflowdraagraketten configureren op de leaderinstantie {#configure-workflow-launchers-on-the-leader-instance}
 
-Configureer workflowstartprogramma&#39;s om de workflow voor het ontladen **van bedrijfsmiddelen bij** DAM Update op de leaderinstantie te gebruiken in plaats van de workflow voor **Dam Update Asset** .
+Configureer workflowdraagprogramma&#39;s om de **DAM Update Asset Offloading**-workflow op de leaderinstantie te gebruiken in plaats van de **Dam Update Asset**-workflow.
 
-1. Tik/klik op het AEM logo en kies **Gereedschappen** > **Workflow** > **Launchers** om de **Workflowstartconsole** te openen.
+1. Tik/klik op het AEM en kies **Tools** > **Workflow** > **Launchers** om de **Workflow Launchers**-console te openen.
 
    ![chlimage_1-50](assets/chlimage_1-50.png)
 
-1. Zoek de twee configuraties van Launcher met respectievelijk **Node Created** en **Node Modified** van het gebeurtenistype **, die de workflow van de Elementen** van de Update vanDAM in werking stellen.
-1. Schakel voor elke configuratie het selectievakje in en tik op het pictogram **Weergave-eigenschappen** op de werkbalk om het dialoogvenster **Opstarteigenschappen** weer te geven.
+1. Zoek de twee configuraties van Launcher met het gebeurtenistype **Gemaakt knooppunt** en **Gewijzigd knooppunt**, die de **DAM Update Asset**-workflow uitvoeren.
+1. Voor elke configuratie, selecteer checkbox vóór het en tik/klik het **pictogram van Eigenschappen van de Mening** van de toolbar om **de Eigenschappen van de Lanceerinrichting** te tonen.
 
    ![chlimage_1-51](assets/chlimage_1-51.png)
 
-1. Kies in de lijst **Workflow** de optie **DAM Asset Offloading** bijwerken en tik/klik op **Opslaan**.
+1. Kies in de lijst **Workflow** de optie **DAM-update Asset Offloading** en tik/klik op **Save**.
 
    ![chlimage_1-52](assets/chlimage_1-52.png)
 
-1. Tik/klik op het AEM en kies **Gereedschappen** > **Workflow** > **Modellen** om de pagina **Workflowmodellen** te openen.
-1. Selecteer de workflow voor het ontladen **van** DAM-elementen bijwerken en tik op de werkbalk op **Bewerken** of klik op Bewerken om de details weer te geven.
+1. Tik/klik op het AEM en kies **Tools** > **Workflow** > **Modellen** om de pagina **Workflowmodellen** te openen.
+1. Selecteer de **DAM Update Asset Offloading**-workflow en tik/klik **Edit** op de werkbalk om de details weer te geven.
 
    ![chlimage_1-53](assets/chlimage_1-53.png)
 
-1. Geef het contextmenu weer voor de stap **DAM Workflow Offloading** en kies **Edit**. Verifieer de ingang op het gebied van het Onderwerp van de **Baan** van de Baan van het **Algemene lusje van Argumenten** van de configuratiedialoog.
+1. Geef het contextmenu weer voor de stap **DAM Workflow Offloading** en kies **Edit**. Verifieer de ingang in **Taakonderwerp** gebied van **Algemene Argumenten** lusje van de configuratiedialoog.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-## Workflowstartprogramma&#39;s uitschakelen op offloader-instanties {#disable-the-workflow-launchers-on-the-offloader-instances}
+## Schakel de draagraketten voor de workflow op offloader-instanties {#disable-the-workflow-launchers-on-the-offloader-instances} uit
 
-Schakel de workflowstartprogramma&#39;s uit die de workflow **DAM Update Asset** uitvoeren op de leaderinstantie.
+Schakel de workflowdraagprogramma&#39;s uit die de **DAM Update Asset**-workflow op de leaderinstantie uitvoeren.
 
-1. Tik/klik op het AEM logo en kies **Gereedschappen** > **Workflow** > **Launchers** om de **Workflowstartconsole** te openen.
+1. Tik/klik op het AEM en kies **Tools** > **Workflow** > **Launchers** om de **Workflow Launchers**-console te openen.
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-1. Zoek de twee configuraties van Launcher met respectievelijk **Node Created** en **Node Modified** van het gebeurtenistype **, die de workflow van de Elementen** van de Update vanDAM in werking stellen.
-1. Schakel voor elke configuratie het selectievakje in en tik op het pictogram **Weergave-eigenschappen** op de werkbalk om het dialoogvenster **Opstarteigenschappen** weer te geven.
+1. Zoek de twee configuraties van Launcher met het gebeurtenistype **Gemaakt knooppunt** en **Gewijzigd knooppunt**, die de **DAM Update Asset**-workflow uitvoeren.
+1. Voor elke configuratie, selecteer checkbox vóór het en tik/klik het **pictogram van Eigenschappen van de Mening** van de toolbar om **de Eigenschappen van de Lanceerinrichting** te tonen.
 
    ![chlimage_1-56](assets/chlimage_1-56.png)
 
-1. Sleep in de sectie **Activate **de schuifregelaar om de werkstroomopstarter uit te schakelen en tik op **Opslaan** of klik op Opslaan om deze uit te schakelen.
+1. In **Activeer **sectie, sleep de schuif om de werkschemalancerer onbruikbaar te maken en te tikken/klik **sparen** om het onbruikbaar te maken.
 
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
