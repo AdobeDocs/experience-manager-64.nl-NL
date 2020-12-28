@@ -31,5 +31,5 @@ Merk op dat u de mogelijkheden van de Search&amp;Promote slechts kunt gebruiken 
 
 >[!NOTE]
 >
->Details over het toevoegen van Search&amp;Promote-functies aan uw pagina zijn beschikbaar in de klassieke documentatie voor het maken van gebruikersinterface. Zie Zoeken- en promotiefuncties [toevoegen aan uw pagina](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) voor meer informatie.
+>Details over het toevoegen van Search&amp;Promote aan uw pagina zijn beschikbaar in de klassieke UI-ontwerpdocumentatie. Zie [Zoekfuncties toevoegen aan uw pagina](/help/sites-classic-ui-authoring/classic-feature-search-promote.md) voor meer informatie.
 
