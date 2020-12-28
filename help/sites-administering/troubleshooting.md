@@ -28,7 +28,7 @@ CRX registreert gedetailleerde logboeken. Nadat u QuickStart hebt uitpakken en g
 * crx-quickstart/server/logs
 * crx-quickstart/logs
 
-## Het FOUTOPSPORINGSlogniveau activeren {#activating-the-debug-log-level}
+## Het FOUTOPSPORINGSlogniveau {#activating-the-debug-log-level} activeren
 
 Het standaardlogboekniveau is INFO, dat wil zeggen, worden de DEBUG- berichten niet geregistreerd.
 
