@@ -22,22 +22,22 @@ ht-degree: 0%
 
 Als u wilt definiëren welke configuraties voor tests moeten worden gebruikt, moet u het volgende in overweging nemen:
 
-**Ontwikkeling** - voor Eenheid, en bepaalde tests van de Integratie.
+**Ontwikkeling**  - voor Eenheid, en bepaalde tests van de Integratie.
 
-**Testen** - Voor het grootste deel van de tests.
+**Testen**  - Voor het grootste deel van de tests.
 
-**Live** - Voor de eindprestaties en stresstests. Ook voor goedkeuringstests met de klant.
+**Actief**  - Voor de eindprestaties en stresstests. Ook voor goedkeuringstests met de klant.
 
 U moet ook bepalen welke instanties u nodig hebt (meestal ten minste één voor alle testniveaus):
 
-**Auteur** - Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
+**Auteur**  - Met deze instantie kunnen auteurs inhoud invoeren en publiceren.
 
-**Publiceren** - Deze instantie presenteert de website in de gepubliceerde vorm voor toegang van bezoekers.
+**Publiceren**  - Deze instantie presenteert de website in de gepubliceerde vorm voor toegang van bezoekers.
 
 Moet worden getest in combinatie met de Dispatcher.
 
 Ten slotte moet de werkelijke hardware in overweging worden genomen: eventuele prestatietests moeten worden uitgevoerd op een systeem dat zo dicht mogelijk bij de uiteindelijke live omgeving ligt. Daarom wordt ook aanbevolen het project te starten in een:
 
-**Zachte lancering** - verminderde beschikbaarheid; die tijd voor prestatietests, afstelling en optimalisering in realistische omstandigheden op de productieomgeving mogelijk maakt.
+**Zachte lancering**  - verminderde beschikbaarheid; die tijd voor prestatietests, afstelling en optimalisering in realistische omstandigheden op de productieomgeving mogelijk maakt.
 
-**Harde start** - volledige beschikbaarheid.
+**Harde start** : volledige beschikbaarheid.
