@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Best practices voor het testen van prestaties{#best-practices-for-performance-testing}
+# Beste praktijken voor het Testen van Prestaties{#best-practices-for-performance-testing}
 
 ## Inleiding {#introduction}
 
@@ -56,96 +56,96 @@ Er zijn veel commercieel verkrijgbare hulpmiddelen voor het testen van prestatie
 
 #### Testgereedschappen {#testing-tools}
 
-* Met het gereedschap **Dag** van de Adobe kunt u belasting genereren op AEM en prestatiegegevens verzamelen. Het AEM engineeringteam van Adobe gebruikt het gereedschap voor het testen van de belasting van het AEM product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Raadpleeg de documentatie [van](/help/sites-developing/tough-day.md)Tough Day voor meer informatie.
+* Met het gereedschap **Tough Day** van Adobe kunt u belasting genereren op AEM instanties en prestatiegegevens verzamelen. Het AEM engineeringteam van Adobe gebruikt het gereedschap voor het testen van de belasting van het AEM product zelf. De scripts die op de Dag van de Hoek worden uitgevoerd, worden gevormd via bezitsdossiers en JMX XML- dossiers. Raadpleeg de [Tough Day documentatie](/help/sites-developing/tough-day.md) voor meer informatie.
 
-* AEM verstrekt uit de vakhulpmiddelen om problematische vragen, verzoeken en foutenmeldingen snel te zien. Zie de sectie [Diagnosetools](/help/sites-administering/operations-dashboard.md#diagnosis-tools) in de documentatie van het vluchthandboek voor meer informatie.
+* AEM verstrekt uit de vakhulpmiddelen om problematische vragen, verzoeken en foutenmeldingen snel te zien. Zie de sectie [Diagnosesystemen](/help/sites-administering/operations-dashboard.md#diagnosis-tools) van de documentatie van het vluchthandboek voor meer informatie.
 * Apache biedt een product met de naam **JMeter** dat kan worden gebruikt voor prestatie- en belastingtests en functioneel gedrag. Het is open-sourcesoftware en vrij te gebruiken, maar heeft een kleinere functieset dan bedrijfsproducten en een steile leercurve. JMeter is te vinden op de website van Apache op [https://jmeter.apache.org/](https://jmeter.apache.org/)
 
-* **Load Runner** is een testproduct voor het laden van bedrijfsniveau. Er is een gratis evaluatieversie beschikbaar. Meer informatie is te vinden op [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
+* **Load** Runner is een testproduct voor het laden van bedrijfsniveau. Er is een gratis evaluatieversie beschikbaar. Meer informatie vindt u op [https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview](https://www.microfocus.com/en-us/products/loadrunner-load-testing/overview)
 
-* U kunt ook gereedschappen voor laadtests op basis van cloud gebruiken, zoals [Neustar](https://www.neustar.biz/services/web-performance/load-testing) .
-* Wanneer het gaat om het testen van mobiele of responsieve websites, moet een aparte set hulpmiddelen worden gebruikt. They work by throttling network bandwidth, simulating slower mobile connections like 3G or EDGE. Among the more widely used tools are:
+* U kunt ook hulpprogramma&#39;s voor het testen van belasting op wolken gebruiken, zoals [Neustar](https://www.neustar.biz/services/web-performance/load-testing).
+* Wanneer het gaat om het testen van mobiele of responsieve websites, moet een aparte set hulpmiddelen worden gebruikt. Ze werken door de netwerkbandbreedte te vertragen, waardoor langzamere mobiele verbindingen zoals 3G of EDGE worden gesimuleerd. Een van de meer gebruikte instrumenten is:
 
-   * **[Network Link Conditioner](https://nshipster.com/network-link-conditioner/)**- it provides an easy to use UI and works at a fairly low level on the networking stack. It includes versions for OS X and iOS;[](https://nshipster.com/network-link-conditioner/)
-   * [**Charles **](https://www.charlesproxy.com/)- een Web het zuiveren volmachtstoepassing die naast verscheidene andere toepassingen, netwerkthrottling verstrekt. Versies zijn beschikbaar voor Windows, OS X en Linux.[](https://www.charlesproxy.com/)
+   * **[De Voorwaarde](https://nshipster.com/network-link-conditioner/)**  van de Verbinding van het netwerk - het verstrekt gemakkelijk om UI te gebruiken en werkt op een vrij laag niveau op de voorzien van een netwerkstapel. Het omvat versies voor OS X en iOS; [](https://nshipster.com/network-link-conditioner/)
+   * [**Charles**](https://www.charlesproxy.com/)  - een Web het zuiveren volmachtstoepassing die naast verscheidene andere toepassingen, netwerkthrottling verstrekt. Versies zijn beschikbaar voor Windows, OS X en Linux. [](https://www.charlesproxy.com/)
 
-#### Optimalisatieprogramma&#39;s {#optimization-tools}
+#### Optimalisatieprogramma {#optimization-tools}
 
 **Bewaking**
 
-De documentatie van de Prestaties [van de](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) Controle is een goede middel voor hulpmiddelen en methodes die kunnen worden gebruikt om kwestie en puntgebieden voor het stemmen te diagnostiseren.
+De [documentatie van de Controle van Prestaties](/help/sites-deploying/monitoring-and-maintaining.md#monitoring-performance) is een goede middel voor hulpmiddelen en methodes die kunnen worden gebruikt om kwestie en puntgebieden voor het stemmen te diagnostiseren.
 
 **Modus voor ontwikkelaars in Touch UI**
 
-Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface om de rendertijd voor elk van de componenten op de pagina te zien en stacksporen van eventuele fouten te zien. Zie deze [CQ Gems-presentatie](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html)voor meer informatie over de modus Ontwikkelaar.
+Een van de nieuwe functies in de aanraakinterface van AEM 6 is de Developer Mode. Net zoals ontwerpers kunnen schakelen tussen bewerkings- en voorvertoningsmodi, kunnen ontwikkelaars overschakelen naar de modus voor ontwikkelaars in de gebruikersinterface om de rendertijd voor elk van de componenten op de pagina te zien en stacksporen van eventuele fouten te zien. Voor meer informatie over ontwikkelaarwijze, zie deze [CQ Gems presentatie](https://docs.adobe.com/content/ddc/en/gems/aem-6-0-developer-mode.html).
 
 **Het gebruiken van rlog.jar om de verzoeklogboeken te lezen**
 
-Voor een uitgebreidere analyse van de aanvraag meldt u zich aan bij een AEM, `rlog.jar` kunt u de `request.log` bestanden die AEM genereert doorzoeken en sorteren. Dit jar-bestand wordt samen met een AEM in de `/crx-quickstart/opt/helpers` map geïnstalleerd. Voor meer informatie over rlog hulpmiddel en het verzoeklogboek in het algemeen, zie de [Controle en het Onderhouden](/help/sites-deploying/monitoring-and-maintaining.md) documentatie.
+Voor een uitvoerigere analyse van het verzoek logt op een AEM systeem, `rlog.jar` kan worden gebruikt om door te zoeken en de `request.log` dossiers te sorteren die AEM produceert. Dit jar dossier is inbegrepen met een AEM installatie in `/crx-quickstart/opt/helpers` omslag. Raadpleeg de documentatie [Bewaking en onderhoud](/help/sites-deploying/monitoring-and-maintaining.md) voor meer informatie over het logprogramma en het aanmelden van aanvragen in het algemeen.
 
 **Het gereedschap Uitleg query**
 
-Het [Uitdrukkelijke hulpmiddel](/help/sites-administering/operations-dashboard.md#explain-query) van de Vraag in ACS AEM Hulpmiddelen kan worden gebruikt om de indexen te bekijken die wanneer het runnen van een vraag worden gebruikt. Dit kan zeer nuttig zijn wanneer het optimaliseren van langzaam lopende vragen.
+[Verklaar het hulpmiddel van de Vraag](/help/sites-administering/operations-dashboard.md#explain-query) in Hulpmiddelen ACS AEM kan worden gebruikt om de indexen te bekijken die wanneer het runnen van een vraag worden gebruikt. Dit kan zeer nuttig zijn wanneer het optimaliseren van langzaam lopende vragen.
 
 **PageSpeed-gereedschappen**
 
-De PageSpeed-programma&#39;s van Google bieden een siteanalyse voor het volgen van de aanbevolen procedures voor paginaprestaties en een insteekmodule die naast de dispatcher op een Apache-instantie kan worden geïnstalleerd voor extra optimalisaties. Zie de website [PageSpeed Tools voor meer informatie](https://developers.google.com/speed/pagespeed/).
+De PageSpeed-programma&#39;s van Google bieden een siteanalyse voor het volgen van de aanbevolen procedures voor paginaprestaties en een insteekmodule die naast de dispatcher op een Apache-instantie kan worden geïnstalleerd voor extra optimalisaties. Zie [Website Paginasthulpmiddelen](https://developers.google.com/speed/pagespeed/) voor meer informatie.
 
 ## Auteursomgeving {#author-environment}
 
-### Performing Tests {#performing-tests}
+### Tests {#performing-tests} uitvoeren
 
 Voor het uitvoeren van prestatietests in de auteursomgeving is het nodig dat u de ervaring van productiefouteurs simuleert. Dit betekent dat de auteursinstallaties alle componenten, bundels OSGi, UI aanpassing, douaneindexes en andere toevoegingen moeten bevatten u voor de instanties van de productiesauteur op zijn plaats hebt.
 
-There are many automation frameworks available that are designed for performance and load testing. Custom scripts can be recorded in these tools and then played back to simulate a peak number of authors performing similar content creation and activation activities simultaneously. U wordt aangeraden het gereedschap Onvoldoende dag te gebruiken om activiteiten te simuleren, zoals het uploaden van duizenden elementen of het activeren van een groot aantal pagina&#39;s.
+Er zijn vele automatiseringskaders beschikbaar die voor prestaties en lading het testen worden ontworpen. Aangepaste scripts kunnen in deze gereedschappen worden opgenomen en vervolgens worden afgespeeld om een piekaantal auteurs te simuleren die tegelijkertijd vergelijkbare activiteiten voor het maken en activeren van inhoud uitvoeren. U wordt aangeraden het gereedschap Onvoldoende dag te gebruiken om activiteiten te simuleren, zoals het uploaden van duizenden elementen of het activeren van een groot aantal pagina&#39;s.
 
-For the types of environments that have requirements of heavy asset loading or page authoring it is imperative to use tools like Tough Day in order to ensure that the environment will operate efficiently under peak load. [WebDAV](/help/sites-administering/webdav-access.md) is een hulpmiddel dat geen scripting vereist en kan ook worden gebruikt om grote hoeveelheden activa te laden.
+Voor de soorten milieu&#39;s die vereisten van zwaar activa laden of pagina creatie hebben is het noodzakelijk om hulpmiddelen zoals Dag te gebruiken om ervoor te zorgen dat het milieu efficiënt onder piekbelasting zal werken. [](/help/sites-administering/webdav-access.md) WebDAV is een hulpprogramma waarvoor geen scripts nodig zijn en dat ook kan worden gebruikt om grote hoeveelheden elementen te laden.
 
-#### MongoDB Specific Steps {#mongodb-specific-steps}
+#### Specifieke stappen {#mongodb-specific-steps} voor MongoDB
 
-On systems with MongoDB backends, AEM provides several [JMX](/help/sites-administering/jmx-console.md) MBeans that need to be monitored when performing load or performance tests:
+Op systemen met MongoDB-backends biedt AEM verschillende [JMX](/help/sites-administering/jmx-console.md) MBans die moeten worden gecontroleerd bij het uitvoeren van belasting- of prestatietests:
 
-* The **Consolidated Cache Statistics** MBean. Het kan direct worden betreden door te gaan:
+* De **Geconsolideerde Cachestatistieken** MBean. Het kan direct worden betreden door te gaan:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D6%2Cname%3D%22Consolidated+Cache+statistics%22%2Ctype%3D%22ConsolidatedCacheStats%22`
 
-For the cache named **Document-Diff**, the hit rate should be over `.90`. If the hit rate falls below 90%, it is likely that you will need to modify your `DocumentNodeStoreService` configuration. Adobe product support can recommend optimal settings for your environment.
+Voor het cachegeheugen **Document-Diff**, moet de detectiesnelheid boven `.90` liggen. Als het raakpercentage lager is dan 90%, is het waarschijnlijk dat u de configuratie `DocumentNodeStoreService` moet wijzigen. Ondersteuning van Adobe-producten kan optimale instellingen voor uw omgeving aanbevelen.
 
-* The **Oak Repository Statistics** Mbean. Het kan direct worden betreden door te gaan:
+* De **Statistieken van de opslagplaats voor eik** maboon. Het kan direct worden betreden door te gaan:
 
 `https://server:port/system/console/jmx/org.apache.jackrabbit.oak%3Aid%3D16%2Cname%3D%22Oak+Repository+Statistics%22%2Ctype%3D%22RepositoryStats%22`
 
-The **ObservationQueueMaxLength** section will show the number of events in Oak’s observation queue over the last hours, minutes, seconds and weeks. Find the largest number of events in the &quot;per hour&quot; section. This number needs to be compared to the `oak.observation.queue-length` setting which can be found in the **SlingRepositoryManager** component in the [OSGi console](/help/sites-deploying/web-console.md). If the highest number shown for the observation queue exceeds the `queue-length` setting, contact Adobe Support for assistance with raising the setting. The default setting is 1,000, but most deployments usually need to raise it to 20,000 or 50,000.
+In de sectie **ObservationQueueMaxLength** wordt het aantal gebeurtenissen in de waarnemingswachtrij van Oak gedurende de laatste uren, minuten, seconden en weken weergegeven. Zoek het grootste aantal gebeurtenissen in de sectie &#39;per uur&#39;. Dit getal moet worden vergeleken met de `oak.observation.queue-length`-instelling die kan worden gevonden in de **SlingRepositoryManager**-component in de [OSGi-console](/help/sites-deploying/web-console.md). Als het hoogste aantal dat voor de waarnemingsrij wordt getoond `queue-length` het plaatsen overschrijdt, contacteer de Steun van Adobe voor hulp bij het verhogen van het plaatsen. De standaardinstelling is 1.000, maar de meeste implementaties moeten deze meestal verhogen tot 20.000 of 50.000.
 
-## Publicatie-omgeving {#publish-environment}
+## Omgeving {#publish-environment} publiceren
 
-### Performing Tests {#performing-tests-1}
+### Tests {#performing-tests-1} uitvoeren
 
-The most important part of a deployment that needs to be subjected to load tests is the end user facing publish or dispatcher environment.
+Het belangrijkste onderdeel van een implementatie dat moet worden onderworpen aan laadtests, is de eindgebruiker die wordt geconfronteerd met een publicatie- of verzendomgeving.
 
-Third party automated testing tools can be used to test the performance of the website. These tools will allow you to record steps that users will go through on the site and run many of these sessions at the same time to simulate the load that is typical of a production website.
+Automatische testtools van andere bedrijven kunnen worden gebruikt om de prestaties van de website te testen. Met deze gereedschappen kunt u stappen opnemen die gebruikers op de site doorlopen en een groot aantal van deze sessies tegelijk uitvoeren om het standaardladen van een productiewebsite te simuleren.
 
-Most production websites have optimizations in place like dispatcher caching and a content delivery network in place. When testing, you need to make sure that these optimizations are available for the test environment as well. In addition to monitoring response times for the end users, you also need to monitor system metrics on the publish servers and dispatchers to ensure that the system is not constrained by hardware resources.
+De meeste productiewebsites beschikken over optimalisaties, zoals caching door verzenders en een netwerk voor het leveren van inhoud. Bij het testen moet u ervoor zorgen dat deze optimalisaties ook beschikbaar zijn voor de testomgeving. Naast het controleren van reactietijden voor de eindgebruikers, moet u ook systeemmetriek op publicatieservers en verzenders controleren om ervoor te zorgen dat het systeem niet door hardwaremiddelen wordt beperkt.
 
-On a system that does not require a high level of personalization, the dispatcher should cache most requests. As a result, the load on the publish instance should remain relatively flat. If a high level of personalization is required, it is recommended to use technologies such as iFrames or AJAX requests for the personalized content so as to allow as much dispatcher caching as possible.
+Op een systeem dat geen hoog niveau van verpersoonlijking vereist, zou de verzender de meeste verzoeken in het voorgeheugen onderbrengen. Als gevolg hiervan moet de belasting op het publicatieexemplaar relatief vlak blijven. Als een hoog niveau van verpersoonlijking wordt vereist, wordt het geadviseerd om technologieën zoals iFrames of AJAX verzoeken om de gepersonaliseerde inhoud te gebruiken om zoveel mogelijk verzender caching toe te staan.
 
-For basic tests, Apache Bench can be used to measure web server response times and help to create load for measuring things like memory leaks. For more see the example in the [Monitoring documentation](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench).
+Voor basistests kan Apache Bench worden gebruikt om responstijden van webservers te meten en om belasting te creëren voor het meten van zaken zoals geheugenlekken. Zie het voorbeeld in de [Monitoringdocumentatie](/help/sites-deploying/monitoring-and-maintaining.md#apache-bench) voor meer informatie.
 
-## Troubleshooting Performance Issues {#troubleshooting-performance-issues}
+## Problemen met prestaties oplossen {#troubleshooting-performance-issues}
 
-After running performance tests on the author instance, any issues will need to be investigated, diagnosed and addressed. U kunt verschillende gereedschappen en technieken gebruiken bij het uitvoeren van analyses en het aanpakken van problemen:
+Nadat u prestatietests op de auteur hebt uitgevoerd, moeten eventuele problemen worden onderzocht, gediagnosticeerd en opgelost. U kunt verschillende gereedschappen en technieken gebruiken bij het uitvoeren van analyses en het aanpakken van problemen:
 
-* U kunt het logboek [van de Prestaties van het](/help/sites-administering/operations-dashboard.md#request-performance) Verzoek in het Dashboard van Verrichtingen inspecteren. Dit gereedschap kan worden gebruikt om aanvragen voor langzame pagina&#39;s te identificeren
-* Langzame vragen analyseren met het gereedschap [Query-prestaties](/help/sites-administering/operations-dashboard.md#query-performance)
+* U kunt het [Logboek van Prestaties van het verzoek](/help/sites-administering/operations-dashboard.md#request-performance) in het Dashboard van Verrichtingen inspecteren. Dit gereedschap kan worden gebruikt om aanvragen voor langzame pagina&#39;s te identificeren
+* Analyseer langzame lopende vragen met [het hulpmiddel van de Prestaties van de Vraag](/help/sites-administering/operations-dashboard.md#query-performance)
 
-* Bekijk de foutlijst voor fouten of waarschuwingen. For more information, see [Logging](/help/sites-deploying/configure-logging.md)
+* Bekijk de foutlijst voor fouten of waarschuwingen. Voor meer informatie, zie [Registratie](/help/sites-deploying/configure-logging.md)
 * De hardwarebronnen van het systeem controleren, zoals geheugen en CPU-gebruik, schijf-I/O of netwerk-I/O. Deze middelen zijn vaak de oorzaken van prestatiesknelpunten
 * Optimaliseer de architectuur van de pagina&#39;s en hoe zij worden gericht om het gebruik van URL parameters te minimaliseren om voor zoveel mogelijk caching mogelijk toe te staan
-* Volg de documentatie over het optimaliseren van [prestaties](/help/sites-deploying/configuring-performance.md) en het afstemmen van [prestaties](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html)
+* Volg de [prestatieoptimalisatie](/help/sites-deploying/configuring-performance.md) en [Tips voor het afstemmen van prestaties](https://helpx.adobe.com/experience-manager/kb/performance-tuning-tips.html) documentatie
 
-* If issues are present with editing certain pages or components on author instances, use the TouchUI Developer Mode to inspect the page in question. Hierdoor wordt een uitsplitsing van elk inhoudsgebied op de pagina en de laadtijd gegenereerd
-* Minify all JS and CSS on the site. For more information on how to do this, see this [blog post](https://blogs.adobe.com/foxes/enable-js-and-css-minification/).
-* Eliminate embedded CSS and JS from the components. They should be included and minified with the client-side libraries to minimize the number of requests required to render the page
-* Use browser tools like Chrome’s Network tab to inspect the server requests and see which are taking the longest.
+* Als er problemen optreden bij het bewerken van bepaalde pagina&#39;s of componenten op auteur-instanties, gebruikt u de TouchUI-ontwikkelaarsmodus om de pagina in kwestie te inspecteren. Hierdoor wordt een uitsplitsing van elk inhoudsgebied op de pagina en de laadtijd gegenereerd
+* Alle JS en CSS op de site miniaturen. Zie dit [blogbericht](https://blogs.adobe.com/foxes/enable-js-and-css-minification/) voor meer informatie over hoe u dit kunt doen.
+* Elimineer ingesloten CSS en JS uit de componenten. Ze moeten worden opgenomen in en geminiatuurd op de bibliotheken aan de clientzijde om het aantal aanvragen te minimaliseren dat vereist is om de pagina weer te geven
+* Gebruik browsergereedschappen zoals het tabblad Netwerk van Chrome om de serveraanvragen te inspecteren en te zien welke de langste aanvragen uitvoeren.
 
-Once problem areas are identified, application code can be inspected for performance optimizations. Any out of the box AEM features that are not performing properly can be addressed with Adobe Support.
+Als probleemgebieden zijn geïdentificeerd, kan de toepassingscode worden gecontroleerd op optimalisatie van de prestaties. Om het even welke uit de doos AEM eigenschappen die niet behoorlijk presteren kunnen met de Steun van de Adobe worden behandeld.
