@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Het maken van een AEM Mobile On-demand Services-app is anders dan het rechtstreeks maken van een app in de shell Cordova (of PhoneGap). De ontwikkelaars zouden met moeten vertrouwd zijn:
 
@@ -41,7 +41,7 @@ Het maken van een AEM Mobile On-demand Services-app is anders dan het rechtstree
 
 * Sjablonen die plug-infunctionaliteit gebruiken, moeten zo worden geschreven dat ze nog steeds ontwerpbaar zijn in de browser, zonder dat de plug-inbridge aanwezig is.
 
-   * Wacht bijvoorbeeld op de functie *DeviceReady* voordat u toegang probeert te krijgen tot de API van een plug-in.
+   * Wacht bijvoorbeeld op de functie *deviceready* voordat u probeert toegang te krijgen tot de API van een plug-in.
 
 ## Richtlijnen voor AEM ontwikkelaars {#guidelines-for-aem-developers}
 
@@ -51,8 +51,8 @@ De volgende richtlijnen helpen ervaren AEM ontwikkelaars voor sites die sjablone
 
 * Meerdere componentscriptbestanden verkiezen boven één monolithische scriptbestand
 
-   * Er is een aantal lege extensiepunten opgegeven, zoals *customheaderlibs.html* en *customfooterlibs.html*, waarmee de ontwikkelaar het paginasjabloon kan wijzigen terwijl zo weinig mogelijk kerncode wordt gedupliceerd
-   * Sjablonen kunnen vervolgens worden uitgebreid en aangepast via de *sling van Sling:resourceSuperType* -mechanisme
+   * Er is een aantal lege extensiepunten opgegeven, zoals *customheaderlibs.html* en *customfooterlibs.html*, waarmee de ontwikkelaar de paginasjabloon kan wijzigen terwijl zo weinig mogelijk kerncode wordt gedupliceerd
+   * Sjablonen kunnen vervolgens worden uitgebreid en aangepast via het mechanisme *sling:resourceSuperType* van Sling
 
 * Rechtsom/HTML verkiezen boven JSP als sjabloontaal
 
@@ -66,7 +66,7 @@ De volgende richtlijnen helpen ervaren AEM ontwikkelaars voor sites die sjablone
 
 >[!NOTE]
 >
->U kunt [hier](https://developers.google.com/speed/docs/insights/BlockingJS)meer in detail leren over renderingblokkerende externe scripts.
+>U kunt meer in detail over teruggeven-blokkerende externe manuscripten [hier](https://developers.google.com/speed/docs/insights/BlockingJS) leren.
 
 **Voorkeur voor app-specifieke client JS- en CSS-bibliotheken boven webspecifieke bibliotheken**
 
@@ -75,20 +75,20 @@ De volgende richtlijnen helpen ervaren AEM ontwikkelaars voor sites die sjablone
 
 >[!NOTE]
 >
->Klik [hier](https://jquerymobile.com/browser-support/1.4/)voor meer informatie over jQuery Mobile.
+>Klik [hier](https://jquerymobile.com/browser-support/1.4/) voor meer informatie over jQuery Mobile.
 
 **De voorkeur geven aan microbibliotheken via volledige stapel**
 
 * De tijd die nodig is om de inhoud op het glas van het apparaat te krijgen, wordt vertraagd door elke bibliotheek waarvan uw artikelen afhankelijk zijn. Deze vertraging wordt vergroot wanneer een nieuwe webweergave wordt gebruikt om elk artikel te renderen. Elke bibliotheek moet dus opnieuw volledig worden geïnitialiseerd
-* Als uw artikelen niet zijn gebouwd als SPA&#39;s (apps met één pagina), hoeft u waarschijnlijk geen volledige stapelbibliotheek zoals Hoekig op te nemen
-* Voorkeur voor kleinere bibliotheken voor één doel om de interactiviteit toe te voegen die uw pagina nodig heeft, zoals [Fastclick](https://github.com/ftlabs/fastclick) of [Velocity.js](https://velocityjs.org)
+* Als uw artikelen niet als SPA zijn samengesteld (apps met één pagina), hoeft u waarschijnlijk geen volledige stapelbibliotheek zoals Hoek op te nemen
+* Voorkeur voor kleinere bibliotheken voor één doel om de interactiviteit toe te voegen die uw pagina vereist, zoals [Fastclick](https://github.com/ftlabs/fastclick) of [Velocity.js](https://velocityjs.org)
 
 **Grootte van artikellading minimaliseren**
 
 * Gebruik de kleinst mogelijke middelen die effectief de grootste viewport kunnen behandelen u, bij redelijke resolutie zult steunen
-* Gebruik een gereedschap zoals *ImageOptim* op uw afbeeldingen om eventuele overtollige metagegevens te verwijderen
+* Gebruik een hulpprogramma zoals *ImageOptim* op uw afbeeldingen om eventuele overtollige metagegevens te verwijderen
 
-## Aan de slag {#getting-ahead}
+## Vooruit halen {#getting-ahead}
 
 Zie de volgende bronnen voor meer informatie over de andere twee rollen en verantwoordelijkheden:
 
