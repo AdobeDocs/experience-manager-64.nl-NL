@@ -18,39 +18,39 @@ ht-degree: 1%
 
 ## AEM Sites {#aem-sites}
 
-AEM Sites is een contentbeheersysteem in Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Leer meer](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) of [graaf in enkele van onze nieuwe videofunctiezelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
+AEM Sites is een contentbeheersysteem binnen Adobe Experience Manager dat u één plaats biedt om digitale ervaringen op websites, mobiele sites en onsite schermen te maken, beheren en te leveren, zodat ze wereldwijd beschikbaar zijn, maar persoonlijk relevant en aantrekkelijk zijn. [Leer ](http://www.adobe.com/marketing-cloud/enterprise-content-management/web-cms.html) meer of  [graaf in enkele van onze nieuwe videofunctiezelfstudies.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
 
 ## AEM Assets {#aem-assets}
 
-Met AEM Assets kan uw organisatie eenvoudig digitale middelen maken, beheren, leveren en optimaliseren vanuit een cloudinfraplatform voor meerdere gebruikers. [Dig in enkele van onze nieuwe videoeigenschapleerprogramma&#39;s rond AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
+Met AEM Assets kan uw organisatie eenvoudig digitale middelen maken, beheren, leveren en optimaliseren vanuit een cloudinfraplatform voor meerdere gebruikers. [Meld u aan in enkele van onze nieuwe videozelfstudies rond AEM Assets.](https://helpx.adobe.com/experience-manager/kt/assets/index/aem-6-4-assets.html)
 
 * [Werken met AEM Assets](/help/assets/managing-assets-touch-ui.md)
 * [Werken met Dynamic Media](/help/assets/dynamic-media.md)
-* [Opmerkingen bij de release AEM Assets](/help/release-notes/assets.md)
+* [Opmerkingen bij de release van AEM Assets](/help/release-notes/assets.md)
 
 ## AEM Forms {#aem-forms}
 
 AEM biedt een gebruiksvriendelijke oplossing voor het maken, beheren, publiceren en bijwerken van complexe digitale formulieren en voor integratie met back-endprocessen, bedrijfsregels en gegevens.
 
-AEM Forms combineren formulierontwerp, -beheer en -publicatie in combinatie met mogelijkheden voor correspondentiebeheer, documentbeveiliging en geïntegreerde analyses om aantrekkelijke end-to-end ervaringen te creëren. [Dig in enkele van onze nieuwe videoeigenschapleerprogramma&#39;s voor AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-4-forms.html)
+AEM Forms combineert mogelijkheden voor formulierontwerp, -beheer en -publicatie in combinatie met mogelijkheden voor correspondentiebeheer, documentbeveiliging en geïntegreerde analyses om aantrekkelijke end-to-end ervaringen te creëren. [Bekijk enkele van onze nieuwe videozelfstudies voor AEM Forms.](https://helpx.adobe.com/experience-manager/kt/forms/index/aem-6-4-forms.html)
 
 * [Aan de slag met AEM Forms](/help/forms/using/introduction-aem-forms.md)
 * [Nieuwe functies in AEM Forms](/help/forms/using/whats-new.md)
-* [Architecten en topologieën in AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
-* [AEM Forms voor afstemmen van prestaties](/help/forms/using/performance-tuning-aem-forms.md)
+* [Architecturen en topologieën in AEM Forms](/help/forms/using/aem-forms-architecture-deployment.md)
+* [Prestaties afstemmen AEM Forms](/help/forms/using/performance-tuning-aem-forms.md)
 
 ## AEM Screens {#aem-screens}
 
-Schermen zijn een Adobe Experience Manager die u in staat stelt dynamische en interactieve digitale ervaringen en interacties met verschillende soorten schermen te publiceren in combinatie met een uitgebreid digitaal marketingplatform.  [Meer weten?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
+Schermen is een Adobe Experience Manager-mogelijkheid waarmee u dynamische en interactieve digitale ervaringen en interacties kunt publiceren waarbij verschillende soorten schermen betrokken zijn, in combinatie met een uitgebreid digitaal marketingplatform.  [Meer weten?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
 
 ## AEM Communities {#aem-communities}
 
-De gemeenschappen zijn een vermogen van de Adobe Experience Manager dat u online gemeenschapservaring met inbegrip van forums, gebruikersgroepen, het leren middelen, en andere sociale eigenschappen helpt tot stand brengen die voor klanten, werknemers, en uw merk waardevol zijn. [Meer weten?](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
+De Gemeenschappen zijn een Adobe Experience Manager-mogelijkheid waarmee u online gemeenschapservaringen kunt maken, zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies die van groot belang zijn voor klanten, werknemers en uw merk. [Meer weten?](http://www.adobe.com/marketing-cloud/enterprise-content-management/social-community-cms.html)
 
 ## AEM Livefyre {#aem-livefyre}
 
-AEM Livefyre is een geheel nieuwe Adobe Experience Manager die u in alles laat tikken die op het Web wordt gedeeld om een constante stroom van verse en kwalitatief hoogstaande inhoud op uw eigen plaatsen tot stand te brengen. [Meer](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) weten of [naar onze gidsen springen.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
+AEM Livefyre is een geheel nieuwe Adobe Experience Manager-mogelijkheid waarmee u alles kunt aantikken dat op het web wordt gedeeld om een constante stroom nieuwe en kwalitatief hoogwaardige inhoud op uw eigen sites te maken. [Leer ](http://www.adobe.com/marketing-cloud/enterprise-content-management/ugc-content-platform.html) meer of  [sprong recht in onze gidsen.](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/)
 
-## AEM Foundation {#aem-foundation}
+## AEM Stichting {#aem-foundation}
 
-Leer meer over de stichting [van de](/help/sites-deploying/home.md) Adobe Experience Manager 6.4 en ons beheerde model van de de dienstenplaatsing of duik in sommige van onze [nieuwe videointroducties aan de eigenschappen in deze versie.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
+Meer informatie over de [Adobe Experience Manager 6.4 foundation](/help/sites-deploying/home.md) en ons model voor beheerde services voor implementatie of duik in een aantal van onze [nieuwe video-introducties voor de functies in deze release.](https://helpx.adobe.com/experience-manager/kt/sites/index/aem-6-4-sites.html)
