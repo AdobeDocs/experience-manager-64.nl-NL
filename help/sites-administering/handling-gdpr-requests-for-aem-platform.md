@@ -15,21 +15,21 @@ ht-degree: 6%
 ---
 
 
-# Behandeling van GDPR-verzoeken aan de AEM Stichting{#handling-gdpr-requests-for-the-aem-foundation}
+# Behandeling van GDPR-verzoeken om de AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
 >[!IMPORTANT]
 >
 >GDPR wordt in de onderstaande secties als voorbeeld gebruikt, maar de betreffende details zijn van toepassing op alle regels inzake gegevensbescherming en privacy; zoals GDPR, CCPA enz.
 
-## Ondersteuning van AEM Foundation GDPR {#aem-foundation-gdpr-support}
+## Ondersteuning voor GDPR-basis AEM {#aem-foundation-gdpr-support}
 
 Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opgeslagen het Profiel van de Gebruiker. Daarom richt de informatie in dit artikel hoofdzakelijk hoe te om tot gebruikersprofielen toegang te hebben en te schrappen, om de verzoeken van de Toegang te richten GDPR en van de Schrapping respectievelijk.
 
-## Een gebruikersprofiel openen {#accessing-a-user-profile}
+## Een gebruikersprofiel {#accessing-a-user-profile} openen
 
 ### Handmatige stappen {#manual-steps}
 
-1. Open de console van het Beleid van de Gebruiker, door aan **[!UICONTROL Settings - Security - Users]** of rechtstreeks te doorbladeren aan `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html`
+1. Open de gebruikersbeheerconsole door naar **[!UICONTROL Settings - Security - Users]** te bladeren of rechtstreeks naar `https://<serveraddress>:<serverport>/libs/granite/security/content/useradmin.html` te bladeren
 
    ![useradmin2](assets/useradmin2.png)
 
@@ -37,11 +37,11 @@ Op het niveau van de AEM Stichting, zijn de Persoonlijke Gegevens die wordt opge
 
    ![gebruikerszoekopdracht](assets/usersearch.png)
 
-1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder het **[!UICONTROL Details]** lusje.
+1. Tot slot open het gebruikersprofiel door het te klikken, dan controle onder **[!UICONTROL Details]** tabel.
 
    ![userprofile_small](assets/userprofile_small.png)
 
-### HTTP API {#http-api}
+### HTTP-API {#http-api}
 
 Zoals vermeld, verstrekt Adobe APIs voor de toegang tot van gebruikersgegevens, om automatisering te vergemakkelijken. Er zijn verschillende typen API&#39;s die u kunt gebruiken:
 
@@ -72,9 +72,9 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profiles.-1.json'
 ```
 
-## Een gebruiker uitschakelen en de bijbehorende profielen verwijderen {#disabling-a-user-and-deleting-the-associated-profiles}
+## Een gebruiker uitschakelen en de bijbehorende profielen {#disabling-a-user-and-deleting-the-associated-profiles} verwijderen
 
-### Gebruiker uitschakelen {#disable-user}
+### Gebruiker {#disable-user} uitschakelen
 
 1. Open de console van het Beleid van de Gebruiker en onderzoek naar de gebruiker in kwestie, zoals hierboven beschreven.
 1. Houd de muisaanwijzer boven de gebruiker en klik op het pictogram Selecteren. Het profiel wordt grijs om aan te geven dat het is geselecteerd.
@@ -91,13 +91,13 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![gehandicapte gebruiker](assets/disableduser.png)
 
-### Gebruikersprofielgegevens verwijderen {#delete-user-profile-information}
+### Gebruikersprofielgegevens {#delete-user-profile-information} verwijderen
 
-1. Meld u aan bij CRXDE Lite en zoek vervolgens naar de `[!UICONTROL userId]`:
+1. Meld u aan bij CRXDE Lite en zoek vervolgens naar `[!UICONTROL userId]`:
 
    ![image2018-2-6_1-57-11](assets/image2018-2-6_1-57-11.png)
 
-1. Open het gebruikersknooppunt onder `[!UICONTROL /home/users]` standaard:
+1. Open het gebruikersknooppunt dat standaard onder `[!UICONTROL /home/users]` staat:
 
    ![image2018-2-6_1-58-25](assets/image2018-2-6_1-58-25.png)
 
@@ -108,7 +108,7 @@ curl -u user:password  'http://localhost:4502/home/users/we-retail/DSCP-athB1NYL
 
    ![image2018-2-6_2-0-4](assets/image2018-2-6_2-0-4.png)
 
-### HTTP API {#http-api-1}
+### HTTP-API {#http-api-1}
 
 In de volgende procedures wordt het opdrachtregelprogramma `curl` gebruikt om te tonen hoe u de gebruiker kunt uitschakelen met de **[!UICONTROL cavery]** `userId` en hoe u de profielen die beschikbaar zijn op de standaardlocatie, kunt verwijderen.
 
