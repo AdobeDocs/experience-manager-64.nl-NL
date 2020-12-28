@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # LDAP configureren met AEM 6 {#configuring-ldap-with-aem}
 
-LDAP (het **** Lightweight **** Directory **** Access **** Protocol) wordt gebruikt voor toegang tot gecentraliseerde directoryservices. Dit helpt de inspanning verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
+LDAP (de **L** rechter **D** directory **A** cess **P** Protocol) wordt gebruikt voor toegang tot gecentraliseerde directoryservices. Dit helpt de inspanning verminderen die wordt vereist om gebruikersrekeningen te beheren aangezien zij door veelvoudige toepassingen kunnen worden betreden. Een dergelijke LDAP-server is Active Directory. LDAP wordt vaak gebruikt om Single Sign On te bereiken, waardoor een gebruiker toegang heeft tot meerdere toepassingen nadat hij zich eenmaal heeft aangemeld.
 
 Gebruikersaccounts kunnen worden gesynchroniseerd tussen de LDAP-server en de gegevensopslagruimte, waarbij de gegevens van de LDAP-account worden opgeslagen in de gegevensopslagruimte. Hierdoor kunnen de accounts worden toegewezen aan groepen in de opslagplaats voor het toewijzen van de vereiste machtigingen en bevoegdheden.
 
@@ -43,15 +43,15 @@ Om LDAP te hebben werkend met AEM, moet u drie configuraties tot stand brengen O
 
 >[!NOTE]
 >
->Bekijk de externe aanmeldingsmodule van [Oak - Verificatie met LDAP en Beyond](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) tot diepe externe aanmeldingsmodules.
+>Bekijk [De externe aanmeldingsmodule van Oak - voor authentiek met LDAP en Beyond](https://docs.adobe.com/content/ddc/en/gems/oak-s-external-login-module---authenticating-with-ldap-and-beyon.html#) om de externe aanmeldingsmodules diep te duwen.
 >
->Zie Adobe Experience Manager 6.4 [configureren voor gebruik van Apache Directory Service voor meer informatie over het configureren van Experience Manager met Apache DS.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
+>Zie [Adobe Experience Manager 6.4 configureren om Apache Directory Service te gebruiken voor een voorbeeld van het configureren van Experience Manager met Apache DS.](https://helpx.adobe.com/experience-manager/using/configuring-aem64-apache-directory-service.html)
 
-## De LDAP-identiteitsprovider configureren {#configuring-the-ldap-identity-provider}
+## De LDAP-identiteitsprovider {#configuring-the-ldap-identity-provider} configureren
 
 De LDAP-identiteitsprovider wordt gebruikt om te definiëren hoe gebruikers worden opgehaald van de LDAP-server.
 
-Deze vindt u in de beheerconsole onder de naam **Apache Jackrabbit Oak LDAP Identity Provider** .
+Deze vindt u in de beheerconsole onder de naam **Apache Jackrabbit Oak LDAP Identity Provider**.
 
 De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider:
 
@@ -148,7 +148,7 @@ De volgende configuratieopties zijn beschikbaar voor de LDAP Identiteitsprovider
  </tbody> 
 </table>
 
-## Synchronisatie-handler configureren {#configuring-the-synchronization-handler}
+## De Synchronisatie-handler {#configuring-the-synchronization-handler} configureren
 
 De synchronisatiehandler definieert hoe de gebruikers en groepen van de identiteitsprovider worden gesynchroniseerd met de opslagplaats.
 
@@ -207,11 +207,11 @@ De volgende configuratieopties zijn beschikbaar voor de Synchronisatie-handler:
 
 ## De externe aanmeldingsmodule {#the-external-login-module}
 
-De externe aanmeldingsmodule bevindt zich onder de externe aanmeldingsmodule **voor** Apache Jackrabbit Oak in de beheerconsole.
+De externe aanmeldingsmodule bevindt zich onder **Apache Jackrabbit Oak External Login Module** onder de beheerconsole.
 
 >[!NOTE]
 >
->De Apache Jackrabbit Oak External Login Module implementeert de Java Authentication and Authorization Service (JAAS)-specificaties. Raadpleeg de [officiële Oracle Java Security Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie.
+>De Apache Jackrabbit Oak External Login Module implementeert de Java Authentication and Authorization Service (JAAS)-specificaties. Zie de [officiële Oracle Java Security Reference Guide](https://docs.oracle.com/javase/8/docs/technotes/guides/security/jaas/JAASRefGuide.html) voor meer informatie.
 
 Zijn baan moet bepalen welke Leverancier van de Identiteit en de Handler van de Synchronisatie aan gebruik, effectief binden de twee modules.
 
@@ -232,7 +232,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 AEM 6 kan worden gevormd om met LDAP over SSL voor authentiek te verklaren door de hieronder procedure te volgen:
 
-1. Schakel het selectievakje **SSL** gebruiken of TLS **** gebruiken in wanneer u de LDAP-identiteitsprovider [](#configuring-the-ldap-identity-provider)configureert.
+1. Schakel het selectievakje **SSL** of **TLS** gebruiken in wanneer u de [LDAP-identiteitsprovider](#configuring-the-ldap-identity-provider) configureert.
 1. Configureer de synchronisatiehandler en de module Externe aanmelding naar wens.
 1. Installeer indien nodig de SSL-certificaten in uw Java VM. Dit kan worden gedaan door keytool te gebruiken:
 
@@ -246,7 +246,7 @@ Zelfondertekende certificaten kunnen worden gebruikt wanneer u AEM configureert 
 
 1. Zorg ervoor dat u een SSL-bibliotheek hebt geïnstalleerd en werkt. Bij deze procedure wordt OpenSSL als voorbeeld gebruikt.
 
-1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Dit kan worden gedaan door het standaard **openssl.cnf **configuratiedossier te kopiëren en het aan te passen. Bij UNIX-systemen bevindt de locatie zich gewoonlijk op `/usr/lib/ssl/openssl.cnf`
+1. Maak een aangepast cnf-bestand (OpenSSL Configuration). Dit kan worden gedaan door het standaard **openssl.cnf **configuratiedossier te kopiëren en het aan te passen. Bij UNIX-systemen bevindt de software zich gewoonlijk op `/usr/lib/ssl/openssl.cnf`
 
 1. Ga aan het creëren van de wortelsleutel van CA door het hieronder bevel in een terminal in werking te stellen:
 
@@ -271,7 +271,7 @@ Zelfondertekende certificaten kunnen worden gebruikt wanneer u AEM configureert 
 
 1. Voeg ten slotte het certificaat toe aan het sleutelarchief van Java.
 
-## Foutopsporingsregistratie inschakelen {#enabling-debug-logging}
+## Foutopsporingslogbestand {#enabling-debug-logging} inschakelen
 
 Foutopsporingslogbestand kan worden ingeschakeld voor zowel de LDAP-identiteitsprovider als de externe aanmeldingsmodule om verbindingsproblemen op te lossen.
 
@@ -298,11 +298,11 @@ In de meeste gevallen, kunnen deze groepen zijn die door een lokale AEM beheerde
 
 Als een gebruiker uit een groep op de LDAP-server wordt verwijderd, wordt de wijziging ook aan de AEM kant doorgevoerd bij synchronisatie. Alle andere groepsrelaties van de gebruiker die niet door LDAP zijn toegevoegd, blijven echter wel van kracht.
 
-AEM detecteert en handelt de verwijdering van gebruikers van externe groepen af door gebruik te maken van de `rep:externalId` eigenschap. Dit bezit wordt automatisch toegevoegd aan om het even welke gebruiker of groep die door de Handler van de Synchronisatie wordt gesynchroniseerd en het bevat informatie over de voortkomende identiteitsleverancier.
+AEM detecteert en handelt de verwijdering van gebruikers uit externe groepen af door gebruik te maken van de eigenschap `rep:externalId`. Dit bezit wordt automatisch toegevoegd aan om het even welke gebruiker of groep die door de Handler van de Synchronisatie wordt gesynchroniseerd en het bevat informatie over de voortkomende identiteitsleverancier.
 
-Raadpleeg de documentatie bij Apache Oak over [gebruikers- en groepssynchronisatie](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html)voor meer informatie.
+Raadpleeg de documentatie bij Apache Oak over [Synchronisatie van gebruikers en groepen](https://jackrabbit.apache.org/oak/docs/security/authentication/usersync.html) voor meer informatie.
 
-## Known issues {#known-issues}
+## Bekende problemen {#known-issues}
 
 Als u LDAP wilt gebruiken via SSL, moet u ervoor zorgen dat de certificaten die u gebruikt, worden gemaakt zonder de Netscape-opmerkingsoptie. Als deze optie is ingeschakeld, mislukt de verificatie met een SSL Handshake-fout.
 
