@@ -77,7 +77,7 @@ Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Ge
 
 Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search Result` component:
 
-![chlimage_1-376](assets/chlimage_1-376.png)
+![chlimage_1-375](assets/chlimage_1-376.png)
 
 ### Het toegevoegde zoekresultaat configureren {#configure-the-added-search-result}
 
