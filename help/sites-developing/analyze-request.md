@@ -18,17 +18,17 @@ ht-degree: 1%
 ---
 
 
-# Analyse aanvragen{#request-analysis-script}
+# Analyse-script aanvragen{#request-analysis-script}
 
-## Downloaden {#download}
+## {#download} downloaden
 
-Dit script is gemaakt om de analyse te vereenvoudigen van de `access.log` bestanden die een leesbaar rapport voor latere verwerking produceren.
+Dit manuscript wordt gemaakt om de analyse van de `access.log` dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren.
 
 [Bestand ophalen](assets/analyse-access.sh)
 
 ## Beschrijving {#description}
 
-Dit script is gemaakt om de analyse te vereenvoudigen van de `access.log` bestanden die een leesbaar rapport voor latere verwerking produceren.
+Dit manuscript wordt gemaakt om de analyse van de `access.log` dossiers te verlichten die een leesbaar rapport voor recentere verwerking produceren.
 
 Het produceert het algemene verzoekaantal, GET versus POST, Verzoek verdeling over tijd en meer.
 
@@ -38,7 +38,7 @@ Een aangepast pad op de opdrachtregel kan worden geanalyseerd.
 
 Maak kennis met de opmerking in het bestand die u vertelt hoe u de opmerking moet uitvoeren:
 
-Analyseer CQ `access.log` -extrapolatie van verschillende informatie en produceer een Markering-uitvoer op `stdout`.
+Analyseer CQ `access.log` het extrapoleren van diverse informatie en het veroorzaken van een output van de Prijsverlaging op `stdout`.
 
 ## Gebruik {#usage}
 
