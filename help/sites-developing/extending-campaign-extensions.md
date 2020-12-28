@@ -29,11 +29,11 @@ U moet het volgende installeren:
 * Adobe Experience Manager
 * Adobe Campaign 6.1
 
-Zie AEM [integreren met Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) voor meer informatie.
+Zie [AEM integreren met Adobe Campaign 6.1](/help/sites-administering/campaignonpremise.md) voor meer informatie.
 
-## Voorbeeld 1: AEM naar Adobe Campaign {#example-aem-to-adobe-campaign}
+## Voorbeeld 1: AEM aan Adobe Campaign {#example-aem-to-adobe-campaign}
 
-De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP-bestanden vindt u in de Campagne-console en beginnen allemaal met **amc** (Adobe Marketing Cloud).
+De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (JavaScript Server Page). Deze JSSP dossiers kunnen in de console van de Campagne worden gevonden, en allen beginnen met **amc** (Adobe Marketing Cloud).
 
 ![chlimage_1-15](assets/chlimage_1-15.png)
 
@@ -43,11 +43,11 @@ De standaardintegratie tussen AEM en Campagne is gebaseerd op JSON en JSSP (Java
 
 In dit voorbeeld maken we een nieuw aangepast JSSP-bestand en roepen we dat van de AEM aan om het resultaat op te halen. Dit kan bijvoorbeeld worden gebruikt om gegevens op te halen uit Adobe Campaign of om gegevens op te slaan in Adobe Campaign.
 
-1. Als u in Adobe Campaign een nieuw JSSP-bestand wilt maken, klikt u op het pictogram **Nieuw** .
+1. Als u in Adobe Campaign een nieuw JSSP-bestand wilt maken, klikt u op het pictogram **Nieuw**.
 
    ![](do-not-localize/chlimage_1-4.png)
 
-1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld gebruiken we **cus:custom.jssp** (dit betekent dat de focus **** -naamruimte wordt gebruikt).
+1. Voer de naam van dit JSSP-bestand in. In dit voorbeeld gebruiken we **cus:custom.jssp** (wat betekent dat deze zich in de naamruimte **cus** bevindt).
 
    ![chlimage_1-16](assets/chlimage_1-16.png)
 
@@ -181,15 +181,15 @@ de API is:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.1.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
-Het einde van URL **.1.json** kan worden vervangen door **.2.json**, **.3.json**, afhankelijk van het aantal subniveaus u in het krijgen van interesseert u om allen te verkrijgen het sleutelwoord **oneindig** kan worden gebruikt:
+Het einde van de URL **.1.json** kan worden vervangen door **.2.json**, **.3.json**, afhankelijk van het aantal subniveaus dat u wilt ophalen Om alle subniveaus te verkrijgen, kunt u het trefwoord **infinity** gebruiken:
 
 * [http://localhost:4502/content/campaigns/geometrixx/scott-recommends.infinity.json](http://localhost:4502/content/campaigns/geometrixx/scott-recommends.2.json)
 
 Nu moeten we weten dat AEM standaard basisverificatie gebruikt om de API te gebruiken.
 
-Een bibliotheek JS die **amcIntegration.js** wordt genoemd is beschikbaar in 6.1.1 (bouwstijl 8624 en hoger) die die logica onder verscheidene andere uitvoert.
+Een bibliotheek JS die **amcIntegration.js** wordt genoemd is beschikbaar in 6.1.1 (bouwstijl 8624 en hoger) die die logica onder verscheidene andere degenen uitvoert.
 
-### API-aanroep AEM {#aem-api-call}
+### AEM API-aanroep {#aem-api-call}
 
 ```java
 loadLibrary("nms:amcIntegration.js");
