@@ -22,7 +22,7 @@ ht-degree: 1%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 U kunt uw toepassing en inhoud van mobiele apps beheren vanuit het AEM Mobile-toepassingsdashboard of het Control Center.
 
@@ -38,9 +38,9 @@ Voor het beheren van app-inhoud is een gezamenlijke inspanning van ontwikkelaars
 
 Tot slot publiceren beheerders strategisch de bijgewerkte app-inhoud.
 
-## De app-tegel beheren {#the-manage-app-tile}
+## De toepassingstegel beheren {#the-manage-app-tile}
 
-De beschikbare toepassingsinformatie wordt weergegeven **in App** Tile beheren:
+Met de **App**-tegel beheren wordt beschikbare toepassingsinformatie weergegeven:
 
 * Titel
 * Beschrijving
@@ -52,7 +52,7 @@ De beschikbare toepassingsinformatie wordt weergegeven **in App** Tile beheren:
 
 ## De verbindingstegel beheren {#the-manage-connection-tile}
 
-In het **tabblad Verbinding** beheren worden de AEM Mobile On-demand Services-verbindingsgegevens weergegeven:
+In de tegel **Verbinding beheren** worden de AEM Mobile On-demand Services-verbindingsgegevens weergegeven:
 
 * Naam van cloudconfiguratie
 * Projectnaam en -id
@@ -62,7 +62,7 @@ In het **tabblad Verbinding** beheren worden de AEM Mobile On-demand Services-ve
 >
 >Klik op de versnelling rechtsboven om een mobiele configuratie op aanvraag in te stellen.
 >
->Zie [Mobiele On-Demand Services](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) configureren voor meer informatie.
+>Zie [Mobiele On-Demand Services configureren](/help/mobile/mobile-on-demand-associating-an-on-demand-app-to-cloud-configuration.md) voor meer informatie.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
@@ -76,9 +76,9 @@ Deze drie tegels bieden een overzicht van de status van de inhoud van een app:
 
 Elke tegel kan worden uitgebreid om een gedetailleerdere lijstmening te verstrekken door op de ellips (...) in de bodem juiste hoek te klikken. Deze lijstweergaven bieden een andere manier om toegang te krijgen tot veelgebruikte Mobile On Demand-acties, zoals eigenschappen voor verwijderen, uploaden en bewerken.
 
-### De tegel Banners beheren {#the-manage-banners-tile}
+### De Tegel Banners beheren {#the-manage-banners-tile}
 
-Met het element Banners **** beheren kunt u de inhoud voor een banner beheren. De volgende informatie wordt weergegeven voor een banner:
+Met de tegel **Banners beheren** kunt u de inhoud voor een banner beheren. De volgende informatie wordt weergegeven voor een banner:
 
 * afbeelding
 * **TITEL**: naam van de banner
@@ -87,17 +87,17 @@ Met het element Banners **** beheren kunt u de inhoud voor een banner beheren. D
 * **GEPUBLICEERD**: laatste gepubliceerde aanvraagformulier AEM
 * **BRON**: bron (AEM lokaal of extern van Mobile On Demand)
 
-In de volgende afbeelding ziet u de tegel Banners **beheren** in het AEM Mobile-toepassingsdashboard:
+In de volgende afbeelding ziet u de tegel **Banners beheren** in het AEM Mobile-toepassingsdashboard:
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
 >[!NOTE]
 >
->Zie Banners **[](/help/mobile/mobile-on-demand-managing-banners.md)**beheren voor het maken, verwijderen of bijwerken van de banners.
+>Zie **[Banners beheren](/help/mobile/mobile-on-demand-managing-banners.md)** voor het maken, verwijderen of bijwerken van de banners.
 
-### De tegel Artikelen beheren {#the-manage-articles-tile}
+### De module Artikelen beheren {#the-manage-articles-tile}
 
-Met de tegel Artikelen **** beheren kunt u de inhoud van een artikel beheren. De volgende informatie wordt weergegeven voor een artikel:
+Met de tegel **Artikelen beheren** kunt u de inhoud van een artikel beheren. De volgende informatie wordt weergegeven voor een artikel:
 
 * afbeelding
 * **TITEL**: naam van het artikel
@@ -106,17 +106,17 @@ Met de tegel Artikelen **** beheren kunt u de inhoud van een artikel beheren. De
 * **GEPUBLICEERD**: laatste gepubliceerde aanvraagformulier AEM
 * **BRON**: bron (AEM lokaal of extern van mobiel op aanvraag)
 
-In de volgende afbeelding ziet u de tegel Artikelen **** beheren in het AEM Mobile-toepassingsdashboard:
+In de volgende afbeelding ziet u de tegel **Artikelen beheren** in het AEM Mobile-toepassingsdashboard:
 
 ![chlimage_1-58](assets/chlimage_1-58.png)
 
 >[!NOTE]
 >
->Zie Artikelen [****](/help/mobile/mobile-on-demand-managing-articles.md)beheren voor het maken, verwijderen of bijwerken van artikelen.
+>Zie [**Artikelen beheren**](/help/mobile/mobile-on-demand-managing-articles.md) voor het maken, verwijderen of bijwerken van artikelen.
 
 ### De tegel Verzamelingen beheren {#the-manage-collections-tile}
 
-Met de tegel **Verzamelingen** beheren kunt u de inhoud voor een verzameling beheren. De volgende informatie wordt getoond voor een inzameling:
+Met de tegel **Verzamelingen beheren** kunt u de inhoud voor een verzameling beheren. De volgende informatie wordt getoond voor een inzameling:
 
 * afbeelding
 * **TITEL**: naam van de verzameling
@@ -125,13 +125,13 @@ Met de tegel **Verzamelingen** beheren kunt u de inhoud voor een verzameling beh
 * **GEPUBLICEERD**: laatste gepubliceerde aanvraagformulier AEM
 * **BRON**: bron (AEM lokaal of extern van mobiel op aanvraag)
 
-In de volgende afbeelding ziet u de tegel **Verzamelingen** beheren in het dashboard voor AEM Mobile-toepassingen:
+In de volgende afbeelding ziet u de tegel **Verzamelingen beheren** in het dashboard voor AEM Mobile-toepassingen:
 
 ![chlimage_1-59](assets/chlimage_1-59.png)
 
 >[!NOTE]
 >
->Zie **[Verzamelingen](/help/mobile/mobile-on-demand-managing-collections.md)**beheren voor het maken, verwijderen of bijwerken van verzamelingen.
+>Zie **[Verzamelingen beheren](/help/mobile/mobile-on-demand-managing-collections.md)** voor het maken, verwijderen of bijwerken van de verzamelingen.
 
 ### De volgende stappen {#the-next-steps}
 
