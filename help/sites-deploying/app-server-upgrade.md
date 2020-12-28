@@ -18,11 +18,11 @@ ht-degree: 0%
 ---
 
 
-# Upgradestappen voor installatie van toepassingsservers{#upgrade-steps-for-application-server-installations}
+# De stappen van de verbetering voor de Installaties van de Server van de Toepassing{#upgrade-steps-for-application-server-installations}
 
 Deze sectie beschrijft de procedure die moet worden gevolgd om AEM voor de installaties van de Server van de Toepassing bij te werken.
 
-Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure is bedoeld voor het documenteren van upgrades die zijn uitgevoerd van **AEM versie 5.6 naar 6.3**.
+Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing en impliceren dat u een werkende versie van AEM reeds opgesteld hebt. De procedure is bedoeld om upgrades te documenteren die worden uitgevoerd van **AEM versie 5.6 tot 6.3**.
 
 1. Start eerst JBoss. In de meeste situaties, kunt u dit doen door het `standalone.sh` startmanuscript in werking te stellen, door dit bevel van de terminal in werking te stellen:
 
@@ -54,7 +54,7 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    >
    >In dit voorbeeld is de eikenopslagplaats de tijdelijke map waarin de nieuwe geconverteerde opslagplaats zich bevindt. Voordat u deze stap uitvoert, moet u de nieuwste versie crx2oak.jar gebruiken.
 
-1. Verwijder de benodigde eigenschappen uit het bestand sling.properties door het volgende te doen:
+1. Verwijder de benodigde eigenschappen in het bestand sling.properties door het volgende te doen:
 
    1. Open het bestand op `crx-quickstart/launchpad/sling.properties`
    1. Staptekst Verwijder de volgende eigenschappen en sla het bestand op:
@@ -70,9 +70,9 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
 
 1. Verwijder de bestanden en mappen die u niet meer nodig hebt. De items die u specifiek moet verwijderen zijn:
 
-   * De **startpad/startmap**. U kunt het schrappen door het volgende bevel in de terminal in werking te stellen: `rm -rf crx-quickstart/launchpad/startup`
-   * Het bestand **base.jar**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
-   * Het **bestand** BootstrapCommandFile_timestamp.txt: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
+   * De **startmap**. U kunt het schrappen door het volgende bevel in de terminal in werking te stellen: `rm -rf crx-quickstart/launchpad/startup`
+   * Het **base.jar-bestand**: `find crx-quickstart/launchpad -type f -name "org.apache.sling.launchpad.base.jar*" -exec rm -f {} \`
+   * Het bestand **BootstrapCommandFile_timestamp.txt**: `rm -f crx-quickstart/launchpad/felix/bundle0/BootstrapCommandFile_timestamp.txt`
 
 1. Kopieer de nieuwe gemigreerde segmentstore naar de juiste locatie:
 
@@ -86,9 +86,9 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    mv crx-quickstart/repository/repository/datastore crx-quickstart/repository/datastore
    ```
 
-1. Daarna, moet u de omslag tot stand brengen die de configuraties OSGi zal bevatten die met de nieuwe promotieinstantie zullen worden gebruikt. Meer bepaald moet een map met de naam install worden gemaakt onder **crx-quickstart**.
+1. Daarna, moet u de omslag tot stand brengen die de configuraties OSGi zal bevatten die met de nieuwe promotieinstantie zullen worden gebruikt. Meer in het bijzonder moet een map met de naam install worden gemaakt onder **crx-quickstart**.
 
-1. Creëer nu de knoopopslag en de gegevensopslag die met AEM 6.3 zullen worden gebruikt. U kunt dit doen door twee bestanden met de volgende namen te maken onder **crx-quickstart\install**:
+1. Creëer nu de knoopopslag en de gegevensopslag die met AEM 6.3 zullen worden gebruikt. U kunt dit doen door twee dossiers met de volgende namen onder **crx-quickstart \ te creëren installeert**:
 
    * `org.apache.jackrabbit.oak.segment.SegmentNodeStoreService.cfg`
 
@@ -115,13 +115,13 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    find crx-quickstart/launchpad -type f -name "sling.options.file" -exec rm -rf {} \
    ```
 
-1. U moet nu de uitvoeringswijzen in het AEM 6.3 oorlogsdossier veranderen. Hiertoe maakt u eerst een tijdelijke map waarin de AEM 6.3-oorlog is ondergebracht. De naam van de map in dit voorbeeld is temp ****. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
+1. U moet nu de uitvoeringswijzen in het AEM 6.3 oorlogsdossier veranderen. Hiertoe maakt u eerst een tijdelijke map waarin de AEM 6.3-oorlog is ondergebracht. De naam van de map in dit voorbeeld is **temp**. Nadat het oorlogsbestand is gekopieerd, pakt u de inhoud uit door de inhoud uit te voeren vanuit de tijdelijke map:
 
    ```shell
    jar xvf aem-quickstart-6.3.0.war
    ```
 
-1. Nadat de inhoud is uitgepakt, gaat u naar de map **WEB-INF** en bewerkt u het `web.xml` bestand om de uitvoermodi te wijzigen. Als u de locatie wilt zoeken waar ze in de XML zijn ingesteld, zoekt u de `sling.run.modes` tekenreeks. Als u deze eenmaal hebt gevonden, wijzigt u de uitvoeringsmodi in de volgende coderegel, die standaard is ingesteld op auteur:
+1. Nadat de inhoud is uitgepakt, gaat u naar de map **WEB-INF** en bewerkt u het bestand `web.xml` om de uitvoermodi te wijzigen. Als u de locatie wilt zoeken waar deze in de XML zijn ingesteld, zoekt u de tekenreeks `sling.run.modes`. Als u deze eenmaal hebt gevonden, wijzigt u de uitvoeringsmodi in de volgende coderegel, die standaard is ingesteld op auteur:
 
    ```shell
    <param-value >author</param-value>
