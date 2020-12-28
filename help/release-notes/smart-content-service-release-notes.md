@@ -22,13 +22,13 @@ Overzicht van de Slimme Dienst van de Inhoud en bekende kwesties rond de dienst.
 
 De organisaties vereisen dat hun digitale activa worden geëtiketteerd gebaseerd op de taxonomie die de werknemers, de partners, en de klanten gebruiken om naar digitale activa te verwijzen en te zoeken. In vergelijking met generieke tags zijn elementen die zijn gelabeld op basis van de taxonomie van het bedrijf gemakkelijker te identificeren en op te halen door zoekopdrachten op basis van tags.
 
-De Smart Content Service maakt gebruik van uw zakelijke taxonomie van AEM Assets om digitale elementen automatisch te labelen, zodat de meest relevante elementen in zoekopdrachten worden weergegeven.
+De Smart Content Service maakt gebruik van uw zakelijke taxonomie van AEM Assets om digitale middelen automatisch te labelen, zodat de meest relevante middelen in zoekopdrachten worden weergegeven.
 
 U moet de Slimme Dienst van de Inhoud op een gekromde reeks AEM activa en markeringen opleiden om uw bedrijfstaxonomie te erkennen. Als de service eenmaal is getraind, kunnen deze tags op een vergelijkbare set elementen worden toegepast.
 
 De Smart Content Service wordt aangedreven door het Adobe Sensei-platform, waarmee u het algoritme voor imageherkenning kunt trainen op uw bedrijfsconomie. Deze inhouds-informatie wordt vervolgens gebruikt om relevante tags toe te passen op vergelijkbare elementen.
 
-## Belangrijkste verbeteringen {#key-improvements}
+## Belangrijke verbeteringen {#key-improvements}
 
 De Smart Content Service bevat de volgende belangrijke verbeteringen:
 
@@ -39,7 +39,7 @@ De Smart Content Service bevat de volgende belangrijke verbeteringen:
 * Tenantgewijs toezicht op het gebruik van de service
 * Oplossingen voor problemen rond het groeperen en verbinden, die de robuustheid van de dienst verbeteren
 
-## Opgeloste problemen {#fixed-issues}
+## {#fixed-issues} Opgeloste problemen
 
 De volgende problemen zijn opgelost in deze release:
 
@@ -85,7 +85,7 @@ De service Slimme inhoud is beschikbaar voor de volgende landinstellingen:
 
 ## Koppelingen {#links}
 
-* [Productpagina Adobe Experience Manager op adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
+* [Adobe Experience Manager-productpagina op adobe.com](https://www.adobe.com/marketing-cloud/experience-manager.html)
 * [Verbeterde documentatie voor slimme tags](/help/assets/enhanced-smart-tags.md)
 
 ## Toegang tot en ondersteuning voor producten (beperkt aantal sites) {#product-access-and-support-restricted-sites}
@@ -94,5 +94,5 @@ Deze sites zijn alleen beschikbaar voor klanten. Neem contact op met uw Adobe-ac
 
 * [Producttoegang](https://login.marketing.adobe.com)
 * [Product downloaden op licensing.adobe.com](https://licensing.adobe.com/).
-* Productupdates, patches en pakketten voor extra functionaliteit op het gebied van [softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
-* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie [Nieuwe Adobe Customer Support Experience](https://docs.adobe.com/content/help/en/customer-one/using/home.html)voor meer informatie.
+* Productupdates, patches en pakketten voor extra functionaliteit op [Softwaredistributie](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html).
+* [Klantenondersteuning via Admin Console](https://adminconsole.adobe.com/). Zie [Nieuwe ervaring voor klantenondersteuning van Adobe](https://docs.adobe.com/content/help/en/customer-one/using/home.html) voor meer informatie.
