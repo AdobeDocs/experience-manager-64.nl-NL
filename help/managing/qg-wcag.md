@@ -18,11 +18,11 @@ ht-degree: 82%
 ---
 
 
-# Quick Guide to WCAG 2.0{#quick-guide-to-wcag}
+# Snelle Gids aan WCAG 2.0{#quick-guide-to-wcag}
 
 Er zijn AEM ontwikkeld om zo veel mogelijk te voldoen aan de Web Content Accessibility Guidelines:
 
-The [Web Content Accessibility Guidelines version 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) are a set of internationally recognized guidelines developed by the [World Wide Web Consortium (W3C)](https://www.w3.org/) under their [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
+De [Web Content Accessibility Guidelines versie 2.0 (WCAG2)](https://www.w3.org/TR/WCAG/) zijn een reeks internationaal erkende richtlijnen die zijn ontwikkeld door het [World Wide Web Consortium (W3C)](https://www.w3.org/) onder hun [Web Accessibility Initiative (WAI)](https://www.w3.org/WAI/).
 
 WCAG 2.0 bestaat uit een reeks technologieonafhankelijke richtlijnen en succescriteria om ervoor te zorgen dat webcontent toegankelijk en bruikbaar is voor personen met een handicap. Zij adviseren auteurs, ontwerpers en ontwikkelaars van webcontent om ervoor te zorgen dat de bronnen die zij produceren, zo toegankelijk mogelijk zijn voor zoveel mogelijk mensen, ongeacht hun handicap, bijvoorbeeld een visuele handicap, gehoorverlies, leermoeilijkheden of leeftijdsgebonden beperkingen.
 
@@ -40,7 +40,7 @@ De bedoeling van WCAG 2.0 is het verstrekken van richtlijnen die:
 
    Met andere woorden, richtlijnen die kunnen worden toegepast op een reeks webinhoud-indelingen, niet alleen op HTML. WCAG 2.0 kan dus betrekking hebben op content die is gegenereerd door of wordt geleverd in PDF, Flash, JavaScript en andere huidige en toekomstige webtechnologieën. Dit is bedoeld om een erkende zwakte van WCAG 1.0 aan te pakken, aangezien het gericht was op HTML ten koste van andere webinhoud-indelingen.
 
-* kunnen worden **getest:**
+* Zijn **testbaar:**
 
    Elk richtsnoer is zodanig opgesteld dat het objectief kan worden getest om te garanderen dat een groep toegankelijkheidsdeskundigen het er in het algemeen over eens is dat aan het richtsnoer is voldaan. Een van de uitdagingen van toegankelijkheidsrichtlijnen is dat sommige richtlijnen technisch getest kunnen worden, terwijl andere vereisen dat mensen oordelen of de richtlijn al dan niet succesvol is nageleefd. WCAG 2.0 is geschreven om de subjectiviteit te verminderen die in sommige van de WCAG 1.0-richtsnoeren en -controlepunten aanwezig was.
 
@@ -92,7 +92,7 @@ Hoewel WCAG 2.0 een stabiel document is en niet zal veranderen, zijn de meeste v
 ### WCAG 2.0-bronnen {#wcag-resources}
 
 * [een overzicht van alle met WCAG 2.0 verband houdende documenten](https://www.w3.org/WAI/intro/wcag.php);
-* [een toelichting op de onderlinge](https://www.w3.org/WAI/intro/wcag20)relatie tussen de verschillende onderdelen;
+* [een toelichting op de onderlinge](https://www.w3.org/WAI/intro/wcag20) relatie tussen de verschillende onderdelen;
 * [Veelgestelde vragen over WCAG 2.0](https://www.w3.org/WAI/WCAG20/wcag2faq.html);
 
 ### Technieken voor WCAG 2.0 {#techniques-for-wcag}
