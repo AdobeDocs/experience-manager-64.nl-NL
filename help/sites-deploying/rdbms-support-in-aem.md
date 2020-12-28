@@ -26,23 +26,23 @@ Ondersteuning voor relationele databasedruk in AEM wordt geïmplementeerd met be
 
 Deze API bestaat uit een Java API die is gebaseerd op de API van Mongo Java. Er wordt ook een implementatie van een BlobStore-API geleverd. Standaard worden klodders opgeslagen in de database.
 
-Raadpleeg de documentatie bij [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) en [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) voor meer informatie over de implementatiedetails.
+Raadpleeg de documentatie [RDBDocumentStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBDocumentStore.html) en [RDBBlobStore](https://jackrabbit.apache.org/oak/docs/apidocs/org/apache/jackrabbit/oak/plugins/document/rdb/RDBBlobStore.html) voor meer informatie over de implementatiedetails.
 
 >[!NOTE]
 >
->Er wordt ook ondersteuning voor **PostgreSQL 9.4** geboden, maar alleen voor demo-doeleinden. Het zal niet beschikbaar voor productiemilieu&#39;s zijn.
+>Ondersteuning voor **PostgreSQL 9.4** wordt ook geboden, maar alleen voor demo-doeleinden. Het zal niet beschikbaar voor productiemilieu&#39;s zijn.
 
 ## Ondersteunde databases {#supported-databases}
 
-Voor meer informatie over het niveau van de Relationele Steun van het Gegevensbestand in AEM, gelieve de pagina [van de](/help/sites-deploying/technical-requirements.md)Technische Eisen te zien.
+Raadpleeg de pagina [Technische vereisten](/help/sites-deploying/technical-requirements.md) voor meer informatie over het niveau van ondersteuning voor relationele databases in AEM.
 
 ## Configuratiestappen {#configuration-steps}
 
-De bewaarplaats wordt gecreeerd door de dienst te vormen `DocumentNodeStoreService` OSGi. Naast MongoDB is de toepassing uitgebreid met ondersteuning voor relationele databasepersistentie.
+De opslagplaats wordt gecreeerd door de `DocumentNodeStoreService` dienst te vormen OSGi. Naast MongoDB is de toepassing uitgebreid met ondersteuning voor relationele databasepersistentie.
 
-Om het te werken, moet een gegevensbron met AEM worden gevormd. Dit gebeurt via het `org.apache.sling.datasource.DataSourceFactory.config` bestand. De bestuurders JDBC voor het respectieve gegevensbestand moeten afzonderlijk als bundels OSGi binnen de lokale configuratie worden verstrekt.
+Om het te werken, moet een gegevensbron met AEM worden gevormd. Dit gebeurt via het `org.apache.sling.datasource.DataSourceFactory.config`-bestand. De bestuurders JDBC voor het respectieve gegevensbestand moeten afzonderlijk als bundels OSGi binnen de lokale configuratie worden verstrekt.
 
-Voor stappen voor het maken van OSGi-bundels voor JDBC-stuurprogramma&#39;s raadpleegt u deze [documentatie](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) op de Apache Sling-website.
+Zie [documentatie](https://wiki.eclipse.org/Create_and_Export_MySQL_JDBC_driver_bundle) op de Apache Sling-website voor stappen voor het maken van OSGi-bundels voor JDBC-stuurprogramma&#39;s.
 
 >[!NOTE]
 >
@@ -55,7 +55,7 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
 1. Zorg ervoor dat de databasdaemon is gestart en dat u een actieve database hebt voor gebruik met AEM.
 1. Kopieer de AEM 6.3 jar in de installatiemap.
 1. Maak een map met de naam `crx-quickstart\install` in de installatiemap.
-1. Configureer de opslag van de documentnode door een configuratiebestand met de volgende naam in de `crx-quickstart\install` map te maken:
+1. Vorm de opslag van de documentknoop door een configuratiedossier met de volgende naam in de `crx-quickstart\install` folder te creëren:
 
    * `org.apache.jackrabbit.oak.plugins.document.DocumentNodeStoreService.config`
 
@@ -64,20 +64,20 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
    * `org.apache.sling.datasource.DataSourceFactory-oak.config`
    >[!NOTE]
    >
-   >Voor gedetailleerde informatie over de gegevensbronconfiguratie voor elke gesteunde gegevensbestand, zie de Opties [van de Configuratie van de](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options)Gegevensbron.
+   >Voor gedetailleerde informatie over de gegevensbronconfiguratie voor elke gesteunde gegevensbestand, zie [Opties van de Configuratie van de Gegevensbron](/help/sites-deploying/rdbms-support-in-aem.md#data-source-configuration-options).
 
 1. Bereid daarna de bundels JDBC OSGi voor die met AEM moeten worden gebruikt:
 
    1. Download het ZIP-archief van https://dev.mysql.com/downloads/connector/j/
       * version must be >= 5.1.38
-   1. Extraheer de `mysql-connector-java-version-bin.jar` (bundel) uit het archief
+   1. `mysql-connector-java-version-bin.jar` (bundel) uit archief extraheren
    1. Gebruik de webconsole om de bundel te installeren en te starten:
       * Ga naar *http://serveraddress:serverport/system/console/bundles*
       * Selecteer **Installeren/bijwerken**
       * Blader naar de bundel die u uit het gedownloade ZIP-archief hebt uitgepakt
-      * Controleer of het JDBC Driver for MySQLcom.mysql.jdbc **van** Oracle Corporation actief is en start deze.
+      * Controleer of het JDBC-stuurprogramma voor MySQLcom.mysql.jdbc **van Oracle Corporation actief is en start het.**
 
-1. Ten slotte start u AEM met de `crx3` en de `crx3rdb` runmodi:
+1. Start ten slotte AEM met de runmodi `crx3` en `crx3rdb`:
 
    ```java
    java -jar quickstart.jar -r crx3,crx3rdb
@@ -85,11 +85,11 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
 
 ## Configuratieopties gegevensbron {#data-source-configuration-options}
 
-De configuratie `org.apache.sling.datasource.DataSourceFactory-oak.config` OSGi wordt gebruikt om de parameters te vormen nodig voor communicatie tussen AEM en de laag van de gegevensbestandpersistentie.
+De `org.apache.sling.datasource.DataSourceFactory-oak.config` configuratie OSGi wordt gebruikt om de parameters te vormen nodig voor communicatie tussen AEM en de laag van de gegevensbestandpersistentie.
 
 De volgende configuratieopties zijn beschikbaar:
 
-* `datasource.name:` De naam van de gegevensbron. The default is `oak`.
+* `datasource.name:` De naam van de gegevensbron. De standaardwaarde is `oak`.
 
 * `url:` De URL-tekenreeks van de database die moet worden gebruikt met JDBC. Elk databasetype heeft een eigen URL-tekenreeksindeling. Zie [URL-tekenreeksindelingen](/help/sites-deploying/rdbms-support-in-aem.md#url-string-formats) hieronder voor meer informatie.
 
@@ -105,7 +105,7 @@ De volgende configuratieopties zijn beschikbaar:
 
 * `password:` Het databasewachtwoord.
 
-### Opmaak URL-tekenreeks {#url-string-formats}
+### Indelingen van URL-tekenreeks {#url-string-formats}
 
 Afhankelijk van het databasetype dat moet worden gebruikt, wordt in de configuratie van de gegevensbron een andere indeling voor de URL-tekenreeks gebruikt. Hieronder volgt een lijst met indelingen voor de databases die momenteel AEM ondersteunen:
 
