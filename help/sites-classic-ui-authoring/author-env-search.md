@@ -24,11 +24,11 @@ De auteursomgeving van AEM verstrekt diverse mechanismen om naar inhoud te zoeke
 
 >[!NOTE]
 >
->Buiten de auteursomgeving zijn andere mechanismen ook beschikbaar voor het zoeken, zoals de Bouwer [van de](/help/sites-developing/querybuilder-api.md) Vraag en [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
+>Buiten de auteursomgeving zijn andere mechanismen ook beschikbaar voor het zoeken, zoals [Query Builder](/help/sites-developing/querybuilder-api.md) en [CRXDE Lite](/help/sites-developing/developing-with-crxde-lite.md).
 
-## Grondbeginselen van zoekopdrachten {#search-basics}
+## Basisinformatie zoeken {#search-basics}
 
-U opent het deelvenster Zoeken door op het tabblad **Zoeken** boven in het linkerdeelvenster van de desbetreffende console te klikken.
+Om tot het onderzoekspaneel toegang te hebben, klik op **Onderzoek** lusje bij de bovenkant van de linkerruit van de aangewezen console.
 
 ![chlimage_1-140](assets/chlimage_1-140.png)
 
@@ -41,7 +41,7 @@ Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het beva
 
 >[!NOTE]
 >
->Wanneer uw instantie voor het onderzoek [van](/help/sites-deploying/queries-and-indexing.md) Lucene wordt gevormd kunt u het volgende in **Fulltext** gebruiken:
+>Wanneer uw instantie voor [Lucene onderzoek](/help/sites-deploying/queries-and-indexing.md) wordt gevormd kunt u het volgende in **Fulltext** gebruiken:
 >
 >* [Jokertekens](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Wildcard_Searches)
 >* [Booleaanse operatoren](https://lucene.apache.org/core/5_3_1/queryparser/org/apache/lucene/queryparser/classic/package-summary.html#Boolean_operators)
@@ -56,7 +56,7 @@ Met het deelvenster Zoeken kunt u al uw websitepagina&#39;s doorzoeken. Het beva
 
 
 
-Voer de zoekopdracht uit door onder in het deelvenster op **Zoeken** te klikken. Klik op **Herstellen** om de zoekcriteria te wissen.
+Voer het onderzoek door **Onderzoek** bij de bodem van de ruit uit te klikken. Klik **Reset** om de zoekcriteria te wissen.
 
 ## Filter {#filter}
 
@@ -64,16 +64,16 @@ Op verschillende locaties kan een filter worden ingesteld (en gewist) om de weer
 
 ![chlimage_1-141](assets/chlimage_1-141.png)
 
-## Zoeken en vervangen {#find-and-replace}
+## {#find-and-replace} zoeken en vervangen
 
-In de **Websites** console staat een het menuoptie van de **Vondst &amp; van de Vervangen** u toe om naar, veelvoudige instanties van een koord, binnen een sectie van de website te zoeken en te vervangen.
+In de **Websites** console kunt u met een menuoptie **Zoeken en vervangen** meerdere instanties van een tekenreeks zoeken en vervangen binnen een sectie van de website.
 
 1. Selecteer de hoofdpagina, of map, waar de zoek- en vervangactie moet plaatsvinden.
-1. Selecteer **Gereedschappen** en **zoek en vervang**:
+1. Selecteer **Gereedschappen** dan **Zoeken en vervangen**:
 
    ![screen_shot_2012-02-15at120346pm](assets/screen_shot_2012-02-15at120346pm.png)
 
-1. Het dialoogvenster **Zoeken en vervangen** doet het volgende:
+1. Het dialoogvenster **Zoeken en vervangen** voert de volgende handelingen uit:
 
    * bevestigt het hoofdpad waar de zoekactie moet beginnen
    * definieert de term die moet worden gevonden
@@ -85,7 +85,7 @@ In de **Websites** console staat een het menuoptie van de **Vondst &amp; van de 
 
    ![screen_shot_2012-02-15at120719pm](assets/screen_shot_2012-02-15at120719pm.png)
 
-1. Klik op **Vervangen** om alle exemplaren te vervangen. U wordt gevraagd de actie te bevestigen.
+1. Klik **Vervangen** om alle instanties daadwerkelijk te vervangen. U wordt gevraagd de actie te bevestigen.
 
 Het standaardwerkingsgebied voor het vondst en vervangt servlet behandelt de volgende eigenschappen:
 
@@ -94,7 +94,7 @@ Het standaardwerkingsgebied voor het vondst en vervangt servlet behandelt de vol
 * `jcr:text`
 * `text`
 
-Het bereik kan worden gewijzigd met de Apache Felix Web Management Console (bijvoorbeeld bij `http://localhost:4502/system/console/configMgr`). Selecteer `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` en vorm het werkingsgebied zoals vereist.
+Het bereik kan worden gewijzigd met de Apache Felix Web Management Console (bijvoorbeeld op `http://localhost:4502/system/console/configMgr`). Selecteer `CQ WCM Find Replace Servlet (com.day.cq.wcm.core.impl.servlets.FindReplaceServlet)` en vorm het werkingsgebied zoals vereist.
 
 >[!NOTE]
 >
