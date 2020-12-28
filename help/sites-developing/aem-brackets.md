@@ -18,22 +18,22 @@ ht-degree: 0%
 ---
 
 
-# Extensie AEM{#aem-brackets-extension}
+# Uitbreiding AEMhaken{#aem-brackets-extension}
 
 ## Overzicht {#overview}
 
-De extensie AEM Brackets biedt een vloeiende workflow voor het bewerken van AEM componenten en clientbibliotheken en maakt gebruik van de kracht van de [Brackets](https://brackets.io/) -code-editor. Hiermee hebt u vanuit de code-editor toegang tot Photoshop-bestanden en -lagen. De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM kennis ook om aan projecten deel te nemen. Deze extensie biedt ook enige ondersteuning voor de [HTML-sjabloontaal (HTML Template Language)](https://helpx.adobe.com/experience-manager/htl/user-guide.html), die de complexiteit van JSP wegneemt om de ontwikkeling van componenten eenvoudiger en veiliger te maken.
+De extensie AEM Brackets biedt een vloeiende workflow voor het bewerken van AEM componenten en clientbibliotheken en maakt gebruik van de kracht van de code-editor [Brackets](https://brackets.io/), die toegang biedt vanuit de code-editor naar Photoshop-bestanden en -lagen. De eenvoudige synchronisatie die wordt geboden door de extensie (geen Maven of File Vault vereist) verhoogt de efficiëntie van de ontwikkelaar en helpt ontwikkelaars met beperkte AEM kennis ook om aan projecten deel te nemen. Deze extensie biedt ook enige ondersteuning voor de [HTML-sjabloontaal (HTL)](https://helpx.adobe.com/experience-manager/htl/user-guide.html), die de complexiteit van JSP wegneemt om de ontwikkeling van componenten eenvoudiger en veiliger te maken.
 
 ![chlimage_1-53](assets/chlimage_1-53.png)
 
-### Features {#features}
+### Functies {#features}
 
 De hoofdkenmerken van de extensie AEM Brackets zijn:
 
 * Geautomatiseerde synchronisatie van gewijzigde bestanden naar de AEM-ontwikkelingsinstantie.
 * Handmatige tweerichtingssynchronisatie van bestanden en mappen.
 * Volledige tevreden-pakket synchronisatie van het project.
-* HTML-codevoltooiing voor expressies en `data-sly-*` blokinstructies.
+* HTML-codevoltooiing voor expressies en `data-sly-*`-blokinstructies.
 
 Bovendien zijn er veel handige functies voor AEM ontwikkelaars van lettertypen:
 
@@ -48,18 +48,18 @@ Bovendien zijn er veel handige functies voor AEM ontwikkelaars van lettertypen:
 
 De extensie AEM Brackets ondersteunt versie 1.0 of hoger.
 
-Download de nieuwste versie Brackets van [vierkante haken.io](https://brackets.io/).
+Download de nieuwste versie Brackets van [brackets.io](https://brackets.io/).
 
 ### De extensie {#the-extension}
 
 Ga als volgt te werk om de extensie te installeren:
 
-1. Open haakjes. Selecteer **Extension Manager in het menu Bestand****...**
-1. Ga **AEM** in de onderzoeksbar in en zoek **AEM Uitbreiding** van Brackets.
+1. Open haakjes. Selecteer **Extension Manager..** in het menu **Bestand**.
+1. Typ **AEM** in de zoekbalk en zoek **Extensie AEM accolades**.
 
    ![chlimage_1-54](assets/chlimage_1-54.png)
 
-1. Klik op **Installeren**.
+1. Klik **Installeren**.
 1. Sluit het dialoogvenster en de Extension Manager nadat de installatie is voltooid.
 
 ## Aan de slag {#getting-started}
@@ -70,21 +70,21 @@ Nadat de extensie is geïnstalleerd, kunt u beginnen met het ontwikkelen van AEM
 
 Het project moet ten minste het volgende bevatten:
 
-1. een `jcr_root` map (bijvoorbeeld `myproject/jcr_root`)
+1. a `jcr_root` map (bijvoorbeeld `myproject/jcr_root`)
 
-1. een `filter.xml` bestand (bijvoorbeeld `myproject/META-INF/vault/filter.xml`); Zie de definitie `filter.xml` Werkruimtefilter voor meer informatie over de structuur van het [](https://jackrabbit.apache.org/filevault/filter.html)bestand.
+1. a `filter.xml` bestand (bijvoorbeeld `myproject/META-INF/vault/filter.xml`); Zie [Definitie van werkruimtefilter](https://jackrabbit.apache.org/filevault/filter.html) voor meer informatie over de structuur van het `filter.xml`-bestand.
 
-Kies in het menu **Bestand** van haakjes de optie **Map openen...** en kies de `jcr_root` map of de bovenliggende projectmap.
+Kies **Map openen..** in het menu **Bestand** en kies de map `jcr_root` of de bovenliggende projectmap.
 
 >[!NOTE]
 >
->Als u geen eigen project met een content-package hebt, kunt u het [HTL TodoMVC-voorbeeld](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc)uitproberen. Voor GitHub, klik **Download ZIP**, haalt de dossiers plaatselijk uit, en zoals hierboven geïnstrueerd, open de `jcr_root` omslag in Brackets. Volg vervolgens de onderstaande stappen om de **projectinstellingen** in te stellen en upload ten slotte het hele pakket naar de AEM ontwikkelingsinstantie door een **Exportinhoudspakket** uit te voeren zoals verder onderaan in de sectie Volledige synchronisatie van het inhoudspakket.
+>Als u geen van uw hebt een project met een content-package, kunt u [HTL TodoMVC Voorbeeld](https://github.com/Adobe-Marketing-Cloud/aem-sightly-sample-todomvc) proberen. Voor GitHub, klik **Download ZIP**, haal de dossiers plaatselijk, en zoals hierboven geïnstrueerd, open `jcr_root` omslag in Brackets. Volg vervolgens de onderstaande stappen om de **Projectinstellingen** in te stellen en upload ten slotte het volledige pakket naar de AEM ontwikkelingsinstantie door een **Inhoudspakket exporteren** volgens de instructies die u verder hebt gegeven in de sectie Volledige synchronisatie van het inhoudspakket.
 >
->Na deze stappen, zou u tot `/content/todo.html` URL op uw AEM ontwikkelingsinstantie moeten kunnen toegang hebben en u kunt wijzigingen aan de code in Brackets beginnen en zien hoe, nadat doen verfrist zich in Webbrowser, de veranderingen onmiddellijk aan de AEM server werden gesynchroniseerd.
+>Na deze stappen, zou u tot `/content/todo.html` URL op uw AEM ontwikkelingsinstantie moeten kunnen toegang hebben en u kunt beginnen wijzigingen aan de code in Brackets te doen en te zien hoe, na het doen verfrissen in Webbrowser, de veranderingen onmiddellijk aan de AEM server werden gesynchroniseerd.
 
 ### Projectinstellingen {#project-settings}
 
-Als u de inhoud wilt synchroniseren van en naar een AEM-ontwikkelingsinstantie, moet u de projectinstellingen definiëren. U doet dit door naar het menu **AEM** te gaan en **Projectinstellingen te kiezen..**
+Als u de inhoud wilt synchroniseren van en naar een AEM-ontwikkelingsinstantie, moet u de projectinstellingen definiëren. Dit kan door naar **AEM** menu te gaan en **de Montages van het Project te kiezen..**
 
 ![chlimage_1-55](assets/chlimage_1-55.png)
 
@@ -95,7 +95,7 @@ Met de projectinstellingen kunt u het volgende definiëren:
 1. De gebruikersnaam die wordt gebruikt voor het synchroniseren van inhoud (bijvoorbeeld `admin`)
 1. Het wachtwoord van de gebruiker (bijvoorbeeld `admin`)
 
-## Inhoud synchroniseren {#synchronizing-content}
+## Inhoud {#synchronizing-content} synchroniseren
 
 De extensie AEM Brackets biedt de volgende typen inhoudssynchronisatie voor bestanden en mappen die zijn toegestaan door de filterregels die zijn gedefinieerd in `filter.xml`:
 
@@ -105,17 +105,17 @@ Hiermee worden wijzigingen alleen gesynchroniseerd van haakjes naar de AEM-insta
 
 ### Handmatige tweerichtingssynchronisatie {#manual-bidirectional-synchronization}
 
-In de Ontdekkingsreiziger van het Project, open het contextafhankelijke menu door op om het even welk dossier of omslag met de rechtermuisknop te klikken, en de **Uitvoer naar Server** of de **Invoer van de opties van de Server** kan worden betreden.
+In de Ontdekkingsreiziger van het Project, open het contextafhankelijke menu door op om het even welk dossier of omslag met de rechtermuisknop te klikken, en **de Uitvoer aan Server** of **de optie van de Invoer van Server** kan worden betreden.
 
 ![chlimage_1-56](assets/chlimage_1-56.png)
 
 >[!NOTE]
 >
->Als het geselecteerde item zich buiten de `jcr_root` map bevindt, worden de contextafhankelijke menu-items **Exporteren naar server** en **Importeren vanuit server** uitgeschakeld.
+>Als het geselecteerde item zich buiten de map `jcr_root` bevindt, worden de contextafhankelijke menu-items **Exporteren naar server** en **Importeren vanuit server** uitgeschakeld.
 
 ### Volledige synchronisatie van inhoudspakketten {#full-content-package-synchronization}
 
-In het **AEM** menu, staan de opties van het Pakket **van de Inhoud van de** Uitvoer of van het Pakket **van de Inhoud van de** Invoer toe om het volledige project met de server te synchroniseren.
+In het **AEM** menu, staan de **Opties van het Pakket van de Inhoud van de Uitvoer** of **Inhoudspakket van de Invoer** toe om het volledige project met de server te synchroniseren.
 
 ![chlimage_1-57](assets/chlimage_1-57.png)
 
@@ -136,29 +136,29 @@ Als u op het meldingspictogram klikt, wordt het dialoogvenster Synchronisatie-st
 >
 >Alleen inhoud die is gemarkeerd als opgenomen in de filterregels van `filter.xml` wordt gesynchroniseerd, ongeacht de gebruikte synchronisatiemethode.
 >
->Daarnaast worden `.vltignore` bestanden ondersteund voor het uitsluiten van inhoud van en naar de opslagplaats.
+>Daarnaast worden `.vltignore`-bestanden ondersteund voor het uitsluiten van inhoud van en naar de opslagplaats.
 
-## HTML-code bewerken {#editing-htl-code}
+## HTML-code {#editing-htl-code} bewerken
 
 De extensie AEM Brackets beschikt ook over enkele automatische aantekeningen waarmee het schrijven van HTML-kenmerken en -expressies wordt vergemakkelijkt.
 
-### Kenmerk automatisch voltooid {#attribute-auto-completion}
+### Kenmerk automatisch aanvullen {#attribute-auto-completion}
 
-1. Typ in een HTML-kenmerk `sly`. Het kenmerk wordt automatisch ingevuld bij `data-sly-`.
+1. Typ `sly` in een HTML-kenmerk. Het kenmerk wordt automatisch ingevuld bij `data-sly-`.
 1. Selecteer het HTML-kenmerk in de vervolgkeuzelijst.
 
-### Automatische voltooiing van expressie {#expression-auto-completion}
+### Uitdrukking automatisch aanvullen {#expression-auto-completion}
 
-In een expressie `${}`worden veelvoorkomende variabelenamen automatisch aangevuld.
+Binnen een uitdrukking `${}`, zijn de gemeenschappelijke veranderlijke namen auto-voltooid.
 
 ## Meer informatie {#more-information}
 
-De extensie AEM Brackets is een opensource-project dat op GitHub wordt gehost door de [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) -organisatie, onder de Apache-licentie, versie 2.0:
+De extensie AEM Brackets is een opensource-project dat op GitHub wordt gehost door de organisatie [Adobe Marketing Cloud](https://github.com/Adobe-Marketing-Cloud) onder de Apache-licentie, versie 2.0:
 
 * Codeopslagplaats: [https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension](https://github.com/Adobe-Marketing-Cloud/aem-sightly-brackets-extension)
 * Apache-licentie, versie 2.0: [https://www.apache.org/licenses/LICENSE-2.0.html](https://www.apache.org/licenses/LICENSE-2.0.html)
 
-De de coderedacteur van Brackets is ook een open-bronproject, dat op GitHub door de organisatie van [Adobe Systems Incorporated](https://github.com/adobe) wordt ontvangen:
+De de coderedacteur van Brackets is ook een open-bronproject, dat op GitHub door de organisatie [Adobe Systems Incorporated](https://github.com/adobe) wordt ontvangen:
 
 * Codeopslagplaats: [https://github.com/adobe/brackets](https://github.com/adobe/brackets)
 
