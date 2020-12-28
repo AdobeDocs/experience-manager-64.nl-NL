@@ -18,41 +18,41 @@ ht-degree: 0%
 ---
 
 
-# Adobe PhoneGap Build-Cloud Service configureren {#configure-your-adobe-phonegap-build-cloud-service}
+# Adobe PhoneGap Build-Cloud Service {#configure-your-adobe-phonegap-build-cloud-service} configureren
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
-De **PhoneGap Build-tegel** op het toepassingsdashboard biedt de mogelijkheid om uw mobiele PhoneGap-toepassing te maken en distribueren via de Adobe PhoneGap Build-service.
+Met de **PhoneGap Build-tegel** op het dashboard van de toepassing kunt u uw mobiele PhoneGap-toepassing bouwen en distribueren via de Adobe PhoneGap Build-service.
 
-Alle ondersteunde platforms die zijn gedefinieerd in de tegel **App** beheren, worden met PhoneGap Build gemaakt wanneer u een externe build met de **PhoneGap Build** -tegel duwt.
+Alle ondersteunde platforms die zijn gedefinieerd in de **App**-tegel beheren, worden met PhoneGap Build gebouwd tijdens het drukken van een externe build met de **PhoneGap Build**-tegel.
 
-U kunt een externe build naar [https://build.phonegap.com](https://build.phonegap.com) duwen of de bron downloaden om lokaal met [PhoneGap CLI](https://docs.phonegap.com/references/phonegap-cli/)te bouwen.
+U kunt een verre bouwstijl aan [https://build.phonegap.com](https://build.phonegap.com) duwen of de bron downloaden om plaatselijk met [PhoneGap CLI](https://docs.phonegap.com/references/phonegap-cli/) te bouwen.
 
 ![PhoneGap Build-tegel](assets/chlimage_1-60.png)
 
-## De Cloud Service configureren {#configuring-the-cloud-service}
+## De Cloud Service {#configuring-the-cloud-service} configureren
 
 Om uit PhoneGap Build voordeel te halen moet u de AEM Cloud Service van de PhoneGap Build met uw de rekeningsinformatie van de PhoneGap Build vormen.
 
 Als u momenteel geen account hebt, navigeert u naar [https://build.phonegap.com](https://build.phonegap.com) en meldt u zich aan! Als u een Adobe Creative Cloud-lidmaatschap hebt, hebt u mogelijk ondersteuning voor maximaal 25 persoonlijke apps (apps zonder open bron).
 
-Nadat u hebt gecontroleerd of uw account actief is, navigeert u naar de AEM Cloud Management Console, met name de [PhoneGap Build](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
+Nadat u hebt gecontroleerd of uw PhoneGap Build-account actief is, navigeert u naar de AEM Cloud Management Console, met name de [PhoneGap Build Cloud Service](http://localhost:4502/etc/cloudservices/phonegap-build.html) (http://localhost:4502/etc/cloudservices/phonegap-build.html).
 
-Met de tegel Cloud Services **** beheren kunt u een nieuwe cloudserviceconfiguratie configureren.
+Gebruik de **Cloud Services beheren** tegel om een nieuwe configuratie van de wolkendienst te vormen.
 
-### De tegel Cloud Services beheren gebruiken {#using-manage-cloud-services-tile}
+### De tegel Cloud Services beheren {#using-manage-cloud-services-tile} gebruiken
 
-Voordat u uw app gaat maken met **PhoneGap Build** -tegel, moet u de cloudservices configureren met behulp van de tegel Cloud Services **** beheren op het AEM Mobile-dashboard.
+Voordat u begint met het maken van uw app met de tegel **PhoneGap Build**, moet u de cloudservices configureren met de tegel **Cloud Services beheren** van het AEM Mobile-dashboard.
 
 Volg onderstaande stappen om cloudservices voor uw app te configureren:
 
-1. Klik in de rechterbovenhoek van het element **Cloud Services** beheren.
+1. Klik in de rechterbovenhoek van het element **Cloud Services beheren**.
 
    ![chlimage_1-61](assets/chlimage_1-61.png)
 
-1. Kies de optie **PhoneGap Build** in het scherm Cloud Service **** toevoegen of bewerken.
+1. Kies **PhoneGap Build** optie van **Cloud Service toevoegen of uitgeven** scherm.
 
    Klik op **Next**.
 
@@ -60,17 +60,17 @@ Volg onderstaande stappen om cloudservices voor uw app te configureren:
 
 1. Voer uw gegevens in om een nieuwe cloudconfiguratie te maken.
 
-   Klik op **Verzenden** als de verificatie is voltooid. Deze geconfigureerde cloudconfiguratie wordt nu weergegeven in de tegel **Cloud Services** beheren.
+   Zodra het wordt geverifieerd, klik **Submit**. Deze geconfigureerde cloudconfiguratie wordt nu weergegeven in de tegel **Cloud Services beheren**.
 
    ![chlimage_1-63](assets/chlimage_1-63.png)
 
 ### Uw toepassing samenstellen met PhoneGap Build {#building-your-application-with-phonegap-build}
 
-Nadat u de cloudservices hebt geconfigureerd, kunt u uw toepassing samenstellen met **PhoneGap Build** -tegel. Klik in de rechterbovenhoek om een keuze te maken uit de opties **Build Remote** of **Download Source** .
+Nadat u de cloudservices hebt geconfigureerd, kunt u uw toepassing samenstellen met **PhoneGap Build**-tegel. Klik in de rechterbovenhoek om de optie **Extern maken** of **Bron downloaden** te kiezen.
 
 ![chlimage_1-64](assets/chlimage_1-64.png)
 
-Als u een externe build met Adobe PhoneGap Build wilt aanroepen, klikt u op Extern **** maken.
+Om een verre bouwstijl met Adobe PhoneGap Build aan te halen, klik **Bouw Verre**.
 
 >[!NOTE]
 >
@@ -87,7 +87,7 @@ Om van de interface van de bevellijn van PhoneGap voordeel te halen, zult u opst
 1. Platform SDK (iOS, Android, WindowsPhone, ...) en
 1. PhoneGap CLI
 
-Je kunt [hier](https://docs.phonegap.com/references/phonegap-cli/)meer lezen.
+U kunt meer [hier](https://docs.phonegap.com/references/phonegap-cli/) lezen.
 
 Nadat u de voorwaarden hebt geïnstalleerd, kunt u het beste een eenvoudige test uitvoeren door een eenvoudige app te maken en deze in de simulator of beter nog op het apparaat uit te voeren. U kunt het dan proberen:
 
@@ -101,7 +101,7 @@ phonegap run ios (or android, ...)
 >
 >add —emulate aan het eind van deze lijn als u niet het op uw aangesloten apparaat wilt in werking stellen.
 
-Nadat u hebt gecontroleerd dat het bovenstaande werkt, gebruikt u de **PhoneGap Build** -tegel om de bron **te** downloaden. Sla het bestand op en decomprimeer het naar uw lokale systeem. Zodra dat gebeurt:
+Als u hebt gecontroleerd dat het bovenstaande werkt, gebruikt u **PhoneGap Build** Naast **Bron downloaden**. Sla het bestand op en decomprimeer het naar uw lokale systeem. Zodra dat gebeurt:
 
 * naar dat opgeslagen bestand (map) navigeren
 * run &#39;phonegap run ios&#39; (of android, enz.)
