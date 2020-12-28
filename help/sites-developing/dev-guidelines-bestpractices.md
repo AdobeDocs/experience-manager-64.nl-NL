@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# AEM ontwikkeling - Richtsnoeren en beste praktijken{#aem-development-guidelines-and-best-practices}
+# AEM ontwikkeling - Richtlijnen en beste praktijken{#aem-development-guidelines-and-best-practices}
 
 ## Richtlijnen voor het gebruik van sjablonen en componenten {#guidelines-for-using-templates-and-components}
 
@@ -53,11 +53,11 @@ De volgende algemene regels voor ontwikkelaars zijn in de meeste gebruikelijke p
 
 Wanneer u uw eigen componenten maakt of een bestaande component aanpast, is het vaak het eenvoudigst (en veiligst) om bestaande definities opnieuw te gebruiken. Dezelfde beginselen gelden ook voor andere elementen binnen AEM, bijvoorbeeld de fouthandler.
 
-Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie van `/libs` naar `/apps/<your-project>`. Deze nieuwe definitie in `/apps`, kan volgens uw vereisten worden bijgewerkt.
+Dit kan worden gedaan door de bestaande definitie te kopiëren en te bedekken. Met andere woorden, het kopiëren van de definitie van `/libs` naar `/apps/<your-project>`. Deze nieuwe definitie, in `/apps`, kan volgens uw vereisten worden bijgewerkt.
 
 >[!NOTE]
 >
->Zie Bedekkingen [gebruiken](/help/sites-developing/overlays.md) voor meer informatie.
+>Zie [Bedekkingen gebruiken](/help/sites-developing/overlays.md) voor meer informatie.
 
 Bijvoorbeeld:
 
@@ -70,7 +70,7 @@ Bijvoorbeeld:
       * Bijvoorbeeld om het de componentenexemplaar van de Tekst aan te passen:
 
          * Van `/libs/foundation/components/text`
-         * to `/apps/myProject/components/text`
+         * tot `/apps/myProject/components/text`
 
 * [Pagina&#39;s aanpassen die worden weergegeven door de fouthandler](/help/sites-developing/customizing-errorhandler-pages.md#how-to-customize-pages-shown-by-the-error-handler)
 
@@ -79,21 +79,21 @@ Bijvoorbeeld:
    * Kopieer het standaardscript of de standaardscripts in de gegevensopslagruimte:
 
       * Van `/libs/sling/servlet/errorhandler/`
-      * to `/apps/sling/servlet/errorhandler/`
+      * tot `/apps/sling/servlet/errorhandler/`
 
 >[!CAUTION]
 >
->U **mag niets** wijzigen in het `/libs` pad.
+>U **mag niets** veranderen in `/libs` weg.
 >
->De reden hiervoor is dat de inhoud van `/libs` de volgende keer dat u een upgrade uitvoert van uw exemplaar, wordt overschreven (en dat deze inhoud ook kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
+>Dit komt doordat de inhoud van `/libs` de volgende keer wordt overschreven dat u uw exemplaar bijwerkt (en dat kan worden overschreven wanneer u een hotfix- of functiepakket toepast).
 >
 >Voor configuratie en andere wijzigingen:
 >
->1. het item kopiëren in `/libs` naar `/apps`
->1. wijzigingen aanbrengen in `/apps`
+>1. het item in `/libs` kopiëren naar `/apps`
+>1. eventuele wijzigingen aanbrengen binnen `/apps`
 
 
-## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt? {#when-to-use-jcr-queries-and-when-not-to-use-them}
+## Wanneer moeten JCR-query&#39;s worden gebruikt en wanneer moeten deze niet worden gebruikt {#when-to-use-jcr-queries-and-when-not-to-use-them}
 
 JCR-query&#39;s zijn een krachtig hulpmiddel als ze correct worden uitgevoerd. Zij zijn geschikt voor:
 
@@ -112,14 +112,14 @@ Gebruik voor het renderen van inhoud navigatie-toegang tot de inhoudsstructuur i
 
 >[!NOTE]
 >
->Als u de [Bouwer](/help/sites-developing/querybuilder-api.md)van de Vraag gebruikt, gebruikt u Vragen JCR, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
+>Als u [de Bouwer van de Vraag ](/help/sites-developing/querybuilder-api.md) gebruikt, gebruikt u Vragen JCR, aangezien de Bouwer van de Vraag JCR Vragen onder de kap produceert.
 
 
-## Beveiligingsoverwegingen {#security-considerations}
+## Veiligheidsoverwegingen {#security-considerations}
 
 >[!NOTE]
 >
->Het is ook nuttig om naar de [veiligheidscontrolelijst](/help/sites-administering/security-checklist.md)te verwijzen.
+>Het is ook nuttig om [veiligheidscontrolelijst](/help/sites-administering/security-checklist.md) van verwijzingen te voorzien.
 
 ### JCR-sessies (Repository) {#jcr-repository-sessions}
 
@@ -162,10 +162,10 @@ Dit geldt voor informatie die vertrouwelijk is voor het systeem (zoals configura
 
 Foutpagina&#39;s kunnen voor AEM worden aangepast. Dit is aan te raden, zodat de instantie geen bewegingssporen weergeeft bij interne serverfouten.
 
-Zie [Aanpassen van de Pagina&#39;s van de Fout die door de Handler](/help/sites-developing/customizing-errorhandler-pages.md) van de Fout voor volledige details wordt getoond.
+Zie [Foutpagina&#39;s aanpassen die door de fouthandler worden weergegeven](/help/sites-developing/customizing-errorhandler-pages.md) voor meer informatie.
 
-### Bestanden openen in het Java-proces {#open-files-in-the-java-process}
+### Bestanden openen in Java-proces {#open-files-in-the-java-process}
 
-Omdat AEM toegang kan krijgen tot een groot aantal bestanden, wordt aanbevolen het aantal [geopende bestanden voor een Java-proces](/help/sites-deploying/configuring.md#open-files-in-the-java-process) expliciet te configureren voor AEM.
+Omdat AEM tot een groot aantal dossiers kan toegang hebben wordt het geadviseerd dat het aantal [open dossiers voor een proces van Java ](/help/sites-deploying/configuring.md#open-files-in-the-java-process) uitdrukkelijk voor AEM wordt gevormd.
 
 Om dit probleem tot een minimum te beperken, moet de ontwikkeling ervoor zorgen dat geopende bestanden zo snel (zinvol) mogelijk correct worden gesloten.
