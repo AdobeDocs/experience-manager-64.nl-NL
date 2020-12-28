@@ -22,10 +22,10 @@ ht-degree: 0%
 
 Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te classificeren. Tags kunnen worden beschouwd als trefwoorden of labels die aan een pagina, element of andere inhoud kunnen worden gekoppeld, zodat zoekopdrachten naar die inhoud en verwante inhoud kunnen worden uitgevoerd.
 
-* Zie [Tags](/help/sites-administering/tags.md) beheren voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
+* Zie [Tags beheren](/help/sites-administering/tags.md) voor informatie over het maken en beheren van tags en over de inhoudstags die zijn toegepast.
 * Zie [Tags toevoegen voor ontwikkelaars](/help/sites-developing/tags.md) voor informatie over het coderingsframework en voor het opnemen en uitbreiden van tags in aangepaste toepassingen.
 
-## Tien redenen voor het gebruik van tags {#ten-reasons-to-use-tagging}
+## Tien redenen voor het gebruik van codering {#ten-reasons-to-use-tagging}
 
 1. Inhoud ordenen: het labelen maakt het leven voor auteurs gemakkelijker aangezien zij inhoud snel en zonder moeite kunnen organiseren .
 1. Tags organiseren: terwijl tags inhoud ordenen, ordenen hiërarchische taxonomieën/naamruimten tags.
@@ -40,15 +40,15 @@ Tags zijn een snelle en eenvoudige methode om inhoud binnen een website te class
 
 Wanneer u de inhoudsstructuur voor een site en het metagegevensschema voor elementen ontwerpt, moet u rekening houden met de lichte en toegankelijke manier waarop u tags kunt toewijzen.
 
-## Tags toepassen {#applying-tags}
+## Labels {#applying-tags} toepassen
 
-In de auteursomgeving, kunnen de auteurs markeringen toepassen door tot de pagina eigenschappen toegang te hebben en één of meerdere markeringen in het gebied van **Markeringen/Trefwoorden** in te gaan.
+In de auteursomgeving, kunnen de auteurs markeringen toepassen door tot de paginaeigenschappen toegang te hebben en één of meerdere markeringen in het **Codes/Sleutelwoorden** gebied in te gaan.
 
-Als u [vooraf gedefinieerde codes](/help/sites-administering/tags.md)wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** de `Tags/Keywords` veldkeuzelijst om een optie te selecteren in de lijst met toegestane codes voor de pagina. Tthe **Standard Tags** tab is the default namespace, which means there is no `namespace-string:` prefixed to the taxonomy.
+Als u [vooraf gedefinieerde codes](/help/sites-administering/tags.md) wilt toepassen, gebruikt u in het venster **Pagina-eigenschappen** de `Tags/Keywords`-veldkeuzelijst om een optie te selecteren in de lijst met toegestane codes voor de pagina. De tab **Standaardtags** is de standaardnaamruimte, wat betekent dat er geen `namespace-string:` aan de taxonomie is gekoppeld.
 
 ![chlimage_1-2](assets/chlimage_1-2.png)
 
-### Codes publiceren {#publishing-tags}
+### Codes {#publishing-tags} publiceren
 
 Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 
@@ -70,7 +70,7 @@ Net als bij pagina&#39;s kunt u het volgende uitvoeren op tags en naamruimten:
 
 Tagwolken tonen een wolk van markeringen, of voor de huidige pagina, de volledige website, of die het vaakst betreden. Labelwolken zijn een manier om de problemen te markeren die de gebruiker interesseert (geweest). De grootte van de tekst die wordt gebruikt om de tag weer te geven, is afhankelijk van het gebruik ervan.
 
-De component [Tagwolk](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (groep Algemeen) wordt gebruikt om een tagwolk aan een pagina toe te voegen.
+De component [Tag Cloud](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#tag-cloud) (groep Algemeen) wordt gebruikt om een tagcloud aan een pagina toe te voegen.
 
 ## Zoeken op tags {#searching-on-tags}
 
@@ -78,7 +78,7 @@ U kunt tags zoeken in zowel de auteur- als de publicatieomgeving.
 
 ### Zoekcomponent gebruiken {#using-search-component}
 
-Als u een [zoekcomponent](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) aan een pagina toevoegt, beschikt u over een zoekfunctie die tags bevat en die in zowel de auteur- als de publicatieomgeving kan worden gebruikt.
+Als u een [zoekcomponent](/help/sites-classic-ui-authoring/classic-page-author-edit-mode.md#search) aan een pagina toevoegt, beschikt u over een zoekfunctie die tags bevat en kan worden gebruikt in zowel de auteur- als de publicatieomgeving.
 
 ![chlimage_1-3](assets/chlimage_1-3.png)
 
