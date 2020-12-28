@@ -27,62 +27,62 @@ AEM integreert met [Search&amp;Promote](https://www.adobe.com/solutions/testing-
 * de functie voor afstandsbediening van Search&amp;Promote gebruiken om op aanvraag of geplande aanvragen van de productfeed uit te voeren
 * feed generation voor verschillende Search&amp;Promote-accounts, geconfigureerd als cloudservices configuraties.
 
-U moet een geldige rekening hebben en de verbinding [vormen aan Search&amp;Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote). U moet ook verifiëren dat u het correcte [gegevenscentrum](/help/sites-administering/search-and-promote.md#configuring-the-data-center) gebruikt en ervoor zorgen dat **Verre server URI **wordt gevormd.
+U moet een geldig account hebben en [de verbinding aan Search&amp;Promote](/help/sites-administering/search-and-promote.md#configuring-the-connection-to-search-promote) vormen. U moet ook verifiëren dat u correcte [gegevenscentrum](/help/sites-administering/search-and-promote.md#configuring-the-data-center) gebruikt en ervoor zorgen dat **Verre server URI **wordt gevormd.
 
-## De productfeed instellen {#set-up-the-product-feed}
+## De productfeed {#set-up-the-product-feed} instellen
 
 U moet eerst een hoofdmap van de website en een id-kenmerk invoeren. Dit doet u als volgt:
 
 1. Navigeer naar de configuratie van de Search&amp;Promote.
 1. Klik op **[!UICONTROL Edit]**.
-1. Click the **[!UICONTROL Index Connector Feed Configuration]** tab.
+1. Klik op het tabblad **[!UICONTROL Index Connector Feed Configuration]**.
 1. Voer de **[!UICONTROL Web site root]** en **[!UICONTROL Identifier attribute]** in.
 
    >[!NOTE]
    >
-   >Het **[!UICONTROL Web site root]** is bijvoorbeeld de basis van uw eCommerce-website `/content/geometrixx-outdoors/en`.
+   >De **[!UICONTROL Web site root]** is de basis van uw eCommerce-website, bijvoorbeeld `/content/geometrixx-outdoors/en`.
    >
-   >Het **[!UICONTROL Identifier attribute]** is een JCR-eigenschap die het product op unieke wijze identificeert: `identifier`.
+   >De eigenschap **[!UICONTROL Identifier attribute]** is een JCR-eigenschap die het product op unieke wijze identificeert: `identifier`.
 
 1. Klik op **[!UICONTROL OK]**.
 
 Vervolgens moet u ook twee configuraties in de webconsole bewerken voordat u productfeeds kunt genereren.
 
-### De dagelijkse CQ-Search&amp;Promote crawler-implementatie voor Geometrixx configureren {#configuring-the-day-cq-search-promote-products-crawler-implementation-for-geometrixx}
+### Het vormen van de de Producten Crawler van de Producten van de Dag CQ voor Geometrixx {#configuring-the-day-cq-search-promote-products-crawler-implementation-for-geometrixx}
 
-1. Ga naar [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Navigeer naar [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Klik op **[!UICONTROL Day CQ Search&Promote products crawler implementation for Geometrixx]**.
 1. Geef het rekeningnummer op van de Search&amp;Promote waarmee deze kruipper is gekoppeld. Het zal worden gebruikt om omhoog de configuratie van de wolkendiensten te kijken die door deze kruipper wordt gebruikt.
 1. Klik op **[!UICONTROL Save]**.
 
-### De dag-CQ-Search&amp;Promote producten configureren: voedergenerator voor Geometrixx {#configuring-the-day-cq-search-promote-products-feed-generator-for-geometrixx}
+### Het vormen van de Dag CQ de Producenten van de Diervoeders van de Search&amp;Promote voor Geometrixx {#configuring-the-day-cq-search-promote-products-feed-generator-for-geometrixx}
 
-1. Ga naar [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
+1. Navigeer naar [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr).
 1. Klik op **[!UICONTROL Day CQ Search&Promote products feed generator for Geometrixx]**.
 1. Geef het rekeningnummer op van de Search&amp;Promote waarmee deze generator is gekoppeld. Het zal worden gebruikt om de configuratie van de wolkendiensten op te zoeken die door deze generator wordt gebruikt.
 1. Klik op **[!UICONTROL Save]**.
 
-## De productfeed plannen {#schedule-the-product-feed}
+## De productfeed {#schedule-the-product-feed} plannen
 
 Om geplande voedergeneratie toe te laten, moet u een planner voor het vormen.\
 Een planner wordt gevormd als kindconfiguratie van uw specifieke de dienstenconfiguratie van de wolk van de Search&amp;Promote.
 
 1. Navigeer naar de configuratie van de Search&amp;Promote.
-1. Click **[!UICONTROL +]** next to **[!UICONTROL Scheduler configuration]**.
-1. Voer een formulier in **[!UICONTROL Title]** dat herkenbaar is voor auteurs van pagina&#39;s en een uniek formulier **[!UICONTROL Name]**.
+1. Klik **[!UICONTROL +]** naast **[!UICONTROL Scheduler configuration]**.
+1. Voer een **[!UICONTROL Title]** in die herkenbaar is voor auteurs van pagina&#39;s en een unieke **[!UICONTROL Name]**.
 1. Klik op **[!UICONTROL Create]**. Er wordt een dialoogvenster geopend.
 
    ![chlimage_1-108](assets/chlimage_1-108.png)
 
-1. Voer de **[!UICONTROL Remote Control Password]** code in. Dit is het wachtwoord dat u in uw zoek&amp;Pronotaccount hebt geconfigureerd.
+1. Voer de **[!UICONTROL Remote Control Password]** in. Dit is het wachtwoord dat u in uw zoek&amp;Pronotaccount hebt geconfigureerd.
 
    >[!NOTE]
    >
-   >Dit is niet het wachtwoord voor uw Search&amp;Promote-account. U kunt dit wachtwoord vinden en wijzigen door u aan te melden bij uw Search&amp;Promote-account en naar **[!UICONTROL Index]** en **[!UICONTROL Remote control]**.
+   >Dit is niet het wachtwoord voor uw Search&amp;Promote-account. U kunt dit wachtwoord vinden en wijzigen door u aan te melden bij uw Search&amp;Promote-account en naar **[!UICONTROL Index]** en **[!UICONTROL Remote control]** te gaan.
 
-1. Check **[!UICONTROL Enable schedule]** box.
+1. Schakel **[!UICONTROL Enable schedule]** in.
 1. Selecteer een **[!UICONTROL Schedule]**. Het is het eigenlijke schema voor de productie van diervoeders.
-1. Schakel de optie **[!UICONTROL On-demand indexing]** in of niet. Deze functie wordt gebruikt om de index van de Search&amp;Promote handmatig aan te roepen. Als **[!UICONTROL Request full products feed]** deze optie is ingeschakeld, vraagt Search&amp;Promote om een volledige productfeed. Anders wordt een basisproductfeed aangevraagd.
+1. Schakel **[!UICONTROL On-demand indexing]** in of niet. Deze functie wordt gebruikt om de index van de Search&amp;Promote handmatig aan te roepen. Als **[!UICONTROL Request full products feed]** wordt gecontroleerd, zal Search&amp;Promote om een volledige productvoer verzoeken. Anders wordt een basisproductfeed aangevraagd.
 
    >[!NOTE]
    >
