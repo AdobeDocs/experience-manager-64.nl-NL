@@ -22,20 +22,24 @@ ht-degree: 4%
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Met de [accountinstellingen](#account-settings) en de [gebruikersvoorkeuren](#user-preferences) kunt u de volgende opties en voorkeuren definiëren:
+Met de [accountinstellingen](#account-settings) en [gebruikersvoorkeuren](#user-preferences) kunt u de volgende opties en voorkeuren definiëren:
 
-* **De werkbalk** bewerken Selecteer of u de algemene bewerkingswerkbalk wilt gebruiken. Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u 
-**De knoppen Kopiëren**, **Knippen**, **Plakken** en **Verwijderen** voor gebruik met de alineacomponenten op die pagina:
+* **Bewerkbalk bewerkenSelecteer of u de algemene bewerkingswerkbalk wilt gebruiken.**
+Deze werkbalk, die boven in het browservenster wordt weergegeven, geeft u 
+**De knoppen Kopiëren**,  **Knippen**,  **Plakken** en  **** Verwijderen voor gebruik met de alineacomponenten op die pagina:
 
    * Weergeven indien nodig (standaard)
    * Altijd tonen
    * Verborgen houden
 
-* **Imiteren als** Met [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
+* **Imiteren**
+alsMet de  [imiteer ](/help/sites-administering/security.md#impersonating-another-user) asfunctionaliteit kan een gebruiker namens een andere gebruiker werken.
 
-* **Taal** De taal die voor UI van het auteursmilieu moet worden gebruikt. Selecteer de gewenste taal in de beschikbare lijst.
+* ****
+LanguageDe taal die voor de gebruikersinterface van de ontwerpomgeving moet worden gebruikt. Selecteer de gewenste taal in de beschikbare lijst.
 
-* **Vensterbeheer** Selecteer een van de volgende opties:
+* **Windows**
+ManagementSelecteer een van de volgende opties:
 
    * Meerdere vensters (standaard): Pagina&#39;s worden in een nieuw venster geopend.
    * Enkel venster: Pagina&#39;s worden geopend in het huidige venster.
