@@ -26,7 +26,7 @@ ht-degree: 17%
 
 ## Inleiding {#introduction}
 
-AEM 6.4.3.0 introduceert Admin Console steun voor AEM instanties en Adobe IMS (het Systeem van Identity Management) gebaseerde authentificatie voor **AEM klanten van Managed Services** .
+AEM 6.4.3.0 introduceert Admin Console steun voor AEM instanties en Adobe IMS (het Systeem van Identity Management) gebaseerde authentificatie voor **AEM klanten Managed Services**.
 
 AEM aan boord gaan aan de Admin Console zal AEM klanten van Managed Services toestaan om alle gebruikers van de Experience Cloud in één console te beheren. Gebruikers en groepen kunnen worden toegewezen aan productprofielen die aan AEM instanties zijn gekoppeld, zodat zij zich kunnen aanmelden bij een specifieke instantie.
 
@@ -48,7 +48,7 @@ De gebruikerslogin stroom wordt hieronder getoond, zal de gebruiker aan IMS en n
 
 ![image2018-9-23_23-55-8](assets/image2018-9-23_23-55-8.png)
 
-## How To Set Up {#how-to-set-up}
+## {#how-to-set-up} instellen
 
 ### Organisaties on-boarden in Admin Console {#onboarding-organizations-to-admin-console}
 
@@ -72,9 +72,9 @@ Zodra een klant als IMS Organisatie bestaat en AMS met levering van de klant voo
 
 >[!NOTE]
 >
->Zie het artikel [deze pagina voor meer informatie over de Adobe Identity Management Basics, inclusief de IDP-configuratie.](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html)
+>Zie het artikel [deze pagina](https://helpx.adobe.com/nl/enterprise/using/set-up-identity.html) voor meer informatie over de Adobe Identity Management Basics, inclusief de IDP-configuratie.
 >
->Raadpleeg het artikel [deze pagina](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html)voor meer informatie over Enterprise Administration en Admin Console.
+>Zie het artikel [deze pagina](https://helpx.adobe.com/nl/enterprise/managing/user-guide.html) voor meer informatie over Enterprise Administration en Admin Console.
 
 ### Gebruikers aan boord nemen van de Admin Console {#onboarding-users-to-the-admin-console}
 
@@ -92,7 +92,7 @@ Gebruikers kunnen ook handmatig worden gemaakt als de klant deze methode al gebr
 
 ![image2018-9-23_20-39-9](assets/image2018-9-23_20-39-9.png)
 
-#### File Upload in the Admin Console UI {#file-upload-in-the-admin-console-ui}
+#### Bestand uploaden in de gebruikersinterface van de Admin Console {#file-upload-in-the-admin-console-ui}
 
 Voor een eenvoudige afhandeling van het maken van gebruikers kan een CSV-bestand worden geüpload om gebruikers in bulk toe te voegen:
 
@@ -124,15 +124,15 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 
 >[!NOTE]
 >
->Raadpleeg de [documentatiepagina](https://adobe-apiplatform.github.io/user-sync.py/en/)voor meer informatie over het gereedschap Gebruikerssynchronisatie.
+>Raadpleeg de [documentatiepagina](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer informatie over het gereedschap Gebruikerssynchronisatie.
 >
 >
->The User Sync Tool needs to register as an Adobe I/O client UMAPI using the procedure described [here](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe I/O registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
->The Adobe I/O Console Documentation can be found [here](https://www.adobe.io/apis/cloudplatform/console.html).
+>De documentatie van de Adobe I/O-console vindt u [hier](https://www.adobe.io/apis/cloudplatform/console.html).
 >
 >
->The User Management API that is used by the User Sync Tool is covered at this [location](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
+>De gebruikersbeheer-API die wordt gebruikt door het gereedschap Gebruikerssynchronisatie, wordt behandeld op deze [locatie](https://www.adobe.io/apis/cloudplatform/umapi-new.html).
 
 >[!NOTE]
 >
@@ -146,7 +146,7 @@ Wanneer de beheerder van het Product van de klant zich bij Admin Console aanmeld
 
 ![screen_shot_2018-09-17at105804pm](assets/screen_shot_2018-09-17at105804pm.png)
 
-In this example, the org *AEM-MS-Onboard* has 32 instances spanning different topologies and environments like Stage, Prod, etc.
+In dit voorbeeld heeft de org *AEM-MS-Onboard* 32 instanties die verschillende topologieën en omgevingen omspannen, zoals het werkgebied, Prod, enz.
 
 ![screen_shot_2018-09-17at105517pm](assets/screen_shot_2018-09-17at105517pm.png)
 
@@ -172,7 +172,7 @@ AEM kunnen lokale aanmeldingen voor Admin-gebruikers blijven ondersteunen, aange
 
 #### Op IMS gebaseerde aanmelding {#ims-based-login}
 
-Voor andere gebruikers kan de op IMS gebaseerde aanmelding worden gebruikt zodra IMS in de instantie is geconfigureerd. The user will first click on the **Sign in with Adobe** button as shown below:
+Voor andere gebruikers kan de op IMS gebaseerde aanmelding worden gebruikt zodra IMS in de instantie is geconfigureerd. De gebruiker zal eerst op **Teken binnen met Adobe** knoop zoals hieronder getoond klikken:
 
 ![image2018-9-18_0-10-32](assets/image2018-9-18_0-10-32.png)
 
@@ -190,7 +190,7 @@ Nadat de verificatie is voltooid, wordt de gebruiker teruggeleid naar AEM en aan
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
-### Bestaande gebruikers migreren {#migrating-existing-users}
+### Bestaande gebruikers {#migrating-existing-users} migreren
 
 Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en nu naar IMS worden gemigreerd, moet er een migratiestap zijn.
 
@@ -198,13 +198,13 @@ Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen wo
 
 Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van IMS-provisioning.
 
-### Het beheren van Toestemmingen en ACLs in AEM {#managing-permissions-and-acls-in-aem}
+### Bevoegdheden en ACL&#39;s beheren in AEM {#managing-permissions-and-acls-in-aem}
 
 Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt door scheiding van Gebruikersgroepen die afkomstig zijn van IMS (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waar de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
 
 In het onderstaande voorbeeld voegen we gesynchroniseerde groepen toe aan de lokale *Dam_Users*-groep.
 
-Hier, is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie Gebruikers **aan boord nemen van Admin Consoles** hierboven.)
+Hier, is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie **Gebruikers aan boord nemen van de Admin Console** hierboven.)
 
 &amp;ast;Merk op dat gebruikersgroepen slechts gesynchroniseerd worden wanneer de gebruikers aan de instantie, voor klanten die een groot aantal gebruikers en groepen hebben, een nut van de Synchronisatie van de Groep kan door AMS worden in werking gesteld om groepen voor toegangsbeheer en toestemmingenbeheer vooraf te halen zoals hierboven beschreven.
 
@@ -222,7 +222,7 @@ AEM kunnen de gebruikersgroepen die via IMS zijn gesynchroniseerd, als leden wor
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 
-Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een efficiënte manier om toestemmingen voor gesynchroniseerde groepen te beheren en wordt algemeen gebruikt in op LDAP gebaseerde Methodes van de Authentificatie eveneens.
+Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren en wordt ook veel gebruikt in LDAP-gebaseerde verificatiemethoden.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)
 
