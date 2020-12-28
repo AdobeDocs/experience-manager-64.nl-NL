@@ -18,13 +18,13 @@ ht-degree: 4%
 ---
 
 
-# De welkomstconsole aanpassen (klassieke gebruikersinterface){#customizing-the-welcome-console-classic-ui}
+# De welkomstconsole aanpassen (klassieke UI){#customizing-the-welcome-console-classic-ui}
 
 >[!CAUTION]
 >
 >Deze pagina gaat over de klassieke gebruikersinterface.
 >
->Zie De consoles [](/help/sites-developing/customizing-consoles-touch.md) aanpassen voor meer informatie over de standaardinterface met aanraakbediening.
+>Zie [De consoles aanpassen](/help/sites-developing/customizing-consoles-touch.md) voor meer informatie over de standaardinterface met aanraakbediening.
 
 De welkomstconsole biedt een lijst met koppelingen naar de verschillende consoles en functies in AEM.
 
@@ -32,8 +32,8 @@ De welkomstconsole biedt een lijst met koppelingen naar de verschillende console
 
 Het is mogelijk om de verbindingen te vormen die zichtbaar zijn. Dit kan voor specifieke gebruikers en/of groepen worden bepaald. De te nemen acties zijn afhankelijk van het doeltype (dat met de sectie van de console correleert zij binnen zijn):
 
-* [Hoofdconsoles](#links-in-main-console-left-pane) - Koppelingen in de hoofdconsole (linkerdeelvenster)
-* [Bronnen, Documentatie en Referentie, Functies](#links-in-sidebar-right-pane) - Koppelingen in de zijbalk (rechterdeelvenster)
+* [Hoofdconsoles](#links-in-main-console-left-pane)  - Koppelingen in de hoofdconsole (linkerdeelvenster)
+* [Bronnen, Documentatie en Referentie, Functies](#links-in-sidebar-right-pane)  - Koppelingen in de zijbalk (rechterdeelvenster)
 
 ## Koppelingen in hoofdconsole (linkerdeelvenster) {#links-in-main-console-left-pane}
 
@@ -63,17 +63,17 @@ Machtigingen op knooppuntniveau bepalen of de koppeling zichtbaar is of niet. De
 
 Bijvoorbeeld:
 
-* Als u de toegang tot **gereedschappen** wilt beperken, verwijdert u leestoegang uit
+* Als u de toegang tot **Gereedschappen** wilt beperken, verwijdert u leestoegang uit
 
    `/libs/wcm/core/content/misc`
 
-Zie de sectie [](/help/sites-administering/security.md) Beveiliging voor meer informatie over het instellen van de gewenste machtigingen.
+Zie [Sectie van de Veiligheid](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
 
 ### Koppelingen in zijbalk (rechterdeelvenster) {#links-in-sidebar-right-pane}
 
 ![cq_welcomescreensidebar](assets/cq_welcomescreensidebar.png)
 
-Deze koppelingen zijn gebaseerd op het bestaan van ** en het lezen van toegang tot knooppunten onder het volgende pad:
+Deze verbindingen zijn gebaseerd op het bestaan van *en* leestoegang tot knopen onder de volgende weg:
 
 `/libs/cq/core/content/welcome`
 
@@ -154,7 +154,7 @@ Er zijn drie secties (die iets uit elkaar liggen) die standaard worden opgegeven
    <td><code>/libs/cq/core/content/welcome/features/config</code></td> 
   </tr> 
   <tr> 
-   <td> Status van webconsole<br /> </td> 
+   <td> Status van webconsole-dump<br /> </td> 
    <td><code>/libs/cq/core/content/welcome/features/statusdump</code></td> 
   </tr> 
  </tbody> 
@@ -178,21 +178,21 @@ Het is mogelijk om een koppeling te verbergen voor specifieke gebruikers of groe
 
 Bijvoorbeeld:
 
-* Als u de koppeling naar **rapporten** wilt verwijderen, verwijdert u de leestoegang uit
+* Als u de koppeling naar **Rapporten** wilt verwijderen, verwijdert u leestoegang uit
 
    `/libs/cq/core/content/welcome/resources/reports`
 
-* Om de verbinding aan **Pakketten** te verwijderen, verwijder leestoegang uit
+* Als u de koppeling naar **Pakketten** wilt verwijderen, verwijdert u leestoegang uit
 
    `/libs/cq/core/content/welcome/features/packages`
 
-Zie de sectie [](/help/sites-administering/security.md) Beveiliging voor meer informatie over het instellen van de gewenste machtigingen.
+Zie [Sectie van de Veiligheid](/help/sites-administering/security.md) voor meer informatie over hoe te om de gewenste toestemmingen te plaatsen.
 
-### Selectiemechanisme koppelen {#link-selection-mechanism}
+### Selectiemechanisme {#link-selection-mechanism} koppelen
 
-In `/libs/cq/core/components/welcome/welcome.jsp` gebruik wordt gemaakt van [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), die een vraag op knopen uitvoert die het bezit hebben:
+In `/libs/cq/core/components/welcome/welcome.jsp` wordt het gebruik gemaakt van [ConsoleUtil](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/commons/ConsoleUtil.html), die een vraag op knopen uitvoert die het bezit hebben:
 
-* `jcr:mixinTypes` met de waarde: `cq:Console`
+* `jcr:mixinTypes` met de waarde:  `cq:Console`
 
 >[!NOTE]
 >
@@ -204,13 +204,13 @@ In `/libs/cq/core/components/welcome/welcome.jsp` gebruik wordt gemaakt van [Con
 
 
 
-Wanneer een gebruiker of een groep geen leestoestemming op een knoop met de mixin heeft `cq:Console`, wordt die knoop niet teruggewonnen door het `ConsoleUtil` onderzoek, vandaar is het niet vermeld op de console.
+Wanneer een gebruiker of een groep geen lees toestemming op een knoop met de mixin `cq:Console` heeft, wordt die knoop niet teruggewonnen door `ConsoleUtil` onderzoek, vandaar is het niet vermeld op de console.
 
-### Een aangepast item toevoegen {#adding-a-custom-item}
+### Aangepast item {#adding-a-custom-item} toevoegen
 
-Met het selectiemechanisme [voor](#link-selection-mechanism) koppelingen kunt u uw eigen aangepaste item toevoegen aan de lijst met koppelingen.
+Het [mechanisme van de verbindingsselectie](#link-selection-mechanism) kan worden gebruikt om uw eigen douanepunt aan de lijst van verbindingen toe te voegen.
 
-Voeg uw douanepunt aan de lijst toe door de `cq:Console` mengeling aan uw widget of middel toe te voegen. Hiervoor definieert u de eigenschap:
+Voeg uw douanepunt aan de lijst toe door `cq:Console` toe te voegen meng aan uw widget of middel. Hiervoor definieert u de eigenschap:
 
-* `jcr:mixinTypes` met de waarde: `cq:Console`
+* `jcr:mixinTypes` met de waarde:  `cq:Console`
 
