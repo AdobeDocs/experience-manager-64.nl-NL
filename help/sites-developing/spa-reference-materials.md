@@ -1,6 +1,6 @@
 ---
-title: SPA-referentiematerialen
-seo-title: SPA-referentiematerialen
+title: Referentiematerialen SPA
+seo-title: Referentiematerialen SPA
 description: Een overzicht van de API-referenties voor één pagina-toepassing en opslagruimten voor broncode
 seo-description: Een overzicht van de API-referenties voor één pagina-toepassing en opslagruimten voor broncode
 uuid: 503a1bec-da8b-4f5e-adcc-fe65c3c96034
@@ -18,16 +18,16 @@ ht-degree: 0%
 ---
 
 
-# SPA-referentiematerialen {#spa-reference-materials}
+# Referentiematerialen {#spa-reference-materials} SPA
 
-## API-verwijzingen voor SPA Javascript{#spa-javascript-api-references}
+## JavaScript API-referenties SPA{#spa-javascript-api-references}
 
-Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules voor het AEM SPA Editor SDK-framework.
+Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules voor het framework van de AEM SPA Editor SDK.
 
 >[!NOTE]
->De eigenschap van de Redacteur van de Toepassing van de Enige-Pagina (SPA) vereist [AEM 6.4 de dienstpak 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) of nieuwer.
+>De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist [AEM 6.4 de dienstpak 2](https://helpx.adobe.com/experience-manager/6-4/release-notes/sp-release-notes.html) of nieuwer.
 >
->De redacteur van het KUUROORD is de geadviseerde oplossing voor projecten die het kader van het KUUROORD gebaseerde cliënt-kant teruggeven (b.v. Reageren of Hoekig) vereisen.
+>De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
 
 * [Componenttoewijzing](https://www.npmjs.com/package/@adobe/aem-spa-component-mapping)
 * [Paginamodellenbeheer](https://www.npmjs.com/package/@adobe/aem-spa-page-model-manager)
@@ -36,7 +36,7 @@ Hieronder vindt u de beschikbare JavaScript API-referenties van de NPM-modules v
 
 ## Open Source GitHub Repositories {#github-repositories}
 
-Het volgende is de open bronbewaarplaatsen op GitHub voor de bibliotheken van het KUUROORD.
+Het volgende is de open bronbewaarplaatsen op GitHub voor de SPA bibliotheken.
 
 * [Componenttoewijzing](https://github.com/adobe/aem-spa-component-mapping)
 * [Paginamodellenbeheer](https://github.com/adobe/aem-spa-page-model-manager)
