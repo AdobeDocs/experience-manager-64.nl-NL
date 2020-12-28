@@ -18,9 +18,9 @@ ht-degree: 0%
 ---
 
 
-# Landingpagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
+# Openingspagina&#39;s integreren met Adobe Analytics{#integrating-landing-pages-with-adobe-analytics}
 
-AEM heeft de landende paginaoplossing met [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) door de volgende vraag-aan-actie (CTA) componenten te gebruiken geïntegreerd:
+AEM heeft de landingspagina-oplossing met [Adobe Analytics](https://www.omniture.com/en/products/analytics/sitecatalyst) door de volgende vraag-aan-actie (CTA) componenten te gebruiken geïntegreerd:
 
 1. Klikken door component
 1. Grafische koppelingscomponent
@@ -29,15 +29,15 @@ Deze componenten maken bepaalde kenmerken beschikbaar die via Adobe Analytics-va
 
 ## Vereisten {#prerequisites}
 
-Adobe raadt u aan de [bestaande AEM-Adobe Analytics-integratie](/help/sites-administering/adobeanalytics.md) door te nemen om te begrijpen hoe deze integratie werkt.
+Adobe raadt u aan de [bestaande integratie AEM-Adobe Analytics](/help/sites-administering/adobeanalytics.md) door te nemen om te begrijpen hoe deze integratie werkt.
 
 ## Componenten beschikbaar voor toewijzing {#components-available-for-mapping}
 
-In AEM, kan de **Vraag aan de componenten van de Actie** - **ClickThroughLink** en **GraphicalLink** - hier in sidekick wordt getoond, aan de variabelen van Adobe Analytics worden in kaart gebracht.
+In AEM, kunnen **Vraag aan Action** componenten - **ClickThroughLink** en **GraphicalLink** - hier in sidekick worden getoond, aan de variabelen van Adobe Analytics worden in kaart gebracht.
 
 ![chlimage_1-21](assets/chlimage_1-21.jpeg)
 
-### Onderdelen van bestemmingspagina aan Adobe Analytics toewijzen {#mapping-landing-page-components-to-adobe-analytics}
+### Onderdelen van landingspagina&#39;s toewijzen aan Adobe Analytics {#mapping-landing-page-components-to-adobe-analytics}
 
 U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
 
@@ -90,7 +90,7 @@ U kunt landingspaginacomponenten toewijzen aan Adobe Analytics:
 </table>
 
 1. Wijs deze belichte kenmerken toe aan alle Adobe Analytics-variabelen van de zoeker naar inhoud. Het framework is nu gebruiksklaar.
-1. U kunt nu een nieuwe openingspagina maken of een bestaande openingspagina openen met bestaande CTA-componenten en op het tabblad **Cloud Services** in **Pagina-eigenschappen** in het hulpkeuzerondje klikken (in de geoptimaliseerde interface met aanraakopties selecteert u Eigenschappen **** openen en klikt u op **Cloud Services**) en het framework configureren dat u wilt gebruiken met de bestemmingspagina. Selecteer het framework in de vervolgkeuzelijst.
+1. U kunt nu een nieuwe bestemmingspagina maken of een bestaande landingspagina met bestaande componenten openen CTA en **Cloud Services** lusje in **Pagina Eigenschappen** van sidekick (in aanraking-geoptimaliseerde UI, selecteer **Open Eigenschappen** en klik **Cloud Services**) en vorm het kader om met landingspagina te gebruiken. Selecteer het framework in de vervolgkeuzelijst.
 
    ![chlimage_1-25](assets/chlimage_1-25.png)
 
