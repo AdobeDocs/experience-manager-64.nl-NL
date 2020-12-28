@@ -63,7 +63,7 @@ Afhankelijk van de schaal van uw systeem kan de ontwikkelomgeving beschikken ove
 
 ### Kwaliteitsborging {#quality-assurance}
 
-This environment is used by the quality assurance team to comprehensively [test](/help/sites-developing/test-plan.md) your new system; both design and function. De omgeving moet beschikken over auteur- en publicatieomgevingen met geschikte content. Ook moet het alle noodzakelijke services bieden om een volledige reeks tests mogelijk te maken.
+Deze omgeving wordt door het kwaliteitsbewakingsteam gebruikt om uw nieuwe systeem volledig [test](/help/sites-developing/test-plan.md); zowel ontwerp als functie. De omgeving moet beschikken over auteur- en publicatieomgevingen met geschikte content. Ook moet het alle noodzakelijke services bieden om een volledige reeks tests mogelijk te maken.
 
 ### Staging {#staging}
 
@@ -141,6 +141,6 @@ Productiecontent moet van de productieomgeving naar de stagingomgeving worden ve
 Content kan worden overgedragen:
 
 * Tussen de verschillende omgevingen: door pakketten te exporteren en te importeren.
-* Between different instances - by directly replicating ([AEM replication](/help/sites-deploying/replication.md)) the content (using a HTTP, or HTTPS, connection).
+* Tussen verschillende instanties - door ([AEM replicatie](/help/sites-deploying/replication.md)) de inhoud (gebruikend een HTTP, of HTTPS, verbinding) direct te herhalen.
 
 ![chlimage_1-1](assets/chlimage_1-1.png)
