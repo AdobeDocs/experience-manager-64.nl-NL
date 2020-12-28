@@ -22,15 +22,15 @@ ht-degree: 2%
 
 AEM biedt u de mogelijkheid om uw account en bepaalde aspecten van de auteursomgeving te configureren.
 
-Using the [User](/help/sites-authoring/user-properties.md#user-settings) option in the [header](/help/sites-authoring/basic-handling.md#the-header) and the associated [My Preferences](#my-preferences) dialog, you can modify your user options.
+Met de optie [Gebruiker](/help/sites-authoring/user-properties.md#user-settings) in het [header](/help/sites-authoring/basic-handling.md#the-header) en het bijbehorende [Mijn Voorkeuren](#my-preferences) dialoogvenster kunt u uw gebruikersopties wijzigen.
 
 ## Gebruikersinstellingen {#user-settings}
 
-In het dialoogvenster **Gebruikersinstellingen** hebt u toegang tot:
+In het instellingendialoogvenster **Gebruiker** hebt u toegang tot:
 
 * Imiteren als
 
-   * Met de functie [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
+   * Met [Imiteren als](/help/sites-administering/security.md#impersonating-another-user) functionaliteit kan een gebruiker namens een andere gebruiker werken.
 
 * Profiel
 
@@ -60,7 +60,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
    Hiermee definieert u het gedrag voor het openen van vensters. Selecteer een van de volgende opties:
 
-   * **Meerdere vensters** (standaard)
+   * **Meerdere vensters**  (standaard)
 
       * Pagina&#39;s worden in een nieuw venster geopend.
    * **Eén venster**
@@ -103,7 +103,7 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 
 * **Klassieke ontwerpervaring gebruiken**
 
-   Met deze optie schakelt u op [klassieke UI](/help/sites-classic-ui-authoring/home.md)gebaseerde paginaontwerpen in. Standaard wordt de standaardinterface gebruikt.
+   Met deze optie schakelt u op [klassieke UI](/help/sites-classic-ui-authoring/home.md) gebaseerde pagina-authoring in. Standaard wordt de standaardinterface gebruikt.
 
 * **Introductiepagina van middelen inschakelen**
 
