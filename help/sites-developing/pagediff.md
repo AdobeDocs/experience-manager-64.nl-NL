@@ -22,13 +22,13 @@ ht-degree: 0%
 
 ## Overzicht van functies {#feature-overview}
 
-Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina naast elkaar met een vorige versie kunnen vergelijken met de gemarkeerde verschillen.
+Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Pagina Diff](/help/sites-authoring/page-diff.md)voor meer informatie over deze gebruikersfunctie.
+Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Paginadiff](/help/sites-authoring/page-diff.md) voor meer informatie over deze gebruikersfunctie.
 
 ## Bewerkingsdetails {#operation-details}
 
-Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken, op de achtergrond opnieuw gemaakt door AEM om het schuiven te vergemakkelijken. Dit is nodig om de inhoud [voor vergelijking](/help/sites-authoring/page-diff.md#presentation-of-differences)naast elkaar te kunnen weergeven.
+Wanneer u versies van een pagina vergelijkt, wordt de vorige versie die de gebruiker wil vergelijken opnieuw gemaakt door op de achtergrond AEM te plaatsen om het afschuiven te vergemakkelijken. Dit is nodig om de inhoud [te kunnen weergeven voor vergelijking naast elkaar](/help/sites-authoring/page-diff.md#presentation-of-differences).
 
 Deze recreatiebewerking wordt intern AEM uitgevoerd en is transparant voor de gebruiker en vereist geen interventie. Nochtans zou een beheerder die de bewaarplaats bijvoorbeeld in CRX DE Lite bekijkt deze ontspannen versies binnen de inhoudsstructuur zien.
 
@@ -44,7 +44,7 @@ Omdat bij het gebruik van het mechanisme voor pagina-afbreking AEM de vorige ver
 
 >[!CAUTION]
 >
->Als u de functie voor pagina-diff wilt gebruiken, moet de gebruiker over de machtiging **Wijzigen/Maken/Verwijderen** voor het knooppunt beschikken `/content/versionhistory`.
+>Als u de functie voor pagina-diff wilt gebruiken, moet de gebruiker de **machtiging Wijzigen/Maken/Verwijderen** op het knooppunt `/content/versionhistory` hebben.
 
 ### Vanaf AEM 6.4.3 {#as-of-aem}
 
@@ -56,9 +56,9 @@ Deze inhoud wordt gecreeerd door een de dienstgebruiker met toestemmingen die zi
 
 Er wordt automatisch een opschoningstaak uitgevoerd om deze tijdelijke inhoud op te schonen.
 
-## Beperkingen voor ontwikkelaars {#developer-limitations}
+## Ontwikkelaarsbeperkingen {#developer-limitations}
 
-Eerder, in Klassieke UI, moest de speciale ontwikkelingsoverweging worden gemaakt om AEM het verschillen (zoals het gebruiken van `cq:text` markeringslib, of douane te vergemakkelijken die de dienst `DiffService` OSGi in componenten integreert) te vergemakkelijken. Dit is niet meer nodig voor de nieuwe functie voor Diff, aangezien het diff cliënt-kant via DOM vergelijking voorkomt.
+Eerder, in Klassieke UI, moest de speciale ontwikkelingsoverweging worden gemaakt om AEM het verschillen (zoals het gebruiken van `cq:text` markeringslib, of douane te vergemakkelijken die de `DiffService` OSGi dienst in componenten integreert). Dit is niet meer nodig voor de nieuwe functie voor Diff, aangezien het diff cliënt-kant via DOM vergelijking voorkomt.
 
 Er zijn echter een aantal beperkingen die door de ontwikkelaar in overweging moeten worden genomen.
 
