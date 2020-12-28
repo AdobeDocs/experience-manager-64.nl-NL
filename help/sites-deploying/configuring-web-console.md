@@ -41,13 +41,13 @@ De console is toegankelijk vanaf `../system/console`; bijvoorbeeld:
 
 ## Configuratie {#configuration}
 
-Het lusje van de **Configuratie** wordt gebruikt voor het vormen van de bundels OSGi, en is daarom het onderliggende mechanisme voor het vormen van AEM systeemparameters.
+Het **tabblad Configuration** wordt gebruikt voor het configureren van de OSGi-bundels en is daarom het onderliggende mechanisme voor het configureren van AEM systeemparameters.
 
 >[!NOTE]
 >
->Zie Configuratie [OSGi met de Console](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) van het Web voor verdere details.
+>Zie [OSGi Configuratie met de Console van het Web](/help/sites-deploying/configuring-osgi.md#osgi-configuration-with-the-web-console) voor verdere details.
 
-Het tabblad **Configuratie** kan worden geopend door:
+De **tab Configuration** kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -106,7 +106,7 @@ Vervolgens kunt u de parameters naar wens bijwerken en:
 
 ## Bundels {#bundles}
 
-Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die voor AEM zijn vereist. Het tabblad is toegankelijk op een van de volgende manieren:
+Het tabblad **Bundels** is het mechanisme voor de installatie van de OSGi-bundels die vereist zijn voor AEM. Het tabblad is toegankelijk op een van de volgende manieren:
 
 * Het vervolgkeuzemenu:
 
@@ -124,7 +124,7 @@ Met dit tabblad kunt u:
 
 * **Installeren of bijwerken**
 
-   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en specificeren of het onmiddellijk **Begin** en op welk Niveau **van het** Begin zou moeten beginnen.
+   U kunt **Bladeren** om het dossier te vinden die uw bundel bevatten en te specificeren of het **Begin** onmiddellijk en zou moeten **Begin Niveau**.
 
 * **Opnieuw laden**
 
@@ -154,11 +154,11 @@ Met dit tabblad kunt u:
 
 >[!NOTE]
 >
->Na **Update** wordt het geadviseerd om een **Refresh Pakketten** uit te voeren.
+>Na **Update** wordt het geadviseerd om **Pakketten vernieuwen** uit te voeren.
 
 ## Onderdelen {#components}
 
-Op het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
+Met het tabblad **Componenten** kunt u de verschillende componenten in- en/of uitschakelen. Het kan worden benaderd door:
 
 * Het vervolgkeuzemenu:
 
@@ -168,7 +168,7 @@ Op het tabblad **Componenten** kunt u de verschillende componenten in- en/of uit
 
    `http://localhost:4502/system/console/components`
 
-Er wordt een lijst met componenten weergegeven. Er zijn verschillende pictogrammen beschikbaar waarmee u configuratiedetails voor een specifieke component kunt inschakelen, uitschakelen of (indien van toepassing) openen.
+Er wordt een lijst met componenten weergegeven. Er zijn verschillende pictogrammen beschikbaar waarmee u configuratiedetails voor een specifieke component kunt inschakelen, uitschakelen of (waar van toepassing) openen.
 
 ![screen_shot_2012-02-15at52144pm-1](assets/screen_shot_2012-02-15at52144pm-1.png)
 
