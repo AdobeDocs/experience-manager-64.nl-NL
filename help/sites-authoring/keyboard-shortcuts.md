@@ -20,11 +20,11 @@ ht-degree: 2%
 
 # Sneltoetsen voor consoles{#keyboard-shortcuts-for-consoles}
 
-In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing op het gebruik van consoles, andere op [paginabewerking](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
+In AEM zijn verschillende sneltoetsen beschikbaar. Sommige zijn van toepassing op het gebruik van consoles, andere op [pagina&#39;s bewerken](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 >[!NOTE]
 >
->Welke [wijzigingstoetsen](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) vereist zijn voor AEM sneltoetsen, is afhankelijk van het besturingssysteem.
+>De [wijzigingstoetsen](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys) die vereist zijn voor AEM sneltoetsen variëren afhankelijk van het besturingssysteem.
 
 ## Sneltoetsen {#keyboard-shortcuts}
 
@@ -40,8 +40,8 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Scree
 | Console - kolomweergave | `Shift-Up/Down Arrow` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
 |  | `Esc` | Een lijst met pagina&#39;s op hetzelfde niveau omhoog verplaatsen |
 | Consoles | `?` | Help bij sneltoetsen |
-|  | `/` | Zoeken [aanroepen](/help/sites-authoring/search.md) |
-|  | `Alt+`&lt;`Number`> | Selectoroptie [per](/help/sites-authoring/basic-handling.md#rail-selector) spoor in-/uitschakelen |
+|  | `/` | [search](/help/sites-authoring/search.md) aanroepen |
+|  | `Alt+`&lt;`Number`> | Schakelen tussen de optie [railkiezer](/help/sites-authoring/basic-handling.md#rail-selector) om weer te geven |
 |  | ` | Spoorstaaf verbergen |
 |  | `e` | Bewerken |
 |  | `p` | Eigenschappen |
@@ -51,9 +51,9 @@ De volgende sneltoetsen zijn beschikbaar voor de consoles Sites, Commerce, Scree
 |  | `Backspace` | Verwijderen |
 | Eigenschappenpagina&#39;s | `Ctrl+s` | Opslaan |
 
-De belangrijkste combinaties zijn vermeld met de [bepalingssleutels](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys)van Vensters.
+De belangrijkste combinaties zijn vermeld met de Vensters [bepalingssleutels](/help/sites-authoring/keyboard-shortcuts.md#os-specific-modifier-keys).
 
-Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers wanneer ze de [pagina-editor](/help/sites-authoring/page-authoring-keyboard-shortcuts.md) gebruiken voor het schrijven van pagina&#39;s.
+Er zijn ook verschillende sneltoetsen beschikbaar voor desktopgebruikers wanneer u pagina&#39;s ontwerpt met de [paginaeditor](/help/sites-authoring/page-authoring-keyboard-shortcuts.md).
 
 ## OS-specifieke wijzigingstoetsen {#os-specific-modifier-keys}
 
@@ -80,9 +80,9 @@ Daarnaast zijn sneltoetsen voor alle landinstellingen en toetsenbordindelingen h
 >
 >AEM sneltoetsen kunnen problemen opleveren met schermlezers, bepaalde browserfuncties en andere toegankelijkheidsfuncties.
 >
->Adobe raadt u aan om [AEM sneltoetsen](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts) uit te schakelen wanneer u een schermlezer gebruikt.
+>Adobe raadt aan om AEM sneltoetsen [uit te schakelen wanneer u een schermlezer gebruikt.](/help/sites-authoring/keyboard-shortcuts.md#deactivating-keyboard-shortcuts)
 
-## Sneltoetsen deactiveren {#deactivating-keyboard-shortcuts}
+## Sneltoetsen {#deactivating-keyboard-shortcuts} deactiveren
 
 AEM biedt sneltoetsen voor een aantal veelgebruikte functies (bewerken, eigenschappen, kopiëren/plakken, verschillende menu&#39;s aan de zijlijn weergeven, enz.).
 
@@ -91,7 +91,7 @@ Voor gebruikers die geen sneltoetsen gebruiken of bepaalde toegankelijkheidsvere
 U kunt sneltoetsen op twee locaties deactiveren:
 
 * [Mijn voorkeuren](/help/sites-authoring/user-properties.md#my-preferences)
-* Het menu [Help](/help/sites-authoring/basic-handling.md#accessing-help)
+* Het [Help-menu](/help/sites-authoring/basic-handling.md#accessing-help)
 
 >[!NOTE]
 >
