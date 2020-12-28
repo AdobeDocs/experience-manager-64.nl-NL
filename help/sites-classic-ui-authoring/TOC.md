@@ -15,7 +15,7 @@ ht-degree: 17%
 ---
 
 
-# AEM 6.4 Handleiding voor het schrijven van klassieke gebruikersinterface {#classic-ui}
+# AEM 6.4 Klassieke UI Authoring User Guide {#classic-ui}
 
 + [Overzicht van de klassieke UI-ontwerpgids](home.md)
 + Inleiding tot Klassieke UI Authoring {#introduction}
@@ -83,9 +83,9 @@ ht-degree: 17%
    + [Werken met IBL-fasen](classicui-stages-aem3d-ibl.md)
    + [3D-elementen renderen](classicui-rendering-3d.md)
    + [3D-elementen weergeven](classicui-view-3d-assets.md)
-   + [Dynamische media-elementen leveren](dynamic-media-assets-delivering.md)
+   + [Dynamic Media-middelen leveren](dynamic-media-assets-delivering.md)
    + [Een standaardpodium instellen met Autodesk Maya en Mental Ray](classicui-stages-aem3d-ad-mr.md)
-   + [Dynamische media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
+   + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
    + [Scene7-functies aan uw pagina toevoegen](manage-assets-classic-s7.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)
    + [Werken met 3D-elementen](classicui-3dassets.md)
