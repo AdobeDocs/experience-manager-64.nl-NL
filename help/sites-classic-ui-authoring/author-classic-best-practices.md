@@ -55,7 +55,7 @@ De beste praktijken rond Activa, met inbegrip van het dynamische media vermogen 
   <tr>
    <td>Dynamic Imaging</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Aanbevolen werkwijzen voor Dynamic Imaging</a></td> 
-   <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de Dynamische functionaliteit van Media gebruikt of met Scene7 integreert. </p> </td> 
+   <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de functionaliteit van Dynamic Media gebruikt of met Scene7 integreert. </p> </td> 
   </tr>
   <tr>
    <td>Meertalige activa</td> 
@@ -69,10 +69,10 @@ De beste praktijken rond Activa, met inbegrip van het dynamische media vermogen 
 
 Voor het beheren en ontwerpen van uw website-inhoud gelden enkele aanbevolen procedures die als volgt worden beschreven:
 
-Authoring: [Auteursomgeving en -gereedschappen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) : biedt een overzicht van het maken van pagina&#39;s.
+Authoring: [Auteursomgeving en -gereedschappen](/help/sites-classic-ui-authoring/classic-page-author-env-tools.md) - Hiermee geeft u een overzicht van het schrijven van pagina&#39;s.
 
 ## Forms {#forms}
 
-Aangepaste formulieren: [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) - Beschrijft aanbevolen werkwijzen voor het instellen, ontwerpen en aanpassen van adaptieve formulieren.
+Aangepaste formulieren: [Aanbevolen werkwijzen voor het werken met adaptieve formulieren](/help/forms/using/adaptive-forms-best-practices.md) - Beschrijft beste werkwijzen voor het instellen, ontwerpen en aanpassen van adaptieve formulieren.
 
 HTML5-formulieren: [Aanbevolen werkwijzen voor het ontwerpen van HTML5-formulieren](/help/forms/using/best-practices-for-html5-forms.md) - Beschrijft aanbevolen werkwijzen voor het werken aan de indeling en het ontwerp van HTML5-formulieren.
