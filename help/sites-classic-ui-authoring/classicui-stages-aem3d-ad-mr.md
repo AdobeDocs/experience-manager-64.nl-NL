@@ -41,18 +41,18 @@ ht-degree: 0%
 
 1. Rendering instellen met Mental Ray.
 
-   Configureer de toepassing **[!UICONTROL Render Settings]** met de volgende suggesties:
+   Configureer de **[!UICONTROL Render Settings]** met de volgende suggesties:
 
    * **[!UICONTROL Common]** tab
 
-      Schakel het **[!UICONTROL Alpha channel (mask)]** selectievakje voor iedereen uit [!UICONTROL Renderable Cameras].
+      Schakel het selectievakje **[!UICONTROL Alpha channel (mask)]** voor alle [!UICONTROL Renderable Cameras] uit.
 
    * **[!UICONTROL Quality]** tab
 
       * **[!UICONTROL Overall quality]** `- 0.5` of minder
       * **[!UICONTROL Indirect Diffuse (GI) Mode]** - `Final Gather`
       * **[!UICONTROL Filter Size]** - `2.0`, `2.0`
-   * Render de scène op de standaardafbeeldingsformaten die u wilt gebruiken. Verfijn indien nodig de lichten of [!UICONTROL Render settings]voer beide handelingen uit om de gewenste resultaten te bereiken.
+   * Render de scène op de standaardafbeeldingsformaten die u wilt gebruiken. Verfijn indien nodig de lichten, of [!UICONTROL Render settings], of doe allebei om de gewenste resultaten te bereiken.
 
       Houd er rekening mee dat rendering met Mental Ray met behulp van op afbeeldingen gebaseerde belichting erg langzaam en CPU-intensief is. Adobe raadt u aan de laagste kwaliteitsinstellingen te configureren die nog steeds de gewenste renderkwaliteit kunnen produceren.
 
@@ -61,10 +61,10 @@ ht-degree: 0%
 1. Sla de scène op en sluit Autodesk Maya af.
 1. Upload de scène in AEM en wacht tot de uploadverwerking is voltooid.
 
-   Zie Elementen [uploaden](/help/assets/managing-assets-touch-ui.md#uploading-assets).
+   Zie [Elementen uploaden](/help/assets/managing-assets-touch-ui.md#uploading-assets).
 
    Als Autodesk® Maya® niet is geconfigureerd op de AEM server, exporteert u een FBX van Maya en uploadt u deze naar AEM.
 
-1. Elementeigenschappen openen in AEM. Stel Titel in op een geschikte tekenreeks die wordt weergegeven in de vervolgkeuzelijst Werkgebiedkiezer. Controleer of dit **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D Stage]**. Opslaan en afsluiten.
+1. Elementeigenschappen openen in AEM. Stel Titel in op een geschikte tekenreeks die wordt weergegeven in de vervolgkeuzelijst Werkgebiedkiezer. Controleer of **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D Stage]**. Opslaan en afsluiten.
 1. Open een 3D-element, selecteer het nieuwe werkgebied en controleer of het naar behoren wordt weergegeven en weergegeven.
 
