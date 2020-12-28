@@ -22,13 +22,13 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->De volgende documentatie concentreert zich op klassieke UI. Raadpleeg de [standaarddocumentatie](/help/assets/assets.md)over ontwerpen voor informatie over ontwerpen in de moderne, aanraakinterface.
+>De volgende documentatie concentreert zich op klassieke UI. Raadpleeg de [standaardontwerpdocumentatie](/help/assets/assets.md) voor informatie over ontwerpen in de moderne, aanraakinterface.
 
 In de ontwerpomgeving kunt u taken uitvoeren die betrekking hebben op:
 
-* [Authoring](/help/sites-authoring/author.md) (inclusief [paginaontwerp](/help/sites-authoring/qg-page-authoring.md) en [beheer van elementen](/help/assets/assets.md))
+* [Ontwerpen](/help/sites-authoring/author.md)  (inclusief  [pagina&#39;](/help/sites-authoring/qg-page-authoring.md) s schrijven en  [elementen](/help/assets/assets.md) beheren)
 
-* [Taken beheren](/help/sites-administering/administer-best-practices.md) die u nodig hebt voor het genereren en onderhouden van de inhoud van uw website
+* [Taken ](/help/sites-administering/administer-best-practices.md) beheren die u nodig hebt voor het genereren en onderhouden van de inhoud van uw website
 
 Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar, die toegankelijk zijn via elke moderne browser:
 
@@ -38,7 +38,7 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar, die toegankelijk 
    * Het is voornamelijk groen.
    * Het is ontworpen voor gebruik op desktopapparaten.
    * Het wordt niet langer gehandhaafd.
-   * De volgende documentatie concentreert zich op deze klassieke UI. Raadpleeg de [standaarddocumentatie](/help/sites-authoring/author.md)over ontwerpen voor meer informatie over ontwerpen in de moderne, op aanraking gebaseerde gebruikersinterface.
+   * De volgende documentatie concentreert zich op deze klassieke UI. Raadpleeg de [standaardontwerpdocumentatie](/help/sites-authoring/author.md) voor informatie over ontwerpen in de moderne, op touch gebaseerde gebruikersinterface.
 
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
@@ -46,8 +46,8 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar, die toegankelijk 
 
    * Dit is de moderne, standaard AEM UI.
    * Het is overwegend grijs, met een schone, vlakke interface.
-   * Het is ontworpen voor zowel touch- als desktopapparaten (geoptimaliseerd voor touch). De vormgeving is op alle apparaten hetzelfde, maar de [weergave en selectie van uw bronnen](/help/sites-authoring/basic-handling.md) verschillen enigszins (tikken versus klikken).
-   * Raadpleeg de [standaarddocumentatie](/help/sites-authoring/author.md) over ontwerpen voor meer informatie over het gebruik van de op aanrakingen gebaseerde gebruikersinterface. De volgende documentatie concentreert zich op klassieke UI.
+   * Het is ontworpen voor zowel touch- als desktopapparaten (geoptimaliseerd voor touch). Het uiterlijk is op alle apparaten hetzelfde, hoewel [het bekijken en selecteren van uw bronnen](/help/sites-authoring/basic-handling.md) iets verschilt (tikken versus klikken).
+   * Raadpleeg de [standaarddocumentatie voor auteurs](/help/sites-authoring/author.md) voor meer informatie over het gebruik van de op touch gebaseerde interface. De volgende documentatie concentreert zich op klassieke UI.
 
    * Desktop:
 
