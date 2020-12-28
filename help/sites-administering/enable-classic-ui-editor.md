@@ -24,7 +24,7 @@ Door gebrek, is de capaciteit om op klassieke UI van de redacteur over te schake
 
 ![chlimage_1-9](assets/chlimage_1-9.png)
 
-Voer de volgende stappen uit om de optie **Openen in klassieke gebruikersinterface** in het menu **Pagina-informatie** weer in te schakelen.
+Voer de volgende stappen uit om de optie **Openen in klassieke gebruikersinterface** in het menu **Pagina-informatie** opnieuw in te schakelen.
 
 1. Gebruik CRXDE Lite om het volgende knooppunt te zoeken:
 
@@ -34,17 +34,17 @@ Voer de volgende stappen uit om de optie **Openen in klassieke gebruikersinterfa
 
    `http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui](http://localhost:4502/crx/de/index.jsp#/libs/wcm/core/content/editor/jcr%3Acontent/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
 
-1. Maak een bedekking met de optie **Overlay knooppunt** . bijvoorbeeld:
+1. Maak een overlay met de optie **Overlay Node**; bijvoorbeeld:
 
-   * **Pad**: `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
-   * **Locatie** bedekking: `/apps/`
+   * **Pad**:  `/apps/wcm/core/content/editor/jcr:content/content/items/content/header/items/headerbar/items/pageinfopopover/items/list/items/classicui`
+   * **Locatie** bedekking:  `/apps/`
    * **Identieke knooppunttypen**: actief (schakel het selectievakje in)
 
 1. Voeg de volgende teksteigenschap met meerdere waarden toe aan het bovenliggende knooppunt:
 
    `sling:hideProperties = ["granite:hidden"]`
 
-1. De optie **Openen in klassieke gebruikersinterface** is weer beschikbaar in het menu **Pagina-informatie** wanneer u pagina&#39;s bewerkt.
+1. De optie **Openen in klassieke gebruikersinterface** is opnieuw beschikbaar in het menu **Pagina-informatie** wanneer u pagina&#39;s bewerkt.
 
    ![chlimage_1-10](assets/chlimage_1-10.png)
 
