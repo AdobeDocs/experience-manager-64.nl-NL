@@ -15,7 +15,7 @@ ht-degree: 40%
 ---
 
 
-# AEM 6.4 Handboek voor ontwerpen {#authoring}
+# AEM 6.4 Handboek ontwerpgebruiker {#authoring}
 
 + [Overzicht van gebruikershandleiding voor ontwerpen](home.md)
 + Essentiële taken, gereedschappen en concepten voor AEM ontwerpen {#essentials}
