@@ -20,14 +20,14 @@ ht-degree: 0%
 
 # Codevalkuilen{#code-pitfalls}
 
-## Bindingen in Java-code voorkomen {#avoid-sling-bindings-in-java-code}
+## Bindingen in Java-code {#avoid-sling-bindings-in-java-code} vermijden
 
-Het verkopen Bindingen zijn een ongepaste manier om tot de dienst in 90% van gevallen toegang te krijgen. Gebruik in plaats daarvan *@Reference* of *@Injectopties* .
+Het verkopen Bindingen zijn een ongepaste manier om tot de dienst in 90% van gevallen toegang te krijgen. In plaats daarvan moet u *@Reference* of *@Inject* annotaties gebruiken.
 
-## Geen thread.interrupt in Java-code {#avoid-thread-interrupt-in-java-code}
+## Vermijd thread.interrupt in code {#avoid-thread-interrupt-in-java-code} van Java
 
-*Thread.interrupt* is gevaarlijk omdat het dossiers, met inbegrip van dossiers Lucene en blijvende geheim voorgeheugendossiers, wanneer geroepen op het verkeerde ogenblik kan sluiten.
+*Thread.* onderbrekt gevaarlijk omdat het dossiers, met inbegrip van Lucene- dossiers en blijvende geheim voorgeheugendossiers, wanneer geroepen op het verkeerde ogenblik kan sluiten.
 
-## Gebruik geen Java-synchronisatie met ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
+## Vermijd het mengen van de synchronisatie van Java met ReadWriteLocks {#avoid-mixing-java-synchronization-with-readwritelocks}
 
 Dit kan tot een rassenvoorwaarde leiden waarin de code uiteindelijk zal blokkeren.
