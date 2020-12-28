@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Ontwikkelingsinstrumenten{#development-tools}
+# Ontwikkelingshulpmiddelen{#development-tools}
 
 Voor het ontwikkelen van uw JCR-, Apache Sling- of AEM-toepassingen zijn de volgende gereedschapssets beschikbaar:
 
@@ -36,7 +36,7 @@ Adobe heeft de volgende extensies uitgebracht:
 
 * [Extensie Eclipse AEM](/help/sites-developing/aem-eclipse.md)
 * [Extensie AEM](/help/sites-developing/aem-brackets.md)
-* [AEM IntelliJ Extension](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf) (van Headwire)
+* [AEM IntelliJ Extension](https://github.com/headwirecom/aem-ide-tooling-4-intellij/blob/master/documenation/AEM%20Tooling%20Plugin%20for%20IntelliJ%20IDEA.pdf)  (van Headwire)
 
 ### Overige gereedschappen {#other-tools}
 
