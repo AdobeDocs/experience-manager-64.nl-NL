@@ -18,35 +18,35 @@ ht-degree: 0%
 ---
 
 
-# Standaard SSL{#ssl-by-default}
+# SSL standaard{#ssl-by-default}
 
 In een poging om de veiligheid van AEM voortdurend te verbeteren, heeft Adobe een eigenschap genoemd SSL Door Standaard geïntroduceerd. Het doel is het gebruik van HTTPS aan te moedigen om verbinding te maken met AEM instanties.
 
 ## SSL standaard inschakelen {#enabling-ssl-by-default}
 
-U kunt SSL door Standaard te vormen door het relevante Inbox bericht van uw AEM homescherm te klikken. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op Alles **** weergeven. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
+U kunt SSL door Standaard te vormen door het relevante Inbox bericht van uw AEM homescherm te klikken. Druk op het belpictogram in de rechterbovenhoek van het scherm om het vak Inbox te bereiken. Klik vervolgens op **Alles weergeven**. Hiermee wordt een lijst weergegeven met alle waarschuwingen die in een lijstweergave zijn besteld.
 
-Selecteer en open de waarschuwing HTTPS **configureren in de lijst** :
+Selecteer en open in de lijst de waarschuwing **HTTPS** configureren:
 
 ![chlimage_1-341](assets/chlimage_1-341.png)
 
 >[OPMERKING!]
 >
->Als de waarschuwing HTTPS **** configureren niet aanwezig is in het Postvak In, kunt u rechtstreeks naar de HTTPS-wizard navigeren door naar *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>*
+>Als de **HTTPS** waarschuwing niet aanwezig in Inbox is, kunt u rechtstreeks naar de Tovenaar navigeren HTTPS door naar *<http://serveraddress:serverport/libs/granite/security/content/sslConfig.html?item=configuration%2fconfiguressl&_charset_=utf-8>* te gaan
 
 Voor deze functie is een servicegebruiker met de naam **ssl-service** gemaakt. Zodra u het alarm opent, zult u door de volgende configuratietovenaar worden geleid:
 
-1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de referenties voor de sleutelarchief van de gebruiker van het **ssl-service** -systeem dat de persoonlijke sleutel en vertrouwde opslag voor de luisteraar HTTPS zal bevatten.
+1. Stel eerst de gegevens voor de winkelreferenties in. Dit zijn de referenties voor de sleutelopslag van de systeemgebruiker **ssl-service** die de persoonlijke sleutel en vertrouwde opslag voor de luisteraar HTTPS zal bevatten.
 
    ![chlimage_1-342](assets/chlimage_1-342.png)
 
-1. Als u de referenties hebt ingevoerd, klikt u op **Volgende** in de rechterbovenhoek van de pagina. Upload vervolgens de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL-verbinding.
+1. Nadat u de referenties hebt ingevoerd, klikt u op **Volgende** in de rechterbovenhoek van de pagina. Upload vervolgens de bijbehorende persoonlijke sleutel en het bijbehorende certificaat voor de SSL-verbinding.
 
    ![chlimage_1-343](assets/chlimage_1-343.png)
 
    >[!NOTE]
    >
-   >Zie [deze procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder voor informatie over het genereren van een persoonlijke sleutel en een certificaat dat u met de wizard wilt gebruiken.
+   >Zie [deze procedure](/help/sites-administering/ssl-by-default.md#generating-a-private-key-certificate-pair-to-use-with-the-wizard) hieronder voor informatie over het genereren van een persoonlijke sleutel en een certificaat voor gebruik met de wizard.
 
 1. Geef ten slotte de hostnaam HTTPS en de TCP-poort voor de HTTPS-listener op.
 
@@ -128,7 +128,7 @@ it for any subsequent updating of the private key or certificate.</dd>
 </html>
 ```
 
-**FOUTVOORBEELD** (status = 500):
+**FOUTVOORBEELD**  (status = 500):
 
 ```xml
 <!DOCTYPE html>
@@ -154,10 +154,10 @@ it for any subsequent updating of the private key or certificate.</dd>
 
 U kunt de SSL-installatie ook automatiseren door een pakket te uploaden dat al de volgende vereiste items bevat:
 
-* Het sleutelarchief van de ssl-dienst gebruiker. Dit bevindt zich onder */home/users/system/security/ssl-service/keystore* in de opslagplaats.
-* De `GraniteSslConnectorFactory` configuratie
+* Het sleutelarchief van de ssl-dienst gebruiker. Dit bevindt zich onder */home/users/system/security/ssl-service/keystore* in de repository.
+* De `GraniteSslConnectorFactory`-configuratie
 
-### Een privésleutel/certificaatpaar genereren voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
+### Genereren van een privésleutel/certificaatpaar voor gebruik met de wizard {#generating-a-private-key-certificate-pair-to-use-with-the-wizard}
 
 Hieronder ziet u een voorbeeld voor het maken van een zelfondertekend certificaat in de indeling DER die de SSL-wizard kan gebruiken.
 
@@ -190,17 +190,17 @@ Zet de Persoonlijke Sleutel in het formaat van DER om. De reden hiervoor is dat 
 openssl pkcs8 -topk8 -inform PEM -outform DER -in localhostprivate.key -out localhostprivate.der -nocrypt
 ```
 
-Tot slot uploadt u **localhostPrivate.der** als Private Key en **localhost.crt** als SSL-certificaat in stap 2 van de grafische SSL-wizard die aan het begin van deze pagina wordt beschreven.
+Tot slot uploadt u **localhostprivate.der** als Private Key en **localhost.crt** als SSL-certificaat in stap 2 van de grafische SSL-wizard die aan het begin van deze pagina wordt beschreven.
 
 ### De SSL-configuratie bijwerken via cURL {#updating-the-ssl-configuration-via-curl}
 
 >[!NOTE]
 >
->Zie [URL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst met nuttige cURL-opdrachten in AEM.
+>Zie [URL gebruiken met AEM](https://helpx.adobe.com/experience-manager/6-4/sites/administering/using/curl.html) voor een gecentraliseerde lijst van nuttige cURL-opdrachten in AEM.
 
 U kunt de SSL-configuratie ook automatiseren met het gereedschap cURL. U kunt dit doen door de configuratieparameters aan dit URL te posten:
 
-*https://&lt;serveradres>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
+*https://&lt;serveraddress>:&lt;serverport>/libs/granite/security/post/sslSetup.html*
 
 Hieronder ziet u de parameters die u kunt gebruiken om de verschillende instellingen in de configuratietovenaar te wijzigen:
 
@@ -223,7 +223,7 @@ Hieronder ziet u de parameters die u kunt gebruiken om de verschillende instelli
 >
 >De snelste manier om cURL uit te voeren om de SSL configuratie te automatiseren is van de omslag waar de DER en CRT dossiers zijn. U kunt ook het volledige pad opgeven in de argumenten `privatekeyFile` en certificateFile.
 >
->U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor dat u de opdracht cURL toevoegt aan de `-u user:passeword` parameter.
+>U moet ook worden geverifieerd om de update uit te voeren, dus zorg ervoor u het cURL bevel met de `-u user:passeword` parameter toevoegt.
 >
 >Een correcte post cURL zou als dit moeten kijken:
 
