@@ -23,7 +23,7 @@ ht-degree: 58%
 * [](/help/sites-authoring/default-components-foundation.md)Elementaire componenten omzetten naar kerncomponenten[](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html)
 * [](website.md)De klassieke interface converteren naar een interface met aanraakbediening[](touch-ui-concepts.md)
 
-Raadpleeg de documentatie [](http://opensource.adobe.com/aem-modernize-tools/)bij deze gereedschappen voor meer informatie over het gebruik van deze gereedschappen.
+Voor meer informatie over het gebruik van deze hulpmiddelen, [zie hun documentatie](http://opensource.adobe.com/aem-modernize-tools/).
 
 >[!NOTE]
 >
