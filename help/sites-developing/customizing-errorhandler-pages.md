@@ -31,26 +31,26 @@ Door het systeem verschafte scripts bestaan (onder `/libs/sling/servlet/errorhan
 
 >[!NOTE]
 >
->AEM is gebaseerd op Apache Sling, zie [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) voor meer informatie over foutafhandeling bij verkoop.
+>AEM is gebaseerd op Apache Sling, zo zie [https://sling.apache.org/site/errorhandling.html](https://sling.apache.org/site/errorhandling.html) voor gedetailleerde informatie over de Behandeling van de Fout van de Verkoop.
 
 >[!NOTE]
 >
->Voor een auteurinstantie, [wordt CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) toegelaten door gebrek. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Voor een auteurinstantie, [CQ WCM zuivert Filter ](/help/sites-deploying/osgi-configuration-settings.md) wordt toegelaten door gebrek. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
->Op een publicatie-instantie is het CQ WCM-foutopsporingsfilter *altijd* uitgeschakeld (zelfs als dit is geconfigureerd als ingeschakeld).
+>Voor een publicatie-instantie is CQ WCM Debug Filter *always* uitgeschakeld (zelfs als dit is geconfigureerd als ingeschakeld).
 
-## Hoe te om Pagina&#39;s aan te passen die door de Handler van de Fout worden getoond {#how-to-customize-pages-shown-by-the-error-handler}
+## Hoe te om Pagina&#39;s aan te passen die door de Handler van de Fout {#how-to-customize-pages-shown-by-the-error-handler} worden getoond
 
-U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. De aangepaste pagina&#39;s worden gemaakt onder `/apps` en bedekken de standaardpagina&#39;s (die onder `/libs`) liggen.
+U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de fouthandler worden weergegeven wanneer een fout optreedt. De aangepaste pagina&#39;s worden gemaakt onder `/apps` en bedekken de standaardpagina&#39;s (die onder `/libs` liggen).
 
 >[!NOTE]
 >
->Zie Bedekkingen [gebruiken](/help/sites-developing/overlays.md) voor meer informatie.
+>Zie [Bedekkingen gebruiken](/help/sites-developing/overlays.md) voor meer informatie.
 
 1. Kopieer het standaardscript of de standaardscripts in de gegevensopslagruimte:
 
    * Van `/libs/sling/servlet/errorhandler/`
-   * to `/apps/sling/servlet/errorhandler/`
+   * tot `/apps/sling/servlet/errorhandler/`
 
    Aangezien het bestemmingspad niet standaard bestaat, zult u het moeten tot stand brengen wanneer het doen van dit voor het eerst.
 
@@ -71,7 +71,8 @@ U kunt uw eigen scripts ontwikkelen om de pagina&#39;s aan te passen die door de
 
 HTTP 500-fouten worden veroorzaakt door uitzonderingen aan de serverzijde.
 
-* **[500 Interne serverfout](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**De server heeft een onverwachte voorwaarde aangetroffen waardoor deze de aanvraag niet kon uitvoeren.
+* **[500 Interne ](https://www.w3.org/Protocols/rfc2616/rfc2616-sec10.html)**
+serverfoutDe server heeft een onverwachte voorwaarde aangetroffen waardoor deze de aanvraag niet kon uitvoeren.
 
 Wanneer de verzoekverwerking in een uitzondering resulteert, het kader van Apache Sling (dat AEM wordt voortgebouwd op):
 
@@ -81,19 +82,19 @@ Wanneer de verzoekverwerking in een uitzondering resulteert, het kader van Apach
    * de HTTP-antwoordcode 500
    * de spoor van de uitzonderingsstapel
 
-   in het lichaam van de respons.
+   in het lichaam van de reactie.
 
-Door de pagina&#39;s aan te [passen die door de foutenmanager](#how-to-customize-pages-shown-by-the-error-handler) worden getoond, kan een `500.jsp` manuscript worden gecreeerd. Deze wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` deze expliciet wordt uitgevoerd; d.w.z. van een uitzonderingscatcher.
+Door [het aanpassen van de pagina&#39;s die door foutenmanager](#how-to-customize-pages-shown-by-the-error-handler) worden getoond kan een `500.jsp` manuscript worden gecreeerd. Deze wordt echter alleen gebruikt als `HttpServletResponse.sendError(500)` expliciet wordt uitgevoerd; d.w.z. van een uitzonderingscatcher.
 
-Anders is de antwoordcode ingesteld op 500, maar wordt het `500.jsp` script niet uitgevoerd.
+Anders is de antwoordcode ingesteld op 500, maar wordt het script `500.jsp` niet uitgevoerd.
 
-Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fouthandler gelijk zijn aan de uitzonderingsklasse (of superklasse). Om al dergelijke uitzonderingen te behandelen kunt u een manuscript `/apps/sling/servlet/errorhandler/Throwable.js`p of `/apps/sling/servlet/errorhandler/Exception.jsp`tot stand brengen.
+Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fouthandler gelijk zijn aan de uitzonderingsklasse (of superklasse). Om al dergelijke uitzonderingen te behandelen kunt u een manuscript `/apps/sling/servlet/errorhandler/Throwable.js`p of `/apps/sling/servlet/errorhandler/Exception.jsp` tot stand brengen.
 
 >[!CAUTION]
 >
->Voor een auteurinstantie, [wordt CQ WCM Debug Filter](/help/sites-deploying/osgi-configuration-settings.md) toegelaten door gebrek. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
+>Voor een auteurinstantie, [CQ WCM zuivert Filter ](/help/sites-deploying/osgi-configuration-settings.md) wordt toegelaten door gebrek. Dit resulteert altijd in reactiecode 200. De standaardfoutenmanager antwoordt door het volledige stapelspoor aan de reactie te schrijven.
 >
->Voor een aangepaste fout-manager, zijn de reacties met code 500 nodig - zodat moet het filter [van de Foutopsporing CQ WCM worden onbruikbaar gemaakt](/help/sites-deploying/osgi-configuration-settings.md). Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
+>Voor een douane fout-manager, zijn de reacties met code 500 nodig - zodat moet [CQ WCM zuivert Filter worden onbruikbaar gemaakt](/help/sites-deploying/osgi-configuration-settings.md). Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
 >
->Op een publicatie-instantie is het CQ WCM-foutopsporingsfilter *altijd* uitgeschakeld (zelfs als dit is geconfigureerd als ingeschakeld).
+>Voor een publicatie-instantie is CQ WCM Debug Filter *always* uitgeschakeld (zelfs als dit is geconfigureerd als ingeschakeld).
 
