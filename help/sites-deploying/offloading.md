@@ -24,9 +24,9 @@ ht-degree: 0%
 
 Het ontladen verspreidt verwerkingstaken die instanties van de Experience Manager in een topologie. Met offloading kunt u specifieke instanties van Experience Managers gebruiken voor het uitvoeren van specifieke typen verwerking. Met gespecialiseerde verwerking kunt u het gebruik van beschikbare serverbronnen maximaliseren.
 
-Offloaden is gebaseerd op de functies [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html) en Sling JobManager. Om het ontladen te gebruiken, voegt u de clusters van de Experience Manager aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer instanties van Experience Managers, zodat één instantie als een cluster wordt beschouwd.
+Offloading is gebaseerd op de [Apache Sling Discovery](https://sling.apache.org/documentation/bundles/discovery-api-and-impl.html)- en Sling JobManager-functies. Om het ontladen te gebruiken, voegt u de clusters van de Experience Manager aan een topologie toe en identificeert de baanonderwerpen die het clusterproces. Clusters bestaan uit een of meer instanties van Experience Managers, zodat één instantie als een cluster wordt beschouwd.
 
-Voor informatie over het toevoegen van instanties aan een topologie, zie [het Beheer Topologieën](/help/sites-deploying/offloading.md#administering-topologies).
+Voor informatie over het toevoegen van instanties aan een topologie, zie [Beheerderende Topologies](/help/sites-deploying/offloading.md#administering-topologies).
 
 ### Taakverdeling {#job-distribution}
 
@@ -40,7 +40,7 @@ Wanneer JobManager een baan creeert, selecteert het Offloading kader een cluster
 * De cluster moet één of meerdere instanties omvatten die een JobConsumer in werking stellen die voor het baanonderwerp wordt geregistreerd.
 * Het onderwerp moet voor minstens één geval in de cluster worden toegelaten.
 
-Zie [het Vormen de Consumptie](/help/sites-deploying/offloading.md#configuring-topic-consumption) van het Onderwerp voor informatie over het raffineren van baandistributie.
+Zie [Het Vormen de Verbruik van het Onderwerp](/help/sites-deploying/offloading.md#configuring-topic-consumption) voor informatie over het raffineren van baandistributie.
 
 ![chlimage_1-109](assets/chlimage_1-109.png)
 
@@ -52,7 +52,7 @@ Het offloading-framework ondersteunt taaktaken die taken koppelen aan bronnen in
 
 Bij het maken van een taak wordt de lading alleen gegarandeerd geplaatst op het exemplaar dat de taak maakt. Wanneer het ontladen van de baan, zorgen de replicatieagenten ervoor dat de lading op de instantie wordt gecreeerd die uiteindelijk de baan verbruikt. Wanneer de uitvoering van de taak is voltooid, zorgt omgekeerde replicatie ervoor dat de payload wordt gekopieerd naar de instantie die de taak heeft gemaakt.
 
-## Onderwerptechnologieën beheren {#administering-topologies}
+## Onderwerpen {#administering-topologies} beheren
 
 De technologieën zijn losjes-verbonden clusters van de Experience Manager die aan het ontladen deelnemen. Een cluster bestaat uit een of meer serverinstanties van de Experience Manager (één instantie wordt beschouwd als een cluster).
 
@@ -67,7 +67,7 @@ De dienst van de Ontdekking van alle leden van de topologie richt aan de Schakel
 
 Elke cluster in de topologie bevat een instantie die als leider wordt erkend. De clusterleider communiceert met de topologie namens de andere leden van de cluster. Wanneer de leader de cluster verlaat, wordt automatisch een nieuwe leader voor de cluster gekozen.
 
-### De topologie weergeven {#viewing-the-topology}
+### De topologie {#viewing-the-topology} weergeven
 
 Browser van de Topologie van het gebruik om de staat van de topologie te onderzoeken waarin de instantie van de Experience Manager deelneemt. Browser van de topologie toont de clusters en de instanties van de topologie.
 
@@ -86,7 +86,7 @@ Voor elke instantie in de cluster, kunt u verscheidene op topologie betrekking h
 
    De clusters die aan de topologie deelnemen verschijnen.
 
-   ![chlimage_1-111](assets/chlimage_1-111.png)
+   ![chlimage_1-191](assets/chlimage_1-111.png)
 
 1. Klik op een cluster om een lijst weer te geven met de instanties in de cluster en hun id, huidige status en leaderstatus.
 1. Klik op een instantie-id voor meer gedetailleerde eigenschappen.
@@ -102,7 +102,7 @@ Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van d
 1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ### Het vormen Lidmaatschap van de Topologie {#configuring-topology-membership}
 
@@ -148,7 +148,7 @@ Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eige
    <td>http://localhost:4502/libs/sling/topology/connector</td> 
   </tr> 
   <tr> 
-   <td>lijst van gewenste personen voor topologieconnector</td> 
+   <td>Lijst van gewenste personen voor topologieconnector</td> 
    <td>topologieConnectorWhitelist</td> 
    <td>De lijst van IP adressen of gastheernamen die de lokale dienst van de Verbinding van de Topologie in de topologie toestaat. </td> 
    <td><p>localhost</p> <p>127.0.0.1</p> </td> 
@@ -157,7 +157,7 @@ Gebruik de console van het Web of een sling:knoop OsgiConfig om de volgende eige
    <td>Naam beschrijving opslagplaats</td> 
    <td>leaderSelectionRepositoryDescriptor</td> 
    <td> </td> 
-   <td>&lt;geen waarde&gt;</td> 
+   <td>&lt;no value=""&gt;</td> 
   </tr> 
  </tbody> 
 </table>
@@ -201,7 +201,7 @@ Taken zijn verspreide hoeveelheden die het bijbehorende onderwerp hebben dat is 
    * Uitgeschakeld: Dit exemplaar verbruikt geen banen van dit onderwerp.
    * Exclusief: Dit exemplaar verbruikt slechts banen van dit onderwerp.
 
-   **Opmerking:** Wanneer u Uitsluitend voor een onderwerp selecteert, worden alle andere onderwerpen automatisch geplaatst aan Gehandicapten.
+   **Opmerking:** Wanneer u Exclusief selecteert voor een onderwerp, worden alle andere onderwerpen automatisch ingesteld op Uitgeschakeld.
 
 ### Geïnstalleerde taakgebruikers {#installed-job-consumers}
 
@@ -213,32 +213,32 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 | com/day/cq/replication/job/&amp;ast; | com.day.cq.replication.impl.AgentManagerImpl | Een replicatieagent die taakladingen herhaalt. |
 | com/adobe/granite/workflow/offloading | com.adobe.granite.workflow.core.offloading.WorkflowOffloadingJobConsumer | Verwerkt taken die door de workflow van DAM Update Asset Offloader worden gegenereerd. |
 
-### Onderwerpen voor een instantie uitschakelen en inschakelen {#disabling-and-enabling-topics-for-an-instance}
+### Onderwerpen voor een instantie {#disabling-and-enabling-topics-for-an-instance} uitschakelen en inschakelen
 
 De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van afgewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Experience Manager toe te laten of onbruikbaar te maken.
 
-**Opmerking:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
+**Nota:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
-De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van afgewezen personen zijn.Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen worden onbruikbaar gemaakt (de lijst van afgewezen personen heeft geen waarde).
+De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van afgewezen personen zijn.Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen zijn gehandicapt (de lijst van afgewezen personen heeft geen waarde).
 
-Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knooppunten is org.apache.sling.event.impl.jobs.JobConsumerManager de PID van de service Job Consumer Manager.
+Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knopen, is PID van de dienst van de Manager van de Consumentenconsument van de Baan org.apache.sling.event.impl.job.JobConsumerManager.
 
 | Eigenschapnaam in webconsole | OSGi-id | Beschrijving |
 |---|---|---|
 | Onderwerpwhitelist | job.consumermanager.whitelist | Een lijst met onderwerpen die de lokale dienst JobManager verwerkt. De standaardwaarde van &amp;ast; veroorzaakt alle onderwerpen om naar de geregistreerde dienst te worden verzonden TopicConsumer. |
 | Topic Blacklist | job.consumermanager.blacklist | Een lijst met onderwerpen die de lokale JobManager-service niet verwerkt. |
 
-## Replication-agents voor offloaden maken {#creating-replication-agents-for-offloading}
+## Replicatieagents maken voor offloaden {#creating-replication-agents-for-offloading}
 
 Het offloading-framework gebruikt replicatie om bronnen tussen auteur en worker te vervoeren. Het het ontladen kader leidt automatisch tot replicatieagenten wanneer de instanties zich bij de topologie aansluiten. De agenten worden gecreeerd met standaardwaarden. U moet het wachtwoord manueel veranderen dat de agenten voor authentificatie gebruiken.
 
 >[!CAUTION]
 >
->Een bekende kwestie met de automatisch-geproduceerde replicatieagenten vereist u om nieuwe replicatieagenten manueel tot stand te brengen. Volg de procedure in [Problemen die de Automatisch Gegenereerde Agenten](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) van de Replicatie gebruiken alvorens u de agenten voor het Offloaden creeert.
+>Een bekende kwestie met de automatisch-geproduceerde replicatieagenten vereist u om nieuwe replicatieagenten manueel tot stand te brengen. Volg de procedure in [Problems Gebruikend de Automatisch Gegenereerde Agenten van de Replicatie ](/help/sites-deploying/offloading.md#problems-using-the-automatically-generated-replication-agents) alvorens u de agenten voor het Verschuiven creeert.
 
 Creeer de replicatieagenten die baanlading tussen instanties voor het ontladen vervoeren. De volgende illustratie toont de agenten die worden vereist om van de auteur aan een arbeidersinstantie te offloaden. De auteur heeft een Sling-id van 1 en de arbeidersinstantie heeft een Sling-id van 2:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 Deze opstelling vereist de volgende drie agenten:
 
@@ -252,19 +252,19 @@ Dit replicatieschema is vergelijkbaar met het replicatieschema dat wordt gebruik
 >
 >Het kader van het Verschuiven gebruikt de topologie om de IP adressen van de het ontladen instanties te verkrijgen. Het kader leidt dan automatisch tot de replicatieagenten die op deze IP adressen worden gebaseerd. Als de IP adressen van de het ontladen instanties later veranderen, wordt de verandering automatisch verlengd op de topologie nadat de instantie opnieuw begint. Nochtans, werkt het Offloading kader niet automatisch de replicatieagenten bij om op de nieuwe IP adressen te wijzen. Om deze situatie te vermijden, gebruik vaste IP adressen voor alle instanties in de topologie.
 
-### De replicatieagents benoemen voor offloaden {#naming-the-replication-agents-for-offloading}
+### De replicatieagents voor offloaden benoemen {#naming-the-replication-agents-for-offloading}
 
-Gebruik een specifiek formaat voor het bezit van de ***Naam*** van de replicatieagenten zodat het het ontladen kader automatisch de correcte agent voor specifieke arbeidersinstanties gebruikt.
+Gebruik een specifiek formaat voor ***Naam*** bezit van de replicatieagenten zodat het het ontladen kader automatisch de correcte agent voor specifieke arbeidersinstanties gebruikt.
 
 **De naam van de uitgaande agent op de auteurinstantie:**
 
-`offloading_<slingid>`, waarbij `<slingid>` de id Verdelen van de arbeidersinstantie is.
+`offloading_<slingid>`, waarbij  `<slingid>` de id Verdelen van de arbeidersinstantie is.
 
 Voorbeeld: `offloading_f5c8494a-4220-49b8-b079-360a72f71559`
 
 **De reverse-agent een naam geven op de auteurinstantie:**
 
-`offloading_reverse_<slingid>`, waarbij `<slingid>` de id Verdelen van de arbeidersinstantie is.
+`offloading_reverse_<slingid>`, waarbij  `<slingid>` de id Verdelen van de arbeidersinstantie is.
 
 Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
@@ -274,7 +274,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Het creëren van de uitgaande agent {#creating-the-outgoing-agent}
 
-1. Creeer een Agent **van de** Replicatie op auteur. (Zie het [document voor replicatieagenten](/help/sites-deploying/replication.md)). Geef een **titel** op. De **naam** moet de naamgevingsconventie volgen.
+1. Maak een **Replication Agent** op auteur. (Zie [document voor replicatiemiddelen](/help/sites-deploying/replication.md)). Geef een **Titel** op. De **Naam** moet de naamgevingsconventie volgen.
 1. Creeer de agent gebruikend de volgende eigenschappen:
 
    | Eigenschap | Waarde |
@@ -286,9 +286,9 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Uitgebreid > HTTP-methode | POST |
    | Triggers > Standaard negeren | Waar |
 
-### De reverse agent maken {#creating-the-reverse-agent}
+### Het creëren van de omgekeerde agent {#creating-the-reverse-agent}
 
-1. Maak een **reverse Replication Agent** bij de auteur. (Zie het [document voor replicatieagenten](/help/sites-deploying/replication.md).) Geef een **titel** op. De **naam** moet de naamgevingsconventie volgen.
+1. Maak een **Reverse Replication Agent** bij de auteur. (Zie [document voor replicatiemiddelen](/help/sites-deploying/replication.md).) Geef een **Titel** op. De **Naam** moet de naamgevingsconventie volgen.
 1. Creeer de agent gebruikend de volgende eigenschappen:
 
    | Eigenschap | Waarde |
@@ -301,7 +301,7 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
 
 ### Het creëren van de outbox agent {#creating-the-outbox-agent}
 
-1. Creeer een Agent **van de** Replicatie op de arbeidersinstantie. (Zie het [document voor replicatieagenten](/help/sites-deploying/replication.md).) Geef een **titel** op. De **naam** moet `offloading_outbox`zijn.
+1. Maak een **Replication Agent** op de worker-instantie. (Zie [document voor replicatiemiddelen](/help/sites-deploying/replication.md).) Geef een **Titel** op. De **Naam** moet `offloading_outbox` zijn.
 1. Creeer de agent gebruikend de volgende eigenschappen.
 
    | Eigenschap | Waarde |
@@ -310,31 +310,31 @@ Voorbeeld: `offloading_reverse_f5c8494a-4220-49b8-b079-360a72f71559`
    | Transport > Transport URI | repo://var/replication/outbox |
    | Trigger > Standaard negeren | Waar |
 
-### De verkoper-id zoeken {#finding-the-sling-id}
+### Bezig met zoeken van de id {#finding-the-sling-id}
 
 Verkrijg identiteitskaart van de Schuine kant van een instantie van de Experience Manager gebruikend één van beide volgende methodes:
 
-* Open de Console van het Web en, in de het Verdelen Montages, vind de waarde van het het Verdelen bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
+* Open de Console van het Web en, in de Verschuivende Montages, vind de waarde van het Verschuivende bezit van identiteitskaart ([http://localhost:4502/system/console/status-slingsettings](http://localhost:4502/system/console/status-slingsettings)). Deze methode is nuttig als de instantie nog geen deel van de topologie uitmaakt.
 * Gebruik browser van de Topologie als de instantie reeds deel van de topologie uitmaakt.
 
-## De verwerking van DAM-activa verschuiven {#offloading-the-processing-of-dam-assets}
+## De verwerking van DAM-activa {#offloading-the-processing-of-dam-assets} wordt gecompenseerd
 
 Vorm de instanties van een topologie zodat de specifieke instanties de achtergrondverwerking van activa uitvoeren die in DAM worden toegevoegd of bijgewerkt.
 
-Standaard voert Experience Manager de DAM Update Asset-workflow uit wanneer een DAM-element wordt gewijzigd of een DAM-element wordt toegevoegd aan DAM. Wijzig het standaardgedrag zodat Experience Manager in plaats daarvan de workflow van de DAM Update Asset Offloader uitvoert. Deze workflow genereert een JobManager-taak met een onderwerp `com/adobe/granite/workflow/offloading`. Dan, vorm de topologie zodat de baan aan een specifieke worker wordt geoffload.
+Standaard voert Experience Manager de DAM Update Asset-workflow uit wanneer een DAM-element wordt gewijzigd of een DAM-element wordt toegevoegd aan DAM. Wijzig het standaardgedrag zodat Experience Manager in plaats daarvan de workflow van de DAM Update Asset Offloader uitvoert. Deze workflow genereert een JobManager-taak met een onderwerp van `com/adobe/granite/workflow/offloading`. Dan, vorm de topologie zodat de baan aan een specifieke worker wordt geoffload.
 
 >[!CAUTION]
 >
->Er mag geen tijdelijke workflow worden gebruikt bij het offloaden van de workflow. De DAM Update Asset-workflow mag bijvoorbeeld niet van voorbijgaande aard zijn wanneer deze wordt gebruikt voor het offloaden van middelen. Zie [Tijdelijke workflows](/help/assets/performance-tuning-guidelines.md#workflows)voor informatie over het instellen/ongedaan maken van de overgangsmarkering voor een workflow.
+>Er mag geen tijdelijke workflow worden gebruikt bij het offloaden van de workflow. De DAM Update Asset-workflow mag bijvoorbeeld niet van voorbijgaande aard zijn wanneer deze wordt gebruikt voor het offloaden van middelen. Zie [Tijdelijke workflows](/help/assets/performance-tuning-guidelines.md#workflows) voor informatie over het instellen/ongedaan maken van de overgangsmarkering op een workflow.
 
 De volgende procedure veronderstelt de volgende kenmerken voor de het ontladen topologie:
 
 * Een of meer Experience Managers-instanties zijn ontwerpinstanties waarmee gebruikers werken bij het toevoegen of bijwerken van DAM-elementen.
 * Gebruikers kunnen niet rechtstreeks communiceren met een of meer instanties van Experience Managers die de DAM-elementen verwerken. Deze instanties zijn gewijd aan de achtergrondverwerking van DAM-middelen.
 
-1. Voor elke instantie van de Experience Manager, vorm de Dienst van de Ontdekking zodat het aan de schakelaar van de wortelTopografie richt. (Zie [het Vormen Lidmaatschap](#title4)van Topologie.)
+1. Voor elke instantie van de Experience Manager, vorm de Dienst van de Ontdekking zodat het aan de schakelaar van de wortelTopografie richt. (Zie [Het vormen Lidmaatschap van de Topologie](#title4).)
 1. Vorm de schakelaar van de wortelTopografie zodat de verbindende instanties op de lijst van gewenste personen zijn.
-1. Open de Offloading Browser en maak het `com/adobe/granite/workflow/offloading` onderwerp op de instanties onbruikbaar waarmee de gebruikers om activa te uploaden of te veranderen DAM met elkaar in wisselwerking staan.
+1. Open de Offloading Browser en maak het `com/adobe/granite/workflow/offloading` onderwerp op de instanties onbruikbaar waarmee de gebruikers interactie om activa te uploaden of te veranderen DAM.
 
    ![chlimage_1-116](assets/chlimage_1-116.png)
 
@@ -343,7 +343,7 @@ De volgende procedure veronderstelt de volgende kenmerken voor de het ontladen t
    1. Open de Workflowconsole.
    1. Klik op het tabblad Launcher.
    1. Zoek de twee configuraties van Launcher die de DAM Update Asset-workflow uitvoeren. Één type van de de gebeurtenisgebeurtenis van de lanceringsconfiguratie is Gemaakt Knoop, en het andere type is Gewijzigde Knoop.
-   1. Wijzig beide gebeurtenistypen, zodat ze de workflow voor het offloaden van middelen uit DAM-update uitvoeren. (Zie Workflows [starten wanneer knooppunten worden gewijzigd](/help/sites-administering/workflows-starting.md)voor informatie over startconfiguraties.)
+   1. Wijzig beide gebeurtenistypen, zodat ze de workflow voor het offloaden van middelen uit DAM-update uitvoeren. (Zie [Workflows starten wanneer knooppunten veranderen](/help/sites-administering/workflows-starting.md) voor informatie over opstartconfiguraties.)
 
 1. Schakel in de gevallen waarin de achtergrondverwerking van DAM-elementen wordt uitgevoerd de werkstroomstartprogramma&#39;s uit die de DAM Update Asset-workflow uitvoeren.
 
@@ -351,7 +351,7 @@ De volgende procedure veronderstelt de volgende kenmerken voor de het ontladen t
 
 Naast de details op deze pagina kunt u ook het volgende lezen:
 
-* Voor informatie over het gebruiken van Java APIs om banen en baanconsumenten tot stand te brengen, zie het [Creëren en het Verbruiken van Banen voor het Offloaden](/help/sites-developing/dev-offloading.md).
-* Zie [Algemene richtlijnen en aanbevolen procedures voor het offloaden](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading)van activa voor algemene richtlijnen en beste praktijken voor het ontladen van activa.
-* Om te weten hoe te om de automatische verwezenlijking van het ontladen agenten onbruikbaar te maken, zie het [Uitzetten van Automatisch Beheer](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management)van de Agent.
+* Voor informatie over het gebruiken van Java APIs om banen en baanconsumenten tot stand te brengen, zie [het Creëren van en het Verbruiken van Banen voor het Offloaden](/help/sites-developing/dev-offloading.md).
+* Zie [Algemene richtlijnen en aanbevolen procedures voor het offloaden van bedrijfsmiddelen](/help/assets/assets-offloading-best-practices.md#general-guidance-and-best-practices-for-asset-offloading) voor algemene richtlijnen en aanbevolen procedures voor het offloaden van bedrijfsmiddelen.
+* Zie [Automatisch agentbeheer uitschakelen](/help/assets/assets-offloading-best-practices.md#turning-off-automatic-agent-management) om te weten hoe u het automatisch maken van offloading-agents kunt uitschakelen.
 
