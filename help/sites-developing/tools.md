@@ -24,7 +24,7 @@ ht-degree: 0%
 
 AEM biedt:
 
-* [een framework voor het testen van de gebruikersinterface](/help/sites-developing/hobbes.md)van componenten.
+* [een framework voor het testen van de gebruikersinterface](/help/sites-developing/hobbes.md) van componenten.
 * [een mechanisme voor het testen van en het opsporen van fouten in componenten](/help/sites-developing/developer-mode.md).
 
 Hieronder vindt u twee Open Source Testing-gereedschappen:
@@ -33,17 +33,17 @@ Hieronder vindt u twee Open Source Testing-gereedschappen:
 
 Selenium wordt gebruikt voor functietests in een browser met één gebruiker per activiteit. Hierbij worden teststappen (klikken) vastgelegd als HTML-tabellen of Java-klassen.
 
-Zie [https://www.seleniumhq.org/](https://www.seleniumhq.org/)voor meer informatie.
+Zie [https://www.seleniumhq.org/](https://www.seleniumhq.org/) voor meer informatie.
 
 **JMeter**
 
 JMeter wordt gebruikt om aanvragen te volgen en kan worden gebruikt voor functionele, prestatie- en stresstests.
 
-Zie [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/)voor meer informatie.
+Zie [http://jakarta.apache.org/jmeter/](http://jakarta.apache.org/jmeter/) voor meer informatie.
 
 Er zijn ook veel bedrijfseigen instrumenten om tests te automatiseren en testplannen te beheren.
 
-## Tekstspatiëring {#tracking}
+## {#tracking} bijhouden
 
 De volgende gereedschappen zijn gemakkelijk beschikbaar. Nochtans is een zeer belangrijke kwestie in alle gevallen de beschikbaarheid van de gegevens aan alle leden van het projectteam - partner en klant.
 
