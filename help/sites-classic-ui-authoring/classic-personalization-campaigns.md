@@ -36,17 +36,20 @@ In dit document worden de verschillende elementen beschreven waaruit campagnes b
 
 Het beheer van campagnes bestaat uit verschillende elementen:
 
-* **Merken** In AEM zijn merken de eenheid op hoofdniveau en vormen een verzameling 
+* **aem**
+merken zijn de eenheid op hoofdniveau en vormen een verzameling 
 **Campagnes**.
 
-* **Campagne** A campagne is een collectie individuele 
+* **De**
+campagne CampaignsA is een inzameling van individuele 
 **Ervaringen**.
 
-* **Ervaringen** De gerichte inhoud vormt de verschillende ervaringen die aan de bezoeker worden getoond op 
+* ****
+ErvaringenDe gerichte inhoud vormt de verschillende ervaringen die aan de bezoeker worden getoond op 
 **Aanraakpunten**. Er zijn verschillende soorten ervaring beschikbaar:
 
    * **Teasers**
-      [Taserpagina&#39;s/alinea](#teasers) &#39;s worden gebruikt om specifieke **segmenten** van bezoekers te sturen naar inhoud die op hun belangen is toegespitst.
+      [Taserpagina&#39;s/](#teasers) alinea&#39;s worden gebruikt om specifieke  **** bezoekerssegmenten te sturen naar inhoud die op hun belangen is toegespitst.
 
       Taserpagina&#39;s kunnen:
 
@@ -57,7 +60,7 @@ Het beheer van campagnes bestaat uit verschillende elementen:
 
    * **Nieuwsbrieven**
 
-      [E-mailcommunicatie](#emailmarketing) wordt gebruikt om gebruikers te betrekken en hen aan te moedigen om uw website te bezoeken. Deze hebben meestal de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie naar AEM [te](/help/sites-administering/campaign.md)benutten.
+      [E-](#emailmarketing) mailcommunicatie wordt gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze hebben gewoonlijk de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
 
    * **Adobe Target**
 
@@ -72,15 +75,15 @@ Het beheer van campagnes bestaat uit verschillende elementen:
 
 * **Leads**
 
-   De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
+   De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie naar AEM [te](/help/sites-administering/campaign.md)benutten.
+   De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
 
 * **Lijsten**
 
-   Regelafstand wordt meestal gegroepeerd in lijsten, zodat u er gezamenlijk op kunt reageren. Opmerking: **Opmerking:** Adobe is niet van plan deze capaciteit verder te verbeteren.
+   Regelafstand wordt meestal gegroepeerd in lijsten, zodat u er gezamenlijk op kunt reageren. Opmerking: **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   De aanbeveling is Adobe Campaign en de integratie in AEM [te benutten.](/help/sites-administering/campaign.md)
+   Aanbeveling is om Adobe Campaign en de integratie naar AEM te gebruiken.[](/help/sites-administering/campaign.md)
 
 * **Segmenten**
 
@@ -90,7 +93,7 @@ Het beheer van campagnes bestaat uit verschillende elementen:
 
    De manager van de Campagne van de Marketing (MCM) is een console die u toestaat om tot alle functionaliteit toegang te hebben u uw campagnes, merken, ervaringen, touchpoints, lood, lijsten, segmenten en rapporten moet tot stand brengen en controleren.
 
-   Het kan van diverse plaatsen (geëtiketteerd als Campagnes ****), of met, bijvoorbeeld, URL worden betreden:
+   Het kan van diverse plaatsen (geëtiketteerd als **Campagnes**), of met, bijvoorbeeld URL worden betreden:
 
    `http://localhost:4502/libs/mcm/content/admin.html`
 
