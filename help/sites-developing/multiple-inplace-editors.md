@@ -86,7 +86,7 @@ Voer de volgende stappen uit om meerdere editors te configureren:
 
 ### Aanvullende configuratie voor Rich Text Editors {#additional-configuration-for-rich-text-editors}
 
-De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Voor details, zie de Rich [Redacteur](/help/sites-administering/rich-text-editor.md)van de Tekst vormen. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. Adobe adviseert het creëren van de nieuwe configuratieknoop onder `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
+De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aangezien u elke individuele instantie van RTE afzonderlijk kunt vormen. Zie [De Rich Text Editor](/help/sites-administering/rich-text-editor.md) configureren voor meer informatie. Om veelvoudige RTEs te hebben creeer een configuratie voor elke op zijn plaats RTE. Adobe adviseert het creëren van de nieuwe configuratieknoop onder `cq:InplaceEditingConfig` aangezien elke individuele RTE een verschillende configuratie kan hebben. Onder de nieuwe knoop creeert elke individuele configuratie van RTE.
 
 ```xml
     texttext
@@ -103,19 +103,19 @@ De configuratie voor veelvoudige Rich Text Editors is lichtjes verschillend aang
 
 >[!NOTE]
 >
->Voor RTE wordt de `configPath` eigenschap echter ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere gebruikersinterfacedialogen van de component te steunen.
+>Voor RTE wordt de eigenschap `configPath` echter ondersteund wanneer de component slechts één instantie van een teksteditor (bewerkbaar subgebied) bevat. Dit gebruik van `configPath` wordt verstrekt om achterwaartse verenigbaarheid met oudere gebruikersinterfacedialogen van de component te steunen.
 
 >[!CAUTION]
 >
->Noem niet de de configuratieknoop van RTE zoals `config`. Anders, zijn de configuraties RTE beschikbaar voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
+>Noem niet de de configuratieknoop van RTE als `config`. Anders, zijn de configuraties RTE beschikbaar voor slechts de beheerders en niet voor de gebruikers in de groep `content-author`.
 
 ## Codevoorbeelden {#code-samples}
 
-U kunt de code van deze pagina op [aem-authoring-hybrideditors project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors)vinden. U kunt het volledige project downloaden als [een ZIP-archief](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip).
+U kunt de code van deze pagina op [aem-authoring-hybrideditors project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors) vinden. U kunt het volledige project als [een archief van het PIT ](https://github.com/Adobe-Marketing-Cloud/aem-authoring-hybrideditors/archive/master.zip) downloaden.
 
-## Een interne editor toevoegen {#add-an-in-place-editor}
+## Een interne editor {#add-an-in-place-editor} toevoegen
 
-Voor algemene informatie over het toevoegen van een op plaats-redacteur zie het document pagina [aanpassen creatie](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
+Voor algemene informatie over het toevoegen van een op plaats-redacteur zie het document [aanpassen pagina creatie](/help/sites-developing/customizing-page-authoring-touch.md#add-new-in-place-editor).
 
 >[!MORELIKETHIS]
 >
