@@ -19,7 +19,7 @@ ht-degree: 0%
 
 # Herstructurering van de opslagplaats voor elektronische handel in AEM 6.4{#e-commerce-repository-restructuring-in-aem}
 
-Zoals beschreven in de [herstructurering van de moederopslagplaats in AEM 6.4](/help/sites-deploying/repository-restructuring.md) pagina, zouden klanten die tot AEM 6.4 opwaarderen deze pagina moeten gebruiken om de werkinspanning te beoordelen verbonden aan veranderingen in de opslagplaats die gevolgen hebben voor de AEM E-Commerce-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
+Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-deploying/repository-restructuring.md)-pagina, moeten klanten die een upgrade uitvoeren naar AEM 6.4 deze pagina gebruiken om de werkinspanning te beoordelen die gepaard gaat met wijzigingen in de opslagplaats die gevolgen hebben voor de AEM E-Commerce-oplossing. Sommige veranderingen vereisen het werk inspanning tijdens het AEM 6.4 verbeteringsproces, terwijl anderen tot een verbetering van 6.5 kunnen worden uitgesteld.
 
 ## Met 6.4-upgrade {#with-upgrade}
 
@@ -37,7 +37,7 @@ Zoals beschreven in de [herstructurering van de moederopslagplaats in AEM 6.4](/
   </tr>
   <tr>
    <td><strong>Herstructureringsrichtsnoeren</strong></td> 
-   <td><p>U kunt een <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Uitgestelde taak van de Migratie</a> gebruiken om e-Commerce gegevens te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p> 
+   <td><p>U kunt een <a href="/help/sites-deploying/lazy-content-migration.md" target="_blank">Lazy Migratie</a> taak gebruiken om E-Commerce-gegevens te migreren.</p> <p>De volgende stappen worden uitgevoerd:</p> 
     <ul> 
      <li>Hiermee wijzigt u verwijzingen naar oude locatie zodat deze naar een nieuwe locatie verwijzen</li> 
      <li>Hiermee wordt inhoud van de oude locatie naar de nieuwe locatie verplaatst</li> 
@@ -53,7 +53,7 @@ Zoals beschreven in de [herstructurering van de moederopslagplaats in AEM 6.4](/
   </tr>
   <tr>
    <td><strong>Opmerkingen</strong></td> 
-   <td>N/A<br /> </td> 
+   <td>N.v.t.<br /> </td> 
   </tr>
  </tbody>
 </table>
