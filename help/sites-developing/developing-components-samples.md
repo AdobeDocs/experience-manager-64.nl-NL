@@ -35,36 +35,36 @@ Voor informatie over klassieke UI zie [AEM Componenten voor Klassieke UI](/help/
 >Om u te helpen uw componenten analyseren, testen en zuiveren, AEM verstrekt:
 >
 >* [Ontwerpmodus](/help/sites-developing/developer-mode.md)
->* een [kader voor het automatiseren van tests, op basis van de bibliotheek Hobbes.js](/help/sites-developing/hobbes.md)
+>* a [framework for automating tests, based on the Hobbes.js library](/help/sites-developing/hobbes.md)
 
 >
 
 
 
-## Codevoorbeeld - Hoe te om de Gebieden van de Dialoog aan te passen {#code-sample-how-to-customize-dialog-fields}
+## Codevoorbeeld - Hoe te om de Gebieden van de Dialoog {#code-sample-how-to-customize-dialog-fields} aan te passen
 
 CODE VOOR GITHUB
 
 U kunt de code van deze pagina op GitHub vinden
 
 * [Open aem-creatie-dialoog-gebieden-aanpassing project op GitHub](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization)
-* Het project downloaden als [ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
+* Het project downloaden als [een ZIP-bestand](https://github.com/Adobe-Marketing-Cloud/aem-authoring-dialog-fields-customization/archive/master.zip)
 
 >[!NOTE]
 >
->Dit codevoorbeeld is verwant aan de zitting van AEM Gems over het [Aanpassen van de Gebieden](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html)van de Dialoog.
+>Dit codevoorbeeld is verwant met de zitting van AEM Gems op [Aanpassen van de Gebieden van de Dialoog](https://docs.adobe.com/content/ddc/en/gems/customizing-dialog-fields-in-touch-ui.html).
 
 ## Gerelateerde bronnen {#related-resources}
 
-### Nieuwe handeling toevoegen aan werkbalk Component {#add-new-action-to-a-component-toolbar}
+### Nieuwe handeling toevoegen aan een componentwerkbalk {#add-new-action-to-a-component-toolbar}
 
 U kunt nieuwe handelingen toevoegen aan werkbalken van componenten met de bewerkingslaag van de pagina-editor.
 
-De details, samen met verbindingen aan de codesteekproef, zijn onder [Voeg Nieuwe Actie aan Toolbar](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar)van de Component toe.
+De details, samen met verbindingen aan de codesteekproef, zijn onder [Nieuwe Actie toevoegen aan een Toolbar van de Component](/help/sites-developing/customizing-page-authoring-touch.md#add-new-action-to-a-component-toolbar).
 
 ### Contentfragmenten aanpassen en uitbreiden {#customizing-and-extending-content-fragments}
 
 U kunt de standaardcomponent van het Fragment van de Inhoud willen uitbreiden om eigenschappen toe te voegen.
 
-De details zijn onder [Aanpassen en Uitbreidt Inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md).
+De details zijn onder [Aanpassen en Uitbreidend Inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md).
 
