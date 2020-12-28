@@ -35,7 +35,7 @@ U kunt zich hier aanmelden bij het Digital Publishing Suite-product om ervoor te
 
 [https://digitalpublishing.acrobat.com/welcome.html](https://digitalpublishing.acrobat.com/welcome.html)
 
-### Een GDPR-verzoek starten {#initiating-a-gdpr-request}
+### Een GDPR-verzoek {#initiating-a-gdpr-request} starten
 
 Neem contact op met de klantenservice van Adobe om een GDPR-aanvraag voor de Digital Publishing Suite te starten.
 
@@ -48,8 +48,8 @@ Verplicht:
 Geef ten minste 1 van de volgende gegevens op:
 
 * De klant van de eindgebruiker verstrekte OAuth identiteitskaart (identiteitskaart die in het directe machtigingssysteem van de klant wordt gebruikt): *dpsc-directEntitlementId*
-* Voor gebruikers van de Windows-app gebruikt u de App Store-id van de eindgebruiker: *dpsc-windowsAppStoreId*
-* Het e-mailadres dat de eindgebruiker heeft gebruikt om te communiceren met de DPS App: *email*
+* Voor gebruikers van de Windows-app gebruikt u de id van de App Store van de eindgebruiker: *dpsc-windowsAppStoreId*
+* Het e-mailadres dat de eindgebruiker heeft gebruikt om te communiceren met de DPS App: *e-mail*
 
 ### Veelgestelde vragen (FAQ) {#frequently-asked-questions-faq}
 
