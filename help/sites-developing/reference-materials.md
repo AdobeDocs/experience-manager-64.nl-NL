@@ -50,7 +50,7 @@ API&#39;s voor levering en inhoudsbeheer AEM:
 
    * [JSON-exportfunctie](/help/sites-developing/json-exporter.md)
    * [JSON-export inschakelen voor een component](/help/sites-developing/json-exporter-components.md)
-   * Raadpleeg de sectie [Componenten in de handleiding](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) voor ontwikkelaars voor meer informatie
+   * Zie de sectie [Componenten in de Handleiding voor ontwikkelaars](https://helpx.adobe.com/experience-manager/6-4/sites/developing/user-guide.html?topic=/experience-manager/6-4/sites/developing/morehelp/components.ug.js) voor meer informatie
 
 * [AEM Assets HTTP API](/help/assets/mac-api-assets.md)
 
