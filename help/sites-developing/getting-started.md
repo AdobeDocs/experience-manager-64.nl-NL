@@ -26,7 +26,7 @@ Nieuw bij het ontwikkelen van AEM? Wilt u de beste praktijken vernieuwen? Dit is
 
 Het doel van deze meerdelige zelfstudie is om een nieuwe ontwikkelaar te leren AEM hoe hij een website implementeert in AEM met de nieuwste standaarden en technologieën. De hoop is aan het eind van deze zelfstudie zult u de basisstichting van het AEM platform en de kennis van enkele gemeenschappelijke ontwerppatronen begrijpen.
 
-## Zelfstudie voor WKND-ontwikkelaars {#wknd-developer-tutorial}
+## Zelfstudie voor WKND-ontwikkelaars{#wknd-developer-tutorial}
 
 De zelfstudie is [hier](https://docs.adobe.com/content/help/en/experience-manager-learn/getting-started-wknd-tutorial-develop/overview.html) beschikbaar of klik op de onderstaande afbeelding.
 
@@ -46,4 +46,4 @@ Doorloop de zelfstudie voordat u in detail in de bovenstaande concepten gaat.
 
 ## Volgende stappen {#next-steps}
 
-Als u de [zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html)hebt voltooid, kunt u het document [AEM Core Concepts](/help/sites-developing/the-basics.md) bekijken om een beter inzicht te krijgen in enkele van de onderliggende technologieën en ontwikkelingsparadigma&#39;s van AEM.
+Als u de [zelfstudie](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop.html) hebt voltooid, kunt u overwegen het document [AEM Core Concepts](/help/sites-developing/the-basics.md) te reviseren om een beter inzicht te krijgen in enkele onderliggende technologieën en ontwikkelingsparadigma&#39;s van AEM.
