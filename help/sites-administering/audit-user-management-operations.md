@@ -18,7 +18,7 @@ ht-degree: 0%
 ---
 
 
-# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren{#how-to-audit-user-management-operations-in-aem}
+# Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM{#how-to-audit-user-management-operations-in-aem} te controleren
 
 ## Inleiding {#introduction}
 
@@ -30,24 +30,24 @@ Dankzij deze uitbreiding kunt u de CRUD-handelingen (Maken, Lezen, Bijwerken, Ve
 * Een gebruiker die aan een groep wordt toegevoegd
 * Wijzigingen in machtigingen voor een bestaande gebruiker of groep
 
-Standaard worden de items naar het `error.log` bestand geschreven. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht. In de onderstaande alinea vindt u meer informatie over hoe u dit kunt doen.
+Standaard worden de items naar het `error.log`-bestand geschreven. Om controle gemakkelijker te maken, adviseert men dat zij aan een afzonderlijk logboekdossier worden opnieuw gericht. In de onderstaande alinea vindt u meer informatie over hoe u dit kunt doen.
 
 ## De uitvoer wordt omgeleid naar een afzonderlijk logbestand {#redirecting-the-output-to-a-separate-log-file}
 
-Om de logboekoutput aan een afzonderlijk logboekdossier om te leiden, zult u een nieuwe **Logboekconfiguratie van het Logboekprogramma van de Verspreiding van Apache** moeten creëren. We gebruiken `useraudit.log` de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
+Als u de logboekuitvoer wilt omleiden naar een afzonderlijk logbestand, moet u een nieuwe **Logboekregistratie voor Apache Sling Logger**-configuratie maken. `useraudit.log` wordt gebruikt als de naam van het afzonderlijke bestand in het onderstaande voorbeeld.
 
-1. Ga naar de webconsole door naar `https://<serveraddress>:<serverport>/system/console/configMgr`
+1. Ga naar de webconsole door naar `https://<serveraddress>:<serverport>/system/console/configMgr` te bladeren
 1. Zoek naar **Apache Sling Logging Logger Configuration**. Druk vervolgens op &quot;+&quot; in de rechterkant van de vermelding om een nieuwe fabrieksconfiguratie te maken.
 1. Maak de volgende configuratie:
 
-   * **Logniveau:** Informatie
-   * **Logbestand:** logs/useraudit.log
-   * **Berichtpatroon:** niveau standaard
+   * **Logniveau:** informatie
+   * **logbestand:** logs/useraudit.log
+   * **Berichtpatroon:standaard** niveau
    * **Logger:** com.adobe.granite.security.user.internal.audit, com.adobe.granite.security.user.internal.servlets.AuthorizableServlet
 
-   Als u beide loggers wilt invoeren in het veld **Logger** , moet u de naam van de eerste gebruiker invoeren en vervolgens een ander veld maken door op de knop &quot;+&quot; te drukken en de naam van de tweede registreerder in te voeren.
+   Om beide loggers in het **Logger** gebied in te gaan, moet u de naam van eerste ingaan, dan een ander gebied tot stand brengen door &quot;+&quot;knoop te drukken en de naam van de tweede registreerder in te gaan.
 
-## Voorbeeld-uitvoer {#example-output}
+## Voorbeeld van uitvoer {#example-output}
 
 Indien correct gevormd, zou de output als dit moeten kijken:
 
