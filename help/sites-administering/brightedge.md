@@ -36,12 +36,12 @@ Wanneer u de configuratie creeert, specificeert u een titel. De titel moet besch
 1. Typ een titel voor de configuratie. Naar keuze, typ een naam voor de knoop die wordt gebruikt om de configuratie in de bewaarplaats op te slaan. Klik op Maken.
 1. Typ in het dialoogvenster Configuratie van BrightStor Content Optimizer de gebruikersnaam en het wachtwoord van de BrightStor-account en klik op OK.
 
-## Een BrightEdge-configuratie bewerken {#editing-a-brightedge-configuration}
+## Een BrightEdge-configuratie {#editing-a-brightedge-configuration} bewerken
 
 Wijzig indien nodig de gebruikersnaam en het wachtwoord van een BrightStor-configuratie. De wijzigingen zijn van invloed op alle pagina&#39;s die de configuratie gebruiken.
 
 1. Klik in de track op Gereedschappen > Bewerkingen > Wolk > Cloud Services.
-1. Klik in het gedeelte BrightEdge Content Optimizer op Configuraties tonen.
+1. Klik in de sectie BrightEdge Content Optimizer op Configuraties tonen.
 
    ![chlimage_1-5](assets/chlimage_1-5.png)
 
@@ -60,7 +60,7 @@ Koppel pagina&#39;s aan een BrightStor-configuratie om paginagegevens naar de Br
 
    ![chlimage_1-6](assets/chlimage_1-6.png)
 
-## Een BrightEdge-configuratie activeren {#activating-a-brightedge-configuration}
+## Een BrightEdge-configuratie {#activating-a-brightedge-configuration} activeren
 
 Activeer een BrightEdge-configuratie om deze te repliceren op de publicatie-instantie en om gepubliceerde pagina&#39;s in staat te stellen te communiceren met de BrightStor-service.
 
