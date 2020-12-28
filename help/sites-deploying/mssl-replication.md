@@ -37,7 +37,7 @@ Wanneer u MSSL configureert voor replicatie, moet u de volgende stappen uitvoere
 
 U moet bepalen welke gebruikersaccount de replicatie uitvoert. Wanneer u het certificaat van de vertrouwde auteur op de publicatie-instantie installeert, is het certificaat gekoppeld aan dit gebruikersaccount.
 
-## Credentials verkrijgen of maken voor MSSL {#obtaining-or-creating-credentials-for-mssl}
+## Referenties verkrijgen of maken voor MSSL {#obtaining-or-creating-credentials-for-mssl}
 
 U hebt een persoonlijke sleutel en een openbaar certificaat nodig voor de auteur en u publiceert exemplaren:
 
@@ -80,13 +80,13 @@ Gebruik de volgende procedure om een persoonlijke sleutel en een zelfondertekend
 
    | Optie | Auteur | Publicatie |
    |---|---|---|
-   | -alias | author | publish |
+   | -alias | auteur | publish |
    | -file | author.cer | publish.cer |
    | -keystore | author.keystore | publish.keystore |
 
 ### pkcs#12-indeling {#pkcs-format}
 
-Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Gebruik [openSSL](https://www.openssl.org/) om deze te genereren. Gebruik de volgende procedure om een persoonlijke sleutel en een certificaatverzoek te produceren. Om het certificaat te verkrijgen, ondertekent u het verzoek met uw persoonlijke sleutel (zelfondertekend certificaat) of verzendt u het verzoek naar een CA. Vervolgens genereert u het archief pkcs#12 dat de persoonlijke sleutel en het certificaat bevat.
+Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Gebruik [openSSL](https://www.openssl.org/) om hen te produceren. Gebruik de volgende procedure om een persoonlijke sleutel en een certificaatverzoek te produceren. Om het certificaat te verkrijgen, ondertekent u het verzoek met uw persoonlijke sleutel (zelfondertekend certificaat) of verzendt u het verzoek naar een CA. Vervolgens genereert u het archief pkcs#12 dat de persoonlijke sleutel en het certificaat bevat.
 
 1. Open een opdrachtregelvenster of terminal. Als u de persoonlijke sleutel wilt maken, voert u de volgende opdracht in met behulp van de optiewaarden uit de onderstaande tabel:
 
@@ -134,9 +134,9 @@ Genereer een persoonlijke sleutel en een certificaat in de pkcs#12-indeling. Geb
    | -inkey | author.key | publish.key |
    | -out | author.pfx | publish.pfx |
    | -inch | author.cer | publish.cer |
-   | -name | author | publish |
+   | -name | auteur | publish |
 
-## Privésleutel en TrustStore installeren op auteur {#install-the-private-key-and-truststore-on-author}
+## Private Key en TrustStore installeren op auteur {#install-the-private-key-and-truststore-on-author}
 
 Installeer de volgende items op de auteurinstantie:
 
@@ -145,7 +145,7 @@ Installeer de volgende items op de auteurinstantie:
 
 Om de volgende procedure uit te voeren, moet u als beheerder van de auteursinstantie worden het programma geopend.
 
-### De persoonlijke sleutel van de auteur installeren {#install-the-author-private-key}
+### De persoonlijke sleutel van de auteur {#install-the-author-private-key} installeren
 
 1. Open de pagina Gebruikersbeheer voor de auteurinstantie. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Als u de eigenschappen van uw gebruikersaccount wilt openen, klikt of tikt u op uw gebruikersnaam.
@@ -164,7 +164,7 @@ Om de volgende procedure uit te voeren, moet u als beheerder van de auteursinsta
 
    ![chlimage_1-67](assets/chlimage_1-67.png)
 
-### Het publicatiecertificaat installeren {#install-the-publish-certificate}
+### Het publicatiecertificaat {#install-the-publish-certificate} installeren
 
 1. Open de pagina Gebruikersbeheer voor de auteurinstantie. ([http://localhost:4502/libs/granite/security/content/useradmin.html](http://localhost:4502/libs/granite/security/content/useradmin.html))
 1. Als u de eigenschappen van uw gebruikersaccount wilt openen, klikt of tikt u op uw gebruikersnaam.
@@ -199,7 +199,7 @@ Als u de volgende procedure wilt uitvoeren, moet u zijn aangemeld als beheerder 
 1. Voer een alias en het wachtwoord voor de sleutelarchief in. Voer de alias en het wachtwoord voor de persoonlijke sleutel in en klik op Verzenden.
 1. Sluit het dialoogvenster KeyStore Management.
 
-### Auteurscertificaat installeren {#install-the-author-certificate}
+### Auteurscertificaat {#install-the-author-certificate} installeren
 
 1. Open de pagina Gebruikersbeheer voor de publicatie-instantie. ([http://localhost:4503/libs/granite/security/content/useradmin.html](http://localhost:4503/libs/granite/security/content/useradmin.html))
 1. Zoek de gebruikersaccount die u gebruikt om replicatieverzoeken uit te voeren en klik of tik op de gebruikersnaam.
@@ -209,7 +209,7 @@ Als u de volgende procedure wilt uitvoeren, moet u zijn aangemeld als beheerder 
 1. Controleer of de optie Certificaat toewijzen aan gebruiker is geselecteerd. Klik op Certificaatbestand selecteren, selecteer auteur.cer en klik op Openen.
 1. Klik op Verzenden en sluit het dialoogvenster TrustStore Management.
 
-## De HTTP-service configureren bij publiceren {#configure-the-http-service-on-publish}
+## De HTTP-service configureren bij publicatie {#configure-the-http-service-on-publish}
 
 Configureer de eigenschappen van de op Jetty Gebaseerde HTTP-service van Apache Felix op de publicatie-instantie, zodat deze HTTPS gebruikt bij de toegang tot Granite Keystore. De PID van de service is `org.apache.felix.http`.
 
@@ -222,9 +222,9 @@ De volgende lijst maakt een lijst van de eigenschappen OSGi die u moet vormen of
 | HTTPS-poort | org.osgi.service.http.port.secure | 8443 (of andere gewenste poort) |
 | Clientcertificaat | org.apache.felix.https.clientcertificate | &quot;Gezocht clientcertificaat&quot; |
 
-## De Replication Agent configureren op auteur {#configure-the-replication-agent-on-author}
+## De replicatieagent configureren op auteur {#configure-the-replication-agent-on-author}
 
-Configureer de replicatieagent op de auteurinstantie om het HTTPS-protocol te gebruiken wanneer u verbinding maakt met de publicatieinstantie. Voor volledige informatie over het vormen van replicatieagenten zie het [Vormen van Uw Agenten](/help/sites-deploying/replication.md#configuring-your-replication-agents)van de Replicatie.
+Configureer de replicatieagent op de auteurinstantie om het HTTPS-protocol te gebruiken wanneer u verbinding maakt met de publicatieinstantie. Voor volledige informatie over het vormen van replicatieagenten zie [het Vormen van Uw Agenten van de Replicatie](/help/sites-deploying/replication.md#configuring-your-replication-agents).
 
 Om MSSL toe te laten, vorm de eigenschappen op het lusje van het Vervoer volgens de volgende lijst:
 
