@@ -20,7 +20,7 @@ ht-degree: 1%
 
 # Inhoudsbeheer voor schermen{#content-management-for-screens}
 
-Een ***Content Manager*** voor AEM Screens is een creatieve professional die nauw samenwerkt met marketing en de campagne, het publiek en de gewenste focus kent. De inhoudsbeheerder is verantwoordelijk voor het maken en ordenen van ervaringen voor eindgebruikers door verschillende kanalen te ontwikkelen en reeksen toe te wijzen aan een getimede kanaalervaring.
+A ***Content Manager*** voor AEM Screens is een creatieve professional die nauw samenwerkt met marketing en de campagne, het publiek en de gewenste focus kent. De inhoudsmanager is verantwoordelijk voor het creëren van en het orchestreren van eindgebruikerservaring door verschillende kanalen te ontwikkelen en opeenvolgingen in een getimed kanaalervaring toe te wijzen.
 
 Inhoudsbeheer voor schermontwerplocaties en -planningen, behoud van kanaalintegriteit, voer analyses en rapportage uit en onderhoud videoprofielen.
 
