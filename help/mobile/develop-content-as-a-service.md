@@ -21,7 +21,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->Adobe adviseert het gebruiken van de Redacteur van het KUUROORD voor projecten die enige pagina op kader-gebaseerde cliënt-zijteruggeven (b.v. Reageren) vereisen. [Meer](/help/sites-developing/spa-overview.md)informatie.
+>Adobe raadt aan de SPA Editor te gebruiken voor projecten die renderen op basis van één pagina voor toepassingsframework op de client-side vereisen (bijvoorbeeld Reageren). [Meer](/help/sites-developing/spa-overview.md) informatie.
 
 Mobiele apps moeten alle inhoud in AEM kunnen gebruiken om de beoogde app-ervaring te bieden.
 
@@ -29,7 +29,7 @@ Dit omvat het gebruik van elementen, site-inhoud, CAAS-inhoud (over-the-air) en 
 
 >[!NOTE]
 >
->**Over-the-air inhoud** kan uit om het even welk bovenstaand via handlers ContentSync komen. Het kan worden gebruikt voor het in batches verpakken en leveren via postzegels en voor het onderhouden van updates of dergelijke pakketten.
+>**Over-the-air** inhoud kan uit om het even welk bovenstaand via handlers ContentSync komen. Het kan worden gebruikt voor het in batches verpakken en leveren via postzegels en voor het onderhouden van updates of dergelijke pakketten.
 
 Er zijn drie belangrijke soorten materiaal die de Diensten van de Inhoud leveren:
 
@@ -54,7 +54,7 @@ Een belangrijke waarde van Content Services is de mogelijkheid om elementen te r
 
 Asset optimization wordt een serverfunctie, gebaseerd op informatie die wordt verstrekt in de API-aanvraag. Waar mogelijk moeten de rendities van activa in de cache worden geplaatst, zodat soortgelijke verzoeken geen hergeneratie van de uitvoering van activa vereisen.
 
-### Assets Workflow {#assets-workflow}
+### Workflow voor elementen {#assets-workflow}
 
 De workflow voor elementen ziet er als volgt uit:
 
@@ -65,11 +65,11 @@ De workflow voor elementen ziet er als volgt uit:
    1. Middel- of middelenverzameling selecteren
    1. JSON-rendering aanpassen
 
-Het volgende diagram toont het Werkschema **van de Verwijzing van** Activa:
+In het volgende diagram wordt de **Assets Reference Workflow** getoond:
 
 ![chlimage_1-155](assets/chlimage_1-155.png)
 
-### Elementen beheren {#managing-assets}
+### Elementen {#managing-assets} beheren
 
 De Diensten van de inhoud verleent toegang tot AEM beheerde activa die niet door andere AEM inhoud kunnen worden van verwijzingen voorzien.
 
@@ -85,7 +85,7 @@ Momenteel worden deze uitgespreid rond de gegevensopslagplaats van Activa. De be
 * /content/dam/geometrixx-outdoors/brand/icons/app/cart.png
 * /content/dam/geometrixx-outdoors/brand/icons/app/home.png
 
-#### Toegang tot CS Asset-entiteiten {#accessing-cs-asset-entities}
+#### Toegang tot CS Asset Entities {#accessing-cs-asset-entities}
 
 Laten we de stappen opzij zetten die aangeven hoe de pagina momenteel via de API beschikbaar is (deze wordt gedekt door de beschrijving van de AEM-interface) en aannemen dat deze is uitgevoerd. Elemententiteiten zijn gemaakt en toegevoegd aan de ruimte appImages. Er zijn extra mappen onder de ruimte gemaakt voor organisatiedoeleinden. De activa-entiteiten worden dus in het AEM JCR opgeslagen als:
 
@@ -95,7 +95,7 @@ Laten we de stappen opzij zetten die aangeven hoe de pagina momenteel via de API
 * /content/entities/appImages/icons/cart
 * /content/entities/appImages/icons/home
 
-#### Een lijst met beschikbare elementen ophalen {#getting-a-list-of-available-asset-entities}
+#### Een lijst met beschikbare elemententiteiten ophalen {#getting-a-list-of-available-asset-entities}
 
 Een toepassingsontwikkelaar kan een lijst met beschikbare middelen krijgen door de activa te winnen entiteiten. Het de ruimteeindpunt van de Diensten van de Inhoud kan die informatie door de dienst API SDK van het Web verstrekken.
 
@@ -103,13 +103,13 @@ Het resultaat is een object in JSON-indeling dat een lijst met de elementen in d
 
 ![chlimage_1-156](assets/chlimage_1-156.png)
 
-#### Een afbeelding ophalen {#getting-an-image}
+#### Afbeelding {#getting-an-image} ophalen
 
 JSON verstrekt een URL voor elk beeld, dat door de Diensten van de Inhoud aan het beeld wordt geproduceerd.
 
 Om het binaire getal voor de &quot;winkelwagentje&quot;-afbeelding op te halen, wordt de clientbibliotheek opnieuw gebruikt.
 
-## HTML-inhoud in pakket {#packaged-html-content}
+## Verpakte HTML-inhoud {#packaged-html-content}
 
 HTML-inhoud is nodig voor klanten die de lay-out van inhoud moeten behouden. Dit is handig voor native toepassingen die een webcontainer gebruiken - zoals een Cordova-webweergave - om de inhoud weer te geven.
 
@@ -117,8 +117,8 @@ AEM Content Services kan HTML-inhoud leveren aan de mobiele app via de API. Klan
 
 De volgende opties worden overwogen:
 
-* **Zip-bestand:** Om de beste kans te hebben om correct op het apparaat te tonen, al het van verwijzingen voorzien materiaal van de pagina - css, JavaScript, activa, etc. - wordt opgenomen in één gecomprimeerd bestand met het antwoord. De verwijzingen in de HTML-pagina worden aangepast om een relatief pad naar deze bestanden te gebruiken.
-* **Streaming:** Manifest van de vereiste dossiers van AEM krijgen. Vervolgens gebruikt u dat manifest om alle bestanden aan te vragen (HTML, CSS, JS, enz.) met latere verzoeken.
+* **Zip-bestand:** Om de beste kans te hebben om correct op het apparaat weer te geven, moet al het materiaal waarnaar op de pagina wordt verwezen - css, JavaScript, assets, enz. - wordt opgenomen in één gecomprimeerd bestand met het antwoord. De verwijzingen in de HTML-pagina worden aangepast om een relatief pad naar deze bestanden te gebruiken.
+* **Streaming:** manifestatie van de vereiste bestanden ophalen vanuit AEM. Vervolgens gebruikt u dat manifest om alle bestanden aan te vragen (HTML, CSS, JS, enz.) met latere verzoeken.
 
 ![chlimage_1-157](assets/chlimage_1-157.png)
 
