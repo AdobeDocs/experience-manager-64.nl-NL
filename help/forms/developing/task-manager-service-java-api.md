@@ -1,8 +1,8 @@
 ---
 title: Java API QuickStart (SOAP) van Taakbeheerservice
 seo-title: Java API QuickStart (SOAP) van Taakbeheerservice
-description: 'null'
-seo-description: 'null'
+description: Met de Taakbeheerservice kunt u taken toewijzen, taken vergrendelen, aan gebruikers toegewezen taken ophalen, formuliergegevens ophalen van taken, formuliergegevens wijzigen, bestandsbijlagen ophalen en taakgegevens ophalen.
+seo-description: Met de Taakbeheerservice kunt u taken toewijzen, taken vergrendelen, aan gebruikers toegewezen taken ophalen, formuliergegevens ophalen van taken, formuliergegevens wijzigen, bestandsbijlagen ophalen en taakgegevens ophalen.
 uuid: fd6fceb1-865e-47a7-83fc-a63dcc2c21de
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 532e607d-5bc5-4ccc-92c6-30efe1081872
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '503'
+source-wordcount: '561'
 ht-degree: 0%
 
 ---
