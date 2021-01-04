@@ -1,8 +1,8 @@
 ---
 title: Werken met XMP hulpprogramma's
 seo-title: Werken met XMP hulpprogramma's
-description: 'null'
-seo-description: 'null'
+description: Met de API's XMP Hulpprogramma's Java en Web Service kunt u XMP metagegevens programmatisch importeren in een PDF-document en XMP metagegevens uit een PDF-document ophalen en opslaan.
+seo-description: Met de API's XMP Hulpprogramma's Java en Web Service kunt u XMP metagegevens programmatisch importeren in een PDF-document en XMP metagegevens uit een PDF-document ophalen en opslaan.
 uuid: 90ce6cef-efe1-456a-8e0c-5ba90249dda0
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 01d5677f-5c87-4a6e-987b-8eda9acc0b27
 translation-type: tm+mt
-source-git-commit: 8afc09103b34b12e0218a133b87422456cb20d35
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1369'
+source-wordcount: '1423'
 ht-degree: 0%
 
 ---
