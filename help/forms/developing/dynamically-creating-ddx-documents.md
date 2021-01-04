@@ -1,8 +1,8 @@
 ---
 title: DDX-documenten dynamisch maken
 seo-title: DDX-documenten dynamisch maken
-description: 'null'
-seo-description: 'null'
+description: Maak dynamisch een DDX-document met behulp van de Java API en Web Service API. Door een DDX-document dynamisch te maken, kunt u waarden in het DDX-document gebruiken die tijdens runtime worden verkregen.
+seo-description: Maak dynamisch een DDX-document met behulp van de Java API en Web Service API. Door een DDX-document dynamisch te maken, kunt u waarden in het DDX-document gebruiken die tijdens runtime worden verkregen.
 uuid: b73e8069-6c9f-4517-a0ae-f3d503191d2d
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 2ad227de-68a8-446f-8c4f-a33a6f95bec8
 translation-type: tm+mt
-source-git-commit: 674af8b7657cf11f5e78fd39e652a6dcaa23c70a
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2123'
+source-wordcount: '2185'
 ht-degree: 0%
 
 ---
