@@ -1,8 +1,8 @@
 ---
 title: AEM Forms for Backup voorbereiden
 seo-title: AEM Forms for Backup voorbereiden
-description: 'null'
-seo-description: 'null'
+description: Leer hoe u de service Back-up en herstel kunt gebruiken om de back-upmodus voor de AEM Forms-server in te schakelen en te verlaten met de Java API en de webservice-API.
+seo-description: Leer hoe u de service Back-up en herstel kunt gebruiken om de back-upmodus voor de AEM Forms-server in te schakelen en te verlaten met de Java API en de webservice-API.
 uuid: b8ef2bed-62e2-4000-b55a-30d2fc398a5f
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: e747147e-e96d-43c7-87b3-55947eef81f5
 translation-type: tm+mt
-source-git-commit: e3fcf1a117b13392b7e530a09198982c6160cb7b
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2484'
+source-wordcount: '2540'
 ht-degree: 0%
 
 ---
