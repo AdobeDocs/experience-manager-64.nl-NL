@@ -1,8 +1,8 @@
 ---
 title: Java API voor uitvoerservice, snel starten (SOAP)
 seo-title: Java API voor uitvoerservice, snel starten (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Met de Output service Java API Quick Start (SOAP) kunt u een PDF-document maken, een PDF-document maken op basis van een XDP-bestand van de toepassing, een PDF/A-document maken, documenten doorgeven aan de Output-service, een document in de AEM Forms-opslagruimte doorgeven aan de Output-service, een PDF-document maken op basis van fragmenten, afdrukken naar een bestand, een afdrukstroom naar een netwerkprinter verzenden, meerdere PDF-bestanden maken, zoekregels maken, een PDF-document transformeren.
+seo-description: Met de Output service Java API Quick Start (SOAP) kunt u een PDF-document maken, een PDF-document maken op basis van een XDP-bestand van de toepassing, een PDF/A-document maken, documenten doorgeven aan de Output-service, een document in de AEM Forms-opslagruimte doorgeven aan de Output-service, een PDF-document maken op basis van fragmenten, afdrukken naar een bestand, een afdrukstroom naar een netwerkprinter verzenden, meerdere PDF-bestanden maken, zoekregels maken, een PDF-document transformeren.
 uuid: 34cb1fc7-50a9-4db8-aed1-dbd3480d1323
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: f4415aeb-5c1b-4087-b60f-b2ea952c52b5
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1253'
+source-wordcount: '1405'
 ht-degree: 0%
 
 ---
