@@ -1,8 +1,8 @@
 ---
 title: PDF-Portfolio samenstellen
 seo-title: PDF-Portfolio samenstellen
-description: 'null'
-seo-description: 'null'
+description: U kunt een PDF-portfolio samenstellen om verschillende typen documenten te combineren, zoals tekstbestanden, afbeeldingsbestanden en PDF-documenten. U kunt een PDF-portfolio samenstellen met een Java API en een webservice-API.
+seo-description: U kunt een PDF-portfolio samenstellen om verschillende typen documenten te combineren, zoals tekstbestanden, afbeeldingsbestanden en PDF-documenten. U kunt een PDF-portfolio samenstellen met een Java API en een webservice-API.
 uuid: 1778c90b-9d26-466b-a7c7-401d737395e0
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 translation-type: tm+mt
-source-git-commit: b995edbd3fefc8e2f593661b40d650ba6836f686
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '1785'
+source-wordcount: '1851'
 ht-degree: 0%
 
 ---
