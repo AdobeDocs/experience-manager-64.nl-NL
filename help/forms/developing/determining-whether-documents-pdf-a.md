@@ -1,8 +1,8 @@
 ---
 title: Bepalen of documenten PDF/A-compatibel zijn
 seo-title: Bepalen of documenten PDF/A-compatibel zijn
-description: 'null'
-seo-description: 'null'
+description: Gebruik de Assembler-service om te bepalen of een PDF-document compatibel is met PDF/A met de API voor Java API en Web Service.
+seo-description: Gebruik de Assembler-service om te bepalen of een PDF-document compatibel is met PDF/A met de API voor Java API en Web Service.
 uuid: 4e9d8c8f-2153-411b-9c4b-2d14b3c8f4bb
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
 translation-type: tm+mt
-source-git-commit: 529b8c6556a7179a9169ff8250af6b5dc1251ef3
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2069'
+source-wordcount: '2109'
 ht-degree: 0%
 
 ---
