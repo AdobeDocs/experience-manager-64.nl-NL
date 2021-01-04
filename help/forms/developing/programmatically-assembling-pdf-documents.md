@@ -1,8 +1,8 @@
 ---
 title: PDF-documenten programmatisch samenstellen
 seo-title: PDF-documenten programmatisch samenstellen
-description: 'null'
-seo-description: 'null'
+description: Gebruik de API voor de vergaderingsservice om meerdere PDF-documenten samen te stellen tot één PDF-document met de Java API en de webservice-API.
+seo-description: Gebruik de API voor de vergaderingsservice om meerdere PDF-documenten samen te stellen tot één PDF-document met de Java API en de webservice-API.
 uuid: aa3f8f39-1fbc-48d0-82ff-6caaadf125fc
 contentOwner: admin
 content-type: reference
@@ -11,9 +11,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 translation-type: tm+mt
-source-git-commit: 5a185a50dc9e413953be91444d5c8e76bdae0a69
+source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
 workflow-type: tm+mt
-source-wordcount: '2092'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
