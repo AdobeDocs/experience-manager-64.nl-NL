@@ -3,9 +3,9 @@ title: AEM Assets integreren met Adobe InDesign Server
 description: Leer hoe u AEM Assets kunt integreren met InDesign Server.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
 workflow-type: tm+mt
-source-wordcount: '1658'
+source-wordcount: '1674'
 ht-degree: 1%
 
 ---
@@ -135,13 +135,13 @@ Argumenten voor het uitnemen van media en scriptpaden
 
 * **Scripts** uitbreiden: Hier kunt u verschillende scriptcombinaties opgeven. Als u uw eigen manuscripten op de InDesign Server wilt worden uitgevoerd, sparen de manuscripten bij `/apps/settings/dam/indesign/scripts`.
 
-   Voor informatie over manuscripten InDesign zie [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting).
+   Zie [https://www.adobe.com/devnet/indesign/documentation.html#idscripting](https://www.adobe.com/devnet/indesign/documentation.html#idscripting) voor informatie over InDesign-scripts.
 
 >[!CAUTION]
 >
 >Wijzig de ExtendScript-bibliotheek niet. De bibliotheek biedt de HTTP-functionaliteit die nodig is voor communicatie met Sling. Met deze instelling geeft u de bibliotheek op die naar de Adobe InDesign Server moet worden verzonden voor gebruik.
 
-Met het `ThumbnailExport.jsx`-script dat wordt uitgevoerd door de workflowstap Media Extraction, wordt een miniatuuruitvoering in .jpg-indeling gegenereerd. Deze vertoning wordt gebruikt door de werkstroomstap Miniaturen verwerken om de statische uitvoeringen te genereren die AEM vereist.
+Met het `ThumbnailExport.jsx`-script dat wordt uitgevoerd door de workflowstap Media Extraction, wordt een miniatuuruitvoering in JPG-indeling gegenereerd. Deze vertoning wordt gebruikt door de werkstroomstap Miniaturen verwerken om de statische uitvoeringen te genereren die AEM vereist.
 
 U kunt de workflowstap Miniaturen verwerken zodanig configureren dat statische uitvoeringen van verschillende grootten worden gegenereerd. Zorg ervoor dat u de standaardinstellingen niet verwijdert, omdat deze vereist zijn door de gebruikersinterface van AEM Assets. Tot slot verwijdert de workflowstap Voorvertoning afbeelding verwijderen de miniatuuruitvoering .jpg, omdat deze niet langer nodig is.
 
@@ -186,15 +186,15 @@ Standaard is de IDML-exporthandler beschikbaar. Het werkt op de `IDML` vertoning
 
 ### Het vormen de Verbinding van CQ van de Dag Externalzer {#configuring-day-cq-link-externalizer}
 
-Als de server van de InDesign en AEM op verschillende gastheren of één van beide of beide toepassingen lopen niet op standaardhavens, vorm **Dag CQ Verbinding Externalzer** om de gastheernaam, de haven, en de inhoudspad voor de server van de InDesign te plaatsen.
+Als de InDesign Server en de AEM op verschillende gastheren of één of beide toepassingen niet op standaardhavens werken, vorm **Dag CQ Verbinding External** om de gastheernaam, de haven, en de inhoudspad voor de InDesign Server te plaatsen.
 
 1. Open Configuration Manager op de URL `https://[AEM_server]:[port]/system/console/configMgr`.
-1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]** en klik op het pictogram **[!UICONTROL Edit]** om deze te openen.
-1. Geef de hostnaam en het contextpad voor de InDesign-server op en klik op **[!UICONTROL Save]**.
+1. Zoek de configuratie **[!UICONTROL Day CQ Link Externalizer]**. Klik **[!UICONTROL Edit]** om te openen.
+1. De montages van de Verbinding Externalzer helpen absolute URLs voor de [!DNL Experience Manager] plaatsing en voor [!DNL InDesign Server] tot stand brengen. Gebruik **[!UICONTROL Domains]** veld om de hostnaam en het contextpad voor [!DNL Adobe InDesign Server] op te geven. Volg de aanwijzingen op het scherm. Klik op **[!UICONTROL Save]**.
 
-   ![chlimage_1-290](assets/chlimage_1-290.png)
+   ![Externe instellingen koppelen](assets/link-externalizer-config.png)
 
-### Parallelle taakverwerking inschakelen voor InDesign Server(en) {#enabling-parallel-job-processing-for-indesign-server-s}
+### Parallelle taakverwerking inschakelen voor InDesign Server {#enabling-parallel-job-processing-for-indesign-server}
 
 U kunt nu parallelle taakverwerking inschakelen voor IDS.
 
