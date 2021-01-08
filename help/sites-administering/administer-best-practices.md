@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: best-practices
 discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
 workflow-type: tm+mt
-source-wordcount: '541'
+source-wordcount: '543'
 ht-degree: 2%
 
 ---
@@ -37,7 +37,7 @@ Specifieke documenten worden beschreven en gekoppeld aan de volgende tabellen.
 
 ## Assets {#assets}
 
-De beste praktijken rond Activa, met inbegrip van het dynamische media vermogen en de integratie Scene 7, worden beschreven in de volgende onderwerpen:
+De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Media en de Klassieke integratie van Dynamic Media worden beschreven in de volgende onderwerpen:
 
 <table> 
  <tbody>
