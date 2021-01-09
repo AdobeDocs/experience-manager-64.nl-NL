@@ -8,9 +8,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: e7d53127-3a0f-4c74-a656-25d9cf969f98
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 6c5b0abd9f19ceddd84e8615f0aedf48b1ef5868
 workflow-type: tm+mt
-source-wordcount: '2044'
+source-wordcount: '2164'
 ht-degree: 0%
 
 ---
@@ -67,6 +67,14 @@ Het vervolgkeuzemenu voor de rij bevat ook de bewerking Bewerken waarmee u rijei
 >[!NOTE]
 >
 >U kunt wel een willekeurig aantal rijen in een tabel toevoegen, maar u kunt maximaal zes kolommen toevoegen. Bovendien kunt u de koptekstrij niet uit de tabel verwijderen.
+
+### Kolombreedte instellen voor een tabel {#set-column-width}
+
+Voer de volgende stappen uit om de kolombreedte voor een tabel in te stellen:
+
+1. Tik op het tabblad **[!UICONTROL Content]** op de **[!UICONTROL Table]**-component en tik op het pictogram Configure (![Configure](assets/configure-icon.svg)).
+
+1. Voer in het veld **[!UICONTROL Column Width]** de lijst met door komma&#39;s gescheiden waarden in om de proportionele breedte van elke kolom in de tabel op te geven. Bijvoorbeeld, voor een lijst die 3 kolommen omvat, die 2.4.6 als waarde in **[!UICONTROL Column Width]** gebied specificeren resulteert in het plaatsen van de breedte van kolommen als 2/12 voor eerste kolom, 4/12 voor tweede kolom, en 6/12 voor derde kolom. 2/12, aangezien de breedte voor de eerste kolom verwijst naar een zesde van de tabelbreedte. Zo stelt 4/12 de tweede kolombreedte in als een derde van de tabelbreedte en 6/12 stelt de derde kolombreedte in als de helft van de tabelbreedte.
 
 ### Tabelbeschrijving toevoegen {#add-table-description}
 
