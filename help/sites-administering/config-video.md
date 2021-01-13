@@ -10,9 +10,9 @@ topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
 translation-type: tm+mt
-source-git-commit: d2b4e6599a7b1c01dc220a03b2be9aa55e5d7458
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '414'
+source-wordcount: '427'
 ht-degree: 0%
 
 ---
@@ -23,6 +23,10 @@ ht-degree: 0%
 Met de [Video-component](/help/sites-authoring/default-components-foundation.md#video) kunt u een vooraf gedefinieerd, OOTB-video-element (out-of-the-box) op uw pagina plaatsen.
 
 Voor juiste transcodering moet uw beheerder [Mpeg installeren en AEM](#install-ffmpeg) afzonderlijk configureren. Ze kunnen ook [Uw videoprofielen configureren](#configure-video-profiles) voor gebruik met HTML5-elementen.
+
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
 
 ## Videoprofielen {#configure-video-profiles} configureren
 
