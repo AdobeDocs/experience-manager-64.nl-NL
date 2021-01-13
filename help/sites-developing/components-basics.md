@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 0959d86c28ee6de7347922af706338f83fe400ef
 workflow-type: tm+mt
-source-wordcount: '4725'
+source-wordcount: '4981'
 ht-degree: 0%
 
 ---
@@ -192,7 +192,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component in de componentenbrowser of sidekick wordt vermeld.
    * `jcr:description` - Beschrijving van het onderdeel; kan als muis-over wenk in componentenbrowser of sidekick worden gebruikt.
-   * Klassieke interface:
+   * Klassieke gebruikersinterface:
 
       * `icon.png` - Pictogram voor deze component.
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.
@@ -212,7 +212,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
       * `cq:dialog` (  `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `cq:design_dialog` (  `nt:unstructured`) - Ontwerpbewerking voor deze component
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `dialog` (  `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `design_dialog` (  `cq:Dialog`) - Ontwerpbewerking voor deze component.
@@ -641,6 +641,39 @@ Er zijn vele bestaande configuraties in de bewaarplaats. U kunt gemakkelijk naar
 * Als u wilt zoeken naar een onderliggende node van `cq:editConfig`, kunt u bijvoorbeeld zoeken naar `cq:dropTargets`, die van het type `cq:DropTargetConfig` is; u kunt het hulpmiddel van de Vraag in** CRXDE Lite** gebruiken en onderzoek met het volgende de vraagkoord van XPath:
 
    `//element(cq:dropTargets, cq:DropTargetConfig)`
+
+### Tijdelijke aanduidingen voor onderdelen {#component-placeholders}
+
+Componenten moeten altijd HTML renderen die zichtbaar is voor de auteur, zelfs als de component geen inhoud heeft. Anders zou het van de interface van de redacteur visueel kunnen verdwijnen, die het technisch aanwezig maar onzichtbaar maken op de pagina en in de redacteur. In een dergelijk geval zullen de auteurs de lege component niet kunnen selecteren en ermee werken.
+
+Om deze reden, zouden de componenten placeholder moeten teruggeven zolang zij geen zichtbare output teruggeven wanneer de pagina in de paginaredacteur wordt teruggegeven (wanneer de wijze WCM `edit` of `preview` is).
+De gebruikelijke HTML-opmaak voor een tijdelijke aanduiding is:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="Component Name"></div>
+```
+
+Het standaard HTML-script dat de bovenstaande tijdelijke aanduiding HTML rendert, is:
+
+```HTML
+<div class="cq-placeholder" data-emptytext="${component.properties.jcr:title}"
+     data-sly-test="${(wcmmode.edit || wcmmode.preview) && isEmpty}"></div>
+```
+
+In het vorige voorbeeld is `isEmpty` een variabele die alleen waar is wanneer de component geen inhoud heeft en onzichtbaar is voor de auteur.
+
+Om herhaling te voorkomen, raadt Adobe aan dat implementatoren van componenten een HTML-sjabloon gebruiken voor deze plaatsaanduidingen, [zoals het sjabloon dat wordt verschaft door de Core Components.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/commons/v1/templates.html)
+
+Het gebruik van het malplaatje in de vorige verbinding wordt dan gedaan met de volgende lijn van HTML:
+
+```HTML
+<sly data-sly-use.template="core/wcm/components/commons/v1/templates.html"
+     data-sly-call="${template.placeholder @ isEmpty=!model.text}"></sly>
+```
+
+In het vorige voorbeeld is `model.text` de variabele die alleen waar is wanneer de inhoud inhoud bevat en zichtbaar is.
+
+Een voorbeeldgebruik van dit malplaatje kan in de Componenten van de Kern, [zoals in de Component van de Titel worden gezien.](https://github.com/adobe/aem-core-wcm-components/blob/master/content/src/content/jcr_root/apps/core/wcm/components/title/v2/title/title.html#L27)
 
 ### Configureren met cq:EditConfig-eigenschappen {#configuring-with-cq-editconfig-properties}
 
