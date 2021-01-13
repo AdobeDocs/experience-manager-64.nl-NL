@@ -12,9 +12,9 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
 workflow-type: tm+mt
-source-wordcount: '6592'
+source-wordcount: '6670'
 ht-degree: 1%
 
 ---
@@ -337,6 +337,10 @@ De externe toepassing is geïntegreerd in het alineasysteem van de AEM. bijvoorb
 >[!CAUTION]
 >Deze Foundation-component is vervangen. Adobe raadt in plaats daarvan aan de [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) te benutten.
 
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
+
 Met de component Flash kunt u een Flash-film laden. U kunt een Flash-element van de zoeker naar de component slepen of u kunt het dialoogvenster gebruiken:
 
 * **Flash**
@@ -538,6 +542,10 @@ In het volgende voorbeeld wordt een component **List** getoond op de manier waar
 >[!CAUTION]
 >Deze Foundation-component is vervangen. Adobe raadt in plaats daarvan aan de [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) te benutten.
 
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
+
 Hier vindt u de velden Gebruikersnaam en Wachtwoord.
 
 ![chlimage_1-197](assets/chlimage_1-197.png)
@@ -573,6 +581,10 @@ U kunt configureren:
       Tekst die aangeeft dat de gebruiker al is aangemeld.
 
 ### Status van bestelling {#order-status}
+
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
 
 * **Titel**
 
@@ -710,6 +722,10 @@ Indien nodig kunt u configureren:
 
 >[!CAUTION]
 >Deze Foundation-component is vervangen. Adobe raadt aan in plaats daarvan de [Carousel Core-component](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/components/carousel.html) te gebruiken.
+
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
 
 Met deze component kunt u een reeks afbeeldingen laden die als een diapresentatie op de pagina worden weergegeven. U kunt afbeeldingen toevoegen of verwijderen en elke titel toewijzen. Onder Geavanceerd kunt u ook de grootte van het weergavegebied opgeven.
 
@@ -879,6 +895,10 @@ In het volgende voorbeeld wordt een component **Title** weergegeven. het ontwerp
 ![dc_title_use](assets/dc_title_use.png)
 
 ### Video {#video}
+
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
 
 Met de component **Video** kunt u een vooraf gedefinieerd, out-of-the-box video-element op een pagina plaatsen.
 
@@ -1295,6 +1315,10 @@ De component wordt gevormd voor onmiddellijk gebruik, maar u kunt de configurati
 
 >[!CAUTION]
 >Deze Foundation-component is vervangen. Adobe raadt in plaats daarvan aan de [Core Components](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) te benutten.
+
+>[!CAUTION]
+>
+>Van deze component wordt niet meer verwacht om buiten-van-de-doos zonder uitgebreide project-vlakke aanpassing te functioneren.
 
 De component Captcha vereist dat de gebruiker een alfanumerieke tekenreeks typt zoals deze op het scherm wordt weergegeven. De tekenreeks verandert bij elke vernieuwing.
 
