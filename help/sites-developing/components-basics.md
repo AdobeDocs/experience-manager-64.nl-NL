@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 0959d86c28ee6de7347922af706338f83fe400ef
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 0%
@@ -192,7 +192,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component in de componentenbrowser of sidekick wordt vermeld.
    * `jcr:description` - Beschrijving van het onderdeel; kan als muis-over wenk in componentenbrowser of sidekick worden gebruikt.
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `icon.png` - Pictogram voor deze component.
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.
@@ -212,7 +212,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
       * `cq:dialog` (  `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `cq:design_dialog` (  `nt:unstructured`) - Ontwerpbewerking voor deze component
-   * Klassieke interface:
+   * Klassieke gebruikersinterface:
 
       * `dialog` (  `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `design_dialog` (  `cq:Dialog`) - Ontwerpbewerking voor deze component.
@@ -244,7 +244,7 @@ Het pictogram of de afkorting voor de component wordt gedefinieerd via JCR-eigen
    * De aanbevolen kleur is rgb(112, 112, 112) > #707070
    * De achtergrond van standaardcomponentpictogrammen is transparant.
    * Alleen `.png`- en `.svg`-bestanden worden ondersteund.
-   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-insteekmodule, moeten de bestandsnamen bijvoorbeeld als `_cq_icon.png` of `_cq_icon.svg` worden opgenomen.
+   * Als u bestanden importeert vanuit het bestandssysteem via de Eclipse-plug-in, moeten bestandsnamen bijvoorbeeld worden beschermd als `_cq_icon.png` of `_cq_icon.svg`.
    * `.png` heeft voorrang op  `.svg` als beide aanwezig zijn
 
 
