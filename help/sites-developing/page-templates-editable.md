@@ -10,9 +10,9 @@ topic-tags: platform
 content-type: reference
 discoiquuid: cf181663-8a4a-4efc-9f02-be1cf71c9299
 translation-type: tm+mt
-source-git-commit: b61c20c65ceade0153f5cd04fbedfd02e919d483
+source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
 workflow-type: tm+mt
-source-wordcount: '3231'
+source-wordcount: '3298'
 ht-degree: 0%
 
 ---
@@ -84,7 +84,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#editing-a-template-structure-template-author) voor meer informatie over de manier waarop een sjabloonauteur de structuur definieert.
 
-   Zie [Structuur](/help/sites-developing/page-templates-editable.md#structure) in dit document voor technische details van de structuur.
+   Zie [Structuur](/help/sites-developing/page-templates-editable.md#structure) in dit document voor technische details over de structuur.
 
    **Beleid**
 
@@ -122,7 +122,7 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Zie [Paginasjablonen maken](/help/sites-authoring/templates.md#enabling-and-allowing-a-template-template-author) voor meer informatie over hoe een sjabloonauteur een sjabloon inschakelt.
 
-   Voor technische details op het toelaten van een malplaatje, zie [Het toelaten van en het Toestaan van een Malplaatje voor ons](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in dit document
+   Voor technische details bij het toelaten van een malplaatje, zie [Het toelaten van en het Toestaan van een Malplaatje voor Gebruik](/help/sites-developing/page-templates-editable.md#enabling-and-allowing-a-template-for-use)e in dit document
 
 1. Gebruik dit besturingselement om inhoudspagina&#39;s te maken.
 
@@ -133,6 +133,16 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 
    Zie [Resulterende inhoudspagina&#39;s](/help/sites-developing/page-templates-editable.md#resultant-content-pages) in dit document voor technische details over het maken van pagina&#39;s met bewerkbare sjablonen.
 
+>[!TIP]
+>
+>Voer nooit informatie in die u wilt internationaliseren in een sjabloon. Voor internalisatiedoeleinden worden de [lokalisatiefuncties van de Core Components](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/get-started/localization.html) aanbevolen.
+
+>[!NOTE]
+>
+>Sjablonen zijn krachtige gereedschappen om de workflow voor het maken van pagina&#39;s te stroomlijnen. Te veel sjablonen kunnen de auteurs echter overweldigen en tot verwarring bij het maken van pagina&#39;s leiden. Een goede regel is om het aantal sjablonen onder de 100 te houden.
+>
+>Adobe adviseert niet om meer dan 1000 malplaatjes wegens potentiële prestatiesgevolgen te hebben.
+
 >[!NOTE]
 >
 >In de clientbibliotheek van de editor wordt ervan uitgegaan dat de naamruimte `cq.shared` aanwezig is op inhoudspagina&#39;s. Als deze ontbreekt, resulteert de JavaScript-fout `Uncaught TypeError: Cannot read property 'shared' of undefined`.
@@ -141,10 +151,6 @@ Bij het maken van een nieuwe bewerkbare sjabloon:
 >
 >Zie [Client-Side Libraries](/help/sites-developing/clientlibs.md) gebruiken voor meer informatie.
 
->[!CAUTION]
->
->Voer nooit informatie in die [geïnternationaliseerd](/help/sites-developing/i18n.md) moet zijn in een sjabloon.
-
 ## Sjabloonmappen {#template-folders}
 
 Voor het organiseren van uw sjablonen kunt u de volgende mappen gebruiken:
@@ -152,7 +158,7 @@ Voor het organiseren van uw sjablonen kunt u de volgende mappen gebruiken:
 * **global**
 * Sitespecifiek
 
-   De sitespecifieke mappen die u maakt om uw sjablonen te ordenen, worden gemaakt met een account met beheerdersrechten.
+   De sitespecifieke mappen die u maakt om uw sjablonen te organiseren, worden gemaakt met beheerdersrechten voor accounts.
 
 >[!NOTE]
 >
@@ -217,7 +223,7 @@ Als u een nieuwe map wilt maken, kunt u het volgende doen:
 
 1. Ga naar **Algemene navigatie** -> **Gereedschappen** > **Configuratiebrowser**.
 
-   De bestaande mappen worden links weergegeven, inclusief de map **globa** l.
+   De bestaande mappen worden links weergegeven, inclusief de map **global**.
 
 1. Klik **Maken**.
 1. In het **Create Configuratie** dialoog moeten de volgende gebieden worden gevormd:
