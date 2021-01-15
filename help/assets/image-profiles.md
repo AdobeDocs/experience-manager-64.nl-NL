@@ -10,9 +10,9 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 4f9301db-edf8-480b-886c-b5e8fca5bf5c
 translation-type: tm+mt
-source-git-commit: 9aae7ddac586a43f57dd34fc20df686ed2f8faca
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '2634'
+source-wordcount: '2633'
 ht-degree: 10%
 
 ---
@@ -67,7 +67,7 @@ U hebt twee opties voor het uitsnijden van afbeeldingen waaruit u kunt kiezen. U
   <tr> 
    <td>Kleur en afbeeldingsstaal</td> 
    <td>Met Bolvormig maakt u een afbeeldingsstaal voor elke afbeelding.</td> 
-   <td><p><strong>Opmerking</strong>: Slim staal wordt niet ondersteund in Dynamic Media Classic.</p> <p>Zoek en genereer automatisch stalen van hoge kwaliteit op basis van productafbeeldingen met kleuren of structuur.</p> <p>Als u Kleur en afbeeldingsstaal wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties, rechts van Kleur en Afbeeldingsstaal, schakelt u de functie in (inschakelen). Geef een pixelwaarde op in de tekstvakken Breedte en Hoogte.</p> <p>Alle uitsnijdingen van afbeeldingen zijn beschikbaar via de Renditions-rail, maar stalen worden alleen gebruikt via de functie URL kopiëren. U moet uw eigen weergavecomponent gebruiken om het staal op uw site te renderen. (De uitzondering hierop zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.)</p> <p><strong>Afbeeldingsstalen gebruiken</strong></p> <p>De URL voor afbeeldingsstalen is eenvoudig. Dat is:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>waarbij <code>:Swatch</code> wordt toegevoegd aan de elementaanvraag.</p> <p><strong>Kleurstalen gebruiken</strong></p> <p>Als u kleurstalen wilt gebruiken, dient u een <code>req=userdata</code>-verzoek in te dienen met het volgende:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Hier volgt bijvoorbeeld een staalelement in Dynamic Media Classic (Scene7):</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>en hier ziet u de corresponderende URL <code>req=userdata</code> van het stalelement:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>De reactie <code>req=userdata</code> is als volgt:</p> <p><code class="code">SmartCropDef=Swatch
+   <td><p><strong>Opmerking</strong>: Slim staal wordt niet ondersteund in Dynamic Media Classic.</p> <p>Zoek en genereer automatisch stalen van hoge kwaliteit op basis van productafbeeldingen met kleuren of structuur.</p> <p>Als u Kleur en afbeeldingsstaal wilt gebruiken, selecteert u <strong>Slim uitsnijden</strong> in de vervolgkeuzelijst Uitsnijdopties, rechts van Kleur en Afbeeldingsstaal, schakelt u de functie in (inschakelen). Geef een pixelwaarde op in de tekstvakken Breedte en Hoogte.</p> <p>Alle uitsnijdingen van afbeeldingen zijn beschikbaar via de Renditions-rail, maar stalen worden alleen gebruikt via de functie URL kopiëren. U moet uw eigen weergavecomponent gebruiken om het staal op uw site te renderen. (De uitzondering hierop zijn carrouselbanners. Dynamic Media biedt de weergavecomponent voor het staal dat wordt gebruikt in carrouselbanners.)</p> <p><strong>Afbeeldingsstalen gebruiken</strong></p> <p>De URL voor afbeeldingsstalen is eenvoudig. Dat is:</p> <p><code>/is/image/company/&lt;asset_name&gt;:Swatch</code></p> <p>waarbij <code>:Swatch</code> wordt toegevoegd aan de elementaanvraag.</p> <p><strong>Kleurstalen gebruiken</strong></p> <p>Als u kleurstalen wilt gebruiken, dient u een <code>req=userdata</code>-verzoek in te dienen met het volgende:</p> <p><code>/is/image/&lt;company_name&gt;/&lt;swatch_asset_name&gt;:Swatch?req=userdata</code></p> <p>Hier volgt bijvoorbeeld een staalelement in Dynamic Media Classic:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch</code></p> <p>en hier ziet u de corresponderende URL <code>req=userdata</code> van het stalelement:</p> <p><code>https://my.company.com:8080/is/image/DemoCo/Sleek:Swatch?req=userdata</code></p> <p>De reactie <code>req=userdata</code> is als volgt:</p> <p><code class="code">SmartCropDef=Swatch
        SmartCropHeight=200.0
        SmartCropRect=0.421671,0.389815,0.0848564,0.0592593,200,200
        SmartCropType=Swatch
@@ -105,7 +105,7 @@ In **Onscherp masker**, hebt u de volgende het filtreren opties:
  </tbody> 
 </table>
 
-Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/assets/s7_sharpening_images.pdf).
+Verscherpen wordt beschreven in [Afbeeldingen verscherpen](/help/assets/assets/sharpening_images.pdf).
 
 ## Dynamic Media-afbeeldingsprofielen {#creating-image-profiles} maken
 
