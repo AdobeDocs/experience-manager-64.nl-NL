@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: fa8e2d0612e6c7aaddb821352534bd9f6fc31076
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1496'
+source-wordcount: '1479'
 ht-degree: 5%
 
 ---
@@ -48,7 +48,7 @@ Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp
 
 Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd voor meer informatie over hoe verscherpen en onscherp maskeren in AEM werken door naar de volgende nuttige bronnen te verwijzen:
 
-Whitepaper over aanbevolen procedures [Het verscherpen van afbeeldingen in Adobe Scene7 Publishing System en op Image Server](/help/assets/assets/s7_sharpening_images.pdf) is ook van toepassing op AEM.
+Whitepaper over aanbevolen procedures [Het verscherpen van afbeeldingen in Adobe Scene7 Publishing System en op Image Server](/help/assets/assets/sharpening_images.pdf) is ook van toepassing op AEM.
 
 Zie ook [Een afbeelding verscherpen met een onscherp masker](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -64,19 +64,18 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
       * **[!UICONTROL amount]** (0-5, sterkte van het effect.)
       * **[!UICONTROL radius]** (0-250, breedte van de &#39;verscherpingslijnen&#39; die worden getekend rond het verscherpte object, zoals wordt gemeten in pixels.)
 
-         Onthoud dat de parameterstraal en de hoeveelheid tegen elkaar werken. Het verminderen van straal kan door stijgende hoeveelheid worden gecompenseerd. Met Straal kunt u nauwkeuriger omgaan, aangezien een lagere waarde alleen de randpixels verscherpt, terwijl met een hogere waarde een bredere reeks pixels wordt verscherpt.
+             Onthoud dat de parameterstraal en de hoeveelheid tegen elkaar werken. Het verminderen van straal kan door stijgende hoeveelheid worden gecompenseerd. Met Straal kunt u nauwkeuriger bepalen, aangezien bij een lagere waarde alleen de randpixels worden verscherpt, terwijl bij een hogere waarde een bredere reeks pixels wordt verscherpt.
+         * **[!UICONTROL threshold]** (0-255, gevoeligheid van effect.)
 
-      * **[!UICONTROL threshold]** (0-255, gevoeligheid van effect.)
+             Deze parameter bepaalt hoe verschillend de verscherpte pixels van het omringende gebied moeten zijn alvorens zij als randpixels worden beschouwd en het filter deze scherper maakt. Met de parameter **[!UICONTROL threshold]** voorkomt u te veel verscherpte gebieden met vergelijkbare kleuren, zoals huidskleuren. Als u bijvoorbeeld een drempelwaarde van 12 instelt, worden kleine variaties in de helderheid van de huidskleur genegeerd om &quot;ruis&quot; te voorkomen, terwijl randcontrast nog steeds wordt toegevoegd aan gebieden met hoog contrast, zoals waar de wimpers de huid raken.
+         
+         Zie de volgende bronnen voor meer informatie over de manier waarop u deze drie parameters instelt, inclusief aanbevolen procedures voor gebruik met het filter:
 
-         Deze parameter bepaalt hoe verschillend de verscherpte pixels van het omringende gebied moeten zijn alvorens zij als randpixels worden beschouwd en het filter deze scherper maakt. Met de parameter **[!UICONTROL threshold]** voorkomt u te veel verscherpende gebieden met vergelijkbare kleuren, zoals huidskleuren. Als u bijvoorbeeld een drempelwaarde van 12 instelt, worden kleine variaties in de helderheid van de huidskleur genegeerd om &quot;ruis&quot; te voorkomen, terwijl randcontrast nog steeds wordt toegevoegd aan gebieden met hoog contrast, zoals waar de wimpers de huid raken.
-      Zie de volgende bronnen voor meer informatie over de manier waarop u deze drie parameters instelt, inclusief aanbevolen procedures voor gebruik met het filter:
+         AEM Help-onderwerp over het verscherpen van een afbeelding.
 
-      AEM Help-onderwerp over het verscherpen van een afbeelding.
+         Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/assets/sharpening_images.pdf).
 
-      Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/assets/s7_sharpening_images.pdf).
-
-   * AEM kunt u ook een vierde parameter besturen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
-
+      * AEM kunt u ook een vierde parameter besturen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
 Als beste praktijken, begin met de onscherpe parameter van de maskerstraal. De volgende instellingen voor Straal kunt u gebruiken:
 
@@ -125,7 +124,6 @@ Als de verscherpingsresultaten nog steeds niet bevredigend zijn, vergroot u de s
 
 Tijdens het experimenteren kunt u ook de volgende algemene suggesties gebruiken om uw workflow te optimaliseren:
 
-* Probeer verschillende parameters in real-time uit en test ze rechtstreeks op een URL of met gebruik van de functie voor het aanpassen van afbeeldingen van het Scene7 Publishing System, die real-time voorvertoningen biedt voor aanpassingsbewerkingen.
+* Probeer de verschillende parameters in real-time uit en test ze rechtstreeks op een URL.
 * U kunt het beste de opdrachten Dynamic Media Image Serving groeperen in een voorinstelling voor afbeeldingen. Een voorinstelling voor een afbeelding bestaat in feite uit URL-opdrachtmacro&#39;s met aangepaste namen voor voorinstellingen, zoals `$thumb_low$` en `&product_high$`. De naam van de aangepaste voorinstelling in een URL-pad roept deze voorinstellingen aan. Met deze functionaliteit kunt u opdrachten en kwaliteitsinstellingen voor verschillende gebruikspatronen van afbeeldingen op uw website beheren en de totale lengte van URL&#39;s verkorten.
 * AEM biedt ook geavanceerdere manieren om de afbeeldingskwaliteit af te stemmen, zoals het toepassen van verscherpende afbeeldingen bij opname. Voor geavanceerd gebruik waarbij dit een optie kan zijn om de renderingresultaten verder af te stemmen en te optimaliseren, kan [Adobe Professional Services](https://www.adobe.com/experience-cloud/consulting-services.html) u helpen met aangepaste inzichten en beste praktijken.
-
