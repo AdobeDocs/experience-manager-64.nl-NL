@@ -10,7 +10,7 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 191c365e924fd3974308c075369a3f9d8810e6b7
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
 source-wordcount: '3234'
 ht-degree: 0%
@@ -240,7 +240,7 @@ Met de Klassieke Dynamic Media-afbeeldingscomponent kunt u Klassieke Dynamic Med
 
 **[!UICONTROL Output Format]** - Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld JPEG. Afhankelijk van de uitvoerindeling die u selecteert, hebt u mogelijk aanvullende configuratieopties. Zie [Voorinstellingen voor afbeeldingen beheren](/help/assets/managing-image-presets.md).
 
-**[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in [*Adobe Dynamic Media Klassieke afbeeldingskwaliteit en Best practices voor verscherpen*](/help/assets/assets/s7_sharpening_images.pdf).
+**[!UICONTROL Sharpening]** - Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in [*Adobe Dynamic Media Klassieke afbeeldingskwaliteit en Best practices voor verscherpen*](/help/assets/assets/sharpening_images.pdf).
 
 **[!UICONTROL URL Modifiers]** - U kunt afbeeldingseffecten wijzigen door aanvullende opdrachten voor klassieke Dynamic Media-afbeeldingen op te geven. Deze worden beschreven in [Voorinstellingen voor afbeeldingen beheren](/help/assets/managing-image-presets.md) en [Command reference](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
