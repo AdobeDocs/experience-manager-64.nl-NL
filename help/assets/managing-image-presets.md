@@ -9,9 +9,9 @@ content-type: reference
 discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: a3a160a0281c1ea2ca050c2c747d6a5ec1d952b3
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '3648'
+source-wordcount: '3647'
 ht-degree: 7%
 
 ---
@@ -95,7 +95,7 @@ Als u Dynamic Media wilt gebruiken om dynamische uitvoeringen voor AI-, EPS- of 
 
 U hebt toegang tot **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** opties voor procescomponenten via de **[!UICONTROL DAM Update Asset]** workflow.
 
-Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Tools > Workflow > Models]**. Selecteer **[!UICONTROL Workflow Models]** op de pagina &lt;a0/> en tik **[!UICONTROL Edit]** op de werkbalk. **[!UICONTROL DAM Update Asset]** Tik op de pagina **[!UICONTROL DAM Update Asset workflow]** op de procescomponent **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** om het dialoogvenster **[!UICONTROL Step Properties]** te openen.
+Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Tools > Workflow > Models]**. Selecteer **[!UICONTROL Workflow Models]** op de pagina **[!UICONTROL DAM Update Asset]** en tik **[!UICONTROL Edit]** op de werkbalk. Tik op de pagina **[!UICONTROL DAM Update Asset workflow]** op de procescomponent **[!UICONTROL Rasterize PDF/AI Image Preview Rendition]** om het dialoogvenster **[!UICONTROL Step Properties]** te openen.
 
 ### Opties voor de vertoning van PDF/AI-afbeeldingen omzetten in pixels {#rasterize-pdf-ai-image-preview-rendition-options}
 
@@ -394,7 +394,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
     </ul> 
     <div>
       Verscherpen wordt beschreven in 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/s7_sharpening_images.pdf">Afbeeldingen verscherpen</a>. 
+     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Afbeeldingen verscherpen</a>. 
     </div> </td> 
   </tr> 
   <tr> 
