@@ -7,10 +7,10 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
 translation-type: tm+mt
-source-git-commit: ce50cffa1a6a27c700b38d1d17c920f1bc31e3cc
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1514'
-ht-degree: 13%
+source-wordcount: '1504'
+ht-degree: 15%
 
 ---
 
@@ -31,7 +31,7 @@ Nadat een tag is opgeleid en gereed, kan de service deze tags nu toepassen op el
 
 Op de achtergrond gebruikt de Smart Content Service het AI-framework van Adobe Sensei om het algoritme voor imageherkenning op te leiden voor uw tagstructuur en bedrijfskatonomie. Deze inhoudsinfo wordt vervolgens gebruikt om relevante tags toe te passen op een andere set elementen.
 
-Smart Content Service is een cloudservice die wordt gehost op Adobe I/O. Om het in Adobe Experience Manager (AEM) te gebruiken, moet de systeembeheerder uw AEM instantie met Adobe IO integreren.
+Smart Content Service is een cloudservice die wordt gehost op [!DNL Adobe I/O]. Om het in Adobe Experience Manager (AEM) te gebruiken, moet de systeembeheerder uw AEM instantie met [!DNL Adobe I/O] integreren.
 
 Samenvattend, zijn hier de belangrijkste stappen om de Slimme Dienst van de Inhoud te gebruiken:
 
@@ -44,14 +44,14 @@ Samenvattend, zijn hier de belangrijkste stappen om de Slimme Dienst van de Inho
 
 ## Vereisten {#prerequisites}
 
-Voordat u de Smart Content Service kunt gebruiken, moet u het volgende doen om een integratie te maken in Adobe I/O:
+Voordat u de service Slimme inhoud kunt gebruiken, moet u het volgende doen om een integratie te maken op [!DNL Adobe I/O]:
 
 * Een Adobe ID-account met beheerdersrechten voor de organisatie.
 * De service Smart Content Service is ingeschakeld voor uw organisatie.
 
 ## Onboarding {#onboarding}
 
-De Smart Content Service kan worden aangeschaft als toevoeging aan AEM. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar Adobe IO.
+De Smart Content Service kan worden aangeschaft als toevoeging aan AEM. Nadat u de aankoop hebt gedaan, wordt een e-mail verzonden naar de beheerder van uw organisatie met een koppeling naar [!DNL Adobe I/O].
 
 De beheerder kan de verbinding volgen om de Slimme Dienst van de Inhoud met AEM te integreren. Zie [Slimme tags configureren](config-smart-tagging.md) om de service te integreren met AEM Assets.
 
@@ -106,7 +106,7 @@ U kunt de Slimme Dienst van de Inhoud wanneer vereist van de console van het Wer
 1. Tik of klik op het AEM-logo en ga naar **[!UICONTROL Tools > Workflow > Models]**.
 1. Selecteer op de pagina **[!UICONTROL Workflow Models]** de workflow **[!UICONTROL Smart Tags Training]** en tik of klik vervolgens op **[!UICONTROL Start Workflow]** op de werkbalk.
 1. Blader in het dialoogvenster **[!UICONTROL Run Workflow]** naar de payload-map met de gecodeerde middelen voor het trainen van de service.
-1. Geef een titel op voor de workflow en voeg een opmerking toe. Tik vervolgens op **[!UICONTROL Run]** of klik op &lt;a0/>. De elementen en tags worden ter training aangeboden.
+1. Geef een titel op voor de workflow en voeg een opmerking toe. Tik vervolgens op **[!UICONTROL Run]** of klik op . De elementen en tags worden ter training aangeboden.
 
    ![workflow_dialog](assets/workflow_dialog.png)
 
@@ -166,7 +166,7 @@ U kunt de tagwerkstroom activeren door uw elementen direct te labelen:
    ![dam_smart_tag_workflow](assets/dam_smart_tag_workflow.png)
 
 1. Blader in het dialoogvenster **[!UICONTROL Run Workflow]** naar de payload-map met elementen waarop u de tags automatisch wilt toepassen.
-1. Geef een titel voor de workflow en een optionele opmerking op. Tik vervolgens op **[!UICONTROL Run]** of klik op &lt;a0/>.
+1. Geef een titel voor de workflow en een optionele opmerking op. Tik vervolgens op **[!UICONTROL Run]** of klik op .
 
    ![tagging_dialog](assets/tagging_dialog.png)
 
