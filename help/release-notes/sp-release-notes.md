@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '21620'
+source-wordcount: '21617'
 ht-degree: 0%
 
 ---
@@ -48,7 +48,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 * Integratie van formuliergegevensmodellen met SOAP-webservice ondersteunt nu keuzegroepen of kenmerken voor elementen.
 
-* AEM Assets is nu geconfigureerd met Brand Portal via Adobe I/O.
+* AEM Assets is nu geconfigureerd met Brand Portal via [!DNL Adobe I/O].
 
 * De jQuery-versie die in ContextHub is gebundeld, is bijgewerkt naar 3.2.1.
 
@@ -1077,7 +1077,7 @@ Enkele belangrijke hooglichten van AEM 6.4.3.0 zijn:
 * Gebruikers kunnen machtigingen voor gesloten gebruikersgroepen niet bewerken in de pagina-eigenschappen. NPR-27138: Hotfix voor CQ-4256089
 Kan codes niet bewerken via labelen. NPR-26957: Hotfix voor CQ-4254858
 * Wanneer een tag waarnaar wordt verwezen vanuit een gestructureerd inhoudsfragmentmodel wordt verplaatst, worden de bestaande verwijzingen naar de tag in een inhoudsfragment niet bijgewerkt. Dit gebeurt in het bewerkingsscherm van het inhoudsfragmentmodel. NPR-26776: Hotfix voor CQ-4251805
-* Wanneer u een opstart met meerdere pagina&#39;s maakt en promoot, worden er meerdere versies voor elke pagina gemaakt. NPR-26919: Hotfix voor CQ-4254663
+* Wanneer u een opstart met meerdere pagina&#39;s maakt en promoot, worden er meerdere versies voor elke pagina gemaakt. NPR-26917: Hotfix voor CQ-4254663
 * AEM sitebeheerder verwerkt geen paden die in de adresbalk van de browser worden getypt. NPR-26780: Hotfix voor CQ-4254097
 * Wanneer een pagina naar een nieuwe locatie wordt verplaatst zonder de naam ervan te wijzigen, gaat de versiegeschiedenis van de pagina verloren. NPR-26706: Hotfix voor CQ-4254025
 * URL&#39;s in de ervaren fragmentbeheereditor staan geen overlays toe. NPR-26319: Hotfix voor CQ-4252156
@@ -1444,7 +1444,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * De Middelen van Enablement zijn niet zichtbaar bij auteur. Hotfix voor CQ-4252618
 * Meldingen worden niet gegenereerd voor verbinding van een onbekende gebruiker. Hotfix voor CQ-4245132
 * Groepzoekactie wordt niet weergegeven op linkerspoor. Hotfix voor CQ-4252621
-* (Auteur) Paginering werkt niet voor Groepsconsole. Hotfix voor CQ-4242786
+* (Auteur) Paginering werkt niet voor Groepenconsole. Hotfix voor CQ-4242786
 * jQuery UI-upgrade. Hotfix voor CQ-4248894
 * Voer een upgrade uit naar de nieuwste versie van SCORM 2017.1. NPR-25675: Hotfix voor CQ-4240671
 * De velden &quot;Samenstellen namens&quot; zijn zichtbaar voor gebruikers buiten de gebruikersgemeenschap. NPR-25331: Hotfix voor CQ-4247858
@@ -1473,7 +1473,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 **UI - Foundation**
 
 * De pro-actieve Steun UI van de Stichting steunt. NPR-24344, NPR-24345, NPR-25176, NPR-25095, NPR-24332, NPR-25653, NPR-25932, NPR-259 35, 25976
-* (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
+* (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25205: Hotfix voor graniet-22236
 * De pro-actieve Steun UI van de Stichting steunt om de stabiliteit van het product te verbeteren. NPR-24334
 
 **MAC- Test &amp; Target-integratie**
@@ -1927,7 +1927,7 @@ De belangrijkste markeringen voor AEM Forms zijn:
 * (FDM WSDL) Getting DermisException: java.lang.Exception: createSOAPParam: Ongeldige parameters. NPR-24264
 * (FDM Client SDK) Kan het testen van de voorprocessor en de aangepaste verzendactie niet uitvoeren. Hotfix voor CQ-4238469
 * Oplossingen voor Javadoc-problemen in Dermis. Hotfix voor CQ-4244250
-* Verbeterde invoer in WSDL (Web Services Description Language). Hotfix voor CQ-4234133
+* Verbeterde invoer in WSDL (Web Services Description Language). Hotfix voor CQ-4244133
 * Het basis authentificatietesten voor WSDL resulteert in verschillende fout voor de zelfde configuratie in AEM 6.3 en AEM 6.4. Hotfix voor CQ-4244132
 * Verzoek om ValueUtil op te nemen in client-sdk en javadocs. Hotfix voor CQ-4242803
 * (FDM Cloud Config) Kan SOAP-gebaseerde verificatie niet configureren vanuit de cloudconfiguratie. Hotfix voor CQ-4238462
@@ -1978,7 +1978,7 @@ De belangrijkste markeringen voor AEM Forms zijn:
 * Versie-update naar 7.1 voor adobe-formsmanager-core-module. Hotfix voor CQ-4245753
 * Concepten die zijn opgeslagen op de pre-upgradeserver, worden niet correct geopend op de geüpgrade server. Hotfix voor CQ-4243303
 * Bijlagescenario&#39;s breken bij het vervangen/toevoegen/verwijderen van bijlagen in nieuwe instantie/zelfde geval van ontwerp. Hotfix voor CQ-4243165
-* Het aantal concepten dat is opgehaald uit het opvragen van de database, is groter dan het aantal concepten dat aanwezig is in de portal. Hotfix voor CQ-4241489
+* Het aantal concepten dat is opgehaald uit het opvragen van de database, is groter dan het aantal concepten dat aanwezig is in het portaal. Hotfix voor CQ-4241489
 * Forms die wordt verzonden op een pre-upgradeserver, is niet aanwezig op de geüpgrade server. Hotfix voor CQ-4241490
 * Het formulier dat in de gebruikersinterface op het tabblad Verzending wordt weergegeven, bevindt zich in de status Niet verzonden, ondanks een succesvol verzonden bericht. Hotfix voor CQ-4241487
 * De guideContext moet worden gevormd door de velden grondig te kopiëren, aangezien guideContext customPropertyMap bevat die zelf een object is. Hotfix voor CQ-4240126
