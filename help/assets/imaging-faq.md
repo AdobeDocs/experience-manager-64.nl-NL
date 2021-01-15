@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: bf8c6bbd-847d-43d7-9ff4-7231bfd8d107
 translation-type: tm+mt
-source-git-commit: 31ddda9f74541dcf58fe70971535ee4180f70d6e
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '1707'
+source-wordcount: '1705'
 ht-degree: 1%
 
 ---
@@ -53,7 +53,7 @@ Verbeteringen in de nieuwste versie van Smart Imaging:
 
 ## Zijn er licentiekosten verbonden aan intelligente beeldverwerking? {#are-there-any-licensing-costs-associated-with-smart-imaging}
 
-Nee. Smart Imaging is inbegrepen bij uw bestaande licentie van Dynamic Media Classic (Scene7) of AEM Dynamic Media (On Prem, AMS en AEM als Cloud Service).
+Nee. Smart Imaging is inbegrepen bij uw bestaande licentie van Dynamic Media Classic of AEM Dynamic Media (On Prem, AMS en AEM als Cloud Service).
 
 >[!NOTE]
 >
@@ -165,7 +165,7 @@ Tijdens de eerste overgang bereiken de afbeeldingen in de cache rechtstreeks de 
 
 ## Hoe kan ik controleren of slimme beeldverwerking werkt zoals verwacht?  {#how-can-i-verify-whether-smart-imaging-is-working-as-expected}
 
-1. Wanneer uw account is geconfigureerd met smart imaging, laadt u een Dynamic Media Classic (Scene7)/Dynamic Media-afbeeldings-URL in de browser.
+1. Wanneer uw account is geconfigureerd met slimme beeldverwerking, laadt u een Dynamic Media Classic/Dynamic Media-afbeeldings-URL in de browser.
 1. Open het deelvenster Chrome-ontwikkelaar door in de browser op **[!UICONTROL View > Developer > Developer Tools]** te klikken. Of kies een ander browserontwikkelaarsgereedschap van uw keuze.
 
 1. Zorg ervoor dat de cache is uitgeschakeld wanneer de ontwikkelprogramma&#39;s zijn geopend.
