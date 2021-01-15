@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: 5c1f60ac-3741-4002-9c5d-c128f118342b
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
 workflow-type: tm+mt
-source-wordcount: '317'
+source-wordcount: '316'
 ht-degree: 9%
 
 ---
@@ -55,5 +55,5 @@ U kunt een voorinstelling voor afbeeldingen op elk gewenst moment op een afbeeld
    >
    >Als de asset *en* de afbeeldingsvoorinstelling nog niet zijn gepubliceerd, is de knop **[!UICONTROL URL]** (of de knoppen **[!UICONTROL URL]** en **[!UICONTROL RESS]**, indien van toepassing) niet beschikbaar.
    >
-   >Afbeeldingsvoorinstellingen worden automatisch gepubliceerd op een Dynamic Media S7-server.
+   >Afbeeldingsvoorinstellingen worden automatisch gepubliceerd op een Dynamic Media-server.
 
