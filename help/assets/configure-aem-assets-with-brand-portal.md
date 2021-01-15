@@ -3,21 +3,21 @@ title: AEM Assets configureren met Brand Portal
 description: 'Leer hoe u AEM Assets met Brand Portal configureert voor het publiceren van middelen en verzamelingen naar Brand Portal. '
 contentOwner: VG
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
 workflow-type: tm+mt
-source-wordcount: '1600'
-ht-degree: 43%
+source-wordcount: '1555'
+ht-degree: 37%
 
 ---
 
 
 # AEM Assets configureren met Brand Portal {#configure-integration-64}
 
-AEM Assets (Adobe Experience Manager) wordt geconfigureerd met Brand Portal via Adobe I/O, dat een IMS-token aanschaft voor autorisatie van uw Brand Portal-tenant.
+De activa van Adobe Experience Manager (AEM) worden gevormd met het Portaal van het Merk door [!DNL Adobe I/O], die een symbolisch IMS voor vergunning van uw huurder van het Merk Portaal koopt.
 
 >[!NOTE]
 >
->Het configureren van AEM Assets met Brand Portal via Adobe I/O wordt ondersteund op AEM 6.4.8.0 en hoger.
+>Het configureren van AEM Assets met Brand Portal via [!DNL Adobe I/O] wordt ondersteund op AEM 6.4.8.0 en hoger.
 >
 >Eerder, werd het Portaal van het Merk gevormd in Klassieke UI via Verouderde Gateway OAuth, die de het symbolenuitwisseling van JWT gebruikt om een token van de Toegang te verkrijgen IMS voor vergunning.
 
@@ -25,12 +25,12 @@ AEM Assets (Adobe Experience Manager) wordt geconfigureerd met Brand Portal via 
 >
 >***Alleen voor bestaande klanten***
 >
->Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In het geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via Adobe I/O.
+>Het wordt geadviseerd om bestaande oudere configuratie van de Gateway te blijven gebruiken OAuth. In geval, ontmoet u problemen met erfenisOAuth configuratie van de Gateway, schrapt de bestaande configuratie en creeert nieuwe configuratie via [!DNL Adobe I/O].
 
 In deze Help worden de volgende twee gebruiksgevallen beschreven:
 
-* [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe gebruiker van het Merk Portal bent en uw AEM Assets auteur instantie met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie op Adobe I/O tot stand brengen.
-* [Configuratie](#upgrade-integration-64) upgrade: Als u een bestaande gebruiker van het Portaal van het Merk met uw auteursinstantie van AEM Assets bent die met het Portaal van het Merk op erfenisOAuth Gateway wordt gevormd, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie op Adobe I/O tot stand te brengen.
+* [Nieuwe configuratie](#configure-new-integration-64): Als u een nieuwe gebruiker van het Portaal van het Merk bent en uw auteur van AEM Assets met het Portaal van het Merk wilt vormen, kunt u nieuwe configuratie tot stand brengen op  [!DNL Adobe I/O].
+* [Configuratie](#upgrade-integration-64) upgrade: Als u een bestaande gebruiker van het Portaal van het Merk met uw de auteursinstantie van AEM Assets bent die met het Portaal van het Merk op erfenisGateway wordt gevormd OAuth, wordt het geadviseerd om de bestaande configuraties te schrappen en nieuwe configuratie te creëren op  [!DNL Adobe I/O].
 
 De verstrekte informatie is gebaseerd op de veronderstelling dat iedereen die deze Hulp leest met de volgende technologieën vertrouwd is:
 
@@ -73,7 +73,7 @@ Zie voor gedetailleerde instructies
 Voer de volgende stappen in de vermelde reeks uit als u AEM Assets met Brand Portal voor het eerst configureert:
 
 1. [Openbaar certificaat verkrijgen](#public-certificate)
-1. [Adobe I/O-integratie maken](#createnewintegration)
+1. [ [!DNL Adobe I/O] Creatieve integratie](#createnewintegration)
 1. [IMS-accountconfiguratie maken](#create-ims-account-configuration)
 1. [Cloudservice configureren](#configure-the-cloud-service)
 1. [Configuratie testen](#test-integration)
@@ -93,7 +93,7 @@ De IMS-configuratie omvat twee stappen:
 
 ### Openbaar certificaat verkrijgen {#public-certificate}
 
-Met een openbaar certificaat kunt u uw profiel verifiëren op Adobe I/O.
+Met een openbaar certificaat kunt u uw profiel verifiëren op [!DNL Adobe I/O].
 
 1. Aanmelden bij de instantie van AEM Assets-auteur
 Standaard-URL: http:// localhost:4502/aem/start.html
@@ -117,7 +117,7 @@ Standaard-URL: http:// localhost:4502/aem/start.html
 
    ![Create Certificate](assets/ims-config2.png)
 
-1. Klik op **[!UICONTROL Download Public Key]** en sla het certificaatbestand *AEM-Adobe-IMS.crt* op uw computer op. Het certificaatbestand wordt gebruikt om [Adobe I/O-integratie te maken](#createnewintegration).
+1. Klik op **[!UICONTROL Download Public Key]** en sla het certificaatbestand *AEM-Adobe-IMS.crt* op uw computer op. Het certificaatbestand wordt gebruikt om [create [!DNL Adobe I/O] integration](#createnewintegration) te maken.
 
    ![Download Certificate](assets/ims-config3.png)
 
@@ -125,13 +125,13 @@ Standaard-URL: http:// localhost:4502/aem/start.html
 
    Maak op het tabblad **Account** het Adobe IMS-account. Hiervoor hebt u echter de integratiedetails nodig. Laat deze pagina voorlopig open.
 
-   Open een nieuw tabblad en [Maak Adobe I/O-integratie](#createnewintegration) om de integratiegegevens voor IMS-accountconfiguraties op te halen.
+   Open een nieuw tabblad en [Maak [!DNL Adobe I/O] integratie](#createnewintegration) om de integratiegegevens voor IMS-accountconfiguraties op te halen.
 
-### Adobe I/O-integratie maken {#createnewintegration}
+### Integratie [!DNL Adobe I/O] maken {#createnewintegration}
 
-Bij een Adobe I/O-integratie worden de API-sleutel, het clientgeheim en de payload (JWT) gegenereerd die vereist zijn voor het instellen van de IMS-accountconfiguraties.
+[!DNL Adobe I/O] Dankzij integratie worden API-sleutel, clientgeheim en Payload (JWT) gegenereerd die vereist zijn voor het instellen van de IMS-accountconfiguraties.
 
-1. Meld u aan bij Adobe I/O Console met systeembeheerdersbevoegdheden voor de IMS-organisatie van de Brand Portal-tenant.
+1. Meld u aan bij [!DNL Adobe I/O] Console met systeembeheerdersrechten voor de IMS-organisatie van de Poorthuurder van het Merk.
 
    Standaard-URL: [https://console.adobe.io/](https://console.adobe.io/)
 
@@ -174,7 +174,7 @@ Bij een Adobe I/O-integratie worden de API-sleutel, het clientgeheim en de paylo
 Controleer of u de volgende stappen hebt uitgevoerd:
 
 * [Openbaar certificaat verkrijgen](#public-certificate)
-* [Adobe I/O-integratie maken](#createnewintegration)
+* [ [!DNL Adobe I/O] Creatieve integratie](#createnewintegration)
 
 **Stappen om IMS-accountconfiguratie te maken:**
 
@@ -184,7 +184,7 @@ Controleer of u de volgende stappen hebt uitgevoerd:
 
    Voer in **[!UICONTROL Authorization Server]** de volgende URL in: [https://ims-na1.adobelogin.com/](https://ims-na1.adobelogin.com/)
 
-   Plak de API-sleutel, het clientgeheim en de JWT-payload die u hebt gekopieerd aan het einde van [Adobe I/O-integratie maken](#createnewintegration).
+   Plak de API-sleutel, de clientgeheim en de JWT-payload die u aan het einde van [Create [!DNL Adobe I/O] integration](#createnewintegration) hebt gekopieerd.
 
    Klik op **[!UICONTROL Create]**.
 
@@ -335,7 +335,7 @@ Voer de volgende stappen uit om de bestaande configuratie te verwijderen:
    ![](assets/delete-mac-user.png)
 
 
-U kunt nu [configuratie](#configure-new-integration-64) op uw AEM 6.4 auteursinstantie op Adobe I/O tot stand brengen.
+U kunt nu [configuratie](#configure-new-integration-64) op uw AEM 6.4 auteursinstantie op [!DNL Adobe I/O] tot stand brengen.
 
 
 
