@@ -1,17 +1,17 @@
 ---
 title: 'Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows '
 seo-title: 'Handelingen en mogelijkheden van Form-centric AEM Workflows op OSGi- en AEM Forms JEE-workflows '
-description: 'null'
-seo-description: 'null'
+description: Meer informatie over de verschillen in acties die worden ondersteund door AEM Inbox- en HTML-werkruimte, de verschillen in mogelijkheden die worden ondersteund door Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows en de verschillen tussen AEM Inbox- en AEM Forms-toepassingsfuncties.
+seo-description: Meer informatie over de verschillen in acties die worden ondersteund door AEM Inbox- en HTML-werkruimte, de verschillen in mogelijkheden die worden ondersteund door Form-centric AEM Workflows op OSGi- en AEM Forms JEE Workflows en de verschillen tussen AEM Inbox- en AEM Forms-toepassingsfuncties.
 uuid: ce2a05fe-ba45-42ed-880e-fb1d6efc1d26
 contentOwner: khsingh
 topic-tags: publish
 discoiquuid: 4c7ba430-25b2-4ba2-a5eb-4edaed0d599a
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '855'
-ht-degree: 18%
+source-wordcount: '931'
+ht-degree: 16%
 
 ---
 
