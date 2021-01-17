@@ -1,8 +1,8 @@
 ---
 title: Java API QuickStart (SOAP) voor eindpuntregistratie
 seo-title: Java API QuickStart (SOAP) voor eindpuntregistratie
-description: 'null'
-seo-description: 'null'
+description: Gebruik Java API van de Registratie van het Eindpunt om een EJB eindpunt toe te voegen, een eindpunt van de ZEEP toe te voegen, een Gecontroleerd omslageindpunt toe te voegen, een E-maileindpunt toe te voegen, een eindpunt toe te voegen TaskManager, een eindpunt te wijzigen, een eindpunt te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
+seo-description: Gebruik Java API van de Registratie van het Eindpunt om een EJB eindpunt toe te voegen, een eindpunt van de ZEEP toe te voegen, een Gecontroleerd omslageindpunt toe te voegen, een E-maileindpunt toe te voegen, een eindpunt toe te voegen TaskManager, een eindpunt te wijzigen, een eindpunt te verwijderen, en informatie van de eindpuntschakelaar terug te winnen.
 uuid: 986c55d0-e199-46f8-a3cc-a6baf5cce316
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e5989859-e58d-4049-9e0d-c4c848d597af
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '545'
+source-wordcount: '629'
 ht-degree: 0%
 
 ---
