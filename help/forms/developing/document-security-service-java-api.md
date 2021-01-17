@@ -1,8 +1,8 @@
 ---
 title: JavaAPI Quick Start (SOAP) voor documentbeveiligingsservice
 seo-title: JavaAPI Quick Start (SOAP) voor documentbeveiligingsservice
-description: 'null'
-seo-description: 'null'
+description: 'Met de Java API van de Rights Management-service kunt u een beleid maken, een beleid wijzigen, een beleid verwijderen, een beleid toepassen op een PDF-document, een beleid verwijderen uit een PDF-document, een document intrekken, de toegang herstellen tot een ingetrokken document, PDF-documenten die met een beleid zijn beveiligd, een watermerk maken, een watermerk wijzigen, naar gebeurtenissen zoeken en een beleid verwijderen uit een Word-document. '
+seo-description: Met de Java API van de Rights Management-service kunt u een beleid maken, een beleid wijzigen, een beleid verwijderen, een beleid toepassen op een PDF-document, een beleid verwijderen uit een PDF-document, een document intrekken, de toegang herstellen tot een ingetrokken document, PDF-documenten die met een beleid zijn beveiligd, een watermerk maken, een watermerk wijzigen, naar gebeurtenissen zoeken en een beleid verwijderen uit een Word-document.
 uuid: f3823a95-c8c2-42c8-8edc-3ab8ab4311dc
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '1071'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
