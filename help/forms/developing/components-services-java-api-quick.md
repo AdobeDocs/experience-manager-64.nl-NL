@@ -1,8 +1,8 @@
 ---
 title: Componenten en services Java APIQuick Start (SOAP)
 seo-title: Componenten en services Java APIQuick Start (SOAP)
-description: 'null'
-seo-description: 'null'
+description: Gebruik de Componenten en Diensten Java API Snelle Begin van het Begin om een component op te stellen, de uitvoeringscontext van de dienst te plaatsen, de dienstveiligheid onbruikbaar te maken, de dienst te beginnen, de waarden van de de dienstconfiguratie te wijzigen, en componenten te verwijderen.
+seo-description: Gebruik de Componenten en Diensten Java API Snelle Begin van het Begin om een component op te stellen, de uitvoeringscontext van de dienst te plaatsen, de dienstveiligheid onbruikbaar te maken, de dienst te beginnen, de waarden van de de dienstconfiguratie te wijzigen, en componenten te verwijderen.
 uuid: 7d9ade2d-f927-4558-9e80-df08bd572772
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 14f17126-e744-479b-a8e6-24c131615b46
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '514'
 ht-degree: 0%
 
 ---
