@@ -1,8 +1,8 @@
 ---
 title: Introductie van Java API QuickStart
 seo-title: Introductie van Java API QuickStart
-description: 'null'
-seo-description: 'null'
+description: Met de programma's van Java API Quick Start kunt u de ontwikkeling versnellen van programma's die met AEM Forms-services werken. U kunt de Java API Quick Start-programma's in uw project gebruiken als beginpunt en deze aanpassen.
+seo-description: Met de programma's van Java API Quick Start kunt u de ontwikkeling versnellen van programma's die met AEM Forms-services werken. U kunt de Java API Quick Start-programma's in uw project gebruiken als beginpunt en deze aanpassen.
 uuid: 480e1809-f789-4ad8-b5d5-2d97aba8411a
 contentOwner: admin
 content-type: reference
@@ -10,9 +10,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, develop
 discoiquuid: 38fd51ec-347e-4ae3-86d4-9d2429f79bdd
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: e077347bc202b6a411006032c68aa4a3152be7c5
 workflow-type: tm+mt
-source-wordcount: '507'
+source-wordcount: '579'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ De lijst met JAR-bestanden bevindt zich in een opmerkingssectie aan het begin va
 
 ## Meerdere services snel aan de slag {#multiple-services-quick-start}
 
-De meeste Snelle Begint die in *Programming met AEM Forms *wordt gevestigd roepen de specifieke dienst aan om een verrichting uit te voeren. Sommige Quick Start-programma&#39;s roepen echter meerdere AEM Forms-services aan om een bepaalde workflow uit te voeren. In de volgende lijst vindt u een snelle start van Java waarbij meerdere AEM Forms-services worden aangeroepen:
+De meeste snelle Beginnen in *Programmering met AEM Forms* halen de specifieke dienst aan om een verrichting uit te voeren. Sommige Quick Start-programma&#39;s roepen echter meerdere AEM Forms-services aan om een bepaalde workflow uit te voeren. In de volgende lijst vindt u een snelle start van Java waarbij meerdere AEM Forms-services worden aangeroepen:
 
 [Snel starten (SOAP-modus): Een document in de AEM Forms Repository doorgeven aan de Output-service met behulp van de Java API](/help/forms/developing/output-service-java-api-quick.md#quick-start-soap-mode-passing-a-document-located-in-the-repository-to-the-output-service-using-the-java-api)  (hiermee wordt de Repository- en Output-service aangeroepen)
 
