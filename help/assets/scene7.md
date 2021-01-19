@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: managing-assets
 discoiquuid: e7b95732-a571-48e8-afad-612059cdbde7
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '2759'
+source-wordcount: '2737'
 ht-degree: 0%
 
 ---
@@ -189,8 +189,8 @@ Selecteer een bestaande voorinstelling voor afbeeldingen in het keuzemenu. Als d
 * **[!UICONTROL Output Format]**
 Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld jpeg. Afhankelijk van de uitvoerindeling die u selecteert, hebt u mogelijk aanvullende configuratieopties. Zie [Vooraf ingestelde beste werkwijzen voor afbeeldingen](/help/assets/managing-image-presets.md#image-preset-options).
 
-* **[!UICONTROL Sharpening]**
-Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in [Voorinstellingen voor afbeeldingen met de aanbevolen werkwijzen](/help/assets/managing-image-presets.md#image-preset-options) en [Beste werkwijzen verscherpen](/help/assets/assets/sharpening_images.pdf).
+<!-- * **[!UICONTROL Sharpening]**
+Select how you want to sharpen the image. Sharpening is explained in detail in [Image Preset best practices](/help/assets/managing-image-presets.md#image-preset-options) and [Sharpening best practices](/help/assets/assets/sharpening_images.pdf). -->
 
 * **[!UICONTROL URL Modifiers]**
 U kunt afbeeldingseffecten wijzigen door aanvullende opdrachten voor klassieke Dynamic Media-afbeeldingen op te geven. Deze worden beschreven in [Voorinstellingen voor afbeeldingen](/help/assets/managing-image-presets.md) en de [Command-referentie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
