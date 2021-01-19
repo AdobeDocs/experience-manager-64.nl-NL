@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
+source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
 workflow-type: tm+mt
-source-wordcount: '3638'
+source-wordcount: '3646'
 ht-degree: 7%
 
 ---
@@ -391,7 +391,8 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
      <li><strong>Toepassen op</strong>  - Hiermee bepaalt u of de verscherping wordt toegepast op elke kleur of helderheid.</li>
     </ul>
     <div>
-      Verscherpen wordt beschreven in * Adobe Dynamic Media Klassieke afbeeldingskwaliteit en Best practices voor verscherpen</a>.
+      Verscherpen wordt beschreven in  
+     <a href="https://experienceleague.adobe.com/doc/experience-manager-64/assets/assets/sharpening_images.pdf">Adobe Dynamic Media Klassieke afbeeldingskwaliteit en aanbevolen werkwijzen voor verscherpen</a>.
     </div> </td>
   </tr>
   <tr>
@@ -501,7 +502,7 @@ Als u de Dynamic Media - Scene7-modus uitvoert, worden voorinstellingen voor afb
 1. Selecteer de voorinstelling voor de afbeelding of meerdere voorinstellingen voor de afbeelding in de lijst met voorinstellingen voor de afbeelding en tik op **[!UICONTROL Publish]**.
 1. Nadat de voorinstelling voor de afbeelding is gepubliceerd, verandert de status van niet-gepubliceerd in gepubliceerd.
 
-   ![chlimage_1-505](assets/chlimage_1-505.png)
+   ![chlimage_1-503](assets/chlimage_1-505.png)
 
 ## Voorinstellingen voor Dynamic Media-afbeeldingen verwijderen {#deleting-image-presets}
 
