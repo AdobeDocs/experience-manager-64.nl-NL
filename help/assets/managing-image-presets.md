@@ -1,17 +1,15 @@
 ---
 title: Dynamic Media-voorinstellingen voor afbeeldingen beheren
 description: Dynamic Media-voorinstellingen voor afbeeldingen leren gebruiken en voorinstellingen voor afbeeldingen maken, wijzigen en beheren
-uuid: 087e6c32-82d5-4645-8dba-0a22c62f891f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: e401816d-eba5-4833-a3bd-e2e45bc3b19e
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: 35dea5c6f64f13ca4b64834f98037ef8bcde393e
 workflow-type: tm+mt
-source-wordcount: '3647'
+source-wordcount: '3638'
 ht-degree: 7%
 
 ---
@@ -106,31 +104,31 @@ Tik linksboven op Adobe Experience Manager en navigeer naar **[!UICONTROL Tools 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Procesargument</strong></td> 
-   <td><strong>Standaardinstelling</strong></td> 
-   <td><strong>Beschrijving</strong></td> 
+   <td><strong>Procesargument</strong></td>
+   <td><strong>Standaardinstelling</strong></td>
+   <td><strong>Beschrijving</strong></td>
   </tr> 
   <tr> 
-   <td>MIME-typen</td> 
-   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br /> </p> </td> 
-   <td>Lijst met documentmime-typen die worden beschouwd als PDF- of Illustrator-documenten.<br /> </td> 
+   <td>MIME-typen</td>
+   <td><p>application/pdf</p> <p>application/postscript</p> <p>application/illustrator<br/> </p> </td>
+   <td>Lijst met documentmime-typen die worden beschouwd als PDF- of Illustrator-documenten.<br/> </td>
   </tr> 
   <tr> 
-   <td>Max. breedte</td> 
-   <td>2048</td> 
-   <td>Maximale breedte van de gegenereerde voorvertoningsvertoning, in pixels.<br /> </td> 
+   <td>Max. breedte</td>
+   <td>2048</td>
+   <td>Maximale breedte van de gegenereerde voorvertoningsvertoning, in pixels.<br/> </td>
   </tr> 
   <tr> 
-   <td>Max. hoogte</td> 
-   <td>2048</td> 
-   <td>Maximumhoogte van de gegenereerde voorvertoning, in pixels.<br /> </td> 
+   <td>Max. hoogte</td>
+   <td>2048</td>
+   <td>Maximumhoogte van de gegenereerde voorvertoning, in pixels.<br/> </td>
   </tr> 
   <tr> 
-   <td>Resolutie</td> 
-   <td>72</td> 
-   <td>Resolutie voor het rasteren van de eerste pagina, in ppi (pixels per inch).</td> 
-  </tr> 
- </tbody> 
+   <td>Resolutie</td>
+   <td>72</td>
+   <td>Resolutie voor het rasteren van de eerste pagina, in ppi (pixels per inch).</td>
+  </tr>
+ </tbody>
 </table>
 
 Met de standaardprocesargumenten wordt de eerste pagina van een PDF/AI-document gerasterd met 72 ppi en de gegenereerde voorvertoningsafbeelding met een grootte van 2048 x 2048 pixels. Voor een gebruikelijke implementatie kunt u de resolutie verhogen tot minimaal 150 ppi of meer. Een document met een tekengrootte van 300 ppi in de VS vereist bijvoorbeeld een maximale breedte en hoogte van respectievelijk 2550 x 3300 pixels.
@@ -158,24 +156,24 @@ De volgende scripts worden door Dynamic Media-integratie gebruikt:
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Scriptnaam uitbreiden</strong></td> 
-   <td><strong>Standaard</strong></td> 
-   <td><strong>Beschrijving</strong></td> 
+   <td><strong>Scriptnaam uitbreiden</strong></td>
+   <td><strong>Standaard</strong></td>
+   <td><strong>Beschrijving</strong></td>
   </tr> 
   <tr> 
-   <td>ThumbnailExport.jsx</td> 
-   <td>Ja</td> 
-   <td>Genereert een 300 ppi <code>thumbnail.jpg</code> uitvoering die is geoptimaliseerd en door <code>Dynamic Media Process Image Assets</code> procescomponent is omgezet in een PTIFF-uitvoering.<br /> </td> 
+   <td>ThumbnailExport.jsx</td>
+   <td>Ja</td>
+   <td>Genereert een 300 ppi <code>thumbnail.jpg</code> uitvoering die is geoptimaliseerd en door <code>Dynamic Media Process Image Assets</code> procescomponent is omgezet in een PTIFF-uitvoering.<br/> </td>
   </tr> 
   <tr> 
    <td>JPEGPagesExport.jsx</td> 
    <td>Ja</td> 
-   <td>Hiermee genereert u een JPEG-subelement van 300 ppi voor elke pagina. Het JPEG-subelement is een echt middel dat is opgeslagen onder het element InDesign. Het wordt ook geoptimaliseerd en omgezet in PTIFF door de <code>DAM Update Asset</code> werkschema.<br /> </td> 
+   <td>Hiermee genereert u een JPEG-subelement van 300 ppi voor elke pagina. Het JPEG-subelement is een echt middel dat is opgeslagen onder het element InDesign. Het wordt ook geoptimaliseerd en omgezet in PTIFF door de <code>DAM Update Asset</code> werkschema.<br/> </td>
   </tr> 
   <tr> 
-   <td>PDFPagesExport.jsx</td> 
-   <td>Nee</td> 
-   <td>Hiermee genereert u een PDF-subelement voor elke pagina. Het PDF-subelement wordt verwerkt zoals eerder beschreven. Omdat de PDF slechts één pagina bevat, worden geen subelementen gegenereerd.<br /> </td> 
+   <td>PDFPagesExport.jsx</td>
+   <td>Nee</td>
+   <td>Hiermee genereert u een PDF-subelement voor elke pagina. Het PDF-subelement wordt verwerkt zoals eerder beschreven. Omdat de PDF slechts één pagina bevat, worden geen subelementen gegenereerd.<br/> </td>
   </tr> 
  </tbody> 
 </table>
@@ -297,136 +295,135 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Veld</strong></td> 
-   <td><strong>Beschrijving</strong></td> 
+   <td><strong>Veld</strong></td>
+   <td><strong>Beschrijving</strong></td>
   </tr> 
   <tr> 
-   <td><strong>Naam</strong></td> 
-   <td>Voer een beschrijvende naam in zonder spaties. Neem de specificatie voor afbeeldingsgrootte op in de naam, zodat gebruikers deze voorinstelling voor afbeeldingen gemakkelijker kunnen herkennen.</td> 
+   <td><strong>Naam</strong></td>
+   <td>Voer een beschrijvende naam in zonder spaties. Neem de specificatie voor afbeeldingsgrootte op in de naam, zodat gebruikers deze voorinstelling voor afbeeldingen gemakkelijker kunnen herkennen.</td>
+  </tr>
+  <tr> 
+   <td><strong>Breedte en Hoogte</strong></td>
+   <td>Voer in pixels de grootte in waarmee de afbeelding wordt geleverd. De breedte en hoogte moeten groter zijn dan 0 pixels. Als een van deze waarden 0 is, wordt geen voorinstelling gemaakt. Als beide waarden leeg zijn, wordt een responsieve voorinstelling voor de afbeelding gemaakt.</td>
   </tr> 
   <tr> 
-   <td><strong>Breedte en Hoogte</strong></td> 
-   <td>Voer in pixels de grootte in waarmee de afbeelding wordt geleverd. De breedte en hoogte moeten groter zijn dan 0 pixels. Als een van deze waarden 0 is, wordt geen voorinstelling gemaakt. Als beide waarden leeg zijn, wordt een responsieve voorinstelling voor de afbeelding gemaakt.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Format</strong></td> 
-   <td><p>Kies een indeling in het menu.</p> <p>Als u <strong>JPEG</strong> kiest, hebt u de volgende aanvullende opties:</p> 
+   <td><strong>Format</strong></td>
+   <td><p>Kies een indeling in het menu.</p> <p>Als u <strong>JPEG</strong> kiest, hebt u de volgende aanvullende opties:</p>
     <ul> 
      <li><strong>Kwaliteit</strong>  - Hiermee bepaalt u het compressieniveau JPEG. Deze instelling is van invloed op zowel de bestandsgrootte als de afbeeldingskwaliteit. De JPEG-kwaliteitsschaal is 1-100. De schaal is zichtbaar wanneer u de schuifregelaar versleept.</li> 
-     <li><strong>Downsampling</strong>  van JPG-chrominantie inschakelen - Omdat het oog minder gevoelig is voor hoogfrequente kleurinformatie dan hoogfrequente luminantie, verdelen JPEG-afbeeldingen afbeeldingsgegevens in luminantie en kleurcomponenten. Wanneer een JPEG-afbeelding wordt gecomprimeerd, blijft de luminantiecomponent op volledige resolutie staan, terwijl de kleurcomponenten worden gedownsampled door het gemiddelde te nemen van groepen pixels. Door downsampling wordt het gegevensvolume met de helft of met een derde verminderd, zonder dat dit van invloed is op de waargenomen kwaliteit. Downsampling is niet van toepassing op grijswaardenafbeeldingen. Met deze techniek vermindert u de hoeveelheid compressie die handig is voor afbeeldingen met veel contrast (bijvoorbeeld afbeeldingen met overlappende tekst).</li> 
+     <li><strong>Downsampling</strong>  van JPG-chrominantie inschakelen - Omdat het oog minder gevoelig is voor hoogfrequente kleurinformatie dan hoogfrequente luminantie, verdelen JPEG-afbeeldingen afbeeldingsgegevens in luminantie en kleurcomponenten. Wanneer een JPEG-afbeelding wordt gecomprimeerd, blijft de luminantiecomponent op volledige resolutie staan, terwijl de kleurcomponenten worden gedownsampled door het gemiddelde te nemen van groepen pixels. Door downsampling wordt het gegevensvolume met de helft of met een derde verminderd, zonder dat dit van invloed is op de waargenomen kwaliteit. Downsampling is niet van toepassing op grijswaardenafbeeldingen. Met deze techniek vermindert u de hoeveelheid compressie die handig is voor afbeeldingen met veel contrast (bijvoorbeeld afbeeldingen met overlappende tekst).</li>
+    </ul>
+    <div>
+      Kiezen
+     <strong>GIF</strong> of
+     <strong>GIF met alfa</strong> biedt deze extra
+     <strong>Opties voor GIF-kleurkwantiteit</strong>:
+    </div>
+    <ul> 
+     <li><strong>Type  </strong>- Selecteer  <strong>Adaptief</strong>  (standaard),  <strong>Web</strong> of  <strong>Macintosh</strong>. Als u <strong>GIF met Alpha</strong> selecteert, is de optie van Macintosh niet beschikbaar.</li>
+     <li><strong>Dithering</strong>  - Selecteer  <strong></strong> Diffuus of  <strong>Uit</strong>.</li>
+     <li><strong>Aantal kleuren  </strong>- Voer een getal in tussen 2 en 256.</li>
+     <li><strong>Kleurenlijst</strong>  - Voer een lijst met door komma's gescheiden waarden in. Voer voor wit, grijs en zwart bijvoorbeeld 000000,888888,ffffffff in.</li>
     </ul> 
     <div>
-      Kiezen 
-     <strong>GIF</strong> of 
-     <strong>GIF met alfa</strong> biedt deze extra 
-     <strong>Opties voor GIF-kleurkwantiteit</strong>: 
-    </div> 
-    <ul> 
-     <li><strong>Type  </strong>- Selecteer  <strong>Adaptief</strong>  (standaard),  <strong>Web</strong> of  <strong>Macintosh</strong>. Als u <strong>GIF met Alpha</strong> selecteert, is de optie van Macintosh niet beschikbaar.</li> 
-     <li><strong>Dithering</strong>  - Selecteer  <strong></strong> Diffuus of  <strong>Uit</strong>.</li> 
-     <li><strong>Aantal kleuren  </strong>- Voer een getal in tussen 2 en 256.</li> 
-     <li><strong>Kleurenlijst</strong>  - Voer een lijst met door komma's gescheiden waarden in. Voer voor wit, grijs en zwart bijvoorbeeld 000000,888888,ffffffff in.</li> 
-    </ul> 
-    <div>
-      Kiezen 
-     <strong>PDF</strong>, 
-     <strong>TIFF</strong>, of 
-     <strong>TIFF met alfa</strong> biedt deze extra optie: 
-    </div> 
-    <ul> 
-     <li><strong>Compressie</strong>  - Selecteer een compressiealgoritme. Algoritmeopties voor PDF zijn <strong>Geen</strong>, <strong>Zip</strong> en <strong>Jpeg</strong>; voor TIFF zijn <strong>Geen</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> en <strong>Zip</strong>; en voor TIFF met alfa zijn <strong>Geen</strong>, <strong>LZW</strong> en <strong>Zip</strong>.</li> 
-    </ul> <p>Als u <strong>PNG</strong>, <strong>PNG met alfa,</strong> of <strong>EPS</strong> kiest, hebt u geen extra opties.</p> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Verscherpen</strong></td> 
-   <td>Selecteer de optie <strong>Eenvoudig verscherpen inschakelen</strong> om een standaard verscherpingsfilter toe te passen op de afbeelding nadat alle schaling heeft plaatsgevonden. Verscherpen kan helpen de vervaging te compenseren die kan optreden wanneer u een afbeelding met een andere grootte weergeeft. </td> 
-  </tr> 
- </tbody> 
+      Kiezen
+     <strong>PDF</strong>,
+     <strong>TIFF</strong>, of
+     <strong>TIFF met alfa</strong> biedt deze extra optie:
+    </div>
+    <ul>
+     <li><strong>Compressie</strong>  - Selecteer een compressiealgoritme. Algoritmeopties voor PDF zijn <strong>Geen</strong>, <strong>Zip</strong> en <strong>Jpeg</strong>; voor TIFF zijn <strong>Geen</strong>, <strong>LZW</strong>, <strong>Jpeg</strong> en <strong>Zip</strong>; en voor TIFF met alfa zijn <strong>Geen</strong>, <strong>LZW</strong> en <strong>Zip</strong>.</li>
+    </ul> <p>Als u <strong>PNG</strong>, <strong>PNG met alfa,</strong> of <strong>EPS</strong> kiest, hebt u geen extra opties.</p> </td>
+  </tr>
+  <tr>
+   <td><strong>Verscherpen</strong></td>
+   <td>Selecteer de optie <strong>Eenvoudig verscherpen inschakelen</strong> om een standaard verscherpingsfilter toe te passen op de afbeelding nadat alle schaling heeft plaatsgevonden. Verscherpen kan helpen de vervaging te compenseren die kan optreden wanneer u een afbeelding met een andere grootte weergeeft. </td>
+  </tr>
+ </tbody>
 </table>
 
 #### Geavanceerde tabopties {#advanced-tab-options}
 
-<table> 
- <tbody> 
-  <tr> 
-   <td><strong>Veld</strong></td> 
-   <td><strong>Beschrijving</strong></td> 
-  </tr> 
-  <tr> 
-   <td><strong>Kleurruimte</strong></td> 
-   <td>Selecteer <strong>RGB, CMYK,</strong> of <strong>Grijswaarden</strong> voor de kleurruimte.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Kleurprofiel</strong></td> 
-   <td>Selecteer het kleurruimteprofiel van de uitvoer waarnaar het element moet worden geconverteerd als het anders is dan het werkprofiel.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Render-intentie</strong></td> 
-   <td>U kunt de standaard rendering intent overschrijven. Render-intenties bepalen wat er gebeurt met kleuren die niet in het doelkleurprofiel kunnen worden gereproduceerd (buiten kleuromvang). De render-intentie wordt genegeerd als deze niet compatibel is met het ICC-profiel. 
+<table>
+ <tbody>
+  <tr>
+   <td><strong>Veld</strong></td>
+   <td><strong>Beschrijving</strong></td>
+  </tr>
+  <tr>
+   <td><strong>Kleurruimte</strong></td>
+   <td>Selecteer <strong>RGB, CMYK,</strong> of <strong>Grijswaarden</strong> voor de kleurruimte.</td>
+  </tr>
+  <tr>
+   <td><strong>Kleurprofiel</strong></td>
+   <td>Selecteer het kleurruimteprofiel van de uitvoer waarnaar het element moet worden geconverteerd als het anders is dan het werkprofiel.</td>
+  </tr>
+  <tr>
+   <td><strong>Render-intentie</strong></td>
+   <td>U kunt de standaard rendering intent overschrijven. Render-intenties bepalen wat er gebeurt met kleuren die niet in het doelkleurprofiel kunnen worden gereproduceerd (buiten kleuromvang). De render-intentie wordt genegeerd als deze niet compatibel is met het ICC-profiel.
     <ul> 
-     <li>Selecteer <strong>Perceptueel</strong> om de totale kleuromvang van de ene kleurruimte naar een andere kleurruimte te comprimeren wanneer een of meer kleuren in de oorspronkelijke afbeelding buiten de kleuromvang van de doelkleurruimte vallen.</li> 
-     <li>Selecteer <strong>Relatief colorimetrisch</strong> wanneer een kleur in de huidige kleurruimte zich buiten de kleuromvang in de doelkleurruimte bevindt en u wilt deze kleur toewijzen aan de dichtstbijzijnde mogelijke kleur binnen de kleuromvang van de doelkleurruimte zonder dat dit van invloed is op andere kleuren. </li> 
-     <li>Selecteer <strong>Verzadiging</strong> om de oorspronkelijke kleurverzadiging van de afbeelding te reproduceren wanneer deze wordt omgezet in de doelkleurruimte. </li> 
-     <li>Selecteer <strong>Absoluut colorimetrisch</strong> om kleuren exact af te stemmen zonder aanpassing voor witpunt of zwartpunt die de helderheid van de afbeelding zou wijzigen.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Compensatie zwartpunt</strong></td> 
-   <td>Selecteer deze optie als het uitvoerprofiel deze functie ondersteunt. Zwartpuntcompensatie wordt genegeerd als deze niet compatibel is met het opgegeven ICC-profiel.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Dithering</strong></td> 
-   <td>Selecteer deze optie als u kleurstreepvorming mogelijk wilt voorkomen of verminderen. </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Verscherpingstype</strong></td> 
-   <td><p>Selecteer <strong>Geen</strong>, <strong>Verscherpen</strong> of <strong>Onscherp masker</strong>. </p> 
+     <li>Selecteer <strong>Perceptueel</strong> om de totale kleuromvang van de ene kleurruimte naar een andere kleurruimte te comprimeren wanneer een of meer kleuren in de oorspronkelijke afbeelding buiten de kleuromvang van de doelkleurruimte vallen.</li>
+     <li>Selecteer <strong>Relatief colorimetrisch</strong> wanneer een kleur in de huidige kleurruimte zich buiten de kleuromvang in de doelkleurruimte bevindt en u wilt deze kleur toewijzen aan de dichtstbijzijnde mogelijke kleur binnen de kleuromvang van de doelkleurruimte zonder dat dit van invloed is op andere kleuren. </li>
+     <li>Selecteer <strong>Verzadiging</strong> om de oorspronkelijke kleurverzadiging van de afbeelding te reproduceren wanneer deze wordt omgezet in de doelkleurruimte. </li>
+     <li>Selecteer <strong>Absoluut colorimetrisch</strong> om kleuren exact af te stemmen zonder aanpassing voor witpunt of zwartpunt die de helderheid van de afbeelding zou wijzigen.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Compensatie zwartpunt</strong></td>
+   <td>Selecteer deze optie als het uitvoerprofiel deze functie ondersteunt. Zwartpuntcompensatie wordt genegeerd als deze niet compatibel is met het opgegeven ICC-profiel.</td>
+  </tr>
+  <tr>
+   <td><strong>Dithering</strong></td>
+   <td>Selecteer deze optie als u kleurstreepvorming mogelijk wilt voorkomen of verminderen. </td>
+  </tr>
+  <tr>
+   <td><strong>Verscherpingstype</strong></td>
+   <td><p>Selecteer <strong>Geen</strong>, <strong>Verscherpen</strong> of <strong>Onscherp masker</strong>. </p>
+    <ul>
+     <li>Selecteer <strong>Geen</strong> om verscherpen uit te schakelen.</li>
+     <li>Selecteer <strong>Verscherpen </strong>om een standaard verscherpingsfilter toe te passen op de afbeelding nadat alle schaling heeft plaatsgevonden. Verscherpen kan helpen de vervaging te compenseren die kan optreden wanneer u een afbeelding met een andere grootte weergeeft. </li>
+     <li>Selecteer <strong> Onscherp masker</strong> om een verscherpingsfiltereffect op het definitieve gedownsampte beeld te verfijnen. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop.</li>
+    </ul> <p>In <strong>Onscherp masker</strong> hebt u de volgende opties:</p>
     <ul> 
-     <li>Selecteer <strong>Geen</strong> om verscherpen uit te schakelen.</li> 
-     <li>Selecteer <strong>Verscherpen </strong>om een standaard verscherpingsfilter toe te passen op de afbeelding nadat alle schaling heeft plaatsgevonden. Verscherpen kan helpen de vervaging te compenseren die kan optreden wanneer u een afbeelding met een andere grootte weergeeft. </li> 
-     <li>Selecteer <strong> Onscherp masker</strong> om een verscherpingsfiltereffect op het definitieve gedownsampte beeld te verfijnen. U kunt de intensiteit van het effect, de straal van het effect (gemeten in pixels) en een drempel voor het contrast instellen die wordt genegeerd. Voor dit effect worden dezelfde opties gebruikt als voor het filter Onscherp masker van Photoshop.</li> 
-    </ul> <p>In <strong>Onscherp masker</strong> hebt u de volgende opties:</p> 
-    <ul> 
-     <li><strong>Hoeveelheid</strong>  - Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde voor het reële getal is 1,0. Voor afbeeldingen met hoge resolutie kunt u de resolutie verhogen tot 5,0. Beschouw Hoeveelheid als een maat voor de filterintensiteit.</li> 
-     <li><strong>Straal</strong>  - Hiermee bepaalt u het aantal pixels rond de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een getal in tussen 1 en 2. Bij een lage waarde worden alleen de randpixels verscherpt. met een hoge waarde wordt een grotere reeks pixels verscherpt . De juiste waarde is afhankelijk van de grootte van de afbeelding.</li> 
-     <li><strong>Drempel</strong>  - Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze als randpixels worden beschouwd en worden verscherpt. Experimenteer met gehele getallen tussen 2 en 20 om ruis te voorkomen. </li> 
-     <li><strong>Toepassen op</strong>  - Hiermee bepaalt u of de verscherping wordt toegepast op elke kleur of helderheid.</li> 
-    </ul> 
+     <li><strong>Hoeveelheid</strong>  - Hiermee bepaalt u de hoeveelheid contrast die wordt toegepast op de randpixels. De standaardwaarde voor het reële getal is 1,0. Voor afbeeldingen met hoge resolutie kunt u de resolutie verhogen tot 5,0. Beschouw Hoeveelheid als een maat voor de filterintensiteit.</li>
+     <li><strong>Straal</strong>  - Hiermee bepaalt u het aantal pixels rond de randpixels dat invloed heeft op de verscherping. Voer voor afbeeldingen met een hoge resolutie een getal in tussen 1 en 2. Bij een lage waarde worden alleen de randpixels verscherpt. met een hoge waarde wordt een grotere reeks pixels verscherpt . De juiste waarde is afhankelijk van de grootte van de afbeelding.</li>
+     <li><strong>Drempel</strong>  - Hiermee bepaalt u het contrastbereik dat moet worden genegeerd wanneer het filter Onscherp masker wordt toegepast. Met andere woorden, met deze optie bepaalt u hoe verschillend de verscherpte pixels moeten zijn van het omringende gebied voordat ze als randpixels worden beschouwd en worden verscherpt. Experimenteer met gehele getallen tussen 2 en 20 om ruis te voorkomen. </li>
+     <li><strong>Toepassen op</strong>  - Hiermee bepaalt u of de verscherping wordt toegepast op elke kleur of helderheid.</li>
+    </ul>
     <div>
-      Verscherpen wordt beschreven in 
-     <a href="https://docs.adobe.com/content/help/en/experience-manager-64/assets/dynamic/assets/sharpening_images.pdf">Afbeeldingen verscherpen</a>. 
-    </div> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Modus voor nieuwe pixels</strong></td> 
-   <td>Selecteer een optie <strong>Nieuwe pixels berekenen in modus</strong>. Met deze opties verscherpt u de afbeelding wanneer deze wordt gedownsampled: 
-    <ul> 
-     <li><strong>Bi-Lineair</strong> : de snelste methode voor het berekenen van nieuwe pixels. Sommige aliasingartefacten zijn waarneembaar.</li> 
-     <li><strong>Bi-Cubic</strong> : verhoogt het CPU-gebruik, maar geeft scherpere afbeeldingen met minder merkbare aliasing artefacten.</li> 
-     <li><strong>Sharp2</strong>  - kan enigszins scherpere resultaten dan bi-Cubic, maar bij een nog hogere cpu kosten veroorzaken.</li> 
-     <li><strong>Bi-Sharp</strong>  - Hiermee selecteert u Photoshop standaardresampler voor het verkleinen van de afbeeldingsgrootte. Dit wordt  <strong>bicubische </strong> scherper in Adobe Photoshop genoemd.</li> 
-     <li><strong>Elke </strong> kleur en  <strong>helderheid</strong> : elke methode kan zijn gebaseerd op kleur of helderheid. Standaard is <strong>Elke kleur</strong> geselecteerd.</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td><strong>Afdrukresolutie</strong></td> 
-   <td>Selecteer een resolutie voor het afdrukken van deze afbeelding. 72 pixels is de standaardinstelling.</td> 
-  </tr> 
-  <tr> 
-   <td><strong>Afbeelding wijzigen</strong></td> 
-   <td><p>Naast de algemene afbeeldingsinstellingen die beschikbaar zijn in de gebruikersinterface, ondersteunt Dynamic Media talrijke geavanceerde afbeeldingswijzigingen die u kunt opgeven in het veld <strong>Afbeeldingsmodifiers</strong>. Deze parameters worden bepaald in <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: De volgende functionaliteit in de API wordt niet ondersteund:</p> 
-    <ul> 
-     <li>Standaardopdrachten voor sjablonen en tekstrendering: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> en <code>textPs=</code></li> 
-     <li>Localisatie-opdrachten: <code>locale=</code> en <code>req=xlate</code></li> 
-     <li><code>req=set</code> is niet beschikbaar voor algemeen gebruik.</li> 
-     <li><code>req=mbrset</code></li> 
-     <li><code>req=saveToFile</code></li> 
-     <li><code>req=targets</code></li> 
-     <li><code>template=</code></li> 
-     <li>Niet-kernservices van Dynamic Media: SVG, Afbeelding renderen en Web-to-Print</li> 
-    </ul> </td> 
-  </tr> 
- </tbody> 
+      Verscherpen wordt beschreven in * Adobe Dynamic Media Klassieke afbeeldingskwaliteit en Best practices voor verscherpen</a>.
+    </div> </td>
+  </tr>
+  <tr>
+   <td><strong>Modus voor nieuwe pixels</strong></td>
+   <td>Selecteer een optie <strong>Nieuwe pixels berekenen in modus</strong>. Met deze opties verscherpt u de afbeelding wanneer deze wordt gedownsampled:
+    <ul>
+     <li><strong>Bi-Lineair</strong> : de snelste methode voor het berekenen van nieuwe pixels. Sommige aliasingartefacten zijn waarneembaar.</li>
+     <li><strong>Bi-Cubic</strong> : verhoogt het CPU-gebruik, maar geeft scherpere afbeeldingen met minder merkbare aliasing artefacten.</li>
+     <li><strong>Sharp2</strong>  - kan enigszins scherpere resultaten dan bi-Cubic, maar bij een nog hogere cpu kosten veroorzaken.</li>
+     <li><strong>Bi-Sharp</strong>  - Hiermee selecteert u Photoshop standaardresampler voor het verkleinen van de afbeeldingsgrootte. Dit wordt  <strong>bicubische </strong> scherper in Adobe Photoshop genoemd.</li>
+     <li><strong>Elke </strong> kleur en  <strong>helderheid</strong> : elke methode kan zijn gebaseerd op kleur of helderheid. Standaard is <strong>Elke kleur</strong> geselecteerd.</li>
+    </ul> </td>
+  </tr>
+  <tr>
+   <td><strong>Afdrukresolutie</strong></td>
+   <td>Selecteer een resolutie voor het afdrukken van deze afbeelding. 72 pixels is de standaardinstelling.</td>
+  </tr>
+  <tr>
+   <td><strong>Afbeelding wijzigen</strong></td>
+   <td><p>Naast de algemene afbeeldingsinstellingen die beschikbaar zijn in de gebruikersinterface, ondersteunt Dynamic Media talrijke geavanceerde afbeeldingswijzigingen die u kunt opgeven in het veld <strong>Afbeeldingsmodifiers</strong>. Deze parameters worden bepaald in <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: De volgende functionaliteit in de API wordt niet ondersteund:</p>
+    <ul>
+     <li>Standaardopdrachten voor sjablonen en tekstrendering: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> en <code>textPs=</code></li>
+     <li>Localisatie-opdrachten: <code>locale=</code> en <code>req=xlate</code></li>
+     <li><code>req=set</code> is niet beschikbaar voor algemeen gebruik.</li>
+     <li><code>req=mbrset</code></li>
+     <li><code>req=saveToFile</code></li>
+     <li><code>req=targets</code></li>
+     <li><code>template=</code></li>
+     <li>Niet-kernservices van Dynamic Media: SVG, Afbeelding renderen en Web-to-Print</li>
+    </ul> </td>
+  </tr>
+ </tbody>
 </table>
 
 ## Opties voor voorinstellingen afbeelding definiëren met afbeeldingsopties {#defining-image-preset-options-with-image-modifiers}
@@ -477,7 +474,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
    opac=50
    ```
 
-   ![chlimage_1-503](assets/chlimage_1-503.png)
+   ![chlimage_1-505](assets/chlimage_1-503.png)
 
 ## Voorinstellingen {#modifying-image-presets} voor afbeeldingen bewerken
 
@@ -504,13 +501,10 @@ Als u de Dynamic Media - Scene7-modus uitvoert, worden voorinstellingen voor afb
 1. Selecteer de voorinstelling voor de afbeelding of meerdere voorinstellingen voor de afbeelding in de lijst met voorinstellingen voor de afbeelding en tik op **[!UICONTROL Publish]**.
 1. Nadat de voorinstelling voor de afbeelding is gepubliceerd, verandert de status van niet-gepubliceerd in gepubliceerd.
 
-   ![chlimage_1-503](assets/chlimage_1-505.png)
+   ![chlimage_1-505](assets/chlimage_1-505.png)
 
 ## Voorinstellingen voor Dynamic Media-afbeeldingen verwijderen {#deleting-image-presets}
-
-**Dynamic Media-voorinstellingen** voor afbeeldingen verwijderen:
 
 1. Tik in AEM op het AEM om toegang te krijgen tot de globale navigatieconsole.
 1. Tik op het pictogram **[!UICONTROL Tools]** en navigeer naar **[!UICONTROL Assets > Image Presets]**.
 1. Selecteer een voorinstelling en tik op **[!UICONTROL Delete]**. Dynamic Media bevestigt dat je het wilt verwijderen. Tik op **[!UICONTROL Delete]**.
-
