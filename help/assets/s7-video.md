@@ -10,9 +10,9 @@ topic-tags: managing-assets
 content-type: reference
 discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1629'
 ht-degree: 0%
 
 ---
@@ -137,7 +137,7 @@ De volgende lijst verstrekt een high level vergelijking van gesteunde mogelijkhe
 | Benadering | De eerste HTML5-aanpak. Flash wordt alleen gebruikt voor niet-HTML5-fallback. | Flash op de meeste desktops. HTML5 wordt gebruikt voor mobiele apparaten en tablets. |
 | Aflevering | Progressief | Adaptieve streaming |
 | Tekstspatiëring | Ja | Ja |
-| Uitbreidbaarheid | Ja | Ja (met Scene7-viewer-SDK) |
+| Uitbreidbaarheid | Ja | Ja (met [HTML5 Viewer SDK API-documentatie](https://s7d1.scene7.com/s7sdk/3.10/docs/jsdoc/index.html)) |
 | Mobiele video | Ja | Ja |
 
 ### {#setting-up} instellen
@@ -152,7 +152,7 @@ De verschillende videocoderingen worden gecreeerd volgens de S7 coderende voorin
 
 1. Tik in AEM op **[!UICONTROL Tools]>[!UICONTROL Configuration Console]**.
 1. Navigeer in **[!UICONTROL Configuration Console]** naar **[!UICONTROL Tools > DAM > Video Profiles]** in de navigatiestructuur.
-1. Maak een nieuw S7-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu &lt;a0/> en selecteer vervolgens de sjabloon Scene7 Video Profile. **[!UICONTROL Create Page]** Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
+1. Maak een nieuw S7-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu **[!UICONTROL Create Page]** en selecteer vervolgens de sjabloon Scene7 Video Profile. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
 
    ![chlimage_1-366](assets/chlimage_1-366.png)
 
