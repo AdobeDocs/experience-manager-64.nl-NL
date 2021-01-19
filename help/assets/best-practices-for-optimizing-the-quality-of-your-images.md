@@ -1,18 +1,14 @@
 ---
 title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
-seo-title: Aanbevolen procedures voor een optimale kwaliteit van uw afbeeldingen
 description: Leer de beste werkwijzen voor het optimaliseren van de beeldkwaliteit in dynamische media
-seo-description: Leer de beste werkwijzen voor het optimaliseren van de beeldkwaliteit in dynamische media
-uuid: b73f0918-c723-4a0d-a63f-4242223c2d47
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 12baf001-dfc9-410a-9821-a3bae1324392
 translation-type: tm+mt
-source-git-commit: 0016825ced6706cda7447546af876d5a897c8ff5
+source-git-commit: ee143a04dcdd6eb312f8c2a95eb11d53301e8e8f
 workflow-type: tm+mt
-source-wordcount: '1479'
+source-wordcount: '1355'
 ht-degree: 5%
 
 ---
@@ -46,9 +42,7 @@ Gebruik `&wid=<value>&hei=<value>&resMode=sharp2` of `&hei=<value>&resMode=sharp
 
 ## Aanbevolen procedures voor het verscherpen van afbeeldingen {#best-practices-for-image-sharpening}
 
-Het verscherpen van afbeeldingen is het meest complexe aspect van het beheren van afbeeldingen op uw website en er worden veel fouten gemaakt. Neem de tijd voor meer informatie over hoe verscherpen en onscherp maskeren in AEM werken door naar de volgende nuttige bronnen te verwijzen:
-
-Whitepaper over aanbevolen procedures [Het verscherpen van afbeeldingen in Adobe Scene7 Publishing System en op Image Server](/help/assets/assets/sharpening_images.pdf) is ook van toepassing op AEM.
+<!-- Image sharpening is the most complex aspect of controlling images on your website, and where many mistakes are made. Take the time to learn more about how sharpening and unsharp masking works in AEM by referring to the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide that applies to AEM as well. -->
 
 Zie ook [Een afbeelding verscherpen met een onscherp masker](https://helpx.adobe.com/photoshop/atv/cs6-tutorials/sharpening-an-image-with-unsharp-mask.html).
 
@@ -65,17 +59,14 @@ U kunt twee methoden voor het verscherpen van afbeeldingen gebruiken:
       * **[!UICONTROL radius]** (0-250, breedte van de &#39;verscherpingslijnen&#39; die worden getekend rond het verscherpte object, zoals wordt gemeten in pixels.)
 
              Onthoud dat de parameterstraal en de hoeveelheid tegen elkaar werken. Het verminderen van straal kan door stijgende hoeveelheid worden gecompenseerd. Met Straal kunt u nauwkeuriger bepalen, aangezien bij een lagere waarde alleen de randpixels worden verscherpt, terwijl bij een hogere waarde een bredere reeks pixels wordt verscherpt.
-         * **[!UICONTROL threshold]** (0-255, gevoeligheid van effect.)
+         
+      * **[!UICONTROL threshold]** (0-255, gevoeligheid van effect.)
 
              Deze parameter bepaalt hoe verschillend de verscherpte pixels van het omringende gebied moeten zijn alvorens zij als randpixels worden beschouwd en het filter deze scherper maakt. Met de parameter **[!UICONTROL threshold]** voorkomt u te veel verscherpte gebieden met vergelijkbare kleuren, zoals huidskleuren. Als u bijvoorbeeld een drempelwaarde van 12 instelt, worden kleine variaties in de helderheid van de huidskleur genegeerd om &quot;ruis&quot; te voorkomen, terwijl randcontrast nog steeds wordt toegevoegd aan gebieden met hoog contrast, zoals waar de wimpers de huid raken.
          
-         Zie de volgende bronnen voor meer informatie over de manier waarop u deze drie parameters instelt, inclusief aanbevolen procedures voor gebruik met het filter:
+         <!-- For more information about how you set these three parameters, including best practices to use with the filter, see the [Adobe Dynamic Media Classic Image Quality and Sharpening Best Practices](/help/assets/assets/sharpening_images.pdf) guide (applies to Dynamic Media on AEM as well). -->
+   * AEM kunt u ook een vierde parameter besturen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
-         AEM Help-onderwerp over het verscherpen van een afbeelding.
-
-         Best practices white paper [Sharpening images in Adobe Scene7 Publishing System and on Image Server](/help/assets/assets/sharpening_images.pdf).
-
-      * AEM kunt u ook een vierde parameter besturen: monochroom (0,1). Deze parameter bepaalt of onscherp maskeren wordt toegepast op elke kleurcomponent afzonderlijk met de waarde 0 of op de helderheid/intensiteit van de afbeelding met de waarde 1.
 
 Als beste praktijken, begin met de onscherpe parameter van de maskerstraal. De volgende instellingen voor Straal kunt u gebruiken:
 
