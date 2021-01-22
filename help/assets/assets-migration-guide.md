@@ -3,9 +3,9 @@ title: Activa in bulk migreren naar Adobe Experience Manager Assets
 description: Hoe te om activa in AEM te brengen, meta-gegevens toe te passen, vertoningen te produceren, en hen te activeren om instanties te publiceren.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 976d037d701eb7cc61a62e14e554675961d6179c
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1789'
+source-wordcount: '1791'
 ht-degree: 11%
 
 ---
@@ -79,7 +79,7 @@ Wanneer de activa niet over een netwerk worden overgebracht verbeteren de algeme
 
 ### Procesuitvoeringen {#process-renditions}
 
-Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de DAM Update Asset-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de DAM Update Asset-workflow dupliceren en aanpassen aan uw wensen. Sommige stappen in de standaardworkflow zijn mogelijk niet nodig voor u, zoals Scene7 PTIFF-generatie of InDesign-serverintegratie.
+Nadat u de elementen in het systeem hebt geladen, moet u ze verwerken via de DAM Update Asset-workflow om metagegevens te extraheren en uitvoeringen te genereren. Voordat u deze stap uitvoert, moet u de DAM Update Asset-workflow dupliceren en aanpassen aan uw wensen. Sommige stappen in de standaardworkflow zijn mogelijk niet nodig voor u, zoals het genereren van Dynamic Media Classic PTIFF of het integreren van een InDesign-server.
 
 Nadat u de werkstroom volgens uw behoeften hebt gevormd, hebt u twee opties om het uit te voeren:
 
