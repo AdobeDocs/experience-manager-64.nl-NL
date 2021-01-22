@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media-middelen publiceren
-seo-title: Dynamic Media-middelen publiceren
-description: Dynamische media-elementen publiceren
-seo-description: Dynamische media-elementen publiceren
-uuid: b1bee905-86cf-4284-8d4e-067e11557899
+description: Hoe te om de activa van Dynamic Media met inbegrip van HTTP/2 levering van die activa te publiceren.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 99d7025f-d022-4213-83c0-815a4712c573
 translation-type: tm+mt
-source-git-commit: 8c6fdcea0def7720062edfc564c536f8d47e8402
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '407'
+source-wordcount: '403'
 ht-degree: 7%
 
 ---
