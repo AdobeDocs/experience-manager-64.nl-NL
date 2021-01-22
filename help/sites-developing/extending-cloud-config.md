@@ -1,18 +1,14 @@
 ---
 title: Configuraties van Cloud Servicen
-seo-title: Configuraties van Cloud Servicen
-description: U kunt de bestaande instanties uitbreiden om uw eigen configuraties te maken
-seo-description: U kunt de bestaande instanties uitbreiden om uw eigen configuraties te maken
-uuid: 9d20c3a4-2a12-4d3c-80c3-fcac3137a675
+description: U kunt de bestaande instanties uitbreiden om uw eigen configuraties tot stand te brengen.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
-discoiquuid: d25c03bf-6eaa-45f4-ab60-298865935a62
 translation-type: tm+mt
-source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '579'
+source-wordcount: '566'
 ht-degree: 1%
 
 ---
@@ -222,7 +218,7 @@ Deze services worden standaard geleverd:
 * [Adobe Analytics](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-analytics)
 * [&amp;Doel testen](/help/sites-administering/marketing-cloud.md#integrating-with-adobe-target)
 * [Search&amp;Promote](/help/sites-administering/marketing-cloud.md#integrating-with-search-promote)
-* [Scene7](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
+* [ Dynamic Media ](/help/sites-administering/marketing-cloud.md#integrating-with-scene)
 
 >[!NOTE]
 >
