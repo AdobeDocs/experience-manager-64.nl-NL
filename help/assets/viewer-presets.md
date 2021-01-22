@@ -1,18 +1,14 @@
 ---
 title: Voorinstellingen voor Dynamic Media-viewers toepassen
-seo-title: Voorinstellingen voor Dynamic Media-viewers toepassen
-description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media
-seo-description: Leer hoe u viewervoorinstellingen kunt toepassen in Dynamic Media
-uuid: cebad000-2bda-4e62-a0d1-7155151daf6c
+description: Leer hoe u viewervoorinstellingen die door uw beheerder zijn gemaakt, kunt toepassen op middelen in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 82bed457-794e-4bf2-bc80-abde24fd2851
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '219'
 ht-degree: 22%
 
 ---
