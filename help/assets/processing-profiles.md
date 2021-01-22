@@ -1,18 +1,14 @@
 ---
 title: Profielen voor het verwerken van metagegevens, afbeeldingen en video's
-seo-title: Profielen voor het verwerken van metagegevens, afbeeldingen en video's
 description: Een profiel is een set regels met betrekking tot de opties die moeten worden toegepast op elementen die naar een map zijn geüpload. Geef op welk metagegevensprofiel en videocoderingsprofiel u wilt toepassen op de video-elementen die u uploadt. Voor afbeeldingselementen kunt u ook opgeven welk afbeeldingsprofiel u wilt toepassen op afbeeldingselementen om deze op de juiste wijze te laten bijsnijden.
-seo-description: Een profiel is een set regels met betrekking tot de opties die moeten worden toegepast op elementen die naar een map zijn geüpload. Geef op welk metagegevensprofiel en videocoderingsprofiel u wilt toepassen op de video-elementen die u uploadt. Voor afbeeldingselementen kunt u ook opgeven welk afbeeldingsprofiel u wilt toepassen op afbeeldingselementen om deze op de juiste wijze te laten bijsnijden.
-uuid: d95978b9-ffa4-4895-854f-3f7bd396e019
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
-discoiquuid: 347a90ae-a0c5-44f5-8e80-edc3edc1386f
 translation-type: tm+mt
-source-git-commit: 978c6e5cffb557f0d42f961bdde597fabf278ddd
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1387'
+source-wordcount: '1326'
 ht-degree: 2%
 
 ---
@@ -106,7 +102,7 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
    ![Scene7-component Batch uploaden](/help/assets/assets-dm/reprocess-assets8.png)
 
-1. Stel in het dialoogvenster **[!UICONTROL Batch Upload to Scene7—Step Properties]** het volgende in:
+1. Stel in het dialoogvenster **[!UICONTROL Batch Upload to Scene7–Step Properties]** het volgende in:
    * Typ desgewenst een nieuwe titel en beschrijving voor de taak in de tekstvelden **[!UICONTROL Title]** en **[!UICONTROL Description]**.
    * Selecteer **[!UICONTROL Handler Advance]** als uw manager aan de volgende stap zal verdergaan.
    * Voer in het veld **[!UICONTROL Timeout]** de time-out van het externe proces (seconden) in.
@@ -116,7 +112,7 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
    ![Eigenschappen, dialoogvenster](/help/assets/assets-dm/reprocess-assets3.png)
 
-1. Tik in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7 – Step Properties]** op **[!UICONTROL Done]**.
+1. Tik in de rechterbovenhoek van het dialoogvenster **[!UICONTROL Batch Upload to Scene7–Step Properties]** op **[!UICONTROL Done]**.
 
 1. In de rechterbovenhoek van de Scene7: Tik op **[!UICONTROL Sync]** om de modelpagina Elementen opnieuw te verwerken. Wanneer u **[!UICONTROL Synced]** ziet, wordt het model van de werkschemaruntime met succes gesynchroniseerd en klaar om activa in een omslag opnieuw te verwerken.
 
