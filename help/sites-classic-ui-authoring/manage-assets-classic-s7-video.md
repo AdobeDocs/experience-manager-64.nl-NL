@@ -1,18 +1,14 @@
 ---
 title: Video
-seo-title: Video
 description: Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video's rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Scene7 en rechtstreeks vanuit Middelen toegang kunt krijgen tot Scene7-video's voor het ontwerpen van pagina's.
-seo-description: Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video's rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Scene7 en rechtstreeks vanuit Middelen toegang kunt krijgen tot Scene7-video's voor het ontwerpen van pagina's.
-uuid: 46da7a0d-d17b-4716-a304-ce5496421b5a
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
-discoiquuid: dfaa4b3f-f65a-4fe3-87a7-f3bc71015e56
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1697'
+source-wordcount: '1667'
 ht-degree: 0%
 
 ---
@@ -152,9 +148,9 @@ De verschillende videocoderingen worden gemaakt volgens de Dynamic Media Classic
 >Nieuwe videoprofielen en wijzigingen ervan moeten worden geactiveerd om te publiceren.
 
 1. Ga in AEM naar **[!UICONTROL Tools]** en selecteer **[!UICONTROL Configuration Console]**. Navigeer in de configuratieconsole naar **[!UICONTROL Tools]** > **[!UICONTROL Assets]** > **[!UICONTROL Video Profiles]** in de navigatiestructuur.
-1. Maak een nieuw Klassiek Dynamic Media-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu &lt;a0/> en selecteer vervolgens de sjabloon Klassiek videoprofiel van Dynamic Media. **[!UICONTROL Create Page]** Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
+1. Maak een nieuw Klassiek Dynamic Media-videoprofiel. Selecteer **[!UICONTROL New...]** in het menu **[!UICONTROL Create Page]** en selecteer vervolgens de sjabloon Klassiek videoprofiel van Dynamic Media. Geef de nieuwe pagina met videoprofielen een naam en klik op **[!UICONTROL Create]**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Bewerk het nieuwe videoprofiel. Selecteer eerst de cloud config. Selecteer vervolgens dezelfde coderingsvoorinstelling die u in de cloudconfiguratie hebt geselecteerd.
 
