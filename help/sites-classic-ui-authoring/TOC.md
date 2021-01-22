@@ -7,9 +7,9 @@ user-guide-title: AEM 6.4 Handleiding voor het schrijven van klassieke gebruiker
 breadcrumb-title: Klassieke UI Authoring Guide
 user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '316'
+source-wordcount: '319'
 ht-degree: 17%
 
 ---
@@ -86,7 +86,7 @@ ht-degree: 17%
    + [Dynamic Media-middelen leveren](dynamic-media-assets-delivering.md)
    + [Een standaardpodium instellen met Autodesk Maya en Mental Ray](classicui-stages-aem3d-ad-mr.md)
    + [Dynamic Media-elementen toevoegen aan pagina&#39;s](dynamic-media-assets-adding-to-page.md)
-   + [Scene7-functies aan uw pagina toevoegen](manage-assets-classic-s7.md)
+   + [Dynamic Media Classic (Scene7)-functies toevoegen aan uw pagina](manage-assets-classic-s7.md)
    + [Werken met Dynamic Media](dynamic-media-assets.md)
    + [Werken met 3D-elementen](classicui-3dassets.md)
    + [Video](manage-assets-classic-s7-video.md)
