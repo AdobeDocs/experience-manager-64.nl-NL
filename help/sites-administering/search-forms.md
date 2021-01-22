@@ -1,18 +1,14 @@
 ---
 title: Zoekformulieren configureren
-seo-title: Zoekformulieren configureren
 description: Leer hoe u Search Forms configureert.
-seo-description: Leer hoe u Search Forms configureert.
-uuid: 0d30921c-0d4d-4ab6-b796-7833cd321e5d
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
-discoiquuid: abc27987-960e-48da-9580-1008a2bdc94c
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2065'
+source-wordcount: '2062'
 ht-degree: 2%
 
 ---
@@ -64,9 +60,9 @@ De beschikbare standaardconfiguraties zijn:
 
    Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar producten in middelenbrowser (wanneer het uitgeven van een pagina).
 
-* **Pagina-editor (zoeken in Scene7)**:
+* **Pagina-editor (Dynamic Media Classic  [voorheen Scene7] zoeken)**:
 
-   Deze configuratie definieert de beschikbare opties bij het zoeken naar Scene7-bronnen in de middelenbrowser (bij het bewerken van een pagina).
+   Deze configuratie bepaalt de beschikbare opties wanneer het zoeken naar de Klassieke middelen van Dynamic Media in middelenbrowser (wanneer het uitgeven van een pagina).
 
 * **Sites Admin Search Rail**:
 
