@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '21617'
+source-wordcount: '21616'
 ht-degree: 0%
 
 ---
@@ -71,7 +71,7 @@ Enkele belangrijke hoogtepunten van deze service pack-release zijn:
 
 ### Assets {#assets}
 
-* Een map zonder naam wordt gemaakt in SPS (Scene7 Publishing System) en een element van de ene map naar de andere verplaatst in Experience Manager met de Dynamic Media Scene7-configuratie (NPR-32440).
+* Een map zonder naam wordt gemaakt in Dynamic Media Classic terwijl middelen van de ene map naar de andere worden verplaatst in Experience Manager met de Klassieke Dynamic Media-configuratie (NPR-32440).
 
 * Op de pagina met middelendetails van PDF-bestanden worden geen actieknoppen weergegeven in Experience Manager die wordt uitgevoerd in de Dynamic Media Scene7-modus (NPR-32316).
 
@@ -1444,7 +1444,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * De Middelen van Enablement zijn niet zichtbaar bij auteur. Hotfix voor CQ-4252618
 * Meldingen worden niet gegenereerd voor verbinding van een onbekende gebruiker. Hotfix voor CQ-4245132
 * Groepzoekactie wordt niet weergegeven op linkerspoor. Hotfix voor CQ-4252621
-* (Auteur) Paginering werkt niet voor Groepenconsole. Hotfix voor CQ-4242786
+* (Auteur) Paginering werkt niet voor Groepsconsole. Hotfix voor CQ-4242786
 * jQuery UI-upgrade. Hotfix voor CQ-4248894
 * Voer een upgrade uit naar de nieuwste versie van SCORM 2017.1. NPR-25675: Hotfix voor CQ-4240671
 * De velden &quot;Samenstellen namens&quot; zijn zichtbaar voor gebruikers buiten de gebruikersgemeenschap. NPR-25331: Hotfix voor CQ-4247858
