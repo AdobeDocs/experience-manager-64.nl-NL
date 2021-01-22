@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: df92346ca23161b8eaff293a6b9f2c8b7c72e2ec
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '5156'
+source-wordcount: '5162'
 ht-degree: 3%
 
 ---
@@ -72,7 +72,7 @@ Zie [Actiepakket 18912 installeren voor migratie van grote hoeveelheden elemente
 
 ## Dynamic Media-Cloud Services {#configuring-dynamic-media-cloud-services} configureren
 
-Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) bij Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat Dynamic Media Cloud Service de juiste referenties krijgt.
+Wijzig het wachtwoord voordat u Dynamic Media-Cloud Services configureert. Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, moet u zich [aanmelden](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) bij de Klassieke Dynamic Media-bureaubladtoepassing om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt, zodat Dynamic Media Cloud Service de juiste referenties krijgt.
 
 >[!NOTE]
 >
@@ -367,7 +367,7 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 1. Voer een van de volgende handelingen uit:
 
    * Als u een standaardnaamgevingsconventie gebruikt die u eerder hebt ingesteld onder **[!UICONTROL Application Setup > Batch Set Presets > Default Naming]**, vouwt u **[!UICONTROL Asset Naming Conventions]** uit en tikt u vervolgens in de vervolgkeuzelijst **[!UICONTROL File Naming]** op **[!UICONTROL Default]**.
-   * Tik op **[!UICONTROL Asset Naming Conventions]** om een nieuwe naamgevingsconventie te definiëren terwijl u de voorinstelling instelt.**[!UICONTROL File Naming]****[!UICONTROL Custom]**
+   * Tik op **[!UICONTROL Custom]** om een nieuwe naamgevingsconventie te definiëren terwijl u de voorinstelling instelt.**[!UICONTROL Asset Naming Conventions]****[!UICONTROL File Naming]**
 
 1. Definieer voor [!UICONTROL Sequence order] de volgorde waarin afbeeldingen worden weergegeven nadat de set in Dynamic Media is gegroepeerd.
 
