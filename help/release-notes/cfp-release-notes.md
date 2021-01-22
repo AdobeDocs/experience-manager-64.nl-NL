@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 1d3476c3fdc8cf817e4784f36b4e0858fdc3b1ee
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '4136'
+source-wordcount: '4138'
 ht-degree: 0%
 
 ---
@@ -65,7 +65,7 @@ Adobe Experience Manager 6.4.8.3 biedt oplossingen voor de volgende problemen.
 
 * Als bij de instellingen voor Voorinstellingen afbeelding de optie [!UICONTROL Enable JPG Chrominance Downsampling] is uitgeschakeld in [!DNL Experience Manager], wordt de wijziging niet gesynchroniseerd met [!DNL Dynamic Media] (NPR-34284).
 * In [!UICONTROL Viewer Presets Editor], wanneer het uitgeven [!UICONTROL PanoramicImage/PanoramicImage_VR] vooraf ingesteld, in `PanoramicView` component, is het `PANORAMICVIEW_AUTOROTATE` bepalingsetiket niet beschikbaar (CQ-4302043).
-* Als u de publicatie van een video opheft vanuit [!DNL Experience Manager], wordt de publicatie van de adaptieve videoret op de geconfigureerde Scene7 niet ongedaan gemaakt. (CQ-4304405).
+* Als u de publicatie van een video opheft vanuit [!DNL Experience Manager], wordt de publicatie van de adaptieve videoset op de geconfigureerde Dynamic Media Classic niet ongedaan gemaakt. (CQ-4304405).
 
 ### Platform {#platform-6483}
 
@@ -147,7 +147,7 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 
 * De gebruikers kunnen geen componenten aan parsys na het vierde niveau van genestelde componenten (NPR-33873) toevoegen of uitgeven.
 * Als de initiële inhoud van een bewerkbare sjabloon wordt gewijzigd en de sjabloon vervolgens wordt gepubliceerd, geven nieuwe pagina&#39;s die met deze sjabloon zijn gemaakt de gepubliceerde datum van de sjabloon weer, ook al worden de pagina&#39;s niet gepubliceerd (NPR-33822).
-* De eigenschappen `cq:acLinks` en `cq:acUUID` voor [!DNL Adobe Campaign] op de kopie worden tijdens kopieer- en plakbewerking verwijderd (NPR-33793).
+* De `cq:acLinks`- en `cq:acUUID`-eigenschappen voor [!DNL Adobe Campaign] op de kopie worden tijdens kopiëren en plakken verwijderd (NPR-33793).
 * Op het tabblad [!UICONTROL Live Usage] worden slechts 49 resultaten weergegeven. Het geeft niet alle gebruik van de component weer (NPR-33710).
 * Een webpagina met het teken `/` in de URL reageert niet tijdens het ontwerpen. Wanneer een component tijdens het ontwerpen wordt toegevoegd, neemt het CPU-gebruik toe en reageert de browser niet meer (NPR-33625).
 * In de inline bewerkingsmodus van [!DNL RTE] werkt het slepen van een afbeelding niet voor de component Text (NPR-33579).
@@ -187,7 +187,7 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 
 * De functie Slim uitsnijden mislukt met een fout wanneer een afbeeldingsprofiel wordt toegevoegd aan een map met meerdere (bijvoorbeeld 11) hoogte-breedteverhoudingen (NPR-34083).
 
-* Wijzigingen in voorinstellingen voor afbeeldingen in [!UICONTROL Adobe Experience Manager] synchroniseren niet met Scene7 Publishing System (NPR-34284, CQ-4299713).
+* Wijzigingen in voorinstellingen voor afbeeldingen in [!UICONTROL Adobe Experience Manager] synchroniseren niet met Dynamic Media Classic (NPR-34284, CQ-4299713).
 
 * Het modifier-label [!UICONTROL PANORAMICVIEW_AUTOROTATE] ontbreekt op het tabblad [!UICONTROL Behavior] op de pagina [!UICONTROL Viewer Preset Editor] (CQ-4302043).
 
