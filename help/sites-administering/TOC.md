@@ -7,9 +7,9 @@ user-guide-title: AEM 6.4 Gebruikershandleiding voor het beheer
 breadcrumb-title: Beheerdershandleiding
 user-guide-description: Meer informatie over het AEM.
 translation-type: tm+mt
-source-git-commit: 47c0e92e7f68641209e5d2e5aefeb9dfcce64854
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '624'
+source-wordcount: '623'
 ht-degree: 6%
 
 ---
@@ -135,7 +135,7 @@ ht-degree: 6%
    + [Integreren met dynamisch Adobe-tagbeheer](dtm.md)
    + [Opteren in Adobe Analytics en Adobe Target](opt-in.md)
    + [AEM en portlets](aem-as-portal.md)
-   + [Integreren met Dynamic Media Classic (Scene7)](scene7.md)
+   + [Integreren met Dynamic Media Classic](scene7.md)
    + [AEM leverontvangers](aem-livefyre-recipes.md)
    + [Problemen met integratie oplossen](troubleshooting-integration-issues.md)
    + [Integreren met BrightStor Content Optimizer](brightedge.md)
