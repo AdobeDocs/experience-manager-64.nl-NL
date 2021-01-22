@@ -1,18 +1,14 @@
 ---
 title: Video
-seo-title: Video
-description: Leer over het gecentraliseerde videobeheer AEM Assets waar u video's voor automatische codering kunt uploaden naar Dynamic Media Classic en rechtstreeks vanuit AEM Assets toegang hebt tot Dynamic Media Classic video's. Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen.
-seo-description: Leer over het gecentraliseerde videobeheer AEM Assets waar u video's voor automatische codering kunt uploaden naar Dynamic Media Classic en rechtstreeks vanuit AEM Assets toegang hebt tot Dynamic Media Classic video's. Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen.
-uuid: 8b3423f1-d96b-44d9-bdb7-e3b77875b25d
+description: Leer over het gecentraliseerde videobeheer AEM Assets waar u video's voor automatische codering kunt uploaden naar Dynamic Media Classic en rechtstreeks vanuit AEM Assets toegang hebt tot Dynamic Media Classic video's. Dynamic Media Classic-video-integratie breidt het bereik van geoptimaliseerde video uit naar alle schermen met automatische apparaatdetectie en automatische bandbreedtedetectie.
 contentOwner: rbrough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
-discoiquuid: 2685f9f3-0973-40a9-89b8-e7db0a6a75f2
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1629'
+source-wordcount: '1565'
 ht-degree: 0%
 
 ---
@@ -20,12 +16,12 @@ ht-degree: 0%
 
 # Video {#video}
 
-Middelen bieden gecentraliseerd beheer van video-elementen, waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic (Scene7) en rechtstreeks vanuit Middelen toegang kunt krijgen tot Klassieke Dynamic Media-video&#39;s voor het ontwerpen van pagina&#39;s.
+Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s rechtstreeks kunt uploaden naar Middelen voor automatische codering naar Dynamic Media Classic en rechtstreeks vanuit Middelen toegang kunt krijgen tot Classic Dynamic Media-video&#39;s voor het ontwerpen van pagina&#39;s.
 
 Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische apparaat- en bandbreedtedetectie).
 
 * De component **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
-* Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten. Zie [Scene7 documentatie over adaptieve videoreeksen voor meer informatie](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html).
+* Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten. <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
