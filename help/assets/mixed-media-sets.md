@@ -1,18 +1,14 @@
 ---
 title: Mixed Media Sets
-seo-title: Gemengde mediasets
-description: Leer hoe u met gemengde mediasets werkt in dynamische media
-seo-description: Leer hoe u met gemengde mediasets werkt in dynamische media
-uuid: e37fa648-74e2-42e3-8611-8509c92ec00d
+description: Leer hoe u in Dynamic Media werkt met gemengde mediasets (afbeeldingen, afbeeldingssets, centrifuges en video's).
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: 599c316e-b6a7-4a28-bc4b-75d48409bde0
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1395'
+source-wordcount: '1388'
 ht-degree: 17%
 
 ---
