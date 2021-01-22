@@ -1,18 +1,14 @@
 ---
 title: Integratie met de Adobe Marketing Cloud
-seo-title: Integratie met de Adobe Marketing Cloud
-description: Leer hoe u AEM met Adobe Marketing Cloud kunt integreren.
-seo-description: Leer hoe u AEM met Adobe Marketing Cloud kunt integreren.
-uuid: 36d71dd3-7fb0-4237-99d3-4fbb2e162e7b
+description: Leer hoe u Adobe Experience Manager kunt integreren met Adobe Marketing Cloud.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
-discoiquuid: ba496f6a-c9aa-49b5-8207-8633748d2c17
 translation-type: tm+mt
-source-git-commit: 2cd539dd645f1e3a823a17b57410ca4b9fc1364a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1004'
+source-wordcount: '1020'
 ht-degree: 0%
 
 ---
@@ -22,16 +18,16 @@ ht-degree: 0%
 
 De [Adobe Marketing Cloud](https://www.adobe.com/solutions/digital-marketing.html) bevat krachtige webanalysemogelijkheden en producten voor het optimaliseren van websites waarmee u in real-time gegevens en inzichten kunt leveren om succesvolle online initiatieven te stimuleren. Het biedt een geïntegreerd en open platform voor online bedrijfsoptimalisatie. De cloud bestaat uit geïntegreerde toepassingen voor het verzamelen en onthullen van de kracht van inzicht van de klant om de aankoop, conversie en retentie van klanten te optimaliseren en om inhoud te maken en te verspreiden.
 
-Met Adobe Experience Manager (AEM) kunt u naadloos integreren met de volgende producten van de Adobe Marketing Cloud:
+Met Adobe Experience Manager kunt u naadloos integreren met de volgende producten van de Adobe Marketing Cloud:
 
 * Adobe Analytics biedt marketers praktische, realtime informatie over online strategieën en marketinginitiatieven.
 * Adobe Target biedt marketers de mogelijkheid om hun online inhoud voortdurend voor hun klanten relevanter te maken, waardoor ze een grotere conversie krijgen.
-* Adobe Scene7 automatiseert mediabeheer, stroomlijnt webpublicatie en verbetert de webervaringen, allemaal in een gehoste omgeving.
+* Adobe Dynamic Media Classic automatiseert mediabeheer, stroomlijnt webpublicaties en verbetert webervaringen, allemaal in een gehoste omgeving.
 * Met Adobe Dynamic Tag Management kunnen marketers een onbeperkt aantal Adobe- en andere tags snel en eenvoudig beheren.
 * Met Adobe Search&amp;Promote kunnen marketers de zoekresultaten op hun sites beheren en optimaliseren.
 * Met Adobe Campaign kunt u inhoud voor e-maillevering rechtstreeks in Adobe Experience Manager beheren.
 
-Daarnaast kunt u AEM integreren met de [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) en met [services van derden](/help/sites-administering/third-party-services.md).
+Daarnaast kunt u Adobe Experience Manager integreren met de [Creative Cloud](/help/assets/aem-cc-integration-best-practices.md) en met [services van derden](/help/sites-administering/third-party-services.md).
 
 ## Integreren met Adobe Analytics {#integrating-with-adobe-analytics}
 
@@ -48,7 +44,7 @@ Door te integreren met Adobe Analytics kunt u het volgende doen:
 * Configureer volledige sitesecties tegelijk.
 * Aangepaste gebeurtenissen bijhouden.
 
-Voor informatie over het integreren van AEM met Analytics, zie [Integrating with Adobe Analytics](/help/sites-administering/adobeanalytics.md).
+Zie [Integreren met Adobe Analytics](/help/sites-administering/adobeanalytics.md) voor informatie over het integreren van Adobe Experience Manager met Analytics.
 
 U kunt de [Opt-in tovenaar](/help/sites-administering/opt-in.md) ook gebruiken om de integratie gemakkelijk uit te voeren.
 
@@ -58,13 +54,13 @@ U kunt de [Opt-in tovenaar](/help/sites-administering/opt-in.md) ook gebruiken o
 
 De online consumenten hebben vandaag de dag constant veranderende behoeften en verwachten relevante, zelfs gepersonaliseerde inhoud van de grote verscheidenheid van plaatsen en inhoudsbronnen zij van kunnen kiezen. Om een online publiek te bereiken, is het van essentieel belang dat online marketeers snel identificeren welke aanbiedingen en inhoud relevant en dwingend zijn voor hun publiek. Op basis van deze kennis hebben marketers de mogelijkheid nodig om hun sites voortdurend te ontwikkelen en de juiste inhoud te richten op verschillende doelgroepen.
 
-[Integreren met Adobe ](/help/sites-administering/target.md) Targetexplains hoe u uw site kunt integreren met Target.
+[Integreren met Adobe ](/help/sites-administering/target.md) Targetexplains hoe u uw site kunt integreren met Adobe Target.
 
 U kunt de [Opt-in tovenaar](/help/sites-administering/opt-in.md) ook gebruiken om de integratie gemakkelijk uit te voeren.
 
 ## Aanmelden bij Analytics en Doel {#opting-in-to-analytics-and-target}
 
-AEM biedt een eenvoudige opt-in-procedure voor integratie met Adobe Analytics en Adobe Target. Wanneer u login als beheerder en de console van Projecten bezoekt wordt u voorgesteld met een opt-in tovenaar.
+Adobe Experience Manager biedt een eenvoudige opt-in-procedure voor integratie met Adobe Analytics en Adobe Target. Wanneer u login als beheerder en de console van Projecten bezoekt wordt u voorgesteld met een opt-in tovenaar.
 
 ![chlimage_1-107](assets/chlimage_1-107.png)
 
@@ -72,52 +68,45 @@ Kies voor integratie met Analytics en/of Target om het gebruik van de mogelijkhe
 
 Zie [Opteren in Adobe Analytics en Adobe Target.](/help/sites-administering/opt-in.md)
 
-## Integreren met Scene7 {#integrating-with-scene}
+## Integreren met Dynamic Media Classic {#integrating-with-scene}
 
-[Adobe Scene7](https://www.adobe.com/products/scene7.html) is een gehoste oplossing voor het publiceren, beheren, verbeteren en leveren van dynamische marketingmiddelen en rijke visuele marketing voor internet, mobiele apparaten, e-mail, sociale media, internetschermen en drukwerk.
+Adobe Dynamic Media Classic is een gehoste oplossing voor het publiceren, beheren, verbeteren en leveren van dynamische marketingmiddelen en rijke visuele verkoop aan het web, mobiele apparaten, e-mail, sociale media, displays en drukwerk met internetverbinding.
 
-In AEM kunt u digitale middelen rechtstreeks van AEM naar Scene7 publiceren en kunt u digitale middelen van Scene7 naar AEM publiceren.
+In Adobe Experience Manager kunt u digitale middelen rechtstreeks van Adobe Experience Manager naar Dynamic Media Classic publiceren en u kunt digitale middelen van Dynamic Media Classic naar Adobe Experience Manager publiceren.
 
-Daarnaast kunt u AEM middelen bekijken die in Scene7 zijn gepubliceerd in verschillende viewers:
+Bovendien kunt u Adobe Experience Manager-elementen die zijn gepubliceerd in Dynamic Media Classic, weergeven in verschillende viewers, zoals Standaardzoom en Video.
 
-* Standaardzoom
-* DHTML-flyoutzoom
-* Flash Flyout-zoom
-* Video
-* Flash-sjabloon
-* Afbeeldingssjabloon
-
-Voor meer informatie over hoe AEM met Scene7 integreert, zie [Integrating with Scene7 documentation](/help/sites-administering/scene7.md).
+Zie [Integratie met Dynamic Media Classic](/help/sites-administering/scene7.md) documentatie voor meer informatie over hoe Adobe Experience Manager integreert met Dynamic Media Classic.
 
 ## Integreren met dynamisch Adobe-tagbeheer {#integrating-with-adobe-dynamic-tag-management}
 
 [Adobe Dynamic Tag ](https://www.adobe.com/solutions/digital-marketing/dynamic-tag-management.html) Management biedt marketers intuïtieve tools voor het snel en eenvoudig beheren van een onbeperkt aantal Adobe- en andere tags. U hebt meer controle en flexibiliteit om vrijwel alles online te optimaliseren, en tegelijk de afhankelijkheid van IT-bronnen te verminderen.
 
-[Integreer Adobe Dynamic Tag ](/help/sites-administering/dtm.md) Management met AEM, zodat u met de webeigenschappen van Dynamic Tag Management AEM sites kunt bijhouden.
+[Integreer Adobe Dynamic Tag ](/help/sites-administering/dtm.md) Management met Adobe Experience Manager, zodat u uw Dynamic Tag Management-webeigenschappen kunt gebruiken om Adobe Experience Manager-sites bij te houden.
 
 ## Integreren met Adobe Audience Manager {#integrating-with-adobe-audience-manager}
 
-De integratie van de Audience Manager is verwijderd in AEM 6.3.
+In Adobe Experience Manager 6.3 is de integratie van de Audience Manager opgeheven.
 
 ## Integreren met Search&amp;Promote {#integrating-with-search-promote}
 
-[Met Zoeken en ](https://www.omniture.com/en/products/conversion/search-and-promote) promoten in Adobe kunnen marketers optimaliseren hoe bezoekers door relevante producten en inhoud op websites en mobiele sites bladeren, deze zoeken, vergelijken en selecteren. Bedrijven kunnen eenvoudig prioritaire items promoten op basis van zakelijke doelstellingen en bezoekersintensie, en ze kunnen activiteiten op het gebied van marketing en promoties automatiseren via op KPI gebaseerde triggers of metriek.
+Met Adobe Search&amp;Promote kunnen marketers optimaliseren hoe bezoekers door relevante producten en inhoud op websites en mobiele sites bladeren, deze zoeken, vergelijken en selecteren. Bedrijven kunnen eenvoudig prioritaire items promoten op basis van zakelijke doelstellingen en bezoekersintensie, en ze kunnen verkoopactiviteiten en promotieactiviteiten automatiseren via op KPI gebaseerde triggers of metriek.
 
 Adobe Search&amp;Promote is een betrouwbare en schaalbare zoektoepassing voor gehoste sites, die kan worden geschaald tot miljoenen pagina&#39;s of producten, voor veelbezochte online bedrijven, variërend van detailhandel tot nieuwssites. Het biedt ongekende niveaus van marktorcontrole en op metriek-gebaseerde relevantie aan.
 
-Voor informatie over het integreren van AEM en Search&amp;Promote, zie [Integrerend met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md).
+Zie [Integreren met Adobe Search&amp;Promote](/help/sites-administering/search-and-promote.md) voor informatie over het integreren van Adobe Experience Manager en Search&amp;Promote.
 
 ## Integreren met Adobe Campaign {#integrating-with-adobe-campaign}
 
 [Met Adobe-](https://www.adobe.com/solutions/campaign-management.html) camera kunt u inhoud voor e-maillevering rechtstreeks in Adobe Experience Manager beheren.
 
-Voor informatie over hoe AEM met Adobe Campaign integreert, zie [Integreren met Adobe Campaign](/help/sites-administering/campaignstandard.md).
+Voor informatie over hoe Adobe Experience Manager met Adobe Campaign integreert, zie [Integreren met Adobe Campaign](/help/sites-administering/campaignstandard.md).
 
 ## Integreren met Livefyre {#integrating-with-livefyre}
 
-Meer informatie over AEM en Livefyre:
+Meer informatie over Adobe Experience Manager en Livefyre:
 
 * [Aan de slag met Livefyre](https://answers.livefyre.com/developers/getting-started)
 
-* [Livefyre en AEM](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
+* [Livefyre en Adobe Experience Manager](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
 
