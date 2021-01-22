@@ -1,18 +1,14 @@
 ---
 title: Panoramische afbeeldingen
-seo-title: Panoramische afbeeldingen
-description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
-seo-description: Leer hoe u in Dynamic Media met panoramische afbeeldingen werkt.
-uuid: dfd7a55c-7bcc-4d62-8c3a-a73726881103
+Description: Learn how to work with panoramic images in Dynamic Media.
 contentOwner: Rick Brough
 topic-tags: dynamic-media
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: fc285b25-2bce-493c-87bc-5f1a8a26eb42
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '521'
+source-wordcount: '503'
 ht-degree: 2%
 
 ---
@@ -46,10 +42,10 @@ Zie [Elementen uploaden](managing-assets-touch-ui.md#uploading-assets) om elemen
 
 De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voor de Panoramische afbeeldingsviewer synchroniseert met klassieke metagegevens van Dynamic Media Classic en Dynamic Media, zodat de voorinstellingen van de viewer worden bijgewerkt in de JCR. Hiertoe configureert u Dynamic Media Classic als volgt:
 
-1. [Meld u voor elk bedrijfsaccount aan bij je exemplaar van Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classification.
+1. [Meld u voor elk bedrijfsaccount aan bij uw Dynamic Media Classic-](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/intro/dynamic-media-classic-desktop-app.html?lang=en#system-requirements-dmc-app) bureaubladtoepassing.
 
 1. Klik in de rechterbovenhoek van de pagina op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]**.
-1. Selecteer **[!UICONTROL Image Serving]** in het vervolgkeuzemenu **[!UICONTROL Image Server Publish]** boven op de pagina &lt;a0/>.**[!UICONTROL Publish Context]**
+1. Selecteer **[!UICONTROL Image Serving]** in het vervolgkeuzemenu **[!UICONTROL Image Server Publish]** boven op de pagina **[!UICONTROL Publish Context]**.
 
 1. Zoek op dezelfde **[!UICONTROL Image Server Publish]**-pagina de kop **[!UICONTROL Request Attributes]**.
 1. Zoek onder de kop **[!UICONTROL Request Attributes]** **[!UICONTROL Reply Image Size Limit]**. Vergroot vervolgens in de bijbehorende velden **[!UICONTROL Width]** en **[!UICONTROL Height]** de maximaal toegestane afbeeldingsgrootte voor panoramische afbeeldingen.
@@ -75,7 +71,7 @@ De Panorama-viewer werkt alleen correct binnen AEM als u de voorinstellingen voo
 
 Als u een beeld in de **[!UICONTROL Panoramic Media]** component in uw WCM en componentenplaceholder samengevouwen hebt gelaten vallen, kunt u het volgende willen problemen oplossen:
 
-* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze zijn veroorzaakt door het te grote formaat van de gevraagde afbeelding. Controleer de *Limiet voor afbeeldingsgrootte beantwoorden*-instellingen in [Dynamic Media Classic configureren (Scene7)](#configuring-dynamic-media-classic-scene).
+* Als u een fout van 403 kent waarvoor een verbod geldt, kan deze zijn veroorzaakt door het te grote formaat van de gevraagde afbeelding. Controleer de *Limiet voor afbeeldingsgrootte beantwoorden*-instellingen in [Dynamic Media Classic configureren](#configuring-dynamic-media-classic-scene).
 
 * Voor een *Ongeldige vergrendeling* op het element of *Parseerfout* die op de pagina wordt weergegeven, schakelt u **[!UICONTROL Request Obfuscation Mode]** en **[!UICONTROL Request Locking Mode]** in om ervoor te zorgen dat deze zijn uitgeschakeld.
 * Voor een bekroonde canvasfout stelt u een **[!UICONTROL Rule Set Definition File Path and Invalidate CTN]** in voor de vorige aanvragen voor het afbeeldingselement.
