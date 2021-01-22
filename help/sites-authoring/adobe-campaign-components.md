@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '2778'
+source-wordcount: '2779'
 ht-degree: 0%
 
 ---
@@ -31,7 +31,7 @@ Wanneer u een nieuwsbrief/e-mail opent die wordt gevormd om met Adobe Campaign t
 * Kop (campagne)
 * Afbeelding (campagne)
 * Koppeling (campagne)
-* Scene7-afbeeldingssjabloon (campagne)
+* Dynamic Media-afbeeldingssjabloon (campagne)
 * Gerichte referentie (campagne)
 * Tekst en afbeelding (campagne)
 * Tekst en persoonlijke voorkeur (campagne)
@@ -40,7 +40,7 @@ Een beschrijving van deze componenten vindt u in de volgende sectie.
 
 De componenten zijn als volgt:
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### Kop (campagne) {#heading-campaign}
 
@@ -144,7 +144,7 @@ Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
 In het volgende voorbeeld ziet u een component Image (Campaign) die wordt weergegeven.
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 ### Koppeling (campagne) {#link-campaign}
 
@@ -189,7 +189,7 @@ Klik **Bewerken** om de component te configureren. U kunt de instellingen config
 
 Daarnaast bevat het parametervenster alle sjabloonparameters die zijn gedefinieerd voor de sjabloon in Scene7. Voor elk van deze parameters kunt u de waarde aanpassen, variabelen invoegen of de standaardwaarde ervan herstellen.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Gerichte referentie (campagne) {#targeted-reference-campaign}
 
@@ -268,7 +268,7 @@ De component van de Tekst &amp; van de Personalisatie (Campagne) laat u een teks
 
 Met de selectie van pictogrammen kunt u tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing. De functionaliteit is in wezen het zelfde in [beide UIs](/help/sites-authoring/editing-content.md), hoewel het blik-en-gevoel verschillend is:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 In de Inplace redacteur kunt u tekst toevoegen, de rechtvaardiging veranderen, verbindingen toevoegen en verwijderen, contextgebieden of verpersoonlijkingsblokken toevoegen, en volledig-schermwijze ingaan. Wanneer u klaar bent met het toevoegen van tekst/personalisatie, selecteert u het vinkje om de wijzigingen op te slaan (of x om te annuleren). Zie [Bewerken plaatsen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) voor meer informatie.
 
