@@ -1,18 +1,14 @@
 ---
 title: Dynamic Media configureren - Scene7-modus
-seo-title: Dynamic Media configureren - Scene7-modus
-description: Informatie over het configureren van de Dynamic Media-Scene7-modus.
-seo-description: Informatie over het configureren van de Dynamic Media-Scene7-modus.
-uuid: 81cc208b-e95d-4a01-9817-2b6d50cfe8b8
+description: Leer hoe u de Dynamic Media - Scene7-modus configureert.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: cd3adbac-9868-4838-9d8a-37dde8973df4
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
 workflow-type: tm+mt
-source-wordcount: '5162'
+source-wordcount: '5181'
 ht-degree: 3%
 
 ---
@@ -88,7 +84,7 @@ Dynamic Media-Cloud Services configureren:
 
    >[!NOTE]
    >
-   >Nadat u uw provisioning-e-mail met Dynamic Media-referenties hebt ontvangen, [meld u aan bij ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Dynamic Media Classic om uw wachtwoord te wijzigen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat de Dynamic Media-cloudservice wordt ingesteld met de juiste referenties.
+   >Nadat u uw levering-e-mail met de geloofsbrieven van Dynamic Media ontvangt, open [Klassieke de Desktoptoepassing van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started), dan login aan uw bedrijfrekening om uw wachtwoord te veranderen. Het wachtwoord dat in de e-mailprovisioning wordt ingevoerd, wordt door het systeem gegenereerd en is alleen bedoeld als tijdelijk wachtwoord. Het is belangrijk dat u het wachtwoord bijwerkt zodat de Dynamic Media-cloudservice wordt ingesteld met de juiste referenties.
 
 1. Als de verbinding tot stand is gebracht, kunt u ook het volgende instellen:
 
@@ -109,7 +105,7 @@ Dynamic Media-Cloud Services configureren:
 1. Tik op **[!UICONTROL Save]**.
 1. Als u Dynamic Media-inhoud veilig wilt voorvertonen voordat deze wordt gepubliceerd, moet u de AEM auteur-instantie &#39;lijsten van gewenste personen&#39; om verbinding te maken met Dynamic Media:
 
-   * Meld u aan bij uw Dynamic Media Classic-account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html). Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+   * Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account. Adobe heeft uw aanmeldingsgegevens en aanmeldgegevens opgegeven op het moment van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
    * Tik op **[!UICONTROL Setup > Application Setup > Publish Setup > Image Server]** op de navigatiebalk rechts boven aan de pagina.
    * Selecteer **[!UICONTROL Test Image Serving]** in de vervolgkeuzelijst Publicatie-context op de pagina Publiceren afbeeldingsserver.
    * Tik **[!UICONTROL Add]** voor het clientadresfilter.
@@ -133,7 +129,7 @@ Als u de configuratie en instelling van de Dynamic Media - Scene7-modus verder w
 
 In de uitvoermodus **dynamicmedia_scene7** gebruikt u de Dynamic Media Classic (Scene7)-gebruikersinterface om de Dynamic Media-instellingen te wijzigen.
 
-Voor sommige van de bovenstaande taken moet u zich hier aanmelden bij Dynamic Media Classic: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+Voor sommige van de bovenstaande taken is het vereist dat u de [Klassieke Dynamic Media-bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) opent en zich vervolgens aanmeldt bij uw account.
 
 Setup- en configuratietaken zijn:
 
@@ -189,7 +185,7 @@ Met dynamisch kleurbeheer voor media kunt u correcte elementen kleuren. Met kleu
 
 De standaardeigenschappen voor kleuren configureren om kleurcorrectie in te schakelen bij het aanvragen van afbeeldingen:
 
-1. [Meld u aan bij Dynamic Media ](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html) Classicusing met gebruikersgegevens die tijdens de provisioning worden verstrekt. Ga naar **[!UICONTROL Setup > Application Setup]**.
+1. Open de [Dynamic Media Klassieke bureaubladtoepassing](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account met de aanmeldingsgegevens die tijdens de provisioning zijn opgegeven. Ga naar **[!UICONTROL Setup > Application Setup]**.
 1. Vouw het gebied **[!UICONTROL Publish Setup]** uit en selecteer **[!UICONTROL Image Server]**. Stel **[!UICONTROL Publish Context]** in op **[!UICONTROL Image Serving]** wanneer u standaardinstellingen voor publicatie-exemplaren instelt.
 1. Blader naar de eigenschap die u wilt wijzigen, bijvoorbeeld een eigenschap in het gebied **[!UICONTROL Color Management Attributes]**.
 
@@ -319,9 +315,9 @@ Twee elementen zijn beschikbaar voor definitie, **[!UICONTROL Match]** en **[!UI
 
 **Standaardnaamgeving configureren:**
 
-1. Meld u aan bij uw Dynamic Media Classic (Scene7)-account: [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-   Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+   Adobe heeft uw aanmeldingsgegevens en aanmeldgegevens opgegeven op het moment van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
 1. Tik op de navigatiebalk boven aan de pagina op **[!UICONTROL Setup > Application Setup > Batch Set Presets > Default Naming].**
 1. Selecteer **[!UICONTROL View Form]** of **[!UICONTROL View Code]** om op te geven hoe u informatie over elke asset wilt weergeven en invoeren.
@@ -353,9 +349,9 @@ U kunt de methode voor formuliervelden gebruiken om een voorinstelling voor een 
 
 **Een voorinstelling voor een batchset maken:**
 
-1. Meld u aan bij uw Dynamic Media Classic (Scene7)-account: [www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-   Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+   Adobe heeft uw aanmeldingsgegevens en aanmeldgegevens opgegeven op het moment van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
 1. Tik op de navigatiebalk boven aan de pagina op **[!UICONTROL Setup > Application Setup > Batch Set Presets > Batch Set Preset].**
 
@@ -408,9 +404,9 @@ Wanneer de Spin-set wordt geüpload en gepubliceerd, activeert u de naam van het
 
 **Een voorinstelling voor een batch-set maken voor het automatisch genereren van een 2D-set met draaien:**
 
-1. Meld u aan bij uw Dynamic Media Classic (Scene7)-account: [https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html](https://www.adobe.com/marketing-cloud/experience-manager/scene7-login.html)
+1. Open [Dynamic Media Classic desktop application](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/getting-started/signing-out.html#getting-started) en meld u vervolgens aan bij uw account.
 
-   Uw geloofsbrieven en opening van een sessie werden verstrekt door Adobe op het tijdstip van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
+   Adobe heeft uw aanmeldingsgegevens en aanmeldgegevens opgegeven op het moment van levering. Neem contact op met Technische ondersteuning als u deze informatie niet hebt.
 
 1. Tik op **[!UICONTROL Setup > Application Setup > Batch Set Presets > Batch Set Preset]** op de navigatiebalk boven aan de pagina.
 
