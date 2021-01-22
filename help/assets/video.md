@@ -1,18 +1,14 @@
 ---
 title: Video
-seo-title: Video
-description: Leer hoe u met video werkt in Dynamic Media
-seo-description: Leer hoe u met video werkt in Dynamic Media
-uuid: 15e89f88-2787-472d-bbb6-d370bbab9228
+description: Leer hoe u met video werkt in Dynamic Media.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: Dynamic-Media
 content-type: reference
-discoiquuid: b721dc7c-b056-47f5-9489-9f4db45b68a0
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '9960'
+source-wordcount: '9900'
 ht-degree: 3%
 
 ---
@@ -162,9 +158,9 @@ U kunt de apparaten van Vensters vinden die dit videoformaat bij het volgende st
 * Configureer videospelers om aan uw brandingbehoeften te voldoen.
 * Video met een eenvoudige URL of insluitcode integreren in uw website, mobiele site of mobiele toepassing.
 
-Zie [Dynamische videoweergave](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&amp;config=GeoRetail/Universal_Video1&amp;stageSize=640,480).
+<!-- See [Dynamic video playback](https://s7d9.scene7.com/s7/uvideo.jsp?asset=GeoRetail/Mop_AVS&config=GeoRetail/Universal_Video1&stageSize=640,480). -->
 
-Zie ook [Informatie over HTML5 Viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html) in de Adobe Scene7 Viewers Reference Guide.
+Zie ook [Informatie over HTML5 Viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/c-html5-aem-asset-viewers.html?lang=en#viewers-for-aem-assets-only) in de handleiding van de Verwijzing van de Kijkers van Adobe Dynamic Media.
 
 ## Beste praktijken: De HTML5-videoviewer {#best-practice-using-the-html-video-viewer} gebruiken
 
@@ -193,76 +189,76 @@ HLS (HTTP Live Streaming) is een Apple-standaard voor adaptieve videostreaming d
 
 Progressieve video wordt geleverd door de video lokaal te downloaden en op het desktopscherm of mobiele apparaat van de gebruiker op te slaan.
 
-In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschreven van video&#39;s op bureaubladcomputers en mobiele apparaten met de Scene7 Video Viewer.
+In de volgende tabel worden het apparaat, de browser en de afspeelmethode beschreven van video&#39;s op bureaubladcomputers en mobiele apparaten met de Dynamic Media Video Viewer.
 
 <table> 
  <tbody> 
   <tr> 
-   <td><strong>Apparaat</strong></td> 
-   <td><strong>Browser</strong></td> 
-   <td><strong>Video-afspeelmodus</strong></td> 
-  </tr> 
+   <td><strong>Apparaat</strong></td>
+   <td><strong>Browser</strong></td>
+   <td><strong>Video-afspeelmodus</strong></td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Internet Explorer 9 en 10</td> 
-   <td>Progressieve download.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Internet Explorer 9 en 10</td>
+   <td>Progressieve download.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Internet Explorer 11+</td> 
-   <td>In Windows 8 en Windows 10 - Gebruik van HTTPS forceren wanneer om HLS wordt gevraagd. Bekende beperking: HTTP op HLS werkt niet in deze browser/werkend systeemcombinatie<br /> <br /> op Vensters 7 - Progressieve download. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Internet Explorer 11+</td>
+   <td>In Windows 8 en Windows 10 - Gebruik van HTTPS forceren wanneer om HLS wordt gevraagd. Bekende beperking: HTTP op HLS werkt niet in deze browser/werkend systeemcombinatie<br /> <br /> op Vensters 7 - Progressieve download. Gebruikt de standaardlogica voor het selecteren van het protocol HTTP versus HTTPS.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Firefox 23-44</td> 
-   <td>Progressieve download.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Firefox 23-44</td>
+   <td>Progressieve download.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Firefox 45 of hoger</td> 
-   <td>HLS-videostreaming.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Firefox 45 of hoger</td>
+   <td>HLS-videostreaming.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Chroom</td> 
-   <td>HLS-videostreaming.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Chroom</td>
+   <td>HLS-videostreaming.</td>
+  </tr>
   <tr> 
-   <td>Desktop</td> 
-   <td>Safari (Mac)</td> 
-   <td>HLS-videostreaming.</td> 
-  </tr> 
+   <td>Desktop</td>
+   <td>Safari (Mac)</td>
+   <td>HLS-videostreaming.</td>
+  </tr>
   <tr> 
-   <td>Mobiel</td> 
-   <td>Chrome (Android 6 of eerder)</td> 
-   <td>Progressieve download.</td> 
-  </tr> 
+   <td>Mobiel</td>
+   <td>Chrome (Android 6 of eerder)</td>
+   <td>Progressieve download.</td>
+  </tr>
   <tr> 
-   <td>Mobiel</td> 
-   <td>Chrome (Android 7 of hoger)</td> 
-   <td>HLS-videostreaming.</td> 
-  </tr> 
+   <td>Mobiel</td>
+   <td>Chrome (Android 7 of hoger)</td>
+   <td>HLS-videostreaming.</td>
+  </tr>
   <tr> 
-   <td>Mobiel</td> 
-   <td>Android (standaardbrowser)</td> 
-   <td>Progressieve download.</td> 
-  </tr> 
+   <td>Mobiel</td>
+   <td>Android (standaardbrowser)</td>
+   <td>Progressieve download.</td>
+  </tr>
   <tr> 
-   <td>Mobiel</td> 
-   <td>Safari (iOS)</td> 
-   <td>HLS-videostreaming.</td> 
-  </tr> 
+   <td>Mobiel</td>
+   <td>Safari (iOS)</td>
+   <td>HLS-videostreaming.</td>
+  </tr>
   <tr> 
-   <td>Mobiel</td> 
-   <td>Chrome (iOS)</td> 
-   <td>HLS-videostreaming.</td> 
-  </tr> 
+   <td>Mobiel</td>
+   <td>Chrome (iOS)</td>
+   <td>HLS-videostreaming.</td>
+  </tr>
   <tr> 
-   <td>Mobiel</td> 
-   <td>Blackberry</td> 
-   <td>HLS-videostreaming.</td> 
-  </tr> 
- </tbody> 
+   <td>Mobiel</td>
+   <td>Blackberry</td>
+   <td>HLS-videostreaming.</td>
+  </tr>
+ </tbody>
 </table>
 
 ## Architectuur van Dynamic Media-videooplossing {#architecture-of-dynamic-media-video-solution}
@@ -426,7 +422,7 @@ Stel dat uw bronvideo bijvoorbeeld 1920 x 1080 is. In de volgende tabel bieden d
    <td><p>Gecodeerd</p> </td> 
    <td><p>640 x 360</p> </td> 
    <td><p>3</p> </td> 
-   <td><p>3</p> </td> 
+   <td><p>1</p> </td> 
   </tr> 
   <tr> 
    <td><p>Gecodeerd</p> </td> 
@@ -901,7 +897,7 @@ Voor het correct werken van videorapporten, wordt een identiteitskaart van de Re
 
 1. Tik in de tabel met de bovenste gepubliceerde video&#39;s op een videonaam om de video af te spelen en zie ook het rapport voor het vasthouden van het publiek van de video (drop-off).
 
-### Videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
+### Videorapporten weergeven op basis van een videoviewer die u hebt gemaakt met de Dynamic Media HTML5 Viewer SDK {#viewing-video-reports-based-on-a-video-viewer-that-you-created-using-the-scene-hmtl-viewer-sdk}
 
 Als u een uit-van-doos videoviewer gebruikt die door Dynamic Media wordt verstrekt, of als u een vooraf ingestelde douaneviewer creeerde die van een uit-van-doos videokijker wordt gebaseerd, dan worden geen extra stappen vereist om videorapporten te bekijken. Als u echter uw eigen videoviewer hebt gemaakt op basis van de HTML5 Viewer SDK API, voert u de volgende stappen uit om ervoor te zorgen dat de videoviewer trackinggebeurtenissen naar Dynamic Media Video Reports verzendt.
 
@@ -962,7 +958,7 @@ U kunt als volgt videorapporten weergeven op basis van een videoviewer die u heb
       ```
    Het object appMeturementBridge heeft een ingebouwde trackfunctie. U kunt echter uw eigen systeem beschikbaar stellen voor de ondersteuning van meerdere trackingsystemen of andere functies.
 
-   Zie *De TrackingManager-component* gebruiken in de *Scene7 HTML5 Viewer SDK User Guide* beschikbaar voor downloaden via [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html) voor meer informatie.
+<!--    For more information, see *Using the TrackingManager Component* in the *Scene7 HTML5 Viewer SDK User Guide* available for download from [Adobe Developer Connection](https://help.adobe.com/en_US/scene7/using/WSef8d5860223939e2-43dedf7012b792fc1d5-8000.html). -->
 
 ## Bijschriften toevoegen aan video {#adding-captions-to-video}
 
@@ -976,7 +972,7 @@ Ondertiteling maakt ook een betere toegankelijkheid mogelijk door ondertiteling 
 
 Dynamic Media kan bijschriftbestanden omzetten in de indeling JSON (JavaScript Object Notation). Met deze conversie kunt u de JSON-tekst insluiten in een webpagina als een verborgen, maar volledige transcriptie van de video. Zoekprogramma&#39;s kunnen de inhoud vervolgens verkennen en indexeren, zodat de video&#39;s gemakkelijker te vinden zijn en klanten meer informatie krijgen over de video-inhoud.
 
-Zie [Statische (niet-afbeeldings) inhoud dienen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html) in *Scene7 Image Serving API Help* voor meer informatie over het gebruik van de JSON-functie in een URL.
+Zie [Statische (niet-afbeeldings) inhoud dienen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-serving-static-nonimage-contents.html#image-serving-api) in *Dynamic Media Image Serving and Rendering API Help* voor meer informatie over het gebruik van de JSON-functie in een URL.
 
 **Bijschriften of ondertitels toevoegen aan video**:
 
@@ -1179,4 +1175,3 @@ Om het standaardtijdinterval te vormen dat videominiaturen worden geproduceerd,
 1. Tik op **[!UICONTROL Save Changes]** op de pagina **[!UICONTROL Change Thumbnail]** nadat de afbeelding is geüpload.
 
    De aangepaste miniatuur wordt toegevoegd aan uw video.
-
