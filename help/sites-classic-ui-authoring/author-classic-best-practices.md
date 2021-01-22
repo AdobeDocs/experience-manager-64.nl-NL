@@ -10,9 +10,9 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: a715c372-3d05-4119-9d2b-41bca0b16b19
 translation-type: tm+mt
-source-git-commit: ef7e013fc36bc06025b0cdedf9038c33206e4a1a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '309'
+source-wordcount: '310'
 ht-degree: 3%
 
 ---
@@ -55,7 +55,7 @@ De beste praktijken rond Activa, met inbegrip van het dynamische media vermogen 
   <tr>
    <td>Dynamic Imaging</td> 
    <td><a href="/help/assets/best-practices-for-optimizing-the-quality-of-your-images.md">Aanbevolen werkwijzen voor Dynamic Imaging</a></td> 
-   <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de functionaliteit van Dynamic Media gebruikt of met Scene7 integreert. </p> </td> 
+   <td><p>Beschrijft hoe te om een beeld voor beste resultaten te verscherpen en de beste manier om de kwaliteit van uw beelden te optimaliseren als u de functionaliteit van Dynamic Media gebruikt of met Dynamic Media integreert. </p> </td> 
   </tr>
   <tr>
    <td>Meertalige activa</td> 
