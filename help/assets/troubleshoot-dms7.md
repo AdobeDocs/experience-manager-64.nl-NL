@@ -1,18 +1,14 @@
 ---
 title: Problemen oplossen in de modus Dynamic Media - Scene7
-seo-title: Problemen oplossen in de modus Dynamic Media - Scene7
-description: Problemen met Dynamic Media oplossen in Scene7-runmode.
-seo-description: Problemen met Dynamic Media oplossen in Scene7-runmode.
-uuid: bd9653f7-e4c7-464f-84a8-dc1e8dc37ba2
+description: Problemen met Dynamic Media oplossen - Scene7-uitvoeringsmodus.
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
-discoiquuid: eab920f4-b56e-4ed2-9ec1-03f348810ae5
 translation-type: tm+mt
-source-git-commit: 5acb16b1734331767554261bbcf9640947f2e23f
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1295'
+source-wordcount: '1283'
 ht-degree: 0%
 
 ---
@@ -30,7 +26,7 @@ Zorg ervoor dat Dynamic Media op de juiste wijze is ingesteld door het volgende 
 * Om het even welke AEM 6.4 cumulatieve fixfixpakken (GFPs) zijn eerst geïnstalleerd *vóór* om het even welke beschikbare Packs van de Eigenschap van Dynamic Media.
 * Optioneel Feature Pack 18912 is geïnstalleerd.
 
-   Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen van Dynamic Media Classic (Scene7) naar Dynamic Media migreert.
+   Dit optionele functiepakket is bedoeld voor FTP-ondersteuning of als u middelen van Dynamic Media Classic naar Dynamic Media migreert.
 
 * Navigeer naar de gebruikersinterface van Cloud Services en bevestig dat de provisioned account onder **[!UICONTROL Available Configurations]** verschijnt.
 * Zorg ervoor dat **[!UICONTROL Dynamic Media Asset Activation (scene7)]** replicatieagent wordt toegelaten.
