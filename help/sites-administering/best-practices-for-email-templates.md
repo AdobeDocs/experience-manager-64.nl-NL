@@ -1,18 +1,14 @@
 ---
 title: Aanbevolen procedures voor e-mailsjablonen
-seo-title: Aanbevolen procedures voor e-mailsjablonen
-description: Vind beste praktijken bij het creëren van e-mailmalplaatjes in AEM.
-seo-description: Vind beste praktijken bij het creëren van e-mailmalplaatjes in AEM.
-uuid: 714090bd-a742-4004-a968-aebd8fd03e04
+description: Vind beste praktijken rond e-mailontwerp dat in een goed ontwikkeld malplaatje van de e-mailcampagne in Adobe Experience Manager resulteert.
 contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices, integration
-discoiquuid: 6c019157-cc37-4826-8d3a-dbee59ec09e0
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1054'
+source-wordcount: '1053'
 ht-degree: 0%
 
 ---
@@ -150,7 +146,7 @@ Er zijn momenteel [zeven componenten beschikbaar voor gebruik binnen campagnemal
 | Tekst&amp;personalisatie | /libs/mcm/campagne/componenten/personalisatie |
 | Textimage | /libs/mcm/campagne/onderdelen/textielafbeelding |
 | Koppeling | /libs/mcm/campagne/componenten/reference |
-| Scene7-afbeeldingssjabloon | /libs/mcm/campagne/s7image |
+| Dynamic Media Classic (voorheen Scene7) afbeeldingssjabloon | /libs/mcm/campagne/s7image |
 | Gerichte referentie | /libs/mcm/campagne/componenten/reference |
 
 >[!NOTE]
