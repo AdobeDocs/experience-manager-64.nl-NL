@@ -6,9 +6,9 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 82c1725e-a092-42e2-a43b-72f2af3a8e04
 translation-type: tm+mt
-source-git-commit: 6aec5927c00f70ce2c044ffd56cabbf68a81071a
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '1856'
+source-wordcount: '1858'
 ht-degree: 0%
 
 ---
@@ -33,7 +33,7 @@ Gezien deze factoren, vereist u een methodologie om een aanvaardbare nauwkeurige
 1. Bepaal de grootte en het aantal elementen dat in het systeem wordt geladen.
 1. Hiermee ontvangt u een representatieve steekproef van de elementen die in AEM moeten worden geüpload. Als u bijvoorbeeld PSD-, JPG-, AI- en PDF-bestanden in het systeem wilt laden, hebt u meerdere voorbeeldafbeeldingen van elke bestandsindeling nodig. Bovendien moeten deze monsters representatief zijn voor de verschillende bestandsgrootten en complexiteiten van afbeeldingen.
 1. Definieer de uitvoeringen die moeten worden gebruikt.
-1. Creeer de vertoningen in AEM gebruikend de toepassingen van ImageMagick of van de Creative Cloud van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Scene7 implementeren, kunt u de binaire IC gebruiken om de PTIFF-uitvoeringen te genereren die in AEM moeten worden opgeslagen.
+1. Creeer de vertoningen in AEM gebruikend de toepassingen van ImageMagick of van de Creative Cloud van Adobe. Naast de vertoningen die de gebruikers specificeren, creeer uit-van-de-doos vertoningen. Voor gebruikers die Dynamic Media Classic implementeren, kunt u het binaire bestand IC gebruiken om de PTIFF-uitvoeringen te genereren die in AEM moeten worden opgeslagen.
 1. Als u subassets wilt gebruiken, genereert u deze voor de juiste bestandstypen. Zie de onlinedocumentatie over het genereren van pagina&#39;s met subelementen op basis van InDesign-bestanden of PNG-/PDF-bestanden op basis van Illustrator-lagen.
 1. Vergelijk de grootte van de uitvoerafbeeldingen, uitvoeringen en subelementen met de oorspronkelijke afbeeldingen. Hiermee kunt u een verwachte groeifactor genereren wanneer het systeem wordt geladen. Als u bijvoorbeeld uitvoeringen en subelementen genereert met een gecombineerde grootte van 3 GB na het verwerken van 1 GB aan elementen, is de groeifactor van de uitvoering 3.
 1. Bepaal de maximumtijd gedurende welke elementversies in het systeem moeten worden onderhouden.
