@@ -1,18 +1,14 @@
 ---
 title: Best practices voor
-seo-title: Best practices voor
-description: Vind beste praktijken die door Adobe engineering en adviserende teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
-seo-description: Vind beste praktijken die door Adobe engineering en adviserende teams worden gecompileerd om beheerders te helpen in gebruik worden genomen.
-uuid: 862d4fcf-ca61-4228-9344-b95a49b59b32
+description: Leer over de beste praktijken van Adobe Experience Manager zoals gecompileerd door de ingenieur van Adobe en raadplegende teams om beheerders te helpen op de been worden gebracht en lopen.
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
-discoiquuid: 8f6468a0-7721-454f-9334-c449968b8fe7
 translation-type: tm+mt
-source-git-commit: 24ad9e522eeaf2653e80166946636b9fc78bc401
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '543'
+source-wordcount: '537'
 ht-degree: 2%
 
 ---
@@ -52,8 +48,8 @@ De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Med
    <td>Veel verwerkingsprofielen zijn mappen die zijn gebaseerd op video, metagegevens en afbeeldingsverwerking worden altijd toegepast op mappen. In dit document met aanbevolen procedures wordt beschreven hoe u de mappenhiërarchie definieert en instelt, aangezien de hiërarchie een grote invloed heeft op de manier waarop inhoud wordt verwerkt. </td> 
   </tr>
   <tr>
-   <td>Scene7 en AEM integreren</td> 
-   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Aanbevolen procedures voor de integratie van Scene7 met AEM</a></td> 
+   <td>Dynamic Media Classic en AEM integreren</td> 
+   <td><a href="/help/sites-administering/scene7.md#best-practices-for-integrating-scene-with-aem">Aanbevolen procedures voor de integratie van Dynamic Media Classic met AEM</a></td> 
    <td><p>Beschrijft wanneer om opiniepeilingimporter aan te zetten, hoe te om aandrijving uw integratie te testen, en wanneer te gebruiken inhoudsbrowser tegenover een directe upload aan Activa.</p> </td> 
   </tr>
   <tr>
@@ -62,8 +58,8 @@ De beste praktijken rond Middelen, met inbegrip van het vermogen van Dynamic Med
    <td>In het kader van de documentatie over <a href="/help/assets/managing-image-presets.md">Voorinstellingen voor afbeeldingen beheren</a> wordt in deze onderwerpen beschreven welke voorinstellingen voor afbeeldingen worden gebruikt en worden de beste werkwijzen getoond voor het selecteren van opties voor voorinstellingen voor afbeeldingen.</td> 
   </tr>
   <tr>
-   <td>Dynamic Media versus directe integratie met Scene7</td> 
-   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Scene7/AEM integratie versus Dynamic Media</a></td> 
+   <td>Dynamic Media versus directe integratie met Dynamic Media Classic</td> 
+   <td><a href="/help/sites-administering/scene7.md#aem-scene-integration-versus-dynamic-media">Dynamic Media Classic/AEM integratie versus Dynamic Media</a></td> 
    <td>Beschrijft wanneer het best is om de oplossing van Dynamic Media te gebruiken, wanneer om S7 met AEM te integreren, of wanneer om allebei te gebruiken.</td> 
   </tr>
  </tbody>
