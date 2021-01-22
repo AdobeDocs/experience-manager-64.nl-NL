@@ -8,9 +8,9 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 36a4a4e7-8bb2-4853-b335-cf9148be410c
 translation-type: tm+mt
-source-git-commit: 9b6c1efe1f6281892648c7b41820856d2e3fcac1
+source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
 workflow-type: tm+mt
-source-wordcount: '277'
+source-wordcount: '274'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!NOTE]
 >
->In deze documentatie worden de Dynamic Media-mogelijkheden beschreven, die rechtstreeks in AEM zijn geïntegreerd. Als u Dynamic Media Classic (voorheen Scene7 genoemd) gebruikt die in AEM is geïntegreerd, raadpleegt u [Dynamic Media Classic integration documentation](/help/sites-administering/scene7.md).
+>In deze documentatie worden de Dynamic Media-mogelijkheden beschreven, die rechtstreeks in AEM zijn geïntegreerd. Als u Dynamic Media Classic gebruikt die in AEM is geïntegreerd, raadpleegt u [documentatie over Klassieke integratie van Dynamic Media](/help/sites-administering/scene7.md).
 >
 >Zie [Scenario voor tweeërlei gebruik](/help/sites-administering/scene7.md#dual-use-scenario) voor momenten wanneer u AEM wilt gebruiken die met Dynamic Media Classic samen met Dynamic Media zijn geïntegreerd.
 
