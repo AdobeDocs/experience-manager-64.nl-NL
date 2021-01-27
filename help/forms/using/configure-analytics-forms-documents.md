@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6301e0ef-3faa-4e6f-932d-37b049577cec
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd7f971cf26f60acc121d194d5251e87e0403718
 workflow-type: tm+mt
-source-wordcount: '1542'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -118,7 +118,7 @@ Voer de volgende stappen uit om een rapportsuite te maken.
 Configuratie van Cloud Servicen is informatie over uw Adobe Analytics-account. Met de configuratie kan Adobe Experience Manager (AEM) verbinding maken met Adobe Analytics. Maak een aparte configuratie voor elke analytische account die u gebruikt.
 
 1. Meld u als beheerder aan bij de AEM auteur-instantie.
-1. Klik in de linkerbovenhoek op **Adobe Experience Manager** > **Gereedschappen** ![Gereedschappen](assets/tools.png) **Implementatie** > **Cloud Services**.
+1. Klik in de linkerbovenhoek op **Adobe Experience Manager** > **Gereedschappen** ![Gereedschappen](assets/tools.png) **Cloud Services** > **Oudere Cloud Services**.
 1. Zoek **Adobe Analytics**-pictogram. Klik **Configuraties tonen** en ga dan te werk om **[+]** te klikken om nieuwe configuratie toe te voegen.
 
    Als u een eerste gebruiker bent, klik **vorm nu**.
