@@ -7,10 +7,10 @@ user-guide-title: Hulplijn voor middelen
 breadcrumb-title: Hulplijn voor middelen
 user-guide-description: Digitale middelen maken, beheren, leveren en optimaliseren.
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 1c853b441845997fbb3086ca93d7020ed02d88c4
 workflow-type: tm+mt
-source-wordcount: '723'
-ht-degree: 31%
+source-wordcount: '731'
+ht-degree: 30%
 
 ---
 
@@ -167,7 +167,7 @@ ht-degree: 31%
    + [Richtlijnen voor training voor Smart Content Service](smart-tags-training-guidelines.md)
    + [Video-uitvoeringen](video-renditions.md)
 + 3D-elementen {#three-d}
-   + [Opmerkingen bij de 3D-release AEM](../release-notes/aem3d-release-notes.md)
+   + [Opmerkingen bij de 3D-release AEM](https://experienceleague.adobe.com/docs/experience-manager-64/assets/three-d/assets-3d.html)
    + [Werken met 3D-elementen](assets-3d.md)
    + [AEM 3D installeren en configureren](install-config-3d.md)
    + [Geavanceerde configuratie-instellingen](advanced-config-3d.md)
