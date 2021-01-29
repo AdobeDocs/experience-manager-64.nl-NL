@@ -8,9 +8,9 @@ user-guide-title: Adobe Experience Manager 6.4 Forms Guide
 breadcrumb-title: Forms Guide
 user-guide-description: Digitale formulieren maken, beheren, publiceren en bijwerken.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: e7603d481720b368c6976674205bb523ac0df3d0
 workflow-type: tm+mt
-source-wordcount: '3721'
+source-wordcount: '3730'
 ht-degree: 0%
 
 ---
@@ -63,18 +63,18 @@ ht-degree: 0%
       + [Interactieve communicatie installeren en configureren](using/installing-configuring-intreactive-communication-correspondence-management.md)
    + AEM Forms installeren op JEE {#jee-installation}
       + [Ondersteunde platforms voor AEM formulieren op JEE](using/aem-forms-jee-supported-platforms.md)
-      + [AEM Forms op JEE installeren en implementeren met JBoss-sleutel](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
-      + [Alleen documentbeveiligingsserver installeren en configureren](using/installing-and-configuring-the-document-security-server.md)
-      + [Installatie van één AEM Forms-server voorbereiden](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
-      + [AEM Forms installeren en implementeren op JEE voor JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
+      + [AEM Forms installeren en implementeren op JEE met JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_installTurnkey_64)
+      + [AEM Forms Document Security-server installeren en configureren](using/installing-and-configuring-the-document-security-server.md)
+      + [Installatie van AEM Forms (één server) voorbereiden](http://www.adobe.com/go/learn_aemforms_prepareInstallsingle_64)
+      + [Adobe Experience Manager Forms installeren en implementeren op JEE voor JBoss](http://www.adobe.com/go/learn_aemforms_installJBoss_64)
       + [AEM Forms installeren en implementeren op JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_installWebLogic_64)
-      + [AEM Forms installeren en implementeren op JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
+      + [Adobe Experience Manager Forms installeren en implementeren op JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_installWebSphere_64)
       + [AEM Forms Workbench installeren](http://help.adobe.com/en_US/AEMForms/6.1/InstallWorkbench/index.html)
       + [Designer installeren en configureren](using/installing-configuring-designer.md)
-      + [Installatie van AEM Forms-servercluster voorbereiden](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
-      + [AEM Forms op JEE configureren in JBoss-cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
-      + [AEM Forms configureren op JEE in WebLogic-cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
-      + [AEM Forms configureren op JEE in WebSphere-cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
+      + [Installatie van AEM Forms (servercluster) voorbereiden](http://www.adobe.com/go/learn_aemforms_prepareInstallcluster_64)
+      + [Adobe Experience Manager Forms configureren op JEE in JBoss-cluster](http://www.adobe.com/go/learn_aemforms_clusterJBoss_64)
+      + [Adobe Experience Manager Forms configureren op JEE op WebLogic-cluster](http://www.adobe.com/go/learn_aemforms_clusterWebLogic_64)
+      + [Adobe Experience Manager Forms configureren op JEE op WebSphere-cluster](http://www.adobe.com/go/learn_aemforms_clusterWebSphere_64)
    + AEM Forms {#configure-aem-forms} configureren
       + [Prestaties afstemmen van AEM Forms-server](using/performance-tuning-aem-forms.md)
       + [Cache voor aangepaste formulieren configureren](using/configure-adaptive-forms-cache.md)
@@ -92,16 +92,16 @@ ht-degree: 0%
       + [AEM Forms-elementen en -documenten migreren](using/migration-utility.md)
    + Upgrade uitvoeren van AEM Forms op JEE {#aem-forms-jee-upgrade}
       + [Upgrade van AEM Forms voorbereiden](http://www.adobe.com/go/learn_aemforms_prepareupgrade_64)
-      + [Controlelijst voor upgrades en planning](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
+      + [Checklist en planning voor Adobe Experience Manager Forms on JEE-upgrades](http://www.adobe.com/go/learn_aemforms_upgrade_checklist_64)
       + [Upgrade uitvoeren naar AEM 6.4-formulieren op JEE](using/upgrade-forms-jee.md)
-      + [Upgrade van een AEM Forms-release naar AEM 6.4 Forms op JEE voor JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
+      + [Upgrade uitvoeren naar Adobe Experience Manager Forms op JEE voor JBoss](http://www.adobe.com/go/learn_aemforms_upgradeJBoss_64)
       + [Upgrade van LiveCycle ES4 SP1 naar Adobe Experience Manager Forms op JEE voor JBoss](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-jboss-livecycle.pdf)
-      + [Upgrade van een AEM Forms-release naar AEM 6.4 Forms op JEE voor JBoss turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
-      + [Upgrade van LiveCycle ES4 SP1 naar AEM Forms op JEE voor JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
-      + [Upgrade van een AEM Forms-release naar AEM 6.4 Forms op JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
-      + [Upgrade van LiveCycle ES4 SP1 naar AEM Forms op JEE for WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
-      + [Een AEM Forms-versie upgraden naar AEM 6.4 Forms op JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
-      + [Upgrade van LiveCycle ES4 SP1 naar AEM Forms op JEE for WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
+      + [Upgrade naar AEM Forms op JEE voor JBoss Turnkey](http://www.adobe.com/go/learn_aemforms_upgradeTurnkey_64)
+      + [Upgrade van LiveCycle ES4 SP1 naar Adobe Experience Manager Forms op JEE voor JBoss Turnkey](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-turnkey-livecycle.pdf)
+      + [Upgrade uitvoeren naar Adobe Experience Manager Forms op JEE for WebLogic](http://www.adobe.com/go/learn_aemforms_upgradeWebLogic_64)
+      + [Upgrade van LiveCycle ES4 SP1 naar Adobe Experience Manager Forms op JEE for WebLogic](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-weblogic-livecycle.pdf)
+      + [Upgrade uitvoeren naar Adobe Experience Manager Forms op JEE for WebSphere](http://www.adobe.com/go/learn_aemforms_upgradeWebSphere_64)
+      + [Upgrade van LiveCycle ES4 SP1 naar Adobe Experience Manager Forms op JEE for WebSphere](https://helpx.adobe.com/content/dam/help/en/experience-manager/6-4/forms/pdf/upgrade-websphere-livecycle.pdf)
 + AEM Forms {#manage-administer-aem-forms} beheren
    + [AEM Forms over OSGi-groepen en -voorrechten](using/forms-groups-privileges-tasks.md)
    + [Nieuwe mappen maken om formulieren te categoriseren](using/creating-new-folders-categorize-forms.md)
@@ -368,11 +368,11 @@ ht-degree: 0%
    + [Een document namens een andere gebruiker Protect](using/protect-document-on-behalf-of-another-user.md)
 + Forms Designer {#use-forms-designer}
    + [Designer gebruiken](http://www.adobe.com/go/learn_aemforms_designer_64)
-   + [Snelle zelfstudies voor Designer](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
-   + [Designer-voorbeelden](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
-   + [Grondbeginselen van scripts in Designer](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)
-   + [Scriptreferentie in Designer](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
-   + [Referentiehandleiding van FormCalc in Designer](http://www.adobe.com/go/learn_aemforms_formCalc_64)
+   + [Zelfstudies om snel aan de slag te gaan met Designer ](http://www.adobe.com/go/learn_aemforms_designer_quick_start_64)
+   + [Voorbeelden in Designer ](http://www.adobe.com/go/learn_aemforms_designer_samples_64)
+   + [Grondbeginselen van scripts voor Designer ](http://www.adobe.com/go/learn_aemforms_scriptingBasics_64)
+   + [Scriptreferentie in Designer ](http://www.adobe.com/go/learn_aemforms_scriptingReference_64)
+   + [Referentiehandleiding van FormCalc voor Designer ](http://www.adobe.com/go/learn_aemforms_formCalc_64)
    + [Scripthandtekening gebruiken in HTML5-formulieren](using/scribble-signature.md)
 + AEM Forms {#customize-aem-forms} aanpassen
    + [Weergaveframework voor adaptieve en HTML5-formulieren](using/introduction-widgets.md)
