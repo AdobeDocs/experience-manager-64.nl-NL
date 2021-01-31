@@ -1,17 +1,17 @@
 ---
 title: '"Zelfstudie: Formuliergegevensmodel maken "'
 seo-title: Zelfstudie formuliergegevensmodel maken
-description: 'null'
-seo-description: 'null'
+description: Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. Leer hoe u MySQL-database configureert als gegevensbron, een formuliergegevensmodel maakt, configureert en test.
+seo-description: Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. Leer hoe u MySQL-database configureert als gegevensbron, een formuliergegevensmodel maakt, configureert en test.
 page-status-flag: de-activated
 uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '1444'
+source-wordcount: '1544'
 ht-degree: 0%
 
 ---
@@ -88,7 +88,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 ## Stap 2: Formuliergegevensmodel {#create-fdm} maken
 
-AEM Forms biedt een intuïtieve gebruikersinterface voor het maken van een formuliergegevensmodel[ van geconfigureerde gegevensbronnen. ](data-integration.md) U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor ons gebruiksgeval, zullen wij de gevormde gegevensbron gebruiken MySQL.
+AEM Forms biedt een intuïtieve gebruikersinterface voor het maken van een formuliergegevensmodel](data-integration.md) van geconfigureerde gegevensbronnen. [ U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor ons gebruiksgeval, zullen wij de gevormde gegevensbron gebruiken MySQL.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
