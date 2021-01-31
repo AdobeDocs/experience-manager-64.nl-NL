@@ -1,17 +1,17 @@
 ---
 title: Forms Portal | Gebruikersgegevens verwerken
 seo-title: Forms Portal | Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+description: Het AEM Forms-portaal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-elementen op de AEM Sites-pagina kunt weergeven. Leer hoe Forms Portal gegevens opslaat voor concepten en verzonden formulieren. Dig dieper op hoe te om tot ontwerp en voorgelegde vormengegevens voor het programma geopende en anonieme gebruikers in de gevormde gegevensopslag toegang te hebben, en indien nodig, het te schrappen.
+seo-description: Het AEM Forms-portaal biedt componenten waarmee u adaptieve formulieren, HTML5-formulieren en andere Forms-elementen op de AEM Sites-pagina kunt weergeven. Leer hoe Forms Portal gegevens opslaat voor concepten en verzonden formulieren. Dig dieper op hoe te om tot ontwerp en voorgelegde vormengegevens voor het programma geopende en anonieme gebruikers in de gevormde gegevensopslag toegang te hebben, en indien nodig, het te schrappen.
 uuid: 2ac2b2a9-b603-489a-86b8-a78b697f130d
 contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '857'
+source-wordcount: '975'
 ht-degree: 0%
 
 ---
