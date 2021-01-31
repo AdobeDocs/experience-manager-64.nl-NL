@@ -1,18 +1,18 @@
 ---
 title: Een Correspondentiebeheeroplossing configureren
 seo-title: Een Correspondentiebeheeroplossing configureren
-description: 'null'
-seo-description: 'null'
+description: Leer hoe u een instantie-URL van de auteur definieert voor het herstellen van de versie van de auteurinstantie en hoe u de URL van de instantie Publiceren definieert voor het openbare Instance Activation Manager.
+seo-description: Leer hoe u een instantie-URL van de auteur definieert voor het herstellen van de versie van de auteurinstantie en hoe u de URL van de instantie Publiceren definieert voor het openbare Instance Activation Manager.
 uuid: 76b25004-fe47-44d7-9bed-7c0fd963306b
 topic-tags: correspondence-management
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 186ca75c-638b-4057-826e-cd5d56aa0397
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 1%
+source-wordcount: '326'
+ht-degree: 0%
 
 ---
 
