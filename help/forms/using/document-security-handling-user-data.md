@@ -1,16 +1,16 @@
 ---
 title: Documentbeveiliging | Gebruikersgegevens verwerken
 seo-title: Documentbeveiliging | Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+description: Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. Leer hoe de documentveiligheid gegevens in gegevensbestandlijsten organiseert, toegang en de veiligheidsgegevens van het uitvoerdocument voor gebruikers in de gegevensbestanden, en indien vereist, schrapt permanent het.
+seo-description: Met de beveiliging van AEM Forms-documenten kunt u vooraf gedefinieerde beveiligingsinstellingen maken, opslaan en toepassen op uw documenten. Hiermee zorgt u ervoor dat alleen geautoriseerde gebruikers de documenten kunnen gebruiken. Leer hoe de documentveiligheid gegevens in gegevensbestandlijsten organiseert, toegang en de veiligheidsgegevens van het uitvoerdocument voor gebruikers in de gegevensbestanden, en indien vereist, schrapt permanent het.
 uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '1039'
 ht-degree: 0%
 
 ---
