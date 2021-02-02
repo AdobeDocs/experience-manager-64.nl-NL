@@ -10,9 +10,9 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 translation-type: tm+mt
-source-git-commit: 4b56b05117e52f38a6f7da0ab0d3b314769f2965
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5893'
+source-wordcount: '5889'
 ht-degree: 0%
 
 ---
@@ -200,7 +200,7 @@ Verschillende logbestanden worden opgeslagen op de bestandsserver waarop u AEM h
 
       Foutberichten (van verschillende ernst) worden hier geregistreerd.
 
-   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
+   * [ `ImageServer-<PortId>-yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-image-server-log.html)
 
       Dit logboek wordt alleen gebruikt als dynamische media is ingeschakeld. Het verstrekt statistieken en analytische informatie die voor het analyseren van gedrag van het interne proces ImageServer wordt gebruikt.
 
@@ -208,7 +208,7 @@ Verschillende logbestanden worden opgeslagen op de bestandsserver waarop u AEM h
 
       Elk toegangsverzoek wordt hier geregistreerd samen met de reactie.
 
-   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
+   * [ `s7access-<yyyy>-<mm>-<dd>.log`](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/config-admin/server-logging/c-access-log.html)
 
       Dit logboek wordt alleen gebruikt als dynamische media is ingeschakeld. Het s7access logboek registreert elk verzoek dat aan Dynamic Media door `/is/image` en `/is/content` wordt gedaan.
 
