@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2736'
 ht-degree: 0%
 
 ---
@@ -189,7 +189,7 @@ Selecteer de uitvoerindeling van de afbeelding, bijvoorbeeld jpeg. Afhankelijk v
 Selecteer hoe u de afbeelding wilt verscherpen. Verscherpen wordt gedetailleerd uitgelegd in [Voorinstellingen voor afbeeldingen met de aanbevolen werkwijzen](/help/assets/managing-image-presets.md#image-preset-options) en [Beste werkwijzen verscherpen](/help/assets/assets/sharpening_images.pdf).
 
 * **[!UICONTROL URL Modifiers]**
-U kunt afbeeldingseffecten wijzigen door aanvullende opdrachten voor klassieke Dynamic Media-afbeeldingen op te geven. Deze worden beschreven in [Voorinstellingen voor afbeeldingen](/help/assets/managing-image-presets.md) en de [Command-referentie](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
+U kunt afbeeldingseffecten wijzigen door aanvullende opdrachten voor klassieke Dynamic Media-afbeeldingen op te geven. Deze worden beschreven in [Voorinstellingen voor afbeeldingen](/help/assets/managing-image-presets.md) en de [Command-referentie](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html).
 
 * **[!UICONTROL Breakpoints]**
 Als uw website reageert, wilt u de onderbrekingspunten aanpassen. Onderbrekingspunten moeten worden gescheiden door komma&#39;s ( , ).
