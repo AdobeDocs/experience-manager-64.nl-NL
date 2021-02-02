@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '5275'
+source-wordcount: '5273'
 ht-degree: 0%
 
 ---
@@ -567,7 +567,7 @@ Specifiek, vormt u het erkende dossierformaat door MIME type in het OSGi (Open h
 
    Bijvoorbeeld, `psprocess="rasterize"&psresolution=120` .
 
-   Zie [Adobe Classic Image Production System API](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-production-api/c-overview.html) voor extra uploadtaakparameters die u kunt gebruiken.
+   Zie [Adobe Classic Image Production System API](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-production-api/c-overview.html) voor extra uploadtaakparameters die u kunt gebruiken.
 
    >[!NOTE]
    >
