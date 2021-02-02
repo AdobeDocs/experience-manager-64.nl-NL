@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d1f45751-1761-4d6b-b17d-110b2f1117ea
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '2712'
+source-wordcount: '2708'
 ht-degree: 4%
 
 ---
@@ -172,7 +172,7 @@ Voer een waarde in pixels in als u wilt dat de afbeelding een vaste grootte heef
 
 Met de Dynamic Media-component kunt u dynamische video toevoegen aan uw webpagina&#39;s. Wanneer u de component bewerkt, kunt u een vooraf gedefinieerde videoviewer gebruiken om de video op de pagina af te spelen.
 
-![chlimage_1-541](assets/chlimage_1-540.png)
+![chlimage_1-540](assets/chlimage_1-540.png)
 
 U moet de volgende Dynamic Media-instellingen bewerken door in de component op **[!UICONTROL Edit]** te klikken.
 
@@ -188,8 +188,8 @@ Viewer-modifiers hebben de vorm van name=value pair met een &amp;-scheidingsteke
 
    Met viewermodifiers kunt u bijvoorbeeld het volgende doen:
 
-   * Een bijschriftbestand koppelen aan een video [bijschrift.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
-   * Koppel een navigatiebestand aan een video [navigatie.](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
+   * Een bijschriftbestand koppelen aan een video [bijschrift.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-caption.html)
+   * Koppel een navigatiebestand aan een video [navigatie.](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/video/command-reference-url-video/r-html5-video-viewer-url-navigation.html)
 
 U kunt de volgende [!UICONTROL Advanced Settings] uitgeven door **[!UICONTROL Edit]** in de component te klikken.
 
@@ -245,7 +245,7 @@ De component Interactieve media is slim. Afhankelijk van het feit of u een afbee
 > 
 >Om dit probleem te voorkomen, moet u ervoor zorgen dat AEM Sites-gebruikers de benodigde machtigingen hebben om toegang te krijgen tot de middelen.
 
-![chlimage_1-541](assets/chlimage_1-541.png)
+![chlimage_1-540](assets/chlimage_1-541.png)
 
 U kunt de volgende **[!UICONTROL General]** montages uitgeven door **[!UICONTROL Edit]** in de component te klikken.
 
