@@ -10,9 +10,9 @@ topic-tags: dynamic-media
 content-type: reference
 discoiquuid: d630499d-740d-4979-8a34-9e3fcc3b5a23
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '4198'
+source-wordcount: '4194'
 ht-degree: 1%
 
 ---
@@ -374,9 +374,9 @@ Integratie is zo eenvoudig als het verwijderen van de tag `IMG` en het vervangen
 
 Als u een uitsnijding voor een responsieve omgeving wilt toepassen op een verwisselbare interactieve afbeelding, kunt u het configuratiekenmerk Interactive Image `ZoomView.iscommand` op het pad opnemen, waarbij `ZoomView` de component is die moet worden aangeroepen en `iscommand` de uitsnijdopdracht is die u toepast.
 
-Zie [ZoomView.iscommand](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) configuratiekenmerk.
+Zie [ZoomView.iscommand](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-for-aem-assets-only/interactive-images/command-reference-configuration-attributes-interactive-images/r-html5-aem-interactive-image-config-attrib-zoomview-iscommand.html) configuratiekenmerk.
 
-Zie [opdracht Uitsnijden](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) afbeelding weergeven.
+Zie [opdracht Uitsnijden](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-crop.html) afbeelding weergeven.
 
 U bent nu klaar om de interactieve afbeelding te integreren met een bestaande QuickView op uw website.
 
