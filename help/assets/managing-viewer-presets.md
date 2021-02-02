@@ -11,9 +11,9 @@ content-type: reference
 discoiquuid: e78bb08a-a923-4399-b3f7-13aa4b7994d5
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/viewer-presets
 translation-type: tm+mt
-source-git-commit: 43a6e866a99814e93290e00f3f15c0e456821c89
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '4106'
+source-wordcount: '4092'
 ht-degree: 9%
 
 ---
@@ -56,7 +56,7 @@ U kunt voorinstellingen van de viewer in AEM toevoegen, bewerken, verwijderen, p
 
 Verschillende webpagina&#39;s hebben verschillende behoeften. Soms wilt u bijvoorbeeld een webpagina die een koppeling bevat waarmee de HTML5 Viewer wordt geopend in een apart browservenster. In andere gevallen kan het nodig zijn de HTML5 Viewer rechtstreeks in te sluiten op de hostpagina. In het laatste geval kan de webpagina een statische indeling hebben. Of het kan *responsief* zijn en anders worden weergegeven op verschillende apparaten of voor verschillende venstergrootten in de browser. Om aan deze behoeften tegemoet te komen, ondersteunen alle vooraf gedefinieerde, kant-en-klare HTML5 Viewers die bij Dynamic Media worden geleverd zowel statische webpagina&#39;s als responsieve ontworpen webpagina&#39;s.
 
-Zie [Responsieve afbeeldingsbibliotheek](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in de *Help van de API voor beeldbewerking* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
+Zie [Responsieve afbeeldingsbibliotheek](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/responsive-static-image-library/c-about-responsive-static-image-library.html) in de *Help van de API voor beeldbewerking* voor meer informatie over het insluiten van responsieve viewers op uw webpagina&#39;s.
 
 >[!NOTE]
 >
@@ -106,7 +106,7 @@ Zie ook [Live demos](https://landing.adobe.com/en/na/dynamic-media/ctir-2755/liv
 
 Voor informatie over ondersteunde webbrowsers en besturingssysteemversies voor Viewers kunt u de Opmerkingen bij de release Viewers bekijken.
 
-Zie *Opmerkingen bij de release van viewers* in de inhoudsopgave van de [Referentiehandleiding voor viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+Zie *Opmerkingen bij de release van viewers* in de inhoudsopgave van de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
 >[!NOTE]
 >
@@ -211,15 +211,15 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carous
 
       Met de visuele editor kunt u zien welk effect een bepaalde eigenschap heeft op een stijl. Stel een eigenschap in of pas deze aan om direct te zien welk effect het heeft op de viewer met behulp van het voorbeeld links van de editor.
 
-      De CSS het stileren eigenschappen voor elk type van vooraf ingesteld kijker worden beschreven in om het even welk &quot;Aanpassen *&lt;viewer_name>* Viewer&quot;Help onderwerp in [de Gids van de Verwijzing van Kijkers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html).
+      De CSS het stileren eigenschappen voor elk type van vooraf ingesteld kijker worden beschreven in om het even welk &quot;Aanpassen *&lt;viewer_name>* Viewer&quot;Help onderwerp in [de Gids van de Verwijzing van Kijkers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html).
 
-      Als u bijvoorbeeld een viewervoorinstelling van het type `Mixed_Media` maakt, raadpleegt u [Gemengde Media Viewer aanpassen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) voor een lijst en beschrijving van elke eigenschap.
+      Als u bijvoorbeeld een viewervoorinstelling van het type `Mixed_Media` maakt, raadpleegt u [Gemengde Media Viewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/mixed-media/customing-mixed-media/c-html5-mixedmedia-viewer-customizingviewer.html) voor een lijst en beschrijving van elke eigenschap.
 
    * Als u stijlinstellingen hebt gedefinieerd in een afzonderlijk CSS-bestand, kunt u het CSS-bestand uploaden naar AEM Assets. Tik **[!UICONTROL Import CSS]** onder het keuzemenu **[!UICONTROL Selected Type]** (u moet mogelijk omhoog schuiven in de visuele editor om dit te zien) om het geüploade CSS-bestand te zoeken en dit te koppelen aan de voorinstelling van de viewer.
 
       Wanneer u een CSS-bestand importeert, controleert de visuele editor of de CSS de juiste viewermarkeringen gebruikt. Als u bijvoorbeeld een zoomviewer maakt, moeten alle CSS-regels die u importeert, worden gedefinieerd met de viewerklassenaam `.s7mixedmediaviewer` die is gedefinieerd voor een bovenliggend viewerelement.
 
-      U kunt willekeurige, handgemaakte CSS importeren zolang deze de CSS-markeringen voor een bepaalde viewer correct definieert. (CSS-markeertekens worden beschreven in het Help-onderwerp ** Viewer&quot; in de [Referentiehandleiding voor viewers](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/home.html). Zie [Zoomviewer aanpassen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html) als u bijvoorbeeld wilt lezen over CSS-markeringen voor de Zoomviewer.) Het is echter mogelijk dat de visuele editor bepaalde CSS-waarden niet begrijpt. In dergelijke gevallen probeert de visuele editor de fouten te negeren zodat de CSS nog steeds werkt.
+      U kunt willekeurige, handgemaakte CSS importeren zolang deze de CSS-markeringen voor een bepaalde viewer correct definieert. (CSS-markeertekens worden beschreven in het Help-onderwerp ** Viewer&quot; in de [Referentiehandleiding voor viewers](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/home.html). Zie [Zoomviewer aanpassen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/library/viewers-aem-assets-dmc/zoom/customizing-zoom/c-html5-20-zoom-viewer-customizingviewer.html) als u bijvoorbeeld wilt lezen over CSS-markeringen voor de Zoomviewer.) Het is echter mogelijk dat de visuele editor bepaalde CSS-waarden niet begrijpt. In dergelijke gevallen probeert de visuele editor de fouten te negeren zodat de CSS nog steeds werkt.
    >[!NOTE]
    >
    >Tik **[!UICONTROL Show/Hide CSS]** onder het keuzemenu **[!UICONTROL Selected Type]** als u de CSS liever rechtstreeks in de onbewerkte vorm wilt bewerken (u moet mogelijk omhoog schuiven in de visuele editor om de CSS weer te geven).
@@ -236,7 +236,7 @@ Zie [Speciale overwegingen voor het maken van een voorinstelling voor een Carous
 
    Veel componenten in de visuele editor hebben een gedetailleerde beschrijving. Deze beschrijvingen worden weergegeven in blauwe vakken wanneer u een component uitbreidt om de bijbehorende parameters weer te geven.
 
-   Sommige viewertypen hebben componenten waarmee u opdrachten voor het leveren van afbeeldingen kunt opgeven in een tekstveld **IS Command**. Zie de [Referentie van de API voor het leveren van afbeeldingen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html) voor een lijst met opdrachten die u kunt gebruiken.
+   Sommige viewertypen hebben componenten waarmee u opdrachten voor het leveren van afbeeldingen kunt opgeven in een tekstveld **IS Command**. Zie de [Referentie van de API voor het leveren van afbeeldingen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/c-is-home.html) voor een lijst met opdrachten die u kunt gebruiken.
 
    >[!NOTE]
    >
