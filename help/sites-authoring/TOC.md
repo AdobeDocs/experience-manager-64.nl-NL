@@ -7,10 +7,10 @@ user-guide-title: AEM 6.4 Handboek voor ontwerpen
 breadcrumb-title: Ontwerphandleiding
 user-guide-description: Leer de belangrijkste concepten voor het maken van inhoud en creatie in AEM.
 translation-type: tm+mt
-source-git-commit: b0457d967a8d366caef45e2917ae73e7550ba69e
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '278'
-ht-degree: 40%
+source-wordcount: '292'
+ht-degree: 38%
 
 ---
 
@@ -72,9 +72,9 @@ ht-degree: 40%
    + [Werken met workflows](workflows.md)
    + [Workflows toepassen op pagina&#39;s](workflows-applying.md)
    + [Deelnemen aan workflows](workflows-participating.md)
-   + [Werken met projectworkflows](projects-with-workflows.md)
+   + [Werken met projectworkflows](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/projects/projects-with-workflows.html)
 + Paginaprestaties {#page-performance}
-   + [Inhoudsinzicht](content-insights.md)
+   + [Inhoudsinzicht](https://experienceleague.adobe.com/docs/experience-manager-64/authoring/siteandpage/content-insights.html)
    + [Paginaprestaties analyseren](ci-analyze.md)
    + [Gegevens van paginaanalyse bekijken](pa-using.md)
    + [Search&amp;Promote toevoegen aan uw pagina](search-and-promote.md)
