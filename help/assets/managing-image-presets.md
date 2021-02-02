@@ -7,9 +7,9 @@ topic-tags: dynamic-media
 content-type: reference
 legacypath: /content/docs/en/aem/6-0/administer/integration/dynamic-media/image-presets
 translation-type: tm+mt
-source-git-commit: 9e6a7f0ec6ed921df419e626a155d0895dbaefde
+source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
 workflow-type: tm+mt
-source-wordcount: '3646'
+source-wordcount: '3634'
 ht-degree: 7%
 
 ---
@@ -412,7 +412,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
   </tr>
   <tr>
    <td><strong>Afbeelding wijzigen</strong></td>
-   <td><p>Naast de algemene afbeeldingsinstellingen die beschikbaar zijn in de gebruikersinterface, ondersteunt Dynamic Media talrijke geavanceerde afbeeldingswijzigingen die u kunt opgeven in het veld <strong>Afbeeldingsmodifiers</strong>. Deze parameters worden bepaald in <a href="https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: De volgende functionaliteit in de API wordt niet ondersteund:</p>
+   <td><p>Naast de algemene afbeeldingsinstellingen die beschikbaar zijn in de gebruikersinterface, ondersteunt Dynamic Media talrijke geavanceerde afbeeldingswijzigingen die u kunt opgeven in het veld <strong>Afbeeldingsmodifiers</strong>. Deze parameters worden bepaald in <a href="https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/c-command-reference.html">de bevelverwijzing van het Protocol van de Server van het Beeld </a>.</p> <p>Belangrijk: De volgende functionaliteit in de API wordt niet ondersteund:</p>
     <ul>
      <li>Standaardopdrachten voor sjablonen en tekstrendering: <code>text= textAngle= textAttr= textFlowPath= textFlowXPath= textPath=</code> en <code>textPs=</code></li>
      <li>Localisatie-opdrachten: <code>locale=</code> en <code>req=xlate</code></li>
@@ -429,7 +429,7 @@ Wanneer u voorinstellingen voor afbeeldingen maakt of bewerkt, worden de opties 
 
 ## Opties voor voorinstellingen afbeelding definiëren met afbeeldingsopties {#defining-image-preset-options-with-image-modifiers}
 
-Naast de opties die beschikbaar zijn op de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]**, kunt u afbeeldingsaanpassingen definiëren om u meer opties te geven wanneer u voorinstellingen voor afbeeldingen definieert. Voor het renderen van afbeeldingen wordt gebruikgemaakt van de Dynamic Media-API voor het renderen van afbeeldingen. De API wordt in detail bepaald in [de Verwijzing van het Protocol van HTTP](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
+Naast de opties die beschikbaar zijn op de tabbladen **[!UICONTROL Basic]** en **[!UICONTROL Advanced]**, kunt u afbeeldingsaanpassingen definiëren om u meer opties te geven wanneer u voorinstellingen voor afbeeldingen definieert. Voor het renderen van afbeeldingen wordt gebruikgemaakt van de Dynamic Media-API voor het renderen van afbeeldingen. De API wordt in detail bepaald in [de Verwijzing van het Protocol van HTTP](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/c-http-protocol-reference.html).
 
 Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoetsen voor afbeeldingen.
 
@@ -437,7 +437,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 >
 >Sommige afbeeldingsmodifiers [kunnen niet worden gebruikt in AEM](#advanced-tab-options).
 
-* [op_invert](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - Hiermee keert u elke kleurcomponent om voor een negatief afbeeldingseffect.
+* [op_invert](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-invert.html)  - Hiermee keert u elke kleurcomponent om voor een negatief afbeeldingseffect.
 
    ```xml
    &op_invert=1
@@ -445,7 +445,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![chlimage_1-499](assets/chlimage_1-499.png)
 
-* [op_vervagen](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html)  - Hiermee past u een vervagend filter toe op de afbeelding.
+* [op_vervagen](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-blur.html)  - Hiermee past u een vervagend filter toe op de afbeelding.
 
    ```xml
    &op_blur=25
@@ -461,7 +461,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![chlimage_1-501](assets/chlimage_1-501.png)
 
-* [op_brightness](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  - Hiermee wordt de helderheid verminderd of vermeerderd.
+* [op_brightness](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-op-brightness.html)  - Hiermee wordt de helderheid verminderd of vermeerderd.
 
    ```xml
    &op_brightness=75
@@ -469,7 +469,7 @@ Hieronder volgen enkele basisvoorbeelden van wat u kunt doen met wijzigingstoets
 
    ![chlimage_1-502](assets/chlimage_1-502.png)
 
-* [opac](https://docs.adobe.com/content/help/en/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - Hiermee past u de dekking van de afbeelding aan. Hiermee kunt u de dekking van de voorgrond verlagen.
+* [opac](https://experienceleague.adobe.com/docs/dynamic-media-developer-resources/image-serving-api/image-serving-api/http-protocol-reference/command-reference/r-opac.html)  - Hiermee past u de dekking van de afbeelding aan. Hiermee kunt u de dekking van de voorgrond verlagen.
 
    ```xml
    opac=50
