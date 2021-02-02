@@ -6,9 +6,9 @@ user-guide-title: AEM 6.4 Gebruikersgids voor gemeenschappen
 breadcrumb-title: Community Guide
 user-guide-description: Maak online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 translation-type: tm+mt
-source-git-commit: 5542ec45e64595a8e7159d925fdcbfff468ae7ec
+source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
 workflow-type: tm+mt
-source-wordcount: '486'
+source-wordcount: '506'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ ht-degree: 0%
    + [Communitysites](administer-landing.md)
    + [AEM Communities - Overzicht](overview.md)
    + [Nieuwe functies in AEM 6.4-gemeenschappen](whats-new-aem-communities.md)
-   + [Opmerkingen bij de release van AEM Communities](/help/release-notes/communities-release-notes.md)
+   + [Opmerkingen bij de release van AEM Communities](https://experienceleague.adobe.com/docs/experience-manager-64/release-notes/communities-release-notes.html)
    + [Aan de slag met AEM Communities](getting-started.md)
    + [Aan de slag met AEM Communities for Enablement](getting-started-enablement.md)
    + [Eerste instelling](setup.md)
@@ -39,7 +39,7 @@ ht-degree: 0%
    + [Dispatcher configureren voor Gemeenschappen](dispatcher.md)
 + Beheren {#administer}
    + [Gebruikersbeheer en UGC-beheerservice in AEM Communities](user-ugc-management-service.md)
-   + [Communitysites](administer-landing.md)
+   + [Communitysites](https://experienceleague.adobe.com/docs/experience-manager-64/communities/introduction/administer-landing.html)
    + [Communityconsoles](consoles.md)
    + [Analytische configuratie voor functies van Gemeenschappen](analytics.md)
    + [Functies van Enablement configureren](enablement.md)
@@ -166,4 +166,5 @@ ht-degree: 0%
    + [Activiteitendensen](trends.md)
    + [Sociale tagcloud gebruiken](tagcloud.md)
    + [Stemmen gebruiken](voting.md)
-   + [Een voorbeeldpagina maken](create-sample-page.md)
+   + [Een voorbeeldpagina maken](https://experienceleague.adobe.com/docs/experience-manager-64/communities/develop/create-sample-page.html)
+
