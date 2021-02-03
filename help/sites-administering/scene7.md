@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '5273'
+source-wordcount: '5259'
 ht-degree: 0%
 
 ---
@@ -422,7 +422,7 @@ Als u echter niet wilt dat elementen die aan Dynamic Media Classic worden doorge
 Voordat u elementen naar Dynamic Media Classic kunt verzenden zonder ze te publiceren, moet u het volgende instellen:
 
 1. [Gebruik de Admin Console om een draagtas te maken.](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/support-for-experience-cloud.ug.html) In het geval van ondersteuning, verzoek u om beveiligde voorvertoning voor uw Dynamic Media Classic-account in te schakelen.
-1. Volg de aanwijzingen op [Beveiligde voorvertoning voor uw Dynamic Media Classic-account instellen.](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html)
+1. Volg de aanwijzingen op [Beveiligde voorvertoning voor uw Dynamic Media Classic-account instellen.](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish)
 
 Dit zijn dezelfde stappen die u zou volgen om veilige testinstellingen te maken in Dynamic Media Classic.
 
@@ -452,7 +452,7 @@ De status van elementen die naar Dynamic Media Classic worden geduwd, instellen 
 1. Tik op het AEM en navigeer naar **[!UICONTROL Deployment > Cloud Services]**, tik **[!UICONTROL Dynamic Media Classic]** en selecteer de configuratie in Dynamic Media Classic.
 1. Tik op het tabblad **[!UICONTROL Advanced]**. Selecteer **[!UICONTROL Upon AEM Publish Activation]** in het vervolgkeuzemenu **[!UICONTROL Enable Secure View]** om elementen naar Dynamic Media Classic te verzenden zonder te publiceren. (Deze waarde wordt standaard ingesteld op **[!UICONTROL Immediately]**, waarbij Klassieke Dynamic Media-elementen direct worden gepubliceerd.)
 
-   Zie [Klassieke documentatie van Dynamic Media](https://help.adobe.com/en_US/scene7/using/WSd968ca97bf00cf72-5eeee3a113268dc80f5-8000.html) voor meer informatie over testmiddelen alvorens hen openbaar te maken.
+   Zie [Klassieke documentatie van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/testing-assets-making-them-public.html#upload-publish) voor meer informatie over testmiddelen alvorens hen openbaar te maken.
 
    ![chlimage_1-302](assets/chlimage_1-302.png)
 
