@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: managing-assets
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1565'
+source-wordcount: '1568'
 ht-degree: 0%
 
 ---
@@ -21,7 +21,7 @@ Middelen bieden gecentraliseerd beheer van video-elementen waarmee u video&#39;s
 Dynamic Media Classic video integration breidt het bereik van geoptimaliseerde video uit naar alle schermen (automatische apparaat- en bandbreedtedetectie).
 
 * De component **[!UICONTROL Scene7 Video]** voert automatisch apparaat- en bandbreedtedetectie uit om de juiste indeling en video van de juiste kwaliteit af te spelen op desktopcomputers, tablets en mobiele apparaten.
-* Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten. <!-- See [Scene7 documentation about adaptive video sets for more information](https://help.adobe.com/en_US/scene7/using/WS53492AE1-6029-45d8-BF80-F4B5CF33EB08.html). -->
+* Elementen - U kunt adaptieve videosets opnemen in plaats van alleen afzonderlijke video-elementen. Een adaptieve videoset is een container voor alle video-uitvoeringen die nodig zijn om video naadloos af te spelen op meerdere schermen. Een adaptieve videoreeks groepeert versies van de zelfde video die bij verschillende beetjetarieven en formaten zoals 400 kbps, 800 kbps, en 1000 kbps worden gecodeerd. U gebruikt een adaptieve videoset, samen met de S7-videocomponent, voor adaptieve videostreaming op meerdere schermen, zoals desktops, iOS, Android, Blackberry en mobiele Windows-apparaten. Zie [Klassieke documentatie van Dynamic Media over adaptieve videoreeksen voor meer informatie](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/video-profiles.html#dynamicmedia).
 
 ## Info over FFMPEG en Dynamic Media Classic {#about-ffmpeg-and-scene}
 
@@ -62,7 +62,7 @@ Als u een workflow of versie voor uw middelen nodig hebt, moet u deze eerst uplo
 
 Als u geen workflow of versie voor uw middelen nodig hebt, moet u uw middelen uploaden naar Scene7. Hieronder vindt u de aanbevolen workflow:
 
-1. In Dynamic Media Classic stelt [een geplande FTP-upload en -codering in naar Scene7 (systeem geautomatiseerd)](https://help.adobe.com/en_US/scene7/using/WS70B173EC-4CAD-4b4c-BF9C-43A11F3A5950.html).
+1. In Dynamic Media Classic stelt [een geplande FTP-upload en -codering in naar Scene7 (systeem geautomatiseerd)](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/upload-publish/uploading-files.html#preparing-your-assets-and-folders-for-uploading).
 1. In AEM hebt u toegang tot video-elementen in WCM op het tabblad **[!UICONTROL Scene7]** van de Inhoudszoeker.
 1. Auteur met de **[!UICONTROL Scene7 Video]** component.
 
@@ -83,7 +83,7 @@ Universele voorinstellingen configureren:
 
    >[!NOTE]
    >
-   >Raadpleeg de [Klassieke documentatie van Dynamic Media](https://help.adobe.com/en_US/scene7/using/WSE86ACF2B-BD50-4c48-A1D7-9CD4405B62D0.html) voor meer informatie over wat de videovoorinstellingen betekenen.
+   >Raadpleeg de [Klassieke documentatie van Dynamic Media](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/setup/application-setup.html#video-presets-for-encoding-video-files) voor meer informatie over wat de videovoorinstellingen betekenen.
    >
    >Adobe raadt u aan beide adaptieve videosets te selecteren wanneer u de universele voorinstellingen configureert of de optie **[!UICONTROL Adaptive Video Encoding]** te selecteren.
 
