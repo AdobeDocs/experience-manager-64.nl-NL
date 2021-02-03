@@ -1,18 +1,14 @@
 ---
 title: Opmerkingen bij de 3D-release AEM
-seo-title: Opmerkingen bij de 3D-release AEM
 description: Release-aantekeningen die specifiek zijn voor 3D-inhoud in Adobe Experience Manager Assets.
-seo-description: Release-aantekeningen die specifiek zijn voor 3D-inhoud in Adobe Experience Manager Assets.
-uuid: 6675951f-86f0-4ec5-97e4-d247f6faf913
 contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes, 3D
 content-type: reference
-discoiquuid: 9789d031-fb7e-415a-a9c3-8b8fde978238
 translation-type: tm+mt
-source-git-commit: 9710c9931b4f17073c712f5869a1843c1d99ee8e
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1983'
+source-wordcount: '1966'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Het AEM 3D-functiepakket in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>Het AEM 3D-functiepakket in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) of [AEM 6.5.3 of hoger.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 AEM-6.4-DynamicMedia-3D versie 3.1.0 (10 oktober 2018)
 
