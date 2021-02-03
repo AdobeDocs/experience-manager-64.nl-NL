@@ -10,9 +10,9 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 5898d084-4b45-41bc-ad2e-2fcc65b0392c
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1584'
+source-wordcount: '1582'
 ht-degree: 0%
 
 ---
@@ -22,7 +22,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html)
+>AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) of [AEM 6.5.3 of hoger.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic)
 
 De installatie en configuratie van AEM 3D (versie 3.0) omvat het volgende:
 
@@ -107,7 +107,7 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 **De workflow** voor het opnemen van 3D-elementen configureren:
 
 1. Klik AEM op het AEM logo om de globale navigatieconsole te openen, klik vervolgens op het pictogram **[!UICONTROL Tools]** en navigeer naar **[!UICONTROL Workflow > Models]**.
-1. Houd de muisaanwijzer boven de **[!UICONTROL Workflow Models]**-workflow op de pagina &lt;a0/> en selecteer het vinkje wanneer het vinkje wordt weergegeven.**[!UICONTROL DAM Update Asset]**
+1. Houd de muisaanwijzer boven de **[!UICONTROL Workflow Models]**-workflow op de pagina **[!UICONTROL DAM Update Asset]** en selecteer het vinkje wanneer het vinkje wordt weergegeven.
 
 1. Klik op **[!UICONTROL Edit]** op de werkbalk.
 1. Klik op het **[!UICONTROL DAM Update Asset]**-scherm in het zwevende AEM op het pictogram **[!UICONTROL Plus]** rechts van Workflow om de lijst uit te vouwen. Selecteer **[!UICONTROL Process Step]** in de lijst.
@@ -174,7 +174,7 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
    Klik in de rechterbovenhoek van de pagina logo-sphere.fbx op het pictogram Werkgebiedspotlight om het vervolgkeuzemenu uit te vouwen en selecteer `stage-spotlights.fbx`.
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Stage Spotlight]** de optie `stage-helipad.fbx`.
 
