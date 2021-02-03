@@ -1,18 +1,14 @@
 ---
 title: 3D-elementen weergeven
-seo-title: 3D-elementen weergeven
 description: Meer informatie over de interactieve 3D-viewer die beschikbaar is op de pagina met elementdetails in AEM en over hoe u deze kunt gebruiken om 3D-elementen weer te geven.
-seo-description: Meer informatie over de interactieve 3D-viewer die beschikbaar is op de pagina met elementdetails in AEM en over hoe u deze kunt gebruiken om 3D-elementen weer te geven.
-uuid: 7d8133ac-3110-4979-8e19-e65090e791be
 contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
-discoiquuid: 65040923-a8a8-4e27-82c0-67a04348e238
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '1745'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) om 3D-elementen weer te geven.
+>AEM 3D in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) of [AEM 6.5.3 of hoger.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) om 3D-elementen weer te geven.
 
 In dit document wordt beschreven hoe u 3D-elementen kunt weergeven in de elementdetails en hoe u elementen in de 3D-component kunt bekijken in sites.
 
