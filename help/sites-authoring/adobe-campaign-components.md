@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '2779'
+source-wordcount: '2786'
 ht-degree: 0%
 
 ---
@@ -40,7 +40,7 @@ Een beschrijving van deze componenten vindt u in de volgende sectie.
 
 De componenten zijn als volgt:
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### Kop (campagne) {#heading-campaign}
 
@@ -181,13 +181,13 @@ In het volgende voorbeeld ziet u een component Link (Campagne) die wordt weergeg
 
 ### Scene7-afbeeldingssjabloon (campagne) {#scene-image-template-campaign}
 
-[Scene7 Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Templatesare layered zijn gelaagde afbeeldingsbestanden, waarbij inhoud en eigenschappen kunnen worden geparametriseerd voor variabiliteit. Met de component **Afbeeldingssjabloon** kunt u Scene7-sjablonen gebruiken in nieuwsbrieven en de waarden van sjabloonparameters wijzigen. Daarnaast kunt u metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
+[Scene7 Image ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) Templatesare layered zijn gelaagde afbeeldingsbestanden, waarbij inhoud en eigenschappen kunnen worden geparametriseerd voor variabiliteit. Met de component **Afbeeldingssjabloon** kunt u Dynamic Media Classic (voorheen Scene7)-sjablonen in nieuwsbrieven gebruiken en de waarden van sjabloonparameters wijzigen. Daarnaast kunt u metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
 
 ![chlimage_1-191](assets/chlimage_1-111.png)
 
-Klik **Bewerken** om de component te configureren. U kunt de instellingen configureren die in deze sectie worden beschreven. Deze Scene7-afbeeldingssjabloon wordt gedetailleerd beschreven in [Scene7-afbeeldingssjablooncomponent](/help/assets/scene7.md#image-template).
+Klik **Bewerken** om de component te configureren. U kunt de instellingen configureren die in deze sectie worden beschreven. Deze Dynamic Media Classic (voorheen Scene7) afbeeldingssjabloon wordt gedetailleerd beschreven in [Scene7 Image Template component](/help/assets/scene7.md#image-template).
 
-Daarnaast bevat het parametervenster alle sjabloonparameters die zijn gedefinieerd voor de sjabloon in Scene7. Voor elk van deze parameters kunt u de waarde aanpassen, variabelen invoegen of de standaardwaarde ervan herstellen.
+Daarnaast bevat het parametervenster alle sjabloonparameters die zijn gedefinieerd voor de sjabloon in Dynamic Media Classic (voorheen Scene7). Voor elk van deze parameters kunt u de waarde aanpassen, variabelen invoegen of de standaardwaarde ervan herstellen.
 
 ![chlimage_1-112](assets/chlimage_1-112.png)
 
@@ -260,7 +260,7 @@ Net als bij de componenten Text &amp; Personalization (Campaign) en Image (Campa
 
 In het volgende voorbeeld ziet u een component Text &amp; Image (Campaign) die wordt weergegeven.
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### Tekst en personalisatie (campagne) {#text-personalization-campaign}
 
