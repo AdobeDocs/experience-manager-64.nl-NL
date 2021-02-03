@@ -10,7 +10,7 @@ topic-tags: Security
 content-type: reference
 discoiquuid: 707b150b-7759-437f-9150-9f4784856754
 translation-type: tm+mt
-source-git-commit: 39c9ca8fb7b73d74904a56d9e6a5418950a8c98b
+source-git-commit: 770e435f41102b2d795c88cbb361de510564d319
 workflow-type: tm+mt
 source-wordcount: '2502'
 ht-degree: 0%
@@ -171,7 +171,7 @@ Zodra een geautoriseerde gebruiker, een lid van de **`administrators`**gebruiker
    * toegang tot [Webconsole](/help/sites-deploying/configuring-osgi.md)
 
       * bijvoorbeeld [http://localhost:4502/system/console/configMgr](http://localhost:4502/system/console/configMgr)
-   * `Adobe Granite Distribution - Encrypted Password Transport Secret Provider` zoeken
+   * `com.adobe.granite.distribution.core.impl.CryptoDistributionTransportSecretProvider.name` zoeken
    * Selecteer de bestaande configuratie die u wilt openen voor bewerken (potloodpictogram)
 
       Verifiëren `property name`: **`socialpubsync-publishUser`**
@@ -434,7 +434,7 @@ Wanneer de [User Administration and Security](/help/sites-administering/security
 
 ### Gebruikerssynchronisatie offline gebruiken {#how-to-take-user-sync-offline}
 
-Als u gebruikerssynchronisatie offline wilt zetten en een uitgever[ of ](#how-to-remove-a-publisher)gegevens handmatig synchroniseren[ wilt verwijderen, moet de distributierij leeg en stil zijn.](#manually-syncing-users-and-user-groups)
+Als u gebruikerssynchronisatie offline wilt zetten en een uitgever](#how-to-remove-a-publisher) of [gegevens handmatig synchroniseren](#manually-syncing-users-and-user-groups) wilt verwijderen, moet de distributierij leeg en stil zijn.[
 
 Om de staat van de distributierij te controleren:
 
@@ -503,7 +503,7 @@ Na zijn meningen van hoe uitgegeven, standaardconfiguraties in de Console van he
 
 #### (publish) One Apache Sling Distribution Agent - Queue Agents Factory {#publish-one-apache-sling-distribution-agent-queue-agents-factory}
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### (publiceren) Één Adobe granietdistributie - de Fabriek van de Waarnemer van Diff {#publish-one-adobe-granite-distribution-diff-observer-factory}
 
