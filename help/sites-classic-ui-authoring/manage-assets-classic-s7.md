@@ -10,9 +10,9 @@ topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '3232'
+source-wordcount: '3187'
 ht-degree: 0%
 
 ---
@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Dynamic Media Classic-functies toevoegen aan uw pagina{#adding-scene-features-to-your-page}
 
-[Adobe Dynamic Media ](https://help.adobe.com/en_US/scene7/using/WS26AB0D9A-F51C-464e-88C8-580A5A82F810.html) Classics is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media middelen aan Web, mobiel, e-mail, en Internet-verbonden vertoningen en druk.
+Adobe Dynamic Media Classic is een gehoste oplossing voor het beheren, verbeteren, publiceren en leveren van rijke media-elementen aan web, mobiele apparaten, e-mail en displays en drukwerk via internet.
 
 U kunt AEM middelen bekijken die in Dynamic Media Classic in diverse kijkers worden gepubliceerd:
 
@@ -149,8 +149,6 @@ Nadat de componenten in de modus **[!UICONTROL Design]** beschikbaar zijn gemaak
 
 Met ingang van 31 januari 2017 is de officiële ondersteuning voor het Flash-viewerplatform door Adobe Dynamic Media Classic beëindigd.
 
-Voor meer informatie over deze belangrijke verandering, zie [Flash de het eind-van-leven FAQs](https://docs.adobe.com/content/docs/en/aem/6-1/administer/integration/marketing-cloud/scene7/flash-eol.html) van de kijker.
-
 ### Een klassieke Dynamic Media-component toevoegen aan een pagina {#adding-a-scene-component-to-a-page}
 
 Het toevoegen van een klassieke Dynamic Media-component aan een pagina is hetzelfde als het toevoegen van een component aan een pagina. Klassieke Dynamic Media-componenten worden in de volgende secties uitgebreid beschreven.
@@ -248,7 +246,7 @@ Met de Klassieke Dynamic Media-afbeeldingscomponent kunt u Klassieke Dynamic Med
 
 ### Afbeeldingssjabloon {#image-template}
 
-[Dynamic Media Classic Image ](https://help.adobe.com/en_US/scene7/using/WS60B68844-9054-4099-BF69-3DC998A04D3C.html) Templatesare gelaagde Photoshop-inhoud die is geïmporteerd naar Dynamic Media Classic, waar inhoud en eigenschappen zijn geparametriseerd voor variabiliteit. Met de component **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in AEM wijzigen. Bovendien kunt u de **[!UICONTROL Image template]** component vormen om waarden van cliëntcontext te gebruiken, zodat elke gebruiker het beeld op een gepersonaliseerde manier ervaart.
+[Dynamic Media Classic Image ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) Templatesare gelaagde Photoshop-inhoud die is geïmporteerd naar Dynamic Media Classic, waar inhoud en eigenschappen zijn geparametriseerd voor variabiliteit. Met de component **[!UICONTROL Image template]** kunt u afbeeldingen importeren en de tekst dynamisch in AEM wijzigen. Bovendien kunt u de **[!UICONTROL Image template]** component vormen om waarden van cliëntcontext te gebruiken, zodat elke gebruiker het beeld op een gepersonaliseerde manier ervaart.
 
 Klik **[!UICONTROL Edit]** om de component te vormen. U kunt [instellingen configureren die hetzelfde zijn voor alle klassieke Dynamic Media-componenten](/help/sites-administering/scene7.md#settingscommontoalldynamicmediaclassicscomponents) en andere instellingen die in deze sectie worden beschreven.
 
