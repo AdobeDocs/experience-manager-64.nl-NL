@@ -1,18 +1,14 @@
 ---
 title: Werken met Adobe Dimension-middelen
-seo-title: Werken met Adobe Dimension-middelen
 description: Werken met Adobe Dimension-elementen in AEM 3D.
-seo-description: Werken met Adobe Dimension-elementen in AEM 3D.
-uuid: 476e6758-b3a1-42ba-a18d-bfc407c6a72e
 contentOwner: Rick Brough
 topic-tags: 3D
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
-discoiquuid: 4a601c2a-4ea1-4308-8ae8-704155f63c21
 translation-type: tm+mt
-source-git-commit: 11b65cf2d180f04168d4c5d0929957c95a372e3c
+source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
 workflow-type: tm+mt
-source-wordcount: '511'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
@@ -22,7 +18,7 @@ ht-degree: 0%
 
 >[!IMPORTANT]
 >
->Het AEM 3D-functiepakket in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://docs.adobe.com/content/help/en/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html) of [AEM 6.5.3 of hoger.](https://docs.adobe.com/content/help/en/experience-manager-65/assets/dynamic/assets-3d.html) wanneer u werkt met Adobe Dimension-middelen.
+>Het AEM 3D-functiepakket in AEM 6.4 wordt niet meer ondersteund. Adobe raadt u aan de functie 3D-elementen in [AEM te gebruiken als een Cloud Service](https://experienceleague.adobe.com/docs/experience-manager-cloud-service/assets/dynamicmedia/assets-3d.html#dynamicmedia) of [AEM 6.5.3 of hoger.](https://experienceleague.adobe.com/docs/experience-manager-65/assets/dynamic/assets-3d.html#dynamic) wanneer u werkt met Adobe Dimension-middelen.
 
 Het AEM 3D-functiepakket biedt ondersteuning voor Adobe Dimension-elementen (`.dn` bestanden) in AEM Assets, AEM Sites en AEM Screens.
 
