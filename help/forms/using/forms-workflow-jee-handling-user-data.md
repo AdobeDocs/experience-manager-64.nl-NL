@@ -1,16 +1,16 @@
 ---
 title: Forms JEE-workflows | Gebruikersgegevens verwerken
 seo-title: Forms JEE-workflows | Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+description: AEM Forms JEE-workflows bieden tools voor het ontwerpen, maken en beheren van bedrijfsprocessen. Leer meer op hoe te om tot gebruikersgegevens toegang te hebben en te schrappen, procesinstantie IDs identificeren wanneer werkschemageinitiator of deelnemer gekend is, procesinstantie IDs identificeren wanneer de gebruikersgegevens in primitieve variabelen worden opgeslagen, gebruikersgegevens uit werkschemamonstanties wissen die op procesinstantie IDs worden gebaseerd, en met wezen taken werken.
+seo-description: AEM Forms JEE-workflows bieden tools voor het ontwerpen, maken en beheren van bedrijfsprocessen. Leer meer op hoe te om tot gebruikersgegevens toegang te hebben en te schrappen, procesinstantie IDs identificeren wanneer werkschemageinitiator of deelnemer gekend is, procesinstantie IDs identificeren wanneer de gebruikersgegevens in primitieve variabelen worden opgeslagen, gebruikersgegevens uit werkschemamonstanties wissen die op procesinstantie IDs worden gebaseerd, en met wezen taken werken.
 uuid: 3b06ef19-d3c4-411e-9530-2c5d2159b559
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5632a8df-a827-4e38-beaa-18b61c2208a3
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '1371'
+source-wordcount: '1493'
 ht-degree: 0%
 
 ---
