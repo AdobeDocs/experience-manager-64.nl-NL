@@ -10,9 +10,9 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 translation-type: tm+mt
-source-git-commit: 7ea83f879d5c3f5699d2a783686c53c5292fcf8a
+source-git-commit: 12d64aebbe769c0b3fa7c721e7fbac547d320f67
 workflow-type: tm+mt
-source-wordcount: '3486'
+source-wordcount: '3509'
 ht-degree: 0%
 
 ---
@@ -39,6 +39,8 @@ Adobe Sign-integratie met AEM Forms ondersteunt:
 * Formulieren ondertekenen als anonieme of aangemelde gebruiker
 * Dynamische ondertekeningsprocessen (integratie met AEM Forms-workflow)
 * Verificatie via een kennisbasis, telefoon en sociale profielen
+
+Leer de [beste praktijken van het gebruiken van Adobe Sign met adaptieve vormen](https://medium.com/adobetech/using-adobe-sign-to-e-sign-an-adaptive-form-heres-the-best-way-to-do-it-dc3e15f9b684) om betere ondertekeningservaringen tot stand te brengen.
 
 ## Vereisten {#prerequisites}
 
