@@ -1,16 +1,16 @@
 ---
 title: Integratie met Adobe Sign | Gebruikersgegevens verwerken
 seo-title: Integratie met Adobe Sign | Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+description: AEM Forms kan met Adobe Sign worden geïntegreerd om workflows voor e-handtekeningen mogelijk te maken in adaptieve formulieren voor het verwerken van formulieren of overeenkomsten voor juridische, verkoop-, loon- en personeelsbeheerworkflows. Dig dieper op gebruikersgegevens, gegevensopslag, en toegang en schrapt gebruikersgegevens.
+seo-description: AEM Forms kan met Adobe Sign worden geïntegreerd om workflows voor e-handtekeningen mogelijk te maken in adaptieve formulieren voor het verwerken van formulieren of overeenkomsten voor juridische, verkoop-, loon- en personeelsbeheerworkflows. Dig dieper op gebruikersgegevens, gegevensopslag, en toegang en schrapt gebruikersgegevens.
 uuid: cb3a455d-2e33-44c8-8f71-3a7ecd939cd8
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9e0d8fb-955e-4021-9e9a-9c95c6ffe88d
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '333'
+source-wordcount: '409'
 ht-degree: 0%
 
 ---
