@@ -1,16 +1,16 @@
 ---
 title: Forms-gebruikersbeheer | Gebruikersgegevens verwerken
 seo-title: Forms-gebruikersbeheer | Gebruikersgegevens verwerken
-description: 'null'
-seo-description: 'null'
+description: Gebruikersbeheer is een AEM Forms JEE-component waarmee AEM Forms-gebruikers toegang kunnen krijgen tot AEM Forms en waarmee ze deze kunnen maken, beheren en autoriseren. Dig dieper op gebruikersgegevens en gegevensopslag. Leer hoe u gebruikersgegevens kunt openen en verwijderen.
+seo-description: Gebruikersbeheer is een AEM Forms JEE-component waarmee AEM Forms-gebruikers toegang kunnen krijgen tot AEM Forms en waarmee ze deze kunnen maken, beheren en autoriseren. Dig dieper op gebruikersgegevens en gegevensopslag. Leer hoe u gebruikersgegevens kunt openen en verwijderen.
 uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: c2dcb61d65cfc5867525f5b39769da0450d92f39
 workflow-type: tm+mt
-source-wordcount: '884'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
