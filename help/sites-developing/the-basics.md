@@ -175,7 +175,7 @@ Met behulp van het bovenstaande voorbeeld, als `sling:resourceType` `hr/jobs` da
 
 * GET/HEAD-aanvragen en URL&#39;s die eindigen op .html (standaardaanvraagtypen, standaardindeling)
 
-   Het script wordt /apps/hr/jobs/jobs.esp; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
+   Het script zal /apps/hr/jobs/jobs.esp zijn; het laatste gedeelte van de tekenreeks:resourceType vormt de bestandsnaam.
 
 * Aanvragen voor POSTEN (alle aanvraagtypen behalve GET/HEAD, de naam van de methode moet in hoofdletters staan)
 
