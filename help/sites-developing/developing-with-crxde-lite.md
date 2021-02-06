@@ -290,7 +290,7 @@ Een definitie van het knooppunttype importeren:
 Met CRXDE Lite kunt u het bestand `error.log` weergeven dat zich op het bestandssysteem bevindt op `<crx-install-dir>/crx-quickstart/server/logs` en dit filteren met het juiste logniveau. Ga als volgt te werk:
 
 1. Open CRXDE Lite in uw browser.
-1. Selecteer **Serverlogbestanden** op het tabblad &lt;a0/>Console **onder aan het venster in het vervolgkeuzemenu rechts.**
+1. Selecteer **Serverlogbestanden** op het tabblad **Console** onder aan het venster in het vervolgkeuzemenu rechts.
 
 1. Klik op het pictogram **Stoppen** om de berichten weer te geven.
 
