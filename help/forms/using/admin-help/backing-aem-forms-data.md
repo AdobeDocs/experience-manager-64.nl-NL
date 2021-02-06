@@ -99,7 +99,7 @@ Met de opdrachtregelinterface `LCBackupMode`-scripts kunt u AEM formulieren in d
 1. Bij de bevelherinnering, stel het volgende bevel op één enkele lijn in werking:
 
    * (Windows) `LCBackupMode.cmd enter [-Host=`*hostnaam* `] [-port=`*portnumber* `] [-user=`*gebruikersnaam* `] [-password=`*wachtwoord* `] [-label=`*labelnaam* `] [-timeout=`*seconds* `]`
-   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostnaam* `] [-port=`*poortnummer* `] [-user=`*gebruikersnaam`] [-password=`* &lt;a6/>wachtwoord *`] [-label=`* labelnaam *`]`*
+   * (Linux, UNIX) `LCBackupMode.sh enter [-host=`*hostnaam* `] [-port=`*poortnummer* `] [-user=`*gebruikersnaam`] [-password=`* *wachtwoord* `] [-label=`*labelnaam* `]`
 
    In de vorige opdrachten worden de plaatsaanduidingen als volgt gedefinieerd:
 
