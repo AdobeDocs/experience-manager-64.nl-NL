@@ -26,7 +26,7 @@ Zie [De pagina-inhoud bewerken](/help/sites-authoring/qg-page-authoring.md#editi
 
 ## Prestatieaspecten bij het renderen van 3D-elementen {#performance-considerations-when-rendering-d-assets}
 
-Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en het geheugen. Als zodanig kan rendering vaak veel tijd in beslag nemen. Rendertijden variëren aanzienlijk, afhankelijk van verschillende factoren, naast de duidelijke modelgrootte en serverhardware:
+Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en het geheugen. Als zodanig kan rendering vaak veel tijd in beslag nemen. Rendertijden variëren aanzienlijk afhankelijk van verschillende factoren, naast de duidelijke modelgrootte en serverhardware:
 
 * **Rendererselectie**.
 
@@ -38,7 +38,7 @@ Het renderen van 3D-inhoud verbruikt aanzienlijke serverbronnen, zoals de CPU en
 
 De rendermodule Snel verfijnen neemt meestal enkele minuten in beslag om grotere afbeeldingen te renderen. Nochtans, nemen de derderenderers vaak vele notulen, zelfs uren wanneer gevormd voor maximumkwaliteit.
 
-Conversie-, verwerkings- en rendertaken worden op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven bij recent geüploade elementen in [!UICONTROL Card View]. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
+Conversie-, verwerkings- en rendertaken worden zo nodig op de server in de wachtrij geplaatst om overbelasting van de server te voorkomen. Het bericht &quot;Wachten op renderen...&quot; wordt weergegeven bij recent geüploade elementen in [!UICONTROL Card View]. Deze status geeft aan dat andere verwerkings- of rendertaken moeten zijn voltooid voordat de huidige rendertaak kan worden gestart.
 
 >[!NOTE]
 >
