@@ -102,7 +102,7 @@ In sommige situaties kan het zijn dat het pagina-diff geen verschil detecteert z
 * Het diff kan beeldomwenteling niet ontdekken.
 * Als een pagina wordt verplaatst, kunt u geen diff met om het even welke versies meer uitvoeren die vóór de beweging worden gemaakt.
 
-   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of de pagina is bewogen.
+   * Als u problemen ondervindt met een diff, controleer [Chronologie](/help/sites-authoring/basic-handling.md#timeline) voor de pagina om te zien of is de pagina bewogen.
 
 >[!NOTE]
 >
