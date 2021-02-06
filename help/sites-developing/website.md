@@ -140,7 +140,7 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 1. Als u de paden wilt opgeven van de pagina&#39;s waarop deze sjabloon kan worden gebruikt, klikt u op de plusknop en typt u `/content(/.*)?` in het tekstvak dat wordt weergegeven. Klik vervolgens op **[!UICONTROL Next]**.
 
-   ![chlimage_1-106](assets/chlimage_1-105.png)
+   ![chlimage_1-105](assets/chlimage_1-105.png)
 
    De waarde van de toegestane padeigenschap is een *reguliere expressie.* Pagina&#39;s die een pad hebben dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de map `/content` en alle subpagina&#39;s.
 
@@ -220,7 +220,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
 1. Voor de AEM Welkome pagina ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), klik Websites.
 
-   ![chlimage_1-109](assets/chlimage_1-109.png)
+   ![chlimage_1-189](assets/chlimage_1-109.png)
 
 1. Selecteer in de mappenstructuur de map **[!UICONTROL Websites]** en klik op **[!UICONTROL New > New Page]**.
 1. Voer in het venster **[!UICONTROL Create Page]** het volgende in:
@@ -266,7 +266,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
    * **[!UICONTROL Type]**: Tekenreeks
    * **[!UICONTROL Value]**: /etc/designs/mywebsite
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. Open [http://localhost:4502/content/mywebsite/en/products.html](http://localhost:4502/content/mywebsite/en/products.html) in een nieuw webbrowsertabblad of -venster om de pagina Producten weer te geven:
 
@@ -411,7 +411,7 @@ In de eerste versie van de bovenste navigatiecomponent (boven) zijn de navigatie
 
 Uw topnavigatie ziet er als volgt uit:
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 #### De bovenste navigatiecomponent {#creating-the-top-navigation-component-1} maken
 
@@ -477,7 +477,7 @@ Het onderwerp opnemen in de component ContentPage:
 De component **[!UICONTROL Page]** definieert eigenschappen waarmee u ondertitels voor pagina&#39;s kunt opgeven. Voeg ondertitels toe die informatie over de pagina-inhoud bevatten.
 
 1. Open de pagina **[!UICONTROL Products]** in uw browser.
-1. Klik op **[!UICONTROL Page]** op het tabblad Sidetrap.**[!UICONTROL Page Properties]**
+1. Klik op **[!UICONTROL Page Properties]** op het tabblad Sidetrap.**[!UICONTROL Page]**
 1. Vouw op het tabblad **[!UICONTROL Basic]** van het dialoogvenster **[!UICONTROL More Titles and Description]** uit en typ `what we do` voor de eigenschap **[!UICONTROL Subtitle]**. Klik op **[!UICONTROL OK]**.
 1. Herhaal de vorige stappen om de ondertitel **over onze services** toe te voegen aan de pagina **[!UICONTROL Services]**.
 1. Herhaal de vorige stappen om de ondertitel **het vertrouwen toe te voegen wij** aan **[!UICONTROL Customers]** pagina verdienen.
@@ -1498,7 +1498,7 @@ In deze sectie voegt u uw zoekcomponent toe aan het alineasysteem.
 1. Klik op het driehoekje bij Sidetrap om terug te keren naar de modus **[!UICONTROL Edit]**.
 1. Sleep de **[!UICONTROL My Search]** component van Sidetrap in het parsys kader. Het ziet er als volgt uit:
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Navigeer naar uw **[!UICONTROL Products]** pagina. Zoek naar klanten in de invoerdoos en druk **[!UICONTROL Enter]**. U wordt omgeleid aan de **[!UICONTROL Search]** pagina. Overschakelen naar modus **[!UICONTROL Preview]**: de uitvoer heeft een vergelijkbare indeling als de volgende:
 
