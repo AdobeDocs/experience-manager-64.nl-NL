@@ -110,7 +110,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
    Het label van de knop **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Tik of klik vervolgens op de knop **[!UICONTROL Edit Smart Selection]**.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ## Elementen toevoegen aan een verzameling {#adding-assets-to-a-collection}
 
@@ -132,7 +132,7 @@ Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u d
 
 1. Tik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk of klik erop.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
 
@@ -221,7 +221,7 @@ U kunt verzamelingsinstellingen bewerken, zoals titel en beschrijving, of leden 
 
    >[!NOTE]
    >
-   >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten [ te verwijderen.](#deleting-saved-searches)
+   >U kunt slimme verzamelingen ook verwijderen door opgeslagen zoekopdrachten ](#deleting-saved-searches) te verwijderen.[
 
 ## Een verzameling {#downloading-a-collection} downloaden
 
