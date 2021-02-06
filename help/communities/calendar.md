@@ -41,7 +41,7 @@ Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Ge
 
 Als de [vereiste client-side bibliotheken](calendar-basics-for-developers.md#essentials-for-client-side) worden opgenomen, wordt de `Calendar`-component op deze manier weergegeven.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Kalender {#configuring-calendar} configureren
 
@@ -189,7 +189,7 @@ Andere vaardigheden hangen af van het feit of de bezoeker van de site een modera
 
 Wanneer de ondertekende binnen gebruiker moderator of beheerdervoorrechten heeft, kunnen zij [moderatietaken](moderate-ugc.md) (zoals toegelaten door de configuratie van de component) op alle kalendergebeurtenissen en commentaren uitvoeren die aan een gebeurtenis worden gepost.
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 ### Leden {#members}
 
