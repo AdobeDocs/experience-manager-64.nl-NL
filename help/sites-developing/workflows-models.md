@@ -347,7 +347,7 @@ Om enkele mogelijkheden te illustreren om een werkschema tot stand te brengen, l
 
    * Klik op de stap en selecteer **[!UICONTROL Delete]** in de werkbalk van de component. Bevestig de handeling.
 
-1. Sleep een **[!UICONTROL Workflow]** naar de werkstroom en plaats deze tussen **[!UICONTROL Participant Step]** en ****[!UICONTROL Flow Start]*** vanuit de selectie van de stappen-browser.[!UICONTROL Flow End*]
+1. Sleep een **[!UICONTROL Participant Step]** naar de werkstroom en plaats deze tussen **[!UICONTROL Flow Start]** en **[!UICONTROL Flow End*]* vanuit de selectie van de stappen-browser.**[!UICONTROL Workflow]**
 1. U opent als volgt het dialoogvenster Eigenschappen:
 
    * Klik op de deelnemersstap en selecteer **[!UICONTROL Configure]** van de componententoolbar.
