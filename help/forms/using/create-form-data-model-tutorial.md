@@ -151,7 +151,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
 ## Stap 3: Formuliergegevensmodel {#step-create-form-data-model} maken
 
-AEM Forms biedt een intuïtieve gebruikersinterface voor het maken van een formuliergegevensmodus[l op basis van geconfigureerde gegevensbronnen. ](data-integration.md) U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
+AEM Forms biedt een intuïtieve gebruikersinterface voor het maken van een formuliergegevensmodus](data-integration.md)l op basis van geconfigureerde gegevensbronnen. [ U kunt meerdere gegevensbronnen gebruiken in een formuliergegevensmodel. Voor het gebruiksgeval in deze zelfstudie, zult u MySQL als gegevensbron gebruiken.
 
 Ga als volgt te werk om het formuliergegevensmodel te maken:
 
