@@ -900,7 +900,7 @@ Als gegevens in een specifieke indeling moeten worden ingevoerd, maakt u dit dui
 
 Als invoer voor een formulierveld verplicht is, maakt u dit duidelijk door het vereiste woord als onderdeel van het label te gebruiken. AEM voegt een sterretje toe wanneer een veld vereist is, maar het is ideaal om het woord `required`in het label zelf op te nemen (in het veld **Titel** in het dialoogvenster Bewerken).
 
-![Extra informatie (het vereiste woord) toevoegen aan schermlezers in het veld Titel.](assets/chlimage_1-210.png)
+![Extra informatie (het woord is vereist) toevoegen aan schermlezers in het veld Titel.](assets/chlimage_1-210.png)
 
 Het positioneren van labels is ook belangrijk, omdat ze hierdoor geschikte velden kunnen vinden. Dit is van bijzonder belang wanneer de gebruiker met een complexe vorm wordt geconfronteerd. Volg de onderstaande conventie:
 
