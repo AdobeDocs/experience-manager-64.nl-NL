@@ -174,13 +174,13 @@ Zie ook [Geavanceerde configuratie-instellingen](advanced-config-3d.md).
 
    Klik in de rechterbovenhoek van de pagina logo-sphere.fbx op het pictogram Werkgebiedspotlight om het vervolgkeuzemenu uit te vouwen en selecteer `stage-spotlights.fbx`.
 
-   ![chlimage_1-376](assets/chlimage_1-375.png)
+   ![chlimage_1-375](assets/chlimage_1-375.png)
 
 1. Selecteer in de vervolgkeuzelijst **[!UICONTROL Stage Spotlight]** de optie `stage-helipad.fbx`.
 
    De weergave aanpassen met de linkermuisknop. De achtergrond- en modelbelichting worden aangepast aan de nieuwe selectie in het werkgebied.
 
-   ![chlimage_1-375](assets/chlimage_1-376.png)
+   ![chlimage_1-376](assets/chlimage_1-376.png)
 
 ## Ondersteuning voor Adobe Dimension-elementen configureren {#configuring-support-for-adobe-dimension-assets}
 
