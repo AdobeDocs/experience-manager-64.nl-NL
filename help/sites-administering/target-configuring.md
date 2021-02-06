@@ -42,7 +42,7 @@ De volgende bezitswaarden worden gebruikt in de Provisioned de wolkenconfigurati
 * **Segmenten synchroniseren vanuit Adobe Target:** geselecteerd.
 
 * **Clientbibliotheek:** mbox.js.
-* **DTM gebruiken om clientbibliotheek te leveren:** Niet geselecteerd. Selecteer deze optie als u het bestand mbox.js of AT.js host met DTM[ of een ander tagbeheersysteem. ](/help/sites-administering/dtm.md) Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
+* **DTM gebruiken om clientbibliotheek te leveren:** Niet geselecteerd. Selecteer deze optie als u het bestand mbox.js of AT.js host met DTM](/help/sites-administering/dtm.md) of een ander tagbeheersysteem. [ Adobe raadt u aan DTM te gebruiken in plaats van AEM om de bibliotheek te leveren.
 
 * **Custom mbox.js:** None specified so that the default mbox.js file is used. Geef het bestand mbox.js op dat u wilt gebruiken. Wordt alleen weergegeven als u mbox.js hebt geselecteerd.
 * **Aangepaste AT.js:** Geen opgegeven zodat het standaard AT.js-bestand wordt gebruikt. Geef een aangepast AT.js-bestand op dat u wilt gebruiken. Wordt alleen weergegeven als u AT.js hebt geselecteerd.
