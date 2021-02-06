@@ -57,7 +57,7 @@ De console Groepen openen:
    * De structuur van de site van de community moet een groepfunctie bevatten
    * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag nadat [groepen zijn gemaakt voor publicatie](published-site.md)
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 Selecteer **[!UICONTROL Groups folder]** om het te openen.
 
@@ -110,7 +110,7 @@ Nadat de communitysite is gepubliceerd, is het mogelijk om de eigenschappen [te 
 
 #### COMMUNAUTAIRE GROEPSVERDELING {#community-group-branding}
 
-![chlimage_1-135](assets/chlimage_1-135.png)
+![chlimage_1-133](assets/chlimage_1-135.png)
 
 De branding van de communautaire plaats is een beeld dat als kopbal over de bovenkant van elke pagina wordt getoond. Het is mogelijk om een banner voor de groep weer te geven die afwijkt van andere sitepagina&#39;s.
 
