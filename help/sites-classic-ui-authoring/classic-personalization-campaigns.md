@@ -60,7 +60,7 @@ ErvaringenDe gerichte inhoud vormt de verschillende ervaringen die aan de bezoek
 
    * **Nieuwsbrieven**
 
-      [E-](#emailmarketing) mailcommunicatie wordt gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze hebben gewoonlijk de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
+      [E-](#emailmarketing) mailcommunicatie wordt gebruikt om gebruikers aan te spreken en hen aan te moedigen uw website te bezoeken. Deze hebben gewoonlijk de vorm van een nieuwsbrief, die naar uw **Leads** wordt verzonden (die gewoonlijk in **Lijsten** worden gegroepeerd). **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren. De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
 
    * **Adobe Target**
 
@@ -77,13 +77,13 @@ ErvaringenDe gerichte inhoud vormt de verschillende ervaringen die aan de bezoek
 
    De informatie die u over uw bezoekers hebt verzameld en hoe te om hen te contacteren vormt de basis voor uw lood. **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
+   De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
 
 * **Lijsten**
 
    Regelafstand wordt meestal gegroepeerd in lijsten, zodat u er gezamenlijk op kunt reageren. Opmerking: **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   Aanbeveling is om Adobe Campaign en de integratie naar AEM te gebruiken.[](/help/sites-administering/campaign.md)
+   Aanbeveling is om Adobe Campaign en de integratie naar AEM te gebruiken.](/help/sites-administering/campaign.md)[
 
 * **Segmenten**
 
