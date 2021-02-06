@@ -155,11 +155,11 @@ Als u de algemene opslag van MongoDB wilt testen en verifiëren, plaatst u een o
 1. Meld u aan om een opmerking te plaatsen:
 1. Typ tekst in het tekstinvoervak voor opmerkingen en klik op **[!UICONTROL Post]**
 
-   ![chlimage_1-111](assets/chlimage_1-191.png)
+   ![chlimage_1-191](assets/chlimage_1-191.png)
 
 1. U kunt de opmerking gewoon weergeven op de [auteurinstantie](http://localhost:4502/content/community-components/en/comments.html) (waarschijnlijk nog steeds aangemeld als admin/admin).
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
    Opmerking: terwijl er knopen JCR onder *asipath* op auteur zijn, zijn deze voor het kader SCF. De werkelijke UGC bevindt zich niet in de JCR, maar in de MongoDB.
 
