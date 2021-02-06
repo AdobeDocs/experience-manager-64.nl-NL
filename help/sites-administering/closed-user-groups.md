@@ -335,7 +335,7 @@ Het creëren, de wijziging of de verwijdering van een nieuwe authentificatievere
 
 >[!NOTE]
 >
->De wijzigingen aan een opgegeven doelnode die hierboven zijn vermeld, worden alleen weerspiegeld in de Apache Sling Authenticator als `RequirementHandler` is verward en het doel is opgenomen in de bomen die door de ondersteunde paden worden gedefinieerd (zie sectie Configuration Options).
+>De wijzigingen aan een opgegeven doelknooppunt zoals hierboven vermeld, worden alleen weerspiegeld in de Apache Sling Authenticator als `RequirementHandler` is verward en het doel is opgenomen in de bomen die door de ondersteunde paden worden gedefinieerd (zie Opties voor sectie Configuration).
 >
 >Voor meer informatie, zie [Toewijzend de Types van Knoop van Mixin] (https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.10.3 Toewijzend de Types van Knoop van Mixin) en [Toevoegend Nodes en Plaatsende Eigenschappen] (https://docs.adobe.com/docs/en/spec/jcr/2.0/10_Writing.html#10.4 toevoegend Nodes en plaatsende Eigenschappen)
 
