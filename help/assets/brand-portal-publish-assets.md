@@ -54,7 +54,7 @@ Er verschijnt een bericht waarin wordt aangegeven dat de assets in de wachtrij z
 Voer de volgende handelingen uit om het publiceren van de assets naar Brand Portal op een latere datum of tijd te plannen:
 
 1. Als u elementen/mappen hebt geselecteerd om te publiceren, selecteert u **[!UICONTROL Manage Publication]** in de werkbalk boven in het scherm.
-2. Selecteer **[!UICONTROL Manage Publication]** op &lt;a0/> pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
+2. Selecteer **[!UICONTROL Manage Publication]** op  pagina **[!UICONTROL Publish to Brand Portal]** van **[!UICONTROL Action]** en selecteer **[!UICONTROL Later]** van **[!UICONTROL Scheduling]**.
 
    ![publishlaterbp-1](assets/publishlaterbp-1.png)
 
