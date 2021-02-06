@@ -530,7 +530,7 @@ In de modus **Structuur** van de sjablooneditor:
 
    Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
-   ![chlimage_1-376](assets/chlimage_1-375.png)
+   ![chlimage_1-375](assets/chlimage_1-375.png)
 
    *Instellingen voor responsie*
 
