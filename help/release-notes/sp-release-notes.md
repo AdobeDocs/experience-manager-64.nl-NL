@@ -1413,7 +1413,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * Een enkele uitzondering wordt gegenereerd bij het verwijderen van inhoud. NPR-25869: Hotfix voor CQ-4248908
 * Gepagineerde koppelingen naar threads met veel berichten werken niet bij Meldingen. NPR-25678: Hotfix voor CQ-4243038
 * De tijdwaarden in het onderzoeksresultaat tonen servertijd in plaats van de tijdzone van de cliënt. NPR-25594: Hotfix voor CQ-4248986
-* (Opmerkingen van het Forum) De knop Terug in de browser werkt niet zoals verwacht. NPR-25205: Hotfix voor CQ-4248573
+* (Opmerkingen van het Forum) De knop Terug in de browser werkt niet zoals verwacht. NPR-25203: Hotfix voor CQ-4248573
 * (Zoekresultaten) De knop Terug in de browser werkt niet zoals verwacht. NPR-25214: Hotfix voor CQ-4248574
 * Null wordt geretourneerd wanneer de component communitygroupmemberList wordt bedekt. NPR-25228: Hotfix voor CQ-4248523
 * (Communities Calendar) ClassCastException wordt geproduceerd terwijl het bewaren van de gebeurtenis met het nieuwe beeld van de Omslag. NPR-25167: Hotfix voor CQ-4248662
@@ -1747,7 +1747,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23538
 * Kan niet meerdere gebruikers tegelijk uit de groep verwijderen. NPR-23846
 * (OMEGA) Rapporteer &quot;Functie&quot; alleen in het Engels. NPR-23989: Hotfix voor graniet-21231
-* (Design Importer) Als u een pagina importeert, worden de JS, css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
+* (Design Importer) Als u een pagina importeert, worden de JS, css niet geïmporteerd. NPR-25205: Hotfix voor graniet-22236
 
 **Integratie**
 
