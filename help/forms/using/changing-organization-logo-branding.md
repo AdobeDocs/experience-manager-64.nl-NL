@@ -20,7 +20,7 @@ ht-degree: 0%
 
 # Het bedrijfslogo voor branding wijzigen {#changing-the-organization-logo-for-branding}
 
-Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u het logo wilt bijwerken, volgt u de algemene stappen van de aanpassing van de AEM Forms-werkruimte[ en voert u de volgende stappen uit.](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization)
+Het bedrijfslogo wordt linksboven in de AEM Forms-werkruimte weergegeven. Als u het logo wilt bijwerken, volgt u de algemene stappen van de aanpassing van de AEM Forms-werkruimte](/help/forms/using/generic-steps-html-workspace-customization.md#generic-steps-for-html-workspace-customization) en voert u de volgende stappen uit.[
 
 1. Maak een logo en geef het bestand de naam `NewWorkspace.png`. Plaats het afbeeldingsbestand in de map /apps/ws/images met een WebDAV-client.
 
