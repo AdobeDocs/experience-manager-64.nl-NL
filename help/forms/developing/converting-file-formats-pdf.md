@@ -576,7 +576,7 @@ In dit gedeelte wordt ook het volgende uitgelegd:
 
 De service PDF genereren converteert oorspronkelijke bestandsindelingen door de toepassing aan te roepen die is gekoppeld aan de bestandsindeling en vervolgens te communiceren met de toepassing om het document af te drukken met de standaardprinter. De standaardprinter moet zijn ingesteld als de Adobe PDF-printer.
 
-In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die zijn betrokken bij native toepassingsondersteuning. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
+In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die bij de ondersteuning van native toepassingen betrokken zijn. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
 
 Interacties van componenten voor conversie van native bestanden
 
