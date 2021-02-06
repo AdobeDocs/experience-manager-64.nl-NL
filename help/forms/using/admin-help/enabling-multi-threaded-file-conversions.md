@@ -115,5 +115,5 @@ Als u OpenOffice, Microsoft Word, of Microsoft PowerPoint op de Server 2008 van 
 ### Het wachtwoord voor een account wijzigen {#change-the-password-for-an-account}
 
 1. Klik in de beheerconsole op Services > PDF Generator > Gebruikersaccounts.
-1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig dit. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
+1. Klik op de gebruikersnaam en voer het nieuwe wachtwoord in en bevestig het. Dit wachtwoord moet overeenkomen met het systeemwachtwoord van de gebruiker.
 
