@@ -130,7 +130,7 @@ Deze kunnen in inhoudspakketten worden opgenomen en op andere instanties worden 
 
 De console van het Web toont geen aanwijzing van waar in de bewaarplaats uw veranderingen zijn bewaard, maar zij kunnen gemakkelijk worden gevestigd:
 
-1. Maak het configuratiebestand door een eerste wijziging aan te brengen in de webconsole[.](#osgi-configuration-with-the-web-console)
+1. Maak het configuratiebestand door een eerste wijziging aan te brengen in de webconsole](#osgi-configuration-with-the-web-console).[
 1. Open CRXDE Lite.
 1. Selecteer in het menu **Extra** **Query..** .
 1. Verzend een vraag van **Type** `SQL` om naar PID van de configuratie te zoeken die u hebt bijgewerkt.
