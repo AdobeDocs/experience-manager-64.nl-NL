@@ -132,7 +132,7 @@ U moet **AEM Integratie** pakket in Adobe Campaign installeren. Dit doet u als v
 
 1. Klik **Installeer een standaardpakket**, dan selecteer **AEM Integratie** pakket.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Klik **Volgende**, en dan **Begin**.
 
@@ -343,7 +343,7 @@ Het veld **Registratienummer** maakt nu deel uit van de beschikbare verpersoonli
 
 #### Een personalisatieveld {#hiding-a-personalization-field} verbergen
 
-Om een verpersoonlijkingsgebied onder die te verbergen die reeds beschikbaar zijn, moet u het schema van Adobe Campaign **nms uitbreiden &lt;a0/>nms:seedMember** zoals die in [een verpersoonlijkingsgebied](#adding-a-personalization-field) wordt gedetailleerd. Voer de volgende stappen uit:
+Om een verpersoonlijkingsgebied onder die te verbergen die reeds beschikbaar zijn, moet u het schema van Adobe Campaign **nms uitbreiden nms:seedMember** zoals die in [een verpersoonlijkingsgebied](#adding-a-personalization-field) wordt gedetailleerd. Voer de volgende stappen uit:
 
 1. Kopieer het veld dat u wilt ophalen uit het schema **nms:seedMember** in het uitgebreide schema (**cus:seedMember** bijvoorbeeld).
 1. Voeg het **advanced=&quot;true&quot;** attribuut van XML aan het gebied toe. Deze wordt niet meer weergegeven in de lijst met personalisatievelden die beschikbaar zijn in AEM.
