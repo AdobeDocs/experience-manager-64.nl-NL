@@ -181,7 +181,7 @@ De volgende voorbeelden van REST-oproepen worden gegeven:
 * Het MyApplication/EncryptDocument-proces aanroepen met REST
 * Het MyApplication/EncryptDocument-proces aanroepen vanuit Acrobat
 
-   In elk voorbeeld worden verschillende gegevenstypen doorgegeven aan een AEM Forms-proces
+   In elk voorbeeld wordt getoond hoe verschillende gegevenstypen worden doorgegeven aan een AEM Forms-proces
 
 **Booleaanse waarden doorgeven aan een proces**
 
