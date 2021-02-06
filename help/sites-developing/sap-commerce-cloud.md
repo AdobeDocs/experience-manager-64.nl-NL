@@ -409,7 +409,7 @@ public class AxisFilter implements VariantFilter {
    * Met `CommerceSession` worden add/remove/etc. uitgevoerd.
    * De `CommerceSession` voert ook de diverse berekeningen op het karretje uit. &quot;
 
-* Hoewel de `CommerceSession` niet rechtstreeks met een cart te maken heeft, moet de &lt;a0/> ook informatie over catalogusprijzen verstrekken (aangezien deze eigenaar is van prijzen)
+* Hoewel de `CommerceSession` niet rechtstreeks met een cart te maken heeft, moet de  ook informatie over catalogusprijzen verstrekken (aangezien deze eigenaar is van prijzen)
 
    * Prijzen kunnen verschillende opties hebben:
 
