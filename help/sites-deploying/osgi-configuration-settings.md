@@ -353,7 +353,7 @@ Er zijn verschillende configuratie-eigenschappen beschikbaar:
 PathPath waarvoor deze authentificatiemanager actief is. Als deze parameter leeg wordt gelaten, is de authentificatiemanager gehandicapt. Het pad/zorgt er bijvoorbeeld voor dat de verificatiehandler wordt gebruikt voor de gehele gegevensopslagruimte.
 
 * **Service**
-RankingOSGi Framework Service Ranking value wordt gebruikt om de volgorde aan te geven die wordt gebruikt voor het aanroepen van deze service. Dit is een 
+RankingOSGi Framework Service Ranking value wordt gebruikt om de volgorde aan te geven die wordt gebruikt om deze service aan te roepen. Dit is een 
 `int` waarde waarbij hogere waarden een hogere prioriteit aangeven.
 
    De standaardwaarde is `0`.
