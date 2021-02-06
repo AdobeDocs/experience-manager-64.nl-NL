@@ -37,7 +37,7 @@ Het volgende diagram toont het teruggeven van inhoudsdiensten.
 
 ## JSON {#requesting-json} aanvragen
 
-Gebruik **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.] jsonto request JSON.**
+Gebruik **&lt;RESOURCE.caas[.&lt;export-config>.][&lt;export-config>.** jsonto request JSON.]
 
 <table>
  <tbody>
