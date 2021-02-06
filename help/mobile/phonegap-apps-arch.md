@@ -322,7 +322,7 @@ De map after-prepare bevat het bestand `copy_resource_files.js`. Met dit script 
 
 #### .cordova/hooks/before_platform_add/ {#cordova-hooks-before-platform-add}
 
-De map before_platform_add bevat het bestand `install_plugins.js`. Dit script doorloopt een lijst met Cordova-insteekmodules voor insteekmodules, waarbij de id-id&#39;s die het detecteert, worden geïnstalleerd, is nog niet beschikbaar.
+De map before_platform_add bevat het bestand `install_plugins.js`. Dit script doorloopt een lijst met Cordova-insteekmodules voor insteekmodules, waarbij de id-id&#39;s installeert die nog niet beschikbaar zijn.
 
 Deze strategie vereist niet dat u de stop-ins bundelt en installeert om te AEM telkens als het Maven `content-package:install` bevel wordt uitgevoerd. De alternatieve strategie om de bestanden in uw SCM-systeem te controleren, vereist herhaalde bundeling en installatie-activiteiten.
 
