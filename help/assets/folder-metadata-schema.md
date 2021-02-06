@@ -135,7 +135,7 @@ U kunt een schema van omslagmeta-gegevens toewijzen wanneer het creëren van een
 
 1. Tik in de gebruikersinterface van AEM Assets op **[!UICONTROL Create]** op de werkbalk.
 1. Geef een titel en naam voor de map op.
-1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Tik vervolgens op **[!UICONTROL Create]** of klik op &lt;a0/>.
+1. Selecteer het gewenste schema in de lijst Metagegevensschema van map. Tik vervolgens op **[!UICONTROL Create]** of klik op .
 
    ![select_schema](assets/select_schema.png)
 
