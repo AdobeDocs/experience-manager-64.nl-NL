@@ -23,7 +23,7 @@ ht-degree: 0%
 >[!NOTE]
 >
 >Adobe is niet van plan de e-mails die door de AEM SMTP-service worden verzonden, verder te verbeteren.\
->De aanbeveling is om Adobe Campaign en zijn AEM integratie [ te benutten.](/help/sites-administering/campaign.md)
+>De aanbeveling is om Adobe Campaign en zijn AEM integratie ](/help/sites-administering/campaign.md) te benutten.[
 
 E-mailmarketing (bijvoorbeeld nieuwsbrieven) is een belangrijk onderdeel van elke marketingcampagne die u gebruikt om inhoud naar uw leads te sturen. In AEM kunt u nieuwsbrieven maken van bestaande AEM inhoud en nieuwe inhoud toevoegen die specifiek is voor de nieuwsbrieven.
 
