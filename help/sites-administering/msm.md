@@ -149,7 +149,7 @@ MSM is direct toegankelijk in UI gebruikend diverse opties van de aangewezen con
 
 * **Overzicht**  van live kopiëren (**sites**)
 
-   * Met deze console kunt u uw blauwdruk en de bijbehorende live kopieën [ weergeven en beheren.](/help/sites-administering/msm-livecopy-overview.md)
+   * Met deze console kunt u uw blauwdruk en de bijbehorende live kopieën ](/help/sites-administering/msm-livecopy-overview.md) weergeven en beheren.[
 
 * **Blauwdrukken**  (**gereedschappen**  -  **Sites**)
 
@@ -402,7 +402,7 @@ Rollouts kunnen ingewikkeld worden, vooral wanneer de auteurs inhoud in zowel de
 
 Elke pagina en component in een live kopie wordt via een live relatie gekoppeld aan de bronpagina en -component ervan. De levende verhouding vormt de synchronisatie van levende exemplaarinhoud van de bron.
 
-U kunt **De overerving van de levende kopie voor een levende exemplaarpagina opheffen &lt;a0/>Opschorsen zodat u pagina-eigenschappen en componenten kunt veranderen.** Wanneer u overerving onderbreekt, worden de pagina-eigenschappen en -componenten niet meer gesynchroniseerd met de bron.
+U kunt **De overerving van de levende kopie voor een levende exemplaarpagina opheffen** Opschorsen zodat u pagina-eigenschappen en componenten kunt veranderen. Wanneer u overerving onderbreekt, worden de pagina-eigenschappen en -componenten niet meer gesynchroniseerd met de bron.
 
 Tijdens het bewerken van een afzonderlijke pagina kunnen auteurs Overerving **Annuleren** voor een component. Wanneer de overerving wordt geannuleerd, wordt de live relatie onderbroken en vindt de synchronisatie niet plaats voor die component. Het annuleren van overerving en synchronisatie is handig wanneer subsecties van de inhoud moeten worden aangepast.
 
