@@ -347,7 +347,7 @@ De markering:
 
 Wordt weergegeven als:
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 De look-and-feel wordt gedefinieerd in LESS, gekoppeld aan een element met een speciale klassenaam (het volgende extract is verkort omwille van de beknoptheid):
 
