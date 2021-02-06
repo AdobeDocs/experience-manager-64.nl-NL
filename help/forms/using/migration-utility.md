@@ -92,7 +92,7 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
 
 1. Voer de volgende handelingen uit om de migratie uit te voeren:
 
-   * Tik op **Migratie starten** om **assets** te migreren en tik in het volgende scherm op &lt;a2/>Migratie starten&lt;a3/>. De volgende code wordt gemigreerd:
+   * Tik op **Migratie starten** om **assets** te migreren en tik in het volgende scherm op Migratie starten. De volgende code wordt gemigreerd:
 
       * Aangepaste formulieren
       * Documentfragmenten
@@ -111,7 +111,7 @@ Wanneer u het Hulpprogramma van de Migratie voor het eerst in werking stelt, wor
       >  
    * Regels en Scripts die zijn gemaakt met een regeleditor (6.1 FP1 en hoger)
    >  * Scripts die zijn gemaakt met het tabblad Script in de gebruikersinterface van 6.1 en eerder
-   >* Tik op Adaptieve Forms-sjabloonmigratie en tik in het volgende scherm op Start Migration om sjablonen te migreren (niet vereist als u vanaf 6.3 een upgrade uitvoert). De volgende code wordt gemigreerd:
+   >* Tik op Adaptive Forms Template Migration en tik in het volgende scherm op Start Migration om sjablonen te migreren (niet vereist als u een upgrade uitvoert vanaf 6.3). De volgende code wordt gemigreerd:
 
       >
       >  
