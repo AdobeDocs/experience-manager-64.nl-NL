@@ -33,7 +33,7 @@ Voer het volgende uit om het gebruik van adaptieve formulieren in procesontwerp 
 
 ### LiveCycle-toepassing exporteren en importeren {#livecycle-application-export-and-import}
 
-Omdat adaptieve formulieren zich in de AEM opslagplaats bevinden, bevat de export van de LiveCycle-toepassing alleen de referenties voor gebruikte adaptieve formulieren. Daarom is het exporteren en importeren van LiveCycle-toepassingen een proces in twee stappen. De LiveCycle-toepassing bevat procesdefinities, enzovoort. Een afzonderlijk pakket met adaptieve formulieren wordt vanuit AEM geëxporteerd als een ZIP-bestand. Tijdens het importeren wordt de LiveCycle-toepassing geïmporteerd via Workbench en worden adaptieve formulieren geïmporteerd via AEM.
+Omdat adaptieve formulieren zich in de AEM opslagplaats bevinden, bevat de export van de LiveCycle-toepassing alleen de referenties voor gebruikte adaptieve formulieren. Daarom is het exporteren en importeren van LiveCycle-toepassingen een proces in twee stappen. De toepassing LiveCycle bevat procesdefinities, enzovoort. Een afzonderlijk pakket met adaptieve formulieren wordt vanuit AEM geëxporteerd als een ZIP-bestand. Tijdens het importeren wordt de LiveCycle-toepassing geïmporteerd via Workbench en worden adaptieve formulieren geïmporteerd via AEM.
 
 ## Gebruikerservaring van adaptief formulier in HTML-werkruimte {#user-experience-of-adaptive-form-in-html-workspace}
 
