@@ -147,7 +147,7 @@ Adobe Experience Manager 6.4.8.2 biedt oplossingen voor de volgende problemen.
 
 * De gebruikers kunnen geen componenten aan parsys na het vierde niveau van genestelde componenten (NPR-33873) toevoegen of uitgeven.
 * Als de initiële inhoud van een bewerkbare sjabloon wordt gewijzigd en de sjabloon vervolgens wordt gepubliceerd, geven nieuwe pagina&#39;s die met deze sjabloon zijn gemaakt de gepubliceerde datum van de sjabloon weer, ook al worden de pagina&#39;s niet gepubliceerd (NPR-33822).
-* De `cq:acLinks`- en `cq:acUUID`-eigenschappen voor [!DNL Adobe Campaign] op de kopie worden tijdens kopiëren en plakken verwijderd (NPR-33793).
+* De eigenschappen `cq:acLinks` en `cq:acUUID` voor [!DNL Adobe Campaign] op de kopie worden tijdens kopieer- en plakbewerking verwijderd (NPR-33793).
 * Op het tabblad [!UICONTROL Live Usage] worden slechts 49 resultaten weergegeven. Het geeft niet alle gebruik van de component weer (NPR-33710).
 * Een webpagina met het teken `/` in de URL reageert niet tijdens het ontwerpen. Wanneer een component tijdens het ontwerpen wordt toegevoegd, neemt het CPU-gebruik toe en reageert de browser niet meer (NPR-33625).
 * In de inline bewerkingsmodus van [!DNL RTE] werkt het slepen van een afbeelding niet voor de component Text (NPR-33579).
