@@ -151,7 +151,7 @@ Zie [Adobe Campaign Components](/help/sites-classic-ui-authoring/classic-persona
 
 ### Een nieuwsbrief {#previewing-a-newsletter} voorvertonen
 
-U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie.
+U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie bekijken.
 
 1. Open de nieuwsbrief u voorproef en klik Voorproef (vergrootglas) om hulpdekick te krimpen.
 1. Klik op een van de e-mailclientpictogrammen om te zien hoe uw nieuwsbrief er in elke e-mailclient uitziet.
