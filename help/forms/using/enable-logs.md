@@ -101,7 +101,7 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
    <td>FOUT<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>3</td> 
+   <td>1</td> 
    <td>WARN<br type="_moz" /> </td> 
   </tr> 
   <tr> 
