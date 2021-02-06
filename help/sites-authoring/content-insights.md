@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Content Insight biedt informatie over de prestaties van pagina&#39;s aan de hand van webanalyses en SEO-aanbevelingen. Met Inzicht in inhoud kunt u bepalen hoe pagina&#39;s moeten worden gewijzigd of hoe vorige wijzigingen de prestaties hebben gewijzigd. Voor elke pagina die u ontwerpt, kunt u Inzicht van de Inhoud openen om de pagina te analyseren.
 
-![chlimage_1-310](assets/chlimage_1-311.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 De lay-out van de pagina Inzicht in inhoud wordt aangepast aan de schermafmetingen en de stand van het apparaat dat u gebruikt.
 
