@@ -83,7 +83,7 @@ U kunt pagina&#39;s activeren in de console Websites. Nadat u een pagina hebt ge
 
 1. Indien nodig, AEM u verzoeken om elementen die aan de pagina zijn gekoppeld, te activeren of opnieuw te activeren. U kunt de selectievakjes in- of uitschakelen om deze elementen te activeren.
 
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
 1. AEM WCM activeert de geselecteerde inhoud. De gepubliceerde pagina of pagina&#39;s worden weergegeven in de [Websiteconsole](/help/sites-classic-ui-authoring/author-env-basic-handling.md#page-information-on-the-websites-console) (groen gemarkeerd) met informatie over wie de inhoud heeft geactiveerd en over de datum en tijd van activering.
 
