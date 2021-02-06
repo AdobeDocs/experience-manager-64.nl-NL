@@ -67,7 +67,7 @@ Als u een hogere maximale bestandsgrootte wilt configureren, voert u de volgende
 1. Stel op de pagina **[!UICONTROL Adobe Granite Workflow External Process Job Handler]** de seconden voor zowel **[!UICONTROL Default Timeout]** als **[!UICONTROL Max Timeout]** velden in op `18000` (vijf uur).
 1. Tik op **[!UICONTROL Save]**.
 1. Tik in AEM op **[!UICONTROL Tools > Workflow > Models]**.
-1. Selecteer **[!UICONTROL Workflow Models]** op de pagina &lt;a0/> en tik **[!UICONTROL Edit]**.**[!UICONTROL Dynamic Media Encode Video]**
+1. Selecteer **[!UICONTROL Workflow Models]** op de pagina **[!UICONTROL Dynamic Media Encode Video]** en tik **[!UICONTROL Edit]**.
 1. Tik op de pagina **[!UICONTROL Workflow]** op de component **[!UICONTROL Dynamic Media Video Service Process]**.
 1. Vouw **[!UICONTROL Advanced Settings]** onder het tabblad **[!UICONTROL Common]** in het dialoogvenster **[!UICONTROL Step Properties]** uit.
 1. Geef in het veld **[!UICONTROL Timeout]** een waarde op van `18000` en tik vervolgens op **[!UICONTROL OK]** om terug te keren naar de workflowpagina **[!UICONTROL Dynamic Media Encode Video]**.
