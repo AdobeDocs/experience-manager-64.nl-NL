@@ -136,7 +136,7 @@ Voer de volgende stappen uit om een XDP-document te converteren naar een PDF-doc
 
 1. Inclusief projectbestanden.
 1. Maak een PDFUtilityService-client.
-1. Roep de conversiebewerking XDP naar PDF aan.
+1. Voer de conversiebewerking XDP naar PDF uit.
 
 **Projectbestanden opnemen**
 
@@ -419,7 +419,7 @@ Stel de opslagopties voor PDF-documenten in met behulp van het AP PDF-hulpprogra
 1. De modus Opslaan instellen
 
    * Maak een `PDFUtilitySaveMode`-object met de constructor ervan.
-   * Stel de opslagmodus in door een tekenreekswaarde toe te wijzen aan de methode `PDFUtilitySaveMode` van het object waarmee de opslagmodus wordt opgegeven. `saveStyle` Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u `FAST_WEB_VIEW` op.
+   * Stel de opslagmodus in door een tekenreekswaarde toe te wijzen aan de methode `saveStyle` van het object waarmee de opslagmodus wordt opgegeven. `PDFUtilitySaveMode` Als u bijvoorbeeld wilt opslaan voor snelle webweergave, geeft u `FAST_WEB_VIEW` op.
 
 1. Opslaan van stijlbewerking aanroepen
 
