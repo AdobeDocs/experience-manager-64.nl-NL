@@ -33,7 +33,7 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 ## http://localhost:4503/content/sites/engage/en.html {#http-localhost-content-sites-engage-en-html}
 
-![chlimage_1-310](assets/chlimage_1-311.png)
+![chlimage_1-311](assets/chlimage_1-311.png)
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
@@ -172,7 +172,7 @@ Als u doorgaat met publiceren, meldt u zich af als Aaron McDonald en bekijkt u d
 
 Alleen de Baseball-groep is zichtbaar.
 
-Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Let op: Weston kan de open `Join` groep `Baseball` en de private `enter or Leave`groep &lt;a2/> &lt;a3.`Gymnastics`
+Meld u aan bij Weston McCall (weston.mccall@dodgit.com / wachtwoord) en navigeer naar dezelfde locatie. Let op: Weston kan de open `Baseball` groep `enter or Leave` en de private `Gymnastics`groep `Join` &lt;a3.
 
 ![chlimage_1-320](assets/chlimage_1-320.png)
 
