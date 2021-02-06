@@ -232,7 +232,7 @@ Een site koppelen aan een gebied:
 
    ![chlimage_1-283](assets/chlimage_1-283.png)
 
-1. Selecteer het gebied in de vervolgkeuzelijst **Referentiegebied** en tik op **Opslaan** of klik op &lt;a2/>Opslaan.
+1. Selecteer het gebied in de vervolgkeuzelijst **Referentiegebied** en tik op **Opslaan** of klik op Opslaan.
 
    ![chlimage_1-284](assets/chlimage_1-284.png)
 
