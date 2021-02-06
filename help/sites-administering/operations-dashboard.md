@@ -702,7 +702,7 @@ Het **systeemoverzicht dashboard** toont een overzicht op hoog niveau van de con
 
 >[!NOTE]
 >
->U kunt [deze video](https://video.tv.adobe.com/v/21340?captions=dut) voor een inleiding aan het Dashboard van het Overzicht van het Systeem ook bekijken.
+>U kunt [deze video](https://video.tv.adobe.com/v/21340) voor een inleiding aan het Dashboard van het Overzicht van het Systeem ook bekijken.
 
 ### Hoe te om tot {#how-to-access} toegang te hebben
 
