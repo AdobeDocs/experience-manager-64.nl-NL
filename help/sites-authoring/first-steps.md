@@ -38,7 +38,7 @@ Hieronder wordt de basisvolgorde beschreven van gebeurtenissen die u nodig hebt 
 
 ### Naar de paginalocatie navigeren {#navigating-to-the-page-location}
 
-De inhoud van uw website staat in een boomstructuur. Als u een pagina wilt maken of bewerken, navigeert u naar de locatie[.](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources)
+De inhoud van uw website staat in een boomstructuur. Als u een pagina wilt maken of bewerken, navigeert u naar de locatie](/help/sites-authoring/basic-handling.md#viewing-and-selecting-resources).[
 
 ### Een nieuwe pagina maken {#creating-a-new-page}
 
