@@ -50,7 +50,7 @@ Selecteer de geplaatste `Search` component en selecteer `Configure` pictogram da
 
 Geef onder het tabblad **[!UICONTROL Search Settings]** op hoe de paden worden doorzocht wanneer een query door een bezoeker wordt ingevoerd.
 
-![chlimage_1-375](assets/chlimage_1-375.png)
+![chlimage_1-376](assets/chlimage_1-375.png)
 
 * **[!UICONTROL Search Paths]**
 Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt. Als voorbeeld, om het onderzoek tot een specifiek forum te beperken, selecteer een forumcomponent die binnen een pagina wordt geplaatst:
