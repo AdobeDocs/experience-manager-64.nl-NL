@@ -389,8 +389,8 @@ In beide gevallen kunt u het verwachte aantal transacties per seconde definiëre
 |---|---|---|---|---|---|
 | Homepage voor één gebruiker | Gemiddelde | 1 | 3 |  |  |
 |  | Piek | 3 | 3 |  |  |
-| Homepage 100 gebruikers | Gemiddelde | 100 | 3 |  |  |
-|  | Piek | 100 | 3 |  |
+| Homepage 100 gebruikers | Gemiddelde | 100 | 1 |  |  |
+|  | Piek | 100 | 1 |  |
 
 #### Gecombineerde componenttests {#combined-component-tests}
 
@@ -435,7 +435,7 @@ Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet a
 | Overbelasting van component zoeken | Zoeken op jokerteken (sterretje) | 10 | 3 |  | Alleen &amp;ast;&amp;ast;&amp;ast; worden doorzocht. |
 |  | Woord stoppen | 20 | 2 |  | Zoeken naar een stopwoord. |
 |  | Lege tekenreeks | 10 | 3 |  | Zoeken naar een lege tekenreeks. |
-|  | Speciale tekens | 10 | 3 |  | Zoeken naar speciale tekens. |
+|  | Speciale tekens | 10 | 1 |  | Zoeken naar speciale tekens. |
 
 #### Duurzaamheidstests {#endurance-tests}
 
@@ -447,7 +447,7 @@ Bepaalde problemen zullen pas worden ondervonden nadat het systeem gedurende een
 |  | Zoeken | 10 | 3 |  |  |
 |  | Nieuws | 20 | 2 |  |  |
 |  | Gebeurtenissen | 10 | 3 |  |  |
-|  | Activering | 3 | 3 |  | Simulatie van het gedrag van de auteur. |
+|  | Activering | 1 | 1 |  | Simulatie van het gedrag van de auteur. |
 
 ### Optimalisatie {#optimization}
 
