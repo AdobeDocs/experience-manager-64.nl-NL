@@ -24,7 +24,7 @@ ht-degree: 0%
 >
 >Adobe is niet van plan om het bijhouden van geopende/aangekondigde e-mails die door AEM SMTP-service worden verzonden, verder te verbeteren.
 >
->De aanbeveling is om Adobe Campaign en zijn AEM integratie [ te benutten.](/help/sites-administering/campaign.md)
+>De aanbeveling is om Adobe Campaign en zijn AEM integratie ](/help/sites-administering/campaign.md) te benutten.[
 
 Wanneer u een nieuwsbrief naar veel gebruikers verzendt, bevat de lijst meestal enkele ongeldige e-mailadressen. Het verzenden van nieuwsbrieven naar die adressen stuitert terug. AEM kan deze grenzen beheren en kan stoppen met het verzenden van nieuwsbrieven naar die adressen nadat de geconfigureerde stuiterteller is overschreden. Door gebrek, wordt het stuiterende tarief geplaatst aan 3 maar configureerbaar.
 
