@@ -214,7 +214,7 @@ Er zijn twee (hoofd) methodes van [het uitgeven van pagina eigenschappen](/help/
 
 ## Uw pagina publiceren (of Publiceren ongedaan maken) {#publishing-your-page-or-unpublishing}
 
-Er zijn twee hoofdmethoden om uw pagina[ te publiceren (en ook om het publiceren ongedaan te maken):](/help/sites-authoring/publishing-pages.md)
+Er zijn twee hoofdmethoden om uw pagina](/help/sites-authoring/publishing-pages.md) te publiceren (en ook om het publiceren ongedaan te maken):[
 
 * Vanuit de **Sites**-console:
 
