@@ -102,7 +102,7 @@ Gebruik de volgende procedure om de pagina van het Beheer van de Topologie van d
 1. Open de webconsole in uw browser. ([http://localhost:4502/system/console](http://localhost:4502/system/console))
 1. Klik op Hoofd > Topologiebeheer.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Het vormen Lidmaatschap van de Topologie {#configuring-topology-membership}
 
@@ -193,7 +193,7 @@ Taken zijn verspreide hoeveelheden die het bijbehorende onderwerp hebben dat is 
 1. Als u het gebruik van een onderwerp voor een instantie wilt uitschakelen, klikt u onder de bovenste naam op Uitschakelen naast de instantie.
 1. Om al onderwerpconsumptie voor een instantie te vormen, klik het instantieherkenningsteken onder om het even welk onderwerp.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. Klik één van de volgende knopen naast een onderwerp om het verbruiksgedrag voor de instantie te vormen, en dan sparen te klikken:
 
@@ -238,7 +238,7 @@ Het offloading-framework gebruikt replicatie om bronnen tussen auteur en worker 
 
 Creeer de replicatieagenten die baanlading tussen instanties voor het ontladen vervoeren. De volgende illustratie toont de agenten die worden vereist om van de auteur aan een arbeidersinstantie te offloaden. De auteur heeft een Sling-id van 1 en de arbeidersinstantie heeft een Sling-id van 2:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 Deze opstelling vereist de volgende drie agenten:
 
