@@ -133,7 +133,7 @@ Zodra de configuratie volledig is, is het noodzakelijk om overerving te herstell
 
 Nadat de overerving is geannuleerd, kan het pictogram `configure` worden geselecteerd om het configuratiedialoogvenster te openen.
 
-![chlimage_1-481](assets/chlimage_1-401.png)
+![chlimage_1-401](assets/chlimage_1-401.png)
 
 #### Standaardtabblad {#basic-tab-1}
 
