@@ -106,7 +106,7 @@ AEM is geconfigureerd om een van de drie services te gebruiken voor pushberichte
 
 >[!NOTE]
 >
->*Hier vindt u informatie over Amazon SNS en een koppeling om een nieuwe AWS-account te maken. U vindt deze  [koppeling](https://aws.amazon.com/sns/). U kunt een jaar lang een gratis account opvragen.*
+>*Hier vindt u informatie over Amazon SNS en een koppeling om een nieuwe AWS-account te maken. U vindt deze koppeling  [hier](https://aws.amazon.com/sns/). U kunt een jaar lang een gratis account opvragen.*
 
 Als u geen SNS van Amazon wilt gebruiken kunt u deze stappen overslaan.
 
@@ -175,7 +175,7 @@ Ga als volgt te werk om Amazon SNS in te stellen voor pushberichten:
    <table> 
     <tbody> 
      <tr> 
-     <td><p> </p> <p>{</p> <p> "Versie": "2012-10-17",</p> <p> "Verklaring": [</p> <p> {</p> <p> "Actie": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effect": "Toestaan",</p> <p> "Bron": [</p> <p> "*"</p> <p> _</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td> 
+     <td><p> </p> <p>{</p> <p> "Versie": "2012-10-17",</p> <p> "Verklaring": [</p> <p> {</p> <p> "Actie": [</p> <p> "mobileanalytics:PutEvents",</p> <p> "cognito-sync:*",</p> <p> "SNS:CreatePlatformEndpoint",</p> <p> "SNS:Subscribe"</p> <p> ],</p> <p> "Effect": "Toestaan",</p> <p> "Bron": [</p> <p> "*"</p> <p> ]</p> <p> }</p> <p> ]</p> <p>}</p> <p> </p> </td> 
      </tr> 
     </tbody> 
     </table>
@@ -337,7 +337,7 @@ Maak de melding, voeg een knoptekst en koppelingspad toe voor de optionele koppe
 
 1. Selecteer **Pushwoosh Connection**. Klik op **Next**.
 
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. Voer de details van de eigenschappen in en klik op **Verzenden**.
 
@@ -353,7 +353,7 @@ Als de tegel **Push Notifications** in het dashboard wordt weergegeven, gebruikt
 
 1. Klik op het toevoegsymbool in de rechterbovenhoek van de tegel **Push Notifications** om de wizard **Melding maken** te openen.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. Wanneer u op het bladerpictogram in het koppelingspad klikt, krijgt de gebruiker de inhoudstructuur van de app te zien.
 
@@ -369,7 +369,7 @@ Als de tegel **Push Notifications** in het dashboard wordt weergegeven, gebruikt
 
 1. Typ de **Tekstdetails** in **Wizard Melding maken** en klik op **Maken**.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
    Open de details door op de dupmelding te klikken u van de **Push Notifications** tegel creeerde.
 
