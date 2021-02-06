@@ -245,7 +245,7 @@ De component Interactieve media is slim. Afhankelijk van het feit of u een afbee
 > 
 >Om dit probleem te voorkomen, moet u ervoor zorgen dat AEM Sites-gebruikers de benodigde machtigingen hebben om toegang te krijgen tot de middelen.
 
-![chlimage_1-540](assets/chlimage_1-541.png)
+![chlimage_1-541](assets/chlimage_1-541.png)
 
 U kunt de volgende **[!UICONTROL General]** montages uitgeven door **[!UICONTROL Edit]** in de component te klikken.
 
