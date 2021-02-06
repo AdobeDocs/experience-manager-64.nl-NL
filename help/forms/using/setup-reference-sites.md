@@ -344,7 +344,7 @@ Om een rapport te produceren, worden de zaadgegevens gebundeld met de verwijzing
 
 1. Ga naar https://&lt;*host*>:&lt;*port*/system/console/configMgr en voer de volgende handelingen uit:
 
-   * Zoek op de pagina **[!UICONTROL Web Console Configuration]** naar **[!UICONTROL AEM Forms Analytics Configuration]** en klik op &lt;a1/>.
+   * Zoek op de pagina **[!UICONTROL Web Console Configuration]** naar **[!UICONTROL AEM Forms Analytics Configuration]** en klik op .
    * Selecteer in het veld **[!UICONTROL SiteCatalyst Framework]** van het dialoogvenster AEM Forms Analytics Configuration (Configuratie van Analytics) de optie wij-finance (wij-finance) of we-gov (wij-gov).
    * Klik **[!UICONTROL Save]** en laat de pagina verfrissen.
 
