@@ -58,7 +58,7 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 
 ## Globale instellingen exporteren {#export-global-settings}
 
-1. Voor de Globale pagina van het Beleid, onder de Globale Montages van de Uitvoer, klik de Uitvoer.
+1. Klik op de pagina Algemeen beheer onder Globale instellingen exporteren op Exporteren.
 1. Sla het bestand op uw computer op.
 
 ## Algemene instellingen werkruimte {#workspace-global-settings}
