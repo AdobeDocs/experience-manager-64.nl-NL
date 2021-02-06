@@ -50,7 +50,7 @@ Binnen AEM wordt de levering bereikt gebruikend de selecteur `model` en `.json` 
 
 1. Zal inhoud leveren zoals:
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 U kunt de inhoud van een gestructureerd inhoudsfragment ook leveren door dit specifiek te activeren.
 
