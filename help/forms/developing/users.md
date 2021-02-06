@@ -237,12 +237,12 @@ Voeg gebruikers toe met de API (webservice) van Directory Manager:
 1. Gebruikersgegevens definiëren.
 
    * Maak een `UserImpl`-object met de constructor ervan.
-   * Stel de naam van het domein in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`domainName`
-   * Stel het hoofdtype in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object. `principalType` U kunt bijvoorbeeld `USER` opgeven.
-   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`userid`
-   * Stel de canonieke naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`canonicalName`
-   * Stel de opgegeven naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`givenName`
-   * Stel de naam van de familie in door een tekenreekswaarde toe te wijzen aan het veld `UserImpl` van het object.`familyName`
+   * Stel de naam van het domein in door een tekenreekswaarde toe te wijzen aan het veld `domainName` van het object.`UserImpl`
+   * Stel het hoofdtype in door een tekenreekswaarde toe te wijzen aan het veld `principalType` van het object. `UserImpl` U kunt bijvoorbeeld `USER` opgeven.
+   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `userid` van het object.`UserImpl`
+   * Stel de canonieke naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `canonicalName` van het object.`UserImpl`
+   * Stel de opgegeven naamwaarde in door een tekenreekswaarde toe te wijzen aan het veld `givenName` van het object.`UserImpl`
+   * Stel de naam van de familie in door een tekenreekswaarde toe te wijzen aan het veld `familyName` van het object.`UserImpl`
 
 1. Voeg de gebruiker toe aan AEM Forms.
 
@@ -366,7 +366,7 @@ Gebruikers verwijderen met de API voor directoryservice (webservice):
 1. Geef de gebruiker op die u wilt verwijderen.
 
    * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
-   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `PrincipalSearchFilter` van het object.`userId`
+   * Stel de waarde van de gebruikersidentificatie in door een tekenreekswaarde toe te wijzen aan het veld `userId` van het object.`PrincipalSearchFilter`
    * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode keert een `MyArrayOfUser` inzamelingsvoorwerp terug, waar elk element een `User` voorwerp is. Doorloop de verzameling `MyArrayOfUser` om de gebruiker te zoeken. Het object `User` dat is opgehaald uit het verzamelingsobject `MyArrayOfUser` wordt gebruikt om de gebruiker te verwijderen.
 
 1. Verwijder de gebruiker uit AEM Forms.
@@ -474,7 +474,7 @@ Maak een groep met de API voor directoryservice (Java):
    * Maak een `PrincipalSearchFilter`-object met de constructor ervan.
    * Stel de waarde van de gebruikersidentificatie in door de methode `setUserId` van het object `PrincipalSearchFilter` aan te roepen. Geef een tekenreekswaarde door die de waarde van de gebruikersidentificatie vertegenwoordigt.
    * Roep de methode `DirectoryManagerServiceClient` van het object `findPrincipals` aan en geef het object `PrincipalSearchFilter` door. Deze methode retourneert een `java.util.List`-instantie, waarbij elk element een `User`-object is. Doorloop de instantie `java.util.List` om de gebruiker te zoeken.
-   * Voeg een gebruiker aan de groep toe door de `DirectoryManagerServiceClient` methode van het voorwerp `addPrincipalToLocalGroup` aan te halen. Geef de geretourneerde waarde van de methode `User` van het object door. `getOid` Geef de geretourneerde waarde van de methode `Group` van de objecten door (gebruik de instantie `getOid` die de nieuwe groep vertegenwoordigt).`Group`
+   * Voeg een gebruiker aan de groep toe door de `DirectoryManagerServiceClient` methode van het voorwerp `addPrincipalToLocalGroup` aan te halen. Geef de geretourneerde waarde van de methode `getOid` van het object door. `User` Geef de geretourneerde waarde van de methode `getOid` van de objecten door (gebruik de instantie `Group` die de nieuwe groep vertegenwoordigt).`Group`
 
 **Zie ook**
 
@@ -752,7 +752,7 @@ De volgende lijst beschrijft de stappen in dit diagram
    <td><p>De gebruikersgegevens worden geverifieerd met de service Verificatiebeheer. Als de gebruikersgegevens geldig zijn, gaat de workflow naar stap 3. Anders wordt een bericht naar de gebruiker verzonden waarin wordt aangegeven dat de gebruiker geen geautoriseerde gebruiker is.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Gebruikersgegevens en een formulierontwerp worden opgehaald uit een beveiligde ondernemingsdatabase. </p></td> 
   </tr> 
   <tr> 
@@ -870,7 +870,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead> 
  <tbody>
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Een clienttoepassing vraagt of AEM Forms een synchronisatiebewerking uitvoert.</p></td> 
   </tr> 
   <tr> 
@@ -878,7 +878,7 @@ De volgende lijst beschrijft de stappen in dit diagram
    <td><p>AEM Forms voert een synchronisatiebewerking uit.</p></td> 
   </tr> 
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>Gebruikersgegevens worden bijgewerkt.</p></td> 
   </tr> 
   <tr> 
