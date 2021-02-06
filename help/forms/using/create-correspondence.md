@@ -251,7 +251,7 @@ U kunt de lay-out en de inhoud aanpassen om ervoor te zorgen dat de brief de man
 
    ![saveascript](assets/saveasdraft.png)
 
-   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Done**. U kunt deze id later gebruiken om het concept letter[ opnieuw te laden.](submit-letter-topostprocess.md#reloaddraft)
+   Het dialoogvenster Letternaam concept wordt weergegeven met de id van het lettertype. U kunt deze id desgewenst bewerken. Noteer de letter-id en tik op **Done**. U kunt deze id later gebruiken om het concept letter](submit-letter-topostprocess.md#reloaddraft) opnieuw te laden.[
 
 1. Tik op Voorvertoning ( ![preview](assets/preview.png)) om een voorvertoning van de letter weer te geven als een afgevlakte PDF met de exacte indeling en pagina-einden zoals deze worden verzonden.
 
