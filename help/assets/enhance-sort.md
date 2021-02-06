@@ -87,5 +87,5 @@ Met AEM Assets kunt u tijdlijnvermeldingen chronologisch sorteren, zoals annotat
 
 1. Klik/tik het **[!UICONTROL Sort]** pictogram naast het **[!UICONTROL Date]** etiket. Op basis van uw selectie worden de annotaties weergegeven in de chronologische volgorde/omgekeerde chronologische volgorde waarin ze aan het element zijn toegevoegd.
 
-   ![chlimage_1-481](assets/chlimage_1-401.png)
+   ![chlimage_1-401](assets/chlimage_1-401.png)
 
