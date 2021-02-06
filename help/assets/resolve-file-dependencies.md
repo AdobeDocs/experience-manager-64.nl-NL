@@ -50,7 +50,7 @@ Bestandsafhankelijkheden van primaire 3D-modellen, zoals bestanden met structuur
 
    * **Negeer de afhankelijkheden**.
 
-      Als er geen ontbrekende afhankelijkheid meer nodig is, typt u **[!UICONTROL Referenced Asset]** in het tekstveld links van het ontbrekende bestand, zodat AEM 3D het bestand negeert.`n/a`
+      Als er geen ontbrekende afhankelijkheid meer nodig is, typt u `n/a` in het tekstveld links van het ontbrekende bestand, zodat AEM 3D het bestand negeert.**[!UICONTROL Referenced Asset]**
 
 
 
