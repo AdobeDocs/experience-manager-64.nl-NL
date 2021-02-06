@@ -64,7 +64,7 @@ Met de inhoudsfragmenten kunt u:
    * Kan inhoudsfragment delen.
    * Kan vertalingen centraal beheren.
 
-* **Producenten en journalisten**
+* **Producenten en reismanagers**
 
    * Maak een keuze uit vooraf gedefinieerde fragmenten en variaties bij het ontwerpen in AEM.
    * Kan erop vertrouwen dat het fragment en de bijbehorende inhoud altijd up-to-date zijn terwijl kopieerschrijvers en -creatieven hun updates in centraal beheerde fragmenten en elementen maken.
@@ -138,7 +138,7 @@ In het juiste configuratiedialoogvenster kunt u de beschikbare parameters select
 
 ## Snelle verbinding met fragmenteditor {#quick-connection-to-fragment-editor}
 
-U kunt de fragmentbron voor bewerking (het element) openen met het pictogram **[!UICONTROL Edit]** op de componentwerkbalk. Hierdoor kunt u het inhoudsfragment[ bewerken en beheren.](/help/assets/content-fragments.md)
+U kunt de fragmentbron voor bewerking (het element) openen met het pictogram **[!UICONTROL Edit]** op de componentwerkbalk. Hierdoor kunt u het inhoudsfragment](/help/assets/content-fragments.md) bewerken en beheren.[
 
 >[!CAUTION]
 >
