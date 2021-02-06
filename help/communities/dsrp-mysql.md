@@ -105,13 +105,13 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 #### Nieuwe verbinding Gemeenschappen {#new-communities-connection}
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ## Database-instelling {#database-setup}
 
 Open de verbinding van de Gemeenschappen om het gegevensbestand te installeren.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### SQL-script ophalen {#obtain-the-sql-script}
 
@@ -179,7 +179,7 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 * `Day Commons JDBC Connections Pool` zoeken
 * Selecteer het pictogram `+` om een nieuwe verbindingsconfiguratie tot stand te brengen
 
-![chlimage_1-111](assets/chlimage_1-111.png)
+![chlimage_1-191](assets/chlimage_1-111.png)
 
 * Voer de volgende waarden in:
 
