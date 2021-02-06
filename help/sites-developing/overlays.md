@@ -63,7 +63,7 @@ Sinds AEM 6.0 zijn wijzigingen aangebracht in de manier waarop overlays worden g
 >
 >Bij overlays voor andere gebieden (waaronder de klassieke UI) worden het juiste knooppunt en de volledige substructuur gekopieerd en worden vervolgens de vereiste wijzigingen aangebracht.
 
-Bedekkingen zijn de aanbevolen methode voor vele wijzigingen, zoals het configureren van de consoles[ of ](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console)het maken van uw selectiecategorie in de middelenbrowser in het zijpaneel[ (wordt gebruikt bij het ontwerpen van pagina&#39;s). ](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) Zij zijn vereist als:
+Bedekkingen zijn de aanbevolen methode voor vele wijzigingen, zoals het configureren van de consoles](/help/sites-developing/customizing-consoles-touch.md#create-a-custom-console) of [het maken van uw selectiecategorie in de middelenbrowser in het zijpaneel](/help/sites-developing/customizing-page-authoring-touch.md#add-new-selection-category-to-asset-browser) (wordt gebruikt bij het ontwerpen van pagina&#39;s). [ Zij zijn vereist als:
 
 * U ***mag niet* wijzigingen aanbrengen in de `/libs`-vertakking **Alle wijzigingen die u aanbrengt, kunnen verloren gaan, omdat deze vertakking mogelijk wordt gewijzigd wanneer u:
 
