@@ -55,7 +55,7 @@ Elke klant krijgt een uniek klant-id-nummer toegewezen, waarmee relevante klantg
 
    ![gewend](assets/whencustomeridischanged.png)
 
-1. Selecteer **[!UICONTROL THEN]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie &lt;a0/>.**[!UICONTROL Invoke Service]**
+1. Selecteer **[!UICONTROL THEN]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie **[!UICONTROL Invoke Service]**.
 1. Selecteer de **[!UICONTROL Retrieve Shipping Address]** dienst van **[!UICONTROL Select]** drop-down.
 1. Sleep het veld **[!UICONTROL Customer ID]** van het tabblad Formulierobjecten naar het veld **[!UICONTROL Drop object or select here]** in het vak **[!UICONTROL INPUT]**.
 
@@ -118,7 +118,7 @@ De volgende procedure laat zien hoe u een regel maakt om een foutbericht weer te
 
    ![gewend](assets/whencustomeridischanged.png)
 
-   Selecteer **[!UICONTROL THEN]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie &lt;a0/>.**[!UICONTROL Invoke Service]**
+   Selecteer **[!UICONTROL THEN]** in de vervolgkeuzelijst **[!UICONTROL Select Action]** in de instructie **[!UICONTROL Invoke Service]**.
 
 1. Overschakelen van **[!UICONTROL Visual Editor]** naar **[!UICONTROL Code Editor]**. De schakelaarcontrole is op de rechterkant van het venster. De Redacteur van de Code opent, tonend code gelijkend op het volgende:
 
