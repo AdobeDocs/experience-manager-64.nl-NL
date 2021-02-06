@@ -29,7 +29,7 @@ Zie de volgende richtlijnen voor het ontwikkelen van Content Sync Handlers:
 * Handlers moeten *com.day.cq.contentsync.handler.ContentUpdateHandler* implementeren (rechtstreeks of een klasse uitbreiden die dat doet)
 * Handlers kunnen *com.adobe.cq.mobile.platform.impl.contentsync.handler.AbstractSlingResourceUpdateHandler* uitbreiden
 * Handler mag alleen true rapporteren als deze de cache ContentSync heeft bijgewerkt. Als u Waar onjuist rapporteert, AEM een update maken.
-* De manager zou slechts het geheime voorgeheugen moeten bijwerken als de inhoud werkelijk veranderde. Schrijf niet naar de cache als een wit niet nodig is en vermijd het maken van updates.
+* De manager zou slechts het geheime voorgeheugen moeten bijwerken als de inhoud werkelijk veranderde. Schrijf niet naar de cache als een wit niet nodig is en vermijd het maken van een overbodige update.
 
 ## Buiten de handlers van de Doos {#out-of-the-box-handlers}
 
