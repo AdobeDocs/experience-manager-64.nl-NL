@@ -88,7 +88,7 @@ De index van het Bezit is over het algemeen nuttig voor vragen die bezitsbeperki
    * **type:**  `property` (van het type String)
    * **propertyNames:**  `jcr:uuid` (van type Name)
 
-   In dit voorbeeld wordt de eigenschap `jcr:uuid` geïndexeerd, waarvan de taak is om de universeel unieke id (UUID) weer te geven van het knooppunt waaraan deze is gekoppeld.
+   In dit voorbeeld wordt de eigenschap `jcr:uuid` geïndexeerd, waarvan de taak bestaat uit het beschikbaar maken van de universeel unieke id (UUID) van het knooppunt waaraan het is gekoppeld.
 
 1. Sla de wijzigingen op.
 
