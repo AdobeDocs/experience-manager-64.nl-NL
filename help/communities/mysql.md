@@ -33,7 +33,7 @@ Voordat u MySQL voor de functie enablement van Communities configureert, moet u
    * Kan dezelfde server zijn als AEM instantie van de auteur
 * Installeer op alle AEM de officiële [JDBC-driver voor MySQL](deploy-communities.md#jdbc-driver-for-mysql)
 * [MySQL-workbench](https://dev.mysql.com/downloads/tools/workbench/) installeren
-* Installeer in alle AEM het SCORM-pakket [](enablement.md#scorm)
+* Installeer in alle AEM het SCORM-pakket ](enablement.md#scorm)[
 
 ## MySQL {#installing-mysql} installeren
 
