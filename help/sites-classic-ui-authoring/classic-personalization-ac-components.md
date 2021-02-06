@@ -38,7 +38,7 @@ Wanneer u een nieuwsbrief/e-mail opent die wordt gevormd om met Adobe Campaign t
 
 Een beschrijving van deze componenten vindt u in de volgende sectie.
 
-![chlimage_1-192](assets/chlimage_1-112.png)
+![chlimage_1-112](assets/chlimage_1-112.png)
 
 ### Kop (campagne) {#heading-campaign}
 
@@ -71,7 +71,7 @@ U kunt een afbeelding uploaden, deze vervolgens bewerken en bewerken (bijvoorbee
 
 U kunt een afbeelding uploaden, deze vervolgens bewerken en bewerken (bijvoorbeeld uitsnijden, roteren, koppeling/titel/tekst toevoegen). U kunt een afbeelding van de [Inhoudszoeker](/help/sites-authoring/author-environment-tools.md#thecontentfinderclassicui) rechtstreeks naar de component of het dialoogvenster Bewerken slepen. U kunt ook dubbelklikken in het centrale gedeelte van het dialoogvenster Bewerken om door uw lokale bestandssysteem te bladeren en een afbeelding te uploaden. Op de twee tabbladen van het dialoogvenster Bewerken staan ook alle definities en bewerkingen van de afbeelding:
 
-![chlimage_1-114](assets/chlimage_1-115.png)
+![chlimage_1-115](assets/chlimage_1-115.png)
 
 Wanneer een beeld wordt geladen, kunt u het volgende vormen:
 
