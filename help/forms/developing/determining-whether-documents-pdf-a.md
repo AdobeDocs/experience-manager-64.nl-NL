@@ -246,7 +246,7 @@ Bepaal of een PDF-document PDF/A-compatibel is met behulp van de API (webservice
 
    * Open het veld `AssemblerResult` van het object `documents`. Dit is een object `Map` dat de XML-gegevens bevat die aangeven of het invoer-PDF-document een PDF/A-document is.
    * Doorloop het object `Map` om elk resulterend document te verkrijgen. Vervolgens cast u de waarde van dat arraylid naar een `BLOB`.
-   * Extraheer de binaire gegevens die de XML-gegevens vertegenwoordigen door het veld `BLOB` van het object te openen. `MTOM` In dit veld wordt een array met bytes opgeslagen waarnaar u kunt schrijven als een XML-bestand.
+   * Extraheer de binaire gegevens die de XML-gegevens vertegenwoordigen door het veld `MTOM` van het object te openen. `BLOB` In dit veld wordt een array met bytes opgeslagen waarnaar u kunt schrijven als een XML-bestand.
 
 **Zie ook**
 
