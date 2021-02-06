@@ -1051,7 +1051,7 @@ Een kolom algemeen maken:
 
    Zie `/libs/cq/reporting/components/userreport/genericcol/definitions/dialog`
 
-   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de bijbehorende componenteigenschap (inclusief het pad).
+   * De velden van het dialoogvenster moeten naar dezelfde namen verwijzen als de overeenkomende componenteigenschap (inclusief het pad).
 
       Als u bijvoorbeeld het type algemene kolom configureerbaar wilt maken via het dialoogvenster, gebruikt u een veld met de naam `./definitions/type`.
 
