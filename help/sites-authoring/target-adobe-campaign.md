@@ -95,7 +95,7 @@ Een nieuwsbrief met doelinhoud maken:
 
 1. Klik **Standaard** en dan de component van de Tekst en van de Personalisatie u toevoegde en u ziet de Bullseye met een pijl in het. Klik op het pictogram om deze component als doel in te stellen.
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. Navigeer naar een ander segment (Mannelijk) en klik op **Aanbieding toevoegen** en klik op het plusteken +. Bewerk vervolgens het voorstel.
 1. Navigeer naar een ander segment (Vrouwelijk) en klik op **Aanbieding toevoegen** en het plusteken +. Bewerk dit voorstel vervolgens.
