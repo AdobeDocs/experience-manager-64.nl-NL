@@ -286,7 +286,7 @@ Wanneer het werken met één enkele post, zal een pictogram van het Antwoord ver
 
 #### {#allow} toestaan
 
-![chlimage_1-481](assets/chlimage_1-481.png)
+![chlimage_1-401](assets/chlimage_1-481.png)
 
 Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wanneer de advertentie is gemarkeerd of geweigerd. Als deze optie is gemarkeerd, worden alle markeringen gewist als u Toestaan selecteert.
 
