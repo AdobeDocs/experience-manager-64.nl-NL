@@ -42,11 +42,11 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
 
 ### Sectie 3 {#section-2}
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### Sectie 4 {#section-3}
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 ### Sectie 5 {#section-4}
 
