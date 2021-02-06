@@ -151,7 +151,7 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
 1. Open **Windows Verkenner** of **File Explorer** en klik op **Computer** of **This PC**.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 1. Klik **Netwerkstation toewijzen** om de wizard te starten.
 1. Voer de toewijzingsdetails in:
@@ -170,11 +170,11 @@ Verbinding maken met AEM via WebDAV in een Windows-omgeving:
 
 1. Voer gebruikersnaam `admin` en wachtwoord `admin` in. Adobe raadt u aan de vooraf geconfigureerde beheerdersaccount te gebruiken voor het testen.
 
-   ![chlimage_1-114](assets/chlimage_1-114.png)
+   ![chlimage_1-115](assets/chlimage_1-114.png)
 
 1. De wizard wordt gesloten en de nieuw toegewezen schijf wordt geopend in Windows Verkenner of het venster Bestandverkenner.
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 Windows heeft nu AEM toegewezen als een station via WebDAV en u kunt deze als elk ander station gebruiken.
 
