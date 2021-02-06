@@ -40,7 +40,7 @@ Een beschrijving van deze componenten vindt u in de volgende sectie.
 
 De componenten zijn als volgt:
 
-![chlimage_1-106](assets/chlimage_1-105.png)
+![chlimage_1-105](assets/chlimage_1-105.png)
 
 ### Kop (campagne) {#heading-campaign}
 
@@ -51,7 +51,7 @@ De kopcomponent kan:
 
 U bewerkt de component **Kop (Campagne)** rechtstreeks. Laat leeg als u de paginatitel wilt gebruiken.
 
-![chlimage_1-106](assets/chlimage_1-106.png)
+![chlimage_1-105](assets/chlimage_1-106.png)
 
 U kunt het volgende configureren:
 
