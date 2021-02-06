@@ -49,7 +49,7 @@ Voer de volgende stappen uit om uw gedeelde bronnen voor een artikel te uploaden
 1. Selecteer het artikel uit **Artikelen beheren** tegel.
 1. Klik **Gedeelde Middelen** uploaden om uw gedeelde Middelen van HTML te uploaden.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 ### De volgende stap {#the-next-step}
 
