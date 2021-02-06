@@ -273,7 +273,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 1. Klik op het AEM-logo en ga naar **[!UICONTROL Tools > Assets > Metadata Schemas]**. De pagina **[!UICONTROL Metadata Schema Forms]** wordt weergegeven.
 1. Sla het standaardmetagegevensformulier op als een aangepast formulier. Sla het bestand bijvoorbeeld op als `my_default`.
 
-   ![chlimage_1-189](assets/chlimage_1-189.png)
+   ![chlimage_1-109](assets/chlimage_1-189.png)
 
 1. Bewerk het aangepaste formulier. Voeg een verplicht veld toe. Voeg bijvoorbeeld het veld **Categorie** toe en maak het veld verplicht.
 
@@ -283,7 +283,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 1. Navigeer naar de map en upload elementen met ontbrekende metagegevens voor het verplichte veld dat u aan het aangepaste formulier hebt toegevoegd. In de weergave Kaart voor de elementen wordt een bericht weergegeven voor de ontbrekende metagegevens voor het verplichte veld.
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 1. (Optioneel) Toegang `http://[server]:[port]/system/console/components/`. Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component in die standaard is uitgeschakeld. Stel een frequentie in waarmee AEM controleert of metagegevens over de elementen geldig zijn.
 Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan jcr:content of assets. Met deze eigenschap kunnen AEM resultaten in een zoekopdracht filteren.
