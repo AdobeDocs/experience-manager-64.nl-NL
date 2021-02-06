@@ -133,7 +133,7 @@ E-mailinhoud bewerken:
    >
    >Als de verpersoonlijkingsgebieden in eigenschappen van binnen de redacteur grayed zijn, gelieve uw configuratie opnieuw te onderzoeken.
 
-   ![chlimage_1-21](assets/chlimage_1-21.png)
+   ![chlimage_1-29](assets/chlimage_1-21.png)
 
 1. Open het deelvenster Componenten links van het scherm en selecteer **Adobe Campaign Newsletter** in het keuzemenu om die componenten te zoeken.
 
@@ -200,7 +200,7 @@ Personalisatie invoegen:
 
 ### Een nieuwsbrief {#previewing-a-newsletter} voorvertonen
 
-U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie.
+U kunt een voorvertoning weergeven van de weergave van de nieuwsbrief en een voorvertoning van de personalisatie bekijken.
 
 1. Open de nieuwsbrief en klik op **Voorvertoning** in de rechterbovenhoek van AEM. AEM toont hoe de nieuwsbrief kijkt wanneer de gebruikers het ontvangen.
 
