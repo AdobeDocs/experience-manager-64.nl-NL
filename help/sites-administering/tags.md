@@ -132,7 +132,7 @@ Als u de tag voor bewerkingen wilt selecteren en meerdere selecties wilt maken, 
 
 Wanneer een naamruimte of andere tag wordt geselecteerd en u het pictogram **`View Properties`** selecteert, wordt informatie over `name`, het tijdstip van laatste bewerking en het aantal verwijzingen weergegeven. Indien gepubliceerd, de tijd het werd gepubliceerd en identiteitskaart van de uitgever wordt getoond. Deze informatie wordt in een kolom links van de tagkolommen weergegeven.
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 ### Tagverwijzingen tonen {#showing-tag-references}
 
@@ -275,7 +275,7 @@ De toestemmingen van de markering zijn [&#39;veilig (door gebrek)&#39;](/help/si
 
 * ervoor zorgen dat alle publicatieexemplaren dezelfde machtigingen hebben
 
-   * één methode is om een pakket[ van de naamruimte bij de auteur te maken](/help/sites-administering/package-manager.md#package-manager)
+   * één methode is om een pakket](/help/sites-administering/package-manager.md#package-manager) van de naamruimte bij de auteur te maken[
 
       * op `Advanced` tab, voor `AC Handling` selecteer `Overwrite`
    * het pakket herhalen
