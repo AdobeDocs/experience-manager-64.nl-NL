@@ -84,9 +84,9 @@ Voor een overzicht van alle beschikbare componenten in uw AEM instantie, gebruik
 
 U kunt ook CRXDE Lite gebruiken om een lijst met alle componenten in de opslagplaats op te halen.
 
-1. Selecteer **[!UICONTROL CRXDE Lite]** in &lt;a0/> op de werkbalk en **[!UICONTROL Query]**. Hiermee wordt het tabblad **[!UICONTROL Query]** geopend.**[!UICONTROL Tools]**
+1. Selecteer **[!UICONTROL CRXDE Lite]** in **[!UICONTROL Tools]** op de werkbalk en **[!UICONTROL Query]**. Hiermee wordt het tabblad **[!UICONTROL Query]** geopend.
 
-1. Selecteer **[!UICONTROL Query]** op het tabblad &lt;a0/> als **[!UICONTROL Type]**.`XPath`
+1. Selecteer **[!UICONTROL Query]** op het tabblad `XPath` als **[!UICONTROL Type]**.
 
 1. Voer in het invoerveld **[!UICONTROL Query]** de volgende tekenreeks in:
 
