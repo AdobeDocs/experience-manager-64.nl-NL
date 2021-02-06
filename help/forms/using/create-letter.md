@@ -243,7 +243,7 @@ U hebt eerst het volgende nodig om een correspondentie te maken:
 
 1. Selecteer **Forms** > **Letters**.
 
-1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [Referentielettermalplaatjes](/help/forms/using/reference-cm-layout-templates.md). Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (lay-out) in Designer en uploadt u deze vervolgens naar AEM Forms[.](/help/forms/using/get-xdp-pdf-documents-aem.md)
+1. Selecteer **Maken > Letter**. Correspondence Management geeft de beschikbare lay-outs (XDP&#39;s) weer. Deze indelingen zijn afkomstig van Designer. De indelingen bevatten ook de lettertypesjablonen die in het vak Correspondentiebeheer zijn opgegeven. Voor meer informatie over de malplaatjes van het Beheer van de Correspondentie, zie [Referentielettermalplaatjes](/help/forms/using/reference-cm-layout-templates.md). Als u uw eigen lay-outs wilt toevoegen, maakt u XDP-bestanden (lay-out) in Designer en uploadt u deze vervolgens naar AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md).[
 
    ![aanmaken](assets/create-letter.png)
 
