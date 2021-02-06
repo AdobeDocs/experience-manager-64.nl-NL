@@ -387,7 +387,7 @@ Sessiewinkels zijn pas beschikbaar als ze zijn geladen en geïnitialiseerd met g
 * Responstijden voor XHR-verzoeken
 * Dynamische wijzigingen in de sessiewinkel
 
-Met de methoden [`CQ_Analytics.ClientContextUtils`](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) en [`onStoreInitialized`](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) van het object &lt;a0/> hebt u alleen toegang tot sessiewinkels als deze beschikbaar zijn. [`onStoreRegistered`](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) Met deze methoden kunt u gebeurtenislisteners registreren die reageren op sessieregistratie- en initialisatiegebeurtenissen.
+Met de methoden [`CQ_Analytics.ClientContextUtils`](/help/sites-developing/ccjsapi.md#cq-analytics-clientcontextutils) en [`onStoreInitialized`](/help/sites-developing/ccjsapi.md#onstoreinitialized-storename-callback-delay) van het object [`onStoreRegistered`](/help/sites-developing/ccjsapi.md#onstoreregistered-storename-callback) hebt u alleen toegang tot sessiewinkels als deze beschikbaar zijn. Met deze methoden kunt u gebeurtenislisteners registreren die reageren op sessieregistratie- en initialisatiegebeurtenissen.
 
 >[!CAUTION]
 >
