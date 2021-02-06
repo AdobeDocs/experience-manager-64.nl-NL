@@ -540,7 +540,7 @@ Nadat de weergave op de console is vergrendeld, wordt de informatie bijgewerkt e
 
 ## Een pagina {#unlocking-a-page} ontgrendelen
 
-Het ontgrendelen van een pagina lijkt sterk op het vergrendelen van de pagina[. ](#locking-a-page) Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
+Het ontgrendelen van een pagina lijkt sterk op het vergrendelen van de pagina](#locking-a-page). [ Nadat de pagina is vergrendeld, worden de vergrendelingsopties vervangen door ontgrendelingsacties.
 
 In het menu Pagina-informatie wordt **Ontgrendelen** als optie weergegeven en het pictogram Vergrendelen in de Sites-console wordt vervangen door een pictogram **Ontgrendelen**.
 
