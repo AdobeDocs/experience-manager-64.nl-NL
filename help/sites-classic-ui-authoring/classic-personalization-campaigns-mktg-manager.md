@@ -62,13 +62,13 @@ DashboardDit bestaat uit vier deelvensters:
 
    Hier kun je je leads beheren. U kunt leads maken of importeren, specifieke details voor afzonderlijke leads bewerken of verwijderen wanneer u deze niet meer nodig hebt. U kunt ook leads in verschillende groepen plaatsen, genaamd Lijsten. **Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
+   De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
 
 * **[Lijsten](#lists)**
 
    Hier kunt u uw lijsten (van leads) beheren.**Opmerking:** Adobe is niet van plan deze mogelijkheid verder te verbeteren.
 
-   De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
+   De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
 
 * **[](#campaigns)**
 CampagnesHier kunt u uw merken, campagnes en ervaringen beheren.
