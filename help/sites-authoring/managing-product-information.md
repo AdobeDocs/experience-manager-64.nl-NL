@@ -54,7 +54,7 @@ De sjabloon bevat de volgende workflows:
 
 1. Selecteer op de pagina **Project maken** de sjabloon van het fotofotoproject en tik/klik **Volgende**.
 
-   ![chlimage_1-135](assets/chlimage_1-133.png)
+   ![chlimage_1-133](assets/chlimage_1-133.png)
 
 1. Voer de projectdetails in, inclusief titel, beschrijving en vervaldatum. Voeg gebruikers toe en wijs diverse rollen aan hen toe. U kunt ook een miniatuur toevoegen voor het project.
 
