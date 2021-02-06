@@ -112,7 +112,7 @@ De **Catalogusversie** ( `hybris.catalog.version`) die wordt ingevoerd kan voor 
 **Day CQ Commerce Hybris Configuration**
 (  `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Catalogusversie** wordt gewoonlijk ingesteld op  `Online` of  `Staged` (de standaardinstelling).
+**Catalogusversie** wordt meestal ingesteld op  `Online` of  `Staged` (de standaardinstelling).
 
 >[!NOTE]
 >
