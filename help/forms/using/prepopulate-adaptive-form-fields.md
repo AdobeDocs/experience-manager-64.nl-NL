@@ -32,9 +32,9 @@ U kunt zowel gebonden als niet-gebonden velden van een adaptief formulier vooraf
 
 * Gebruik voor adaptieve formulieren met de [XFA-formuliersjabloon](/help/forms/using/prepopulate-adaptive-form-fields.md) de vooraf ingevulde XML-code die compatibel is met het gegevensschema van de XFA-sjabloon.
 * Gebruik voor adaptieve formulieren met [XML-schema](#xml-schema-af) de vooraf ingevulde XML-indeling die compatibel is met de XML-schemastructuur.
-* Gebruik voor adaptieve formulieren met het JSON-schema[ de Prefill JSON die compatibel is met het JSON-schema.](/help/forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms)
+* Gebruik voor adaptieve formulieren met het JSON-schema](/help/forms/using/prepopulate-adaptive-form-fields.md#json-schema-based-adaptive-forms) de Prefill JSON die compatibel is met het JSON-schema.[
 * Gebruik voor adaptieve formulieren met FDM-schema de Prefill JSON die compatibel is met het FDM-schema.
-* Voor adaptieve formulieren zonder formuliermodel[ zijn er geen gebonden gegevens. ](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p) Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
+* Voor adaptieve formulieren zonder formuliermodel](/help/forms/using/prepopulate-adaptive-form-fields.md#p-adaptive-form-with-no-form-model-p) zijn er geen gebonden gegevens. [ Elk veld is een niet-gebonden veld en wordt voorgevuld met de niet-gebonden XML.
 
 ### Voorbeeld van vooraf ingevulde XML-structuur {#sample-prefill-xml-structure}
 
