@@ -338,12 +338,12 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   <tr>
    <td>Pagina kopiëren</td> 
    <td>Verwijderd<br /> </td> 
-   <td>Site-beheerder gebruiken om pagina's <a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page"> te kopiëren.</a><br /> </td> 
+   <td>Site-beheerder gebruiken om pagina's </a> te kopiëren.<br /><a href="/help/sites-authoring/managing-pages.md#copying-and-pasting-a-page"> </a></td> 
   </tr>
   <tr>
    <td>Pagina verplaatsen</td> 
    <td>Verwijderd</td> 
-   <td>Site-beheerder gebruiken om pagina's te verplaatsen<a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page">.</a><br /> </td> 
+   <td>Site-beheerder gebruiken om pagina's te verplaatsen</a>.<br /><a href="/help/sites-authoring/managing-pages.md#moving-or-renaming-a-page"> </a></td> 
   </tr>
   <tr>
    <td>Pagina verwijderen</td> 
@@ -363,7 +363,7 @@ Dit is een lijst met mogelijkheden die de klassieke UI Page Editor ( `/cf#`) hee
   <tr>
    <td>Versie maken</td> 
    <td>Verwijderd</td> 
-   <td>Gebruik Sitebeheerder om nieuwe versies te maken<a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version">.</a><br /> </td> 
+   <td>Gebruik Sitebeheerder om nieuwe versies te maken</a>.<br /><a href="/help/sites-authoring/working-with-page-versions.md#creating-a-new-version"> </a></td> 
   </tr>
   <tr>
    <td>Versie herstellen</td> 
