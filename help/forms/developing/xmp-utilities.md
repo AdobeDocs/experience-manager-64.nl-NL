@@ -164,7 +164,7 @@ Importeer XMP metagegevens met de XMP Utilities-API (Java):
 
 1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP metagegevens wilt wijzigen, roept u de methode `XMPUtilityServiceClient` of de methode `importMetadata` van het object aan.`importXMP`
+   Als u de XMP metagegevens wilt wijzigen, roept u de methode `importMetadata` of de methode `importXMP` van het object aan.`XMPUtilityServiceClient`
 
    Wanneer u de methode `importMetadata` gebruikt, geeft u de volgende waarden door:
 
@@ -201,7 +201,7 @@ Voer de volgende taken uit om XMP metagegevens via de API voor XMP hulpprogramma
 
 1. De importbewerking voor XMP metagegevens aanroepen
 
-   Als u de XMP metagegevens wilt wijzigen, roept u de methode `XMPUtilityServiceService` of de methode `importMetadata` van het object aan.`importXMP`
+   Als u de XMP metagegevens wilt wijzigen, roept u de methode `importMetadata` of de methode `importXMP` van het object aan.`XMPUtilityServiceService`
 
    Wanneer u de methode `importMetadata` gebruikt, geeft u de volgende waarden door:
 
