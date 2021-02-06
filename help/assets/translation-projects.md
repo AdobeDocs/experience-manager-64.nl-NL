@@ -306,7 +306,7 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
    >
    >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen het doelmiddel bij te werken.
 
-   Klik op **[!UICONTROL Reject Translation]** of tik op &lt;a0/> om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
+   Klik op **[!UICONTROL Reject Translation]** of tik op  om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
