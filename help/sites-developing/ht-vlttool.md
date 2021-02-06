@@ -20,7 +20,7 @@ ht-degree: 2%
 
 # Hoe te om het Hulpmiddel te gebruiken VLT {#how-to-use-the-vlt-tool}
 
-Het hulpprogramma Jackrabbit FileVault (VLT) is een hulpprogramma dat is ontwikkeld door de Apache Foundation[ en waarmee de inhoud van een Jackrabbit/AEM-instantie wordt toegewezen aan uw bestandssysteem. ](https://www.apache.org/) Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, evenals configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
+Het hulpprogramma Jackrabbit FileVault (VLT) is een hulpprogramma dat is ontwikkeld door de Apache Foundation](https://www.apache.org/) en waarmee de inhoud van een Jackrabbit/AEM-instantie wordt toegewezen aan uw bestandssysteem. [ Het hulpmiddel VLT heeft gelijkaardige functies zoals de cliënt van het broncontrolesysteem (zoals een cliënt van de Subversion (SVN)), die normale controle, controle en beheersverrichtingen, evenals configuratieopties voor flexibele vertegenwoordiging van de projectinhoud verstrekt.
 
 U voert het gereedschap VLT uit vanaf de opdrachtregel. In dit document wordt beschreven hoe u het gereedschap kunt gebruiken, inclusief hoe u aan de slag kunt en hoe u hulp kunt krijgen, en een lijst met alle [opdrachten](#vlt-commands) en beschikbare [opties](#vlt-global-options).
 
