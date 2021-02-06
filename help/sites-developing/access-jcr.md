@@ -47,7 +47,7 @@ Repository repository = JcrUtils.getRepository("http://localhost:4503/crx/server
 
 ## Een Session-instantie maken {#create-a-session-instance}
 
-De `Repository`instantie vertegenwoordigt de CRX-opslagplaats. U gebruikt de `Repository`instantie om een zitting met de bewaarplaats te vestigen. Als u een sessie wilt maken, roept u de methode `Repository`van de instantie aan en geeft u een object `login` door. `javax.jcr.SimpleCredentials` De methode `login`retourneert een `javax.jcr.Session`-instantie.
+De `Repository`instantie vertegenwoordigt de CRX-opslagplaats. U gebruikt de `Repository`instantie om een zitting met de bewaarplaats te vestigen. Als u een sessie wilt maken, roept u de methode `login`van de instantie aan en geeft u een object `javax.jcr.SimpleCredentials` door. `Repository` De methode `login`retourneert een `javax.jcr.Session`-instantie.
 
 U maakt een `SimpleCredentials`object door de constructor ervan te gebruiken en de volgende tekenreekswaarden door te geven:
 
@@ -80,7 +80,7 @@ day.setProperty("message", "Adobe CQ is part of the Adobe Digital Marketing Suit
 
 ## Nodewaarden {#retrieve-node-values} ophalen
 
-Als u een knooppunt en de bijbehorende waarde wilt ophalen, roept u de methode `Node`van de instantie op en geeft u een tekenreekswaarde door die het volledig gekwalificeerde pad naar het knooppunt vertegenwoordigt. `getNode` Overweeg de knoopstructuur die in het vorige codevoorbeeld wordt gecreeerd. Als u het dagknooppunt wilt ophalen, geeft u adobe/day op, zoals in de volgende code wordt getoond:
+Als u een knooppunt en de bijbehorende waarde wilt ophalen, roept u de methode `getNode`van de instantie op en geeft u een tekenreekswaarde door die het volledig gekwalificeerde pad naar het knooppunt vertegenwoordigt. `Node` Overweeg de knoopstructuur die in het vorige codevoorbeeld wordt gecreeerd. Als u het dagknooppunt wilt ophalen, geeft u adobe/day op, zoals in de volgende code wordt getoond:
 
 ```java
 // Retrieve content
