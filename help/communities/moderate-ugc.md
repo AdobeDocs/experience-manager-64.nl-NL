@@ -32,7 +32,7 @@ Community-inhoud, ook wel door gebruikers gegenereerde inhoud (UGC) genoemd, wor
 * [QnA](working-with-qna.md): leden maken een vraag of beantwoorden deze
 * [Revisies](reviews.md): leden plaatsen commentaar wanneer ze een object beoordelen
 
-Moderatie van UGC is nuttig voor het erkennen van positieve bijdragen en het beperken van negatieve bijdragen (zoals spam en misleidende taal). UGC kan vanuit verschillende omgevingen worden gemodereerd:
+Moderatie van UGC is nuttig om positieve bijdragen te erkennen en negatieve (zoals spam en misleidende taal) te beperken. UGC kan vanuit verschillende omgevingen worden gemodereerd:
 
 * [Moderniseringsconsole](moderation.md)
 
