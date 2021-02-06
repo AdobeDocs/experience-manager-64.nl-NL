@@ -65,7 +65,7 @@ Zodra een klant als IMS Organisatie bestaat en AMS met levering van de klant voo
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
 1. De aangewezen Systeembeheerder ontvangt een uitnodiging om zich aan te melden bij de Admin Console
-1. System Admin beweert Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
+1. System Admin eist Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
 1. Systeembeheer stelt gebruikersmappen in
 1. Systeembeheerder configureert de Identiteitsprovider (IDP) in de Admin Console voor SSO-installatie.
 1. De AEM Admin beheert de lokale groepen, de toestemmingen en de voorrechten zoals gebruikelijk. Zie Synchronisatie van gebruikers en groepen
