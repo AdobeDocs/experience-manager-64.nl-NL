@@ -18,7 +18,7 @@ ht-degree: 1%
 
 # Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
-U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met de themaeditor[. ](/help/forms/using/themes.md) Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
+U kunt de algemene weergave en stijl van een adaptief formulier definiëren door stijlen op te geven met de themaeditor](/help/forms/using/themes.md). [ Bovendien kunt u inline CSS-stijlen toepassen op afzonderlijke adaptieve formuliercomponenten en deze direct bekijken. Inline stijlen overschrijven de opmaak die in het thema is opgenomen.
 
 ## Inline CSS-eigenschappen toepassen {#apply-inline-css-properties}
 
