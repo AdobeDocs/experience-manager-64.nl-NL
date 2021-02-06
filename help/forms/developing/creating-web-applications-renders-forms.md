@@ -379,7 +379,7 @@ Als u de Java-servlet wilt implementeren die de Forms-service aanroept, moet u u
 
 1. Klik in het venster **Projectverkenner** met de rechtermuisknop op het `FragmentsWebApplication`-project en selecteer **Exporteren** > **WAR-bestand**.
 1. Typ `FragmentsWebApplication` voor de naam van het Java-project in het tekstvak **Webmodule**.
-1. Typ `FragmentsWebApplication.war`**in het tekstvak** Doel **voor de bestandsnaam &lt;a3/>de locatie voor het WAR-bestand en klik op Voltooien.**
+1. Typ `FragmentsWebApplication.war`**in het tekstvak** Doel **voor de bestandsnaam** de locatie voor het WAR-bestand en klik op Voltooien.
 
 ### WAR-bestand gebruiken op de J2EE-toepassingsserver {#deploying-the-war-file-to-the-j2ee-application-server}
 
