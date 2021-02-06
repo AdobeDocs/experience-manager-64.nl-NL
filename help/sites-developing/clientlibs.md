@@ -56,7 +56,7 @@ Elke `cq:ClientLibraryFolder` wordt gevuld met een set JS- en/of CSS-bestanden, 
 
 * `categories`: Hiermee geeft u de categorieën aan waarin de set JS- en/of CSS-bestanden binnen deze  `cq:ClientLibraryFolder` groep vallen. Met de eigenschap `categories`, die meerdere waarden heeft, kan een bibliotheekmap deel uitmaken van meer dan één categorie (zie hieronder voor hoe dit nuttig kan zijn).
 
-* `dependencies`: Dit is een lijst van andere categorieën van de cliëntbibliotheek waarvan deze bibliotheekomslag afhangt. Als een bestand in `F` bijvoorbeeld een ander bestand in `G` nodig heeft om correct te kunnen functioneren, moet ten minste een van de `categories` van `G` een van de `dependencies` van `F` zijn als er twee `cq:ClientLibraryFolder` knooppunten `F` en &lt;a6/> zijn.`G`
+* `dependencies`: Dit is een lijst van andere categorieën van de cliëntbibliotheek waarvan deze bibliotheekomslag afhangt. Als een bestand in `F` bijvoorbeeld een ander bestand in `G` nodig heeft om correct te kunnen functioneren, moet ten minste een van de `categories` van `G` een van de `dependencies` van `F` zijn als er twee `cq:ClientLibraryFolder` knooppunten `F` en `G` zijn.
 
 * `embed`: Wordt gebruikt om code uit andere bibliotheken in te sluiten. Als knooppunt F knooppunten G en H insluit, is de resulterende HTML een concentratie van inhoud van knooppunten G en H.
 * `allowProxy`: Als een clientbibliotheek zich onder  `/apps`bevindt, staat deze eigenschap toegang tot de bibliotheek toe via proxyservlet. Zie [Een clientbibliotheekmap zoeken en de server Servlet van de bibliotheken van de proxyclient gebruiken](/help/sites-developing/clientlibs.md#locating-a-client-library-folder-and-using-the-proxy-client-libraries-servlet) hieronder.
