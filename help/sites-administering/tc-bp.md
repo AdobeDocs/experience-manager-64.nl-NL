@@ -54,7 +54,7 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
 
    * Sommige LSPs is zowel dienst als technologieleveranciers. Er zijn ook standalone technologieleveranciers die vele LSPs toestaan om aan hun vertaalplatforms deel te nemen.
    * Het **AEM Omzetten Kader** steunt integratie met een verscheidenheid van vertaaltechnologieleveranciers voor zowel machine als menselijke vertaling.
-   * Leer hoe te om LSP schakelaars in uw AEM te integreren [ om inhoudsomzetting te automatiseren, of hoe te manueel om OmzettingsProjecten voor het testen en in te voeren en in gevallen waar er geen LSP of vertaaltechnologieleverancier is.](/help/sites-administering/translation.md)
+   * Leer hoe te om LSP schakelaars in uw AEM te integreren ](/help/sites-administering/translation.md) om inhoudsomzetting te automatiseren, of hoe te manueel om OmzettingsProjecten voor het testen en in te voeren en in gevallen waar er geen LSP of vertaaltechnologieleverancier is.[
 
 * Kies een **vertaalmethode** die het beste bij de inhoud past.
 
