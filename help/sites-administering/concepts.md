@@ -138,7 +138,7 @@ AEM eCommerce wordt geïmplementeerd met een eCommerce-motor:
 >
 >AEM eCommerce die wordt uitgevoerd binnen AEM met behulp van generieke ontwikkeling op basis van JCR is:
 >
->* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens, winkelkaarten en kassa&#39;s te controleren in combinatie met de bestaande campagnes voor het weergeven en op de markt brengen van gegevens. In dit geval wordt de productdatabase opgeslagen in de systeemeigen opslagruimte van AEM (Adobe van &lt;a0/ JCR[).](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)\
+>* Een zelfstandig, AEM-native voorbeeld van eCommerce om het gebruik van de API te illustreren. Dit kan worden gebruikt om productgegevens, winkelkaarten en kassa&#39;s te controleren in combinatie met de bestaande campagnes voor het weergeven en op de markt brengen van gegevens. In dit geval wordt de productdatabase opgeslagen in de systeemeigen opslagruimte van AEM (Adobe van &lt;a0/ JCR](https://docs.adobe.com/content/docs/en/spec/jcr/2.0/index.html)).[\
    >  De standaard AEM installatie bevat de grondbeginselen van de [generische eCommerce-implementatie](/help/sites-administering/generic.md).
 
 >
@@ -832,7 +832,7 @@ Er worden diverse gegevens opgeslagen, waaronder:
 
 >[!NOTE]
 >
->De velden die worden gebruikt in de wizard voor het maken van bestellingen, zijn afhankelijk van een voor aanrakingen geoptimaliseerde basisstructuur die is gedefinieerd voor de locatie. In het algemene voorbeeld vindt u de volgende informatie:\
+>De velden die worden gebruikt in de wizard voor het maken van bestellingen zijn afhankelijk van een voor aanrakingen geoptimaliseerde basisstructuur die is gedefinieerd voor de locatie. In het algemene voorbeeld vindt u de volgende informatie:\
 >`/etc/scaffolding/geometrixx-outdoors/order/jcr:content/cq:dialog`
 
 Wanneer de orde binnen AEM de console van de Orde wordt gehouden toont het volgende voor elke orde:
