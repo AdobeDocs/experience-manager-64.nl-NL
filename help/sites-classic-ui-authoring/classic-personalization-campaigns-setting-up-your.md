@@ -158,7 +158,7 @@ Als u bestaande ervaringen hebt, kunt u een aanraakpunt rechtstreeks vanuit de k
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (Leads beheren).\
->De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
+>De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
 
 In AEM MCM kunt u verbindingen organiseren en toevoegen door ze handmatig in te voeren of door een lijst met door komma&#39;s gescheiden waarden te importeren, bijvoorbeeld een mailinglijst. Aanvullende manieren om leads te genereren zijn afkomstig van nieuwsbrief-ups of community-aanmeldingen (als deze zijn geconfigureerd, kunnen ze een workflow activeren die leads vult).
 
@@ -303,7 +303,7 @@ Als u bestaande leads in de MCM wilt verwijderen, schakelt u het selectievakje n
 >[!NOTE]
 >
 >Adobe is niet van plan deze mogelijkheid verder te verbeteren (lijsten beheren).\
->De aanbeveling is om Adobe Campaign en de integratie in AEM[ te benutten.](/help/sites-administering/campaign.md)
+>De aanbeveling is om Adobe Campaign en de integratie in AEM](/help/sites-administering/campaign.md) te benutten.[
 
 Met lijsten kunt u uw leads ordenen in groepen. Met lijsten kunt u uw marketingcampagnes richten op een bepaalde groep personen. U kunt bijvoorbeeld een doelnieuwsbrief naar een lijst sturen. Lijsten zijn zichtbaar in MCM, of in het Dashboard of door **Lijsten** te klikken. Beide verstrekken u de naam van de lijst en het aantal leden.
 
