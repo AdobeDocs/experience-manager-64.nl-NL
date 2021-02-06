@@ -38,7 +38,7 @@ Met de Verschuivende Fusie van het Middel, worden de bedekking/met voeten getred
 >
 >De het Verdelen Samenvoegen van Middel en verwante methodes kunnen slechts met [Granite](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html) worden gebruikt. Dit betekent ook dat het alleen geschikt is voor de standaardinterface met aanraakbediening. met name overschrijvingen die op deze manier worden gedefinieerd, zijn alleen van toepassing op het aanraakdialoogvenster van een component.
 >
->Bij overlays/overschrijvingen voor andere gebieden (waaronder andere aspecten van een aanraakcomponent of de klassieke UI) worden het juiste knooppunt en de juiste structuur van het origineel naar waar de aanpassing wordt gedefinieerd, gekopieerd.
+>Bij overlays/overschrijvingen voor andere gebieden (waaronder andere aspecten van een component met aanraakbediening of de klassieke interface) worden het juiste knooppunt en de juiste structuur van het origineel naar waar de aanpassing wordt gedefinieerd, gekopieerd.
 
 ### Doelen voor AEM {#goals-for-aem}
 
