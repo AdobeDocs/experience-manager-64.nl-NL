@@ -377,7 +377,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
 
 1. Selecteer een tijdsegment waaraan u een of meer miniatuurafbeeldingen wilt koppelen.
 1. Tik rechts van de video op het tabblad **[!UICONTROL Content]**.
-1. Tik op **[!UICONTROL Content]** onder het tabblad &lt;a0/>, blader en selecteer alle afbeeldingselementen die u voor de video wilt gebruiken. **[!UICONTROL Select Assets]** De geselecteerde elementen worden toegevoegd aan het **[!UICONTROL Asset Selector]**-deelvenster op het tabblad **[!UICONTROL Content]**.
+1. Tik op **[!UICONTROL Content]** onder het tabblad **[!UICONTROL Select Assets]**, blader en selecteer alle afbeeldingselementen die u voor de video wilt gebruiken. De geselecteerde elementen worden toegevoegd aan het **[!UICONTROL Asset Selector]**-deelvenster op het tabblad **[!UICONTROL Content]**.
 
 1. Voer een van de volgende handelingen uit in de elementkiezer onder het tabblad Inhoud:
 
@@ -476,7 +476,7 @@ Nadat u de interactieve video hebt opgeslagen, wordt de video direct geopend in 
       Tik op de tijdlijn op een segment dat u in tweeën wilt delen en tik op **[!UICONTROL Split Segment]** op de werkbalk.
 
       Als u twee of meer segmenten selecteert, wordt de functie **[!UICONTROL Split Segment]** uitgeschakeld.
-   ![chlimage_1-135](assets/chlimage_1-135.png)
+   ![chlimage_1-133](assets/chlimage_1-135.png)
 
    Een geselecteerd tien-secondensegment splitsen in twee segmenten van vijf seconden elk.
 
