@@ -22,7 +22,7 @@ ht-degree: 0%
 
 Bestandsafhankelijkheden van primaire 3D-modellen, zoals bestanden met structuurafbeeldingen, worden waar mogelijk automatisch opgelost. Deze functionaliteit wordt verwezenlijkt door AEM onderzoek dichtbij de omslagen van Activa naar dossiers met de zelfde namen te hebben die in het 3D dossier worden gevonden. Als een of meer afhankelijkheden niet kunnen worden opgelost tijdens het proces voor het maken van een voorvertoning van de verwerking, wordt op de kaart van het element het volgende rode bannerbericht weergegeven in [!UICONTROL Card View]:
 
-![chlimage_1-189](assets/chlimage_1-189.png)
+![chlimage_1-109](assets/chlimage_1-189.png)
 
 **Bestandsafhankelijkheden** oplossen:
 
@@ -50,7 +50,7 @@ Bestandsafhankelijkheden van primaire 3D-modellen, zoals bestanden met structuur
 
    * **[!UICONTROL Ignore the dependencies]**.
 
-      Als er geen ontbrekende afhankelijkheid meer nodig is, typt u **[!UICONTROL Referenced Asset]** in het tekstveld links van het ontbrekende bestand, zodat AEM 3D het bestand negeert.`n/a`
+      Als er geen ontbrekende afhankelijkheid meer nodig is, typt u `n/a` in het tekstveld links van het ontbrekende bestand, zodat AEM 3D het bestand negeert.**[!UICONTROL Referenced Asset]**
 
 
 
