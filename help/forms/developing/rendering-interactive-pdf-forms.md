@@ -168,9 +168,9 @@ U kunt bestanden aan een formulier koppelen. Wanneer u een PDF-formulier met bes
 
 **Een interactief PDF-formulier renderen**
 
-Als u een formulier wilt genereren, gebruikt u een formulierontwerp dat in Designer is gemaakt en als XDP- of PDF-bestand is opgeslagen. U kunt ook een formulier genereren dat met Acrobat is gemaakt en als PDF-bestand is opgeslagen. Als u een interactief PDF-formulier wilt genereren, roept u de methode `FormsServiceClient` of `renderPDFForm` van het object aan.`renderPDFForm2`
+Als u een formulier wilt genereren, gebruikt u een formulierontwerp dat in Designer is gemaakt en als XDP- of PDF-bestand is opgeslagen. U kunt ook een formulier genereren dat met Acrobat is gemaakt en als PDF-bestand is opgeslagen. Als u een interactief PDF-formulier wilt genereren, roept u de methode `renderPDFForm` of `renderPDFForm2` van het object aan.`FormsServiceClient`
 
-`renderPDFForm` gebruikt een `URLSpec` voorwerp. De inhoudsbasis wordt aan het XDP-bestand doorgegeven aan de Forms-service met behulp van de methode `URLSpec` van het object. `setContentRootURI` De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameterwaarde. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen.
+`renderPDFForm` gebruikt een `URLSpec` voorwerp. De inhoudsbasis wordt aan het XDP-bestand doorgegeven aan de Forms-service met behulp van de methode `setContentRootURI` van het object. `URLSpec` De naam van het formulierontwerp ( `formQuery`) wordt doorgegeven als een afzonderlijke parameterwaarde. De twee waarden worden samengevoegd om de absolute verwijzing naar het formulierontwerp te verkrijgen.
 
 De methode `renderPDFForm2` accepteert een `com.adobe.idp.Document`-instantie die het XDP- of PDF-document bevat dat moet worden gerenderd.
 
