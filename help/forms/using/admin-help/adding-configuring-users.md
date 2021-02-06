@@ -121,7 +121,7 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 1. Voer de volgende taken uit om te zoeken naar de gebruiker die u wilt bewerken:
 
    * Typ uw zoekcriteria in het tekstvak **[!UICONTROL Find]**.
-   * Selecteer **[!UICONTROL Using]**, **[!UICONTROL Email]** of **[!UICONTROL User ID]** in de lijst &lt;a0/>.**[!UICONTROL Name]**
+   * Selecteer **[!UICONTROL Using]**, **[!UICONTROL Email]** of **[!UICONTROL User ID]** in de lijst **[!UICONTROL Name]**.
    * Selecteer **[!UICONTROL Users]** in **[!UICONTROL In list]**.
    * Selecteer het domein, selecteer het aantal punten aan vertoning, en klik dan **[!UICONTROL Find]**.
 
@@ -151,7 +151,7 @@ Maak geen gebruikersnamen die met een hekje (#) beginnen. Het uitvoeren van taak
 1. Voer de volgende taken uit om te zoeken naar de gebruiker die u wilt verwijderen:
 
    * Typ uw zoekcriteria in het tekstvak **[!UICONTROL Find]**.
-   * Selecteer **[!UICONTROL Using]**, **[!UICONTROL Email]** of **[!UICONTROL User ID]** in de lijst &lt;a0/>.**[!UICONTROL Name]**
+   * Selecteer **[!UICONTROL Using]**, **[!UICONTROL Email]** of **[!UICONTROL User ID]** in de lijst **[!UICONTROL Name]**.
    * Selecteer **[!UICONTROL Users]** in **[!UICONTROL In list]**.
    * Selecteer het domein, selecteer het aantal punten aan vertoning, en klik dan **[!UICONTROL Find]**.
 
