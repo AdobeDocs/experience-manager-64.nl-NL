@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
 translation-type: tm+mt
-source-git-commit: 52cefb850f413570d375b1b19f983339d743b486
+source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
 workflow-type: tm+mt
-source-wordcount: '2671'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -28,6 +28,10 @@ Voer de volgende taken uit om te controleren hoe en wanneer de levende exemplare
 ## Geïnstalleerde en Aangepaste rollout Configuraties {#installed-and-custom-rollout-configurations}
 
 Deze sectie verstrekt informatie over de geïnstalleerde rollout configuraties en de synchronisatieacties die zij gebruiken, en hoe te om douaneconfiguraties tot stand te brengen indien vereist.
+
+>[!CAUTION]
+>
+>Het bijwerken van of het veranderen van een uit de doos (geïnstalleerde) rollout configuratie is **niet** geadviseerd. Als er een vereiste voor een douanelevende actie is dan zou het in een aangepaste rollout configuratie moeten worden toegevoegd.
 
 ### Uitroltriggers {#rollout-triggers}
 
