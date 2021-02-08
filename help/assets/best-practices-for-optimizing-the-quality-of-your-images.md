@@ -6,7 +6,7 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 73e67103e6bd9784bcc671ed04dcd508fa5597a0
+source-git-commit: 42d5a1875d78fdec1be0bb22d8ec8de2e56256ec
 workflow-type: tm+mt
 source-wordcount: '1449'
 ht-degree: 5%
@@ -79,7 +79,7 @@ Verhoog de waarde geleidelijk van 1,75 naar 4. Als de verscherping nog steeds ni
 
 Laat de monochrome parameter-instelling op 0 staan.
 
-### Tips en trucs voor JPEF-compressie (&amp;qlt=) {#best-practices-for-jpef-compression-qlt}
+### Aanbevolen werkwijzen voor JPEG-compressie (&amp;qlt=) {#best-practices-for-compression-qlt}
 
 * Deze parameter bepaalt de JPG-coderingskwaliteit. Een hogere waarde betekent een afbeelding van hogere kwaliteit, maar een groot bestand. Een lagere waarde betekent ook een afbeelding van lagere kwaliteit, maar een kleiner bestand. Het bereik voor deze parameter is 0-100.
 * Stel de parameterwaarde niet in op 100 om te optimaliseren voor kwaliteit. Het verschil tussen een instelling van 90 of 95 en 100 is bijna onwaarneembaar, maar met 100 wordt het afbeeldingsbestand onnodig groter. Om de kwaliteit te optimaliseren maar te voorkomen dat afbeeldingsbestanden te groot worden, stelt u `qlt=<value>` daarom in op 90 of 95.
