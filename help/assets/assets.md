@@ -3,9 +3,9 @@ title: Inleiding tot [!DNL Adobe Experience Manager Assets]
 description: Leer wat het beheer van digitale activa, zijn gebruiksgevallen, en [!DNL Adobe Experience Manager Asset] aanbieding is.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 1958018f055b288db02baca55f5c2f503c377806
+source-git-commit: 02bf967a829be22ebec90d03ef1397cbe93e3d92
 workflow-type: tm+mt
-source-wordcount: '836'
+source-wordcount: '847'
 ht-degree: 0%
 
 ---
@@ -93,3 +93,8 @@ Natuurlijk kunt u werkstromen ook handmatig toepassen. Zie [Elementen Media Hand
 ## [!DNL Experience Manager Assets] en  [!DNL Media Library] {#cq-dam-vs-cq-medialibrary}
 
 Zie [Middelen en Mediabibliotheek](medialibrary.md) voor informatie over de verschillen.
+
+>[!MORELIKETHIS]
+>
+>* [Experience Manager Assets als moderne DAM](https://www.youtube.com/embed/PBwQqZgC-yo)
+
