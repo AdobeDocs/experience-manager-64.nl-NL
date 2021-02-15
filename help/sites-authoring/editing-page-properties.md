@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8e85ea7f-80ea-43b6-a67c-366852ef86ce
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: c66c28f138618d6f36c55f8b498f7d2a23732b83
 workflow-type: tm+mt
-source-wordcount: '1672'
-ht-degree: 4%
+source-wordcount: '1774'
+ht-degree: 3%
 
 ---
 
@@ -52,6 +52,15 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
    Geeft aan of de pagina wordt weergegeven of verborgen in de paginanavigatie van de resulterende site.
 
+* **Branding**
+
+   Pas een consistente merkidentiteit toe op de verschillende pagina&#39;s door een merkmarkering aan elke paginatitel toe te voegen. Voor deze functionaliteit is het gebruik van de paginacomponent vanaf versie 2.14.0 of hoger van de [kerncomponenten vereist.](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
+
+   * **Overschrijven**  - Schakel deze optie in om de witruimte op deze pagina te definiëren.
+      * De waarde wordt overgeërfd door onderliggende pagina&#39;s, tenzij de waarden **Override** zijn ingesteld.
+   * **Waarde**  overschrijven - De tekst van de gloedmarkering die aan de paginatitel moet worden toegevoegd.
+      * De waarde wordt toegevoegd aan de paginatitel na een pipe-teken, zoals &quot;Cycling Tuscany&quot; | Altijd klaar voor de WKND&quot;
+
 * **Paginatitel**
 
    Een titel die op de pagina moet worden gebruikt. Wordt meestal gebruikt door titelcomponenten. Als de **Titel** leeg is, wordt deze gebruikt.
@@ -70,7 +79,7 @@ De eigenschappen worden verdeeld over verscheidene lusjes.
 
 * **Op tijd**
 
-   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze sluimerend tot de opgegeven tijd.
+   De datum en het tijdstip waarop de gepubliceerde pagina wordt geactiveerd. Wanneer deze pagina wordt gepubliceerd, blijft deze slapend tot de opgegeven tijd.
 
    Laat deze velden leeg voor pagina&#39;s die u direct wilt publiceren (het normale scenario).
 
