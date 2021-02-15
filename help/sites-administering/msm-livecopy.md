@@ -10,9 +10,9 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 translation-type: tm+mt
-source-git-commit: 11710b19c373b014862f892640d1bd4e90c6f411
+source-git-commit: ebb750f00fb1d4d6f2b19e300e5a68b6b43650d7
 workflow-type: tm+mt
-source-wordcount: '3963'
+source-wordcount: '4019'
 ht-degree: 0%
 
 ---
@@ -337,6 +337,10 @@ U kunt de overerving van live kopieën voor een live kopieerpagina opschorten, z
 >
 >U kunt ook [een live kopie](#detaching-a-live-copy) loskoppelen van de blauwdruk om alle verbindingen te verwijderen. De handeling Loskoppelen is permanent en niet-omkeerbaar.
 
+>[!NOTE]
+>
+>Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [Beste praktijken MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor extra informatie.
+
 #### Overerving van pagina-eigenschappen opheffen {#suspending-inheritance-from-page-properties}
 
 Overerving op een pagina opschorten:
@@ -407,7 +411,7 @@ Op een bestaande live kopie kunt u de diepte van een pagina wijzigen. d.w.z. of 
 
    * Zal onmiddellijk effect hebben en is niet omkeerbaar.
 
-      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan gemaakt worden.
+      * Onderliggende pagina&#39;s worden expliciet losgekoppeld van de actieve kopie. Verdere wijzigingen op kinderen kunnen niet bewaard worden als ze ongedaan worden gemaakt.
    * Hiermee verwijdert u een afstammeling `LiveRelationships`, zelfs als er `LiveCopies` is genest.
 
 
@@ -440,6 +444,10 @@ De diepte opgeven of wijzigen:
 ### Overerving voor een component {#cancelling-inheritance-for-a-component} annuleren
 
 Annuleer de overerving van de live kopie voor een component zodat de component niet meer wordt gesynchroniseerd met de broncomponent. Indien nodig kunt u overerving later inschakelen.
+
+>[!NOTE]
+>
+>Als de component als container wordt gemerkt, zijn de annulering en onderbreekt acties niet op zijn kindcomponenten van toepassing. Zie ook [Beste praktijken MSM](/help/sites-administering/msm-best-practices.md#components-and-container-synchronization) voor extra informatie.
 
 >[!NOTE]
 >
