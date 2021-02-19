@@ -7,7 +7,7 @@ user-guide-title: AEM 6.4 Gebruikershandleiding ontwikkelen
 breadcrumb-title: Handleiding voor ontwikkelen
 user-guide-description: In deze handleiding wordt uitgelegd hoe u uw AEM kunt samenstellen.
 translation-type: tm+mt
-source-git-commit: 7345a3c392dc6df495454a061a8a0624a4fb46d1
+source-git-commit: 5a9cdf29ca7331cdae5c0905b20a76f7124f3dd4
 workflow-type: tm+mt
 source-wordcount: '885'
 ht-degree: 5%
@@ -79,7 +79,7 @@ ht-degree: 5%
    + [AEM ontwikkelen](developing-components.md)
    + [Ontwikkelen AEM componenten - Codevoorbeelden](developing-components-samples.md)
    + [JSON-exportfunctie voor services voor inhoud](json-exporter.md)
-   + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
+   + [JSON-export inschakelen voor een component](json-exporter-components.md)
    + [Afbeeldingseditor](image-editor.md)
    + [Decoratietag](decoration-tag.md)
    + [Voorwaarden verbergen gebruiken](hide-conditions.md)
@@ -100,7 +100,7 @@ ht-degree: 5%
       + [Forms ontwikkelen (klassieke gebruikersinterface)](developing-forms.md)
 + Beleidsloos ervaringsbeheer{#headless}
    + [Hoofdloos en hybride met AEM](https://www.adobe.com/content/dam/www/us/en/marketing/experience-manager-sites/headless-content-management-system/pdfs/aem-hybrid-architecture-wp-1-18-19.pdf)
-   + [JSON-export inschakelen voor een component](json-exporter-components.md)
+   + [JSON-export inschakelen voor een component](https://experienceleague.adobe.com/docs/experience-manager-64/developing/components/json-exporter-components.html)
    + Toepassingen voor één pagina{#spas}
       + [SPA Inleiding en Analyse](spa-walkthrough.md)
       + [SPA WKND-zelfstudie](spa-wknd.md)
