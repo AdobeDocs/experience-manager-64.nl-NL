@@ -3,9 +3,9 @@ title: AEM Assets-mappen delen met Creative Cloud
 description: Configuratie en aanbevolen procedures om gebruikers van Adobe Experience Manager Assets in staat te stellen mappen met middelen uit te wisselen met gebruikers van Adobe Creative Cloud.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '1058'
+source-wordcount: '1061'
 ht-degree: 0%
 
 ---
@@ -15,7 +15,7 @@ ht-degree: 0%
 
 >[!CAUTION]
 >
->De functie Mappen delen AEM naar Creative Cloud is vervangen. Adobe raadt u ten zeerste aan nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/using/adobe-asset-link.html) of [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html). Leer meer in [AEM en de integratie van Creative Cloud beste praktijken](/help/assets/aem-cc-integration-best-practices.md).
+>De functie Mappen delen AEM naar Creative Cloud is vervangen. Adobe raadt u ten zeerste aan nieuwere mogelijkheden te gebruiken, zoals [Adobe Asset Link](https://helpx.adobe.com/enterprise/admin-guide.html/enterprise/using/adobe-asset-link.ug.html) of [AEM desktop app](https://experienceleague.adobe.com/docs/experience-manager-desktop-app/using/using.html). Leer meer in [AEM en de integratie van Creative Cloud beste praktijken](/help/assets/aem-cc-integration-best-practices.md).
 
 Adobe Experience Manager (AEM) kan zo worden geconfigureerd dat gebruikers in AEM Assets mappen kunnen delen met Creative Cloud-gebruikers, zodat ze beschikbaar zijn als gedeelde mappen in de service Creative Cloud Assets. De functie kan worden gebruikt om bestanden uit te wisselen tussen creatieve teams en AEM Assets-gebruikers, vooral wanneer creatieve gebruikers geen toegang hebben tot het AEM Assets-exemplaar (ze bevinden zich niet op het bedrijfsnetwerk).
 
