@@ -3,10 +3,10 @@ title: Hulplijn voor middelen
 description: Deze handleiding behandelt alle AEM Assets-taken, zoals het maken, beheren, leveren en optimaliseren van digitale middelen.
 user-guide-title: Hulplijn voor middelen
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: e64f5b0e1333d511eaf450072756a95399e838d0
 workflow-type: tm+mt
-source-wordcount: '325'
-ht-degree: 5%
+source-wordcount: '317'
+ht-degree: 4%
 
 ---
 
@@ -17,10 +17,9 @@ Deze handleiding behandelt alle AEM Assets-taken, zoals het maken, beheren, leve
 
 ## AEM
 
-* [Aan de slag met AEM](https://helpx.adobe.com/experience-manager/get-started.html)
-* [AEM 6.4 Opmerkingen bij de release](/help/release-notes/home.md)
-* [Recente documentatie-updates](https://helpx.adobe.com/experience-manager/documentation-updates.html)
-* [Beveiligingschecklist AEM](/help/sites-administering/security-checklist.md)
+* [Opmerkingen bij de release AEM 6.4](/help/release-notes/home.md)
+* [Recente documentatie-updates](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/doc-updates/documentation-updates.html)
+* [Controlelijst voor AEM](/help/sites-administering/security-checklist.md)
 
 ## AEM 6.4-gebruikershandleidingen
 
@@ -41,7 +40,7 @@ Deze handleiding behandelt alle AEM Assets-taken, zoals het maken, beheren, leve
 
 ## Belangrijke AEM
 
-* [Zelfstudies AEM](https://helpx.adobe.com/experience-manager/kt/index/aem-6-4-videos.html)
+* [Zelfstudies AEM](https://experienceleague.adobe.com/docs/experience-manager-tutorials.html)
 * [Gebruikershandleiding voor verzending](https://experienceleague.adobe.com/docs/experience-manager-dispatcher/using/dispatcher.html)
 * [HTML-gebruikershandleiding](https://experienceleague.adobe.com/docs/experience-manager-htl/using/overview.html)
 * [Gebruikershandleiding voor kerncomponenten](https://experienceleague.adobe.com/docs/experience-manager-core-components/using/introduction.html)
