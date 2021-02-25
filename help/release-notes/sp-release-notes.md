@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 discoiquuid: 93067308-e275-490f-8d78-ae79e046059c
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: a2808c1861b6853b5e9505ad189f296f7ebd2572
 workflow-type: tm+mt
-source-wordcount: '21616'
+source-wordcount: '21578'
 ht-degree: 0%
 
 ---
@@ -311,7 +311,7 @@ Als u het pakket `com.day.cq.dam.handler.standard.msoffice` in uw douanetoepassi
 
 ##### Gemeenschappen {#communities-6470}
 
-* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer het e-mailbericht in berichtmontages wordt toegelaten, werpt het systeem een uitzondering in NotificationsActivityStreamProvider (NPR-31521).
+* De e-mailfunctionaliteit werkt in sommige gevallen niet correct, zelfs niet wanneer e-mailberichten in meldingsinstellingen zijn ingeschakeld, genereert het systeem een uitzondering in de NotificationsActivityStreamProvider (NPR-31521).
 * Er kunnen geen nieuwe leden worden gemaakt. Er verschijnt een leeg scherm op het scherm Create Member in AEM auteurinstantie (NPR-30951).
 * Gebruiker kan geen commentaar op een blog plaatsen in Internet Explorer 11 (NPR-30927).
 * De beheerder van een Beperkte Groep kan niet de Kaart van de Groep bekijken, kan om het even welke Snelle verrichtingen van de Verbinding (Edit/Publish/Delete groepen) in AEM auteursinstantie (NPR-30810) uitvoeren.
@@ -1292,7 +1292,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.7.
 * Toegevoegde ondersteuning voor HTML Template Language (HTL) Specification 1.4-functies
 * Toegevoegde ondersteuning voor MongoDB Enterprise 3.6.
-* De redacteur van de Pagina van Plaatsen voegt steun voor in-context het uitgeven en samenstelling met cliënt-zijcomponenten toe bouwt in React of Hoekig in combinatie met <a href="../sites-developing/spa-walkthrough.md">AEM Redacteur JS SDK</a>.
+* De redacteur van de Pagina van Plaatsen voegt steun voor in-context het uitgeven en samenstelling met cliënt-zijcomponenten toe bouwt in React of Angular in combinatie met <a href="../sites-developing/spa-walkthrough.md">AEM Redacteur JS SDK</a>.
 * Verbeteringen voor inhoudsfragmenten: heeft de mogelijkheid toegevoegd om notities aan te brengen in tekstvelden en versies naast elkaar te vergelijken.
 * Toegevoegde [integratie met Adobe Stock](/help/assets/aem-assets-adobe-stock.md) zodat de gebruikers Adobe Stock-middelen rechtstreeks vanuit AEM gebruikersinterface kunnen zoeken, voorvertonen, opslaan en in licentie geven. Zie [Adobe Stock-elementen gebruiken met AEM Assets](https://docs.adobe.com/content/help/en/experience-manager-learn/assets/creative-workflows/adobe-stock.html) voor meer informatie.
 * De activa toegevoegde steun voor dynamische voorwaardelijke metaschema en de capaciteit om een meta-gegevensschema voor activaomslagen te plaatsen.
@@ -1413,7 +1413,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 * Een enkele uitzondering wordt gegenereerd bij het verwijderen van inhoud. NPR-25869: Hotfix voor CQ-4248908
 * Gepagineerde koppelingen naar threads met veel berichten werken niet bij Meldingen. NPR-25678: Hotfix voor CQ-4243038
 * De tijdwaarden in het onderzoeksresultaat tonen servertijd in plaats van de tijdzone van de cliënt. NPR-25594: Hotfix voor CQ-4248986
-* (Opmerkingen van het Forum) De knop Terug in de browser werkt niet zoals verwacht. NPR-25203: Hotfix voor CQ-4248573
+* (Opmerkingen van het Forum) De knop Terug in de browser werkt niet zoals verwacht. NPR-25205: Hotfix voor CQ-4248573
 * (Zoekresultaten) De knop Terug in de browser werkt niet zoals verwacht. NPR-25214: Hotfix voor CQ-4248574
 * Null wordt geretourneerd wanneer de component communitygroupmemberList wordt bedekt. NPR-25228: Hotfix voor CQ-4248523
 * (Communities Calendar) ClassCastException wordt geproduceerd terwijl het bewaren van de gebeurtenis met het nieuwe beeld van de Omslag. NPR-25167: Hotfix voor CQ-4248662
@@ -1473,7 +1473,7 @@ Enkele belangrijke hooglichten van AEM 6.4.2.0 zijn:
 **UI - Foundation**
 
 * De pro-actieve Steun UI van de Stichting steunt. NPR-24344, NPR-24345, NPR-25176, NPR-25095, NPR-24332, NPR-25653, NPR-25932, NPR-259 35, 25976
-* (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25205: Hotfix voor graniet-22236
+* (Design Importer) Als u een pagina importeert, worden de JS,css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
 * De pro-actieve Steun UI van de Stichting steunt om de stabiliteit van het product te verbeteren. NPR-24334
 
 **MAC- Test &amp; Target-integratie**
@@ -1747,7 +1747,7 @@ AEM 6.4.1.0 kan op AEM 6.4 GA worden geïnstalleerd. Enkele belangrijke hoogtepu
 * Proactieve back-up voor granite.ui.coralui-oplossingen. NPR-23538
 * Kan niet meerdere gebruikers tegelijk uit de groep verwijderen. NPR-23846
 * (OMEGA) Rapporteer &quot;Functie&quot; alleen in het Engels. NPR-23989: Hotfix voor graniet-21231
-* (Design Importer) Als u een pagina importeert, worden de JS, css niet geïmporteerd. NPR-25205: Hotfix voor graniet-22236
+* (Design Importer) Als u een pagina importeert, worden de JS, css niet geïmporteerd. NPR-25203: Hotfix voor graniet-22236
 
 **Integratie**
 
@@ -2005,7 +2005,7 @@ De belangrijkste markeringen voor AEM Forms zijn:
 
 **MultiChannel-document**
 
-* Het datumveld in Sjabloon overlapt het subformulier in de IC-ontwerpomgeving. Hotfix voor CQ-4240110
+* Datumveld in sjabloon overlapt het subformulier in IC-ontwerpomgeving. Hotfix voor CQ-4240110
 * Koptekst mag niet worden verwijderd of omhoog en omlaag worden verplaatst in IC-webkanaalontwerpfuncties. Hotfix voor CQ-4243358
 * (IC Editor) Standaardrijen die moeten worden ingesteld op 1 voor tabelcomponenten. Hotfix voor CQ-4244848
 * Doelgebied blijft zichtbaar, zelfs nadat de inhoud is gesleept en erop is neergezet. Hotfix voor CQ-4244534
@@ -2126,7 +2126,7 @@ Voer de volgende stappen uit om het Service Pack op een bestaande AEM 6.4 instan
 
 >[!NOTE]
 >
->**Dialoogvenster over de UI van de Manager van het Pakket sluit soms ongeschikt tijdens installatie van 6.4.8.0**
+>**Dialoogvenster over de interface van Package Manager wordt soms onbedoeld afgesloten tijdens de installatie van 6.4.8.4**
 >
 >Daarom wordt aangeraden te wachten totdat de foutenlogboeken zich stabiliseren voordat u de instantie opent. De gebruiker moet op specifieke logboeken met betrekking tot het verwijderen van updaterbundel wachten alvorens wordt gewaarborgd dat de installaties succesvol zijn. Het gebeurt meestal in Safari, maar kan af en toe in elke browser gebeuren.
 
@@ -2236,15 +2236,10 @@ Deze sectie bevat een lijst met functies en mogelijkheden die zijn verwijderd of
 
 * De volgende fouten en waarschuwingen kunnen tijdens de installatie worden weergegeven:
 
-   * Fouten bij het maken van een componentinstantie en de geretourneerde waarde null in de servicefabriek treden op als gevolg van het opnieuw opstarten van de opslagplaats:
-
-      * com.day.cq.cq-personalization \[com.day.cq.personalization.impl.DefaultProfileProvider(938)\] Kan componentinstantie niet maken omdat de profielmanager van de referentie niet kan worden gebonden
-      * org.apache.sling.commons.planner FrameworkEvent ERROR (org.osgi.framework.ServiceException: Service factory heeft null geretourneerd. (Component: com.day.cq.tagging.impl.TagGarbageCollector (1687)
    * `com.adobe.cq.social.cq-social-jcr-provider bundle com.adobe.cq.social.cq-social-jcr-provider:1.3.5 (395)[com.adobe.cq.social.provider.jcr.impl.SpiSocialJcrResourceProviderImpl(2302)]` : Time-out bij wachten op wijziging van reg om niet-geregistreerd te voltooien.
    * `com.adobe.granite.maintenance.impl.TaskScheduler` Geen onderhoudsvensters gevonden bij graniet/bediening/onderhoud
    * `com.adobe.cq.com.adobe.cq.ui.commons bundle com.adobe.cq.com.adobe.cq.ui.commons:1.2.28 (204)[com.adobe.cq.ui.wcm.commons.internal.servlets.rte.RTEFilterServletFactory(573)]`: De methode unbindAmendement heeft een uitzondering gegenereerd (java.lang.IllegalStateException: Service is al niet geregistreerd).
 Deze fouten vereisen geen actie omdat ze geen invloed hebben op uw AEM.
-
 
 ### Opgeloste problemen {#resolved-issues}
 
