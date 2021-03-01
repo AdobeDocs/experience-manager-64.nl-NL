@@ -1,21 +1,20 @@
 ---
-title: Elementen hergebruiken met MSM voor middelen
+title: Elementen hergebruiken met MSM
 description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van en gekoppeld aan bovenliggende elementen. De elementen blijven gesynchroniseerd met een primaire kopie en ontvangen met een paar klikken de updates van de bovenliggende elementen.
 contentOwner: AG
-products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: d2372ebabf92fd83cff31d4f0b37c020756f03c1
 workflow-type: tm+mt
-source-wordcount: '3060'
-ht-degree: 10%
+source-wordcount: '3069'
+ht-degree: 9%
 
 ---
 
 
-# Elementen opnieuw gebruiken met MSM voor elementen {#reuse-assets-using-msm-for-assets}
+# Elementen opnieuw gebruiken met MSM voor [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
-Met de MSM-functie (Multi Site Manager) in Adobe Experience Manager (AEM) kunnen gebruikers inhoud die eenmaal is ontworpen en op meerdere weblocaties opnieuw wordt gebruikt, hergebruiken. Hetzelfde geldt voor digitale elementen als MSM voor middelenfunctionaliteit. Met MSM voor elementen kunt u:
+Met de MSM-functie (Multi Site Manager) in [!DNL Adobe Experience Manager] kunnen gebruikers inhoud die eenmaal is geschreven, hergebruiken op meerdere weblocaties. Hetzelfde geldt voor digitale elementen als MSM voor [!DNL Assets]-functionaliteit. Gebruikend MSM voor [!DNL Assets], kunt u:
 
 * Maak een keer elementen en maak vervolgens kopieën van deze elementen die u opnieuw kunt gebruiken in andere gebieden van de site.
 * Houd meerdere kopieën gesynchroniseerd en werk de originele primaire kopie één keer bij om de wijzigingen in de onderliggende kopieën door te voeren.
@@ -23,14 +22,13 @@ Met de MSM-functie (Multi Site Manager) in Adobe Experience Manager (AEM) kunnen
 
 ## Vereisten {#msm-prerequisites}
 
-Om MSM voor Activa te gebruiken, installeer minstens Service Pack 5. Zie de opmerkingen bij de release voor meer informatie.
-[opmerkingen bij](/help/release-notes/assets.md) de release.
+Als u MSM voor [!DNL Assets] wilt gebruiken, moet u ten minste [!DNL Experience Manager] 6.4 Service Pack 5 installeren. Voor meer informatie, zie [de versienota&#39;s van recentste de dienstpak](/help/release-notes/sp-release-notes.md).
 
 ## Begrijp de voordelen en de concepten {#understand-benefits-concepts}
 
 ### Hoe het werkt en de voordelen {#how-it-works-the-benefits}
 
-Zie [mogelijke MSM-scenario&#39;s](/help/sites-administering/msm.md#possible-scenarios) om inzicht te krijgen in de gebruiksscenario&#39;s voor het opnieuw gebruiken van dezelfde inhoud (tekst en elementen) op meerdere weblocaties. AEM onderhoudt een koppeling tussen het oorspronkelijke middel en de bijbehorende kopieën, ook wel &quot;live kopieën&quot; genoemd. Door de behouden koppeling kunnen gecentraliseerde wijzigingen worden doorgevoerd in veel live kopieën. Hierdoor kunnen updates sneller worden uitgevoerd, maar hoeven er geen dubbele kopieën te worden beheerd. De verspreiding van veranderingen is fout-vrij en gecentraliseerd. Dankzij deze functionaliteit is er ruimte voor updates die beperkt zijn tot geselecteerde live kopieën. Gebruikers kunnen de koppeling loskoppelen, dat wil zeggen, de overerving verbreken, en lokale bewerkingen aanbrengen die niet worden overschreven wanneer de primaire kopie de volgende keer wordt bijgewerkt en de wijzigingen worden doorgevoerd. U kunt de koppeling tot stand brengen voor een paar geselecteerde metagegevensvelden of voor een geheel element. Het biedt flexibiliteit om elementen die oorspronkelijk van een primaire kopie zijn overgeërfd, lokaal bij te werken.
+Zie [mogelijke MSM-scenario&#39;s](/help/sites-administering/msm.md) om inzicht te krijgen in de gebruiksscenario&#39;s voor het opnieuw gebruiken van dezelfde inhoud (tekst en elementen) op meerdere weblocaties. [!DNL Experience Manager] onderhoudt een koppeling tussen het oorspronkelijke middel en de bijbehorende kopieën, ook wel &quot;live kopieën&quot; genoemd. Door de behouden koppeling kunnen gecentraliseerde wijzigingen worden doorgevoerd in veel live kopieën. Hierdoor kunnen updates sneller worden uitgevoerd, maar hoeven er geen dubbele kopieën te worden beheerd. De verspreiding van veranderingen is fout-vrij en gecentraliseerd. Dankzij deze functionaliteit is er ruimte voor updates die beperkt zijn tot geselecteerde live kopieën. Gebruikers kunnen de koppeling loskoppelen, dat wil zeggen, de overerving verbreken, en lokale bewerkingen aanbrengen die niet worden overschreven wanneer de primaire kopie de volgende keer wordt bijgewerkt en de wijzigingen worden doorgevoerd. U kunt de koppeling tot stand brengen voor een paar geselecteerde metagegevensvelden of voor een geheel element. Het biedt flexibiliteit om elementen die oorspronkelijk van een primaire kopie zijn overgeërfd, lokaal bij te werken.
 
 MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zodat:
 
@@ -42,13 +40,13 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 
 * **Bron:** De oorspronkelijke elementen of mappen. Primaire kopie waarvan levende kopieën worden afgeleid.
 
-* **Live kopie:** de kopie van de bronelementen/mappen die met de bron ervan gesynchroniseerd zijn. Actieve kopieën kunnen een bron zijn van verdere live kopieën. Zie [LC&#39;s maken](#create-live-copy-asset).
+* **Live kopie:** de kopie van de bronelementen/mappen die gesynchroniseerd zijn met de bron ervan. Actieve kopieën kunnen een bron zijn van verdere live kopieën. Zie [LC&#39;s maken](#create-live-copy-asset).
 
 * **Overerving:** Een koppeling/verwijzing tussen een actief exemplaar/map en de bron ervan die het systeem gebruikt om te onthouden waar de updates moeten worden verzonden. Overerving bestaat op granulair niveau voor metagegevensvelden. Overerving kan worden verwijderd voor selectieve metagegevensvelden, terwijl de live relatie tussen bron en live kopie behouden blijft.
 
 * **Uitvoeren**: Een handeling die de wijzigingen aan de bron stroomafwaarts doorvoert naar de live kopieën. Het is mogelijk om één of meerdere levende exemplaren in één keer bij te werken gebruikend rollout actie. Zie [rollout](#rollout-action).
 
-* **Rollout config:** Regels die bepalen welke eigenschappen, hoe en wanneer worden gesynchroniseerd. Deze configuraties worden toegepast wanneer het creëren van levende exemplaren; kan later worden bewerkt; en een kind kan rollout configuratie van zijn ouderactiva erven. Voor MSM voor Activa, gebruik slechts de Standaard rollout config. De andere rollout configuraties zijn niet beschikbaar voor MSM voor Activa.
+* **Rollout config:** Regels die bepalen welke eigenschappen, hoe en wanneer worden gesynchroniseerd. Deze configuraties worden toegepast wanneer het creëren van levende exemplaren; kan later worden bewerkt; en een kind kan rollout configuratie van zijn ouderactiva erven. Voor MSM voor [!DNL Assets], gebruik slechts de Standaard rollout config. De andere rollout configuraties zijn niet beschikbaar voor MSM voor [!DNL Assets].
 
 * **Synchroniseren:** Een andere actie, naast rollout, die pariteit tussen bron en zijn levende exemplaar door de updates van bron naar levende exemplaren te verzenden brengt. Een synchronisatie wordt in werking gesteld voor een bepaalde levende kopie en de actie trekt de veranderingen van de bron. Met deze handeling is het mogelijk slechts een van de live kopieën bij te werken. Zie [Handeling synchroniseren](#about-synchronize-action).
 
@@ -64,7 +62,7 @@ MSM onderhoudt een live relatie tussen het bronelement en zijn live kopieën, zo
 
 Voer een van de volgende twee handelingen uit om een live kopie van een of meer bronelementen of -mappen te maken:
 
-* **Methode 1**: Selecteer de bronelementen en klik  **[!UICONTROL Create > Live Copy]** van toolbar bij de bovenkant.
+* **Methode 1**: Selecteer de bronelementen en klik op  **[!UICONTROL Create]** >  **[!UICONTROL Live Copy]** van de werkbalk boven in het scherm.
 * **Methode 2**: Klik in AEM gebruikersinterface  **[!UICONTROL Create > Live Copy]** in de rechterbovenhoek van de interface.
 
 U kunt live kopieën van een middel of map één voor één maken. U kunt live kopieën maken die zijn afgeleid van een middel of een map die zelf een live kopie is.
@@ -101,7 +99,7 @@ U kunt de informatie en MSM-verwante status van levende exemplaar zoals verhoudi
 
 >[!TIP]
 >
->Als u de status van enkele afzonderlijke live kopieën wilt controleren, gebruikt u de eerste methode die de pagina **[!UICONTROL Properties]** bevat. Om statussen van vele levende exemplaren te controleren, gebruik de tweede methode, namelijk, zie **[!UICONTROL Relationship Status]** pagina.
+>Als u de status van enkele afzonderlijke live kopieën wilt controleren, gebruikt u de eerste methode om de pagina **[!UICONTROL Properties]** te controleren. Als u de status van veel live kopieën wilt controleren, gebruikt u de tweede methode om de pagina **[!UICONTROL Relationship Status]** te controleren.
 
 ### Informatie en status van een live kopie {#information-status-of-one-lc}
 
@@ -109,13 +107,13 @@ Voer de volgende stappen uit om de informatie en status van een live kopie van e
 
 1. Selecteer een actief exemplaar of een map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets `p` gebruiken.
 1. Klik op **[!UICONTROL Live Copy]**. U kunt het pad van de bron, de status van de schorsing, de synchronisatiestatus, de laatste uitroldatum en de gebruiker die de laatste uitrol heeft uitgevoerd, controleren.
-   ![Informatie en status van live kopieën](assets/lc_folder_properties.png)
+   ![Informatie en status van live-kopieën worden in Eigenschappen op een console weergegeven](assets/lc_folder_properties.png)
 1. U kunt in- of uitschakelen als onderliggende elementen de configuratie van de live kopie lenen.
 1. U kunt de optie voor het levende exemplaar kiezen om of de rollout configuratie van de ouder over te nemen of de configuratie te veranderen.
 
 ### Informatie en status van alle live kopieën van een map {#information-status-of-all-lcs-of-folder}
 
-AEM verstrekt een console om de beelden van alle levende exemplaren van een bronomslag te controleren. Deze console geeft de status van alle onderliggende elementen weer.
+[!DNL Experience Manager] beschikt over een console waarmee u de beelden van alle live kopieën van een bronmap kunt controleren. Deze console geeft de status van alle onderliggende elementen weer.
 
 1. Selecteer een bronmap. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets `p` gebruiken.
 1. Klik op **[!UICONTROL Live Copy Source]**. Klik op **[!UICONTROL Live Copy Overview]** om de console te openen. Dit dashboard biedt een status op hoofdniveau van alle onderliggende assets.
@@ -125,14 +123,14 @@ AEM verstrekt een console om de beelden van alle levende exemplaren van een bron
 
 >[!TIP]
 >
->U kunt snel de status van live kopieën van andere mappen zien zonder dat u te veel hoeft te bladeren. Verander enkel de omslag in de pop-up lijst in het hogere middelste deel van de **[!UICONTROL Live Copy Overview]** interface.
+>U kunt snel de status van live kopieën van andere mappen zien zonder dat u te veel hoeft te bladeren. Wijzig de map in het bovenste middelste gedeelte van de interface **[!UICONTROL Live Copy Overview]**.
 
 ### Snelle acties van References rail voor bron {#quick-actions-from-references-rail-for-source}
 
 Voor een bronmiddel of een omslag, kunt u de volgende informatie zien en de volgende acties direct van de spoorstaaf van Verwijzingen voeren:
 
 * Zie de paden van live kopieën.
-* Open of maak een specifieke live kopie in AEM gebruikersinterface.
+* Open of maak een specifieke live kopie in de gebruikersinterface van [!DNL Experience Manager].
 * Synchroniseer de updates van een specifieke live kopie.
 * De verhouding van de onderbreking of veranderingsuitrolconfiguratie voor een specifieke levende kopie.
 * Open de overzichtsconsole van de live kopie.
@@ -143,14 +141,14 @@ Selecteer het bronelement of de bronmap, open het linkerspoor en klik op **[!UIC
 
 Voor een specifieke levende kopie klikt u op **[!UICONTROL Edit Live Copy]** om de relatie op te schorten of de rollout-configuratie te wijzigen.
 
-![Relatie onderbreken of rollout-configuratie wijzigen van een specifieke live kopie](assets/lc_edit_referencerail.png)
+![Voor een specifieke live kopie is de optie om de relatie op te schorten of de rollout-configuratie te wijzigen toegankelijk vanuit References rail wanneer bronelement is geselecteerd](assets/lc_edit_referencerail.png)
 
 ### Snelle acties van de spoorstaaf van References voor levende exemplaar {#quick-actions-from-references-rail-for-live-copy}
 
 Voor een actief exemplaar of een omslag van het levende exemplaar, kunt u de volgende informatie zien en de volgende acties direct van de spoorstaaf van Verwijzingen voeren:
 
 * Zie het pad van de bron.
-* Open of maak een specifieke live kopie in AEM gebruikersinterface.
+* Open of maak een specifieke live kopie in de gebruikersinterface van [!DNL Experience Manager].
 * De updates uitvoeren.
 
 Selecteer een asset of map met livekopieën, open het linkerspoor en klik op **[!UICONTROL References]**. U kunt ook een asset of map selecteren en de sneltoets `Alt + 4` gebruiken. 
@@ -183,7 +181,7 @@ U kunt ook een rollout-actie starten vanuit de [!UICONTROL References]-rail nada
 
 Met een synchronisatiehandeling worden de wijzigingen alleen van een bron naar de geselecteerde live kopie doorgevoerd. Met de handeling Sync worden de lokale wijzigingen die na het annuleren van overerving zijn aangebracht, gerespecteerd en gehandhaafd. De lokale wijzigingen worden niet overschreven en de geannuleerde overerving wordt niet opnieuw tot stand gebracht. U kunt op drie manieren een synchronisatiehandeling starten.
 
-| Waar in AEM interface | Wanneer en waarom gebruiken | Hoe wordt het gebruikt |
+| Waar in [!DNL Experience Manager] interface | Wanneer en waarom gebruiken | Hoe wordt het gebruikt |
 |---|---|---|
 | [!UICONTROL References] spoor | Snel synchroniseren wanneer de bron al is geselecteerd. | Zie [Snelle acties van References rail voor bron](#quick-actions-from-references-rail-for-source) |
 | Werkbalk op de pagina [!UICONTROL Properties] | Een synchronisatie starten wanneer u de live kopieereigenschappen al hebt geopend. | Zie [Een live kopie synchroniseren](#synchronize-live-copy) |
@@ -199,7 +197,7 @@ Zie [Informatie en status van alle live kopieën van een map](#information-statu
 
 >[!NOTE]
 >
->Als de relatie wordt onderbroken, is de synchronisatiehandeling niet beschikbaar op de werkbalk. Terwijl de synchronisatieactie in [!UICONTROL References] spoor beschikbaar is, worden de wijzigingen niet verspreid zelfs na naar verluidt succesvolle implementatie.
+>Als de relatie wordt onderbroken, is de synchronisatiehandeling niet beschikbaar op de werkbalk. Terwijl de synchronisatieactie in [!UICONTROL References] spoor beschikbaar is, worden de wijzigingen niet verspreid zelfs op een succesvolle implementatie.
 
 ## Relatie {#suspend-and-resume-relationship} onderbreken en hervatten
 
@@ -213,7 +211,7 @@ U kunt relaties van verschillende assets in een map met livekopieën onderbreken
 
 Een live kopie is een kopie van de oorspronkelijke bron wanneer deze wordt gemaakt. De metagegevenswaarden van een live kopie worden overgenomen van de bron. De metagegevensvelden behouden afzonderlijk overerving met de respectieve velden van het bronelement.
 
-U hebt echter de flexibiliteit om lokale wijzigingen aan te brengen in een livekopie om een beperkt aantal eigenschappen te wijzigen. Als u lokale wijzigingen wilt aanbrengen, annuleert u de overname van de gewenste eigenschap. Wanneer de overname van een of meer metadatavelden wordt geannuleerd, blijven de liverelatie van de asset en de overname van de andere metadatavelden behouden. Bij een synchronisatie of uitrol worden de lokale wijzigingen niet overschreven. Open daartoe de pagina **[!UICONTROL Properties]** van een asset met livekopieën en klik op het pictogram **[!UICONTROL cancel inheritance]** naast een metadataveld.
+U hebt echter de flexibiliteit om lokale wijzigingen aan te brengen in een livekopie om een beperkt aantal eigenschappen te wijzigen. Als u lokale wijzigingen wilt aanbrengen, annuleert u de overname van de gewenste eigenschap. Wanneer de overname van een of meer metadatavelden wordt geannuleerd, blijven de liverelatie van de asset en de overname van de andere metadatavelden behouden. Bij een synchronisatie of uitrol worden de lokale wijzigingen niet overschreven. Als u dit wilt doen, opent u **[!UICONTROL Properties]** pagina van een actief voor live kopiëren en klikt u op de optie **[!UICONTROL cancel inheritance]** naast een metagegevensveld.
 
 U kunt alle lokale wijzigingen ongedaan maken en de status van het element herstellen. Handeling herstellen wordt onherroepelijk en onmiddellijk genegeerd bij alle lokale wijzigingen en herstelt overerving op alle metagegevensvelden. Als u wilt terugkeren vanaf de pagina **[!UICONTROL Properties]** van een actief kopiëren, klikt u op **[!UICONTROL Reset]** van de werkbalk.
 
@@ -223,13 +221,13 @@ U kunt alle lokale wijzigingen ongedaan maken en de status van het element herst
 
 U kunt de relatie tussen een bron en een live kopie volledig verwijderen met de actie Loskoppelen. De live kopie wordt een zelfstandig middel of een zelfstandige map nadat deze is losgekoppeld. Het wordt getoond als nieuw middel in AEM interface, onmiddellijk na het losmaken. Voer de volgende stappen uit om een live kopie van de bron los te koppelen.
 
-1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets p gebruiken.
+1. Selecteer een actief of map voor live kopiëren. Klik op **[!UICONTROL Properties]** op de werkbalk. U kunt ook de sneltoets `p` gebruiken.
 1. Klik op **[!UICONTROL Live Copy]**. Klik op **[!UICONTROL Detach]** op de werkbalk. Klik **[!UICONTROL Detach]** van de getoonde dialoog.
    ![Handeling ontkoppelen verwijdert de relatie tussen bron en live kopie volledig](assets/lc_detach.png)
 
 >[!CAUTION]
 >
->De relatie wordt verwijderd zodra u [!UICONTROL Detach] klikt in het dialoogvenster. U kunt dit niet ongedaan maken door op [!UICONTROL Cancel] op de pagina Eigenschappen te klikken.
+>De relatie wordt onmiddellijk verwijderd wanneer u [!UICONTROL Detach] van de dialoog klikt. U kunt dit niet ongedaan maken door op [!UICONTROL Cancel] op de pagina Eigenschappen te klikken.
 
 U kunt ook snel meerdere elementen in een live-kopieermap loskoppelen van de **[!UICONTROL Live Copy Overview]**-console. Zie [Acties uitvoeren op verschillende assets in mappen met livekopieën](#take-actions-on-many-assets-in-lcfolder).
 
@@ -263,7 +261,7 @@ AEM kunt u de functionaliteit uitbreiden met de API&#39;s van MSM Java. Voor Mid
 Live kopieën en bronnen zijn elementen of mappen die tot op zekere hoogte als digitale elementen kunnen worden beheerd. Sommige taken voor middelenbeheer in AEM hebben een specifieke invloed op de live kopieën.
 
 * Wanneer u een live kopie kopieert, wordt een live kopie van het element gemaakt met dezelfde bron als de eerste live kopie.
-* Wanneer u een bron of een live kopie verplaatst, blijft de live relatie behouden.
+* Wanneer u een bron of de live kopie ervan verplaatst, blijft de live relatie behouden.
 * Handeling bewerken werkt niet voor live-kopieerelementen.
 * Uitchecken is niet beschikbaar voor live kopieerelementen.
 * Voor de bronmap is de optie voor het maken van revisietaken beschikbaar.
@@ -284,3 +282,5 @@ In meer scenario&#39;s, past MSM voor Activa het gedrag van MSM voor de function
 Hieronder volgt de beperking met MSM voor activa.
 
 * Inhoudsfragmenten (CF&#39;s) worden niet ondersteund voor de gebruikszaak. Wanneer het proberen om hun levende exemplaren tot stand te brengen, worden CFs gekopieerd over zoals is zonder enige verhouding. De gekopieerde CF&#39;s zijn een momentopname in de tijd en worden niet bijgewerkt wanneer oorspronkelijke CF&#39;s worden bijgewerkt.
+
+* MSM werkt niet wanneer terugschrijven van metagegevens is ingeschakeld. Bij terugschrijven wordt de overerving onderbroken.
