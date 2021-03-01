@@ -537,7 +537,7 @@ ht-degree: 0%
       + [AEM formulieren uitvoeren in de onderhoudsmodus](/help/forms/using/admin-help/running-aem-forms-maintenance-mode.md)
    + De database voor AEM formulieren {#maintain-aem-forms-database} onderhouden
       + [DB2-database: Een proces wekelijks uitvoeren](/help/forms/using/admin-help/db2-database-running-process-weekly.md)
-      + [Oracle database maximum open cursors drempel](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
+      + [Maximale drempel voor open cursors in de database oracle](/help/forms/using/admin-help/oracle-database-maximum-open-cursors.md)
       + [IBM DB2-database: Opdrachten uitvoeren voor regelmatig onderhoud](/help/forms/using/admin-help/ibm-db2-database-running-commands.md)
       + [Procesgegevens wissen](/help/forms/using/admin-help/purging-process-data.md)
       + [Microsoft SQL Server-database: De configuratie verfijnen](/help/forms/using/admin-help/microsoft-sql-server-database-fine.md)
