@@ -8,7 +8,7 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 6b5c051a2487ca9aa66d110e5b792a55eae8e97d
 workflow-type: tm+mt
 source-wordcount: '1054'
 ht-degree: 0%
@@ -166,6 +166,6 @@ Houd bij het insluiten van een adaptief formulier in een webpagina rekening met 
 
 ## AEM Forms toestaan om aangepaste formulieren te gebruiken voor een interdomeinsite {#cross-domain-sites}
 
-1. Voor AEM auteurinstantie, ga naar AEM Manager van de Configuratie van de Console van het Web bij `http://[server]:[port]/system/console/configMgr`.
+1. Ga bij AEM publicatieexemplaar naar AEM Web Console Configuration Manager op `http://[server]:[port]/system/console/configMgr`.
 1. Zoek en open de **Apache Sling Referrer**-filterconfiguratie.
 1. Geef in het veld **Toegestane hosts** het domein op waar de webpagina zich bevindt. Het laat de gastheer toe om POST verzoeken aan de AEM server te doen. U kunt ook de reguliere expressie gebruiken om een reeks externe toepassingsdomeinen op te geven.
