@@ -7,9 +7,9 @@ uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
-source-wordcount: '1620'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -41,7 +41,7 @@ De volgende topologie is indicatieve topologie om de Interactieve Mededelingen v
 
 ![aanbevolen topologie](assets/recommended-topology.png)
 
-AEM Forms Forms-centric workflow op OSGi voert AEM interface uit voor het maken van het workflowmodel en AEM op de Author-instanties van AEM Forms.
+AEM Forms Forms-centric workflow op OSGi voert AEM interface voor het maken van workflowmodellen in en AEM op de Author-instanties van AEM Forms uit.
 
 ## Systeemvereisten {#system-requirements}
 
@@ -182,7 +182,7 @@ Caching is een mechanisme om gegevenstoegang te verkorten, latentie te verminder
 Voer de volgende stappen uit om de cache voor adaptieve formulieren te configureren:
 
 1. Ga naar AEM webconsoleconfiguratiebeheer op `https://[server]:[port]/system/console/configMgr`.
-1. Klik **Adaptive Form Configuration Service** om de configuratiewaarden ervan te bewerken. Geef in het dialoogvenster Configuratiewaarden bewerken het maximumaantal formulieren of documenten op dat een instantie van de AEM Forms-server in cache kan plaatsen in het veld **Aantal Adaptieve Forms**. De standaardwaarde is 100. Klik **Opslaan**.
+1. Klik **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** om zijn configuratiewaarden uit te geven. Geef in het dialoogvenster Configuratiewaarden bewerken het maximumaantal formulieren of documenten op dat een instantie van de AEM Forms-server in cache kan plaatsen in het veld **Aantal Adaptieve Forms**. De standaardwaarde is 100. Klik **Opslaan**.
 
    >[!NOTE]
    >
