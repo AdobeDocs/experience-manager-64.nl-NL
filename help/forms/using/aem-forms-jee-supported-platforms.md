@@ -9,9 +9,9 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
 translation-type: tm+mt
-source-git-commit: ee38d0ebde12a70e3af04254b0c0b4995c45519b
+source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
 workflow-type: tm+mt
-source-wordcount: '3327'
+source-wordcount: '3318'
 ht-degree: 0%
 
 ---
@@ -128,7 +128,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Ondersteund</td> 
   </tr> 
   <tr> 
-   <td><p>Oracle Database 12c Release 1</p> </td> 
+   <td><p>Database van oracles 12c, Release 1</p> </td> 
    <td><p>Repository Microkernel</p> </td> 
    <td><p>Ondersteund</p> </td> 
   </tr> 
@@ -168,7 +168,7 @@ Adobe Experience Manager Forms vereist dat een Java Virtual Machine wordt uitgev
    <td>Ondersteund</td> 
   </tr> 
   <tr> 
-   <td><p>Oracle Database 12c Release 1</p> </td> 
+   <td><p>Database van oracles 12c, Release 1</p> </td> 
    <td><p>Repository Microkernel</p> </td> 
    <td><p>Ondersteund</p> </td> 
    <td><p>Ondersteund</p> </td> 
@@ -364,7 +364,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
 * AEM Forms op JEE biedt geen ondersteuning voor TarMK Cold Standby.
 * AEM Forms on JEE biedt geen ondersteuning voor verticale clustering.
 * AEM Forms on JEE biedt geen ondersteuning voor MySQL-database in een geclusterde omgeving.
-* RDBMK werkt niet met DB2-, MYSQL-, MS SQL- en Oracle-databases wanneer de Package JDBC-modules op Weblogic zijn geconfigureerd.
+* RDBMK werkt niet met DB2, MYSQL, MS SQL, en gegevensbestanden van het Oracle wanneer de modules van het Pakket JDBC op Weblogic worden gevormd.
 
 ### LDAP-servers (optioneel) {#ldap-servers-optional}
 
@@ -375,7 +375,7 @@ Houd rekening met de volgende punten wanneer u software kiest voor Adobe AEM For
    <th><p><strong>Ondersteunde patchdefinities</strong></p> </th> 
   </tr> 
   <tr> 
-   <td>Oracle Unified Directory (OUD) 11g Release 2</td> 
+   <td>Oracle Verenigde Folder (OUD) Versie 11g 2</td> 
    <td>Servicepakketten</td> 
   </tr> 
   <tr> 
@@ -631,21 +631,17 @@ Zie voor aanvullende vereisten:
 
 ### Designer {#designer}
 
-**Opmerking:voer het installatieprogramma met beheerdersrechten uit om Designer** te installeren in Windows.
-
-* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft Windows 10
-
-   * Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
-   * 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
-   * 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
-
+* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10
+* Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
+* 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
+* 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
 * Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
 * 2,35 GB beschikbare ruimte op de vaste schijf
 * Dvd-rom-station
-* Internet Explorer 10 of 11; Firefox 45.x
 * Monitorresolutie van 1024 x 768 pixels of hoger
 * Hardwareversnelling voor video (optioneel)
-* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC.
+* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
+* Beheerdersrechten voor de installatie van Designer
 
 ### Adobe Acrobat en Adobe Reader {#adobe-acrobat-and-adobe-reader}
 
