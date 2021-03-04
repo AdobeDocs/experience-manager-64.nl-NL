@@ -10,9 +10,9 @@ content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
 translation-type: tm+mt
-source-git-commit: 5e418ea537e00dc3b23174a7b1bb01dba0fc6b3a
+source-git-commit: 53154f9ada1062dae4bdccc5eac3d3113cd730a2
 workflow-type: tm+mt
-source-wordcount: '3181'
+source-wordcount: '3273'
 ht-degree: 0%
 
 ---
@@ -115,7 +115,7 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
    <td>Z: Niet ondersteund</td> 
   </tr> 
   <tr> 
-   <td><strong>Oracle Java SE 8 JDK - 64 bits</strong></td> 
+   <td><strong>Oracle Java SE 8 JDK - 64-bits</strong></td> 
    <td>A: Ondersteund [3]<br /> </td> 
   </tr> 
   <tr> 
@@ -129,10 +129,10 @@ Adobe Experience Manager werkt met de volgende versies van Java Virtual Machines
  </tbody> 
 </table>
 
-1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies door Oracle (zie [Ondersteuning van Oracle Java SE roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe biedt alleen ondersteuning voor LTS-releases van Java om AEM in productie te houden.
+1. Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies door Oracle (zie [Oracle de steun roadmap van Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe biedt alleen ondersteuning voor LTS-releases van Java om AEM in productie te houden.
 
 1. IBM JRE wordt alleen ondersteund in combinatie met WebSphere Application Server.
-1. Ondersteuning en distributie van de Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie. Raadpleeg de [Oracle Java-ondersteuning voor Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie.
+1. Ondersteuning en distributie van het Oracle Java SE JDK, inclusief alle onderhoudsupdates van LTS-releases na afloop van de openbare updates, wordt door Adobe direct ondersteund voor alle AEM klanten die gebruikmaken van de Oracle Java SE-technologie. Zie [Oracle Java support for Adobe Experience Manager Q&amp;A](assets/adobe-oracle-java-license-agreement.pdf) voor meer informatie.
 
 ### Opslag en duurzaamheid {#storage-persistence}
 
@@ -196,7 +196,7 @@ Er zijn verschillende opties om de opslagplaats van Adobe Experience Manager te 
    <td>R: Beperkte ondersteuning (4)</td> 
   </tr> 
   <tr> 
-   <td>Oracle Database 12c (12.1.x)</td> 
+   <td>Database van oracle 12c (12.1.x)</td> 
    <td>Opslagplaats en Forms-database</td> 
    <td>R: Beperkte ondersteuning</td> 
   </tr> 
@@ -627,6 +627,20 @@ x86
 >
 
 
+
+### Vereisten voor AEM Forms Designer {#requirements-for-aem-forms-designer}
+
+* Microsoft® Windows® 2012 Server R2, Microsoft® Windows® 2016 Server, Microsoft® Windows® 2019 Server, Microsoft® Windows® 10
+* Processor van 1 GHz of sneller met ondersteuning voor PAE, NX en SSE2.
+* 1 GB RAM voor 32-bits of 2 GB RAM voor 64-bits besturingssysteem
+* 16 GB schijfruimte voor 32-bits of 20 GB schijfruimte voor 64-bits besturingssysteem
+* Grafisch geheugen - 128 MB GPU (256 MB aanbevolen)
+* 2,35 GB beschikbare ruimte op de vaste schijf
+* Dvd-rom-station
+* Monitorresolutie van 1024 x 768 pixels of hoger
+* Hardwareversnelling voor video (optioneel)
+* Acrobat Pro DC, Acrobat Standard DC of Adobe Acrobat Reader DC
+* Beheerdersrechten voor de installatie van Designer
 
 ### Vereisten voor het terugschrijven van AEM Assets XMP metagegevens {#requirements-for-aem-assets-xmp-metadata-write-back}
 
