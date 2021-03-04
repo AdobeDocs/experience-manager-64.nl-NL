@@ -4,9 +4,9 @@ description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience
 contentOwner: AK
 mini-toc-levels: 1
 translation-type: tm+mt
-source-git-commit: 3a8fefc8a580d41d327cf7acbf8e4b0440fea604
+source-git-commit: 7c19ef4a56fbfaa2f43b71e4dc48c79f797f32a8
 workflow-type: tm+mt
-source-wordcount: '4347'
+source-wordcount: '4595'
 ht-degree: 0%
 
 ---
@@ -32,7 +32,13 @@ AEM Cumulative Fix Pack 6.4.8.4 is een belangrijke update die verscheidene inter
 
 AEM 6.4.8.4 is een Cumulatief Pak van de Fix (GVB) dat van AEM 6.4 Service Pack 8 afhankelijk is. Installeer het GVB na installatie AEM 6.4 Service Pack 8.
 
-In AEM 6.4.8.4 wordt de ingebouwde opslagplaats (Apache Jackrabbit Oak) bijgewerkt naar versie 1.8.24.
+De belangrijkste functies en verbeteringen in [!DNL Adobe Experience Manager] 6.4.8.4 zijn:
+
+* Mogelijkheid om de wijzigingen in het [!DNL Experience Manager Forms]-register in of uit te schakelen wanneer u een PDFG-conversie uitvoert.
+
+* X-509 op certificaat-gebaseerde authentificatie voor op ZEEP-Gebaseerde Webdiensten in het model van vormgegevens.
+
+* De ingebouwde opslagplaats (Apache Jackrabbit Oak) wordt bijgewerkt naar versie 1.8.24.
 
 Zie [Definities van releasevoertuig bijwerken](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/update-release-vehicle-definitions.html?lang=en) voor informatie over gestreken fijn papier en andere typen releases
 
@@ -69,6 +75,20 @@ Adobe Experience Manager 6.4.8.4 biedt oplossingen voor de volgende problemen.
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] geeft de add-on pakketten een week na de geplande  [!DNL Experience Manager] Cumulative Fix Pack-releasedatum vrij.
+
+**Correspondentenbeheer**
+
+* Wanneer u een letter bewerkt, duurt het langer om de modules met voorwaarden te laden (NPR-35326).
+
+* Wanneer u een letter bewerkt, worden de inhoud en gegevensbindingen niet weergegeven in de gebruikersinterface (CQ-4312905).
+
+**Document Services**
+
+* PDF&#39;s kunnen niet worden samengevoegd nadat [!DNL JAVA] is bijgewerkt naar [!DNL JDK1.8.0_261] (NPR-35761, NPR-35848).
+
+**Foundation JEE**
+
+* Wanneer u een taakbericht in [!DNL Forms] werkschema uitgeeft, kunt u niet het opslaan (CQ-4315055).
 
 Voor informatie over veiligheidsupdates, zie [pagina van de veiligheidsbulletins van de Experience Manager](https://helpx.adobe.com/security/products/experience-manager.html).
 
@@ -493,6 +513,26 @@ Hiermee worden nieuwe voorinstellingen van de viewer naar de locatie /conf gekop
 >[!NOTE]
 >
 >[!DNL Experience Manager Forms] geeft de add-on pakketten een week na de geplande  [!DNL Experience Manager] Cumulative Fix Pack-releasedatum vrij.
+
+>[!NOTE]
+>
+>Sla dit over als u AEM Forms niet gebruikt. Correcties in AEM Forms worden geleverd via een afzonderlijk invoegpakket.
+
+1. Controleer of u het AEM Cumulative Fix Pack hebt geïnstalleerd.
+1. Download het overeenkomstige formulierinvoegpakket dat u vindt op [AEM Forms-releases](https://experienceleague.adobe.com/docs/experience-manager-release-information/aem-release-updates/forms-updates/aem-forms-releases.html?lang=en#forms-updates) voor uw besturingssysteem.
+1. Installeer het formulierinvoegpakket zoals beschreven in [AEM formulierinvoegpakketten installeren](https://docs.adobe.com/content/help/en/experience-manager-64/forms/install-aem-forms/osgi-installation/installing-configuring-aem-forms-osgi.html#install-aem-forms-add-on-package).
+
+### AEM Forms JEE-installatieprogramma {#install-aem-forms-jee-installer} installeren
+
+>[!NOTE]
+>
+>Sla dit over als u AEM Forms niet gebruikt op JEE. Correcties in AEM Forms JEE worden geleverd via een afzonderlijk installatieprogramma.
+
+Zie [AEM Forms JEE Patch Installer](jee-patch-installer-64.md) voor informatie over de installatie van het cumulatieve installatieprogramma voor AEM Forms JEE en de configuratie na de implementatie.
+
+>[!NOTE]
+>
+>Nadat u het cumulatieve installatieprogramma voor Experience Manager Forms in JEE hebt geïnstalleerd, installeert u het nieuwste Forms-invoegpakket, verwijdert u het Forms-invoegpakket uit de map `crx-repository\install` en start u de server opnieuw.
 
 ### Uber Jar {#uber-jar}
 
