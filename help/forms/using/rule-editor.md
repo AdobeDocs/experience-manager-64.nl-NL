@@ -9,7 +9,7 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 66a3528a-489b-4fd0-be6c-b8c4b9b1f908
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 5734bcd7231f7ba8779acd8e0325b875e252e104
 workflow-type: tm+mt
 source-wordcount: '6300'
 ht-degree: 0%
@@ -330,7 +330,7 @@ Gebruikers in de gebruikersgroep voor formulieren hebben toegang tot de code-edi
 AEM Forms volgt de wijze van de regelredacteur u het laatst gebruikte om een regel te schrijven. Wanneer u de regelredacteur de volgende keer lanceert, opent het op die wijze. Nochtans, kunt u een standaardwijze ook vormen om de regelredacteur op de gespecificeerde wijze te openen. Daartoe:
 
 1. Ga naar AEM webconsole op https://[host]:[port]/system/console/configMgr.
-1. Klik om **[!UICONTROL Adaptive Form Configuration Service]** te bewerken.
+1. Klik om **[!UICONTROL Adaptive Form and Interactive Communication Web Channel Configuration]** te bewerken.
 1. Kies **[!UICONTROL Visual Editor]** of **[!UICONTROL Code Editor]** in de vervolgkeuzelijst **[!UICONTROL Default Mode for Rule Editor]**
 
 1. Klik op **[!UICONTROL Save]**.
@@ -583,7 +583,7 @@ Nadat u de clientbibliotheek in de CRX-opslagplaats hebt toegevoegd, gebruikt u 
    ![De aangepaste clientbibliotheek van de functie toevoegen](assets/clientlib.png)
 
 1. Selecteer het invoernumerieke vak en tik ![edit-rules](assets/edit-rules.png) om de regeleditor te openen.
-1. Tik **Regel maken**. Maak met de opties hieronder een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
+1. Tik **Regel maken**. Maak met de onderstaande opties een regel om de kwadratwaarde van de invoer op te slaan in het veld Uitvoer van het formulier.
    [ ![Het gebruiken van douanefuncties om een ](assets/add-custom-rule.png)](assets/add-custom-rule-1.png)ruleTap  **Done** tot stand te brengen. Uw aangepaste functie wordt toegevoegd.
 
 #### Ondersteunde typen voor functiedeclaratie {#function-declaration-supported-types}
