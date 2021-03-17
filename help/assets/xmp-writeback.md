@@ -3,9 +3,9 @@ title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: debf372e6a0b8f00bbfce16325908a5806c062d5
 workflow-type: tm+mt
-source-wordcount: '731'
+source-wordcount: '715'
 ht-degree: 2%
 
 ---
@@ -13,11 +13,9 @@ ht-degree: 2%
 
 # Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
-Met deze XMP terugdraaifunctie in Adobe Experience Manager-elementen (AEM) worden wijzigingen in de metagegevens van elementen overgenomen in de uitvoeringen van het element.
+Met deze XMP schrijffunctie in [!DNL Adobe Experience Manager Assets] worden de wijzigingen in metagegevens in de uitvoeringen van het oorspronkelijke element gerepliceerd. Wanneer u de metagegevens van een element wijzigt vanuit Middelen of tijdens het uploaden van het element, worden de wijzigingen in eerste instantie opgeslagen in het metagegevensknooppunt in de elementenhiërarchie.
 
-Wanneer u de metagegevens voor een element wijzigt vanuit AEM Assets of wanneer u het element uploadt, worden wijzigingen in eerste instantie opgeslagen in het knooppunt met elementen in de map Crx-De.
-
-De functie XMP terugschrijven geeft de metagegevenswijzigingen door in alle of in specifieke uitvoeringen van het element.
+Met de functie XMP terugschrijven kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De eigenschap schrijft slechts die meta-gegevenseigenschappen terug die `jcr` namespace gebruiken, namelijk wordt een bezit genoemd `dc:title` teruggeschreven maar een bezit genoemd `mytitle` is niet.
 
 Overweeg een scenario waarbij u de [!UICONTROL Title] eigenschap van het element `Classic Leather` aan `Nylon` wijzigt.
 
@@ -27,9 +25,7 @@ In dit geval slaat de AEM Assets de wijzigingen in de eigenschap **[!UICONTROL T
 
 ![metadata_stored](assets/metadata_stored.png)
 
-AEM Assets verspreidt echter niet automatisch metagegevenswijzigingen in de uitvoeringen van een element.
-
-Met de functie XMP terugdraaien kunt u de wijzigingen in metagegevens doorgeven aan alle of specifieke uitvoeringen van het element. De wijzigingen worden echter niet opgeslagen onder het metagegevensknooppunt in de elementenhiërarchie. In plaats daarvan worden de wijzigingen in de binaire bestanden voor de uitvoeringen ingesloten.
+[!DNL Experience Manager Assets] geeft echter niet automatisch metagegevenswijzigingen door in de uitvoeringen van een element. Zie [hoe te om XMP terug ](#enabling-xmp-writeback) toe te laten.
 
 ## Terugschrijven XMP {#enabling-xmp-writeback} inschakelen
 
@@ -68,11 +64,11 @@ De meta-gegevensveranderingen worden verspreid aan de vertoningen `thumbnail.140
 
 ## XMP metagegevens filteren {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van afgewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden ingeslikt.
+[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden opgenomen.
 
-Als u filtert met een lijst van afgewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van afgewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de AEM instantie of de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
+Als u filtert met een lijst van gewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van gewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de AEM instantie of de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
 
-Door het filteren van XMP metagegevens via lijst van gewenste personen verhelpt u dit probleem door de XMP te definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP eigenschappen genegeerd. Voor achterwaartse compatibiliteit kunt u enkele van deze eigenschappen toevoegen aan het filter dat een lijst van afgewezen personen gebruikt.
+Door het filteren van XMP metagegevens via lijst van gewenste personen wordt dit probleem opgelost doordat u de XMP eigenschappen kunt definiëren die moeten worden geïmporteerd. Op deze manier worden andere of onbekende XMP eigenschappen genegeerd. Voor achterwaartse compatibiliteit kunt u enkele van deze eigenschappen toevoegen aan het filter dat een lijst van gewezen personen gebruikt.
 
 >[!NOTE]
 >
@@ -88,4 +84,4 @@ Door het filteren van XMP metagegevens via lijst van gewenste personen verhelpt 
 
    >[!NOTE]
    >
-   >De optie **[!UICONTROL Apply Blocklist to XMP Properties]** is standaard geselecteerd. Met andere woorden, filteren met een lijst van afgewezen personen wordt standaard ingeschakeld. Als u dergelijke filters wilt uitschakelen, schakelt u de optie **[!UICONTROL Apply Blocklist to XMP Properties]** uit.
+   >De optie **[!UICONTROL Apply Blocklist to XMP Properties]** is standaard geselecteerd. Met andere woorden, filteren met een lijst van gewezen personen wordt standaard ingeschakeld. Als u dergelijke filters wilt uitschakelen, schakelt u de optie **[!UICONTROL Apply Blocklist to XMP Properties]** uit.
