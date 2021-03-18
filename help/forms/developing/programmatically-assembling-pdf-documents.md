@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2138'
+source-wordcount: '2139'
 ht-degree: 0%
 
 ---
@@ -115,7 +116,7 @@ Nadat u de serviceclient hebt gemaakt, naar een DDX-bestand hebt verwezen, een v
 
 **De resultaten extraheren**
 
-De service Assembler retourneert een `java.util.Map`-object dat kan worden verkregen van het `AssemblerResult`-object en dat de bewerkingsresultaten bevat. Het geretourneerde `java.util.Map`-object bevat de resulterende documenten en eventuele uitzonderingen.
+De service Assembler retourneert een object `java.util.Map`, dat kan worden verkregen van het object `AssemblerResult` en dat bewerkingsresultaten bevat. Het geretourneerde `java.util.Map`-object bevat de resulterende documenten en eventuele uitzonderingen.
 
 De volgende tabel bevat een overzicht van enkele sleutelwaarden en objecttypen die in het geretourneerde `java.util.Map`-object kunnen worden gevonden.
 
