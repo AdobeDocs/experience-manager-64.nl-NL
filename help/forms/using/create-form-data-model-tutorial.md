@@ -7,10 +7,11 @@ uuid: f7483d27-b468-4e6c-a849-f8e084f73e1e
 contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ef873c07-be89-4cd0-8913-65765b989f90
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: 61c9abca40007271f1fba49d3d5e3136df91938d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2738'
+source-wordcount: '2740'
 ht-degree: 0%
 
 ---
@@ -26,7 +27,7 @@ Deze zelfstudie is een stap in de serie [Maak uw eerste interactieve communicati
 
 ## Informatie over de zelfstudie {#about-the-tutorial}
 
-Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het aangepaste formulier vooraf invullen en ingediende formuliergegevens terugschrijven naar het gegevensmodelobject.
+Met de AEM Forms-module voor gegevensintegratie kunt u een formuliergegevensmodel maken op basis van verschillende bronnen van back-endgegevens, zoals AEM gebruikersprofiel, RESTful-webservices, SOAP-webservices, OData-services en relationele databases. U kunt gegevensmodelobjecten en -services configureren in een formuliergegevensmodel en deze koppelen aan een adaptief formulier. Adaptieve formuliervelden zijn gebonden aan objecteigenschappen van gegevensmodellen. Met deze services kunt u het adaptieve formulier vooraf invullen en verzonden formuliergegevens terugschrijven naar het gegevensmodelobject.
 
 Zie [AEM Forms Data Integration](data-integration.md) voor meer informatie over de integratie van formuliergegevens en het formuliergegevensmodel.
 
@@ -124,7 +125,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
    1. Meld u als beheerder aan bij AEM Forms Author Instance en ga naar AEM bundels voor webconsoles. De standaard-URL is [http://localhost:4502/system/console/bundles](http://localhost:4502/system/console/bundles).
    1. Tik **Installeren/bijwerken**. Er verschijnt een dialoogvenster **Bundels uploaden/installeren**.
-   1. Tik **Kies Bestand** om door de OSGi-bundel van het MySQL JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel starten** en **Pakketten vernieuwen** en tik **Installeren** of **Bijwerken**. Zorg ervoor dat het JDBC Driver for MySQL van Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
+   1. Tik **Kies Bestand** om door de OSGi-bundel van het MySQL JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel starten** en **Pakketten vernieuwen** en tik **Installeren** of **Bijwerken**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van de Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
 
 1. MySQL-database configureren als gegevensbron:
 
@@ -261,7 +262,7 @@ Voer de volgende stappen uit om koppelingen te maken tussen gegevensmodelobjecte
    * Selecteer **Een tot veel** in de vervolgkeuzelijst **Type**.
    * Selecteer **vraag** van **ModelVoorwerp** drop-down lijst.
    * Selecteer **get** in de vervolgkeuzelijst **Service**.
-   * Tik **Add** om het gegevensmodelobject **customer** te koppelen aan **call** gegevensmodelobject met behulp van een eigenschap. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het voorwerp van het klantengegevensmodel worden verbonden. Het dialoogvenster **Argument toevoegen** wordt geopend.
+   * Tik **Add** om het gegevensmodelobject **customer** te koppelen aan **call** gegevensmodelobject met behulp van een eigenschap. Gebaseerd op het gebruiksgeval, moet het modelvoorwerp van vraaggegevens met het mobiele aantalbezit in het modelvoorwerp van klantengegevens worden verbonden. Het dialoogvenster **Argument toevoegen** wordt geopend.
 
    ![add_association](assets/add_association.png)
 
