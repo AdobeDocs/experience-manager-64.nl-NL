@@ -7,10 +7,11 @@ uuid: bed1a82e-a799-4034-9068-1478b95e6c70
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integration
 discoiquuid: 3a3a6ede-52af-4c37-8a51-c2ea721a28dc
+feature: Formuliergegevensmodel
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '935'
+source-wordcount: '0'
 ht-degree: 0%
 
 ---
@@ -61,7 +62,7 @@ Laten we de verschillende componenten van de gebruikersinterface van de formulie
 
 **D. Het gebied** ServicesContent waar de toegevoegde gegevensbronverrichtingen of de diensten verschijnen.
 
-**E. Gereedschappen** op de werkbalk voor formuliergegevensmodellen. Op de werkbalk ziet u meer opties, afhankelijk van het geselecteerde object in het formuliergegevensmodel.
+**E. Gereedschappen** op de werkbalk voor formuliergegevens. Op de werkbalk ziet u meer opties, afhankelijk van het geselecteerde object in het formuliergegevensmodel.
 
 **F. Hiermee voegt u** Geselecteerde gegevensmodelobjecten en -services toe aan het formuliergegevensmodel.
 
