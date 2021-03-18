@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 95804bff-9e6f-4807-aae4-790bd9e7cb57
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6243'
+source-wordcount: '6244'
 ht-degree: 0%
 
 ---
@@ -604,7 +605,7 @@ Dit onderwerp beschrijft hoe u de Dienst API van de Manager van de Vergunning (J
 
 In AEM Forms is een *rol* een groep machtigingen voor toegang tot een of meer systeembronnen. Deze toestemmingen worden gecreeerd door het Beheer van de Gebruiker en door de de dienstcomponenten afgedwongen. Een beheerder kan bijvoorbeeld de rol &quot;Policy Set Author&quot; aan een groep gebruikers toewijzen. Het Rights Management zou dan de gebruikers van die groep met die rol toestaan om beleidsreeksen door beleidsconsole tot stand te brengen.
 
-Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. Standaardrollen (*systeemrollen)* zijn reeds ingezeten in AEM Forms. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
+Er zijn twee soorten rollen: *standaardrollen* en *aangepaste rollen*. Standaardrollen (*systeemrollen)* zijn reeds ingezetene in AEM Forms. Aangenomen wordt dat standaardrollen niet door de beheerder kunnen worden verwijderd of gewijzigd en dus onveranderlijk zijn. Aangepaste rollen die door de beheerder zijn gemaakt en die vervolgens kunnen worden gewijzigd of verwijderd, zijn dus veranderbaar.
 
 Rollen maken het eenvoudiger om machtigingen te beheren. Wanneer een rol aan een hoofd wordt toegewezen, wordt een reeks toestemmingen automatisch toegewezen aan dat hoofd, en alle specifieke op toegang betrekking hebbende besluiten voor het hoofd zijn gebaseerd op die algemene reeks toegewezen toestemmingen.
 
@@ -744,7 +745,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead> 
  <tbody>
   <tr> 
-   <td><p>3</p></td> 
+   <td><p>1</p></td> 
    <td><p>De gebruiker heeft toegang tot een website en geeft een gebruikersnaam en wachtwoord op. Deze informatie wordt verzonden naar een J2EE-toepassingsserver die als host fungeert voor AEM Forms.</p></td> 
   </tr> 
   <tr> 
@@ -870,7 +871,7 @@ De volgende lijst beschrijft de stappen in dit diagram
  </thead> 
  <tbody>
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>Een clienttoepassing vraagt of AEM Forms een synchronisatiebewerking uitvoert.</p></td> 
   </tr> 
   <tr> 
@@ -878,7 +879,7 @@ De volgende lijst beschrijft de stappen in dit diagram
    <td><p>AEM Forms voert een synchronisatiebewerking uit.</p></td> 
   </tr> 
   <tr> 
-   <td><p>1</p></td> 
+   <td><p>3</p></td> 
    <td><p>Gebruikersgegevens worden bijgewerkt.</p></td> 
   </tr> 
   <tr> 
