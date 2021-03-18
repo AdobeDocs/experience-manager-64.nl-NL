@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: c8ef374a-38d8-4cd4-a86e-69f0a5b4c2bc
+feature: Kader voor integratie in de handel
 translation-type: tm+mt
-source-git-commit: 89d3edbd11d6a900804908ef13cd53e086e92345
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '4532'
+source-wordcount: '4535'
 ht-degree: 0%
 
 ---
@@ -238,7 +239,7 @@ Productgegevens kunnen zijn:
 
    Afhankelijk van het gegevenstype is het [gesynchroniseerd](#catalog-maintenance-data-synchronization) zonodig, of direct betreden; bijvoorbeeld, worden de hoogst vluchtige en kritieke gegevens zoals productprijzen teruggewonnen van de e-commerce motor op elke paginaverzoek om ervoor te zorgen dat zij altijd bijgewerkt zijn.
 
-In beide gevallen, wanneer de productgegevens zijn ingegaan/in AEM ingevoerd kan het van de **console van Producten** worden gezien. Hier wordt op de kaart en de lijstweergave van een product informatie weergegeven zoals:
+In beide gevallen, wanneer de productgegevens zijn ingegaan/in AEM ingevoerd kan het van de **console van Producten** worden gezien. Hier wordt op de kaart en de lijstweergaven van een product informatie weergegeven zoals:
 
 * de afbeelding
 * de SKU-code
