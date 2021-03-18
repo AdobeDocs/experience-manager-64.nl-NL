@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: 6fe1c5c5-deb7-4405-82e4-23e0f90e2bd8
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 19f6ea07e192294124d5251e31ead93deae57349
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3579'
+source-wordcount: '3580'
 ht-degree: 0%
 
 ---
@@ -494,7 +495,7 @@ De standaardagenten zijn inbegrepen met de installatie. Nochtans, is bepaalde co
    >Als u AEM in een andere context dan de geadviseerde standaardcontext hebt geïnstalleerd, dan moet u [Kopballen van HTTP ](#extended) in **Uitgebreide** tabel vormen.
 
 1. Klik **OK** om de wijzigingen op te slaan.
-1. Keer terug naar **Tools** lusje, van hier kunt u **Activate** de **Dispatcher Flush** agent (**Agenten op publish**).
+1. Keer terug naar **Tools** tabel, vanaf hier kunt u **Activate** de **Dispatcher Flush** agent (**Agenten op publish**).
 
 De **Dispatcher Flush** replicatieagent is niet actief op auteur. U hebt toegang tot dezelfde pagina in de publicatieomgeving met behulp van de equivalente URI. bijvoorbeeld `http://localhost:4503/etc/replication/agents.publish/flush.html`.
 
