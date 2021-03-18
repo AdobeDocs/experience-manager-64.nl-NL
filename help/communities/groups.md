@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1615'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
@@ -57,7 +58,7 @@ De console Groepen openen:
    * De structuur van de site van de community moet een groepfunctie bevatten
    * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag nadat [groepen zijn gemaakt voor publicatie](published-site.md)
 
-![chlimage_1-133](assets/chlimage_1-133.png)
+![chlimage_1-135](assets/chlimage_1-133.png)
 
 Selecteer **[!UICONTROL Groups folder]** om het te openen.
 
@@ -110,7 +111,7 @@ Nadat de communitysite is gepubliceerd, is het mogelijk om de eigenschappen [te 
 
 #### COMMUNAUTAIRE GROEPSVERDELING {#community-group-branding}
 
-![chlimage_1-133](assets/chlimage_1-135.png)
+![chlimage_1-135](assets/chlimage_1-135.png)
 
 De branding van de communautaire plaats is een beeld dat als kopbal over de bovenkant van elke pagina wordt getoond. Het is mogelijk om een banner voor de groep weer te geven die afwijkt van andere sitepagina&#39;s.
 
