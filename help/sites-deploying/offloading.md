@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: 370151df-3b8e-41aa-b586-5c21ecb55ffe
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2803'
+source-wordcount: '2804'
 ht-degree: 0%
 
 ---
@@ -86,7 +87,7 @@ Voor elke instantie in de cluster, kunt u verscheidene op topologie betrekking h
 
    De clusters die aan de topologie deelnemen verschijnen.
 
-   ![chlimage_1-191](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 1. Klik op een cluster om een lijst weer te geven met de instanties in de cluster en hun id, huidige status en leaderstatus.
 1. Klik op een instantie-id voor meer gedetailleerde eigenschappen.
@@ -215,11 +216,11 @@ Verschillende JobConsumer-implementaties worden geïnstalleerd met Experience Ma
 
 ### Onderwerpen voor een instantie {#disabling-and-enabling-topics-for-an-instance} uitschakelen en inschakelen
 
-De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van afgewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Experience Manager toe te laten of onbruikbaar te maken.
+De Apache Sling de dienst van de Consumentenmanager van de Baan verstrekt onderwerp lijst van gewenste personen en lijst van gewezen personen eigenschappen. Vorm deze eigenschappen om de verwerking van specifieke onderwerpen op een instantie van de Experience Manager toe te laten of onbruikbaar te maken.
 
 **Nota:** Als de instantie tot een topologie behoort, kunt u het Offloaden Browser op om het even welke computer in de topologie ook gebruiken om onderwerpen toe te laten of onbruikbaar te maken.
 
-De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van afgewezen personen zijn.Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen zijn gehandicapt (de lijst van afgewezen personen heeft geen waarde).
+De logica die tot de lijst van toegelaten onderwerpen leidt staat eerst alle onderwerpen toe die in de lijst van gewenste personen zijn, en verwijdert dan onderwerpen die op de lijst van gewezen personen zijn.Door gebrek, worden alle onderwerpen toegelaten (de waarde van de lijst van gewenste personen is `*`) en geen onderwerpen zijn gehandicapt (de lijst van gewezen personen heeft geen waarde).
 
 Gebruik de Console of een `sling:OsgiConfig` knoop van het Web om de volgende eigenschappen te vormen. Voor `sling:OsgiConfig` knopen, is PID van de dienst van de Manager van de Consumentenconsument van de Baan org.apache.sling.event.impl.job.JobConsumerManager.
 
