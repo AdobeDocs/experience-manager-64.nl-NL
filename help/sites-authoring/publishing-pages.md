@@ -1,7 +1,7 @@
 ---
 title: Pagina's publiceren
 seo-title: Pagina's publiceren
-description: 'null'
+description: Pagina's publiceren
 seo-description: 'null'
 uuid: 1222859d-ef8d-462e-a125-b76e6cfec26d
 contentOwner: Chris Bohnert
@@ -10,10 +10,10 @@ topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8f2714bc-9d6c-4e6f-97a1-3b4f977348c5
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1630'
-ht-degree: 5%
+source-wordcount: '0'
+ht-degree: 0%
 
 ---
 
@@ -231,7 +231,7 @@ Net zoals u [de optie Publicatie beheren gebruikt om te publiceren](/help/sites-
 
    ![chlimage_1-55](assets/chlimage_1-55.png)
 
-   Net zoals bij het publiceren later een workflow wordt gestart om deze versie van de pagina op het opgegeven tijdstip te publiceren, wordt door het later deactiveren een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald tijdstip ongedaan te maken.
+   Net zoals later met publiceren een workflow wordt gestart om deze versie van de pagina op het opgegeven tijdstip te publiceren, wordt later met deactiveren een workflow gestart om de publicatie van de geselecteerde pagina of pagina&#39;s op een bepaald tijdstip ongedaan te maken.
 
    Als u een publicatie/unpublish later wilt annuleren, gaat u naar [Workflowconsole](/help/sites-administering/workflows.md) om de corresponderende workflow te beëindigen.
 
