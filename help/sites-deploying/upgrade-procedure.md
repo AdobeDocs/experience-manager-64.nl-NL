@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba90b25f-f672-42c5-8b06-07bb32cc51de
 targetaudience: target-audience upgrader
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '835'
+source-wordcount: '836'
 ht-degree: 0%
 
 ---
@@ -116,7 +117,7 @@ De veronderstelde topologie voor deze sectie bestaat uit een cluster van de Aute
 1. De bijgewerkte primaire instantie van de auteur uitschakelen
 1. Sluit de bijgewerkte primaire instantie van Mongo af.
 1. Start de secundaire Mongo-instanties op met een van deze als nieuwe primaire
-1. Vorm `DocumentNodeStoreService.cfg` dossiers op de secundaire instanties van de Auteur om aan de replicaset te richten die nog niet instanties van Mongo wordt bevorderd
+1. Vorm `DocumentNodeStoreService.cfg` dossiers op de secundaire instanties van de Auteur om aan de replicaset te richten die nog niet instanties van Mongo bevordert
 1. De secundaire instanties van de auteur opstarten
 1. Maak de bijgewerkte auteur-instanties, het Mongo-knooppunt en de gegevensopslag schoon.
 
