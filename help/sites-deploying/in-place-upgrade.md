@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: d97828afee7a65e7a4036912c1cc8726404088c9
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1238'
+source-wordcount: '1239'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ Voordat u de upgrade uitvoert, moeten verschillende stappen worden uitgevoerd. Z
 
 ## Migratievereisten {#migration-prerequisites}
 
-* **Minimaal vereiste Java-versie:** het migratiehulpprogramma werkt alleen met Java versies 7 en hoger. Voor AEM 6.3 en hoger zijn Oracle JRE 8 en JRE 7 &amp; 8 van IBM de enige ondersteunde versies.
+* **Minimaal vereiste Java-versie:** het migratiehulpprogramma werkt alleen met Java versies 7 en hoger. Voor AEM 6.3 en hoger zijn JRE 8 en JRE 7 &amp; 8 van IBM de enige ondersteunde versies.
 
 * **Bijgewerkte Instantie:** Als u van een versie  **ouder dan 5.6** bevordert, zorg ervoor dat u een op-plaats verbetering aan AEM 6.0 door de procedure hebt uitgevoerd te volgen die in versie 6.0 van de documentatie van de Verbetering wordt beschreven.
 
