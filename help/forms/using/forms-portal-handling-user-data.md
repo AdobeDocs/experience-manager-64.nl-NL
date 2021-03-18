@@ -8,10 +8,11 @@ contentOwner: vishgupt
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 48f841b7-0e7f-4216-9ee8-fb6e843acaf0
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '975'
+source-wordcount: '976'
 ht-degree: 0%
 
 ---
@@ -69,7 +70,7 @@ U kunt tot ontwerp en voorgelegde vormengegevens voor het programma geopende en 
 
 ### AEM instanties {#aem-instances}
 
-Alle concepten en verzonden formuliergegevens in AEM instanties (auteur, publicatie of extern) voor aangemelde en anonieme gebruikers worden opgeslagen in het knooppunt `/content/forms/fp/` van de toepasselijke AEM. Telkens wanneer een aangemelde of anonieme gebruiker een concept opslaat of een formulier verzendt, worden een `draft ID` of `submission ID`, een `user data ID` en een willekeurige `ID` voor elke bijlage (indien van toepassing) gegenereerd, die is gekoppeld aan het desbetreffende concept of de respectievelijke verzending.
+Alle concepten en verzonden formuliergegevens in AEM exemplaren (auteur, publicatie of extern) voor aangemelde en anonieme gebruikers worden opgeslagen in het knooppunt `/content/forms/fp/` van de toepasselijke AEM. Telkens wanneer een aangemelde of anonieme gebruiker een concept opslaat of een formulier verzendt, worden een `draft ID` of `submission ID`, een `user data ID` en een willekeurige `ID` voor elke bijlage (indien van toepassing) gegenereerd, die is gekoppeld aan het desbetreffende concept of de respectievelijke verzending.
 
 #### Gebruikersgegevens openen {#access-user-data}
 
