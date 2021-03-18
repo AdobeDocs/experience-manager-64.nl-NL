@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
+feature: Correspondentenbeheer
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1715'
+source-wordcount: '1717'
 ht-degree: 0%
 
 ---
@@ -229,7 +230,7 @@ Op dezelfde manier kunt u volgens uw vereiste het volgende maken:
 
 * Een of meer voorwaarden binnen een voorwaarde
 * Een of meer voorwaarden binnen een herhaling
-* Een combinatie van voorwaarden en herhaling binnen een toestand of herhaling
+* Een combinatie van voorwaarden en herhaling binnen een voorwaarde of herhaling
 
 ### Lege inline voorwaarde {#empty-inline-condition}
 
