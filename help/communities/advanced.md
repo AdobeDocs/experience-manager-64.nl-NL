@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 42fb3c50-8728-4897-ade9-6b839294a10e
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: ddf92a270835259998aa28f5960abcf55f56d1fc
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1128'
+source-wordcount: '1129'
 ht-degree: 1%
 
 ---
@@ -50,7 +51,7 @@ De verschillen bij het instellen van de regels voor scoring en badging zijn:
 
 >[!NOTE]
 >
->Installeer het [Expert Identification-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg) om geavanceerde scoring- en merkmogelijkheden te gebruiken.
+>Installeer het [Expert Identification-pakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/social/cq-social-expert-identification-pkg) om geavanceerde mogelijkheden voor scoring en badging te gebruiken.
 
 ## Configureerbare scores-engine {#configurable-scoring-engine}
 
