@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: c4ac10736c937198aa0c81ecf547dd489ef93366
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '539'
+source-wordcount: '540'
 ht-degree: 0%
 
 ---
@@ -62,8 +63,8 @@ Deze lijsten kunnen (samen met configuratieinformatie) onder **JCR ResourceResol
 * **Resolver Map**
 IngangenDe lijst van ingangen die door de methodes worden gebruikt ResourceResolver.resolve om URLs aan Middelen in kaart te brengen.
 
-* **Toewijzing van**
-VermeldingenDe lijst van ingangen die door de methodes ResourceResolver.map worden gebruikt om de Wegen van het Middel aan URLs in kaart te brengen.
+* **Toewijzing**
+van de Wegen van de KaartDe lijst van ingangen die door de methodes ResourceResolver.map worden gebruikt om de Wegen van het Middel aan URLs in kaart te brengen.
 
 De twee lijsten bevatten verschillende items, waaronder items die door de toepassing(en) als standaardwaarden zijn gedefinieerd. Deze zijn vaak bedoeld om URL&#39;s voor de gebruiker te vereenvoudigen.
 
