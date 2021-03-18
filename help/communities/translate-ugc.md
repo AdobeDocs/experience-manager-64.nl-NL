@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: bfaf80c5-448b-47fb-9f22-57ee0eb169b2
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1090'
+source-wordcount: '1091'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # Door gebruiker gegenereerde inhoud omzetten {#translating-user-generated-content}
 
-De vertaalfunctie voor AEM Communities breidt het concept van [het vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar de door de gebruiker gegenereerde inhoud (UGC) die via [SCF-componenten (social component framework)](scf.md) naar communitysites wordt gepost.
+De vertaalfunctie voor AEM Communities breidt het concept van [het vertalen van pagina-inhoud](../../help/sites-administering/translation.md) uit naar de door de gebruiker gegenereerde inhoud (UGC) die via [SCF-componenten (Social Component Framework)](scf.md) naar communitysites wordt gepost.
 
 De vertaling van UGC stelt bezoekers en leden van de site in staat een wereldwijde gemeenschap te ervaren door taalbarrières te verwijderen.
 
@@ -148,7 +149,7 @@ De nieuwe vertaalintegratie-cloudservice moet worden geactiveerd voor de publica
 
 #### Gebruikersprofiel {#user-profile}
 
-Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zich te identificeren voor de community en hun voorkeuren in te stellen.
+Alle Communitysites bieden een gebruikersprofiel dat de ondertekenaars kunnen bewerken om zichzelf te identificeren voor de community en hun voorkeuren in te stellen.
 
 Een van deze instellingen is of gemeenschapsinhoud altijd in de taal van uw voorkeur moet worden weergegeven. De instelling is standaard niet ingesteld en wordt standaard ingesteld op de systeeminstelling. De gebruiker kan de instelling wijzigen in Aan of Uit en zo de systeeminstelling overschrijven.
 
