@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: f4cdd3d5020b917676fe8715d4e21e98f3a096b4
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3127'
+source-wordcount: '3128'
 ht-degree: 0%
 
 ---
@@ -503,7 +504,7 @@ Er verschijnt een indicatie nadat de site is gepubliceerd.
 
 ### Publiceren met geneste groepen {#publishing-with-nested-groups}
 
-Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subcommunity (genestelde groep) individueel te publiceren die gebruikend [de console van Groepen](groups.md) wordt gecreeerd.
+Na het publiceren van een communautaire plaats, is het noodzakelijk om elke subgemeenschap (genestelde groep) individueel te publiceren die gebruikend [de console van Groepen](groups.md) wordt gecreeerd.
 
 ## De site {#exporting-the-site} exporteren
 
