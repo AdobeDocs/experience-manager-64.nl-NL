@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c8672774-6911-497d-837b-1e5953c4226a
+feature: Taalkopie
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3429'
+source-wordcount: '3431'
 ht-degree: 0%
 
 ---
@@ -166,7 +167,7 @@ U kunt pagina&#39;s, elementen, tags of i18n-woordenboeken toevoegen aan de vert
 
 1. Klik of tik op Toevoegen en Pagina&#39;s/middelen.
 
-   ![chlimage_1-247](assets/chlimage_1-247.png)
+   ![chlimage_1-248](assets/chlimage_1-247.png)
 
 1. Selecteer het bovenste item van de vertakking die u wilt toevoegen en klik of tik op het pictogram van het vinkje. U kunt meerdere selecties maken.
 
@@ -402,7 +403,7 @@ Vul de taalkopie zodanig dat deze inhoud bevat uit de master taal die u vertaalt
 
    ![chlimage_1-273](assets/chlimage_1-273.png)
 
-1. Selecteer Taalkopieën en selecteer vervolgens de taalkopieën die u wilt vullen.
+1. Selecteer Exemplaren van de Taal, en selecteer dan de taalexemplaren die u wilt bevolken.
 
    ![chlimage_1-38](assets/chlimage_1-38.jpeg)
 
