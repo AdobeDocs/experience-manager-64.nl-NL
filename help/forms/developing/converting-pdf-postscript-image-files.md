@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: f8707752-2c83-461a-b83d-708754b0f3f6
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2832'
+source-wordcount: '2833'
 ht-degree: 0%
 
 ---
@@ -70,7 +71,7 @@ Verwijs naar het PDF-document dat u naar een PostScript-bestand wilt converteren
 
 Wanneer u een PDF-document naar een PostScript-bestand converteert, kunt u runtime-opties definiëren voor het PostScript-type dat wordt gemaakt. U kunt bijvoorbeeld een PostScript-bestand van niveau 3 definiëren.
 
-Gewoonlijk geeft het gegenereerde PostScript-bestand de grootte van het invoer-PDF-document aan. Als u de optie `ShrinkToFit` selecteert (waardoor de uitvoer van het PostScript-bestand wordt verkleind zodat het op de pagina past), ziet u geen verschil tussen het invoer-PDF-document en het gegenereerde PostScript-bestand. De optie `ShrinkToFit` wordt alleen van kracht als u ervoor kiest om af te drukken op een kleiner paginaformaat dan het invoer-PDF-document. Als u een kleiner paginaformaat wilt selecteren, definieert u de optie `PageSize`. Daarnaast wordt aanbevolen de optie `RotateAndCenter` in te stellen op `true` om de juiste PostScript-uitvoer te verkrijgen.
+Gewoonlijk geeft het gegenereerde PostScript-bestand de grootte van het invoer-PDF-document aan. Als u de optie `ShrinkToFit` selecteert (waardoor de uitvoer van het PostScript-bestand wordt verkleind zodat dit op de pagina past), ziet u geen verschil tussen het invoer-PDF-document en het gegenereerde PostScript-bestand. De optie `ShrinkToFit` wordt alleen van kracht als u ervoor kiest om af te drukken op een kleiner paginaformaat dan het invoer-PDF-document. Als u een kleiner paginaformaat wilt selecteren, definieert u de optie `PageSize`. Daarnaast wordt aanbevolen de optie `RotateAndCenter` in te stellen op `true` om de juiste PostScript-uitvoer te verkrijgen.
 
 Op dezelfde manier geldt dat als u de optie `ExpandToFit` selecteert (waarmee de uitvoer van het PostScript-bestand wordt aangepast aan de pagina), dit alleen als u ervoor kiest om af te drukken op een groter paginaformaat dan het invoer-PDF-document. Als u een grotere pagina wilt selecteren, definieert u de optie `PageSize`. Daarnaast wordt aanbevolen de optie `RotateAndCenter` in te stellen op `true` om de juiste PostScript-uitvoer te verkrijgen.
 
@@ -250,7 +251,7 @@ Nadat u de serviceclient hebt gemaakt en runtime-opties hebt ingesteld, kunt u h
 
 **De afbeeldingsbestanden ophalen uit een verzameling**
 
-U kunt afbeeldingsbestanden ophalen van een verzamelobject dat door de service PDF converteren wordt geretourneerd. Elk element in de verzameling is een `com.adobe.idp.Document`-instantie (of een `BLOB`-instantie als u webservices gebruikt) die u kunt opslaan als een afbeeldingsbestand, zoals een JPG-bestand.
+U kunt afbeeldingsbestanden ophalen van een verzamelobject dat door de service PDF converteren wordt geretourneerd. Elk element in de verzameling is een `com.adobe.idp.Document`-instantie (of een `BLOB`-instantie als u webservices gebruikt) die u kunt opslaan als afbeeldingsbestand, zoals een JPG-bestand.
 
 De indeling van het afbeeldingsbestand is afhankelijk van de runtimeoptie `ImageConvertFormat`. Met andere woorden, als u de runtime-optie `ImageConvertFormat` instelt op `ImageConvertFormat.JPEG`, kunt u afbeeldingsbestanden opslaan als JPG-bestanden.
 
