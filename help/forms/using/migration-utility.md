@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1872'
+source-wordcount: '1873'
 ht-degree: 0%
 
 ---
@@ -38,7 +39,7 @@ U kunt [upgrade](/help/forms/using/upgrade.md) uitvoeren naar de nieuwste versie
 
 **In het geval van een upgrade ter plekke**
 
-Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Maar voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclusief het compatibiliteitspakket Correspondence Management) installeren.
+Als u een upgrade op locatie hebt uitgevoerd, beschikt de geüpgrade instantie al over de elementen en documenten. Voordat u de middelen en documenten kunt gebruiken, moet u [AEMFD-compatibiliteitspakket](https://www.adobeaemcloud.com/content/marketplace/marketplaceProxy.html?packagePath=/content/companies/public/adobe/packages/cq640/fd/AEM-FORMS-6.4-COMPAT) (inclusief het pakket Compatibiliteit met Correspondentiebeheer) installeren.
 
 Vervolgens moet u de elementen en documenten bijwerken door [het migratiehulpprogramma](#runningmigrationutility) uit te voeren.
 
