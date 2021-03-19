@@ -7,10 +7,11 @@ page-status-flag: de-activated
 uuid: 60f142aa-81ca-4333-8614-85a01e23e917
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 982eddba-2350-40e7-8a42-db02d28cf133
+feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: abf41bed195c7ea77202e0772e7be12501a6a5ac
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1042'
+source-wordcount: '1044'
 ht-degree: 0%
 
 ---
@@ -91,7 +92,7 @@ Nadat de klantgegevens uit de database zijn opgehaald, kunt u het verzendadres, 
 
 1. ![dropobjectstoinputfield-updatedata](assets/dropobjectstoinputfield-updatedata.png)
 
-   Sleep het veld **[!UICONTROL Shipping Address, State, and Zip Code]** van het tabblad Formulierobjecten naar de overeenkomstige eigenschap table.property (bijvoorbeeld customerdetails.ShippingAddress) van het veld **[!UICONTROL Drop object or select here]** in het vak **[!UICONTROL INPUT]**. Alle velden met een tabelnaam (bijvoorbeeld details van de klant in dit geval) fungeren als invoergegevens voor de updateservice. Alle inhoud die in deze velden wordt geleverd, wordt bijgewerkt in de gegevensbron.
+   Sleep het veld **[!UICONTROL Shipping Address, State, and Zip Code]** van het tabblad Formulierobjecten naar de overeenkomstige eigenschap tableName.property (bijvoorbeeld customerdetails.ShippingAddress) van het veld **[!UICONTROL Drop object or select here]** in het vak **[!UICONTROL INPUT]**. Alle velden met een tabelnaam (bijvoorbeeld details van de klant in dit geval) fungeren als invoergegevens voor de updateservice. Alle inhoud die in deze velden wordt geleverd, wordt bijgewerkt in de gegevensbron.
 
    >[!NOTE]
    >
@@ -103,7 +104,7 @@ Nadat de klantgegevens uit de database zijn opgehaald, kunt u het verzendadres, 
 
 ## Stap 3: (sectie Bonus) Gebruik de code-editor om validaties uit te voeren en foutberichten weer te geven {#step-bonus-section-use-the-code-editor-to-run-validations-and-display-error-messages}
 
-Voer validatie uit op het formulier om te controleren of de gegevens in het formulier correct zijn en of een foutbericht wordt weergegeven als gegevens onjuist zijn. Als bijvoorbeeld een niet-bestaande klant-id in het formulier wordt ingevoerd, moet een foutbericht worden weergegeven.
+Voer de validatie op het formulier uit om te controleren of de gegevens in het formulier correct zijn en of een foutbericht wordt weergegeven als gegevens onjuist zijn. Als bijvoorbeeld een niet-bestaande klant-id in het formulier wordt ingevoerd, moet een foutbericht worden weergegeven.
 
 Aangepaste formulieren bieden verschillende componenten ingebouwde validaties, zoals e-mail en numerieke velden die u kunt gebruiken voor veelvoorkomende gebruiksgevallen. Gebruik de regeleditor voor geavanceerde gebruiksgevallen bijvoorbeeld om een foutbericht weer te geven wanneer de database nul (0) records (geen records) retourneert.
 
