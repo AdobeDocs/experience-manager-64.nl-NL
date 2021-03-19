@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2878b145-e6c0-48d3-810c-3540de13c826
+feature: Documentbeveiliging
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '953'
+source-wordcount: '955'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Gebruikers en beheerders gebruiken de webpagina&#39;s voor documentbeveiliging o
 
 Als u de webpagina&#39;s wilt openen, hebt u voor documentbeveiliging een browser en de URL en uw aanmeldingsgegevens nodig. De URL voor gebruikers is anders dan de URL voor beheerders.
 
-Aangezien documentbeveiliging verwijst naar de bestaande directory&#39;s van uw organisatie voor gebruikersgegevens, kunnen uw aanmeldingsgegevens voor documentbeveiliging dezelfde gegevens zijn als die u gebruikt om u aan te melden bij uw netwerk en andere toepassingen. Raadpleeg de systeembeheerder of beheerder voor meer informatie over uw account.
+Omdat documentbeveiliging verwijst naar de bestaande directory&#39;s van uw organisatie voor gebruikersgegevens, kunnen uw aanmeldingsgegevens voor documentbeveiliging dezelfde gegevens zijn als die u gebruikt om u aan te melden bij uw netwerk en andere toepassingen. Raadpleeg de systeembeheerder of beheerder voor meer informatie over uw account.
 
 Als u zich wilt aanmelden als beheerder, moet u de beheerdersrol hebben die aan u is toegewezen. U kunt de standaard superbeheerdersaccount gebruiken die tijdens het installatieproces is gemaakt.
 
