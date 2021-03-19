@@ -10,10 +10,11 @@ topic-tags: administering
 content-type: reference
 discoiquuid: b4d38e45-eaa0-4ace-a885-a2e84fdfd5a1
 pagetitle: Configuring Email
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '757'
+source-wordcount: '758'
 ht-degree: 0%
 
 ---
@@ -71,7 +72,7 @@ Slechts moet de instantie voor abonnementen verder worden gevormd wanneer het to
 
 1. ` [email](#configuration-for-notifications)` instance
 
-   voor meldingen, die geen ondersteuning bieden voor e-mail met antwoorden en die niet mogen worden gewijzigd
+   voor meldingen, die geen ondersteuning bieden voor e-mail met antwoorden, en die niet mogen worden gewijzigd
 
 1. ` [subscriptions-email](#configuration-for-subscriptions)` instance
 
