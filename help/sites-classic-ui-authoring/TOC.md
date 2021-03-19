@@ -6,10 +6,13 @@ audience: end-user
 user-guide-title: AEM 6.4 Handleiding voor het schrijven van klassieke gebruikersinterface
 breadcrumb-title: Klassieke UI Authoring Guide
 user-guide-description: In deze handleiding worden de ontwerpconcepten in AEM in de klassieke gebruikersinterface besproken.
+feature-set: Experience Manager Sites
+feature: Authoring
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '319'
+source-wordcount: '322'
 ht-degree: 17%
 
 ---
