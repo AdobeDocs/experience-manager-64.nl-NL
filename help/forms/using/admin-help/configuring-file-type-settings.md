@@ -8,10 +8,11 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 discoiquuid: ab19b248-8931-4cf6-b6a5-fb7b067c4a49
+feature: PDF Generator
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5857'
+source-wordcount: '5859'
 ht-degree: 1%
 
 ---
@@ -263,7 +264,7 @@ Zie [Bestandstype-instellingen maken of bewerken](configuring-file-type-settings
 
    >[!NOTE]
    >
-   >*Als u deze optie gebruikt in combinatie met het insluiten van bepaalde lettertypen **ongedaan**maken, wordt het insluiten van lettertypen in de lijst **Lettertypen toevoegen aan**niet-ingesloten lijst nog steeds ongedaan gemaakt.*
+   >*Als u deze optie gebruikt in combinatie met het insluiten van bepaalde lettertypen **ongedaan**maken, wordt het insluiten van lettertypen in de lijst **Lettertypen toevoegen aan**niet-ingesloten lijst nog steeds volledig ongedaan gemaakt.*
 
    >[!NOTE]
    >
