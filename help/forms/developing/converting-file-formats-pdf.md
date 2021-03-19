@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '7932'
+source-wordcount: '7933'
 ht-degree: 0%
 
 ---
@@ -576,7 +577,7 @@ In dit gedeelte wordt ook het volgende uitgelegd:
 
 De service PDF genereren converteert oorspronkelijke bestandsindelingen door de toepassing aan te roepen die is gekoppeld aan de bestandsindeling en vervolgens te communiceren met de toepassing om het document af te drukken met de standaardprinter. De standaardprinter moet zijn ingesteld als de Adobe PDF-printer.
 
-In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die bij de ondersteuning van native toepassingen betrokken zijn. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
+In deze illustratie worden de componenten en stuurprogramma&#39;s weergegeven die zijn betrokken bij native toepassingsondersteuning. Ook worden de XML-grammen genoemd die de interacties beïnvloeden.
 
 Interacties van componenten voor conversie van native bestanden
 
@@ -871,7 +872,7 @@ U kunt het algemene dialoogvenster-XML-bestand aanpassen om te reageren op dialo
 
 #### Een filetype-item toevoegen in het XML-configuratiebestand {#adding-a-filetype-entry-in-the-xml-configuration-file}
 
-In deze procedure wordt uitgelegd hoe u het configuratiebestand voor de service PDF genereren kunt bijwerken en zo bestandstypen aan native toepassingen kunt koppelen. Om dit configuratiedossier bij te werken, moet u beleidsconsole gebruiken om de configuratiegegevens naar een dossier uit te voeren. De standaardbestandsnaam voor de configuratiegegevens is native2pdfconfig.xml.
+In deze procedure wordt uitgelegd hoe u het configuratiebestand van de service PDF genereren kunt bijwerken en zo bestandstypen aan native toepassingen kunt koppelen. Om dit configuratiedossier bij te werken, moet u beleidsconsole gebruiken om de configuratiegegevens naar een dossier uit te voeren. De standaardbestandsnaam voor de configuratiegegevens is native2pdfconfig.xml.
 
 **Het configuratiebestand van de PDF-service genereren bijwerken**
 
