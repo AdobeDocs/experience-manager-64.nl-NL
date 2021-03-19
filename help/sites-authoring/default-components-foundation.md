@@ -1,7 +1,7 @@
 ---
 title: Elementaire componenten
 seo-title: Elementaire componenten
-description: 'null'
+description: Elementaire componenten
 seo-description: 'null'
 uuid: c1eccd51-ee65-4c4d-8c27-c99b52574518
 contentOwner: User
@@ -12,9 +12,9 @@ discoiquuid: 3619ded2-a67c-4b96-b634-4c0d68f5284a
 legacypath: /content/docs/en/aem/6-2/author/page-authoring/default-components/editmode
 pagetitle: Foundation Components
 translation-type: tm+mt
-source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '6670'
+source-wordcount: '6671'
 ht-degree: 1%
 
 ---
@@ -65,7 +65,7 @@ De algemene componenten zijn de basiscomponenten die u gebruikt om inhoud te mak
 
 U kunt een koppeling definiëren met een titel en beschrijving.
 
-![chlimage_1-191](assets/chlimage_1-191.png)
+![chlimage_1-111](assets/chlimage_1-191.png)
 
 ### Adaptieve afbeelding {#adaptive-image}
 
@@ -399,7 +399,7 @@ Als de afbeelding eenmaal is geüpload (en niet eerder), kunt u [Bewerken op pla
 >
 >Afhankelijk van uw exemplaar, kunnen de minimum en maximumbeperkingen ook door het [ontwerp van pagina](/help/sites-developing/designer.md) worden opgelegd; deze worden ontwikkeld tijdens de uitvoering van het project .
 
-In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. bijvoorbeeld toewijzen en zoomen:
+Er zijn verschillende aanvullende opties beschikbaar in de modus Volledig scherm; bijvoorbeeld toewijzen en zoomen:
 
 ![](do-not-localize/chlimage_1-15.png)
 
