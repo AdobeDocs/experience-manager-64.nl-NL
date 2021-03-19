@@ -10,10 +10,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: ba8efc24-a34c-477b-8c6d-6e8f893eb999
 targetaudience: target-audience upgrader
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: 1f78ef33b33558187b0164864dc373e53d7f86ce
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2226'
+source-wordcount: '2227'
 ht-degree: 0%
 
 ---
@@ -168,7 +169,7 @@ De structuur voor bewerkbare sjablonen is gewijzigd tussen AEM 6.2 en 6.3. Als u
 
 ### Wijzigingen in CUG-implementatie {#cug-implementation-changes}
 
-De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de Touch UI. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de KUG [hier ](/help/sites-administering/closed-user-groups.md#upgrade-cug) te migreren worden gevonden.
+De implementatie van Gesloten Gebruikersgroepen is aanzienlijk gewijzigd om de beperkingen van prestaties en schaalbaarheid in eerdere versies van AEM aan te pakken. De vorige versie van CUG is afgekeurd in 6.3 en de nieuwe implementatie wordt alleen ondersteund in de aanraakinterface. Als u van 6.2 of eerder bevordert, dan kunnen de Instructies om aan de nieuwe implementatie van de KUG [hier ](/help/sites-administering/closed-user-groups.md#upgrade-cug) te migreren worden gevonden.
 
 ## Testprocedure {#testing-procedure}
 
