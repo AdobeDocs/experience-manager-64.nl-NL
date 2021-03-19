@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 599f1925-a17e-4bae-93d9-b54edcee92b0
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: 6f0016b6b59d27da89c41089aa4d73096846a7fb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2038'
+source-wordcount: '2040'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ De functionaliteit voor HTML5-formulieren wordt geïmplementeerd als een pakket 
 
 ### Using Sling Framework {#using-sling-framework}
 
-[Apache ](https://sling.apache.org/) Slingis brongericht. Er wordt een aanvraag-URL gebruikt om de bron eerst op te lossen. Elke bron heeft een **sling:resourceType** (of **sling:resourceSuperType**) eigenschap. Gebaseerd op dit bezit, de verzoekmethode, en de eigenschappen van het verzoek URL, wordt een sling manuscript dan geselecteerd om het verzoek te behandelen. Dit sling script kan een JSP of een servlet zijn. Voor HTML5-formulieren fungeren **Profiel**-knooppunten als slingerbronnen en **Profielrenderer** fungeert als slingscript dat de aanvraag voor het weergeven van het mobiele formulier met een bepaald profiel afhandelt. Een **Profielrenderer** is een JSP die parameters van een verzoek leest en de Forms OSGi Service roept.
+[Apache ](https://sling.apache.org/) Slingis brongericht. Er wordt een aanvraag-URL gebruikt om de bron eerst op te lossen. Elke bron heeft een **sling:resourceType** (of **sling:resourceSuperType**) eigenschap. Gebaseerd op dit bezit, de verzoekmethode, en de eigenschappen van het verzoek URL, wordt een sling manuscript dan geselecteerd om het verzoek te behandelen. Dit sling script kan een JSP of een servlet zijn. Voor HTML5-formulieren fungeren **Profiel**-knooppunten als slingerbronnen en **Profielrenderer** fungeert als slingscript dat de aanvraag om het mobiele formulier te genereren met een bepaald profiel afhandelt. Een **Profielrenderer** is een JSP die parameters van een verzoek leest en de Forms OSGi Service roept.
 
 Voor details op het eindpunt van REST en gesteunde verzoekparameters, zie [Teruggevend het Malplaatje van de Vorm](/help/forms/using/rendering-form-template.md).
 
