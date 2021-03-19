@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: c491f0f3-375d-4203-bdf3-234987bbf685
+feature: Beheer van meerdere sites
 translation-type: tm+mt
-source-git-commit: 38c713b2c5aa93805b10bbb60c0dbdfa24872eb1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '2708'
 ht-degree: 0%
 
 ---
