@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 0156b5c3-3bef-4213-9ada-c7b6ae96ada4
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 83abf68a15d929c10862899b8e7bd794fa07e426
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2490'
+source-wordcount: '2491'
 ht-degree: 0%
 
 ---
@@ -30,7 +31,7 @@ De architectuur voor AEM Forms omvat de volgende componenten:
 
 * **Core AEM services:** basisservices die AEM bieden aan een geïmplementeerde toepassing. Deze services omvatten een inhoudsopslagruimte die compatibel is met JCR, een OSGI-servicecontainer, een workflowengine, een vertrouwde opslag, een sleutelarchief, enzovoort. Deze services zijn beschikbaar voor AEM Forms-toepassingen, maar worden niet geleverd door AEM Forms-pakketten. Deze services vormen een integraal onderdeel van de algemene AEM en verschillende AEM Forms-componenten gebruiken deze services.
 * **Forms-services:** formuliergerelateerde functionaliteit bieden, zoals het maken, samenstellen, distribueren en archiveren van PDF-documenten, digitale handtekeningen toevoegen om de toegang tot documenten te beperken en streepjesgecodeerde formulieren decoderen. Deze diensten zijn openbaar beschikbaar voor consumptie door douanecode die in AEM wordt opgesteld.
-* **Weblaag:** JSP&#39;s of servlets, die via algemene services en formulierservices zijn gebouwd, die de volgende functies bieden:
+* **weblaag:** JSP&#39;s of servlets, gebouwd op basis van algemene services en formulierservices, die de volgende functies bieden:
 
    * **Voorkant** ontwerpen: Een gebruikersinterface voor het ontwerpen en beheren van formulieren voor het ontwerpen en beheren van formulieren.
    * **Formulieruitvoering en verzendvoorzijde**: Een eindgebruiker die wordt geconfronteerd met interface voor gebruik door de eindgebruikers van de AEM Forms (bijvoorbeeld burgers die een overheidswebsite openen). Dit biedt formulieruitvoering (weergaveformulier in een webbrowser) en verzendfuncties.
