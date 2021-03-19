@@ -1,7 +1,7 @@
 ---
 title: Developing and Page Diff
 seo-title: Developing and Page Diff
-description: 'null'
+description: Developing and Page Diff
 seo-description: 'null'
 uuid: 48bbeca3-fe16-48ef-bb4d-ac605fe0ca76
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: introduction
 content-type: reference
 discoiquuid: 13e8cbef-698f-4e69-9f8c-f9bee82e9fd1
 translation-type: tm+mt
-source-git-commit: 6de5e6f12f123ca2ec45358a138becc410c89e4e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '481'
+source-wordcount: '484'
 ht-degree: 0%
 
 ---
@@ -24,7 +24,7 @@ ht-degree: 0%
 
 Het maken van inhoud is een herhalend proces. Om efficiënt te kunnen ontwerpen moet u kunnen zien wat er van de ene iteratie naar de andere is veranderd. Het weergeven van de ene pagina en de andere is inefficiënt en vatbaar voor fouten. Een auteur wil de huidige pagina met een vorige versie naast elkaar kunnen vergelijken met de gemarkeerde verschillen.
 
-Met het paginagecheiding kan een gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Paginadiff](/help/sites-authoring/page-diff.md) voor meer informatie over deze gebruikersfunctie.
+Met het paginagecheidingsteken kan de gebruiker de huidige pagina vergelijken met opstarters, vorige versies, enzovoort. Zie [Paginadiff](/help/sites-authoring/page-diff.md) voor meer informatie over deze gebruikersfunctie.
 
 ## Bewerkingsdetails {#operation-details}
 
