@@ -8,10 +8,12 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: e78f539a-109c-444c-8e52-be2260c3509f
+feature: Adaptieve Forms
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: c5a78d6c2b8a55cad6266e86e9b990cafc038431
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '721'
+source-wordcount: '724'
 ht-degree: 0%
 
 ---
@@ -105,7 +107,7 @@ Voer deze stap slechts uit als `<locale>` u toevoegt niet onder `en`, `de`, `es`
 1. Maak een `nt:unstructured`-knooppunt `languages` onder `etc`, als dit nog niet bestaat.
 
 1. Voeg een multi-getaxeerde koordbezit `languages` aan de knoop toe, als niet reeds aanwezig.
-1. Voeg de `<locale>` standaardwaarden `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr` toe als deze nog niet aanwezig zijn.
+1. Voeg de `<locale>` standaardwaarden `de`, `es`, `fr`, `it`, `pt-br`, `zh-cn`, `zh-tw`, `ja`, `ko-kr` toe als deze waarden nog niet aanwezig zijn.
 
 1. Voeg `<locale>` aan de waarden van `languages` bezit van `/etc/languages` toe.
 
