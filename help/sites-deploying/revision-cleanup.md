@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: f03ebe60-88c0-4fc0-969f-949490a8e768
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5916'
+source-wordcount: '5917'
 ht-degree: 0%
 
 ---
@@ -494,7 +495,7 @@ In sommige gevallen vertraagt het opruimen door het afwisselen tussen de eindmod
    <td><strong>Wat veroorzaakt <code>SegmentNotFoundException</code> instanties om worden het programma geopend <code>error.log</code> en hoe kan ik terugkrijgen?</strong></td> 
    <td><p>Een <code>SegmentNotFoundException</code> wordt geregistreerd door TarMK wanneer het probeert om tot een opslageenheid (een segment) toegang te hebben die het niet kan vinden. Er zijn drie scenario's die deze kwestie kunnen veroorzaken:</p> 
     <ol> 
-     <li>Een toepassing die de aanbevolen toegangsmechanismen omzeilt (zoals Sling en de JCR API) en een API/SPI op een lager niveau gebruikt om toegang te krijgen tot de opslagplaats en vervolgens de retentietijd van een segment overschrijdt. Dat wil zeggen dat een verwijzing naar een entiteit langer wordt bewaard dan de retentietijd die is toegestaan door de Online Revision Cleanup (standaard 24 uur). Dit geval is van voorbijgaande aard en leidt niet tot gegevenscorruptie. Om te herstellen, zou het eiken-loophulpmiddel moeten worden gebruikt om de voorbijgaande aard van de uitzondering te bevestigen (de eiken-loopcontrole zou geen fouten moeten melden). Hiervoor moet de instantie offline worden genomen en daarna opnieuw worden gestart.</li> 
+     <li>Een toepassing die de aanbevolen toegangsmechanismen omzeilt (zoals Sling en de JCR API) en een API/SPI op een lager niveau gebruikt om toegang te krijgen tot de opslagplaats en vervolgens de retentietijd van een segment overschrijdt. Dat wil zeggen dat een verwijzing naar een entiteit langer wordt bewaard dan de retentietijd die is toegestaan door de Online revisie-opschoning (standaard 24 uur). Dit geval is van voorbijgaande aard en leidt niet tot gegevenscorruptie. Om te herstellen, zou het eiken-loophulpmiddel moeten worden gebruikt om de voorbijgaande aard van de uitzondering te bevestigen (de eiken-loopcontrole zou geen fouten moeten melden). Hiervoor moet de instantie offline worden genomen en daarna opnieuw worden gestart.</li> 
      <li>Een externe gebeurtenis veroorzaakte de corruptie van de gegevens op de schijf. Dit kan een schijffout, een gebrek aan schijfruimte of een toevallige wijziging van de vereiste gegevensdossiers zijn. In dit geval moet de instantie offline worden genomen en worden gerepareerd met behulp van de eikenrun-controle. Lees de volgende <a href="https://github.com/apache/jackrabbit-oak/blob/trunk/oak-doc/src/site/markdown/nodestore/segment/overview.md#check" target="_blank">Apache-documentatie</a> voor meer informatie over het uitvoeren van de controle tijdens het gebruik van het eiken.</li> 
      <li>Alle andere gevallen moeten worden aangepakt via de <a href="https://helpx.adobe.com/marketing-cloud/contact-support.html" target="_blank">Adobe-klantenservice</a>.</li> 
     </ol> </td> 
