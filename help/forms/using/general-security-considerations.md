@@ -8,10 +8,11 @@ content-type: reference
 topic-tags: Security
 products: SG_EXPERIENCEMANAGER/6.4
 discoiquuid: 38132225-ecae-4887-8f3d-0b3845059130
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 835618e8e0d01905ad7b476b0172dfecec41cf9d
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1111'
+source-wordcount: '1112'
 ht-degree: 0%
 
 ---
@@ -149,7 +150,7 @@ Voor veiligheidsinformatie over gegevensbestanden die AEM Forms op JEE steunt, z
   </tr> 
   <tr> 
    <td><p>Oracle® 12c</p> </td> 
-   <td><p>Zie het hoofdstuk Beveiliging in de <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g-documentatie</a></p> </td> 
+   <td><p>Zie het hoofdstuk van de Veiligheid in <a href="https://docs.oracle.com/database/121/TDPSG/GUID-6E2F4E53-5D87-4FCD-9C9C-6792217D7014.htm#TDPSG94426" target="_blank">Oracle 12g documentatie</a></p> </td> 
   </tr> 
  </tbody> 
 </table>
@@ -250,7 +251,7 @@ Het bestand lc_[database].xml mag geen wachtwoord in duidelijke tekstindeling be
 >
 >Met het AEM Forms on JEE JBoss-installatieprogramma wordt het databasewachtwoord gecodeerd.
 
-IBM WebSphere Application Server en Oracle WebLogic Server kunnen standaard gegevensbronwachtwoorden coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
+De Server van de Toepassing van IBM WebSphere en de Server van Oracle WebLogic kunnen gegevensbronwachtwoorden door gebrek coderen. Bevestig echter met de documentatie van de toepassingsserver dat dit gebeurt.
 
 ### Beveiliging van de persoonlijke sleutel die is opgeslagen in de Trust Store {#protecting-the-private-key-stored-in-trust-store}
 
