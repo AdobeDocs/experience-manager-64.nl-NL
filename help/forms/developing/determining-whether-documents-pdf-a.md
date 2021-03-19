@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/assembling_pdf_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: c429d6e1-7847-43c8-bf75-cb0078dbb9d5
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2109'
+source-wordcount: '2110'
 ht-degree: 0%
 
 ---
@@ -106,7 +107,7 @@ In het XML-document dat door de Assembler-service wordt geretourneerd, wordt aan
  <PDFAConformance isCompliant="false" compliance="PDF/A-1b" resultLevel="Detailed" ignoreUnusedResources="true" allowCertificationSignatures="true">
 ```
 
-Sla het XML-document op als een XML-bestand, zodat u het bestand kunt openen en de resultaten kunt bekijken.
+Sla het XML-document op als een XML-bestand zodat u het bestand kunt openen en de resultaten kunt bekijken.
 
 **Zie ook**
 
