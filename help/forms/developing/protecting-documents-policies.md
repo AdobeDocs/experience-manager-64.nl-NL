@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9b1d2bf3-f28c-41b2-9026-1f3311556422
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '15544'
+source-wordcount: '15545'
 ht-degree: 0%
 
 ---
@@ -251,7 +252,7 @@ Een beleid maken met de API voor documentbeveiliging (Java):
       * Het `Policy`-object dat het te registreren beleid vertegenwoordigt.
    * Een tekenreekswaarde die staat voor de beleidsset waartoe het beleid behoort.
 
-   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om het object `DocumentSecurityClient` te maken, geeft u de naam van de beleidsset op wanneer u de methode `registerPolicy` aanroept. Als u een `null` waarde voor de beleidsreeks doorgeeft, wordt het beleid gecreeerd in de beheerders *Mijn Beleid* beleidreeks.
+   Als u binnen de verbindingsinstellingen een beheerdersaccount voor AEM formulieren gebruikt om het object `DocumentSecurityClient` te maken, geeft u de naam van de beleidsset op wanneer u de methode `registerPolicy` aanroept. Als u een `null` waarde voor de beleidsreeks doorgeeft, wordt het beleid gecreeerd in de beheerders *Mijn Beleid* beleidsreeks.
 
    Als u een gebruiker van de Veiligheid van het Document binnen verbindingsmontages gebruikt, dan kunt u de overbelaste `registerPolicy` methode aanhalen die slechts het beleid goedkeurt. U hoeft dus geen naam voor de beleidsset op te geven. Nochtans, wordt het beleid toegevoegd aan de beleidsreeks genoemd *Mijn Beleid*. Als u niet het nieuwe beleid aan deze beleidsreeks wilt toevoegen, dan specificeer een naam van de beleidsreeks wanneer u de `registerPolicy` methode aanhaalt.
 
