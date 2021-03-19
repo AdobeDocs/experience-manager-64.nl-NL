@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '728'
+source-wordcount: '729'
 ht-degree: 0%
 
 ---
@@ -154,7 +155,7 @@ Selecteer `lightening (flash) icon` in het Workbench-venster voor het bestand da
 
 In de volgende afbeelding kan het `init_schema.sql`-bestand worden uitgevoerd:
 
-![chlimage_1-189](assets/chlimage_1-109.png)
+![chlimage_1-109](assets/chlimage_1-109.png)
 
 #### Vernieuwen {#refresh}
 
@@ -179,7 +180,7 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
 * `Day Commons JDBC Connections Pool` zoeken
 * Selecteer het pictogram `+` om een nieuwe verbindingsconfiguratie tot stand te brengen
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 * Voer de volgende waarden in:
 
