@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: e-commerce
 content-type: reference
 discoiquuid: ad80505f-116e-43f1-8d93-ffe6e8b1ac46
+feature: Kader voor integratie in de handel
 translation-type: tm+mt
-source-git-commit: fc2c7b62960a0a3cb45d595673b8dcfeb990d7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3004'
+source-wordcount: '3007'
 ht-degree: 0%
 
 ---
@@ -529,7 +530,7 @@ Een catalogus uitrollen:
 
    ![](do-not-localize/chlimage_1-24.png)
 
-1. Stel in de wizard de rollout zo nodig in en tik/klik op **Wijzigingen voor rollout**.
+1. Stel in de wizard de rollout zo nodig in en tik op **Wijzigingen bij rollout**.
 1. Er wordt een dialoogvenster geopend. Tik/klik op **Gereed **Wanneer het proces is voltooid.
 
 #### Catalogus uitrollen - Klassieke UI {#rolling-out-a-catalog-classic-ui}
