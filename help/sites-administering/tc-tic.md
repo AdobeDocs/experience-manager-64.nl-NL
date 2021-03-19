@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: 200f51ab-f9bf-4989-91af-c3904fc673e5
+feature: Taalkopie
 translation-type: tm+mt
-source-git-commit: f911c7471b8dd215f08255d391551c0d8bf764d7
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1565'
 ht-degree: 0%
 
 ---
@@ -97,7 +98,7 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
    <td>Vertaalworkflow</td> 
    <td><p>Selecteer de vertaalmethode die het framework uitvoert voor site-inhoud:</p> 
     <ul> 
-     <li>Machine transleren: De vertaalprovider voert de vertaling in real-time uit met automatische vertaling.</li> 
+     <li>Machine transleren: De vertaalprovider voert de vertaling in real-time uit met behulp van automatische vertaling.</li> 
      <li>Menselijke vertaling: De inhoud wordt naar de vertaalprovider verzonden en door vertalers vertaald. </li> 
      <li>Niet vertalen: Inhoud wordt niet verzonden voor vertaling. Hiermee slaat u bepaalde vertakkingen met inhoud over die niet worden vertaald, maar wel kunnen worden bijgewerkt met de meest recente inhoud.</li> 
     </ul> </td> 
@@ -132,7 +133,7 @@ De eigenschappen Sites bepalen hoe de vertaling van pagina-inhoud wordt uitgevoe
 
 ### Eigenschappen van Community-configuratie {#communities-configuration-properties}
 
-De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Zie [Door gebruiker gegenereerde inhoud vertalen](/help/communities/translate-ugc.md) voor meer informatie.
+De eigenschappen van Gemeenschappen bepalen hoe de vertaling van user-generated inhoud wordt uitgevoerd. Voor het vertalen van door de gebruiker gegenereerde inhoud wordt altijd machinevertaling gebruikt. Zie [Door gebruiker gegenereerde inhoud omzetten](/help/communities/translate-ugc.md) voor meer informatie.
 
 | Eigenschap | Beschrijving |
 |---|---|
