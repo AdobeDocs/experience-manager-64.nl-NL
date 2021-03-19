@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: ccddb2cd-8e67-43aa-a495-8996ad349761
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3805'
+source-wordcount: '3806'
 ht-degree: 0%
 
 ---
@@ -379,7 +380,7 @@ FormatGeeft de indeling aan waarin de gebruikers-id wordt opgegeven. Gebruiken:
 
 **CQ-foutopsporingsfilter van de dag (WCM)** Dit is handig bij het ontwikkelen omdat achtervoegsels zoals ?debug=layout kunnen worden gebruikt bij het openen van een pagina. Bijvoorbeeld, zal http://localhost:4502/cf#/content/geometrixx/en/support.html?debug=layout lay-outinformatie verstrekken die van belang voor de ontwikkelaar kan zijn.
 
-* Schakel deze optie uit bij productie-instanties om de prestaties en beveiliging te garanderen.
+* Schakel deze optie uit op productieexemplaren om prestaties en beveiliging te garanderen.
 
 **Dag CQ WCM-** filterConfigureren:
 
@@ -468,7 +469,7 @@ Zie ook [HTTP via SSL inschakelen](/help/sites-administering/ssl-by-default.md) 
 Controls the HTML Parser for the CQ rewriter.
 
 * **Extra te verwerken**  tags: u kunt HTML-tags toevoegen of verwijderen die door de parser moeten worden verwerkt. Standaard worden de volgende codes verwerkt: A,IMG,GEBIED,FORMULIER,BASE,KOPPELING,SCRIPT,BODY,HEAD.
-* **Camel-hoofdletters**  behouden - Standaard worden kenmerken in camel-hoofdletters (bijv. eBay) door de HTML-parser omgezet in kleine letters (bijv. eBay). U kunt dit uitschakelen om de kenmerken van het kamelenhoofdlettergebruik te behouden. Dit is handig wanneer u frontend frameworks zoals Angular 2 gebruikt.
+* **Camel-hoofdletters**  behouden - Standaard worden kenmerken in camel-hoofdletters (bijv. eBay) door de HTML-parser omgezet in kleine letters (bijv. eBay). U kunt dit uitschakelen om de kenmerken van het kamelenhoofdlettergebruik te behouden. Dit is nuttig wanneer het gebruiken van frontend kaders zoals Angular 2.
 
 **Day Commons JDBC Connections** PoolConfigure toegang tot een externe database die als bron voor inhoud wordt gebruikt.
 
