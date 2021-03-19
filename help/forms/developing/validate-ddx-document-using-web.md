@@ -9,10 +9,11 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '644'
+source-wordcount: '645'
 ht-degree: 0%
 
 ---
@@ -70,7 +71,7 @@ Valideer een DDX-document met behulp van de API (webservice) voor vergaderingsse
 1. Sla de validatieresultaten op in een logbestand.
 
    * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het logbestand en de modus voor het openen van het bestand vertegenwoordigt. Controleer of de bestandsnaamextensie .xml is.
-   * Maak een `BLOB`-object dat logboekgegevens opslaat door de waarde op te halen van het `AssemblerResult`-gegevenslid van het object.`jobLog`
+   * Maak een `BLOB`-object dat logboekgegevens opslaat door de waarde van het `AssemblerResult`-gegevenslid van het object op te halen.`jobLog`
    * Maak een bytearray waarin de inhoud van het object `BLOB` wordt opgeslagen. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
    * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
    * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
