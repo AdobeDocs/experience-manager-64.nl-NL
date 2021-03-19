@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: f78f83ef3b9373bcbee3e5179a9bbec4d9462255
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1851'
+source-wordcount: '1852'
 ht-degree: 0%
 
 ---
@@ -286,7 +287,7 @@ Wanneer het werken met één enkele post, zal een pictogram van het Antwoord ver
 
 #### {#allow} toestaan
 
-![chlimage_1-401](assets/chlimage_1-481.png)
+![chlimage_1-481](assets/chlimage_1-481.png)
 
 Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wanneer de advertentie is gemarkeerd of geweigerd. Als deze optie is gemarkeerd, worden alle markeringen gewist als u Toestaan selecteert.
 
