@@ -8,10 +8,11 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: af9a3e9d-194a-42e5-be28-b238e0c1e55e
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '168'
+source-wordcount: '169'
 ht-degree: 0%
 
 ---
@@ -33,7 +34,7 @@ javax.jcr.RepositoryException: Error indexing workspace: Error indexing workspac
 
 ## Een consistentiecontrole uitvoeren {#perform-a-consistency-check}
 
-Als u een consistentiecontrole wilt uitvoeren, navigeert u naar de beheerpagina voor de JMX Mbean** com.adobe.granite (Repository)**. Ga in het AEM hoofdscherm naar:
+Als u een consistentiecontrole wilt uitvoeren, navigeert u naar de beheerpagina voor JMX Mbean** com.adobe.granite (Repository)**. Ga in het AEM hoofdscherm naar:
 
 **Gereedschappen > Webconsole > Main (op menubalk) > JMX > com.adobe.granite (opslagplaats)**
 
