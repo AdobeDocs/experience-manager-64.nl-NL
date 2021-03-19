@@ -6,10 +6,11 @@ seo-description: Leer aanbevelingen en beste praktijken voor het beveiligen van 
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1463'
+source-wordcount: '1464'
 ht-degree: 0%
 
 ---
@@ -28,7 +29,7 @@ Het artikel is bedoeld voor consultants, beveiligingsspecialisten, systeemarchit
 * IT-beveiligingsspecialisten die zich richten op het bieden van beveiliging op alle platforms binnen hun organisatie.
 * Consultants van Adobe en partners die gedetailleerde bronnen voor klanten en partners nodig hebben.
 
-In de volgende afbeelding worden componenten en protocollen weergegeven die worden gebruikt in een standaard AEM Forms-implementatie, inclusief de juiste firewalltopologie:
+De volgende afbeelding toont componenten en protocollen die worden gebruikt in een standaard AEM Forms-implementatie, inclusief de juiste firewalltopologie:
 
 ![typische architectuur](assets/typical-architecture.png)
 
