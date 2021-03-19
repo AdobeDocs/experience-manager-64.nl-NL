@@ -8,10 +8,11 @@ uuid: 81d40278-4df9-4b61-93ad-eae2fce0a35c
 contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.3/FORMS
 discoiquuid: 31e97723-d637-4a18-999d-36e00fbd031a
+feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1544'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
@@ -62,7 +63,7 @@ Ga als volgt te werk om uw MySQL-database te configureren:
 
    1. Tik **Installeren/bijwerken**. Er verschijnt een dialoogvenster **Bundels uploaden/installeren**.
 
-   1. Tik **Kies Bestand** om door de OSGi-bundel van het MySQL JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel starten** en **Pakketten vernieuwen** en tik **Installeren of bijwerken**. Zorg ervoor dat het JDBC Driver for MySQL van Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
+   1. Tik **Kies Bestand** om door de OSGi-bundel van het MySQL JDBC-stuurprogramma te bladeren en deze te selecteren. Selecteer **Bundel starten** en **Pakketten vernieuwen** en tik **Installeren of bijwerken**. Zorg ervoor dat het JDBC-stuurprogramma voor MySQL van de Oracle Corporation actief is. Het stuurprogramma is geïnstalleerd.
 
 1. MySQL-database configureren als gegevensbron:
 
