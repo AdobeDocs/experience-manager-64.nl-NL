@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 5513b24953438cc6c1b3f0027ff5535b4a1874d8
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '718'
+source-wordcount: '719'
 ht-degree: 0%
 
 ---
@@ -75,7 +76,7 @@ Nadat de bundels zijn geïnstalleerd, volgt u de onderstaande stappen om AEM te 
       * Ga naar *http://serveraddress:serverport/system/console/bundles*
       * Selecteer **Installeren/bijwerken**
       * Blader naar de bundel die u uit het gedownloade ZIP-archief hebt uitgepakt
-      * Controleer of het JDBC-stuurprogramma voor MySQLcom.mysql.jdbc **van Oracle Corporation actief is en start het.**
+      * Controleer of het JDBC-stuurprogramma van **Oracle Corporation voor MySQLcom.mysql.jdbc** actief is en start het.
 
 1. Start ten slotte AEM met de runmodi `crx3` en `crx3rdb`:
 
