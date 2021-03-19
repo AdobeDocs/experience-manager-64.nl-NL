@@ -10,10 +10,11 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 9474519d-14cc-49e0-a81d-9319966fd1f6
 pagetitle: Administering hybris
+feature: Kader voor integratie in de handel
 translation-type: tm+mt
-source-git-commit: caa6c521fd6975d0b693e069a61b7a53f2ba5cd0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1726'
+source-wordcount: '1729'
 ht-degree: 1%
 
 ---
@@ -112,7 +113,7 @@ De **Catalogusversie** ( `hybris.catalog.version`) die wordt ingevoerd kan voor 
 **Day CQ Commerce Hybris Configuration**
 (  `com.adobe.cq.commerce.hybris.common.DefaultHybrisConfigurationService`)
 
-**Catalogusversie** wordt meestal ingesteld op  `Online` of  `Staged` (de standaardinstelling).
+**Catalogusversie** wordt gewoonlijk ingesteld op  `Online` of  `Staged` (de standaardinstelling).
 
 >[!NOTE]
 >
