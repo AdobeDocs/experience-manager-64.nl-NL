@@ -7,10 +7,11 @@ uuid: 1624a465-8b0c-4347-a53f-1118bfa6e18f
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 898268cb-4426-421f-8f63-d75bd85cb57f
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 7ec0cd95417c015565fa6e07c753c4ac6df35cdb
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '1039'
+source-wordcount: '1040'
 ht-degree: 0%
 
 ---
@@ -101,7 +102,7 @@ Voer de volgende databaseopdrachten uit om gebruikersgegevens voor een hoofd-id 
 
 >[!NOTE]
 >
->De volgende bevelen gebruiken de namen van de gegevensbestandlijst in Mijn SQL en de gegevensbestanden van IBM DB2. Wanneer u deze opdrachten uitvoert op Oracle- en MS SQL-databases, vervangt u `EdcPolicySetPrincipalEntity` door `EdcPolicySetPrincipalEnt` in de opdrachten.
+>De volgende bevelen gebruiken de namen van de gegevensbestandlijst in Mijn SQL en de gegevensbestanden van IBM DB2. Wanneer het runnen van deze bevelen op Oracle en SQL gegevensbestanden van MS, vervang `EdcPolicySetPrincipalEntity` met `EdcPolicySetPrincipalEnt` in de bevelen.
 
 ```sql
 Select * from EdcPrincipalKeyEntity where principalid = '<principal_id>';
