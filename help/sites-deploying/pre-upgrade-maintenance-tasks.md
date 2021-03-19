@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2178'
+source-wordcount: '2179'
 ht-degree: 0%
 
 ---
@@ -133,7 +134,7 @@ De takenlijst verschilt afhankelijk van de uitvoeringsmodus die wordt gebruikt o
   <tr> 
    <td><code>RevisionCleanupTask</code></td> 
    <td>crx3</td> 
-   <td>Voor instanties TarMK op AEM 6.0 tot 6.2, stel in plaats daarvan manueel Off-line Correctie van de Revisie in werking.</td> 
+   <td>Voor instanties TarMK op AEM 6.0 tot 6.2, stel in plaats daarvan manueel Off-line de Correctie van de Revisie in werking.</td> 
   </tr> 
   <tr> 
    <td><code>com.day.cq.audit.impl.AuditLogMaintenanceTask</code></td> 
