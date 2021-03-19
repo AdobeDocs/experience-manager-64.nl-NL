@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
+feature: Bijwerken
 translation-type: tm+mt
-source-git-commit: ba16a6870bc621a585b2b2d7c7536baef05adc72
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '678'
+source-wordcount: '679'
 ht-degree: 3%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 3%
 
 # Lazy Content Migration{#lazy-content-migration}
 
-Met het oog op achterwaartse compatibiliteit worden de inhoud en configuratie in **/etc** en **/content** die beginnen met AEM 6.3, niet direct aangeraakt of getransformeerd met de upgrade. Dit wordt gedaan om ervoor te zorgen dat de gebiedsdelen van klantentoepassingen op die structuren intact blijven. De functionaliteit met betrekking tot deze inhoudsstructuren is nog steeds hetzelfde, ook al wordt de inhoud in een uiteinde van het vak AEM 6.4 op een andere plaats gehost.
+Met het oog op achterwaartse compatibiliteit worden de inhoud en configuratie in **/etc** en **/content** die beginnen met AEM 6.3, niet direct aangeraakt of getransformeerd met de upgrade. Dit wordt gedaan om ervoor te zorgen dat de gebiedsdelen van klantentoepassingen op die structuren intact blijven. De functionaliteit met betrekking tot deze inhoudsstructuren is nog steeds hetzelfde, ook al zou de inhoud in een uiteinde van het vak AEM 6.4 op een andere plaats worden gehost.
 
 Hoewel niet al die plaatsen automatisch kunnen worden omgezet, zijn er een paar vertraagde `CodeUpgradeTasks` die ook als Lazy Inhoud Migratie wordt bedoeld. Hierdoor kunnen klanten deze automatische transformaties activeren door de instantie opnieuw te starten met deze systeemeigenschap:
 
