@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 445e24af-cd1a-414d-bd01-9feb6631bbef
+feature: Mobile Forms
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '323'
+source-wordcount: '325'
 ht-degree: 2%
 
 ---
@@ -23,7 +24,7 @@ U kunt een HTML5-formulier opslaan als concept en het invullen van het formulier
 
 ## Aangepast profiel om de functie Opslaan als concept toe te staan {#custom-profile-to-allow-save-as-draft-feature}
 
-AEM Forms levert een **Opslaan als concept**-profiel uit het vak. U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit in te schakelen voor een HTML5-formulier. U kunt het HTML-renderprofiel voor een formulier opgeven in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
+AEM Forms geeft een profiel **Opslaan als concept** op. U kunt een formulier weergeven met het profiel Opslaan als concept om de conceptfunctionaliteit in te schakelen voor een HTML5-formulier. U kunt het HTML-renderprofiel voor een formulier opgeven in [Forms Manager](/help/forms/using/introduction-managing-forms.md).
 
 Als u de functie Opslaan als concept wilt inschakelen voor uw bestaande [aangepast profiel](/help/forms/using/custom-profile.md), voegt u de volgende eigenschappen toe aan uw aangepaste profielnode:
 
