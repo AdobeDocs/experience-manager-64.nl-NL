@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5cb571ae-eeb5-4943-a6b8-92e346e85be2
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 9fa89ca34843d41a5ab5711c1090fcc7a1077760
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '691'
+source-wordcount: '692'
 ht-degree: 0%
 
 ---
@@ -32,7 +33,7 @@ Voor extra informatie voor ontwikkelaars, zie [Hoofdzaak van het Overseinen](ess
 
 ## Service voor berichtenverkeer {#messaging-operations-service}
 
-[AEM Communities de Dienst van de Verrichtingen van het Overseinen van het Overseinen](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identificeert het eindpunt dat overseinen verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
+[AEM Communities de Dienst van de Verrichtingen van het Overseinen van het Overseinen ](http://localhost:4502/system/console/configMgr/com.adobe.cq.social.messaging.client.endpoints.impl.MessagingOperationsServiceImpl) identificeert het eindpunt dat overseinen verwante verzoeken behandelt, de omslagen de dienst voor het opslaan van berichten zou moeten gebruiken, en als de berichten dossiergehechtheid kunnen omvatten, welke dossiertypes worden toegestaan.
 
 Voor gemeenschapssites die zijn gemaakt met de [Community Sites console](sites-console.md), bestaat al een instantie van de service, met de inbox ingesteld op `/mail/community/inbox`.
 
@@ -104,12 +105,12 @@ Als supportAttachments wordt gecontroleerd, specificeert deze waarde de maximum 
 *104857600*  (100 MB).
 
 * **[!UICONTROL attachmentTypeBlocklist.name]**
-Een lijst van afgewezen personen met bestandsextensies, vooraf ingesteld op &#39;
-**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt toegevoegd op lijst van gewenste personen, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;. De standaardwaarde is *DEFAULT*.
+Een lijst van gewezen personen met bestandsextensies, vooraf ingesteld op &#39;
+**.**&quot;, dat zal door het systeem worden verworpen. Als de extensie niet wordt gevoegd op lijst van gewenste personen, is deze toegestaan. Extensies kunnen worden toegevoegd of verwijderd met de pictogrammen &#39;**+**&#39; en &#39;**-**&#39;. De standaardwaarde is *DEFAULT*.
 
 * **[!UICONTROL allowedAttachmentTypes.name]**
 
-   **(*Actie vereist*)** Een lijst van gewenste personen van dossieruitbreidingen, het tegenovergestelde van de lijst van afgewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de toegevoegde op lijst van gewenste personen extensies, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
+   **(*Actie vereist*)** Een lijst van gewenste personen van dossieruitbreidingen, het tegenovergestelde van de lijst van gewezen personen. Als u alle bestandsextensies wilt toestaan, behalve de gevoegde op lijst van gewenste personen extensies, gebruikt u het pictogram &#39;**-**&#39; om één leeg item te verwijderen.
 
 * **[!UICONTROL serviceSelector.name]**
 (*Vereist*) een absolute weg (eindpunt) waardoor de dienst (een virtueel middel) wordt aangehaald. De wortel van de gekozen weg moet één inbegrepen in *de configuratieplaatsen van Wegen van de Uitvoering* van OSGi config [ `Apache Sling Servlet/Script Resolver and Error Handler`](http://localhost:4502/system/console/configMgr/org.apache.sling.servlets.resolver.SlingServletResolver), zoals `/bin/`, `/apps/`, en `/services/` zijn. Om deze configuratie voor de het overseineneigenschap van een plaats te selecteren, wordt dit eindpunt verstrekt als **`Service selector`** waarde voor `Message List and Compose Message components` (zie [Berichteigenschap](configure-messaging.md)). De standaardwaarde is */bin/messaging*.
@@ -120,9 +121,9 @@ Gebruiken
 
 >[!CAUTION]
 >
->Elke keer dat een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
+>Telkens wanneer een `Messaging Operations Service` configuratie voor uitgeven wordt geopend, als `allowedAttachmentTypes.name` was verwijderd, wordt een lege ingang opnieuw toegevoegd om het bezit configureerbaar te maken. Bij één leeg item worden bestandsbijlagen uitgeschakeld.
 >
->Als u alle bestandsextensies wilt toestaan, behalve de toegevoegde op lijst van gewenste personen extensies, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **[!UICONTROL Save]** klikt.
+>Als u alle bestandsextensies wilt toestaan, behalve de gevoegde op lijst van gewenste personen extensies, gebruikt u het pictogram &#39;**-**&#39; om (opnieuw) één leeg item te verwijderen voordat u op **[!UICONTROL Save]** klikt.
 
 ## Problemen oplossen {#troubleshooting}
 
