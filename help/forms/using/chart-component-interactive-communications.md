@@ -8,10 +8,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 16c7e698-258d-4e63-9828-f538dc7d3294
+feature: Interactieve communicatie
 translation-type: tm+mt
-source-git-commit: f86765084981cda1e255834bf83be0ff8a7a2a02
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2391'
+source-wordcount: '2393'
 ht-degree: 0%
 
 ---
@@ -164,7 +165,7 @@ Op het tabblad Standaard kunt u de volgende eigenschappen configureren:
 >
 >U kunt de breedte van het diagram in het webkanaal bepalen met behulp van de stijllaag of door een thema toe te passen.
 
-**Knopinfo (alleen webkanaal)** Hiermee geeft u de indeling op waarin de knopinfo wordt weergegeven op de muis boven een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is \${x} (\${y}). Afhankelijk van het grafiektype, wanneer u de muis op een punt, bar, of plak in de grafiek richt, worden de variabelen \$ {x} en \$ {y} dynamisch vervangen met de overeenkomstige waarden op x-as en y-as en getoond in tooltip.
+**Knopinfo (alleen webkanaal)** Hiermee geeft u de indeling op waarin de knopinfo wordt weergegeven op de muis over een gegevenspunt in het diagram in het webkanaal. De standaardwaarde is \${x} (\${y}). Afhankelijk van het grafiektype, wanneer u de muis op een punt, bar, of plak in de grafiek richt, worden de variabelen \$ {x} en \$ {y} dynamisch vervangen met de overeenkomstige waarden op x-as en y-as en getoond in tooltip.
 
 Laat het veld Knopinfo leeg als u knopinfo wilt uitschakelen. Deze optie is niet van toepassing op lijngrafieken en vlakgrafieken. Zie bijvoorbeeld [Voorbeeld 1: Uitvoer van diagram in afdruk en web](#chartoutputprintweb).
 
