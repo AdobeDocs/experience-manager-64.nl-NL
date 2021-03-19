@@ -10,10 +10,11 @@ geptopics: SG_AEMFORMS/categories/rendering_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3cb307ec-9b7b-4f03-b860-48553ccee746
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2514'
+source-wordcount: '2515'
 ht-degree: 0%
 
 ---
@@ -53,7 +54,7 @@ In de volgende tabel worden de stappen in dit diagram beschreven.
   </tr> 
   <tr> 
    <td><p>3</p></td> 
-   <td><p>Nadat de gebruiker het leningformulier heeft ingevuld en op de verzendknop klikt, worden de gegevens verzonden naar de Java Server. <code>HandleData</code> (Zie <i>"Vormgeving van leningen"</i>.)</p></td> 
+   <td><p>Nadat de gebruiker het leningsformulier heeft ingevuld en op de verzendknop klikt, worden de gegevens verzonden naar de Java Server. <code>HandleData</code> (Zie <i>"Vormgeving van leningen"</i>.)</p></td> 
   </tr> 
   <tr> 
    <td><p>4</p></td> 
