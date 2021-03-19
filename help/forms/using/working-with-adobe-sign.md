@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
+feature: Adaptive Forms, Adobe Sign
 translation-type: tm+mt
-source-git-commit: 12d64aebbe769c0b3fa7c721e7fbac547d320f67
+source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
 workflow-type: tm+mt
-source-wordcount: '3509'
+source-wordcount: '3513'
 ht-degree: 0%
 
 ---
@@ -162,7 +163,7 @@ Voer de volgende stappen uit om een cloudservice en de volgorde van ondertekenin
 
    In het vervolgkeuzemenu worden de cloudservices weergegeven die in de map `global` in Gereedschappen > **[!UICONTROL Cloud Services]** > **[!UICONTROL Adobe Sign]** staan. Daarnaast bevat het vervolgkeuzemenu ook een lijst met de cloudservices die aanwezig zijn in de map die u selecteert in het veld **[!UICONTROL Configuration Container]** wanneer u een adaptief formulier maakt.
 
-1. Selecteer de ondertekeningsvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen**. Adobe Sign-zangers kunnen een adaptief formulier **Sequentiaal** - één na een andere ondertekenaar of **Gelijktijdig** - in willekeurige volgorde ondertekenen.
+1. Selecteer de ondertekeningsvolgorde in het dialoogvenster **Ondertekenaars kunnen ondertekenen**. Adobe Sign-zangers kunnen een adaptief formulier **Sequentiaal** - een na een andere ondertekenaar of **Gelijktijdig** - in willekeurige volgorde ondertekenen.
 
    Eén ondertekenaar ontvangt het formulier voor ondertekening achtereenvolgens in de volgorde. Nadat een ondertekenaar het ondertekenen van het document heeft voltooid, wordt het formulier verzonden naar de volgende ondertekenaar, enzovoort.
 
@@ -238,7 +239,7 @@ Nadat [adaptieve formuliereigenschappen voor Adobe sign](#enableadobesign) is be
    Digitale handtekeningen toepassen op het adaptieve formulier met:
 
    * Wolkhandtekeningen: Onderteken met een [digitale id](https://helpx.adobe.com/sign/kb/digital-certificate-providers.html) die wordt gehost door een vertrouwde serviceprovider.
-   * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met behulp van een smartcard, USB-token of een op een bestand gebaseerde digitale id.
+   * Adobe Acrobat of Reader: Download en open het document met Adobe Acrobat of Reader om het te ondertekenen met een smartcard, USB-token of een digitale id op basis van een bestand.
 
    Nadat u het handtekeningveld voor de cloud aan het adaptieve formulier hebt toegevoegd, voert u de volgende stappen uit om het configuratieproces te voltooien:
 
