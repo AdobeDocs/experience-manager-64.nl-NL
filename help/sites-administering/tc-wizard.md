@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: site-features
 content-type: reference
 discoiquuid: dc185a75-84a0-4075-ae1e-8bb78d414aa8
+feature: Taalkopie
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '226'
+source-wordcount: '228'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # Wizard Taalkopie{#language-copy-wizard}
 
-De wizard Taalkopie is een begeleide ervaring voor het maken en van instrumenten voorzien voor de structuur van meertalige inhoud. Het is nu veel eenvoudiger en sneller om een taalkopie te maken.
+De wizard Taalkopie is een begeleide ervaring voor het maken van meertalige contentstructuren en het van instrumenten voorzien. Het is nu veel eenvoudiger en sneller om een taalkopie te maken.
 
 >[!NOTE]
 >
