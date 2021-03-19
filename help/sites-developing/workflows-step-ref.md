@@ -1,7 +1,7 @@
 ---
 title: Referentie workflowstap
 seo-title: Referentie workflowstap
-description: 'null'
+description: Referentie workflowstap
 seo-description: 'null'
 uuid: 72a64495-d1b1-49e7-8257-d6b2ed36961c
 contentOwner: User
@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2597'
+source-wordcount: '2599'
 ht-degree: 0%
 
 ---
@@ -585,7 +585,7 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
       * De standaard ECMAScripts en OSGi diensten, zie [Ingebouwde Processen voor de Stappen van het Proces](/help/sites-developing/workflows-process-ref.md).
       * Creërend ECMAScripts voor een **[!UICONTROL Process]** stap, zie [Uitvoerend een Stap van het Proces met een ECMAScript](/help/sites-developing/workflows-customizing-extending.md#using-ecmascript).
       * Creërend de diensten OSGi voor een **[!UICONTROL Process]** stap, zie [Implementerend een Stap van het Proces met een Klasse van Java](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
-   * **[!UICONTROL Handler Advance]**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten terugkeren naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
+   * **[!UICONTROL Handler Advance]**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten doorlopen naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
    * **[!UICONTROL Arguments]**: Argumenten die aan het proces moeten worden doorgegeven.
 
 
