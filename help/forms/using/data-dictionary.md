@@ -7,10 +7,11 @@ uuid: cc976dff-f243-4807-a92c-81b78476a744
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 53595ac8-ca7e-4adc-9214-5d0b7cdf71a0
+feature: Correspondentenbeheer
 translation-type: tm+mt
-source-git-commit: 48ea1c456e6f43fb5b348aa65f2380ee0b72a3f1
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3866'
+source-wordcount: '3868'
 ht-degree: 0%
 
 ---
@@ -129,7 +130,7 @@ Tijdens het bewerken of weergeven van een gegevenswoordenboek kunt u zien naar w
 1. Voer een van de volgende handelingen uit om het gegevenswoordenboek te bewerken:
 
    * Houd de cursor boven een gegevenswoordenboek en tik op Bewerken.
-   * Selecteer een gegevenswoordenboek en tik op Bewerken in de koptekst.
+   * Selecteer een gegevenswoordenboek en tik vervolgens op Bewerken in de koptekst.
    * Houd de cursor boven een gegevenswoordenboek en tik op Selecteren. Tik vervolgens op Bewerken in de koptekst.
 
    Of tik op een gegevenswoordenboek om dit weer te geven.
@@ -510,7 +511,7 @@ De volgende detailmodellen en codesteekproeven die implementatiedetails voor het
 
 ## Eenvoudige (primitieve) elementen toewijzen {#mapping-simple-primitive-elements}
 
-Een primitieve DDE vertegenwoordigt een veld of kenmerk dat atomisch van aard is. Primitieve DDEs die buiten het werkingsgebied van een complex type (samengestelde DDE) of een herhalend element (inzameling DDE) worden bepaald kan in om het even welke plaats binnen het Schema van XML worden opgeslagen. De locatie van de gegevens die overeenkomen met een primitieve DDE is niet afhankelijk van de toewijzing van de bovenliggende DDE. Primitieve DDE gebruikt de toewijzingsinformatie van het Bindende gebied van XML om zijn waarde te bepalen en de afbeeldingen vertalen in één van het volgende:
+Een primitieve DDE vertegenwoordigt een veld of kenmerk dat atomisch van aard is. Primitieve DDEs die buiten het werkingsgebied van een complex type (samengestelde DDE) of een herhalend element (inzameling DDE) wordt bepaald kan in om het even welke plaats binnen het Schema van XML worden opgeslagen. De locatie van de gegevens die overeenkomen met een primitieve DDE is niet afhankelijk van de toewijzing van de bovenliggende DDE. Primitieve DDE gebruikt de afbeeldingsinformatie van het Bindende gebied van XML om zijn waarde te bepalen en de afbeeldingen vertalen in één van het volgende:
 
 * een attribuut
 * een element
