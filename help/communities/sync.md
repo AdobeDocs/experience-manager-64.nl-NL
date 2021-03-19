@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 32b56b48-75cb-4cc9-a077-10e335f01a35
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '2410'
+source-wordcount: '2411'
 ht-degree: 0%
 
 ---
@@ -366,7 +367,7 @@ Als de distributie van het Verdelen ontbreekt, probeer de volgende het zuiveren 
    * Genegeerde knooppunten - ingesteld op **.tokens**, **system** en **rep:cache**
    * Gedistribueerde mappen - instellen op de mappen die u wilt distribueren
 
-1. **Logboeken controleren die zijn gegenereerd bij het maken van gebruikers op de instantie** Publiceren. Als de bovenstaande configuraties juist zijn ingesteld maar gebruikerssynchronisatie nog niet werkt, controleert u de logbestanden die bij het maken van de gebruiker worden gegenereerd.
+1. **Logboeken controleren die zijn gegenereerd bij het maken van gebruikers in de instantie** Publiceren. Als de bovenstaande configuraties juist zijn ingesteld maar gebruikerssynchronisatie nog niet werkt, controleert u de logbestanden die bij het maken van de gebruiker worden gegenereerd.
 
    Controleer als volgt of de volgorde van de logbestanden gelijk is:
 
