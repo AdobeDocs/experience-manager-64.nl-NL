@@ -8,10 +8,11 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop, interactive-communications
 content-strategy: max-2018
 discoiquuid: c5933e2a-fb8d-4d1b-a301-c8a2bc7ee226
+feature: Adaptieve Forms
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5897'
+source-wordcount: '5899'
 ht-degree: 0%
 
 ---
@@ -279,7 +280,7 @@ Onderbrekingspunten van de Thema-editor gebruiken om alternatieve opmaak voor ve
 
 ### Contextwijzigingen in opmaakeigenschappen in zijbalk bij het selecteren van objecten {#styling-properties-context-changes-in-sidebar-on-selecting-objects}
 
-Wanneer u een component op het canvas selecteert, worden de opmaakeigenschappen van de component weergegeven in het zijpaneel. Selecteer het objecttype en de objectstatus en geef de objectstijl op.
+Wanneer u een component op het canvas selecteert, worden de stijleigenschappen van de component weergegeven in het zijpaneel. Selecteer het objecttype en de objectstatus en geef de objectstijl op.
 
 ### Onlangs gebruikte stijlen in de Thema-editor {#recently-used-styles-in-theme-editor}
 
@@ -478,7 +479,7 @@ Voer de volgende stappen uit om de opmaak van een component in een specifieke st
 
 1. Selecteer een staat in de zijbalk. Bijvoorbeeld de status Fout.
 1. Gebruik opties zoals **[!UICONTROL Border, Background]** in de zijbalk om het uiterlijk van de component aan te passen.
-1. Gebruik de optie **[!UICONTROL Simulate Error]** onder aan het zijpaneel om te zien hoe de opmaak er uitziet in het bewerken.
+1. Gebruik de optie **[!UICONTROL Simulate Error]** onder aan het zijpaneel om te zien hoe de opmaak er uitziet tijdens het bewerken.
 
 Wanneer u de opmaak van een component aanpast nadat u de status ervan hebt opgegeven, wordt de aanpassing alleen voor de component weergegeven voor de opgegeven status. Als u bijvoorbeeld de opmaak voor de component aanpast wanneer de aanwijsstatus is geselecteerd. De aanpassing wordt weergegeven voor de component wanneer u de aanwijzer over de component beweegt in het gegenereerde formulier of de interactieve communicatie waarop u het thema toepast.
 
@@ -659,7 +660,7 @@ De gegenereerde CSS kunt u met de volgende opties zien:
       1. Blader op het tabblad Geavanceerd in het veld Clientlib-locatie naar de clientbibliotheek die u wilt gebruiken en selecteer deze.
       1. Klik op **[!UICONTROL Save]**.
 
-      De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en voor de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.\
+      De stijl die u opgeeft in de clientbibliotheek, wordt geïmporteerd in het thema dat deze stijl gebruikt. U geeft bijvoorbeeld de opmaak op voor tekstvak, numeriek vak en schakel over in de clientbibliotheek. Wanneer u de clientbibliotheek in het thema importeert, wordt de stijl voor het tekstvak, het numerieke vak en de switch geïmporteerd. Vervolgens kunt u andere componenten opmaken met de themaeditor.\
       U kunt ook een thema maken, er kopieën van maken en vervolgens de opmaak wijzigen die in de gekopieerde thema&#39;s wordt geboden voor vergelijkbare gebruiksdoeleinden.
 
       Zie [Specifieke weergave ophalen met Thema&#39;s](#specific-af-appearance)
