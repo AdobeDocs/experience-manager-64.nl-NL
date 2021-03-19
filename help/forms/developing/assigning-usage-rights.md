@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 9e8db506-9ace-4e1f-8a7b-c4e9b15dde7e
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '3937'
+source-wordcount: '3938'
 ht-degree: 0%
 
 ---
@@ -476,7 +477,7 @@ Retrificatiegegevens ophalen met de Acrobat Reader DC Extension API (webservice)
 1. Gebruiksrechten verwijderen uit het PDF-document.
 
    * Haal informatie op over de referentie die wordt gebruikt om gebruiksrechten toe te passen op het PDF-document door de methode `ReaderExtensionsServiceClient` van het object `getDocumentUsageRights` aan te roepen en het object `com.adobe.idp.Document` door te geven dat het PDF-document met toegangsrechten bevat. Deze methode retourneert een `GetUsageRightsResult`-object dat referentie-informatie bevat.
-   * Haal de datum op waarna de referentie niet meer geldig is door de waarde op te halen van het `GetUsageRightsResult`-gegevenslid van het object. `notAfter` Het gegevenstype van dit gegevenslid is `System.DateTime`.
+   * Haal de datum op waarna de referentie niet meer geldig is door de waarde op te halen van het `GetUsageRightsResult` gegevenslid van het object. `notAfter` Het gegevenstype van dit gegevenslid is `System.DateTime`.
    * Haal het bericht op dat wordt weergegeven wanneer het PDF-document waarvoor rechten zijn ingeschakeld in Adobe Reader wordt geopend door de waarde van het `GetUsageRightsResult`-gegevenslid van het object op te halen. `message` Het gegevenstype van dit gegevenslid is een tekenreeks.
    * Haal het aantal keren op dat de referentie wordt gebruikt door de waarde op te halen van het `GetUsageRightsResult`-gegevenslid van het object. `useCount` Het gegevenstype van dit gegevenslid is een geheel getal.
 
