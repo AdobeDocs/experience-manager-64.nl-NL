@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
+feature: Configureren
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '5889'
+source-wordcount: '5890'
 ht-degree: 0%
 
 ---
@@ -1175,7 +1176,7 @@ Zo kunt u zien hoeveel geheugen wordt gebruikt, welke GC-algoritmen worden gebru
 
 >[!NOTE]
 >
->Voor Oracle VM is er ook informatie op:
+>Voor VM van Oracle is er ook informatie op:
 >
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
 
