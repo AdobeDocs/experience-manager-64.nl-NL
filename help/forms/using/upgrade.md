@@ -9,10 +9,11 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 12a4785fe83c319e3b91bbdf4ae8cb5745f4f187
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '230'
+source-wordcount: '231'
 ht-degree: 0%
 
 ---
@@ -20,7 +21,7 @@ ht-degree: 0%
 
 # Upgrade naar AEM 6.4 Forms{#upgrade-to-aem-forms}
 
-AEM 6.4 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Zie [Overzicht van nieuwe functies](/help/forms/using/whats-new.md) voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.4 Forms.
+AEM 6.4 Forms bevat verschillende nieuwe functies en verbeteringen die het maken, beheren en gebruiken van formulieren en correspondentie stroomlijnen. Zie [Samenvattingsdocument over nieuwe functies](/help/forms/using/whats-new.md) voor meer informatie over alle nieuwe mogelijkheden en verbeteringen van AEM 6.4 Forms.
 
 U kunt uw bestaande LiveCycle- of AEM Forms-installatie upgraden om nieuwe mogelijkheden en verbeteringen te verkrijgen die worden aangeboden in AEM 6.4 Forms, terwijl bestaande gegevens, processen en middelen intact blijven. Bij een upgrade blijven de metagegevens en de status van de processen ook behouden. U kunt een upgradepad kiezen om aan de slag te gaan met de upgrade.
 
