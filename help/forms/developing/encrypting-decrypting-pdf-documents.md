@@ -9,10 +9,11 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 5e4bda3a-5648-4c0f-b2f8-bdbebb88f537
+role: Developer
 translation-type: tm+mt
-source-git-commit: cfb072f09c50e75df3a987ab7eb91f0d7cb920c3
+source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
 workflow-type: tm+mt
-source-wordcount: '8244'
+source-wordcount: '8245'
 ht-degree: 0%
 
 ---
@@ -113,7 +114,7 @@ U kunt het met een wachtwoord gecodeerde PDF-document opslaan als een PDF-bestan
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API voor coderingsservice - Snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[API voor coderingsservice: snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 [PDF-documenten versleutelen met certificaten](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-certificates)
 
@@ -251,7 +252,7 @@ Een certificaat met een openbare sleutel bevat de openbare sleutel van een gebru
 
 >[!NOTE]
 >
->Voordat u een PDF-document kunt versleutelen met een certificaat, moet u controleren of u het certificaat aan AEM Forms toevoegt. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
+>Voordat u een PDF-document kunt versleutelen met een certificaat, moet u ervoor zorgen dat u het certificaat toevoegt aan AEM Forms. Een certificaat wordt toegevoegd gebruikend beleidsconsole of programmatically gebruikend de Manager API van het Vertrouwen. (Zie [Referenties importeren met de Betrouwbaarheidsbeheer-API](/help/forms/developing/credentials.md#importing-credentials-by-using-the-trust-manager-api).)
 
 >[!NOTE]
 >
@@ -317,7 +318,7 @@ U kunt het versleutelde PDF-document opslaan als een PDF-bestand.
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API voor coderingsservice - Snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[API voor coderingsservice: snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 [PDF-documenten versleutelen met een wachtwoord](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
@@ -521,7 +522,7 @@ Nadat op een certificaat gebaseerde versleuteling is verwijderd uit een versleut
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API voor coderingsservice - Snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[API voor coderingsservice: snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 ### Op een certificaat gebaseerde codering verwijderen met de Java API {#remove-certificate-based-encryption-using-the-java-api}
 
@@ -674,7 +675,7 @@ Nadat de coderingsservice op wachtwoord gebaseerde codering uit een PDF-document
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API voor coderingsservice - Snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[API voor coderingsservice: snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 [PDF-documenten versleutelen met een wachtwoord](encrypting-decrypting-pdf-documents.md#encrypting-pdf-documents-with-a-password)
 
@@ -827,7 +828,7 @@ Nadat een versleuteld PDF-document is ontgrendeld, kunt u er een andere serviceb
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API voor coderingsservice - Snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[API voor coderingsservice: snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 ### Een versleuteld PDF-document ontgrendelen met de Java API {#unlock-an-encrypted-pdf-document-using-the-java-api}
 
@@ -998,7 +999,7 @@ U kunt bepalen welk type versleuteling een PDF-document beveiligt. Als het PDF-d
 
 [Verbindingseigenschappen instellen](/help/forms/developing/invoking-aem-forms-using-java.md#setting-connection-properties)
 
-[API voor coderingsservice - Snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
+[API voor coderingsservice: snel aan de slag](/help/forms/developing/encryption-service-java-api-quick.md#encryption-service-java-api-quick-start-soap)
 
 [Documenten beveiligen met beleid](/help/forms/developing/protecting-documents-policies.md#protecting-documents-with-policies)
 
