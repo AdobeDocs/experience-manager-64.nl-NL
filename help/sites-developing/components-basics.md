@@ -11,7 +11,7 @@ content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
 translation-type: tm+mt
-source-git-commit: 4f820cd0bf3a18b18c95e75c0f291452871175a4
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 0%
@@ -192,7 +192,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component in de componentenbrowser of sidekick wordt vermeld.
    * `jcr:description` - Beschrijving van het onderdeel; kan als muis-over wenk in componentenbrowser of sidekick worden gebruikt.
-   * Klassieke interface:
+   * Klassieke gebruikersinterface:
 
       * `icon.png` - Pictogram voor deze component.
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.
@@ -440,7 +440,7 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
    * `cq:dialog` (  `nt:unstructured`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component
    * `cq:design_dialog` (  `nt:unstructured`) - geeft de ontwerpbewerkingsopties voor deze component op
 
-* Klassieke interface:
+* Klassieke gebruikersinterface:
 
    * `dialog` (  `cq:Dialog`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
    * `design_dialog` (  `cq:Dialog`) - geeft de ontwerpbewerkingsopties voor deze component op
@@ -458,7 +458,7 @@ Dialoogvensterdefinities zijn specifiek voor de gebruikersinterface:
 >[!NOTE]
 >
 >* Voor compatibiliteitsdoeleinden kan de interface met aanraakbediening gebruikmaken van de definitie van een klassiek dialoogvenster UI, wanneer er geen dialoogvenster is gedefinieerd voor de interface met aanraakbediening.
->* Het [Hulpmiddel van de Omzetting van de Dialoog ](/help/sites-developing/dialog-conversion.md) wordt ook verstrekt om u te helpen componenten uitbreiden/omzetten die slechts dialogen hebben die voor klassieke UI worden bepaald.
+>* [AEM Moderniseringshulpmiddelen](/help/sites-developing/modernization-tools.md) wordt ook verstrekt om u te helpen componenten uitbreiden/omzetten die slechts dialogen hebben die voor klassieke UI worden bepaald.
 
 >
 
@@ -844,7 +844,7 @@ De `cq:dropTargets` knoop (knooptype `nt:unstructured`) bepaalt een lijst van da
 >
 >In de interface met aanraakbediening wordt alleen het eerste doel gebruikt.
 
-Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze in JSP moet worden gebruikt, als volgt, om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
+Elk onderliggend knooppunt van het type `cq:DropTargetConfig` definieert een neerzetdoel in de component. De knooppuntnaam is belangrijk omdat deze als volgt moet worden gebruikt in JSP om de CSS-klassenaam te genereren die is toegewezen aan het DOM-element dat het effectieve doel voor neerzetten is:
 
 ```
 <drop target css class> = <drag and drop prefix> + 
