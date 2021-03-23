@@ -10,7 +10,7 @@ topic-tags: release-notes
 content-type: reference
 discoiquuid: 2be468e7-2b4e-4e04-881b-b9bdd1f55e57
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '2844'
 ht-degree: 2%
@@ -162,7 +162,7 @@ De capaciteit om referentie de vooraf bepaalde matigingsfilters op moderatiecons
 
 #### UGC- en gebruikersprofielen verwijderen {#delete-ugc-and-user-profiles}
 
-AEM 6.4 Community&#39;s stellen [out-of-the-box API&#39;s](/help/communities/user-ugc-management-service.md) en voorbeelden [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) beschikbaar om eindgebruikers de mogelijkheid te bieden hun gegevens te controleren. Deze API&#39;s stellen organisaties voor gegevensverwerking en gegevenscontrole ook in staat EU-aanvragen voor naleving van de GDPR-richtlijn in te dienen.
+AEM 6.4 Community&#39;s stellen [out-of-the-box API&#39;s](/help/communities/user-ugc-management-service.md) en voorbeelden [servlet](https://github.com/Adobe-Marketing-Cloud/aem-communities-ugc-migration/tree/master/bundles/communities-ugc-management-servlet) beschikbaar om eindgebruikers de mogelijkheid te bieden hun gegevens te controleren. Met deze API&#39;s kunnen organisaties voor gegevensverwerking en gegevenscontrole ook EU-aanvragen voor naleving van de GDPR-richtlijn indienen.
 
 #### Verbeteringen voor site- en groepsbeheer {#enhancements-to-site-and-group-management}
 
@@ -307,7 +307,7 @@ Dit proces van prioritering heeft meer dan 500 klant gerichte veranderingen opge
    * [Italiaans](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-it)
    * [Frans](https://experience.adobe.com/#/downloads/content/software-distribution/en/aem.html?package=/content/software-distribution/en/details.html/content/dam/aem/public/adobe/packages/cq630/product/smartcontent-model-fr)
 
-* [De ](/help/sites-developing/dialog-conversion.md) Toolto van de Omzetting van de dialoog om Klassieke UI componenten aan Koraal 3 te migreren
+* [AEM Moderniseringsgereedschappen ](/help/sites-developing/modernization-tools.md) om klassieke UI-componenten te migreren naar koraal 3
 
 **Assets**
 
@@ -356,7 +356,7 @@ Hier vindt u de volledige matrix met ondersteunde platforms, inclusief. Onderste
 
 >[!NOTE]
 >
->Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies door Oracle (zie [Ondersteuning van Oracle Java SE roadmap](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe biedt alleen ondersteuning voor LTS-releases van Java om AEM in productie te houden. Daarom is Java 8 de aanbevolen versie voor gebruik met AEM 6.4.
+>Oracle is overgestapt op een LTS-model (Long Term Support) voor Oracle Java SE-producten. Java 9 en 10 zijn niet-LTS versies door Oracle (zie [Oracle de steun roadmap van Java SE](https://www.oracle.com/technetwork/java/eol-135779.html)). Adobe biedt alleen ondersteuning voor LTS-releases van Java om AEM in productie te houden. Daarom is Java 8 de aanbevolen versie voor gebruik met AEM 6.4.
 
 ## Vervangen en verwijderde functies {#deprecated-and-removed-features}
 
