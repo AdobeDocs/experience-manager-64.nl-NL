@@ -2,7 +2,7 @@
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.4.
 translation-type: tm+mt
-source-git-commit: 8e82c691affe3b2c4108beec394cc0ba2d607b61
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 3%
@@ -179,4 +179,4 @@ De onderstaande tabel bevat een lijst met wijzigingen voor toekomstige release d
 | Gebied | Functie | Aankondiging |
 |---|---|---|
 | Browserondersteuning | Microsoft Internet Explorer | AEM 6.4 is de laatste versie die Microsoft Internet Explorer 11 ondersteunt. |
-| Stichting | UI Framework | Adobe heeft in 2019 de Coral UI 2-componenten afgekeurd. AEM 6.4 is volledig gebaseerd op Coral UI 3 (geïntroduceerd met AEM 6.2). Adobe raadt zijn klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om deze aan Koraal 3 te refactored. Adobe biedt een hulpmiddel om de dialogen van Koraal 2 in Koraal 3 om te zetten - [Meer informatie](/help/sites-developing/dialog-conversion.md). |
+| Stichting | UI Framework | Adobe heeft in 2019 de Coral UI 2-componenten afgekeurd. AEM 6.4 is volledig gebaseerd op Coral UI 3 (geïntroduceerd met AEM 6.2). Adobe raadt zijn klanten en partners aan die douane UIs met Koraal 2 hebben gebouwd om deze aan Koraal 3 te refactored. Adobe biedt een gereedschap om de dialoogvensters Koraal 2 om te zetten in koraal 3 - [Meer informatie.](/help/sites-developing/modernization-tools.md) |
