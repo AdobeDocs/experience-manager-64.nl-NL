@@ -10,9 +10,9 @@ topic-tags: extending-aem
 content-type: reference
 discoiquuid: f23408c3-6b37-4047-9cce-0cab97bb6c5c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: ce24fdb79fe7636951490ea01967787fa28d712e
 workflow-type: tm+mt
-source-wordcount: '3589'
+source-wordcount: '3586'
 ht-degree: 1%
 
 ---
@@ -858,7 +858,7 @@ Een gemakkelijke manier om uw eigen douanestap te beginnen te creëren is een be
 
 1. U kunt nu een workflowmodel openen voor bewerking. In stappen kunt u browser filtreren om **Mijn Stap van de Douane** te zien:
 
-   ![wf-36](assets/wf-36.png)
+   ![wf-34](assets/wf-36.png)
 
    Als u **Mijn aangepaste stap** op het model sleept, wordt de kaart weergegeven:
 
@@ -1039,7 +1039,7 @@ Het voorbeeld `_cq_dialog/.content.xml` dat in dit voorbeeld wordt gebruikt:
 >
 >Dialoogvensters van de klassieke UI-modeleditor werken nog steeds met de standaardinterface-editor met aanraakbediening.
 >
->Hoewel AEM een [dialoogomzettingshulpmiddel ](/help/sites-developing/dialog-conversion.md) heeft als u uw klassieke de stapdialogen van UI aan standaarddialogen wilt bevorderen UI. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
+>AEM heeft [moderniseringshulpmiddelen](/help/sites-developing/modernization-tools.md) als u uw klassieke de stapdialogen van UI aan standaarddialogen wilt bevorderen UI. Na de conversie zijn er nog enkele handmatige verbeteringen die in bepaalde gevallen in de dialoog kunnen worden aangebracht.
 >
 >* Wanneer een geüpgrade dialoogvenster leeg is, kunt u dialoogvensters bekijken in `/libs` met vergelijkbare functionaliteit als voorbeelden van hoe u een oplossing kunt bieden. Bijvoorbeeld:
    >
