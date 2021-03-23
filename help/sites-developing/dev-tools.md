@@ -10,7 +10,7 @@ topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
 translation-type: tm+mt
-source-git-commit: e9c5fcd8f939d88317c5184b6352b227918088e5
+source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
@@ -50,7 +50,7 @@ AEM schepen met andere instrumenten die de ontwikkeling bevorderen:
 * [Hoe te om AEM Projecten te ontwikkelen gebruikend IntelliJ IDEA](/help/sites-developing/ht-intellij.md)
 * [Het gereedschap VLT gebruiken](/help/sites-developing/ht-vlttool.md)
 * [Het gereedschap Proxyserver gebruiken](/help/sites-developing/ht-proxy-server.md)
-* [Dialoogvenster omzetten](/help/sites-developing/dialog-conversion.md)
+* [AEM-moderniseringstools](/help/sites-developing/modernization-tools.md)
 * [AEM](/help/sites-developing/aem-repo-tool.md)
 
 Instrumenten die het opzetten van nieuwe projecten vergemakkelijken:
@@ -62,4 +62,3 @@ Instrumenten die het opzetten van nieuwe projecten vergemakkelijken:
 >
 >De volgende zelfstudie kan van belang zijn voor het starten van een nieuw AEM-project:\
 >[Aan de slag met AEM Sites Deel 1 - Projectinstelling](https://helpx.adobe.com/experience-manager/kt/sites/using/getting-started-wknd-tutorial-develop/part1.html)
-
