@@ -1,66 +1,95 @@
 ---
-title: Vergelijk de functies die beschikbaar zijn in AEM Assets en AEM Media Library
-description: Veelgestelde vragen over AEM Assets en AEM Media Library, inclusief de verschillen.
+title: Mediabibliotheek gebruiken voor elementair beheer van digitale elementen
+description: '[!DNL Experience Manager Assets] en Mediabibliotheek voor middelenbeheer.'
 contentOwner: AG
+role: Architect, leider
 translation-type: tm+mt
-source-git-commit: 6a1013715c538c39eaf40a22dbffc7f2df36f968
+source-git-commit: 200bb263d60ebd9f6abc79ce0c73dac95b06de53
 workflow-type: tm+mt
-source-wordcount: '551'
+source-wordcount: '465'
 ht-degree: 0%
 
 ---
 
 
-# AEM Assets vs. AEM MediaLibrary {#aem-assets-vs-aem-medialibrary}
+<!--
 
-Adobe Experience Manager (AEM) Activa maken integrerend deel uit van het AEM. Deze soepele integratie wordt gezien als een groot voordeel van AEM en zorgt voor consistentie in inhoudsbeheer en hoge productiviteit voor auteurs van inhoud.
+Define Media Lib
+Define req for it
+Define use cases
+Define what is not included
 
-## Veelgestelde vragen {#frequently-asked-questions}
+-->
 
-### Wat is AEM Assets? {#what-is-aem-assets}
+# Mediabibliotheek gebruiken voor elementair middelenbeheer {#manage-assets-using-media-library}
 
-AEM Assets is een toepassing op het AEM-Platform waarmee onze klanten hun digitale middelen (afbeeldingen, video&#39;s, documenten en audioclips) kunnen beheren in een opslagplaats op internet. AEM Assets biedt ondersteuning voor metagegevens, uitvoeringen, de Digital Asset Management Finder en de beheerinterface van AEM Assets.
+[!DNL Adobe Experience Manager] platform biedt verschillende mogelijkheden om elementen te beheren. Met de mediabibliotheek kunnen gebruikers een klein aantal elementen uploaden naar de opslagplaats, zoeken en gebruiken in de webpagina&#39;s en eenvoudige taken uitvoeren voor middelenbeheer op de middelen.
 
-### Wat is de AEM-mediabibliotheek? {#what-is-the-aem-media-library}
+Mediabibliotheek is een lichte DAM-oplossing (Digital Asset Management) die gratis wordt geleverd met een [!DNL Adobe Experience Manager Sites]-licentie. [!DNL Sites] is een Web Content Management (WCM)-aanbieding. Mediabibliotheek werkt met alle mogelijkheden van Experience Manager.
 
-De AEM Mediabibliotheek is een aangewezen onderdeel van de AEM WCM-inhoudsopslagruimte waar afbeeldingen en andere gedeelde bronnen worden opgeslagen. De mediabibliotheek gebruikt de Digital Asset Management-mogelijkheden van AEM WCM.
+[!DNL Adobe Experience Manager Assets] licentie is apart verkrijgbaar. [!DNL Experience Manager Assets] maakt een robuuste verwerking van bedrijfsmiddelen mogelijk via de gebruiksscenario&#39;s van de onderneming, aanpassingen voor metagegevens, schema&#39;s, zoekopdrachten en gebruikersinterface, en vele andere functies die verder gaan dan de mediawisselaar.
 
-### Wat krijg ik van AEM Assets dat geen deel uitmaakt van AEM WCM? {#what-do-i-get-from-aem-assets-that-is-not-part-of-aem-wcm}
+## Licentievereisten {#avail-media-library-license}
 
-De unieke functies die alleen beschikbaar zijn voor klanten van AEM Assets zijn:
+Klanten met een [!DNL Sites]-licentie hebben het recht Mediabibliotheek te gebruiken. Het werkt met alle componenten van [!DNL Experience Manager].
 
-1. de mogelijkheid om andere metagegevens dan titel, tags en beschrijving te extraheren en te bewerken.
-1. de AEM Assets Admin, beschikbaar bij het welkomstscherm door de tweede knoop naast `siteadmin` te klikken.
-1. Alle workflowstappen met betrekking tot Digital Asset Management, namelijk het opnemen van AEM middelen, het verwijderen van AEM Assets, het afhandelen van AEM Assets-submiddelen, het extraheren van AEM Assets-metagegevens.
-1. bibliotheken, inclusief `dam` im-pakketruimte.
+De mediabibliotheek wordt geïnstalleerd als onderdeel van Sites. Naast de licentie en installatie van Sites is geen extra licentie of pakket vereist.
 
-Voor het gebruik van deze functies is een geldige AEM Assets-licentie vereist.
+## [!DNL Assets] versus mediabibliotheek  {#assets-and-media-library}
 
-### Is AEM Assets beschikbaar als apart pakket? {#is-aem-assets-available-as-a-separate-package}
+Experience Manager Assets biedt DAM-functionaliteit op bedrijfsniveau. Elementenfunctionaliteit wordt geleverd met [!DNL Experience Manager] in één pakket. Gebruikers die geen middelenlicentie hebben aangeschaft, hebben echter geen recht op het gebruik van de geavanceerde DAM-functies. Zonder middelenlicentie zijn alleen [mediabibliotheekfuncties](#use-media-library) beschikbaar.
 
-Nee. Om de installatie en implementatie te vereenvoudigen, worden alle AEM toepassingen en invoegtoepassingen geleverd in één pakket met alle functionaliteit inbegrepen. Dit betekent niet dat u toestemming hebt om alle functies in het pakket te gebruiken.
+Als u onbedoeld gebruik van [!DNL Assets] eigenschappen wilt verhinderen die u geen vergunning hebt gegeven, dan verwijder alle [!DNL Assets]-specifieke werkschema&#39;s, componenten, taxonomieën, opties en [!DNL Assets] admin van [!DNL Experience Manager]. Zo voorkomt u dat uw gebruikers per ongeluk [!DNL Assets] functies gebruiken waarvoor u geen licentie hebt verleend.
 
-#### Ik wil metagegevens van digitale elementen bewerken. Heb ik AEM Assets nodig? {#i-want-to-edit-metadata-of-digital-assets-do-i-need-aem-assets}
+## Mediabibliotheek {#use-media-library} gebruiken
 
-Als u andere metagegevens dan titel, beschrijving en tags wilt bewerken, is een licentie voor AEM Assets vereist.
+De mediabibliotheek omvat in grote lijnen de volgende gebruiksgevallen:
 
-#### Ik wil afbeeldingen automatisch vergroten of verkleinen tijdens het importeren. Heb ik AEM Assets nodig? {#i-want-to-automatically-resize-images-upon-import-do-i-need-aem-assets}
+* Basisfuncties voor DAM bieden voor webpagina&#39;s die zijn gemaakt met [!DNL Adobe Experience Manager Sites].
+* Aangepaste formulieren en communicatie gemaakt met [!DNL Adobe Experience Manager Forms].
+* Ervaringen met digitaal scherm die zijn gemaakt met [!DNL Adobe Experience Manager Screens].
+* [!DNL Assets] HTTP REST-API&#39;s voor bewerkingen zonder kop.
 
-Nee. Het wijzigen van het formaat en de automatische workflowgestuurde transformatie van statische afbeeldingen en de mogelijkheid om uitvoeringen te beheren maken deel uit van AEM Mediabibliotheek. Voor deze functies is geen AEM Assets-licentie vereist.
+<!-- TBD: Remove this after confirmation. May need to merge this list with the list provided by PMs.
 
-### Ik wil afbeeldingen vergroten of verkleinen met een aangepaste afbeeldingscomponent. Heb ik AEM Assets nodig? {#i-want-to-resize-images-using-a-customized-image-component-do-i-need-aem-assets}
+* Basic metadata properties
+* Tag management
+* Version control
+* Static renditions
+* Projects, tasks, workflow authoring
+* Activity stream (timeline)
+* Query Builder (API)
+* Marketing Cloud integration
+* User interface customization and extension
+* Comments and annotation
+-->
 
-De afbeeldingscomponent maakt deel uit van AEM WCM. De grafische bibliotheek die door de afbeeldingscomponent (maar ook door AEM Assets) wordt gebruikt, maakt deel uit van het AEM platform en heeft geen AEM Assets-licentie nodig.
+Om de functionaliteit van de Bibliotheek van Media te gebruiken, kunt u het gebrek [!DNL Experience Manager] gebruikersinterface gebruiken. De Bibliotheek van media maakt deel uit van [!DNL Experience Manager Sites] installatie en geen afzonderlijke interface of toe:voegen-op wordt vereist. Met behulp van de bestaande interface hebben de gebruikers van de Mediabibliotheek het recht om de volgende taken uit te voeren:
 
-### Hoe kan ik voorkomen dat mijn gebruikers AEM Assets gebruiken als ik geen licentie voor AEM Assets heb verleend? {#how-can-i-prevent-my-users-from-using-aem-assets-if-i-did-not-license-aem-assets}
+* Maak mappen om elementen te ordenen.
+* Elementen uploaden.
+* Elementen publiceren.
+* Elementen bewerken, verplaatsen en kopiëren.
+* Blader naar de elementen die u wilt gebruiken, filter en zoek (inclusief zoeken op basis van gelijkenis).
+* Voeg waarden toe aan en bewerk de waarden in de metagegevensvelden, behalve het veld Slimme tags, die standaard beschikbaar zijn op het tabblad [!UICONTROL Basic] van de pagina [!UICONTROL Properties] van een element.
+* Statische vertoningen toevoegen en verwijderen.
+* Download mappen, elementen en elementenuitvoeringen.
+* Elementversies maken.
+* Revisietaken voor elementen maken en uitvoeren.
+* Annoteer elementen.
+* Voeg elementen toe aan [!DNL Sites] pagina&#39;s via de Inhoudszoeker.
+* Gebruik [!DNL Content Fragments].
 
-U kunt alle AEM Assets-specifieke workflows, componenten, taxonomieën, opties en de AEM Assets-beheerder uit AEM verwijderen. Zo voorkomt u dat gebruikers per ongeluk AEM Assets-functies gebruiken waarvoor u geen licentie hebt verleend.
+<!-- TBD: Define exactly which basic Assets workflow are available for use with Media Library?
+-->
 
-### Ik wil afbeeldingen aan een pagina toevoegen en deze afbeeldingen uitsnijden en vergroten of verkleinen. Heb ik AEM Assets nodig? {#i-want-to-add-images-to-a-page-and-want-to-crop-and-resize-these-images-do-i-need-aem-assets}
+>[!IMPORTANT]
+>
+>Veel geavanceerde DAM-gebruiksgevallen worden vervuld door [!DNL Experience Manager Assets]. Met de mediawisselaarlicentie kunt u alleen de vermelde gebruiksgevallen afhandelen via de mediawisselaar. Als een gebruiksgeval niet vermeld is, gebruik het niet met de vergunning van de Bibliotheek van Media. Neem contact op met de klantenservice van Adobe als u vragen hebt.
 
-In dit geval is het niet verplicht om AEM Assets te kopen, zelfs als de mediabibliotheek niet hoeft te worden gebruikt om afbeeldingen op een website te gebruiken, omdat de component smart image het uploaden van afbeeldingen naar de pagina toestaat.
+<!-- TBD: Add a CTA - how to contact Adobe for queries. -->
 
 >[!MORELIKETHIS]
 >
->* [Gedetailleerde lijst met functieverschillen](https://docs.adobe.com/content/help/en/experience-manager-65/assets/administer/medialibrary.html#listoffeatures)
+>* [DAM-functies in [!DNL Experience Manager Assets]](https://experienceleague.adobe.com/docs/experience-manager-64/assets/home.html)
 
