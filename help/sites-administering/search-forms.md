@@ -6,9 +6,9 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: ea5b226756711489aaf316022adb746d7f1be696
 workflow-type: tm+mt
-source-wordcount: '2062'
+source-wordcount: '2044'
 ht-degree: 2%
 
 ---
@@ -18,7 +18,7 @@ ht-degree: 2%
 
 Gebruik **Zoeken in Forms** om de selectie van zoekvoorspelden aan te passen die worden gebruikt in de zoekdeelvensters die beschikbaar zijn in verschillende AEM consoles en/of deelvensters van de auteursomgeving. Als u deze deelvensters aanpast, is de zoekfunctionaliteit veelzijdig op basis van uw specifieke behoeften.
 
-Een [bereik van voorspellingen](#predicates-and-their-settings)s is beschikbaar buiten de box. U kunt veelvoudige predikaten toevoegen, met inbegrip van (onder andere) het voorspel Fulltext voor full-text onderzoeken, predikt het Bezit om naar activa te zoeken die één enkele die bezit aanpassen door u wordt gespecificeerd, of de Opties om activa te zoeken die één of meerdere waarden aanpassen die u voor een bepaald bezit specificeert.
+Een [bereik van voorspellingen](#predicates-and-their-settings)s is beschikbaar buiten de box. U kunt veelvoudige predikaten toevoegen, met inbegrip van (onder andere) het voorspel van het Bezit om naar activa te zoeken die één enkel bezit aanpassen dat door u wordt gespecificeerd, of de Opties voorspellen om activa te zoeken die één of meerdere waarden aanpassen die u voor een bepaald bezit specificeert.
 
 U kunt de zoekformulieren [configureren die worden gebruikt in verschillende consoles en de elementenbrowser (bij het bewerken van pagina&#39;s). ](#configuring-your-search-forms) De [dialoogvensters voor het configureren van deze formulieren](#configuring-your-search-forms) zijn toegankelijk via:
 
@@ -176,17 +176,6 @@ De volgende predikaten zijn beschikbaar, afhankelijk van de configuratie:
      <li>Veldlabel</li> 
      <li>Eigenschapnaam*</li> 
      <li>Optiepad</li> 
-     <li>Beschrijving</li> 
-    </ul> </td> 
-  </tr> 
-  <tr> 
-   <td>Fulltext </td> 
-   <td>Zoeken voorspelt zoekopdrachten in volledige tekst.</td> 
-   <td> 
-    <ul> 
-     <li>Veldlabel</li> 
-     <li>Plaatsaanduiding</li> 
-     <li>Eigenschapnaam</li> 
      <li>Beschrijving</li> 
     </ul> </td> 
   </tr> 
@@ -449,7 +438,7 @@ U kunt velden toevoegen of bewerken en de instellingen van velden definiëren/bi
       Selecteer het voorloopgebied (op het recht), dan open **Montages** tabel.
    Bijvoorbeeld, de montages voor **Datumbereik Predicate**:
 
-   ![chlimage_1-375](assets/chlimage_1-376.png)
+   ![chlimage_1-376](assets/chlimage_1-376.png)
 
 1. Breng de gewenste wijzigingen aan en bevestig deze met **Done**.
 
