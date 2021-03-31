@@ -2,10 +2,12 @@
 title: Aanbevolen werkwijzen voor middelenbewaking
 description: Beste werkwijzen voor het controleren van de omgeving en de prestaties van uw AEM instantie nadat deze is geïmplementeerd.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Beheerder, architect
 translation-type: tm+mt
-source-git-commit: c407cecf4f4de9aa00ba987f96df3c75784e0171
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1765'
+source-wordcount: '1769'
 ht-degree: 0%
 
 ---
@@ -40,7 +42,7 @@ U zou levende controle tijdens de prestaties testende fase van uw ontwikkeling o
 
 * [IFP](http://www.ex-parrot.com/pdw/iftop/): Internet toont gedetailleerde informatie over Ethernet/netwerkgebruik. De vertoningen van IFP per communicatiekanaalstatistieken over de entiteiten die ethernet gebruiken en de hoeveelheid bandbreedte zij gebruiken. Als u op de meeste Linux-systemen `yum install iftop` of `apt-get install iftop` wilt installeren.
 
-* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij kunt gebruiken in niet-productiemilieu&#39;s. Zie [Java-vluchtrecorder gebruiken om CQ-runtimeproblemen te diagnostiseren](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq) voor meer informatie.
+* Java Flight Recorder (JFR): Een commercieel hulpmiddel van Oracle dat u vrij in non-production milieu&#39;s kunt gebruiken. Zie [Java-vluchtrecorder gebruiken om CQ-runtimeproblemen te diagnostiseren](https://cq-ops.tumblr.com/post/73865704329/how-to-use-java-flight-recorder-to-diagnose-cq) voor meer informatie.
 * AEM error.log-bestand: U kunt het bestand AEM error.log onderzoeken voor meer informatie over fouten die in het systeem zijn aangemeld. Gebruik het bevel `tail -F quickstart/logs/error.log` om fouten te identificeren die u zou moeten onderzoeken.
 * [Workflowconsole](../sites-administering/workflows.md): Gebruik de workflowconsole om workflows te controleren die achterblijven of vastlopen.
 
