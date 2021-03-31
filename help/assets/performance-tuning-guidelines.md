@@ -2,10 +2,12 @@
 title: Richtlijnen voor afstelling van middelenprestaties
 description: De belangrijkste aandachtsgebieden rond AEM configuratie, veranderingen in hardware, software, en netwerkcomponenten om knelpunten te verwijderen en de prestaties van AEM Assets te optimaliseren.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Architect,beheerder
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3166'
+source-wordcount: '3170'
 ht-degree: 0%
 
 ---
@@ -50,7 +52,7 @@ Zodra het hoge prestaties tijdelijke volume klaar is, dan plaats de parameter JV
 
 ### Java-versie {#java-version}
 
-Omdat Oracle de release van updates voor Java 7 sinds april 2015 heeft stopgezet, raadt Adobe aan om AEM Assets te implementeren op Java 8. In sommige gevallen heeft het een verbeterde prestatie aangetoond.
+Omdat Oracle de release van updates voor Java 7 sinds april 2015 heeft stopgezet, raadt Adobe aan AEM Assets te implementeren op Java 8. In sommige gevallen heeft het een verbeterde prestatie aangetoond.
 
 ### JVM-parameters {#jvm-parameters}
 
@@ -149,7 +151,7 @@ Stel waar mogelijk de DAM Update Asset-workflow in op Transient. De instelling v
 
 ### Maximumaantal parallelle taken {#maximum-parallel-jobs}
 
-AEM wordt standaard een maximumaantal parallelle taken uitgevoerd dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door DAM Update Asset-workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat AEM andere processen uitvoeren die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
+AEM voert standaard een maximumaantal parallelle taken uit dat gelijk is aan het aantal processors op de server. Het probleem met deze instelling is dat tijdens perioden van zware belasting alle processors worden gebruikt door DAM Update Asset-workflows, waardoor de reactiesnelheid van de gebruikersinterface wordt vertraagd en wordt voorkomen dat AEM andere processen uitvoeren die de prestaties en stabiliteit van de server waarborgen. U kunt deze waarde als een goede praktijk instellen op de helft van de processors die beschikbaar zijn op de server door de volgende stappen uit te voeren:
 
 1. Ga bij AEM-auteur naar [http://localhost:4502/system/console/slingevent](http://localhost:4702/system/console/slingevent).
 1. Klik op Bewerken in elke werkstroomwachtrij die relevant is voor uw implementatie, bijvoorbeeld de Granite Transient Workflow Queue.
@@ -183,7 +185,7 @@ Klanten gebruiken afbeeldingen van verschillende grootten en indelingen op hun w
 
 Vele klanten van Plaatsen voeren een beeldservlet uit die resizes en teelten beelden op het ogenblik zij worden gevraagd, wat extra lading aan de publicatieinstantie oplegt. Maar zolang deze afbeeldingen in het cachegeheugen kunnen worden opgeslagen, kan de uitdaging worden beperkt.
 
-Een andere manier is om Dynamic Media Classic-technologie te gebruiken om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de AEM-infrastructuur, maar ook de volledige publicatielaag.
+Een alternatieve aanpak is het gebruik van Dynamic Media Classic-technologie om beeldmanipulatie volledig uit te schakelen. Bovendien kunt u Brand Portal implementeren dat niet alleen taken voor het genereren van vertoningen overneemt van de AEM-infrastructuur, maar ook de volledige publicatielaag.
 
 #### ImageMagick {#imagemagick}
 
