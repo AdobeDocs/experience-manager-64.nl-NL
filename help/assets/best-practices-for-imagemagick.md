@@ -2,10 +2,12 @@
 title: ImageMagick installeren en configureren om met AEM Assets te werken
 description: Leer over de software ImageMagick, hoe te om het te installeren, opstelling de het processtap van de bevellijn, en gebruik het om, duimnagels van beelden uit te geven samen te stellen en te produceren.
 contentOwner: AG
+feature: Uitvoeringen,Gereedschappen voor ontwikkelaars
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: af5f8a24db589ecdbe28d603ab9583f11d29212c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '741'
+source-wordcount: '745'
 ht-degree: 1%
 
 ---
@@ -15,7 +17,7 @@ ht-degree: 1%
 
 ImageMagick is een softwareplug-in voor het maken, bewerken, samenstellen of omzetten van bitmapafbeeldingen. Afbeeldingen kunnen in verschillende indelingen (meer dan 200) worden gelezen en geschreven, waaronder PNG, JPEG, JPEG-2000, GIF, TIFF, DPX, EXR, WebP, Postscript, PDF en SVG. Met ImageMagick kunt u afbeeldingen vergroten, verkleinen, spiegelen, roteren, vervormen, schuintrekken en transformeren. U kunt ook afbeeldingskleuren aanpassen, verschillende speciale effecten toepassen of tekst, lijnen, veelhoeken, ellipsen en curven tekenen met ImageMagick.
 
-Gebruik de Adobe Experience Manager (AEM) media-handler van de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Zie [Beste werkwijzen voor bestandsindelingen Middelen](assets-file-format-best-practices.md) voor informatie over het werken met verschillende bestandsindelingen met ImageMagick. Zie [Middelen ondersteunde indelingen](assets-formats.md) voor informatie over alle ondersteunde bestandsindelingen.
+Gebruik de Adobe Experience Manager (AEM) media-handler van de opdrachtregel om afbeeldingen te verwerken via ImageMagick. Zie [Beste werkwijzen voor bestandsindelingen Middelen](assets-file-format-best-practices.md) voor informatie over het werken met verschillende bestandsindelingen die ImageMagick gebruiken. Zie [Middelen ondersteunde indelingen](assets-formats.md) voor informatie over alle ondersteunde bestandsindelingen.
 
 Als u grote bestanden wilt verwerken met ImageMagick, moet u rekening houden met hogere geheugenvereisten dan gebruikelijk, mogelijke wijzigingen die vereist zijn voor IM-beleid en de algemene invloed op de prestaties. De geheugenvereisten zijn afhankelijk van verschillende factoren zoals resolutie, bitdiepte, kleurprofiel en bestandsindeling. Als u van plan bent om zeer grote dossiers te verwerken gebruikend ImageMagick, behoorlijk benchmark de AEM server. Aan het eind zijn er enkele nuttige bronnen beschikbaar.
 
