@@ -10,9 +10,9 @@ topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
 workflow-type: tm+mt
-source-wordcount: '1804'
+source-wordcount: '1769'
 ht-degree: 17%
 
 ---
@@ -65,7 +65,7 @@ Zodra een klant als IMS Organisatie bestaat en AMS met levering van de klant voo
 ![image2018-9-23_23-33-25](assets/image2018-9-23_23-33-25.png)
 
 1. De aangewezen Systeembeheerder ontvangt een uitnodiging om zich aan te melden bij de Admin Console
-1. System Admin eist Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
+1. System Admin beweert Domain om de eigendom van het domein te bevestigen (in dit voorbeeld acme.com)
 1. Systeembeheer stelt gebruikersmappen in
 1. Systeembeheerder configureert de Identiteitsprovider (IDP) in de Admin Console voor SSO-installatie.
 1. De AEM Admin beheert de lokale groepen, de toestemmingen en de voorrechten zoals gebruikelijk. Zie Synchronisatie van gebruikers en groepen
@@ -127,7 +127,7 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 >Raadpleeg de [documentatiepagina](https://adobe-apiplatform.github.io/user-sync.py/en/) voor meer informatie over het gereedschap Gebruikerssynchronisatie.
 >
 >
->Het hulpmiddel van de Synchronisatie van de Gebruiker moet als cliëntUMAPI van Adobe I/O registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
+>Het hulpmiddel van de Synchronisatie van de Gebruiker moet als Adobe I/O cliënt UMAPI registreren gebruikend de beschreven procedure [hier](https://adobe-apiplatform.github.io/umapi-documentation/en/UM_Authentication.html).
 >
 >De documentatie van de Adobe I/O-console vindt u [hier](https://www.adobe.io/apis/cloudplatform/console.html).
 >
@@ -136,7 +136,7 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 
 >[!NOTE]
 >
->De AEM IMS-configuratie wordt afgehandeld door het team van Adobe Managed Services. Nochtans, kan de klantenbeheerder het volgens hun vereisten wijzigen (bijvoorbeeld AutoLidmaatschap van de Groep of de Afbeelding van de Groep). De IMS-client wordt ook geregistreerd door uw Managed Services-team.
+>De AEM IMS-configuratie wordt afgehandeld door het Adobe Managed Services-team. De klantbeheerder kan het echter naar wens wijzigen (bijvoorbeeld Automatische groepslidmaatschap of Groepstoewijzing). De IMS-client wordt ook geregistreerd door uw Managed Services-team.
 
 ## Het gebruik {#how-to-use}
 
@@ -154,7 +154,7 @@ De instantiedetails kunnen worden gecontroleerd om de instantie te identificeren
 
 ![screen_shot_2018-09-17at105601pm](assets/screen_shot_2018-09-17at105601pm.png)
 
-Onder elke instantie van de Context van het Product, zal er een bijbehorend Profiel van het Product zijn. Dit productprofiel wordt gebruikt voor het toewijzen van toegang aan gebruikers en groepen.
+Onder elke instantie van de Context van het Product, zal er een bijbehorend Profiel van het Product zijn. Dit productprofiel wordt gebruikt om toegang toe te wijzen aan gebruikers en groepen.
 
 ![image2018-9-18_7-48-50](assets/image2018-9-18_7-48-50.png)
 
@@ -182,7 +182,7 @@ Vervolgens worden ze omgeleid naar het IMS-aanmeldingsscherm en voeren ze hun re
 
 Als een federatieve IDP tijdens de eerste installatie van de Admin Console wordt geconfigureerd, wordt de gebruiker omgeleid naar de klant-IDP voor SSO.
 
-IDP is Okta in het volgende voorbeeld:
+IDP is Okta in het onderstaande voorbeeld:
 
 ![screen_shot_2018-09-17at115734pm](assets/screen_shot_2018-09-17at115734pm.png)
 
@@ -190,23 +190,25 @@ Nadat de verificatie is voltooid, wordt de gebruiker teruggeleid naar AEM en aan
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
-### Bestaande gebruikers {#migrating-existing-users} migreren
+### Bestaande gebruikers migreren {#migrating-existing-users}
 
-Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en nu naar IMS worden gemigreerd, moet er een migratiestap zijn.
+Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en die nu naar IMS worden gemigreerd, moet er een migratiestap plaatsvinden.
 
-Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen worden gemigreerd om naar IMS te verwijzen als de IDP met behulp van het Hulpprogramma voor gebruikersmigratie.
+Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen worden gemigreerd naar IMS als IDP met behulp van het User Migration Utility.
 
-Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van IMS-provisioning.
+Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van de IMS-provisioning.
 
-### Bevoegdheden en ACL&#39;s beheren in AEM {#managing-permissions-and-acls-in-aem}
+### Beherend Toestemmingen en ACLs in AEM {#managing-permissions-and-acls-in-aem}
 
-Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt door scheiding van Gebruikersgroepen die afkomstig zijn van IMS (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waar de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
+Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt met scheiding van gebruikersgroepen die uit IMS komen (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waarin de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
 
 In het onderstaande voorbeeld voegen we gesynchroniseerde groepen toe aan de lokale *Dam_Users*-groep.
 
-Hier, is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie **Gebruikers aan boord nemen van de Admin Console** hierboven.)
+Hier is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Houd er rekening mee dat gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met behulp van het gebruikerssynchronisatiegereedschap of lokaal kunnen worden gemaakt. Zie het gedeelte **Onboardinggebruikers naar de Admin Console** hierboven).
 
-&amp;ast;Merk op dat gebruikersgroepen slechts gesynchroniseerd worden wanneer de gebruikers aan de instantie, voor klanten die een groot aantal gebruikers en groepen hebben, een nut van de Synchronisatie van de Groep kan door AMS worden in werking gesteld om groepen voor toegangsbeheer en toestemmingenbeheer vooraf te halen zoals hierboven beschreven.
+>[!NOTE]
+>
+>Gebruikersgroepen worden alleen gesynchroniseerd wanneer de gebruikers zich bij de instantie aanmelden.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
@@ -222,7 +224,7 @@ AEM kunnen de gebruikersgroepen die via IMS zijn gesynchroniseerd, als leden wor
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 
-Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren en wordt ook veel gebruikt in LDAP-gebaseerde verificatiemethoden.
+Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren. Deze wordt ook veel gebruikt in LDAP-verificatiemethoden.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)
 
