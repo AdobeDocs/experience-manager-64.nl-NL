@@ -2,10 +2,12 @@
 title: Asset Selector
 description: Leer hoe u met de kiezer voor middelen metagegevens voor elementen in Adobe Experience Manager-middelen (AEM) kunt zoeken, filteren, doorbladeren en ophalen. Leer ook hoe u de interface van de elementenkiezer kunt aanpassen.
 contentOwner: AG
+feature: Asset Management,metagegevens,zoeken
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 1de8efce9cd5cf47163cba8f0c962a9e2fc5116c
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '490'
+source-wordcount: '496'
 ht-degree: 0%
 
 ---
