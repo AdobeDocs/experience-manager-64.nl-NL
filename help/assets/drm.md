@@ -1,11 +1,13 @@
 ---
 title: Digital Rights Management in [!DNL Adobe Experience Manager Assets].
-description: Leer hoe u de verloopstatussen van elementen en informatie voor gelicentieerde middelen beheert in [!DNL Experience Manager].
+description: Leer hoe u de verloopstatus van elementen en informatie over gelicentieerde middelen beheert in [!DNL Experience Manager].
 contentOwner: AG
+feature: DRM,beheer van bedrijfsmiddelen
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: fe99869df5616f8f483ab8a9517e850e45c7a117
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1355'
+source-wordcount: '1361'
 ht-degree: 6%
 
 ---
