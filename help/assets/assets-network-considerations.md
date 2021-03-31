@@ -2,10 +2,12 @@
 title: Overwegingen voor middelennetwerken
 description: Bespreekt netwerkoverwegingen wanneer het ontwerpen van een plaatsing van AEM Assets.
 contentOwner: AG
+feature: Gereedschappen voor ontwikkelaars
+role: Architect,beheerder
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1019'
 ht-degree: 0%
 
 ---
