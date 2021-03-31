@@ -3,9 +3,9 @@ title: Samengestelde elementen beheren en subelementen genereren.
 description: Leer hoe u verwijzingen naar AEM middelen maakt vanuit InDesign-, Adobe Illustrator- en Photoshop-bestanden. Leer ook hoe u de functie Paginaviewer gebruikt om afzonderlijke pagina's van bestanden met meerdere pagina's weer te geven, zoals PDF-, INDD-, PPT-, PPTX- en AI-bestanden.
 contentOwner: AG
 translation-type: tm+mt
-source-git-commit: ddfcb74451f41cea911700a64abceaaf47e7af49
+source-git-commit: dc9ba70161f81578899416064bd03fdabe0bed5a
 workflow-type: tm+mt
-source-wordcount: '1327'
+source-wordcount: '1351'
 ht-degree: 0%
 
 ---
@@ -21,14 +21,14 @@ AEM Assets ondersteunt het **bidirectioneel verwijzen**. U vindt de middelen waa
 
 Verwijzingen worden opgelost op basis van pad, document-id en instantie-id van de middelen waarnaar wordt verwezen.
 
-## AEM Assets toevoegen als verwijzingen in Adobe Illustrator {#refai}
+## Adobe Illustrator: Elementen toevoegen als verwijzingen {#refai}
 
 U kunt verwijzen naar bestaande AEM elementen vanuit een Adobe Illustrator-bestand.
 
 1. Plaats met [AEM desktop app](https://helpx.adobe.com/experience-manager/desktop-app/aem-desktop-app.html) de AEM Assets-opslagplaats als een station op uw lokale computer. Navigeer in het gekoppelde station naar de locatie van het element waarnaar u wilt verwijzen.
 1. Sleep het element van het gekoppelde station naar het Illustrator-bestand.
 1. Sla het Illustrator-bestand op het gekoppelde station op of [upload](managing-assets-touch-ui.md#uploading-assets) naar de AEM opslagplaats.
-1. Nadat de werkstroom is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande AEM zijn vermeld onder **[!UICONTROL Dependencies]** in **[!UICONTROL References]** kolom.
+1. Nadat de workflow is voltooid, gaat u naar de pagina met elementdetails voor het element. De verwijzingen naar bestaande AEM zijn vermeld onder **[!UICONTROL Dependencies]** in **[!UICONTROL References]** kolom.
 
    ![chlimage_1-258](assets/chlimage_1-258.png)
 
@@ -40,7 +40,7 @@ U kunt verwijzen naar bestaande AEM elementen vanuit een Adobe Illustrator-besta
 
    ![chlimage_1-260](assets/chlimage_1-260.png)
 
-## AEM elementen toevoegen als verwijzingen in Adobe InDesign {#add-aem-assets-as-references-in-adobe-indesign}
+## Adobe InDesign: Elementen toevoegen als verwijzingen {#add-aem-assets-as-references-in-adobe-indesign}
 
 Als u vanuit een InDesign-bestand wilt verwijzen naar AEM elementen, sleept u AEM elementen naar het InDesign-bestand of exporteert u het InDesign-bestand als een ZIP-bestand.
 
@@ -50,27 +50,28 @@ De activa waarnaar wordt verwezen bestaan reeds in AEM Assets. U kunt subassets 
 >
 >Als de InDesign-server proxy is, is de voorvertoning van InDesign-bestanden ingesloten in de XMP metagegevens. In dit geval is het niet expliciet vereist miniatuurextractie uit te voeren. Als de InDesign-server echter geen proxy is, moeten miniaturen expliciet worden uitgepakt voor InDesign-bestanden.
 
-### Verwijzingen maken door AEM elementen {#create-references-by-dragging-aem-assets} te slepen
+Wanneer een INDD-bestand wordt geüpload, worden de verwijzingen opgehaald door te zoeken naar elementen met de eigenschappen `xmpMM:InstanceID` en `xmpMM:DocumentID` in de opslagplaats.
 
-Deze procedure is vergelijkbaar met [AEM elementen toevoegen als verwijzingen in Adobe Illustrator](#refai).
+### Verwijzingen maken door elementen {#create-references-by-dragging-aem-assets} te slepen
 
-### Verwijzingen naar AEM elementen maken door een ZIP-bestand {#create-references-to-aem-assets-by-exporting-a-zip-file} te exporteren
+Deze procedure is vergelijkbaar met [Elementen toevoegen als verwijzingen in Adobe Illustrator](#refai).
+
+### Verwijzingen naar elementen maken door een ZIP-bestand {#create-references-to-aem-assets-by-exporting-a-zip-file} te exporteren
 
 1. Voer de stappen in [Creating Workflow Models](/help/sites-developing/workflows-models.md) uit om een nieuwe werkstroom tot stand te brengen.
-1. Gebruik de functie Pakket van Adobe InDesign om het document te exporteren.
-Adobe InDesign kan een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een map Koppelingen met subelementen in het InDesign-bestand.
+1. Met de functie [Pakket maken van Adobe InDesign](https://helpx.adobe.com/indesign/how-to/indesign-package-files-for-handoff.html) kunt u het document exporteren. Adobe InDesign kan een document en de gekoppelde elementen als een pakket exporteren. In dit geval bevat de geëxporteerde map een map `Links` met subelementen in het InDesign-bestand. De map `Links` bevindt zich in dezelfde map als het INDD-bestand.
 1. Maak een ZIP-bestand en upload het naar de AEM-opslagplaats.
 1. Start de Unarchiver-workflow.
 1. Wanneer de werkstroom is voltooid, wordt er automatisch naar de verwijzingen in de map Koppelingen verwezen als subelementen. Als u een lijst met de desbetreffende elementen wilt weergeven, navigeert u naar de pagina met elementdetails van het InDesign-element en sluit u [Rail](/help/sites-authoring/basic-handling.md#rail-selector).
 
-## AEM elementen toevoegen als verwijzingen in Adobe Photoshop {#refps}
+## Adobe Photoshop: Elementen toevoegen als verwijzingen {#refps}
 
 1. Gebruik een WebDav-client om AEM Assets op te zetten als een station.
 1. Als u verwijzingen naar AEM elementen in een Photoshop-bestand wilt maken, navigeert u naar de corresponderende elementen in het gekoppelde station met de functie Gekoppelde plaatsen in Photoshop.
 
    ![chlimage_1-261](assets/chlimage_1-261.png)
 
-1. Opslaan in Photoshop-bestand op het gemonteerde station of [upload](managing-assets-touch-ui.md#uploading-assets) naar de AEM opslagplaats.
+1. Opslaan in Photoshop-bestand op het gemonteerde station of [uploaden](managing-assets-touch-ui.md#uploading-assets) naar de AEM opslagplaats.
 1. Nadat de workflow is voltooid, worden de verwijzingen naar bestaande AEM weergegeven op de pagina met elementdetails.
 
    Sluit [Rail](/help/sites-authoring/basic-handling.md#rail-selector) op de pagina met elementdetails om de betreffende elementen weer te geven.
