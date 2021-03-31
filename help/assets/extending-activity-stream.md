@@ -2,10 +2,12 @@
 title: Elementen integreren met activiteitsstroom
 description: Beschrijft de opnamemogelijkheden van AEM en hoe te om AEM te vormen om specifieke gebeurtenissen te registreren.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Developer
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '270'
+source-wordcount: '273'
 ht-degree: 1%
 
 ---
