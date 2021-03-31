@@ -2,10 +2,12 @@
 title: Aanbevolen werkwijzen voor bestandsindelingen voor elementen
 description: Aanbevolen procedures voor bestandsondersteuning in AEM Assets.
 contentOwner: AG
+feature: Asset Management, ontwikkelprogramma's
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: a892ef7ab018aca715693125808d7ade540c8242
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '433'
+source-wordcount: '438'
 ht-degree: 0%
 
 ---
