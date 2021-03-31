@@ -2,10 +2,12 @@
 title: Camera Raw ondersteuning
 description: Leer hoe u Camera Raw ondersteuning inschakelt in Adobe Experience Manager Assets.
 contentOwner: AG
+feature: Gereedschappen voor ontwikkelaars
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: dea673f8999656a5c5364f74f45eba41dd17b947
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '361'
+source-wordcount: '364'
 ht-degree: 0%
 
 ---
