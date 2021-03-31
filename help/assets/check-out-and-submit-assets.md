@@ -2,10 +2,12 @@
 title: Uw digitale middelen inchecken en uitchecken voor bewerking
 description: Leer hoe u middelen kunt uitchecken om deze te bewerken en weer in te checken nadat de wijzigingen zijn voltooid.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '391'
+source-wordcount: '395'
 ht-degree: 4%
 
 ---
