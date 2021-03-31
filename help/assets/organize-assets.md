@@ -1,11 +1,13 @@
 ---
 title: Uw digitale middelen organiseren
-description: Organiseer uw digitale elementen, afbeeldingen, bestanden, mappen enzovoort met behulp van Experience Manager.
+description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend Experience Manager.
 contentOwner: AG
+feature: Middelenbeheer, zoeken
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '806'
+source-wordcount: '811'
 ht-degree: 0%
 
 ---
