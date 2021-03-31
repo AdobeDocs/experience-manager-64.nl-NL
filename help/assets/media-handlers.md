@@ -2,10 +2,12 @@
 title: Middelen verwerken met behulp van media-handlers en workflows
 description: Meer informatie over verschillende mediafuncties en hoe u deze kunt gebruiken in workflows om taken uit te voeren op elementen.
 contentOwner: AG
+feature: Workflow,uitvoeringen
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: b6342b79e964daf1a05bb9ccfad06d8edaca4312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2169'
+source-wordcount: '2173'
 ht-degree: 2%
 
 ---
