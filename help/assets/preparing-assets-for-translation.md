@@ -2,10 +2,12 @@
 title: Middelen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om het vertalen van meertalige middelen voor te bereiden.
 contentOwner: AG
+feature: Projecten,vertalen
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: 77c62a8f2ca50f8aaff556a6848fabaee71017ce
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '444'
+source-wordcount: '449'
 ht-degree: 2%
 
 ---
