@@ -2,10 +2,12 @@
 title: Elementen delen via een koppeling
 description: Elementen, mappen en verzamelingen delen als een URL.
 contentOwner: AG
+feature: Delen van koppelingen, beheer van bedrijfsmiddelen
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: f17d54315516fcf9d24c720f097db9de73517f21
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '964'
+source-wordcount: '970'
 ht-degree: 3%
 
 ---
