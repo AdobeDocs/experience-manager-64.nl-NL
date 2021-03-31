@@ -3,10 +3,12 @@ title: Elementverzamelingen beheren
 description: Leer taken om verzamelingen met middelen te beheren, zoals verzamelingen maken, weergeven, verwijderen, bewerken en downloaden.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Verzamelingen
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: dfe5d976da937162e902ba8afac862f290702f5b
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '2177'
+source-wordcount: '2180'
 ht-degree: 13%
 
 ---
@@ -70,7 +72,7 @@ U kunt elementen van de interface Elementen naar een verzameling slepen. U kunt 
 
    U kunt ook op het pictogram **[!UICONTROL To Collection]** op de werkbalk tikken of erop klikken.
 
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. Tik of klik op de pagina **[!UICONTROL Add To Collection]** op het pictogram **[!UICONTROL Create Collection]** op de werkbalk.
 
@@ -110,7 +112,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
    Het label van de knop **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Tik of klik vervolgens op de knop **[!UICONTROL Edit Smart Selection]**.
 
-   ![chlimage_1-112](assets/chlimage_1-112.png)
+   ![chlimage_1-192](assets/chlimage_1-112.png)
 
 ## Elementen toevoegen aan een verzameling {#adding-assets-to-a-collection}
 
@@ -132,7 +134,7 @@ Slimme verzamelingen worden gemaakt door een zoekopdracht op te slaan, zodat u d
 
 1. Tik in de gebruikersinterface Middelen op het zoekpictogram op de werkbalk of klik erop.
 
-   ![chlimage_1-115](assets/chlimage_1-114.png)
+   ![chlimage_1-114](assets/chlimage_1-114.png)
 
 1. Met de curseur in het vakje van het Onderzoek, duw op de sleutel van de Terugkeer.
 
