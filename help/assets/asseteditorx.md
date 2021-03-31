@@ -2,10 +2,12 @@
 title: Editor van element uitbreiden
 description: Leer hoe u de mogelijkheden van de Asset Editor uitbreidt met behulp van aangepaste componenten.
 contentOwner: AG
+feature: Gereedschappen voor ontwikkelaars
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: 5964edfadf597652f754ca3c64343b0b90e40796
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '701'
+source-wordcount: '706'
 ht-degree: 13%
 
 ---
