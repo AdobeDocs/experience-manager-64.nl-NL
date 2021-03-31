@@ -5,10 +5,12 @@ uuid: 7ba87c1d-70cd-4b89-86f3-971b93885f1e
 contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 340b62f7-2405-4d2d-846d-2c444d6cc77b
+feature: Asset Management, ontwikkelprogramma's
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: b6f0dc15244f71ecdb8d937810d3c5d393a7712f
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1571'
+source-wordcount: '1577'
 ht-degree: 0%
 
 ---
@@ -73,7 +75,7 @@ Overweeg een scenario waarin u digitaal afdrukbaar materiaal wilt maken, zoals b
 
 1. Klik op **[!UICONTROL Create]**. Een dialoogvenster bevestigt dat er een nieuwe brochure wordt gemaakt. Klik/tik **[!UICONTROL Open]** om de brochure in Edit wijze te openen.
 
-   ![chlimage_1-311](assets/chlimage_1-311.png)
+   ![chlimage_1-310](assets/chlimage_1-311.png)
 
    U kunt ook het dialoogvenster sluiten en naar de map op de pagina Sjablonen gaan waarmee u bent begonnen om de brochure weer te geven die u hebt gemaakt. Het type van het onderpand verschijnt op zijn duimnagel in kaartmening. In dit geval wordt de brochure bijvoorbeeld weergegeven op de miniatuur.
 
