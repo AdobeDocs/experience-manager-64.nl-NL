@@ -2,10 +2,12 @@
 title: AEM Assets integreren met Adobe InDesign Server
 description: Leer hoe u AEM Assets kunt integreren met InDesign Server.
 contentOwner: AG
+feature: Publiceren
+role: Beheerder
 translation-type: tm+mt
-source-git-commit: 13d33d0474d2a29226747aa77bf0bc0a51142209
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '1674'
+source-wordcount: '1676'
 ht-degree: 1%
 
 ---
@@ -47,7 +49,7 @@ De InDesign Server kan met AEM Assets worden geïntegreerd zodat bestanden die m
 >In eerdere versies van AEM konden XMP en de miniatuur worden opgehaald. Alle media kunnen nu worden uitgepakt.
 
 1. Upload uw `.indd`-bestand naar AEM Assets.
-1. Een framework verzendt opdrachtscript(s) naar de InDesign Server via SOAP (Simple Object Access Protocol).
+1. Een framework verzendt opdrachtscripts naar de InDesign Server via SOAP (Simple Object Access Protocol).
 
    Dit opdrachtscript:
 
@@ -226,13 +228,13 @@ Om het aantal parallelle banen te vormen IDS:
 
    >[!NOTE]
    >
-   >Wanneer u werkt met een groep workers, kunt u de lijst van afgewezen personen van IDS-workers inschakelen.
+   >Wanneer u werkt met een groep workers, kunt u de lijst van gewezen personen van IDS-workers inschakelen.
    >
    >Om dit te doen, laat checkbox &quot;enable.retry.name&quot;, onder de `com.day.cq.dam.ids.impl.IDSJobProcessor.name` configuratie toe, die IDS baanterugwinning toelaat.
    >
    >Ook, onder de `com.day.cq.dam.ids.impl.IDSPoolImpl.name` configuratie, plaats een positieve waarde voor `max.errors.to.blacklist` parameter die aantal baanterugwinnen alvorens IDS van de lijst van baanmanagers bepaalt
    >
-   >Door gebrek, na configureerbare (`retry.interval.to.whitelist.name`) tijd in notulen wordt de IDS worker opnieuw bevestigd. Als de worker online wordt gevonden, wordt deze uit de lijst van afgewezen personen verwijderd.
+   >Door gebrek, na configureerbare (`retry.interval.to.whitelist.name`) tijd in notulen wordt de IDS worker opnieuw bevestigd. Als de worker online wordt gevonden, wordt deze uit de lijst van gewezen personen verwijderd.
 
 <!-- TBD: Make updates to configurations for allow and block list after product updates are done. See CQ-4298427.
 -->
