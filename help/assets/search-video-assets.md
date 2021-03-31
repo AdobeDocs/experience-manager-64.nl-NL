@@ -2,10 +2,12 @@
 title: Video-elementen zoeken
 description: Gebruik trefwoorden, bestandseigenschappen, zoals een MIME-type, grootte of onlangs gewijzigde tijdstempel om het bestand snel in AEM Assets te vinden.
 contentOwner: AG
+feature: Video,zoeken
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '558'
+source-wordcount: '562'
 ht-degree: 0%
 
 ---
