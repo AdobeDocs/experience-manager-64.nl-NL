@@ -2,10 +2,12 @@
 title: Vorm asynchrone verrichtingen in [!DNL Adobe Experience Manager].
 description: Asynchroon sommige resource-intensieve taken voltooien om prestaties in  [!DNL Experience Manager Assets] te optimaliseren.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: f6aa1ab2c7a0ddeda1504e95ce4bd57fe74a65fd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '559'
+source-wordcount: '563'
 ht-degree: 22%
 
 ---
