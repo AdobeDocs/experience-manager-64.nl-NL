@@ -3,10 +3,12 @@ title: Uw digitale middelen beheren met AEM Assets
 description: Meer informatie over de verschillende functies voor middelenbeheer en -bewerking die u kunt uitvoeren met de geoptimaliseerde interface van AEM Assets
 contentOwner: AG
 mini-toc-levels: 1
+feature: Middelenbeheer, Zoeken, Uitvoeringen, Samenwerking
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: 59fed31d276510c3346a46ac38f2a79c6f91d848
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '9721'
+source-wordcount: '9728'
 ht-degree: 1%
 
 ---
@@ -108,7 +110,7 @@ Voordat u een element uploadt, moet u ervoor zorgen dat het een [ondersteunde in
 
    Tik **[!UICONTROL Keep]** om het gedupliceerde element in AEM Assets te behouden. Tik **[!UICONTROL Delete]** om het geüploade dubbele element te verwijderen.
 
-   AEM Assets voorkomt dat u elementen uploadt met verboden tekens in de bestandsnaam. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, geeft AEM Assets een waarschuwingsbericht weer over de aanwezigheid van verboden tekens in de bestandsnaam en stopt de upload totdat u deze tekens verwijdert of uploadt met een toegestane naam.
+   AEM Assets voorkomt dat u elementen uploadt met verboden tekens in de bestandsnaam. Als u een element probeert te uploaden dat de niet-toegestane tekens bevat, geeft AEM Assets een waarschuwingsbericht weer over de aanwezigheid van verboden tekens in de bestandsnaam en wordt het uploaden gestopt totdat u deze tekens verwijdert of uploadt met een toegestane naam.
 
    Als u specifieke conventies voor het benoemen van bestanden voor uw organisatie wilt gebruiken, kunt u in het dialoogvenster **[!UICONTROL Upload Assets]** lange namen opgeven voor de bestanden die u uploadt.
 
@@ -813,7 +815,7 @@ U kunt ook annotaties toevoegen aan een verzameling. Als een verzameling onderli
 
 ### Annotaties {#printing-annotations} afdrukken
 
-Als een element annotaties heeft of een revisiewerkstroom heeft ondergaan, kunt u het element samen met annotaties en de revisiestatus als PDF-bestand afdrukken voor offline revisie.
+Als een element annotaties heeft of aan een revisiewerkstroom is onderworpen, kunt u het element samen met annotaties en revisiestatus als PDF-bestand afdrukken voor offline revisie.
 
 U kunt ook alleen de annotaties of de revisiestatus afdrukken.
 
