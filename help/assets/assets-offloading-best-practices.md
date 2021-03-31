@@ -2,10 +2,12 @@
 title: Aanbevolen werkwijzen voor het verschuiven van elementen
 description: Aanbevolen gebruiksgevallen en aanbevolen procedures voor het offloaden van workflows voor het opnemen en repliceren van bedrijfsmiddelen in AEM Assets.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: 31d652ee04fe75e96f96c9ddc5a6f2c3c64bd630
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1818'
+source-wordcount: '1823'
 ht-degree: 0%
 
 ---
@@ -80,7 +82,7 @@ Het ontladen van activa brengt ook algemene kosten met zich mee voor het systeem
 * Tijdelijke workflows gebruiken
 * Het aantal cores beperken dat wordt gebruikt voor workflows
 
-Als u tot de conclusie komt dat Offloading van activa een aangewezen benadering voor u is, verstrekt Adobe de volgende begeleiding:
+Als u tot de conclusie komt dat het offloaden van middelen een geschikte aanpak voor u is, biedt Adobe de volgende richtlijnen:
 
 * Een op TarMK gebaseerde implementatie wordt aanbevolen
 * Op TarMK gebaseerde elementen offloading is niet ontworpen voor uitgebreide horizontale schaling
