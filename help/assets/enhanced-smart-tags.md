@@ -6,11 +6,13 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 discoiquuid: c1b52aac-1eaf-4cfa-801f-77aeca0d90ea
+feature: Slimme tags,zoeken
+role: Zakelijke praktiserer
 translation-type: tm+mt
-source-git-commit: b9dffdda37992f3a9f34953b8dd391d6f6361ceb
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1504'
-ht-degree: 15%
+source-wordcount: '1509'
+ht-degree: 14%
 
 ---
 
@@ -19,7 +21,7 @@ ht-degree: 15%
 
 ## Overzicht van verbeterde slimme tags {#overview-of-enhanced-smart-tags}
 
-Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van een door taxonomie gecontroleerde woordenlijst in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
+Organisaties die met digitale middelen te maken hebben, maken steeds vaker gebruik van door taxonomie gecontroleerde woordenschat in metagegevens van bedrijfsmiddelen. In wezen, omvat het een lijst van sleutelwoorden die de werknemers, de partners, en de klanten algemeen gebruiken om naar digitale activa van een bepaalde klasse te verwijzen en te zoeken. Door elementen te labelen met een woordenschat die door de taxonomie wordt bepaald, kunt u ze gemakkelijk herkennen en ophalen door zoekopdrachten op basis van tags.
 
 Vergeleken met natuurlijke taalwoordenboeken, helpt het etiketteren van digitale activa die op bedrijfstaxonomie worden gebaseerd hen op de zaken van een bedrijf te richten en zorgt ervoor dat de meest relevante activa in onderzoeken verschijnen.
 
