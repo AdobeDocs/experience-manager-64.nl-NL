@@ -2,10 +2,12 @@
 title: Gebruik metagegevensprofielen om standaardmetagegevens toe te passen op alle elementen in een map
 description: Informatie over metagegevensprofielen voor elementen. Leer hoe u een metagegevensprofiel maakt en toepast op mapelementen.
 contentOwner: AG
+feature: Metagegevens
+role: Business Practice,Administrator
 translation-type: tm+mt
-source-git-commit: af1955ab1fdcf16dd9a9d3ad36336e6c1aac9312
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1129'
+source-wordcount: '1133'
 ht-degree: 18%
 
 ---
@@ -13,7 +15,7 @@ ht-degree: 18%
 
 # Metadataprofielen {#metadata-profiles}
 
-Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u vervolgens naar de map uploadt, neemt de standaardmetagegevens over die u in het metagegevensprofiel hebt geconfigureerd.
+Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen in een map. Maak een metagegevensprofiel en pas dit toe op een map. Elk element dat u vervolgens uploadt naar de map, neemt de standaardmetagegevens over die u hebt geconfigureerd in het metagegevensprofiel.
 
 ## Een metagegevensprofiel {#adding-a-metadata-profile} toevoegen
 
@@ -24,7 +26,7 @@ Met een metagegevensprofiel kunt u standaardmetagegevens toepassen op elementen 
 
 1. Klik op een component en configureer de eigenschappen ervan op het tabblad **[!UICONTROL Settings]**. Klik bijvoorbeeld op de component **[!UICONTROL Description]** en bewerk de eigenschappen ervan.
 
-   ![chlimage_1-401](assets/chlimage_1-481.png)
+   ![chlimage_1-481](assets/chlimage_1-481.png)
 
    Bewerk de volgende eigenschappen voor de component **[!UICONTROL Description]**:
 
@@ -135,7 +137,7 @@ Naast het toepassen van een profiel op een map, kunt u er ook een globaal toepas
 
 ## Een metagegevensprofiel verwijderen uit mappen {#removing-a-metadata-profile-from-folders}
 
-Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Alle verwerking van bestanden die in de mappen zijn opgetreden, blijft echter intact.
+Wanneer u een metagegevensprofiel uit een map verwijdert, nemen eventuele submappen automatisch de verwijdering van het profiel uit de bovenliggende map over. Elke verwerking van bestanden die in de mappen is opgetreden, blijft echter intact.
 
 U kunt een metagegevensprofiel uit een map verwijderen vanuit het menu **[!UICONTROL Tools]** of **[!UICONTROL Properties]** als u in de map bent. In deze sectie wordt beschreven hoe u metadataprofielen op beide manieren uit mappen kunt verwijderen.
 
