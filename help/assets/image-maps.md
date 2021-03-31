@@ -2,10 +2,12 @@
 title: Afbeeldingen met hyperlinks toevoegen
 description: Leer hoe u hypergekoppelde afbeeldingen met hyperlinks toevoegt aan afbeeldingselementen.
 contentOwner: AG
+feature: Beheer van bedrijfsmiddelen
+role: Bedrijfs Praktijk, Beheerder
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '268'
+source-wordcount: '273'
 ht-degree: 0%
 
 ---
