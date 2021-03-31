@@ -2,10 +2,12 @@
 title: Facetten doorzoeken
 description: In dit artikel wordt beschreven hoe u zoekfacetten in AEM kunt maken, wijzigen en gebruiken.
 contentOwner: AG
+feature: Zoeken
+role: Beheerder,Ontwikkelaar
 translation-type: tm+mt
-source-git-commit: adf44677a0ac833a131aad8187529b094aaca9ef
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '2398'
+source-wordcount: '2401'
 ht-degree: 18%
 
 ---
