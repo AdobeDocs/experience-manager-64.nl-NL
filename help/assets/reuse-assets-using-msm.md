@@ -3,10 +3,12 @@ title: Elementen hergebruiken met MSM
 description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van en gekoppeld aan bovenliggende elementen. De elementen blijven gesynchroniseerd met een primaire kopie en ontvangen met een paar klikken de updates van de bovenliggende elementen.
 contentOwner: AG
 mini-toc-levels: 1
+feature: Beheer van bedrijfsmiddelen, beheer van meerdere sites
+role: Business Practitioner,beheerder,architect
 translation-type: tm+mt
-source-git-commit: d2372ebabf92fd83cff31d4f0b37c020756f03c1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '3069'
+source-wordcount: '3078'
 ht-degree: 9%
 
 ---
