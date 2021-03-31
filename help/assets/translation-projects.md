@@ -2,10 +2,12 @@
 title: Vertaalprojecten maken
 description: Leer hoe u vertaalprojecten kunt maken in AEM.
 contentOwner: AG
+feature: Vertaling
+role: Architect,beheerder
 translation-type: tm+mt
-source-git-commit: 0d70a672a2944e2c03b54beb3b5f734136792ab1
+source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
 workflow-type: tm+mt
-source-wordcount: '1802'
+source-wordcount: '1805'
 ht-degree: 17%
 
 ---
@@ -306,7 +308,7 @@ Wanneer u een vertaalworkflow uitvoert om een taalkopie bij te werken met bewerk
    >
    >Accepteer zowel het element als de metagegevens om de vertaalworkflow in staat te stellen het doelmiddel bij te werken.
 
-   Klik op **[!UICONTROL Reject Translation]** of tik op  om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
+   Klik/tik **[!UICONTROL Reject Translation]** om de oorspronkelijk vertaalde versie van het element in de hoofdmap van de doellandinstelling te behouden en de bewerkte versie af te wijzen.
 
    ![chlimage_1-103](assets/chlimage_1-103.png)
 
