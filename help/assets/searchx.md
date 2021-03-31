@@ -2,10 +2,12 @@
 title: Zoeken naar elementen uitbreiden
 description: Breid de zoekmogelijkheden van AEM Assets verder uit dan zoeken naar elementen op tekenreeksen.
 contentOwner: AG
+feature: Zoeken
+role: Developer
 translation-type: tm+mt
-source-git-commit: 0560d47dcffbf9b74a36ea00e118f8a176adafcd
+source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
 workflow-type: tm+mt
-source-wordcount: '830'
+source-wordcount: '832'
 ht-degree: 11%
 
 ---
@@ -143,7 +145,7 @@ Een voorspelling van eigenschappen maken:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt `cq:editConfig` van het primaire type `cq:EditConfig` toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van **DELETE** toe te voegen.
-1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
+1. Navigeer naar uw browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
 
 1. In de modus **Bewerken** is de nieuwe component nu beschikbaar in de hulpwerkschijf (in de groep **Zoeken**). Plaats de component in de kolom **Predicates** en typ een zoekwoord, bijvoorbeeld **Diamond**, en klik op het vergrootglas om de zoekopdracht te starten.
 
@@ -250,7 +252,7 @@ Om een groep te bouwen predikaat:
    ```
 
 1. Als u de component beschikbaar wilt maken, moet u deze kunnen bewerken. Als u een component bewerkbaar wilt maken in CRXDE, voegt u een knooppunt `cq:editConfig` van het primaire type `cq:EditConfig` toe. U kunt alinea&#39;s verwijderen door een eigenschap met meerdere waarden `cq:actions` met één waarde van `DELETE` toe te voegen.
-1. Navigeer naar de browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
+1. Navigeer naar uw browser en schakel op de voorbeeldpagina (bijvoorbeeld `press.html`) naar de ontwerpmodus en schakel de nieuwe component in voor het predikaat-alineasysteem (bijvoorbeeld **left**).
 1. In de modus **Bewerken** is de nieuwe component nu beschikbaar in de hulpwerkschijf (in de groep **Zoeken**). Plaats de component in de kolom **Predicates**.
 
 ### Vooraf geïnstalleerde widgets {#installed-predicate-widgets}
