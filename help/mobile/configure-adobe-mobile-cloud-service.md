@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 962e9e98-a303-435b-a938-31319282e022
 legacypath: /content/docs/en/aem/6-1/develop/mobile-apps/apps/managing-aem-mobile-apps/configure-your-adobe-phonegap-build-cloud-service1
+exl-id: 360c0ba9-ea49-495c-86d0-6d1db3f806a5
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '468'
 ht-degree: 0%
 
 ---
-
 
 # Uw Adobe Mobile Services-Cloud Service {#configure-your-adobe-mobile-services-cloud-service} configureren
 
@@ -79,4 +79,3 @@ Als u gebruik wilt maken van Adobe Mobile Services Analytics, moet u de AEM Mobi
    >Nadat u de cloudconfiguratie hebt ingesteld, kunt u de **Metriek analyseren** Naast elkaar weergeven in het dashboard van de app.
 
    ![chlimage_1-28](assets/chlimage_1-28.png)
-
