@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-type: reference
 topic-tags: Configuration
 discoiquuid: 71412f5d-ff34-415f-baf8-d300756b93a9
-role: Beheerder
+role: Administrator
+exl-id: a79e863e-c316-422e-a565-b0ffdeffcc00
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '273'
+source-wordcount: '272'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms inzake OSGi-groepen en -voorrechten {#aem-forms-on-osgi-groups-and-privileges}
 
@@ -114,4 +114,3 @@ Nadat u [AEM Forms-add-on-pakket](/help/forms/using/installing-configuring-aem-f
 
 1. De gebruiker met de rechten van een gebruikersgroep voor formulieren kan geen scripts schrijven voor adaptieve formulieren.
 1. De gebruiker met de groepsrechten voor sjabloonauteurs kan geen scripts voor sjablonen schrijven.
-
