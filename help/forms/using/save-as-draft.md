@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9950288c-b5a2-4945-afad-be9ce2abc8e9
+exl-id: c21cddb3-d12d-4e1b-bd62-cf75946569be
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '517'
 ht-degree: 0%
 
 ---
-
 
 # Een taak of formulier opslaan als concept {#saving-a-task-or-form-as-a-draft}
 
@@ -46,4 +46,3 @@ Voer de volgende stappen uit om een concept te verwijderen:
 1. Selecteer **Concepten** in de vervolgkeuzelijst naast Zoeken.
 1. Een formulier met het bewerkingspictogram ![edit-concept-app](assets/edit-draft-app.png) geeft een concept aan. Tik op de horizontale ellips naast het concept.
 1. Tik op **Concept** verwijderen in de opties die worden weergegeven wanneer u op de horizontale ellips tikt.
-
