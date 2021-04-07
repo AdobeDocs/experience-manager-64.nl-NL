@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: ddfacc63-1840-407e-8802-3730009c84f0
 feature: Configureren
+exl-id: 81dddbab-1a9e-49ee-b2a5-a8e4de3630d1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '540'
 ht-degree: 0%
 
 ---
-
 
 # Brontoewijzing{#resource-mapping}
 
@@ -142,4 +142,3 @@ is aangevraagd.
 >[!NOTE]
 >
 >U kunt `/etc/map.publish` gebruiken om de configuraties voor het publicatiemilieu te houden. Deze moeten vervolgens worden gerepliceerd en de nieuwe locatie ( `/etc/map.publish`) moet worden geconfigureerd voor de **Mapping Location** van de [Apache Sling Resource Resolver](/help/sites-deploying/osgi-configuration-settings.md#apacheslingresourceresolver) van de publicatieomgeving.
-
