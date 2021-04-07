@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 277d7e67-5778-48cb-89bb-29bcc734a485
+exl-id: 69a1e149-8706-42a5-ab84-2ffcfd1ec3cc
 translation-type: tm+mt
-source-git-commit: 263a1e514fa48f7aa7b696c801718ceff1e43ed7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1184'
 ht-degree: 0%
 
 ---
-
 
 # Search&amp;Promote toevoegen aan uw pagina {#adding-search-promote-features-to-your-page}
 
@@ -150,4 +150,3 @@ De **[!UICONTROL Banners]** component verstrekt één configureerbare bezit geno
 Dit diagram toont de componenten die aan een pagina worden toegevoegd om tot de volledig-functionele hieronder Search&amp;Promote resultatenpagina te leiden.
 
 ![1328213789109](assets/1328213789109.png) ![sandbox-voorbeeld](assets/sandppageexample.png)
-
