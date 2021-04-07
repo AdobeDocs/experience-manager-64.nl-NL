@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 07b38da6-2efa-4a43-9afa-7151a241a5ad
+exl-id: 21e89233-2282-4859-b3c8-5d880d70d6be
 translation-type: tm+mt
-source-git-commit: 64090e3c7cf722f44968467c51291a11aeeec237
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '394'
 ht-degree: 0%
 
 ---
-
 
 # App-metagegevens bewerken{#editing-app-metadata}
 
@@ -32,7 +32,7 @@ De metagegevens van de app bewerken:
 
 1. Navigeer naar de dashboardpagina voor de app.
 
-   ![chlimage_1-21](assets/chlimage_1-29.png)
+   ![chlimage_1-29](assets/chlimage_1-29.png)
 
 1. Als u details wilt weergeven of bewerken door op de knop &#39;..&#39; te klikken. in de rechterbenedenhoek van de **App**-tegel beheren.
 
