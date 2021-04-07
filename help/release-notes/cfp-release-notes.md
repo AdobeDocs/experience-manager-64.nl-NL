@@ -3,14 +3,14 @@ title: AEM 6.4 Opmerkingen bij de release Cumulative Fix Pack
 description: Opmerkingen bij de release die specifiek zijn voor Adobe Experience Manager 6.4 Cumulative Fix Packs.
 contentOwner: AK
 mini-toc-levels: 1
+exl-id: a63e77a3-da48-4072-bc75-c4c41a2f62a3
 translation-type: tm+mt
-source-git-commit: 7c19ef4a56fbfaa2f43b71e4dc48c79f797f32a8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4595'
 ht-degree: 0%
 
 ---
-
 
 # AEM 6.4 Opmerkingen bij de release Cumulative Fix Pack {#aem-cumulative-fix-pack-release-notes}
 
