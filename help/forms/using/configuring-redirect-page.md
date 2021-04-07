@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: c51817aa-193a-4d4f-bd83-06518ddfb395
 feature: Adaptieve Forms
+exl-id: bbe10952-d6a7-4adc-bab9-388c1ee8e56a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '264'
 ht-degree: 0%
 
 ---
-
 
 # Omleidingspagina {#configuring-redirect-page} configureren
 
@@ -40,4 +40,3 @@ Auteurs van formulieren kunnen de volgende parameters gebruiken die worden doorg
 * **Verzenden naar Forms-workflow**: Uitvoerparameters die worden geretourneerd uit de formulierwerkstroom, worden doorgegeven.
 
 * **Verzenden naar REST-eindpunt**: Parameters die voor parametertoewijzing in het veld worden toegevoegd, worden doorgegeven. `status` en er worden geen  `owner` parameters doorgegeven in deze verzendactie. Voor meer informatie, zie [Vormend Submit aan het eindpunt REST verzenden actie](/help/forms/using/configuring-submit-actions.md).
-
