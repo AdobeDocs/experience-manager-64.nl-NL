@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 295cb0a6-29db-42aa-824e-9141b37b5086
+exl-id: a1c47909-d186-4a3d-a74b-27ed95b5ed6d
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '977'
 ht-degree: 0%
 
 ---
-
 
 # Abonnementen{#managing-subscriptions} beheren
 
@@ -119,4 +119,3 @@ Om een auto-antwoordapparaat e-mail voor een abonnee te vormen:
    >Als u het abonnement op het formulier voor aanmelding correct wilt laten werken, moet u [coderingssleutels van de auteur exporteren en importeren in de publicatieversie](#exporting-keys-from-author-and-importing-on-publish).
 
    ![chlimage_1-12](assets/chlimage_1-12.jpeg)
-
