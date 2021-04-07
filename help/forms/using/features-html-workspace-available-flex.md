@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 66c3cdc4-0e4c-4597-a107-f457dd0cc166
+exl-id: 109adc91-2291-4a10-af7b-e93ae8947258
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '405'
 ht-degree: 0%
 
 ---
-
 
 # Functies van de AEM Forms-werkruimte zijn niet beschikbaar in de Flex-werkruimte {#features-of-aem-forms-workspace-not-available-in-flex-workspace}
 
@@ -43,4 +43,3 @@ De mogelijkheid om te integreren met toepassingen van derden kan worden gebruikt
 ## Ondersteuning voor het renderen van aangepaste taken op basis van het apparaat van de eindgebruiker {#support-for-custom-task-rendering-based-on-end-user-s-device}
 
 De werkruimte van AEM Forms biedt ondersteuning voor HTML-uitvoering van XDP-formulieren. Met deze ondersteuning kunnen gebruikers een XDP-formulier als HTML op mobiele apparaten en als PDF op een bureaublad weergeven wanneer het wordt gebruikt in een renderproces dat leidt naar verschillende uitvoeringen van XDP op basis van het apparaat of de gebruikersagent. Dit helpt gebruikers die in verschillende omgevingen op verschillende apparaten werken, een naadloze dekking van Process Management te bieden.
-
