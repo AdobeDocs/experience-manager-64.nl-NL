@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
+exl-id: 71f89564-a413-49f6-8d6e-c5305bf92c75
+feature: 3D-middelen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1717'
+source-wordcount: '1719'
 ht-degree: 0%
 
 ---
-
 
 # 3D-elementen weergeven {#viewing-d-assets}
 
@@ -83,7 +85,7 @@ Bovendien zijn de mogelijkheden van de clientcomputer, zoals een werkstation, la
       <td><p>Tik of klik om te schakelen tussen de modi Draaien en Pannen.</p> <p>U kunt ook de <code>ALT/OPTION</code>-toets tijdens de handeling ingedrukt houden om tijdelijk over te schakelen op de panmodus. Laat de toets los om terug te keren naar de draaien modus.</p> 
       <ul> 
       <li><strong>Draaien</strong> - Verplaatst de weergavecamera op een bol die gecentreerd is op een doelpunt dat zich dichtbij het midden van het 3D-element bevindt, als standaard. Draaien is het standaardgedrag voor het slepen van een knop naar links of het slepen van een knop met één druk op een mobiel apparaat.</li> 
-      <li><strong>Pannen</strong> - Verplaatst de camera in het weergavevlak. Het doelpunt wordt dienovereenkomstig verplaatst, zodat de camera bij volgende omloophandelingen om een nieuw doelpunt wordt verplaatst. Pannen is het alternatieve gedrag voor het slepen van de linkerknop en het slepen van één aanraking.</li> 
+      <li><strong>Pannen</strong> - Verplaatst de camera in het weergavevlak. Het doelpunt wordt dienovereenkomstig verplaatst, zodat de camera bij volgende omloophandelingen om een nieuw doelpunt wordt verplaatst. Pannen is het alternatieve gedrag voor slepen met de linkerknop en slepen met één druk op de knop.</li> 
       </ul> </td> 
       </tr> 
       <tr> 
@@ -183,4 +185,3 @@ Werken met 3D-onderdelen met muis- en trackball-apparaten:
 1. Sleep terwijl u de toets **ALT/option** ingedrukt houdt en de linkermuisknop om de camera te pannen. Hierdoor wordt de camera zijwaarts verplaatst, zodat u tijdens het inzoomen naar verschillende delen van het object kunt kijken. U kunt ook op de knop **[!UICONTROL Orbit/Pan Toggle]** klikken om te schakelen naar de modus **[!UICONTROL Pan]** en vervolgens slepen terwijl u de linkermuisknop ingedrukt houdt om de camera te pannen. Klik opnieuw **[!UICONTROL Orbit/Pan Toggle]** om aan **[!UICONTROL Orbit]** wijze terug te keren.
 1. Klik **[!UICONTROL Reset Viewer]** om de camera opnieuw in te stellen. Met deze handeling wordt het object weer volledig weergegeven en wordt automatisch centrifugeren hervat als dit is ingeschakeld.
 1. Klik **[!UICONTROL Full Screen]** om de modus Volledig scherm te activeren. Gebruik de **[!UICONTROL Escape]**-toets op het toetsenbord of klik nogmaals **[!UICONTROL Full Screen]** om de 3D-viewer te herstellen naar de modus Pagina-ingesloten.
-
