@@ -4,14 +4,14 @@ description: Leer manieren waarop u Asset Share en Asset Editor kunt aanpassen e
 contentOwner: AG
 feature: Gereedschappen voor ontwikkelaars
 role: Developer
+exl-id: 0291690b-874a-483d-901f-f02cb6d8ab28
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '264'
+source-wordcount: '263'
 ht-degree: 0%
 
 ---
-
 
 # Elementen {#customizing-and-extending-assets} aanpassen en uitbreiden
 
