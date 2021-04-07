@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: process-reporting
 discoiquuid: a0f81621-6ccd-46e2-85d7-2eb4ee3cdb91
+exl-id: 0af2e992-6670-4e31-9d26-ab74c5b9df8e
 translation-type: tm+mt
-source-git-commit: f6b6d8559bb0b899a78afd6410eb316626ecaa18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1733'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met Process Reporting {#getting-started-with-process-reporting}
 
@@ -291,5 +291,3 @@ Zie [Procesgegevens publiceren plannen](/help/forms/using/process-reporting/inst
 * **[!UICONTROL Sync]**: Synchroniseer de ingesloten Process Reporting-opslagplaats met de AEM Forms-database.
 * **[!UICONTROL Help]**: Raadpleeg de Help-documentatie bij Process Reporting.
 * **[!UICONTROL Logout]**: Afmelden bij procesrapportage
-
-
