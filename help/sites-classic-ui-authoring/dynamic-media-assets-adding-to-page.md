@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 331f4980-5193-4546-a22e-f27e38bb8250
+exl-id: b498d54e-ff34-49a1-bfad-c6efbb6f75f4
 translation-type: tm+mt
-source-git-commit: 44fb6e0ae344111385be844dfad1c6618c9209f0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1602'
 ht-degree: 2%
 
 ---
-
 
 # Dynamic Media-assets aan pagina&#39;s toevoegen{#adding-dynamic-media-assets-to-pages}
 
