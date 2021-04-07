@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 0e6e7850-6137-42c5-b8e2-d4e352fddae2
 role: Developer
+exl-id: 1c239c05-e221-442a-a748-0c28704ee032
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '5480'
+source-wordcount: '5479'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms aanroepen met de Java API {#invoking-aem-forms-using-the-javaapi}
 
