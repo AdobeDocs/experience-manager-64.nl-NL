@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 26715b94-e2ea-4da7-a0e2-3e5a367ac1cd
+exl-id: bdf91013-2136-464a-a637-a3047144ec98
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
-
 
 # Geniet van de gepubliceerde site {#experience-the-published-site}
 
@@ -43,7 +42,7 @@ Wanneer de bezoeker van de site voor het eerst op de gepubliceerde site aankomt,
 
 ## Anonieme sitebezoeker {#anonymous-site-visitor}
 
-Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering getoond. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
+Een anonieme sitebezoeker wordt direct de aanmeldingspagina voor deze persoonlijke communitysite voor activering aangeboden. Er is geen optie voor zelfinschrijving of aanmelden bij Facebook of Twitter.
 
 Deze homepage bevat vier menu-items: `Assignments, Ski Catalog, What's New` en `Discussions`, maar geen kan worden bereikt zonder het ondertekenen binnen.
 
