@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 2d374e88-ea09-43d5-986c-5d77b0705b93
+exl-id: ccb792f7-e837-4790-818f-e2c446328e71
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '254'
 ht-degree: 0%
 
 ---
-
 
 # Responsieve lay-out uitproberen in We.Retail{#trying-out-responsive-layout-in-we-retail}
 
