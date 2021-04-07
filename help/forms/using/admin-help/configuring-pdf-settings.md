@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ab018b6d-0233-4439-bb75-58c5421d769a
 feature: PDF Generator
+exl-id: f6bca66b-265a-413c-b2c7-299d97e2ce18
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '7278'
 ht-degree: 0%
 
 ---
-
 
 # Adobe PDF-instellingen configureren{#configuring-adobe-pdf-settings}
 
@@ -580,4 +580,3 @@ Deze bestanden hebben vele doeleinden. Profielbestanden kunnen bijvoorbeeld word
 >[!NOTE]
 >
 >PDF Generator ondersteunt alleen proloog- en epiloogbestanden voor conversie van PostScript- en Encapsulated PostScript-bestanden naar PDF.
-
