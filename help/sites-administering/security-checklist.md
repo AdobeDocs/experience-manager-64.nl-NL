@@ -2,6 +2,7 @@
 title: Beveiligingscontrolelijst
 seo-title: Beveiligingscontrolelijst
 description: Leer over de diverse veiligheidsoverwegingen wanneer het vormen en het opstellen van AEM.
+feature: Beveiliging
 seo-description: Leer over de diverse veiligheidsoverwegingen wanneer het vormen en het opstellen van AEM.
 uuid: 8ecd0c35-249e-4f72-b7e9-97e72698b5c1
 contentOwner: msm-service
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a91e1264-8441-42f8-aa83-1d9c983d214a
+exl-id: 0be6d031-f8b8-458b-a910-ff05d2b1a155
 translation-type: tm+mt
-source-git-commit: 6ac5f288de51e39bccd080123ba9e094406263f8
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '2843'
+source-wordcount: '2844'
 ht-degree: 0%
 
 ---
-
 
 # Beveiligingscontrolelijst{#security-checklist}
 
