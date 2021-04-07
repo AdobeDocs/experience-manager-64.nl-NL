@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 2673ea92-1651-4b1b-9aac-f4ba8b36782e
 feature: Configureren
+exl-id: 758ef6d2-2eba-44ef-8e65-18258c4e9123
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2153'
 ht-degree: 0%
 
 ---
-
 
 # De basis Concepten van de Configuratie{#basic-configuration-concepts}
 
@@ -315,4 +315,3 @@ Pagina-impressies worden weergegeven in de kolom **Impressies** van de klassieke
 >[!CAUTION]
 >
 >Bij de configuratie van Adobe Page Impressions Tracker in de auteursomgeving zijn anonieme aanvragen voor de volgende service mogelijk.
-
