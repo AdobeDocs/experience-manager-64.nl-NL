@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: b89293c4-ea2e-4fa4-9e5e-ef4f548e9608
 role: Developer
+exl-id: 982223c2-aa4a-4013-8136-0155a99f5eff
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1194'
+source-wordcount: '1193'
 ht-degree: 0%
 
 ---
-
 
 # Java API Quick Start (SOAP) {#document-security-service-javaapi-quick-start-soap}
 
@@ -2314,4 +2314,3 @@ public class protectStatementWorkFlowSoap {
     
 }
 ```
-
