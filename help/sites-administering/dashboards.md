@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 40560e06-2508-45a4-a648-39629ed54f28
+exl-id: e1f0e210-2c63-4a5f-9e69-4e73624a4304
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '846'
 ht-degree: 0%
 
 ---
-
 
 # Dashboards{#dashboards}
 
@@ -148,7 +148,7 @@ Elke component definieert ook specifieke instellingen.
 
 Deze component geeft een grafiek weer met de meer bezochte sectie van een website volgens de volgende configuratie.
 
-![chlimage_1-21](assets/chlimage_1-29.png)
+![chlimage_1-29](assets/chlimage_1-29.png)
 
 **Nee. van hoogste punten** Aantal sectie die door in het rapport wordt getoond.
 
@@ -261,4 +261,3 @@ String reportletTitle = properties.get("title", "Top Authors");
      <div id="authors-list"></div>
 </html>
 ```
-
