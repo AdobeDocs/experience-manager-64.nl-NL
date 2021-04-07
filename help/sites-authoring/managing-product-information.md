@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: 0e5d0a45-c663-4d91-b793-03d39119d103
+exl-id: b477d6ab-126a-489a-a13f-2b6f439ab85b
 translation-type: tm+mt
-source-git-commit: d8398575c28f571a7c2173f5d13471873089efdb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3013'
 ht-degree: 0%
 
 ---
-
 
 # Creatief Project en PIM Integratie{#creative-project-and-pim-integration}
 
@@ -54,7 +54,7 @@ De sjabloon bevat de volgende workflows:
 
 1. Selecteer op de pagina **Project maken** de sjabloon van het fotofotoproject en tik/klik **Volgende**.
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
 1. Voer de projectdetails in, inclusief titel, beschrijving en vervaldatum. Voeg gebruikers toe en wijs diverse rollen aan hen toe. U kunt ook een miniatuur toevoegen voor het project.
 
@@ -67,7 +67,7 @@ De sjabloon bevat de volgende workflows:
 
 Tik op een project of klik op een project om een fotoopnameverzoeken te starten. Tik vervolgens op **Werk toevoegen** in de pagina met projectdetails om een workflow te starten.
 
-![chlimage_1-133](assets/chlimage_1-135.png)
+![chlimage_1-135](assets/chlimage_1-135.png)
 
 Een project van de Opname van de Foto van het Product omvat de volgende out-of-the-box werkschema&#39;s:
 
@@ -260,7 +260,7 @@ Een product kan tot een bepaalde categorie behoren. De productcategorie kan in C
 
 ### Taak {#upload-photo-shoot-task} voor fotoopname uploaden
 
-Als u een Editor bent, kunt u opnamen uploaden voor de producten die worden vermeld in het bestand **shotlist.csv** dat in de vorige taak is gemaakt of geüpload.
+Als u een Redacteur bent, kunt u schoten voor de producten uploaden die in **shotlist.csv** dossier worden vermeld dat in de vorige taak wordt gecreeerd of wordt geupload.
 
 De naam van te uploaden afbeeldingen moet beginnen met **&quot;&lt;productId>_&quot;**, waarbij de product-id wordt vermeld in het veld **Id** in het bestand **shotlist.csv**. Voor een product met **ID 397122** in de opnamelijst kunt u bijvoorbeeld bestanden uploaden met de namen **397122_highcontrast.jpg**, **397122_lowlight.png**, en so op.
 
@@ -422,4 +422,3 @@ Zie [Een regel definiëren voor een OR Split](/help/sites-developing/workflows-m
 
 >[!NOTE]
 Wanneer u een server start, plaatst de servlet van de taaklijst van het Project de toewijzingen tussen taaktypes en URLs die onder `/libs/cq/core/content/projects/tasktypes` worden bepaald. U kunt dan de gebruikelijke bedekking uitvoeren en de types van douanetaak toevoegen door hen onder `/apps/cq/core/content/projects/tasktypes` te plaatsen.
-
