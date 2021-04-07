@@ -3,15 +3,15 @@ title: Persoonlijke map delen
 description: Leer hoe u een persoonlijke map maakt in de middelen van de Adobe Experience Manager (AEM) en deze deelt met andere gebruikers en hoe u hun verschillende rechten toekent.
 contentOwner: AG
 feature: Samenwerking
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: b6aa3cba-4085-47ac-a249-7461baee2a00
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '440'
+source-wordcount: '438'
 ht-degree: 6%
 
 ---
-
 
 # Het delen van de privé omslag {#private-folder-sharing}
 
@@ -60,4 +60,3 @@ In de gebruikersinterface van Adobe Experience Manager (AEM) Assets kunt u een p
 >[!NOTE]
 >
 >Om een privé omslag te kunnen tot stand brengen, vereist u Gelezen en geeft ACL toestemmingen op de ouderomslag uit waaronder u een privé omslag wilt tot stand brengen. Als u geen beheerder bent, worden deze toestemmingen niet toegelaten voor u door gebrek op */content/dam*. In dit geval moet u eerst deze machtigingen voor uw gebruikers-id/groep verkrijgen voordat u probeert persoonlijke mappen te maken of mapinstellingen weer te geven.
-
