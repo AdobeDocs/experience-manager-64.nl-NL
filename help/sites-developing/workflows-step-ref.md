@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 25f0e0f7-9570-4748-81cb-ccec6492c0b4
+exl-id: dfa39c6c-7a1a-4aa4-a72d-caa5e3ebf4a8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2599'
 ht-degree: 0%
 
 ---
-
 
 # Referentie workflowstap{#workflow-step-reference}
 
@@ -587,5 +587,3 @@ Om de stap te vormen, geef en gebruik de volgende lusjes uit:
       * Creërend de diensten OSGi voor een **[!UICONTROL Process]** stap, zie [Implementerend een Stap van het Proces met een Klasse van Java](/help/sites-developing/workflows-customizing-extending.md#implementing-a-process-step-with-a-java-class).
    * **[!UICONTROL Handler Advance]**: Selecteer deze optie als u de workflow na de uitvoering automatisch wilt laten doorlopen naar de volgende stap. Als deze optie niet is geselecteerd, moet het implementatiescript de voortgang van de workflow afhandelen.
    * **[!UICONTROL Arguments]**: Argumenten die aan het proces moeten worden doorgegeven.
-
-
