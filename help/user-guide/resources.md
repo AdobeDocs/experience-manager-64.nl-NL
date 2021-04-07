@@ -5,14 +5,14 @@ description: AEM 6.4 opmerkingen bij de release, certificeringen en aanvullende 
 seo-description: AEM 6.4 opmerkingen bij de release, certificeringen en aanvullende bronnen
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: 77111a12-1d9d-4f2d-a2f2-6b2f66709fce
 translation-type: tm+mt
-source-git-commit: f5c0d5032073b91c0b3199bb42709b8e679fa6a0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 3%
 
 ---
-
 
 # AEM 6.4 Aanvullende bronnen {#aem-64-additional-resources}
 
