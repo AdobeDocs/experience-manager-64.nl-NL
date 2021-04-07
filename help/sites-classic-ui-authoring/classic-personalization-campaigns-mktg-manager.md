@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 1445437e-7f22-49ad-9bde-f3c0ff7d5142
+exl-id: 63bf891c-572a-40e0-945f-d20a0a029224
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1218'
 ht-degree: 0%
 
 ---
-
 
 # Werken met de Manager van de Campagne van de Marketing{#working-with-the-marketing-campaign-manager}
 
@@ -188,7 +188,7 @@ Voor de afzonderlijke campagnes zijn twee weergaven beschikbaar:
 
    Vanaf hier kunt u:
 
-   * Een **Nieuw maken...** ervaring; adobe target biedt bijvoorbeeld, theaters en nieuwsbrieven.
+   * Een **Nieuw maken...** ervaring; Adobe Target biedt bijvoorbeeld, theaters en nieuwsbrieven.
    * **Bewerk de details van een specifieke teaserpagina of nieuwsbrief (u kunt ook dubbelklikken).** 
    * **Eigenschappen definiëren..** voor een specifieke laserpagina of nieuwsbrief.
    * **De** vormgeving van een ervaring simuleren (laserpagina of nieuwsbrief).
@@ -213,4 +213,3 @@ Van hieruit kunt u ook het hulpslot openen (klik op de kleine pijl-omlaag) om de
 Klik in de MCM op **Campagnes**. Zorg ervoor dat de lijstweergave actief is, selecteer vervolgens de vereiste campagneervaring en selecteer **Analyseren...**. Er wordt een grafiek weergegeven met de paginamonpressies die in de loop der tijd worden weergegeven.
 
 ![mcm_campagne analyseren](assets/mcm_campaignanalyze.png)
-
