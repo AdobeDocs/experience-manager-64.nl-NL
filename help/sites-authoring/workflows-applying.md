@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 8556d20a-99bd-4942-b7b8-2db69f64e67c
+exl-id: 05c52802-adfd-4b5f-a273-d6a261a00659
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '673'
 ht-degree: 12%
 
 ---
-
 
 # Workflows toepassen op pagina&#39;s{#applying-workflows-to-pages}
 
@@ -147,4 +147,3 @@ U kunt details opgeven:
 Wanneer u een pagina bewerkt, kunt u **Pagina-informatie** op de werkbalk selecteren. Het drop-down menu heeft de optie **Begin in Werkschema**. Hiermee wordt een dialoogvenster geopend waarin u de vereiste workflow kunt opgeven, en desgewenst een titel:
 
 ![wf-54](assets/wf-54.png)
-
