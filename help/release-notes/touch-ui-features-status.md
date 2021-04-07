@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 482b5eb0-1b15-4f10-a9d8-3b72dd74acf8
+exl-id: e1422581-143b-4fce-976e-e5aa3360e2d0
 translation-type: tm+mt
-source-git-commit: db26dd05f6c0997eeda462f27971cbcfa6737527
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1073'
 ht-degree: 1%
 
 ---
-
 
 # Status aanraakinterface {#touch-ui-feature-status}
 
@@ -660,4 +660,3 @@ Dit is een lijst met verschillende gereedschappen die de klassieke UI heeft en d
   </tr>
  </tbody>
 </table>
-
