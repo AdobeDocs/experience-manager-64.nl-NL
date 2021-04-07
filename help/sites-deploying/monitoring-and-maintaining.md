@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: de6ed870-0e69-4d16-99e4-037dd5acf413
 feature: Configureren
+exl-id: a59a4d3e-dc21-4e14-b132-6ed369e674de
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5890'
 ht-degree: 0%
 
 ---
-
 
 # Bewaking en onderhoud van uw AEM{#monitoring-and-maintaining-your-aem-instance}
 
@@ -1179,4 +1179,3 @@ Zo kunt u zien hoeveel geheugen wordt gebruikt, welke GC-algoritmen worden gebru
 >Voor VM van Oracle is er ook informatie op:
 >
 >[https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html](https://docs.oracle.com/javase/7/docs/technotes/guides/vm/server-class.html)
-
