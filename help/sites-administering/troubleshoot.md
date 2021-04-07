@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 1bc19f9a-fa3f-43e3-813e-23ab0b708d43
+exl-id: 34b509d5-4e80-4229-b155-40004856e87e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
 
 ---
-
 
 # Problemen oplossen AEM{#troubleshooting-aem}
 
@@ -77,7 +77,7 @@ Zie [Algemene installatiekwesties](/help/sites-deploying/troubleshooting.md#comm
 
 De draadstortplaats is een lijst van alle draden van Java die momenteel actief zijn. Als AEM niet behoorlijk antwoordt, kan de draadstortplaats u helpen kastjes of andere problemen identificeren.
 
-### Het gebruiken van de Dumper van de Dumper van de Schilddraad {#using-sling-thread-dumper}
+### Het gebruiken van de Dumper van de Dumper van de Dumper van de Schuivende Verbinding {#using-sling-thread-dumper}
 
 1. Open de **AEM webconsole**; bijvoorbeeld op `http://localhost:4502/system/console/`.
 
@@ -129,4 +129,3 @@ De status van de OSGi-bundels kan ook een vroege indicatie geven van mogelijke p
    * of een van de bundels afhankelijkheden mist. Dergelijke details kunnen worden gezien door op de individuele bundelnaam te klikken, die een verbinding is (het volgende voorbeeld heeft geen kwesties):
 
 ![screen_shot_2012-02-13at44706pm](assets/screen_shot_2012-02-13at44706pm.png)
-
