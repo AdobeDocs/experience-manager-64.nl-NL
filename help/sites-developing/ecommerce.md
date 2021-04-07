@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: a8c0cd0f-268f-4b37-83de-0ccbd819a016
+exl-id: a5f36d26-1be4-4e06-9237-3943e903d850
 translation-type: tm+mt
-source-git-commit: 3cdb22af4d3b9b8450263fd843c8af13fc772bfe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '186'
 ht-degree: 2%
 
 ---
-
 
 # eCommerce{#ecommerce}
 
@@ -51,4 +51,3 @@ Zie de [API documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/d
 >[!NOTE]
 >
 >Zie [Aangepaste Adobe Experience Manager 6.2 eCommerce-providers maken](https://helpx.adobe.com/experience-manager/using/ecommerce62.html) voor een volledig artikel waarin alle stappen worden beschreven die nodig zijn om een eCommerce-provider te bouwen.
-
