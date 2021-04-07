@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 2e783745-c986-45ba-8e65-7437d114ca38
 role: Developer
+exl-id: e9d10d35-6a8d-497d-83f7-67ee6c22baed
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2797'
+source-wordcount: '2796'
 ht-degree: 0%
 
 ---
-
 
 # Gegevens {#importing-and-exporting-data} importeren en exporteren
 
