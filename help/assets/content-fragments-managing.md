@@ -9,14 +9,16 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: content-fragments
 content-type: reference
 discoiquuid: da8f968b-91cc-45a8-ae4b-757b4f840b8e
+exl-id: b21ba7a1-6e6f-4b95-9336-b49f7e932af5
+feature: Contentfragmenten
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 5ba23738118d7944026f405110e25b6a7f90866b
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1421'
-ht-degree: 3%
+source-wordcount: '1423'
+ht-degree: 4%
 
 ---
-
 
 # Contentfragmenten beheren {#managing-content-fragments}
 
@@ -338,4 +340,3 @@ Een fragment verwijderen:
    >[!CAUTION]
    >
    >Als er al naar het fragment wordt verwezen op een pagina, wordt er een waarschuwingsbericht weergegeven en moet u bevestigen dat u wilt doorgaan met een **[!UICONTROL Force Delete]**. Het fragment wordt samen met de bijbehorende component voor contentfragmenten uit alle contentpagina&#39;s verwijderd.
-
