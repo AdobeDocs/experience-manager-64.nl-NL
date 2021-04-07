@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_aem_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 10e6177a-8228-4515-aba9-bbe59bede449
+exl-id: 45e5b682-3d21-4843-8f62-9d0d493d91c0
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersbeheer {#user-management}
 
@@ -30,7 +30,7 @@ Als u een LDAP-server met SSL-functionaliteit hebt, configureert u Gebruikersbeh
 
 ## Gebruikersrechten instellen voor gebruik met documentbeveiliging {#setting-user-privileges-for-use-with-document-security}
 
-Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM formulieromgeving documentbeveiliging bevat, geeft u de gebruiker het recht uitgenodigde en lokale gebruikers te beheren. Dit is de beheerder van deze gebruikers. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
+Maak een beheerder die over de juiste rechten beschikt voor het maken van gebruikers en groepen. Als uw AEM formulieromgeving Documentbeveiliging bevat, geeft u de gebruiker het recht uitgenodigde en lokale gebruikers te beheren. Dit is de beheerder van deze gebruikers. Wijs ook de rol van de Gebruiker van de beleidsconsole toe om de gebruiker van toegang tot beleidsconsole te voorzien. (Zie [Rollen maken en configureren](/help/forms/using/admin-help/creating-configuring-roles.md#creating-and-configuring-roles).)
 
 Om gebruikers en groepen in geselecteerde domeinen tijdens de onderzoeken van de beleidsgebruiker te bekijken, moet een superbeheerder of beheerder van de beleidsreeks domeinen (die in Beheer van de Gebruiker worden gecreeerd) selecteren en toevoegen aan de zichtbare gebruiker en groepslijst voor elke gemaakte beleidsreeks.
 
@@ -57,4 +57,3 @@ Gebruikers met bepaalde beheerdersrechten hebben uit veiligheidsoverwegingen gee
 >[!NOTE]
 >
 >De Flex-werkruimte is verouderd voor AEM formulierrelease.
-
