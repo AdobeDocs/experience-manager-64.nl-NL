@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: interactive-communications
 discoiquuid: 1aef2a51-4391-4075-8841-a62ace5606f9
 feature: Interactieve communicatie
+exl-id: 2caf7242-8588-4fc9-9429-40e24416d6eb
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '544'
 ht-degree: 5%
 
 ---
-
 
 # Interactieve communicatie configuratieeigenschappen {#interactive-communications-configuration-properties}
 
@@ -121,4 +121,3 @@ Tik **Adaptief formulier en Interactieve communicatie Web Channel Thema Configur
   </tr> 
  </tbody> 
 </table>
-
