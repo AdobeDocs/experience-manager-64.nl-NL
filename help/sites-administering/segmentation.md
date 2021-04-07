@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 6cade87c-9ed5-47d7-9b39-c942268afdad
+exl-id: 83e73a5d-c6fa-426a-8476-78769ae7a8c1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1459'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen Segmentatie met ContextHub{#configuring-segmentation-with-contexthub}
 
@@ -39,7 +39,7 @@ De console [Soorten publiek](/help/sites-authoring/managing-audiences.md) wordt 
 
 Als u toegang wilt krijgen tot uw segmenten, selecteert u **Navigatie > Aanpassing aan persoonlijke voorkeur > Soorten publiek**.
 
-![chlimage_1-311](assets/chlimage_1-310.png)
+![chlimage_1-310](assets/chlimage_1-310.png)
 
 ## Segmenteditor {#segment-editor}
 
@@ -134,7 +134,7 @@ Het nieuwe segment definiëren:
 
 1. Na [het toegang hebben tot van de segmenten](/help/sites-administering/segmentation.md#accessing-segments), klik of tik de Create knoop en selecteer **Create ContextHub Segment**.
 
-   ![chlimage_1-310](assets/chlimage_1-311.png)
+   ![chlimage_1-311](assets/chlimage_1-311.png)
 
 1. In **Nieuw Segment ContextHub**, ga een titel voor het segment evenals een verhogingswaarde indien nodig in en tik of klik dan **Create**.
 
