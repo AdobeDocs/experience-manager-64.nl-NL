@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: c7cf28bf-2806-47bc-a803-8bc0e803fc4d
+exl-id: 28877528-2f91-4ee0-b9d8-c7df364ed803
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '379'
 ht-degree: 0%
 
 ---
-
 
 # Taken beheren in een organisatiehiërarchie met de Weergave {#managing-tasks-in-an-organizational-hierarchy-using-manager-view} van de Manager
 
@@ -120,4 +120,3 @@ Het volgende scherm illustreert de toegang tot van de taken van directe rapporte
 ![cu_manager_view](assets/cu_manager_view.png)
 
 De taken van de toegang tot directe rapporten en handelen op de taken
-
