@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 8d3374ac-51dd-4ff5-84c9-495c937ade12
+exl-id: 19df20a9-7c89-4dfa-8eca-81c4a14c21ff
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '359'
 ht-degree: 0%
 
 ---
-
 
 # OSGI-pakketten{#osgi-bundles}
 
