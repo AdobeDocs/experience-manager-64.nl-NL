@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 5ac2fcef-05b8-46f7-9a15-997cdd79a3db
-role: Beheerder
+role: Administrator
+exl-id: f1408709-5402-4f55-bd37-9943fe828af0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3128'
+source-wordcount: '3127'
 ht-degree: 0%
 
 ---
-
 
 # Console {#communities-sites-console} voor sites van gemeenschappen
 
@@ -588,4 +588,3 @@ Vanuit de globale console van navigatiesites bevinden communitysites zich in de 
 Terwijl het mogelijk is om tot een communautaire plaats op deze manier, voor administratieve taken toegang te hebben, zou de communautaire plaats van de console van de Plaatsen van Gemeenschappen moeten worden betreden.
 
 ![chlimage_1-470](assets/chlimage_1-470.png)
-
