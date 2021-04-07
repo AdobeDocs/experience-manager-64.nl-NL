@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: grdp, introduction
 discoiquuid: 93e71efe-c1c6-4d83-9b57-6c70f7bc0b80
+exl-id: 46ad04b1-a660-4cdd-8649-5cdb00dbcae3
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '981'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Experience Manager Readiness for Data Protection and Data Privacy Regulations {#aem-readiness-for-data-protection-and-data-privacy-regulations}
 
