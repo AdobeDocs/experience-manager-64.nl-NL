@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: ba73e267-598d-4c70-a1a8-71bcfcfbf9e5
+exl-id: 3a052270-b3ea-4d17-915c-be2b51cdc482
 translation-type: tm+mt
-source-git-commit: 1e55d049ad77aeed2fac6275ea2744c2b6551e43
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
-
 
 # Een gesloten gebruikersgroep maken{#creating-a-closed-user-group}
 
@@ -143,4 +143,3 @@ Configureer [sessiebeheer in de dispatcher.any file](https://helpx.adobe.com/exp
    ```
 
 1. Stel [/allowAuthorized](https://helpx.adobe.com/experience-manager/dispatcher/using/dispatcher-configuration.html#caching-when-authentication-is-used) in op `0`.
-
