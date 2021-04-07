@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a4fb1a11-8fe3-4092-a036-1c079aea1250
 feature: Documentbeveiliging
+exl-id: e17ab7de-9f4a-4456-be80-43ab9663940e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1326'
 ht-degree: 0%
 
 ---
-
 
 # Beleidssets maken en beheren {#creating-and-managing-policy-sets}
 
@@ -115,4 +115,3 @@ Wanneer u een beleidsset verwijdert, kunnen beleid dat deel uitmaakte van de set
 1. Klik op Beleid en klik op het tabblad Beleidssets.
 1. Schakel het selectievakje in voor de beleidsset die u wilt verwijderen.
 1. Klik op Verwijderen en vervolgens op OK.
-
