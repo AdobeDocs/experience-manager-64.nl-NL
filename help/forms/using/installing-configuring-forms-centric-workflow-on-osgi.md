@@ -6,15 +6,15 @@ seo-description: 'Installeer en configureer AEM Forms Interactive Communications
 uuid: 847c3351-dc46-4e60-a023-0f4e9e057c7c
 topic-tags: installing
 discoiquuid: 7333641e-8c8c-4b52-a7da-a2976c88592c
-role: Beheerder
+role: Administrator
+exl-id: 308b106f-4c5a-49d6-a7f6-c1e8a0bf62e9
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1617'
+source-wordcount: '1616'
 ht-degree: 0%
 
 ---
-
 
 # Forms-centric workflow installeren en configureren op OSGi {#installing-and-configuring-forms-centric-workflow-on-osgi}
 
@@ -204,4 +204,3 @@ U hebt een omgeving geconfigureerd voor het gebruik van een op Forms gerichte wo
 * [Forms-centric workflow gebruiken op OSGi](/help/forms/using/aem-forms-workflow.md)
 * [Referentie workflowstap](/help/sites-developing/workflows-step-ref.md)
 * [Nabewerking van brieven en interactieve communicatie](/help/forms/using/submit-letter-topostprocess.md)
-
