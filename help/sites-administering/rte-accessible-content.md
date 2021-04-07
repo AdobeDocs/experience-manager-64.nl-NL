@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: ff0f006d-461c-4cc4-b6eb-d665f3f3b498
+exl-id: 245e1c28-f702-4300-81cf-5139db9d95ec
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '937'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen RTE voor het Produceren van Toegankelijke Plaatsen {#configuring-rte-for-producing-accessible-sites}
 
