@@ -8,14 +8,14 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: f934eb02-1f84-44f2-9f14-3f17250c9a90
+exl-id: e03d2075-1d65-4ab3-b1bb-0bae925824c6
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 1%
 
 ---
-
 
 # Webconsole{#web-console}
 
@@ -181,4 +181,3 @@ Als u op de naam van een bepaalde component klikt, wordt meer informatie over de
 >Als u een component inschakelt of uitschakelt, wordt deze alleen van toepassing tot AEM/CRX opnieuw wordt gestart.
 >
 >De begintoestand wordt gedefinieerd binnen de componentdescriptor, die tijdens de ontwikkeling wordt gegenereerd en in de bundel wordt opgeslagen op het moment dat de bundel wordt gemaakt.
-
