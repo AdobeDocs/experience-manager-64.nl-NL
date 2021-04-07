@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f6112dea-a1eb-4fd6-84fb-f098476deab7
+exl-id: 38bbad03-aead-43d3-a28c-cc716955ddfb
 translation-type: tm+mt
-source-git-commit: e672f4edf87bd4d3af985e2ea598feb4e26d1553
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1769'
 ht-degree: 17%
 
 ---
-
 
 # Adobe IMS-verificatie en ondersteuning voor Admin Consoles voor AEM Managed Services {#adobe-ims-authentication-and-admin-console-support-for-aem-managed-services}
 
@@ -136,7 +136,7 @@ Meer informatie over de nieuwe groepsfuncties vindt u hier:
 
 >[!NOTE]
 >
->De AEM IMS-configuratie wordt afgehandeld door het Adobe Managed Services-team. De klantbeheerder kan het echter naar wens wijzigen (bijvoorbeeld Automatische groepslidmaatschap of Groepstoewijzing). De IMS-client wordt ook geregistreerd door uw Managed Services-team.
+>De AEM IMS-configuratie wordt afgehandeld door het team van Adobe Managed Services. Nochtans, kan de klantenbeheerder het volgens hun vereisten wijzigen (bijvoorbeeld AutoLidmaatschap van de Groep of de Afbeelding van de Groep). De IMS-client wordt ook geregistreerd door uw Managed Services-team.
 
 ## Het gebruik {#how-to-use}
 
@@ -154,7 +154,7 @@ De instantiedetails kunnen worden gecontroleerd om de instantie te identificeren
 
 ![screen_shot_2018-09-17at105601pm](assets/screen_shot_2018-09-17at105601pm.png)
 
-Onder elke instantie van de Context van het Product, zal er een bijbehorend Profiel van het Product zijn. Dit productprofiel wordt gebruikt om toegang toe te wijzen aan gebruikers en groepen.
+Onder elke instantie van de Context van het Product, zal er een bijbehorend Profiel van het Product zijn. Dit productprofiel wordt gebruikt voor het toewijzen van toegang aan gebruikers en groepen.
 
 ![image2018-9-18_7-48-50](assets/image2018-9-18_7-48-50.png)
 
@@ -182,7 +182,7 @@ Vervolgens worden ze omgeleid naar het IMS-aanmeldingsscherm en voeren ze hun re
 
 Als een federatieve IDP tijdens de eerste installatie van de Admin Console wordt geconfigureerd, wordt de gebruiker omgeleid naar de klant-IDP voor SSO.
 
-IDP is Okta in het onderstaande voorbeeld:
+IDP is Okta in het volgende voorbeeld:
 
 ![screen_shot_2018-09-17at115734pm](assets/screen_shot_2018-09-17at115734pm.png)
 
@@ -190,25 +190,25 @@ Nadat de verificatie is voltooid, wordt de gebruiker teruggeleid naar AEM en aan
 
 ![screen_shot_2018-09-18at120124am](assets/screen_shot_2018-09-18at120124am.png)
 
-### Bestaande gebruikers migreren {#migrating-existing-users}
+### Bestaande gebruikers {#migrating-existing-users} migreren
 
-Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en die nu naar IMS worden gemigreerd, moet er een migratiestap plaatsvinden.
+Voor bestaande AEM instanties die een andere verificatiemethode gebruiken en nu naar IMS worden gemigreerd, moet er een migratiestap zijn.
 
-Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen worden gemigreerd naar IMS als IDP met behulp van het User Migration Utility.
+Bestaande gebruikers in de AEM opslagplaats (lokaal, via LDAP of SAML) kunnen worden gemigreerd om naar IMS te verwijzen als de IDP met behulp van het Hulpprogramma voor gebruikersmigratie.
 
-Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van de IMS-provisioning.
+Dit hulpprogramma wordt door uw AMS-team uitgevoerd als onderdeel van IMS-provisioning.
 
-### Beherend Toestemmingen en ACLs in AEM {#managing-permissions-and-acls-in-aem}
+### Bevoegdheden en ACL&#39;s beheren in AEM {#managing-permissions-and-acls-in-aem}
 
-Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt met scheiding van gebruikersgroepen die uit IMS komen (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waarin de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
+Toegangsbeheer en toegangsrechten blijven in AEM worden beheerd, dit kan worden bereikt door scheiding van Gebruikersgroepen die afkomstig zijn van IMS (bijvoorbeeld AEM-GRP-008 in het onderstaande voorbeeld) en lokale groepen waar de machtigingen en toegangsbeheer zijn gedefinieerd. De gebruikersgroepen die van IMS worden gesynchroniseerd kunnen aan lokale groepen worden toegewezen en de toestemmingen erven.
 
 In het onderstaande voorbeeld voegen we gesynchroniseerde groepen toe aan de lokale *Dam_Users*-groep.
 
-Hier is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Houd er rekening mee dat gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met behulp van het gebruikerssynchronisatiegereedschap of lokaal kunnen worden gemaakt. Zie het gedeelte **Onboardinggebruikers naar de Admin Console** hierboven).
+Hier, is een gebruiker ook toegewezen aan een paar groepen in de Admin Console. (Houd er rekening mee dat de gebruikers en groepen kunnen worden gesynchroniseerd via LDAP met het gereedschap voor gebruikerssynchronisatie of lokaal kunnen worden gemaakt. Zie de sectie **Gebruikers aan boord nemen van de Admin Console** hierboven.)
 
 >[!NOTE]
 >
->Gebruikersgroepen worden alleen gesynchroniseerd wanneer de gebruikers zich bij de instantie aanmelden.
+>Gebruikersgroepen worden alleen gesynchroniseerd wanneer de gebruikers zich aanmelden bij de instantie.
 
 ![screen_shot_2018-09-17at94207pm](assets/screen_shot_2018-09-17at94207pm.png)
 
@@ -224,7 +224,6 @@ AEM kunnen de gebruikersgroepen die via IMS zijn gesynchroniseerd, als leden wor
 
 ![screen_shot_2018-09-17at95804pm](assets/screen_shot_2018-09-17at95804pm.png)
 
-Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren. Deze wordt ook veel gebruikt in LDAP-verificatiemethoden.
+Zoals hieronder getoond, erft de groep *AEM-GRP_008* de Toestemmingen en Bevoegdheden van Gebruikers DAM. Dit is een effectieve manier om machtigingen voor gesynchroniseerde groepen te beheren en wordt ook veel gebruikt in LDAP-gebaseerde verificatiemethoden.
 
 ![screen_shot_2018-09-17at110505pm](assets/screen_shot_2018-09-17at110505pm.png)
-
