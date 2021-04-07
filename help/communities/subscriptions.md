@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 33c85af4-4c56-487a-ba60-55211cb9f72c
-role: Beheerder
+role: Administrator
+exl-id: 8a756328-0405-49b7-b94d-3dd5a87c782a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '362'
+source-wordcount: '361'
 ht-degree: 0%
 
 ---
-
 
 # Communityabonnementen {#communities-subscriptions}
 
@@ -74,4 +74,3 @@ Als ze op het e-mailbericht reageren, wordt de inhoud die ze in het antwoord inv
 De hoeveelheid tijd die nodig is om een antwoord te verzenden, wordt bepaald door het update-interval van de [opiniepeilingimporteur](email.md#configure-polling-importer).
 
 ![chlimage_1-7](assets/chlimage_1-7.png)
-
