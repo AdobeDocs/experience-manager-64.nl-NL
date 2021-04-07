@@ -2,6 +2,7 @@
 title: Operations-dashboard
 seo-title: Operations-dashboard
 description: Leer hoe u het bewerkingsdashboard kunt gebruiken.
+feature: Bewerkingen
 seo-description: Leer hoe u het bewerkingsdashboard kunt gebruiken.
 uuid: f1a6dcdc-307b-45f4-ade5-cedc58f0c7cf
 contentOwner: Guillaume Carlino
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 7599fa42-3a47-49c9-8a7f-e0b6be302ff0
+exl-id: a0cb6a30-fdd4-4806-a5fa-45c98ad15d11
 translation-type: tm+mt
-source-git-commit: d72f86b167e3e9003ad2cd2e7628f95502cf9a33
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '6200'
+source-wordcount: '6201'
 ht-degree: 0%
 
 ---
-
 
 # Operations-dashboard {#operations-dashboard}
 
@@ -230,7 +231,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
       <ul> 
        <li>Geeft de status Kritiek als deze meer dan 2 uur geleden is </li> 
        <li>retourneert de waarschuwingsstatus als deze tussen 2 uur en 45 minuten geleden ligt </li> 
-       <li>retourneert de status OK als deze minder dan 45 minuten geleden is </li> 
+       <li>Hiermee wordt de status OK geretourneerd als deze minder dan 45 minuten geleden is </li> 
       </ul> </li> 
      <li>als aan geen van deze voorwaarden is voldaan, wordt de status OK geretourneerd</li> 
     </ul> <p>Zowel zijn de Kritieke als de statusdrempels van de Waarschuwing configureerbaar. De sjabloon voor deze health check is <a href="http://localhost:4502/system/console/jmx/org.apache.sling.healthcheck%3Aname%3DasyncIndexHealthCheck%2Ctype%3DHealthCheck">org.apache.sling.health check:name=asyncIndexHealthCheck,type=HealthCheck</a>.</p> <p><strong>Opmerking:  </strong>Deze health check is beschikbaar bij AEM 6.4 en is teruggezet naar AEM 6.3.0.1.</p> </td> 
@@ -329,7 +330,7 @@ Een Composite Health Check&#39;s rol bestaat erin een aantal afzonderlijke Healt
 
 Het Health Check Dashboard kan integreren met Nagios via de Granite JMX Mbeans. In het onderstaande voorbeeld ziet u hoe u een controle toevoegt die gebruikt geheugen op de server waarop AEM wordt uitgevoerd.
 
-1. Stel Nagios in en installeer deze op de controleserver.
+1. Stel Nagios in en installeer deze op de bewakingsserver.
 1. Installeer vervolgens de Nagios Remote Plugin Exec (NRPE).
 
    >[!NOTE]
@@ -629,7 +630,7 @@ U kunt de onderhoudstaak van het Leegmaken van de Versie plannen om oude versies
 
 ## Aangepaste onderhoudstaken {#custom-maintenance-tasks}
 
-De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur van de onderhoudstaak gebaseerd is op de taakbehandeling van Apache Sling, moet een onderhoudstaak de Java-interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)` implementeren. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder wordt vermeld:
+De het onderhoudstaken van de douane kunnen als diensten worden uitgevoerd OSGi. Aangezien de infrastructuur van de onderhoudstaak gebaseerd is op de taakbehandeling van Apache Sling, moet een onderhoudstaak de Java-interface ` [org.apache.sling.event.jobs.consumer.JobExecutor](https://sling.apache.org/apidocs/sling7/org/apache/sling/event/jobs/consumer/JobExecutor.html)` implementeren. Daarnaast moet de instantie verschillende eigenschappen van de serviceregistratie declareren die als onderhoudstaak moeten worden gedetecteerd, zoals hieronder vermeld:
 
 <table> 
  <tbody> 
@@ -910,4 +911,3 @@ U kunt ook een `JSON`-bestand downloaden met een overzicht van de dashboardgegev
   </tr> 
  </tbody> 
 </table>
-
