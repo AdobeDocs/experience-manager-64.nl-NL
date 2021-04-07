@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: e7b6b9ee-d807-4eb0-8e96-75ca1e66a4e4
+exl-id: ec5253cd-7f1e-4408-9765-8aaa9a81095c
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '420'
 ht-degree: 0%
 
 ---
-
 
 # Taken maken en consumeren voor offloaden{#creating-and-consuming-jobs-for-offloading}
 
@@ -217,4 +217,3 @@ In de voorgaande voorbeelden werden ook de volgende definities van afhankelijkhe
    <scope>provided</scope>
 </dependency>
 ```
-
