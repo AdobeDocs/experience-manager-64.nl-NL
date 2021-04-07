@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: Configuration
 discoiquuid: 5d672b56-00c4-46a0-974b-e174fbdf07d6
-role: Beheerder
+role: Administrator
+exl-id: bc750571-08a5-414c-aed5-4e839f6695ae
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '901'
+source-wordcount: '900'
 ht-degree: 0%
 
 ---
-
 
 # Prestaties afstemmen van AEM Forms-server {#performance-tuning-of-aem-forms-server}
 
@@ -175,6 +175,5 @@ Om de prestaties te verbeteren, kunt u de antivirussoftware zo instellen dat de 
 >* Als u een andere locatie voor GDS en een tijdelijke map gebruikt, opent u de AdminUI op `https://[server]:[port]/adminui)`, navigeert u naar **Home > Instellingen > Core System Settings > Core Configurations** om de gebruikte locatie te bevestigen.
 
 * Als de AEM Forms-server zelfs na het uitsluiten van de voorgestelde mappen traag werkt, sluit u het uitvoerbare bestand van Java (java.exe) ook uit.
-
 
 
