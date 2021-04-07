@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 0e0a9b6b-fd2f-4cec-b233-500c940ee4d5
+exl-id: d8f60be3-474a-4dd1-aaa5-7b6a97e1a9bd
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '304'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste handeling toevoegen aan formulierbibliotheekitems {#adding-custom-action-on-form-lister-items}
 
@@ -51,4 +51,3 @@ U kunt vergelijkbare acties toevoegen aan uw aangepaste sjabloon. Als u een Java
 Nadat u de wijzigingen in de sjabloon hebt aangebracht, bevat de pagina met de voorbeeldportal een knop waarmee u de koppeling van het formulier via e-mail kunt verzenden, zoals hieronder wordt weergegeven.
 
 ![email](assets/email.png)
-
