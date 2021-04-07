@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: e74ffe97-5de8-4e9c-94b4-d7d63939d40c
+exl-id: daff8e4e-40c7-4762-8e4f-d85d50b86e5d
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2793'
 ht-degree: 0%
 
 ---
-
 
 # {#reporting} rapporteren
 
@@ -288,7 +288,7 @@ Wanneer u **Eindigt** het rapport:
 * Eventuele bestaande momentopnamen worden verwijderd.
 * Nieuwe momentopnamen worden verzameld voor de [Historische gegevens](#historic-data).
 
-In dit dialoogvenster kunt u uw eigen titel en beschrijving voor het resulterende rapport definiëren of bijwerken.
+Met dit dialoogvenster kunt u uw eigen titel en beschrijving voor het resulterende rapport definiëren of bijwerken.
 
 ![reportage](assets/reportfinish.png)
 
