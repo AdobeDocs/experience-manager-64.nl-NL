@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: b1bd40f4-21c6-48f5-a41e-42daeaad3687
 feature: Bijwerken
+exl-id: 70c5ef98-1004-46d0-b805-9435613ec36b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1239'
 ht-degree: 0%
 
 ---
-
 
 # Een op locatie uitgevoerde upgrade uitvoeren{#performing-an-in-place-upgrade}
 
