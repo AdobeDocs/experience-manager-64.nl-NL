@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: introduction
 content-type: reference
+exl-id: 3cee9b4f-c4be-4ffc-970c-5680c8ebba47
+feature: 3D-middelen
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '1165'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
-
 
 # Werken met AEM 3D-elementen {#working-with-d-assets}
 
@@ -162,4 +164,3 @@ Zie [3D-elementen renderen](rendering-3d-assets.md).
 ## Materialen benoemen in een primair 3D-modelbestand {#naming-materials-in-a-primary-d-model-file}
 
 Een *oppervlak* wordt gedefinieerd als het oppervlak van een 3D-model dat door hetzelfde materiaal wordt bedekt. Dit materiaal geeft ook de naam voor het oppervlak. Als zodanig raadt Adobe u aan de materialen in primaire 3D-modelbestanden een overeenkomstige naam te geven. Het gebruik van specifieke namen, zoals &#39;&#39;Body&#39;&#39;, &#39;&#39;Windows&#39;&#39;, &#39;&#39;Banden&#39;&#39; of &#39;&#39;Rims&#39;&#39;, heeft bijvoorbeeld de voorkeur boven het gebruik van vage namen, zoals &#39;&#39;Red&#39;&#39;, &#39;&#39;Glass&#39;&#39;, &#39;&#39;Rubber&#39;&#39; en &#39;&#39;Aluminium&#39;&#39;.
-
