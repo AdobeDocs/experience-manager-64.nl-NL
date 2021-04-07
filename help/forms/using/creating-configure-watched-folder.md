@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 0ce7b338-6686-49b3-b58b-e7ab6b670708
+exl-id: 7e2706e2-092f-4780-be8f-2bf444613d70
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1848'
 ht-degree: 0%
 
 ---
-
 
 # Een gecontroleerde map maken of configureren {#create-or-configure-a-watched-folder}
 
@@ -123,4 +123,3 @@ U kunt niet alleen de naam van de gecontroleerde map wijzigen, maar ook alle eig
 1. Tik **Gereedschappen** > **Forms** > **Gecontroleerde map configureren.** Er wordt een lijst met al geconfigureerde gecontroleerde mappen weergegeven.
 1. Selecteer links in het scherm Gecontroleerde map de controlemap en tik op **Bewerken.** Er wordt een lijst weergegeven met velden die nodig zijn om de controlemap te maken. De velden op het tabblad **Standaard** zijn verplicht. Het geavanceerde tabblad bevat meer velden. De meeste van deze velden bevatten een standaardwaarde. U kunt deze eigenschappen naar wens wijzigen.
 1. Tik op **Update** nadat u de eigenschappen hebt gewijzigd. De gewijzigde eigenschappen worden opgeslagen.
-
