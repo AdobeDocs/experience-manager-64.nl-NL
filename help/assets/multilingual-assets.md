@@ -3,15 +3,15 @@ title: Meertalige activa
 description: Leer hoe u workflows automatiseert voor het vertalen van elementen, waaronder binaire bestanden, metagegevens en tags in meerdere talen.
 contentOwner: AG
 feature: Beheer van bedrijfsmiddelen
-role: Beheerder
+role: Administrator
+exl-id: 8e065137-3599-48af-a040-6923b7b5e1d9
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '177'
+source-wordcount: '176'
 ht-degree: 0%
 
 ---
-
 
 # Meertalige elementen {#multilingual-assets}
 
