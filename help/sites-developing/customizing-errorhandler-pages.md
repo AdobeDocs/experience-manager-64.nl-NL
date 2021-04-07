@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 63c94c82-ed96-4d10-b645-227fa3c09f4b
+exl-id: f71b16a9-a233-4129-bbf2-257ded88be25
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '536'
 ht-degree: 0%
 
 ---
-
 
 # Pagina&#39;s aanpassen die worden weergegeven door de fouthandler{#customizing-pages-shown-by-the-error-handler}
 
@@ -97,4 +97,3 @@ Als u 500 fouten wilt afhandelen, moet de bestandsnaam van het script van de fou
 >Voor een douane fout-manager, zijn de reacties met code 500 nodig - zodat moet [CQ WCM zuivert Filter worden onbruikbaar gemaakt](/help/sites-deploying/osgi-configuration-settings.md). Dit zorgt ervoor dat reactiecode 500 is teruggekeerd, die beurtelings de correcte fout-manager van het Sling teweegbrengt.
 >
 >Voor een publicatie-instantie is CQ WCM Debug Filter *always* uitgeschakeld (zelfs als dit is geconfigureerd als ingeschakeld).
-
