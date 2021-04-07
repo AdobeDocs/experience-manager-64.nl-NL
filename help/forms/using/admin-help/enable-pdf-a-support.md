@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 17a6397b-0089-4fd1-b44a-686fdf60d7a9
 feature: PDF Generator
+exl-id: f069ecea-1b68-4ca9-bb56-8a205a3c00ec
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '136'
 ht-degree: 0%
 
 ---
-
 
 # PDF/A-ondersteuning {#enable-pdf-a-support} inschakelen
 
@@ -27,4 +27,3 @@ PDF Generator ondersteunt het maken van PDF/A-compatibele bestanden vanuit Micro
 1. Klik op Nieuw of selecteer een bestaande instelling voor bestandstypen.
 1. Klik op Microsoft Excel, Microsoft PowerPoint of Microsoft Word en selecteer vervolgens PDF/A-1a-compatibel bestand maken en sla uw wijzigingen op.
 1. Klik in de oorspronkelijke toepassing (bijvoorbeeld Microsoft Word) op Adobe PDF > Conversie-instellingen wijzigen en selecteer vervolgens PDF/A-1b.
-
