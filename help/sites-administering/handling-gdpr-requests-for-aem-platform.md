@@ -6,14 +6,14 @@ seo-description: 'null'
 uuid: d470061c-bbcf-4d86-9ce3-6f24a764ca39
 contentOwner: sarchiz
 discoiquuid: 8ee843b6-8cea-45fc-be6c-99c043f075d4
+exl-id: dcd67a1e-b20f-4ed4-b154-dd250cbd8320
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 6%
 
 ---
-
 
 # Behandeling van GDPR-verzoeken om de AEM Foundation{#handling-gdpr-requests-for-the-aem-foundation}
 
@@ -138,4 +138,3 @@ curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':ope
 ```shell
 curl -X POST -u user:password -H "Accept: application/json,**/**;q=0.9" -d ':operation=delete' 'http://localhost:4502/home/users/we-retail/DSCP-athB1NYLBXvdTuN/profile'
 ```
-
