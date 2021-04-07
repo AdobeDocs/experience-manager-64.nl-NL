@@ -7,14 +7,14 @@ uuid: 81ee0527-72c3-4530-80f1-c802ddbe62d0
 products: SG_EXPERIENCEMANAGER/6.4
 contentOwner: alba
 discoiquuid: d445bcfb-7712-472f-bfb4-a8811c2bc4f1
+exl-id: e09d2d59-41f0-4cf2-bcf3-ec3dbc3b8474
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 1%
 
 ---
-
 
 # Opmerkingen bij de release van Livefyre Feature Pack 2.0.6 {#livefyre-feature-pack-release-notes}
 
