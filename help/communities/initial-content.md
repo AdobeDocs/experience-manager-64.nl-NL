@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: e8f28cd5-7950-4aab-bf62-3d4ed3d33cbd
+exl-id: 171fd95d-51f6-468b-84ed-4a757dba868e
 translation-type: tm+mt
-source-git-commit: 2d1e39120d79de029927011d48f7397b53ad91bc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '442'
 ht-degree: 3%
 
 ---
-
 
 # Eerste sandbox-inhoud {#initial-sandbox-content}
 
@@ -109,4 +109,3 @@ De oplossing moet er als volgt uitzien:
 >[!NOTE]
 >
 >Het gebruik van cq:designPath is optioneel en houdt geen verband met het [gebruik van clientlibs](develop-app.md#includeclientlibsintemplate), die in wezen vereist zijn omdat de SCF-componenten [clientlibs](client-customize.md#clientlibs-for-scf) gebruiken om hun JS en CSS te beheren.
-
