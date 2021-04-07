@@ -4,15 +4,15 @@ description: Gebruik elementen op meerdere pagina's/mappen die zijn afgeleid van
 contentOwner: AG
 mini-toc-levels: 1
 feature: Beheer van bedrijfsmiddelen, beheer van meerdere sites
-role: Business Practitioner,beheerder,architect
+role: Business Practitioner,Administrator,Architect
+exl-id: a8e9f8de-ca84-4107-8f73-2fc75eeae1f1
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '3078'
+source-wordcount: '3074'
 ht-degree: 9%
 
 ---
-
 
 # Elementen opnieuw gebruiken met MSM voor [!DNL Assets] {#reuse-assets-using-msm-for-assets}
 
