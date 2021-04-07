@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6825dcd6-fa75-4410-b6b2-e7bd4a391224
+exl-id: d7617d8a-b9b1-4a55-a8b7-4bdf90fd6905
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1375'
 ht-degree: 0%
 
 ---
-
 
 # Paginaontwerp aanpassen{#customizing-page-authoring}
 
@@ -259,4 +259,3 @@ Als u op deze activering een aangepast gedrag wilt toepassen, kunt u de **Verzoe
 
 1. Werk het [workflowmodel](/help/sites-developing/workflows-models.md) en de bijbehorende configuraties/scripts naar wens bij.
 1. Het recht op de [ `replicate` actie](/help/sites-administering/security.md#actions) van alle relevante gebruikers voor alle relevante pagina&#39;s verwijderen; om deze workflow als een standaardactie te laten activeren wanneer een van de gebruikers een pagina probeert te publiceren (of te repliceren).
-
