@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6b62b280-d101-410a-ba8c-02940f766c32
+exl-id: 364dd7f3-9009-440e-8aff-28e2dac08fe7
 translation-type: tm+mt
-source-git-commit: 13d364ec820b48fb8b80da2ffd30faeeb7813a28
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1311'
 ht-degree: 0%
 
 ---
-
 
 # De doeltreffendheid en conversie van formulieren meten en verbeteren{#measure-and-improve-effectiveness-and-conversion-of-forms}
 
@@ -159,4 +159,3 @@ Sommige aanbevelingen voor het ontwerpen van formulieren en het uitvoeren van A/
 * Construeer een hypothese en identificeer succeswaarden voordat u de A/B-test uitvoert.
 * Voer minimale variaties (idealiter één voor één) uit in uw alternatieve ervaring om te weten wat de conversiesnelheid beïnvloedt.
 * Test regelmatig om inefficiënties te voorkomen.
-
