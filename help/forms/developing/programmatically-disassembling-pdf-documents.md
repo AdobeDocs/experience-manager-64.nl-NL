@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 8e38a597-5d22-4d83-95fe-4494fb04e4a3
 role: Developer
+exl-id: 3f757392-96a0-4f20-91d0-7fbccb1bf171
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1775'
+source-wordcount: '1774'
 ht-degree: 0%
 
 ---
-
 
 # PDF-documenten {#programmatically-disassembling-pdf-documents} programmatisch demonteren
 
