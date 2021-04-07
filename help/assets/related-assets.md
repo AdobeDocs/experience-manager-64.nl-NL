@@ -3,15 +3,15 @@ title: Verwante activa
 description: Leer hoe u elementen koppelt die bepaalde algemene kenmerken delen. U kunt de eigenschap ook gebruiken om bron/afgeleide verhoudingen tussen activa tot stand te brengen.
 contentOwner: AG
 feature: Middelenbeheer, Samenwerking
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: d19544c4-c8e7-4a39-9c86-15a46dca848e
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '596'
+source-wordcount: '594'
 ht-degree: 0%
 
 ---
-
 
 # Verwante activa {#related-assets}
 
