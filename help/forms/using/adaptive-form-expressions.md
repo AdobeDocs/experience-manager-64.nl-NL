@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9f3ba207-b5a3-43a2-b59c-0d74d62c03fc
 feature: Adaptieve Forms
+exl-id: ce6fa21c-aa83-4c5e-be7f-ad4f6e0811f8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2747'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve formulierexpressies {#adaptive-form-expressions}
 
@@ -288,4 +288,3 @@ Voer de volgende stappen uit om een aangepast patroon voor een specifiek veldtyp
 
    ![Aangepaste patronen maken voor velden in CrxDe](assets/creating-custom-patterns.png)
    **Figuur:Aangepaste patronen** *maken*
-
