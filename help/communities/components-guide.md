@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a777a3f1-b39f-4d90-b9b6-02d3e321a86f
+exl-id: 8cdd7b94-b247-4598-bb0f-36c5ec1319ec
 translation-type: tm+mt
-source-git-commit: 68953424eda50bf1734ac84473b442acdc9cdb24
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 0%
 
 ---
-
 
 # Community Components Guide {#community-components-guide}
 
@@ -47,7 +47,7 @@ Als de auteur de bewerkingsmodus wil activeren, voegt u `editor.html` of `cf#` i
 
    [https://&lt;server>:&lt;port>/editor.html/content/community-components/en.html](http://localhost:4502/editor.html/content/community-components/en.html)
 
-* Klassieke gebruikersinterface:
+* Klassieke interface:
 
    [https://&lt;server>:&lt;port>/cf#/content/community-components/en.html](http://localhost:4502/cf#/content/community-components/en.html)
 
