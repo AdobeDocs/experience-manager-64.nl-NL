@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: a7958411-b509-428e-bbe2-42efe8fd1add
 feature: Taalkopie
+exl-id: 6387fd5d-d8de-4ea8-b1e6-3274b53d4f41
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '618'
 ht-degree: 0%
 
 ---
-
 
 # Verbinding maken met Microsoft Translator{#connecting-to-microsoft-translator}
 
@@ -85,4 +85,3 @@ U moet uw configuraties van de wolkendienst activeren om vertaalde inhoud te ste
 
 * Microsoft Translation Service: /libs/settings/cloudconfigs/vertaling/msft-vertaling
 * Vertaling door derden: /etc/cloudservices/machine-vertaling
-
