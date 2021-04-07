@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: de466511-d82f-4ddb-8f6a-7ca9240fdeab
+exl-id: e532fdbb-c847-4061-996e-d1ffde3bb6be
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1327'
 ht-degree: 0%
 
 ---
-
 
 # Naar Adobe Analytics en Adobe Target{#opting-into-adobe-analytics-and-adobe-target}
 
@@ -211,4 +211,3 @@ Welke parameters u verzendt hangt van het volgende af:
    ```shell
    curl -v -u admin:admin -X POST -d"automaticProvisioning=false&servicename=target&servicename=analytics&path=/content/we-retail&analytics.server=https://servername/&analytics.company=Name of company&analytics.username=me&analytics.secret=secret&analytics.reportsuite=weretail&target.clientcode=mycompany&target.email=me@adobe.com&target.password=password" http://localhost:4502/libs/cq/cloudservicesprovisioning/content/autoprovisioning.json
    ```
-
