@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e83b1a59-a730-4d22-9d58-1c9c38e5d534
+exl-id: 933c3903-2040-41f4-b803-4d672ce9a2dc
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '177'
 ht-degree: 0%
 
 ---
-
 
 # Back-upstrategie voor Connector voor EMC Documentum gebruikers {#backup-strategy-for-connector-for-emc-documentum-users}
 
@@ -31,4 +31,3 @@ Herstel AEM formulieromgeving met behulp van ECM-opslagruimte en voer de volgend
 
 * Herstel uw respectieve ECM-systeem door de instructies in [Herstel de EMC Documentum Content Server](/help/forms/using/admin-help/backing-recovering-emc-documentum-repository.md#restore-the-emc-documentum-content-server) te volgen.
 * Herstel AEM formulieren door de instructies in dit document op te volgen.
-
