@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: bbc2aac9-ccf1-40c3-be4f-d59c2d0d8a6c
+exl-id: 351b8bc9-557d-4efe-8800-1752bf40f240
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
 
 ---
-
 
 # Uw Adobe Campaign{#targeting-your-adobe-campaign} aanwijzen
 
@@ -110,4 +110,3 @@ Een nieuwsbrief met doelinhoud maken:
    >[!NOTE]
    >
    >Als u de segmenten ook in Adobe Campaign plaatst, zal het klikken **Voorproef** u de ervaringen voor elk segment tonen.
-
