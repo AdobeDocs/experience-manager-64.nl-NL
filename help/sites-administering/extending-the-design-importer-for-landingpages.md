@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: f8991416-995b-4160-a705-d131e78089ee
+exl-id: 4b37c866-30c3-45ff-b7a3-013b69598668
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3509'
 ht-degree: 0%
 
 ---
-
 
 # Het uitbreiden van en het Vormen van de Importeur van het Ontwerp voor het Landing Pages{#extending-and-configuring-the-design-importer-for-landing-pages}
 
@@ -599,4 +599,3 @@ Vervolgens wordt `box img` gebruikt in de ontwerpimportmodule. De resulterende l
 >[!NOTE]
 >
 >Ontwerpers dienen er zich ook van bewust te zijn dat alleen code binnen de tag **id=cqcanvas** door de importer wordt herkend, anders blijft het ontwerp niet behouden.
-
