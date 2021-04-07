@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: 1b9f8d98-e7e8-4b9b-a0df-52ccba324da3
-role: Beheerder
+role: Administrator
+exl-id: 6609c625-0591-42fd-910b-c7c65d52c5f1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '3316'
 ht-degree: 0%
 
 ---
-
 
 # Ondersteunde Platforms voor AEM Forms op JEE {#supported-platforms-for-aem-forms-on-jee}
 
