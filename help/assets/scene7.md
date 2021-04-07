@@ -5,14 +5,16 @@ contentOwner: Alva Ware-Bevacqui
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 topic-tags: managing-assets
+exl-id: b11b19c1-712d-4698-aefc-930ff8cacbc1
+feature: Dynamic Media Classic
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2691'
+source-wordcount: '2694'
 ht-degree: 0%
 
 ---
-
 
 # Dynamic Media Klassieke functies toevoegen aan uw pagina {#adding-scene-features-to-your-page}
 
@@ -153,7 +155,7 @@ In de HTML5 **[!UICONTROL Flyout]**-component wordt het element weergegeven als 
 >
 >Als uw **[!UICONTROL Flyout]** component een douanegrootte gebruikt, dan wordt die douanegrootte gebruikt en ontvankelijke opstelling van de component wordt onbruikbaar gemaakt.
 >
->Als uw **[!UICONTROL Flyout]** component de standaardgrootte gebruikt, zoals die in **[!UICONTROL Design View]** wordt geplaatst, dan wordt de standaardgrootte gebruikt en de componentenrek om de grootte van de paginalay-out met ontvankelijke opstelling van de toegelaten component aan te passen. Houd er echter rekening mee dat er een beperking geldt voor de responsieve installatie van de component. Wanneer u de **[!UICONTROL Flyout]** component met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de **[!UICONTROL Flyout]** buiten de rechterrand van de pagina uitsteken.
+>Als uw **[!UICONTROL Flyout]** component de standaardgrootte gebruikt, zoals die in **[!UICONTROL Design View]** wordt geplaatst, dan wordt de standaardgrootte gebruikt en de component rekt om de grootte van de paginalay-out met ontvankelijke opstelling van de toegelaten component aan te passen. Houd er echter rekening mee dat er een beperking geldt voor de responsieve instelling van de component. Wanneer u de **[!UICONTROL Flyout]** component met ontvankelijke opstelling gebruikt, zou u het niet met volledige paginalrek moeten gebruiken. Anders kan de **[!UICONTROL Flyout]** buiten de rechterrand van de pagina uitsteken.
 
 ![chlimage_1-228](assets/chlimage_1-228.png)
 
@@ -363,5 +365,4 @@ In de Klassieke browser van Dynamic Media kunt u resultaten filteren om het volg
 * **[!UICONTROL Publish Status]**
 U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus:  **[!UICONTROL Unpublished]** of  **[!UICONTROL Published]**. Als u geen **[!UICONTROL Publish Status]** selecteert, AEM standaard alle publicatiestatus doorzoekt.
 
-![chlimage_1-247](assets/chlimage_1-247.png)
-
+![chlimage_1-248](assets/chlimage_1-247.png)
