@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d997a268-a40a-462d-badd-94f0731f7ba4
 feature: PDF Generator
+exl-id: 6942b6fc-8d04-429f-8433-1ab74c68fcc1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '265'
 ht-degree: 0%
 
 ---
-
 
 # Terugvallettertypen configureren {#configuring-fallback-fonts}
 
@@ -48,4 +48,3 @@ U kunt het bestand FontManagerResources.properties handmatig zodanig configurere
 >[!NOTE]
 >
 >Gebruik Configuration Manager niet om het bestand adobe-livecycle-[appserver].ear opnieuw te verpakken, omdat hierdoor uw wijzigingen worden overschreven door de standaardwaarden voor AEM formulieren.
-
