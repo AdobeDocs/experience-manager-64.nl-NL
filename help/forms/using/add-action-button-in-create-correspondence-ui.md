@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 481856df-5db1-4ef5-80d3-3722b5bf8b67
 feature: Correspondentenbeheer
+exl-id: 5bcb26dc-aeb7-4a81-b905-23c8fb05d6d0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1784'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste handeling/knop toevoegen in interface voor correspondentie maken {#add-custom-action-button-in-create-correspondence-ui}
 
