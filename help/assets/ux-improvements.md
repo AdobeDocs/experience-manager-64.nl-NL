@@ -3,15 +3,15 @@ title: Verbeterde gebruikerservaring in middelen
 description: In dit artikel worden de verbeteringen in AEM 6.4 Assets beschreven.
 contentOwner: AG
 feature: Geen informatie
-role: Leader,Business Practiter
+role: Leader,Business Practitioner
+exl-id: 65029113-987e-46eb-86eb-8028233031f9
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '630'
+source-wordcount: '627'
 ht-degree: 0%
 
 ---
-
 
 # Verbeterde gebruikerservaring in elementen {#user-experience-enhancements-in-assets}
 
