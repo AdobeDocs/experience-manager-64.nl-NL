@@ -5,14 +5,14 @@ description: Vragen, antwoorden en bronnen voor gebruikers die nog niet zijn AEM
 seo-description: Vragen, antwoorden en bronnen voor gebruikers die nog niet zijn AEM
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: 654c2576-93c0-4095-ba66-9c6ffb41c953
 translation-type: tm+mt
-source-git-commit: 4c1b1210503dc535585ae8912a7b94b88d1604cf
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 5%
 
 ---
-
 
 # Bronnen voor nieuwe AEM gebruikers {#resources-for-new-aem-users}
 
