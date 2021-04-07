@@ -8,14 +8,14 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 39262cb1-1447-469a-9c01-886f66eeec74
 feature: Interactieve communicatie
+exl-id: b4ec8004-d100-4bcb-b2d8-0928e0955d3f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2013'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstudie: Interactieve communicatie {#tutorial-create-interactive-communication} maken
 
@@ -230,4 +230,3 @@ Voer de volgende stappen uit om de inhoud van het Kanaal van het Web af te leide
    ![ic_web_content_tree](assets/ic_web_content_tree.png)
 
 1. Herhaal stap 13 - 18 van [Interactieve communicatie voor het Kanaal van het Web creëren](#create-interactive-communication-for-web-channel) om **Nu betalen** en **Abonneren** hyperlinks in het Kanaal van het Web van de Interactieve Mededeling op te nemen.
-
