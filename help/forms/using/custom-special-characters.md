@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1b5e6746-3618-46fe-ba2d-ec76bb79de1d
 feature: Correspondentenbeheer
+exl-id: a6206ae1-b71b-4066-b7a0-ce39a60d6dd0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 1%
 
 ---
-
 
 # Aangepaste speciale tekens in Correspondentenbeheer {#custom-special-characters-in-correspondence-management}
 
@@ -144,4 +144,3 @@ Gebruik de volgende stappen om ondersteuning voor aangepaste speciale tekens toe
   </tr> 
  </tbody> 
 </table>
-
