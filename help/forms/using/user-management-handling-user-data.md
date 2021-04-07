@@ -7,15 +7,15 @@ uuid: 2b76b69f-6f3a-4f1a-a2a4-d39f5e529f75
 topic-tags: grdp
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a88fc933-f1af-4798-b72f-10e7b0d2fd11
-role: Beheerder
+role: Administrator
+exl-id: 5005d57c-2585-46d1-9785-939e249a0128
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '957'
+source-wordcount: '956'
 ht-degree: 0%
 
 ---
-
 
 # Forms-gebruikersbeheer | Gebruikersgegevens {#forms-user-management-handling-user-data} verwerken
 
@@ -193,4 +193,3 @@ Een gebruiker verwijderen:
 1. Zoek naar een gebruiker en klik de gebruikersbenaming tweemaal om gebruikerseigenschappen te openen. Kopieer de eigenschap `Path`.
 1. Ga naar AEM CRX DELite op `https://[*server*]:[*port*]/lc/crx/de/index.jsp` en navigeer of zoek het gebruikerspad.
 1. Verwijder het pad en klik op **[!UICONTROL Save All]** om de gebruiker definitief uit AEM opslagplaats te verwijderen.
-
