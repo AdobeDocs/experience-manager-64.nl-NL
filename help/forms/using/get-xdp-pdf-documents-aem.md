@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 99da0d37-726e-42b9-b98a-5dd6c2165af6
-role: Beheerder
+role: Administrator
+exl-id: 50bf178d-7a3c-41df-9d13-99c74d944700
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '703'
+source-wordcount: '702'
 ht-degree: 0%
 
 ---
-
 
 # XDP- en PDF-documenten ophalen in AEM Forms {#getting-xdp-and-pdf-documents-in-aem-forms}
 
@@ -89,4 +89,3 @@ Als u een formuliersjabloon verwijdert, wordt het afhankelijke adaptieve formuli
 Er wordt een vlag onderhouden om aan te geven of een adaptief formulier bevuild is. Deze informatie is beschikbaar op de pagina met formuliereigenschappen, naast de metagegevens van het formulier. Alleen voor vuile adaptieve formulieren geeft een metagegevenseigenschap `Model Refresh` `Recommended` waarde weer.
 
 ![Indicatie van een adaptief formulier dat niet synchroon is met het XFA-model](assets/model-refresh.png)
-
