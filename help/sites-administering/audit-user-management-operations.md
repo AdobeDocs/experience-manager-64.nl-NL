@@ -2,6 +2,7 @@
 title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
 seo-title: Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren
 description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
+feature: Bewerkingen
 seo-description: Leer hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM te controleren.
 uuid: 4ea704b4-9150-4b5f-b9cb-cdac95cfd70c
 contentOwner: User
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 437fa139-2dde-41a0-9649-6bb110039618
+exl-id: f987c4f5-64dd-491b-aafe-cb98acf0b1eb
 translation-type: tm+mt
-source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '319'
-ht-degree: 0%
+source-wordcount: '320'
+ht-degree: 1%
 
 ---
-
 
 # Hoe te om de Verrichtingen van het Beheer van de Gebruiker in AEM{#how-to-audit-user-management-operations-in-aem} te controleren
 
