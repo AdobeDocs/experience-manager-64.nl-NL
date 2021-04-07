@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: df7b60bb-4897-479e-a05e-1b1e9429ed87
 role: Developer
+exl-id: 82770ac6-aafc-44b9-82fb-6f193bb3a128
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2507'
+source-wordcount: '2506'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms aanroepen met REST-verzoeken {#invoking-aem-forms-using-rest-requests}
 
