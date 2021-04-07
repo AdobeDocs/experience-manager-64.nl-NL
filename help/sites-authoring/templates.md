@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 5a96c306-790a-4721-a146-86fbceb376db
+exl-id: 2af8eaed-3963-4016-9efa-a630d16a982b
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4811'
 ht-degree: 8%
 
 ---
-
 
 # Paginasjablonen maken {#creating-page-templates}
 
@@ -254,7 +254,7 @@ Een sjabloon kan worden in- of uitgeschakeld om het beschikbaar te maken of niet
 
 #### Een sjabloon toestaan - Auteur {#allowing-a-template-author}
 
-Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasvertakkingen.
+Een sjabloon kan beschikbaar worden gesteld of niet beschikbaar zijn voor bepaalde paginasecties.
 
 1. Open [Pagina-eigenschappen](/help/sites-authoring/editing-page-properties.md) voor de hoofdpagina van de vertakking waar u de sjabloon beschikbaar wilt maken.
 
@@ -515,7 +515,7 @@ In de modus **Structuur** van de sjablooneditor:
    Op **Toegestane Componenten** lusje, bepaalt u welke componenten voor de lay-outcontainer beschikbaar zijn.
 
    * De componenten worden gegroepeerd op hun componentgroepen, die kunnen worden uitgevouwen en samengevouwen.
-   * U kunt een hele groep selecteren door de naam van de groep te controleren. U kunt de selectie van alle groepen ongedaan maken door de selectie uit te schakelen.
+   * U kunt een hele groep selecteren door de naam van de groep te controleren en u kunt de selectie van alle groepen opheffen door de selectie uit te schakelen.
    * Een min vertegenwoordigt minstens één maar niet alle punten in een groep worden geselecteerd.
    * Er is een zoekopdracht beschikbaar om naar een component op naam te filteren.
    * De tellingen die rechts van de naam van de componentengroep worden vermeld vertegenwoordigen het totale aantal geselecteerde componenten in die groepen ongeacht de filter.
@@ -530,7 +530,7 @@ In de modus **Structuur** van de sjablooneditor:
 
    Selecteer een component in de lijst en klik of tik op **Type toevoegen** om een extra MIME-type toe te voegen aan een reeds toegewezen component. Klik op het pictogram **Verwijderen** om een MIME-type te verwijderen.
 
-   ![chlimage_1-375](assets/chlimage_1-375.png)
+   ![chlimage_1-376](assets/chlimage_1-375.png)
 
    *Instellingen voor responsie*
 
@@ -724,4 +724,3 @@ Houd bij het maken van sjablonen rekening met:
 
 1. [Uw eigen ](#creating-a-template-folder-admin) mappen maken voor uw sitespecifieke sjablonen.
 1. [Publiceer uw sjablonen ](#publishing-a-template-template-author) vanuit de  **** Templatesconsole.
-
