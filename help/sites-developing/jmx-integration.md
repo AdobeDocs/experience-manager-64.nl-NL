@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: df8cfde3-543d-4150-9822-9be763908bd7
+exl-id: d56fa6ba-6ac7-4d4f-968b-075f4f13957c
 translation-type: tm+mt
-source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1687'
 ht-degree: 0%
 
 ---
-
 
 # Services integreren met de JMX-console{#integrating-services-with-the-jmx-console}
 
@@ -595,4 +595,3 @@ Voeg het volgende profiel toe aan het instellingenbestand van uw afbeelding om d
      </pluginRepositories>
 </profile>
 ```
-
