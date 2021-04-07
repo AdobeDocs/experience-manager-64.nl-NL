@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 6afbc889-c613-40e6-8a25-1570dff32d60
+exl-id: f620e85e-8c77-41a3-a238-9b93c819909d
 translation-type: tm+mt
-source-git-commit: cfa09d2f1a78eac609cb6df7817234559c8d26dc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '502'
 ht-degree: 2%
 
 ---
-
 
 # Uw accountomgeving configureren{#configuring-your-account-environment}
 
@@ -108,4 +108,3 @@ Elke gebruiker kan bepaalde eigenschappen voor zichzelf instellen.
 * **Introductiepagina van middelen inschakelen**
 
    Deze optie is alleen beschikbaar als uw systeembeheerder de functie voor het introductiepagina van middelen heeft ingeschakeld voor de hele organisatie.
-
