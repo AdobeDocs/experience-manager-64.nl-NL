@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: projects
 content-type: reference
 discoiquuid: fb354c72-debb-4fb6-9ccf-56ff5785c3ae
+exl-id: 5066e2a2-9904-4203-914f-b0d4da2c88e4
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1061'
 ht-degree: 10%
 
 ---
-
 
 # Projecten beheren{#managing-projects}
 
@@ -164,4 +164,3 @@ Een project inactief (of actief) maken:
    ![chlimage_1-267](assets/chlimage_1-267.png)
 
 1. Tik/klik **Done** om uw wijzigingen op te slaan.
-
