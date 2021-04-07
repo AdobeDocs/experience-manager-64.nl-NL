@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: cd87e1e8-5329-4e60-ac9d-2705f54d0da6
+exl-id: 9e93b28b-627d-4676-82a6-d719de4d152a
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '520'
 ht-degree: 6%
 
 ---
-
 
 # Zoeken{#search-features}
 
@@ -120,4 +120,3 @@ Naast het zoeken op basis van een groot aantal facetten kunt u ook een bepaalde 
 Opgeslagen zoekopdrachten kunnen worden gewijzigd door de opgeslagen zoekopdracht te selecteren en onder aan het zoekvenster op **Opgeslagen zoekopdracht bewerken** te klikken.
 
 ![screen_shot_2018-03-23at102213](assets/screen_shot_2018-03-23at102213.png)
-
