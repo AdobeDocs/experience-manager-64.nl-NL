@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 3d4258de-c0bb-4952-b6f0-0c5f2a15e531
+exl-id: f792a65d-35f5-4143-bec2-c64de3f567b4
 translation-type: tm+mt
-source-git-commit: a8e0a48466c046bf1f96ff240995b499818ed0a2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '8940'
 ht-degree: 9%
 
 ---
-
 
 # Toegankelijke content maken (WCAG 2.0-compatibiliteit){#creating-accessible-content-wcag-conformance}
 
@@ -270,7 +270,7 @@ Er zijn twee manieren om aan dit succescriterium te voldoen. Beide zijn acceptab
 
 1. Verstrek een tekstranscriptie die een geschikt tekstequivalent van de audio en visuele elementen van de video of de animatie is. In voorkomend geval moet daarin worden vermeld wie het woord voert, een beschrijving van de instelling, mondelinge uitdrukkingen. Afhankelijk van de lengte kunt u de transcriptie op dezelfde pagina plaatsen als de video of animatie, of op een aparte pagina. Als u de laatste optie kiest, geeft u een koppeling op naar de transcriptie naast de video of animatie.
 
-Exacte details over het maken van video met audioverichting vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste insteekmodule te downloaden en een alternatief voor tekst bieden via het element `<noscript>`.
+Exacte details over het maken van video met een audiobeschrijving vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste insteekmodule te downloaden en een alternatief voor tekst bieden via het element `<noscript>`.
 
 #### Meer informatie - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
@@ -900,7 +900,7 @@ Als gegevens in een specifieke indeling moeten worden ingevoerd, maakt u dit dui
 
 Als invoer voor een formulierveld verplicht is, maakt u dit duidelijk door het vereiste woord als onderdeel van het label te gebruiken. AEM voegt een sterretje toe wanneer een veld vereist is, maar het is ideaal om het woord `required`in het label zelf op te nemen (in het veld **Titel** in het dialoogvenster Bewerken).
 
-![Extra informatie (het woord is vereist) toevoegen aan schermlezers in het veld Titel.](assets/chlimage_1-210.png)
+![Extra informatie (het vereiste woord) toevoegen aan schermlezers in het veld Titel.](assets/chlimage_1-210.png)
 
 Het positioneren van labels is ook belangrijk, omdat ze hierdoor geschikte velden kunnen vinden. Dit is van bijzonder belang wanneer de gebruiker met een complexe vorm wordt geconfronteerd. Volg de onderstaande conventie:
 
@@ -913,4 +913,3 @@ In eenvoudige formulieren met een zeer beperkte functionaliteit kan het correct 
 
 * [Werken met succescriterium 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [Voldoen aan criterium 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-
