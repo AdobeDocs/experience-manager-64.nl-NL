@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 8b8e74c5-8b65-4117-9ef0-da9d9e47191f
+exl-id: f95d1471-82a1-4c37-ac5b-0eb861c823a1
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1089'
 ht-degree: 0%
 
 ---
-
 
 # Kalenderfunctie {#calendar-feature}
 
