@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 29e0bdfa-1d49-47d9-a332-04da062d3d3f
+exl-id: 26d912e1-d8ee-44fc-8c82-ccc66551ddc1
 translation-type: tm+mt
-source-git-commit: f1026e4dc9e12f760509a706a92888b90c9af395
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '307'
 ht-degree: 0%
 
 ---
-
 
 # De Rich Text Editor gebruiken om inhoud {#using-the-rich-text-editor-to-author-content} te schrijven
 
