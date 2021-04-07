@@ -10,14 +10,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 032aea1f-0105-4299-8d32-ba6bee78437f
 feature: Tags
+exl-id: b3b0f505-3d7d-493d-a37b-abc8a365f95b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '894'
 ht-degree: 0%
 
 ---
-
 
 # Tags maken in een AEM toepassing{#building-tagging-into-an-aem-application}
 
@@ -200,4 +200,3 @@ De nieuwe taal (Fins) is nu beschikbaar in het tagdialoogvenster van de pagina-e
 >[!NOTE]
 >
 >De nieuwe taal moet een van de AEM erkende talen zijn, d.w.z. het moet beschikbaar zijn als een knooppunt onder `/libs/wcm/core/resources/languages`.
-
