@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 910229a3-38b1-44f1-9c09-55f8fd6cbb1d
+exl-id: cd036e4a-0884-4ba0-83e9-7013583bbbae
 translation-type: tm+mt
-source-git-commit: f824b449b85ad7900aaf73fd79614f5e6140f873
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '593'
 ht-degree: 2%
 
 ---
-
 
 # Sandbox-toepassing ontwikkelen {#develop-sandbox-application}
 
@@ -127,7 +127,7 @@ Het paneel Middelen/component wordt weergegeven wanneer het zijpaneel geopend is
 
 ![chlimage_1-232](assets/chlimage_1-232.png)
 
-* Klassieke gebruikersinterface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
+* Klassieke interface: [http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html](http://localhost:4502/cf#/content/an-scf-sandbox/en/play.html)
 
 Hieronder ziet u hoe de afspeelpagina wordt weergegeven in de klassieke gebruikersinterface, inclusief in de zoekfunctie voor inhoud (cf):
 
