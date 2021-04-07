@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 72fe5749-2fa2-442f-b679-7889faeafcac
+exl-id: 9eabafbe-2193-4799-9bdd-c2be42ead0b9
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1228'
 ht-degree: 0%
 
 ---
-
 
 # Globale instellingen importeren en exporteren {#importing-and-exporting-global-settings}
 
@@ -58,7 +58,7 @@ Nadat u het algemene instellingenbestand hebt geëxporteerd, kunt u de instellin
 
 ## Globale instellingen exporteren {#export-global-settings}
 
-1. Klik op de pagina Algemeen beheer onder Globale instellingen exporteren op Exporteren.
+1. Voor de Globale pagina van het Beleid, onder de Globale Montages van de Uitvoer, klik de Uitvoer.
 1. Sla het bestand op uw computer op.
 
 ## Algemene instellingen werkruimte {#workspace-global-settings}
