@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: fd393bb9-f77e-4fe0-a7a9-97181ca58136
+exl-id: 6a531a61-39f2-4bf7-8250-4264942c0981
 translation-type: tm+mt
-source-git-commit: 0cb1a323ac56b5b8ecd07f84c4840f1b466d5796
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2588'
 ht-degree: 0%
 
 ---
-
 
 # Het uitbreiden van de Manager van de MultiPlaats{#extending-the-multi-site-manager}
 
