@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_managing_domains
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 7ec0698a-9e6e-48d4-bba2-5a6eee313900
+exl-id: d6b2f389-bff4-481d-93bf-87f56114a91b
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1040'
 ht-degree: 0%
 
 ---
-
 
 # Mappen {#synchronizing-directories} synchroniseren
 
@@ -100,4 +100,3 @@ Het gebruik van de expressie voor uitsnijden is gebaseerd op het open-source taa
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Domeinbeheer.
 1. Klik op Afbreken. Deze knop wordt alleen weergegeven als er een mappensynchronisatie wordt uitgevoerd.
-
