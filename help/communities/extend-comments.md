@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: a07a4690-0e47-4a76-84cb-96abdc70b835
+exl-id: f6722953-ff71-4fba-b76e-1d566f71f6d5
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '271'
 ht-degree: 0%
 
 ---
-
 
 # Component {#extend-comments-component} voor opmerkingen uitbreiden
 
@@ -41,4 +41,3 @@ Als u opmerkingen wilt uitbreiden, moet u:
 1. [De componenten maken](extend-create-components.md)
 1. [Opmerking toevoegen aan voorbeeldpagina](extend-sample-page.md)
 1. [De vormgeving wijzigen](extend-alter-appearance.md)
-
