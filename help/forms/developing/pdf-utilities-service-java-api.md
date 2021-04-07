@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 4ec4c674-d7d3-4988-9d77-78d274970672
 role: Developer
+exl-id: 0ada2e06-9a88-4262-8970-7b2aa52a8434
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '504'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
-
 
 # Java API Quick Start (SOAP) {#pdf-utilities-service-java-apiquick-start-soap}
 
@@ -667,4 +667,3 @@ public class Sanitization {
     } 
 }
 ```
-
