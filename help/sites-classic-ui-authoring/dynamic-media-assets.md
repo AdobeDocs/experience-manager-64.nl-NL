@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 2a60cacf-0551-44d4-9965-705a715d44c5
+exl-id: 3db8153c-eb0c-4767-b7cf-10fb858468b7
 translation-type: tm+mt
-source-git-commit: 4ae3c1dc9af8a9d4a3cdb8a30ed8d898e1079ce6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '247'
 ht-degree: 4%
 
 ---
-
 
 # Werken met Dynamic Media{#working-with-dynamic-media}
 
@@ -29,4 +29,3 @@ Werken met Dynamic Media is niet beschikbaar in de klassieke gebruikersinterface
 >[!NOTE]
 >
 >Als u Dynamic Media gebruikt, kunt u niet gelijktijdig automatische uploads gebruiken beschikbaar als [Dynamic Media Classic in AEM](/help/sites-administering/scene7.md) integreert. Zie [inschakelen van Dynamic Media](/help/assets/config-dynamic.md#enabling-dynamic-media). Dynamic Media is standaard uitgeschakeld.
-
