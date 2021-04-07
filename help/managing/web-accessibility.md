@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-accessibility, introduction
 content-type: reference
 discoiquuid: 13c7e0bd-54af-49f3-9743-075ce6f3314d
+exl-id: f0ccdeae-3dbb-4dba-89cf-4c8b759da22b
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '500'
 ht-degree: 42%
 
 ---
-
 
 # AEM en de Web Accessibility Guidelines{#aem-and-the-web-accessibility-guidelines}
 
