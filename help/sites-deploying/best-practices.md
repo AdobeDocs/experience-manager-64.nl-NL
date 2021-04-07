@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 4b5c0677-c630-4fae-867e-4f4583ac8507
+exl-id: 0c8fefb5-6fa0-4fab-a890-9f5ae7508459
 translation-type: tm+mt
-source-git-commit: c9591211c80d453de5172c90501d2d2907eba4e6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '438'
 ht-degree: 0%
 
 ---
-
 
 # Het opstellen van Beste praktijken{#deploying-best-practices}
 
@@ -115,4 +115,3 @@ Hier worden aanbevolen werkwijzen weergegeven met betrekking tot prestaties:
   </tr>
  </tbody>
 </table>
-
