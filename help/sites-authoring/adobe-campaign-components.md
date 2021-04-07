@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: f328cd1e-30a3-42d2-88b7-64455ee9eb1f
+exl-id: 02641496-188b-465c-9256-b2e377eb685c
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2786'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Campaign Components{#adobe-campaign-components}
 
@@ -40,7 +40,7 @@ Een beschrijving van deze componenten vindt u in de volgende sectie.
 
 De componenten zijn als volgt:
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### Kop (campagne) {#heading-campaign}
 
@@ -51,7 +51,7 @@ De kopcomponent kan:
 
 U bewerkt de component **Kop (Campagne)** rechtstreeks. Laat leeg als u de paginatitel wilt gebruiken.
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![chlimage_1-106](assets/chlimage_1-106.png)
 
 U kunt het volgende configureren:
 
@@ -89,7 +89,7 @@ Nadat de afbeelding is geüpload (en niet eerder), kunt u [Bewerken op plaats ve
 >
 >Afhankelijk van uw exemplaar, kunnen de minimum en maximumbeperkingen ook door het [ontwerp van pagina](/help/sites-developing/designer.md) worden opgelegd; deze worden ontwikkeld tijdens de uitvoering van het project .
 
-In de modus Volledig scherm zijn verschillende aanvullende opties beschikbaar. bijvoorbeeld toewijzen en zoomen:
+Er zijn verschillende aanvullende opties beschikbaar in de modus Volledig scherm; bijvoorbeeld toewijzen en zoomen:
 
 ![](do-not-localize/chlimage_1-11.png)
 
@@ -183,7 +183,7 @@ In het volgende voorbeeld ziet u een component Link (Campagne) die wordt weergeg
 
 [Scene7 Image ](https://experienceleague.adobe.com/docs/dynamic-media-classic/using/template-basics/quick-start-template-basics.html#template-basics) Templatesare layered zijn gelaagde afbeeldingsbestanden, waarbij inhoud en eigenschappen kunnen worden geparametriseerd voor variabiliteit. Met de component **Afbeeldingssjabloon** kunt u Dynamic Media Classic (voorheen Scene7)-sjablonen in nieuwsbrieven gebruiken en de waarden van sjabloonparameters wijzigen. Daarnaast kunt u metagegevensvariabelen van Adobe Campaign binnen de parameters gebruiken, zodat elke gebruiker de afbeelding op een persoonlijke manier ervaart.
 
-![chlimage_1-191](assets/chlimage_1-111.png)
+![chlimage_1-111](assets/chlimage_1-111.png)
 
 Klik **Bewerken** om de component te configureren. U kunt de instellingen configureren die in deze sectie worden beschreven. Deze Dynamic Media Classic (voorheen Scene7) afbeeldingssjabloon wordt gedetailleerd beschreven in [Scene7 Image Template component](/help/assets/scene7.md#image-template).
 
@@ -268,7 +268,7 @@ De component van de Tekst &amp; van de Personalisatie (Campagne) laat u een teks
 
 Met de selectie van pictogrammen kunt u tekst opmaken, inclusief lettertypekenmerken, uitlijning, koppelingen, lijsten en inspringing. De functionaliteit is in wezen het zelfde in [beide UIs](/help/sites-authoring/editing-content.md), hoewel het blik-en-gevoel verschillend is:
 
-![chlimage_1-115](assets/chlimage_1-115.png)
+![chlimage_1-114](assets/chlimage_1-115.png)
 
 In de Inplace redacteur kunt u tekst toevoegen, de rechtvaardiging veranderen, verbindingen toevoegen en verwijderen, contextgebieden of verpersoonlijkingsblokken toevoegen, en volledig-schermwijze ingaan. Wanneer u klaar bent met het toevoegen van tekst/personalisatie, selecteert u het vinkje om de wijzigingen op te slaan (of x om te annuleren). Zie [Bewerken plaatsen](/help/sites-authoring/editing-content.md#edit-configure-copy-cut-delete-paste) voor meer informatie.
 
@@ -553,4 +553,3 @@ Naast [instellingen die gelden voor de meeste Adobe Campaign-componenten](#setti
 In het volgende voorbeeld wordt een component Text Field (Campaign) weergegeven.
 
 ![chlimage_1-131](assets/chlimage_1-131.png)
-
