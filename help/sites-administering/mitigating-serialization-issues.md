@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: f3781d9a-421a-446e-8b49-40744b9ef58e
+exl-id: 779e1e4c-9a6e-4446-9c12-5b2499afbf6a
 translation-type: tm+mt
-source-git-commit: 97d60c4d18b7842f9fc7c81be33ac1acfca8b24d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '969'
 ht-degree: 0%
 
 ---
-
 
 # Het verminderen van rangschikkingskwesties in AEM{#mitigating-serialization-issues-in-aem}
 
@@ -26,11 +26,11 @@ Het AEM team bij Adobe werkt nauw samen met het opensource-project [NotSoSerial]
 
 De agent jar inbegrepen met dit pakket is Adobe aangepaste distributie van NotSoSerial.
 
-NotSoSerial is een oplossing op Java-niveau voor een probleem op Java-niveau en is niet AEM specifiek. Er wordt een Preflight-controle toegevoegd aan een poging om een object te deserialiseren. Deze controle zal een klassennaam tegen een firewall-stijl lijst van gewenste personen en/of lijst van afgewezen personen testen. Vanwege het beperkte aantal klassen in de standaard lijst van afgewezen personen is het onwaarschijnlijk dat dit van invloed is op uw systemen of code.
+NotSoSerial is een oplossing op Java-niveau voor een probleem op Java-niveau en is niet AEM specifiek. Er wordt een Preflight-controle toegevoegd aan een poging om een object te deserialiseren. Deze controle zal een klassennaam tegen een firewall-stijl lijst van gewenste personen en/of lijst van gewezen personen testen. Vanwege het beperkte aantal klassen in de standaard lijst van gewezen personen is het onwaarschijnlijk dat dit van invloed is op uw systemen of code.
 
-Door gebrek, zal de agent een lijst van afgewezen personen controle tegen huidige bekende kwetsbare klassen uitvoeren. Deze lijst van afgewezen personen is bedoeld om u tegen de huidige lijst van exploitaties te beschermen die dit type van kwetsbaarheid gebruiken.
+Door gebrek, zal de agent een lijst van gewezen personen controle tegen huidige bekende kwetsbare klassen uitvoeren. Deze lijst van gewezen personen is bedoeld om u te beschermen tegen de huidige lijst van exploitaties die dit type van kwetsbaarheid gebruiken.
 
-De lijst van afgewezen personen en de lijst van gewenste personen kunnen worden gevormd door de instructies in [het Vormen van de Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) sectie van dit artikel te volgen.
+De lijst van gewezen personen en de lijst van gewenste personen kunnen worden gevormd door de instructies in [het Vormen van de Agent](/help/sites-administering/mitigating-serialization-issues.md#configuring-the-agent) sectie van dit artikel te volgen.
 
 De agent is bedoeld om de recentste bekende kwetsbare klassen te helpen verlichten. Als uw project niet-vertrouwde gegevens deserializing, kan het nog kwetsbaar aan ontkenning van de dienstaanvallen, uit geheugenaanvallen, en onbekende toekomstige deserialization exploiteert.
 
@@ -69,7 +69,7 @@ De agent NotSoSerial is niet inbegrepen in de standaarddistributie van AEM voor 
 
 ## Het vormen van de agent {#configuring-the-agent}
 
-De standaardconfiguratie is geschikt voor de meeste installaties. Dit omvat een lijst van afgewezen personen van bekende klassen die kwetsbaar zijn voor externe uitvoering en een lijst van gewenste personen van pakketten waar deserialization van vertrouwde gegevens relatief veilig zou moeten zijn.
+De standaardconfiguratie is geschikt voor de meeste installaties. Dit omvat een lijst van gewezen personen van bekende klassen die kwetsbaar zijn voor externe uitvoering en een lijst van gewenste personen van pakketten waar deserialization van vertrouwde gegevens relatief veilig zou moeten zijn.
 
 De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd door:
 
@@ -83,7 +83,7 @@ De firewallconfiguratie is dynamisch, en kan op elk ogenblik worden veranderd do
    >* `https://server:port/system/console/configMgr/com.adobe.cq.deserfw.impl.DeserializationFirewallImpl`
 
 
-Deze configuratie bevat de lijst van gewenste personen, de lijst van afgewezen personen, en deserialization registreren.
+Deze configuratie bevat de lijst van gewenste personen, de lijst van gewezen personen, en deserialization registreren.
 
 **Aanbieding toestaan**
 
@@ -91,7 +91,7 @@ In de sectie voor het toestaan van lijsten zijn dit klassen of voorvoegsels van 
 
 **Aanbieding blokkeren**
 
-In de sectie met bloklijsten staan klassen die nooit voor deserialisatie zijn toegestaan. De aanvankelijke reeks van deze klassen is beperkt tot klassen die aan verre uitvoeringsaanvallen kwetsbaar zijn gevonden. De lijst van afgewezen personen wordt toegepast voordat vermelde items worden toegestaan.
+In de sectie met bloklijsten staan klassen die nooit voor deserialisatie zijn toegestaan. De aanvankelijke reeks van deze klassen is beperkt tot klassen die aan verre uitvoeringsaanvallen kwetsbaar zijn gevonden. De lijst van gewezen personen wordt toegepast voordat vermelde items worden toegestaan.
 
 **Diagnostische registratie**
 
@@ -142,4 +142,3 @@ Volg onderstaande instructies om de agent handmatig te laden:
 ## Andere overwegingen {#other-considerations}
 
 Als u een IBM JVM gebruikt, raadpleegt u de documentatie over ondersteuning voor de Java Attach API op [deze locatie](https://www.ibm.com/support/knowledgecenter/SSSTCZ_2.0.0/com.ibm.rt.doc.20/user/attachapi.html).
-
