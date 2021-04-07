@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: 9ba95dce-a801-4a36-8798-45d295371b1b
+exl-id: 93921d23-a2bf-43b6-b002-58a7482b22b0
 translation-type: tm+mt
-source-git-commit: 6be46f6986d1631f711cfd4464cc4f2d17014681
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3187'
 ht-degree: 0%
 
 ---
-
 
 # Dynamic Media Classic-functies toevoegen aan uw pagina{#adding-scene-features-to-your-page}
 
@@ -408,4 +408,3 @@ AEM zoekt standaard naar de geselecteerde map en naar alle submappen.
 **[!UICONTROL Publish Status]** U kunt filteren op elementen die zijn gebaseerd op de publicatiestatus:  [!UICONTROL Published] of  [!UICONTROL Unpublished]. Als u geen [!UICONTROL Publish status] selecteert, AEM standaard alle publicatiestatus doorzoekt.
 
 ![chlimage_1-98](assets/chlimage_1-98.png)
-
