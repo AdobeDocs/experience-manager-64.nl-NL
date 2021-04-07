@@ -8,14 +8,14 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 672d5b1e-6b2f-4afe-ab04-c398e5ef45d5
+exl-id: d826375d-0ce6-49fc-b264-bac39882983d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '577'
 ht-degree: 3%
 
 ---
-
 
 # Renderen en leveren{#rendering-and-delivery}
 
@@ -232,4 +232,3 @@ Zie hieronder de middelen om over extra onderwerpen in de Diensten van de Inhoud
 * [Modellen ontwikkelen](/help/mobile/administer-mobile-apps.md)
 * [Services voor het ontwerpen van inhoud](/help/mobile/develop-content-as-a-service.md)
 * [Inhoudsservices beheren](/help/mobile/developing-content-services.md)
-
