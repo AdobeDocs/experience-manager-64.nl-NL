@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d674458c-d5f3-4dee-a673-b0777c02ad30
+exl-id: e26e8e58-3aa4-4e7a-ac9e-f274c4af0041
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '430'
 ht-degree: 0%
 
 ---
-
 
 # Het proberen van de Globalized Structuur van de Plaats in Wij.Retail{#trying-out-the-globalized-site-structure-in-we-retail}
 
