@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 69f62a38-7991-4009-8db7-ee8fd35dc535
+exl-id: f2317fd5-df64-4042-b17e-0e0506161b90
 translation-type: tm+mt
-source-git-commit: 3e5c3e56b950b39d0b0efe552ff54242f3d8d28a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '616'
 ht-degree: 0%
 
 ---
-
 
 # Hoe te om tot AEM JCR{#how-to-programmatically-access-the-aem-jcr} programmatically toegang te hebben
 
@@ -146,4 +146,3 @@ try {
 Nadat u het volledige codevoorbeeld in werking stelt en de knopen creeert, kunt u de nieuwe knopen in **[!UICONTROL CRXDE Lite]** bekijken, zoals aangetoond in de volgende afbeelding.
 
 ![chlimage_1-68](assets/chlimage_1-68.png)
-
