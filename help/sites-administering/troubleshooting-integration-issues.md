@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 422ee332-23ae-46bd-8394-a4e0915beaa2
+exl-id: 81b8f8c0-7f9d-4748-af07-c550826c19b4
 translation-type: tm+mt
-source-git-commit: a210d3bf80b7e7ec62c76a21f1cc2e71e986a4dc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1107'
 ht-degree: 0%
 
 ---
-
 
 # Problemen met integratie oplossen{#troubleshooting-integration-issues}
 
@@ -63,7 +63,7 @@ Lees het volgende artikel [https://helpx.adobe.com/experience-manager/using/poll
 
 ### Het afsluiten duurt lang vanwege de PollingImporter {#shutdown-takes-a-long-time-due-to-the-pollingimporter}
 
-Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk schakelt u Analytics voor een site in door een verwijzing naar een analytische configuratie toe te voegen binnen de pagina-eigenschappen [Cloud Services](/help/sites-developing/extending-cloud-config.md) tab. De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw te verwijzen tenzij een pagina een verschillende configuratie vereist. Wanneer u een verwijzing naar een site toevoegt, worden automatisch meerdere knooppunten (12 voor AEM 6.3 en eerder of 6 voor AEM 6.4) gemaakt van het type `cq;PollConfig` dat PollingImporters instantieert die worden gebruikt om analysegegevens in AEM te importeren. Dientengevolge:
+Analyses zijn ontworpen met het oog op een overervingsmechanisme. Gewoonlijk schakelt u Analytics voor een site in door een verwijzing naar een analytische configuratie toe te voegen binnen de pagina-eigenschappen [Cloud Services](/help/sites-developing/extending-cloud-config.md) tab. De configuratie wordt dan automatisch overgeërfd aan alle subpagina&#39;s zonder de behoefte om het opnieuw van verwijzingen te voorzien tenzij een pagina een verschillende configuratie vereist. Wanneer u een verwijzing naar een site toevoegt, worden automatisch meerdere knooppunten (12 voor AEM 6.3 en eerder of 6 voor AEM 6.4) gemaakt van het type `cq;PollConfig` dat PollingImporters instantieert die worden gebruikt om analysegegevens in AEM te importeren. Dientengevolge:
 
 * Veel pagina&#39;s die verwijzen naar Analytics leiden tot een grote hoeveelheid PollingImporters.
 * Bovendien, leidt het kopiëren en het kleven van pagina&#39;s met een verwijzing naar een configuratie van Analytics tot een verdubbeling van zijn PollingImporters.
@@ -268,4 +268,3 @@ Response for N=4, CLIENT-dayintegrationintern
     ]
 }
 ```
-
