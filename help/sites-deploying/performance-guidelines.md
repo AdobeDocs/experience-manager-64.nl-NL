@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 9ccbc39e-aea7-455e-8639-9193abc1552f
 feature: Configureren
+exl-id: ee86b1b9-68fb-4311-bf5f-6151dd94d3b0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2994'
 ht-degree: 2%
 
 ---
-
 
 # Prestatierichtlijnen{#performance-guidelines}
 
