@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 5febbb1e-795c-49cd-a8f4-c6b4b540673d
+exl-id: dfc6a660-e6b3-4395-a555-f4cf8f3fed91
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1207'
 ht-degree: 0%
 
 ---
-
 
 # Prestatiestructuur{#performance-tree}
 
@@ -42,11 +42,11 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
 
 ### Sectie 3 {#section-2}
 
-![chlimage_1-105](assets/chlimage_1-105.png)
+![chlimage_1-106](assets/chlimage_1-105.png)
 
 ### Sectie 4 {#section-3}
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![chlimage_1-106](assets/chlimage_1-106.png)
 
 ### Sectie 5 {#section-4}
 
@@ -330,4 +330,3 @@ De analyse begint bij stap 0. Het doel is te bepalen welke entiteit (dispatcher,
   </tr> 
  </tbody> 
 </table>
-
