@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 3acac082-efbe-4995-b374-851cb9aaf62d
+exl-id: 15d8bd59-397e-4bd3-b0a2-b6893c015798
 translation-type: tm+mt
-source-git-commit: a6d50dbcbfec85d21072d51a5fa48e3667835f06
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '448'
 ht-degree: 0%
 
 ---
-
 
 # Zoekfunctie {#search-feature}
 
@@ -38,7 +38,7 @@ Als u een `Search`-component in de ontwerpmodus aan een pagina wilt toevoegen, g
 
 Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Gemeenschappen](basics.md).
 
-Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet de `Search` component er zo uit.
+Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search` component.
 
 ![chlimage_1-373](assets/chlimage_1-373.png)
 
@@ -50,7 +50,7 @@ Selecteer de geplaatste `Search` component en selecteer `Configure` pictogram da
 
 Geef onder het tabblad **[!UICONTROL Search Settings]** op hoe de paden worden doorzocht wanneer een query door een bezoeker wordt ingevoerd.
 
-![chlimage_1-376](assets/chlimage_1-375.png)
+![chlimage_1-375](assets/chlimage_1-375.png)
 
 * **[!UICONTROL Search Paths]**
 Door zoekpaden toe te voegen met de knop Item toevoegen, is de zoekopdracht naar inhoud beperkt. Als voorbeeld, om het onderzoek tot een specifiek forum te beperken, selecteer een forumcomponent die binnen een pagina wordt geplaatst:
@@ -77,7 +77,7 @@ Voor noodzakelijke informatie, bezoek [de Grondbeginselen van Componenten van Ge
 
 Wanneer de vereiste bibliotheek aan de clientzijde, `cq.social.hbs.search`, wordt opgenomen, ziet u zo de `Search Result` component:
 
-![chlimage_1-375](assets/chlimage_1-376.png)
+![chlimage_1-376](assets/chlimage_1-376.png)
 
 ### Het toegevoegde zoekresultaat configureren {#configure-the-added-search-result}
 
