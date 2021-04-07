@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 52187196-b091-4683-85ae-cc7c250dee54
+exl-id: d86cf58f-6595-4f37-977f-09437a7f89f9
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1573'
 ht-degree: 0%
 
 ---
-
 
 # Back-up maken van de AEM formuliergegevens {#backing-up-the-aem-forms-data}
 
@@ -62,7 +62,7 @@ Daarnaast moet u de volgende richtlijnen voor het back-up-/herstelproces in acht
 
 Maak een back-up van de AEM formulierdatabase, inclusief transactielogboeken. (Zie [AEM formulierdatabase](/help/forms/using/admin-help/files-back-recover.md#aem-forms-database).) Raadpleeg voor meer informatie het desbetreffende kennisbankartikel voor uw database:
 
-* [Oracle Backup and Recovery voor AEM formulieren](https://www.adobe.com/go/kb403624)
+* [Back-up en herstel van oracle voor AEM formulieren](https://www.adobe.com/go/kb403624)
 * [MySQL Backup and Recovery voor AEM formulieren](https://www.adobe.com/go/kb403625)
 * [Microsoft SQL Server Backup and Recovery voor AEM formulieren](https://www.adobe.com/go/kb403623)
 * [DB2 Back-up en herstel voor AEM formulieren](https://www.adobe.com/go/kb403626)
@@ -165,4 +165,3 @@ U kunt de opdrachtregelinterface gebruiken om AEM formulieren uit de veilige bac
    >Als u de opslag van documenten in de database hebt ingeschakeld, zijn de back-upmodus voor momentopnamen en de modus voor rolback-ups niet van toepassing.
 
    Zie het Lees mij-bestand in de map BackupRestoreCommandline voor meer informatie over de opdrachtregelinterface naar de back-upmodus.
-
