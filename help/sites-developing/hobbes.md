@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: components, testing
 discoiquuid: bc0130c3-826e-47dd-b18b-85e1a7bb9936
+exl-id: 16b4088d-13b4-47b9-b89d-0c4a13676f12
 translation-type: tm+mt
-source-git-commit: 088961dd5457f2136a5eea6f6811455105a8dd1f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '717'
 ht-degree: 1%
 
 ---
-
 
 # Uw interface testen{#testing-your-ui}
 
@@ -98,7 +98,7 @@ Testsets worden opeenvolgend uitgevoerd in de volgorde waarin ze in de console w
 
 ## Een eenvoudige testsuite maken en gebruiken {#creating-and-using-a-simple-test-suite}
 
-De volgende procedure begeleidt u door de verwezenlijking en de uitvoering van een Reeks van de Test gebruikend [Wij.Detailhandel inhoud](/help/sites-developing/we-retail.md), maar u kunt de test gemakkelijk wijzigen om een verschillende Web-pagina te gebruiken.
+De volgende procedure begeleidt u door de verwezenlijking en de uitvoering van een Reeks van de Test gebruikend [Wij.Retail inhoud](/help/sites-developing/we-retail.md), maar u kunt de test gemakkelijk wijzigen om een verschillende Web-pagina te gebruiken.
 
 Zie de [documentatie van de API van Hobbes.js](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/test-api/index.html) voor meer informatie over het maken van uw eigen testsuites.
 
@@ -153,4 +153,3 @@ Zie de [documentatie van de API van Hobbes.js](https://helpx.adobe.com/experienc
    ```
 
 1. Navigeer naar de **Testing**-console om uw testsuite uit te proberen.
-
