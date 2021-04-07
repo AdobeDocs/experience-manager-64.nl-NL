@@ -9,15 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: e1b5c25d-cbdd-421c-b81a-feb6039610a3
+exl-id: f8cd2866-6e4d-47e6-b9aa-c2190b0b1b7b
 translation-type: tm+mt
-source-git-commit: 565604feff7fa365a1c6b52b62a0b0eb681bb192
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '523'
 ht-degree: 0%
 
 ---
-
-
 
 # Een SCF-sandbox maken {#create-an-scf-sandbox}
 
@@ -62,7 +61,7 @@ Hier volgen enkele handige koppelingen voor ontwikkelaars die nog niet vertrouwd
 
 AEM ontwikkelaars besteden veel van hun tijd in de [CRXDE Lite](../../help/sites-developing/developing-with-crxde-lite.md) ontwikkelomgeving aan een auteursinstantie. CRXDE Lite biedt minder beperkte toegang tot de CRX-opslagplaats. Klassieke UI-gereedschappen en UI-consoles met aanraakbediening bieden meer gestructureerde toegang tot specifieke delen van de CRX-opslagplaats.
 
-Nadat u zich hebt aangemeld met beheerdersrechten, kunt u op verschillende manieren toegang krijgen tot CRXDE Lite:
+Nadat u zich hebt aangemeld met beheerdersrechten, zijn er verschillende manieren om toegang te krijgen tot CRXDE Lite:
 
 1. Selecteer navigatie **[!UICONTROL Tools > CRXDE Lite]** vanuit globale navigatie.
 
