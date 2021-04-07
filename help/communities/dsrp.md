@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: d23acb18-6761-4290-9e7a-a434582791bd
-role: Beheerder
+role: Administrator
+exl-id: 3dd2bdc9-0c4d-43d9-a731-ca8c27503e1c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '623'
+source-wordcount: '622'
 ht-degree: 0%
 
 ---
-
 
 # DSRP - Relational Database Storage Resource Provider {#dsrp-relational-database-storage-resource-provider}
 
