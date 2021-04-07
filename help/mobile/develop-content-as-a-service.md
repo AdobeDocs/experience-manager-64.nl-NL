@@ -8,14 +8,14 @@ contentOwner: User
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 discoiquuid: 3d65cc6b-5721-472f-a805-588d50f3571b
+exl-id: 16fa0371-6bf5-449a-872a-914840640efa
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '971'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud leveren{#content-delivery}
 
@@ -145,4 +145,3 @@ Inhoud kan op verschillende manieren aan de app worden toegevoegd.
    * Out-of-the-box Default Sling Renderers
    * AEM Mobile/Content Services Content Renderers
    * Aangepaste rendering
-
