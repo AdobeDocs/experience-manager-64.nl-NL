@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 282a828a-edb2-4643-9bf7-ec30c29dc6ce
 feature: Bijwerken
+exl-id: 8dc2dfb8-037f-40ae-a962-ced89dd3fdd0
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '679'
 ht-degree: 3%
 
 ---
-
 
 # Lazy Content Migration{#lazy-content-migration}
 
