@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 023f0d9e-bfde-4879-a839-085fadffb48e
 role: Developer
+exl-id: 767d89bc-d243-46a1-a954-9977f4906566
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1852'
+source-wordcount: '1851'
 ht-degree: 0%
 
 ---
-
 
 # PDF-Portfolio samenstellen {#assembling-pdf-portfolios}
 
