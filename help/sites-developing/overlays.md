@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 0470b74c-2c34-4327-afed-b95eefb1d521
+exl-id: c0678bb6-5e57-4ebb-b6dc-5240bafbc79e
 translation-type: tm+mt
-source-git-commit: 58686148b74e63f28800b5752db0cceafc58ccdd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
 
 ---
-
 
 # Bedekkingen{#overlays}
 
@@ -104,4 +104,3 @@ Enkele voorbeelden worden behandeld wanneer:
 
 * [De consoles aanpassen](/help/sites-developing/customizing-consoles-touch.md)
 * [Paginaontwerp aanpassen](/help/sites-developing/customizing-page-authoring-touch.md)
-
