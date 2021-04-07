@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: edc3043c-7ec4-4e4a-b008-95f1784f012e
-role: Beheerder
+role: Administrator
+exl-id: 1de1ffc6-63f8-4316-a2fa-5095d407c265
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '729'
+source-wordcount: '728'
 ht-degree: 0%
 
 ---
-
 
 # MySQL-configuratie voor DSRP {#mysql-configuration-for-dsrp}
 
@@ -112,7 +112,7 @@ Als de MySQL Workbench voor het eerst wordt gestart, tenzij deze al voor andere 
 
 Open de verbinding van de Gemeenschappen om het gegevensbestand te installeren.
 
-![chlimage_1-105](assets/chlimage_1-106.png)
+![chlimage_1-106](assets/chlimage_1-106.png)
 
 ### SQL-script ophalen {#obtain-the-sql-script}
 
@@ -203,4 +203,3 @@ Wanneer MySQL op een server verschillend van AEM loopt, moet server hostname in 
    * **[!UICONTROL Datasource name]**: naam ingevoerd voor de verbinding [ ](#new-connection-settings)MySQL, bijvoorbeeld &quot;gemeenschappen&quot;
 
 * Selecteer **[!UICONTROL Save]**
-
