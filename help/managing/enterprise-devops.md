@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing
 content-type: reference
 discoiquuid: 934eda2a-bd3b-4018-86dc-dbb01d246386
+exl-id: 7d1145e8-d7f7-4cc7-9dd9-ee8ce04e43d4
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1005'
 ht-degree: 93%
 
 ---
-
 
 # Enterprise DevOps{#enterprise-devops}
 
