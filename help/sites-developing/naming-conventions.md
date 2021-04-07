@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 198098c0-432b-4a93-a94e-2552337435dd
+exl-id: 741043c7-2ebb-455d-8163-a246b874a7b3
 translation-type: tm+mt
-source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
 
 ---
-
 
 # Naamgeving van conventies{#naming-conventions}
 
@@ -76,4 +76,3 @@ De klassieke gebruikersinterface legt strengere beperkingen op:
    * 0 tot en met 9
    * _ (onderstrepingsteken)
    * `-` (streepje/min)
-
