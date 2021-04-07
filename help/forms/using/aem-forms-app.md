@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e18aa345-034c-473b-b4c2-01678bb10616
+exl-id: 449b479a-f8b4-4534-af28-8eaed2d18210
 translation-type: tm+mt
-source-git-commit: 3bd6ed70dd86df51042bdbde3ea3a60b3a91ab51
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2469'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot AEM Forms-toepassing {#aem-forms-app}
 
@@ -227,4 +227,3 @@ Android hebt geïnstalleerd, kunt u de app rechtstreeks vanuit de afspeelwinkel 
 * **Als een eerdere versie van de app is gemaakt en geïnstalleerd met de broncode (van toepassing op iOS en Android)**:
 
    Voordat u de nieuwe app installeert, moet u al uw gegevens synchroniseren met de AEM Forms-server. Nadat de gegevens zijn gesynchroniseerd, verwijdert u de eerdere versie van de app en installeert u de nieuwe app.
-
