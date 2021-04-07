@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 3cc7efc5-bcb2-41c9-b78b-308f6b7a298e
+exl-id: badb7082-3ebf-4bb3-9157-48b8e7ea8ff9
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '718'
 ht-degree: 0%
 
 ---
-
 
 # Ongedaan maken configureren voor paginabewerking{#configuring-undo-for-page-editing}
 
@@ -157,7 +157,3 @@ De volgende lijst maakt een lijst van de eigenschappen zoals getoond in de conso
       * `updateParagraph`: De alinea-eigenschappen worden gewijzigd.
    * **Standaard**: De eigenschap wordt gevuld met verschillende componentbewerkingen.
    * **Type**:  `String[]`
-
-
-
-
