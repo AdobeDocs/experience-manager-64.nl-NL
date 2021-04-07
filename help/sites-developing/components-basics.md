@@ -10,14 +10,14 @@ topic-tags: components
 content-type: reference
 discoiquuid: 1f9867f1-5089-46d0-8e21-30d62dbf4f45
 legacypath: /content/docs/en/aem/6-0/develop/components/components-develop
+exl-id: 2c8956bf-e20a-441d-aecc-f2600e1fa11e
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4981'
 ht-degree: 0%
 
 ---
-
 
 # Componenten AEM - De basisbeginselen{#aem-components-the-basics}
 
@@ -192,7 +192,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
    * `jcr:title` - titel van de component; wordt bijvoorbeeld gebruikt als label wanneer de component in de componentenbrowser of sidekick wordt vermeld.
    * `jcr:description` - Beschrijving van het onderdeel; kan als muis-over wenk in componentenbrowser of sidekick worden gebruikt.
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `icon.png` - Pictogram voor deze component.
       * `thumbnail.png` - Afbeelding die wordt weergegeven als dit onderdeel wordt vermeld in het alineasysteem.
@@ -212,7 +212,7 @@ De definitie van een component kan als volgt worden uitgesplitst:
 
       * `cq:dialog` (  `nt:unstructured`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `cq:design_dialog` (  `nt:unstructured`) - Ontwerpbewerking voor deze component
-   * Klassieke gebruikersinterface:
+   * Klassieke interface:
 
       * `dialog` (  `cq:Dialog`) - Dialoogvenster voor deze component. Definieert de interface waarmee de gebruiker de component kan configureren en/of inhoud kan bewerken.
       * `design_dialog` (  `cq:Dialog`) - Ontwerpbewerking voor deze component.
@@ -440,7 +440,7 @@ Onderliggende knooppunten die van bijzonder belang zijn, zijn onder meer:
    * `cq:dialog` (  `nt:unstructured`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component
    * `cq:design_dialog` (  `nt:unstructured`) - geeft de ontwerpbewerkingsopties voor deze component op
 
-* Klassieke gebruikersinterface:
+* Klassieke interface:
 
    * `dialog` (  `cq:Dialog`) - definieert het dialoogvenster voor het bewerken van de inhoud van deze component (specifiek voor de klassieke UI)
    * `design_dialog` (  `cq:Dialog`) - geeft de ontwerpbewerkingsopties voor deze component op
@@ -1094,4 +1094,3 @@ Met de volgende configuratie wordt de pagina vernieuwd nadat de component is ver
         afterinsert="REFRESH_PAGE"
         afterMove="REFRESH_PAGE"/>
 ```
-
