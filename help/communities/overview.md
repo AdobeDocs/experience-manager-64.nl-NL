@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 418cc919-0ae3-4c6c-8566-7e9a206f02a8
+exl-id: 3a8b21f8-75da-4867-9a8a-80fddf7946ed
 translation-type: tm+mt
-source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1407'
 ht-degree: 0%
 
 ---
-
 
 # AEM Communities-overzicht {#aem-communities-overview}
 
@@ -231,4 +231,3 @@ Voor AEM demo-machine is een geldige AEM vereist.
 * Bezoek [Developing Communities](communities.md) voor meer informatie over het SCF (Social Component Framework) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
 * Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het schrijven en configureren van Community-componenten.
-
