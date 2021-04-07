@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 69a406f2-4fa8-40bb-b671-7b0f5b6a2c4c
+exl-id: be2e2a4b-5aac-4612-81b6-b4bbb3036d77
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 0%
 
 ---
-
 
 # Records verwijderen uit de taakbeheerdatabase {#purge-records-from-the-job-manager-database}
 
@@ -68,4 +68,3 @@ De informatie over om het even welke momenteel geplande zuiveringen wordt getoon
    >Als u een begindatum en -tijd opgeeft die in het verleden liggen, berekent AEM formulieren de logische volgende begindatum op basis van de opgegeven datum. Als u bijvoorbeeld plant dat de taak wekelijks wordt leeggemaakt vanaf 7 april en dat nu 9 april is, vindt de eerste leegloop plaats op 14 april.
 
 1. Klik op Start Scheduler. Om het even welke eerder geplande plannermontages worden vervangen met de nieuwe montages.
-
