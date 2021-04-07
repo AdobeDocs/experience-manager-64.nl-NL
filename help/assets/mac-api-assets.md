@@ -4,14 +4,14 @@ description: Digitale elementen maken, lezen, bijwerken, verwijderen en beheren 
 contentOwner: AG
 feature: API's,middelen HTTP API,ontwikkelaarsgereedschappen
 role: Developer
+exl-id: 3d7d078c-5046-489a-a8e0-258acaea7191
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1547'
+source-wordcount: '1546'
 ht-degree: 0%
 
 ---
-
 
 # HTTP-API voor assets {#assets-http-api}
 
