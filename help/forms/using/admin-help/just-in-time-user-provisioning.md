@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e80c3f98-baa1-45bc-b713-51a2eb5ec165
+exl-id: 8c205d1d-d17e-4810-8ef9-a8bdcd9aa1c2
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '599'
 ht-degree: 0%
 
 ---
-
 
 # Just-in-Time gebruikersprovisioning {#just-in-time-user-provisioning}
 
@@ -112,4 +112,3 @@ Stel dat een gebruiker zich probeert aan te melden bij AEM formulieren en dat ee
 >[!NOTE]
 >
 >De just-in-time provisioning-functie wordt geleverd met een standaardimplementatie van `IdentityCreator` die u kunt gebruiken om dynamisch gebruikers te maken. De gebruikers worden gecreeerd met de informatie verbonden aan de folders in het domein.
-
