@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: 73f37b3c-5dbe-4132-bb60-daa8de871884
 feature: Configureren
+exl-id: 3551d25c-c852-4f59-84fe-5e62f57ae63f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '437'
 ht-degree: 0%
 
 ---
-
 
 # Verlopen van statische objecten{#expiration-of-static-objects}
 
