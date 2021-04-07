@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 29c0a78c-53b5-4ce7-a2f3-63e1b089b0d0
 feature: Adaptieve Forms
+exl-id: 014c735e-84f8-4cdb-979e-bfab24b3f666
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1171'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve Forms synchroniseren met XFA-formuliersjablonen {#synchronizing-adaptive-forms-with-xfa-form-templates}
 
