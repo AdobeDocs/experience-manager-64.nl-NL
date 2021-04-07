@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9fd531c0-5206-4be0-a450-13e0dc806068
+exl-id: b8d4f35b-dc9c-4e0a-b855-f49275d4ac1f
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 0%
 
 ---
-
 
 # Certificaten {#managing-certificates} beheren
 
@@ -41,7 +41,7 @@ U kunt certificaten ook importeren en verwijderen met de Betrouwbaarheidsbeheer-
    * **Vertrouwen op SSL-verbindingen:** Hiermee geeft u op dat AEM certificaten kunnen gebruiken om via SSL verbinding te maken met externe systemen.
    * **Vertrouwen voor handtekening certificeren:** Hiermee geeft u op dat certificaten worden vertrouwd in documenthandtekeningbewerkingen voor certificerende auteur digitale handtekeningen.
    * **Vertrouwen voor handtekening:** Hiermee geeft u op dat certificaten worden vertrouwd in documentondertekeningsbewerkingen voor digitale handtekeningen die niet van de auteur afkomstig zijn.
-   * **Vertrouwd op certificaatverificatie:** Hiermee geeft u op AEM formulieren certificaten gebruiken voor het verifiëren van gebruikers met certificaat of smartcardverificatie.
+   * **Vertrouwd op certificaatverificatie:** geeft op AEM formulieren certificaten gebruiken voor het verifiëren van gebruikers met certificaat of smartcardverificatie.
    * **Vertrouwen op OCSP-server:** Geeft aan dat AEM formulieren certificaten kunnen gebruiken om verbinding te maken met externe OCSP-responders
    * **Vertrouwd op Identiteit:** Specificeert dat de certificaten kunnen worden gebruikt om informatie buiten hierboven gespecificeerde types te vertrouwen.
 
@@ -71,4 +71,3 @@ U kunt certificaten ook importeren en verwijderen met de Betrouwbaarheidsbeheer-
 
 1. Klik in de beheerconsole op **[!UICONTROL Settings > Trust Store Management > Certificates]**.
 1. Selecteer de selectievakjes voor de certificaten die u wilt verwijderen, klik op **[!UICONTROL Delete]** en klik vervolgens op **[!UICONTROL OK]**.
-
