@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: a11c39b4-c23b-4207-8898-33aea25f2ad0
+exl-id: f3926a15-4378-464f-968f-661745af117c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1270'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Analytics-tracking toevoegen aan componenten{#adding-adobe-analytics-tracking-to-components}
 
