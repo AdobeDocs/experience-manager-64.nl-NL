@@ -4,14 +4,14 @@ description: Breid de zoekmogelijkheden van AEM Assets verder uit dan zoeken naa
 contentOwner: AG
 feature: Zoeken
 role: Developer
+exl-id: d68c735f-2699-4923-a7e7-4d1356eae335
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '832'
+source-wordcount: '831'
 ht-degree: 11%
 
 ---
-
 
 # Zoeken naar elementen uitbreiden {#extending-assets-search}
 
