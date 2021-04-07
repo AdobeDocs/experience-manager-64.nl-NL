@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: fdea5ede-d44f-463e-af8a-111ee7469ede
+exl-id: 2e06d1c8-e7c0-41ce-8799-9e762663eded
 translation-type: tm+mt
-source-git-commit: f1bf1545689b977a0f5074954df224db58cbd695
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1559'
 ht-degree: 0%
 
 ---
-
 
 # AEM nuttige toepassingen{#aem-livefyre-recipes}
 
@@ -198,4 +198,3 @@ Aanvullende beoordelingen en revisies-API&#39;s vindt u [hier](https://api.livef
 
 * [TimeOut](https://www.timeout.com/london/restaurants/forest-bar-kitchen#tab_panel_3)
 * [myrecipes](https://www.myrecipes.com/recipe/shrimp-florentine-pasta)
-
