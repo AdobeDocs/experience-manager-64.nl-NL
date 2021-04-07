@@ -6,15 +6,15 @@ uuid: fd3eedf0-f222-45bf-aac7-90da6b7b7087
 contentOwner: AG
 discoiquuid: 3394b56a-3054-419b-9547-5740f8c35071
 feature: Slimme tags,Tags,Zoeken
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 05f43e43-ac72-4ab1-a373-687c137d2bed
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '454'
+source-wordcount: '452'
 ht-degree: 2%
 
 ---
-
 
 # Slimme tags beheren {#managing-smart-tags}
 
@@ -34,7 +34,7 @@ U kunt ook een hogere rangorde aan een tag toewijzen om de relevantie ervan ten 
 
 ## AEM zoekresultaten begrijpen met slimme tags {#understand-search-results-with-smart-tags}
 
-Standaard combineert AEM zoekopdracht de zoektermen met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, wordt een extra `OR`-component toegevoegd om een zoekterm in de lijst te zoeken, past u slimme tags toe. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gecodeerd met `woman` of `running` met slimme tags, wordt echter wel weergegeven in een dergelijke zoekquery. De zoekresultaten zijn dus een combinatie van:
+Standaard combineert AEM zoekopdracht de zoektermen met een `AND`-component. Het gebruik van slimme tags verandert dit standaardgedrag niet. Als u slimme tags gebruikt, voegt u een extra `OR`-component toe om een zoekterm in de lijst te zoeken, past u slimme tags toe. U kunt bijvoorbeeld zoeken naar `woman running`. Elementen met alleen het trefwoord `woman` of `running` in de metagegevens worden niet standaard in de zoekresultaten weergegeven. Een element dat is gecodeerd met `woman` of `running` met slimme tags, wordt echter wel weergegeven in een dergelijke zoekquery. De zoekresultaten zijn dus een combinatie van:
 
 * elementen met zowel trefwoorden als `woman` en `running` in de metagegevens.
 * elementen die zijn gelabeld met een van de trefwoorden.
