@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: da96d3d8-a338-470a-8d20-55ea39bd15bf
+exl-id: 4d13d69b-1fe6-4fb6-9e3e-3ad0c5ffb829
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1439'
 ht-degree: 1%
 
 ---
-
 
 # Voorbeeld voor het integreren van concepten en verzendingscomponenten met database {#sample-for-integrating-drafts-submissions-component-with-database}
 
@@ -423,4 +423,3 @@ Voer de volgende stappen uit om [een cliëntbibliotheek](/help/sites-developing/
    >Als u aangepaste clientbibliotheken gebruikt in plaats van guideRuntime en guideRuntimeWithXfa-clientbibliotheken, gebruikt u de categorienaam om de clientbibliotheek die in deze procedure is gemaakt, in te sluiten in uw aangepaste bibliotheken die tijdens runtime worden geladen.
 
 1. Klik **[!UICONTROL Save All.]** Nu, wanneer filename groter is dan 150 (met inbegrip van uitbreiding) karakters wordt een bericht getoond.
-
