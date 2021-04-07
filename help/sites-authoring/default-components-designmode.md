@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8ae6817a-16d3-4740-b67a-498e75adf350
+exl-id: 8d49a2ac-8752-4161-940d-808470e8c93b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '911'
 ht-degree: 0%
 
 ---
-
 
 # Componenten configureren in ontwerpmodus{#configuring-components-in-design-mode}
 
@@ -163,4 +163,3 @@ Een component in- of uitschakelen:
    ![](do-not-localize/screen_shot_2018-03-22at103816.png)
 
 1. Klik of tik **Done** pictogram om het dialoogvenster op te slaan en te sluiten.
-
