@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: a2bd7045-970f-4245-ad5d-a272a654df0a
+exl-id: 71dfaea7-2fae-4feb-bb1d-ad0da573f910
 translation-type: tm+mt
-source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6889'
 ht-degree: 0%
 
 ---
-
 
 # Gesloten gebruikersgroepen in AEM{#closed-user-groups-in-aem}
 
@@ -554,7 +554,7 @@ De volgende twee componenten OSGi zijn geïntroduceerd om authentificatievereist
   </tr> 
   <tr> 
    <td>Beschrijving</td> 
-   <td>Staat toe om principaal(s) met de samengeperste naam (namen) van de evaluatie van de GG uit te sluiten.</td> 
+   <td>Staat toe om hoofd(s) met de samengeperste naam (namen) van de evaluatie van de GG uit te sluiten.</td> 
   </tr> 
   <tr> 
    <td>Configuratieeigenschappen</td> 
@@ -882,4 +882,3 @@ Adobe biedt een hulpmiddel voor het migreren naar de nieuwe CUG-implementatie. V
 >[!NOTE]
 >
 >Als u problemen tegenkomt, is het mogelijk om een specifiek logger op **DEBUG** niveau op `com.day.cq.auth.impl.cug` op te zetten om de output van het migratiehulpmiddel te krijgen. Zie [Logboekregistratie](/help/sites-deploying/configure-logging.md) voor meer informatie over hoe te om dit te doen.
-
