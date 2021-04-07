@@ -3,15 +3,15 @@ title: Uw digitale middelen organiseren
 description: Organiseer uw digitale middelen, beelden, dossiers, omslagen, etc. gebruikend Experience Manager.
 contentOwner: AG
 feature: Middelenbeheer, zoeken
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 41e083b3-e956-4346-9a99-008de2c6a169
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '811'
+source-wordcount: '809'
 ht-degree: 0%
 
 ---
-
 
 # Uw digitale elementen ordenen {#organize-digital-assets}
 
