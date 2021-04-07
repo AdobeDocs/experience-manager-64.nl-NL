@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 693859b0-a0c3-43f1-95c0-be48a90d7d8d
 role: Developer
+exl-id: 5be91b23-355b-4e50-b1f5-afed248bc8b5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1530'
+source-wordcount: '1529'
 ht-degree: 0%
 
 ---
-
 
 # DDX-documenten {#validating-ddx-documents} valideren
 
@@ -197,7 +197,7 @@ Valideer een DDX-document met behulp van de API (webservice) voor vergaderingsse
 1. Sla de validatieresultaten op in een logbestand.
 
    * Maak een `System.IO.FileStream`-object door de constructor ervan aan te roepen en een tekenreekswaarde door te geven die de bestandslocatie van het logbestand en de modus voor het openen van het bestand vertegenwoordigt. Controleer of de bestandsnaamextensie .xml is.
-   * Maak een `BLOB`-object dat logboekgegevens opslaat door de waarde van het `AssemblerResult`-gegevenslid van het object op te halen.`jobLog`
+   * Maak een `BLOB`-object dat logboekgegevens opslaat door de waarde op te halen van het `AssemblerResult`-gegevenslid van het object.`jobLog`
    * Maak een bytearray waarin de inhoud van het object `BLOB` wordt opgeslagen. Vul de bytearray met de waarde van het veld `BLOB` van het object `MTOM`.
    * Maak een `System.IO.BinaryWriter`-object door de constructor ervan aan te roepen en het object `System.IO.FileStream` door te geven.
    * Schrijf de inhoud van de bytearray naar een PDF-bestand door de methode `Write` van het object `System.IO.BinaryWriter` aan te roepen en de bytearray door te geven.
