@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 048f7b30-20c3-4567-bd32-38cf2643cf39
-role: Beheerder
+role: Administrator
+exl-id: 65d37adc-d5fa-4171-bb7f-05b631cad180
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1168'
+source-wordcount: '1167'
 ht-degree: 0%
 
 ---
-
 
 # MSRP - MongoDB Storage Resource Provider {#msrp-mongodb-storage-resource-provider}
 
@@ -271,4 +271,3 @@ Als een poging om een beveiligde verbinding te maken met de MongoDB-server mislu
 
 * [AEM met MongoDB](../../help/sites-deploying/aem-with-mongodb.md)
 * [MongoDB-documentatie](https://docs.mongodb.org/)
-
