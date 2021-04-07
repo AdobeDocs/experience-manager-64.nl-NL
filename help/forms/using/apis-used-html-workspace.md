@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 4a73a973-fccf-466b-b4a0-47652a14a080
+exl-id: 1d74fdb9-c118-45f7-93c6-116cacb2f1c4
 translation-type: tm+mt
-source-git-commit: 0ce79686522da4fb3d017068b623c76f81c6b23a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 1%
 
 ---
-
 
 # API&#39;s die worden gebruikt in de AEM Forms-werkruimte {#apis-used-in-aem-forms-workspace}
 
@@ -403,6 +403,3 @@ De volgende API&#39;s worden gebruikt in de AEM Forms-werkruimte.
   </tr>
  </tbody>
 </table>
-
-
-
