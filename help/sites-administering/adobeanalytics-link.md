@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: fe6ba6af-f500-4c0d-b984-fb617d4bf48a
+exl-id: d60d4fb1-7c8c-462d-a699-7aa62fa924a1
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1615'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen Verbinding die voor Adobe Analytics{#configuring-link-tracking-for-adobe-analytics} volgen
 
@@ -51,7 +51,7 @@ Downloads van de volgende bestandstypen worden standaard bijgehouden:
 
 Als downloadtracering bijvoorbeeld is ingeschakeld voor PDF-bestanden en gebruikers op koppelingen naar PDF-bestanden klikken, wordt de download van de PDF bijgehouden.
 
-De eigenschappen voor downloadtracering van het framework worden geïmplementeerd als code in het `analytics.sitecatalyst.js`-bestand dat voor een pagina wordt gegenereerd. In het volgende codevoorbeeld wordt de standaardconfiguratie voor het bijhouden van downloads weergegeven:
+De eigenschappen voor downloadtracking van het framework worden geïmplementeerd als code in het `analytics.sitecatalyst.js`-bestand dat voor een pagina wordt gegenereerd. In het volgende codevoorbeeld wordt de standaardconfiguratie voor het bijhouden van downloads weergegeven:
 
 ```
 s.trackDownloadLinks= true;
@@ -355,4 +355,3 @@ Gebruik de volgende procedure om verbinding het volgen voor een **component te v
    Scheid meerdere waarden met een komma.
 
 1. Selecteer **OK**.
-
