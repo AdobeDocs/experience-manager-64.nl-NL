@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8d14017d-d311-45e9-8aea-4a5ca46f1a07
+exl-id: 6d408fd6-9241-4069-9b04-806e30e03ff2
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4528'
 ht-degree: 2%
 
 ---
-
 
 # Creeer een volledig-gekenmerkte Website (JSP){#create-a-fully-featured-website-jsp}
 
@@ -140,7 +140,7 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 1. Als u de paden wilt opgeven van de pagina&#39;s waarop deze sjabloon kan worden gebruikt, klikt u op de plusknop en typt u `/content(/.*)?` in het tekstvak dat wordt weergegeven. Klik vervolgens op **[!UICONTROL Next]**.
 
-   ![chlimage_1-105](assets/chlimage_1-105.png)
+   ![chlimage_1-106](assets/chlimage_1-105.png)
 
    De waarde van de toegestane padeigenschap is een *reguliere expressie.* Pagina&#39;s die een pad hebben dat overeenkomt met de expressie, kunnen de sjabloon gebruiken. In dit geval komt de reguliere expressie overeen met het pad van de map `/content` en alle subpagina&#39;s.
 
@@ -148,7 +148,7 @@ Een sjabloon definieert de standaardinhoud van een nieuwe pagina. Complexe websi
 
 1. Klik **[!UICONTROL Next]** in **[!UICONTROL Allowed Parents]** en **[!UICONTROL Allowed Children]** panelen en klik **[!UICONTROL OK]**. Klik in CRXDE Lite op **[!UICONTROL Save All]**.
 
-   ![chlimage_1-105](assets/chlimage_1-106.png)
+   ![chlimage_1-106](assets/chlimage_1-106.png)
 
 #### De component ContentPage {#creating-the-contentpage-component} maken
 
@@ -220,7 +220,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
 1. Voor de AEM Welkome pagina ([http://localhost:4502/libs/cq/core/content/welcome.html](http://localhost:4502/libs/cq/core/content/welcome.html)), klik Websites.
 
-   ![chlimage_1-189](assets/chlimage_1-109.png)
+   ![chlimage_1-109](assets/chlimage_1-109.png)
 
 1. Selecteer in de mappenstructuur de map **[!UICONTROL Websites]** en klik op **[!UICONTROL New > New Page]**.
 1. Voer in het venster **[!UICONTROL Create Page]** het volgende in:
@@ -258,7 +258,7 @@ In deze sectie maakt u de volgende pagina&#39;s die allemaal de sjabloon voor de
 
    Uw structuur ziet er als volgt uit:
 
-   ![chlimage_1-191](assets/chlimage_1-111.png)
+   ![chlimage_1-111](assets/chlimage_1-111.png)
 
 1. Als u uw pagina&#39;s wilt koppelen aan het ontwerp van mijn website, selecteert u in CRXDE Lite het knooppunt `/content/mywebsite/en/jcr:content`. Typ op het tabblad **[!UICONTROL Properties]** de volgende waarden voor een nieuwe eigenschap en klik vervolgens op Toevoegen:
 
@@ -470,7 +470,7 @@ Het onderwerp opnemen in de component ContentPage:
 1. Sla de wijzigingen op.
 1. Laad de pagina **[!UICONTROL Products]** in uw browser opnieuw. De bovenste navigatie ziet er als volgt uit:
 
-   ![chlimage_1-114](assets/chlimage_1-115.png)
+   ![chlimage_1-115](assets/chlimage_1-115.png)
 
 #### Pagina&#39;s verbeteren met ondertitels {#enhancing-pages-with-subtitles}
 
@@ -1498,7 +1498,7 @@ In deze sectie voegt u uw zoekcomponent toe aan het alineasysteem.
 1. Klik op het driehoekje bij Sidetrap om terug te keren naar de modus **[!UICONTROL Edit]**.
 1. Sleep de **[!UICONTROL My Search]** component van Sidetrap in het parsys kader. Het ziet er als volgt uit:
 
-   ![chlimage_1-133](assets/chlimage_1-133.png)
+   ![chlimage_1-135](assets/chlimage_1-133.png)
 
 1. Navigeer naar uw **[!UICONTROL Products]** pagina. Zoek naar klanten in de invoerdoos en druk **[!UICONTROL Enter]**. U wordt omgeleid aan de **[!UICONTROL Search]** pagina. Overschakelen naar modus **[!UICONTROL Preview]**: de uitvoer heeft een vergelijkbare indeling als de volgende:
 
@@ -1526,4 +1526,3 @@ Voor deze component kunt u verschillende parameters instellen in zowel de bewerk
 1. Laad de pagina **[!UICONTROL Products]** in uw browser opnieuw. De hele pagina ziet er als volgt uit:
 
    ![chlimage_1-9](assets/chlimage_1-9.jpeg)
-
