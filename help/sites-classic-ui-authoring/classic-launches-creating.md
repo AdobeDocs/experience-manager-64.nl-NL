@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: site-features
 discoiquuid: 48826f03-6731-49c5-a6c5-6e2fb718f912
 legacypath: /content/docs/en/aem/6-0/author/site-page-features/launches
+exl-id: 2f5c022e-bd98-4912-9409-d08137a1caf1
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '403'
 ht-degree: 13%
 
 ---
-
 
 # Lanceringen maken{#creating-launches}
 
@@ -59,4 +59,3 @@ U kunt ook een opstart verwijderen.
    >[!CAUTION]
    >
    >Wanneer u geneste startpunten verwijdert, moet u eerst lagere niveaus verwijderen.
-
