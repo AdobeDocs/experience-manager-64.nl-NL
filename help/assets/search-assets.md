@@ -3,15 +3,15 @@ title: Middelen zoeken in AEM
 description: Leer hoe u de vereiste elementen in AEM vindt met het deelvenster Filters en hoe u de elementen gebruikt die in de zoekopdracht worden weergegeven.
 contentOwner: AG
 feature: Zoeken,metagegevens
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: cc1a5946-e13d-4433-a25a-d297fd07e2e4
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '554'
+source-wordcount: '552'
 ht-degree: 1%
 
 ---
-
 
 # Middelen zoeken in AEM {#search-assets-in-aem}
 
