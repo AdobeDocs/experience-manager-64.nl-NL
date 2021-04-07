@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 61cd5751-0dc8-48e0-873e-3a64899489bb
 feature: Bijwerken
+exl-id: 1323ee60-c80c-4eed-b3e5-aa0f0c07e6ee
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 1%
 
 ---
-
 
 # Herstructurering van Dynamic Media-opslagplaats in AEM 6.4{#dynamic-media-repository-restructuring-in-aem}
 
@@ -171,4 +171,3 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
  </tbody>
 </table>
-
