@@ -8,14 +8,14 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 82e72ffb-2faa-45fe-8bb2-f485d8fa043e
+exl-id: 18b5c6e2-3b0c-4ec8-9e65-c4105b47be4e
 translation-type: tm+mt
-source-git-commit: ecaeabfdd31ed35229fe7e41b5472e8582fa28db
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1877'
 ht-degree: 1%
 
 ---
-
 
 # Transactierapporten Billable API&#39;s {#transaction-reports-billable-apis}
 
@@ -303,7 +303,7 @@ Factuur-API&#39;s zijn niet geschikt voor het aantal pagina&#39;s, de lengte van
 
 >[!NOTE]
 >
->* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De aanroepAPI kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
+>* De invoke API van de assemblageservice kan intern een factureerbare API van een andere service oproepen, afhankelijk van de invoer. De API voor aanroepen kan dus worden beschouwd als geen, enkele of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de invoer en de interne API&#39;s die worden aangeroepen.
 >* Eén PDF-document dat met de assembleerservice wordt gemaakt, kan worden beschouwd als geen, één of meerdere transacties. Het aantal transacties dat wordt geteld, is afhankelijk van de geleverde DDX-code.
 
 >
@@ -368,7 +368,7 @@ Alle verzendgebeurtenissen van adaptieve formulieren, HTML5 Forms en formulierse
    <td>Forms verzonden</td> 
    <td>
     <ul> 
-     <li>Een of twee transacties worden verwerkt met geslaagde verzendingen. Het aantal transacties dat wordt meegeteld, is afhankelijk van het type verzendactie dat wordt gebruikt voor verzending. U verzendt bijvoorbeeld een PDF via e-mail voor het verzenden van een actierekening voor twee tellingen van transacties. Eén transactie voor het verzenden van formulieren en een andere voor PDF die is gegenereerd met de service Document of Record (DOR). </li> 
+     <li>Een of twee transacties worden verwerkt met succes verzonden. Het aantal transacties dat wordt meegeteld, is afhankelijk van het type verzendactie dat wordt gebruikt voor verzending. U verzendt bijvoorbeeld een PDF via e-mail voor het verzenden van een actierekening voor twee tellingen van transacties. Eén transactie voor het verzenden van formulieren en een andere voor PDF die is gegenereerd met de service Document of Record (DOR). </li> 
      <li>Met het adaptieve formulier in een adaptief formulier (adaptief formulierformaat) wordt slechts één transactie verwerkt. U kunt een willekeurig aantal adaptieve formulieren in een adaptief formulier gebruiken.</li> 
     </ul> </td> 
   </tr>
@@ -501,4 +501,3 @@ Handelingen als het verzenden van een PDF-formulier, het gebruik van de gebruike
 * [Overzicht van transactierapporten](/help/forms/using/transaction-reports-overview.md)
 * [Transactierapporten weergeven en begrijpen](/help/forms/using/viewing-and-understanding-transaction-reports.md)
 * [Een transactie opnemen voor aangepaste implementaties](/help/forms/using/record-transaction-custom-implementation.md)
-
