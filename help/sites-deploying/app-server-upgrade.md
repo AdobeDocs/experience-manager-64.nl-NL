@@ -10,14 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: c427c8b6-eb94-45fa-908f-c3d5a337427d
 feature: Bijwerken
+exl-id: 1c72093e-82c8-49ad-bd3c-d61904aaab28
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '524'
 ht-degree: 0%
 
 ---
-
 
 # De stappen van de verbetering voor de Installaties van de Server van de Toepassing{#upgrade-steps-for-application-server-installations}
 
@@ -150,4 +150,3 @@ Alle voorbeelden in deze procedure gebruiken JBoss als Server van de Toepassing 
    ```shell
    cp temp/aem62.war jboss-install-folder/standalone/deployments/aem61.war
    ```
-
