@@ -8,14 +8,14 @@ contentOwner: User
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 discoiquuid: 56761a36-ce21-46e1-856f-75a7e94acae9
+exl-id: 495031fb-b559-4071-abc4-93d238ce136d
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '144'
 ht-degree: 0%
 
 ---
-
 
 # Het verwijderen van de Plaatsen van de Geometrixx{#removing-the-geometrixx-sites}
 
@@ -46,4 +46,3 @@ U hebt nu een &quot;lege&quot; AEM-instantie zonder demonstratiesites.
 >[!NOTE]
 >
 >Tijdens de upgrade worden geometrixx-sites automatisch opnieuw geïnstalleerd. Mogelijk moet u geometrixx-websites verwijderen na de upgrade als u deze voorbeelden niet wilt gebruiken.
-
