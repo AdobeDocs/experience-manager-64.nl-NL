@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: fea76f90-22d5-4836-9901-a35229401eb0
 feature: Adaptieve Forms
+exl-id: 2a842bdc-6dcf-42cc-9a45-57ac15b79eb7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
 
 ---
-
 
 # De handeling Verzenden configureren {#configuring-the-submit-action}
 
