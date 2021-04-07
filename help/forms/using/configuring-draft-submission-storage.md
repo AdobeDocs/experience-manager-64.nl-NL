@@ -8,14 +8,14 @@ topic-tags: publish
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6ebb6420-68b6-4abc-b298-c252db038416
+exl-id: c73fd1c5-6f3f-4c62-a8d6-fcd22f02c0ca
 translation-type: tm+mt
-source-git-commit: 79dcf6816e1156604c0c9279b727ea436ad1826a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '547'
 ht-degree: 0%
 
 ---
-
 
 # Opslagservices configureren voor concepten en verzending {#configuring-storage-services-for-drafts-and-submissions}
 
@@ -110,4 +110,3 @@ Klik in AEM webconsoleconfiguratie ( `https://[*host*]:[*port*]/system/console/c
 >[!NOTE]
 >
 >Er is ook een voorbeeldimplementatie beschikbaar voor het opslaan van gebruikersgegevens in een database. Zie [Voorbeeld voor het integreren van concepten en verzendingscomponenten met database](/help/forms/using/integrate-draft-submission-database.md) voor meer informatie over het configureren van gegevens en metagegevensservices voor het opslaan van gebruikersgegevens in een externe database.
-
