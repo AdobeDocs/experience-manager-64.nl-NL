@@ -10,14 +10,14 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 04344537-7485-40a9-ad14-804ba448f1e2
 feature: Beheer van meerdere sites
+exl-id: f23a1c62-0191-4b5b-90be-d66d51e38f83
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1533'
 ht-degree: 0%
 
 ---
-
 
 # MSM Beste praktijken{#msm-best-practices}
 
@@ -206,4 +206,3 @@ Op deze en de volgende pagina&#39;s worden de gerelateerde kwesties besproken:
 * [Console voor live kopiëren](/help/sites-administering/msm-livecopy-overview.md)
 * [Synchronisatie van actieve kopie configureren](/help/sites-administering/msm-sync.md)
 * [Conflicten MSM-rollout](/help/sites-administering/msm-rollout-conflicts.md)
-
