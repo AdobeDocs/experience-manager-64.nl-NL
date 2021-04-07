@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: bf182bb7-e305-45be-aadb-d71efd70f8cb
+exl-id: 5d58f9c5-3210-48ef-94a3-805a1a57e3af
 translation-type: tm+mt
-source-git-commit: 3d2b91565e14e85e9e701663c8d0ded03e5b430c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1596'
 ht-degree: 1%
 
 ---
-
 
 # Auteur een Nieuwe Communautaire Plaats {#author-a-new-community-site}
 
@@ -235,7 +235,7 @@ Nadat u ervoor hebt gezorgd dat de publicatieserver actief is, selecteert u het 
 
 ![chlimage_1-360](assets/chlimage_1-360.png)
 
-Wanneer de community-site is gepubliceerd, wordt kort een bericht weergegeven:
+Wanneer de communitysite met succes is gepubliceerd, wordt kort een bericht weergegeven:
 
 ![chlimage_1-361](assets/chlimage_1-361.png)
 
