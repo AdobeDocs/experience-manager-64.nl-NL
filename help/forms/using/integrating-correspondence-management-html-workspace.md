@@ -7,14 +7,14 @@ uuid: 9649157c-fe28-43bf-a7d3-52ed55a0bf4f
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: f2bde2e8-da95-48ac-a652-85ead87f2cd3
+exl-id: 4df9a16c-0853-4bbf-81bb-1856ab55c5ee
 translation-type: tm+mt
-source-git-commit: 3c67867637cb3fdcdce77a5d494b9b150f128a20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '641'
 ht-degree: 0%
 
 ---
-
 
 # Toepassingen van derden integreren in de AEM Forms-werkruimte {#integrating-third-party-applications-in-aem-forms-workspace}
 
@@ -117,4 +117,3 @@ voor downloaden van bestand ophalen: Een voorbeeld-DSC is beschikbaar in het bov
    >[!NOTE]
    >
    >De knop Verzenden wordt pas ingeschakeld als alle vereiste variabelen in de letter zijn ingevuld.
-
