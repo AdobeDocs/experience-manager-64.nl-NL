@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a62b68b4-7735-49b1-8938-f0d9e4c4a051
+exl-id: b4877c24-3450-44b6-adcd-78a694b28857
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '413'
 ht-degree: 0%
 
 ---
-
 
 # IBM DB2-database: Opdrachten uitvoeren voor normaal onderhoud {#ibm-db-database-running-commands-for-regular-maintenance}
 
@@ -93,4 +93,3 @@ Voer de opdracht `reorg` uit op de volgende AEM formulierdatabasetabellen en -in
   
      INDEXES ALL FOR TABLE <schema>.EDCPRINCIPALGRPCTMNTENTITY
 ```
-
