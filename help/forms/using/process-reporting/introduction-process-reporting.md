@@ -8,14 +8,14 @@ content-type: reference
 topic-tags: process-reporting
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0cfe62b8-839e-414b-95e5-1bfce6a9d16a
+exl-id: 279b2f89-5b91-4b8f-ab0f-8ade9b9f3932
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '309'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot Process Reporting {#introduction-to-process-reporting}
 
@@ -70,5 +70,3 @@ AEM Forms-servers voeren een groot aantal processen parallel uit. Deze processen
 Process Reporing biedt op toestemming gebaseerde toegang tot de gebruikersinterface.
 
 Dit betekent slechts hebben de gebruikers met het melden van toestemmingen toegang tot het Proces Meldend gebruikersinterface.
-
-
