@@ -10,14 +10,14 @@ topic-tags: components
 content-type: reference
 discoiquuid: 402c0d6b-2c26-490a-97c5-dfd4dea778e0
 legacypath: /content/docs/en/aem/6-2/develop/components/components-develop
+exl-id: c205046f-9e60-4010-9ae3-be7d02d45248
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 2%
 
 ---
-
 
 # Ontwikkelen AEM componenten - Codevoorbeelden{#developing-aem-components-code-samples}
 
@@ -67,4 +67,3 @@ De details, samen met verbindingen aan de codesteekproef, zijn onder [Nieuwe Act
 U kunt de standaardcomponent van het Fragment van de Inhoud willen uitbreiden om eigenschappen toe te voegen.
 
 De details zijn onder [Aanpassen en Uitbreidend Inhoudsfragmenten](/help/sites-developing/customizing-content-fragments.md).
-
