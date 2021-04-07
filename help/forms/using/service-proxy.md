@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 2791c9a1-38a2-4154-8bea-2f7c564b46c8
 feature: Mobile Forms
+exl-id: 42da25de-7ad0-4e9a-8139-149954f9bd8e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '732'
 ht-degree: 1%
 
 ---
-
 
 # HTML5-formulierservice-proxy {#html-forms-service-proxy}
 
@@ -136,4 +136,3 @@ De voorgelegde de dienstvolmacht selecteert een topologie als voorlegger in de v
 * Als de volmacht de gegevens post, gaat de volmachtsdienst alle parameters behalve submitUrl tot */bin/xfaforms/submitAction* eindpunt over en ontvangt xml bytes in reactiestream. Dan, post de volmachtsdienst de gegevens xml bytes aan submitUrl voor verwerking.
 
 * Voordat gegevens (verzoek om POST) naar een server worden verzonden, controleren HTML5-formulieren de connectiviteit en beschikbaarheid van de server. HTML-formulieren verzenden een lege hoofdaanvraag naar de server om de connectiviteit en beschikbaarheid te controleren. Als de server beschikbaar is, verzendt het HTML5-formulier gegevens (verzoek om POST) naar de server. Als de server niet beschikbaar is, wordt een foutbericht *Kan geen verbinding maken met de server,* weergegeven. De detectie vooraf voorkomt dat gebruikers het formulier kunnen bijvullen. De volmachtsservlet behandelt hoofdverzoek en werpen geen uitzondering.
-
