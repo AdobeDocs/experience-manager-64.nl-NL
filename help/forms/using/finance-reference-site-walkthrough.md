@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 0c1b6ad7-9d25-41dc-b1fe-a4cb9366c259
+exl-id: 17e8c644-ee17-496c-a781-a295a4796cb9
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '9150'
 ht-degree: 0%
 
 ---
-
 
 # We.Finance referentiesite doorloopt {#we-finance-reference-site-walkthrough}
 
@@ -108,7 +108,7 @@ Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zij
 * Met de knop Mijn voortgang opslaan wordt een unieke id voor de gebruiker gegenereerd en wordt de gedeeltelijk ingevulde toepassing als concept opgeslagen in een knooppunt in AEM opslagplaats. Ook wordt er een dialoogvenster weergegeven waarin u toestemming wordt gevraagd om een e-mail te verzenden met een koppeling naar het knooppunt dat de concepttoepassing bevat. Met de knop E-mail verzenden in het bevestigingsvenster wordt een e-mail geactiveerd met een koppeling naar het knooppunt dat het concept bevat.
 * De handeling Invoke AEM Workflow submit wordt gebruikt om de workflow voor creditcardgoedkeuring te activeren. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-credit-card-workflow.html`
 
-Het wordt aanbevolen het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen van formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
+U wordt aangeraden het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen met formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
 
 Zie ook de volgende documentatie voor meer informatie over functies die worden gebruikt in het adaptieve formulier voor creditcardtoepassingen:
 
@@ -280,7 +280,7 @@ Analytische rapporten genereren met zaadgegevens:
 
 **A/B-tests van de creditcardaanvraag**
 
-Naast het analyseren van de prestaties van de creditcardtoepassing en het voortdurend verbeteren ervan, gebruiken wij.Finance de integratie van AEM Forms met Target om A/B tests te creëren. Hierdoor kunnen zij verschillende ervaringen opdoen met het aanvraagformulier voor een creditcard en kunnen zij de ervaring identificeren die leidt tot een betere conversiesnelheid in termen van het invullen en verzenden van het formulier.
+Naast het analyseren van de prestaties van de creditcardtoepassing en het voortdurend verbeteren ervan, gebruiken wij.Finance de integratie van AEM Forms met Target om A/B tests te creëren. Hierdoor kunnen zij verschillende ervaringen opdoen met het aanvraagformulier voor een creditcard en kunnen zij de ervaring identificeren die leidt tot een betere conversiegraad in termen van het invullen en verzenden van formulieren.
 
 Zie [Doel instellen en integreren in AEM Forms](/help/forms/using/ab-testing-adaptive-forms.md#set%20up%20and%20integrate%20target%20in%20aem%20forms) om Doel te configureren in de AEM Forms-server.
 
@@ -396,7 +396,7 @@ Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zij
 * De component Signature Step gebruikt om het ingevulde formulier weer te geven en maakt elektronische ondertekening op het formulier mogelijk.
 * Het gebruikt de Invoke AEM Workflow verzendactie om de Web Finance Home Mortgauge AEM workflow te activeren. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-home-mortgage-workflow.html`
 
-Het wordt aanbevolen het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen van formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
+U wordt aangeraden het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen met formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
 
 Zie ook de volgende documentatie voor meer informatie over functies die worden gebruikt in het adaptieve formulier voor hypotheekaanvragen thuis:
 
@@ -644,7 +644,7 @@ Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zij
 * Er worden verschillende adaptieve formuliercomponenten gebruikt om invoer vast te leggen en zich aan te passen aan de reacties van de gebruiker. Er worden ook componenten gebruikt, zoals E-mail, die HTML5-invoertypen ondersteunen.
 * De component Signature Step gebruikt om het ingevulde formulier weer te geven en maakt elektronische ondertekening op het formulier mogelijk.
 
-Het wordt aanbevolen het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen van formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
+U wordt aangeraden het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen met formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
 
 ### De beheerder bekijkt de voorgelegde gegevens in de instantie van de Dynamiek van Microsoft {#the-administrator-views-the-submitted-data-in-the-microsoft-dynamics-instance}
 
@@ -710,7 +710,7 @@ Enkele belangrijke functies die u in het aangepaste formulier kunt bekijken, zij
 * Met de knop Mijn voortgang opslaan wordt een unieke id voor de gebruiker gegenereerd en wordt de gedeeltelijk ingevulde toepassing als concept opgeslagen in een knooppunt in AEM opslagplaats. Ook wordt er een dialoogvenster weergegeven waarin u toestemming wordt gevraagd om een e-mail te verzenden met een koppeling naar het knooppunt dat de concepttoepassing bevat. Met de knop E-mail verzenden in het bevestigingsvenster wordt een e-mail geactiveerd met een koppeling naar het knooppunt dat het concept bevat.
 * Het gebruikt de Invoke AEM Workflow verzendactie om de goedkeuringswerkstroom voor thuisverzekeringen te activeren. U kunt de workflow die in dit formulier wordt gebruikt, bekijken op `https://[host]:[Port]/editor.html/conf/global/settings/workflow/models/we-finance-insurance-workflow.html`
 
-Het wordt aanbevolen het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen van formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
+U wordt aangeraden het formulier te bekijken om inzicht te krijgen in het schema, de componenten, de regels, de modellen met formuliergegevens, de werkstroom van formulieren en de verzendactie die wordt gebruikt om het formulier samen te stellen.
 
 Zie ook de volgende documentatie voor meer informatie over functies die worden gebruikt in het adaptieve formulier voor de toepassing van de huisverzekering:
 
