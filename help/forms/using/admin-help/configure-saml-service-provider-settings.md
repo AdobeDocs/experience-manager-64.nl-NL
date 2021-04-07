@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 1169d0d1-cbfb-486b-acca-9b9de3d410dc
+exl-id: 7f80d46e-4ecd-4c29-abb5-949e2d429841
 translation-type: tm+mt
-source-git-commit: 043634cb2e93ca7f94c61a6a073746174a638424
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '628'
 ht-degree: 0%
 
 ---
-
 
 # SAML-serviceprovider-instellingen configureren{#configure-saml-service-provider-settings}
 
@@ -63,4 +63,3 @@ Voor een verklaring van SAML, zie [de Taal van de Prijsverhoging van de Bevestig
    `saml.sp.discovery.url=/custom/custom.jsp`
 
 1. Klik op Opslaan.
-
