@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9bee0197-f275-49cc-922d-62cba826c4e5
+exl-id: 76e36d3b-4a8a-45ee-bb4e-28b150ec089c
 translation-type: tm+mt
-source-git-commit: 363f084e086c2afd5585caa08d5b55c0e02bd4b2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '821'
 ht-degree: 0%
 
 ---
-
 
 # Annotaties bij het bewerken van een pagina{#annotations-when-editing-a-page}
 
@@ -107,4 +107,3 @@ Schetsen zijn een functie van annotaties waarmee u overal in het browservenster 
 
 * Als u een alinea verplaatst of kopieert, worden eventuele verwante annotaties en de bijbehorende schetsen ook verplaatst of gekopieerd. hun standpunt ten aanzien van de alinea blijft ongewijzigd .
 * Als u een annotatie verwijdert, worden ook alle aan die annotatie gekoppelde schetsen verwijderd.
-
