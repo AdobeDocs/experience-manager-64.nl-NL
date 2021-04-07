@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 00806e6e-3578-4caa-bafa-064f200a871f
+exl-id: 6dd289ee-13fd-46be-82cd-aa69852397c9
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '322'
 ht-degree: 0%
 
 ---
-
 
 # Vorm het Wachtwoord Admin op Installatie{#configure-the-admin-password-on-installation}
 
@@ -69,4 +69,3 @@ admin.password = 12345678
 >[!NOTE]
 >
 >Als u de `-nointeractive` parameter zonder `-Dadmin.password.file` systeembezit eenvoudig gebruikt, AEM zal het standaard admin wachtwoord gebruiken zonder u te vragen om het te veranderen, hoofdzakelijk het herhalen gedrag van vroegere versies. Deze niet-interactieve modus kan worden gebruikt voor geautomatiseerde installaties die de opdrachtregel in een installatiescript gebruiken.
-
