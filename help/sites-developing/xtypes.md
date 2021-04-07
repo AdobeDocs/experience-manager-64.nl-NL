@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: adb70b43-1b0b-4302-905a-c7612675dabb
+exl-id: 81d7fa0c-86db-47a1-8fac-44941d3affde
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6414'
 ht-degree: 0%
 
 ---
-
 
 # Het gebruiken van xtypes (Klassieke UI){#using-xtypes-classic-ui}
 
