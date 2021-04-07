@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: fd96f30c-0616-445e-adb9-050d52862ffc
+exl-id: 482c5889-d756-428b-bf0c-38c372e3c8b6
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Adobe Campaign{#integrating-with-adobe-campaign}
 
@@ -37,4 +37,3 @@ In deze documentatie wordt beschreven hoe u AEM kunt integreren met Adobe Campai
 >[!NOTE]
 >
 >Een verwant AEM communautair artikel bekijken vindt u op: [Adobe Experience Manager en Adobe Campaign Standard integreren om Newletters](https://helpx.adobe.com/experience-manager/using/aem_campaign.html) te maken.
-
