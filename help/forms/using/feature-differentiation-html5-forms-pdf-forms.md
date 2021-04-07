@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 273096d0-b0e1-4519-8af6-11b3414cc172
 feature: Mobile Forms
+exl-id: 2b82e68c-ec11-417d-a8e2-769da9b35140
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '503'
 ht-degree: 2%
 
 ---
-
 
 # Verschil tussen functies tussen HTML5-formulieren en PDF forms {#feature-differentiation-between-html-forms-and-pdf-forms}
 
@@ -84,4 +84,3 @@ In de volgende tabel vindt u ondersteuning van de functies die worden geboden vo
 </table>
 
 Volg de aanbevolen procedures om een formuliersjabloon in te schakelen voor HTML5-uitvoeringen en zorg ervoor dat het gedrag en de weergave van HTML5-formulieren en op XFA gebaseerde PDF consistent zijn. Zie [Aanbevolen werkwijzen om een HTML5-formulier te ontwerpen voor een gedetailleerde lijst met aanbevolen werkwijzen.](/help/forms/using/best-practices-for-html5-forms.md)
-
