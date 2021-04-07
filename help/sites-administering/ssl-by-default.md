@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 discoiquuid: 3a1817cd-357b-473d-9a09-e18bbfc60dfd
+exl-id: 07f89673-125b-4205-bc54-c90287a1e9a5
 translation-type: tm+mt
-source-git-commit: eb3ac73ebe3189c144dafa02a2596ea5d512ffba
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '773'
 ht-degree: 0%
 
 ---
-
 
 # SSL standaard{#ssl-by-default}
 
