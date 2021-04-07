@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 076a3064-80c3-454b-93f9-6ae925c54328
+exl-id: bbe4ae86-e9b8-4c3f-ada3-82470e371c4e
 translation-type: tm+mt
-source-git-commit: c10c0ca79a0dd2e79c2d821f11cce3d28058aaa0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1120'
 ht-degree: 6%
 
 ---
-
 
 # Pagina&#39;s ontwerpen met inhoudsfragmenten{#page-authoring-with-content-fragments}
 
@@ -219,4 +219,3 @@ Fragmenten moeten worden gepubliceerd zodat ze op gepubliceerde webpagina&#39;s 
 
 * Een fragment kan worden gepubliceerd nadat het fragment [in de middelenconsole is gemaakt](/help/assets/content-fragments-managing.md#publishing-and-referencing-a-fragment).
 * Als een *niet-gepubliceerd fragment* wordt gebruikt op een pagina die wordt gepubliceerd, kan het fragment ook op dit moment worden gepubliceerd.
-
