@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: bbbe32bb-9d97-461e-822f-a7ddc6c9f9ef
+exl-id: af16f4df-ed8e-40e4-b117-3d612e122947
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1119'
 ht-degree: 0%
 
 ---
-
 
 # Functie Vragen en antwoorden forum {#q-a-forum-feature}
 
@@ -118,7 +118,7 @@ als deze optie is ingeschakeld, kan het idee worden geïdentificeerd als  [aanbe
 Geef onder het tabblad **[!UICONTROL User Moderation]** op hoe de geposte onderwerpen (vragen) en antwoorden (door de gebruiker gegenereerde inhoud) worden beheerd. Zie [Door gebruiker gegenereerde inhoud modereren](moderate-ugc.md) voor meer informatie.
 
 * **[!UICONTROL Deny Answers]**
-Als deze optie is ingeschakeld, zullen vertrouwde moderatoren van leden geposte antwoorden kunnen weigeren en voorkomen dat het antwoord verschijnt op het openbare forum met vragen en antwoorden. De optie Standaard is uitgeschakeld.
+Als deze optie ingeschakeld is, zullen vertrouwde moderatoren van leden geposte antwoorden kunnen weigeren en voorkomen dat het antwoord verschijnt op het openbare forum met vragen en antwoorden. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Close / Reopen Topics]**
 Als deze optie ingeschakeld is, kunnen vertrouwde moderatoren van leden een vraag (onderwerp) sluiten om verdere bewerkingen en antwoorden uit te voeren en kunnen ze ook een vraag opnieuw openen. De optie Standaard is uitgeschakeld.
@@ -130,7 +130,7 @@ Als deze optie ingeschakeld is, stelt u moderatoren aan de publiczijde in staat 
 Als deze optie is ingeschakeld, kunnen leden de vragen of antwoorden van anderen als ongeschikt markeren. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Flag Reason List]**
-Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een vraag of antwoord niet correct is gemarkeerd. De optie Standaard is uitgeschakeld.
+Als deze optie is ingeschakeld, kunnen leden in een vervolgkeuzelijst kiezen waarom een vraag of antwoord onjuist is. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Custom Flag Reason]**
 Als deze optie is ingeschakeld, kunnen leden hun eigen reden opgeven om een vraag of antwoord als ongeschikt te bestempelen. De optie Standaard is uitgeschakeld.
