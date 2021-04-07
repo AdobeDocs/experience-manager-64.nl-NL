@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 669ede46-ea55-444b-a23f-23a86e5aff8e
 role: Developer
+exl-id: 2e8bcdf8-ae57-4ccd-945a-8f3fda4aa3c2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '4176'
+source-wordcount: '4175'
 ht-degree: 1%
 
 ---
-
 
 # Forms renderen als HTML {#rendering-forms-as-html}
 
@@ -371,4 +371,3 @@ Een HTML-formulier renderen met de Forms API (webservice):
 [Forms renderen als HTML](#rendering-forms-as-html)
 
 [AEM Forms aanroepen met Base64-codering](/help/forms/developing/invoking-aem-forms-using-web.md#invoking-aem-forms-using-base64-encoding)
-
