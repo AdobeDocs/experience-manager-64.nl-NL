@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: a62ddf8b-97ea-40b9-9c3b-0922fe134567
+exl-id: a5b991e7-059f-4a26-bb4e-e03fc1f5d3e6
 translation-type: tm+mt
-source-git-commit: 040f776ee6a164cec57685f8a010ec82fd8bb48b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '149'
 ht-degree: 0%
 
 ---
-
 
 # Werken met Adobe Campaign{#working-with-adobe-campaign}
 
@@ -39,4 +39,3 @@ Raadpleeg de volgende onderwerpen als u uw integratie wilt aanpassen:
 
 * [Aangepaste extensies maken](/help/sites-developing/extending-campaign-extensions.md)
 * [Aangepaste formuliertoewijzingen maken](/help/sites-developing/extending-campaign-form-mapping.md)
-
