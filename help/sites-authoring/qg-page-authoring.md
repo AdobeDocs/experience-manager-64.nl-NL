@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 163a4887-7c33-4305-8c48-882630f2caa1
+exl-id: c63e44e7-cc89-4fa0-8ba4-460d682df601
 translation-type: tm+mt
-source-git-commit: a87e078e1a8f49dc899ce9b160d789cb254338e2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1555'
 ht-degree: 4%
 
 ---
-
 
 # Snelle gids voor het Ontwerp van Pagina&#39;s{#quick-guide-to-authoring-pages}
 
@@ -191,7 +191,7 @@ Hoe te om een pagina te selecteren hangt van welke mening af u in de console geb
 
 ## Pagina-eigenschappen bewerken {#editing-the-page-properties}
 
-Er zijn twee (hoofd) methodes van [het uitgeven van pagina eigenschappen](/help/sites-authoring/editing-page-properties.md):
+Er zijn twee (hoofd) methodes van [het uitgeven pagina eigenschappen](/help/sites-authoring/editing-page-properties.md):
 
 * Vanuit de **Sites**-console:
 
@@ -318,5 +318,3 @@ Hetzelfde basismechanisme wordt gebruikt bij het herstellen en/of vergelijken va
    * **Verschillen tonen**
 
       * De pagina wordt geopend met de verschillen (tussen de twee versies) gemarkeerd.
-
-
