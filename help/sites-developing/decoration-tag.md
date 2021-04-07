@@ -1,14 +1,14 @@
 ---
 title: Decoratietag
 description: Wanneer een component in een webpagina wordt gerenderd, kan een HTML-element worden gegenereerd, waarbij de gerenderde component in zichzelf wordt verpakt. Voor ontwikkelaars biedt AEM duidelijke en eenvoudige logica die de decoratietags regelt die onderdelen bevatten.
+exl-id: b5edfd56-8e21-44b9-9ea4-3bbdcdb23b50
 translation-type: tm+mt
-source-git-commit: 7b5cae8aea49b3fd4200bd902d07e1c0fe1090ce
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '875'
 ht-degree: 0%
 
 ---
-
 
 # Decoratietag {#decoration-tag}
 
@@ -148,4 +148,3 @@ Bij het opnemen van een component met behulp van `cq:includ`e of `sling:include`
 De volgende beslisboom illustreert hoe `cq:noDecoration`, `cq:htmlTag`, `cq:tagName`, en `decorationTagName` het omslaggedrag beïnvloeden.
 
 ![chlimage_1-3](assets/chlimage_1-3.jpeg)
-
