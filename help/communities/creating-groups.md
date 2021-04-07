@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 868a3d5d-d505-4ce5-8776-5bbe68a30ccb
+exl-id: 4b663228-9cb6-45c0-99dd-8dd7fc2aa4a6
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '511'
 ht-degree: 0%
 
 ---
-
 
 # Communautaire groepen {#community-groups}
 
