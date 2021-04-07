@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 8774c38a-abd2-4dc2-868e-d6760c96f3f6
+exl-id: fa583a06-e75c-41de-a977-7e459ab8bca9
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '263'
 ht-degree: 20%
 
 ---
-
 
 # Onderdelenconsole{#components-console}
 
@@ -74,4 +74,3 @@ Als u details over een bepaalde component wilt weergeven, tikt u op de gewenste 
    Als de ontwikkelaar [documentatie voor de component](/help/sites-developing/developing-components.md#documenting-your-component) heeft verstrekt, zal het op **Documentatie** tabel verschijnen. Als er geen documentatie beschikbaar is, zal **Documentatie** tabel niet worden getoond.
 
    ![chlimage_1-305](assets/chlimage_1-305.png)
-
