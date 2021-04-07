@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 11a11803-bce4-4099-9b50-92327608f37b
+exl-id: 7f10451d-3acb-4298-82f3-07897f66e407
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '968'
 ht-degree: 0%
 
 ---
-
 
 # Verbinding maken met SQL-databases{#connecting-to-sql-databases}
 
@@ -176,4 +176,3 @@ In het volgende voorbeeld verkrijgt JSP-code een instantie van de hsqldbds-gegev
 >[!NOTE]
 >
 >Leer hoe te om een DataSourcePool in een bundel te injecteren OSGi, zie [Injecterend een Dienst DataSourcePool in een bundel Adobe Experience Manager OSGi](https://helpx.adobe.com/experience-manager/using/datasourcepool.html).
-
