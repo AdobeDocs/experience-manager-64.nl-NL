@@ -3,15 +3,15 @@ title: Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen
 description: Segregeer inhoud in de CRX-opslagplaats op basis van de organisatie van de klant om onbevoegde toegang te voorkomen.
 contentOwner: AG
 feature: Verzamelingen
-role: Architect,Beheerder,Leader
+role: Architect,Administrator,Leader
+exl-id: d00a671a-6707-4941-868d-fa13510b7b60
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '234'
+source-wordcount: '231'
 ht-degree: 1%
 
 ---
-
 
 # Meerdere paden voor verzamelingen, fragmenten en fragmentsjablonen {#multi-tenancy-for-collections-snippets-and-snippet-templates}
 
