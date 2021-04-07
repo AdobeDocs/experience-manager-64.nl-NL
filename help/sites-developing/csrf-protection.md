@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f453427d-c813-48b7-b2f9-adadea39c67d
+exl-id: 533c348e-517f-4d70-a89c-bfc87f71a633
 translation-type: tm+mt
-source-git-commit: 97db2126a4a20d82f964102d9ae3afcac94d830c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%
 
 ---
-
 
 # Het CSRF-beschermingskader{#the-csrf-protection-framework}
 
