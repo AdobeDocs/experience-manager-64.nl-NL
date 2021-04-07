@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: interactive-communications
 discoiquuid: 565bfb42-6099-49f4-83ba-b1f0c129aab7
 feature: Interactieve communicatie
+exl-id: 1537490b-71b3-4ab3-b8d1-d85eac88d857
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1317'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot Interactieve Communicatie auteursUI {#introduction-to-interactive-communication-authoring-ui}
 
@@ -154,4 +154,3 @@ De werkbalk Pagina bovenaan biedt opties waarmee u een voorvertoning van de inte
 
 
 * Voorvertoning: Hiermee kunt u een voorvertoning weergeven van de Interactieve communicatie wanneer u deze publiceert.
-
