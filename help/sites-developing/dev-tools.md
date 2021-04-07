@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: development-tools
 content-type: reference
 discoiquuid: 76c570e5-46ed-46be-9864-4fe4a83f0caf
+exl-id: 3c18feab-97a6-49f2-96be-7e7458199f5d
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '410'
 ht-degree: 0%
 
 ---
-
 
 # Ontwikkelingshulpmiddelen{#development-tools}
 
