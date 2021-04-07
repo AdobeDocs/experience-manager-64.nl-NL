@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: e7672b23-a4af-49bb-bba7-0565d3bda802
+exl-id: 24dd0d05-6327-47e2-a3d1-6ed40af06783
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1776'
 ht-degree: 1%
 
 ---
-
 
 # Video bijhouden configureren voor Adobe Analytics{#configuring-video-tracking-for-adobe-analytics}
 
