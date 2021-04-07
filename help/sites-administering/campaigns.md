@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 4a3a2ad7-40b0-4f19-a012-167453f58bc2
+exl-id: 2bc23d5a-11ee-4d29-be3d-1a8cac306aa6
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '150'
 ht-degree: 0%
 
 ---
-
 
 # Campagnes{#campaigns}
 
@@ -33,4 +33,3 @@ Zie de volgende pagina&#39;s:
 * [Segmentatie configureren](/help/sites-administering/campaign-segmentation.md)
 * [De importmodule voor ontwerpen voor bestemmingspagina&#39;s uitbreiden en configureren](/help/sites-administering/extending-the-design-importer-for-landingpages.md)
 * [Landingpagina&#39;s integreren met Adobe Analytics](/help/sites-administering/integrating-landing-pages-with-adobe-analytics.md)
-
