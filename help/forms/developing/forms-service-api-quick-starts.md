@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 9fe48243-24c6-4e08-9886-148cd99dec87
 role: Developer
+exl-id: abc2af58-3bf7-493e-917d-081022afb9a3
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1563'
+source-wordcount: '1562'
 ht-degree: 0%
 
 ---
-
 
 # Forms Service API Quick Start {#forms-service-api-quick-starts}
 
@@ -2770,4 +2770,3 @@ De volgende snelle start van Java haalt het bestand Loan.xdp op uit Content Serv
  } 
  
 ```
-
