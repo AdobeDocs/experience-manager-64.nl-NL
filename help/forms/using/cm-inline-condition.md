@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: interactive-communications, correspondence-management
 discoiquuid: f376b8c1-e176-4fe6-b298-f3d493c59319
 feature: Correspondentenbeheer
+exl-id: 1b669f86-5090-4618-9bd2-85fcec44d51a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1717'
 ht-degree: 0%
 
 ---
-
 
 # Inline voorwaarde en herhaling in Interactieve Mededelingen en letters {#inline-condition-and-repeat-in-interactive-communications-and-letters}
 
