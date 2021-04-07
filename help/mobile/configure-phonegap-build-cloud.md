@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 3c84f4ec-d89b-4ad4-802e-ee3e2d49d916
+exl-id: 87e64e2b-cced-45bc-9de8-477169c857b2
 translation-type: tm+mt
-source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '698'
 ht-degree: 0%
 
 ---
-
 
 # Adobe PhoneGap Build-Cloud Service {#configure-your-adobe-phonegap-build-cloud-service} configureren
 
