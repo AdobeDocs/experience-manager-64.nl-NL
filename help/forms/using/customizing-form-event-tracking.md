@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 60d67c6b-5994-42ef-b159-ed6edf5cf9d4
+exl-id: e07adddb-e904-4a80-9b1c-8028b12c0e37
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '476'
 ht-degree: 1%
 
 ---
-
 
 # Gebeurtenistracking van formulieren aanpassen {#customizing-form-event-tracking}
 
