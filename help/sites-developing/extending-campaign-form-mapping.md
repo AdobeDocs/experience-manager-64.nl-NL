@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: d5dac1db-2dde-4b75-a31b-e057b447f6e2
+exl-id: 3270a279-13ef-4bbf-aafe-539df388c652
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '558'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste formuliertoewijzingen maken{#creating-custom-form-mappings}
 
@@ -129,4 +129,3 @@ U kunt nu het formulier verzenden en op de Adobe Campaign valideren of de waarde
 Bij het verzenden van het formulier wordt deze fout in AEM aangemeld bij **error.log**.
 
 Dit wordt veroorzaakt door een ongeldige indeling voor het datumveld. De oplossing is om **jjjj-mm-dd** als waarde te leveren.
-
