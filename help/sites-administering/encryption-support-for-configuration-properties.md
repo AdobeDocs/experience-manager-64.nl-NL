@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: security
 discoiquuid: 4e08c297-aa4b-44cf-84c8-1e11582d9ebb
+exl-id: 077a940d-19de-4d19-ad99-61f465e68205
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '285'
 ht-degree: 0%
 
 ---
-
 
 # Coderingsondersteuning voor configuratieeigenschappen{#encryption-support-for-configuration-properties}
 
