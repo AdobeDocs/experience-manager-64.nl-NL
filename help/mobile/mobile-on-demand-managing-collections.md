@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 64c6d198-983f-4a52-9c83-560206363868
+exl-id: fc83cd28-2fd6-4136-839b-b48a69ca75d0
 translation-type: tm+mt
-source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '824'
 ht-degree: 0%
 
 ---
-
 
 # Verzamelingen beheren{#managing-collections}
 
