@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: a1efef3c-0e4b-4a17-bcad-e3cc17adbbf7
+exl-id: 46d0765d-fb77-4332-8fbb-5bd2abcd6806
 translation-type: tm+mt
-source-git-commit: 201ddb888e6f1797bf2b84c5719625ebf87ddc82
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '427'
 ht-degree: 0%
 
 ---
-
 
 # De videocomponent {#configure-the-video-component} configureren
 
@@ -96,4 +96,3 @@ De videocomponent is afhankelijk van open-source product Forms van derden voor e
 >[!NOTE]
 >
 >OTB-workflowmodellen blijven niet behouden wanneer u een upgrade uitvoert van uw AEM. Adobe raadt u aan OOTB-workflowmodellen te kopiëren voordat u ze bewerkt. Kopieer bijvoorbeeld het model OOTB DAM Update Asset voordat u de stap MPEG Transcoding in het DAM Update Asset model bewerkt om namen van videoprofielen te kiezen die vóór de upgrade bestonden. Vervolgens kunt u het knooppunt `/apps` bedekken om AEM de aangepaste wijzigingen in het OOTB-model op te halen.
-
