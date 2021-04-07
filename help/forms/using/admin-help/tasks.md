@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9161c8ca-ef33-4ec9-affc-94b5b3e48a4c
+exl-id: 130ba568-b035-4c80-b47a-e19ed8d8ac25
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '864'
 ht-degree: 0%
 
 ---
-
 
 # Werken met taken {#working-with-tasks}
 
@@ -97,4 +97,3 @@ Op de pagina Gebruiker toewijzen worden de gebruikers weergegeven die aan een ta
 1. Typ in het vak Zoeken naar op de pagina Gebruiker toewijzen een deel van de vereiste gebruikersnaam of het volledige e-mailadres of een deel ervan.
 1. Selecteer Naam of E-mailadres onder Gebruiken en klik op Zoeken. De gebruikers die overeenkomen met de zoekopdracht worden weergegeven.
 1. Selecteer de gebruiker in de lijst en klik op OK. De pagina Taakgeschiedenis wordt weergegeven met de nieuwe gebruikerstoewijzing.
-
