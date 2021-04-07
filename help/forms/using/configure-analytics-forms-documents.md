@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: 6301e0ef-3faa-4e6f-932d-37b049577cec
+exl-id: a55999a8-a92b-4750-bf05-ee326d079f65
 translation-type: tm+mt
-source-git-commit: bd7f971cf26f60acc121d194d5251e87e0403718
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1544'
 ht-degree: 0%
 
 ---
-
 
 # Analyses en rapporten {#configuring-analytics-and-reports} configureren
 
@@ -197,4 +197,3 @@ Nu kunt u analyses inschakelen voor formulieren en een analyserapport genereren.
    **A.** Knop Analyse inschakelen  **B.** Geselecteerd formulier
 
    Zie [AEM Forms-analyserapporten weergeven en begrijpen](/help/forms/using/view-understand-aem-forms-analytics-reports.md) voor gedetailleerde informatie over het weergeven van formulieranalyserapporten.
-
