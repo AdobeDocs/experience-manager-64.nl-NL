@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: e5323ae8-bc37-4bc6-bca6-9763e18c8e76
+exl-id: c29472c8-9a93-4cb1-9cb1-05fc155ba736
 translation-type: tm+mt
-source-git-commit: 280c2b3cc8026988472d4ad0cf6649fa8a7c9c38
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '509'
 ht-degree: 0%
 
 ---
-
 
 # OWASP Top 10{#owasp-top}
 
@@ -73,4 +73,3 @@ Gemengde door serverconfiguratie (bijvoorbeeld alleen HTTPS gebruiken).
 ## 10 Niet-gevalideerde omleidingen en doorsturen {#unvalidated-redirects-and-forwards}
 
 Gematigd door alle omleidingen aan gebruiker-geleverde bestemmingen aan interne plaatsen te beperken.
-
