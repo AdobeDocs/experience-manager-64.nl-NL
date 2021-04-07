@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: Security, configuring
 discoiquuid: 86e8dc12-608d-4aff-ba7a-5524f6b4eb0d
 feature: Configureren
+exl-id: ae7e8ce6-7bdd-462b-8939-361c122317b3
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '756'
 ht-degree: 0%
 
 ---
-
 
 # Enkelvoudige aanmelding {#single-sign-on}
 
@@ -193,4 +193,3 @@ Voer de volgende stappen uit om de koppeling Afmelden die beschikbaar is in het 
    });
    menu.addSeparator();
    ```
-
