@@ -8,14 +8,14 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e9b78e2b-af7d-49d7-b37f-c96ec732015e
 feature: Interactieve communicatie
+exl-id: 50d93998-6393-4607-b89b-5b97aad530a3
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstudie: Documentfragmenten maken {#tutorial-create-document-fragments}
 
@@ -301,4 +301,3 @@ Voer de volgende stappen uit om statische tekst te maken en formuliergegevensmod
    ![create_rules_caption](assets/create_rules_caption.gif)
 
 1. Klik op **Opslaan** om de samenvatting van het fragment van het ladingstekstdocument te maken.
-
