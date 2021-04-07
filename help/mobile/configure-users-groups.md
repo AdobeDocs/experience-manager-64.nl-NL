@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: administering-adobe-phonegap-enterprise
 discoiquuid: 167f3bd9-7dbc-4e6b-9868-3ee53935641b
+exl-id: 598ec9cd-e23b-4cc4-be1c-0836a1e3f118
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '666'
 ht-degree: 0%
 
 ---
-
 
 # Uw gebruikers en gebruikersgroepen {#configure-your-users-and-user-groups} configureren
 
@@ -126,5 +126,4 @@ De tegel bevat momenteel geen handelingen waarvoor machtigingen vereist zijn, ma
 
 In de onderstaande afbeelding ziet u de opties voor downloaden en bewerken voor een app:
 
-![chlimage_1-29](assets/chlimage_1-21.png)
-
+![chlimage_1-21](assets/chlimage_1-21.png)
