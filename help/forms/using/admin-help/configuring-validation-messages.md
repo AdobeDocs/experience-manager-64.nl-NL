@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5f2f8129-e45e-4f3f-ae30-c09330d0e152
+exl-id: 2016ac85-12a1-42cb-bc03-fced94947010
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '374'
 ht-degree: 2%
 
 ---
-
 
 # Validatieberichten {#configuring-validation-messages} configureren
 
@@ -66,4 +66,3 @@ Wanneer Rapportage is ingesteld op Frame, kunt u de grootte van de framerand opg
    De randgrootte moet gelijk zijn aan of groter zijn dan 0. De standaardwaarde is 1.
 
 1. Klik op Opslaan.
-
