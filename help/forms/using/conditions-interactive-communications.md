@@ -8,14 +8,14 @@ topic-tags: interactive-communications
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 3ade2a54-cb9a-4e34-808c-c6feec23cfe1
 feature: Interactieve communicatie
+exl-id: 0ffb297f-8c5a-4909-b4c0-2d8253548640
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1466'
 ht-degree: 0%
 
 ---
-
 
 # Voorwaarden in interactieve communicatie {#conditions-in-interactive-communications}
 
@@ -202,4 +202,3 @@ Tik nogmaals op Vergroten/verkleinen om terug te keren naar het dialoogvenster R
 1. Tik **[!UICONTROL Done]** nadat u een geldige regel hebt gemaakt.
 
    Ga zo nodig verder met het aanbrengen van wijzigingen in de voorwaarde en sla deze op.
-
