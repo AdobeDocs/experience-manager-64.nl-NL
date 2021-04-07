@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 076889a7-9c9f-4b6f-a45b-67a9b3923c36
 role: Developer
+exl-id: 1dc43962-dffe-4062-838f-737b3100ad28
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '10850'
+source-wordcount: '10849'
 ht-degree: 0%
 
 ---
-
 
 # Programmaticaal beheer van eindpunten {#programmatically-managing-endpoints}
 
@@ -95,7 +95,7 @@ Voordat u een EJB-eindpunt programmatisch kunt toevoegen, moet u een `EndpointRe
 
 Om een EJB eindpunt voor de dienst tot stand te brengen, specificeer de volgende waarden:
 
-* **Connector-id**: Geeft het type eindpunt op dat moet worden gemaakt. Als u een EJB-eindpunt wilt maken, geeft u `EJB` op.
+* **Connector-id**: Geeft het type eindpunt op dat moet worden gemaakt. Om een EJB eindpunt tot stand te brengen, specificeer `EJB`.
 * **Omschrijving**: Specificeert de eindpuntbeschrijving.
 * **Naam**: Specificeert de naam van het eindpunt.
 * **Service-id**: Specificeert de dienst waartot het eindpunt behoort.
