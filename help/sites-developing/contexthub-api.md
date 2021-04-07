@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 90605f41-1861-4891-a7c8-b8b5918cd5c6
+exl-id: 6ae560e7-cf45-466d-832c-6f2b26e08953
 translation-type: tm+mt
-source-git-commit: b03cf9213ec7677409d7dea9a2ff12ac9d6752c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5029'
 ht-degree: 2%
 
 ---
-
 
 # ContextHub JavaScript API Reference{#contexthub-javascript-api-reference}
 
@@ -33,7 +33,7 @@ De volgende lijst maakt een lijst van de namengebeurtenissen die voor Winkels Co
 | Constante | Beschrijving | Waarde |
 |---|---|---|
 | ContextHub.Constants.EVENT_NAMESPACE | ContextHub-gebeurtenisnaamruimte | ch |
-| ContextHub.Constants.EVENT_ALL_STORES_READY | Geeft aan dat alle vereiste winkels zijn geregistreerd, geïnitialiseerd en klaar zijn om te worden verbruikt | klaar voor alle winkels |
+| ContextHub.Constants.EVENT_ALL_STORES_READY | Geeft aan dat alle vereiste opslagruimten zijn geregistreerd, geïnitialiseerd en klaar zijn om te worden verbruikt | klaar voor alle winkels |
 | ContextHub.Constants.EVENT_STORES_PARTIALLY_READY | Geeft aan dat niet alle winkels binnen een bepaalde tijd zijn geïnitialiseerd | gedeeltelijk gereed voor winkels |
 | ContextHub.Constants.EVENT_STORE_REGISTERED | Wordt geactiveerd wanneer een winkel is geregistreerd | in de winkel geregistreerd |
 | ContextHub.Constants.EVENT_STORE_READY | Geeft aan dat winkels klaar zijn om te werken. Het wordt teweeggebracht onmiddellijk na registratie, behalve JSONP slaat op, waar het in brand wordt gestoken wanneer het gegeven wordt opgehaald). | klaar voor gebruik |
@@ -832,7 +832,7 @@ Object {
 
 #### stringify(data) {#stringify-data}
 
-Serializes Javascript-waarden en -objecten in tekenreekswaarden in JSON-indeling.
+Serializes Javascript-waarden en -objecten in tekenreekswaarden in de JSON-indeling.
 
 **Parameters**
 
@@ -1154,4 +1154,3 @@ De prioriteit is een aantal dat op het belang van de zelfde-genoemde opslag wijs
 ContextHub.Utils.storeCandidates.registerStoreCandidate(myStoreCandidate, 
                                 'contexthub.mystorecandiate', 0);
 ```
-
