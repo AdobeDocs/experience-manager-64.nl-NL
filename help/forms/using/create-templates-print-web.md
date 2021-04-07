@@ -8,14 +8,14 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 40c0a17b-6894-44cc-b1f7-490913061532
 feature: Interactieve communicatie
+exl-id: 5822145f-d317-4807-a3f0-1d2aea0a779b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1831'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstudie: Sjablonen maken {#tutorial-create-templates}
 
@@ -242,7 +242,7 @@ Voer de volgende stappen uit om een malplaatje voor het kanaal van het Web in **
    | samenvattingskosten | Overzicht van heffingen | 2 |
    | gespecificeerde vraag | Gespecificeerde Vraag | 3 |
    | uitbetaling | Nu betalen | 2 |
-   | vas | Services voor toegevoegde waarde | 3 |
+   | vas | Services voor toegevoegde waarde | 1 |
 
    In de volgende afbeelding wordt de inhoudsstructuur weergegeven nadat alle deelvensters aan de sjabloon zijn toegevoegd:
 
@@ -274,4 +274,3 @@ Gebaseerd op het gebruiksgeval, moet u **Nu betalen** en **Abonneren** knopen (a
    ![allowed_components_af](assets/allowed_components_af.png)
 
 1. Tik ![done_icon](assets/done_icon.png) om de eigenschappen op te slaan.
-
