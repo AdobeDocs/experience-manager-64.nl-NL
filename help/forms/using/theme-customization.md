@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: c72f608e-052a-4bf9-b7bc-ddf57483af35
+exl-id: fb1e0bec-c943-4468-920d-8ef360a01365
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '235'
 ht-degree: 0%
 
 ---
-
 
 # Aanpassing thema {#theme-customization}
 
@@ -85,4 +85,3 @@ U kunt de HTML-code en het CSS-bestand aanpassen en zo een specifieke organisati
 1. Open de AEM Forms-app.
 
    De AEM Forms-app geeft nu instructies weer in plaats van een beschrijving.
-
