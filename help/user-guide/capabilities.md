@@ -5,14 +5,14 @@ description: Een overzicht van de essentiële capaciteiten van AEM 6.4
 seo-description: Een overzicht van de essentiële capaciteiten van AEM 6.4
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: f4dea584-3cd1-4d9f-ae3c-2573726dde95
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '153'
 ht-degree: 2%
 
 ---
-
 
 # AEM 6.4 Gebruikershandleidingen voor mogelijkheden {#aem-64-capabilities-user-guides}
 
