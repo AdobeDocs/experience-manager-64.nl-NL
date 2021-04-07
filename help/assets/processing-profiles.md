@@ -6,15 +6,15 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: administering
 content-type: reference
 feature: Workflow,middelenbeheer,uitvoeringen
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 78d76b4f-a46c-4ffc-b772-ed925eb8e34c
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1333'
+source-wordcount: '1330'
 ht-degree: 2%
 
 ---
-
 
 # Profielen voor het verwerken van metagegevens, afbeeldingen en video&#39;s {#profiles-for-processing-metadata-images-and-videos}
 
@@ -85,7 +85,7 @@ Zie [De batchgrootte van de workflow voor opnieuw verwerken aanpassen](#adjustin
 
 1. Klik **[!UICONTROL Start]**, dan klik **[!UICONTROL Confirm]**.
 
-   Klik op **[!UICONTROL Tools > Workflow]** om de workflow te controleren of de voortgang van de AEM te controleren. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, opschorten of hernoemen vanuit dezelfde pagina Workflowinstanties.
+   Klik op **[!UICONTROL Tools > Workflow]** om de workflow te controleren of de voortgang van de AEM te controleren. Selecteer een workflow op de pagina Workflowinstanties. Klik op **[!UICONTROL Open History]** op de menubalk. U kunt een geselecteerde workflow ook beëindigen, onderbreken of hernoemen op dezelfde pagina Workflowinstanties.
 
 ### De batchgrootte van de workflow voor opnieuw verwerken aanpassen {#adjusting-load}
 
