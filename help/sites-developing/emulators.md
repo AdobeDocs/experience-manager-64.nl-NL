@@ -10,14 +10,14 @@ topic-tags: mobile-web
 content-type: reference
 discoiquuid: c51fca81-5dfc-4838-9672-acb6de62778b
 legacypath: /content/docs/en/aem/6-0/develop/mobile/emulators
+exl-id: 2abbceaa-928e-47d8-81c9-ba5bc24f27e2
 translation-type: tm+mt
-source-git-commit: ce717994831eb3ef90baaffa7413de50f671b07c
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '654'
 ht-degree: 0%
 
 ---
-
 
 # Emulatoren{#emulators}
 
@@ -115,7 +115,7 @@ De bestaande mobiele emulators:
 
 Wanneer de paginacomponent op de mobiele paginacomponent ( `/libs/wcm/mobile/components/page`) steunt, wordt de emulatorfunctionaliteit automatisch geïntegreerd in de pagina door het volgende mechanisme:
 
-* De component voor mobiele pagina `head.jsp` bevat de daaraan gekoppelde emulator in de apparaatgroep (alleen in de auteursmodus) en de rendering van CSS van de apparaatgroep via:
+* De component voor mobiele pagina `head.jsp` bevat de daaraan gekoppelde emulator van de apparaatgroep in de it-component (alleen in de auteurmodus) en de CSS-weergave van de apparaatgroep via:
 
    `deviceGroup.drawHead(pageContext);`
 
@@ -153,6 +153,4 @@ Een aangepaste mobiele emulator maken:
    * Naam = `canRotate`, Type = `Boolean`, Waarde = `true`: om de rotatiefunctie op te nemen.
 
    * Naam = `touchScrolling`, Type = `Boolean`, Waarde = `true`: om de functionaliteit voor aanraakschuiven op te nemen.
-
    U kunt meer functies toevoegen door uw eigen plug-ins te definiëren.
-
