@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: integrations
 discoiquuid: a69ff832-7955-4b10-b47f-287ac385b786
+exl-id: e330a8e8-4d55-4723-921b-812cb243f420
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1581'
 ht-degree: 0%
 
 ---
-
 
 # A/B-test voor adaptieve formulieren maken en beheren {#create-and-manage-a-b-test-for-adaptive-forms}
 
@@ -57,7 +57,7 @@ Voer de volgende stappen uit om een actieve doelserver te integreren met AEM For
 1. Selecteer een **Doelframework**.
 1. Geef in het veld **Doel-URL&#39;s** alle URL&#39;s op waarop A/B-tests worden uitgevoerd. Bijvoorbeeld https://&lt;*hostnaam*:&lt;*port*>/ voor AEM Forms-server op OSGi of https://&lt;*hostnaam*>:&lt;*port*/lc/ voor AEM Forms-server op JEE.
 
-   Bedenk dat u een Doel URL voor een publicatieinstantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres, zult u zowel als Doel URLs moeten vormen - gebruikend hostname evenals het IP adres. Als u slechts één van URLs vormt, zal uw test A/B niet lopen voor klanten die van andere URL komen. Klik **+** om veelvoudige URLs te specificeren.
+   Bedenk dat u een Doel URL voor publiceer instantie wilt vormen en uw klanten tot het kunnen toegang hebben gebruikend hostname of het IP adres, zult u zowel als Doel URLs moeten vormen - gebruikend hostname evenals het IP adres. Als u slechts één van URLs vormt, zal uw test A/B niet lopen voor klanten die van andere URL komen. Klik **+** om veelvoudige URLs te specificeren.
 
 1. Klik **Opslaan**.
 
