@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9ed820de-c108-416e-aaf7-b63a64ab4f80
+exl-id: d552cbcc-8f71-48a3-9685-eba1ab8805c3
 translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '233'
 ht-degree: 1%
 
 ---
-
 
 # Onderdelen{#components}
 
@@ -44,4 +44,3 @@ De volgende pagina&#39;s bevatten snelle koppelingen naar enkele van de belangri
 ## Ontwerpmodus gebruiken om componenten {#using-design-mode-to-configure-components} te configureren
 
 Naast de componenten waartoe auteurs via het hulpprogramma toegang hebben in een standaardinstallatie, zijn er ook verschillende andere componenten beschikbaar. U kunt [Ontwerpmodus](/help/sites-classic-ui-authoring/classic-page-author-design-mode.md#enable-disable-components) gebruiken om deze in of uit te schakelen en parameters voor specifieke componenten te bewerken.
-
