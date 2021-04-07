@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 2ae7ea8d-fc58-4647-bc83-915d9f4b7dd8
+exl-id: 9a8a95c3-d39f-408b-9ec3-b722e9ab22c9
 translation-type: tm+mt
-source-git-commit: 55b6a113bcb4d39b7eb100f21a05b9b44e3fe1c3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 1%
 
 ---
-
 
 # Mobiel op aanvraag{#mobile-on-demand}
 
@@ -66,4 +66,3 @@ Zie de volgende bronnen voor meer informatie over de andere twee rollen en veran
 
 * [AEM voor AEM Mobile On-demand Services ontwikkelen](/help/mobile/aem-mobile-on-demand.md)
 * [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
-
