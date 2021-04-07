@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: d34f1598-38bc-46c3-b6cd-954a3880994a
+exl-id: 3997b034-fa24-4366-b22f-0abf2b6d1e64
 translation-type: tm+mt
-source-git-commit: 8cbfa421443e62c0483756e9d5812bc987a9f91d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2161'
 ht-degree: 0%
 
 ---
-
 
 # Assembler Service {#using-assembler-service} gebruiken
 
@@ -262,7 +262,7 @@ U kunt de Assembler-service gebruiken om een PDF-document te demonteren. De serv
 
 ### Pagina&#39;s uitnemen uit een brondocument {#extract-pages-from-a-source-document}
 
-In de volgende afbeelding worden pagina&#39;s 1-3 uit het brondocument geëxtraheerd en in een nieuw resulterend document geplaatst.
+In de volgende afbeelding worden pagina 1-3 uit het brondocument geëxtraheerd en in een nieuw resulterend document geplaatst.
 
 ![Specifieke pagina&#39;s uit een ](assets/as_intro_page_extraction.png)
 **brondocument uitnemenAfbeelding:specifieke pagina&#39;s uit een brondocument** *uitnemen*
