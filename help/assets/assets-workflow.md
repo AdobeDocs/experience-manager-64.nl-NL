@@ -3,15 +3,15 @@ title: De activa van het proces om bedrijfsprocessen te verwezenlijken, controle
 description: Middelenverwerking voor het converteren van indelingen, het maken van uitvoeringen, het beheren van elementen, het valideren van elementen en het uitvoeren van workflows.
 contentOwner: AG
 feature: Workflow,uitvoeringen
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 4fb3d12c-feac-45b9-8d09-3b6995591b3d
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1015'
+source-wordcount: '1012'
 ht-degree: 2%
 
 ---
-
 
 # Digitale elementen verwerken {#process-assets}
 
