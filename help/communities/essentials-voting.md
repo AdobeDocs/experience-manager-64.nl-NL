@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 1a947a06-6a5c-4be9-b2fa-e5fa809ff3b8
+exl-id: f2ecd59c-a311-4e4a-b1a8-2bc3afe0599d
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '289'
 ht-degree: 0%
 
 ---
-
 
 # Grondbeginselen van de stemming {#voting-essentials}
 
@@ -82,4 +82,3 @@ Zie:
 * [SRP en de Hoofdzaak](srp-and-ugc.md)  UGC - SRP nutsmethodes en voorbeelden
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
 * [SocialUtils Refactoring](socialutils.md)  - in kaart gebrachte vervangen nutsmethodes aan huidige SRP hulpprogrammamethodes
-
