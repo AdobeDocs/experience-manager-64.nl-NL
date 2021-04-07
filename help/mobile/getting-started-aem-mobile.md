@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: introduction
 content-type: reference
 discoiquuid: 724e09c2-3df3-4080-a0d4-ee2ede483791
+exl-id: 3c9d856e-4f94-4295-9f30-d675110016b7
 translation-type: tm+mt
-source-git-commit: e13927738ed34bc62c174a5be02f0f1d707e3012
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '238'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met AEM Mobile{#getting-started-with-aem-mobile}
 
