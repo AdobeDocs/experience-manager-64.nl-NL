@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b1d45f01-78de-423c-8f6b-5cb7067c3a2f
+exl-id: f603b208-5f7b-4e5d-afa8-c3b249f67fb8
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
 
 ---
-
 
 # Problemen met de Adobe Campaign-integratie oplossen{#troubleshooting-your-adobe-campaign-integration}
 
@@ -127,7 +127,7 @@ Wanneer u probeert inhoud te synchroniseren in Adobe Campaign-levering, wordt AE
 
 U lost dit probleem als volgt op:
 
-* De verzender of reverse-proxy moet zijn geconfigureerd om het oorspronkelijke protocol als header door te geven.
+* De verzender of reverse-proxy moet zijn geconfigureerd om het oorspronkelijke protocol als een header door te geven.
 * Het *Apache Felix Http Service SSL-filter* in de OSGi-configuratie ([https://&lt;host>:&lt;port>/system/console/configMgr](http://localhost:4502/system/console/configMgr)) moet worden geconfigureerd volgens de respectievelijke headerinstellingen. Zie [https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter](https://felix.apache.org/documentation/subprojects/apache-felix-http-service.html#using-the-ssl-filter)
 
 ## Als de aangepaste sjabloon die ik heb gemaakt niet kan worden geselecteerd in Pagina-eigenschappen {#if-the-custom-template-i-created-cannot-be-selected-in-page-properties}
