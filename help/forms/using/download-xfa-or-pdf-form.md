@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6699e0e7-fd42-41ae-86a2-3b940d905111
-role: Beheerder
+role: Administrator
+exl-id: 68d881c6-7507-4018-b40e-205604221d0c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '339'
+source-wordcount: '338'
 ht-degree: 0%
 
 ---
-
 
 # Een XFA of een PDF-formuliersjabloon {#download-an-xfa-or-a-pdf-form-template} downloaden
 
@@ -57,4 +57,3 @@ Naast deze elementen kunt u het type element `Resource` downloaden als dit in ee
 * U kunt het ZIP-bestand uploaden naar een andere locatie in dezelfde opslagplaats of een andere opslagplaats
 * De hiërarchie van de elementen in een map blijft behouden tijdens het uploaden
 * Wijzigingen in metagegevens die zijn aangebracht in de gedownloade elementen voordat deze zijn gedownload, worden weerspiegeld tijdens het uploaden
-
