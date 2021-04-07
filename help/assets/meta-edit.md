@@ -3,15 +3,15 @@ title: Metagegevens bewerken of toevoegen
 description: Meer informatie over metagegevens van elementen in AEM Assets en verschillende manieren waarop u metagegevens van elementen kunt bewerken.
 contentOwner: AG
 feature: Metagegevens
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: f0522343-f8a9-4d89-8ce8-b3357ae3fe70
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '476'
+source-wordcount: '473'
 ht-degree: 7%
 
 ---
-
 
 # Metagegevens bewerken of toevoegen {#how-to-edit-or-add-metadata}
 
@@ -64,3 +64,4 @@ U kunt uw eigen naamruimten toevoegen binnen AEM. Net zoals er vooraf gedefiniee
 >[!MORELIKETHIS]
 >
 >* [Informatie over metagegevens en de behoefte aan metagegevens in Middelen](metadata.md)
+
