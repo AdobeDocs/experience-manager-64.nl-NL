@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d958ae65-3008-4d68-9e11-4346e149827f
+exl-id: 88932b5b-2acc-4f21-8ce3-b819a990ad30
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 0%
 
 ---
-
 
 # Op certificaten gebaseerde verificatie configureren {#configuring-certificate-based-authentication}
 
@@ -98,4 +98,3 @@ Wanneer u een certificaat test, uploadt Gebruikersbeheer de certificaatcontroles
 
 1. Klik in de beheerconsole op Instellingen > Gebruikersbeheer > Configuratie > Certificaattoewijzing.
 1. Schakel het selectievakje voor de certificaattoewijzing in die u wilt verwijderen, klik op Verwijderen en klik vervolgens op OK.
-
