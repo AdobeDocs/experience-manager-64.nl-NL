@@ -8,14 +8,14 @@ contentOwner: gtalwar
 topic-tags: interactive-communications, introduction
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 67b03098-c58d-4a57-90e0-e4ddd78e5d99
+exl-id: 386fc8b2-c92d-4731-8445-1bb6af54fd98
 translation-type: tm+mt
-source-git-commit: a172fc329a2f73b563690624dc361aefdcb5397e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '526'
 ht-degree: 2%
 
 ---
-
 
 # Overzicht van interactieve communicatie {#interactive-communications-overview}
 
@@ -23,13 +23,13 @@ Dit artikel bevat een overzicht, voorbeelden van gebruiksgevallen, de workflow v
 
 ![](do-not-localize/correspondence-management.png)
 
-De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing post, rekeningen, en welkomstkits.
+De interactieve Mededelingen centraliseert en beheert de verwezenlijking, de assemblage, en de levering van veilige, gepersonaliseerde, en interactieve correspondentie zoals bedrijfscorrespondentie, documenten, verklaringen, voordeelberichten, marketing brievenpost, rekeningen, en welkomstkits.
 
 ## Belangrijkste mogelijkheden {#key-capabilities}
 
 Hier volgen de belangrijkste mogelijkheden van interactieve communicatie:
 
-* De integratie van buiten de doos met vormgegevensmodel om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
+* De integratie van buiten-de-doos met het model van vormgegevens om gemakkelijke en gestroomlijnde toegang tot achterste eindgegevensbestanden en andere systemen van CRM, zoals de Dynamica van MS® toe te laten
 * Geïntegreerde ontwerpinterface voor afdrukken en webkanalen met de mogelijkheid om webkanaal automatisch te genereren via het afdrukkanaal
 * Grafieken om informatie in gemakkelijk te begrijpen visuele formaten in druk en Web te presenteren
 * Documentfragmenten ondersteunen regeleditor en formuliergegevensmodel
@@ -150,4 +150,3 @@ De interactieve Communicatie is het gebrek en geadviseerde benadering om klanten
   </tr>
  </tbody>
 </table>
-
