@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 986d16fc-4c81-4785-b1f3-fe8bd7ff669e
+exl-id: 4817d150-9bfe-4cb9-8f06-6ff4eaaa6f55
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '358'
 ht-degree: 0%
 
 ---
-
 
 # Basisbeginselen van het beheer van certificaten en referenties {#basics-of-managing-certificates-and-credentials}
 
@@ -54,4 +54,3 @@ Als u vermoedt dat uw sleutel verloren is gegaan of is gewijzigd, voert u de vol
 1. Informeer de certificeringsinstantie, zodat deze de gecompromitteerde sleutel toevoegt aan de certificaatintrekkingslijst om de sleutel in te trekken.
 1. Verkrijg een nieuwe sleutel en de bijbehorende certificaten van de certificeringsautoriteit.
 1. Onderteken de documenten die zijn ondertekend met de gecompromitteerde sleutel opnieuw gebruikend de nieuwe sleutel.
-
