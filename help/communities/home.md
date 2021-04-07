@@ -3,14 +3,14 @@ title: AEM 6.4 Gebruikersgids voor gemeenschappen
 seo-title: AEM 6.4 Gebruikersgids voor gemeenschappen
 description: Deze handleiding behandelt alle AEM Communities-taken, zoals het maken van online ervaringen zoals forums, gebruikersgroepen, leermiddelen en andere sociale functies.
 seo-description: Omvat alle taken van AEM Communities, zoals het creëren van online ervaringen zoals forums, gebruikersgroepen, het leren middelen, en andere sociale eigenschappen.
+exl-id: 4711564b-adcc-4835-8215-138b209d1578
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '386'
 ht-degree: 17%
 
 ---
-
 
 # AEM 6.4 Gebruikersgids voor gemeenschappen
 
