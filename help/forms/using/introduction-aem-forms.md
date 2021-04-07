@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: a976a854-4bf2-49f8-871e-28bc597ac496
 feature: Adaptieve Forms
+exl-id: 0a79111d-e42f-4eb6-8bc4-ab97424e7f90
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '945'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot AEM Forms {#introduction-to-aem-forms}
 
@@ -119,4 +119,3 @@ Persoonlijke documenten, zoals ontvangstbewijzen, welkomstkits en instructies, k
 
 ![](do-not-localize/layout-02.png)
 **Afbeelding:** *Gestroomlijnde, gepersonaliseerde communicatieworkflow*
-
