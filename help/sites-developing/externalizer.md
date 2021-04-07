@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 53342acb-c1a5-443d-8727-cb27cc9d6845
+exl-id: 123ef72b-f09b-47eb-9b5a-e0deb38799df
 translation-type: tm+mt
-source-git-commit: 8e2bd579e4c5edaaf86be36bd9d81dfffa13a573
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '533'
 ht-degree: 0%
 
 ---
-
 
 # URL&#39;s extern maken{#externalizing-urls}
 
@@ -46,7 +46,7 @@ Een domeinafbeelding definiëren voor de service **Externalalizer**:
    `<unique-name> [scheme://]server[:port][/contextpath]`, waarbij:
 
    * **De** schema&#39;s zijn gewoonlijk http of https, maar kunnen ook ftp etc. zijn.; gebruik https om https-koppelingen af te dwingen, indien gewenst; wordt gebruikt als de clientcode het schema niet overschrijft wanneer wordt gevraagd om externalisatie van een URL.
-   * **De** server is de hostnaam (kan een domeinnaam of ip-adres zijn).
+   * **De** server is de hostnaam (kan een domeinnaam of een ip-adres zijn).
    * **port**  (optioneel) is het poortnummer.
    * **contextpath**  (optioneel) wordt alleen ingesteld als AEM is geïnstalleerd als een webapp onder een ander contextpad.
 
