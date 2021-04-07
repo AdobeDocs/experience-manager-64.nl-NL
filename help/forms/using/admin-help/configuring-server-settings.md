@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e047a95e-0acb-438a-8d27-f005c0adc508
+exl-id: 7933efeb-618a-4c38-8e5e-593be8ebb00c
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2657'
 ht-degree: 0%
 
 ---
-
 
 # Serverinstellingen {#configuring-server-settings} configureren
 
@@ -289,4 +289,3 @@ Op de pagina van de Montages van de Configuratie BAM, plaatst u de verbindingen 
 1. Typ in het vak Serverpoort het poortnummer dat door de formulierserver wordt gebruikt.
 1. Typ in de vakken Gebruikersnaam en Wachtwoord de juiste gebruikersnaam en het juiste wachtwoord voor toegang tot de BAM-server. De standaardgebruikersnaam is CognosNowAdmin en het standaardwachtwoord is manager.
 1. Klik op Opslaan.
-
