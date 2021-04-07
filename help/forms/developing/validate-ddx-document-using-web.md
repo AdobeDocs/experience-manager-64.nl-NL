@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/validating_ddx_documents
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a6fe91ab-3aa0-4b3d-87c0-6cf69a2c4cc4
 role: Developer
+exl-id: da303186-8f36-4fc8-a2db-b38a0b200c39
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '645'
+source-wordcount: '644'
 ht-degree: 0%
 
 ---
-
 
 # Een DDX-document valideren met de webservice-API {#validate-a-ddx-document-using-theweb-service-api}
 
