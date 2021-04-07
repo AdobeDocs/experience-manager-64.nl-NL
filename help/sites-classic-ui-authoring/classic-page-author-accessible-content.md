@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 378bc33d-ab6c-4651-9688-102c961561fc
+exl-id: 980c9f64-7972-499d-b0e4-63a1a1d49e49
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '9195'
 ht-degree: 9%
 
 ---
-
 
 # Toegankelijke content maken (WCAG 2.0-compatibiliteit){#creating-accessible-content-wcag-conformance}
 
@@ -302,7 +302,7 @@ Er zijn twee manieren om aan dit succescriterium te voldoen. Beide zijn acceptab
 
 1. Verstrek een tekstranscriptie die een geschikt tekstequivalent van de audio en visuele elementen van de video of de animatie is. In voorkomend geval moet daarin worden vermeld wie het woord voert, een beschrijving van de instelling, mondelinge uitdrukkingen. Afhankelijk van de lengte kunt u de transcriptie op dezelfde pagina plaatsen als de video of animatie, of op een aparte pagina. Als u de laatste optie kiest, geeft u een koppeling op naar de transcriptie naast de video of animatie.
 
-Exacte details over het maken van video met audioverichting vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste insteekmodule te downloaden en een alternatief voor tekst bieden via het element `<noscript>`.
+Exacte details over het maken van video met een audiobeschrijving vallen buiten het bereik van deze handleiding. Het maken van video&#39;s en audiobeschrijvingen kan tijdrovend zijn, maar andere Adobe-producten kunnen u helpen deze taken uit te voeren. Als u inhoud maakt in Adobe Flash Professional, moet u ook een script maken waarmee de gebruiker wordt gevraagd de juiste insteekmodule te downloaden en een alternatief voor tekst bieden via het element `<noscript>`.
 
 #### Meer informatie - Audio-beschrijving of Media-alternatief (vooraf opgenomen) (1.2.3) {#more-information-audio-description-or-media-alternative-pre-recorded}
 
@@ -730,7 +730,7 @@ Ga als volgt te werk om ervoor te zorgen dat de volgende technieken worden toege
 
 Met dit succescriterium kan iedereen, ongeacht een bepaalde handicap, de inhoud van een webpagina snel identificeren zonder de pagina volledig te lezen. Dit is vooral handig wanneer meerdere webpagina&#39;s worden geopend op de tabbladen van de browser, omdat de paginatitel op het tabblad wordt weergegeven en deze daarom snel kan worden gevonden.
 
-#### Hoe kan ik-pagina getiteld (2.4.2) {#how-to-meet-page-titled}
+#### Hoe te om te ontmoeten - Getitelde pagina (2.4.2) {#how-to-meet-page-titled}
 
 Wanneer een nieuwe HTML-pagina wordt gemaakt in AEM, kunt u de paginatitel opgeven. Zorg ervoor dat de titel de inhoud van de pagina adequaat beschrijft, zodat bezoekers snel kunnen vaststellen of de inhoud al dan niet relevant is voor hun behoeften.
 
@@ -932,7 +932,7 @@ Als gegevens in een specifieke indeling moeten worden ingevoerd, maakt u dit dui
 
 Als invoer voor een formulierveld verplicht is, maakt u dit duidelijk door het vereiste woord als onderdeel van het label te gebruiken. AEM voegt een sterretje toe wanneer een veld vereist is, maar het is ideaal om het woord `required`in het label zelf op te nemen (in het veld **Titel** in het dialoogvenster Bewerken).
 
-![Extra informatie (het woord is vereist) toevoegen aan schermlezers in het veld Titel.](assets/chlimage_1-25.png)
+![Extra informatie (het vereiste woord) toevoegen aan schermlezers in het veld Titel.](assets/chlimage_1-25.png)
 
 Het positioneren van labels is ook belangrijk, omdat ze hierdoor geschikte velden kunnen vinden. Dit is van bijzonder belang wanneer de gebruiker met een complexe vorm wordt geconfronteerd. Volg de onderstaande conventie:
 
@@ -950,4 +950,3 @@ In eenvoudige formulieren met een zeer beperkte functionaliteit kan het correct 
 
 * [Werken met succescriterium 3.3.2](https://www.w3.org/TR/UNDERSTANDING-WCAG20/minimize-error-cues.html)
 * [Voldoen aan criterium 3.3.2](https://www.w3.org/WAI/WCAG20/quickref/#qr-minimize-error-cues)
-
