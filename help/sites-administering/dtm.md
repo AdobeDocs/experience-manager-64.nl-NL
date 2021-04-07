@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b8c7a20a-7694-4a49-b66a-060720f17dad
+exl-id: d7108d54-cb87-4587-9b52-6711ba38bed2
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2224'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met dynamisch Adobe-tagbeheer {#integrating-with-adobe-dynamic-tag-management}
 
@@ -276,4 +276,3 @@ Gebruik de volgende procedure om de geërfte configuratievereniging voor een pag
    ![chlimage_1-358](assets/chlimage_1-358.png)
 
 1. Verwijder of selecteer een andere Dynamische configuratie van het Beheer van de Markering, en klik dan O.K.
-
