@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 43c431e4-5286-4f4e-b94f-5a7451c4a22c
 feature: Adaptieve Forms
+exl-id: 0c64940c-273d-4f23-afcb-38bf54cddd36
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4148'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor het werken met aangepaste formulieren {#best-practices-for-working-with-adaptive-forms}
 
@@ -307,4 +307,3 @@ Een van de belangrijkste uitdagingen voor organisaties is hoe te om persoonlijk 
 
 * Gebruik een beveiligde externe opslagruimte, zoals een database, om gegevens op te slaan uit concepten en verzonden formulieren. Zie [Externe opslag configureren voor concepten en verzonden formuliergegevens](/help/forms/using/adaptive-forms-best-practices.md#external-storage).
 * Met de component Voorwaarden en Voorwaarden van het gebruik kunt u expliciete toestemming van de gebruiker nemen voordat u het automatisch opslaan inschakelt. In dit geval schakelt u automatisch opslaan alleen in als de gebruiker akkoord gaat met de voorwaarden in de component Voorwaarden.
-
