@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: d1cff2bb-9fdf-49cb-a695-d437bba5653d
+exl-id: 943e5199-271f-4015-a9f7-4d39c00deabe
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '465'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met ExactTarget{#integrating-with-exacttarget}
 
@@ -80,4 +80,3 @@ Meerdere configuraties toevoegen:
 
 1. Voor de welkomstpagina, klik **Cloud Services** en klik **ExactTarget**. Klik op **De knoop van Configuraties** tonen die verschijnt als één of meerdere configuraties ExactTarget beschikbaar zijn. Alle beschikbare configuraties worden vermeld.
 1. Klik **+** teken naast Beschikbare configuraties. Hiermee opent u het venster **Configuraties maken**. Volg de vorige configuratieprocedure om een nieuwe configuratie tot stand te brengen.
-
