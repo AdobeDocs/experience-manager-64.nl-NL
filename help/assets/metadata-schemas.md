@@ -3,15 +3,15 @@ title: Metagegevensschema's
 description: 'Het metagegevensschema definieert de indeling van de pagina met eigenschappen en de eigenschappen van metagegevens die voor elementen worden weergegeven. Leer hoe u een aangepast metagegevensschema kunt maken, het schema voor metagegevens kunt bewerken en hoe u het schema voor metagegevens op elementen kunt toepassen.  '
 contentOwner: AG
 feature: Metagegevens
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 82f42bb3-2c01-407c-a41b-9abe7be4660e
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2401'
+source-wordcount: '2398'
 ht-degree: 8%
 
 ---
-
 
 # Metadataschema&#39;s {#metadata-schemas}
 
@@ -285,7 +285,7 @@ U kunt verplichte velden definiëren op mapniveau. Deze worden afgedwongen voor 
 
 1. Navigeer naar de map en upload elementen met ontbrekende metagegevens voor het verplichte veld dat u aan het aangepaste formulier hebt toegevoegd. In de weergave Kaart voor de elementen wordt een bericht weergegeven voor de ontbrekende metagegevens voor het verplichte veld.
 
-   ![chlimage_1-192](assets/chlimage_1-192.png)
+   ![chlimage_1-112](assets/chlimage_1-192.png)
 
 1. (Optioneel) Toegang `http://[server]:[port]/system/console/components/`. Configureer en schakel `com.day.cq.dam.core.impl.MissingMetadataNotificationJob` component in die standaard is uitgeschakeld. Stel een frequentie in waarmee AEM controleert of metagegevens over de elementen geldig zijn.
 Deze configuratie voegt een eigenschap `hasValidMetadata` toe aan jcr:inhoud van elementen. Met deze eigenschap kunnen AEM resultaten in een zoekopdracht filteren.
