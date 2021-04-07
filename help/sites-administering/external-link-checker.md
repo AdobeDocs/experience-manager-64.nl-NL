@@ -1,14 +1,14 @@
 ---
 title: De koppelingencontrole
 description: Met de koppelingencontrole kunt u zowel interne als externe koppelingen valideren en het herschrijven van koppelingen toestaan.
+exl-id: 30718d02-3370-48aa-a5ba-242d5efaa14c
 translation-type: tm+mt
-source-git-commit: d6d361244ddf725087e2ec664c36a439ee6bffde
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '986'
 ht-degree: 0%
 
 ---
-
 
 # De koppelingencontrole {#the-link-checker}
 
