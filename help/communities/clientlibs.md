@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 7d423dff-8710-4f43-ad55-8863169946e2
+exl-id: 9b4ed16f-3c7c-478a-a897-9b4be086988b
 translation-type: tm+mt
-source-git-commit: 59d40b5bddc42a4ac057ef600243f396aefc926b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '399'
 ht-degree: 0%
 
 ---
-
 
 # Clientlibs voor Community-componenten {#clientlibs-for-communities-components}
 
@@ -93,4 +93,3 @@ Een clientlib voor een communitysite toevoegen met [CRXDE Lite](../../help/sites
 Gebruikend [Aan de slag met AEM Communities](getting-started.md) voorbeeld, waar `site-name` *engageren* is, is dit hoe cliëntliblist zou verschijnen als het toevoegen van de revisiecomponent:
 
 ![chlimage_1-247](assets/chlimage_1-247.png)
-
