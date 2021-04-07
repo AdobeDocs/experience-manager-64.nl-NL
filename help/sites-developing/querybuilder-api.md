@@ -11,14 +11,14 @@ content-type: reference
 discoiquuid: 7965b7ef-dec4-441a-a012-daf1d60df0fb
 pagetitle: Query Builder API
 tagskeywords: querybuilder
+exl-id: ff305c6d-c11e-4e1c-b262-4802b4f54592
 translation-type: tm+mt
-source-git-commit: dbb6156b375382a23b9a3faece2dcdf47fd7cd82
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2350'
 ht-degree: 0%
 
 ---
-
 
 # Query Builder-API{#query-builder-api}
 
@@ -576,4 +576,3 @@ com.day.cq.search.impl.builder.QueryImpl query execution took 272 ms
 | [com.day.cq.search.eval](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/eval/package-summary.html) | Voorspelende evaluatoren |
 | [com.day.cq.search.facets.extractors](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/facets/extractors/package-summary.html) | Facet Extractor (voor beoordelaars) |
 | [com.day.cq.search.writer](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/javadoc/com/day/cq/search/writer/package-summary.html) | JSON Result Hit Writer voor Querybuilder servlet (/bin/querybuilder.json) |
-
