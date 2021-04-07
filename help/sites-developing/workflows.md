@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 8954e3df-3afa-4d53-a7e1-255f3b8f499f
+exl-id: 4f9bd75c-9d54-4cd6-9d73-5d580be5a9e8
 translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1535'
 ht-degree: 0%
 
 ---
-
 
 # Workflows ontwikkelen en uitbreiden{#developing-and-extending-workflows}
 
