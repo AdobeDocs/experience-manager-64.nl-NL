@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 4d3c4650-3e2a-43b1-ad2d-8d0ae2254ca9
+exl-id: 21c10b39-ca37-4085-86f8-063c30a180ed
 translation-type: tm+mt
-source-git-commit: 95b5e70c1b474d4d207a5a33e8d1ab8ef39685b6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3271'
 ht-degree: 0%
 
 ---
-
 
 # Technische vereisten{#technical-requirements}
 
