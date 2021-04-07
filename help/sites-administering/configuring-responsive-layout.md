@@ -10,14 +10,14 @@ topic-tags: operations
 content-type: reference
 discoiquuid: 10940000-808a-48ae-8e46-61eccef71eab
 legacypath: /content/docs/en/aem/6-2/administer/operations/page-authoring/configuring-responsive-layouting
+exl-id: 3a85fd49-5929-4eb0-9f40-e62c904dbca0
 translation-type: tm+mt
-source-git-commit: 3097133c42e1d9c291706516a0dbc2aa2d15ef50
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1324'
 ht-degree: 1%
 
 ---
-
 
 # Container- en lay-outmodus configureren{#configuring-layout-container-and-layout-mode}
 
@@ -317,5 +317,3 @@ U kunt het aantal beschikbare kolommen voor elke specifieke instantie van lay-ou
    * Componenten die aan de huidige component kunnen worden toegevoegd:
 
       * `components="[/libs/wcm/foundation/components/responsivegrid, ...`
-
-
