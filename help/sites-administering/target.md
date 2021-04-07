@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 454854f8-6053-406c-888d-f427777bf570
+exl-id: 10c40e33-e62f-451f-b5d4-e34081f4340e
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '611'
 ht-degree: 1%
 
 ---
-
 
 # Integreren met Adobe Target{#integrating-with-adobe-target}
 
@@ -85,6 +85,5 @@ Voor de integratie van AEM met Adobe Target is kennis van Adobe Target, AEM Acti
 >* 50 rapporteringssegmenten
 
 >
-
 
 
