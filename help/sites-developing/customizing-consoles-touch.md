@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 221ed05b-855d-4dc2-9df6-12fdeabb157a
+exl-id: 31bced35-4845-40d1-9bfd-5c75d54e1a83
 translation-type: tm+mt
-source-git-commit: 1dc15f323dc30d5730e2af6c0e762d623523870d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 0%
 
 ---
-
 
 # De consoles{#customizing-the-consoles} aanpassen
 
