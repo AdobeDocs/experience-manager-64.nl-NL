@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 0e842725-57be-4a16-b972-f5677eaad8cb
+exl-id: dcd54a52-f610-4c68-8547-39562c062d84
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1015'
 ht-degree: 10%
 
 ---
-
 
 # Audiences beheren{#managing-audiences}
 
@@ -110,4 +110,3 @@ U kunt om het even welk Contextpubliek van ContextHub of van de Cliënt van de c
 1. Klik of tik op **Personalisatie** in de navigatieconsole. Klik of tik **Soorten publiek**.
 1. Tik of klik op het pictogram naast het ContextHub- of Clientcontextsegment dat u wilt bewerken en tik of klik op **Bewerken**.
 1. Breng desgewenst wijzigingen aan in de segmenteditor. Zie [Clientcontext](/help/sites-administering/campaign-segmentation.md) of [ContextHub](/help/sites-administering/contexthub-config.md)-documentatie.
-
