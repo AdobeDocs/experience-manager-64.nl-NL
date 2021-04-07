@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: document_services
 discoiquuid: c2d564ba-fa5a-4130-b7fe-7e2c64d92170
+exl-id: 89b6c8b4-4872-4bf5-a543-f33a1660636e
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '372'
 ht-degree: 2%
 
 ---
-
 
 # De sendToPrinter-API {#using-the-sendtoprinter-api} gebruiken
 
@@ -71,4 +71,3 @@ Verificatie wordt alleen ondersteund voor CIFS-afdrukken. Geef voor verificatie 
 1. Ga naar **[!UICONTROL Main]** > **[!UICONTROL Crypto Support]**.
 
 1. Voer onbewerkte tekst in en klik op **[!UICONTROL Protect]**.
-
