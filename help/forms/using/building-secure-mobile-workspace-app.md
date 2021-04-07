@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 90cd8ba5-4f47-4074-bc54-6a7bb8afe256
+exl-id: 7efc657e-b662-47db-8e70-62a37f3a3051
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '336'
 ht-degree: 0%
 
 ---
-
 
 # Een veilige AEM Forms-app voor iOS maken {#building-a-secure-aem-forms-app-for-ios}
 
@@ -27,7 +27,7 @@ U moet het Xcode-project voor de AEM Forms-app archiveren om het installatieprog
 
 1. Maak een toepassings-id. Voor gedetailleerde stappen om een identiteitskaart van de Toepassing tot stand te brengen, zie [Creërend en Vormend App IDs](https://developer.apple.com/library/ios/documentation/IDEs/Conceptual/AppDistributionGuide/MaintainingProfiles/MaintainingProfiles.html).
 1. Als u de bundle-id voor de iOS-toepassing voor uw app wilt configureren, klikt u op **[!UICONTROL Configure App ID]**.
-1. Selecteer **[!UICONTROL Enable for Data Protection]** onder aan de webpagina. Geef de opties voor gegevensbescherming op.
+1. Selecteer onder aan de webpagina **[!UICONTROL Enable for Data Protection]**. Geef de opties voor gegevensbescherming op.
 
    Klik op **[!UICONTROL Done]**.
 
