@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_endpoints
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 761e7909-43ba-4642-bcfc-8d76f139b9a3
+exl-id: bce7eee6-17c6-4eaf-b679-b47e611bed87
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '7174'
 ht-degree: 0%
 
 ---
-
 
 # Gecontroleerde eindpunten van mappen {#configuring-watched-folder-endpoints} configureren
 
@@ -127,7 +127,7 @@ Gebruik de volgende montages om een gecontroleerd omslageindpunt te vormen.
 
 **Interval herhalen:** het interval in seconden waarmee de controlemap op invoer wordt gescand. Als de instelling voor Throttle niet is ingeschakeld, moet het interval voor herhalen langer zijn dan de tijd voor het verwerken van een gemiddelde taak. anders kan het systeem overbelast raken . De standaardwaarde is 5. Zie de beschrijving bij Batchgrootte voor meer informatie.
 
-**Aantal herhalingen:** Aantal keren dat de gecontroleerde map de map of map scant. De waarde -1 geeft aan dat een scanbewerking voor onbepaalde tijd wordt uitgevoerd. De standaardwaarde is -1.
+**Aantal herhalingen:** Aantal keer dat de gecontroleerde map de map of map scant. De waarde -1 geeft aan dat een scanbewerking voor onbepaalde tijd wordt uitgevoerd. De standaardwaarde is -1.
 
 **Throttle:** Als deze optie is geselecteerd, beperkt deze het aantal controletaken dat op een bepaald moment AEM formulieren verwerken. Het maximumaantal taken wordt bepaald door de waarde voor Batchgrootte. (Zie Informatie over vertragen.)
 
@@ -346,7 +346,6 @@ Wanneer de bronbestanden in de werkgebiedmap niet kunnen worden verwerkt in de g
 
    * In Toepassingen en de Diensten, verander de Include parameter van het Patroon van het Dossier voor het gecontroleerde omslageindpunt in iets dat geen van de nieuwe inputdossiers zal aanpassen (bijvoorbeeld, ga `NOMATCH` in).
    * Onderbreek het proces dat nieuwe invoerbestanden maakt.
-
    Wacht tot AEM formulieren alle bestanden herstellen en verwerken. De meeste bestanden moeten worden hersteld en nieuwe invoerbestanden moeten correct worden verwerkt. De tijdsduur dat u wacht tot de gecontroleerde map de bestanden heeft hersteld en verwerkt, is afhankelijk van de lengte van de bewerking die moet worden aangeroepen en het aantal bestanden dat moet worden hersteld.
 
 1. Bepaal welke bestanden niet kunnen worden verwerkt. Ga naar de volgende stap als u op een geschikte hoeveelheid tijd hebt gewacht en de vorige stap hebt voltooid en er nog steeds onverwerkte bestanden in de map met werkgebieden staan.
@@ -380,7 +379,7 @@ Hier zijn sommige uiteinden en trucs wanneer het vormen van het Gecontroleerde e
 
    * Voor invoer `com.adobe.idp.Document`: Als de de dienstverrichting een input van type `Document` heeft, kan de beheerder het toewijzingstype specificeren zoals `Variable`. Gecontroleerde map haalt de invoer op van de invoermap van de gecontroleerde map op basis van het bestandspatroon dat voor de invoerparameter is opgegeven. Als de beheerder `*.pdf` als parameter specificeert, zal elk dossier dat een uitbreiding van .pdf heeft worden opgenomen, in `com.adobe.idp.Document` worden omgezet, en de dienst aangehaald.
    * Voor invoer `java.util.Map`: Als de de dienstverrichting een input van type `Map` heeft, kan de beheerder het toewijzingstype als `Variable` specificeren en een toewijzingswaarde met een patroon zoals `*.pdf` ingaan. Een service heeft bijvoorbeeld een kaart nodig van twee `com.adobe.idp.Document`-objecten die twee bestanden in de invoermap vertegenwoordigen, zoals 1.pdf en 2.pdf. Gecontroleerde map maakt een kaart met de sleutel als bestandsnaam en de waarde als `com.adobe.idp.Document`.
-   * Voor invoer `java.util.List`: Als de de dienstverrichting een input van typeLijst heeft, kan de beheerder het toewijzingstype als `Variable` specificeren en een toewijzingswaarde met een patroon zoals `*.pdf` ingaan. Wanneer PDF-bestanden in de invoermap worden neergezet, wordt met Gecontroleerde map een lijst gemaakt met de `com.adobe.idp.Document`-objecten die deze bestanden vertegenwoordigen en de doelservice aanroepen.
+   * Voor invoer `java.util.List`: Als de de dienstverrichting een input van typeLijst heeft, kan de beheerder het toewijzingstype als `Variable` specificeren en een toewijzingswaarde met een patroon zoals `*.pdf` ingaan. Wanneer PDF-bestanden in de invoermap worden neergezet, wordt met Gecontroleerde map een lijst gemaakt van de `com.adobe.idp.Document`-objecten die deze bestanden vertegenwoordigen en de doelservice aanroepen.
    * Voor `java.lang.String`: De beheerder heeft twee opties. Eerst kan de beheerder het toewijzingstype opgeven als `Literal` en een toewijzingswaarde invoeren als een tekenreeks, zoals `hello.` Gecontroleerde map de service aanroept met de tekenreeks `hello`. Ten tweede kan de beheerder het toewijzingstype opgeven als een `Variable` en een toewijzingswaarde invoeren met een patroon zoals `*.txt`. In het laatste geval worden bestanden met de extensie .txt gelezen als een document dat als een tekenreeks wordt gecomprimeerd om de service aan te roepen.
    * Primitief Java-type: De beheerder kan het toewijzingstype als `Literal` specificeren en de waarde verstrekken. Gecontroleerde map activeert de service met de opgegeven waarde.
 
@@ -427,4 +426,3 @@ Voor alle services moet u de batchgrootte en het herhalingsinterval van de gecon
 
    * Één van de draden vindt met succes het dossier en haalt de doeldienst met het dossier aan.
    * De tweede thread ziet het bestand, maar mislukt wanneer wordt geprobeerd uit te zoeken of het bestand geldig is (lees- of schrijfbestand). Dit veroorzaakt fout-fouten die aangeven dat het bestand niet kan worden verwerkt omdat het alleen-lezen is. Dit gebeurt alleen met een lage herhalingsinterval en een hoge batchgrootte.
-
