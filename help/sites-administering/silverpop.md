@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: dfff6bdc-0d5f-4338-aa8a-7d0eb04bc19a
+exl-id: 3148ba52-4464-4f3e-8741-645cd7a1c970
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Silverpop Engage{#integrating-with-silverpop-engage}
 
@@ -115,4 +115,3 @@ De API-eindpunten configureren:
 1. Klik **Alles opslaan**. AEM is nu klaar om verbinding te maken met Silverpop via beveiligde eindpunten.
 
    ![chlimage_1-45](assets/chlimage_1-45.jpeg)
-
