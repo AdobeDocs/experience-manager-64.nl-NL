@@ -9,14 +9,16 @@ topic-tags: content-fragments
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 content-type: reference
 discoiquuid: 22ae0d3a-083f-40e4-bf4a-7a755ae9e312
+exl-id: e2804707-7b75-4fae-937e-9e258481878f
+feature: Contentfragmenten
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 2d25f3154ac4a2b43aec98cf63699cabf0d113cf
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '2002'
+source-wordcount: '2004'
 ht-degree: 3%
 
 ---
-
 
 # Werken met contentfragmenten {#working-with-content-fragments}
 
@@ -210,7 +212,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
 
    >[!NOTE]
    >
-   >Elementen kunnen ook worden toegevoegd als [extra (tussenliggende) inhoud](/help/sites-authoring/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina. het gebruiken van of Bijbehorende Inhoud of activa van browser van Middelen.
+   >Elementen kunnen ook worden toegevoegd als [extra (tussenliggende) inhoud](/help/sites-authoring/content-fragments.md#using-associated-content) bij het gebruik van een fragment op een pagina. het gebruiken van of Bijbehorende Inhoud of activa van browser van Activa.
 
 * **Gekoppelde inhoud**
 
@@ -231,7 +233,7 @@ De elementen van het inhoudsfragment bestaan uit de volgende onderdelen (direct 
       * Het fragment maken en ontwerpen
       * of hoger:
 
-         * Door het fragment **Eigenschappen** vanuit de console weer te geven/te bewerken
+         * Door het fragment **Eigenschappen** vanuit de console weer te geven of te bewerken
          * Door de **Metagegevens** te bewerken in de fragmenteditor
 
    >[!CAUTION]
@@ -306,4 +308,3 @@ Een fragment met de elementen en variaties kan worden gebruikt om coherente inho
 Een voorbeeldfragment is zichtbaar bij:
 
 [http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten](http://localhost:4502/assets.html/content/dam/we-retail/en/experiences/arctic-surfing-in-lofoten)
-
