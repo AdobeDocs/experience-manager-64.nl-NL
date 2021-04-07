@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 80a70f5c-dcc4-425f-9971-9e0feec094d6
+exl-id: 4831abe0-7d82-4cdd-8579-9736aa6a94d6
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1784'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot het aanpassen van AEM formulierwerkruimte {#introduction-to-customizing-aem-form-workspace}
 
@@ -380,4 +380,3 @@ mvn clean -P Dev install on client pkg
 * html.jsp
 * content.xml
 * _rep_policy.xml
-
