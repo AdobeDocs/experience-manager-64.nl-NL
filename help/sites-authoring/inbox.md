@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8b607b55-2412-469f-856b-0a3dea4b0efb
+exl-id: 9037f21c-5392-4322-af0d-7e220c810954
 translation-type: tm+mt
-source-git-commit: 966263cc94f44bcad76e7e9ba5c6ecdc93574348
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '896'
 ht-degree: 10%
 
 ---
-
 
 # Uw inbox{#your-inbox}
 
@@ -256,4 +256,3 @@ U kunt de vermelde items filteren:
    >[!NOTE]
    >
    >Met [De Montages van de Mening](#inbox-view-settings) kunt u de soortorde ook vormen wanneer het gebruiken van [de Mening van de Lijst](#inbox-list-view).
-
