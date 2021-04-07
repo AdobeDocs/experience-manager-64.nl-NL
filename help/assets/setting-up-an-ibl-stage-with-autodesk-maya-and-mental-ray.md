@@ -9,14 +9,16 @@ topic-tags: 3D
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 752e521f-198f-425a-abfa-051993f9c694
+exl-id: ecb489e2-fd6f-4163-9739-5d7ff497d305
+feature: 3D-middelen
+role: Administrator,Business Practitioner
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '501'
+source-wordcount: '503'
 ht-degree: 0%
 
 ---
-
 
 # Een IBL-podium instellen met Autodesk Maya en Mental Ray {#setting-up-an-ibl-stage-with-autodesk-maya-and-mental-ray}
 
@@ -82,4 +84,3 @@ ht-degree: 0%
 1. Elementeigenschappen openen in AEM. Stel **[!UICONTROL Title]** in op een geschikte tekenreeks die wordt weergegeven in de vervolgkeuzelijst **[!UICONTROL Stage Selector]**. Controleer of **[!UICONTROL Class]** is ingesteld op **[!UICONTROL 3D Stage]**. Opslaan en afsluiten.
 
 1. Open een 3D-element, selecteer het nieuwe werkgebied en controleer of het naar behoren wordt weergegeven en weergegeven.
-
