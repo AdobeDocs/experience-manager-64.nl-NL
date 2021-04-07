@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: c6115b64-e06f-4b5e-b7f9-876553c7627f
+exl-id: 83f978ca-d451-4d27-820f-3620331285cf
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1159'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste aangepaste formuliersjablonen maken {#creating-a-custom-adaptive-form-template}
 
@@ -148,4 +148,3 @@ Het `head.jsp`-bestand van de `enrollmentpage`-component voor de nieuwe sjabloon
 >[!NOTE]
 >
 >Thema verwijst naar een clientbibliotheek die is opgenomen in de paginacomponent die wordt gebruikt om een adaptief formulier te genereren. De clientbibliotheek is voornamelijk van toepassing op het uiterlijk van een adaptief formulier.
-
