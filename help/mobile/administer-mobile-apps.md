@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: introduction
 content-type: reference
 discoiquuid: 302d1bd9-fdb3-4db6-a446-6ed85ad9fba5
+exl-id: c5aa2311-e7c4-4a7c-a525-6ce8611baaa0
 translation-type: tm+mt
-source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '145'
 ht-degree: 0%
 
 ---
-
 
 # Mobiele toepassingen{#mobile-apps}
 
