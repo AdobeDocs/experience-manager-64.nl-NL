@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 79fccce2-d090-4b50-9c58-3f2a00e651b2
+exl-id: 7eee8103-8d6c-4397-acaf-dd662cc09a56
 translation-type: tm+mt
-source-git-commit: 73d0dea62c294bea435364fb9c6892d80751d90d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '356'
 ht-degree: 0%
 
 ---
-
 
 # Service-API&#39;s voor systeeminformatie {#system-information-service-apis}
 
@@ -111,4 +111,3 @@ De systeeminformatiedienst verstrekt een reeks REST APIs om informatie terug te 
   </tr> 
  </tbody> 
 </table>
-
