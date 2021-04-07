@@ -6,14 +6,14 @@ seo-description: Metagegevens gebruiken om informatie in te vullen in een e-mail
 uuid: 17e018c9-6bf8-4042-bba9-4ebe449304ac
 topic-tags: publish
 discoiquuid: bdf13893-630a-43cd-aaeb-c7c16bf4f8a6
+exl-id: 248c5adf-23e9-463f-9f29-869ae2426c22
 translation-type: tm+mt
-source-git-commit: 0797eeae57ac5a9676c6d308eaf2aaffab999d18
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '916'
 ht-degree: 0%
 
 ---
-
 
 # Metagegevens gebruiken in een e-mailmelding {#use-metadata-in-an-email-notification}
 
