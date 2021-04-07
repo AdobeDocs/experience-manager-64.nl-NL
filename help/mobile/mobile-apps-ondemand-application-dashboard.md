@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-on-demand-services-app
 discoiquuid: 42a38399-f5a7-4d2f-aa6a-d409a7ec60f7
+exl-id: 538d6c02-acee-4774-ab3f-1cf152bb42da
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '625'
 ht-degree: 1%
 
 ---
-
 
 # AEM Mobile-toepassingsdashboard {#aem-mobile-application-dashboard}
 
@@ -147,4 +147,3 @@ Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ont
 
 * [AEM voor AEM Mobile On-demand Services ontwikkelen](/help/mobile/aem-mobile-on-demand.md)
 * [Inhoud beheren voor gebruik van AEM Mobile On-demand Services](/help/mobile/aem-mobile.md)
-
