@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 4a864547-edbe-4d2d-a8ee-39bc65dffe88
 feature: Correspondentenbeheer
+exl-id: cd565ec5-f453-4692-83f8-e1fb06dc28c7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '799'
+ht-degree: 1%
 
 ---
-
 
 # Externe functies in Expressiebouwer {#remote-functions-in-expression-builder}
 
