@@ -7,14 +7,16 @@ uuid: 5de8844f-d5d0-4fda-b59e-74682eda949f
 contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: 2f254541-6f9b-4f8a-9201-6c70f2d4f3b9
+exl-id: 3adae6da-e148-4670-86ae-27d83008ec66
+feature: Interactieve video's, video
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 7cb0f63f0cd83e6e40ed51b2fd300f010278aa56
+source-git-commit: 13eb1d64677f6940332a2eeb4d3aba2915ac7bba
 workflow-type: tm+mt
-source-wordcount: '5929'
+source-wordcount: '5932'
 ht-degree: 4%
 
 ---
-
 
 # Interactieve video&#39;s {#interactive-videos}
 
