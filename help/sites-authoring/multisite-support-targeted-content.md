@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 4dda6a03-d3ad-4e65-8b37-cee030fa4f7f
+exl-id: adf7c1d3-5e3d-42b7-b1e1-ae6980b08a90
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2906'
 ht-degree: 5%
 
 ---
-
 
 # Werken met getargete content in meerdere sites{#working-with-targeted-content-in-multisites}
 
@@ -120,7 +120,7 @@ Nadat u het tabblad hebt vernieuwd, verandert de Canadese site in de nieuwe afbe
 
 ![chlimage_1-274](assets/chlimage_1-274.png)
 
-De markator wil deze wijzigingen in de Europese regio doorvoeren en [rolt de live kopie](/help/sites-administering/msm-livecopy.md) door te tikken of te klikken op **Uitrolpagina**. Na het vernieuwen van de tab heeft de site van Groot-Brittannië het nieuwe beeld dat het Europese gebied erft van het master gebied (na de uitrol).
+De markator wil deze wijzigingen in de Europese regio doorvoeren en [rolt de live kopie](/help/sites-administering/msm-livecopy.md) door te tikken of te klikken op **Uitrolpagina**. Na het verfrissen van de tab heeft de site van Groot-Brittannië het nieuwe beeld dat het Europa-gebied erft van het master gebied (na de uitrol).
 
 ![chlimage_1-275](assets/chlimage_1-275.png)
 
@@ -142,7 +142,7 @@ Als, echter, u erfenisopstelling via MSM tussen de twee plaatsen hebt, dan kunt 
 
 >[!NOTE]
 >
->De standaarduitrol activeert volgende uitrollingen van de doelinhoud wanneer een pagina een actieve kopie is die aan een gebied wordt gekoppeld dat zelf een actieve kopie is van het gebied dat aan de paginablauwdruk is gekoppeld.
+>De standaarduitrol activeert volgende uitrollouts van de doelinhoud wanneer een pagina een actieve kopie is die aan een gebied wordt gekoppeld dat zelf een actieve kopie is van het gebied dat aan de paginablauwdruk is gekoppeld.
 
 In het volgende diagram zijn er bijvoorbeeld vier sites waar twee het master gebied delen (en alle activiteiten die deel uitmaken van dat gebied), één site die een gebied heeft dat een live kopie van een gebied is, zodat het de activiteiten deelt bij de uitrol, en één kant die volledig gescheiden is (en dus een gebied voor zijn activiteiten vereist).
 
@@ -306,4 +306,3 @@ Een gebied verwijderen:
 1. Navigeer naar **Personalisatie** > **Activiteiten** of **Aanbiedingen** en vervolgens naar uw merk.
 1. Tik of klik op het pictogram naast het gebied dat u wilt verwijderen.
 1. Tik of klik op **Verwijderen** en bevestig dat u het gebied wilt verwijderen.
-
