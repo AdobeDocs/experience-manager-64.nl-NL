@@ -5,14 +5,14 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
+exl-id: b1f17bcd-1e91-43f0-85e1-963ff5fe3717
 translation-type: tm+mt
-source-git-commit: ea5b226756711489aaf316022adb746d7f1be696
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2044'
 ht-degree: 2%
 
 ---
-
 
 # Zoekformulieren configureren{#configuring-search-forms}
 
@@ -560,4 +560,3 @@ In de volgende tabel worden de machtigingen weergegeven die vereist zijn voor he
   </tr> 
  </tbody> 
 </table>
-
