@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: 22712b73-90f2-4329-b32f-dbb7ce802d1d
+exl-id: f10680e5-e8ae-49a0-ae52-3aa1f22b2d3e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '273'
 ht-degree: 11%
 
 ---
-
 
 # Workflows toepassen op pagina&#39;s{#applying-workflows-to-pages}
 
@@ -59,4 +59,3 @@ De **Status** kolom in **Websites** console wijst erop of een werkschema op een 
    ![workflowstartsidekick](assets/workflowstartsidekick.png)
 
 1. Klik **Workflow van het Begin** om een nieuwe werkschemainstantie met de eigenschappen te beginnen u en de huidige pagina als nuttige lading vormde. De workflow wordt nu uitgevoerd.
-
