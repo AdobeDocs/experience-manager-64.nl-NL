@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MANAGING
 topic-tags: managing-accessibility
 content-type: reference
 discoiquuid: 3cac0e34-7514-48ce-a93b-592bbdbcd252
+exl-id: 80edcd53-bc3c-4f61-8dfb-c592e7e51f60
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1685'
 ht-degree: 82%
 
 ---
-
 
 # Snelle Gids aan WCAG 2.0{#quick-guide-to-wcag}
 
