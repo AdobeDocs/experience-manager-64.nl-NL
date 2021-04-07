@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 0843ceff-2607-4733-8383-681820e513d1
+exl-id: 43376dfd-9cef-46f5-af14-21e379fbb79a
 translation-type: tm+mt
-source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1215'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met SPA in AEM - Reageren {#getting-started-with-spas-in-aem-react}
 
@@ -26,12 +26,12 @@ De SPA ontwerpfunctie biedt een uitgebreide oplossing voor het ondersteunen van 
 
 >[!NOTE]
 >
->Dit artikel is gebaseerd op het React-kader. Zie [Aan de slag met SPA in AEM - Hoek](/help/sites-developing/spa-getting-started-angular.md) voor het corresponderende document voor het hoekframework.
+>Dit artikel is gebaseerd op het React-kader. Voor het overeenkomstige document voor het kader van de Angular zie [Aan de slag met SPA in AEM - Angular](/help/sites-developing/spa-getting-started-angular.md).
 
 >[!NOTE]
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
@@ -125,7 +125,7 @@ Nadat het pakket is gemaakt, kan het naar een AEM-instantie worden geüpload.
 
 ### Projectarchetype {#aem-project-archetype} AEM
 
-Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Hoekig steunt en hefboomwerkingen de SPA SDK.
+Om het even welk AEM project zou hefboomwerking [AEM Project Archetype](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/developing/archetype/overview.html), dat SPA projecten gebruikend React of Angular steunt en hefboomwerkingen de SPA SDK gebruikt.
 
 ## Toepassingsstructuur {#application-structure}
 
@@ -289,4 +289,4 @@ Zie het artikel [SPA ontwikkelen voor AEM](/help/sites-developing/spa-architectu
 
 Zie het artikel [Dynamisch model aan componenttoewijzing voor SPA](/help/sites-developing/spa-dynamic-model-to-component-mapping.md) voor meer informatie over het dynamische model aan componenttoewijzing en hoe het werkt binnen SPA in AEM.
 
-Als u SPA in AEM voor een ander kader dan React of Hoekig wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe de SPA SDK voor AEM werkt, verwijs naar [SPA Blauwdruk](/help/sites-developing/spa-blueprint.md) artikel.
+Als u SPA in AEM voor een kader buiten React of Angular wilt uitvoeren of eenvoudig een diepe duik in willen nemen hoe de SPA SDK voor AEM werkt, verwijs naar [SPA Blauwdruk](/help/sites-developing/spa-blueprint.md) artikel.
