@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 6ab07b5b-ee37-4029-95da-be2031779107
+exl-id: a5cb3b7b-d40f-4d86-8473-fb584f1d486c
 translation-type: tm+mt
-source-git-commit: aac5026a249e1cb09fec66313cc03b58597663f0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1019'
 ht-degree: 0%
 
 ---
-
 
 # De pagina-exportfunctie{#the-page-exporter}
 
@@ -147,4 +147,3 @@ De servlet die aan `export` selecteur en `zip` uitbreiding verbindt gebruikt de 
 ## Problemen oplossen {#troubleshooting}
 
 Als er een probleem optreedt met het downloaden van het ZIP-bestand, kunt u het `/var/contentsync`-knooppunt in de gegevensopslagruimte verwijderen en het exportverzoek opnieuw verzenden.
-
