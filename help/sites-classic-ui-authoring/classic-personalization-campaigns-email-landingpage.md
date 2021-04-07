@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: dfe0ad66-9df5-4ea3-9e66-543b5ccd594a
+exl-id: 1ab81235-2627-4304-bbf2-71598de948db
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '658'
 ht-degree: 0%
 
 ---
-
 
 # Een effectieve openingspagina voor nieuwsbrieven maken{#creating-an-effective-newsletter-landing-page}
 
@@ -68,7 +68,7 @@ In het volgende voorbeeld wordt een formulier gemaakt op http://localhost:4502/c
 
 Wanneer de gebruikers **Abonneren nu** klikken, wilt u een Dank u pagina automatisch openen. Maak de pagina Bedankt op de pagina Geometrixx Newsletter. Nadat u het nieuwsbrief formulier hebt gemaakt, bewerkt u de component Formulier en voegt u het pad toe aan de pagina Hartelijk dank.
 
-Als u de aanvraag verzendt, gaat de gebruiker naar een pagina **Dankuwel** waarna hij of zij een e-mail ontvangt. Deze pagina Bedankt is gemaakt op /content/geometrixx/nl/toolbar/nieuwsbrief/bedankje.
+Als u de aanvraag verzendt, gaat de gebruiker naar een pagina **Dankuwel** waarna deze een e-mail ontvangt. Deze pagina Bedankt is gemaakt op /content/geometrixx/nl/toolbar/nieuwsbrief/bedankje.
 
 ![mcm_nieuwsbrief_thankyoupage](assets/mcm_newsletter_thankyoupage.png)
 
