@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 93961c9c-b46c-4233-b070-7343245255d1
 feature: Adaptieve Forms
+exl-id: 7e3e9db6-13da-49b4-a9f9-79e76be9ea19
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '712'
 ht-degree: 0%
 
 ---
-
 
 # Informatie uit gebruikersgegevens toevoegen aan metagegevens voor formulierverzending {#adding-information-from-user-data-to-form-submission-metadata}
 
@@ -68,4 +68,3 @@ U selecteert een adaptieve formuliercontainer en in de formuliereigenschappen vo
 >[!NOTE]
 >
 >Het bovenstaande voorbeeld is alleen bedoeld voor leerdoeleinden. Zorg ervoor dat u naar metagegevens zoekt op de juiste locatie zoals deze is geconfigureerd in uw AEM Forms-implementatie.
-
