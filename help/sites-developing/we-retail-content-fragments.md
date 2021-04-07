@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: d1326737-f378-46d0-9916-61ead4d31639
+exl-id: d93bec03-c651-4329-b220-4ac1ea189de1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '459'
 ht-degree: 3%
 
 ---
-
 
 # Inhoudsfragmenten uitproberen in We.Retail{#trying-out-content-fragments-in-we-retail}
 
@@ -105,4 +105,3 @@ Zie voor meer informatie:
 * [Inhoudsfragmenten ontwikkelen en uitbreiden](/help/sites-developing/customizing-content-fragments.md)
 
    * Informatie die u helpt bij het ontwikkelen en uitbreiden van inhoudsfragmenten.
-
