@@ -6,14 +6,14 @@ products: SG_EXPERIENCEMANAGER/6.5/SITES
 topic-tags: upgrading
 content-type: reference
 feature: Bijwerken
+exl-id: 7d2cf3d6-0dd3-4ce2-be9e-5d8b65a9edab
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1344'
 ht-degree: 0%
 
 ---
-
 
 # Offline opnieuw indexeren gebruiken om de downtime tijdens een upgrade te reduceren {#offline-reindexing-to-reduce-downtime-during-upgrades}
 
