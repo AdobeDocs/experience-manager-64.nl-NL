@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction, author
 discoiquuid: c7a1d13e-cb61-4082-8ae7-7f5eee9e0a51
 feature: Adaptieve Forms
+exl-id: 62f1ddd3-9fc2-49dd-b588-0c3520e1cdd2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3010'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot het ontwerpen van adaptieve formulieren {#introduction-to-authoring-adaptive-forms}
 
@@ -392,4 +392,3 @@ De inhoudsstructuur bevat doorgaans de volgende primaire componenten:
 * **[!UICONTROL toolbar]**: Een adaptieve formuliercontainer heeft een bijbehorende algemene werkbalk, die algemeen is voor het formulier. Deze werkbalk kan worden toegevoegd met de handeling **Werkbalk toevoegen** op de bewerkbalk. Hiermee kunnen auteurs handelingen toevoegen, zoals Verzenden, Opslaan, Herstellen, enzovoort.
 
 * **[!UICONTROL assets]**: Dit knooppunt bevat aanvullende informatie die wordt gebruikt voor het ontwerpen van formulieren. Bijvoorbeeld details van het formuliermodel, lokalisatiedetails, enzovoort).
-
