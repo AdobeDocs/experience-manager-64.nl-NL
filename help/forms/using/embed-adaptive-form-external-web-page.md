@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: author
 discoiquuid: b99c7b93-ba05-42ee-9ca8-0079e15d8602
 feature: Adaptieve Forms
+exl-id: 84a46197-9933-4b94-a8e3-e7baf9c644b1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1056'
 ht-degree: 0%
 
 ---
-
 
 # Aangepast formulier insluiten in externe webpagina{#embed-adaptive-form-in-external-web-page}
 
