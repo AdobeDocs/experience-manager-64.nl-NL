@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a3cbffb7-c1d1-47c2-bcfd-70f1e2d81ac9
+exl-id: 89286798-e02a-45d8-a91d-c50ef4dc7f25
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '990'
 ht-degree: 0%
 
 ---
-
 
 # CSRF-aanvallen voorkomen {#preventing-csrf-attacks}
 
@@ -30,7 +30,7 @@ Neem bijvoorbeeld een scenario waarin u bent aangemeld bij de beheerconsole in e
 
 **Referer:** Het adres van de bronpagina waarvan een verzoek komt. Een webpagina op site1.com bevat bijvoorbeeld een koppeling naar site2.com. Als u op de koppeling klikt, wordt een aanvraag naar site2.com geplaatst. De verwijzer van dit verzoek is site1.com omdat het verzoek van een pagina wordt gemaakt de waarvan bron site1.com is.
 
-**URI&#39;s met whitelisting:** URI&#39;s identificeren bronnen op de formulierserver die worden aangevraagd, bijvoorbeeld /adminui of /contentSpace. Sommige middelen kunnen een verzoek toestaan om de toepassing van externe plaatsen in te gaan. Deze middelen worden beschouwd als op de lijst met gewenste personen staan URIs. De formulierserver voert nooit een referentiecontrole uit van op de lijst met gewenste personen staan URI&#39;s.
+**Witte URI&#39;s:** URI&#39;s identificeren bronnen op de formulierserver die worden aangevraagd, bijvoorbeeld /adminui of /contentSpace. Sommige middelen kunnen een verzoek toestaan om de toepassing van externe plaatsen in te gaan. Deze middelen worden beschouwd als op de lijst met gewenste personen staan URIs. De formulierserver voert nooit een referentiecontrole uit van op de lijst met gewenste personen staan URI&#39;s.
 
 **Null-verwijzing:** Wanneer u een nieuw browservenster of tabblad opent, typt u een adres en drukt u op Enter, is de referentie null. Het verzoek is geheel nieuw en niet afkomstig van een bovenliggende webpagina. er is derhalve geen verwijzing naar het verzoek . De formulierserver kan een null-referentie ontvangen van:
 
@@ -40,7 +40,7 @@ Neem bijvoorbeeld een scenario waarin u bent aangemeld bij de beheerconsole in e
 
 Een null-verwijzing toestaan op de eindpunten SOAP en REST. Sta ook een ongeldige verwijzer op alle login van URI pagina&#39;s zoals /adminui en /contentSpace en hun overeenkomstige in kaart gebrachte middelen toe. Bijvoorbeeld, in kaart gebrachte servlet voor /contentSpace is /contentspace/faces/jsp/login.jsp, die een ongeldige verwijzingsuitzondering zou moeten zijn. Deze uitzondering is alleen vereist als u het filteren van GET voor uw webtoepassing inschakelt. Uw toepassingen kunnen specificeren of om ongeldige verwijzers toe te staan. Zie &quot;Beveiliging tegen aanvallen van smeedmachines voor meerdere sites&quot; in [Verharding en beveiliging voor AEM formulieren](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).
 
-**Uitzondering toegestane verwijzing:Uitzondering** toegestane verwijzing is een sublijst van de lijst van toegestane verwijzers, waarvan de verzoeken worden geblokkeerd. Uitzonderingen voor toegestane verwijzingen zijn specifiek voor een webtoepassing. Als een subset van de toegestane referenties een bepaalde webtoepassing niet mag aanroepen, kunt u de referenties via toegestane uitzonderingen lijsten van afgewezen personen. Uitzonderingen voor toegestane verwijzingen worden opgegeven in het bestand web.xml voor uw toepassing. (Zie &quot;Beveiliging tegen aanvallen van Svervalsingen voor verzoeken van andere sites&quot; in Verharding en Beveiliging voor AEM formulieren op de pagina Help en Tutorials.)
+**Uitzondering toegestane verwijzing:Uitzondering** toegestane verwijzing is een sublijst van de lijst van toegestane verwijzers, waarvan de verzoeken worden geblokkeerd. Uitzonderingen voor toegestane verwijzingen zijn specifiek voor een webtoepassing. Als een subset van de toegestane referenties een bepaalde webtoepassing niet mag aanroepen, kunt u de referenties via toegestane uitzonderingen lijsten van gewezen personen. Uitzonderingen voor toegestane verwijzingen worden opgegeven in het bestand web.xml voor uw toepassing. (Zie &quot;Beveiliging tegen aanvallen van Svervalsingen voor verzoeken van andere sites&quot; in Verharding en Beveiliging voor AEM formulieren op de pagina Help en Tutorials.)
 
 ## Hoe toegestane verwijzers werken {#how-allowed-referers-work}
 
@@ -51,10 +51,10 @@ AEM formulieren bieden filterverwijzingen, die helpen aanvallen van CSRF te voor
    * Als het POST is, voert de formulierserver de verwijzingskoptekstcontrole uit.
    * Als dit GET is, slaat de formulierserver de verwijzingscontrole over, tenzij CSRF_CHECK_GETS is ingesteld op true, in welk geval de verwijzingskoptekstcontrole wordt uitgevoerd. CSRF_CHECK_GETS wordt gespecificeerd in het web.xml- dossier voor uw toepassing. (Zie &quot;Beschermend tegen de aanvallen van het Verzoek van de Versmeedmachine van de Verkeer van de Plaats&quot;in [Verharding en gids van de Veiligheid](https://help.adobe.com/en_US/livecycle/11.0/HardeningSecurity/index.html).)
 
-1. De formulierserver controleert of de aangevraagde URI is toegevoegd op lijst van gewenste personen:
+1. De formulierserver controleert of de aangevraagde URI is gevoegd op lijst van gewenste personen:
 
-   * Als URI wordt toegevoegd op lijst van gewenste personen, geeft de server de aanvraag door.
-   * Als gevraagde URI niet wordt toegevoegd op lijst van gewenste personen, wint de server de verwijzer van het verzoek terug.
+   * Als URI wordt gevoegd op lijst van gewenste personen, geeft de server de aanvraag door.
+   * Als gevraagde URI niet wordt gevoegd op lijst van gewenste personen, wint de server de verwijzer van het verzoek terug.
 
 1. Als er een verwijzing in het verzoek is, controleert de server of het een toegelaten verwijzer is. Als dit is toegestaan, controleert de server op een verwijzingsuitzondering:
 
@@ -82,4 +82,3 @@ Wanneer u Configuration Manager uitvoert, worden de standaardhost en het IP-adre
    Als de Toegestane Lijst van de Verwijzing leeg is, houdt de eigenschap CSRF op werkend en het systeem wordt onveilig.
 
 1. Nadat u de lijst Toegestane verwijzing hebt gewijzigd, start u de AEM formulierserver opnieuw.
-
