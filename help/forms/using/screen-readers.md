@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 53c57180-7004-4534-9146-603f7770a6fe
 feature: Mobile Forms
+exl-id: c27eb771-d390-4534-8e67-f1277550e760
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 0%
 
 ---
-
 
 # Schermlezers voor HTML5-formulieren {#screen-readers-for-html-forms}
 
