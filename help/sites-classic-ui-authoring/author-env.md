@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 8c747892-c5ba-4288-b5e7-75fd40d92f5c
+exl-id: 8421a092-6e99-4c05-9647-c0cc76667c85
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '286'
 ht-degree: 0%
 
 ---
-
 
 # Werken met de ontwerpomgeving{#working-with-the-author-environment}
 
@@ -39,7 +39,6 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar, die toegankelijk 
    * Het is ontworpen voor gebruik op desktopapparaten.
    * Het wordt niet langer gehandhaafd.
    * De volgende documentatie concentreert zich op deze klassieke UI. Raadpleeg de [standaardontwerpdocumentatie](/help/sites-authoring/author.md) voor informatie over ontwerpen in de moderne, op touch gebaseerde gebruikersinterface.
-
    ![chlimage_1-149](assets/chlimage_1-149.png)
 
 1. Interface met aanraakbediening
@@ -50,10 +49,7 @@ Hiervoor zijn twee grafische gebruikersinterfaces beschikbaar, die toegankelijk 
    * Raadpleeg de [standaarddocumentatie voor auteurs](/help/sites-authoring/author.md) voor meer informatie over het gebruik van de op touch gebaseerde interface. De volgende documentatie concentreert zich op klassieke UI.
 
    * Desktop:
-
    ![chlimage_1-150](assets/chlimage_1-150.png)
 
    * Tabletapparaten (of desktops met een breedte van minder dan 1024 pixels):
-
    ![chlimage_1-7](assets/chlimage_1-7.jpeg)
-
