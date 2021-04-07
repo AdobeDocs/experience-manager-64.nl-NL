@@ -10,14 +10,14 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: cb043066-aefc-4b68-b302-2b5dd710a786
 feature: Kader voor integratie in de handel
+exl-id: d84cd0ec-4586-45c1-a07a-a4d50fcbb629
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht eCommerce{#ecommerce-overview}
 
@@ -48,4 +48,3 @@ Adobe verstrekt twee versies van het Kader van de Integratie van de Handel:
 >Voor informatie over concepten en het beheren van eCommerce implementaties, zie [Administering eCommerce](/help/sites-administering/ecommerce.md).
 >
 >Voor informatie over het uitbreiden van de mogelijkheden van de eCommerce, zie [Developing eCommerce](/help/sites-developing/ecommerce.md).
-
