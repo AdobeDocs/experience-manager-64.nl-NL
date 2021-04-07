@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 0225a543-0fad-488b-8b0b-8b3512d44fbe
+exl-id: d236a8d3-20ad-4568-a7c2-87d146aa0532
 translation-type: tm+mt
-source-git-commit: 63001012f0d865c2548703ea387c780679128ee7
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '237'
 ht-degree: 1%
 
 ---
-
 
 # Essentiële elementen van de Rich Text Editor {#rich-text-editor-essentials}
 
@@ -83,4 +83,3 @@ CKRte.prototype.config = {
     resize_enabled: false
 };
 ```
-
