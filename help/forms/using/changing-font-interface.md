@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 487e3966-443a-408e-b5af-899fcba6fca6
+exl-id: bd7ec9d6-b1d2-4f01-8cef-05e5e1eceda1
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '294'
 ht-degree: 1%
 
 ---
-
 
 # Het lettertype wijzigen op de interface {#changing-the-font-on-the-interface}
 
