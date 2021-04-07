@@ -2,6 +2,7 @@
 title: Gebruikers van de service in AEM
 seo-title: Gebruikers van de service in AEM
 description: Meer informatie over servicegebruikers in AEM.
+feature: Beveiliging
 seo-description: Meer informatie over servicegebruikers in AEM.
 uuid: 4efab5fb-ba11-4922-bd68-43ccde4eb355
 contentOwner: User
@@ -9,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 9cfe5f11-8a0e-4a27-9681-a8d50835c864
+exl-id: b6e77f61-5c7b-4e40-881c-057177e7ea6d
 translation-type: tm+mt
-source-git-commit: dda8156729aa46dd6cfd779bca120b165ccc980b
+source-git-commit: 40a4e01eea3e20fda6d0b2c8af985f905039e320
 workflow-type: tm+mt
-source-wordcount: '1788'
+source-wordcount: '1789'
 ht-degree: 0%
 
 ---
-
 
 # Servicegebruikers in AEM{#service-users-in-aem}
 
@@ -88,7 +89,7 @@ Als het bovenstaande ontbreekt, biedt Sling 7 de dienst van de Toewijzing van de
 * Zij staan kaartdiensten aan gebruikers toe
 * Zij maken het mogelijk om subservicegebruikers te definiëren
 * Het centrale configuratiepunt is: `org.apache.sling.serviceusermapping.impl.ServiceUserMapperImpl`
-* `service-id` =  `service-name` [ &quot;:&quot; subservice-name  ] 
+* `service-id` =  `service-name` [ &quot;:&quot; subservice-name  ]
 
 * `service-id` is toegewezen aan een resourceoplosser en/of JCR-opslaggebruikers-id voor verificatie
 * `service-name` is de symbolische naam van de bundel die de dienst verleent
