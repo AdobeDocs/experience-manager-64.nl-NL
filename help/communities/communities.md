@@ -9,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: fbfe8097-3c3f-4a05-97ad-1ce526362a26
+exl-id: b051b279-b0d9-41a3-b5d8-4b9bad448c0f
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '406'
 ht-degree: 1%
 
 ---
 
-
 # Ontwikkelingsgemeenschappen {#developing-communities}
 
 ## Overzicht {#overview}
 
-AEM Communities vereenvoudigt het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, vragen en antwoorden, kalenders, opmerkingen, revisies, stemmen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
+AEM Communities vereenvoudigt het maken en aanpassen van community-functies, zoals forums, gebruikersgroepen, blogs, vragen en antwoorden, kalenders, opmerkingen, revisies, stemmingen, beoordelingen en toewijzingen. Deze functies leiden ertoe dat door de gebruiker gegenereerde inhoud (UGC) wordt ingevoerd in de publicatieomgeving.
 
 De basis van een [communitysite](overview.md#communitiessites) is het [sociale-componentframework](scf.md) (SCF). Het creëren van een communautaire plaats begint met de selectie van [communautaire plaatsmalplaatje](sites-console.md) die uit [communautaire functies](functions.md) bestaat.
 
@@ -99,4 +99,3 @@ De componenten, de functies en de eigenschappen van AEM Communities verstrekken 
 * Bezoek [Communitysites beheren](administer-landing.md) voor meer informatie over het maken van een Community Site, het configureren van Sjablonen voor communautaire sites, het moderniseren van inhoud van de community, het beheren van leden en het configureren van berichten.
 
 * Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het schrijven en configureren van Community-componenten.
-
