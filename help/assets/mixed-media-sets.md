@@ -5,14 +5,16 @@ contentOwner: Rick Brough
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: dynamic-media
 content-type: reference
+exl-id: 252c1a50-17ac-4412-88d6-49bb6850658d
+feature: Mediasets mixen
+role: Business Practitioner
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: f9faa357f8de92d205f1a297767ba4176cfd1e10
 workflow-type: tm+mt
-source-wordcount: '1388'
+source-wordcount: '1391'
 ht-degree: 17%
 
 ---
-
 
 # Mixed Media Sets {#mixed-media-sets}
 
@@ -168,4 +170,3 @@ Zie [Elementen publiceren](publishing-dynamicmedia-assets.md) voor meer informat
 >[!NOTE]
 >
 >Als de gemengde Det van Media niet volledig in de leveringsdienst belandt de eerste keer u het publiceert, kunt u de gemengde media reeks een tweede keer moeten publiceren.
-
