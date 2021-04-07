@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: d13c68ba-be49-440b-8bbe-a10edbfb9b9b
+exl-id: 3f6d3b30-b1d5-4142-8b9f-7c5594686ae7
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1918'
 ht-degree: 0%
 
 ---
-
 
 # Clientcontext{#client-context}
 
@@ -67,7 +67,7 @@ De context van de Cliënt kan de volgende eigenschappen ([afhankelijk van wat zi
 
 **** CampaignHiermee kunnen auteurs een specifieke ervaring voor een campagne simuleren. Deze component overschrijft de normale campagneresolutie en ervaringsselectie om het testen van verschillende permutaties mogelijk te maken.
 
-De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt gewoonlijk geselecteerd gebaseerd op segmentatie.
+De oplossing van de campagne is doorgaans gebaseerd op de prioritaire eigenschap van de campagne. De ervaring wordt normaal geselecteerd gebaseerd op segmentatie.
 
 **** CartHiermee worden winkelwagengegevens getoond, waaronder productgegevens (titel, hoeveelheid, prijsOpgemaakt, enz.), opgeloste aanbiedingen (titel, bericht, enz.) en vouchers (code, beschrijving, enz.).
 
@@ -282,4 +282,3 @@ Gebruik de gegevens van de zittingsopslag die u gebruikend de JSONP opslagcompon
 1. Sleep de component Script naar dezelfde container AND en open het dialoogvenster voor het bewerken van de component. Voeg het volgende script toe en klik op OK:
 
    `3 < new Date().getMonth() < 12`
-
