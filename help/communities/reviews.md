@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: bf4e7809-8def-4647-aaa6-3ac36865511f
+exl-id: 5aae7744-73cc-472b-a4e6-ecd88284b70c
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1236'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht van revisies en revisies gebruiken (weergave) {#using-reviews-and-reviews-summary-display}
 
@@ -72,7 +72,7 @@ Op de website worden vereiste classificaties gemarkeerd met een sterretje. Als e
 
 >[!NOTE]
 >
->Als een punt op **[!UICONTROL Required Ratings]** tabel wordt ingegaan die niet op **[!UICONTROL Allowed Ratings]** tabel wordt gespecificeerd, dan is het niet inbegrepen in de punten aan tarief.
+>Als een item wordt ingevoerd op het tabblad **[!UICONTROL Required Ratings]** dat niet is opgegeven op het tabblad **[!UICONTROL Allowed Ratings]**, wordt het item niet opgenomen in de items die moeten worden beoordeeld.
 
 Geef onder het tabblad **[!UICONTROL Reviews]** op hoe revisies worden verwerkt.
 
