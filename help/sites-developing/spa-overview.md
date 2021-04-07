@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 897ff73f-15a5-484f-a3a2-616de8ac59dc
+exl-id: 5145b6ab-588a-458f-946f-b730ae319f61
 translation-type: tm+mt
-source-git-commit: 8daa8943ccbca46c54f9dd7f1a25259a22a4b42f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1703'
 ht-degree: 0%
 
 ---
-
 
 # SPA Editor - overzicht{#spa-editor-overview}
 
@@ -28,11 +28,11 @@ De SPA Editor biedt een uitgebreide oplossing voor het ondersteunen van SPA binn
 >
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist [AEM 6.4 de dienstpak 2](/help/release-notes/sp-release-notes.md) of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
-Sites die zijn gemaakt met behulp van gemeenschappelijke SPA, zoals React en Angular, laden de inhoud via dynamische JSON en bieden niet de HTML-structuur die nodig is om bewerkingsbesturingselementen te kunnen plaatsen in de AEM Paginaeditor.
+Sites die zijn gebouwd met behulp van gemeenschappelijke SPA, zoals Reageren en Angular, laden hun inhoud via dynamische JSON en beschikken niet over de HTML-structuur die nodig is om bewerkingsbesturingselementen te kunnen plaatsen in de AEM Paginaeditor.
 
 Om het bewerken van SPA binnen AEM mogelijk te maken, is een toewijzing tussen de JSON-uitvoer van de SPA en het inhoudsmodel in de AEM opslagplaats nodig om wijzigingen in de inhoud op te slaan.
 
@@ -62,7 +62,7 @@ renderen. Het model, dat als JSON wordt vertegenwoordigd, wordt dan teruggegeven
 
 >[!CAUTION]
 >
->De opname van de categorie `cq.authoring.pagemodel.messaging` moet worden beperkt tot de context van de SPA-editor.
+>De opname van de categorie `cq.authoring.pagemodel.messaging` moet beperkt blijven tot de context van de SPA-editor.
 
 ### Gegevenstype voor communicatie {#communication-data-type}
 
@@ -95,7 +95,7 @@ Met inachtneming van de belangrijkste elementen van de SPA Editor, ziet de auteu
 1. De auteur klikt op bedekking en toont de bewerkingswerkbalk van de component.
 1. SPA de Redacteur met een verzoek van de POST aan de server voortduurt uitgeeft.
 1. SPA Editor vraagt bijgewerkte JSON naar de SPA Editor, die met een DOM-gebeurtenis naar de SPA wordt verzonden.
-1. SPA geeft de betrokken component opnieuw weer, waarbij het DOM wordt bijgewerkt.
+1. SPA geeft de betreffende component opnieuw weer, waarbij het DOM wordt bijgewerkt.
 
 >[!NOTE]
 >
@@ -196,7 +196,7 @@ Om de auteur in staat te stellen om de paginaredacteur te gebruiken om de inhoud
 De SPA Editor SDK ondersteunt de volgende minimale versies:
 
 * 16.x en hoger reageren
-* Hoek 6.x en hoger
+* Angular 6.x en hoger
 
 Eerdere versies van deze frameworks werken mogelijk met de AEM SPA Editor SDK, maar worden niet ondersteund.
 
