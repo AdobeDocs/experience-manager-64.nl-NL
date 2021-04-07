@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 202d7dba-2b34-431d-b10f-87775632807f
-role: Beheerder
+role: Administrator
+exl-id: 5049c5df-c874-4c34-a96b-7944cd0353d5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '450'
+source-wordcount: '449'
 ht-degree: 0%
 
 ---
-
 
 # Sitesjablonen {#site-templates}
 
@@ -66,7 +66,7 @@ Een schakeloptie die bepaalt of naar de sjabloon kan worden verwezen
 
 ### Structuur {#structure}
 
-![chlimage_1-21](assets/chlimage_1-21.png)
+![chlimage_1-29](assets/chlimage_1-21.png)
 
 Als u communityfuncties wilt toevoegen, sleept u van de rechterkant naar links in de volgorde waarin de koppelingen in het sitemenu moeten worden weergegeven. Stijlen worden toegepast op de sjabloon tijdens het maken van de site.
 
