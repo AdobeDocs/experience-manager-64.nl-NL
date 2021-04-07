@@ -5,14 +5,14 @@ contentOwner: Guillaume Carlino
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
+exl-id: e2295f71-ea3a-483c-9d7b-29acd151845d
 translation-type: tm+mt
-source-git-commit: 425f1e6288cfafc3053877a43fa0a20fd5d2f3ac
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met de Adobe Marketing Cloud{#integrating-with-the-adobe-marketing-cloud}
 
@@ -109,4 +109,3 @@ Meer informatie over Adobe Experience Manager en Livefyre:
 * [Aan de slag met Livefyre](https://answers.livefyre.com/developers/getting-started)
 
 * [Livefyre en Adobe Experience Manager](https://answers.livefyre.com/product/livefyre-for-adobe-experience-manager-aem/livefyre-for-adobe-experience-manager/)
-
