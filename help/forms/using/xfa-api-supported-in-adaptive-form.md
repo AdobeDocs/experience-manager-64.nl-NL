@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: eaf60421-097e-4feb-b661-433a512470ab
 feature: Adaptieve Forms
+exl-id: 86596819-8108-409e-af14-4634e8a1959d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '702'
 ht-degree: 5%
 
 ---
-
 
 # XFA-ondersteuning in op XDP gebaseerde adaptieve formulieren {#xfa-support-in-xdp-based-adaptive-forms}
 
@@ -268,4 +268,3 @@ In de volgende tabel wordt vastgelegd hoe XFA-validaties worden toegewezen aan v
 >[!NOTE]
 >
 >U kunt de verplichte eigenschap voor het adaptieve formulier keuzerondje en de groep selectievakjes die zijn gebonden aan XFA-knoppen, niet overschrijven.
-
