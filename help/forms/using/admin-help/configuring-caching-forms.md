@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8a07dddf-1281-45ac-a55e-4333b860a261
+exl-id: 12ba2a8a-1260-4645-87c4-28f268e9d0ba
 translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1625'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen caching voor Forms{#configuring-caching-for-forms}
 
