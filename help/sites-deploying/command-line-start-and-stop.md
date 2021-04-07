@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 9333ff84-f624-4cfa-a9e4-c5e3882171ff
+exl-id: 9d2682c2-6360-402e-a020-0021f5051a2d
 translation-type: tm+mt
-source-git-commit: 67e87dabeb2521ed9fd33895df7f6134ca60ad6f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '382'
 ht-degree: 0%
 
 ---
-
 
 # Start en stop van opdrachtregel{#command-line-start-and-stop}
 
