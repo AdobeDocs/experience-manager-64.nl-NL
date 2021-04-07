@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 40225441-7cfe-4395-ac71-60504b42e764
+exl-id: 19ec5c00-eae5-4e7f-9dc5-c7a88b06fd2a
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1020'
 ht-degree: 0%
 
 ---
-
 
 # Opmerkingen bij de release van AEM Sites {#aem-sites-release-notes}
 
