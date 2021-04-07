@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e4f31377-ccc9-4986-a3bf-ef2e83d12448
+exl-id: 07671470-59dd-4290-be9a-465fcd89ac2d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '293'
 ht-degree: 0%
 
 ---
-
 
 # Het licentietype voor de implementatie bijwerken {#update-the-license-type-for-the-deployment}
 
@@ -49,4 +49,3 @@ Op de pagina Licentie wijzigen wordt informatie over uw licentie weergegeven:
 
 1. Selecteer Ja, wijziging van licentie is geldig voor alle geïmplementeerde modules.
 1. Klik op Licentiewijziging bevestigen. Er wordt een bericht weergegeven met de mededeling dat de licentie is bijgewerkt.
-
