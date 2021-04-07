@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: e0df2f85-664a-47b3-a8c5-e986b975d421
+exl-id: 355c4810-6e45-41cb-9b60-73225bd53526
 translation-type: tm+mt
-source-git-commit: db4d19e3af11f04369fc7f6a7c13377962f0650a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '343'
 ht-degree: 0%
 
 ---
-
 
 # Formulieren opslaan als sjablonen {#save-forms-as-templates}
 
@@ -24,7 +24,7 @@ Soms blijven de gegevens in een paar velden ongewijzigd wanneer gebruikers het f
 
 Voer de volgende stappen uit om een sjabloon te maken:
 
-1. Open een formulier en selecteer of vul de velden in die bijna identieke waarden hebben wanneer u het gebruikt. U kunt een bijlage opnemen met de sjabloon die u gewoonlijk toevoegt wanneer u het formulier invult.
+1. Open een formulier en selecteer of vul de velden met bijna identieke waarden telkens wanneer u het gebruikt. U kunt een bijlage opnemen met de sjabloon die u gewoonlijk toevoegt wanneer u het formulier invult.
 1. Tik op **Opslaan als sjabloon** ![save_as_template](assets/save_as_template.png)pictogram. Er wordt een dialoogvenster weergegeven waarin u de naam van de sjabloon kunt opgeven.
 1. Geef de naam van de sjabloon op en tik **Opslaan**. De sjabloon wordt weergegeven in de sjabloonmap.
 
@@ -37,4 +37,3 @@ U kunt een sjabloon ook verwijderen als deze niet meer vereist is. Als u een sja
 >[!NOTE]
 >
 >Een sjabloon is lokaal beschikbaar en wordt niet gesynchroniseerd met de server. Als u de lokale gegevens van de app wist, wordt de sjabloon verwijderd.
-
