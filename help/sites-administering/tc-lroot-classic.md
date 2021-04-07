@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 237b8cc6-158e-4c51-970d-4c9cc74f6496
 feature: Taalkopie
+exl-id: 316903a8-22cf-45e6-a9f3-ac1d75beddec
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '337'
 ht-degree: 0%
 
 ---
-
 
 # Een taalbasis maken met de klassieke UI{#creating-a-language-root-using-the-classic-ui}
 
@@ -59,4 +59,3 @@ De volgende procedure gebruikt klassieke UI om een taalwortel van een plaats tot
 
 1. Klik op OK om het dialoogvenster te sluiten.
 1. Klik in het volgende dialoogvenster op Ja om de kopie te bevestigen.
-
