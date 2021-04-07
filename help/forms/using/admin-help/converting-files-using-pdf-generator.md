@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 999ae2be-56ba-48c1-861b-8d4c991a0206
 feature: PDF Generator
+exl-id: 3eecff45-405f-482f-b0de-acf6557a7813
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1132'
 ht-degree: 0%
 
 ---
-
 
 # Bestanden converteren met PDF Generator{#converting-files-using-pdf-generator}
 
@@ -126,4 +126,3 @@ PDF Generator ondersteunt het verkleinen van PDF-bestanden.
    * Als u een bestaand instellingenbestand wilt gebruiken, selecteert u Bestand met instellingen uploaden en klikt u op Bladeren om naar de bestandslocatie te gaan.
 
 1. Klik op Maken.
-
