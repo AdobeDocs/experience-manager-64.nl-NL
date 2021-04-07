@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: components
 products: SG_EXPERIENCEMANAGER/6.4/SITES
 discoiquuid: 448ad337-d4bb-4603-a27b-77da93feadbd
+exl-id: ce9a1c1f-a37b-4765-b87e-5b2359312cfe
 translation-type: tm+mt
-source-git-commit: 940faa5a783eacf5505f001cf3696200babc6231
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '562'
 ht-degree: 3%
 
 ---
-
 
 # JSON-export inschakelen voor een component{#enabling-json-export-for-a-component}
 
@@ -100,4 +100,3 @@ Zie voor meer informatie:
 * [Ontwerpen met inhoudsfragmenten](/help/sites-authoring/content-fragments.md)
 * [JSON-exportfunctie voor services voor inhoud](/help/sites-developing/json-exporter.md)
 * [De ](https://docs.adobe.com/content/help/en/experience-manager-core-components/using/introduction.html) Componenten van de kern en de component van het Fragment van de  [Inhoud](https://helpx.adobe.com/experience-manager/core-components/using/content-fragment-component.html)
-
