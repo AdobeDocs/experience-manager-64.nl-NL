@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 71fac7e9-814a-48b5-b816-9bdcb2a05190
-role: Beheerder
+role: Administrator
+exl-id: 905b6dc5-cf17-4f58-a687-27e2910a0729
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '203'
+source-wordcount: '202'
 ht-degree: 0%
 
 ---
-
 
 # Opslagconfiguratie {#storage-configuration}
 
@@ -60,4 +60,3 @@ Bezoek [JCR Store](jsrp.md) voor meer informatie.
 >[!NOTE]
 >
 >De afwezigheid van de knoop `srpc`onder `/etc/socialconfig` wijst op het gebrek [JCR store](jsrp.md).
-
