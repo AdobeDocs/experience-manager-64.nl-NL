@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 80c9f4b7-d59f-4ed1-a457-300756962708
+exl-id: 7b3f58df-036e-46a8-913e-e695de34ddd7
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1071'
 ht-degree: 0%
 
 ---
-
 
 # Pagina&#39;s publiceren{#publishing-pages}
 
@@ -50,7 +50,6 @@ U kunt een pagina ook direct of op een vooraf gedefinieerde datum/tijd publicere
 >
 >* Er wordt een workflow gestart om de juiste persoon op de hoogte te stellen van uw verzoek om te publiceren.
 >* Er wordt een bericht weergegeven (voor een korte periode) om u hiervan op de hoogte te stellen.
-
 >
 
 
@@ -177,4 +176,3 @@ Via het tabblad **Websites** kunt u de afzonderlijke pagina&#39;s activeren. Wan
 
    1. Selecteer **Drogen uitvoeren** als u wilt controleren welke pagina *zou* moeten worden geactiveerd. Dit is slechts een emulatie, er worden geen pagina&#39;s geactiveerd.
    1. Selecteer **Activeren** als u de pagina&#39;s wilt activeren.
-
