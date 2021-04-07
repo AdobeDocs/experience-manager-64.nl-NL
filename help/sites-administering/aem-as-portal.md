@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: f25d901a-c62c-46b4-aab7-3ca3da1cea5b
+exl-id: fd167b5f-793e-4b49-affd-5c06d5682d75
 translation-type: tm+mt
-source-git-commit: 1c751a81550086371623d0ba66e4de40f7daaa16
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '6097'
 ht-degree: 0%
 
 ---
-
 
 # Portals en portlets AEM{#aem-portals-and-portlets}
 
@@ -812,4 +812,3 @@ De pagina openen die u aan de portlet hebt toegevoegd:
 
 1. In het de verpersoonlijkingsmenu van portlet, vorm portlet aangezien u het in het portaal vormde.
 1. Open de configuratie (portlet toont publicatiebegin URL die in de configuratie van portlet wordt gevormd) en breng zonodig uitgeeft, dan sparen hen aan.
-
