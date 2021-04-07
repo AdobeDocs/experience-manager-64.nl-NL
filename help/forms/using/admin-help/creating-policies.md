@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fa054d30-c7dc-4b64-acf1-cbcbe8827df5
 feature: Documentbeveiliging
+exl-id: a4e69794-ea83-4cb6-a3da-cef0ceb6892a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4757'
 ht-degree: 0%
 
 ---
-
 
 # Beleid {#creating-and-managing-policies} maken en beheren
 
@@ -407,4 +407,3 @@ U kunt de beleidslijst sorteren op kolomkop om beleid gemakkelijker te vinden. E
 1. Selecteer een beleidsset en klik op het tabblad Beleid.
 1. Klik op de gewenste kolomkop.
 1. Klik nogmaals op de kolom om de sorteervolgorde te wijzigen.
-
