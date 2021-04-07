@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 2fd1a21a-0f90-49d8-9f62-383b268d540d
 role: Developer
+exl-id: 859a2b57-df90-4030-9061-c454d07cb753
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '699'
+source-wordcount: '698'
 ht-degree: 0%
 
 ---
-
 
 # Repository Service API - Snel starten {#repository-service-api-quick-starts}
 
@@ -1214,4 +1214,3 @@ In het volgende Java-codevoorbeeld wordt Loan.xdp verwijderd uit `Applications/F
   
  
 ```
-
