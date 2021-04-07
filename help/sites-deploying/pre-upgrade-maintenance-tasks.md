@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: upgrading
 discoiquuid: 899ea120-c96d-4dbf-85da-e5d25959d10a
 feature: Bijwerken
+exl-id: f146cb2f-ee77-4c99-8dff-446cdb3a7797
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2179'
 ht-degree: 0%
 
 ---
-
 
 # Onderhoudstaken vóór upgrade{#pre-upgrade-maintenance-tasks}
 
