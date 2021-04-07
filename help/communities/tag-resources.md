@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: c012d639-c6e6-4f73-bbd8-78a4baa38c17
-role: Beheerder
+role: Administrator
+exl-id: 89ca201e-23ad-4038-8f3e-7c9cd04f52e2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '639'
+source-wordcount: '638'
 ht-degree: 0%
 
 ---
-
 
 # Tags toewijzen aan bronnen {#tagging-enablement-resources}
 
@@ -107,4 +107,3 @@ Als er tagnaamruimten zijn toegevoegd en ontbreken, controleert u of de tags en 
 Als er na het selecteren van een tag tijdens het weergeven van de catalogus geen actiemiddelen worden weergegeven, controleert u of er een tag uit de naamruimte(n) van de catalogus is toegepast op de resource enablement.
 
 ![chlimage_1-423](assets/chlimage_1-423.png)
-
