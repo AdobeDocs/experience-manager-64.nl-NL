@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/importing_and_managing_applications_and_archives
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: dc53a6d0-317a-4abd-990c-455e13f8b824
+exl-id: 81a48c01-8052-47b1-be39-e126c37c7f0f
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '831'
 ht-degree: 0%
 
 ---
-
 
 # Toepassingen importeren en beheren{#import-and-manage-applications}
 
@@ -115,4 +115,3 @@ De plaatsing Scripted elimineert de behoefte om montages in het productiemilieu 
 1. Controleer het bestand ReadMe.txt voor meer gedetailleerde instructies.
 1. Wijzig handmatig de bestanden scriptedDeploy.bat en sample-files/sample.xml, zoals beschreven in het bestand readme.txt.
 1. Voer het bestand scriptedDeploy.bat uit. Met deze actie implementeert u het archiefbestand voor AEM formulieren met de overschrijvingsinstellingen.
-
