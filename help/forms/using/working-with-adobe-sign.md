@@ -10,14 +10,14 @@ topic-tags: develop
 discoiquuid: 29fc297e-0a95-4d2a-bfe6-5676d53624db
 noindex: true
 feature: Adaptive Forms, Adobe Sign
+exl-id: 5922ea6e-8be9-4e65-89a6-67b6cc12c4ee
 translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3513'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Sign gebruiken in een adaptieve vorm {#using-adobe-sign-in-an-adaptive-form}
 
@@ -311,4 +311,3 @@ De ervaring voor het ondertekenen van formulieren is nu gereed. U kunt een voorb
 **Adobe Sign Block:** u kunt het Adobe Sign Block gebruiken om Adobe Sign-velden overal op het adaptieve formulier toe te voegen. Het helpt ook om specifieke gebieden aan ondertekenaars toe te wijzen. Wanneer een adaptief formulier wordt voorvertoond of gepubliceerd, is Adobe Sign Block standaard niet zichtbaar. Deze blokken zijn alleen beschikbaar in het ondertekenende document. In het ondertekenende document worden alleen de velden ingeschakeld die zijn toegewezen aan een ondertekenaar. Adobe Sign-blok kan worden gebruikt met eerste en volgende ondertekenaars.
 
 **Ondertekeningsstap, component:** u kunt de component Handtekeningstap gebruiken om in formulieren te ondertekenen. Hiermee kan alleen de eerste ondertekenaar ondertekenen terwijl het formulier wordt ingevuld. Wanneer de sectie met de component Signature Step wordt weergegeven, wordt een ondertekenbare PDF-versie van het formulier weergegeven. Het is doorgaans de laatste of voorlaatste sectie, gevolgd door een overzichtscomponent van een formulier.
-
