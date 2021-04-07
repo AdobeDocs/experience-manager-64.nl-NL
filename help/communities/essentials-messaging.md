@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: eb8fd2b3-0a31-425e-b0f1-38f09e1106df
+exl-id: c6ad3c2b-8776-4ec4-99da-ab73ecc61153
 translation-type: tm+mt
-source-git-commit: 98fae2d51d73bda946f3c398e9276fe4d5a8a0fe
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '385'
 ht-degree: 1%
 
 ---
-
 
 # Essentiële elementen voor berichten {#messaging-essentials}
 
@@ -241,4 +241,3 @@ public class MessagingEventHandler implements EventHandler {
     }
 }
 ```
-
