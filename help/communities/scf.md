@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: d7b5b5e3-2d84-4a6b-bcc2-d490882ff3ed
+exl-id: 9264c888-a583-40eb-9178-273146f8a12b
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1506'
 ht-degree: 0%
 
 ---
-
 
 # Framework voor sociale componenten {#social-component-framework}
 
@@ -224,4 +224,3 @@ Aanvullende ontwikkelaarsinformatie vindt u in de sectie [Coderingsrichtlijnen](
 ## Problemen oplossen {#troubleshooting}
 
 Veelvoorkomende problemen en bekende problemen worden beschreven in de sectie [Problemen oplossen](troubleshooting.md).
-
