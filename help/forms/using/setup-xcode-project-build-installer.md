@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 2dec23f7-6cca-4cc9-a78a-acd23ae7da5f
+exl-id: e03beca1-1a95-42c7-b20b-4a2d9eab4df9
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '818'
 ht-degree: 0%
 
 ---
-
 
 # Stel het Xcode-project in en maak de iOS-app {#set-up-the-xcode-project-and-build-the-ios-app}
 
