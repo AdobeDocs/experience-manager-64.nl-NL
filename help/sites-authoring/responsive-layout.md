@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 668d1a8a-c757-4c9f-833f-e5dada4d0384
+exl-id: 788bb439-fb8a-4ab9-b367-cea6a17c0c43
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1798'
 ht-degree: 7%
 
 ---
-
 
 # Responsieve lay-out{#responsive-layout}
 
@@ -274,4 +274,3 @@ componenten ongedaan makenSelecteer de bovenliggende componenten om de actiewerk
    ![screen_shot_2018-03-23at091224](assets/screen_shot_2018-03-23at091224.png)
 
    Als u **Alle** herstellen selecteert, worden alle verborgen componenten zichtbaar.
-
