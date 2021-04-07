@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 93a112fc-ef34-4281-89b8-a0f1b3d3aca9
+exl-id: a2cb9738-98a5-4ea6-8d5a-a6c0aa04cd32
 translation-type: tm+mt
-source-git-commit: 5ddbcb2addff2d6e3a3e9d7e100a6d9ba89fdd60
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '345'
 ht-degree: 1%
 
 ---
-
 
 # Activiteitendensen {#activity-trends}
 
