@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: coding
 discoiquuid: 3d8bb2d3-b1f8-49e1-a529-b3e7a28da4bb
 role: Developer
+exl-id: de8ba694-0b68-4442-bd50-5ba6d845749c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '4655'
+source-wordcount: '4654'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms aanroepen met Verwijderen {#invoking-aem-forms-using-remoting}
 
