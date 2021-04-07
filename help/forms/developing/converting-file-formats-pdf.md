@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 180cac3f-6378-42bc-9a47-60f9f08a7103
 role: Developer
+exl-id: 79091a75-2669-453f-9560-e58bfffa3487
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '7933'
+source-wordcount: '7932'
 ht-degree: 0%
 
 ---
-
 
 # Converteren tussen bestandsindelingen en PDF {#converting-between-file-formatsand-pdf}
 
@@ -872,7 +872,7 @@ U kunt het algemene dialoogvenster-XML-bestand aanpassen om te reageren op dialo
 
 #### Een filetype-item toevoegen in het XML-configuratiebestand {#adding-a-filetype-entry-in-the-xml-configuration-file}
 
-In deze procedure wordt uitgelegd hoe u het configuratiebestand van de service PDF genereren kunt bijwerken en zo bestandstypen aan native toepassingen kunt koppelen. Om dit configuratiedossier bij te werken, moet u beleidsconsole gebruiken om de configuratiegegevens naar een dossier uit te voeren. De standaardbestandsnaam voor de configuratiegegevens is native2pdfconfig.xml.
+In deze procedure wordt uitgelegd hoe u het configuratiebestand voor de service PDF genereren kunt bijwerken en zo bestandstypen aan native toepassingen kunt koppelen. Om dit configuratiedossier bij te werken, moet u beleidsconsole gebruiken om de configuratiegegevens naar een dossier uit te voeren. De standaardbestandsnaam voor de configuratiegegevens is native2pdfconfig.xml.
 
 **Het configuratiebestand van de PDF-service genereren bijwerken**
 
@@ -1144,4 +1144,3 @@ In dit voorbeeld wordt aangegeven hoe de service PDF genereren moet werken met K
     <abortMessage msg="15078"/> 
 </application>
 ```
-
