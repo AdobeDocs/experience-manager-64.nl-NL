@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 1115697c-cb7d-441a-876f-3c01761568c0
+exl-id: 91d9a31d-a0af-45f6-9a20-4b52e2848979
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1718'
 ht-degree: 0%
 
 ---
-
 
 # Aangepaste weergaven maken voor adaptieve formuliervelden {#create-custom-appearances-for-adaptive-form-fields}
 
@@ -159,7 +159,7 @@ Zodra het projectmalplaatje wordt gecreeerd, doe de volgende veranderingen, zoal
    * Breid de widget uit van een geschikte buitenste widgetklasse. In de meeste gevallen is dit de klasse widget die overeenkomt met de bestaande widget die wordt vervangen. De naam van de bovenliggende klasse wordt op meerdere locaties gebruikt. Het wordt daarom aanbevolen te zoeken naar alle instanties van de tekenreeks `xfaWidget.textField` in het bestand en deze te vervangen door de werkelijk gebruikte bovenliggende klasse.
    * Breid `render` methode uit om een afwisselende UI te verstrekken. Dit is de locatie vanwaar de jQuery-insteekmodule wordt aangeroepen om de gebruikersinterface of het interactiegedrag bij te werken. De `render` methode zou een user-control element moeten terugkeren.
    * Breid de `getOptionsMap` methode uit om het even welke optie met voeten te treden die als toe te schrijven aan een verandering in widget wordt beïnvloed. De functie retourneert een toewijzing die details bevat voor de actie die moet worden uitgevoerd bij wijziging van een optie. De sleutels zijn de opties die aan widget worden verstrekt en de waarden zijn de functies die worden geroepen wanneer een verandering in de optie wordt ontdekt.
-   * De methode `getEventMap` wijst gebeurtenissen toe die door widget worden geactiveerd, met de gebeurtenissen die door het adaptieve formuliermodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen toe voor de standaardwidget en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
+   * De methode `getEventMap` wijst gebeurtenissen toe die door de widget worden geactiveerd, met de gebeurtenissen die door het adaptieve formuliermodel worden vereist. De standaardwaarde wijst standaard HTML-gebeurtenissen toe voor de standaardwidget en moet worden bijgewerkt als een alternatieve gebeurtenis wordt geactiveerd.
    * De `showDisplayValue` en `showValue` passen de weergave- en bewerkingsafbeeldingsvoorwaarde toe en kunnen worden overschreven voor een ander gedrag.
    * De methode `getCommitValue` wordt aangeroepen door het adaptieve formulierframework wanneer de gebeurtenis `commit`plaatsvindt. Over het algemeen is dit de afsluitgebeurtenis, behalve voor de vervolgkeuzelijst, het keuzerondje en de selectievakjes (waar deze voorkomt bij wijziging). Zie [Aangepaste Forms-expressies](/help/forms/using/adaptive-form-expressions.md#p-value-commit-script-p) voor meer informatie.
    * Het sjabloonbestand biedt voorbeeldimplementatie voor verschillende methoden. Verwijder methoden die niet moeten worden uitgebreid.
@@ -261,7 +261,7 @@ Bekijk nu een voorbeeld om een douaneverschijning voor een numeriek gebied tot s
    }
    ```
 
-1. Overschrijf in het `numericStepper-widget.js`-bestand de eigenschap `getOptionsMap` om de toegangsoptie te negeren en verberg de knoppen + en - in de uitgeschakelde modus.
+1. Overschrijf in het bestand `numericStepper-widget.js` de eigenschap `getOptionsMap` om de toegangsoptie te overschrijven en verberg de knoppen + en - in de uitgeschakelde modus.
 
    ```java
    getOptionsMap: function(){
