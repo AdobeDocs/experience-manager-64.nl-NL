@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 topic-tags: authoring
 content-type: reference
 discoiquuid: f3b4d49b-5873-4825-91b9-71a3204516b1
+exl-id: 535d2a9f-852c-48ea-89ec-31de3a891666
 translation-type: tm+mt
-source-git-commit: d5166447bc03c33f20b1ee528ac0b4768da5727a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '114'
 ht-degree: 3%
 
 ---
-
 
 # Werken met elementen{#working-with-assets}
 
