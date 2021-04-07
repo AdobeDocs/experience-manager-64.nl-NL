@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 42bf42cb-0c6c-4390-8170-2c540c4d3ed3
+exl-id: 1e5172d9-47a3-4d73-b749-166e201f4eef
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '808'
 ht-degree: 0%
 
 ---
-
 
 # Gebruikersinterface Recommendations voor klanten{#user-interface-recommendations-for-customers}
 
@@ -134,4 +134,3 @@ Voor gedetailleerde ontwikkelingsinformatie:
 
 * [AEM Gem-sessie bij aanraakgeoptimaliseerde aanpassing](https://docs.adobe.com/content/ddc/en/gems/user-interface-customization-for-aem-6.html).
 * [Granite UI-documentatie](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/granite-ui/api/index.html).
-
