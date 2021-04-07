@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 8bc307d9-fa5c-44c0-bff9-2d68d32a253b
 feature: Configureren
+exl-id: 8eba690a-797a-4ba9-b178-11f8c011239f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1457'
 ht-degree: 2%
 
 ---
-
 
 # Repliceren met wederzijdse SSL{#replicating-using-mutual-ssl}
 
@@ -295,4 +295,3 @@ Nadat u de replicatieagent vormt, test de verbinding om te bepalen of MSSL corre
 29.08.2014 14:02:46 - Replication (TEST) of /content successful.
 Replication test succeeded
 ```
-
