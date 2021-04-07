@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 23745dd3-1424-4d22-8456-d2dbd42467f4
+exl-id: dc4e27dd-fb2e-485d-8c7f-ab830bde1d3d
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '637'
 ht-degree: 0%
 
 ---
-
 
 # Dispatcher configureren voor Gemeenschappen {#configuring-dispatcher-for-communities}
 
@@ -193,7 +193,7 @@ In de sectie Regels van `dispatcher.any` wordt gedefinieerd welke reacties in de
 
 Een belangrijke bron van problemen is het opnemen van filterregels zonder aandacht voor het effect op vroegere regels, vooral wanneer het toevoegen van een regel om toegang te ontkennen.
 
-Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer er meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
+Het allereerste filterpatroon wordt vaak gebruikt om alles te ontkennen zodat het volgende filters toegang op een gecontroleerde manier herstellen. Wanneer meerdere filters van toepassing zijn op een aanvraag, is het laatste filter dat van toepassing is het filter dat van kracht is.
 
 ## Voorbeeld van verzender.any {#sample-dispatcher-any}
 
@@ -519,4 +519,3 @@ Hier volgt een voorbeeld van een `dispatcher.any`-bestand dat de Gemeenschappen 
     }
   }
 ```
-
