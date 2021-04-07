@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 content-type: reference
 discoiquuid: 940e45b4-dbf1-4207-bd4a-cf677d645fb4
+exl-id: a4cee2e6-a56f-4355-8176-b3ed7478a775
 translation-type: tm+mt
-source-git-commit: 74d51d46d61b005930f382a33278ae0bea6435e2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '378'
 ht-degree: 1%
 
 ---
-
 
 # Componenten weergeven op basis van de gebruikte sjabloon {#displaying-components-based-on-the-template-used}
 
@@ -63,4 +63,3 @@ Voer de volgende stappen uit om de componenten in de zijbalk weer te geven op ba
    ![Beleid voor bijgewerkte sjablooninhoud](assets/updated-policy.png)
 
    Wanneer u een formulier ontwerpt dat u met de sjabloon maakt, kunt u de toegevoegde componenten in het zijpaneel zien.
-
