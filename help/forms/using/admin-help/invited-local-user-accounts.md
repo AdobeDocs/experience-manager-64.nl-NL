@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_document_security
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 65720eed-ab06-463f-9567-2fdc468b6219
 feature: Documentbeveiliging
+exl-id: b83e1059-aada-4b89-b587-288d525ab0c2
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1222'
 ht-degree: 0%
 
 ---
-
 
 # Uitgenodigde en lokale gebruikersaccounts beheren {#managing-invited-and-local-user-accounts}
 
@@ -134,4 +134,3 @@ U kunt gebruikers gemakkelijker vinden door de gebruikerslijst door kolomrubriek
    1. Klik in de beheerconsole op Services > Documentbeveiliging > Uitgenodigde en lokale gebruikers.
    1. Als u uitgenodigde gebruikers wilt sorteren, klikt u op het tabblad Uitgenodigde gebruikers en klikt u op de gewenste kolomkop.
    1. Als u lokale gebruikers wilt sorteren, klikt u op het tabblad Lokale gebruikers en klikt u op de gewenste kolomkop.
-
