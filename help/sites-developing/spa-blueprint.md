@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 6d4188f4-ad98-49df-9bb4-7936b7bea9c8
+exl-id: 73995327-d781-4501-ba14-3394dc8ea4fc
 translation-type: tm+mt
-source-git-commit: 67712638f9e35b8a6b4b3b9cdd5c507a91222dfd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2124'
 ht-degree: 0%
 
 ---
-
 
 # SPA Blauwdruk{#spa-blueprint}
 
@@ -25,7 +25,7 @@ Om de auteur toe te laten om de AEM SPARedacteur te gebruiken om de inhoud van e
 >
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Inleiding {#introduction}
 
@@ -35,11 +35,11 @@ In dit document wordt het algemene contract beschreven waaraan elk SPA kader moe
 >
 >De volgende vereisten zijn frameonafhankelijk. Als aan deze vereisten wordt voldaan, kan een kader-specifieke laag worden verstrekt die uit modules, componenten, en de diensten wordt samengesteld.
 >
->**Aan deze vereisten wordt reeds voldaan voor de React en Hoekige kaders in AEM.** De vereisten in deze blauwdruk zijn alleen relevant als u een ander kader voor gebruik met AEM wilt implementeren.
+>**Aan deze eisen wordt reeds voldaan voor de React and Angular frameworks in AEM.** De vereisten in deze blauwdruk zijn alleen relevant als u een ander kader voor gebruik met AEM wilt implementeren.
 
 >[!CAUTION]
 >
->Hoewel de SPA mogelijkheden van AEM frameonafhankelijk zijn, worden momenteel alleen de React- en Hoekframeworks ondersteund.
+>Hoewel de SPA mogelijkheden van AEM frameonafhankelijk zijn, worden momenteel alleen de React- en Angular-frameworks ondersteund.
 
 Om de auteur toe te laten om de AEM Redacteur van de Pagina te gebruiken om de gegevens uit te geven die door een Enige Kader van de Toepassing van de Pagina worden blootgesteld, moet een project de structuur van het model kunnen interpreteren die de semantische waarde van de gegevens vertegenwoordigt die voor een toepassing binnen de AEM bewaarplaats worden opgeslagen. Om dit doel te bereiken, worden twee raamwerk-agnostische bibliotheken verstrekt: de `PageModelManager` en `ComponentMapping`.
 
@@ -108,7 +108,7 @@ Om de interoperabiliteit van de bibliotheken te bevorderen, adviseert Adobe de k
 
 npm-module: [@adobe/aem-response-editable-components](https://www.npmjs.com/package/@adobe/aem-react-editable-components)
 
-#### Hoekig {#angular}
+#### Angular {#angular}
 
 npm-module: binnenkort beschikbaar
 
