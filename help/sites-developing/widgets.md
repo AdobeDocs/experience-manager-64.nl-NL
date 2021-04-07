@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: components
 content-type: reference
 discoiquuid: 508f4fab-dd87-4306-83ae-12e544b8b723
+exl-id: c747bfda-e82a-4b2d-a4af-5792bfe82576
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5182'
 ht-degree: 0%
 
 ---
-
 
 # Widgets gebruiken en uitbreiden (klassieke UI){#using-and-extending-widgets-classic-ui}
 
@@ -162,7 +162,7 @@ Neem de **1 op. De component van de dialoog Grondbeginselen** in de steekproefpa
 
 De component wordt als volgt weergegeven:
 
-![chlimage_1-133](assets/chlimage_1-135.png)
+![chlimage_1-135](assets/chlimage_1-135.png)
 
 #### Voorbeeld 1: Volledig dialoogvenster {#example-full-dialog}
 
@@ -329,7 +329,7 @@ De logica wordt als volgt geïmplementeerd via gebeurtenislisteners en javascrip
 
 * Bij de methode `Ejst.x2.manageTabs()` zijn, aangezien de waarde van `index` -1 is, alle facultatieve lusjes verborgen (i gaat van 1 naar 3).
 
-* Het selectietabblad heeft twee listeners: een tab die het geselecteerde tabblad weergeeft wanneer het dialoogvenster wordt geladen (&quot; `loadcontent`&quot; gebeurtenis) en een tab die het geselecteerde tabblad weergeeft wanneer de selectie wordt gewijzigd (&quot; `selectionchanged`&quot; gebeurtenis):
+* Het selectietabblad heeft twee listeners: een tab die het geselecteerde tabblad weergeeft wanneer het dialoogvenster wordt geladen (&quot; `loadcontent`&quot;-gebeurtenis) en een tab die het geselecteerde tabblad weergeeft wanneer de selectie wordt gewijzigd (&quot; `selectionchanged`&quot;-gebeurtenis):
 
    `loadcontent="function(field,rec,path){Ejst.x2.showTab(field);}"`
 
@@ -884,4 +884,3 @@ De javascript-code waarnaar wordt verwezen in de component jsp (`referencesearch
 
       * de eigenschap &#39; `test`&#39; van het knooppunt op het pad dat is gedefinieerd door de kolom &quot;**jcr:path**&quot; wordt in de opslagplaats ingesteld met de waarde van de cel
       * als de POST succesvol is, wordt de waarde toegevoegd aan het `store` voorwerp, anders wordt het verworpen
-
