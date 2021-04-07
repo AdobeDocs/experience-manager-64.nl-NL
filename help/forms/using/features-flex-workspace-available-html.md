@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ef5c957a-9d5a-42be-ad85-bdca876f56bc
+exl-id: d3125110-1098-413b-ba09-50c182797d27
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '243'
 ht-degree: 0%
 
 ---
-
 
 # Functies van de Flex-werkruimte zijn niet beschikbaar in de AEM Forms-werkruimte {#features-of-flex-workspace-not-available-in-aem-forms-workspace}
 
@@ -29,4 +29,3 @@ De AEM Forms-werkruimte is de gloednieuwe werkruimte. Hieronder vindt u een aant
 * De optie voor het beheren van kolomkoppen voor het bijhouden van pagina&#39;s is niet beschikbaar in de AEM Forms-werkruimte.
 * Het instellen van een goedkeuringscontainer of aangepaste container voor een gebruikerstaak wordt niet ondersteund in de AEM Forms-werkruimte.
 * Een optie voor het zoeken van sjablonen is beschikbaar op het tabblad Bijhouden, maar niet op het tabblad TeDoe.
-
