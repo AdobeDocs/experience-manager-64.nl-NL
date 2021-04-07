@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: d9c96e7f-9416-48e1-a6af-47384f7bee92
+exl-id: 70d4117b-5e49-46e4-a0b8-f56cf985536e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '827'
 ht-degree: 0%
 
 ---
-
 
 # Workflowinstanties beheren{#administering-workflow-instances}
 
@@ -87,7 +87,7 @@ detailsHiermee wordt een venster geopend waarin de
 HistorieHiermee geeft u details weer over de workflowgeschiedenis.
 
 * **Opnieuw** StepExecutes de de componenteninstantie van de Stap van het Manuscript opnieuw. Gebruik de opdracht Stap opnieuw proberen nadat u de oorzaak van de oorspronkelijke fout hebt opgelost. U kunt bijvoorbeeld de stap opnieuw uitvoeren nadat u een fout in het script hebt opgelost dat door de processtap wordt uitgevoerd.
-* **Beëindig de werkstroom als de fout een onherstelbare situatie voor het werkschema heeft veroorzaakt.** De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagruimte die niet langer geldig is voor de werkstroominstantie.
+* **Beëindig de workflow als de fout heeft geleid tot een onherstelbare situatie voor de workflow.** De workflow kan bijvoorbeeld afhankelijk zijn van omgevingsfactoren, zoals informatie in de opslagruimte die niet langer geldig is voor de werkstroominstantie.
 * **Beëindigen en** Opnieuw proberenGelijkaardig aan  **** Terminateeg behalve dat wordt een nieuwe werkschemainstantie begonnen gebruikend de originele nuttige lading, de titel, en de beschrijving.
 
 Om mislukkingen te onderzoeken, dan hervat of beëindigt het werkschema daarna, gebruik de volgende stappen:
@@ -165,4 +165,3 @@ U kunt de maximumgrootte van inbox plaatsen door **de Dienst van het Werkschema 
 | Naam eigenschap (webconsole) | OSGi Eigenschapnaam |
 |---|---|
 | Max. grootte van invoerquery | granite.workflow.inboxQuerySize |
-
