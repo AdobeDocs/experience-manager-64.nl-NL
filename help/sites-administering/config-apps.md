@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 34f24837-f5e2-41f0-a359-fdb695e1b8f2
+exl-id: 593a588c-02f1-4b48-ac57-9348d6652bcc
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '151'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen voor AEM Apps{#configuring-for-aem-apps}
 
