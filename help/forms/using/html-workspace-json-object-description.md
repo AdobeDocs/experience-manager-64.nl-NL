@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 61b7246d-ed28-4470-a0a2-a4aaf1a061a4
+exl-id: 8c7e1ee2-0f7f-427e-aca2-d4bf523fd7f1
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2134'
 ht-degree: 8%
 
 ---
-
 
 # AEM Forms-werkruimte - JSON-objectbeschrijving {#aem-forms-workspace-json-object-description}
 
@@ -79,7 +79,7 @@ JSON-objecten die in de AEM Forms-werkruimte worden gebruikt, worden hieronder b
    | beschrijving | F | Het bevat een beschrijving voor een startpunt. |
    | name | F | Deze bevat de naam van het startpunt. |
    | serializedImageTicket | F | Het bevat een afbeeldingsticket dat overeenkomt met het startpunt. Dit beeldkaartje wordt gebruikt in imageUrl gebied van startpoint, om beeld voor startpunt van de server te krijgen. |
-   | serviceName | F | Het bevat naam van de dienst voor startpunt. |
+   | serviceName | F | Het bevat naam van de dienst voor startpoint. |
    | startpointId | F | Het bevat id van startpunt. |
    | isFavorite | T | Geeft aan of het startpunt favoriet is of niet. True if startpoint is preferred else false. |
    | isDefaultImage | T | Geeft aan of er een afbeelding is opgegeven voor proces of niet. True if there is no image associated with process else false. |
