@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 6fddb09a-ec60-4235-8ff4-0646f53f38f7
-role: Beheerder
+role: Administrator
+exl-id: 2f71c588-5616-440f-8e47-8d9665169b3b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2519'
+source-wordcount: '2518'
 ht-degree: 0%
 
 ---
-
 
 # Elementen importeren en exporteren naar AEM Forms {#importing-and-exporting-assets-to-aem-forms}
 
