@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: 30d25772-0df7-468e-bcbd-c6fb2e962662
+exl-id: 89e45231-885a-4d35-839b-2b50239503ad
 translation-type: tm+mt
-source-git-commit: 160cc2669ac19aacdce5e96d1ba1eb4bafcb6d58
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1714'
 ht-degree: 0%
 
 ---
-
 
 # SPA en rendering op de server{#spa-and-server-side-rendering}
 
