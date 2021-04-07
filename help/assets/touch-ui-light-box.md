@@ -3,15 +3,15 @@ title: Lichtbak
 description: Meer informatie over Lichtbak in AEM Assets.
 contentOwner: AG
 feature: Gereedschappen voor ontwikkelaars, uitvoeringen
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: acb61924-9b71-474a-833d-e441c0b83cc7
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '250'
+source-wordcount: '247'
 ht-degree: 0%
 
 ---
-
 
 # Lichtbak {#lightbox}
 
@@ -42,4 +42,3 @@ Als u Adobe Experience Manager (AEM) Assets-gebruiker bent, wordt er automatisch
 1. Selecteer de elementen die u wilt verwijderen.
 1. Tik/klik op **[!UICONTROL Remove]** op de werkbalk.
 1. Tik/klik in het dialoogvenster op **[!UICONTROL Remove]** om de verwijderactie te bevestigen. De elementen worden verwijderd uit Lichtbak.
-
