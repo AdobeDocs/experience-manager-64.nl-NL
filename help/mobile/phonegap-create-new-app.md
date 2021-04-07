@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: authoring-adobe-phonegap-enterprise
 discoiquuid: 27605eb7-59b2-42d4-8cc5-02cfa52b4491
+exl-id: 79d2dbfb-5e44-4a96-ab9b-ba5d93fc3aae
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '681'
 ht-degree: 0%
 
 ---
-
 
 # Een nieuwe AEM Mobile-toepassing maken met een wizard{#creating-a-new-aem-mobile-app-using-create-wizard}
 
