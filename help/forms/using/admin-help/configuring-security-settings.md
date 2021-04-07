@@ -10,14 +10,14 @@ geptopics: SG_AEMFORMS/categories/working_with_pdf_generator
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: a89ab508-173f-4b1c-88d9-ef944af4d9ae
 feature: PDF Generator
+exl-id: a5a12344-acbd-4f77-b849-b0b9db716ac5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1369'
 ht-degree: 0%
 
 ---
-
 
 # Beveiligingsinstellingen configureren{#configuring-security-settings}
 
@@ -123,4 +123,3 @@ U kunt een beveiligingsinstelling verwijderen als deze niet meer vereist is. Voo
 1. Klik in de beheerconsole op **[!UICONTROL Services > PDF Generator > Security Settings]**.
 1. Schakel het selectievakje naast de instelling die u wilt verwijderen in. U kunt meerdere instellingen selecteren.
 1. Klik **[!UICONTROL Delete]** en op **[!UICONTROL Delete Confirmation]** pagina, klik **[!UICONTROL Delete]** opnieuw.
-
