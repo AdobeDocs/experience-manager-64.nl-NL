@@ -3,15 +3,15 @@ title: Map-assets en verzamelingen reviewen
 description: Stel revisieworkflows in voor elementen in een map of verzameling en deel deze met revisoren of creatieve partners om feedback te zoeken.
 contentOwner: AG
 feature: Samenwerking, verzamelingen
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: 4c62e0cd-eaa5-456e-85f3-06f7a9f160f5
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '770'
+source-wordcount: '768'
 ht-degree: 21%
 
 ---
-
 
 # Map-assets en verzamelingen reviewen {#review-folder-assets-and-collections}
 
