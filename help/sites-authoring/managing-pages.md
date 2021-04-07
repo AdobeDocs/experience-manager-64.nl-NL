@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: a727c57c-87a9-46c2-8d9b-1348f1ed8ac4
+exl-id: 0182155a-0156-458c-b89b-35ab3e27819e
 translation-type: tm+mt
-source-git-commit: 1bbcf870170a5bfae68861614fe1a0a83d86ff61
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2307'
 ht-degree: 5%
 
 ---
-
 
 # Pagina&#39;s maken en indelen{#creating-and-organizing-pages}
 
@@ -423,4 +423,3 @@ U kunt mappen maken waarmee u uw bestanden en pagina&#39;s kunt ordenen.
    ![chlimage_1-14](assets/chlimage_1-14.png)
 
 1. Selecteer **Maken** om de map te maken.
-
