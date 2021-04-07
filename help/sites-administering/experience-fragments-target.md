@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: 6911c8e3-b12c-466e-8255-5dcd09557d35
+exl-id: dbde3cb6-4132-4462-bd4c-0e4439110e2e
 translation-type: tm+mt
-source-git-commit: 4e5d3c0ae71f601bcf39fa768c8b5ac86decc1eb
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '657'
 ht-degree: 0%
 
 ---
-
 
 # Doelintegratie met ervaringsfragmenten{#target-integration-with-experience-fragments}
 
@@ -110,5 +110,3 @@ Om dergelijke situaties te voorkomen:
       * De aanbieding wordt waarschijnlijk nog steeds weergegeven, aangezien de Experience Fragment-HTML naar Target werd geduwd
       * Eventuele verwijzingen in het ervaringsfragment werken mogelijk niet correct als middelen waarnaar wordt verwezen ook in AEM worden verwijderd.
    * Uiteraard zijn verdere wijzigingen van het ervaringsfragment niet mogelijk omdat het ervaringsfragment niet meer in AEM bestaat.
-
-
