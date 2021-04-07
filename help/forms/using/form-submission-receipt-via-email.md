@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: 7ffe6317-174b-4d80-9ac6-9bfb5eed7e29
+exl-id: e850d2a5-cb5f-4bd4-81dd-57951923b6d3
 translation-type: tm+mt
-source-git-commit: 36baba4ee20dd3d7d23bc50bfa91129588f55d32
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '586'
 ht-degree: 0%
 
 ---
-
 
 # Een bevestiging van het verzenden van een formulier verzenden via e-mail {#sending-a-form-submission-acknowledgement-via-email}
 
@@ -102,4 +102,3 @@ Bijvoorbeeld:
 >[!NOTE]
 >
 >Velden in herhaalbare deelvensters kunnen niet worden gebruikt als plaatsaanduidingen voor variabelen.
-
