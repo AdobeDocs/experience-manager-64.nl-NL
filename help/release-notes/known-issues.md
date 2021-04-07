@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4
 topic-tags: release-notes
 content-type: reference
 discoiquuid: 266634ab-21d3-4aac-acfa-b799a7485507
+exl-id: ba65e853-d69a-4341-93c3-5628c60c403b
 translation-type: tm+mt
-source-git-commit: f8ba597c62379ba413309303c2ad066ab7afce1e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1034'
 ht-degree: 0%
 
 ---
-
 
 # Bekende problemen {#known-issues}
 
@@ -58,7 +58,7 @@ Als u Microsoft Edge als browser gebruikt:
 * **Gereedschap maken - CRX DE Lite:** Afstand van eigenschappen wordt steeds groter (GRANITE-12040)
 * **Tooling - CRX DE Lite:** Kan veranderingen in &quot;Lange&quot;types van Waarde bewaren tenzij u op de Naam van het Bezit tweemaal klikt (GRANITE-12351)
 
-* **Tooling - CRX DE Lite:** ctrl+F onderzoek op open tekstdossiers gaat geplakt op onderzoek RegExp (GRANITE-5996)
+* **Tooling - CRX DE Lite:** ctrl+F onderzoek op open tekstdossiers gaat op onderzoek RegExp (GRANITE-5996) wordt geplakt
 
 * **Gereedschappen - CRX DE Lite:** Node-eigenschap wordt niet weergegeven nadat de naam van het knooppunt is gewijzigd (GRANITE-7160)
 * **UI:** Pulldown &quot;more...&quot; niet alle elementen tonen wanneer geopend bij een popover element op IE en Firefox (GRANITE-16326)
@@ -112,7 +112,7 @@ Als u Microsoft Edge als browser gebruikt:
 * Het Interactieve Kanaal van het Communicatie Web steunt slechts bevolen en ongeordende lijsten. In fragmenten van het lijstdocument, worden de samengestelde lijst en de inkeping niet gesteund voor het kanaal van het Web van de Interactieve Mededeling. (CQ-4233672)
 * De volgende problemen worden waargenomen bij het synchroniseren van webkanalen met het afdrukkanaal:
 
-   * Het webkanaal duurt even om te synchroniseren wanneer u voor het eerst van het afdrukkanaal overschakelt.
+   * Het kanaal van het Web neemt even aan synchronisatie wanneer het schakelen van drukkanaal voor het eerst.
    * Het webkanaal synchroniseert niet als het afdrukkanaal een niet-geconfigureerde diagramcomponent bevat. Verwijder de diagramcomponent en synchroniseer opnieuw om het probleem op te lossen.
    * Synchroniseren mislukt soms met de fout &#39;&#39;Er is een fout opgetreden tijdens het synchroniseren van de fout voor Live kopie&#39;. Vernieuw de pagina om het probleem op te lossen.
    * De statische tekst in een layoutfragment wordt vervangen door de naam van een tabelcel als de eerste kolom in de tabel een kopkolom is in de sjabloon voor het afdrukkanaal.
