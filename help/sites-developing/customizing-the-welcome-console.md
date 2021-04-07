@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 2e408acb-3802-4837-8619-688cfc3abfa7
+exl-id: 11b791f6-b14f-4f50-a64a-27a9501adeb7
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '486'
 ht-degree: 4%
 
 ---
-
 
 # De welkomstconsole aanpassen (klassieke UI){#customizing-the-welcome-console-classic-ui}
 
@@ -213,4 +213,3 @@ Het [mechanisme van de verbindingsselectie](#link-selection-mechanism) kan worde
 Voeg uw douanepunt aan de lijst toe door `cq:Console` toe te voegen meng aan uw widget of middel. Hiervoor definieert u de eigenschap:
 
 * `jcr:mixinTypes` met de waarde:  `cq:Console`
-
