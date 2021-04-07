@@ -2,15 +2,15 @@
 title: AEM 6.4 Gebruikershandleiding beheren
 seo-title: AEM 6.4 Gebruikershandleiding beheren
 description: 'In deze handleiding wordt uitgelegd hoe u een AEM project kunt beheren '
-seo-description: 'Omvat hoe te om een AEM project met succes te beheren '
+seo-description: Omvat hoe te om een AEM project met succes te beheren
+exl-id: 4fa34d1f-c41e-4b9b-98d3-8c364a60776d
 translation-type: tm+mt
-source-git-commit: 501a6c470113d249646f4424a19ee215a82b032d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '347'
 ht-degree: 19%
 
 ---
-
 
 # AEM 6.4 Gebruikershandleiding beheren
 
