@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 0763f236-5648-49e9-8a24-dbc8f4c77ee3
+exl-id: 45b9d418-0ecb-44c9-8091-b9ce29ba730b
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '739'
 ht-degree: 0%
 
 ---
-
 
 # SRP en UGC Essentials {#srp-and-ugc-essentials}
 
@@ -133,4 +133,3 @@ UGC wordt gecreeerd in geen van die plaatsen, en zou slechts moeten worden betre
 * [Overzicht](srp.md)  van Storage Resource Provider - Inleiding en overzicht van opslaggebruik
 * [Toegang tot UGC met SRP](accessing-ugc-with-srp.md) - coderingsrichtlijnen
 * [SocialUtils Refactoring](socialutils.md)  - het Afgekeurde nutsmethodes van de Toewijzing aan huidige SRP nutsmethodes
-
