@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: d4ceb82e-2889-4507-af22-b051af83be38
+exl-id: 97120959-0a45-46b8-a10d-68522ad6f81a
 translation-type: tm+mt
-source-git-commit: 3fafd4dff6e3cde5e31ef0db797e49c5c64f47af
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '889'
 ht-degree: 0%
 
 ---
-
 
 # cURL gebruiken met AEM{#using-curl-with-aem}
 
