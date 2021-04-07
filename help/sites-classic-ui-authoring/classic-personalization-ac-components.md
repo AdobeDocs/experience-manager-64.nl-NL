@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: personalization
 content-type: reference
 discoiquuid: 560b62b7-6bff-4cc4-baf9-c6573daa61ef
+exl-id: 66fc7691-1c93-4714-b75f-ae03512261e9
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2475'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Campaign Components{#adobe-campaign-components}
 
@@ -61,7 +61,7 @@ Het kopniveau op basis van de HTML-kopgrootten 1-4.
 
 In het volgende voorbeeld ziet u een component Kop (Campagne) die wordt weergegeven.
 
-![chlimage_1-114](assets/chlimage_1-114.png)
+![chlimage_1-115](assets/chlimage_1-114.png)
 
 ### Afbeelding (campagne) {#image-campaign}
 
@@ -482,4 +482,3 @@ Naast [instellingen die gelden voor de meeste Adobe Campaign-componenten](#setti
 In het volgende voorbeeld wordt een component Text Field (Campaign) weergegeven.
 
 ![chlimage_1-130](assets/chlimage_1-130.png)
-
