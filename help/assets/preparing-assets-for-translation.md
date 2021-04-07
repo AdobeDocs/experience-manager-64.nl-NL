@@ -3,15 +3,15 @@ title: Middelen voorbereiden voor vertaling
 description: Maak hoofdmappen voor talen om het vertalen van meertalige middelen voor te bereiden.
 contentOwner: AG
 feature: Projecten,vertalen
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: cc6c4f9e-8e22-4622-8b24-230ae258351c
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '449'
+source-wordcount: '446'
 ht-degree: 2%
 
 ---
-
 
 # Elementen voorbereiden voor vertaling {#preparing-assets-for-translation}
 
@@ -72,4 +72,3 @@ De interface met geoptimaliseerde aanrakingen biedt een paneel Referenties met e
 1. Klik of tik op **[!UICONTROL Language Copies]** in het venster Referenties. In het deelvenster Taalkopieën worden de taalkopieën van de elementen weergegeven.
 
    ![chlimage_1-123](assets/chlimage_1-123.png)
-
