@@ -3,14 +3,14 @@ title: Opmerkingen bij de release Adobe Experience Manager 6.4
 seo-title: AEM 6.4 Opmerkingen bij de release
 description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
 seo-description: De AEM Release-notities bevatten belangrijke informatie over de nieuwste versie van AEM, waaronder nieuwe, ondersteunde platforms, vervangen en verwijderde functies en bekende problemen.
+exl-id: e6ebd0ba-674e-406f-a3ac-98ac9518226e
 translation-type: tm+mt
-source-git-commit: 2872b6ebbd5763e486857359b3bdee965f6c9d48
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '401'
 ht-degree: 16%
 
 ---
-
 
 # Opmerkingen bij de release Adobe Experience Manager 6.4
 
