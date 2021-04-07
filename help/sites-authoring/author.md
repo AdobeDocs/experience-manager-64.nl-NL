@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 72ee013a-7a60-41ee-9421-2846e4c6bc68
+exl-id: 23e30de9-1a30-484a-b370-f9f0d45b4e41
 translation-type: tm+mt
-source-git-commit: b009abd8b3d55bd7dd030d7b4828aec72d9fa9ff
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '555'
 ht-degree: 0%
 
 ---
-
 
 # Concept of Authoring and Publishing{#authoring}
 
