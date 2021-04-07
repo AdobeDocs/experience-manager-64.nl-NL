@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 54326a05-3fb0-4111-a6ec-230b6473052e
+exl-id: 2c0dab68-d77e-46fb-832d-90edea510750
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '270'
 ht-degree: 3%
 
 ---
-
 
 # Algemene stappen voor aanpassing van de AEM Forms-werkruimte {#generic-steps-for-aem-forms-workspace-customization}
 
@@ -92,4 +92,3 @@ De algemene stappen voor het uitvoeren van aanpassingen zijn:
 1. Klik **[!UICONTROL Save All]**, ontruim geheime voorgeheugen, en vernieuw de werkruimte van AEM Forms.
 
    Open de URL `https://[server]:[port]/lc/ws` en meld u aan met de gegevens voor de beheerder/het wachtwoord. De browser wordt omgeleid naar `https://[server]:[port]/lc/apps/ws/index.html`.
-
