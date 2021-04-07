@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: personalization
 discoiquuid: 850da0da-f7c3-4dd7-bb06-404c14a2a791
+exl-id: 669e2509-e563-46ff-b01c-3f05ec196df5
 translation-type: tm+mt
-source-git-commit: 80395c4695b326474f9ae0e73caa075a5782eaf6
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '530'
 ht-degree: 0%
 
 ---
-
 
 # {#personalization} gericht op aanpassing en inhoud
 
