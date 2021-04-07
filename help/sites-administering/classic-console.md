@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: a7f31bc8-c583-439f-b2af-1dcc58f9c481
+exl-id: 0c989965-c6cc-4ec7-a90f-6c52e8362485
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '890'
 ht-degree: 0%
 
 ---
-
 
 # Classic UI Tagging Console{#classic-ui-tagging-console}
 
@@ -187,5 +187,4 @@ In het algemeen wordt de taal van de tag opgehaald uit de paginataal als de pagi
 
 >[!NOTE]
 >
->De tagcloud en de metatrefwoorden in de standaardpaginacomponent gebruiken de gelokaliseerde tag `titles`gebaseerd op de paginataal, indien beschikbaar.
-
+>De tagcloud en de metatrefwoorden in de standaardpaginacomponent gebruiken de gelokaliseerde tag `titles`op basis van de paginataal, indien beschikbaar.
