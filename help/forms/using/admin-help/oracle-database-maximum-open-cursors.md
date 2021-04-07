@@ -1,6 +1,6 @@
 ---
-title: Oracle database maximum open cursors drempel
-seo-title: Oracle database maximum open cursors drempel
+title: Maximale drempel voor open cursors in de database oracle
+seo-title: Maximale drempel voor open cursors in de database oracle
 description: Meer informatie over het configureren van een maximumwaarde voor open cursors in Oracle.
 seo-description: Meer informatie over het configureren van een maximumwaarde voor open cursors in Oracle.
 uuid: c1d20997-f853-4772-b1c6-8cea73221d0a
@@ -9,15 +9,15 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_aem_forms_database
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: d3565776-1b7d-498c-9840-b17f80170d9b
+exl-id: ad14ff27-964f-481f-a8ef-052d9cfb7734
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '101'
 ht-degree: 0%
 
 ---
 
+# Maximumdrempel voor open cursors in de database oracle {#oracle-database-maximum-open-cursors-threshold}
 
-# Oracle database maximum open cursors drempel {#oracle-database-maximum-open-cursors-threshold}
-
-Om een maximumwaarde voor open cursors in Oracle te vormen, kunt u deze waarde aan een aantal moeten aanpassen dat voor uw toepassing aangewezen is. Het is duidelijk dat de gemiddelde open cursors onder een gematigde belasting 2700 bedroeg. Het wordt aanbevolen te beginnen met een bovengrens van 3000. Ga voor meer informatie naar [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
+Om een maximumwaarde voor open cursors in Oracle te vormen, kunt u deze waarde aan een aantal moeten stemmen dat voor uw toepassing aangewezen is. Het is duidelijk dat de gemiddelde open cursors onder een gematigde belasting 2700 bedroeg. Het wordt aanbevolen te beginnen met een bovengrens van 3000. Ga voor meer informatie naar [https://www.orafaq.com/node/758](https://www.orafaq.com/node/758).
