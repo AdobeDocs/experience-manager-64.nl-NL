@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 2c1be479-9f44-4348-b074-a08af8df51fa
 feature: Correspondentenbeheer
+exl-id: 645b990f-279c-4731-b552-07d0aa052eb8
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '3707'
 ht-degree: 0%
 
 ---
-
 
 # Correspondentie {#create-correspondence} maken
 
@@ -358,4 +358,3 @@ Voer de volgende stappen uit om de modus Voorvertoning van de letter te wijzigen
 1. Ga naar `https://[system]:[port]/system/console/configMgr` en meld u indien nodig aan als Admin.
 1. Ga naar **[!UICONTROL Correspondence Management Configurations]** > **[!UICONTROL Rendition Type]** en selecteer **HTML-vertoning** (standaardinstelling) of **PDF-vertoning**.
 1. Klik op **[!UICONTROL Save]**.
-
