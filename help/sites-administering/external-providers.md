@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: bf8fd156-4be9-43f8-8948-cf7f91c25f1b
+exl-id: 6d906c2b-c8bc-4d54-9887-8aaeb6cc83d3
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '452'
 ht-degree: 0%
 
 ---
-
 
 # Analyse met externe providers{#analytics-with-external-providers}
 
@@ -113,4 +113,3 @@ Nadat u de de dienstconfiguratie hebt gecreeerd moet u nu de vereiste pagina&#39
    >[!NOTE]
    >
    >Als de configuratie aan een pagina in bijlage is die kindpagina&#39;s heeft, wordt de dienst ook geërft door die.
-
