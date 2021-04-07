@@ -9,14 +9,14 @@ topic-tags: integration
 content-type: reference
 discoiquuid: 90e36522-3af1-4a8a-b044-1c828c52974e
 description: Catalogusproducent
+exl-id: 00776df6-1afe-4b14-a267-3ceba22dcad5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '901'
 ht-degree: 0%
 
 ---
-
 
 # Catalogusproducent{#catalog-producer}
 
@@ -104,4 +104,3 @@ pdfAls de optie Acrobat(PDF) is geselecteerd, wordt naast indesign-uitvoering ee
    ![chlimage_1-119](assets/chlimage_1-119.png)
 
    Bekijk de pagina&#39;s in de catalogus in de voorvertoning. Tik/klik **Close** om de voorvertoning te sluiten.
-
