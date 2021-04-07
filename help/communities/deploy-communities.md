@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 content-type: reference
 topic-tags: deploying
 discoiquuid: d0249609-2a9c-4d3b-92ee-dbc5fbdeaac6
+exl-id: 0b7496f0-0b3c-4d12-a659-d95744157f14
 translation-type: tm+mt
-source-git-commit: 1375282df15b1a1a1ab5ed760190af8d6288970e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2114'
 ht-degree: 0%
 
 ---
-
 
 # Gemeenschappen {#deploying-communities} implementeren
 
@@ -125,7 +125,7 @@ De noodzakelijke stappen zijn:
    * Bijvoorbeeld http://localhost:4502/system/console/bundles
    * Selecteer **`Install/Update`**
    * Bladeren... om de bundel te selecteren die uit het gedownloade ZIP-archief is geëxtraheerd
-   * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start het programma als dat niet het geval is (of controleer de logboeken)
+   * Controleer of het JDBC-stuurprogramma van *Oracle Corporation voor MySQLcom.mysql.jdbc* actief is en start het indien niet (of controleer de logboeken)
 
 1. Als het installeren op een bestaande plaatsing nadat JDBC is gevormd, dan opnieuw bindt JDBC aan de nieuwe schakelaar door de configuratie JDBC van de Webconsole op te slaan:
 
@@ -245,7 +245,7 @@ Lees [Upgraden naar AEM Communities 6.4](upgrade.md) om meer te weten te komen o
 
 ### Primaire uitgever {#primary-publisher}
 
-Wanneer de gekozen implementatie een [publicatiecentrum](topologies.md#tarmk-publish-farm) is, moet één AEM publicatieexemplaar worden geïdentificeerd als **`primary publisher`** voor activiteiten die niet in alle gevallen zouden moeten voorkomen, zoals eigenschappen die op **meldingen** of **Adobe Analytics** baseren.
+Wanneer de gekozen implementatie een [publicatiecentrum](topologies.md#tarmk-publish-farm) is, moet één AEM publicatieexemplaar worden geïdentificeerd als **`primary publisher`** voor activiteiten die niet in alle gevallen zouden moeten voorkomen, zoals eigenschappen die op **berichten** of **Adobe Analytics** baseren.
 
 Door gebrek, wordt de `AEM Communities Publisher Configuration` configuratie OSGi gevormd met **`Primary Publisher`** gecontroleerd checkbox, zodat alle publiceer instanties in een publicatielandbouwbedrijf zich als primair zou identificeren.
 
@@ -358,7 +358,7 @@ Om het belangrijkste materiaal van auteur aan alle andere instanties te kopiëre
 
       * `<publish-aem-install-dir>/crx-quickstart/launchpad/felix/bundle21/data`
    * Plak de twee eerder gekopieerde bestanden
-   * Het is noodzakelijk om [de graniet Crypto-bundel](#refresh-the-granite-crypto-bundle) te vernieuwen als de doel-AEM momenteel wordt uitgevoerd
+   * Het is nodig om [de graniet Crypto-bundel](#refresh-the-granite-crypto-bundle) te vernieuwen als de doel-AEM momenteel wordt uitgevoerd
 
 
 >[!CAUTION]
@@ -442,4 +442,3 @@ Als u een Dispatcher gebruikt, raadpleegt u:
 * Bezoek [Developing Communities](communities.md) voor meer informatie over het SCF (Social Component Framework) en het aanpassen van onderdelen en functies van Gemeenschappen.
 
 * Bezoek [Authoring Communities Components](author-communities.md) voor meer informatie over het schrijven en configureren van Community-componenten.
-
