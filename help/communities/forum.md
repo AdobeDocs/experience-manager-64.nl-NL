@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 3495f983-d71e-4704-be4e-8a42a63f72db
+exl-id: fa6f28b4-3217-4b6a-b223-506da0ecca9e
 translation-type: tm+mt
-source-git-commit: 28948f1f8678512f8fc970a4289cb01cde86c5c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '958'
 ht-degree: 0%
 
 ---
-
 
 # Functie van forum {#forum-feature}
 
@@ -67,7 +67,7 @@ Hiermee definieert u het aantal onderwerpen/posts dat per pagina wordt weergegev
 Als deze optie is ingeschakeld, moet het posten van onderwerpen en opmerkingen worden goedgekeurd voordat ze op een publicatiesite worden weergegeven. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Closed]**
-Als deze optie ingeschakeld is, wordt het forum afgesloten met nieuwe onderwerpen en opmerkingen. De optie Standaard is uitgeschakeld.
+Als deze optie ingeschakeld is, is het forum gesloten voor nieuwe onderwerpen en opmerkingen. De optie Standaard is uitgeschakeld.
 
 * **[!UICONTROL Rich Text Editor]**
 Als deze optie is ingeschakeld, kunnen onderwerpen en opmerkingen worden ingevoerd met een markering. De optie Standaard is uitgeschakeld.
