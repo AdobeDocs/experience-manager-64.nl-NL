@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: fe61ee4b-51b6-4a6f-91d8-1c02b29cc1db
+exl-id: 0aefe8c0-662e-4177-a369-feab174fa510
 translation-type: tm+mt
-source-git-commit: 13e1da76d72277687f35d783de6d887ab7c1b52d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '441'
 ht-degree: 2%
 
 ---
-
 
 # Pagina configureren voor Bulk bewerken van pagina-eigenschappen {#configuring-your-page-for-bulk-editing-of-page-properties}
 
@@ -100,4 +100,3 @@ De gebieden worden toegelaten op de paginacomponent (*not* op het malplaatje):
 
 
 1. Selecteer **Alles opslaan** om uw updates voort te zetten.
-
