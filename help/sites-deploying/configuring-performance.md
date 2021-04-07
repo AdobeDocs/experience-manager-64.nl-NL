@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: configuring
 discoiquuid: 80118cd1-73e1-4675-bbdf-85d66d150abc
 feature: Configureren
+exl-id: 06b197de-f97b-451f-8037-931c8cd754b6
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
-ht-degree: 0%
+source-wordcount: '6663'
+ht-degree: 1%
 
 ---
-
 
 # Optimalisatie van prestaties {#performance-optimization}
 
@@ -388,7 +388,7 @@ In beide gevallen kunt u het verwachte aantal transacties per seconde definiëre
 
 | Component | Testtype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
-| Homepage voor één gebruiker | Gemiddelde | 1 | 1 |  |  |
+| Homepage voor één gebruiker | Gemiddelde | 1 | 3 |  |  |
 |  | Piek | 3 | 3 |  |  |
 | Homepage 100 gebruikers | Gemiddelde | 100 | 3 |  |  |
 |  | Piek | 100 | 3 |  |
@@ -399,10 +399,10 @@ Wanneer u de componenten in combinatie test, wordt het gedrag van de toepassinge
 
 | Scenario | Component | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
-| Gemengd gemiddelde | Homepage | 10 | 3 |  |  |
-|  | Zoeken | 10 | 3 |  |  |
+| Gemengd gemiddelde | Homepage | 10 | 1 |  |  |
+|  | Zoeken | 10 | 1 |  |  |
 |  | Nieuws | 10 | 2 |  |  |
-|  | Gebeurtenissen | 10 | 1 |  |  |
+|  | Gebeurtenissen | 10 | 3 |  |  |
 |  | Activering | 10 | 1 |  | Simulatie van het gedrag van de auteur. |
 | Gemengde piek | Homepage | 100 | 5 |  |  |
 |  | Zoeken | 50 | 5 |  |  |
@@ -433,10 +433,10 @@ Bij het opstellen van deze tests moet er rekening mee worden gehouden dat niet a
 
 | Foutscenario | Fouttype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
-| Overbelasting van component zoeken | Zoeken op jokerteken (sterretje) | 10 | 3 |  | Alleen &amp;ast;&amp;ast;&amp;ast; worden doorzocht. |
+| Overbelasting van component zoeken | Zoeken op jokerteken (sterretje) | 10 | 1 |  | Alleen &amp;ast;&amp;ast;&amp;ast; worden doorzocht. |
 |  | Woord stoppen | 20 | 2 |  | Zoeken naar een stopwoord. |
-|  | Lege tekenreeks | 10 | 3 |  | Zoeken naar een lege tekenreeks. |
-|  | Speciale tekens | 10 | 3 |  | Zoeken naar speciale tekens. |
+|  | Lege tekenreeks | 10 | 1 |  | Zoeken naar een lege tekenreeks. |
+|  | Speciale tekens | 10 | 1 |  | Zoeken naar speciale tekens. |
 
 #### Duurzaamheidstests {#endurance-tests}
 
@@ -444,10 +444,10 @@ Bepaalde problemen zullen pas worden ondervonden nadat het systeem gedurende een
 
 | Scenario | Testtype | Nee. van gebruikers | Tx/sec (verwacht) | Tx/sec (getest) | Beschrijving |
 |---|---|---|---|---|---|
-| Duurzaamheidstest (72 uur) | Homepage | 10 | 1 |  |  |
-|  | Zoeken | 10 | 3 |  |  |
+| Duurzaamheidstest (72 uur) | Homepage | 10 | 3 |  |  |
+|  | Zoeken | 10 | 1 |  |  |
 |  | Nieuws | 20 | 2 |  |  |
-|  | Gebeurtenissen | 10 | 1 |  |  |
+|  | Gebeurtenissen | 10 | 3 |  |  |
 |  | Activering | 3 | 3 |  | Simulatie van het gedrag van de auteur. |
 
 ### Optimalisatie {#optimization}
