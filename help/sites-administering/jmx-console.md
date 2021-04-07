@@ -9,20 +9,20 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: 0798ae5c-e06e-425f-ba8a-9309eb233083
+exl-id: 22110676-c102-4730-ab38-45396b15a274
 translation-type: tm+mt
-source-git-commit: 5b9a966480d98403311cdddcbffa267bde68dd1b
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4948'
 ht-degree: 0%
 
 ---
 
-
 # De Middelen van de Server van de controle die JMX Console{#monitoring-server-resources-using-the-jmx-console} gebruiken
 
 Met de JMX-console kunt u services op de CRX-server controleren en beheren. In de volgende secties wordt een overzicht gegeven van de kenmerken en bewerkingen die via het JMX-framework worden weergegeven.
 
-Voor informatie over hoe te om de consolecontroles te gebruiken, zie [Gebruikend de Console JMX](#using-the-jmx-console). Raadpleeg de pagina [Java Management Extensions (JMX) Technology](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) op de Oracle-website voor achtergrondinformatie over JMX.
+Voor informatie over hoe te om de consolecontroles te gebruiken, zie [Gebruikend de Console JMX](#using-the-jmx-console). Raadpleeg de pagina [Java Management Extensions (JMX) Technology](https://www.oracle.com/technetwork/java/javase/tech/javamanagement-140525.html) op de website van het Oracle voor achtergrondinformatie over JMX.
 
 Zie [Services integreren met de JMX-console](/help/sites-developing/jmx-integration.md) voor informatie over het maken van MBeans om uw services te beheren met de JMX-console.
 
@@ -949,4 +949,3 @@ Om tot de interne controle en configuratieopties van CRX toegang te hebben, ga n
 Selecteer in die sectie het gewenste kenmerk of de gewenste bewerking in het linkerdeelvenster.
 
 ![screen_shot_2012-03-26at115728am](assets/screen_shot_2012-03-26at115728am.png)
-
