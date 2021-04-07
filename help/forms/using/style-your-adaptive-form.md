@@ -8,14 +8,14 @@ uuid: ffb2cc22-baaf-4525-a2e3-29f39271c670
 topic-tags: introduction
 discoiquuid: 655303a4-99bb-4ba3-9d50-a178f5edcf85
 feature: Adaptieve Forms
+exl-id: 0ccf43eb-f0c6-4204-8325-f891caa8f5af
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2069'
 ht-degree: 4%
 
 ---
-
 
 # Stijl uw adaptieve formulier {#do-not-publish-style-your-adaptive-form}
 
@@ -456,4 +456,3 @@ Adobe Typekit is een service voor weblettertypen. U kunt de service configureren
 1. Vorm uw thema om de configuratie te gebruiken TypeKit. Voor de auteurinstantie, open **Globaal Thema** in de themaredacteur. Navigeer in de themaeditor naar Thema-opties ![theme-options](assets/theme-options.png) > Configure. Selecteer de kit in het veld **Typekit Configuration** en klik op **Save**.
 
    De lettertypen die aan de Typekit worden toegevoegd, zijn beschikbaar voor selectie in de accordeon **Text** van alle componenten.
-
