@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 161b591b-5871-4b5f-9c63-823b6e67b1fd
 feature: Beheer van meerdere sites
+exl-id: 13d044bd-fa61-4e24-ac1d-69a6f10847a4
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '4022'
 ht-degree: 0%
 
 ---
-
 
 # Actieve kopieën maken en synchroniseren{#creating-and-synchronizing-live-copies}
 
@@ -632,4 +632,3 @@ De handeling [Loskoppelen is ook beschikbaar in het Live Copy-overzicht](/help/s
 1. Bevestig de handeling **Loskoppelen** in het dialoogvenster **Live kopie loskoppelen**:
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
