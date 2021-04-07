@@ -10,14 +10,14 @@ topic-tags: site-features, best-practices
 content-type: reference
 discoiquuid: 1554010e-a1d1-4edf-b28f-9eead8f83b4a
 feature: Taalkopie
+exl-id: f8f99ad9-2592-45b0-a16c-33b191722e75
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '861'
 ht-degree: 0%
 
 ---
-
 
 # Aanbevolen werkwijzen voor vertaling{#translation-best-practices}
 
@@ -63,4 +63,3 @@ Het maken of uitbreiden van een wereldwijde aanwezigheid op het web kan een comp
    * **Machinevertaling kan een goede keuze zijn voor grote hoeveelheden vertalingen als de tijd om te publiceren kritiek is, de kwaliteitsverwachtingen worden versoepeld of de vertaalkosten voor mensen onbetaalbaar zijn.** De kennisbasis van de steun en door de gebruiker geproduceerde inhoud worden algemeen machine-vertaald.
 
 * Vertrouw op expertise van lokalisatieserviceproviders, Adobe Consulting en System Integrators om uw meertalige sitestructuur te plannen, te maken en te testen.
-
