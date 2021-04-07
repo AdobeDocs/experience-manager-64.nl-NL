@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: b35ea921-182f-4371-90f6-482d22694b42
 feature: Correspondentenbeheer
+exl-id: 00b3efc5-ef1c-4b9d-957d-2eda01c0b985
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1314'
 ht-degree: 2%
 
 ---
-
 
 # Aangepaste actie toevoegen aan de weergave Lijst met activa {#add-custom-action-to-the-asset-listing-view}
 
@@ -370,4 +370,3 @@ Nadat u aangepaste functionaliteit hebt toegevoegd om de platte PDF van uw briev
    ![Letter downloaden als PDF](assets/6_downloadflatpdf.png)
 
    De brief wordt gedownload aan uw computer als vlakke PDF.
-
