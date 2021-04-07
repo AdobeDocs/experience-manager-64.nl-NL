@@ -6,15 +6,15 @@ contentOwner: AG
 products: SG_EXPERIENCEMANAGER/6.4/ASSETS
 discoiquuid: f341fae1-dda3-4917-b6db-ad02fec63702
 feature: Asset Management,video
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: eb652414-5b10-45af-a8b6-f1de649994c5
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '705'
+source-wordcount: '703'
 ht-degree: 5%
 
 ---
-
 
 # Videoassets beheren {#managing-video-assets}
 
