@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 3c2a44a7-24e7-49ee-bf18-eab0e44efa42
+exl-id: 272d3ec1-7f92-4f4a-9e98-954136b20b27
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1200'
 ht-degree: 2%
 
 ---
-
 
 # Weergaveframework voor adaptieve en HTML5-formulieren {#appearance-framework-for-adaptive-and-html-forms}
 
@@ -270,4 +270,3 @@ Alle aangepaste widgets moeten voldoen aan de bovenstaande specificaties. Als u 
 | maanden | Gelokaliseerde maandnamen voor dat veld. |
 | nul | De gelokaliseerde tekst voor het getal 0. |
 | clearText | De gelokaliseerde tekst voor wissen knop. |
-
