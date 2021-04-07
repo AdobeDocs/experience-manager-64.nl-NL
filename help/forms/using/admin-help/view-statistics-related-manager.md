@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/health_monitor
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 8e1b2f7c-2609-474b-a1b2-fa820df74ae3
+exl-id: 642f5ee3-c991-4238-9b82-f0e19a6d8e2d
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1241'
 ht-degree: 0%
 
 ---
-
 
 # Statistieken weergeven met betrekking tot Werkmanager {#view-statistics-related-to-work-manager}
 
@@ -93,7 +93,7 @@ Als u bijvoorbeeld Tijd maken = 1 dag en vóór = Huidige datum en tijd gebruike
 
 >[!NOTE]
 >
->Bij Oracle-databaseimplementaties werken de datumbereikfilters (dat wil zeggen Tijd maken en Voor instellingen) niet correct. Gebruik een ander filter om de werkitems op te halen.
+>Voor de gegevensbestandplaatsingen van het Oracle, werken de filters van de datumwaaier (namelijk Create Tijd en Voorafgaand aan montages) niet correct. Gebruik een ander filter om de werkitems op te halen.
 
 ## Informatie over de interface {#about-the-work-manager-tab-interface} op het tabblad Werkbeheer
 
