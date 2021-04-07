@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 91a41bc1-3fa3-4467-b3f8-5570ba7757c0
 feature: Adaptieve Forms
+exl-id: 8e7ba9d2-207f-419b-bcd5-74ba9b14ab92
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '559'
 ht-degree: 1%
 
 ---
-
 
 # Inline styling van adaptieve formuliercomponenten {#inline-styling-of-adaptive-form-components}
 
@@ -105,4 +105,3 @@ Na de bovenstaande stappen kunt u andere componenten selecteren en opmaken, zoal
 >[!NOTE]
 >
 >De stijleigenschappen variëren op basis van de component die u selecteert.
-
