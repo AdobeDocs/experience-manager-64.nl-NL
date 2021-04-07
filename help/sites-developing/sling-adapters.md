@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: c081b242-67e4-4820-9bd3-7e4495df459e
+exl-id: 7780d04d-418e-494c-85c3-76bef5f35690
 translation-type: tm+mt
-source-git-commit: 269facfb6351b0b7c73e963ac7c5dc0b57c78a3e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1747'
 ht-degree: 0%
 
 ---
-
 
 # Sling Adapters{#using-sling-adapters}
 
