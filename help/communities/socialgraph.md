@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 0ce57ab1-e4c6-4c38-963d-556eef8757f2
+exl-id: ab829d28-278d-4139-af16-edcc24b3d56b
 translation-type: tm+mt
-source-git-commit: 8f169bb9b015ae94b9160d3ebbbd1abf85610465
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
-
 
 # Sociale grafiek {#using-social-graph} gebruiken
 
