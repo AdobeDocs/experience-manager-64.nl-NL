@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: dd9c0ec4-a195-4b78-8992-81d0efcc0a7e
 role: Developer
+exl-id: 92351e2d-1928-4bc4-aaff-d557ee09d1ee
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '960'
+source-wordcount: '959'
 ht-degree: 0%
 
 ---
-
 
 # Servicecontainer {#service-container}
 
