@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: best-practices
 discoiquuid: 01362026-a696-4a5d-94e9-ea784eaa6e4b
+exl-id: f39910cf-1875-43fc-bfb5-259b9d8f135d
 translation-type: tm+mt
-source-git-commit: 835f1ba1f196c6c6303019f0cc310cad850e1682
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '99'
 ht-degree: 0%
 
 ---
-
 
 # Codevalkuilen{#code-pitfalls}
 
