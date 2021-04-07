@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 43fd720f-2a5a-47fb-b9d9-d19f866cd0a0
 feature: Adaptieve Forms
+exl-id: ff113288-a69a-4083-82a6-4c65c5062411
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '691'
 ht-degree: 0%
 
 ---
-
 
 # Revisies maken en beheren voor elementen in formulieren {#creating-and-managing-reviews-for-assets-in-forms}
 
@@ -105,4 +105,3 @@ In deze sectie wordt beschreven wat er gebeurt bij het einde/de wijziging van de
    1. **Revisoren**: Voor elke controleur wordt de onvolledige taak met betrekking tot de revisie beëindigd. De taak wordt niet meer weergegeven als &#39;In behandeling&#39; in de sectie Meldingen van de controleur.
    1. **Initiator**: De taak die is toegewezen aan de aanvrager van de revisie is gemarkeerd als voltooid. De taak wordt verwijderd uit de sectie Melding van de revisieaanvrager.
    1. **Alles**: De revisie wordt weergegeven in de sectie Vorige revisies. Er kunnen geen verdere opmerkingen worden toegevoegd.
-
