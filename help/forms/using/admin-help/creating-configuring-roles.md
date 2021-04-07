@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/setting_up_and_organizing_users
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 737fb4d1-adef-47e1-9a0d-8cddd13132cb
+exl-id: 794769f8-57c7-43c1-87dd-952121ced3e4
 translation-type: tm+mt
-source-git-commit: ba04fe705a91717f1d9658d436056ebddda6be3a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2556'
 ht-degree: 0%
 
 ---
-
 
 # Rollen maken en configureren{#creating-and-configuring-roles}
 
@@ -54,7 +54,7 @@ De volgende aanvullende standaardrollen kunnen worden opgenomen, afhankelijk van
 
 **Toepassingsgebruiker voor uploaden van document:** kan documenten uploaden met Flex Remoting.
 
-**Forms Administrator:** Kan instellingen weergeven en wijzigen op de Forms-pagina in de beheerconsole
+**Forms Administrator:** Kan instellingen weergeven en wijzigen op de Forms-pagina in beheerconsole
 
 **AEM formulieren Inhoudsruimtebeheerder:** Kan instellingen van de pagina Content Services (Afgekeurd) weergeven en wijzigen in beheerconsole
 
@@ -274,7 +274,7 @@ U kunt de toestemmingen voor om het even welke rollen veranderen die u creeerde.
 
 **Delegatie opslagplaats:ACL op een bron** instellen
 
-**Bewaarplaats gelezen:de inhoud van een bron** lezen
+**Repository lezen:De inhoud van een bron** lezen
 
 **Repository traverse:bron** opnemen in verzoek om lijstbronnen of de metagegevens van een bron lezen
 
@@ -360,4 +360,3 @@ Gebruik de pagina Rolbeheer om gebruikers en groepen uit een bepaalde rol te ver
 1. Klik in de lijst met rollen op de naam van de rol die u wilt bijwerken en klik vervolgens op het tabblad Rolgebruikers. Er wordt een lijst weergegeven met gebruikers en groepen die aan de rol zijn gekoppeld.
 1. Schakel de selectievakjes in voor de gebruikers en groepen die u uit de rol wilt verwijderen en klik op Toewijzen ongedaan maken.
 1. Klik op Opslaan en vervolgens op OK.
-
