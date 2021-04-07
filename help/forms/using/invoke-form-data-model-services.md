@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: aa3e50f1-8f5a-489d-a42e-a928e437ab79
 feature: Adaptieve Forms
+exl-id: 0653b0e4-a697-472a-8093-5ed48ede3c75
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '384'
 ht-degree: 1%
 
 ---
-
 
 # API om formuliergegevensmodelservice aan te roepen vanuit adaptieve formulieren {#api-to-invoke-form-data-model-service-from-adaptive-forms}
 
@@ -107,4 +107,3 @@ var outputs = {
 };
 guidelib.dataIntegrationUtils.executeOperation(operationInfo, inputs, outputs);
 ```
-
