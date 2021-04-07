@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 47201e2d-338d-40e0-af82-c681a552807b
-role: Beheerder
+role: Administrator
+exl-id: f6c6619e-b386-4d34-9d17-654d7c97aedd
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '538'
+source-wordcount: '537'
 ht-degree: 0%
 
 ---
-
 
 # Communitymeldingen {#communities-notifications}
 
@@ -114,4 +114,3 @@ Als u de gepubliceerde site bezoekt en de koppeling `Notifications` selecteert, 
 Wanneer het e-mailkanaal is ingeschakeld, ontvangt het lid een e-mail met een koppeling naar de inhoud op het web.
 
 ![chlimage_1-259](assets/chlimage_1-259.png)
-
