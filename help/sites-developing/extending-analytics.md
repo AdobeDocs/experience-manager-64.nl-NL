@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: e0372f4a-fe7b-4526-8391-5bb345b51d70
+exl-id: 8df6b48f-b1a8-4294-a52e-dc17ab65606c
 translation-type: tm+mt
-source-git-commit: 4e6442ec089b7d07cc68debb5a630fb474716f4d
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '501'
 ht-degree: 0%
 
 ---
-
 
 # Gebeurtenissenreeksspatiëring uitbreiden{#extending-event-tracking}
 
