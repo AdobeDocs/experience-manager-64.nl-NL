@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: ebe8136b-2a79-4035-b9d5-aa70a5bbd4af
 role: Developer
+exl-id: be09271b-3004-4866-b43b-fb03c91305ec
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2139'
+source-wordcount: '2138'
 ht-degree: 0%
 
 ---
-
 
 # PDF-documenten programmatisch samenstellen {#programmatically-assembling-pdf-documents}
 
