@@ -2,14 +2,14 @@
 title: De invoegtoepassingen van de Rich Text Editor configureren
 description: Leer om de AEM Rich Text Editor stop-ins te vormen om individuele functionaliteit toe te laten.
 contentOwner: AG
+exl-id: c9ab462d-b7d4-42c1-a4cf-80d16722910b
 translation-type: tm+mt
-source-git-commit: 2236d029dc463930e6bbdc1e1aed89e761f0cd89
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '4191'
 ht-degree: 0%
 
 ---
-
 
 # Plug-ins {#configure-the-rich-text-editor-plug-ins} van de Rich Text Editor configureren
 
@@ -563,7 +563,7 @@ Soms kunt u gegevenslijsten zonder visuele tekst in een kolomkopbal tot stand br
 Om toegankelijkheid in dergelijke scenario&#39;s te verbeteren, steunt RTE verborgen kopbalcellen. Bovendien worden er configuratie-instellingen gegeven voor verborgen koppen in tabellen. Met deze instellingen kunt u CSS-stijlen toepassen op verborgen koppen in de bewerkings- en voorvertoningsmodus. Om auteurs te helpen verborgen kopballen in Edit wijze identificeren, omvat de volgende parameters in uw code:
 
 * `hiddenHeaderEditingCSS`: Hiermee geeft u de naam op van de CSS-klasse die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
-* `hiddenHeaderEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met verborgen koptekst wanneer RTE wordt bewerkt.
+* `hiddenHeaderEditingStyle`: Hiermee geeft u een stijltekenreeks op die wordt toegepast op de cel met de verborgen koptekst wanneer RTE wordt bewerkt.
 
 Als u zowel de CSS-tekenreeks als de stijltekenreeks in code opgeeft, heeft de CSS-klasse voorrang op de stijltekenreeks en kan deze alle configuratiewijzigingen overschrijven die de stijltekenreeks aanbrengt.
 
