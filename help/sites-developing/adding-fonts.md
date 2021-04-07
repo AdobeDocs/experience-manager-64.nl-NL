@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 6af48ef5-75e6-4b66-bc0d-ecf254b1c4ef
+exl-id: f29868e3-d05c-4898-94d1-0c77ab6b72eb
 translation-type: tm+mt
-source-git-commit: 00317d1ba79f10e98b4c52713d845092b7cc6c2e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '200'
 ht-degree: 0%
 
 ---
-
 
 # Lettertypen toevoegen voor grafisch renderen{#adding-fonts-for-graphic-rendering}
 
@@ -50,4 +50,3 @@ Momenteel ondersteunen alle implementaties van het Java-Platform [TrueType](http
    Deze lettertypen kunnen nu worden gebruikt in de Java API.
 
 Zie de [documentatie voor de klasse Font van de Java API](https://download.oracle.com/javase/6/docs/api/java/awt/Font.html) voor meer informatie over het gebruik van de lettertypen met de Java API.
-
