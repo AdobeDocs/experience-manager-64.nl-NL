@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: d28997b4-49d2-46da-bfa1-ed6876a65639
 feature: Adaptieve Forms
+exl-id: 8d7d4a7a-8899-4ad5-9ca8-b961f3f15528
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2186'
 ht-degree: 2%
 
 ---
-
 
 # Stijlconstructies voor adaptieve formulieren {#styling-constructs-for-adaptive-forms}
 
@@ -1073,4 +1073,3 @@ Deze variabelen in de volgende tabel zijn van invloed op de vaste indeling van d
   </tr> 
  </tbody> 
 </table>
-
