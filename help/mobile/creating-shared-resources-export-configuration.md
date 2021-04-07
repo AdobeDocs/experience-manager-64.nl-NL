@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-on-demand-services-app
 discoiquuid: 1edf6c76-ccb1-40b6-bdf6-924f1461cd28
+exl-id: 92ee8c25-9f11-4743-a8e6-1f4986d09a6a
 translation-type: tm+mt
-source-git-commit: 95499f59b2ce7d5d864d948d596f3efaae0b0d27
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '326'
 ht-degree: 0%
 
 ---
-
 
 # Het creëren van de Configuratie van de Uitvoer van Gedeelde Middelen{#creating-shared-resources-export-configuration}
 
@@ -64,4 +64,3 @@ Zie de onderstaande stappen voor een voorbeeld van een gedeelde bron:
 >[!NOTE]
 >
 >De gedeelde middelen zouden moeten worden geupload of worden uitgevoerd naar AEM Mobile On-demand Services wanneer om het even welke gedeelde middelen veranderen.
-
