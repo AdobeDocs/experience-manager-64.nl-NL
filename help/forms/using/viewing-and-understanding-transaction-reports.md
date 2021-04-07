@@ -8,14 +8,14 @@ contentOwner: khsingh
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: bef38e7a-92db-4226-a4ea-8facce573456
+exl-id: b132216a-c9b4-4f8f-97e6-738a5a9632d1
 translation-type: tm+mt
-source-git-commit: 23607a6b2e74b50befe2fa19b868a0e4d561b0d8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '882'
 ht-degree: 0%
 
 ---
-
 
 # Transactierapporten weergeven en begrijpen {#viewing-and-understanding-transaction-reports}
 
@@ -83,7 +83,7 @@ U kunt transactierapporten weergeven over auteur- of publicatieinstanties. Het t
 
 ## Het rapport {#understanding-the-report}
 
-AEM Forms geeft transactierapporten weer sinds de geconfigureerde datum, zoals in een samenvattingsrapport hieronder wordt getoond:
+AEM Forms geeft transactierapporten weer sinds de geconfigureerde datum, zoals hieronder in een samenvattingsrapport wordt getoond:
 
 ![sample-transaction-report-auteur](assets/sample-transaction-report-author.png)
 
@@ -100,4 +100,3 @@ Transactierapportering plaatst alle informatie die in het rapport wordt weergege
 * [Overzicht van transactierapporten](/help/forms/using/transaction-reports-overview.md)
 * [Transactierapporten Billable API&#39;s](/help/forms/using/transaction-reports-billable-apis.md)
 * [Een transactie opnemen voor aangepaste implementaties](/help/forms/using/record-transaction-custom-implementation.md)
-
