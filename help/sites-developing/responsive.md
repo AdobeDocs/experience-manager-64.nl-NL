@@ -10,14 +10,14 @@ topic-tags: mobile-web
 content-type: reference
 discoiquuid: 532544b0-1932-419a-b6bd-ecf57a926fef
 legacypath: /content/docs/en/aem/6-0/develop/mobile/responsive
+exl-id: 5f945556-1ba0-49db-b2f6-395312c40b92
 translation-type: tm+mt
-source-git-commit: b698a1348df3ec2ab455c236422784d10cbcf7c2
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '5329'
 ht-degree: 0%
 
 ---
-
 
 # Responsief ontwerp voor webpagina&#39;s{#responsive-design-for-web-pages}
 
@@ -437,7 +437,7 @@ Met de adaptieve afbeeldingscomponentserver wordt de grootte van een JPEG-afbeel
 
 #### De interface van de Adaptive Image Component Servlet {#the-interface-of-the-adaptive-image-component-servlet}
 
-De server voor adaptieve afbeeldingscomponenten is gebonden aan het standaard-Sling-servlet en ondersteunt de bestandsextensies .jpg, .jpeg, .gif en .png. De servletkiezer is img.
+De server voor adaptieve afbeeldingscomponenten is gebonden aan de standaard-Sling-server en ondersteunt de bestandsextensies .jpg, .jpeg, .gif en .png. De servletkiezer is img.
 
 >[!CAUTION]
 >
@@ -606,7 +606,7 @@ Het afbeeldingspad, de afmetingen en de kwaliteitswaarden moeten worden opgeslag
 
 * Het afbeeldingspad wordt opgeslagen als de waarde van een eigenschap met de naam `fileReference`.
 
-Wanneer u een pagina ontwerpt, gebruikt u **Sidetrap** om de afbeelding op te geven en voegt u het knooppunt `image` toe aan de pagina-eigenschappen:
+Wanneer het ontwerpen van een pagina, gebruik **Sidetrap** om het beeld te specificeren en de `image` knoop aan de paginaeigenschappen toe te voegen:
 
 1. Klik in **Sidetrap** op het tabblad **Pagina** en klik vervolgens op **Pagina-eigenschappen**.
 1. Klik op het tabblad **Afbeelding** en geef de afbeelding op.
