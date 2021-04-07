@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: b80a2bfe-6f57-4229-a9ee-1ec87f3c3306
+exl-id: bb0abe28-843a-4195-afd5-5ee7f0a279be
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '529'
 ht-degree: 0%
 
 ---
-
 
 # Een aangepaste werkbalkactie {#creating-a-custom-toolbar-action} maken
 
@@ -29,11 +29,11 @@ Een adaptief formulier biedt een werkbalk waarmee een auteur van een formulier e
 
 ![Standaardwerkbalkhandelingen](assets/default_toolbar_actions.png)
 
-Naast de set met acties die standaard worden geleverd, kunt u aangepaste handelingen op de werkbalk maken. U kunt bijvoorbeeld een handeling toevoegen waarmee de gebruiker alle aangepaste formuliervelden kan bekijken voordat een formulier wordt verzonden.
+Naast de set met acties die standaard worden geleverd, kunt u aangepaste handelingen op de werkbalk maken. U kunt bijvoorbeeld een actie toevoegen waarmee de gebruiker alle aangepaste formuliervelden kan bekijken voordat een formulier wordt verzonden.
 
 ## Stappen om een aangepaste handeling in een aangepaste vorm {#steps} te maken
 
-Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalkactie illustreren. Zo kunt u een knop maken waarmee eindgebruikers alle aangepaste formuliervelden kunnen bekijken voordat ze een ingevuld formulier indienen.
+Aan de hand van de volgende stappen kunt u het maken van een aangepaste werkbalkactie illustreren door een knop te maken waarmee eindgebruikers alle adaptieve formuliervelden kunnen bekijken voordat ze een ingevuld formulier indienen.
 
 1. Alle standaardacties die door adaptieve formulieren worden ondersteund, bevinden zich in de map `/libs/fd/af/components/actions`. Kopieer in CRXDE de `fileattachmentlisting` knoop van `/libs/fd/af/components/actions/fileattachmentlisting` aan `/apps/customaction`.
 
