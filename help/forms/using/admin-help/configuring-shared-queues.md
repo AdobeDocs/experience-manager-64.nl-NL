@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: fc403a60-b635-4334-9bf8-2f3d2036b2f3
+exl-id: 40890db3-240c-4021-967a-b6b3eb1d4b7c
 translation-type: tm+mt
-source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '672'
 ht-degree: 0%
 
 ---
-
 
 # Gedeelde wachtrijen configureren{#configuring-shared-queues}
 
@@ -85,4 +85,3 @@ Zodra toegewezen, kunnen deze taken door de gebruiker worden voltooid gebruikend
 1. Zoek en selecteer op het tabblad Toegang beheren door gebruiker van wie u de wachtrij wilt beheren.
 1. In het rechterbenedendeelvenster wordt de lijst weergegeven met gebruikerswachtrijen die aan de geselecteerde gebruiker zijn toegewezen. Selecteer de gebruikerswachtrij en klik op Intrekken.
 1. Klik op Opslaan om te voltooien.
-
