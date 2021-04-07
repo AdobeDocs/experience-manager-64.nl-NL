@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: ebabecb9-91c4-4991-8f5b-d27f940d2ecb
+exl-id: b5ca864c-0895-4c83-a8f6-1913452b1b01
 translation-type: tm+mt
-source-git-commit: 7c65752a969d9089ad61c29b0581327d32e022d1
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1082'
 ht-degree: 0%
 
 ---
-
 
 # Werken met de AEM Forms-werkruimte {#working-with-aem-forms-workspace}
 
