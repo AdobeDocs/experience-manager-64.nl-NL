@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 86349e4d-29ff-4baa-9fcd-c0ab1f0753e9
-role: Beheerder
+role: Administrator
+exl-id: 136c0913-c8b8-451d-bb28-3c3285c172a1
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '799'
+source-wordcount: '798'
 ht-degree: 0%
 
 ---
-
 
 # ASRP - Adobe Storage Resource Provider {#asrp-adobe-storage-resource-provider}
 
@@ -163,4 +163,3 @@ Ga bij alle auteur- en publiceer AEM naar de opslagconfiguratieconsole of contro
 
    * Bevat geen [srpc](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc)-knooppunt, het betekent dat de opslagprovider JSRP is
    * Als het srpc-knooppunt bestaat en knooppunt [default configuration](http://localhost:4502/crx/de/index.jsp#/etc/socialconfig/srpc/defaultconfiguration) bevat, moeten de eigenschappen van de standaardconfiguratie ASRP definiëren als de standaardprovider
-
