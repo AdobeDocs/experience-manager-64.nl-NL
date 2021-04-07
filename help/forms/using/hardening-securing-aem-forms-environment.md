@@ -6,15 +6,15 @@ seo-description: Leer aanbevelingen en beste praktijken voor het beveiligen van 
 uuid: abca7e7c-38c3-44f5-8d8a-4615cfce26c6
 topic-tags: Security
 discoiquuid: b1bd04bf-0d6d-4e6b-8c7c-eafd1a24b5fe
-role: Beheerder
+role: Administrator
+exl-id: ba3b380a-b391-44a0-884b-e57c3cb14013
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1464'
+source-wordcount: '1463'
 ht-degree: 0%
 
 ---
-
 
 # Verharden en beveiligen van AEM formulieren in OSGi-omgeving {#hardening-and-securing-aem-forms-on-osgi-environment}
 
