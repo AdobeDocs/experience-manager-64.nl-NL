@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: authoring
 content-type: reference
 discoiquuid: 88ee8573-58c4-42cd-8e36-2ea4a0d654e4
+exl-id: e03cf05c-2469-4883-ae7b-9d7e6660b71f
 translation-type: tm+mt
-source-git-commit: 8c66f2b0053882bd1c998d8e01dbb0573881bc87
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '860'
 ht-degree: 0%
 
 ---
-
 
 # Berichtenonderdeel {#messaging-feature}
 
@@ -189,4 +189,3 @@ Als deze optie is ingeschakeld, wordt het gebruik van een tekstvak met aangepast
 
 * **[!UICONTROL Timestamp patterns]**
 Geef tijdstempelpatronen op voor een of meer talen. Standaard is dit voor en, de, fr, it, es, ja, zh_CN, ko_KR.
-
