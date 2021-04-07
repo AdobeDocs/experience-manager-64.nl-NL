@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 7d494c2e-d457-4d52-89be-a77ffa07eb88
 feature: Adaptive Forms, Adobe Sign
+exl-id: e7c27623-a889-4bd5-bfff-cfe513cd1a35
 translation-type: tm+mt
-source-git-commit: 5944eab0bf38551970685eaa98d90c4459720245
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '961'
 ht-degree: 0%
 
 ---
-
 
 # Adobe Sign integreren met AEM Forms {#integrate-adobe-sign-with-aem-forms}
 
