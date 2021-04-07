@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_workspace
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c2b3a412-70c2-4257-bfb4-1430bb1f8891
+exl-id: 7ddd5a4d-2b46-4408-b241-81e16cfead3c
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '206'
 ht-degree: 0%
 
 ---
-
 
 # Het bericht van de dag instellen {#setting-the-message-of-the-day}
 
@@ -47,4 +47,3 @@ Zie de definitie van de eigenschap `htmlText` voor de klasse TextField in de [Fl
 >[!NOTE]
 >
 >De Flex-werkruimte is verouderd voor AEM formulierrelease.
-
