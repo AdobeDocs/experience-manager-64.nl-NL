@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 9cadec1b-f435-4fd8-b4bc-1a23a0cf11f3
+exl-id: 415efbe0-95f5-4c9e-ac33-c4a384a8271e
 translation-type: tm+mt
-source-git-commit: 1ebe1e871767605dd4295429c3d0b4de4dd66939
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '920'
 ht-degree: 0%
 
 ---
-
 
 # Uw interface selecteren{#selecting-your-ui}
 
@@ -175,6 +175,5 @@ De instellingen die door een gebruiker of systeembeheerder zijn gedefinieerd, ku
 >* Beide editors tegelijk openen, bijvoorbeeld in afzonderlijke vensters.
 
 >
-
 
 
