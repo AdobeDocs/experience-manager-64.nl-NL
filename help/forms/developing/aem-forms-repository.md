@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: d2c95881-6c02-4e34-85af-84607df54287
 role: Developer
+exl-id: e006c32b-edff-40f2-8c0a-228008dcf03a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '9151'
+source-wordcount: '9150'
 ht-degree: 0%
 
 ---
-
 
 # Werken met AEM Forms Repository {#working-with-aem-forms-repository}
 
