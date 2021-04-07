@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: f5cb0e98-0d6e-4f14-9b94-df1a9d8cbe5b
+exl-id: a2adc825-2a18-42b8-a639-c48243b2279c
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '490'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve sjabloonrendering{#adaptive-template-rendering}
 
@@ -82,4 +82,3 @@ In ons voorbeeld wordt bij het bewerken van een pagina op basis van de sjabloon 
 De pagina kan ook rechtstreeks worden aangeroepen met deze kiezer.
 
 ![chlimage_1-161](assets/chlimage_1-161.png)
-
