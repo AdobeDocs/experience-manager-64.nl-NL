@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: ba674a2d-7c78-430e-8e17-1a18619e71cb
 feature: Adaptieve Forms
+exl-id: 7e37401a-8c63-4711-8a33-61e6bd4b419f
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '300'
 ht-degree: 0%
 
 ---
-
 
 # Scheidingscomponent in adaptieve vormen {#separator-component-in-adaptive-forms}
 
@@ -36,4 +36,3 @@ Eigenschappen van een scheidingscomponent opgeven:
 1. Klik **Add Punt** om een ander bezit en zijn waarde te specificeren.
 1. Klik op **Voorvertoning** om een voorvertoning van de wijzigingen in het formulier weer te geven.
 1. Klik **OK** om de wijzigingen te bevestigen of **Annuleren **om het dialoogvenster zonder wijzigingen af te sluiten.
-
