@@ -10,14 +10,14 @@ topic-tags: configuring
 content-type: reference
 discoiquuid: d701e4ba-417f-4b57-b103-27fd25290736
 feature: Configureren
+exl-id: 977d07d2-36cf-4799-bcfe-991cf89a612a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2014'
 ht-degree: 0%
 
 ---
-
 
 # Het vormen OSGi{#configuring-osgi}
 
@@ -370,4 +370,3 @@ Als u alle configuratieknooppunten in uw instantie wilt weergeven, gebruikt u de
 >U moet de mappen of bestanden onder ***nooit*** bewerken:
 >
 >`/crx-quickstart/launchpad/config`
-
