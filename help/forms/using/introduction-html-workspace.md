@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7efc8ad6-2bb1-41a6-ac0b-7f8ddddbf2a6
+exl-id: d60462a7-b941-4d0c-b6c5-20289d553a25
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '226'
 ht-degree: 0%
 
 ---
-
 
 # Inleiding tot de AEM Forms-werkruimte {#introduction-to-aem-forms-workspace}
 
@@ -32,4 +32,3 @@ De AEM Forms-werkruimte is compatibel met meer apparaten en formulierfactoren. H
 * U kunt de werkruimtecomponenten eenvoudig integreren met uw webtoepassingen. Aangezien de werkruimte van AEM Forms op componenten-gebaseerde software is, kan het gemakkelijk worden aangepast en worden opnieuw gebruikt.
 * Breid bedrijfsprocessen uit naar zowel online als offline mobiele workers met de AEM Forms-werkruimte-app.
 * De rapporten van de mening om achterstand, werkrijen, en zeer belangrijke prestatiesindicatoren (KPIs) te controleren. U kunt API&#39;s gebruiken om gegevens te extraheren voor verdere analyse met behulp van rapportagetools van derden.
-
