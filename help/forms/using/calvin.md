@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: adaptive_forms, develop
 discoiquuid: 2daf95b6-bf72-4191-bdb7-e17e76b166f3
 feature: Adaptieve Forms
+exl-id: d7406206-d63a-48da-bb95-e62db0f2c8a5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1259'
 ht-degree: 1%
 
 ---
-
 
 # Automatisch testen van adaptieve formulieren {#automate-testing-of-adaptive-forms}
 
@@ -337,4 +337,3 @@ De stappen voor het testen van uw AEM adaptieve formulieren zijn vergelijkbaar m
   </tr> 
  </tbody> 
 </table>
-
