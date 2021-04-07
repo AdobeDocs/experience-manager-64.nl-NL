@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 4df5ee77-5a77-4efd-b7e1-c78e650673a9
 feature: Adaptieve Forms
+exl-id: f63478c5-1798-428e-a662-f3db692b27fc
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2031'
 ht-degree: 0%
 
 ---
-
 
 # Adaptieve formulierfragmenten {#adaptive-form-fragments}
 
