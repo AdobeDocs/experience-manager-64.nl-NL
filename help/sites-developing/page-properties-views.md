@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: extending-aem
 content-type: reference
 discoiquuid: 6f8e08d1-831e-441a-ad1a-f5c8788f32d7
+exl-id: 25dad368-8227-424d-960b-1664d8e20a21
 translation-type: tm+mt
-source-git-commit: b4fa2d443f43cdfbf5caca4da7dcb935d099b795
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '499'
 ht-degree: 1%
 
 ---
-
 
 # Weergaven van pagina-eigenschappen aanpassen{#customizing-views-of-page-properties}
 
