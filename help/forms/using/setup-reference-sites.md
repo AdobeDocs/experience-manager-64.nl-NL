@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: introduction
 discoiquuid: 2feb4a9c-57ad-4c6b-a572-0047bc409bbb
+exl-id: 9c5d956c-06bc-4428-afcd-02b4f81b802f
 translation-type: tm+mt
-source-git-commit: 6a8fa45ec61014acebe09048066972ecb1284641
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2752'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms-referentiesites instellen en configureren {#set-up-and-configure-aem-forms-reference-sites}
 
@@ -392,4 +392,3 @@ Nu bent u allen klaar om de verwijzingsplaats te onderzoeken. Zie voor meer info
 * [We.Gov-referentiesite doorloopt](/help/forms/using/gov-reference-site-walkthrough.md)
 
 * [Werknemerslijst voor zelfbedieningsverwijzingssite](/help/forms/using/employee-self-service-reference-site.md)
-
