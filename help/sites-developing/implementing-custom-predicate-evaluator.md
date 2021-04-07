@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: platform
 content-type: reference
 discoiquuid: 08bdade7-fdad-445d-80fe-8fc06596dace
+exl-id: afa7f346-fefa-4faa-bf2d-7480a7e5a5ee
 translation-type: tm+mt
-source-git-commit: 15bea340f3ba7d5a315d71932e521ad1f1a40073
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '795'
 ht-degree: 0%
 
 ---
-
 
 # Het uitvoeren van een Evaluator van de Predicatie van de Douane voor de Bouwer van de Vraag{#implementing-a-custom-predicate-evaluator-for-the-query-builder}
 
@@ -108,7 +108,7 @@ Het groeperen van replicatiemagegevens predikt met een douane predikaat evaluato
 >
 >De opstelling van nieuwe AEM die maven gebruiken wordt gedocumenteerd door [Hoe te AEM Projecten bouwen gebruikend Apache Maven](/help/sites-developing/ht-projects-maven.md).
 
-Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. De `PredicateEvaluator` maakt deel uit van het `cq-search` artefact zodat moet het aan uw Gepompdossier van Maven worden toegevoegd.
+Eerst moet u de Geweven gebiedsdelen van uw project bijwerken. De `PredicateEvaluator` maakt deel uit van het `cq-search` artefact zodat moet het aan uw Maven pom dossier worden toegevoegd.
 
 >[!NOTE]
 >
