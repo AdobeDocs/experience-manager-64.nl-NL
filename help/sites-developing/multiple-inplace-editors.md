@@ -2,14 +2,14 @@
 title: Vorm RTE voor veelvoudige op zijn plaats redacteurs.
 description: U kunt meerdere lokale editors maken in Adobe Experience Manager door de Rich Text Editor te configureren.
 contentOwner: AG
+exl-id: 8537582c-7e48-4a93-b93c-9187400e264d
 translation-type: tm+mt
-source-git-commit: 44e7afdd5a5738dde73ab1d05a1c83a4bb24df92
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '445'
 ht-degree: 2%
 
 ---
-
 
 # Meerdere lokale editors configureren {#configure-multiple-in-place-editors}
 
