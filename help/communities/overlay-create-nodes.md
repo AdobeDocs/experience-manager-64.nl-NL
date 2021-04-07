@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: cd4f53ee-537b-4f10-a64f-474ba2c44576
+exl-id: fc044a4e-0037-405f-8c26-b388c6a98733
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '260'
 ht-degree: 4%
 
 ---
-
 
 # Knooppunten {#create-nodes} maken
 
@@ -99,4 +99,3 @@ De eigen `Type` (eigenschap `sling:resourceType`) van de overlay moet een relati
    * Selecteer **[!UICONTROL Save All]**
 
 ![chlimage_1-4](assets/chlimage_1-4.png)
-
