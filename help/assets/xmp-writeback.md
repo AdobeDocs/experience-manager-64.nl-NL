@@ -3,15 +3,15 @@ title: Terugverwijzing naar vertoningen XMP
 description: Leer hoe de functie XMP terugschrijven de metagegevenswijzigingen voor een element doorgeeft aan alle of aan specifieke uitvoeringen van het element.
 contentOwner: AG
 feature: Metagegevens
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: 456f8c91-aacf-4db5-a329-2d1650ff0f2f
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '719'
+source-wordcount: '716'
 ht-degree: 2%
 
 ---
-
 
 # Terugverwijzing naar vertoningen XMP {#xmp-writeback-to-renditions}
 
@@ -66,7 +66,7 @@ De meta-gegevensveranderingen worden verspreid aan de vertoningen `thumbnail.140
 
 ## XMP metagegevens filteren {#filtering-xmp-metadata}
 
-[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden opgenomen.
+[!DNL Experience Manager Assets] ondersteunt zowel het filteren van lijsten van gewezen personen als lijsten van gewenste personen van eigenschappen/knooppunten voor XMP metagegevens die worden gelezen van binaire elementen en worden opgeslagen in JCR wanneer elementen worden ingeslikt.
 
 Als u filtert met een lijst van gewezen personen, kunt u alle eigenschappen van XMP metagegevens importeren, behalve de eigenschappen die voor uitsluiting zijn opgegeven. Voor elementtypen zoals INDD-bestanden met grote hoeveelheden XMP metagegevens (bijvoorbeeld 1000 knooppunten met 10.000 eigenschappen) zijn de namen van knooppunten die moeten worden gefilterd niet altijd van tevoren bekend. Als het filtreren gebruikend een lijst van gewezen personen een groot aantal activa met talrijke XMP meta-gegevens om toelaat worden ingevoerd, kan de AEM instantie of de cluster stabiliteitskwesties, bijvoorbeeld verstopte observatierijen ontmoeten.
 
