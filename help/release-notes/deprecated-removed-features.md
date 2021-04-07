@@ -1,14 +1,14 @@
 ---
 title: Verouderde en verwijderde functies
 description: Opmerkingen bij de release die specifiek betrekking hebben op vervangen en verwijderde functies in Adobe Experience Manager 6.4.
+exl-id: 2fe0dad7-fc78-4aac-afa3-79a278008453
 translation-type: tm+mt
-source-git-commit: 5b00783e4471a6b142ab17a7bc4a647ab04aec5f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1281'
 ht-degree: 3%
 
 ---
-
 
 # Vervangen en verwijderde functies {#deprecated-and-removed-features}
 
