@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: developing-adobe-phonegap-enterprise
 discoiquuid: fec86f03-f81e-460a-9f84-d6304c95128c
+exl-id: b438ffe7-22b0-4bf8-bcfd-0b706d4c39fd
 translation-type: tm+mt
-source-git-commit: 8078976ab79ccc0fefac5bfe6b000a008a917489
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1430'
 ht-degree: 0%
 
 ---
-
 
 # Out of the Box App Handlers{#out-of-the-box-app-handlers}
 
@@ -169,7 +169,7 @@ AEM eigenschappen zijn de eigenschappen met naamruimte &quot;cq&quot;, &quot;sli
 
 * ***type - String***  - app-assets
 
-* ***path **-**String*** - path to a location under an app instance where app assets.
+* ***path **-**String*** - path to a location under a app instance where app assets (pad naar een locatie onder een app-instantie waarin app assets zijn opgeslagen)
 
 **** mobileappoffersEr is een nieuwe handler voor contentsynchronisatie geïntroduceerd voor het gebruik van personalisatie om doelinhoud te renderen. De handler &#39;mobileappoffers&#39; weet hoe de gekoppelde doelaanbiedingen die door de auteur van de inhoud zijn gemaakt, moeten worden weergegeven. De handler mobileappoffers breidt de handler voor abstracte pagina&#39;s bijwerken uit, zodat veel eigenschappen vergelijkbaar zijn. De details van de handler mobileappoffers hebben de volgende eigenschappen.
 
@@ -215,4 +215,3 @@ Meer informatie over de rollen en verantwoordelijkheden van een Beheerder en Ont
 >[!NOTE]
 >
 >Klik [hier](/help/mobile/getting-started-aem-mobile.md) om aan de slag te gaan met de ontwikkeling van AEM Mobile-apps.
-
