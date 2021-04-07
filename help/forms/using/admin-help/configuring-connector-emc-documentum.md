@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: e62370a7-9d9e-43a3-8014-8e53800c870d
+exl-id: 86cc01f0-b6c0-4beb-a203-96dc1989d8f0
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1047'
 ht-degree: 1%
 
 ---
-
 
 # Connector configureren voor EMC Documentum {#configuring-connector-for-emc-documentum}
 
@@ -62,7 +62,7 @@ Als u een onjuiste gebruikersnaam of een onjuist wachtwoord invoert, krijgt u de
 
 U kunt configureren welke repository service provider moet worden gebruikt met Documentum. De de dienstvraag van de bewaarplaats wordt gedelegeerd aan de leverancier u vormt. De volgende opties zijn beschikbaar:
 
-**Huidige naam van leverancier van opslagplaats:** de naam van de huidige aanbieder van opslagplaats
+**Huidige naam leverancier van opslagplaats:** de naam van de huidige aanbieder van opslagplaats
 
 **ECM Documentum Repository Provider:** Maakt van de Documentum repository provider de provider voor de repository. Deze optie is vervangen
 
@@ -117,4 +117,3 @@ Er zijn enkele handmatige stappen vereist om ervoor te zorgen dat de functie Ver
 1. Open in de weergave Variabelen de eigenschappen van de variabele &quot;theForm&quot; en wijzig de URI zodat deze overeenkomt met het pad waar u het bestand QueueSharing.swf in stap 5 hebt geplaatst.
 1. Sla het proces op.
 1. Migreer het proces naar de productieomgeving volgens het beleid van uw organisatie.
-
