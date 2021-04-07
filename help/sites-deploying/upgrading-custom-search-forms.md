@@ -10,14 +10,14 @@ topic-tags: upgrading
 content-type: reference
 discoiquuid: a08cee9c-e981-4483-8bdc-e6353977f854
 feature: Bijwerken
+exl-id: f55e2fe7-04ac-4368-b580-b8950d90548e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1710'
 ht-degree: 0%
 
 ---
-
 
 # Aangepast zoeken in Forms upgraden{#upgrading-custom-search-forms}
 
