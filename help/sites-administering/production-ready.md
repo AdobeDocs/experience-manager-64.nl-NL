@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: Security
 content-type: reference
 discoiquuid: 32da99f0-f058-40ae-95a8-2522622438ce
+exl-id: 2ab55a72-2eb2-49dc-8716-0a8a4d0c4b73
 translation-type: tm+mt
-source-git-commit: 87729e62bf9c1e9e943b6b6cf97cb40d3b0ed774
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '398'
 ht-degree: 3%
 
 ---
-
 
 # AEM uitvoeren in productieklaar{#running-aem-in-production-ready-mode}
 
@@ -76,4 +76,3 @@ Meer specifiek, zullen de volgende configuratieveranderingen worden uitgevoerd w
 | XML-uitvoering | uitgeschakeld | uitgeschakeld |
 | json.maximumresults | 1000 | 100 |
 | Automatische index | uitgeschakeld | uitgeschakeld |
-
