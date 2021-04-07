@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 3efd8f5a-9f38-4d9b-88d6-d8fde6c9a644
 feature: Correspondentenbeheer
+exl-id: 63cd01d2-a0d5-4f85-b9d2-ec3007ce3fa9
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1108'
 ht-degree: 0%
 
 ---
-
 
 # Aanpassen om correspondentie-UI {#customize-create-correspondence-ui} te maken
 
@@ -179,4 +179,3 @@ Wis de browsercache en open vervolgens de instantie Correspondentie-UI maken in 
 
 ![E-mailgebruikersinterface maken met aangepast ](assets/0_1_introscreenshot-1.png)
 **logoFigure:** *Het aangepaste pictogram in de interface Correspondentie maken*
-
