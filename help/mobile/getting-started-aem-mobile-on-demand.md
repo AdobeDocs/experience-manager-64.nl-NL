@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/MOBILE
 topic-tags: introduction
 content-type: reference
 discoiquuid: dc6891cd-19cc-4dff-8bda-a41ed8af8bfb
+exl-id: 0bd0040d-6890-4b5e-b6bd-5b235408ba23
 translation-type: tm+mt
-source-git-commit: 6c453c9497575a4be0172b86295186c74d0e50f5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '804'
 ht-degree: 0%
 
 ---
-
 
 # AEM Mobile On-Demand{#aem-mobile-on-demand}
 
@@ -90,7 +90,7 @@ Om met de rollen en de verantwoordelijkheden van de Ontwikkelaar te beginnen, zi
 
 >[!NOTE]
 >
->De rol *AEM ontwikkelaar* begint en eindigt niet met de ontwikkeling van sjablonen en componenten. Een *AEM ontwikkelaar* kan een volledig nieuwe app creëren eerder dan eenvoudig het uit-van-de-doos steekproef van de verwijzingsimplementatie uit te breiden.
+>De rol *AEM ontwikkelaar* begint en eindigt niet met de ontwikkeling van sjablonen en componenten. Met een *AEM ontwikkelaar* kunt u een geheel nieuwe app maken in plaats van alleen maar de voorbeeldcode van de kant-en-klare referentie-implementatie uit te breiden.
 
 ## AEM-auteur {#aem-author}
 
@@ -109,4 +109,3 @@ Zie [AEM Inhoud ontwerpen voor AEM Mobile On-demand Services App](/help/mobile/m
 >[!NOTE]
 >
 >Een AEM-auteur is ook verantwoordelijk voor het instellen van machtigingen, het maken van kaarten en lay-outs en het verzenden van pushberichten. Voor meer informatie over methoden voor het ontwerpen van inhoud. het beheren van voorwerpen en verzamelingen; het creëren van banners, kaarten, en lay-outs in AEM Mobile, zie [AEM Mobile On-Demand Portal](https://helpx.adobe.com/digital-publishing-solution/topics.html#dynamicpod_reference_2).
-
