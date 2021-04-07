@@ -8,15 +8,15 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-manager
 discoiquuid: 2a8f4380-8d0f-4354-b2da-4e0c02a545e3
-role: Beheerder
+role: Administrator
+exl-id: 6c989701-10c7-466e-b3e5-008a6d377574
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '408'
+source-wordcount: '407'
 ht-degree: 0%
 
 ---
-
 
 # Nieuwe mappen maken om formulieren {#create-new-folders-to-categorize-forms} te categoriseren
 
@@ -57,4 +57,3 @@ U kunt op een van de volgende manieren een map maken in AEM Forms:
 1. Klik op het pictogram ![aem6forms_edit](assets/aem6forms_edit.png) op de werkbalk.
 1. Voer de nieuwe titel in. Het tekstveld wordt vooraf gevuld met de huidige waarde van de maptitel. U kunt de waarde wijzigen in een nieuwe waarde.
 1. Klik op **[!UICONTROL Submit].**
-
