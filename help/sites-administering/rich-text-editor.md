@@ -2,14 +2,14 @@
 title: De Rich Text Editor configureren
 description: Leer om de AEM Rich Text Editor te vormen.
 contentOwner: AG
+exl-id: 2d5e9ada-1567-43dc-ab19-6891e20e1d0b
 translation-type: tm+mt
-source-git-commit: 7849a3e2d9d8241382652fb1c8e6e302ffd853e0
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2661'
 ht-degree: 0%
 
 ---
-
 
 # De Rich Text Editor {#configure-the-rich-text-editor} configureren
 
