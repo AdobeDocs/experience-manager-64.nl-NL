@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: spa
 content-type: reference
 discoiquuid: d9f1e24e-51a9-4f28-b2cd-2e97aed63a24
+exl-id: 865f524d-6b54-43c8-9b28-86a766e010a1
 translation-type: tm+mt
-source-git-commit: 04a369c5eb4c0cb87f3dae8cd4360678315ebe2a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '527'
 ht-degree: 0%
 
 ---
-
 
 # SPA Model Routering{#spa-model-routing}
 
@@ -26,7 +26,7 @@ Voor toepassingen van één pagina in AEM, is app verantwoordelijk voor het verp
 >
 >De eigenschap van de Redacteur van de Toepassing van de enig-Pagina (SPA) vereist AEM 6.4 de dienstpak 2 of nieuwer.
 >
->De SPA Editor is de aanbevolen oplossing voor projecten die SPA op raamwerk gebaseerde renderen aan de clientzijde vereisen (bijvoorbeeld Reageren of Hoekig).
+>De SPA Redacteur is de geadviseerde oplossing voor projecten die SPA kader gebaseerde cliënt-zijteruggeven (b.v. Reageren of Angular) vereisen.
 
 ## Projectroutering {#project-routing}
 
@@ -46,7 +46,7 @@ Met `ModelRouter` worden fragmenten van het model automatisch opgehaald. Maar zo
 
 >[!NOTE]
 >
->Momenteel illustreert het steekproefReact project van het Dagboek Wij.Retail van het Dagboek de geautomatiseerde benadering terwijl het Hoekproject handboek illustreert. Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
+>Momenteel illustreert het wij.Retail project van het Dagboek steekproefReact de geautomatiseerde benadering terwijl het project van de Angular handboek illustreert. Een semi-geautomatiseerde benadering zou ook een geldige gebruikscase zijn.
 
 >[!CAUTION]
 >
@@ -66,7 +66,7 @@ Dit gedrag wordt standaard automatisch ingeschakeld. Om het onbruikbaar te maken
 <meta property="cq:pagemodel_router" content="disable"\>
 ```
 
-Merk op dat elke route van de SPA aan een toegankelijke bron in AEM (b.v., &quot; `/content/mysite/mypage"`) zou moeten beantwoorden aangezien `PageModelManager` automatisch zal proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Desondanks, indien nodig, kan de SPA een &quot;lijst van afgewezen personen&quot;van routes ook bepalen die door `PageModelManager` moeten worden genegeerd:
+Merk op dat elke route van de SPA aan een toegankelijke bron in AEM (b.v., &quot; `/content/mysite/mypage"`) zou moeten beantwoorden aangezien `PageModelManager` automatisch zal proberen om het overeenkomstige paginamodel te laden zodra de route wordt geselecteerd. Desondanks, indien nodig, kan de SPA een &quot;lijst van gewezen personen&quot;van routes ook bepalen die door `PageModelManager` moeten worden genegeerd:
 
 ```
 <meta property="cq:pagemodel_route_filters" content="route/not/found,^(.*)(?:exclude/path)(.*)"/>
