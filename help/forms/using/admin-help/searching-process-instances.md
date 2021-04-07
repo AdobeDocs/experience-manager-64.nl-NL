@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_forms_workflow
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 88b634bb-8f6c-4830-ad01-821668609615
+exl-id: 25a01630-47ec-4823-ad11-9a636697f3dc
 translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '467'
 ht-degree: 0%
 
 ---
-
 
 # Zoeken naar procesinstanties{#searching-for-process-instances}
 
