@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: bdd9bb56-14f6-448b-be4a-7c11f670e901
 role: Developer
+exl-id: af0cb623-c29c-4b9e-9ffd-736047a45b8d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '289'
+source-wordcount: '288'
 ht-degree: 0%
 
 ---
-
 
 # Converteer PDF-service Java API Quick Start (SOAP) {#convert-pdf-service-java-api-quickstart-soap}
 
@@ -282,4 +282,3 @@ In het volgende Java-codevoorbeeld wordt een PDF-document met de naam *Loan.pdf*
      } 
  }
 ```
-
