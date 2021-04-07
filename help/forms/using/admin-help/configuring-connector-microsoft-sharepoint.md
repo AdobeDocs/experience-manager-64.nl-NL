@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/connecting_to_a_content_management_system
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 0ec881c9-8dcc-4847-9edf-24d9e6c4a7ea
+exl-id: 9bd396a3-5da9-4355-ad76-e7132ac8aed8
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '232'
 ht-degree: 1%
 
 ---
-
 
 # Connector configureren voor Microsoft SharePoint {#configuring-connector-for-microsoft-sharepoint}
 
@@ -47,4 +47,3 @@ Met de Microsoft SharePoint-configuratieservice `(MSSharePointConfigService)` ku
    * Wachtwoord voor bovenstaande gebruiker
 
 1. Klik op Opslaan.
-
