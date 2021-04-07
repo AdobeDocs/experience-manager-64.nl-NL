@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: 8bd67d71-bcb7-4ca0-9751-3ff3ee054011
 feature: Taalkopie
+exl-id: 1a7fe230-093b-4d2b-95cb-f9479c0febe5
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '694'
 ht-degree: 0%
 
 ---
-
 
 # Inhoud voorbereiden voor vertaling{#preparing-content-for-translation}
 
@@ -92,4 +92,3 @@ In de volgende procedure wordt de geoptimaliseerde interface voor aanrakingen ge
    ![chlimage_1-24](assets/chlimage_1-24.png)
 
 1. Klik of tik in het venster Referenties op **Taalkopieën**. In het deelvenster Taalkopieën worden de taalkopieën van de website weergegeven.
-
