@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: operations
 content-type: reference
 discoiquuid: eb8bbb85-ca2f-4877-8ee0-bb1ee8b7d8de
+exl-id: bca6446f-bf3a-4f1d-8d58-be52f50e54e2
 translation-type: tm+mt
-source-git-commit: f1a5e4c5c8411e10887efab517115fee0fd1890a
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2295'
 ht-degree: 0%
 
 ---
-
 
 # Back-up en herstel{#backup-and-restore}
 
@@ -252,7 +252,7 @@ U kunt een back-up als volgt herstellen:
 
 ## Back-up van pakket {#package-backup}
 
-Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, waarmee u back-ups kunt maken van inhoud en deze weer kunt terugzetten. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
+Als u een back-up wilt maken van inhoud en deze wilt herstellen, gebruikt u een van de pakketbeheerprogramma&#39;s, die de indeling Inhoudspakket gebruiken om back-ups te maken van inhoud en deze te herstellen. Pakketbeheer biedt meer flexibiliteit bij het definiëren en beheren van pakketten.
 
 Zie [Werken met pakketten](/help/sites-administering/package-manager.md) voor meer informatie over de functies en voordelen van elk van deze afzonderlijke indelingen voor inhoudspakketten.
 
@@ -267,4 +267,3 @@ Wanneer u reservekopieën maakt van knooppunten met de functie Pakketbeheer of I
 Bij het maken van een back-up gaat AEM de volgende informatie verloren:
 
 * De versiegeschiedenis.
-
