@@ -5,14 +5,14 @@ description: AEM
 seo-description: AEM
 contentOwner: bohnert
 products: SG_EXPERIENCEMANAGER/6.4/SITES
+exl-id: fef17396-eed2-4c0b-a962-c1f2ae2c5d1d
 translation-type: tm+mt
-source-git-commit: 565dec566e02effb18b211a8691b2c694d8cae1e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '63'
 ht-degree: 0%
 
 ---
-
 
 # AEM {#troubleshooting-aem} oplossen
 
