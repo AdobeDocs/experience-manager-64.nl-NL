@@ -9,14 +9,14 @@ topic-tags: adaptive_forms, develop
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 6bd58e37-085e-4057-8200-1404d54f41cc
 feature: Adaptieve Forms
+exl-id: 5e2960f2-b172-48a7-bba3-4561a5f9c7bc
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '319'
 ht-degree: 0%
 
 ---
-
 
 # De toegang van de regelredacteur van de subsidie tot uitgezochte gebruikersgroepen {#grant-rule-editor-access-to-select-user-groups}
 
@@ -59,4 +59,3 @@ AEM Forms staat u toe om de toegang van de regelredacteur tot gebruikers te bepe
    De toolbar van Componenten zoals zichtbaar aan een gebruiker zonder de toegang van de regelredacteur
 
    Voor instructies bij het toevoegen van gebruikers aan groepen, zie [Gebruikersbeheer en Veiligheid](/help/sites-administering/security.md).
-
