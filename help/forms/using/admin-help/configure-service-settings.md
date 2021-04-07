@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_services
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 2fab4b0c-e5db-47cd-b85a-4ff5ad6eb178
+exl-id: be1f8c59-b5d8-4d87-af7b-1034d73e7e83
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '10710'
 ht-degree: 0%
 
 ---
-
 
 # Service-instellingen {#configure-service-settings} configureren
 
@@ -560,7 +560,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 **Intrekkingscontrole Volgorde:** geeft de volgorde van de intrekkingscontrole op wanneer controle mogelijk is via de mechanismen certificaatintrekkingslijst (CRL) en online certificaatstatusprotocol (OCSP). De standaardwaarde is OCSPFirst.
 
-**Maximale grootte archiefgegevens voor intrekking:** de maximale grootte van de archiefgegevens voor intrekking in kilobytes. AEM formulieren proberen zoveel mogelijk intrekkingsgegevens op te slaan zonder de limiet te overschrijden. De standaardwaarde is 10 kB.
+**Maximale grootte van archiefgegevens voor intrekking:** de maximale grootte van de archiefgegevens voor intrekkingen in kilobytes. AEM formulieren proberen zoveel mogelijk intrekkingsgegevens op te slaan zonder de limiet te overschrijden. De standaardwaarde is 10 kB.
 
 **Ondertekeningen ondersteunen die zijn gemaakt van PreRelease Builds of Adobe Products:** als deze optie is ingeschakeld, wordt een handtekening die is gemaakt met pre-releaseversie van Adobe-producten correct gevalideerd. De standaardwaarde is false.
 
@@ -674,7 +674,7 @@ De volgende instellingen zijn beschikbaar voor de service Handtekening.
 
 ### Opties voor foutafhandeling voor foutopsporing {#error-handling-options-for-debugging}
 
-**Leid Certificaatcache op volgende API-aanroep leeg:** Geeft aan of de Certificaatcache moet worden gewist wanneer de volgende Handtekeningsservice-bewerking wordt aangeroepen. Nadat de bewerking is aangeroepen, wordt deze optie teruggezet op false. De standaardwaarde is false.
+**Leid het Geheime voorgeheugen van het Certificaat op volgende API vraag:** Specificeert of om het Geheime voorgeheugen van het Certificaat te zuiveren wanneer de volgende Verrichting van de Dienst van de Handtekening wordt geroepen. Nadat de bewerking is aangeroepen, wordt deze optie teruggezet op false. De standaardwaarde is false.
 
 **Wis CRL Cache op volgende API-aanroep:** Geeft aan of de CRL-cache moet worden gewist wanneer de volgende Handtekeningsservice-bewerking wordt aangeroepen. Nadat de bewerking is aangeroepen, wordt deze optie teruggezet op false. De standaardwaarde is false.
 
@@ -868,7 +868,6 @@ Elke dienst kan uit de het groeperen mogelijkheden voordeel halen om inkomende a
 
    **Eén instantie voor alle verzoeken:** een service-instantie wordt gemaakt en in cache geplaatst wanneer de eerste aanvraag in de container komt. Elk verzoek na dat verzoek gebruikt de zelfde de dienstinstantie om het verzoek te behandelen.
 
-   **Nieuwe instantie voor elk verzoek:** Voor elke ontvangen oproep wordt een nieuwe serviceinstantie gemaakt.
+   **Nieuwe instantie voor elke aanvraag:er wordt** een nieuwe serviceinstantie gemaakt voor elke ontvangen aanroep.
 
 1. Klik op Opslaan.
-
