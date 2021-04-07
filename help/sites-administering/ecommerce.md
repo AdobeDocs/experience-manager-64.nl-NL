@@ -10,14 +10,14 @@ topic-tags: e-commerce
 content-type: reference
 discoiquuid: 68799110-8183-40fe-be4f-2a7c7a7b3018
 feature: Kader voor integratie in de handel
+exl-id: 3c046e16-5f54-4a16-aa5b-256b679808fa
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '779'
 ht-degree: 0%
 
 ---
-
 
 # eCommerce{#ecommerce}
 
@@ -139,4 +139,3 @@ In de sectie [Concepts](/help/sites-administering/concepts.md) wordt het framewo
 * Om de basismechanismen te verstrekken nodig om een aangepaste plaats van de Handel snel te realiseren.
 * Tp biedt de flexibiliteit die nodig is voor de ontwikkeling van een echte eCommerce-site.
 * Beste werkwijzen illustreren.
-
