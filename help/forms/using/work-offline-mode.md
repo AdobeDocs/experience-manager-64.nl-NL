@@ -1,21 +1,21 @@
 ---
 title: Werken in de offlinemodus
 seo-title: Werken in de offlinemodus
-description: Maak uw mobiele apparaat offline buiten uw AEM Forms-netwerkbereik of in een volledig offline modus en werk aan de AEM Forms-app
-seo-description: Maak uw mobiele apparaat offline buiten uw AEM Forms-netwerkbereik of in een volledig offline modus en werk aan de AEM Forms-app
+description: Maak uw mobiele apparaat offline buiten het AEM Forms-netwerkbereik of in een volledig offline modus en werk aan de AEM Forms-app
+seo-description: Maak uw mobiele apparaat offline buiten het AEM Forms-netwerkbereik of in een volledig offline modus en werk aan de AEM Forms-app
 uuid: b900a0f8-90ce-486a-bde6-6cdf11bd2801
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-app
 discoiquuid: 9a3c6ab4-8bb9-40c7-8c56-59153b364887
+exl-id: 14303b8f-40a7-4bc5-8282-7526e0319264
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '561'
 ht-degree: 0%
 
 ---
-
 
 # Werken in de offlinemodus {#working-in-the-offline-mode}
 
