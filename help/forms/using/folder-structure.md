@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 7427858d-8eec-423d-a0a9-444140420620
+exl-id: 192c436d-a507-4883-bd68-a6863a6664e0
 translation-type: tm+mt
-source-git-commit: f13d358a6508da5813186ed61f959f7a84e6c19f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '163'
 ht-degree: 0%
 
 ---
-
 
 # De mappenstructuur {#understanding-the-folder-structure}
 
@@ -39,4 +39,3 @@ De elementen voor alle componenten worden in de hieronder beschreven mapstructuu
 **** servicesContains de dienstinterface om de server APIs van Adobe Experience Manager op REST eindpunt te roepen.
 
 **** utilContains generische nut bruikbaar door veelvoudige componenten.
-
