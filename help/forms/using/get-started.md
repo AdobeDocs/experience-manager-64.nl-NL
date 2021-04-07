@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: f276d150-8936-4bfb-8475-7ca36815b233
 feature: Mobile Forms
+exl-id: b947d376-cde4-4fe4-9444-bcb03968dbf6
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '252'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met HTML5-formulieren {#getting-started-with-html-forms}
 
@@ -33,4 +33,3 @@ Nadat u AEM hebt geïnstalleerd, voert u de volgende stappen uit om Mobile Forms
 * **AEM Forms-add-on-pakket instellen en implementeren:AEM Forms-add-on-pakket** installeren om Mobile Forms in te schakelen. Zie [AEM Forms installeren en configureren](/help/forms/using/installing-configuring-aem-forms-osgi.md) voor informatie over het installeren van het invoegpakket voor AEM Forms.
 
 * **Mobiele Forms importeren:** importeer uw formulieren vanuit uw lokale bestandssysteem naar de CRX-opslagplaats. Zie [XDP- en PDF-documenten ophalen in AEM Forms](/help/forms/using/get-xdp-pdf-documents-aem.md) voor gedetailleerde informatie.
-
