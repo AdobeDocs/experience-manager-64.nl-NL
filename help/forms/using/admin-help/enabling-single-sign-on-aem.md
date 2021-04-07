@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ee54d9d4-190d-4665-925a-9740ac65fbd5
+exl-id: ac56a1db-593e-4996-84ec-c9e6d1256059
 translation-type: tm+mt
-source-git-commit: ccf4f4232d6a7af0781480106526c4c6fcb7c40e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1538'
 ht-degree: 0%
 
 ---
-
 
 # Single Sign-On inschakelen in AEM formulieren{#enabling-single-sign-on-in-aem-forms}
 
@@ -169,4 +169,3 @@ Als de server wordt betreden door de computernaam te gebruiken, zoals https://lc
    `lcserver.um.lc.com` - Vormt Firefox om SPNEGO voor uw specifieke server slechts toe te staan. Begin deze waarde niet met een punt (&quot;.&quot;).
 
 1. Test de configuratie door de toepassing te openen. De welkomstpagina voor de doeltoepassing moet worden weergegeven.
-
