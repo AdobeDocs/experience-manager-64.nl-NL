@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: e4ca8188-fb9a-44bf-8437-a98abaa7521a
+exl-id: 9968f399-454b-4cb2-b6af-2c16428ca7b4
 translation-type: tm+mt
-source-git-commit: 1b6f00462cc0d7b90af033d59e68fbaabe020064
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '588'
 ht-degree: 0%
 
 ---
-
 
 # De landinstelling van de gebruikersinterface van de AEM Forms-werkruimte wijzigen {#changing-the-locale-of-aem-forms-workspace-user-interface}
 
