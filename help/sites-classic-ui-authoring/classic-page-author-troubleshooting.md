@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: page-authoring
 content-type: reference
 discoiquuid: 9b492b17-9029-46ae-9dc0-bb21e6b484df
+exl-id: 09409631-c579-4b1f-9193-1348896f6a09
 translation-type: tm+mt
-source-git-commit: 02aee2202a570320cd7eb40c2e566d886af4e163
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '455'
 ht-degree: 6%
 
 ---
-
 
 # AEM oplossen bij ontwerpen{#troubleshooting-aem-when-authoring}
 
@@ -87,4 +87,3 @@ De volgende sectie behandelt sommige kwesties die u wanneer het gebruiken van AE
    * Deze definities kunnen met de configuratie voor **De Vondst van CQ WCM Servlet vervangen** gebruikend **Webconsole** veranderen; bijvoorbeeld bij
 
       `http://localhost:4502/system/console/configMgr`
-
