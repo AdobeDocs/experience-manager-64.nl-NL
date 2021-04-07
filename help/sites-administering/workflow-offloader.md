@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 91f0fd7d-4b49-4599-8f0e-fc367d51aeba
+exl-id: 2ca8e786-042b-44f6-ac60-834eca64f79f
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '601'
 ht-degree: 0%
 
 ---
-
 
 # Offloader voor werkstroom van middelen{#assets-workflow-offloader}
 
@@ -99,4 +99,3 @@ Schakel de workflowdraagprogramma&#39;s uit die de **DAM Update Asset**-workflow
    ![chlimage_1-57](assets/chlimage_1-57.png)
 
 1. Upload elk element van het type afbeelding bij de instantie leader. Verifieer de duimnagels die voor de activa door de geverschuiven instantie worden geproduceerd en worden teruggevoerd.
-
