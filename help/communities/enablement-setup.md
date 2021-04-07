@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: introduction
 content-type: reference
 discoiquuid: f2ac3d66-cc79-498f-83fb-dd96feb88de2
+exl-id: 92c95cb5-fdbf-4200-89a8-10c768e4bc25
 translation-type: tm+mt
-source-git-commit: 1bbd917ef20c4a618e93af66ffe8a6cfc8448e78
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '857'
 ht-degree: 0%
 
 ---
-
 
 # Eerste instelling voor activering {#initial-setup-for-enablement}
 
@@ -62,7 +62,7 @@ Om deze zelfstudie te volgen, is het nodig om enablement](enablement.md) correct
 
 ## Analyses {#configure-analytics} configureren
 
-Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md), is meer informatie beschikbaar in de [rapporten](reports.md) die worden gegenereerd op actiemiddelen en leerpaden die zijn toegewezen aan leden van de community (studenten).
+Wanneer [Adobe Analytics is geconfigureerd voor de communitysite](analytics.md), is meer informatie beschikbaar in de [reports](reports.md) gegenereerd op actiemiddelen en leerpaden toegewezen aan leden van de community (studenten).
 
 ## E-mail voor meldingen configureren {#configure-email-for-notifications}
 
@@ -110,7 +110,7 @@ Voor een community-site voor activering mogen sitebezoekers zich niet [zelf regi
 
 In plaats daarvan, met [tunneldienst](#enable-the-tunnel-service) toegelaten, wordt [Leden console](members.md) gebruikt om nieuwe leden in het publicatiemilieu te registreren.
 
-In deze zelfstudie worden drie leden gemaakt in de publicatieomgeving. Twee leden zullen lid van een gebruikersgroep worden die aan een het leren weg wordt toegewezen, terwijl het derde lid een contactpunt van het enablement middel wordt.
+In deze zelfstudie worden drie leden gemaakt in de publicatieomgeving. Twee leden zullen lid van een gebruikersgroep worden die aan een het leren weg wordt toegewezen, terwijl het derde lid een het middelcontact van het toelaat wordt.
 
 Een vierde gebruiker wordt gecreeerd in het auteursmilieu en toegewezen de rollen van de Beheerder van de Gemeenschappen en Communautaire Manager van Enablement.
 
@@ -217,4 +217,3 @@ Omlaag schuiven naar `Add User to Groups`:
 * Selecteer **[!UICONTROL Save]**
 
 ![chlimage_1-419](assets/chlimage_1-419.png)
-
