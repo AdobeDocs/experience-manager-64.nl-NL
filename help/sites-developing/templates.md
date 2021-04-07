@@ -10,14 +10,14 @@ topic-tags: platform
 content-type: reference
 discoiquuid: 7c723773-7c23-43d7-85dc-53e54556b648
 legacypath: /content/docs/en/aem/6-1/develop/the-basics/templates
+exl-id: 4ecb6e10-1d6b-4065-917f-e86215687e29
 translation-type: tm+mt
-source-git-commit: c0c0a7223ef70d3c19954bb2fc2a92dbad8ce049
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '982'
 ht-degree: 0%
 
 ---
-
 
 # Sjablonen{#templates}
 
