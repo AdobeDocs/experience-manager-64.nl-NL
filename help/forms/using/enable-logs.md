@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: hTML5_forms
 discoiquuid: 23bc7cd2-7d06-4ef8-977a-778e290daef9
 feature: Mobile Forms
+exl-id: c7953d1b-a332-4138-b744-516f3881cd4d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '648'
 ht-degree: 4%
 
 ---
-
 
 # Logboek inschakelen voor HTML5-formulieren {#enable-logging-for-html-forms}
 
@@ -94,7 +94,7 @@ De logboekconfiguratie wordt samengesteld uit het logboekniveau en de logboekcat
    <td>OFF<br type="_moz" /> </td> 
   </tr> 
   <tr> 
-   <td>3</td> 
+   <td>1</td> 
    <td>FATAL<br type="_moz" /> </td> 
   </tr> 
   <tr> 
@@ -209,4 +209,3 @@ De locatie en naam van het logbestand wijzigen:
    >Als u logbestanden wilt maken in dezelfde map waarin andere logbestanden worden opgeslagen, geeft u ../logs/&lt;bestandsnaam> op in de eigenschap Logbestanden.
 
 1. Wijzig de **Logger** in **HTMLFormsPerfLogger** en klik **Save**.
-
