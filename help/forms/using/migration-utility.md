@@ -10,15 +10,15 @@ geptopics: SG_AEMFORMS/categories/jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 content-strategy: max-2018
 discoiquuid: a8b1f7df-e36f-4d02-883a-72120fea7046
-role: Beheerder
+role: Administrator
+exl-id: 72ead30c-648d-43ad-9826-9c8945a8860d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1873'
+source-wordcount: '1872'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms-elementen en -documenten migreren {#migrate-aem-forms-assets-and-documents}
 
@@ -178,4 +178,3 @@ Nadat u het migratiehulpprogramma hebt uitgevoerd, moet u de volgende huishoudel
 
 1. Publiceer alle elementen die vóór de migratie in het vorige systeem zijn gepubliceerd. Het migratiehulpprogramma werkt de elementen alleen bij op de instantie van de auteur en om de elementen in de instantie(s) voor publicatie bij te werken, moet u de elementen publiceren.
 1. In AEM Forms 6.4 worden sommige rechten van de gebruikersgroepen voor formulieren gewijzigd. Als u wilt dat een van uw gebruikers XDP&#39;s en Adaptive Forms met scripts of code-editor kan uploaden, moet u ze toevoegen aan een gebruikersgroep voor formulieren. Op dezelfde manier kunnen de malplaatje-auteurs niet meer de coderedacteur in de Redacteur van de Regel gebruiken. Gebruikers kunnen alleen code-editor gebruiken als ze deze aan de af-template-script-writers-groep toevoegen. Zie [Gebruikers en gebruikersgroepen beheren](/help/communities/users.md) voor instructies voor het toevoegen van gebruikers aan groepen.
-
