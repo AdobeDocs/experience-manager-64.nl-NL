@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: da3891d3-fa07-4c88-b4ac-077926b3a674
+exl-id: 01a20578-56c3-41b3-8a0e-281104af2481
 translation-type: tm+mt
-source-git-commit: 1ae2d7f99286e0b958d343778159e2d35095510e
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '211'
 ht-degree: 1%
 
 ---
-
 
 # De weergave wijzigen {#alter-the-appearance}
 
@@ -69,4 +69,3 @@ Als u zich als beheerder aanmeldt bij de publicatie-instantie, bijvoorbeeld http
 Als u zich afmeldt en opnieuw inlogt als `aaron.mcdonald@mailinator.com/password` en de pagina vernieuwt, zult u merken dat de geposte opmerking niet meer wordt weergegeven met een avatar, in plaats daarvan wordt een eenvoudige &#39;xxx&#39; weergegeven.
 
 ![chlimage_1-43](assets/chlimage_1-43.png)
-
