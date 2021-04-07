@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/aem_forms_backup_and_recovery
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: c332985b-4556-4056-961a-fce2356da88d
+exl-id: 432221c9-4b78-4d0d-bf22-b56810bf4256
 translation-type: tm+mt
-source-git-commit: a3e7cd30ba6933e6f36734d3b431db41365b6e20
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1519'
 ht-degree: 0%
 
 ---
-
 
 # Strategie voor back-up en herstel in een geclusterde omgeving {#strategy-for-backup-and-restore-in-a-clustered-environment}
 
