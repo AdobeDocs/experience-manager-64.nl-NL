@@ -11,14 +11,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: operations
 discoiquuid: 3d838027-6bde-4a71-a428-4d5102f7d799
 role: Developer
+exl-id: 9d32c815-b66e-459e-bf36-c0d2e1ed707a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2922'
+source-wordcount: '2921'
 ht-degree: 0%
 
 ---
-
 
 # Verzendde Forms {#handling-submitted-forms} verwerken
 
