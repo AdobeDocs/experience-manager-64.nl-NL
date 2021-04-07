@@ -7,14 +7,14 @@ uuid: 7ca26587-8cce-4c75-8629-e0e5cfb8166c
 contentOwner: carlino
 discoiquuid: c637964a-dfcb-41fe-9c92-934620fe2cb3
 feature: Kader voor integratie in de handel
+exl-id: c5002812-cbc6-4b3e-85be-3446630b4e8a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '317'
 ht-degree: 0%
 
 ---
-
 
 # AEM handel - GDPR-gereedheid{#aem-commerce-gdpr-readiness}
 
@@ -49,4 +49,3 @@ Voor de hybris- en IBM WebSphere-integratie zijn er gegevens in AEM. U zou [AEM 
 >[!NOTE]
 >
 >Bekijk de [hybris wiki](https://wiki.hybris.com/) of [documentatie van de Handel van Websphere](https://www-01.ibm.com/support/docview.wss?uid=swg27036450) indien vereist.
-
