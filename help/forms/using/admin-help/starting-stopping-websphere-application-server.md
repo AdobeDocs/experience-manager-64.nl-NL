@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/maintaining_the_application_server
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bcd16691-67ab-4694-9e6b-c9d3e0c7bf0b
+exl-id: 8e3bb77f-b187-42c8-a90e-fe0fee50dc34
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '236'
 ht-degree: 0%
 
 ---
-
 
 # WebSphere-toepassingsserver starten en stoppen {#starting-and-stopping-websphere-application-server}
 
@@ -45,4 +45,3 @@ Verscheidene procedures vereisen u om het geval van WebSphere te tegenhouden of 
 
    * (Windows) `stopServer.bat`*server_name*
    * (Linux, UNIX) ./ `stopServer.sh`*servernaam*
-
