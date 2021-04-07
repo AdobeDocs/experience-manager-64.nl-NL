@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: configuring
 discoiquuid: a79839e2-be39-418b-a3bd-f5457e555172
+exl-id: 2c455a20-a2b9-4a80-8577-f1a1713710d6
 translation-type: tm+mt
-source-git-commit: 7b39a715166eeefdf20eb22a4449068ff1ed0e42
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1247'
 ht-degree: 0%
 
 ---
-
 
 # Prestatiehandleiding voor middelen{#assets-performance-guide}
 
@@ -111,4 +111,3 @@ De volgende prestatietwekken zijn tot dusver gebruikt in projecten:
 ## Meer informatie {#further-reading}
 
 * [Trage en geblokkeerde processen analyseren](https://helpx.adobe.com/experience-manager/kb/AnalyzeSlowAndBlockedProcesses.html)
-
