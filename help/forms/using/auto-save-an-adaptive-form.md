@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: d519ac4e-6d29-4a69-874e-792acabe87ff
 feature: Adaptieve Forms
+exl-id: 073734e9-449b-463a-b539-d73e11f50fa4
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '0'
+source-wordcount: '671'
 ht-degree: 0%
 
 ---
-
 
 # Een adaptief formulier automatisch opslaan {#auto-save-an-adaptive-form}
 
@@ -89,4 +89,3 @@ U kunt een aangepaste gebeurtenis implementeren om de functie voor automatisch o
 1. Selecteer in de bewerkingsmodus een component en tik op ![veldniveau](assets/field-level.png) > **[!UICONTROL Adaptive Form Container]** en vervolgens op ![cmp](assets/cmppr.png).
 1. Open in de eigenschappen de sectie **[!UICONTROL Basic]**. Voer in het vak **[!UICONTROL Client Library Category]** de waarde in van de categorie-eigenschap die is gedefinieerd tijdens het maken van de clientbibliotheekmappen.
 1. Open de sectie Automatisch opslaan. Geef in het vak **[!UICONTROL Auto save after this event]** een aangepaste gebeurtenis op die al in de clientbibliotheek is gedefinieerd. Klik op **[!UICONTROL OK]**.
-
