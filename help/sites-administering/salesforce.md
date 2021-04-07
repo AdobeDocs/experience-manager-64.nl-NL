@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: integration
 content-type: reference
 discoiquuid: b9752c60-eb26-4840-9163-a99537a58727
+exl-id: 4c09699a-c7ae-48ee-9423-87ff35b1e9d9
 translation-type: tm+mt
-source-git-commit: 7dc90299b7a0e5166c30702323f1678353fe39b3
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1505'
 ht-degree: 0%
 
 ---
-
 
 # Integreren met Salesforce{#integrating-with-salesforce}
 
@@ -230,7 +230,7 @@ Deze component gebruiken:
 
 1. Sleep de Salesforce-zoekcomponent naar de pagina (mits deze is ingeschakeld). Ga naar de ontwerpmodus en voeg deze toe aan het desbetreffende gebied om de modus in te schakelen.)
 
-   ![chlimage_1-21](assets/chlimage_1-29.jpeg)
+   ![chlimage_1-29](assets/chlimage_1-29.jpeg)
 
 1. Open de component van het Onderzoek en specificeer de onderzoeksparameters en klik **OK.**
 
@@ -239,4 +239,3 @@ Deze component gebruiken:
 1. AEM geeft de in de zoekcomponent opgegeven leads weer die aan de opgegeven criteria voldoen.
 
    ![chlimage_1-101](assets/chlimage_1-101.png)
-
