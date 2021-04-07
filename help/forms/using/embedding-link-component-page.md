@@ -1,21 +1,21 @@
 ---
 title: Koppelingscomponent insluiten in een pagina
 seo-title: Koppelingscomponent insluiten in een pagina
-description: 'U kunt de koppelingscomponent gebruiken om een adaptief document of een adaptief formulier van een willekeurige pagina te koppelen.  '
-seo-description: 'U kunt de koppelingscomponent gebruiken om een adaptief document of een adaptief formulier van een willekeurige pagina te koppelen.  '
+description: 'Met de koppelingscomponent kunt u een adaptief document of een adaptief formulier van een willekeurige pagina koppelen.  '
+seo-description: 'Met de koppelingscomponent kunt u een adaptief document of een adaptief formulier van een willekeurige pagina koppelen.  '
 uuid: fde56b5f-634c-406f-a026-875f972f7c8f
 content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: publish
 discoiquuid: a4a36e73-3f7a-4173-8807-931f26daa35a
+exl-id: eb816a35-0773-4eda-95b2-1d351c71be8b
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '432'
 ht-degree: 0%
 
 ---
-
 
 # Koppelingscomponent insluiten in een pagina{#embedding-link-component-in-a-page}
 
@@ -59,4 +59,3 @@ Voer de volgende stappen uit om een component van de Verbinding aan de pagina to
    1. Verzenden van URL die is ingesloten in het formulier (in verzendknop) heeft de hoogste prioriteit.
    1. De verzendURL die in Forms Manager wordt vermeld, heeft de middelhoge prioriteit.
    1. De laagste prioriteit voor het verzenden van een URL die in het formulierportaal wordt vermeld.
-
