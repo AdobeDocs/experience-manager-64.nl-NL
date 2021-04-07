@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.3/FORMS
 topic-tags: installing
 geptopics: SG_AEMFORMS/categories/jee
 discoiquuid: e745033f-8015-4fae-9d82-99d35802c0a6
-role: Beheerder
+role: Administrator
+exl-id: e41eb0fa-ae88-44d5-9181-0d925b8b62c6
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1679'
+source-wordcount: '1678'
 ht-degree: 0%
 
 ---
-
 
 # Upgrade naar AEM 6.4 Forms op JEE {#upgrade-to-aem-forms-jee}
 
