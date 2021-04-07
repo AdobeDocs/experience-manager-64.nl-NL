@@ -3,15 +3,15 @@ title: Elementinzichten configureren
 description: Leer hoe u Asset Insights configureert in AEM Assets.
 contentOwner: AG
 feature: Asset Insights, Asset Reports
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: b0d62dd3-1868-4d73-95f7-3d6c3ff474d9
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '228'
+source-wordcount: '225'
 ht-degree: 1%
 
 ---
-
 
 # Elementinzichten configureren {#configuring-asset-insights}
 
