@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: fa6e0246-6bd2-4ffb-b54c-15eda605f213
+exl-id: 8c45f145-1729-4e5c-b391-6b1bbd50494b
 translation-type: tm+mt
-source-git-commit: 5e764edb3d8ed98542c50b80cac40776c886ccf5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1016'
 ht-degree: 0%
 
 ---
-
 
 # Aan de slag met de AEM Forms-werkruimte {#getting-started-with-aem-forms-workspace}
 
@@ -32,7 +32,7 @@ Afhankelijk van het proces en de taak waaraan u werkt, worden verschillende item
 
 U kunt op een van de volgende manieren navigeren in de gebruikersinterface van de AEM Forms-hoofdwerkruimte:
 
-* Klik op de items in de bovenste navigatiebalk voor de opties Start Process, To-do (Proces starten), Voorkeuren, Tracking (Bijhouden), Help en Logout (Afmelden).
+* Klik op de items in de bovenste navigatiebalk voor de opties Start Process, To-do (Proces starten), Voorkeuren, Tracking, Help en Logout (Afmelden).
 * Klik op het tabblad Proces starten, Op-maken of Tekstspatiëring voor toegang tot de drie hoofdwerkgebieden.
 * Klik op de tabbladen Proces starten, Te doen en Tekstspatiëring op de items in de lijst in het linkerdeelvenster om toegang te krijgen tot favorieten, procescategorieën, zoeksjablonen, concepten of toegewezen taken. Gebruik de schuifbalk om extra items in de lijst weer te geven.
 * Alle actieknoppen (goedkeuren, Afwijzen, Vooruit, Consult, Vergrendelen en Delen) tonen in zowel het document als de Eigendom.
@@ -81,4 +81,3 @@ Stel de voorkeuren voor de gebruikersinterface in op het tabblad Voorkeuren > UI
 * **Taakgebeurtenissen via e-mail op de hoogte stellen:** Hiermee geeft u op of u e-mailmeldingen voor taakgebeurtenissen ontvangt, inclusief taaktoewijzingen, herinneringen en deadlines voor taken in uw lijst Aan-bewerking en in de lijst Groeperen aan-uit.
 * **Forms bijvoegen in e-mail:** Hiermee geeft u op of een kopie van het formulier bij e-mailberichten wordt gevoegd. Bijlagen worden alleen ondersteund voor PDF- en XDP-formulieren.
 * **Concepten regelmatig opslaan:** geeft aan of uw formulierconcepten regelmatig automatisch worden opgeslagen of niet. Als u uw concepten periodiek wilt opslaan, schakelt u deze optie in en stelt u de duur voor automatisch opslaan in op 1 tot 30 minuten. Wanneer automatisch opslaan is ingeschakeld en een gebruiker aan een concept werkt, wordt het concept periodiek opgeslagen na het opgegeven aantal minuten. Het concept wordt alleen automatisch opgeslagen wanneer het concept is gewijzigd sinds de laatste keer dat het is opgeslagen of automatisch is opgeslagen. Wanneer het concept wordt opgeslagen, verschijnt er een waarschuwingsbericht op het scherm.
-
