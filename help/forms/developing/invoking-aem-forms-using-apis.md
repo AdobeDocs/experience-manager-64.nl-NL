@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: development-tools, coding
 discoiquuid: 1825e12c-0306-4e0a-9643-47ce1ce82132
 role: Developer
+exl-id: 6b60209f-aced-4698-97f1-b1a7782eef46
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '350'
+source-wordcount: '349'
 ht-degree: 0%
 
 ---
-
 
 # AEM Forms aanroepen met API&#39;s {#invoking-aem-forms-using-apis}
 
@@ -32,4 +32,3 @@ Voor services is een servicecontainer vereist die kan worden uitgevoerd, vergeli
 >[!NOTE]
 >
 >Programmeren met AEM formulieren bevat geen informatie over het aanroepen van AEM Forms via Gecontroleerde mappen of e-mail.
-
