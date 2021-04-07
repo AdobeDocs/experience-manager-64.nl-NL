@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 6c405543-e339-4916-aa0f-b61d0b798cf3
-role: Beheerder
+role: Administrator
+exl-id: ded38cee-fbce-46cc-974f-38d3a293a55d
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1852'
+source-wordcount: '1851'
 ht-degree: 0%
 
 ---
-
 
 # Moderatieconsole {#moderation-console}
 
@@ -287,7 +287,7 @@ Wanneer het werken met één enkele post, zal een pictogram van het Antwoord ver
 
 #### {#allow} toestaan
 
-![chlimage_1-481](assets/chlimage_1-481.png)
+![chlimage_1-401](assets/chlimage_1-481.png)
 
 Wanneer u met één bericht werkt, wordt het pictogram Toestaan weergegeven wanneer de advertentie is gemarkeerd of geweigerd. Als deze optie is gemarkeerd, worden alle markeringen gewist als u Toestaan selecteert.
 
@@ -340,4 +340,3 @@ Als u wilt terugkeren naar de weergave van het inhoudsgebied van meerdere UGC-po
 Bijvoorbeeld:
 
 ![chlimage_1-488](assets/chlimage_1-488.png)
-
