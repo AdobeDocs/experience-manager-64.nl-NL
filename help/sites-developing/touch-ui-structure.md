@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: introduction
 content-type: reference
 discoiquuid: 55dba890-4847-4986-b272-33480bc1d573
+exl-id: 9eeb3203-e27a-4960-a4ec-58dd9dd098a2
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '886'
 ht-degree: 0%
 
 ---
-
 
 # Structuur van de AEM Touch-Enabled UI{#structure-of-the-aem-touch-enabled-ui}
 
@@ -170,4 +170,3 @@ Afhankelijk van de beschikbare ruimte, worden de componententoolbars geplaatst b
 Voor meer details over de concepten rond aanraking-toegelaten UI, ga aan het artikel [Concepten van AEM toe:laten UI](/help/sites-developing/touch-ui-concepts.md).
 
 Zie de [JS-documentatieset](https://helpx.adobe.com/experience-manager/6-4/sites/developing/using/reference-materials/jsdoc/ui-touch/editor-core/index.html) voor meer technische informatie over de pagina-editor met aanraakbediening.
-
