@@ -3,15 +3,15 @@ title: Beheer [!DNL Adobe Stock] middelen in [!DNL Adobe Experience Manager Asse
 description: Zoek, haal, vergunning, en beheer [!DNL Adobe Stock] activa van binnen [!DNL Adobe Experience Manager]. Gebruik de in licentie gegeven activa als elk ander digitaal actief.
 contentOwner: AG
 feature: Zoeken,Adobe Stock
-role: Business Practice,Administrator
+role: Business Practitioner,Administrator
+exl-id: f360abaf-a812-46ed-a160-ff569b6bec1c
 translation-type: tm+mt
-source-git-commit: 29e3cd92d6c7a4917d7ee2aa8d9963aa16581633
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1052'
+source-wordcount: '1049'
 ht-degree: 2%
 
 ---
-
 
 # [!DNL Adobe Stock] middelen gebruiken in [!DNL Adobe Experience Manager Assets] {#use-adobe-stock-assets-in-aem-assets}
 
