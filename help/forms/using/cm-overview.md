@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: correspondence-management
 discoiquuid: 1291b395-a981-4ef9-b4f0-c0d3026c5f19
 feature: Correspondentenbeheer
+exl-id: 3cda92c9-5f3e-4704-a52b-55eda3b3fd2a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '230'
 ht-degree: 0%
 
 ---
-
 
 # Overzicht Correspondentenbeheer {#correspondence-management-overview}
 
@@ -49,4 +49,3 @@ Het verbetert de betrokkenheid van klanten, waardoor u:
 * Voeg interactieve technologieën toe om een tweerichtingskanaal toe te laten, die papierverzendingen verminderen
 * Protect-gevoelige informatie met ingebouwde, end-to-end documentbeveiliging
 * Briefing verzenden via het aangewezen communicatiekanaal van de klant, elektronisch, post, mobiel, of fax.
-
