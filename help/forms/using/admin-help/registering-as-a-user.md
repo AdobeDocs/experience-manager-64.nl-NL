@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/working_with_document_security
 discoiquuid: 26e11ef4-9f8f-4b0b-b035-a498fd7d65ef
 feature: Documentbeveiliging
+exl-id: 24641bf5-7c1c-4c92-8c11-2134039085f7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '730'
 ht-degree: 0%
 
 ---
-
 
 # Registreren als een gebruiker {#registering-as-a-user}
 
@@ -70,4 +70,3 @@ Voor informatie over het contacteren van een beheerder van de documentveiligheid
 1. Klik op Opties in de rechterbovenhoek van de pagina. De pagina Externe gebruikers wordt weergegeven.
 1. Selecteer Wachtwoord wijzigen en typ het tijdelijke wachtwoord in het vak Oud wachtwoord.
 1. Typ in het vak Nieuw wachtwoord een nieuw wachtwoord en typ dit vervolgens opnieuw in het vak Wachtwoord bevestigen.
-
