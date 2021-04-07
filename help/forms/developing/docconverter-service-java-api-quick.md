@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: ea4b26c8-b9cf-42c2-b4da-2884336014a9
 role: Developer
+exl-id: 0a418016-f61a-485d-a87a-a3d48651e0d7
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '297'
+source-wordcount: '296'
 ht-degree: 0%
 
 ---
-
 
 # DocConverter Service Java API Quick Start (SOAP) {#docconverter-service-java-api-quickstart-soap}
 
@@ -245,4 +245,3 @@ In het volgende Java-codevoorbeeld wordt bepaald of het invoer-PDF-document PDF/
       } 
  }
 ```
-
