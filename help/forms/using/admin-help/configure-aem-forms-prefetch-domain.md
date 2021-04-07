@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_user_management
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: f9a3f897-90c6-4942-8a86-aae510298f2a
+exl-id: 6b431cbd-2cea-4ae2-ad26-587ba524d2f5
 translation-type: tm+mt
-source-git-commit: e2bb2f17035e16864b1dc54f5768a99429a3dd9f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '197'
 ht-degree: 0%
 
 ---
-
 
 # Formulieren configureren AEM Prefetchdomeingegevens {#configure-aem-forms-to-prefetchdomain-information}
 
@@ -45,4 +45,3 @@ De gebruikers kunnen een langzamere reactietijd ervaren als zij tot vele groepen
 
 1. Klik in Gebruikersbeheer op **[!UICONTROL Configuration > Import And Export Configuration Files]** om het bijgewerkte bestand te importeren.
 1. Klik **[!UICONTROL Browse]** om het dossier te vinden, de Invoer te klikken, en dan **[!UICONTROL OK]** te klikken.
-
