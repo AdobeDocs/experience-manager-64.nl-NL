@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 44e49789-9075-41b3-bce8-03e8efce2d5a
 feature: Mobile Forms
+exl-id: e8a53976-e9bd-459d-92f5-88527c72428b
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '543'
 ht-degree: 0%
 
 ---
-
 
 # Foutberichten voor HTML5-formulieren {#customizing-error-messages-for-html-forms} aanpassen
 
@@ -128,4 +128,3 @@ Als u een formulier wilt weergeven met de aangepaste foutberichten, geeft u het 
 >[!NOTE]
 >
 >Het bijgevoegde pakket installeert het foutprofiel.
-
