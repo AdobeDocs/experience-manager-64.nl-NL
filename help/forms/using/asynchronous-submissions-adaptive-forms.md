@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: 6e4e3af5-4260-4f38-9b29-0818e92bc182
 feature: Adaptieve Forms
+exl-id: 1ca492e9-9832-4e5d-8020-2690ac4f5505
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '642'
 ht-degree: 0%
 
 ---
-
 
 # Asynchrone indiening van adaptieve formulieren {#asynchronous-submission-of-adaptive-forms}
 
@@ -103,4 +103,3 @@ Voer de volgende stappen uit om regels in coderedacteur te schrijven om succes e
 1. Tik in de code-editor op **[!UICONTROL Edit Code]**. Tik op **[!UICONTROL Edit]** in het bevestigingsdialoogvenster.
 1. Kies **[!UICONTROL Successful Submission]** of **[!UICONTROL Error in Submission]** in de vervolgkeuzelijst **[!UICONTROL Event]**.
 1. Schrijf een regel voor de geselecteerde gebeurtenis en tik **[!UICONTROL Done]** om de regel op te slaan.
-
