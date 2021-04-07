@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 49453dda-7b05-4470-866e-1946bff70f27
+exl-id: 3a32f578-23b1-4c76-bd85-dd3d812c6c28
 translation-type: tm+mt
-source-git-commit: a2f6deda8b3a34aa5893843a442241920edd6718
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '346'
 ht-degree: 0%
 
 ---
-
 
 # Vervolgkeuzelijsten {#dynamically-populating-drop-down-lists} dynamisch vullen
 
@@ -146,7 +146,7 @@ Overweeg een scenario waar u **Staat** drop-down lijst wilt bevolken die op een 
    }
    ```
 
-1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de parameter `sling:resourceType` voor het knooppunt gelijk is aan de parameter waarnaar het knooppunt verwijst (/apps/populatedropdown).
+1. Maak een vervolgkeuzelijst onder een bepaalde maphiërarchie in apps (maak bijvoorbeeld een knooppunt onder /apps/myfolder/demo). Zorg ervoor dat de parameter `sling:resourceType` voor het knooppunt gelijk is aan de parameter waarmee het servlet-punt (/apps/populatedropdown).
 
    ![Een vervolgkeuzelijst maken](assets/dropdown-node.png)
 
