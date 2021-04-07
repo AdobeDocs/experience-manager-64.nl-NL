@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: platform
 discoiquuid: 94a05894-743a-4ace-a292-bfee90ba9068
+exl-id: 2bcc2be9-1e8a-44b5-add2-370b9ff80de8
 translation-type: tm+mt
-source-git-commit: 14daff213297d2435765dd46039f346ce3868ac5
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2323'
 ht-degree: 2%
 
 ---
-
 
 # Predicate Reference{#query-builder-predicate-reference} van de Bouwer van de vraag
 
