@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 topic-tags: content
 content-type: reference
 discoiquuid: 69253ee9-8c28-436b-9331-6fb875f64cba
+exl-id: 5c78edf8-148f-41a3-8b11-c1dada34090e
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1764'
 ht-degree: 0%
 
 ---
-
 
 # Tags beheren{#administering-tags}
 
@@ -142,7 +142,7 @@ Wanneer een naamruimte of andere tag wordt geselecteerd en u het pictogram **`Re
 
 De eerste weergave is een aantal toegepaste labels.
 
-![chlimage_1-111](assets/chlimage_1-191.png)
+![chlimage_1-191](assets/chlimage_1-191.png)
 
 Als u de pijl rechts van de telling selecteert, worden de referentienamen weergegeven.
 
@@ -309,7 +309,7 @@ Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u [Een n
 
 >[!NOTE]
 >
->De tagcloud en de metatrefwoorden in de standaardpaginacomponent gebruiken de gelokaliseerde tag `titles`gebaseerd op de paginataal, indien beschikbaar.
+>De tagcloud en de metatrefwoorden in de standaardpaginacomponent gebruiken de gelokaliseerde tag `titles`op basis van de paginataal, indien beschikbaar.
 
 ## Bronnen {#resources}
 
@@ -318,4 +318,3 @@ Als u een nieuwe taal wilt toevoegen aan het dialoogvenster, raadpleegt u [Een n
    Informatie over het coderingskader en het uitbreiden en opnemen van codes in aangepaste toepassingen.
 
 * [Klassieke UI-tagconsole](/help/sites-administering/classic-console.md)
-
