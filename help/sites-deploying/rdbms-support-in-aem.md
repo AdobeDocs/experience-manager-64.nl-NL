@@ -10,14 +10,14 @@ content-type: reference
 topic-tags: deploying
 discoiquuid: 56a984a5-4b7f-4a95-8a17-95d2d355bfed
 feature: Configureren
+exl-id: 89523bb4-e4c4-469c-802b-6fe27c816a2e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '719'
 ht-degree: 0%
 
 ---
-
 
 # RDBMS-ondersteuning in AEM 6.4{#rdbms-support-in-aem}
 
@@ -123,4 +123,3 @@ Afhankelijk van het databasetype dat moet worden gebruikt, wordt in de configura
 Hoewel gelijktijdig gebruik van meerdere AEM instanties met één database wordt ondersteund door RDBMS-persistentie, zijn gelijktijdige installaties niet mogelijk.
 
 Als u dit wilt omzeilen, moet u eerst de installatie uitvoeren met één lid en de andere leden toevoegen nadat de eerste installatie is voltooid.
-
