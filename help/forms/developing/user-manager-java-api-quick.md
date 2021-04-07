@@ -10,14 +10,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: develop
 discoiquuid: e0c20fd2-b084-4f61-936c-5282826a8d3d
 role: Developer
+exl-id: 130b5669-4533-4e88-9a64-bbbd7c68a5ca
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '530'
+source-wordcount: '529'
 ht-degree: 0%
 
 ---
-
 
 # Java API Quick Start (SOAP) {#user-manager-java-api-quick-start-soap}
 
@@ -1093,4 +1093,3 @@ public class ManagePreferences {
 } 
 }
 ```
-
