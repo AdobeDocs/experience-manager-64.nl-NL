@@ -8,14 +8,14 @@ products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: author
 discoiquuid: 6a806727-28c5-430e-9a83-b43e0e9d9e1c
 feature: Adaptieve Forms
+exl-id: a870c4b7-4040-4bd8-b477-286ebe6a4b01
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '512'
 ht-degree: 0%
 
 ---
-
 
 # Elektronische handtekeningen toepassen op een formulier met scripthandtekeningen {#apply-electronic-signatures-to-a-form-using-scribble-signatures}
 
@@ -69,4 +69,3 @@ Beide componenten bieden een venster, zoals hieronder wordt weergegeven, om een 
    ![Voltooi het ondertekeningsproces](assets/scribblecomplete.jpg)
 
 De handtekeningen worden toegevoegd aan het formulier en het formulierbesturingselement gaat naar het volgende venster.
-
