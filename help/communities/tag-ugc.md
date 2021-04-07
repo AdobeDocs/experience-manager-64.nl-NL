@@ -9,15 +9,15 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: administering
 content-type: reference
 discoiquuid: 1cc8ce66-2c03-44e4-9ddd-8d6944d85c99
-role: Beheerder
+role: Administrator
+exl-id: 834df392-df38-498c-9e2a-489484e20e0a
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '249'
+source-wordcount: '248'
 ht-degree: 0%
 
 ---
-
 
 # Door gebruiker gegenereerde inhoud {#tagging-user-generated-content} labelen
 
@@ -58,4 +58,3 @@ Zie [Tagmachtigingen instellen](../../help/sites-administering/tags.md#setting-t
 Hieronder wordt beschreven hoe de code wordt weergegeven in CRXDE wanneer een beheerder leesmachtigingen toepast op `/etc/tag/discussions` voor de groep `*Community Engage Members*`.
 
 ![chlimage_1-74](assets/chlimage_1-74.png)
-
