@@ -8,14 +8,14 @@ contentOwner: anujkapo
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: ef873c07-be89-4cd0-8913-65765b989f90
 feature: Interactieve communicatie
+exl-id: f767e47c-f5a6-478c-ac56-00d519a627cf
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2740'
 ht-degree: 0%
 
 ---
-
 
 # Zelfstudie: Formuliergegevensmodel {#tutorial-create-form-data-model} maken
 
@@ -390,4 +390,3 @@ Voer de volgende handelingen uit om voorbeeldgegevens te genereren, te bewerken 
    ![edit_sample_data](assets/edit_sample_data.png)
 
 1. Bewerk in het venster **Voorbeeldgegevens bewerken** de vereiste gegevens en tik **Opslaan**. Sluit het venster.
-
