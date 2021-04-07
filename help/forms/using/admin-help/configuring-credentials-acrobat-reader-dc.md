@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_acrobat_reader_dc_extensions
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 5bb32fb1-4b6e-412f-aa16-f60db9dcaba1
+exl-id: 40c2e205-0115-4ebe-ab24-66c8ee0663fa
 translation-type: tm+mt
-source-git-commit: 6a2455cb377a68254a5c58c6627c59716d284144
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '576'
 ht-degree: 0%
 
 ---
-
 
 # Referenties configureren voor gebruik met Acrobat Reader DC-extensies{#configuring-credentials-for-use-with-acrobat-reader-dc-extensions}
 
@@ -62,4 +62,3 @@ De Trust Store kan meer dan één referentie voor Acrobat Reader DC-extensies be
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Lokale referenties.
 1. Noteer de alias van de bestaande referentie, selecteer deze en klik op Verwijderen.
 1. Importeer de nieuwe referentie met exact dezelfde aliasnaam.
-
