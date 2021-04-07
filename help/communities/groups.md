@@ -10,15 +10,15 @@ topic-tags: administering
 content-type: reference
 discoiquuid: 1293c01a-7308-494a-ab48-bd9938205b81
 pagetitle: Community Groups Console
-role: Beheerder
+role: Administrator
+exl-id: f8f19ad6-d6cd-4abd-bc31-6baba3e0356e
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '1616'
+source-wordcount: '1615'
 ht-degree: 0%
 
 ---
-
 
 # Console {#community-groups-console} voor groepen van gemeenschappen
 
@@ -58,7 +58,7 @@ De console Groepen openen:
    * De structuur van de site van de community moet een groepfunctie bevatten
    * Deze schermafbeeldingen zijn afkomstig uit de zelfstudie Aan de slag nadat [groepen zijn gemaakt voor publicatie](published-site.md)
 
-![chlimage_1-135](assets/chlimage_1-133.png)
+![chlimage_1-133](assets/chlimage_1-133.png)
 
 Selecteer **[!UICONTROL Groups folder]** om het te openen.
 
