@@ -8,14 +8,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: customization
 discoiquuid: 602fd6a9-9a65-411c-8475-a4082a3fdee0
+exl-id: c6243a1f-8f8f-48dc-af3b-b165f451ce73
 translation-type: tm+mt
-source-git-commit: 49b7cff2c1583ee1eb929434f27c1989558e197f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '323'
 ht-degree: 0%
 
 ---
-
 
 # Services {#customizing-draft-and-submission-data-services} voor conceptgegevens en verzendgegevens aanpassen
 
@@ -131,4 +131,3 @@ public interface SubmittedAFDataService {
 
 }
 ```
-
