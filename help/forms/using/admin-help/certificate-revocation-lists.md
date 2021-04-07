@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/managing_certificates_and_credentials
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 9744cc2d-5e6b-4341-9270-43d479bdca04
+exl-id: 45741270-2d57-4d6d-92ef-65b6c1deb448
 translation-type: tm+mt
-source-git-commit: a417e571d7c3b8da8f38f3d1ad814610636eabbc
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '154'
 ht-degree: 1%
 
 ---
-
 
 # Certificaatintrekkingslijsten beheren{#managing-certificate-revocationlists}
 
@@ -39,4 +39,3 @@ Met Betrouwbaarheidswinkelbeheer kunt u lijsten voor certificaatintrekking impor
 
 1. Klik in de beheerconsole op Instellingen > Betrouwbaarheidsopslagbeheer > Certificaatintrekkingslijsten.
 1. Selecteer de selectievakjes voor de CRL&#39;s die u wilt verwijderen, klik op Verwijderen en klik vervolgens op OK.
-
