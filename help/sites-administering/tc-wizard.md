@@ -10,14 +10,14 @@ topic-tags: site-features
 content-type: reference
 discoiquuid: dc185a75-84a0-4075-ae1e-8bb78d414aa8
 feature: Taalkopie
+exl-id: a3ac6b7e-8a18-4432-9e56-1f9bd7cf0548
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '228'
 ht-degree: 0%
 
 ---
-
 
 # Wizard Taalkopie{#language-copy-wizard}
 
@@ -60,4 +60,3 @@ U kunt als volgt deze wizard openen:
 1. De **Create** knoop beëindigt de tovenaar.
 
    ![chlimage_1-53](assets/chlimage_1-53.jpeg)
-
