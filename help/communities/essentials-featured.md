@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/COMMUNITIES
 topic-tags: developing
 content-type: reference
 discoiquuid: 781625f1-39a0-4e34-948c-d4eab35dd5c1
+exl-id: 4805db0f-18d2-4bbc-a4d6-eaafa7a4c152
 translation-type: tm+mt
-source-git-commit: 4d64494dff34108d32e060a96209df697b2ce11f
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '113'
 ht-degree: 2%
 
 ---
-
 
 # Essentiële inhoud {#featured-content-essentials}
 
