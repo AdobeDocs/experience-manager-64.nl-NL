@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/system_information_service
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 14de0652-717d-4c84-b7b4-b7b78f325baa
+exl-id: 32195d6d-e800-4f21-bcc4-0e9d1601e239
 translation-type: tm+mt
-source-git-commit: d04e08e105bba2e6c92d93bcb58839f1b5307bd8
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '117'
 ht-degree: 0%
 
 ---
-
 
 # System information service {#set-up-the-system-information-service} instellen
 
@@ -27,4 +27,3 @@ De systeeminformatiedienst verstrekt REST APIs om informatie terug te winnen. Om
 1. Voor de pagina van het Beheer van de Dienst, klik **SystemInfo** dienst.
 1. Selecteer REST in de lijst op het tabblad Eindpunten en klik op **Toevoegen**.
 1. Voor het Add REST Eindpuntscherm, klik **Add**.
-
