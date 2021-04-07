@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/configuring_output
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: 460bbb31-8187-469c-8102-b310093b6c03
+exl-id: 5b8f04dd-6781-4126-8bb2-5d8b7a2f19c8
 translation-type: tm+mt
-source-git-commit: 821eaaee5be186c2c396ce19d1414475fe2658cd
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '327'
 ht-degree: 3%
 
 ---
-
 
 # Bestandslocaties opgeven voor uitvoer {#specify-file-locations-for-output}
 
@@ -49,4 +49,3 @@ De standaardwaarde is `com/adobe/formServer/PA/pa_output.xci`.
 >[!NOTE]
 >
 >Als u een hulpprogramma voor tijdelijke reiniging gebruikt, moet u er rekening mee houden dat het verwijderen van deze mappen geen invloed heeft op de functionaliteit, maar dat dit de prestaties gedurende korte tijd aanzienlijk kan beïnvloeden, totdat de nieuwe cache wordt gemaakt. U voorkomt dit door deze mappen niet te verwijderen terwijl u de tijdelijke map voor AEM formulieren wist.
-
