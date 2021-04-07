@@ -10,14 +10,14 @@ topic-tags: personalization
 content-type: reference
 discoiquuid: 7b97fc27-30de-4ef9-9efe-673aec50cff2
 feature: Context Hub
+exl-id: fb613a57-d064-45eb-be15-c4f7e06bb0ee
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '2994'
 ht-degree: 0%
 
 ---
-
 
 # Clientcontext in detail{#client-context-in-detail}
 
