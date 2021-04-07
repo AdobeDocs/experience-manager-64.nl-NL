@@ -9,14 +9,14 @@ content-type: reference
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 topic-tags: forms-workspace
 discoiquuid: 5dae9ed9-77a3-44f5-a94d-ca5c355c8730
+exl-id: 210cb5f2-cc5c-4664-b324-5c6f70f7b593
 translation-type: tm+mt
-source-git-commit: dca22290646025c5e0309162e3cfae857311c9ea
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '747'
 ht-degree: 0%
 
 ---
-
 
 # Richtlijnen voor het oplossen van problemen in de AEM Forms-werkruimte {#troubleshooting-guidelines-for-aem-forms-workspace}
 
