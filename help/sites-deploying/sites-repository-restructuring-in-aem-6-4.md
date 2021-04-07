@@ -9,14 +9,14 @@ content-type: reference
 topic-tags: repo_restructuring
 discoiquuid: 3eccb2d5-c325-43a6-9c03-5f93f7e30712
 feature: Bijwerken
+exl-id: d0cdb15d-196a-44e3-bd98-91588b6979ab
 translation-type: tm+mt
-source-git-commit: 75312539136bb53cf1db1de03fc0f9a1dca49791
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1598'
 ht-degree: 0%
 
 ---
-
 
 # Sites Repository Herstructurering in AEM 6.4{#sites-repository-restructuring-in-aem}
 
@@ -490,4 +490,3 @@ Zoals beschreven op de bovenliggende [Repository Reform in AEM 6.4](/help/sites-
   </tr>
  </tbody>
 </table>
-
