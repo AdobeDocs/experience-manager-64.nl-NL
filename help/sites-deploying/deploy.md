@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: deploying
 discoiquuid: 6696c325-d188-41c8-a39f-c8ae7f339fe8
+exl-id: 9a779cde-dfdf-4d70-a452-5e7d12bf3f28
 translation-type: tm+mt
-source-git-commit: e7da0bb7906c3ad3d04531db0abfbc658646f6e4
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1835'
 ht-degree: 1%
 
 ---
-
 
 # Implementeren en onderhouden van{#deploying-and-maintaining}
 
@@ -320,4 +320,3 @@ In het bovenstaande gedeelte krijgt u een goed inzicht in de grondbeginselen van
 * [Richtlijnen voor prestaties](/help/sites-deploying/performance-guidelines.md)
 * [Aan de slag met AEM Mobile](/help/mobile/getting-started-aem-mobile.md)
 * [Wat is AEM Screens?](https://docs.adobe.com/content/help/en/experience-manager-screens/user-guide/aem-screens-introduction.html)
-
