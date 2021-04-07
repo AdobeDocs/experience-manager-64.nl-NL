@@ -9,14 +9,14 @@ content-type: reference
 geptopics: SG_AEMFORMS/categories/get_started_with_administering_aem_forms_on_jee
 products: SG_EXPERIENCEMANAGER/6.4/FORMS
 discoiquuid: bd648c38-731b-420e-973d-a4728b69868e
+exl-id: 8f7e7fa4-3971-43cb-9403-a91304b46690
 translation-type: tm+mt
-source-git-commit: d0bb877bb6a502ad0131e4f1a7e399caa474a7c9
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '1729'
 ht-degree: 0%
 
 ---
-
 
 # Algemene AEM Forms-instellingen {#general-aem-forms-settings}
 
