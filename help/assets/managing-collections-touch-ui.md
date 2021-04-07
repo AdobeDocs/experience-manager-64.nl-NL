@@ -4,15 +4,15 @@ description: Leer taken om verzamelingen met middelen te beheren, zoals verzamel
 contentOwner: AG
 mini-toc-levels: 1
 feature: Verzamelingen
-role: Zakelijke praktiserer
+role: Business Practitioner
+exl-id: cadfc569-5725-4012-9f73-864243ba7743
 translation-type: tm+mt
-source-git-commit: 4acf159ae1b9923a9c93fa15faa38c7f4bc9f759
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
-source-wordcount: '2180'
+source-wordcount: '2178'
 ht-degree: 13%
 
 ---
-
 
 # Verzamelingen beheren {#managing-collections}
 
@@ -112,7 +112,7 @@ Voer de volgende stappen uit om een slimme verzameling te maken:
 
    Het label van de knop **[!UICONTROL Create Smart Selection]** verandert in **[!UICONTROL Edit Smart Selection]**. Als u de instellingen van de slimme verzameling wilt bewerken, selecteert u **[!UICONTROL Files]** in de lijst **[!UICONTROL Files & Folders]**. Tik of klik vervolgens op de knop **[!UICONTROL Edit Smart Selection]**.
 
-   ![chlimage_1-192](assets/chlimage_1-112.png)
+   ![chlimage_1-112](assets/chlimage_1-112.png)
 
 ## Elementen toevoegen aan een verzameling {#adding-assets-to-a-collection}
 
