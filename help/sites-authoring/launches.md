@@ -9,14 +9,14 @@ products: SG_EXPERIENCEMANAGER/6.4/SITES
 content-type: reference
 topic-tags: site-features
 discoiquuid: a7ec190d-056e-4fc9-8f2d-f4164273674d
+exl-id: a6dca5d7-21b5-4a7f-9e83-b0f5ea77bc88
 translation-type: tm+mt
-source-git-commit: cdec5b3c57ce1c80c0ed6b5cb7650b52cf9bc340
+source-git-commit: bd94d3949f0117aa3e1c9f0e84f7293a5d6b03b4
 workflow-type: tm+mt
 source-wordcount: '840'
 ht-degree: 6%
 
 ---
-
 
 # Overzicht starten{#launches}
 
@@ -124,4 +124,3 @@ De console van Lanceringen verstrekt een overzicht van uw lanceringen en staat u
 1. Tik/klik op de gewenste opstart. De lijst met mogelijke acties wordt weergegeven:
 
    ![chlimage_1-237](assets/chlimage_1-237.png)
-
